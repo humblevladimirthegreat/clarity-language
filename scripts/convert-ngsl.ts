@@ -2,13 +2,11 @@ import { readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { toClarityWord } from "../src/word-converter.js";
-
-const SYLLABLES = 2;
+import { toUniqueClarityWord } from "../src/word-converter.js";
 
 const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..");
-const inputPath = join(rootDir, "data", "swadesh.csv");
-const outputPath = join(rootDir, "data", "swadesh-clarity.csv");
+const inputPath = join(rootDir, "data", "ngsl.csv");
+const outputPath = join(rootDir, "data", "ngsl-clarity.csv");
 
 function parseCsvColumn(content: string): string[] {
   const lines = content.split(/\r?\n/).filter((line) => line.length > 0);
@@ -33,18 +31,25 @@ function escapeCsvField(value: string): string {
 
 const input = readFileSync(inputPath, "utf8");
 const words = parseCsvColumn(input);
-
+const usedRoots = new Set<string>();
+const failures: string[] = [];
 const rows: string[] = ["english,clarity"];
 
 for (const english of words) {
-  let clarity = "";
   try {
-    clarity = toClarityWord(english, SYLLABLES);
-  } catch (error) {
-    const message = error instanceof Error ? error.message : String(error);
-    console.warn(`Warning: could not convert "${english}": ${message}`);
+    const clarity = toUniqueClarityWord(english, usedRoots);
+    rows.push(`${escapeCsvField(english)},${escapeCsvField(clarity)}`);
+  } catch {
+    failures.push(english);
   }
-  rows.push(`${escapeCsvField(english)},${escapeCsvField(clarity)}`);
+}
+
+if (failures.length > 0) {
+  const preview = failures.slice(0, 10).join(", ");
+  const suffix = failures.length > 10 ? ", ..." : "";
+  throw new Error(
+    `Could not assign unique Clarity roots for ${failures.length} word(s): ${preview}${suffix}`,
+  );
 }
 
 writeFileSync(outputPath, rows.join("\n") + "\n");

@@ -104,3 +104,32 @@ export function toClarityWord(input: string, syllables: number): string {
 
   return root;
 }
+
+const DEFAULT_MIN_SYLLABLES = 2;
+const DEFAULT_MAX_SYLLABLES = 4;
+
+/**
+ * Assign a unique Clarity root by growing syllable count from min to max on collision.
+ */
+export function toUniqueClarityWord(
+  input: string,
+  usedRoots: Set<string>,
+  minSyllables = DEFAULT_MIN_SYLLABLES,
+  maxSyllables = DEFAULT_MAX_SYLLABLES,
+): string {
+  if (minSyllables < 1 || maxSyllables < minSyllables) {
+    throw new Error("Invalid syllable range");
+  }
+
+  for (let syllables = minSyllables; syllables <= maxSyllables; syllables++) {
+    const root = toClarityWord(input, syllables);
+    if (!usedRoots.has(root)) {
+      usedRoots.add(root);
+      return root;
+    }
+  }
+
+  throw new Error(
+    `Could not assign unique Clarity root for "${input}" within ${maxSyllables} syllables`,
+  );
+}

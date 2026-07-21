@@ -17,7 +17,7 @@
     "dev": "tsx src/index.ts",
     "typecheck": "tsc --noEmit",
     "parse": "tsx src/cli.ts",
-    "convert-swadesh": "tsx scripts/convert-swadesh.ts"
+    "convert-ngsl": "tsx scripts/convert-ngsl.ts"
   },
   "engines": {
     "node": ">=20"
