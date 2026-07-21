@@ -79,7 +79,7 @@ function atWithWrap<T>(items: T[], index: number): T {
  * Convert an alphabetical string into a Clarity-compatible root of form V(CV)+.
  * Vowel and consonant tracks are zipped with wraparound to fill the requested syllable count.
  */
-export function toClarityPhonotactics(input: string, syllables: number): string {
+export function toClarityWord(input: string, syllables: number): string {
   if (syllables < 1) {
     throw new Error("Syllable count must be at least 1");
   }
@@ -91,12 +91,9 @@ export function toClarityPhonotactics(input: string, syllables: number): string 
     throw new Error("Input must contain at least one vowel");
   }
 
-  if (syllables > 1 && consonants.length === 0) {
-    throw new Error("Input must contain at least one consonant for multi-syllable roots");
-  }
-
   const remappedVowels = vowels.map(remapVowel);
-  const remappedConsonants = consonants.map(remapConsonant);
+  const remappedConsonants =
+    consonants.length === 0 ? ["j"] : consonants.map(remapConsonant);
 
   let root = atWithWrap(remappedVowels, 0);
 

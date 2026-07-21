@@ -4,7 +4,7 @@ import type { ParseTree } from "antlr4ng";
 import { SentenceParserLexer } from "./generated/SentenceParserLexer.js";
 import { SentenceParserParser } from "./generated/SentenceParserParser.js";
 
-export { toClarityPhonotactics } from "./phonotactics.js";
+export { toClarityWord } from "./word-converter.js";
 
 export type ParseResult = {
   tree: ParseTree;

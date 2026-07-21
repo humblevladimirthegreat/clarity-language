@@ -16,7 +16,8 @@
     "build": "npm run generate && tsc",
     "dev": "tsx src/index.ts",
     "typecheck": "tsc --noEmit",
-    "parse": "tsx src/cli.ts"
+    "parse": "tsx src/cli.ts",
+    "convert-swadesh": "tsx scripts/convert-swadesh.ts"
   },
   "engines": {
     "node": ">=20"
