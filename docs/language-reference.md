@@ -32,7 +32,7 @@ This is accomplished via each word preceded by a particle indicating the part of
 
 **Referential Unambiguity**: It is always clear what pronouns refer to.
 
-A difficult problem for computationally parsing a sentence is figuring out what vague pronouns like English *it* refer to. Clarity avoids that by forming anaphoric pronouns from a fixed prefix of the referent’s root (through the 2nd vowel), resolved to the **most recently mentioned compatible** antecedent (see [References: unambiguous pronouns](#references-unambiguous-pronouns)), plus a small set of special pronouns for discourse roles. There are no vague person/number pronouns in the English sense.
+A difficult problem for computationally parsing a sentence is figuring out what vague pronouns like English *it* refer to. Clarity avoids that by forming anaphoric pronouns from a fixed prefix of **any** prior word’s root (through the 2nd vowel), resolved to the **most recently mentioned compatible** antecedent (see [References: unambiguous pronouns](#references-unambiguous-pronouns)), plus a small set of special pronouns for discourse roles. There are no vague person/number pronouns in the English sense.
 
 **Semantic Unambiguity**: It is always clear in what sense a word is being used.
 
@@ -121,11 +121,11 @@ Pronouns replace definite articles: once something has been introduced, you refe
 
 ## Letter-based anaphoric pronouns
 
-An anaphoric pronoun is built from a **fixed prefix of the referent’s root**, cut **up to and including the 2nd vowel**, plus the usual part-of-speech prefix and the pronoun word-form suffix **-r**. (Roots are `V(CV)+`, so the stem is typically the opening `VCV`.)
+An anaphoric pronoun can refer back to **any prior word** (entity, verb, modifier, and so on — not only arguments). It is built from a **fixed prefix of that word’s root**, cut **up to and including the 2nd vowel**, plus the usual part-of-speech prefix and the pronoun word-form suffix **-r**. (Roots are `V(CV)+`, so the stem is typically the opening `VCV`.) The pronoun’s PoS prefix is whatever role you need **now**; it need not match the antecedent’s original PoS.
 
-Resolution is always unambiguous for the listener and for a parser: a **-r** pronoun refers to the **most recently mentioned compatible** antecedent — the most recent entity whose root begins with that stem. There is no guesswork about which match was meant.
+Resolution is always unambiguous for the listener and for a parser: a **-r** pronoun refers to the **most recently mentioned compatible** antecedent — the most recent word whose root begins with that stem. There is no guesswork about which match was meant.
 
-**Mentions include pronoun uses themselves**: resolving a pronoun makes that referent the most recent again.
+**Mention = any word use in the discourse** (any part of speech), including pronoun uses themselves. Resolving a pronoun counts as a new mention of that referent and makes it the most recent again.
 
 It is the **speaker’s** job to ensure the intended referent is the most recent compatible match. Use the letter pronoun when that is already true. If the most recent match is **not** what you intend, use a **name** or the **full word**, potentially with a **modifier / ordinal**. That mention becomes most recent, so later pronouns can refer to it again.
 
@@ -141,10 +141,11 @@ Forms TBD. Roles:
 * **Listener** (2nd person)
 * **Generic single person** (a nonspecific individual — not impersonal *one*)
 * **Next clause** (used for dependent clauses; see above)
+* **Interrogative pronoun** (who/what/where) all use same root
 
 **Group containing** a referent is not a separate special pronoun: append **-z** to the word (see above).
 
-**Prefer names.** When a proper name is available, use it — including for self-address — rather than the speaker/listener special pronoun. The special pronouns are for the narrow cases where a name is unavailable, awkward, or would obscure the discourse role.
+**Prefer names.** When a proper name is available, use it and/or its pronoun — including for self-address — rather than the speaker/listener special pronoun. The special pronouns are for the narrow cases where a name is unavailable or undesired.
 
 # Phonology and Phonotactics
 
