@@ -4,6 +4,8 @@ import type { ParseTree } from "antlr4ng";
 import { SentenceParserLexer } from "./generated/SentenceParserLexer.js";
 import { SentenceParserParser } from "./generated/SentenceParserParser.js";
 
+export { toClarityPhonotactics } from "./phonotactics.js";
+
 export type ParseResult = {
   tree: ParseTree;
   parser: SentenceParserParser;
