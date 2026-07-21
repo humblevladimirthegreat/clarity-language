@@ -1,4 +1,7 @@
-pronouns based on the first syllable (and second if collision). If the same word, disambiguate by adjective or ordinal. Replaces definite articles.
+
+pronouns based on the first three letters of the referent (or additional CV pairs to disambiguate). If there are multiple or the same word, disambiguate by adjective or ordinal. Replaces definite articles.
+
+
 
 special pronouns (prefer names when possible even for self-address): speaker (1st person), listener (2nd person), generic single person, group containing person, next clause
 

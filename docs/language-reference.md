@@ -163,9 +163,16 @@ End of the word (or end of component if compound word) must be l (for partic**l*
 
 ### Phonotactics
 
-a) A syllable can never start with a vowel, and the ending and beginning consonants were carefully chosen so that you can never confuse which syllable a consonant belongs to (dala must be pronounced da'la and not dal'a because syllables never start with vowels).
+A word contains three parts:
+1. the part of speech prefix
+2. the root(s) - multiple if compound word
+3. the word form suffix. literal(l), metaphorical(m), proper name(n), pronoun(r)
 
-b) All particles end with "l". Since all content words have a particle in front, word boundaries are easy to spot and unambiguous, even when pauses are unreliable (as in singing).
+roots have form V(CV)+
+if a compound root, then "j" separates them
 
-c) Easy to tell the components of a compound word because each component (except the last) will end with n plus a vowel. 
+a) A word root almost always starts with a vowel. The ending and beginning consonants were carefully chosen so that you can never confuse which syllable a consonant belongs to (vaban must be pronounced va'ban and not vab'an because syllables never end with a consonant unless it's the end of the word).
 
+b) All words end with l, m, n, or r, and no other syllables ever end with a consonant, making word boundaries are easy to spot and unambiguous, even when pauses are unreliable (as in singing).
+
+c) Easy to tell the components of a compound word because j separates them
