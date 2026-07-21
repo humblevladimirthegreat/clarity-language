@@ -74,9 +74,9 @@ The standard word order is Subject \- Direct Object \- Verb. Order can change fo
 | /b/ | argument entity (of a complex modifier) |
 | /v/ | verb |
 | /w/ | entity modifier (adjective) |
-| /ɡ/ | other grammar (preposition / conjunction / quotation) |
+| /ɡ/ | adjective satellite (modifies the previous `/w/`) |
 | /h/ | verb/clause modifier (adverb, including mood / tense) |
-| j /dʑ/ | interjections, direct address |
+| j /dʑ/ | interjections, direct address, conjunctions, quotation markers |
 
 There is no dedicated indirect-object prefix. Recipients and beneficiaries (English *to* / *for*) are expressed with a complex `/h/` modifier plus an argument entity, the same pattern as other verb-level prepositional-phrase meanings.
 
@@ -91,6 +91,14 @@ Verb (/v/) \- the action being done
 ## Entity modifiers (`/w/`)
 
 `/w/` marks modifiers of an **entity** (adjectives and entity-level relational phrases). They go **after** the word they modify.
+
+## Adjective satellites (`/ɡ/`)
+
+`/ɡ/` marks a word that **modifies the previous adjective** (`/w/` unit). It does not modify the verb or the entity directly. Use it for degree (*very*, *slightly*) and for tense/mood/evidentiality scoped only to that property (*former* / *recent*, *alleged*, and the same mood roots as `/h/` when the framing applies just to the adjective).
+
+The `/ɡ/` word sits on its host: normally immediately after the `/w/` (or after that `/w/`’s contiguous `/b/` argument if the adjective is complex). Unlike `/h/`, `/ɡ/` does **not** float. Several `/ɡ/` words may stack on one `/w/` (`w-happy g-recent g-very`); each applies to that same adjective. `/ɡ/` words are typically simple (no `/b/` argument); if a relation needs an argument, use a complex `/w/` + `/b/` instead.
+
+Same root, different prefix → different scope: `/h/` frames the clause; `/ɡ/` frames only the preceding adjective.
 
 ## Verb/clause modifiers (`/h/`)
 
@@ -109,13 +117,13 @@ A **complex modifier** takes an extra participant: the modifier word plus an **a
 
 Example (recipient): `/h/` *to* + `/b/` recipient may sit anywhere in the clause as a pair.
 
-After a complex modifier, the argument is the new entity for further **entity** modification: a simple `/w/` after `/b/` describes the argument, not the original host. You can chain by having a complex modifier modify a complex modifier or its argument. You can’t have two complex `/w/` modifiers affect the same entity; if you need that, describe the entity further in a separate sentence. Multiple `/h/` units on the same verb are allowed (each simple `/h/` or contiguous `/h/`+`/b/` counts as one unit), subject to the scope order above.
+After a complex modifier, the argument is the new entity for further **entity** modification: a simple `/w/` after `/b/` describes the argument, not the original host. `/ɡ/` after a `/w/` (+ optional `/b/`) grades or frames that adjective, not the entity. You can chain by having a complex modifier modify a complex modifier or its argument. You can’t have two complex `/w/` modifiers affect the same entity; if you need that, describe the entity further in a separate sentence. Multiple `/h/` units on the same verb are allowed (each simple `/h/` or contiguous `/h/`+`/b/` counts as one unit), subject to the scope order above.
 
 Complex modifiers cover what would be prepositional phrases in other languages. A verb used as a complex `/h/` modifier with a `/b/` argument can form a simple dependent-clause-like adjunct (the `/b/` argument is the clause’s subject-like participant).
 
-## Interjections and Direct Address
+## Interjections, direct address, conjunctions (`/j/`)
 
-Marked with j /dʑ/. Used for exclamations, greetings, and vocatives that address someone directly.
+Marked with j /dʑ/. Used for exclamations, greetings, vocatives that address someone directly, **conjunctions** (*and* / *or* / *but*, etc.), and **quotation markers** (see below). The dictionary lists the specific forms; the root distinguishes these uses from each other.
 
 ## Dependent Clauses
 
@@ -123,7 +131,7 @@ Dependent clauses are formed by a special pronoun (form TBD) that refers to the 
 
 ## Quotations
 
-When quoting someone, using a proper noun, using a foreign word, or using a slang word, you must use the square brackets \[ \]. Begin-quote, end-quote, and escape forms are /ɡ/-prefixed other-grammar words (the dictionary lists the specific forms). On the off chance you need to use a quotation marker word within the quotation, it is escaped with \\ or the escape form immediately before it. These spoken forms are probably not needed in casual speech, but can be helpful if speaking with voice-to-text or if you want to emphasize the quoting. 
+When quoting someone, using a proper noun, using a foreign word, or using a slang word, you must use the square brackets \[ \]. Begin-quote, end-quote, and escape forms are **/j/-prefixed** words (the dictionary lists the specific forms). On the off chance you need to use a quotation marker word within the quotation, it is escaped with \\ or the escape form immediately before it. These spoken forms are probably not needed in casual speech, but can be helpful if speaking with voice-to-text or if you want to emphasize the quoting. 
 
 # References: unambiguous pronouns
 
