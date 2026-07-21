@@ -87,11 +87,9 @@ export function toClarityWord(input: string, syllables: number): string {
   const letters = normalizeInput(input);
   const { vowels, consonants } = splitTracks(letters);
 
-  if (vowels.length === 0) {
-    throw new Error("Input must contain at least one vowel");
-  }
-
-  const remappedVowels = vowels.map(remapVowel);
+  // Vowelless inputs (e.g. "nfl", "dvd") fall back to "a".
+  const remappedVowels =
+    vowels.length === 0 ? ["a"] : vowels.map(remapVowel);
   const remappedConsonants =
     consonants.length === 0 ? ["j"] : consonants.map(remapConsonant);
 

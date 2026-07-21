@@ -1,0 +1,17 @@
+Concept columns in emojis.csv are derived from:
+
+1) Iconic – the Universal Emoji Language
+   https://iconlang.net/
+   Copyright (c) 2023 Tiemo Benedikt Schröder
+   License: MIT (see Iconic distribution License.txt)
+
+2) Emojese
+   https://github.com/JanMiksovsky/emojese
+   Copyright (c) 2020 Jan Miksovsky
+   License: MIT
+
+Emoji inventory / Unicode names from Unicode emoji-test.txt
+(Unicode License v3): https://unicode.org/Public/emoji/latest/emoji-test.txt
+
+concept: preferred single-word label (Iconic preferred when both define the emoji)
+iconic / emojese: source-specific labels when present

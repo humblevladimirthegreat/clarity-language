@@ -17,7 +17,8 @@
     "dev": "tsx src/index.ts",
     "typecheck": "tsc --noEmit",
     "parse": "tsx src/cli.ts",
-    "convert-ngsl": "tsx scripts/convert-ngsl.ts"
+    "convert-ngsl": "tsx scripts/convert-ngsl.ts",
+    "convert-emojis": "tsx scripts/convert-emojis.ts"
   },
   "engines": {
     "node": ">=20"
