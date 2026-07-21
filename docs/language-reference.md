@@ -71,20 +71,21 @@ The standard word order is Subject \- Direct Object \- Verb. Order can change fo
 |--------|------|
 | /z/ | subject |
 | /d/ | direct object |
-| /b/ | indirect object |
+| /b/ | argument entity (of a complex modifier) |
 | /v/ | verb |
 | /w/ | modifier |
 | /ɡ/ | other grammar (preposition / conjunction / quotation) |
 | /h/ | mood / tense |
 | j /dʑ/ | interjections, direct address |
 
+There is no dedicated indirect-object prefix. Recipients and beneficiaries (English *to* / *for*) are expressed with a complex modifier on the verb plus an argument entity, the same pattern as other prepositional-phrase meanings.
+
 ## Entity
 
-These are words that can stand alone as arguments in the sentence.
+These are words that can stand alone as core arguments of the clause.
 
 Subject (/z/) \- the thing doing the action  
 Direct Object (/d/) \- the thing on the receiving end of the action  
-Indirect Object (/b/) \- the recipient or beneficiary of the action  
 Verb (/v/) \- the action being done
 
 ## Simple Modifier
@@ -93,11 +94,13 @@ A word that describes another word (adjective / adverb), marked with /w/. Modifi
 
 ## Complex Modifier and Argument Entity
 
-“complex modifiers” can accept an additional word as part of the modifier, such as the possessive adjective can have the owner, then you need two parts \-  the argument entity and the modifier. The argument follows the modifier and is marked with “go-” \+ the base entity prefix (the dictionary shows how it affects the base entity)
+“complex modifiers” can accept an additional word as part of the modifier — for example a possessive (owner), a location (*located at*), or a recipient (*to* / *for*). That takes two parts: the modifier (`/w/`) and the **argument entity** (`/b/`). The argument follows the modifier. The `/w/` word carries the relation; `/b/` only marks “argument of that modifier” (the dictionary entry for the modifier says how the argument relates to the host).
 
-The argument is now the new entity, so any simple modifiers would affect the argument rather than the original entity. You can also have a complex modifier modify a complex modifier or argument and continue the chain. This also means you can’t have two complex modifiers affect the same entity, if this is the case then you need to describe the entity further as a separate sentence.
+Example (recipient): subject – direct object – verb – `/w/` *to* – `/b/` recipient.
 
-Complex modifiers are used for many things, including what would be considered prepositional phrases in other languages, such as “located at”. If you’re not sure where to put the complex modifier because it affects the whole sentence, it goes after the verb. It can even be used as simple dependent clauses (the verb is the complex modifier and the argument is the subject)
+The argument is now the new entity, so any simple modifiers after it affect the argument rather than the original host. You can also have a complex modifier modify a complex modifier or argument and continue the chain. You can’t have two complex modifiers affect the same entity; if you need that, describe the entity further in a separate sentence.
+
+Complex modifiers cover what would be prepositional phrases in other languages. If you’re not sure where to put a complex modifier because it affects the whole sentence, it goes after the verb. It can even form simple dependent clauses (the verb is the complex modifier and its `/b/` argument is the clause’s subject-like participant).
 
 ## Mood
 
