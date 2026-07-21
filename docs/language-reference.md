@@ -2,17 +2,17 @@
 
 # Introduction
 
-Geran is a language designed to encode psychological concepts and techniques that have been scientifically proven to improve your life. The encoding is done primarily through carefully selecting the vocabulary so that when you are trying to apply those concepts, it will nudge you in a better direction. For example, there are two words for *to say*. One means "they literally said" and the other "I perceived the meta-message to be" This division helps the listener realize when they are applying their own interpretation on a message, and it helps the speaker to be more mindful of what meta-messages (attitude toward the recipient) they could be construed as sending.
+Clarity is a language designed to encode psychological concepts and techniques that have been scientifically proven to improve your life. The encoding is done primarily through carefully selecting the vocabulary so that when you are trying to apply those concepts, it will nudge you in a better direction. For example, there are two words for *to say*. One means "they literally said" and the other "I perceived the meta-message to be" This division helps the listener realize when they are applying their own interpretation on a message, and it helps the speaker to be more mindful of what meta-messages (attitude toward the recipient) they could be construed as sending.
 
-When I say that Geran helps you improve your life, I mean that it improves these three broad categories:
+When I say that Clarity helps you improve your life, I mean that it improves these three broad categories:
 
-(1) Love. Geran encodes self acceptance and acceptance of others by highlighting when judgments are taking place. For example: the personal possessive adjective (my) in Geran has a form that means “the speaker is grateful for this” because frequent gratitude is scientifically shown to increase happiness.
+(1) Love. Clarity encodes self acceptance and acceptance of others by highlighting when judgments are taking place. For example: the personal possessive adjective (my) in Clarity has a form that means “the speaker is grateful for this” because frequent gratitude is scientifically shown to increase happiness.
 
-(2) Truth. Geran improves critical thinking by making obvious the common biases we hold that cause us to delude ourselves.
+(2) Truth. Clarity improves critical thinking by making obvious the common biases we hold that cause us to delude ourselves.
 
 Example: When you say you believe something, you specify whether you also looked for disconfirming evidence (heard from both sides of the issue). This helps fight the tendency of confirmation bias, one of the most pervasive and difficult-to-detect errors of thinking.
 
-(3) Freedom. Geran frees us to live our authentic selves and be creative by helping us recognize the reasons behind our actions and break free from old patterns and traditions.
+(3) Freedom. Clarity frees us to live our authentic selves and be creative by helping us recognize the reasons behind our actions and break free from old patterns and traditions.
 
 Example: The word for problem comes in two forms: “the original problem as stated” and “a subsequent restatement of the problem” Creativity often requires thinking about a problem in different ways.
 
@@ -24,7 +24,7 @@ b) The phonology and syllable structure was chosen to be easy to sing.
 
 This page describes the goals for the grammar \- skip to the next page for the actual grammar
 
-Geran has an unambiguous grammar in order to support a variety of computational tools that could better utilize the language. The Lojban language is the poster child for this, but it is infamously difficult to use the predicate-logic-inspired grammar. An unambiguous grammar need not be based on predicate logic (see [**Predicate logic is a suboptimal basis for real time logical**](http://ling.auf.net/lingbuzz/002272/v1.pdf)) and Geran resolves ambiguities in ways that are relatively simple.
+Clarity has an unambiguous grammar in order to support a variety of computational tools that could better utilize the language. The Lojban language is the poster child for this, but it is infamously difficult to use the predicate-logic-inspired grammar. An unambiguous grammar need not be based on predicate logic (see [**Predicate logic is a suboptimal basis for real time logical**](http://ling.auf.net/lingbuzz/002272/v1.pdf)) and Clarity resolves ambiguities in ways that are relatively simple.
 
 **Syntactic Unambiguity**: It is always clear the part of speech a word is and how they relate to the sentence.
 
@@ -44,6 +44,20 @@ We're not trying to be as precise as Ithkuil, because that language is very diff
 
 * Vagueness is helpful in language because we often think in vague terms. You should be able to say something is “good” without specifying precisely which aspect you are referring to.  
 * Derivational opaqueness is also fine. There doesn’t need to be any indication that “food” and “cook” are related.
+
+# Criterion for Features
+
+The goal of r/claritylanguage is to help foster compassion, rationality, and empowerment in its speakers, using language design techniques described in Language as a Cognitive Framework. I’ve decided to formalize requirements for adding new features to the language.
+
+* Helps with Language Goals. The feature should help the speaker be more compassionate, rational, and/or empowered. Ideally there should be research to support that framing the language in this way helps, However, given the innovative nature of this language, research can be scarce, so user testing can be used instead. 
+
+* Addresses a Common Problem. The feature should address cognitive bias(es) that happen in the majority of people. Implementing features for rarely-occurring problems makes the language more cumbersome for relatively little benefit.
+
+* Easy to use. The feature should be explainable with a single paragraph and a couple of examples. The feature should be usable in sentences with at most one extra second of thought (after you’ve practiced it).
+
+* Avoids shame. Features should avoid giving the impression that one option for the feature is generally more socially acceptable than another. Each feature option has cases where they should be used. Otherwise, a part of the feature might be avoided entirely, which would defeat the purpose.
+
+* Reminders where they are needed. Ideally, the feature should encourage compassion, rationality, and/or empowerment only in cases where that is relevant - i.e. when we are likely to act uncompassionately, irrationally, and/or disempowered. There will be many false positives, but the feature should strive to minimize pointless applications.
 
 # Parts of Speech
 
@@ -75,7 +89,7 @@ Complex modifiers are used for many things, including what would be considered p
 
 ## Intention Word
 
-A novel invention of Geran, the intention part of speech is optionally used by the speaker to signify why they are speaking the sentence. Examples include “improving our relationship” “uphold my boundaries” and “self-disclosure.” The particle is “mil.” The intention PoS helps with mindfulness and assertiveness by encouraging thinking about and explicitly stating your reasons for saying something.
+A novel invention of Clarity, the intention part of speech is optionally used by the speaker to signify why they are speaking the sentence. Examples include “improving our relationship” “uphold my boundaries” and “self-disclosure.” The particle is “mil.” The intention PoS helps with mindfulness and assertiveness by encouraging thinking about and explicitly stating your reasons for saying something.
 
 ## Mood
 
@@ -109,7 +123,7 @@ You can also use alternate constructs rather than pronouns in order to have a mo
 
 # Phonology and Phonotactics
 
-Geran has the following goals for its phonology:
+Clarity has the following goals for its phonology:
 
 1. Easy to sing (explained below).  
 2. Unambiguous pronunciation \- it should always be clear how to pronounce it from the spelling.  
