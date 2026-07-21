@@ -63,7 +63,7 @@ The goal of r/claritylanguage is to help foster compassion, rationality, and emp
 
 Parts of speech are determined by a prefix consonant added before each word. Words do not change form based on usage, and can be used in most parts of speech, so the prefix is how you know a word's role.
 
-The standard word order is Subject \- Direct Object \- Verb. Order can change for stylistic reasons or due to certain constructs like dependent clauses. Prepositional phrases are treated like modifiers and go after what they modify.
+The standard word order is Subject \- Direct Object \- Verb. Order can change for stylistic reasons or due to certain constructs like dependent clauses. Entity modifiers (`/w/`) go after what they modify. Verb/clause modifiers (`/h/`) may appear anywhere in the clause (see below).
 
 ## Part-of-speech prefixes
 
@@ -73,12 +73,12 @@ The standard word order is Subject \- Direct Object \- Verb. Order can change fo
 | /d/ | direct object |
 | /b/ | argument entity (of a complex modifier) |
 | /v/ | verb |
-| /w/ | modifier |
+| /w/ | entity modifier (adjective) |
 | /ɡ/ | other grammar (preposition / conjunction / quotation) |
-| /h/ | mood / tense |
+| /h/ | verb/clause modifier (adverb, including mood / tense) |
 | j /dʑ/ | interjections, direct address |
 
-There is no dedicated indirect-object prefix. Recipients and beneficiaries (English *to* / *for*) are expressed with a complex modifier on the verb plus an argument entity, the same pattern as other prepositional-phrase meanings.
+There is no dedicated indirect-object prefix. Recipients and beneficiaries (English *to* / *for*) are expressed with a complex `/h/` modifier plus an argument entity, the same pattern as other verb-level prepositional-phrase meanings.
 
 ## Entity
 
@@ -88,23 +88,30 @@ Subject (/z/) \- the thing doing the action
 Direct Object (/d/) \- the thing on the receiving end of the action  
 Verb (/v/) \- the action being done
 
-## Simple Modifier
+## Entity modifiers (`/w/`)
 
-A word that describes another word (adjective / adverb), marked with /w/. Modifiers go after the word they modify.
+`/w/` marks modifiers of an **entity** (adjectives and entity-level relational phrases). They go **after** the word they modify.
+
+## Verb/clause modifiers (`/h/`)
+
+`/h/` marks modifiers of the **verb or clause** (adverbs). That includes manner, time/place adjuncts, recipients (*to* / *for*), and mood/tense/evidentiality. Example mood form: “h vizinin” means “I remember the events of this sentence (which occurred in the past).”
+
+Because `/h/` always targets the clause’s verb, **position is free within the clause** (before/after arguments, next to the verb, clause-final, etc.) for style, focus, or meter. `/h/` material must stay inside its own clause: it must not float into a following sentence or into a trailing dependent clause (dependent clauses stay at the end; see below).
+
+When several `/h/` units appear in one clause, interpret them in this **relative order** for scope (regardless of linear placement): mood/evidential → role/place/time adjuncts (including recipient) → manner. If two units share a band, left-to-right in the spoken order breaks the tie.
 
 ## Complex Modifier and Argument Entity
 
-“complex modifiers” can accept an additional word as part of the modifier — for example a possessive (owner), a location (*located at*), or a recipient (*to* / *for*). That takes two parts: the modifier (`/w/`) and the **argument entity** (`/b/`). The argument follows the modifier. The `/w/` word carries the relation; `/b/` only marks “argument of that modifier” (the dictionary entry for the modifier says how the argument relates to the host).
+A **complex modifier** takes an extra participant: the modifier word plus an **argument entity** (`/b/`). The argument immediately follows the modifier. The modifier word carries the relation; `/b/` only marks “argument of that modifier” (the dictionary entry says how it relates to the host).
 
-Example (recipient): subject – direct object – verb – `/w/` *to* – `/b/` recipient.
+- **Entity-level** complex modifiers use `/w/` + `/b/` (e.g. possessive owner, “book *on* the table”).
+- **Verb/clause-level** complex modifiers use `/h/` + `/b/` (e.g. recipient *to*, “happened *at*”). The `/h/` + `/b/` pair is one unit and **stays contiguous** even when that unit floats.
 
-The argument is now the new entity, so any simple modifiers after it affect the argument rather than the original host. You can also have a complex modifier modify a complex modifier or argument and continue the chain. You can’t have two complex modifiers affect the same entity; if you need that, describe the entity further in a separate sentence.
+Example (recipient): `/h/` *to* + `/b/` recipient may sit anywhere in the clause as a pair.
 
-Complex modifiers cover what would be prepositional phrases in other languages. If you’re not sure where to put a complex modifier because it affects the whole sentence, it goes after the verb. It can even form simple dependent clauses (the verb is the complex modifier and its `/b/` argument is the clause’s subject-like participant).
+After a complex modifier, the argument is the new entity for further **entity** modification: a simple `/w/` after `/b/` describes the argument, not the original host. You can chain by having a complex modifier modify a complex modifier or its argument. You can’t have two complex `/w/` modifiers affect the same entity; if you need that, describe the entity further in a separate sentence. Multiple `/h/` units on the same verb are allowed (each simple `/h/` or contiguous `/h/`+`/b/` counts as one unit), subject to the scope order above.
 
-## Mood
-
-Indicates the mood/tense of the sentence. Marked with the /h/ prefix. Use this to describe when the events are taking place and how you know about it. For example: “h vizinin” means “I remember the events of this sentence (which occurred in the past)”
+Complex modifiers cover what would be prepositional phrases in other languages. A verb used as a complex `/h/` modifier with a `/b/` argument can form a simple dependent-clause-like adjunct (the `/b/` argument is the clause’s subject-like participant).
 
 ## Interjections and Direct Address
 
@@ -112,7 +119,7 @@ Marked with j /dʑ/. Used for exclamations, greetings, and vocatives that addres
 
 ## Dependent Clauses
 
-Dependent clauses are formed by a special pronoun (form TBD) that refers to the next sentence. To be unambiguous and reduce cognitive load, dependent clauses must come at the end of the sentence, so you must rearrange the word order if needed. Example is *I told him that...* 
+Dependent clauses are formed by a special pronoun (form TBD) that refers to the next sentence. To be unambiguous and reduce cognitive load, dependent clauses must come at the end of the sentence, so you must rearrange the word order if needed. Example is *I told him that...* Main-clause `/h/` units stay in the main clause and do not float into the dependent clause. 
 
 ## Quotations
 
