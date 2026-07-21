@@ -32,7 +32,7 @@ This is accomplished via each word preceded by a particle indicating the part of
 
 **Referential Unambiguity**: It is always clear what pronouns refer to.
 
-A difficult problem for computationally parsing a sentence is trying to figure out what 3rd-person pronouns refer to (“it”). My solution? There are 2 forms of 3rd-person pronouns \- one that is based on part of speech “\[the previously mentioned subject\]” and another that is based on assignment “I gave the (pencil and paper) \[henceforth collectively known as x\] to you. I hope you appreciate x.”
+A difficult problem for computationally parsing a sentence is figuring out what vague pronouns like English *it* refer to. Clarity avoids that by forming anaphoric pronouns from the referent’s own letters (see [References: unambiguous pronouns](#references-unambiguous-pronouns)), plus a small set of special pronouns for discourse roles. There are no vague person/number pronouns in the English sense.
 
 **Semantic Unambiguity**: It is always clear in what sense a word is being used.
 
@@ -109,30 +109,47 @@ Marked with j /dʑ/. Used for exclamations, greetings, and vocatives that addres
 
 ## Dependent Clauses
 
-Dependent **c**l**a**uses are formed by a special pronoun “gal” that refers to the next sentence. To be unambiguous and reduce cognitive load, dependent clauses must come at the end of the sentence, so you must rearrange the word order if needed. Example is *I told him that...* 
+Dependent clauses are formed by a special pronoun (form TBD) that refers to the next sentence. To be unambiguous and reduce cognitive load, dependent clauses must come at the end of the sentence, so you must rearrange the word order if needed. Example is *I told him that...* 
 
 ## Quotations
 
 When quoting someone, using a proper noun, using a foreign word, or using a slang word, you must use the square brackets \[ \]. Begin-quote, end-quote, and escape forms are /ɡ/-prefixed other-grammar words (the dictionary lists the specific forms). On the off chance you need to use a quotation marker word within the quotation, it is escaped with \\ or the escape form immediately before it. These spoken forms are probably not needed in casual speech, but can be helpful if speaking with voice-to-text or if you want to emphasize the quoting. 
 
-# 
-
 # References: unambiguous pronouns
 
-In general, referring to something is ambiguous, especially the vague 3rd-person pronoun *it*. The only unambiguous pronouns are singular 1st and 2nd person, “mel” and “jul” respectively. Here are my alternatives to 3rd-person pronouns.
+Pronouns replace definite articles: once something has been introduced, you refer back with a pronoun (or an alternate construct below), not with a separate “the X” form.
 
-Reference the previous entity that has the same particle: prepend “zhy-”  
-Reference the prior entity before that prepend “zhyzhy-”
+## Letter-based anaphoric pronouns
 
-You can also use alternate constructs rather than pronouns in order to have a more precise way of referring to other entities. These other ways are as follows, in order of preference:
+An anaphoric pronoun is built from the **first three letters of the referent’s root**, plus further **CV pairs** from that root if needed to avoid a clash with another **active** antecedent. The word takes the usual part-of-speech prefix and the pronoun word-form suffix **-r**.
 
-* If something has a proper name, use that name.   
-* If there is only one type of that entity, use the definite noun. *I bought a hotdog; I ate the hotdog*  
-* If the entities can be differentiated by modifiers, use them. *I saw a tall person and a short person. I talked to the short person.*  
-* If there are two of the same entity, you can use the recency particle prefix “by-” for *the most recently mentioned \[entity\]* and use “bo-” for *the other one*  
-* You can use verbal adjuncts to refer to entities affected by a verb, like *the attacker* or *the attacked*. The adjunct particle is formed by prefixing “vy-”  So “vyzin \[verb\]” would refer to the person who performed the most recently referenced \[verb\].   
-* For plural pronouns, you refer to a group containing a specified entity. *Karl and Susan went to lunch. **The group containing** Susan ate curry.* The particle suffix is “-am” 
+* If two different active antecedents would yield the same pronoun after extending CV pairs as far as the roots allow, disambiguate with a **modifier** (adjective) or an **ordinal**.
+* If the same word was introduced more than once as distinct referents, disambiguate the same way (modifier or ordinal) — letter length alone cannot separate identical roots.
 
+**Active antecedents.** An antecedent is *active* while speaker and listener can still be expected to treat it as a live candidate for reference — roughly, from introduction until the discourse has moved on enough that a bare letter-pronoun would no longer reliably pick it out (new topic, new scene, or enough intervening referents that re-introducing the full word would be needed). Tools can approximate this as: entities mentioned since the last clear topic boundary. The precise boundary may be refined with use; the design goal is that colliding letter-pronouns are only checked against this active set, not against the entire prior conversation.
+
+There are no English-style 3rd-person pronouns (*he* / *she* / *it* / *they*) and no impersonal *one*.
+
+## Special pronouns
+
+Forms TBD. Roles:
+
+* **Speaker** (1st person)
+* **Listener** (2nd person)
+* **Generic single person** (a nonspecific individual — not impersonal *one*)
+* **Group containing** a specified person
+* **Next clause** (used for dependent clauses; see above)
+
+**Prefer names.** When a proper name is available, use it — including for self-address — rather than the speaker/listener special pronoun. The special pronouns are for the narrow cases where a name is unavailable, awkward, or would obscure the discourse role.
+
+## Alternate constructs
+
+You can also use alternate constructs rather than pronouns for a more precise reference. In order of preference:
+
+* If something has a proper name, use that name (including for yourself when addressing or referring to yourself).
+* If the entities can be differentiated by modifiers, use them. *I saw a tall person and a short person. I talked to the short person.*
+* You can use verbal adjuncts to refer to entities affected by a verb, like *the attacker* or *the attacked*.
+* For a group, you can refer to the group containing a specified entity. *Karl and Susan went to lunch. **The group containing** Susan ate curry.*
 # Phonology and Phonotactics
 
 Clarity has the following goals for its phonology:
