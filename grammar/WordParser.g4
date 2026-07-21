@@ -1,4 +1,4 @@
-grammar Grammar;
+grammar WordParser;
 // notes on using ANTLR: https://github.com/antlr/antlr4/blob/master/doc/index.md
 //TEST sentence: Hawolel bamol deram, bohuzel ram.
 // hawolelbamolderambohuzelram
