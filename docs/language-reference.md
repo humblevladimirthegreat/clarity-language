@@ -32,7 +32,7 @@ This is accomplished via each word preceded by a particle indicating the part of
 
 **Referential Unambiguity**: It is always clear what pronouns refer to.
 
-A difficult problem for computationally parsing a sentence is figuring out what vague pronouns like English *it* refer to. Clarity avoids that by forming anaphoric pronouns from the referent’s own letters, with **-rn** to bind to the most recent compatible antecedent and **-r** to reuse that binding (see [References: unambiguous pronouns](#references-unambiguous-pronouns)), plus a small set of special pronouns for discourse roles. There are no vague person/number pronouns in the English sense.
+A difficult problem for computationally parsing a sentence is figuring out what vague pronouns like English *it* refer to. Clarity avoids that by forming anaphoric pronouns from the referent’s own letters, resolved to the **most recently mentioned compatible** antecedent (see [References: unambiguous pronouns](#references-unambiguous-pronouns)), plus a small set of special pronouns for discourse roles. There are no vague person/number pronouns in the English sense.
 
 **Semantic Unambiguity**: It is always clear in what sense a word is being used.
 
@@ -121,26 +121,11 @@ Pronouns replace definite articles: once something has been introduced, you refe
 
 ## Letter-based anaphoric pronouns
 
-An anaphoric pronoun is built from the **first three letters of the referent’s root**, plus further **CV pairs** from that root if needed to distinguish referents. It takes the usual part-of-speech prefix and one of two pronoun endings:
+An anaphoric pronoun is built from the **first three letters of the referent’s root**, plus the usual part-of-speech prefix and the pronoun word-form suffix **-r**. The letter sequence is fixed at three — no lengthening.
 
-| Ending | Meaning |
-|--------|---------|
-| **-rn** | **Bind** this letter-form to the **most recently mentioned** compatible antecedent (root matches the pronoun’s letters). Later **-r** uses of the same form refer to that binding. |
-| **-r** | **Use** the **existing binding** for this letter-form. Never assigns a new antecedent. |
+A **-r** pronoun refers to the **most recently mentioned compatible** antecedent (whose root begins with those three letters). Mentions include full words and successful pronoun resolutions. Shared three-letter prefixes are expected to be rare enough that recency is enough; if you need a non-most-recent match, use a name, the full word, or a modifier/ordinal attached to the pronoun.
 
-Add **-z** after the word-form ending to mark **plural**: the **group containing** the referent. Example: a bound pronoun `…r` refers to one entity; `…rz` refers to the group that includes that entity. The same **-z** works on full words and on **-rn** binds (`…rnz`).
-
-Resolution is deterministic for a parser:
-
-1. **-rn** → among antecedents whose roots are compatible with the pronoun’s letters, bind this form to the most recently mentioned one (and that use refers to it).
-2. **-r** → look up the current binding for this letter-form. If none exists, the pronoun is ill-formed.
-
-Rebinding: a later **-rn** with the same letters replaces the previous binding.
-
-* If two different antecedents share a root prefix so that letters alone cannot separate them at bind time, disambiguate with a **modifier** (adjective) or an **ordinal** on the **-rn** form (or use an alternate construct).
-* If the same word was introduced more than once as distinct referents, disambiguate the same way — letter length alone cannot separate identical roots.
-
-**Compatible / recent.** “Compatible” means the referent’s root begins with the pronoun’s letter sequence. “Most recently mentioned” counts full-word mentions and successful pronoun resolutions in the discourse so far (within the current topic segment). Topic boundaries clear bindings so a fresh **-rn** is required after a shift.
+Add **-z** after the word-form ending to mark **plural**: the **group containing** the referent. Example: `…r` refers to one entity; `…rz` refers to the group that includes that entity. The same **-z** works on full words (`…lz`, etc.).
 
 There are no English-style 3rd-person pronouns (*he* / *she* / *it* / *they*) and no impersonal *one*.
 
@@ -188,7 +173,7 @@ g /ɡ/, d /d/, j /dʑ/, b /b/, z /z/, m /m/, v /v/  (cannot double with the seco
 A word contains three parts:
 1. the part of speech prefix
 2. the root(s) - multiple if compound word
-3. the word form suffix: literal (**-l**), metaphorical (**-m**), proper name (**-n**), bound pronoun use (**-r**), pronoun bind-to-most-recent (**-rn**)
+3. the word form suffix: literal (**-l**), metaphorical (**-m**), proper name (**-n**), pronoun (**-r**)
 4. optional plural **-z** (the group containing the referent), after the word-form suffix
 
 roots have form V(CV)+
@@ -196,6 +181,6 @@ if a compound root, then "j" separates them
 
 a) A word root almost always starts with a vowel. The ending and beginning consonants were carefully chosen so that you can never confuse which syllable a consonant belongs to (vaban must be pronounced va'ban and not vab'an because syllables never end with a consonant unless it's the end of the word).
 
-b) All words end with a word-form suffix (**-l**, **-m**, **-n**, **-r**, or **-rn**), optionally followed by plural **-z**. No other syllables end with a consonant, so word boundaries stay clear even when pauses are unreliable (as in singing). Allowed word-final clusters: **-rn**, and any of those endings plus **-z** (**-lz**, **-mz**, **-nz**, **-rz**, **-rnz**).
+b) All words end with a word-form suffix (**-l**, **-m**, **-n**, or **-r**), optionally followed by plural **-z**. No other syllables end with a consonant, so word boundaries stay clear even when pauses are unreliable (as in singing). Allowed word-final clusters are those endings plus **-z** (**-lz**, **-mz**, **-nz**, **-rz**).
 
 c) Easy to tell the components of a compound word because j separates them
