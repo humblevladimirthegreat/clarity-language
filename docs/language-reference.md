@@ -76,7 +76,8 @@ The standard word order is Subject \- Direct Object \- Verb. Order can change fo
 | /w/ | entity modifier (adjective) |
 | /ɡ/ | adjective satellite (modifies the previous `/w/`) |
 | /h/ | verb/clause modifier (adverb, including mood / tense) |
-| j /dʑ/ | interjections, direct address, conjunctions, quotation markers |
+| x /ʒ/ | discourse glue (conjunctions, quotation markers) |
+| j /dʑ/ | interjections, direct address |
 
 There is no dedicated indirect-object prefix. Recipients and beneficiaries (English *to* / *for*) are expressed with a complex `/h/` modifier plus an argument entity, the same pattern as other verb-level prepositional-phrase meanings.
 
@@ -121,9 +122,13 @@ After a complex modifier, the argument is the new entity for further **entity** 
 
 Complex modifiers cover what would be prepositional phrases in other languages. A verb used as a complex `/h/` modifier with a `/b/` argument can form a simple dependent-clause-like adjunct (the `/b/` argument is the clause’s subject-like participant).
 
-## Interjections, direct address, conjunctions (`/j/`)
+## Interjections and direct address (`/j/`)
 
-Marked with j /dʑ/. Used for exclamations, greetings, vocatives that address someone directly, **conjunctions** (*and* / *or* / *but*, etc.), and **quotation markers** (see below). The dictionary lists the specific forms; the root distinguishes these uses from each other.
+Marked with j /dʑ/. Used for exclamations, greetings, and vocatives that address someone directly.
+
+## Discourse glue (`/x/`)
+
+Marked with x /ʒ/. Used for **conjunctions** (*and* / *or* / *but*, etc.) and **quotation markers** (see below). The dictionary lists the specific forms. The same sound **x** also joins roots inside compound words (see Phonotactics); it is not used as an ordinary root consonant, so mid-word **x** always means “next root,” and word-initial **x** always means discourse glue.
 
 ## Dependent Clauses
 
@@ -131,7 +136,7 @@ Dependent clauses are formed by a special pronoun (form TBD) that refers to the 
 
 ## Quotations
 
-When quoting someone, using a proper noun, using a foreign word, or using a slang word, you must use the square brackets \[ \]. Begin-quote, end-quote, and escape forms are **/j/-prefixed** words (the dictionary lists the specific forms). On the off chance you need to use a quotation marker word within the quotation, it is escaped with \\ or the escape form immediately before it. These spoken forms are probably not needed in casual speech, but can be helpful if speaking with voice-to-text or if you want to emphasize the quoting. 
+When quoting someone, using a proper noun, using a foreign word, or using a slang word, you must use the square brackets \[ \]. Begin-quote, end-quote, and escape forms are **/x/-prefixed** words (the dictionary lists the specific forms). On the off chance you need to use a quotation marker word within the quotation, it is escaped with \\ or the escape form immediately before it. These spoken forms are probably not needed in casual speech, but can be helpful if speaking with voice-to-text or if you want to emphasize the quoting. 
 
 # References: unambiguous pronouns
 
@@ -183,13 +188,16 @@ e /e̞/ \- o /o̞/ \- u /ɶ/ \- a /ɑ/  (roundedness is non-contrastive)
 
 The language has no distinction between voiced/unvoiced, but the voiced version is preferred because you can sustain notes across letters (voiceless requires briefly stopping the airflow). You can still use the unvoiced for stylistic reasons.
 
-h /ɣ/, w /w/, g /ɡ/, d /d/, j /dʑ/, b /b/, z /z/, m /m/, n /n/, v /v/
+h /ɣ/, w /w/, g /ɡ/, d /d/, j /dʑ/, b /b/, z /z/, m /m/, n /n/, v /v/, x /ʒ/
 
-s /s/ (s is only used for clusters) sn, sm, sl, zh, gr, gl, dr, br, bl
+possible clusters:
+gr, gl, dr, br, bl
 
 ### Consonants at end of syllables (except end of word)
 
 g /ɡ/, d /d/, j /dʑ/, b /b/, z /z/, m /m/, v /v/  (cannot double with the second beginning consonant)
+
+(**x** /ʒ/ is not used as a syllable coda or as an ordinary root consonant; see compounds below.)
 
 ### Phonotactics
 
@@ -200,10 +208,10 @@ A word contains three parts:
 4. optional plural **-z** (the group containing the referent), after the word-form suffix
 
 roots have form V(CV)+
-if a compound root, then "j" separates them
+if a compound root, then **x** separates them
 
 a) A word root almost always starts with a vowel. The ending and beginning consonants were carefully chosen so that you can never confuse which syllable a consonant belongs to (vaban must be pronounced va'ban and not vab'an because syllables never end with a consonant unless it's the end of the word).
 
 b) All words end with a word-form suffix (**-l**, **-m**, **-n**, or **-r**), optionally followed by plural **-z**. No other syllables end with a consonant, so word boundaries stay clear even when pauses are unreliable (as in singing). Allowed word-final clusters are those endings plus **-z** (**-lz**, **-mz**, **-nz**, **-rz**).
 
-c) Easy to tell the components of a compound word because j separates them
+c) Easy to tell the components of a compound word because **x** separates them. Mid-word **x** is only the compound joiner (never part of a root); word-initial **x** is the discourse-glue prefix.
