@@ -61,39 +61,51 @@ The goal of r/claritylanguage is to help foster compassion, rationality, and emp
 
 # Parts of Speech
 
-Parts of speech are determined by particles added before each word. Words do not change form based on usage, and can be used in most parts of speech, so the part-of-speech marker is how you know it is being used.
+Parts of speech are determined by a prefix consonant added before each word. Words do not change form based on usage, and can be used in most parts of speech, so the prefix is how you know a word's role.
 
-The standard word order is Intention \- Subject \- Direct Object \- Verb. Order can change for stylistic reasons or due to certain constructs like dependent clauses. Prepositional phrases are treated like modifiers and go after what they modify. 
+The standard word order is Subject \- Direct Object \- Verb. Order can change for stylistic reasons or due to certain constructs like dependent clauses. Prepositional phrases are treated like modifiers and go after what they modify.
+
+## Part-of-speech prefixes
+
+| Prefix | Role |
+|--------|------|
+| /z/ | subject |
+| /d/ | direct object |
+| /b/ | indirect object |
+| /v/ | verb |
+| /w/ | modifier |
+| /ɡ/ | other grammar (preposition / conjunction / quotation) |
+| /h/ | mood / tense |
+| j /dʑ/ | interjections, direct address |
 
 ## Entity
 
-These are words that can stand alone. The nouns have definite forms (“the tree”) and indefinite (“a tree”)  
-Verb \- the action being done. Signified with the article “vel”  
-Subject \- the thing doing the action. “zil” for indefinite; “zel” for definite   
-Direct Object \- the thing on receiving end of action. “dil” for indefinite; “del” for definite
+These are words that can stand alone as arguments in the sentence.
+
+Subject (/z/) \- the thing doing the action  
+Direct Object (/d/) \- the thing on the receiving end of the action  
+Indirect Object (/b/) \- the recipient or beneficiary of the action  
+Verb (/v/) \- the action being done
 
 ## Simple Modifier
 
-A word that describes another word (adjective / adverb). They go after the word they modify.
-
-no particle means that it modifies the preceding entity  “**French** (history teacher)”  
-“mol” means that it modifies the preceding modifier “(**French** history) teacher
+A word that describes another word (adjective / adverb), marked with /w/. Modifiers go after the word they modify.
 
 ## Complex Modifier and Argument Entity
 
-“complex modifiers” can accept an additional word as part of the modifier, such as the possessive adjective can have the owner, then you need two parts \-  the argument entity and the modifier. The argument follows the modifier and has the article of “go-” \+ the base entity article (the dictionary shows how it affects the base entity)
+“complex modifiers” can accept an additional word as part of the modifier, such as the possessive adjective can have the owner, then you need two parts \-  the argument entity and the modifier. The argument follows the modifier and is marked with “go-” \+ the base entity prefix (the dictionary shows how it affects the base entity)
 
 The argument is now the new entity, so any simple modifiers would affect the argument rather than the original entity. You can also have a complex modifier modify a complex modifier or argument and continue the chain. This also means you can’t have two complex modifiers affect the same entity, if this is the case then you need to describe the entity further as a separate sentence.
 
 Complex modifiers are used for many things, including what would be considered prepositional phrases in other languages, such as “located at”. If you’re not sure where to put the complex modifier because it affects the whole sentence, it goes after the verb. It can even be used as simple dependent clauses (the verb is the complex modifier and the argument is the subject)
 
-## Intention Word
-
-A novel invention of Clarity, the intention part of speech is optionally used by the speaker to signify why they are speaking the sentence. Examples include “improving our relationship” “uphold my boundaries” and “self-disclosure.” The particle is “mil.” The intention PoS helps with mindfulness and assertiveness by encouraging thinking about and explicitly stating your reasons for saying something.
-
 ## Mood
 
-Indicates the mood/tense of the sentence. The particle is “mol.” Use this to describe when the events are taking place and how you know about it. For example: “mol vizinin” means “I remember the events of this sentence (which occurred in the past)”
+Indicates the mood/tense of the sentence. Marked with the /h/ prefix. Use this to describe when the events are taking place and how you know about it. For example: “h vizinin” means “I remember the events of this sentence (which occurred in the past)”
+
+## Interjections and Direct Address
+
+Marked with j /dʑ/. Used for exclamations, greetings, and vocatives that address someone directly.
 
 ## Dependent Clauses
 
@@ -101,7 +113,7 @@ Dependent **c**l**a**uses are formed by a special pronoun “gal” that refers 
 
 ## Quotations
 
-When quoting someone, using a proper noun, using a foreign word, or using a slang word, you must use the square brackets \[ \]. They are phonetized as “bil” and “bel” for **b**eg**i**n-quote and **e**nd-quote respectively. On the off chance you need to use standalone “bil” or “bel” within the quotation, it is esc**a**ped with \\ or “bal” immediately before it. These phonetizations are probably not needed in casual speech, but can be helpful if speaking with voice-to-text or if you want to emphasize the quoting. 
+When quoting someone, using a proper noun, using a foreign word, or using a slang word, you must use the square brackets \[ \]. Begin-quote, end-quote, and escape forms are /ɡ/-prefixed other-grammar words (the dictionary lists the specific forms). On the off chance you need to use a quotation marker word within the quotation, it is escaped with \\ or the escape form immediately before it. These spoken forms are probably not needed in casual speech, but can be helpful if speaking with voice-to-text or if you want to emphasize the quoting. 
 
 # 
 
@@ -133,7 +145,7 @@ Clarity has the following goals for its phonology:
 
 I chose vowels that aren't fully open or fully closed so you don't have to do [vowel modification](https://www.singwise.com/articles/vowels-formants-modifications) (see section "VOWEL MODIFICATION ('COPERTURA')") to sing them in your high/low range.
 
-e /e̞/ \- i /ə/ \- o /ɑ/ \- a /a/ \- u /ɑ/
+e /e̞/ \- o /o̞/ \- u /ɶ/ \- a /ɑ/  (roundedness is non-contrastive)
 
 ### Consonants at beginning of syllables
 
