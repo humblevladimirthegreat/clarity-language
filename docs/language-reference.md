@@ -32,7 +32,7 @@ This is accomplished via each word preceded by a particle indicating the part of
 
 **Referential Unambiguity**: It is always clear what pronouns refer to.
 
-A difficult problem for computationally parsing a sentence is figuring out what vague pronouns like English *it* refer to. Clarity avoids that by forming anaphoric pronouns from a prefix of the referent’s root (through a vowel), resolved to the **most recently mentioned compatible** antecedent (see [References: unambiguous pronouns](#references-unambiguous-pronouns)), plus a small set of special pronouns for discourse roles. There are no vague person/number pronouns in the English sense.
+A difficult problem for computationally parsing a sentence is figuring out what vague pronouns like English *it* refer to. Clarity avoids that by forming anaphoric pronouns from a fixed prefix of the referent’s root (through the 2nd vowel), resolved to the **most recently mentioned compatible** antecedent (see [References: unambiguous pronouns](#references-unambiguous-pronouns)), plus a small set of special pronouns for discourse roles. There are no vague person/number pronouns in the English sense.
 
 **Semantic Unambiguity**: It is always clear in what sense a word is being used.
 
@@ -121,13 +121,13 @@ Pronouns replace definite articles: once something has been introduced, you refe
 
 ## Letter-based anaphoric pronouns
 
-An anaphoric pronoun is built from a **prefix of the referent’s root**, cut **up to and including the 2nd vowel**, plus the usual part-of-speech prefix and the pronoun word-form suffix **-r**. (Roots are `V(CV)+`, so the default stem is typically the opening `VCV`.)
+An anaphoric pronoun is built from a **fixed prefix of the referent’s root**, cut **up to and including the 2nd vowel**, plus the usual part-of-speech prefix and the pronoun word-form suffix **-r**. (Roots are `V(CV)+`, so the stem is typically the opening `VCV`.)
 
-Resolution is always unambiguous for the listener and for a parser: a **-r** pronoun refers to the **most recently mentioned compatible** antecedent — the most recent entity whose root begins with the pronoun’s stem letters. There is no guesswork about which match was meant.
+Resolution is always unambiguous for the listener and for a parser: a **-r** pronoun refers to the **most recently mentioned compatible** antecedent — the most recent entity whose root begins with that stem. There is no guesswork about which match was meant.
 
 **Mentions include pronoun uses themselves**: resolving a pronoun makes that referent the most recent again.
 
-It is the **speaker’s** job to choose a stem that makes the intended referent the most recent compatible match. Use the default (through the 2nd vowel) when that already picks what you mean. If the most recent match for the default stem is **not** what you intend, **extend** the stem through the **3rd vowel**, then further vowels as needed, until the intended referent is the most recent compatible one (or use a name / full word / modifier / ordinal). After a longer form has made that referent most recent, later references can return to the shorter default.
+It is the **speaker’s** job to ensure the intended referent is the most recent compatible match. Use the letter pronoun when that is already true. If the most recent match is **not** what you intend, use a **name** or the **full word**, potentially with a **modifier / ordinal**. That mention becomes most recent, so later pronouns can refer to it again.
 
 Add **-z** after the word-form ending to mark **plural**: the **group containing** the referent. Example: `…r` refers to one entity; `…rz` refers to the group that includes that entity. The same **-z** works on full words (`…lz`, etc.).
 
