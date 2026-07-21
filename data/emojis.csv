@@ -39,7 +39,7 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 🤨,face with raised eyebrow,skeptical,emojese,,skeptical,1F928,fully-qualified,Smileys & Emotion,face-neutral-skeptical
 😐,neutral face,indifferent,iconic,indifferent,,1F610,fully-qualified,Smileys & Emotion,face-neutral-skeptical
 😑,expressionless face,unimpressed,iconic,unimpressed,,1F611,fully-qualified,Smileys & Emotion,face-neutral-skeptical
-😶,face without mouth,silent,emojese,speechless,silent,1F636,fully-qualified,Smileys & Emotion,face-neutral-skeptical
+😶,face without mouth,,,speechless,silent,1F636,fully-qualified,Smileys & Emotion,face-neutral-skeptical
 🫥,dotted line face,invisible,emojese,,invisible,1FAE5,fully-qualified,Smileys & Emotion,face-neutral-skeptical
 😶‍🌫️,face in clouds,,,,,1F636 200D 1F32B FE0F,fully-qualified,Smileys & Emotion,face-neutral-skeptical
 😏,smirking face,heh,emojese,smirk,heh,1F60F,fully-qualified,Smileys & Emotion,face-neutral-skeptical
@@ -80,7 +80,7 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 😟,worried face,problematic,iconic,problematic,,1F61F,fully-qualified,Smileys & Emotion,face-concerned
 🙁,slightly frowning face,discontent,iconic,discontent,,1F641,fully-qualified,Smileys & Emotion,face-concerned
 ☹️,frowning face,frown,iconic,frown,,2639 FE0F,fully-qualified,Smileys & Emotion,face-concerned
-😮,face with open mouth,oh,iconic,oh,,1F62E,fully-qualified,Smileys & Emotion,face-concerned
+😮,face with open mouth,,,oh,,1F62E,fully-qualified,Smileys & Emotion,face-concerned
 😯,hushed face,surprise,iconic,surprise,,1F62F,fully-qualified,Smileys & Emotion,face-concerned
 😲,astonished face,oh,emojese,astonished,oh,1F632,fully-qualified,Smileys & Emotion,face-concerned
 😳,flushed face,embarrassed,emojese,flushed,embarrassed,1F633,fully-qualified,Smileys & Emotion,face-concerned
@@ -176,7 +176,7 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 👋🏽,waving hand: medium skin tone,,,,,1F44B 1F3FD,fully-qualified,People & Body,hand-fingers-open
 👋🏾,waving hand: medium-dark skin tone,,,,,1F44B 1F3FE,fully-qualified,People & Body,hand-fingers-open
 👋🏿,waving hand: dark skin tone,,,,,1F44B 1F3FF,fully-qualified,People & Body,hand-fingers-open
-🤚,raised back of hand,hand,emojese,,hand,1F91A,fully-qualified,People & Body,hand-fingers-open
+🤚,raised back of hand,,,,hand,1F91A,fully-qualified,People & Body,hand-fingers-open
 🤚🏻,raised back of hand: light skin tone,,,,,1F91A 1F3FB,fully-qualified,People & Body,hand-fingers-open
 🤚🏼,raised back of hand: medium-light skin tone,,,,,1F91A 1F3FC,fully-qualified,People & Body,hand-fingers-open
 🤚🏽,raised back of hand: medium skin tone,,,,,1F91A 1F3FD,fully-qualified,People & Body,hand-fingers-open
@@ -344,7 +344,7 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 👎🏽,thumbs down: medium skin tone,,,,,1F44E 1F3FD,fully-qualified,People & Body,hand-fingers-closed
 👎🏾,thumbs down: medium-dark skin tone,,,,,1F44E 1F3FE,fully-qualified,People & Body,hand-fingers-closed
 👎🏿,thumbs down: dark skin tone,,,,,1F44E 1F3FF,fully-qualified,People & Body,hand-fingers-closed
-✊,raised fist,power,emojese,resistant,power,270A,fully-qualified,People & Body,hand-fingers-closed
+✊,raised fist,fist,emojese,resistant,power,270A,fully-qualified,People & Body,hand-fingers-closed
 ✊🏻,raised fist: light skin tone,,,,,270A 1F3FB,fully-qualified,People & Body,hand-fingers-closed
 ✊🏼,raised fist: medium-light skin tone,,,,,270A 1F3FC,fully-qualified,People & Body,hand-fingers-closed
 ✊🏽,raised fist: medium skin tone,,,,,270A 1F3FD,fully-qualified,People & Body,hand-fingers-closed
@@ -448,7 +448,7 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 🤳🏽,selfie: medium skin tone,,,,,1F933 1F3FD,fully-qualified,People & Body,hand-prop
 🤳🏾,selfie: medium-dark skin tone,,,,,1F933 1F3FE,fully-qualified,People & Body,hand-prop
 🤳🏿,selfie: dark skin tone,,,,,1F933 1F3FF,fully-qualified,People & Body,hand-prop
-💪,flexed biceps,can,emojese,able,can,1F4AA,fully-qualified,People & Body,body-parts
+💪,flexed biceps,muscle,emojese,able,can,1F4AA,fully-qualified,People & Body,body-parts
 💪🏻,flexed biceps: light skin tone,,,,,1F4AA 1F3FB,fully-qualified,People & Body,body-parts
 💪🏼,flexed biceps: medium-light skin tone,,,,,1F4AA 1F3FC,fully-qualified,People & Body,body-parts
 💪🏽,flexed biceps: medium skin tone,,,,,1F4AA 1F3FD,fully-qualified,People & Body,body-parts
@@ -491,7 +491,7 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 🫁,lungs,lung,emojese,,lung,1FAC1,fully-qualified,People & Body,body-parts
 🦷,tooth,tooth,emojese,tooth,tooth,1F9B7,fully-qualified,People & Body,body-parts
 🦴,bone,bone,emojese,bone,bone,1F9B4,fully-qualified,People & Body,body-parts
-👀,eyes,watch,emojese,eyes,watch,1F440,fully-qualified,People & Body,body-parts
+👀,eyes,eyes,emojese,eyes,watch,1F440,fully-qualified,People & Body,body-parts
 👁️,eye,eye,emojese,eye,eye,1F441 FE0F,fully-qualified,People & Body,body-parts
 👅,tongue,tongue,emojese,tongue,tongue,1F445,fully-qualified,People & Body,body-parts
 👄,mouth,mouth,emojese,mouth,mouth,1F444,fully-qualified,People & Body,body-parts
@@ -1151,7 +1151,7 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 👮🏾‍♀️,woman police officer: medium-dark skin tone,,,,,1F46E 1F3FE 200D 2640 FE0F,fully-qualified,People & Body,person-role
 👮🏿‍♀️,woman police officer: dark skin tone,,,,,1F46E 1F3FF 200D 2640 FE0F,fully-qualified,People & Body,person-role
 🕵️,detective,detective,emojese,,detective,1F575 FE0F,fully-qualified,People & Body,person-role
-🕵🏻,detective: light skin tone,detective,iconic,detective,,1F575 1F3FB,fully-qualified,People & Body,person-role
+🕵🏻,detective: light skin tone,,,detective,,1F575 1F3FB,fully-qualified,People & Body,person-role
 🕵🏼,detective: medium-light skin tone,,,,,1F575 1F3FC,fully-qualified,People & Body,person-role
 🕵🏽,detective: medium skin tone,,,,,1F575 1F3FD,fully-qualified,People & Body,person-role
 🕵🏾,detective: medium-dark skin tone,,,,,1F575 1F3FE,fully-qualified,People & Body,person-role
@@ -1397,7 +1397,7 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 🦹🏾‍♀️,woman supervillain: medium-dark skin tone,,,,,1F9B9 1F3FE 200D 2640 FE0F,fully-qualified,People & Body,person-fantasy
 🦹🏿‍♀️,woman supervillain: dark skin tone,,,,,1F9B9 1F3FF 200D 2640 FE0F,fully-qualified,People & Body,person-fantasy
 🧙,mage,wizard,emojese,,wizard,1F9D9,fully-qualified,People & Body,person-fantasy
-🧙🏻,mage: light skin tone,wizard,iconic,wizard,,1F9D9 1F3FB,fully-qualified,People & Body,person-fantasy
+🧙🏻,mage: light skin tone,,,wizard,,1F9D9 1F3FB,fully-qualified,People & Body,person-fantasy
 🧙🏼,mage: medium-light skin tone,,,,,1F9D9 1F3FC,fully-qualified,People & Body,person-fantasy
 🧙🏽,mage: medium skin tone,,,,,1F9D9 1F3FD,fully-qualified,People & Body,person-fantasy
 🧙🏾,mage: medium-dark skin tone,,,,,1F9D9 1F3FE,fully-qualified,People & Body,person-fantasy
@@ -2234,7 +2234,7 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 🛀🏽,person taking bath: medium skin tone,,,,,1F6C0 1F3FD,fully-qualified,People & Body,person-resting
 🛀🏾,person taking bath: medium-dark skin tone,,,,,1F6C0 1F3FE,fully-qualified,People & Body,person-resting
 🛀🏿,person taking bath: dark skin tone,,,,,1F6C0 1F3FF,fully-qualified,People & Body,person-resting
-🛌,person in bed,bed,iconic,bed,,1F6CC,fully-qualified,People & Body,person-resting
+🛌,person in bed,,,bed,,1F6CC,fully-qualified,People & Body,person-resting
 🛌🏻,person in bed: light skin tone,,,,,1F6CC 1F3FB,fully-qualified,People & Body,person-resting
 🛌🏼,person in bed: medium-light skin tone,,,,,1F6CC 1F3FC,fully-qualified,People & Body,person-resting
 🛌🏽,person in bed: medium skin tone,,,,,1F6CC 1F3FD,fully-qualified,People & Body,person-resting
@@ -2601,7 +2601,7 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 🐒,monkey,monkey,emojese,monkey,monkey,1F412,fully-qualified,Animals & Nature,animal-mammal
 🦍,gorilla,gorilla,emojese,gorilla,gorilla,1F98D,fully-qualified,Animals & Nature,animal-mammal
 🦧,orangutan,orangutan,emojese,,orangutan,1F9A7,fully-qualified,Animals & Nature,animal-mammal
-🐶,dog face,dog,iconic,dog,,1F436,fully-qualified,Animals & Nature,animal-mammal
+🐶,dog face,,,dog,,1F436,fully-qualified,Animals & Nature,animal-mammal
 🐕,dog,dog,emojese,,dog,1F415,fully-qualified,Animals & Nature,animal-mammal
 🦮,guide dog,lead,emojese,,lead,1F9AE,fully-qualified,Animals & Nature,animal-mammal
 🐕‍🦺,service dog,,,,,1F415 200D 1F9BA,fully-qualified,Animals & Nature,animal-mammal
@@ -2613,10 +2613,10 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 🐈,cat,cat,emojese,cat,cat,1F408,fully-qualified,Animals & Nature,animal-mammal
 🐈‍⬛,black cat,,,,,1F408 200D 2B1B,fully-qualified,Animals & Nature,animal-mammal
 🦁,lion,lion,emojese,lion,lion,1F981,fully-qualified,Animals & Nature,animal-mammal
-🐯,tiger face,tiger,iconic,tiger,,1F42F,fully-qualified,Animals & Nature,animal-mammal
+🐯,tiger face,,,tiger,,1F42F,fully-qualified,Animals & Nature,animal-mammal
 🐅,tiger,tiger,emojese,,tiger,1F405,fully-qualified,Animals & Nature,animal-mammal
 🐆,leopard,leopard,emojese,leopard,leopard,1F406,fully-qualified,Animals & Nature,animal-mammal
-🐴,horse face,horse,iconic,horse,,1F434,fully-qualified,Animals & Nature,animal-mammal
+🐴,horse face,,,horse,,1F434,fully-qualified,Animals & Nature,animal-mammal
 🫎,moose,moose,emojese,,moose,1FACE,fully-qualified,Animals & Nature,animal-mammal
 🫏,donkey,donkey,emojese,,donkey,1FACF,fully-qualified,Animals & Nature,animal-mammal
 🐎,horse,horse,emojese,,horse,1F40E,fully-qualified,Animals & Nature,animal-mammal
@@ -2624,7 +2624,7 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 🦓,zebra,zebra,emojese,zebra,zebra,1F993,fully-qualified,Animals & Nature,animal-mammal
 🦌,deer,deer,emojese,deer,deer,1F98C,fully-qualified,Animals & Nature,animal-mammal
 🦬,bison,bison,emojese,,bison,1F9AC,fully-qualified,Animals & Nature,animal-mammal
-🐮,cow face,ox,iconic,ox,,1F42E,fully-qualified,Animals & Nature,animal-mammal
+🐮,cow face,,,ox,,1F42E,fully-qualified,Animals & Nature,animal-mammal
 🐂,ox,ox,emojese,,ox,1F402,fully-qualified,Animals & Nature,animal-mammal
 🐃,water buffalo,,,,,1F403,fully-qualified,Animals & Nature,animal-mammal
 🐄,cow,cow,emojese,cow,cow,1F404,fully-qualified,Animals & Nature,animal-mammal
@@ -2643,7 +2643,7 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 🦣,mammoth,mammoth,emojese,,mammoth,1F9A3,fully-qualified,Animals & Nature,animal-mammal
 🦏,rhinoceros,rhinoceros,emojese,rhinoceros,rhinoceros,1F98F,fully-qualified,Animals & Nature,animal-mammal
 🦛,hippopotamus,hippopotamus,emojese,hippopotamus,hippopotamus,1F99B,fully-qualified,Animals & Nature,animal-mammal
-🐭,mouse face,rat,iconic,rat,,1F42D,fully-qualified,Animals & Nature,animal-mammal
+🐭,mouse face,,,rat,,1F42D,fully-qualified,Animals & Nature,animal-mammal
 🐁,mouse,mouse,emojese,,mouse,1F401,fully-qualified,Animals & Nature,animal-mammal
 🐀,rat,rat,emojese,rodent,rat,1F400,fully-qualified,Animals & Nature,animal-mammal
 🐹,hamster,hamster,emojese,hamster,hamster,1F439,fully-qualified,Animals & Nature,animal-mammal
@@ -2693,7 +2693,7 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 🐲,dragon face,dragonface,iconic,dragonface,,1F432,fully-qualified,Animals & Nature,animal-reptile
 🐉,dragon,dragon,emojese,dragon,dragon,1F409,fully-qualified,Animals & Nature,animal-reptile
 🦕,sauropod,dinosaur,iconic,dinosaur,,1F995,fully-qualified,Animals & Nature,animal-reptile
-🦖,T-Rex,dinosaur,emojese,trex,dinosaur,1F996,fully-qualified,Animals & Nature,animal-reptile
+🦖,T-Rex,trex,emojese,trex,dinosaur,1F996,fully-qualified,Animals & Nature,animal-reptile
 🐳,spouting whale,,,,,1F433,fully-qualified,Animals & Nature,animal-marine
 🐋,whale,whale,emojese,whale,whale,1F40B,fully-qualified,Animals & Nature,animal-marine
 🐬,dolphin,dolphin,emojese,dolphin,dolphin,1F42C,fully-qualified,Animals & Nature,animal-marine
@@ -2719,7 +2719,7 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 🐝,honeybee,bee,emojese,bee,bee,1F41D,fully-qualified,Animals & Nature,animal-bug
 🪲,beetle,beetle,emojese,,beetle,1FAB2,fully-qualified,Animals & Nature,animal-bug
 🐞,lady beetle,ladybug,iconic,ladybug,,1F41E,fully-qualified,Animals & Nature,animal-bug
-🦗,cricket,cricket,emojese,cricket,cricket,1F997,fully-qualified,Animals & Nature,animal-bug
+🦗,cricket,insect,emojese,cricket,cricket,1F997,fully-qualified,Animals & Nature,animal-bug
 🪳,cockroach,cockroach,emojese,,cockroach,1FAB3,fully-qualified,Animals & Nature,animal-bug
 🕷️,spider,spider,emojese,spider,spider,1F577 FE0F,fully-qualified,Animals & Nature,animal-bug
 🕸️,spider web,catch,emojese,spiderweb,catch,1F578 FE0F,fully-qualified,Animals & Nature,animal-bug
@@ -2742,13 +2742,13 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 🪻,hyacinth,,,,,1FABB,fully-qualified,Animals & Nature,plant-flower
 🌱,seedling,seedling,emojese,seedling,seedling,1F331,fully-qualified,Animals & Nature,plant-other
 🪴,potted plant,plant,emojese,,plant,1FAB4,fully-qualified,Animals & Nature,plant-other
-🌲,evergreen tree,tree,emojese,conifer,tree,1F332,fully-qualified,Animals & Nature,plant-other
+🌲,evergreen tree,,,conifer,tree,1F332,fully-qualified,Animals & Nature,plant-other
 🌳,deciduous tree,tree,iconic,tree,,1F333,fully-qualified,Animals & Nature,plant-other
 🌴,palm tree,only,iconic,only,,1F334,fully-qualified,Animals & Nature,plant-other
 🌵,cactus,cactus,emojese,cactus,cactus,1F335,fully-qualified,Animals & Nature,plant-other
 🌾,sheaf of rice,grain,emojese,wheat,grain,1F33E,fully-qualified,Animals & Nature,plant-other
 🌿,herb,herb,emojese,grass,herb,1F33F,fully-qualified,Animals & Nature,plant-other
-☘️,shamrock,luck,emojese,,luck,2618 FE0F,fully-qualified,Animals & Nature,plant-other
+☘️,shamrock,shamrock,emojese,,luck,2618 FE0F,fully-qualified,Animals & Nature,plant-other
 🍀,four leaf clover,luck,emojese,clover,luck,1F340,fully-qualified,Animals & Nature,plant-other
 🍁,maple leaf,drop,emojese,,drop,1F341,fully-qualified,Animals & Nature,plant-other
 🍂,fallen leaf,,,,,1F342,fully-qualified,Animals & Nature,plant-other
@@ -2805,7 +2805,7 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 🥞,pancakes,pancake,emojese,pancakes,pancake,1F95E,fully-qualified,Food & Drink,food-prepared
 🧇,waffle,waffle,emojese,waffle,waffle,1F9C7,fully-qualified,Food & Drink,food-prepared
 🧀,cheese wedge,cheese,emojese,cheese,cheese,1F9C0,fully-qualified,Food & Drink,food-prepared
-🍖,meat on bone,meat,iconic,meat,,1F356,fully-qualified,Food & Drink,food-prepared
+🍖,meat on bone,,,meat,,1F356,fully-qualified,Food & Drink,food-prepared
 🍗,poultry leg,meatleg,iconic,meatleg,,1F357,fully-qualified,Food & Drink,food-prepared
 🥩,cut of meat,meat,emojese,steak,meat,1F969,fully-qualified,Food & Drink,food-prepared
 🥓,bacon,bacon,emojese,,bacon,1F953,fully-qualified,Food & Drink,food-prepared
@@ -2852,7 +2852,7 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 🍨,ice cream,,,,,1F368,fully-qualified,Food & Drink,food-sweet
 🍩,doughnut,doughnut,emojese,doughnut,doughnut,1F369,fully-qualified,Food & Drink,food-sweet
 🍪,cookie,cookie,emojese,biscuit,cookie,1F36A,fully-qualified,Food & Drink,food-sweet
-🎂,birthday cake,cake,iconic,cake,,1F382,fully-qualified,Food & Drink,food-sweet
+🎂,birthday cake,,,cake,,1F382,fully-qualified,Food & Drink,food-sweet
 🍰,shortcake,cake,emojese,cakepiece,cake,1F370,fully-qualified,Food & Drink,food-sweet
 🧁,cupcake,cupcake,emojese,cupcake,cupcake,1F9C1,fully-qualified,Food & Drink,food-sweet
 🥧,pie,pie,emojese,pie,pie,1F967,fully-qualified,Food & Drink,food-sweet
@@ -2887,7 +2887,7 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 🥄,spoon,spoon,emojese,spoon,spoon,1F944,fully-qualified,Food & Drink,dishware
 🔪,kitchen knife,knife,emojese,knife,knife,1F52A,fully-qualified,Food & Drink,dishware
 🫙,jar,jar,emojese,,jar,1FAD9,fully-qualified,Food & Drink,dishware
-🏺,amphora,urn,emojese,amphora,urn,1F3FA,fully-qualified,Food & Drink,dishware
+🏺,amphora,amphora,emojese,amphora,urn,1F3FA,fully-qualified,Food & Drink,dishware
 🌍,globe showing Europe-Africa,earth,emojese,globe,earth,1F30D,fully-qualified,Travel & Places,place-map
 🌎,globe showing Americas,,,,,1F30E,fully-qualified,Travel & Places,place-map
 🌏,globe showing Asia-Australia,,,,,1F30F,fully-qualified,Travel & Places,place-map
@@ -2966,7 +2966,7 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 🚊,tram,tram,emojese,,tram,1F68A,fully-qualified,Travel & Places,transport-ground
 🚝,monorail,monorail,emojese,,monorail,1F69D,fully-qualified,Travel & Places,transport-ground
 🚞,mountain railway,,,,,1F69E,fully-qualified,Travel & Places,transport-ground
-🚋,tram car,tram,iconic,tram,,1F68B,fully-qualified,Travel & Places,transport-ground
+🚋,tram car,,,tram,,1F68B,fully-qualified,Travel & Places,transport-ground
 🚌,bus,bus,emojese,bus,bus,1F68C,fully-qualified,Travel & Places,transport-ground
 🚍,oncoming bus,,,,,1F68D,fully-qualified,Travel & Places,transport-ground
 🚎,trolleybus,,,,,1F68E,fully-qualified,Travel & Places,transport-ground
@@ -3029,18 +3029,18 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 🛸,flying saucer,ufo,iconic,ufo,,1F6F8,fully-qualified,Travel & Places,transport-air
 🛎️,bellhop bell,receptionbell,iconic,receptionbell,,1F6CE FE0F,fully-qualified,Travel & Places,hotel
 🧳,luggage,suitcase,emojese,suitcase,suitcase,1F9F3,fully-qualified,Travel & Places,hotel
-⌛,hourglass done,hour,emojese,timespan,hour,231B,fully-qualified,Travel & Places,time
+⌛,hourglass done,hourglass,emojese,timespan,hour,231B,fully-qualified,Travel & Places,time
 ⏳,hourglass not done,,,,,23F3,fully-qualified,Travel & Places,time
 ⌚,watch,watch,iconic,watch,,231A,fully-qualified,Travel & Places,time
 ⏰,alarm clock,time,emojese,alarmclock,time,23F0,fully-qualified,Travel & Places,time
 ⏱️,stopwatch,,,,,23F1 FE0F,fully-qualified,Travel & Places,time
 ⏲️,timer clock,timer,emojese,,timer,23F2 FE0F,fully-qualified,Travel & Places,time
-🕰️,mantelpiece clock,clock,emojese,,clock,1F570 FE0F,fully-qualified,Travel & Places,time
+🕰️,mantelpiece clock,,,,clock,1F570 FE0F,fully-qualified,Travel & Places,time
 🕛,twelve o’clock,noon,emojese,,noon,1F55B,fully-qualified,Travel & Places,time
 🕧,twelve-thirty,,,,,1F567,fully-qualified,Travel & Places,time
 🕐,one o’clock,,,,,1F550,fully-qualified,Travel & Places,time
 🕜,one-thirty,,,,,1F55C,fully-qualified,Travel & Places,time
-🕑,two o’clock,hour,emojese,,hour,1F551,fully-qualified,Travel & Places,time
+🕑,two o’clock,clock,emojese,,hour,1F551,fully-qualified,Travel & Places,time
 🕝,two-thirty,,,,,1F55D,fully-qualified,Travel & Places,time
 🕒,three o’clock,occasion,iconic,occasion,,1F552,fully-qualified,Travel & Places,time
 🕞,three-thirty,,,,,1F55E,fully-qualified,Travel & Places,time
@@ -3099,10 +3099,10 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 ☂️,umbrella,umbrella,emojese,umbrella,umbrella,2602 FE0F,fully-qualified,Travel & Places,sky & weather
 ☔,umbrella with rain drops,wetumbrella,iconic,wetumbrella,,2614,fully-qualified,Travel & Places,sky & weather
 ⛱️,umbrella on ground,,,,,26F1 FE0F,fully-qualified,Travel & Places,sky & weather
-⚡,high voltage,power,emojese,although,power,26A1,fully-qualified,Travel & Places,sky & weather
+⚡,high voltage,voltage,emojese,although,power,26A1,fully-qualified,Travel & Places,sky & weather
 ❄️,snowflake,snow,emojese,snowflake,snow,2744 FE0F,fully-qualified,Travel & Places,sky & weather
 ☃️,snowman,snowman,emojese,,snowman,2603 FE0F,fully-qualified,Travel & Places,sky & weather
-⛄,snowman without snow,snowman,iconic,snowman,,26C4,fully-qualified,Travel & Places,sky & weather
+⛄,snowman without snow,,,snowman,,26C4,fully-qualified,Travel & Places,sky & weather
 ☄️,comet,comet,emojese,,comet,2604 FE0F,fully-qualified,Travel & Places,sky & weather
 🔥,fire,fire,emojese,suchthat,fire,1F525,fully-qualified,Travel & Places,sky & weather
 💧,droplet,water,emojese,water,water,1F4A7,fully-qualified,Travel & Places,sky & weather
@@ -3150,15 +3150,15 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 🥍,lacrosse,lacrosse,emojese,,lacrosse,1F94D,fully-qualified,Activities,sport
 🏓,ping pong,,,,,1F3D3,fully-qualified,Activities,sport
 🏸,badminton,badminton,emojese,,badminton,1F3F8,fully-qualified,Activities,sport
-🥊,boxing glove,box,emojese,boxing,box,1F94A,fully-qualified,Activities,sport
+🥊,boxing glove,boxing,emojese,boxing,box,1F94A,fully-qualified,Activities,sport
 🥋,martial arts uniform,,,,,1F94B,fully-qualified,Activities,sport
 🥅,goal net,goal,emojese,,goal,1F945,fully-qualified,Activities,sport
 ⛳,flag in hole,ground,emojese,golf,ground,26F3,fully-qualified,Activities,sport
 ⛸️,ice skate,skate,emojese,iceskates,skate,26F8 FE0F,fully-qualified,Activities,sport
-🎣,fishing pole,fish,emojese,fishingrod,fish,1F3A3,fully-qualified,Activities,sport
+🎣,fishing pole,fishing,emojese,fishingrod,fish,1F3A3,fully-qualified,Activities,sport
 🤿,diving mask,dive,emojese,,dive,1F93F,fully-qualified,Activities,sport
 🎽,running shirt,,,,,1F3BD,fully-qualified,Activities,sport
-🎿,skis,sled,iconic,sled,,1F3BF,fully-qualified,Activities,sport
+🎿,skis,,,sled,,1F3BF,fully-qualified,Activities,sport
 🛷,sled,sled,emojese,,sled,1F6F7,fully-qualified,Activities,sport
 🥌,curling stone,curlingstone,iconic,curlingstone,,1F94C,fully-qualified,Activities,sport
 🎯,bullseye,target,emojese,dart,target,1F3AF,fully-qualified,Activities,game
@@ -3195,7 +3195,7 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 👓,glasses,glasses,emojese,glasses,glasses,1F453,fully-qualified,Objects,clothing
 🕶️,sunglasses,sunglasses,emojese,,sunglasses,1F576 FE0F,fully-qualified,Objects,clothing
 🥽,goggles,goggles,emojese,goggles,goggles,1F97D,fully-qualified,Objects,clothing
-🥼,lab coat,coat,iconic,coat,,1F97C,fully-qualified,Objects,clothing
+🥼,lab coat,,,coat,,1F97C,fully-qualified,Objects,clothing
 🦺,safety vest,,,,,1F9BA,fully-qualified,Objects,clothing
 👔,necktie,tie,emojese,necktie,tie,1F454,fully-qualified,Objects,clothing
 👕,t-shirt,shirt,emojese,shirt,shirt,1F455,fully-qualified,Objects,clothing
@@ -3226,7 +3226,7 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 👠,high-heeled shoe,highheel,iconic,highheel,,1F460,fully-qualified,Objects,clothing
 👡,woman’s sandal,,,,,1F461,fully-qualified,Objects,clothing
 🩰,ballet shoes,balletshoes,iconic,balletshoes,,1FA70,fully-qualified,Objects,clothing
-👢,woman’s boot,boot,iconic,boot,,1F462,fully-qualified,Objects,clothing
+👢,woman’s boot,,,boot,,1F462,fully-qualified,Objects,clothing
 🪮,hair pick,,,,,1FAAE,fully-qualified,Objects,clothing
 👑,crown,crown,emojese,crown,crown,1F451,fully-qualified,Objects,clothing
 👒,woman’s hat,ribbonhat,iconic,ribbonhat,,1F452,fully-qualified,Objects,clothing
@@ -3251,7 +3251,7 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 🎼,musical score,,,,,1F3BC,fully-qualified,Objects,music
 🎵,musical note,melody,iconic,melody,,1F3B5,fully-qualified,Objects,music
 🎶,musical notes,music,emojese,,music,1F3B6,fully-qualified,Objects,music
-🎙️,studio microphone,microphone,iconic,microphone,,1F399 FE0F,fully-qualified,Objects,music
+🎙️,studio microphone,,,microphone,,1F399 FE0F,fully-qualified,Objects,music
 🎚️,level slider,trigger,iconic,trigger,,1F39A FE0F,fully-qualified,Objects,music
 🎛️,control knobs,complex,emojese,,complex,1F39B FE0F,fully-qualified,Objects,music
 🎤,microphone,microphone,emojese,handmike,microphone,1F3A4,fully-qualified,Objects,music
@@ -3283,7 +3283,7 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 🖥️,desktop computer,computer,emojese,monitor,computer,1F5A5 FE0F,fully-qualified,Objects,computer
 🖨️,printer,printer,emojese,printer,printer,1F5A8 FE0F,fully-qualified,Objects,computer
 ⌨️,keyboard,keyboard,emojese,,keyboard,2328 FE0F,fully-qualified,Objects,computer
-🖱️,computer mouse,mouse,emojese,desktopmouse,mouse,1F5B1 FE0F,fully-qualified,Objects,computer
+🖱️,computer mouse,computermouse,emojese,desktopmouse,mouse,1F5B1 FE0F,fully-qualified,Objects,computer
 🖲️,trackball,trackball,emojese,trackball,trackball,1F5B2 FE0F,fully-qualified,Objects,computer
 💽,computer disk,minidisk,iconic,minidisk,,1F4BD,fully-qualified,Objects,computer
 💾,floppy disk,keep,emojese,floppydisk,keep,1F4BE,fully-qualified,Objects,computer
@@ -3307,7 +3307,7 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 🏮,red paper lantern,lantern,emojese,redlantern,lantern,1F3EE,fully-qualified,Objects,light & video
 🪔,diya lamp,oillamp,iconic,oillamp,,1FA94,fully-qualified,Objects,light & video
 📔,notebook with decorative cover,,,,,1F4D4,fully-qualified,Objects,book-paper
-📕,closed book,book,emojese,,book,1F4D5,fully-qualified,Objects,book-paper
+📕,closed book,,,,book,1F4D5,fully-qualified,Objects,book-paper
 📖,open book,book,iconic,book,,1F4D6,fully-qualified,Objects,book-paper
 📗,green book,,,,,1F4D7,fully-qualified,Objects,book-paper
 📘,blue book,,,,,1F4D8,fully-qualified,Objects,book-paper
@@ -3327,7 +3327,7 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 💰,money bag,money,iconic,money,,1F4B0,fully-qualified,Objects,money
 🪎,treasure chest,,,,,1FA8E,fully-qualified,Objects,money
 💴,yen banknote,,,,,1F4B4,fully-qualified,Objects,money
-💵,dollar banknote,money,emojese,,money,1F4B5,fully-qualified,Objects,money
+💵,dollar banknote,,,,money,1F4B5,fully-qualified,Objects,money
 💶,euro banknote,,,,,1F4B6,fully-qualified,Objects,money
 💷,pound banknote,,,,,1F4B7,fully-qualified,Objects,money
 💸,money with wings,spend,emojese,flyingmoney,spend,1F4B8,fully-qualified,Objects,money
@@ -3348,7 +3348,7 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 📮,postbox,,,,,1F4EE,fully-qualified,Objects,mail
 🗳️,ballot box with ballot,vote,emojese,,vote,1F5F3 FE0F,fully-qualified,Objects,mail
 ✏️,pencil,pencil,emojese,pencil,pencil,270F FE0F,fully-qualified,Objects,writing
-✒️,black nib,pen,iconic,pen,,2712 FE0F,fully-qualified,Objects,writing
+✒️,black nib,,,pen,,2712 FE0F,fully-qualified,Objects,writing
 🖋️,fountain pen,,,,,1F58B FE0F,fully-qualified,Objects,writing
 🖊️,pen,pen,emojese,,pen,1F58A FE0F,fully-qualified,Objects,writing
 🖌️,paintbrush,paintbrush,emojese,,paintbrush,1F58C FE0F,fully-qualified,Objects,writing
@@ -3359,7 +3359,7 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 📂,open file folder,,,,,1F4C2,fully-qualified,Objects,office
 🗂️,card index dividers,category,emojese,,category,1F5C2 FE0F,fully-qualified,Objects,office
 📅,calendar,date,emojese,calendar,date,1F4C5,fully-qualified,Objects,office
-📆,tear-off calendar,date,iconic,date,,1F4C6,fully-qualified,Objects,office
+📆,tear-off calendar,,,date,,1F4C6,fully-qualified,Objects,office
 🗒️,spiral notepad,,,,,1F5D2 FE0F,fully-qualified,Objects,office
 🗓️,spiral calendar,month,emojese,,month,1F5D3 FE0F,fully-qualified,Objects,office
 📇,card index,,,,,1F4C7,fully-qualified,Objects,office
@@ -3457,7 +3457,7 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 🪬,hamsa,,,,,1FAAC,fully-qualified,Objects,other-object
 🗿,moai,moai,iconic,moai,,1F5FF,fully-qualified,Objects,other-object
 🪧,placard,sign,emojese,,sign,1FAA7,fully-qualified,Objects,other-object
-🪪,identification card,ID,emojese,,ID,1FAAA,fully-qualified,Objects,other-object
+🪪,identification card,idcard,emojese,,ID,1FAAA,fully-qualified,Objects,other-object
 🏧,ATM sign,,,,,1F3E7,fully-qualified,Symbols,transport-sign
 🚮,litter in bin sign,remove,emojese,,remove,1F6AE,fully-qualified,Symbols,transport-sign
 🚰,potable water,,,,,1F6B0,fully-qualified,Symbols,transport-sign
@@ -3490,7 +3490,7 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 ↘️,down-right arrow,,,,,2198 FE0F,fully-qualified,Symbols,arrow
 ⬇️,down arrow,down,emojese,under,down,2B07 FE0F,fully-qualified,Symbols,arrow
 ↙️,down-left arrow,,,,,2199 FE0F,fully-qualified,Symbols,arrow
-⬅️,left arrow,previous,iconic,previous,,2B05 FE0F,fully-qualified,Symbols,arrow
+⬅️,left arrow,left,iconic,previous,,2B05 FE0F,fully-qualified,Symbols,arrow
 ↖️,up-left arrow,,,,,2196 FE0F,fully-qualified,Symbols,arrow
 ↕️,up-down arrow,,,,,2195 FE0F,fully-qualified,Symbols,arrow
 ↔️,left-right arrow,or,emojese,,or,2194 FE0F,fully-qualified,Symbols,arrow
@@ -3546,13 +3546,13 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 🔽,downwards button,less,iconic,less,,1F53D,fully-qualified,Symbols,av-symbol
 ⏬,fast down button,minimal,iconic,minimal,,23EC,fully-qualified,Symbols,av-symbol
 ⏸️,pause button,pause,emojese,,pause,23F8 FE0F,fully-qualified,Symbols,av-symbol
-⏹️,stop button,stop,emojese,,stop,23F9 FE0F,fully-qualified,Symbols,av-symbol
+⏹️,stop button,stopbutton,emojese,,stop,23F9 FE0F,fully-qualified,Symbols,av-symbol
 ⏺️,record button,inside,iconic,inside,,23FA FE0F,fully-qualified,Symbols,av-symbol
 ⏏️,eject button,eject,emojese,,eject,23CF FE0F,fully-qualified,Symbols,av-symbol
 🎦,cinema,,,,,1F3A6,fully-qualified,Symbols,av-symbol
 🔅,dim button,,,,,1F505,fully-qualified,Symbols,av-symbol
 🔆,bright button,,,,,1F506,fully-qualified,Symbols,av-symbol
-📶,antenna bars,wifi,iconic,wifi,,1F4F6,fully-qualified,Symbols,av-symbol
+📶,antenna bars,signal,iconic,wifi,,1F4F6,fully-qualified,Symbols,av-symbol
 🛜,wireless,wifi,emojese,,wifi,1F6DC,fully-qualified,Symbols,av-symbol
 📳,vibration mode,vibrate,emojese,,vibrate,1F4F3,fully-qualified,Symbols,av-symbol
 📴,mobile phone off,,,,,1F4F4,fully-qualified,Symbols,av-symbol
@@ -3658,7 +3658,7 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 ⚫,black circle,,,,,26AB,fully-qualified,Symbols,geometric
 ⚪,white circle,circle,iconic,circle,,26AA,fully-qualified,Symbols,geometric
 🟥,red square,red,emojese,,red,1F7E5,fully-qualified,Symbols,geometric
-🟧,orange square,orange,emojese,,orange,1F7E7,fully-qualified,Symbols,geometric
+🟧,orange square,oragne,emojese,,orange,1F7E7,fully-qualified,Symbols,geometric
 🟨,yellow square,yellow,emojese,,yellow,1F7E8,fully-qualified,Symbols,geometric
 🟩,green square,green,emojese,,green,1F7E9,fully-qualified,Symbols,geometric
 🟦,blue square,blue,emojese,,blue,1F7E6,fully-qualified,Symbols,geometric
@@ -3922,7 +3922,7 @@ emoji,name,concept,concept_source,iconic,emojese,codepoints,status,group,subgrou
 🇹🇲,flag: Turkmenistan,Turkmenistan,emojese,,Turkmenistan,1F1F9 1F1F2,fully-qualified,Flags,country-flag
 🇹🇳,flag: Tunisia,Tunisia,emojese,,Tunisia,1F1F9 1F1F3,fully-qualified,Flags,country-flag
 🇹🇴,flag: Tonga,Tonga,emojese,,Tonga,1F1F9 1F1F4,fully-qualified,Flags,country-flag
-🇹🇷,flag: Türkiye,Turkey,emojese,,Turkey,1F1F9 1F1F7,fully-qualified,Flags,country-flag
+🇹🇷,flag: Türkiye,turkiye,emojese,,Turkey,1F1F9 1F1F7,fully-qualified,Flags,country-flag
 🇹🇹,flag: Trinidad & Tobago,Trinidad & Tobago,emojese,,Trinidad & Tobago,1F1F9 1F1F9,fully-qualified,Flags,country-flag
 🇹🇻,flag: Tuvalu,Tuvalu,emojese,,Tuvalu,1F1F9 1F1FB,fully-qualified,Flags,country-flag
 🇹🇼,flag: Taiwan,Taiwan,emojese,,Taiwan,1F1F9 1F1FC,fully-qualified,Flags,country-flag
