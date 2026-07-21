@@ -28,11 +28,11 @@ Clarity has an unambiguous grammar in order to support a variety of computationa
 
 **Syntactic Unambiguity**: It is always clear the part of speech a word is and how they relate to the sentence.
 
-This is accomplished via each word preceded by a particle indicating the part of speech. Words are isolating (they do not change based on part of speech) but the particle changes depending on part of speech. Thus we don't need to rely on word order (though the default should be treated as SOV) to parse the sentence.
+This is accomplished via each word preceded by a prefix indicating the part of speech. Words are isolating (they do not change based on part of speech) but the prefix changes depending on part of speech. Thus we don't need to rely on word order (though the default should be treated as SOV) to parse the sentence.
 
 **Referential Unambiguity**: It is always clear what pronouns refer to.
 
-A difficult problem for computationally parsing a sentence is figuring out what vague pronouns like English *it* refer to. Clarity avoids that by forming anaphoric pronouns from a fixed prefix of **any** prior word’s root (through the 2nd vowel), resolved to the **most recently mentioned compatible** antecedent (see [References: unambiguous pronouns](#references-unambiguous-pronouns)), plus a small set of special pronouns for discourse roles. There are no vague person/number pronouns in the English sense.
+A difficult problem for computationally parsing a sentence is figuring out what vague pronouns like English *it* refer to. Clarity avoids that by forming anaphoric pronouns from a fixed prefix of **any** prior word’s root (through the 2nd vowel), resolved to the **most recently mentioned matching** antecedent (see [References: unambiguous pronouns](#references-unambiguous-pronouns)), plus a small set of special pronouns for discourse roles. There are no vague person/number pronouns in the English sense.
 
 **Semantic Unambiguity**: It is always clear in what sense a word is being used.
 
@@ -63,72 +63,72 @@ The goal of r/claritylanguage is to help foster compassion, rationality, and emp
 
 Parts of speech are determined by a prefix consonant added before each word. Words do not change form based on usage, and can be used in most parts of speech, so the prefix is how you know a word's role.
 
-The standard word order is Subject \- Direct Object \- Verb. Order can change for stylistic reasons or due to certain constructs like dependent clauses. Entity modifiers (`/w/`) go after what they modify. Verb/clause modifiers (`/h/`) may appear anywhere in the clause (see below).
+The standard word order is Subject \- Direct Object \- Verb. Order can change for stylistic reasons or due to certain constructs like dependent clauses. Adjectives (`/w/`) go after what they modify. Adverbs (`/h/`) may appear anywhere in the clause (see below).
 
 ## Part-of-speech prefixes
 
 | Prefix | Role |
 |--------|------|
-| /z/ | subject |
-| /d/ | direct object |
-| /b/ | argument entity (of a complex modifier) |
+| /z/ | subject (noun) |
+| /d/ | direct object (noun) |
+| /b/ | argument noun (of a complex adjective or adverb) |
 | /v/ | verb |
-| /w/ | entity modifier (adjective) |
-| /ɡ/ | adjective satellite (modifies the previous `/w/`) |
-| /h/ | verb/clause modifier (adverb, including mood / tense) |
-| x /ʒ/ | discourse glue (conjunctions, quotation markers) |
+| /w/ | adjective |
+| /ɡ/ | adjective adjunct (modifies the previous `/w/`) |
+| /h/ | adverb (including mood / tense) |
+| x /ʒ/ | discourse marker (conjunctions, quotation markers) |
 | j /dʑ/ | interjections, direct address |
 
-There is no dedicated indirect-object prefix. Recipients and beneficiaries (English *to* / *for*) are expressed with a complex `/h/` modifier plus an argument entity, the same pattern as other verb-level prepositional-phrase meanings.
+There is no dedicated indirect-object prefix. Recipients and beneficiaries (English *to* / *for*) are expressed with a complex adverb (`/h/` + `/b/`) plus an argument noun, the same pattern as other verb-level prepositional-phrase meanings.
 
-## Entity
+## Nouns and verbs
 
-These are words that can stand alone as core arguments of the clause.
+Nouns can stand alone as core arguments of the clause. Verbs mark the action.
 
 Subject (/z/) \- the thing doing the action  
 Direct Object (/d/) \- the thing on the receiving end of the action  
 Verb (/v/) \- the action being done
 
-## Entity modifiers (`/w/`)
+## Adjectives (`/w/`)
 
-`/w/` marks modifiers of an **entity** (adjectives and entity-level relational phrases). They go **after** the word they modify.
+`/w/` marks **adjectives** (and noun-level relational phrases). They go **after** the word they modify.
 
-## Adjective satellites (`/ɡ/`)
+## Adjective adjuncts (`/ɡ/`)
 
-`/ɡ/` marks a word that **modifies the previous adjective** (`/w/` unit). It does not modify the verb or the entity directly. Use it for degree (*very*, *slightly*) and for tense/mood/evidentiality scoped only to that property (*former* / *recent*, *alleged*, and the same mood roots as `/h/` when the framing applies just to the adjective).
+`/ɡ/` marks a word that **modifies the previous adjective** (`/w/` unit). It does not modify the verb or the noun directly. Use it for degree (*very*, *slightly*) and for tense/mood/evidentiality scoped only to that property (*former* / *recent*, *alleged*, and the same mood roots as `/h/` when the framing applies just to the adjective).
 
-The `/ɡ/` word sits on its host: normally immediately after the `/w/` (or after that `/w/`’s contiguous `/b/` argument if the adjective is complex). Unlike `/h/`, `/ɡ/` does **not** float. Several `/ɡ/` words may stack on one `/w/` (`w-happy g-recent g-very`); each applies to that same adjective. `/ɡ/` words are typically simple (no `/b/` argument); if a relation needs an argument, use a complex `/w/` + `/b/` instead.
+The `/ɡ/` word sits on its host: normally immediately after the `/w/` (or after that `/w/`’s contiguous `/b/` argument if the adjective is complex). Unlike `/h/`, `/ɡ/` does **not** float. Several `/ɡ/` words may stack on one `/w/` (`w-happy g-recent g-very`); each applies to that same adjective. `/ɡ/` words are typically simple (no `/b/` argument); if a relation needs an argument, use a complex adjective (`/w/` + `/b/`) instead.
 
 Same root, different prefix → different scope: `/h/` frames the clause; `/ɡ/` frames only the preceding adjective.
 
-## Verb/clause modifiers (`/h/`)
+## Adverbs (`/h/`)
 
-`/h/` marks modifiers of the **verb or clause** (adverbs). That includes manner, time/place adjuncts, recipients (*to* / *for*), and mood/tense/evidentiality. Example mood form: “h vizinin” means “I remember the events of this sentence (which occurred in the past).”
+`/h/` marks **adverbs** (modifiers of the verb or clause). That includes manner, time/place adjuncts, recipients (*to* / *for*), and mood/tense/evidentiality. Example mood form: “h vizinin” means “I remember the events of this sentence (which occurred in the past).”
 
 Because `/h/` always targets the clause’s verb, **position is free within the clause** (before/after arguments, next to the verb, clause-final, etc.) for style, focus, or meter. `/h/` material must stay inside its own clause: it must not float into a following sentence or into a trailing dependent clause (dependent clauses stay at the end; see below).
 
 When several `/h/` units appear in one clause, interpret them in this **relative order** for scope (regardless of linear placement): mood/evidential → role/place/time adjuncts (including recipient) → manner. If two units share a band, left-to-right in the spoken order breaks the tie.
 
-## Complex Modifier and Argument Entity
+## Complex adjectives, complex adverbs, and argument nouns
 
-A **complex modifier** takes an extra participant: the modifier word plus an **argument entity** (`/b/`). The argument immediately follows the modifier. The modifier word carries the relation; `/b/` only marks “argument of that modifier” (the dictionary entry says how it relates to the host).
+A **complex adjective** or **complex adverb** takes an extra participant: the adjective or adverb word plus an **argument noun** (`/b/`). The argument immediately follows the adjective or adverb. That word carries the relation; `/b/` only marks “argument of that adjective or adverb” (the dictionary entry says how it relates to the host).
 
-- **Entity-level** complex modifiers use `/w/` + `/b/` (e.g. possessive owner, “book *on* the table”).
-- **Verb/clause-level** complex modifiers use `/h/` + `/b/` (e.g. recipient *to*, “happened *at*”). The `/h/` + `/b/` pair is one unit and **stays contiguous** even when that unit floats.
+- **Complex adjectives** use `/w/` + `/b/` (e.g. possessive owner, “book *on* the table”).
+- **Complex adverbs** use `/h/` + `/b/` (e.g. recipient *to*, “happened *at*”). The `/h/` + `/b/` pair is one unit and **stays contiguous** even when that unit floats.
 
 Example (recipient): `/h/` *to* + `/b/` recipient may sit anywhere in the clause as a pair.
 
-After a complex modifier, the argument is the new entity for further **entity** modification: a simple `/w/` after `/b/` describes the argument, not the original host. `/ɡ/` after a `/w/` (+ optional `/b/`) grades or frames that adjective, not the entity. You can chain by having a complex modifier modify a complex modifier or its argument. You can’t have two complex `/w/` modifiers affect the same entity; if you need that, describe the entity further in a separate sentence. Multiple `/h/` units on the same verb are allowed (each simple `/h/` or contiguous `/h/`+`/b/` counts as one unit), subject to the scope order above.
+After a complex adjective or adverb, the argument is the new noun for further adjective modification: a simple `/w/` after `/b/` describes the argument, not the original host. `/ɡ/` after a `/w/` (+ optional `/b/`) grades or frames that adjective, not the noun. You can chain by having a complex adjective or adverb modify another complex adjective/adverb or its argument. You can’t have two complex adjectives affect the same noun; if you need that, describe the noun further in a separate sentence. Multiple `/h/` units on the same verb are allowed (each simple `/h/` or contiguous `/h/`+`/b/` counts as one unit), subject to the scope order above.
 
-Complex modifiers cover what would be prepositional phrases in other languages. A verb used as a complex `/h/` modifier with a `/b/` argument can form a simple dependent-clause-like adjunct (the `/b/` argument is the clause’s subject-like participant).
+Complex adjectives and adverbs cover what would be prepositional phrases in other languages. A verb used as a complex adverb with a `/b/` argument can form a simple dependent-clause-like adjunct (the `/b/` argument is the clause’s subject-like participant).
 
 ## Interjections and direct address (`/j/`)
 
 Marked with j /dʑ/. Used for exclamations, greetings, and vocatives that address someone directly.
 
-## Discourse glue (`/x/`)
+## Discourse markers (`/x/`)
 
-Marked with x /ʒ/. Used for **conjunctions** (*and* / *or* / *but*, etc.) and **quotation markers** (see below). The dictionary lists the specific forms. The same sound **x** also joins roots inside compound words (see Phonotactics); it is not used as an ordinary root consonant, so mid-word **x** always means “next root,” and word-initial **x** always means discourse glue.
+Marked with x /ʒ/. Used for **conjunctions** (*and* / *or* / *but*, etc.) and **quotation markers** (see below). The dictionary lists the specific forms. The same sound **x** also joins roots inside compound words (see Phonotactics); it is not used as an ordinary root consonant, so mid-word **x** always means “next root,” and word-initial **x** always means discourse marker.
 
 ## Dependent Clauses
 
@@ -144,15 +144,15 @@ Pronouns replace definite articles: once something has been introduced, you refe
 
 ## Letter-based anaphoric pronouns
 
-An anaphoric pronoun can refer back to **any prior word** (entity, verb, modifier, and so on — not only arguments). It is built from a **fixed prefix of that word’s root**, cut **up to and including the 2nd vowel**, plus the usual part-of-speech prefix and the pronoun word-form suffix **-r**. (Roots are `V(CV)+`, so the stem is typically the opening `VCV`.) The pronoun’s PoS prefix is whatever role you need **now**; it need not match the antecedent’s original PoS.
+An anaphoric pronoun can refer back to **any prior word** (noun, verb, adjective, adverb, and so on — not only arguments). It is built from a **fixed prefix of that word’s root**, cut **up to and including the 2nd vowel**, plus the usual part-of-speech prefix and the pronoun lexical ending **-r**. (Roots are `V(CV)+`, so the stem is typically the opening `VCV`.) The pronoun’s PoS prefix is whatever role you need **now**; it need not match the antecedent’s original PoS.
 
-Resolution is always unambiguous for the listener and for a parser: a **-r** pronoun refers to the **most recently mentioned compatible** antecedent — the most recent word whose root begins with that stem. There is no guesswork about which match was meant.
+Resolution is always unambiguous for the listener and for a parser: a **-r** pronoun refers to the **most recently mentioned matching** antecedent — the most recent word whose root begins with that stem. There is no guesswork about which match was meant.
 
 **Mention = any word use in the discourse** (any part of speech), including pronoun uses themselves. Resolving a pronoun counts as a new mention of that referent and makes it the most recent again.
 
-It is the **speaker’s** job to ensure the intended referent is the most recent compatible match. Use the letter pronoun when that is already true. If the most recent match is **not** what you intend, use a **name** or the **full word**, potentially with a **modifier / ordinal**. That mention becomes most recent, so later pronouns can refer to it again.
+It is the **speaker’s** job to ensure the intended referent is the most recent match. Use the letter pronoun when that is already true. If the most recent match is **not** what you intend, use the **full word**. If even the full word isn't distinct, add an **adjective / ordinal** to disambiguate. That mention becomes most recent, so later pronouns can refer to it again.
 
-Add **-z** after the word-form ending to mark **plural**: the **group containing** the referent. Example: `…r` refers to one entity; `…rz` refers to the group that includes that entity. The same **-z** works on full words (`…lz`, etc.).
+Add **-z** after the lexical ending to mark **plural**: the **group containing** the referent. Example: `…r` refers to one noun; `…rz` refers to the group that includes that noun. The same **-z** works on full words (`…lz`, etc.).
 
 There are no English-style 3rd-person pronouns (*he* / *she* / *it* / *they*) and no impersonal *one*.
 
@@ -204,14 +204,14 @@ g /ɡ/, d /d/, j /dʑ/, b /b/, z /z/, m /m/, v /v/  (cannot double with the seco
 A word contains three parts:
 1. the part of speech prefix
 2. the root(s) - multiple if compound word
-3. the word form suffix: literal (**-l**), metaphorical (**-m**), proper name (**-n**), pronoun (**-r**)
-4. optional plural **-z** (the group containing the referent), after the word-form suffix
+3. the lexical ending: literal (**-l**), metaphorical (**-m**), proper name (**-n**), pronoun (**-r**)
+4. optional plural **-z** (the group containing the referent), after the lexical ending
 
 roots have form V(CV)+
 if a compound root, then **x** separates them
 
 a) A word root almost always starts with a vowel. The ending and beginning consonants were carefully chosen so that you can never confuse which syllable a consonant belongs to (vaban must be pronounced va'ban and not vab'an because syllables never end with a consonant unless it's the end of the word).
 
-b) All words end with a word-form suffix (**-l**, **-m**, **-n**, or **-r**), optionally followed by plural **-z**. No other syllables end with a consonant, so word boundaries stay clear even when pauses are unreliable (as in singing). Allowed word-final clusters are those endings plus **-z** (**-lz**, **-mz**, **-nz**, **-rz**).
+b) All words end with a lexical ending (**-l**, **-m**, **-n**, or **-r**), optionally followed by plural **-z**. No other syllables end with a consonant, so word boundaries stay clear even when pauses are unreliable (as in singing). Allowed word-final clusters are those endings plus **-z** (**-lz**, **-mz**, **-nz**, **-rz**).
 
-c) Easy to tell the components of a compound word because **x** separates them. Mid-word **x** is only the compound joiner (never part of a root); word-initial **x** is the discourse-glue prefix.
+c) Easy to tell the components of a compound word because **x** separates them. Mid-word **x** is only the compound joiner (never part of a root); word-initial **x** is the discourse-marker prefix.
