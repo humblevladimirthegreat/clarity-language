@@ -63,7 +63,7 @@ The goal of r/claritylanguage is to help foster compassion, rationality, and emp
 
 Parts of speech are determined by a prefix consonant added before each word. Words do not change form based on usage, and can be used in most parts of speech, so the prefix is how you know a word's role.
 
-The standard word order is Subject \- Direct Object \- Verb. Order can change for stylistic reasons or due to certain constructs like dependent clauses. Adjectives (`/w/`) go after what they modify. Adverbs (`/h/`) may appear anywhere in the clause (see below).
+Every sentence begins with a **clause-force** `/h/` (see [Adverbs](#adverbs-h)); that fixed left edge is how sentence boundaries stay clear under free word order. After that opener, the standard order is Subject \- Direct Object \- Verb. Order of those core roles can change for stylistic reasons or due to certain constructs like dependent clauses. Adjectives (`/w/`) go after what they modify. Non-force adverbs (`/h/`) may appear anywhere in the clause (see below).
 
 ## Part-of-speech prefixes
 
@@ -75,7 +75,7 @@ The standard word order is Subject \- Direct Object \- Verb. Order can change fo
 | /v/ | verb |
 | /w/ | adjective |
 | /ɡ/ | adjective adjunct (modifies the previous `/w/`) |
-| /h/ | adverb (including mood / tense) |
+| /h/ | adverb (clause force, mood / tense / evidentiality, adjuncts) |
 | x /ʒ/ | discourse marker (conjunctions, quotation markers) |
 | j /dʑ/ | interjections, direct address |
 
@@ -103,11 +103,27 @@ Same root, different prefix → different scope: `/h/` frames the clause; `/ɡ/`
 
 ## Adverbs (`/h/`)
 
-`/h/` marks **adverbs** (modifiers of the verb or clause). That includes manner, time/place adjuncts, recipients (*to* / *for*), and mood/tense/evidentiality. Example mood form: “h vizinin” means “I remember the events of this sentence (which occurred in the past).”
+`/h/` marks **adverbs** (modifiers of the verb or clause). That includes **clause force**, manner, time/place adjuncts, recipients (*to* / *for*), and mood/tense/evidentiality. Example mood form: “h vizinin” means “I remember the events of this sentence (which occurred in the past).”
 
-Because `/h/` always targets the clause’s verb, **position is free within the clause** (before/after arguments, next to the verb, clause-final, etc.) for style, focus, or meter. `/h/` material must stay inside its own clause: it must not float into a following sentence or into a trailing dependent clause (dependent clauses stay at the end; see below).
+### Clause force (required sentence opener)
 
-When several `/h/` units appear in one clause, interpret them in this **relative order** for scope (regardless of linear placement): mood/evidential → role/place/time adjuncts (including recipient) → manner. If two units share a band, left-to-right in the spoken order breaks the tie.
+Every sentence begins with a **clause-force** `/h/` that marks the speech act. The dictionary lists the specific forms. The closed set for now is:
+
+* **statement** — assertoric claim or description
+* **polar question** — yes/no question
+* **imperative** — directive (command / instruction)
+
+Clause force is **fixed at the left edge** of the sentence; it does not float. A new clause-force `/h/` starts a new sentence. Other speech acts (request, promise, wish, evaluative judgment, and so on) are not separate forces yet — express them with ordinary vocabulary under one of these three; the dictionary may add dedicated force forms later.
+
+Content questions (*who* / *what* / *where*) use the [interrogative special pronoun](#special-pronouns) for the queried role and, for now, the same **polar question** force opener as yes/no questions.
+
+Bare vocatives and exclamations that are only `/j/` (no clause) do not take clause force.
+
+### Other `/h/` (free within the clause)
+
+Because non-force `/h/` always targets the clause’s verb, **position is free within the clause** (before/after arguments, next to the verb, clause-final, etc.) for style, focus, or meter. `/h/` material must stay inside its own clause: it must not float into a following sentence or into a trailing dependent clause (dependent clauses stay at the end; see below).
+
+When several `/h/` units appear in one clause, interpret them in this **relative order** for scope: clause force (already sentence-initial) → mood/evidential → role/place/time adjuncts (including recipient) → manner. If two units share a band, left-to-right in the spoken order breaks the tie.
 
 ## Complex adjectives, complex adverbs, and argument nouns
 
@@ -132,7 +148,7 @@ Marked with x /ʒ/. Used for **conjunctions** (*and* / *or* / *but*, etc.) and *
 
 ## Dependent Clauses
 
-Dependent clauses are formed by a special pronoun (form TBD) that refers to the next sentence. To be unambiguous and reduce cognitive load, dependent clauses must come at the end of the sentence, so you must rearrange the word order if needed. Example is *I told him that...* Main-clause `/h/` units stay in the main clause and do not float into the dependent clause. 
+Dependent clauses are formed by a special pronoun (form TBD) that refers to the next sentence. To be unambiguous and reduce cognitive load, dependent clauses must come at the end of the sentence, so you must rearrange the word order if needed. Example is *I told him that...* The dependent material is itself a full sentence and therefore begins with its own clause-force `/h/`. Main-clause `/h/` units stay in the main clause and do not float into the dependent clause.
 
 ## Quotations
 

@@ -1,4 +1,6 @@
-grammatical number is based on universality
+-grammatical number is based on universality
+-local llm systematically review entire lexicon
+-speed reading display
 
 ## Discourse markers (`/x/`) — expand beyond conjunctions + quotes
 
@@ -15,8 +17,8 @@ Update the `/x/` section so discourse markers are defined as this fuller class, 
 
 ## Clause operators — assign explicitly to `/h/` (not `/x/`)
 
+- Done in reference: clause force (statement / polar question / imperative) as required sentence-initial `/h/` (sentence boundary)
 - Negation (clause-level; adjective-scoped negation via `/ɡ/` if needed)
-- Clause force: polar question, imperative (alongside existing mood/tense/evidentiality)
 - Document that epistemic hedges that are really evidential stay `/h/` or `/ɡ/`, not `/x/`
 
 ## Still underspecified under existing PoS (no new prefix)
