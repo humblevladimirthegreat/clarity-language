@@ -2,23 +2,23 @@ emoji,name,group,subgroup,literal,clarity,keep
 😀,grinning face,Smileys & Emotion,face-smiling,grin,,y
 😃,grinning face with big eyes,Smileys & Emotion,face-smiling,grin,,n
 😄,grinning face with smiling eyes,Smileys & Emotion,face-smiling,grin,,n
-😁,beaming face with smiling eyes,Smileys & Emotion,face-smiling,beam,,n
+😁,beaming face with smiling eyes,Smileys & Emotion,face-smiling,,,n
 😆,grinning squinting face,Smileys & Emotion,face-smiling,laugh,,n
 😅,grinning face with sweat,Smileys & Emotion,face-smiling,nervous-laugh,,y
-🤣,rolling on the floor laughing,Smileys & Emotion,face-smiling,laugh,,y
-😂,face with tears of joy,Smileys & Emotion,face-smiling,laugh,,n
+🤣,rolling on the floor laughing,Smileys & Emotion,face-smiling,laugh,,n
+😂,face with tears of joy,Smileys & Emotion,face-smiling,laugh,,y
 🙂,slightly smiling face,Smileys & Emotion,face-smiling,smile,,n
 🙃,upside-down face,Smileys & Emotion,face-smiling,upside-down,,y
 🫠,melting face,Smileys & Emotion,face-smiling,melt,,y
 😉,winking face,Smileys & Emotion,face-smiling,wink,,y
-😊,smiling face with smiling eyes,Smileys & Emotion,face-smiling,smile,,n
+😊,smiling face with smiling eyes,Smileys & Emotion,face-smiling,smile,,y
 😇,smiling face with halo,Smileys & Emotion,face-smiling,halo,,y
 🥰,smiling face with hearts,Smileys & Emotion,face-affection,love,,y
 😍,smiling face with heart-eyes,Smileys & Emotion,face-affection,heart-eyes,,y
 🤩,star-struck,Smileys & Emotion,face-affection,starstruck,,y
 😘,face blowing a kiss,Smileys & Emotion,face-affection,blow-kiss,,y
 😗,kissing face,Smileys & Emotion,face-affection,kiss,,n
-☺️,smiling face,Smileys & Emotion,face-affection,smile,,y
+☺️,smiling face,Smileys & Emotion,face-affection,,,n
 😚,kissing face with closed eyes,Smileys & Emotion,face-affection,kiss,,n
 😙,kissing face with smiling eyes,Smileys & Emotion,face-affection,kiss,,n
 🥲,smiling face with tear,Smileys & Emotion,face-affection,tear-smile,,y
@@ -26,11 +26,11 @@ emoji,name,group,subgroup,literal,clarity,keep
 😛,face with tongue,Smileys & Emotion,face-tongue,tongue-out,,y
 😜,winking face with tongue,Smileys & Emotion,face-tongue,wink-tongue,,y
 🤪,zany face,Smileys & Emotion,face-tongue,zany,,y
-😝,squinting face with tongue,Smileys & Emotion,face-tongue,tongue-squint,,y
+😝,squinting face with tongue,Smileys & Emotion,face-tongue,,,n
 🤑,money-mouth face,Smileys & Emotion,face-tongue,greed,,y
-🤗,smiling face with open hands,Smileys & Emotion,face-hand,hug,,n
+🤗,smiling face with open hands,Smileys & Emotion,face-hand,,,n
 🤭,face with hand over mouth,Smileys & Emotion,face-hand,gasp,,y
-🫢,face with open eyes and hand over mouth,Smileys & Emotion,face-hand,shock,,y
+🫢,face with open eyes and hand over mouth,Smileys & Emotion,face-hand,,,n
 🫣,face with peeking eye,Smileys & Emotion,face-hand,peek,,y
 🤫,shushing face,Smileys & Emotion,face-hand,shush,,y
 🤔,thinking face,Smileys & Emotion,face-hand,think,,y
@@ -41,21 +41,21 @@ emoji,name,group,subgroup,literal,clarity,keep
 😑,expressionless face,Smileys & Emotion,face-neutral-skeptical,blank,,y
 😶,face without mouth,Smileys & Emotion,face-neutral-skeptical,no-mouth,,y
 🫥,dotted line face,Smileys & Emotion,face-neutral-skeptical,invisible,,y
-😶‍🌫️,face in clouds,Smileys & Emotion,face-neutral-skeptical,foggy,,n
+😶‍🌫️,face in clouds,Smileys & Emotion,face-neutral-skeptical,,,n
 😏,smirking face,Smileys & Emotion,face-neutral-skeptical,smirk,,y
 😒,unamused face,Smileys & Emotion,face-neutral-skeptical,unamused,,y
 🙄,face with rolling eyes,Smileys & Emotion,face-neutral-skeptical,eye-roll,,y
 😬,grimacing face,Smileys & Emotion,face-neutral-skeptical,grimace,,y
 😮‍💨,face exhaling,Smileys & Emotion,face-neutral-skeptical,sigh,,y
 🤥,lying face,Smileys & Emotion,face-neutral-skeptical,lie,,y
-🫨,shaking face,Smileys & Emotion,face-neutral-skeptical,shake,,y
+🫨,shaking face,Smileys & Emotion,face-neutral-skeptical,,,n
 🙂‍↔️,head shaking horizontally,Smileys & Emotion,face-neutral-skeptical,head-shake-no,,y
 🙂‍↕️,head shaking vertically,Smileys & Emotion,face-neutral-skeptical,head-shake-yes,,y
 😌,relieved face,Smileys & Emotion,face-sleepy,relief,,y
 😔,pensive face,Smileys & Emotion,face-sleepy,pensive,,y
 😪,sleepy face,Smileys & Emotion,face-sleepy,sleepy,,y
 🤤,drooling face,Smileys & Emotion,face-sleepy,drool,,y
-😴,sleeping face,Smileys & Emotion,face-sleepy,sleep,,n
+😴,sleeping face,Smileys & Emotion,face-sleepy,,,n
 🫩,face with bags under eyes,Smileys & Emotion,face-sleepy,tired-eyes,,y
 😷,face with medical mask,Smileys & Emotion,face-unwell,mask,,y
 🤒,face with thermometer,Smileys & Emotion,face-unwell,sick,,y
@@ -67,47 +67,47 @@ emoji,name,group,subgroup,literal,clarity,keep
 🥶,cold face,Smileys & Emotion,face-unwell,cold,,y
 🥴,woozy face,Smileys & Emotion,face-unwell,woozy,,y
 😵,face with crossed-out eyes,Smileys & Emotion,face-unwell,dizzy,,n
-😵‍💫,face with spiral eyes,Smileys & Emotion,face-unwell,spiral-eyes,,y
+😵‍💫,face with spiral eyes,Smileys & Emotion,face-unwell,,,n
 🤯,exploding head,Smileys & Emotion,face-unwell,mind-blown,,y
 🤠,cowboy hat face,Smileys & Emotion,face-hat,cowboy,,y
 🥳,partying face,Smileys & Emotion,face-hat,party,,y
 🥸,disguised face,Smileys & Emotion,face-hat,disguise,,y
 😎,smiling face with sunglasses,Smileys & Emotion,face-glasses,cool,,y
 🤓,nerd face,Smileys & Emotion,face-glasses,nerd,,y
-🧐,face with monocle,Smileys & Emotion,face-glasses,fancy,,y
+🧐,face with monocle,Smileys & Emotion,face-glasses,,,n
 😕,confused face,Smileys & Emotion,face-concerned,confused,,y
-🫤,face with diagonal mouth,Smileys & Emotion,face-concerned,unsure,,y
+🫤,face with diagonal mouth,Smileys & Emotion,face-concerned,,,n
 😟,worried face,Smileys & Emotion,face-concerned,worried,,y
 🙁,slightly frowning face,Smileys & Emotion,face-concerned,frown,,n
 ☹️,frowning face,Smileys & Emotion,face-concerned,frown,,y
 😮,face with open mouth,Smileys & Emotion,face-concerned,surprise,,y
-😯,hushed face,Smileys & Emotion,face-concerned,hush,,y
-😲,astonished face,Smileys & Emotion,face-concerned,astonished,,y
+😯,hushed face,Smileys & Emotion,face-concerned,,,n
+😲,astonished face,Smileys & Emotion,face-concerned,,,n
 😳,flushed face,Smileys & Emotion,face-concerned,blush,,y
-🫪,distorted face,Smileys & Emotion,face-concerned,distorted,,y
+🫪,distorted face,Smileys & Emotion,face-concerned,,,n
 🥺,pleading face,Smileys & Emotion,face-concerned,pleading,,y
 🥹,face holding back tears,Smileys & Emotion,face-concerned,holding-tears,,y
 😦,frowning face with open mouth,Smileys & Emotion,face-concerned,frown,,n
-😧,anguished face,Smileys & Emotion,face-concerned,anguish,,n
+😧,anguished face,Smileys & Emotion,face-concerned,,,n
 😨,fearful face,Smileys & Emotion,face-concerned,fear,,y
-😰,anxious face with sweat,Smileys & Emotion,face-concerned,anxious,,n
-😥,sad but relieved face,Smileys & Emotion,face-concerned,sad-relief,,y
+😰,anxious face with sweat,Smileys & Emotion,face-concerned,anxious,,y
+😥,sad but relieved face,Smileys & Emotion,face-concerned,,,n
 😢,crying face,Smileys & Emotion,face-concerned,cry,,n
 😭,loudly crying face,Smileys & Emotion,face-concerned,cry,,y
 😱,face screaming in fear,Smileys & Emotion,face-concerned,scream,,y
-😖,confounded face,Smileys & Emotion,face-concerned,confounded,,y
-😣,persevering face,Smileys & Emotion,face-concerned,persevering,,y
+😖,confounded face,Smileys & Emotion,face-concerned,,,n
+😣,persevering face,Smileys & Emotion,face-concerned,,,n
 😞,disappointed face,Smileys & Emotion,face-concerned,disappointed,,y
 😓,downcast face with sweat,Smileys & Emotion,face-concerned,stressed,,y
 😩,weary face,Smileys & Emotion,face-concerned,weary,,y
 😫,tired face,Smileys & Emotion,face-concerned,tired,,y
 🥱,yawning face,Smileys & Emotion,face-concerned,yawn,,y
-😤,face with steam from nose,Smileys & Emotion,face-negative,triumph,,y
+😤,face with steam from nose,Smileys & Emotion,face-negative,huff,,y
 😡,enraged face,Smileys & Emotion,face-negative,rage,,y
 😠,angry face,Smileys & Emotion,face-negative,angry,,y
 🤬,face with symbols on mouth,Smileys & Emotion,face-negative,cursing,,y
 😈,smiling face with horns,Smileys & Emotion,face-negative,devil,,y
-👿,angry face with horns,Smileys & Emotion,face-negative,angry-devil,,y
+👿,angry face with horns,Smileys & Emotion,face-negative,,,n
 💀,skull,Smileys & Emotion,face-negative,skull,,y
 ☠️,skull and crossbones,Smileys & Emotion,face-negative,skull-crossbones,,y
 💩,pile of poo,Smileys & Emotion,face-costume,poop,,y
@@ -118,43 +118,43 @@ emoji,name,group,subgroup,literal,clarity,keep
 👽,alien,Smileys & Emotion,face-costume,alien,,y
 👾,alien monster,Smileys & Emotion,face-costume,alien-monster,,y
 🤖,robot,Smileys & Emotion,face-costume,robot,,y
-😺,grinning cat,Smileys & Emotion,cat-face,cat-grin,,y
-😸,grinning cat with smiling eyes,Smileys & Emotion,cat-face,cat-grin,,n
-😹,cat with tears of joy,Smileys & Emotion,cat-face,cat-laugh,,n
-😻,smiling cat with heart-eyes,Smileys & Emotion,cat-face,cat-heart-eyes,,y
-😼,cat with wry smile,Smileys & Emotion,cat-face,cat-smirk,,y
-😽,kissing cat,Smileys & Emotion,cat-face,cat-kiss,,y
-🙀,weary cat,Smileys & Emotion,cat-face,cat-weary,,y
-😿,crying cat,Smileys & Emotion,cat-face,cat-cry,,y
-😾,pouting cat,Smileys & Emotion,cat-face,cat-pout,,y
+😺,grinning cat,Smileys & Emotion,cat-face,,,n
+😸,grinning cat with smiling eyes,Smileys & Emotion,cat-face,,,n
+😹,cat with tears of joy,Smileys & Emotion,cat-face,,,n
+😻,smiling cat with heart-eyes,Smileys & Emotion,cat-face,,,n
+😼,cat with wry smile,Smileys & Emotion,cat-face,,,n
+😽,kissing cat,Smileys & Emotion,cat-face,,,n
+🙀,weary cat,Smileys & Emotion,cat-face,,,n
+😿,crying cat,Smileys & Emotion,cat-face,,,n
+😾,pouting cat,Smileys & Emotion,cat-face,,,n
 🙈,see-no-evil monkey,Smileys & Emotion,monkey-face,see-no-evil,,y
 🙉,hear-no-evil monkey,Smileys & Emotion,monkey-face,hear-no-evil,,y
 🙊,speak-no-evil monkey,Smileys & Emotion,monkey-face,speak-no-evil,,y
 💌,love letter,Smileys & Emotion,heart,love-letter,,y
-💘,heart with arrow,Smileys & Emotion,heart,heart-arrow,,y
-💝,heart with ribbon,Smileys & Emotion,heart,heart-ribbon,,y
-💖,sparkling heart,Smileys & Emotion,heart,sparkling-heart,,y
-💗,growing heart,Smileys & Emotion,heart,growing-heart,,y
+💘,heart with arrow,Smileys & Emotion,heart,,,n
+💝,heart with ribbon,Smileys & Emotion,heart,,,n
+💖,sparkling heart,Smileys & Emotion,heart,,,n
+💗,growing heart,Smileys & Emotion,heart,,,n
 💓,beating heart,Smileys & Emotion,heart,beating-heart,,y
-💞,revolving hearts,Smileys & Emotion,heart,revolving-hearts,,y
+💞,revolving hearts,Smileys & Emotion,heart,,,n
 💕,two hearts,Smileys & Emotion,heart,two-hearts,,y
-💟,heart decoration,Smileys & Emotion,heart,heart-decoration,,y
-❣️,heart exclamation,Smileys & Emotion,heart,heart-exclamation,,y
+💟,heart decoration,Smileys & Emotion,heart,,,n
+❣️,heart exclamation,Smileys & Emotion,heart,,,n
 💔,broken heart,Smileys & Emotion,heart,broken-heart,,y
 ❤️‍🔥,heart on fire,Smileys & Emotion,heart,heart-fire,,y
 ❤️‍🩹,mending heart,Smileys & Emotion,heart,mending-heart,,y
-❤️,red heart,Smileys & Emotion,heart,red-heart,,y
-🩷,pink heart,Smileys & Emotion,heart,pink-heart,,y
-🧡,orange heart,Smileys & Emotion,heart,orange-heart,,y
-💛,yellow heart,Smileys & Emotion,heart,yellow-heart,,y
-💚,green heart,Smileys & Emotion,heart,green-heart,,y
-💙,blue heart,Smileys & Emotion,heart,blue-heart,,y
-🩵,light blue heart,Smileys & Emotion,heart,light-blue-heart,,y
-💜,purple heart,Smileys & Emotion,heart,purple-heart,,y
-🤎,brown heart,Smileys & Emotion,heart,brown-heart,,y
-🖤,black heart,Smileys & Emotion,heart,black-heart,,y
-🩶,grey heart,Smileys & Emotion,heart,grey-heart,,y
-🤍,white heart,Smileys & Emotion,heart,white-heart,,y
+❤️,red heart,Smileys & Emotion,heart,heart,,y
+🩷,pink heart,Smileys & Emotion,heart,,,n
+🧡,orange heart,Smileys & Emotion,heart,,,n
+💛,yellow heart,Smileys & Emotion,heart,,,n
+💚,green heart,Smileys & Emotion,heart,,,n
+💙,blue heart,Smileys & Emotion,heart,,,n
+🩵,light blue heart,Smileys & Emotion,heart,,,n
+💜,purple heart,Smileys & Emotion,heart,,,n
+🤎,brown heart,Smileys & Emotion,heart,,,n
+🖤,black heart,Smileys & Emotion,heart,,,n
+🩶,grey heart,Smileys & Emotion,heart,,,n
+🤍,white heart,Smileys & Emotion,heart,,,n
 💋,kiss mark,Smileys & Emotion,emotion,kiss-mark,,y
 💯,hundred points,Smileys & Emotion,emotion,hundred,,y
 💢,anger symbol,Smileys & Emotion,emotion,anger,,y
@@ -194,66 +194,66 @@ emoji,name,group,subgroup,literal,clarity,keep
 ✋🏽,raised hand: medium skin tone,People & Body,hand-fingers-open,raised-hand,,n
 ✋🏾,raised hand: medium-dark skin tone,People & Body,hand-fingers-open,raised-hand,,n
 ✋🏿,raised hand: dark skin tone,People & Body,hand-fingers-open,raised-hand,,n
-🖖,vulcan salute,People & Body,hand-fingers-open,vulcan-salute,,y
-🖖🏻,vulcan salute: light skin tone,People & Body,hand-fingers-open,vulcan-salute,,n
-🖖🏼,vulcan salute: medium-light skin tone,People & Body,hand-fingers-open,vulcan-salute,,n
-🖖🏽,vulcan salute: medium skin tone,People & Body,hand-fingers-open,vulcan-salute,,n
-🖖🏾,vulcan salute: medium-dark skin tone,People & Body,hand-fingers-open,vulcan-salute,,n
-🖖🏿,vulcan salute: dark skin tone,People & Body,hand-fingers-open,vulcan-salute,,n
-🫱,rightwards hand,People & Body,hand-fingers-open,right-hand,,y
-🫱🏻,rightwards hand: light skin tone,People & Body,hand-fingers-open,right-hand,,n
-🫱🏼,rightwards hand: medium-light skin tone,People & Body,hand-fingers-open,right-hand,,n
-🫱🏽,rightwards hand: medium skin tone,People & Body,hand-fingers-open,right-hand,,n
-🫱🏾,rightwards hand: medium-dark skin tone,People & Body,hand-fingers-open,right-hand,,n
-🫱🏿,rightwards hand: dark skin tone,People & Body,hand-fingers-open,right-hand,,n
-🫲,leftwards hand,People & Body,hand-fingers-open,left-hand,,y
-🫲🏻,leftwards hand: light skin tone,People & Body,hand-fingers-open,left-hand,,n
-🫲🏼,leftwards hand: medium-light skin tone,People & Body,hand-fingers-open,left-hand,,n
-🫲🏽,leftwards hand: medium skin tone,People & Body,hand-fingers-open,left-hand,,n
-🫲🏾,leftwards hand: medium-dark skin tone,People & Body,hand-fingers-open,left-hand,,n
-🫲🏿,leftwards hand: dark skin tone,People & Body,hand-fingers-open,left-hand,,n
-🫳,palm down hand,People & Body,hand-fingers-open,palm-down,,y
-🫳🏻,palm down hand: light skin tone,People & Body,hand-fingers-open,palm-down,,n
-🫳🏼,palm down hand: medium-light skin tone,People & Body,hand-fingers-open,palm-down,,n
-🫳🏽,palm down hand: medium skin tone,People & Body,hand-fingers-open,palm-down,,n
-🫳🏾,palm down hand: medium-dark skin tone,People & Body,hand-fingers-open,palm-down,,n
-🫳🏿,palm down hand: dark skin tone,People & Body,hand-fingers-open,palm-down,,n
-🫴,palm up hand,People & Body,hand-fingers-open,palm-up,,y
-🫴🏻,palm up hand: light skin tone,People & Body,hand-fingers-open,palm-up,,n
-🫴🏼,palm up hand: medium-light skin tone,People & Body,hand-fingers-open,palm-up,,n
-🫴🏽,palm up hand: medium skin tone,People & Body,hand-fingers-open,palm-up,,n
-🫴🏾,palm up hand: medium-dark skin tone,People & Body,hand-fingers-open,palm-up,,n
-🫴🏿,palm up hand: dark skin tone,People & Body,hand-fingers-open,palm-up,,n
-🫷,leftwards pushing hand,People & Body,hand-fingers-open,push-left,,y
-🫷🏻,leftwards pushing hand: light skin tone,People & Body,hand-fingers-open,push-left,,n
-🫷🏼,leftwards pushing hand: medium-light skin tone,People & Body,hand-fingers-open,push-left,,n
-🫷🏽,leftwards pushing hand: medium skin tone,People & Body,hand-fingers-open,push-left,,n
-🫷🏾,leftwards pushing hand: medium-dark skin tone,People & Body,hand-fingers-open,push-left,,n
-🫷🏿,leftwards pushing hand: dark skin tone,People & Body,hand-fingers-open,push-left,,n
-🫸,rightwards pushing hand,People & Body,hand-fingers-open,push-right,,y
-🫸🏻,rightwards pushing hand: light skin tone,People & Body,hand-fingers-open,push-right,,n
-🫸🏼,rightwards pushing hand: medium-light skin tone,People & Body,hand-fingers-open,push-right,,n
-🫸🏽,rightwards pushing hand: medium skin tone,People & Body,hand-fingers-open,push-right,,n
-🫸🏾,rightwards pushing hand: medium-dark skin tone,People & Body,hand-fingers-open,push-right,,n
-🫸🏿,rightwards pushing hand: dark skin tone,People & Body,hand-fingers-open,push-right,,n
+🖖,vulcan salute,People & Body,hand-fingers-open,,,n
+🖖🏻,vulcan salute: light skin tone,People & Body,hand-fingers-open,,,n
+🖖🏼,vulcan salute: medium-light skin tone,People & Body,hand-fingers-open,,,n
+🖖🏽,vulcan salute: medium skin tone,People & Body,hand-fingers-open,,,n
+🖖🏾,vulcan salute: medium-dark skin tone,People & Body,hand-fingers-open,,,n
+🖖🏿,vulcan salute: dark skin tone,People & Body,hand-fingers-open,,,n
+🫱,rightwards hand,People & Body,hand-fingers-open,,,n
+🫱🏻,rightwards hand: light skin tone,People & Body,hand-fingers-open,,,n
+🫱🏼,rightwards hand: medium-light skin tone,People & Body,hand-fingers-open,,,n
+🫱🏽,rightwards hand: medium skin tone,People & Body,hand-fingers-open,,,n
+🫱🏾,rightwards hand: medium-dark skin tone,People & Body,hand-fingers-open,,,n
+🫱🏿,rightwards hand: dark skin tone,People & Body,hand-fingers-open,,,n
+🫲,leftwards hand,People & Body,hand-fingers-open,,,n
+🫲🏻,leftwards hand: light skin tone,People & Body,hand-fingers-open,,,n
+🫲🏼,leftwards hand: medium-light skin tone,People & Body,hand-fingers-open,,,n
+🫲🏽,leftwards hand: medium skin tone,People & Body,hand-fingers-open,,,n
+🫲🏾,leftwards hand: medium-dark skin tone,People & Body,hand-fingers-open,,,n
+🫲🏿,leftwards hand: dark skin tone,People & Body,hand-fingers-open,,,n
+🫳,palm down hand,People & Body,hand-fingers-open,,,n
+🫳🏻,palm down hand: light skin tone,People & Body,hand-fingers-open,,,n
+🫳🏼,palm down hand: medium-light skin tone,People & Body,hand-fingers-open,,,n
+🫳🏽,palm down hand: medium skin tone,People & Body,hand-fingers-open,,,n
+🫳🏾,palm down hand: medium-dark skin tone,People & Body,hand-fingers-open,,,n
+🫳🏿,palm down hand: dark skin tone,People & Body,hand-fingers-open,,,n
+🫴,palm up hand,People & Body,hand-fingers-open,,,n
+🫴🏻,palm up hand: light skin tone,People & Body,hand-fingers-open,,,n
+🫴🏼,palm up hand: medium-light skin tone,People & Body,hand-fingers-open,,,n
+🫴🏽,palm up hand: medium skin tone,People & Body,hand-fingers-open,,,n
+🫴🏾,palm up hand: medium-dark skin tone,People & Body,hand-fingers-open,,,n
+🫴🏿,palm up hand: dark skin tone,People & Body,hand-fingers-open,,,n
+🫷,leftwards pushing hand,People & Body,hand-fingers-open,,,n
+🫷🏻,leftwards pushing hand: light skin tone,People & Body,hand-fingers-open,,,n
+🫷🏼,leftwards pushing hand: medium-light skin tone,People & Body,hand-fingers-open,,,n
+🫷🏽,leftwards pushing hand: medium skin tone,People & Body,hand-fingers-open,,,n
+🫷🏾,leftwards pushing hand: medium-dark skin tone,People & Body,hand-fingers-open,,,n
+🫷🏿,leftwards pushing hand: dark skin tone,People & Body,hand-fingers-open,,,n
+🫸,rightwards pushing hand,People & Body,hand-fingers-open,,,n
+🫸🏻,rightwards pushing hand: light skin tone,People & Body,hand-fingers-open,,,n
+🫸🏼,rightwards pushing hand: medium-light skin tone,People & Body,hand-fingers-open,,,n
+🫸🏽,rightwards pushing hand: medium skin tone,People & Body,hand-fingers-open,,,n
+🫸🏾,rightwards pushing hand: medium-dark skin tone,People & Body,hand-fingers-open,,,n
+🫸🏿,rightwards pushing hand: dark skin tone,People & Body,hand-fingers-open,,,n
 👌,OK hand,People & Body,hand-fingers-partial,ok-sign,,y
 👌🏻,OK hand: light skin tone,People & Body,hand-fingers-partial,ok-sign,,n
 👌🏼,OK hand: medium-light skin tone,People & Body,hand-fingers-partial,ok-sign,,n
 👌🏽,OK hand: medium skin tone,People & Body,hand-fingers-partial,ok-sign,,n
 👌🏾,OK hand: medium-dark skin tone,People & Body,hand-fingers-partial,ok-sign,,n
 👌🏿,OK hand: dark skin tone,People & Body,hand-fingers-partial,ok-sign,,n
-🤌,pinched fingers,People & Body,hand-fingers-partial,pinched-fingers,,y
-🤌🏻,pinched fingers: light skin tone,People & Body,hand-fingers-partial,pinched-fingers,,n
-🤌🏼,pinched fingers: medium-light skin tone,People & Body,hand-fingers-partial,pinched-fingers,,n
-🤌🏽,pinched fingers: medium skin tone,People & Body,hand-fingers-partial,pinched-fingers,,n
-🤌🏾,pinched fingers: medium-dark skin tone,People & Body,hand-fingers-partial,pinched-fingers,,n
-🤌🏿,pinched fingers: dark skin tone,People & Body,hand-fingers-partial,pinched-fingers,,n
-🤏,pinching hand,People & Body,hand-fingers-partial,pinch,,y
-🤏🏻,pinching hand: light skin tone,People & Body,hand-fingers-partial,pinch,,n
-🤏🏼,pinching hand: medium-light skin tone,People & Body,hand-fingers-partial,pinch,,n
-🤏🏽,pinching hand: medium skin tone,People & Body,hand-fingers-partial,pinch,,n
-🤏🏾,pinching hand: medium-dark skin tone,People & Body,hand-fingers-partial,pinch,,n
-🤏🏿,pinching hand: dark skin tone,People & Body,hand-fingers-partial,pinch,,n
+🤌,pinched fingers,People & Body,hand-fingers-partial,,,n
+🤌🏻,pinched fingers: light skin tone,People & Body,hand-fingers-partial,,,n
+🤌🏼,pinched fingers: medium-light skin tone,People & Body,hand-fingers-partial,,,n
+🤌🏽,pinched fingers: medium skin tone,People & Body,hand-fingers-partial,,,n
+🤌🏾,pinched fingers: medium-dark skin tone,People & Body,hand-fingers-partial,,,n
+🤌🏿,pinched fingers: dark skin tone,People & Body,hand-fingers-partial,,,n
+🤏,pinching hand,People & Body,hand-fingers-partial,,,n
+🤏🏻,pinching hand: light skin tone,People & Body,hand-fingers-partial,,,n
+🤏🏼,pinching hand: medium-light skin tone,People & Body,hand-fingers-partial,,,n
+🤏🏽,pinching hand: medium skin tone,People & Body,hand-fingers-partial,,,n
+🤏🏾,pinching hand: medium-dark skin tone,People & Body,hand-fingers-partial,,,n
+🤏🏿,pinching hand: dark skin tone,People & Body,hand-fingers-partial,,,n
 ✌️,victory hand,People & Body,hand-fingers-partial,victory,,y
 ✌🏻,victory hand: light skin tone,People & Body,hand-fingers-partial,victory,,n
 ✌🏼,victory hand: medium-light skin tone,People & Body,hand-fingers-partial,victory,,n
@@ -266,18 +266,18 @@ emoji,name,group,subgroup,literal,clarity,keep
 🤞🏽,crossed fingers: medium skin tone,People & Body,hand-fingers-partial,crossed-fingers,,n
 🤞🏾,crossed fingers: medium-dark skin tone,People & Body,hand-fingers-partial,crossed-fingers,,n
 🤞🏿,crossed fingers: dark skin tone,People & Body,hand-fingers-partial,crossed-fingers,,n
-🫰,hand with index finger and thumb crossed,People & Body,hand-fingers-partial,finger-heart,,y
-🫰🏻,hand with index finger and thumb crossed: light skin tone,People & Body,hand-fingers-partial,finger-heart,,n
-🫰🏼,hand with index finger and thumb crossed: medium-light skin tone,People & Body,hand-fingers-partial,finger-heart,,n
-🫰🏽,hand with index finger and thumb crossed: medium skin tone,People & Body,hand-fingers-partial,finger-heart,,n
-🫰🏾,hand with index finger and thumb crossed: medium-dark skin tone,People & Body,hand-fingers-partial,finger-heart,,n
-🫰🏿,hand with index finger and thumb crossed: dark skin tone,People & Body,hand-fingers-partial,finger-heart,,n
-🤟,love-you gesture,People & Body,hand-fingers-partial,love-you-gesture,,y
-🤟🏻,love-you gesture: light skin tone,People & Body,hand-fingers-partial,love-you-gesture,,n
-🤟🏼,love-you gesture: medium-light skin tone,People & Body,hand-fingers-partial,love-you-gesture,,n
-🤟🏽,love-you gesture: medium skin tone,People & Body,hand-fingers-partial,love-you-gesture,,n
-🤟🏾,love-you gesture: medium-dark skin tone,People & Body,hand-fingers-partial,love-you-gesture,,n
-🤟🏿,love-you gesture: dark skin tone,People & Body,hand-fingers-partial,love-you-gesture,,n
+🫰,hand with index finger and thumb crossed,People & Body,hand-fingers-partial,,,n
+🫰🏻,hand with index finger and thumb crossed: light skin tone,People & Body,hand-fingers-partial,,,n
+🫰🏼,hand with index finger and thumb crossed: medium-light skin tone,People & Body,hand-fingers-partial,,,n
+🫰🏽,hand with index finger and thumb crossed: medium skin tone,People & Body,hand-fingers-partial,,,n
+🫰🏾,hand with index finger and thumb crossed: medium-dark skin tone,People & Body,hand-fingers-partial,,,n
+🫰🏿,hand with index finger and thumb crossed: dark skin tone,People & Body,hand-fingers-partial,,,n
+🤟,love-you gesture,People & Body,hand-fingers-partial,,,n
+🤟🏻,love-you gesture: light skin tone,People & Body,hand-fingers-partial,,,n
+🤟🏼,love-you gesture: medium-light skin tone,People & Body,hand-fingers-partial,,,n
+🤟🏽,love-you gesture: medium skin tone,People & Body,hand-fingers-partial,,,n
+🤟🏾,love-you gesture: medium-dark skin tone,People & Body,hand-fingers-partial,,,n
+🤟🏿,love-you gesture: dark skin tone,People & Body,hand-fingers-partial,,,n
 🤘,sign of the horns,People & Body,hand-fingers-partial,rock-on,,y
 🤘🏻,sign of the horns: light skin tone,People & Body,hand-fingers-partial,rock-on,,n
 🤘🏼,sign of the horns: medium-light skin tone,People & Body,hand-fingers-partial,rock-on,,n
@@ -326,12 +326,12 @@ emoji,name,group,subgroup,literal,clarity,keep
 ☝🏽,index pointing up: medium skin tone,People & Body,hand-single-finger,point-up,,n
 ☝🏾,index pointing up: medium-dark skin tone,People & Body,hand-single-finger,point-up,,n
 ☝🏿,index pointing up: dark skin tone,People & Body,hand-single-finger,point-up,,n
-🫵,index pointing at the viewer,People & Body,hand-single-finger,point-at-viewer,,y
-🫵🏻,index pointing at the viewer: light skin tone,People & Body,hand-single-finger,point-at-viewer,,n
-🫵🏼,index pointing at the viewer: medium-light skin tone,People & Body,hand-single-finger,point-at-viewer,,n
-🫵🏽,index pointing at the viewer: medium skin tone,People & Body,hand-single-finger,point-at-viewer,,n
-🫵🏾,index pointing at the viewer: medium-dark skin tone,People & Body,hand-single-finger,point-at-viewer,,n
-🫵🏿,index pointing at the viewer: dark skin tone,People & Body,hand-single-finger,point-at-viewer,,n
+🫵,index pointing at the viewer,People & Body,hand-single-finger,,,n
+🫵🏻,index pointing at the viewer: light skin tone,People & Body,hand-single-finger,,,n
+🫵🏼,index pointing at the viewer: medium-light skin tone,People & Body,hand-single-finger,,,n
+🫵🏽,index pointing at the viewer: medium skin tone,People & Body,hand-single-finger,,,n
+🫵🏾,index pointing at the viewer: medium-dark skin tone,People & Body,hand-single-finger,,,n
+🫵🏿,index pointing at the viewer: dark skin tone,People & Body,hand-single-finger,,,n
 👍,thumbs up,People & Body,hand-fingers-closed,thumbs-up,,y
 👍🏻,thumbs up: light skin tone,People & Body,hand-fingers-closed,thumbs-up,,n
 👍🏼,thumbs up: medium-light skin tone,People & Body,hand-fingers-closed,thumbs-up,,n
@@ -386,18 +386,18 @@ emoji,name,group,subgroup,literal,clarity,keep
 🫶🏽,heart hands: medium skin tone,People & Body,hands,heart-hands,,n
 🫶🏾,heart hands: medium-dark skin tone,People & Body,hands,heart-hands,,n
 🫶🏿,heart hands: dark skin tone,People & Body,hands,heart-hands,,n
-👐,open hands,People & Body,hands,open-hands,,y
-👐🏻,open hands: light skin tone,People & Body,hands,open-hands,,n
-👐🏼,open hands: medium-light skin tone,People & Body,hands,open-hands,,n
-👐🏽,open hands: medium skin tone,People & Body,hands,open-hands,,n
-👐🏾,open hands: medium-dark skin tone,People & Body,hands,open-hands,,n
-👐🏿,open hands: dark skin tone,People & Body,hands,open-hands,,n
-🤲,palms up together,People & Body,hands,palms-up,,y
-🤲🏻,palms up together: light skin tone,People & Body,hands,palms-up,,n
-🤲🏼,palms up together: medium-light skin tone,People & Body,hands,palms-up,,n
-🤲🏽,palms up together: medium skin tone,People & Body,hands,palms-up,,n
-🤲🏾,palms up together: medium-dark skin tone,People & Body,hands,palms-up,,n
-🤲🏿,palms up together: dark skin tone,People & Body,hands,palms-up,,n
+👐,open hands,People & Body,hands,,,n
+👐🏻,open hands: light skin tone,People & Body,hands,,,n
+👐🏼,open hands: medium-light skin tone,People & Body,hands,,,n
+👐🏽,open hands: medium skin tone,People & Body,hands,,,n
+👐🏾,open hands: medium-dark skin tone,People & Body,hands,,,n
+👐🏿,open hands: dark skin tone,People & Body,hands,,,n
+🤲,palms up together,People & Body,hands,,,n
+🤲🏻,palms up together: light skin tone,People & Body,hands,,,n
+🤲🏼,palms up together: medium-light skin tone,People & Body,hands,,,n
+🤲🏽,palms up together: medium skin tone,People & Body,hands,,,n
+🤲🏾,palms up together: medium-dark skin tone,People & Body,hands,,,n
+🤲🏿,palms up together: dark skin tone,People & Body,hands,,,n
 🤝,handshake,People & Body,hands,handshake,,y
 🤝🏻,handshake: light skin tone,People & Body,hands,handshake,,n
 🤝🏼,handshake: medium-light skin tone,People & Body,hands,handshake,,n
@@ -487,7 +487,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 👃🏾,nose: medium-dark skin tone,People & Body,body-parts,nose,,n
 👃🏿,nose: dark skin tone,People & Body,body-parts,nose,,n
 🧠,brain,People & Body,body-parts,brain,,y
-🫀,anatomical heart,People & Body,body-parts,heart,,y
+🫀,anatomical heart,People & Body,body-parts,anatomical-heart,,y
 🫁,lungs,People & Body,body-parts,lungs,,y
 🦷,tooth,People & Body,body-parts,tooth,,y
 🦴,bone,People & Body,body-parts,bone,,y

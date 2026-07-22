@@ -94,8 +94,8 @@ This is separate from the **near-duplicate cull** (Phase 3): a row can be the on
 | 1. Variant collapse | **done** |
 | 2. Literal glossing | **done** |
 | 2.5. People & Body glossing | **done** — 2,418 rows glossed |
-| 3. Cull (`keep`) | **done** — 1,446 kept · 2,507 dropped |
-| 4. Clarity roots | **done** — 1,446 rows in `lexicon-published.csv` |
+| 3. Cull (`keep`) | **done** — 1,395 kept · 2,558 dropped |
+| 4. Clarity roots | **done** — 1,395 rows in `lexicon-published.csv` |
 
 ```
 emojis.csv  →  lexicon.csv (skeleton)          ✓ done
@@ -111,7 +111,7 @@ emojis.csv  →  lexicon.csv (skeleton)          ✓ done
          4. generate clarity roots → lexicon-published.csv  ✓ done
 ```
 
-**What exists today:** Phase 1–3 complete. **Phase 4 complete:** `data/lexicon-published.csv` has **1,446** rows (`emoji`, `literal`, `clarity`, empty `metaphorical`). Regenerate with `npm run phase4-publish` when literals or the keep set change.
+**What exists today:** Phase 1–3 complete. **Phase 4 complete:** `data/lexicon-published.csv` has **1,395** rows (`emoji`, `literal`, `clarity`, empty `metaphorical`). Regenerate with `npm run phase4-publish` when literals or the keep set change.
 
 ---
 
@@ -183,9 +183,11 @@ Short guidance so glosses stay consistent within a subgroup:
 | `arrow` | Direction or action (`up`, `back`, `reload`), not "up arrow". |
 | `geometric` | Keep traffic/status colors + basic squares/triangles only (`red`, `yellow`, `green`, `black`, `white`, `black-square`, `white-square`, `up-triangle`, `down-triangle`, `radio-button`). Drop size/color spam. |
 | `keycap` | Bare digit/symbol (`0`…`9`, `10`, `hash`, `asterisk`) — that character is the meaning. |
-| `face-*` | What the face reads as (`grin`, `laugh`, `cry`, `wink`) — not Unicode face description. |
-| `heart` | Keep color when it matters (`red-heart`); shared concepts otherwise (`broken-heart`). |
+| `face-*` | What the face reads as (`grin`, `laugh`, `cry`, `wink`) — not Unicode face description. Keep only faces with a **stable everyday English reading**; drop Unicode jargon (`persevering`, `confounded`), near-duplicate intensity variants, and novelty remakes (`cat-face`). Prefer the dominant messaging prototype (`😂` laugh, `😊` smile). |
+| `heart` | Keep one default `heart` (❤️) plus hearts with a distinct common reading (`broken-heart`, `beating-heart`, `two-hearts`, `heart-fire`, `mending-heart`, `love-letter`). **Drop all colored hearts** (`pink-heart`, `blue-heart`, …) — color is compositional, not a separate root. Drop decorative/punctuation variants too. |
+| `cat-face` | **Drop** — novelty remakes of human face concepts, not distinct English roots. |
 | `person-*` | Action or role (`wave`, `doctor`, `runner`), not "woman gesturing OK". No skin-tone or hair/beard literals — see [Phase 2.5](#phase-25--people--body-literal-glossing). |
+| `hand-*` / `hands` | Keep gestures with a **stable everyday English reading** (`wave`, `thumbs-up`, `clap`, `point-left`, `pray`, …). Drop directional palm/push hands, franchise/meme partial-finger gestures (`vulcan-salute`, `pinched-fingers`, `finger-heart`, `love-you-gesture`), and vague open-palm variants. |
 | `sport` / `game` | Activity (`soccer`, `chess`), not equipment description. |
 
 During glossing, mark obvious drops mentally (or tentatively `keep=n`); confirm in Phase 3. Do not spend time inventing English glosses for Japanese ideograph buttons.
@@ -305,7 +307,8 @@ When distinct concepts share a `literal` within the same `group`/`subgroup` (e.g
 | Cluster key | Winner | Rationale |
 |-------------|--------|-----------|
 | `Smileys & Emotion\|face-affection\|kiss` | face blowing a kiss (😘) | Dominant everyday reading |
-| `Smileys & Emotion\|face-smiling\|laugh` | rolling on the floor laughing (🤣) | Dominant everyday reading |
+| `Smileys & Emotion\|face-smiling\|laugh` | face with tears of joy (😂) | Dominant everyday reading |
+| `Smileys & Emotion\|face-smiling\|smile` | smiling face with smiling eyes (😊) | Dominant everyday reading |
 | `Symbols\|other-symbol\|check` | check mark button (✅) | Dominant UI reading |
 | `Travel & Places\|sky & weather\|lightning` | high voltage (⚡) | Dominant reading |
 | `Travel & Places\|place-building\|castle` | castle (🏰) | Generic over Japanese variant |
@@ -321,11 +324,11 @@ When distinct concepts share a `literal` within the same `group`/`subgroup` (e.g
 | Metric | Count |
 |--------|------:|
 | Total seed rows | 3,953 |
-| `keep=y` (published) | 1,446 |
-| `keep=n` (dropped) | 2,507 |
-| Drop A (empty literal / not lexicon material) | 28 |
-| Duplicate clusters culled | 194 |
-| Singleton `keep=y` | 1,446 |
+| `keep=y` (published) | 1,395 |
+| `keep=n` (dropped) | 2,558 |
+| Drop A (empty literal / not lexicon material) | 158 |
+| Duplicate clusters culled | 179 |
+| Singleton `keep=y` | 1,402 |
 
 ---
 
@@ -335,7 +338,7 @@ When distinct concepts share a `literal` within the same `group`/`subgroup` (e.g
 
 **Input:** `data/lexicon.csv` — rows where `keep=y` and `literal` is set.
 
-**Output:** `data/lexicon-published.csv` — **1,446 rows** today (only `keep=y`; dropped rows are not transferred).
+**Output:** `data/lexicon-published.csv` — **1,395 rows** today (only `keep=y`; dropped rows are not transferred).
 
 | Column | Phase 4 |
 |--------|---------|
