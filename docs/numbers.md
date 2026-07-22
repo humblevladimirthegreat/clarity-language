@@ -7,29 +7,33 @@ A whole numeric value is **one word**, even when it contains several digit group
 ## Word shape
 
 ```
-[PoS] + r + V + ( [polarity?] [exponent?] [digits] )+ + [ending] + [z?]
+[PoS] + r + V + ( [exponent?] [digits] )+ + [ending] + [z?]
 ```
 
 1. **PoS** — same prefixes as elsewhere. Use `/w/` when the number modifies a noun; use `/z/`, `/d/`, or `/b/` when the number is itself an argument. Digit-strings usually take the role the clause needs (often `/d/`).
-2. **Number marker** — consonant **r** plus a vowel **V** (see [Quantity vs identity](#quantity-vs-identity-marker-vowel)). The PoS+`r` cluster is a [number-only phonotactic exception](language-reference.md#phonotactics).
-3. **One or more digit groups** — each group is optional polarity, optional exponent, then one or more digit syllables. Digits compound with **no** **x** separator.
+2. **Number marker** — consonant **r** plus a vowel **V** (see [Marker vowel](#marker-vowel)). The PoS+`r` cluster is a [number-only phonotactic exception](language-reference.md#phonotactics).
+3. **One or more digit groups** — each group is optional exponent, then one or more digit syllables. Digits compound with **no** **x** separator. There is **no per-group polarity**; sign (when it applies) is on the marker vowel for the whole word.
 4. **Ending** — `-l` / `-m` / `-n` / `-r` with [number-specific meanings](#number-endings).
 5. **Plural `-z`** — optional; same sense as elsewhere (the group containing that numeric referent).
 
 **Lexicon rule:** Any stem that matches this grammar is a number, never an ordinary root. Dictionary generation must reject colliding roots.
 
-## Quantity vs identity (marker vowel)
+## Marker vowel
 
-Notation mode (plain / engineering / scientific / digit-string body) is read from the group contents, not from **V**.
+**V** encodes both identity (scalar vs digit-string vs ordinal) and, for scalars, the **sign of the whole number**. Notation mode (plain / engineering / scientific / digit-string body) is read from the group contents, not from a separate mode vowel.
 
 | V | Use |
 |---|-----|
-| **a** | Scalar **magnitude** (count or measure amount) |
+| **a** | Positive **scalar** (count or measure amount) |
+| **u** | Negative **scalar** |
 | **e** | **Digit-string** / label (phones, IDs, “read the digits”) |
 | **o** | **Ordinal** / rank |
-| **u** | **Mathematical object** (the number as a value in itself) |
 
 Do not combine conflicting identity types on one word (e.g. do not use `re` and `ro` for the same token). Writing sugar: ordinals may be written with **`#`** (e.g. `2#`) while speech uses marker **`ro`**.
+
+Digit-strings and ordinals are not signed via **V** (a negative phone number or “−2nd” is not part of this system; use ordinary vocabulary if needed). Multi-group scalars share one sign: e.g. −1 000 265 004 is one **`ru`** word whose groups add as a single negative magnitude.
+
+There is no separate “mathematical object” marker. To talk about a number as an entity, use a scalar (**`ra`** / **`ru`**) with ordinary wording (e.g. the noun *number*), not a distinct numeral class.
 
 ## Number endings
 
@@ -59,14 +63,12 @@ Remapped CV syllables (current vowels; preferred voiced consonants):
 | 9 | na | /nɑ/ |
 | 0 | zo | /zo̞/ |
 
-## Polarity and exponents
+## Exponents
 
 Within each digit group:
 
 | Marker | Role |
 |--------|------|
-| **a** | Positive group value (may be **omitted**) |
-| **u** | Negative group value (required when negative) |
 | **ba** | Positive exponent, followed by the exponent’s digits |
 | **bu** | Negative exponent, followed by the exponent’s digits |
 
@@ -74,7 +76,7 @@ Within each digit group:
 - If the exponent is **0**, omit the exponent entirely.
 - Default spoken/written scale uses **engineering notation**: exponents are usually multiples of **3** (e.g. `27e6`, not `2.7e7`).
 - **Scientific register** is optional: still **exp-first**, but the mantissa uses **`ja`** after the first digit to mark the decimal point (always stressed). Break the remaining mantissa digits into groups of at most three.
-- **Bare order of magnitude:** only the exponent part (no mantissa digits), with magnitude marker **`ra`** (e.g. *e9* / “a billion”).
+- **Bare order of magnitude:** only the exponent part (no mantissa digits), with positive scalar marker **`ra`** (e.g. *e9* / “a billion”); use **`ru`** for a negative order of magnitude if needed.
 - **Cents / fixed subunits:** an exponent need not be a multiple of 3 when the unit has a conventional subunit (e.g. dollars: `4e-2` for four cents). Same pattern for other fixed subunits if needed.
 - **No metric prefixes** in speech: prefer base unit + engineering exponent (`40e3` grams, not “40 kilograms”; `12e-9` meters, not “12 nanometers”).
 
@@ -89,7 +91,7 @@ Speech always follows the number-word grammar above. For long values, break into
 
 ## Digit-strings
 
-Use marker **`re`**. Omit exponents. Prefer groups of three digits. Positive polarity may be omitted. Ending is usually **-l** (exact label); **-n** for an official designation; **-r** to resume a prior code.
+Use marker **`re`**. Omit exponents. Prefer groups of three digits. Ending is usually **-l** (exact label); **-n** for an official designation; **-r** to resume a prior code.
 
 ## Examples
 
@@ -98,23 +100,23 @@ Digits below use the table above; glosses show structure, not stress detail.
 | Value | Speech sketch (exact `-l` unless noted) |
 |-------|----------------------------------------|
 | 3 | *wrarel* (`w` + `ra` + re + `l`) |
-| −3 | *wraurel* (`w` + `ra` + u + re + `l`) |
-| 139 | *wraworenal* (`ra` + wo re na; positive polarity omitted) |
+| −3 | *wrurel* (`w` + `ru` + re + `l`) |
+| 139 | *wraworenal* (`ra` + wo re na) |
 | 27e12 | *wrabawodudulel* (`ra` + ba wo du + du le) |
 | e9 (bare) | *wrabanal* (`ra` + ba na; no mantissa) |
 | 50e-6 | *wrabuguvazol* (`ra` + bu gu + va zo) |
-| −1e9 −265e3 −4 | *wraubanawoubareduguvaumol* — groups: u ba na wo · u ba re du gu va · u mo |
+| −1e9 −265e3 −4 | *wrubanawobareduguvamol* — one **`ru`**; groups: ba na wo · ba re du gu va · mo |
 | $5860.04 → 5e3 + 860 + 4e-2 | *wrabarevahaguzobudumol* — last group bu du + mo (cents) |
 | 2nd (`2#`) | *wrodul*; title-like *the Second…* may take **-n** (*wrodun*) |
 | about 27e6 | same body as 27e6 with ending **-m** |
 | phone 555-123-4567 | *drevavavawoduremovagulel* (`d` + `re` + va×3 · wo du re · mo va gu · le + `l`) |
-| scientific 5.2487083e-4 | *wrabumovajadumohalezoharel* (or **`ru`** instead of **`ra`** if treated as a pure math value) |
+| scientific 5.2487083e-4 | *wrabumovajadumohalezoharel* (`ra` + bu mo + va ja + du mo ha · le zo ha · re) |
 
 In a sentence, the PoS attaches to that single number word (e.g. direct-object digit-string: `/d/` + `re` + … + ending).
 
 ## Stress (pronunciation guide)
 
-- Single-digit magnitude groups: stress the digit syllable (after optional polarity).
+- Single-digit magnitude groups: stress the digit syllable.
 - Multi-digit groups without exponent: stress the **leftmost** digit.
 - Groups with an exponent: stress the **leftmost exponent digit**.
 - Scientific **`ja`**: always stressed (marks that register).
