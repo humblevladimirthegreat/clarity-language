@@ -19,6 +19,7 @@
     "parse": "tsx src/cli.ts",
     "convert-ngsl": "tsx scripts/convert-ngsl.ts",
     "convert-emojis": "tsx scripts/convert-emojis.ts",
+    "collapse-variants": "tsx scripts/collapse-variants.ts",
     "fill-literals": "tsx scripts/fill-literals.ts",
     "web": "npx --yes serve . -p 4173"
   },

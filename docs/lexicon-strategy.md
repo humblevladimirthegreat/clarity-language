@@ -90,7 +90,7 @@ This is separate from the **near-duplicate cull** (Phase 3): a row can be the on
 | Phase | Status |
 |-------|--------|
 | Skeleton (`lexicon.csv` one row per emoji) | **done** |
-| 1. Variant collapse | **not started** |
+| 1. Variant collapse | **done** |
 | 2. Literal glossing | **not started** (490 scripted drafts in Objects/Symbols only — wrong approach, need re-gloss or clear) |
 | 3. Cull (`keep`) | not started |
 | 4. Clarity roots | not started |
@@ -98,16 +98,16 @@ This is separate from the **near-duplicate cull** (Phase 3): a row can be the on
 ```
 emojis.csv  →  lexicon.csv (skeleton)          ✓ done
                  ↓
-         1. collapse variants (mechanical)     ← next
+         1. collapse variants (mechanical)     ✓ done
                  ↓
-         2. gloss literals (curated)
+         2. gloss literals (curated)         ← next
                  ↓
          3. cull: duplicates + no-English-drop (keep=y/n)
                  ↓
          4. generate clarity roots
 ```
 
-**What exists today:** The skeleton is complete. `scripts/fill-literals.ts` was run once on Objects + Symbols and wrote normalized-name “literals” — that was **not** Phase 1 (collapse) and **not** valid Phase 2 glossing. Treat those 490 values as discardable drafts until re-glossed. No `keep` values are set; variant rows (skin tone, gender, etc.) have not been clustered or linked to prototypes.
+**What exists today:** The skeleton is complete. Phase 1 tooling (`scripts/collapse-variants.ts`, `src/variant-cluster.ts`) clusters variant rows and propagates `literal` from prototypes. Run `npm run collapse-variants report` to audit clusters; after glossing a prototype row in Phase 2, run `npm run fill-literals` (alias for `collapse-variants propagate`) to fan out to variants. The 490 Objects/Symbols scripted literals from an earlier mistaken auto-fill remain as discardable drafts until re-glossed. No `keep` values are set.
 
 ---
 
@@ -115,11 +115,11 @@ emojis.csv  →  lexicon.csv (skeleton)          ✓ done
 
 **Goal:** Near-duplicate rows share one `literal` before or as glossing proceeds. Reduce redundant judgment.
 
-**Script-assisted.** `npm run fill-literals` (or a dedicated collapse script) may:
+**Script-assisted.** `npm run collapse-variants` clusters rows; `npm run fill-literals` propagates prototype literals to variants:
 
-- Strip skin-tone, hair-style, and gender modifiers from `name` for clustering.
-- Identify the **prototype** row per cluster (unqualified / default presentation).
-- Copy a prototype's `literal` to its variant rows once the prototype is glossed.
+- `npm run collapse-variants report` — cluster stats; `--verbose` lists all multi-member clusters.
+- `npm run collapse-variants propagate` — copy prototype `literal` to variant rows (empty members only).
+- `npm run fill-literals` — same as `propagate` (backward-compatible alias).
 
 **Collapse rules:**
 
@@ -260,7 +260,8 @@ No `metaphorical` column yet. Add it when metaphors are in scope.
 
 | Script | Role |
 |--------|------|
-| `scripts/fill-literals.ts` | **Collapse / propagate only** — not authoritative glossing. Do not trust its output for Tier B. |
+| `scripts/collapse-variants.ts` | Phase 1: cluster report + propagate prototype `literal` to variants (`report` / `propagate`) |
+| `scripts/fill-literals.ts` | Alias for `collapse-variants propagate` — run after glossing prototype rows |
 | Lexicon converter (to be wired) | Phase 4: `literal` → `clarity` for `keep=y` rows |
 
 Manual editing in `data/lexicon.csv` is the source of truth for `literal`. Treat `docs/language-reference.md` as grammar/phonology authority; this doc owns lexicon process only.
@@ -275,4 +276,4 @@ Manual editing in `data/lexicon.csv` is the source of truth for `literal`. Treat
 
 ## Immediate deliverable
 
-**Next:** Phase 1 — build or repurpose tooling to cluster variant rows and propagate `literal` from prototypes. Then Phase 2 on **Symbols** (meaning-first gloss + batch-drop Japanese ideograph buttons). Clear or ignore the 490 scripted Objects/Symbols drafts when re-glossing.
+**Next:** Phase 2 on **Symbols** (meaning-first gloss + batch-drop Japanese ideograph buttons). Gloss prototype rows per cluster, then `npm run fill-literals` to propagate. Clear or ignore the 490 scripted Objects/Symbols drafts when re-glossing.
