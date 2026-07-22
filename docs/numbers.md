@@ -22,24 +22,24 @@ A whole numeric value is **one word**, even when it contains several digit group
 
 ## Parts of speech on numbers
 
-The number word takes whichever PoS prefix the clause slot needs. The stem (marker + digits + ending) does not change.
+The number word takes whichever PoS prefix the role needs (clause slot, interjection, or discourse glue). The stem (marker + digits + ending) does not change.
 
 | Prefix | Role with a number |
 |--------|--------------------|
-| `/ɡ/` | **Modifier** — the number describes the preceding noun (*three cats*, *the second page*). Goes after the noun, like other adjectives. |
+| `/ɡ/` | **modifier** — the number describes the preceding noun (*three cats*, *the second page*). Goes after the noun, like other adjectives. |
 | `/z/` | **subject** — the numeric value (or digit-string / rank) is the subject. |
 | `/d/` | **direct object** — the number is the object (common for digit-strings / codes being dialed, entered, stated). |
 | `/b/` | **argument noun** — the number fills the `/b/` slot of a complex adjective or adverb (*at 3*, *of size 12*, …). |
 | `/v/` | **verb** — the number is the clause’s action; sense depends on the [marker vowel](#number-as-verb-by-marker). Not multiply/divide by N (use ordinary *multiply* / *divide* plus the number as `/h/`). |
 | `/h/` | **adverb** — the number modifies the verb/clause: *N times*, factors (*multiply by three*), clock/time readings, and similar. |
 | `/j/` | **interjection** — a bare shouted or exclaimed number with no clause (*Three!*, bingo call-outs, countdown beats). Vocative/interjection rules in the [utterance-marker section](language-reference.md#utterance-markers-j) still apply (left-edge cluster only, or bare utterance). |
+| `/x/` | **discourse marker** — numbered list / enumeration glue; sense depends on the [marker vowel](#number-as-discourse-marker-by-marker). Does **not** fill a clause slot (same class as other `/x/` linkers). |
 
 **Not valid with numbers:**
 
 - **`/w/` (adjective adjunct)** — numbers do not take `/w/`, and a `/ɡ/` number is not a host for `/w/` grading or framing. Degree and “aboutness” of a quantity use [number endings](#number-endings) (especially **-m** for approximate), not `/w/`.
-- **`/x/`** — discourse markers are not number words.
 
-Digit-strings (`re`…) usually take the argument role the clause needs (often `/d/`). Ordinals that modify a noun use `/ɡ/`; an ordinal used as a standalone rank uses `/z/`, `/d/`, or `/b/` as appropriate.
+Digit-strings (`re`…) usually take the argument role the clause needs (often `/d/`). Ordinals that modify a noun use `/ɡ/`; an ordinal used as a standalone rank uses `/z/`, `/d/`, or `/b/` as appropriate. Discourse *firstly / secondly* uses `/x/` + **`ro`**, not `/ɡ/`.
 
 ### Number as verb (by marker)
 
@@ -55,6 +55,28 @@ Digit-strings (`re`…) usually take the argument role the clause needs (often `
 “Set to N” (bring a quantity to an absolute value) is not a number-verb sense — use an ordinary verb plus the number as argument or adverb. Multiply/divide likewise stay ordinary verbs plus the number as `/h/`. With [percentage points](#percent-and-percentage-points) (**`ju`**), **`ra`** / **`ru`** as verbs mean increase/decrease by that point amount (not a relative %-change factor).
 
 Endings still apply (**-m** ≈ *about* that amount/code/rank, **-r** resume, etc.).
+
+### Number as discourse marker (by marker)
+
+`/x/` + number is discourse glue for lists and numbered references — parallel to the `/v/` senses at discourse scale. It does **not** occupy a main-clause argument or adjunct slot (contrast `/ɡ/` *the second page*, `/h/` *three times*, `/j/` *Three!*).
+
+| Marker | Writing | Discourse sense |
+|--------|---------|-----------------|
+| **`ro`** | `x#Nl` | **Discourse ordinal** — step N in the current spoken list (*firstly, secondly, thirdly*). |
+| **`ra`** | `x+Nl` | **Open / add point N** — introduce or label a numbered point or bullet (*point N:; (N)*). |
+| **`ru`** | `x-Nl` | **Withdraw / skip point N** — retract, defer, or mark “not counting N” (*scratch N; skipping N*). |
+| **`re`** | `x_…l` | **Cite a discourse label** — agenda item, section code, slide, ticket id (digits as label, not rank) (*re item 12; under 3.2*). |
+
+**`#`** vs **`+`:** use **`ro`** / **`#`** for adverbial list connectives (*Nth-ly*); use **`ra`** / **`+`** for numbered headings or bullet labels (*Point N:*). Do not collapse them.
+
+Contrasts:
+
+- `g#2l` — *the second* (modifies a noun)
+- `x#2l` — *secondly* (discourse linker)
+- `j+3l` — *Three!* (interjection shout)
+- `x+3l` — *point 3:* (discourse heading)
+
+Endings still apply (**-l** newly stated point, **-r** *as in (N) above*, **-n** titled section / official item name, **-m** fuzzy *around point N*). Percent / percentage-point closers are not used with `/x/` numbers.
 
 ## Marker vowel
 
@@ -234,6 +256,11 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 | 100% | `g+100%l` | *grawozozojol* (`ra` + wo zo zo **jo**; normal mantissa digits) |
 | +2 pp | `g+2%*l` | *gradujul* (`ra` + du **ju`) |
 | about −1.5 pp | `g-1.5%*m` | *gruwojevajum* (`ru` + wo **je** va **ju** + `m`) |
+| firstly / secondly | `x#1l`, `x#2l` | *xrowol*, *xrodul* (`x` + `ro` + …) |
+| point 3: (heading) | `x+3l` | *xrarel* (`x` + `ra` + re) |
+| skipping 2 | `x-2l` | *xrudul* (`x` + `ru` + du) |
+| re agenda 12 | `x_12l` | *xrewodul* (`x` + `re` + wo du) |
+| as in (2) above | `x#2r` | *xrodur* (ending **-r**) |
 
 In a sentence, the PoS attaches to that single number word (see [Parts of speech on numbers](#parts-of-speech-on-numbers); e.g. direct-object digit-string: `d_…l`). Prefer naming the whole with a `/ɡ/` **`jo`** percent (denominator patterns TBD).
 

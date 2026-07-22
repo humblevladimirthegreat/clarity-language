@@ -162,7 +162,9 @@ Marked with x /ʒ/. Used for **conjunctions** (*and* / *or* / *but*, etc.) and *
 
 `/x/` connects or fences discourse; it does **not** carry evidential or epistemic framing of the claim. Softeners that encode source-of-knowledge or claim strength stay `/h/` or `/w/` (see [Adverbs](#adverbs-h)). Contrast: *however* / *in other words* → `/x/`; *apparently* / *allegedly* → `/h/` or `/w/`.
 
-**Not `/x/`:** English-style subordinators that relate a following clause to a slot in the main clause (*if*, *because*, *although*, *while*, *until*) — those use the [next-clause pronoun](#dependent-clauses) plus a lexicon relation (usually `/h/` + `/b/`), not a discourse-marker prefix. `/x/` sentence linkers (*therefore*, *however*, *meanwhile*) do not fill a main-clause argument or adjunct slot.
+**Numbered list / enumeration markers** are `/x/` + [number word](numbers.md#number-as-discourse-marker-by-marker) (*firstly*, *point 3:*, *skipping 2*, *re item 12*). Marker vowel chooses the discourse sense; details live in numbers.md.
+
+**Not `/x/`:** English-style subordinators that relate a following clause to a slot in the main clause (*if*, *because*, *although*, *while*, *until*) — those use the [next-clause pronoun](#dependent-clauses) plus a lexicon relation (usually `/h/` + `/b/`), not a discourse-marker prefix. `/x/` sentence linkers (*therefore*, *however*, *meanwhile*) and number enumeration markers do not fill a main-clause argument or adjunct slot.
 
 ## Dependent Clauses
 
@@ -173,7 +175,7 @@ The next-clause pronoun takes whatever PoS prefix the slot needs:
 * **Complement / content clause** — usually a core argument. Example: *I told him that…* → next-clause as direct object (`/d/`) of *tell* (or another role the verb requires).
 * **Adverbial relation** (*because*, *if*, *although*, *while*, *until*, …) — a complex adverb: `/h/` relation word + `/b/` next-clause pronoun. The lexicon entry names the relation; there is **no** separate `/x/` subordinator for these.
 
-`/x/` is only for discourse glue that does **not** occupy a main-clause slot (coordinators, sentence linkers, quote/aside fences). Do not encode *because* / *if*-style subordination as `/x/`.
+`/x/` is only for discourse glue that does **not** occupy a main-clause slot (coordinators, sentence linkers, quote/aside fences, [numbered enumeration](numbers.md#number-as-discourse-marker-by-marker)). Do not encode *because* / *if*-style subordination as `/x/`.
 
 ## Quotations
 
@@ -228,7 +230,7 @@ Forms TBD. Roles:
 
 # Numbers
 
-Numeral grammar (digit roots, engineering/scientific forms, ordinals, digit-strings, number-word shape) lives in **[numbers.md](numbers.md)**.
+Numeral grammar (digit roots, engineering/scientific forms, ordinals, digit-strings, `/x/` enumeration, number-word shape) lives in **[numbers.md](numbers.md)**.
 
 # Phonology and Phonotactics
 
@@ -276,4 +278,4 @@ b) All words end with a lexical ending (**-l**, **-m**, **-n**, or **-r**), opti
 
 c) Easy to tell the components of a compound word because **x** separates them. Mid-word **x** is only the compound joiner (never part of a root); word-initial **x** is the discourse-marker prefix.
 
-d) **Number-word exception:** After a PoS prefix, a following **r** (start of the number marker) may form a cluster that is not otherwise allowed (e.g. `/ɡ/`+`r`, `/z/`+`r`, `/v/`+`r`, `/h/`+`r`, `/j/`+`r`). That cluster is legal **only** in [number words](numbers.md); it is not a global expansion of the onset-cluster list above. Number stems are a closed formal grammar and must not be assigned as ordinary lexicon roots.
+d) **Number-word exception:** After a PoS prefix, a following **r** (start of the number marker) may form a cluster that is not otherwise allowed (e.g. `/ɡ/`+`r`, `/z/`+`r`, `/v/`+`r`, `/h/`+`r`, `/j/`+`r`, `/x/`+`r`). That cluster is legal **only** in [number words](numbers.md); it is not a global expansion of the onset-cluster list above. Number stems are a closed formal grammar and must not be assigned as ordinary lexicon roots.
