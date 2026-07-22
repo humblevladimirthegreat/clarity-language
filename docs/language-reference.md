@@ -63,7 +63,7 @@ The goal of r/claritylanguage is to help foster compassion, rationality, and emp
 
 Parts of speech are determined by a prefix consonant added before each word. Words do not change form based on usage, and can be used in most parts of speech, so the prefix is how you know a word's role.
 
-Every sentence begins with an **utterance-frame** `/j/` cluster that includes **clause force** (see [Utterance markers](#utterance-markers-j)); that fixed left edge is how sentence boundaries stay clear under free word order. After that opener, the standard order is Subject \- Direct Object \- Verb. Order of those core roles can change for stylistic reasons (including **focus**), or due to certain constructs like dependent clauses. Adjectives (`/w/`) go after what they modify. Adverbs (`/h/`) may appear anywhere in the clause (see below).
+Every sentence begins with an **utterance-frame** `/j/` cluster that includes **clause force** (see [Utterance markers](#utterance-markers-j)); that fixed left edge is how sentence boundaries stay clear under free word order. After that opener, the standard order is Subject \- Direct Object \- Verb. Order of those core roles can change for stylistic reasons (including **focus**), or due to certain constructs like dependent clauses. Adjectives (`/ɡ/`) go after what they modify. Adverbs (`/h/`) may appear anywhere in the clause (see below).
 
 ## Part-of-speech prefixes
 
@@ -73,8 +73,8 @@ Every sentence begins with an **utterance-frame** `/j/` cluster that includes **
 | /d/ | direct object (noun) |
 | /b/ | argument noun (of a complex adjective or adverb) |
 | /v/ | verb |
-| /w/ | adjective |
-| /ɡ/ | adjective adjunct (modifies the previous `/w/`) |
+| /ɡ/ | adjective |
+| /w/ | adjective adjunct (modifies the previous `/ɡ/`) |
 | /h/ | adverb (mood / tense / evidentiality, adjuncts) |
 | x /ʒ/ | discourse marker (conjunctions, quotation markers) |
 | j /dʑ/ | utterance marker (clause force, vocative, interjection) |
@@ -89,17 +89,17 @@ Subject (/z/) \- the thing doing the action
 Direct Object (/d/) \- the thing on the receiving end of the action  
 Verb (/v/) \- the action being done
 
-## Adjectives (`/w/`)
+## Adjectives (`/ɡ/`)
 
-`/w/` marks **adjectives** (and noun-level relational phrases). They go **after** the word they modify.
+`/ɡ/` marks **adjectives** (and noun-level relational phrases). They go **after** the word they modify.
 
-## Adjective adjuncts (`/ɡ/`)
+## Adjective adjuncts (`/w/`)
 
-`/ɡ/` marks a word that **modifies the previous adjective** (`/w/` unit). It does not modify the verb or the noun directly. Use it for degree (*very*, *slightly*) and for tense/mood/evidentiality scoped only to that property (*former* / *recent*, *alleged*, and the same mood roots as `/h/` when the framing applies just to the adjective).
+`/w/` marks a word that **modifies the previous adjective** (`/ɡ/` unit). It does not modify the verb or the noun directly. Use it for degree (*very*, *slightly*) and for tense/mood/evidentiality scoped only to that property (*former* / *recent*, *alleged*, and the same mood roots as `/h/` when the framing applies just to the adjective).
 
-The `/ɡ/` word sits on its host: normally immediately after the `/w/` (or after that `/w/`’s contiguous `/b/` argument if the adjective is complex). Unlike `/h/`, `/ɡ/` does **not** float. Several `/ɡ/` words may stack on one `/w/` (`w-happy g-recent g-very`); each applies to that same adjective. `/ɡ/` words are typically simple (no `/b/` argument); if a relation needs an argument, use a complex adjective (`/w/` + `/b/`) instead.
+The `/w/` word sits on its host: normally immediately after the `/ɡ/` (or after that `/ɡ/`’s contiguous `/b/` argument if the adjective is complex). Unlike `/h/`, `/w/` does **not** float. Several `/w/` words may stack on one `/ɡ/` (`g-happy w-recent w-very`); each applies to that same adjective. `/w/` words are typically simple (no `/b/` argument); if a relation needs an argument, use a complex adjective (`/ɡ/` + `/b/`) instead.
 
-Same root, different prefix → different scope: `/h/` frames the clause; `/ɡ/` frames only the preceding adjective.
+Same root, different prefix → different scope: `/h/` frames the clause; `/w/` frames only the preceding adjective.
 
 ## Adverbs (`/h/`)
 
@@ -109,7 +109,7 @@ Because `/h/` always targets the clause’s verb, **position is free within the 
 
 **Topic** (*as for X*, *regarding X*) is a complex adverb: `/h/` + `/b/` topic noun (lexicon role: aboutness). There are **no dedicated focus markers**; highlight by rearranging free word order (and ordinary intensifiers like *only* / *especially* if needed). Topic/focus are not `/x/` discourse markers.
 
-English-looking **epistemic hedges** that really mark how you know or how strong the claim is (*apparently*, *supposedly*, *allegedly*, *maybe*, *perhaps*) are **mood/evidentiality**, not discourse markers: use `/h/` for the whole clause, or `/ɡ/` when the framing applies only to the preceding adjective (e.g. *alleged*). Do not put them under `/x/`.
+English-looking **epistemic hedges** that really mark how you know or how strong the claim is (*apparently*, *supposedly*, *allegedly*, *maybe*, *perhaps*) are **mood/evidentiality**, not discourse markers: use `/h/` for the whole clause, or `/w/` when the framing applies only to the preceding adjective (e.g. *alleged*). Do not put them under `/x/`.
 
 There is **no fixed scope-band order** among multiple `/h/` units. Each adverb’s contribution (mood/evidential, time/place/recipient adjunct, manner, and so on) comes from its **lexicon role**; spoken order is free for style and does not reorder those roles. If two units of the same role need a relative ranking, left-to-right in the spoken order breaks the tie.
 
@@ -117,12 +117,12 @@ There is **no fixed scope-band order** among multiple `/h/` units. Each adverb�
 
 A **complex adjective** or **complex adverb** takes an extra participant: the adjective or adverb word plus an **argument noun** (`/b/`). The argument immediately follows the adjective or adverb. That word carries the relation; `/b/` only marks “argument of that adjective or adverb” (the dictionary entry says how it relates to the host).
 
-- **Complex adjectives** use `/w/` + `/b/` (e.g. possessive owner, “book *on* the table”).
+- **Complex adjectives** use `/ɡ/` + `/b/` (e.g. possessive owner, “book *on* the table”).
 - **Complex adverbs** use `/h/` + `/b/` (e.g. recipient *to*, “happened *at*”, topic *regarding*, adverbial subordination *because* / *if* with the [next-clause pronoun](#dependent-clauses) as `/b/`). The `/h/` + `/b/` pair is one unit and **stays contiguous** even when that unit floats.
 
 Example (recipient): `/h/` *to* + `/b/` recipient may sit anywhere in the clause as a pair. Example (topic): `/h/` *regarding* + `/b/` topic noun likewise floats as a pair. Example (cause): `/h/` *because* + `/b/` next-clause pronoun, with the reason sentence last.
 
-After a complex adjective or adverb, the argument is the new noun for further adjective modification: a simple `/w/` after `/b/` describes the argument, not the original host. `/ɡ/` after a `/w/` (+ optional `/b/`) grades or frames that adjective, not the noun. You can chain by having a complex adjective or adverb modify another complex adjective/adverb or its argument. You can’t have two complex adjectives affect the same noun; if you need that, describe the noun further in a separate sentence. Multiple `/h/` units on the same verb are allowed (each simple `/h/` or contiguous `/h/`+`/b/` counts as one unit); each unit’s role is read from the lexicon as above.
+After a complex adjective or adverb, the argument is the new noun for further adjective modification: a simple `/ɡ/` after `/b/` describes the argument, not the original host. `/w/` after a `/ɡ/` (+ optional `/b/`) grades or frames that adjective, not the noun. You can chain by having a complex adjective or adverb modify another complex adjective/adverb or its argument. You can’t have two complex adjectives affect the same noun; if you need that, describe the noun further in a separate sentence. Multiple `/h/` units on the same verb are allowed (each simple `/h/` or contiguous `/h/`+`/b/` counts as one unit); each unit’s role is read from the lexicon as above.
 
 Complex adjectives and adverbs cover what would be prepositional phrases in other languages. A verb used as a complex adverb with a `/b/` argument can form a simple dependent-clause-like adjunct (the `/b/` argument is the clause’s subject-like participant).
 
@@ -160,7 +160,7 @@ Content questions (*who* / *what* / *where*) use the [interrogative special pron
 
 Marked with x /ʒ/. Used for **conjunctions** (*and* / *or* / *but*, etc.) and **quotation markers** (see below). The dictionary lists the specific forms. The same sound **x** also joins roots inside compound words (see Phonotactics); it is not used as an ordinary root consonant, so mid-word **x** always means “next root,” and word-initial **x** always means discourse marker.
 
-`/x/` connects or fences discourse; it does **not** carry evidential or epistemic framing of the claim. Softeners that encode source-of-knowledge or claim strength stay `/h/` or `/ɡ/` (see [Adverbs](#adverbs-h)). Contrast: *however* / *in other words* → `/x/`; *apparently* / *allegedly* → `/h/` or `/ɡ/`.
+`/x/` connects or fences discourse; it does **not** carry evidential or epistemic framing of the claim. Softeners that encode source-of-knowledge or claim strength stay `/h/` or `/w/` (see [Adverbs](#adverbs-h)). Contrast: *however* / *in other words* → `/x/`; *apparently* / *allegedly* → `/h/` or `/w/`.
 
 **Not `/x/`:** English-style subordinators that relate a following clause to a slot in the main clause (*if*, *because*, *although*, *while*, *until*) — those use the [next-clause pronoun](#dependent-clauses) plus a lexicon relation (usually `/h/` + `/b/`), not a discourse-marker prefix. `/x/` sentence linkers (*therefore*, *however*, *meanwhile*) do not fill a main-clause argument or adjunct slot.
 
@@ -276,4 +276,4 @@ b) All words end with a lexical ending (**-l**, **-m**, **-n**, or **-r**), opti
 
 c) Easy to tell the components of a compound word because **x** separates them. Mid-word **x** is only the compound joiner (never part of a root); word-initial **x** is the discourse-marker prefix.
 
-d) **Number-word exception:** After a PoS prefix, a following **r** (start of the number marker) may form a cluster that is not otherwise allowed (e.g. `/w/`+`r`, `/z/`+`r`, `/v/`+`r`, `/h/`+`r`). That cluster is legal **only** in [number words](numbers.md); it is not a global expansion of the onset-cluster list above. Number stems are a closed formal grammar and must not be assigned as ordinary lexicon roots.
+d) **Number-word exception:** After a PoS prefix, a following **r** (start of the number marker) may form a cluster that is not otherwise allowed (e.g. `/ɡ/`+`r`, `/z/`+`r`, `/v/`+`r`, `/h/`+`r`). That cluster is legal **only** in [number words](numbers.md); it is not a global expansion of the onset-cluster list above. Number stems are a closed formal grammar and must not be assigned as ordinary lexicon roots.

@@ -14,7 +14,7 @@ A root dictionary where each kept entry has (in `data/lexicon-published.csv`):
 | metaphorical | At most one figurative English gloss (Phase 5) |
 | mnemonic | Short cue linking `literal` → `metaphorical`; `REVIEW` if no good link |
 
-Entries are **roots** only. Part-of-speech prefixes (`/z/`, `/v/`, `/w/`, …) and lexical endings (`-l`, `-m`, …) are applied at use time; this file does not list PoS variants or usage notes.
+Entries are **roots** only. Part-of-speech prefixes (`/z/`, `/v/`, `/ɡ/`, …) and lexical endings (`-l`, `-m`, …) are applied at use time; this file does not list PoS variants or usage notes.
 
 Psychological / Claritish vocabulary goals are out of scope for this lexicon pass.
 

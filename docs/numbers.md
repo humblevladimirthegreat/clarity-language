@@ -10,7 +10,7 @@ A whole numeric value is **one word**, even when it contains several digit group
 [PoS] + r + V + ( [exponent?] [mantissa digits?] )+ + [ending] + [z?]
 ```
 
-1. **PoS** — same prefixes as elsewhere. Use `/w/` when the number modifies a noun; use `/z/`, `/d/`, or `/b/` when the number is itself an argument. Digit-strings usually take the role the clause needs (often `/d/`).
+1. **PoS** — same prefixes as elsewhere. Use `/ɡ/` when the number modifies a noun; use `/z/`, `/d/`, or `/b/` when the number is itself an argument. Digit-strings usually take the role the clause needs (often `/d/`).
 2. **Number marker** — consonant **r** plus a vowel **V** (see [Marker vowel](#marker-vowel)). The PoS+`r` cluster is a [number-only phonotactic exception](language-reference.md#phonotactics).
 3. **One or more digit groups** — each group is an optional exponent and optional mantissa digits (at least one of the two). Digits compound with **no** **x** separator. There is **no per-group polarity**; sign (when it applies) is on the marker vowel for the whole word.
 4. **Ending** — `-l` / `-m` / `-n` / `-r` with [number-specific meanings](#number-endings).
@@ -104,18 +104,18 @@ Digits below use the table above; glosses show structure, not stress detail.
 
 | Value | Speech sketch (exact `-l` unless noted) |
 |-------|----------------------------------------|
-| 3 | *wrarel* (`w` + `ra` + re + `l`) |
-| −3 | *wrurel* (`w` + `ru` + re + `l`) |
-| 139 | *wraworenal* (`ra` + wo re na) |
-| 27e12 | *wrabawodujadulel* (`ra` + ba wo du **ja** + du le) |
-| e9 (bare) | *wrabanal* (`ra` + ba na; **no** `ja`) |
-| 50e-6 | *wrabugujavazol* (`ra` + bu gu **ja** + va zo) |
-| −1e9 −265e3 −4 | *wrubanajawobarejaduguvamol* — **`ru`**; groups: ba na **ja** wo · ba re **ja** du gu va · mo |
-| $5860.04 → 5e3 + 860 + 4e-2 | *wrabarejavahaguzobudujamol* — ba re **ja** va · ha gu zo · bu du **ja** mo |
-| 2nd (`2#`) | *wrodul*; title-like *the Second…* may take **-n** (*wrodun*) |
-| about 27e6 | *wrabagujadulem* (ba gu **ja** du le, ending **-m**) |
+| 3 | *grarel* (`g` + `ra` + re + `l`) |
+| −3 | *grurel* (`g` + `ru` + re + `l`) |
+| 139 | *graworenal* (`ra` + wo re na) |
+| 27e12 | *grabawodujadulel* (`ra` + ba wo du **ja** + du le) |
+| e9 (bare) | *grabanal* (`ra` + ba na; **no** `ja`) |
+| 50e-6 | *grabugujavazol* (`ra` + bu gu **ja** + va zo) |
+| −1e9 −265e3 −4 | *grubanajawobarejaduguvamol* — **`ru`**; groups: ba na **ja** wo · ba re **ja** du gu va · mo |
+| $5860.04 → 5e3 + 860 + 4e-2 | *grabarejavahaguzobudujamol* — ba re **ja** va · ha gu zo · bu du **ja** mo |
+| 2nd (`2#`) | *grodul*; title-like *the Second…* may take **-n** (*grodun*) |
+| about 27e6 | *grabagujadulem* (ba gu **ja** du le, ending **-m**) |
 | phone 555-123-4567 | *drevavavawoduremovagulel* (`d` + `re` + va×3 · wo du re · mo va gu · le + `l`) |
-| scientific 5.2487083e-4 | *wrabumojavajedumohalezoharel* (`ra` + bu mo **ja** + va **je** + du mo ha · le zo ha · re) |
+| scientific 5.2487083e-4 | *grabumojavajedumohalezoharel* (`ra` + bu mo **ja** + va **je** + du mo ha · le zo ha · re) |
 
 In a sentence, the PoS attaches to that single number word (e.g. direct-object digit-string: `/d/` + `re` + … + ending).
 
