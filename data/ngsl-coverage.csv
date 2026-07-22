@@ -1,126 +1,190 @@
 lemma,status,emoji,literal,clarity,source,notes
-there,redundant,,,,lemma-map,→ place
-more,redundant,,,,lemma-map,→ increase
-when,redundant,,,,lemma-map,→ now
-some,redundant,,,,lemma-map,→ different
-then,redundant,,,,lemma-map,→ now
-any,redundant,,,,lemma-map,→ different
-where,redundant,,,,lemma-map,→ place
-most,redundant,,,,lemma-map,→ lot
-much,redundant,,,,lemma-map,→ lot
-how,redundant,,,,lemma-map,→ way
+other,redundant,,,,lemma-map,→ choose
+first,redundant,,,,lemma-map,→ win
 mean,redundant,,,,lemma-map,→ idea
-here,redundant,,,,lemma-map,→ place
-many,redundant,,,,lemma-map,→ lot
-through,redundant,,,,lemma-map,→ leave
+last,redundant,,,,lemma-map,→ end
+really,redundant,,,,lemma-map,→ important
 meet,redundant,,,,lemma-map,→ agree
-another,redundant,,,,lemma-map,→ add
+talk,redundant,,,,lemma-map,→ say
+put,redundant,,,,lemma-map,→ submit
 country,redundant,,,,lemma-map,→ world
 live,redundant,,,,lemma-map,→ life
 week,redundant,,,,lemma-map,→ year
 include,redundant,,,,lemma-map,→ add
+course,redundant,,,,lemma-map,→ learn
+report,redundant,,,,lemma-map,→ news
 group,redundant,,,,lemma-map,→ people
+case,redundant,,,,lemma-map,→ document
+let,redundant,,,,lemma-map,→ open
+keep,redundant,,,,lemma-map,→ safe
 system,redundant,,,,lemma-map,→ use
-every,redundant,,,,lemma-map,→ all
-always,redundant,,,,lemma-map,→ all
+question,redundant,,,,lemma-map,→ ask
+big,redundant,,,,lemma-map,→ large
+study,redundant,,,,lemma-map,→ learn
+begin,redundant,,,,lemma-map,→ start
+since,redundant,,,,lemma-map,→ wait
 turn,redundant,,,,lemma-map,→ change
 bring,redundant,,,,lemma-map,→ get
+early,redundant,,,,lemma-map,→ morning
 state,redundant,,,,lemma-map,→ government
-however,redundant,,,,lemma-map,→ different
+area,redundant,,,,lemma-map,→ map
+provide,redundant,,,,lemma-map,→ give
 month,redundant,,,,lemma-map,→ year
 business,redundant,,,,lemma-map,→ work
-without,redundant,,,,lemma-map,→ never
 issue,redundant,,,,lemma-map,→ problem
+market,redundant,,,,lemma-map,→ buy
 pay,redundant,,,,lemma-map,→ spend
+build,redundant,,,,lemma-map,→ make
+hold,redundant,,,,lemma-map,→ take
+second,redundant,,,,lemma-map,→ two
 job,redundant,,,,lemma-map,→ work
+away,redundant,,,,lemma-map,→ travel
+example,redundant,,,,lemma-map,→ solution
+offer,redundant,,,,lemma-map,→ give
+close,redundant,,,,lemma-map,→ safe
+program,redundant,,,,lemma-map,→ computer
+lead,redundant,,,,lemma-map,→ leader
 understand,redundant,,,,lemma-map,→ know
-thank,redundant,,,,lemma-map,→ thanks
+far,redundant,,,,lemma-map,→ space
 today,redundant,,,,lemma-map,→ year
 hour,redundant,,,,lemma-map,→ now
+face,redundant,,,,lemma-map,→ happy
+hope,redundant,,,,lemma-map,→ want
 cost,redundant,,,,lemma-map,→ price
+room,redundant,,,,lemma-map,→ comfortable
 reason,redundant,,,,lemma-map,→ know
 head,redundant,,,,lemma-map,→ who
 level,redundant,,,,lemma-map,→ score
-enough,redundant,,,,lemma-map,→ sure
+member,redundant,,,,lemma-map,→ identify
 able,redundant,,,,lemma-map,→ strong
+support,redundant,,,,lemma-map,→ help
+line,redundant,,,,lemma-map,→ paper
+present,redundant,,,,lemma-map,→ give
 side,redundant,,,,lemma-map,→ between
-quite,redundant,,,,lemma-map,→ lot
+term,redundant,,,,lemma-map,→ note
 least,redundant,,,,lemma-map,→ calculate
-within,redundant,,,,lemma-map,→ leave
+age,redundant,,,,lemma-map,→ cake
+speak,redundant,,,,lemma-map,→ say
 process,redundant,,,,lemma-map,→ use
 public,redundant,,,,lemma-map,→ people
 possible,redundant,,,,lemma-map,→ maybe
 actually,redundant,,,,lemma-map,→ true
-rather,redundant,,,,lemma-map,→ different
+view,redundant,,,,lemma-map,→ see
+together,redundant,,,,lemma-map,→ friend
 consider,redundant,,,,lemma-map,→ idea
 local,redundant,,,,lemma-map,→ place
 control,redundant,,,,lemma-map,→ use
 concern,redundant,,,,lemma-map,→ worry
-almost,redundant,,,,lemma-map,→ place
-whole,redundant,,,,lemma-map,→ all
+product,redundant,,,,lemma-map,→ tool
+lose,redundant,,,,lemma-map,→ fail
+continue,redundant,,,,lemma-map,→ fast
 rate,redundant,,,,lemma-map,→ score
+expect,redundant,,,,lemma-map,→ wait
 effect,redundant,,,,lemma-map,→ happen
 sort,redundant,,,,lemma-map,→ different
 ever,redundant,,,,lemma-map,→ all
 cause,redundant,,,,lemma-map,→ connect
+fall,redundant,,,,lemma-map,→ fail
 deal,redundant,,,,lemma-map,→ agree
+allow,redundant,,,,lemma-map,→ open
+soon,redundant,,,,lemma-map,→ fast
+base,redundant,,,,lemma-map,→ wall
 probably,redundant,,,,lemma-map,→ maybe
-past,redundant,,,,lemma-map,→ now
+suggest,redundant,,,,lemma-map,→ solution
+center,redundant,,,,lemma-map,→ target
 grow,redundant,,,,lemma-map,→ life
+mother,redundant,,,,lemma-map,→ lady
+walk,redundant,,,,lemma-map,→ go
 matter,redundant,,,,lemma-map,→ law
 mind,redundant,,,,lemma-map,→ know
 force,redundant,,,,lemma-map,→ strong
+light,redundant,,,,lemma-map,→ traffic
 develop,redundant,,,,lemma-map,→ life
 remember,redundant,,,,lemma-map,→ know
 bit,redundant,,,,lemma-map,→ part
 share,redundant,,,,lemma-map,→ agree
 real,redundant,,,,lemma-map,→ true
 figure,redundant,,,,lemma-map,→ calculate
+letter,redundant,,,,lemma-map,→ word
 decide,redundant,,,,lemma-map,→ know
+language,redundant,,,,lemma-map,→ word
+subject,redundant,,,,lemma-map,→ learn
+class,redundant,,,,lemma-map,→ lesson
 development,redundant,,,,lemma-map,→ life
-future,redundant,,,,lemma-map,→ maybe
+town,redundant,,,,lemma-map,→ city
+minute,redundant,,,,lemma-map,→ moment
 ago,redundant,,,,lemma-map,→ now
-among,redundant,,,,lemma-map,→ people
+remain,redundant,,,,lemma-map,→ harbor
+color,redundant,,,,lemma-map,→ art
+involve,redundant,,,,lemma-map,→ join
+reach,redundant,,,,lemma-map,→ come
 social,redundant,,,,lemma-map,→ people
 period,redundant,,,,lemma-map,→ year
+history,redundant,,,,lemma-map,→ story
+create,redundant,,,,lemma-map,→ make
+sound,redundant,,,,lemma-map,→ loud
+political,redundant,,,,lemma-map,→ vote
 receive,redundant,,,,lemma-map,→ get
+policy,redundant,,,,lemma-map,→ story
+further,redundant,,,,lemma-map,→ fast
+body,redundant,,,,lemma-map,→ someone
+require,redundant,,,,lemma-map,→ need
 general,redundant,,,,lemma-map,→ world
+appear,redundant,,,,lemma-map,→ seem
 team,redundant,,,,lemma-map,→ people
+individual,redundant,,,,lemma-map,→ someone
 full,redundant,,,,lemma-map,→ lot
-perhaps,redundant,,,,lemma-map,→ maybe
+sense,redundant,,,,lemma-map,→ feel
+rule,redundant,,,,lemma-map,→ story
+produce,redundant,,,,lemma-map,→ make
 short,redundant,,,,lemma-map,→ long
-everything,redundant,,,,lemma-map,→ all
+research,redundant,,,,lemma-map,→ test
+cover,redundant,,,,lemma-map,→ protect
 position,redundant,,,,lemma-map,→ place
 near,redundant,,,,lemma-map,→ place
 situation,redundant,,,,lemma-map,→ worry
+staff,redundant,,,,lemma-map,→ worker
 activity,redundant,,,,lemma-map,→ run
+shop,redundant,,,,lemma-map,→ buy
 major,redundant,,,,lemma-map,→ great
+design,redundant,,,,lemma-map,→ art
 event,redundant,,,,lemma-map,→ happen
 special,redundant,,,,lemma-map,→ new
-sometimes,redundant,,,,lemma-map,→ different
+condition,redundant,,,,lemma-map,→ temperature
 carry,redundant,,,,lemma-map,→ get
+father,redundant,,,,lemma-map,→ guy
 decision,redundant,,,,lemma-map,→ know
+table,redundant,,,,lemma-map,→ dinner
 certain,redundant,,,,lemma-map,→ sure
 main,redundant,,,,lemma-map,→ great
+die,redundant,,,,lemma-map,→ death
 describe,redundant,,,,lemma-map,→ tell
 available,redundant,,,,lemma-map,→ sure
 rise,redundant,,,,lemma-map,→ increase
 community,redundant,,,,lemma-map,→ people
-else,redundant,,,,lemma-map,→ different
 role,redundant,,,,lemma-map,→ perform
-please,redundant,,,,lemma-map,→ believe
+difficult,redundant,,,,lemma-map,→ hard
 detail,redundant,,,,lemma-map,→ find
 difference,redundant,,,,lemma-map,→ different
 action,redundant,,,,lemma-map,→ run
-themselves,redundant,,,,lemma-map,→ people
+eat,redundant,,,,lemma-map,→ food
+step,redundant,,,,lemma-map,→ go
 date,redundant,,,,lemma-map,→ year
 practice,redundant,,,,lemma-map,→ plan
+model,redundant,,,,lemma-map,→ machine
+raise,redundant,,,,lemma-map,→ volunteer
+customer,redundant,,,,lemma-map,→ store
+front,redundant,,,,lemma-map,→ ahead
 explain,redundant,,,,lemma-map,→ tell
-outside,redundant,,,,lemma-map,→ leave
 economic,redundant,,,,lemma-map,→ increase
 site,redundant,,,,lemma-map,→ place
+approach,redundant,,,,lemma-map,→ come
 land,redundant,,,,lemma-map,→ world
+charge,redundant,,,,lemma-map,→ payment
+finally,redundant,,,,lemma-map,→ result
+claim,redundant,,,,lemma-map,→ sign
 relationship,redundant,,,,lemma-map,→ connect
+enjoy,redundant,,,,lemma-map,→ happy
 nice,redundant,,,,lemma-map,→ new
 amount,redundant,,,,lemma-map,→ calculate
 improve,redundant,,,,lemma-map,→ increase
@@ -128,82 +192,126 @@ regard,redundant,,,,lemma-map,→ look
 organization,redundant,,,,lemma-map,→ company
 act,redundant,,,,lemma-map,→ run
 range,redundant,,,,lemma-map,→ wide
+quality,redundant,,,,lemma-map,→ value
 project,redundant,,,,lemma-map,→ plan
+round,redundant,,,,lemma-map,→ again
 opportunity,redundant,,,,lemma-map,→ leave
+road,redundant,,,,lemma-map,→ drive
 accord,redundant,,,,lemma-map,→ agree
-therefore,redundant,,,,lemma-map,→ calculate
+wish,redundant,,,,lemma-map,→ want
 fund,redundant,,,,lemma-map,→ money
+kid,redundant,,,,lemma-map,→ young
+education,redundant,,,,lemma-map,→ learn
 measure,redundant,,,,lemma-map,→ long
+kill,redundant,,,,lemma-map,→ death
+serve,redundant,,,,lemma-map,→ service
 likely,redundant,,,,lemma-map,→ maybe
 certainly,redundant,,,,lemma-map,→ sure
 national,redundant,,,,lemma-map,→ government
-itself,redundant,,,,lemma-map,→ use
+security,redundant,,,,lemma-map,→ safe
+benefit,redundant,,,,lemma-map,→ help
 trade,redundant,,,,lemma-map,→ agree
 risk,redundant,,,,lemma-map,→ problem
 standard,redundant,,,,lemma-map,→ long
 percent,redundant,,,,lemma-map,→ score
+focus,redundant,,,,lemma-map,→ target
 stage,redundant,,,,lemma-map,→ perform
 instead,redundant,,,,lemma-map,→ different
 realize,redundant,,,,lemma-map,→ know
+usually,redundant,,,,lemma-map,→ again
+data,redundant,,,,lemma-map,→ fact
+single,redundant,,,,lemma-map,→ one
 performance,redundant,,,,lemma-map,→ perform
+chance,redundant,,,,lemma-map,→ try
 accept,redundant,,,,lemma-map,→ agree
 society,redundant,,,,lemma-map,→ people
+technology,redundant,,,,lemma-map,→ computer
+mention,redundant,,,,lemma-map,→ say
+choice,redundant,,,,lemma-map,→ choose
+save,redundant,,,,lemma-map,→ help
 common,redundant,,,,lemma-map,→ world
 culture,redundant,,,,lemma-map,→ perform
 total,redundant,,,,lemma-map,→ all
 demand,redundant,,,,lemma-map,→ announce
+material,redundant,,,,lemma-map,→ wall
+listen,redundant,,,,lemma-map,→ hear
+due,redundant,,,,lemma-map,→ wait
 effort,redundant,,,,lemma-map,→ strong
 attention,redundant,,,,lemma-map,→ look
-upon,redundant,,,,lemma-map,→ get
+complete,redundant,,,,lemma-map,→ end
 reduce,redundant,,,,lemma-map,→ less
+personal,redundant,,,,lemma-map,→ identify
 ground,redundant,,,,lemma-map,→ world
+arrive,redundant,,,,lemma-map,→ come
 patient,redundant,,,,lemma-map,→ health
+current,redundant,,,,lemma-map,→ power
 century,redundant,,,,lemma-map,→ now
+evidence,redundant,,,,lemma-map,→ fact
 similar,redundant,,,,lemma-map,→ same
 fine,redundant,,,,lemma-map,→ easy
+street,redundant,,,,lemma-map,→ city
 former,redundant,,,,lemma-map,→ now
+contact,redundant,,,,lemma-map,→ call
+wife,redundant,,,,lemma-map,→ lady
 prepare,redundant,,,,lemma-map,→ plan
 discuss,redundant,,,,lemma-map,→ tell
 response,redundant,,,,lemma-map,→ answer
 voice,redundant,,,,lemma-map,→ announce
 piece,redundant,,,,lemma-map,→ part
+finish,redundant,,,,lemma-map,→ end
 suppose,redundant,,,,lemma-map,→ idea
+president,redundant,,,,lemma-map,→ leader
 compare,redundant,,,,lemma-map,→ law
 court,redundant,,,,lemma-map,→ law
+poor,redundant,,,,lemma-map,→ bad
 knowledge,redundant,,,,lemma-map,→ know
 arm,redundant,,,,lemma-map,→ strong
 source,redundant,,,,lemma-map,→ way
+employee,redundant,,,,lemma-map,→ worker
 manage,redundant,,,,lemma-map,→ use
 simply,redundant,,,,lemma-map,→ easy
 firm,redundant,,,,lemma-map,→ company
+article,redundant,,,,lemma-map,→ news
+attack,redundant,,,,lemma-map,→ war
 foreign,redundant,,,,lemma-map,→ world
 feature,redundant,,,,lemma-map,→ great
 factor,redundant,,,,lemma-map,→ use
+pretty,redundant,,,,lemma-map,→ beautiful
 recently,redundant,,,,lemma-map,→ year
 affect,redundant,,,,lemma-map,→ connect
+drop,redundant,,,,lemma-map,→ fail
 recent,redundant,,,,lemma-map,→ year
 relate,redundant,,,,lemma-map,→ connect
+official,redundant,,,,lemma-map,→ news
 financial,redundant,,,,lemma-map,→ money
 miss,redundant,,,,lemma-map,→ find
-everyone,redundant,,,,lemma-map,→ people
+campaign,redundant,,,,lemma-map,→ vote
+private,redundant,,,,lemma-map,→ safe
 forget,redundant,,,,lemma-map,→ idea
+summer,redundant,,,,lemma-map,→ day
 opinion,redundant,,,,lemma-map,→ idea
+park,redundant,,,,lemma-map,→ nature
 represent,redundant,,,,lemma-map,→ perform
-inside,redundant,,,,lemma-map,→ leave
 manager,redundant,,,,lemma-map,→ use
 international,redundant,,,,lemma-map,→ world
 contain,redundant,,,,lemma-map,→ get
 notice,redundant,,,,lemma-map,→ look
+wonder,redundant,,,,lemma-map,→ ask
 structure,redundant,,,,lemma-map,→ government
 section,redundant,,,,lemma-map,→ part
-myself,redundant,,,,lemma-map,→ who
 exactly,redundant,,,,lemma-map,→ sure
+paint,redundant,,,,lemma-map,→ art
+press,redundant,,,,lemma-map,→ news
+necessary,redundant,,,,lemma-map,→ need
+region,redundant,,,,lemma-map,→ map
 growth,redundant,,,,lemma-map,→ life
+evening,redundant,,,,lemma-map,→ bridge
 influence,redundant,,,,lemma-map,→ connect
 respect,redundant,,,,lemma-map,→ look
 various,redundant,,,,lemma-map,→ different
 thus,redundant,,,,lemma-map,→ calculate
 skill,redundant,,,,lemma-map,→ strong
+attempt,redundant,,,,lemma-map,→ try
 simple,redundant,,,,lemma-map,→ easy
 average,redundant,,,,lemma-map,→ score
 stock,redundant,,,,lemma-map,→ increase
@@ -211,368 +319,718 @@ management,redundant,,,,lemma-map,→ use
 character,redundant,,,,lemma-map,→ perform
 hit,redundant,,,,lemma-map,→ happen
 establish,redundant,,,,lemma-map,→ government
-indeed,redundant,,,,lemma-map,→ true
+final,redundant,,,,lemma-map,→ end
 economy,redundant,,,,lemma-map,→ increase
 fit,redundant,,,,lemma-map,→ part
 function,redundant,,,,lemma-map,→ use
 yesterday,redundant,,,,lemma-map,→ year
+image,redundant,,,,lemma-map,→ picture
 size,redundant,,,,lemma-map,→ long
 behavior,redundant,,,,lemma-map,→ run
 addition,redundant,,,,lemma-map,→ add
 determine,redundant,,,,lemma-map,→ know
 population,redundant,,,,lemma-map,→ people
+environment,redundant,,,,lemma-map,→ nature
+production,redundant,,,,lemma-map,→ industry
+contract,redundant,,,,lemma-map,→ story
+player,redundant,,,,lemma-map,→ game
 comment,redundant,,,,lemma-map,→ tell
 enter,redundant,,,,lemma-map,→ leave
 occur,redundant,,,,lemma-map,→ happen
+alone,redundant,,,,lemma-map,→ one
+significant,redundant,,,,lemma-map,→ important
 drug,redundant,,,,lemma-map,→ health
+series,redundant,,,,lemma-map,→ read
 direct,redundant,,,,lemma-map,→ way
 tomorrow,redundant,,,,lemma-map,→ year
+director,redundant,,,,lemma-map,→ leader
 lack,redundant,,,,lemma-map,→ find
 review,redundant,,,,lemma-map,→ look
+depend,redundant,,,,lemma-map,→ join
 race,redundant,,,,lemma-map,→ run
 recognize,redundant,,,,lemma-map,→ know
+purpose,redundant,,,,lemma-map,→ target
 department,redundant,,,,lemma-map,→ company
 gain,redundant,,,,lemma-map,→ increase
+college,redundant,,,,lemma-map,→ learn
 argue,redundant,,,,lemma-map,→ debate
+holiday,redundant,,,,lemma-map,→ celebrate
+mark,redundant,,,,lemma-map,→ draw
+achieve,redundant,,,,lemma-map,→ success
+item,redundant,,,,lemma-map,→ thing
 prove,redundant,,,,lemma-map,→ true
 season,redundant,,,,lemma-map,→ year
+stuff,redundant,,,,lemma-map,→ thing
 method,redundant,,,,lemma-map,→ way
 analysis,redundant,,,,lemma-map,→ score
+election,redundant,,,,lemma-map,→ vote
+military,redundant,,,,lemma-map,→ war
 club,redundant,,,,lemma-map,→ government
+movie,redundant,,,,lemma-map,→ show
 discussion,redundant,,,,lemma-map,→ tell
+sorry,redundant,,,,lemma-map,→ sad
+challenge,redundant,,,,lemma-map,→ hard
 nation,redundant,,,,lemma-map,→ world
 nearly,redundant,,,,lemma-map,→ place
 statement,redundant,,,,lemma-map,→ announce
+introduce,redundant,,,,lemma-map,→ start
 advantage,redundant,,,,lemma-map,→ increase
 ready,redundant,,,,lemma-map,→ easy
+marry,redundant,,,,lemma-map,→ marriage
 strike,redundant,,,,lemma-map,→ happen
 mile,redundant,,,,lemma-map,→ long
 seek,redundant,,,,lemma-map,→ find
 ability,redundant,,,,lemma-map,→ strong
+unit,redundant,,,,lemma-map,→ science
+card,redundant,,,,lemma-map,→ payment
+quickly,redundant,,,,lemma-map,→ fast
 agreement,redundant,,,,lemma-map,→ agree
+release,redundant,,,,lemma-map,→ open
+tax,redundant,,,,lemma-map,→ payment
 capital,redundant,,,,lemma-map,→ government
 popular,redundant,,,,lemma-map,→ great
+aim,redundant,,,,lemma-map,→ target
 serious,redundant,,,,lemma-map,→ worry
+degree,redundant,,,,lemma-map,→ learn
 pull,redundant,,,,lemma-map,→ wide
+husband,redundant,,,,lemma-map,→ guy
+access,redundant,,,,lemma-map,→ open
 movement,redundant,,,,lemma-map,→ run
 treat,redundant,,,,lemma-map,→ health
+loss,redundant,,,,lemma-map,→ fail
 modern,redundant,,,,lemma-map,→ new
 pressure,redundant,,,,lemma-map,→ problem
 treatment,redundant,,,,lemma-map,→ health
 conference,redundant,,,,lemma-map,→ company
-yourself,redundant,,,,lemma-map,→ who
 supply,redundant,,,,lemma-map,→ money
+village,redundant,,,,lemma-map,→ city
+worth,redundant,,,,lemma-map,→ value
+natural,redundant,,,,lemma-map,→ nature
 express,redundant,,,,lemma-map,→ announce
 indicate,redundant,,,,lemma-map,→ announce
+attend,redundant,,,,lemma-map,→ service
+brother,redundant,,,,lemma-map,→ guy
 organize,redundant,,,,lemma-map,→ plan
+trip,redundant,,,,lemma-map,→ travel
 promise,redundant,,,,lemma-map,→ agree
 potential,redundant,,,,lemma-map,→ maybe
+energy,redundant,,,,lemma-map,→ power
 trouble,redundant,,,,lemma-map,→ problem
 relation,redundant,,,,lemma-map,→ connect
+touch,redundant,,,,lemma-map,→ take
+file,redundant,,,,lemma-map,→ document
 middle,redundant,,,,lemma-map,→ between
 suffer,redundant,,,,lemma-map,→ pain
 strategy,redundant,,,,lemma-map,→ plan
-except,redundant,,,,lemma-map,→ never
+deep,redundant,,,,lemma-map,→ ocean
+tend,redundant,,,,lemma-map,→ follow
 advance,redundant,,,,lemma-map,→ increase
 fill,redundant,,,,lemma-map,→ get
+network,redundant,,,,lemma-map,→ join
 generally,redundant,,,,lemma-map,→ world
 operation,redundant,,,,lemma-map,→ use
 match,redundant,,,,lemma-map,→ part
 avoid,redundant,,,,lemma-map,→ never
 normal,redundant,,,,lemma-map,→ easy
+associate,redundant,,,,lemma-map,→ join
+positive,redundant,,,,lemma-map,→ like
 box,redundant,,,,lemma-map,→ get
 huge,redundant,,,,lemma-map,→ high
+message,redundant,,,,lemma-map,→ note
+instance,redundant,,,,lemma-map,→ solution
+style,redundant,,,,lemma-map,→ art
+push,redundant,,,,lemma-map,→ take
+quarter,redundant,,,,lemma-map,→ half
 assume,redundant,,,,lemma-map,→ idea
+successful,redundant,,,,lemma-map,→ success
 doubt,redundant,,,,lemma-map,→ worry
+competition,redundant,,,,lemma-map,→ success
 theory,redundant,,,,lemma-map,→ idea
+propose,redundant,,,,lemma-map,→ volunteer
+reference,redundant,,,,lemma-map,→ fact
 argument,redundant,,,,lemma-map,→ debate
+adult,redundant,,,,lemma-map,→ someone
 pattern,redundant,,,,lemma-map,→ part
+bill,redundant,,,,lemma-map,→ payment
 search,redundant,,,,lemma-map,→ find
+central,redundant,,,,lemma-map,→ target
 career,redundant,,,,lemma-map,→ work
 throughout,redundant,,,,lemma-map,→ world
 profit,redundant,,,,lemma-map,→ money
 guess,redundant,,,,lemma-map,→ idea
+fun,redundant,,,,lemma-map,→ happy
+resource,redundant,,,,lemma-map,→ tool
 disease,redundant,,,,lemma-map,→ health
 balance,redundant,,,,lemma-map,→ law
+damage,redundant,,,,lemma-map,→ break
+basis,redundant,,,,lemma-map,→ wall
+author,redundant,,,,lemma-map,→ write
+basic,redundant,,,,lemma-map,→ wall
+encourage,redundant,,,,lemma-map,→ like
 operate,redundant,,,,lemma-map,→ use
 reflect,redundant,,,,lemma-map,→ idea
 exercise,redundant,,,,lemma-map,→ run
+useful,redundant,,,,lemma-map,→ tool
+restaurant,redundant,,,,lemma-map,→ dinner
 income,redundant,,,,lemma-map,→ money
+property,redundant,,,,lemma-map,→ home
+previous,redundant,,,,lemma-map,→ return
 imagine,redundant,,,,lemma-map,→ idea
 okay,redundant,,,,lemma-map,→ easy
+define,redundant,,,,lemma-map,→ note
+conclusion,redundant,,,,lemma-map,→ result
 clock,redundant,,,,lemma-map,→ now
-everybody,redundant,,,,lemma-map,→ people
 weekend,redundant,,,,lemma-map,→ year
 professional,redundant,,,,lemma-map,→ work
 memory,redundant,,,,lemma-map,→ know
+song,redundant,,,,lemma-map,→ music
+object,redundant,,,,lemma-map,→ thing
+credit,redundant,,,,lemma-map,→ payment
 discover,redundant,,,,lemma-map,→ find
+dead,redundant,,,,lemma-map,→ death
+afternoon,redundant,,,,lemma-map,→ day
+prefer,redundant,,,,lemma-map,→ like
 extend,redundant,,,,lemma-map,→ long
 possibility,redundant,,,,lemma-map,→ maybe
 direction,redundant,,,,lemma-map,→ way
 facility,redundant,,,,lemma-map,→ company
 variety,redundant,,,,lemma-map,→ different
 daily,redundant,,,,lemma-map,→ year
+screen,redundant,,,,lemma-map,→ show
+track,redundant,,,,lemma-map,→ follow
 completely,redundant,,,,lemma-map,→ lot
 responsibility,redundant,,,,lemma-map,→ law
 original,redundant,,,,lemma-map,→ new
+sister,redundant,,,,lemma-map,→ lady
 dream,redundant,,,,lemma-map,→ idea
+university,redundant,,,,lemma-map,→ learn
 easily,redundant,,,,lemma-map,→ easy
 agency,redundant,,,,lemma-map,→ company
+garden,redundant,,,,lemma-map,→ plant
+candidate,redundant,,,,lemma-map,→ vote
 weight,redundant,,,,lemma-map,→ law
 legal,redundant,,,,lemma-map,→ law
 proposal,redundant,,,,lemma-map,→ plan
 version,redundant,,,,lemma-map,→ change
 conversation,redundant,,,,lemma-map,→ tell
+magazine,redundant,,,,lemma-map,→ news
+shape,redundant,,,,lemma-map,→ square
+sea,redundant,,,,lemma-map,→ ocean
+immediately,redundant,,,,lemma-map,→ power
+welcome,redundant,,,,lemma-map,→ hello
 communication,redundant,,,,lemma-map,→ tell
+traditional,redundant,,,,lemma-map,→ story
 replace,redundant,,,,lemma-map,→ change
 suddenly,redundant,,,,lemma-map,→ happen
+generation,redundant,,,,lemma-map,→ parent
 estimate,redundant,,,,lemma-map,→ calculate
 favorite,redundant,,,,lemma-map,→ great
+difficulty,redundant,,,,lemma-map,→ hard
+purchase,redundant,,,,lemma-map,→ buy
+independent,redundant,,,,lemma-map,→ free
+recommend,redundant,,,,lemma-map,→ like
 majority,redundant,,,,lemma-map,→ lot
+request,redundant,,,,lemma-map,→ want
 rich,redundant,,,,lemma-map,→ money
 none,redundant,,,,lemma-map,→ never
 budget,redundant,,,,lemma-map,→ money
 famous,redundant,,,,lemma-map,→ great
 appropriate,redundant,,,,lemma-map,→ sure
+warm,redundant,,,,lemma-map,→ heat
+count,redundant,,,,lemma-map,→ number
+scene,redundant,,,,lemma-map,→ picture
+writer,redundant,,,,lemma-map,→ write
+content,redundant,,,,lemma-map,→ paper
 prevent,redundant,,,,lemma-map,→ never
+invite,redundant,,,,lemma-map,→ mail
 mix,redundant,,,,lemma-map,→ different
+element,redundant,,,,lemma-map,→ science
+effective,redundant,,,,lemma-map,→ target
 admit,redundant,,,,lemma-map,→ leave
+telephone,redundant,,,,lemma-map,→ call
+copy,redundant,,,,lemma-map,→ paper
 committee,redundant,,,,lemma-map,→ people
 aware,redundant,,,,lemma-map,→ look
+advice,redundant,,,,lemma-map,→ solution
+handle,redundant,,,,lemma-map,→ take
+trial,redundant,,,,lemma-map,→ test
 stress,redundant,,,,lemma-map,→ worry
 administration,redundant,,,,lemma-map,→ government
 complex,redundant,,,,lemma-map,→ part
+text,redundant,,,,lemma-map,→ note
+context,redundant,,,,lemma-map,→ join
+ride,redundant,,,,lemma-map,→ drive
+directly,redundant,,,,lemma-map,→ refer
+heavy,redundant,,,,lemma-map,→ harbor
+remove,redundant,,,,lemma-map,→ waste
 conduct,redundant,,,,lemma-map,→ announce
+equipment,redundant,,,,lemma-map,→ tool
 otherwise,redundant,,,,lemma-map,→ different
+title,redundant,,,,lemma-map,→ name
 extra,redundant,,,,lemma-map,→ add
 executive,redundant,,,,lemma-map,→ work
 expensive,redundant,,,,lemma-map,→ price
+sample,redundant,,,,lemma-map,→ test
+sex,redundant,,,,lemma-map,→ pair
 deliver,redundant,,,,lemma-map,→ get
 connection,redundant,,,,lemma-map,→ connect
 primary,redundant,,,,lemma-map,→ great
+collect,redundant,,,,lemma-map,→ gather
 inform,redundant,,,,lemma-map,→ announce
 principle,redundant,,,,lemma-map,→ law
 straight,redundant,,,,lemma-map,→ long
+appeal,redundant,,,,lemma-map,→ interest
 highly,redundant,,,,lemma-map,→ high
 trust,redundant,,,,lemma-map,→ agree
 wonderful,redundant,,,,lemma-map,→ great
 absolutely,redundant,,,,lemma-map,→ lot
+flow,redundant,,,,lemma-map,→ ocean
 fair,redundant,,,,lemma-map,→ law
 additional,redundant,,,,lemma-map,→ add
 responsible,redundant,,,,lemma-map,→ law
+collection,redundant,,,,lemma-map,→ gather
+negative,redundant,,,,lemma-map,→ bad
+band,redundant,,,,lemma-map,→ music
+relative,redundant,,,,lemma-map,→ parent
+tour,redundant,,,,lemma-map,→ travel
+alternative,redundant,,,,lemma-map,→ choose
+software,redundant,,,,lemma-map,→ computer
+cheap,redundant,,,,lemma-map,→ sale
+double,redundant,,,,lemma-map,→ two
+observe,redundant,,,,lemma-map,→ see
+sentence,redundant,,,,lemma-map,→ note
 progress,redundant,,,,lemma-map,→ increase
 truth,redundant,,,,lemma-map,→ true
-nobody,redundant,,,,lemma-map,→ never
+lay,redundant,,,,lemma-map,→ rest
+speed,redundant,,,,lemma-map,→ fast
+politics,redundant,,,,lemma-map,→ vote
 reply,redundant,,,,lemma-map,→ answer
+display,redundant,,,,lemma-map,→ show
+transfer,redundant,,,,lemma-map,→ move
 perfect,redundant,,,,lemma-map,→ lot
 slightly,redundant,,,,lemma-map,→ less
 overall,redundant,,,,lemma-map,→ world
 intend,redundant,,,,lemma-map,→ idea
 respond,redundant,,,,lemma-map,→ answer
+regular,redundant,,,,lemma-map,→ again
 physical,redundant,,,,lemma-map,→ strong
+apart,redundant,,,,lemma-map,→ separate
 federal,redundant,,,,lemma-map,→ government
 reveal,redundant,,,,lemma-map,→ look
 percentage,redundant,,,,lemma-map,→ score
+status,redundant,,,,lemma-map,→ stand
+crime,redundant,,,,lemma-map,→ officer
+decline,redundant,,,,lemma-map,→ fail
 decade,redundant,,,,lemma-map,→ year
+launch,redundant,,,,lemma-map,→ start
 warn,redundant,,,,lemma-map,→ problem
+consumer,redundant,,,,lemma-map,→ store
+favor,redundant,,,,lemma-map,→ like
 partner,redundant,,,,lemma-map,→ agree
 institution,redundant,,,,lemma-map,→ government
+spot,redundant,,,,lemma-map,→ see
+eventually,redundant,,,,lemma-map,→ wait
+excite,redundant,,,,lemma-map,→ interest
+reader,redundant,,,,lemma-map,→ read
+importance,redundant,,,,lemma-map,→ important
 distance,redundant,,,,lemma-map,→ long
 guide,redundant,,,,lemma-map,→ way
+grant,redundant,,,,lemma-map,→ give
+feed,redundant,,,,lemma-map,→ food
+sector,redundant,,,,lemma-map,→ half
+mistake,redundant,,,,lemma-map,→ wrong
+ensure,redundant,,,,lemma-map,→ safe
+satisfy,redundant,,,,lemma-map,→ happy
+chief,redundant,,,,lemma-map,→ leader
+expert,redundant,,,,lemma-map,→ learn
 south,redundant,,,,lemma-map,→ way
+library,redundant,,,,lemma-map,→ read
 excellent,redundant,,,,lemma-map,→ great
 audience,redundant,,,,lemma-map,→ people
 procedure,redundant,,,,lemma-map,→ way
 global,redundant,,,,lemma-map,→ world
+struggle,redundant,,,,lemma-map,→ hard
 advertise,redundant,,,,lemma-map,→ announce
+select,redundant,,,,lemma-map,→ choose
 surround,redundant,,,,lemma-map,→ world
 extent,redundant,,,,lemma-map,→ long
+river,redundant,,,,lemma-map,→ water
 annual,redundant,,,,lemma-map,→ year
 fully,redundant,,,,lemma-map,→ lot
 contrast,redundant,,,,lemma-map,→ opposite
 reality,redundant,,,,lemma-map,→ true
+photograph,redundant,,,,lemma-map,→ photo
+conflict,redundant,,,,lemma-map,→ war
 entire,redundant,,,,lemma-map,→ all
 presence,redundant,,,,lemma-map,→ who
 crowd,redundant,,,,lemma-map,→ people
 corner,redundant,,,,lemma-map,→ place
+gas,redundant,,,,lemma-map,→ fuel
 shift,redundant,,,,lemma-map,→ change
+net,redundant,,,,lemma-map,→ catch
+category,redundant,,,,lemma-map,→ thing
+secretary,redundant,,,,lemma-map,→ worker
+defense,redundant,,,,lemma-map,→ defend
+quick,redundant,,,,lemma-map,→ fast
 spread,redundant,,,,lemma-map,→ world
+driver,redundant,,,,lemma-map,→ drive
+ball,redundant,,,,lemma-map,→ sport
 north,redundant,,,,lemma-map,→ way
 confirm,redundant,,,,lemma-map,→ sure
-refuse,redundant,,,,lemma-map,→ never
+senior,redundant,,,,lemma-map,→ old
+emerge,redundant,,,,lemma-map,→ morning
 concept,redundant,,,,lemma-map,→ idea
 reform,redundant,,,,lemma-map,→ change
-neither,redundant,,,,lemma-map,→ never
+survive,redundant,,,,lemma-map,→ help
+flight,redundant,,,,lemma-map,→ travel
+solve,redundant,,,,lemma-map,→ solution
+neighbor,redundant,,,,lemma-map,→ home
+background,redundant,,,,lemma-map,→ picture
 technique,redundant,,,,lemma-map,→ way
 improvement,redundant,,,,lemma-map,→ increase
 consequence,redundant,,,,lemma-map,→ connect
 circumstance,redundant,,,,lemma-map,→ worry
 reaction,redundant,,,,lemma-map,→ happen
+busy,redundant,,,,lemma-map,→ move
 mass,redundant,,,,lemma-map,→ high
 contribute,redundant,,,,lemma-map,→ add
+failure,redundant,,,,lemma-map,→ fail
 schedule,redundant,,,,lemma-map,→ year
+speaker,redundant,,,,lemma-map,→ loud
+bottom,redundant,,,,lemma-map,→ below
+adopt,redundant,,,,lemma-map,→ little
+combine,redundant,,,,lemma-map,→ join
+hide,redundant,,,,lemma-map,→ seem
+meal,redundant,,,,lemma-map,→ food
+colleague,redundant,,,,lemma-map,→ worker
+expression,redundant,,,,lemma-map,→ happy
 extremely,redundant,,,,lemma-map,→ high
+plane,redundant,,,,lemma-map,→ travel
+commercial,redundant,,,,lemma-map,→ store
 strength,redundant,,,,lemma-map,→ strong
 cultural,redundant,,,,lemma-map,→ perform
 arrange,redundant,,,,lemma-map,→ plan
 scheme,redundant,,,,lemma-map,→ plan
+unfortunately,redundant,,,,lemma-map,→ sad
+brief,redundant,,,,lemma-map,→ note
 demonstrate,redundant,,,,lemma-map,→ true
 contribution,redundant,,,,lemma-map,→ add
-appreciate,redundant,,,,lemma-map,→ thanks
+appreciate,redundant,,,,lemma-map,→ thank
+chapter,redundant,,,,lemma-map,→ read
 apparently,redundant,,,,lemma-map,→ look
 novel,redundant,,,,lemma-map,→ new
+burn,redundant,,,,lemma-map,→ heat
+trend,redundant,,,,lemma-map,→ follow
+initial,redundant,,,,lemma-map,→ start
+pleasure,redundant,,,,lemma-map,→ happy
+suggestion,redundant,,,,lemma-map,→ solution
+critical,redundant,,,,lemma-map,→ important
 mostly,redundant,,,,lemma-map,→ lot
 earth,redundant,,,,lemma-map,→ world
 pop,redundant,,,,lemma-map,→ happen
+essential,redundant,,,,lemma-map,→ need
+desire,redundant,,,,lemma-map,→ want
 promote,redundant,,,,lemma-map,→ announce
 currently,redundant,,,,lemma-map,→ now
 employ,redundant,,,,lemma-map,→ work
 path,redundant,,,,lemma-map,→ way
 topic,redundant,,,,lemma-map,→ tell
+attract,redundant,,,,lemma-map,→ interest
+engage,redundant,,,,lemma-map,→ join
+powerful,redundant,,,,lemma-map,→ power
 crisis,redundant,,,,lemma-map,→ problem
 settle,redundant,,,,lemma-map,→ agree
+aid,redundant,,,,lemma-map,→ help
 fresh,redundant,,,,lemma-map,→ new
+delay,redundant,,,,lemma-map,→ late
+safety,redundant,,,,lemma-map,→ safe
+quiet,redundant,,,,lemma-map,→ silence
+insurance,redundant,,,,lemma-map,→ defend
 length,redundant,,,,lemma-map,→ long
+investigation,redundant,,,,lemma-map,→ agent
 somewhere,redundant,,,,lemma-map,→ place
 expand,redundant,,,,lemma-map,→ increase
 commit,redundant,,,,lemma-map,→ agree
 relatively,redundant,,,,lemma-map,→ same
+host,redundant,,,,lemma-map,→ service
+district,redundant,,,,lemma-map,→ city
 broad,redundant,,,,lemma-map,→ wide
+tire,redundant,,,,lemma-map,→ drive
 spring,redundant,,,,lemma-map,→ life
+lunch,redundant,,,,lemma-map,→ food
 actual,redundant,,,,lemma-map,→ true
+battle,redundant,,,,lemma-map,→ war
+tradition,redundant,,,,lemma-map,→ story
 cash,redundant,,,,lemma-map,→ money
 hardly,redundant,,,,lemma-map,→ less
+award,redundant,,,,lemma-map,→ win
+coach,redundant,,,,lemma-map,→ success
+experiment,redundant,,,,lemma-map,→ test
 consideration,redundant,,,,lemma-map,→ law
+code,redundant,,,,lemma-map,→ computer
 possibly,redundant,,,,lemma-map,→ maybe
 threat,redundant,,,,lemma-map,→ problem
 accident,redundant,,,,lemma-map,→ happen
 impossible,redundant,,,,lemma-map,→ never
 revenue,redundant,,,,lemma-map,→ money
+enable,redundant,,,,lemma-map,→ open
 active,redundant,,,,lemma-map,→ run
+conclude,redundant,,,,lemma-map,→ end
 religious,redundant,,,,lemma-map,→ believe
 convince,redundant,,,,lemma-map,→ debate
 vary,redundant,,,,lemma-map,→ different
+environmental,redundant,,,,lemma-map,→ nature
 healthy,redundant,,,,lemma-map,→ health
+volume,redundant,,,,lemma-map,→ loud
 location,redundant,,,,lemma-map,→ place
+proceed,redundant,,,,lemma-map,→ go
+wash,redundant,,,,lemma-map,→ clean
 actor,redundant,,,,lemma-map,→ perform
+glad,redundant,,,,lemma-map,→ happy
+stone,redundant,,,,lemma-map,→ hard
 sum,redundant,,,,lemma-map,→ calculate
+murder,redundant,,,,lemma-map,→ death
+soldier,redundant,,,,lemma-map,→ war
 finance,redundant,,,,lemma-map,→ money
+concert,redundant,,,,lemma-map,→ music
 usual,redundant,,,,lemma-map,→ easy
 carefully,redundant,,,,lemma-map,→ look
 pack,redundant,,,,lemma-map,→ get
 recall,redundant,,,,lemma-map,→ know
+manufacture,redundant,,,,lemma-map,→ make
+cycle,redundant,,,,lemma-map,→ bike
 totally,redundant,,,,lemma-map,→ lot
 museum,redundant,,,,lemma-map,→ government
-moreover,redundant,,,,lemma-map,→ add
-onto,redundant,,,,lemma-map,→ get
+visitor,redundant,,,,lemma-map,→ visit
+freedom,redundant,,,,lemma-map,→ free
+objective,redundant,,,,lemma-map,→ target
+historical,redundant,,,,lemma-map,→ story
 oppose,redundant,,,,lemma-map,→ opposite
+branch,redundant,,,,lemma-map,→ forest
+vehicle,redundant,,,,lemma-map,→ drive
 route,redundant,,,,lemma-map,→ way
 danger,redundant,,,,lemma-map,→ problem
 decrease,redundant,,,,lemma-map,→ less
 hurt,redundant,,,,lemma-map,→ pain
+gift,redundant,,,,lemma-map,→ give
 deny,redundant,,,,lemma-map,→ never
+guest,redundant,,,,lemma-map,→ service
+bedroom,redundant,,,,lemma-map,→ rest
 belief,redundant,,,,lemma-map,→ believe
 technical,redundant,,,,lemma-map,→ use
+skin,redundant,,,,lemma-map,→ someone
+proper,redundant,,,,lemma-map,→ good
 component,redundant,,,,lemma-map,→ part
 lawyer,redundant,,,,lemma-map,→ law
+arrest,redundant,,,,lemma-map,→ officer
 explore,redundant,,,,lemma-map,→ find
+wake,redundant,,,,lemma-map,→ morning
 bond,redundant,,,,lemma-map,→ connect
 tie,redundant,,,,lemma-map,→ connect
 expense,redundant,,,,lemma-map,→ price
 plenty,redundant,,,,lemma-map,→ lot
+principal,redundant,,,,lemma-map,→ leader
+master,redundant,,,,lemma-map,→ leader
 definitely,redundant,,,,lemma-map,→ true
 grade,redundant,,,,lemma-map,→ score
 predict,redundant,,,,lemma-map,→ maybe
+previously,redundant,,,,lemma-map,→ return
 largely,redundant,,,,lemma-map,→ high
+rent,redundant,,,,lemma-map,→ home
 appearance,redundant,,,,lemma-map,→ look
 reasonable,redundant,,,,lemma-map,→ law
+guarantee,redundant,,,,lemma-map,→ safe
+till,redundant,,,,lemma-map,→ wait
+theme,redundant,,,,lemma-map,→ piano
+odd,redundant,,,,lemma-map,→ strange
+approve,redundant,,,,lemma-map,→ like
+definition,redundant,,,,lemma-map,→ note
+elect,redundant,,,,lemma-map,→ vote
 comparison,redundant,,,,lemma-map,→ same
+license,redundant,,,,lemma-map,→ identify
 narrow,redundant,,,,lemma-map,→ less
+succeed,redundant,,,,lemma-map,→ success
+desk,redundant,,,,lemma-map,→ computer
 seriously,redundant,,,,lemma-map,→ worry
 commission,redundant,,,,lemma-map,→ government
 unique,redundant,,,,lemma-map,→ new
 association,redundant,,,,lemma-map,→ agree
+practical,redundant,,,,lemma-map,→ tool
+lock,redundant,,,,lemma-map,→ safe
 expectation,redundant,,,,lemma-map,→ maybe
 employment,redundant,,,,lemma-map,→ work
+sexual,redundant,,,,lemma-map,→ pair
 shoulder,redundant,,,,lemma-map,→ strong
+breath,redundant,,,,lemma-map,→ breathe
 increasingly,redundant,,,,lemma-map,→ increase
 import,redundant,,,,lemma-map,→ get
-ourselves,redundant,,,,lemma-map,→ people
+cast,redundant,,,,lemma-map,→ catch
 notion,redundant,,,,lemma-map,→ idea
 conservative,redundant,,,,lemma-map,→ government
 opposition,redundant,,,,lemma-map,→ opposite
 debt,redundant,,,,lemma-map,→ loan
+outcome,redundant,,,,lemma-map,→ result
+blame,redundant,,,,lemma-map,→ refer
 explanation,redundant,,,,lemma-map,→ tell
+arise,redundant,,,,lemma-map,→ morning
+musical,redundant,,,,lemma-map,→ piano
 recover,redundant,,,,lemma-map,→ health
+dad,redundant,,,,lemma-map,→ guy
+analyze,redundant,,,,lemma-map,→ examine
 anywhere,redundant,,,,lemma-map,→ place
 entry,redundant,,,,lemma-map,→ leave
 peak,redundant,,,,lemma-map,→ high
-somewhat,redundant,,,,lemma-map,→ less
 faith,redundant,,,,lemma-map,→ believe
 thin,redundant,,,,lemma-map,→ less
 religion,redundant,,,,lemma-map,→ believe
-via,redundant,,,,lemma-map,→ way
+reject,redundant,,,,lemma-map,→ bad
+mobile,redundant,,,,lemma-map,→ call
+hell,redundant,,,,lemma-map,→ heat
 everywhere,redundant,,,,lemma-map,→ world
-furthermore,redundant,,,,lemma-map,→ add
+household,redundant,,,,lemma-map,→ home
+east,redundant,,,,lemma-map,→ morning
+construct,redundant,,,,lemma-map,→ make
 medicine,redundant,,,,lemma-map,→ health
+professor,redundant,,,,lemma-map,→ teach
+dozen,redundant,,,,lemma-map,→ number
 alive,redundant,,,,lemma-map,→ life
+emotion,redundant,,,,lemma-map,→ feel
 tall,redundant,,,,lemma-map,→ high
+enemy,redundant,,,,lemma-map,→ war
+injury,redundant,,,,lemma-map,→ wound
 vast,redundant,,,,lemma-map,→ high
+draft,redundant,,,,lemma-map,→ write
 seed,redundant,,,,lemma-map,→ life
-elsewhere,redundant,,,,lemma-map,→ world
+lake,redundant,,,,lemma-map,→ water
+hi,redundant,,,,lemma-map,→ hello
+disk,redundant,,,,lemma-map,→ album
 plastic,redundant,,,,lemma-map,→ get
+boss,redundant,,,,lemma-map,→ leader
 mechanism,redundant,,,,lemma-map,→ use
 crash,redundant,,,,lemma-map,→ happen
+soul,redundant,,,,lemma-map,→ free
+proud,redundant,,,,lemma-map,→ success
+emergency,redundant,,,,lemma-map,→ need
 corporation,redundant,,,,lemma-map,→ company
 update,redundant,,,,lemma-map,→ change
+luck,redundant,,,,lemma-map,→ try
+split,redundant,,,,lemma-map,→ separate
 sudden,redundant,,,,lemma-map,→ happen
+calm,redundant,,,,lemma-map,→ free
+exhibit,redundant,,,,lemma-map,→ show
+thick,redundant,,,,lemma-map,→ wall
+achievement,redundant,,,,lemma-map,→ success
+prize,redundant,,,,lemma-map,→ win
+electricity,redundant,,,,lemma-map,→ power
 agenda,redundant,,,,lemma-map,→ plan
+emphasis,redundant,,,,lemma-map,→ important
+elderly,redundant,,,,lemma-map,→ old
 owe,redundant,,,,lemma-map,→ loan
 numerous,redundant,,,,lemma-map,→ lot
+wet,redundant,,,,lemma-map,→ water
+false,redundant,,,,lemma-map,→ wrong
+assist,redundant,,,,lemma-map,→ help
 alter,redundant,,,,lemma-map,→ change
 stare,redundant,,,,lemma-map,→ look
 convert,redundant,,,,lemma-map,→ change
-beside,redundant,,,,lemma-map,→ between
+fascinate,redundant,,,,lemma-map,→ interest
 spare,redundant,,,,lemma-map,→ add
 whenever,redundant,,,,lemma-map,→ year
+depression,redundant,,,,lemma-map,→ sad
 guilty,redundant,,,,lemma-map,→ worry
+underlie,redundant,,,,lemma-map,→ wall
+mom,redundant,,,,lemma-map,→ lady
 distinction,redundant,,,,lemma-map,→ opposite
+satisfaction,redundant,,,,lemma-map,→ happy
 incorporate,redundant,,,,lemma-map,→ add
 perception,redundant,,,,lemma-map,→ look
 naturally,redundant,,,,lemma-map,→ life
+currency,redundant,,,,lemma-map,→ exchange
+database,redundant,,,,lemma-map,→ computer
+initially,redundant,,,,lemma-map,→ start
+stream,redundant,,,,lemma-map,→ water
+rarely,redundant,,,,lemma-map,→ wait
 height,redundant,,,,lemma-map,→ high
 apparent,redundant,,,,lemma-map,→ look
 expansion,redundant,,,,lemma-map,→ increase
+constantly,redundant,,,,lemma-map,→ again
 muscle,redundant,,,,lemma-map,→ strong
+scare,redundant,,,,lemma-map,→ afraid
+badly,redundant,,,,lemma-map,→ bad
 everyday,redundant,,,,lemma-map,→ year
 ratio,redundant,,,,lemma-map,→ score
+essay,redundant,,,,lemma-map,→ note
+pollution,redundant,,,,lemma-map,→ industry
+apartment,redundant,,,,lemma-map,→ home
+demonstration,redundant,,,,lemma-map,→ sign
 analyst,redundant,,,,lemma-map,→ score
 platform,redundant,,,,lemma-map,→ perform
+transform,redundant,,,,lemma-map,→ become
+designer,redundant,,,,lemma-map,→ art
 strain,redundant,,,,lemma-map,→ worry
+innovation,redundant,,,,lemma-map,→ solution
+trail,redundant,,,,lemma-map,→ follow
+loose,redundant,,,,lemma-map,→ open
 extension,redundant,,,,lemma-map,→ add
 wealth,redundant,,,,lemma-map,→ money
+gradually,redundant,,,,lemma-map,→ slow
+tank,redundant,,,,lemma-map,→ transport
 remarkable,redundant,,,,lemma-map,→ great
+invitation,redundant,,,,lemma-map,→ mail
 transition,redundant,,,,lemma-map,→ change
+frighten,redundant,,,,lemma-map,→ afraid
 planet,redundant,,,,lemma-map,→ world
+web,redundant,,,,lemma-map,→ online
 portion,redundant,,,,lemma-map,→ part
+exam,redundant,,,,lemma-map,→ test
+subsequent,redundant,,,,lemma-map,→ next
+iron,redundant,,,,lemma-map,→ steel
+quantity,redundant,,,,lemma-map,→ number
+alarm,redundant,,,,lemma-map,→ late
+apologize,redundant,,,,lemma-map,→ sad
+grab,redundant,,,,lemma-map,→ take
+tube,redundant,,,,lemma-map,→ test
+infant,redundant,,,,lemma-map,→ little
 anxiety,redundant,,,,lemma-map,→ worry
+virus,redundant,,,,lemma-map,→ cell
 detect,redundant,,,,lemma-map,→ find
+stupid,redundant,,,,lemma-map,→ dirty
 forecast,redundant,,,,lemma-map,→ maybe
 segment,redundant,,,,lemma-map,→ part
+rescue,redundant,,,,lemma-map,→ help
+rapid,redundant,,,,lemma-map,→ fast
+cancel,redundant,,,,lemma-map,→ wrong
+regret,redundant,,,,lemma-map,→ sad
+champion,redundant,,,,lemma-map,→ win
+accomplish,redundant,,,,lemma-map,→ success
 glance,redundant,,,,lemma-map,→ look
+genetic,redundant,,,,lemma-map,→ gene
 govern,redundant,,,,lemma-map,→ government
+pump,redundant,,,,lemma-map,→ fuel
 classical,redundant,,,,lemma-map,→ government
 modify,redundant,,,,lemma-map,→ change
+friendship,redundant,,,,lemma-map,→ friend
 profession,redundant,,,,lemma-map,→ work
 forever,redundant,,,,lemma-map,→ all
+chat,redundant,,,,lemma-map,→ say
+evolve,redundant,,,,lemma-map,→ become
+bin,redundant,,,,lemma-map,→ waste
+craft,redundant,,,,lemma-map,→ make
+compose,redundant,,,,lemma-map,→ write
+nowhere,redundant,,,,lemma-map,→ empty
 wherever,redundant,,,,lemma-map,→ world
 revise,redundant,,,,lemma-map,→ change
 genuine,redundant,,,,lemma-map,→ true
-stranger,redundant,,,,lemma-map,→ who
+universe,redundant,,,,lemma-map,→ space
+leather,redundant,,,,lemma-map,→ bag
 organic,redundant,,,,lemma-map,→ life
+website,redundant,,,,lemma-map,→ computer
 compute,redundant,,,,lemma-map,→ calculate
 gaze,redundant,,,,lemma-map,→ look
+royal,redundant,,,,lemma-map,→ king
+immigration,redundant,,,,lemma-map,→ border
 alright,redundant,,,,lemma-map,→ easy
+blog,redundant,,,,lemma-map,→ news
 the,function,,,,denylist,
 be,function,,,,denylist,
 and,function,,,,denylist,
@@ -612,21 +1070,21 @@ would,function,,,,denylist,
 about,function,,,,denylist,
 can,function,,,,denylist,
 which,function,,,,denylist,
-place,metaphor,📌,pushpin,ubuzuhu,metaphorical,
+there,function,,,,denylist,
 know,metaphor,🧠,brain,abura,metaphorical,
-increase,metaphor,📈,chart-up,aguha,metaphorical,
+more,function,,,,denylist,
 get,metaphor,📦,package,abage,metaphorical,
 who,function,,,,denylist,
 like,metaphor,👍,thumbs-up,uduhu,metaphorical,
-now,function,,,,denylist,
+when,function,,,,denylist,
 think,literal,🤔,think,udu,exact,
 make,metaphor,🔨,hammer,ahema,metaphorical,
 time,literal,🕐,time,udemude,exact,
 see,metaphor,👁️,eye,ejo,metaphorical,
 what,function,,,,denylist,
 up,function,,,,denylist,
-different,metaphor,🔀,shuffle,uzehuve,metaphorical,
-other,metaphor,🔘,option,obudono,metaphorical,
+some,function,,,,denylist,
+choose,metaphor,🔘,option,obudono,metaphorical,
 out,function,,,,denylist,
 good,metaphor,⭕,correct,ogero,metaphorical,
 people,metaphor,👥,silhouettes,uzoluhe,metaphorical,
@@ -642,42 +1100,51 @@ could,function,,,,denylist,
 work,metaphor,💼,briefcase,ubera,metaphorical,
 use,metaphor,⚙️,gear,egare,metaphorical,
 than,function,,,,denylist,
+now,function,,,,denylist,
+then,function,,,,denylist,
 also,function,,,,denylist,
 into,function,,,,denylist,
 only,function,,,,denylist,
 look,metaphor,👀,eyes,ezo,metaphorical,
 want,metaphor,🥺,pleading,eba,metaphorical,
 give,metaphor,🎁,wrapped-gift,aweru,metaphorical,
-first,metaphor,🏅,medal,emadela,metaphorical,
+win,metaphor,🏅,medal,emadela,metaphorical,
 new,metaphor,✨,sparkles,azebare,metaphorical,
 way,metaphor,🧭,compass,ogamo,metaphorical,
 find,metaphor,🔍,magnify,amugo,metaphorical,
 over,function,,,,denylist,
+any,function,,,,denylist,
 after,function,,,,denylist,
 day,metaphor,☀️,sun,uzunu,metaphorical,
+where,function,,,,denylist,
 thing,metaphor,🏷️,label,aleba,metaphorical,
-lot,metaphor,💯,hundred,uhe,metaphorical,
+most,function,,,,denylist,
 should,function,,,,denylist,
 need,metaphor,🆘,sos,ozozo,metaphorical,
+much,function,,,,denylist,
 right,literal,➡️,right,urugu,exact,
+how,function,,,,denylist,
 back,literal,↩️,back,abagaga,exact,
 idea,metaphor,💭,thought,oduho,metaphorical,
 even,function,,,,denylist,
 may,function,,,,denylist,
+here,function,,,,denylist,
+many,function,,,,denylist,
 such,function,,,,denylist,
-last,metaphor,⌛,hourglass-done,ohura,metaphorical,
+end,metaphor,⌛,hourglass-done,ohura,metaphorical,
 child,literal,🧒,child,uguhu,exact,
 tell,metaphor,💬,speech,ezebege,metaphorical,
-really,metaphor,❗,exclamation-red,ezagalu,metaphorical,
+important,metaphor,❗,exclamation-red,ezagalu,metaphorical,
 call,metaphor,📱,phone,obeho,metaphorical,
 before,function,,,,denylist,
 company,metaphor,🏢,office,ovuvego,metaphorical,
-leave,metaphor,🚪,door,odorodo,metaphorical,
+through,function,,,,denylist,
 down,function,,,,denylist,
 show,metaphor,🎦,cinema,ugena,metaphorical,
 life,metaphor,🌱,seedling,ezedu,metaphorical,
 man,literal,👨,man,amana,exact,
 change,metaphor,🔄,refresh,ereve,metaphorical,
+place,metaphor,📌,pushpin,ubuzuhu,metaphorical,
 long,metaphor,📏,ruler,urelu,metaphorical,
 between,function,,,,denylist,
 feel,metaphor,💓,heartbeat,ehare,metaphorical,
@@ -686,8 +1153,10 @@ still,function,,,,denylist,
 problem,metaphor,⚠️,warning,awura,metaphorical,
 write,metaphor,✍️,writing-hand,uwura,metaphorical,
 same,function,,,,denylist,
+lot,metaphor,💯,hundred,uhe,metaphorical,
 great,metaphor,⭐,star,azada,metaphorical,
 try,metaphor,🤞,crossed-fingers,ogeru,metaphorical,
+leave,metaphor,🚪,door,odorodo,metaphorical,
 number,metaphor,🔢,numbers,unemu,metaphorical,
 both,function,,,,denylist,
 own,function,,,,denylist,
@@ -698,10 +1167,9 @@ help,metaphor,🛟,life-ring,ulevu,metaphorical,
 ask,metaphor,❓,question-red,ugezu,metaphorical,
 agree,metaphor,🤝,handshake,ahane,metaphorical,
 start,metaphor,▶️,play,abola,metaphorical,
-talk,metaphor,🗣️,speaking-head,ezabu,metaphorical,
 something,function,,,,denylist,
-put,metaphor,📥,inbox,uno,metaphorical,
-add,metaphor,➕,plus,ubuluzu,metaphorical,
+submit,metaphor,📥,inbox,uno,metaphorical,
+another,function,,,,denylist,
 become,metaphor,🦋,butterfly,ubedo,metaphorical,
 interest,metaphor,🤩,starstruck,azu,metaphorical,
 world,metaphor,🌐,globe,ogelo,metaphorical,
@@ -710,9 +1178,9 @@ each,function,,,,denylist,
 school,literal,🏫,school,ozogo,exact,
 late,metaphor,⏰,alarm-clock,alaro,metaphorical,
 high,metaphor,⛰️,mountain,omunadu,metaphorical,
+different,metaphor,🔀,shuffle,uzehuve,metaphorical,
 off,function,,,,denylist,
 next,metaphor,⏭️,next-track,enaze,metaphorical,
-end,metaphor,⌛,hourglass-done,ohura,metaphorical,
 why,function,,,,denylist,
 while,function,,,,denylist,
 play,literal,▶️,play,abola,exact,
@@ -720,140 +1188,128 @@ might,function,,,,denylist,
 must,function,,,,denylist,
 home,metaphor,🏠,house,ohuze,metaphorical,
 never,function,,,,denylist,
-course,metaphor,🎓,graduation-cap,aguradu,metaphorical,
+add,metaphor,➕,plus,ubuluzu,metaphorical,
+learn,metaphor,🎓,graduation-cap,aguradu,metaphorical,
 house,literal,🏠,house,ohuze,exact,
-report,metaphor,📰,newspaper,ena,metaphorical,
-case,metaphor,📁,file-folder,uvelove,metaphorical,
+news,metaphor,📰,newspaper,ena,metaphorical,
+document,metaphor,📁,file-folder,uvelove,metaphorical,
 woman,literal,👩,woman,owamo,exact,
 around,function,,,,denylist,
 book,literal,📖,book,obogo,exact,
 family,literal,👪,family,avumo,exact,
 seem,metaphor,🥸,disguise,uduzu,metaphorical,
-let,metaphor,🔓,unlocked,unole,metaphorical,
+open,metaphor,🔓,unlocked,unole,metaphorical,
 again,metaphor,🔁,repeat,ereba,metaphorical,
 kind,metaphor,🫶,care,agera,metaphorical,
-keep,metaphor,🔒,locked,olego,metaphorical,
+safe,metaphor,🔒,locked,olego,metaphorical,
 hear,metaphor,👂,ear,era,metaphorical,
-question,metaphor,❓,question-red,ugezu,metaphorical,
+every,function,,,,denylist,
 during,function,,,,denylist,
-big,metaphor,🐋,whale,aweha,metaphorical,
+always,function,,,,denylist,
+large,metaphor,🐋,whale,aweha,metaphorical,
 set,metaphor,📐,set-square,ezuda,metaphorical,
 small,metaphor,🐜,ant,ana,metaphorical,
-study,metaphor,🎓,graduation-cap,aguradu,metaphorical,
 follow,metaphor,👣,footprints,ovodu,metaphorical,
-begin,metaphor,▶️,play,abola,metaphorical,
-important,metaphor,❗,exclamation-red,ezagalu,metaphorical,
-since,metaphor,⏳,hourglass,ohurago,metaphorical,
+wait,metaphor,⏳,hourglass,ohurago,metaphorical,
 run,metaphor,🏃,running,uru,metaphorical,
 under,function,,,,denylist,
 few,function,,,,denylist,
-early,metaphor,🌅,sunrise,uzuneru,metaphorical,
+morning,metaphor,🌅,sunrise,uzuneru,metaphorical,
 hand,literal,✋,hand,aha,exact,
 government,metaphor,🏛️,classical-building,agula,metaphorical,
 move,metaphor,💨,dash,ada,metaphorical,
 money,metaphor,💰,money-bag,omeno,metaphorical,
 fact,metaphor,📑,bookmark-tab,oboga,metaphorical,
-area,metaphor,🗺️,world-map,owaro,metaphorical,
-provide,metaphor,🎁,wrapped-gift,aweru,metaphorical,
+however,function,,,,denylist,
+map,metaphor,🗺️,world-map,owaro,metaphorical,
 name,metaphor,📛,name-tag,anema,metaphorical,
 read,metaphor,📖,book,obogo,metaphorical,
 friend,metaphor,🧑‍🤝‍🧑,holding-hands,ohu,metaphorical,
-large,metaphor,🐋,whale,aweha,metaphorical,
+without,function,,,,denylist,
 information,literal,ℹ️,information,unova,exact,
-open,metaphor,🔓,unlocked,unole,metaphorical,
 order,gap,,,,,
 word,metaphor,🔤,letters,eledede,metaphorical,
-market,metaphor,🛒,cart,agarada,metaphorical,
+buy,metaphor,🛒,cart,agarada,metaphorical,
 spend,literal,💸,spend,ezebene,exact,
-build,metaphor,🔨,hammer,ahema,metaphorical,
-hold,metaphor,✋,hand,aha,metaphorical,
 service,metaphor,🛎️,bellhop,ebole,metaphorical,
 against,function,,,,denylist,
 believe,metaphor,🙏,pray,abora,metaphorical,
-second,metaphor,2️⃣,2,ajaja,metaphorical,
+two,metaphor,2️⃣,2,ajaja,metaphorical,
 though,function,,,,denylist,
 yes,function,,,,denylist,
 love,literal,🥰,love,ole,exact,
+increase,metaphor,📈,chart-up,aguha,metaphorical,
 plan,metaphor,📋,clipboard,ugola,metaphorical,
 result,metaphor,🏁,checkered-flag,egehega,metaphorical,
-away,metaphor,✈️,airplane,arubale,metaphorical,
-example,metaphor,💡,lightbulb,uluguhu,metaphorical,
+travel,metaphor,✈️,airplane,arubale,metaphorical,
+solution,metaphor,💡,lightbulb,uluguhu,metaphorical,
 happen,metaphor,💥,boom,obomo,metaphorical,
-offer,metaphor,🎁,wrapped-gift,aweru,metaphorical,
 young,metaphor,🧒,child,uguhu,metaphorical,
-close,metaphor,🔒,locked,olego,metaphorical,
-program,metaphor,💻,laptop,alobado,metaphorical,
-lead,metaphor,👑,crown,ogorowo,metaphorical,
-buy,metaphor,🛒,cart,agarada,metaphorical,
-thanks,metaphor,🙌,raise-hands,aru,metaphorical,
-far,metaphor,🌌,milky-way,umola,metaphorical,
+computer,metaphor,💻,laptop,alobado,metaphorical,
+leader,metaphor,👑,crown,ogorowo,metaphorical,
+thank,metaphor,🙌,raise-hands,aru,metaphorical,
+space,metaphor,🌌,milky-way,umola,metaphorical,
 student,literal,🧑‍🎓,student,uzedu,exact,
-face,metaphor,😊,smile,uze,metaphorical,
-hope,metaphor,🥺,pleading,eba,metaphorical,
+happy,metaphor,😊,smile,uze,metaphorical,
 price,gap,,,,,
 less,metaphor,➖,minus,umunu,metaphorical,
-room,metaphor,🛋️,couch-lamp,oguga,metaphorical,
+comfortable,metaphor,🛋️,couch-lamp,oguga,metaphorical,
 until,function,,,,denylist,
 form,gap,,,,,
 car,literal,🚗,car,agaraga,exact,
-learn,metaphor,🎓,graduation-cap,aguradu,metaphorical,
 score,metaphor,📊,bar-chart,abara,metaphorical,
 person,literal,🧑,person,ebo,exact,
 experience,metaphor,🧓,older-person,olede,metaphorical,
 once,function,,,,denylist,
-member,metaphor,🪪,id-card,udagu,metaphorical,
-sure,metaphor,✅,check,egehege,metaphorical,
+identify,metaphor,🪪,id-card,udagu,metaphorical,
+enough,function,,,,denylist,
 bad,metaphor,👎,thumbs-down,udohu,metaphorical,
 city,metaphor,🏙️,cityscape,ugoda,metaphorical,
 night,literal,🌃,night,unugu,exact,
 strong,metaphor,💪,bicep,ube,metaphorical,
-support,metaphor,🛟,life-ring,ulevu,metaphorical,
 whether,function,,,,denylist,
-line,metaphor,📄,page,abegabe,metaphorical,
-present,metaphor,🎁,wrapped-gift,aweru,metaphorical,
+paper,metaphor,📄,page,abegabe,metaphorical,
+quite,function,,,,denylist,
 although,function,,,,denylist,
-term,metaphor,📝,memo,emome,metaphorical,
+sure,metaphor,✅,check,egehege,metaphorical,
+note,metaphor,📝,memo,emome,metaphorical,
 calculate,metaphor,🧮,abacus,abagu,metaphorical,
-age,metaphor,🎂,birthday-cake,ubaro,metaphorical,
+cake,metaphor,🎂,birthday-cake,ubaro,metaphorical,
 low,metaphor,🔈,speaker-low,ezabego,metaphorical,
-speak,metaphor,🗣️,speaking-head,ezabu,metaphorical,
+within,function,,,,denylist,
 often,function,,,,denylist,
 train,literal,🚆,train,adura,exact,
 maybe,function,,,,denylist,
 true,metaphor,🙂‍↕️,yes,oze,metaphorical,
-view,metaphor,👁️,eye,ejo,metaphorical,
-together,metaphor,🧑‍🤝‍🧑,holding-hands,ohu,metaphorical,
+rather,function,,,,denylist,
 parent,metaphor,👪,family,avumo,metaphorical,
 hard,metaphor,🪨,rock,orogogo,metaphorical,
 party,literal,🥳,party,abo,exact,
 already,function,,,,denylist,
 worry,metaphor,😟,worried,owu,metaphorical,
-product,metaphor,🧰,toolbox,odolo,metaphorical,
-lose,metaphor,📉,chart-down,agoha,metaphorical,
+tool,metaphor,🧰,toolbox,odolo,metaphorical,
+fail,metaphor,📉,chart-down,agoha,metaphorical,
 story,metaphor,📜,scroll,ozogoro,metaphorical,
-continue,metaphor,⏩,fast-forward,avoza,metaphorical,
+almost,function,,,,denylist,
+fast,metaphor,⏩,fast-forward,avoza,metaphorical,
 stand,metaphor,🧍,standing,azuda,metaphorical,
+whole,metaphor,♾️,infinity,unuvu,metaphorical,
 yet,function,,,,denylist,
 care,literal,🫶,care,agera,exact,
-expect,metaphor,⏳,hourglass,ohurago,metaphorical,
 anything,function,,,,denylist,
 connect,metaphor,⛓️,chains,aguhanu,metaphorical,
-fall,metaphor,📉,chart-down,agoha,metaphorical,
 water,metaphor,💧,droplet,odero,metaphorical,
 send,metaphor,📤,outbox,odubo,metaphorical,
-allow,metaphor,🔓,unlocked,unole,metaphorical,
-soon,metaphor,⏩,fast-forward,avoza,metaphorical,
 watch,literal,⌚,watch,awa,exact,
-base,metaphor,🧱,brick,uburugu,metaphorical,
-suggest,metaphor,💡,lightbulb,uluguhu,metaphorical,
+wall,metaphor,🧱,brick,uburugu,metaphorical,
+past,metaphor,🕰️,mantel-clock,ameno,metaphorical,
 power,metaphor,⚡,lightning,ulugu,metaphorical,
 test,metaphor,🧪,test-tube,eduze,metaphorical,
 visit,metaphor,⛩️,shinto-shrine,uzohu,metaphorical,
-center,metaphor,🎯,bullseye,ubelo,metaphorical,
+target,metaphor,🎯,bullseye,ubelo,metaphorical,
 nothing,function,,,,denylist,
 return,metaphor,↩️,back,abagaga,metaphorical,
-mother,metaphor,👩,woman,owamo,metaphorical,
-walk,metaphor,🚶,walking,awu,metaphorical,
+lady,metaphor,👩,woman,owamo,metaphorical,
 law,metaphor,⚖️,scale,azegale,metaphorical,
 value,metaphor,💎,gemstone,egome,metaphorical,
 office,literal,🏢,office,ovuvego,exact,
@@ -861,661 +1317,339 @@ record,literal,⏺️,record,eroge,exact,
 stay,metaphor,🏨,hotel,ohedo,metaphorical,
 stop,literal,🛑,stop,ozodo,exact,
 several,function,,,,denylist,
-light,metaphor,🚦,traffic-light,aduru,metaphorical,
+traffic,metaphor,🚦,traffic-light,aduru,metaphorical,
 answer,gap,,,,,
 sit,metaphor,💺,seat,ezadeza,metaphorical,
-letter,metaphor,🔤,letters,eledede,metaphorical,
-language,metaphor,🔤,letters,eledede,metaphorical,
-subject,metaphor,🎓,graduation-cap,aguradu,metaphorical,
-class,metaphor,🏫,school,ozogo,metaphorical,
-town,metaphor,🏙️,cityscape,ugoda,metaphorical,
+lesson,metaphor,🏫,school,ozogo,metaphorical,
 half,metaphor,🥧,pie,ubebu,metaphorical,
-minute,metaphor,⏱️,stopwatch,ozadoba,metaphorical,
+moment,metaphor,⏱️,stopwatch,ozadoba,metaphorical,
 food,metaphor,🍔,hamburger,ahume,metaphorical,
 break,metaphor,💔,broken-heart,obe,metaphorical,
 clear,gap,,,,,
+future,metaphor,🔮,crystal-ball,ogara,metaphorical,
 either,function,,,,denylist,
 per,function,,,,denylist,
-remain,metaphor,⚓,anchor,anoga,metaphorical,
+harbor,metaphor,⚓,anchor,anoga,metaphorical,
 top,metaphor,🎩,top-hat,odabo,metaphorical,
-win,metaphor,🏅,medal,emadela,metaphorical,
-color,metaphor,🎨,palette,abeleda,metaphorical,
-involve,metaphor,🔗,link,ulunugu,metaphorical,
-reach,metaphor,🛬,arrival,arura,metaphorical,
+among,function,,,,denylist,
+art,metaphor,🎨,palette,abeleda,metaphorical,
+join,metaphor,🔗,link,ulunugu,metaphorical,
 across,function,,,,denylist,
-note,metaphor,📝,memo,emome,metaphorical,
-history,metaphor,📜,scroll,ozogoro,metaphorical,
-create,metaphor,🔨,hammer,ahema,metaphorical,
 drive,metaphor,🚗,car,agaraga,metaphorical,
 along,function,,,,denylist,
 type,metaphor,⌨️,keyboard,egobo,metaphorical,
-sound,metaphor,🔊,speaker-high,ezabegu,metaphorical,
+loud,metaphor,🔊,speaker-high,ezabegu,metaphorical,
 eye,literal,👁️,eye,ejo,exact,
 music,metaphor,🎵,music-note,umuzo,metaphorical,
 game,metaphor,🎮,video-game,uvedo,metaphorical,
-political,metaphor,🗳️,ballot-box,abololado,metaphorical,
+vote,metaphor,🗳️,ballot-box,abololado,metaphorical,
 free,metaphor,🕊️,dove,odevo,metaphorical,
-moment,metaphor,⏱️,stopwatch,ozadoba,metaphorical,
 sale,metaphor,🧾,receipt,eregu,metaphorical,
-policy,metaphor,📜,scroll,ozogoro,metaphorical,
-further,metaphor,⏩,fast-forward,avoza,metaphorical,
-body,metaphor,🧑,person,ebo,metaphorical,
-require,metaphor,🆘,sos,ozozo,metaphorical,
-wait,metaphor,⏳,hourglass,ohurago,metaphorical,
-appear,metaphor,🥸,disguise,uduzu,metaphorical,
+someone,function,,,,denylist,
 toward,function,,,,denylist,
 easy,metaphor,👌,ok,ogogo,metaphorical,
-individual,metaphor,🧑,person,ebo,metaphorical,
 black,literal,⚫,black,abalaga,exact,
-sense,metaphor,💓,heartbeat,ehare,metaphorical,
-rule,metaphor,📜,scroll,ozogoro,metaphorical,
+perhaps,function,,,,denylist,
 pass,metaphor,🎫,ticket,udeguge,metaphorical,
-produce,metaphor,🔨,hammer,ahema,metaphorical,
 sell,metaphor,🛍️,shopping-bag,ozuha,metaphorical,
-research,metaphor,🧪,test-tube,eduze,metaphorical,
-cover,metaphor,☂️,umbrella,umeba,metaphorical,
-paper,metaphor,📄,page,abegabe,metaphorical,
+everything,function,,,,denylist,
+protect,metaphor,☂️,umbrella,umeba,metaphorical,
 human,metaphor,🧑,person,ebo,metaphorical,
-computer,metaphor,💻,laptop,alobado,metaphorical,
-staff,metaphor,🧑‍💼,office-worker,ovuve,metaphorical,
+worker,metaphor,🧑‍💼,office-worker,ovuve,metaphorical,
 film,literal,🎞️,film,uvulu,exact,
-morning,metaphor,🌅,sunrise,uzuneru,metaphorical,
 war,metaphor,⚔️,sword-crossed,ozowe,metaphorical,
 account,metaphor,📒,ledger,elede,metaphorical,
-shop,metaphor,🛒,cart,agarada,metaphorical,
-someone,function,,,,denylist,
 above,function,,,,denylist,
-design,metaphor,🎨,palette,abeleda,metaphorical,
-condition,metaphor,🌡️,thermometer,edohe,metaphorical,
-choose,metaphor,🔘,option,obudono,metaphorical,
-father,metaphor,👨,man,amana,metaphorical,
-table,metaphor,🍽️,plate,abelade,metaphorical,
+sometimes,function,,,,denylist,
+temperature,metaphor,🌡️,thermometer,edohe,metaphorical,
+guy,metaphor,👨,man,amana,metaphorical,
+dinner,metaphor,🍽️,plate,abelade,metaphorical,
 forward,literal,↪️,forward,ovaro,exact,
-die,metaphor,💀,skull,uzugulu,metaphorical,
+death,metaphor,💀,skull,uzugulu,metaphorical,
 bear,literal,🐻,bear,ebareba,exact,
 cut,metaphor,✂️,scissors,uzogu,metaphorical,
 himself,function,,,,denylist,
 especially,gap,,,,,
 girl,literal,👧,girl,ugurulu,exact,
+else,function,,,,denylist,
 particular,gap,,,,,
 perform,metaphor,🎭,theater,edahe,metaphorical,
-join,metaphor,🔗,link,ulunugu,metaphorical,
-difficult,metaphor,🪨,rock,orogogo,metaphorical,
+please,function,,,,denylist,
 health,metaphor,⚕️,medical,emuda,metaphorical,
-eat,metaphor,🍔,hamburger,ahume,metaphorical,
-step,metaphor,🚶,walking,awu,metaphorical,
 phone,literal,📱,phone,obeho,exact,
+themselves,function,,,,denylist,
 draw,metaphor,✏️,pencil,ebune,metaphorical,
 white,literal,⚪,white,uwehu,exact,
-model,metaphor,🤖,robot,oro,metaphorical,
-raise,metaphor,🙋,raise-hand,aruze,metaphorical,
-customer,metaphor,🏬,department-store,edabe,metaphorical,
-front,metaphor,↪️,forward,ovaro,metaphorical,
+machine,metaphor,🤖,robot,oro,metaphorical,
+volunteer,metaphor,🙋,raise-hand,aruze,metaphorical,
+store,metaphor,🏬,department-store,edabe,metaphorical,
+ahead,metaphor,↪️,forward,ovaro,metaphorical,
 door,literal,🚪,door,odorodo,exact,
+outside,function,,,,denylist,
 behind,function,,,,denylist,
-approach,metaphor,🛬,arrival,arura,metaphorical,
 teacher,literal,🧑‍🏫,teacher,edage,exact,
-charge,metaphor,💳,credit-card,egura,metaphorical,
-finally,metaphor,🏁,checkered-flag,egehega,metaphorical,
+payment,metaphor,💳,credit-card,egura,metaphorical,
 sign,metaphor,🪧,placard,abala,metaphorical,
-claim,metaphor,🪧,placard,abala,metaphorical,
-travel,metaphor,✈️,airplane,arubale,metaphorical,
-enjoy,metaphor,😊,smile,uze,metaphorical,
-death,metaphor,💀,skull,uzugulu,metaphorical,
 picture,metaphor,🖼️,framed-picture,averu,metaphorical,
 boy,literal,👦,boy,obobo,exact,
-happy,metaphor,😊,smile,uze,metaphorical,
 couple,literal,💑,couple,ogube,exact,
 wide,metaphor,🗾,japan-map,ajaba,metaphorical,
-quality,metaphor,💎,gemstone,egome,metaphorical,
-round,metaphor,🔁,repeat,ereba,metaphorical,
-road,metaphor,🚗,car,agaraga,metaphorical,
 list,metaphor,🔖,bookmark,obogamo,metaphorical,
-wish,metaphor,🥺,pleading,eba,metaphorical,
+therefore,function,,,,denylist,
 wear,metaphor,👕,t-shirt,uduzuhu,metaphorical,
 rest,metaphor,🛏️,bed,ebedebe,metaphorical,
-kid,metaphor,🧒,child,uguhu,metaphorical,
 industry,metaphor,🏭,factory,avogo,metaphorical,
-education,metaphor,🎓,graduation-cap,aguradu,metaphorical,
-kill,metaphor,💀,skull,uzugulu,metaphorical,
-serve,metaphor,🛎️,bellhop,ebole,metaphorical,
+itself,function,,,,denylist,
 teach,metaphor,🧑‍🏫,teacher,edage,metaphorical,
 field,metaphor,🏑,field-hockey,uvelo,metaphorical,
-security,metaphor,🔒,locked,olego,metaphorical,
 air,metaphor,🌬️,wind,uwunudu,metaphorical,
-benefit,metaphor,🛟,life-ring,ulevu,metaphorical,
-news,metaphor,📰,newspaper,ena,metaphorical,
-vote,metaphor,🗳️,ballot-box,abololado,metaphorical,
-focus,metaphor,🎯,bullseye,ubelo,metaphorical,
-space,metaphor,🌌,milky-way,umola,metaphorical,
-usually,metaphor,🔁,repeat,ereba,metaphorical,
-data,metaphor,📑,bookmark-tab,oboga,metaphorical,
-single,metaphor,1️⃣,1,ujuju,metaphorical,
 address,metaphor,📧,email,emalu,metaphorical,
-chance,metaphor,🤞,crossed-fingers,ogeru,metaphorical,
-technology,metaphor,💻,laptop,alobado,metaphorical,
-mention,metaphor,🗣️,speaking-head,ezabu,metaphorical,
-choice,metaphor,🔘,option,obudono,metaphorical,
-save,metaphor,🛟,life-ring,ulevu,metaphorical,
 announce,metaphor,📣,megaphone,emago,metaphorical,
-material,metaphor,🧱,brick,uburugu,metaphorical,
 limit,metaphor,🛑,stop,ozodo,metaphorical,
-listen,metaphor,👂,ear,era,metaphorical,
-due,metaphor,⏳,hourglass,ohurago,metaphorical,
 wrong,metaphor,❌,cross,ogorozo,metaphorical,
 foot,literal,🦶,foot,ovodo,exact,
+upon,function,,,,denylist,
 check,literal,✅,check,egehege,exact,
-complete,metaphor,⌛,hourglass-done,ohura,metaphorical,
 lie,literal,🤥,lie,ule,exact,
 pick,literal,⛏️,pick,ubugugu,exact,
-personal,metaphor,🪪,id-card,udagu,metaphorical,
 animal,metaphor,🐾,paw-prints,abuwa,metaphorical,
-arrive,metaphor,🛬,arrival,arura,metaphorical,
-current,metaphor,⚡,lightning,ulugu,metaphorical,
-evidence,metaphor,📑,bookmark-tab,oboga,metaphorical,
 exist,gap,,,,,
 fight,literal,🫯,fight,uvu,exact,
-leader,metaphor,👑,crown,ogorowo,metaphorical,
-street,metaphor,🏙️,cityscape,ugoda,metaphorical,
-contact,metaphor,📱,phone,obeho,metaphorical,
 particularly,gap,,,,,
-wife,metaphor,👩,woman,owamo,metaphorical,
 sport,metaphor,⚽,soccer,ozego,metaphorical,
-finish,metaphor,⌛,hourglass-done,ohura,metaphorical,
 apply,gap,,,,,
-president,metaphor,👑,crown,ogorowo,metaphorical,
 fire,literal,🔥,fire,uveruve,exact,
 police,literal,👮,police,obule,exact,
-store,metaphor,🏬,department-store,edabe,metaphorical,
-poor,metaphor,👎,thumbs-down,udohu,metaphorical,
 laugh,literal,😂,laugh,alu,exact,
 heart,literal,❤️,heart,ehareda,exact,
-employee,metaphor,🧑‍💼,office-worker,ovuve,metaphorical,
 bank,literal,🏦,bank,abanaga,exact,
 cell,metaphor,🦠,microbe,umoge,metaphorical,
-article,metaphor,📰,newspaper,ena,metaphorical,
-fast,metaphor,⏩,fast-forward,avoza,metaphorical,
-attack,metaphor,⚔️,sword-crossed,ozowe,metaphorical,
 surprise,literal,😮,surprise,uzure,exact,
-pretty,metaphor,💮,flower,ove,metaphorical,
-drop,metaphor,📉,chart-down,agoha,metaphorical,
-official,metaphor,📰,newspaper,ena,metaphorical,
-art,metaphor,🎨,palette,abeleda,metaphorical,
-campaign,metaphor,🗳️,ballot-box,abololado,metaphorical,
-private,metaphor,🔒,locked,olego,metaphorical,
+beautiful,metaphor,💮,flower,ove,metaphorical,
 pause,literal,⏸️,pause,abuze,exact,
+everyone,function,,,,denylist,
 page,literal,📄,page,abegabe,exact,
-summer,metaphor,☀️,sun,uzunu,metaphorical,
 drink,metaphor,🍹,tropical-drink,odura,metaphorical,
-park,metaphor,🏞️,national-park,anudo,metaphorical,
-key,literal,🔑,key,egoge,exact,
-wonder,metaphor,❓,question-red,ugezu,metaphorical,
 nature,metaphor,🏞️,national-park,anudo,metaphorical,
+key,literal,🔑,key,egoge,exact,
+inside,function,,,,denylist,
+myself,function,,,,denylist,
 plant,metaphor,🪴,potted-plant,obeda,metaphorical,
-paint,metaphor,🎨,palette,abeleda,metaphorical,
-worker,metaphor,🧑‍💼,office-worker,ovuve,metaphorical,
-press,metaphor,📰,newspaper,ena,metaphorical,
 whatever,function,,,,denylist,
-necessary,metaphor,🆘,sos,ozozo,metaphorical,
-region,metaphor,🗺️,world-map,owaro,metaphorical,
-evening,metaphor,🌉,bridge-night,uberudu,metaphorical,
+bridge,metaphor,🌉,bridge-night,uberudu,metaphorical,
 catch,metaphor,🎣,fishing,uvuzuhunu,metaphorical,
-attempt,metaphor,🤞,crossed-fingers,ogeru,metaphorical,
 son,metaphor,👦,boy,obobo,metaphorical,
 medium,metaphor,🔉,speaker-medium,ezabege,metaphorical,
 bed,literal,🛏️,bed,ebedebe,exact,
-final,metaphor,⌛,hourglass-done,ohura,metaphorical,
-guy,metaphor,👨,man,amana,metaphorical,
-image,metaphor,🖼️,framed-picture,averu,metaphorical,
+indeed,function,,,,denylist,
 station,literal,🚉,station,azudo,exact,
-fail,metaphor,📉,chart-down,agoha,metaphorical,
-environment,metaphor,🏞️,national-park,anudo,metaphorical,
-production,metaphor,🏭,factory,avogo,metaphorical,
-contract,metaphor,📜,scroll,ozogoro,metaphorical,
-player,metaphor,🎮,video-game,uvedo,metaphorical,
-alone,metaphor,1️⃣,1,ujuju,metaphorical,
-significant,metaphor,❗,exclamation-red,ezagalu,metaphorical,
-wall,metaphor,🧱,brick,uburugu,metaphorical,
-series,metaphor,📖,book,obogo,metaphorical,
 success,metaphor,🏆,trophy,odorobo,metaphorical,
-director,metaphor,👑,crown,ogorowo,metaphorical,
 clearly,gap,,,,,
-depend,metaphor,🔗,link,ulunugu,metaphorical,
 window,literal,🪟,window,uwonu,exact,
-purpose,metaphor,🎯,bullseye,ubelo,metaphorical,
 tree,literal,🌳,tree,ederede,exact,
-college,metaphor,🎓,graduation-cap,aguradu,metaphorical,
 debate,gap,,,,,
 board,gap,,,,,
-holiday,metaphor,🎉,party-popper,aboro,metaphorical,
-mark,metaphor,✏️,pencil,ebune,metaphorical,
+celebrate,metaphor,🎉,party-popper,aboro,metaphorical,
 church,literal,⛪,church,uguhuru,exact,
-machine,metaphor,🤖,robot,oro,metaphorical,
-achieve,metaphor,🏆,trophy,odorobo,metaphorical,
-item,metaphor,🏷️,label,aleba,metaphorical,
 cent,metaphor,🪙,coin,oguno,metaphorical,
 floor,metaphor,🪜,ladder,aleda,metaphorical,
-stuff,metaphor,🏷️,label,aleba,metaphorical,
 anyone,function,,,,denylist,
-election,metaphor,🗳️,ballot-box,abololado,metaphorical,
-military,metaphor,⚔️,sword-crossed,ozowe,metaphorical,
 hotel,literal,🏨,hotel,ohedo,exact,
 below,function,,,,denylist,
-movie,metaphor,🎦,cinema,ugena,metaphorical,
 doctor,literal,🧑‍⚕️,doctor,odogo,exact,
-sorry,metaphor,😭,cry,ogoro,metaphorical,
-challenge,metaphor,🪨,rock,orogogo,metaphorical,
+sad,metaphor,😭,cry,ogoro,metaphorical,
 link,literal,🔗,link,ulunugu,exact,
 despite,function,,,,denylist,
-introduce,metaphor,▶️,play,abola,metaphorical,
-marry,metaphor,💒,wedding,ewude,metaphorical,
-unit,metaphor,⚛️,atom,adoma,metaphorical,
-card,metaphor,💳,credit-card,egura,metaphorical,
+marriage,metaphor,💒,wedding,ewude,metaphorical,
+science,metaphor,⚛️,atom,adoma,metaphorical,
 hospital,literal,🏥,hospital,ohuza,exact,
-quickly,metaphor,⏩,fast-forward,avoza,metaphorical,
 interview,metaphor,🎤,microphone,umogo,metaphorical,
-release,metaphor,🔓,unlocked,unole,metaphorical,
-tax,metaphor,💳,credit-card,egura,metaphorical,
-solution,metaphor,💡,lightbulb,uluguhu,metaphorical,
 specific,gap,,,,,
-beautiful,metaphor,💮,flower,ove,metaphorical,
 fear,literal,😨,fear,eva,exact,
-aim,metaphor,🎯,bullseye,ubelo,metaphorical,
 television,literal,📺,television,edelu,exact,
-target,metaphor,🎯,bullseye,ubelo,metaphorical,
-degree,metaphor,🎓,graduation-cap,aguradu,metaphorical,
 red,literal,🔴,red,erede,exact,
-husband,metaphor,👨,man,amana,metaphorical,
-access,metaphor,🔓,unlocked,unole,metaphorical,
-identify,metaphor,🪪,id-card,udagu,metaphorical,
-loss,metaphor,📉,chart-down,agoha,metaphorical,
 shall,function,,,,denylist,
 bus,literal,🚌,bus,ubuzu,exact,
-village,metaphor,🏙️,cityscape,ugoda,metaphorical,
-worth,metaphor,💎,gemstone,egome,metaphorical,
-natural,metaphor,🏞️,national-park,anudo,metaphorical,
-attend,metaphor,🛎️,bellhop,ebole,metaphorical,
-brother,metaphor,👨,man,amana,metaphorical,
+yourself,function,,,,denylist,
 investment,gap,,,,,
-trip,metaphor,✈️,airplane,arubale,metaphorical,
 beyond,function,,,,denylist,
 sleep,literal,💤,sleep,ezele,exact,
 fish,literal,🐟,fish,uvuzuhu,exact,
-energy,metaphor,⚡,lightning,ulugu,metaphorical,
-touch,metaphor,✋,hand,aha,metaphorical,
-file,metaphor,📁,file-folder,uvelove,metaphorical,
 bar,metaphor,🍺,beer,eberebe,metaphorical,
 pain,metaphor,🏥,hospital,ohuza,metaphorical,
-deep,metaphor,🌊,ocean-wave,ogena,metaphorical,
+ocean,metaphor,🌊,ocean-wave,ogena,metaphorical,
+except,function,,,,denylist,
 clean,metaphor,🧼,soap,ozabo,metaphorical,
-tend,metaphor,👣,footprints,ovodu,metaphorical,
 star,literal,⭐,star,azada,exact,
-network,metaphor,🔗,link,ulunugu,metaphorical,
 seat,literal,💺,seat,ezadeza,exact,
 throw,metaphor,🪃,boomerang,obome,metaphorical,
 task,gap,,,,,
 goal,literal,🥅,goal,ogalo,exact,
-associate,metaphor,🔗,link,ulunugu,metaphorical,
 blue,literal,🔵,blue,ubelube,exact,
-positive,metaphor,👍,thumbs-up,uduhu,metaphorical,
 option,literal,🔘,option,obudono,exact,
-message,metaphor,📝,memo,emome,metaphorical,
-instance,metaphor,💡,lightbulb,uluguhu,metaphorical,
-style,metaphor,🎨,palette,abeleda,metaphorical,
 refer,metaphor,☝️,point,obuno,metaphorical,
 cold,literal,🥶,cold,ogo,exact,
-push,metaphor,✋,hand,aha,metaphorical,
-quarter,metaphor,🥧,pie,ubebu,metaphorical,
 baby,literal,👶,baby,aboba,exact,
-successful,metaphor,🏆,trophy,odorobo,metaphorical,
 sing,metaphor,🧑‍🎤,singer,uzenu,metaphorical,
-competition,metaphor,🏆,trophy,odorobo,metaphorical,
-propose,metaphor,🙋,raise-hand,aruze,metaphorical,
-reference,metaphor,📑,bookmark-tab,oboga,metaphorical,
-adult,metaphor,🧑,person,ebo,metaphorical,
 fly,literal,🪰,fly,ovolo,exact,
-document,metaphor,📁,file-folder,uvelove,metaphorical,
 application,gap,,,,,
 hot,literal,🥵,hot,oho,exact,
 obviously,gap,,,,,
 unclear,metaphor,🌫️,fog,ovogovo,metaphorical,
-bill,metaphor,💳,credit-card,egura,metaphorical,
 separate,metaphor,⛓️‍💥,unlink,unulu,metaphorical,
-central,metaphor,🎯,bullseye,ubelo,metaphorical,
 anyway,function,,,,denylist,
 speech,literal,💬,speech,ezebege,exact,
 dog,literal,🐕,dog,odogodo,exact,
 officer,metaphor,👮,police,obule,metaphorical,
 oil,metaphor,🪔,oil-lamp,olula,metaphorical,
 dress,literal,👗,dress,ederezeze,exact,
-fun,metaphor,😊,smile,uze,metaphorical,
-protect,metaphor,☂️,umbrella,umeba,metaphorical,
-resource,metaphor,🧰,toolbox,odolo,metaphorical,
-science,metaphor,⚛️,atom,adoma,metaphorical,
-damage,metaphor,💔,broken-heart,obe,metaphorical,
-basis,metaphor,🧱,brick,uburugu,metaphorical,
-author,metaphor,✍️,writing-hand,uwura,metaphorical,
-basic,metaphor,🧱,brick,uburugu,metaphorical,
-encourage,metaphor,👍,thumbs-up,uduhu,metaphorical,
 hair,metaphor,💇,haircut,ahu,metaphorical,
 male,literal,♂️,male,amela,exact,
-useful,metaphor,🧰,toolbox,odolo,metaphorical,
-restaurant,metaphor,🍽️,plate,abelade,metaphorical,
-property,metaphor,🏠,house,ohuze,metaphorical,
-previous,metaphor,↩️,back,abagaga,metaphorical,
 dark,metaphor,🌃,night,unugu,metaphorical,
 earn,gap,,,,,
 daughter,metaphor,👧,girl,ugurulu,metaphorical,
 post,metaphor,🏤,post-office,obozu,metaphorical,
 newspaper,literal,📰,newspaper,ena,exact,
-define,metaphor,📝,memo,emome,metaphorical,
-conclusion,metaphor,🏁,checkered-flag,egehega,metaphorical,
+everybody,function,,,,denylist,
 mine,function,,,,denylist,
 green,literal,🟢,green,egerene,exact,
-song,metaphor,🎵,music-note,umuzo,metaphorical,
-object,metaphor,🏷️,label,aleba,metaphorical,
 maintain,metaphor,🔧,wrench,ewere,metaphorical,
-credit,metaphor,💳,credit-card,egura,metaphorical,
 ring,literal,💍,ring,urunugu,exact,
-dead,metaphor,💀,skull,uzugulu,metaphorical,
-afternoon,metaphor,☀️,sun,uzunu,metaphorical,
-prefer,metaphor,👍,thumbs-up,uduhu,metaphorical,
 clothes,metaphor,👚,womans-clothes,owamone,metaphorical,
-screen,metaphor,🎦,cinema,ugena,metaphorical,
-track,metaphor,👣,footprints,ovodu,metaphorical,
 dance,metaphor,🕺,dancing,adu,metaphorical,
 female,literal,♀️,female,evame,exact,
-sister,metaphor,👩,woman,owamo,metaphorical,
 rock,literal,🪨,rock,orogogo,exact,
 nor,function,,,,denylist,
-university,metaphor,🎓,graduation-cap,aguradu,metaphorical,
 dollar,literal,💵,dollar,odalo,exact,
-garden,metaphor,🪴,potted-plant,obeda,metaphorical,
 fix,metaphor,🧑‍🔧,mechanic,ema,metaphorical,
-ahead,metaphor,↪️,forward,ovaro,metaphorical,
 cross,literal,❌,cross,ogorozo,exact,
 yeah,metaphor,✌️,victory,uvo,metaphorical,
-candidate,metaphor,🗳️,ballot-box,abololado,metaphorical,
 somebody,function,,,,denylist,
 pound,literal,💷,pound,obunodu,exact,
-magazine,metaphor,📰,newspaper,ena,metaphorical,
-shape,metaphor,⬜,white-square,uwehuda,metaphorical,
-sea,metaphor,🌊,ocean-wave,ogena,metaphorical,
-immediately,metaphor,⚡,lightning,ulugu,metaphorical,
-welcome,metaphor,👋,wave,awe,metaphorical,
+square,metaphor,⬜,white-square,uwehuda,metaphorical,
+hello,metaphor,👋,wave,awe,metaphorical,
 smile,literal,😊,smile,uze,exact,
 agent,metaphor,🕵️,detective,ede,metaphorical,
-traditional,metaphor,📜,scroll,ozogoro,metaphorical,
 judge,literal,🧑‍⚖️,judge,uje,exact,
 herself,function,,,,denylist,
-generation,metaphor,👪,family,avumo,metaphorical,
-difficulty,metaphor,🪨,rock,orogogo,metaphorical,
-purchase,metaphor,🛒,cart,agarada,metaphorical,
 shoot,metaphor,🏹,bow-arrow,obawo,metaphorical,
 unless,function,,,,denylist,
-independent,metaphor,🕊️,dove,odevo,metaphorical,
-recommend,metaphor,👍,thumbs-up,uduhu,metaphorical,
 survey,gap,,,,,
 stick,metaphor,🪵,wood,owodo,metaphorical,
-request,metaphor,🥺,pleading,eba,metaphorical,
 wind,literal,🌬️,wind,uwunudu,exact,
 exchange,metaphor,💱,currency-exchange,ugerore,metaphorical,
 blood,metaphor,🩸,blood-drop,obolodo,metaphorical,
 block,metaphor,⬛,black-square,abula,metaphorical,
-warm,metaphor,🔥,fire,uveruve,metaphorical,
-count,metaphor,🔢,numbers,unemu,metaphorical,
-scene,metaphor,🖼️,framed-picture,averu,metaphorical,
-writer,metaphor,✍️,writing-hand,uwura,metaphorical,
-content,metaphor,📄,page,abegabe,metaphorical,
-safe,metaphor,🔒,locked,olego,metaphorical,
-invite,metaphor,✉️,envelope,enevo,metaphorical,
-element,metaphor,⚛️,atom,adoma,metaphorical,
-effective,metaphor,🎯,bullseye,ubelo,metaphorical,
+heat,metaphor,🔥,fire,uveruve,metaphorical,
+mail,metaphor,✉️,envelope,enevo,metaphorical,
 correct,literal,⭕,correct,ogero,exact,
 medical,literal,⚕️,medical,emuda,exact,
 beat,metaphor,🥁,drum,udurumu,metaphorical,
-telephone,metaphor,📱,phone,obeho,metaphorical,
-copy,metaphor,📄,page,abegabe,metaphorical,
-advice,metaphor,💡,lightbulb,uluguhu,metaphorical,
-handle,metaphor,✋,hand,aha,metaphorical,
 glass,metaphor,🍷,wine,uwenu,metaphorical,
-trial,metaphor,🧪,test-tube,eduze,metaphorical,
 radio,literal,📻,radio,arudo,exact,
-text,metaphor,📝,memo,emome,metaphorical,
-context,metaphor,🔗,link,ulunugu,metaphorical,
-ride,metaphor,🚗,car,agaraga,metaphorical,
-directly,metaphor,☝️,point,obuno,metaphorical,
-heavy,metaphor,⚓,anchor,anoga,metaphorical,
-remove,metaphor,🗑️,wastebasket,aweza,metaphorical,
-equipment,metaphor,🧰,toolbox,odolo,metaphorical,
-title,metaphor,📛,name-tag,anema,metaphorical,
+waste,metaphor,🗑️,wastebasket,aweza,metaphorical,
 chair,literal,🪑,chair,aguharu,exact,
-sample,metaphor,🧪,test-tube,eduze,metaphorical,
-sex,metaphor,💑,couple,ogube,metaphorical,
+pair,metaphor,💑,couple,ogube,metaphorical,
 video,metaphor,📹,video-camera,uvedoga,metaphorical,
 weather,metaphor,🌦️,sun-rain,uzanu,metaphorical,
-collect,metaphor,🧺,basket,abezage,metaphorical,
-appeal,metaphor,🤩,starstruck,azu,metaphorical,
+gather,metaphor,🧺,basket,abezage,metaphorical,
 flat,metaphor,🥿,flat-shoe,avole,metaphorical,
-flow,metaphor,🌊,ocean-wave,ogena,metaphorical,
 farm,metaphor,🧑‍🌾,farmer,avera,metaphorical,
-collection,metaphor,🧺,basket,abezage,metaphorical,
 hang,metaphor,🪝,hook,ohogo,metaphorical,
-negative,metaphor,👎,thumbs-down,udohu,metaphorical,
-band,metaphor,🎵,music-note,umuzo,metaphorical,
-relative,metaphor,👪,family,avumo,metaphorical,
-tour,metaphor,✈️,airplane,arubale,metaphorical,
-alternative,metaphor,🔘,option,obudono,metaphorical,
-software,metaphor,💻,laptop,alobado,metaphorical,
-pair,metaphor,💑,couple,ogube,metaphorical,
 ship,literal,🚢,ship,uzuhubu,exact,
 attitude,metaphor,😏,smirk,uzumu,metaphorical,
-cheap,metaphor,🧾,receipt,eregu,metaphorical,
-double,metaphor,2️⃣,2,ajaja,metaphorical,
 leg,literal,🦵,leg,ele,exact,
-observe,metaphor,👁️,eye,ejo,metaphorical,
-sentence,metaphor,📝,memo,emome,metaphorical,
 print,metaphor,🖨️,printer,uberunedu,metaphorical,
+nobody,function,,,,denylist,
 examine,metaphor,🔬,microscope,umogore,metaphorical,
-lay,metaphor,🛏️,bed,ebedebe,metaphorical,
-speed,metaphor,⏩,fast-forward,avoza,metaphorical,
-politics,metaphor,🗳️,ballot-box,abololado,metaphorical,
-display,metaphor,🎦,cinema,ugena,metaphorical,
-transfer,metaphor,💨,dash,ada,metaphorical,
 user,metaphor,🧑‍🦽,wheelchair-user,ewe,metaphorical,
-dinner,metaphor,🍽️,plate,abelade,metaphorical,
 slow,metaphor,🐌,snail,azunalu,metaphorical,
-regular,metaphor,🔁,repeat,ereba,metaphorical,
-apart,metaphor,⛓️‍💥,unlink,unulu,metaphorical,
 suit,metaphor,🤵,tuxedo,udezo,metaphorical,
 peace,literal,☮️,peace,ebagebe,exact,
-status,metaphor,🧍,standing,azuda,metaphorical,
-crime,metaphor,👮,police,obule,metaphorical,
-decline,metaphor,📉,chart-down,agoha,metaphorical,
-launch,metaphor,▶️,play,abola,metaphorical,
-consumer,metaphor,🏬,department-store,edabe,metaphorical,
-favor,metaphor,👍,thumbs-up,uduhu,metaphorical,
 dry,metaphor,🏜️,desert,edeze,metaphorical,
-spot,metaphor,👁️,eye,ejo,metaphorical,
 horse,literal,🐎,horse,ohero,exact,
-eventually,metaphor,⏳,hourglass,ohurago,metaphorical,
-heat,metaphor,🔥,fire,uveruve,metaphorical,
-excite,metaphor,🤩,starstruck,azu,metaphorical,
-reader,metaphor,📖,book,obogo,metaphorical,
-importance,metaphor,❗,exclamation-red,ezagalu,metaphorical,
-grant,metaphor,🎁,wrapped-gift,aweru,metaphorical,
 taxi,literal,🚕,taxi,aduza,exact,
-feed,metaphor,🍔,hamburger,ahume,metaphorical,
-sector,metaphor,🥧,pie,ubebu,metaphorical,
-mistake,metaphor,❌,cross,ogorozo,metaphorical,
-ensure,metaphor,🔒,locked,olego,metaphorical,
-satisfy,metaphor,😊,smile,uze,metaphorical,
-chief,metaphor,👑,crown,ogorowo,metaphorical,
 cool,literal,😎,cool,ogolo,exact,
-expert,metaphor,🎓,graduation-cap,aguradu,metaphorical,
 wave,literal,👋,wave,awe,exact,
 labor,metaphor,👷,construction-worker,ogunu,metaphorical,
 surface,metaphor,🧽,sponge,ozebo,metaphorical,
-library,metaphor,📖,book,obogo,metaphorical,
 edge,metaphor,🔪,knife,ugenuve,metaphorical,
 camp,metaphor,⛺,tent,edene,metaphorical,
 lift,metaphor,🏋️,weightlifting,ewu,metaphorical,
 email,literal,📧,email,emalu,exact,
-struggle,metaphor,🪨,rock,orogogo,metaphorical,
-select,metaphor,🔘,option,obudono,metaphorical,
-river,metaphor,💧,droplet,odero,metaphorical,
 opposite,metaphor,↔️,left-right,eluve,metaphorical,
 roll,metaphor,🧻,paper-roll,abebo,metaphorical,
-photograph,metaphor,📷,camera,agemara,metaphorical,
+photo,metaphor,📷,camera,agemara,metaphorical,
 artist,literal,🧑‍🎨,artist,aruda,exact,
-conflict,metaphor,⚔️,sword-crossed,ozowe,metaphorical,
-gas,metaphor,⛽,gas-pump,aguza,metaphorical,
-net,metaphor,🎣,fishing,uvuzuhunu,metaphorical,
-category,metaphor,🏷️,label,aleba,metaphorical,
-secretary,metaphor,🧑‍💼,office-worker,ovuve,metaphorical,
-defense,metaphor,🛡️,shield,uzehu,metaphorical,
-quick,metaphor,⏩,fast-forward,avoza,metaphorical,
+fuel,metaphor,⛽,gas-pump,aguza,metaphorical,
+defend,metaphor,🛡️,shield,uzehu,metaphorical,
 cook,literal,🧑‍🍳,cook,ogogogo,exact,
 nuclear,metaphor,☢️,radioactive,arudoga,metaphorical,
 scale,literal,⚖️,scale,azegale,exact,
-driver,metaphor,🚗,car,agaraga,metaphorical,
-ball,metaphor,⚽,soccer,ozego,metaphorical,
 cry,literal,😭,cry,ogoro,exact,
 introduction,metaphor,🔰,beginner,ebuge,metaphorical,
 requirement,gap,,,,,
-senior,metaphor,👴,old-man,ola,metaphorical,
-photo,metaphor,📷,camera,agemara,metaphorical,
+refuse,metaphor,🚫,prohibited,oburu,metaphorical,
 transport,metaphor,🚚,truck,uduru,metaphorical,
-emerge,metaphor,🌅,sunrise,uzuneru,metaphorical,
-map,metaphor,🗺️,world-map,owaro,metaphorical,
 island,literal,🏝️,island,uzalu,exact,
+neither,function,,,,denylist,
 football,literal,🏈,football,ovoda,exact,
-survive,metaphor,🛟,life-ring,ulevu,metaphorical,
-flight,metaphor,✈️,airplane,arubale,metaphorical,
 left,literal,⬅️,left,elevede,exact,
-solve,metaphor,💡,lightbulb,uluguhu,metaphorical,
-neighbor,metaphor,🏠,house,ohuze,metaphorical,
-background,metaphor,🖼️,framed-picture,averu,metaphorical,
-traffic,metaphor,🚦,traffic-light,aduru,metaphorical,
-tool,metaphor,🧰,toolbox,odolo,metaphorical,
 smoke,metaphor,🚬,cigarette,ugage,metaphorical,
 rain,literal,🌧️,rain,aruna,exact,
-busy,metaphor,💨,dash,ada,metaphorical,
-lesson,metaphor,🏫,school,ozogo,metaphorical,
 brain,literal,🧠,brain,abura,exact,
 funny,metaphor,😂,laugh,alu,metaphorical,
-failure,metaphor,📉,chart-down,agoha,metaphorical,
-speaker,metaphor,🔊,speaker-high,ezabegu,metaphorical,
-bottom,metaphor,⬇️,down,odowo,metaphorical,
-adopt,metaphor,👶,baby,aboba,metaphorical,
-combine,metaphor,🔗,link,ulunugu,metaphorical,
 mountain,literal,⛰️,mountain,omunadu,exact,
-waste,metaphor,🗑️,wastebasket,aweza,metaphorical,
-hide,metaphor,🥸,disguise,uduzu,metaphorical,
-marriage,metaphor,💒,wedding,ewude,metaphorical,
 ticket,literal,🎫,ticket,udeguge,exact,
-meal,metaphor,🍔,hamburger,ahume,metaphorical,
-colleague,metaphor,🧑‍💼,office-worker,ovuve,metaphorical,
 bag,metaphor,👜,handbag,ahanadaba,metaphorical,
 repeat,literal,🔁,repeat,ereba,exact,
 equal,metaphor,🟰,equals,egula,metaphorical,
-expression,metaphor,😊,smile,uze,metaphorical,
 plus,function,,,,denylist,
 owner,metaphor,🔑,key,egoge,metaphorical,
-plane,metaphor,✈️,airplane,arubale,metaphorical,
-commercial,metaphor,🏬,department-store,edabe,metaphorical,
-lady,metaphor,👩,woman,owamo,metaphorical,
 duty,gap,,,,,
-payment,metaphor,💳,credit-card,egura,metaphorical,
-unfortunately,metaphor,😭,cry,ogoro,metaphorical,
-brief,metaphor,📝,memo,emome,metaphorical,
 bird,literal,🐦,bird,uburu,exact,
-chapter,metaphor,📖,book,obogo,metaphorical,
 secret,literal,🤐,secret,eze,exact,
 union,metaphor,🇪🇺,european-union,erubo,metaphorical,
-burn,metaphor,🔥,fire,uveruve,metaphorical,
-trend,metaphor,👣,footprints,ovodu,metaphorical,
-initial,metaphor,▶️,play,abola,metaphorical,
-pleasure,metaphor,😊,smile,uze,metaphorical,
-suggestion,metaphor,💡,lightbulb,uluguhu,metaphorical,
-critical,metaphor,❗,exclamation-red,ezagalu,metaphorical,
-gather,metaphor,🧺,basket,abezage,metaphorical,
-essential,metaphor,🆘,sos,ozozo,metaphorical,
-desire,metaphor,🥺,pleading,eba,metaphorical,
 beach,literal,🏖️,beach,ebageha,exact,
-attract,metaphor,🤩,starstruck,azu,metaphorical,
-engage,metaphor,🔗,link,ulunugu,metaphorical,
-powerful,metaphor,⚡,lightning,ulugu,metaphorical,
 flower,literal,💮,flower,ove,exact,
 boat,literal,🚤,boat,obadoba,exact,
-aid,metaphor,🛟,life-ring,ulevu,metaphorical,
 fan,metaphor,🪭,hand-fan,ahanada,metaphorical,
 kitchen,metaphor,🧑‍🍳,cook,ogogogo,metaphorical,
 twice,function,,,,denylist,
-delay,metaphor,⏰,alarm-clock,alaro,metaphorical,
-safety,metaphor,🔒,locked,olego,metaphorical,
 engineer,metaphor,🧑‍💻,technologist,edo,metaphorical,
-quiet,metaphor,🔇,mute,umedu,metaphorical,
-insurance,metaphor,🛡️,shield,uzehu,metaphorical,
+silence,metaphor,🔇,mute,umedu,metaphorical,
 nurse,metaphor,🧑‍⚕️,doctor,odogo,metaphorical,
 divide,literal,➗,divide,uduve,exact,
-investigation,metaphor,🕵️,detective,ede,metaphorical,
 package,literal,📦,package,abage,exact,
 obvious,gap,,,,,
 jump,metaphor,🦘,kangaroo,agano,metaphorical,
 weapon,metaphor,💣,bomb,obomobo,metaphorical,
-host,metaphor,🛎️,bellhop,ebole,metaphorical,
 winter,metaphor,❄️,snowflake,ozane,metaphorical,
-district,metaphor,🏙️,cityscape,ugoda,metaphorical,
-tire,metaphor,🚗,car,agaraga,metaphorical,
 spirit,metaphor,👻,ghost,ogoho,metaphorical,
-lunch,metaphor,🍔,hamburger,ahume,metaphorical,
 pool,literal,🎱,pool,obolobo,exact,
-battle,metaphor,⚔️,sword-crossed,ozowe,metaphorical,
-tradition,metaphor,📜,scroll,ozogoro,metaphorical,
-award,metaphor,🏅,medal,emadela,metaphorical,
-coach,metaphor,🏆,trophy,odorobo,metaphorical,
-experiment,metaphor,🧪,test-tube,eduze,metaphorical,
 strange,metaphor,🤪,zany,azo,metaphorical,
-code,metaphor,💻,laptop,alobado,metaphorical,
-enable,metaphor,🔓,unlocked,unole,metaphorical,
 afraid,metaphor,😨,fear,eva,metaphorical,
-conclude,metaphor,⌛,hourglass-done,ohura,metaphorical,
 cancer,literal,♋,cancer,agenagera,exact,
-environmental,metaphor,🏞️,national-park,anudo,metaphorical,
 sun,literal,☀️,sun,uzunu,exact,
 blow,metaphor,😘,blow-kiss,obu,metaphorical,
-volume,metaphor,🔊,speaker-high,ezabegu,metaphorical,
 invest,gap,,,,,
-proceed,metaphor,🚶,walking,awu,metaphorical,
-wash,metaphor,🧼,soap,ozabo,metaphorical,
-glad,metaphor,😊,smile,uze,metaphorical,
 tape,metaphor,📼,videocassette,uvedogaze,metaphorical,
 whereas,function,,,,denylist,
-stone,metaphor,🪨,rock,orogogo,metaphorical,
-murder,metaphor,💀,skull,uzugulu,metaphorical,
 monitor,metaphor,📺,television,edelu,metaphorical,
-soldier,metaphor,⚔️,sword-crossed,ozowe,metaphorical,
 hate,metaphor,💢,anger,ane,metaphorical,
 egg,literal,🥚,egg,egege,exact,
-concert,metaphor,🎵,music-note,umuzo,metaphorical,
 shock,metaphor,‼️,exclamation-double,ezaga,metaphorical,
-comfortable,metaphor,🛋️,couch-lamp,oguga,metaphorical,
 wine,literal,🍷,wine,uwenu,exact,
 camera,literal,📷,camera,agemara,exact,
 swim,metaphor,🏊,swimming,uzuwu,metaphorical,
-manufacture,metaphor,🔨,hammer,ahema,metaphorical,
 theater,literal,🎭,theater,edahe,exact,
-cycle,metaphor,🚲,bicycle,ubogegu,metaphorical,
+bike,metaphor,🚲,bicycle,ubogegu,metaphorical,
 coffee,literal,☕,coffee,ogeve,exact,
-visitor,metaphor,⛩️,shinto-shrine,uzohu,metaphorical,
-freedom,metaphor,🕊️,dove,odevo,metaphorical,
 construction,literal,🚧,construction,ogunuzodo,exact,
 dear,metaphor,🥰,love,ole,metaphorical,
-objective,metaphor,🎯,bullseye,ubelo,metaphorical,
-historical,metaphor,📜,scroll,ozogoro,metaphorical,
-branch,metaphor,🌳,tree,ederede,metaphorical,
-vehicle,metaphor,🚗,car,agaraga,metaphorical,
+moreover,function,,,,denylist,
+onto,function,,,,denylist,
+forest,metaphor,🌳,tree,ederede,metaphorical,
 scientist,literal,🧑‍🔬,scientist,uzegu,exact,
 bind,gap,,,,,
 belong,gap,,,,,
@@ -1530,11 +1664,8 @@ editor,gap,,,,,
 normally,gap,,,,,
 sight,gap,,,,,
 generate,gap,,,,,
-gift,metaphor,🎁,wrapped-gift,aweru,metaphorical,
 delivery,gap,,,,,
-guest,metaphor,🛎️,bellhop,ebole,metaphorical,
 anybody,function,,,,denylist,
-bedroom,metaphor,🛏️,bed,ebedebe,metaphorical,
 quote,gap,,,,,
 climb,metaphor,🧗,climbing,ugulu,metaphorical,
 basically,gap,,,,,
@@ -1545,7 +1676,6 @@ mouth,literal,👄,mouth,omudo,exact,
 noise,gap,,,,,
 manner,gap,,,,,
 gun,metaphor,🔫,water-pistol,aweduro,metaphorical,
-square,metaphor,⬜,white-square,uwehuda,metaphorical,
 occasion,gap,,,,,
 familiar,gap,,,,,
 ignore,gap,,,,,
@@ -1554,14 +1684,12 @@ affair,gap,,,,,
 civil,gap,,,,,
 locate,gap,,,,,
 citizen,gap,,,,,
-temperature,metaphor,🌡️,thermometer,edohe,metaphorical,
 gold,literal,🥇,gold,ogolodo,exact,
 domestic,gap,,,,,
 load,gap,,,,,
 troop,gap,,,,,
 remind,gap,,,,,
 arrangement,gap,,,,,
-skin,metaphor,🧑,person,ebo,metaphorical,
 prison,gap,,,,,
 switch,gap,,,,,
 acquire,gap,,,,,
@@ -1584,7 +1712,6 @@ hall,gap,,,,,
 regulation,gap,,,,,
 escape,gap,,,,,
 studio,metaphor,🎙️,studio-mic,uzudo,metaphorical,
-proper,metaphor,⭕,correct,ogero,metaphorical,
 relax,gap,,,,,
 tourist,gap,,,,,
 afford,gap,,,,,
@@ -1596,7 +1723,6 @@ industrial,gap,,,,,
 complain,gap,,,,,
 perspective,gap,,,,,
 error,gap,,,,,
-arrest,metaphor,👮,police,obule,metaphorical,
 assess,gap,,,,,
 register,gap,,,,,
 asset,gap,,,,,
@@ -1605,7 +1731,6 @@ finger,metaphor,🖕,middle-finger,ume,metaphorical,
 relevant,gap,,,,,
 leadership,gap,,,,,
 commitment,gap,,,,,
-wake,metaphor,🌅,sunrise,uzuneru,metaphorical,
 necessarily,gap,,,,,
 bright,literal,🔆,bright,uburuguhudu,exact,
 frame,gap,,,,,
@@ -1622,7 +1747,6 @@ secure,gap,,,,,
 amaze,gap,,,,,
 device,gap,,,,,
 birth,metaphor,🫄,pregnant,ebare,metaphorical,
-forest,metaphor,🌳,tree,ederede,metaphorical,
 label,literal,🏷️,label,aleba,exact,
 root,metaphor,🫜,root-veg,orode,metaphorical,
 factory,literal,🏭,factory,avogo,exact,
@@ -1639,7 +1763,6 @@ concentrate,gap,,,,,
 export,gap,,,,,
 entirely,gap,,,,,
 strongly,gap,,,,,
-bridge,metaphor,🌉,bridge-night,uberudu,metaphorical,
 consist,gap,,,,,
 graduate,gap,,,,,
 brand,gap,,,,,
@@ -1648,60 +1771,37 @@ insist,gap,,,,,
 combination,gap,,,,,
 abuse,gap,,,,,
 ice,literal,🧊,ice,ugegu,exact,
-principal,metaphor,👑,crown,ogorowo,metaphorical,
-master,metaphor,👑,crown,ogorowo,metaphorical,
 session,gap,,,,,
 nevertheless,function,,,,denylist,
-previously,metaphor,↩️,back,abagaga,metaphorical,
 protection,gap,,,,,
 wed,gap,,,,,
-rent,metaphor,🏠,house,ohuze,metaphorical,
 shot,metaphor,💉,syringe,ozure,metaphorical,
-guarantee,metaphor,🔒,locked,olego,metaphorical,
-till,metaphor,⏳,hourglass,ohurago,metaphorical,
-theme,metaphor,🎹,musical-keyboard,umuza,metaphorical,
+piano,metaphor,🎹,musical-keyboard,umuza,metaphorical,
 judgment,gap,,,,,
-odd,metaphor,🤪,zany,azo,metaphorical,
-approve,metaphor,👍,thumbs-up,uduhu,metaphorical,
 loan,metaphor,🏦,bank,abanaga,metaphorical,
-definition,metaphor,📝,memo,emome,metaphorical,
-elect,metaphor,🗳️,ballot-box,abololado,metaphorical,
 atmosphere,gap,,,,,
 farmer,literal,🧑‍🌾,farmer,avera,exact,
 characteristic,metaphor,🫆,fingerprint,uvenu,metaphorical,
-license,metaphor,🪪,id-card,udagu,metaphorical,
 rely,gap,,,,,
-succeed,metaphor,🏆,trophy,odorobo,metaphorical,
 identity,gap,,,,,
-desk,metaphor,💻,laptop,alobado,metaphorical,
 permit,gap,,,,,
 wild,metaphor,🦁,lion,ulo,metaphorical,
 empty,metaphor,🕳️,hole,ohe,metaphorical,
 instrument,metaphor,🎸,guitar,uguda,metaphorical,
 investor,gap,,,,,
-practical,metaphor,🧰,toolbox,odolo,metaphorical,
 tea,literal,🍵,tea,edadeda,exact,
 lovely,gap,,,,,
 soft,metaphor,🪶,feather,evade,metaphorical,
 row,metaphor,🚣,rowing,oru,metaphorical,
 youth,gap,,,,,
-lock,metaphor,🔒,locked,olego,metaphorical,
-fuel,metaphor,⛽,gas-pump,aguza,metaphorical,
-celebrate,metaphor,🎉,party-popper,aboro,metaphorical,
-sexual,metaphor,💑,couple,ogube,metaphorical,
-breath,metaphor,🫁,lungs,ulunu,metaphorical,
+breathe,metaphor,🫁,lungs,ulunu,metaphorical,
 bottle,metaphor,🍼,baby-bottle,abobo,metaphorical,
+ourselves,function,,,,denylist,
 sheet,metaphor,🎼,sheet-music,ezehu,metaphorical,
 engine,metaphor,🚒,fire-engine,uvere,metaphorical,
-cast,metaphor,🎣,fishing,uvuzuhunu,metaphorical,
 journey,gap,,,,,
 relief,literal,😌,relief,eru,exact,
 honor,literal,🎖️,honor,ohono,exact,
-outcome,metaphor,🏁,checkered-flag,egehega,metaphorical,
-blame,metaphor,☝️,point,obuno,metaphorical,
-arise,metaphor,🌅,sunrise,uzuneru,metaphorical,
-musical,metaphor,🎹,musical-keyboard,umuza,metaphorical,
-dad,metaphor,👨,man,amana,metaphorical,
 stretch,gap,,,,,
 declare,gap,,,,,
 retire,gap,,,,,
@@ -1710,9 +1810,7 @@ careful,gap,,,,,
 suitable,gap,,,,,
 native,gap,,,,,
 fruit,metaphor,🍎,apple,abeba,metaphorical,
-analyze,metaphor,🔬,microscope,umogore,metaphorical,
 witness,literal,👁️‍🗨️,witness,uwe,exact,
-mail,metaphor,✉️,envelope,enevo,metaphorical,
 terrible,gap,,,,,
 researcher,metaphor,🧑‍🔬,scientist,uzegu,metaphorical,
 ordinary,gap,,,,,
@@ -1745,6 +1843,7 @@ folk,gap,,,,,
 surely,gap,,,,,
 guard,literal,💂,guard,ugaru,exact,
 cat,literal,🐈,cat,agada,exact,
+somewhat,function,,,,denylist,
 kiss,literal,💏,kiss,uguzu,exact,
 presentation,gap,,,,,
 joint,gap,,,,,
@@ -1765,14 +1864,12 @@ phase,gap,,,,,
 rush,gap,,,,,
 formal,gap,,,,,
 employer,gap,,,,,
-reject,metaphor,👎,thumbs-down,udohu,metaphorical,
 latter,gap,,,,,
 plate,literal,🍽️,plate,abelade,exact,
 ban,gap,,,,,
 steal,gap,,,,,
 protest,gap,,,,,
 index,gap,,,,,
-sad,metaphor,😭,cry,ogoro,metaphorical,
 frequently,gap,,,,,
 circle,gap,,,,,
 helpful,gap,,,,,
@@ -1796,34 +1893,29 @@ kick,metaphor,🦶,foot,ovodo,metaphorical,
 closely,gap,,,,,
 multiple,gap,,,,,
 yield,gap,,,,,
+via,function,,,,denylist,
 legislation,gap,,,,,
 county,gap,,,,,
 unlike,gap,,,,,
-mobile,metaphor,📱,phone,obeho,metaphorical,
 assistant,gap,,,,,
 implement,gap,,,,,
 chart,gap,,,,,
 attach,metaphor,📎,paperclip,abebu,metaphorical,
-hell,metaphor,🔥,fire,uveruve,metaphorical,
 advise,gap,,,,,
-household,metaphor,🏠,house,ohuze,metaphorical,
 acknowledge,gap,,,,,
 reward,gap,,,,,
-east,metaphor,🌅,sunrise,uzuneru,metaphorical,
 hat,gap,,,,,
 academic,gap,,,,,
 voter,gap,,,,,
 meanwhile,gap,,,,,
+furthermore,function,,,,denylist,
 accuse,gap,,,,,
 scientific,gap,,,,,
 wage,gap,,,,,
 absence,gap,,,,,
-construct,metaphor,🔨,hammer,ahema,metaphorical,
 remark,gap,,,,,
-professor,metaphor,🧑‍🏫,teacher,edage,metaphorical,
 rare,gap,,,,,
 intention,gap,,,,,
-dozen,metaphor,🔢,numbers,unemu,metaphorical,
 settlement,gap,,,,,
 gap,gap,,,,,
 widely,gap,,,,,
@@ -1840,10 +1932,8 @@ variable,gap,,,,,
 enormous,gap,,,,,
 sweet,metaphor,🍠,sweet-potato,ezewo,metaphorical,
 permanent,gap,,,,,
-emotion,metaphor,💓,heartbeat,ehare,metaphorical,
 pursue,gap,,,,,
 urge,gap,,,,,
-enemy,metaphor,⚔️,sword-crossed,ozowe,metaphorical,
 appoint,gap,,,,,
 milk,literal,🥛,milk,umu,exact,
 talent,gap,,,,,
@@ -1857,14 +1947,13 @@ stable,gap,,,,,
 merely,gap,,,,,
 resolution,gap,,,,,
 communicate,gap,,,,,
-injury,metaphor,🩹,bandage,abaneda,metaphorical,
+wound,metaphor,🩹,bandage,abaneda,metaphorical,
 exhibition,gap,,,,,
 producer,gap,,,,,
 regional,gap,,,,,
 immediate,gap,,,,,
 incident,gap,,,,,
 childhood,gap,,,,,
-draft,metaphor,✍️,writing-hand,uwura,metaphorical,
 slip,gap,,,,,
 accompany,gap,,,,,
 politician,gap,,,,,
@@ -1876,14 +1965,12 @@ imply,gap,,,,,
 breakfast,gap,,,,,
 temporary,gap,,,,,
 liberal,gap,,,,,
-lake,metaphor,💧,droplet,odero,metaphorical,
 qualify,gap,,,,,
 competitive,gap,,,,,
 truly,gap,,,,,
-hi,metaphor,👋,wave,awe,metaphorical,
 yellow,literal,🟡,yellow,olelo,exact,
 habit,gap,,,,,
-disk,metaphor,💿,cd,agadaga,metaphorical,
+album,metaphor,💿,cd,agadaga,metaphorical,
 core,gap,,,,,
 emotional,gap,,,,,
 aircraft,gap,,,,,
@@ -1897,6 +1984,7 @@ appointment,gap,,,,,
 emphasize,gap,,,,,
 maximum,gap,,,,,
 effectively,gap,,,,,
+elsewhere,function,,,,denylist,
 bother,gap,,,,,
 initiative,gap,,,,,
 sharp,gap,,,,,
@@ -1906,7 +1994,6 @@ gray,gap,,,,,
 complicate,gap,,,,,
 discipline,gap,,,,,
 disappoint,gap,,,,,
-boss,metaphor,👑,crown,ogorowo,metaphorical,
 assumption,gap,,,,,
 freeze,gap,,,,,
 extreme,gap,,,,,
@@ -1924,7 +2011,6 @@ concentration,gap,,,,,
 implication,gap,,,,,
 deserve,gap,,,,,
 unusual,gap,,,,,
-defend,metaphor,🛡️,shield,uzehu,metaphorical,
 classic,gap,,,,,
 king,metaphor,🫅,monarch,oma,metaphorical,
 interaction,gap,,,,,
@@ -1934,14 +2020,11 @@ borrow,gap,,,,,
 fundamental,gap,,,,,
 dish,metaphor,🧫,petri-dish,ebudu,metaphorical,
 abroad,gap,,,,,
-soul,metaphor,🕊️,dove,odevo,metaphorical,
 capable,gap,,,,,
 defeat,gap,,,,,
 presidential,gap,,,,,
 perfectly,gap,,,,,
 enhance,gap,,,,,
-proud,metaphor,🏆,trophy,odorobo,metaphorical,
-emergency,metaphor,🆘,sos,ozozo,metaphorical,
 educational,gap,,,,,
 distinguish,gap,,,,,
 substantial,gap,,,,,
@@ -1963,7 +2046,6 @@ chip,gap,,,,,
 winner,gap,,,,,
 encounter,gap,,,,,
 brown,literal,🟤,brown,oborowo,exact,
-breathe,metaphor,🫁,lungs,ulunu,metaphorical,
 excuse,gap,,,,,
 partly,gap,,,,,
 tennis,literal,🎾,tennis,edune,exact,
@@ -1981,9 +2063,7 @@ creation,gap,,,,,
 occupy,gap,,,,,
 outline,gap,,,,,
 sufficient,gap,,,,,
-luck,metaphor,🤞,crossed-fingers,ogeru,metaphorical,
 preserve,gap,,,,,
-split,metaphor,⛓️‍💥,unlink,unulu,metaphorical,
 swing,gap,,,,,
 illness,gap,,,,,
 journalist,gap,,,,,
@@ -2008,12 +2088,9 @@ bet,gap,,,,,
 retain,gap,,,,,
 sequence,gap,,,,,
 plain,gap,,,,,
-volunteer,metaphor,🙋,raise-hand,aruze,metaphorical,
 rural,gap,,,,,
-calm,metaphor,🕊️,dove,odevo,metaphorical,
 abandon,gap,,,,,
 examination,gap,,,,,
-silence,metaphor,🔇,mute,umedu,metaphorical,
 rapidly,gap,,,,,
 efficient,gap,,,,,
 revolution,gap,,,,,
@@ -2025,7 +2102,6 @@ dramatic,gap,,,,,
 differ,gap,,,,,
 grateful,gap,,,,,
 protein,gap,,,,,
-bike,metaphor,🚲,bicycle,ubogegu,metaphorical,
 distribute,gap,,,,,
 intellectual,gap,,,,,
 derive,gap,,,,,
@@ -2042,16 +2118,12 @@ landscape,gap,,,,,
 educate,gap,,,,,
 toy,gap,,,,,
 fault,gap,,,,,
-exhibit,metaphor,🎦,cinema,ugena,metaphorical,
 minor,gap,,,,,
 hunt,gap,,,,,
 storm,metaphor,⛈️,thunderstorm,udeho,metaphorical,
-thick,metaphor,🧱,brick,uburugu,metaphorical,
-achievement,metaphor,🏆,trophy,odorobo,metaphorical,
 negotiate,gap,,,,,
 dominate,gap,,,,,
 supplier,gap,,,,,
-prize,metaphor,🏅,medal,emadela,metaphorical,
 typically,gap,,,,,
 peer,gap,,,,,
 pension,gap,,,,,
@@ -2060,7 +2132,6 @@ acquisition,gap,,,,,
 laughter,gap,,,,,
 deeply,gap,,,,,
 recognition,gap,,,,,
-electricity,metaphor,⚡,lightning,ulugu,metaphorical,
 assistance,gap,,,,,
 roof,gap,,,,,
 retirement,gap,,,,,
@@ -2076,7 +2147,6 @@ tooth,literal,🦷,tooth,ododo,exact,
 representation,gap,,,,,
 preparation,gap,,,,,
 dispute,gap,,,,,
-emphasis,metaphor,❗,exclamation-red,ezagalu,metaphorical,
 edition,gap,,,,,
 silver,literal,🥈,silver,uzelu,exact,
 entertainment,gap,,,,,
@@ -2097,7 +2167,6 @@ inch,gap,,,,,
 equivalent,gap,,,,,
 solid,gap,,,,,
 enterprise,gap,,,,,
-elderly,metaphor,👴,old-man,ola,metaphorical,
 governor,gap,,,,,
 uniform,gap,,,,,
 port,metaphor,🚤,boat,obadoba,metaphorical,
@@ -2113,7 +2182,6 @@ profile,gap,,,,,
 mood,gap,,,,,
 episode,gap,,,,,
 crack,gap,,,,,
-submit,metaphor,📥,inbox,uno,metaphorical,
 symptom,gap,,,,,
 virtually,gap,,,,,
 era,gap,,,,,
@@ -2127,7 +2195,6 @@ isolate,gap,,,,,
 prisoner,gap,,,,,
 eliminate,gap,,,,,
 tight,gap,,,,,
-wet,metaphor,💧,droplet,odero,metaphorical,
 secondary,gap,,,,,
 welfare,gap,,,,,
 recruit,gap,,,,,
@@ -2141,8 +2208,6 @@ hence,gap,,,,,
 crew,gap,,,,,
 phenomenon,gap,,,,,
 pupil,metaphor,🧑‍🎓,student,uzedu,metaphorical,
-false,metaphor,❌,cross,ogorozo,metaphorical,
-assist,metaphor,🛟,life-ring,ulevu,metaphorical,
 restore,gap,,,,,
 formula,gap,,,,,
 perceive,gap,,,,,
@@ -2155,6 +2220,7 @@ steady,gap,,,,,
 meter,gap,,,,,
 truck,literal,🚚,truck,uduru,exact,
 nose,literal,👃,nose,one,exact,
+beside,function,,,,denylist,
 sail,gap,,,,,
 disaster,gap,,,,,
 pace,gap,,,,,
@@ -2163,12 +2229,7 @@ devote,gap,,,,,
 terrorist,gap,,,,,
 justify,gap,,,,,
 vital,gap,,,,,
-fascinate,metaphor,🤩,starstruck,azu,metaphorical,
 external,gap,,,,,
-depression,metaphor,😭,cry,ogoro,metaphorical,
-underlie,metaphor,🧱,brick,uburugu,metaphorical,
-mom,metaphor,👩,woman,owamo,metaphorical,
-satisfaction,metaphor,😊,smile,uze,metaphorical,
 pour,literal,🫗,pour,oburo,exact,
 sweep,metaphor,🧹,broom,oboro,metaphorical,
 obligation,gap,,,,,
@@ -2176,46 +2237,22 @@ sir,gap,,,,,
 evaluate,gap,,,,,
 anger,literal,💢,anger,ane,exact,
 pub,gap,,,,,
-currency,metaphor,💱,currency-exchange,ugerore,metaphorical,
-database,metaphor,💻,laptop,alobado,metaphorical,
-initially,metaphor,▶️,play,abola,metaphorical,
 territory,gap,,,,,
-stream,metaphor,💧,droplet,odero,metaphorical,
-rarely,metaphor,⏳,hourglass,ohurago,metaphorical,
 western,metaphor,🇪🇭,western-sahara,eweza,metaphorical,
-constantly,metaphor,🔁,repeat,ereba,metaphorical,
-scare,metaphor,😨,fear,eva,metaphorical,
-badly,metaphor,👎,thumbs-down,udohu,metaphorical,
 boundary,gap,,,,,
-essay,metaphor,📝,memo,emome,metaphorical,
 scream,literal,😱,scream,eza,exact,
 withdraw,metaphor,🏧,atm,adama,metaphorical,
-pollution,metaphor,🏭,factory,avogo,metaphorical,
 disorder,metaphor,💫,dizzy,udo,metaphorical,
 furniture,metaphor,🪑,chair,aguharu,metaphorical,
 symbol,metaphor,🔣,symbols,ozomo,metaphorical,
-apartment,metaphor,🏠,house,ohuze,metaphorical,
-demonstration,metaphor,🪧,placard,abala,metaphorical,
 steel,metaphor,🔩,nut-bolt,unodu,metaphorical,
-cake,metaphor,🎂,birthday-cake,ubaro,metaphorical,
-transform,metaphor,🦋,butterfly,ubedo,metaphorical,
-wound,metaphor,🩹,bandage,abaneda,metaphorical,
 restriction,gap,,,,,
 foundation,gap,,,,,
-designer,metaphor,🎨,palette,abeleda,metaphorical,
-innovation,metaphor,💡,lightbulb,uluguhu,metaphorical,
-album,metaphor,💿,cd,agadaga,metaphorical,
 singer,literal,🧑‍🎤,singer,uzenu,exact,
-trail,metaphor,👣,footprints,ovodu,metaphorical,
 trap,metaphor,🪤,mousetrap,omuzeda,metaphorical,
-loose,metaphor,🔓,unlocked,unole,metaphorical,
-gradually,metaphor,🐌,snail,azunalu,metaphorical,
-tank,metaphor,🚚,truck,uduru,metaphorical,
 evil,metaphor,😈,devil,edu,metaphorical,
 tune,gap,,,,,
 grass,metaphor,🌿,herb,ehere,metaphorical,
-invitation,metaphor,✉️,envelope,enevo,metaphorical,
-frighten,metaphor,😨,fear,eva,metaphorical,
 bid,gap,,,,,
 breed,gap,,,,,
 extraordinary,gap,,,,,
@@ -2241,7 +2278,6 @@ confident,gap,,,,,
 curve,gap,,,,,
 knee,gap,,,,,
 overcome,gap,,,,,
-web,metaphor,🛜,wireless,uwere,metaphorical,
 depth,gap,,,,,
 entrance,gap,,,,,
 log,gap,,,,,
@@ -2261,14 +2297,11 @@ strip,gap,,,,,
 smooth,gap,,,,,
 intervention,gap,,,,,
 impress,gap,,,,,
-exam,metaphor,🧪,test-tube,eduze,metaphorical,
 vice,gap,,,,,
 radical,gap,,,,,
 similarly,gap,,,,,
 behave,gap,,,,,
-loud,metaphor,🔊,speaker-high,ezabegu,metaphorical,
 dimension,gap,,,,,
-subsequent,metaphor,⏭️,next-track,enaze,metaphorical,
 infection,gap,,,,,
 jacket,gap,,,,,
 efficiency,gap,,,,,
@@ -2276,7 +2309,6 @@ dirty,metaphor,💩,poop,obo,metaphorical,
 statistic,gap,,,,,
 regularly,gap,,,,,
 resort,gap,,,,,
-iron,metaphor,🔩,nut-bolt,unodu,metaphorical,
 broadcast,gap,,,,,
 membership,gap,,,,,
 bread,literal,🍞,bread,ebareda,exact,
@@ -2284,11 +2316,9 @@ blind,gap,,,,,
 pure,gap,,,,,
 bloody,gap,,,,,
 ally,gap,,,,,
-quantity,metaphor,🔢,numbers,unemu,metaphorical,
 bend,gap,,,,,
 mature,gap,,,,,
 briefly,gap,,,,,
-alarm,metaphor,⏰,alarm-clock,alaro,metaphorical,
 disturb,gap,,,,,
 sustain,gap,,,,,
 flood,gap,,,,,
@@ -2318,9 +2348,7 @@ tap,gap,,,,,
 philosophy,gap,,,,,
 lip,metaphor,💋,lips,ulu,metaphorical,
 attribute,gap,,,,,
-apologize,metaphor,😭,cry,ogoro,metaphorical,
 approval,gap,,,,,
-grab,metaphor,✋,hand,aha,metaphorical,
 entitle,gap,,,,,
 lend,gap,,,,,
 involvement,gap,,,,,
@@ -2340,14 +2368,12 @@ rough,gap,,,,,
 pen,literal,🖊️,pen,ebene,exact,
 recovery,gap,,,,,
 seal,literal,🦭,seal,ezale,exact,
-tube,metaphor,🧪,test-tube,eduze,metaphorical,
 tower,metaphor,🗼,tokyo-tower,odogodowe,metaphorical,
 characterize,gap,,,,,
 specify,gap,,,,,
 exact,gap,,,,,
 spin,gap,,,,,
 operator,gap,,,,,
-infant,metaphor,👶,baby,aboba,metaphorical,
 dig,gap,,,,,
 drag,gap,,,,,
 mount,gap,,,,,
@@ -2357,7 +2383,6 @@ dependent,gap,,,,,
 specialize,gap,,,,,
 angle,gap,,,,,
 chicken,literal,🐔,chicken,uge,exact,
-virus,metaphor,🦠,microbe,umoge,metaphorical,
 precisely,gap,,,,,
 rival,gap,,,,,
 offense,gap,,,,,
@@ -2378,7 +2403,6 @@ consultant,gap,,,,,
 historian,gap,,,,,
 cousin,gap,,,,,
 visual,gap,,,,,
-stupid,metaphor,💩,poop,obo,metaphorical,
 keen,gap,,,,,
 ethnic,gap,,,,,
 twin,gap,,,,,
@@ -2394,7 +2418,6 @@ react,gap,,,,,
 lecture,gap,,,,,
 venture,gap,,,,,
 compound,gap,,,,,
-rescue,metaphor,🛟,life-ring,ulevu,metaphorical,
 mess,gap,,,,,
 preference,gap,,,,,
 comprehensive,gap,,,,,
@@ -2402,9 +2425,6 @@ incentive,gap,,,,,
 league,gap,,,,,
 dialog,gap,,,,,
 cream,metaphor,🍦,ice-cream,ugege,metaphorical,
-rapid,metaphor,⏩,fast-forward,avoza,metaphorical,
-cancel,metaphor,❌,cross,ogorozo,metaphorical,
-regret,metaphor,😭,cry,ogoro,metaphorical,
 dismiss,gap,,,,,
 margin,gap,,,,,
 beneath,gap,,,,,
@@ -2459,7 +2479,6 @@ laboratory,gap,,,,,
 mortgage,gap,,,,,
 promotion,gap,,,,,
 passion,literal,❤️‍🔥,passion,abu,exact,
-champion,metaphor,🏅,medal,emadela,metaphorical,
 fulfill,gap,,,,,
 dust,gap,,,,,
 dedicate,gap,,,,,
@@ -2469,7 +2488,6 @@ province,gap,,,,,
 march,gap,,,,,
 evaluation,gap,,,,,
 compromise,gap,,,,,
-accomplish,metaphor,🏆,trophy,odorobo,metaphorical,
 weakness,gap,,,,,
 announcement,gap,,,,,
 salt,literal,🧂,salt,azalada,exact,
@@ -2478,7 +2496,6 @@ contest,gap,,,,,
 brush,gap,,,,,
 embarrass,gap,,,,,
 gallery,gap,,,,,
-genetic,metaphor,🧬,dna,adana,metaphorical,
 aggressive,gap,,,,,
 chest,metaphor,🪎,treasure-chest,edaru,metaphorical,
 format,gap,,,,,
@@ -2486,7 +2503,6 @@ literary,gap,,,,,
 embrace,gap,,,,,
 praise,metaphor,👏,clap,agala,metaphorical,
 silent,metaphor,🔕,bell-off,ebolelo,metaphorical,
-pump,metaphor,⛽,gas-pump,aguza,metaphorical,
 publisher,gap,,,,,
 celebration,gap,,,,,
 golf,literal,⛳,golf,ogolovo,exact,
@@ -2495,7 +2511,6 @@ weigh,gap,,,,,
 versus,function,,,,denylist,
 deficit,gap,,,,,
 flash,gap,,,,,
-friendship,metaphor,🧑‍🤝‍🧑,holding-hands,ohu,metaphorical,
 literally,gap,,,,,
 equation,gap,,,,,
 gesture,gap,,,,,
@@ -2541,9 +2556,7 @@ penalty,gap,,,,,
 chamber,gap,,,,,
 fancy,gap,,,,,
 poetry,gap,,,,,
-chat,metaphor,🗣️,speaking-head,ezabu,metaphorical,
 clothing,gap,,,,,
-evolve,metaphor,🦋,butterfly,ubedo,metaphorical,
 sake,literal,🍶,sake,azega,exact,
 shelf,gap,,,,,
 boost,gap,,,,,
@@ -2563,7 +2576,6 @@ strengthen,gap,,,,,
 whilst,gap,,,,,
 constraint,gap,,,,,
 fold,gap,,,,,
-bin,metaphor,🗑️,wastebasket,aweza,metaphorical,
 undergo,gap,,,,,
 potentially,gap,,,,,
 scope,gap,,,,,
@@ -2574,7 +2586,6 @@ pride,gap,,,,,
 intense,gap,,,,,
 inquiry,gap,,,,,
 resign,gap,,,,,
-craft,metaphor,🔨,hammer,ahema,metaphorical,
 strict,gap,,,,,
 concrete,gap,,,,,
 shell,literal,🐚,shell,ezehe,exact,
@@ -2586,7 +2597,6 @@ indication,gap,,,,,
 stability,gap,,,,,
 wise,gap,,,,,
 neglect,gap,,,,,
-compose,metaphor,✍️,writing-hand,uwura,metaphorical,
 jail,gap,,,,,
 shelter,gap,,,,,
 mere,gap,,,,,
@@ -2598,7 +2608,6 @@ pipe,gap,,,,,
 destruction,gap,,,,,
 guitar,literal,🎸,guitar,uguda,exact,
 flag,gap,,,,,
-piano,metaphor,🎹,musical-keyboard,umuza,metaphorical,
 magic,metaphor,🪄,magic-wand,amuga,metaphorical,
 mystery,gap,,,,,
 ski,metaphor,🎿,skis,uzuguzu,metaphorical,
@@ -2645,7 +2654,6 @@ romantic,gap,,,,,
 firmly,gap,,,,,
 interior,gap,,,,,
 stomach,gap,,,,,
-nowhere,metaphor,🕳️,hole,ohe,metaphorical,
 pray,literal,🙏,pray,abora,exact,
 championship,gap,,,,,
 servant,gap,,,,,
@@ -2677,7 +2685,6 @@ adventure,gap,,,,,
 fence,gap,,,,,
 exhaust,gap,,,,,
 attraction,gap,,,,,
-ocean,metaphor,🌊,ocean-wave,ogena,metaphorical,
 quietly,gap,,,,,
 castle,literal,🏰,castle,ageza,exact,
 veteran,gap,,,,,
@@ -2708,11 +2715,9 @@ verb,gap,,,,,
 reckon,gap,,,,,
 silly,gap,,,,,
 transportation,gap,,,,,
-harbor,metaphor,⚓,anchor,anoga,metaphorical,
 comedy,gap,,,,,
 chase,gap,,,,,
 storage,gap,,,,,
-universe,metaphor,🌌,milky-way,umola,metaphorical,
 horrible,gap,,,,,
 sheep,gap,,,,,
 lover,gap,,,,,
@@ -2729,6 +2734,7 @@ abstract,gap,,,,,
 tent,literal,⛺,tent,edene,exact,
 precise,gap,,,,,
 distant,gap,,,,,
+stranger,metaphor,👤,silhouette,uzolu,metaphorical,
 shade,gap,,,,,
 grain,gap,,,,,
 situate,gap,,,,,
@@ -2736,7 +2742,6 @@ summarize,gap,,,,,
 leap,gap,,,,,
 snap,gap,,,,,
 probability,gap,,,,,
-leather,metaphor,👜,handbag,ahanadaba,metaphorical,
 uncertainty,gap,,,,,
 swear,gap,,,,,
 refugee,gap,,,,,
@@ -2766,7 +2771,6 @@ athlete,gap,,,,,
 tongue,literal,👅,tongue,odune,exact,
 server,gap,,,,,
 structural,gap,,,,,
-website,metaphor,💻,laptop,alobado,metaphorical,
 fool,gap,,,,,
 alongside,gap,,,,,
 unite,gap,,,,,
@@ -2776,7 +2780,6 @@ weird,gap,,,,,
 fade,gap,,,,,
 cough,gap,,,,,
 hypothesis,gap,,,,,
-royal,metaphor,🫅,monarch,oma,metaphorical,
 theoretical,gap,,,,,
 curtain,gap,,,,,
 mayor,gap,,,,,
@@ -2786,7 +2789,6 @@ tournament,gap,,,,,
 registration,gap,,,,,
 fragment,gap,,,,,
 listener,gap,,,,,
-immigration,metaphor,🛂,passport-control,abozo,metaphorical,
 tender,gap,,,,,
 density,gap,,,,,
 ugly,gap,,,,,
@@ -2802,10 +2804,8 @@ rose,literal,🌹,rose,orezo,exact,
 noun,gap,,,,,
 fortunate,gap,,,,,
 lazy,metaphor,🦥,sloth,ozolo,metaphorical,
-hello,metaphor,👋,wave,awe,metaphorical,
 hunger,gap,,,,,
 insure,gap,,,,,
 ashamed,gap,,,,,
 found,gap,,,,,
-blog,metaphor,📰,newspaper,ena,metaphorical,
 thirst,gap,,,,,

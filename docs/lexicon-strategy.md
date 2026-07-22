@@ -417,11 +417,11 @@ Regenerate anytime with `npm run ngsl-coverage`. Do not hand-edit as source of t
 | NGSL attach 1 | Top 50 frequency `gap` lemmas | **done** |
 | NGSL attach 2+ | Remaining content lemmas (curated + soft-match) | **done** — see coverage stats |
 | Singleton wave 1 | Metaphor bags of size ≥10 → one keep; synonyms → `redundant` | **done** — `scripts/wave1-metaphor-singleton.py` |
-| Singleton wave 2+ | Remaining multi-lemma `metaphorical` cells | **todo** |
+| Singleton wave 2+ | Remaining multi-lemma `metaphorical` cells | **done** — `scripts/wave2-metaphor-singleton.py` |
 
 **Pipeline (attach era):** edit `data/ngsl-metaphor-extra.csv` → `npm run ngsl-metaphor-apply` → `npm run ngsl-coverage`.
 
-**Do not re-run** `ngsl-metaphor-apply` until it enforces one lemma per row — it still rebuilds semicolon bags from the extra map.
+`ngsl-metaphor-apply` now **preserves** existing singles, skips lemma-map surfaces, and refuses a second metaphor on a row (soft-match only fills empty rows).
 
 1. Sort `status=gap` by NGSL order (file order ≈ frequency).
 2. For each lemma, pick one published emoji, mark redundant of another lemma, or leave `gap`.
@@ -430,8 +430,9 @@ Regenerate anytime with `npm run ngsl-coverage`. Do not hand-edit as source of t
 
 Leftover `gap` rows are intentional (no forced attach). Revisit later for compounds / non-emoji roots.
 
-**Coverage after singleton wave 1 (approx.):** ~223 `literal` · ~890 `metaphor` · ~570 `redundant` · ~120 `function` · ~1,000 `gap`. Exact counts: `npm run ngsl-coverage`.
+**Coverage after singleton waves (approx.):** ~223 `literal` · ~380 `metaphor` · ~1,000 `redundant` · ~170 `function` · ~1,000 `gap`. Exact counts: `npm run ngsl-coverage`.
 
+Mnemonic note: metaphor links may be a stretch — the cue should be easy to remember, not necessarily guessable without a dictionary.
 ---
 
 ## CSV schemas
