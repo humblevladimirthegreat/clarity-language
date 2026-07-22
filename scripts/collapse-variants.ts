@@ -12,7 +12,7 @@ import {
 const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..");
 export const lexiconPath = join(rootDir, "data", "lexicon.csv");
 
-function escapeCsvField(value: string): string {
+export function escapeCsvField(value: string): string {
   if (/[",\n\r]/.test(value)) {
     return `"${value.replace(/"/g, '""')}"`;
   }

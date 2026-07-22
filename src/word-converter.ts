@@ -32,8 +32,24 @@ const CONSONANT_REMAP: Record<string, string> = {
   x: "z",
 };
 
+const DIGIT_TO_LETTER: Record<string, string> = {
+  "0": "o",
+  "1": "i",
+  "2": "a",
+  "3": "e",
+  "4": "a",
+  "5": "e",
+  "6": "o",
+  "7": "u",
+  "8": "o",
+  "9": "u",
+};
+
 function normalizeInput(input: string): string {
-  const letters = input.toLowerCase().replace(/[^a-z]/g, "");
+  const expanded = input
+    .toLowerCase()
+    .replace(/[0-9]/g, (digit) => DIGIT_TO_LETTER[digit] ?? digit);
+  const letters = expanded.replace(/[^a-z]/g, "");
   if (letters.length === 0) {
     throw new Error("Input must contain at least one letter");
   }

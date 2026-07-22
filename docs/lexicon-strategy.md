@@ -94,7 +94,7 @@ This is separate from the **near-duplicate cull** (Phase 3): a row can be the on
 | 2. Literal glossing | **done** |
 | 2.5. People & Body glossing | **done** — 2,418 rows glossed |
 | 3. Cull (`keep`) | **done** — 1,651 kept · 2,302 dropped |
-| 4. Clarity roots | **next** |
+| 4. Clarity roots | **done** — 1,651 rows in `lexicon-published.csv` |
 
 ```
 emojis.csv  →  lexicon.csv (skeleton)          ✓ done
@@ -107,10 +107,10 @@ emojis.csv  →  lexicon.csv (skeleton)          ✓ done
                  ↓
          3. cull: duplicates + no-English-drop (keep=y/n)  ✓ done
                  ↓
-         4. generate clarity roots → lexicon-published.csv  ← next
+         4. generate clarity roots → lexicon-published.csv  ✓ done
 ```
 
-**What exists today:** Phase 1–2.5 complete (all groups glossed). **Phase 3 complete:** every row has `keep=y` or `keep=n` — **1,651** published roots (`keep=y`), **2,302** dropped (19 no-English-association + 2,283 duplicate cull). `data/lexicon-published.csv` does not exist yet. Run `npm run phase3-cull audit` to validate the keep column.
+**What exists today:** Phase 1–3 complete. **Phase 4 complete:** `data/lexicon-published.csv` has **1,651** rows (`emoji`, `literal`, `clarity`, empty `metaphorical`). Regenerate with `npm run phase4-publish` when literals or the keep set change.
 
 ---
 
@@ -386,7 +386,7 @@ When distinct concepts share a `literal` within the same `group`/`subgroup` (e.g
 | `scripts/phase2-gloss.ts` | Phase 2 bulk glossing (`npx tsx scripts/phase2-gloss.ts`; `--dry-run` to preview) |
 | `scripts/phase2.5-gloss.ts` | Phase 2.5 People & Body glossing (`npm run phase2.5-gloss`; `--wave=1\|2\|3\|all`) |
 | `scripts/phase3-cull.ts` | Phase 3 cull (`npm run phase3-cull`; `report` / `apply` / `audit`) |
-| Lexicon converter (to be wired) | Phase 4: `keep=y` rows from `lexicon.csv` → `lexicon-published.csv` (`literal` → `clarity`; `metaphorical` blank) |
+| `scripts/phase4-publish.ts` | Phase 4: `keep=y` rows from `lexicon.csv` → `lexicon-published.csv` (`literal` → `clarity`; `metaphorical` blank) |
 
 Manual editing in `data/lexicon.csv` is the source of truth for `literal`. Treat `docs/language-reference.md` as grammar/phonology authority; this doc owns lexicon process only.
 
@@ -400,4 +400,4 @@ Manual editing in `data/lexicon.csv` is the source of truth for `literal`. Treat
 
 ## Immediate deliverable
 
-**Next:** [Phase 4](#phase-4--clarity-roots) — generate `data/lexicon-published.csv` from `keep=y` rows (`emoji`, `literal`, `clarity`, empty `metaphorical`).
+**Next:** metaphor pass — fill `metaphorical` in `lexicon-published.csv` when that work is in scope.
