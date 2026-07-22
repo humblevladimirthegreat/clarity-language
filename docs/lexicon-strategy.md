@@ -91,7 +91,8 @@ This is separate from the **near-duplicate cull** (Phase 3): a row can be the on
 |-------|--------|
 | Skeleton (`lexicon.csv` one row per emoji) | **done** |
 | 1. Variant collapse | **done** |
-| 2. Literal glossing | **in progress** — all groups **done** except People & Body (2,418 rows); Symbols + 8 others glossed |
+| 2. Literal glossing | **done** — all groups except People & Body |
+| 2.5. People & Body glossing | **next** — 2,418 rows, ~280 prototype glosses after collapse |
 | 3. Cull (`keep`) | not started |
 | 4. Clarity roots | not started |
 
@@ -100,14 +101,16 @@ emojis.csv  →  lexicon.csv (skeleton)          ✓ done
                  ↓
          1. collapse variants (mechanical)     ✓ done
                  ↓
-         2. gloss literals (curated)         ← in progress (all except People & Body ✓)
+         2. gloss literals (curated)             ✓ done (except People & Body)
+                 ↓
+         2.5. People & Body (curated, waves)  ← next
                  ↓
          3. cull: duplicates + no-English-drop (keep=y/n)
                  ↓
          4. generate clarity roots
 ```
 
-**What exists today:** The skeleton is complete. Phase 1 tooling (`scripts/collapse-variants.ts`, `src/variant-cluster.ts`) clusters variant rows and propagates `literal` from prototypes. Run `npm run collapse-variants report` to audit clusters; after glossing a prototype row in Phase 2, run `npm run fill-literals` (alias for `collapse-variants propagate`) to fan out to variants. **Phase 2 complete** for Symbols (206 glossed, 18 dropped), Smileys & Emotion (171), Travel & Places (219), Activities (85), Objects (266), Animals & Nature (160), Food & Drink (130 glossed, 1 dropped: oden), Flags (270), and Component (9). **People & Body** (2,418) not yet glossed. `clarity` is empty everywhere.
+**What exists today:** The skeleton is complete. Phase 1 tooling (`scripts/collapse-variants.ts`, `src/variant-cluster.ts`) clusters variant rows and propagates `literal` from prototypes. Run `npm run collapse-variants report` to audit clusters; after glossing a prototype row, run `npm run fill-literals` (alias for `collapse-variants propagate`) to fan out to variants. **Phase 2 complete** for Symbols (206 glossed, 18 dropped), Smileys & Emotion (171), Travel & Places (219), Activities (85), Objects (266), Animals & Nature (160), Food & Drink (130 glossed, 1 dropped: oden), Flags (270), and Component (9). **Phase 2.5** (People & Body, 2,418 rows) is the remaining glossing work. `clarity` is empty everywhere.
 
 ---
 
@@ -159,10 +162,11 @@ Signs, UI, faces, people, activities — **no auto-gloss from `name`**. Apply th
 |--------------------|
 | Symbols (all) |
 | Smileys & Emotion (all) |
-| People & Body (all) |
 | Activities (all) |
 | Travel & Places (all) |
 | Objects — sign-like or label-like: `phone`, `computer`, `money`, `mail`, `lock`, `sound`, `music`, `light & video` |
+
+People & Body is Tier B but glossed in [Phase 2.5](#phase-25--people--body-literal-glossing) (separate pass).
 
 ### Subgroup briefs (Tier B)
 
@@ -179,7 +183,7 @@ Short guidance so glosses stay consistent within a subgroup:
 | `keycap` | `keycap-1`, `keycap-hash`, etc. — digit/symbol is the meaning. |
 | `face-*` | What the face reads as (`grin`, `laugh`, `cry`, `wink`) — not Unicode face description. |
 | `heart` | Keep color when it matters (`red-heart`); shared concepts otherwise (`broken-heart`). |
-| `person-*` | Action or role (`wave`, `doctor`, `runner`), not "woman gesturing OK". |
+| `person-*` | Action or role (`wave`, `doctor`, `runner`), not "woman gesturing OK". No skin-tone or hair/beard literals — see [Phase 2.5](#phase-25--people--body-literal-glossing). |
 | `sport` / `game` | Activity (`soccer`, `chess`), not equipment description. |
 
 Leave `clarity` empty until Phase 4.
@@ -192,7 +196,7 @@ During glossing, mark obvious drops mentally (or tentatively `keep=n`); confirm 
 |-------|------|------|--------|
 | Symbols | 224 | B | done |
 | Smileys & Emotion | 171 | B | done |
-| People & Body | 2,418 | B | |
+| People & Body | 2,418 | B | → 2.5 |
 | Travel & Places | 219 | B | done |
 | Activities | 85 | B | done |
 | Objects | 266 | A + B | done |
@@ -203,7 +207,65 @@ During glossing, mark obvious drops mentally (or tentatively `keep=n`); confirm 
 
 Status values: empty · `draft` · `review` · `done` · `re-gloss` (scripted literals that need human pass).
 
-**Note:** Phase 2 glossing for Objects and Symbols uses meaning-first readings (Tier B subgroups) and name-normalized drafts with overrides (Tier A). People & Body remains unglossed.
+**Note:** Phase 2 glossing for Objects and Symbols uses meaning-first readings (Tier B subgroups) and name-normalized drafts with overrides (Tier A). People & Body is deferred to [Phase 2.5](#phase-25--people--body-literal-glossing).
+
+---
+
+## Phase 2.5 — People & Body (literal glossing)
+
+**Prerequisite:** Phase 2 complete for all other groups.
+
+**Why a separate phase:** People & Body has 2,418 seed rows but only **~280 prototype gloss decisions** after variant collapse (~90% of rows are skin-tone, gender, or hair-style variants that inherit the prototype `literal` via `npm run fill-literals`). It still needs its own pass because role/gesture/family policy must be decided once and applied consistently.
+
+**Goal:** Every People & Body row has a reviewed `literal`, propagated from prototype clusters.
+
+### Global rules (People & Body)
+
+| Rule | Detail |
+|------|--------|
+| **No skin tone in literals** | Skin-tone rows share the prototype gloss. Never `light-skin-tone-doctor` — just `doctor`. |
+| **No hair/beard splits** | Rows named `person: blond hair`, `man: beard`, etc. share the base literal (`person`, `man`, `woman`, …). Do not invent `blond-person` or `bearded-man`. |
+| **Gender-neutral roles & actions** | `person-role`, `person-gesture`, `person-activity`, `person-sport` → action or role (`doctor`, `wave`, `dancing`, `wrestling`), not `"woman gesturing OK"`. Gender-prefixed variants collapse to the same literal. |
+| **Keep gendered nouns** | Where the emoji reading *is* the gender (`boy`, `girl`, `man`, `woman`), keep that literal. |
+| **Align with Activities** | `person-sport` / `person-activity` literals should match the same activity nouns used in the Activities group (`soccer`, `swimming`, …). |
+| **Phase 3 in mind** | Many variants will share one literal; gloss semantically. The cull picks the best emoji per literal later. |
+
+Work **by subgroup**, in three waves. Gloss prototype rows per cluster, run `npm run fill-literals`, spot-check, then move on.
+
+### Subgroup briefs (People & Body)
+
+| Subgroup | Rows | Prototypes | Brief |
+|----------|-----:|-----------:|-------|
+| `body-parts` | 48 | 18 | Anatomical noun (`ear`, `foot`, `brain`). |
+| `hand-fingers-open` | 66 | 11 | Hand pose or gesture (`wave`, `raised-hand`, `vulcan-salute`). |
+| `hand-fingers-partial` | 54 | 9 | Gesture (`ok-sign`, `crossed-fingers`, `love-you-gesture`). |
+| `hand-fingers-closed` | 36 | 6 | Gesture (`fist`, `thumbs-up`, `thumbs-down`). |
+| `hand-single-finger` | 42 | 7 | Gesture (`point-up`, `middle-finger`). |
+| `hands` | 62 | 7 | Two-hand gesture (`clap`, `handshake`, `prayer-hands`). |
+| `hand-prop` | 18 | 3 | Hand + object (`writing-hand`, `nail-polish`). |
+| `person-symbol` | 11 | 11 | Symbolic figure (`speaking-head`, `bust-in-silhouette`) — one gloss each. |
+| `person-resting` | 30 | 3 | Pose (`sleeping`, `in-bed`). |
+| `person-gesture` | 180 | 12 | Verb or short phrase (`shrug`, `facepalm`, `bow`, `tipping-hand`). |
+| `person-role` | 492 | 34 | Job or role noun (`teacher`, `judge`, `pilot`). |
+| `person-activity` | 408 | 21 | Activity (`dancing`, `juggling`, `sauna`). |
+| `person-sport` | 308 | 17 | Sport (`basketball`, `wrestling`, `golf`). |
+| `person-fantasy` | 158 | 17 | Archetype (`fairy`, `vampire`, `mage`). |
+| `person` | 168 | ~12 | Age/gender noun (`baby`, `child`, `boy`, `girl`, `person`, `man`, `woman`, `older-person`). Hair/beard/skin-tone variants → same literal. |
+| `family` | 337 | 7 | Relationship or event (`family`, `kiss`, `couple`, `holding-hands`, `women-holding-hands`, `men-holding-hands`, `woman-and-man-holding-hands`). Mixed skin-tone rows share the gloss — fix `family` clustering or gloss the seven base concepts only. |
+
+Prototype counts come from `npm run collapse-variants report` scoped to People & Body; `person` and `family` may show inflated cluster counts until hair/beard and mixed skin-tone names collapse — treat the briefs above as the real gloss inventory.
+
+### Waves
+
+| Wave | Subgroups | ~Glosses | Notes |
+|------|-----------|----------|-------|
+| **1** | `body-parts`, all `hand-*`, `person-symbol`, `person-resting` | ~75 | Low ambiguity; establishes hand/gesture conventions. |
+| **2** | `person-gesture`, `person-role`, `person-activity`, `person-sport`, `person-fantasy` | ~101 | Bulk of the group; cluster-by-cluster with propagate. |
+| **3** | `person`, `family` | ~19 | Policy-heavy tail; do last. |
+
+After each wave: `npm run fill-literals`, then spot-check a few multi-member clusters (`collapse-variants report --verbose`).
+
+Leave `clarity` empty until Phase 4.
 
 ---
 
@@ -277,4 +339,4 @@ Manual editing in `data/lexicon.csv` is the source of truth for `literal`. Treat
 
 ## Immediate deliverable
 
-**Next:** Phase 2 on **People & Body** (2,418 rows, Tier B — gloss prototype rows per cluster, then `npm run fill-literals` to propagate skin-tone/gender variants). Then Phase 3 cull across all groups.
+**Next:** [Phase 2.5](#phase-25--people--body-literal-glossing) — People & Body in three waves (Wave 1: `body-parts` + `hand-*` + `person-symbol` + `person-resting`). Gloss prototype clusters only; no skin-tone or hair/beard literals; propagate after each subgroup. Then Phase 3 cull across all groups.
