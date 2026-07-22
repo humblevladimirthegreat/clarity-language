@@ -3550,7 +3550,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 ⏺️,record button,Symbols,av-symbol,record,,y
 ⏏️,eject button,Symbols,av-symbol,eject,,y
 🎦,cinema,Symbols,av-symbol,cinema,,y
-🔅,dim button,Symbols,av-symbol,dim,,y
+🔅,dim button,Symbols,av-symbol,dim,,n
 🔆,bright button,Symbols,av-symbol,bright,,y
 📶,antenna bars,Symbols,av-symbol,signal,,y
 🛜,wireless,Symbols,av-symbol,wireless,,y
@@ -3582,12 +3582,12 @@ emoji,name,group,subgroup,literal,clarity,keep
 🔰,Japanese symbol for beginner,Symbols,other-symbol,beginner,,y
 ⭕,hollow red circle,Symbols,other-symbol,hollow-red-circle,,y
 ✅,check mark button,Symbols,other-symbol,check,,y
-☑️,check box with check,Symbols,other-symbol,checkbox-checked,,y
+☑️,check box with check,Symbols,other-symbol,checkbox-checked,,n
 ✔️,check mark,Symbols,other-symbol,check,,n
 ❌,cross mark,Symbols,other-symbol,cross,,y
-❎,cross mark button,Symbols,other-symbol,cross-mark,,y
+❎,cross mark button,Symbols,other-symbol,cross-mark,,n
 ➰,curly loop,Symbols,other-symbol,loop,,y
-➿,double curly loop,Symbols,other-symbol,loop-double,,y
+➿,double curly loop,Symbols,other-symbol,loop-double,,n
 〽️,part alternation mark,Symbols,other-symbol,,,n
 ✳️,eight-spoked asterisk,Symbols,other-symbol,asterisk-eight,,y
 ✴️,eight-pointed star,Symbols,other-symbol,star-eight,,y
@@ -3596,19 +3596,19 @@ emoji,name,group,subgroup,literal,clarity,keep
 ®️,registered,Symbols,other-symbol,registered,,y
 ™️,trade mark,Symbols,other-symbol,trademark,,y
 🫟,splatter,Symbols,other-symbol,splatter,,y
-#️⃣,keycap: #,Symbols,keycap,keycap-hash,,y
-*️⃣,keycap: *,Symbols,keycap,keycap-asterisk,,y
-0️⃣,keycap: 0,Symbols,keycap,keycap-0,,y
-1️⃣,keycap: 1,Symbols,keycap,keycap-1,,y
-2️⃣,keycap: 2,Symbols,keycap,keycap-2,,y
-3️⃣,keycap: 3,Symbols,keycap,keycap-3,,y
-4️⃣,keycap: 4,Symbols,keycap,keycap-4,,y
-5️⃣,keycap: 5,Symbols,keycap,keycap-5,,y
-6️⃣,keycap: 6,Symbols,keycap,keycap-6,,y
-7️⃣,keycap: 7,Symbols,keycap,keycap-7,,y
-8️⃣,keycap: 8,Symbols,keycap,keycap-8,,y
-9️⃣,keycap: 9,Symbols,keycap,keycap-9,,y
-🔟,keycap: 10,Symbols,keycap,keycap-10,,y
+#️⃣,keycap: #,Symbols,keycap,hash,,y
+*️⃣,keycap: *,Symbols,keycap,asterisk,,y
+0️⃣,keycap: 0,Symbols,keycap,0,,y
+1️⃣,keycap: 1,Symbols,keycap,1,,y
+2️⃣,keycap: 2,Symbols,keycap,2,,y
+3️⃣,keycap: 3,Symbols,keycap,3,,y
+4️⃣,keycap: 4,Symbols,keycap,4,,y
+5️⃣,keycap: 5,Symbols,keycap,5,,y
+6️⃣,keycap: 6,Symbols,keycap,6,,y
+7️⃣,keycap: 7,Symbols,keycap,7,,y
+8️⃣,keycap: 8,Symbols,keycap,8,,y
+9️⃣,keycap: 9,Symbols,keycap,9,,y
+🔟,keycap: 10,Symbols,keycap,10,,y
 🔠,input latin uppercase,Symbols,alphanum,uppercase,,y
 🔡,input latin lowercase,Symbols,alphanum,lowercase,,y
 🔢,input numbers,Symbols,alphanum,numbers,,y
@@ -3648,40 +3648,40 @@ emoji,name,group,subgroup,literal,clarity,keep
 ㊙️,Japanese “secret” button,Symbols,alphanum,,,n
 🈺,Japanese “open for business” button,Symbols,alphanum,,,n
 🈵,Japanese “no vacancy” button,Symbols,alphanum,,,n
-🔴,red circle,Symbols,geometric,red-circle,,y
-🟠,orange circle,Symbols,geometric,orange-circle,,y
-🟡,yellow circle,Symbols,geometric,yellow-circle,,y
-🟢,green circle,Symbols,geometric,green-circle,,y
-🔵,blue circle,Symbols,geometric,blue-circle,,y
-🟣,purple circle,Symbols,geometric,purple-circle,,y
-🟤,brown circle,Symbols,geometric,brown-circle,,y
-⚫,black circle,Symbols,geometric,black-circle,,y
-⚪,white circle,Symbols,geometric,white-circle,,y
-🟥,red square,Symbols,geometric,red-square,,y
-🟧,orange square,Symbols,geometric,orange-square,,y
-🟨,yellow square,Symbols,geometric,yellow-square,,y
-🟩,green square,Symbols,geometric,green-square,,y
-🟦,blue square,Symbols,geometric,blue-square,,y
-🟪,purple square,Symbols,geometric,purple-square,,y
-🟫,brown square,Symbols,geometric,brown-square,,y
-⬛,black large square,Symbols,geometric,black-large-square,,y
-⬜,white large square,Symbols,geometric,white-large-square,,y
-◼️,black medium square,Symbols,geometric,black-medium-square,,y
-◻️,white medium square,Symbols,geometric,white-medium-square,,y
-◾,black medium-small square,Symbols,geometric,black-medium-small-square,,y
-◽,white medium-small square,Symbols,geometric,white-medium-small-square,,y
-▪️,black small square,Symbols,geometric,black-small-square,,y
-▫️,white small square,Symbols,geometric,white-small-square,,y
-🔶,large orange diamond,Symbols,geometric,orange-large-diamond,,y
-🔷,large blue diamond,Symbols,geometric,blue-large-diamond,,y
-🔸,small orange diamond,Symbols,geometric,orange-small-diamond,,y
-🔹,small blue diamond,Symbols,geometric,blue-small-diamond,,y
-🔺,red triangle pointed up,Symbols,geometric,red-up-triangle,,y
-🔻,red triangle pointed down,Symbols,geometric,red-down-triangle,,y
-💠,diamond with a dot,Symbols,geometric,diamond-dot,,y
+🔴,red circle,Symbols,geometric,red,,y
+🟠,orange circle,Symbols,geometric,orange-circle,,n
+🟡,yellow circle,Symbols,geometric,yellow,,y
+🟢,green circle,Symbols,geometric,green,,y
+🔵,blue circle,Symbols,geometric,blue-circle,,n
+🟣,purple circle,Symbols,geometric,purple-circle,,n
+🟤,brown circle,Symbols,geometric,brown-circle,,n
+⚫,black circle,Symbols,geometric,black,,y
+⚪,white circle,Symbols,geometric,white,,y
+🟥,red square,Symbols,geometric,red-square,,n
+🟧,orange square,Symbols,geometric,orange-square,,n
+🟨,yellow square,Symbols,geometric,yellow-square,,n
+🟩,green square,Symbols,geometric,green-square,,n
+🟦,blue square,Symbols,geometric,blue-square,,n
+🟪,purple square,Symbols,geometric,purple-square,,n
+🟫,brown square,Symbols,geometric,brown-square,,n
+⬛,black large square,Symbols,geometric,black-square,,y
+⬜,white large square,Symbols,geometric,white-square,,y
+◼️,black medium square,Symbols,geometric,black-medium-square,,n
+◻️,white medium square,Symbols,geometric,white-medium-square,,n
+◾,black medium-small square,Symbols,geometric,black-medium-small-square,,n
+◽,white medium-small square,Symbols,geometric,white-medium-small-square,,n
+▪️,black small square,Symbols,geometric,black-small-square,,n
+▫️,white small square,Symbols,geometric,white-small-square,,n
+🔶,large orange diamond,Symbols,geometric,orange-large-diamond,,n
+🔷,large blue diamond,Symbols,geometric,blue-large-diamond,,n
+🔸,small orange diamond,Symbols,geometric,orange-small-diamond,,n
+🔹,small blue diamond,Symbols,geometric,blue-small-diamond,,n
+🔺,red triangle pointed up,Symbols,geometric,up-triangle,,y
+🔻,red triangle pointed down,Symbols,geometric,down-triangle,,y
+💠,diamond with a dot,Symbols,geometric,diamond-dot,,n
 🔘,radio button,Symbols,geometric,radio-button,,y
-🔳,white square button,Symbols,geometric,white-square-button,,y
-🔲,black square button,Symbols,geometric,black-square-button,,y
+🔳,white square button,Symbols,geometric,white-square-button,,n
+🔲,black square button,Symbols,geometric,black-square-button,,n
 🏁,chequered flag,Flags,flag,checkered-flag,,y
 🚩,triangular flag,Flags,flag,triangle-flag,,y
 🎌,crossed flags,Flags,flag,crossed-flags,,y

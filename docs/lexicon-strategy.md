@@ -38,7 +38,7 @@ The **immediate reading** — the short English word or phrase a fluent emoji us
 | ▶️ | play button | `play-button` | `play` |
 | 🏧 | ATM sign | `atm-sign` | `atm` |
 | 🅰️ | A button (blood type) | — | `blood-type-a` (the label *is* the meaning) |
-| 1️⃣ | keycap: 1 | — | `keycap-1` (digit is the meaning) |
+| 1️⃣ | keycap: 1 | — | `1` (digit is the meaning) |
 
 Rules:
 
@@ -93,8 +93,8 @@ This is separate from the **near-duplicate cull** (Phase 3): a row can be the on
 | 1. Variant collapse | **done** |
 | 2. Literal glossing | **done** |
 | 2.5. People & Body glossing | **done** — 2,418 rows glossed |
-| 3. Cull (`keep`) | **done** — 1,501 kept · 2,452 dropped |
-| 4. Clarity roots | **done** — 1,501 rows in `lexicon-published.csv` |
+| 3. Cull (`keep`) | **done** — 1,473 kept · 2,480 dropped |
+| 4. Clarity roots | **done** — 1,473 rows in `lexicon-published.csv` |
 
 ```
 emojis.csv  →  lexicon.csv (skeleton)          ✓ done
@@ -110,7 +110,7 @@ emojis.csv  →  lexicon.csv (skeleton)          ✓ done
          4. generate clarity roots → lexicon-published.csv  ✓ done
 ```
 
-**What exists today:** Phase 1–3 complete. **Phase 4 complete:** `data/lexicon-published.csv` has **1,501** rows (`emoji`, `literal`, `clarity`, empty `metaphorical`). Regenerate with `npm run phase4-publish` when literals or the keep set change.
+**What exists today:** Phase 1–3 complete. **Phase 4 complete:** `data/lexicon-published.csv` has **1,473** rows (`emoji`, `literal`, `clarity`, empty `metaphorical`). Regenerate with `npm run phase4-publish` when literals or the keep set change.
 
 ---
 
@@ -179,8 +179,8 @@ Short guidance so glosses stay consistent within a subgroup:
 | `alphanum` | Latin-letter buttons → meaning (`parking`, `ok`, `cool`); blood-type → `blood-type-a`. **Japanese ideograph buttons → `keep=n`** (no English association). |
 | `av-symbol` | Media control meaning (`play`, `pause`, `shuffle`), not "play button". |
 | `arrow` | Direction or action (`up`, `back`, `reload`), not "up arrow". |
-| `geometric` | Color + shape when that is the reading (`red-circle`); otherwise the intended use. |
-| `keycap` | `keycap-1`, `keycap-hash`, etc. — digit/symbol is the meaning. |
+| `geometric` | Keep traffic/status colors + basic squares/triangles only (`red`, `yellow`, `green`, `black`, `white`, `black-square`, `white-square`, `up-triangle`, `down-triangle`, `radio-button`). Drop size/color spam. |
+| `keycap` | Bare digit/symbol (`0`…`9`, `10`, `hash`, `asterisk`) — that character is the meaning. |
 | `face-*` | What the face reads as (`grin`, `laugh`, `cry`, `wink`) — not Unicode face description. |
 | `heart` | Keep color when it matters (`red-heart`); shared concepts otherwise (`broken-heart`). |
 | `person-*` | Action or role (`wave`, `doctor`, `runner`), not "woman gesturing OK". No skin-tone or hair/beard literals — see [Phase 2.5](#phase-25--people--body-literal-glossing). |
@@ -319,8 +319,8 @@ When distinct concepts share a `literal` within the same `group`/`subgroup` (e.g
 | Metric | Count |
 |--------|------:|
 | Total seed rows | 3,953 |
-| `keep=y` (published) | 1,501 |
-| `keep=n` (dropped) | 2,452 |
+| `keep=y` (published) | 1,473 |
+| `keep=n` (dropped) | 2,480 |
 | Drop A (no English association) | 19 |
 | Duplicate clusters culled | 193 |
 | Singleton `keep=y` | 1,458 |
@@ -333,7 +333,7 @@ When distinct concepts share a `literal` within the same `group`/`subgroup` (e.g
 
 **Input:** `data/lexicon.csv` — rows where `keep=y` and `literal` is set.
 
-**Output:** `data/lexicon-published.csv` — **1,501 rows** today (only `keep=y`; dropped rows are not transferred).
+**Output:** `data/lexicon-published.csv` — **1,473 rows** today (only `keep=y`; dropped rows are not transferred).
 
 | Column | Phase 4 |
 |--------|---------|
