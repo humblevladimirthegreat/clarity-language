@@ -276,4 +276,4 @@ b) All words end with a lexical ending (**-l**, **-m**, **-n**, or **-r**), opti
 
 c) Easy to tell the components of a compound word because **x** separates them. Mid-word **x** is only the compound joiner (never part of a root); word-initial **x** is the discourse-marker prefix.
 
-d) **Number-word exception:** After a PoS prefix, a following **r** (start of the number marker) may form a cluster that is not otherwise allowed (e.g. `/ɡ/`+`r`, `/z/`+`r`, `/v/`+`r`, `/h/`+`r`). That cluster is legal **only** in [number words](numbers.md); it is not a global expansion of the onset-cluster list above. Number stems are a closed formal grammar and must not be assigned as ordinary lexicon roots.
+d) **Number-word exception:** After a PoS prefix, a following **r** (start of the number marker) may form a cluster that is not otherwise allowed (e.g. `/ɡ/`+`r`, `/z/`+`r`, `/v/`+`r`, `/h/`+`r`, `/j/`+`r`). That cluster is legal **only** in [number words](numbers.md); it is not a global expansion of the onset-cluster list above. Number stems are a closed formal grammar and must not be assigned as ordinary lexicon roots.

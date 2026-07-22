@@ -10,13 +10,49 @@ A whole numeric value is **one word**, even when it contains several digit group
 [PoS] + r + V + ( [exponent?] [mantissa digits?] )+ + [ending] + [z?]
 ```
 
-1. **PoS** — same prefixes as elsewhere. Use `/ɡ/` when the number modifies a noun; use `/z/`, `/d/`, or `/b/` when the number is itself an argument. Digit-strings usually take the role the clause needs (often `/d/`).
+1. **PoS** — same prefix inventory as elsewhere; [roles for number words](#parts-of-speech-on-numbers) below.
 2. **Number marker** — consonant **r** plus a vowel **V** (see [Marker vowel](#marker-vowel)). The PoS+`r` cluster is a [number-only phonotactic exception](language-reference.md#phonotactics).
 3. **One or more digit groups** — each group is an optional exponent and optional mantissa digits (at least one of the two). Digits compound with **no** **x** separator. There is **no per-group polarity**; sign (when it applies) is on the marker vowel for the whole word.
 4. **Ending** — `-l` / `-m` / `-n` / `-r` with [number-specific meanings](#number-endings).
 5. **Plural `-z`** — optional; same sense as elsewhere (the group containing that numeric referent).
 
 **Lexicon rule:** Any stem that matches this grammar is a number, never an ordinary root. Dictionary generation must reject colliding roots.
+
+## Parts of speech on numbers
+
+The number word takes whichever PoS prefix the clause slot needs. The stem (marker + digits + ending) does not change.
+
+| Prefix | Role with a number |
+|--------|--------------------|
+| `/ɡ/` | **Modifier** — the number describes the preceding noun (*three cats*, *the second page*). Goes after the noun, like other adjectives. |
+| `/z/` | **subject** — the numeric value (or digit-string / rank) is the subject. |
+| `/d/` | **direct object** — the number is the object (common for digit-strings / codes being dialed, entered, stated). |
+| `/b/` | **argument noun** — the number fills the `/b/` slot of a complex adjective or adverb (*at 3*, *of size 12*, …). |
+| `/v/` | **verb** — the number is the clause’s action; sense depends on the [marker vowel](#number-as-verb-by-marker). Not multiply/divide by N (use ordinary *multiply* / *divide* plus the number as `/h/`). |
+| `/h/` | **adverb** — the number modifies the verb/clause: *N times*, factors (*multiply by three*), clock/time readings, and similar. |
+| `/j/` | **interjection** — a bare shouted or exclaimed number with no clause (*Three!*, bingo call-outs, countdown beats). Vocative/interjection rules in the [utterance-marker section](language-reference.md#utterance-markers-j) still apply (left-edge cluster only, or bare utterance). |
+
+**Not valid with numbers:**
+
+- **`/w/` (adjective adjunct)** — numbers do not take `/w/`, and a `/ɡ/` number is not a host for `/w/` grading or framing. Degree and “aboutness” of a quantity use [number endings](#number-endings) (especially **-m** for approximate), not `/w/`.
+- **`/x/`** — discourse markers are not number words.
+
+Digit-strings (`re`…) usually take the argument role the clause needs (often `/d/`). Ordinals that modify a noun use `/ɡ/`; an ordinal used as a standalone rank uses `/z/`, `/d/`, or `/b/` as appropriate.
+
+### Number as verb (by marker)
+
+`/v/` + number inherits the marker’s identity, so the action type follows **V**.
+
+| Marker | Verb sense |
+|--------|------------|
+| **`ra`** | **Add N / increase by N** — transitive *add N of (object)* / *increase (object) by N*; intransitive *grow by N* when the patient is clear from context. |
+| **`ru`** | **Remove N / decrease by N** — transitive *remove N of (object)* / *decrease (object) by N*; intransitive *shrink by N*. |
+| **`re`** | **Enter / dial / input that digit-string** — type the code, dial the phone number, key the ID. Object (if any) is the channel or device; the digits are in the verb. |
+| **`ro`** | **Take / assign rank N** — intransitive *place Nth* / *come in Nth*; transitive *put (object) in Nth place* / *rank as Nth*. |
+
+“Set to N” (bring a quantity to an absolute value) is not a number-verb sense — use an ordinary verb plus the number as argument or adverb. Multiply/divide likewise stay ordinary verbs plus the number as `/h/`.
+
+Endings still apply (**-m** ≈ *about* that amount/code/rank, **-r** resume, etc.).
 
 ## Marker vowel
 
@@ -117,7 +153,7 @@ Digits below use the table above; glosses show structure, not stress detail.
 | phone 555-123-4567 | *drevavavawoduremovagulel* (`d` + `re` + va×3 · wo du re · mo va gu · le + `l`) |
 | scientific 5.2487083e-4 | *grabumojavajedumohalezoharel* (`ra` + bu mo **ja** + va **je** + du mo ha · le zo ha · re) |
 
-In a sentence, the PoS attaches to that single number word (e.g. direct-object digit-string: `/d/` + `re` + … + ending).
+In a sentence, the PoS attaches to that single number word (see [Parts of speech on numbers](#parts-of-speech-on-numbers); e.g. direct-object digit-string: `/d/` + `re` + … + ending).
 
 ## Stress (pronunciation guide)
 
