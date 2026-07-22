@@ -91,7 +91,7 @@ This is separate from the **near-duplicate cull** (Phase 3): a row can be the on
 |-------|--------|
 | Skeleton (`lexicon.csv` one row per emoji) | **done** |
 | 1. Variant collapse | **done** |
-| 2. Literal glossing | **not started** (490 scripted drafts in Objects/Symbols only — wrong approach, need re-gloss or clear) |
+| 2. Literal glossing | **in progress** — Symbols **done** (206 glossed, 18 dropped); Objects still has scripted drafts |
 | 3. Cull (`keep`) | not started |
 | 4. Clarity roots | not started |
 
@@ -100,14 +100,14 @@ emojis.csv  →  lexicon.csv (skeleton)          ✓ done
                  ↓
          1. collapse variants (mechanical)     ✓ done
                  ↓
-         2. gloss literals (curated)         ← next
+         2. gloss literals (curated)         ← in progress (Symbols ✓)
                  ↓
          3. cull: duplicates + no-English-drop (keep=y/n)
                  ↓
          4. generate clarity roots
 ```
 
-**What exists today:** The skeleton is complete. Phase 1 tooling (`scripts/collapse-variants.ts`, `src/variant-cluster.ts`) clusters variant rows and propagates `literal` from prototypes. Run `npm run collapse-variants report` to audit clusters; after glossing a prototype row in Phase 2, run `npm run fill-literals` (alias for `collapse-variants propagate`) to fan out to variants. The 490 Objects/Symbols scripted literals from an earlier mistaken auto-fill remain as discardable drafts until re-glossed. No `keep` values are set.
+**What exists today:** The skeleton is complete. Phase 1 tooling (`scripts/collapse-variants.ts`, `src/variant-cluster.ts`) clusters variant rows and propagates `literal` from prototypes. Run `npm run collapse-variants report` to audit clusters; after glossing a prototype row in Phase 2, run `npm run fill-literals` (alias for `collapse-variants propagate`) to fan out to variants. **Symbols** (224 rows) is fully glossed: 206 reviewed literals, 18 `keep=n` drops (17 Japanese ideograph buttons + 〽️ part-alternation mark). Objects still has scripted draft literals from the earlier mistaken auto-fill. `clarity` is empty everywhere.
 
 ---
 
@@ -190,7 +190,7 @@ During glossing, mark obvious drops mentally (or tentatively `keep=n`); confirm 
 
 | Group | Rows | Tier | Status |
 |-------|------|------|--------|
-| Symbols | 224 | B | re-gloss |
+| Symbols | 224 | B | done |
 | Smileys & Emotion | 171 | B | |
 | People & Body | 2,418 | B | |
 | Travel & Places | 219 | B | |
@@ -203,7 +203,7 @@ During glossing, mark obvious drops mentally (or tentatively `keep=n`); confirm 
 
 Status values: empty · `draft` · `review` · `done` · `re-gloss` (scripted literals that need human pass).
 
-**Note:** Objects and Symbols were briefly auto-filled from normalized `name`; treat those literals as **drafts to replace**, not finished glosses.
+**Note:** Objects were briefly auto-filled from normalized `name`; treat those literals as **drafts to replace**, not finished glosses. Symbols has been re-glossed per Tier B briefs.
 
 ---
 
@@ -276,4 +276,4 @@ Manual editing in `data/lexicon.csv` is the source of truth for `literal`. Treat
 
 ## Immediate deliverable
 
-**Next:** Phase 2 on **Symbols** (meaning-first gloss + batch-drop Japanese ideograph buttons). Gloss prototype rows per cluster, then `npm run fill-literals` to propagate. Clear or ignore the 490 scripted Objects/Symbols drafts when re-glossing.
+**Next:** Phase 2 on **Smileys & Emotion** (171 rows, Tier B). Then People & Body, Travel & Places, Activities, Objects (re-gloss sign-like subgroups), and Tier A groups (Animals, Food, Flags, Component).
