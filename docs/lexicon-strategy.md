@@ -11,7 +11,7 @@ A root dictionary where each kept entry has (in `data/lexicon-published.csv`):
 | emoji | Visual anchor and stable ID for the concept |
 | literal | Immediate English gloss — what a fluent user reads the emoji as (see below) |
 | clarity | Auto-generated Clarity **root** derived from that literal |
-| metaphorical | Deferred — column present in published file, empty until a later pass |
+| metaphorical | NGSL lemmas attached as figurative senses (Phase 5); semicolon-separated |
 
 Entries are **roots** only. Part-of-speech prefixes (`/z/`, `/v/`, `/w/`, …) and lexical endings (`-l`, `-m`, …) are applied at use time; this file does not list PoS variants or usage notes.
 
@@ -94,8 +94,9 @@ This is separate from the **near-duplicate cull** (Phase 3): a row can be the on
 | 1. Variant collapse | **done** |
 | 2. Literal glossing | **done** |
 | 2.5. People & Body glossing | **done** — 2,418 rows glossed |
-| 3. Cull (`keep`) | **done** — 1,391 kept · 2,562 dropped |
-| 4. Clarity roots | **done** — 1,391 rows in `lexicon-published.csv` |
+| 3. Cull (`keep`) | **done** — 1,367 kept · 2,586 dropped |
+| 4. Clarity roots | **done** — 1,367 rows in `lexicon-published.csv` |
+| 5. NGSL coverage / metaphors | **in progress** — policy + coverage tooling; metaphor fill pending |
 
 ```
 emojis.csv  →  lexicon.csv (skeleton)          ✓ done
@@ -109,9 +110,11 @@ emojis.csv  →  lexicon.csv (skeleton)          ✓ done
          3. cull: duplicates + no-English-drop (keep=y/n)  ✓ done
                  ↓
          4. generate clarity roots → lexicon-published.csv  ✓ done
+                 ↓
+         5. NGSL lemmas → literal match or metaphorical attach  ◐ tooling ready
 ```
 
-**What exists today:** Phase 1–3 complete. **Phase 4 complete:** `data/lexicon-published.csv` has **1,391** rows (`emoji`, `literal`, `clarity`, empty `metaphorical`). Regenerate with `npm run phase4-publish` when literals or the keep set change.
+**What exists today:** Phases 1–4 complete. **Phase 5 tooling ready:** `npm run ngsl-coverage` writes `data/ngsl-coverage.csv` from NGSL + published lexicon + function denylist + lemma map. Metaphor cells in `lexicon-published.csv` are still empty until review waves fill them.
 
 ---
 
@@ -324,8 +327,8 @@ When distinct concepts share a `literal` within the same `group`/`subgroup` (e.g
 | Metric | Count |
 |--------|------:|
 | Total seed rows | 3,953 |
-| `keep=y` (published) | 1,391 |
-| `keep=n` (dropped) | 2,562 |
+| `keep=y` (published) | 1,367 |
+| `keep=n` (dropped) | 2,586 |
 | Drop A (empty literal / not lexicon material) | 193 |
 | Duplicate clusters culled | 179 |
 | Singleton `keep=y` | 1,402 |
@@ -338,7 +341,7 @@ When distinct concepts share a `literal` within the same `group`/`subgroup` (e.g
 
 **Input:** `data/lexicon.csv` — rows where `keep=y` and `literal` is set.
 
-**Output:** `data/lexicon-published.csv` — **1,391 rows** today (only `keep=y`; dropped rows are not transferred).
+**Output:** `data/lexicon-published.csv` — **1,367 rows** today (only `keep=y`; dropped rows are not transferred).
 
 | Column | Phase 4 |
 |--------|---------|
@@ -353,9 +356,66 @@ When distinct concepts share a `literal` within the same `group`/`subgroup` (e.g
 2. Derive each `clarity` root from `literal` with the existing converter (`toUniqueClarityWord` / `scripts/convert-emojis.ts` pattern).
 3. Uniqueness is over **exported** roots only (and any reserved roots documented later).
 4. Store only the root in `clarity` (no PoS prefix, no `-l`/`-m` ending).
-5. Write the four columns above to `lexicon-published.csv`. Leave `metaphorical` blank on every row.
+5. Write the four columns above to `lexicon-published.csv`. On first publish, leave `metaphorical` blank. On **re**-publish, **preserve** existing `metaphorical` values keyed by `emoji` (Phase 5 edits must survive regenerating roots).
 
 `lexicon.csv` is **not** updated with `clarity` values — it remains the full seed + gloss + cull working file. Regenerate `lexicon-published.csv` in bulk when literals or the keep set change; do not hand-edit generated roots unless documenting an exception in this file.
+
+---
+
+## Phase 5 — NGSL coverage and metaphors
+
+**Goal:** For each **content** NGSL lemma, either match a published `literal` or attach it as a metaphor on exactly one emoji row. Function words are out of scope. Inflections collapse to one core lemma / one row.
+
+### Rules
+
+| Rule | Detail |
+|------|--------|
+| One lemma → one root | Each NGSL lemma attaches to at most one published row (via `literal` match or `metaphorical`). |
+| Metaphors only on emoji rows | Attachments live in `lexicon-published.csv` column `metaphorical` — not a separate NGSL root list. |
+| Function words out of scope | Lemmas in `data/ngsl-function-words.txt` get status `function` and are never auto-matched or metaphor-attached. |
+| Core lemmas only | Inflections map to a single lemma (`went` / `goes` → `go`) via `data/ngsl-lemma-map.csv`. Coverage is lemma-keyed. |
+| Prefer literal | Exact `lemma == literal` wins over metaphor. Do not also list that lemma in `metaphorical`. |
+| No forced attach | Leftovers stay `gap` until a later decision (compounds / non-emoji roots) — do not invent bad metaphors. |
+
+### `metaphorical` cell format
+
+- Lowercase English **lemmas** only (no `went`, no glosses).
+- **Semicolon-separated**, no spaces required (trim on parse): `go;travel;proceed`
+- Many lemmas may share one emoji; each lemma appears on **at most one** row.
+- A lemma must not duplicate another row’s `literal`.
+- Empty cell = no metaphors yet.
+
+Helpers: `parseMetaphoricalCell` / `formatMetaphoricalCell` in `scripts/ngsl-coverage.ts`.
+
+### Inputs
+
+| File | Role |
+|------|------|
+| `data/ngsl.csv` | Frequency-ordered English lemmas (`english` column) |
+| `data/lexicon-published.csv` | Published roots; `metaphorical` filled by hand during review waves |
+| `data/ngsl-function-words.txt` | Closed-class denylist (`#` comments allowed) |
+| `data/ngsl-lemma-map.csv` | `surface,lemma` inflection map (`#` comment lines allowed) |
+
+### Coverage report (`data/ngsl-coverage.csv`)
+
+Regenerate anytime with `npm run ngsl-coverage`. Do not hand-edit as source of truth — edit denylist, lemma map, or published `metaphorical`, then re-run.
+
+| Column | Values |
+|--------|--------|
+| `lemma` | Core lemma (or surface when `skip-inflection`) |
+| `status` | `literal` · `metaphor` · `function` · `gap` · `skip-inflection` |
+| `emoji` / `literal` / `clarity` | Target root when assigned |
+| `source` | `exact` · `metaphorical` · `denylist` · `lemma-map` |
+| `notes` | e.g. `→ go` for skip-inflection |
+
+**Auto assignment today:** function denylist + exact literal match + existing `metaphorical` parses. Gaps await metaphor review waves (highest-frequency `gap` rows first).
+
+### Review waves (next)
+
+1. Sort `status=gap` by NGSL order (file order ≈ frequency).
+2. For each lemma, pick one published emoji or leave `gap`.
+3. Append lemma to that row’s `metaphorical` (semicolon list).
+4. Re-run `npm run ngsl-coverage` and fix uniqueness warnings.
 
 ---
 
@@ -380,7 +440,7 @@ When distinct concepts share a `literal` within the same `group`/`subgroup` (e.g
 | `emoji` | yes | Glyph |
 | `literal` | yes | Immediate-reading gloss |
 | `clarity` | phase 4 | Auto root from `literal` |
-| `metaphorical` | later | Deferred — column present, empty until metaphor pass |
+| `metaphorical` | phase 5 | Semicolon-separated NGSL lemmas (figurative); empty until review |
 
 ## Tooling
 
@@ -392,17 +452,18 @@ When distinct concepts share a `literal` within the same `group`/`subgroup` (e.g
 | `scripts/phase2.5-gloss.ts` | Phase 2.5 People & Body glossing (`npm run phase2.5-gloss`; `--wave=1\|2\|3\|all`) |
 | `scripts/phase3-cull.ts` | Phase 3 cull (`npm run phase3-cull`; `report` / `apply` / `audit`) |
 | `scripts/phase4-publish.ts` | Phase 4: `keep=y` rows from `lexicon.csv` → `lexicon-published.csv` (`literal` → `clarity`; `metaphorical` blank) |
+| `scripts/ngsl-coverage.ts` | Phase 5: NGSL ↔ published coverage report → `data/ngsl-coverage.csv` |
 
 Manual editing in `data/lexicon.csv` is the source of truth for `literal`. Treat `docs/language-reference.md` as grammar/phonology authority; this doc owns lexicon process only.
 
 ## Out of scope (for now)
 
-- Metaphorical senses and `-m` dictionary text
 - Claritish / psychology-driven sense splits
 - Usage notes, example sentences, PoS-specific entries
 - Compounds and “in the sense of [topic]” infixes
+- Non-emoji roots for remaining NGSL `gap` lemmas
 - Replacing or deleting rows from the full emoji seed (cull via `keep` instead)
 
 ## Immediate deliverable
 
-**Next:** metaphor pass — fill `metaphorical` in `lexicon-published.csv` when that work is in scope.
+**Next:** metaphor review waves — fill `metaphorical` on `lexicon-published.csv` for high-frequency `gap` lemmas; re-run `npm run ngsl-coverage` after each wave.
