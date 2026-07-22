@@ -368,16 +368,17 @@ When distinct concepts share a `literal` within the same `group`/`subgroup` (e.g
 
 **Goal:** Each published row has a teachable figurative extension: `literal` (immediate reading) → `metaphorical` (figurative sense), plus a short `mnemonic` that makes the link stick.
 
-Quality and memorability win. Metaphors need **not** be NGSL lemmas; duplicate metaphors across rows are fine for now.
+Quality and memorability win. Metaphors need **not** be NGSL lemmas.
 
 ### Rules
 
 | Rule | Detail |
 |------|--------|
 | One metaphor per row | `metaphorical` holds **at most one** lowercase word or short lemma. |
+| Unique metaphors | Each non-empty `metaphorical` value must be unique in `lexicon-published.csv`. Plurals and near-synonyms count as the same slot (e.g. `doubt` / `uncertainty`, `protection` / `safety`). |
+| Collision resolution | When two rows share a slot, keep the stronger literal→metaphor link; clear the others (`metaphorical` empty, `mnemonic` = `REVIEW`). Do not invent weaker alternates in the same pass. |
 | Teachable link | `mnemonic` is a short cue from literal → metaphorical. |
 | No good link | Leave `metaphorical` empty and set `mnemonic` to `REVIEW`. |
-| Duplicates OK | The same `metaphorical` value may appear on many rows (e.g. all flags → `nation`). |
 | Not NGSL-driven | Do not force arbitrary NGSL lemmas onto emoji for coverage. |
 | Preserve on republish | Phase 4 must preserve hand-edited `metaphorical` and `mnemonic` keyed by `emoji`. |
 
@@ -399,9 +400,11 @@ For `subgroup=country-flag`:
 
 | Field | Sense |
 |-------|-------|
-| `literal` | Country (state / historical / government focus) |
-| `metaphorical` | `nation` (people / culture) |
-| `mnemonic` | e.g. `country is the state; nation is the people` |
+| `literal` | Country or territory name (state / government focus) |
+| `metaphorical` | Demonym — the people of that place (e.g. `usa` → `american`, `spain` → `spanish`) |
+| `mnemonic` | Short country→people cue (e.g. `usa people are american`) |
+
+Each flag gets its own demonym; shared demonyms across territories resolve by priority (sovereign state wins) or `REVIEW` when no natural demonym exists.
 
 ### NGSL coverage (legacy)
 
@@ -452,6 +455,7 @@ Helpers: `parseMetaphoricalCell` / `formatMetaphoricalCell` in `scripts/ngsl-cov
 | `scripts/wave3-gap-fill.py` | Phase 5 (legacy): collapse/fill remaining `gap` lemmas |
 | `scripts/generate-metaphor-batch.py` | Phase 5: generate places/symbols metaphor batch JSON |
 | `scripts/apply-metaphor-quality-pass.py` | Phase 5: apply quality metaphors + mnemonics to `lexicon-published.csv` |
+| `scripts/deduplicate-metaphors.py` | Phase 5: flag demonyms + unique metaphor dedup (`metaphorical` empty + `mnemonic=REVIEW` for losers) |
 
 Manual editing in `data/lexicon.csv` is the source of truth for `literal`. Treat `docs/language-reference.md` as grammar/phonology authority; this doc owns lexicon process only.
 
