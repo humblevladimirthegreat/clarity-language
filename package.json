@@ -21,6 +21,7 @@
     "convert-emojis": "tsx scripts/convert-emojis.ts",
     "collapse-variants": "tsx scripts/collapse-variants.ts",
     "fill-literals": "tsx scripts/fill-literals.ts",
+    "phase2.5-gloss": "tsx scripts/phase2.5-gloss.ts",
     "web": "npx --yes serve . -p 4173"
   },
   "engines": {

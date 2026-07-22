@@ -82,10 +82,16 @@ export function loadLexicon(): { headers: string[]; rows: LexiconRow[] } {
   return { headers, rows: rows as LexiconRow[] };
 }
 
-function printReport(rows: LexiconRow[], verbose: boolean): void {
-  const clusters = buildClusters(rows);
-  const report = buildClusterReport(rows, clusters);
+function printReport(rows: LexiconRow[], verbose: boolean, groupFilter?: string): void {
+  const filtered = groupFilter
+    ? rows.filter((r) => r.group === groupFilter)
+    : rows;
+  const clusters = buildClusters(filtered);
+  const report = buildClusterReport(filtered, clusters);
 
+  if (groupFilter) {
+    console.log(`Group filter: ${groupFilter}`);
+  }
   console.log(`Total rows: ${report.totalRows}`);
   console.log(`Total clusters: ${report.totalClusters}`);
   console.log(`Multi-member clusters: ${report.multiMemberClusters}`);
@@ -101,7 +107,7 @@ function printReport(rows: LexiconRow[], verbose: boolean): void {
     const multi = clusters.filter((c) => c.memberIndices.length > 1);
     console.log(`\nAll multi-member clusters (${multi.length}):`);
     for (const cluster of multi) {
-      const prototype = rows[cluster.prototypeIndex]!;
+      const prototype = filtered[cluster.prototypeIndex]!;
       const literal = (prototype.literal ?? "").trim();
       const literalTag = literal ? `literal="${literal}"` : "no literal";
       console.log(
@@ -142,6 +148,7 @@ Commands:
 
 Options:
   --verbose   List all multi-member clusters (report mode)
+  --group     Filter report to a single group (e.g. "People & Body")
   --force     Overwrite member literals that differ from prototype
   --dry-run   Propagate without writing lexicon.csv`);
 }
@@ -152,6 +159,8 @@ function main(): void {
   const verbose = args.includes("--verbose");
   const force = args.includes("--force");
   const dryRun = args.includes("--dry-run");
+  const groupArg = args.find((a) => a.startsWith("--group="));
+  const groupFilter = groupArg ? groupArg.slice("--group=".length) : undefined;
 
   if (args.includes("--help") || args.includes("-h")) {
     printUsage();
@@ -160,7 +169,7 @@ function main(): void {
 
   if (command === "report") {
     const { rows } = loadLexicon();
-    printReport(rows, verbose);
+    printReport(rows, verbose, groupFilter);
     return;
   }
 

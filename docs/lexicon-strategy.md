@@ -91,9 +91,9 @@ This is separate from the **near-duplicate cull** (Phase 3): a row can be the on
 |-------|--------|
 | Skeleton (`lexicon.csv` one row per emoji) | **done** |
 | 1. Variant collapse | **done** |
-| 2. Literal glossing | **done** — all groups except People & Body |
-| 2.5. People & Body glossing | **next** — 2,418 rows, ~280 prototype glosses after collapse |
-| 3. Cull (`keep`) | not started |
+| 2. Literal glossing | **done** |
+| 2.5. People & Body glossing | **done** — 2,418 rows glossed |
+| 3. Cull (`keep`) | **next** |
 | 4. Clarity roots | not started |
 
 ```
@@ -101,16 +101,16 @@ emojis.csv  →  lexicon.csv (skeleton)          ✓ done
                  ↓
          1. collapse variants (mechanical)     ✓ done
                  ↓
-         2. gloss literals (curated)             ✓ done (except People & Body)
+         2. gloss literals (curated)             ✓ done
                  ↓
-         2.5. People & Body (curated, waves)  ← next
+         2.5. People & Body (curated, waves)  ✓ done
                  ↓
-         3. cull: duplicates + no-English-drop (keep=y/n)
+         3. cull: duplicates + no-English-drop (keep=y/n)  ← next
                  ↓
          4. generate clarity roots
 ```
 
-**What exists today:** The skeleton is complete. Phase 1 tooling (`scripts/collapse-variants.ts`, `src/variant-cluster.ts`) clusters variant rows and propagates `literal` from prototypes. Run `npm run collapse-variants report` to audit clusters; after glossing a prototype row, run `npm run fill-literals` (alias for `collapse-variants propagate`) to fan out to variants. **Phase 2 complete** for Symbols (206 glossed, 18 dropped), Smileys & Emotion (171), Travel & Places (219), Activities (85), Objects (266), Animals & Nature (160), Food & Drink (130 glossed, 1 dropped: oden), Flags (270), and Component (9). **Phase 2.5** (People & Body, 2,418 rows) is the remaining glossing work. `clarity` is empty everywhere.
+**What exists today:** The skeleton is complete. Phase 1 tooling (`scripts/collapse-variants.ts`, `src/variant-cluster.ts`) clusters variant rows and propagates `literal` from prototypes. Run `npm run collapse-variants report` to audit clusters; after glossing a prototype row, run `npm run fill-literals` (alias for `collapse-variants propagate`) to fan out to variants. **Phase 2 complete** for Symbols (206 glossed, 18 dropped), Smileys & Emotion (171), Travel & Places (219), Activities (85), Objects (266), Animals & Nature (160), Food & Drink (130 glossed, 1 dropped: oden), Flags (270), and Component (9). **Phase 2.5 complete** for People & Body (2,418 glossed). All literal glossing is done; `clarity` is empty everywhere.
 
 ---
 
@@ -196,7 +196,7 @@ During glossing, mark obvious drops mentally (or tentatively `keep=n`); confirm 
 |-------|------|------|--------|
 | Symbols | 224 | B | done |
 | Smileys & Emotion | 171 | B | done |
-| People & Body | 2,418 | B | → 2.5 |
+| People & Body | 2,418 | B | done |
 | Travel & Places | 219 | B | done |
 | Activities | 85 | B | done |
 | Objects | 266 | A + B | done |
@@ -325,6 +325,7 @@ No `metaphorical` column yet. Add it when metaphors are in scope.
 | `scripts/collapse-variants.ts` | Phase 1: cluster report + propagate prototype `literal` to variants (`report` / `propagate`) |
 | `scripts/fill-literals.ts` | Alias for `collapse-variants propagate` — run after glossing prototype rows |
 | `scripts/phase2-gloss.ts` | Phase 2 bulk glossing (`npx tsx scripts/phase2-gloss.ts`; `--dry-run` to preview) |
+| `scripts/phase2.5-gloss.ts` | Phase 2.5 People & Body glossing (`npm run phase2.5-gloss`; `--wave=1\|2\|3\|all`) |
 | Lexicon converter (to be wired) | Phase 4: `literal` → `clarity` for `keep=y` rows |
 
 Manual editing in `data/lexicon.csv` is the source of truth for `literal`. Treat `docs/language-reference.md` as grammar/phonology authority; this doc owns lexicon process only.
@@ -339,4 +340,4 @@ Manual editing in `data/lexicon.csv` is the source of truth for `literal`. Treat
 
 ## Immediate deliverable
 
-**Next:** [Phase 2.5](#phase-25--people--body-literal-glossing) — People & Body in three waves (Wave 1: `body-parts` + `hand-*` + `person-symbol` + `person-resting`). Gloss prototype clusters only; no skin-tone or hair/beard literals; propagate after each subgroup. Then Phase 3 cull across all groups.
+**Next:** [Phase 3](#phase-3--cull-keepy--keepn) — cull across all groups: set `keep=n` for no-English-association rows and near-duplicate literals; pick the most distinctive emoji per `literal` cluster. Then Phase 4 Clarity roots.

@@ -3,7 +3,11 @@
  * See docs/lexicon-strategy.md.
  */
 
-import { stripVariantSuffix } from "./literal-normalizer.js";
+import {
+  stripAllVariantSuffixes,
+  stripSkinToneFragments,
+  stripVariantSuffix,
+} from "./literal-normalizer.js";
 
 export interface LexiconRow {
   emoji: string;
@@ -56,6 +60,37 @@ function slugifyKey(text: string): string {
     .replace(/^-|-$/g, "");
 }
 
+const PERSON_BASE_LITERALS: Record<string, string> = {
+  baby: "baby",
+  child: "child",
+  boy: "boy",
+  girl: "girl",
+  person: "person",
+  man: "man",
+  woman: "woman",
+  "older person": "older-person",
+  "old man": "old-man",
+  "old woman": "old-woman",
+};
+
+/** Family subgroup cluster base — strips skin tones, keeps concept only. */
+export function familyConceptKey(name: string): string {
+  const base = stripSkinToneFragments(name).toLowerCase().trim();
+  if (base === "family" || base.startsWith("family:")) return "family";
+  if (base === "kiss" || base.startsWith("kiss:")) return "kiss";
+  if (base.startsWith("couple with heart")) return "couple";
+  if (base.startsWith("woman and man holding hands")) return "woman-and-man-holding-hands";
+  if (base.startsWith("women holding hands")) return "women-holding-hands";
+  if (base.startsWith("men holding hands")) return "men-holding-hands";
+  if (base.startsWith("people holding hands")) return "holding-hands";
+  return slugifyKey(base);
+}
+
+function personClusterBase(name: string): string {
+  const base = stripAllVariantSuffixes(name).toLowerCase().trim();
+  return PERSON_BASE_LITERALS[base] ?? slugifyKey(base);
+}
+
 /** Derive a cluster key for grouping near-duplicate rows within a subgroup. */
 export function clusterKey(row: Pick<LexiconRow, "name" | "subgroup">): string {
   const { name, subgroup } = row;
@@ -64,7 +99,15 @@ export function clusterKey(row: Pick<LexiconRow, "name" | "subgroup">): string {
     return `${subgroup}|${name}`;
   }
 
-  let base = normalizeGenderForCluster(stripVariantSuffix(name));
+  if (subgroup === "family") {
+    return `${subgroup}|${familyConceptKey(name)}`;
+  }
+
+  if (subgroup === "person") {
+    return `${subgroup}|${personClusterBase(name)}`;
+  }
+
+  let base = normalizeGenderForCluster(stripAllVariantSuffixes(name));
 
   const alias = CLUSTER_ALIASES[base.toLowerCase()];
   if (alias) {

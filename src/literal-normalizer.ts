@@ -5,16 +5,30 @@
 
 const FILLER_WORDS = /\b(and|the)\b/gi;
 
-/** Strip skin-tone / hair / gender suffixes after a colon. */
+const VARIANT_FRAGMENT =
+  /(?::\s*|,\s*)(?:(?:light|medium-light|medium|medium-dark|dark) skin tone|(?:red|curly|white|blond) hair|bald|beard)/gi;
+
+/** Iteratively strip all variant suffixes (skin tone, hair, beard, bald). */
+export function stripAllVariantSuffixes(name: string): string {
+  let result = name.trim();
+  let prev = "";
+  while (prev !== result) {
+    prev = result;
+    result = result.replace(VARIANT_FRAGMENT, "").replace(/:\s*$/g, "").trim();
+  }
+  return result;
+}
+
+/** Strip skin-tone / hair / gender suffixes after a colon (alias for stripAllVariantSuffixes). */
 export function stripVariantSuffix(name: string): string {
+  return stripAllVariantSuffixes(name);
+}
+
+/** Strip skin-tone fragments anywhere in a name (for family / multi-person rows). */
+export function stripSkinToneFragments(name: string): string {
   return name
-    .replace(
-      /:\s*(?:light|medium-light|medium|medium-dark|dark) skin tone(?:,\s*(?:light|medium-light|medium|medium-dark|dark) skin tone)?$/i,
-      "",
-    )
-    .replace(/:\s*(?:red|curly|white|blond) hair$/i, "")
-    .replace(/:\s*bald$/i, "")
-    .replace(/:\s*beard$/i, "")
+    .replace(/,?\s*(?:light|medium-light|medium|medium-dark|dark) skin tone/gi, "")
+    .replace(/:\s*$/g, "")
     .trim();
 }
 
