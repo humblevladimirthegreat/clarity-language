@@ -374,6 +374,7 @@ const NAME_GLOSS: Record<string, string> = {
   "high voltage": "lightning",
   "snowman without snow": "snowman",
   "water wave": "ocean-wave",
+  speedboat: "boat",
 
   // — Objects Tier B fixes —
   "mobile phone": "phone",

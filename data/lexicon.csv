@@ -2956,16 +2956,16 @@ emoji,name,group,subgroup,literal,clarity,keep
 💈,barber pole,Travel & Places,place-other,barber,,y
 🎪,circus tent,Travel & Places,place-other,circus,,y
 🚂,locomotive,Travel & Places,transport-ground,locomotive,,n
-🚃,railway car,Travel & Places,transport-ground,train-car,,y
+🚃,railway car,Travel & Places,transport-ground,train-car,,n
 🚄,high-speed train,Travel & Places,transport-ground,high-speed-train,,n
 🚅,bullet train,Travel & Places,transport-ground,bullet-train,,n
 🚆,train,Travel & Places,transport-ground,train,,y
-🚇,metro,Travel & Places,transport-ground,metro,,y
-🚈,light rail,Travel & Places,transport-ground,light-rail,,y
+🚇,metro,Travel & Places,transport-ground,metro,,n
+🚈,light rail,Travel & Places,transport-ground,light-rail,,n
 🚉,station,Travel & Places,transport-ground,station,,y
-🚊,tram,Travel & Places,transport-ground,tram,,y
-🚝,monorail,Travel & Places,transport-ground,monorail,,y
-🚞,mountain railway,Travel & Places,transport-ground,mountain-railway,,y
+🚊,tram,Travel & Places,transport-ground,tram,,n
+🚝,monorail,Travel & Places,transport-ground,monorail,,n
+🚞,mountain railway,Travel & Places,transport-ground,mountain-railway,,n
 🚋,tram car,Travel & Places,transport-ground,tram,,n
 🚌,bus,Travel & Places,transport-ground,bus,,y
 🚍,oncoming bus,Travel & Places,transport-ground,bus,,n
@@ -2984,34 +2984,34 @@ emoji,name,group,subgroup,literal,clarity,keep
 🚚,delivery truck,Travel & Places,transport-ground,truck,,y
 🚛,articulated lorry,Travel & Places,transport-ground,semi-truck,,n
 🚜,tractor,Travel & Places,transport-ground,tractor,,y
-🏎️,racing car,Travel & Places,transport-ground,race-car,,y
+🏎️,racing car,Travel & Places,transport-ground,race-car,,n
 🏍️,motorcycle,Travel & Places,transport-ground,motorcycle,,y
 🛵,motor scooter,Travel & Places,transport-ground,scooter,,n
 🦽,manual wheelchair,Travel & Places,transport-ground,wheelchair,,y
 🦼,motorized wheelchair,Travel & Places,transport-ground,wheelchair,,n
-🛺,auto rickshaw,Travel & Places,transport-ground,rickshaw,,y
+🛺,auto rickshaw,Travel & Places,transport-ground,rickshaw,,n
 🚲,bicycle,Travel & Places,transport-ground,bicycle,,y
 🛴,kick scooter,Travel & Places,transport-ground,scooter,,y
 🛹,skateboard,Travel & Places,transport-ground,skateboard,,y
 🛼,roller skate,Travel & Places,transport-ground,roller-skate,,y
 🚏,bus stop,Travel & Places,transport-ground,bus-stop,,y
-🛣️,motorway,Travel & Places,transport-ground,motorway,,y
-🛤️,railway track,Travel & Places,transport-ground,railway-track,,y
+🛣️,motorway,Travel & Places,transport-ground,motorway,,n
+🛤️,railway track,Travel & Places,transport-ground,railway-track,,n
 🛢️,oil drum,Travel & Places,transport-ground,oil-drum,,y
 ⛽,fuel pump,Travel & Places,transport-ground,gas-pump,,y
 🛞,wheel,Travel & Places,transport-ground,wheel,,y
-🚨,police car light,Travel & Places,transport-ground,police-light,,y
+🚨,police car light,Travel & Places,transport-ground,police-light,,n
 🚥,horizontal traffic light,Travel & Places,transport-ground,traffic-light,,n
 🚦,vertical traffic light,Travel & Places,transport-ground,traffic-light,,y
 🛑,stop sign,Travel & Places,transport-ground,stop,,y
 🚧,construction,Travel & Places,transport-ground,construction,,y
 ⚓,anchor,Travel & Places,transport-water,anchor,,y
 🛟,ring buoy,Travel & Places,transport-water,life-ring,,y
-⛵,sailboat,Travel & Places,transport-water,sailboat,,y
+⛵,sailboat,Travel & Places,transport-water,sailboat,,n
 🛶,canoe,Travel & Places,transport-water,canoe,,y
-🚤,speedboat,Travel & Places,transport-water,speedboat,,y
+🚤,speedboat,Travel & Places,transport-water,boat,,y
 🛳️,passenger ship,Travel & Places,transport-water,passenger-ship,,n
-⛴️,ferry,Travel & Places,transport-water,ferry,,y
+⛴️,ferry,Travel & Places,transport-water,ferry,,n
 🛥️,motor boat,Travel & Places,transport-water,motorboat,,n
 🚢,ship,Travel & Places,transport-water,ship,,y
 ✈️,airplane,Travel & Places,transport-air,airplane,,y
@@ -3021,7 +3021,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 🪂,parachute,Travel & Places,transport-air,parachute,,y
 💺,seat,Travel & Places,transport-air,seat,,y
 🚁,helicopter,Travel & Places,transport-air,helicopter,,y
-🚟,suspension railway,Travel & Places,transport-air,suspension-rail,,y
+🚟,suspension railway,Travel & Places,transport-air,suspension-rail,,n
 🚠,mountain cableway,Travel & Places,transport-air,cable-car,,y
 🚡,aerial tramway,Travel & Places,transport-air,tramway,,n
 🛰️,satellite,Travel & Places,transport-air,satellite,,y
@@ -3462,15 +3462,15 @@ emoji,name,group,subgroup,literal,clarity,keep
 🚮,litter in bin sign,Symbols,transport-sign,litter,,y
 🚰,potable water,Symbols,transport-sign,drinking-water,,y
 ♿,wheelchair symbol,Symbols,transport-sign,accessible,,y
-🚹,men’s room,Symbols,transport-sign,mens-room,,y
-🚺,women’s room,Symbols,transport-sign,womens-room,,y
+🚹,men’s room,Symbols,transport-sign,mens-room,,n
+🚺,women’s room,Symbols,transport-sign,womens-room,,n
 🚻,restroom,Symbols,transport-sign,restroom,,y
 🚼,baby symbol,Symbols,transport-sign,baby-changing,,y
 🚾,water closet,Symbols,transport-sign,wc,,n
 🛂,passport control,Symbols,transport-sign,passport-control,,y
 🛃,customs,Symbols,transport-sign,customs,,y
-🛄,baggage claim,Symbols,transport-sign,baggage-claim,,y
-🛅,left luggage,Symbols,transport-sign,left-luggage,,y
+🛄,baggage claim,Symbols,transport-sign,baggage-claim,,n
+🛅,left luggage,Symbols,transport-sign,left-luggage,,n
 ⚠️,warning,Symbols,warning,warning,,y
 🚸,children crossing,Symbols,warning,children-crossing,,y
 ⛔,no entry,Symbols,warning,no-entry,,y
