@@ -1,17 +1,17 @@
 # Clarity Lexicon Strategy
 
-How we build and maintain the emoji-seeded root lexicon. Source of truth for **process**; the living word list is `data/lexicon.csv`. Language design still lives in `docs/language-reference.md`.
+How we build and maintain the emoji-seeded root lexicon. Source of truth for **process**; the working word list is `data/lexicon.csv`; the **published** dictionary is `data/lexicon-published.csv` (Phase 4). Language design still lives in `docs/language-reference.md`.
 
 ## Goal
 
-A root dictionary where each kept entry has:
+A root dictionary where each kept entry has (in `data/lexicon-published.csv`):
 
 | Field | Role |
 |-------|------|
 | emoji | Visual anchor and stable ID for the concept |
 | literal | Immediate English gloss — what a fluent user reads the emoji as (see below) |
 | clarity | Auto-generated Clarity **root** derived from that literal |
-| metaphorical | Deferred — not filled in this phase |
+| metaphorical | Deferred — column present in published file, empty until a later pass |
 
 Entries are **roots** only. Part-of-speech prefixes (`/z/`, `/v/`, `/w/`, …) and lexical endings (`-l`, `-m`, …) are applied at use time; this file does not list PoS variants or usage notes.
 
@@ -23,7 +23,7 @@ Psychological / Claritish vocabulary goals are out of scope for this lexicon pas
 - **One row per emoji** in `data/lexicon.csv`, including near-duplicates, until the distinctiveness pass marks which to keep.
 - Helper columns (`name`, `group`, `subgroup`) come from the Unicode/source inventory — **hints only**, not the gloss.
 - Do **not** reuse `concept` / emojese labels from `emojis.csv`; those are often figurative or playful.
-- Skeleton is in place: one row per emoji; `clarity` and `keep` empty.
+- Skeleton is in place: one row per emoji; `keep` empty until Phase 3.
 
 ## What `literal` means
 
@@ -71,7 +71,7 @@ Clarity’s seed is emoji, but the **published lexicon is for English-accessible
 - **Region-specific signage** with no English equivalent reading (other CJK shop signs, obscure local symbols).
 - **Hyper-niche flags / territories** only if we later decide they fail the usefulness bar (optional; country names usually stay in Tier A).
 
-Dropped rows **stay in `lexicon.csv`** with `keep=n` and `literal` empty (or a brief `name` note in comments only if needed — prefer empty). Do not invent Clarity roots for them. Phase 4 runs on `keep=y` only.
+Dropped rows **stay in `lexicon.csv`** with `keep=n` and `literal` empty (or a brief `name` note in comments only if needed — prefer empty). Do not invent Clarity roots for them. Phase 4 exports **`keep=y` rows only** to the published file; dropped rows are not copied.
 
 This is separate from the **near-duplicate cull** (Phase 3): a row can be the only one of its kind and still be dropped for no English association.
 
@@ -107,10 +107,10 @@ emojis.csv  →  lexicon.csv (skeleton)          ✓ done
                  ↓
          3. cull: duplicates + no-English-drop (keep=y/n)  ✓ done
                  ↓
-         4. generate clarity roots  ← next
+         4. generate clarity roots → lexicon-published.csv  ← next
 ```
 
-**What exists today:** Phase 1–2.5 complete (all groups glossed). **Phase 3 complete:** every row has `keep=y` or `keep=n` — **1,651** published roots (`keep=y`), **2,302** dropped (19 no-English-association + 2,283 duplicate cull). `clarity` is still empty. Run `npm run phase3-cull audit` to validate the keep column.
+**What exists today:** Phase 1–2.5 complete (all groups glossed). **Phase 3 complete:** every row has `keep=y` or `keep=n` — **1,651** published roots (`keep=y`), **2,302** dropped (19 no-English-association + 2,283 duplicate cull). `data/lexicon-published.csv` does not exist yet. Run `npm run phase3-cull audit` to validate the keep column.
 
 ---
 
@@ -185,8 +185,6 @@ Short guidance so glosses stay consistent within a subgroup:
 | `heart` | Keep color when it matters (`red-heart`); shared concepts otherwise (`broken-heart`). |
 | `person-*` | Action or role (`wave`, `doctor`, `runner`), not "woman gesturing OK". No skin-tone or hair/beard literals — see [Phase 2.5](#phase-25--people--body-literal-glossing). |
 | `sport` / `game` | Activity (`soccer`, `chess`), not equipment description. |
-
-Leave `clarity` empty until Phase 4.
 
 During glossing, mark obvious drops mentally (or tentatively `keep=n`); confirm in Phase 3. Do not spend time inventing English glosses for Japanese ideograph buttons.
 
@@ -265,8 +263,6 @@ Prototype counts come from `npm run collapse-variants report` scoped to People &
 
 After each wave: `npm run fill-literals`, then spot-check a few multi-member clusters (`collapse-variants report --verbose`).
 
-Leave `clarity` empty until Phase 4.
-
 ---
 
 ## Phase 3 — Cull (`keep=y` / `keep=n`)
@@ -284,7 +280,7 @@ Many kept emojis share a `literal` after Phases 1–2. Pick which **emoji** to k
 1. Cluster by `group` / `subgroup` and by identical `literal`.
 2. For each cluster, **keep only the most distinctive** emoji(s) — the clearest visual prototype for that gloss.
 3. Set `keep` to `y` or `n` (empty = not reviewed).
-4. Downstream tooling and published dictionaries use **`keep=y` rows only**.
+4. Downstream tooling and published dictionaries use **`data/lexicon-published.csv`** (exported from `keep=y` rows only).
 
 “Most distinctive” ≈ fewest competing near-duplicates + most recognizable depiction. When tied, prefer the unqualified / default presentation (no skin tone, no gender variant).
 
@@ -333,17 +329,34 @@ When distinct concepts share a `literal` within the same `group`/`subgroup` (e.g
 
 ## Phase 4 — Clarity roots
 
-Once a row has a stable `literal` and `keep=y` (or provisional generation while drafting):
+**Goal:** Emit a **clean published lexicon** — a separate file with only the roots that survived the cull.
 
-1. Derive the Clarity root from **`literal`** with the existing converter (`toUniqueClarityWord` / `scripts/convert-emojis.ts` pattern).
-2. Uniqueness is over **kept** roots (and any reserved roots documented later).
-3. Store only the root in `clarity` (no PoS prefix, no `-l`/`-m` ending).
+**Input:** `data/lexicon.csv` — rows where `keep=y` and `literal` is set.
 
-Regenerate in bulk when literals or the keep set change; do not hand-edit roots unless documenting an exception in this file.
+**Output:** `data/lexicon-published.csv` — **1,651 rows** today (only `keep=y`; dropped rows are not transferred).
+
+| Column | Phase 4 |
+|--------|---------|
+| `emoji` | Copied from working lexicon |
+| `literal` | Copied from working lexicon |
+| `clarity` | Auto-generated Clarity **root** from `literal` |
+| `metaphorical` | Present but **empty** — filled in a later pass |
+
+**Generation:**
+
+1. Filter `lexicon.csv` to `keep=y` rows with a non-empty `literal`.
+2. Derive each `clarity` root from `literal` with the existing converter (`toUniqueClarityWord` / `scripts/convert-emojis.ts` pattern).
+3. Uniqueness is over **exported** roots only (and any reserved roots documented later).
+4. Store only the root in `clarity` (no PoS prefix, no `-l`/`-m` ending).
+5. Write the four columns above to `lexicon-published.csv`. Leave `metaphorical` blank on every row.
+
+`lexicon.csv` is **not** updated with `clarity` values — it remains the full seed + gloss + cull working file. Regenerate `lexicon-published.csv` in bulk when literals or the keep set change; do not hand-edit generated roots unless documenting an exception in this file.
 
 ---
 
-## CSV schema (`data/lexicon.csv`)
+## CSV schemas
+
+### Working file (`data/lexicon.csv`)
 
 | Column | Required | Notes |
 |--------|----------|-------|
@@ -352,10 +365,17 @@ Regenerate in bulk when literals or the keep set change; do not hand-edit roots 
 | `group` | yes | Seed taxonomy — clustering aid |
 | `subgroup` | yes | Seed taxonomy — glossing brief scope |
 | `literal` | phase 2 | Immediate-reading gloss; empty until glossed |
-| `clarity` | phase 4 | Auto root from `literal`; empty until then |
-| `keep` | phase 3 | `y` = in published lexicon · `n` = dropped (no English association and/or duplicate cull) · empty = unreviewed |
+| `clarity` | — | Legacy column; leave empty — roots live in `lexicon-published.csv` |
+| `keep` | phase 3 | `y` = export to published lexicon · `n` = dropped (no English association and/or duplicate cull) · empty = unreviewed |
 
-No `metaphorical` column yet. Add it when metaphors are in scope.
+### Published file (`data/lexicon-published.csv`)
+
+| Column | Required | Notes |
+|--------|----------|-------|
+| `emoji` | yes | Glyph |
+| `literal` | yes | Immediate-reading gloss |
+| `clarity` | phase 4 | Auto root from `literal` |
+| `metaphorical` | later | Deferred — column present, empty until metaphor pass |
 
 ## Tooling
 
@@ -366,7 +386,7 @@ No `metaphorical` column yet. Add it when metaphors are in scope.
 | `scripts/phase2-gloss.ts` | Phase 2 bulk glossing (`npx tsx scripts/phase2-gloss.ts`; `--dry-run` to preview) |
 | `scripts/phase2.5-gloss.ts` | Phase 2.5 People & Body glossing (`npm run phase2.5-gloss`; `--wave=1\|2\|3\|all`) |
 | `scripts/phase3-cull.ts` | Phase 3 cull (`npm run phase3-cull`; `report` / `apply` / `audit`) |
-| Lexicon converter (to be wired) | Phase 4: `literal` → `clarity` for `keep=y` rows |
+| Lexicon converter (to be wired) | Phase 4: `keep=y` rows from `lexicon.csv` → `lexicon-published.csv` (`literal` → `clarity`; `metaphorical` blank) |
 
 Manual editing in `data/lexicon.csv` is the source of truth for `literal`. Treat `docs/language-reference.md` as grammar/phonology authority; this doc owns lexicon process only.
 
@@ -380,4 +400,4 @@ Manual editing in `data/lexicon.csv` is the source of truth for `literal`. Treat
 
 ## Immediate deliverable
 
-**Next:** [Phase 4](#phase-4--clarity-roots) — generate Clarity roots from `literal` for `keep=y` rows.
+**Next:** [Phase 4](#phase-4--clarity-roots) — generate `data/lexicon-published.csv` from `keep=y` rows (`emoji`, `literal`, `clarity`, empty `metaphorical`).
