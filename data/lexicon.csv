@@ -2,7 +2,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 😀,grinning face,Smileys & Emotion,face-smiling,grin,,y
 😃,grinning face with big eyes,Smileys & Emotion,face-smiling,grin,,n
 😄,grinning face with smiling eyes,Smileys & Emotion,face-smiling,grin,,n
-😁,beaming face with smiling eyes,Smileys & Emotion,face-smiling,beam,,y
+😁,beaming face with smiling eyes,Smileys & Emotion,face-smiling,beam,,n
 😆,grinning squinting face,Smileys & Emotion,face-smiling,laugh,,n
 😅,grinning face with sweat,Smileys & Emotion,face-smiling,nervous-laugh,,y
 🤣,rolling on the floor laughing,Smileys & Emotion,face-smiling,laugh,,y
@@ -88,12 +88,12 @@ emoji,name,group,subgroup,literal,clarity,keep
 🥺,pleading face,Smileys & Emotion,face-concerned,pleading,,y
 🥹,face holding back tears,Smileys & Emotion,face-concerned,holding-tears,,y
 😦,frowning face with open mouth,Smileys & Emotion,face-concerned,frown,,n
-😧,anguished face,Smileys & Emotion,face-concerned,anguish,,y
+😧,anguished face,Smileys & Emotion,face-concerned,anguish,,n
 😨,fearful face,Smileys & Emotion,face-concerned,fear,,y
-😰,anxious face with sweat,Smileys & Emotion,face-concerned,anxious,,y
+😰,anxious face with sweat,Smileys & Emotion,face-concerned,anxious,,n
 😥,sad but relieved face,Smileys & Emotion,face-concerned,sad-relief,,y
-😢,crying face,Smileys & Emotion,face-concerned,cry,,y
-😭,loudly crying face,Smileys & Emotion,face-concerned,sob,,y
+😢,crying face,Smileys & Emotion,face-concerned,cry,,n
+😭,loudly crying face,Smileys & Emotion,face-concerned,cry,,y
 😱,face screaming in fear,Smileys & Emotion,face-concerned,scream,,y
 😖,confounded face,Smileys & Emotion,face-concerned,confounded,,y
 😣,persevering face,Smileys & Emotion,face-concerned,persevering,,y
@@ -182,7 +182,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 🤚🏽,raised back of hand: medium skin tone,People & Body,hand-fingers-open,raised-hand,,n
 🤚🏾,raised back of hand: medium-dark skin tone,People & Body,hand-fingers-open,raised-hand,,n
 🤚🏿,raised back of hand: dark skin tone,People & Body,hand-fingers-open,raised-hand,,n
-🖐️,hand with fingers splayed,People & Body,hand-fingers-open,splayed-hand,,y
+🖐️,hand with fingers splayed,People & Body,hand-fingers-open,splayed-hand,,n
 🖐🏻,hand with fingers splayed: light skin tone,People & Body,hand-fingers-open,splayed-hand,,n
 🖐🏼,hand with fingers splayed: medium-light skin tone,People & Body,hand-fingers-open,splayed-hand,,n
 🖐🏽,hand with fingers splayed: medium skin tone,People & Body,hand-fingers-open,splayed-hand,,n
@@ -356,13 +356,13 @@ emoji,name,group,subgroup,literal,clarity,keep
 👊🏽,oncoming fist: medium skin tone,People & Body,hand-fingers-closed,punch,,n
 👊🏾,oncoming fist: medium-dark skin tone,People & Body,hand-fingers-closed,punch,,n
 👊🏿,oncoming fist: dark skin tone,People & Body,hand-fingers-closed,punch,,n
-🤛,left-facing fist,People & Body,hand-fingers-closed,left-fist,,y
+🤛,left-facing fist,People & Body,hand-fingers-closed,left-fist,,n
 🤛🏻,left-facing fist: light skin tone,People & Body,hand-fingers-closed,left-fist,,n
 🤛🏼,left-facing fist: medium-light skin tone,People & Body,hand-fingers-closed,left-fist,,n
 🤛🏽,left-facing fist: medium skin tone,People & Body,hand-fingers-closed,left-fist,,n
 🤛🏾,left-facing fist: medium-dark skin tone,People & Body,hand-fingers-closed,left-fist,,n
 🤛🏿,left-facing fist: dark skin tone,People & Body,hand-fingers-closed,left-fist,,n
-🤜,right-facing fist,People & Body,hand-fingers-closed,right-fist,,y
+🤜,right-facing fist,People & Body,hand-fingers-closed,right-fist,,n
 🤜🏻,right-facing fist: light skin tone,People & Body,hand-fingers-closed,right-fist,,n
 🤜🏼,right-facing fist: medium-light skin tone,People & Body,hand-fingers-closed,right-fist,,n
 🤜🏽,right-facing fist: medium skin tone,People & Body,hand-fingers-closed,right-fist,,n
@@ -2603,9 +2603,9 @@ emoji,name,group,subgroup,literal,clarity,keep
 🦧,orangutan,Animals & Nature,animal-mammal,orangutan,,y
 🐶,dog face,Animals & Nature,animal-mammal,dog,,n
 🐕,dog,Animals & Nature,animal-mammal,dog,,y
-🦮,guide dog,Animals & Nature,animal-mammal,guide-dog,,y
-🐕‍🦺,service dog,Animals & Nature,animal-mammal,service-dog,,y
-🐩,poodle,Animals & Nature,animal-mammal,poodle,,y
+🦮,guide dog,Animals & Nature,animal-mammal,guide-dog,,n
+🐕‍🦺,service dog,Animals & Nature,animal-mammal,service-dog,,n
+🐩,poodle,Animals & Nature,animal-mammal,poodle,,n
 🐺,wolf,Animals & Nature,animal-mammal,wolf,,y
 🦊,fox,Animals & Nature,animal-mammal,fox,,y
 🦝,raccoon,Animals & Nature,animal-mammal,raccoon,,y
@@ -2625,14 +2625,14 @@ emoji,name,group,subgroup,literal,clarity,keep
 🦌,deer,Animals & Nature,animal-mammal,deer,,y
 🦬,bison,Animals & Nature,animal-mammal,bison,,y
 🐮,cow face,Animals & Nature,animal-mammal,cow,,n
-🐂,ox,Animals & Nature,animal-mammal,ox,,y
+🐂,ox,Animals & Nature,animal-mammal,ox,,n
 🐃,water buffalo,Animals & Nature,animal-mammal,water-buffalo,,y
 🐄,cow,Animals & Nature,animal-mammal,cow,,y
 🐷,pig face,Animals & Nature,animal-mammal,pig,,n
 🐖,pig,Animals & Nature,animal-mammal,pig,,y
 🐗,boar,Animals & Nature,animal-mammal,boar,,y
 🐽,pig nose,Animals & Nature,animal-mammal,pig-nose,,y
-🐏,ram,Animals & Nature,animal-mammal,ram,,y
+🐏,ram,Animals & Nature,animal-mammal,ram,,n
 🐑,ewe,Animals & Nature,animal-mammal,ewe,,y
 🐐,goat,Animals & Nature,animal-mammal,goat,,y
 🐪,camel,Animals & Nature,animal-mammal,camel,,y
@@ -2654,7 +2654,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 🦔,hedgehog,Animals & Nature,animal-mammal,hedgehog,,y
 🦇,bat,Animals & Nature,animal-mammal,bat,,y
 🐻,bear,Animals & Nature,animal-mammal,bear,,y
-🐻‍❄️,polar bear,Animals & Nature,animal-mammal,polar-bear,,y
+🐻‍❄️,polar bear,Animals & Nature,animal-mammal,polar-bear,,n
 🐨,koala,Animals & Nature,animal-mammal,koala,,y
 🐼,panda,Animals & Nature,animal-mammal,panda,,y
 🦥,sloth,Animals & Nature,animal-mammal,sloth,,y
@@ -2665,9 +2665,9 @@ emoji,name,group,subgroup,literal,clarity,keep
 🐾,paw prints,Animals & Nature,animal-mammal,paw-prints,,y
 🦃,turkey,Animals & Nature,animal-bird,turkey,,y
 🐔,chicken,Animals & Nature,animal-bird,chicken,,y
-🐓,rooster,Animals & Nature,animal-bird,rooster,,y
-🐣,hatching chick,Animals & Nature,animal-bird,hatching-chick,,y
-🐤,baby chick,Animals & Nature,animal-bird,chick,,y
+🐓,rooster,Animals & Nature,animal-bird,rooster,,n
+🐣,hatching chick,Animals & Nature,animal-bird,hatch,,y
+🐤,baby chick,Animals & Nature,animal-bird,chick,,n
 🐥,front-facing baby chick,Animals & Nature,animal-bird,chick,,n
 🐦,bird,Animals & Nature,animal-bird,bird,,y
 🐧,penguin,Animals & Nature,animal-bird,penguin,,y
@@ -2700,8 +2700,8 @@ emoji,name,group,subgroup,literal,clarity,keep
 🫍,orca,Animals & Nature,animal-marine,orca,,y
 🦭,seal,Animals & Nature,animal-marine,seal,,y
 🐟,fish,Animals & Nature,animal-marine,fish,,y
-🐠,tropical fish,Animals & Nature,animal-marine,tropical-fish,,y
-🐡,blowfish,Animals & Nature,animal-marine,blowfish,,y
+🐠,tropical fish,Animals & Nature,animal-marine,tropical-fish,,n
+🐡,blowfish,Animals & Nature,animal-marine,blowfish,,n
 🦈,shark,Animals & Nature,animal-marine,shark,,y
 🐙,octopus,Animals & Nature,animal-marine,octopus,,y
 🐚,spiral shell,Animals & Nature,animal-marine,shell,,y
@@ -2742,17 +2742,17 @@ emoji,name,group,subgroup,literal,clarity,keep
 🪻,hyacinth,Animals & Nature,plant-flower,hyacinth,,y
 🌱,seedling,Animals & Nature,plant-other,seedling,,y
 🪴,potted plant,Animals & Nature,plant-other,potted-plant,,y
-🌲,evergreen tree,Animals & Nature,plant-other,evergreen,,y
-🌳,deciduous tree,Animals & Nature,plant-other,deciduous-tree,,y
+🌲,evergreen tree,Animals & Nature,plant-other,evergreen,,n
+🌳,deciduous tree,Animals & Nature,plant-other,tree,,y
 🌴,palm tree,Animals & Nature,plant-other,palm-tree,,y
 🌵,cactus,Animals & Nature,plant-other,cactus,,y
 🌾,sheaf of rice,Animals & Nature,plant-other,rice-plant,,y
 🌿,herb,Animals & Nature,plant-other,herb,,y
-☘️,shamrock,Animals & Nature,plant-other,shamrock,,y
+☘️,shamrock,Animals & Nature,plant-other,shamrock,,n
 🍀,four leaf clover,Animals & Nature,plant-other,four-leaf-clover,,y
 🍁,maple leaf,Animals & Nature,plant-other,maple-leaf,,y
-🍂,fallen leaf,Animals & Nature,plant-other,fallen-leaf,,y
-🍃,leaf fluttering in wind,Animals & Nature,plant-other,leaves,,y
+🍂,fallen leaf,Animals & Nature,plant-other,fallen-leaf,,n
+🍃,leaf fluttering in wind,Animals & Nature,plant-other,leaves,,n
 🪹,empty nest,Animals & Nature,plant-other,empty-nest,,y
 🪺,nest with eggs,Animals & Nature,plant-other,nest,,y
 🍄,mushroom,Animals & Nature,plant-other,mushroom,,y
@@ -2847,9 +2847,9 @@ emoji,name,group,subgroup,literal,clarity,keep
 🥟,dumpling,Food & Drink,food-asian,dumpling,,y
 🥠,fortune cookie,Food & Drink,food-asian,fortune-cookie,,y
 🥡,takeout box,Food & Drink,food-asian,takeout,,y
-🍦,soft ice cream,Food & Drink,food-sweet,soft-serve,,y
-🍧,shaved ice,Food & Drink,food-sweet,shaved-ice,,y
-🍨,ice cream,Food & Drink,food-sweet,ice-cream,,y
+🍦,soft ice cream,Food & Drink,food-sweet,ice-cream,,y
+🍧,shaved ice,Food & Drink,food-sweet,shaved-ice,,n
+🍨,ice cream,Food & Drink,food-sweet,ice-cream,,n
 🍩,doughnut,Food & Drink,food-sweet,doughnut,,y
 🍪,cookie,Food & Drink,food-sweet,cookie,,y
 🎂,birthday cake,Food & Drink,food-sweet,birthday-cake,,y
@@ -2872,7 +2872,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 🍸,cocktail glass,Food & Drink,drink,cocktail,,y
 🍹,tropical drink,Food & Drink,drink,tropical-drink,,y
 🍺,beer mug,Food & Drink,drink,beer,,y
-🍻,clinking beer mugs,Food & Drink,drink,cheers-beer,,y
+🍻,clinking beer mugs,Food & Drink,drink,cheers-beer,,n
 🥂,clinking glasses,Food & Drink,drink,cheers,,y
 🥃,tumbler glass,Food & Drink,drink,whiskey,,y
 🫗,pouring liquid,Food & Drink,drink,pour,,y
@@ -2895,11 +2895,11 @@ emoji,name,group,subgroup,literal,clarity,keep
 🗺️,world map,Travel & Places,place-map,world-map,,y
 🗾,map of Japan,Travel & Places,place-map,japan-map,,y
 🧭,compass,Travel & Places,place-map,compass,,y
-🏔️,snow-capped mountain,Travel & Places,place-geographic,snow-mountain,,y
+🏔️,snow-capped mountain,Travel & Places,place-geographic,snow-mountain,,n
 ⛰️,mountain,Travel & Places,place-geographic,mountain,,y
 🛘,landslide,Travel & Places,place-geographic,landslide,,y
 🌋,volcano,Travel & Places,place-geographic,volcano,,y
-🗻,mount fuji,Travel & Places,place-geographic,mount-fuji,,y
+🗻,mount fuji,Travel & Places,place-geographic,mount-fuji,,n
 🏕️,camping,Travel & Places,place-geographic,camping,,y
 🏖️,beach with umbrella,Travel & Places,place-geographic,beach,,y
 🏜️,desert,Travel & Places,place-geographic,desert,,y
@@ -2912,10 +2912,10 @@ emoji,name,group,subgroup,literal,clarity,keep
 🪨,rock,Travel & Places,place-building,rock,,y
 🪵,wood,Travel & Places,place-building,wood,,y
 🛖,hut,Travel & Places,place-building,hut,,y
-🏘️,houses,Travel & Places,place-building,houses,,y
-🏚️,derelict house,Travel & Places,place-building,derelict-house,,y
+🏘️,houses,Travel & Places,place-building,houses,,n
+🏚️,derelict house,Travel & Places,place-building,derelict-house,,n
 🏠,house,Travel & Places,place-building,house,,y
-🏡,house with garden,Travel & Places,place-building,house-garden,,y
+🏡,house with garden,Travel & Places,place-building,house-garden,,n
 🏢,office building,Travel & Places,place-building,office,,y
 🏣,Japanese post office,Travel & Places,place-building,post-office,,n
 🏤,post office,Travel & Places,place-building,post-office,,y
@@ -2955,10 +2955,10 @@ emoji,name,group,subgroup,literal,clarity,keep
 🎢,roller coaster,Travel & Places,place-other,roller-coaster,,y
 💈,barber pole,Travel & Places,place-other,barber,,y
 🎪,circus tent,Travel & Places,place-other,circus,,y
-🚂,locomotive,Travel & Places,transport-ground,locomotive,,y
+🚂,locomotive,Travel & Places,transport-ground,locomotive,,n
 🚃,railway car,Travel & Places,transport-ground,train-car,,y
-🚄,high-speed train,Travel & Places,transport-ground,high-speed-train,,y
-🚅,bullet train,Travel & Places,transport-ground,bullet-train,,y
+🚄,high-speed train,Travel & Places,transport-ground,high-speed-train,,n
+🚅,bullet train,Travel & Places,transport-ground,bullet-train,,n
 🚆,train,Travel & Places,transport-ground,train,,y
 🚇,metro,Travel & Places,transport-ground,metro,,y
 🚈,light rail,Travel & Places,transport-ground,light-rail,,y
@@ -2969,20 +2969,20 @@ emoji,name,group,subgroup,literal,clarity,keep
 🚋,tram car,Travel & Places,transport-ground,tram,,n
 🚌,bus,Travel & Places,transport-ground,bus,,y
 🚍,oncoming bus,Travel & Places,transport-ground,bus,,n
-🚎,trolleybus,Travel & Places,transport-ground,trolleybus,,y
-🚐,minibus,Travel & Places,transport-ground,minibus,,y
+🚎,trolleybus,Travel & Places,transport-ground,trolleybus,,n
+🚐,minibus,Travel & Places,transport-ground,minibus,,n
 🚑,ambulance,Travel & Places,transport-ground,ambulance,,y
 🚒,fire engine,Travel & Places,transport-ground,fire-engine,,y
 🚓,police car,Travel & Places,transport-ground,police-car,,y
 🚔,oncoming police car,Travel & Places,transport-ground,police-car,,n
 🚕,taxi,Travel & Places,transport-ground,taxi,,y
 🚖,oncoming taxi,Travel & Places,transport-ground,taxi,,n
-🚗,automobile,Travel & Places,transport-ground,automobile,,y
-🚘,oncoming automobile,Travel & Places,transport-ground,car,,y
-🚙,sport utility vehicle,Travel & Places,transport-ground,suv,,y
-🛻,pickup truck,Travel & Places,transport-ground,pickup-truck,,y
+🚗,automobile,Travel & Places,transport-ground,car,,y
+🚘,oncoming automobile,Travel & Places,transport-ground,car,,n
+🚙,sport utility vehicle,Travel & Places,transport-ground,suv,,n
+🛻,pickup truck,Travel & Places,transport-ground,pickup-truck,,n
 🚚,delivery truck,Travel & Places,transport-ground,truck,,y
-🚛,articulated lorry,Travel & Places,transport-ground,semi-truck,,y
+🚛,articulated lorry,Travel & Places,transport-ground,semi-truck,,n
 🚜,tractor,Travel & Places,transport-ground,tractor,,y
 🏎️,racing car,Travel & Places,transport-ground,race-car,,y
 🏍️,motorcycle,Travel & Places,transport-ground,motorcycle,,y
@@ -3010,12 +3010,12 @@ emoji,name,group,subgroup,literal,clarity,keep
 ⛵,sailboat,Travel & Places,transport-water,sailboat,,y
 🛶,canoe,Travel & Places,transport-water,canoe,,y
 🚤,speedboat,Travel & Places,transport-water,speedboat,,y
-🛳️,passenger ship,Travel & Places,transport-water,passenger-ship,,y
+🛳️,passenger ship,Travel & Places,transport-water,passenger-ship,,n
 ⛴️,ferry,Travel & Places,transport-water,ferry,,y
-🛥️,motor boat,Travel & Places,transport-water,motorboat,,y
+🛥️,motor boat,Travel & Places,transport-water,motorboat,,n
 🚢,ship,Travel & Places,transport-water,ship,,y
 ✈️,airplane,Travel & Places,transport-air,airplane,,y
-🛩️,small airplane,Travel & Places,transport-air,small-plane,,y
+🛩️,small airplane,Travel & Places,transport-air,small-plane,,n
 🛫,airplane departure,Travel & Places,transport-air,departure,,y
 🛬,airplane arrival,Travel & Places,transport-air,arrival,,y
 🪂,parachute,Travel & Places,transport-air,parachute,,y
@@ -3023,7 +3023,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 🚁,helicopter,Travel & Places,transport-air,helicopter,,y
 🚟,suspension railway,Travel & Places,transport-air,suspension-rail,,y
 🚠,mountain cableway,Travel & Places,transport-air,cable-car,,y
-🚡,aerial tramway,Travel & Places,transport-air,tramway,,y
+🚡,aerial tramway,Travel & Places,transport-air,tramway,,n
 🛰️,satellite,Travel & Places,transport-air,satellite,,y
 🚀,rocket,Travel & Places,transport-air,rocket,,y
 🛸,flying saucer,Travel & Places,transport-air,ufo,,y
@@ -3036,56 +3036,56 @@ emoji,name,group,subgroup,literal,clarity,keep
 ⏱️,stopwatch,Travel & Places,time,stopwatch,,y
 ⏲️,timer clock,Travel & Places,time,timer,,y
 🕰️,mantelpiece clock,Travel & Places,time,mantel-clock,,y
-🕛,twelve o’clock,Travel & Places,time,twelve-o-clock,,y
-🕧,twelve-thirty,Travel & Places,time,twelve-thirty,,y
-🕐,one o’clock,Travel & Places,time,one-o-clock,,y
-🕜,one-thirty,Travel & Places,time,one-thirty,,y
-🕑,two o’clock,Travel & Places,time,two-o-clock,,y
-🕝,two-thirty,Travel & Places,time,two-thirty,,y
-🕒,three o’clock,Travel & Places,time,three-o-clock,,y
-🕞,three-thirty,Travel & Places,time,three-thirty,,y
-🕓,four o’clock,Travel & Places,time,four-o-clock,,y
-🕟,four-thirty,Travel & Places,time,four-thirty,,y
-🕔,five o’clock,Travel & Places,time,five-o-clock,,y
-🕠,five-thirty,Travel & Places,time,five-thirty,,y
-🕕,six o’clock,Travel & Places,time,six-o-clock,,y
-🕡,six-thirty,Travel & Places,time,six-thirty,,y
-🕖,seven o’clock,Travel & Places,time,seven-o-clock,,y
-🕢,seven-thirty,Travel & Places,time,seven-thirty,,y
-🕗,eight o’clock,Travel & Places,time,eight-o-clock,,y
-🕣,eight-thirty,Travel & Places,time,eight-thirty,,y
-🕘,nine o’clock,Travel & Places,time,nine-o-clock,,y
-🕤,nine-thirty,Travel & Places,time,nine-thirty,,y
-🕙,ten o’clock,Travel & Places,time,ten-o-clock,,y
-🕥,ten-thirty,Travel & Places,time,ten-thirty,,y
-🕚,eleven o’clock,Travel & Places,time,eleven-o-clock,,y
-🕦,eleven-thirty,Travel & Places,time,eleven-thirty,,y
-🌑,new moon,Travel & Places,sky & weather,new-moon,,y
-🌒,waxing crescent moon,Travel & Places,sky & weather,waxing-crescent-moon,,y
-🌓,first quarter moon,Travel & Places,sky & weather,first-quarter-moon,,y
-🌔,waxing gibbous moon,Travel & Places,sky & weather,waxing-gibbous-moon,,y
-🌕,full moon,Travel & Places,sky & weather,full-moon,,y
-🌖,waning gibbous moon,Travel & Places,sky & weather,waning-gibbous-moon,,y
-🌗,last quarter moon,Travel & Places,sky & weather,last-quarter-moon,,y
-🌘,waning crescent moon,Travel & Places,sky & weather,waning-crescent-moon,,y
+🕛,twelve o’clock,Travel & Places,time,twelve-o-clock,,n
+🕧,twelve-thirty,Travel & Places,time,twelve-thirty,,n
+🕐,one o’clock,Travel & Places,time,time,,y
+🕜,one-thirty,Travel & Places,time,one-thirty,,n
+🕑,two o’clock,Travel & Places,time,two-o-clock,,n
+🕝,two-thirty,Travel & Places,time,two-thirty,,n
+🕒,three o’clock,Travel & Places,time,three-o-clock,,n
+🕞,three-thirty,Travel & Places,time,three-thirty,,n
+🕓,four o’clock,Travel & Places,time,four-o-clock,,n
+🕟,four-thirty,Travel & Places,time,four-thirty,,n
+🕔,five o’clock,Travel & Places,time,five-o-clock,,n
+🕠,five-thirty,Travel & Places,time,five-thirty,,n
+🕕,six o’clock,Travel & Places,time,six-o-clock,,n
+🕡,six-thirty,Travel & Places,time,six-thirty,,n
+🕖,seven o’clock,Travel & Places,time,seven-o-clock,,n
+🕢,seven-thirty,Travel & Places,time,seven-thirty,,n
+🕗,eight o’clock,Travel & Places,time,eight-o-clock,,n
+🕣,eight-thirty,Travel & Places,time,eight-thirty,,n
+🕘,nine o’clock,Travel & Places,time,nine-o-clock,,n
+🕤,nine-thirty,Travel & Places,time,nine-thirty,,n
+🕙,ten o’clock,Travel & Places,time,ten-o-clock,,n
+🕥,ten-thirty,Travel & Places,time,ten-thirty,,n
+🕚,eleven o’clock,Travel & Places,time,eleven-o-clock,,n
+🕦,eleven-thirty,Travel & Places,time,eleven-thirty,,n
+🌑,new moon,Travel & Places,sky & weather,new-moon,,n
+🌒,waxing crescent moon,Travel & Places,sky & weather,waxing-crescent-moon,,n
+🌓,first quarter moon,Travel & Places,sky & weather,first-quarter-moon,,n
+🌔,waxing gibbous moon,Travel & Places,sky & weather,waxing-gibbous-moon,,n
+🌕,full moon,Travel & Places,sky & weather,full-moon,,n
+🌖,waning gibbous moon,Travel & Places,sky & weather,waning-gibbous-moon,,n
+🌗,last quarter moon,Travel & Places,sky & weather,last-quarter-moon,,n
+🌘,waning crescent moon,Travel & Places,sky & weather,waning-crescent-moon,,n
 🌙,crescent moon,Travel & Places,sky & weather,crescent-moon,,y
-🌚,new moon face,Travel & Places,sky & weather,new-moon-face,,y
-🌛,first quarter moon face,Travel & Places,sky & weather,first-quarter-moon-face,,y
-🌜,last quarter moon face,Travel & Places,sky & weather,last-quarter-moon-face,,y
+🌚,new moon face,Travel & Places,sky & weather,new-moon-face,,n
+🌛,first quarter moon face,Travel & Places,sky & weather,first-quarter-moon-face,,n
+🌜,last quarter moon face,Travel & Places,sky & weather,last-quarter-moon-face,,n
 🌡️,thermometer,Travel & Places,sky & weather,thermometer,,y
 ☀️,sun,Travel & Places,sky & weather,sun,,y
-🌝,full moon face,Travel & Places,sky & weather,full-moon-face,,y
-🌞,sun with face,Travel & Places,sky & weather,sun-face,,y
+🌝,full moon face,Travel & Places,sky & weather,full-moon-face,,n
+🌞,sun with face,Travel & Places,sky & weather,sun-face,,n
 🪐,ringed planet,Travel & Places,sky & weather,saturn,,y
 ⭐,star,Travel & Places,sky & weather,star,,y
-🌟,glowing star,Travel & Places,sky & weather,glowing-star,,y
+🌟,glowing star,Travel & Places,sky & weather,glowing-star,,n
 🌠,shooting star,Travel & Places,sky & weather,shooting-star,,y
 🌌,milky way,Travel & Places,sky & weather,milky-way,,y
 ☁️,cloud,Travel & Places,sky & weather,cloud,,y
-⛅,sun behind cloud,Travel & Places,sky & weather,partly-cloudy,,y
+⛅,sun behind cloud,Travel & Places,sky & weather,partly-cloudy,,n
 ⛈️,cloud with lightning and rain,Travel & Places,sky & weather,thunderstorm,,y
-🌤️,sun behind small cloud,Travel & Places,sky & weather,mostly-sunny,,y
-🌥️,sun behind large cloud,Travel & Places,sky & weather,cloudy,,y
+🌤️,sun behind small cloud,Travel & Places,sky & weather,mostly-sunny,,n
+🌥️,sun behind large cloud,Travel & Places,sky & weather,cloudy,,n
 🌦️,sun behind rain cloud,Travel & Places,sky & weather,sun-rain,,y
 🌧️,cloud with rain,Travel & Places,sky & weather,rain,,y
 🌨️,cloud with snow,Travel & Places,sky & weather,snow,,y
@@ -3095,10 +3095,10 @@ emoji,name,group,subgroup,literal,clarity,keep
 🌬️,wind face,Travel & Places,sky & weather,wind,,y
 🌀,cyclone,Travel & Places,sky & weather,cyclone,,y
 🌈,rainbow,Travel & Places,sky & weather,rainbow,,y
-🌂,closed umbrella,Travel & Places,sky & weather,closed-umbrella,,y
+🌂,closed umbrella,Travel & Places,sky & weather,closed-umbrella,,n
 ☂️,umbrella,Travel & Places,sky & weather,umbrella,,y
-☔,umbrella with rain drops,Travel & Places,sky & weather,rain-umbrella,,y
-⛱️,umbrella on ground,Travel & Places,sky & weather,beach-umbrella,,y
+☔,umbrella with rain drops,Travel & Places,sky & weather,rain-umbrella,,n
+⛱️,umbrella on ground,Travel & Places,sky & weather,beach-umbrella,,n
 ⚡,high voltage,Travel & Places,sky & weather,lightning,,y
 ❄️,snowflake,Travel & Places,sky & weather,snowflake,,y
 ☃️,snowman,Travel & Places,sky & weather,snowman,,y
@@ -3243,7 +3243,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 🔈,speaker low volume,Objects,sound,speaker-low,,y
 🔉,speaker medium volume,Objects,sound,speaker-medium,,y
 🔊,speaker high volume,Objects,sound,speaker-high,,y
-📢,loudspeaker,Objects,sound,loudspeaker,,y
+📢,loudspeaker,Objects,sound,loudspeaker,,n
 📣,megaphone,Objects,sound,megaphone,,y
 📯,postal horn,Objects,sound,postal-horn,,y
 🔔,bell,Objects,sound,bell,,y
@@ -3271,24 +3271,24 @@ emoji,name,group,subgroup,literal,clarity,keep
 🪈,flute,Objects,musical-instrument,flute,,y
 🪉,harp,Objects,musical-instrument,harp,,y
 📱,mobile phone,Objects,phone,phone,,y
-📲,mobile phone with arrow,Objects,phone,phone-outgoing,,y
-☎️,telephone,Objects,phone,telephone,,y
-📞,telephone receiver,Objects,phone,phone-receiver,,y
+📲,mobile phone with arrow,Objects,phone,phone-outgoing,,n
+☎️,telephone,Objects,phone,telephone,,n
+📞,telephone receiver,Objects,phone,phone-receiver,,n
 📟,pager,Objects,phone,pager,,y
 📠,fax machine,Objects,phone,fax,,y
 🔋,battery,Objects,computer,battery,,y
 🪫,low battery,Objects,computer,low-battery,,y
 🔌,electric plug,Objects,computer,plug,,y
 💻,laptop,Objects,computer,laptop,,y
-🖥️,desktop computer,Objects,computer,desktop,,y
+🖥️,desktop computer,Objects,computer,desktop,,n
 🖨️,printer,Objects,computer,printer,,y
 ⌨️,keyboard,Objects,computer,keyboard,,y
 🖱️,computer mouse,Objects,computer,computer-mouse,,y
 🖲️,trackball,Objects,computer,trackball,,y
-💽,computer disk,Objects,computer,disk,,y
+💽,computer disk,Objects,computer,disk,,n
 💾,floppy disk,Objects,computer,floppy-disk,,y
 💿,optical disk,Objects,computer,cd,,y
-📀,dvd,Objects,computer,dvd,,y
+📀,dvd,Objects,computer,dvd,,n
 🧮,abacus,Objects,computer,abacus,,y
 🎥,movie camera,Objects,light & video,movie-camera,,y
 🎞️,film frames,Objects,light & video,film,,y
@@ -3296,30 +3296,30 @@ emoji,name,group,subgroup,literal,clarity,keep
 🎬,clapper board,Objects,light & video,clapperboard,,y
 📺,television,Objects,light & video,television,,y
 📷,camera,Objects,light & video,camera,,y
-📸,camera with flash,Objects,light & video,camera-flash,,y
+📸,camera with flash,Objects,light & video,camera-flash,,n
 📹,video camera,Objects,light & video,video-camera,,y
 📼,videocassette,Objects,light & video,videocassette,,y
-🔍,magnifying glass tilted left,Objects,light & video,magnify-left,,y
-🔎,magnifying glass tilted right,Objects,light & video,magnify-right,,y
+🔍,magnifying glass tilted left,Objects,light & video,magnify,,y
+🔎,magnifying glass tilted right,Objects,light & video,magnify-right,,n
 🕯️,candle,Objects,light & video,candle,,y
 💡,light bulb,Objects,light & video,lightbulb,,y
 🔦,flashlight,Objects,light & video,flashlight,,y
 🏮,red paper lantern,Objects,light & video,lantern,,y
 🪔,diya lamp,Objects,light & video,oil-lamp,,y
 📔,notebook with decorative cover,Objects,book-paper,notebook,,n
-📕,closed book,Objects,book-paper,closed-book,,y
-📖,open book,Objects,book-paper,open-book,,y
-📗,green book,Objects,book-paper,green-book,,y
-📘,blue book,Objects,book-paper,blue-book,,y
-📙,orange book,Objects,book-paper,orange-book,,y
-📚,books,Objects,book-paper,book-stack,,y
+📕,closed book,Objects,book-paper,closed-book,,n
+📖,open book,Objects,book-paper,book,,y
+📗,green book,Objects,book-paper,green-book,,n
+📘,blue book,Objects,book-paper,blue-book,,n
+📙,orange book,Objects,book-paper,orange-book,,n
+📚,books,Objects,book-paper,book-stack,,n
 📓,notebook,Objects,book-paper,notebook,,y
 📒,ledger,Objects,book-paper,ledger,,y
 📃,page with curl,Objects,book-paper,page-curl,,y
 📜,scroll,Objects,book-paper,scroll,,y
 📄,page facing up,Objects,book-paper,page,,y
 📰,newspaper,Objects,book-paper,newspaper,,y
-🗞️,rolled-up newspaper,Objects,book-paper,newspaper-roll,,y
+🗞️,rolled-up newspaper,Objects,book-paper,newspaper-roll,,n
 📑,bookmark tabs,Objects,book-paper,bookmark-tab,,y
 🔖,bookmark,Objects,book-paper,bookmark,,y
 🏷️,label,Objects,book-paper,label,,y
@@ -3333,7 +3333,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 💸,money with wings,Objects,money,flying-money,,y
 💳,credit card,Objects,money,credit-card,,y
 🧾,receipt,Objects,money,receipt,,y
-💹,chart increasing with yen,Objects,money,yen-chart-up,,y
+💹,chart increasing with yen,Objects,money,yen-chart-up,,n
 ✉️,envelope,Objects,mail,envelope,,y
 📧,e-mail,Objects,mail,email,,y
 📨,incoming envelope,Objects,mail,envelope-incoming,,y
@@ -3341,36 +3341,36 @@ emoji,name,group,subgroup,literal,clarity,keep
 📤,outbox tray,Objects,mail,outbox,,y
 📥,inbox tray,Objects,mail,inbox,,y
 📦,package,Objects,mail,package,,y
-📫,closed mailbox with raised flag,Objects,mail,mailbox-closed-up,,y
-📪,closed mailbox with lowered flag,Objects,mail,mailbox-closed-down,,y
-📬,open mailbox with raised flag,Objects,mail,mailbox-open-up,,y
-📭,open mailbox with lowered flag,Objects,mail,mailbox-open-down,,y
+📫,closed mailbox with raised flag,Objects,mail,mailbox,,y
+📪,closed mailbox with lowered flag,Objects,mail,mailbox-closed-down,,n
+📬,open mailbox with raised flag,Objects,mail,mailbox-open-up,,n
+📭,open mailbox with lowered flag,Objects,mail,mailbox-open-down,,n
 📮,postbox,Objects,mail,postbox,,y
 🗳️,ballot box with ballot,Objects,mail,ballot-box,,y
 ✏️,pencil,Objects,writing,pencil,,y
-✒️,black nib,Objects,writing,nib,,y
-🖋️,fountain pen,Objects,writing,fountain-pen,,y
+✒️,black nib,Objects,writing,nib,,n
+🖋️,fountain pen,Objects,writing,fountain-pen,,n
 🖊️,pen,Objects,writing,pen,,y
 🖌️,paintbrush,Objects,writing,paintbrush,,y
 🖍️,crayon,Objects,writing,crayon,,y
 📝,memo,Objects,writing,memo,,y
 💼,briefcase,Objects,office,briefcase,,y
 📁,file folder,Objects,office,file-folder,,y
-📂,open file folder,Objects,office,open-file-folder,,y
+📂,open file folder,Objects,office,open-file-folder,,n
 🗂️,card index dividers,Objects,office,index-divider,,y
 📅,calendar,Objects,office,calendar,,y
-📆,tear-off calendar,Objects,office,calendar-tear-off,,y
+📆,tear-off calendar,Objects,office,calendar-tear-off,,n
 🗒️,spiral notepad,Objects,office,notepad,,y
-🗓️,spiral calendar,Objects,office,calendar-spiral,,y
+🗓️,spiral calendar,Objects,office,calendar-spiral,,n
 📇,card index,Objects,office,index-card,,y
 📈,chart increasing,Objects,office,chart-up,,y
 📉,chart decreasing,Objects,office,chart-down,,y
 📊,bar chart,Objects,office,bar-chart,,y
 📋,clipboard,Objects,office,clipboard,,y
 📌,pushpin,Objects,office,pushpin,,y
-📍,round pushpin,Objects,office,pushpin-round,,y
+📍,round pushpin,Objects,office,pushpin-round,,n
 📎,paperclip,Objects,office,paperclip,,y
-🖇️,linked paperclips,Objects,office,paperclip-chain,,y
+🖇️,linked paperclips,Objects,office,paperclip-chain,,n
 📏,straight ruler,Objects,office,ruler,,y
 📐,triangular ruler,Objects,office,set-square,,y
 ✂️,scissors,Objects,office,scissors,,y
@@ -3379,15 +3379,15 @@ emoji,name,group,subgroup,literal,clarity,keep
 🗑️,wastebasket,Objects,office,wastebasket,,y
 🔒,locked,Objects,lock,locked,,y
 🔓,unlocked,Objects,lock,unlocked,,y
-🔏,locked with pen,Objects,lock,lock-pen,,y
-🔐,locked with key,Objects,lock,lock-key,,y
+🔏,locked with pen,Objects,lock,lock-pen,,n
+🔐,locked with key,Objects,lock,lock-key,,n
 🔑,key,Objects,lock,key,,y
-🗝️,old key,Objects,lock,key-old,,y
+🗝️,old key,Objects,lock,key-old,,n
 🔨,hammer,Objects,tool,hammer,,y
 🪓,axe,Objects,tool,axe,,y
 ⛏️,pick,Objects,tool,pick,,y
-⚒️,hammer and pick,Objects,tool,hammer-pick,,y
-🛠️,hammer and wrench,Objects,tool,hammer-wrench,,y
+⚒️,hammer and pick,Objects,tool,hammer-pick,,n
+🛠️,hammer and wrench,Objects,tool,hammer-wrench,,n
 🗡️,dagger,Objects,tool,dagger,,y
 ⚔️,crossed swords,Objects,tool,sword-crossed,,y
 💣,bomb,Objects,tool,bomb,,y
@@ -3466,7 +3466,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 🚺,women’s room,Symbols,transport-sign,womens-room,,y
 🚻,restroom,Symbols,transport-sign,restroom,,y
 🚼,baby symbol,Symbols,transport-sign,baby-changing,,y
-🚾,water closet,Symbols,transport-sign,wc,,y
+🚾,water closet,Symbols,transport-sign,wc,,n
 🛂,passport control,Symbols,transport-sign,passport-control,,y
 🛃,customs,Symbols,transport-sign,customs,,y
 🛄,baggage claim,Symbols,transport-sign,baggage-claim,,y
@@ -3500,11 +3500,11 @@ emoji,name,group,subgroup,literal,clarity,keep
 ⤵️,right arrow curving down,Symbols,arrow,curve-down,,y
 🔃,clockwise vertical arrows,Symbols,arrow,reload,,y
 🔄,counterclockwise arrows button,Symbols,arrow,refresh,,y
-🔙,BACK arrow,Symbols,arrow,back,,y
-🔚,END arrow,Symbols,arrow,end,,y
-🔛,ON! arrow,Symbols,arrow,on,,y
-🔜,SOON arrow,Symbols,arrow,soon,,y
-🔝,TOP arrow,Symbols,arrow,top,,y
+🔙,BACK arrow,Symbols,arrow,back,,n
+🔚,END arrow,Symbols,arrow,end,,n
+🔛,ON! arrow,Symbols,arrow,on,,n
+🔜,SOON arrow,Symbols,arrow,soon,,n
+🔝,TOP arrow,Symbols,arrow,top,,n
 🛐,place of worship,Symbols,religion,worship,,y
 ⚛️,atom symbol,Symbols,religion,atom,,y
 🕉️,om,Symbols,religion,om,,y
@@ -3614,23 +3614,23 @@ emoji,name,group,subgroup,literal,clarity,keep
 🔢,input numbers,Symbols,alphanum,numbers,,y
 🔣,input symbols,Symbols,alphanum,symbols,,y
 🔤,input latin letters,Symbols,alphanum,letters,,y
-🅰️,A button (blood type),Symbols,alphanum,blood-type-a,,y
-🆎,AB button (blood type),Symbols,alphanum,blood-type-ab,,y
-🅱️,B button (blood type),Symbols,alphanum,blood-type-b,,y
-🆑,CL button,Symbols,alphanum,clear,,y
+🅰️,A button (blood type),Symbols,alphanum,blood-type-a,,n
+🆎,AB button (blood type),Symbols,alphanum,blood-type-ab,,n
+🅱️,B button (blood type),Symbols,alphanum,blood-type-b,,n
+🆑,CL button,Symbols,alphanum,clear,,n
 🆒,COOL button,Symbols,alphanum,cool,,n
-🆓,FREE button,Symbols,alphanum,free,,y
+🆓,FREE button,Symbols,alphanum,free,,n
 ℹ️,information,Symbols,alphanum,information,,y
-🆔,ID button,Symbols,alphanum,id,,y
+🆔,ID button,Symbols,alphanum,id,,n
 Ⓜ️,circled M,Symbols,alphanum,metro,,n
-🆕,NEW button,Symbols,alphanum,new,,y
-🆖,NG button,Symbols,alphanum,ng,,y
-🅾️,O button (blood type),Symbols,alphanum,blood-type-o,,y
-🆗,OK button,Symbols,alphanum,ok,,y
+🆕,NEW button,Symbols,alphanum,new,,n
+🆖,NG button,Symbols,alphanum,ng,,n
+🅾️,O button (blood type),Symbols,alphanum,blood-type-o,,n
+🆗,OK button,Symbols,alphanum,ok,,n
 🅿️,P button,Symbols,alphanum,parking,,y
 🆘,SOS button,Symbols,alphanum,sos,,y
 🆙,UP! button,Symbols,alphanum,up,,n
-🆚,VS button,Symbols,alphanum,versus,,y
+🆚,VS button,Symbols,alphanum,versus,,n
 🈁,Japanese “here” button,Symbols,alphanum,,,n
 🈂️,Japanese “service charge” button,Symbols,alphanum,,,n
 🈷️,Japanese “monthly amount” button,Symbols,alphanum,,,n

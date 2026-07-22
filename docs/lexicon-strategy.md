@@ -93,8 +93,8 @@ This is separate from the **near-duplicate cull** (Phase 3): a row can be the on
 | 1. Variant collapse | **done** |
 | 2. Literal glossing | **done** |
 | 2.5. People & Body glossing | **done** — 2,418 rows glossed |
-| 3. Cull (`keep`) | **done** — 1,634 kept · 2,319 dropped |
-| 4. Clarity roots | **done** — 1,634 rows in `lexicon-published.csv` |
+| 3. Cull (`keep`) | **done** — 1,501 kept · 2,452 dropped |
+| 4. Clarity roots | **done** — 1,501 rows in `lexicon-published.csv` |
 
 ```
 emojis.csv  →  lexicon.csv (skeleton)          ✓ done
@@ -110,7 +110,7 @@ emojis.csv  →  lexicon.csv (skeleton)          ✓ done
          4. generate clarity roots → lexicon-published.csv  ✓ done
 ```
 
-**What exists today:** Phase 1–3 complete. **Phase 4 complete:** `data/lexicon-published.csv` has **1,634** rows (`emoji`, `literal`, `clarity`, empty `metaphorical`). Regenerate with `npm run phase4-publish` when literals or the keep set change.
+**What exists today:** Phase 1–3 complete. **Phase 4 complete:** `data/lexicon-published.csv` has **1,501** rows (`emoji`, `literal`, `clarity`, empty `metaphorical`). Regenerate with `npm run phase4-publish` when literals or the keep set change.
 
 ---
 
@@ -319,8 +319,8 @@ When distinct concepts share a `literal` within the same `group`/`subgroup` (e.g
 | Metric | Count |
 |--------|------:|
 | Total seed rows | 3,953 |
-| `keep=y` (published) | 1,634 |
-| `keep=n` (dropped) | 2,319 |
+| `keep=y` (published) | 1,501 |
+| `keep=n` (dropped) | 2,452 |
 | Drop A (no English association) | 19 |
 | Duplicate clusters culled | 193 |
 | Singleton `keep=y` | 1,458 |
@@ -333,7 +333,7 @@ When distinct concepts share a `literal` within the same `group`/`subgroup` (e.g
 
 **Input:** `data/lexicon.csv` — rows where `keep=y` and `literal` is set.
 
-**Output:** `data/lexicon-published.csv` — **1,634 rows** today (only `keep=y`; dropped rows are not transferred).
+**Output:** `data/lexicon-published.csv` — **1,501 rows** today (only `keep=y`; dropped rows are not transferred).
 
 | Column | Phase 4 |
 |--------|---------|
