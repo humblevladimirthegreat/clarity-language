@@ -166,7 +166,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 🕳️,hole,Smileys & Emotion,emotion,hole,,y
 💬,speech balloon,Smileys & Emotion,emotion,speech,,y
 👁️‍🗨️,eye in speech bubble,Smileys & Emotion,emotion,witness,,y
-🗨️,left speech bubble,Smileys & Emotion,emotion,speech-left,,y
+🗨️,left speech bubble,Smileys & Emotion,emotion,,,n
 🗯️,right anger bubble,Smileys & Emotion,emotion,anger-speech,,y
 💭,thought balloon,Smileys & Emotion,emotion,thought,,y
 💤,ZZZ,Smileys & Emotion,emotion,sleep,,y
@@ -290,42 +290,42 @@ emoji,name,group,subgroup,literal,clarity,keep
 🤙🏽,call me hand: medium skin tone,People & Body,hand-fingers-partial,call-me,,n
 🤙🏾,call me hand: medium-dark skin tone,People & Body,hand-fingers-partial,call-me,,n
 🤙🏿,call me hand: dark skin tone,People & Body,hand-fingers-partial,call-me,,n
-👈,backhand index pointing left,People & Body,hand-single-finger,point-left,,y
-👈🏻,backhand index pointing left: light skin tone,People & Body,hand-single-finger,point-left,,n
-👈🏼,backhand index pointing left: medium-light skin tone,People & Body,hand-single-finger,point-left,,n
-👈🏽,backhand index pointing left: medium skin tone,People & Body,hand-single-finger,point-left,,n
-👈🏾,backhand index pointing left: medium-dark skin tone,People & Body,hand-single-finger,point-left,,n
-👈🏿,backhand index pointing left: dark skin tone,People & Body,hand-single-finger,point-left,,n
-👉,backhand index pointing right,People & Body,hand-single-finger,point-right,,y
-👉🏻,backhand index pointing right: light skin tone,People & Body,hand-single-finger,point-right,,n
-👉🏼,backhand index pointing right: medium-light skin tone,People & Body,hand-single-finger,point-right,,n
-👉🏽,backhand index pointing right: medium skin tone,People & Body,hand-single-finger,point-right,,n
-👉🏾,backhand index pointing right: medium-dark skin tone,People & Body,hand-single-finger,point-right,,n
-👉🏿,backhand index pointing right: dark skin tone,People & Body,hand-single-finger,point-right,,n
-👆,backhand index pointing up,People & Body,hand-single-finger,point-up,,n
-👆🏻,backhand index pointing up: light skin tone,People & Body,hand-single-finger,point-up,,n
-👆🏼,backhand index pointing up: medium-light skin tone,People & Body,hand-single-finger,point-up,,n
-👆🏽,backhand index pointing up: medium skin tone,People & Body,hand-single-finger,point-up,,n
-👆🏾,backhand index pointing up: medium-dark skin tone,People & Body,hand-single-finger,point-up,,n
-👆🏿,backhand index pointing up: dark skin tone,People & Body,hand-single-finger,point-up,,n
+👈,backhand index pointing left,People & Body,hand-single-finger,,,n
+👈🏻,backhand index pointing left: light skin tone,People & Body,hand-single-finger,,,n
+👈🏼,backhand index pointing left: medium-light skin tone,People & Body,hand-single-finger,,,n
+👈🏽,backhand index pointing left: medium skin tone,People & Body,hand-single-finger,,,n
+👈🏾,backhand index pointing left: medium-dark skin tone,People & Body,hand-single-finger,,,n
+👈🏿,backhand index pointing left: dark skin tone,People & Body,hand-single-finger,,,n
+👉,backhand index pointing right,People & Body,hand-single-finger,,,n
+👉🏻,backhand index pointing right: light skin tone,People & Body,hand-single-finger,,,n
+👉🏼,backhand index pointing right: medium-light skin tone,People & Body,hand-single-finger,,,n
+👉🏽,backhand index pointing right: medium skin tone,People & Body,hand-single-finger,,,n
+👉🏾,backhand index pointing right: medium-dark skin tone,People & Body,hand-single-finger,,,n
+👉🏿,backhand index pointing right: dark skin tone,People & Body,hand-single-finger,,,n
+👆,backhand index pointing up,People & Body,hand-single-finger,,,n
+👆🏻,backhand index pointing up: light skin tone,People & Body,hand-single-finger,,,n
+👆🏼,backhand index pointing up: medium-light skin tone,People & Body,hand-single-finger,,,n
+👆🏽,backhand index pointing up: medium skin tone,People & Body,hand-single-finger,,,n
+👆🏾,backhand index pointing up: medium-dark skin tone,People & Body,hand-single-finger,,,n
+👆🏿,backhand index pointing up: dark skin tone,People & Body,hand-single-finger,,,n
 🖕,middle finger,People & Body,hand-single-finger,middle-finger,,y
 🖕🏻,middle finger: light skin tone,People & Body,hand-single-finger,middle-finger,,n
 🖕🏼,middle finger: medium-light skin tone,People & Body,hand-single-finger,middle-finger,,n
 🖕🏽,middle finger: medium skin tone,People & Body,hand-single-finger,middle-finger,,n
 🖕🏾,middle finger: medium-dark skin tone,People & Body,hand-single-finger,middle-finger,,n
 🖕🏿,middle finger: dark skin tone,People & Body,hand-single-finger,middle-finger,,n
-👇,backhand index pointing down,People & Body,hand-single-finger,point-down,,y
-👇🏻,backhand index pointing down: light skin tone,People & Body,hand-single-finger,point-down,,n
-👇🏼,backhand index pointing down: medium-light skin tone,People & Body,hand-single-finger,point-down,,n
-👇🏽,backhand index pointing down: medium skin tone,People & Body,hand-single-finger,point-down,,n
-👇🏾,backhand index pointing down: medium-dark skin tone,People & Body,hand-single-finger,point-down,,n
-👇🏿,backhand index pointing down: dark skin tone,People & Body,hand-single-finger,point-down,,n
-☝️,index pointing up,People & Body,hand-single-finger,point-up,,y
-☝🏻,index pointing up: light skin tone,People & Body,hand-single-finger,point-up,,n
-☝🏼,index pointing up: medium-light skin tone,People & Body,hand-single-finger,point-up,,n
-☝🏽,index pointing up: medium skin tone,People & Body,hand-single-finger,point-up,,n
-☝🏾,index pointing up: medium-dark skin tone,People & Body,hand-single-finger,point-up,,n
-☝🏿,index pointing up: dark skin tone,People & Body,hand-single-finger,point-up,,n
+👇,backhand index pointing down,People & Body,hand-single-finger,,,n
+👇🏻,backhand index pointing down: light skin tone,People & Body,hand-single-finger,,,n
+👇🏼,backhand index pointing down: medium-light skin tone,People & Body,hand-single-finger,,,n
+👇🏽,backhand index pointing down: medium skin tone,People & Body,hand-single-finger,,,n
+👇🏾,backhand index pointing down: medium-dark skin tone,People & Body,hand-single-finger,,,n
+👇🏿,backhand index pointing down: dark skin tone,People & Body,hand-single-finger,,,n
+☝️,index pointing up,People & Body,hand-single-finger,point,,y
+☝🏻,index pointing up: light skin tone,People & Body,hand-single-finger,,,n
+☝🏼,index pointing up: medium-light skin tone,People & Body,hand-single-finger,,,n
+☝🏽,index pointing up: medium skin tone,People & Body,hand-single-finger,,,n
+☝🏾,index pointing up: medium-dark skin tone,People & Body,hand-single-finger,,,n
+☝🏿,index pointing up: dark skin tone,People & Body,hand-single-finger,,,n
 🫵,index pointing at the viewer,People & Body,hand-single-finger,,,n
 🫵🏻,index pointing at the viewer: light skin tone,People & Body,hand-single-finger,,,n
 🫵🏼,index pointing at the viewer: medium-light skin tone,People & Body,hand-single-finger,,,n
@@ -3494,7 +3494,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 ↖️,up-left arrow,Symbols,arrow,up-left,,y
 ↕️,up-down arrow,Symbols,arrow,up-down,,y
 ↔️,left-right arrow,Symbols,arrow,left-right,,y
-↩️,right arrow curving left,Symbols,arrow,back,,n
+↩️,right arrow curving left,Symbols,arrow,back,,y
 ↪️,left arrow curving right,Symbols,arrow,forward,,y
 ⤴️,right arrow curving up,Symbols,arrow,curve-up,,y
 ⤵️,right arrow curving down,Symbols,arrow,curve-down,,y
@@ -3568,8 +3568,8 @@ emoji,name,group,subgroup,literal,clarity,keep
 ‼️,double exclamation mark,Symbols,punctuation,exclamation-double,,y
 ⁉️,exclamation question mark,Symbols,punctuation,interrobang,,y
 ❓,red question mark,Symbols,punctuation,question-red,,y
-❔,white question mark,Symbols,punctuation,question-white,,y
-❕,white exclamation mark,Symbols,punctuation,exclamation-white,,y
+❔,white question mark,Symbols,punctuation,,,n
+❕,white exclamation mark,Symbols,punctuation,,,n
 ❗,red exclamation mark,Symbols,punctuation,exclamation-red,,y
 〰️,wavy dash,Symbols,punctuation,dash-wavy,,y
 💱,currency exchange,Symbols,currency,currency-exchange,,y
@@ -3589,9 +3589,9 @@ emoji,name,group,subgroup,literal,clarity,keep
 ➰,curly loop,Symbols,other-symbol,loop,,y
 ➿,double curly loop,Symbols,other-symbol,loop-double,,n
 〽️,part alternation mark,Symbols,other-symbol,,,n
-✳️,eight-spoked asterisk,Symbols,other-symbol,asterisk-eight,,y
-✴️,eight-pointed star,Symbols,other-symbol,star-eight,,y
-❇️,sparkle,Symbols,other-symbol,sparkle,,y
+✳️,eight-spoked asterisk,Symbols,other-symbol,,,n
+✴️,eight-pointed star,Symbols,other-symbol,,,n
+❇️,sparkle,Symbols,other-symbol,,,n
 ©️,copyright,Symbols,other-symbol,copyright,,y
 ®️,registered,Symbols,other-symbol,registered,,y
 ™️,trade mark,Symbols,other-symbol,trademark,,y
@@ -3649,12 +3649,12 @@ emoji,name,group,subgroup,literal,clarity,keep
 🈺,Japanese “open for business” button,Symbols,alphanum,,,n
 🈵,Japanese “no vacancy” button,Symbols,alphanum,,,n
 🔴,red circle,Symbols,geometric,red,,y
-🟠,orange circle,Symbols,geometric,orange-circle,,n
+🟠,orange circle,Symbols,geometric,orange,,y
 🟡,yellow circle,Symbols,geometric,yellow,,y
 🟢,green circle,Symbols,geometric,green,,y
-🔵,blue circle,Symbols,geometric,blue-circle,,n
-🟣,purple circle,Symbols,geometric,purple-circle,,n
-🟤,brown circle,Symbols,geometric,brown-circle,,n
+🔵,blue circle,Symbols,geometric,blue,,y
+🟣,purple circle,Symbols,geometric,purple,,y
+🟤,brown circle,Symbols,geometric,brown,,y
 ⚫,black circle,Symbols,geometric,black,,y
 ⚪,white circle,Symbols,geometric,white,,y
 🟥,red square,Symbols,geometric,red-square,,n

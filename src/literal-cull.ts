@@ -16,7 +16,7 @@ export const WINNER_OVERRIDES: Record<string, string> = {
   "Travel & Places|place-building|castle": "castle",
   "Travel & Places|place-building|post-office": "post office",
   "People & Body|hand-fingers-open|raised-hand": "raised hand",
-  "People & Body|hand-single-finger|point-up": "index pointing up",
+  "People & Body|hand-single-finger|point": "index pointing up",
   "People & Body|person-gesture|deaf": "deaf person",
   "People & Body|person-role|pregnant": "pregnant person",
   "People & Body|person-activity|partying": "people with bunny ears",
