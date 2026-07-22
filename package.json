@@ -18,7 +18,8 @@
     "typecheck": "tsc --noEmit",
     "parse": "tsx src/cli.ts",
     "convert-ngsl": "tsx scripts/convert-ngsl.ts",
-    "convert-emojis": "tsx scripts/convert-emojis.ts"
+    "convert-emojis": "tsx scripts/convert-emojis.ts",
+    "web": "npx --yes serve . -p 4173"
   },
   "engines": {
     "node": ">=20"

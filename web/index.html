@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clarity Emojis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f7f5f0;
+      --bg-accent: #ebe6dc;
+      --ink: #1a1a18;
+      --muted: #5c5a54;
+      --line: #d4cfc4;
+      --row-hover: #e8e2d6;
+      --focus: #2a6f6a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "IBM Plex Sans", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(ellipse 80% 50% at 10% -10%, #e4efe8 0%, transparent 55%),
+        radial-gradient(ellipse 60% 40% at 100% 0%, #efe8dc 0%, transparent 50%),
+        var(--bg);
+    }
+
+    main {
+      max-width: 52rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+
+    header {
+      margin-bottom: 1.75rem;
+    }
+
+    h1 {
+      margin: 0 0 0.35rem;
+      font-size: 1.75rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1rem;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    label {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+    }
+
+    input[type="search"] {
+      flex: 1 1 14rem;
+      min-width: 0;
+      padding: 0.6rem 0.85rem;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #fff;
+      color: var(--ink);
+      font: inherit;
+      font-size: 0.95rem;
+    }
+
+    input[type="search"]:focus {
+      outline: 2px solid var(--focus);
+      outline-offset: 1px;
+      border-color: var(--focus);
+    }
+
+    .count {
+      color: var(--muted);
+      font-size: 0.875rem;
+      white-space: nowrap;
+    }
+
+    .status {
+      padding: 1.5rem;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .status.error {
+      color: #8b2e2e;
+    }
+
+    .table-wrap {
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 1px 0 rgba(26, 26, 24, 0.04);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+
+    thead {
+      position: sticky;
+      top: 0;
+      background: var(--bg-accent);
+      z-index: 1;
+    }
+
+    th {
+      text-align: left;
+      font-weight: 600;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+      padding: 0.7rem 1rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    td {
+      padding: 0.55rem 1rem;
+      border-bottom: 1px solid var(--line);
+      vertical-align: middle;
+    }
+
+    tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    tbody tr:hover {
+      background: var(--row-hover);
+    }
+
+    .emoji {
+      font-size: 1.45rem;
+      line-height: 1;
+      width: 3.5rem;
+    }
+
+    .english {
+      color: var(--ink);
+    }
+
+    .clarity {
+      font-family: "IBM Plex Mono", monospace;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+    }
+
+    @media (max-width: 480px) {
+      th, td {
+        padding: 0.5rem 0.65rem;
+      }
+
+      .emoji {
+        width: 2.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Clarity Emojis</h1>
+      <p class="subtitle">Emoji → English gloss → Clarity word</p>
+    </header>
+
+    <div class="toolbar">
+      <label for="filter">Filter</label>
+      <input id="filter" type="search" placeholder="Filter by emoji, English, or Clarity…" autocomplete="off" />
+      <span class="count" id="count" hidden></span>
+    </div>
+
+    <div id="status" class="status">Loading…</div>
+    <div class="table-wrap" id="table-wrap" hidden>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Emoji</th>
+            <th scope="col">English</th>
+            <th scope="col">Clarity</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <script>
+    const CSV_URL = "../data/emojis-clarity.csv";
+
+    /** @type {{ emoji: string, english: string, clarity: string }[]} */
+    let rows = [];
+
+    /**
+     * Minimal CSV parser for this three-column file (no quoted commas).
+     * @param {string} text
+     */
+    function parseCsv(text) {
+      const lines = text.trim().split(/\r?\n/);
+      if (lines.length < 2) return [];
+      const header = lines[0].split(",");
+      if (header.join(",") !== "emoji,english,clarity") {
+        throw new Error(`Unexpected CSV header: ${header.join(",")}`);
+      }
+      return lines.slice(1).map((line) => {
+        const [emoji, english, clarity] = line.split(",");
+        return { emoji, english, clarity };
+      });
+    }
+
+    function render(filter = "") {
+      const q = filter.trim().toLowerCase();
+      const filtered = q
+        ? rows.filter(
+            (r) =>
+              r.emoji.includes(q) ||
+              r.english.toLowerCase().includes(q) ||
+              r.clarity.toLowerCase().includes(q)
+          )
+        : rows;
+
+      const tbody = document.getElementById("tbody");
+      tbody.replaceChildren(
+        ...filtered.map((r) => {
+          const tr = document.createElement("tr");
+          tr.innerHTML = `
+            <td class="emoji">${r.emoji}</td>
+            <td class="english">${escapeHtml(r.english)}</td>
+            <td class="clarity">${escapeHtml(r.clarity)}</td>
+          `;
+          return tr;
+        })
+      );
+
+      const count = document.getElementById("count");
+      count.hidden = false;
+      count.textContent =
+        filtered.length === rows.length
+          ? `${rows.length} rows`
+          : `${filtered.length} of ${rows.length}`;
+    }
+
+    /** @param {string} s */
+    function escapeHtml(s) {
+      return s
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;");
+    }
+
+    async function main() {
+      const status = document.getElementById("status");
+      const wrap = document.getElementById("table-wrap");
+      try {
+        const res = await fetch(CSV_URL);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        rows = parseCsv(await res.text());
+        status.hidden = true;
+        wrap.hidden = false;
+        render();
+      } catch (err) {
+        status.classList.add("error");
+        status.textContent =
+          `Could not load ${CSV_URL}. Serve the repo root (e.g. npm run web) so the CSV is reachable.`;
+        console.error(err);
+      }
+    }
+
+    document.getElementById("filter").addEventListener("input", (e) => {
+      render(/** @type {HTMLInputElement} */ (e.target).value);
+    });
+
+    main();
+  </script>
+</body>
+</html>
