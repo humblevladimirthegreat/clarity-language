@@ -17,13 +17,11 @@ Update the `/x/` section so discourse markers are defined as this fuller class, 
 
 ## Clause operators — assign explicitly to `/h/` (not `/x/`)
 
-- Done in reference: clause force (statement / polar question / imperative) as required sentence-initial `/h/` (sentence boundary)
 - Negation (clause-level; adjective-scoped negation via `/ɡ/` if needed)
 - Document that epistemic hedges that are really evidential stay `/h/` or `/ɡ/`, not `/x/`
 
 ## Still underspecified under existing PoS (no new prefix)
 
-- First-mention / indefinites (“a/some”) now that definite articles are replaced by pronouns
 - Numbers, quantifiers, ordinals (`/w/` vs noun — pick and document)
 - Comparatives (*bigger than X*) as complex adjective (`/w/`+`/b/`) or `/ɡ/`
 - Dependent-clause special pronoun form (TBD) vs which subordinators stay `/x/`
