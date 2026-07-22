@@ -18,5 +18,5 @@ Update the `/x/` section so discourse markers are defined as this fuller class, 
 - Negation (clause-level `/h/`; adjective-scoped negation via `/ɡ/` if needed)
 ## Still underspecified under existing PoS (no new prefix)
 
-- Numbers, quantifiers, ordinals (`/w/` vs noun — pick and document)
+- Quantifiers (*many*, *all*, *some*, …) — numerals/ordinals are in `docs/numbers.md`
 - Comparatives (*bigger than X*) as complex adjective (`/w/`+`/b/`) or `/ɡ/`
