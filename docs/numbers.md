@@ -50,13 +50,13 @@ Digit-strings (`re`…) usually take the argument role the clause needs (often `
 | **`re`** | **Enter / dial / input that digit-string** — type the code, dial the phone number, key the ID. Object (if any) is the channel or device; the digits are in the verb. |
 | **`ro`** | **Take / assign rank N** — intransitive *place Nth* / *come in Nth*; transitive *put (object) in Nth place* / *rank as Nth*. |
 
-“Set to N” (bring a quantity to an absolute value) is not a number-verb sense — use an ordinary verb plus the number as argument or adverb. Multiply/divide likewise stay ordinary verbs plus the number as `/h/`.
+“Set to N” (bring a quantity to an absolute value) is not a number-verb sense — use an ordinary verb plus the number as argument or adverb. Multiply/divide likewise stay ordinary verbs plus the number as `/h/`. With [percentage points](#percent-and-percentage-points) (**`ju`**), **`ra`** / **`ru`** as verbs mean increase/decrease by that point amount (not a relative %-change factor).
 
 Endings still apply (**-m** ≈ *about* that amount/code/rank, **-r** resume, etc.).
 
 ## Marker vowel
 
-**V** encodes both identity (scalar vs digit-string vs ordinal) and, for scalars, the **sign of the whole number**. Notation mode (plain / engineering / scientific / digit-string body) is read from the group contents, not from a separate mode vowel.
+**V** encodes both identity (scalar vs digit-string vs ordinal) and, for scalars, the **sign of the whole number**. Notation mode (plain / engineering / scientific / digit-string body / percent / percentage points) is read from the group contents, not from a separate mode vowel.
 
 | V | Use |
 |---|-----|
@@ -109,6 +109,8 @@ Within each digit group:
 | **bu** | Negative exponent, followed by the exponent’s digits |
 | **ja** | After exponent digits when a **mantissa follows** (not a digit) |
 | **je** | **Decimal point** (not a digit) |
+| **jo** | **Percent** closer (not a digit) — see [Percent and percentage points](#percent-and-percentage-points) |
+| **ju** | **Percentage-point** closer (not a digit) — see [Percent and percentage points](#percent-and-percentage-points) |
 
 - The **exponent comes before** the group’s mantissa digits.
 - If a mantissa follows the exponent, say **`ja`** after the last exponent digit, then the mantissa. Example: `27e12` → `ba` + `wo` + `du` + `ja` + `du` + `le`.
@@ -118,15 +120,60 @@ Within each digit group:
 - **Decimal point:** say **`je`** after the digit(s) left of the point; digits after **`je`** are the fractional part (group in threes if long). May appear with or without an exponent.
 - **Scientific register** is optional: exp-first, then **`ja`**, then mantissa with **`je`** after the leading digit (usual scientific shape). Example: `5.2487083e-4` → `bu` + `mo` + `ja` + `va` + `je` + `du` + `mo` + `ha` + `le` + `zo` + `ha` + `re`.
 - Bare OoM uses scalar marker **`ra`** (or **`ru`** if negative).
-- **Cents / fixed subunits:** an exponent need not be a multiple of 3 when the unit has a conventional subunit (e.g. dollars: `4e-2` for four cents). Same pattern for other fixed subunits if needed.
+- **Cents / fixed subunits:** an exponent need not be a multiple of 3 when the unit has a conventional subunit (e.g. dollars: `4e-2` for four cents). Same pattern for other fixed subunits if needed. Do **not** use **`jo`** for money subunits.
 - **No metric prefixes** in speech: prefer base unit + engineering exponent (`40e3` grams, not “40 kilograms”; `12e-9` meters, not “12 nanometers”).
+
+## Percent and percentage points
+
+Percent and percentage points are **scalar notation modes** on **`ra`** / **`ru`**, not new marker identities and not endings. They use group closers **`jo`** / **`ju`**, parallel to **`je`**.
+
+| Closer | Sense | Mantissa digits | Underlying magnitude |
+|--------|-------|-----------------|----------------------|
+| **`jo`** | **Percent** (portion of a whole) | Everyday percent figure (`25` in `25%`) | mantissa ÷ 100 |
+| **`ju`** | **Percentage points** (point-scale amount or delta) | Point figure (`2` in `+2 pp`) | mantissa ÷ 100 |
+
+Mantissa digits follow the [normal mantissa rules](#exponents) (including optional **`je`** inside the percent/point reading). Say the digits you mean (`100%` → `wo zo zo jo`, not a shortened form).
+
+### Form
+
+```
+mantissa-digits ( je fraction-digits )? jo|ju
+```
+
+- **Order:** integer digits, optional **`je`** + fractional digits, then **`jo`** or **`ju`**. Never `… jo/ju … je …`.
+- **Scalars only:** **`re…jo/ju`** and **`ro…jo/ju`** are illegal.
+- **No exponent in the same group:** do not combine **`ba`** / **`bu`** with **`jo`** or **`ju`**. Use a plain scalar (`je` / `e-N`) for rates outside everyday percent talk.
+- **One closer per word:** at most one **`jo`** or **`ju`** group in the number word (not both; not repeated across groups).
+- **Bare closer** (no mantissa): illegal.
+- Do not mark the same group with both **`jo`** and an equivalent `e-2` exponent.
+
+Endings still apply (**-l** exact, **-m** about, **-n** conventional label, **-r** resume).
+
+**Writing sugar:** `25%` → speech with **`jo`**; `2pp` / `+2 pp` → speech with **`ju`** (sign still on **`ra`** / **`ru`**).
+
+### What each closer is for
+
+| English habit | Clarity |
+|---------------|---------|
+| `25% of X` (portion) | **`jo`** number + whole in the clause |
+| `+2 percentage points` / `from 10% to 12%` point delta | **`ju`** (often as `/v/` **`ra`** / **`ru`**: increase/decrease by that point amount) |
+| `+50% relative to baseline` (factor change) | **Not** **`jo`** / **`ju`** — use a factor as `/h/` (e.g. ×1.5) or ordinary *relative-to* wording |
+
+`25%` (`…jo`) and `0.25` (plain scalar) name the same magnitude; **`jo`** only chooses the percent-scale reading. **`ju`** likewise names a ÷100 magnitude, but framed as **points** (not as “N% of a whole”).
+
+### Denominator (portion “of what”)
+
+The **whole** / reference class is **not** inside the number word. Prefer clause structure that names it (typically noun + `/ɡ/` percent number, or a complex adjective/adverb + `/b/` whole). Exact denominator patterns are **TBD** later.
+
+**Style:** a bare `/z/` (or other freestanding) **`…jo`** percent with no named whole is **grammatical but stylistically bad** — same pressure as Claritish *Percent of what*. Prefer an explicit whole. Bare **`…ju`** point amounts are fine when the percent-scale quantity being moved is already clear.
 
 ### Writing
 
 Either form is acceptable in writing:
 
 - Digits only (commas optional for readability), or
-- Engineering-style forms (`27e6`, `50e-6`, multi-group values as successive groups).
+- Engineering-style forms (`27e6`, `50e-6`, multi-group values as successive groups), or
+- Percent / point sugar (`25%`, `2pp`) as above.
 
 Speech always follows the number-word grammar above. For long values, break into digit groups of at most three mantissa digits (plus their exponents); all groups still sit in **one** word after a single marker and before a single ending.
 
@@ -152,8 +199,14 @@ Digits below use the table above; glosses show structure, not stress detail.
 | about 27e6 | *grabagujadulem* (ba gu **ja** du le, ending **-m**) |
 | phone 555-123-4567 | *drevavavawoduremovagulel* (`d` + `re` + va×3 · wo du re · mo va gu · le + `l`) |
 | scientific 5.2487083e-4 | *grabumojavajedumohalezoharel* (`ra` + bu mo **ja** + va **je** + du mo ha · le zo ha · re) |
+| 25% | *graduvajol* (`g` + `ra` + du va **jo** + `l`) |
+| about 3% | *grarejom* (`ra` + re **jo** + `m`) |
+| −12.5% | *gruwodujevajol* (`ru` + wo du **je** va **jo**) |
+| 100% | *grawozozojol* (`ra` + wo zo zo **jo**; normal mantissa digits) |
+| +2 pp | *gradujul* (`ra` + du **ju**) |
+| about −1.5 pp | *gruwojevajum* (`ru` + wo **je** va **ju** + `m`) |
 
-In a sentence, the PoS attaches to that single number word (see [Parts of speech on numbers](#parts-of-speech-on-numbers); e.g. direct-object digit-string: `/d/` + `re` + … + ending).
+In a sentence, the PoS attaches to that single number word (see [Parts of speech on numbers](#parts-of-speech-on-numbers); e.g. direct-object digit-string: `/d/` + `re` + … + ending). Prefer naming the whole with a `/ɡ/` **`jo`** percent (denominator patterns TBD).
 
 ## Stress (pronunciation guide)
 
@@ -161,4 +214,5 @@ In a sentence, the PoS attaches to that single number word (see [Parts of speech
 - Multi-digit groups without exponent: stress the **leftmost** digit.
 - Groups with an exponent: stress the **leftmost exponent digit**.
 - **`je`** (decimal point): always stressed when present.
+- **`jo`** / **`ju`** (percent / percentage points): always stressed when present.
 - Digit-string groups: stress the **first digit** of each group.
