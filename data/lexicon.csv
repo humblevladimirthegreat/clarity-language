@@ -5,30 +5,30 @@ emoji,name,group,subgroup,literal,clarity,keep
 😁,beaming face with smiling eyes,Smileys & Emotion,face-smiling,beam,,y
 😆,grinning squinting face,Smileys & Emotion,face-smiling,laugh,,n
 😅,grinning face with sweat,Smileys & Emotion,face-smiling,nervous-laugh,,y
-🤣,rolling on the floor laughing,Smileys & Emotion,face-smiling,rofl,,y
-😂,face with tears of joy,Smileys & Emotion,face-smiling,laugh,,y
-🙂,slightly smiling face,Smileys & Emotion,face-smiling,smile,,y
+🤣,rolling on the floor laughing,Smileys & Emotion,face-smiling,laugh,,y
+😂,face with tears of joy,Smileys & Emotion,face-smiling,laugh,,n
+🙂,slightly smiling face,Smileys & Emotion,face-smiling,smile,,n
 🙃,upside-down face,Smileys & Emotion,face-smiling,upside-down,,y
 🫠,melting face,Smileys & Emotion,face-smiling,melt,,y
 😉,winking face,Smileys & Emotion,face-smiling,wink,,y
 😊,smiling face with smiling eyes,Smileys & Emotion,face-smiling,smile,,n
-😇,smiling face with halo,Smileys & Emotion,face-smiling,angel,,y
+😇,smiling face with halo,Smileys & Emotion,face-smiling,halo,,y
 🥰,smiling face with hearts,Smileys & Emotion,face-affection,love,,y
 😍,smiling face with heart-eyes,Smileys & Emotion,face-affection,heart-eyes,,y
 🤩,star-struck,Smileys & Emotion,face-affection,starstruck,,y
-😘,face blowing a kiss,Smileys & Emotion,face-affection,kiss,,y
+😘,face blowing a kiss,Smileys & Emotion,face-affection,blow-kiss,,y
 😗,kissing face,Smileys & Emotion,face-affection,kiss,,n
 ☺️,smiling face,Smileys & Emotion,face-affection,smile,,y
 😚,kissing face with closed eyes,Smileys & Emotion,face-affection,kiss,,n
 😙,kissing face with smiling eyes,Smileys & Emotion,face-affection,kiss,,n
 🥲,smiling face with tear,Smileys & Emotion,face-affection,tear-smile,,y
 😋,face savoring food,Smileys & Emotion,face-tongue,yummy,,y
-😛,face with tongue,Smileys & Emotion,face-tongue,tongue,,y
+😛,face with tongue,Smileys & Emotion,face-tongue,tongue-out,,y
 😜,winking face with tongue,Smileys & Emotion,face-tongue,wink-tongue,,y
 🤪,zany face,Smileys & Emotion,face-tongue,zany,,y
 😝,squinting face with tongue,Smileys & Emotion,face-tongue,tongue-squint,,y
-🤑,money-mouth face,Smileys & Emotion,face-tongue,money,,y
-🤗,smiling face with open hands,Smileys & Emotion,face-hand,hug,,y
+🤑,money-mouth face,Smileys & Emotion,face-tongue,greed,,y
+🤗,smiling face with open hands,Smileys & Emotion,face-hand,hug,,n
 🤭,face with hand over mouth,Smileys & Emotion,face-hand,gasp,,y
 🫢,face with open eyes and hand over mouth,Smileys & Emotion,face-hand,shock,,y
 🫣,face with peeking eye,Smileys & Emotion,face-hand,peek,,y
@@ -41,7 +41,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 😑,expressionless face,Smileys & Emotion,face-neutral-skeptical,blank,,y
 😶,face without mouth,Smileys & Emotion,face-neutral-skeptical,no-mouth,,y
 🫥,dotted line face,Smileys & Emotion,face-neutral-skeptical,invisible,,y
-😶‍🌫️,face in clouds,Smileys & Emotion,face-neutral-skeptical,foggy,,y
+😶‍🌫️,face in clouds,Smileys & Emotion,face-neutral-skeptical,foggy,,n
 😏,smirking face,Smileys & Emotion,face-neutral-skeptical,smirk,,y
 😒,unamused face,Smileys & Emotion,face-neutral-skeptical,unamused,,y
 🙄,face with rolling eyes,Smileys & Emotion,face-neutral-skeptical,eye-roll,,y
@@ -55,7 +55,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 😔,pensive face,Smileys & Emotion,face-sleepy,pensive,,y
 😪,sleepy face,Smileys & Emotion,face-sleepy,sleepy,,y
 🤤,drooling face,Smileys & Emotion,face-sleepy,drool,,y
-😴,sleeping face,Smileys & Emotion,face-sleepy,sleep,,y
+😴,sleeping face,Smileys & Emotion,face-sleepy,sleep,,n
 🫩,face with bags under eyes,Smileys & Emotion,face-sleepy,tired-eyes,,y
 😷,face with medical mask,Smileys & Emotion,face-unwell,mask,,y
 🤒,face with thermometer,Smileys & Emotion,face-unwell,sick,,y
@@ -65,7 +65,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 🤧,sneezing face,Smileys & Emotion,face-unwell,sneeze,,y
 🥵,hot face,Smileys & Emotion,face-unwell,hot,,y
 🥶,cold face,Smileys & Emotion,face-unwell,cold,,y
-🥴,woozy face,Smileys & Emotion,face-unwell,dizzy,,y
+🥴,woozy face,Smileys & Emotion,face-unwell,woozy,,y
 😵,face with crossed-out eyes,Smileys & Emotion,face-unwell,dizzy,,n
 😵‍💫,face with spiral eyes,Smileys & Emotion,face-unwell,spiral-eyes,,y
 🤯,exploding head,Smileys & Emotion,face-unwell,mind-blown,,y
@@ -87,7 +87,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 🫪,distorted face,Smileys & Emotion,face-concerned,distorted,,y
 🥺,pleading face,Smileys & Emotion,face-concerned,pleading,,y
 🥹,face holding back tears,Smileys & Emotion,face-concerned,holding-tears,,y
-😦,frowning face with open mouth,Smileys & Emotion,face-concerned,anguish,,n
+😦,frowning face with open mouth,Smileys & Emotion,face-concerned,frown,,n
 😧,anguished face,Smileys & Emotion,face-concerned,anguish,,y
 😨,fearful face,Smileys & Emotion,face-concerned,fear,,y
 😰,anxious face with sweat,Smileys & Emotion,face-concerned,anxious,,y
@@ -120,7 +120,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 🤖,robot,Smileys & Emotion,face-costume,robot,,y
 😺,grinning cat,Smileys & Emotion,cat-face,cat-grin,,y
 😸,grinning cat with smiling eyes,Smileys & Emotion,cat-face,cat-grin,,n
-😹,cat with tears of joy,Smileys & Emotion,cat-face,cat-laugh,,y
+😹,cat with tears of joy,Smileys & Emotion,cat-face,cat-laugh,,n
 😻,smiling cat with heart-eyes,Smileys & Emotion,cat-face,cat-heart-eyes,,y
 😼,cat with wry smile,Smileys & Emotion,cat-face,cat-smirk,,y
 😽,kissing cat,Smileys & Emotion,cat-face,cat-kiss,,y
@@ -424,12 +424,12 @@ emoji,name,group,subgroup,literal,clarity,keep
 🫱🏿‍🫲🏼,"handshake: dark skin tone, medium-light skin tone",People & Body,hands,handshake,,n
 🫱🏿‍🫲🏽,"handshake: dark skin tone, medium skin tone",People & Body,hands,handshake,,n
 🫱🏿‍🫲🏾,"handshake: dark skin tone, medium-dark skin tone",People & Body,hands,handshake,,n
-🙏,folded hands,People & Body,hands,prayer-hands,,y
-🙏🏻,folded hands: light skin tone,People & Body,hands,prayer-hands,,n
-🙏🏼,folded hands: medium-light skin tone,People & Body,hands,prayer-hands,,n
-🙏🏽,folded hands: medium skin tone,People & Body,hands,prayer-hands,,n
-🙏🏾,folded hands: medium-dark skin tone,People & Body,hands,prayer-hands,,n
-🙏🏿,folded hands: dark skin tone,People & Body,hands,prayer-hands,,n
+🙏,folded hands,People & Body,hands,pray,,y
+🙏🏻,folded hands: light skin tone,People & Body,hands,pray,,n
+🙏🏼,folded hands: medium-light skin tone,People & Body,hands,pray,,n
+🙏🏽,folded hands: medium skin tone,People & Body,hands,pray,,n
+🙏🏾,folded hands: medium-dark skin tone,People & Body,hands,pray,,n
+🙏🏿,folded hands: dark skin tone,People & Body,hands,pray,,n
 ✍️,writing hand,People & Body,hand-prop,writing-hand,,y
 ✍🏻,writing hand: light skin tone,People & Body,hand-prop,writing-hand,,n
 ✍🏼,writing hand: medium-light skin tone,People & Body,hand-prop,writing-hand,,n
@@ -664,7 +664,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 👵🏽,old woman: medium skin tone,People & Body,person,old-woman,,n
 👵🏾,old woman: medium-dark skin tone,People & Body,person,old-woman,,n
 👵🏿,old woman: dark skin tone,People & Body,person,old-woman,,n
-🙍,person frowning,People & Body,person-gesture,frown,,y
+🙍,person frowning,People & Body,person-gesture,frown,,n
 🙍🏻,person frowning: light skin tone,People & Body,person-gesture,frown,,n
 🙍🏼,person frowning: medium-light skin tone,People & Body,person-gesture,frown,,n
 🙍🏽,person frowning: medium skin tone,People & Body,person-gesture,frown,,n
@@ -1210,12 +1210,12 @@ emoji,name,group,subgroup,literal,clarity,keep
 👷🏽‍♀️,woman construction worker: medium skin tone,People & Body,person-role,construction-worker,,n
 👷🏾‍♀️,woman construction worker: medium-dark skin tone,People & Body,person-role,construction-worker,,n
 👷🏿‍♀️,woman construction worker: dark skin tone,People & Body,person-role,construction-worker,,n
-🫅,person with crown,People & Body,person-role,crown,,y
-🫅🏻,person with crown: light skin tone,People & Body,person-role,crown,,n
-🫅🏼,person with crown: medium-light skin tone,People & Body,person-role,crown,,n
-🫅🏽,person with crown: medium skin tone,People & Body,person-role,crown,,n
-🫅🏾,person with crown: medium-dark skin tone,People & Body,person-role,crown,,n
-🫅🏿,person with crown: dark skin tone,People & Body,person-role,crown,,n
+🫅,person with crown,People & Body,person-role,monarch,,y
+🫅🏻,person with crown: light skin tone,People & Body,person-role,monarch,,n
+🫅🏼,person with crown: medium-light skin tone,People & Body,person-role,monarch,,n
+🫅🏽,person with crown: medium skin tone,People & Body,person-role,monarch,,n
+🫅🏾,person with crown: medium-dark skin tone,People & Body,person-role,monarch,,n
+🫅🏿,person with crown: dark skin tone,People & Body,person-role,monarch,,n
 🤴,prince,People & Body,person-role,prince,,y
 🤴🏻,prince: light skin tone,People & Body,person-role,prince,,n
 🤴🏼,prince: medium-light skin tone,People & Body,person-role,prince,,n
@@ -1620,7 +1620,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 🧎🏽‍♂️‍➡️,man kneeling facing right: medium skin tone,People & Body,person-activity,kneeling,,n
 🧎🏾‍♂️‍➡️,man kneeling facing right: medium-dark skin tone,People & Body,person-activity,kneeling,,n
 🧎🏿‍♂️‍➡️,man kneeling facing right: dark skin tone,People & Body,person-activity,kneeling,,n
-🧑‍🦯,person with white cane,People & Body,person-activity,cane,,y
+🧑‍🦯,person with white cane,People & Body,person-activity,cane,,n
 🧑🏻‍🦯,person with white cane: light skin tone,People & Body,person-activity,cane,,n
 🧑🏼‍🦯,person with white cane: medium-light skin tone,People & Body,person-activity,cane,,n
 🧑🏽‍🦯,person with white cane: medium skin tone,People & Body,person-activity,cane,,n
@@ -1692,42 +1692,42 @@ emoji,name,group,subgroup,literal,clarity,keep
 👩🏽‍🦼‍➡️,woman in motorized wheelchair facing right: medium skin tone,People & Body,person-activity,motorized-wheelchair,,n
 👩🏾‍🦼‍➡️,woman in motorized wheelchair facing right: medium-dark skin tone,People & Body,person-activity,motorized-wheelchair,,n
 👩🏿‍🦼‍➡️,woman in motorized wheelchair facing right: dark skin tone,People & Body,person-activity,motorized-wheelchair,,n
-🧑‍🦽,person in manual wheelchair,People & Body,person-activity,wheelchair,,y
-🧑🏻‍🦽,person in manual wheelchair: light skin tone,People & Body,person-activity,wheelchair,,n
-🧑🏼‍🦽,person in manual wheelchair: medium-light skin tone,People & Body,person-activity,wheelchair,,n
-🧑🏽‍🦽,person in manual wheelchair: medium skin tone,People & Body,person-activity,wheelchair,,n
-🧑🏾‍🦽,person in manual wheelchair: medium-dark skin tone,People & Body,person-activity,wheelchair,,n
-🧑🏿‍🦽,person in manual wheelchair: dark skin tone,People & Body,person-activity,wheelchair,,n
-🧑‍🦽‍➡️,person in manual wheelchair facing right,People & Body,person-activity,wheelchair,,n
-🧑🏻‍🦽‍➡️,person in manual wheelchair facing right: light skin tone,People & Body,person-activity,wheelchair,,n
-🧑🏼‍🦽‍➡️,person in manual wheelchair facing right: medium-light skin tone,People & Body,person-activity,wheelchair,,n
-🧑🏽‍🦽‍➡️,person in manual wheelchair facing right: medium skin tone,People & Body,person-activity,wheelchair,,n
-🧑🏾‍🦽‍➡️,person in manual wheelchair facing right: medium-dark skin tone,People & Body,person-activity,wheelchair,,n
-🧑🏿‍🦽‍➡️,person in manual wheelchair facing right: dark skin tone,People & Body,person-activity,wheelchair,,n
-👨‍🦽,man in manual wheelchair,People & Body,person-activity,wheelchair,,n
-👨🏻‍🦽,man in manual wheelchair: light skin tone,People & Body,person-activity,wheelchair,,n
-👨🏼‍🦽,man in manual wheelchair: medium-light skin tone,People & Body,person-activity,wheelchair,,n
-👨🏽‍🦽,man in manual wheelchair: medium skin tone,People & Body,person-activity,wheelchair,,n
-👨🏾‍🦽,man in manual wheelchair: medium-dark skin tone,People & Body,person-activity,wheelchair,,n
-👨🏿‍🦽,man in manual wheelchair: dark skin tone,People & Body,person-activity,wheelchair,,n
-👨‍🦽‍➡️,man in manual wheelchair facing right,People & Body,person-activity,wheelchair,,n
-👨🏻‍🦽‍➡️,man in manual wheelchair facing right: light skin tone,People & Body,person-activity,wheelchair,,n
-👨🏼‍🦽‍➡️,man in manual wheelchair facing right: medium-light skin tone,People & Body,person-activity,wheelchair,,n
-👨🏽‍🦽‍➡️,man in manual wheelchair facing right: medium skin tone,People & Body,person-activity,wheelchair,,n
-👨🏾‍🦽‍➡️,man in manual wheelchair facing right: medium-dark skin tone,People & Body,person-activity,wheelchair,,n
-👨🏿‍🦽‍➡️,man in manual wheelchair facing right: dark skin tone,People & Body,person-activity,wheelchair,,n
-👩‍🦽,woman in manual wheelchair,People & Body,person-activity,wheelchair,,n
-👩🏻‍🦽,woman in manual wheelchair: light skin tone,People & Body,person-activity,wheelchair,,n
-👩🏼‍🦽,woman in manual wheelchair: medium-light skin tone,People & Body,person-activity,wheelchair,,n
-👩🏽‍🦽,woman in manual wheelchair: medium skin tone,People & Body,person-activity,wheelchair,,n
-👩🏾‍🦽,woman in manual wheelchair: medium-dark skin tone,People & Body,person-activity,wheelchair,,n
-👩🏿‍🦽,woman in manual wheelchair: dark skin tone,People & Body,person-activity,wheelchair,,n
-👩‍🦽‍➡️,woman in manual wheelchair facing right,People & Body,person-activity,wheelchair,,n
-👩🏻‍🦽‍➡️,woman in manual wheelchair facing right: light skin tone,People & Body,person-activity,wheelchair,,n
-👩🏼‍🦽‍➡️,woman in manual wheelchair facing right: medium-light skin tone,People & Body,person-activity,wheelchair,,n
-👩🏽‍🦽‍➡️,woman in manual wheelchair facing right: medium skin tone,People & Body,person-activity,wheelchair,,n
-👩🏾‍🦽‍➡️,woman in manual wheelchair facing right: medium-dark skin tone,People & Body,person-activity,wheelchair,,n
-👩🏿‍🦽‍➡️,woman in manual wheelchair facing right: dark skin tone,People & Body,person-activity,wheelchair,,n
+🧑‍🦽,person in manual wheelchair,People & Body,person-activity,wheelchair-user,,y
+🧑🏻‍🦽,person in manual wheelchair: light skin tone,People & Body,person-activity,wheelchair-user,,n
+🧑🏼‍🦽,person in manual wheelchair: medium-light skin tone,People & Body,person-activity,wheelchair-user,,n
+🧑🏽‍🦽,person in manual wheelchair: medium skin tone,People & Body,person-activity,wheelchair-user,,n
+🧑🏾‍🦽,person in manual wheelchair: medium-dark skin tone,People & Body,person-activity,wheelchair-user,,n
+🧑🏿‍🦽,person in manual wheelchair: dark skin tone,People & Body,person-activity,wheelchair-user,,n
+🧑‍🦽‍➡️,person in manual wheelchair facing right,People & Body,person-activity,wheelchair-user,,n
+🧑🏻‍🦽‍➡️,person in manual wheelchair facing right: light skin tone,People & Body,person-activity,wheelchair-user,,n
+🧑🏼‍🦽‍➡️,person in manual wheelchair facing right: medium-light skin tone,People & Body,person-activity,wheelchair-user,,n
+🧑🏽‍🦽‍➡️,person in manual wheelchair facing right: medium skin tone,People & Body,person-activity,wheelchair-user,,n
+🧑🏾‍🦽‍➡️,person in manual wheelchair facing right: medium-dark skin tone,People & Body,person-activity,wheelchair-user,,n
+🧑🏿‍🦽‍➡️,person in manual wheelchair facing right: dark skin tone,People & Body,person-activity,wheelchair-user,,n
+👨‍🦽,man in manual wheelchair,People & Body,person-activity,wheelchair-user,,n
+👨🏻‍🦽,man in manual wheelchair: light skin tone,People & Body,person-activity,wheelchair-user,,n
+👨🏼‍🦽,man in manual wheelchair: medium-light skin tone,People & Body,person-activity,wheelchair-user,,n
+👨🏽‍🦽,man in manual wheelchair: medium skin tone,People & Body,person-activity,wheelchair-user,,n
+👨🏾‍🦽,man in manual wheelchair: medium-dark skin tone,People & Body,person-activity,wheelchair-user,,n
+👨🏿‍🦽,man in manual wheelchair: dark skin tone,People & Body,person-activity,wheelchair-user,,n
+👨‍🦽‍➡️,man in manual wheelchair facing right,People & Body,person-activity,wheelchair-user,,n
+👨🏻‍🦽‍➡️,man in manual wheelchair facing right: light skin tone,People & Body,person-activity,wheelchair-user,,n
+👨🏼‍🦽‍➡️,man in manual wheelchair facing right: medium-light skin tone,People & Body,person-activity,wheelchair-user,,n
+👨🏽‍🦽‍➡️,man in manual wheelchair facing right: medium skin tone,People & Body,person-activity,wheelchair-user,,n
+👨🏾‍🦽‍➡️,man in manual wheelchair facing right: medium-dark skin tone,People & Body,person-activity,wheelchair-user,,n
+👨🏿‍🦽‍➡️,man in manual wheelchair facing right: dark skin tone,People & Body,person-activity,wheelchair-user,,n
+👩‍🦽,woman in manual wheelchair,People & Body,person-activity,wheelchair-user,,n
+👩🏻‍🦽,woman in manual wheelchair: light skin tone,People & Body,person-activity,wheelchair-user,,n
+👩🏼‍🦽,woman in manual wheelchair: medium-light skin tone,People & Body,person-activity,wheelchair-user,,n
+👩🏽‍🦽,woman in manual wheelchair: medium skin tone,People & Body,person-activity,wheelchair-user,,n
+👩🏾‍🦽,woman in manual wheelchair: medium-dark skin tone,People & Body,person-activity,wheelchair-user,,n
+👩🏿‍🦽,woman in manual wheelchair: dark skin tone,People & Body,person-activity,wheelchair-user,,n
+👩‍🦽‍➡️,woman in manual wheelchair facing right,People & Body,person-activity,wheelchair-user,,n
+👩🏻‍🦽‍➡️,woman in manual wheelchair facing right: light skin tone,People & Body,person-activity,wheelchair-user,,n
+👩🏼‍🦽‍➡️,woman in manual wheelchair facing right: medium-light skin tone,People & Body,person-activity,wheelchair-user,,n
+👩🏽‍🦽‍➡️,woman in manual wheelchair facing right: medium skin tone,People & Body,person-activity,wheelchair-user,,n
+👩🏾‍🦽‍➡️,woman in manual wheelchair facing right: medium-dark skin tone,People & Body,person-activity,wheelchair-user,,n
+👩🏿‍🦽‍➡️,woman in manual wheelchair facing right: dark skin tone,People & Body,person-activity,wheelchair-user,,n
 🏃,person running,People & Body,person-activity,running,,y
 🏃🏻,person running: light skin tone,People & Body,person-activity,running,,n
 🏃🏼,person running: medium-light skin tone,People & Body,person-activity,running,,n
@@ -1916,7 +1916,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 🏂🏽,snowboarder: medium skin tone,People & Body,person-sport,snowboarding,,n
 🏂🏾,snowboarder: medium-dark skin tone,People & Body,person-sport,snowboarding,,n
 🏂🏿,snowboarder: dark skin tone,People & Body,person-sport,snowboarding,,n
-🏌️,person golfing,People & Body,person-sport,golf,,y
+🏌️,person golfing,People & Body,person-sport,golf,,n
 🏌🏻,person golfing: light skin tone,People & Body,person-sport,golf,,n
 🏌🏼,person golfing: medium-light skin tone,People & Body,person-sport,golf,,n
 🏌🏽,person golfing: medium skin tone,People & Body,person-sport,golf,,n
@@ -1988,7 +1988,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 🏊🏽‍♀️,woman swimming: medium skin tone,People & Body,person-sport,swimming,,n
 🏊🏾‍♀️,woman swimming: medium-dark skin tone,People & Body,person-sport,swimming,,n
 🏊🏿‍♀️,woman swimming: dark skin tone,People & Body,person-sport,swimming,,n
-⛹️,person bouncing ball,People & Body,person-sport,basketball,,y
+⛹️,person bouncing ball,People & Body,person-sport,basketball,,n
 ⛹🏻,person bouncing ball: light skin tone,People & Body,person-sport,basketball,,n
 ⛹🏼,person bouncing ball: medium-light skin tone,People & Body,person-sport,basketball,,n
 ⛹🏽,person bouncing ball: medium skin tone,People & Body,person-sport,basketball,,n
@@ -2567,7 +2567,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 👩‍👩‍👧‍👦,"family: woman, woman, girl, boy",People & Body,family,family,,n
 👩‍👩‍👦‍👦,"family: woman, woman, boy, boy",People & Body,family,family,,n
 👩‍👩‍👧‍👧,"family: woman, woman, girl, girl",People & Body,family,family,,n
-👨‍👦,"family: man, boy",People & Body,family,family,,y
+👨‍👦,"family: man, boy",People & Body,family,family,,n
 👨‍👦‍👦,"family: man, boy, boy",People & Body,family,family,,n
 👨‍👧,"family: man, girl",People & Body,family,family,,n
 👨‍👧‍👦,"family: man, girl, boy",People & Body,family,family,,n
@@ -2746,7 +2746,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 🌳,deciduous tree,Animals & Nature,plant-other,deciduous-tree,,y
 🌴,palm tree,Animals & Nature,plant-other,palm-tree,,y
 🌵,cactus,Animals & Nature,plant-other,cactus,,y
-🌾,sheaf of rice,Animals & Nature,plant-other,rice,,y
+🌾,sheaf of rice,Animals & Nature,plant-other,rice-plant,,y
 🌿,herb,Animals & Nature,plant-other,herb,,y
 ☘️,shamrock,Animals & Nature,plant-other,shamrock,,y
 🍀,four leaf clover,Animals & Nature,plant-other,four-leaf-clover,,y
@@ -2794,7 +2794,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 🌰,chestnut,Food & Drink,food-vegetable,chestnut,,y
 🫚,ginger root,Food & Drink,food-vegetable,ginger,,y
 🫛,pea pod,Food & Drink,food-vegetable,pea,,y
-🍄‍🟫,brown mushroom,Food & Drink,food-vegetable,mushroom,,y
+🍄‍🟫,brown mushroom,Food & Drink,food-vegetable,mushroom,,n
 🫜,root vegetable,Food & Drink,food-vegetable,root-veg,,y
 🍞,bread,Food & Drink,food-prepared,bread,,y
 🥐,croissant,Food & Drink,food-prepared,croissant,,y
@@ -2907,7 +2907,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 🏞️,national park,Travel & Places,place-geographic,national-park,,y
 🏟️,stadium,Travel & Places,place-building,stadium,,y
 🏛️,classical building,Travel & Places,place-building,classical-building,,y
-🏗️,building construction,Travel & Places,place-building,construction,,y
+🏗️,building construction,Travel & Places,place-building,construction-site,,y
 🧱,brick,Travel & Places,place-building,brick,,y
 🪨,rock,Travel & Places,place-building,rock,,y
 🪵,wood,Travel & Places,place-building,wood,,y
@@ -3106,7 +3106,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 ☄️,comet,Travel & Places,sky & weather,comet,,y
 🔥,fire,Travel & Places,sky & weather,fire,,y
 💧,droplet,Travel & Places,sky & weather,droplet,,y
-🌊,water wave,Travel & Places,sky & weather,wave,,y
+🌊,water wave,Travel & Places,sky & weather,ocean-wave,,y
 🎃,jack-o-lantern,Activities,event,jack-o-lantern,,y
 🎄,Christmas tree,Activities,event,christmas-tree,,y
 🎆,fireworks,Activities,event,fireworks,,y
@@ -3144,7 +3144,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 🎾,tennis,Activities,sport,tennis,,y
 🥏,flying disc,Activities,sport,frisbee,,y
 🎳,bowling,Activities,sport,bowling,,y
-🏏,cricket game,Activities,sport,cricket,,y
+🏏,cricket game,Activities,sport,cricket-game,,y
 🏑,field hockey,Activities,sport,field-hockey,,y
 🏒,ice hockey,Activities,sport,hockey,,y
 🥍,lacrosse,Activities,sport,lacrosse,,y
@@ -3157,7 +3157,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 ⛸️,ice skate,Activities,sport,skating,,y
 🎣,fishing pole,Activities,sport,fishing,,y
 🤿,diving mask,Activities,sport,diving-mask,,y
-🎽,running shirt,Activities,sport,running,,y
+🎽,running shirt,Activities,sport,running-shirt,,y
 🎿,skis,Activities,sport,skis,,y
 🛷,sled,Activities,sport,sled,,y
 🥌,curling stone,Activities,sport,curling,,y
@@ -3283,7 +3283,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 🖥️,desktop computer,Objects,computer,desktop,,y
 🖨️,printer,Objects,computer,printer,,y
 ⌨️,keyboard,Objects,computer,keyboard,,y
-🖱️,computer mouse,Objects,computer,mouse,,y
+🖱️,computer mouse,Objects,computer,computer-mouse,,y
 🖲️,trackball,Objects,computer,trackball,,y
 💽,computer disk,Objects,computer,disk,,y
 💾,floppy disk,Objects,computer,floppy-disk,,y
@@ -3461,7 +3461,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 🏧,ATM sign,Symbols,transport-sign,atm,,y
 🚮,litter in bin sign,Symbols,transport-sign,litter,,y
 🚰,potable water,Symbols,transport-sign,drinking-water,,y
-♿,wheelchair symbol,Symbols,transport-sign,wheelchair,,y
+♿,wheelchair symbol,Symbols,transport-sign,accessible,,y
 🚹,men’s room,Symbols,transport-sign,mens-room,,y
 🚺,women’s room,Symbols,transport-sign,womens-room,,y
 🚻,restroom,Symbols,transport-sign,restroom,,y
@@ -3511,7 +3511,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 ✡️,star of David,Symbols,religion,star-of-david,,y
 ☸️,wheel of dharma,Symbols,religion,dharma-wheel,,y
 ☯️,yin yang,Symbols,religion,yin-yang,,y
-✝️,latin cross,Symbols,religion,cross,,y
+✝️,latin cross,Symbols,religion,christian-cross,,y
 ☦️,orthodox cross,Symbols,religion,orthodox-cross,,y
 ☪️,star and crescent,Symbols,religion,star-crescent,,y
 ☮️,peace symbol,Symbols,religion,peace,,y
@@ -3541,12 +3541,12 @@ emoji,name,group,subgroup,literal,clarity,keep
 ◀️,reverse button,Symbols,av-symbol,rewind,,y
 ⏪,fast reverse button,Symbols,av-symbol,fast-rewind,,y
 ⏮️,last track button,Symbols,av-symbol,prev-track,,y
-🔼,upwards button,Symbols,av-symbol,up,,y
+🔼,upwards button,Symbols,av-symbol,up,,n
 ⏫,fast up button,Symbols,av-symbol,fast-up,,y
-🔽,downwards button,Symbols,av-symbol,down,,y
+🔽,downwards button,Symbols,av-symbol,down,,n
 ⏬,fast down button,Symbols,av-symbol,fast-down,,y
 ⏸️,pause button,Symbols,av-symbol,pause,,y
-⏹️,stop button,Symbols,av-symbol,stop,,y
+⏹️,stop button,Symbols,av-symbol,stop-button,,y
 ⏺️,record button,Symbols,av-symbol,record,,y
 ⏏️,eject button,Symbols,av-symbol,eject,,y
 🎦,cinema,Symbols,av-symbol,cinema,,y
@@ -3618,18 +3618,18 @@ emoji,name,group,subgroup,literal,clarity,keep
 🆎,AB button (blood type),Symbols,alphanum,blood-type-ab,,y
 🅱️,B button (blood type),Symbols,alphanum,blood-type-b,,y
 🆑,CL button,Symbols,alphanum,clear,,y
-🆒,COOL button,Symbols,alphanum,cool,,y
+🆒,COOL button,Symbols,alphanum,cool,,n
 🆓,FREE button,Symbols,alphanum,free,,y
 ℹ️,information,Symbols,alphanum,information,,y
 🆔,ID button,Symbols,alphanum,id,,y
-Ⓜ️,circled M,Symbols,alphanum,metro,,y
+Ⓜ️,circled M,Symbols,alphanum,metro,,n
 🆕,NEW button,Symbols,alphanum,new,,y
 🆖,NG button,Symbols,alphanum,ng,,y
 🅾️,O button (blood type),Symbols,alphanum,blood-type-o,,y
 🆗,OK button,Symbols,alphanum,ok,,y
 🅿️,P button,Symbols,alphanum,parking,,y
 🆘,SOS button,Symbols,alphanum,sos,,y
-🆙,UP! button,Symbols,alphanum,up,,y
+🆙,UP! button,Symbols,alphanum,up,,n
 🆚,VS button,Symbols,alphanum,versus,,y
 🈁,Japanese “here” button,Symbols,alphanum,,,n
 🈂️,Japanese “service charge” button,Symbols,alphanum,,,n

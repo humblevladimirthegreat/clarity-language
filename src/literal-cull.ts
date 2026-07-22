@@ -9,7 +9,7 @@ import { prototypeScore, type LexiconRow } from "./variant-cluster.js";
 /** Preferred Unicode name for clusters where prototypeScore picks the wrong emoji. */
 export const WINNER_OVERRIDES: Record<string, string> = {
   "Smileys & Emotion|face-affection|kiss": "face blowing a kiss",
-  "Smileys & Emotion|face-smiling|laugh": "face with tears of joy",
+  "Smileys & Emotion|face-smiling|laugh": "rolling on the floor laughing",
   "Symbols|other-symbol|check": "check mark button",
   "Travel & Places|sky & weather|lightning": "high voltage",
   "Travel & Places|place-building|castle": "castle",
