@@ -24,7 +24,10 @@ export type CoverageStatus =
   | "metaphor"
   | "function"
   | "gap"
-  | "skip-inflection";
+  | "skip-inflection"
+  | "redundant";
+
+export type LemmaMapKind = "inflection" | "redundant";
 
 export type CoverageRow = {
   lemma: string;
@@ -35,6 +38,8 @@ export type CoverageRow = {
   source: string;
   notes: string;
 };
+
+type LemmaMapEntry = { lemma: string; kind: LemmaMapKind };
 
 type PublishedRow = {
   emoji: string;
@@ -75,16 +80,23 @@ function loadFunctionWords(path: string): Set<string> {
   return words;
 }
 
-function loadLemmaMap(path: string): Map<string, string> {
+function parseLemmaMapKind(raw: string | undefined): LemmaMapKind {
+  const k = (raw ?? "").trim().toLowerCase();
+  if (k === "redundant") return "redundant";
+  // Default / "inflection" / empty → inflection (backward compatible)
+  return "inflection";
+}
+
+function loadLemmaMap(path: string): Map<string, LemmaMapEntry> {
   const content = stripCommentLines(readFileSync(path, "utf8"));
   const { rows } = parseCsv(content);
-  const map = new Map<string, string>();
+  const map = new Map<string, LemmaMapEntry>();
   for (const row of rows) {
     const surface = (row.surface ?? "").trim().toLowerCase();
     const lemma = (row.lemma ?? "").trim().toLowerCase();
     if (!surface || !lemma) continue;
     if (surface === lemma) continue;
-    map.set(surface, lemma);
+    map.set(surface, { lemma, kind: parseLemmaMapKind(row.kind) });
   }
   return map;
 }
@@ -107,24 +119,30 @@ function loadPublished(path: string): PublishedRow[] {
   }));
 }
 
-function resolveLemma(surface: string, lemmaMap: Map<string, string>): string {
+function resolveLemma(
+  surface: string,
+  lemmaMap: Map<string, LemmaMapEntry>,
+): { lemma: string; kind: LemmaMapKind | null } {
   let cur = surface;
   const seen = new Set<string>();
+  let firstKind: LemmaMapKind | null = null;
   while (lemmaMap.has(cur)) {
     if (seen.has(cur)) {
       throw new Error(`Lemma-map cycle involving "${surface}"`);
     }
     seen.add(cur);
-    cur = lemmaMap.get(cur)!;
+    const entry = lemmaMap.get(cur)!;
+    if (firstKind === null) firstKind = entry.kind;
+    cur = entry.lemma;
   }
-  return cur;
+  return { lemma: cur, kind: firstKind };
 }
 
 export function buildCoverage(args: {
   ngsl: string[];
   published: PublishedRow[];
   functionWords: Set<string>;
-  lemmaMap: Map<string, string>;
+  lemmaMap: Map<string, LemmaMapEntry>;
 }): { rows: CoverageRow[]; warnings: string[] } {
   const { ngsl, published, functionWords, lemmaMap } = args;
   const warnings: string[] = [];
@@ -139,7 +157,13 @@ export function buildCoverage(args: {
     } else {
       byLiteral.set(row.literal, row);
     }
-    for (const lemma of parseMetaphoricalCell(row.metaphorical)) {
+    const metaphors = parseMetaphoricalCell(row.metaphorical);
+    if (metaphors.length > 1) {
+      warnings.push(
+        `Row ${row.emoji} (${row.literal}) has ${metaphors.length} metaphorical lemmas; expected at most one`,
+      );
+    }
+    for (const lemma of metaphors) {
       const prev = byMetaphorLemma.get(lemma);
       if (prev && prev.emoji !== row.emoji) {
         warnings.push(
@@ -153,15 +177,17 @@ export function buildCoverage(args: {
 
   // Surface → lemma; first NGSL order wins for lemma rank
   const lemmaFirstIndex = new Map<string, number>();
-  const skipRows: CoverageRow[] = [];
+  const mappedAwayRows: CoverageRow[] = [];
   const surfacesByLemma = new Map<string, string[]>();
 
   ngsl.forEach((surface, index) => {
-    const lemma = resolveLemma(surface, lemmaMap);
+    const { lemma, kind } = resolveLemma(surface, lemmaMap);
     if (surface !== lemma) {
-      skipRows.push({
+      const status: CoverageStatus =
+        kind === "redundant" ? "redundant" : "skip-inflection";
+      mappedAwayRows.push({
         lemma: surface,
-        status: "skip-inflection",
+        status,
         emoji: "",
         literal: "",
         clarity: "",
@@ -182,7 +208,7 @@ export function buildCoverage(args: {
     .map(([lemma]) => lemma);
 
   const claimedByLiteral = new Set<string>();
-  const rows: CoverageRow[] = [...skipRows];
+  const rows: CoverageRow[] = [...mappedAwayRows];
 
   for (const lemma of lemmas) {
     if (functionWords.has(lemma)) {
@@ -289,7 +315,9 @@ function main(): void {
   writeFileSync(outputPath, lines.join("\n") + "\n");
 
   const counts = countByStatus(rows);
-  const contentLemmas = rows.filter((r) => r.status !== "skip-inflection").length;
+  const contentLemmas = rows.filter(
+    (r) => r.status !== "skip-inflection" && r.status !== "redundant",
+  ).length;
   const assigned = (counts.literal ?? 0) + (counts.metaphor ?? 0);
 
   console.log(`Wrote ${rows.length} rows to ${outputPath}`);
@@ -299,7 +327,7 @@ function main(): void {
   console.log(`Lemma-map entries: ${lemmaMap.size}`);
   console.log("Status counts:", counts);
   console.log(
-    `Content lemmas (excl. skip-inflection): ${contentLemmas}; assigned literal|metaphor: ${assigned}`,
+    `Content lemmas (excl. skip-inflection|redundant): ${contentLemmas}; assigned literal|metaphor: ${assigned}`,
   );
 
   for (const w of warnings) {

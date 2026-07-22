@@ -11,7 +11,7 @@ A root dictionary where each kept entry has (in `data/lexicon-published.csv`):
 | emoji | Visual anchor and stable ID for the concept |
 | literal | Immediate English gloss — what a fluent user reads the emoji as (see below) |
 | clarity | Auto-generated Clarity **root** derived from that literal |
-| metaphorical | NGSL lemmas attached as figurative senses (Phase 5); semicolon-separated |
+| metaphorical | At most one NGSL lemma attached as the figurative sense (Phase 5) |
 
 Entries are **roots** only. Part-of-speech prefixes (`/z/`, `/v/`, `/w/`, …) and lexical endings (`-l`, `-m`, …) are applied at use time; this file does not list PoS variants or usage notes.
 
@@ -364,28 +364,28 @@ When distinct concepts share a `literal` within the same `group`/`subgroup` (e.g
 
 ## Phase 5 — NGSL coverage and metaphors
 
-**Goal:** For each **content** NGSL lemma, either match a published `literal` or attach it as a metaphor on exactly one emoji row. Function words are out of scope. Inflections collapse to one core lemma / one row.
+**Goal:** For each **content** NGSL lemma, either match a published `literal`, attach as the single metaphor on exactly one emoji row, or mark **redundant** of another lemma. Function words are out of scope.
 
 ### Rules
 
 | Rule | Detail |
 |------|--------|
-| One lemma → one root | Each NGSL lemma attaches to at most one published row (via `literal` match or `metaphorical`). |
+| One lemma → one root | Each NGSL lemma attaches to at most one published row (via `literal` match or `metaphorical`), unless mapped away as inflection/redundant. |
+| One metaphor per row | `metaphorical` holds **at most one** lemma. Near-duplicates and close synonyms collapse via the lemma map (`kind=redundant`), not extra cell entries. |
 | Metaphors only on emoji rows | Attachments live in `lexicon-published.csv` column `metaphorical` — not a separate NGSL root list. |
 | Function words out of scope | Lemmas in `data/ngsl-function-words.txt` get status `function` and are never auto-matched or metaphor-attached. |
-| Core lemmas only | Inflections map to a single lemma (`went` / `goes` → `go`) via `data/ngsl-lemma-map.csv`. Coverage is lemma-keyed. |
+| Core lemmas only | Inflections and synonym collapses use `data/ngsl-lemma-map.csv`. Coverage is lemma-keyed on the resolved lemma. |
 | Prefer literal | Exact `lemma == literal` wins over metaphor. Do not also list that lemma in `metaphorical`. |
-| No forced attach | Leftovers stay `gap` until a later decision (compounds / non-emoji roots) — do not invent bad metaphors. |
+| No forced attach | Leftovers that are not redundant stay `gap` until a later decision (compounds / non-emoji roots). |
 
 ### `metaphorical` cell format
 
-- Lowercase English **lemmas** only (no `went`, no glosses).
-- **Semicolon-separated**, no spaces required (trim on parse): `go;travel;proceed`
-- Many lemmas may share one emoji; each lemma appears on **at most one** row.
+- Lowercase English **lemma** only (no `went`, no glosses).
+- **At most one** lemma per cell (empty = none yet).
 - A lemma must not duplicate another row’s `literal`.
-- Empty cell = no metaphors yet.
+- Legacy semicolon lists are being collapsed in singleton review waves (largest bags first).
 
-Helpers: `parseMetaphoricalCell` / `formatMetaphoricalCell` in `scripts/ngsl-coverage.ts`.
+Helpers: `parseMetaphoricalCell` / `formatMetaphoricalCell` in `scripts/ngsl-coverage.ts` (still accept `;` for parsing old cells; coverage warns if more than one remains).
 
 ### Inputs
 
@@ -394,7 +394,7 @@ Helpers: `parseMetaphoricalCell` / `formatMetaphoricalCell` in `scripts/ngsl-cov
 | `data/ngsl.csv` | Frequency-ordered English lemmas (`english` column) |
 | `data/lexicon-published.csv` | Published roots; `metaphorical` filled by hand during review waves |
 | `data/ngsl-function-words.txt` | Closed-class denylist (`#` comments allowed) |
-| `data/ngsl-lemma-map.csv` | `surface,lemma` inflection map (`#` comment lines allowed) |
+| `data/ngsl-lemma-map.csv` | `surface,lemma,kind` map (`kind` = `inflection` \| `redundant`; `#` comments allowed) |
 
 ### Coverage report (`data/ngsl-coverage.csv`)
 
@@ -402,31 +402,35 @@ Regenerate anytime with `npm run ngsl-coverage`. Do not hand-edit as source of t
 
 | Column | Values |
 |--------|--------|
-| `lemma` | Core lemma (or surface when `skip-inflection`) |
-| `status` | `literal` · `metaphor` · `function` · `gap` · `skip-inflection` |
+| `lemma` | Core lemma (or mapped-away surface when `skip-inflection` / `redundant`) |
+| `status` | `literal` · `metaphor` · `function` · `gap` · `skip-inflection` · `redundant` |
 | `emoji` / `literal` / `clarity` | Target root when assigned |
 | `source` | `exact` · `metaphorical` · `denylist` · `lemma-map` |
-| `notes` | e.g. `→ go` for skip-inflection |
+| `notes` | e.g. `→ go` / `→ money` for lemma-map rows |
 
-**Auto assignment today:** function denylist + exact literal match + existing `metaphorical` parses. Gaps await metaphor review waves (highest-frequency `gap` rows first).
+**Auto assignment today:** function denylist + lemma map + exact literal match + existing `metaphorical` parses. Gaps await metaphor review waves (highest-frequency `gap` rows first).
 
 ### Review waves
 
 | Wave | Scope | Status |
 |------|-------|--------|
-| 1 | Top 50 frequency `gap` lemmas | **done** |
-| 2+ | Remaining content lemmas (curated + soft-match) | **done** — see coverage stats |
+| NGSL attach 1 | Top 50 frequency `gap` lemmas | **done** |
+| NGSL attach 2+ | Remaining content lemmas (curated + soft-match) | **done** — see coverage stats |
+| Singleton wave 1 | Metaphor bags of size ≥10 → one keep; synonyms → `redundant` | **done** — `scripts/wave1-metaphor-singleton.py` |
+| Singleton wave 2+ | Remaining multi-lemma `metaphorical` cells | **todo** |
 
-**Pipeline:** edit `data/ngsl-metaphor-extra.csv` → `npm run ngsl-metaphor-apply` → `npm run ngsl-coverage`.
+**Pipeline (attach era):** edit `data/ngsl-metaphor-extra.csv` → `npm run ngsl-metaphor-apply` → `npm run ngsl-coverage`.
+
+**Do not re-run** `ngsl-metaphor-apply` until it enforces one lemma per row — it still rebuilds semicolon bags from the extra map.
 
 1. Sort `status=gap` by NGSL order (file order ≈ frequency).
-2. For each lemma, pick one published emoji or leave `gap`.
-3. Append lemma to that row’s `metaphorical` (semicolon list) via the apply script / map.
-4. Re-run `npm run ngsl-coverage` and fix uniqueness warnings.
+2. For each lemma, pick one published emoji, mark redundant of another lemma, or leave `gap`.
+3. Set that row’s `metaphorical` to the single keep lemma (or clear it).
+4. Re-run `npm run ngsl-coverage` and fix uniqueness / multi-metaphor warnings.
 
 Leftover `gap` rows are intentional (no forced attach). Revisit later for compounds / non-emoji roots.
 
-**Coverage after waves (approx.):** ~223 `literal` · ~1,400 `metaphor` · ~170 `function` · ~1,000 `gap`. Exact counts: `npm run ngsl-coverage`.
+**Coverage after singleton wave 1 (approx.):** ~223 `literal` · ~890 `metaphor` · ~570 `redundant` · ~120 `function` · ~1,000 `gap`. Exact counts: `npm run ngsl-coverage`.
 
 ---
 
@@ -451,7 +455,7 @@ Leftover `gap` rows are intentional (no forced attach). Revisit later for compou
 | `emoji` | yes | Glyph |
 | `literal` | yes | Immediate-reading gloss |
 | `clarity` | phase 4 | Auto root from `literal` |
-| `metaphorical` | phase 5 | Semicolon-separated NGSL lemmas (figurative); empty until review |
+| `metaphorical` | phase 5 | At most one NGSL lemma (figurative); empty if none |
 
 ## Tooling
 
