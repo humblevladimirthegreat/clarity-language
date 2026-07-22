@@ -91,7 +91,7 @@ This is separate from the **near-duplicate cull** (Phase 3): a row can be the on
 |-------|--------|
 | Skeleton (`lexicon.csv` one row per emoji) | **done** |
 | 1. Variant collapse | **done** |
-| 2. Literal glossing | **in progress** — Symbols **done** (206 glossed, 18 dropped); Objects still has scripted drafts |
+| 2. Literal glossing | **in progress** — all groups **done** except People & Body (2,418 rows); Symbols + 8 others glossed |
 | 3. Cull (`keep`) | not started |
 | 4. Clarity roots | not started |
 
@@ -100,14 +100,14 @@ emojis.csv  →  lexicon.csv (skeleton)          ✓ done
                  ↓
          1. collapse variants (mechanical)     ✓ done
                  ↓
-         2. gloss literals (curated)         ← in progress (Symbols ✓)
+         2. gloss literals (curated)         ← in progress (all except People & Body ✓)
                  ↓
          3. cull: duplicates + no-English-drop (keep=y/n)
                  ↓
          4. generate clarity roots
 ```
 
-**What exists today:** The skeleton is complete. Phase 1 tooling (`scripts/collapse-variants.ts`, `src/variant-cluster.ts`) clusters variant rows and propagates `literal` from prototypes. Run `npm run collapse-variants report` to audit clusters; after glossing a prototype row in Phase 2, run `npm run fill-literals` (alias for `collapse-variants propagate`) to fan out to variants. **Symbols** (224 rows) is fully glossed: 206 reviewed literals, 18 `keep=n` drops (17 Japanese ideograph buttons + 〽️ part-alternation mark). Objects still has scripted draft literals from the earlier mistaken auto-fill. `clarity` is empty everywhere.
+**What exists today:** The skeleton is complete. Phase 1 tooling (`scripts/collapse-variants.ts`, `src/variant-cluster.ts`) clusters variant rows and propagates `literal` from prototypes. Run `npm run collapse-variants report` to audit clusters; after glossing a prototype row in Phase 2, run `npm run fill-literals` (alias for `collapse-variants propagate`) to fan out to variants. **Phase 2 complete** for Symbols (206 glossed, 18 dropped), Smileys & Emotion (171), Travel & Places (219), Activities (85), Objects (266), Animals & Nature (160), Food & Drink (130 glossed, 1 dropped: oden), Flags (270), and Component (9). **People & Body** (2,418) not yet glossed. `clarity` is empty everywhere.
 
 ---
 
@@ -191,19 +191,19 @@ During glossing, mark obvious drops mentally (or tentatively `keep=n`); confirm 
 | Group | Rows | Tier | Status |
 |-------|------|------|--------|
 | Symbols | 224 | B | done |
-| Smileys & Emotion | 171 | B | |
+| Smileys & Emotion | 171 | B | done |
 | People & Body | 2,418 | B | |
-| Travel & Places | 219 | B | |
-| Activities | 85 | B | |
-| Objects | 266 | A + B | re-gloss |
-| Animals & Nature | 160 | A | |
-| Food & Drink | 131 | A | |
-| Flags | 270 | A | |
-| Component | 9 | A | |
+| Travel & Places | 219 | B | done |
+| Activities | 85 | B | done |
+| Objects | 266 | A + B | done |
+| Animals & Nature | 160 | A | done |
+| Food & Drink | 131 | A | done |
+| Flags | 270 | A | done |
+| Component | 9 | A | done |
 
 Status values: empty · `draft` · `review` · `done` · `re-gloss` (scripted literals that need human pass).
 
-**Note:** Objects were briefly auto-filled from normalized `name`; treat those literals as **drafts to replace**, not finished glosses. Symbols has been re-glossed per Tier B briefs.
+**Note:** Phase 2 glossing for Objects and Symbols uses meaning-first readings (Tier B subgroups) and name-normalized drafts with overrides (Tier A). People & Body remains unglossed.
 
 ---
 
@@ -262,6 +262,7 @@ No `metaphorical` column yet. Add it when metaphors are in scope.
 |--------|------|
 | `scripts/collapse-variants.ts` | Phase 1: cluster report + propagate prototype `literal` to variants (`report` / `propagate`) |
 | `scripts/fill-literals.ts` | Alias for `collapse-variants propagate` — run after glossing prototype rows |
+| `scripts/phase2-gloss.ts` | Phase 2 bulk glossing (`npx tsx scripts/phase2-gloss.ts`; `--dry-run` to preview) |
 | Lexicon converter (to be wired) | Phase 4: `literal` → `clarity` for `keep=y` rows |
 
 Manual editing in `data/lexicon.csv` is the source of truth for `literal`. Treat `docs/language-reference.md` as grammar/phonology authority; this doc owns lexicon process only.
@@ -276,4 +277,4 @@ Manual editing in `data/lexicon.csv` is the source of truth for `literal`. Treat
 
 ## Immediate deliverable
 
-**Next:** Phase 2 on **Smileys & Emotion** (171 rows, Tier B). Then People & Body, Travel & Places, Activities, Objects (re-gloss sign-like subgroups), and Tier A groups (Animals, Food, Flags, Component).
+**Next:** Phase 2 on **People & Body** (2,418 rows, Tier B — gloss prototype rows per cluster, then `npm run fill-literals` to propagate skin-tone/gender variants). Then Phase 3 cull across all groups.
