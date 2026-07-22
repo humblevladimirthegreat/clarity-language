@@ -93,8 +93,8 @@ This is separate from the **near-duplicate cull** (Phase 3): a row can be the on
 | 1. Variant collapse | **done** |
 | 2. Literal glossing | **done** |
 | 2.5. People & Body glossing | **done** — 2,418 rows glossed |
-| 3. Cull (`keep`) | **next** |
-| 4. Clarity roots | not started |
+| 3. Cull (`keep`) | **done** — 1,651 kept · 2,302 dropped |
+| 4. Clarity roots | **next** |
 
 ```
 emojis.csv  →  lexicon.csv (skeleton)          ✓ done
@@ -105,12 +105,12 @@ emojis.csv  →  lexicon.csv (skeleton)          ✓ done
                  ↓
          2.5. People & Body (curated, waves)  ✓ done
                  ↓
-         3. cull: duplicates + no-English-drop (keep=y/n)  ← next
+         3. cull: duplicates + no-English-drop (keep=y/n)  ✓ done
                  ↓
-         4. generate clarity roots
+         4. generate clarity roots  ← next
 ```
 
-**What exists today:** The skeleton is complete. Phase 1 tooling (`scripts/collapse-variants.ts`, `src/variant-cluster.ts`) clusters variant rows and propagates `literal` from prototypes. Run `npm run collapse-variants report` to audit clusters; after glossing a prototype row, run `npm run fill-literals` (alias for `collapse-variants propagate`) to fan out to variants. **Phase 2 complete** for Symbols (206 glossed, 18 dropped), Smileys & Emotion (171), Travel & Places (219), Activities (85), Objects (266), Animals & Nature (160), Food & Drink (130 glossed, 1 dropped: oden), Flags (270), and Component (9). **Phase 2.5 complete** for People & Body (2,418 glossed). All literal glossing is done; `clarity` is empty everywhere.
+**What exists today:** Phase 1–2.5 complete (all groups glossed). **Phase 3 complete:** every row has `keep=y` or `keep=n` — **1,651** published roots (`keep=y`), **2,302** dropped (19 no-English-association + 2,283 duplicate cull). `clarity` is still empty. Run `npm run phase3-cull audit` to validate the keep column.
 
 ---
 
@@ -290,6 +290,45 @@ Many kept emojis share a `literal` after Phases 1–2. Pick which **emoji** to k
 
 A row can be dropped under A without being a duplicate, or culled under B while still being English-accessible.
 
+### Cull-one policy
+
+When distinct concepts share a `literal` within the same `group`/`subgroup` (e.g. kick-scooter and motor-scooter both `scooter`), **do not split literals** — keep one emoji, cull the rest. Revisit literal splits only if a kept entry is genuinely ambiguous after Phase 4.
+
+### Tooling
+
+`npm run phase3-cull` (`scripts/phase3-cull.ts`, logic in `src/literal-cull.ts`):
+
+- `npm run phase3-cull report` — duplicate-cluster stats; `--verbose` lists all clusters; `--group="People & Body"` filters
+- `npm run phase3-cull apply` — set `keep=y` on singletons + cluster winners, `keep=n` on losers and Drop A; `--dry-run` previews; `--group` for scoped apply
+- `npm run phase3-cull audit` — validate: all rows reviewed, no duplicate `keep=y` per cluster, Drop A rows correct
+
+**Winner selection:** `prototypeScore` from Phase 1 (prefers unqualified / default presentation). Override table in `src/literal-cull.ts` for clusters where score picks the wrong iconic emoji:
+
+| Cluster key | Winner | Rationale |
+|-------------|--------|-----------|
+| `Smileys & Emotion\|face-affection\|kiss` | face blowing a kiss (😘) | Dominant everyday reading |
+| `Smileys & Emotion\|face-smiling\|laugh` | face with tears of joy (😂) | Dominant reading |
+| `Symbols\|other-symbol\|check` | check mark button (✅) | Dominant UI reading |
+| `Travel & Places\|sky & weather\|lightning` | high voltage (⚡) | Dominant reading |
+| `Travel & Places\|place-building\|castle` | castle (🏰) | Generic over Japanese variant |
+| `Travel & Places\|place-building\|post-office` | post office (🏤) | Generic over Japanese variant |
+| `People & Body\|hand-fingers-open\|raised-hand` | raised hand | Over raised back of hand |
+| `People & Body\|hand-single-finger\|point-up` | index pointing up | Over backhand variant |
+| `People & Body\|person-gesture\|deaf` | deaf person | Gender-neutral policy |
+| `People & Body\|person-role\|pregnant` | pregnant person | Gender-neutral policy |
+| `People & Body\|person-activity\|partying` | people with bunny ears | Unqualified default |
+
+### Results
+
+| Metric | Count |
+|--------|------:|
+| Total seed rows | 3,953 |
+| `keep=y` (published) | 1,651 |
+| `keep=n` (dropped) | 2,302 |
+| Drop A (no English association) | 19 |
+| Duplicate clusters culled | 193 |
+| Singleton `keep=y` | 1,458 |
+
 ---
 
 ## Phase 4 — Clarity roots
@@ -326,6 +365,7 @@ No `metaphorical` column yet. Add it when metaphors are in scope.
 | `scripts/fill-literals.ts` | Alias for `collapse-variants propagate` — run after glossing prototype rows |
 | `scripts/phase2-gloss.ts` | Phase 2 bulk glossing (`npx tsx scripts/phase2-gloss.ts`; `--dry-run` to preview) |
 | `scripts/phase2.5-gloss.ts` | Phase 2.5 People & Body glossing (`npm run phase2.5-gloss`; `--wave=1\|2\|3\|all`) |
+| `scripts/phase3-cull.ts` | Phase 3 cull (`npm run phase3-cull`; `report` / `apply` / `audit`) |
 | Lexicon converter (to be wired) | Phase 4: `literal` → `clarity` for `keep=y` rows |
 
 Manual editing in `data/lexicon.csv` is the source of truth for `literal`. Treat `docs/language-reference.md` as grammar/phonology authority; this doc owns lexicon process only.
@@ -340,4 +380,4 @@ Manual editing in `data/lexicon.csv` is the source of truth for `literal`. Treat
 
 ## Immediate deliverable
 
-**Next:** [Phase 3](#phase-3--cull-keepy--keepn) — cull across all groups: set `keep=n` for no-English-association rows and near-duplicate literals; pick the most distinctive emoji per `literal` cluster. Then Phase 4 Clarity roots.
+**Next:** [Phase 4](#phase-4--clarity-roots) — generate Clarity roots from `literal` for `keep=y` rows.

@@ -22,6 +22,7 @@
     "collapse-variants": "tsx scripts/collapse-variants.ts",
     "fill-literals": "tsx scripts/fill-literals.ts",
     "phase2.5-gloss": "tsx scripts/phase2.5-gloss.ts",
+    "phase3-cull": "tsx scripts/phase3-cull.ts",
     "web": "npx --yes serve . -p 4173"
   },
   "engines": {
