@@ -14,7 +14,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 😊,smiling face with smiling eyes,Smileys & Emotion,face-smiling,smile,,y
 😇,smiling face with halo,Smileys & Emotion,face-smiling,halo,,y
 🥰,smiling face with hearts,Smileys & Emotion,face-affection,love,,y
-😍,smiling face with heart-eyes,Smileys & Emotion,face-affection,heart-eyes,,y
+😍,smiling face with heart-eyes,Smileys & Emotion,face-affection,crush,,y
 🤩,star-struck,Smileys & Emotion,face-affection,starstruck,,y
 😘,face blowing a kiss,Smileys & Emotion,face-affection,blow-kiss,,y
 😗,kissing face,Smileys & Emotion,face-affection,kiss,,n
@@ -35,11 +35,11 @@ emoji,name,group,subgroup,literal,clarity,keep
 🤫,shushing face,Smileys & Emotion,face-hand,shush,,y
 🤔,thinking face,Smileys & Emotion,face-hand,think,,y
 🫡,saluting face,Smileys & Emotion,face-hand,salute,,y
-🤐,zipper-mouth face,Smileys & Emotion,face-neutral-skeptical,zip-mouth,,y
+🤐,zipper-mouth face,Smileys & Emotion,face-neutral-skeptical,secret,,y
 🤨,face with raised eyebrow,Smileys & Emotion,face-neutral-skeptical,skeptical,,y
 😐,neutral face,Smileys & Emotion,face-neutral-skeptical,neutral,,y
 😑,expressionless face,Smileys & Emotion,face-neutral-skeptical,blank,,y
-😶,face without mouth,Smileys & Emotion,face-neutral-skeptical,no-mouth,,y
+😶,face without mouth,Smileys & Emotion,face-neutral-skeptical,speechless,,y
 🫥,dotted line face,Smileys & Emotion,face-neutral-skeptical,invisible,,y
 😶‍🌫️,face in clouds,Smileys & Emotion,face-neutral-skeptical,,,n
 😏,smirking face,Smileys & Emotion,face-neutral-skeptical,smirk,,y
@@ -49,8 +49,8 @@ emoji,name,group,subgroup,literal,clarity,keep
 😮‍💨,face exhaling,Smileys & Emotion,face-neutral-skeptical,sigh,,y
 🤥,lying face,Smileys & Emotion,face-neutral-skeptical,lie,,y
 🫨,shaking face,Smileys & Emotion,face-neutral-skeptical,,,n
-🙂‍↔️,head shaking horizontally,Smileys & Emotion,face-neutral-skeptical,head-shake-no,,y
-🙂‍↕️,head shaking vertically,Smileys & Emotion,face-neutral-skeptical,head-shake-yes,,y
+🙂‍↔️,head shaking horizontally,Smileys & Emotion,face-neutral-skeptical,no,,y
+🙂‍↕️,head shaking vertically,Smileys & Emotion,face-neutral-skeptical,yes,,y
 😌,relieved face,Smileys & Emotion,face-sleepy,relief,,y
 😔,pensive face,Smileys & Emotion,face-sleepy,pensive,,y
 😪,sleepy face,Smileys & Emotion,face-sleepy,sleepy,,y
@@ -86,7 +86,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 😳,flushed face,Smileys & Emotion,face-concerned,blush,,y
 🫪,distorted face,Smileys & Emotion,face-concerned,,,n
 🥺,pleading face,Smileys & Emotion,face-concerned,pleading,,y
-🥹,face holding back tears,Smileys & Emotion,face-concerned,holding-tears,,y
+🥹,face holding back tears,Smileys & Emotion,face-concerned,touched,,y
 😦,frowning face with open mouth,Smileys & Emotion,face-concerned,frown,,n
 😧,anguished face,Smileys & Emotion,face-concerned,,,n
 😨,fearful face,Smileys & Emotion,face-concerned,fear,,y
@@ -116,7 +116,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 👺,goblin,Smileys & Emotion,face-costume,goblin,,y
 👻,ghost,Smileys & Emotion,face-costume,ghost,,y
 👽,alien,Smileys & Emotion,face-costume,alien,,y
-👾,alien monster,Smileys & Emotion,face-costume,alien-monster,,y
+👾,alien monster,Smileys & Emotion,face-costume,,,n
 🤖,robot,Smileys & Emotion,face-costume,robot,,y
 😺,grinning cat,Smileys & Emotion,cat-face,,,n
 😸,grinning cat with smiling eyes,Smileys & Emotion,cat-face,,,n
@@ -135,14 +135,14 @@ emoji,name,group,subgroup,literal,clarity,keep
 💝,heart with ribbon,Smileys & Emotion,heart,,,n
 💖,sparkling heart,Smileys & Emotion,heart,,,n
 💗,growing heart,Smileys & Emotion,heart,,,n
-💓,beating heart,Smileys & Emotion,heart,beating-heart,,y
+💓,beating heart,Smileys & Emotion,heart,heartbeat,,y
 💞,revolving hearts,Smileys & Emotion,heart,,,n
-💕,two hearts,Smileys & Emotion,heart,two-hearts,,y
+💕,two hearts,Smileys & Emotion,heart,,,n
 💟,heart decoration,Smileys & Emotion,heart,,,n
 ❣️,heart exclamation,Smileys & Emotion,heart,,,n
 💔,broken heart,Smileys & Emotion,heart,broken-heart,,y
-❤️‍🔥,heart on fire,Smileys & Emotion,heart,heart-fire,,y
-❤️‍🩹,mending heart,Smileys & Emotion,heart,mending-heart,,y
+❤️‍🔥,heart on fire,Smileys & Emotion,heart,passion,,y
+❤️‍🩹,mending heart,Smileys & Emotion,heart,healing,,y
 ❤️,red heart,Smileys & Emotion,heart,heart,,y
 🩷,pink heart,Smileys & Emotion,heart,,,n
 🧡,orange heart,Smileys & Emotion,heart,,,n
@@ -155,7 +155,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 🖤,black heart,Smileys & Emotion,heart,,,n
 🩶,grey heart,Smileys & Emotion,heart,,,n
 🤍,white heart,Smileys & Emotion,heart,,,n
-💋,kiss mark,Smileys & Emotion,emotion,kiss-mark,,y
+💋,kiss mark,Smileys & Emotion,emotion,lips,,y
 💯,hundred points,Smileys & Emotion,emotion,hundred,,y
 💢,anger symbol,Smileys & Emotion,emotion,anger,,y
 🫯,fight cloud,Smileys & Emotion,emotion,fight,,y
@@ -167,7 +167,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 💬,speech balloon,Smileys & Emotion,emotion,speech,,y
 👁️‍🗨️,eye in speech bubble,Smileys & Emotion,emotion,witness,,y
 🗨️,left speech bubble,Smileys & Emotion,emotion,,,n
-🗯️,right anger bubble,Smileys & Emotion,emotion,anger-speech,,y
+🗯️,right anger bubble,Smileys & Emotion,emotion,rant,,y
 💭,thought balloon,Smileys & Emotion,emotion,thought,,y
 💤,ZZZ,Smileys & Emotion,emotion,sleep,,y
 👋,waving hand,People & Body,hand-fingers-open,wave,,y
@@ -176,24 +176,24 @@ emoji,name,group,subgroup,literal,clarity,keep
 👋🏽,waving hand: medium skin tone,People & Body,hand-fingers-open,wave,,n
 👋🏾,waving hand: medium-dark skin tone,People & Body,hand-fingers-open,wave,,n
 👋🏿,waving hand: dark skin tone,People & Body,hand-fingers-open,wave,,n
-🤚,raised back of hand,People & Body,hand-fingers-open,raised-hand,,n
-🤚🏻,raised back of hand: light skin tone,People & Body,hand-fingers-open,raised-hand,,n
-🤚🏼,raised back of hand: medium-light skin tone,People & Body,hand-fingers-open,raised-hand,,n
-🤚🏽,raised back of hand: medium skin tone,People & Body,hand-fingers-open,raised-hand,,n
-🤚🏾,raised back of hand: medium-dark skin tone,People & Body,hand-fingers-open,raised-hand,,n
-🤚🏿,raised back of hand: dark skin tone,People & Body,hand-fingers-open,raised-hand,,n
+🤚,raised back of hand,People & Body,hand-fingers-open,hand,,n
+🤚🏻,raised back of hand: light skin tone,People & Body,hand-fingers-open,hand,,n
+🤚🏼,raised back of hand: medium-light skin tone,People & Body,hand-fingers-open,hand,,n
+🤚🏽,raised back of hand: medium skin tone,People & Body,hand-fingers-open,hand,,n
+🤚🏾,raised back of hand: medium-dark skin tone,People & Body,hand-fingers-open,hand,,n
+🤚🏿,raised back of hand: dark skin tone,People & Body,hand-fingers-open,hand,,n
 🖐️,hand with fingers splayed,People & Body,hand-fingers-open,splayed-hand,,n
 🖐🏻,hand with fingers splayed: light skin tone,People & Body,hand-fingers-open,splayed-hand,,n
 🖐🏼,hand with fingers splayed: medium-light skin tone,People & Body,hand-fingers-open,splayed-hand,,n
 🖐🏽,hand with fingers splayed: medium skin tone,People & Body,hand-fingers-open,splayed-hand,,n
 🖐🏾,hand with fingers splayed: medium-dark skin tone,People & Body,hand-fingers-open,splayed-hand,,n
 🖐🏿,hand with fingers splayed: dark skin tone,People & Body,hand-fingers-open,splayed-hand,,n
-✋,raised hand,People & Body,hand-fingers-open,raised-hand,,y
-✋🏻,raised hand: light skin tone,People & Body,hand-fingers-open,raised-hand,,n
-✋🏼,raised hand: medium-light skin tone,People & Body,hand-fingers-open,raised-hand,,n
-✋🏽,raised hand: medium skin tone,People & Body,hand-fingers-open,raised-hand,,n
-✋🏾,raised hand: medium-dark skin tone,People & Body,hand-fingers-open,raised-hand,,n
-✋🏿,raised hand: dark skin tone,People & Body,hand-fingers-open,raised-hand,,n
+✋,raised hand,People & Body,hand-fingers-open,hand,,y
+✋🏻,raised hand: light skin tone,People & Body,hand-fingers-open,hand,,n
+✋🏼,raised hand: medium-light skin tone,People & Body,hand-fingers-open,hand,,n
+✋🏽,raised hand: medium skin tone,People & Body,hand-fingers-open,hand,,n
+✋🏾,raised hand: medium-dark skin tone,People & Body,hand-fingers-open,hand,,n
+✋🏿,raised hand: dark skin tone,People & Body,hand-fingers-open,hand,,n
 🖖,vulcan salute,People & Body,hand-fingers-open,,,n
 🖖🏻,vulcan salute: light skin tone,People & Body,hand-fingers-open,,,n
 🖖🏼,vulcan salute: medium-light skin tone,People & Body,hand-fingers-open,,,n
@@ -236,12 +236,12 @@ emoji,name,group,subgroup,literal,clarity,keep
 🫸🏽,rightwards pushing hand: medium skin tone,People & Body,hand-fingers-open,,,n
 🫸🏾,rightwards pushing hand: medium-dark skin tone,People & Body,hand-fingers-open,,,n
 🫸🏿,rightwards pushing hand: dark skin tone,People & Body,hand-fingers-open,,,n
-👌,OK hand,People & Body,hand-fingers-partial,ok-sign,,y
-👌🏻,OK hand: light skin tone,People & Body,hand-fingers-partial,ok-sign,,n
-👌🏼,OK hand: medium-light skin tone,People & Body,hand-fingers-partial,ok-sign,,n
-👌🏽,OK hand: medium skin tone,People & Body,hand-fingers-partial,ok-sign,,n
-👌🏾,OK hand: medium-dark skin tone,People & Body,hand-fingers-partial,ok-sign,,n
-👌🏿,OK hand: dark skin tone,People & Body,hand-fingers-partial,ok-sign,,n
+👌,OK hand,People & Body,hand-fingers-partial,ok,,y
+👌🏻,OK hand: light skin tone,People & Body,hand-fingers-partial,ok,,n
+👌🏼,OK hand: medium-light skin tone,People & Body,hand-fingers-partial,ok,,n
+👌🏽,OK hand: medium skin tone,People & Body,hand-fingers-partial,ok,,n
+👌🏾,OK hand: medium-dark skin tone,People & Body,hand-fingers-partial,ok,,n
+👌🏿,OK hand: dark skin tone,People & Body,hand-fingers-partial,ok,,n
 🤌,pinched fingers,People & Body,hand-fingers-partial,,,n
 🤌🏻,pinched fingers: light skin tone,People & Body,hand-fingers-partial,,,n
 🤌🏼,pinched fingers: medium-light skin tone,People & Body,hand-fingers-partial,,,n
@@ -380,12 +380,12 @@ emoji,name,group,subgroup,literal,clarity,keep
 🙌🏽,raising hands: medium skin tone,People & Body,hands,raise-hands,,n
 🙌🏾,raising hands: medium-dark skin tone,People & Body,hands,raise-hands,,n
 🙌🏿,raising hands: dark skin tone,People & Body,hands,raise-hands,,n
-🫶,heart hands,People & Body,hands,heart-hands,,y
-🫶🏻,heart hands: light skin tone,People & Body,hands,heart-hands,,n
-🫶🏼,heart hands: medium-light skin tone,People & Body,hands,heart-hands,,n
-🫶🏽,heart hands: medium skin tone,People & Body,hands,heart-hands,,n
-🫶🏾,heart hands: medium-dark skin tone,People & Body,hands,heart-hands,,n
-🫶🏿,heart hands: dark skin tone,People & Body,hands,heart-hands,,n
+🫶,heart hands,People & Body,hands,care,,y
+🫶🏻,heart hands: light skin tone,People & Body,hands,care,,n
+🫶🏼,heart hands: medium-light skin tone,People & Body,hands,care,,n
+🫶🏽,heart hands: medium skin tone,People & Body,hands,care,,n
+🫶🏾,heart hands: medium-dark skin tone,People & Body,hands,care,,n
+🫶🏿,heart hands: dark skin tone,People & Body,hands,care,,n
 👐,open hands,People & Body,hands,,,n
 👐🏻,open hands: light skin tone,People & Body,hands,,,n
 👐🏼,open hands: medium-light skin tone,People & Body,hands,,,n
@@ -487,7 +487,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 👃🏾,nose: medium-dark skin tone,People & Body,body-parts,nose,,n
 👃🏿,nose: dark skin tone,People & Body,body-parts,nose,,n
 🧠,brain,People & Body,body-parts,brain,,y
-🫀,anatomical heart,People & Body,body-parts,anatomical-heart,,y
+🫀,anatomical heart,People & Body,body-parts,,,n
 🫁,lungs,People & Body,body-parts,lungs,,y
 🦷,tooth,People & Body,body-parts,tooth,,y
 🦴,bone,People & Body,body-parts,bone,,y
@@ -700,60 +700,60 @@ emoji,name,group,subgroup,literal,clarity,keep
 🙎🏽‍♀️,woman pouting: medium skin tone,People & Body,person-gesture,pout,,n
 🙎🏾‍♀️,woman pouting: medium-dark skin tone,People & Body,person-gesture,pout,,n
 🙎🏿‍♀️,woman pouting: dark skin tone,People & Body,person-gesture,pout,,n
-🙅,person gesturing NO,People & Body,person-gesture,gesture-no,,y
-🙅🏻,person gesturing NO: light skin tone,People & Body,person-gesture,gesture-no,,n
-🙅🏼,person gesturing NO: medium-light skin tone,People & Body,person-gesture,gesture-no,,n
-🙅🏽,person gesturing NO: medium skin tone,People & Body,person-gesture,gesture-no,,n
-🙅🏾,person gesturing NO: medium-dark skin tone,People & Body,person-gesture,gesture-no,,n
-🙅🏿,person gesturing NO: dark skin tone,People & Body,person-gesture,gesture-no,,n
-🙅‍♂️,man gesturing NO,People & Body,person-gesture,gesture-no,,n
-🙅🏻‍♂️,man gesturing NO: light skin tone,People & Body,person-gesture,gesture-no,,n
-🙅🏼‍♂️,man gesturing NO: medium-light skin tone,People & Body,person-gesture,gesture-no,,n
-🙅🏽‍♂️,man gesturing NO: medium skin tone,People & Body,person-gesture,gesture-no,,n
-🙅🏾‍♂️,man gesturing NO: medium-dark skin tone,People & Body,person-gesture,gesture-no,,n
-🙅🏿‍♂️,man gesturing NO: dark skin tone,People & Body,person-gesture,gesture-no,,n
-🙅‍♀️,woman gesturing NO,People & Body,person-gesture,gesture-no,,n
-🙅🏻‍♀️,woman gesturing NO: light skin tone,People & Body,person-gesture,gesture-no,,n
-🙅🏼‍♀️,woman gesturing NO: medium-light skin tone,People & Body,person-gesture,gesture-no,,n
-🙅🏽‍♀️,woman gesturing NO: medium skin tone,People & Body,person-gesture,gesture-no,,n
-🙅🏾‍♀️,woman gesturing NO: medium-dark skin tone,People & Body,person-gesture,gesture-no,,n
-🙅🏿‍♀️,woman gesturing NO: dark skin tone,People & Body,person-gesture,gesture-no,,n
-🙆,person gesturing OK,People & Body,person-gesture,gesture-ok,,y
-🙆🏻,person gesturing OK: light skin tone,People & Body,person-gesture,gesture-ok,,n
-🙆🏼,person gesturing OK: medium-light skin tone,People & Body,person-gesture,gesture-ok,,n
-🙆🏽,person gesturing OK: medium skin tone,People & Body,person-gesture,gesture-ok,,n
-🙆🏾,person gesturing OK: medium-dark skin tone,People & Body,person-gesture,gesture-ok,,n
-🙆🏿,person gesturing OK: dark skin tone,People & Body,person-gesture,gesture-ok,,n
-🙆‍♂️,man gesturing OK,People & Body,person-gesture,gesture-ok,,n
-🙆🏻‍♂️,man gesturing OK: light skin tone,People & Body,person-gesture,gesture-ok,,n
-🙆🏼‍♂️,man gesturing OK: medium-light skin tone,People & Body,person-gesture,gesture-ok,,n
-🙆🏽‍♂️,man gesturing OK: medium skin tone,People & Body,person-gesture,gesture-ok,,n
-🙆🏾‍♂️,man gesturing OK: medium-dark skin tone,People & Body,person-gesture,gesture-ok,,n
-🙆🏿‍♂️,man gesturing OK: dark skin tone,People & Body,person-gesture,gesture-ok,,n
-🙆‍♀️,woman gesturing OK,People & Body,person-gesture,gesture-ok,,n
-🙆🏻‍♀️,woman gesturing OK: light skin tone,People & Body,person-gesture,gesture-ok,,n
-🙆🏼‍♀️,woman gesturing OK: medium-light skin tone,People & Body,person-gesture,gesture-ok,,n
-🙆🏽‍♀️,woman gesturing OK: medium skin tone,People & Body,person-gesture,gesture-ok,,n
-🙆🏾‍♀️,woman gesturing OK: medium-dark skin tone,People & Body,person-gesture,gesture-ok,,n
-🙆🏿‍♀️,woman gesturing OK: dark skin tone,People & Body,person-gesture,gesture-ok,,n
-💁,person tipping hand,People & Body,person-gesture,tipping-hand,,y
-💁🏻,person tipping hand: light skin tone,People & Body,person-gesture,tipping-hand,,n
-💁🏼,person tipping hand: medium-light skin tone,People & Body,person-gesture,tipping-hand,,n
-💁🏽,person tipping hand: medium skin tone,People & Body,person-gesture,tipping-hand,,n
-💁🏾,person tipping hand: medium-dark skin tone,People & Body,person-gesture,tipping-hand,,n
-💁🏿,person tipping hand: dark skin tone,People & Body,person-gesture,tipping-hand,,n
-💁‍♂️,man tipping hand,People & Body,person-gesture,tipping-hand,,n
-💁🏻‍♂️,man tipping hand: light skin tone,People & Body,person-gesture,tipping-hand,,n
-💁🏼‍♂️,man tipping hand: medium-light skin tone,People & Body,person-gesture,tipping-hand,,n
-💁🏽‍♂️,man tipping hand: medium skin tone,People & Body,person-gesture,tipping-hand,,n
-💁🏾‍♂️,man tipping hand: medium-dark skin tone,People & Body,person-gesture,tipping-hand,,n
-💁🏿‍♂️,man tipping hand: dark skin tone,People & Body,person-gesture,tipping-hand,,n
-💁‍♀️,woman tipping hand,People & Body,person-gesture,tipping-hand,,n
-💁🏻‍♀️,woman tipping hand: light skin tone,People & Body,person-gesture,tipping-hand,,n
-💁🏼‍♀️,woman tipping hand: medium-light skin tone,People & Body,person-gesture,tipping-hand,,n
-💁🏽‍♀️,woman tipping hand: medium skin tone,People & Body,person-gesture,tipping-hand,,n
-💁🏾‍♀️,woman tipping hand: medium-dark skin tone,People & Body,person-gesture,tipping-hand,,n
-💁🏿‍♀️,woman tipping hand: dark skin tone,People & Body,person-gesture,tipping-hand,,n
+🙅,person gesturing NO,People & Body,person-gesture,,,n
+🙅🏻,person gesturing NO: light skin tone,People & Body,person-gesture,,,n
+🙅🏼,person gesturing NO: medium-light skin tone,People & Body,person-gesture,,,n
+🙅🏽,person gesturing NO: medium skin tone,People & Body,person-gesture,,,n
+🙅🏾,person gesturing NO: medium-dark skin tone,People & Body,person-gesture,,,n
+🙅🏿,person gesturing NO: dark skin tone,People & Body,person-gesture,,,n
+🙅‍♂️,man gesturing NO,People & Body,person-gesture,,,n
+🙅🏻‍♂️,man gesturing NO: light skin tone,People & Body,person-gesture,,,n
+🙅🏼‍♂️,man gesturing NO: medium-light skin tone,People & Body,person-gesture,,,n
+🙅🏽‍♂️,man gesturing NO: medium skin tone,People & Body,person-gesture,,,n
+🙅🏾‍♂️,man gesturing NO: medium-dark skin tone,People & Body,person-gesture,,,n
+🙅🏿‍♂️,man gesturing NO: dark skin tone,People & Body,person-gesture,,,n
+🙅‍♀️,woman gesturing NO,People & Body,person-gesture,,,n
+🙅🏻‍♀️,woman gesturing NO: light skin tone,People & Body,person-gesture,,,n
+🙅🏼‍♀️,woman gesturing NO: medium-light skin tone,People & Body,person-gesture,,,n
+🙅🏽‍♀️,woman gesturing NO: medium skin tone,People & Body,person-gesture,,,n
+🙅🏾‍♀️,woman gesturing NO: medium-dark skin tone,People & Body,person-gesture,,,n
+🙅🏿‍♀️,woman gesturing NO: dark skin tone,People & Body,person-gesture,,,n
+🙆,person gesturing OK,People & Body,person-gesture,,,n
+🙆🏻,person gesturing OK: light skin tone,People & Body,person-gesture,,,n
+🙆🏼,person gesturing OK: medium-light skin tone,People & Body,person-gesture,,,n
+🙆🏽,person gesturing OK: medium skin tone,People & Body,person-gesture,,,n
+🙆🏾,person gesturing OK: medium-dark skin tone,People & Body,person-gesture,,,n
+🙆🏿,person gesturing OK: dark skin tone,People & Body,person-gesture,,,n
+🙆‍♂️,man gesturing OK,People & Body,person-gesture,,,n
+🙆🏻‍♂️,man gesturing OK: light skin tone,People & Body,person-gesture,,,n
+🙆🏼‍♂️,man gesturing OK: medium-light skin tone,People & Body,person-gesture,,,n
+🙆🏽‍♂️,man gesturing OK: medium skin tone,People & Body,person-gesture,,,n
+🙆🏾‍♂️,man gesturing OK: medium-dark skin tone,People & Body,person-gesture,,,n
+🙆🏿‍♂️,man gesturing OK: dark skin tone,People & Body,person-gesture,,,n
+🙆‍♀️,woman gesturing OK,People & Body,person-gesture,,,n
+🙆🏻‍♀️,woman gesturing OK: light skin tone,People & Body,person-gesture,,,n
+🙆🏼‍♀️,woman gesturing OK: medium-light skin tone,People & Body,person-gesture,,,n
+🙆🏽‍♀️,woman gesturing OK: medium skin tone,People & Body,person-gesture,,,n
+🙆🏾‍♀️,woman gesturing OK: medium-dark skin tone,People & Body,person-gesture,,,n
+🙆🏿‍♀️,woman gesturing OK: dark skin tone,People & Body,person-gesture,,,n
+💁,person tipping hand,People & Body,person-gesture,sass,,y
+💁🏻,person tipping hand: light skin tone,People & Body,person-gesture,sass,,n
+💁🏼,person tipping hand: medium-light skin tone,People & Body,person-gesture,sass,,n
+💁🏽,person tipping hand: medium skin tone,People & Body,person-gesture,sass,,n
+💁🏾,person tipping hand: medium-dark skin tone,People & Body,person-gesture,sass,,n
+💁🏿,person tipping hand: dark skin tone,People & Body,person-gesture,sass,,n
+💁‍♂️,man tipping hand,People & Body,person-gesture,sass,,n
+💁🏻‍♂️,man tipping hand: light skin tone,People & Body,person-gesture,sass,,n
+💁🏼‍♂️,man tipping hand: medium-light skin tone,People & Body,person-gesture,sass,,n
+💁🏽‍♂️,man tipping hand: medium skin tone,People & Body,person-gesture,sass,,n
+💁🏾‍♂️,man tipping hand: medium-dark skin tone,People & Body,person-gesture,sass,,n
+💁🏿‍♂️,man tipping hand: dark skin tone,People & Body,person-gesture,sass,,n
+💁‍♀️,woman tipping hand,People & Body,person-gesture,sass,,n
+💁🏻‍♀️,woman tipping hand: light skin tone,People & Body,person-gesture,sass,,n
+💁🏼‍♀️,woman tipping hand: medium-light skin tone,People & Body,person-gesture,sass,,n
+💁🏽‍♀️,woman tipping hand: medium skin tone,People & Body,person-gesture,sass,,n
+💁🏾‍♀️,woman tipping hand: medium-dark skin tone,People & Body,person-gesture,sass,,n
+💁🏿‍♀️,woman tipping hand: dark skin tone,People & Body,person-gesture,sass,,n
 🙋,person raising hand,People & Body,person-gesture,raise-hand,,y
 🙋🏻,person raising hand: light skin tone,People & Body,person-gesture,raise-hand,,n
 🙋🏼,person raising hand: medium-light skin tone,People & Body,person-gesture,raise-hand,,n
@@ -2266,84 +2266,84 @@ emoji,name,group,subgroup,literal,clarity,keep
 🧑🏿‍🤝‍🧑🏽,"people holding hands: dark skin tone, medium skin tone",People & Body,family,holding-hands,,n
 🧑🏿‍🤝‍🧑🏾,"people holding hands: dark skin tone, medium-dark skin tone",People & Body,family,holding-hands,,n
 🧑🏿‍🤝‍🧑🏿,people holding hands: dark skin tone,People & Body,family,holding-hands,,n
-👭,women holding hands,People & Body,family,women-holding-hands,,y
-👭🏻,women holding hands: light skin tone,People & Body,family,women-holding-hands,,n
-👩🏻‍🤝‍👩🏼,"women holding hands: light skin tone, medium-light skin tone",People & Body,family,women-holding-hands,,n
-👩🏻‍🤝‍👩🏽,"women holding hands: light skin tone, medium skin tone",People & Body,family,women-holding-hands,,n
-👩🏻‍🤝‍👩🏾,"women holding hands: light skin tone, medium-dark skin tone",People & Body,family,women-holding-hands,,n
-👩🏻‍🤝‍👩🏿,"women holding hands: light skin tone, dark skin tone",People & Body,family,women-holding-hands,,n
-👩🏼‍🤝‍👩🏻,"women holding hands: medium-light skin tone, light skin tone",People & Body,family,women-holding-hands,,n
-👭🏼,women holding hands: medium-light skin tone,People & Body,family,women-holding-hands,,n
-👩🏼‍🤝‍👩🏽,"women holding hands: medium-light skin tone, medium skin tone",People & Body,family,women-holding-hands,,n
-👩🏼‍🤝‍👩🏾,"women holding hands: medium-light skin tone, medium-dark skin tone",People & Body,family,women-holding-hands,,n
-👩🏼‍🤝‍👩🏿,"women holding hands: medium-light skin tone, dark skin tone",People & Body,family,women-holding-hands,,n
-👩🏽‍🤝‍👩🏻,"women holding hands: medium skin tone, light skin tone",People & Body,family,women-holding-hands,,n
-👩🏽‍🤝‍👩🏼,"women holding hands: medium skin tone, medium-light skin tone",People & Body,family,women-holding-hands,,n
-👭🏽,women holding hands: medium skin tone,People & Body,family,women-holding-hands,,n
-👩🏽‍🤝‍👩🏾,"women holding hands: medium skin tone, medium-dark skin tone",People & Body,family,women-holding-hands,,n
-👩🏽‍🤝‍👩🏿,"women holding hands: medium skin tone, dark skin tone",People & Body,family,women-holding-hands,,n
-👩🏾‍🤝‍👩🏻,"women holding hands: medium-dark skin tone, light skin tone",People & Body,family,women-holding-hands,,n
-👩🏾‍🤝‍👩🏼,"women holding hands: medium-dark skin tone, medium-light skin tone",People & Body,family,women-holding-hands,,n
-👩🏾‍🤝‍👩🏽,"women holding hands: medium-dark skin tone, medium skin tone",People & Body,family,women-holding-hands,,n
-👭🏾,women holding hands: medium-dark skin tone,People & Body,family,women-holding-hands,,n
-👩🏾‍🤝‍👩🏿,"women holding hands: medium-dark skin tone, dark skin tone",People & Body,family,women-holding-hands,,n
-👩🏿‍🤝‍👩🏻,"women holding hands: dark skin tone, light skin tone",People & Body,family,women-holding-hands,,n
-👩🏿‍🤝‍👩🏼,"women holding hands: dark skin tone, medium-light skin tone",People & Body,family,women-holding-hands,,n
-👩🏿‍🤝‍👩🏽,"women holding hands: dark skin tone, medium skin tone",People & Body,family,women-holding-hands,,n
-👩🏿‍🤝‍👩🏾,"women holding hands: dark skin tone, medium-dark skin tone",People & Body,family,women-holding-hands,,n
-👭🏿,women holding hands: dark skin tone,People & Body,family,women-holding-hands,,n
-👫,woman and man holding hands,People & Body,family,woman-and-man-holding-hands,,y
-👫🏻,woman and man holding hands: light skin tone,People & Body,family,woman-and-man-holding-hands,,n
-👩🏻‍🤝‍👨🏼,"woman and man holding hands: light skin tone, medium-light skin tone",People & Body,family,woman-and-man-holding-hands,,n
-👩🏻‍🤝‍👨🏽,"woman and man holding hands: light skin tone, medium skin tone",People & Body,family,woman-and-man-holding-hands,,n
-👩🏻‍🤝‍👨🏾,"woman and man holding hands: light skin tone, medium-dark skin tone",People & Body,family,woman-and-man-holding-hands,,n
-👩🏻‍🤝‍👨🏿,"woman and man holding hands: light skin tone, dark skin tone",People & Body,family,woman-and-man-holding-hands,,n
-👩🏼‍🤝‍👨🏻,"woman and man holding hands: medium-light skin tone, light skin tone",People & Body,family,woman-and-man-holding-hands,,n
-👫🏼,woman and man holding hands: medium-light skin tone,People & Body,family,woman-and-man-holding-hands,,n
-👩🏼‍🤝‍👨🏽,"woman and man holding hands: medium-light skin tone, medium skin tone",People & Body,family,woman-and-man-holding-hands,,n
-👩🏼‍🤝‍👨🏾,"woman and man holding hands: medium-light skin tone, medium-dark skin tone",People & Body,family,woman-and-man-holding-hands,,n
-👩🏼‍🤝‍👨🏿,"woman and man holding hands: medium-light skin tone, dark skin tone",People & Body,family,woman-and-man-holding-hands,,n
-👩🏽‍🤝‍👨🏻,"woman and man holding hands: medium skin tone, light skin tone",People & Body,family,woman-and-man-holding-hands,,n
-👩🏽‍🤝‍👨🏼,"woman and man holding hands: medium skin tone, medium-light skin tone",People & Body,family,woman-and-man-holding-hands,,n
-👫🏽,woman and man holding hands: medium skin tone,People & Body,family,woman-and-man-holding-hands,,n
-👩🏽‍🤝‍👨🏾,"woman and man holding hands: medium skin tone, medium-dark skin tone",People & Body,family,woman-and-man-holding-hands,,n
-👩🏽‍🤝‍👨🏿,"woman and man holding hands: medium skin tone, dark skin tone",People & Body,family,woman-and-man-holding-hands,,n
-👩🏾‍🤝‍👨🏻,"woman and man holding hands: medium-dark skin tone, light skin tone",People & Body,family,woman-and-man-holding-hands,,n
-👩🏾‍🤝‍👨🏼,"woman and man holding hands: medium-dark skin tone, medium-light skin tone",People & Body,family,woman-and-man-holding-hands,,n
-👩🏾‍🤝‍👨🏽,"woman and man holding hands: medium-dark skin tone, medium skin tone",People & Body,family,woman-and-man-holding-hands,,n
-👫🏾,woman and man holding hands: medium-dark skin tone,People & Body,family,woman-and-man-holding-hands,,n
-👩🏾‍🤝‍👨🏿,"woman and man holding hands: medium-dark skin tone, dark skin tone",People & Body,family,woman-and-man-holding-hands,,n
-👩🏿‍🤝‍👨🏻,"woman and man holding hands: dark skin tone, light skin tone",People & Body,family,woman-and-man-holding-hands,,n
-👩🏿‍🤝‍👨🏼,"woman and man holding hands: dark skin tone, medium-light skin tone",People & Body,family,woman-and-man-holding-hands,,n
-👩🏿‍🤝‍👨🏽,"woman and man holding hands: dark skin tone, medium skin tone",People & Body,family,woman-and-man-holding-hands,,n
-👩🏿‍🤝‍👨🏾,"woman and man holding hands: dark skin tone, medium-dark skin tone",People & Body,family,woman-and-man-holding-hands,,n
-👫🏿,woman and man holding hands: dark skin tone,People & Body,family,woman-and-man-holding-hands,,n
-👬,men holding hands,People & Body,family,men-holding-hands,,y
-👬🏻,men holding hands: light skin tone,People & Body,family,men-holding-hands,,n
-👨🏻‍🤝‍👨🏼,"men holding hands: light skin tone, medium-light skin tone",People & Body,family,men-holding-hands,,n
-👨🏻‍🤝‍👨🏽,"men holding hands: light skin tone, medium skin tone",People & Body,family,men-holding-hands,,n
-👨🏻‍🤝‍👨🏾,"men holding hands: light skin tone, medium-dark skin tone",People & Body,family,men-holding-hands,,n
-👨🏻‍🤝‍👨🏿,"men holding hands: light skin tone, dark skin tone",People & Body,family,men-holding-hands,,n
-👨🏼‍🤝‍👨🏻,"men holding hands: medium-light skin tone, light skin tone",People & Body,family,men-holding-hands,,n
-👬🏼,men holding hands: medium-light skin tone,People & Body,family,men-holding-hands,,n
-👨🏼‍🤝‍👨🏽,"men holding hands: medium-light skin tone, medium skin tone",People & Body,family,men-holding-hands,,n
-👨🏼‍🤝‍👨🏾,"men holding hands: medium-light skin tone, medium-dark skin tone",People & Body,family,men-holding-hands,,n
-👨🏼‍🤝‍👨🏿,"men holding hands: medium-light skin tone, dark skin tone",People & Body,family,men-holding-hands,,n
-👨🏽‍🤝‍👨🏻,"men holding hands: medium skin tone, light skin tone",People & Body,family,men-holding-hands,,n
-👨🏽‍🤝‍👨🏼,"men holding hands: medium skin tone, medium-light skin tone",People & Body,family,men-holding-hands,,n
-👬🏽,men holding hands: medium skin tone,People & Body,family,men-holding-hands,,n
-👨🏽‍🤝‍👨🏾,"men holding hands: medium skin tone, medium-dark skin tone",People & Body,family,men-holding-hands,,n
-👨🏽‍🤝‍👨🏿,"men holding hands: medium skin tone, dark skin tone",People & Body,family,men-holding-hands,,n
-👨🏾‍🤝‍👨🏻,"men holding hands: medium-dark skin tone, light skin tone",People & Body,family,men-holding-hands,,n
-👨🏾‍🤝‍👨🏼,"men holding hands: medium-dark skin tone, medium-light skin tone",People & Body,family,men-holding-hands,,n
-👨🏾‍🤝‍👨🏽,"men holding hands: medium-dark skin tone, medium skin tone",People & Body,family,men-holding-hands,,n
-👬🏾,men holding hands: medium-dark skin tone,People & Body,family,men-holding-hands,,n
-👨🏾‍🤝‍👨🏿,"men holding hands: medium-dark skin tone, dark skin tone",People & Body,family,men-holding-hands,,n
-👨🏿‍🤝‍👨🏻,"men holding hands: dark skin tone, light skin tone",People & Body,family,men-holding-hands,,n
-👨🏿‍🤝‍👨🏼,"men holding hands: dark skin tone, medium-light skin tone",People & Body,family,men-holding-hands,,n
-👨🏿‍🤝‍👨🏽,"men holding hands: dark skin tone, medium skin tone",People & Body,family,men-holding-hands,,n
-👨🏿‍🤝‍👨🏾,"men holding hands: dark skin tone, medium-dark skin tone",People & Body,family,men-holding-hands,,n
-👬🏿,men holding hands: dark skin tone,People & Body,family,men-holding-hands,,n
+👭,women holding hands,People & Body,family,,,n
+👭🏻,women holding hands: light skin tone,People & Body,family,,,n
+👩🏻‍🤝‍👩🏼,"women holding hands: light skin tone, medium-light skin tone",People & Body,family,,,n
+👩🏻‍🤝‍👩🏽,"women holding hands: light skin tone, medium skin tone",People & Body,family,,,n
+👩🏻‍🤝‍👩🏾,"women holding hands: light skin tone, medium-dark skin tone",People & Body,family,,,n
+👩🏻‍🤝‍👩🏿,"women holding hands: light skin tone, dark skin tone",People & Body,family,,,n
+👩🏼‍🤝‍👩🏻,"women holding hands: medium-light skin tone, light skin tone",People & Body,family,,,n
+👭🏼,women holding hands: medium-light skin tone,People & Body,family,,,n
+👩🏼‍🤝‍👩🏽,"women holding hands: medium-light skin tone, medium skin tone",People & Body,family,,,n
+👩🏼‍🤝‍👩🏾,"women holding hands: medium-light skin tone, medium-dark skin tone",People & Body,family,,,n
+👩🏼‍🤝‍👩🏿,"women holding hands: medium-light skin tone, dark skin tone",People & Body,family,,,n
+👩🏽‍🤝‍👩🏻,"women holding hands: medium skin tone, light skin tone",People & Body,family,,,n
+👩🏽‍🤝‍👩🏼,"women holding hands: medium skin tone, medium-light skin tone",People & Body,family,,,n
+👭🏽,women holding hands: medium skin tone,People & Body,family,,,n
+👩🏽‍🤝‍👩🏾,"women holding hands: medium skin tone, medium-dark skin tone",People & Body,family,,,n
+👩🏽‍🤝‍👩🏿,"women holding hands: medium skin tone, dark skin tone",People & Body,family,,,n
+👩🏾‍🤝‍👩🏻,"women holding hands: medium-dark skin tone, light skin tone",People & Body,family,,,n
+👩🏾‍🤝‍👩🏼,"women holding hands: medium-dark skin tone, medium-light skin tone",People & Body,family,,,n
+👩🏾‍🤝‍👩🏽,"women holding hands: medium-dark skin tone, medium skin tone",People & Body,family,,,n
+👭🏾,women holding hands: medium-dark skin tone,People & Body,family,,,n
+👩🏾‍🤝‍👩🏿,"women holding hands: medium-dark skin tone, dark skin tone",People & Body,family,,,n
+👩🏿‍🤝‍👩🏻,"women holding hands: dark skin tone, light skin tone",People & Body,family,,,n
+👩🏿‍🤝‍👩🏼,"women holding hands: dark skin tone, medium-light skin tone",People & Body,family,,,n
+👩🏿‍🤝‍👩🏽,"women holding hands: dark skin tone, medium skin tone",People & Body,family,,,n
+👩🏿‍🤝‍👩🏾,"women holding hands: dark skin tone, medium-dark skin tone",People & Body,family,,,n
+👭🏿,women holding hands: dark skin tone,People & Body,family,,,n
+👫,woman and man holding hands,People & Body,family,,,n
+👫🏻,woman and man holding hands: light skin tone,People & Body,family,,,n
+👩🏻‍🤝‍👨🏼,"woman and man holding hands: light skin tone, medium-light skin tone",People & Body,family,,,n
+👩🏻‍🤝‍👨🏽,"woman and man holding hands: light skin tone, medium skin tone",People & Body,family,,,n
+👩🏻‍🤝‍👨🏾,"woman and man holding hands: light skin tone, medium-dark skin tone",People & Body,family,,,n
+👩🏻‍🤝‍👨🏿,"woman and man holding hands: light skin tone, dark skin tone",People & Body,family,,,n
+👩🏼‍🤝‍👨🏻,"woman and man holding hands: medium-light skin tone, light skin tone",People & Body,family,,,n
+👫🏼,woman and man holding hands: medium-light skin tone,People & Body,family,,,n
+👩🏼‍🤝‍👨🏽,"woman and man holding hands: medium-light skin tone, medium skin tone",People & Body,family,,,n
+👩🏼‍🤝‍👨🏾,"woman and man holding hands: medium-light skin tone, medium-dark skin tone",People & Body,family,,,n
+👩🏼‍🤝‍👨🏿,"woman and man holding hands: medium-light skin tone, dark skin tone",People & Body,family,,,n
+👩🏽‍🤝‍👨🏻,"woman and man holding hands: medium skin tone, light skin tone",People & Body,family,,,n
+👩🏽‍🤝‍👨🏼,"woman and man holding hands: medium skin tone, medium-light skin tone",People & Body,family,,,n
+👫🏽,woman and man holding hands: medium skin tone,People & Body,family,,,n
+👩🏽‍🤝‍👨🏾,"woman and man holding hands: medium skin tone, medium-dark skin tone",People & Body,family,,,n
+👩🏽‍🤝‍👨🏿,"woman and man holding hands: medium skin tone, dark skin tone",People & Body,family,,,n
+👩🏾‍🤝‍👨🏻,"woman and man holding hands: medium-dark skin tone, light skin tone",People & Body,family,,,n
+👩🏾‍🤝‍👨🏼,"woman and man holding hands: medium-dark skin tone, medium-light skin tone",People & Body,family,,,n
+👩🏾‍🤝‍👨🏽,"woman and man holding hands: medium-dark skin tone, medium skin tone",People & Body,family,,,n
+👫🏾,woman and man holding hands: medium-dark skin tone,People & Body,family,,,n
+👩🏾‍🤝‍👨🏿,"woman and man holding hands: medium-dark skin tone, dark skin tone",People & Body,family,,,n
+👩🏿‍🤝‍👨🏻,"woman and man holding hands: dark skin tone, light skin tone",People & Body,family,,,n
+👩🏿‍🤝‍👨🏼,"woman and man holding hands: dark skin tone, medium-light skin tone",People & Body,family,,,n
+👩🏿‍🤝‍👨🏽,"woman and man holding hands: dark skin tone, medium skin tone",People & Body,family,,,n
+👩🏿‍🤝‍👨🏾,"woman and man holding hands: dark skin tone, medium-dark skin tone",People & Body,family,,,n
+👫🏿,woman and man holding hands: dark skin tone,People & Body,family,,,n
+👬,men holding hands,People & Body,family,,,n
+👬🏻,men holding hands: light skin tone,People & Body,family,,,n
+👨🏻‍🤝‍👨🏼,"men holding hands: light skin tone, medium-light skin tone",People & Body,family,,,n
+👨🏻‍🤝‍👨🏽,"men holding hands: light skin tone, medium skin tone",People & Body,family,,,n
+👨🏻‍🤝‍👨🏾,"men holding hands: light skin tone, medium-dark skin tone",People & Body,family,,,n
+👨🏻‍🤝‍👨🏿,"men holding hands: light skin tone, dark skin tone",People & Body,family,,,n
+👨🏼‍🤝‍👨🏻,"men holding hands: medium-light skin tone, light skin tone",People & Body,family,,,n
+👬🏼,men holding hands: medium-light skin tone,People & Body,family,,,n
+👨🏼‍🤝‍👨🏽,"men holding hands: medium-light skin tone, medium skin tone",People & Body,family,,,n
+👨🏼‍🤝‍👨🏾,"men holding hands: medium-light skin tone, medium-dark skin tone",People & Body,family,,,n
+👨🏼‍🤝‍👨🏿,"men holding hands: medium-light skin tone, dark skin tone",People & Body,family,,,n
+👨🏽‍🤝‍👨🏻,"men holding hands: medium skin tone, light skin tone",People & Body,family,,,n
+👨🏽‍🤝‍👨🏼,"men holding hands: medium skin tone, medium-light skin tone",People & Body,family,,,n
+👬🏽,men holding hands: medium skin tone,People & Body,family,,,n
+👨🏽‍🤝‍👨🏾,"men holding hands: medium skin tone, medium-dark skin tone",People & Body,family,,,n
+👨🏽‍🤝‍👨🏿,"men holding hands: medium skin tone, dark skin tone",People & Body,family,,,n
+👨🏾‍🤝‍👨🏻,"men holding hands: medium-dark skin tone, light skin tone",People & Body,family,,,n
+👨🏾‍🤝‍👨🏼,"men holding hands: medium-dark skin tone, medium-light skin tone",People & Body,family,,,n
+👨🏾‍🤝‍👨🏽,"men holding hands: medium-dark skin tone, medium skin tone",People & Body,family,,,n
+👬🏾,men holding hands: medium-dark skin tone,People & Body,family,,,n
+👨🏾‍🤝‍👨🏿,"men holding hands: medium-dark skin tone, dark skin tone",People & Body,family,,,n
+👨🏿‍🤝‍👨🏻,"men holding hands: dark skin tone, light skin tone",People & Body,family,,,n
+👨🏿‍🤝‍👨🏼,"men holding hands: dark skin tone, medium-light skin tone",People & Body,family,,,n
+👨🏿‍🤝‍👨🏽,"men holding hands: dark skin tone, medium skin tone",People & Body,family,,,n
+👨🏿‍🤝‍👨🏾,"men holding hands: dark skin tone, medium-dark skin tone",People & Body,family,,,n
+👬🏿,men holding hands: dark skin tone,People & Body,family,,,n
 💏,kiss,People & Body,family,kiss,,y
 💏🏻,kiss: light skin tone,People & Body,family,kiss,,n
 💏🏼,kiss: medium-light skin tone,People & Body,family,kiss,,n
@@ -2734,7 +2734,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 🪷,lotus,Animals & Nature,plant-flower,lotus,,y
 🏵️,rosette,Animals & Nature,plant-flower,rosette,,y
 🌹,rose,Animals & Nature,plant-flower,rose,,y
-🥀,wilted flower,Animals & Nature,plant-flower,wilted-flower,,y
+🥀,wilted flower,Animals & Nature,plant-flower,wilt,,y
 🌺,hibiscus,Animals & Nature,plant-flower,hibiscus,,y
 🌻,sunflower,Animals & Nature,plant-flower,sunflower,,y
 🌼,blossom,Animals & Nature,plant-flower,blossom,,y
@@ -2888,9 +2888,9 @@ emoji,name,group,subgroup,literal,clarity,keep
 🔪,kitchen knife,Food & Drink,dishware,knife,,y
 🫙,jar,Food & Drink,dishware,jar,,y
 🏺,amphora,Food & Drink,dishware,amphora,,y
-🌍,globe showing Europe-Africa,Travel & Places,place-map,globe-europe-africa,,y
-🌎,globe showing Americas,Travel & Places,place-map,globe-americas,,y
-🌏,globe showing Asia-Australia,Travel & Places,place-map,globe-asia-australia,,y
+🌍,globe showing Europe-Africa,Travel & Places,place-map,,,n
+🌎,globe showing Americas,Travel & Places,place-map,,,n
+🌏,globe showing Asia-Australia,Travel & Places,place-map,,,n
 🌐,globe with meridians,Travel & Places,place-map,globe,,y
 🗺️,world map,Travel & Places,place-map,world-map,,y
 🗾,map of Japan,Travel & Places,place-map,japan-map,,y
@@ -3116,24 +3116,24 @@ emoji,name,group,subgroup,literal,clarity,keep
 🎈,balloon,Activities,event,balloon,,y
 🎉,party popper,Activities,event,party-popper,,y
 🎊,confetti ball,Activities,event,confetti-ball,,y
-🎋,tanabata tree,Activities,event,tanabata,,y
-🎍,pine decoration,Activities,event,new-year-decoration,,y
-🎎,Japanese dolls,Activities,event,dolls,,y
-🎏,carp streamer,Activities,event,carp-streamer,,y
+🎋,tanabata tree,Activities,event,,,n
+🎍,pine decoration,Activities,event,,,n
+🎎,Japanese dolls,Activities,event,,,n
+🎏,carp streamer,Activities,event,,,n
 🎐,wind chime,Activities,event,wind-chime,,y
-🎑,moon viewing ceremony,Activities,event,moon-viewing,,y
+🎑,moon viewing ceremony,Activities,event,,,n
 🧧,red envelope,Activities,event,red-envelope,,y
 🎀,ribbon,Activities,event,ribbon,,y
 🎁,wrapped gift,Activities,event,wrapped-gift,,y
-🎗️,reminder ribbon,Activities,event,reminder-ribbon,,y
+🎗️,reminder ribbon,Activities,event,awareness,,y
 🎟️,admission tickets,Activities,event,admission-tickets,,y
 🎫,ticket,Activities,event,ticket,,y
-🎖️,military medal,Activities,award-medal,military-medal,,y
+🎖️,military medal,Activities,award-medal,honor,,y
 🏆,trophy,Activities,award-medal,trophy,,y
-🏅,sports medal,Activities,award-medal,sports-medal,,y
-🥇,1st place medal,Activities,award-medal,1st-place-medal,,y
-🥈,2nd place medal,Activities,award-medal,2nd-place-medal,,y
-🥉,3rd place medal,Activities,award-medal,3rd-place-medal,,y
+🏅,sports medal,Activities,award-medal,medal,,y
+🥇,1st place medal,Activities,award-medal,gold,,y
+🥈,2nd place medal,Activities,award-medal,silver,,y
+🥉,3rd place medal,Activities,award-medal,bronze,,y
 ⚽,soccer ball,Activities,sport,soccer,,y
 ⚾,baseball,Activities,sport,baseball,,y
 🥎,softball,Activities,sport,softball,,y
@@ -3177,10 +3177,10 @@ emoji,name,group,subgroup,literal,clarity,keep
 🪅,piñata,Activities,game,pinata,,y
 🪩,mirror ball,Activities,game,mirror-ball,,y
 🪆,nesting dolls,Activities,game,nesting-dolls,,y
-♠️,spade suit,Activities,game,spade-suit,,y
-♥️,heart suit,Activities,game,heart-suit,,y
-♦️,diamond suit,Activities,game,diamond-suit,,y
-♣️,club suit,Activities,game,club-suit,,y
+♠️,spade suit,Activities,game,,,n
+♥️,heart suit,Activities,game,,,n
+♦️,diamond suit,Activities,game,,,n
+♣️,club suit,Activities,game,,,n
 ♟️,chess pawn,Activities,game,chess-pawn,,y
 🃏,joker,Activities,game,joker,,y
 🀄,mahjong red dragon,Activities,game,mahjong,,y
@@ -3207,7 +3207,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 👗,dress,Objects,clothing,dress,,y
 👘,kimono,Objects,clothing,kimono,,y
 🥻,sari,Objects,clothing,sari,,y
-🩱,one-piece swimsuit,Objects,clothing,one-piece-swimsuit,,y
+🩱,one-piece swimsuit,Objects,clothing,swimsuit,,y
 🩲,briefs,Objects,clothing,briefs,,y
 🩳,shorts,Objects,clothing,shorts,,y
 👙,bikini,Objects,clothing,bikini,,y
@@ -3330,7 +3330,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 💵,dollar banknote,Objects,money,dollar,,y
 💶,euro banknote,Objects,money,euro,,y
 💷,pound banknote,Objects,money,pound,,y
-💸,money with wings,Objects,money,flying-money,,y
+💸,money with wings,Objects,money,spend,,y
 💳,credit card,Objects,money,credit-card,,y
 🧾,receipt,Objects,money,receipt,,y
 💹,chart increasing with yen,Objects,money,yen-chart-up,,n
@@ -3403,7 +3403,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 ⚖️,balance scale,Objects,tool,scale,,y
 🦯,white cane,Objects,tool,cane,,y
 🔗,link,Objects,tool,link,,y
-⛓️‍💥,broken chain,Objects,tool,chain-broken,,y
+⛓️‍💥,broken chain,Objects,tool,unlink,,y
 ⛓️,chains,Objects,tool,chains,,y
 🪝,hook,Objects,tool,hook,,y
 🧰,toolbox,Objects,tool,toolbox,,y
@@ -3478,7 +3478,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 🚳,no bicycles,Symbols,warning,no-bicycles,,y
 🚭,no smoking,Symbols,warning,no-smoking,,y
 🚯,no littering,Symbols,warning,no-littering,,y
-🚱,non-potable water,Symbols,warning,non-drinking-water,,y
+🚱,non-potable water,Symbols,warning,,,n
 🚷,no pedestrians,Symbols,warning,no-pedestrian,,y
 📵,no mobile phones,Symbols,warning,no-phone,,y
 🔞,no one under eighteen,Symbols,warning,no-minors,,y
@@ -3516,7 +3516,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 ☪️,star and crescent,Symbols,religion,star-crescent,,y
 ☮️,peace symbol,Symbols,religion,peace,,y
 🕎,menorah,Symbols,religion,menorah,,y
-🔯,dotted six-pointed star,Symbols,religion,star-six-point,,y
+🔯,dotted six-pointed star,Symbols,religion,,,n
 🪯,khanda,Symbols,religion,khanda,,y
 ♈,Aries,Symbols,zodiac,aries,,y
 ♉,Taurus,Symbols,zodiac,taurus,,y
@@ -3546,7 +3546,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 🔽,downwards button,Symbols,av-symbol,down,,n
 ⏬,fast down button,Symbols,av-symbol,fast-down,,y
 ⏸️,pause button,Symbols,av-symbol,pause,,y
-⏹️,stop button,Symbols,av-symbol,stop-button,,y
+⏹️,stop button,Symbols,av-symbol,,,n
 ⏺️,record button,Symbols,av-symbol,record,,y
 ⏏️,eject button,Symbols,av-symbol,eject,,y
 🎦,cinema,Symbols,av-symbol,cinema,,y
@@ -3573,14 +3573,14 @@ emoji,name,group,subgroup,literal,clarity,keep
 ❗,red exclamation mark,Symbols,punctuation,exclamation-red,,y
 〰️,wavy dash,Symbols,punctuation,dash-wavy,,y
 💱,currency exchange,Symbols,currency,currency-exchange,,y
-💲,heavy dollar sign,Symbols,currency,dollar-sign,,y
+💲,heavy dollar sign,Symbols,currency,,,n
 ⚕️,medical symbol,Symbols,other-symbol,medical,,y
 ♻️,recycling symbol,Symbols,other-symbol,recycling,,y
 ⚜️,fleur-de-lis,Symbols,other-symbol,fleur-de-lis,,y
 🔱,trident emblem,Symbols,other-symbol,trident,,y
 📛,name badge,Symbols,other-symbol,name-tag,,y
 🔰,Japanese symbol for beginner,Symbols,other-symbol,beginner,,y
-⭕,hollow red circle,Symbols,other-symbol,hollow-red-circle,,y
+⭕,hollow red circle,Symbols,other-symbol,correct,,y
 ✅,check mark button,Symbols,other-symbol,check,,y
 ☑️,check box with check,Symbols,other-symbol,checkbox-checked,,n
 ✔️,check mark,Symbols,other-symbol,check,,n
@@ -3679,7 +3679,7 @@ emoji,name,group,subgroup,literal,clarity,keep
 🔺,red triangle pointed up,Symbols,geometric,up-triangle,,y
 🔻,red triangle pointed down,Symbols,geometric,down-triangle,,y
 💠,diamond with a dot,Symbols,geometric,diamond-dot,,n
-🔘,radio button,Symbols,geometric,radio-button,,y
+🔘,radio button,Symbols,geometric,option,,y
 🔳,white square button,Symbols,geometric,white-square-button,,n
 🔲,black square button,Symbols,geometric,black-square-button,,n
 🏁,chequered flag,Flags,flag,checkered-flag,,y
