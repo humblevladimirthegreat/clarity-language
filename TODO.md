@@ -15,11 +15,10 @@ Fold into `docs/language-reference.md` when decided; dictionary lists specific f
 
 Update the `/x/` section so discourse markers are defined as this fuller class, not only coordinating conjunctions and quote markers.
 
-## Clause operators — assign explicitly to `/h/` (not `/x/`)
+## Clause operators — `/j/` force vs `/h/` (not `/x/`)
 
-- Negation (clause-level; adjective-scoped negation via `/ɡ/` if needed)
+- Negation (clause-level `/h/`; adjective-scoped negation via `/ɡ/` if needed)
 - Document that epistemic hedges that are really evidential stay `/h/` or `/ɡ/`, not `/x/`
-
 ## Still underspecified under existing PoS (no new prefix)
 
 - Numbers, quantifiers, ordinals (`/w/` vs noun — pick and document)

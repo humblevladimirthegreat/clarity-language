@@ -63,7 +63,7 @@ The goal of r/claritylanguage is to help foster compassion, rationality, and emp
 
 Parts of speech are determined by a prefix consonant added before each word. Words do not change form based on usage, and can be used in most parts of speech, so the prefix is how you know a word's role.
 
-Every sentence begins with a **clause-force** `/h/` (see [Adverbs](#adverbs-h)); that fixed left edge is how sentence boundaries stay clear under free word order. After that opener, the standard order is Subject \- Direct Object \- Verb. Order of those core roles can change for stylistic reasons or due to certain constructs like dependent clauses. Adjectives (`/w/`) go after what they modify. Non-force adverbs (`/h/`) may appear anywhere in the clause (see below).
+Every sentence begins with an **utterance-frame** `/j/` cluster that includes **clause force** (see [Utterance markers](#utterance-markers-j)); that fixed left edge is how sentence boundaries stay clear under free word order. After that opener, the standard order is Subject \- Direct Object \- Verb. Order of those core roles can change for stylistic reasons or due to certain constructs like dependent clauses. Adjectives (`/w/`) go after what they modify. Adverbs (`/h/`) may appear anywhere in the clause (see below).
 
 ## Part-of-speech prefixes
 
@@ -75,9 +75,9 @@ Every sentence begins with a **clause-force** `/h/` (see [Adverbs](#adverbs-h));
 | /v/ | verb |
 | /w/ | adjective |
 | /ɡ/ | adjective adjunct (modifies the previous `/w/`) |
-| /h/ | adverb (clause force, mood / tense / evidentiality, adjuncts) |
+| /h/ | adverb (mood / tense / evidentiality, adjuncts) |
 | x /ʒ/ | discourse marker (conjunctions, quotation markers) |
-| j /dʑ/ | interjections, direct address |
+| j /dʑ/ | utterance marker (clause force, vocative, interjection) |
 
 There is no dedicated indirect-object prefix. Recipients and beneficiaries (English *to* / *for*) are expressed with a complex adverb (`/h/` + `/b/`) plus an argument noun, the same pattern as other verb-level prepositional-phrase meanings.
 
@@ -103,27 +103,11 @@ Same root, different prefix → different scope: `/h/` frames the clause; `/ɡ/`
 
 ## Adverbs (`/h/`)
 
-`/h/` marks **adverbs** (modifiers of the verb or clause). That includes **clause force**, manner, time/place adjuncts, recipients (*to* / *for*), and mood/tense/evidentiality. Example mood form: “h vizinin” means “I remember the events of this sentence (which occurred in the past).”
+`/h/` marks **adverbs** (modifiers of the verb or clause). That includes manner, time/place adjuncts, recipients (*to* / *for*), and mood/tense/evidentiality. Example mood form: “h vizinin” means “I remember the events of this sentence (which occurred in the past).” Clause force is **not** `/h/`; it is an utterance marker (`/j/`).
 
-### Clause force (required sentence opener)
+Because `/h/` always targets the clause’s verb, **position is free within the clause** (before/after arguments, next to the verb, clause-final, etc.) for style, focus, or meter. `/h/` material must stay inside its own clause: it must not float into a following sentence or into a trailing dependent clause (dependent clauses stay at the end; see below).
 
-Every sentence begins with a **clause-force** `/h/` that marks the speech act. The dictionary lists the specific forms. The closed set for now is:
-
-* **statement** — assertoric claim or description
-* **polar question** — yes/no question
-* **imperative** — directive (command / instruction)
-
-Clause force is **fixed at the left edge** of the sentence; it does not float. A new clause-force `/h/` starts a new sentence. Other speech acts (request, promise, wish, evaluative judgment, and so on) are not separate forces yet — express them with ordinary vocabulary under one of these three; the dictionary may add dedicated force forms later.
-
-Content questions (*who* / *what* / *where*) use the [interrogative special pronoun](#special-pronouns) for the queried role and, for now, the same **polar question** force opener as yes/no questions.
-
-Bare vocatives and exclamations that are only `/j/` (no clause) do not take clause force.
-
-### Other `/h/` (free within the clause)
-
-Because non-force `/h/` always targets the clause’s verb, **position is free within the clause** (before/after arguments, next to the verb, clause-final, etc.) for style, focus, or meter. `/h/` material must stay inside its own clause: it must not float into a following sentence or into a trailing dependent clause (dependent clauses stay at the end; see below).
-
-When several `/h/` units appear in one clause, interpret them in this **relative order** for scope: clause force (already sentence-initial) → mood/evidential → role/place/time adjuncts (including recipient) → manner. If two units share a band, left-to-right in the spoken order breaks the tie.
+When several `/h/` units appear in one clause, interpret them in this **relative order** for scope (regardless of linear placement): mood/evidential → role/place/time adjuncts (including recipient) → manner. If two units share a band, left-to-right in the spoken order breaks the tie.
 
 ## Complex adjectives, complex adverbs, and argument nouns
 
@@ -138,9 +122,35 @@ After a complex adjective or adverb, the argument is the new noun for further ad
 
 Complex adjectives and adverbs cover what would be prepositional phrases in other languages. A verb used as a complex adverb with a `/b/` argument can form a simple dependent-clause-like adjunct (the `/b/` argument is the clause’s subject-like participant).
 
-## Interjections and direct address (`/j/`)
+## Utterance markers (`/j/`)
 
-Marked with j /dʑ/. Used for exclamations, greetings, and vocatives that address someone directly.
+Marked with j /dʑ/. These frame the **utterance**, not the verb: **clause force**, **vocatives** (direct address), and **interjections** (exclamations, greetings, and similar). The dictionary lists the forms and which subclass each root belongs to.
+
+### Left-edge order and sentence boundaries
+
+The left edge of a sentence is a `/j/` cluster in this order:
+
+1. Optional **vocative**(s) — who is addressed (*Sam*, *everyone*, …)
+2. Optional **interjection**(s) — *wow*, greetings, and other expressives
+3. Required **clause force** — the speech act (see below); **last** in the cluster, immediately before the clause body
+
+Clause force closes the opener and does not appear in the clause body. A new clause-force `/j/` (after any vocatives/interjections of the new sentence) starts a new sentence. That is how sentence boundaries stay unambiguous under free word order.
+
+**Vocatives and interjections appear only in this left-edge cluster** (or as bare utterances below). They must not occur mid-clause or at the end of a sentence — otherwise a trailing `/j/` could be read as either the end of the current sentence or the start of the next. After a clause body, any non-force `/j/` begins the next utterance’s opener. Mid-sentence asides use discourse fences (`/x/`) when those exist, not floating `/j/`.
+
+Bare vocatives and exclamations with no clause (e.g. only calling a name, or only *wow*) use `/j/` without clause force.
+
+### Clause force
+
+Every full sentence includes exactly one **clause-force** `/j/`. The closed set for now is:
+
+* **statement** — assertoric claim or description
+* **polar question** — yes/no question
+* **imperative** — directive (command / instruction)
+
+Other speech acts (request, promise, wish, evaluative judgment, and so on) are not separate forces yet — express them with ordinary vocabulary under one of these three; the dictionary may add dedicated force forms later.
+
+Content questions (*who* / *what* / *where*) use the [interrogative special pronoun](#special-pronouns) for the queried role and, for now, the same **polar question** force as yes/no questions.
 
 ## Discourse markers (`/x/`)
 
@@ -148,7 +158,7 @@ Marked with x /ʒ/. Used for **conjunctions** (*and* / *or* / *but*, etc.) and *
 
 ## Dependent Clauses
 
-Dependent clauses are formed by a special pronoun (form TBD) that refers to the next sentence. To be unambiguous and reduce cognitive load, dependent clauses must come at the end of the sentence, so you must rearrange the word order if needed. Example is *I told him that...* The dependent material is itself a full sentence and therefore begins with its own clause-force `/h/`. Main-clause `/h/` units stay in the main clause and do not float into the dependent clause.
+Dependent clauses are formed by a special pronoun (form TBD) that refers to the next sentence. To be unambiguous and reduce cognitive load, dependent clauses must come at the end of the sentence, so you must rearrange the word order if needed. Example is *I told him that...* The dependent material is itself a full sentence and therefore begins with its own `/j/` cluster (optional vocative(s) and interjection(s), then clause force). Main-clause `/h/` units stay in the main clause and do not float into the dependent clause.
 
 ## Quotations
 
