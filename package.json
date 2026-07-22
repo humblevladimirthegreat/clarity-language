@@ -27,6 +27,7 @@
     "ngsl-coverage": "tsx scripts/ngsl-coverage.ts",
     "ngsl-metaphor-extra": "python3 scripts/generate-ngsl-metaphor-extra.py",
     "ngsl-metaphor-apply": "python3 scripts/apply-ngsl-metaphor-waves.py",
+    "metaphor-quality-apply": "python3 scripts/apply-metaphor-quality-pass.py",
     "web": "npx --yes serve . -p 4173"
   },
   "engines": {

@@ -1,0 +1,2826 @@
+{
+  "🌍": {
+    "metaphorical": "world",
+    "mnemonic": "earth is the planet; world is all life on it"
+  },
+  "🌎": {
+    "metaphorical": "world",
+    "mnemonic": "earth is the planet; world is all life on it"
+  },
+  "🌏": {
+    "metaphorical": "world",
+    "mnemonic": "earth is the planet; world is all life on it"
+  },
+  "🌐": {
+    "metaphorical": "connected",
+    "mnemonic": "a globe links every place; connected means linked together"
+  },
+  "🗺️": {
+    "metaphorical": "plan",
+    "mnemonic": "a map charts a route; a plan charts a course"
+  },
+  "🗾": {
+    "metaphorical": "regional",
+    "mnemonic": "a map of one land; regional is that area's identity"
+  },
+  "🧭": {
+    "metaphorical": "direction",
+    "mnemonic": "a compass points the way; direction is where you're headed"
+  },
+  "🏔️": {
+    "metaphorical": "challenge",
+    "mnemonic": "mountains are hard to climb; a challenge is hard to face"
+  },
+  "⛰️": {
+    "metaphorical": "challenge",
+    "mnemonic": "mountains are hard to climb; a challenge is hard to face"
+  },
+  "🌋": {
+    "metaphorical": "eruption",
+    "mnemonic": "a volcano bursts outward; eruption is bursting emotion"
+  },
+  "🗻": {
+    "metaphorical": "landmark",
+    "mnemonic": "a peak recognized from afar; landmark is something memorable"
+  },
+  "🏕️": {
+    "metaphorical": "escape",
+    "mnemonic": "camping leaves daily life behind; escape is getting away"
+  },
+  "🏖️": {
+    "metaphorical": "relaxation",
+    "mnemonic": "the beach is for rest; relaxation is rest"
+  },
+  "🏜️": {
+    "metaphorical": "barren",
+    "mnemonic": "a desert has little life; barren is empty of results"
+  },
+  "🏝️": {
+    "metaphorical": "isolation",
+    "mnemonic": "an island stands apart; isolation is standing apart"
+  },
+  "🏞️": {
+    "metaphorical": "refuge",
+    "mnemonic": "a park is a green refuge; refuge is safe respite"
+  },
+  "🏟️": {
+    "metaphorical": "arena",
+    "mnemonic": "a stadium hosts competition; arena is any contest ground"
+  },
+  "🪨": {
+    "metaphorical": "stability",
+    "mnemonic": "rock does not shift; stability is holding firm"
+  },
+  "🪵": {
+    "metaphorical": "raw",
+    "mnemonic": "wood is unfinished material; raw is unprocessed state"
+  },
+  "⛲": {
+    "metaphorical": "renewal",
+    "mnemonic": "flowing water refreshes; renewal is fresh beginning"
+  },
+  "⛺": {
+    "metaphorical": "temporary",
+    "mnemonic": "a tent is not permanent shelter; temporary does not last"
+  },
+  "🌁": {
+    "metaphorical": "obscurity",
+    "mnemonic": "fog hides the view; obscurity hides what is clear"
+  },
+  "🌃": {
+    "metaphorical": "unknown",
+    "mnemonic": "night hides what day shows; unknown is what is hidden"
+  },
+  "🏙️": {
+    "metaphorical": "urban",
+    "mnemonic": "towers and lights fill the skyline; urban is city life"
+  },
+  "🌄": {
+    "metaphorical": "dawn",
+    "mnemonic": "sun rises over peaks; dawn is a new beginning"
+  },
+  "🌅": {
+    "metaphorical": "dawn",
+    "mnemonic": "sun rises on the horizon; dawn is a new beginning"
+  },
+  "🌆": {
+    "metaphorical": "closure",
+    "mnemonic": "dusk ends the day; closure is bringing something to an end"
+  },
+  "🌇": {
+    "metaphorical": "closure",
+    "mnemonic": "sunset ends the day; closure is bringing something to an end"
+  },
+  "🌉": {
+    "metaphorical": "connection",
+    "mnemonic": "a bridge links two shores; connection links two sides"
+  },
+  "♨️": {
+    "metaphorical": "rejuvenation",
+    "mnemonic": "hot springs restore the body; rejuvenation restores energy"
+  },
+  "🎠": {
+    "metaphorical": "cycle",
+    "mnemonic": "carousel horses go in circles; cycle repeats round and round"
+  },
+  "🎡": {
+    "metaphorical": "perspective",
+    "mnemonic": "ferris wheel rises for a wider view; perspective sees the bigger picture"
+  },
+  "🎢": {
+    "metaphorical": "volatility",
+    "mnemonic": "roller coaster rises and drops; volatility swings up and down"
+  },
+  "💈": {
+    "metaphorical": "grooming",
+    "mnemonic": "barber pole marks a trim; grooming is tending appearance"
+  },
+  "🎪": {
+    "metaphorical": "spectacle",
+    "mnemonic": "circus tent promises a show; spectacle is a striking display"
+  },
+  "🏛️": {
+    "metaphorical": "institution",
+    "mnemonic": "grand columns mark public power; institution is established order"
+  },
+  "🏗️": {
+    "metaphorical": "progress",
+    "mnemonic": "scaffolding rises as things get built; progress is things rising"
+  },
+  "🧱": {
+    "metaphorical": "foundation",
+    "mnemonic": "bricks stack from the ground up; foundation is the base layer"
+  },
+  "🛖": {
+    "metaphorical": "shelter",
+    "mnemonic": "a hut keeps you covered; shelter is basic cover"
+  },
+  "🏘️": {
+    "metaphorical": "neighborhood",
+    "mnemonic": "many houses side by side; neighborhood is nearby community"
+  },
+  "🏚️": {
+    "metaphorical": "decay",
+    "mnemonic": "a house falling apart; decay is falling apart"
+  },
+  "🏠": {
+    "metaphorical": "home",
+    "mnemonic": "a house is walls and roof; home is where you belong"
+  },
+  "🏡": {
+    "metaphorical": "domestic",
+    "mnemonic": "house with garden; domestic is everyday private life"
+  },
+  "🏢": {
+    "metaphorical": "corporate",
+    "mnemonic": "tall offices for business; corporate is organized commerce"
+  },
+  "🏣": {
+    "metaphorical": "delivery",
+    "mnemonic": "post office sends mail out; delivery is sending something through"
+  },
+  "🏤": {
+    "metaphorical": "delivery",
+    "mnemonic": "post office sends mail out; delivery is sending something through"
+  },
+  "🏥": {
+    "metaphorical": "healing",
+    "mnemonic": "hospital treats the sick; healing is making whole again"
+  },
+  "🏦": {
+    "metaphorical": "security",
+    "mnemonic": "bank keeps money safe; security is kept safe"
+  },
+  "🏨": {
+    "metaphorical": "hospitality",
+    "mnemonic": "hotel welcomes travelers; hospitality is welcoming guests"
+  },
+  "🏩": {
+    "metaphorical": "intimacy",
+    "mnemonic": "love hotel marks private romance; intimacy is close private bond"
+  },
+  "🏪": {
+    "metaphorical": "convenience",
+    "mnemonic": "corner store is always nearby; convenience is easy to reach"
+  },
+  "🏫": {
+    "metaphorical": "learning",
+    "mnemonic": "school is where lessons happen; learning is gaining knowledge"
+  },
+  "🏬": {
+    "metaphorical": "variety",
+    "mnemonic": "department store holds many goods; variety is many options"
+  },
+  "🏭": {
+    "metaphorical": "production",
+    "mnemonic": "factory makes goods at scale; production is making output"
+  },
+  "🏯": {
+    "metaphorical": "fortress",
+    "mnemonic": "castle walls defend within; fortress is defended stronghold"
+  },
+  "🏰": {
+    "metaphorical": "fortress",
+    "mnemonic": "castle walls defend within; fortress is defended stronghold"
+  },
+  "💒": {
+    "metaphorical": "union",
+    "mnemonic": "wedding chapel joins two people; union is joining together"
+  },
+  "🗼": {
+    "metaphorical": "ambition",
+    "mnemonic": "tower rises above all else; ambition rises above the ordinary"
+  },
+  "🗽": {
+    "metaphorical": "freedom",
+    "mnemonic": "liberty lifts her torch; freedom is liberation from constraint"
+  },
+  "⛪": {
+    "metaphorical": "faith",
+    "mnemonic": "church gathers believers; faith is trust in what is unseen"
+  },
+  "🕌": {
+    "metaphorical": "faith",
+    "mnemonic": "mosque gathers believers; faith is trust in what is unseen"
+  },
+  "🛕": {
+    "metaphorical": "faith",
+    "mnemonic": "temple gathers believers; faith is trust in what is unseen"
+  },
+  "🕍": {
+    "metaphorical": "faith",
+    "mnemonic": "synagogue gathers believers; faith is trust in what is unseen"
+  },
+  "⛩️": {
+    "metaphorical": "faith",
+    "mnemonic": "shrine marks sacred ground; faith is trust in what is unseen"
+  },
+  "🕋": {
+    "metaphorical": "pilgrimage",
+    "mnemonic": "kaaba draws the faithful; pilgrimage is a sacred journey"
+  },
+  "🚂": {
+    "metaphorical": "momentum",
+    "mnemonic": "train stays on its track; momentum keeps moving forward"
+  },
+  "🚃": {
+    "metaphorical": "momentum",
+    "mnemonic": "train stays on its track; momentum keeps moving forward"
+  },
+  "🚄": {
+    "metaphorical": "speed",
+    "mnemonic": "bullet train races ahead; speed is moving very fast"
+  },
+  "🚅": {
+    "metaphorical": "speed",
+    "mnemonic": "bullet train races ahead; speed is moving very fast"
+  },
+  "🚆": {
+    "metaphorical": "momentum",
+    "mnemonic": "train stays on its track; momentum keeps moving forward"
+  },
+  "🚇": {
+    "metaphorical": "underground",
+    "mnemonic": "metro runs beneath the city; underground is hidden from view"
+  },
+  "🚈": {
+    "metaphorical": "commute",
+    "mnemonic": "light rail serves daily riders; commute is the daily journey"
+  },
+  "🚉": {
+    "metaphorical": "hub",
+    "mnemonic": "station connects many routes; hub is where paths meet"
+  },
+  "🚊": {
+    "metaphorical": "commute",
+    "mnemonic": "tram carries city riders; commute is the daily journey"
+  },
+  "🚝": {
+    "metaphorical": "commute",
+    "mnemonic": "monorail carries city riders; commute is the daily journey"
+  },
+  "🚞": {
+    "metaphorical": "scenic",
+    "mnemonic": "mountain rail climbs with views; scenic is beauty along the way"
+  },
+  "🚋": {
+    "metaphorical": "commute",
+    "mnemonic": "tram carries city riders; commute is the daily journey"
+  },
+  "🚌": {
+    "metaphorical": "commute",
+    "mnemonic": "bus carries many riders daily; commute is the daily journey"
+  },
+  "🚍": {
+    "metaphorical": "commute",
+    "mnemonic": "bus carries many riders daily; commute is the daily journey"
+  },
+  "🚎": {
+    "metaphorical": "commute",
+    "mnemonic": "trolleybus carries city riders; commute is the daily journey"
+  },
+  "🚐": {
+    "metaphorical": "shuttle",
+    "mnemonic": "van moves a small group; shuttle is moving a group along"
+  },
+  "🚑": {
+    "metaphorical": "emergency",
+    "mnemonic": "ambulance rushes to crisis; emergency is urgent crisis"
+  },
+  "🚒": {
+    "metaphorical": "rescue",
+    "mnemonic": "fire truck races to danger; rescue is saving from harm"
+  },
+  "🚓": {
+    "metaphorical": "authority",
+    "mnemonic": "police car enforces the law; authority is lawful power"
+  },
+  "🚔": {
+    "metaphorical": "authority",
+    "mnemonic": "police car enforces the law; authority is lawful power"
+  },
+  "🚕": {
+    "metaphorical": "hire",
+    "mnemonic": "taxi is hired for a ride; hire is paying for service"
+  },
+  "🚖": {
+    "metaphorical": "hire",
+    "mnemonic": "taxi is hired for a ride; hire is paying for service"
+  },
+  "🚗": {
+    "metaphorical": "mobility",
+    "mnemonic": "car moves you where you choose; mobility is freedom to move"
+  },
+  "🚘": {
+    "metaphorical": "mobility",
+    "mnemonic": "car moves you where you choose; mobility is freedom to move"
+  },
+  "🚙": {
+    "metaphorical": "utility",
+    "mnemonic": "suv hauls gear and people; utility is practical usefulness"
+  },
+  "🛻": {
+    "metaphorical": "haul",
+    "mnemonic": "pickup carries heavy loads; haul is carrying a heavy load"
+  },
+  "🚚": {
+    "metaphorical": "haul",
+    "mnemonic": "truck carries heavy freight; haul is carrying a heavy load"
+  },
+  "🚛": {
+    "metaphorical": "haul",
+    "mnemonic": "truck carries heavy freight; haul is carrying a heavy load"
+  },
+  "🚜": {
+    "metaphorical": "cultivation",
+    "mnemonic": "tractor works the fields; cultivation is growing and tending"
+  },
+  "🏎️": {
+    "metaphorical": "competition",
+    "mnemonic": "race car fights for first place; competition is striving to win"
+  },
+  "🏍️": {
+    "metaphorical": "rebellion",
+    "mnemonic": "motorcycle breaks from the pack; rebellion is breaking from norms"
+  },
+  "🛵": {
+    "metaphorical": "convenience",
+    "mnemonic": "scooter slips through traffic; convenience is quick and easy"
+  },
+  "🦽": {
+    "metaphorical": "accessibility",
+    "mnemonic": "wheelchair enables movement; accessibility is equal access"
+  },
+  "🦼": {
+    "metaphorical": "accessibility",
+    "mnemonic": "powered wheelchair enables movement; accessibility is equal access"
+  },
+  "🛺": {
+    "metaphorical": "hire",
+    "mnemonic": "rickshaw is hired for a ride; hire is paying for service"
+  },
+  "🚲": {
+    "metaphorical": "effort",
+    "mnemonic": "bike moves only when you pedal; effort is work you put in"
+  },
+  "🛴": {
+    "metaphorical": "convenience",
+    "mnemonic": "kick scooter is quick and light; convenience is quick and easy"
+  },
+  "🛹": {
+    "metaphorical": "daring",
+    "mnemonic": "skateboard rides the edge; daring is bold risk-taking"
+  },
+  "🛼": {
+    "metaphorical": "glide",
+    "mnemonic": "roller skates roll smoothly along; glide is smooth easy motion"
+  },
+  "🚏": {
+    "metaphorical": "waiting",
+    "mnemonic": "bus stop is where you wait; waiting is holding for what comes"
+  },
+  "🛣️": {
+    "metaphorical": "fastlane",
+    "mnemonic": "motorway speeds long trips; fastlane is the quickest path"
+  },
+  "🛤️": {
+    "metaphorical": "route",
+    "mnemonic": "railway marks a fixed path; route is the path you follow"
+  },
+  "⛽": {
+    "metaphorical": "refuel",
+    "mnemonic": "gas station fills the tank; refuel is restoring energy"
+  },
+  "🚨": {
+    "metaphorical": "urgency",
+    "mnemonic": "siren demands immediate attention; urgency is acting now"
+  },
+  "🚥": {
+    "metaphorical": "signal",
+    "mnemonic": "traffic light tells go or stop; signal is a clear instruction"
+  },
+  "🚦": {
+    "metaphorical": "signal",
+    "mnemonic": "traffic light tells go or stop; signal is a clear instruction"
+  },
+  "🛑": {
+    "metaphorical": "halt",
+    "mnemonic": "stop sign means do not proceed; halt is bringing movement to stop"
+  },
+  "🚧": {
+    "metaphorical": "blockage",
+    "mnemonic": "construction blocks the road; blockage is something in the way"
+  },
+  "⚓": {
+    "metaphorical": "grounding",
+    "mnemonic": "anchor holds the ship steady; grounding is staying steady"
+  },
+  "⛵": {
+    "metaphorical": "journey",
+    "mnemonic": "sailboat crosses open water; journey is travel over distance"
+  },
+  "🛶": {
+    "metaphorical": "exploration",
+    "mnemonic": "canoe probes quiet waters; exploration is seeking the unknown"
+  },
+  "🚤": {
+    "metaphorical": "rush",
+    "mnemonic": "speedboat cuts across waves; rush is moving with haste"
+  },
+  "🛳️": {
+    "metaphorical": "voyage",
+    "mnemonic": "cruise ship crosses oceans; voyage is a long sea journey"
+  },
+  "⛴️": {
+    "metaphorical": "crossing",
+    "mnemonic": "ferry links two shores; crossing is going from one side to another"
+  },
+  "🛥️": {
+    "metaphorical": "leisure",
+    "mnemonic": "motorboat skims for pleasure; leisure is relaxed enjoyment"
+  },
+  "🚢": {
+    "metaphorical": "voyage",
+    "mnemonic": "ship crosses open seas; voyage is a long sea journey"
+  },
+  "✈️": {
+    "metaphorical": "elevation",
+    "mnemonic": "plane rises above the ground; elevation is rising above"
+  },
+  "🛩️": {
+    "metaphorical": "elevation",
+    "mnemonic": "small plane rises above land; elevation is rising above"
+  },
+  "🛫": {
+    "metaphorical": "departure",
+    "mnemonic": "plane lifting off leaves the ground; departure is setting out"
+  },
+  "🛬": {
+    "metaphorical": "arrival",
+    "mnemonic": "plane touching down reaches destination; arrival is reaching the end"
+  },
+  "🪂": {
+    "metaphorical": "descent",
+    "mnemonic": "parachute slows a fall; descent is coming down safely"
+  },
+  "💺": {
+    "metaphorical": "passive",
+    "mnemonic": "seat holds you while others move; passive is not acting yourself"
+  },
+  "🚁": {
+    "metaphorical": "rescue",
+    "mnemonic": "helicopter hovers to reach the stranded; rescue is saving from harm"
+  },
+  "🚟": {
+    "metaphorical": "ascent",
+    "mnemonic": "suspension rail climbs overhead; ascent is rising upward"
+  },
+  "🚠": {
+    "metaphorical": "ascent",
+    "mnemonic": "cable car climbs the slope; ascent is rising upward"
+  },
+  "🚡": {
+    "metaphorical": "ascent",
+    "mnemonic": "cable car climbs the slope; ascent is rising upward"
+  },
+  "🛰️": {
+    "metaphorical": "surveillance",
+    "mnemonic": "satellite orbits and watches below; surveillance is watching from afar"
+  },
+  "🚀": {
+    "metaphorical": "launch",
+    "mnemonic": "rocket blasts into the sky; launch is a bold start"
+  },
+  "🛸": {
+    "metaphorical": "unknown",
+    "mnemonic": "ufo is unexplained in the sky; unknown is not yet understood"
+  },
+  "🛎️": {
+    "metaphorical": "service",
+    "mnemonic": "bellhop answers guest calls; service is attending to needs"
+  },
+  "🧳": {
+    "metaphorical": "baggage",
+    "mnemonic": "luggage is what you carry along; baggage is what you carry with you"
+  },
+  "⌛": {
+    "metaphorical": "finite",
+    "mnemonic": "sand runs out in the hourglass; finite is having a limit"
+  },
+  "⏳": {
+    "metaphorical": "finite",
+    "mnemonic": "sand runs out in the hourglass; finite is having a limit"
+  },
+  "⌚": {
+    "metaphorical": "punctuality",
+    "mnemonic": "watch tracks the exact moment; punctuality is being on time"
+  },
+  "⏰": {
+    "metaphorical": "urgency",
+    "mnemonic": "alarm clock demands you wake; urgency is acting now"
+  },
+  "⏱️": {
+    "metaphorical": "measurement",
+    "mnemonic": "stopwatch counts every second; measurement is precise tracking"
+  },
+  "⏲️": {
+    "metaphorical": "deadline",
+    "mnemonic": "timer counts down to zero; deadline is the moment time runs out"
+  },
+  "🕰️": {
+    "metaphorical": "passage",
+    "mnemonic": "mantel clock marks hours passing; passage is time going by"
+  },
+  "🕛": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🕧": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🕐": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🕑": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🕒": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🕓": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🕔": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🕕": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🕖": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🕗": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🕘": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🕙": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🕚": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🕦": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🌑": {
+    "metaphorical": "cycle",
+    "mnemonic": "new moon starts the cycle; cycle repeats in phases"
+  },
+  "🌒": {
+    "metaphorical": "growth",
+    "mnemonic": "waxing crescent grows brighter; growth is increasing over time"
+  },
+  "🌓": {
+    "metaphorical": "balance",
+    "mnemonic": "half moon splits light and dark; balance is equal halves"
+  },
+  "🌔": {
+    "metaphorical": "growth",
+    "mnemonic": "waxing gibbous nearly full; growth is increasing over time"
+  },
+  "🌕": {
+    "metaphorical": "peak",
+    "mnemonic": "full moon at maximum light; peak is the highest point"
+  },
+  "🌖": {
+    "metaphorical": "decline",
+    "mnemonic": "waning gibbous loses light; decline is decreasing over time"
+  },
+  "🌗": {
+    "metaphorical": "balance",
+    "mnemonic": "half moon splits light and dark; balance is equal halves"
+  },
+  "🌘": {
+    "metaphorical": "decline",
+    "mnemonic": "waning crescent fades away; decline is decreasing over time"
+  },
+  "🌙": {
+    "metaphorical": "cycle",
+    "mnemonic": "crescent moon marks a phase; cycle repeats in phases"
+  },
+  "🌚": {
+    "metaphorical": "personality",
+    "mnemonic": "moon with a face seems alive; personality is a living character"
+  },
+  "🌛": {
+    "metaphorical": "night",
+    "mnemonic": "crescent moon hangs at night; night is the dark half of day"
+  },
+  "🌜": {
+    "metaphorical": "night",
+    "mnemonic": "crescent moon hangs at night; night is the dark half of day"
+  },
+  "🌡️": {
+    "metaphorical": "fever",
+    "mnemonic": "thermometer measures heat; fever is overheated intensity"
+  },
+  "☀️": {
+    "metaphorical": "energy",
+    "mnemonic": "sun radiates light and warmth; energy is active power"
+  },
+  "🌝": {
+    "metaphorical": "brightness",
+    "mnemonic": "full moon face glows at night; brightness is vivid light"
+  },
+  "🌞": {
+    "metaphorical": "radiance",
+    "mnemonic": "sun with a face beams outward; radiance is shining outward"
+  },
+  "🪐": {
+    "metaphorical": "grandeur",
+    "mnemonic": "ringed planet looms vast in space; grandeur is impressive scale"
+  },
+  "⭐": {
+    "metaphorical": "excellence",
+    "mnemonic": "star stands out in the sky; excellence is standing out"
+  },
+  "🌟": {
+    "metaphorical": "brilliance",
+    "mnemonic": "glowing star shines brighter; brilliance is vivid brightness"
+  },
+  "✨": {
+    "metaphorical": "magic",
+    "mnemonic": "sparkles mark something special; magic is extraordinary wonder"
+  },
+  "⚡": {
+    "metaphorical": "insight",
+    "mnemonic": "lightning flashes in an instant; insight is a sudden flash"
+  },
+  "☄️": {
+    "metaphorical": "rarity",
+    "mnemonic": "comet appears once in ages; rarity is seldom seen"
+  },
+  "💥": {
+    "metaphorical": "impact",
+    "mnemonic": "collision bursts on contact; impact is forceful contact"
+  },
+  "🔥": {
+    "metaphorical": "passion",
+    "mnemonic": "fire burns hot and bright; passion is intense feeling"
+  },
+  "🌪️": {
+    "metaphorical": "turmoil",
+    "mnemonic": "tornado tears through order; turmoil is violent disorder"
+  },
+  "🌈": {
+    "metaphorical": "hope",
+    "mnemonic": "rainbow follows the storm; hope follows hardship"
+  },
+  "☁️": {
+    "metaphorical": "doubt",
+    "mnemonic": "clouds block the clear sky; doubt blocks what is clear"
+  },
+  "⛅": {
+    "metaphorical": "mixed",
+    "mnemonic": "sun and cloud share the sky; mixed is partly one partly another"
+  },
+  "⛈️": {
+    "metaphorical": "turmoil",
+    "mnemonic": "storm brings thunder and rain; turmoil is violent disorder"
+  },
+  "🌤️": {
+    "metaphorical": "optimism",
+    "mnemonic": "sun peeks through clouds; optimism sees light ahead"
+  },
+  "🌥️": {
+    "metaphorical": "caution",
+    "mnemonic": "sun behind heavy cloud; caution is holding back"
+  },
+  "🌦️": {
+    "metaphorical": "contrast",
+    "mnemonic": "sun shines while rain falls; contrast is opposites together"
+  },
+  "🌧️": {
+    "metaphorical": "sorrow",
+    "mnemonic": "rain falls like tears; sorrow is quiet sadness"
+  },
+  "🌨️": {
+    "metaphorical": "stillness",
+    "mnemonic": "snow quiets the landscape; stillness is calm quiet"
+  },
+  "🌩️": {
+    "metaphorical": "danger",
+    "mnemonic": "lightning strikes from the cloud; danger is imminent threat"
+  },
+  "🌫️": {
+    "metaphorical": "confusion",
+    "mnemonic": "fog blurs what is near; confusion blurs what is clear"
+  },
+  "🌬️": {
+    "metaphorical": "change",
+    "mnemonic": "wind shifts direction freely; change shifts how things go"
+  },
+  "💨": {
+    "metaphorical": "haste",
+    "mnemonic": "dash of wind moves fast; haste is moving quickly"
+  },
+  "💧": {
+    "metaphorical": "beginning",
+    "mnemonic": "one droplet starts the flow; beginning is a small start"
+  },
+  "💦": {
+    "metaphorical": "effort",
+    "mnemonic": "sweat drops show hard work; effort is work that costs you"
+  },
+  "☂️": {
+    "metaphorical": "protection",
+    "mnemonic": "umbrella shields from rain; protection shields from harm"
+  },
+  "☔": {
+    "metaphorical": "protection",
+    "mnemonic": "umbrella in rain shields you; protection shields from harm"
+  },
+  "☃️": {
+    "metaphorical": "temporary",
+    "mnemonic": "snowman melts when warmth returns; temporary does not last"
+  },
+  "⛄": {
+    "metaphorical": "temporary",
+    "mnemonic": "snowman melts when warmth returns; temporary does not last"
+  },
+  "🎃": {
+    "metaphorical": "disguise",
+    "mnemonic": "jack-o-lantern hides a carved face; disguise hides true identity"
+  },
+  "🎄": {
+    "metaphorical": "tradition",
+    "mnemonic": "christmas tree marks yearly ritual; tradition is repeated custom"
+  },
+  "🎆": {
+    "metaphorical": "celebration",
+    "mnemonic": "fireworks burst for festivity; celebration is joyful observance"
+  },
+  "🎇": {
+    "metaphorical": "celebration",
+    "mnemonic": "sparkler lights a festive night; celebration is joyful observance"
+  },
+  "🧨": {
+    "metaphorical": "surprise",
+    "mnemonic": "firecracker pops without warning; surprise is sudden unexpected"
+  },
+  "🎈": {
+    "metaphorical": "festivity",
+    "mnemonic": "balloon lifts a party mood; festivity is lighthearted joy"
+  },
+  "🎉": {
+    "metaphorical": "celebration",
+    "mnemonic": "party popper marks a fest; celebration is joyful observance"
+  },
+  "🎊": {
+    "metaphorical": "triumph",
+    "mnemonic": "confetti rains on victory; triumph is winning celebration"
+  },
+  "🎋": {
+    "metaphorical": "wish",
+    "mnemonic": "tanabata tree holds written hopes; wish is hoped-for outcome"
+  },
+  "🎍": {
+    "metaphorical": "decoration",
+    "mnemonic": "pine decoration marks the season; decoration adorns an occasion"
+  },
+  "🎎": {
+    "metaphorical": "heritage",
+    "mnemonic": "dolls display cultural tradition; heritage is passed-down culture"
+  },
+  "🎏": {
+    "metaphorical": "aspiration",
+    "mnemonic": "carp streamer swims upward; aspiration is striving upward"
+  },
+  "🎐": {
+    "metaphorical": "reminder",
+    "mnemonic": "wind chime rings with each breeze; reminder brings thought back"
+  },
+  "🎑": {
+    "metaphorical": "reflection",
+    "mnemonic": "moon viewing invites quiet gaze; reflection is thoughtful looking"
+  },
+  "🧧": {
+    "metaphorical": "blessing",
+    "mnemonic": "red envelope carries good wishes; blessing is wished well-being"
+  },
+  "🎀": {
+    "metaphorical": "decoration",
+    "mnemonic": "ribbon ties a gift prettily; decoration adorns an occasion"
+  },
+  "🎁": {
+    "metaphorical": "generosity",
+    "mnemonic": "gift is given to another; generosity is giving freely"
+  },
+  "🎗️": {
+    "metaphorical": "reminder",
+    "mnemonic": "awareness ribbon marks a cause; reminder brings thought back"
+  },
+  "🎟️": {
+    "metaphorical": "admission",
+    "mnemonic": "ticket grants entry inside; admission is being let in"
+  },
+  "🎫": {
+    "metaphorical": "admission",
+    "mnemonic": "ticket grants entry inside; admission is being let in"
+  },
+  "🎖️": {
+    "metaphorical": "honor",
+    "mnemonic": "medal marks distinguished service; honor is earned respect"
+  },
+  "🏆": {
+    "metaphorical": "victory",
+    "mnemonic": "trophy goes to the winner; victory is winning the contest"
+  },
+  "🏅": {
+    "metaphorical": "achievement",
+    "mnemonic": "medal marks accomplished feat; achievement is reaching a goal"
+  },
+  "🥇": {
+    "metaphorical": "first",
+    "mnemonic": "gold medal marks top place; first is leading all others"
+  },
+  "🥈": {
+    "metaphorical": "second",
+    "mnemonic": "silver medal marks runner-up; second is next after first"
+  },
+  "🥉": {
+    "metaphorical": "third",
+    "mnemonic": "bronze medal marks third place; third is after second"
+  },
+  "⚽": {
+    "metaphorical": "teamwork",
+    "mnemonic": "soccer needs players together; teamwork is acting together"
+  },
+  "🏀": {
+    "metaphorical": "competition",
+    "mnemonic": "basketball contests for the hoop; competition is striving to win"
+  },
+  "🏈": {
+    "metaphorical": "strategy",
+    "mnemonic": "football plans each play; strategy is planned action"
+  },
+  "⚾": {
+    "metaphorical": "tradition",
+    "mnemonic": "baseball follows timeless rules; tradition is repeated custom"
+  },
+  "🥎": {
+    "metaphorical": "adaptation",
+    "mnemonic": "softball is baseball made gentler; adaptation is adjusting the form"
+  },
+  "🎾": {
+    "metaphorical": "rally",
+    "mnemonic": "tennis exchanges shot for shot; rally is back-and-forth exchange"
+  },
+  "🏐": {
+    "metaphorical": "cooperation",
+    "mnemonic": "volleyball keeps the ball aloft together; cooperation is joint effort"
+  },
+  "🏉": {
+    "metaphorical": "perseverance",
+    "mnemonic": "rugby pushes through contact; perseverance is pushing through"
+  },
+  "🥏": {
+    "metaphorical": "cooperation",
+    "mnemonic": "frisbee passes between players; cooperation is joint effort"
+  },
+  "🎳": {
+    "metaphorical": "precision",
+    "mnemonic": "bowling needs an exact line; precision is exact aim"
+  },
+  "🏏": {
+    "metaphorical": "patience",
+    "mnemonic": "cricket waits for the right ball; patience is waiting for timing"
+  },
+  "🏑": {
+    "metaphorical": "agility",
+    "mnemonic": "field hockey shifts fast on turf; agility is quick nimble motion"
+  },
+  "🏒": {
+    "metaphorical": "intensity",
+    "mnemonic": "hockey moves at fierce speed; intensity is fierce force"
+  },
+  "🥍": {
+    "metaphorical": "agility",
+    "mnemonic": "lacrosse weaves with quick passes; agility is quick nimble motion"
+  },
+  "🏓": {
+    "metaphorical": "reflex",
+    "mnemonic": "ping pong demands instant return; reflex is instant response"
+  },
+  "🏸": {
+    "metaphorical": "reflex",
+    "mnemonic": "badminton returns a fast shuttle; reflex is instant response"
+  },
+  "🥊": {
+    "metaphorical": "conflict",
+    "mnemonic": "boxing trades forceful blows; conflict is forceful opposition"
+  },
+  "🥋": {
+    "metaphorical": "discipline",
+    "mnemonic": "martial arts train controlled skill; discipline is controlled practice"
+  },
+  "🥅": {
+    "metaphorical": "objective",
+    "mnemonic": "goal net is what you aim for; objective is the target aim"
+  },
+  "⛳": {
+    "metaphorical": "precision",
+    "mnemonic": "golf needs an exact stroke; precision is exact aim"
+  },
+  "⛸️": {
+    "metaphorical": "grace",
+    "mnemonic": "skating glides with smooth motion; grace is smooth controlled beauty"
+  },
+  "🎣": {
+    "metaphorical": "patience",
+    "mnemonic": "fishing waits for the bite; patience is waiting for timing"
+  },
+  "🤿": {
+    "metaphorical": "exploration",
+    "mnemonic": "diving probes beneath the surface; exploration is seeking the unknown"
+  },
+  "🎿": {
+    "metaphorical": "thrill",
+    "mnemonic": "skiing races down the slope; thrill is exciting rush"
+  },
+  "🛷": {
+    "metaphorical": "thrill",
+    "mnemonic": "sled speeds down the hill; thrill is exciting rush"
+  },
+  "🥌": {
+    "metaphorical": "strategy",
+    "mnemonic": "curling places each stone with care; strategy is planned action"
+  },
+  "🎯": {
+    "metaphorical": "precision",
+    "mnemonic": "dart board demands exact aim; precision is exact aim"
+  },
+  "🪀": {
+    "metaphorical": "persistence",
+    "mnemonic": "yo-yo returns when you pull; persistence is coming back again"
+  },
+  "🪁": {
+    "metaphorical": "aspiration",
+    "mnemonic": "kite rises on the wind; aspiration is striving upward"
+  },
+  "🎱": {
+    "metaphorical": "strategy",
+    "mnemonic": "pool plans each shot ahead; strategy is planned action"
+  },
+  "🔮": {
+    "metaphorical": "foresight",
+    "mnemonic": "crystal ball sees what may come; foresight is seeing ahead"
+  },
+  "🪄": {
+    "metaphorical": "shortcut",
+    "mnemonic": "magic wand fixes in one wave; shortcut is bypassing hard work"
+  },
+  "🎮": {
+    "metaphorical": "escapism",
+    "mnemonic": "video game enters another world; escapism is leaving the real"
+  },
+  "🕹️": {
+    "metaphorical": "control",
+    "mnemonic": "joystick steers the action; control is directing what happens"
+  },
+  "🎰": {
+    "metaphorical": "gamble",
+    "mnemonic": "slot machine bets on chance; gamble is risking on chance"
+  },
+  "🎲": {
+    "metaphorical": "chance",
+    "mnemonic": "dice land on random faces; chance is unpredictable outcome"
+  },
+  "🧩": {
+    "metaphorical": "problem",
+    "mnemonic": "puzzle pieces must fit together; problem is something to solve"
+  },
+  "🧸": {
+    "metaphorical": "comfort",
+    "mnemonic": "teddy bear soothes a child; comfort is soothing ease"
+  },
+  "🪅": {
+    "metaphorical": "surprise",
+    "mnemonic": "pinata bursts with hidden treats; surprise is sudden unexpected"
+  },
+  "🪩": {
+    "metaphorical": "festivity",
+    "mnemonic": "mirror ball lights the dance floor; festivity is lighthearted joy"
+  },
+  "🪆": {
+    "metaphorical": "layers",
+    "mnemonic": "nesting dolls hide within each other; layers are levels within levels"
+  },
+  "♠️": {
+    "metaphorical": "suit",
+    "mnemonic": "spade is one card suit; suit is a matched category"
+  },
+  "♥️": {
+    "metaphorical": "suit",
+    "mnemonic": "heart is one card suit; suit is a matched category"
+  },
+  "♦️": {
+    "metaphorical": "suit",
+    "mnemonic": "diamond is one card suit; suit is a matched category"
+  },
+  "♣️": {
+    "metaphorical": "suit",
+    "mnemonic": "club is one card suit; suit is a matched category"
+  },
+  "♟️": {
+    "metaphorical": "sacrifice",
+    "mnemonic": "pawn is traded in chess strategy; sacrifice is giving up for gain"
+  },
+  "🃏": {
+    "metaphorical": "wildcard",
+    "mnemonic": "joker can be anything needed; wildcard is unpredictable factor"
+  },
+  "🀄": {
+    "metaphorical": "tradition",
+    "mnemonic": "mahjong carries old game culture; tradition is repeated custom"
+  },
+  "🎴": {
+    "metaphorical": "tradition",
+    "mnemonic": "flower cards carry old game culture; tradition is repeated custom"
+  },
+  "🎭": {
+    "metaphorical": "pretense",
+    "mnemonic": "theater masks hide the actor; pretense is playing a role"
+  },
+  "🖼️": {
+    "metaphorical": "display",
+    "mnemonic": "framed picture shows for viewing; display is shown for others"
+  },
+  "🎨": {
+    "metaphorical": "creativity",
+    "mnemonic": "palette holds colors to create; creativity is making something new"
+  },
+  "🧵": {
+    "metaphorical": "connection",
+    "mnemonic": "thread stitches pieces together; connection links separate parts"
+  },
+  "🪡": {
+    "metaphorical": "repair",
+    "mnemonic": "needle mends torn fabric; repair is fixing what is broken"
+  },
+  "🧶": {
+    "metaphorical": "patience",
+    "mnemonic": "yarn is worked stitch by stitch; patience is steady careful work"
+  },
+  "🪢": {
+    "metaphorical": "bond",
+    "mnemonic": "knot ties two ends together; bond is holding fast together"
+  },
+  "👓": {
+    "metaphorical": "clarity",
+    "mnemonic": "glasses sharpen what you see; clarity is seeing clearly"
+  },
+  "🕶️": {
+    "metaphorical": "cool",
+    "mnemonic": "sunglasses hide the eyes; cool is calm unbothered style"
+  },
+  "🥽": {
+    "metaphorical": "protection",
+    "mnemonic": "goggles shield the eyes; protection shields from harm"
+  },
+  "🥼": {
+    "metaphorical": "expertise",
+    "mnemonic": "lab coat marks scientific work; expertise is specialized knowledge"
+  },
+  "🦺": {
+    "metaphorical": "safety",
+    "mnemonic": "safety vest warns of hazard; safety is kept from harm"
+  },
+  "👔": {
+    "metaphorical": "formality",
+    "mnemonic": "necktie marks formal dress; formality is proper official manner"
+  },
+  "👕": {
+    "metaphorical": "casual",
+    "mnemonic": "shirt is everyday wear; casual is relaxed informal"
+  },
+  "👖": {
+    "metaphorical": "casual",
+    "mnemonic": "jeans are everyday wear; casual is relaxed informal"
+  },
+  "🧣": {
+    "metaphorical": "warmth",
+    "mnemonic": "scarf wraps against the cold; warmth is comforting heat"
+  },
+  "🧤": {
+    "metaphorical": "protection",
+    "mnemonic": "gloves shield the hands; protection shields from harm"
+  },
+  "🧥": {
+    "metaphorical": "shelter",
+    "mnemonic": "coat wraps against the weather; shelter is cover from elements"
+  },
+  "🧦": {
+    "metaphorical": "comfort",
+    "mnemonic": "socks cushion every step; comfort is physical ease"
+  },
+  "👗": {
+    "metaphorical": "elegance",
+    "mnemonic": "dress is worn for occasion; elegance is refined grace"
+  },
+  "👘": {
+    "metaphorical": "heritage",
+    "mnemonic": "kimono carries traditional form; heritage is passed-down culture"
+  },
+  "🥻": {
+    "metaphorical": "heritage",
+    "mnemonic": "sari carries traditional form; heritage is passed-down culture"
+  },
+  "🩱": {
+    "metaphorical": "exposure",
+    "mnemonic": "swimsuit reveals for water; exposure is being laid open"
+  },
+  "🩲": {
+    "metaphorical": "intimacy",
+    "mnemonic": "underwear stays closest to skin; intimacy is close private bond"
+  },
+  "🩳": {
+    "metaphorical": "casual",
+    "mnemonic": "shorts are relaxed summer wear; casual is relaxed informal"
+  },
+  "👙": {
+    "metaphorical": "allure",
+    "mnemonic": "bikini draws the eye; allure is attractive appeal"
+  },
+  "👚": {
+    "metaphorical": "casual",
+    "mnemonic": "blouse is everyday wear; casual is relaxed informal"
+  },
+  "👛": {
+    "metaphorical": "savings",
+    "mnemonic": "purse holds small valuables; savings is kept resources"
+  },
+  "👜": {
+    "metaphorical": "carry",
+    "mnemonic": "handbag carries daily needs; carry is bearing what you need"
+  },
+  "👝": {
+    "metaphorical": "carry",
+    "mnemonic": "clutch carries essentials close; carry is bearing what you need"
+  },
+  "🛍️": {
+    "metaphorical": "consumption",
+    "mnemonic": "shopping bags fill with purchases; consumption is taking things in"
+  },
+  "🎒": {
+    "metaphorical": "preparation",
+    "mnemonic": "backpack holds what you need ahead; preparation is readying beforehand"
+  },
+  "🩴": {
+    "metaphorical": "casual",
+    "mnemonic": "sandal is light easy footwear; casual is relaxed informal"
+  },
+  "👞": {
+    "metaphorical": "formality",
+    "mnemonic": "dress shoe marks formal step; formality is proper official manner"
+  },
+  "👟": {
+    "metaphorical": "activity",
+    "mnemonic": "sneaker is built for movement; activity is active motion"
+  },
+  "🥾": {
+    "metaphorical": "endurance",
+    "mnemonic": "boot treads rough terrain; endurance is lasting through hardship"
+  },
+  "🥿": {
+    "metaphorical": "comfort",
+    "mnemonic": "flat shoe eases every step; comfort is physical ease"
+  },
+  "👠": {
+    "metaphorical": "allure",
+    "mnemonic": "heel lifts and shapes the step; allure is attractive appeal"
+  },
+  "👡": {
+    "metaphorical": "casual",
+    "mnemonic": "sandal is light easy footwear; casual is relaxed informal"
+  },
+  "🩰": {
+    "metaphorical": "grace",
+    "mnemonic": "ballet shoe enables fluid dance; grace is smooth controlled beauty"
+  },
+  "👢": {
+    "metaphorical": "endurance",
+    "mnemonic": "boot treads rough terrain; endurance is lasting through hardship"
+  },
+  "👑": {
+    "metaphorical": "sovereignty",
+    "mnemonic": "crown marks the ruler; sovereignty is supreme authority"
+  },
+  "👒": {
+    "metaphorical": "shade",
+    "mnemonic": "hat shields from sun above; shade is shelter from harshness"
+  },
+  "🎩": {
+    "metaphorical": "formality",
+    "mnemonic": "top hat marks formal dress; formality is proper official manner"
+  },
+  "🎓": {
+    "metaphorical": "achievement",
+    "mnemonic": "grad cap marks completed study; achievement is reaching a goal"
+  },
+  "🧢": {
+    "metaphorical": "casual",
+    "mnemonic": "cap is everyday headwear; casual is relaxed informal"
+  },
+  "🪖": {
+    "metaphorical": "defense",
+    "mnemonic": "helmet guards the head in battle; defense is guarding against harm"
+  },
+  "⛑️": {
+    "metaphorical": "rescue",
+    "mnemonic": "rescue helmet marks emergency aid; rescue is saving from harm"
+  },
+  "📿": {
+    "metaphorical": "devotion",
+    "mnemonic": "prayer beads mark repeated prayer; devotion is committed reverence"
+  },
+  "💄": {
+    "metaphorical": "appearance",
+    "mnemonic": "lipstick colors the lips; appearance is how you present"
+  },
+  "💍": {
+    "metaphorical": "commitment",
+    "mnemonic": "ring marks a binding promise; commitment is a binding promise"
+  },
+  "💎": {
+    "metaphorical": "value",
+    "mnemonic": "gem is rare and precious; value is worth holding dear"
+  },
+  "🔇": {
+    "metaphorical": "suppression",
+    "mnemonic": "mute silences all sound; suppression is holding back expression"
+  },
+  "🔈": {
+    "metaphorical": "volume",
+    "mnemonic": "quiet speaker plays low; volume is level of sound"
+  },
+  "🔉": {
+    "metaphorical": "volume",
+    "mnemonic": "medium speaker plays louder; volume is level of sound"
+  },
+  "🔊": {
+    "metaphorical": "amplification",
+    "mnemonic": "loud speaker fills the room; amplification is making louder"
+  },
+  "📢": {
+    "metaphorical": "announcement",
+    "mnemonic": "megaphone broadcasts to the crowd; announcement is public declaration"
+  },
+  "📣": {
+    "metaphorical": "announcement",
+    "mnemonic": "megaphone broadcasts to the crowd; announcement is public declaration"
+  },
+  "📯": {
+    "metaphorical": "summons",
+    "mnemonic": "horn calls people to gather; summons is calling to come"
+  },
+  "🔔": {
+    "metaphorical": "alert",
+    "mnemonic": "bell rings to warn or call; alert is warning attention"
+  },
+  "🔕": {
+    "metaphorical": "silence",
+    "mnemonic": "bell with slash means no sound; silence is absence of noise"
+  },
+  "🎼": {
+    "metaphorical": "composition",
+    "mnemonic": "score arranges notes on lines; composition is arranged creation"
+  },
+  "🎵": {
+    "metaphorical": "melody",
+    "mnemonic": "note carries a musical line; melody is tuneful line"
+  },
+  "🎶": {
+    "metaphorical": "harmony",
+    "mnemonic": "notes together make music; harmony is parts fitting together"
+  },
+  "🎙️": {
+    "metaphorical": "broadcast",
+    "mnemonic": "studio mic sends voice outward; broadcast is sending widely"
+  },
+  "🎚️": {
+    "metaphorical": "adjustment",
+    "mnemonic": "slider fine-tunes the level; adjustment is fine tuning"
+  },
+  "🎛️": {
+    "metaphorical": "control",
+    "mnemonic": "knobs adjust the sound mix; control is directing settings"
+  },
+  "🎤": {
+    "metaphorical": "performance",
+    "mnemonic": "mic carries a live voice; performance is presenting to others"
+  },
+  "🎧": {
+    "metaphorical": "immersion",
+    "mnemonic": "headphones seal you in sound; immersion is deep involvement"
+  },
+  "📻": {
+    "metaphorical": "broadcast",
+    "mnemonic": "radio sends sound through air; broadcast is sending widely"
+  },
+  "🎷": {
+    "metaphorical": "expression",
+    "mnemonic": "saxophone voices smoky tone; expression is outward feeling"
+  },
+  "🪗": {
+    "metaphorical": "nostalgia",
+    "mnemonic": "accordion squeezes old-world song; nostalgia is longing for past"
+  },
+  "🎸": {
+    "metaphorical": "rebellion",
+    "mnemonic": "guitar drives raw loud sound; rebellion is breaking from norms"
+  },
+  "🎹": {
+    "metaphorical": "precision",
+    "mnemonic": "piano needs exact finger keys; precision is exact aim"
+  },
+  "🥁": {
+    "metaphorical": "rhythm",
+    "mnemonic": "drum sets the beat for all; rhythm is steady repeating pulse"
+  },
+  "🪘": {
+    "metaphorical": "rhythm",
+    "mnemonic": "long drum sets a steady beat; rhythm is steady repeating pulse"
+  },
+  "🎺": {
+    "metaphorical": "fanfare",
+    "mnemonic": "trumpet announces with bold blast; fanfare is bold announcement"
+  },
+  "🎻": {
+    "metaphorical": "elegance",
+    "mnemonic": "violin sings with refined tone; elegance is refined grace"
+  },
+  "🪕": {
+    "metaphorical": "folksy",
+    "mnemonic": "banjo plucks rustic melody; folksy is plain homely character"
+  },
+  "🎬": {
+    "metaphorical": "production",
+    "mnemonic": "clapper marks a filmed take; production is making output"
+  },
+  "🎥": {
+    "metaphorical": "capture",
+    "mnemonic": "movie camera records the scene; capture is holding a moment"
+  },
+  "📽️": {
+    "metaphorical": "projection",
+    "mnemonic": "projector throws image on screen; projection is showing outward"
+  },
+  "🎞️": {
+    "metaphorical": "sequence",
+    "mnemonic": "film strip holds frames in order; sequence is ordered series"
+  },
+  "📺": {
+    "metaphorical": "broadcast",
+    "mnemonic": "tv sends shows into homes; broadcast is sending widely"
+  },
+  "📷": {
+    "metaphorical": "capture",
+    "mnemonic": "camera freezes a moment in light; capture is holding a moment"
+  },
+  "📸": {
+    "metaphorical": "capture",
+    "mnemonic": "camera flash freezes the instant; capture is holding a moment"
+  },
+  "📹": {
+    "metaphorical": "recording",
+    "mnemonic": "camcorder tapes moving scenes; recording is preserving over time"
+  },
+  "📼": {
+    "metaphorical": "archive",
+    "mnemonic": "vhs tape stores old footage; archive is stored past record"
+  },
+  "🔍": {
+    "metaphorical": "scrutiny",
+    "mnemonic": "magnifier enlarges small detail; scrutiny is close examination"
+  },
+  "🔎": {
+    "metaphorical": "scrutiny",
+    "mnemonic": "magnifier enlarges small detail; scrutiny is close examination"
+  },
+  "🕯️": {
+    "metaphorical": "ambience",
+    "mnemonic": "candle gives soft warm light; ambience is surrounding mood"
+  },
+  "💡": {
+    "metaphorical": "insight",
+    "mnemonic": "bulb lights when idea clicks; insight is a sudden flash"
+  },
+  "🔦": {
+    "metaphorical": "revelation",
+    "mnemonic": "flashlight reveals what was dark; revelation is making known"
+  },
+  "🏮": {
+    "metaphorical": "guidance",
+    "mnemonic": "lantern lights the path ahead; guidance is showing the way"
+  },
+  "🪔": {
+    "metaphorical": "devotion",
+    "mnemonic": "diya lamp marks sacred light; devotion is committed reverence"
+  },
+  "🧯": {
+    "metaphorical": "containment",
+    "mnemonic": "extinguisher stops spreading fire; containment is holding in bounds"
+  },
+  "🛢️": {
+    "metaphorical": "reserve",
+    "mnemonic": "oil drum stores bulk supply; reserve is stored supply"
+  },
+  "🔨": {
+    "metaphorical": "force",
+    "mnemonic": "hammer drives with blunt force; force is direct strong power"
+  },
+  "🪓": {
+    "metaphorical": "severance",
+    "mnemonic": "axe cuts through wood; severance is cutting apart"
+  },
+  "⛏️": {
+    "metaphorical": "excavation",
+    "mnemonic": "pick digs into hard ground; excavation is digging deep"
+  },
+  "⚒️": {
+    "metaphorical": "labor",
+    "mnemonic": "hammer and pick break hard stone; labor is hard physical work"
+  },
+  "🛠️": {
+    "metaphorical": "repair",
+    "mnemonic": "tools fix what is broken; repair is fixing what is broken"
+  },
+  "🗡️": {
+    "metaphorical": "threat",
+    "mnemonic": "dagger is close and dangerous; threat is danger nearby"
+  },
+  "⚔️": {
+    "metaphorical": "conflict",
+    "mnemonic": "crossed swords mark battle; conflict is forceful opposition"
+  },
+  "💣": {
+    "metaphorical": "danger",
+    "mnemonic": "bomb can destroy on detonation; danger is imminent threat"
+  },
+  "🪃": {
+    "metaphorical": "return",
+    "mnemonic": "boomerang curves back to thrower; return is coming back again"
+  },
+  "🏹": {
+    "metaphorical": "aim",
+    "mnemonic": "bow sends arrow to target; aim is directing toward target"
+  },
+  "🛡️": {
+    "metaphorical": "defense",
+    "mnemonic": "shield blocks incoming blows; defense is guarding against harm"
+  },
+  "🪚": {
+    "metaphorical": "division",
+    "mnemonic": "saw cuts material apart; division is splitting into parts"
+  },
+  "🔧": {
+    "metaphorical": "adjustment",
+    "mnemonic": "wrench tightens or loosens fit; adjustment is fine tuning"
+  },
+  "🪛": {
+    "metaphorical": "assembly",
+    "mnemonic": "screwdriver joins parts together; assembly is putting together"
+  },
+  "🗜️": {
+    "metaphorical": "pressure",
+    "mnemonic": "clamp squeezes with steady force; pressure is squeezing force"
+  },
+  "⚖️": {
+    "metaphorical": "justice",
+    "mnemonic": "scales weigh both sides equally; justice is fair balance"
+  },
+  "🦯": {
+    "metaphorical": "guidance",
+    "mnemonic": "white cane guides blind steps; guidance is showing the way"
+  },
+  "🔗": {
+    "metaphorical": "connection",
+    "mnemonic": "link joins two chains together; connection links separate parts"
+  },
+  "⛓️": {
+    "metaphorical": "bondage",
+    "mnemonic": "chains bind and restrict movement; bondage is being held fast"
+  },
+  "🪝": {
+    "metaphorical": "catch",
+    "mnemonic": "hook snags and holds fast; catch is seizing and holding"
+  },
+  "🧰": {
+    "metaphorical": "readiness",
+    "mnemonic": "toolbox holds gear for the job; readiness is prepared for task"
+  },
+  "🧲": {
+    "metaphorical": "attraction",
+    "mnemonic": "magnet pulls metal toward it; attraction is pulling toward"
+  },
+  "🪜": {
+    "metaphorical": "advancement",
+    "mnemonic": "ladder climbs step by step; advancement is rising by stages"
+  },
+  "💸": {
+    "metaphorical": "waste",
+    "mnemonic": "money flies away with wings; waste is losing what you had"
+  },
+  "💵": {
+    "metaphorical": "value",
+    "mnemonic": "dollar bill holds spending power; value is worth exchanged"
+  },
+  "💴": {
+    "metaphorical": "value",
+    "mnemonic": "yen note holds spending power; value is worth exchanged"
+  },
+  "💶": {
+    "metaphorical": "value",
+    "mnemonic": "euro note holds spending power; value is worth exchanged"
+  },
+  "💷": {
+    "metaphorical": "value",
+    "mnemonic": "pound note holds spending power; value is worth exchanged"
+  },
+  "🪙": {
+    "metaphorical": "token",
+    "mnemonic": "coin is small portable value; token is small stand-in value"
+  },
+  "💰": {
+    "metaphorical": "wealth",
+    "mnemonic": "money bag holds accumulated coins; wealth is accumulated resources"
+  },
+  "💳": {
+    "metaphorical": "credit",
+    "mnemonic": "card borrows now and pays later; credit is trust to pay later"
+  },
+  "🧾": {
+    "metaphorical": "proof",
+    "mnemonic": "receipt proves the transaction; proof is evidence of fact"
+  },
+  "💹": {
+    "metaphorical": "trend",
+    "mnemonic": "chart shows market direction; trend is direction over time"
+  },
+  "✉️": {
+    "metaphorical": "message",
+    "mnemonic": "envelope carries written words; message is communicated content"
+  },
+  "📧": {
+    "metaphorical": "message",
+    "mnemonic": "email sends words instantly; message is communicated content"
+  },
+  "📨": {
+    "metaphorical": "arrival",
+    "mnemonic": "incoming mail just arrived; arrival is reaching the end"
+  },
+  "📩": {
+    "metaphorical": "affection",
+    "mnemonic": "love letter carries tender words; affection is tender feeling"
+  },
+  "📤": {
+    "metaphorical": "outgoing",
+    "mnemonic": "outbox holds mail to send; outgoing is leaving your hands"
+  },
+  "📥": {
+    "metaphorical": "incoming",
+    "mnemonic": "inbox holds mail received; incoming is arriving to you"
+  },
+  "📦": {
+    "metaphorical": "bundle",
+    "mnemonic": "package wraps items together; bundle is items grouped together"
+  },
+  "📫": {
+    "metaphorical": "reception",
+    "mnemonic": "closed mailbox holds delivered mail; reception is receiving inward"
+  },
+  "📪": {
+    "metaphorical": "reception",
+    "mnemonic": "mailbox holds delivered mail; reception is receiving inward"
+  },
+  "📬": {
+    "metaphorical": "reception",
+    "mnemonic": "open mailbox shows new mail; reception is receiving inward"
+  },
+  "📭": {
+    "metaphorical": "emptiness",
+    "mnemonic": "empty mailbox has nothing inside; emptiness is having nothing"
+  },
+  "📮": {
+    "metaphorical": "dispatch",
+    "mnemonic": "postbox sends mail on its way; dispatch is sending outward"
+  },
+  "🗳️": {
+    "metaphorical": "choice",
+    "mnemonic": "ballot records your vote; choice is selecting among options"
+  },
+  "✏️": {
+    "metaphorical": "draft",
+    "mnemonic": "pencil marks can be erased; draft is tentative first version"
+  },
+  "✒️": {
+    "metaphorical": "commitment",
+    "mnemonic": "ink pen marks are lasting; commitment is a binding promise"
+  },
+  "🖋️": {
+    "metaphorical": "commitment",
+    "mnemonic": "fountain pen lays lasting ink; commitment is a binding promise"
+  },
+  "🖊️": {
+    "metaphorical": "commitment",
+    "mnemonic": "pen ink stays on the page; commitment is a binding promise"
+  },
+  "🖌️": {
+    "metaphorical": "artistry",
+    "mnemonic": "brush paints with flowing strokes; artistry is skilled creative work"
+  },
+  "🖍️": {
+    "metaphorical": "boldness",
+    "mnemonic": "crayon marks with thick color; boldness is strong visible stroke"
+  },
+  "📝": {
+    "metaphorical": "reminder",
+    "mnemonic": "memo note jogs the memory; reminder brings thought back"
+  },
+  "💼": {
+    "metaphorical": "business",
+    "mnemonic": "briefcase carries work affairs; business is commercial affairs"
+  },
+  "📁": {
+    "metaphorical": "organization",
+    "mnemonic": "folder groups related papers; organization is orderly grouping"
+  },
+  "📂": {
+    "metaphorical": "organization",
+    "mnemonic": "open folder reveals grouped files; organization is orderly grouping"
+  },
+  "🗂️": {
+    "metaphorical": "organization",
+    "mnemonic": "dividers sort papers by section; organization is orderly grouping"
+  },
+  "📅": {
+    "metaphorical": "schedule",
+    "mnemonic": "calendar marks planned dates; schedule is planned timing"
+  },
+  "📆": {
+    "metaphorical": "schedule",
+    "mnemonic": "tear-off calendar marks each day; schedule is planned timing"
+  },
+  "🗒️": {
+    "metaphorical": "reminder",
+    "mnemonic": "notepad catches quick notes; reminder brings thought back"
+  },
+  "🗓️": {
+    "metaphorical": "schedule",
+    "mnemonic": "spiral calendar plans the month; schedule is planned timing"
+  },
+  "📇": {
+    "metaphorical": "index",
+    "mnemonic": "card index sorts for lookup; index is sorted reference"
+  },
+  "📈": {
+    "metaphorical": "growth",
+    "mnemonic": "chart line rises upward; growth is increasing over time"
+  },
+  "📉": {
+    "metaphorical": "decline",
+    "mnemonic": "chart line falls downward; decline is decreasing over time"
+  },
+  "📊": {
+    "metaphorical": "analysis",
+    "mnemonic": "bar chart compares quantities; analysis is examining data"
+  },
+  "📋": {
+    "metaphorical": "accountability",
+    "mnemonic": "clipboard tracks tasks to do; accountability is answerable tracking"
+  },
+  "📌": {
+    "metaphorical": "highlight",
+    "mnemonic": "pin marks an important spot; highlight is marking as important"
+  },
+  "📍": {
+    "metaphorical": "location",
+    "mnemonic": "pin drops on exact place; location is exact position"
+  },
+  "📎": {
+    "metaphorical": "attachment",
+    "mnemonic": "paperclip holds sheets together; attachment is joined addition"
+  },
+  "🖇️": {
+    "metaphorical": "attachment",
+    "mnemonic": "linked clips hold papers together; attachment is joined addition"
+  },
+  "📏": {
+    "metaphorical": "measurement",
+    "mnemonic": "ruler measures exact length; measurement is precise tracking"
+  },
+  "📐": {
+    "metaphorical": "precision",
+    "mnemonic": "set square marks exact angles; precision is exact aim"
+  },
+  "✂️": {
+    "metaphorical": "separation",
+    "mnemonic": "scissors cut material apart; separation is dividing apart"
+  },
+  "🗃️": {
+    "metaphorical": "archive",
+    "mnemonic": "file box stores old records; archive is stored past record"
+  },
+  "🗄️": {
+    "metaphorical": "storage",
+    "mnemonic": "cabinet stores files inside; storage is kept for later"
+  },
+  "🗑️": {
+    "metaphorical": "discard",
+    "mnemonic": "trash bin holds what is thrown; discard is getting rid of"
+  },
+  "🔒": {
+    "metaphorical": "restriction",
+    "mnemonic": "lock keeps the door shut; restriction is holding back access"
+  },
+  "🔓": {
+    "metaphorical": "access",
+    "mnemonic": "unlock opens what was shut; access is ability to enter"
+  },
+  "🔏": {
+    "metaphorical": "privacy",
+    "mnemonic": "lock with pen marks private entry; privacy is kept from others"
+  },
+  "🔐": {
+    "metaphorical": "security",
+    "mnemonic": "locked with key is secured shut; security is kept safe"
+  },
+  "🔑": {
+    "metaphorical": "solution",
+    "mnemonic": "key opens what was locked; solution is what unlocks the problem"
+  },
+  "🗝️": {
+    "metaphorical": "solution",
+    "mnemonic": "old key opens a hidden lock; solution is what unlocks the problem"
+  },
+  "⚗️": {
+    "metaphorical": "transformation",
+    "mnemonic": "alembic distills and transforms; transformation is changing form"
+  },
+  "🧪": {
+    "metaphorical": "experiment",
+    "mnemonic": "test tube tries a small sample; experiment is testing a hypothesis"
+  },
+  "🧫": {
+    "metaphorical": "cultivation",
+    "mnemonic": "petri dish grows a culture; cultivation is growing and tending"
+  },
+  "🧬": {
+    "metaphorical": "identity",
+    "mnemonic": "dna codes who you are; identity is what makes you you"
+  },
+  "🔬": {
+    "metaphorical": "scrutiny",
+    "mnemonic": "microscope reveals tiny detail; scrutiny is close examination"
+  },
+  "🔭": {
+    "metaphorical": "foresight",
+    "mnemonic": "telescope sees far beyond sight; foresight is seeing ahead"
+  },
+  "📡": {
+    "metaphorical": "transmission",
+    "mnemonic": "satellite dish sends signals afar; transmission is sending across distance"
+  },
+  "💉": {
+    "metaphorical": "injection",
+    "mnemonic": "syringe puts fluid into body; injection is forcing something in"
+  },
+  "🩸": {
+    "metaphorical": "vitality",
+    "mnemonic": "blood carries life through body; vitality is life force within"
+  },
+  "💊": {
+    "metaphorical": "remedy",
+    "mnemonic": "pill is swallowed to heal; remedy is fix for ailment"
+  },
+  "🩹": {
+    "metaphorical": "patch",
+    "mnemonic": "bandage covers a wound; patch is covering a weak spot"
+  },
+  "🩺": {
+    "metaphorical": "diagnosis",
+    "mnemonic": "stethoscope listens to the body; diagnosis is finding what is wrong"
+  },
+  "🚪": {
+    "metaphorical": "opportunity",
+    "mnemonic": "door opens to what is beyond; opportunity is an opening ahead"
+  },
+  "🛏️": {
+    "metaphorical": "rest",
+    "mnemonic": "bed is for sleep and recovery; rest is recovery from effort"
+  },
+  "🛋️": {
+    "metaphorical": "comfort",
+    "mnemonic": "couch invites relaxed sitting; comfort is physical ease"
+  },
+  "🪑": {
+    "metaphorical": "position",
+    "mnemonic": "chair is where you take a seat; position is your assigned place"
+  },
+  "🚽": {
+    "metaphorical": "relief",
+    "mnemonic": "toilet gives bodily release; relief is easing of pressure"
+  },
+  "🪠": {
+    "metaphorical": "unblock",
+    "mnemonic": "plunger clears a clogged pipe; unblock is clearing obstruction"
+  },
+  "🚿": {
+    "metaphorical": "refresh",
+    "mnemonic": "shower washes away the day; refresh is restoring freshness"
+  },
+  "🛁": {
+    "metaphorical": "immersion",
+    "mnemonic": "tub surrounds you in water; immersion is deep involvement"
+  },
+  "🪤": {
+    "metaphorical": "trap",
+    "mnemonic": "mousetrap lures then snaps shut; trap is lure into confinement"
+  },
+  "🪒": {
+    "metaphorical": "precision",
+    "mnemonic": "razor cuts with a sharp edge; precision is exact aim"
+  },
+  "🧴": {
+    "metaphorical": "care",
+    "mnemonic": "lotion bottle tends the skin; care is tending with attention"
+  },
+  "🧷": {
+    "metaphorical": "fastening",
+    "mnemonic": "safety pin holds fabric together; fastening is holding together"
+  },
+  "🧹": {
+    "metaphorical": "cleanup",
+    "mnemonic": "broom sweeps dirt away; cleanup is clearing what clutters"
+  },
+  "🧺": {
+    "metaphorical": "gathering",
+    "mnemonic": "basket collects items together; gathering is bringing together"
+  },
+  "🧻": {
+    "metaphorical": "necessity",
+    "mnemonic": "toilet paper meets basic need; necessity is what must be had"
+  },
+  "🪣": {
+    "metaphorical": "collection",
+    "mnemonic": "bucket holds gathered liquid; collection is bringing together"
+  },
+  "🧼": {
+    "metaphorical": "cleanliness",
+    "mnemonic": "soap washes away grime; cleanliness is freedom from dirt"
+  },
+  "🫧": {
+    "metaphorical": "fragility",
+    "mnemonic": "bubbles pop with a touch; fragility is easily broken"
+  },
+  "🪥": {
+    "metaphorical": "hygiene",
+    "mnemonic": "toothbrush cleans each day; hygiene is healthful cleanliness"
+  },
+  "🧽": {
+    "metaphorical": "absorption",
+    "mnemonic": "sponge soaks up spilled liquid; absorption is taking in fully"
+  },
+  "🛒": {
+    "metaphorical": "consumption",
+    "mnemonic": "cart fills with goods to buy; consumption is taking things in"
+  },
+  "🚬": {
+    "metaphorical": "habit",
+    "mnemonic": "cigarette is repeated addictive draw; habit is repeated hard-to-break act"
+  },
+  "⚰️": {
+    "metaphorical": "end",
+    "mnemonic": "coffin holds the deceased; end is final conclusion"
+  },
+  "🪦": {
+    "metaphorical": "legacy",
+    "mnemonic": "headstone marks a life remembered; legacy is what remains after"
+  },
+  "⚱️": {
+    "metaphorical": "remembrance",
+    "mnemonic": "urn holds ashes of the dead; remembrance is keeping in memory"
+  },
+  "🗿": {
+    "metaphorical": "stoicism",
+    "mnemonic": "moai face stares unmoving for ages; stoicism is unmoved endurance"
+  },
+  "🪧": {
+    "metaphorical": "protest",
+    "mnemonic": "placard carries a public message; protest is public objection"
+  },
+  "🏧": {
+    "metaphorical": "withdrawal",
+    "mnemonic": "atm gives cash on demand; withdrawal is taking out stored value"
+  },
+  "🚮": {
+    "metaphorical": "disposal",
+    "mnemonic": "litter bin marks where trash goes; disposal is getting rid of"
+  },
+  "🚰": {
+    "metaphorical": "provision",
+    "mnemonic": "potable water sign marks safe drink; provision is supplying what is needed"
+  },
+  "♿": {
+    "metaphorical": "accessibility",
+    "mnemonic": "wheelchair sign marks equal access; accessibility is equal access"
+  },
+  "🚹": {
+    "metaphorical": "designation",
+    "mnemonic": "mens room sign marks who may enter; designation is marked category"
+  },
+  "🚺": {
+    "metaphorical": "designation",
+    "mnemonic": "womens room sign marks who may enter; designation is marked category"
+  },
+  "🚻": {
+    "metaphorical": "designation",
+    "mnemonic": "restroom sign marks facility type; designation is marked category"
+  },
+  "🚼": {
+    "metaphorical": "care",
+    "mnemonic": "baby change sign marks infant care; care is tending with attention"
+  },
+  "🚾": {
+    "metaphorical": "designation",
+    "mnemonic": "restroom sign marks facility type; designation is marked category"
+  },
+  "🛂": {
+    "metaphorical": "verification",
+    "mnemonic": "passport control checks identity; verification is confirming truth"
+  },
+  "🛃": {
+    "metaphorical": "inspection",
+    "mnemonic": "customs inspects what crosses border; inspection is close checking"
+  },
+  "🛄": {
+    "metaphorical": "reclaim",
+    "mnemonic": "baggage claim retrieves what was stored; reclaim is getting back what is yours"
+  },
+  "🛅": {
+    "metaphorical": "storage",
+    "mnemonic": "left luggage holds bags for later; storage is kept for later"
+  },
+  "⚠️": {
+    "metaphorical": "caution",
+    "mnemonic": "warning sign alerts to danger; caution is careful awareness"
+  },
+  "🚸": {
+    "metaphorical": "vulnerability",
+    "mnemonic": "children crossing marks those at risk; vulnerability is easily harmed"
+  },
+  "⛔": {
+    "metaphorical": "forbidden",
+    "mnemonic": "no entry sign blocks the way; forbidden is not allowed"
+  },
+  "🚫": {
+    "metaphorical": "prohibition",
+    "mnemonic": "prohibited sign bans the action; prohibition is official ban"
+  },
+  "🚳": {
+    "metaphorical": "prohibition",
+    "mnemonic": "no bikes sign bans cycling here; prohibition is official ban"
+  },
+  "🚭": {
+    "metaphorical": "prohibition",
+    "mnemonic": "no smoking sign bans the act; prohibition is official ban"
+  },
+  "🚯": {
+    "metaphorical": "prohibition",
+    "mnemonic": "no litter sign bans dumping trash; prohibition is official ban"
+  },
+  "🚱": {
+    "metaphorical": "danger",
+    "mnemonic": "non-potable sign warns unsafe water; danger is imminent threat"
+  },
+  "🚷": {
+    "metaphorical": "prohibition",
+    "mnemonic": "no pedestrians sign bans walking here; prohibition is official ban"
+  },
+  "🔞": {
+    "metaphorical": "restriction",
+    "mnemonic": "no under 18 restricts by age; restriction is holding back access"
+  },
+  "☢️": {
+    "metaphorical": "danger",
+    "mnemonic": "radioactive sign warns toxic exposure; danger is imminent threat"
+  },
+  "☣️": {
+    "metaphorical": "danger",
+    "mnemonic": "biohazard sign warns lethal agent; danger is imminent threat"
+  },
+  "⬆️": {
+    "metaphorical": "rise",
+    "mnemonic": "up arrow points higher; rise is moving upward"
+  },
+  "↗️": {
+    "metaphorical": "growth",
+    "mnemonic": "up-right arrow rises and advances; growth is increasing over time"
+  },
+  "➡️": {
+    "metaphorical": "progress",
+    "mnemonic": "right arrow points forward; progress is moving ahead"
+  },
+  "↘️": {
+    "metaphorical": "decline",
+    "mnemonic": "down-right arrow falls and retreats; decline is decreasing over time"
+  },
+  "⬇️": {
+    "metaphorical": "fall",
+    "mnemonic": "down arrow points lower; fall is moving downward"
+  },
+  "↙️": {
+    "metaphorical": "retreat",
+    "mnemonic": "down-left arrow drops and pulls back; retreat is moving away back"
+  },
+  "⬅️": {
+    "metaphorical": "return",
+    "mnemonic": "left arrow points backward; return is going back again"
+  },
+  "↖️": {
+    "metaphorical": "withdrawal",
+    "mnemonic": "up-left arrow rises and pulls back; withdrawal is taking out or back"
+  },
+  "↕️": {
+    "metaphorical": "exchange",
+    "mnemonic": "up-down arrow moves both ways; exchange is swapping between sides"
+  },
+  "↔️": {
+    "metaphorical": "reciprocity",
+    "mnemonic": "left-right arrow goes both ways; reciprocity is mutual give and take"
+  },
+  "↩️": {
+    "metaphorical": "revert",
+    "mnemonic": "return arrow curves back left; revert is going back to before"
+  },
+  "↪️": {
+    "metaphorical": "redirect",
+    "mnemonic": "return arrow curves forward right; redirect is sending another way"
+  },
+  "⤴️": {
+    "metaphorical": "rise",
+    "mnemonic": "curved up arrow lifts upward; rise is moving upward"
+  },
+  "⤵️": {
+    "metaphorical": "fall",
+    "mnemonic": "curved down arrow drops downward; fall is moving downward"
+  },
+  "🔃": {
+    "metaphorical": "cycle",
+    "mnemonic": "reload arrows go in a circle; cycle repeats round and round"
+  },
+  "🔄": {
+    "metaphorical": "renewal",
+    "mnemonic": "arrows circle for a fresh start; renewal is fresh beginning"
+  },
+  "🔙": {
+    "metaphorical": "return",
+    "mnemonic": "back arrow returns to prior; return is going back again"
+  },
+  "🔚": {
+    "metaphorical": "end",
+    "mnemonic": "end arrow marks the finish; end is final conclusion"
+  },
+  "🔛": {
+    "metaphorical": "activation",
+    "mnemonic": "on arrow marks switched active; activation is turned on state"
+  },
+  "🔜": {
+    "metaphorical": "imminence",
+    "mnemonic": "soon arrow marks coming next; imminence is about to happen"
+  },
+  "🔝": {
+    "metaphorical": "peak",
+    "mnemonic": "top arrow marks highest point; peak is the highest point"
+  },
+  "🛐": {
+    "metaphorical": "devotion",
+    "mnemonic": "worship symbol marks sacred practice; devotion is committed reverence"
+  },
+  "⚛️": {
+    "metaphorical": "fundamental",
+    "mnemonic": "atom is basic building block; fundamental is core underlying part"
+  },
+  "🕉️": {
+    "metaphorical": "spirituality",
+    "mnemonic": "om symbol marks sacred sound; spirituality is inner sacred life"
+  },
+  "✡️": {
+    "metaphorical": "heritage",
+    "mnemonic": "star of david marks jewish identity; heritage is passed-down culture"
+  },
+  "☸️": {
+    "metaphorical": "cycle",
+    "mnemonic": "dharma wheel turns through life; cycle repeats round and round"
+  },
+  "☯️": {
+    "metaphorical": "balance",
+    "mnemonic": "yin yang holds opposing halves; balance is equal halves"
+  },
+  "✝️": {
+    "metaphorical": "sacrifice",
+    "mnemonic": "cross marks suffering borne; sacrifice is giving up for gain"
+  },
+  "☦️": {
+    "metaphorical": "faith",
+    "mnemonic": "orthodox cross marks belief; faith is trust in what is unseen"
+  },
+  "☪️": {
+    "metaphorical": "faith",
+    "mnemonic": "star and crescent mark islam; faith is trust in what is unseen"
+  },
+  "☮️": {
+    "metaphorical": "harmony",
+    "mnemonic": "peace symbol calls for calm; harmony is peaceful agreement"
+  },
+  "🕎": {
+    "metaphorical": "heritage",
+    "mnemonic": "menorah marks jewish tradition; heritage is passed-down culture"
+  },
+  "🔯": {
+    "metaphorical": "heritage",
+    "mnemonic": "six-point star marks identity; heritage is passed-down culture"
+  },
+  "♈": {
+    "metaphorical": "impulse",
+    "mnemonic": "aries charges as the first sign; impulse is sudden forward drive"
+  },
+  "♉": {
+    "metaphorical": "stability",
+    "mnemonic": "taurus stands firm and steady; stability is holding firm"
+  },
+  "♊": {
+    "metaphorical": "duality",
+    "mnemonic": "gemini twins mirror two sides; duality is two sides together"
+  },
+  "♋": {
+    "metaphorical": "protection",
+    "mnemonic": "cancer shelters like a shell; protection shields from harm"
+  },
+  "♌": {
+    "metaphorical": "pride",
+    "mnemonic": "leo shines like the lion; pride is confident self-regard"
+  },
+  "♍": {
+    "metaphorical": "precision",
+    "mnemonic": "virgo attends to fine detail; precision is exact aim"
+  },
+  "♎": {
+    "metaphorical": "balance",
+    "mnemonic": "libra scales weigh both sides; balance is equal halves"
+  },
+  "♏": {
+    "metaphorical": "intensity",
+    "mnemonic": "scorpio strikes with deep force; intensity is fierce force"
+  },
+  "♐": {
+    "metaphorical": "exploration",
+    "mnemonic": "sagittarius aims the arrow far; exploration is seeking the unknown"
+  },
+  "♑": {
+    "metaphorical": "ambition",
+    "mnemonic": "capricorn climbs the steep peak; ambition rises above the ordinary"
+  },
+  "♒": {
+    "metaphorical": "innovation",
+    "mnemonic": "aquarius pours new ideas forth; innovation is new way of doing"
+  },
+  "♓": {
+    "metaphorical": "empathy",
+    "mnemonic": "pisces flows with others feelings; empathy is feeling with another"
+  },
+  "⛎": {
+    "metaphorical": "healing",
+    "mnemonic": "ophiuchus holds the serpent of cure; healing is making whole again"
+  },
+  "🔀": {
+    "metaphorical": "randomness",
+    "mnemonic": "shuffle mixes order unpredictably; randomness is without fixed order"
+  },
+  "🔁": {
+    "metaphorical": "repetition",
+    "mnemonic": "repeat plays the same again; repetition is doing again"
+  },
+  "🔂": {
+    "metaphorical": "repetition",
+    "mnemonic": "repeat one loops a single track; repetition is doing again"
+  },
+  "▶️": {
+    "metaphorical": "start",
+    "mnemonic": "play button begins the action; start is setting in motion"
+  },
+  "⏩": {
+    "metaphorical": "haste",
+    "mnemonic": "fast forward skips ahead quickly; haste is moving quickly"
+  },
+  "⏭️": {
+    "metaphorical": "skip",
+    "mnemonic": "next track jumps past this one; skip is passing over current"
+  },
+  "⏯️": {
+    "metaphorical": "pause",
+    "mnemonic": "play pause toggles stop and go; pause is temporary halt"
+  },
+  "◀️": {
+    "metaphorical": "reverse",
+    "mnemonic": "reverse plays backward in time; reverse is going opposite direction"
+  },
+  "⏪": {
+    "metaphorical": "rewind",
+    "mnemonic": "rewind goes back to earlier; rewind is returning to before"
+  },
+  "⏮️": {
+    "metaphorical": "return",
+    "mnemonic": "previous track goes back one; return is going back again"
+  },
+  "🔼": {
+    "metaphorical": "rise",
+    "mnemonic": "up button moves higher; rise is moving upward"
+  },
+  "⏫": {
+    "metaphorical": "rise",
+    "mnemonic": "fast up jumps higher quickly; rise is moving upward"
+  },
+  "🔽": {
+    "metaphorical": "fall",
+    "mnemonic": "down button moves lower; fall is moving downward"
+  },
+  "⏬": {
+    "metaphorical": "fall",
+    "mnemonic": "fast down drops lower quickly; fall is moving downward"
+  },
+  "⏸️": {
+    "metaphorical": "pause",
+    "mnemonic": "pause halts what is playing; pause is temporary halt"
+  },
+  "⏹️": {
+    "metaphorical": "stop",
+    "mnemonic": "stop ends playback completely; stop is bringing to halt"
+  },
+  "⏺️": {
+    "metaphorical": "record",
+    "mnemonic": "record captures what happens now; record is preserving over time"
+  },
+  "⏏️": {
+    "metaphorical": "eject",
+    "mnemonic": "eject pushes media out; eject is forcing outward removal"
+  },
+  "🎦": {
+    "metaphorical": "cinema",
+    "mnemonic": "cinema mark means film showing; cinema is shared screen story"
+  },
+  "🔅": {
+    "metaphorical": "diminish",
+    "mnemonic": "dim lowers the brightness; diminish is making less"
+  },
+  "🔆": {
+    "metaphorical": "amplify",
+    "mnemonic": "bright raises the brightness; amplify is making louder or brighter"
+  },
+  "📶": {
+    "metaphorical": "connectivity",
+    "mnemonic": "signal bars show link strength; connectivity is being linked"
+  },
+  "📳": {
+    "metaphorical": "alert",
+    "mnemonic": "vibrate mode buzzes for notice; alert is warning attention"
+  },
+  "📴": {
+    "metaphorical": "disconnection",
+    "mnemonic": "phone off breaks the link; disconnection is link broken"
+  },
+  "♀️": {
+    "metaphorical": "feminine",
+    "mnemonic": "female symbol marks woman gender; feminine is woman-associated quality"
+  },
+  "♂️": {
+    "metaphorical": "masculine",
+    "mnemonic": "male symbol marks man gender; masculine is man-associated quality"
+  },
+  "⚧️": {
+    "metaphorical": "identity",
+    "mnemonic": "transgender symbol marks gender crossing; identity is what makes you you"
+  },
+  "✖️": {
+    "metaphorical": "negation",
+    "mnemonic": "multiply sign marks crossing out; negation is saying not so"
+  },
+  "➕": {
+    "metaphorical": "addition",
+    "mnemonic": "plus adds one thing to another; addition is joining more in"
+  },
+  "➖": {
+    "metaphorical": "subtraction",
+    "mnemonic": "minus takes one thing away; subtraction is taking away from"
+  },
+  "➗": {
+    "metaphorical": "division",
+    "mnemonic": "divide splits into equal parts; division is splitting into parts"
+  },
+  "♾️": {
+    "metaphorical": "endless",
+    "mnemonic": "infinity loop never closes an end; endless is without limit"
+  },
+  "‼️": {
+    "metaphorical": "emphasis",
+    "mnemonic": "double bang stresses the point; emphasis is extra force of meaning"
+  },
+  "⁉️": {
+    "metaphorical": "surprise",
+    "mnemonic": "exclamation question mixes shock and ask; surprise is sudden unexpected"
+  },
+  "❓": {
+    "metaphorical": "uncertainty",
+    "mnemonic": "question mark asks what is unknown; uncertainty is not yet known"
+  },
+  "❔": {
+    "metaphorical": "uncertainty",
+    "mnemonic": "outlined question asks what is unknown; uncertainty is not yet known"
+  },
+  "❕": {
+    "metaphorical": "emphasis",
+    "mnemonic": "exclamation marks strong feeling; emphasis is extra force of meaning"
+  },
+  "❗": {
+    "metaphorical": "emphasis",
+    "mnemonic": "bold exclamation stresses the point; emphasis is extra force of meaning"
+  },
+  "〰️": {
+    "metaphorical": "hesitation",
+    "mnemonic": "wavy dash trails off uncertainly; hesitation is holding back action"
+  },
+  "💱": {
+    "metaphorical": "exchange",
+    "mnemonic": "currency arrows swap one for another; exchange is swapping between sides"
+  },
+  "💲": {
+    "metaphorical": "cost",
+    "mnemonic": "heavy dollar sign marks price; cost is what must be paid"
+  },
+  "⚕️": {
+    "metaphorical": "healing",
+    "mnemonic": "medical staff marks care profession; healing is making whole again"
+  },
+  "♻️": {
+    "metaphorical": "reuse",
+    "mnemonic": "recycle arrows loop material back; reuse is using again"
+  },
+  "⚜️": {
+    "metaphorical": "nobility",
+    "mnemonic": "fleur de lis marks royal emblem; nobility is high honorable rank"
+  },
+  "🔱": {
+    "metaphorical": "power",
+    "mnemonic": "trident is weapon of the sea god; power is ability to rule"
+  },
+  "📛": {
+    "metaphorical": "identification",
+    "mnemonic": "name badge shows who you are; identification is naming who someone is"
+  },
+  "🔰": {
+    "metaphorical": "beginner",
+    "mnemonic": "shoshin mark means new learner; beginner is just starting out"
+  },
+  "⭕": {
+    "metaphorical": "inclusion",
+    "mnemonic": "hollow circle marks round boundary; inclusion is being inside the boundary"
+  },
+  "✅": {
+    "metaphorical": "approval",
+    "mnemonic": "check mark means yes correct; approval is accepted as right"
+  },
+  "☑️": {
+    "metaphorical": "approval",
+    "mnemonic": "checked box means selected yes; approval is accepted as right"
+  },
+  "✔️": {
+    "metaphorical": "approval",
+    "mnemonic": "heavy check means confirmed yes; approval is accepted as right"
+  },
+  "❌": {
+    "metaphorical": "rejection",
+    "mnemonic": "cross mark means no wrong; rejection is refused as wrong"
+  },
+  "❎": {
+    "metaphorical": "rejection",
+    "mnemonic": "crossed box means not selected; rejection is refused as wrong"
+  },
+  "➰": {
+    "metaphorical": "loop",
+    "mnemonic": "curly loop circles back on itself; loop is path returning to start"
+  },
+  "➿": {
+    "metaphorical": "loop",
+    "mnemonic": "double loop circles twice around; loop is path returning to start"
+  },
+  "〽️": {
+    "metaphorical": "interruption",
+    "mnemonic": "part alternation mark breaks the flow; interruption is breaking continuity"
+  },
+  "✳️": {
+    "metaphorical": "emphasis",
+    "mnemonic": "eight spoked star marks highlight; emphasis is extra force of meaning"
+  },
+  "✴️": {
+    "metaphorical": "emphasis",
+    "mnemonic": "eight pointed star marks highlight; emphasis is extra force of meaning"
+  },
+  "❇️": {
+    "metaphorical": "sparkle",
+    "mnemonic": "sparkle mark catches the eye; sparkle is brief bright flash"
+  },
+  "©️": {
+    "metaphorical": "ownership",
+    "mnemonic": "copyright marks legal control; ownership is legal right to control"
+  },
+  "®️": {
+    "metaphorical": "ownership",
+    "mnemonic": "registered mark claims brand right; ownership is legal right to control"
+  },
+  "™️": {
+    "metaphorical": "claim",
+    "mnemonic": "trademark claims brand identity; claim is asserting as yours"
+  },
+  "#️⃣": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "*️⃣": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "0️⃣": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "1️⃣": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "2️⃣": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "3️⃣": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "4️⃣": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "5️⃣": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "6️⃣": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "7️⃣": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "8️⃣": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "9️⃣": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🔟": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🔠": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🔡": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🔢": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🔣": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🔤": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🅰️": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🆎": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🅱️": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🆑": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🆒": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🆓": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "ℹ️": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🆔": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "Ⓜ️": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🆕": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🆖": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🅾️": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🆗": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🅿️": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🆘": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🆙": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🆚": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🈁": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🈂️": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🈷️": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🈶": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🈯": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🉐": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🈹": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🈚": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🈲": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🉑": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🈸": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🈴": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🈳": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🈺": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🈵": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🔴": {
+    "metaphorical": "danger",
+    "mnemonic": "red circle signals stop or alert; danger is imminent threat"
+  },
+  "🟠": {
+    "metaphorical": "caution",
+    "mnemonic": "orange circle warns take care; caution is careful awareness"
+  },
+  "🟡": {
+    "metaphorical": "caution",
+    "mnemonic": "yellow circle warns slow down; caution is careful awareness"
+  },
+  "🟢": {
+    "metaphorical": "permission",
+    "mnemonic": "green circle signals go ahead; permission is allowed to proceed"
+  },
+  "🔵": {
+    "metaphorical": "calm",
+    "mnemonic": "blue circle feels cool and still; calm is peaceful steadiness"
+  },
+  "🟣": {
+    "metaphorical": "royalty",
+    "mnemonic": "purple circle marks regal hue; royalty is high noble rank"
+  },
+  "🟤": {
+    "metaphorical": "earthiness",
+    "mnemonic": "brown circle is soil and wood; earthiness is plain grounded quality"
+  },
+  "⚫": {
+    "metaphorical": "void",
+    "mnemonic": "black circle is empty dark space; void is absence of content"
+  },
+  "⚪": {
+    "metaphorical": "blank",
+    "mnemonic": "white circle is open empty space; blank is without mark yet"
+  },
+  "🟥": {
+    "metaphorical": "danger",
+    "mnemonic": "red square signals stop or alert; danger is imminent threat"
+  },
+  "🟧": {
+    "metaphorical": "caution",
+    "mnemonic": "orange square warns take care; caution is careful awareness"
+  },
+  "🟨": {
+    "metaphorical": "caution",
+    "mnemonic": "yellow square warns slow down; caution is careful awareness"
+  },
+  "🟩": {
+    "metaphorical": "permission",
+    "mnemonic": "green square signals go ahead; permission is allowed to proceed"
+  },
+  "🟦": {
+    "metaphorical": "calm",
+    "mnemonic": "blue square feels cool and still; calm is peaceful steadiness"
+  },
+  "🟪": {
+    "metaphorical": "royalty",
+    "mnemonic": "purple square marks regal hue; royalty is high noble rank"
+  },
+  "🟫": {
+    "metaphorical": "earthiness",
+    "mnemonic": "brown square is soil and wood; earthiness is plain grounded quality"
+  },
+  "⬛": {
+    "metaphorical": "void",
+    "mnemonic": "black square is solid dark block; void is absence of content"
+  },
+  "⬜": {
+    "metaphorical": "blank",
+    "mnemonic": "white square is open empty block; blank is without mark yet"
+  },
+  "🔶": {
+    "metaphorical": "highlight",
+    "mnemonic": "orange diamond catches the eye; highlight is marking as important"
+  },
+  "🔷": {
+    "metaphorical": "highlight",
+    "mnemonic": "blue diamond catches the eye; highlight is marking as important"
+  },
+  "🔸": {
+    "metaphorical": "highlight",
+    "mnemonic": "small orange diamond marks a point; highlight is marking as important"
+  },
+  "🔹": {
+    "metaphorical": "highlight",
+    "mnemonic": "small blue diamond marks a point; highlight is marking as important"
+  },
+  "🔺": {
+    "metaphorical": "rise",
+    "mnemonic": "up triangle points to the top; rise is moving upward"
+  },
+  "🔻": {
+    "metaphorical": "fall",
+    "mnemonic": "down triangle points to the bottom; fall is moving downward"
+  },
+  "💠": {
+    "metaphorical": "precision",
+    "mnemonic": "diamond dot marks exact point; precision is exact aim"
+  },
+  "🔘": {
+    "metaphorical": "selection",
+    "mnemonic": "radio button marks one chosen; selection is picking one option"
+  },
+  "🏴󠁧󠁢󠁥󠁮󠁧󠁿": {
+    "metaphorical": "community",
+    "mnemonic": "region is the place; community is the people"
+  },
+  "🏴󠁧󠁢󠁳󠁣󠁴󠁿": {
+    "metaphorical": "community",
+    "mnemonic": "region is the place; community is the people"
+  },
+  "🏴󠁧󠁢󠁷󠁬󠁳󠁿": {
+    "metaphorical": "community",
+    "mnemonic": "region is the place; community is the people"
+  }
+}

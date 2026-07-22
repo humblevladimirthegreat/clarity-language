@@ -1,0 +1,662 @@
+{
+  "👋": {
+    "metaphorical": "greeting",
+    "mnemonic": "wave is a greeting"
+  },
+  "🤚": {
+    "metaphorical": "halt",
+    "mnemonic": "raised hand signals halt"
+  },
+  "🖐️": {
+    "metaphorical": "agency",
+    "mnemonic": "hand is agency"
+  },
+  "✋": {
+    "metaphorical": "refusal",
+    "mnemonic": "stop hand refuses"
+  },
+  "🖖": {
+    "metaphorical": "fellowship",
+    "mnemonic": "vulcan salute wishes fellowship"
+  },
+  "👌": {
+    "metaphorical": "approval",
+    "mnemonic": "ok sign shows approval"
+  },
+  "🤌": {
+    "metaphorical": "emphasis",
+    "mnemonic": "pinched fingers add emphasis"
+  },
+  "🤏": {
+    "metaphorical": "precision",
+    "mnemonic": "pinch means precision"
+  },
+  "✌️": {
+    "metaphorical": "victory",
+    "mnemonic": "peace sign means victory"
+  },
+  "🤞": {
+    "metaphorical": "hope",
+    "mnemonic": "crossed fingers bring hope"
+  },
+  "🤟": {
+    "metaphorical": "affection",
+    "mnemonic": "love-you gesture shows affection"
+  },
+  "🤘": {
+    "metaphorical": "rebellion",
+    "mnemonic": "horns signal rebellion"
+  },
+  "🤙": {
+    "metaphorical": "contact",
+    "mnemonic": "call-me invites contact"
+  },
+  "👈": {
+    "metaphorical": "direction",
+    "mnemonic": "point left gives direction"
+  },
+  "👉": {
+    "metaphorical": "direction",
+    "mnemonic": "point right gives direction"
+  },
+  "👆": {
+    "metaphorical": "priority",
+    "mnemonic": "point up shows priority"
+  },
+  "🖕": {
+    "metaphorical": "contempt",
+    "mnemonic": "middle finger shows contempt"
+  },
+  "👇": {
+    "metaphorical": "direction",
+    "mnemonic": "point down gives direction"
+  },
+  "☝️": {
+    "metaphorical": "emphasis",
+    "mnemonic": "point adds emphasis"
+  },
+  "👍": {
+    "metaphorical": "approval",
+    "mnemonic": "thumbs-up shows approval"
+  },
+  "👎": {
+    "metaphorical": "disapproval",
+    "mnemonic": "thumbs-down shows disapproval"
+  },
+  "✊": {
+    "metaphorical": "defiance",
+    "mnemonic": "fist shows defiance"
+  },
+  "👊": {
+    "metaphorical": "force",
+    "mnemonic": "punch delivers force"
+  },
+  "🤛": {
+    "metaphorical": "solidarity",
+    "mnemonic": "left fist shows solidarity"
+  },
+  "🤜": {
+    "metaphorical": "solidarity",
+    "mnemonic": "right fist shows solidarity"
+  },
+  "👏": {
+    "metaphorical": "applause",
+    "mnemonic": "clap is applause"
+  },
+  "🙌": {
+    "metaphorical": "celebration",
+    "mnemonic": "raised hands celebrate"
+  },
+  "🫶": {
+    "metaphorical": "love",
+    "mnemonic": "heart hands show love"
+  },
+  "👐": {
+    "metaphorical": "openness",
+    "mnemonic": "open hands show openness"
+  },
+  "🤲": {
+    "metaphorical": "offering",
+    "mnemonic": "palms up offer help"
+  },
+  "🤝": {
+    "metaphorical": "agreement",
+    "mnemonic": "handshake seals agreement"
+  },
+  "🙏": {
+    "metaphorical": "gratitude",
+    "mnemonic": "pray expresses gratitude"
+  },
+  "✍️": {
+    "metaphorical": "authorship",
+    "mnemonic": "writing hand creates authorship"
+  },
+  "💅": {
+    "metaphorical": "vanity",
+    "mnemonic": "nail polish signals vanity"
+  },
+  "🤳": {
+    "metaphorical": "vanity",
+    "mnemonic": "selfie reflects vanity"
+  },
+  "💪": {
+    "metaphorical": "strength",
+    "mnemonic": "flex shows strength"
+  },
+  "🦾": {
+    "metaphorical": "augmentation",
+    "mnemonic": "mechanical arm gives augmentation"
+  },
+  "🦿": {
+    "metaphorical": "mobility",
+    "mnemonic": "mechanical leg restores mobility"
+  },
+  "🦵": {
+    "metaphorical": "mobility",
+    "mnemonic": "leg enables mobility"
+  },
+  "🦶": {
+    "metaphorical": "foundation",
+    "mnemonic": "foot is foundation"
+  },
+  "👂": {
+    "metaphorical": "listening",
+    "mnemonic": "ear enables listening"
+  },
+  "🦻": {
+    "metaphorical": "accessibility",
+    "mnemonic": "ear aid improves accessibility"
+  },
+  "👃": {
+    "metaphorical": "intuition",
+    "mnemonic": "nose leads intuition"
+  },
+  "🧠": {
+    "metaphorical": "intellect",
+    "mnemonic": "brain is intellect"
+  },
+  "🫀": {
+    "metaphorical": "emotion",
+    "mnemonic": "heart organ holds emotion"
+  },
+  "🫁": {
+    "metaphorical": "breath",
+    "mnemonic": "lungs carry breath"
+  },
+  "🦷": {
+    "metaphorical": "resilience",
+    "mnemonic": "tooth shows resilience"
+  },
+  "🦴": {
+    "metaphorical": "structure",
+    "mnemonic": "bone provides structure"
+  },
+  "👀": {
+    "metaphorical": "awareness",
+    "mnemonic": "eyes grant awareness"
+  },
+  "👁️": {
+    "metaphorical": "perception",
+    "mnemonic": "eye enables perception"
+  },
+  "👅": {
+    "metaphorical": "eloquence",
+    "mnemonic": "tongue wields eloquence"
+  },
+  "👄": {
+    "metaphorical": "expression",
+    "mnemonic": "mouth shapes expression"
+  },
+  "🫦": {
+    "metaphorical": "anxiety",
+    "mnemonic": "lip bite reveals anxiety"
+  },
+  "👶": {
+    "metaphorical": "innocence",
+    "mnemonic": "baby embodies innocence"
+  },
+  "🧒": {
+    "metaphorical": "youth",
+    "mnemonic": "child means youth"
+  },
+  "👦": {
+    "metaphorical": "boyhood",
+    "mnemonic": "boy is boyhood"
+  },
+  "👧": {
+    "metaphorical": "girlhood",
+    "mnemonic": "girl is girlhood"
+  },
+  "🧑": {
+    "metaphorical": "identity",
+    "mnemonic": "person has identity"
+  },
+  "👱": {
+    "metaphorical": "appearance",
+    "mnemonic": "blond person marks appearance"
+  },
+  "👨": {
+    "metaphorical": "manhood",
+    "mnemonic": "man is manhood"
+  },
+  "🧔": {
+    "metaphorical": "maturity",
+    "mnemonic": "beard suggests maturity"
+  },
+  "👩": {
+    "metaphorical": "womanhood",
+    "mnemonic": "woman is womanhood"
+  },
+  "🧓": {
+    "metaphorical": "wisdom",
+    "mnemonic": "older person holds wisdom"
+  },
+  "👴": {
+    "metaphorical": "elderhood",
+    "mnemonic": "old man is elderhood"
+  },
+  "👵": {
+    "metaphorical": "elderhood",
+    "mnemonic": "old woman is elderhood"
+  },
+  "🙍": {
+    "metaphorical": "displeasure",
+    "mnemonic": "frown shows displeasure"
+  },
+  "🙎": {
+    "metaphorical": "sulking",
+    "mnemonic": "pout is sulking"
+  },
+  "🙅": {
+    "metaphorical": "rejection",
+    "mnemonic": "no gesture rejects"
+  },
+  "🙆": {
+    "metaphorical": "acceptance",
+    "mnemonic": "ok gesture accepts"
+  },
+  "💁": {
+    "metaphorical": "sass",
+    "mnemonic": "tipping hand shows sass"
+  },
+  "🙋": {
+    "metaphorical": "volunteering",
+    "mnemonic": "raised hand volunteers"
+  },
+  "🧏": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🙇": {
+    "metaphorical": "respect",
+    "mnemonic": "bow shows respect"
+  },
+  "🤦": {
+    "metaphorical": "exasperation",
+    "mnemonic": "facepalm shows exasperation"
+  },
+  "🤷": {
+    "metaphorical": "uncertainty",
+    "mnemonic": "shrug shows uncertainty"
+  },
+  "🧑‍⚕️": {
+    "metaphorical": "healing",
+    "mnemonic": "doctor brings healing"
+  },
+  "🧑‍🎓": {
+    "metaphorical": "learning",
+    "mnemonic": "student seeks learning"
+  },
+  "🧑‍🏫": {
+    "metaphorical": "instruction",
+    "mnemonic": "teacher gives instruction"
+  },
+  "🧑‍⚖️": {
+    "metaphorical": "judgment",
+    "mnemonic": "judge delivers judgment"
+  },
+  "🧑‍🌾": {
+    "metaphorical": "cultivation",
+    "mnemonic": "farmer practices cultivation"
+  },
+  "🧑‍🍳": {
+    "metaphorical": "nourishment",
+    "mnemonic": "cook provides nourishment"
+  },
+  "🧑‍🔧": {
+    "metaphorical": "repair",
+    "mnemonic": "mechanic makes repair"
+  },
+  "🧑‍🏭": {
+    "metaphorical": "production",
+    "mnemonic": "factory worker drives production"
+  },
+  "🧑‍💼": {
+    "metaphorical": "bureaucracy",
+    "mnemonic": "office worker runs bureaucracy"
+  },
+  "🧑‍🔬": {
+    "metaphorical": "inquiry",
+    "mnemonic": "scientist pursues inquiry"
+  },
+  "🧑‍💻": {
+    "metaphorical": "innovation",
+    "mnemonic": "technologist drives innovation"
+  },
+  "🧑‍🎤": {
+    "metaphorical": "expression",
+    "mnemonic": "singer gives expression"
+  },
+  "🧑‍🎨": {
+    "metaphorical": "creativity",
+    "mnemonic": "artist brings creativity"
+  },
+  "🧑‍✈️": {
+    "metaphorical": "navigation",
+    "mnemonic": "pilot handles navigation"
+  },
+  "🧑‍🚀": {
+    "metaphorical": "exploration",
+    "mnemonic": "astronaut seeks exploration"
+  },
+  "🧑‍🚒": {
+    "metaphorical": "rescue",
+    "mnemonic": "firefighter performs rescue"
+  },
+  "👮": {
+    "metaphorical": "authority",
+    "mnemonic": "police wield authority"
+  },
+  "🕵️": {
+    "metaphorical": "investigation",
+    "mnemonic": "detective conducts investigation"
+  },
+  "💂": {
+    "metaphorical": "protection",
+    "mnemonic": "guard provides protection"
+  },
+  "🥷": {
+    "metaphorical": "stealth",
+    "mnemonic": "ninja moves with stealth"
+  },
+  "👷": {
+    "metaphorical": "building",
+    "mnemonic": "construction builds structures"
+  },
+  "🤴": {
+    "metaphorical": "nobility",
+    "mnemonic": "prince embodies nobility"
+  },
+  "👸": {
+    "metaphorical": "nobility",
+    "mnemonic": "princess embodies nobility"
+  },
+  "👳": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "👲": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🧕": {
+    "metaphorical": "modesty",
+    "mnemonic": "headscarf shows modesty"
+  },
+  "🤵": {
+    "metaphorical": "formality",
+    "mnemonic": "tuxedo signals formality"
+  },
+  "👰": {
+    "metaphorical": "matrimony",
+    "mnemonic": "veil marks matrimony"
+  },
+  "🤰": {
+    "metaphorical": "expectancy",
+    "mnemonic": "pregnant shows expectancy"
+  },
+  "🤱": {
+    "metaphorical": "nurturing",
+    "mnemonic": "nursing gives nurturing"
+  },
+  "👼": {
+    "metaphorical": "purity",
+    "mnemonic": "angel embodies purity"
+  },
+  "🎅": {
+    "metaphorical": "generosity",
+    "mnemonic": "santa brings generosity"
+  },
+  "🤶": {
+    "metaphorical": "companionship",
+    "mnemonic": "mrs claus offers companionship"
+  },
+  "🦸": {
+    "metaphorical": "heroism",
+    "mnemonic": "superhero shows heroism"
+  },
+  "🦹": {
+    "metaphorical": "villainy",
+    "mnemonic": "villain embodies villainy"
+  },
+  "🧙": {
+    "metaphorical": "magic",
+    "mnemonic": "mage wields magic"
+  },
+  "🧚": {
+    "metaphorical": "whimsy",
+    "mnemonic": "fairy brings whimsy"
+  },
+  "🧛": {
+    "metaphorical": "parasitism",
+    "mnemonic": "vampire practices parasitism"
+  },
+  "🧜": {
+    "metaphorical": "mystery",
+    "mnemonic": "merperson holds mystery"
+  },
+  "🧝": {
+    "metaphorical": "enchantment",
+    "mnemonic": "elf brings enchantment"
+  },
+  "🧞": {
+    "metaphorical": "wishfulness",
+    "mnemonic": "genie grants wishfulness"
+  },
+  "🧟": {
+    "metaphorical": "mindlessness",
+    "mnemonic": "zombie shows mindlessness"
+  },
+  "🧌": {
+    "metaphorical": "antagonism",
+    "mnemonic": "troll provokes antagonism"
+  },
+  "💆": {
+    "metaphorical": "relief",
+    "mnemonic": "massage brings relief"
+  },
+  "💇": {
+    "metaphorical": "grooming",
+    "mnemonic": "haircut is grooming"
+  },
+  "🚶": {
+    "metaphorical": "progress",
+    "mnemonic": "walk makes progress"
+  },
+  "🧍": {
+    "metaphorical": "presence",
+    "mnemonic": "stand shows presence"
+  },
+  "🧎": {
+    "metaphorical": "submission",
+    "mnemonic": "kneel shows submission"
+  },
+  "🧑‍🦯": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🧑‍🦼": {
+    "metaphorical": "mobility",
+    "mnemonic": "wheelchair restores mobility"
+  },
+  "🧑‍🦽": {
+    "metaphorical": "independence",
+    "mnemonic": "manual wheelchair shows independence"
+  },
+  "🏃": {
+    "metaphorical": "urgency",
+    "mnemonic": "run shows urgency"
+  },
+  "💃": {
+    "metaphorical": "celebration",
+    "mnemonic": "dance is celebration"
+  },
+  "🕺": {
+    "metaphorical": "celebration",
+    "mnemonic": "dance is celebration"
+  },
+  "🕴️": {
+    "metaphorical": "elevation",
+    "mnemonic": "levitate means elevation"
+  },
+  "🧘": {
+    "metaphorical": "mindfulness",
+    "mnemonic": "meditate builds mindfulness"
+  },
+  "🛀": {
+    "metaphorical": "cleansing",
+    "mnemonic": "bath brings cleansing"
+  },
+  "🛌": {
+    "metaphorical": "rest",
+    "mnemonic": "bed gives rest"
+  },
+  "🧑‍🤝‍🧑": {
+    "metaphorical": "partnership",
+    "mnemonic": "couple forms partnership"
+  },
+  "👭": {
+    "metaphorical": "solidarity",
+    "mnemonic": "women holding hands show solidarity"
+  },
+  "👫": {
+    "metaphorical": "partnership",
+    "mnemonic": "couple forms partnership"
+  },
+  "👬": {
+    "metaphorical": "solidarity",
+    "mnemonic": "men holding hands show solidarity"
+  },
+  "💏": {
+    "metaphorical": "intimacy",
+    "mnemonic": "kiss shows intimacy"
+  },
+  "💑": {
+    "metaphorical": "romance",
+    "mnemonic": "couple heart shows romance"
+  },
+  "👪": {
+    "metaphorical": "kinship",
+    "mnemonic": "family is kinship"
+  },
+  "🗣️": {
+    "metaphorical": "rhetoric",
+    "mnemonic": "speaking head uses rhetoric"
+  },
+  "👤": {
+    "metaphorical": "anonymity",
+    "mnemonic": "bust suggests anonymity"
+  },
+  "👥": {
+    "metaphorical": "community",
+    "mnemonic": "busts form community"
+  },
+  "🫂": {
+    "metaphorical": "comfort",
+    "mnemonic": "hug gives comfort"
+  },
+  "👣": {
+    "metaphorical": "legacy",
+    "mnemonic": "footprints leave legacy"
+  },
+  "🏋️": {
+    "metaphorical": "exertion",
+    "mnemonic": "weightlift demands exertion"
+  },
+  "🤼": {
+    "metaphorical": "conflict",
+    "mnemonic": "wrestle is conflict"
+  },
+  "🤸": {
+    "metaphorical": "exuberance",
+    "mnemonic": "cartwheel shows exuberance"
+  },
+  "⛹️": {
+    "metaphorical": "competition",
+    "mnemonic": "basketball is competition"
+  },
+  "🤺": {
+    "metaphorical": "rivalry",
+    "mnemonic": "fencing is rivalry"
+  },
+  "🤾": {
+    "metaphorical": "teamwork",
+    "mnemonic": "handball needs teamwork"
+  },
+  "🏌️": {
+    "metaphorical": "leisure",
+    "mnemonic": "golf is leisure"
+  },
+  "🏇": {
+    "metaphorical": "pursuit",
+    "mnemonic": "horse race is pursuit"
+  },
+  "⛷️": {
+    "metaphorical": "thrill",
+    "mnemonic": "ski brings thrill"
+  },
+  "🏂": {
+    "metaphorical": "thrill",
+    "mnemonic": "snowboard brings thrill"
+  },
+  "🏄": {
+    "metaphorical": "balance",
+    "mnemonic": "surf requires balance"
+  },
+  "🚣": {
+    "metaphorical": "perseverance",
+    "mnemonic": "row demands perseverance"
+  },
+  "🏊": {
+    "metaphorical": "resilience",
+    "mnemonic": "swim builds resilience"
+  },
+  "⛹️‍♀️": {
+    "metaphorical": "competition",
+    "mnemonic": "basketball is competition"
+  },
+  "🚴": {
+    "metaphorical": "momentum",
+    "mnemonic": "bike builds momentum"
+  },
+  "🚵": {
+    "metaphorical": "adventure",
+    "mnemonic": "mountain bike is adventure"
+  },
+  "🤹": {
+    "metaphorical": "multitasking",
+    "mnemonic": "juggle is multitasking"
+  },
+  "🧗": {
+    "metaphorical": "ambition",
+    "mnemonic": "climb shows ambition"
+  },
+  "🤾‍♂️": {
+    "metaphorical": "teamwork",
+    "mnemonic": "handball needs teamwork"
+  },
+  "🏋️‍♀️": {
+    "metaphorical": "exertion",
+    "mnemonic": "weightlift demands exertion"
+  }
+}

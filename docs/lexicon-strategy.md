@@ -11,7 +11,8 @@ A root dictionary where each kept entry has (in `data/lexicon-published.csv`):
 | emoji | Visual anchor and stable ID for the concept |
 | literal | Immediate English gloss — what a fluent user reads the emoji as (see below) |
 | clarity | Auto-generated Clarity **root** derived from that literal |
-| metaphorical | At most one NGSL lemma attached as the figurative sense (Phase 5) |
+| metaphorical | At most one figurative English gloss (Phase 5) |
+| mnemonic | Short cue linking `literal` → `metaphorical`; `REVIEW` if no good link |
 
 Entries are **roots** only. Part-of-speech prefixes (`/z/`, `/v/`, `/w/`, …) and lexical endings (`-l`, `-m`, …) are applied at use time; this file does not list PoS variants or usage notes.
 
@@ -96,7 +97,7 @@ This is separate from the **near-duplicate cull** (Phase 3): a row can be the on
 | 2.5. People & Body glossing | **done** — 2,418 rows glossed |
 | 3. Cull (`keep`) | **done** — 1,367 kept · 2,586 dropped |
 | 4. Clarity roots | **done** — 1,367 rows in `lexicon-published.csv` |
-| 5. NGSL coverage / metaphors | **done (waves)** — gap fill wave 3: ~0 remaining `gap` (stretch metaphors OK) |
+| 5. Metaphors + mnemonics | **in progress** — quality rewrite (NGSL waves done; coverage is legacy measurement) |
 
 ```
 emojis.csv  →  lexicon.csv (skeleton)          ✓ done
@@ -111,10 +112,10 @@ emojis.csv  →  lexicon.csv (skeleton)          ✓ done
                  ↓
          4. generate clarity roots → lexicon-published.csv  ✓ done
                  ↓
-         5. NGSL lemmas → literal / metaphorical           ✓ waves done
+         5. figurative gloss + mnemonic → metaphorical     ← in progress
 ```
 
-**What exists today:** Phases 1–5 waves complete (including gap-fill wave 3). Metaphor cells live on `lexicon-published.csv`; curated map in `data/ngsl-metaphor-extra.csv`; regenerate coverage with `npm run ngsl-coverage`. Stretch / dubious metaphors are intentional for coverage; revisit quality later if needed.
+**What exists today:** Phases 1–4 complete. Phase 5 NGSL attach waves filled `metaphorical` for coverage; a **quality rewrite** is replacing arbitrary links with teachable literal→metaphor pairs and a `mnemonic` column. NGSL tooling (`ngsl-coverage`, `ngsl-metaphor-extra.csv`) remains optional legacy measurement — not the source of truth for metaphors.
 
 ---
 
@@ -348,7 +349,8 @@ When distinct concepts share a `literal` within the same `group`/`subgroup` (e.g
 | `emoji` | Copied from working lexicon |
 | `literal` | Copied from working lexicon |
 | `clarity` | Auto-generated Clarity **root** from `literal` |
-| `metaphorical` | Present but **empty** — filled in a later pass |
+| `metaphorical` | Present but **empty** — filled in Phase 5 |
+| `mnemonic` | Present but **empty** — filled in Phase 5 |
 
 **Generation:**
 
@@ -356,84 +358,58 @@ When distinct concepts share a `literal` within the same `group`/`subgroup` (e.g
 2. Derive each `clarity` root from `literal` with the existing converter (`toUniqueClarityWord` / `scripts/convert-emojis.ts` pattern).
 3. Uniqueness is over **exported** roots only (and any reserved roots documented later).
 4. Store only the root in `clarity` (no PoS prefix, no `-l`/`-m` ending).
-5. Write the four columns above to `lexicon-published.csv`. On first publish, leave `metaphorical` blank. On **re**-publish, **preserve** existing `metaphorical` values keyed by `emoji` (Phase 5 edits must survive regenerating roots).
+5. Write the columns above to `lexicon-published.csv`. On first publish, leave `metaphorical` and `mnemonic` blank. On **re**-publish, **preserve** existing `metaphorical` and `mnemonic` values keyed by `emoji` (Phase 5 edits must survive regenerating roots).
 
 `lexicon.csv` is **not** updated with `clarity` values — it remains the full seed + gloss + cull working file. Regenerate `lexicon-published.csv` in bulk when literals or the keep set change; do not hand-edit generated roots unless documenting an exception in this file.
 
 ---
 
-## Phase 5 — NGSL coverage and metaphors
+## Phase 5 — Metaphors and mnemonics
 
-**Goal:** For each **content** NGSL lemma, either match a published `literal`, attach as the single metaphor on exactly one emoji row, or mark **redundant** of another lemma. Function words are out of scope.
+**Goal:** Each published row has a teachable figurative extension: `literal` (immediate reading) → `metaphorical` (figurative sense), plus a short `mnemonic` that makes the link stick.
+
+Quality and memorability win. Metaphors need **not** be NGSL lemmas; duplicate metaphors across rows are fine for now.
 
 ### Rules
 
 | Rule | Detail |
 |------|--------|
-| One lemma → one root | Each NGSL lemma attaches to at most one published row (via `literal` match or `metaphorical`), unless mapped away as inflection/redundant. |
-| One metaphor per row | `metaphorical` holds **at most one** lemma. Near-duplicates and close synonyms collapse via the lemma map (`kind=redundant`), not extra cell entries. |
-| Metaphors only on emoji rows | Attachments live in `lexicon-published.csv` column `metaphorical` — not a separate NGSL root list. |
-| Function words out of scope | Lemmas in `data/ngsl-function-words.txt` get status `function` and are never auto-matched or metaphor-attached. |
-| Core lemmas only | Inflections and synonym collapses use `data/ngsl-lemma-map.csv`. Coverage is lemma-keyed on the resolved lemma. |
-| Prefer literal | Exact `lemma == literal` wins over metaphor. Do not also list that lemma in `metaphorical`. |
-| Prefer attach over gap | After synonym `redundant` collapses, remaining content lemmas get a metaphor (stretch OK, including flag homes). Leave `gap` only if nothing else fits. |
+| One metaphor per row | `metaphorical` holds **at most one** lowercase word or short lemma. |
+| Teachable link | `mnemonic` is a short cue from literal → metaphorical. |
+| No good link | Leave `metaphorical` empty and set `mnemonic` to `REVIEW`. |
+| Duplicates OK | The same `metaphorical` value may appear on many rows (e.g. all flags → `nation`). |
+| Not NGSL-driven | Do not force arbitrary NGSL lemmas onto emoji for coverage. |
+| Preserve on republish | Phase 4 must preserve hand-edited `metaphorical` and `mnemonic` keyed by `emoji`. |
 
 ### `metaphorical` cell format
 
-- Lowercase English **lemma** only (no `went`, no glosses).
-- **At most one** lemma per cell (empty = none yet).
-- A lemma must not duplicate another row’s `literal`.
-- Legacy semicolon lists are being collapsed in singleton review waves (largest bags first).
+- Lowercase English word or short lemma only (no glosses, no phrases).
+- **At most one** per cell (empty = none yet).
+- Figurative sense of the emoji reading, not a second unrelated root.
 
-Helpers: `parseMetaphoricalCell` / `formatMetaphoricalCell` in `scripts/ngsl-coverage.ts` (still accept `;` for parsing old cells; coverage warns if more than one remains).
+### `mnemonic` cell format
 
-### Inputs
+- Short English phrase explaining how to remember the leap from `literal` to `metaphorical`.
+- `REVIEW` when no good link exists yet.
+- Should be easy to remember, not necessarily guessable without the dictionary.
 
-| File | Role |
-|------|------|
-| `data/ngsl.csv` | Frequency-ordered English lemmas (`english` column) |
-| `data/lexicon-published.csv` | Published roots; `metaphorical` filled by hand during review waves |
-| `data/ngsl-function-words.txt` | Closed-class denylist (`#` comments allowed) |
-| `data/ngsl-lemma-map.csv` | `surface,lemma,kind` map (`kind` = `inflection` \| `redundant`; `#` comments allowed) |
+### Country flags
 
-### Coverage report (`data/ngsl-coverage.csv`)
+For `subgroup=country-flag`:
 
-Regenerate anytime with `npm run ngsl-coverage`. Do not hand-edit as source of truth — edit denylist, lemma map, or published `metaphorical`, then re-run.
+| Field | Sense |
+|-------|-------|
+| `literal` | Country (state / historical / government focus) |
+| `metaphorical` | `nation` (people / culture) |
+| `mnemonic` | e.g. `country is the state; nation is the people` |
 
-| Column | Values |
-|--------|--------|
-| `lemma` | Core lemma (or mapped-away surface when `skip-inflection` / `redundant`) |
-| `status` | `literal` · `metaphor` · `function` · `gap` · `skip-inflection` · `redundant` |
-| `emoji` / `literal` / `clarity` | Target root when assigned |
-| `source` | `exact` · `metaphorical` · `denylist` · `lemma-map` |
-| `notes` | e.g. `→ go` / `→ money` for lemma-map rows |
+### NGSL coverage (legacy)
 
-**Auto assignment today:** function denylist + lemma map + exact literal match + existing `metaphorical` parses. Gaps await metaphor review waves (highest-frequency `gap` rows first).
+Earlier waves attached NGSL lemmas for frequency coverage (`data/ngsl-metaphor-extra.csv`, `scripts/wave*.py`). That pass is **complete but superseded** by the quality rewrite.
 
-### Review waves
+Optional measurement only: `npm run ngsl-coverage` → `data/ngsl-coverage.csv`. Do not treat coverage gaps as a reason to keep arbitrary metaphors.
 
-| Wave | Scope | Status |
-|------|-------|--------|
-| NGSL attach 1 | Top 50 frequency `gap` lemmas | **done** |
-| NGSL attach 2+ | Remaining content lemmas (curated + soft-match) | **done** — see coverage stats |
-| Singleton wave 1 | Metaphor bags of size ≥10 → one keep; synonyms → `redundant` | **done** — `scripts/wave1-metaphor-singleton.py` |
-| Singleton wave 2+ | Remaining multi-lemma `metaphorical` cells | **done** — `scripts/wave2-metaphor-singleton.py` |
-| Gap fill wave 3 | Remaining `gap` lemmas → metaphor or `redundant` (stretch OK) | **done** — `scripts/wave3-gap-fill.py` |
-
-**Pipeline (attach era):** edit `data/ngsl-metaphor-extra.csv` → `npm run ngsl-metaphor-apply` → `npm run ngsl-coverage`.
-
-`ngsl-metaphor-apply` now **preserves** existing singles, skips lemma-map surfaces, and refuses a second metaphor on a row (soft-match only fills empty rows).
-
-1. Sort `status=gap` by NGSL order (file order ≈ frequency).
-2. For each lemma, pick one published emoji, mark redundant of another lemma, or leave `gap`.
-3. Set that row’s `metaphorical` to the single keep lemma (or clear it).
-4. Re-run `npm run ngsl-coverage` and fix uniqueness / multi-metaphor warnings.
-
-After wave 3, leftover `gap` rows should be ~0 (stretch attaches + synonym `redundant` collapses). Spot-check dubious metaphors rather than re-opening compounds / non-emoji roots unless a lemma truly cannot sit on an emoji.
-
-**Coverage after gap-fill wave 3 (approx.):** ~224 `literal` · ~1,200 `metaphor` · ~1,200 `redundant` · ~170 `function` · ~0 `gap`. Exact counts: `npm run ngsl-coverage`.
-
-Mnemonic note: metaphor links may be a stretch — the cue should be easy to remember, not necessarily guessable without a dictionary.
+Helpers: `parseMetaphoricalCell` / `formatMetaphoricalCell` in `scripts/ngsl-coverage.ts` (still accept `;` for parsing old cells).
 ---
 
 ## CSV schemas
@@ -457,7 +433,8 @@ Mnemonic note: metaphor links may be a stretch — the cue should be easy to rem
 | `emoji` | yes | Glyph |
 | `literal` | yes | Immediate-reading gloss |
 | `clarity` | phase 4 | Auto root from `literal` |
-| `metaphorical` | phase 5 | At most one NGSL lemma (figurative); empty if none |
+| `metaphorical` | phase 5 | At most one figurative English gloss; empty if none |
+| `mnemonic` | phase 5 | Short literal→metaphor cue, or `REVIEW` |
 
 ## Tooling
 
@@ -470,9 +447,11 @@ Mnemonic note: metaphor links may be a stretch — the cue should be easy to rem
 | `scripts/phase3-cull.ts` | Phase 3 cull (`npm run phase3-cull`; `report` / `apply` / `audit`) |
 | `scripts/phase4-publish.ts` | Phase 4: `keep=y` rows from `lexicon.csv` → `lexicon-published.csv` (`literal` → `clarity`; `metaphorical` blank) |
 | `scripts/ngsl-coverage.ts` | Phase 5: NGSL ↔ published coverage report → `data/ngsl-coverage.csv` |
-| `scripts/apply-ngsl-metaphor-waves.py` | Phase 5: apply `ngsl-metaphor-extra.csv` (+ soft matches) → published `metaphorical` |
+| `scripts/apply-ngsl-metaphor-waves.py` | Phase 5 (legacy): apply `ngsl-metaphor-extra.csv` (+ soft matches) → published `metaphorical` |
 | `scripts/generate-ngsl-metaphor-extra.py` | Validate curated `ngsl-metaphor-extra.csv` |
-| `scripts/wave3-gap-fill.py` | Phase 5: collapse/fill remaining `gap` lemmas (redundant + stretch metaphors) |
+| `scripts/wave3-gap-fill.py` | Phase 5 (legacy): collapse/fill remaining `gap` lemmas |
+| `scripts/generate-metaphor-batch.py` | Phase 5: generate places/symbols metaphor batch JSON |
+| `scripts/apply-metaphor-quality-pass.py` | Phase 5: apply quality metaphors + mnemonics to `lexicon-published.csv` |
 
 Manual editing in `data/lexicon.csv` is the source of truth for `literal`. Treat `docs/language-reference.md` as grammar/phonology authority; this doc owns lexicon process only.
 
@@ -481,9 +460,9 @@ Manual editing in `data/lexicon.csv` is the source of truth for `literal`. Treat
 - Claritish / psychology-driven sense splits
 - Usage notes, example sentences, PoS-specific entries
 - Compounds and “in the sense of [topic]” infixes (optional later quality pass)
-- Non-emoji roots (optional later; NGSL content gaps are filled via stretch metaphors)
+- Non-emoji roots (optional later)
 - Replacing or deleting rows from the full emoji seed (cull via `keep` instead)
 
 ## Immediate deliverable
 
-**Next:** optional — spot-check stretch metaphors (esp. flag homes) in `lexicon-published.csv` / `ngsl-metaphor-extra.csv`; compounds / non-emoji roots only if a lemma must leave the emoji seed.
+**Next:** finish Phase 5 quality metaphors + mnemonics for all rows in `lexicon-published.csv`.

@@ -1,0 +1,1026 @@
+{
+  "🐶": {
+    "metaphorical": "loyalty",
+    "mnemonic": "a dog shows loyalty"
+  },
+  "🐱": {
+    "metaphorical": "curiosity",
+    "mnemonic": "curiosity killed the cat"
+  },
+  "🐭": {
+    "metaphorical": "timidity",
+    "mnemonic": "quiet as a mouse"
+  },
+  "🐹": {
+    "metaphorical": "routine",
+    "mnemonic": "hamster on a wheel of routine"
+  },
+  "🐰": {
+    "metaphorical": "haste",
+    "mnemonic": "breed like rabbits in haste"
+  },
+  "🦊": {
+    "metaphorical": "cunning",
+    "mnemonic": "sly as a fox"
+  },
+  "🐻": {
+    "metaphorical": "burden",
+    "mnemonic": "bear the burden"
+  },
+  "🐼": {
+    "metaphorical": "diplomacy",
+    "mnemonic": "panda diplomacy softens hard talks"
+  },
+  "🐻‍❄️": {
+    "metaphorical": "endurance",
+    "mnemonic": "polar bear endures the cold"
+  },
+  "🐨": {
+    "metaphorical": "lethargy",
+    "mnemonic": "koala sleeps through the day"
+  },
+  "🐯": {
+    "metaphorical": "ferocity",
+    "mnemonic": "fight like a tiger"
+  },
+  "🦁": {
+    "metaphorical": "courage",
+    "mnemonic": "brave as a lion"
+  },
+  "🐮": {
+    "metaphorical": "docility",
+    "mnemonic": "docile as a cow"
+  },
+  "🐷": {
+    "metaphorical": "gluttony",
+    "mnemonic": "pig out on gluttony"
+  },
+  "🐽": {
+    "metaphorical": "nosiness",
+    "mnemonic": "pig nose sniffs for gossip"
+  },
+  "🐸": {
+    "metaphorical": "transformation",
+    "mnemonic": "frog becomes a prince"
+  },
+  "🐵": {
+    "metaphorical": "mimicry",
+    "mnemonic": "monkey see monkey do"
+  },
+  "🙈": {
+    "metaphorical": "denial",
+    "mnemonic": "see no evil is denial"
+  },
+  "🙉": {
+    "metaphorical": "avoidance",
+    "mnemonic": "hear no evil avoids truth"
+  },
+  "🙊": {
+    "metaphorical": "discretion",
+    "mnemonic": "speak no evil keeps secrets"
+  },
+  "🐒": {
+    "metaphorical": "mimicry",
+    "mnemonic": "monkey see monkey do"
+  },
+  "🐔": {
+    "metaphorical": "cowardice",
+    "mnemonic": "chicken means coward"
+  },
+  "🐧": {
+    "metaphorical": "formality",
+    "mnemonic": "penguin in a tuxedo"
+  },
+  "🐦": {
+    "metaphorical": "freedom",
+    "mnemonic": "free as a bird"
+  },
+  "🐤": {
+    "metaphorical": "innocence",
+    "mnemonic": "chick is innocent youth"
+  },
+  "🐣": {
+    "metaphorical": "emergence",
+    "mnemonic": "hatching is emergence"
+  },
+  "🐥": {
+    "metaphorical": "innocence",
+    "mnemonic": "chick is innocent youth"
+  },
+  "🦆": {
+    "metaphorical": "resilience",
+    "mnemonic": "water rolls off a duck's back"
+  },
+  "🦅": {
+    "metaphorical": "vision",
+    "mnemonic": "eagle eye sees far"
+  },
+  "🦉": {
+    "metaphorical": "wisdom",
+    "mnemonic": "wise old owl"
+  },
+  "🦇": {
+    "metaphorical": "reclusion",
+    "mnemonic": "bat hides by day"
+  },
+  "🐺": {
+    "metaphorical": "predation",
+    "mnemonic": "wolf at the door"
+  },
+  "🐗": {
+    "metaphorical": "stubbornness",
+    "mnemonic": "stubborn as a boar"
+  },
+  "🐴": {
+    "metaphorical": "power",
+    "mnemonic": "horsepower is raw power"
+  },
+  "🦄": {
+    "metaphorical": "rarity",
+    "mnemonic": "unicorn is rare magic"
+  },
+  "🐝": {
+    "metaphorical": "diligence",
+    "mnemonic": "busy as a bee"
+  },
+  "🪱": {
+    "metaphorical": "complication",
+    "mnemonic": "open a can of worms"
+  },
+  "🐛": {
+    "metaphorical": "flaw",
+    "mnemonic": "computer bug is a flaw"
+  },
+  "🦋": {
+    "metaphorical": "transformation",
+    "mnemonic": "caterpillar becomes butterfly"
+  },
+  "🐌": {
+    "metaphorical": "slowness",
+    "mnemonic": "slow as a snail"
+  },
+  "🐞": {
+    "metaphorical": "luck",
+    "mnemonic": "ladybug brings luck"
+  },
+  "🐜": {
+    "metaphorical": "diligence",
+    "mnemonic": "ants work with diligence"
+  },
+  "🪰": {
+    "metaphorical": "annoyance",
+    "mnemonic": "fly is a buzzing annoyance"
+  },
+  "🪲": {
+    "metaphorical": "hardiness",
+    "mnemonic": "beetle's shell is hardiness"
+  },
+  "🪳": {
+    "metaphorical": "resilience",
+    "mnemonic": "cockroach survives anything"
+  },
+  "🦟": {
+    "metaphorical": "irritation",
+    "mnemonic": "mosquito is pure irritation"
+  },
+  "🦗": {
+    "metaphorical": "silence",
+    "mnemonic": "crickets mean awkward silence"
+  },
+  "🕷️": {
+    "metaphorical": "entrapment",
+    "mnemonic": "spider traps its prey"
+  },
+  "🕸️": {
+    "metaphorical": "network",
+    "mnemonic": "web connects everything"
+  },
+  "🦂": {
+    "metaphorical": "betrayal",
+    "mnemonic": "scorpion stings the hand that feeds"
+  },
+  "🐢": {
+    "metaphorical": "patience",
+    "mnemonic": "slow and steady turtle"
+  },
+  "🐍": {
+    "metaphorical": "treachery",
+    "mnemonic": "snake in the grass"
+  },
+  "🦎": {
+    "metaphorical": "coldness",
+    "mnemonic": "cold-blooded lizard"
+  },
+  "🦖": {
+    "metaphorical": "dominance",
+    "mnemonic": "t-rex ruled with dominance"
+  },
+  "🦕": {
+    "metaphorical": "antiquity",
+    "mnemonic": "sauropod is ancient past"
+  },
+  "🐙": {
+    "metaphorical": "reach",
+    "mnemonic": "octopus reaches in every direction"
+  },
+  "🦑": {
+    "metaphorical": "obscurity",
+    "mnemonic": "squid ink clouds the truth"
+  },
+  "🦐": {
+    "metaphorical": "insignificance",
+    "mnemonic": "shrimp is small fry"
+  },
+  "🦞": {
+    "metaphorical": "luxury",
+    "mnemonic": "lobster dinner is luxury"
+  },
+  "🦀": {
+    "metaphorical": "irritability",
+    "mnemonic": "feeling crabby today"
+  },
+  "🐡": {
+    "metaphorical": "inflation",
+    "mnemonic": "blowfish puffs with pride"
+  },
+  "🐠": {
+    "metaphorical": "abundance",
+    "mnemonic": "plenty of fish in the sea"
+  },
+  "🐟": {
+    "metaphorical": "abundance",
+    "mnemonic": "plenty of fish in the sea"
+  },
+  "🐬": {
+    "metaphorical": "playfulness",
+    "mnemonic": "dolphin plays in the waves"
+  },
+  "🐳": {
+    "metaphorical": "magnitude",
+    "mnemonic": "whale-sized magnitude"
+  },
+  "🐋": {
+    "metaphorical": "magnitude",
+    "mnemonic": "whale-sized magnitude"
+  },
+  "🦈": {
+    "metaphorical": "ruthlessness",
+    "mnemonic": "shark is ruthless predator"
+  },
+  "🐊": {
+    "metaphorical": "deceit",
+    "mnemonic": "crocodile tears are deceit"
+  },
+  "🐅": {
+    "metaphorical": "ferocity",
+    "mnemonic": "fight like a tiger"
+  },
+  "🐆": {
+    "metaphorical": "nature",
+    "mnemonic": "a leopard cannot change its spots"
+  },
+  "🦓": {
+    "metaphorical": "contrast",
+    "mnemonic": "zebra stripes show contrast"
+  },
+  "🦍": {
+    "metaphorical": "dominance",
+    "mnemonic": "800-pound gorilla dominates"
+  },
+  "🦧": {
+    "metaphorical": "kinship",
+    "mnemonic": "orangutan is our close kin"
+  },
+  "🐘": {
+    "metaphorical": "memory",
+    "mnemonic": "elephant never forgets"
+  },
+  "🦛": {
+    "metaphorical": "bulk",
+    "mnemonic": "hippo is sheer bulk"
+  },
+  "🦏": {
+    "metaphorical": "charge",
+    "mnemonic": "rhino charges headlong"
+  },
+  "🐪": {
+    "metaphorical": "endurance",
+    "mnemonic": "camel endures the desert"
+  },
+  "🐫": {
+    "metaphorical": "endurance",
+    "mnemonic": "camel endures the desert"
+  },
+  "🦒": {
+    "metaphorical": "overview",
+    "mnemonic": "giraffe sees the overview"
+  },
+  "🦘": {
+    "metaphorical": "bounce",
+    "mnemonic": "kangaroo bounces back"
+  },
+  "🦬": {
+    "metaphorical": "ruggedness",
+    "mnemonic": "bison is rugged strength"
+  },
+  "🐃": {
+    "metaphorical": "drudgery",
+    "mnemonic": "water buffalo pulls through drudgery"
+  },
+  "🐂": {
+    "metaphorical": "labor",
+    "mnemonic": "ox does heavy labor"
+  },
+  "🐄": {
+    "metaphorical": "docility",
+    "mnemonic": "docile as a cow"
+  },
+  "🐎": {
+    "metaphorical": "power",
+    "mnemonic": "horsepower is raw power"
+  },
+  "🐖": {
+    "metaphorical": "gluttony",
+    "mnemonic": "pig out on gluttony"
+  },
+  "🐏": {
+    "metaphorical": "stubbornness",
+    "mnemonic": "ram butts with stubbornness"
+  },
+  "🐑": {
+    "metaphorical": "conformity",
+    "mnemonic": "follow the herd like sheep"
+  },
+  "🐐": {
+    "metaphorical": "scapegoat",
+    "mnemonic": "blame the goat scapegoat"
+  },
+  "🦌": {
+    "metaphorical": "timidity",
+    "mnemonic": "deer in headlights is timid"
+  },
+  "🐕": {
+    "metaphorical": "loyalty",
+    "mnemonic": "a dog shows loyalty"
+  },
+  "🐩": {
+    "metaphorical": "refinement",
+    "mnemonic": "poodle is refined breeding"
+  },
+  "🦮": {
+    "metaphorical": "guidance",
+    "mnemonic": "guide dog gives guidance"
+  },
+  "🐕‍🦺": {
+    "metaphorical": "assistance",
+    "mnemonic": "service dog gives assistance"
+  },
+  "🐈": {
+    "metaphorical": "curiosity",
+    "mnemonic": "curiosity killed the cat"
+  },
+  "🐈‍⬛": {
+    "metaphorical": "superstition",
+    "mnemonic": "black cat brings superstition"
+  },
+  "🪶": {
+    "metaphorical": "lightness",
+    "mnemonic": "feather floats with lightness"
+  },
+  "🐓": {
+    "metaphorical": "pride",
+    "mnemonic": "rooster crows with pride"
+  },
+  "🦃": {
+    "metaphorical": "folly",
+    "mnemonic": "turkey is foolish talk"
+  },
+  "🦤": {
+    "metaphorical": "obsolescence",
+    "mnemonic": "dodo is dead and gone"
+  },
+  "🦚": {
+    "metaphorical": "vanity",
+    "mnemonic": "peacock struts with vanity"
+  },
+  "🦜": {
+    "metaphorical": "mimicry",
+    "mnemonic": "parrot repeats what it hears"
+  },
+  "🦢": {
+    "metaphorical": "grace",
+    "mnemonic": "swan glides with grace"
+  },
+  "🦩": {
+    "metaphorical": "flamboyance",
+    "mnemonic": "flamingo stands out flamboyantly"
+  },
+  "🕊️": {
+    "metaphorical": "peace",
+    "mnemonic": "dove is a sign of peace"
+  },
+  "🐇": {
+    "metaphorical": "haste",
+    "mnemonic": "breed like rabbits in haste"
+  },
+  "🦝": {
+    "metaphorical": "mischief",
+    "mnemonic": "raccoon raids with mischief"
+  },
+  "🦨": {
+    "metaphorical": "stigma",
+    "mnemonic": "skunk leaves a lasting stigma"
+  },
+  "🦡": {
+    "metaphorical": "persistence",
+    "mnemonic": "badger someone with persistence"
+  },
+  "🦫": {
+    "metaphorical": "industry",
+    "mnemonic": "beaver builds with industry"
+  },
+  "🦦": {
+    "metaphorical": "playfulness",
+    "mnemonic": "otter plays in the water"
+  },
+  "🦥": {
+    "metaphorical": "laziness",
+    "mnemonic": "sloth moves with laziness"
+  },
+  "🐁": {
+    "metaphorical": "timidity",
+    "mnemonic": "quiet as a mouse"
+  },
+  "🐀": {
+    "metaphorical": "treachery",
+    "mnemonic": "rat out a friend is treachery"
+  },
+  "🐿️": {
+    "metaphorical": "hoarding",
+    "mnemonic": "chipmunk hoards for winter"
+  },
+  "🦔": {
+    "metaphorical": "defensiveness",
+    "mnemonic": "hedgehog curls in defense"
+  },
+  "🍇": {
+    "metaphorical": "envy",
+    "mnemonic": "sour grapes is envy"
+  },
+  "🍈": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🍉": {
+    "metaphorical": "refreshment",
+    "mnemonic": "watermelon cools with refreshment"
+  },
+  "🍊": {
+    "metaphorical": "zest",
+    "mnemonic": "orange adds zest to life"
+  },
+  "🍋": {
+    "metaphorical": "defect",
+    "mnemonic": "a lemon is a bad deal"
+  },
+  "🍌": {
+    "metaphorical": "madness",
+    "mnemonic": "go bananas with madness"
+  },
+  "🍍": {
+    "metaphorical": "hospitality",
+    "mnemonic": "pineapple welcomes with hospitality"
+  },
+  "🥭": {
+    "metaphorical": "exoticism",
+    "mnemonic": "mango tastes of the exotic"
+  },
+  "🍎": {
+    "metaphorical": "temptation",
+    "mnemonic": "forbidden apple is temptation"
+  },
+  "🍏": {
+    "metaphorical": "youth",
+    "mnemonic": "green apple is unripe youth"
+  },
+  "🍐": {
+    "metaphorical": "mishap",
+    "mnemonic": "gone pear-shaped is mishap"
+  },
+  "🍑": {
+    "metaphorical": "excellence",
+    "mnemonic": "peachy means excellent"
+  },
+  "🍒": {
+    "metaphorical": "bonus",
+    "mnemonic": "cherry on top is a bonus"
+  },
+  "🍓": {
+    "metaphorical": "sweetness",
+    "mnemonic": "strawberry is pure sweetness"
+  },
+  "🫐": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🥝": {
+    "metaphorical": "oddity",
+    "mnemonic": "fuzzy kiwi is an odd fruit"
+  },
+  "🍅": {
+    "metaphorical": "controversy",
+    "mnemonic": "tomato fruit or vegetable controversy"
+  },
+  "🫒": {
+    "metaphorical": "peace",
+    "mnemonic": "olive branch offers peace"
+  },
+  "🥥": {
+    "metaphorical": "toughness",
+    "mnemonic": "hard nut to crack is tough"
+  },
+  "🥑": {
+    "metaphorical": "premium",
+    "mnemonic": "avocado toast is premium living"
+  },
+  "🍆": {
+    "metaphorical": "provocation",
+    "mnemonic": "eggplant emoji provokes"
+  },
+  "🥔": {
+    "metaphorical": "laziness",
+    "mnemonic": "couch potato is laziness"
+  },
+  "🥕": {
+    "metaphorical": "incentive",
+    "mnemonic": "carrot on a stick is incentive"
+  },
+  "🌽": {
+    "metaphorical": "kitsch",
+    "mnemonic": "corny means kitsch"
+  },
+  "🌶️": {
+    "metaphorical": "heat",
+    "mnemonic": "hot pepper brings heat"
+  },
+  "🫑": {
+    "metaphorical": "freshness",
+    "mnemonic": "bell pepper is garden freshness"
+  },
+  "🥒": {
+    "metaphorical": "composure",
+    "mnemonic": "cool as a cucumber"
+  },
+  "🥬": {
+    "metaphorical": "vitality",
+    "mnemonic": "leafy greens fuel vitality"
+  },
+  "🥦": {
+    "metaphorical": "health",
+    "mnemonic": "eat broccoli for health"
+  },
+  "🧄": {
+    "metaphorical": "protection",
+    "mnemonic": "garlic wards off harm"
+  },
+  "🧅": {
+    "metaphorical": "depth",
+    "mnemonic": "onion has layers of depth"
+  },
+  "🍄": {
+    "metaphorical": "proliferation",
+    "mnemonic": "mushrooms pop up overnight"
+  },
+  "🥜": {
+    "metaphorical": "triviality",
+    "mnemonic": "work for peanuts is trivial pay"
+  },
+  "🫘": {
+    "metaphorical": "secrecy",
+    "mnemonic": "spill the beans breaks secrecy"
+  },
+  "🌰": {
+    "metaphorical": "staleness",
+    "mnemonic": "old chestnut is stale joke"
+  },
+  "🍞": {
+    "metaphorical": "staple",
+    "mnemonic": "bread and butter is staple"
+  },
+  "🥐": {
+    "metaphorical": "indulgence",
+    "mnemonic": "croissant is buttery indulgence"
+  },
+  "🥖": {
+    "metaphorical": "tradition",
+    "mnemonic": "baguette is French tradition"
+  },
+  "🫓": {
+    "metaphorical": "simplicity",
+    "mnemonic": "flatbread is simple fare"
+  },
+  "🥨": {
+    "metaphorical": "complexity",
+    "mnemonic": "pretzel logic is twisted complexity"
+  },
+  "🥯": {
+    "metaphorical": "routine",
+    "mnemonic": "daily bagel is routine"
+  },
+  "🥞": {
+    "metaphorical": "flattening",
+    "mnemonic": "pancake flattens under pressure"
+  },
+  "🧇": {
+    "metaphorical": "indecision",
+    "mnemonic": "waffle means indecision"
+  },
+  "🧀": {
+    "metaphorical": "kitsch",
+    "mnemonic": "cheesy means kitsch"
+  },
+  "🍖": {
+    "metaphorical": "substance",
+    "mnemonic": "meat of the matter is substance"
+  },
+  "🍗": {
+    "metaphorical": "casualness",
+    "mnemonic": "finger food is casual eating"
+  },
+  "🥩": {
+    "metaphorical": "seriousness",
+    "mnemonic": "steak dinner is serious business"
+  },
+  "🥓": {
+    "metaphorical": "indulgence",
+    "mnemonic": "bacon is guilty indulgence"
+  },
+  "🍔": {
+    "metaphorical": "mainstream",
+    "mnemonic": "burger is mainstream fare"
+  },
+  "🍟": {
+    "metaphorical": "accessory",
+    "mnemonic": "fries are a side accessory"
+  },
+  "🍕": {
+    "metaphorical": "camaraderie",
+    "mnemonic": "pizza night builds camaraderie"
+  },
+  "🌭": {
+    "metaphorical": "showmanship",
+    "mnemonic": "hot dog is flashy showmanship"
+  },
+  "🥪": {
+    "metaphorical": "compromise",
+    "mnemonic": "sandwich layers are compromise"
+  },
+  "🌮": {
+    "metaphorical": "variety",
+    "mnemonic": "taco bar offers variety"
+  },
+  "🌯": {
+    "metaphorical": "encapsulation",
+    "mnemonic": "burrito wraps it all up"
+  },
+  "🫔": {
+    "metaphorical": "mystery",
+    "mnemonic": "tamale hides a mystery inside"
+  },
+  "🥙": {
+    "metaphorical": "fullness",
+    "mnemonic": "stuffed flatbread is fullness"
+  },
+  "🧆": {
+    "metaphorical": "alternative",
+    "mnemonic": "falafel is a meat alternative"
+  },
+  "🥚": {
+    "metaphorical": "potential",
+    "mnemonic": "egg holds unrealized potential"
+  },
+  "🍳": {
+    "metaphorical": "transformation",
+    "mnemonic": "cooking transforms raw to ready"
+  },
+  "🥘": {
+    "metaphorical": "simmering",
+    "mnemonic": "stew simmers with slow tension"
+  },
+  "🍲": {
+    "metaphorical": "abundance",
+    "mnemonic": "pot of gold is abundance"
+  },
+  "🫕": {
+    "metaphorical": "sharing",
+    "mnemonic": "fondue is communal sharing"
+  },
+  "🥣": {
+    "metaphorical": "capacity",
+    "mnemonic": "bowl holds what it can"
+  },
+  "🥗": {
+    "metaphorical": "variety",
+    "mnemonic": "salad mixes many varieties"
+  },
+  "🍿": {
+    "metaphorical": "entertainment",
+    "mnemonic": "popcorn at the show is entertainment"
+  },
+  "🧈": {
+    "metaphorical": "flattery",
+    "mnemonic": "butter someone up with flattery"
+  },
+  "🧂": {
+    "metaphorical": "skepticism",
+    "mnemonic": "take it with a grain of salt"
+  },
+  "🥫": {
+    "metaphorical": "staleness",
+    "mnemonic": "canned response is stale"
+  },
+  "🍱": {
+    "metaphorical": "order",
+    "mnemonic": "bento box is neat order"
+  },
+  "🍘": {
+    "metaphorical": "lightness",
+    "mnemonic": "rice cracker is light snack"
+  },
+  "🍙": {
+    "metaphorical": "comfort",
+    "mnemonic": "rice ball is portable comfort"
+  },
+  "🍚": {
+    "metaphorical": "foundation",
+    "mnemonic": "rice is the daily foundation"
+  },
+  "🍛": {
+    "metaphorical": "spice",
+    "mnemonic": "curry adds spice to life"
+  },
+  "🍜": {
+    "metaphorical": "comfort",
+    "mnemonic": "noodle bowl is comfort food"
+  },
+  "🍝": {
+    "metaphorical": "comfort",
+    "mnemonic": "pasta night is comfort"
+  },
+  "🍠": {
+    "metaphorical": "nostalgia",
+    "mnemonic": "sweet potato is homestyle nostalgia"
+  },
+  "🍢": {
+    "metaphorical": "warmth",
+    "mnemonic": "oden warms on a cold night"
+  },
+  "🍣": {
+    "metaphorical": "precision",
+    "mnemonic": "sushi needs precise craft"
+  },
+  "🍤": {
+    "metaphorical": "indulgence",
+    "mnemonic": "fried shrimp is indulgence"
+  },
+  "🍥": {
+    "metaphorical": "",
+    "mnemonic": "REVIEW"
+  },
+  "🥮": {
+    "metaphorical": "tradition",
+    "mnemonic": "mooncake marks festival tradition"
+  },
+  "🍡": {
+    "metaphorical": "togetherness",
+    "mnemonic": "dango skewer is togetherness"
+  },
+  "🥟": {
+    "metaphorical": "comfort",
+    "mnemonic": "dumpling wraps comfort inside"
+  },
+  "🥠": {
+    "metaphorical": "prophecy",
+    "mnemonic": "fortune cookie foretells fate"
+  },
+  "🥡": {
+    "metaphorical": "convenience",
+    "mnemonic": "takeout is quick convenience"
+  },
+  "🍦": {
+    "metaphorical": "lightness",
+    "mnemonic": "soft serve is airy lightness"
+  },
+  "🍧": {
+    "metaphorical": "refreshment",
+    "mnemonic": "shaved ice cools with refreshment"
+  },
+  "🍨": {
+    "metaphorical": "comfort",
+    "mnemonic": "ice cream soothes with comfort"
+  },
+  "🍩": {
+    "metaphorical": "reward",
+    "mnemonic": "donut is a sweet reward"
+  },
+  "🍪": {
+    "metaphorical": "compliance",
+    "mnemonic": "browser cookie tracks compliance"
+  },
+  "🎂": {
+    "metaphorical": "celebration",
+    "mnemonic": "birthday cake marks celebration"
+  },
+  "🍰": {
+    "metaphorical": "ease",
+    "mnemonic": "piece of cake means ease"
+  },
+  "🧁": {
+    "metaphorical": "indulgence",
+    "mnemonic": "cupcake is a small indulgence"
+  },
+  "🥧": {
+    "metaphorical": "simplicity",
+    "mnemonic": "easy as pie is simplicity"
+  },
+  "🍫": {
+    "metaphorical": "romance",
+    "mnemonic": "chocolate is romantic gift"
+  },
+  "🍬": {
+    "metaphorical": "flattery",
+    "mnemonic": "sweet talk is candy flattery"
+  },
+  "🍭": {
+    "metaphorical": "pacification",
+    "mnemonic": "lollipop pacifies a child"
+  },
+  "🍮": {
+    "metaphorical": "richness",
+    "mnemonic": "custard is rich and smooth"
+  },
+  "🍯": {
+    "metaphorical": "endearment",
+    "mnemonic": "honey is a sweet endearment"
+  },
+  "🍼": {
+    "metaphorical": "restraint",
+    "mnemonic": "bottle up your feelings"
+  },
+  "🥛": {
+    "metaphorical": "innocence",
+    "mnemonic": "milk of human kindness is innocence"
+  },
+  "☕": {
+    "metaphorical": "alertness",
+    "mnemonic": "coffee fuels alertness"
+  },
+  "🫖": {
+    "metaphorical": "ceremony",
+    "mnemonic": "teapot pours with ceremony"
+  },
+  "🍵": {
+    "metaphorical": "calm",
+    "mnemonic": "tea time brings calm"
+  },
+  "🍶": {
+    "metaphorical": "ritual",
+    "mnemonic": "sake toast is ritual"
+  },
+  "🍾": {
+    "metaphorical": "celebration",
+    "mnemonic": "champagne pops for celebration"
+  },
+  "🍷": {
+    "metaphorical": "refinement",
+    "mnemonic": "wine signals refinement"
+  },
+  "🍸": {
+    "metaphorical": "blend",
+    "mnemonic": "cocktail blends many flavors"
+  },
+  "🍹": {
+    "metaphorical": "escapism",
+    "mnemonic": "tropical drink is vacation escapism"
+  },
+  "🍺": {
+    "metaphorical": "camaraderie",
+    "mnemonic": "beer with friends is camaraderie"
+  },
+  "🍻": {
+    "metaphorical": "toast",
+    "mnemonic": "clinking beers is a toast"
+  },
+  "🥂": {
+    "metaphorical": "celebration",
+    "mnemonic": "cheers is celebration"
+  },
+  "🥃": {
+    "metaphorical": "fortitude",
+    "mnemonic": "whiskey warms with fortitude"
+  },
+  "🫗": {
+    "metaphorical": "generosity",
+    "mnemonic": "pour out with generosity"
+  },
+  "🥤": {
+    "metaphorical": "portion",
+    "mnemonic": "cup holds a fair portion"
+  },
+  "🧋": {
+    "metaphorical": "trendiness",
+    "mnemonic": "bubble tea is trendy now"
+  },
+  "🧃": {
+    "metaphorical": "vigor",
+    "mnemonic": "juice box fuels vigor"
+  },
+  "🧉": {
+    "metaphorical": "fellowship",
+    "mnemonic": "mate is shared fellowship"
+  },
+  "🧊": {
+    "metaphorical": "coldness",
+    "mnemonic": "on ice means cold distance"
+  },
+  "🪸": {
+    "metaphorical": "foundation",
+    "mnemonic": "coral reef supports marine life; foundation holds things up"
+  },
+  "🫏": {
+    "metaphorical": "stubbornness",
+    "mnemonic": "stubborn as a mule or donkey"
+  },
+  "🐉": {
+    "metaphorical": "menace",
+    "mnemonic": "dragon guards treasure with menace"
+  },
+  "🫚": {
+    "metaphorical": "vigor",
+    "mnemonic": "ginger adds vigor and bite"
+  },
+  "🪿": {
+    "metaphorical": "folly",
+    "mnemonic": "silly goose means foolish talk"
+  },
+  "🪼": {
+    "metaphorical": "passivity",
+    "mnemonic": "jellyfish drifts with the current"
+  },
+  "🍋‍🟩": {
+    "metaphorical": "zest",
+    "mnemonic": "lime adds zest and tang"
+  },
+  "🦙": {
+    "metaphorical": "composure",
+    "mnemonic": "no drama llama stays composed"
+  },
+  "🦣": {
+    "metaphorical": "enormity",
+    "mnemonic": "mammoth is enormous in scale"
+  },
+  "🦠": {
+    "metaphorical": "contagion",
+    "mnemonic": "microbe spreads contagion"
+  },
+  "🫎": {
+    "metaphorical": "awkwardness",
+    "mnemonic": "moose in the room is awkward"
+  },
+  "🫍": {
+    "metaphorical": "predation",
+    "mnemonic": "orca is apex predator"
+  },
+  "🦪": {
+    "metaphorical": "potential",
+    "mnemonic": "pearl hidden in an oyster is potential"
+  },
+  "🐾": {
+    "metaphorical": "trail",
+    "mnemonic": "paw prints mark a trail"
+  },
+  "🫛": {
+    "metaphorical": "insignificance",
+    "mnemonic": "small as a pea is insignificance"
+  },
+  "🐦‍🔥": {
+    "metaphorical": "rebirth",
+    "mnemonic": "phoenix rises in rebirth"
+  },
+  "🫜": {
+    "metaphorical": "grounding",
+    "mnemonic": "root vegetable grounds you"
+  },
+  "🦭": {
+    "metaphorical": "approval",
+    "mnemonic": "seal of approval marks consent"
+  },
+  "🐚": {
+    "metaphorical": "protection",
+    "mnemonic": "shell protects what is inside"
+  },
+  "🪽": {
+    "metaphorical": "aspiration",
+    "mnemonic": "take wing with aspiration"
+  }
+}
