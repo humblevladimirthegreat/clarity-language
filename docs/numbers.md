@@ -7,12 +7,12 @@ A whole numeric value is **one word**, even when it contains several digit group
 ## Word shape
 
 ```
-[PoS] + r + V + ( [exponent?] [digits] )+ + [ending] + [z?]
+[PoS] + r + V + ( [exponent?] [mantissa digits?] )+ + [ending] + [z?]
 ```
 
 1. **PoS** — same prefixes as elsewhere. Use `/w/` when the number modifies a noun; use `/z/`, `/d/`, or `/b/` when the number is itself an argument. Digit-strings usually take the role the clause needs (often `/d/`).
 2. **Number marker** — consonant **r** plus a vowel **V** (see [Marker vowel](#marker-vowel)). The PoS+`r` cluster is a [number-only phonotactic exception](language-reference.md#phonotactics).
-3. **One or more digit groups** — each group is optional exponent, then one or more digit syllables. Digits compound with **no** **x** separator. There is **no per-group polarity**; sign (when it applies) is on the marker vowel for the whole word.
+3. **One or more digit groups** — each group is an optional exponent and optional mantissa digits (at least one of the two). Digits compound with **no** **x** separator. There is **no per-group polarity**; sign (when it applies) is on the marker vowel for the whole word.
 4. **Ending** — `-l` / `-m` / `-n` / `-r` with [number-specific meanings](#number-endings).
 5. **Plural `-z`** — optional; same sense as elsewhere (the group containing that numeric referent).
 
@@ -71,12 +71,17 @@ Within each digit group:
 |--------|------|
 | **ba** | Positive exponent, followed by the exponent’s digits |
 | **bu** | Negative exponent, followed by the exponent’s digits |
+| **ja** | After exponent digits when a **mantissa follows** (not a digit) |
+| **je** | **Decimal point** (not a digit) |
 
-- The **exponent comes before** the group’s main digits (mantissa).
-- If the exponent is **0**, omit the exponent entirely.
+- The **exponent comes before** the group’s mantissa digits.
+- If a mantissa follows the exponent, say **`ja`** after the last exponent digit, then the mantissa. Example: `27e12` → `ba` + `wo` + `du` + `ja` + `du` + `le`.
+- **Bare order of magnitude** (exponent only, no mantissa): use `ba`/`bu` + exponent digits and **omit** **`ja`**. The group ends at the next `ba`/`bu`, or at the word ending. Example: *e9* → `ba` + `na` (not `*banaja`).
+- If the exponent is **0**, omit the exponent (and thus omit **`ja`**) entirely.
 - Default spoken/written scale uses **engineering notation**: exponents are usually multiples of **3** (e.g. `27e6`, not `2.7e7`).
-- **Scientific register** is optional: still **exp-first**, but the mantissa uses **`ja`** after the first digit to mark the decimal point (always stressed). Break the remaining mantissa digits into groups of at most three.
-- **Bare order of magnitude:** only the exponent part (no mantissa digits), with positive scalar marker **`ra`** (e.g. *e9* / “a billion”); use **`ru`** for a negative order of magnitude if needed.
+- **Decimal point:** say **`je`** after the digit(s) left of the point; digits after **`je`** are the fractional part (group in threes if long). May appear with or without an exponent.
+- **Scientific register** is optional: exp-first, then **`ja`**, then mantissa with **`je`** after the leading digit (usual scientific shape). Example: `5.2487083e-4` → `bu` + `mo` + `ja` + `va` + `je` + `du` + `mo` + `ha` + `le` + `zo` + `ha` + `re`.
+- Bare OoM uses scalar marker **`ra`** (or **`ru`** if negative).
 - **Cents / fixed subunits:** an exponent need not be a multiple of 3 when the unit has a conventional subunit (e.g. dollars: `4e-2` for four cents). Same pattern for other fixed subunits if needed.
 - **No metric prefixes** in speech: prefer base unit + engineering exponent (`40e3` grams, not “40 kilograms”; `12e-9` meters, not “12 nanometers”).
 
@@ -102,15 +107,15 @@ Digits below use the table above; glosses show structure, not stress detail.
 | 3 | *wrarel* (`w` + `ra` + re + `l`) |
 | −3 | *wrurel* (`w` + `ru` + re + `l`) |
 | 139 | *wraworenal* (`ra` + wo re na) |
-| 27e12 | *wrabawodudulel* (`ra` + ba wo du + du le) |
-| e9 (bare) | *wrabanal* (`ra` + ba na; no mantissa) |
-| 50e-6 | *wrabuguvazol* (`ra` + bu gu + va zo) |
-| −1e9 −265e3 −4 | *wrubanawobareduguvamol* — one **`ru`**; groups: ba na wo · ba re du gu va · mo |
-| $5860.04 → 5e3 + 860 + 4e-2 | *wrabarevahaguzobudumol* — last group bu du + mo (cents) |
+| 27e12 | *wrabawodujadulel* (`ra` + ba wo du **ja** + du le) |
+| e9 (bare) | *wrabanal* (`ra` + ba na; **no** `ja`) |
+| 50e-6 | *wrabugujavazol* (`ra` + bu gu **ja** + va zo) |
+| −1e9 −265e3 −4 | *wrubanajawobarejaduguvamol* — **`ru`**; groups: ba na **ja** wo · ba re **ja** du gu va · mo |
+| $5860.04 → 5e3 + 860 + 4e-2 | *wrabarejavahaguzobudujamol* — ba re **ja** va · ha gu zo · bu du **ja** mo |
 | 2nd (`2#`) | *wrodul*; title-like *the Second…* may take **-n** (*wrodun*) |
-| about 27e6 | same body as 27e6 with ending **-m** |
+| about 27e6 | *wrabagujadulem* (ba gu **ja** du le, ending **-m**) |
 | phone 555-123-4567 | *drevavavawoduremovagulel* (`d` + `re` + va×3 · wo du re · mo va gu · le + `l`) |
-| scientific 5.2487083e-4 | *wrabumovajadumohalezoharel* (`ra` + bu mo + va ja + du mo ha · le zo ha · re) |
+| scientific 5.2487083e-4 | *wrabumojavajedumohalezoharel* (`ra` + bu mo **ja** + va **je** + du mo ha · le zo ha · re) |
 
 In a sentence, the PoS attaches to that single number word (e.g. direct-object digit-string: `/d/` + `re` + … + ending).
 
@@ -119,5 +124,5 @@ In a sentence, the PoS attaches to that single number word (e.g. direct-object d
 - Single-digit magnitude groups: stress the digit syllable.
 - Multi-digit groups without exponent: stress the **leftmost** digit.
 - Groups with an exponent: stress the **leftmost exponent digit**.
-- Scientific **`ja`**: always stressed (marks that register).
+- **`je`** (decimal point): always stressed when present.
 - Digit-string groups: stress the **first digit** of each group.
