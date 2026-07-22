@@ -2588,15 +2588,15 @@ emoji,name,group,subgroup,literal,clarity,keep
 🧑‍🧒‍🧒,"family: adult, child, child",People & Body,person-symbol,family,,n
 👣,footprints,People & Body,person-symbol,footprints,,y
 🫆,fingerprint,People & Body,person-symbol,fingerprint,,y
-🏻,light skin tone,Component,skin-tone,light-skin-tone,,y
-🏼,medium-light skin tone,Component,skin-tone,medium-light-skin-tone,,y
-🏽,medium skin tone,Component,skin-tone,medium-skin-tone,,y
-🏾,medium-dark skin tone,Component,skin-tone,medium-dark-skin-tone,,y
-🏿,dark skin tone,Component,skin-tone,dark-skin-tone,,y
-🦰,red hair,Component,hair-style,red-hair,,y
-🦱,curly hair,Component,hair-style,curly-hair,,y
-🦳,white hair,Component,hair-style,white-hair,,y
-🦲,bald,Component,hair-style,bald,,y
+🏻,light skin tone,Component,skin-tone,,,n
+🏼,medium-light skin tone,Component,skin-tone,,,n
+🏽,medium skin tone,Component,skin-tone,,,n
+🏾,medium-dark skin tone,Component,skin-tone,,,n
+🏿,dark skin tone,Component,skin-tone,,,n
+🦰,red hair,Component,hair-style,,,n
+🦱,curly hair,Component,hair-style,,,n
+🦳,white hair,Component,hair-style,,,n
+🦲,bald,Component,hair-style,,,n
 🐵,monkey face,Animals & Nature,animal-mammal,monkey,,n
 🐒,monkey,Animals & Nature,animal-mammal,monkey,,y
 🦍,gorilla,Animals & Nature,animal-mammal,gorilla,,y

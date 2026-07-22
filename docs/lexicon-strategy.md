@@ -70,6 +70,7 @@ Clarity’s seed is emoji, but the **published lexicon is for English-accessible
 - **Japanese ideograph buttons** (`alphanum` rows named `Japanese “…” button`) — almost all `keep=n`.
 - **Region-specific signage** with no English equivalent reading (other CJK shop signs, obscure local symbols).
 - **Hyper-niche flags / territories** only if we later decide they fail the usefulness bar (optional; country names usually stay in Tier A).
+- **Component modifiers** (`skin-tone`, `hair-style`) — Unicode encoding pieces, not standalone message readings; `keep=n`, empty `literal`. Appearance on people stays collapsed to the base gloss; do not publish Fitzpatrick / hair-component roots.
 
 Dropped rows **stay in `lexicon.csv`** with `keep=n` and `literal` empty (or a brief `name` note in comments only if needed — prefer empty). Do not invent Clarity roots for them. Phase 4 exports **`keep=y` rows only** to the published file; dropped rows are not copied.
 
@@ -93,8 +94,8 @@ This is separate from the **near-duplicate cull** (Phase 3): a row can be the on
 | 1. Variant collapse | **done** |
 | 2. Literal glossing | **done** |
 | 2.5. People & Body glossing | **done** — 2,418 rows glossed |
-| 3. Cull (`keep`) | **done** — 1,455 kept · 2,498 dropped |
-| 4. Clarity roots | **done** — 1,455 rows in `lexicon-published.csv` |
+| 3. Cull (`keep`) | **done** — 1,446 kept · 2,507 dropped |
+| 4. Clarity roots | **done** — 1,446 rows in `lexicon-published.csv` |
 
 ```
 emojis.csv  →  lexicon.csv (skeleton)          ✓ done
@@ -110,7 +111,7 @@ emojis.csv  →  lexicon.csv (skeleton)          ✓ done
          4. generate clarity roots → lexicon-published.csv  ✓ done
 ```
 
-**What exists today:** Phase 1–3 complete. **Phase 4 complete:** `data/lexicon-published.csv` has **1,455** rows (`emoji`, `literal`, `clarity`, empty `metaphorical`). Regenerate with `npm run phase4-publish` when literals or the keep set change.
+**What exists today:** Phase 1–3 complete. **Phase 4 complete:** `data/lexicon-published.csv` has **1,446** rows (`emoji`, `literal`, `clarity`, empty `metaphorical`). Regenerate with `npm run phase4-publish` when literals or the keep set change.
 
 ---
 
@@ -128,7 +129,7 @@ emojis.csv  →  lexicon.csv (skeleton)          ✓ done
 
 - Skin-tone, hair-style, and gender variants → same `literal` as the unqualified base (e.g. all 👋 variants → whatever 👋 is glossed as).
 - Near-duplicate depictions in the same subgroup → one shared `literal` (e.g. grinning-face cluster, colored hearts where color is the point).
-- Component rows (`skin-tone`, `hair-style`) → gloss the component itself (`light-skin-tone`, `red-hair`, …).
+- Component rows (`skin-tone`, `hair-style`) → leave `literal` empty and `keep=n` (modifiers, not roots).
 
 **Do not** auto-fill `literal` from normalized `name` for Tier B subgroups (see Phase 2). Scripts prepare clusters; they do not assign meaning.
 
@@ -152,7 +153,8 @@ Name ≈ meaning. A normalized draft is often correct; spot-check for outliers.
 | Food & Drink (all) |
 | Objects — clothing, tool, household, musical-instrument, science, medical, writing, most office/household |
 | Flags — `country-flag`, `subdivision-flag` |
-| Component |
+
+`Component` (`skin-tone`, `hair-style`) is not glossed — drop under the Component-modifier rule (empty `literal`, `keep=n`).
 
 ### Tier B — immediate reading (curated only)
 
@@ -201,7 +203,7 @@ During glossing, mark obvious drops mentally (or tentatively `keep=n`); confirm 
 | Animals & Nature | 160 | A | done |
 | Food & Drink | 131 | A | done |
 | Flags | 270 | A | done |
-| Component | 9 | A | done |
+| Component | 9 | — | dropped (`keep=n`) |
 
 Status values: empty · `draft` · `review` · `done` · `re-gloss` (scripted literals that need human pass).
 
@@ -271,7 +273,7 @@ Two reasons to set `keep=n` (rows stay in `lexicon.csv`; never delete seed rows)
 
 ### A. No English association (drop)
 
-Apply the [drop rule](#drop-rule-no-english-association). Leave `literal` empty. Examples: most `Japanese “…” button` rows, other signage that fails the substitution test for English speakers.
+Apply the [drop rule](#drop-rule-no-english-association). Leave `literal` empty. Examples: most `Japanese “…” button` rows, other signage that fails the substitution test for English speakers, and all `Component` skin-tone / hair-style modifiers.
 
 ### B. Distinctiveness (near-duplicates)
 
@@ -319,11 +321,11 @@ When distinct concepts share a `literal` within the same `group`/`subgroup` (e.g
 | Metric | Count |
 |--------|------:|
 | Total seed rows | 3,953 |
-| `keep=y` (published) | 1,455 |
-| `keep=n` (dropped) | 2,498 |
-| Drop A (no English association) | 19 |
-| Duplicate clusters culled | 193 |
-| Singleton `keep=y` | 1,458 |
+| `keep=y` (published) | 1,446 |
+| `keep=n` (dropped) | 2,507 |
+| Drop A (empty literal / not lexicon material) | 28 |
+| Duplicate clusters culled | 194 |
+| Singleton `keep=y` | 1,446 |
 
 ---
 
@@ -333,7 +335,7 @@ When distinct concepts share a `literal` within the same `group`/`subgroup` (e.g
 
 **Input:** `data/lexicon.csv` — rows where `keep=y` and `literal` is set.
 
-**Output:** `data/lexicon-published.csv` — **1,455 rows** today (only `keep=y`; dropped rows are not transferred).
+**Output:** `data/lexicon-published.csv` — **1,446 rows** today (only `keep=y`; dropped rows are not transferred).
 
 | Column | Phase 4 |
 |--------|---------|
