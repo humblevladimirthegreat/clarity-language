@@ -96,7 +96,7 @@ This is separate from the **near-duplicate cull** (Phase 3): a row can be the on
 | 2.5. People & Body glossing | **done** — 2,418 rows glossed |
 | 3. Cull (`keep`) | **done** — 1,367 kept · 2,586 dropped |
 | 4. Clarity roots | **done** — 1,367 rows in `lexicon-published.csv` |
-| 5. NGSL coverage / metaphors | **in progress** — policy + coverage tooling; metaphor fill pending |
+| 5. NGSL coverage / metaphors | **done (waves)** — ~1.6k content lemmas assigned; ~1k gaps left intentionally |
 
 ```
 emojis.csv  →  lexicon.csv (skeleton)          ✓ done
@@ -111,10 +111,10 @@ emojis.csv  →  lexicon.csv (skeleton)          ✓ done
                  ↓
          4. generate clarity roots → lexicon-published.csv  ✓ done
                  ↓
-         5. NGSL lemmas → literal match or metaphorical attach  ◐ tooling ready
+         5. NGSL lemmas → literal / metaphorical           ✓ waves done
 ```
 
-**What exists today:** Phases 1–4 complete. **Phase 5 tooling ready:** `npm run ngsl-coverage` writes `data/ngsl-coverage.csv` from NGSL + published lexicon + function denylist + lemma map. Metaphor cells in `lexicon-published.csv` are still empty until review waves fill them.
+**What exists today:** Phases 1–5 waves complete. Metaphor cells live on `lexicon-published.csv`; curated map in `data/ngsl-metaphor-extra.csv`; regenerate coverage with `npm run ngsl-coverage`. Remaining `gap` lemmas await compounds / non-emoji roots (out of scope).
 
 ---
 
@@ -410,12 +410,23 @@ Regenerate anytime with `npm run ngsl-coverage`. Do not hand-edit as source of t
 
 **Auto assignment today:** function denylist + exact literal match + existing `metaphorical` parses. Gaps await metaphor review waves (highest-frequency `gap` rows first).
 
-### Review waves (next)
+### Review waves
+
+| Wave | Scope | Status |
+|------|-------|--------|
+| 1 | Top 50 frequency `gap` lemmas | **done** |
+| 2+ | Remaining content lemmas (curated + soft-match) | **done** — see coverage stats |
+
+**Pipeline:** edit `data/ngsl-metaphor-extra.csv` → `npm run ngsl-metaphor-apply` → `npm run ngsl-coverage`.
 
 1. Sort `status=gap` by NGSL order (file order ≈ frequency).
 2. For each lemma, pick one published emoji or leave `gap`.
-3. Append lemma to that row’s `metaphorical` (semicolon list).
+3. Append lemma to that row’s `metaphorical` (semicolon list) via the apply script / map.
 4. Re-run `npm run ngsl-coverage` and fix uniqueness warnings.
+
+Leftover `gap` rows are intentional (no forced attach). Revisit later for compounds / non-emoji roots.
+
+**Coverage after waves (approx.):** ~223 `literal` · ~1,400 `metaphor` · ~170 `function` · ~1,000 `gap`. Exact counts: `npm run ngsl-coverage`.
 
 ---
 
@@ -453,6 +464,8 @@ Regenerate anytime with `npm run ngsl-coverage`. Do not hand-edit as source of t
 | `scripts/phase3-cull.ts` | Phase 3 cull (`npm run phase3-cull`; `report` / `apply` / `audit`) |
 | `scripts/phase4-publish.ts` | Phase 4: `keep=y` rows from `lexicon.csv` → `lexicon-published.csv` (`literal` → `clarity`; `metaphorical` blank) |
 | `scripts/ngsl-coverage.ts` | Phase 5: NGSL ↔ published coverage report → `data/ngsl-coverage.csv` |
+| `scripts/apply-ngsl-metaphor-waves.py` | Phase 5: apply `ngsl-metaphor-extra.csv` (+ soft matches) → published `metaphorical` |
+| `scripts/generate-ngsl-metaphor-extra.py` | Validate curated `ngsl-metaphor-extra.csv` |
 
 Manual editing in `data/lexicon.csv` is the source of truth for `literal`. Treat `docs/language-reference.md` as grammar/phonology authority; this doc owns lexicon process only.
 
@@ -466,4 +479,4 @@ Manual editing in `data/lexicon.csv` is the source of truth for `literal`. Treat
 
 ## Immediate deliverable
 
-**Next:** metaphor review waves — fill `metaphorical` on `lexicon-published.csv` for high-frequency `gap` lemmas; re-run `npm run ngsl-coverage` after each wave.
+**Next:** optional — tackle remaining `gap` lemmas via compounds or non-emoji roots; spot-check dubious metaphors in `ngsl-metaphor-extra.csv`.

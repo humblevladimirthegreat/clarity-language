@@ -25,6 +25,8 @@
     "phase3-cull": "tsx scripts/phase3-cull.ts",
     "phase4-publish": "tsx scripts/phase4-publish.ts",
     "ngsl-coverage": "tsx scripts/ngsl-coverage.ts",
+    "ngsl-metaphor-extra": "python3 scripts/generate-ngsl-metaphor-extra.py",
+    "ngsl-metaphor-apply": "python3 scripts/apply-ngsl-metaphor-waves.py",
     "web": "npx --yes serve . -p 4173"
   },
   "engines": {
