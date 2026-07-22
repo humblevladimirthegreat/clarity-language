@@ -63,7 +63,7 @@ The goal of r/claritylanguage is to help foster compassion, rationality, and emp
 
 Parts of speech are determined by a prefix consonant added before each word. Words do not change form based on usage, and can be used in most parts of speech, so the prefix is how you know a word's role.
 
-Every sentence begins with an **utterance-frame** `/j/` cluster that includes **clause force** (see [Utterance markers](#utterance-markers-j)); that fixed left edge is how sentence boundaries stay clear under free word order. After that opener, the standard order is Subject \- Direct Object \- Verb. Order of those core roles can change for stylistic reasons or due to certain constructs like dependent clauses. Adjectives (`/w/`) go after what they modify. Adverbs (`/h/`) may appear anywhere in the clause (see below).
+Every sentence begins with an **utterance-frame** `/j/` cluster that includes **clause force** (see [Utterance markers](#utterance-markers-j)); that fixed left edge is how sentence boundaries stay clear under free word order. After that opener, the standard order is Subject \- Direct Object \- Verb. Order of those core roles can change for stylistic reasons (including **focus**), or due to certain constructs like dependent clauses. Adjectives (`/w/`) go after what they modify. Adverbs (`/h/`) may appear anywhere in the clause (see below).
 
 ## Part-of-speech prefixes
 
@@ -103,22 +103,26 @@ Same root, different prefix → different scope: `/h/` frames the clause; `/ɡ/`
 
 ## Adverbs (`/h/`)
 
-`/h/` marks **adverbs** (modifiers of the verb or clause). That includes manner, time/place adjuncts, recipients (*to* / *for*), and mood/tense/evidentiality. Example mood form: “h vizinin” means “I remember the events of this sentence (which occurred in the past).” Clause force is **not** `/h/`; it is an utterance marker (`/j/`).
+`/h/` marks **adverbs** (modifiers of the verb or clause). That includes manner, time/place adjuncts, recipients (*to* / *for*), topic/aboutness frames (*as for* / *regarding*), and mood/tense/evidentiality. Example mood form: “h vizinin” means “I remember the events of this sentence (which occurred in the past).” Clause force is **not** `/h/`; it is an utterance marker (`/j/`).
 
 Because `/h/` always targets the clause’s verb, **position is free within the clause** (before/after arguments, next to the verb, clause-final, etc.) for style, focus, or meter. `/h/` material must stay inside its own clause: it must not float into a following sentence or into a trailing dependent clause (dependent clauses stay at the end; see below).
 
-When several `/h/` units appear in one clause, interpret them in this **relative order** for scope (regardless of linear placement): mood/evidential → role/place/time adjuncts (including recipient) → manner. If two units share a band, left-to-right in the spoken order breaks the tie.
+**Topic** (*as for X*, *regarding X*) is a complex adverb: `/h/` + `/b/` topic noun (lexicon role: aboutness). There are **no dedicated focus markers**; highlight by rearranging free word order (and ordinary intensifiers like *only* / *especially* if needed). Topic/focus are not `/x/` discourse markers.
+
+English-looking **epistemic hedges** that really mark how you know or how strong the claim is (*apparently*, *supposedly*, *allegedly*, *maybe*, *perhaps*) are **mood/evidentiality**, not discourse markers: use `/h/` for the whole clause, or `/ɡ/` when the framing applies only to the preceding adjective (e.g. *alleged*). Do not put them under `/x/`.
+
+There is **no fixed scope-band order** among multiple `/h/` units. Each adverb’s contribution (mood/evidential, time/place/recipient adjunct, manner, and so on) comes from its **lexicon role**; spoken order is free for style and does not reorder those roles. If two units of the same role need a relative ranking, left-to-right in the spoken order breaks the tie.
 
 ## Complex adjectives, complex adverbs, and argument nouns
 
 A **complex adjective** or **complex adverb** takes an extra participant: the adjective or adverb word plus an **argument noun** (`/b/`). The argument immediately follows the adjective or adverb. That word carries the relation; `/b/` only marks “argument of that adjective or adverb” (the dictionary entry says how it relates to the host).
 
 - **Complex adjectives** use `/w/` + `/b/` (e.g. possessive owner, “book *on* the table”).
-- **Complex adverbs** use `/h/` + `/b/` (e.g. recipient *to*, “happened *at*”). The `/h/` + `/b/` pair is one unit and **stays contiguous** even when that unit floats.
+- **Complex adverbs** use `/h/` + `/b/` (e.g. recipient *to*, “happened *at*”, topic *regarding*, adverbial subordination *because* / *if* with the [next-clause pronoun](#dependent-clauses) as `/b/`). The `/h/` + `/b/` pair is one unit and **stays contiguous** even when that unit floats.
 
-Example (recipient): `/h/` *to* + `/b/` recipient may sit anywhere in the clause as a pair.
+Example (recipient): `/h/` *to* + `/b/` recipient may sit anywhere in the clause as a pair. Example (topic): `/h/` *regarding* + `/b/` topic noun likewise floats as a pair. Example (cause): `/h/` *because* + `/b/` next-clause pronoun, with the reason sentence last.
 
-After a complex adjective or adverb, the argument is the new noun for further adjective modification: a simple `/w/` after `/b/` describes the argument, not the original host. `/ɡ/` after a `/w/` (+ optional `/b/`) grades or frames that adjective, not the noun. You can chain by having a complex adjective or adverb modify another complex adjective/adverb or its argument. You can’t have two complex adjectives affect the same noun; if you need that, describe the noun further in a separate sentence. Multiple `/h/` units on the same verb are allowed (each simple `/h/` or contiguous `/h/`+`/b/` counts as one unit), subject to the scope order above.
+After a complex adjective or adverb, the argument is the new noun for further adjective modification: a simple `/w/` after `/b/` describes the argument, not the original host. `/ɡ/` after a `/w/` (+ optional `/b/`) grades or frames that adjective, not the noun. You can chain by having a complex adjective or adverb modify another complex adjective/adverb or its argument. You can’t have two complex adjectives affect the same noun; if you need that, describe the noun further in a separate sentence. Multiple `/h/` units on the same verb are allowed (each simple `/h/` or contiguous `/h/`+`/b/` counts as one unit); each unit’s role is read from the lexicon as above.
 
 Complex adjectives and adverbs cover what would be prepositional phrases in other languages. A verb used as a complex adverb with a `/b/` argument can form a simple dependent-clause-like adjunct (the `/b/` argument is the clause’s subject-like participant).
 
@@ -156,9 +160,20 @@ Content questions (*who* / *what* / *where*) use the [interrogative special pron
 
 Marked with x /ʒ/. Used for **conjunctions** (*and* / *or* / *but*, etc.) and **quotation markers** (see below). The dictionary lists the specific forms. The same sound **x** also joins roots inside compound words (see Phonotactics); it is not used as an ordinary root consonant, so mid-word **x** always means “next root,” and word-initial **x** always means discourse marker.
 
+`/x/` connects or fences discourse; it does **not** carry evidential or epistemic framing of the claim. Softeners that encode source-of-knowledge or claim strength stay `/h/` or `/ɡ/` (see [Adverbs](#adverbs-h)). Contrast: *however* / *in other words* → `/x/`; *apparently* / *allegedly* → `/h/` or `/ɡ/`.
+
+**Not `/x/`:** English-style subordinators that relate a following clause to a slot in the main clause (*if*, *because*, *although*, *while*, *until*) — those use the [next-clause pronoun](#dependent-clauses) plus a lexicon relation (usually `/h/` + `/b/`), not a discourse-marker prefix. `/x/` sentence linkers (*therefore*, *however*, *meanwhile*) do not fill a main-clause argument or adjunct slot.
+
 ## Dependent Clauses
 
-Dependent clauses are formed by a special pronoun (form TBD) that refers to the next sentence. To be unambiguous and reduce cognitive load, dependent clauses must come at the end of the sentence, so you must rearrange the word order if needed. Example is *I told him that...* The dependent material is itself a full sentence and therefore begins with its own `/j/` cluster (optional vocative(s) and interjection(s), then clause force). Main-clause `/h/` units stay in the main clause and do not float into the dependent clause.
+Dependent clauses use a **next-clause** special pronoun (form TBD): it stands in the main clause for “whatever the next sentence says.” The dependent material is itself a **full sentence** and begins with its own `/j/` cluster (optional vocative(s) and interjection(s), then clause force). To keep boundaries clear under free word order and to reduce nesting load, the dependent sentence **must come at the end** of the main sentence — rearrange word order if needed. Main-clause `/h/` units stay in the main clause and do not float into the dependent clause.
+
+The next-clause pronoun takes whatever PoS prefix the slot needs:
+
+* **Complement / content clause** — usually a core argument. Example: *I told him that…* → next-clause as direct object (`/d/`) of *tell* (or another role the verb requires).
+* **Adverbial relation** (*because*, *if*, *although*, *while*, *until*, …) — a complex adverb: `/h/` relation word + `/b/` next-clause pronoun. The lexicon entry names the relation; there is **no** separate `/x/` subordinator for these.
+
+`/x/` is only for discourse glue that does **not** occupy a main-clause slot (coordinators, sentence linkers, quote/aside fences). Do not encode *because* / *if*-style subordination as `/x/`.
 
 ## Quotations
 
@@ -204,7 +219,7 @@ Forms TBD. Roles:
 * **Speaker** (1st person)
 * **Listener** (2nd person)
 * **Generic single person** (a nonspecific individual — not impersonal *one*)
-* **Next clause** (used for dependent clauses; see above)
+* **Next clause** — placeholder for the immediately following sentence (dependent clauses). Takes the PoS prefix of the slot it fills (`/d/` complement, `/b/` under `/h/` *because* / *if*, etc.). Form TBD; see [Dependent Clauses](#dependent-clauses).
 * **Interrogative pronoun** (who/what/where) all use same root
 
 **Group containing** a referent is not a separate special pronoun: append **-z** to the word (see above).
