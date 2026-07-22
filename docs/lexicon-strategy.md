@@ -9,7 +9,7 @@ A root dictionary where each kept entry has:
 | Field | Role |
 |-------|------|
 | emoji | Visual anchor and stable ID for the concept |
-| literal | Common literal English gloss (what the emoji **is**) |
+| literal | Immediate English gloss — what a fluent user reads the emoji as (see below) |
 | clarity | Auto-generated Clarity **root** derived from that literal |
 | metaphorical | Deferred — not filled in this phase |
 
@@ -21,111 +21,249 @@ Psychological / Claritish vocabulary goals are out of scope for this lexicon pas
 
 - **Seed:** every row of `data/emojis.csv` (full Unicode emoji inventory in that file).
 - **One row per emoji** in `data/lexicon.csv`, including near-duplicates, until the distinctiveness pass marks which to keep.
-- Helper columns (`name`, `group`, `subgroup`) come from the Unicode/source inventory and are editing aids, not lexicon senses.
+- Helper columns (`name`, `group`, `subgroup`) come from the Unicode/source inventory — **hints only**, not the gloss.
 - Do **not** reuse `concept` / emojese labels from `emojis.csv`; those are often figurative or playful.
-- **Do** derive literals by normalizing the Unicode `name` column (see [Literal format](#literal-format) below).
+- Skeleton is in place: one row per emoji; `clarity` and `keep` empty.
 
-## Phase 1 — literal definitions (current)
+## What `literal` means
 
-Fill `literal` for **every row** in `data/lexicon.csv` (~3,950 emojis). Work **by `group`** (checklist below); each group can be reviewed before moving on.
+The **immediate reading** — the short English word or phrase a fluent emoji user would substitute for the glyph in ordinary use.
 
-1. Normalize `name` into a **common literal gloss**: the everyday, concrete meaning a learner would expect (e.g. 🍎 → `apple`, not `health` or `teachers-pet`).
-2. Prefer short, dictionary-like English (usually one word; multi-word only when needed for clarity).
-3. Leave `clarity` empty until Phase 3.
-4. Leave metaphors alone. Note for later: when metaphors return, they should hang off the same root via the language’s metaphorical lexical ending (`-m`), not as a second unrelated root — and only for common, useful extensions.
+**Substitution test:** *If this emoji appeared in a message and I replaced it with one gloss, what would I write?*
+
+| Emoji | Unicode `name` | Wrong (label) | Right (reading) |
+|-------|----------------|---------------|-----------------|
+| 🅿️ | P button | `p-button` | `parking` |
+| 🍎 | red apple | `red-apple` | `apple` |
+| ▶️ | play button | `play-button` | `play` |
+| 🏧 | ATM sign | `atm-sign` | `atm` |
+| 🅰️ | A button (blood type) | — | `blood-type-a` (the label *is* the meaning) |
+| 1️⃣ | keycap: 1 | — | `keycap-1` (digit is the meaning) |
+
+Rules:
+
+- Gloss **meaning**, not Unicode naming. When a letter or symbol stands for a word (P → parking), gloss the word.
+- When the label **is** the meaning (blood types, keycap digits, country flags), gloss the label.
+- Prefer the **dominant everyday reading**, not meme slang or rare figurative use.
+- Figurative extensions belong in a later metaphor pass (`-m`), not as a second root.
+- Avoid brand-specific senses unless the emoji is that brand/object.
+- **English accessibility:** If a typical English-speaking emoji user would not have an immediate gloss, the entry is not lexicon material (see [Drop rule](#drop-rule-no-english-association)).
+
+### Drop rule: no English association
+
+Clarity’s seed is emoji, but the **published lexicon is for English-accessible readings**. Drop rows (via `keep=n`) when an English speaker would not spontaneously know what the glyph means — no forced translation, no romanized Japanese, no “you’d know if you lived there.”
+
+**Substitution test failure:** If you hesitate, reach for a proper noun in another language, or want to write “it means X in Japan,” → **drop**.
+
+| Keep? | Example | Why |
+|-------|---------|-----|
+| yes | 🅿️ → `parking` | Universal sign reading in English contexts |
+| yes | 🏧 → `atm` | Widely recognized |
+| yes | 🔰 → `beginner` | Common loan in gaming/anime; single English word |
+| no | 🈹 “discount” button | Kanji legible only with Japanese literacy |
+| no | 🈶 “not free of charge” button | No spontaneous English reading |
+| no | 🈵 “no vacancy” button | Same |
+| maybe | 🏯 Japanese castle | English name for a building type — gloss `castle` if kept; drop if too niche vs generic 🏰 |
+
+**Typical drop categories:**
+
+- **Japanese ideograph buttons** (`alphanum` rows named `Japanese “…” button`) — almost all `keep=n`.
+- **Region-specific signage** with no English equivalent reading (other CJK shop signs, obscure local symbols).
+- **Hyper-niche flags / territories** only if we later decide they fail the usefulness bar (optional; country names usually stay in Tier A).
+
+Dropped rows **stay in `lexicon.csv`** with `keep=n` and `literal` empty (or a brief `name` note in comments only if needed — prefer empty). Do not invent Clarity roots for them. Phase 4 runs on `keep=y` only.
+
+This is separate from the **near-duplicate cull** (Phase 3): a row can be the only one of its kind and still be dropped for no English association.
 
 ### Literal format
 
 | Rule | Example |
 |------|---------|
-| Lowercase | `apple`, not `Apple` |
-| Hyphen-separated multi-word | `grinning-face`, `waving-hand` |
-| Singular where reasonable | `apple`, `dog`, `flag` |
-| Drop `and` / `&` | `antigua-barbuda`, not `antigua-and-barbuda` |
-| Strip Unicode prefixes from `name` | `flag: Japan` → `japan`; `keycap: 1` → `keycap-1` |
+| Lowercase | `parking`, not `Parking` |
+| Hyphen-separated multi-word | `blood-type-a`, `no-smoking` |
+| Singular where reasonable | `apple`, `dog` |
+| Drop `and` / `&` | `antigua-barbuda` |
+| Common short forms | `usa`, `uae`, `uk`, `japan` |
 
-**From `name`:** lowercase, replace spaces with hyphens, remove punctuation and filler words (`and`, `&`, `the`), collapse repeated hyphens. Trim skin-tone / hair-style / gender suffixes before choosing the shared literal (see below).
+## Phases (overview)
 
-### What “literal” means here
+| Phase | Status |
+|-------|--------|
+| Skeleton (`lexicon.csv` one row per emoji) | **done** |
+| 1. Variant collapse | **not started** |
+| 2. Literal glossing | **not started** (490 scripted drafts in Objects/Symbols only — wrong approach, need re-gloss or clear) |
+| 3. Cull (`keep`) | not started |
+| 4. Clarity roots | not started |
 
-- Name the **depicted** thing, action, or pose — not the emotion or meme reading it suggests.
-  - Prefer `grinning-face`, `crying-face`, `waving-hand` over `happy`, `sad`, `hello`.
-  - 🍎 → `apple`, not `health`.
-- Avoid slang, meme readings, and brand-specific senses unless the emoji is that brand/object.
-- **Collapse early:** near-duplicates in the same subgroup share one literal when the depiction is the same sense.
-  - Skin-tone, hair-style, and gender variants → same literal as the unqualified base (e.g. all 👋 variants → `waving-hand`).
-  - Grinning / smiling face variants in `face-smiling` → one shared literal such as `grinning-face` (not distinct literals per Unicode name).
-  - Colored hearts → `red-heart`, `blue-heart`, etc. only when color is the distinguishing feature; otherwise share.
-- Flags: the **common English country/territory name**, shortened when that is what people say (`japan`, `usa`, `uae`, `uk`), not official long forms unless needed for disambiguation.
-- Letters and keycaps: literal is the referent (`letter-a`, `keycap-1`), not a metaphor.
+```
+emojis.csv  →  lexicon.csv (skeleton)          ✓ done
+                 ↓
+         1. collapse variants (mechanical)     ← next
+                 ↓
+         2. gloss literals (curated)
+                 ↓
+         3. cull: duplicates + no-English-drop (keep=y/n)
+                 ↓
+         4. generate clarity roots
+```
 
-### Phase 1 checklist (by group)
+**What exists today:** The skeleton is complete. `scripts/fill-literals.ts` was run once on Objects + Symbols and wrote normalized-name “literals” — that was **not** Phase 1 (collapse) and **not** valid Phase 2 glossing. Treat those 490 values as discardable drafts until re-glossed. No `keep` values are set; variant rows (skin tone, gender, etc.) have not been clustered or linked to prototypes.
 
-| Group | Rows | Status |
-|-------|------|--------|
-| Smileys & Emotion | 171 | |
-| People & Body | 2,418 | |
-| Animals & Nature | 160 | |
-| Food & Drink | 131 | |
-| Travel & Places | 219 | |
-| Activities | 85 | |
-| Objects | 266 | |
-| Symbols | 224 | |
-| Flags | 270 | |
-| Component | 9 | |
+---
 
-Update the Status column as each group is completed (`done` / `review`).
+## Phase 1 — Variant collapse (mechanical)
 
-## Phase 2 — distinctiveness cull
+**Goal:** Near-duplicate rows share one `literal` before or as glossing proceeds. Reduce redundant judgment.
 
-Many emojis are near-synonyms (grinning faces, handshake variants, colored hearts). Phase 1 already collapses many of these to shared literals; Phase 2 picks which **emoji** to keep per literal cluster:
+**Script-assisted.** `npm run fill-literals` (or a dedicated collapse script) may:
 
-1. Cluster by `group` / `subgroup` and by identical or near-identical `literal` values.
-2. For each cluster, **keep only the most distinctive** emoji(s) — the clearest visual prototype for that literal.
+- Strip skin-tone, hair-style, and gender modifiers from `name` for clustering.
+- Identify the **prototype** row per cluster (unqualified / default presentation).
+- Copy a prototype's `literal` to its variant rows once the prototype is glossed.
+
+**Collapse rules:**
+
+- Skin-tone, hair-style, and gender variants → same `literal` as the unqualified base (e.g. all 👋 variants → whatever 👋 is glossed as).
+- Near-duplicate depictions in the same subgroup → one shared `literal` (e.g. grinning-face cluster, colored hearts where color is the point).
+- Component rows (`skin-tone`, `hair-style`) → gloss the component itself (`light-skin-tone`, `red-hair`, …).
+
+**Do not** auto-fill `literal` from normalized `name` for Tier B subgroups (see Phase 2). Scripts prepare clusters; they do not assign meaning.
+
+---
+
+## Phase 2 — Literal glossing (curated)
+
+**Prerequisite:** Phase 1 complete (or in progress per subgroup: gloss prototype rows, then propagate).
+
+**Goal:** Every **kept** row has a reviewed `literal`. This is the main lexicon-design pass and requires judgment.
+
+Work **by `subgroup`** within each `group`. Finish one subgroup, review, then move on.
+
+### Tier A — object referent (script draft OK, human review)
+
+Name ≈ meaning. A normalized draft is often correct; spot-check for outliers.
+
+| Groups / subgroups |
+|--------------------|
+| Animals & Nature (all) |
+| Food & Drink (all) |
+| Objects — clothing, tool, household, musical-instrument, science, medical, writing, most office/household |
+| Flags — `country-flag`, `subdivision-flag` |
+| Component |
+
+### Tier B — immediate reading (curated only)
+
+Signs, UI, faces, people, activities — **no auto-gloss from `name`**. Apply the substitution test row by row or cluster by cluster.
+
+| Groups / subgroups |
+|--------------------|
+| Symbols (all) |
+| Smileys & Emotion (all) |
+| People & Body (all) |
+| Activities (all) |
+| Travel & Places (all) |
+| Objects — sign-like or label-like: `phone`, `computer`, `money`, `mail`, `lock`, `sound`, `music`, `light & video` |
+
+### Subgroup briefs (Tier B)
+
+Short guidance so glosses stay consistent within a subgroup:
+
+| Subgroup | Brief |
+|----------|-------|
+| `transport-sign` | What the sign means (`parking`, `restroom`, `atm`), not "X sign". |
+| `warning` | The prohibition or hazard (`no-smoking`, `radioactive`), not icon description. |
+| `alphanum` | Latin-letter buttons → meaning (`parking`, `ok`, `cool`); blood-type → `blood-type-a`. **Japanese ideograph buttons → `keep=n`** (no English association). |
+| `av-symbol` | Media control meaning (`play`, `pause`, `shuffle`), not "play button". |
+| `arrow` | Direction or action (`up`, `back`, `reload`), not "up arrow". |
+| `geometric` | Color + shape when that is the reading (`red-circle`); otherwise the intended use. |
+| `keycap` | `keycap-1`, `keycap-hash`, etc. — digit/symbol is the meaning. |
+| `face-*` | What the face reads as (`grin`, `laugh`, `cry`, `wink`) — not Unicode face description. |
+| `heart` | Keep color when it matters (`red-heart`); shared concepts otherwise (`broken-heart`). |
+| `person-*` | Action or role (`wave`, `doctor`, `runner`), not "woman gesturing OK". |
+| `sport` / `game` | Activity (`soccer`, `chess`), not equipment description. |
+
+Leave `clarity` empty until Phase 4.
+
+During glossing, mark obvious drops mentally (or tentatively `keep=n`); confirm in Phase 3. Do not spend time inventing English glosses for Japanese ideograph buttons.
+
+### Glossing checklist (by group)
+
+| Group | Rows | Tier | Status |
+|-------|------|------|--------|
+| Symbols | 224 | B | re-gloss |
+| Smileys & Emotion | 171 | B | |
+| People & Body | 2,418 | B | |
+| Travel & Places | 219 | B | |
+| Activities | 85 | B | |
+| Objects | 266 | A + B | re-gloss |
+| Animals & Nature | 160 | A | |
+| Food & Drink | 131 | A | |
+| Flags | 270 | A | |
+| Component | 9 | A | |
+
+Status values: empty · `draft` · `review` · `done` · `re-gloss` (scripted literals that need human pass).
+
+**Note:** Objects and Symbols were briefly auto-filled from normalized `name`; treat those literals as **drafts to replace**, not finished glosses.
+
+---
+
+## Phase 3 — Cull (`keep=y` / `keep=n`)
+
+Two reasons to set `keep=n` (rows stay in `lexicon.csv`; never delete seed rows):
+
+### A. No English association (drop)
+
+Apply the [drop rule](#drop-rule-no-english-association). Leave `literal` empty. Examples: most `Japanese “…” button` rows, other signage that fails the substitution test for English speakers.
+
+### B. Distinctiveness (near-duplicates)
+
+Many kept emojis share a `literal` after Phases 1–2. Pick which **emoji** to keep per cluster:
+
+1. Cluster by `group` / `subgroup` and by identical `literal`.
+2. For each cluster, **keep only the most distinctive** emoji(s) — the clearest visual prototype for that gloss.
 3. Set `keep` to `y` or `n` (empty = not reviewed).
-4. Downstream tooling and published dictionaries should use **`keep=y` rows only**. All rows stay in `lexicon.csv` so cull decisions remain reversible.
+4. Downstream tooling and published dictionaries use **`keep=y` rows only**.
 
-“Most distinctive” ≈ fewest competing near-duplicates + most recognizable depiction of the literal. When two are equally good, prefer the unqualified / default presentation (no skin tone, no gender variant) if one exists.
+“Most distinctive” ≈ fewest competing near-duplicates + most recognizable depiction. When tied, prefer the unqualified / default presentation (no skin tone, no gender variant).
 
-## Phase 3 — Clarity roots
+A row can be dropped under A without being a duplicate, or culled under B while still being English-accessible.
 
-Once a row has a stable literal and `keep=y` (or you are generating provisionally for drafting):
+---
 
-1. Derive the Clarity root from the **literal** string with the existing converter (`toUniqueClarityWord` / `scripts/convert-emojis.ts` pattern).
+## Phase 4 — Clarity roots
+
+Once a row has a stable `literal` and `keep=y` (or provisional generation while drafting):
+
+1. Derive the Clarity root from **`literal`** with the existing converter (`toUniqueClarityWord` / `scripts/convert-emojis.ts` pattern).
 2. Uniqueness is over **kept** roots (and any reserved roots documented later).
 3. Store only the root in `clarity` (no PoS prefix, no `-l`/`-m` ending).
 
-Regenerate clarity in bulk when literals or the keep set change; do not hand-edit roots unless documenting an exception in this file.
+Regenerate in bulk when literals or the keep set change; do not hand-edit roots unless documenting an exception in this file.
+
+---
 
 ## CSV schema (`data/lexicon.csv`)
 
 | Column | Required | Notes |
 |--------|----------|-------|
 | `emoji` | yes | Glyph; primary key with `name` as backup if glyph normalizes oddly |
-| `name` | yes | Unicode/CLDR name from seed (reference) |
+| `name` | yes | Unicode/CLDR name from seed (reference only) |
 | `group` | yes | Seed taxonomy — clustering aid |
-| `subgroup` | yes | Seed taxonomy — clustering aid |
-| `literal` | phase 1 | Common literal gloss; empty in skeleton |
-| `clarity` | phase 3 | Auto root from `literal`; empty until then |
-| `keep` | phase 2 | `y` / `n` / empty (unreviewed) |
+| `subgroup` | yes | Seed taxonomy — glossing brief scope |
+| `literal` | phase 2 | Immediate-reading gloss; empty until glossed |
+| `clarity` | phase 4 | Auto root from `literal`; empty until then |
+| `keep` | phase 3 | `y` = in published lexicon · `n` = dropped (no English association and/or duplicate cull) · empty = unreviewed |
 
 No `metaphorical` column yet. Add it when metaphors are in scope.
 
-## Workflow
+## Tooling
 
-```
-emojis.csv  →  lexicon.csv (skeleton: one row per emoji)
-                 ↓
-            fill literal
-                 ↓
-            set keep (distinctiveness)
-                 ↓
-            generate clarity from literal
-```
+| Script | Role |
+|--------|------|
+| `scripts/fill-literals.ts` | **Collapse / propagate only** — not authoritative glossing. Do not trust its output for Tier B. |
+| Lexicon converter (to be wired) | Phase 4: `literal` → `clarity` for `keep=y` rows |
 
-1. Edit literals (and later `keep`) in `data/lexicon.csv`, working group by group (see Phase 1 checklist).
-2. Run a lexicon converter script (to be wired; pattern in `scripts/convert-emojis.ts`) to fill `clarity` for rows with non-empty literal — preferably restricted to `keep=y` once phase 2 has started.
-3. Treat `docs/language-reference.md` as grammar/phonology authority; this doc owns lexicon process only.
+Manual editing in `data/lexicon.csv` is the source of truth for `literal`. Treat `docs/language-reference.md` as grammar/phonology authority; this doc owns lexicon process only.
 
 ## Out of scope (for now)
 
@@ -137,4 +275,4 @@ emojis.csv  →  lexicon.csv (skeleton: one row per emoji)
 
 ## Immediate deliverable
 
-Phase 1: all rows in `data/lexicon.csv` have a non-empty `literal`; `clarity` and `keep` remain empty. Skeleton is already in place (one row per `emojis.csv` emoji).
+**Next:** Phase 1 — build or repurpose tooling to cluster variant rows and propagate `literal` from prototypes. Then Phase 2 on **Symbols** (meaning-first gloss + batch-drop Japanese ideograph buttons). Clear or ignore the 490 scripted Objects/Symbols drafts when re-glossing.
