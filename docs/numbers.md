@@ -32,9 +32,9 @@ The number word takes whichever PoS prefix the role needs (clause slot, interjec
 | `/ɡ/` | **modifier** — referential: the number describes the preceding noun (*three cats*, *the second page*, *room 12*). Goes after the noun, like other adjectives. |
 | `/z/` | **subject** — referential: the numeric value, digit-string, or rank is the subject. |
 | `/d/` | **direct object** — referential: the number is the object (common for digit-strings / codes being dialed, entered, stated). |
-| `/b/` | **argument noun** — referential: the number fills the `/b/` slot of a complex adjective or adverb (*of size 12*, host *at* + time/label, …). Clock-as-circumstance without a host relation prefers `/h/` + **`re`**. |
+| `/b/` | **argument noun** — referential: the number fills the `/b/` slot of a complex adjective or adverb (*of size 12*, host *on* + channel/label, host *at* + time when a relation is named, …). Bare temporal circumstance (no host) uses `/h/` + **`re`** ([Time](#time)). |
 | `/v/` | **verb** — overlay: the number is the clause’s action; see [by marker](#number-as-verb-by-marker). Not multiply/divide by N (use ordinary *multiply* / *divide* plus `/h/`). |
-| `/h/` | **adverb** — overlay: see [by marker](#number-as-adverb-by-marker) (*N times*, ÷N, clock readings, *for the Nth time*). |
+| `/h/` | **adverb** — overlay: see [by marker](#number-as-adverb-by-marker) (*N times*, ÷N, **time** via **`re`**, *for the Nth time*). |
 | `/j/` | **interjection** — overlay: see [by marker](#number-as-interjection-by-marker). Left-edge or bare utterance only — [utterance-marker rules](language-reference.md#utterance-markers-j). **Not** clause force. |
 | `/x/` | **discourse marker** — overlay: see [by marker](#number-as-discourse-marker-by-marker). Does **not** fill a clause slot. |
 
@@ -95,21 +95,23 @@ Endings still apply (**-m** ≈ *about* that amount/code/rank, **-r** resume, et
 |--------|---------|--------------|
 | **`ra`** | `h+Nl` | **Multiplicative / factor** — *N times*; *×N*; *by a factor of N* (alone, or with ordinary *multiply*). |
 | **`ru`** | `h-Nl` | **Inverse / partition** — *÷N*; *into N parts*; *1/N as often*; *every Nth* (alone, or with ordinary *divide*). |
-| **`re`** | `h_…l` | **Clock / code as circumstance** — *at 15:30*; *on 101.1*; *channel 7* (digits as when/where label, not a count of times). Rare negative label: `h_-…l`. |
+| **`re`** | `h_…l` | **Temporal circumstance only** — *at 15:30*; *on 2026-07-22* (clock or calendar digit reading). **Not** channel, frequency, gate, or other non-time codes — those use a host relation + `/b/` (or `/ɡ/` on a noun). See [Time](#time). Rare negative label: `h_-…l`. |
 | **`ro`** | `h#Nl` | **Nth occurrence of the event** — *for the Nth time*; *on the Nth try* (clause-event ordinal, not discourse *Nth-ly*). Rare negative ordinal: `h#-Nl`. |
 
 Contrasts:
 
 - `h+3l` — *three times* / ×3
 - `h-3l` — ÷3 / every third / into 3
-- `h_15,30l` — *at 15:30* (clock-ish digit reading)
+- `h_15,30l` — *at 15:30* (bare `hre` = time; [Time](#time))
+- `h_2026,07,22l` — *on 2026-07-22* (bare `hre` date)
+- `/h/` *on* + `b_101.1l` — *on 101.1* (non-time code; not bare `h_…`)
 - `h#3l` — *for the third time*
 - `j#3l` — *Third!* (place cheer)
 - `x#3l` — *thirdly* (discourse list)
 - `g#3l` — *the third* (modifies a noun)
 - `v+3l` — *add 3* (verb)
 
-Endings still apply (**-m** ≈ *about* that many times / that clock reading, **-r** resume, etc.). Relative %-change factors use **`h+…`** (e.g. ×1.5), not **`jo`** / **`ju`** alone — see [percent](#percent-and-percentage-points). Sign for `re`/`ro` stems: see [Sign](#sign).
+Endings still apply (**-m** ≈ *about* that many times / that clock or date, **-r** resume, etc.). Relative %-change factors use **`h+…`** (e.g. ×1.5), not **`jo`** / **`ju`** alone — see [percent](#percent-and-percentage-points). Sign for `re`/`ro` stems: see [Sign](#sign).
 
 ### Number as interjection (by marker)
 
@@ -259,7 +261,25 @@ The **whole** / reference class is **not** inside the number word. Prefer clause
 
 ## Digit-strings
 
-Use marker **`re`** (written **`_`**). Omit exponents. Prefer groups of three digits. Ending is usually **-l** (exact label); **-n** for an official designation; **-r** to resume a prior code. As `/h/`, a digit-string is a [clock / code circumstance](#number-as-adverb-by-marker) (`h_15,30l`), not a count of times. Rare negative labels use the [sign extender](#sign) (`_-…` / `re`+`ru`…).
+Use marker **`re`** (written **`_`**). Omit exponents. Prefer groups of three digits. Ending is usually **-l** (exact label); **-n** for an official designation; **-r** to resume a prior code. Bare `/h/` + **`re`** is **[temporal circumstance only](#time)** (`h_15,30l`, `h_2026,07,22l`) — not a generic code adverb. Non-time labels as circumstance use a host relation + `/b/` (e.g. `/h/` *on* + `b_7l` *channel 7*), or modify a noun with `/ɡ/`. Rare negative labels use the [sign extender](#sign) (`_-…` / `re`+`ru`…). Clock and calendar field orders are under [Time](#time).
+
+## Time
+
+Time uses the existing number grammar; there is **no** fifth marker vowel and **no** time closer parallel to **`jo`** / **`ju`**.
+
+**Bare `/h/` + `re` (`hre…`) is reserved for temporal circumstance** (clock or calendar). Spoken `hre` already marks that reading; do not use bare `h_…` for channel, frequency, gate, room-as-where, or other non-time codes.
+
+| Job | How |
+|-----|-----|
+| **Clock / schedule** | Digit-string **`re`** as bare `/h/`. Default **24h**. Fields left→right, commas orthographic only: hour, minute, optional seconds — `h_15,30l`, `h_15,30,00l`. |
+| **Calendar date** | Digit-string **`re`**, ISO-ish fields: year, month, day — bare `h_2026,07,22l`, or modifier `g_2026,07,22l`. An explicit *date* host + `/b/` is optional when you want to name the relation; it is not required to license bare `hre` (bare `hre` already means time). |
+| **Duration** | Scalar **`ra`** / **`ru`** plus a lexicon **unit** (*hour*, *day*, …) in the clause — not a digit-string, not bare `hre`. Same engineering-exponent habits as other measures when useful. |
+| **Deixis / tense** | Ordinary lexicon `/h/` (*yesterday*, *ago*, *until*, mood/evidential). Numbers appear only for a numeric payload (*3 days ago* = relation + scalar + unit). |
+| **Non-time digit labels** | Host relation + `/b/` (`/h/` *on* + `b_101.1l`), or `/ɡ/` on a noun (*channel* `g_7l`) — **not** bare `h_…`. |
+
+**Not bare `hre`:** `h+3l` (×3 / *three times*); `h#3l` (*for the third time*); non-time codes as above. Do not use a scalar for a clock face (`*g+1530l*` for 15:30). Timezone, era, and calendar system stay lexicon adjuncts, not inside the number word.
+
+Endings: **-l** exact reading; **-m** fuzzy (*around 15:30*); **-n** conventional schedule/date name; **-r** resume a prior clock or date label.
 
 ## Writing (preferred shorthand)
 
@@ -337,7 +357,10 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 | as in (2) above | `x#2r` | *xrodur* (ending **-r**) |
 | three times / ×3 | `h+3l` | *hrarel* (`h` + `ra` + re) |
 | ÷3 / every third | `h-3l` | *hrurel* (`h` + `ru` + re) |
-| at 15:30 | `h_15,30l` | *hrewovarezol* (`h` + `re` + wo va · re zo) |
+| at 15:30 | `h_15,30l` | *hrewovarezol* (`h` + `re` + wo va · re zo) — bare `hre` = time |
+| on 2026-07-22 | `h_2026,07,22l` | *hrewoduzoguzoledudul* (`h` + `re` + …) — bare `hre` date |
+| date 2026-07-22 (modifier) | `g_2026,07,22l` | *grewoduzoguzoledudul* (`g` + `re` + wo du zo gu · zo le · du du) — date fields, not threes |
+| on 101.1 (frequency) | `/h/` *on* + `b_101.1l` | not bare `h_…`; host + `/b/` digit-string |
 | for the third time | `h#3l` | *hrorel* (`h` + `ro` + re) |
 | Three! (score) | `j+3l` | *jrarel* (`j` + `ra` + re) |
 | Three! (countdown) | `j-3l` | *jrurel* (`j` + `ru` + re) |
