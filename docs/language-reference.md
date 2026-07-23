@@ -152,7 +152,7 @@ Every full sentence includes exactly one **clause-force** `/j/`. The closed set 
 * **polar question** — yes/no question
 * **imperative** — directive (command / instruction)
 
-**Numbers are not clause force.** A `/j/` number word is an [interjection](numbers.md#number-as-interjection-by-marker) (score shout, countdown, digit-label call, place cheer). It may sit in the left-edge cluster before force, or stand alone as a bare utterance with no force.
+**Numbers are not clause force.** A `/j/` number word is an [interjection](numbers.md#number-as-interjection-by-marker) (*N more!*, deficit/shortfall call, digit-label / score call, place cheer). It may sit in the left-edge cluster before force, or stand alone as a bare utterance with no force.
 
 Other speech acts (request, promise, wish, evaluative judgment, and so on) are not separate forces yet — express them with ordinary vocabulary under one of these three; the dictionary may add dedicated force forms later.
 
@@ -164,7 +164,7 @@ Marked with x /ʒ/. Used for **conjunctions** (*and* / *or* / *but*, etc.) and *
 
 `/x/` connects or fences discourse; it does **not** carry evidential or epistemic framing of the claim. Softeners that encode source-of-knowledge or claim strength stay `/h/` or `/w/` (see [Adverbs](#adverbs-h)). Contrast: *however* / *in other words* → `/x/`; *apparently* / *allegedly* → `/h/` or `/w/`.
 
-**Numbered list / enumeration markers** are `/x/` + [number word](numbers.md#number-as-discourse-marker-by-marker) (*firstly*, *point 3:*, *skipping 2*, *re item 12*). Marker vowel chooses the discourse sense; details live in numbers.md.
+**Numbered list / enumeration markers** are `/x/` + [number word](numbers.md#number-as-discourse-marker-by-marker) (*point N:* neutral, *for N:* / pro, *against N:* / con, *re item 12*). Marker vowel chooses list valence (or cite-as-label); details live in numbers.md.
 
 **Not `/x/`:** English-style subordinators that relate a following clause to a slot in the main clause (*if*, *because*, *although*, *while*, *until*) — those use the [next-clause pronoun](#dependent-clauses) plus a lexicon relation (usually `/h/` + `/b/`), not a discourse-marker prefix. `/x/` sentence linkers (*therefore*, *however*, *meanwhile*) and number enumeration markers do not fill a main-clause argument or adjunct slot.
 
