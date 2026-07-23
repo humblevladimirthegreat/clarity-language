@@ -32,7 +32,7 @@ This is accomplished via each word preceded by a prefix indicating the part of s
 
 **Referential Unambiguity**: It is always clear what pronouns refer to.
 
-A difficult problem for computationally parsing a sentence is figuring out what vague pronouns like English *it* refer to. Clarity avoids that by forming anaphoric pronouns from a fixed prefix of **any** prior word’s root (through the 2nd vowel), resolved to the **most recently mentioned matching** antecedent (see [References: unambiguous pronouns](#references-unambiguous-pronouns)), plus a small set of special pronouns for discourse roles. There are no vague person/number pronouns in the English sense.
+A difficult problem for computationally parsing a sentence is figuring out what vague pronouns like English *it* refer to. Clarity avoids that by forming anaphoric pronouns from a fixed prefix of **any** prior word’s root (through the 2nd vowel), resolved to the **most recently mentioned matching** antecedent (see [pronouns.md](pronouns.md)), plus a small set of special pronouns for discourse roles. There are no vague person/number pronouns in the English sense.
 
 **Semantic Unambiguity**: It is always clear in what sense a word is being used.
 
@@ -118,7 +118,7 @@ There is **no fixed scope-band order** among multiple `/h/` units. Each adverb�
 A **complex adjective** or **complex adverb** takes an extra participant: the adjective or adverb word plus an **argument noun** (`/b/`). The argument immediately follows the adjective or adverb. That word carries the relation; `/b/` only marks “argument of that adjective or adverb” (the dictionary entry says how it relates to the host).
 
 - **Complex adjectives** use `/ɡ/` + `/b/` (e.g. possessive owner, “book *on* the table”).
-- **Complex adverbs** use `/h/` + `/b/` (e.g. recipient *to*, “happened *at*”, topic *regarding*, adverbial subordination *because* / *if* with the [next-clause pronoun](#dependent-clauses) as `/b/`). The `/h/` + `/b/` pair is one unit and **stays contiguous** even when that unit floats.
+- **Complex adverbs** use `/h/` + `/b/` (e.g. recipient *to*, “happened *at*”, topic *regarding*, adverbial subordination *because* / *if* with the [next-clause pronoun](pronouns.md#special-pronouns) as `/b/`). The `/h/` + `/b/` pair is one unit and **stays contiguous** even when that unit floats.
 
 Example (recipient): `/h/` *to* + `/b/` recipient may sit anywhere in the clause as a pair. Example (topic): `/h/` *regarding* + `/b/` topic noun likewise floats as a pair. Example (cause): `/h/` *because* + `/b/` next-clause pronoun, with the reason sentence last.
 
@@ -156,21 +156,21 @@ Every full sentence includes exactly one **clause-force** `/j/`. The closed set 
 
 Other speech acts (request, promise, wish, evaluative judgment, and so on) are not separate forces yet — express them with ordinary vocabulary under one of these three; the dictionary may add dedicated force forms later.
 
-Content questions (*who* / *what* / *where*) use the [interrogative special pronoun](#special-pronouns) for the queried role and, for now, the same **polar question** force as yes/no questions.
+Content questions (*who* / *what* / *where*) use the [interrogative special pronoun](pronouns.md#special-pronouns) for the queried role and, for now, the same **polar question** force as yes/no questions.
 
 ## Discourse markers (`/x/`)
 
-Marked with x /ʒ/. Used for **conjunctions** (*and* / *or* / *but*, etc.) and **quotation markers** (see below). The dictionary lists the specific forms. The same sound **x** also joins roots inside compound words (see Phonotactics); it is not used as an ordinary root consonant, so mid-word **x** always means “next root,” and word-initial **x** always means discourse marker.
+Marked with x /ʒ/. Used for **conjunctions** (*and* / *or* / *but*, etc.) and **quotation markers** (see below). The dictionary lists the specific forms. The same sound **x** also joins roots inside compound words (see [Phonotactics](phonology.md#phonotactics)); it is not used as an ordinary root consonant, so mid-word **x** always means “next root,” and word-initial **x** always means discourse marker.
 
 `/x/` connects or fences discourse; it does **not** carry evidential or epistemic framing of the claim. Softeners that encode source-of-knowledge or claim strength stay `/h/` or `/w/` (see [Adverbs](#adverbs-h)). Contrast: *however* / *in other words* → `/x/`; *apparently* / *allegedly* → `/h/` or `/w/`.
 
 **Numbered list / enumeration markers** are `/x/` + [number word](numbers.md#number-as-discourse-marker-by-marker) (*point N:* neutral, *corroborating N:*, *independent N:*, *re item 12*). Marker vowel chooses independence framing (or cite-as-label); details live in numbers.md.
 
-**Not `/x/`:** English-style subordinators that relate a following clause to a slot in the main clause (*if*, *because*, *although*, *while*, *until*) — those use the [next-clause pronoun](#dependent-clauses) plus a lexicon relation (usually `/h/` + `/b/`), not a discourse-marker prefix. `/x/` sentence linkers (*therefore*, *however*, *meanwhile*) and number enumeration markers do not fill a main-clause argument or adjunct slot.
+**Not `/x/`:** English-style subordinators that relate a following clause to a slot in the main clause (*if*, *because*, *although*, *while*, *until*) — those use the [next-clause pronoun](pronouns.md#special-pronouns) plus a lexicon relation (usually `/h/` + `/b/`), not a discourse-marker prefix. `/x/` sentence linkers (*therefore*, *however*, *meanwhile*) and number enumeration markers do not fill a main-clause argument or adjunct slot.
 
 ## Dependent Clauses
 
-Dependent clauses use a **next-clause** special pronoun (form TBD): it stands in the main clause for “whatever the next sentence says.” The dependent material is itself a **full sentence** and begins with its own `/j/` cluster (optional vocative(s) and interjection(s), then clause force). To keep boundaries clear under free word order and to reduce nesting load, the dependent sentence **must come at the end** of the main sentence — rearrange word order if needed. Main-clause `/h/` units stay in the main clause and do not float into the dependent clause.
+Dependent clauses use a [next-clause special pronoun](pronouns.md#special-pronouns) (form TBD): it stands in the main clause for “whatever the next sentence says.” The dependent material is itself a **full sentence** and begins with its own `/j/` cluster (optional vocative(s) and interjection(s), then clause force). To keep boundaries clear under free word order and to reduce nesting load, the dependent sentence **must come at the end** of the main sentence — rearrange word order if needed. Main-clause `/h/` units stay in the main clause and do not float into the dependent clause.
 
 The next-clause pronoun takes whatever PoS prefix the slot needs:
 
@@ -183,52 +183,9 @@ The next-clause pronoun takes whatever PoS prefix the slot needs:
 
 When quoting someone, using a proper noun, using a foreign word, or using a slang word, you must use the square brackets \[ \]. Begin-quote, end-quote, and escape forms are **/x/-prefixed** words (the dictionary lists the specific forms). On the off chance you need to use a quotation marker word within the quotation, it is escaped with \\ or the escape form immediately before it. These spoken forms are probably not needed in casual speech, but can be helpful if speaking with voice-to-text or if you want to emphasize the quoting. 
 
-# References: unambiguous pronouns
+# Pronouns
 
-Pronouns replace definite articles: once something has been introduced, you refer back with a **-r** form (or an alternate construct below), not with a separate “the X” form.
-
-## Definiteness
-
-| Form | Discourse job |
-|------|----------------|
-| Common full word (`-l` / `-m`) | Indefinite introduction (“a / some X”) — first mention of that kind of referent |
-| Pronoun (`-r`) | Definite reference to an already-introduced referent |
-| Proper name (`-n`) | Definite / unique by nature (not “a John”) |
-
-A bare `-l` / `-m` word always introduces; it is never used to resume a prior referent. Resumption is always marked with **-r**.
-
-## Letter-based and full-root anaphoric pronouns
-
-An anaphoric pronoun can refer back to **any prior word** (noun, verb, adjective, adverb, and so on — not only arguments). It takes the usual part-of-speech prefix and the pronoun lexical ending **-r**. The pronoun’s PoS prefix is whatever role you need **now**; it need not match the antecedent’s original PoS.
-
-Two lengths of stem:
-
-1. **Letter pronoun** — a **fixed prefix of that word’s root**, cut **up to and including the 2nd vowel**. (Roots are `V(CV)+`, so the stem is typically the opening `VCV`.) Prefer this when it already picks the intended antecedent.
-2. **Full-root pronoun** — the **entire root** of the antecedent, still ending in **-r**. Use this when the letter pronoun’s most recent match is **not** what you intend. The **-r** ending is obligatory: this is still a reference, not a new indefinite (`-l` / `-m`) mention.
-
-Resolution is always unambiguous for the listener and for a parser: a **-r** pronoun refers to the **most recently mentioned matching** antecedent — the most recent word whose root begins with that stem (letter length or full root, depending on which form was used). There is no guesswork about which match was meant.
-
-**Mention = any word use in the discourse** (any part of speech), including pronoun uses themselves. Resolving a pronoun counts as a new mention of that referent and makes it the most recent again.
-
-It is the **speaker’s** job to ensure the intended referent is the most recent match. Use the letter pronoun when that is already true. If the most recent match is **not** what you intend, use the **full-root `-r` form**. If even that isn't distinct, add an **adjective / ordinal** to disambiguate. That mention becomes most recent, so later pronouns can refer to it again.
-
-Add **-z** after the lexical ending to mark **plural**: the **group containing** the referent. Example: `…r` refers to one noun; `…rz` refers to the group that includes that noun. The same **-z** works on full words (`…lz`, `…nz`, etc.).
-
-There are no English-style 3rd-person pronouns (*he* / *she* / *it* / *they*) and no impersonal *one*.
-
-## Special pronouns
-
-Forms TBD. Roles:
-
-* **Speaker** (1st person)
-* **Listener** (2nd person)
-* **Generic single person** (a nonspecific individual — not impersonal *one*)
-* **Next clause** — placeholder for the immediately following sentence (dependent clauses). Takes the PoS prefix of the slot it fills (`/d/` complement, `/b/` under `/h/` *because* / *if*, etc.). Form TBD; see [Dependent Clauses](#dependent-clauses).
-* **Interrogative pronoun** (who/what/where) all use same root
-
-**Group containing** a referent is not a separate special pronoun: append **-z** to the word (see above).
-
-**Prefer names.** When a proper name is available, use it (`-n`) and/or its pronoun (`-r` from the name’s root) — including for self-address — rather than the speaker/listener special pronoun. Proper names are definite; the special pronouns are for the narrow cases where a name is unavailable or undesired.
+Pronoun grammar (definiteness, anaphoric **-r** forms, special pronouns) lives in **[pronouns.md](pronouns.md)**.
 
 # Numbers
 
@@ -236,48 +193,4 @@ Numeral grammar (digit roots, engineering/scientific forms, ordinals, digit-stri
 
 # Phonology and Phonotactics
 
-Clarity has the following goals for its phonology:
-
-1. Easy to sing (explained below).  
-2. Unambiguous pronunciation \- it should always be clear how to pronounce it from the spelling.  
-3. Clear word boundaries (even within a compound word).
-
-### Vowels
-
-I chose vowels that aren't fully open or fully closed so you don't have to do [vowel modification](https://www.singwise.com/articles/vowels-formants-modifications) (see section "VOWEL MODIFICATION ('COPERTURA')") to sing them in your high/low range.
-
-e /e̞/ \- o /o̞/ \- u /ɶ/ \- a /ɑ/  (roundedness is non-contrastive)
-
-### Consonants at beginning of syllables
-
-The language has no distinction between voiced/unvoiced, but the voiced version is preferred because you can sustain notes across letters (voiceless requires briefly stopping the airflow). You can still use the unvoiced for stylistic reasons.
-
-h /ɣ/, w /w/, g /ɡ/, d /d/, j /dʑ/, b /b/, z /z/, m /m/, n /n/, v /v/, x /ʒ/
-
-possible clusters:
-gr, gl, dr, br, bl
-
-### Consonants at end of syllables (except end of word)
-
-g /ɡ/, d /d/, j /dʑ/, b /b/, z /z/, m /m/, v /v/  (cannot double with the second beginning consonant)
-
-(**x** /ʒ/ is not used as a syllable coda or as an ordinary root consonant; see compounds below.)
-
-### Phonotactics
-
-A word contains three parts:
-1. the part of speech prefix
-2. the root(s) - multiple if compound word
-3. the lexical ending: literal (**-l**), metaphorical (**-m**), proper name (**-n**), pronoun (**-r**) — except in [number words](numbers.md), where the same four letters have number-specific meanings
-4. optional plural **-z** (the group containing the referent), after the lexical ending
-
-roots have form V(CV)+
-if a compound root, then **x** separates them
-
-a) A word root almost always starts with a vowel. The ending and beginning consonants were carefully chosen so that you can never confuse which syllable a consonant belongs to (vaban must be pronounced va'ban and not vab'an because syllables never end with a consonant unless it's the end of the word).
-
-b) All words end with a lexical ending (**-l**, **-m**, **-n**, or **-r**), optionally followed by plural **-z**. No other syllables end with a consonant, so word boundaries stay clear even when pauses are unreliable (as in singing). Allowed word-final clusters are those endings plus **-z** (**-lz**, **-mz**, **-nz**, **-rz**).
-
-c) Easy to tell the components of a compound word because **x** separates them. Mid-word **x** is only the compound joiner (never part of a root); word-initial **x** is the discourse-marker prefix.
-
-d) **Number-word exception:** After a PoS prefix, a following **r** (start of the number marker) may form a cluster that is not otherwise allowed (e.g. `/ɡ/`+`r`, `/z/`+`r`, `/v/`+`r`, `/h/`+`r`, `/j/`+`r`, `/x/`+`r`). That cluster is legal **only** in [number words](numbers.md); it is not a global expansion of the onset-cluster list above. Number stems are a closed formal grammar and must not be assigned as ordinary lexicon roots.
+Phonology, syllable structure, and phonotactics live in **[phonology.md](phonology.md)**.

@@ -457,7 +457,7 @@ Helpers: `parseMetaphoricalCell` / `formatMetaphoricalCell` in `scripts/ngsl-cov
 | `scripts/apply-metaphor-quality-pass.py` | Phase 5: apply quality metaphors + mnemonics to `lexicon-published.csv` |
 | `scripts/deduplicate-metaphors.py` | Phase 5: flag demonyms + unique metaphor dedup (`metaphorical` empty + `mnemonic=REVIEW` for losers) |
 
-Manual editing in `data/lexicon.csv` is the source of truth for `literal`. Treat `docs/language-reference.md` as grammar/phonology authority; this doc owns lexicon process only.
+Manual editing in `data/lexicon.csv` is the source of truth for `literal`. Treat `docs/language-reference.md` as grammar authority and `docs/phonology.md` as phonology authority; this doc owns lexicon process only.
 
 ## Out of scope (for now)
 

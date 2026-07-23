@@ -11,8 +11,10 @@ This repo is TypeScript + ANTLR tooling (`grammar/*.g4` → `src/generated/`). A
 | Source | Role |
 |--------|------|
 | `docs/language-reference.md` | **Source of truth** for the language design. Revise it as design decisions land. |
+| `docs/phonology.md` | Phonology and phonotactics (linked from the language reference). |
 | `docs/numbers.md` | Numeral grammar (linked from the language reference). |
-| `TODO.md` | Planned major revision notes (PoS prefixes, word-final consonants, pronoun/number rules, phonology). Fold into the reference as work proceeds. |
+| `docs/pronouns.md` | Pronoun grammar (linked from the language reference). |
+| `TODO.md` | Planned major revision notes (PoS prefixes, word-final consonants, pronoun/number rules, phonology). Fold into the reference, `phonology.md`, and `pronouns.md` as work proceeds. |
 | `docs/claritish-rules.js` | English “Claritish” regex enforcers (value tags, evidentiality, mindfulness noting, etc.). **To be ported** into Clarity (lexicon/grammar), not kept as an English overlay forever. |
 | `grammar/*.g4` | Existing ANTLR parsers for tooling experiments. **Do not change for now.** They may lag the reference; do not treat them as design authority. |
 
