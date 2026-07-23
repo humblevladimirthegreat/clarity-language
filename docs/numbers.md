@@ -11,7 +11,7 @@ A whole numeric value is **one word**, even when it contains several digit group
 ```
 
 1. **PoS** — same prefix inventory as elsewhere; [roles for number words](#parts-of-speech-on-numbers) below.
-2. **Number marker** — consonant **r** plus a vowel **V** (see [Marker vowel](#marker-vowel)). The PoS+`r` cluster is a [number-only phonotactic exception](language-reference.md#phonotactics).
+2. **Number marker** — consonant **r** plus a vowel **V** (see [Marker vowel](#marker-vowel-referential-identity)). The PoS+`r` cluster is a [number-only phonotactic exception](language-reference.md#phonotactics).
 3. **One or more digit groups** — each group is an optional exponent and optional mantissa digits (at least one of the two). Digits compound with **no** **x** separator. There is **no per-group polarity**; sign (when it applies) is on the marker vowel for the whole word.
 4. **Ending** — `-l` / `-m` / `-n` / `-r` with [number-specific meanings](#number-endings).
 5. **Plural `-z`** — optional; same sense as elsewhere (the group containing that numeric referent).
@@ -24,22 +24,43 @@ A whole numeric value is **one word**, even when it contains several digit group
 
 The number word takes whichever PoS prefix the role needs (clause slot, interjection, or discourse glue). The stem (marker + digits + ending) does not change.
 
+**Referential** prefixes (`/ɡ/`, `/z/`, `/d/`, `/b/`) use [marker identity](#marker-vowel-referential-identity) as-is — PoS only chooses the slot or modifier role. **Overlay** prefixes (`/v/`, `/h/`, `/j/`, `/x/`) keep that identity but add a role-specific reading (sections below).
+
 | Prefix | Role with a number |
 |--------|--------------------|
-| `/ɡ/` | **modifier** — the number describes the preceding noun (*three cats*, *the second page*). Goes after the noun, like other adjectives. |
-| `/z/` | **subject** — the numeric value (or digit-string / rank) is the subject. |
-| `/d/` | **direct object** — the number is the object (common for digit-strings / codes being dialed, entered, stated). |
-| `/b/` | **argument noun** — the number fills the `/b/` slot of a complex adjective or adverb (*at 3*, *of size 12*, …). |
-| `/v/` | **verb** — the number is the clause’s action; sense depends on the [marker vowel](#number-as-verb-by-marker). Not multiply/divide by N (use ordinary *multiply* / *divide* plus the number as `/h/`). |
-| `/h/` | **adverb** — the number modifies the verb/clause; sense depends on the [marker vowel](#number-as-adverb-by-marker) (*N times*, ÷N, clock readings, *for the Nth time*). |
-| `/j/` | **interjection** — shouted or exclaimed number; sense depends on the [marker vowel](#number-as-interjection-by-marker). Left-edge cluster or bare utterance only — [utterance-marker rules](language-reference.md#utterance-markers-j). **Not** clause force. |
-| `/x/` | **discourse marker** — numbered list / enumeration glue; sense depends on the [marker vowel](#number-as-discourse-marker-by-marker). Does **not** fill a clause slot (same class as other `/x/` linkers). |
+| `/ɡ/` | **modifier** — referential: the number describes the preceding noun (*three cats*, *the second page*, *room 12*). Goes after the noun, like other adjectives. |
+| `/z/` | **subject** — referential: the numeric value, digit-string, or rank is the subject. |
+| `/d/` | **direct object** — referential: the number is the object (common for digit-strings / codes being dialed, entered, stated). |
+| `/b/` | **argument noun** — referential: the number fills the `/b/` slot of a complex adjective or adverb (*of size 12*, host *at* + time/label, …). Clock-as-circumstance without a host relation prefers `/h/` + **`re`**. |
+| `/v/` | **verb** — overlay: the number is the clause’s action; see [by marker](#number-as-verb-by-marker). Not multiply/divide by N (use ordinary *multiply* / *divide* plus `/h/`). |
+| `/h/` | **adverb** — overlay: see [by marker](#number-as-adverb-by-marker) (*N times*, ÷N, clock readings, *for the Nth time*). |
+| `/j/` | **interjection** — overlay: see [by marker](#number-as-interjection-by-marker). Left-edge or bare utterance only — [utterance-marker rules](language-reference.md#utterance-markers-j). **Not** clause force. |
+| `/x/` | **discourse marker** — overlay: see [by marker](#number-as-discourse-marker-by-marker). Does **not** fill a clause slot. |
 
 **Not valid with numbers:**
 
 - **`/w/` (adjective adjunct)** — numbers do not take `/w/`, and a `/ɡ/` number is not a host for `/w/` grading or framing. Degree and “aboutness” of a quantity use [number endings](#number-endings) (especially **-m** for approximate), not `/w/`.
 
 Digit-strings (`re`…) usually take the argument role the clause needs (often `/d/`). Ordinals that modify a noun use `/ɡ/`; an ordinal used as a standalone rank uses `/z/`, `/d/`, or `/b/` as appropriate. Discourse *firstly / secondly* uses `/x/` + **`ro`**; *for the Nth time* uses `/h/` + **`ro`**; place cheer *First!* uses `/j/` + **`ro`** — none of these is `/ɡ/`.
+
+## Marker vowel (referential identity)
+
+**V** encodes the number’s **referential identity** — scalar vs digit-string vs ordinal, and for scalars the **sign of the whole number**.
+
+| V | Writing | Referent | Examples |
+|---|---------|----------|----------|
+| **a** | `+` | Positive **scalar** (count or measure amount) | `g+3l` *three cats*; `z+3l` *three* (subj); `b+12l` *of size 12* |
+| **u** | `-` | Negative **scalar** | `d-3l` *−3* (obj); `g-2l` signed measure on a noun |
+| **e** | `_` | **Digit-string** / label (phones, IDs, “read the digits”) | `d_555,123,4567l`; `g_12l` *room 12*-style; `b_…` under a host relation |
+| **o** | `#` | **Ordinal** / rank | `g#2l` *the second page*; `z#2l` *second* (rank as subject) |
+
+Do not combine conflicting identity types on one word (e.g. do not use `re` and `ro` for the same token). In [preferred writing](#writing-preferred-shorthand), the marker is **`+`** / **`-`** / **`_`** / **`#`** (not written `r`+V).
+
+Digit-strings and ordinals are not signed via **V** (a negative phone number or “−2nd” is not part of this system; use ordinary vocabulary if needed). Multi-group scalars share one sign: e.g. −1 000 265 004 is one **`ru`** word whose groups add as a single negative magnitude.
+
+There is no separate “mathematical object” marker. To talk about a number as an entity, use a scalar (**`ra`** / **`ru`**) in a referential slot (often with ordinary wording such as the noun *number*), not a distinct numeral class.
+
+`/v/`, `/h/`, `/j/`, and `/x/` still choose among the same four markers, but each overlay gives that identity a **role-specific** reading (add vs ×N vs score-shout vs *firstly*, and so on) — see the sections below.
 
 ### Number as verb (by marker)
 
@@ -129,23 +150,6 @@ Contrasts:
 - `x+3l` — *point 3:* (discourse heading)
 
 Endings still apply (**-l** newly stated point, **-r** *as in (N) above*, **-n** titled section / official item name, **-m** fuzzy *around point N*). Percent / percentage-point closers are not used with `/x/` numbers.
-
-## Marker vowel
-
-**V** encodes both identity (scalar vs digit-string vs ordinal) and, for scalars, the **sign of the whole number**. Notation mode (plain / engineering / scientific / digit-string body / percent / percentage points) is read from the group contents, not from a separate mode vowel.
-
-| V | Use |
-|---|-----|
-| **a** | Positive **scalar** (count or measure amount) |
-| **u** | Negative **scalar** |
-| **e** | **Digit-string** / label (phones, IDs, “read the digits”) |
-| **o** | **Ordinal** / rank |
-
-Do not combine conflicting identity types on one word (e.g. do not use `re` and `ro` for the same token). In [preferred writing](#writing-preferred-shorthand), the marker is **`+`** / **`-`** / **`_`** / **`#`** (not written `r`+V).
-
-Digit-strings and ordinals are not signed via **V** (a negative phone number or “−2nd” is not part of this system; use ordinary vocabulary if needed). Multi-group scalars share one sign: e.g. −1 000 265 004 is one **`ru`** word whose groups add as a single negative magnitude.
-
-There is no separate “mathematical object” marker. To talk about a number as an entity, use a scalar (**`ra`** / **`ru`**) with ordinary wording (e.g. the noun *number*), not a distinct numeral class.
 
 ## Number endings
 
@@ -292,6 +296,10 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 |-------|-------------------|---------------|
 | 3 | `g+3l` | *grarel* (`g` + `ra` + re + `l`) |
 | −3 | `g-3l` | *grurel* (`g` + `ru` + re + `l`) |
+| 3 (as subject) | `z+3l` | *zrarel* |
+| −3 (as object) | `d-3l` | *drurel* |
+| of size 12 | `b+12l` | *brawodul* (`b` + `ra` + wo du) |
+| room 12 (modifier) | `g_12l` | *grewodul* (`g` + `re` + wo du) |
 | 139 | `g+139l` | *graworenal* (`ra` + wo re na) |
 | 27e12 | `g+27e12l` | *grabawodujadulel* (`ra` + ba wo du **ja** + du le) |
 | e9 (bare) | `g+e9l` | *grabanal* (`ra` + ba na; **no** `ja`) |
