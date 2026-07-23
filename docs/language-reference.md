@@ -152,6 +152,8 @@ Every full sentence includes exactly one **clause-force** `/j/`. The closed set 
 * **polar question** — yes/no question
 * **imperative** — directive (command / instruction)
 
+**Numbers are not clause force.** A `/j/` number word is an [interjection](numbers.md#number-as-interjection-by-marker) (score shout, countdown, digit-label call, place cheer). It may sit in the left-edge cluster before force, or stand alone as a bare utterance with no force.
+
 Other speech acts (request, promise, wish, evaluative judgment, and so on) are not separate forces yet — express them with ordinary vocabulary under one of these three; the dictionary may add dedicated force forms later.
 
 Content questions (*who* / *what* / *where*) use the [interrogative special pronoun](#special-pronouns) for the queried role and, for now, the same **polar question** force as yes/no questions.

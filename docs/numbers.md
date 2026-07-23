@@ -32,14 +32,14 @@ The number word takes whichever PoS prefix the role needs (clause slot, interjec
 | `/b/` | **argument noun** — the number fills the `/b/` slot of a complex adjective or adverb (*at 3*, *of size 12*, …). |
 | `/v/` | **verb** — the number is the clause’s action; sense depends on the [marker vowel](#number-as-verb-by-marker). Not multiply/divide by N (use ordinary *multiply* / *divide* plus the number as `/h/`). |
 | `/h/` | **adverb** — the number modifies the verb/clause; sense depends on the [marker vowel](#number-as-adverb-by-marker) (*N times*, ÷N, clock readings, *for the Nth time*). |
-| `/j/` | **interjection** — a bare shouted or exclaimed number with no clause (*Three!*, bingo call-outs, countdown beats). Vocative/interjection rules in the [utterance-marker section](language-reference.md#utterance-markers-j) still apply (left-edge cluster only, or bare utterance). |
+| `/j/` | **interjection** — shouted or exclaimed number; sense depends on the [marker vowel](#number-as-interjection-by-marker). Left-edge cluster or bare utterance only — [utterance-marker rules](language-reference.md#utterance-markers-j). **Not** clause force. |
 | `/x/` | **discourse marker** — numbered list / enumeration glue; sense depends on the [marker vowel](#number-as-discourse-marker-by-marker). Does **not** fill a clause slot (same class as other `/x/` linkers). |
 
 **Not valid with numbers:**
 
 - **`/w/` (adjective adjunct)** — numbers do not take `/w/`, and a `/ɡ/` number is not a host for `/w/` grading or framing. Degree and “aboutness” of a quantity use [number endings](#number-endings) (especially **-m** for approximate), not `/w/`.
 
-Digit-strings (`re`…) usually take the argument role the clause needs (often `/d/`). Ordinals that modify a noun use `/ɡ/`; an ordinal used as a standalone rank uses `/z/`, `/d/`, or `/b/` as appropriate. Discourse *firstly / secondly* uses `/x/` + **`ro`**; *for the Nth time* uses `/h/` + **`ro`** — neither is `/ɡ/`.
+Digit-strings (`re`…) usually take the argument role the clause needs (often `/d/`). Ordinals that modify a noun use `/ɡ/`; an ordinal used as a standalone rank uses `/z/`, `/d/`, or `/b/` as appropriate. Discourse *firstly / secondly* uses `/x/` + **`ro`**; *for the Nth time* uses `/h/` + **`ro`**; place cheer *First!* uses `/j/` + **`ro`** — none of these is `/ɡ/`.
 
 ### Number as verb (by marker)
 
@@ -73,15 +73,41 @@ Contrasts:
 - `h-3l` — ÷3 / every third / into 3
 - `h_15,30l` — *at 15:30* (clock-ish digit reading)
 - `h#3l` — *for the third time*
+- `j#3l` — *Third!* (place cheer)
 - `x#3l` — *thirdly* (discourse list)
 - `g#3l` — *the third* (modifies a noun)
 - `v+3l` — *add 3* (verb)
 
 Endings still apply (**-m** ≈ *about* that many times / that clock reading, **-r** resume, etc.). Relative %-change factors use **`h+…`** (e.g. ×1.5), not **`jo`** / **`ju`** alone — see [percent](#percent-and-percentage-points).
 
+### Number as interjection (by marker)
+
+`/j/` + number is an **interjection** (expressive call-out), not clause force. Clause force stays the closed non-numeric set in the [utterance-marker section](language-reference.md#clause-force). Number interjections appear only in the left-edge `/j/` cluster (before force, when a clause follows) or as a bare utterance with no force.
+
+| Marker | Writing | Interjection sense |
+|--------|---------|-------------------|
+| **`ra`** | `j+Nl` | **Quantity shout / score call** — *Three!*; *Ten!* (hit that count; celebration of magnitude N). |
+| **`ru`** | `j-Nl` | **Countdown / remaining** — *Three… Two… One!*; *T-minus 10*; *three to go!* |
+| **`re`** | `j_…l` | **Digit-label call-out** — *B-12!*; *five-five-five!*; reading a code/ID/bingo ball as a label shout. |
+| **`ro`** | `j#Nl` | **Place / rank cheer** — *First!*; *Second!* (podium / place shout). |
+
+**Bingo / ball calls:** prefer **`j_`** when the shout names a label or ball id; prefer **`j+`** when celebrating a count or score. Same English *Twelve!* can be either.
+
+Contrasts:
+
+- `j+3l` — *Three!* (score / count shout)
+- `j-3l` — *Three!* (countdown / remaining)
+- `j_27l` — *Twenty-seven!* as label call
+- `j#1l` — *First!* (place cheer)
+- `x#1l` — *firstly* (discourse)
+- `h#1l` — *for the first time*
+- `v#1l` — *take / assign 1st* (verb)
+
+Endings still apply (**-m** fuzzy *about three!*, **-n** conventional call name, **-r** resume a prior shout’s value).
+
 ### Number as discourse marker (by marker)
 
-`/x/` + number is discourse glue for lists and numbered references — parallel to the `/v/` senses at discourse scale. It does **not** occupy a main-clause argument or adjunct slot (contrast `/ɡ/` *the second page*, `/h/` *three times* / *for the Nth time*, `/j/` *Three!*).
+`/x/` + number is discourse glue for lists and numbered references — parallel to the `/v/` senses at discourse scale. It does **not** occupy a main-clause argument or adjunct slot (contrast `/ɡ/` *the second page*, `/h/` *three times* / *for the Nth time*, `/j/` interjection shouts).
 
 | Marker | Writing | Discourse sense |
 |--------|---------|-----------------|
@@ -97,7 +123,9 @@ Contrasts:
 - `g#2l` — *the second* (modifies a noun)
 - `x#2l` — *secondly* (discourse linker)
 - `h#2l` — *for the second time* (event ordinal adverb)
-- `j+3l` — *Three!* (interjection shout)
+- `j#2l` — *Second!* (place cheer)
+- `j+3l` — *Three!* (quantity shout)
+- `j-3l` — *Three!* (countdown)
 - `x+3l` — *point 3:* (discourse heading)
 
 Endings still apply (**-l** newly stated point, **-r** *as in (N) above*, **-n** titled section / official item name, **-m** fuzzy *around point N*). Percent / percentage-point closers are not used with `/x/` numbers.
@@ -289,6 +317,10 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 | ÷3 / every third | `h-3l` | *hrurel* (`h` + `ru` + re) |
 | at 15:30 | `h_15,30l` | *hrewovarezol* (`h` + `re` + wo va · re zo) |
 | for the third time | `h#3l` | *hrorel* (`h` + `ro` + re) |
+| Three! (score) | `j+3l` | *jrarel* (`j` + `ra` + re) |
+| Three! (countdown) | `j-3l` | *jrurel* (`j` + `ru` + re) |
+| twenty-seven! (label) | `j_27l` | *jredulel* (`j` + `re` + du le) |
+| First! (place cheer) | `j#1l` | *jrowol* (`j` + `ro` + wo) |
 
 In a sentence, the PoS attaches to that single number word (see [Parts of speech on numbers](#parts-of-speech-on-numbers); e.g. direct-object digit-string: `d_…l`). Prefer naming the whole with a `/ɡ/` **`jo`** percent (denominator patterns TBD).
 
