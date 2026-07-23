@@ -31,7 +31,7 @@ The number word takes whichever PoS prefix the role needs (clause slot, interjec
 | `/d/` | **direct object** — the number is the object (common for digit-strings / codes being dialed, entered, stated). |
 | `/b/` | **argument noun** — the number fills the `/b/` slot of a complex adjective or adverb (*at 3*, *of size 12*, …). |
 | `/v/` | **verb** — the number is the clause’s action; sense depends on the [marker vowel](#number-as-verb-by-marker). Not multiply/divide by N (use ordinary *multiply* / *divide* plus the number as `/h/`). |
-| `/h/` | **adverb** — the number modifies the verb/clause: *N times*, factors (*multiply by three*), clock/time readings, and similar. |
+| `/h/` | **adverb** — the number modifies the verb/clause; sense depends on the [marker vowel](#number-as-adverb-by-marker) (*N times*, ÷N, clock readings, *for the Nth time*). |
 | `/j/` | **interjection** — a bare shouted or exclaimed number with no clause (*Three!*, bingo call-outs, countdown beats). Vocative/interjection rules in the [utterance-marker section](language-reference.md#utterance-markers-j) still apply (left-edge cluster only, or bare utterance). |
 | `/x/` | **discourse marker** — numbered list / enumeration glue; sense depends on the [marker vowel](#number-as-discourse-marker-by-marker). Does **not** fill a clause slot (same class as other `/x/` linkers). |
 
@@ -39,7 +39,7 @@ The number word takes whichever PoS prefix the role needs (clause slot, interjec
 
 - **`/w/` (adjective adjunct)** — numbers do not take `/w/`, and a `/ɡ/` number is not a host for `/w/` grading or framing. Degree and “aboutness” of a quantity use [number endings](#number-endings) (especially **-m** for approximate), not `/w/`.
 
-Digit-strings (`re`…) usually take the argument role the clause needs (often `/d/`). Ordinals that modify a noun use `/ɡ/`; an ordinal used as a standalone rank uses `/z/`, `/d/`, or `/b/` as appropriate. Discourse *firstly / secondly* uses `/x/` + **`ro`**, not `/ɡ/`.
+Digit-strings (`re`…) usually take the argument role the clause needs (often `/d/`). Ordinals that modify a noun use `/ɡ/`; an ordinal used as a standalone rank uses `/z/`, `/d/`, or `/b/` as appropriate. Discourse *firstly / secondly* uses `/x/` + **`ro`**; *for the Nth time* uses `/h/` + **`ro`** — neither is `/ɡ/`.
 
 ### Number as verb (by marker)
 
@@ -52,13 +52,36 @@ Digit-strings (`re`…) usually take the argument role the clause needs (often `
 | **`re`** | **Enter / dial / input that digit-string** — type the code, dial the phone number, key the ID. Object (if any) is the channel or device; the digits are in the verb. |
 | **`ro`** | **Take / assign rank N** — intransitive *place Nth* / *come in Nth*; transitive *put (object) in Nth place* / *rank as Nth*. |
 
-“Set to N” (bring a quantity to an absolute value) is not a number-verb sense — use an ordinary verb plus the number as argument or adverb. Multiply/divide likewise stay ordinary verbs plus the number as `/h/`. With [percentage points](#percent-and-percentage-points) (**`ju`**), **`ra`** / **`ru`** as verbs mean increase/decrease by that point amount (not a relative %-change factor).
+“Set to N” (bring a quantity to an absolute value) is not a number-verb sense — use an ordinary verb plus the number as argument or adverb. Multiply/divide likewise stay ordinary verbs plus the number as `/h/` (**`h+Nl`** / **`h-Nl`**). With [percentage points](#percent-and-percentage-points) (**`ju`**), **`ra`** / **`ru`** as verbs mean increase/decrease by that point amount (not a relative %-change factor).
 
 Endings still apply (**-m** ≈ *about* that amount/code/rank, **-r** resume, etc.).
 
+### Number as adverb (by marker)
+
+`/h/` + number inherits the marker’s identity, so the adverbial role follows **V**.
+
+| Marker | Writing | Adverb sense |
+|--------|---------|--------------|
+| **`ra`** | `h+Nl` | **Multiplicative / factor** — *N times*; *×N*; *by a factor of N* (alone, or with ordinary *multiply*). |
+| **`ru`** | `h-Nl` | **Inverse / partition** — *÷N*; *into N parts*; *1/N as often*; *every Nth* (alone, or with ordinary *divide*). |
+| **`re`** | `h_…l` | **Clock / code as circumstance** — *at 15:30*; *on 101.1*; *channel 7* (digits as when/where label, not a count of times). |
+| **`ro`** | `h#Nl` | **Nth occurrence of the event** — *for the Nth time*; *on the Nth try* (clause-event ordinal, not discourse *Nth-ly*). |
+
+Contrasts:
+
+- `h+3l` — *three times* / ×3
+- `h-3l` — ÷3 / every third / into 3
+- `h_15,30l` — *at 15:30* (clock-ish digit reading)
+- `h#3l` — *for the third time*
+- `x#3l` — *thirdly* (discourse list)
+- `g#3l` — *the third* (modifies a noun)
+- `v+3l` — *add 3* (verb)
+
+Endings still apply (**-m** ≈ *about* that many times / that clock reading, **-r** resume, etc.). Relative %-change factors use **`h+…`** (e.g. ×1.5), not **`jo`** / **`ju`** alone — see [percent](#percent-and-percentage-points).
+
 ### Number as discourse marker (by marker)
 
-`/x/` + number is discourse glue for lists and numbered references — parallel to the `/v/` senses at discourse scale. It does **not** occupy a main-clause argument or adjunct slot (contrast `/ɡ/` *the second page*, `/h/` *three times*, `/j/` *Three!*).
+`/x/` + number is discourse glue for lists and numbered references — parallel to the `/v/` senses at discourse scale. It does **not** occupy a main-clause argument or adjunct slot (contrast `/ɡ/` *the second page*, `/h/` *three times* / *for the Nth time*, `/j/` *Three!*).
 
 | Marker | Writing | Discourse sense |
 |--------|---------|-----------------|
@@ -73,6 +96,7 @@ Contrasts:
 
 - `g#2l` — *the second* (modifies a noun)
 - `x#2l` — *secondly* (discourse linker)
+- `h#2l` — *for the second time* (event ordinal adverb)
 - `j+3l` — *Three!* (interjection shout)
 - `x+3l` — *point 3:* (discourse heading)
 
@@ -181,7 +205,7 @@ In [preferred writing](#writing-preferred-shorthand): **`%`** → speech **`jo`*
 |---------------|---------|
 | `25% of X` (portion) | **`jo`** number + whole in the clause |
 | `+2 percentage points` / `from 10% to 12%` point delta | **`ju`** (often as `/v/` **`ra`** / **`ru`**: increase/decrease by that point amount) |
-| `+50% relative to baseline` (factor change) | **Not** **`jo`** / **`ju`** — use a factor as `/h/` (e.g. ×1.5) or ordinary *relative-to* wording |
+| `+50% relative to baseline` (factor change) | **Not** **`jo`** / **`ju`** — use a multiplicative `/h/` factor (**`h+1.5l`**, etc.) or ordinary *relative-to* wording |
 
 `25%` (`…jo`) and `0.25` (plain scalar) name the same magnitude; **`jo`** only chooses the percent-scale reading. **`ju`** likewise names a ÷100 magnitude, but framed as **points** (not as “N% of a whole”).
 
@@ -193,7 +217,7 @@ The **whole** / reference class is **not** inside the number word. Prefer clause
 
 ## Digit-strings
 
-Use marker **`re`** (written **`_`**). Omit exponents. Prefer groups of three digits. Ending is usually **-l** (exact label); **-n** for an official designation; **-r** to resume a prior code.
+Use marker **`re`** (written **`_`**). Omit exponents. Prefer groups of three digits. Ending is usually **-l** (exact label); **-n** for an official designation; **-r** to resume a prior code. As `/h/`, a digit-string is a [clock / code circumstance](#number-as-adverb-by-marker) (`h_15,30l`), not a count of times.
 
 ## Writing (preferred shorthand)
 
@@ -261,6 +285,10 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 | skipping 2 | `x-2l` | *xrudul* (`x` + `ru` + du) |
 | re agenda 12 | `x_12l` | *xrewodul* (`x` + `re` + wo du) |
 | as in (2) above | `x#2r` | *xrodur* (ending **-r**) |
+| three times / ×3 | `h+3l` | *hrarel* (`h` + `ra` + re) |
+| ÷3 / every third | `h-3l` | *hrurel* (`h` + `ru` + re) |
+| at 15:30 | `h_15,30l` | *hrewovarezol* (`h` + `re` + wo va · re zo) |
+| for the third time | `h#3l` | *hrorel* (`h` + `ro` + re) |
 
 In a sentence, the PoS attaches to that single number word (see [Parts of speech on numbers](#parts-of-speech-on-numbers); e.g. direct-object digit-string: `d_…l`). Prefer naming the whole with a `/ɡ/` **`jo`** percent (denominator patterns TBD).
 
