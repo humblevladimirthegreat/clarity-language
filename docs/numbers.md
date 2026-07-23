@@ -1,6 +1,6 @@
 # Numbers
 
-Numerals are a **closed formal subsystem**, not ordinary lexicon roots. Quantifiers (*many*, *all*, *some*, …) are out of scope here. PoS prefixes and plural **-z** are defined in [language-reference.md](language-reference.md); general phonotactics live in [phonology.md](phonology.md). This page is the source of truth for numeral grammar.
+Numerals are a **closed formal subsystem**, not ordinary lexicon roots. Quantifiers (*many*, *all*, *some*, …) are out of scope here. PoS prefixes and plural **-z** are defined in [language-reference.md](language-reference.md); general phonotactics live in [phonology.md](phonology.md); ordinary reference suffixes in [reference-suffix.md](reference-suffix.md). This page is the source of truth for numeral grammar.
 
 A whole numeric value is **one word**, even when it contains several digit groups.
 
@@ -13,7 +13,7 @@ A whole numeric value is **one word**, even when it contains several digit group
 1. **PoS** — same prefix inventory as elsewhere; [roles for number words](#parts-of-speech-on-numbers) below.
 2. **Number marker** — consonant **r** plus a vowel **V** (see [Marker vowel](#marker-vowel-referential-identity)). The PoS+`r` cluster is a [number-only phonotactic exception](phonology.md#phonotactics).
 3. **One or more digit groups** — each group is an optional exponent and optional mantissa digits (at least one of the two). Digits compound with **no** **x** separator. There is **no per-group polarity**; sign (when it applies) is once for the whole word — see [Sign](#sign).
-4. **Ending** — `-l` / `-m` / `-n` / `-r` with [number-specific meanings](#number-endings).
+4. **Ending** — `-l` / `-m` / `-n` / `-r` with [number-specific meanings](#number-endings) (not ordinary [reference suffix](reference-suffix.md) senses).
 5. **Plural `-z`** — optional; same sense as elsewhere (the group containing that numeric referent).
 
 **Writing** uses a [preferred shorthand](#writing-preferred-shorthand) for the marker and body (`g+3l`, not *grarel*); speech is always the full CV form.
@@ -165,7 +165,7 @@ Endings still apply (**-l** newly stated item, **-r** *as in (N) above* with sam
 
 ## Number endings
 
-Ordinary literal / metaphorical / name / pronoun senses do **not** apply inside number words.
+Ordinary [reference suffix](reference-suffix.md) senses do **not** apply inside number words.
 
 | Ending | Meaning |
 |--------|---------|

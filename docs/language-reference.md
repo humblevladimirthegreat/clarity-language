@@ -183,9 +183,13 @@ The next-clause pronoun takes whatever PoS prefix the slot needs:
 
 When quoting someone, using a proper noun, using a foreign word, or using a slang word, you must use the square brackets \[ \]. Begin-quote, end-quote, and escape forms are **/x/-prefixed** words (the dictionary lists the specific forms). On the off chance you need to use a quotation marker word within the quotation, it is escaped with \\ or the escape form immediately before it. These spoken forms are probably not needed in casual speech, but can be helpful if speaking with voice-to-text or if you want to emphasize the quoting. 
 
+# Reference Suffix
+
+Reference suffix grammar (**-l** / **-m** / **-n** / **-r**, plural **-z**) lives in **[reference-suffix.md](reference-suffix.md)**.
+
 # Pronouns
 
-Pronoun grammar (definiteness, anaphoric **-r** forms, special pronouns) lives in **[pronouns.md](pronouns.md)**.
+Pronoun grammar (anaphoric **-r** forms, special pronouns) lives in **[pronouns.md](pronouns.md)**.
 
 # Numbers
 

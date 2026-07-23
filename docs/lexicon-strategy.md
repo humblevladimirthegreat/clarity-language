@@ -14,7 +14,7 @@ A root dictionary where each kept entry has (in `data/lexicon-published.csv`):
 | metaphorical | At most one figurative English gloss (Phase 5) |
 | mnemonic | Short cue linking `literal` → `metaphorical`; `REVIEW` if no good link |
 
-Entries are **roots** only. Part-of-speech prefixes (`/z/`, `/v/`, `/ɡ/`, …) and lexical endings (`-l`, `-m`, …) are applied at use time; this file does not list PoS variants or usage notes.
+Entries are **roots** only. Part-of-speech prefixes (`/z/`, `/v/`, `/ɡ/`, …) and [reference suffixes](reference-suffix.md) (`-l`, `-m`, …) are applied at use time; this file does not list PoS variants or usage notes.
 
 Psychological / Claritish vocabulary goals are out of scope for this lexicon pass.
 
@@ -357,7 +357,7 @@ When distinct concepts share a `literal` within the same `group`/`subgroup` (e.g
 1. Filter `lexicon.csv` to `keep=y` rows with a non-empty `literal`.
 2. Derive each `clarity` root from `literal` with the existing converter (`toUniqueClarityWord` / `scripts/convert-emojis.ts` pattern).
 3. Uniqueness is over **exported** roots only (and any reserved roots documented later).
-4. Store only the root in `clarity` (no PoS prefix, no `-l`/`-m` ending).
+4. Store only the root in `clarity` (no PoS prefix, no reference suffix).
 5. Write the columns above to `lexicon-published.csv`. On first publish, leave `metaphorical` and `mnemonic` blank. On **re**-publish, **preserve** existing `metaphorical` and `mnemonic` values keyed by `emoji` (Phase 5 edits must survive regenerating roots).
 
 `lexicon.csv` is **not** updated with `clarity` values — it remains the full seed + gloss + cull working file. Regenerate `lexicon-published.csv` in bulk when literals or the keep set change; do not hand-edit generated roots unless documenting an exception in this file.

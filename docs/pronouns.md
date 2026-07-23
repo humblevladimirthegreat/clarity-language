@@ -1,20 +1,10 @@
 # Pronouns
 
-Pronouns replace definite articles: once something has been introduced, you refer back with a **-r** form (or an alternate construct below), not with a separate “the X” form.
-
-## Definiteness
-
-| Form | Discourse job |
-|------|----------------|
-| Common full word (`-l` / `-m`) | Indefinite introduction (“a / some X”) — first mention of that kind of referent |
-| Pronoun (`-r`) | Definite reference to an already-introduced referent |
-| Proper name (`-n`) | Definite / unique by nature (not “a John”) |
-
-A bare `-l` / `-m` word always introduces; it is never used to resume a prior referent. Resumption is always marked with **-r**.
+Anaphoric pronouns use the **-r** [reference suffix](reference-suffix.md). Pronouns replace definite articles: once something has been introduced, you refer back with a **-r** form (or an alternate construct below), not with a separate “the X” form.
 
 ## Letter-based and full-root anaphoric pronouns
 
-An anaphoric pronoun can refer back to **any prior word** (noun, verb, adjective, adverb, and so on — not only arguments). It takes the usual part-of-speech prefix and the pronoun lexical ending **-r**. The pronoun’s PoS prefix is whatever role you need **now**; it need not match the antecedent’s original PoS.
+An anaphoric pronoun can refer back to **any prior word** (noun, verb, adjective, adverb, and so on — not only arguments). It takes the usual part-of-speech prefix and the **-r** reference suffix. The pronoun’s PoS prefix is whatever role you need **now**; it need not match the antecedent’s original PoS.
 
 Two lengths of stem:
 
@@ -27,7 +17,7 @@ Resolution is always unambiguous for the listener and for a parser: a **-r** pro
 
 It is the **speaker’s** job to ensure the intended referent is the most recent match. Use the letter pronoun when that is already true. If the most recent match is **not** what you intend, use the **full-root `-r` form**. If even that isn't distinct, add an **adjective / ordinal** to disambiguate. That mention becomes most recent, so later pronouns can refer to it again.
 
-Add **-z** after the lexical ending to mark **plural**: the **group containing** the referent. Example: `…r` refers to one noun; `…rz` refers to the group that includes that noun. The same **-z** works on full words (`…lz`, `…nz`, etc.).
+Add **-z** after the reference suffix to mark **plural**: the **group containing** the referent. Example: `…r` refers to one noun; `…rz` refers to the group that includes that noun. The same **-z** works on full words (`…lz`, `…nz`, etc.). See [reference-suffix.md](reference-suffix.md#plural--z).
 
 There are no English-style 3rd-person pronouns (*he* / *she* / *it* / *they*) and no impersonal *one*.
 
@@ -43,4 +33,4 @@ Forms TBD. Roles:
 
 **Group containing** a referent is not a separate special pronoun: append **-z** to the word (see above).
 
-**Prefer names.** When a proper name is available, use it (`-n`) and/or its pronoun (`-r` from the name’s root) — including for self-address — rather than the speaker/listener special pronoun. Proper names are definite; the special pronouns are for the narrow cases where a name is unavailable or undesired.
+**Prefer names.** When a proper name is available, use it (`-n`) and/or its pronoun (`-r` from the name’s root) — including for self-address — rather than the speaker/listener special pronoun. Proper names are definite; the special pronouns are for the narrow cases where a name is unavailable or undesired. See [Proper name (`-n`)](reference-suffix.md#proper-name--n).
