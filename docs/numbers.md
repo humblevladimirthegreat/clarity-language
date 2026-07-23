@@ -41,7 +41,7 @@ The number word takes whichever PoS prefix the role needs (clause slot, interjec
 
 - **`/w/` (adjective adjunct)** — numbers do not take `/w/`, and a `/ɡ/` number is not a host for `/w/` grading or framing. Degree and “aboutness” of a quantity use [number endings](#number-endings) (especially **-m** for approximate), not `/w/`.
 
-Digit-strings (`re`…) usually take the argument role the clause needs (often `/d/`). Ordinals that modify a noun use `/ɡ/`; an ordinal used as a standalone rank uses `/z/`, `/d/`, or `/b/` as appropriate. Discourse list items use `/x/` + number ([by marker](#number-as-discourse-marker-by-marker): **`ro`** neutral, **`ra`** reasons for, **`ru`** reasons against); *for the Nth time* uses `/h/` + **`ro`**; place cheer *First!* uses `/j/` + **`ro`** — none of these is `/ɡ/`.
+Digit-strings (`re`…) usually take the argument role the clause needs (often `/d/`). Ordinals that modify a noun use `/ɡ/`; an ordinal used as a standalone rank uses `/z/`, `/d/`, or `/b/` as appropriate. Discourse list items use `/x/` + number ([by marker](#number-as-discourse-marker-by-marker): **`ro`** neutral, **`ra`** corroborating, **`ru`** independent); *for the Nth time* uses `/h/` + **`ro`**; place cheer *First!* uses `/j/` + **`ro`** — none of these is `/ɡ/`.
 
 ## Marker vowel (referential identity)
 
@@ -67,7 +67,7 @@ Do **not** write `_-…` or `#-…`, and do **not** insert speech **`ru`** after
 
 There is no separate “mathematical object” marker. To talk about a number as an entity, use a scalar (**`ra`** / **`ru`**) in a referential slot (often with ordinary wording such as the noun *number*), not a distinct numeral class.
 
-`/v/`, `/h/`, `/j/`, and `/x/` still choose among the same four markers, but each overlay gives that identity a **role-specific** reading (add vs ×N vs *N more!* vs pro/con list item, and so on) — see the sections below.
+`/v/`, `/h/`, `/j/`, and `/x/` still choose among the same four markers, but each overlay gives that identity a **role-specific** reading (add vs ×N vs *N more!* vs corroborating/independent list item, and so on) — see the sections below.
 
 ### Number as verb (by marker)
 
@@ -93,7 +93,7 @@ Endings still apply (**-m** ≈ *about* that amount/code/rank, **-r** resume, et
 | **`ra`** | `h+Nl` | **Multiplicative / factor** — *N times*; *×N*; *by a factor of N* (alone, or with ordinary *multiply*). |
 | **`ru`** | `h-Nl` | **Inverse / partition** — *÷N*; *into N parts*; *1/N as often*; *every Nth* (alone, or with ordinary *divide*). |
 | **`re`** | `h_…l` | **Temporal circumstance only** — *at 15:30*; *on 2026-07-22* (clock or calendar digit reading). **Not** channel, frequency, gate, or other non-time codes — those use a host relation + `/b/` (or `/ɡ/` on a noun). See [Time](#time). |
-| **`ro`** | `h#Nl` | **Nth occurrence of the event** — *for the Nth time*; *on the Nth try* (clause-event ordinal, not discourse list valence). |
+| **`ro`** | `h#Nl` | **Nth occurrence of the event** — *for the Nth time*; *on the Nth try* (clause-event ordinal, not discourse list independence). |
 
 Contrasts:
 
@@ -138,30 +138,30 @@ Endings still apply (**-m** fuzzy *about three more!* / *about three!*, **-n** c
 
 ### Number as discourse marker (by marker)
 
-`/x/` + number is discourse glue for numbered list items and label cites. Marker vowel encodes the **valence of the list item** (or cite-as-label for **`re`**). It does **not** occupy a main-clause argument or adjunct slot (contrast `/ɡ/` *the second page*, `/h/` *three times* / *for the Nth time*, `/j/` interjection shouts).
+`/x/` + number is discourse glue for numbered list items and label cites. Marker vowel encodes **independence framing** of the list item (or cite-as-label for **`re`**). It does **not** occupy a main-clause argument or adjunct slot (contrast `/ɡ/` *the second page*, `/h/` *three times* / *for the Nth time*, `/j/` interjection shouts).
 
 | Marker | Writing | Discourse sense |
 |--------|---------|-----------------|
-| **`ro`** | `x#Nl` | **Neutral point N** — numbered item with no pro/con framing (*point N:*, *note N:*, bare *(N)*). |
-| **`ra`** | `x+Nl` | **Reason for N** — supporting / pro / confirming item (*for N:*, *pro N:*, *reason-for N:*). |
-| **`ru`** | `x-Nl` | **Reason against N** — opposing / con / disconfirming item (*against N:*, *con N:*, *reason-against N:*). |
-| **`re`** | `x_…l` | **Cite a discourse label** — agenda item, section code, slide, ticket id (digits as label, not list valence) (*re item 12; under 3.2*). |
+| **`ro`** | `x#Nl` | **Neutral point N** — numbered item with no independence framing (*point N:*, *note N:*, bare *(N)*). |
+| **`ra`** | `x+Nl` | **Corroborating item N** — backs, restates, or same-directions an earlier item (*corroborating N:*, *echoing N:*). Legitimate for emphasis, clarity, teaching, or a related source—not a new line of support. |
+| **`ru`** | `x-Nl` | **Independent item N** — a new line of support or consideration (*independent N:*, *distinct N:*). Would still matter if other listed items were gone. |
+| **`re`** | `x_…l` | **Cite a discourse label** — agenda item, section code, slide, ticket id (digits as label, not independence framing) (*re item 12; under 3.2*). |
 
-**List valence:** **`#`** = neutral inventory or steps; **`+`** = counts in favor; **`-`** = counts against (including disconfirming evidence). Do not use **`+`** / **`-`** merely to open vs scratch a bullet — valence is the point. Ordinary *firstly / secondly* without valence is **`x#Nl`**.
+**Independence framing:** **`#`** = unmarked inventory or steps; **`+`** = corroborating (aligned with something already listed); **`-`** = independent (new line of support). Do not use **`+`** / **`-`** for for/against or open vs scratch a bullet — independence is the point. Ordinary *firstly / secondly* without that framing is **`x#Nl`**. For/against and both-sides checks stay in ordinary wording or claim-level evidentiality, not on the number marker.
 
 Contrasts:
 
 - `g#2l` — *the second* (modifies a noun)
 - `x#2l` — *point 2:* (neutral discourse item)
-- `x+2l` — *for 2:* / pro item 2
-- `x-2l` — *against 2:* / con item 2
+- `x+2l` — *corroborating 2:*
+- `x-2l` — *independent 2:*
 - `h#2l` — *for the second time* (event ordinal adverb)
 - `j#2l` — *Second!* (place cheer)
 - `j_3l` — *Three!* (label / score reading)
 - `j+3l` — *Three more!* (quantity addition)
 - `j-3l` — *Three short!* / *Three fewer!* / *−3!* (deficit)
 
-Endings still apply (**-l** newly stated item, **-r** *as in (N) above* with same valence, **-n** titled / official item name, **-m** fuzzy *around item N*). Percent / percentage-point closers are not used with `/x/` numbers.
+Endings still apply (**-l** newly stated item, **-r** *as in (N) above* with same independence framing, **-n** titled / official item name, **-m** fuzzy *around item N*). Percent / percentage-point closers are not used with `/x/` numbers.
 
 ## Number endings
 
@@ -347,8 +347,8 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 | +2 pp | `g+2%*l` | *gradujul* (`ra` + du **ju`) |
 | about −1.5 pp | `g-1.5%*m` | *gruwojevajum* (`ru` + wo **je** va **ju** + `m`) |
 | neutral point 1 / 2 | `x#1l`, `x#2l` | *xrowol*, *xrodul* (`x` + `ro` + …) |
-| reason for 3 (pro) | `x+3l` | *xrarel* (`x` + `ra` + re) |
-| reason against 2 (con) | `x-2l` | *xrudul* (`x` + `ru` + du) |
+| corroborating item 3 | `x+3l` | *xrarel* (`x` + `ra` + re) |
+| independent item 2 | `x-2l` | *xrudul* (`x` + `ru` + du) |
 | re agenda 12 | `x_12l` | *xrewodul* (`x` + `re` + wo du) |
 | as in (2) above (neutral) | `x#2r` | *xrodur* (ending **-r**) |
 | three times / ×3 | `h+3l` | *hrarel* (`h` + `ra` + re) |
