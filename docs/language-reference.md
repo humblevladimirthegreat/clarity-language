@@ -160,13 +160,13 @@ Content questions (*who* / *what* / *where*) use the [interrogative special pron
 
 ## Word-level coordination
 
-**al** / **am** / **ol** / **om** / **ul** / **um** / **aol** / **aom** join sibling full words in the **same PoS slot** (Oxford style; **-l** closed, **-m** open); `/x/` + the same vowels + ending join **clauses** (`xal`, `xam`, `xan`, …). **-l** / **-m** / **-n** always start a new clause list; **-r** continues it (so `A xol B xol C` nests as *A or (B or C)*). Correlatives come later. Details: **[coordination.md](coordination.md)**.
+**al** / **am** / **ol** / **om** / **ul** / **um** / **aol** / **aom** / **el** / **em** join sibling full words in the **same PoS slot** (Oxford style; **-l**/**-m** = closed/open, except on **e** = exception/replacement); `/x/` + the same vowels + ending join **clauses** (`xal`, `xam`, `xel`, `xem`, …). **-l** / **-m** / **-n** always start a new clause list (**-n** not on **e**); **-r** continues it (so `A xol B xol C` nests as *A or (B or C)*). Correlatives come later. Details: **[coordination.md](coordination.md)**.
 
 ## Discourse markers (`/x/`)
 
 Marked with x /ʒ/. Used for **discourse glue** that is not word-level coordination: sentence linkers (*however*, *therefore*, *meanwhile*, *but*, …), **quotation markers** (see below), and related fences. The dictionary lists the specific forms. The same sound **x** also joins roots inside compound words (see [Phonotactics](phonology.md#phonotactics)); it is not used as an ordinary root consonant, so mid-word **x** always means “next root,” and word-initial **x** always means discourse marker.
 
-Word-level *and* / *or* / *nor* are **not** `/x/` — they are bare particles with closure endings ([coordination.md](coordination.md)). Clause-level *and* / *or* / *nor* **are** `/x/` + the same vowels + ending (`xal`, `xam`, `xan`, …) — see [coordination.md](coordination.md#clause-level-coordination).
+Word-level *and* / *or* / *nor* / *except* / *instead* are **not** `/x/` — they are bare particles with **-l** / **-m** endings ([coordination.md](coordination.md)). Clause-level forms **are** `/x/` + the same vowels + ending (`xal`, `xel`, `xem`, …) — see [coordination.md](coordination.md#clause-level-coordination).
 
 `/x/` connects or fences discourse; it does **not** carry evidential or epistemic framing of the claim. Softeners that encode source-of-knowledge or claim strength stay `/h/` or `/w/` (see [Adverbs](#adverbs-h)). Contrast: *however* / *in other words* → `/x/`; *apparently* / *allegedly* → `/h/` or `/w/`.
 
@@ -183,7 +183,7 @@ The next-clause pronoun takes whatever PoS prefix the slot needs:
 * **Complement / content clause** — usually a core argument. Example: *I told him that…* → next-clause as direct object (`/d/`) of *tell* (or another role the verb requires).
 * **Adverbial relation** (*because*, *if*, *although*, *while*, *until*, …) — a complex adverb: `/h/` relation word + `/b/` next-clause pronoun. The lexicon entry names the relation; there is **no** separate `/x/` subordinator for these.
 
-`/x/` is only for discourse glue that does **not** occupy a main-clause slot (sentence linkers, quote/aside fences, [numbered enumeration](numbers.md#number-as-discourse-marker-by-marker)). Word-level *and* / *or* / *nor* are bare particles ([coordination.md](coordination.md)). Do not encode *because* / *if*-style subordination as `/x/`.
+`/x/` is only for discourse glue that does **not** occupy a main-clause slot (sentence linkers, quote/aside fences, [numbered enumeration](numbers.md#number-as-discourse-marker-by-marker)). Word-level *and* / *or* / *nor* / *except* / *instead* are bare particles ([coordination.md](coordination.md)). Do not encode *because* / *if*-style subordination as `/x/`.
 
 ## Quotations
 
@@ -207,7 +207,7 @@ Numeral grammar (digit roots, engineering/scientific forms, ordinals, digit-stri
 
 # Word-level coordination
 
-Word-level **al** / **am** / … (Oxford; **-l** closed, **-m** open) and `/x/` + vowel + ending (clause-level; soft **-n**; **-r** continues the chain): **[coordination.md](coordination.md)**.
+Word-level **al** / **am** / **el** / **em** / … (Oxford) and `/x/` + vowel + ending (clause-level; soft **-n** except on **e**; **-r** continues): **[coordination.md](coordination.md)**.
 
 # Phonology and Phonotactics
 
