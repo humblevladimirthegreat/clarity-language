@@ -7,7 +7,7 @@
 Fold into `docs/language-reference.md` when decided; dictionary lists specific forms.
 
 - Sentence linkers: *therefore, however, meanwhile, instead, in other words*, *but*
-- Clause / sentence coordination — **done:** `/x/` + vowel series + reference suffix in `docs/coordination.md` (`xal`, `xel`, …)
+- Clause / sentence coordination — **done:** `/x/` + vowel series + ending in `docs/coordination.md` (`xal`/`xam` closed/open, `xan` soft, …)
 - Correlatives: *both…and, either…or* (word- and clause-level *and* / *or* / *nor* are in `docs/coordination.md`)
 - List / enumeration markers — **done for numbers:** `/x/` + number word in `docs/numbers.md` (neutral / corroborating / independent items, cite). Non-numeric list markers still TBD if needed.
 - Aside / parenthesis fences (begin-aside, end-aside), parallel to quotation markers

@@ -60,10 +60,10 @@ Depends on the subclass (see [utterance markers](language-reference.md#utterance
 
 ### Discourse markers (`/x/`)
 
-* **Linkers** (*but*, *however*, *therefore*) — Stay **-l** / **-m**; not names. Word-level *and* / *or* / *nor* are bare particles with **no** reference suffix — see [coordination.md](coordination.md).
-* **Clause coordinators** (`xa` / `xe` / `xo` / `xu` / `xae` / `xao` + suffix) — Vowel = join type; **-l** / **-m** always open a **new** list (committed vs soft); **-r** continues that list (required for flat 3+ chains; a second **-l**/**-m** nests — e.g. `A xel B xel C` = *A or (B or C)*). **-n** is not used on this series. Full table: [coordination.md](coordination.md#vowels--endings).
+* **Linkers** (*but*, *however*, *therefore*) — Stay **-l** / **-m**; not names. Word-level *and* / *or* / *nor* are bare particles with closure **-l** / **-m** — see [coordination.md](coordination.md).
+* **Clause coordinators** (`xa` / `xo` / `xu` / `xao` + ending) — Vowel = join type; **-l** / **-m** = closed vs open committed lists (always open a **new** list); **-n** = soft packaging (*and then* / uncertain reconstruction; former **-m** sense on this series); **-r** continues that list (required for flat 3+ chains; a second **-l**/**-m**/**-n** nests — e.g. `A xol B xol C` = *A or (B or C)*). Full table: [coordination.md](coordination.md#vowels--endings).
 * **Quotation / fence markers** — Brackets mark quoting; **-n** on the quote marker itself is unnecessary. Named material *inside* the quote takes **-n** on its own PoS (`/z/`…**-n**, etc.).
-* **Named discourse glue** — **-n** for titled section/agenda labels, official list-item names, and branded discourse frames. Like `/x/`…**-r** on [pronouns](pronouns.md) (*going back to subject X* / thread resume), `/x/`…**-n** is **discourse navigation**: a **thread shift** — *let’s now talk about X* (opening or moving to that named topic), not clause aboutness. English parallels: **[Item Zero]**, **[Appendix A]** as a discourse cite, a fixed ritual segue name. Ordinary *firstly* stays **-l**. Aligns with [number `/x/`…**-n**](numbers.md#number-as-discourse-marker-by-marker) (titled / official item name).
+* **Named discourse glue** — **-n** for titled section/agenda labels, official list-item names, and branded discourse frames (**other** `/x/` roots — not the clause-coordinator vowel series, where **-n** is soft join packaging). Like `/x/`…**-r** on [pronouns](pronouns.md) (*going back to subject X* / thread resume), titled `/x/`…**-n** is **discourse navigation**: a **thread shift** — *let’s now talk about X* (opening or moving to that named topic), not clause aboutness. English parallels: **[Item Zero]**, **[Appendix A]** as a discourse cite, a fixed ritual segue name. Ordinary *firstly* stays **-l**. Aligns with [number `/x/`…**-n**](numbers.md#number-as-discourse-marker-by-marker) (titled / official item name).
 
 ### Borrowed and quoted forms
 
@@ -81,7 +81,7 @@ Foreign words, slang, and other non-lexicon surface forms still use [quotation b
 | `/j/` vocative | Address this named person, place, or title |
 | `/j/` interjection | This named formula or conventional call |
 | `/j/` clause force | *(not used)* |
-| `/x/` | Titled / official discourse label — thread shift (*let’s now talk about X*; not on clause coordinators — those omit **-n**). Ordinary *but* / *however* stay **-l** / **-m**. Word-level *and* / *or* / *nor*: [coordination.md](coordination.md) |
+| `/x/` | Titled / official discourse label — thread shift (*let’s now talk about X*; other roots). On clause coordinators, **-n** is soft join packaging (*and then* / uncertain reconstruction) — see [coordination.md](coordination.md). Ordinary *but* / *however* stay **-l** / **-m**. Word-level *and* / *or* / *nor*: [coordination.md](coordination.md) |
 
 Do **not** use **-n** for generic first mention (**-l** / **-m**) or for resuming a prior mention (**-r**).
 
@@ -92,3 +92,7 @@ Plural grammar (**-sh** after the reference suffix; how it interacts with PoS an
 ## Number-word exception
 
 In [number words](numbers.md), the same four letters (**-l**, **-m**, **-n**, **-r**) have **number-specific** meanings instead of ordinary reference-suffix senses. After a PoS prefix, the number marker **r** may also form clusters that are not otherwise allowed; that is legal **only** in number words — see [phonology.md](phonology.md#phonotactics).
+
+## Coordination exception
+
+On [coordinators](coordination.md), the same letters are specialized again: word-level **al** / **am** / … and clause **xal** / **xam** / **xan** / **xar** / … use **-l** / **-m** for **closed** vs **open** lists (not literal vs metaphorical), **-n** on clause coordinators for **soft** packaging (*and then* / uncertain reconstruction), and **-r** to continue a clause list. Details live in coordination.md.
