@@ -1,12 +1,12 @@
 # Coordination
 
-This page is the source of truth for **phrase-level** (same-slot left fence), **VP-level**, and **clause-level** coordination, plus **in-clause revision** with bare vowels. There is **no** bare word-level **coordinator** series (lists still need a PoS prefix + ending). Correlatives (*both…and*, *either…or*) come later. Asymmetric discourse glue (*but*, *however*, *therefore*) is `/x/` but **not** the prefixed join series — see [language-reference.md](language-reference.md#discourse-markers-x). In-clause *including* / *rather* / *instead* / *except* use [bare revision](#in-clause-revision-bare-a--e--o--u); sentence-level *instead* / *except* (claim-to-claim) stay other `/x/` roots when needed.
+This page is the source of truth for **phrase-level** (same-slot left fence), **VP-level**, and **clause-level** coordination, plus **in-clause revision** with prefix-less vowels + **-l** / **-m** / **-n**. There is **no** bare word-level **coordinator** series (lists still need a PoS prefix + ending). Correlatives (*both…and*, *either…or*) come later. Asymmetric discourse glue (*but*, *however*, *therefore*) is `/x/` but **not** the prefixed join series — see [language-reference.md](language-reference.md#discourse-markers-x). In-clause *including* / *rather* / *instead* / *except* use [revision](#in-clause-revision-bare-a--e--o--u) (**al** / **am** / **an** / **el** / … — ending required); sentence-level *instead* / *except* (claim-to-claim) stay other `/x/` roots when needed.
 
 PoS prefixes and ordinary word shape: [language-reference.md](language-reference.md). Reference suffixes: [reference-suffix.md](reference-suffix.md). Phonotactics for reserved coordinator roots: [phonology.md](phonology.md#phonotactics).
 
 **List shapes:** **Phrase-level** (NP / AP / `/b/` / `/w/` / `/h/`, and single-word siblings in those slots) uses a **left fence**: one prefixed coordinator, then optional shared modifiers, then juxtaposed conjuncts — **no** `-r`. **VP-level** and **clause-level** share **left-open opener / `-r` continue** — see [opener / `-r`](#opener-r-coordination). Do not borrow `-r` nesting into phrase-level chains.
 
-Prefixed forms are **joiners** (boolean lists plus directional **priority ranking**), not only symmetric conjunctions. Bare **a** / **e** / **o** / **u** are a separate **revision** series — see [below](#in-clause-revision-bare-a--e--o--u).
+Prefixed forms are **joiners** (boolean lists plus directional **priority ranking**), not only symmetric conjunctions. Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** are a separate **revision** series — see [below](#in-clause-revision-bare-a--e--o--u).
 
 ## Join type × ending (shared)
 
@@ -37,7 +37,7 @@ When unsure whether the list is complete, prefer **-m** (open). Use **-l** when 
 |--------|---------|
 | **-n** | **Named / conventional list** — the conjuncts are invoked as an established titled, formulaic, or canonical bundle (*the primary colors*, *RGB*, *stop–drop–roll*, a conventional triage order), not as a freshly composed open or closed inventory. |
 
-**-n** is an alternative to **-l** / **-m**, not a third completeness tier and not stackable with them. Completeness is whatever the conventional designation already fixes; you are naming the bundle, not arguing list closure in the moment. Same mnemonic as content-word [proper name **-n**](reference-suffix.md#proper-name--n): definite by established label. Used on **phrase-level** coordinators (`/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/`) — **not** on VP `/v/` or clause `/x/` forms (those use soft **-n** instead). Soft packaging (`van`…, `ven`…, `xan`…, `xen`…) is not a named list — use other `/x/`…**-n** thread labels if you need a titled agenda item.
+**-n** is an alternative to **-l** / **-m**, not a third completeness tier and not stackable with them. Completeness is whatever the conventional designation already fixes; you are naming the bundle, not arguing list closure in the moment. Same mnemonic as content-word [proper name **-n**](reference-suffix.md#proper-name--n): definite by established label. Used on **phrase-level** coordinators (`/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/`) — **not** on VP `/v/` or clause `/x/` forms (those use soft **-n** instead). [In-clause revision](#in-clause-revision-bare-a--e--o--u) also uses this named sense (`an` / `en` / `on` / `un`). Soft packaging (`van`…, `ven`…, `xan`…, `xen`…) is not a named list — use other `/x/`…**-n** thread labels if you need a titled agenda item.
 
 ### Priority ranking (**e**)
 
@@ -60,20 +60,21 @@ When unsure whether the list is complete, prefer **-m** (open). Use **-l** when 
 
 **a** is ordinary conjunction (*and*), not an *or*. Phrase-level forms (**a** / **o** / **u** / **ao** / **e**) take **-l**, **-m**, or **-n** (named); those forms never take **-r**. VP-level and clause-level forms take **-l**, **-m**, soft **-n**, or continue **-r**.
 
-There are **no** bare (prefix-less) **coordinators**. Forms like `am`, `al`, `el` without a PoS prefix are **not** legal joiners. Prefix-less **a** / **e** / **o** / **u** (no ending) are legal only as [in-clause revision](#in-clause-revision-bare-a--e--o--u), not as list joiners.
+There are **no** bare (prefix-less) **coordinators**. Prefixed joiners always have a PoS prefix + ending (`zam`, `val`, …). Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** are [in-clause revision](#in-clause-revision-bare-a--e--o--u) only — not list joiners. Whole-word **a** / **e** / **o** / **u** (no ending) are **illegal**.
 
 ---
 
-# In-clause revision (bare **a** / **e** / **o** / **u**)
+# In-clause revision (**a** / **e** / **o** / **u** + ending)
 <a id="in-clause-revision-bare-a--e--o--u"></a>
 <a id="bare-revision"></a>
+<a id="in-clause-revision"></a>
 
-Bare vowels **a** / **e** / **o** / **u** (no PoS prefix, no reference-suffix ending) are **binary revision** operators inside one clause. They are **not** coordinators: they do not open lists, take **-l** / **-m** / **-n** / **-r**, or join full sentences.
+Prefix-less vowel + **-l** / **-m** / **-n** forms are **binary revision** operators inside one clause. They are **not** coordinators: they do not open lists, take **-r**, or join full sentences. An ending is **required**: **-l** / **-m** mark **completeness of the B-side**; **-n** marks a **named / conventional** revision (same mnemonic as phrase-level join **-n**, not opener soft **-n**).
 
-### Meanings
+### Meanings (vowel)
 
-| Bare | Gloss | `A REV B` reading |
-|------|--------|-------------------|
+| Vowel | Gloss | `A REV B` reading |
+|-------|--------|-------------------|
 | **a** | *including* | A, including B (B is a highlighted member / part of A) |
 | **e** | *rather* | A, or rather B (soft correction; B outranks A; A need not be fully denied) |
 | **o** | *instead* | not A, but B (exclusive replacement) |
@@ -81,38 +82,66 @@ Bare vowels **a** / **e** / **o** / **u** (no PoS prefix, no reference-suffix en
 
 Mnemonics track the join series loosely: **a** additive membership, **e** directional soft rank, **o** exclusive swap, **u** subtractive denial — but the job is **revision of a slot**, not boolean listing.
 
+### Endings — required
+
+Every revision word **must** take **-l**, **-m**, or **-n**; unmarked **a** / **e** / **o** / **u** are not legal. **-l** / **-m** answer: *is B the full story of this include / except / replace / rephrase?* — not whether A is complete. **-n** is an alternative to **-l** / **-m**, not a third completeness tier and not stackable with them.
+
+| Ending | Form | Sense |
+|--------|------|--------|
+| **-l** | `al` / `el` / `ol` / `ul` | **Closed** — B is exhaustive for this revision: including *only* these · except *only* these · B fully replaces A · B is the precise reading. |
+| **-m** | `am` / `em` / `om` / `um` | **Open** — B is non-exhaustive: including B *among others* · except B *(and maybe more)* · B is *a* replacement · B is *a* better wording. |
+| **-n** | `an` / `en` / `on` / `un` | **Named / conventional** — A (and/or the A–B revision) is invoked as an established titled, formulaic, or canonical frame (*the primary colors, including red*; *RGB except blue*; a stock *tea→coffee* swap; a conventional *happy, or rather content* rephrase). Completeness is whatever that designation already fixes. |
+
+Same mnemonic as phrase-level [named **-n**](#named--conventional-ending-phrase-level-all-join-vowels) and content-word [proper name **-n**](reference-suffix.md#proper-name--n): definite by established label. **Not** opener soft **-n** (*and then…* / tentative reconstruction). No **-r** (not a list continue). When unsure between closed and open, prefer **-m**; use **-n** when you are naming a conventional frame rather than composing an inventory.
+
+| | **-l** | **-m** | **-n** |
+|--|--------|--------|--------|
+| **a** (*including*) | `al` — including only B | `am` — including B among others | `an` — including B in a named/conventional A |
+| **e** (*rather*) | `el` — B is the precise reading | `em` — B is a better wording | `en` — conventional / formulaic rephrase |
+| **o** (*instead*) | `ol` — B fully replaces A | `om` — B is a replacement (not sworn unique) | `on` — stock / conventional swap |
+| **u** (*except*) | `ul` — except only B | `um` — except B (and maybe more) | `un` — except B from a named/conventional A |
+
 ### Shape and scope
 
 ```
 SIDE  REV  SIDE
 ```
 
-- **In-clause only** — both sides sit in the **same clause**. Do not use bare revision to link full sentences or to revise a prior sentence’s claim; that stays other `/x/` discourse roots.
-- **Same slot** — both sides match in role: both subject NPs (`/z/`), both objects (`/d/`), both `/b/` arguments, both `/ɡ/` APs (plus local material), both `/w/` or both `/h/` units, or both VPs (verb ± that verb’s `/d/`). Mixed slots are illegal (`z-… o d-…`).
+**REV** is a prefix-less vowel + **-l**, **-m**, or **-n** (`ol`, `om`, `on`, `ul`, …) — never the bare vowel alone.
+
+- **In-clause only** — both sides sit in the **same clause**. Do not use revision to link full sentences or to revise a prior sentence’s claim; that stays other `/x/` discourse roots.
+- **Same slot** — both sides match in role: both subject NPs (`/z/`), both objects (`/d/`), both `/b/` arguments, both `/ɡ/` APs (plus local material), both `/w/` or both `/h/` units, or both VPs (verb ± that verb’s `/d/`). Mixed slots are illegal (`z-… ol d-…`).
 - **Exactly two sides** — one **REV** between them. No three-way chains, no `-r` continue, no left-fence shared-modifier slot on the particle.
 - **Always binary in the clause** — no unary “instead of what was just said”; repeat material or use a pronoun for the left side, or use a later `/x/` form for cross-sentence repair.
-- **No endings** — bare **a** / **e** / **o** / **u** only. Forms like `am`, `ol`, `en` without a PoS prefix are **not** this series (and are not legal joiners either).
-- **No nesting (v1)** — do not stack revisions (`A o B e C`, `(A o B) u C`). One revision per pair; further repair is a new clause or a coordinated structure whose conjuncts may each contain at most one revision.
-- **Inside a coordinated list** — allowed **inside** a conjunct as local repair, not as a substitute for the coordinator (`zam` / `vam` / …). **Binding:** a bare **REV** takes the immediately preceding same-slot side and the immediately following same-slot side as its pair, tighter than list absorb — so `zam z-dogl o z-catl z-birdl` = *(dog instead of cat) and bird*, not a three-way *and* with a stray **o**.
+- **No nesting (v1)** — do not stack revisions (`A ol B em C`, `(A ol B) um C`). One revision per pair; further repair is a new clause or a coordinated structure whose conjuncts may each contain at most one revision.
+- **Inside a coordinated list** — allowed **inside** a conjunct as local repair, not as a substitute for the coordinator (`zam` / `vam` / …). **Binding:** **REV** takes the immediately preceding same-slot side and the immediately following same-slot side as its pair, tighter than list absorb — so `zam z-dogl ol z-catl z-birdl` = *(dog instead of cat) and bird*, not a three-way *and* with a stray **ol**.
 
 ### Examples (schematic)
 
-- `z-animalsh a z-dogl` — *animals, including a dog*
-- `z-teaml u z-Samn` — *the team except Sam* / *the team but not Sam*
-- `d-teal o d-coffeel` — *tea instead of coffee* (object slot)
-- `g-happyl e g-contentl` — *happy, or rather content*
-- `v-runl o v-walkl` — *ran instead of walked* (VP slot)
-- `zam z-dogl o z-catl z-birdl` — *(dog instead of cat) and bird* — revision inside the first conjunct of an open *and*-list
+- `z-animalsh am z-dogl` — *animals, including a dog among others* (open)
+- `z-toolsh al z-hammerl` — *tools, including only a hammer* (closed — B exhausts the highlight)
+- `z-primary-colorsh an z-redl` — *the primary colors, including red* (named frame)
+- `z-teaml ul z-Samn` — *the team except only Sam* (closed sole exception)
+- `z-teaml um z-Samn` — *the team except Sam (and maybe others)* (open)
+- `z-RGBn un z-bluel` — *RGB except blue* (named conventional set)
+- `d-teal ol d-coffeel` — *coffee fully replaces tea* (closed)
+- `d-teal om d-coffeel` — *coffee as a replacement for tea* (open)
+- `d-teal on d-coffeel` — *the stock tea→coffee swap* (named/conventional)
+- `g-happyl el g-contentl` — *content* as the precise reading (closed)
+- `g-happyl em g-contentl` — *happy, or rather content* as a better wording (open)
+- `g-happyl en g-contentl` — conventional *happy → content* rephrase (named)
+- `v-runl om v-walkl` — *ran, with walk as a replacement* (VP slot, open)
+- `zam z-dogl ol z-catl z-birdl` — *(dog fully instead of cat) and bird* — closed revision inside the first conjunct
 
 ### Constraints
 
 - **Not** a list joiner — use prefixed coordination for *and* / *or* / *nor* / *and/or* / priority.
 - **Not** sentence-level *instead* / *except* / *but* — those remain other `/x/` linkers when claims (not slot-mates) are related.
-- **Not** mixed-PoS, not cross-clause, not unary, not nested, no plural **-sh** on the particle.
+- **Not** mixed-PoS, not cross-clause, not unary, not nested; ending **-l**, **-m**, or **-n** required; no **-r** / plural **-sh** on the particle; no bare **a** / **e** / **o** / **u**; **-n** is named/conventional only (not soft packaging).
 
 ### Reserved forms
 
-Prefix-less **a**, **e**, **o**, and **u** as whole words are **only** these revision operators. Prefixed + ending forms of the same vowels remain [coordinators](#join-type--ending-shared) only.
+Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** are **only** these revision operators. Prefixed + ending forms of the same vowels (`zal`, `zam`, `val`, …) remain [coordinators](#join-type--ending-shared) only. Whole-word **a** / **e** / **o** / **u** are not revision forms and not legal words.
 
 ---
 

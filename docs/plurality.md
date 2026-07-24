@@ -138,7 +138,7 @@ Depends on subclass (see [utterance markers](language-reference.md#utterance-mar
 
 ### Discourse markers (`/x/`)
 
-* **Word-level coordinators** ([**al** / **am** / **an** / **el** / **em** / …](coordination.md)) — No **-sh** (**-l** / **-m** / **-n** ending only). Plurality is marked on each conjunct independently (`z-dogl am z-catlsh`).
+* **In-clause revision** ([**al** / **am** / **an** / **el** / **em** / **en** / …](coordination.md#in-clause-revision-bare-a--e--o--u)) — No **-sh** (**-l** / **-m** / named **-n** ending only). Plurality is marked on each side independently (`z-dogl am z-catlsh`).
 * **NP- / AP-level coordinators** ([`zam`](coordination.md#np-level-coordination), `dal`, [`gam`](coordination.md#ap-level-coordination), …) — No **-sh** on the coordinator; plurality stays on each phrase conjunct (or on shared post-chain material when that material itself takes **-sh**).
 * **VP-level coordinators** ([`vam`](coordination.md#vp-level-coordination), `var`, …) — No **-sh** on the coordinator; plurality stays on material inside each VP conjunct.
 * **Clause coordinators** ([`xal`](coordination.md#clause-level-coordination), …) — Do **not** take **-sh**; plurality stays on material inside each sentence.
@@ -161,7 +161,7 @@ Aligns with number words: optional plural on a numeric referent uses the same **
 | `/j/` interjection | (Rare) group / plural formula call |
 | `/j/` clause force | *(not used)* |
 | `/x/` linkers / fences | *(not used)* |
-| bare **al** / **am** / **an** / **el** / **em** / … | *(not used — ending only, no **-sh**)* |
+| bare **al** / **am** / **an** / **el** / **em** / **en** / … | *(not used — ending only, no **-sh**)* |
 | `/z/` `/d/` `/b/` `/ɡ/` phrase coordinators (`zam`, `gam`, …) | *(not used — ending only, no **-sh**)* |
 | `/v/` VP coordinators (`vam`, `var`, …) | *(not used — ending only, no **-sh**)* |
 | `/x/` named discourse label | Plural titled thread/label set or resume thereof |
