@@ -160,7 +160,9 @@ Content questions (*who* / *what* / *where*) use the [interrogative special pron
 
 ## Phrase-level, VP-level, and clause-level coordination
 
-There is **no** bare word-level coordinator series. **`/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/`** + the coordination vowels + ending (`zam`, `dol`, `bem`, `gam`, `wam`, `ham`, …) join same-slot phrases or single-word siblings with a **left fence** (coordinator first; shared modifiers immediately after the fence — `zam g-bigl z-dogl z-catl` = *big (dog and cat)*; `gam w-veryl g-happyl g-proudl` = *very (happy and proud)*). **`/v/`** and **`/x/`** use shared **left-open opener / `-r` continue** (`vam A var B`, `xal A xar B`, …). On VP chains, `/h/` before the opener scopes over all VPs; `/h/` inside a conjunct scopes that VP only. Phrase **-l**/**-m**/**-n** = closed/open/named on every join vowel (**a** / **o** / **u** / **ao** / **e**); **e** is **priority ranking** (earlier ≻ later; preference vs fallback from context). Opener soft **-n** and continue **-r** replace named **-n**. Correlatives come later. Details: **[coordination.md](coordination.md)**.
+There is **no** bare word-level **coordinator** series. **`/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/`** + the coordination vowels + ending (`zam`, `dol`, `bem`, `gam`, `wam`, `ham`, …) join same-slot phrases or single-word siblings with a **left fence** (coordinator first; shared modifiers immediately after the fence — `zam g-bigl z-dogl z-catl` = *big (dog and cat)*; `gam w-veryl g-happyl g-proudl` = *very (happy and proud)*). **`/v/`** and **`/x/`** use shared **left-open opener / `-r` continue** (`vam A var B`, `xal A xar B`, …). On VP chains, `/h/` before the opener scopes over all VPs; `/h/` inside a conjunct scopes that VP only. Phrase **-l**/**-m**/**-n** = closed/open/named on every join vowel (**a** / **o** / **u** / **ao** / **e**); **e** is **priority ranking** (earlier ≻ later; preference vs fallback from context). Opener soft **-n** and continue **-r** replace named **-n**. Correlatives come later.
+
+**In-clause revision:** prefix-less **a** / **e** / **o** / **u** (no ending) are binary same-slot operators (*including* / *rather* / *instead* / *except*) inside one clause — not list joiners and not sentence linkers. Details: **[coordination.md](coordination.md)** (joiners and [bare revision](coordination.md#in-clause-revision-bare-a--e--o--u)).
 
 ## Discourse markers (`/x/`)
 
@@ -172,7 +174,7 @@ Phrase-level *and* / *or* / *nor* / *and/or* / priority ranking are **not** gene
 
 **Numbered list / enumeration markers** are `/x/` + [number word](numbers.md#number-as-discourse-marker-by-marker) (*point N:* neutral, *corroborating N:*, *independent N:*, *re item 12*). Marker vowel chooses independence framing (or cite-as-label); details live in numbers.md.
 
-**Not `/x/`:** phrase-level and VP-level coordinators ([coordination.md](coordination.md)); English-style subordinators that relate a following clause to a slot in the main clause (*if*, *because*, *although*, *while*, *until*) — those use the [next-clause pronoun](pronouns.md#special-pronouns) plus a lexicon relation (usually `/h/` + `/b/`), not a discourse-marker prefix. `/x/` sentence linkers (*therefore*, *however*, *meanwhile*) and number enumeration markers do not fill a main-clause argument or adjunct slot.
+**Not `/x/`:** phrase-level and VP-level coordinators and [in-clause bare revision](coordination.md#in-clause-revision-bare-a--e--o--u) ([coordination.md](coordination.md)); English-style subordinators that relate a following clause to a slot in the main clause (*if*, *because*, *although*, *while*, *until*) — those use the [next-clause pronoun](pronouns.md#special-pronouns) plus a lexicon relation (usually `/h/` + `/b/`), not a discourse-marker prefix. `/x/` sentence linkers (*therefore*, *however*, *meanwhile*) and number enumeration markers do not fill a main-clause argument or adjunct slot.
 
 ## Dependent Clauses
 
@@ -207,7 +209,7 @@ Numeral grammar (digit roots, engineering/scientific forms, ordinals, digit-stri
 
 # Phrase-level, VP-level, and clause-level coordination
 
-Phrase-level **zam** / **gam** / … (left fence; shared modifiers immediately after the fence); [opener / `-r`](coordination.md#opener-r-coordination) for VP **vam** / **var** / … (left-open; `/h/` before opener = all VPs) and clause `/x/` + vowel + ending (soft **-n** ≠ named **-n**): **[coordination.md](coordination.md)**. No bare word-level coordinators.
+Phrase-level **zam** / **gam** / … (left fence; shared modifiers immediately after the fence); [opener / `-r`](coordination.md#opener-r-coordination) for VP **vam** / **var** / … (left-open; `/h/` before opener = all VPs) and clause `/x/` + vowel + ending (soft **-n** ≠ named **-n**); bare **a** / **e** / **o** / **u** = in-clause revision (*including* / *rather* / *instead* / *except*): **[coordination.md](coordination.md)**. No bare word-level coordinators.
 
 # Phonology and Phonotactics
 

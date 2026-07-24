@@ -1,12 +1,12 @@
 # Coordination
 
-This page is the source of truth for **phrase-level** (same-slot left fence), **VP-level**, and **clause-level** coordination. There is **no** bare word-level coordinator series. Correlatives (*both…and*, *either…or*) come later. Asymmetric discourse glue (*but*, *however*, *therefore*) is `/x/` but **not** this vowel series — see [language-reference.md](language-reference.md#discourse-markers-x). (*But not* / *except* and *instead of* are **not** this series — other `/x/` or later roots.)
+This page is the source of truth for **phrase-level** (same-slot left fence), **VP-level**, and **clause-level** coordination, plus **in-clause revision** with bare vowels. There is **no** bare word-level **coordinator** series (lists still need a PoS prefix + ending). Correlatives (*both…and*, *either…or*) come later. Asymmetric discourse glue (*but*, *however*, *therefore*) is `/x/` but **not** the prefixed join series — see [language-reference.md](language-reference.md#discourse-markers-x). In-clause *including* / *rather* / *instead* / *except* use [bare revision](#in-clause-revision-bare-a--e--o--u); sentence-level *instead* / *except* (claim-to-claim) stay other `/x/` roots when needed.
 
 PoS prefixes and ordinary word shape: [language-reference.md](language-reference.md). Reference suffixes: [reference-suffix.md](reference-suffix.md). Phonotactics for reserved coordinator roots: [phonology.md](phonology.md#phonotactics).
 
 **List shapes:** **Phrase-level** (NP / AP / `/b/` / `/w/` / `/h/`, and single-word siblings in those slots) uses a **left fence**: one prefixed coordinator, then optional shared modifiers, then juxtaposed conjuncts — **no** `-r`. **VP-level** and **clause-level** share **left-open opener / `-r` continue** — see [opener / `-r`](#opener-r-coordination). Do not borrow `-r` nesting into phrase-level chains.
 
-These forms are **joiners** (boolean lists plus directional **priority ranking**), not only symmetric conjunctions.
+Prefixed forms are **joiners** (boolean lists plus directional **priority ranking**), not only symmetric conjunctions. Bare **a** / **e** / **o** / **u** are a separate **revision** series — see [below](#in-clause-revision-bare-a--e--o--u).
 
 ## Join type × ending (shared)
 
@@ -60,7 +60,59 @@ When unsure whether the list is complete, prefer **-m** (open). Use **-l** when 
 
 **a** is ordinary conjunction (*and*), not an *or*. Phrase-level forms (**a** / **o** / **u** / **ao** / **e**) take **-l**, **-m**, or **-n** (named); those forms never take **-r**. VP-level and clause-level forms take **-l**, **-m**, soft **-n**, or continue **-r**.
 
-There are **no** bare (prefix-less) coordinators. Forms like `am`, `al`, `el` without a PoS prefix are **not** legal joiners.
+There are **no** bare (prefix-less) **coordinators**. Forms like `am`, `al`, `el` without a PoS prefix are **not** legal joiners. Prefix-less **a** / **e** / **o** / **u** (no ending) are legal only as [in-clause revision](#in-clause-revision-bare-a--e--o--u), not as list joiners.
+
+---
+
+# In-clause revision (bare **a** / **e** / **o** / **u**)
+<a id="in-clause-revision-bare-a--e--o--u"></a>
+<a id="bare-revision"></a>
+
+Bare vowels **a** / **e** / **o** / **u** (no PoS prefix, no reference-suffix ending) are **binary revision** operators inside one clause. They are **not** coordinators: they do not open lists, take **-l** / **-m** / **-n** / **-r**, or join full sentences.
+
+### Meanings
+
+| Bare | Gloss | `A REV B` reading |
+|------|--------|-------------------|
+| **a** | *including* | A, including B (B is a highlighted member / part of A) |
+| **e** | *rather* | A, or rather B (soft correction; B outranks A; A need not be fully denied) |
+| **o** | *instead* | not A, but B (exclusive replacement) |
+| **u** | *except* / *but not* | A except B / A but not B (subtract B from the A frame) |
+
+Mnemonics track the join series loosely: **a** additive membership, **e** directional soft rank, **o** exclusive swap, **u** subtractive denial — but the job is **revision of a slot**, not boolean listing.
+
+### Shape and scope
+
+```
+SIDE  REV  SIDE
+```
+
+- **In-clause only** — both sides sit in the **same clause**. Do not use bare revision to link full sentences or to revise a prior sentence’s claim; that stays other `/x/` discourse roots.
+- **Same slot** — both sides match in role: both subject NPs (`/z/`), both objects (`/d/`), both `/b/` arguments, both `/ɡ/` APs (plus local material), both `/w/` or both `/h/` units, or both VPs (verb ± that verb’s `/d/`). Mixed slots are illegal (`z-… o d-…`).
+- **Exactly two sides** — one **REV** between them. No three-way chains, no `-r` continue, no left-fence shared-modifier slot on the particle.
+- **Always binary in the clause** — no unary “instead of what was just said”; repeat material or use a pronoun for the left side, or use a later `/x/` form for cross-sentence repair.
+- **No endings** — bare **a** / **e** / **o** / **u** only. Forms like `am`, `ol`, `en` without a PoS prefix are **not** this series (and are not legal joiners either).
+- **No nesting (v1)** — do not stack revisions (`A o B e C`, `(A o B) u C`). One revision per pair; further repair is a new clause or a coordinated structure whose conjuncts may each contain at most one revision.
+- **Inside a coordinated list** — allowed **inside** a conjunct as local repair, not as a substitute for the coordinator (`zam` / `vam` / …). **Binding:** a bare **REV** takes the immediately preceding same-slot side and the immediately following same-slot side as its pair, tighter than list absorb — so `zam z-dogl o z-catl z-birdl` = *(dog instead of cat) and bird*, not a three-way *and* with a stray **o**.
+
+### Examples (schematic)
+
+- `z-animalsh a z-dogl` — *animals, including a dog*
+- `z-teaml u z-Samn` — *the team except Sam* / *the team but not Sam*
+- `d-teal o d-coffeel` — *tea instead of coffee* (object slot)
+- `g-happyl e g-contentl` — *happy, or rather content*
+- `v-runl o v-walkl` — *ran instead of walked* (VP slot)
+- `zam z-dogl o z-catl z-birdl` — *(dog instead of cat) and bird* — revision inside the first conjunct of an open *and*-list
+
+### Constraints
+
+- **Not** a list joiner — use prefixed coordination for *and* / *or* / *nor* / *and/or* / priority.
+- **Not** sentence-level *instead* / *except* / *but* — those remain other `/x/` linkers when claims (not slot-mates) are related.
+- **Not** mixed-PoS, not cross-clause, not unary, not nested, no plural **-sh** on the particle.
+
+### Reserved forms
+
+Prefix-less **a**, **e**, **o**, and **u** as whole words are **only** these revision operators. Prefixed + ending forms of the same vowels remain [coordinators](#join-type--ending-shared) only.
 
 ---
 
@@ -162,7 +214,7 @@ Complex adjective on an NP bundle: `zam g-ofl b-Samn z-dogl z-catl` → *Sam’s
 - **Shared modifiers** — only in the slot immediately after `P-COORD`; local modifiers stay after their own heads.
 - **No `-r`**, no clause soft **-n**, no plural **-sh** on the coordinator.
 - **Not** verb+object packages — use [VP-level](#vp-level-coordination); **not** full sentences — those stay `/x/`…
-- **Not** mixed-PoS joins; correlatives; `/x/` sentence linkers (*however*, *therefore*), general adversative *but*, *but not* / *except*, *instead of*, quotation fences, or [numbered enumeration](numbers.md#number-as-discourse-marker-by-marker). Phrase-level priority ranking **is** this series (`zel` / `zem` / `zen`, …).
+- **Not** mixed-PoS joins; correlatives; `/x/` sentence linkers (*however*, *therefore*), general adversative *but*, quotation fences, or [numbered enumeration](numbers.md#number-as-discourse-marker-by-marker). In-clause *including* / *rather* / *instead* / *except* are [bare revision](#in-clause-revision-bare-a--e--o--u), not this left-fence series. Phrase-level priority ranking **is** this series (`zel` / `zem` / `zen`, …).
 
 ## Reserved forms
 
@@ -305,7 +357,7 @@ Endorsement strength and evidentiality stay on each clause’s `/h/` (or `/w/`),
 - **Same clause force** on every conjunct (all statements, all polar questions, or all imperatives). Mixed force → separate sentences or [subordination](language-reference.md#dependent-clauses), not this join.
 - **No gapping / shared arguments** across conjuncts. Repeat material, or use phrase-level (NP / AP / …) or VP-level coordination inside one clause.
 - **Not subordination:** *because* / *if* / *although* stay `/h/` + `/b/` [next-clause pronoun](pronouns.md#special-pronouns).
-- **Not general *but* / *however* / *therefore*:** those are other `/x/` linkers. *But not* / *except* and *instead* are **not** this series. Phrase-, VP-, and clause-level **priority** (**zel** / **gel** / **vel** / **xel**, …) **is** this series.
+- **Not general *but* / *however* / *therefore*:** those are other `/x/` linkers. In-clause *including* / *rather* / *instead* / *except* are [bare revision](#in-clause-revision-bare-a--e--o--u), not clause coordination. Sentence-level *instead* / *except* (when needed) stay other `/x/` roots. Phrase-, VP-, and clause-level **priority** (**zel** / **gel** / **vel** / **xel**, …) **is** this series.
 
 ## Reserved forms
 
