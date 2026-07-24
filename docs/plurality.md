@@ -138,7 +138,7 @@ Depends on subclass (see [utterance markers](language-reference.md#utterance-mar
 
 ### Discourse markers (`/x/`)
 
-* **Word-level coordinators** ([**al** / **am** / **el** / **em** / …](coordination.md)) — No **-sh** (**-l** / **-m** ending only). Plurality is marked on each conjunct independently (`z-dogl am z-catlsh`).
+* **Word-level coordinators** ([**al** / **am** / **an** / **el** / **em** / …](coordination.md)) — No **-sh** (**-l** / **-m** / **-n** ending only). Plurality is marked on each conjunct independently (`z-dogl am z-catlsh`).
 * **Clause coordinators** ([`xal`](coordination.md#clause-level-coordination), …) — Do **not** take **-sh**; plurality stays on material inside each sentence.
 * **`/x/` linkers / fences** (*but*, *however*, …) — Do **not** take **-sh**; they are glue, not plural referents.
 * **Quotation / fence markers** — Do not pluralize the fence; plural material *inside* the quote marks **-sh** on its own words.
@@ -159,7 +159,7 @@ Aligns with number words: optional plural on a numeric referent uses the same **
 | `/j/` interjection | (Rare) group / plural formula call |
 | `/j/` clause force | *(not used)* |
 | `/x/` linkers / fences | *(not used)* |
-| bare **al** / **am** / **el** / **em** / … | *(not used — **-l** / **-m** ending only, no **-sh**)* |
+| bare **al** / **am** / **an** / **el** / **em** / … | *(not used — ending only, no **-sh**)* |
 | `/x/` named discourse label | Plural titled thread/label set or resume thereof |
 
 | Reference + **-sh** | Means… |

@@ -6,7 +6,7 @@ PoS prefixes and ordinary word shape: [language-reference.md](language-reference
 
 ## Join type × ending (shared at both levels)
 
-**Vowel(s)** choose join type. **Ending** **-l** / **-m** is required on every word-level coordinator and on committed clause openers. For **a** / **o** / **u** / **ao**, that ending is **closure**. For **e**, that ending picks **exception** vs **replacement** (closure does not apply).
+**Vowel(s)** choose join type. Word-level coordinators and committed clause openers always take an ending (no bare vowel). For **a** / **o** / **u** / **ao**, **-l** / **-m** mark **closure**, and word-level **-n** marks a **named / conventional** list. For **e**, **-l** / **-m** pick **exception** vs **replacement** (no **-n**). Clause-level **-n** is a different sense (soft packaging) — see [Clause-level](#clause-level-coordination).
 
 ### Join type (vowel series)
 
@@ -27,6 +27,16 @@ PoS prefixes and ordinary word shape: [language-reference.md](language-reference
 
 When unsure whether the list is complete, prefer **-m** (open). Use **-l** when you stand behind completeness (inventories, forced-choice menus, definitions).
 
+### Named / conventional ending (word-level **a** / **o** / **u** / **ao** only)
+
+| Ending | Meaning |
+|--------|---------|
+| **-n** | **Named / conventional list** — the conjuncts are invoked as an established titled, formulaic, or canonical bundle (*the primary colors*, *RGB*, *stop–drop–roll*), not as a freshly composed open or closed inventory. |
+
+**-n** is an alternative to **-l** / **-m**, not a third completeness tier and not stackable with them. Completeness is whatever the conventional designation already fixes; you are naming the bundle, not arguing list closure in the moment. Same mnemonic as content-word [proper name **-n**](reference-suffix.md#proper-name--n): definite by established label.
+
+**Not on word-level `e`:** exception / replacement stay **el** / **em** only. **Not at clause level:** clause **-n** means soft packaging (`xan`…), not named list — use other `/x/`…**-n** thread labels if you need a titled agenda item.
+
 ### Exception vs replacement (**e** only)
 
 On **e**, **-l** / **-m** do **not** mark closure. They choose the relation (mnemonic: **-l** crisp cut, **-m** stand-in / rewrite):
@@ -42,15 +52,15 @@ These joins are **directional** (order matters), unlike *and* / *or* / *nor*.
 
 - **Exclusive (`o`)** — pick **one** of the conjuncts, not more than one.
 - **Inclusive (`ao`)** — one **or** more of the conjuncts may hold (English *and/or*). Built by combining **a** with **o**; bare **o** stays exclusive.
-- ***Nor* (`u`)** — **none** of the conjuncts hold (*neither…nor…*). The realized set from the list is empty. **-l** vs **-m** still marks whether that denial is limited to the listed items (**ul**) or leaves room for further denials outside the list (**um**).
+- ***Nor* (`u`)** — **none** of the conjuncts hold (*neither…nor…*). The realized set from the list is empty. **-l** vs **-m** still marks whether that denial is limited to the listed items (**ul**) or leaves room for further denials outside the list (**um**); **-n** names a conventional denial bundle.
 
-**a** is ordinary conjunction (*and*), not an *or*. Every word-level coordinator takes **-l** or **-m** (no bare vowel). Clause soft packaging for **a** / **o** / **u** / **ao** uses **-n** — below. Soft **-n** is **not** used on **e**.
+**a** is ordinary conjunction (*and*), not an *or*. Word-level **a** / **o** / **u** / **ao** take **-l**, **-m**, or **-n**; **e** takes **-l** or **-m** only. Clause soft packaging for **a** / **o** / **u** / **ao** uses **-n** — below. Soft **-n** is **not** used on **e**.
 
 ---
 
 # Word-level coordination
 
-Word-level coordinators join **sibling full words** that share the **same PoS slot**. They have **no** PoS prefix. They **do** take an ending (**-l** or **-m** only — not **-n** / **-r**, and not plural **-sh**).
+Word-level coordinators join **sibling full words** that share the **same PoS slot**. They have **no** PoS prefix. They **do** take an ending (**-l**, **-m**, or **-n** where allowed — not **-r**, and not plural **-sh**).
 
 ## Particles
 
@@ -58,16 +68,20 @@ Word-level coordinators join **sibling full words** that share the **same PoS sl
 |------|---------|---------|
 | **a** + **-l** | `al` | *and*, **closed** |
 | **a** + **-m** | `am` | *and*, **open** |
+| **a** + **-n** | `an` | *and*, **named / conventional** |
 | **o** + **-l** | `ol` | exclusive *or*, **closed** |
 | **o** + **-m** | `om` | exclusive *or*, **open** |
+| **o** + **-n** | `on` | exclusive *or*, **named / conventional** |
 | **u** + **-l** | `ul` | *nor*, **closed** |
 | **u** + **-m** | `um` | *nor*, **open** |
+| **u** + **-n** | `un` | *nor*, **named / conventional** |
 | **a** + **o** + **-l** | `aol` | inclusive *and/or*, **closed** |
 | **a** + **o** + **-m** | `aom` | inclusive *and/or*, **open** |
+| **a** + **o** + **-n** | `aon` | inclusive *and/or*, **named / conventional** |
 | **e** + **-l** | `el` | **exception** (*but not* / *except*) |
 | **e** + **-m** | `em` | **replacement** (*instead of*) |
 
-Spoken inclusive forms are **a** then **o** then the ending. Preferred writing glues the vowels (`aol`, `aom`); `a/ol` / `a/om` is allowed if a slash helps reading.
+Spoken inclusive forms are **a** then **o** then the ending. Preferred writing glues the vowels (`aol`, `aom`, `aon`); `a/ol` / `a/om` / `a/on` is allowed if a slash helps reading.
 
 ## Shape of a coordinated chain (Oxford style)
 
@@ -78,7 +92,7 @@ WORD  ( WORD )*  COORD  WORD
 ```
 
 - **WORD** — a complete content word: PoS prefix + root(s) + reference suffix + optional plural **-sh**.
-- **COORD** — one of **al**, **am**, **ol**, **om**, **ul**, **um**, **aol**, **aom**, **el**, **em**.
+- **COORD** — one of **al**, **am**, **an**, **ol**, **om**, **on**, **ul**, **um**, **un**, **aol**, **aom**, **aon**, **el**, **em**.
 - Non-final conjuncts are adjacent (no particle between them). The coordinator appears **only once**, before the final item. There is no leading coordinator and no repeated between-item coordinator.
 
 Two conjuncts still look like `WORD COORD WORD`. Three or more: `WORD WORD COORD WORD` (e.g. *dogs cats **am** birds*).
@@ -88,7 +102,7 @@ Two conjuncts still look like `WORD COORD WORD`. Three or more: `WORD WORD COORD
 - **`el`**: non-final conjuncts are the **base** (as if joined by open *and*); the final conjunct is **excluded**. `A el B` → *A but not B*; `A B el C` → *A and B, except C*.
 - **`em`**: non-final conjuncts are what is **replaced**; the final conjunct is the **replacement**. `A em B` → *B instead of A*; `A B em C` → *C instead of A and B*.
 
-Examples (schematic): `z-dogl am z-catl` (*a dog and a cat* — open list); `z-dogl z-birdl al z-catlsh` (*a dog, a bird, and some cats* — closed inventory); `v-runl ol v-jumpl` (*run or jump* — exclusive, closed); `g-redl aom g-bluel` (*red and/or blue* — inclusive, open); `z-dogl z-catl ul z-birdl` (*neither a dog nor a cat nor a bird* — closed denial set); `z-dogl el z-catl` (*a dog but not a cat*); `z-dogl em z-catl` (*a cat instead of a dog*).
+Examples (schematic): `z-dogl am z-catl` (*a dog and a cat* — open list); `z-dogl z-birdl al z-catlsh` (*a dog, a bird, and some cats* — closed inventory); `g-redl g-yellowl an g-bluel` (*red, yellow, and blue* as the conventional primary-color bundle); `v-runl ol v-jumpl` (*run or jump* — exclusive, closed); `g-redl aom g-bluel` (*red and/or blue* — inclusive, open); `z-dogl z-catl ul z-birdl` (*neither a dog nor a cat nor a bird* — closed denial set); `z-dogl el z-catl` (*a dog but not a cat*); `z-dogl em z-catl` (*a cat instead of a dog*).
 
 ## Same PoS slot, single words only
 
@@ -101,9 +115,9 @@ Examples (schematic): `z-dogl am z-catl` (*a dog and a cat* — open list); `z-d
 
 ## Reserved particles
 
-**al**, **am**, **ol**, **om**, **ul**, **um**, **aol**, **aom**, **el**, and **em** as **bare** words (no PoS prefix) are only these word-level coordinators. They are not lexicon roots and must not appear bare with any other meaning. Bare **a** / **o** / **u** / **e** without **-l** / **-m** are **not** coordinators. Ordinary roots remain `V(CV)+` under a PoS prefix and a reference suffix; number-marker vowels after **r** are unchanged — see [numbers.md](numbers.md).
+**al**, **am**, **an**, **ol**, **om**, **on**, **ul**, **um**, **un**, **aol**, **aom**, **aon**, **el**, and **em** as **bare** words (no PoS prefix) are only these word-level coordinators. They are not lexicon roots and must not appear bare with any other meaning. Bare **a** / **o** / **u** / **e** without an allowed ending are **not** coordinators. Ordinary roots remain `V(CV)+` under a PoS prefix and a reference suffix; number-marker vowels after **r** are unchanged — see [numbers.md](numbers.md).
 
-The letters **-l** / **-m** here are the same inventory as [reference suffixes](reference-suffix.md), but on coordinators they are specialized: **closed** vs **open** for **a** / **o** / **u** / **ao**, and **exception** vs **replacement** for **e** — not ordinary literal vs metaphorical.
+The letters **-l** / **-m** / **-n** here are the same inventory as [reference suffixes](reference-suffix.md), but on word-level coordinators they are specialized: **closed** / **open** / **named** for **a** / **o** / **u** / **ao**, and **exception** / **replacement** for **e** — not ordinary literal / metaphorical / proper-name on a content root.
 
 ---
 
@@ -135,7 +149,7 @@ Preferred writing for inclusive forms glues the vowels (`xaol`, …). Spoken ord
 - **-l** / **-m** on **e** — Open a **new**, **committed** exception or replacement join (not closure):
   - **`xel`** — *but not* / *except*: prior clause(s) hold, excluding what follows (`A xel B` → *A, but not B*).
   - **`xem`** — *instead*: what follows **replaces** what precedes (`A xem B` → *B instead of A*).
-- **-n** — Opens a **new** list with **soft** packaging (**a** / **o** / **u** / **ao** only): **narrative sequence** (**a**) or **uncertain reconstruction** (the others) — not a second boolean table, and not dramatic metaphor. Soft lists do **not** carry a separate closed/open bit; treat completeness as open-leaning unless you upgrade to a committed **-l** / **-m** opener (optionally with `/h/` evidential hedges). Per vowel:
+- **-n** — Opens a **new** list with **soft** packaging (**a** / **o** / **u** / **ao** only): **narrative sequence** (**a**) or **uncertain reconstruction** (the others) — not a second boolean table, and not dramatic metaphor. **Different from word-level `-n`:** here **-n** is soft packaging, not named/conventional list. Soft lists do **not** carry a separate closed/open bit; treat completeness as open-leaning unless you upgrade to a committed **-l** / **-m** opener (optionally with `/h/` evidential hedges). Per vowel:
   - **`xan`** (*and*) — *and then…* (temporal / story sequence, not mere logical *and*).
   - **`xon`** (*xor*) — *or maybe it was…* — uncertain alternatives (typically without claiming those are all the guesses).
   - **`xun`** (*nor*) — *and it wasn’t… either* / *nor, as I recall…* — soft denial chain while reconstructing what did not hold.
