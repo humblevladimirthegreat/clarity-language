@@ -158,21 +158,21 @@ Other speech acts (request, promise, wish, evaluative judgment, and so on) are n
 
 Content questions (*who* / *what* / *where*) use the [interrogative special pronoun](pronouns.md#special-pronouns) for the queried role and, for now, the same **polar question** force as yes/no questions.
 
-## Word-level and NP-level coordination
+## Word-level, NP-level, and AP-level coordination
 
-**al** / **am** / **an** / **ol** / **om** / **on** / **ul** / **um** / **un** / **aol** / **aom** / **aon** / **el** / **em** join sibling full words in the **same PoS slot** (Oxford style). **`/z/` `/d/` `/b/`** + the same vowels + ending (`zam`, `dol`, `bem`, …) join **noun phrases** in that argument role — also **Oxford style** (not clause `/x/` opener / **-r**); use NP-level for multi-word conjuncts or shared post-chain modifiers (`z-dogl zam z-catl g-bigl` = *a big (dog and cat)*). Oxford **-l**/**-m**/**-n** = closed/open/named on **a**/**o**/**u**/**ao**; on **e**, **-l**/**-m** = exception/replacement. `/x/` + the same vowels + ending join **clauses** (`xal`, `xam`, `xan`, `xel`, `xem`, …). Clause **-n** is soft packaging (not Oxford named). **-l** / **-m** / **-n** always start a new clause list (**-n** not on **e**); **-r** continues it (so `A xol B xol C` nests as *A or (B or C)*). Correlatives come later. Details: **[coordination.md](coordination.md)**.
+**al** / **am** / **an** / **ol** / **om** / **on** / **ul** / **um** / **un** / **aol** / **aom** / **aon** / **el** / **em** join sibling full words in the **same PoS slot** (Oxford style). **`/z/` `/d/` `/b/`** + the same vowels + ending (`zam`, `dol`, `bem`, …) join **noun phrases** in that argument role — also **Oxford style** (not clause `/x/` opener / **-r**); use NP-level for multi-word conjuncts or shared post-chain modifiers (`z-dogl zam z-catl g-bigl` = *a big (dog and cat)*). **`/ɡ/`** + the same series (`gam`, …) joins **adjective phrases** (Oxford); use AP-level for multi-word APs or shared post-chain `/w/` (`g-happyl gam g-proudl w-veryl` = *very (happy and proud)*). Oxford **-l**/**-m**/**-n** = closed/open/named on **a**/**o**/**u**/**ao**; on **e**, **-l**/**-m** = exception/replacement. `/x/` + the same vowels + ending join **clauses** (`xal`, `xam`, `xan`, `xel`, `xem`, …). Clause **-n** is soft packaging (not Oxford named). **-l** / **-m** / **-n** always start a new clause list (**-n** not on **e**); **-r** continues it (so `A xol B xol C` nests as *A or (B or C)*). Correlatives come later. Details: **[coordination.md](coordination.md)**.
 
 ## Discourse markers (`/x/`)
 
 Marked with x /ʒ/. Used for **discourse glue** that is not word-level coordination: sentence linkers (*however*, *therefore*, *meanwhile*, *but*, …), **quotation markers** (see below), and related fences. The dictionary lists the specific forms. The same sound **x** also joins roots inside compound words (see [Phonotactics](phonology.md#phonotactics)); it is not used as an ordinary root consonant, so mid-word **x** always means “next root,” and word-initial **x** always means discourse marker.
 
-Word-level *and* / *or* / *nor* / *except* / *instead* are **not** `/x/` — they are bare particles with **-l** / **-m** / **-n** endings ([coordination.md](coordination.md)). NP-level forms use `/z/` `/d/` `/b/` + the same vowels + ending (`zam`, …) — still Oxford, not `/x/`. Clause-level forms **are** `/x/` + the same vowels + ending (`xal`, `xel`, `xem`, …) — see [coordination.md](coordination.md#clause-level-coordination).
+Word-level *and* / *or* / *nor* / *except* / *instead* are **not** `/x/` — they are bare particles with **-l** / **-m** / **-n** endings ([coordination.md](coordination.md)). NP-level forms use `/z/` `/d/` `/b/` + the same vowels + ending (`zam`, …); AP-level uses `/ɡ/` (`gam`, …) — still Oxford, not `/x/`. Clause-level forms **are** `/x/` + the same vowels + ending (`xal`, `xel`, `xem`, …) — see [coordination.md](coordination.md#clause-level-coordination).
 
 `/x/` connects or fences discourse; it does **not** carry evidential or epistemic framing of the claim. Softeners that encode source-of-knowledge or claim strength stay `/h/` or `/w/` (see [Adverbs](#adverbs-h)). Contrast: *however* / *in other words* → `/x/`; *apparently* / *allegedly* → `/h/` or `/w/`.
 
 **Numbered list / enumeration markers** are `/x/` + [number word](numbers.md#number-as-discourse-marker-by-marker) (*point N:* neutral, *corroborating N:*, *independent N:*, *re item 12*). Marker vowel chooses independence framing (or cite-as-label); details live in numbers.md.
 
-**Not `/x/`:** word-level and NP-level coordinators ([coordination.md](coordination.md)); English-style subordinators that relate a following clause to a slot in the main clause (*if*, *because*, *although*, *while*, *until*) — those use the [next-clause pronoun](pronouns.md#special-pronouns) plus a lexicon relation (usually `/h/` + `/b/`), not a discourse-marker prefix. `/x/` sentence linkers (*therefore*, *however*, *meanwhile*) and number enumeration markers do not fill a main-clause argument or adjunct slot.
+**Not `/x/`:** word-level, NP-level, and AP-level coordinators ([coordination.md](coordination.md)); English-style subordinators that relate a following clause to a slot in the main clause (*if*, *because*, *although*, *while*, *until*) — those use the [next-clause pronoun](pronouns.md#special-pronouns) plus a lexicon relation (usually `/h/` + `/b/`), not a discourse-marker prefix. `/x/` sentence linkers (*therefore*, *however*, *meanwhile*) and number enumeration markers do not fill a main-clause argument or adjunct slot.
 
 ## Dependent Clauses
 
@@ -183,7 +183,7 @@ The next-clause pronoun takes whatever PoS prefix the slot needs:
 * **Complement / content clause** — usually a core argument. Example: *I told him that…* → next-clause as direct object (`/d/`) of *tell* (or another role the verb requires).
 * **Adverbial relation** (*because*, *if*, *although*, *while*, *until*, …) — a complex adverb: `/h/` relation word + `/b/` next-clause pronoun. The lexicon entry names the relation; there is **no** separate `/x/` subordinator for these.
 
-`/x/` is only for discourse glue that does **not** occupy a main-clause slot (sentence linkers, quote/aside fences, [numbered enumeration](numbers.md#number-as-discourse-marker-by-marker)). Word-level *and* / *or* / *nor* / *except* / *instead* are bare particles; NP-level uses `/z/` `/d/` `/b/` + the same series ([coordination.md](coordination.md)). Do not encode *because* / *if*-style subordination as `/x/`.
+`/x/` is only for discourse glue that does **not** occupy a main-clause slot (sentence linkers, quote/aside fences, [numbered enumeration](numbers.md#number-as-discourse-marker-by-marker)). Word-level *and* / *or* / *nor* / *except* / *instead* are bare particles; NP-level uses `/z/` `/d/` `/b/` + the same series; AP-level uses `/ɡ/` ([coordination.md](coordination.md)). Do not encode *because* / *if*-style subordination as `/x/`.
 
 ## Quotations
 
@@ -205,9 +205,9 @@ Pronoun grammar (anaphoric **-r** forms, special pronouns) lives in **[pronouns.
 
 Numeral grammar (digit roots, engineering/scientific forms, ordinals, digit-strings, `/x/` enumeration, number-word shape) lives in **[numbers.md](numbers.md)**.
 
-# Word-level and NP-level coordination
+# Word-level, NP-level, and AP-level coordination
 
-Word-level **al** / **am** / **an** / **el** / **em** / … (Oxford); NP-level **zam** / **dol** / … (Oxford, `/z/` `/d/` `/b/`); `/x/` + vowel + ending (clause-level; soft **-n** ≠ Oxford named **-n**; **-r** continues): **[coordination.md](coordination.md)**.
+Word-level **al** / **am** / **an** / **el** / **em** / … (Oxford); NP-level **zam** / **dol** / … (Oxford, `/z/` `/d/` `/b/`); AP-level **gam** / … (Oxford, `/ɡ/`); `/x/` + vowel + ending (clause-level; soft **-n** ≠ Oxford named **-n**; **-r** continues): **[coordination.md](coordination.md)**.
 
 # Phonology and Phonotactics
 

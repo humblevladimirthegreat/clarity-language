@@ -1,14 +1,14 @@
 # Coordination
 
-This page is the source of truth for **word-level**, **NP-level**, and **clause-level** coordination. Correlatives (*both…and*, *either…or*) come later. Asymmetric discourse glue (*but*, *however*, *therefore*) is `/x/` but **not** this vowel series — see [language-reference.md](language-reference.md#discourse-markers-x). (*But not* / *except* and *instead of* **are** this series — vowel **e** below.)
+This page is the source of truth for **word-level**, **NP-level**, **AP-level**, and **clause-level** coordination. Correlatives (*both…and*, *either…or*) come later. Asymmetric discourse glue (*but*, *however*, *therefore*) is `/x/` but **not** this vowel series — see [language-reference.md](language-reference.md#discourse-markers-x). (*But not* / *except* and *instead of* **are** this series — vowel **e** below.)
 
 PoS prefixes and ordinary word shape: [language-reference.md](language-reference.md). Reference suffixes: [reference-suffix.md](reference-suffix.md). Phonotactic exception for coordinator particles: [phonology.md](phonology.md#phonotactics).
 
-**Oxford vs `/x/` shape:** Word-level and NP-level use **Oxford style** (juxtapose non-final conjuncts; one coordinator before the last). Clause-level uses the **`/x/`** opener / **-r** continue pattern — not Oxford. Do not borrow clause **-r** nesting into word or NP chains.
+**Oxford vs `/x/` shape:** Word-level, NP-level, and AP-level use **Oxford style** (juxtapose non-final conjuncts; one coordinator before the last). Clause-level uses the **`/x/`** opener / **-r** continue pattern — not Oxford. Do not borrow clause **-r** nesting into Oxford chains.
 
 ## Join type × ending (shared)
 
-**Vowel(s)** choose join type. Word-level, NP-level, and committed clause openers always take an ending (no bare vowel). For **a** / **o** / **u** / **ao**, **-l** / **-m** mark **closure**, and Oxford-level (**word** / **NP**) **-n** marks a **named / conventional** list. For **e**, **-l** / **-m** pick **exception** vs **replacement** (no **-n**). Clause-level **-n** is a different sense (soft packaging) — see [Clause-level](#clause-level-coordination).
+**Vowel(s)** choose join type. Word-level, NP-level, AP-level, and committed clause openers always take an ending (no bare vowel). For **a** / **o** / **u** / **ao**, **-l** / **-m** mark **closure**, and Oxford-level (**word** / **NP** / **AP**) **-n** marks a **named / conventional** list. For **e**, **-l** / **-m** pick **exception** vs **replacement** (no **-n**). Clause-level **-n** is a different sense (soft packaging) — see [Clause-level](#clause-level-coordination).
 
 ### Join type (vowel series)
 
@@ -35,9 +35,9 @@ When unsure whether the list is complete, prefer **-m** (open). Use **-l** when 
 |--------|---------|
 | **-n** | **Named / conventional list** — the conjuncts are invoked as an established titled, formulaic, or canonical bundle (*the primary colors*, *RGB*, *stop–drop–roll*), not as a freshly composed open or closed inventory. |
 
-**-n** is an alternative to **-l** / **-m**, not a third completeness tier and not stackable with them. Completeness is whatever the conventional designation already fixes; you are naming the bundle, not arguing list closure in the moment. Same mnemonic as content-word [proper name **-n**](reference-suffix.md#proper-name--n): definite by established label. Used on **bare** word-level particles and on **NP-level** `/z/` `/d/` `/b/` coordinators — not on clause `/x/` forms.
+**-n** is an alternative to **-l** / **-m**, not a third completeness tier and not stackable with them. Completeness is whatever the conventional designation already fixes; you are naming the bundle, not arguing list closure in the moment. Same mnemonic as content-word [proper name **-n**](reference-suffix.md#proper-name--n): definite by established label. Used on **bare** word-level particles and on Oxford **NP-level** (`/z/` `/d/` `/b/`) and **AP-level** (`/ɡ/`) coordinators — not on clause `/x/` forms.
 
-**Not on Oxford `e`:** exception / replacement stay **el** / **em** (and `zel` / `zem`, `del` / `dem`, `bel` / `bem`) only. **Not at clause level:** clause **-n** means soft packaging (`xan`…), not named list — use other `/x/`…**-n** thread labels if you need a titled agenda item.
+**Not on Oxford `e`:** exception / replacement stay **el** / **em** (and `zel` / `zem`, `del` / `dem`, `bel` / `bem`, `gel` / `gem`) only. **Not at clause level:** clause **-n** means soft packaging (`xan`…), not named list — use other `/x/`…**-n** thread labels if you need a titled agenda item.
 
 ### Exception vs replacement (**e** only)
 
@@ -45,8 +45,8 @@ On **e**, **-l** / **-m** do **not** mark closure. They choose the relation (mne
 
 | Ending | Form | Meaning | Reading order |
 |--------|------|---------|----------------|
-| **-l** | `el` (Oxford: also `zel` / `del` / `bel`) | **Exception** — base holds **excluding** the last conjunct (*but not* / *except*) | `X el Y` → *X but not Y* |
-| **-m** | `em` (Oxford: also `zem` / `dem` / `bem`) | **Replacement** — the last conjunct **takes the place of** what precedes (*instead of*) | `X em Y` → *Y instead of X* |
+| **-l** | `el` (Oxford: also `zel` / `del` / `bel` / `gel`) | **Exception** — base holds **excluding** the last conjunct (*but not* / *except*) | `X el Y` → *X but not Y* |
+| **-m** | `em` (Oxford: also `zem` / `dem` / `bem` / `gem`) | **Replacement** — the last conjunct **takes the place of** what precedes (*instead of*) | `X em Y` → *Y instead of X* |
 
 These joins are **directional** (order matters), unlike *and* / *or* / *nor*.
 
@@ -56,13 +56,13 @@ These joins are **directional** (order matters), unlike *and* / *or* / *nor*.
 - **Inclusive (`ao`)** — one **or** more of the conjuncts may hold (English *and/or*). Built by combining **a** with **o**; bare **o** stays exclusive.
 - ***Nor* (`u`)** — **none** of the conjuncts hold (*neither…nor…*). The realized set from the list is empty. **-l** vs **-m** still marks whether that denial is limited to the listed items (**ul**) or leaves room for further denials outside the list (**um**); **-n** names a conventional denial bundle.
 
-**a** is ordinary conjunction (*and*), not an *or*. Oxford (**word** / **NP**) **a** / **o** / **u** / **ao** take **-l**, **-m**, or **-n**; **e** takes **-l** or **-m** only. Clause soft packaging for **a** / **o** / **u** / **ao** uses **-n** — below. Soft **-n** is **not** used on **e**. Oxford coordinators never take **-r** (that ending is clause-list continue only).
+**a** is ordinary conjunction (*and*), not an *or*. Oxford (**word** / **NP** / **AP**) **a** / **o** / **u** / **ao** take **-l**, **-m**, or **-n**; **e** takes **-l** or **-m** only. Clause soft packaging for **a** / **o** / **u** / **ao** uses **-n** — below. Soft **-n** is **not** used on **e**. Oxford coordinators never take **-r** (that ending is clause-list continue only).
 
 ---
 
 # Word-level coordination
 
-Word-level coordinators join **sibling full words** that share the **same PoS slot**. They have **no** PoS prefix. They **do** take an ending (**-l**, **-m**, or **-n** where allowed — not **-r**, and not plural **-sh**). **Oxford style** — same shape as [NP-level](#np-level-coordination); **not** the clause `/x/` opener / **-r** pattern.
+Word-level coordinators join **sibling full words** that share the **same PoS slot**. They have **no** PoS prefix. They **do** take an ending (**-l**, **-m**, or **-n** where allowed — not **-r**, and not plural **-sh**). **Oxford style** — same shape as [NP-level](#np-level-coordination) and [AP-level](#ap-level-coordination); **not** the clause `/x/` opener / **-r** pattern.
 
 ## Particles
 
@@ -113,7 +113,7 @@ Examples (schematic): `z-dogl am z-catl` (*a dog and a cat* — open list); `z-d
 - Each conjunct keeps its own reference suffix and optional **-sh**. Plurality does not need to match across the chain: `z-dogl am z-catlsh` is fine (*a dog and some cats*).
 - Allowed on any PoS that takes ordinary content words in that slot — including verbs, adjectives, adjective adjuncts, and adverb (`/h/`) units. A coordinated `/h/` chain is one floating unit and stays contiguous (same as a single `/h/` or `/h/`+`/b/` pair).
 
-**Not word-level:** multi-word noun phrases as conjuncts, or post-chain modifiers that must scope over a whole noun join — use [NP-level](#np-level-coordination); joining different PoS prefixes; coordinating clauses or sentences (below); correlative pairs; `/x/` sentence linkers (*however*, *therefore*), general adversative *but*, quotation fences, or [numbered enumeration](numbers.md#number-as-discourse-marker-by-marker). Word-level *but not* / *except* and *instead of* **are** word-level (**el** / **em**).
+**Not word-level:** multi-word noun phrases as conjuncts, or post-chain modifiers that must scope over a whole noun join — use [NP-level](#np-level-coordination); multi-word adjective phrases, or post-chain `/w/` that must grade a whole adjective join — use [AP-level](#ap-level-coordination); joining different PoS prefixes; coordinating clauses or sentences (below); correlative pairs; `/x/` sentence linkers (*however*, *therefore*), general adversative *but*, quotation fences, or [numbered enumeration](numbers.md#number-as-discourse-marker-by-marker). Word-level *but not* / *except* and *instead of* **are** word-level (**el** / **em**).
 
 ## Reserved particles
 
@@ -189,7 +189,7 @@ Complex adjective on the bundle: `z-dogl zam z-catl g-ofl b-Samn` → *Sam’s (
 - **One argument slot** — the chain is a single subject, object, or `/b/` argument in the clause.
 - **Matching role prefix** on every head noun and on the coordinator.
 - **No `-r`**, no clause soft **-n**, no plural **-sh** on the coordinator.
-- **Not** for verbs, adjectives, `/w/`, `/h/`, or mixed-PoS joins — stay word-level (same slot, single words) or split into separate sentences / [clause coordination](#clause-level-coordination).
+- **Not** for verbs, adjectives-as-phrases, `/w/`-only stacks, `/h/`, or mixed-PoS joins — adjective phrases use [AP-level](#ap-level-coordination); otherwise stay word-level (same slot, single words) or split into separate sentences / [clause coordination](#clause-level-coordination).
 - **Not** full sentences — those stay `/x/`…
 
 ## Reserved forms
@@ -198,9 +198,71 @@ Under `/z/`, `/d/`, and `/b/`, the coordination vowel series plus an allowed Oxf
 
 ---
 
+# AP-level coordination
+
+AP-level coordinators join **adjective phrases** that modify one host (one `/ɡ/` stack position after a noun, or after a `/b/` argument being described). They use the **same vowel series and Oxford endings** as word-level (**-l** / **-m** / **-n** on **a** / **o** / **u** / **ao**; **-l** / **-m** on **e** — **not** **-r**, and not plural **-sh**). The coordinator prefix is always **`/ɡ/`**.
+
+**Shape is Oxford, like word- and NP-level — not clause `/x/` style.** Non-final AP conjuncts are juxtaposed; **one** coordinator appears immediately before the **last** conjunct. No leading opener, no per-conjunct particle, no **-r** continue.
+
+## Forms
+
+Word shape: `/ɡ/` + vowel root (+ second vowel for inclusive forms) + ending.
+
+Writing: `gal` / `gam` / `gan` / `gol` / … / `gel` / `gem`. Inclusive: `gaol` / `gaom` / `gaon` (spoken **a** then **o** then ending).
+
+## Shape (Oxford style)
+
+```
+AP  ( AP )*  AP-COORD  AP
+```
+
+- **AP** — an adjective phrase headed by a `/ɡ/` word, plus that head’s own following material: contiguous `/b/` argument (complex adjective), further `/ɡ/` on that `/b/`, and `/w/` stacks on those adjectives. A new `/ɡ/` head that starts the next adjective conjunct begins the **next** AP (not a `/w/` on the previous one).
+- **AP-COORD** — `gam`, `gol`, `gem`, … Appears **only once**, before the final AP.
+- Two conjuncts: `AP  AP-COORD  AP`. Three or more: `AP  AP  AP-COORD  AP`.
+
+**Exception / replacement** (`gel` / `gem`) keep the same directional readings as word-level **el** / **em**, with AP-sized conjuncts.
+
+### Why not bare word-level
+
+Use AP-level when either holds:
+
+1. **Multi-word conjuncts** — at least one conjunct is `/ɡ/` + `/b/` and/or `/w/` material (bare word-level allows **single words** only).
+2. **Shared post-chain `/w/`** — adjective adjuncts **after** the whole chain grade or frame the **coordinated AP as one unit**, not only the last `/ɡ/`.
+
+Bare `am` still joins single-word `/ɡ/` siblings. Prefer bare when both of the above are unnecessary.
+
+### Scope after the chain
+
+`/w/` (and further `/w/` stacks) after the last conjunct scope over the **entire** join:
+
+- `g-happyl gam g-proudl w-veryl` → *very (happy and proud)* — open *and*, shared degree
+- `g-happyl am g-proudl w-veryl` → word-level: *happy and very proud* (`/w/` on last `/ɡ/` only)
+- `g-happyl w-veryl am g-proudl` → word-level: *very happy and proud*
+
+### Examples (schematic)
+
+- `g-happyl w-veryl gam g-proudl w-slightlyl` — *(very happy) and (slightly proud)* — each degree inside its conjunct
+- `g-onl b-tablel gam g-ofl b-Samn` — *(on the table) and (Sam’s)* — two complex APs on one host
+- `g-redl g-softl gal g-warml` — *red, soft, and warm* — closed three-way AP list
+- `g-happyl gel g-angryl w-veryl` — *very (happy but not angry)*
+
+## Constraints
+
+- **One adjective stack position** — the chain is a single `/ɡ/` occurrence on its host.
+- **Every conjunct headed by `/ɡ/`**; coordinator is `/ɡ/` + vowel series.
+- **No `-r`**, no clause soft **-n**, no plural **-sh** on the coordinator.
+- **Not** for coordinating `/w/` alone without `/ɡ/` heads, nouns, verbs, `/h/`, or mixed-PoS joins — stay word-level or use [NP-level](#np-level-coordination) / [clause coordination](#clause-level-coordination).
+- **Not** full sentences — those stay `/x/`…
+
+## Reserved forms
+
+Under `/ɡ/`, the coordination vowel series plus an allowed Oxford ending (`gal`, `gam`, `gan`, … `gel`, `gem`) are **only** these AP coordinators — not ordinary content words with those vowel roots. Other roots under `/ɡ/` are unchanged.
+
+---
+
 # Clause-level coordination
 
-Clause-level coordinators join **full sentences**. They are **`/x/`** discourse markers whose **root is the same vowel series** as word- and NP-level coordination. They take a [reference-suffix letter](reference-suffix.md): **-l**, **-m**, **-n**, or **-r** (**-n** not on **e**). They do **not** take plural **-sh**.
+Clause-level coordinators join **full sentences**. They are **`/x/`** discourse markers whose **root is the same vowel series** as word-, NP-, and AP-level coordination. They take a [reference-suffix letter](reference-suffix.md): **-l**, **-m**, **-n**, or **-r** (**-n** not on **e**). They do **not** take plural **-sh**.
 
 Word shape: `/x/` + vowel root (+ second vowel for inclusive forms) + ending.
 
@@ -216,7 +278,7 @@ The **vowel** chooses join type. Endorsement strength and evidentiality stay on 
 | **ao** (and/or) | `xaol` closed | `xaom` open | `xaon` | `xaor` |
 | **e** (exception / replacement) | `xel` exception | `xem` replacement | *(not used)* | `xer` |
 
-Preferred writing for inclusive forms glues the vowels (`xaol`, …). Spoken order is **a** then **o**, then the ending — same order as word-level `aol` / `aom` and NP-level `zaol` / `zaom`.
+Preferred writing for inclusive forms glues the vowels (`xaol`, …). Spoken order is **a** then **o**, then the ending — same order as word-level `aol` / `aom`, NP-level `zaol` / `zaom`, and AP-level `gaol` / `gaom`.
 
 ### Ending senses (clause coordinators)
 
@@ -226,7 +288,7 @@ Preferred writing for inclusive forms glues the vowels (`xaol`, …). Spoken ord
 - **-l** / **-m** on **e** — Open a **new**, **committed** exception or replacement join (not closure):
   - **`xel`** — *but not* / *except*: prior clause(s) hold, excluding what follows (`A xel B` → *A, but not B*).
   - **`xem`** — *instead*: what follows **replaces** what precedes (`A xem B` → *B instead of A*).
-- **-n** — Opens a **new** list with **soft** packaging (**a** / **o** / **u** / **ao** only): **narrative sequence** (**a**) or **uncertain reconstruction** (the others) — not a second boolean table, and not dramatic metaphor. **Different from Oxford `-n`:** here **-n** is soft packaging, not named/conventional list (word-level **an** / NP-level **zan** / …). Soft lists do **not** carry a separate closed/open bit; treat completeness as open-leaning unless you upgrade to a committed **-l** / **-m** opener (optionally with `/h/` evidential hedges). Per vowel:
+- **-n** — Opens a **new** list with **soft** packaging (**a** / **o** / **u** / **ao** only): **narrative sequence** (**a**) or **uncertain reconstruction** (the others) — not a second boolean table, and not dramatic metaphor. **Different from Oxford `-n`:** here **-n** is soft packaging, not named/conventional list (word-level **an** / NP-level **zan** / AP-level **gan** / …). Soft lists do **not** carry a separate closed/open bit; treat completeness as open-leaning unless you upgrade to a committed **-l** / **-m** opener (optionally with `/h/` evidential hedges). Per vowel:
   - **`xan`** (*and*) — *and then…* (temporal / story sequence, not mere logical *and*).
   - **`xon`** (*xor*) — *or maybe it was…* — uncertain alternatives (typically without claiming those are all the guesses).
   - **`xun`** (*nor*) — *and it wasn’t… either* / *nor, as I recall…* — soft denial chain while reconstructing what did not hold.
@@ -238,7 +300,7 @@ Titled / official discourse labels stay **other** `/x/`…**-n** forms (differen
 
 ## Shape (not Oxford style)
 
-Clause-level coordination is **not** Oxford-style (unlike [word-level](#word-level-coordination) and [NP-level](#np-level-coordination)). A coordinator appears before every non-initial sentence in a chain. Which ending you use decides **flat list** vs **nesting**.
+Clause-level coordination is **not** Oxford-style (unlike [word-level](#word-level-coordination), [NP-level](#np-level-coordination), and [AP-level](#ap-level-coordination)). A coordinator appears before every non-initial sentence in a chain. Which ending you use decides **flat list** vs **nesting**.
 
 ```
 SENT  X-OPEN  SENT  ( X-CONT  SENT )*     ← one flat list
@@ -268,6 +330,6 @@ To get a flat three-way *or*, you **must** write `A xol B xor C`, not `A xol B x
 ## Constraints
 
 - **Same clause force** on every conjunct (all statements, all polar questions, or all imperatives). Mixed force → separate sentences or [subordination](language-reference.md#dependent-clauses), not this join.
-- **No gapping / shared arguments** across conjuncts. Repeat material, or use word-level or NP-level coordination inside one clause.
+- **No gapping / shared arguments** across conjuncts. Repeat material, or use word-level, NP-level, or AP-level coordination inside one clause.
 - **Not subordination:** *because* / *if* / *although* stay `/h/` + `/b/` [next-clause pronoun](pronouns.md#special-pronouns).
-- **Not general *but* / *however* / *therefore*:** those are other `/x/` linkers. Word-, NP-, and clause-level *but not* / *except* (**el** / **zel** / **xel**, …) and *instead* (**em** / **zem** / **xem**, …) **are** this series.
+- **Not general *but* / *however* / *therefore*:** those are other `/x/` linkers. Word-, NP-, AP-, and clause-level *but not* / *except* (**el** / **zel** / **gel** / **xel**, …) and *instead* (**em** / **zem** / **gem** / **xem**, …) **are** this series.
