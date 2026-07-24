@@ -17,7 +17,7 @@ Resolution is always unambiguous for the listener and for a parser: a **-r** pro
 
 It is the **speaker’s** job to ensure the intended referent is the most recent match. Use the letter pronoun when that is already true. If the most recent match is **not** what you intend, use the **full-root `-r` form**. If even that isn't distinct, add an **adjective / ordinal** to disambiguate. That mention becomes most recent, so later pronouns can refer to it again.
 
-Add **-z** after the reference suffix to mark **plural**: the **group containing** the referent. Example: `…r` refers to one noun; `…rz` refers to the group that includes that noun. The same **-z** works on full words (`…lz`, `…nz`, etc.). See [reference-suffix.md](reference-suffix.md#plural--z).
+Add **-sh** after the reference suffix to mark **plural**: the **group containing** the referent. Example: `…r` refers to one noun; `…rsh` refers to the group that includes that noun. The same **-sh** works on full words (`…lsh`, `…nsh`, etc.). See [plurality.md](plurality.md).
 
 There are no English-style 3rd-person pronouns (*he* / *she* / *it* / *they*) and no impersonal *one*.
 
@@ -31,7 +31,7 @@ Clarity has one anaphoric mechanism (`-r`); English does not. Approximate by cro
 2. Find the **pronoun’s PoS** (the slot you are filling).
 3. Use that English gloss as a reading aid — not as a claim that Clarity has separate pronoun lexemes.
 
-Noun prefixes `/z/`, `/d/`, and `/b/` share the same “entity” reading; English case and preposition choice follow the pronoun column. Plural **-z** → *they* / *those* / *that group* (the group containing the referent).
+Noun prefixes `/z/`, `/d/`, and `/b/` share the same “entity” reading; English case and preposition choice follow the pronoun column. Plural **-sh** → *they* / *those* / *that group* (the group containing the referent).
 
 **Pronoun `/x/` vs `/h/`:** `/x/`…`-r` is **discourse navigation** — *going back to subject X* / *returning to that thread* (removing it does not change the following claim). Clause **aboutness** (*regarding X*, as part of what the claim is about) stays `/h/` + `/b/` X — see [Adverbs](language-reference.md#adverbs-h) and [Discourse markers](language-reference.md#discourse-markers-x).
 
@@ -150,6 +150,6 @@ Forms TBD. Roles:
 * **Next clause** — placeholder for the immediately following sentence (dependent clauses). Takes the PoS prefix of the slot it fills (`/d/` complement, `/b/` under `/h/` *because* / *if*, etc.). Form TBD; see [Dependent Clauses](language-reference.md#dependent-clauses).
 * **Interrogative pronoun** (who/what/where) all use same root
 
-**Group containing** a referent is not a separate special pronoun: append **-z** to the word (see above).
+**Group containing** a referent is not a separate special pronoun: append **-sh** to the word (see above).
 
 **Prefer names.** When a proper name is available, use it (`-n`) and/or its pronoun (`-r` from the name’s root) — including for self-address — rather than the speaker/listener special pronoun. Proper names are definite; the special pronouns are for the narrow cases where a name is unavailable or undesired. See [Proper name (`-n`)](reference-suffix.md#proper-name--n).

@@ -185,7 +185,11 @@ When quoting someone, using a proper noun, using a foreign word, or using a slan
 
 # Reference Suffix
 
-Reference suffix grammar (**-l** / **-m** / **-n** / **-r**, plural **-z**) lives in **[reference-suffix.md](reference-suffix.md)**.
+Reference suffix grammar (**-l** / **-m** / **-n** / **-r**) lives in **[reference-suffix.md](reference-suffix.md)**.
+
+# Plurality
+
+Plural grammar (**-sh** after the reference suffix; by PoS and reference suffix) lives in **[plurality.md](plurality.md)**.
 
 # Pronouns
 

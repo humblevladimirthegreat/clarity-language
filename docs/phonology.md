@@ -33,14 +33,14 @@ A word contains four parts:
 1. the part of speech prefix
 2. the root(s) - multiple if compound word
 3. the [reference suffix](reference-suffix.md) (**-l**, **-m**, **-n**, or **-r**)
-4. optional plural **-z** (the group containing the referent), after the reference suffix
+4. optional plural **-sh** (the group containing the referent), after the reference suffix — see [plurality.md](plurality.md)
 
 roots have form V(CV)+
 if a compound root, then **x** separates them
 
 a) A word root almost always starts with a vowel. The ending and beginning consonants were carefully chosen so that you can never confuse which syllable a consonant belongs to (vaban must be pronounced va'ban and not vab'an because syllables never end with a consonant unless it's the end of the word).
 
-b) All words end with a [reference suffix](reference-suffix.md) (**-l**, **-m**, **-n**, or **-r**), optionally followed by plural **-z**. No other syllables end with a consonant, so word boundaries stay clear even when pauses are unreliable (as in singing). Allowed word-final clusters are those suffixes plus **-z** (**-lz**, **-mz**, **-nz**, **-rz**).
+b) All words end with a [reference suffix](reference-suffix.md) (**-l**, **-m**, **-n**, or **-r**), optionally followed by plural **-sh** (/ʃ/). No other syllables end with a consonant, so word boundaries stay clear even when pauses are unreliable (as in singing). Allowed word-final clusters are those suffixes plus **-sh** (**-lsh**, **-msh**, **-nsh**, **-rsh**). The digraph **sh** is used only as this plural marker (word-final, after a reference suffix); it is not an ordinary root consonant.
 
 c) Easy to tell the components of a compound word because **x** separates them. Mid-word **x** is only the compound joiner (never part of a root); word-initial **x** is the discourse-marker prefix.
 

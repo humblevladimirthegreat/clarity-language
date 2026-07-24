@@ -1,20 +1,20 @@
 # Numbers
 
-Numerals are a **closed formal subsystem**, not ordinary lexicon roots. Quantifiers (*many*, *all*, *some*, …) are out of scope here. PoS prefixes and plural **-z** are defined in [language-reference.md](language-reference.md); general phonotactics live in [phonology.md](phonology.md); ordinary reference suffixes in [reference-suffix.md](reference-suffix.md). This page is the source of truth for numeral grammar.
+Numerals are a **closed formal subsystem**, not ordinary lexicon roots. Quantifiers (*many*, *all*, *some*, …) are out of scope here. PoS prefixes are defined in [language-reference.md](language-reference.md); plural **-sh** in [plurality.md](plurality.md); general phonotactics live in [phonology.md](phonology.md); ordinary reference suffixes in [reference-suffix.md](reference-suffix.md). This page is the source of truth for numeral grammar.
 
 A whole numeric value is **one word**, even when it contains several digit groups.
 
 ## Word shape
 
 ```
-[PoS] + r + V + ( [exponent?] [mantissa digits?] )+ + [ending] + [z?]
+[PoS] + r + V + ( [exponent?] [mantissa digits?] )+ + [ending] + [sh?]
 ```
 
 1. **PoS** — same prefix inventory as elsewhere; [roles for number words](#parts-of-speech-on-numbers) below.
 2. **Number marker** — consonant **r** plus a vowel **V** (see [Marker vowel](#marker-vowel-referential-identity)). The PoS+`r` cluster is a [number-only phonotactic exception](phonology.md#phonotactics).
 3. **One or more digit groups** — each group is an optional exponent and optional mantissa digits (at least one of the two). Digits compound with **no** **x** separator. There is **no per-group polarity**; sign (when it applies) is once for the whole word — see [Sign](#sign).
 4. **Ending** — `-l` / `-m` / `-n` / `-r` with [number-specific meanings](#number-endings) (not ordinary [reference suffix](reference-suffix.md) senses).
-5. **Plural `-z`** — optional; same sense as elsewhere (the group containing that numeric referent).
+5. **Plural `-sh`** — optional; same sense as elsewhere (the group containing that numeric referent) — see [plurality.md](plurality.md).
 
 **Writing** uses a [preferred shorthand](#writing-preferred-shorthand) for the marker and body (`g+3l`, not *grarel*); speech is always the full CV form.
 
@@ -283,10 +283,10 @@ Endings: **-l** exact reading; **-m** fuzzy (*around 15:30*); **-n** conventiona
 
 ## Writing (preferred shorthand)
 
-Speech always uses the full CV grammar above. **Writing prefers shorthand** for the marker and body. **PoS**, **ending**, and optional **-z** are still written as letters.
+Speech always uses the full CV grammar above. **Writing prefers shorthand** for the marker and body. **PoS**, **ending**, and optional **-sh** are still written as letters.
 
 ```
-[PoS] + [marker] + [body] + [ending] + [z?]
+[PoS] + [marker] + [body] + [ending] + [sh?]
 ```
 
 ### Marker (not written as `r`+V)

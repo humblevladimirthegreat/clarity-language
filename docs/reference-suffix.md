@@ -5,13 +5,13 @@ Every content word ends with a **reference suffix** — one of four final conson
 ## Word shape
 
 ```
-[PoS prefix] + root (+ x + root …) + reference suffix + [z?]
+[PoS prefix] + root (+ x + root …) + reference suffix + [sh?]
 ```
 
 1. **PoS prefix** — role in the clause (see [language-reference.md](language-reference.md#part-of-speech-prefixes)).
 2. **Root(s)** — `V(CV)+`; compound roots join with **x** (see [phonology.md](phonology.md#phonotactics)).
 3. **Reference suffix** — **-l**, **-m**, **-n**, or **-r** (below).
-4. **Plural -z** — optional; marks the **group containing** the referent, after the reference suffix.
+4. **Plural -sh** — optional; marks the **group containing** the referent, after the reference suffix (see [plurality.md](plurality.md)).
 
 ## The four suffixes
 
@@ -22,7 +22,7 @@ Every content word ends with a **reference suffix** — one of four final conson
 | **-n** | proper name | Definite / unique by nature (not “a John”) |
 | **-r** | pronoun | Definite reference to an already-introduced referent |
 
-A bare **-l** / **-m** word always introduces; it is never used to resume a prior referent. Resumption is always marked with **-r**. Anaphoric **-r** grammar lives in **[pronouns.md](pronouns.md)**.
+A bare **-l** / **-m** word always introduces; it is never used to resume a prior referent. Resumption is always marked with **-r**. Anaphoric **-r** grammar lives in **[pronouns.md](pronouns.md)**. The dictionary has separate entries for the literal (**-l**) and metaphorical (**-m**) sense of each word.
 
 ## Proper name (`-n`)
 
@@ -62,7 +62,7 @@ Depends on the subclass (see [utterance markers](language-reference.md#utterance
 
 * **Coordinators / linkers** (*and*, *but*, *however*, *therefore*) — Stay **-l** / **-m**; not names.
 * **Quotation / fence markers** — Brackets mark quoting; **-n** on the quote marker itself is unnecessary. Named material *inside* the quote takes **-n** on its own PoS (`/z/`…**-n**, etc.).
-* **Named discourse glue** — **-n** for titled section/agenda labels, official list-item names, and branded discourse frames. English parallels: **[Item Zero]**, **[Appendix A]** as a discourse cite, a fixed ritual segue name. Ordinary *firstly* stays **-l**. Aligns with [number `/x/`…**-n**](numbers.md#number-as-discourse-marker-by-marker) (titled / official item name).
+* **Named discourse glue** — **-n** for titled section/agenda labels, official list-item names, and branded discourse frames. Like `/x/`…**-r** on [pronouns](pronouns.md) (*going back to subject X* / thread resume), `/x/`…**-n** is **discourse navigation**: a **thread shift** — *let’s now talk about X* (opening or moving to that named topic), not clause aboutness. English parallels: **[Item Zero]**, **[Appendix A]** as a discourse cite, a fixed ritual segue name. Ordinary *firstly* stays **-l**. Aligns with [number `/x/`…**-n**](numbers.md#number-as-discourse-marker-by-marker) (titled / official item name).
 
 ### Borrowed and quoted forms
 
@@ -80,15 +80,13 @@ Foreign words, slang, and other non-lexicon surface forms still use [quotation b
 | `/j/` vocative | Address this named person, place, or title |
 | `/j/` interjection | This named formula or conventional call |
 | `/j/` clause force | *(not used)* |
-| `/x/` | This titled / official discourse label or list name (not ordinary *and* / *but*) |
+| `/x/` | This titled / official discourse label — thread shift (*let’s now talk about X*; not ordinary *and* / *but*) |
 
 Do **not** use **-n** for generic first mention (**-l** / **-m**) or for resuming a prior mention (**-r**).
 
-## Plural **-z**
+## Plural **-sh**
 
-Add **-z** after the reference suffix to mark **plural**: the **group containing** the referent. Example: `…r` refers to one noun; `…rz` refers to the group that includes that noun. The same **-z** works on full words (`…lz`, `…nz`, etc.).
-
-Allowed word-final clusters are the four reference suffixes plus **-z** (**-lz**, **-mz**, **-nz**, **-rz**). No other syllables end with a consonant, so word boundaries stay clear even when pauses are unreliable (as in singing). Details in [phonology.md](phonology.md#phonotactics).
+Plural grammar (**-sh** after the reference suffix; how it interacts with PoS and **-l** / **-m** / **-n** / **-r**) lives in **[plurality.md](plurality.md)**. Short form: `…r` is one referent; `…rsh` is the group that includes that referent. Allowed word-final clusters: **-lsh**, **-msh**, **-nsh**, **-rsh** — see [phonology.md](phonology.md#phonotactics).
 
 ## Number-word exception
 
