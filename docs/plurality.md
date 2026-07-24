@@ -138,7 +138,8 @@ Depends on subclass (see [utterance markers](language-reference.md#utterance-mar
 
 ### Discourse markers (`/x/`)
 
-* **Coordinators / linkers** (*and*, *but*, *however*) — Do **not** take **-sh**; they are glue, not plural referents.
+* **Word-level coordinators** ([**a** / **e** / **o** / **u**](coordination.md)) — No **-sh** (they have no reference suffix). Plurality is marked on each conjunct independently (`z-dogl a z-catlsh`).
+* **`/x/` linkers / fences** (*but*, *however*, …) — Do **not** take **-sh**; they are glue, not plural referents.
 * **Quotation / fence markers** — Do not pluralize the fence; plural material *inside* the quote marks **-sh** on its own words.
 * **Named discourse glue** — **-nsh** / **-rsh** when the discourse label is a plural titled set or a resume of plural thread labels (*Items Zero–Two* as one named block, if that is the designation). Ordinary *firstly* stays singular **-l**.
 
@@ -156,7 +157,8 @@ Aligns with number words: optional plural on a numeric referent uses the same **
 | `/j/` vocative | Address this group |
 | `/j/` interjection | (Rare) group / plural formula call |
 | `/j/` clause force | *(not used)* |
-| `/x/` coordinators / fences | *(not used)* |
+| `/x/` linkers / fences | *(not used)* |
+| bare **a** / **e** / **o** / **u** | *(not used — no reference suffix)* |
 | `/x/` named discourse label | Plural titled thread/label set or resume thereof |
 
 | Reference + **-sh** | Means… |

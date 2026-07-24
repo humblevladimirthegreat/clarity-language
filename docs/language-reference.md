@@ -76,7 +76,7 @@ Every sentence begins with an **utterance-frame** `/j/` cluster that includes **
 | /ɡ/ | adjective |
 | /w/ | adjective adjunct (modifies the previous `/ɡ/`) |
 | /h/ | adverb (mood / tense / evidentiality, adjuncts) |
-| x /ʒ/ | discourse marker (conjunctions, quotation markers) |
+| x /ʒ/ | discourse marker (sentence linkers, quotation markers, …) |
 | j /dʑ/ | utterance marker (clause force, vocative, interjection) |
 
 There is no dedicated indirect-object prefix. Recipients and beneficiaries (English *to* / *for*) are expressed with a complex adverb (`/h/` + `/b/`) plus an argument noun, the same pattern as other verb-level prepositional-phrase meanings.
@@ -158,15 +158,21 @@ Other speech acts (request, promise, wish, evaluative judgment, and so on) are n
 
 Content questions (*who* / *what* / *where*) use the [interrogative special pronoun](pronouns.md#special-pronouns) for the queried role and, for now, the same **polar question** force as yes/no questions.
 
+## Word-level coordination
+
+Bare **a** / **e** / **o** / **u** (and **a/e**, **a/o**) join sibling full words in the **same PoS slot** — *and*, exclusive *or* (exhaustive / non-exhaustive), *nor*, and inclusive *and/or* variants. Oxford style (coordinator only before the last item). No PoS prefix, no reference suffix. Details: **[coordination.md](coordination.md)**. Clause/sentence coordination and correlatives are not specified yet.
+
 ## Discourse markers (`/x/`)
 
-Marked with x /ʒ/. Used for **conjunctions** (*and* / *or* / *but*, etc.) and **quotation markers** (see below). The dictionary lists the specific forms. The same sound **x** also joins roots inside compound words (see [Phonotactics](phonology.md#phonotactics)); it is not used as an ordinary root consonant, so mid-word **x** always means “next root,” and word-initial **x** always means discourse marker.
+Marked with x /ʒ/. Used for **discourse glue** that is not word-level coordination: sentence linkers (*however*, *therefore*, *meanwhile*, *but*, …), **quotation markers** (see below), and related fences. The dictionary lists the specific forms. The same sound **x** also joins roots inside compound words (see [Phonotactics](phonology.md#phonotactics)); it is not used as an ordinary root consonant, so mid-word **x** always means “next root,” and word-initial **x** always means discourse marker.
+
+Word-level *and* / *or* / *nor* are **not** `/x/` — they are bare particles ([coordination.md](coordination.md)).
 
 `/x/` connects or fences discourse; it does **not** carry evidential or epistemic framing of the claim. Softeners that encode source-of-knowledge or claim strength stay `/h/` or `/w/` (see [Adverbs](#adverbs-h)). Contrast: *however* / *in other words* → `/x/`; *apparently* / *allegedly* → `/h/` or `/w/`.
 
 **Numbered list / enumeration markers** are `/x/` + [number word](numbers.md#number-as-discourse-marker-by-marker) (*point N:* neutral, *corroborating N:*, *independent N:*, *re item 12*). Marker vowel chooses independence framing (or cite-as-label); details live in numbers.md.
 
-**Not `/x/`:** English-style subordinators that relate a following clause to a slot in the main clause (*if*, *because*, *although*, *while*, *until*) — those use the [next-clause pronoun](pronouns.md#special-pronouns) plus a lexicon relation (usually `/h/` + `/b/`), not a discourse-marker prefix. `/x/` sentence linkers (*therefore*, *however*, *meanwhile*) and number enumeration markers do not fill a main-clause argument or adjunct slot.
+**Not `/x/`:** word-level coordinators ([coordination.md](coordination.md)); English-style subordinators that relate a following clause to a slot in the main clause (*if*, *because*, *although*, *while*, *until*) — those use the [next-clause pronoun](pronouns.md#special-pronouns) plus a lexicon relation (usually `/h/` + `/b/`), not a discourse-marker prefix. `/x/` sentence linkers (*therefore*, *however*, *meanwhile*) and number enumeration markers do not fill a main-clause argument or adjunct slot.
 
 ## Dependent Clauses
 
@@ -177,7 +183,7 @@ The next-clause pronoun takes whatever PoS prefix the slot needs:
 * **Complement / content clause** — usually a core argument. Example: *I told him that…* → next-clause as direct object (`/d/`) of *tell* (or another role the verb requires).
 * **Adverbial relation** (*because*, *if*, *although*, *while*, *until*, …) — a complex adverb: `/h/` relation word + `/b/` next-clause pronoun. The lexicon entry names the relation; there is **no** separate `/x/` subordinator for these.
 
-`/x/` is only for discourse glue that does **not** occupy a main-clause slot (coordinators, sentence linkers, quote/aside fences, [numbered enumeration](numbers.md#number-as-discourse-marker-by-marker)). Do not encode *because* / *if*-style subordination as `/x/`.
+`/x/` is only for discourse glue that does **not** occupy a main-clause slot (sentence linkers, quote/aside fences, [numbered enumeration](numbers.md#number-as-discourse-marker-by-marker)). Word-level *and* / *or* / *nor* are bare particles ([coordination.md](coordination.md)). Do not encode *because* / *if*-style subordination as `/x/`.
 
 ## Quotations
 
@@ -198,6 +204,10 @@ Pronoun grammar (anaphoric **-r** forms, special pronouns) lives in **[pronouns.
 # Numbers
 
 Numeral grammar (digit roots, engineering/scientific forms, ordinals, digit-strings, `/x/` enumeration, number-word shape) lives in **[numbers.md](numbers.md)**.
+
+# Word-level coordination
+
+Bare **a** / **e** / **o** / **u** (and **a/e**, **a/o**); Oxford-style lists: **[coordination.md](coordination.md)**.
 
 # Phonology and Phonotactics
 
