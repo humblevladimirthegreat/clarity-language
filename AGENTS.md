@@ -16,7 +16,7 @@ This repo is TypeScript + ANTLR tooling (`grammar/*.g4` → `src/generated/`). A
 | `docs/pronouns.md` | Pronoun grammar (linked from the language reference). |
 | `docs/plurality.md` | Plural grammar (**-sh** after the reference suffix; by PoS and reference suffix; linked from the language reference). |
 | `docs/reference-suffix.md` | Reference suffix grammar (**-l** / **-m** / **-n** / **-r**; linked from the language reference). |
-| `docs/coordination.md` | Phrase-level left fence (**zam**, **gam**, …; shared mods right after fence); left-open opener/`-r` for VP (`/v/`: **vam** / **var**) and clause (`/x/`); no bare word-level; **-l**/**-m**/**-n** = closed/open/named or soft, or exception/replacement on **e**; linked from the language reference. |
+| `docs/coordination.md` | Phrase-level left fence (**zam**, **gam**, …; shared mods right after fence); left-open opener/`-r` for VP (`/v/`: **vam** / **var**) and clause (`/x/`); no bare word-level; **-l**/**-m**/**-n** = closed/open/named or soft; **e** = priority ranking; linked from the language reference. |
 | `TODO.md` | Planned major revision notes (PoS prefixes, word-final consonants, pronoun/number rules, phonology). Fold into the reference, `phonology.md`, and `pronouns.md` as work proceeds. |
 | `docs/claritish-rules.js` | English “Claritish” regex enforcers (value tags, evidentiality, mindfulness noting, etc.). **To be ported** into Clarity (lexicon/grammar), not kept as an English overlay forever. |
 | `grammar/*.g4` | Existing ANTLR parsers for tooling experiments. **Do not change for now.** They may lag the reference; do not treat them as design authority. |
