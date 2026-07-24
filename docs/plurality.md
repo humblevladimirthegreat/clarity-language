@@ -139,6 +139,7 @@ Depends on subclass (see [utterance markers](language-reference.md#utterance-mar
 ### Discourse markers (`/x/`)
 
 * **Word-level coordinators** ([**a** / **e** / **o** / **u**](coordination.md)) — No **-sh** (they have no reference suffix). Plurality is marked on each conjunct independently (`z-dogl a z-catlsh`).
+* **Clause coordinators** ([`xal`](coordination.md#clause-level-coordination), …) — Do **not** take **-sh**; plurality stays on material inside each sentence.
 * **`/x/` linkers / fences** (*but*, *however*, …) — Do **not** take **-sh**; they are glue, not plural referents.
 * **Quotation / fence markers** — Do not pluralize the fence; plural material *inside* the quote marks **-sh** on its own words.
 * **Named discourse glue** — **-nsh** / **-rsh** when the discourse label is a plural titled set or a resume of plural thread labels (*Items Zero–Two* as one named block, if that is the designation). Ordinary *firstly* stays singular **-l**.
