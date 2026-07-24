@@ -1,10 +1,10 @@
 # Coordination
 
-This page is the source of truth for **phrase-level** (same-slot left fence), **VP-level**, and **clause-level** coordination, plus **in-clause revision** with prefix-less vowels + **-l** / **-m** / **-n**. There is **no** bare word-level **coordinator** series (lists still need a PoS prefix + ending). Correlatives (*both…and*, *either…or*) come later. Asymmetric discourse glue (*but*, *however*, *therefore*) is `/x/` but **not** the prefixed join series — see [language-reference.md](language-reference.md#discourse-markers-x). In-clause *including* / *rather* / *instead* / *except* use [revision](#in-clause-revision-bare-a--e--o--u) (**al** / **am** / **an** / **el** / … — ending required); sentence-level *instead* / *except* (claim-to-claim) stay other `/x/` roots when needed.
+This page is the source of truth for **phrase-level** (same-slot fence: left preferred, right close allowed), **VP-level**, and **clause-level** coordination, plus **in-clause revision** with prefix-less vowels + **-l** / **-m** / **-n**. There is **no** bare word-level **coordinator** series (lists still need a PoS prefix + ending). Correlatives (*both…and*, *either…or*) come later. Asymmetric discourse glue (*but*, *however*, *therefore*) is `/x/` but **not** the prefixed join series — see [language-reference.md](language-reference.md#discourse-markers-x). In-clause *including* / *rather* / *instead* / *except* use [revision](#in-clause-revision-bare-a--e--o--u) (**al** / **am** / **an** / **el** / … — ending required); sentence-level *instead* / *except* (claim-to-claim) stay other `/x/` roots when needed.
 
 PoS prefixes and ordinary word shape: [language-reference.md](language-reference.md). Reference suffixes: [reference-suffix.md](reference-suffix.md). Phonotactics for reserved coordinator roots: [phonology.md](phonology.md#phonotactics).
 
-**List shapes:** **Phrase-level** (NP / AP / `/b/` / `/w/` / `/h/`, and single-word siblings in those slots) uses a **left fence**: one prefixed coordinator, then optional shared modifiers, then juxtaposed conjuncts — **no** `-r`. **VP-level** and **clause-level** share **left-open opener / `-r` continue** — see [opener / `-r`](#opener-r-coordination). Do not borrow `-r` nesting into phrase-level chains.
+**List shapes:** **Phrase-level** (NP / AP / `/b/` / `/w/` / `/h/`, and single-word siblings in those slots) uses a **fence** with one prefixed coordinator and optional shared modifiers **immediately after** that coordinator — **no** `-r`. **Left fence** (coordinator before the conjuncts) is preferred; **right close** (coordinator after the conjuncts) is allowed for style or comedy. **VP-level** and **clause-level** share **left-open opener / `-r` continue** — see [opener / `-r`](#opener-r-coordination). Do not borrow `-r` nesting into phrase-level chains.
 
 Prefixed forms are **joiners** (boolean lists plus directional **priority ranking**), not only symmetric conjunctions. Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** are a separate **revision** series — see [below](#in-clause-revision-bare-a--e--o--u).
 
@@ -165,14 +165,18 @@ Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om*
 
 ---
 
-# Phrase-level coordination (left fence)
+# Phrase-level coordination (fence)
 <a id="np-level-coordination"></a>
 <a id="ap-level-coordination"></a>
 <a id="phrase-level-coordination"></a>
+<a id="left-fence"></a>
+<a id="right-close"></a>
 
-Phrase-level coordinators join **same-slot** conjuncts (single words or multi-word phrases) with a **left fence**: the prefixed coordinator comes **first**, then optional **shared** modifiers next to the fence, then the juxtaposed conjuncts. Same vowel series and endings as above (**-l** / **-m** / **-n** on **a** / **o** / **u** / **ao** / **e** — **not** `-r`, and not plural **-sh**). Slots differ only in **which prefix** the coordinator takes and **what counts as a conjunct**.
+Phrase-level coordinators join **same-slot** conjuncts (single words or multi-word phrases) with a **fence**: one prefixed coordinator plus optional **shared** modifiers **immediately after** that coordinator. Same vowel series and endings as above (**-l** / **-m** / **-n** on **a** / **o** / **u** / **ao** / **e** — **not** `-r`, and not plural **-sh**). Slots differ only in **which prefix** the coordinator takes and **what counts as a conjunct**.
 
-**Left fence — not VP/clause opener/`-r`.** One prefixed coordinator opens the list. No mid-chain particle, no `-r` continue. Do not write `zam A zar B` or `A zam B` for a flat phrase list — use `zam A B` (and `zam SHARED A B` when sharing modifiers).
+**Fence — not VP/clause opener/`-r`.** One prefixed coordinator per list. No mid-chain particle (`A zam B` is illegal), no `-r` continue, no double fence (`zam A B zam` is illegal). Do not write `zam A zar B` for a flat phrase list.
+
+**Placement:** **Left fence** (coordinator before the conjuncts) is **preferred**. **Right close** (coordinator after the conjuncts) is allowed for **style or comedy**. Shared modifiers stay **right after the coordinator** in either placement.
 
 ## Forms
 
@@ -191,28 +195,37 @@ Writing: `zal` / `zam` / `zan` / … / `zel` / `zem` / `zen`; same under `/d/`, 
 
 The prefix on the coordinator **must match** every conjunct head (`/z/` with `/z/`, `/ɡ/` with `/ɡ/`, and so on).
 
-## Shape (left fence)
+## Shape
+
+**Left fence** (preferred):
 
 ```
 P-COORD  ( SHARED )*  PHRASE  PHRASE  ( PHRASE )*
 ```
 
-- **P-COORD** — one of the prefixed forms above (`zam`, `dol`, `bem`, `gam`, `wam`, `ham`, …). Appears **only once**, **before** the conjuncts (and before any shared modifiers).
-- **SHARED** — optional material **immediately after** `P-COORD`, **before** the first conjunct. **Always** scopes over the **whole coordinated phrase** (NP: `/ɡ/` / `/w/` / complex `/ɡ/`+`/b/`; AP: `/w/`; `/w/`-slot and `/h/`-slot joins: further same-slot material only if the lexicon allows stacking on the join as a unit). Shared `/ɡ/` / `/w/` here sit **before** the heads they grade — the fence defines the host unit.
-- **PHRASE** — a conjunct: NP headed by `/z/`, `/d/`, or `/b/` (plus that head’s following local `/ɡ/` / `/w/` / `/b/` material); AP headed by `/ɡ/` (plus contiguous `/b/`, further `/ɡ/` on that `/b/`, and local `/w/`); or a single `/w/` / `/h/` word (plus `/h/`’s contiguous `/b/` when complex). Local modifiers stay **inside** their conjunct, after that conjunct’s head.
-- Two conjuncts: `P-COORD  PHRASE  PHRASE`. Three or more: `P-COORD  PHRASE  PHRASE  PHRASE`.
-- Single-word siblings use the same shape: `zam z-dogl z-catl` (*a dog and a cat* — open).
+**Right close** (style / comedy):
 
-**Priority** (`zel` / `zem` / `zen`, …): left-to-right rank — see [priority ranking](#priority-ranking-e).
+```
+PHRASE  PHRASE  ( PHRASE )*  P-COORD  ( SHARED )*
+```
+
+- **P-COORD** — one of the prefixed forms above (`zam`, `dol`, `bem`, `gam`, `wam`, `ham`, …). Appears **only once** per list: either **before** all conjuncts (left) or **after** all conjuncts (right) — not both, and not between conjuncts.
+- **SHARED** — optional material **immediately after** `P-COORD` in either placement. **Always** scopes over the **whole coordinated phrase** (NP: `/ɡ/` / `/w/` / complex `/ɡ/`+`/b/`; AP: `/w/`; `/w/`-slot and `/h/`-slot joins: further same-slot material only if the lexicon allows stacking on the join as a unit). Shared `/ɡ/` / `/w/` here sit next to the fence (before the heads they grade on the left; after the list on the right) — the fence defines the host unit.
+- **PHRASE** — a conjunct: NP headed by `/z/`, `/d/`, or `/b/` (plus that head’s following local `/ɡ/` / `/w/` / `/b/` material); AP headed by `/ɡ/` (plus contiguous `/b/`, further `/ɡ/` on that `/b/`, and local `/w/`); or a single `/w/` / `/h/` word (plus `/h/`’s contiguous `/b/` when complex). Local modifiers stay **inside** their conjunct, after that conjunct’s head.
+- Two conjuncts (left): `P-COORD  PHRASE  PHRASE`. Two (right): `PHRASE  PHRASE  P-COORD`. Three or more: same pattern with more `PHRASE` items on the conjunct side of `P-COORD`.
+- Single-word siblings: `zam z-dogl z-catl` or `z-dogl z-catl zam` (*a dog and a cat* — open).
+
+**Priority** (`zel` / `zem` / `zen`, …): left-to-right rank of the **spoken conjunct order** (before a right-close coordinator) — see [priority ranking](#priority-ranking-e).
 
 ### Scope fence (`P-COORD`)
 
-**Rule:** A modifier **immediately after** a phrase-level conjunction (`zam`, `gam`, `dam`, …), **before** the first conjunct, modifies the **entire coordinated phrase**.
+**Rule:** A modifier **immediately after** a phrase-level conjunction (`zam`, `gam`, `dam`, …) modifies the **entire coordinated phrase** — whether that conjunction is a left fence or a right close.
 
 - Modifiers **after a conjunct head** (and before the next matching-role head) belong to that conjunct only.
 - Modifiers in the **SHARED** slot scope over **all** conjuncts as one unit.
+- On a **right close**, do **not** put further matching-role conjunct heads after `P-COORD` / `SHARED`; the list of conjuncts is already complete to the left of `P-COORD`.
 
-Contrast:
+Contrast (left fence):
 
 - `zam z-dogl z-catl g-bigl` → *(dog) and (big cat)* — big follows the last head → last conjunct only
 - `zam g-bigl z-dogl z-catl` → *a big (dog and cat)* — big immediately after the fence → whole phrase
@@ -220,25 +233,36 @@ Contrast:
 - `gam w-veryl g-happyl g-proudl` → *very (happy and proud)* — `/w/` after `gam` grades the whole AP join
 - `gam g-happyl w-veryl g-proudl` → *(very happy) and (proud)* — `/w/` local to first `/ɡ/`
 
-Complex adjective on an NP bundle: `zam g-ofl b-Samn z-dogl z-catl` → *Sam’s (dog and cat)* — the complex `/ɡ/`+`/b/` in SHARED owns the whole join.
+Right close (same SHARED rule after the coordinator):
+
+- `z-dogl z-catl zam` → *a dog and a cat* (open) — coordinator closes the list
+- `z-dogl z-catl zam g-bigl` → *a big (dog and cat)* — shared after right-close `zam`
+- `z-dogl g-bigl z-catl zam` → *(big dog) and (cat)* — big local to dog; `zam` closes
+- `g-happyl g-proudl gam w-veryl` → *very (happy and proud)* — shared `/w/` after right-close `gam`
+
+Complex adjective on an NP bundle: `zam g-ofl b-Samn z-dogl z-catl` or `z-dogl z-catl zam g-ofl b-Samn` → *Sam’s (dog and cat)* — the complex `/ɡ/`+`/b/` in SHARED owns the whole join.
 
 ### End of list
 
-- **Leaving the role** — a following word with a **different** clause/role prefix that is not local modifier material ends the list (e.g. after a `/z/` join, `/d/`, `/v/`, `/h/` as clause adverb, `/j/`, `/x/`, …).
-- **Same-prefix absorb** — after `P-COORD`, every following matching-role head (plus its local modifiers) is a **conjunct** until the list ends. For AP `/ɡ/` on one host, that means you cannot stack an extra non-coordinated `/ɡ/` on the same noun after a `gam`… join; put further description in another sentence, or include it as another conjunct. Same absorb rule for `/w/` and `/h/` left-fence chains.
-- **Floating `/h/` inside an NP/AP/`/b/` join** — clause-level `/h/` (simple or `/h/`+`/b/`) is **transparent**: it does not end the list and is not a conjunct; a later matching-role head is still a conjunct. (VP-chain `/h/` scope is different — see [VP-level](#vp-level-coordination).)
+- **Left fence — same-prefix absorb** — after `P-COORD` (and any `SHARED`), every following matching-role head (plus its local modifiers) is a **conjunct** until the list ends. For AP `/ɡ/` on one host, that means you cannot stack an extra non-coordinated `/ɡ/` on the same noun after a `gam`… join; put further description in another sentence, or include it as another conjunct. Same absorb rule for `/w/` and `/h/` left-fence chains.
+- **Right close — lookback absorb** — matching-role heads (plus local modifiers) **immediately before** `P-COORD` are the conjuncts; clause-level floating `/h/` inside that stretch is transparent (below). After right-close `P-COORD` / `SHARED`, the coordinated phrase is finished — a later matching-role head is **not** another conjunct of this list.
+- **Leaving the role** — a following word with a **different** clause/role prefix that is not local modifier material (and not `SHARED` after the fence) ends the list (e.g. after a `/z/` join, `/d/`, `/v/`, `/h/` as clause adverb, `/j/`, `/x/`, …).
+- **Floating `/h/` inside an NP/AP/`/b/` join** — clause-level `/h/` (simple or `/h/`+`/b/`) is **transparent**: it does not end the list and is not a conjunct; a later matching-role head is still a conjunct (left absorb) or still part of the lookback stretch (right close). (VP-chain `/h/` scope is different — see [VP-level](#vp-level-coordination).)
 
 ### Examples (schematic)
 
 **NP**
 
 - `zam z-dogl g-bigl z-catl g-redl` — *(big dog) and (red cat)* — open; each color inside its conjunct
+- `z-dogl g-bigl z-catl g-redl zam` — same reading with right close
 - `zal z-dogl g-bigl z-birdl z-catl g-redl` — *(big dog), (bird), and (red cat)* — closed three-way NP list
 - `zam z-bookl g-onl b-tablel z-penl g-onl b-deskl` — *(book on the table) and (pen on the desk)*
 - `bam b-tablel b-shelfl` under one complex adjective — *on (the table and the shelf)*
 - `dam d-dogl g-bigl d-catl` — *(big dog) and (cat)* as **object** (open)
-- `dam g-bigl d-dogl d-catl` — *a big (dog and cat)* as object — shared after the fence
+- `dam g-bigl d-dogl d-catl` — *a big (dog and cat)* as object — shared after the left fence
+- `d-dogl d-catl dam g-bigl` — same shared reading with right close
 - `zel z-teal z-coffeel z-waterl` — *tea ≻ coffee ≻ water* (closed priority; prefer/else from context)
+- `z-teal z-coffeel z-waterl zel` — same priority ladder with right close
 - `zem z-dogl g-bigl z-catl g-redl` — *(big dog) ≻ (red cat)* (open priority)
 
 **AP**
@@ -246,24 +270,28 @@ Complex adjective on an NP bundle: `zam g-ofl b-Samn z-dogl z-catl` → *Sam’s
 - `gam g-happyl w-veryl g-proudl w-slightlyl` — *(very happy) and (slightly proud)* — each degree inside its conjunct
 - `gam g-onl b-tablel g-ofl b-Samn` — *(on the table) and (Sam’s)* — two complex APs on one host
 - `gal g-redl g-softl g-warml` — *red, soft, and warm* — closed three-way AP list (absorb-all; no further bare `/ɡ/` on that host after this join)
+- `g-redl g-softl g-warml gal` — same closed AP list with right close
 - `gan g-redl g-yellowl g-bluel` — *red, yellow, and blue* as the conventional primary-color bundle (named **-n**)
 - `gel w-veryl g-happyl g-proudl` — *very (happy ≻ proud)* — shared degree after the fence; closed priority on the AP
+- `g-happyl g-proudl gel w-veryl` — same with right close
 - `gen g-redl g-yellowl g-bluel` — conventional display order *red ≻ yellow ≻ blue* (named **-n**)
 
 **`/w/` / `/h/`**
 
 - `wam w-veryl w-recentl` on a preceding `/ɡ/` — *very and recently* (open adjunct chain) as one stack on that adjective
+- `w-veryl w-recentl wam` — same with right close
 - `ham h-quicklyl h-quietlyl` — *quickly and quietly* as one floating adverb unit (open)
+- `h-quicklyl h-quietlyl ham` — same with right close
 
 ## Constraints
 
 - **One slot** — the chain is a single subject, object, `/b/` argument, `/ɡ/` stack position, `/w/` stack, or `/h/` floating unit in the clause.
 - **Matching role prefix** on every conjunct head and on the coordinator.
-- **Coordinator first** — never after the last conjunct; never mid-chain before the last phrase.
-- **Shared modifiers** — only in the slot immediately after `P-COORD`; local modifiers stay after their own heads.
+- **One fence placement** — left (preferred) or right (style / comedy); never mid-chain between conjuncts; never both ends of the same list.
+- **Shared modifiers** — only in the slot immediately after `P-COORD` (left or right); local modifiers stay after their own heads.
 - **No `-r`**, no clause soft **-n**, no plural **-sh** on the coordinator.
 - **Not** verb+object packages — use [VP-level](#vp-level-coordination); **not** full sentences — those stay `/x/`…
-- **Not** mixed-PoS joins; correlatives; `/x/` sentence linkers (*however*, *therefore*), general adversative *but*, quotation fences, or [numbered enumeration](numbers.md#number-as-discourse-marker-by-marker). In-clause *including* / *rather* / *instead* / *except* are [bare revision](#in-clause-revision-bare-a--e--o--u), not this left-fence series. Phrase-level priority ranking **is** this series (`zel` / `zem` / `zen`, …).
+- **Not** mixed-PoS joins; correlatives; `/x/` sentence linkers (*however*, *therefore*), general adversative *but*, quotation fences, or [numbered enumeration](numbers.md#number-as-discourse-marker-by-marker). In-clause *including* / *rather* / *instead* / *except* are [bare revision](#in-clause-revision-bare-a--e--o--u), not this fence series. Phrase-level priority ranking **is** this series (`zel` / `zem` / `zen`, …).
 
 ## Reserved forms
 
@@ -276,7 +304,7 @@ Under `/z/`, `/d/`, `/b/`, `/ɡ/`, `/w/`, and `/h/`, the coordination vowel seri
 <a id="vowels--endings"></a>
 <a id="ending-senses-clause-coordinators"></a>
 
-**VP-level** (`/v/`) and **clause-level** (`/x/`) share one **left-open** list shape: the opener comes **first**, then the first conjunct, then **-r** before **every** further conjunct (including the second). **-l** / **-m** / soft **-n** open a new list; **-r** continues it. This is **not** [phrase-level left fence](#phrase-level-coordination) (phrase juxtaposes after the fence with no `-r`). Do not write `vam A B` without `var`, and do not put a conjunct before the opener.
+**VP-level** (`/v/`) and **clause-level** (`/x/`) share one **left-open** list shape: the opener comes **first**, then the first conjunct, then **-r** before **every** further conjunct (including the second). **-l** / **-m** / soft **-n** open a new list; **-r** continues it. This is **not** [phrase-level fence](#phrase-level-coordination) (phrase uses one fence left or right, juxtaposed conjuncts, no `-r`). Do not write `vam A B` without `var`, and do not put a conjunct before the opener.
 
 Join-type vowels are the same as elsewhere. Endings use soft **-n** and continue **-r**, not phrase named **-n**.
 

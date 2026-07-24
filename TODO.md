@@ -6,8 +6,7 @@
 
 Fold into `docs/language-reference.md` when decided; dictionary lists specific forms.
 
-- Sentence linkers: *therefore, however, meanwhile, in other words*, *but* (in-clause *instead* / *except* / *including* / *rather* are prefix-less **al**/**am**/**an**/… in `docs/coordination.md`; sentence-level *instead* / *except* still TBD if needed)
-- List / enumeration markers — **done for numbers:** `/x/` + number word in `docs/numbers.md` (neutral / corroborating / independent items, cite). Non-numeric list markers still TBD if needed.
+- Sentence linkers: *therefore, however, meanwhile, in other words, next, finally*, *but* (in-clause *instead* / *except* / *including* / *rather* are prefix-less **al**/**am**/**an**/… in `docs/coordination.md`; sentence-level *instead* / *except* still TBD if needed)
 - Aside / parenthesis fences (begin-aside, end-aside), parallel to quotation markers
 
 ## Clause operators — `/j/` force vs `/h/` (not `/x/`)
@@ -17,4 +16,4 @@ Fold into `docs/language-reference.md` when decided; dictionary lists specific f
 ## Still underspecified under existing PoS (no new prefix)
 
 - Quantifiers (*many*, *all*, *some*, …) — numerals/ordinals are in `docs/numbers.md`
-- Comparatives (*bigger than X*) as complex adjective (`/ɡ/`+`/b/`) or `/w/`
+- Comparatives (*bigger than X*) as complex adjective (`/ɡ/`+`/b/`) or `/w/`  (use the priority conjunction?)
