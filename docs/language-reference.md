@@ -162,7 +162,7 @@ Content questions (*who* / *what* / *where*) use the [interrogative special pron
 
 There is **no** bare word-level **coordinator** series. **`/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/`** + the coordination vowels + ending (`zam`, `dol`, `bem`, `gam`, `wam`, `ham`, …) join same-slot phrases or single-word siblings with a **left fence** (coordinator first; shared modifiers immediately after the fence — `zam g-bigl z-dogl z-catl` = *big (dog and cat)*; `gam w-veryl g-happyl g-proudl` = *very (happy and proud)*). **`/v/`** and **`/x/`** use shared **left-open opener / `-r` continue** (`vam A var B`, `xal A xar B`, …). On VP chains, `/h/` before the opener scopes over all VPs; `/h/` inside a conjunct scopes that VP only. Phrase **-l**/**-m**/**-n** = closed/open/named on every join vowel (**a** / **o** / **u** / **ao** / **e**); **e** is **priority ranking** (earlier ≻ later; preference vs fallback from context). Opener soft **-n** and continue **-r** replace named **-n**. Correlatives come later.
 
-**In-clause revision:** prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** (**-l** / **-m** / **-n** required: closed/open B-side or named/conventional; bare **a** / **e** / **o** / **u** illegal) are binary same-slot operators (*including* / *rather* / *instead* / *except*) inside one clause — not list joiners and not sentence linkers. Details: **[coordination.md](coordination.md)** (joiners and [revision](coordination.md#in-clause-revision-bare-a--e--o--u)).
+**In-clause revision:** prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** (**-l** / **-m** / **-n** required: closed/open right-hand side or named/conventional; bare **a** / **e** / **o** / **u** illegal) revise a fixed same-slot **A** with one or more right-hand sides in parallel (`A am B ul C` = including B and except C; not nested). Not list joiners and not sentence linkers. Details: **[coordination.md](coordination.md)** (joiners and [revision](coordination.md#in-clause-revision-bare-a--e--o--u)).
 
 ## Discourse markers (`/x/`)
 
@@ -209,7 +209,7 @@ Numeral grammar (digit roots, engineering/scientific forms, ordinals, digit-stri
 
 # Phrase-level, VP-level, and clause-level coordination
 
-Phrase-level **zam** / **gam** / … (left fence; shared modifiers immediately after the fence); [opener / `-r`](coordination.md#opener-r-coordination) for VP **vam** / **var** / … (left-open; `/h/` before opener = all VPs) and clause `/x/` + vowel + ending (soft **-n** ≠ named **-n**); prefix-less **al** / **am** / **an** / **el** / … (**-l** / **-m** / named **-n** required) = in-clause revision (*including* / *rather* / *instead* / *except*): **[coordination.md](coordination.md)**. No bare word-level coordinators.
+Phrase-level **zam** / **gam** / … (left fence; shared modifiers immediately after the fence); [opener / `-r`](coordination.md#opener-r-coordination) for VP **vam** / **var** / … (left-open; `/h/` before opener = all VPs) and clause `/x/` + vowel + ending (soft **-n** ≠ named **-n**); prefix-less **al** / **am** / **an** / **el** / … (**-l** / **-m** / named **-n** required; parallel chains on fixed A) = in-clause revision (*including* / *rather* / *instead* / *except*): **[coordination.md](coordination.md)**. No bare word-level coordinators.
 
 # Phonology and Phonotactics
 

@@ -69,7 +69,7 @@ There are **no** bare (prefix-less) **coordinators**. Prefixed joiners always ha
 <a id="bare-revision"></a>
 <a id="in-clause-revision"></a>
 
-Prefix-less vowel + **-l** / **-m** / **-n** forms are **binary revision** operators inside one clause. They are **not** coordinators: they do not open lists, take **-r**, or join full sentences. An ending is **required**: **-l** / **-m** mark **completeness of the B-side**; **-n** marks a **named / conventional** revision (same mnemonic as phrase-level join **-n**, not opener soft **-n**).
+Prefix-less vowel + **-l** / **-m** / **-n** forms are **revision** operators inside one clause. Each `REV` pairs a fixed left side **A** with one right-hand side. They are **not** coordinators: they do not take **-r**, and they do not join full sentences. An ending is **required**: **-l** / **-m** mark **completeness of that right-hand side**; **-n** marks a **named / conventional** revision (same mnemonic as phrase-level join **-n**, not opener soft **-n**).
 
 ### Meanings (vowel)
 
@@ -84,15 +84,15 @@ Mnemonics track the join series loosely: **a** additive membership, **e** direct
 
 ### Endings — required
 
-Every revision word **must** take **-l**, **-m**, or **-n**; unmarked **a** / **e** / **o** / **u** are not legal. **-l** / **-m** answer: *is B the full story of this include / except / replace / rephrase?* — not whether A is complete. **-n** is an alternative to **-l** / **-m**, not a third completeness tier and not stackable with them.
+Every revision word **must** take **-l**, **-m**, or **-n**; unmarked **a** / **e** / **o** / **u** are not legal. **-l** / **-m** answer: *is this right-hand side the full story of this include / except / replace / rephrase?* — not whether A is complete. **-n** is an alternative to **-l** / **-m**, not a third completeness tier and not stackable with them on the same particle.
 
 | Ending | Form | Sense |
 |--------|------|--------|
-| **-l** | `al` / `el` / `ol` / `ul` | **Closed** — B is exhaustive for this revision: including *only* these · except *only* these · B fully replaces A · B is the precise reading. |
-| **-m** | `am` / `em` / `om` / `um` | **Open** — B is non-exhaustive: including B *among others* · except B *(and maybe more)* · B is *a* replacement · B is *a* better wording. |
-| **-n** | `an` / `en` / `on` / `un` | **Named / conventional** — A (and/or the A–B revision) is invoked as an established titled, formulaic, or canonical frame (*the primary colors, including red*; *RGB except blue*; a stock *tea→coffee* swap; a conventional *happy, or rather content* rephrase). Completeness is whatever that designation already fixes. |
+| **-l** | `al` / `el` / `ol` / `ul` | **Closed** — that right-hand side is exhaustive for this revision step: including *only* these · except *only* these · B fully replaces A · B is the precise reading. |
+| **-m** | `am` / `em` / `om` / `um` | **Open** — that right-hand side is non-exhaustive: including B *among others* · except B *(and maybe more)* · B is *a* replacement · B is *a* better wording. |
+| **-n** | `an` / `en` / `on` / `un` | **Named / conventional** — A (and/or this A–side revision) is invoked as an established titled, formulaic, or canonical frame (*the primary colors, including red*; *RGB except blue*; a stock *tea→coffee* swap; a conventional *happy, or rather content* rephrase). Completeness is whatever that designation already fixes. |
 
-Same mnemonic as phrase-level [named **-n**](#named--conventional-ending-phrase-level-all-join-vowels) and content-word [proper name **-n**](reference-suffix.md#proper-name--n): definite by established label. **Not** opener soft **-n** (*and then…* / tentative reconstruction). No **-r** (not a list continue). When unsure between closed and open, prefer **-m**; use **-n** when you are naming a conventional frame rather than composing an inventory.
+Same mnemonic as phrase-level [named **-n**](#named--conventional-ending-phrase-level-all-join-vowels) and content-word [proper name **-n**](reference-suffix.md#proper-name--n): definite by established label. **Not** opener soft **-n** (*and then…* / tentative reconstruction). No **-r** (multi-side revision uses [parallel chains](#revision-chains-parallel-on-a), not a continue particle). When unsure between closed and open, prefer **-m**; use **-n** when you are naming a conventional frame rather than composing an inventory.
 
 | | **-l** | **-m** | **-n** |
 |--|--------|--------|--------|
@@ -104,29 +104,49 @@ Same mnemonic as phrase-level [named **-n**](#named--conventional-ending-phrase-
 ### Shape and scope
 
 ```
-SIDE  REV  SIDE
+A  REV  B
+A  REV₁  B  REV₂  C  ( REVᵢ  SIDE )*
 ```
 
 **REV** is a prefix-less vowel + **-l**, **-m**, or **-n** (`ol`, `om`, `on`, `ul`, …) — never the bare vowel alone.
 
-- **In-clause only** — both sides sit in the **same clause**. Do not use revision to link full sentences or to revise a prior sentence’s claim; that stays other `/x/` discourse roots.
-- **Same slot** — both sides match in role: both subject NPs (`/z/`), both objects (`/d/`), both `/b/` arguments, both `/ɡ/` APs (plus local material), both `/w/` or both `/h/` units, or both VPs (verb ± that verb’s `/d/`). Mixed slots are illegal (`z-… ol d-…`).
-- **Exactly two sides** — one **REV** between them. No three-way chains, no `-r` continue, no left-fence shared-modifier slot on the particle.
-- **Always binary in the clause** — no unary “instead of what was just said”; repeat material or use a pronoun for the left side, or use a later `/x/` form for cross-sentence repair.
-- **No nesting (v1)** — do not stack revisions (`A ol B em C`, `(A ol B) um C`). One revision per pair; further repair is a new clause or a coordinated structure whose conjuncts may each contain at most one revision.
-- **Inside a coordinated list** — allowed **inside** a conjunct as local repair, not as a substitute for the coordinator (`zam` / `vam` / …). **Binding:** **REV** takes the immediately preceding same-slot side and the immediately following same-slot side as its pair, tighter than list absorb — so `zam z-dogl ol z-catl z-birdl` = *(dog instead of cat) and bird*, not a three-way *and* with a stray **ol**.
+- **In-clause only** — A and every right-hand side sit in the **same clause**. Do not use revision to link full sentences or to revise a prior sentence’s claim; that stays other `/x/` discourse roots.
+- **Same slot** — A and every right-hand side match in role: all subject NPs (`/z/`), all objects (`/d/`), all `/b/` arguments, all `/ɡ/` APs (plus local material), all `/w/` or all `/h/` units, or all VPs (verb ± that verb’s `/d/`). Mixed slots are illegal (`z-… ol d-…`).
+- **Fixed A, one or more right-hand sides** — the first side is **A**; each **REV** introduces the next right-hand side. No unary “instead of what was just said”; repeat material or use a pronoun for A, or use a later `/x/` form for cross-sentence repair. No left-fence shared-modifier slot on the particle; no **-r**.
+- **Inside a coordinated list** — allowed **inside** a conjunct as local repair, not as a substitute for the coordinator (`zam` / `vam` / …). **Binding:** a revision chain starting at A consumes following same-slot sides paired by **REV** particles, tighter than list absorb — so `zam z-dogl ol z-catl z-birdl` = *(dog instead of cat) and bird*, and `zam z-teaml am z-Samn ul z-Lean z-birdl` = *(team including Sam, except Lea) and bird*.
+
+### Revision chains (parallel on A)
+<a id="revision-chains-parallel-on-a"></a>
+
+A chain `A REV₁ B REV₂ C …` is **not** right-associative nesting and **not** successive rewriting of an intermediate result. Every `REVᵢ` applies **in parallel to the same A**, each with its own right-hand side. Vowels and endings may **mix**; each particle keeps its own closed/open/named reading for **its** right-hand side.
+
+| Chain | Reading |
+|-------|---------|
+| `A am B am C` | A including B and including C (both open) |
+| `A al B al C` | A including only B and only C (each closed for its own highlight; together = those exhaustive includes) |
+| `A am B ul C` | A including B (open), **and** except only C (closed) |
+| `A ul B om C` | A except only B, **and** C as a replacement for A |
+| `A an B un C` | named A including B, **and** except C from that named frame |
+
+Not the nested English parse *including (B except C)*. For that, put the inner revision **inside** one side (e.g. the B-side is itself a revised phrase), not as a second **REV** in the chain.
+
+Same-vowel repeats are just the parallel rule with identical particles (`A am B am C` = multi-include under A). There is **no** separate **-r** continue form.
 
 ### Examples (schematic)
 
 - `z-animalsh am z-dogl` — *animals, including a dog among others* (open)
+- `z-animalsh am z-dogl am z-catl` — *animals, including a dog and a cat among others* (parallel multi-include)
 - `z-toolsh al z-hammerl` — *tools, including only a hammer* (closed — B exhausts the highlight)
 - `z-primary-colorsh an z-redl` — *the primary colors, including red* (named frame)
 - `z-teaml ul z-Samn` — *the team except only Sam* (closed sole exception)
 - `z-teaml um z-Samn` — *the team except Sam (and maybe others)* (open)
+- `z-teaml am z-Samn ul z-Lean` — *the team, including Sam, except only Lea* (mixed parallel)
 - `z-RGBn un z-bluel` — *RGB except blue* (named conventional set)
+- `z-RGBn un z-redl un z-bluel` — *RGB except red and except blue* (named; parallel multi-except)
 - `d-teal ol d-coffeel` — *coffee fully replaces tea* (closed)
 - `d-teal om d-coffeel` — *coffee as a replacement for tea* (open)
 - `d-teal on d-coffeel` — *the stock tea→coffee swap* (named/conventional)
+- `d-teal ol d-coffeel ol d-waterl` — *coffee and water fully replace tea* (parallel multi-instead)
 - `g-happyl el g-contentl` — *content* as the precise reading (closed)
 - `g-happyl em g-contentl` — *happy, or rather content* as a better wording (open)
 - `g-happyl en g-contentl` — conventional *happy → content* rephrase (named)
@@ -137,7 +157,7 @@ SIDE  REV  SIDE
 
 - **Not** a list joiner — use prefixed coordination for *and* / *or* / *nor* / *and/or* / priority.
 - **Not** sentence-level *instead* / *except* / *but* — those remain other `/x/` linkers when claims (not slot-mates) are related.
-- **Not** mixed-PoS, not cross-clause, not unary, not nested; ending **-l**, **-m**, or **-n** required; no **-r** / plural **-sh** on the particle; no bare **a** / **e** / **o** / **u**; **-n** is named/conventional only (not soft packaging).
+- **Not** mixed-PoS, not cross-clause, not unary; ending **-l**, **-m**, or **-n** required; no **-r** / plural **-sh** on the particle; no bare **a** / **e** / **o** / **u**; **-n** is named/conventional only (not soft packaging). Chains are **parallel on A**, not nested `A REV (B REV C)`.
 
 ### Reserved forms
 
