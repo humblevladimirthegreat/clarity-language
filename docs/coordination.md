@@ -129,7 +129,12 @@ The letters **-l** / **-m** / **-n** here are the same inventory as [reference s
 
 Phrase-level coordinators join **multi-word phrases** in one slot, using the **same vowel series and endings** as word-level (**-l** / **-m** / **-n** on **a** / **o** / **u** / **ao**; **-l** / **-m** on **e** — **not** **-r**, and not plural **-sh**). NP and AP differ only in **which prefix** the coordinator takes and **what counts as a conjunct**; the chain shape is identical.
 
-**Final coordinator — not word-level Oxford, not VP/clause opener/`-r`.** All conjuncts are juxtaposed; **one** prefixed coordinator appears **after the last conjunct**. Material **after** that coordinator is shared over the whole join; material **before** it stays inside whichever conjunct owns it (by head boundaries). No leading opener, no mid-chain particle, no **-r** continue. Do not write `zam A zar B` or `gam A gar B` for a flat list; that pattern is [opener / `-r`](#opener-r-coordination) only. Do not write word-level-style `A zam B` for phrase joins — use `A B zam`.
+**Final coordinator — not word-level Oxford, not VP/clause opener/`-r`.** All conjuncts are juxtaposed; **one** prefixed coordinator appears **after the last conjunct**. That coordinator is the **scope fence**:
+
+- **After the conjunction** — any modifier (NP: `/ɡ/` / `/w/` / complex `/ɡ/`+`/b/`; AP: `/w/`) applies to the **whole coordinated phrase**, not only the last conjunct.
+- **Before the conjunction** — modifiers stay inside whichever conjunct owns them (they follow that conjunct’s head as usual).
+
+No leading opener, no mid-chain particle, no **-r** continue. Do not write `zam A zar B` or `gam A gar B` for a flat list; that pattern is [opener / `-r`](#opener-r-coordination) only. Do not write word-level-style `A zam B` for phrase joins — use `A B zam`.
 
 ## Forms
 
@@ -154,7 +159,7 @@ PHRASE  PHRASE  ( PHRASE )*  P-COORD  ( SHARED )*
 
 - **PHRASE** — either an **NP** headed by `/z/`, `/d/`, or `/b/` (plus that head’s following `/ɡ/` / `/w/` / `/b/` material), or an **AP** headed by `/ɡ/` (plus that head’s contiguous `/b/` argument, further `/ɡ/` on that `/b/`, and `/w/` stacks). A new head with the matching role prefix starts the **next** conjunct (for APs: a new `/ɡ/` head, not a `/w/` on the previous one). Each phrase’s local modifiers sit **inside** that phrase — still **before** `P-COORD`.
 - **P-COORD** — one of the prefixed forms above (`zam`, `dol`, `bem`, `gam`, …). Appears **only once**, **after** the last phrase.
-- **SHARED** — optional material after `P-COORD` that scopes over the **entire** join (NP: `/ɡ/` / `/w/` / complex `/ɡ/`+`/b/`; AP: `/w/`).
+- **SHARED** — optional material **after** `P-COORD`. **Always** scopes over the **whole coordinated phrase** (all conjuncts), never the last conjunct alone (NP: `/ɡ/` / `/w/` / complex `/ɡ/`+`/b/`; AP: `/w/`).
 - Two conjuncts: `PHRASE  PHRASE  P-COORD`. Three or more: `PHRASE  PHRASE  PHRASE  P-COORD`.
 
 **Exception / replacement** (`zel` / `zem`, `del` / `dem`, `bel` / `bem`, `gel` / `gem`) keep the same directional readings as word-level **el** / **em**, with the **last** phrase as the special conjunct: `A B zel` → *A but not B*; `A B C zel` → *A and B, except C*; `A B zem` → *B instead of A*; `A B C zem` → *C instead of A and B*.
@@ -164,27 +169,27 @@ PHRASE  PHRASE  ( PHRASE )*  P-COORD  ( SHARED )*
 Use phrase-level when either holds:
 
 1. **Multi-word conjuncts** — at least one conjunct is head + modifier / argument material (bare word-level allows **single words** only).
-2. **Shared modifiers over the join** — material **after** the prefixed coordinator scopes over the **coordinated phrase as one unit** (NP: shared `/ɡ/` / `/w/`; AP: shared `/w/`). Bare cannot do that: a post-chain modifier on `am` attaches only to the last word.
+2. **Shared modifiers over the join** — a modifier **after** the phrase-level conjunction applies to the **whole coordinated phrase** (NP: `/ɡ/` / `/w/`; AP: `/w/`). Bare cannot do that: a modifier after `am` attaches only to the last word.
 
 Bare `am` still joins single-word siblings in any PoS slot. Prefer bare when both of the above are unnecessary.
 
 ### Scope fence (`P-COORD`)
 
-The prefixed coordinator is the **scope fence**:
+**Rule:** A modifier **immediately after** a phrase-level conjunction (`zam`, `gam`, `dam`, …) modifies the **entire coordinated phrase**. It does **not** attach only to the last conjunct.
 
-- Modifiers **before** `P-COORD` belong to the conjunct whose head they follow (last-only when they follow the last head).
-- Modifiers **after** `P-COORD` scope over the **entire** join.
+- Modifiers **before** `P-COORD` belong to the conjunct whose head they follow (including on the last conjunct: still local to that item only).
+- Modifiers **after** `P-COORD` scope over **all** conjuncts as one unit.
 
 Contrast:
 
-- `z-dogl z-catl g-bigl zam` → *(dog) and (big cat)* — open; big inside the last conjunct
-- `z-dogl z-catl zam g-bigl` → *a big (dog and cat)* — open; shared adjective after the fence
+- `z-dogl z-catl g-bigl zam` → *(dog) and (big cat)* — big is **before** the conjunction → last conjunct only
+- `z-dogl z-catl zam g-bigl` → *a big (dog and cat)* — big is **after** the conjunction → whole phrase
 - `z-dogl g-bigl am z-catl` → word-level: *a big dog and a cat* (big on dog only)
-- `z-dogl am z-catl g-bigl` → word-level: *a dog and a big cat* (big on cat only; bare has no shared-after-fence option)
-- `g-happyl g-proudl gam w-veryl` → *very (happy and proud)* — shared degree after the fence
+- `z-dogl am z-catl g-bigl` → word-level: *a dog and a big cat* (big on cat only; bare has no whole-phrase-after-conjunction reading)
+- `g-happyl g-proudl gam w-veryl` → *very (happy and proud)* — `/w/` after `gam` grades the whole AP join
 - `g-happyl am g-proudl w-veryl` → word-level: *happy and very proud* (`/w/` on last `/ɡ/` only)
 
-Complex adjective on an NP bundle: `z-dogl z-catl zam g-ofl b-Samn` → *Sam’s (dog and cat)*.
+Complex adjective on an NP bundle: `z-dogl z-catl zam g-ofl b-Samn` → *Sam’s (dog and cat)* — the complex `/ɡ/`+`/b/` after `zam` owns the whole join.
 
 ### Examples (schematic)
 
@@ -211,6 +216,7 @@ Complex adjective on an NP bundle: `z-dogl z-catl zam g-ofl b-Samn` → *Sam’s
 - **One slot** — the chain is a single subject, object, `/b/` argument, or `/ɡ/` stack position in the clause.
 - **Matching role prefix** on every conjunct head and on the coordinator.
 - **Coordinator after the last conjunct** — never mid-chain before the last phrase (that slot is word-level bare only).
+- **Modifiers after the coordinator** — apply to the **whole phrase**; local modifiers stay before the coordinator, after their own heads.
 - **No `-r`**, no clause soft **-n**, no plural **-sh** on the coordinator.
 - **Not** for `/w/`-only stacks without `/ɡ/` heads, verb+object packages, `/h/`, or mixed-PoS joins — those stay word-level, use [VP-level](#vp-level-coordination), or [clause coordination](#clause-level-coordination).
 - **Not** full sentences — those stay `/x/`…

@@ -160,7 +160,7 @@ Content questions (*who* / *what* / *where*) use the [interrogative special pron
 
 ## Word-level, phrase-level, and VP-level coordination
 
-**al** / **am** / **an** / **ol** / **om** / **on** / **ul** / **um** / **un** / **aol** / **aom** / **aon** / **el** / **em** join sibling full words in the **same PoS slot** (Oxford: coordinator before the last). **`/z/` `/d/` `/b/` `/ɡ/`** + the same vowels + ending (`zam`, `dol`, `bem`, `gam`, …) join **noun or adjective phrases** (final prefixed coordinator after the last conjunct; `g-happyl g-proudl gam w-veryl` = *very (happy and proud)*). **`/v/`** and **`/x/`** + the same series use shared **opener / `-r` continue** (not Oxford): VP under one subject (`vam`, `var`, …; `/h/` clause-external over all VPs); clauses as discourse markers (`xal`, `xam`, `xan`, `xel`, `xem`, …). Word/phrase **-l**/**-m**/**-n** = closed/open/named; on **e**, **-l**/**-m** = exception/replacement. Opener soft **-n** and continue **-r** replace named **-n**. Correlatives come later. Details: **[coordination.md](coordination.md)**.
+**al** / **am** / **an** / **ol** / **om** / **on** / **ul** / **um** / **un** / **aol** / **aom** / **aon** / **el** / **em** join sibling full words in the **same PoS slot** (Oxford: coordinator before the last). **`/z/` `/d/` `/b/` `/ɡ/`** + the same vowels + ending (`zam`, `dol`, `bem`, `gam`, …) join **noun or adjective phrases** (final prefixed coordinator after the last conjunct; a modifier **after** that conjunction applies to the **whole phrase** — `z-dogl z-catl zam g-bigl` = *big (dog and cat)*; `g-happyl g-proudl gam w-veryl` = *very (happy and proud)*). **`/v/`** and **`/x/`** + the same series use shared **opener / `-r` continue** (not Oxford): VP under one subject (`vam`, `var`, …; `/h/` clause-external over all VPs); clauses as discourse markers (`xal`, `xam`, `xan`, `xel`, `xem`, …). Word/phrase **-l**/**-m**/**-n** = closed/open/named; on **e**, **-l**/**-m** = exception/replacement. Opener soft **-n** and continue **-r** replace named **-n**. Correlatives come later. Details: **[coordination.md](coordination.md)**.
 
 ## Discourse markers (`/x/`)
 
@@ -207,7 +207,7 @@ Numeral grammar (digit roots, engineering/scientific forms, ordinals, digit-stri
 
 # Word-level, phrase-level, and VP-level coordination
 
-Word-level **al** / **am** / … (Oxford, before last); phrase-level **zam** / **gam** / … (final coordinator after last conjunct; shared mods after the fence); [opener / `-r`](coordination.md#opener-r-coordination) for VP **vam** / **var** / … (`/h/` clause-external) and clause `/x/` + vowel + ending (soft **-n** ≠ named **-n**): **[coordination.md](coordination.md)**.
+Word-level **al** / **am** / … (Oxford, before last); phrase-level **zam** / **gam** / … (final coordinator after last conjunct; modifiers after it apply to the whole phrase); [opener / `-r`](coordination.md#opener-r-coordination) for VP **vam** / **var** / … (`/h/` clause-external) and clause `/x/` + vowel + ending (soft **-n** ≠ named **-n**): **[coordination.md](coordination.md)**.
 
 # Phonology and Phonotactics
 
