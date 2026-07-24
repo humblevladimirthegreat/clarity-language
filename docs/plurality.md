@@ -139,8 +139,7 @@ Depends on subclass (see [utterance markers](language-reference.md#utterance-mar
 ### Discourse markers (`/x/`)
 
 * **Word-level coordinators** ([**al** / **am** / **an** / **el** / **em** / …](coordination.md)) — No **-sh** (**-l** / **-m** / **-n** ending only). Plurality is marked on each conjunct independently (`z-dogl am z-catlsh`).
-* **NP-level coordinators** ([`zam`](coordination.md#np-level-coordination), `dal`, …) — No **-sh** on the coordinator; plurality stays on each NP conjunct (or on shared post-chain material when that material itself takes **-sh**).
-* **AP-level coordinators** ([`gam`](coordination.md#ap-level-coordination), …) — No **-sh** on the coordinator; plurality stays on each AP conjunct or on shared post-chain `/w/` when that adjunct takes **-sh**.
+* **NP- / AP-level coordinators** ([`zam`](coordination.md#np-level-coordination), `dal`, [`gam`](coordination.md#ap-level-coordination), …) — No **-sh** on the coordinator; plurality stays on each phrase conjunct (or on shared post-chain material when that material itself takes **-sh**).
 * **VP-level coordinators** ([`vam`](coordination.md#vp-level-coordination), `var`, …) — No **-sh** on the coordinator; plurality stays on material inside each VP conjunct.
 * **Clause coordinators** ([`xal`](coordination.md#clause-level-coordination), …) — Do **not** take **-sh**; plurality stays on material inside each sentence.
 * **`/x/` linkers / fences** (*but*, *however*, …) — Do **not** take **-sh**; they are glue, not plural referents.
@@ -163,8 +162,7 @@ Aligns with number words: optional plural on a numeric referent uses the same **
 | `/j/` clause force | *(not used)* |
 | `/x/` linkers / fences | *(not used)* |
 | bare **al** / **am** / **an** / **el** / **em** / … | *(not used — ending only, no **-sh**)* |
-| `/z/` `/d/` `/b/` NP coordinators (`zam`, …) | *(not used — ending only, no **-sh**)* |
-| `/ɡ/` AP coordinators (`gam`, …) | *(not used — ending only, no **-sh**)* |
+| `/z/` `/d/` `/b/` `/ɡ/` phrase coordinators (`zam`, `gam`, …) | *(not used — ending only, no **-sh**)* |
 | `/v/` VP coordinators (`vam`, `var`, …) | *(not used — ending only, no **-sh**)* |
 | `/x/` named discourse label | Plural titled thread/label set or resume thereof |
 
