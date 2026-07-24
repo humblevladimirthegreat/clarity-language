@@ -160,13 +160,13 @@ Content questions (*who* / *what* / *where*) use the [interrogative special pron
 
 ## Word-level, phrase-level, and VP-level coordination
 
-**al** / **am** / **an** / **ol** / **om** / **on** / **ul** / **um** / **un** / **aol** / **aom** / **aon** / **el** / **em** join sibling full words in the **same PoS slot** (Oxford style). **`/z/` `/d/` `/b/` `/ɡ/`** + the same vowels + ending (`zam`, `dol`, `bem`, `gam`, …) join **noun or adjective phrases** (Oxford; `g-happyl gam g-proudl w-veryl` = *very (happy and proud)*). **`/v/`** and **`/x/`** + the same series use shared **opener / `-r` continue** (not Oxford): VP under one subject (`vam`, `var`, …; `/h/` clause-external over all VPs); clauses as discourse markers (`xal`, `xam`, `xan`, `xel`, `xem`, …). Oxford **-l**/**-m**/**-n** = closed/open/named; on **e**, **-l**/**-m** = exception/replacement. Opener soft **-n** and continue **-r** replace Oxford named **-n**. Correlatives come later. Details: **[coordination.md](coordination.md)**.
+**al** / **am** / **an** / **ol** / **om** / **on** / **ul** / **um** / **un** / **aol** / **aom** / **aon** / **el** / **em** join sibling full words in the **same PoS slot** (Oxford: coordinator before the last). **`/z/` `/d/` `/b/` `/ɡ/`** + the same vowels + ending (`zam`, `dol`, `bem`, `gam`, …) join **noun or adjective phrases** (final prefixed coordinator after the last conjunct; `g-happyl g-proudl gam w-veryl` = *very (happy and proud)*). **`/v/`** and **`/x/`** + the same series use shared **opener / `-r` continue** (not Oxford): VP under one subject (`vam`, `var`, …; `/h/` clause-external over all VPs); clauses as discourse markers (`xal`, `xam`, `xan`, `xel`, `xem`, …). Word/phrase **-l**/**-m**/**-n** = closed/open/named; on **e**, **-l**/**-m** = exception/replacement. Opener soft **-n** and continue **-r** replace named **-n**. Correlatives come later. Details: **[coordination.md](coordination.md)**.
 
 ## Discourse markers (`/x/`)
 
 Marked with x /ʒ/. Used for **discourse glue** that is not word-level coordination: sentence linkers (*however*, *therefore*, *meanwhile*, *but*, …), **quotation markers** (see below), and related fences. The dictionary lists the specific forms. The same sound **x** also joins roots inside compound words (see [Phonotactics](phonology.md#phonotactics)); it is not used as an ordinary root consonant, so mid-word **x** always means “next root,” and word-initial **x** always means discourse marker.
 
-Word-level *and* / *or* / *nor* / *except* / *instead* are **not** `/x/` — they are bare particles with **-l** / **-m** / **-n** endings ([coordination.md](coordination.md)). Phrase-level uses `/z/` `/d/` `/b/` `/ɡ/` (`zam`, `gam`, …) — Oxford. VP-level uses `/v/` (`vam`, `var`, …) — opener / **-r**, like clauses. Clause-level forms **are** `/x/` + the same vowels + ending (`xal`, `xel`, `xem`, …) — see [coordination.md](coordination.md#clause-level-coordination).
+Word-level *and* / *or* / *nor* / *except* / *instead* are **not** `/x/` — they are bare particles with **-l** / **-m** / **-n** endings ([coordination.md](coordination.md)). Phrase-level uses `/z/` `/d/` `/b/` `/ɡ/` (`zam`, `gam`, …) — final coordinator after the last conjunct. VP-level uses `/v/` (`vam`, `var`, …) — opener / **-r**, like clauses. Clause-level forms **are** `/x/` + the same vowels + ending (`xal`, `xel`, `xem`, …) — see [coordination.md](coordination.md#clause-level-coordination).
 
 `/x/` connects or fences discourse; it does **not** carry evidential or epistemic framing of the claim. Softeners that encode source-of-knowledge or claim strength stay `/h/` or `/w/` (see [Adverbs](#adverbs-h)). Contrast: *however* / *in other words* → `/x/`; *apparently* / *allegedly* → `/h/` or `/w/`.
 
@@ -207,7 +207,7 @@ Numeral grammar (digit roots, engineering/scientific forms, ordinals, digit-stri
 
 # Word-level, phrase-level, and VP-level coordination
 
-Word-level **al** / **am** / … (Oxford); phrase-level **zam** / **gam** / … (Oxford NP / AP); [opener / `-r`](coordination.md#opener-r-coordination) for VP **vam** / **var** / … (`/h/` clause-external) and clause `/x/` + vowel + ending (soft **-n** ≠ Oxford named **-n**): **[coordination.md](coordination.md)**.
+Word-level **al** / **am** / … (Oxford, before last); phrase-level **zam** / **gam** / … (final coordinator after last conjunct; shared mods after the fence); [opener / `-r`](coordination.md#opener-r-coordination) for VP **vam** / **var** / … (`/h/` clause-external) and clause `/x/` + vowel + ending (soft **-n** ≠ named **-n**): **[coordination.md](coordination.md)**.
 
 # Phonology and Phonotactics
 
