@@ -17,7 +17,7 @@ PoS prefixes and ordinary word shape: [language-reference.md](language-reference
 | **a** / `a` | *and* |
 | **o** / `o` | exclusive *or* (pick **one**) |
 | **u** / `u` | *nor* (none of the conjuncts) |
-| **a** + **o** / `ao` (or `a/o`) | inclusive *and/or* (one **or** more) |
+| **a** + **o** / `ao` | inclusive *and/or* (one **or** more) |
 | **e** / `e` | exception or replacement (which one = ending; below) |
 
 ### Closure ending (**a** / **o** / **u** / **ao** only)
@@ -83,7 +83,7 @@ Word-level coordinators join **sibling full words** that share the **same PoS sl
 | **e** + **-l** | `el` | **exception** (*but not* / *except*) |
 | **e** + **-m** | `em` | **replacement** (*instead of*) |
 
-Spoken inclusive forms are **a** then **o** then the ending. Preferred writing glues the vowels (`aol`, `aom`, `aon`); `a/ol` / `a/om` / `a/on` is allowed if a slash helps reading.
+Spoken inclusive forms are **a** then **o** then the ending. Writing glues the vowels (`aol`, `aom`, `aon`).
 
 ## Shape of a coordinated chain (Oxford style)
 
@@ -139,7 +139,7 @@ Word shape: role prefix + vowel root (+ second vowel for inclusive forms) + endi
 | `/d/` | direct object |
 | `/b/` | argument noun (of a complex `/ɡ/` or `/h/`) |
 
-Writing mirrors word-level with the prefix glued on: `zal` / `zam` / `zan` / `zol` / … / `zel` / `zem`, and the same under `/d/` (`dal`, `dam`, …) and `/b/` (`bal`, `bam`, …). Inclusive forms: `zaol` / `zaom` / `zaon` (spoken **a** then **o** then ending); `daol`…, `baol`… likewise. Slash spellings (`za/ol`, …) are allowed if they help reading.
+Writing mirrors word-level with the prefix glued on: `zal` / `zam` / `zan` / `zol` / … / `zel` / `zem`, and the same under `/d/` (`dal`, `dam`, …) and `/b/` (`bal`, `bam`, …). Inclusive forms: `zaol` / `zaom` / `zaon` (spoken **a** then **o** then ending); `daol`…, `baol`… likewise.
 
 The prefix on the coordinator **must match** the head-noun prefix of every conjunct (all `/z/`, or all `/d/`, or all `/b/`).
 
