@@ -4,11 +4,11 @@ This page is the source of truth for **word-level**, **phrase-level** (NP / AP),
 
 PoS prefixes and ordinary word shape: [language-reference.md](language-reference.md). Reference suffixes: [reference-suffix.md](reference-suffix.md). Phonotactic exception for coordinator particles: [phonology.md](phonology.md#phonotactics).
 
-**Oxford vs opener/`-r` shape:** Word-level and phrase-level (NP / AP) use **Oxford style** (juxtapose non-final conjuncts; one coordinator before the last). **VP-level** and **clause-level** use the **opener / `-r` continue** pattern (not Oxford). Do not borrow `-r` nesting into Oxford chains; do not write Oxford-only forms with `-r`.
+**Oxford vs opener/`-r` shape:** Word-level and phrase-level (NP / AP) use **Oxford style** (juxtapose non-final conjuncts; one coordinator before the last). **VP-level** and **clause-level** share the **opener / `-r` continue** pattern — see [opener / `-r`](#opener-r-coordination). Do not borrow `-r` nesting into Oxford chains; do not write Oxford-only forms with `-r`.
 
 ## Join type × ending (shared)
 
-**Vowel(s)** choose join type. All coordinators take an ending (no bare vowel). For **a** / **o** / **u** / **ao**, **-l** / **-m** mark **closure**. Oxford-level (**word** / **phrase**) **-n** marks a **named / conventional** list. **VP-level** and **clause-level** **-n** mark **soft packaging** (not named); **-r** continues an open list — see [VP-level](#vp-level-coordination) and [Clause-level](#clause-level-coordination). For **e**, **-l** / **-m** pick **exception** vs **replacement** (no **-n** on **e** at any level).
+**Vowel(s)** choose join type. All coordinators take an ending (no bare vowel). For **a** / **o** / **u** / **ao**, **-l** / **-m** mark **closure**. Oxford-level (**word** / **phrase**) **-n** marks a **named / conventional** list. **VP-level** and **clause-level** **-n** mark **soft packaging** (not named); **-r** continues an open list — see [opener / `-r`](#opener-r-coordination). For **e**, **-l** / **-m** pick **exception** vs **replacement** (no **-n** on **e** at any level).
 
 ### Join type (vowel series)
 
@@ -62,7 +62,7 @@ These joins are **directional** (order matters), unlike *and* / *or* / *nor*.
 
 # Word-level coordination
 
-Word-level coordinators join **sibling full words** that share the **same PoS slot**. They have **no** PoS prefix. They **do** take an ending (**-l**, **-m**, or **-n** where allowed — not **-r**, and not plural **-sh**). **Oxford style** — same shape as [phrase-level](#np--and-ap-level-coordination); **not** the [VP](#vp-level-coordination) / [clause](#clause-level-coordination) opener / **-r** pattern.
+Word-level coordinators join **sibling full words** that share the **same PoS slot**. They have **no** PoS prefix. They **do** take an ending (**-l**, **-m**, or **-n** where allowed — not **-r**, and not plural **-sh**). **Oxford style** — same shape as [phrase-level](#np--and-ap-level-coordination); **not** the [opener / `-r`](#opener-r-coordination) pattern.
 
 ## Particles
 
@@ -129,7 +129,7 @@ The letters **-l** / **-m** / **-n** here are the same inventory as [reference s
 
 Phrase-level coordinators join **multi-word phrases** in one slot, using the **same vowel series and Oxford endings** as word-level (**-l** / **-m** / **-n** on **a** / **o** / **u** / **ao**; **-l** / **-m** on **e** — **not** **-r**, and not plural **-sh**). NP and AP differ only in **which prefix** the coordinator takes and **what counts as a conjunct**; the chain shape is identical.
 
-**Oxford — not VP/clause opener/`-r`.** Non-final conjuncts are juxtaposed; **one** coordinator appears immediately before the **last** conjunct. No leading opener, no per-conjunct particle, no **-r** continue. Do not write `zam A zar B` or `gam A gar B` for a flat list; that pattern is [VP](#vp-level-coordination) / [clause](#clause-level-coordination) only.
+**Oxford — not VP/clause opener/`-r`.** Non-final conjuncts are juxtaposed; **one** coordinator appears immediately before the **last** conjunct. No leading opener, no per-conjunct particle, no **-r** continue. Do not write `zam A zar B` or `gam A gar B` for a flat list; that pattern is [opener / `-r`](#opener-r-coordination) only.
 
 ## Forms
 
@@ -212,58 +212,94 @@ Under `/z/`, `/d/`, `/b/`, and `/ɡ/`, the coordination vowel series plus an all
 
 ---
 
-# VP-level coordination
+# Opener / `-r` coordination (VP and clause)
+<a id="opener-r-coordination"></a>
+<a id="vowels--endings"></a>
+<a id="ending-senses-clause-coordinators"></a>
 
-VP-level coordinators join **verb phrases** inside one clause: each conjunct is a verb plus that verb’s own object material (`/d/` NP, including phrase-level structure on the object). They share one clause subject (`/z/`) and one [clause force](language-reference.md#utterance-markers-j). The coordinator prefix is always **`/v/`**.
+**VP-level** (`/v/`) and **clause-level** (`/x/`) share one list shape: a coordinator before every non-initial conjunct; **-l** / **-m** / soft **-n** open a new list; **-r** continues it. This is **not** Oxford (unlike [word-level](#word-level-coordination) and [phrase-level](#np--and-ap-level-coordination)). Do not Oxford-juxtapose with a single final `vam` / `xam`.
 
-**Shape is opener / `-r` continue — like [clause-level](#clause-level-coordination), not Oxford.** A coordinator appears before every non-initial VP. **-l** / **-m** / **-n** open a new list; **-r** continues it. Do not Oxford-juxtapose VPs with a single final `vam`.
+Join-type vowels are the same as elsewhere. Endings use soft **-n** and continue **-r**, not Oxford named **-n**.
 
-## Vowels × endings
+## Forms
 
-Same join-type vowels as elsewhere. Endings match the clause table (soft **-n**, continue **-r**), not Oxford named **-n**:
+Word shape: prefix + vowel root (+ second vowel for inclusive forms) + ending. Writing glues inclusive vowels (`vaol`, `xaol`, …). Spoken order is **a** then **o**, then the ending — same as word-level `aol` and phrase-level `zaol` / `gaol`.
 
 | | **-l** | **-m** | **-n** soft | **-r** continue |
 |---|--------|--------|-------------|-----------------|
-| **a** (*and*) | `val` closed | `vam` open | `van` | `var` |
-| **o** (xor) | `vol` closed | `vom` open | `von` | `vor` |
-| **u** (*nor*) | `vul` closed | `vum` open | `vun` | `vur` |
-| **ao** (and/or) | `vaol` closed | `vaom` open | `vaon` | `vaor` |
-| **e** (exception / replacement) | `vel` exception | `vem` replacement | *(not used)* | `ver` |
+| **a** (*and*) | `val` / `xal` closed | `vam` / `xam` open | `van` / `xan` | `var` / `xar` |
+| **o** (xor) | `vol` / `xol` closed | `vom` / `xom` open | `von` / `xon` | `vor` / `xor` |
+| **u** (*nor*) | `vul` / `xul` closed | `vum` / `xum` open | `vun` / `xun` | `vur` / `xur` |
+| **ao** (and/or) | `vaol` / `xaol` closed | `vaom` / `xaom` open | `vaon` / `xaon` | `vaor` / `xaor` |
+| **e** (exception / replacement) | `vel` / `xel` exception | `vem` / `xem` replacement | *(not used)* | `ver` / `xer` |
 
-Writing glues inclusive vowels (`vaol`, …). Spoken order is **a** then **o**, then the ending.
+Prefix: **`/v/`** for [VP-level](#vp-level-coordination); **`/x/`** for [clause-level](#clause-level-coordination).
 
-### Ending senses
+## Ending senses
 
-Same rules as [clause-level](#ending-senses-clause-coordinators): **-l** / **-m** / **-n** always start a **new** list; **-r** is the **only** continue. A second **-l** / **-m** / **-n** nests (right-associative). Soft **-n** is narrative / uncertain packaging of VPs (*and then ate…*, *or maybe drank…*), not Oxford named-list **-n**. Soft **-n** is not used on **e**.
+**-l**, **-m**, and **-n** always **start a new list** (where that ending is allowed). They never extend an open list. **-r** is the **only** way to add another conjunct to the list most recently opened by a matching root. Continuations inherit the opener’s join type and its **-l** / **-m** reading (closure, or exception vs replacement). A second **-l** / **-m** / **-n** nests (right-associative).
 
-## Shape (not Oxford style)
+- **-l** / **-m** on **a** / **o** / **u** / **ao** — Open a **new**, **committed** list with **closed** (**-l**) or **open** (**-m**) completeness (`val` / `xal` = both hold, full set; `vom` / `xom` = pick one, other options may exist; and so on).
+- **-l** / **-m** on **e** — Open a **new**, **committed** exception or replacement join (not closure):
+  - **`vel` / `xel`** — *but not* / *except*: prior conjunct(s) hold, excluding what follows (`A vel B` / `A xel B` → *A, but not B*).
+  - **`vem` / `xem`** — *instead*: what follows **replaces** what precedes (`A vem B` / `A xem B` → *B instead of A*).
+- **-n** — Opens a **new** list with **soft** packaging (**a** / **o** / **u** / **ao** only): **narrative sequence** (**a**) or **uncertain reconstruction** (the others) — not a second boolean table, and not dramatic metaphor. **Different from Oxford `-n`:** soft packaging, not named/conventional list (word-level **an** / phrase-level **zan** / **gan** / …). Soft lists do **not** carry a separate closed/open bit; treat completeness as open-leaning unless you upgrade to a committed **-l** / **-m** opener (optionally with `/h/` evidential hedges). Per vowel:
+  - **`van` / `xan`** (*and*) — *and then…* (temporal / story sequence, not mere logical *and*).
+  - **`von` / `xon`** (*xor*) — *or maybe…* — uncertain alternatives (typically without claiming those are all the guesses).
+  - **`vun` / `xun`** (*nor*) — *and it wasn’t… either* / *nor, as I recall…* — soft denial chain while reconstructing what did not hold.
+  - **`vaon` / `xaon`** (*and/or*) — *and/or maybe…* — soft multi-fit without a hard completeness claim.
+  - **Not on `e`:** uncertain exception or replacement uses **`vel` / `xel`** or **`vem` / `xem`** plus `/h/` evidentiality, not **-n**.
+- **-r** — **Continues** the most recently opened list whose root matches (`va…` / `xa…`, `vo…` / `xo…`, `ve…` / `xe…`, …). Required for a flat three-or-more chain. On `/x/`, fits “same linker again” — see [pronouns.md](pronouns.md). On **e**: `A xel B xer C` → *A, except B, and except C*; `A xem B xer C` → successive replacement (*C instead of B instead of A*) — same with `vel` / `vem` / `ver` for VPs.
+
+Titled / official discourse labels stay **other** `/x/`…**-n** forms (different roots, not this vowel series) — see [reference-suffix.md](reference-suffix.md#discourse-markers-x).
+
+## Shape
 
 ```
-VP  V-OPEN  VP  ( V-CONT  VP )*     ← one flat list
+ITEM  OPEN  ITEM  ( CONT  ITEM )*     ← one flat list
 ```
 
-- **VP** — one verb (`/v/` content word) plus that verb’s own `/d/` object material when present (simple object or [phrase-level](#np--and-ap-level-coordination) object chain). Object NPs may include their `/ɡ/` / `/w/` / `/b/` stacks. The shared `/z/` subject is **outside** the VP chain (one subject for all conjuncts).
-- **V-OPEN** — **-l**, **-m**, or **-n** where allowed (`val`, `vam`, `van`, `vel`, `vem`, …). Always begins a **new** list.
-- **V-CONT** — **-r** only (`var`, `vor`, `ver`, …). Extends that same open list.
+- **ITEM** — a [VP](#vp-level-coordination) or a full [sentence](#clause-level-coordination), depending on level.
+- **OPEN** — **-l**, **-m**, or **-n** where allowed (`val` / `xal`, `vam` / `xam`, `van` / `xan`, `vel` / `xel`, …). Always begins a **new** list.
+- **CONT** — **-r** only (`var` / `xar`, `vor` / `xor`, `ver` / `xer`, …). Extends that same open list. Do **not** use another **-l** / **-m** / **-n** if you mean “one more item in this list.”
 
 **Flat list** — open once, then only **-r**:
 
-- Two: `d-applel v-eatl  vam  d-waterl v-drinkl` → *(ate an apple) and (drank water)* (open)
-- Three+: `d-applel v-eatl  val  d-waterl v-drinkl  var  d-breadl v-bakel` → closed *and* of three VPs
-- Soft sequence: `v-runl  van  v-jumpl  var  v-restl` → *ran and then jumped and then rested*
-- Exception: `d-applel v-eatl  vel  d-cakel v-eatl` → *ate an apple, but not ate a cake*
-- Replacement: `d-applel v-eatl  vem  d-waterl v-drinkl` → *drank water instead of ate an apple*
+- Two: `A  vam  B` / `A  xam  B` → *A and B* (open)
+- Two closed: `A  val  B` / `A  xal  B` → *A and B* (closed)
+- Three+: `A  val  B  var  C` / `A  xal  B  xar  C` → one closed *and*-list of three
+- Soft sequence: `A  van  B  var  C` / `A  xan  B  xar  C` → *A and then B and then C*
+- Exception: `A  vel  B` / `A  xel  B` → *A, but not B*; with continue: `A  xel  B  xer  C`
+- Replacement: `A  vem  B` / `A  xem  B` → *B instead of A*
 
-**Nesting** — a second opener starts an inner list (right-associative), same as clauses: `A vol B vol C` → *A or (B or C)*; flat three-way *or* needs `A vol B vor C`.
+**Nesting** — a second **-l** / **-m** / **-n** starts an inner list; reading is **right-associative**:
 
-### `/h/` is clause-external
+- `A  vol  B  vol  C` / `A  xol  B  xol  C` → *A or (B or C)* — two lists, not one three-way *or*
+- `A  val  B  vol  C  vor  D` / `A  xal  B  xol  C  xor  D` → *A and (B or C or D)*
 
-**All `/h/` units (simple or `/h/`+`/b/`) are outside the VP chain** and apply to **every** conjunct alike — manner, time, recipient, topic, mood/evidentiality, and so on. Do **not** put `/h/` inside a VP conjunct to mean “only this verb.”
+To get a flat three-way *or*, write `A vol B vor C` / `A xol B xor C`, not `A vol B vol C` / `A xol B xol C`.
 
-- `z-Samn d-applel v-eatl vam d-waterl v-drinkl h-quicklyl` → Sam *quickly* *(ate an apple and drank water)* — one manner over both VPs
-- Per-VP manner is **not** available under VP coordination; use separate clauses ([clause-level](#clause-level-coordination)) or rephrase if each verb needs its own `/h/`
+---
 
-Subject and other non-VP clause material likewise sit outside the chain and are shared.
+# VP-level coordination
+
+VP-level coordinators join **verb phrases** inside one clause: each conjunct is a verb plus that verb’s own object material (`/d/` NP, including phrase-level structure on the object). They share one clause subject (`/z/`) and one [clause force](language-reference.md#utterance-markers-j). The coordinator prefix is always **`/v/`**. Forms, ending senses, and flat/nested shape: [opener / `-r`](#opener-r-coordination).
+
+## Conjuncts and scope
+
+- **VP** — one verb (`/v/` content word) plus that verb’s own `/d/` object material when present (simple object or [phrase-level](#np--and-ap-level-coordination) object chain). Object NPs may include their `/ɡ/` / `/w/` / `/b/` stacks. The shared `/z/` subject is **outside** the VP chain.
+- **All `/h/` units** (simple or `/h/`+`/b/`) are **outside** the VP chain and apply to **every** conjunct alike — manner, time, recipient, topic, mood/evidentiality, and so on. Do **not** put `/h/` inside a VP conjunct to mean “only this verb.”
+  - `z-Samn d-applel v-eatl vam d-waterl v-drinkl h-quicklyl` → Sam *quickly* *(ate an apple and drank water)*
+  - Per-VP manner needs separate clauses ([clause-level](#clause-level-coordination)) or a rephrase.
+- Other non-VP clause material likewise sits outside the chain and is shared.
+
+### Examples (schematic)
+
+- `d-applel v-eatl  vam  d-waterl v-drinkl` → *(ate an apple) and (drank water)* (open)
+- `d-applel v-eatl  val  d-waterl v-drinkl  var  d-breadl v-bakel` → closed *and* of three VPs
+- `v-runl  van  v-jumpl  var  v-restl` → *ran and then jumped and then rested*
+- `d-applel v-eatl  vel  d-cakel v-eatl` → *ate an apple, but not ate a cake*
+- `d-applel v-eatl  vem  d-waterl v-drinkl` → *drank water instead of ate an apple*
 
 ### Why not bare word-level
 
@@ -286,70 +322,23 @@ Under `/v/`, the coordination vowel series plus an allowed ending (`val`, `vam`,
 
 # Clause-level coordination
 
-Clause-level coordinators join **full sentences**. They are **`/x/`** discourse markers whose **root is the same vowel series** as word-, phrase-, and VP-level coordination. They take a [reference-suffix letter](reference-suffix.md): **-l**, **-m**, **-n**, or **-r** (**-n** not on **e**). They do **not** take plural **-sh**.
+Clause-level coordinators join **full sentences**. They are **`/x/`** discourse markers whose **root is the same vowel series** as word-, phrase-, and VP-level coordination. They take a [reference-suffix letter](reference-suffix.md): **-l**, **-m**, **-n**, or **-r** (**-n** not on **e**). They do **not** take plural **-sh**. Forms, ending senses, and flat/nested shape: [opener / `-r`](#opener-r-coordination).
 
-Word shape: `/x/` + vowel root (+ second vowel for inclusive forms) + ending.
+Endorsement strength and evidentiality stay on each clause’s `/h/` (or `/w/`), not on the coordinator.
 
-## Vowels × endings
-
-The **vowel** chooses join type. Endorsement strength and evidentiality stay on each clause’s `/h/` (or `/w/`), not on the coordinator.
-
-| | **-l** | **-m** | **-n** soft | **-r** continue |
-|---|--------|--------|-------------|-----------------|
-| **a** (*and*) | `xal` closed | `xam` open | `xan` | `xar` |
-| **o** (xor) | `xol` closed | `xom` open | `xon` | `xor` |
-| **u** (*nor*) | `xul` closed | `xum` open | `xun` | `xur` |
-| **ao** (and/or) | `xaol` closed | `xaom` open | `xaon` | `xaor` |
-| **e** (exception / replacement) | `xel` exception | `xem` replacement | *(not used)* | `xer` |
-
-Preferred writing for inclusive forms glues the vowels (`xaol`, …). Spoken order is **a** then **o**, then the ending — same order as word-level `aol`, phrase-level `zaol` / `gaol`, and VP-level `vaol`.
-
-### Ending senses (clause coordinators)
-
-**-l**, **-m**, and **-n** always **start a new list** (where that ending is allowed). They never extend an open list. **-r** is the **only** way to add another conjunct to the list most recently opened by a matching root. Continuations inherit the opener’s join type and its **-l** / **-m** reading (closure, or exception vs replacement).
-
-- **-l** / **-m** on **a** / **o** / **u** / **ao** — Open a **new**, **committed** clause-join list with **closed** (**-l**) or **open** (**-m**) completeness (`xal` = both hold, full set; `xom` = pick one, other options may exist; and so on).
-- **-l** / **-m** on **e** — Open a **new**, **committed** exception or replacement join (not closure):
-  - **`xel`** — *but not* / *except*: prior clause(s) hold, excluding what follows (`A xel B` → *A, but not B*).
-  - **`xem`** — *instead*: what follows **replaces** what precedes (`A xem B` → *B instead of A*).
-- **-n** — Opens a **new** list with **soft** packaging (**a** / **o** / **u** / **ao** only): **narrative sequence** (**a**) or **uncertain reconstruction** (the others) — not a second boolean table, and not dramatic metaphor. **Different from Oxford `-n`:** here **-n** is soft packaging, not named/conventional list (word-level **an** / phrase-level **zan** / **gan** / …). Same soft sense as VP-level **van** / **von** / …. Soft lists do **not** carry a separate closed/open bit; treat completeness as open-leaning unless you upgrade to a committed **-l** / **-m** opener (optionally with `/h/` evidential hedges). Per vowel:
-  - **`xan`** (*and*) — *and then…* (temporal / story sequence, not mere logical *and*).
-  - **`xon`** (*xor*) — *or maybe it was…* — uncertain alternatives (typically without claiming those are all the guesses).
-  - **`xun`** (*nor*) — *and it wasn’t… either* / *nor, as I recall…* — soft denial chain while reconstructing what did not hold.
-  - **`xaon`** (*and/or*) — *and/or maybe…* — soft multi-fit without a hard completeness claim.
-  - **Not on `e`:** uncertain exception or replacement uses **`xel`** / **`xem`** plus `/h/` evidentiality, not **-n**.
-- **-r** — **Continues** the most recently opened list whose root matches (`xa…`, `xo…`, `xe…`, …). Required for a flat three-or-more chain. Fits `/x/`…**-r** “same linker again” — see [pronouns.md](pronouns.md). On **e**: `A xel B xer C` → *A, except B, and except C*; `A xem B xer C` → successive replacement (*C instead of B instead of A*).
-
-Titled / official discourse labels stay **other** `/x/`…**-n** forms (different roots, not this vowel series) — see [reference-suffix.md](reference-suffix.md#discourse-markers-x).
-
-## Shape (not Oxford style)
-
-Clause-level coordination is **not** Oxford-style (unlike [word-level](#word-level-coordination) and [phrase-level](#np--and-ap-level-coordination)). It shares the opener / **-r** shape with [VP-level](#vp-level-coordination). A coordinator appears before every non-initial sentence in a chain. Which ending you use decides **flat list** vs **nesting**.
-
-```
-SENT  X-OPEN  SENT  ( X-CONT  SENT )*     ← one flat list
-```
+## Conjuncts
 
 - **SENT** — a complete sentence beginning with `/j/` (optional vocative(s) / interjection(s), then clause force, then clause body).
-- **X-OPEN** — **-l**, **-m**, or **-n** where allowed (`xal`, `xam`, `xan`, `xel`, `xem`, …). Always begins a **new** list.
-- **X-CONT** — **-r** only (`xar`, `xor`, `xer`, …). Extends that same open list. Do **not** use another **-l** / **-m** / **-n** if you mean “one more item in this list.”
+- A coordinator appears before every non-initial sentence in a chain.
 
-**Flat list** (one join, many conjuncts) — open once, then only **-r**:
+### Examples (schematic)
 
-- Two: `A  xal  B` → *A and B* (closed)
-- Two open: `A  xam  B` → *A and B* (among others)
-- Three+: `A  xal  B  xar  C` → *A and B and C* (one closed *and*-list)
-- Exclusive closed: `A  xol  B  xor  C` → *A or B or C* (one closed *xor*-list)
-- Sequence: `A  xan  B  xar  C` → *A and then B and then C*
-- Exception: `A  xel  B` → *A, but not B*; `A  xel  B  xer  C` → *A, except B and except C*
-- Replacement: `A  xem  B` → *B instead of A*
-
-**Nesting** — a second **-l** / **-m** / **-n** starts an inner list; reading is **right-associative** (the new open groups with what follows):
-
-- `A  xol  B  xol  C` → *A or (B or C)* — two lists, not one three-way *or*
-- `A  xal  B  xol  C  xor  D` → *A and (B or C or D)* — outer closed *and*, inner flat closed *xor*-list
-
-To get a flat three-way *or*, you **must** write `A xol B xor C`, not `A xol B xol C`.
+- `A  xal  B` → *A and B* (closed); `A  xam  B` → open
+- `A  xal  B  xar  C` → *A and B and C* (one closed *and*-list)
+- `A  xol  B  xor  C` → *A or B or C* (one closed *xor*-list)
+- `A  xan  B  xar  C` → *A and then B and then C*
+- `A  xel  B` → *A, but not B*; `A  xem  B` → *B instead of A*
+- Nesting: `A  xol  B  xol  C` → *A or (B or C)*; flat three-way *or* needs `A xol B xor C`
 
 ## Constraints
 
@@ -357,3 +346,7 @@ To get a flat three-way *or*, you **must** write `A xol B xor C`, not `A xol B x
 - **No gapping / shared arguments** across conjuncts. Repeat material, or use word-level, phrase-level (NP / AP), or VP-level coordination inside one clause.
 - **Not subordination:** *because* / *if* / *although* stay `/h/` + `/b/` [next-clause pronoun](pronouns.md#special-pronouns).
 - **Not general *but* / *however* / *therefore*:** those are other `/x/` linkers. Word-, phrase-, VP-, and clause-level *but not* / *except* (**el** / **zel** / **gel** / **vel** / **xel**, …) and *instead* (**em** / **zem** / **gem** / **vem** / **xem**, …) **are** this series.
+
+## Reserved forms
+
+Under `/x/`, the coordination vowel series plus an allowed ending (`xal`, `xam`, `xan`, `xar`, … `xel`, `xem`, `xer`) are **only** these clause coordinators — not other discourse-marker roots with those vowels. Other `/x/` roots are unchanged.

@@ -160,7 +160,7 @@ Content questions (*who* / *what* / *where*) use the [interrogative special pron
 
 ## Word-level, phrase-level, and VP-level coordination
 
-**al** / **am** / **an** / **ol** / **om** / **on** / **ul** / **um** / **un** / **aol** / **aom** / **aon** / **el** / **em** join sibling full words in the **same PoS slot** (Oxford style). **`/z/` `/d/` `/b/` `/ɡ/`** + the same vowels + ending (`zam`, `dol`, `bem`, `gam`, …) join **noun or adjective phrases** (Oxford; `g-happyl gam g-proudl w-veryl` = *very (happy and proud)*). **`/v/`** + the same series (`vam`, `var`, …) joins **verb phrases** under one subject — **opener / `-r` continue** (not Oxford); `/h/` is clause-external and applies to all VPs (`d-applel v-eatl vam d-waterl v-drinkl h-quicklyl`). Oxford **-l**/**-m**/**-n** = closed/open/named; on **e**, **-l**/**-m** = exception/replacement. VP and clause use soft **-n** and continue **-r** instead of Oxford named **-n**. `/x/` + the same vowels + ending join **clauses** (`xal`, `xam`, `xan`, `xel`, `xem`, …). Correlatives come later. Details: **[coordination.md](coordination.md)**.
+**al** / **am** / **an** / **ol** / **om** / **on** / **ul** / **um** / **un** / **aol** / **aom** / **aon** / **el** / **em** join sibling full words in the **same PoS slot** (Oxford style). **`/z/` `/d/` `/b/` `/ɡ/`** + the same vowels + ending (`zam`, `dol`, `bem`, `gam`, …) join **noun or adjective phrases** (Oxford; `g-happyl gam g-proudl w-veryl` = *very (happy and proud)*). **`/v/`** and **`/x/`** + the same series use shared **opener / `-r` continue** (not Oxford): VP under one subject (`vam`, `var`, …; `/h/` clause-external over all VPs); clauses as discourse markers (`xal`, `xam`, `xan`, `xel`, `xem`, …). Oxford **-l**/**-m**/**-n** = closed/open/named; on **e**, **-l**/**-m** = exception/replacement. Opener soft **-n** and continue **-r** replace Oxford named **-n**. Correlatives come later. Details: **[coordination.md](coordination.md)**.
 
 ## Discourse markers (`/x/`)
 
@@ -207,7 +207,7 @@ Numeral grammar (digit roots, engineering/scientific forms, ordinals, digit-stri
 
 # Word-level, phrase-level, and VP-level coordination
 
-Word-level **al** / **am** / … (Oxford); phrase-level **zam** / **gam** / … (Oxford NP / AP); VP-level **vam** / **var** / … (opener / **-r**; `/h/` clause-external); `/x/` + vowel + ending (clause-level; soft **-n** ≠ Oxford named **-n**; **-r** continues): **[coordination.md](coordination.md)**.
+Word-level **al** / **am** / … (Oxford); phrase-level **zam** / **gam** / … (Oxford NP / AP); [opener / `-r`](coordination.md#opener-r-coordination) for VP **vam** / **var** / … (`/h/` clause-external) and clause `/x/` + vowel + ending (soft **-n** ≠ Oxford named **-n**): **[coordination.md](coordination.md)**.
 
 # Phonology and Phonotactics
 
