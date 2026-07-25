@@ -3,7 +3,6 @@
 -local llm systematically review entire lexicon
 -speed reading display
 -rank reversal (by adding h-word)
--left bound modifiers?
 -improve u coordination wording
 
 ## Discourse markers (`/x/`) — expand beyond quotes + linkers

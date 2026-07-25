@@ -348,8 +348,8 @@ P-COORD  ( SHARED )*                                 ← nullary (same as left w
 ```
 
 - **P-COORD** — one of the prefixed forms above (`zam`, `dol`, `bem`, `gam`, `wam`, `ham`, `zar`, `zor`, `zer`, `zur`, …). For a **flat** list, appears **only once**: either **before** all conjuncts (left) or **after** all conjuncts (right) — not between conjuncts. For **nested** lists, multiple fences stack — see [fence nesting](#fence-nesting). **Pure infix** (`A zam B zal C`) is illegal.
-- **SHARED** — optional material **immediately after** `P-COORD` in either placement. **Always** scopes over the **whole coordinated phrase** (NP: `/ɡ/` / `/w/` / complex `/ɡ/`+`/b/`; AP: `/w/`; `/w/`-slot and `/h/`-slot joins: further same-slot material only if the lexicon allows stacking on the join as a unit). Shared `/ɡ/` / `/w/` here sit next to the fence (before the heads they grade on the left; after the list on the right) — the fence defines the host unit.
-- **PHRASE** — a conjunct: NP headed by `/z/`, `/d/`, or `/b/` (plus that head’s following local `/ɡ/` / `/w/` / `/b/` material); AP headed by `/ɡ/` (plus contiguous `/b/`, further `/ɡ/` on that `/b/`, and local `/w/`); or a single `/w/` / `/h/` word (plus `/h/`’s contiguous `/b/` when complex). Local modifiers stay **inside** their conjunct, after that conjunct’s head.
+- **SHARED** — optional material **immediately after** `P-COORD` in either placement. **Always** scopes over the **whole coordinated phrase** (NP: ordinary `/ɡ/` / `/w/` / complex `/ɡ/`+`/b/`; AP: `/w/`; `/w/`-slot and `/h/`-slot joins: further same-slot material only if the lexicon allows stacking on the join as a unit). Shared ordinary `/ɡ/` / `/w/` here sit next to the fence (before the heads they grade on the left; after the list on the right) — the fence defines the host unit. **Left-bound `gl-`** is **not** SHARED: after a left fence it binds only the **next** conjunct (see [Adjectives](language-reference.md#adjectives-ɡ)).
+- **PHRASE** — a conjunct: NP headed by `/z/`, `/d/`, or `/b/` (plus that head’s local `/ɡ/` / `/w/` / `/b/` material — default **after** the head, or [left-bound `gl-`](language-reference.md#adjectives-ɡ) **before** that head); AP headed by `/ɡ/` (plus contiguous `/b/`, further `/ɡ/` on that `/b/`, and local `/w/`); or a single `/w/` / `/h/` word (plus `/h/`’s contiguous `/b/` when complex). Local right-bound modifiers stay **inside** their conjunct, after that conjunct’s head; local `gl-` sits immediately before that head.
 - Two conjuncts (left): `P-COORD  PHRASE  PHRASE`. Two (right): `PHRASE  PHRASE  P-COORD`. Three or more: same pattern with more `PHRASE` items on the conjunct side of `P-COORD`.
 - **Unary phrase** — **…em** / **…el** / **…oem** / **…oel** / **…en** / **…er** / **…al** / **…am** / **…ol** / **…om** / **…aol** / **…aom** / **…ar** / **…or** / **…ur**: `P-COORD  PHRASE` or `PHRASE  P-COORD` — see [unary and nullary](#unary-phrase) and [unspecified-member **-r**](#unspecified-member-r-phrase).
 - **Nullary phrase** — those same forms, plus **…an** / **…ul** / **…um**: `P-COORD` alone (optional `SHARED`) — the coordinator fills the slot with the [nullary reading](#nullary-phrase). Left and right placement coincide when there are no conjuncts. A following matching-role head is still absorbed as a conjunct (so nullary is only when no conjunct follows / precedes).
@@ -360,17 +360,19 @@ P-COORD  ( SHARED )*                                 ← nullary (same as left w
 **Ranked** (`zel` / `zael` / `zoel`, `zem` / …, `zen` / …): left-to-right rank of the **spoken conjunct order** (before a right-close coordinator) — see [ranked conjunction](#ranked-conjunction-e). Unary / nullary: [unary and nullary](#unary-phrase).
 ### Scope fence (`P-COORD`)
 
-**Rule:** A modifier **immediately after** a phrase-level conjunction (`zam`, `gam`, `dam`, …) modifies the **entire coordinated phrase** — whether that conjunction is a left fence or a right close.
+**Rule:** A modifier **immediately after** a phrase-level conjunction (`zam`, `gam`, `dam`, …) modifies the **entire coordinated phrase** — whether that conjunction is a left fence or a right close — when it uses ordinary (right-bound) `/ɡ/` / `/w/` morphology. **Left-bound `gl-`** in that same position binds only the **next** conjunct.
 
 - Modifiers **after a conjunct head** (and before the next matching-role head) belong to that conjunct only.
-- Modifiers in the **SHARED** slot scope over **all** conjuncts as one unit.
+- Modifiers in the **SHARED** slot (ordinary `/ɡ/` / `/w/` / complex `/ɡ/`+`/b/`) scope over **all** conjuncts as one unit.
 - On a **right close**, do **not** put further matching-role conjunct heads after `P-COORD` / `SHARED`; the list of conjuncts is already complete to the left of `P-COORD`.
 
 Contrast (left fence):
 
 - `zam z-dogl z-catl g-bigl` → *(dog) and (big cat)* — big follows the last head → last conjunct only
-- `zam g-bigl z-dogl z-catl` → *a big (dog and cat)* — big immediately after the fence → whole phrase
-- `zam z-dogl g-bigl z-catl` → *(big dog) and (cat)* — big local to dog
+- `zam g-bigl z-dogl z-catl` → *a big (dog and cat)* — ordinary `/ɡ/` immediately after the fence → whole phrase (SHARED)
+- `zam gl-bigl z-dogl z-catl` → *(big dog) and (cat)* — left-bound `gl-` after the fence → next conjunct only (not SHARED)
+- `zam z-dogl g-bigl z-catl` → *(big dog) and (cat)* — big local to dog (right-bound)
+- `zam z-dogl gl-redl z-catl` → *(dog) and (red cat)* — left-bound local to the following head
 - `gam w-veryl g-happyl g-proudl` → *very (happy and proud)* — `/w/` after `gam` grades the whole AP join
 - `gam g-happyl w-veryl g-proudl` → *(very happy) and (proud)* — `/w/` local to first `/ɡ/`
 

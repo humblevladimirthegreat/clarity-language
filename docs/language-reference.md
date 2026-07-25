@@ -63,7 +63,7 @@ The goal of r/claritylanguage is to help foster compassion, rationality, and emp
 
 Parts of speech are determined by a prefix consonant added before each word. Words do not change form based on usage, and can be used in most parts of speech, so the prefix is how you know a word's role.
 
-Every sentence begins with an **utterance-frame** `/j/` cluster that includes **clause force** (see [Utterance markers](#utterance-markers-j)); that fixed left edge is how sentence boundaries stay clear under free word order. After that opener, the standard order is Subject \- Direct Object \- Verb. Order of those core roles can change for stylistic reasons (including **focus**), or due to certain constructs like dependent clauses. Adjectives (`/ɡ/`) go after what they modify. Adverbs (`/h/`) may appear anywhere in the clause (see below).
+Every sentence begins with an **utterance-frame** `/j/` cluster that includes **clause force** (see [Utterance markers](#utterance-markers-j)); that fixed left edge is how sentence boundaries stay clear under free word order. After that opener, the standard order is Subject \- Direct Object \- Verb. Order of those core roles can change for stylistic reasons (including **focus**), or due to certain constructs like dependent clauses. Adjectives (`/ɡ/`) go **after** what they modify by default, or **before** when marked left-bound (**`gl-`** — see [Adjectives](#adjectives-ɡ)). Adverbs (`/h/`) may appear anywhere in the clause (see below).
 
 ## Part-of-speech prefixes
 
@@ -91,13 +91,21 @@ Verb (/v/) \- the action being done
 
 ## Adjectives (`/ɡ/`)
 
-`/ɡ/` marks **adjectives** (and noun-level relational phrases). They go **after** the word they modify.
+`/ɡ/` marks **adjectives** (and noun-level relational phrases).
+
+**Default (right-bound):** the adjective goes **after** the word it modifies (`z-dogl g-bigl` = *a big dog*). Attachment is to the **previous** eligible host.
+
+**Left-bound (`gl-`):** insert **l** as the second letter of the word — PoS `/ɡ/` + **l** + root + reference suffix — forming the onset cluster **`gl-`** (already legal in [phonology](phonology.md#phonotactics)). That adjective goes **before** its host and binds the **next** eligible host (`gl-bigl z-dogl` = *a big dog*). Only `/ɡ/` may take this mid-word **l**; other PoS prefixes have no left-bound **l** form.
+
+The contiguous adjective unit is the same in both orders: simple `/ɡ/`, or complex `/ɡ/` + `/b/`, plus any following `/w/` stack on that `/ɡ/`. Left-bound marks the `/ɡ/` word; `/b/` and `/w/` still follow that `/ɡ/` (`gl-ofl b-Samn z-dogl` = *Sam’s dog*; `gl-bigl w-veryl z-dogl` = *a very big dog`). Do not invent `wl-` or `bl-` for left attachment.
+
+Left-bound is optional style (meter, focus, L1 comfort). Prefer default postposed order in neutral prose. On [phrase fences](coordination.md#scope-fence-p-coord), ordinary `/ɡ/` in the SHARED slot still means whole-phrase scope (`zam g-bigl z-dogl z-catl`); `gl-` after a left fence binds only the **next** conjunct (`zam gl-bigl z-dogl z-catl` = *(big dog) and (cat)*).
 
 ## Adjective adjuncts (`/w/`)
 
 `/w/` marks a word that **modifies the previous adjective** (`/ɡ/` unit). It does not modify the verb or the noun directly. Use it for degree (*very*, *slightly*) and for tense/mood/evidentiality scoped only to that property (*former* / *recent*, *alleged*, and the same mood roots as `/h/` when the framing applies just to the adjective).
 
-The `/w/` word sits on its host: normally immediately after the `/ɡ/` (or after that `/ɡ/`’s contiguous `/b/` argument if the adjective is complex). Unlike `/h/`, `/w/` does **not** float. Several `/w/` words may stack on one `/ɡ/` (`g-happy w-recent w-very`); each applies to that same adjective. `/w/` words are typically simple (no `/b/` argument); if a relation needs an argument, use a complex adjective (`/ɡ/` + `/b/`) instead.
+The `/w/` word sits on its host: normally immediately after the `/ɡ/` (or after that `/ɡ/`’s contiguous `/b/` argument if the adjective is complex) — including when that `/ɡ/` is left-bound (`gl-…`). Unlike `/h/`, `/w/` does **not** float. Several `/w/` words may stack on one `/ɡ/` (`g-happy w-recent w-very`); each applies to that same adjective. `/w/` words are typically simple (no `/b/` argument); if a relation needs an argument, use a complex adjective (`/ɡ/` + `/b/`) instead.
 
 Same root, different prefix → different scope: `/h/` frames the clause; `/w/` frames only the preceding adjective.
 
