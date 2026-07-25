@@ -138,7 +138,7 @@ Each subsection is an **antecedent** PoS; the table rows are the **pronoun** PoS
 | *by doing so* / *thereby* | Verb antecedent → `/h/` …`-r` |
 | *that one’s* / *of that kind* | Noun antecedent → `/ɡ/` …`-r` |
 
-Special pronouns (speaker, listener, next clause, interrogative) are **not** covered here — they are separate forms (below), not `-r` stems from ordinary antecedents.
+Special pronouns (speaker, listener, next clause) are **not** covered here — they are separate forms (below), not `-r` stems from ordinary antecedents. Content questions (*who* / *what* / *where*) use [phrase coordinators under polar question force](coordination.md#unary-phrase), not a special pronoun.
 
 ## Special pronouns
 
@@ -148,7 +148,6 @@ Forms TBD. Roles:
 * **Listener** (2nd person)
 * **Generic single person** (a nonspecific individual — not impersonal *one*)
 * **Next clause** — placeholder for the immediately following sentence (dependent clauses). Takes the PoS prefix of the slot it fills (`/d/` complement, `/b/` under `/h/` *because* / *if*, etc.). Form TBD; see [Dependent Clauses](language-reference.md#dependent-clauses).
-* **Interrogative pronoun** (who/what/where) all use same root
 
 **Group containing** a referent is not a separate special pronoun: append **-sh** to the word (see above).
 

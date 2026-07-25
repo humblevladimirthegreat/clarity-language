@@ -70,7 +70,7 @@ Mnemonic: **-r** = member not named; vowel = frame (**a** = inventory existence;
 - `zor A B C` = any of them is fine (**no** order). `zer A B C` = pick / take **by ranking** among them.
 - Revision **`ul` / `um`**: *except* a named right-hand side. Prefixed **`zur`**: unspecified denial in the slot (*some objection*), not an *except*-revision particle.
 
-**Under [polar question](language-reference.md#utterance-markers-j) force:** nullary `zar` / `zor` / `zer` / `zur` → *Something?* / *Anything?* / *Whatever matters most?* / *Some objection?*; unary → *Some unknown X?* / *Any X?* / *X as a priority?* / *Some objection re X?*; multi → *Some one of these?* / *Any of these?* / *Whichever ranks highest?* / *Objection to some of these?*. Unbound *who* / *what* still use the [interrogative special pronoun](pronouns.md#special-pronouns). Negation / NPI-flavored *anything* stays on `/h/` (or similar) when needed — `zor` itself is free-choice, not a negative-polarity marker.
+**Under [polar question](language-reference.md#utterance-markers-j) force:** nullary `zar` / `zor` / `zer` / `zur` → *Something?* / *Anything?* / *Whatever matters most?* / *Some objection?*; unary → *Some unknown X?* / *Any X?* / *X as a priority?* / *Some objection re X?*; multi → *Some one of these?* / *Any of these?* / *Whichever ranks highest?* / *Objection to some of these?*. Unbound *who* / *what* / *where* are these nullary (and other unary/nullary) forms in the queried slot — no separate interrogative pronoun. Negation / NPI-flavored *anything* stays on `/h/` (or similar) when needed — `zor` itself is free-choice, not a negative-polarity marker.
 
 **Not** VP/clause continue: do not write `zam A zar B` as a mid-chain extender; phrase `-r` is the **whole fence** coordinator (`zar` alone, or `zar` + conjuncts), same placement rules as `zam`.
 
@@ -114,7 +114,7 @@ A **one-conjunct** (**unary**) or **zero-conjunct** (**nullary**) fence is allow
 - Nullary **-n** — confirm the conventional empty label (*Null?*, *Draw?*).
 - Nullary / unary / multi **…ar** / **…or** / **…er** / **…ur** — confirm the unspecified-member frame (*Something?*, *Any X?*, *Whatever matters most?*, *Some objection?*) — see [unspecified-member **-r**](#unspecified-member-r-phrase).
 
-Unbound *who* / *what* still use the [interrogative special pronoun](pronouns.md#special-pronouns). **Length 2+** (no separate table): **-l** = pick from this closed menu (esp. **o** / **oe**); **-m** = pick, or name something else — answer ending likewise free; **…ar** / **…or** / **…er** / **…ur** = *some one among these?* / *any of these?* / *whichever ranks highest?* / *objection to some of these?*.
+Unbound *who* / *what* / *where* = nullary forms in the queried slot (esp. **-m** soft fill-ask, or **…ar** / **…or** / **…er** / **…ur**). **Length 2+** (no separate table): **-l** = pick from this closed menu (esp. **o** / **oe**); **-m** = pick, or name something else — answer ending likewise free; **…ar** / **…or** / **…er** / **…ur** = *some one among these?* / *any of these?* / *whichever ranks highest?* / *objection to some of these?*.
 
 **Ranked — unary**
 

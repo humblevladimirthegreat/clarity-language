@@ -156,7 +156,7 @@ Every full sentence includes exactly one **clause-force** `/j/`. The closed set 
 
 Other speech acts (request, promise, wish, evaluative judgment, and so on) are not separate forces yet — express them with ordinary vocabulary under one of these three; the dictionary may add dedicated force forms later.
 
-Content questions (*who* / *what* / *where*) use the [interrogative special pronoun](pronouns.md#special-pronouns) for the queried role and, for now, the same **polar question** force as yes/no questions.
+Content questions (*who* / *what* / *where*) use [phrase-level coordinators](coordination.md#unary-phrase) in the queried slot (PoS prefix = role) under the same **polar question** force as yes/no questions — typically nullary **-m** (soft fill-ask) or nullary / unary / multi **…ar** / **…or** / **…er** / **…ur**; there is no separate interrogative pronoun.
 
 ## Phrase-level, VP-level, and clause-level coordination
 
