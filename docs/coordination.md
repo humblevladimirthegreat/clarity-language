@@ -4,13 +4,13 @@ This page is the source of truth for **phrase-level** (same-slot fence: left pre
 
 PoS prefixes and ordinary word shape: [language-reference.md](language-reference.md). Reference suffixes: [reference-suffix.md](reference-suffix.md). Phonotactics for reserved coordinator roots: [phonology.md](phonology.md#phonotactics).
 
-**List shapes:** **Phrase-level** (NP / AP / `/b/` / `/w/` / `/h/`, and single-word siblings in those slots) uses a **fence** with one prefixed coordinator and optional shared modifiers **immediately after** that coordinator. Phrase **-r** on **a** / **o** / **e** / **u** is the [unspecified-member](#unspecified-member-r-phrase) series (*something* / *anything* / *whatever-by-rank* / *some objection*) — **not** a continue particle. **Left fence** (coordinator before the conjuncts) is preferred; **right close** (coordinator after the conjuncts) is allowed for style or comedy. **VP-level** and **clause-level** share **left-open opener / `-r` continue** — see [opener / `-r`](#opener-r-coordination). Do not borrow VP/clause `-r` nesting into phrase-level chains.
+**List shapes:** **Phrase-level**, **VP-level**, and **clause-level** all use a **fence**: prefixed coordinator plus optional shared modifiers **immediately after** that coordinator; conjuncts juxtaposed (no mid-chain continue particle). **-r** on **a** / **o** / **e** / **u** is the [unspecified-member](#unspecified-member-r-phrase) series at every level (*something* / *anything* / *whatever-by-rank* / *some objection* — VP: *do something* / …; clause: *something happened* / …). **Left fence** (coordinator before the conjuncts) is preferred; **right close** (coordinator after the conjuncts) is allowed for style or comedy. **Nesting** uses extra fences: left stack = right-associative, right stack = left-associative; **pure infix is illegal** — see [fence nesting](#fence-nesting).
 
 Prefixed forms are **joiners** (boolean lists plus directional **ranked conjunction**), not only symmetric conjunctions. Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** are a separate **revision** series — see [below](#in-clause-revision-bare-a--e--o--u).
 
 ## Join type × ending (shared)
 
-**Vowel(s)** choose join type. All coordinators take an ending (no bare vowel) and a **PoS prefix** matching the slot. For every join vowel (**a** / **o** / **u** / **ao** / **e** / **ae** / **oe**), **-l** / **-m** mark **closure**. Phrase-level **-n** marks a **named / conventional** list. Phrase-level **-r** on **a** / **o** / **e** / **u** marks an [unspecified member](#unspecified-member-r-phrase) (*something* / *anything* / *whatever-by-rank* / *some objection*). **VP-level** and **clause-level** **-n** mark **soft packaging** (not named); **-r** continues an open list — see [opener / `-r`](#opener-r-coordination).
+**Vowel(s)** choose join type. All coordinators take an ending (no bare vowel) and a **PoS prefix** matching the slot. For every join vowel (**a** / **o** / **u** / **ao** / **e** / **ae** / **oe**), **-l** / **-m** mark **closure**. Phrase-level **-n** marks a **named / conventional** list. **VP-level** and **clause-level** **-n** mark **soft packaging** (not named) — see [soft **-n**](#soft-n-vp-clause). **-r** on **a** / **o** / **e** / **u** marks an [unspecified member](#unspecified-member-r-phrase) at **every** level (*something* / *anything* / *whatever-by-rank* / *some objection*).
 
 ### Join type (vowel series)
 
@@ -46,14 +46,23 @@ When unsure whether the list is complete, prefer **-m** (open). Use **-l** when 
 <a id="unspecified-member-r-phrase-a--o"></a>
 <a id="something-anything-r"></a>
 
-Phrase-level **-r** on **a** / **o** / **e** / **u** marks an **unspecified member of a domain** — not list continue (VP/clause **-r**), not content-word anaphor **-r**, and not stackable with **-l** / **-m** / **-n**. Other join vowels (**ao** / **ae** / **oe**) take **no** phrase **-r**.
+Prefixed **-r** on **a** / **o** / **e** / **u** marks an **unspecified member of a domain** — not content-word anaphor **-r**, and not stackable with **-l** / **-m** / **-n**. Same series on **phrase** (`/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/`), **VP** (`/v/`), and **clause** (`/x/`). Other join vowels (**ao** / **ae** / **oe**) take **no** **-r**.
 
 | Vowel | Form | Series | Domain reading |
 |-------|------|--------|----------------|
-| **a** | `zar` / `dar` / `bar` / `gar` / `war` / `har` | ***something*** — existential unspecified member of an inventory frame | nullary: unrestricted; unary: kind = the conjunct; multi: among the listed conjuncts |
-| **o** | `zor` / `dor` / `bor` / `gor` / `wor` / `hor` | ***anything*** — free-choice / indifferent pick-one from a menu frame | same arity pattern; free-choice, not epistemic “I don’t know which” |
-| **e** | `zer` / `der` / `ber` / `ger` / `wer` / `her` | ***whatever-by-rank*** — free choice *by preference* (unnamed top / preferred member) | nullary: unrestricted “what matters most”; unary: kind as a priority; multi: whichever ranks highest among the listed |
-| **u** | `zur` / `dur` / `bur` / `gur` / `wur` / `hur` | ***some objection*** — existential unspecified member of a *nor* / denial frame | nullary: some catch / something’s off; unary: some objection involving that kind; multi: objection to some among the listed |
+| **a** | `zar` / `dar` / `bar` / `gar` / `war` / `har` / **`var`** / **`xar`** | ***something*** — existential unspecified member of an inventory frame | nullary: unrestricted; unary: kind = the conjunct; multi: among the listed conjuncts |
+| **o** | `zor` / `dor` / `bor` / `gor` / `wor` / `hor` / **`vor`** / **`xor`** | ***anything*** — free-choice / indifferent pick-one from a menu frame | same arity pattern; free-choice, not epistemic “I don’t know which” |
+| **e** | `zer` / `der` / `ber` / `ger` / `wer` / `her` / **`ver`** / **`xer`** | ***whatever-by-rank*** — free choice *by preference* (unnamed top / preferred member) | nullary: unrestricted “what matters most”; unary: kind as a priority; multi: whichever ranks highest among the listed |
+| **u** | `zur` / `dur` / `bur` / `gur` / `wur` / `hur` / **`vur`** / **`xur`** | ***some objection*** — existential unspecified member of a *nor* / denial frame | nullary: some catch / something’s off; unary: some objection involving that kind; multi: objection to some among the listed |
+
+**VP / clause glosses** (same arity pattern; conjunct = VP or sentence):
+
+| | Nullary | Unary | Multi | Under polar Q |
+|--|---------|-------|-------|---------------|
+| **`var` / `xar`** | *do something* / *something happened* | *some (unspecified) X-ing* / *some (unspecified) claim in frame X* | *some one among these actions / claims* | *What (did they) do?* / *What happened?* / *Which of these?* |
+| **`vor` / `xor`** | *do anything* / *anything (may hold)* | *any X-ing* / *any claim of kind X* | *any of these* | *Do anything?* / *Anything?* / *Any of these?* |
+| **`ver` / `xer`** | *do whatever matters most* / *whatever matters most (as outcome)* | *preferentially some X-ing* / *X as priority claim* | *whichever ranks highest* | *What’s the priority (to do / as outcome)?* |
+| **`vur` / `xur`** | *some catch (re doing)* / *something’s off* | *some objection involving X-ing / claim X* | *objection to some among these* | *What’s the objection?* / *What’s wrong?* |
 
 **Arity** (same length rule as other unary / nullary phrase forms):
 
@@ -70,9 +79,9 @@ Mnemonic: **-r** = member not named; vowel = frame (**a** = inventory existence;
 - `zor A B C` = any of them is fine (**no** order). `zer A B C` = pick / take **by ranking** among them.
 - Revision **`ul` / `um`**: *except* a named right-hand side. Prefixed **`zur`**: unspecified denial in the slot (*some objection*), not an *except*-revision particle.
 
-**Under [polar question](language-reference.md#utterance-markers-j) force:** these forms are the **content-question** series (ask to name the unspecified member). Nullary `zar` / `zor` / `zer` / `zur` → *Who/what?* / *What (anything)?* / *What’s the priority?* / *What’s the objection?*; unary → *What/which (unknown) X?* / *Any X?* / *Which X by rank?* / *What objection re X?*; multi → *Which of these?* / *Any of these?* / *Whichever ranks highest?* / *Objection to which of these?*. The answer **need not** keep **-r**: a fill may be a bare content word, unary **-l** / **-m** / **-n**, or a longer list with any allowed ending. Unbound *who* / *what* / *where* = nullary **-r** in the queried slot (PoS = role) — no separate interrogative pronoun. Negation / NPI-flavored *anything* stays on `/h/` (or similar) when needed — `zor` itself is free-choice, not a negative-polarity marker.
+**Under [polar question](language-reference.md#utterance-markers-j) force:** these forms are the **content-question** series (ask to name the unspecified member). Nullary `zar` / `zor` / `zer` / `zur` → *Who/what?* / *What (anything)?* / *What’s the priority?* / *What’s the objection?*; nullary `var` / `vor` / `ver` / `vur` → *What (did they) do?* / *Do anything?* / *What’s the priority (to do)?* / *What’s the objection (re doing)?*; nullary `xar` / `xor` / `xer` / `xur` → *What happened?* / *Anything?* / *What’s the priority (as outcome)?* / *What’s wrong?*; unary / multi parallel the phrase pattern in the queried slot. The answer **need not** keep **-r**: a fill may be a bare content word, unary **-l** / **-m** / **-n**, or a longer list with any allowed ending. Unbound *who* / *what* / *where* = nullary phrase **-r** in the queried slot (PoS = role); unbound *what did they do?* / *what happened?* = nullary **`var`** / **`xar`** (etc.) — no separate interrogative pronoun. Negation / NPI-flavored *anything* stays on `/h/` (or similar) when needed — `zor` / `vor` / `xor` themselves are free-choice, not negative-polarity markers.
 
-**Not** VP/clause continue: do not write `zam A zar B` as a mid-chain extender; phrase `-r` is the **whole fence** coordinator (`zar` alone, or `zar` + conjuncts), same placement rules as `zam`.
+**-r** is a **whole-fence** coordinator (`zar` / `var` / `xar` alone, or with conjuncts), same placement rules as `zam` / `vam` / `xam`. Do not write `zam A zar B` or `vam A var B` as a mid-chain extender.
 
 ### Ranked conjunction (**e** / **ae** / **oe**)
 <a id="ranked-conjunction-e"></a>
@@ -88,31 +97,31 @@ Mnemonic: **-r** = member not named; vowel = frame (**a** = inventory existence;
 
 English glosses still vary by frame — *prefer A over B*, or *A, else B* — but that **preference vs contingency** contrast is read from context (or marked elsewhere with `/h/`), **not** by a different ending. **ae** vs **oe** only mark whether several conjuncts may be realized along the ladder.
 
-**-l** / **-m** / **-n** on **e** / **ae** / **oe** are the same closure / named senses as on **a** / **o** / **u** / **ao** (closed ladder, open ladder, named conventional order). Opener/`-r` chains keep left-to-right ranking (`vel A ver B ver C` → *A ≻ B ≻ C*, closed; same with `vael`…`vaer` / `voel`…`voer`).
+**-l** / **-m** / **-n** on **e** / **ae** / **oe** are the same closure / named (phrase) or soft (VP/clause) senses as on **a** / **o** / **u** / **ao**. Fence chains keep left-to-right ranking of spoken conjunct order (`vel A B C` → *A ≻ B ≻ C*, closed; same with `vael`… / `voel`… / `xel`…).
 
 | Ending | Form | Reading |
 |--------|------|---------|
-| **-l** | phrase: `zel` / `zael` / `zoel` (and `/d/` `/b/` `/ɡ/` `/w/` `/h/`); opener: `vel` / `vael` / `voel` / `xel` / `xael` / `xoel` | Closed ranked — these ranks only: `zel A B` → *A ≻ B* (exhaustive); `zoel A B C` → *A ≻ B ≻ C* (exclusive, exhaustive) |
-| **-m** | phrase: `zem` / `zaem` / `zoem` …; opener: `vem` / `vaem` / `voem` / `xem` / `xaem` / `xoem` | Open ranked — ranking among these; others may exist |
-| **-n** | phrase: `zen` / `zaen` / `zoen` …; opener: `ven` / `vaen` / `voen` / `xen` / `xaen` / `xoen` (soft) | Phrase: named/conventional order; opener soft: tentative / reconstructed ranking — see [ending senses](#ending-senses) |
+| **-l** | phrase: `zel` / `zael` / `zoel` (and `/d/` `/b/` `/ɡ/` `/w/` `/h/`); VP/clause: `vel` / `vael` / `voel` / `xel` / `xael` / `xoel` | Closed ranked — these ranks only: `zel A B` → *A ≻ B* (exhaustive); `zoel A B C` → *A ≻ B ≻ C* (exclusive, exhaustive) |
+| **-m** | phrase: `zem` / `zaem` / `zoem` …; VP/clause: `vem` / `vaem` / `voem` / `xem` / `xaem` / `xoem` | Open ranked — ranking among these; others may exist |
+| **-n** | phrase: `zen` / `zaen` / `zoen` …; VP/clause: `ven` / `vaen` / `voen` / `xen` / `xaen` / `xoen` (soft) | Phrase: named/conventional order; VP/clause soft: tentative / reconstructed ranking — see [soft **-n**](#soft-n-vp-clause) |
 
 #### Unary and nullary phrase-level
 <a id="unary-phrase"></a>
 <a id="unary-ranked"></a>
 <a id="nullary-phrase"></a>
 
-A **one-conjunct** (**unary**) or **zero-conjunct** (**nullary**) fence is allowed on phrase-level slots (`/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/`) for the forms below. The coordinator alone (nullary), or the coordinator plus one conjunct (unary), fills the slot — optionally with **SHARED** after the coordinator. All other phrase coordinators, and all VP/clause opener chains, stay **two or more** conjuncts — no defined unary or nullary reading.
+A **one-conjunct** (**unary**) or **zero-conjunct** (**nullary**) fence is allowed on phrase-level slots (`/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/`) for the forms below, and on **VP** / **clause** for **…ar** / **…or** / **…er** / **…ur** only (`var` / `vor` / `ver` / `vur` / `xar` / …). The coordinator alone (nullary), or the coordinator plus one conjunct (unary), fills the slot — optionally with **SHARED** after the coordinator. All other VP/clause coordinators (**-l** / **-m** / soft **-n**), and phrase coordinators outside the unary/nullary set, stay **two or more** conjuncts.
 
 **Arity pattern:** length 2+ = ordinary list (or, for **…ar** / **…or** / **…er** / **…ur**, unspecified member among the listed); length 1 = focus / exhaustivity on that singleton (or the matching unspecified-member unary for **-r** forms); length 0 = emptiness in that join frame — except **…ar** / **…or** / **…er** / **…ur**, which are positive unspecified-member readings (*something* / *anything* / *whatever-by-rank* / *some objection*), not emptiness. On other nullary forms, **-l** = empty **and claimed complete** for the frame; **-m** = empty **from the speaker’s list** (often epistemic) with residual existence or residual options outside what’s named; **-n** = named/conventional empty label.
 
-**Under [polar question](language-reference.md#utterance-markers-j) force** (phrase-level only):
+**Under [polar question](language-reference.md#utterance-markers-j) force** (phrase-level for entity/property slots; VP/clause for action/claim slots):
 
 - Unary **-l** / **-n** — confirm the singleton frame (*Just X?*, *Has to be X?*, conventional label).
 - Unary **-m** — **offer** that singleton (*How about X?*, *Want X?*, *Try X first?*).
 - Nullary **-l** — colloquial check on emptiness (*Nothing?*, *No options?*, *Do nothing?*).
 - Nullary **-m** — confirm open emptiness / speaker-style gap (*Got nothing?*, *No pick?*, *No ranking?*) — **not** the primary content-question form.
 - Nullary **-n** — confirm the conventional empty label (*Null?*, *Draw?*).
-- Nullary / unary / multi **…ar** / **…or** / **…er** / **…ur** — **content questions** (ask to name the unspecified member): unbound *who* / *what* / *where*, *any X?*, *which of these?*, *what’s the priority?*, *what’s the objection?* — see [unspecified-member **-r**](#unspecified-member-r-phrase). Answer ending free (need not keep **-r**).
+- Nullary / unary / multi **…ar** / **…or** / **…er** / **…ur** — **content questions** (ask to name the unspecified member): unbound *who* / *what* / *where*, *what did they do?*, *what happened?*, *any X?*, *which of these?*, *what’s the priority?*, *what’s the objection?* — see [unspecified-member **-r**](#unspecified-member-r-phrase). Answer ending free (need not keep **-r**).
 
 Unbound *who* / *what* / *where* = nullary **…ar** / **…or** / **…er** / **…ur** in the queried slot. **Length 2+** (no separate table): **-l** = pick from this closed menu (esp. **o** / **oe**); **-m** = pick, or name something else — answer ending likewise free; **…ar** / **…or** / **…er** / **…ur** = content Q among the listed (*which of these?* / *any of these?* / *whichever ranks highest?* / *objection to which of these?*).
 
@@ -181,9 +190,9 @@ Do not confuse prefixed **…em** / **…el** / **…en** / **…er** / **…al*
 - **Exclusive (`o`)** — pick **one** of the conjuncts, not more than one.
 - **Inclusive (`ao`)** — one **or** more of the conjuncts may hold (English *and/or*). Built by combining **a** with **o**; bare **o** stays exclusive.
 - ***Nor* (`u`)** — **none** of the conjuncts hold (*neither…nor…*). The realized set from the list is empty. **-l** vs **-m** still marks whether that denial is limited to the listed items (**…ul**) or leaves room for further denials outside the list (**…um**); **-n** names a conventional denial bundle.
-- **Ranked (`e` / `ae` / `oe`)** — ordered ranking, not a boolean *and*/*or*. First listed outranks second, and so on. **e** leaves exclusivity unmarked; **ae** = co-satisfiable ranked (**a**+**e**); **oe** = exclusive ranked (**o**+**e**). **-l** / **-m** / **-n** still mark closed / open / named (phrase) or soft (opener) packaging of that ladder.
+- **Ranked (`e` / `ae` / `oe`)** — ordered ranking, not a boolean *and*/*or*. First listed outranks second, and so on. **e** leaves exclusivity unmarked; **ae** = co-satisfiable ranked (**a**+**e**); **oe** = exclusive ranked (**o**+**e**). **-l** / **-m** / **-n** still mark closed / open / named (phrase) or soft (VP/clause) packaging of that ladder.
 
-**a** is ordinary conjunction (*and*), not an *or*. Phrase-level forms (**a** / **o** / **u** / **ao** / **e** / **ae** / **oe**) take **-l**, **-m**, or **-n** (named); **a** / **o** / **e** / **u** also take **-r** ([unspecified-member](#unspecified-member-r-phrase)). **ao** / **ae** / **oe** never take phrase **-r**. VP-level and clause-level forms take **-l**, **-m**, soft **-n**, or continue **-r**.
+**a** is ordinary conjunction (*and*), not an *or*. All levels take **-l**, **-m**, or **-n** (named at phrase; soft at VP/clause) on **a** / **o** / **u** / **ao** / **e** / **ae** / **oe**; **a** / **o** / **e** / **u** also take **-r** ([unspecified-member](#unspecified-member-r-phrase)). **ao** / **ae** / **oe** never take **-r**.
 
 There are **no** bare (prefix-less) **coordinators**. Prefixed joiners always have a PoS prefix + ending (`zam`, `val`, …). Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** are [in-clause revision](#in-clause-revision-bare-a--e--o--u) only — not list joiners. Whole-word **a** / **e** / **o** / **u** (no ending) are **illegal**.
 
@@ -194,7 +203,7 @@ There are **no** bare (prefix-less) **coordinators**. Prefixed joiners always ha
 <a id="bare-revision"></a>
 <a id="in-clause-revision"></a>
 
-Prefix-less vowel + **-l** / **-m** / **-n** forms are **revision** operators inside one clause. Each `REV` pairs a fixed left side **A** with one right-hand side. They are **not** coordinators: they do not take **-r**, and they do not join full sentences. An ending is **required**: **-l** / **-m** mark **completeness of that right-hand side**; **-n** marks a **named / conventional** revision (same mnemonic as phrase-level join **-n**, not opener soft **-n**).
+Prefix-less vowel + **-l** / **-m** / **-n** forms are **revision** operators inside one clause. Each `REV` pairs a fixed left side **A** with one right-hand side. They are **not** coordinators: they do not take **-r**, and they do not join full sentences. An ending is **required**: **-l** / **-m** mark **completeness of that right-hand side**; **-n** marks a **named / conventional** revision (same mnemonic as phrase-level join **-n**, not VP/clause soft **-n**).
 
 ### Meanings (vowel)
 
@@ -217,7 +226,7 @@ Every revision word **must** take **-l**, **-m**, or **-n**; unmarked **a** / **
 | **-m** | `am` / `em` / `om` / `um` | **Open** — that right-hand side is non-exhaustive: including B *among others* · except B *(and maybe more)* · B is *a* replacement · B is *a* better wording. |
 | **-n** | `an` / `en` / `on` / `un` | **Named / conventional** — A (and/or this A–side revision) is invoked as an established titled, formulaic, or canonical frame (*the primary colors, including red*; *RGB except blue*; a stock *tea→coffee* swap; a conventional *happy, or rather content* rephrase). Completeness is whatever that designation already fixes. |
 
-Same mnemonic as phrase-level [named **-n**](#named--conventional-ending-phrase-level-all-join-vowels) and content-word [proper name **-n**](reference-suffix.md#proper-name--n): definite by established label. **Not** opener soft **-n** (*and then…* / tentative reconstruction). No **-r** (multi-side revision uses [parallel chains](#revision-chains-parallel-on-a), not a continue particle). When unsure between closed and open, prefer **-m**; use **-n** when you are naming a conventional frame rather than composing an inventory.
+Same mnemonic as phrase-level [named **-n**](#named--conventional-ending-phrase-level-all-join-vowels) and content-word [proper name **-n**](reference-suffix.md#proper-name--n): definite by established label. **Not** VP/clause soft **-n** (*and then…* / tentative reconstruction). No **-r** (multi-side revision uses [parallel chains](#revision-chains-parallel-on-a), not a fence particle). When unsure between closed and open, prefer **-m**; use **-n** when you are naming a conventional frame rather than composing an inventory.
 
 | | **-l** | **-m** | **-n** |
 |--|--------|--------|--------|
@@ -255,7 +264,7 @@ A chain `A REV₁ B REV₂ C …` is **not** right-associative nesting and **not
 
 Not the nested English parse *including (B except C)*. For that, put the inner revision **inside** one side (e.g. the B-side is itself a revised phrase), not as a second **REV** in the chain.
 
-Same-vowel repeats are just the parallel rule with identical particles (`A am B am C` = multi-include under A). There is **no** separate **-r** continue form.
+Same-vowel repeats are just the parallel rule with identical particles (`A am B am C` = multi-include under A). There is **no** fence **-r** on revision particles.
 
 ### Examples (schematic)
 
@@ -297,9 +306,9 @@ Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om*
 <a id="left-fence"></a>
 <a id="right-close"></a>
 
-Phrase-level coordinators join **same-slot** conjuncts (single words or multi-word phrases) with a **fence**: one prefixed coordinator plus optional **shared** modifiers **immediately after** that coordinator. Same vowel series and endings as above (**-l** / **-m** / **-n** on **a** / **o** / **u** / **ao** / **e** / **ae** / **oe**; **-r** on **a** / **o** / **e** / **u** for [unspecified-member](#unspecified-member-r-phrase); not plural **-sh**). Slots differ only in **which prefix** the coordinator takes and **what counts as a conjunct**.
+Phrase-level coordinators join **same-slot** conjuncts (single words or multi-word phrases) with a **fence**: prefixed coordinator(s) plus optional **shared** modifiers **immediately after** each coordinator. Same vowel series and endings as above (**-l** / **-m** / **-n** on **a** / **o** / **u** / **ao** / **e** / **ae** / **oe**; **-r** on **a** / **o** / **e** / **u** for [unspecified-member](#unspecified-member-r-phrase); not plural **-sh**). Slots differ only in **which prefix** the coordinator takes and **what counts as a conjunct**. Flat lists use one fence; nested joins use [fence nesting](#fence-nesting). **Pure infix is illegal** (`A zam B zal C`).
 
-**Fence — not VP/clause opener/`-r` continue.** One prefixed coordinator per list. No mid-chain particle (`A zam B` is illegal), no continue-style `-r` between conjuncts, no double fence (`zam A B zam` is illegal). Phrase `zar` / `zor` / `zer` / `zur` are whole-fence coordinators (unspecified-member series), not mid-chain extenders — do not write `zam A zar B` for a flat phrase list.
+**Fence — juxtaposed conjuncts.** No continue particle between conjuncts (`zam A B`, not `zam A zar B` for a flat *and*). `zar` / `zor` / `zer` / `zur` are whole-fence unspecified-member coordinators, not mid-chain extenders.
 
 **Placement:** **Left fence** (coordinator before the conjuncts) is **preferred**. **Right close** (coordinator after the conjuncts) is allowed for **style or comedy**. Shared modifiers stay **right after the coordinator** in either placement.
 
@@ -338,7 +347,7 @@ PHRASE  P-COORD  ( SHARED )*                         ← unary (allowed forms)
 P-COORD  ( SHARED )*                                 ← nullary (same as left when empty)
 ```
 
-- **P-COORD** — one of the prefixed forms above (`zam`, `dol`, `bem`, `gam`, `wam`, `ham`, `zar`, `zor`, `zer`, `zur`, …). Appears **only once** per list: either **before** all conjuncts (left) or **after** all conjuncts (right) — not both, and not between conjuncts.
+- **P-COORD** — one of the prefixed forms above (`zam`, `dol`, `bem`, `gam`, `wam`, `ham`, `zar`, `zor`, `zer`, `zur`, …). For a **flat** list, appears **only once**: either **before** all conjuncts (left) or **after** all conjuncts (right) — not between conjuncts. For **nested** lists, multiple fences stack — see [fence nesting](#fence-nesting). **Pure infix** (`A zam B zal C`) is illegal.
 - **SHARED** — optional material **immediately after** `P-COORD` in either placement. **Always** scopes over the **whole coordinated phrase** (NP: `/ɡ/` / `/w/` / complex `/ɡ/`+`/b/`; AP: `/w/`; `/w/`-slot and `/h/`-slot joins: further same-slot material only if the lexicon allows stacking on the join as a unit). Shared `/ɡ/` / `/w/` here sit next to the fence (before the heads they grade on the left; after the list on the right) — the fence defines the host unit.
 - **PHRASE** — a conjunct: NP headed by `/z/`, `/d/`, or `/b/` (plus that head’s following local `/ɡ/` / `/w/` / `/b/` material); AP headed by `/ɡ/` (plus contiguous `/b/`, further `/ɡ/` on that `/b/`, and local `/w/`); or a single `/w/` / `/h/` word (plus `/h/`’s contiguous `/b/` when complex). Local modifiers stay **inside** their conjunct, after that conjunct’s head.
 - Two conjuncts (left): `P-COORD  PHRASE  PHRASE`. Two (right): `PHRASE  PHRASE  P-COORD`. Three or more: same pattern with more `PHRASE` items on the conjunct side of `P-COORD`.
@@ -425,9 +434,9 @@ Complex adjective on an NP bundle: `zam g-ofl b-Samn z-dogl z-catl` or `z-dogl z
 
 - **One slot** — the chain is a single subject, object, `/b/` argument, `/ɡ/` stack position, `/w/` stack, or `/h/` floating unit in the clause.
 - **Matching role prefix** on every conjunct head and on the coordinator.
-- **One fence placement** — left (preferred) or right (style / comedy); never mid-chain between conjuncts; never both ends of the same list.
-- **Shared modifiers** — only in the slot immediately after `P-COORD` (left or right); local modifiers stay after their own heads.
-- **Phrase `-r`** — only **`…ar`** / **`…or`** / **`…er`** / **`…ur`** ([unspecified-member](#unspecified-member-r-phrase)); not continue nesting; no clause soft **-n**; no plural **-sh** on the coordinator.
+- **One fence placement per flat list** — left (preferred) or right (style / comedy); never pure infix between conjuncts. Nested joins: [fence nesting](#fence-nesting).
+- **Shared modifiers** — only in the slot immediately after each `P-COORD` (left or right); local modifiers stay after their own heads.
+- **Phrase `-r`** — only **`…ar`** / **`…or`** / **`…er`** / **`…ur`** ([unspecified-member](#unspecified-member-r-phrase)); no plural **-sh** on the coordinator. Soft **-n** is VP/clause only.
 - **Not** verb+object packages — use [VP-level](#vp-level-coordination); **not** full sentences — those stay `/x/`…
 - **Not** mixed-PoS joins; correlatives; `/x/` sentence linkers (*however*, *therefore*), general adversative *but*, quotation fences, or [numbered enumeration](numbers.md#number-as-discourse-marker-by-marker). In-clause *including* / *rather* / *instead* / *except* are [bare revision](#in-clause-revision-bare-a--e--o--u), not this fence series. Phrase-level ranked conjunction **is** this series (`zel` / `zael` / `zoel` / `zem` / …). Unary / nullary phrase only for the forms in [unary and nullary](#unary-phrase) (**…ul** / **…um** / **…an** nullary-only; **…ar** / **…or** / **…er** / **…ur** at all arities = *something* / *anything* / *whatever-by-rank* / *some objection*; **…en** nullary = *it’s a draw*, **…an** nullary = *null* / *void*).
 
@@ -437,154 +446,161 @@ Under `/z/`, `/d/`, `/b/`, `/ɡ/`, `/w/`, and `/h/`, the coordination vowel seri
 
 ---
 
-# Opener / `-r` coordination (VP and clause)
+# Fence nesting (all levels)
+<a id="fence-nesting"></a>
 <a id="opener-r-coordination"></a>
 <a id="vowels--endings"></a>
 <a id="ending-senses-clause-coordinators"></a>
 
-**VP-level** (`/v/`) and **clause-level** (`/x/`) share one **left-open** list shape: the opener comes **first**, then the first conjunct, then **-r** before **every** further conjunct (including the second). **-l** / **-m** / soft **-n** open a new list; **-r** continues it. This is **not** [phrase-level fence](#phrase-level-coordination) (phrase uses one fence left or right, juxtaposed conjuncts; phrase **-r** on **a** / **o** / **e** / **u** is [unspecified-member](#unspecified-member-r-phrase), not continue). Do not write `vam A B` without `var`, and do not put a conjunct before the opener.
+Flat coordination uses **one** fence (left or right). **Nested** joins use **more than one** fence of the same PoS prefix. Association follows fence side:
 
-Join-type vowels are the same as elsewhere. Endings use soft **-n** and continue **-r**, not phrase named **-n**.
+| Pattern | Associativity | Example | Reading |
+|---------|---------------|---------|---------|
+| **Left fence stack** | **Right-associative** | `vol A val B C` | *A ∨ (B ∧ C)* — later fence is one conjunct of the earlier |
+| **Right close stack** | **Left-associative** | `A B vol C val` | *(A ∨ B) ∧ C* — each close folds what’s to its left, then that group joins the next |
 
-## Forms
+Flat n-ary (one fence): `vol A B C` / `A B C vol` → *A ∨ B ∨ C*. Nested same-vowel: `vol A vol B C` → *A ∨ (B ∨ C)*; `A B vol C vol` → *(A ∨ B) ∨ C*.
 
-Word shape: prefix + vowel root (+ second vowel for stacked forms) + ending. Writing glues stacked vowels (`vaol`, `vael`, `voel`, `xaol`, …). Spoken order is first vowel then second, then the ending — same as phrase-level `zaol` / `zael` / `zoel`.
+**Pure infix is illegal:** do not write `A vol B val C` (coordinator between every pair with neither a clean left stack nor a clean right stack). Use all-left or all-right nesting, or a flat single fence.
 
-| | **-l** | **-m** | **-n** soft | **-r** continue |
-|---|--------|--------|-------------|-----------------|
-| **a** (*and*) | `val` / `xal` closed | `vam` / `xam` open | `van` / `xan` | `var` / `xar` |
-| **o** (xor) | `vol` / `xol` closed | `vom` / `xom` open | `von` / `xon` | `vor` / `xor` |
-| **u** (*nor*) | `vul` / `xul` closed | `vum` / `xum` open | `vun` / `xun` | `vur` / `xur` |
-| **ao** (and/or) | `vaol` / `xaol` closed | `vaom` / `xaom` open | `vaon` / `xaon` | `vaor` / `xaor` |
-| **e** (ranked) | `vel` / `xel` closed | `vem` / `xem` open | `ven` / `xen` | `ver` / `xer` |
-| **ae** (co-sat. ranked) | `vael` / `xael` closed | `vaem` / `xaem` open | `vaen` / `xaen` | `vaer` / `xaer` |
-| **oe** (excl. ranked) | `voel` / `xoel` closed | `voem` / `xoem` open | `voen` / `xoen` | `voer` / `xoer` |
+Same rule at phrase, VP, and clause level (`zol A zal B C`, `vol A val B C`, `xol A xal B C`, …). Shared modifiers stay immediately after **each** fence particle they attach to.
 
-Prefix: **`/v/`** for [VP-level](#vp-level-coordination); **`/x/`** for [clause-level](#clause-level-coordination).
+---
 
-## Ending senses
+# Soft **-n** (VP and clause)
+<a id="soft-n-vp-clause"></a>
+<a id="ending-senses"></a>
 
-**-l**, **-m**, and **-n** always **start a new list** (where that ending is allowed). They never extend an open list. **-r** is the **only** way to add another conjunct to the list most recently opened by a matching root. Continuations inherit the opener’s join type and its **-l** / **-m** closure reading (or soft **-n** packaging). A second **-l** / **-m** / **-n** nests (right-associative).
+On **`/v/`** and **`/x/`** only, **-n** is **soft packaging** (not phrase named/conventional **-n**). Soft lists use the same **fence** shape as **-l** / **-m** (left preferred; right close allowed; nesting per [fence nesting](#fence-nesting)). Soft lists do **not** carry a separate closed/open bit; treat completeness as open-leaning unless you upgrade to a committed **-l** / **-m** fence (optionally with `/h/` evidential hedges). Per vowel:
 
-- **-l** / **-m** on **a** / **o** / **u** / **ao** / **e** / **ae** / **oe** — Open a **new**, **committed** list with **closed** (**-l**) or **open** (**-m**) completeness (`val` / `xal` = both hold, full set; `vom` / `xom` = pick one, other options may exist; `vel` / `xel` = ranked ladder, these ranks only; `voel` / `xoel` = exclusive ranked, these ranks only; and so on).
-- **-l** / **-m** on **e** / **ae** / **oe** specifically — Same closure bits on a **ranked** join (left-to-right rank; see [ranked conjunction](#ranked-conjunction-e)):
-  - **`vel` / `xel`** — closed ranked (exclusivity unmarked): `vel A ver B` → *A ≻ B* (exhaustive); `vel A ver B ver C` → *A ≻ B ≻ C*.
-  - **`vael` / `xael`** — closed **co-satisfiable** ranked: same order; one or more may hold.
-  - **`voel` / `xoel`** — closed **exclusive** ranked: same order; pick / try one.
-  - **`vem` / `xem`**, **`vaem` / `xaem`**, **`voem` / `xoem`** — open counterparts (other ranks may exist outside the list).
-- **-n** — Opens a **new** list with **soft** packaging (**all** join vowels): **narrative sequence** (**a**), **uncertain reconstruction** (**o** / **u** / **ao**), or **tentative ranking** (**e** / **ae** / **oe**) — not a second boolean table, and not dramatic metaphor. **Different from phrase `-n`:** soft packaging, not named/conventional list (phrase-level **zan** / **zen** / **zaen** / **zoen** / **gan** / …). Soft lists do **not** carry a separate closed/open bit; treat completeness as open-leaning unless you upgrade to a committed **-l** / **-m** opener (optionally with `/h/` evidential hedges). Per vowel:
-  - **`van` / `xan`** (*and*) — *and then…* (temporal / story sequence, not mere logical *and*).
-  - **`von` / `xon`** (*xor*) — *or maybe…* — uncertain alternatives (typically without claiming those are all the guesses).
-  - **`vun` / `xun`** (*nor*) — *and it wasn’t… either* / *nor, as I recall…* — soft denial chain while reconstructing what did not hold.
-  - **`vaon` / `xaon`** (*and/or*) — *and/or maybe…* — soft multi-fit without a hard completeness claim.
-  - **`ven` / `xen`** (*ranked*) — *maybe prefer… / else maybe…* — soft or reconstructed ranking (exclusivity unmarked; preference vs fallback still from context).
-  - **`vaen` / `xaen`** (*co-sat. ranked*) — soft ranked multi-fit (*maybe prefer A, then also B…*).
-  - **`voen` / `xoen`** (*excl. ranked*) — soft exclusive ranked fallback (*maybe A, else maybe B…*).
-- **-r** — **Continues** the most recently opened list whose root matches (`va…` / `xa…`, `vo…` / `xo…`, `ve…` / `xe…`, `vae…` / `xae…`, `voe…` / `xoe…`, …). Required before **every** non-initial conjunct (the second item and beyond). On `/x/`, fits “same linker again” — see [pronouns.md](pronouns.md).
+| Form | Soft reading |
+|------|----------------|
+| **`van` / `xan`** (*and*) | *and then…* (temporal / story sequence, not mere logical *and*) |
+| **`von` / `xon`** (*xor*) | *or maybe…* — uncertain alternatives |
+| **`vun` / `xun`** (*nor*) | *and it wasn’t… either* / *nor, as I recall…* — soft denial while reconstructing |
+| **`vaon` / `xaon`** (*and/or*) | *and/or maybe…* — soft multi-fit |
+| **`ven` / `xen`** (*ranked*) | *maybe prefer… / else maybe…* — soft or reconstructed ranking (exclusivity unmarked) |
+| **`vaen` / `xaen`** (*co-sat. ranked*) | soft ranked multi-fit |
+| **`voen` / `xoen`** (*excl. ranked*) | soft exclusive ranked fallback |
 
 Titled / official discourse labels stay **other** `/x/`…**-n** forms (different roots, not this vowel series) — see [reference-suffix.md](reference-suffix.md#discourse-markers-x).
 
-## Shape
+---
+
+# VP / clause forms (endings)
+<a id="vp-clause-forms"></a>
+
+Word shape: prefix + vowel root (+ second vowel for stacked forms) + ending. Writing glues stacked vowels (`vaol`, `vael`, `voel`, `xaol`, …). Spoken order is first vowel then second, then the ending — same as phrase-level `zaol` / `zael` / `zoel`.
+
+| | **-l** | **-m** | **-n** soft | **-r** unspecified |
+|---|--------|--------|-------------|---------------------|
+| **a** (*and*) | `val` / `xal` closed | `vam` / `xam` open | `van` / `xan` | `var` / `xar` |
+| **o** (xor) | `vol` / `xol` closed | `vom` / `xom` open | `von` / `xon` | `vor` / `xor` |
+| **u** (*nor*) | `vul` / `xul` closed | `vum` / `xum` open | `vun` / `xun` | `vur` / `xur` |
+| **ao** (and/or) | `vaol` / `xaol` closed | `vaom` / `xaom` open | `vaon` / `xaon` | — |
+| **e** (ranked) | `vel` / `xel` closed | `vem` / `xem` open | `ven` / `xen` | `ver` / `xer` |
+| **ae** (co-sat. ranked) | `vael` / `xael` closed | `vaem` / `xaem` open | `vaen` / `xaen` | — |
+| **oe** (excl. ranked) | `voel` / `xoel` closed | `voem` / `xoem` open | `voen` / `xoen` | — |
+
+Prefix: **`/v/`** for [VP-level](#vp-level-coordination); **`/x/`** for [clause-level](#clause-level-coordination). **-r** only on **a** / **o** / **e** / **u** — see [unspecified-member](#unspecified-member-r-phrase). No `vaor` / `xaor` / `vaer` / `xaer` / `voer` / `xoer`.
+
+**-l** / **-m** — committed closed / open lists (same senses as phrase). Soft **-n** — [above](#soft-n-vp-clause). **-r** — unspecified-member / content Q, not list continue.
+
+**Flat fence shape** (same as phrase):
 
 ```
-OPEN  ITEM  ( CONT  ITEM )+     ← one flat list (left-open; at least two conjuncts)
+COORD  ( SHARED )*  ITEM  ITEM  ( ITEM )*     ← left (preferred); two or more for -l/-m/-n
+ITEM  ITEM  ( ITEM )*  COORD  ( SHARED )*     ← right close
+COORD  ( SHARED )*  ITEM                       ← unary …ar/…or/…er/…ur only
+COORD  ( SHARED )*                             ← nullary …ar/…or/…er/…ur only
 ```
 
-- **OPEN** — **-l**, **-m**, or **-n** where allowed (`val` / `xal`, `vam` / `xam`, `van` / `xan`, `vel` / `xel`, `vael` / `xael`, `voel` / `xoel`, …). Always begins a **new** list. There is **no** conjunct before the opener.
-- **ITEM** — a [VP](#vp-level-coordination) or a full [sentence](#clause-level-coordination), depending on level.
-- **CONT** — **-r** only (`var` / `xar`, `vor` / `xor`, `ver` / `xer`, `vaer` / `xaer`, `voer` / `xoer`, …). Required before each non-initial item. Do **not** use another **-l** / **-m** / **-n** if you mean “one more item in this list.”
+Examples (flat): `vam A B` / `A B vam` → *A and B* (open); `val A B C` → closed three-way *and*; `van A B C` → *A and then B and then C*; `vel A B` → *A ≻ B*; `var` → *do something*; `xar` → *something happened*.
 
-**Flat list** — open once, then only **-r**:
-
-- Two: `vam A var B` / `xam A xar B` → *A and B* (open)
-- Two closed: `val A var B` / `xal A xar B` → *A and B* (closed)
-- Three+: `val A var B var C` / `xal A xar B xar C` → one closed *and*-list of three
-- Soft sequence: `van A var B var C` / `xan A xar B xar C` → *A and then B and then C*
-- Ranked (closed, unmarked): `vel A ver B` / `xel A xer B` → *A ≻ B*; three+: `vel A ver B ver C` / `xel A xer B xer C`
-- Co-satisfiable ranked: `vael A vaer B` / `xael A xaer B`; open: `vaem A vaer B` / `xaem A xaer B`
-- Exclusive ranked: `voel A voer B` / `xoel A xoer B`; soft: `voen A voer B voer C` / `xoen A xoer B xoer C`
-- Ranked (open / soft unmarked): `vem A ver B` / `xem A xer B`; `ven A ver B ver C` / `xen A xer B xer C`
-
-**Nesting** — a second **-l** / **-m** / **-n** starts an inner list; reading is **right-associative**:
-
-- `vol A vol B var C` / `xol A xol B xor C` → *A or (B or C)* — two lists, not one three-way *or*
-- `val A vol B var C var D` / `xal A xol B xor C xor D` → *A and (B or C or D)*
-
-To get a flat three-way *or*, write `vol A vor B vor C` / `xol A xor B xor C`, not `vol A vol B var C` / `xol A xol B xor C`.
+Nesting: [fence nesting](#fence-nesting) — e.g. `vol A val B C` → *A or (B and C)*; `A B vol C val` → *(A or B) and C*.
 
 ---
 
 # VP-level coordination
 
-VP-level coordinators join **verb phrases** inside one clause: each conjunct is a verb plus that verb’s own object material (`/d/` NP, including phrase-level structure on the object), unless a shared object sits before the opener (below). They share one clause subject (`/z/`) and one [clause force](language-reference.md#utterance-markers-j). The coordinator prefix is always **`/v/`**. Forms, ending senses, and flat/nested shape: [opener / `-r`](#opener-r-coordination).
+VP-level coordinators join **verb phrases** inside one clause: each conjunct is a verb plus that verb’s own object material (`/d/` NP, including phrase-level structure on the object), unless a shared object sits before a left fence (below). They share one clause subject (`/z/`) and one [clause force](language-reference.md#utterance-markers-j). The coordinator prefix is always **`/v/`**. Forms and endings: [VP / clause forms](#vp-clause-forms). Shape and nesting: [fence nesting](#fence-nesting). Soft **-n**: [soft **-n**](#soft-n-vp-clause). Unspecified **-r**: [unspecified-member](#unspecified-member-r-phrase).
 
 ## Conjuncts and scope
 
 - **VP** — one verb (`/v/` content word) plus that verb’s own `/d/` object material when present (simple object or [phrase-level](#phrase-level-coordination) object chain). Object NPs may include their `/ɡ/` / `/w/` / `/b/` stacks. The shared `/z/` subject is **outside** the VP chain.
-- **Shared object (verb-only conjuncts)** — when every conjunct is a bare verb (no per-conjunct `/d/`), a `/d/` **immediately before** the opener scopes over **all** verbs alike: `d-applel vam v-washl var v-eatl` → *washed and ate an apple*. If any conjunct carries its own `/d/`, do not use a pre-opener shared object; put objects inside each conjunct.
-- **`/h/` scope relative to the opener**
-  - **`/h/` before the VP opener** (outside the chain) → applies to **every** conjunct (*quickly washed and ate*).
-  - **`/h/` inside a conjunct** (after that conjunct begins, before the next `var` / … or end of chain) → applies to **that VP only**.
-  - **`/h/` after the whole VP chain** → attaches to the **last** conjunct only. For shared manner/mood over all VPs, put `/h/` before the opener.
+- **Shared object (verb-only conjuncts)** — when every conjunct is a bare verb (no per-conjunct `/d/`), a `/d/` **immediately before** a left-fence coordinator scopes over **all** verbs alike: `d-applel vam v-washl v-eatl` → *washed and ate an apple*. If any conjunct carries its own `/d/`, do not use a pre-fence shared object; put objects inside each conjunct.
+- **`/h/` scope relative to the fence**
+  - **`/h/` before a left-fence VP coordinator** (outside the chain) → applies to **every** conjunct (*quickly washed and ate*).
+  - **`/h/` inside a conjunct** (after that conjunct begins, before the next conjunct head or end of chain) → applies to **that VP only**.
+  - **`/h/` after the whole VP chain** → attaches to the **last** conjunct only. For shared manner/mood over all VPs, put `/h/` before the left fence.
 - Other non-VP clause material (subject, clause force) stays outside the chain.
 
 ### Examples (schematic)
 
-- `vam d-applel v-eatl var d-waterl v-drinkl` → *(ate an apple) and (drank water)* (open)
-- `val d-applel v-eatl var d-waterl v-drinkl var d-breadl v-bakel` → closed *and* of three VPs
-- `van v-runl var v-jumpl var v-restl` → *ran and then jumped and then rested*
-- `vel d-applel v-eatl ver d-cakel v-eatl` → *ate an apple ≻ ate a cake* (closed ranked, exclusivity unmarked)
-- `voel d-bugl v-fixl voer d-workaroundl v-addl` → *fix the bug ≻ add a workaround* (closed exclusive ranked)
-- `voen v-runl voer v-hidel voer v-fightl` → soft exclusive triage *run ≻ hide ≻ fight*
-- `vem d-applel v-eatl ver d-waterl v-drinkl` → *ate an apple ≻ drank water* (open ranked, unmarked)
-- `h-quicklyl vam d-applel v-eatl var d-waterl v-drinkl` → *quickly* *(ate an apple and drank water)*
-- `vam d-applel v-eatl h-quicklyl var d-waterl v-drinkl` → *(quickly ate an apple) and (drank water)*
-- `d-applel vam v-washl var v-eatl` → *washed and ate an apple* (shared object before opener)
+- `vam d-applel v-eatl d-waterl v-drinkl` → *(ate an apple) and (drank water)* (open); `d-applel v-eatl d-waterl v-drinkl vam` → same with right close
+- `val d-applel v-eatl d-waterl v-drinkl d-breadl v-bakel` → closed *and* of three VPs
+- `van v-runl v-jumpl v-restl` → *ran and then jumped and then rested*
+- `vel d-applel v-eatl d-cakel v-eatl` → *ate an apple ≻ ate a cake* (closed ranked, exclusivity unmarked)
+- `voel d-bugl v-fixl d-workaroundl v-addl` → *fix the bug ≻ add a workaround* (closed exclusive ranked)
+- `voen v-runl v-hidel v-fightl` → soft exclusive triage *run ≻ hide ≻ fight*
+- `vem d-applel v-eatl d-waterl v-drinkl` → *ate an apple ≻ drank water* (open ranked, unmarked)
+- `h-quicklyl vam d-applel v-eatl d-waterl v-drinkl` → *quickly* *(ate an apple and drank water)*
+- `vam d-applel v-eatl h-quicklyl d-waterl v-drinkl` → *(quickly ate an apple) and (drank water)*
+- `d-applel vam v-washl v-eatl` → *washed and ate an apple* (shared object before left fence)
+- `vol d-applel v-eatl val d-waterl v-drinkl d-breadl v-bakel` → *ate an apple, or ((drank water) and (baked bread))* (left nest)
+- `d-applel v-eatl d-waterl v-drinkl vol d-breadl v-bakel val` → *((ate an apple) or (drank water)) and (baked bread)* (right nest)
+- `var` → *do something*; `var v-runl` → *some (unspecified) running*; `vor v-runl v-jumpl` → *any of running or jumping*
+- Under polar Q: `var` → *What (did they) do?*; `vur` → *What’s the objection (re doing)?*
 
 ## Constraints
 
 - **One clause** — one `/j/` force, one shared `/z/` subject (when present).
-- **Each conjunct has its own verb**; objects are per-conjunct unless the shared-object-before-opener pattern applies.
-- **`/h/`** follows the before-opener / inside-conjunct / after-chain rules above.
+- **Each conjunct has its own verb**; objects are per-conjunct unless the shared-object-before-left-fence pattern applies.
+- **`/h/`** follows the before-fence / inside-conjunct / after-chain rules above.
 - **No gapping** of subject or object across VPs (beyond the shared-object pattern).
 - **No `-sh`** on the coordinator.
-- **Left-open** — opener first; `-r` before every non-initial VP.
+- **Fence** — left preferred, right close allowed; nesting per [fence nesting](#fence-nesting); **no pure infix**.
+- **-r** is unspecified-member (`var` / `vor` / `ver` / `vur`), not continue; unary/nullary allowed on those forms only among VP coordinators.
 - **Not** full sentences — those stay `/x/`…; **not** phrase-level NP/AP joins — those stay [phrase-level](#phrase-level-coordination).
 
 ## Reserved forms
 
-Under `/v/`, the coordination vowel series plus an allowed ending (`val`, `vam`, `van`, `var`, … `vel`, `vem`, `ven`, `ver`, `vael`, `vaem`, `vaen`, `vaer`, `voel`, `voem`, `voen`, `voer`) are **only** these VP coordinators — not ordinary content verbs with those vowel roots. Other roots under `/v/` are unchanged.
+Under `/v/`, the coordination vowel series plus an allowed ending (`val`, `vam`, `van`, `var`, `vol`, `vom`, `von`, `vor`, `vul`, `vum`, `vun`, `vur`, `vaol`, `vaom`, `vaon`, `vel`, `vem`, `ven`, `ver`, `vael`, `vaem`, `vaen`, `voel`, `voem`, `voen`) are **only** these VP coordinators — not ordinary content verbs with those vowel roots. No stacked-vowel **-r** (`vaor`, `vaer`, `voer`). Other roots under `/v/` are unchanged.
 
 ---
 
 # Clause-level coordination
 
-Clause-level coordinators join **full sentences**. They are **`/x/`** discourse markers whose **root is the same vowel series** as phrase- and VP-level coordination. They take a [reference-suffix letter](reference-suffix.md): **-l**, **-m**, **-n**, or **-r**. They do **not** take plural **-sh**. Forms, ending senses, and flat/nested shape: [opener / `-r`](#opener-r-coordination) (**left-open**, same as VP).
+Clause-level coordinators join **full sentences**. They are **`/x/`** discourse markers whose **root is the same vowel series** as phrase- and VP-level coordination. They take a [reference-suffix letter](reference-suffix.md): **-l**, **-m**, **-n**, or **-r**. They do **not** take plural **-sh**. Forms: [VP / clause forms](#vp-clause-forms). Shape and nesting: [fence nesting](#fence-nesting) (same as VP and phrase). Soft **-n**: [soft **-n**](#soft-n-vp-clause). Unspecified **-r**: [unspecified-member](#unspecified-member-r-phrase).
 
 Endorsement strength and evidentiality stay on each clause’s `/h/` (or `/w/`), not on the coordinator.
 
 ## Conjuncts
 
 - **SENT** — a complete sentence beginning with `/j/` (optional vocative(s) / interjection(s), then clause force, then clause body).
-- The opener appears **before the first sentence**; **-r** appears before every further sentence in the chain.
+- Flat lists: one fence before (preferred) or after the conjunct sentences. Nested lists: [fence nesting](#fence-nesting).
 
 ### Examples (schematic)
 
-- `xal A xar B` → *A and B* (closed); `xam A xar B` → open
-- `xal A xar B xar C` → *A and B and C* (one closed *and*-list)
-- `xol A xor B xor C` → *A or B or C* (one closed *xor*-list)
-- `xan A xar B xar C` → *A and then B and then C*
-- `xel A xer B` → *A ≻ B* (closed ranked, unmarked); `xem A xer B` → open; `xen A xer B xer C` → soft
-- `xael A xaer B` → co-satisfiable closed ranked; `xoel A xoer B xoer C` → exclusive closed ranked
-- Nesting: `xol A xol B xor C` → *A or (B or C)*; flat three-way *or* needs `xol A xor B xor C`
+- `xal A B` → *A and B* (closed); `xam A B` → open; `A B xam` → same open with right close
+- `xal A B C` → *A and B and C* (one closed *and*-list)
+- `xol A B C` → *A or B or C* (one closed *xor*-list)
+- `xan A B C` → *A and then B and then C*
+- `xel A B` → *A ≻ B* (closed ranked, unmarked); `xem A B` → open; `xen A B C` → soft
+- `xael A B` → co-satisfiable closed ranked; `xoel A B C` → exclusive closed ranked
+- Nesting: `xol A xol B C` → *A or (B or C)*; `A B xol C xol` → *(A or B) or C*; flat three-way *or* is `xol A B C`
+- `xol A xal B C` → *A or (B and C)*; `A B xol C xal` → *(A or B) and C*
+- `xar` → *something happened*; under polar Q → *What happened?*; `xur` → *some objection* / *something’s off*
 
 ## Constraints
 
 - **Same clause force** on every conjunct (all statements, all polar questions, or all imperatives). Mixed force → separate sentences or [subordination](language-reference.md#dependent-clauses), not this join.
 - **No gapping / shared arguments** across conjuncts. Repeat material, or use phrase-level (NP / AP / …) or VP-level coordination inside one clause.
+- **Fence** — left preferred, right close allowed; nesting per [fence nesting](#fence-nesting); **no pure infix**.
+- **-r** is unspecified-member (`xar` / `xor` / `xer` / `xur`), not continue / “same linker again”; unary/nullary allowed on those forms only among clause coordinators. Resume of a prior non-coordinator `/x/` linker still uses content-word **/x/`…`-r`** per [pronouns.md](pronouns.md).
 - **Not subordination:** *because* / *if* / *although* stay `/h/` + `/b/` [next-clause pronoun](pronouns.md#special-pronouns).
 - **Not general *but* / *however* / *therefore*:** those are other `/x/` linkers. In-clause *including* / *rather* / *instead* / *except* are [bare revision](#in-clause-revision-bare-a--e--o--u), not clause coordination. Sentence-level *instead* / *except* (when needed) stay other `/x/` roots. Phrase-, VP-, and clause-level **ranked** (**zel** / **zael** / **zoel** / **gel** / **vel** / **vael** / **voel** / **xel** / …) **is** this series.
 
 ## Reserved forms
 
-Under `/x/`, the coordination vowel series plus an allowed ending (`xal`, `xam`, `xan`, `xar`, … `xel`, `xem`, `xen`, `xer`, `xael`, `xaem`, `xaen`, `xaer`, `xoel`, `xoem`, `xoen`, `xoer`) are **only** these clause coordinators — not other discourse-marker roots with those vowels. Other `/x/` roots are unchanged.
+Under `/x/`, the coordination vowel series plus an allowed ending (`xal`, `xam`, `xan`, `xar`, `xol`, `xom`, `xon`, `xor`, `xul`, `xum`, `xun`, `xur`, `xaol`, `xaom`, `xaon`, `xel`, `xem`, `xen`, `xer`, `xael`, `xaem`, `xaen`, `xoel`, `xoem`, `xoen`) are **only** these clause coordinators — not other discourse-marker roots with those vowels. No stacked-vowel **-r** (`xaor`, `xaer`, `xoer`). Other `/x/` roots are unchanged.
