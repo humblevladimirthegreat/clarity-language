@@ -72,50 +72,60 @@ A **one-conjunct** (**unary**) or **zero-conjunct** (**nullary**) fence is allow
 
 **Arity pattern:** length 2+ = ordinary list; length 1 = focus / exhaustivity on that singleton; length 0 = emptiness in that join frame. On nullary forms, **-l** = empty **and claimed complete** for the frame; **-m** = empty **from the speaker’s list** (often epistemic) with residual existence or residual options outside what’s named; **-n** = named/conventional empty label.
 
+**Under [polar question](language-reference.md#utterance-markers-j) force** (phrase-level only):
+
+- Unary **-l** / **-n** — confirm the singleton frame (*Just X?*, *Has to be X?*, conventional label).
+- Unary **-m** — **offer** that singleton (*How about X?*, *Want X?*, *Try X first?*).
+- Nullary **-l** — colloquial check on emptiness (*Nothing?*, *No options?*, *Do nothing?*).
+- Nullary **-m** — soft ask to fill the slot in that join frame (*What do you want?*, *What’ll it be?*, *What’s the priority?*). The answer **need not** keep **-m**: a fill may be a bare content word, unary **-l** / **-m** / **-n**, or a longer list with any allowed ending.
+- Nullary **-n** — confirm the conventional empty label (*Null?*, *Draw?*).
+
+Unbound *who* / *what* still use the [interrogative special pronoun](pronouns.md#special-pronouns). **Length 2+** (no separate table): **-l** = pick from this closed menu (esp. **o** / **oe**); **-m** = pick, or name something else — answer ending likewise free.
+
 **Ranked — unary**
 
-| Form | Unary reading | Contrast |
-|------|---------------|----------|
-| **…em** (`zem` / `dem` / `bem` / `gem` / `wem` / `hem`) | *above all X* / *first and foremost X* | Open preference — other ranks may exist |
-| **…el** (`zel` / `del` / …) | *X is the sole priority* / *paramount: X* | Closed twin of **…em** — nothing else ranks for this claim |
-| **…oem** (`zoem` / `doem` / …) | *try X first* / *start with X* | Contingency / menu primary — not value ranking |
-| **…oel** (`zoel` / `doel` / …) | *try only this* / *X is the only thing to try* | Closed twin of **…oem** — exclusive triage, no fallback |
-| **…en** (`zen` / `den` / …) | *priority one: X* (conventional) | Named / formulaic top item (*safety first* as a stock frame) |
+| Form | Unary reading | Contrast | Under question |
+|------|---------------|----------|----------------|
+| **…em** (`zem` / `dem` / `bem` / `gem` / `wem` / `hem`) | *above all X* / *first and foremost X* | Open preference — other ranks may exist | *Is X the top priority?* / *Prefer X?* (offer) |
+| **…el** (`zel` / `del` / …) | *X is the sole priority* / *paramount: X* | Closed twin of **…em** — nothing else ranks for this claim | *Is X the only priority?* |
+| **…oem** (`zoem` / `doem` / …) | *try X first* / *start with X* | Contingency / menu primary — not value ranking | *Try X first?* / *Start with X?* (offer) |
+| **…oel** (`zoel` / `doel` / …) | *try only this* / *X is the only thing to try* | Closed twin of **…oem** — exclusive triage, no fallback | *Only try X?* |
+| **…en** (`zen` / `den` / …) | *priority one: X* (conventional) | Named / formulaic top item (*safety first* as a stock frame) | *X first, as usual?* |
 
 **Ranked — nullary**
 
-| Form | Nullary reading | Contrast |
-|------|-----------------|----------|
-| **…el** (`zel` / `del` / …) | *no preference* / *nothing ranks for this claim* | Closed empty ladder |
-| **…em** (`zem` / `dem` / …) | *no preferences I can name; a ranking may still exist* | Open — same humility pattern as nullary **…am** |
-| **…oem** (`zoem` / `doem` / …) | *nothing to try first that I can name; a first step may exist* | Empty exclusive triage, open |
-| **…oel** (`zoel` / `doel` / …) | *don’t try anything* | Closed empty exclusive triage — no attempt, and that’s the full story |
-| **…en** (`zen` / `den` / …) | *draw* / *tie* | Named / conventional empty ranking outcome — no ordered winner |
+| Form | Nullary reading | Contrast | Under question |
+|------|-----------------|----------|----------------|
+| **…el** (`zel` / `del` / …) | *no preference* / *nothing ranks for this claim* | Closed empty ladder | *No preference?* / *Don’t care?* |
+| **…em** (`zem` / `dem` / …) | *no preferences I can name; a ranking may still exist* | Open — same humility pattern as nullary **…am** | *What’s the priority?* / *What matters most?* |
+| **…oem** (`zoem` / `doem` / …) | *nothing to try first that I can name; a first step may exist* | Empty exclusive triage, open | *What should we try first?* |
+| **…oel** (`zoel` / `doel` / …) | *don’t try anything* | Closed empty exclusive triage — no attempt, and that’s the full story | *Do nothing?* / *Skip it?* |
+| **…en** (`zen` / `den` / …) | *draw* / *tie* | Named / conventional empty ranking outcome — no ordered winner | *Draw?* / *Tie?* |
 
 **Boolean — unary**
 
-| Form | Unary reading | Contrast |
-|------|---------------|----------|
-| **…al** (`zal` / `dal` / `bal` / `gal` / `wal` / `hal`) | *just X* / *only X* / *X alone* | Closed *and* of one — exhaustive inventory, **not** a priority claim (milder than **…el**) |
-| **…am** (`zam` / `dam` / `bam` / `gam` / `wam` / `ham`) | *X, for one* / *X among others* | Open *and* of one — same open bit as multi-item **am** |
-| **…ol** (`zol` / `dol` / …) | *it has to be X* / *X is the only option* | Closed xor of one — forced exclusive pick, not inventory (**…al**) or priority (**…el**) |
-| **…om** (`zom` / `dom` / …) | *X, or something else* / *say X?* | Open xor of one — pick-one frame; X is a candidate; other exclusives may exist |
-| **…aol** (`zaol` / `daol` / …) | *X is enough, and that’s all in play* | Closed *and/or* of one — inclusive frame, stricter than **…aom** |
-| **…aom** (`zaom` / `daom` / …) | *at least X* / *X and/or more* | Inclusive singleton — X is a sufficient hit; others may count |
+| Form | Unary reading | Contrast | Under question |
+|------|---------------|----------|----------------|
+| **…al** (`zal` / `dal` / `bal` / `gal` / `wal` / `hal`) | *just X* / *only X* / *X alone* | Closed *and* of one — exhaustive inventory, **not** a priority claim (milder than **…el**) | *Just X?* / *Only X?* |
+| **…am** (`zam` / `dam` / `bam` / `gam` / `wam` / `ham`) | *X, for one* / *X among others* | Open *and* of one — same open bit as multi-item **am** | *How about X?* / *Want X?* (offer) |
+| **…ol** (`zol` / `dol` / …) | *it has to be X* / *X is the only option* | Closed xor of one — forced exclusive pick, not inventory (**…al**) or priority (**…el**) | *Has to be X?* |
+| **…om** (`zom` / `dom` / …) | *X, or something else* / *say X?* | Open xor of one — pick-one frame; X is a candidate; other exclusives may exist | *How about X?* / *X, or something else?* (offer) |
+| **…aol** (`zaol` / `daol` / …) | *X is enough, and that’s all in play* | Closed *and/or* of one — inclusive frame, stricter than **…aom** | *Is X enough?* |
+| **…aom** (`zaom` / `daom` / …) | *at least X* / *X and/or more* | Inclusive singleton — X is a sufficient hit; others may count | *Would X do?* / *At least X?* (offer) |
 
 **Boolean — nullary**
 
-| Form | Nullary reading | Contrast |
-|------|-----------------|----------|
-| **…al** (`zal` / `dal` / …) | *none / nothing / nobody* | Closed empty inventory — you stand behind emptiness |
-| **…am** (`zam` / `dam` / …) | *none I know of; something probably exists* | Open twin — can’t fill the slot, but don’t claim the world is empty |
-| **…an** (`zan` / `dan` / …) | *null* | Named / conventional empty value (*null*, void marker) |
-| **…ol** (`zol` / `dol` / …) | *no option / choice is blocked* | Closed empty menu — pick-one with nowhere to land |
-| **…om** (`zom` / `dom` / …) | *no candidate I can offer; one may exist* | Open empty menu — “I don’t have a pick,” not “impossible” |
-| **…aol** (`zaol` / `daol` / …) | *nothing further is needed* / *zero is enough* | Closed inclusive — null requirement, and that’s the full story |
-| **…aom** (`zaom` / `daom` / …) | *nothing I know of is required; more may still count* | Soft / open null requirement |
-| **…ul** (`zul` / `dul` / …) | *I deny nothing* / *no denials in play* | Closed empty *nor*-list — denial set empty on purpose |
-| **…um** (`zum` / `dum` / …) | *no denial I can make (yet); further denials may apply* | Open empty *nor* — withholding denial, not affirming “nothing exists” |
+| Form | Nullary reading | Contrast | Under question |
+|------|-----------------|----------|----------------|
+| **…al** (`zal` / `dal` / …) | *none / nothing / nobody* | Closed empty inventory — you stand behind emptiness | *Nothing?* / *Nobody?* / *None?* |
+| **…am** (`zam` / `dam` / …) | *none I know of; something probably exists* | Open twin — can’t fill the slot, but don’t claim the world is empty | *What do you want?* |
+| **…an** (`zan` / `dan` / …) | *null* | Named / conventional empty value (*null*, void marker) | *Null?* / *Void?* |
+| **…ol** (`zol` / `dol` / …) | *no option / choice is blocked* | Closed empty menu — pick-one with nowhere to land | *No options?* / *Stuck?* |
+| **…om** (`zom` / `dom` / …) | *no candidate I can offer; one may exist* | Open empty menu — “I don’t have a pick,” not “impossible” | *What’ll it be?* / *Which do you pick?* |
+| **…aol** (`zaol` / `daol` / …) | *nothing further is needed* / *zero is enough* | Closed inclusive — null requirement, and that’s the full story | *All set?* / *Nothing else needed?* |
+| **…aom** (`zaom` / `daom` / …) | *nothing I know of is required; more may still count* | Soft / open null requirement | *What do you need?* |
+| **…ul** (`zul` / `dul` / …) | *I deny nothing* / *no denials in play* | Closed empty *nor*-list — denial set empty on purpose | *No objections?* / *We’re good?* |
+| **…um** (`zum` / `dum` / …) | *no denial I can make (yet); further denials may apply* | Open empty *nor* — withholding denial, not affirming “nothing exists” | *What’s the objection?* |
 
 **…ul** / **…um** / **…an** are **nullary-only** on the phrase fence (no defined one-conjunct reading). **…en** nullary is *draw* / *tie*; unary **…en** stays *priority one: X* (conventional).
 
