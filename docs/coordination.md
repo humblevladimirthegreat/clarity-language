@@ -86,52 +86,52 @@ Unbound *who* / *what* still use the [interrogative special pronoun](pronouns.md
 
 | Form | Unary reading | Contrast | Under question |
 |------|---------------|----------|----------------|
-| **…em** (`zem` / `dem` / `bem` / `gem` / `wem` / `hem`) | *above all X* / *first and foremost X* | Open preference — other ranks may exist | *Is X the top priority?* / *Prefer X?* (offer) |
-| **…el** (`zel` / `del` / …) | *X is the sole priority* / *paramount: X* | Closed twin of **…em** — nothing else ranks for this claim | *Is X the only priority?* |
-| **…oem** (`zoem` / `doem` / …) | *try X first* / *start with X* | Contingency / menu primary — not value ranking | *Try X first?* / *Start with X?* (offer) |
-| **…oel** (`zoel` / `doel` / …) | *try only this* / *X is the only thing to try* | Closed twin of **…oem** — exclusive triage, no fallback | *Only try X?* |
-| **…en** (`zen` / `den` / …) | *priority one: X* (conventional) | Named / formulaic top item (*safety first* as a stock frame) | *X first, as usual?* |
+| **…em** (`zem` / `dem` / `bem` / `gem` / `wem` / `hem`) | *X first* / *mainly X* | Open preference — other ranks may exist | *Is X the top priority?* / *Prefer X?* (offer) |
+| **…el** (`zel` / `del` / …) | *only X matters* / *X, period* | Closed twin of **…em** — nothing else ranks for this claim | *Is X the only priority?* |
+| **…oem** (`zoem` / `doem` / …) | *start with X* / *try X first* | Contingency / menu primary — not value ranking | *Try X first?* / *Start with X?* (offer) |
+| **…oel** (`zoel` / `doel` / …) | *only try X* / *X or nothing* | Closed twin of **…oem** — exclusive triage, no fallback | *Only try X?* |
+| **…en** (`zen` / `den` / …) | *X first* (stock) / *X, as usual* | Named / formulaic top item (*safety first* as a stock frame) | *X first, as usual?* |
 
 **Ranked — nullary**
 
 | Form | Nullary reading | Contrast | Under question |
 |------|-----------------|----------|----------------|
-| **…el** (`zel` / `del` / …) | *no preference* / *nothing ranks for this claim* | Closed empty ladder | *No preference?* / *Don’t care?* |
-| **…em** (`zem` / `dem` / …) | *no preferences I can name; a ranking may still exist* | Open — same humility pattern as nullary **…am** | *What’s the priority?* / *What matters most?* |
-| **…oem** (`zoem` / `doem` / …) | *nothing to try first that I can name; a first step may exist* | Empty exclusive triage, open | *What should we try first?* |
-| **…oel** (`zoel` / `doel` / …) | *don’t try anything* | Closed empty exclusive triage — no attempt, and that’s the full story | *Do nothing?* / *Skip it?* |
-| **…en** (`zen` / `den` / …) | *draw* / *tie* | Named / conventional empty ranking outcome — no ordered winner | *Draw?* / *Tie?* |
+| **…el** (`zel` / `del` / …) | *don’t care* / *no preference* | Closed empty ladder | *No preference?* / *Don’t care?* |
+| **…em** (`zem` / `dem` / …) | *I don’t have a ranking* / *beats me what’s most important* | Open — same humility pattern as nullary **…am** | *What’s the priority?* / *What matters most?* |
+| **…oem** (`zoem` / `doem` / …) | *not sure where to start* | Empty exclusive triage, open | *What should we try first?* |
+| **…oel** (`zoel` / `doel` / …) | *do nothing* / *don’t bother* | Closed empty exclusive triage — no attempt, and that’s the full story | *Do nothing?* / *Skip it?* |
+| **…en** (`zen` / `den` / …) | *it’s a draw* / *tie* | Named / conventional empty ranking outcome — no ordered winner | *Draw?* / *Tie?* |
 
 **Boolean — unary**
 
 | Form | Unary reading | Contrast | Under question |
 |------|---------------|----------|----------------|
-| **…al** (`zal` / `dal` / `bal` / `gal` / `wal` / `hal`) | *just X* / *only X* / *X alone* | Closed *and* of one — exhaustive inventory, **not** a priority claim (milder than **…el**) | *Just X?* / *Only X?* |
-| **…am** (`zam` / `dam` / `bam` / `gam` / `wam` / `ham`) | *X, for one* / *X among others* | Open *and* of one — same open bit as multi-item **am** | *How about X?* / *Want X?* (offer) |
-| **…ol** (`zol` / `dol` / …) | *it has to be X* / *X is the only option* | Closed xor of one — forced exclusive pick, not inventory (**…al**) or priority (**…el**) | *Has to be X?* |
-| **…om** (`zom` / `dom` / …) | *X, or something else* / *say X?* | Open xor of one — pick-one frame; X is a candidate; other exclusives may exist | *How about X?* / *X, or something else?* (offer) |
-| **…aol** (`zaol` / `daol` / …) | *X is enough, and that’s all in play* | Closed *and/or* of one — inclusive frame, stricter than **…aom** | *Is X enough?* |
-| **…aom** (`zaom` / `daom` / …) | *at least X* / *X and/or more* | Inclusive singleton — X is a sufficient hit; others may count | *Would X do?* / *At least X?* (offer) |
+| **…al** (`zal` / `dal` / `bal` / `gal` / `wal` / `hal`) | *just X* / *only X* | Closed *and* of one — exhaustive inventory, **not** a priority claim (milder than **…el**) | *Just X?* / *Only X?* |
+| **…am** (`zam` / `dam` / `bam` / `gam` / `wam` / `ham`) | *X, for one* / *X, say* | Open *and* of one — same open bit as multi-item **am** | *How about X?* / *Want X?* (offer) |
+| **…ol** (`zol` / `dol` / …) | *has to be X* / *X only* | Closed xor of one — forced exclusive pick, not inventory (**…al**) or priority (**…el**) | *Has to be X?* |
+| **…om** (`zom` / `dom` / …) | *say, X* / *X maybe* | Open xor of one — pick-one frame; X is a candidate; other exclusives may exist | *How about X?* / *X, or something else?* (offer) |
+| **…aol** (`zaol` / `daol` / …) | *X is enough* / *X’ll do* | Closed *and/or* of one — inclusive frame, stricter than **…aom** | *Is X enough?* |
+| **…aom** (`zaom` / `daom` / …) | *at least X* / *X would work* | Inclusive singleton — X is a sufficient hit; others may count | *Would X do?* / *At least X?* (offer) |
 
 **Boolean — nullary**
 
 | Form | Nullary reading | Contrast | Under question |
 |------|-----------------|----------|----------------|
-| **…al** (`zal` / `dal` / …) | *none / nothing / nobody* | Closed empty inventory — you stand behind emptiness | *Nothing?* / *Nobody?* / *None?* |
-| **…am** (`zam` / `dam` / …) | *none I know of; something probably exists* | Open twin — can’t fill the slot, but don’t claim the world is empty | *What do you want?* |
-| **…an** (`zan` / `dan` / …) | *null* | Named / conventional empty value (*null*, void marker) | *Null?* / *Void?* |
-| **…ol** (`zol` / `dol` / …) | *no option / choice is blocked* | Closed empty menu — pick-one with nowhere to land | *No options?* / *Stuck?* |
-| **…om** (`zom` / `dom` / …) | *no candidate I can offer; one may exist* | Open empty menu — “I don’t have a pick,” not “impossible” | *What’ll it be?* / *Which do you pick?* |
-| **…aol** (`zaol` / `daol` / …) | *nothing further is needed* / *zero is enough* | Closed inclusive — null requirement, and that’s the full story | *All set?* / *Nothing else needed?* |
-| **…aom** (`zaom` / `daom` / …) | *nothing I know of is required; more may still count* | Soft / open null requirement | *What do you need?* |
-| **…ul** (`zul` / `dul` / …) | *I deny nothing* / *no denials in play* | Closed empty *nor*-list — denial set empty on purpose | *No objections?* / *We’re good?* |
-| **…um** (`zum` / `dum` / …) | *no denial I can make (yet); further denials may apply* | Open empty *nor* — withholding denial, not affirming “nothing exists” | *What’s the objection?* |
+| **…al** (`zal` / `dal` / …) | *nothing* / *nobody* / *none* | Closed empty inventory — you stand behind emptiness | *Nothing?* / *Nobody?* / *None?* |
+| **…am** (`zam` / `dam` / …) | *nothing comes to mind* / *I got nothing* | Open twin — can’t fill the slot, but don’t claim the world is empty | *What do you want?* |
+| **…an** (`zan` / `dan` / …) | *null* / *void* | Named / conventional empty value (*null*, void marker) | *Null?* / *Void?* |
+| **…ol** (`zol` / `dol` / …) | *no options* / *we’re stuck* | Closed empty menu — pick-one with nowhere to land | *No options?* / *Stuck?* |
+| **…om** (`zom` / `dom` / …) | *I got no pick* / *can’t say* | Open empty menu — “I don’t have a pick,” not “impossible” | *What’ll it be?* / *Which do you pick?* |
+| **…aol** (`zaol` / `daol` / …) | *all set* / *nothing more needed* | Closed inclusive — null requirement, and that’s the full story | *All set?* / *Nothing else needed?* |
+| **…aom** (`zaom` / `daom` / …) | *nothing I need that I can think of* / *I’m fine for now* | Soft / open null requirement | *What do you need?* |
+| **…ul** (`zul` / `dul` / …) | *no objections* | Closed empty *nor*-list — denial set empty on purpose | *No objections?* / *We’re good?* |
+| **…um** (`zum` / `dum` / …) | *no objection from me (yet)* | Open empty *nor* — withholding denial, not affirming “nothing exists” | *What’s the objection?* |
 
-**…ul** / **…um** / **…an** are **nullary-only** on the phrase fence (no defined one-conjunct reading). **…en** nullary is *draw* / *tie*; unary **…en** stays *priority one: X* (conventional).
+**…ul** / **…um** / **…an** are **nullary-only** on the phrase fence (no defined one-conjunct reading). **…en** nullary is *it’s a draw* / *tie*; unary **…en** stays *X first* (stock).
 
-Examples (unary): `zem z-truthrl` → *truth above all*; `zel z-truthrl` → *truth is the sole priority*; `zoem z-fixl` → *try a fix first*; `zoel z-fixl` → *try only a fix*; `zen z-safetyl` → *priority one: safety* (conventional); `zal z-waterl` → *just water* / *only water*; `zam z-Samn` → *Sam, for one*; `zol z-waterl` → *it has to be water*; `zom z-coffeel` → *coffee, or something else*; `zaol z-waterl` → *water is enough (closed inclusive)*; `zaom z-waterl` → *at least water*.
+Examples (unary): `zem z-truthrl` → *truth first* / *mainly truth*; `zel z-truthrl` → *only truth matters*; `zoem z-fixl` → *try a fix first*; `zoel z-fixl` → *only try a fix*; `zen z-safetyl` → *safety first* (stock); `zal z-waterl` → *just water*; `zam z-Samn` → *Sam, for one*; `zol z-waterl` → *has to be water*; `zom z-coffeel` → *say, coffee*; `zaol z-waterl` → *water’ll do*; `zaom z-waterl` → *at least water*.
 
-Examples (nullary): `zal` → *none / nothing / nobody*; `zam` → *none I know of; something probably exists*; `zan` → *null*; `zol` → *no option*; `zom` → *no candidate I can offer; one may exist*; `zaol` → *nothing further is needed*; `zaom` → *nothing I know of is required; more may still count*; `zul` → *I deny nothing*; `zum` → *no denial I can make (yet)*; `zel` → *no priorities*; `zem` → *no priority I can name; a ranking may still exist*; `zoem` → *nothing to try first that I can name*; `zoel` → *don’t try anything*; `zen` → *draw* / *tie*. Same under `/d/` `/b/` `/ɡ/` `/w/` `/h/` (`dal`, `gam`, …).
+Examples (nullary): `zal` → *nothing* / *nobody*; `zam` → *nothing comes to mind*; `zan` → *null* / *void*; `zol` → *no options* / *we’re stuck*; `zom` → *I got no pick*; `zaol` → *all set*; `zaom` → *nothing I need*; `zul` → *no objections*; `zum` → *no objection from me (yet)*; `zel` → *don’t care*; `zem` → *I don’t have a ranking*; `zoem` → *not sure where to start*; `zoel` → *do nothing* / *don’t bother*; `zen` → *it’s a draw* / *tie*. Same under `/d/` `/b/` `/ɡ/` `/w/` `/h/` (`dal`, `gam`, …).
 
 Do not confuse prefixed **…em** / **…el** / **…en** / **…al** / **…am** / **…an** / **…ol** / **…om** / **…ul** / **…um** with bare revision **em** / **el** / **en** / **al** / **am** / **an** / **ol** / **om** / **ul** / **um** (*or rather* / *including* / *instead* / *except*).
 ### Exclusivity and *nor*
@@ -355,9 +355,9 @@ Complex adjective on an NP bundle: `zam g-ofl b-Samn z-dogl z-catl` or `z-dogl z
 - `zaem z-journall z-candlesh z-socksh` — *journal ≻ candles ≻ socks* (open **co-satisfiable** ranked — wishlist)
 - `z-teal z-coffeel z-waterl zel` — same neutral ranked ladder with right close
 - `zem z-dogl g-bigl z-catl g-redl` — *(big dog) ≻ (red cat)* (open ranked, exclusivity unmarked)
-- `zem z-truthrl` — *truth above all* (unary open ranked); `zel z-truthrl` — *truth is the sole priority* (unary closed); `zoem z-fixl` — *try a fix first* (unary open exclusive ranked); `zoel z-fixl` — *try only a fix* (unary closed exclusive ranked); `zen z-safetyl` — *priority one: safety* (unary named ranked)
-- `zal z-waterl` — *just water* / *only water* (unary closed *and*); `zam z-Samn` — *Sam, for one* (unary open *and*); `zol z-waterl` — *it has to be water* (unary closed xor); `zom z-coffeel` — *coffee, or something else* (unary open xor); `zaol z-waterl` — *water is enough* (unary closed *and/or*); `zaom z-waterl` — *at least water* (unary open *and/or*)
-- `zal` — *none / nothing / nobody* (nullary closed *and*); `zam` — *none I know of; something probably exists* (nullary open *and*); `zan` — *null* (nullary named); `zol` — *no option* (nullary closed xor); `zom` — *no candidate I can offer; one may exist* (nullary open xor); `zaol` — *nothing further is needed* (nullary closed *and/or*); `zaom` — *nothing I know of is required; more may still count* (nullary open *and/or*); `zul` — *I deny nothing* (nullary closed *nor*); `zum` — *no denial I can make (yet)* (nullary open *nor*); `zel` — *no priorities* (nullary closed ranked); `zem` — *no priority I can name* (nullary open ranked); `zoem` — *nothing to try first that I can name* (nullary open exclusive ranked); `zoel` — *don’t try anything* (nullary closed exclusive ranked); `zen` — *draw* / *tie* (nullary named ranked)
+- `zem z-truthrl` — *truth first* (unary open ranked); `zel z-truthrl` — *only truth matters* (unary closed); `zoem z-fixl` — *try a fix first* (unary open exclusive ranked); `zoel z-fixl` — *only try a fix* (unary closed exclusive ranked); `zen z-safetyl` — *safety first* (unary named ranked)
+- `zal z-waterl` — *just water* (unary closed *and*); `zam z-Samn` — *Sam, for one* (unary open *and*); `zol z-waterl` — *has to be water* (unary closed xor); `zom z-coffeel` — *say, coffee* (unary open xor); `zaol z-waterl` — *water’ll do* (unary closed *and/or*); `zaom z-waterl` — *at least water* (unary open *and/or*)
+- `zal` — *nothing* / *nobody* (nullary closed *and*); `zam` — *nothing comes to mind* (nullary open *and*); `zan` — *null* / *void* (nullary named); `zol` — *no options* / *we’re stuck* (nullary closed xor); `zom` — *I got no pick* (nullary open xor); `zaol` — *all set* (nullary closed *and/or*); `zaom` — *nothing I need* (nullary open *and/or*); `zul` — *no objections* (nullary closed *nor*); `zum` — *no objection from me (yet)* (nullary open *nor*); `zel` — *don’t care* (nullary closed ranked); `zem` — *I don’t have a ranking* (nullary open ranked); `zoem` — *not sure where to start* (nullary open exclusive ranked); `zoel` — *do nothing* (nullary closed exclusive ranked); `zen` — *it’s a draw* / *tie* (nullary named ranked)
 **AP**
 
 - `gam g-happyl w-veryl g-proudl w-slightlyl` — *(very happy) and (slightly proud)* — each degree inside its conjunct
@@ -385,7 +385,7 @@ Complex adjective on an NP bundle: `zam g-ofl b-Samn z-dogl z-catl` or `z-dogl z
 - **Shared modifiers** — only in the slot immediately after `P-COORD` (left or right); local modifiers stay after their own heads.
 - **No `-r`**, no clause soft **-n**, no plural **-sh** on the coordinator.
 - **Not** verb+object packages — use [VP-level](#vp-level-coordination); **not** full sentences — those stay `/x/`…
-- **Not** mixed-PoS joins; correlatives; `/x/` sentence linkers (*however*, *therefore*), general adversative *but*, quotation fences, or [numbered enumeration](numbers.md#number-as-discourse-marker-by-marker). In-clause *including* / *rather* / *instead* / *except* are [bare revision](#in-clause-revision-bare-a--e--o--u), not this fence series. Phrase-level ranked conjunction **is** this series (`zel` / `zael` / `zoel` / `zem` / …). Unary / nullary phrase only for the forms in [unary and nullary](#unary-phrase) (**…ul** / **…um** / **…an** nullary-only; **…en** nullary = *draw*, **…an** nullary = *null*).
+- **Not** mixed-PoS joins; correlatives; `/x/` sentence linkers (*however*, *therefore*), general adversative *but*, quotation fences, or [numbered enumeration](numbers.md#number-as-discourse-marker-by-marker). In-clause *including* / *rather* / *instead* / *except* are [bare revision](#in-clause-revision-bare-a--e--o--u), not this fence series. Phrase-level ranked conjunction **is** this series (`zel` / `zael` / `zoel` / `zem` / …). Unary / nullary phrase only for the forms in [unary and nullary](#unary-phrase) (**…ul** / **…um** / **…an** nullary-only; **…en** nullary = *it’s a draw*, **…an** nullary = *null* / *void*).
 
 ## Reserved forms
 
