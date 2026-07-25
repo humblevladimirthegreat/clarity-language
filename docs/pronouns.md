@@ -138,7 +138,7 @@ Each subsection is an **antecedent** PoS; the table rows are the **pronoun** PoS
 | *by doing so* / *thereby* | Verb antecedent → `/h/` …`-r` |
 | *that one’s* / *of that kind* | Noun antecedent → `/ɡ/` …`-r` |
 
-Special pronouns (speaker, listener, next clause) are **not** covered here — they are separate forms (below), not `-r` stems from ordinary antecedents. Content questions (*who* / *what* / *where*) use [phrase coordinators under polar question force](coordination.md#unary-phrase), not a special pronoun.
+Special pronouns (speaker, listener, next clause) are **not** covered here — they are separate forms (below), not `-r` stems from ordinary antecedents. Content questions (*who* / *what* / *where*) use [phrase unspecified-member **-r** under polar question force](coordination.md#unspecified-member-r-phrase) (`zar` / `zor` / `zer` / `zur`, …), not a special pronoun.
 
 ## Special pronouns
 

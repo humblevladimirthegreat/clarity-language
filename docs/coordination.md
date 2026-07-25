@@ -70,7 +70,7 @@ Mnemonic: **-r** = member not named; vowel = frame (**a** = inventory existence;
 - `zor A B C` = any of them is fine (**no** order). `zer A B C` = pick / take **by ranking** among them.
 - Revision **`ul` / `um`**: *except* a named right-hand side. Prefixed **`zur`**: unspecified denial in the slot (*some objection*), not an *except*-revision particle.
 
-**Under [polar question](language-reference.md#utterance-markers-j) force:** nullary `zar` / `zor` / `zer` / `zur` → *Something?* / *Anything?* / *Whatever matters most?* / *Some objection?*; unary → *Some unknown X?* / *Any X?* / *X as a priority?* / *Some objection re X?*; multi → *Some one of these?* / *Any of these?* / *Whichever ranks highest?* / *Objection to some of these?*. Unbound *who* / *what* / *where* are these nullary (and other unary/nullary) forms in the queried slot — no separate interrogative pronoun. Negation / NPI-flavored *anything* stays on `/h/` (or similar) when needed — `zor` itself is free-choice, not a negative-polarity marker.
+**Under [polar question](language-reference.md#utterance-markers-j) force:** these forms are the **content-question** series (ask to name the unspecified member). Nullary `zar` / `zor` / `zer` / `zur` → *Who/what?* / *What (anything)?* / *What’s the priority?* / *What’s the objection?*; unary → *What/which (unknown) X?* / *Any X?* / *Which X by rank?* / *What objection re X?*; multi → *Which of these?* / *Any of these?* / *Whichever ranks highest?* / *Objection to which of these?*. The answer **need not** keep **-r**: a fill may be a bare content word, unary **-l** / **-m** / **-n**, or a longer list with any allowed ending. Unbound *who* / *what* / *where* = nullary **-r** in the queried slot (PoS = role) — no separate interrogative pronoun. Negation / NPI-flavored *anything* stays on `/h/` (or similar) when needed — `zor` itself is free-choice, not a negative-polarity marker.
 
 **Not** VP/clause continue: do not write `zam A zar B` as a mid-chain extender; phrase `-r` is the **whole fence** coordinator (`zar` alone, or `zar` + conjuncts), same placement rules as `zam`.
 
@@ -110,11 +110,11 @@ A **one-conjunct** (**unary**) or **zero-conjunct** (**nullary**) fence is allow
 - Unary **-l** / **-n** — confirm the singleton frame (*Just X?*, *Has to be X?*, conventional label).
 - Unary **-m** — **offer** that singleton (*How about X?*, *Want X?*, *Try X first?*).
 - Nullary **-l** — colloquial check on emptiness (*Nothing?*, *No options?*, *Do nothing?*).
-- Nullary **-m** — soft ask to fill the slot in that join frame (*What do you want?*, *What’ll it be?*, *What’s the priority?*). The answer **need not** keep **-m**: a fill may be a bare content word, unary **-l** / **-m** / **-n**, or a longer list with any allowed ending.
+- Nullary **-m** — confirm open emptiness / speaker-style gap (*Got nothing?*, *No pick?*, *No ranking?*) — **not** the primary content-question form.
 - Nullary **-n** — confirm the conventional empty label (*Null?*, *Draw?*).
-- Nullary / unary / multi **…ar** / **…or** / **…er** / **…ur** — confirm the unspecified-member frame (*Something?*, *Any X?*, *Whatever matters most?*, *Some objection?*) — see [unspecified-member **-r**](#unspecified-member-r-phrase).
+- Nullary / unary / multi **…ar** / **…or** / **…er** / **…ur** — **content questions** (ask to name the unspecified member): unbound *who* / *what* / *where*, *any X?*, *which of these?*, *what’s the priority?*, *what’s the objection?* — see [unspecified-member **-r**](#unspecified-member-r-phrase). Answer ending free (need not keep **-r**).
 
-Unbound *who* / *what* / *where* = nullary forms in the queried slot (esp. **-m** soft fill-ask, or **…ar** / **…or** / **…er** / **…ur**). **Length 2+** (no separate table): **-l** = pick from this closed menu (esp. **o** / **oe**); **-m** = pick, or name something else — answer ending likewise free; **…ar** / **…or** / **…er** / **…ur** = *some one among these?* / *any of these?* / *whichever ranks highest?* / *objection to some of these?*.
+Unbound *who* / *what* / *where* = nullary **…ar** / **…or** / **…er** / **…ur** in the queried slot. **Length 2+** (no separate table): **-l** = pick from this closed menu (esp. **o** / **oe**); **-m** = pick, or name something else — answer ending likewise free; **…ar** / **…or** / **…er** / **…ur** = content Q among the listed (*which of these?* / *any of these?* / *whichever ranks highest?* / *objection to which of these?*).
 
 **Ranked — unary**
 
@@ -125,18 +125,18 @@ Unbound *who* / *what* / *where* = nullary forms in the queried slot (esp. **-m*
 | **…oem** (`zoem` / `doem` / …) | *start with X* / *try X first* | Contingency / menu primary — not value ranking | *Try X first?* / *Start with X?* (offer) |
 | **…oel** (`zoel` / `doel` / …) | *only try X* / *X or nothing* | Closed twin of **…oem** — exclusive triage, no fallback | *Only try X?* |
 | **…en** (`zen` / `den` / …) | *X first* (stock) / *X, as usual* | Named / formulaic top item (*safety first* as a stock frame) | *X first, as usual?* |
-| **…er** (`zer` / `der` / …) | *X as a priority* / *preferentially some X* | Unspecified preferred member of kind X — not a closed “only X” (**…el**) | *X as a priority?* |
+| **…er** (`zer` / `der` / …) | *preferably some X* | Unspecified preferred member of kind X — not a closed “only X” (**…el**) | *Which X is first?* (content Q) |
 
 **Ranked — nullary**
 
 | Form | Nullary reading | Contrast | Under question |
 |------|-----------------|----------|----------------|
 | **…el** (`zel` / `del` / …) | *don’t care* / *no preference* | Closed empty ladder | *No preference?* / *Don’t care?* |
-| **…em** (`zem` / `dem` / …) | *I don’t have a ranking* / *beats me what’s most important* | Open — same humility pattern as nullary **…am** | *What’s the priority?* / *What matters most?* |
-| **…oem** (`zoem` / `doem` / …) | *not sure where to start* | Empty exclusive triage, open | *What should we try first?* |
+| **…em** (`zem` / `dem` / …) | *I don’t have a ranking* / *beats me what’s most important* | Open — same humility pattern as nullary **…am** | *No ranking?* / *Don’t have a priority?* |
+| **…oem** (`zoem` / `doem` / …) | *not sure where to start* | Empty exclusive triage, open | *Not sure where to start?* |
 | **…oel** (`zoel` / `doel` / …) | *do nothing* / *don’t bother* | Closed empty exclusive triage — no attempt, and that’s the full story | *Do nothing?* / *Skip it?* |
 | **…en** (`zen` / `den` / …) | *it’s a draw* / *tie* | Named / conventional empty ranking outcome — no ordered winner | *Draw?* / *Tie?* |
-| **…er** (`zer` / `der` / …) | *whatever’s most important* / *whatever comes first* | Positive twin of **…el** / **…em** — unnamed top priority | *Whatever matters most?* |
+| **…er** (`zer` / `der` / …) | *whatever’s most important* / *whatever comes first* | Positive twin of **…el** / **…em** — unnamed top priority | *What’s the priority?* / *What matters most?* (content Q) |
 
 **Boolean — unary**
 
@@ -148,26 +148,26 @@ Unbound *who* / *what* / *where* = nullary forms in the queried slot (esp. **-m*
 | **…om** (`zom` / `dom` / …) | *say, X* / *X maybe* | Open xor of one — pick-one frame; X is a candidate; other exclusives may exist | *How about X?* / *X, or something else?* (offer) |
 | **…aol** (`zaol` / `daol` / …) | *X is enough* / *X’ll do* | Closed *and/or* of one — inclusive frame, stricter than **…aom** | *Is X enough?* |
 | **…aom** (`zaom` / `daom` / …) | *at least X* / *X would work* | Inclusive singleton — X is a sufficient hit; others may count | *Would X do?* / *At least X?* (offer) |
-| **…ar** (`zar` / `dar` / …) | *some (unknown) X* / *an unspecified X* | Existential unspecified of kind X — not ordinary `-l` first mention | *Some unknown X?* |
-| **…or** (`zor` / `dor` / …) | *any X* | Free-choice of kind X — menu twin of **…ol** / **…om** | *Any X?* |
-| **…ur** (`zur` / `dur` / …) | *some objection involving X* / *not okay re X (unspecified how)* | Existential denial about kind X — not revision *except* (**ul** / **um**) | *Some objection re X?* |
+| **…ar** (`zar` / `dar` / …) | *some (unknown) X* / *an unspecified X* | Existential unspecified of kind X — not ordinary `-l` first mention | *What/which (unknown) X?* (content Q) |
+| **…or** (`zor` / `dor` / …) | *any X* | Free-choice of kind X — menu twin of **…ol** / **…om** | *Any X?* / *Which X (any is fine)?* (content Q) |
+| **…ur** (`zur` / `dur` / …) | *some objection involving X* / *not okay re X (unspecified how)* | Existential denial about kind X — not revision *except* (**ul** / **um**) | *What objection re X?* (content Q) |
 
 **Boolean — nullary**
 
 | Form | Nullary reading | Contrast | Under question |
 |------|-----------------|----------|----------------|
 | **…al** (`zal` / `dal` / …) | *nothing* / *nobody* / *none* | Closed empty inventory — you stand behind emptiness | *Nothing?* / *Nobody?* / *None?* |
-| **…am** (`zam` / `dam` / …) | *nothing comes to mind* / *I got nothing* | Open twin — can’t fill the slot, but don’t claim the world is empty | *What do you want?* |
+| **…am** (`zam` / `dam` / …) | *nothing comes to mind* / *I got nothing* | Open twin — can’t fill the slot, but don’t claim the world is empty | *Got nothing?* / *Nothing comes to mind?* |
 | **…an** (`zan` / `dan` / …) | *null* / *void* | Named / conventional empty value (*null*, void marker) | *Null?* / *Void?* |
 | **…ol** (`zol` / `dol` / …) | *no options* / *we’re stuck* | Closed empty menu — pick-one with nowhere to land | *No options?* / *Stuck?* |
-| **…om** (`zom` / `dom` / …) | *I got no pick* / *can’t say* | Open empty menu — “I don’t have a pick,” not “impossible” | *What’ll it be?* / *Which do you pick?* |
+| **…om** (`zom` / `dom` / …) | *I got no pick* / *can’t say* | Open empty menu — “I don’t have a pick,” not “impossible” | *No pick?* / *Can’t say?* |
 | **…aol** (`zaol` / `daol` / …) | *all set* / *nothing more needed* | Closed inclusive — null requirement, and that’s the full story | *All set?* / *Nothing else needed?* |
-| **…aom** (`zaom` / `daom` / …) | *nothing I need that I can think of* / *I’m fine for now* | Soft / open null requirement | *What do you need?* |
+| **…aom** (`zaom` / `daom` / …) | *nothing I need that I can think of* / *I’m fine for now* | Soft / open null requirement | *Nothing you need?* / *Fine for now?* |
 | **…ul** (`zul` / `dul` / …) | *no objections* | Closed empty *nor*-list — denial set empty on purpose | *No objections?* / *We’re good?* |
-| **…um** (`zum` / `dum` / …) | *no objection from me (yet)* | Open empty *nor* — withholding denial, not affirming “nothing exists” | *What’s the objection?* |
-| **…ar** (`zar` / `dar` / …) | *something* / *someone* | Positive twin of **…al** / **…am** — unspecified member, no kind | *Something?* / *Someone?* |
-| **…or** (`zor` / `dor` / …) | *anything* / *anyone* | Free-choice twin of **…ol** / **…om** — unrestricted menu | *Anything?* / *Anyone?* |
-| **…ur** (`zur` / `dur` / …) | *some objection* / *there’s a catch* / *something’s off* | Positive twin of **…ul** / **…um** — unspecified denial | *Some objection?* / *A catch?* |
+| **…um** (`zum` / `dum` / …) | *no objection from me (yet)* | Open empty *nor* — withholding denial, not affirming “nothing exists” | *No objection from you (yet)?* |
+| **…ar** (`zar` / `dar` / …) | *something* / *someone* | Positive twin of **…al** / **…am** — unspecified member, no kind | *Who/what?* / *Something?* (content Q) |
+| **…or** (`zor` / `dor` / …) | *anything* / *anyone* | Free-choice twin of **…ol** / **…om** — unrestricted menu | *What (anything)?* / *Anything?* (content Q) |
+| **…ur** (`zur` / `dur` / …) | *some objection* / *there’s a catch* / *something’s off* | Positive twin of **…ul** / **…um** — unspecified denial | *What’s the objection?* / *What's the catch?* (content Q) |
 
 **…ul** / **…um** / **…an** are **nullary-only** on the phrase fence (no defined one-conjunct reading). **…en** nullary is *it’s a draw* / *tie*; unary **…en** stays *X first* (stock). **…ar** / **…or** / **…er** / **…ur** are defined at **all** arities (nullary / unary / multi) — see [unspecified-member **-r**](#unspecified-member-r-phrase).
 
