@@ -63,6 +63,19 @@ English glosses still vary by frame — *prefer A over B*, or *A, else B* — bu
 | **-m** | phrase: `zem` / `zaem` / `zoem` …; opener: `vem` / `vaem` / `voem` / `xem` / `xaem` / `xoem` | Open ranked — ranking among these; others may exist |
 | **-n** | phrase: `zen` / `zaen` / `zoen` …; opener: `ven` / `vaen` / `voen` / `xen` / `xaen` / `xoen` (soft) | Phrase: named/conventional order; opener soft: tentative / reconstructed ranking — see [ending senses](#ending-senses) |
 
+#### Unary ranked (phrase-level)
+<a id="unary-ranked"></a>
+
+A **one-conjunct** ranked fence is allowed on phrase-level slots (`/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/`) for a few high-value forms. Other ranked cells (**ae**, **zoel**, named **-n**, …), boolean joins (**a** / **o** / **u** / **ao**), and VP/clause opener chains stay **two or more** conjuncts — no defined unary reading.
+
+| Form | Unary reading | Contrast |
+|------|---------------|----------|
+| **…em** (`zem` / `dem` / `bem` / `gem` / `wem` / `hem`) | *above all X* / *first and foremost X* | Open preference — other ranks may exist |
+| **…el** (`zel` / `del` / …) | *X is the sole priority* / *paramount: X* | Closed twin of **…em** — nothing else ranks for this claim |
+| **…oem** (`zoem` / `doem` / …) | *try X first* / *start with X* | Contingency / menu primary — not value ranking |
+
+Examples: `zem z-truthrl` → *truth above all*; `zel z-truthrl` → *truth is the sole priority*; `zoem z-fixl` → *try a fix first*. Do not confuse prefixed **…em** / **…el** with bare revision **em** / **el** (*or rather*).
+
 ### Exclusivity and *nor*
 
 - **Exclusive (`o`)** — pick **one** of the conjuncts, not more than one.
@@ -225,9 +238,10 @@ PHRASE  PHRASE  ( PHRASE )*  P-COORD  ( SHARED )*
 - **SHARED** — optional material **immediately after** `P-COORD` in either placement. **Always** scopes over the **whole coordinated phrase** (NP: `/ɡ/` / `/w/` / complex `/ɡ/`+`/b/`; AP: `/w/`; `/w/`-slot and `/h/`-slot joins: further same-slot material only if the lexicon allows stacking on the join as a unit). Shared `/ɡ/` / `/w/` here sit next to the fence (before the heads they grade on the left; after the list on the right) — the fence defines the host unit.
 - **PHRASE** — a conjunct: NP headed by `/z/`, `/d/`, or `/b/` (plus that head’s following local `/ɡ/` / `/w/` / `/b/` material); AP headed by `/ɡ/` (plus contiguous `/b/`, further `/ɡ/` on that `/b/`, and local `/w/`); or a single `/w/` / `/h/` word (plus `/h/`’s contiguous `/b/` when complex). Local modifiers stay **inside** their conjunct, after that conjunct’s head.
 - Two conjuncts (left): `P-COORD  PHRASE  PHRASE`. Two (right): `PHRASE  PHRASE  P-COORD`. Three or more: same pattern with more `PHRASE` items on the conjunct side of `P-COORD`.
+- **Unary ranked** — only **…em** / **…el** / **…oem**: `P-COORD  PHRASE` or `PHRASE  P-COORD` — see [unary ranked](#unary-ranked). All other phrase coordinators need **two or more** conjuncts.
 - Single-word siblings: `zam z-dogl z-catl` or `z-dogl z-catl zam` (*a dog and a cat* — open).
 
-**Ranked** (`zel` / `zael` / `zoel`, `zem` / …, `zen` / …): left-to-right rank of the **spoken conjunct order** (before a right-close coordinator) — see [ranked conjunction](#ranked-conjunction-e).
+**Ranked** (`zel` / `zael` / `zoel`, `zem` / …, `zen` / …): left-to-right rank of the **spoken conjunct order** (before a right-close coordinator) — see [ranked conjunction](#ranked-conjunction-e). Unary: [unary ranked](#unary-ranked).
 
 ### Scope fence (`P-COORD`)
 
@@ -278,6 +292,7 @@ Complex adjective on an NP bundle: `zam g-ofl b-Samn z-dogl z-catl` or `z-dogl z
 - `zaem z-journall z-candlesh z-socksh` — *journal ≻ candles ≻ socks* (open **co-satisfiable** ranked — wishlist)
 - `z-teal z-coffeel z-waterl zel` — same neutral ranked ladder with right close
 - `zem z-dogl g-bigl z-catl g-redl` — *(big dog) ≻ (red cat)* (open ranked, exclusivity unmarked)
+- `zem z-truthrl` — *truth above all* (unary open ranked); `zel z-truthrl` — *truth is the sole priority* (unary closed); `zoem z-fixl` — *try a fix first* (unary open exclusive ranked)
 
 **AP**
 
@@ -306,7 +321,7 @@ Complex adjective on an NP bundle: `zam g-ofl b-Samn z-dogl z-catl` or `z-dogl z
 - **Shared modifiers** — only in the slot immediately after `P-COORD` (left or right); local modifiers stay after their own heads.
 - **No `-r`**, no clause soft **-n**, no plural **-sh** on the coordinator.
 - **Not** verb+object packages — use [VP-level](#vp-level-coordination); **not** full sentences — those stay `/x/`…
-- **Not** mixed-PoS joins; correlatives; `/x/` sentence linkers (*however*, *therefore*), general adversative *but*, quotation fences, or [numbered enumeration](numbers.md#number-as-discourse-marker-by-marker). In-clause *including* / *rather* / *instead* / *except* are [bare revision](#in-clause-revision-bare-a--e--o--u), not this fence series. Phrase-level ranked conjunction **is** this series (`zel` / `zael` / `zoel` / `zem` / …).
+- **Not** mixed-PoS joins; correlatives; `/x/` sentence linkers (*however*, *therefore*), general adversative *but*, quotation fences, or [numbered enumeration](numbers.md#number-as-discourse-marker-by-marker). In-clause *including* / *rather* / *instead* / *except* are [bare revision](#in-clause-revision-bare-a--e--o--u), not this fence series. Phrase-level ranked conjunction **is** this series (`zel` / `zael` / `zoel` / `zem` / …). Unary ranked only for **…em** / **…el** / **…oem** — [unary ranked](#unary-ranked).
 
 ## Reserved forms
 
