@@ -19,5 +19,5 @@ Fold into `docs/language-reference.md` when decided; dictionary lists specific f
 
 ## Still underspecified under existing PoS (no new prefix)
 
-- Quantifiers (*many*, *all*, …) — numerals/ordinals are in `docs/numbers.md`; phrase **zar** / **zor** cover *something* / *anything* (see `docs/coordination.md`)
+- Quantifiers (*many*, *all*, …) — numerals/ordinals are in `docs/numbers.md`; phrase **zar** / **zor** / **zer** / **zur** cover *something* / *anything* / *whatever-by-rank* / *some objection* (see `docs/coordination.md`)
 - Comparatives (*bigger than X*) as complex adjective (`/ɡ/`+`/b/`) or `/w/`  (use the ranked conjunction?)
