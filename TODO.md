@@ -3,7 +3,6 @@
 -local llm systematically review entire lexicon
 -speed reading display
 -rank reversal (by adding h-word)
--review pronoun questions
 -left bound modifiers?
 
 ## Discourse markers (`/x/`) — expand beyond quotes + linkers
@@ -19,5 +18,4 @@ Fold into `docs/language-reference.md` when decided; dictionary lists specific f
 
 ## Still underspecified under existing PoS (no new prefix)
 
-- Quantifiers (*many*, *all*, …) — numerals/ordinals are in `docs/numbers.md`; **zar** / **zor** / **zer** / **zur** / **var** / **vor** / **ver** / **vur** / **xar** / … cover *something* / *anything* / *whatever-by-rank* / *some objection* (VP *do something*, clause *something happened*; see `docs/coordination.md`)
 - Comparatives (*bigger than X*) as complex adjective (`/ɡ/`+`/b/`) or `/w/`  (use the ranked conjunction?)
