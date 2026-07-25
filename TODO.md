@@ -2,6 +2,8 @@
 -redo plurality
 -local llm systematically review entire lexicon
 -speed reading display
+-rank reversal (by adding h-word)
+-
 
 ## Discourse markers (`/x/`) — expand beyond quotes + linkers
 
@@ -12,7 +14,7 @@ Fold into `docs/language-reference.md` when decided; dictionary lists specific f
 
 ## Clause operators — `/j/` force vs `/h/` (not `/x/`)
 
-- Negation (clause-level `/h/`; adjective-scoped negation via `/w/` if needed)
+- Negation (clause-level `/h/`; adjective-scoped negation via `/w/` if needed) Uses unary conjunctions?
 
 ## Still underspecified under existing PoS (no new prefix)
 

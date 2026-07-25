@@ -63,22 +63,36 @@ English glosses still vary by frame — *prefer A over B*, or *A, else B* — bu
 | **-m** | phrase: `zem` / `zaem` / `zoem` …; opener: `vem` / `vaem` / `voem` / `xem` / `xaem` / `xoem` | Open ranked — ranking among these; others may exist |
 | **-n** | phrase: `zen` / `zaen` / `zoen` …; opener: `ven` / `vaen` / `voen` / `xen` / `xaen` / `xoen` (soft) | Phrase: named/conventional order; opener soft: tentative / reconstructed ranking — see [ending senses](#ending-senses) |
 
-#### Unary phrase-level
+#### Unary and nullary phrase-level
 <a id="unary-phrase"></a>
 <a id="unary-ranked"></a>
+<a id="nullary-phrase"></a>
 
-A **one-conjunct** fence is allowed on phrase-level slots (`/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/`) for these forms only. All other phrase coordinators, and all VP/clause opener chains, stay **two or more** conjuncts — no defined unary reading.
+A **one-conjunct** (**unary**) or **zero-conjunct** (**nullary**) fence is allowed on phrase-level slots (`/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/`) for the forms below. The coordinator alone (nullary), or the coordinator plus one conjunct (unary), fills the slot — optionally with **SHARED** after the coordinator. All other phrase coordinators, and all VP/clause opener chains, stay **two or more** conjuncts — no defined unary or nullary reading.
 
-**Ranked**
+**Arity pattern:** length 2+ = ordinary list; length 1 = focus / exhaustivity on that singleton; length 0 = emptiness in that join frame. On nullary forms, **-l** = empty **and claimed complete** for the frame; **-m** = empty **from the speaker’s list** (often epistemic) with residual existence or residual options outside what’s named; **-n** = named/conventional empty label.
+
+**Ranked — unary**
 
 | Form | Unary reading | Contrast |
 |------|---------------|----------|
 | **…em** (`zem` / `dem` / `bem` / `gem` / `wem` / `hem`) | *above all X* / *first and foremost X* | Open preference — other ranks may exist |
 | **…el** (`zel` / `del` / …) | *X is the sole priority* / *paramount: X* | Closed twin of **…em** — nothing else ranks for this claim |
 | **…oem** (`zoem` / `doem` / …) | *try X first* / *start with X* | Contingency / menu primary — not value ranking |
+| **…oel** (`zoel` / `doel` / …) | *try only this* / *X is the only thing to try* | Closed twin of **…oem** — exclusive triage, no fallback |
 | **…en** (`zen` / `den` / …) | *priority one: X* (conventional) | Named / formulaic top item (*safety first* as a stock frame) |
 
-**Boolean**
+**Ranked — nullary**
+
+| Form | Nullary reading | Contrast |
+|------|-----------------|----------|
+| **…el** (`zel` / `del` / …) | *no preference* / *nothing ranks for this claim* | Closed empty ladder |
+| **…em** (`zem` / `dem` / …) | *no preferences I can name; a ranking may still exist* | Open — same humility pattern as nullary **…am** |
+| **…oem** (`zoem` / `doem` / …) | *nothing to try first that I can name; a first step may exist* | Empty exclusive triage, open |
+| **…oel** (`zoel` / `doel` / …) | *don’t try anything* | Closed empty exclusive triage — no attempt, and that’s the full story |
+| **…en** (`zen` / `den` / …) | *draw* / *tie* | Named / conventional empty ranking outcome — no ordered winner |
+
+**Boolean — unary**
 
 | Form | Unary reading | Contrast |
 |------|---------------|----------|
@@ -89,8 +103,27 @@ A **one-conjunct** fence is allowed on phrase-level slots (`/z/` `/d/` `/b/` `/�
 | **…aol** (`zaol` / `daol` / …) | *X is enough, and that’s all in play* | Closed *and/or* of one — inclusive frame, stricter than **…aom** |
 | **…aom** (`zaom` / `daom` / …) | *at least X* / *X and/or more* | Inclusive singleton — X is a sufficient hit; others may count |
 
-Examples: `zem z-truthrl` → *truth above all*; `zel z-truthrl` → *truth is the sole priority*; `zoem z-fixl` → *try a fix first*; `zen z-safetyl` → *priority one: safety* (conventional); `zal z-waterl` → *just water* / *only water*; `zam z-Samn` → *Sam, for one*; `zol z-waterl` → *it has to be water*; `zom z-coffeel` → *coffee, or something else*; `zaol z-waterl` → *water is enough (closed inclusive)*; `zaom z-waterl` → *at least water*. Do not confuse prefixed **…em** / **…el** / **…en** / **…al** / **…am** / **…ol** / **…om** with bare revision **em** / **el** / **en** / **al** / **am** / **ol** / **om** (*or rather* / *including* / *instead*).
+**Boolean — nullary**
 
+| Form | Nullary reading | Contrast |
+|------|-----------------|----------|
+| **…al** (`zal` / `dal` / …) | *none / nothing / nobody* | Closed empty inventory — you stand behind emptiness |
+| **…am** (`zam` / `dam` / …) | *none I know of; something probably exists* | Open twin — can’t fill the slot, but don’t claim the world is empty |
+| **…an** (`zan` / `dan` / …) | *null* | Named / conventional empty value (*null*, void marker) |
+| **…ol** (`zol` / `dol` / …) | *no option / choice is blocked* | Closed empty menu — pick-one with nowhere to land |
+| **…om** (`zom` / `dom` / …) | *no candidate I can offer; one may exist* | Open empty menu — “I don’t have a pick,” not “impossible” |
+| **…aol** (`zaol` / `daol` / …) | *nothing further is needed* / *zero is enough* | Closed inclusive — null requirement, and that’s the full story |
+| **…aom** (`zaom` / `daom` / …) | *nothing I know of is required; more may still count* | Soft / open null requirement |
+| **…ul** (`zul` / `dul` / …) | *I deny nothing* / *no denials in play* | Closed empty *nor*-list — denial set empty on purpose |
+| **…um** (`zum` / `dum` / …) | *no denial I can make (yet); further denials may apply* | Open empty *nor* — withholding denial, not affirming “nothing exists” |
+
+**…ul** / **…um** / **…an** are **nullary-only** on the phrase fence (no defined one-conjunct reading). **…en** nullary is *draw* / *tie*; unary **…en** stays *priority one: X* (conventional).
+
+Examples (unary): `zem z-truthrl` → *truth above all*; `zel z-truthrl` → *truth is the sole priority*; `zoem z-fixl` → *try a fix first*; `zoel z-fixl` → *try only a fix*; `zen z-safetyl` → *priority one: safety* (conventional); `zal z-waterl` → *just water* / *only water*; `zam z-Samn` → *Sam, for one*; `zol z-waterl` → *it has to be water*; `zom z-coffeel` → *coffee, or something else*; `zaol z-waterl` → *water is enough (closed inclusive)*; `zaom z-waterl` → *at least water*.
+
+Examples (nullary): `zal` → *none / nothing / nobody*; `zam` → *none I know of; something probably exists*; `zan` → *null*; `zol` → *no option*; `zom` → *no candidate I can offer; one may exist*; `zaol` → *nothing further is needed*; `zaom` → *nothing I know of is required; more may still count*; `zul` → *I deny nothing*; `zum` → *no denial I can make (yet)*; `zel` → *no priorities*; `zem` → *no priority I can name; a ranking may still exist*; `zoem` → *nothing to try first that I can name*; `zoel` → *don’t try anything*; `zen` → *draw* / *tie*. Same under `/d/` `/b/` `/ɡ/` `/w/` `/h/` (`dal`, `gam`, …).
+
+Do not confuse prefixed **…em** / **…el** / **…en** / **…al** / **…am** / **…an** / **…ol** / **…om** / **…ul** / **…um** with bare revision **em** / **el** / **en** / **al** / **am** / **an** / **ol** / **om** / **ul** / **um** (*or rather* / *including* / *instead* / *except*).
 ### Exclusivity and *nor*
 
 - **Exclusive (`o`)** — pick **one** of the conjuncts, not more than one.
@@ -240,24 +273,29 @@ The prefix on the coordinator **must match** every conjunct head (`/z/` with `/z
 **Left fence** (preferred):
 
 ```
-P-COORD  ( SHARED )*  PHRASE  PHRASE  ( PHRASE )*
+P-COORD  ( SHARED )*  PHRASE  PHRASE  ( PHRASE )*   ← two or more
+P-COORD  ( SHARED )*  PHRASE                         ← unary (allowed forms)
+P-COORD  ( SHARED )*                                 ← nullary (allowed forms)
 ```
 
 **Right close** (style / comedy):
 
 ```
-PHRASE  PHRASE  ( PHRASE )*  P-COORD  ( SHARED )*
+PHRASE  PHRASE  ( PHRASE )*  P-COORD  ( SHARED )*   ← two or more
+PHRASE  P-COORD  ( SHARED )*                         ← unary (allowed forms)
+P-COORD  ( SHARED )*                                 ← nullary (same as left when empty)
 ```
 
 - **P-COORD** — one of the prefixed forms above (`zam`, `dol`, `bem`, `gam`, `wam`, `ham`, …). Appears **only once** per list: either **before** all conjuncts (left) or **after** all conjuncts (right) — not both, and not between conjuncts.
 - **SHARED** — optional material **immediately after** `P-COORD` in either placement. **Always** scopes over the **whole coordinated phrase** (NP: `/ɡ/` / `/w/` / complex `/ɡ/`+`/b/`; AP: `/w/`; `/w/`-slot and `/h/`-slot joins: further same-slot material only if the lexicon allows stacking on the join as a unit). Shared `/ɡ/` / `/w/` here sit next to the fence (before the heads they grade on the left; after the list on the right) — the fence defines the host unit.
 - **PHRASE** — a conjunct: NP headed by `/z/`, `/d/`, or `/b/` (plus that head’s following local `/ɡ/` / `/w/` / `/b/` material); AP headed by `/ɡ/` (plus contiguous `/b/`, further `/ɡ/` on that `/b/`, and local `/w/`); or a single `/w/` / `/h/` word (plus `/h/`’s contiguous `/b/` when complex). Local modifiers stay **inside** their conjunct, after that conjunct’s head.
 - Two conjuncts (left): `P-COORD  PHRASE  PHRASE`. Two (right): `PHRASE  PHRASE  P-COORD`. Three or more: same pattern with more `PHRASE` items on the conjunct side of `P-COORD`.
-- **Unary phrase** — only **…em** / **…el** / **…oem** / **…en** / **…al** / **…am** / **…ol** / **…om** / **…aol** / **…aom**: `P-COORD  PHRASE` or `PHRASE  P-COORD` — see [unary phrase-level](#unary-phrase). All other phrase coordinators need **two or more** conjuncts.
+- **Unary phrase** — **…em** / **…el** / **…oem** / **…oel** / **…en** / **…al** / **…am** / **…ol** / **…om** / **…aol** / **…aom**: `P-COORD  PHRASE` or `PHRASE  P-COORD` — see [unary and nullary](#unary-phrase).
+- **Nullary phrase** — those same forms, plus **…an** / **…ul** / **…um**: `P-COORD` alone (optional `SHARED`) — the coordinator fills the slot with the [nullary reading](#nullary-phrase). Left and right placement coincide when there are no conjuncts. A following matching-role head is still absorbed as a conjunct (so nullary is only when no conjunct follows / precedes).
+- All other phrase coordinators need **two or more** conjuncts.
 - Single-word siblings: `zam z-dogl z-catl` or `z-dogl z-catl zam` (*a dog and a cat* — open).
 
-**Ranked** (`zel` / `zael` / `zoel`, `zem` / …, `zen` / …): left-to-right rank of the **spoken conjunct order** (before a right-close coordinator) — see [ranked conjunction](#ranked-conjunction-e). Unary: [unary phrase-level](#unary-phrase).
-
+**Ranked** (`zel` / `zael` / `zoel`, `zem` / …, `zen` / …): left-to-right rank of the **spoken conjunct order** (before a right-close coordinator) — see [ranked conjunction](#ranked-conjunction-e). Unary / nullary: [unary and nullary](#unary-phrase).
 ### Scope fence (`P-COORD`)
 
 **Rule:** A modifier **immediately after** a phrase-level conjunction (`zam`, `gam`, `dam`, …) modifies the **entire coordinated phrase** — whether that conjunction is a left fence or a right close.
@@ -307,9 +345,9 @@ Complex adjective on an NP bundle: `zam g-ofl b-Samn z-dogl z-catl` or `z-dogl z
 - `zaem z-journall z-candlesh z-socksh` — *journal ≻ candles ≻ socks* (open **co-satisfiable** ranked — wishlist)
 - `z-teal z-coffeel z-waterl zel` — same neutral ranked ladder with right close
 - `zem z-dogl g-bigl z-catl g-redl` — *(big dog) ≻ (red cat)* (open ranked, exclusivity unmarked)
-- `zem z-truthrl` — *truth above all* (unary open ranked); `zel z-truthrl` — *truth is the sole priority* (unary closed); `zoem z-fixl` — *try a fix first* (unary open exclusive ranked); `zen z-safetyl` — *priority one: safety* (unary named ranked)
+- `zem z-truthrl` — *truth above all* (unary open ranked); `zel z-truthrl` — *truth is the sole priority* (unary closed); `zoem z-fixl` — *try a fix first* (unary open exclusive ranked); `zoel z-fixl` — *try only a fix* (unary closed exclusive ranked); `zen z-safetyl` — *priority one: safety* (unary named ranked)
 - `zal z-waterl` — *just water* / *only water* (unary closed *and*); `zam z-Samn` — *Sam, for one* (unary open *and*); `zol z-waterl` — *it has to be water* (unary closed xor); `zom z-coffeel` — *coffee, or something else* (unary open xor); `zaol z-waterl` — *water is enough* (unary closed *and/or*); `zaom z-waterl` — *at least water* (unary open *and/or*)
-
+- `zal` — *none / nothing / nobody* (nullary closed *and*); `zam` — *none I know of; something probably exists* (nullary open *and*); `zan` — *null* (nullary named); `zol` — *no option* (nullary closed xor); `zom` — *no candidate I can offer; one may exist* (nullary open xor); `zaol` — *nothing further is needed* (nullary closed *and/or*); `zaom` — *nothing I know of is required; more may still count* (nullary open *and/or*); `zul` — *I deny nothing* (nullary closed *nor*); `zum` — *no denial I can make (yet)* (nullary open *nor*); `zel` — *no priorities* (nullary closed ranked); `zem` — *no priority I can name* (nullary open ranked); `zoem` — *nothing to try first that I can name* (nullary open exclusive ranked); `zoel` — *don’t try anything* (nullary closed exclusive ranked); `zen` — *draw* / *tie* (nullary named ranked)
 **AP**
 
 - `gam g-happyl w-veryl g-proudl w-slightlyl` — *(very happy) and (slightly proud)* — each degree inside its conjunct
@@ -337,7 +375,7 @@ Complex adjective on an NP bundle: `zam g-ofl b-Samn z-dogl z-catl` or `z-dogl z
 - **Shared modifiers** — only in the slot immediately after `P-COORD` (left or right); local modifiers stay after their own heads.
 - **No `-r`**, no clause soft **-n**, no plural **-sh** on the coordinator.
 - **Not** verb+object packages — use [VP-level](#vp-level-coordination); **not** full sentences — those stay `/x/`…
-- **Not** mixed-PoS joins; correlatives; `/x/` sentence linkers (*however*, *therefore*), general adversative *but*, quotation fences, or [numbered enumeration](numbers.md#number-as-discourse-marker-by-marker). In-clause *including* / *rather* / *instead* / *except* are [bare revision](#in-clause-revision-bare-a--e--o--u), not this fence series. Phrase-level ranked conjunction **is** this series (`zel` / `zael` / `zoel` / `zem` / …). Unary phrase only for **…em** / **…el** / **…oem** / **…en** / **…al** / **…am** / **…ol** / **…om** / **…aol** / **…aom** — [unary phrase-level](#unary-phrase).
+- **Not** mixed-PoS joins; correlatives; `/x/` sentence linkers (*however*, *therefore*), general adversative *but*, quotation fences, or [numbered enumeration](numbers.md#number-as-discourse-marker-by-marker). In-clause *including* / *rather* / *instead* / *except* are [bare revision](#in-clause-revision-bare-a--e--o--u), not this fence series. Phrase-level ranked conjunction **is** this series (`zel` / `zael` / `zoel` / `zem` / …). Unary / nullary phrase only for the forms in [unary and nullary](#unary-phrase) (**…ul** / **…um** / **…an** nullary-only; **…en** nullary = *draw*, **…an** nullary = *null*).
 
 ## Reserved forms
 
