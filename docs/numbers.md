@@ -31,9 +31,9 @@ The number word takes whichever PoS prefix the role needs (clause slot, interjec
 | `/ɡ/` | **modifier** — referential: the number describes the preceding noun (*three cats*, *the second page*, *room 12*). Goes after the noun, like other adjectives. |
 | `/z/` | **subject** — referential: the numeric value, digit-string, or rank is the subject. |
 | `/d/` | **direct object** — referential: the number is the object (common for digit-strings / codes being dialed, entered, stated). |
-| `/b/` | **argument noun** — referential: the number fills the `/b/` slot of a complex adjective or adverb (*of size 12*, host *on* + channel/label, host *at* + time when a relation is named, …). Bare temporal circumstance (no host) uses `/h/` + **`re`** ([Time](#time)). |
+| `/b/` | **argument noun** — referential: the number fills the `/b/` slot of a complex adjective or adverb (*of size 12*, host *on* + channel/label, host *at* + time when a relation is named, …). Bare temporal circumstance (no host) uses `/h/` + **`ro`** ([Time](#time)). |
 | `/v/` | **verb** — overlay: the number is the clause’s action; see [by marker](#number-as-verb-by-marker). Not multiply/divide by N (use ordinary *multiply* / *divide* plus `/h/`). |
-| `/h/` | **adverb** — overlay: see [by marker](#number-as-adverb-by-marker) (*N times*, ÷N, **time** via **`re`**, *for the Nth time*). |
+| `/h/` | **adverb** — overlay: see [by marker](#number-as-adverb-by-marker) (*N times*, ÷N, **time** via **`ro`**, *for the Nth time*). |
 | `/j/` | **interjection** — overlay: see [by marker](#number-as-interjection-by-marker) (*N more!*, deficit, label/score call, place cheer). Left-edge or bare utterance only — [utterance-marker rules](language-reference.md#utterance-markers-j). **Not** clause force. |
 | `/x/` | **discourse marker** — overlay: see [by marker](#number-as-discourse-marker-by-marker). Does **not** fill a clause slot. |
 
@@ -41,29 +41,29 @@ The number word takes whichever PoS prefix the role needs (clause slot, interjec
 
 - **`/w/` (adjective adjunct)** — numbers do not take `/w/`, and a `/ɡ/` number is not a host for `/w/` grading or framing. Degree and “aboutness” of a quantity use [number endings](#number-endings) (especially **-m** for approximate), not `/w/`.
 
-Digit-strings (`re`…) usually take the argument role the clause needs (often `/d/`). Ordinals that modify a noun use `/ɡ/`; an ordinal used as a standalone rank uses `/z/`, `/d/`, or `/b/` as appropriate. Discourse list items use `/x/` + number ([by marker](#number-as-discourse-marker-by-marker): **`ro`** neutral, **`ra`** corroborating, **`ru`** independent); *for the Nth time* uses `/h/` + **`ro`**; place cheer *First!* uses `/j/` + **`ro`** — none of these is `/ɡ/`.
+Digit-strings (`ro`…) usually take the argument role the clause needs (often `/d/`). Ordinals that modify a noun use `/ɡ/`; an ordinal used as a standalone rank uses `/z/`, `/d/`, or `/b/` as appropriate. Discourse list items use `/x/` + number ([by marker](#number-as-discourse-marker-by-marker): **`re`** neutral, **`ra`** corroborating, **`ru`** independent); *for the Nth time* uses `/h/` + **`re`**; place cheer *First!* uses `/j/` + **`re`** — none of these is `/ɡ/`.
 
 ## Marker vowel (referential identity)
 
-**V** encodes the number’s **referential identity** — scalar vs digit-string vs ordinal. For **scalars**, **V** also carries the **sign of the whole number** (`a` positive, `u` negative).
+**V** encodes the number’s **referential identity** — scalar vs ordinal vs digit-string. For **scalars**, **V** also carries the **sign of the whole number** (`a` positive, `u` negative). Ordinal **`e`** aligns with [ranked conjunction **e**](coordination.md#ranked-conjunction-e) (*rank*).
 
 | V | Writing | Referent | Examples |
 |---|---------|----------|----------|
 | **a** | `+` | Positive **scalar** (count or measure amount) | `g+3l` *three cats*; `z+3l` *three* (subj); `b+12l` *of size 12* |
 | **u** | `-` | Negative **scalar** | `d-3l` *−3* (obj); `g-2l` signed measure on a noun |
-| **e** | `_` | **Digit-string** / label (phones, IDs, “read the digits”) | `d_555,123,4567l`; `g_12l` *room 12*-style; `b_…` under a host relation |
-| **o** | `#` | **Ordinal** / rank | `g#2l` *the second page*; `z#2l` *second* (rank as subject) |
+| **e** | `#` | **Ordinal** / rank | `g#2l` *the second page*; `z#2l` *second* (rank as subject) |
+| **o** | `_` | **Digit-string** / label (phones, IDs, “read the digits”) | `d_555,123,4567l`; `g_12l` *room 12*-style; `b_…` under a host relation |
 
-Do not combine conflicting identity types on one word (e.g. do not use `re` and `ro` for the same token). In [preferred writing](#writing-preferred-shorthand), the marker is **`+`** / **`-`** / **`_`** / **`#`** (not written `r`+V).
+Do not combine conflicting identity types on one word (e.g. do not use `re` and `ro` for the same token). In [preferred writing](#writing-preferred-shorthand), the marker is **`+`** / **`-`** / **`#`** / **`_`** (not written `r`+V).
 
 ### Sign
 
 | Identity | How sign works |
 |----------|----------------|
 | **Scalar** (`a` / `u`, written `+` / `-`) | Sign **is** **V**. Multi-group scalars share one sign for the whole word (e.g. −1 000 265 004 is one **`ru`** word). |
-| **Digit-string** (`e`, written `_`) or **ordinal** (`o`, written `#`) | **Unsigned only.** There is no signed label or signed ordinal form inside the number word. |
+| **Ordinal** (`e`, written `#`) or **digit-string** (`o`, written `_`) | **Unsigned only.** There is no signed label or signed ordinal form inside the number word. |
 
-Do **not** write `_-…` or `#-…`, and do **not** insert speech **`ru`** after **`re`** / **`ro`**. If a negative-looking label or negative rank must be described (*−2nd*, a code that includes a minus), use ordinary lexicon (typically an adjective or complex adjective) plus an unsigned number — not a numeral sign extender.
+Do **not** write `#-…` or `_-…`, and do **not** insert speech **`ru`** after **`re`** / **`ro`**. If a negative-looking label or negative rank must be described (*−2nd*, a code that includes a minus), use ordinary lexicon (typically an adjective or complex adjective) plus an unsigned number — not a numeral sign extender.
 
 There is no separate “mathematical object” marker. To talk about a number as an entity, use a scalar (**`ra`** / **`ru`**) in a referential slot (often with ordinary wording such as the noun *number*), not a distinct numeral class.
 
@@ -77,8 +77,8 @@ There is no separate “mathematical object” marker. To talk about a number as
 |--------|------------|
 | **`ra`** | **Add N / increase by N** — transitive *add N of (object)* / *increase (object) by N*; intransitive *grow by N* when the patient is clear from context. |
 | **`ru`** | **Remove N / decrease by N** — transitive *remove N of (object)* / *decrease (object) by N*; intransitive *shrink by N*. |
-| **`re`** | **Enter / dial / input that digit-string** — type the code, dial the phone number, key the ID. Object (if any) is the channel or device; the digits are in the verb. |
-| **`ro`** | **Take / assign rank N** — intransitive *place Nth* / *come in Nth*; transitive *put (object) in Nth place* / *rank as Nth*. |
+| **`re`** | **Take / assign rank N** — intransitive *place Nth* / *come in Nth*; transitive *put (object) in Nth place* / *rank as Nth*. |
+| **`ro`** | **Enter / dial / input that digit-string** — type the code, dial the phone number, key the ID. Object (if any) is the channel or device; the digits are in the verb. |
 
 “Set to N” (bring a quantity to an absolute value) is not a number-verb sense — use an ordinary verb plus the number as argument or adverb. Multiply/divide likewise stay ordinary verbs plus the number as `/h/` (**`h+Nl`** / **`h-Nl`**). With [percentage points](#percent-and-percentage-points) (**`ju`**), **`ra`** / **`ru`** as verbs mean increase/decrease by that point amount (not a relative %-change factor).
 
@@ -92,15 +92,15 @@ Endings still apply (**-m** ≈ *about* that amount/code/rank, **-r** resume, et
 |--------|---------|--------------|
 | **`ra`** | `h+Nl` | **Multiplicative / factor** — *N times*; *×N*; *by a factor of N* (alone, or with ordinary *multiply*). |
 | **`ru`** | `h-Nl` | **Inverse / partition** — *÷N*; *into N parts*; *1/N as often*; *every Nth* (alone, or with ordinary *divide*). |
-| **`re`** | `h_…l` | **Temporal circumstance only** — *at 15:30*; *on 2026-07-22* (clock or calendar digit reading). **Not** channel, frequency, gate, or other non-time codes — those use a host relation + `/b/` (or `/ɡ/` on a noun). See [Time](#time). |
-| **`ro`** | `h#Nl` | **Nth occurrence of the event** — *for the Nth time*; *on the Nth try* (clause-event ordinal, not discourse list independence). |
+| **`re`** | `h#Nl` | **Nth occurrence of the event** — *for the Nth time*; *on the Nth try* (clause-event ordinal, not discourse list independence). |
+| **`ro`** | `h_…l` | **Temporal circumstance only** — *at 15:30*; *on 2026-07-22* (clock or calendar digit reading). **Not** channel, frequency, gate, or other non-time codes — those use a host relation + `/b/` (or `/ɡ/` on a noun). See [Time](#time). |
 
 Contrasts:
 
 - `h+3l` — *three times* / ×3
 - `h-3l` — ÷3 / every third / into 3
-- `h_15,30l` — *at 15:30* (bare `hre` = time; [Time](#time))
-- `h_2026,07,22l` — *on 2026-07-22* (bare `hre` date)
+- `h_15,30l` — *at 15:30* (bare `hro` = time; [Time](#time))
+- `h_2026,07,22l` — *on 2026-07-22* (bare `hro` date)
 - `/h/` *on* + `b_101.1l` — *on 101.1* (non-time code; not bare `h_…`)
 - `h#3l` — *for the third time*
 - `j#3l` — *Third!* (place cheer)
@@ -118,8 +118,8 @@ Endings still apply (**-m** ≈ *about* that many times / that clock or date, **
 |--------|---------|-------------------|
 | **`ra`** | `j+Nl` | **Quantity addition** — *Three more!*; *Ten more!* (add N to the relevant count / tally / order). |
 | **`ru`** | `j-Nl` | **Deficit / shortfall call** — *Three short!*; *Three fewer!*; *Down by 2!*; *−3!* (mirror of `j+`). |
-| **`re`** | `j_…l` | **Digit-label / magnitude call-out** — *Three!*; *B-12!*; *five-five-five!*; score, bingo, code, or ID as a bare reading of the digits (not “N more”). |
-| **`ro`** | `j#Nl` | **Place / rank cheer** — *First!*; *Second!* (podium / place shout). |
+| **`re`** | `j#Nl` | **Place / rank cheer** — *First!*; *Second!* (podium / place shout). |
+| **`ro`** | `j_…l` | **Digit-label / magnitude call-out** — *Three!*; *B-12!*; *five-five-five!*; score, bingo, code, or ID as a bare reading of the digits (not “N more”). |
 
 **Label vs addition:** bare English *Three!* / *Twelve!* as naming a score, ball, or count → **`j_`**. *Three more!* (increment the tally) → **`j+`**. Bingo / room codes / phone fragments → **`j_`**.
 
@@ -138,14 +138,14 @@ Endings still apply (**-m** fuzzy *about three more!* / *about three!*, **-n** c
 
 ### Number as discourse marker (by marker)
 
-`/x/` + number is discourse glue for numbered list items and label cites. Marker vowel encodes **independence framing** of the list item (or cite-as-label for **`re`**). It does **not** occupy a main-clause argument or adjunct slot (contrast `/ɡ/` *the second page*, `/h/` *three times* / *for the Nth time*, `/j/` interjection shouts).
+`/x/` + number is discourse glue for numbered list items and label cites. Marker vowel encodes **independence framing** of the list item (or cite-as-label for **`ro`**). It does **not** occupy a main-clause argument or adjunct slot (contrast `/ɡ/` *the second page*, `/h/` *three times* / *for the Nth time*, `/j/` interjection shouts).
 
 | Marker | Writing | Discourse sense |
 |--------|---------|-----------------|
-| **`ro`** | `x#Nl` | **Neutral point N** — numbered item with no independence framing (*point N:*, *note N:*, bare *(N)*). |
+| **`re`** | `x#Nl` | **Neutral point N** — numbered item with no independence framing (*point N:*, *note N:*, bare *(N)*). |
 | **`ra`** | `x+Nl` | **Corroborating item N** — backs, restates, or same-directions an earlier item (*corroborating N:*, *echoing N:*). Legitimate for emphasis, clarity, teaching, or a related source—not a new line of support. |
 | **`ru`** | `x-Nl` | **Independent item N** — a new line of support or consideration (*independent N:*, *distinct N:*). Would still matter if other listed items were gone. |
-| **`re`** | `x_…l` | **Cite a discourse label** — agenda item, section code, slide, ticket id (digits as label, not independence framing) (*re item 12; under 3.2*). |
+| **`ro`** | `x_…l` | **Cite a discourse label** — agenda item, section code, slide, ticket id (digits as label, not independence framing) (*regarding item 12; under 3.2*). |
 
 **Independence framing:** **`#`** = unmarked inventory or steps; **`+`** = corroborating (aligned with something already listed); **`-`** = independent (new line of support). Do not use **`+`** / **`-`** for for/against or open vs scratch a bullet — independence is the point. Ordinary *firstly / secondly* without that framing is **`x#Nl`**. For/against and both-sides checks stay in ordinary wording or claim-level evidentiality, not on the number marker.
 
@@ -261,23 +261,23 @@ The **whole** / reference class is **not** inside the number word. Prefer clause
 
 ## Digit-strings
 
-Use marker **`re`** (written **`_`**). Omit exponents. Prefer groups of three digits. Ending is usually **-l** (exact label); **-n** for an official designation; **-r** to resume a prior code. Bare `/h/` + **`re`** is **[temporal circumstance only](#time)** (`h_15,30l`, `h_2026,07,22l`) — not a generic code adverb. Non-time labels as circumstance use a host relation + `/b/` (e.g. `/h/` *on* + `b_7l` *channel 7*), or modify a noun with `/ɡ/`. Digit-strings are unsigned — see [Sign](#sign). Clock and calendar field orders are under [Time](#time).
+Use marker **`ro`** (written **`_`**). Omit exponents. Prefer groups of three digits. Ending is usually **-l** (exact label); **-n** for an official designation; **-r** to resume a prior code. Bare `/h/` + **`ro`** is **[temporal circumstance only](#time)** (`h_15,30l`, `h_2026,07,22l`) — not a generic code adverb. Non-time labels as circumstance use a host relation + `/b/` (e.g. `/h/` *on* + `b_7l` *channel 7*), or modify a noun with `/ɡ/`. Digit-strings are unsigned — see [Sign](#sign). Clock and calendar field orders are under [Time](#time).
 
 ## Time
 
 Time uses the existing number grammar; there is **no** fifth marker vowel and **no** time closer parallel to **`jo`** / **`ju`**.
 
-**Bare `/h/` + `re` (`hre…`) is reserved for temporal circumstance** (clock or calendar). Spoken `hre` already marks that reading; do not use bare `h_…` for channel, frequency, gate, room-as-where, or other non-time codes.
+**Bare `/h/` + `ro` (`hro…`) is reserved for temporal circumstance** (clock or calendar). Spoken `hro` already marks that reading; do not use bare `h_…` for channel, frequency, gate, room-as-where, or other non-time codes.
 
 | Job | How |
 |-----|-----|
-| **Clock / schedule** | Digit-string **`re`** as bare `/h/`. Default **24h**. Fields left→right, commas orthographic only: hour, minute, optional seconds — `h_15,30l`, `h_15,30,00l`. |
-| **Calendar date** | Digit-string **`re`**, ISO-ish fields: year, month, day — bare `h_2026,07,22l`, or modifier `g_2026,07,22l`. An explicit *date* host + `/b/` is optional when you want to name the relation; it is not required to license bare `hre` (bare `hre` already means time). |
-| **Duration** | Scalar **`ra`** / **`ru`** plus a lexicon **unit** (*hour*, *day*, …) in the clause — not a digit-string, not bare `hre`. Same engineering-exponent habits as other measures when useful. |
+| **Clock / schedule** | Digit-string **`ro`** as bare `/h/`. Default **24h**. Fields left→right, commas orthographic only: hour, minute, optional seconds — `h_15,30l`, `h_15,30,00l`. |
+| **Calendar date** | Digit-string **`ro`**, ISO-ish fields: year, month, day — bare `h_2026,07,22l`, or modifier `g_2026,07,22l`. An explicit *date* host + `/b/` is optional when you want to name the relation; it is not required to license bare `hro` (bare `hro` already means time). |
+| **Duration** | Scalar **`ra`** / **`ru`** plus a lexicon **unit** (*hour*, *day*, …) in the clause — not a digit-string, not bare `hro`. Same engineering-exponent habits as other measures when useful. |
 | **Deixis / tense** | Ordinary lexicon `/h/` (*yesterday*, *ago*, *until*, mood/evidential). Numbers appear only for a numeric payload (*3 days ago* = relation + scalar + unit). |
 | **Non-time digit labels** | Host relation + `/b/` (`/h/` *on* + `b_101.1l`), or `/ɡ/` on a noun (*channel* `g_7l`) — **not** bare `h_…`. |
 
-**Not bare `hre`:** `h+3l` (×3 / *three times*); `h#3l` (*for the third time*); non-time codes as above. Do not use a scalar for a clock face (`*g+1530l*` for 15:30). Timezone, era, and calendar system stay lexicon adjuncts, not inside the number word.
+**Not bare `hro`:** `h+3l` (×3 / *three times*); `h#3l` (*for the third time*); non-time codes as above. Do not use a scalar for a clock face (`*g+1530l*` for 15:30). Timezone, era, and calendar system stay lexicon adjuncts, not inside the number word.
 
 Endings: **-l** exact reading; **-m** fuzzy (*around 15:30*); **-n** conventional schedule/date name; **-r** resume a prior clock or date label.
 
@@ -295,10 +295,10 @@ Speech always uses the full CV grammar above. **Writing prefers shorthand** for 
 |--------|--------|---------|
 | **`+`** | `ra` | Positive scalar |
 | **`-`** | `ru` | Negative scalar |
-| **`_`** | `re` | Digit-string |
-| **`#`** | `ro` | Ordinal |
+| **`#`** | `re` | Ordinal |
+| **`_`** | `ro` | Digit-string |
 
-Place the identity symbol **immediately after PoS, before the digits**: `g+3l`, `d_555,123,4567l`, `g#2n`. After **`_`** or **`#`**, do **not** write a following **`-`** (no signed labels/ordinals) — see [Sign](#sign).
+Place the identity symbol **immediately after PoS, before the digits**: `g+3l`, `d_555,123,4567l`, `g#2n`. After **`#`** or **`_`**, do **not** write a following **`-`** (no signed labels/ordinals) — see [Sign](#sign).
 
 ### Body
 
@@ -329,16 +329,16 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 | 3 (as subject) | `z+3l` | *zrarel* |
 | −3 (as object) | `d-3l` | *drurel* |
 | of size 12 | `b+12l` | *brawodul* (`b` + `ra` + wo du) |
-| room 12 (modifier) | `g_12l` | *grewodul* (`g` + `re` + wo du) |
+| room 12 (modifier) | `g_12l` | *growodul* (`g` + `ro` + wo du) |
 | 139 | `g+139l` | *graworenal* (`ra` + wo re na) |
 | 27e12 | `g+27e12l` | *grabawodujadulel* (`ra` + ba wo du **ja** + du le) |
 | e9 (bare) | `g+e9l` | *grabanal* (`ra` + ba na; **no** `ja`) |
 | 50e-6 | `g+50e-6l` | *grabugujavazol* (`ra` + bu gu **ja** + va zo) |
 | −1e9 −265e3 −4 | `g-1e9,265e3,4l` | *grubanajawobarejaduguvamol* — **`ru`**; groups: ba na **ja** wo · ba re **ja** du gu va · mo |
 | $5860.04 → 5e3 + 860 + 4e-2 | `g+5e3,860,4e-2l` | *grabarejavahaguzobudujamol* — ba re **ja** va · ha gu zo · bu du **ja** mo |
-| 2nd | `g#2l` | *grodul*; title-like *the Second…* may take **-n** (`g#2n` / *grodun*) |
+| 2nd | `g#2l` | *gredul*; title-like *the Second…* may take **-n** (`g#2n` / *gredun*) |
 | about 27e6 | `g+27e6m` | *grabagujadulem* (ba gu **ja** du le, ending **-m**) |
-| phone 555-123-4567 | `d_555,123,4567l` | *drevavavawoduremovagulel* (`d` + `re` + va×3 · wo du re · mo va gu · le + `l`) |
+| phone 555-123-4567 | `d_555,123,4567l` | *drovavavawoduremovagulel* (`d` + `ro` + va×3 · wo du re · mo va gu · le + `l`) |
 | scientific 5.2487083e-4 | `g+5.2487083e-4l` | *grabumojavajedumohalezoharel* (`ra` + bu mo **ja** + va **je** + du mo ha · le zo ha · re) |
 | 25% | `g+25%l` | *graduvajol* (`g` + `ra` + du va **jo** + `l`) |
 | about 3% | `g+3%m` | *grarejom* (`ra` + re **jo** + `m`) |
@@ -346,23 +346,23 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 | 100% | `g+100%l` | *grawozozojol* (`ra` + wo zo zo **jo**; normal mantissa digits) |
 | +2 pp | `g+2%*l` | *gradujul* (`ra` + du **ju`) |
 | about −1.5 pp | `g-1.5%*m` | *gruwojevajum* (`ru` + wo **je** va **ju** + `m`) |
-| neutral point 1 / 2 | `x#1l`, `x#2l` | *xrowol*, *xrodul* (`x` + `ro` + …) |
+| neutral point 1 / 2 | `x#1l`, `x#2l` | *xrewol*, *xredul* (`x` + `re` + …) |
 | corroborating item 3 | `x+3l` | *xrarel* (`x` + `ra` + re) |
 | independent item 2 | `x-2l` | *xrudul* (`x` + `ru` + du) |
-| re agenda 12 | `x_12l` | *xrewodul* (`x` + `re` + wo du) |
-| as in (2) above (neutral) | `x#2r` | *xrodur* (ending **-r**) |
+| regarding agenda 12 | `x_12l` | *xrowodul* (`x` + `ro` + wo du) |
+| as in (2) above (neutral) | `x#2r` | *xredur* (ending **-r**) |
 | three times / ×3 | `h+3l` | *hrarel* (`h` + `ra` + re) |
 | ÷3 / every third | `h-3l` | *hrurel* (`h` + `ru` + re) |
-| at 15:30 | `h_15,30l` | *hrewovarezol* (`h` + `re` + wo va · re zo) — bare `hre` = time |
-| on 2026-07-22 | `h_2026,07,22l` | *hrewoduzoguzoledudul* (`h` + `re` + …) — bare `hre` date |
-| date 2026-07-22 (modifier) | `g_2026,07,22l` | *grewoduzoguzoledudul* (`g` + `re` + wo du zo gu · zo le · du du) — date fields, not threes |
+| at 15:30 | `h_15,30l` | *hrowovarezol* (`h` + `ro` + wo va · re zo) — bare `hro` = time |
+| on 2026-07-22 | `h_2026,07,22l` | *hrowoduzoguzoledudul* (`h` + `ro` + …) — bare `hro` date |
+| date 2026-07-22 (modifier) | `g_2026,07,22l` | *growoduzoguzoledudul* (`g` + `ro` + wo du zo gu · zo le · du du) — date fields, not threes |
 | on 101.1 (frequency) | `/h/` *on* + `b_101.1l` | not bare `h_…`; host + `/b/` digit-string |
-| for the third time | `h#3l` | *hrorel* (`h` + `ro` + re) |
-| Three! (label / score) | `j_3l` | *jrerel* (`j` + `re` + re) |
+| for the third time | `h#3l` | *hrerel* (`h` + `re` + re) |
+| Three! (label / score) | `j_3l` | *jrorel* (`j` + `ro` + re) |
 | Three more! | `j+3l` | *jrarel* (`j` + `ra` + re) |
 | Three short! / Three fewer! / −3! | `j-3l` | *jrurel* (`j` + `ru` + re) |
-| twenty-seven! (label) | `j_27l` | *jredulel* (`j` + `re` + du le) |
-| First! (place cheer) | `j#1l` | *jrowol* (`j` + `ro` + wo) |
+| twenty-seven! (label) | `j_27l` | *jrodulel* (`j` + `ro` + du le) |
+| First! (place cheer) | `j#1l` | *jrewol* (`j` + `re` + wo) |
 
 In a sentence, the PoS attaches to that single number word (see [Parts of speech on numbers](#parts-of-speech-on-numbers); e.g. direct-object digit-string: `d_…l`). Prefer naming the whole with a `/ɡ/` **`jo`** percent (denominator patterns TBD).
 
