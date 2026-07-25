@@ -17,4 +17,4 @@ Fold into `docs/language-reference.md` when decided; dictionary lists specific f
 ## Still underspecified under existing PoS (no new prefix)
 
 - Quantifiers (*many*, *all*, *some*, …) — numerals/ordinals are in `docs/numbers.md`
-- Comparatives (*bigger than X*) as complex adjective (`/ɡ/`+`/b/`) or `/w/`  (use the priority conjunction?)
+- Comparatives (*bigger than X*) as complex adjective (`/ɡ/`+`/b/`) or `/w/`  (use the ranked conjunction?)
