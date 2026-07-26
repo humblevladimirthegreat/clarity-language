@@ -154,7 +154,7 @@ Same under `/d/` / `/b/` when the ranked group fills that slot. Under `/ɡ/`, SH
 
 Assert the ranking as clause content with the same predicative pattern as plain adjectives (zero-copula / light verb as elsewhere): `jal zel g-bigl z-Samn z-Lean` → *Sam is bigger than Lea.* When discourse needs the comparee alone as subject of another verb, keep that subject ordinary and place the comparative claim in another slot or sentence — do not force the whole ladder to be the only subject.
 
-**Number ranges** (two compatible number conjuncts under **`a`** / **`e`** / …; exclusive high via in-range **`ul`**; **-r** = value in the span): **[numbers.md § Ranges](numbers.md#ranges)** — not expanded here.
+**Number ranges** (two compatible number conjuncts; exclusive high via **`ul`**; **-r** in-span) and **numeric thresholds** (unary ranked **`zel z+5l`** = *\<5*, **`zuel z+5l`** = *\>5*): **[numbers.md § Ranges](numbers.md#ranges)** — not expanded here.
 
 #### Unary and nullary phrase-level
 <a id="unary-phrase"></a>
@@ -173,14 +173,14 @@ Under `/h/` / `/w/`, only the [defined core](#circumstance-restriction-h-w) uses
 
 | Form | Unary reading | Contrast |
 |------|---------------|----------|
-| **…em** (`zem` / `dem` / `bem` / `gem` / `wem` / `hem`) | *X first* / *mainly X*; with SHARED scale → open **superlative** (*X is most … among those that come to mind* / top so far) | Open preference — other ranks may exist; see [comparatives](#comparatives) |
-| **…el** (`zel` / `del` / …) | *only X matters* / *X, period*; with SHARED scale → **superlative** (*X is the …-est* / *most …* of the domain) | Closed twin of **…em** — nothing else ranks for this claim; see [comparatives](#comparatives) |
+| **…el** (`zel` / `del` / …) | *only X matters* / *X, period*; with SHARED scale → **superlative** (*X is the …-est* / *most …* of the domain); **number X** → [threshold *\< X*](numbers.md#numeric-thresholds) | Closed twin of **…em** — nothing else ranks for this claim; see [comparatives](#comparatives) |
+| **…em** (`zem` / `dem` / `bem` / `gem` / `wem` / `hem`) | *X first* / *mainly X*; with SHARED scale → open **superlative** (*X is most … among those that come to mind* / top so far); **number X** → soft *\< ~X* | Open preference — other ranks may exist; see [comparatives](#comparatives) |
 | **…oem** (`zoem` / `doem` / …) | *start with X* / *try X first* | Contingency / menu primary — not value ranking |
 | **…oel** (`zoel` / `doel` / …) | *only try X* / *X with no listed fallback* | Closed twin of **…oem** — exclusive triage, no listed fallback (singleton already implies empty if X fails) |
-| **…uem** (`zuem` / `duem` / …) | *X last* / *mainly leave X for last* | Open reverse-ranked — X is low on the ladder; other ranks may exist |
-| **…uel** (`zuel` / `duel` / …) | *X last, period* / *only X as least*; with SHARED scale → **least** (*X is the least …* of the domain) | Closed reverse-ranked — X is the sole bottom / ascending singleton; see [comparatives](#comparatives) |
+| **…uel** (`zuel` / `duel` / …) | *X last, period* / *only X as least*; with SHARED scale → **least** (*X is the least …* of the domain); **number X** → [threshold *\> X*](numbers.md#numeric-thresholds) | Closed reverse-ranked — X is the sole bottom / ascending singleton; see [comparatives](#comparatives) |
+| **…uem** (`zuem` / `duem` / …) | *X last* / *mainly leave X for last*; **number X** → soft *\> ~X* | Open reverse-ranked — X is low on the ladder; other ranks may exist |
 | **…en** (`zen` / `den` / …) | *X first* (stock) / *X, as usual* | Named / formulaic top item (*safety first* as a stock frame) |
-| **…er** (`zer` / `der` / …) | *preferably some X* | Unspecified preferred member of kind X — not a closed “only X” (**…el**) |
+| **…er** (`zer` / `der` / …) | *preferably some X*; **number X** → *some/whatever value \< X* | Unspecified preferred member of kind X — not a closed “only X” (**…el**); see [thresholds](numbers.md#numeric-thresholds) |
 
 **Ranked — nullary**
 

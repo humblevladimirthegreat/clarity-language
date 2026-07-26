@@ -384,7 +384,30 @@ Spans reuse [phrase fences](coordination.md) whose conjuncts are number words. T
 | **`o`** / **`ao`** | — | **Not** ranges — stay discrete (*3 or 5* / *3 and/or 5*) |
 | **`ae`** / **`oe`** | — | **Not** ranges — stay ranked ladders |
 
-**Arity escape:** three or more number conjuncts under **`a`** stay an ordinary discrete inventory (`zal z+1l z+3l z+7l` = *1, 3, and 7*). Unary `zal z+3l` stays *just 3*, not a ray.
+**Arity escape:** three or more number conjuncts under **`a`** stay an ordinary discrete inventory (`zal z+1l z+3l z+7l` = *1, 3, and 7*). Unary **`zal z+3l`** stays *just 3*, not a ray. Unary **ranked** with a number is a [threshold](#numeric-thresholds), not ordinary *only X matters*.
+
+### Thresholds (unary ranked)
+<a id="numeric-thresholds"></a>
+<a id="greater-less-than"></a>
+
+When the **sole** conjunct of a [ranked](coordination.md#ranked-conjunction-e) fence (**`e`** / **`ue`**, and their open / named twins) is a **compatible number word**, that number is an **extremum on the line**, not “only this value matters” and not a two-endpoint [span](#ranges):
+
+| Form | Reading | Mnemonic |
+|------|--------|----------|
+| **`zel z+5l`** | ***less than 5*** (`< 5`) | 5 is the **greatest** (ceiling); the span is everything it outranks |
+| **`zem z+5l`** | soft / approximate *less than ~5* | open twin |
+| **`zuel z+5l`** | ***greater than 5*** (`> 5`) | 5 is the **least** (floor); reverse-ranked extremum |
+| **`zuem z+5l`** | soft / approximate *greater than ~5* | open reverse twin |
+| **`zen z+5l`** | named/conventional ceiling band (*under-fives*-style label) | phrase **-n** |
+| **`zuen z+5l`** | named/conventional floor band | phrase **-n** reverse |
+
+Same under `/d/` `/b/` `/ɡ/` (`gel g+5l` = modifier *\<5*; `duel d+10l` = object *\>10*). **`ae`** / **`oe`** unary with a number are **not** thresholds (stay ordinary ranked unary / triage). Boolean unary (**`zal`** / **`zol`** / …) is **not** a threshold.
+
+**Inclusive bounds:** default is **strict** (`<` / `>`). For **≤ 5** / **≥ 5**, use a two-endpoint [span](#ranges) or ray with the bound included (e.g. low–high with that end in, or open-end patterns if added later) — do **not** flip unary ranked to inclusive. Exclusive-high **`ul`** stays a two-side span tool (`zal z+3l ul z+5l`), not a unary threshold marker.
+
+**Unspecified in a threshold:** bare **`e`** + **-r** = unspecified member of the *\< X* ray — `zer z+5l` → *some/whatever value \< 5* (under question → *which value \< 5?*). **`ue`** takes **no** **-r** (stacked forms never do — [coordination](coordination.md#unspecified-member-r-phrase)); there is no `zuer` threshold. For an unspecified value *\> 5*, use other wording for now (e.g. a two-endpoint span with an open high, once defined), not a reverse **-r** fence.
+
+Contrast: `zel z+3l z+5l` = *from 3 to 5* (two endpoints); `zel z+5l` = *\< 5* (unary threshold). `zel z-Samn` (non-number) stays ordinary *only Sam matters* / superlative-with-scale — **number conjunct only** triggers this reading.
 
 ### Half-open (exclude the high end only)
 
@@ -416,7 +439,7 @@ Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which val
 
 **Clock / date spans:** do **not** use bare circumstance-`hal` (that series is [applicability](coordination.md#circumstance-restriction-h-w)). Prefer a host relation + `/b/` digit-string endpoints, or an NP/argument fence of `_` numbers (`bal b_15,00l b_16,00l`).
 
-Examples: `z-agel gal g+3l g+5l` → *ages 3–5*; `zal z+3l ul z+5l` → *[3, 5)*; `zel z+10l z+20l` → *from 10 to 20*; `zar z+3l z+5l` → *some value in 3–5*; `zol z+3l z+5l` → *3 or 5* (discrete, not a range).
+Examples: `z-agel gal g+3l g+5l` → *ages 3–5*; `zal z+3l ul z+5l` → *[3, 5)*; `zel z+10l z+20l` → *from 10 to 20*; `zel z+5l` → *\< 5*; `zuel z+5l` → *\> 5*; `zar z+3l z+5l` → *some value in 3–5*; `zol z+3l z+5l` → *3 or 5* (discrete, not a range).
 
 ## Stress (pronunciation guide)
 

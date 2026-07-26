@@ -226,7 +226,7 @@ Pronoun grammar (anaphoric **-r** forms, special pronouns) lives in **[pronouns.
 
 # Numbers
 
-Numeral grammar (digit roots, engineering/scientific forms, ordinals, digit-strings, `/x/` enumeration, number-word shape, [ranges](numbers.md#ranges)) lives in **[numbers.md](numbers.md)**.
+Numeral grammar (digit roots, engineering/scientific forms, ordinals, digit-strings, `/x/` enumeration, number-word shape, [ranges](numbers.md#ranges) / [thresholds](numbers.md#numeric-thresholds)) lives in **[numbers.md](numbers.md)**.
 
 # Phrase-level, VP-level, and clause-level coordination
 
