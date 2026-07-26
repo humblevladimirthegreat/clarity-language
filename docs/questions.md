@@ -81,7 +81,7 @@ VP / clause under question (schematic): `var` → *What (did they) do?*; `vur` �
 
 ## Yes/no and focus / bare under question
 
-Phrase-level for entity/property slots; VP/clause for action/claim slots. Statement readings and contrasts: [coordination.md](coordination.md#focus-phrase). Under `/h/` / `/w/`, only the [defined circumstance core](coordination.md#circumstance-restriction-h-w) applies — not the entity/property emptiness rows below.
+Phrase-level for entity/property slots; VP/clause for action/claim slots. Statement readings and contrasts: [coordination.md](coordination.md#focus-phrase). Under `/h/` / `/w/`, only the [defined circumstance core](restrictors.md) applies — not the entity/property emptiness rows below.
 
 **Summary**
 
@@ -171,7 +171,7 @@ Phrase-level for entity/property slots; VP/clause for action/claim slots. Statem
 
 ## Circumstance (*When?*)
 
-Under `/h/` / `/w/`, only the [defined core](coordination.md#circumstance-restriction-h-w) has circumstance readings. Unspecified-member **-r** under question:
+Under `/h/` / `/w/`, only the [defined core](restrictors.md) has circumstance readings. Unspecified-member **-r** under question:
 
 | Form | Statement (bare) | Under question (bare) |
 |------|---------------------|--------------------------|

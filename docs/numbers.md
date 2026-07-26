@@ -205,7 +205,7 @@ A number word may omit every digit group: **PoS + marker + ending** only. The ma
 | `/j/` | `j+l` *More!* (unspecified plural addition); `j-l` *Short!* / *down by some amount!*; `j#l` *Nth!* (place cheer, rank unnamed); `j_l` *…!* (unspecified score / code call) |
 | `/x/` | `x#l` *some point:* (neutral, number unnamed); `x+l` / `x-l` corroborating / independent item of unnamed index; `x_l` *regarding some (unnamed) label* |
 
-**`h_l` vs `har`:** digitless time `h_l` is still a **number word** (unspecified clock/date reading under bare `hro`). Circumstance **`har`** (*sometime*) is the [restrictor](coordination.md#circumstance-restriction-h-w), not a numeral — do not swap them.
+**`h_l` vs `har`:** digitless time `h_l` is still a **number word** (unspecified clock/date reading under bare `hro`). Circumstance **`har`** (*sometime*) is the [restrictor](restrictors.md), not a numeral — do not swap them.
 
 **Illegal with zero groups:** percent / percentage-point closers (**`jo`** / **`ju`**) still need a mantissa group — bare `…+%l` is not a shortcut for “some percent.” Exponent-only groups (`e9`) are **not** zero-group forms; they are ordinary one-group bare OoM.
 
@@ -509,7 +509,7 @@ Contrast: `zel g-agel z+3l z+5l` = *from 3 to 5 on age* (span); `zel z+3l z+5l` 
 
 ### Half-open (exclude the high end only)
 
-[Revisers](coordination.md#in-clause-revision-bare-a--e--o--u) **inside the range** marks an exclusive **upper** bound. Replace the second (high) conjunct with prefix-less **`ul`** + that number. SHARED continuum stays required:
+[Revisers](revisers.md) **inside the range** marks an exclusive **upper** bound. Replace the second (high) conjunct with prefix-less **`ul`** + that number. SHARED continuum stays required:
 
 | Shape | Reading |
 |-------|--------|
@@ -535,7 +535,7 @@ Fence **-r** on a number-range shape (still with SHARED continuum) = an **unspec
 
 Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which value in 3–5?*). Same under `/d/` `/b/` / `/ɡ/` as the slot needs (`gal g-agel g+3l g+5l` = modifier *ages 3–5*; `dar g-spanl d+10l ul d+20l` = object *some value in [10, 20)*).
 
-**Clock / date spans:** do **not** use bare circumstance-`hal` (that series is [applicability](coordination.md#circumstance-restriction-h-w)). Prefer SHARED continuum **`g-timel`** (or a host relation + `/b/`) with digit-string endpoints (`bal g-timel b_15,00l b_16,00l`).
+**Clock / date spans:** do **not** use bare circumstance-`hal` (that series is [applicability](restrictors.md)). Prefer SHARED continuum **`g-timel`** (or a host relation + `/b/`) with digit-string endpoints (`bal g-timel b_15,00l b_16,00l`).
 
 Examples: `zal g-agel z+3l z+5l` → *between ages 3 and 5*; `z-kidl gal g-agel g+3l g+5l` → *kids ages 3–5*; `zal g-spanl z+3l ul z+5l` → *[3, 5)*; `zel g-agel z+10l z+20l` → *from age 10 to 20*; `zel z+3l z+5l` → *3 ≻ 5* (preference, not a span); `zel z+5l` → *\< 5*; `zuel z+5l` → *\> 5*; `zael z+5l z+5l` → *equally 5* / *5 equals 5*; `zaem z+3l z+5l` → *3 and 5 approximately equal*; `zar g-spanl z+3l z+5l` → *some value in 3–5*; `zol z+3l z+5l` → *3 or 5* (discrete, not a range).
 

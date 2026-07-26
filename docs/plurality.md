@@ -34,7 +34,7 @@ Example with resume: `…r` points at one prior noun; `…rsh` points at the **g
 |------|-------------|
 | count / amount **`>1`** without treating a set as the referent | digitless **`g+l`** (etc.) — [zero digit groups](numbers.md#zero-digit-groups) |
 | *all* / *every* / kind-generic | **`zual` / `zuam` + SHARED kind** — [universals](coordination.md#universals-domains-generics) |
-| habitual / characterizing pattern | bare **`hual` / `huam`** — [circumstance](coordination.md#circumstance-restriction-h-w) |
+| habitual / characterizing pattern | bare **`hual` / `huam`** — [circumstance](restrictors.md) |
 | *N times* / repetition count | [number words](numbers.md) under `/h/` (including digitless **`h+l`**) |
 | *everyone* (universal address) | bare **`…ual`** (vocative / entity slot as usual) |
 
@@ -140,7 +140,7 @@ Depends on subclass (see [utterance markers](language-reference.md#utterance-mar
 
 ### Discourse markers (`/x/`)
 
-* **Revisers** ([**al** / **am** / **an** / **el** / **em** / **en** / …](coordination.md#in-clause-revision-bare-a--e--o--u)) — No **-sh** (**-l** / **-m** / named **-n** ending only). Plurality is marked on each side independently (`z-dogl am z-catlsh`).
+* **Revisers** ([**al** / **am** / **an** / **el** / **em** / **en** / …](revisers.md)) — No **-sh** (**-l** / **-m** / named **-n** ending only). Plurality is marked on each side independently (`z-dogl am z-catlsh`).
 * **NP- / AP-level joins** ([`zam`](coordination.md#np-level-coordination), `dal`, [`gam`](coordination.md#ap-level-coordination), …) — No **-sh** on the join; plurality stays on each phrase conjunct (or on SHARED `/ɡ/`…**-sh** when the ascription is [collective](#collective-ascription)).
 * **VP-level joins** ([`vam`](coordination.md#vp-level-coordination), `var`, …) — No **-sh** on the join; plurality stays on material inside each VP conjunct.
 * **Clause joins** ([`xal`](coordination.md#clause-level-coordination), …) — Do **not** take **-sh**; plurality stays on material inside each sentence.
