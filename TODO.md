@@ -2,7 +2,6 @@
 -redo plurality
 -local llm systematically review entire lexicon
 -speed reading display
--allow optionality on other conjunctions (**a** / **ao** / ranked) if needed later; **o** done via **-om**
 
 ## Discourse markers (`/x/`) — expand beyond quotes + linkers
 
@@ -13,4 +12,4 @@ Fold into `docs/language-reference.md` when decided; dictionary lists specific f
 
 ## Still underspecified under existing PoS (no new prefix)
 
-- Comparatives (*bigger than X*) as complex adjective (`/ɡ/`+`/b/`) or `/w/`  (use the ranked conjunction?)
+- Equative (*as big as*) and measured differentials (*two inches taller*)

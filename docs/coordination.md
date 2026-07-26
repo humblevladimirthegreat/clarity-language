@@ -1,6 +1,6 @@
 # Coordination
 
-This page is the source of truth for **phrase-level** (same-slot fence: left preferred, right close allowed), **VP-level**, and **clause-level** coordination, plus **in-clause revision** with prefix-less vowels + **-l** / **-m** / **-n**. There is **no** bare word-level **coordinator** series (lists still need a PoS prefix + ending). Correlatives (*both…and*, *either…or*) come later. Asymmetric discourse glue (*but*, *however*, *therefore*) is `/x/` but **not** the prefixed join series — see [language-reference.md](language-reference.md#discourse-markers-x). In-clause *including* / *rather* / *instead* / *except* use [revision](#in-clause-revision-bare-a--e--o--u) (**al** / **am** / **an** / **el** / … — ending required); sentence-level *instead* / *except* (claim-to-claim) stay other `/x/` roots when needed.
+This page is the source of truth for **phrase-level** (same-slot fence: left preferred, right close allowed), **VP-level**, and **clause-level** coordination, plus **in-clause revision** with prefix-less vowels + **-l** / **-m** / **-n**. There is **no** bare word-level **coordinator** series (lists still need a PoS prefix + ending). Correlatives (*both…and*, *either…or*) come later. Asymmetric discourse glue (*but*, *however*, *therefore*) is `/x/` but **not** the prefixed join series — see [language-reference.md](language-reference.md#discourse-markers-x). In-clause *including* / *rather* / *instead* / *except* use [revision](#in-clause-revision-bare-a--e--o--u) (**al** / **am** / **an** / **el** / … — ending required); sentence-level *instead* / *except* (claim-to-claim) stay other `/x/` roots when needed. [Comparatives / superlatives](#comparatives) reuse ranked fences with SHARED `/ɡ/` as scale (unary = superlative).
 
 PoS prefixes and ordinary word shape: [language-reference.md](language-reference.md). Reference suffixes: [reference-suffix.md](reference-suffix.md). Phonotactics for reserved coordinator roots: [phonology.md](phonology.md#phonotactics). Interrogative readings of these forms: [questions.md](questions.md).
 
@@ -117,6 +117,43 @@ English glosses still vary by frame — *prefer A over B*, or *A, else B* — bu
 | **-m** | phrase: `zem` / `zaem` / `zoem` / `zuem` / …; VP/clause: `vem` / `vaem` / `voem` / `vuem` / … | Open ranked — ranking among these; others may exist |
 | **-n** | phrase: `zen` / `zaen` / `zoen` / `zuen` / …; VP/clause: `ven` / `vaen` / `voen` / `vuen` / … (soft) | Phrase: named/conventional order; VP/clause soft: tentative / reconstructed ranking — see [soft **-n**](#soft-n-vp-clause) |
 
+#### Comparatives and superlatives (SHARED scale)
+<a id="comparatives"></a>
+<a id="superlatives"></a>
+<a id="comparative-shared-scale"></a>
+
+**Comparatives reuse ranked conjunction.** Bare `zel A B` ranks *alternatives* (preference / priority / contingency from context). When a ranked fence (`e` / `ae` / `oe` / `ue`) carries a SHARED ordinary `/ɡ/` (plus its `/w/` stack), that `/ɡ/` is the **scale of ranking** — not “property of the bundle” (the **a** / **o** / **ao** / invert SHARED reading). Conjuncts are ordered **along that scale**.
+
+| Pattern | Reading |
+|---------|---------|
+| **Multi (2+)** + SHARED scale | **Comparative ladder** — earlier ≻ later on the scale (`e` / `ae` / `oe`); later ≻ earlier under **ue** |
+| **Unary (1)** + SHARED scale | **Superlative** — the sole conjunct ranks at the top of the scale for the domain in play (*the …-est* / *most …*); under **ue**, sole bottom (*the least …*) |
+| **Nullary (0)** + SHARED scale | **Empty superlative** — there is no top of the scale (*there is no biggest* / *nobody is the …-est*); open **-m** = no biggest comes to mind. Contrast **-r**: `zer g-bigl` → *whatever ranks highest on big* (positive twin, not emptiness) |
+| Ranked **without** SHARED `/ɡ/` | Ordinary alternative ranking (*prefer A over B*; *A else B*) — **not** a scalar *bigger than*; nullary without scale stays *don’t care* / *I don’t have a ranking* |
+
+**Ordinary scalar *than*:** prefer bare **`e`** (exclusivity unmarked — both may be high on the scale). Keep **`ae`** / **`oe`** for co-satisfiable vs exclusive *ladders* (wishlist / triage), not as the default *more … than*. **`ue`** (or reverse conjunct order under **e**) = *less … than* / ascending on the scale. Degree on the comparison (*much bigger*) is `/w/` in SHARED on the scale `/ɡ/`. Absolute adjectives stay unfenced (`z-Samn g-bigl` = *Sam is big*); comparative / superlative only when a ranked fence (with SHARED scale) is present.
+
+Do **not** encode *than* primarily as complex `/ɡ/`+`/b/` or a dedicated `/w/` *than* particle — the ranked fence is the spine. Equative (*as … as*) and measured differentials (*two inches taller*) are **not** this pattern yet (equative is not a ranking; measure needs number-as-measure). Revision **`el`** (*or rather*) is unrelated.
+
+| Example | Gloss |
+|---------|-------|
+| `zel g-bigl z-Samn z-Lean` | *Sam is bigger than Lea* (closed; Sam ≻ Lea on *big*) |
+| `zem g-talll z-Samn z-Lean z-Patn` | *Sam ≻ Lea ≻ Pat on height* (open; others may rank too) |
+| `zuel g-bigl z-Samn z-Lean` | *Sam is less big than Lea* / Sam ≺ Lea on *big* (closed reverse) |
+| `zel w-muchl g-bigl z-Samn z-Lean` | *Sam is much bigger than Lea* |
+| `zel g-bigl z-Samn` | *Sam is the biggest (of all)* — unary superlative; domain = context / discourse universe unless narrowed elsewhere |
+| `zel g-bigl` | *there is no biggest* — nullary **empty superlative** (closed) |
+| `zem g-bigl` | *no biggest comes to mind* — nullary empty superlative (open) |
+| `zuel g-bigl z-Samn` | *Sam is the least big (of all)* — unary reverse / bottom of the scale |
+| `zuel g-bigl` | *there is no least* — nullary empty reverse superlative (closed) |
+| `zel g-bigl z-Samn z-Lean z-Patn` | *Sam is biggest among these three* (multi; Sam first) |
+| `zer g-bigl` | *whatever ranks highest on big* — positive twin of empty `zel g-bigl`, not emptiness |
+| `zer g-bigl z-Samn z-Lean` | *whichever of Sam or Lea ranks higher on big* |
+
+Same under `/d/` / `/b/` when the ranked group fills that slot. Under `/ɡ/`, SHARED `/w/` on a ranked AP fence remains shared *degree* over ranked properties (`gel w-veryl g-happyl g-proudl`), not a noun-scale comparative — noun-scale comparatives use an NP-slot ranked fence (`/z/` `/d/` `/b/`) with SHARED `/ɡ/`.
+
+Assert the ranking as clause content with the same predicative pattern as plain adjectives (zero-copula / light verb as elsewhere): `jal zel g-bigl z-Samn z-Lean` → *Sam is bigger than Lea.* When discourse needs the comparee alone as subject of another verb, keep that subject ordinary and place the comparative claim in another slot or sentence — do not force the whole ladder to be the only subject.
+
 #### Unary and nullary phrase-level
 <a id="unary-phrase"></a>
 <a id="unary-ranked"></a>
@@ -134,12 +171,12 @@ Under `/h/` / `/w/`, only the [defined core](#circumstance-restriction-h-w) uses
 
 | Form | Unary reading | Contrast |
 |------|---------------|----------|
-| **…em** (`zem` / `dem` / `bem` / `gem` / `wem` / `hem`) | *X first* / *mainly X* | Open preference — other ranks may exist |
-| **…el** (`zel` / `del` / …) | *only X matters* / *X, period* | Closed twin of **…em** — nothing else ranks for this claim |
+| **…em** (`zem` / `dem` / `bem` / `gem` / `wem` / `hem`) | *X first* / *mainly X*; with SHARED scale → open **superlative** (*X is most … among those that come to mind* / top so far) | Open preference — other ranks may exist; see [comparatives](#comparatives) |
+| **…el** (`zel` / `del` / …) | *only X matters* / *X, period*; with SHARED scale → **superlative** (*X is the …-est* / *most …* of the domain) | Closed twin of **…em** — nothing else ranks for this claim; see [comparatives](#comparatives) |
 | **…oem** (`zoem` / `doem` / …) | *start with X* / *try X first* | Contingency / menu primary — not value ranking |
 | **…oel** (`zoel` / `doel` / …) | *only try X* / *X with no listed fallback* | Closed twin of **…oem** — exclusive triage, no listed fallback (singleton already implies empty if X fails) |
 | **…uem** (`zuem` / `duem` / …) | *X last* / *mainly leave X for last* | Open reverse-ranked — X is low on the ladder; other ranks may exist |
-| **…uel** (`zuel` / `duel` / …) | *X last, period* / *only X as least* | Closed reverse-ranked — X is the sole bottom / ascending singleton |
+| **…uel** (`zuel` / `duel` / …) | *X last, period* / *only X as least*; with SHARED scale → **least** (*X is the least …* of the domain) | Closed reverse-ranked — X is the sole bottom / ascending singleton; see [comparatives](#comparatives) |
 | **…en** (`zen` / `den` / …) | *X first* (stock) / *X, as usual* | Named / formulaic top item (*safety first* as a stock frame) |
 | **…er** (`zer` / `der` / …) | *preferably some X* | Unspecified preferred member of kind X — not a closed “only X” (**…el**) |
 
@@ -147,12 +184,12 @@ Under `/h/` / `/w/`, only the [defined core](#circumstance-restriction-h-w) uses
 
 | Form | Nullary reading | Contrast |
 |------|-----------------|----------|
-| **…el** (`zel` / `del` / …) | *don’t care* / *no preference* | Closed empty ladder |
-| **…em** (`zem` / `dem` / …) | *I don’t have a ranking* / *beats me what’s most important* | Open — same humility pattern as nullary **…am** |
+| **…el** (`zel` / `del` / …) | *don’t care* / *no preference*; with SHARED scale → **empty superlative** (*there is no biggest* / *nobody is the …-est*) | Closed empty ladder; see [comparatives](#comparatives) |
+| **…em** (`zem` / `dem` / …) | *I don’t have a ranking* / *beats me what’s most important*; with SHARED scale → *no biggest comes to mind* | Open — same humility pattern as nullary **…am**; see [comparatives](#comparatives) |
 | **…oem** (`zoem` / `doem` / …) | *not sure where to start* | Empty exclusive triage, open |
 | **…oel** (`zoel` / `doel` / …) | *do nothing* / *don’t bother* | Closed empty exclusive triage — no attempt, and that’s the full story |
 | **…uem** (`zuem` / …) | *no ascending ranking from me* | Open empty reverse ladder |
-| **…uel** (`zuel` / …) | *don’t care (ascending frame)* | Closed empty reverse ladder — near-synonym of **…el** at length 0 |
+| **…uel** (`zuel` / …) | *don’t care (ascending frame)*; with SHARED scale → *there is no least* | Closed empty reverse ladder — near-synonym of **…el** at length 0 without scale; empty reverse superlative with scale |
 | **…en** (`zen` / `den` / …) | *it’s a draw* / *tie* | Named / conventional empty ranking outcome — no ordered winner |
 | **…er** (`zer` / `der` / …) | *whatever’s most important* / *whatever comes first* | Positive twin of **…el** / **…em** — unnamed top priority |
 
@@ -384,7 +421,7 @@ P-COORD ( SHARED )*                 ← nullary (same as left when empty)
 ```
 
 - **P-COORD** — one of the prefixed forms above (`zam`, `dol`, `bem`, `gam`, `wam`, `ham`, `zar`, `zor`, `zer`, `zur`, …). For a **flat** list, appears **only once**: either **before** all conjuncts (left) or **after** all conjuncts (right) — not between conjuncts. For **nested** lists, multiple fences stack — see [fence nesting](#fence-nesting). **Pure infix** (`A zam B zal C`) is illegal.
-- **SHARED** — optional material **immediately after** `P-COORD` in either placement. **Always** scopes over the **whole coordinated phrase** (NP: ordinary `/ɡ/` / `/w/` / complex `/ɡ/`+`/b/`; AP: `/w/`; `/w/`-slot and `/h/`-slot joins: further same-slot material only if the lexicon allows stacking on the join as a unit). Shared ordinary `/ɡ/` / `/w/` here sit next to the fence (before the heads they grade on the left; after the list on the right) — the fence defines the host unit. **Left-bound `gl-`** is **not** SHARED: after a left fence it binds only the **next** conjunct (see [Adjectives](language-reference.md#adjectives-ɡ)).
+- **SHARED** — optional material **immediately after** `P-COORD` in either placement. **Always** scopes over the **whole coordinated phrase** (NP: ordinary `/ɡ/` / `/w/` / complex `/ɡ/`+`/b/`; AP: `/w/`; `/w/`-slot and `/h/`-slot joins: further same-slot material only if the lexicon allows stacking on the join as a unit). Shared ordinary `/ɡ/` / `/w/` here sit next to the fence (before the heads they grade on the left; after the list on the right) — the fence defines the host unit. Under **ranked** vowels (**e** / **ae** / **oe** / **ue**) on an NP slot (`/z/` `/d/` `/b/`), SHARED ordinary `/ɡ/` (+ `/w/`) is the [**scale of ranking**](#comparatives) (*bigger than* / superlative), not “property of the bundle.” Under **a** / **o** / **ao** / invert (**ua** / **uo**), SHARED `/ɡ/` stays whole-phrase description (`zam g-bigl z-dogl z-catl` = *a big (dog and cat)*). **Left-bound `gl-`** is **not** SHARED: after a left fence it binds only the **next** conjunct (see [Adjectives](language-reference.md#adjectives-ɡ)).
 - **PHRASE** — a conjunct: NP headed by `/z/`, `/d/`, or `/b/` (plus that head’s local `/ɡ/` / `/w/` / `/b/` material — default **after** the head, or [left-bound `gl-`](language-reference.md#adjectives-ɡ) **before** that head); AP headed by `/ɡ/` (plus contiguous `/b/`, further `/ɡ/` on that `/b/`, and local `/w/`); or a single `/w/` / `/h/` word (plus `/h/`’s contiguous `/b/` when complex). Local right-bound modifiers stay **inside** their conjunct, after that conjunct’s head; local `gl-` sits immediately before that head.
 - Two conjuncts (left): `P-COORD PHRASE PHRASE`. Two (right): `PHRASE PHRASE P-COORD`. Three or more: same pattern with more `PHRASE` items on the conjunct side of `P-COORD`.
 - **Unary phrase** — **…em** / **…el** / **…oem** / **…oel** / **…uem** / **…uel** / **…en** / **…er** / **…al** / **…am** / **…ol** / **…om** / **…ual** / **…uam** / **…uol** / **…uom** / **…aol** / **…aom** / **…ul** / **…um** / **…ar** / **…or** / **…ur**: `P-COORD PHRASE` or `PHRASE P-COORD` — see [unary and nullary](#unary-phrase), [negation](#negation-u), and [unspecified-member **-r**](#unspecified-member-r-phrase).
@@ -394,13 +431,13 @@ P-COORD ( SHARED )*                 ← nullary (same as left when empty)
 - Unspecified-member: `zar` → *something*; `zar z-personl` / `z-personl zar` → *some (unknown) person*; `zar z-teal z-coffeel` → *some one among tea and coffee*; `zor` → *anything*; `zor z-personl` → *any person*; `zor z-teal z-coffeel` → *any of tea or coffee*; `zer` → *whatever’s most important*; `zer z-safetyl` → *safety as a priority*; `zer z-teal z-coffeel` → *whichever of tea or coffee ranks higher*; `zur` → *something else*; `zur z-contractl` → *something other than the contract*; `zur z-costl z-riskl` → *something other than cost and risk*.
 - Negation: `zul z-Samn` → *not Sam*; `gul g-bigl` → *not big*; `zul z-teal z-coffeel` → *none of tea or coffee*; `zul` → *no*; `zum` → *no from me*. Circumstance denial: `hul h-rainl` → *not when raining* ([below](#circumstance-restriction-h-w)).
 
-**Ranked** (`zel` / `zael` / `zoel` / `zuel`, `zem` / …, `zen` / …): ranking from **spoken conjunct order** (before a right-close coordinator) — **e**/**ae**/**oe** earlier≻later; **ue** later≻earlier — see [ranked conjunction](#ranked-conjunction-e). Unary / nullary: [unary and nullary](#unary-phrase).
+**Ranked** (`zel` / `zael` / `zoel` / `zuel`, `zem` / …, `zen` / …): ranking from **spoken conjunct order** (before a right-close coordinator) — **e**/**ae**/**oe** earlier≻later; **ue** later≻earlier — see [ranked conjunction](#ranked-conjunction-e). SHARED `/ɡ/` on an NP ranked fence = [comparison scale](#comparatives) (multi = comparative; unary = superlative; nullary = empty superlative — *no biggest*). Unary / nullary without that scale: [unary and nullary](#unary-phrase).
 ### Scope fence (`P-COORD`)
 
 **Rule:** A modifier **immediately after** a phrase-level conjunction (`zam`, `gam`, `dam`, …) modifies the **entire coordinated phrase** — whether that conjunction is a left fence or a right close — when it uses ordinary (right-bound) `/ɡ/` / `/w/` morphology. **Left-bound `gl-`** in that same position binds only the **next** conjunct.
 
 - Modifiers **after a conjunct head** (and before the next matching-role head) belong to that conjunct only.
-- Modifiers in the **SHARED** slot (ordinary `/ɡ/` / `/w/` / complex `/ɡ/`+`/b/`) scope over **all** conjuncts as one unit.
+- Modifiers in the **SHARED** slot (ordinary `/ɡ/` / `/w/` / complex `/ɡ/`+`/b/`) scope over **all** conjuncts as one unit — as description of the bundle under **a** / **o** / …, or as [comparison scale](#comparatives) under ranked **e** / **ae** / **oe** / **ue** on NP slots.
 - On a **right close**, do **not** put further matching-role conjunct heads after `P-COORD` / `SHARED`; the list of conjuncts is already complete to the left of `P-COORD`.
 
 Contrast (left fence):
@@ -442,6 +479,10 @@ Complex adjective on an NP bundle: `zam g-ofl b-Samn z-dogl z-catl` or `z-dogl z
 - `dam g-bigl d-dogl d-catl` — *a big (dog and cat)* as object — shared after the left fence
 - `d-dogl d-catl dam g-bigl` — same shared reading with right close
 - `zel z-teal z-coffeel z-waterl` — *tea ≻ coffee ≻ water* (closed ranked; exclusivity not claimed; prefer/else from context)
+- `zel g-bigl z-Samn z-Lean` — *Sam is bigger than Lea* (closed comparative; SHARED `/ɡ/` = scale — [comparatives](#comparatives))
+- `zel g-bigl z-Samn` — *Sam is the biggest (of all)* (unary **superlative** on scale *big*)
+- `zel w-muchl g-bigl z-Samn z-Lean` — *Sam is much bigger than Lea*
+- `zuel g-bigl z-Samn z-Lean` — *Sam is less big than Lea* (closed reverse on scale)
 - `zoel z-burgerl z-chickenl z-hot-dogl` — *burger ≻ chicken ≻ hot dog* (closed **exclusive** ranked — pick one, in that order)
 - `zuel z-appetizerl z-mainl z-dessertl` — *appetizer ≺ main ≺ dessert* (closed **rank reversal** — dessert preferred most)
 - `zual z-teal z-coffeel` — *everything but tea and coffee* (closed invert-**a**)
@@ -449,11 +490,11 @@ Complex adjective on an NP bundle: `zam g-ofl b-Samn z-dogl z-catl` or `z-dogl z
 - `zaem z-journall z-candlesh z-socksh` — *journal ≻ candles ≻ socks* (open **co-satisfiable** ranked — wishlist)
 - `z-teal z-coffeel z-waterl zel` — same neutral ranked ladder with right close
 - `zem z-dogl g-bigl z-catl g-redl` — *(big dog) ≻ (red cat)* (open ranked, exclusivity unmarked)
-- `zem z-truthrl` — *truth first* (unary open ranked); `zel z-truthrl` — *only truth matters* (unary closed); `zoem z-fixl` — *try a fix first* (unary open exclusive ranked); `zoel z-fixl` — *only try a fix* (unary closed exclusive ranked); `zuem z-dessertl` — *dessert last*; `zuel z-dessertl` — *dessert last, period*; `zen z-safetyl` — *safety first* (unary named ranked)
+- `zem z-truthrl` — *truth first* (unary open ranked); `zel z-truthrl` — *only truth matters* (unary closed); `zel g-bigl z-Samn` — *Sam is the biggest* (unary superlative + SHARED scale); `zem g-bigl z-Samn` — open superlative (*biggest among those that come to mind*); `zoem z-fixl` — *try a fix first* (unary open exclusive ranked); `zoel z-fixl` — *only try a fix* (unary closed exclusive ranked); `zuem z-dessertl` — *dessert last*; `zuel z-dessertl` — *dessert last, period*; `zen z-safetyl` — *safety first* (unary named ranked)
 - `zal z-waterl` — *just water* (unary closed *and*); `zam z-Samn` — *Sam, for one* (unary open *and*); `zol z-waterl` — *has to be water* (unary closed xor); `zom z-coffeel` — *say, coffee* / *coffee, or skip* (unary open xor, empty-allowed); `zual z-teal` — *everything but tea*; `zuol z-coffeel` — *anything but coffee*; `zaol z-waterl` — *water’ll do* (unary closed *and/or*); `zaom z-waterl` — *at least water* (unary open *and/or*); `zar z-personl` — *some (unknown) person*; `zor z-personl` — *any person*; `zer z-safetyl` — *safety as a priority*; `zul z-Samn` — *not Sam*; `zur z-contractl` — *something other than the contract*; `z-personl zar` — same with right close
 - `zol z-teal z-coffeel` — *tea or coffee* (exactly one; closed); `zom z-teal z-coffeel` — *tea or coffee, or neither* (at most one; open, empty-allowed)
 - `zar z-teal z-coffeel` — *some one among tea and coffee*; `zor z-burgerl z-chickenl` — *any of burger or chicken*; `zer z-teal z-coffeel` — *whichever of tea or coffee ranks higher*; `zul z-teal z-coffeel` — *none of tea or coffee*; `zur z-costl z-riskl` — *something other than cost and risk*
-- `zal` — *nothing* / *nobody* (nullary closed *and*); `zam` — *nothing comes to mind* (nullary open *and*); `zan` — *null* / *void* (nullary named); `zar` — *something* / *someone*; `zol` — *no options* / *we’re stuck* (nullary closed xor); `zom` — *I got no pick* / *skipping is fine* (nullary open xor); `zual` — *everything* / *everyone*; `zuol` — *anything (goes)*; `zor` — *anything* / *anyone*; `zaol` — *all set* (nullary closed *and/or*); `zaom` — *nothing I need* (nullary open *and/or*); `zul` — *no* (nullary closed negation); `zum` — *no from me* (nullary open negation); `zur` — *something else*; `zel` — *don’t care* (nullary closed ranked); `zem` — *I don’t have a ranking* (nullary open ranked); `zer` — *whatever’s most important*; `zoem` — *not sure where to start* (nullary open exclusive ranked); `zoel` — *do nothing* (nullary closed exclusive ranked); `zuel` — *don’t care (ascending)*; `zen` — *it’s a draw* / *tie* (nullary named ranked)
+- `zal` — *nothing* / *nobody* (nullary closed *and*); `zam` — *nothing comes to mind* (nullary open *and*); `zan` — *null* / *void* (nullary named); `zar` — *something* / *someone*; `zol` — *no options* / *we’re stuck* (nullary closed xor); `zom` — *I got no pick* / *skipping is fine* (nullary open xor); `zual` — *everything* / *everyone*; `zuol` — *anything (goes)*; `zor` — *anything* / *anyone*; `zaol` — *all set* (nullary closed *and/or*); `zaom` — *nothing I need* (nullary open *and/or*); `zul` — *no* (nullary closed negation); `zum` — *no from me* (nullary open negation); `zur` — *something else*; `zel` — *don’t care* (nullary closed ranked); `zel g-bigl` — *there is no biggest* (nullary empty superlative); `zem` — *I don’t have a ranking* (nullary open ranked); `zer` — *whatever’s most important*; `zer g-bigl` — *whatever ranks highest on big*; `zoem` — *not sure where to start* (nullary open exclusive ranked); `zoel` — *do nothing* (nullary closed exclusive ranked); `zuel` — *don’t care (ascending)*; `zen` — *it’s a draw* / *tie* (nullary named ranked)
 **AP**
 
 - `gam g-happyl w-veryl g-proudl w-slightlyl` — *(very happy) and (slightly proud)* — each degree inside its conjunct
@@ -580,7 +621,7 @@ Nesting and SHARED still apply to **defined** forms only.
 - **Shared modifiers** — only in the slot immediately after each `P-COORD` (left or right); local modifiers stay after their own heads.
 - **Phrase `-r`** — only **`…ar`** / **`…or`** / **`…er`** / **`…ur`** ([unspecified-member](#unspecified-member-r-phrase)); no plural **-sh** on the coordinator. Soft **-n** is VP/clause only.
 - **Not** verb+object packages — use [VP-level](#vp-level-coordination); **not** full sentences — those stay `/x/`…
-- **Not** mixed-PoS joins; correlatives; `/x/` sentence linkers (*however*, *therefore*), general adversative *but*, quotation fences, or [numbered enumeration](numbers.md#number-as-discourse-marker-by-marker). In-clause *including* / *rather* / *instead* / *except* are [bare revision](#in-clause-revision-bare-a--e--o--u), not this fence series. Phrase-level ranked conjunction **is** this series (`zel` / `zael` / `zoel` / `zuel` / `zem` / …). Invert **ua** / **uo** / **ue** **is** this series too. Unary / nullary phrase only for the forms in [unary and nullary](#unary-phrase) (**…an** nullary-only; **…ul** / **…um** at all arities = [negation](#negation-u) *not X* / *no* / *none of*; **…ar** / **…or** / **…er** / **…ur** at all arities = *something* / *anything* / *whatever-by-rank* / *something else*; **…en** nullary = *it’s a draw*, **…an** nullary = *null* / *void*; **…ual** nullary = *everything*, **…uol** nullary = *anything (goes)*). Under `/h/` / `/w/`, only the [defined circumstance core](#circumstance-restriction-h-w) is used (`hal` = *never*, `hual` = *always*, `har` = *sometime*, …); other reserved spellings there are undefined.
+- **Not** mixed-PoS joins; correlatives; `/x/` sentence linkers (*however*, *therefore*), general adversative *but*, quotation fences, or [numbered enumeration](numbers.md#number-as-discourse-marker-by-marker). In-clause *including* / *rather* / *instead* / *except* are [bare revision](#in-clause-revision-bare-a--e--o--u), not this fence series. Phrase-level ranked conjunction **is** this series (`zel` / `zael` / `zoel` / `zuel` / `zem` / …); [comparatives / superlatives](#comparatives) use SHARED `/ɡ/` as scale on NP ranked fences (unary = superlative). Invert **ua** / **uo** / **ue** **is** this series too. Unary / nullary phrase only for the forms in [unary and nullary](#unary-phrase) (**…an** nullary-only; **…ul** / **…um** at all arities = [negation](#negation-u) *not X* / *no* / *none of*; **…ar** / **…or** / **…er** / **…ur** at all arities = *something* / *anything* / *whatever-by-rank* / *something else*; **…en** nullary = *it’s a draw*, **…an** nullary = *null* / *void*; **…ual** nullary = *everything*, **…uol** nullary = *anything (goes)*). Under `/h/` / `/w/`, only the [defined circumstance core](#circumstance-restriction-h-w) is used (`hal` = *never*, `hual` = *always*, `har` = *sometime*, …); other reserved spellings there are undefined.
 
 ## Reserved forms
 
