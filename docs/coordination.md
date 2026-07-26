@@ -1,6 +1,6 @@
 # Coordination
 
-This page is the source of truth for **phrase-level** (same-slot fence: left preferred, right close allowed), **VP-level**, and **clause-level** coordination, plus **in-clause revision** with prefix-less vowels + **-l** / **-m** / **-n**. There is **no** bare word-level **coordinator** series (lists still need a PoS prefix + ending). Correlatives (*both…and*, *either…or*) come later. Asymmetric discourse glue (*but*, *however*, *therefore*) is `/x/` but **not** the prefixed join series — see [language-reference.md](language-reference.md#discourse-markers-x). In-clause *including* / *rather* / *instead* / *except* use [revision](#in-clause-revision-bare-a--e--o--u) (**al** / **am** / **an** / **el** / … — ending required); sentence-level *instead* / *except* (claim-to-claim) stay other `/x/` roots when needed. [Comparatives / superlatives](#comparatives) reuse ranked fences with SHARED `/ɡ/` as scale (unary = superlative). [Generics / *every K*](#universals-domains-generics) reuse invert **ua** with SHARED `/ɡ/` as kind domain (`zual g-catl`); habitual characterizing uses **`hual`**.
+This page is the source of truth for **phrase-level** (same-slot fence: left preferred, right close allowed), **VP-level**, and **clause-level** coordination, plus **in-clause revision** with prefix-less vowels + **-l** / **-m** / **-n**. There is **no** bare word-level **coordinator** series (lists still need a PoS prefix + ending). Correlatives (*both…and*, *either…or*) come later. Asymmetric discourse glue (*but*, *however*, *therefore*) is `/x/` but **not** the prefixed join series — see [language-reference.md](language-reference.md#discourse-markers-x). In-clause *including* / *rather* / *instead* / *except* use [revision](#in-clause-revision-bare-a--e--o--u) (**al** / **am** / **an** / **el** / … — ending required); sentence-level *instead* / *except* (claim-to-claim) stay other `/x/` roots when needed. [Comparatives / superlatives](#comparatives) reuse ranked fences with SHARED `/ɡ/` as scale (unary = superlative). [Number ranges](numbers.md#ranges) (two compatible number conjuncts; half-open **`ul`**; **-r** in-span) live in **numbers.md**. [Generics / *every K*](#universals-domains-generics) reuse invert **ua** with SHARED `/ɡ/` as kind domain (`zual g-catl`); habitual characterizing uses **`hual`**.
 
 PoS prefixes and ordinary word shape: [language-reference.md](language-reference.md). Reference suffixes: [reference-suffix.md](reference-suffix.md). Phonotactics for reserved coordinator roots: [phonology.md](phonology.md#phonotactics). Interrogative readings of these forms: [questions.md](questions.md).
 
@@ -153,6 +153,8 @@ Do **not** encode *than* primarily as complex `/ɡ/`+`/b/` or a dedicated `/w/` 
 Same under `/d/` / `/b/` when the ranked group fills that slot. Under `/ɡ/`, SHARED `/w/` on a ranked AP fence remains shared *degree* over ranked properties (`gel w-veryl g-happyl g-proudl`), not a noun-scale comparative — noun-scale comparatives use an NP-slot ranked fence (`/z/` `/d/` `/b/`) with SHARED `/ɡ/`.
 
 Assert the ranking as clause content with the same predicative pattern as plain adjectives (zero-copula / light verb as elsewhere): `jal zel g-bigl z-Samn z-Lean` → *Sam is bigger than Lea.* When discourse needs the comparee alone as subject of another verb, keep that subject ordinary and place the comparative claim in another slot or sentence — do not force the whole ladder to be the only subject.
+
+**Number ranges** (two compatible number conjuncts under **`a`** / **`e`** / …; exclusive high via in-range **`ul`**; **-r** = value in the span): **[numbers.md § Ranges](numbers.md#ranges)** — not expanded here.
 
 #### Unary and nullary phrase-level
 <a id="unary-phrase"></a>
@@ -350,6 +352,7 @@ A REV₁ B REV₂ C ( REVᵢ SIDE )*
 - **Same slot** — A and every right-hand side match in role: all subject NPs (`/z/`), all objects (`/d/`), all `/b/` arguments, all `/ɡ/` APs (plus local material), all `/w/` or all `/h/` units, or all VPs (verb ± that verb’s `/d/`). Mixed slots are illegal (`z-… ol d-…`).
 - **Fixed A, one or more right-hand sides** — the first side is **A**; each **REV** introduces the next right-hand side. No unary “instead of what was just said”; repeat material or use a pronoun for A, or use a later `/x/` form for cross-sentence repair. No left-fence shared-modifier slot on the particle; no **-r**.
 - **Inside a coordinated list** — allowed **inside** a conjunct as local repair, not as a substitute for the coordinator (`zam` / `vam` / …). **Binding:** a revision chain starting at A consumes following same-slot sides paired by **REV** particles, tighter than list absorb — so `zam z-dogl ol z-catl z-birdl` = *(dog instead of cat) and bird*, and `zam z-teaml am z-Samn ul z-Lean z-birdl` = *(team including Sam, except Lea) and bird*.
+- **Inside a [number range](numbers.md#ranges)** — **`ul`** after the low endpoint marks an exclusive **high** bound (`zal z+3l ul z+5l` = *[3, 5)*). Details in numbers.md.
 
 ### Revision chains (parallel on A)
 <a id="revision-chains-parallel-on-a"></a>
@@ -377,6 +380,7 @@ Same-vowel repeats are just the parallel rule with identical particles (`A am B 
 - `z-teaml ul z-Samn` — *the team except only Sam* (closed sole exception)
 - `z-teaml um z-Samn` — *the team except Sam (and maybe others)* (open)
 - `z-teaml am z-Samn ul z-Lean` — *the team, including Sam, except only Lea* (mixed parallel)
+- `zal z+3l ul z+5l` — *[3, 5)* — [number range](numbers.md#ranges) exclusive high, not inventory *3 except 5*
 - `z-RGBn un z-bluel` — *RGB except blue* (named conventional set)
 - `z-RGBn un z-redl un z-bluel` — *RGB except red and except blue* (named; parallel multi-except)
 - `d-teal ol d-coffeel` — *coffee fully replaces tea* (closed)
@@ -509,6 +513,7 @@ Complex adjective on an NP bundle: `zam g-ofl b-Samn z-dogl z-catl` or `z-dogl z
 - `d-dogl d-catl dam g-bigl` — same shared reading with right close
 - `zel z-teal z-coffeel z-waterl` — *tea ≻ coffee ≻ water* (closed ranked; exclusivity not claimed; prefer/else from context)
 - `zel g-bigl z-Samn z-Lean` — *Sam is bigger than Lea* (closed comparative; SHARED `/ɡ/` = scale — [comparatives](#comparatives))
+- `zal z+3l z+5l` / `zar z+3l z+5l` — number range / in-span unspecified — [numbers.md § Ranges](numbers.md#ranges)
 - `zel g-bigl z-Samn` — *Sam is the biggest (of all)* (unary **superlative** on scale *big*)
 - `zel w-muchl g-bigl z-Samn z-Lean` — *Sam is much bigger than Lea*
 - `zuel g-bigl z-Samn z-Lean` — *Sam is less big than Lea* (closed reverse on scale)

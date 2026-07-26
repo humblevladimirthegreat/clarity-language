@@ -12,7 +12,7 @@ This repo is TypeScript + ANTLR tooling (`grammar/*.g4` → `src/generated/`). A
 |--------|------|
 | `docs/language-reference.md` | **Source of truth** for the language design. Revise it as design decisions land. |
 | `docs/phonology.md` | Phonology and phonotactics (linked from the language reference). |
-| `docs/numbers.md` | Numeral grammar (linked from the language reference). |
+| `docs/numbers.md` | Numeral grammar, including [ranges](docs/numbers.md#ranges) (linked from the language reference). |
 | `docs/pronouns.md` | Pronoun grammar (linked from the language reference). |
 | `docs/plurality.md` | Plural grammar (**-sh** after the reference suffix; by PoS and reference suffix; generics / *every K* via coordination, not **-sh** — [universals](docs/coordination.md#universals-domains-generics); linked from the language reference). |
 | `docs/reference-suffix.md` | Reference suffix grammar (**-l** / **-m** / **-n** / **-r**; linked from the language reference). |

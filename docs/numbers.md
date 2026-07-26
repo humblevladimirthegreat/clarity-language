@@ -1,6 +1,6 @@
 # Numbers
 
-Numerals are a **closed formal subsystem**, not ordinary lexicon roots. Quantifiers (*many*, *all*, *some*, …) are out of scope here. PoS prefixes are defined in [language-reference.md](language-reference.md); plural **-sh** in [plurality.md](plurality.md); general phonotactics live in [phonology.md](phonology.md); ordinary reference suffixes in [reference-suffix.md](reference-suffix.md). This page is the source of truth for numeral grammar.
+Numerals are a **closed formal subsystem**, not ordinary lexicon roots. Quantifiers (*many*, *all*, *some*, …) are out of scope here. PoS prefixes are defined in [language-reference.md](language-reference.md); plural **-sh** in [plurality.md](plurality.md); general phonotactics live in [phonology.md](phonology.md); ordinary reference suffixes in [reference-suffix.md](reference-suffix.md). This page is the source of truth for numeral grammar, including [ranges](#ranges) (spans reuse [phrase fences](coordination.md), documented here).
 
 A whole numeric value is **one word**, even when it contains several digit groups.
 
@@ -365,6 +365,58 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 | First! (place cheer) | `j#1l` | *jrewol* (`j` + `re` + wo) |
 
 In a sentence, the PoS attaches to that single number word (see [Parts of speech on numbers](#parts-of-speech-on-numbers); e.g. direct-object digit-string: `d_…l`). Prefer naming the whole with a `/ɡ/` **`jo`** percent (denominator patterns TBD).
+
+## Ranges
+<a id="number-ranges"></a>
+<a id="numeric-ranges"></a>
+<a id="from-to"></a>
+
+Spans reuse [phrase fences](coordination.md) whose conjuncts are number words. There is **no** range form inside a single number word (no `g+3-5l`). Fence join vowels, endings, revision, and **-r** are defined in coordination; **this section** is the source of truth for when those forms mean a numeric span.
+
+**Trigger:** exactly **two** endpoints that are **compatible** number words (same marker identity: both scalar, both ordinal, or both digit-string / time), under join **`a`** / **`e`** / **`ue`** / **`ua`** (or those vowels’ **-r**). The fence PoS matches the slot (`zal` / `dal` / `gal` / `bal` / …). Mixed identities on one span are illegal.
+
+| Join | Inclusive shape | Reading |
+|------|-----------------|--------|
+| **`a`** | `zal z+3l z+5l` | *between 3 and 5* (unordered filled interval; both ends in) |
+| **`e`** | `zel z+3l z+5l` | *from 3 to 5* (directed; first → second) |
+| **`ue`** | `zuel z+5l z+3l` | directed reverse path (spoken order = path; here *from 5 to 3*) |
+| **`ua`** | `zual z+3l z+5l` | *outside 3–5* (complement on the line) |
+| **`o`** / **`ao`** | — | **Not** ranges — stay discrete (*3 or 5* / *3 and/or 5*) |
+| **`ae`** / **`oe`** | — | **Not** ranges — stay ranked ladders |
+
+**Arity escape:** three or more number conjuncts under **`a`** stay an ordinary discrete inventory (`zal z+1l z+3l z+7l` = *1, 3, and 7*). Unary `zal z+3l` stays *just 3*, not a ray.
+
+### Half-open (exclude the high end only)
+
+[In-clause revision](coordination.md#in-clause-revision-bare-a--e--o--u) **inside the range** marks an exclusive **upper** bound. Replace the second (high) conjunct with prefix-less **`ul`** + that number:
+
+| Shape | Reading |
+|-------|--------|
+| `zal z+3l z+5l` | *[3, 5]* — inclusive both ends |
+| `zal z+3l ul z+5l` | *[3, 5)* — *3 up to but not including 5* |
+| `zel z+3l ul z+5l` | *from 3 up to but not including 5* |
+
+The low endpoint is **always inclusive**. Do **not** exclude the beginning edge (no `ul` before the low; no open-low span). Do **not** list the high end as a conjunct and then except it (`*zal z+3l z+5l ul z+5l`); the exclusive high is **only** the in-range `ul` shape. Open **`um`** on the high end = soft / non-exhaustive exclusion of that bound (rare). Other revision vowels (**`al`** / **`el`** / **`ol`**) are not range-bound markers.
+
+Fence **-l** / **-m** / **-n** keep ordinary closed / open / named senses on the span (*exactly this band* / *around this band* / *the teens*-style label). Endpoint [number endings](#number-endings) still apply (**-m** ≈ fuzzy that bound).
+
+### Unspecified value in the span (**-r**)
+
+Fence **-r** on a number-range shape = an **unspecified member of the span** (not content-word anaphor **-r**, not a discrete *something among two listed values*):
+
+| Form | Reading |
+|------|--------|
+| `zar z+3l z+5l` | *some value in [3, 5]* |
+| `zar z+3l ul z+5l` | *some value in [3, 5)* |
+| `zor z+3l z+5l` | *any value in [3, 5]* (free-choice) |
+| `zer z+3l z+5l` | *whatever-by-rank in [3, 5]* |
+| `zur z+3l z+5l` | *some value other than (in) [3, 5]* — other-than the span |
+
+Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which value in 3–5?*). Same under `/d/` `/b/` / `/ɡ/` as the slot needs (`gal g+3l g+5l` = modifier *3–5*; `dar d+10l ul d+20l` = object *some value in [10, 20)*).
+
+**Clock / date spans:** do **not** use bare circumstance-`hal` (that series is [applicability](coordination.md#circumstance-restriction-h-w)). Prefer a host relation + `/b/` digit-string endpoints, or an NP/argument fence of `_` numbers (`bal b_15,00l b_16,00l`).
+
+Examples: `z-agel gal g+3l g+5l` → *ages 3–5*; `zal z+3l ul z+5l` → *[3, 5)*; `zel z+10l z+20l` → *from 10 to 20*; `zar z+3l z+5l` → *some value in 3–5*; `zol z+3l z+5l` → *3 or 5* (discrete, not a range).
 
 ## Stress (pronunciation guide)
 

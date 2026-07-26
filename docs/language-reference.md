@@ -226,11 +226,11 @@ Pronoun grammar (anaphoric **-r** forms, special pronouns) lives in **[pronouns.
 
 # Numbers
 
-Numeral grammar (digit roots, engineering/scientific forms, ordinals, digit-strings, `/x/` enumeration, number-word shape) lives in **[numbers.md](numbers.md)**.
+Numeral grammar (digit roots, engineering/scientific forms, ordinals, digit-strings, `/x/` enumeration, number-word shape, [ranges](numbers.md#ranges)) lives in **[numbers.md](numbers.md)**.
 
 # Phrase-level, VP-level, and clause-level coordination
 
-Phrase-level **zam** / **gam** / …, VP **vam** / **var** / …, and clause `/x/` + vowel + ending (soft **-n** ≠ named **-n**; **-r** = unspecified-member at all levels): **fence** (left preferred, right close for style/comedy; shared modifiers immediately after the coordinator; [fence nesting](coordination.md#fence-nesting)); ranked SHARED `/ɡ/` = [comparatives / superlatives](coordination.md#comparatives) (`zel g-bigl z-Samn z-Lean` / unary `zel g-bigl z-Samn` / nullary `zel g-bigl` = *no biggest*); invert **ua** SHARED `/ɡ/` = [kind domain / generics](coordination.md#universals-domains-generics) (`zual g-catl` = *every cat*; `hual` = habitual *always*); prefix-less **al** / **am** / **an** / **el** / … (**-l** / **-m** / named **-n** required; parallel chains on fixed A) = in-clause revision (*including* / *rather* / *instead* / *except*): **[coordination.md](coordination.md)**. No bare word-level coordinators.
+Phrase-level **zam** / **gam** / …, VP **vam** / **var** / …, and clause `/x/` + vowel + ending (soft **-n** ≠ named **-n**; **-r** = unspecified-member at all levels): **fence** (left preferred, right close for style/comedy; shared modifiers immediately after the coordinator; [fence nesting](coordination.md#fence-nesting)); ranked SHARED `/ɡ/` = [comparatives / superlatives](coordination.md#comparatives) (`zel g-bigl z-Samn z-Lean` / unary `zel g-bigl z-Samn` / nullary `zel g-bigl` = *no biggest*); invert **ua** SHARED `/ɡ/` = [kind domain / generics](coordination.md#universals-domains-generics) (`zual g-catl` = *every cat*; `hual` = habitual *always*); prefix-less **al** / **am** / **an** / **el** / … (**-l** / **-m** / named **-n** required; parallel chains on A) = in-clause revision (*including* / *rather* / *instead* / *except*): **[coordination.md](coordination.md)**. Number ranges: **[numbers.md](numbers.md#ranges)**. No bare word-level coordinators.
 
 # Questions
 

@@ -1,4 +1,4 @@
--redo plurality
+-redo plurality (consider defining "unspecified number > 1")
 -local llm systematically review entire lexicon
 -speed reading display
 
