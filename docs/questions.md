@@ -89,7 +89,7 @@ Phrase-level for entity/property slots; VP/clause for action/claim slots. Statem
 - Unary **…ul** / **…um** / **…un** — confirm / offer denial (*Not X?*, *Not X, among denials?*).
 - Nullary **-l** — colloquial check on emptiness (*Nothing?*, *No options?*, *Do nothing?*, *No?*).
 - Nullary **-m** — confirm open emptiness / speaker-style gap (*Got nothing?*, *No pick?*, *No ranking?*, soft *No?*) — **not** the primary fill-ask.
-- Nullary **-n** — confirm the conventional empty label (*Null?*, *Draw?*).
+- Nullary **-n** — confirm the conventional empty / denial label (*Null?*, *Draw?*, stock *No?*).
 - Nullary / unary / multi **…ar** / **…or** / **…er** / **…ur** — [fill-ask](#fill-ask-r).
 
 **Length 2+** (no **-r**): **-l** = pick from this closed menu (esp. **o** / **oe**) — for **o**, exactly one, empty **not** allowed; **-m** = pick, or name something else — for **o** only, also *or none* / empty-allowed ([coordination.md](coordination.md#empty-allowed-om)); other vowels’ **-m** still not “none”; **u** = *none of* the listed; **ua** / **uo** = complement of the listed; **ue** = reverse-rank among the listed. With **-r**: [fill-ask arity](#fill-ask-r).
@@ -138,6 +138,7 @@ Phrase-level for entity/property slots; VP/clause for action/claim slots. Statem
 | **…or** | *Any X?* / *Which X (any is fine)?* (fill-ask) |
 | **…ul** | *Not X?* |
 | **…um** | *Not X (at least)?* (offer) |
+| **…un** | *Not X, as usual?* / stock *Not X?* |
 | **…ur** | *What else (besides X)?* / *Other than X?* (fill-ask) |
 
 ### Boolean — nullary (under question)
@@ -157,6 +158,7 @@ Phrase-level for entity/property slots; VP/clause for action/claim slots. Statem
 | **…aom** | *Nothing you need?* / *Fine for now?* |
 | **…ul** | *No?* |
 | **…um** | *No from you?* |
+| **…un** | *No?* (stock / conventional denial) |
 | **…ar** | *Who/what?* (fill-ask) |
 | **…or** | *What (anything)?* / *Anything?* (fill-ask) |
 | **…ur** | *What else?* / *Who else?* (fill-ask) |
