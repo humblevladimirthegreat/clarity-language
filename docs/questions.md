@@ -111,13 +111,16 @@ Phrase-level for entity/property slots; VP/clause for action/claim slots. Statem
 
 | Form | Under question |
 |------|----------------|
-| **…el** | *No preference?* / *Don’t care?* |
+| **…el** | *Unspecified ranking?* / *No ordered winner?* |
 | **…em** | *No ranking?* / *Don’t have a priority?* |
+| **…ael** | *Tie?* / *Equal rank?* |
+| **…aem** | *Probably a tie?* |
+| **…aen** | *Draw?* / *Tie?* (stock) |
 | **…oem** | *Not sure where to start?* |
 | **…oel** | *Do nothing?* / *Skip it?* |
 | **…uem** | *No ascending ranking?* |
 | **…uel** | *No preference (ascending)?* |
-| **…en** | *Draw?* / *Tie?* |
+| **…en** | *Unspecified ranking?* (stock) |
 | **…er** | *What’s the priority?* / *What matters most?* (fill-ask) |
 
 ### Boolean — unary (under question)

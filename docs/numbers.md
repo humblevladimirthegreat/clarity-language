@@ -468,7 +468,8 @@ Spans reuse [phrase fences](coordination.md) whose conjuncts are number words. T
 | **`ue`** | `zuel z+5l z+3l` | directed reverse path (spoken order = path; here *from 5 to 3*) |
 | **`ua`** | `zual z+3l z+5l` | *outside 3–5* (complement on the line) |
 | **`o`** / **`ao`** | — | **Not** ranges — stay discrete (*3 or 5* / *3 and/or 5*) |
-| **`ae`** / **`oe`** | — | **Not** ranges — stay ranked ladders |
+| **`ae`** | `zael z+5l z+5l` / `zaem z+3l z+5l` | *equal to 5* (same value both ends) / *approximately equal* between the two named values (**-m**) — **not** a span |
+| **`oe`** | — | **Not** ranges — exclusive ranked / nullary empty superlative with scale |
 
 **Arity escape:** three or more number conjuncts under **`a`** stay an ordinary discrete inventory (`zal z+1l z+3l z+7l` = *1, 3, and 7*). Unary **`zal z+3l`** stays *just 3*, not a ray. Unary **ranked** with a number is a [threshold](#numeric-thresholds), not ordinary *only X matters*.
 
@@ -484,7 +485,8 @@ When the **sole** conjunct of a [ranked](coordination.md#ranked-conjunction-e) f
 | **`zem z+5l`** | soft / approximate *less than ~5* | open twin |
 | **`zuel z+5l`** | ***greater than 5*** (`> 5`) | 5 is the **least** (floor); reverse-ranked extremum |
 | **`zuem z+5l`** | soft / approximate *greater than ~5* | open reverse twin |
-| **`zen z+5l`** | named/conventional ceiling band (*under-fives*-style label) | phrase **-n** |
+| **`zen z+5l`** | named/conventional **unspecified** extremum label (*under-fives*-style) | phrase **-n** on **e** |
+| **`zaen z+5l`** | named/conventional **equal-to-5** band / tie label | phrase **-n** on **ae** |
 | **`zuen z+5l`** | named/conventional floor band | phrase **-n** reverse |
 
 Same under `/d/` `/b/` `/ɡ/` (`gel g+5l` = modifier *\<5*; `duel d+10l` = object *\>10*). **`ae`** / **`oe`** unary with a number are **not** thresholds (stay ordinary ranked unary / triage). Boolean unary (**`zal`** / **`zol`** / …) is **not** a threshold.
@@ -525,7 +527,7 @@ Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which val
 
 **Clock / date spans:** do **not** use bare circumstance-`hal` (that series is [applicability](coordination.md#circumstance-restriction-h-w)). Prefer a host relation + `/b/` digit-string endpoints, or an NP/argument fence of `_` numbers (`bal b_15,00l b_16,00l`).
 
-Examples: `z-agel gal g+3l g+5l` → *ages 3–5*; `zal z+3l ul z+5l` → *[3, 5)*; `zel z+10l z+20l` → *from 10 to 20*; `zel z+5l` → *\< 5*; `zuel z+5l` → *\> 5*; `zar z+3l z+5l` → *some value in 3–5*; `zol z+3l z+5l` → *3 or 5* (discrete, not a range).
+Examples: `z-agel gal g+3l g+5l` → *ages 3–5*; `zal z+3l ul z+5l` → *[3, 5)*; `zel z+10l z+20l` → *from 10 to 20*; `zel z+5l` → *\< 5*; `zuel z+5l` → *\> 5*; `zael z+5l z+5l` → *equally 5* / *5 equals 5*; `zaem z+3l z+5l` → *3 and 5 approximately equal*; `zar z+3l z+5l` → *some value in 3–5*; `zol z+3l z+5l` → *3 or 5* (discrete, not a range).
 
 ## Stress (pronunciation guide)
 
