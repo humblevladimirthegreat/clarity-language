@@ -2,7 +2,7 @@
 -redo plurality
 -local llm systematically review entire lexicon
 -speed reading display
--allow optionality on conjunctions (a revision?)
+-allow optionality on other conjunctions (**a** / **ao** / ranked) if needed later; **o** done via **-om**
 
 ## Discourse markers (`/x/`) — expand beyond quotes + linkers
 

@@ -92,7 +92,7 @@ Phrase-level for entity/property slots; VP/clause for action/claim slots. Statem
 - Nullary **-n** — confirm the conventional empty label (*Null?*, *Draw?*).
 - Nullary / unary / multi **…ar** / **…or** / **…er** / **…ur** — [fill-ask](#fill-ask-r).
 
-**Length 2+** (no **-r**): **-l** = pick from this closed menu (esp. **o** / **oe**); **-m** = pick, or name something else (still not “none” — optionality deferred); **u** = *none of* the listed; **ua** / **uo** = complement of the listed; **ue** = reverse-rank among the listed. With **-r**: [fill-ask arity](#fill-ask-r).
+**Length 2+** (no **-r**): **-l** = pick from this closed menu (esp. **o** / **oe**) — for **o**, exactly one, empty **not** allowed; **-m** = pick, or name something else — for **o** only, also *or none* / empty-allowed ([coordination.md](coordination.md#empty-allowed-om)); other vowels’ **-m** still not “none”; **u** = *none of* the listed; **ua** / **uo** = complement of the listed; **ue** = reverse-rank among the listed. With **-r**: [fill-ask arity](#fill-ask-r).
 
 ### Ranked — unary (under question)
 
@@ -127,7 +127,7 @@ Phrase-level for entity/property slots; VP/clause for action/claim slots. Statem
 | **…al** | *Just X?* / *Only X?* |
 | **…am** | *How about X?* / *Want X?* (offer) |
 | **…ol** | *Has to be X?* |
-| **…om** | *How about X?* / *X, or something else?* (offer) |
+| **…om** | *How about X?* / *X, or skip?* / *X, or something else?* (offer; empty-allowed) |
 | **…ual** | *Everything but X?* |
 | **…uam** | *Everything but X (at least)?* (offer) |
 | **…uol** | *Anything but X?* |
@@ -148,7 +148,7 @@ Phrase-level for entity/property slots; VP/clause for action/claim slots. Statem
 | **…am** | *Got nothing?* / *Nothing comes to mind?* |
 | **…an** | *Null?* / *Void?* |
 | **…ol** | *No options?* / *Stuck?* |
-| **…om** | *No pick?* / *Can’t say?* |
+| **…om** | *No pick?* / *Can’t say?* / *Skip OK?* |
 | **…ual** | *Everything?* / *Everyone?* |
 | **…uam** | *Everything you can think of?* |
 | **…uol** | *Anything?* |

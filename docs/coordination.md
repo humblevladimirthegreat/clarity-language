@@ -17,7 +17,7 @@ Prefixed forms are **joiners** (boolean lists plus directional **ranked conjunct
 | Vowel / writing | Meaning |
 |-----------------|---------|
 | **a** / `a` | *and* |
-| **o** / `o` | exclusive *or* (pick **one**) |
+| **o** / `o` | exclusive *or* — **-ol** / closed: pick **exactly one**; **-om** / open: pick **at most one** (*or none* / empty-allowed; other exclusives may exist) |
 | **u** / `u` | **negation** — unary *not X*; multi *none of* (none of the conjuncts hold); nullary bare *no* |
 | **a** + **o** / `ao` | inclusive *and/or* (one **or** more) |
 | **e** / `e` | **ranked conjunction** — earlier outranks later (*A ≻ B ≻ C*); **directional**; exclusivity of satisfaction **not** claimed |
@@ -29,18 +29,19 @@ Prefixed forms are **joiners** (boolean lists plus directional **ranked conjunct
 
 <a id="invert-u-stacks"></a>
 <a id="empty-allowed-u-prefix"></a>
+<a id="empty-allowed-om"></a>
 <a id="join-type-vowel-series"></a>
 
-**Invert (`u`-stacks):** leading **u** on **a** / **o** / **e** flips the base join — complement of inventory (**ua**), complement of menu (**uo**), or reverse of rank order (**ue**). This is **not** bare **u** ([negation](#negation-u): *not* / *none of* / bare *no*). Domain for **ua** / **uo** comes from context or SHARED (e.g. `zual g-drinkl z-teal z-coffeel` → *every drink but tea and coffee*). **-m** still only marks non-exhaustive listing (other unnamed conjuncts may exist) — it does **not** by itself allow *or none* (optionality / empty-allowed is deferred). No **u** on bare **u**, and no **u** on stacked **ao** / **ae** / **oe** (no three-vowel **uao** / **uae** / **uoe** / **aoe**). No **-r** on any stacked form (**ao** / **ae** / **oe** / **ua** / **uo** / **ue**). Rank reversal is **ue** only — not an `/h/` adverb.
+**Invert (`u`-stacks):** leading **u** on **a** / **o** / **e** flips the base join — complement of inventory (**ua**), complement of menu (**uo**), or reverse of rank order (**ue**). This is **not** bare **u** ([negation](#negation-u): *not* / *none of* / bare *no*). Domain for **ua** / **uo** comes from context or SHARED (e.g. `zual g-drinkl z-teal z-coffeel` → *every drink but tea and coffee*). **-m** on vowels other than bare **o** still only marks non-exhaustive listing (other unnamed conjuncts may exist) — it does **not** by itself allow *or none*. Empty-allowed / *or none* is **o**-specific: open **…om** only — see [empty-allowed **-om**](#empty-allowed-om). No **u** on bare **u**, and no **u** on stacked **ao** / **ae** / **oe** (no three-vowel **uao** / **uae** / **uoe** / **aoe**). No **-r** on any stacked form (**ao** / **ae** / **oe** / **ua** / **uo** / **ue**). Rank reversal is **ue** only — not an `/h/` adverb.
 
 ### Closure ending (all join vowels)
 
 | Ending | Meaning |
 |--------|---------|
 | **-l** | **Closed** (exhaustive) — the listed conjuncts are treated as the **only** ones in play for this claim (Claritish *eor*-style completeness). |
-| **-m** | **Open** (non-exhaustive) — other conjuncts may exist (*among others*, *including but not limited to*; Claritish *ior*-style). |
+| **-m** | **Open** (non-exhaustive) — other conjuncts may exist (*among others*, *including but not limited to*; Claritish *ior*-style). On bare **o** only, **-m** also marks [empty-allowed](#empty-allowed-om) (*or none*). |
 
-When unsure whether the list is complete, prefer **-m** (open). Use **-l** when you stand behind completeness (inventories, forced-choice menus, definitions, full ranked ladders).
+When unsure whether the list is complete, prefer **-m** (open). Use **-l** when you stand behind completeness (inventories, forced-choice menus, definitions, full ranked ladders). Do **not** read **-m** on **a** / **ao** / **e** / **ae** / **oe** / **u** / **ua** / **uo** / **ue** as *or none* — only **`…om`** carries that bit.
 
 ### Named / conventional ending (phrase-level, all join vowels)
 
@@ -162,7 +163,7 @@ Under `/h/` / `/w/`, only the [defined core](#circumstance-restriction-h-w) uses
 | **…al** (`zal` / `dal` / `bal` / `gal` / `wal` / `hal`) | *just X* / *only X* | Closed *and* of one — exhaustive inventory, **not** a priority claim (milder than **…el**) |
 | **…am** (`zam` / `dam` / `bam` / `gam` / `wam` / `ham`) | *X, for one* / *X, say* | Open *and* of one — same open bit as multi-item **am** |
 | **…ol** (`zol` / `dol` / …) | *has to be X* / *X only* | Closed xor of one — forced exclusive pick, not inventory (**…al**) or priority (**…el**) |
-| **…om** (`zom` / `dom` / …) | *say, X* / *X maybe* | Open xor of one — pick-one frame; X is a candidate; other exclusives may exist |
+| **…om** (`zom` / `dom` / …) | *say, X* / *X maybe* / *X, or skip* | Open xor of one — at most X (empty OK); other exclusives may exist |
 | **…ual** (`zual` / `dual` / …) | *everything but X* | Closed complement of one — all of the domain except X |
 | **…uam** (`zuam` / `duam` / …) | *everything but X (among exclusions)* | Open complement — X excluded; other exclusions may exist |
 | **…uol** (`zuol` / `duol` / …) | *anything but X* | Closed free choice outside {X} |
@@ -183,7 +184,7 @@ Under `/h/` / `/w/`, only the [defined core](#circumstance-restriction-h-w) uses
 | **…am** (`zam` / `dam` / …) | *nothing comes to mind* / *I got nothing* | Open twin — can’t fill the slot, but don’t claim the world is empty |
 | **…an** (`zan` / `dan` / …) | *null* / *void* | Named / conventional empty value (*null*, void marker) |
 | **…ol** (`zol` / `dol` / …) | *no options* / *we’re stuck* | Closed empty menu — pick-one with nowhere to land |
-| **…om** (`zom` / `dom` / …) | *I got no pick* / *can’t say* | Open empty menu — “I don’t have a pick,” not “impossible” |
+| **…om** (`zom` / `dom` / …) | *I got no pick* / *can’t say* / *skipping is fine* | Open empty menu — empty-allowed twin of forced **…ol**; “I don’t have a pick,” not “impossible” |
 | **…ual** (`zual` / …) | *everything* / *everyone* | Closed empty exclusion list — complement of nothing = unrestricted universal (positive twin of **…al**) |
 | **…uam** (`zuam` / …) | *everything that comes to mind* | Open universal — affirming a full list from the speaker’s side |
 | **…uol** (`zuol` / …) | *anything (goes)* | Closed empty exclusion — free choice with nothing barred (near **…or**; complement frame made explicit) |
@@ -198,16 +199,22 @@ Under `/h/` / `/w/`, only the [defined core](#circumstance-restriction-h-w) uses
 
 **…an** is **nullary-only** on the phrase fence (no defined one-conjunct reading). **…ul** / **…um** are defined at **all** arities (nullary *no*; unary *not X*; multi *none of*) — see [negation](#negation-u). **…en** nullary is *it’s a draw* / *tie*; unary **…en** stays *X first* (stock). **…ar** / **…or** / **…er** / **…ur** are defined at **all** arities (nullary / unary / multi) — see [unspecified-member **-r**](#unspecified-member-r-phrase).
 
-Examples (unary): `zem z-truthrl` → *truth first* / *mainly truth*; `zel z-truthrl` → *only truth matters*; `zoem z-fixl` → *try a fix first*; `zoel z-fixl` → *only try a fix*; `zuem z-dessertl` → *dessert last*; `zuel z-dessertl` → *dessert last, period*; `zen z-safetyl` → *safety first* (stock); `zer z-safetyl` → *safety as a priority*; `zal z-waterl` → *just water*; `zam z-Samn` → *Sam, for one*; `zol z-waterl` → *has to be water*; `zom z-coffeel` → *say, coffee*; `zual z-teal` → *everything but tea*; `zuol z-coffeel` → *anything but coffee*; `zaol z-waterl` → *water’ll do*; `zaom z-waterl` → *at least water*; `zul z-Samn` → *not Sam*; `gul g-bigl` → *not big*; `gum g-bigl` → *not big (among denials)*; `zar z-personl` → *some (unknown) person*; `zor z-personl` → *any person*; `zur z-contractl` → *something other than the contract*.
+Examples (unary): `zem z-truthrl` → *truth first* / *mainly truth*; `zel z-truthrl` → *only truth matters*; `zoem z-fixl` → *try a fix first*; `zoel z-fixl` → *only try a fix*; `zuem z-dessertl` → *dessert last*; `zuel z-dessertl` → *dessert last, period*; `zen z-safetyl` → *safety first* (stock); `zer z-safetyl` → *safety as a priority*; `zal z-waterl` → *just water*; `zam z-Samn` → *Sam, for one*; `zol z-waterl` → *has to be water*; `zom z-coffeel` → *say, coffee* / *coffee, or skip*; `zual z-teal` → *everything but tea*; `zuol z-coffeel` → *anything but coffee*; `zaol z-waterl` → *water’ll do*; `zaom z-waterl` → *at least water*; `zul z-Samn` → *not Sam*; `gul g-bigl` → *not big*; `gum g-bigl` → *not big (among denials)*; `zar z-personl` → *some (unknown) person*; `zor z-personl` → *any person*; `zur z-contractl` → *something other than the contract*.
 
-Examples (nullary): `zal` → *nothing* / *nobody*; `zam` → *nothing comes to mind*; `zan` → *null* / *void*; `zol` → *no options* / *we’re stuck*; `zom` → *I got no pick*; `zual` → *everything* / *everyone*; `zuol` → *anything (goes)*; `zaol` → *all set*; `zaom` → *nothing I need*; `zul` → *no*; `zum` → *no from me*; `zar` → *something* / *someone*; `zor` → *anything* / *anyone*; `zer` → *whatever’s most important*; `zur` → *something else* / *someone else*; `zel` → *don’t care*; `zem` → *I don’t have a ranking*; `zoem` → *not sure where to start*; `zoel` → *do nothing* / *don’t bother*; `zuel` → *don’t care (ascending)*; `zen` → *it’s a draw* / *tie*. Same under `/d/` `/b/` `/ɡ/` (`dal`, `gam`, `zar`, `zor`, `zer`, `zur`, `zul`, …). Under `/h/` / `/w/`, only the [defined core](#circumstance-restriction-h-w) applies (`hal` → *never*; `hual` → *always*; `har` → *sometime*; …) — not these entity/property emptiness readings.
+Examples (nullary): `zal` → *nothing* / *nobody*; `zam` → *nothing comes to mind*; `zan` → *null* / *void*; `zol` → *no options* / *we’re stuck*; `zom` → *I got no pick* / *skipping is fine*; `zual` → *everything* / *everyone*; `zuol` → *anything (goes)*; `zaol` → *all set*; `zaom` → *nothing I need*; `zul` → *no*; `zum` → *no from me*; `zar` → *something* / *someone*; `zor` → *anything* / *anyone*; `zer` → *whatever’s most important*; `zur` → *something else* / *someone else*; `zel` → *don’t care*; `zem` → *I don’t have a ranking*; `zoem` → *not sure where to start*; `zoel` → *do nothing* / *don’t bother*; `zuel` → *don’t care (ascending)*; `zen` → *it’s a draw* / *tie*. Same under `/d/` `/b/` `/ɡ/` (`dal`, `gam`, `zar`, `zor`, `zer`, `zur`, `zul`, …). Under `/h/` / `/w/`, only the [defined core](#circumstance-restriction-h-w) applies (`hal` → *never*; `hual` → *always*; `har` → *sometime*; …) — not these entity/property emptiness readings.
 
 Do not confuse prefixed **…em** / **…el** / **…en** / **…er** / **…al** / **…am** / **…an** / **…ol** / **…om** / **…ual** / **…uam** / **…uol** / **…uom** / **…uel** / **…uem** / **…ul** / **…um** / **…ur** / **…ar** / **…or** with bare revision **em** / **el** / **en** / **al** / **am** / **an** / **ol** / **om** / **ul** / **um** (*or rather* / *including* / *instead* / *except*).
 ### Exclusivity, negation (`u`), and invert
 <a id="negation-u"></a>
 
-- **Exclusive (`o`)** — pick **one** of the conjuncts, not more than one.
-- **Inclusive (`ao`)** — one **or** more of the conjuncts may hold (English *and/or*). Built by combining **a** with **o**; bare **o** stays exclusive.
+- **Exclusive (`o`)** — at most one of the conjuncts (never more than one). Ending splits empty-allowed:
+  | Ending | Multi reading | Typical use |
+  |--------|---------------|-------------|
+  | **-l** (`zol` / `vol` / `xol` / …) | pick **exactly one** — empty **not** allowed | forced choice, partitions, instructions |
+  | **-m** (`zom` / `vom` / `xom` / …) | pick **at most one** — *or none* / empty-allowed; other exclusives may exist | offers, soft menus, permissions |
+  | **-n** | named/conventional (phrase) or soft (VP/clause) exclusive bundle — completeness / softness as usual; **not** an automatic empty-allowed bit (use **-om** when skip must be explicit) | stock xor labels; soft `von` / `xon` = uncertain alternatives |
+  Phrase/VP/clause same rule. Unary **`zol X`** = *has to be X*; unary **`zom X`** = *say, X* / *X, or skip*. Nullary **`zol`** = *no options* / *stuck*; nullary **`zom`** = *I got no pick* / skip is fine from the speaker’s side. Circumstance: **`hol`** = exclusive trigger (exactly one occasion); **`hom`** = exclusive trigger **or never** — [below](#circumstance-restriction-h-w). Nest if you need a rare mix (e.g. closed list but empty OK: `vol zol A B zal`).
+- **Inclusive (`ao`)** — one **or** more of the conjuncts may hold (English *and/or*). Built by combining **a** with **o**; bare **o** stays exclusive. **-m** on **ao** does **not** allow empty (still at least one).
 - **Negation (`u`)** — the listed conjuncts **fail** (none of them hold). Same vowel at every level (phrase / VP / clause); no separate `/h/` or `/w/` “not” root for ordinary polarity. Under **`/h/`** / **`/w/`**, **u** denies **applicability circumstances** (*not when…*), not manner polarity — see [circumstance restriction](#circumstance-restriction-h-w).
   | Length | Reading |
   |--------|---------|
@@ -215,11 +222,11 @@ Do not confuse prefixed **…em** / **…el** / **…en** / **…er** / **…al*
   | **1** (unary) | *not X* — `zul X`, `vul v-runl` (*didn’t run*), `gul g-bigl` (*not big*), `xul SENT` (*not SENT*); circumstance: `hul h-rainl` → *not when raining* |
   | **0** (nullary) | bare *no* — `zul` / `vul` / `xul` (closed); open twin **…um**; soft VP/clause **…un**. Contrast nullary **…al** (*nothing* / *nobody* as empty inventory) and nullary **…oel** (*do nothing* as empty exclusive triage). Circumstance: nullary **`hal`** = *never*; nullary **`hual`** = *always*; nullary **`hul` / `hum`** are **undefined** under `/h/` / `/w/` — use `xul` / `vul` / `zul` for bare *no*. |
   **-l** vs **-m** mark whether the denial is limited to what’s named (**…ul**) or leaves room for further denials (**…um**); phrase **-n** names a conventional *none of* / denial bundle; VP/clause soft **-n** = soft / reconstructed denial. **-r** on **u** is *something else* / *someone else* (other than), not *not* — see [unspecified-member](#unspecified-member-r-phrase). Prefixed **`zul` / `vul` / …** are **not** revision **`ul` / `um`** (*A except B*). Nest fences for scope: `vul val A B` → ¬(A ∧ B); `val vul A vul B` → (¬A) ∧ (¬B).
-- **Invert (`ua` / `uo` / `ue`)** — leading **u** on **a** / **o** / **e** flips the base join. Contrast bare **u** (negation) vs **u**-stacks (complement or reverse). **-m** does **not** imply empty-allowed / *or none* — only that unlisted conjuncts may exist. Optionality morphology is deferred.
+- **Invert (`ua` / `uo` / `ue`)** — leading **u** on **a** / **o** / **e** flips the base join. Contrast bare **u** (negation) vs **u**-stacks (complement or reverse). **-m** on invert forms does **not** imply empty-allowed / *or none* — only that unlisted conjuncts may exist. Empty-allowed is bare **o** + **-m** only ([above](#empty-allowed-om)).
   - **`ua`** — everything but the listed (domain minus the conjuncts).
   - **`uo`** — anything but the listed (free choice from the complement).
   - **`ue`** — rank reversal (*A ≺ B ≺ C*); exclusivity unmarked.
-- **Ranked (`e` / **ae** / **oe** / **ue`)** — ordered ranking, not a boolean *and*/*or*. **e** / **ae** / **oe**: first listed outranks second, and so on. **ue**: last listed outranks earlier. **e** leaves exclusivity unmarked; **ae** = co-satisfiable ranked (**a**+**e**); **oe** = exclusive ranked (**o**+**e**). **-l** / **-m** / **-n** still mark closed / open / named (phrase) or soft (VP/clause) packaging of that ladder.
+- **Ranked (`e` / **ae** / **oe** / **ue`)** — ordered ranking, not a boolean *and*/*or*. **e** / **ae** / **oe**: first listed outranks second, and so on. **ue**: last listed outranks earlier. **e** leaves exclusivity unmarked; **ae** = co-satisfiable ranked (**a**+**e**); **oe** = exclusive ranked (**o**+**e**). **-l** / **-m** / **-n** still mark closed / open / named (phrase) or soft (VP/clause) packaging of that ladder. **-m** on ranked forms (including **oe**) does **not** add empty-allowed — that bit stays bare **`…om`** only.
 
 **a** is ordinary conjunction (*and*), not an *or*. All levels take **-l**, **-m**, or **-n** (named at phrase; soft at VP/clause) on **a** / **o** / **u** / **ao** / **e** / **ae** / **oe** / **ua** / **uo** / **ue**; **a** / **o** / **e** / **u** also take **-r** ([unspecified-member](#unspecified-member-r-phrase)). Stacked forms (**ao** / **ae** / **oe** / **ua** / **uo** / **ue**) never take **-r**.
 
@@ -443,9 +450,10 @@ Complex adjective on an NP bundle: `zam g-ofl b-Samn z-dogl z-catl` or `z-dogl z
 - `z-teal z-coffeel z-waterl zel` — same neutral ranked ladder with right close
 - `zem z-dogl g-bigl z-catl g-redl` — *(big dog) ≻ (red cat)* (open ranked, exclusivity unmarked)
 - `zem z-truthrl` — *truth first* (unary open ranked); `zel z-truthrl` — *only truth matters* (unary closed); `zoem z-fixl` — *try a fix first* (unary open exclusive ranked); `zoel z-fixl` — *only try a fix* (unary closed exclusive ranked); `zuem z-dessertl` — *dessert last*; `zuel z-dessertl` — *dessert last, period*; `zen z-safetyl` — *safety first* (unary named ranked)
-- `zal z-waterl` — *just water* (unary closed *and*); `zam z-Samn` — *Sam, for one* (unary open *and*); `zol z-waterl` — *has to be water* (unary closed xor); `zom z-coffeel` — *say, coffee* (unary open xor); `zual z-teal` — *everything but tea*; `zuol z-coffeel` — *anything but coffee*; `zaol z-waterl` — *water’ll do* (unary closed *and/or*); `zaom z-waterl` — *at least water* (unary open *and/or*); `zar z-personl` — *some (unknown) person*; `zor z-personl` — *any person*; `zer z-safetyl` — *safety as a priority*; `zul z-Samn` — *not Sam*; `zur z-contractl` — *something other than the contract*; `z-personl zar` — same with right close
+- `zal z-waterl` — *just water* (unary closed *and*); `zam z-Samn` — *Sam, for one* (unary open *and*); `zol z-waterl` — *has to be water* (unary closed xor); `zom z-coffeel` — *say, coffee* / *coffee, or skip* (unary open xor, empty-allowed); `zual z-teal` — *everything but tea*; `zuol z-coffeel` — *anything but coffee*; `zaol z-waterl` — *water’ll do* (unary closed *and/or*); `zaom z-waterl` — *at least water* (unary open *and/or*); `zar z-personl` — *some (unknown) person*; `zor z-personl` — *any person*; `zer z-safetyl` — *safety as a priority*; `zul z-Samn` — *not Sam*; `zur z-contractl` — *something other than the contract*; `z-personl zar` — same with right close
+- `zol z-teal z-coffeel` — *tea or coffee* (exactly one; closed); `zom z-teal z-coffeel` — *tea or coffee, or neither* (at most one; open, empty-allowed)
 - `zar z-teal z-coffeel` — *some one among tea and coffee*; `zor z-burgerl z-chickenl` — *any of burger or chicken*; `zer z-teal z-coffeel` — *whichever of tea or coffee ranks higher*; `zul z-teal z-coffeel` — *none of tea or coffee*; `zur z-costl z-riskl` — *something other than cost and risk*
-- `zal` — *nothing* / *nobody* (nullary closed *and*); `zam` — *nothing comes to mind* (nullary open *and*); `zan` — *null* / *void* (nullary named); `zar` — *something* / *someone*; `zol` — *no options* / *we’re stuck* (nullary closed xor); `zom` — *I got no pick* (nullary open xor); `zual` — *everything* / *everyone*; `zuol` — *anything (goes)*; `zor` — *anything* / *anyone*; `zaol` — *all set* (nullary closed *and/or*); `zaom` — *nothing I need* (nullary open *and/or*); `zul` — *no* (nullary closed negation); `zum` — *no from me* (nullary open negation); `zur` — *something else*; `zel` — *don’t care* (nullary closed ranked); `zem` — *I don’t have a ranking* (nullary open ranked); `zer` — *whatever’s most important*; `zoem` — *not sure where to start* (nullary open exclusive ranked); `zoel` — *do nothing* (nullary closed exclusive ranked); `zuel` — *don’t care (ascending)*; `zen` — *it’s a draw* / *tie* (nullary named ranked)
+- `zal` — *nothing* / *nobody* (nullary closed *and*); `zam` — *nothing comes to mind* (nullary open *and*); `zan` — *null* / *void* (nullary named); `zar` — *something* / *someone*; `zol` — *no options* / *we’re stuck* (nullary closed xor); `zom` — *I got no pick* / *skipping is fine* (nullary open xor); `zual` — *everything* / *everyone*; `zuol` — *anything (goes)*; `zor` — *anything* / *anyone*; `zaol` — *all set* (nullary closed *and/or*); `zaom` — *nothing I need* (nullary open *and/or*); `zul` — *no* (nullary closed negation); `zum` — *no from me* (nullary open negation); `zur` — *something else*; `zel` — *don’t care* (nullary closed ranked); `zem` — *I don’t have a ranking* (nullary open ranked); `zer` — *whatever’s most important*; `zoem` — *not sure where to start* (nullary open exclusive ranked); `zoel` — *do nothing* (nullary closed exclusive ranked); `zuel` — *don’t care (ascending)*; `zen` — *it’s a draw* / *tie* (nullary named ranked)
 **AP**
 
 - `gam g-happyl w-veryl g-proudl w-slightlyl` — *(very happy) and (slightly proud)* — each degree inside its conjunct
@@ -505,7 +513,7 @@ Forms stay **reserved** under `/h/` / `/w/` (same spellings as other phrase slot
 | Form | With conjunct(s) | Nullary |
 |------|------------------|---------|
 | **`hal` / `ham`** | *only when…* (closed) / *when…, among other occasions* (open) | ***never*** / *never that I can think of* |
-| **`hol` / `hom`** | *either when A or when B (not both)* — exclusive trigger | — **undefined** |
+| **`hol` / `hom`** | *either when A or when B (not both)* — exclusive trigger; **`hom`** also allows *or never* (empty-allowed, parallel to phrase **`zom`**) | — **undefined** |
 | **`haol` / `haom`** | *when A and/or when B* — any of these occasions suffices | — **undefined** |
 | **`hul` / `hum`** | *not when…* / *not when…, for one* | — **undefined** (use `xul` / `vul` / `zul` for bare *no*) |
 | **`hual` / `huam`** | *always except when…* | ***always*** / *always from me* |
@@ -545,7 +553,7 @@ Nesting and SHARED still apply to **defined** forms only.
 - `hal` → *never*; `ham` → *never that I can think of*; `hual` → *always*; `huam` → *always from me*; `har` → *sometime*; `hor` → *anytime*; `hur` → *sometime else*
 - `hal h-rainl` / `h-rainl hal` → *only when raining*
 - `ham h-rainl h-nightl` → *when raining and at night (among other occasions)*
-- `hol h-weekdayl h-weekendl` → *either on a weekday or on a weekend (not both)*
+- `hol h-weekdayl h-weekendl` → *either on a weekday or on a weekend (not both)*; `hom h-weekdayl h-weekendl` → *weekday or weekend (not both), or never*
 - `haol h-rainl h-snowl` → *when raining and/or when snowing*
 - `hul h-rainl` → *not when raining*; `hum h-rainl h-nightl` → *not when raining or at night, for one*
 - `hual h-rainl` → *always except when raining*
@@ -610,7 +618,7 @@ On **`/v/`** and **`/x/`** only, **-n** is **soft packaging** (not phrase named/
 | Form | Soft reading |
 |------|----------------|
 | **`van` / `xan`** (*and*) | *and then…* (temporal / story sequence, not mere logical *and*) |
-| **`von` / `xon`** (*xor*) | *or maybe…* — uncertain alternatives |
+| **`von` / `xon`** (*xor*) | *or maybe…* — uncertain alternatives (not automatic empty-allowed; use **`vom` / `xom`** for *or none*) |
 | **`vun` / `xun`** (negation) | soft *not* / *none of… as I recall…* — reconstructed or hedged denial (unary *not X*; multi soft *none of*; nullary soft *no*) |
 | **`vaon` / `xaon`** (*and/or*) | *and/or maybe…* — soft multi-fit |
 | **`vuan` / `xuan`** (*everything but*) | *everything but… maybe* — soft complement inventory |
@@ -655,7 +663,7 @@ COORD ( SHARED )* ITEM            ← unary …ar/…or/…er/…ur or negation 
 COORD ( SHARED )*               ← nullary …ar/…or/…er/…ur or negation …ul/…um/…un
 ```
 
-Examples (flat): `vam A B` / `A B vam` → *A and B* (open); `val A B C` → closed three-way *and*; `van A B C` → *A and then B and then C*; `vel A B` → *A ≻ B*; `var` → *do something*; `xar` → *something happened*; `vul v-runl` → *didn’t run*; `vul` → *no* / *don’t* (bare denial); `xul SENT` → *not SENT*.
+Examples (flat): `vam A B` / `A B vam` → *A and B* (open); `val A B C` → closed three-way *and*; `van A B C` → *A and then B and then C*; `vel A B` → *A ≻ B*; `vol A B` → *A or B* (exactly one); `vom A B` → *A or B or neither* (at most one); `var` → *do something*; `xar` → *something happened*; `vul v-runl` → *didn’t run*; `vul` → *no* / *don’t* (bare denial); `xul SENT` → *not SENT*.
 
 Nesting: [fence nesting](#fence-nesting) — e.g. `vol A val B C` → *A or (B and C)*; `A B vol C val` → *(A or B) and C*.
 
@@ -690,6 +698,7 @@ VP-level coordinators join **verb phrases** inside one clause: each conjunct is 
 - `h-quicklyl vam d-applel v-eatl d-waterl v-drinkl` → *quickly* *(ate an apple and drank water)*
 - `vam d-applel v-eatl h-quicklyl d-waterl v-drinkl` → *(quickly ate an apple) and (drank water)*
 - `d-applel vam v-washl v-eatl` → *washed and ate an apple* (shared object before left fence)
+- `vol d-applel v-eatl d-waterl v-drinkl` → *ate an apple or drank water* (exactly one); `vom d-applel v-eatl d-waterl v-drinkl` → *ate an apple or drank water or neither*
 - `vol d-applel v-eatl val d-waterl v-drinkl d-breadl v-bakel` → *ate an apple, or ((drank water) and (baked bread))* (left nest)
 - `d-applel v-eatl d-waterl v-drinkl vol d-breadl v-bakel val` → *((ate an apple) or (drank water)) and (baked bread)* (right nest)
 - `var` → *do something*; `var v-runl` → *some (unspecified) running*; `vor v-runl v-jumpl` → *any of running or jumping*
@@ -728,7 +737,7 @@ Endorsement strength and evidentiality stay on each clause’s `/h/` (or `/w/`),
 
 - `xal A B` → *A and B* (closed); `xam A B` → open; `A B xam` → same open with right close
 - `xal A B C` → *A and B and C* (one closed *and*-list)
-- `xol A B C` → *A or B or C* (one closed *xor*-list)
+- `xol A B C` → *A or B or C* (exactly one; closed); `xom A B C` → *A or B or C or none* (at most one; open, empty-allowed)
 - `xan A B C` → *A and then B and then C*
 - `xel A B` → *A ≻ B* (closed ranked, unmarked); `xem A B` → open; `xen A B C` → soft
 - `xael A B` → co-satisfiable closed ranked; `xoel A B C` → exclusive closed ranked
