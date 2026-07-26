@@ -18,24 +18,26 @@ Prefixed forms are **joins** — **set joins** (**a** / **o** / **ao** / **u** /
 
 ### Join series (vowels)
 
-| Vowel / writing | Family | Meaning |
-|-----------------|--------|---------|
-| **a** / `a` | **set** | inventory *and* |
-| **o** / `o` | **set** | exclusive *or* — **-ol** / closed: pick **exactly one**; **-om** / open: pick **at most one** (*or none* / empty-allowed; other exclusives may exist) |
-| **u** / `u` | **set** | **negation** — focus *not X*; list *none of*; bare *no* |
-| **a** + **o** / `ao` | **set** | inclusive *and/or* (one **or** more) |
-| **e** / `e` | **rank** | earlier outranks later (*A ≻ B ≻ C*); **directional**; exclusivity **not** claimed |
-| **a** + **e** / `ae` | **rank** | **equality / tie / equal rank**; with SHARED scale → [equative](comparatives.md#equatives) (*as … as*) |
-| **o** + **e** / `oe` | **rank** | **exclusive ranked** — pick / try **one** (*A else B else C*) |
-| **u** + **a** / `ua` | **set** | ***everything but*** — domain **except** the listed (invert of **a**) |
-| **u** + **o** / `uo` | **set** | ***anything but*** — free choice **outside** the listed (invert of **o**) |
-| **u** + **e** / `ue` | **rank** | **rank reversal** — later outranks earlier (*A ≺ B ≺ C*); exclusivity **not** claimed (invert of **e**) |
+Atomic vowels have fixed **names**. Stacked names are derived from those atomics in **spoken order**: leading **a** → *co-…*; leading **u** → *counter-…*; **oe** = **choice** then **rank** → **choicerank**.
+
+| Vowel / writing | Family | Name | Meaning |
+|-----------------|--------|------|---------|
+| **a** / `a` | **set** | **additive** | inventory *and* |
+| **o** / `o` | **set** | **choice** | exclusive *or* — **-ol** / closed: pick **exactly one**; **-om** / open: pick **at most one** (*or none* / empty-allowed; other exclusives may exist) |
+| **u** / `u` | **set** | **negation** | focus *not X*; list *none of*; bare *no* |
+| **a** + **o** / `ao` | **set** | **cochoice** | inclusive *and/or* (one **or** more) |
+| **e** / `e` | **rank** | **rank** | earlier outranks later (*A ≻ B ≻ C*); **directional**; exclusivity **not** claimed |
+| **a** + **e** / `ae` | **rank** | **corank** | **equality / tie / equal rank**; with SHARED scale → [equative](comparatives.md#equatives) (*as … as*) |
+| **o** + **e** / `oe` | **rank** | **choicerank** | **exclusive ranked** — pick / try **one** (*A else B else C*) |
+| **u** + **a** / `ua` | **set** | **counteradditive** | ***everything but*** — domain **except** the listed (invert of **a**) |
+| **u** + **o** / `uo` | **set** | **counterchoice** | ***anything but*** — free choice **outside** the listed (invert of **o**) |
+| **u** + **e** / `ue` | **rank** | **counterrank** | **rank reversal** — later outranks earlier (*A ≺ B ≺ C*); exclusivity **not** claimed (invert of **e**) |
 
 <a id="invert-u-stacks"></a>
 <a id="empty-allowed-om"></a>
 <a id="join-type-vowel-series"></a>
 
-**Invert (`u`-stacks):** leading **u** on **a** / **o** / **e** flips the base join — complement of inventory (**ua**), complement of menu (**uo**), or reverse of rank order (**ue**). This is **not** plain **u** ([negation](#negation-u): *not* / *none of* / bare *no*). Domain for **ua** / **uo** comes from context or SHARED `/ɡ/` (kind-as-property): bare `zual g-catl` → *every cat*; with exclusions `zual g-drinkl z-teal z-coffeel` → *every drink but tea and coffee* — see [universals, domains, and generics](#universals-domains-generics). **-m** on vowels other than plain **o** still only marks non-exhaustive listing (other unnamed conjuncts may exist) — it does **not** by itself allow *or none*. Empty-allowed / *or none* is **o**-specific: open **…om** only — see [empty-allowed **-om**](#empty-allowed-om). No **u** on plain **u**, and no **u** on stacked **ao** / **ae** / **oe** (no three-vowel **uao** / **uae** / **uoe** / **aoe**). No **-r** on any stacked form (**ao** / **ae** / **oe** / **ua** / **uo** / **ue**). Rank reversal is **ue** only — not an `/h/` adverb.
+**Invert (`u`-stacks / *counter-…*):** leading **u** on **a** / **o** / **e** flips the base join — **counteradditive** (**ua**), **counterchoice** (**uo**), or **counterrank** (**ue**). This is **not** plain **u** ([negation](#negation-u): *not* / *none of* / bare *no*). Domain for **ua** / **uo** comes from context or SHARED `/ɡ/` (kind-as-property): bare `zual g-catl` → *every cat*; with exclusions `zual g-drinkl z-teal z-coffeel` → *every drink but tea and coffee* — see [universals, domains, and generics](#universals-domains-generics). **-m** on vowels other than plain **o** still only marks non-exhaustive listing (other unnamed conjuncts may exist) — it does **not** by itself allow *or none*. Empty-allowed / *or none* is **o**-specific: open **…om** only — see [empty-allowed **-om**](#empty-allowed-om). No **u** on plain **u**, and no **u** on stacked **ao** / **ae** / **oe** (no three-vowel **uao** / **uae** / **uoe** / **aoe**). No **-r** on any stacked form (**ao** / **ae** / **oe** / **ua** / **uo** / **ue**). Rank reversal is **ue** (**counterrank**) only — not an `/h/` adverb.
 
 ### Closure ending (all join vowels)
 
