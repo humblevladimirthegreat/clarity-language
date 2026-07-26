@@ -6,7 +6,7 @@ Clarity is a language designed to encode psychological concepts and techniques t
 
 When I say that Clarity helps you improve your life, I mean that it improves these three broad categories:
 
-(1) Love. Clarity encodes self acceptance and acceptance of others by highlighting when judgments are taking place. For example: the personal possessive adjective (my) in Clarity has a form that means “the speaker is grateful for this” because frequent gratitude is scientifically shown to increase happiness.
+(1) Love. Clarity encodes self acceptance and acceptance of others by highlighting when judgments are taking place. For example: the personal possessive adjective (my) in Clarity has a form that means “the speaker is grateful for this” because frequent gratitude is scientifically shown to increase happiness — implemented as a [value](values.md) on `/w/` (`…xa…` = serves a named need).
 
 (2) Truth. Clarity improves critical thinking by making obvious the common biases we hold that cause us to delude ourselves.
 
@@ -103,7 +103,7 @@ Left-bound is optional style (meter, focus, L1 comfort). Prefer default postpose
 
 ## Adjective adjuncts (`/w/`)
 
-`/w/` marks a word that **modifies the previous adjective** (`/ɡ/` unit). It does not modify the verb or the noun directly. Use it for degree (*very*, *slightly*) and for tense/mood/evidentiality scoped only to that property (*former* / *recent*, *alleged*, and the same mood roots as `/h/` when the framing applies just to the adjective).
+`/w/` marks a word that **modifies the previous adjective** (`/ɡ/` unit). It does not modify the verb or the noun directly. **Default content reading is a [value](values.md)** (need ascription on that property: gratitude, judgment, …). Other closed subcategories stay non-value: degree (*very*, *slightly*), tense/mood/evidentiality scoped only to that property (*former* / *recent*, *alleged*, and the same mood roots as `/h/` when the framing applies just to the adjective), and [restrictor](restrictors.md) joins.
 
 The `/w/` word sits on its host: normally immediately after the `/ɡ/` (or after that `/ɡ/`’s contiguous `/b/` argument if the adjective is complex) — including when that `/ɡ/` is left-bound (`gl-…`). Unlike `/h/`, `/w/` does **not** float. Several `/w/` words may **juxtapose** on one `/ɡ/` (`g-happy w-recent w-very`); each applies to that same adjective — that is ordinary co-stacking, **not** a join fence. `/w/` words are typically simple (no `/b/` argument); if a relation needs an argument, use a complex adjective (`/ɡ/` + `/b/`) instead.
 
@@ -113,7 +113,7 @@ Same root, different prefix → different scope: `/h/` frames the clause; `/w/` 
 
 ## Adverbs (`/h/`)
 
-`/h/` marks **adverbs** (modifiers of the verb or clause). That includes manner, time/place adjuncts, recipients (*to* / *for*), topic/aboutness frames (*as for* / *regarding*), and mood/tense/evidentiality. Example mood form: “h vizinin” means “I remember the events of this sentence (which occurred in the past).” Clause force is **not** `/h/`; it is an utterance marker (`/j/`).
+`/h/` marks **adverbs** (modifiers of the verb or clause). **Default content reading is a [value](values.md)** (clause-level need: motive, ought-stake, event judgment). Other closed subcategories stay non-value: manner, time/place adjuncts, recipients (*to* / *for*), topic/aboutness frames (*as for* / *regarding*), mood/tense/evidentiality, [restrictor](restrictors.md) joins, and [number](numbers.md) words under `/h/`. Example mood form: “h vizinin” means “I remember the events of this sentence (which occurred in the past).” Clause force is **not** `/h/`; it is an utterance marker (`/j/`).
 
 Because `/h/` always targets the clause’s verb, **position is free within the clause** (before/after arguments, next to the verb, clause-final, etc.) for style, focus, or meter. `/h/` material must stay inside its own clause: it must not float into a following sentence or into a trailing dependent clause (dependent clauses stay at the end; see below).
 
@@ -239,6 +239,10 @@ Interrogative forces (**jol** / **jom**), yes/no vs fill-ask, multi-gap **fill-a
 # Quotations, mentions, and asides
 
 **`xl-`** span fences (speech only; writing = `[…]` / `{…}` / `(…)` with **`~`** before open = paraphrase; quote **a** / aside **e** / mention **o** / close **u**; **-l** exact / **-m** paraphrase; no **-n**): **[quotations.md](quotations.md)**.
+
+# Values
+
+Ordinary **`/h/`** / **`/w/`** content defaults to **values** (needs): compound **`need x {a\|e\|o\|u}`** = stake (*satisfies* / *rather* / *instead* / *detracts*); endings on those compounds = changeability. **[values.md](values.md)**.
 
 # Phonology and Phonotactics
 
