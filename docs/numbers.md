@@ -1,22 +1,22 @@
 # Numbers
 
-Numerals are a **closed formal subsystem**, not ordinary lexicon roots. Quantifiers (*many*, *all*, *some*, …) are out of scope here. PoS prefixes are defined in [language-reference.md](language-reference.md); plural **-sh** in [plurality.md](plurality.md); general phonotactics live in [phonology.md](phonology.md); ordinary reference suffixes in [reference-suffix.md](reference-suffix.md). This page is the source of truth for numeral grammar, including [ranges](#ranges) (spans reuse [phrase fences](coordination.md), documented here) and [measure phrases](#measure-phrases) (unit + amount for differentials and durations).
+Numerals are a **closed formal subsystem**, not ordinary lexicon roots. Open quantifiers (*many*, *all*, *some*, …) stay lexicon; the numeral word itself can be [digitless](#zero-digit-groups) (unspecified magnitude of a marker identity, including plural **`>1`** on **`ra`**). PoS prefixes are defined in [language-reference.md](language-reference.md); plural **-sh** in [plurality.md](plurality.md); general phonotactics live in [phonology.md](phonology.md); ordinary reference suffixes in [reference-suffix.md](reference-suffix.md). This page is the source of truth for numeral grammar, including [ranges](#ranges) (spans reuse [phrase fences](coordination.md), documented here) and [measure phrases](#measure-phrases) (unit + amount for differentials and durations).
 
-A whole numeric value is **one word**, even when it contains several digit groups.
+A whole numeric value is **one word**, even when it contains several digit groups (or none).
 
 ## Word shape
 
 ```
-[PoS] + r + V + ( [exponent?] [mantissa digits?] )+ + [ending] + [sh?]
+[PoS] + r + V + ( [exponent?] [mantissa digits?] )* + [ending] + [sh?]
 ```
 
 1. **PoS** — same prefix inventory as elsewhere; [roles for number words](#parts-of-speech-on-numbers) below.
 2. **Number marker** — consonant **r** plus a vowel **V** (see [Marker vowel](#marker-vowel-referential-identity)). The PoS+`r` cluster is a [number-only phonotactic exception](phonology.md#phonotactics).
-3. **One or more digit groups** — each group is an optional exponent and optional mantissa digits (at least one of the two). Digits compound with **no** **x** separator. There is **no per-group polarity**; sign (when it applies) is once for the whole word — see [Sign](#sign).
+3. **Zero or more digit groups** — each group is an optional exponent and optional mantissa digits (at least one of the two **when the group is present**). Digits compound with **no** **x** separator. There is **no per-group polarity**; sign (when it applies) is once for the whole word — see [Sign](#sign). **No groups** = [unspecified magnitude](#zero-digit-groups) of that marker identity (or [digitless **-r** anaphora](#number-endings)).
 4. **Ending** — `-l` / `-m` / `-n` / `-r` with [number-specific meanings](#number-endings) (not ordinary [reference suffix](reference-suffix.md) senses).
 5. **Plural `-sh`** — optional; same sense as elsewhere (the group containing that numeric referent) — see [plurality.md](plurality.md).
 
-**Writing** uses a [preferred shorthand](#writing-preferred-shorthand) for the marker and body (`g+3l`, not *grarel*); speech is always the full CV form.
+**Writing** uses a [preferred shorthand](#writing-preferred-shorthand) for the marker and body (`g+3l`, not *grarel*; digitless `g+l`, not *gral*); speech is always the full CV form.
 
 **Lexicon rule:** Any stem that matches this grammar is a number, never an ordinary root. Dictionary generation must reject colliding roots.
 
@@ -49,10 +49,10 @@ Digit-strings (`ro`…) usually take the argument role the clause needs (often `
 
 | V | Writing | Referent | Examples |
 |---|---------|----------|----------|
-| **a** | `+` | Positive **scalar** (count or measure amount) | `g+3l` *three cats*; `z+3l` *three* (subj); `b+12l` *of size 12* |
-| **u** | `-` | Negative **scalar** | `d-3l` *−3* (obj); `g-2l` signed measure on a noun |
-| **e** | `#` | **Ordinal** / rank | `g#2l` *the second page*; `z#2l` *second* (rank as subject) |
-| **o** | `_` | **Digit-string** / label (phones, IDs, “read the digits”) | `d_555,123,4567l`; `g_12l` *room 12*-style; `b_…` under a host relation |
+| **a** | `+` | Positive **scalar** (count or measure amount) | `g+3l` *three cats*; `g+l` *plural / more than one*; `z+3l` *three* (subj); `b+12l` *of size 12* |
+| **u** | `-` | Negative **scalar** | `d-3l` *−3* (obj); `z-l` *some negative amount*; `g-2l` signed measure on a noun |
+| **e** | `#` | **Ordinal** / rank | `g#2l` *the second page*; `g#l` *some rank*; `z#2l` *second* (rank as subject) |
+| **o** | `_` | **Digit-string** / label (phones, IDs, “read the digits”) | `d_555,123,4567l`; `d_l` *some code*; `g_12l` *room 12*-style; `b_…` under a host relation |
 
 Do not combine conflicting identity types on one word (e.g. do not use `re` and `ro` for the same token). In [preferred writing](#writing-preferred-shorthand), the marker is **`+`** / **`-`** / **`#`** / **`_`** (not written `r`+V).
 
@@ -82,7 +82,7 @@ There is no separate “mathematical object” marker. To talk about a number as
 
 “Set to N” (bring a quantity to an absolute value) is not a number-verb sense — use an ordinary verb plus the number as argument or adverb. Multiply/divide likewise stay ordinary verbs plus the number as `/h/` (**`h+Nl`** / **`h-Nl`**). With [percentage points](#percent-and-percentage-points) (**`ju`**), **`ra`** / **`ru`** as verbs mean increase/decrease by that point amount (not a relative %-change factor).
 
-Endings still apply (**-m** ≈ *about* that amount/code/rank, **-r** resume, etc.).
+Endings still apply (**-m** ≈ *about* that amount/code/rank, **-r** resume — including [digitless](#zero-digit-groups) `v+r` / `v_r`, etc.).
 
 ### Number as adverb (by marker)
 
@@ -108,7 +108,7 @@ Contrasts:
 - `g#3l` — *the third* (modifies a noun)
 - `v+3l` — *add 3* (verb)
 
-Endings still apply (**-m** ≈ *about* that many times / that clock or date, **-r** resume, etc.). Relative %-change factors use **`h+…`** (e.g. ×1.5), not **`jo`** / **`ju`** alone — see [percent](#percent-and-percentage-points).
+Endings still apply (**-m** ≈ *about* that many times / that clock or date, **-r** resume — including digitless `h+r` / `h_r`). Relative %-change factors use **`h+…`** (e.g. ×1.5), not **`jo`** / **`ju`** alone — see [percent](#percent-and-percentage-points).
 
 ### Number as interjection (by marker)
 
@@ -134,7 +134,7 @@ Contrasts:
 - `h#1l` — *for the first time*
 - `v#1l` — *take / assign 1st* (verb)
 
-Endings still apply (**-m** fuzzy *about three more!* / *about three!*, **-n** conventional call name, **-r** resume a prior shout’s value).
+Endings still apply (**-m** fuzzy *about three more!* / *about three!*, **-n** conventional call name, **-r** resume a prior shout’s value — digitless `j+r` / `j_r` allowed).
 
 ### Number as discourse marker (by marker)
 
@@ -161,7 +161,7 @@ Contrasts:
 - `j+3l` — *Three more!* (quantity addition)
 - `j-3l` — *Three short!* / *Three fewer!* / *−3!* (deficit)
 
-Endings still apply (**-l** newly stated item, **-r** *as in (N) above* with same independence framing, **-n** titled / official item name, **-m** fuzzy *around item N*). Percent / percentage-point closers are not used with `/x/` numbers.
+Endings still apply (**-l** newly stated item, **-r** *as in (N) above* or digitless `x#r` / `x+r` / … for *as in that item above* with same independence framing, **-n** titled / official item name, **-m** fuzzy *around item N*). Percent / percentage-point closers are not used with `/x/` numbers.
 
 ## Number endings
 
@@ -173,6 +173,42 @@ Ordinary [reference suffix](reference-suffix.md) senses do **not** apply inside 
 | **-m** | Approximate / non-literal (“about N”) |
 | **-n** | Conventional / proper designation (titles, official labels, *the Second…*) |
 | **-r** | Anaphoric resume of a previously stated number, code, or rank |
+
+**-r** may be **digitless**: marker + **-r** alone resumes the prior value of that identity without restating digits (`g+r` = *that (scalar) amount again*; `d_r` = *that code again*; `g#r` = *that rank again*). Digits + **-r** still fine when you want to name which prior item (`x#2r` = *as in (2) above*). Marker must match the resumed identity (do not resume a scalar with `g#r`).
+
+On [digitless](#zero-digit-groups) words, **-l** / **-m** / **-n** keep the same discourse jobs relative to the unspecified magnitude (*exact plural count* / *about several* / *conventional “plural” or unlabeled-rank style*, etc.).
+
+## Zero digit groups
+<a id="zero-digit-groups"></a>
+<a id="digitless-numbers"></a>
+<a id="bare-marker"></a>
+
+A number word may omit every digit group: **PoS + marker + ending** only. The marker still fixes referential identity. With **-l** / **-m** / **-n**, the magnitude (or label/rank payload) is **unspecified** as in the table below. With **-r**, the word is [digitless anaphora](#number-endings) only — resume a prior value of that identity; it does **not** introduce a new unspecified magnitude.
+
+| Marker | Writing | Digitless sense | Partition / notes |
+|--------|---------|-----------------|-------------------|
+| **`ra`** | `…+l` (etc.) | Unspecified **positive scalar**, specialized to **plural count / amount `>1`** | Complements `…+0l` (zero), `…+1l` (one), `…+Nl` (exact N≥2). Not “any non-negative,” not “≥0.” |
+| **`ru`** | `…-l` | Unspecified **negative scalar** (*some negative amount*; deficit of unnamed size) | Exact negatives stay `…-Nl`. |
+| **`re`** | `…#l` | Unspecified **rank** (*some nth* / *some place*) | Exact ranks stay `…#Nl`. |
+| **`ro`** | `…_l` | Unspecified **digit-string / label** (*some code*; *a label*) | Exact labels stay `…_…l`. |
+
+**Vs noun plural `-sh`:** `-sh` marks that a **referent is a group** ([plurality.md](plurality.md)). Digitless **`ra`** marks that a **count/amount is `>1`** without naming N. Often co-occur in practice (`z-catlsh` vs `z-catl g+l`), but they are different jobs — quantity vs group-reference. Do **not** treat `g+l` as a replacement for `-sh` on verbs, adjectives, or circumstance.
+
+**Vs fence `-r`:** phrase **`zar`** / **`zor`** / … pick an unspecified **member of an inventory**. Digitless number **-r** resumes a **prior numeric value**. Digitless number **-l** (etc.) introduces an unspecified magnitude of that marker — not inventory membership.
+
+**Overlays** inherit the same emptiness (marker identity → role reading, payload unspecified):
+
+| Overlay | Digitless examples |
+|---------|-------------------|
+| `/ɡ/` `/z/` `/d/` `/b/` | `g+l` *plural / more than one* (on a noun); `z-l` *some negative amount* (subj); `b#l` *of some rank*; `d_l` *some code* (obj) |
+| `/v/` | `v+l` *add some plural amount* / *increase by more than one*; `v-l` *decrease by some amount*; `v#l` *take / assign some rank*; `v_l` *enter / dial some code* |
+| `/h/` | `h+l` *multiple times* / ×(unspecified `>1`); `h-l` *÷(unspecified)* / *into some number of parts*; `h#l` *for some nth time*; `h_l` *at some clock or date* (still bare-`hro` **time** only — not channel codes) |
+| `/j/` | `j+l` *More!* (unspecified plural addition); `j-l` *Short!* / *down by some amount!*; `j#l` *Nth!* (place cheer, rank unnamed); `j_l` *…!* (unspecified score / code call) |
+| `/x/` | `x#l` *some point:* (neutral, number unnamed); `x+l` / `x-l` corroborating / independent item of unnamed index; `x_l` *regarding some (unnamed) label* |
+
+**`h_l` vs `har`:** digitless time `h_l` is still a **number word** (unspecified clock/date reading under bare `hro`). Circumstance **`har`** (*sometime*) is the [restrictor](coordination.md#circumstance-restriction-h-w), not a numeral — do not swap them.
+
+**Illegal with zero groups:** percent / percentage-point closers (**`jo`** / **`ju`**) still need a mantissa group — bare `…+%l` is not a shortcut for “some percent.” Exponent-only groups (`e9`) are **not** zero-group forms; they are ordinary one-group bare OoM.
 
 ## Digits
 
@@ -261,7 +297,7 @@ The **whole** / reference class is **not** inside the number word. Prefer clause
 
 ## Digit-strings
 
-Use marker **`ro`** (written **`_`**). Omit exponents. Prefer groups of three digits. Ending is usually **-l** (exact label); **-n** for an official designation; **-r** to resume a prior code. Bare `/h/` + **`ro`** is **[temporal circumstance only](#time)** (`h_15,30l`, `h_2026,07,22l`) — not a generic code adverb. Non-time labels as circumstance use a host relation + `/b/` (e.g. `/h/` *on* + `b_7l` *channel 7*), or modify a noun with `/ɡ/`. Digit-strings are unsigned — see [Sign](#sign). Clock and calendar field orders are under [Time](#time).
+Use marker **`ro`** (written **`_`**). Omit exponents. Prefer groups of three digits when digits are present. Ending is usually **-l** (exact label); **-n** for an official designation; **-r** to resume a prior code (**digitless** `d_r` / `g_r` allowed). [Digitless](#zero-digit-groups) `…_l` = unspecified label / some code. Bare `/h/` + **`ro`** is **[temporal circumstance only](#time)** (`h_15,30l`, `h_2026,07,22l`, digitless `h_l`) — not a generic code adverb. Non-time labels as circumstance use a host relation + `/b/` (e.g. `/h/` *on* + `b_7l` *channel 7*), or modify a noun with `/ɡ/`. Digit-strings are unsigned — see [Sign](#sign). Clock and calendar field orders are under [Time](#time).
 
 ## Time
 
@@ -271,15 +307,15 @@ Time uses the existing number grammar; there is **no** fifth marker vowel and **
 
 | Job | How |
 |-----|-----|
-| **Clock / schedule** | Digit-string **`ro`** as bare `/h/`. Default **24h**. Fields left→right, commas orthographic only: hour, minute, optional seconds — `h_15,30l`, `h_15,30,00l`. |
-| **Calendar date** | Digit-string **`ro`**, ISO-ish fields: year, month, day — bare `h_2026,07,22l`, or modifier `g_2026,07,22l`. An explicit *date* host + `/b/` is optional when you want to name the relation; it is not required to license bare `hro` (bare `hro` already means time). |
+| **Clock / schedule** | Digit-string **`ro`** as bare `/h/`. Default **24h**. Fields left→right, commas orthographic only: hour, minute, optional seconds — `h_15,30l`, `h_15,30,00l`. Digitless `h_l` = *at some (unspecified) clock time*. |
+| **Calendar date** | Digit-string **`ro`**, ISO-ish fields: year, month, day — bare `h_2026,07,22l`, or modifier `g_2026,07,22l`. Digitless `h_l` likewise covers an unspecified date reading when context is calendric. An explicit *date* host + `/b/` is optional when you want to name the relation; it is not required to license bare `hro` (bare `hro` already means time). |
 | **Duration** | Scalar **`ra`** / **`ru`** plus a lexicon **unit** in a [measure phrase](#measure-phrases) (*hour*, *day*, …) — not a digit-string, not bare `hro`. Same engineering-exponent habits as other measures when useful. |
 | **Deixis / tense** | Ordinary lexicon `/h/` (*yesterday*, *ago*, *until*, mood/evidential). Numbers appear only for a numeric payload (*3 days ago* = relation + scalar + unit). |
 | **Non-time digit labels** | Host relation + `/b/` (`/h/` *on* + `b_101.1l`), or `/ɡ/` on a noun (*channel* `g_7l`) — **not** bare `h_…`. |
 
 **Not bare `hro`:** `h+3l` (×3 / *three times*); `h#3l` (*for the third time*); non-time codes as above. Do not use a scalar for a clock face (`*g+1530l*` for 15:30). Timezone, era, and calendar system stay lexicon adjuncts, not inside the number word.
 
-Endings: **-l** exact reading; **-m** fuzzy (*around 15:30*); **-n** conventional schedule/date name; **-r** resume a prior clock or date label.
+Endings: **-l** exact reading; **-m** fuzzy (*around 15:30*); **-n** conventional schedule/date name; **-r** resume a prior clock or date label (digitless `h_r` = *that time/date again*). Digitless `h_l` ≠ circumstance **`har`** (*sometime*) — see [zero digit groups](#zero-digit-groups).
 
 ## Writing (preferred shorthand)
 
@@ -298,12 +334,13 @@ Speech always uses the full CV grammar above. **Writing prefers shorthand** for 
 | **`#`** | `re` | Ordinal |
 | **`_`** | `ro` | Digit-string |
 
-Place the identity symbol **immediately after PoS, before the digits**: `g+3l`, `d_555,123,4567l`, `g#2n`. After **`#`** or **`_`**, do **not** write a following **`-`** (no signed labels/ordinals) — see [Sign](#sign).
+Place the identity symbol **immediately after PoS, before the body** (or before the ending when the body is empty): `g+3l`, `g+l`, `d_555,123,4567l`, `d_r`, `g#2n`. After **`#`** or **`_`**, do **not** write a following **`-`** (no signed labels/ordinals) — see [Sign](#sign).
 
 ### Body
 
 | Speech | Preferred writing |
 |--------|-------------------|
+| *(no digit groups)* | *(empty — marker then ending)* `g+l`, `g-m`, `g#r`, `h_l` |
 | Digit syllables (`wo`…`zo`) | Arabic **`0`–`9`** |
 | `ba` / `bu` (+ `ja` when a mantissa follows) | **`e`** / **`e-`** (engineering or scientific form) |
 | `je` | **`.`** |
@@ -312,7 +349,7 @@ Place the identity symbol **immediately after PoS, before the digits**: `g+3l`, 
 
 Do **not** write out **`ja`**, **`je`**, **`jo`**, or **`ju`** in shorthand — use `e` / `.` / `%` / `%*` instead.
 
-**Commas** separate digit groups for readability (preferred for multi-group values). Commas are orthographic only; they are not spoken and do not change the word.
+**Commas** separate digit groups for readability (preferred for multi-group values). Commas are orthographic only; they are not spoken and do not change the word. Digitless forms have no commas.
 
 Full phonetic spelling of a number word (e.g. *grarel*) is fine as a pronunciation gloss, not preferred in running text.
 
@@ -324,6 +361,16 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 
 | Value | Preferred writing | Speech sketch |
 |-------|-------------------|---------------|
+| plural / more than one | `g+l` | *gral* (`g` + `ra` + `l` — [digitless](#zero-digit-groups)) |
+| about several (`>1`) | `g+m` | *gram* |
+| some negative amount | `z-l` | *zrul* |
+| some rank | `g#l` | *grel* |
+| some code (object) | `d_l` | *drol* |
+| that (prior) scalar again | `g+r` | *grar* (digitless **-r**) |
+| that (prior) code again | `d_r` | *dror* |
+| multiple times | `h+l` | *hral* |
+| at some clock/date | `h_l` | *hrol* — still bare `hro` = time; ≠ `har` |
+| More! | `j+l` | *jral* |
 | 3 | `g+3l` | *grarel* (`g` + `ra` + re + `l`) |
 | −3 | `g-3l` | *grurel* (`g` + `ru` + re + `l`) |
 | 3 (as subject) | `z+3l` | *zrarel* |
@@ -482,6 +529,7 @@ Examples: `z-agel gal g+3l g+5l` → *ages 3–5*; `zal z+3l ul z+5l` → *[3, 5
 
 ## Stress (pronunciation guide)
 
+- Digitless numbers (marker + ending only): stress the **marker** syllable (`ra` / `ru` / `re` / `ro`).
 - Single-digit magnitude groups: stress the digit syllable.
 - Multi-digit groups without exponent: stress the **leftmost** digit.
 - Groups with an exponent: stress the **leftmost exponent digit**.

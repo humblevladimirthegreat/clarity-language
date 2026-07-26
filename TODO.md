@@ -1,4 +1,4 @@
--redo plurality (consider defining "unspecified number > 1")
+-redo plurality (digitless `g+l` = unspecified count `>1` is in [numbers.md](docs/numbers.md#zero-digit-groups); still revisit how **-sh** and quantity interact)
 -local llm systematically review entire lexicon
 -speed reading display
 

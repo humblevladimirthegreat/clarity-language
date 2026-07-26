@@ -177,6 +177,8 @@ Aligns with number words: optional plural on a numeric referent uses the same **
 
 [Number words](numbers.md) use the same optional **-sh** after their number-specific ending. Sense: the group containing that numeric referent (or plural of that numeric kind), consistent with this page.
 
+**Quantity vs group-reference:** digitless positive scalar **`g+l`** (etc.) means count/amount **`>1`** without naming N — see [zero digit groups](numbers.md#zero-digit-groups). That is **not** a substitute for **-sh** on nouns, verbs, or other PoS; **-sh** stays group-containing / plural-of-kind as above.
+
 ## Generics and *every K* (not **-sh**)
 
 Characterizing generics and universal-of-kind claims use [coordination](coordination.md#universals-domains-generics), not this plural suffix:
