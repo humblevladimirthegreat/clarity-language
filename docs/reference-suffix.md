@@ -96,7 +96,7 @@ In [number words](numbers.md), the same four letters (**-l**, **-m**, **-n**, **
 
 ## Value-compound exception
 
-On [value](values.md) compounds under `/h/` or `/w/` with an **`x`+a/e/o/u** stake half (`…xal`, `…xum`, …), the same four letters mean **changeability** (temporary / modifiable / irreversible / won't-now) instead of ordinary reference-suffix senses. Bare need words (no `x`-addition) keep ordinary **-l / -m / -n / -r** for now. Details: [values.md](values.md#value-changeability).
+On [value](values.md) compounds under `/h/` or `/w/` with an **`x`+a/e/o/u** stake half, the same four letters are specialized: on **`xa` / `xe` / `xo`** they mean **contact channel** (physical / mental / social / spiritual); on **`xu`** they mean **changeability** (temporary / modifiable / irreversible / won't-now). Bare need words (no `x`-addition) keep ordinary **-l / -m / -n / -r** for now. Details: [values.md](values.md).
 
 ## Join exception
 
