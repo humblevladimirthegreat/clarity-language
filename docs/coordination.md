@@ -4,13 +4,13 @@ This page is the source of truth for **phrase-level** (same-slot fence: left pre
 
 PoS prefixes and ordinary word shape: [language-reference.md](language-reference.md). Reference suffixes: [reference-suffix.md](reference-suffix.md). Phonotactics for reserved coordinator roots: [phonology.md](phonology.md#phonotactics).
 
-**List shapes:** **Phrase-level**, **VP-level**, and **clause-level** all use a **fence**: prefixed coordinator plus optional shared modifiers **immediately after** that coordinator; conjuncts juxtaposed (no mid-chain continue particle). **-r** on **a** / **o** / **e** / **u** is the [unspecified-member](#unspecified-member-r-phrase) series at every level (*something* / *anything* / *whatever-by-rank* / *something unusual* — VP: *do something* / …; clause: *something happened* / …). Leading **u** on **o** / **ao** / **e** / **ae** / **oe** = [empty-allowed](#empty-allowed-u-prefix) (*or none*). **Left fence** (coordinator before the conjuncts) is preferred; **right close** (coordinator after the conjuncts) is allowed for style or comedy. **Nesting** uses extra fences: left stack = right-associative, right stack = left-associative; **pure infix is illegal** — see [fence nesting](#fence-nesting).
+**List shapes:** **Phrase-level**, **VP-level**, and **clause-level** all use a **fence**: prefixed coordinator plus optional shared modifiers **immediately after** that coordinator; conjuncts juxtaposed (no mid-chain continue particle). **-r** on **a** / **o** / **e** / **u** is the [unspecified-member](#unspecified-member-r-phrase) series at every level (*something* / *anything* / *whatever-by-rank* / *something unusual* — VP: *do something* / …; clause: *something happened* / …). Leading **u** on **a** / **o** / **e** = [invert](#invert-u-stacks) (*everything but* / *anything but* / **rank reversal**). **Left fence** (coordinator before the conjuncts) is preferred; **right close** (coordinator after the conjuncts) is allowed for style or comedy. **Nesting** uses extra fences: left stack = right-associative, right stack = left-associative; **pure infix is illegal** — see [fence nesting](#fence-nesting).
 
 Prefixed forms are **joiners** (boolean lists plus directional **ranked conjunction**), not only symmetric conjunctions. Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** are a separate **revision** series — see [below](#in-clause-revision-bare-a--e--o--u).
 
 ## Join type × ending (shared)
 
-**Vowel(s)** choose join type. All coordinators take an ending (no bare vowel) and a **PoS prefix** matching the slot. For every join vowel (**a** / **o** / **u** / **ao** / **e** / **ae** / **oe** / **uo** / **uao** / **ue** / **uae** / **uoe**), **-l** / **-m** mark **closure**. Phrase-level **-n** marks a **named / conventional** list. **VP-level** and **clause-level** **-n** mark **soft packaging** (not named) — see [soft **-n**](#soft-n-vp-clause). **-r** on **a** / **o** / **e** / **u** marks an [unspecified member](#unspecified-member-r-phrase) at **every** level (*something* / *anything* / *whatever-by-rank* / *something unusual*).
+**Vowel(s)** choose join type. All coordinators take an ending (no bare vowel) and a **PoS prefix** matching the slot. For every join vowel (**a** / **o** / **u** / **ao** / **e** / **ae** / **oe** / **ua** / **uo** / **ue**), **-l** / **-m** mark **closure**. Phrase-level **-n** marks a **named / conventional** list. **VP-level** and **clause-level** **-n** mark **soft packaging** (not named) — see [soft **-n**](#soft-n-vp-clause). **-r** on **a** / **o** / **e** / **u** marks an [unspecified member](#unspecified-member-r-phrase) at **every** level (*something* / *anything* / *whatever-by-rank* / *something unusual*).
 
 ### Join type (vowel series)
 
@@ -23,16 +23,15 @@ Prefixed forms are **joiners** (boolean lists plus directional **ranked conjunct
 | **e** / `e` | **ranked conjunction** — earlier outranks later (*A ≻ B ≻ C*); **directional**; exclusivity of satisfaction **not** claimed |
 | **a** + **e** / `ae` | **co-satisfiable ranked** — ranked; **one or more** may hold (*prefer A most, then B, …*) |
 | **o** + **e** / `oe` | **exclusive ranked** — ranked; pick / try **one** (*A else B else C*) |
-| **u** + **o** / `uo` | **empty-allowed exclusive** — pick **at most one** (*A or B or none*) |
-| **u** + **ao** / `uao` | **empty-allowed inclusive** — **zero or more** of the listed (*any subset, including none*) |
-| **u** + **e** / `ue` | **empty-allowed ranked** — ranked; *or none*; exclusivity **not** claimed |
-| **u** + **ae** / `uae` | **empty-allowed co-satisfiable ranked** — ranked wishlist with *or none* |
-| **u** + **oe** / `uoe` | **empty-allowed exclusive ranked** — *A else B or none* |
+| **u** + **a** / `ua` | ***everything but*** — all of the domain **except** the listed (invert of **a**) |
+| **u** + **o** / `uo` | ***anything but*** — free choice **outside** the listed (invert of **o**) |
+| **u** + **e** / `ue` | **rank reversal** — later outranks earlier (*A ≺ B ≺ C*; increasing preference); exclusivity **not** claimed (invert of **e**) |
 
+<a id="invert-u-stacks"></a>
 <a id="empty-allowed-u-prefix"></a>
 <a id="join-type-vowel-series"></a>
 
-**Empty-allowed (`u`-prefix):** leading **u** on **o** / **ao** / **e** / **ae** / **oe** adds the **empty set as a legal outcome** — English gloss ***or none***. This is **not** bare **u** (*none of* = claim that none of the listed hold). **-m** still only marks non-exhaustive listing (other unnamed conjuncts may exist) — it does **not** by itself allow *or none*. No **u** on bare **a** or bare **u**. No **-r** on any **u**-prefix stack (same rule as **ao** / **ae** / **oe**). There is still **no** **aoe**; **uao** / **uae** / **uoe** are **u** + an existing stack, not a three-way exclusivity mix.
+**Invert (`u`-stacks):** leading **u** on **a** / **o** / **e** flips the base join — complement of inventory (**ua**), complement of menu (**uo**), or reverse of rank order (**ue**). This is **not** bare **u** (*none of* = claim that none of the listed hold). Domain for **ua** / **uo** comes from context or SHARED (e.g. `zual g-drinkl z-teal z-coffeel` → *every drink but tea and coffee*). **-m** still only marks non-exhaustive listing (other unnamed conjuncts may exist) — it does **not** by itself allow *or none* (optionality / empty-allowed is deferred). No **u** on bare **u**, and no **u** on stacked **ao** / **ae** / **oe** (no three-vowel **uao** / **uae** / **uoe** / **aoe**). No **-r** on any stacked form (**ao** / **ae** / **oe** / **ua** / **uo** / **ue**). Rank reversal is **ue** only — not an `/h/` adverb.
 
 ### Closure ending (all join vowels)
 
@@ -56,7 +55,7 @@ When unsure whether the list is complete, prefer **-m** (open). Use **-l** when 
 <a id="unspecified-member-r-phrase-a--o"></a>
 <a id="something-anything-r"></a>
 
-Prefixed **-r** on **a** / **o** / **e** / **u** marks an **unspecified member of a domain** — not content-word anaphor **-r**, and not stackable with **-l** / **-m** / **-n**. Same series on **phrase** (`/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/`), **VP** (`/v/`), and **clause** (`/x/`). Other join vowels (**ao** / **ae** / **oe** / **uo** / **uao** / **ue** / **uae** / **uoe**) take **no** **-r**.
+Prefixed **-r** on **a** / **o** / **e** / **u** marks an **unspecified member of a domain** — not content-word anaphor **-r**, and not stackable with **-l** / **-m** / **-n**. Same series on **phrase** (`/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/`), **VP** (`/v/`), and **clause** (`/x/`). Other join vowels (**ao** / **ae** / **oe** / **ua** / **uo** / **ue**) take **no** **-r**.
 
 | Vowel | Form | Series | Domain reading |
 |-------|------|--------|----------------|
@@ -93,28 +92,26 @@ Mnemonic: **-r** = member not named; vowel = frame (**a** = inventory existence;
 
 **-r** is a **whole-fence** coordinator (`zar` / `var` / `xar` alone, or with conjuncts), same placement rules as `zam` / `vam` / `xam`. Do not write `zam A zar B` or `vam A var B` as a mid-chain extender.
 
-### Ranked conjunction (**e** / **ae** / **oe** / **ue** / **uae** / **uoe**)
+### Ranked conjunction (**e** / **ae** / **oe** / **ue**)
 <a id="ranked-conjunction-e"></a>
 <a id="priority-ranking-e"></a>
 
-**Ranked joins are directional**: order matters; **earlier conjuncts outrank later ones** (*A ≻ B ≻ C*). Built like **ao**: stack **a** or **o** onto **e** when exclusivity of satisfaction matters. There is **no** three-vowel **aoe** — co-satisfiable ranked is **ae**. Leading **u** adds [empty-allowed](#join-type-vowel-series) *or none* on the same exclusivity tiers (**ue** / **uae** / **uoe**).
+**Ranked joins are directional**: order matters. Bare **e** / **ae** / **oe**: **earlier conjuncts outrank later ones** (*A ≻ B ≻ C*). **ue** is [rank reversal](#invert-u-stacks): **later outranks earlier** (*A ≺ B ≺ C*; increasing preference left-to-right). Built like **ao**: stack **a** or **o** onto **e** when exclusivity of satisfaction matters. There is **no** three-vowel **aoe** / **uae** / **uoe** — co-satisfiable ranked is **ae**; exclusive ranked is **oe**; reverse order is **ue** only (exclusivity unmarked; for reverse + exclusivity, nest or use `/h/` elsewhere — not a vowel stack).
 
-| Vowel | Exclusivity | Empty | Typical use |
-|-------|-------------|-------|-------------|
-| **e** | **not claimed** — ranking only | no | descriptive / podium order; when exclusivity is irrelevant or left open |
-| **ae** | **co-satisfiable** — one **or** more may hold | no | ranked wishlist; identity / value ranking (*Christian ≻ Conservative ≻ Republican*) |
-| **oe** | **exclusive** — pick / try **one** | no | menu fallback (*burger else chicken*); contingency (*fix else workaround*); triage |
-| **ue** | **not claimed** | **yes** | ranked preferences with *or none* OK |
-| **uae** | **co-satisfiable** | **yes** | wishlist where taking nothing is fine |
-| **uoe** | **exclusive** | **yes** | *A else B or none*; optional triage |
+| Vowel | Exclusivity | Direction | Typical use |
+|-------|-------------|-----------|-------------|
+| **e** | **not claimed** — ranking only | earlier ≻ later | descriptive / podium order; when exclusivity is irrelevant or left open |
+| **ae** | **co-satisfiable** — one **or** more may hold | earlier ≻ later | ranked wishlist; identity / value ranking (*Christian ≻ Conservative ≻ Republican*) |
+| **oe** | **exclusive** — pick / try **one** | earlier ≻ later | menu fallback (*burger else chicken*); contingency (*fix else workaround*); triage |
+| **ue** | **not claimed** | later ≻ earlier | ascending preference / build-up lists (*A ≺ B ≺ C*) |
 
-English glosses still vary by frame — *prefer A over B*, or *A, else B* — but that **preference vs contingency** contrast is read from context (or marked elsewhere with `/h/`), **not** by a different ending. **ae** vs **oe** (and **uae** vs **uoe**) only mark whether several conjuncts may be realized along the ladder; **u**-prefix marks whether *or none* is a legal outcome.
+English glosses still vary by frame — *prefer A over B*, or *A, else B* — but that **preference vs contingency** contrast is read from context (or marked elsewhere with `/h/`), **not** by a different ending. **ae** vs **oe** only mark whether several conjuncts may be realized along the ladder; **ue** flips spoken order vs preference (not empty-allowed).
 
-**-l** / **-m** / **-n** on **e** / **ae** / **oe** / **ue** / **uae** / **uoe** are the same closure / named (phrase) or soft (VP/clause) senses as on **a** / **o** / **u** / **ao** / **uo** / **uao**. Fence chains keep left-to-right ranking of spoken conjunct order (`vel A B C` → *A ≻ B ≻ C*, closed; same with `vael`… / `voel`… / `vuel`… / `xel`…).
+**-l** / **-m** / **-n** on **e** / **ae** / **oe** / **ue** are the same closure / named (phrase) or soft (VP/clause) senses as on **a** / **o** / **u** / **ao** / **ua** / **uo**. Fence chains keep ranking from **spoken conjunct order** (`vel A B C` → *A ≻ B ≻ C*, closed; `vuel A B C` → *A ≺ B ≺ C* i.e. *C ≻ B ≻ A*; same with `vael`… / `voel`… / `xel`…).
 
 | Ending | Form | Reading |
 |--------|------|---------|
-| **-l** | phrase: `zel` / `zael` / `zoel` / `zuel` / `zuael` / `zuoel` (and `/d/` `/b/` `/ɡ/` `/w/` `/h/`); VP/clause: `vel` / `vael` / `voel` / `vuel` / `vuael` / `vuoel` / `xel` / … | Closed ranked — these ranks only: `zel A B` → *A ≻ B* (exhaustive); `zoel A B C` → *A ≻ B ≻ C* (exclusive, exhaustive); `zuoel A B` → *A else B or none* |
+| **-l** | phrase: `zel` / `zael` / `zoel` / `zuel` (and `/d/` `/b/` `/ɡ/` `/w/` `/h/`); VP/clause: `vel` / `vael` / `voel` / `vuel` / `xel` / … | Closed ranked — these ranks only: `zel A B` → *A ≻ B* (exhaustive); `zoel A B C` → *A ≻ B ≻ C* (exclusive, exhaustive); `zuel A B` → *A ≺ B* (exhaustive reverse) |
 | **-m** | phrase: `zem` / `zaem` / `zoem` / `zuem` / …; VP/clause: `vem` / `vaem` / `voem` / `vuem` / … | Open ranked — ranking among these; others may exist |
 | **-n** | phrase: `zen` / `zaen` / `zoen` / `zuen` / …; VP/clause: `ven` / `vaen` / `voen` / `vuen` / … (soft) | Phrase: named/conventional order; VP/clause soft: tentative / reconstructed ranking — see [soft **-n**](#soft-n-vp-clause) |
 
@@ -125,7 +122,7 @@ English glosses still vary by frame — *prefer A over B*, or *A, else B* — bu
 
 A **one-conjunct** (**unary**) or **zero-conjunct** (**nullary**) fence is allowed on phrase-level slots (`/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/`) for the forms below, and on **VP** / **clause** for **…ar** / **…or** / **…er** / **…ur** only (`var` / `vor` / `ver` / `vur` / `xar` / …). The coordinator alone (nullary), or the coordinator plus one conjunct (unary), fills the slot — optionally with **SHARED** after the coordinator. All other VP/clause coordinators (**-l** / **-m** / soft **-n**), and phrase coordinators outside the unary/nullary set, stay **two or more** conjuncts.
 
-**Arity pattern:** length 2+ = ordinary list (or, for **…ar** / **…or** / **…er** / **…ur**, unspecified member among the listed); length 1 = focus / exhaustivity on that singleton (or the matching unspecified-member unary for **-r** forms); length 0 = emptiness in that join frame — except **…ar** / **…or** / **…er** / **…ur**, which are positive unspecified-member readings (*something* / *anything* / *whatever-by-rank* / *something unusual*), not emptiness. On other nullary forms, **-l** = empty **and claimed complete** for the frame; **-m** = empty **from the speaker’s list** (often epistemic) with residual existence or residual options outside what’s named; **-n** = named/conventional empty label.
+**Arity pattern:** length 2+ = ordinary list (or, for **…ar** / **…or** / **…er** / **…ur**, unspecified member among the listed); length 1 = focus / exhaustivity on that singleton (or the matching unspecified-member unary for **-r** forms); length 0 = emptiness in that join frame — except **…ar** / **…or** / **…er** / **…ur** (*something* / *anything* / *whatever-by-rank* / *something unusual*) and nullary **…ual** / **…uol** (*everything* / *anything (goes)*), which are positive readings, not emptiness. On other nullary forms, **-l** = empty **and claimed complete** for the frame; **-m** = empty **from the speaker’s list** (often epistemic) with residual existence or residual options outside what’s named; **-n** = named/conventional empty label.
 
 **Under [polar question](language-reference.md#utterance-markers-j) force** (phrase-level for entity/property slots; VP/clause for action/claim slots):
 
@@ -136,7 +133,7 @@ A **one-conjunct** (**unary**) or **zero-conjunct** (**nullary**) fence is allow
 - Nullary **-n** — confirm the conventional empty label (*Null?*, *Draw?*).
 - Nullary / unary / multi **…ar** / **…or** / **…er** / **…ur** — **content questions** (ask to name the unspecified member): unbound *who* / *what* / *where*, *what did they do?*, *what happened?*, *any X?*, *which of these?*, *what’s the priority?*, *what’s unusual?* — see [unspecified-member **-r**](#unspecified-member-r-phrase). Answer ending free (need not keep **-r**).
 
-Unbound *who* / *what* / *where* = nullary **…ar** / **…or** / **…er** / **…ur** in the queried slot. **Length 2+** (no separate table): **-l** = pick from this closed menu (esp. **o** / **oe**); empty-allowed **-l** (**uo** / **uoe** / …) = pick from this closed menu **or none**; **-m** = pick, or name something else (still not “none” unless the join vowel is empty-allowed); **…ar** / **…or** / **…er** / **…ur** = content Q among the listed (*which of these?* / *any of these?* / *whichever ranks highest?* / *which of these is unusual?*).
+Unbound *who* / *what* / *where* = nullary **…ar** / **…or** / **…er** / **…ur** in the queried slot. **Length 2+** (no separate table): **-l** = pick from this closed menu (esp. **o** / **oe**); **-m** = pick, or name something else (still not “none” — optionality deferred); **ua** / **uo** = complement of the listed (*everything but* / *anything but* these); **ue** = reverse-rank among the listed; **…ar** / **…or** / **…er** / **…ur** = content Q among the listed (*which of these?* / *any of these?* / *whichever ranks highest?* / *which of these is unusual?*).
 
 **Ranked — unary**
 
@@ -146,12 +143,8 @@ Unbound *who* / *what* / *where* = nullary **…ar** / **…or** / **…er** / *
 | **…el** (`zel` / `del` / …) | *only X matters* / *X, period* | Closed twin of **…em** — nothing else ranks for this claim | *Is X the only priority?* |
 | **…oem** (`zoem` / `doem` / …) | *start with X* / *try X first* | Contingency / menu primary — not value ranking | *Try X first?* / *Start with X?* (offer) |
 | **…oel** (`zoel` / `doel` / …) | *only try X* / *X with no listed fallback* | Closed twin of **…oem** — exclusive triage, no listed fallback (singleton already implies empty if X fails) | *Only try X?* |
-| **…uem** (`zuem` / `duem` / …) | *prefer X, or none* | Open empty-allowed ranked — X preferred; nothing else listed; *or none* OK | *Prefer X (or none)?* (offer) |
-| **…uel** (`zuel` / `duel` / …) | *X if anything* / *X, or none* | Closed empty-allowed ranked — *or none* explicit | *X if anything?* |
-| **…uaem** (`zuaem` / …) | *X welcome (among possible fits), or none* | Open co-sat. ranked + empty | *X OK, or none?* (offer) |
-| **…uael** (`zuael` / …) | *X is enough of a fit, or none* | Closed co-sat. ranked + empty | *X or none (multi-fit frame)?* |
-| **…uoem** (`zuoem` / …) | *try X first, or none* | Open exclusive ranked + empty | *Try X first (or none)?* (offer) |
-| **…uoel** (`zuoel` / …) | *X else none* | Closed exclusive ranked + empty — explicit optional triage on one item | *X else none?* |
+| **…uem** (`zuem` / `duem` / …) | *X last* / *mainly leave X for last* | Open reverse-ranked — X is low on the ladder; other ranks may exist | *X last?* / *Leave X for last?* (offer) |
+| **…uel** (`zuel` / `duel` / …) | *X last, period* / *only X as least* | Closed reverse-ranked — X is the sole bottom / ascending singleton | *X last only?* |
 | **…en** (`zen` / `den` / …) | *X first* (stock) / *X, as usual* | Named / formulaic top item (*safety first* as a stock frame) | *X first, as usual?* |
 | **…er** (`zer` / `der` / …) | *preferably some X* | Unspecified preferred member of kind X — not a closed “only X” (**…el**) | *Which X is first?* (content Q) |
 
@@ -163,9 +156,8 @@ Unbound *who* / *what* / *where* = nullary **…ar** / **…or** / **…er** / *
 | **…em** (`zem` / `dem` / …) | *I don’t have a ranking* / *beats me what’s most important* | Open — same humility pattern as nullary **…am** | *No ranking?* / *Don’t have a priority?* |
 | **…oem** (`zoem` / `doem` / …) | *not sure where to start* | Empty exclusive triage, open | *Not sure where to start?* |
 | **…oel** (`zoel` / `doel` / …) | *do nothing* / *don’t bother* | Closed empty exclusive triage — no attempt, and that’s the full story | *Do nothing?* / *Skip it?* |
-| **…uem** (`zuem` / …) | *no ranking; or none is fine* | Open empty-allowed ranked | *No ranking (or none)?* |
-| **…uel** (`zuel` / …) | *nothing preferred — or none* | Closed empty-allowed ranked | *Or none?* / *No pick on the ladder?* |
-| **…uaem** / **…uael** / **…uoem** / **…uoel** | same emptiness family as **…em** / **…el** / **…oem** / **…oel**, with empty-allowed frame made explicit | Parallel to non-**u** nullary; often near-synonymous at length 0 | same question pattern |
+| **…uem** (`zuem` / …) | *no ascending ranking from me* | Open empty reverse ladder | *No ascending ranking?* |
+| **…uel** (`zuel` / …) | *don’t care (ascending frame)* | Closed empty reverse ladder — near-synonym of **…el** at length 0 | *No preference (ascending)?* |
 | **…en** (`zen` / `den` / …) | *it’s a draw* / *tie* | Named / conventional empty ranking outcome — no ordered winner | *Draw?* / *Tie?* |
 | **…er** (`zer` / `der` / …) | *whatever’s most important* / *whatever comes first* | Positive twin of **…el** / **…em** — unnamed top priority | *What’s the priority?* / *What matters most?* (content Q) |
 
@@ -177,12 +169,12 @@ Unbound *who* / *what* / *where* = nullary **…ar** / **…or** / **…er** / *
 | **…am** (`zam` / `dam` / `bam` / `gam` / `wam` / `ham`) | *X, for one* / *X, say* | Open *and* of one — same open bit as multi-item **am** | *How about X?* / *Want X?* (offer) |
 | **…ol** (`zol` / `dol` / …) | *has to be X* / *X only* | Closed xor of one — forced exclusive pick, not inventory (**…al**) or priority (**…el**) | *Has to be X?* |
 | **…om** (`zom` / `dom` / …) | *say, X* / *X maybe* | Open xor of one — pick-one frame; X is a candidate; other exclusives may exist | *How about X?* / *X, or something else?* (offer) |
-| **…uol** (`zuol` / `duol` / …) | *X or none* / *optional X* | Closed empty-allowed xor — at most one of {X} | *X or none?* / *Optional X?* |
-| **…uom** (`zuom` / `duom` / …) | *X maybe, or none* | Open empty-allowed xor — X is a candidate; *or none* or other options may exist | *X, or none / something else?* (offer) |
+| **…ual** (`zual` / `dual` / …) | *everything but X* | Closed complement of one — all of the domain except X | *Everything but X?* |
+| **…uam** (`zuam` / `duam` / …) | *everything but X (among exclusions)* | Open complement — X excluded; other exclusions may exist | *Everything but X (at least)?* (offer) |
+| **…uol** (`zuol` / `duol` / …) | *anything but X* | Closed free choice outside {X} | *Anything but X?* |
+| **…uom** (`zuom` / `duom` / …) | *anything but X (open)* | Open free choice outside {X}; other exclusions may exist | *Anything but X?* (offer) |
 | **…aol** (`zaol` / `daol` / …) | *X is enough* / *X’ll do* | Closed *and/or* of one — inclusive frame, stricter than **…aom** | *Is X enough?* |
 | **…aom** (`zaom` / `daom` / …) | *at least X* / *X would work* | Inclusive singleton — X is a sufficient hit; others may count | *Would X do?* / *At least X?* (offer) |
-| **…uaol** (`zuaol` / …) | *X is enough, or none* | Closed zero-or-more of one — X optional as a sufficient set | *X enough, or none?* |
-| **…uaom** (`zuaom` / …) | *X would work, or none* | Open zero-or-more of one | *X OK, or none?* (offer) |
 | **…ar** (`zar` / `dar` / …) | *some (unknown) X* / *an unspecified X* | Existential unspecified of kind X — not ordinary `-l` first mention | *What/which (unknown) X?* (content Q) |
 | **…or** (`zor` / `dor` / …) | *any X* | Free-choice of kind X — menu twin of **…ol** / **…om** | *Any X?* / *Which X (any is fine)?* (content Q) |
 | **…ur** (`zur` / `dur` / …) | *something unusual about X* / *X is unusual (unspecified how)* | Existential unusual member about kind X — not revision *except* (**ul** / **um**) | *What’s unusual about X?* (content Q) |
@@ -196,11 +188,12 @@ Unbound *who* / *what* / *where* = nullary **…ar** / **…or** / **…er** / *
 | **…an** (`zan` / `dan` / …) | *null* / *void* | Named / conventional empty value (*null*, void marker) | *Null?* / *Void?* |
 | **…ol** (`zol` / `dol` / …) | *no options* / *we’re stuck* | Closed empty menu — pick-one with nowhere to land | *No options?* / *Stuck?* |
 | **…om** (`zom` / `dom` / …) | *I got no pick* / *can’t say* | Open empty menu — “I don’t have a pick,” not “impossible” | *No pick?* / *Can’t say?* |
-| **…uol** (`zuol` / …) | *fine to pick none* / *or none is OK* | Closed empty-allowed xor — empty list, *or none* allowed (contrast stuck **…ol**) | *Or none OK?* / *None is fine?* |
-| **…uom** (`zuom` / …) | *no pick from me, or none OK* | Open empty-allowed xor | *Or none OK?* |
+| **…ual** (`zual` / …) | *everything* / *everyone* | Closed empty exclusion list — complement of nothing = unrestricted universal (positive twin of **…al**) | *Everything?* / *Everyone?* |
+| **…uam** (`zuam` / …) | *everything that comes to mind* | Open universal — affirming a full list from the speaker’s side | *Everything you can think of?* |
+| **…uol** (`zuol` / …) | *anything (goes)* | Closed empty exclusion — free choice with nothing barred (near **…or**; complement frame made explicit) | *Anything?* |
+| **…uom** (`zuom` / …) | *anything from me* | Open empty exclusion — free choice, open | *Anything?* |
 | **…aol** (`zaol` / `daol` / …) | *all set* / *nothing more needed* | Closed inclusive — null requirement, and that’s the full story | *All set?* / *Nothing else needed?* |
 | **…aom** (`zaom` / `daom` / …) | *nothing I need that I can think of* / *I’m fine for now* | Soft / open null requirement | *Nothing you need?* / *Fine for now?* |
-| **…uaol** / **…uaom** | near-synonyms of **…aol** / **…aom** at length 0 (zero-or-more of nothing) | Empty-allowed inclusive made explicit | same question pattern |
 | **…ul** (`zul` / `dul` / …) | *nothing unusual* | Closed empty *none of*-list — unusual-set empty on purpose | *Nothing unusual?* |
 | **…um** (`zum` / `dum` / …) | *nothing unusual from me (yet)* | Open empty *none of* — withholding unusual claims, not affirming “nothing exists” | *Nothing unusual from you (yet)?* |
 | **…ar** (`zar` / `dar` / …) | *something* / *someone* | Positive twin of **…al** / **…am** — unspecified member, no kind | *Who/what?* / *Something?* (content Q) |
@@ -209,23 +202,23 @@ Unbound *who* / *what* / *where* = nullary **…ar** / **…or** / **…er** / *
 
 **…ul** / **…um** / **…an** are **nullary-only** on the phrase fence (no defined one-conjunct reading). **…en** nullary is *it’s a draw* / *tie*; unary **…en** stays *X first* (stock). **…ar** / **…or** / **…er** / **…ur** are defined at **all** arities (nullary / unary / multi) — see [unspecified-member **-r**](#unspecified-member-r-phrase).
 
-Examples (unary): `zem z-truthrl` → *truth first* / *mainly truth*; `zel z-truthrl` → *only truth matters*; `zoem z-fixl` → *try a fix first*; `zoel z-fixl` → *only try a fix*; `zuoel z-fixl` → *fix else none*; `zen z-safetyl` → *safety first* (stock); `zer z-safetyl` → *safety as a priority*; `zal z-waterl` → *just water*; `zam z-Samn` → *Sam, for one*; `zol z-waterl` → *has to be water*; `zom z-coffeel` → *say, coffee*; `zuol z-coffeel` → *coffee or none*; `zaol z-waterl` → *water’ll do*; `zaom z-waterl` → *at least water*; `zar z-personl` → *some (unknown) person*; `zor z-personl` → *any person*; `zur z-contractl` → *something unusual about the contract*.
+Examples (unary): `zem z-truthrl` → *truth first* / *mainly truth*; `zel z-truthrl` → *only truth matters*; `zoem z-fixl` → *try a fix first*; `zoel z-fixl` → *only try a fix*; `zuem z-dessertl` → *dessert last*; `zuel z-dessertl` → *dessert last, period*; `zen z-safetyl` → *safety first* (stock); `zer z-safetyl` → *safety as a priority*; `zal z-waterl` → *just water*; `zam z-Samn` → *Sam, for one*; `zol z-waterl` → *has to be water*; `zom z-coffeel` → *say, coffee*; `zual z-teal` → *everything but tea*; `zuol z-coffeel` → *anything but coffee*; `zaol z-waterl` → *water’ll do*; `zaom z-waterl` → *at least water*; `zar z-personl` → *some (unknown) person*; `zor z-personl` → *any person*; `zur z-contractl` → *something unusual about the contract*.
 
-Examples (nullary): `zal` → *nothing* / *nobody*; `zam` → *nothing comes to mind*; `zan` → *null* / *void*; `zol` → *no options* / *we’re stuck*; `zom` → *I got no pick*; `zuol` → *fine to pick none*; `zaol` → *all set*; `zaom` → *nothing I need*; `zul` → *nothing unusual*; `zum` → *nothing unusual from me (yet)*; `zar` → *something* / *someone*; `zor` → *anything* / *anyone*; `zer` → *whatever’s most important*; `zur` → *something unusual*; `zel` → *don’t care*; `zem` → *I don’t have a ranking*; `zoem` → *not sure where to start*; `zoel` → *do nothing* / *don’t bother*; `zen` → *it’s a draw* / *tie*. Same under `/d/` `/b/` `/ɡ/` `/w/` `/h/` (`dal`, `gam`, `zar`, `zor`, `zer`, `zur`, …).
+Examples (nullary): `zal` → *nothing* / *nobody*; `zam` → *nothing comes to mind*; `zan` → *null* / *void*; `zol` → *no options* / *we’re stuck*; `zom` → *I got no pick*; `zual` → *everything* / *everyone*; `zuol` → *anything (goes)*; `zaol` → *all set*; `zaom` → *nothing I need*; `zul` → *nothing unusual*; `zum` → *nothing unusual from me (yet)*; `zar` → *something* / *someone*; `zor` → *anything* / *anyone*; `zer` → *whatever’s most important*; `zur` → *something unusual*; `zel` → *don’t care*; `zem` → *I don’t have a ranking*; `zoem` → *not sure where to start*; `zoel` → *do nothing* / *don’t bother*; `zuel` → *don’t care (ascending)*; `zen` → *it’s a draw* / *tie*. Same under `/d/` `/b/` `/ɡ/` `/w/` `/h/` (`dal`, `gam`, `zar`, `zor`, `zer`, `zur`, …).
 
-Do not confuse prefixed **…em** / **…el** / **…en** / **…er** / **…al** / **…am** / **…an** / **…ol** / **…om** / **…uol** / **…uom** / **…ul** / **…um** / **…ur** / **…ar** / **…or** with bare revision **em** / **el** / **en** / **al** / **am** / **an** / **ol** / **om** / **ul** / **um** (*or rather* / *including* / *instead* / *except*).
-### Exclusivity, *none of*, and empty-allowed
+Do not confuse prefixed **…em** / **…el** / **…en** / **…er** / **…al** / **…am** / **…an** / **…ol** / **…om** / **…ual** / **…uam** / **…uol** / **…uom** / **…uel** / **…uem** / **…ul** / **…um** / **…ur** / **…ar** / **…or** with bare revision **em** / **el** / **en** / **al** / **am** / **an** / **ol** / **om** / **ul** / **um** (*or rather* / *including* / *instead* / *except*).
+### Exclusivity, *none of*, and invert
 
 - **Exclusive (`o`)** — pick **one** of the conjuncts, not more than one.
 - **Inclusive (`ao`)** — one **or** more of the conjuncts may hold (English *and/or*). Built by combining **a** with **o**; bare **o** stays exclusive.
 - ***None of* (`u`)** — **none** of the conjuncts hold. The realized set from the list is empty. **-l** vs **-m** still marks whether that claim is limited to the listed items (**…ul**) or leaves room for further exclusions outside the list (**…um**); **-n** names a conventional *none of* bundle.
-- **Empty-allowed (`uo` / `uao` / `ue` / `uae` / `uoe`)** — leading **u** on a pick / ranked / inclusive frame adds the **empty set as a legal choice** (English gloss ***or none***; tier math still *at most one* / *zero or more* / …). Contrast bare **u** (*none of* = assert emptiness) vs **u**-prefix (*or none* = allow emptiness). **-m** does **not** imply empty-allowed — only that unlisted conjuncts may exist.
-  - **`uo`** — at most one of the listed (*A or B or none*).
-  - **`uao`** — zero or more of the listed (any subset, including none).
-  - **`ue` / `uae` / `uoe`** — same exclusivity tiers as **e** / **ae** / **oe**, plus *or none*.
-- **Ranked (`e` / `ae` / `oe` / `ue` / `uae` / `uoe`)** — ordered ranking, not a boolean *and*/*or*. First listed outranks second, and so on. **e** leaves exclusivity unmarked; **ae** = co-satisfiable ranked (**a**+**e**); **oe** = exclusive ranked (**o**+**e**); **u**-prefix variants allow *or none*. **-l** / **-m** / **-n** still mark closed / open / named (phrase) or soft (VP/clause) packaging of that ladder.
+- **Invert (`ua` / `uo` / `ue`)** — leading **u** on **a** / **o** / **e** flips the base join. Contrast bare **u** (*none of* = assert the listed fail) vs **u**-stacks (complement or reverse). **-m** does **not** imply empty-allowed / *or none* — only that unlisted conjuncts may exist. Optionality morphology is deferred.
+  - **`ua`** — everything but the listed (domain minus the conjuncts).
+  - **`uo`** — anything but the listed (free choice from the complement).
+  - **`ue`** — rank reversal (*A ≺ B ≺ C*); exclusivity unmarked.
+- **Ranked (`e` / **ae** / **oe** / **ue`)** — ordered ranking, not a boolean *and*/*or*. **e** / **ae** / **oe**: first listed outranks second, and so on. **ue**: last listed outranks earlier. **e** leaves exclusivity unmarked; **ae** = co-satisfiable ranked (**a**+**e**); **oe** = exclusive ranked (**o**+**e**). **-l** / **-m** / **-n** still mark closed / open / named (phrase) or soft (VP/clause) packaging of that ladder.
 
-**a** is ordinary conjunction (*and*), not an *or*. All levels take **-l**, **-m**, or **-n** (named at phrase; soft at VP/clause) on **a** / **o** / **u** / **ao** / **e** / **ae** / **oe** / **uo** / **uao** / **ue** / **uae** / **uoe**; **a** / **o** / **e** / **u** also take **-r** ([unspecified-member](#unspecified-member-r-phrase)). Stacked forms (**ao** / **ae** / **oe** / **uo** / **uao** / **ue** / **uae** / **uoe**) never take **-r**.
+**a** is ordinary conjunction (*and*), not an *or*. All levels take **-l**, **-m**, or **-n** (named at phrase; soft at VP/clause) on **a** / **o** / **u** / **ao** / **e** / **ae** / **oe** / **ua** / **uo** / **ue**; **a** / **o** / **e** / **u** also take **-r** ([unspecified-member](#unspecified-member-r-phrase)). Stacked forms (**ao** / **ae** / **oe** / **ua** / **uo** / **ue**) never take **-r**.
 
 There are **no** bare (prefix-less) **coordinators**. Prefixed joiners always have a PoS prefix + ending (`zam`, `val`, …). Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** are [in-clause revision](#in-clause-revision-bare-a--e--o--u) only — not list joiners. Whole-word **a** / **e** / **o** / **u** (no ending) are **illegal**.
 
@@ -247,7 +240,7 @@ Prefix-less vowel + **-l** / **-m** / **-n** forms are **revision** operators in
 | **o** | *instead* | not A, but B (exclusive replacement) |
 | **u** | *except* / *but not* | A except B / A but not B (subtract B from the A frame) |
 
-Mnemonics track the join series loosely: **a** additive membership, **e** directional soft rank, **o** exclusive swap, **u** subtractive denial — but the job is **revision of a slot**, not boolean listing.
+Mnemonics track the join series loosely: **a** additive membership, **e** directional soft rank, **o** exclusive swap, **u** subtractive denial (cf. invert **ua** / **uo** and bare join **u** *none of*) — but the job is **revision of a slot**, not boolean listing. Prefixed **`zual` / `zuol`** (*everything but* / *anything but* a fence list) are **not** revision **`ul` / `um`** (*A except B*).
 
 ### Endings — required
 
@@ -339,7 +332,7 @@ Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om*
 <a id="left-fence"></a>
 <a id="right-close"></a>
 
-Phrase-level coordinators join **same-slot** conjuncts (single words or multi-word phrases) with a **fence**: prefixed coordinator(s) plus optional **shared** modifiers **immediately after** each coordinator. Same vowel series and endings as above (**-l** / **-m** / **-n** on **a** / **o** / **u** / **ao** / **e** / **ae** / **oe** / **uo** / **uao** / **ue** / **uae** / **uoe**; **-r** on **a** / **o** / **e** / **u** for [unspecified-member](#unspecified-member-r-phrase); not plural **-sh**). Slots differ only in **which prefix** the coordinator takes and **what counts as a conjunct**. Flat lists use one fence; nested joins use [fence nesting](#fence-nesting). **Pure infix is illegal** (`A zam B zal C`).
+Phrase-level coordinators join **same-slot** conjuncts (single words or multi-word phrases) with a **fence**: prefixed coordinator(s) plus optional **shared** modifiers **immediately after** each coordinator. Same vowel series and endings as above (**-l** / **-m** / **-n** on **a** / **o** / **u** / **ao** / **e** / **ae** / **oe** / **ua** / **uo** / **ue**; **-r** on **a** / **o** / **e** / **u** for [unspecified-member](#unspecified-member-r-phrase); not plural **-sh**). Slots differ only in **which prefix** the coordinator takes and **what counts as a conjunct**. Flat lists use one fence; nested joins use [fence nesting](#fence-nesting). **Pure infix is illegal** (`A zam B zal C`).
 
 **Fence — juxtaposed conjuncts.** No continue particle between conjuncts (`zam A B`, not `zam A zar B` for a flat *and*). `zar` / `zor` / `zer` / `zur` are whole-fence unspecified-member coordinators, not mid-chain extenders.
 
@@ -358,7 +351,7 @@ Word shape: role prefix + vowel root (+ second vowel for inclusive forms) + endi
 | `/w/` | adjective-adjunct chain on one host `/ɡ/` |
 | `/h/` | adverb unit chain (one floating contiguous unit) |
 
-Writing: `zal` / `zam` / `zan` / `zar` / `zol` / `zom` / `zor` / `zul` / `zum` / `zur` / … / `zel` / `zem` / `zen` / `zer`; same under `/d/`, `/b/`, `/ɡ/` (`gal` / `gam` / …), `/w/` (`wal` / `wam` / …), `/h/` (`hal` / `ham` / …). Stacked vowels glue in writing: inclusive **ao** `zaol` / `zaom` / `zaon`; co-satisfiable ranked **ae** `zael` / `zaem` / `zaen`; exclusive ranked **oe** `zoel` / `zoem` / `zoen`; empty-allowed **uo** `zuol` / `zuom` / `zuon`; **uao** `zuaol` / …; **ue** `zuel` / …; **uae** `zuael` / …; **uoe** `zuoel` / … (and the same under `/d/` `/b/` `/ɡ/` `/w/` `/h/`). Spoken order is first vowel then next then ending (**a** then **o**; **u** then **o**; **u** then **a** then **o**; **o** then **e**; **u** then **o** then **e**; …). Phrase **-r** forms are **`zar`** / **`zor`** / **`zer`** / **`zur`** (and the same under other phrase prefixes) — not `zaor`, `zaer`, `zoer`, `zuor`, ….
+Writing: `zal` / `zam` / `zan` / `zar` / `zol` / `zom` / `zor` / `zul` / `zum` / `zur` / … / `zel` / `zem` / `zen` / `zer`; same under `/d/`, `/b/`, `/ɡ/` (`gal` / `gam` / …), `/w/` (`wal` / `wam` / …), `/h/` (`hal` / `ham` / …). Stacked vowels glue in writing: inclusive **ao** `zaol` / `zaom` / `zaon`; co-satisfiable ranked **ae** `zael` / `zaem` / `zaen`; exclusive ranked **oe** `zoel` / `zoem` / `zoen`; invert **ua** `zual` / `zuam` / `zuan`; **uo** `zuol` / `zuom` / `zuon`; **ue** `zuel` / `zuem` / `zuen` (and the same under `/d/` `/b/` `/ɡ/` `/w/` `/h/`). Spoken order is first vowel then next then ending (**a** then **o**; **u** then **a**; **u** then **o**; **o** then **e**; **u** then **e**; …). No three-vowel stacks. Phrase **-r** forms are **`zar`** / **`zor`** / **`zer`** / **`zur`** (and the same under other phrase prefixes) — not `zaor`, `zaer`, `zoer`, `zuar`, `zuor`, `zuer`, ….
 
 The prefix on the coordinator **must match** every conjunct head (`/z/` with `/z/`, `/ɡ/` with `/ɡ/`, and so on).
 
@@ -384,13 +377,13 @@ P-COORD ( SHARED )*                 ← nullary (same as left when empty)
 - **SHARED** — optional material **immediately after** `P-COORD` in either placement. **Always** scopes over the **whole coordinated phrase** (NP: ordinary `/ɡ/` / `/w/` / complex `/ɡ/`+`/b/`; AP: `/w/`; `/w/`-slot and `/h/`-slot joins: further same-slot material only if the lexicon allows stacking on the join as a unit). Shared ordinary `/ɡ/` / `/w/` here sit next to the fence (before the heads they grade on the left; after the list on the right) — the fence defines the host unit. **Left-bound `gl-`** is **not** SHARED: after a left fence it binds only the **next** conjunct (see [Adjectives](language-reference.md#adjectives-ɡ)).
 - **PHRASE** — a conjunct: NP headed by `/z/`, `/d/`, or `/b/` (plus that head’s local `/ɡ/` / `/w/` / `/b/` material — default **after** the head, or [left-bound `gl-`](language-reference.md#adjectives-ɡ) **before** that head); AP headed by `/ɡ/` (plus contiguous `/b/`, further `/ɡ/` on that `/b/`, and local `/w/`); or a single `/w/` / `/h/` word (plus `/h/`’s contiguous `/b/` when complex). Local right-bound modifiers stay **inside** their conjunct, after that conjunct’s head; local `gl-` sits immediately before that head.
 - Two conjuncts (left): `P-COORD PHRASE PHRASE`. Two (right): `PHRASE PHRASE P-COORD`. Three or more: same pattern with more `PHRASE` items on the conjunct side of `P-COORD`.
-- **Unary phrase** — **…em** / **…el** / **…oem** / **…oel** / **…uem** / **…uel** / **…uaem** / **…uael** / **…uoem** / **…uoel** / **…en** / **…er** / **…al** / **…am** / **…ol** / **…om** / **…uol** / **…uom** / **…aol** / **…aom** / **…uaol** / **…uaom** / **…ar** / **…or** / **…ur**: `P-COORD PHRASE` or `PHRASE P-COORD` — see [unary and nullary](#unary-phrase) and [unspecified-member **-r**](#unspecified-member-r-phrase).
+- **Unary phrase** — **…em** / **…el** / **…oem** / **…oel** / **…uem** / **…uel** / **…en** / **…er** / **…al** / **…am** / **…ol** / **…om** / **…ual** / **…uam** / **…uol** / **…uom** / **…aol** / **…aom** / **…ar** / **…or** / **…ur**: `P-COORD PHRASE` or `PHRASE P-COORD` — see [unary and nullary](#unary-phrase) and [unspecified-member **-r**](#unspecified-member-r-phrase).
 - **Nullary phrase** — those same forms, plus **…an** / **…ul** / **…um**: `P-COORD` alone (optional `SHARED`) — the coordinator fills the slot with the [nullary reading](#nullary-phrase). Left and right placement coincide when there are no conjuncts. A following matching-role head is still absorbed as a conjunct (so nullary is only when no conjunct follows / precedes).
 - All other phrase coordinators need **two or more** conjuncts.
 - Single-word siblings: `zam z-dogl z-catl` or `z-dogl z-catl zam` (*a dog and a cat* — open).
 - Unspecified-member: `zar` → *something*; `zar z-personl` / `z-personl zar` → *some (unknown) person*; `zar z-teal z-coffeel` → *some one among tea and coffee*; `zor` → *anything*; `zor z-personl` → *any person*; `zor z-teal z-coffeel` → *any of tea or coffee*; `zer` → *whatever’s most important*; `zer z-safetyl` → *safety as a priority*; `zer z-teal z-coffeel` → *whichever of tea or coffee ranks higher*; `zur` → *something unusual*; `zur z-contractl` → *something unusual about the contract*; `zur z-costl z-riskl` → *something unusual among cost and risk*.
 
-**Ranked** (`zel` / `zael` / `zoel` / `zuel` / `zuael` / `zuoel`, `zem` / …, `zen` / …): left-to-right rank of the **spoken conjunct order** (before a right-close coordinator) — see [ranked conjunction](#ranked-conjunction-e). Unary / nullary: [unary and nullary](#unary-phrase).
+**Ranked** (`zel` / `zael` / `zoel` / `zuel`, `zem` / …, `zen` / …): ranking from **spoken conjunct order** (before a right-close coordinator) — **e**/**ae**/**oe** earlier≻later; **ue** later≻earlier — see [ranked conjunction](#ranked-conjunction-e). Unary / nullary: [unary and nullary](#unary-phrase).
 ### Scope fence (`P-COORD`)
 
 **Rule:** A modifier **immediately after** a phrase-level conjunction (`zam`, `gam`, `dam`, …) modifies the **entire coordinated phrase** — whether that conjunction is a left fence or a right close — when it uses ordinary (right-bound) `/ɡ/` / `/w/` morphology. **Left-bound `gl-`** in that same position binds only the **next** conjunct.
@@ -439,16 +432,16 @@ Complex adjective on an NP bundle: `zam g-ofl b-Samn z-dogl z-catl` or `z-dogl z
 - `d-dogl d-catl dam g-bigl` — same shared reading with right close
 - `zel z-teal z-coffeel z-waterl` — *tea ≻ coffee ≻ water* (closed ranked; exclusivity not claimed; prefer/else from context)
 - `zoel z-burgerl z-chickenl z-hot-dogl` — *burger ≻ chicken ≻ hot dog* (closed **exclusive** ranked — pick one, in that order)
-- `zuoel z-burgerl z-chickenl` — *burger else chicken or none* (closed **empty-allowed** exclusive ranked)
-- `zuol z-teal z-coffeel` — *tea or coffee or none* (closed empty-allowed xor)
-- `zuaom z-helpl z-moneyl` — *help and/or money, or none* (open zero-or-more)
+- `zuel z-appetizerl z-mainl z-dessertl` — *appetizer ≺ main ≺ dessert* (closed **rank reversal** — dessert preferred most)
+- `zual z-teal z-coffeel` — *everything but tea and coffee* (closed invert-**a**)
+- `zuom z-helpl z-moneyl` — *anything but help or money* (open invert-**o**)
 - `zaem z-journall z-candlesh z-socksh` — *journal ≻ candles ≻ socks* (open **co-satisfiable** ranked — wishlist)
 - `z-teal z-coffeel z-waterl zel` — same neutral ranked ladder with right close
 - `zem z-dogl g-bigl z-catl g-redl` — *(big dog) ≻ (red cat)* (open ranked, exclusivity unmarked)
-- `zem z-truthrl` — *truth first* (unary open ranked); `zel z-truthrl` — *only truth matters* (unary closed); `zoem z-fixl` — *try a fix first* (unary open exclusive ranked); `zoel z-fixl` — *only try a fix* (unary closed exclusive ranked); `zuoel z-fixl` — *fix else none*; `zen z-safetyl` — *safety first* (unary named ranked)
-- `zal z-waterl` — *just water* (unary closed *and*); `zam z-Samn` — *Sam, for one* (unary open *and*); `zol z-waterl` — *has to be water* (unary closed xor); `zom z-coffeel` — *say, coffee* (unary open xor); `zuol z-coffeel` — *coffee or none*; `zaol z-waterl` — *water’ll do* (unary closed *and/or*); `zaom z-waterl` — *at least water* (unary open *and/or*); `zar z-personl` — *some (unknown) person*; `zor z-personl` — *any person*; `zer z-safetyl` — *safety as a priority*; `zur z-contractl` — *something unusual about the contract*; `z-personl zar` — same with right close
+- `zem z-truthrl` — *truth first* (unary open ranked); `zel z-truthrl` — *only truth matters* (unary closed); `zoem z-fixl` — *try a fix first* (unary open exclusive ranked); `zoel z-fixl` — *only try a fix* (unary closed exclusive ranked); `zuem z-dessertl` — *dessert last*; `zuel z-dessertl` — *dessert last, period*; `zen z-safetyl` — *safety first* (unary named ranked)
+- `zal z-waterl` — *just water* (unary closed *and*); `zam z-Samn` — *Sam, for one* (unary open *and*); `zol z-waterl` — *has to be water* (unary closed xor); `zom z-coffeel` — *say, coffee* (unary open xor); `zual z-teal` — *everything but tea*; `zuol z-coffeel` — *anything but coffee*; `zaol z-waterl` — *water’ll do* (unary closed *and/or*); `zaom z-waterl` — *at least water* (unary open *and/or*); `zar z-personl` — *some (unknown) person*; `zor z-personl` — *any person*; `zer z-safetyl` — *safety as a priority*; `zur z-contractl` — *something unusual about the contract*; `z-personl zar` — same with right close
 - `zar z-teal z-coffeel` — *some one among tea and coffee*; `zor z-burgerl z-chickenl` — *any of burger or chicken*; `zer z-teal z-coffeel` — *whichever of tea or coffee ranks higher*; `zur z-costl z-riskl` — *something unusual among cost and risk*
-- `zal` — *nothing* / *nobody* (nullary closed *and*); `zam` — *nothing comes to mind* (nullary open *and*); `zan` — *null* / *void* (nullary named); `zar` — *something* / *someone*; `zol` — *no options* / *we’re stuck* (nullary closed xor); `zom` — *I got no pick* (nullary open xor); `zuol` — *fine to pick none*; `zor` — *anything* / *anyone*; `zaol` — *all set* (nullary closed *and/or*); `zaom` — *nothing I need* (nullary open *and/or*); `zul` — *nothing unusual* (nullary closed *none of*); `zum` — *nothing unusual from me (yet)* (nullary open *none of*); `zur` — *something unusual*; `zel` — *don’t care* (nullary closed ranked); `zem` — *I don’t have a ranking* (nullary open ranked); `zer` — *whatever’s most important*; `zoem` — *not sure where to start* (nullary open exclusive ranked); `zoel` — *do nothing* (nullary closed exclusive ranked); `zen` — *it’s a draw* / *tie* (nullary named ranked)
+- `zal` — *nothing* / *nobody* (nullary closed *and*); `zam` — *nothing comes to mind* (nullary open *and*); `zan` — *null* / *void* (nullary named); `zar` — *something* / *someone*; `zol` — *no options* / *we’re stuck* (nullary closed xor); `zom` — *I got no pick* (nullary open xor); `zual` — *everything* / *everyone*; `zuol` — *anything (goes)*; `zor` — *anything* / *anyone*; `zaol` — *all set* (nullary closed *and/or*); `zaom` — *nothing I need* (nullary open *and/or*); `zul` — *nothing unusual* (nullary closed *none of*); `zum` — *nothing unusual from me (yet)* (nullary open *none of*); `zur` — *something unusual*; `zel` — *don’t care* (nullary closed ranked); `zem` — *I don’t have a ranking* (nullary open ranked); `zer` — *whatever’s most important*; `zoem` — *not sure where to start* (nullary open exclusive ranked); `zoel` — *do nothing* (nullary closed exclusive ranked); `zuel` — *don’t care (ascending)*; `zen` — *it’s a draw* / *tie* (nullary named ranked)
 **AP**
 
 - `gam g-happyl w-veryl g-proudl w-slightlyl` — *(very happy) and (slightly proud)* — each degree inside its conjunct
@@ -476,11 +469,11 @@ Complex adjective on an NP bundle: `zam g-ofl b-Samn z-dogl z-catl` or `z-dogl z
 - **Shared modifiers** — only in the slot immediately after each `P-COORD` (left or right); local modifiers stay after their own heads.
 - **Phrase `-r`** — only **`…ar`** / **`…or`** / **`…er`** / **`…ur`** ([unspecified-member](#unspecified-member-r-phrase)); no plural **-sh** on the coordinator. Soft **-n** is VP/clause only.
 - **Not** verb+object packages — use [VP-level](#vp-level-coordination); **not** full sentences — those stay `/x/`…
-- **Not** mixed-PoS joins; correlatives; `/x/` sentence linkers (*however*, *therefore*), general adversative *but*, quotation fences, or [numbered enumeration](numbers.md#number-as-discourse-marker-by-marker). In-clause *including* / *rather* / *instead* / *except* are [bare revision](#in-clause-revision-bare-a--e--o--u), not this fence series. Phrase-level ranked conjunction **is** this series (`zel` / `zael` / `zoel` / `zuel` / `zuoel` / `zem` / …). Unary / nullary phrase only for the forms in [unary and nullary](#unary-phrase) (**…ul** / **…um** / **…an** nullary-only; **…ar** / **…or** / **…er** / **…ur** at all arities = *something* / *anything* / *whatever-by-rank* / *something unusual*; **…en** nullary = *it’s a draw*, **…an** nullary = *null* / *void*).
+- **Not** mixed-PoS joins; correlatives; `/x/` sentence linkers (*however*, *therefore*), general adversative *but*, quotation fences, or [numbered enumeration](numbers.md#number-as-discourse-marker-by-marker). In-clause *including* / *rather* / *instead* / *except* are [bare revision](#in-clause-revision-bare-a--e--o--u), not this fence series. Phrase-level ranked conjunction **is** this series (`zel` / `zael` / `zoel` / `zuel` / `zem` / …). Invert **ua** / **uo** / **ue** **is** this series too. Unary / nullary phrase only for the forms in [unary and nullary](#unary-phrase) (**…ul** / **…um** / **…an** nullary-only; **…ar** / **…or** / **…er** / **…ur** at all arities = *something* / *anything* / *whatever-by-rank* / *something unusual*; **…en** nullary = *it’s a draw*, **…an** nullary = *null* / *void*; **…ual** nullary = *everything*, **…uol** nullary = *anything (goes)*).
 
 ## Reserved forms
 
-Under `/z/`, `/d/`, `/b/`, `/ɡ/`, `/w/`, and `/h/`, the coordination vowel series plus an allowed ending (`zal`, `zam`, `zan`, `zar`, `zol`, `zom`, `zor`, `zul`, `zum`, `zur`, … `zel`, `zem`, `zen`, `zer`, `zael`, `zaem`, `zaen`, `zoel`, `zoem`, `zoen`, `zuol`, `zuom`, `zuon`, `zuaol`, …, `zuel`, `zuem`, `zuen`, `zuael`, …, `zuoel`, `zuoem`, `zuoen`, `dal`, … `gal`, `gam`, … `wal`, … `hal`, `ham`, … `hel`, `hem`, `hen`, `hael`, … `hoel`, … `huol`, …) are **only** these phrase coordinators — not ordinary content words with those vowel roots. Other roots under those prefixes are unchanged.
+Under `/z/`, `/d/`, `/b/`, `/ɡ/`, `/w/`, and `/h/`, the coordination vowel series plus an allowed ending (`zal`, `zam`, `zan`, `zar`, `zol`, `zom`, `zor`, `zul`, `zum`, `zur`, … `zel`, `zem`, `zen`, `zer`, `zael`, `zaem`, `zaen`, `zoel`, `zoem`, `zoen`, `zual`, `zuam`, `zuan`, `zuol`, `zuom`, `zuon`, `zuel`, `zuem`, `zuen`, `dal`, … `gal`, `gam`, … `wal`, … `hal`, `ham`, … `hel`, `hem`, `hen`, `hael`, … `hoel`, … `hual`, `huol`, `huel`, …) are **only** these phrase coordinators — not ordinary content words with those vowel roots. No three-vowel stacks. Other roots under those prefixes are unchanged.
 
 ---
 
@@ -517,14 +510,12 @@ On **`/v/`** and **`/x/`** only, **-n** is **soft packaging** (not phrase named/
 | **`von` / `xon`** (*xor*) | *or maybe…* — uncertain alternatives |
 | **`vun` / `xun`** (*none of*) | *and none of… either* / *none of, as I recall…* — soft *none of* while reconstructing |
 | **`vaon` / `xaon`** (*and/or*) | *and/or maybe…* — soft multi-fit |
-| **`vuon` / `xuon`** (*at most one*) | *or maybe none…* — soft empty-allowed xor |
-| **`vuaon` / `xuaon`** (*zero or more*) | *any of these, or maybe none…* — soft empty-allowed inclusive |
-| **`ven` / `xen`** (*ranked*) | *maybe prefer… / else maybe…* — soft or reconstructed ranking (exclusivity unmarked) |
+| **`vuan` / `xuan`** (*everything but*) | *everything but… maybe* — soft complement inventory |
+| **`vuon` / `xuon`** (*anything but*) | *anything but… maybe* — soft complement free choice |
+| **`ven` / `xen`** (*ranked*) | *maybe prefer… / else maybe…* — soft or reconstructed ranking (exclusivity unmarked; earlier ≻ later) |
 | **`vaen` / `xaen`** (*co-sat. ranked*) | soft ranked multi-fit |
 | **`voen` / `xoen`** (*excl. ranked*) | soft exclusive ranked fallback |
-| **`vuen` / `xuen`** (*empty-allowed ranked*) | soft ranked with *or none* |
-| **`vuaen` / `xuaen`** (*empty-allowed co-sat.*) | soft ranked multi-fit with *or none* |
-| **`vuoen` / `xuoen`** (*empty-allowed excl.*) | soft *A else B or none (maybe)* |
+| **`vuen` / `xuen`** (*rank reversal*) | soft ascending / reverse ranking (*A ≺ B ≺ C*) |
 
 Titled / official discourse labels stay **other** `/x/`…**-n** forms (different roots, not this vowel series) — see [reference-suffix.md](reference-suffix.md#discourse-markers-x).
 
@@ -533,7 +524,7 @@ Titled / official discourse labels stay **other** `/x/`…**-n** forms (differen
 # VP / clause forms (endings)
 <a id="vp-clause-forms"></a>
 
-Word shape: prefix + vowel root (+ further vowels for stacked forms) + ending. Writing glues stacked vowels (`vaol`, `vael`, `voel`, `vuol`, `vuoel`, `xaol`, …). Spoken order is first vowel then next, then the ending — same as phrase-level `zaol` / `zael` / `zoel` / `zuol` / `zuoel`.
+Word shape: prefix + vowel root (+ further vowels for stacked forms) + ending. Writing glues stacked vowels (`vaol`, `vael`, `voel`, `vual`, `vuol`, `vuel`, `xaol`, …). Spoken order is first vowel then next, then the ending — same as phrase-level `zaol` / `zael` / `zoel` / `zual` / `zuol` / `zuel`. No three-vowel stacks.
 
 | | **-l** | **-m** | **-n** soft | **-r** unspecified |
 |---|--------|--------|-------------|---------------------|
@@ -541,16 +532,14 @@ Word shape: prefix + vowel root (+ further vowels for stacked forms) + ending. W
 | **o** (xor) | `vol` / `xol` closed | `vom` / `xom` open | `von` / `xon` | `vor` / `xor` |
 | **u** (*none of*) | `vul` / `xul` closed | `vum` / `xum` open | `vun` / `xun` | `vur` / `xur` |
 | **ao** (and/or) | `vaol` / `xaol` closed | `vaom` / `xaom` open | `vaon` / `xaon` | — |
-| **uo** (at most one) | `vuol` / `xuol` closed | `vuom` / `xuom` open | `vuon` / `xuon` | — |
-| **uao** (zero or more) | `vuaol` / `xuaol` closed | `vuaom` / `xuaom` open | `vuaon` / `xuaon` | — |
+| **ua** (everything but) | `vual` / `xual` closed | `vuam` / `xuam` open | `vuan` / `xuan` | — |
+| **uo** (anything but) | `vuol` / `xuol` closed | `vuom` / `xuom` open | `vuon` / `xuon` | — |
 | **e** (ranked) | `vel` / `xel` closed | `vem` / `xem` open | `ven` / `xen` | `ver` / `xer` |
 | **ae** (co-sat. ranked) | `vael` / `xael` closed | `vaem` / `xaem` open | `vaen` / `xaen` | — |
 | **oe** (excl. ranked) | `voel` / `xoel` closed | `voem` / `xoem` open | `voen` / `xoen` | — |
-| **ue** (empty-all. ranked) | `vuel` / `xuel` closed | `vuem` / `xuem` open | `vuen` / `xuen` | — |
-| **uae** (empty-all. co-sat.) | `vuael` / `xuael` closed | `vuaem` / `xuaem` open | `vuaen` / `xuaen` | — |
-| **uoe** (empty-all. excl.) | `vuoel` / `xuoel` closed | `vuoem` / `xuoem` open | `vuoen` / `xuoen` | — |
+| **ue** (rank reversal) | `vuel` / `xuel` closed | `vuem` / `xuem` open | `vuen` / `xuen` | — |
 
-Prefix: **`/v/`** for [VP-level](#vp-level-coordination); **`/x/`** for [clause-level](#clause-level-coordination). **-r** only on **a** / **o** / **e** / **u** — see [unspecified-member](#unspecified-member-r-phrase). No stacked-vowel **-r** (`vaor` / `xaor` / `vaer` / `xaer` / `voer` / `xoer` / `vuor` / …).
+Prefix: **`/v/`** for [VP-level](#vp-level-coordination); **`/x/`** for [clause-level](#clause-level-coordination). **-r** only on **a** / **o** / **e** / **u** — see [unspecified-member](#unspecified-member-r-phrase). No stacked-vowel **-r** (`vaor` / `xaor` / `vaer` / `xaer` / `voer` / `xoer` / `vuar` / `vuor` / `vuer` / …).
 
 **-l** / **-m** — committed closed / open lists (same senses as phrase). Soft **-n** — [above](#soft-n-vp-clause). **-r** — unspecified-member / content Q, not list continue.
 
@@ -590,8 +579,9 @@ VP-level coordinators join **verb phrases** inside one clause: each conjunct is 
 - `van v-runl v-jumpl v-restl` → *ran and then jumped and then rested*
 - `vel d-applel v-eatl d-cakel v-eatl` → *ate an apple ≻ ate a cake* (closed ranked, exclusivity unmarked)
 - `voel d-bugl v-fixl d-workaroundl v-addl` → *fix the bug ≻ add a workaround* (closed exclusive ranked)
-- `vuoel d-bugl v-fixl d-workaroundl v-addl` → *fix the bug else add a workaround or none*
-- `vuol v-calll v-emaill` → *call or email or none*
+- `vuel d-appetizerl v-eatl d-dessertl v-eatl` → *ate an appetizer ≺ ate dessert* (closed rank reversal)
+- `vual v-liet v-shoutl` → *do everything but lie or shout*
+- `vuol v-calll v-emaill` → *do anything but call or email*
 - `voen v-runl v-hidel v-fightl` → soft exclusive triage *run ≻ hide ≻ fight*
 - `vem d-applel v-eatl d-waterl v-drinkl` → *ate an apple ≻ drank water* (open ranked, unmarked)
 - `h-quicklyl vam d-applel v-eatl d-waterl v-drinkl` → *quickly* *(ate an apple and drank water)*
@@ -615,7 +605,7 @@ VP-level coordinators join **verb phrases** inside one clause: each conjunct is 
 
 ## Reserved forms
 
-Under `/v/`, the coordination vowel series plus an allowed ending (`val`, `vam`, `van`, `var`, `vol`, `vom`, `von`, `vor`, `vul`, `vum`, `vun`, `vur`, `vaol`, `vaom`, `vaon`, `vuol`, `vuom`, `vuon`, `vuaol`, …, `vel`, `vem`, `ven`, `ver`, `vael`, `vaem`, `vaen`, `voel`, `voem`, `voen`, `vuel`, `vuem`, `vuen`, `vuael`, …, `vuoel`, `vuoem`, `vuoen`) are **only** these VP coordinators — not ordinary content verbs with those vowel roots. No stacked-vowel **-r** (`vaor`, `vaer`, `voer`, `vuor`, …). Other roots under `/v/` are unchanged.
+Under `/v/`, the coordination vowel series plus an allowed ending (`val`, `vam`, `van`, `var`, `vol`, `vom`, `von`, `vor`, `vul`, `vum`, `vun`, `vur`, `vaol`, `vaom`, `vaon`, `vual`, `vuam`, `vuan`, `vuol`, `vuom`, `vuon`, `vel`, `vem`, `ven`, `ver`, `vael`, `vaem`, `vaen`, `voel`, `voem`, `voen`, `vuel`, `vuem`, `vuen`) are **only** these VP coordinators — not ordinary content verbs with those vowel roots. No three-vowel stacks. No stacked-vowel **-r** (`vaor`, `vaer`, `voer`, `vuar`, `vuor`, `vuer`, …). Other roots under `/v/` are unchanged.
 
 ---
 
@@ -638,7 +628,7 @@ Endorsement strength and evidentiality stay on each clause’s `/h/` (or `/w/`),
 - `xan A B C` → *A and then B and then C*
 - `xel A B` → *A ≻ B* (closed ranked, unmarked); `xem A B` → open; `xen A B C` → soft
 - `xael A B` → co-satisfiable closed ranked; `xoel A B C` → exclusive closed ranked
-- `xuol A B` → *A or B or none*; `xuoel A B` → *A else B or none*
+- `xual A B` → *everything but A and B*; `xuol A B` → *anything but A or B*; `xuel A B` → *A ≺ B* (rank reversal)
 - Nesting: `xol A xol B C` → *A or (B or C)*; `A B xol C xol` → *(A or B) or C*; flat three-way *or* is `xol A B C`
 - `xol A xal B C` → *A or (B and C)*; `A B xol C xal` → *(A or B) and C*
 - `xar` → *something happened*; under polar Q → *What happened?*; `xur` → *something unusual*
@@ -650,8 +640,8 @@ Endorsement strength and evidentiality stay on each clause’s `/h/` (or `/w/`),
 - **Fence** — left preferred, right close allowed; nesting per [fence nesting](#fence-nesting); **no pure infix**.
 - **-r** is unspecified-member (`xar` / `xor` / `xer` / `xur`), not continue / “same linker again”; unary/nullary allowed on those forms only among clause coordinators. Resume of a prior non-coordinator `/x/` linker still uses content-word **/x/`…`-r`** per [pronouns.md](pronouns.md).
 - **Not subordination:** *because* / *if* / *although* stay `/h/` + `/b/` [next-clause pronoun](pronouns.md#special-pronouns).
-- **Not general *but* / *however* / *therefore*:** those are other `/x/` linkers. In-clause *including* / *rather* / *instead* / *except* are [bare revision](#in-clause-revision-bare-a--e--o--u), not clause coordination. Sentence-level *instead* / *except* (when needed) stay other `/x/` roots. Phrase-, VP-, and clause-level **ranked** (**zel** / **zael** / **zoel** / **zuel** / **zuoel** / **gel** / **vel** / **vael** / **voel** / **vuoel** / **xel** / …) **is** this series.
+- **Not general *but* / *however* / *therefore*:** those are other `/x/` linkers. In-clause *including* / *rather* / *instead* / *except* are [bare revision](#in-clause-revision-bare-a--e--o--u), not clause coordination. Sentence-level *instead* / *except* (when needed) stay other `/x/` roots. Phrase-, VP-, and clause-level **ranked** and **invert** (**zel** / **zael** / **zoel** / **zuel** / **zual** / **zuol** / **gel** / **vel** / **vael** / **voel** / **vuel** / **vual** / **vuol** / **xel** / **xuel** / …) **are** this series.
 
 ## Reserved forms
 
-Under `/x/`, the coordination vowel series plus an allowed ending (`xal`, `xam`, `xan`, `xar`, `xol`, `xom`, `xon`, `xor`, `xul`, `xum`, `xun`, `xur`, `xaol`, `xaom`, `xaon`, `xuol`, `xuom`, `xuon`, `xuaol`, …, `xel`, `xem`, `xen`, `xer`, `xael`, `xaem`, `xaen`, `xoel`, `xoem`, `xoen`, `xuel`, `xuem`, `xuen`, `xuael`, …, `xuoel`, `xuoem`, `xuoen`) are **only** these clause coordinators — not other discourse-marker roots with those vowels. No stacked-vowel **-r** (`xaor`, `xaer`, `xoer`, `xuor`, …). Other `/x/` roots are unchanged.
+Under `/x/`, the coordination vowel series plus an allowed ending (`xal`, `xam`, `xan`, `xar`, `xol`, `xom`, `xon`, `xor`, `xul`, `xum`, `xun`, `xur`, `xaol`, `xaom`, `xaon`, `xual`, `xuam`, `xuan`, `xuol`, `xuom`, `xuon`, `xel`, `xem`, `xen`, `xer`, `xael`, `xaem`, `xaen`, `xoel`, `xoem`, `xoen`, `xuel`, `xuem`, `xuen`) are **only** these clause coordinators — not other discourse-marker roots with those vowels. No three-vowel stacks. No stacked-vowel **-r** (`xaor`, `xaer`, `xoer`, `xuar`, `xuor`, `xuer`, …). Other `/x/` roots are unchanged.
