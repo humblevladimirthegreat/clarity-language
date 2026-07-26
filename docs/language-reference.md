@@ -99,7 +99,7 @@ Verb (/v/) \- the action being done
 
 The contiguous adjective unit is the same in both orders: simple `/ɡ/`, or complex `/ɡ/` + `/b/`, plus any following `/w/` stack on that `/ɡ/`. Left-bound marks the `/ɡ/` word; `/b/` and `/w/` still follow that `/ɡ/` (`gl-ofl b-Samn z-dogl` = *Sam’s dog*; `gl-bigl w-veryl z-dogl` = *a very big dog`). Do not invent `wl-` or `bl-` for left attachment.
 
-Left-bound is optional style (meter, focus, L1 comfort). Prefer default postposed order in neutral prose. On [phrase fences](coordination.md#scope-fence-p-coord), ordinary `/ɡ/` in the SHARED slot still means whole-phrase scope under **a** / **o** / … (`zam g-bigl z-dogl z-catl`); under **ranked** **e** / **ae** / **oe** / **ue** on an NP fence, SHARED `/ɡ/` is the [comparison scale](coordination.md#comparatives) (`zel g-bigl z-Samn z-Lean` = *Sam is bigger than Lea*; unary `zel g-bigl z-Samn` = *Sam is the biggest*; nullary `zel g-bigl` = *there is no biggest*). `gl-` after a left fence binds only the **next** conjunct (`zam gl-bigl z-dogl z-catl` = *(big dog) and (cat)*).
+Left-bound is optional style (meter, focus, L1 comfort). Prefer default postposed order in neutral prose. On [phrase fences](coordination.md#scope-fence-p-coord), ordinary `/ɡ/` in the SHARED slot still means whole-phrase scope under **a** / **o** / **ao** (`zam g-bigl z-dogl z-catl`); under invert **ua** / **uo**, SHARED `/ɡ/` is the [kind / domain](coordination.md#universals-domains-generics) (`zual g-catl` = *every cat*); under **ranked** **e** / **ae** / **oe** / **ue** on an NP fence, SHARED `/ɡ/` is the [comparison scale](coordination.md#comparatives) (`zel g-bigl z-Samn z-Lean` = *Sam is bigger than Lea*; unary `zel g-bigl z-Samn` = *Sam is the biggest*; nullary `zel g-bigl` = *there is no biggest*). `gl-` after a left fence binds only the **next** conjunct (`zam gl-bigl z-dogl z-catl` = *(big dog) and (cat)*).
 
 ## Adjective adjuncts (`/w/`)
 
@@ -218,7 +218,7 @@ Reference suffix grammar (**-l** / **-m** / **-n** / **-r**) lives in **[referen
 
 # Plurality
 
-Plural grammar (**-sh** after the reference suffix; by PoS and reference suffix) lives in **[plurality.md](plurality.md)**.
+Plural grammar (**-sh** after the reference suffix; by PoS and reference suffix) lives in **[plurality.md](plurality.md)**. Generics and *every K* use invert **ua** with SHARED kind (`zual g-catl`), not **-sh** — [coordination.md](coordination.md#universals-domains-generics).
 
 # Pronouns
 
@@ -230,7 +230,7 @@ Numeral grammar (digit roots, engineering/scientific forms, ordinals, digit-stri
 
 # Phrase-level, VP-level, and clause-level coordination
 
-Phrase-level **zam** / **gam** / …, VP **vam** / **var** / …, and clause `/x/` + vowel + ending (soft **-n** ≠ named **-n**; **-r** = unspecified-member at all levels): **fence** (left preferred, right close for style/comedy; shared modifiers immediately after the coordinator; [fence nesting](coordination.md#fence-nesting)); ranked SHARED `/ɡ/` = [comparatives / superlatives](coordination.md#comparatives) (`zel g-bigl z-Samn z-Lean` / unary `zel g-bigl z-Samn` / nullary `zel g-bigl` = *no biggest*); prefix-less **al** / **am** / **an** / **el** / … (**-l** / **-m** / named **-n** required; parallel chains on fixed A) = in-clause revision (*including* / *rather* / *instead* / *except*): **[coordination.md](coordination.md)**. No bare word-level coordinators.
+Phrase-level **zam** / **gam** / …, VP **vam** / **var** / …, and clause `/x/` + vowel + ending (soft **-n** ≠ named **-n**; **-r** = unspecified-member at all levels): **fence** (left preferred, right close for style/comedy; shared modifiers immediately after the coordinator; [fence nesting](coordination.md#fence-nesting)); ranked SHARED `/ɡ/` = [comparatives / superlatives](coordination.md#comparatives) (`zel g-bigl z-Samn z-Lean` / unary `zel g-bigl z-Samn` / nullary `zel g-bigl` = *no biggest*); invert **ua** SHARED `/ɡ/` = [kind domain / generics](coordination.md#universals-domains-generics) (`zual g-catl` = *every cat*; `hual` = habitual *always*); prefix-less **al** / **am** / **an** / **el** / … (**-l** / **-m** / named **-n** required; parallel chains on fixed A) = in-clause revision (*including* / *rather* / *instead* / *except*): **[coordination.md](coordination.md)**. No bare word-level coordinators.
 
 # Questions
 

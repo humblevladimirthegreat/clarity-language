@@ -1,4 +1,3 @@
--grammatical number is based on universality
 -redo plurality
 -local llm systematically review entire lexicon
 -speed reading display

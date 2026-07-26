@@ -176,3 +176,13 @@ Aligns with number words: optional plural on a numeric referent uses the same **
 ## Number-word note
 
 [Number words](numbers.md) use the same optional **-sh** after their number-specific ending. Sense: the group containing that numeric referent (or plural of that numeric kind), consistent with this page.
+
+## Generics and *every K* (not **-sh**)
+
+Characterizing generics and universal-of-kind claims use [coordination](coordination.md#universals-domains-generics), not this plural suffix:
+
+- *every cat* → `zual g-catl` (nullary invert-**a** + SHARED kind)
+- soft *every … that comes to mind* → `zuam g-…`
+- habitual *always* / characterizing pattern → `hual` (circumstance)
+
+Do **not** use **-sh** to mean *all* / *every* / *in general*. **-sh** stays group-containing / plural-of-kind as above.
