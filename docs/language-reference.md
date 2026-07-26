@@ -242,7 +242,7 @@ Interrogative forces (**jol** / **jom**), yes/no vs fill-ask, multi-gap **fill-a
 
 # Values
 
-Ordinary **`/h/`** / **`/w/`** content defaults to **values** (needs): compound **`need x {a\|e\|o\|u}`** = stake (*satisfies* / *rather* / *instead* / *detracts*); endings = **contact channel** on **`xa` / `xe` / `xo`** (physical / mental / social / spiritual) or **changeability** on **`xu`**. **[values.md](values.md)**.
+Ordinary **`/h/`** / **`/w/`** content defaults to **values** (needs): compound **`need x {a\|e\|o\|u}`** = stake (*satisfies* / *rather* / *instead* / *detracts*); endings = **contact channel** on **`xa` / `xo`**, **preference standing** on **`xe`** (circumstantial / internal / habitual / protective), or **changeability** on **`xu`**. **[values.md](values.md)**.
 
 # Phonology and Phonotactics
 
