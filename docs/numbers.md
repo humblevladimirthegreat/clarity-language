@@ -1,6 +1,6 @@
 # Numbers
 
-Numerals are a **closed formal subsystem**, not ordinary lexicon roots. Quantifiers (*many*, *all*, *some*, …) are out of scope here. PoS prefixes are defined in [language-reference.md](language-reference.md); plural **-sh** in [plurality.md](plurality.md); general phonotactics live in [phonology.md](phonology.md); ordinary reference suffixes in [reference-suffix.md](reference-suffix.md). This page is the source of truth for numeral grammar, including [ranges](#ranges) (spans reuse [phrase fences](coordination.md), documented here).
+Numerals are a **closed formal subsystem**, not ordinary lexicon roots. Quantifiers (*many*, *all*, *some*, …) are out of scope here. PoS prefixes are defined in [language-reference.md](language-reference.md); plural **-sh** in [plurality.md](plurality.md); general phonotactics live in [phonology.md](phonology.md); ordinary reference suffixes in [reference-suffix.md](reference-suffix.md). This page is the source of truth for numeral grammar, including [ranges](#ranges) (spans reuse [phrase fences](coordination.md), documented here) and [measure phrases](#measure-phrases) (unit + amount for differentials and durations).
 
 A whole numeric value is **one word**, even when it contains several digit groups.
 
@@ -213,7 +213,7 @@ Within each digit group:
 - **Scientific register** is optional: exp-first, then **`ja`**, then mantissa with **`je`** after the leading digit (usual scientific shape). Example: `5.2487083e-4` → `bu` + `mo` + `ja` + `va` + `je` + `du` + `mo` + `ha` + `le` + `zo` + `ha` + `re`.
 - Bare OoM uses scalar marker **`ra`** (or **`ru`** if negative).
 - **Cents / fixed subunits:** an exponent need not be a multiple of 3 when the unit has a conventional subunit (e.g. dollars: `4e-2` for four cents). Same pattern for other fixed subunits if needed. Do **not** use **`jo`** for money subunits.
-- **No metric prefixes** in speech: prefer base unit + engineering exponent (`40e3` grams, not “40 kilograms”; `12e-9` meters, not “12 nanometers”).
+- **No metric prefixes** in speech or lexicon: see [measure phrases](#no-metric-prefixes) — base unit + engineering exponent / exact count (`40e3` grams, not “40 kilograms”; `12e-9` meters, not “12 nanometers”).
 
 ## Percent and percentage points
 
@@ -273,7 +273,7 @@ Time uses the existing number grammar; there is **no** fifth marker vowel and **
 |-----|-----|
 | **Clock / schedule** | Digit-string **`ro`** as bare `/h/`. Default **24h**. Fields left→right, commas orthographic only: hour, minute, optional seconds — `h_15,30l`, `h_15,30,00l`. |
 | **Calendar date** | Digit-string **`ro`**, ISO-ish fields: year, month, day — bare `h_2026,07,22l`, or modifier `g_2026,07,22l`. An explicit *date* host + `/b/` is optional when you want to name the relation; it is not required to license bare `hro` (bare `hro` already means time). |
-| **Duration** | Scalar **`ra`** / **`ru`** plus a lexicon **unit** (*hour*, *day*, …) in the clause — not a digit-string, not bare `hro`. Same engineering-exponent habits as other measures when useful. |
+| **Duration** | Scalar **`ra`** / **`ru`** plus a lexicon **unit** in a [measure phrase](#measure-phrases) (*hour*, *day*, …) — not a digit-string, not bare `hro`. Same engineering-exponent habits as other measures when useful. |
 | **Deixis / tense** | Ordinary lexicon `/h/` (*yesterday*, *ago*, *until*, mood/evidential). Numbers appear only for a numeric payload (*3 days ago* = relation + scalar + unit). |
 | **Non-time digit labels** | Host relation + `/b/` (`/h/` *on* + `b_101.1l`), or `/ɡ/` on a noun (*channel* `g_7l`) — **not** bare `h_…`. |
 
@@ -366,6 +366,45 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 
 In a sentence, the PoS attaches to that single number word (see [Parts of speech on numbers](#parts-of-speech-on-numbers); e.g. direct-object digit-string: `d_…l`). Prefer naming the whole with a `/ɡ/` **`jo`** percent (denominator patterns TBD).
 
+## Measure phrases
+<a id="measure-phrases"></a>
+<a id="units"></a>
+<a id="unit-amount"></a>
+
+A **measure** is a lexicon **unit** noun plus a scalar **amount** grading that unit — not two bare `/b/` arguments, and not a new number closer (unlike closed **`jo`** / **`ju`**).
+
+**Shape:** unit as the head noun in the needed slot; amount as ordinary `/ɡ/` scalar on that unit:
+
+| Slot | Shape | Gloss |
+|------|--------|--------|
+| Argument of a complex `/ɡ/` / `/h/` | `b-inchl g+2l` | *two inches* (one `/b/` NP) |
+| Subject / object / … | `z-hourl g+3l`, `d-meterl g+5l` | *three hours*, *five meters* |
+| Modifier on a noun | `g-inchl g+2l` on a host | rare; prefer unit as `/b/` or freestanding NP |
+
+Same endings and fuzzy **-m** habits as other number words on the amount (`g+2m` ≈ *about two*). The **unit** is ordinary lexicon (reference suffixes as usual). Do **not** encode open-class units inside the numeral word.
+
+### No metric prefixes
+<a id="no-metric-prefixes"></a>
+<a id="metric-prefixes"></a>
+
+**Metric prefixes are not lexicon roots.** There is no dictionary entry *kilometer*, *milligram*, *nanosecond*, and so on. Lexicon units are **base** (*meter*, *gram*, *second*, …). Scale the amount instead:
+
+| Prefer | Avoid |
+|--------|--------|
+| *meter* + amount in thousands / `e3` (or the exact count) | *kilometer* |
+| `b-meterl g+5400l` or `b-meterl g+5.4e3l` for 5.4 km | `*b-kilometerl g+5.4l` |
+| `b-graml g+40e3l` | *40 kilograms* as a prefixed unit word |
+
+Use [engineering exponents](#exponents) on the amount when convenient (`e3` / `e-3` / `e6` / …), or write the full scalar (`5400` meters). Same habit for other SI-style prefixes (*milli-*, *micro-*, *mega-*, …): keep the base unit; put the power of ten in the number.
+
+**Measured differentials** (*two inches taller*) put that measure NP as the **single `/b/`** on the SHARED scale adjective of a [comparative](comparatives.md#measured-differentials):
+
+`zel g-talll b-inchl g+2l z-Samn z-Lean` → *Sam is two inches taller than Lea*
+
+Vague degree stays `/w/` on the scale (`zel w-muchl g-talll …`) — no unit. Duration and other clause measures use the same unit+amount habit in whatever slot the relation needs.
+
+**Not this pattern:** percentage closers (**`jo`** / **`ju`**); bare multiplicative `/h/` factors (`h+1.5l`); stacking `b+2l b-inchl` as two arguments of one adjective.
+
 ## Ranges
 <a id="number-ranges"></a>
 <a id="numeric-ranges"></a>
@@ -407,7 +446,7 @@ Same under `/d/` `/b/` `/ɡ/` (`gel g+5l` = modifier *\<5*; `duel d+10l` = objec
 
 **Unspecified in a threshold:** bare **`e`** + **-r** = unspecified member of the *\< X* ray — `zer z+5l` → *some/whatever value \< 5* (under question → *which value \< 5?*). **`ue`** takes **no** **-r** (stacked forms never do — [coordination](coordination.md#unspecified-member-r-phrase)); there is no `zuer` threshold. For an unspecified value *\> 5*, use other wording for now (e.g. a two-endpoint span with an open high, once defined), not a reverse **-r** fence.
 
-Contrast: `zel z+3l z+5l` = *from 3 to 5* (two endpoints); `zel z+5l` = *\< 5* (unary threshold). `zel z-Samn` (non-number) stays ordinary *only Sam matters* / superlative-with-scale — **number conjunct only** triggers this reading.
+Contrast: `zel z+3l z+5l` = *from 3 to 5* (two endpoints); `zel z+5l` = *\< 5* (unary threshold). `zel z-Samn` (non-number) stays ordinary *only Sam matters* / [superlative-with-scale](comparatives.md) — **number conjunct only** triggers this reading.
 
 ### Half-open (exclude the high end only)
 
