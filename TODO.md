@@ -9,7 +9,7 @@
 
 Fold into `docs/language-reference.md` when decided; dictionary lists specific forms.
 
-- Sentence linkers: *therefore, however, meanwhile, in other words, next, finally*, *but* (in-clause *instead* / *except* / *including* / *rather* are prefix-less **al**/**am**/**an**/… in `docs/coordination.md`; sentence-level *instead* / *except* still TBD if needed)
+- Sentence linkers: *therefore, however, meanwhile, in other words, next, finally*, *but*, *instead*, *except*
 - Aside / parenthesis fences (begin-aside, end-aside), parallel to quotation markers
 
 ## Clause operators — `/j/` force vs `/h/` (not `/x/`)
