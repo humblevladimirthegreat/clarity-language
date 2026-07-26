@@ -76,7 +76,7 @@ Every sentence begins with an **utterance-frame** `/j/` cluster that includes **
 | /ɡ/ | adjective |
 | /w/ | adjective adjunct (modifies the previous `/ɡ/`) |
 | /h/ | adverb (mood / tense / evidentiality, adjuncts) |
-| x /ʒ/ | discourse marker (sentence linkers, quotation markers, …) |
+| x /ʒ/ | discourse marker (sentence linkers, [quote / mention / aside](quotations.md), …) |
 | j /dʑ/ | utterance marker (clause force, vocative, interjection) |
 
 There is no dedicated indirect-object prefix. Recipients and beneficiaries (English *to* / *for*) are expressed with a complex adverb (`/h/` + `/b/`) plus an argument noun, the same pattern as other verb-level prepositional-phrase meanings.
@@ -153,7 +153,7 @@ The left edge of a sentence is a `/j/` cluster in this order:
 
 Clause force closes the opener and does not appear in the clause body. A new clause-force `/j/` (after any vocatives/interjections of the new sentence) starts a new sentence. That is how sentence boundaries stay unambiguous under free word order.
 
-**Vocatives and interjections appear only in this left-edge cluster** (or as bare utterances below). They must not occur mid-clause or at the end of a sentence — otherwise a trailing `/j/` could be read as either the end of the current sentence or the start of the next. After a clause body, any non-force `/j/` begins the next utterance’s opener. Mid-sentence asides use discourse fences (`/x/`) when those exist, not floating `/j/`.
+**Vocatives and interjections appear only in this left-edge cluster** (or as bare utterances below). They must not occur mid-clause or at the end of a sentence — otherwise a trailing `/j/` could be read as either the end of the current sentence or the start of the next. After a clause body, any non-force `/j/` begins the next utterance’s opener. Mid-sentence asides use [aside fences](quotations.md) (`xlel` / …), not floating `/j/`.
 
 Bare vocatives and exclamations with no clause (e.g. only calling a name, or only *wow*) use `/j/` without clause force.
 
@@ -187,7 +187,7 @@ There is **no** bare word-level **coordinator** series. **`/z/` `/d/` `/b/` `/ɡ
 
 ## Discourse markers (`/x/`)
 
-Marked with x /ʒ/. Used for **discourse glue** that is not same-slot phrase/VP coordination: sentence linkers (*however*, *therefore*, *meanwhile*, *but*, …), **quotation markers** (see below), and related fences. The dictionary lists the specific forms. The same sound **x** also joins roots inside compound words (see [Phonotactics](phonology.md#phonotactics)); it is not used as an ordinary root consonant, so mid-word **x** always means “next root,” and word-initial **x** always means discourse marker.
+Marked with x /ʒ/. Used for **discourse glue** that is not same-slot phrase/VP coordination: sentence linkers (*however*, *therefore*, *meanwhile*, *but*, …), **quote / mention / aside fences** ([quotations.md](quotations.md)), and related fences. The dictionary lists linker roots; span markers are the closed **`xl-`** series. The same sound **x** also joins roots inside compound words (see [Phonotactics](phonology.md#phonotactics)); it is not used as an ordinary root consonant, so mid-word **x** always means “next root,” and word-initial **x** always means discourse marker.
 
 Phrase-level *and* / *or* / *none of* / *and/or* / ranked / invert joins are **not** general `/x/` linkers — they use `/z/` `/d/` `/b/` `/ɡ/` + the coordination vowels + ending (`zam`, `gam`, `zar`, `zor`, `zer`, `zur`, `zel`, `zael`, `zoel`, `zual`, `zuol`, `zuel`, …) with a **fence** (left preferred; right close allowed — [coordination.md](coordination.md)). **`/h/`** / **`/w/`** use those same forms as [circumstance restrictors](coordination.md#circumstance-restriction-h-w) (`hal` / `wal` / …). VP-level uses `/v/` (`vam`, `var`, `vel`, `vael`, `voel`, `vual`, `vuol`, `vuel`, …) — same fence; **-r** = unspecified action (*do something*). Clause-level forms **are** `/x/` + the same vowels + ending (`xal`, `xar`, `xel`, `xael`, `xoel`, `xual`, `xuol`, `xuel`, …) — see [coordination.md](coordination.md#clause-level-coordination).
 
@@ -206,11 +206,7 @@ The next-clause pronoun takes whatever PoS prefix the slot needs:
 * **Complement / content clause** — usually a core argument. Example: *I told him that…* → next-clause as direct object (`/d/`) of *tell* (or another role the verb requires).
 * **Adverbial relation** (*because*, *if*, *although*, *while*, *until*, …) — a complex adverb: `/h/` relation word + `/b/` next-clause pronoun. The lexicon entry names the relation; there is **no** separate `/x/` subordinator for these.
 
-`/x/` is only for discourse glue that does **not** occupy a main-clause slot (sentence linkers, quote/aside fences, [numbered enumeration](numbers.md#number-as-discourse-marker-by-marker)). Phrase-level uses `/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/`; VP-level uses `/v/`; clause coordination uses this vowel series under `/x/` ([coordination.md](coordination.md)). Do not encode *because* / *if*-style subordination as `/x/`.
-
-## Quotations
-
-When quoting someone, using a proper noun, using a foreign word, or using a slang word, you must use the square brackets \[ \]. Begin-quote, end-quote, and escape forms are **/x/-prefixed** words (the dictionary lists the specific forms). On the off chance you need to use a quotation marker word within the quotation, it is escaped with \\ or the escape form immediately before it. These spoken forms are probably not needed in casual speech, but can be helpful if speaking with voice-to-text or if you want to emphasize the quoting. 
+`/x/` is only for discourse glue that does **not** occupy a main-clause slot (sentence linkers, [quote / mention / aside fences](quotations.md), [numbered enumeration](numbers.md#number-as-discourse-marker-by-marker)). Phrase-level uses `/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/`; VP-level uses `/v/`; clause coordination uses this vowel series under `/x/` ([coordination.md](coordination.md)). Do not encode *because* / *if*-style subordination as `/x/`.
 
 # Reference Suffix
 
@@ -239,6 +235,10 @@ Phrase-level **zam** / **gam** / …, VP **vam** / **var** / …, and clause `/x
 # Questions
 
 Interrogative forces (**jol** / **jom**), yes/no vs fill-ask, multi-gap **fill-all**, and unary/nullary under question: **[questions.md](questions.md)**.
+
+# Quotations, mentions, and asides
+
+**`xl-`** span fences (speech only; writing = `[…]` / `{…}` / `(…)` with **`~`** before open = paraphrase; quote **a** / aside **e** / mention **o** / close **u**; **-l** exact / **-m** paraphrase; no **-n**): **[quotations.md](quotations.md)**.
 
 # Phonology and Phonotactics
 

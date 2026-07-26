@@ -4,9 +4,6 @@
 -speed reading display
 -rename grammatical constructs
 
-## Discourse markers (`/x/`) — expand beyond quotes + linkers
-
-Fold into `docs/language-reference.md` when decided; dictionary lists specific forms.
+## Discourse markers (`/x/`) — expand linkers
 
 - Sentence linkers: *therefore, however, meanwhile, in other words, next, finally*, *but*, *instead*, *except*
-- Aside / parenthesis fences (begin-aside, end-aside), parallel to quotation markers
