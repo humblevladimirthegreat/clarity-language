@@ -56,7 +56,7 @@ Same under `/d/` / `/b/` when the ranked group fills that slot. Under `/ɡ/`, SH
 
 Assert the ranking as clause content with the same predicative pattern as plain adjectives (zero-copula / light verb as elsewhere): `jal zel g-bigl z-Samn z-Lean` → *Sam is bigger than Lea.* When discourse needs the comparee alone as subject of another verb, keep that subject ordinary and place the comparative claim in another slot or sentence — do not force the whole ladder to be the only subject.
 
-**Number ranges** and **numeric thresholds** (unary ranked **`zel z+5l`** = *\<5*, **`zuel z+5l`** = *\>5*): **[numbers.md § Ranges](numbers.md#ranges)** — not expanded here.
+**Number ranges** (SHARED **continuum** `/ɡ/` + two number endpoints — not bare `zel z+3l z+5l`, which stays preference) and **numeric thresholds** (unary ranked **`zel z+5l`** = *\<5*, **`zuel z+5l`** = *\>5*): **[numbers.md § Ranges](numbers.md#ranges)** — not expanded here.
 
 ## Equatives (`ae` + SHARED scale)
 <a id="equatives"></a>
