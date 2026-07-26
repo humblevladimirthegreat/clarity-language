@@ -2,7 +2,7 @@
 -redo plurality
 -local llm systematically review entire lexicon
 -speed reading display
--allow optionality on conjunctions (*or none* — morphology TBD; not **-m**, not **u**-stacks; **ua**/**uo**/**ue** are invert / rank reversal; a revision?)
+-allow optionality on conjunctions (a revision?)
 
 ## Discourse markers (`/x/`) — expand beyond quotes + linkers
 
