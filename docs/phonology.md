@@ -36,7 +36,7 @@ A word contains these parts:
 2. optional mid-word **l** after the PoS prefix — **left-bound** on adjectives (`gl-`), or span-fence onset on discourse markers (`xl-`); see below
 3. the root(s) - multiple if compound word
 4. the [reference suffix](reference-suffix.md) (**-l**, **-m**, **-n**, or **-r**)
-5. optional plural **-sh** (the group containing the referent), after the reference suffix — see [plurality.md](plurality.md)
+5. optional plural **-sh** (group referent / collective `/ɡ/`), after the reference suffix — see [plurality.md](plurality.md)
 
 roots have form V(CV)+
 if a compound root, then **x** separates them

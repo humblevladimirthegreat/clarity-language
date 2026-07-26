@@ -12,7 +12,7 @@ Every content word ends with a **reference suffix** — one of four final conson
 2. **Left-bound `l`** — optional; **adjectives only** (`/ɡ/` → **`gl-`**). Marks [left-bound attachment](language-reference.md#adjectives-ɡ) (adjective before host). Not the word-final reference suffix **-l**.
 3. **Root(s)** — `V(CV)+`; compound roots join with **x** (see [phonology.md](phonology.md#phonotactics)).
 4. **Reference suffix** — **-l**, **-m**, **-n**, or **-r** (below).
-5. **Plural -sh** — optional; marks the **group containing** the referent, after the reference suffix (see [plurality.md](plurality.md)).
+5. **Plural -sh** — optional; marks a **group referent** (or collective `/ɡ/`), after the reference suffix — see [plurality.md](plurality.md).
 
 ## The four suffixes
 
@@ -88,7 +88,7 @@ Do **not** use **-n** for generic first mention (**-l** / **-m**) or for resumin
 
 ## Plural **-sh**
 
-Plural grammar (**-sh** after the reference suffix; how it interacts with PoS and **-l** / **-m** / **-n** / **-r**) lives in **[plurality.md](plurality.md)**. Short form: `…r` is one referent; `…rsh` is the group that includes that referent. Allowed word-final clusters: **-lsh**, **-msh**, **-nsh**, **-rsh** — see [phonology.md](phonology.md#phonotactics).
+Plural grammar (**-sh** after the reference suffix; group referent on nouns/verbs/vocatives; collective on `/ɡ/`; unused on `/w/` `/h/` `/x/` and number words) lives in **[plurality.md](plurality.md)**. Short form: `…r` is one referent; `…rsh` is the group that includes that referent. Allowed word-final clusters: **-lsh**, **-msh**, **-nsh**, **-rsh** — see [phonology.md](phonology.md#phonotactics).
 
 ## Number-word exception
 

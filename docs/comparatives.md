@@ -10,7 +10,7 @@ PoS prefixes: [language-reference.md](language-reference.md). Scale adjectives a
 |---------------------------|---------|
 | Ranked **`e` / `oe` / `ue`** | **Comparative / superlative** — conjuncts ordered **along** the scale |
 | **`ae`** | **Equative** — conjuncts **equal** on the scale (*as … as*) |
-| Boolean **`a`** | **Distributive** — each conjunct carries the SHARED property (*both ADJ*); non-scalar SHARED = [bundle description](coordination.md#scope-fence-p-coord) |
+| Boolean **`a`** | **Distributive** — each conjunct carries the SHARED property (*both ADJ*); SHARED `/ɡ/`…**-sh** = [**collective**](plurality.md#collective-ascription) (*ADJ together*); non-scalar SHARED = [bundle description](coordination.md#scope-fence-p-coord) |
 | **`o` / `ao`** | Not equative — SHARED stays bundle description (prefer non-scalar `/ɡ/`) |
 | Invert **`ua` / `uo`** | SHARED = [kind / domain](coordination.md#universals-domains-generics), not a comparison scale |
 
@@ -74,7 +74,7 @@ Assert the ranking as clause content with the same predicative pattern as plain 
 
 Open **-m** (`zaem`) = soft / approximate equality (*about as … as*). Closed **-l** = stand behind sameness on the scale for the claim. Named **-n** = conventional equal-set / draw label when useful.
 
-**Distributive *both are big* (not necessarily equal):** SHARED scale under **`a`**: `zal g-bigl z-Samn z-Lean` = *Sam and Lea are big*. Per-conjunct `/ɡ/` (or left-bound `gl-` per head) is still allowed when conjuncts differ in other material: `zam z-dogl g-bigl z-catl g-bigl`.
+**Distributive *both are big* (not necessarily equal):** SHARED singular scale under **`a`**: `zal g-bigl z-Samn z-Lean` = *Sam and Lea are big*. **Collective** (*ADJ as a unit*): SHARED `/ɡ/`…**-sh** under **`a`** — `zal g-heavylsh z-boxl z-cratel` = *heavy together* — see [plurality.md](plurality.md#collective-ascription). Per-conjunct `/ɡ/` (or left-bound `gl-` per head) is still allowed when conjuncts differ in other material: `zam z-dogl g-bigl z-catl g-bigl`. Scale adjectives in comparative / equative SHARED stay singular (no **-sh**).
 
 | Example | Gloss |
 |---------|-------|

@@ -7,14 +7,13 @@ A whole numeric value is **one word**, even when it contains several digit group
 ## Word shape
 
 ```
-[PoS] + r + V + ( [exponent?] [mantissa digits?] )* + [ending] + [sh?]
+[PoS] + r + V + ( [exponent?] [mantissa digits?] )* + [ending]
 ```
 
 1. **PoS** — same prefix inventory as elsewhere; [roles for number words](#parts-of-speech-on-numbers) below.
 2. **Number marker** — consonant **r** plus a vowel **V** (see [Marker vowel](#marker-vowel-referential-identity)). The PoS+`r` cluster is a [number-only phonotactic exception](phonology.md#phonotactics).
 3. **Zero or more digit groups** — each group is an optional exponent and optional mantissa digits (at least one of the two **when the group is present**). Digits compound with **no** **x** separator. There is **no per-group polarity**; sign (when it applies) is once for the whole word — see [Sign](#sign). **No groups** = [unspecified magnitude](#zero-digit-groups) of that marker identity (or [digitless **-r** anaphora](#number-endings)).
-4. **Ending** — `-l` / `-m` / `-n` / `-r` with [number-specific meanings](#number-endings) (not ordinary [reference suffix](reference-suffix.md) senses).
-5. **Plural `-sh`** — optional; same sense as elsewhere (the group containing that numeric referent) — see [plurality.md](plurality.md).
+4. **Ending** — `-l` / `-m` / `-n` / `-r` with [number-specific meanings](#number-endings) (not ordinary [reference suffix](reference-suffix.md) senses). Number words **do not** take plural **-sh** — group reference stays on ordinary nouns (see [plurality.md](plurality.md)).
 
 **Writing** uses a [preferred shorthand](#writing-preferred-shorthand) for the marker and body (`g+3l`, not *grarel*; digitless `g+l`, not *gral*); speech is always the full CV form.
 
@@ -192,7 +191,7 @@ A number word may omit every digit group: **PoS + marker + ending** only. The ma
 | **`re`** | `…#l` | Unspecified **rank** (*some nth* / *some place*) | Exact ranks stay `…#Nl`. |
 | **`ro`** | `…_l` | Unspecified **digit-string / label** (*some code*; *a label*) | Exact labels stay `…_…l`. |
 
-**Vs noun plural `-sh`:** `-sh` marks that a **referent is a group** ([plurality.md](plurality.md)). Digitless **`ra`** marks that a **count/amount is `>1`** without naming N. Often co-occur in practice (`z-catlsh` vs `z-catl g+l`), but they are different jobs — quantity vs group-reference. Do **not** treat `g+l` as a replacement for `-sh` on verbs, adjectives, or circumstance.
+**Vs noun plural `-sh`:** `-sh` marks that a **referent is a group** ([plurality.md](plurality.md)) — indefinite group introduction stays **-lsh** / **-msh**, not digitless. Digitless **`ra`** marks that a **count/amount is `>1`** without naming N. They are different jobs (quantity vs group-reference) and may co-occur (`z-catlsh g+3l`). Do **not** treat `g+l` as a replacement for noun **-lsh**, nor as plural morphology on verbs, circumstance, or number words themselves.
 
 **Vs fence `-r`:** phrase **`zar`** / **`zor`** / … pick an unspecified **member of an inventory**. Digitless number **-r** resumes a **prior numeric value**. Digitless number **-l** (etc.) introduces an unspecified magnitude of that marker — not inventory membership.
 
@@ -319,10 +318,10 @@ Endings: **-l** exact reading; **-m** fuzzy (*around 15:30*); **-n** conventiona
 
 ## Writing (preferred shorthand)
 
-Speech always uses the full CV grammar above. **Writing prefers shorthand** for the marker and body. **PoS**, **ending**, and optional **-sh** are still written as letters.
+Speech always uses the full CV grammar above. **Writing prefers shorthand** for the marker and body. **PoS** and **ending** are still written as letters.
 
 ```
-[PoS] + [marker] + [body] + [ending] + [sh?]
+[PoS] + [marker] + [body] + [ending]
 ```
 
 ### Marker (not written as `r`+V)

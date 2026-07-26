@@ -1,6 +1,6 @@
 # Plurality
 
-Plurality is marked by an optional suffix **-sh** after the [reference suffix](reference-suffix.md). It means the **group containing** the referent (or the plural of the kind being introduced), not a separate “they” lexeme. Details of anaphoric resume stay in [pronouns.md](pronouns.md); this page is the source of truth for when and how **-sh** applies.
+Plurality is marked by an optional suffix **-sh** after the [reference suffix](reference-suffix.md). It marks a **group as the discourse referent** — not a separate “they” lexeme, not quantity, not universality, and not habituality. Details of anaphoric resume stay in [pronouns.md](pronouns.md); this page is the source of truth for when and how **-sh** applies.
 
 ## Word shape
 
@@ -17,174 +17,167 @@ Allowed word-final clusters: **-lsh**, **-msh**, **-nsh**, **-rsh**. Phonotactic
 
 ## Core sense
 
-Without **-sh**, the word picks **one** referent (or one named / indefinite introduction). With **-sh**, it picks the **group that contains** that referent — or, on first mention, the **plural of that kind**.
+Without **-sh**, the word picks **one** referent (or one named / indefinite introduction). With **-sh**, the word’s referent is a **group** (introduced, named, or resumed) — or, on `/ɡ/`, a property predicated of a group **as one unit** ([collective](#adjectives-ɡ)).
 
 | Ending | Reading |
 |--------|---------|
 | `…l` / `…m` / `…n` / `…r` | singular (one referent / one introduction) |
-| `…lsh` / `…msh` / `…nsh` / `…rsh` | plural (the group / more than one of that kind) |
+| `…lsh` / `…msh` / `…nsh` / `…rsh` | group referent (or collective ascription on `/ɡ/`) |
 
 Example with resume: `…r` points at one prior noun; `…rsh` points at the **group that includes** that noun. The same **-sh** works on full words (`…lsh`, `…nsh`, etc.), not only on pronouns.
 
-**-sh** is not agreement: you do not copy number onto verbs, adjectives, or other dependents. Plurality is marked on the word whose referent is plural.
+**-sh** is not agreement: you do not copy number onto verbs, adjectives, or other dependents. Mark the word whose referent is the group (or whose ascription is collective).
+
+**Not **-sh**:**
+
+| Need | Use instead |
+|------|-------------|
+| count / amount **`>1`** without treating a set as the referent | digitless **`g+l`** (etc.) — [zero digit groups](numbers.md#zero-digit-groups) |
+| *all* / *every* / kind-generic | **`zual` / `zuam` + SHARED kind** — [universals](coordination.md#universals-domains-generics) |
+| habitual / characterizing pattern | nullary **`hual` / `huam`** — [circumstance](coordination.md#circumstance-restriction-h-w) |
+| *N times* / repetition count | [number words](numbers.md) under `/h/` (including digitless **`h+l`**) |
+| *everyone* (universal address) | nullary **`…ual`** (vocative / entity slot as usual) |
+
+Indefinite **group introduction** stays **-lsh** / **-msh** on nouns (and parallel event-set intro on verbs). Do **not** replace that job with digitless numbers.
 
 ## By reference suffix
 
-**-sh** keeps the reference suffix’s discourse job and only adds number.
+**-sh** keeps the reference suffix’s discourse job and only adds group reference (or collective ascription on `/ɡ/`).
 
 | Suffix + plural | Discourse job |
 |-----------------|---------------|
-| **-lsh** | Indefinite plural introduction, **literal** sense — first mention of *some / several Xs* (or “Xs” as a kind-group) |
-| **-msh** | Indefinite plural introduction, **metaphorical** sense — first mention of that figurative kind as a group |
-| **-nsh** | Plural of a **named designation** — a titled group, team, set of named individuals under one label, or other proper plural name |
-| **-rsh** | Definite plural resume — the **group containing** an already-introduced referent (letter or full-root **-r** stem) |
+| **-lsh** | Indefinite **group** introduction, **literal** sense — first mention of a discourse set of that kind (*some cats* as a set) |
+| **-msh** | Indefinite **group** introduction, **metaphorical** sense — first mention of that figurative kind as a set |
+| **-nsh** | **Named / titled group** — a proper plural name or designation that names a set (*the Beatles*, *Team Alpha*, *the Alps*) |
+| **-rsh** | Definite **group** resume — the group containing an already-introduced referent, or resume of a prior group (letter or full-root **-r** stem) |
 
-Bare **-l** / **-m** still always introduce; **-lsh** / **-msh** introduce a **plural** indefinite, not a resume. Resumption of a prior plural (or of a group built from a singular) is **-rsh**. Do not use **-lsh** / **-msh** to mean “those again.”
+Bare **-l** / **-m** still always introduce; **-lsh** / **-msh** introduce a **group** indefinite, not a resume. Resumption of a prior group (or of a group built from a singular) is **-rsh**. Do not use **-lsh** / **-msh** to mean “those again.”
 
-**-nsh** is for when the **name itself** is plural or names a group (*the Beatles*, *Team Alpha*, *the Alps* as a range name), not for “several people each named Sam” unless that is the intended titled set.
+**-nsh** is for when the **name itself** is plural or names a group, not for “several people each named Sam” unless that is the intended titled set.
+
+Do **not** read **-lsh** as kind-generic (*cats in general* / *all cats*) — that is **`zual g-…`**, not plural morphology.
 
 ## By part of speech
 
-The PoS prefix says what role the word plays **now**; **-sh** says the referent of that role is a group (or plural kind). Below: what plural usually means under each prefix. Reference-suffix choice (**-l** / **-m** / **-n** / **-r**) still follows [reference-suffix.md](reference-suffix.md).
+The PoS prefix says what role the word plays **now**; **-sh** says the referent of that role is a group — except on `/ɡ/`, where it marks [collective ascription](#adjectives-ɡ). Reference-suffix choice (**-l** / **-m** / **-n** / **-r**) still follows [reference-suffix.md](reference-suffix.md).
 
 ### Nouns (`/z/`, `/d/`, `/b/`)
 
-Natural home for **-sh**. Multiple entities in that argument slot: *cats*, *those people*, *the books on the table* (as a set). `/z/`…**-sh**, `/d/`…**-sh**, and `/b/`…**-sh** share the same “plural entity” reading; case/role comes only from the prefix.
+Natural home for **-sh**. The argument’s referent is a set: *some cats*, *those people*, *the books on the table* (as a set). `/z/`…**-sh**, `/d/`…**-sh**, and `/b/`…**-sh** share the same group-entity reading; case/role comes only from the prefix.
 
-* **-lsh** / **-msh** — first mention of several of that kind (*some cats*; metaphorical group under **-m**).
+* **-lsh** / **-msh** — first mention of a discourse group of that kind (*some cats*; metaphorical group under **-m**).
 * **-nsh** — a named plural / titled group (*the Beatles*, *the Alps*).
 * **-rsh** — the group containing a prior noun mention (*them* / *those* / *that group*).
 
+**Not noun -sh:** bare “more than one” when you only need quantity → singular noun + **`g+l`**. *Every cat* / *cats bark* (generic) → **`zual` / `hual`**, not **-lsh**.
+
 ### Verbs (`/v/`)
 
-Plural marks **more than one instance** of the doing — a set of events — not subject–verb agreement. A plural subject alone does **not** force **-sh** on the verb: *they cook* (one shared meal, or underspecified) stays singular `/v/`…; use `/v/`…**-sh** when you mean **several cookings** (tokens of the act).
+**-sh** marks an **event-set as discourse referent** — a set of doings you introduce, name, or resume — not subject–verb agreement, and not mere repetition count. A plural subject alone does **not** force **-sh** on the verb: *they cook* (one shared meal, or underspecified) stays singular `/v/`….
 
-**Contrast with `/h/`:** *three times* / habitual / *again* are clause framing (`/h/` or numbers). Verb **-sh** says the **verb’s own referent** is a plural set of doings — useful when you introduce, name, or resume that set as such.
+**Contrast with `/h/`:** *three times* / *multiple times* / habitual *always* are clause framing ([numbers](numbers.md) under `/h/`, or **`hual`**). Verb **-sh** is only when the **verb’s own referent** is a set of doings.
 
-* **-lsh** / **-msh** — first mention of several instances of that action kind.
-  * *She knocked (several times as one plural doing-set)* → `/v/` *knock*…**-lsh** (not “knock agrees with plural knocks on the door as subject”).
-  * *There were some meetings* (indefinite plural events) → `/v/` *meet*…**-lsh**.
+* **-lsh** / **-msh** — first mention of several instances of that action kind as one event-set.
+  * *There were some meetings* (indefinite plural events as a set) → `/v/` *meet*…**-lsh**.
   * Metaphorical under **-m**: *some “crashes”* (figurative failures as a set) → `/v/`…**-msh**.
 * **-nsh** — a **named series** or plural titled occurrence, not one rite.
   * Singular **-n**: *perform* **[Hamlet]** (that one titled show).
   * Plural **-nsh**: *the Olympic Games* / *the World Cups* as the named series of events (see [proper name](reference-suffix.md#proper-name--n)).
 * **-rsh** — resume a prior set of doings (letter or full-root **-r** + **-sh**).
-  * After mentioning several knocks: `/v/`…**-rsh** → *do those (knocks) again* / *those doings*.
+  * After mentioning several knocks as a set: `/v/`…**-rsh** → *those doings* / *do that set again*.
   * After one knock only: `/v/`…**-r** → that one doing; add **-sh** only if you mean the **group of** knockings already in discourse.
 
-**Not verb -sh:** plural *people* cooking once → plural on the **noun** (`/z/`…**-sh**), singular verb. Several separate cookings → verb **-sh** (and nouns plural only if those participants are also plural referents).
+**Not verb -sh:** plural *people* cooking once → plural on the **noun**, singular verb. *Knocked several times* as a count → **`h+3l`** / **`h+l`**, singular verb (unless the bout of knocks is itself the discourse set).
 
 ### Adjectives (`/ɡ/`)
+<a id="adjectives-ɡ"></a>
+<a id="collective"></a>
+<a id="collective-ascription"></a>
 
-**-sh** does **not** mean the property is “more,” and it is **not** noun-style agreement with a plural host. Number of entities stays on the noun (`/z/`…**-sh**, etc.). On adjectives that allow both readings, **-sh** marks **enduring / recurring trait** (a pattern of many episodes); **singular is the default** and means **temporary / occurrent** (*this state now*), not “this is who they are.”
+**-sh** does **not** mean the property is “more,” does **not** mark enduring trait (use **`hual`** / lexicon for characterizing patterns), and is **not** agreement with a plural host. Number of entities stays on the noun (`/z/`…**-sh**, etc.).
 
-Neither form is socially preferred: singular is the unmarked situation-reading; **-sh** is the pattern/character claim when you mean that.
+On `/ɡ/`, **-sh** marks **collective ascription**: the property holds of the **host set as one unit**, not of members severally (distributive / underspecified).
 
-* **Singular (default)** — occurrent ascription: *angry (now)*, *kind (in this act)*, *ungrateful (in this moment)*.
-* **-lsh** / **-msh** — first mention of that property as an **enduring pattern** (literal / metaphorical): *an angry (as a trait) person*, *habitually “crashing” types* under **-m**.
-* **-nsh** — enduring reading under a **named** category/style/affiliation when that label is used as character/identity frame (*a lifelong* **[Buddhist]** *as trait*, vs singular **-n** for the named label on this occasion only — see [proper name](reference-suffix.md#proper-name--n)).
-* **-rsh** — resume a prior **trait** ascription (*that enduring kindness* / *still that angry pattern*), not merely “those red ones.”
+| Shape | Reading |
+|-------|---------|
+| host set + singular `/ɡ/` | distributive or underspecified (*the boxes are heavy* — each, or don’t care) |
+| host set + `/ɡ/`…**-sh** | **collective** (*heavy as a pile*; *sufficient together*; *large as a team*) |
 
-**Stage-insensitive roots** (*wooden*, *prime*, material, many named styles as plain labels): singular = plain ascription (no forced “temporary wood”). **-sh** is rare; use it only if discourse truly needs a pattern-of-episodes reading, or prefer nouning / plural on the host noun for *the wooden ones*.
+Most useful with [phrase conjunction](coordination.md): SHARED singular scale under **`a`** is already **distributive** (*each is ADJ*); SHARED **/ɡ/…-sh** is **collective** (*ADJ as a unit*).
 
-**Not adjective -sh:** *red books* → plural on the **noun**, singular `/ɡ/` *red*. *She is angry right now* → singular `/ɡ/`. *She is an angry person* (character) → `/ɡ/`…**-sh**.
+| Example | Gloss |
+|---------|-------|
+| `zal g-heavyl z-boxl z-cratel` | *the box and the crate are (each) heavy* — distributive SHARED |
+| `zal g-heavylsh z-boxl z-cratel` | *the box and the crate are heavy together* — collective SHARED |
+| `zam z-boxl z-cratel g-heavylsh` | same collective reading with the adjective after the conjuncts |
+| `z-teamr g-largelsh` | *the team is large* (group-level size), not “each member is large” |
+| `z-boxlsh g-heavyl` | *the boxes are heavy* (members / plain) |
+| `z-boxlsh g-heavylsh` | *the boxes are heavy collectively* |
+
+* **-lsh** / **-msh** — first mention of that property as a **collective** ascription (literal / metaphorical).
+* **-nsh** — collective reading under a **named** category/style when the label applies to the set as a unit (rare; prefer singular **-n** for ordinary named labels on an occasion).
+* **-rsh** — resume a prior **collective** ascription (*still collectively so*), not “those red ones” (entity plurality stays on the noun).
+
+**Scale / continuum `/ɡ/`** in [comparatives](comparatives.md) and [ranges](numbers.md#ranges) stays **singular** — a scale or continuum is one line. Do not pluralize SHARED scale or continuum adjectives.
+
+**Not adjective -sh:** *red books* → plural on the **noun**, singular `/ɡ/` *red*. *She is an angry person* (character) → singular `/ɡ/` + **`hual`** / trait lexicon — not **-sh**. *Both are big* → distributive SHARED **`zal g-bigl …`**, not **-sh**.
 
 ### Adjective adjuncts (`/w/`)
 
-**-sh** marks **more than one application** of that adjunct to the host `/ɡ/` — several framing episodes — not “more intense” and not agreement with a plural noun. Singular = one framing of the property; **-sh** = a set of such framings (same event-plural idea as verbs).
-
-Speakers will not use nonsense combinations; there is **no lexicon ban** (degree, temporal, evidential, and named-scale `/w/` may all take **-sh** when the discourse referent is genuinely several applications).
-
-* **Singular (default)** — one frame on the adjective: *very (this boost)*, *former (that one past stage)*, *alleged (this ascription)*.
-* **-lsh** / **-msh** — first mention of several applications of that adjunct (literal / metaphorical): *several “very” boosts over the episodes*, *several former phases*, *several allegation-framings*.
-* **-nsh** — several applications under a **named** scale/grade/criterion, or a named plural set of criteria (*under those* **[Scoville]** *readings* as a set) — see [proper name on `/w/`](reference-suffix.md#adjective-adjuncts-w).
-* **-rsh** — resume that prior set of adjunct applications (*those former phases* / *those allegations again*).
-
-**Not `/w/` -sh:** plural *red books* → plural on the noun (and temporary/trait on `/ɡ/` if needed); do not mark the intensifier just because the host set is plural.
+**Do not use **-sh**.** Several applications or repeated framing are repetition / count (`/h/` + number) or separate mentions — not a group referent on the adjunct. Degree and frame stay singular.
 
 ### Adverbs (`/h/`)
 
-For most adverb roles, **-sh** mirrors adjectives: **singular (default) = situative** (this framing for this clause/occasion); **-sh** = **enduring / standing pattern** of that framing — not agreement with a plural subject, and not “more intensely.” Entity plurality stays on nouns (`/b/`…**-sh** for plural recipients or topics).
-
-Neither form is socially preferred: singular is the unmarked occasion-reading; **-sh** is the standing-pattern claim when you mean that.
-
-#### Roles where situative vs enduring is natural
-
-* **Manner** — singular: *carefully (this time)*; **-sh**: *carefully (as their way)*.
-* **Time / place** — singular: *on Tuesday / in Paris (that occasion)*; **-sh**: *on Tuesdays / in Paris (the usual schedule or venue)*.
-* **Recipient / beneficiary** (`/h/` *to*/*for* + `/b/`) — singular: *to Sam (this gift)*; **-sh**: *to Sam (standing / habitual beneficiary)*. Who is plural → `/b/`…**-sh**; `/h/`…**-sh** is the standing *to*-relation, not “many Sams.”
-* **Topic / aboutness** (`/h/` *regarding* + `/b/`) — singular: *regarding the budget (this remark)*; **-sh**: *regarding the budget (standing agenda / usual frame)*. Plural topic entities → `/b/`…**-sh**.
-* **Mood / evidentiality** — singular: *apparently / maybe (for this claim)*; **-sh**: *apparently (chronic hedge / default epistemic stance)*.
-* **Named circumstance** (`-n`) — singular: *on* **[channel 7]** / *in* **[Q3]** *(this broadcast / that quarter)*; **-sh** / **-nsh**: standing outlet or recurring titled slot (see [proper name](reference-suffix.md#adverbs-h)).
-
-Reference-suffix shape is the usual one: **-lsh** / **-msh** introduce an enduring frame; **-nsh** enduring under a named label; **-rsh** resumes a prior enduring framing (*that careful pattern* / *that standing Tuesday habit*).
-
-#### Roles where **-sh** is probably nonsensical
-
-Not banned — the morphology is legal — but situative vs enduring usually **does not make sense** here; prefer singular unless discourse truly needs something exotic (e.g. **-rsh** resume of a weird prior mention):
-
-* **Tense-like `/h/`** — “enduring past” / “chronic past-framing as character” is strained; one occasion’s time frame stays singular. Habit of events belongs on the verb, a time adjunct, or a dedicated habit root.
-* **Adverbial subordinators** (`/h/` *because* / *if* / … + `/b/` next-clause) — one relation to one following sentence is the normal case; “enduring because” is usually better as a habit root, multiple dependent sentences, or verb-level pattern. Stacking separate reason clauses beats a plural subordinator in ordinary speech.
-
-**Not `/h/` -sh:** plural subjects alone; plural recipients/topics alone (mark `/b/`); *three times* as a count (prefer [number words](numbers.md) under `/h/` when you mean a numeric repetition).
+**Do not use **-sh**.** Situative vs enduring / habitual framing is **`hual` / `huam`** (or a habit root), not plural morphology. Entity plurality stays on nouns (`/b/`…**-sh** for plural recipients or topics). Repetition count uses [number words](numbers.md) under `/h/`.
 
 ### Utterance markers (`/j/`)
 
 Depends on subclass (see [utterance markers](language-reference.md#utterance-markers-j)):
 
-* **Vocatives** — Address a **group**: *everyone*, *Team Alpha*, *you (pl.)* via group resume. **-lsh** for kind-based group address; **-nsh** for a titled group name; **-rsh** to call the group containing a prior addressee.
-* **Interjections** — Plural only when the shout’s referent is a plural formula or group call (rare). Most *wow* / *hello* stay singular.
-* **Clause force** — Do **not** use **-sh**. Force forms (`jal` / `jol` / `jel` / …) are a closed set and are not numbered.
+* **Vocatives** — Address a **group**: **-lsh** for kind-based group address (*hey, kids*); **-nsh** for a titled group name (*Team Alpha*); **-rsh** to call the group containing a prior addressee. *Everyone* → nullary **`…ual`**, not **-lsh**.
+* **Interjections** — **Do not use **-sh**.** Group calls belong on vocatives or nouns.
+* **Clause force** — **Do not use **-sh****. Force forms (`jal` / `jol` / `jel` / …) are a closed set and are not numbered.
 
 ### Discourse markers (`/x/`)
 
 * **In-clause revision** ([**al** / **am** / **an** / **el** / **em** / **en** / …](coordination.md#in-clause-revision-bare-a--e--o--u)) — No **-sh** (**-l** / **-m** / named **-n** ending only). Plurality is marked on each side independently (`z-dogl am z-catlsh`).
-* **NP- / AP-level coordinators** ([`zam`](coordination.md#np-level-coordination), `dal`, [`gam`](coordination.md#ap-level-coordination), …) — No **-sh** on the coordinator; plurality stays on each phrase conjunct (or on shared post-chain material when that material itself takes **-sh**).
+* **NP- / AP-level coordinators** ([`zam`](coordination.md#np-level-coordination), `dal`, [`gam`](coordination.md#ap-level-coordination), …) — No **-sh** on the coordinator; plurality stays on each phrase conjunct (or on SHARED `/ɡ/`…**-sh** when the ascription is [collective](#collective-ascription)).
 * **VP-level coordinators** ([`vam`](coordination.md#vp-level-coordination), `var`, …) — No **-sh** on the coordinator; plurality stays on material inside each VP conjunct.
 * **Clause coordinators** ([`xal`](coordination.md#clause-level-coordination), …) — Do **not** take **-sh**; plurality stays on material inside each sentence.
 * **`/x/` linkers / fences** (*but*, *however*, …) — Do **not** take **-sh**; they are glue, not plural referents.
 * **Quotation / fence markers** — Do not pluralize the fence; plural material *inside* the quote marks **-sh** on its own words.
-* **Named discourse glue** — **-nsh** / **-rsh** when the discourse label is a plural titled set or a resume of plural thread labels (*Items Zero–Two* as one named block, if that is the designation). Ordinary *firstly* stays singular **-l**.
+* **Named discourse glue** — **Do not use **-sh****. Title a block with singular **-n**; resume with **-r**.
 
-Aligns with number words: optional plural on a numeric referent uses the same **-sh** — see [numbers.md](numbers.md).
+### Number words
+
+[Number words](numbers.md) **do not take **-sh****. Quantity and numeric referents use marker + digits/ending (including [digitless](numbers.md#zero-digit-groups) forms). Group reference stays on ordinary nouns (or event-sets on verbs), not on the numeral.
 
 ## Summary
 
 | PoS | **-sh** means… |
 |-----|----------------|
-| `/z/` `/d/` `/b/` | Plural entities in that noun slot (the group / several of that kind) |
-| `/v/` | Plural instances or a set of doings (not agreement) |
-| `/ɡ/` | Enduring / trait reading (default singular = temporary / occurrent); not “more” and not host agreement |
-| `/w/` | Plural applications of that adjunct frame (not “more intense,” not host agreement) |
-| `/h/` | Situative vs enduring framing (most roles); tense & subordinators: legal but usually nonsensical |
-| `/j/` vocative | Address this group |
-| `/j/` interjection | (Rare) group / plural formula call |
+| `/z/` `/d/` `/b/` | Group entities in that noun slot (introduce / name / resume a set) |
+| `/v/` | Event-set as discourse referent (not agreement; not mere *N times*) |
+| `/ɡ/` | **Collective** ascription (property of the set as a unit); not trait, not “more,” not host agreement |
+| `/w/` | *(not used)* |
+| `/h/` | *(not used)* |
+| `/j/` vocative | Address this group (not *everyone* — that is **`…ual`**) |
+| `/j/` interjection | *(not used)* |
 | `/j/` clause force | *(not used)* |
-| `/x/` linkers / fences | *(not used)* |
+| `/x/` (all) | *(not used)* |
 | bare **al** / **am** / **an** / **el** / **em** / **en** / … | *(not used — ending only, no **-sh**)* |
-| `/z/` `/d/` `/b/` `/ɡ/` phrase coordinators (`zam`, `gam`, …) | *(not used — ending only, no **-sh**)* |
-| `/v/` VP coordinators (`vam`, `var`, …) | *(not used — ending only, no **-sh**)* |
-| `/x/` named discourse label | Plural titled thread/label set or resume thereof |
+| phrase / VP / clause coordinators | *(not used — ending only, no **-sh**)* |
+| number words | *(not used)* |
 
 | Reference + **-sh** | Means… |
 |---------------------|--------|
-| **-lsh** | First mention, literal, plural |
-| **-msh** | First mention, metaphorical, plural |
-| **-nsh** | Named / titled plural or group name |
-| **-rsh** | Resume: group containing the prior referent |
+| **-lsh** | First mention, literal, group (or collective `/ɡ/`) |
+| **-msh** | First mention, metaphorical, group (or collective `/ɡ/`) |
+| **-nsh** | Named / titled group (or rare named collective `/ɡ/`) |
+| **-rsh** | Resume: group containing the prior referent (or prior collective `/ɡ/`) |
 
-## Number-word note
+## Quantity, generics, and habit (not **-sh**)
 
-[Number words](numbers.md) use the same optional **-sh** after their number-specific ending. Sense: the group containing that numeric referent (or plural of that numeric kind), consistent with this page.
-
-**Quantity vs group-reference:** digitless positive scalar **`g+l`** (etc.) means count/amount **`>1`** without naming N — see [zero digit groups](numbers.md#zero-digit-groups). That is **not** a substitute for **-sh** on nouns, verbs, or other PoS; **-sh** stays group-containing / plural-of-kind as above.
-
-## Generics and *every K* (not **-sh**)
-
-Characterizing generics and universal-of-kind claims use [coordination](coordination.md#universals-domains-generics), not this plural suffix:
-
-- *every cat* → `zual g-catl` (nullary invert-**a** + SHARED kind)
-- soft *every … that comes to mind* → `zuam g-…`
-- habitual *always* / characterizing pattern → `hual` (circumstance)
-
-Do **not** use **-sh** to mean *all* / *every* / *in general*. **-sh** stays group-containing / plural-of-kind as above.
+- **Quantity `>1`:** digitless positive scalar **`g+l`** (etc.) — [zero digit groups](numbers.md#zero-digit-groups). Different job from noun **-lsh** (group as referent). They may co-occur when both are meant (`z-catlsh g+3l`), but **`g+l`** does not replace indefinite group introduction.
+- **Generics / *every K*:** [coordination](coordination.md#universals-domains-generics) — `zual g-catl`, `zuam g-…`, habitual **`hual`**.
+- **Do not** use **-sh** to mean *all* / *every* / *in general* / *always* / *as a character trait*.
