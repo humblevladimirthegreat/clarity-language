@@ -57,7 +57,7 @@ Depends on the subclass (see [utterance markers](language-reference.md#utterance
 
 * **Vocatives** — Natural home for **-n**. Address someone or something by name: *Sam!*, *Paris!* (as a city name). Kind-based address (*everyone*) stays **-l**; a titled group label (*Team Alpha*) takes **-n**. Prefer names here over speaker/listener special pronouns when a name exists.
 * **Interjections** — Mostly **-l** / **-m** (*wow*, *hello*). Use **-n** when the shout *is* a named formula or conventional call: **[Mazel tov]**, **[Amen]**, **[Bingo]** as the game’s proper call, branded catchphrases. Aligns with [number `/j/`…**-n**](numbers.md#number-as-interjection-by-marker) (conventional call name).
-* **Clause force** — Do **not** use **-n**. Force roots are a closed set (statement / question / imperative); they are not names.
+* **Clause force** — Do **not** use **-n** or **-r**. Force forms are the closed **`jal` / `jam` / `jol` / `jom` / `jel` / `jem` / `jul` / `jum`** set ([clause force](language-reference.md#clause-force)); they are not names.
 
 ### Discourse markers (`/x/`)
 

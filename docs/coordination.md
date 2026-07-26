@@ -739,7 +739,7 @@ Endorsement strength and evidentiality stay on each clause’s `/h/` (or `/w/`),
 
 ## Constraints
 
-- **Same clause force** on every conjunct (all statements, all questions, or all imperatives). Mixed force → separate sentences or [subordination](language-reference.md#dependent-clauses), not this join.
+- **Same clause force** on every conjunct (same `/j/` force form — e.g. all **jal**, all **jol**, all **jel**, …). Mixed force → separate sentences or [subordination](language-reference.md#dependent-clauses), not this join.
 - **No gapping / shared arguments** across conjuncts. Repeat material, or use phrase-level (NP / AP / …) or VP-level coordination inside one clause.
 - **Fence** — left preferred, right close allowed; nesting per [fence nesting](#fence-nesting); **no pure infix**.
 - **-r** is unspecified-member (`xar` / `xor` / `xer` / `xur`), not continue / “same linker again”. Unary/nullary allowed on **-r** forms and on negation **`xul` / `xum` / `xun`** among clause coordinators. Resume of a prior non-coordinator `/x/` linker still uses content-word **/x/`…`-r`** per [pronouns.md](pronouns.md).

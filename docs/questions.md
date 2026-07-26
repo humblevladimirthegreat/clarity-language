@@ -1,15 +1,15 @@
 # Questions
 
-This page is the source of truth for **interrogative** grammar: the **question** clause force, yes/no vs fill-ask, multi-gap **fill-all**, and how coordinator endings read under question force. Fence forms and their **statement** readings live in [coordination.md](coordination.md). Clause-force inventory and left-edge `/j/` order: [language-reference.md](language-reference.md#utterance-markers-j).
+This page is the source of truth for **interrogative** grammar: the **question** clause forces (**jol** / soft **jom**), yes/no vs fill-ask, multi-gap **fill-all**, and how coordinator endings read under question force. Fence forms and their **statement** readings live in [coordination.md](coordination.md). Full force inventory and left-edge `/j/` order: [language-reference.md](language-reference.md#clause-force).
 
 <a id="interrogative-force"></a>
 <a id="polar-question"></a>
 
-## Interrogative force (**question**)
+## Interrogative force (**jol** / **jom**)
 
-One clause-force `/j/` covers **all** asking — yes/no **and** content (*who* / *what* / *when?* / *what happened?*, …). Older docs called this **polar question**; that name meant the force, not “yes/no only.” There is **no** separate content-question speech act.
+**jol** (and soft **jom**) cover **all** asking — yes/no **and** content (*who* / *what* / *when?* / *what happened?*, …). Older docs called this **polar question**; that name meant the force, not “yes/no only.” There is **no** separate content-question speech act. **jom** is only a softer ask (wonder / gentle / offer-like); it does not change yes/no vs fill-ask.
 
-Under **question** force:
+Under **jol** / **jom**:
 
 | Body shape | Ask type |
 |------------|----------|
@@ -52,7 +52,7 @@ A fill **need not** keep **-r**: it may be a bare content word, unary **-l** / *
 
 ## Fill-ask (**-r** under question)
 
-Under **question** force, prefixed **-r** on **a** / **o** / **e** / **u** is the **content-question** series (ask to name the unspecified member). Statement readings (*something* / *anything* / …): [coordination.md](coordination.md#unspecified-member-r-phrase).
+Under **jol** / **jom**, prefixed **-r** on **a** / **o** / **e** / **u** is the **content-question** series (ask to name the unspecified member). Statement readings (*something* / *anything* / …): [coordination.md](coordination.md#unspecified-member-r-phrase).
 
 | Vowel | Nullary (phrase) | Nullary VP / clause | Under question (nullary) |
 |-------|------------------|---------------------|--------------------------|

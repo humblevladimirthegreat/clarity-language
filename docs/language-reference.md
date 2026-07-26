@@ -160,17 +160,24 @@ Bare vocatives and exclamations with no clause (e.g. only calling a name, or onl
 ### Clause force
 <a id="clause-force"></a>
 
-Every full sentence includes exactly one **clause-force** `/j/`. The closed set for now is:
+Every full sentence includes exactly one **clause-force** `/j/`. Forms are **`j` + coordination vowel + ending** (same letter jobs as [coordination](coordination.md#join-type-vowel-series)): vowel = illocution frame; **-l** = closed / committed; **-m** = open / soft. Do **not** use **-n** or **-r** on force (**-r** stays on body coordinators for unspecified-member / fill-ask).
 
-* **statement** — assertoric claim or description
-* **question** — interrogative (yes/no **and** content / fill-ask); formerly called *polar question* — see **[questions.md](questions.md)**
-* **imperative** — directive (command / instruction)
+| Form | Force | Letter logic |
+|------|--------|----------------|
+| **jal** | **statement** — assertoric claim or description | **a** inventory / holds + **-l** stand behind |
+| **jam** | **hedged statement** — tentative / provisional assert | **a** + **-m** open |
+| **jol** | **question** — yes/no **and** content / fill-ask; formerly *polar question* — **[questions.md](questions.md)** | **o** menu / pick-one + **-l** |
+| **jom** | **soft question** — wonder, gentle ask, offer-like question | **o** + **-m** |
+| **jel** | **imperative** — command / instruction | **e** ranked priority + **-l** |
+| **jem** | **request** — soft directive (*please…*) | **e** + **-m** |
+| **jul** | **prohibition** — *don’t…* (closed) | **u** negation + **-l** |
+| **jum** | **soft prohibition** — *please don’t…* / *I’d rather you not…* | **u** + **-m** |
+
+
 
 **Numbers are not clause force.** A `/j/` number word is an [interjection](numbers.md#number-as-interjection-by-marker) (*N more!*, deficit/shortfall call, digit-label / score call, place cheer). It may sit in the left-edge cluster before force, or stand alone as a bare utterance with no force.
 
-Other speech acts (request, promise, wish, evaluative judgment, and so on) are not separate forces yet — express them with ordinary vocabulary under one of these three; the dictionary may add dedicated force forms later.
-
-Interrogative grammar (yes/no vs fill-ask, multi-gap **fill-all**, unary/nullary under question): **[questions.md](questions.md)**.
+Interrogative grammar (yes/no vs fill-ask, multi-gap **fill-all**, unary/nullary under **jol** / **jom**): **[questions.md](questions.md)**.
 
 ## Phrase-level, VP-level, and clause-level coordination
 
@@ -227,7 +234,7 @@ Phrase-level **zam** / **gam** / …, VP **vam** / **var** / …, and clause `/x
 
 # Questions
 
-Interrogative force (**question**), yes/no vs fill-ask, multi-gap **fill-all**, and unary/nullary under question: **[questions.md](questions.md)**.
+Interrogative forces (**jol** / **jom**), yes/no vs fill-ask, multi-gap **fill-all**, and unary/nullary under question: **[questions.md](questions.md)**.
 
 # Phonology and Phonotactics
 

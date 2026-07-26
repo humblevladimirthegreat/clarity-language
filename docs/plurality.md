@@ -134,7 +134,7 @@ Depends on subclass (see [utterance markers](language-reference.md#utterance-mar
 
 * **Vocatives** — Address a **group**: *everyone*, *Team Alpha*, *you (pl.)* via group resume. **-lsh** for kind-based group address; **-nsh** for a titled group name; **-rsh** to call the group containing a prior addressee.
 * **Interjections** — Plural only when the shout’s referent is a plural formula or group call (rare). Most *wow* / *hello* stay singular.
-* **Clause force** — Do **not** use **-sh**. Force roots are a closed set and are not numbered.
+* **Clause force** — Do **not** use **-sh**. Force forms (`jal` / `jol` / `jel` / …) are a closed set and are not numbered.
 
 ### Discourse markers (`/x/`)
 
