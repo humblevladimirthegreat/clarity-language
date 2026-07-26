@@ -1,7 +1,8 @@
 -local llm systematically review entire lexicon
 -speed reading display
--rename grammatical constructs
+-values
 
-## Discourse markers (`/x/`) — expand linkers
-
+Dictionary entries:
+-percent denominators
+-special pronouns
 - Sentence linkers: *therefore, however, meanwhile, in other words, next, finally*, *but*, *instead*, *except*

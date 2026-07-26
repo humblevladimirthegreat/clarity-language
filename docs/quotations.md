@@ -62,6 +62,8 @@ Spoken open/close may be omitted in casual speech when the listener has writing 
 
 Only **a** / **e** / **o** / **u**. Close is always **u** (stack pop); open vowels choose the span type (and match the written bracket shape).
 
+Mnemonics track the [join series](coordination.md#join-type-vowel-series) loosely (same atoms as [revisers](revisers.md)): **a** additive → quote (*include* attributed speech); **e** rank → aside (secondary / digression track); **o** choice → mention (form as designated label / exclusive surface); **u** negation → close (pop / end the open frame). The job is **edge type**, not revision or set/rank join.
+
 | Vowel | Role | Forms | Writing |
 |-------|------|--------|---------|
 | **a** | **quote open** | `xlal` · `xlam` | `[` / `~[` |
