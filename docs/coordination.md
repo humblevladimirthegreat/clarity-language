@@ -6,7 +6,7 @@ PoS prefixes and ordinary word shape: [language-reference.md](language-reference
 
 **List shapes:** **Phrase-level**, **VP-level**, and **clause-level** all use a **fence**: prefixed coordinator plus optional shared modifiers **immediately after** that coordinator; conjuncts juxtaposed (no mid-chain continue particle). **-r** on **a** / **o** / **e** / **u** is the [unspecified-member](#unspecified-member-r-phrase) series at every level (*something* / *anything* / *whatever-by-rank* / *something else* — VP: *do something* / …; clause: *something happened* / …). Bare **u** = [negation](#negation-u) (*not* / *none of* / bare *no*). Leading **u** on **a** / **o** / **e** = [invert](#invert-u-stacks) (*everything but* / *anything but* / **rank reversal**). **Left fence** (coordinator before the conjuncts) is preferred; **right close** (coordinator after the conjuncts) is allowed for style or comedy. **Nesting** uses extra fences: left stack = right-associative, right stack = left-associative; **pure infix is illegal** — see [fence nesting](#fence-nesting).
 
-Prefixed forms are **joiners** (boolean lists plus directional **ranked conjunction**), not only symmetric conjunctions. Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** are a separate **revision** series — see [below](#in-clause-revision-bare-a--e--o--u).
+Prefixed forms are **joiners** (boolean lists plus directional **ranked conjunction**), not only symmetric conjunctions — except under **`/h/`** and **`/w/`**, where the same forms are [circumstance restrictors](#circumstance-restriction-h-w) (applicability), not sibling *and* of modifiers. Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** are a separate **revision** series — see [below](#in-clause-revision-bare-a--e--o--u).
 
 ## Join type × ending (shared)
 
@@ -89,7 +89,7 @@ Mnemonic: **-r** = member not named; vowel = frame (**a** = inventory existence;
 - `zar A B` = some one **among** A and B. `zur A B` = some one **other than** A and B. `zual A B` = *everything but* A and B (all other than these). `zul A B` = *none of* A or B.
 - Revision **`ul` / `um`**: *except* a named right-hand side. Prefixed **`zur`**: unspecified *something else* / other than the listed, not an *except*-revision particle. Prefixed **`zul` / `zum`**: [negation](#negation-u) (*not X* / bare *no*), not revision *except*. Not antonymy (*the opposite of X*) — other than the named/listed only.
 
-**Under [polar question](language-reference.md#utterance-markers-j) force:** these forms are the **content-question** series (ask to name the unspecified member). Nullary `zar` / `zor` / `zer` / `zur` → *Who/what?* / *What (anything)?* / *What’s the priority?* / *What else?* / *Who else?*; nullary `var` / `vor` / `ver` / `vur` → *What (did they) do?* / *Do anything?* / *What’s the priority (to do)?* / *What else (did they do)?*; nullary `xar` / `xor` / `xer` / `xur` → *What happened?* / *Anything?* / *What’s the priority (as outcome)?* / *What else happened?*; unary / multi parallel the phrase pattern in the queried slot. The answer **need not** keep **-r**: a fill may be a bare content word, unary **-l** / **-m** / **-n**, or a longer list with any allowed ending. Unbound *who* / *what* / *where* = nullary phrase **-r** in the queried slot (PoS = role); unbound *what did they do?* / *what happened?* = nullary **`var`** / **`xar`** (etc.) — no separate interrogative pronoun. Ordinary negation is bare **u** ([negation](#negation-u)), not a separate `/h/` root. NPI-flavored *anything* (if needed later) is still not `zor` / `vor` / `xor` themselves — those are free-choice, not negative-polarity markers. *What’s wrong?* / *something’s amiss* is **not** this series — leftover lexicon (`/h/` or other root) if needed.
+**Under [polar question](language-reference.md#utterance-markers-j) force:** these forms are the **content-question** series (ask to name the unspecified member). Nullary `zar` / `zor` / `zer` / `zur` → *Who/what?* / *What (anything)?* / *What’s the priority?* / *What else?* / *Who else?*; nullary `var` / `vor` / `ver` / `vur` → *What (did they) do?* / *Do anything?* / *What’s the priority (to do)?* / *What else (did they do)?*; nullary `xar` / `xor` / `xer` / `xur` → *What happened?* / *Anything?* / *What’s the priority (as outcome)?* / *What else happened?*; nullary `har` / `hor` / `hur` (and `/w/` twins `war` / `wor` / `wur`) → *When?* / *Anytime?* / *When else?* — see [circumstance restriction](#circumstance-restriction-h-w) (`her` / `wer` undefined); unary / multi parallel the phrase pattern in the queried slot. The answer **need not** keep **-r**: a fill may be a bare content word, unary **-l** / **-m** / **-n**, or a longer list with any allowed ending. Unbound *who* / *what* / *where* = nullary phrase **-r** in the queried slot (PoS = role); unbound *what did they do?* / *what happened?* = nullary **`var`** / **`xar`** (etc.); unbound *when?* = nullary **`har`** (etc.) — no separate interrogative pronoun. Ordinary negation is bare **u** ([negation](#negation-u)), not a separate `/h/` root. NPI-flavored *anything* (if needed later) is still not `zor` / `vor` / `xor` themselves — those are free-choice, not negative-polarity markers. *What’s wrong?* / *something’s amiss* is **not** this series — leftover lexicon (`/h/` or other root) if needed.
 
 **-r** is a **whole-fence** coordinator (`zar` / `var` / `xar` alone, or with conjuncts), same placement rules as `zam` / `vam` / `xam`. Do not write `zam A zar B` or `vam A var B` as a mid-chain extender.
 
@@ -138,6 +138,8 @@ A **one-conjunct** (**unary**) or **zero-conjunct** (**nullary**) fence is allow
 Unbound *who* / *what* / *where* = nullary **…ar** / **…or** / **…er** / **…ur** in the queried slot. **Length 2+** (no separate table): **-l** = pick from this closed menu (esp. **o** / **oe**); **-m** = pick, or name something else (still not “none” — optionality deferred); **u** = *none of* the listed; **ua** / **uo** = complement of the listed (*everything but* / *anything but* these); **ue** = reverse-rank among the listed; **…ar** / **…or** / **…er** = content Q among the listed (*which of these?* / *any of these?* / *whichever ranks highest?*); **…ur** = content Q for other than the listed (*what else?* / *other than these?*).
 
 **Ranked — unary**
+
+Under `/h/` / `/w/`, only the [defined core](#circumstance-restriction-h-w) uses circumstance glosses (*only when X*, *never*, *always*, …); other unary/nullary spellings under those prefixes are undefined here.
 
 | Form | Unary reading | Contrast | Under question |
 |------|---------------|----------|----------------|
@@ -208,7 +210,7 @@ Unbound *who* / *what* / *where* = nullary **…ar** / **…or** / **…er** / *
 
 Examples (unary): `zem z-truthrl` → *truth first* / *mainly truth*; `zel z-truthrl` → *only truth matters*; `zoem z-fixl` → *try a fix first*; `zoel z-fixl` → *only try a fix*; `zuem z-dessertl` → *dessert last*; `zuel z-dessertl` → *dessert last, period*; `zen z-safetyl` → *safety first* (stock); `zer z-safetyl` → *safety as a priority*; `zal z-waterl` → *just water*; `zam z-Samn` → *Sam, for one*; `zol z-waterl` → *has to be water*; `zom z-coffeel` → *say, coffee*; `zual z-teal` → *everything but tea*; `zuol z-coffeel` → *anything but coffee*; `zaol z-waterl` → *water’ll do*; `zaom z-waterl` → *at least water*; `zul z-Samn` → *not Sam*; `gul g-bigl` → *not big*; `gum g-bigl` → *not big (among denials)*; `zar z-personl` → *some (unknown) person*; `zor z-personl` → *any person*; `zur z-contractl` → *something other than the contract*.
 
-Examples (nullary): `zal` → *nothing* / *nobody*; `zam` → *nothing comes to mind*; `zan` → *null* / *void*; `zol` → *no options* / *we’re stuck*; `zom` → *I got no pick*; `zual` → *everything* / *everyone*; `zuol` → *anything (goes)*; `zaol` → *all set*; `zaom` → *nothing I need*; `zul` → *no*; `zum` → *no from me*; `zar` → *something* / *someone*; `zor` → *anything* / *anyone*; `zer` → *whatever’s most important*; `zur` → *something else* / *someone else*; `zel` → *don’t care*; `zem` → *I don’t have a ranking*; `zoem` → *not sure where to start*; `zoel` → *do nothing* / *don’t bother*; `zuel` → *don’t care (ascending)*; `zen` → *it’s a draw* / *tie*. Same under `/d/` `/b/` `/ɡ/` `/w/` `/h/` (`dal`, `gam`, `zar`, `zor`, `zer`, `zur`, `zul`, …).
+Examples (nullary): `zal` → *nothing* / *nobody*; `zam` → *nothing comes to mind*; `zan` → *null* / *void*; `zol` → *no options* / *we’re stuck*; `zom` → *I got no pick*; `zual` → *everything* / *everyone*; `zuol` → *anything (goes)*; `zaol` → *all set*; `zaom` → *nothing I need*; `zul` → *no*; `zum` → *no from me*; `zar` → *something* / *someone*; `zor` → *anything* / *anyone*; `zer` → *whatever’s most important*; `zur` → *something else* / *someone else*; `zel` → *don’t care*; `zem` → *I don’t have a ranking*; `zoem` → *not sure where to start*; `zoel` → *do nothing* / *don’t bother*; `zuel` → *don’t care (ascending)*; `zen` → *it’s a draw* / *tie*. Same under `/d/` `/b/` `/ɡ/` (`dal`, `gam`, `zar`, `zor`, `zer`, `zur`, `zul`, …). Under `/h/` / `/w/`, only the [defined core](#circumstance-restriction-h-w) applies (`hal` → *never*; `hual` → *always*; `har` → *sometime*; …) — not these entity/property emptiness readings.
 
 Do not confuse prefixed **…em** / **…el** / **…en** / **…er** / **…al** / **…am** / **…an** / **…ol** / **…om** / **…ual** / **…uam** / **…uol** / **…uom** / **…uel** / **…uem** / **…ul** / **…um** / **…ur** / **…ar** / **…or** with bare revision **em** / **el** / **en** / **al** / **am** / **an** / **ol** / **om** / **ul** / **um** (*or rather* / *including* / *instead* / *except*).
 ### Exclusivity, negation (`u`), and invert
@@ -216,12 +218,12 @@ Do not confuse prefixed **…em** / **…el** / **…en** / **…er** / **…al*
 
 - **Exclusive (`o`)** — pick **one** of the conjuncts, not more than one.
 - **Inclusive (`ao`)** — one **or** more of the conjuncts may hold (English *and/or*). Built by combining **a** with **o**; bare **o** stays exclusive.
-- **Negation (`u`)** — the listed conjuncts **fail** (none of them hold). Same vowel at every level (phrase / VP / clause); no separate `/h/` or `/w/` “not” root for ordinary polarity.
+- **Negation (`u`)** — the listed conjuncts **fail** (none of them hold). Same vowel at every level (phrase / VP / clause); no separate `/h/` or `/w/` “not” root for ordinary polarity. Under **`/h/`** / **`/w/`**, **u** denies **applicability circumstances** (*not when…*), not manner polarity — see [circumstance restriction](#circumstance-restriction-h-w).
   | Length | Reading |
   |--------|---------|
-  | **2+** (multi) | *none of* the listed — `zul A B`, `vul A B`, `xul A B` |
-  | **1** (unary) | *not X* — `zul X`, `vul v-runl` (*didn’t run*), `gul g-bigl` (*not big*), `hul h-quicklyl` (*not quickly*), `xul SENT` (*not SENT*) |
-  | **0** (nullary) | bare *no* — `zul` / `vul` / `xul` (closed); open twin **…um**; soft VP/clause **…un**. Contrast nullary **…al** (*nothing* / *nobody* as empty inventory) and nullary **…oel** (*do nothing* as empty exclusive triage). |
+  | **2+** (multi) | *none of* the listed — `zul A B`, `vul A B`, `xul A B`; circumstance: `hul A B` → *not when A or B* |
+  | **1** (unary) | *not X* — `zul X`, `vul v-runl` (*didn’t run*), `gul g-bigl` (*not big*), `xul SENT` (*not SENT*); circumstance: `hul h-rainl` → *not when raining* |
+  | **0** (nullary) | bare *no* — `zul` / `vul` / `xul` (closed); open twin **…um**; soft VP/clause **…un**. Contrast nullary **…al** (*nothing* / *nobody* as empty inventory) and nullary **…oel** (*do nothing* as empty exclusive triage). Circumstance: nullary **`hal`** = *never*; nullary **`hual`** = *always*; nullary **`hul` / `hum`** are **undefined** under `/h/` / `/w/` — use `xul` / `vul` / `zul` for bare *no*. |
   **-l** vs **-m** mark whether the denial is limited to what’s named (**…ul**) or leaves room for further denials (**…um**); phrase **-n** names a conventional *none of* / denial bundle; VP/clause soft **-n** = soft / reconstructed denial. **-r** on **u** is *something else* / *someone else* (other than), not *not* — see [unspecified-member](#unspecified-member-r-phrase). Prefixed **`zul` / `vul` / …** are **not** revision **`ul` / `um`** (*A except B*). Nest fences for scope: `vul val A B` → ¬(A ∧ B); `val vul A vul B` → (¬A) ∧ (¬B).
 - **Invert (`ua` / `uo` / `ue`)** — leading **u** on **a** / **o** / **e** flips the base join. Contrast bare **u** (negation) vs **u**-stacks (complement or reverse). **-m** does **not** imply empty-allowed / *or none* — only that unlisted conjuncts may exist. Optionality morphology is deferred.
   - **`ua`** — everything but the listed (domain minus the conjuncts).
@@ -359,8 +361,8 @@ Word shape: role prefix + vowel root (+ second vowel for inclusive forms) + endi
 | `/d/` | direct-object NP |
 | `/b/` | argument NP (of a complex `/ɡ/` or `/h/`) |
 | `/ɡ/` | adjective phrase (one `/ɡ/` stack position on a host) |
-| `/w/` | adjective-adjunct chain on one host `/ɡ/` |
-| `/h/` | adverb unit chain (one floating contiguous unit) |
+| `/w/` | **circumstance restriction** on the preceding host `/ɡ/` — [below](#circumstance-restriction-h-w); not sibling adjunct *and* |
+| `/h/` | **circumstance restriction** on the clause (floating) — [below](#circumstance-restriction-h-w); not sibling adverb *and* |
 
 Writing: `zal` / `zam` / `zan` / `zar` / `zol` / `zom` / `zor` / `zul` / `zum` / `zur` / … / `zel` / `zem` / `zen` / `zer`; same under `/d/`, `/b/`, `/ɡ/` (`gal` / `gam` / …), `/w/` (`wal` / `wam` / …), `/h/` (`hal` / `ham` / …). Stacked vowels glue in writing: inclusive **ao** `zaol` / `zaom` / `zaon`; co-satisfiable ranked **ae** `zael` / `zaem` / `zaen`; exclusive ranked **oe** `zoel` / `zoem` / `zoen`; invert **ua** `zual` / `zuam` / `zuan`; **uo** `zuol` / `zuom` / `zuon`; **ue** `zuel` / `zuem` / `zuen` (and the same under `/d/` `/b/` `/ɡ/` `/w/` `/h/`). Spoken order is first vowel then next then ending (**a** then **o**; **u** then **a**; **u** then **o**; **o** then **e**; **u** then **e**; …). No three-vowel stacks. Phrase **-r** forms are **`zar`** / **`zor`** / **`zer`** / **`zur`** (and the same under other phrase prefixes) — not `zaor`, `zaer`, `zoer`, `zuar`, `zuor`, `zuer`, ….
 
@@ -393,7 +395,7 @@ P-COORD ( SHARED )*                 ← nullary (same as left when empty)
 - All other phrase coordinators need **two or more** conjuncts.
 - Single-word siblings: `zam z-dogl z-catl` or `z-dogl z-catl zam` (*a dog and a cat* — open).
 - Unspecified-member: `zar` → *something*; `zar z-personl` / `z-personl zar` → *some (unknown) person*; `zar z-teal z-coffeel` → *some one among tea and coffee*; `zor` → *anything*; `zor z-personl` → *any person*; `zor z-teal z-coffeel` → *any of tea or coffee*; `zer` → *whatever’s most important*; `zer z-safetyl` → *safety as a priority*; `zer z-teal z-coffeel` → *whichever of tea or coffee ranks higher*; `zur` → *something else*; `zur z-contractl` → *something other than the contract*; `zur z-costl z-riskl` → *something other than cost and risk*.
-- Negation: `zul z-Samn` → *not Sam*; `gul g-bigl` → *not big*; `hul h-quicklyl` → *not quickly*; `zul z-teal z-coffeel` → *none of tea or coffee*; `zul` → *no*; `zum` → *no from me*.
+- Negation: `zul z-Samn` → *not Sam*; `gul g-bigl` → *not big*; `zul z-teal z-coffeel` → *none of tea or coffee*; `zul` → *no*; `zum` → *no from me*. Circumstance denial: `hul h-rainl` → *not when raining* ([below](#circumstance-restriction-h-w)).
 
 **Ranked** (`zel` / `zael` / `zoel` / `zuel`, `zem` / …, `zen` / …): ranking from **spoken conjunct order** (before a right-close coordinator) — **e**/**ae**/**oe** earlier≻later; **ue** later≻earlier — see [ranked conjunction](#ranked-conjunction-e). Unary / nullary: [unary and nullary](#unary-phrase).
 ### Scope fence (`P-COORD`)
@@ -425,7 +427,7 @@ Complex adjective on an NP bundle: `zam g-ofl b-Samn z-dogl z-catl` or `z-dogl z
 
 ### End of list
 
-- **Left fence — same-prefix absorb** — after `P-COORD` (and any `SHARED`), every following matching-role head (plus its local modifiers) is a **conjunct** until the list ends. For AP `/ɡ/` on one host, that means you cannot stack an extra non-coordinated `/ɡ/` on the same noun after a `gam`… join; put further description in another sentence, or include it as another conjunct. Same absorb rule for `/w/` and `/h/` left-fence chains.
+- **Left fence — same-prefix absorb** — after `P-COORD` (and any `SHARED`), every following matching-role head (plus its local modifiers) is a **conjunct** until the list ends. For AP `/ɡ/` on one host, that means you cannot stack an extra non-coordinated `/ɡ/` on the same noun after a `gam`… join; put further description in another sentence, or include it as another conjunct. Same absorb rule for `/w/` and `/h/` left-fence [circumstance](#circumstance-restriction-h-w) chains (conjuncts = circumstance units, not co-manner stacks).
 - **Right close — lookback absorb** — matching-role heads (plus local modifiers) **immediately before** `P-COORD` are the conjuncts; clause-level floating `/h/` inside that stretch is transparent (below). After right-close `P-COORD` / `SHARED`, the coordinated phrase is finished — a later matching-role head is **not** another conjunct of this list.
 - **Leaving the role** — a following word with a **different** clause/role prefix that is not local modifier material (and not `SHARED` after the fence) ends the list (e.g. after a `/z/` join, `/d/`, `/v/`, `/h/` as clause adverb, `/j/`, `/x/`, …).
 - **Floating `/h/` inside an NP/AP/`/b/` join** — clause-level `/h/` (simple or `/h/`+`/b/`) is **transparent**: it does not end the list and is not a conjunct; a later matching-role head is still a conjunct (left absorb) or still part of the lookback stretch (right close). (VP-chain `/h/` scope is different — see [VP-level](#vp-level-coordination).)
@@ -466,26 +468,125 @@ Complex adjective on an NP bundle: `zam g-ofl b-Samn z-dogl z-catl` or `z-dogl z
 - `gen g-redl g-yellowl g-bluel` — conventional display order *red ≻ yellow ≻ blue* (named **-n**)
 - `gaen g-Christianl g-Conservativel g-Republicanl` — conventional identity ranking *Christian ≻ Conservative ≻ Republican* (named **-n**, co-satisfiable)
 
-**`/w/` / `/h/`**
+**`/w/` / `/h/` — circumstance restriction (not sibling *and*)**
 
-- `wam w-veryl w-recentl` on a preceding `/ɡ/` — *very and recently* (open adjunct chain) as one stack on that adjective
-- `w-veryl w-recentl wam` — same with right close
-- `ham h-quicklyl h-quietlyl` — *quickly and quietly* as one floating adverb unit (open)
-- `h-quicklyl h-quietlyl ham` — same with right close
+Sibling manner / degree / mood stacking uses **juxtaposition**, not a fence: `h-quicklyl h-quietlyl` → *quickly and quietly*; `w-veryl w-recentl` on a `/ɡ/` → *very* and *recent* on that adjective. Prefixed `/h/` / `/w/` coordinators are [circumstance restrictors](#circumstance-restriction-h-w) — e.g. `hal h-rainl` → *only when raining*; `hal` → *never*; `wal w-allegedl` → *only when alleged* (property applies only under that framing).
+
+## Circumstance restriction (`/h/` / `/w/`)
+<a id="circumstance-restriction-h-w"></a>
+<a id="circumstance-h-w"></a>
+
+Under **`/h/`** and **`/w/`**, the coordination vowel series + ending is **not** a same-slot sibling joiner. It marks **applicability circumstances**: when / under which cases the **host** holds.
+
+| Prefix | Host | Restrictor floats? |
+|--------|------|--------------------|
+| `/h/` | the **clause** (verb-level claim) — or a [VP chain](#vp-level-coordination) when the restrictor sits before a left-fence `/v/` coordinator | yes (same free position as ordinary `/h/`) |
+| `/w/` | the **preceding `/ɡ/`** (the property) | no (stays on that adjective, like ordinary `/w/`) |
+
+**Same fence rules** as other phrase slots: left preferred, right close allowed, SHARED immediately after the coordinator, [nesting](#fence-nesting), pure infix illegal, unary / nullary / multi arities as elsewhere.
+
+### Juxtaposition vs restrictor
+
+| Pattern | Reading |
+|---------|---------|
+| `h-quicklyl h-quietlyl` | *quickly and quietly* — co-applying adverbs; **no** coordinator |
+| `w-veryl w-slightlyl` on a `/ɡ/` | *very* and *slightly* (stacked adjuncts); **no** coordinator |
+| `hal h-rainl` / `h-rainl hal` | *only when raining* — closed circumstance restrictor |
+| `ham h-rainl h-nightl` | *when raining and at night, among other possible cases* — open |
+
+Do **not** write `ham h-quicklyl h-quietlyl` for manner *and*; that reads as circumstance restriction (*in the cases “quickly” and “quietly”*), not co-manner.
+
+### Conjuncts
+
+Each conjunct is a **simple** `/h/` or `/w/` content word, or a **complex** unit (`/h/`+`/b/` / contiguous `/w/` material the lexicon allows). Matching role prefix on every conjunct head and on the coordinator.
+
+**Not in this series (for now):** next-clause *when* / *if* subordination — that stays ordinary complex `/h/` + `/b/` [next-clause pronoun](pronouns.md#special-pronouns) ([language-reference.md](language-reference.md#dependent-clauses)). Circumstance fences list **phrase** circumstances, not dependent sentences.
+
+### Series glosses (`/h/`; `/w/` exact parallel on the adjective)
+
+Forms stay **reserved** under `/h/` / `/w/` (same spellings as other phrase slots), but only a **core set** has defined circumstance readings. Other reserved forms are **undefined** here — do not use them for applicability; use `/z/`-style entity glosses only under other prefixes, or pick a defined circumstance form.
+
+`/w/` matches `/h/` with host = the adjective property (`wal` = *never* for that property, etc.). Beyond **`wal` / `wam` / `wual` / `wuam` / `war` / `wor` / `wur`** and the non-nullary core below, further `/w/` nullaries are undefined.
+
+#### Defined — core
+
+**Boolean / invert / inclusive**
+
+| Form | With conjunct(s) | Nullary |
+|------|------------------|---------|
+| **`hal` / `ham`** | *only when…* (closed) / *when…, among other occasions* (open) | ***never*** / *never that I can think of* |
+| **`hol` / `hom`** | *either when A or when B (not both)* — exclusive trigger | — **undefined** |
+| **`haol` / `haom`** | *when A and/or when B* — any of these occasions suffices | — **undefined** |
+| **`hul` / `hum`** | *not when…* / *not when…, for one* | — **undefined** (use `xul` / `vul` / `zul` for bare *no*) |
+| **`hual` / `huam`** | *always except when…* | ***always*** / *always from me* |
+| **`huol` / `huom`** | *anytime except when…* | — **undefined** (`hor` covers unrestricted *anytime*) |
+
+**Ranked (with conjuncts only)**
+
+| Form | Reading |
+|------|---------|
+| **`hel` / `hem`** | *preferably when A ≻ when B…* (closed / open priority of occasions) |
+| **`hoel` / `hoem`** | *if A, else if B…* — fallback occasions (exclusive contingency) |
+
+**Unspecified-member (`-r`)**
+
+| Form | With conjunct(s) | Nullary | Under polar Q (nullary) |
+|------|------------------|---------|-------------------------|
+| **`har`** | *sometime among these* | *sometime* | *When?* / *In what case?* |
+| **`hor`** | *anytime among these* | *anytime* | *Anytime?* |
+| **`hur`** | *sometime other than these* | *sometime else* | *When else?* |
+
+Mnemonic: nullary **`hal`** (*never*) ↔ **`hual`** (*always*); **`har`** (*sometime*) is the positive twin of empty **`hal`**. Closed **`hel`** ranks **when** it matters — distinct from **`hal`** (*only when* these, no priority claim).
+
+#### Undefined under `/h/` / `/w/` (reserved, no gloss)
+
+Leave **undefined** (no circumstance reading) for now:
+
+- Nullary **`hol` / `hom` / `haol` / `haom` / `hul` / `hum` / `huol` / `huom`**
+- All **`-n`** circumstance forms (`han` / `hen` / …) unless a stock label is added later
+- Ranked **`hael` / `haem` / `huel` / `huem` / `hen`** (any arity), and **nullary** **`hel` / `hem` / `hoel` / `hoem`**
+- **`her` / `wer`** (any arity) — use **`hel`** + **`har`** instead of *whenever it matters most*
+- Other stacked or rare parallels not listed in the core tables
+
+Nesting and SHARED still apply to **defined** forms only.
+
+### Examples
+
+- `hal` → *never*; `ham` → *never that I can think of*; `hual` → *always*; `huam` → *always from me*; `har` → *sometime*; `hor` → *anytime*; `hur` → *sometime else*
+- `hal h-rainl` / `h-rainl hal` → *only when raining*
+- `ham h-rainl h-nightl` → *when raining and at night (among other occasions)*
+- `hol h-weekdayl h-weekendl` → *either on a weekday or on a weekend (not both)*
+- `haol h-rainl h-snowl` → *when raining and/or when snowing*
+- `hul h-rainl` → *not when raining*; `hum h-rainl h-nightl` → *not when raining or at night, for one*
+- `hual h-rainl` → *always except when raining*
+- `huol h-rainl` → *anytime except when raining*
+- `hel h-emergencyl h-conveniencel` → *preferably in emergency ≻ for convenience*
+- `hoel h-fixl h-workaroundl` → *if (when) fix, else if workaround…*
+- `har h-rainl h-snowl` → *sometime among rain or snow*; under polar Q nullary `har` → *When?*
+- Complex conjunct: `hal h-atl b-homel` → *only at home*
+- `/w/` core: `wal` on `g-happyl` → *never* (for that property); `wal w-allegedl` → *only when alleged*; `wual` → *always* (property always applies); `war` → *sometime* (under some framing); juxtaposition `g-happyl w-veryl w-recentl` → *very* and *recent* (not a restrictor fence)
+
+### Constraints (extra)
+
+- Use only **defined** circumstance forms above; other reserved `/h/` / `/w/` coordinators stay unused for now.
+- **One restrictor chain** occupies one `/h/` floating unit or one `/w/` stack position on its host.
+- **Not** sibling manner / degree *and* — use juxtaposition.
+- **Not** next-clause *when* / *if* (yet) — use `/h/`+`/b/` next-clause pronoun.
+- Reserved coordinator forms under `/h/` / `/w/` remain reserved ([below](#reserved-forms)); content roots under those prefixes are unchanged.
 
 ## Constraints
 
-- **One slot** — the chain is a single subject, object, `/b/` argument, `/ɡ/` stack position, `/w/` stack, or `/h/` floating unit in the clause.
+- **One slot** — the chain is a single subject, object, `/b/` argument, `/ɡ/` stack position, `/w/` restrictor unit, or `/h/` restrictor unit in the clause. Under `/h/` / `/w/`, that slot is a [circumstance restrictor](#circumstance-restriction-h-w), not a sibling modifier *and*.
 - **Matching role prefix** on every conjunct head and on the coordinator.
 - **One fence placement per flat list** — left (preferred) or right (style / comedy); never pure infix between conjuncts. Nested joins: [fence nesting](#fence-nesting).
 - **Shared modifiers** — only in the slot immediately after each `P-COORD` (left or right); local modifiers stay after their own heads.
 - **Phrase `-r`** — only **`…ar`** / **`…or`** / **`…er`** / **`…ur`** ([unspecified-member](#unspecified-member-r-phrase)); no plural **-sh** on the coordinator. Soft **-n** is VP/clause only.
 - **Not** verb+object packages — use [VP-level](#vp-level-coordination); **not** full sentences — those stay `/x/`…
-- **Not** mixed-PoS joins; correlatives; `/x/` sentence linkers (*however*, *therefore*), general adversative *but*, quotation fences, or [numbered enumeration](numbers.md#number-as-discourse-marker-by-marker). In-clause *including* / *rather* / *instead* / *except* are [bare revision](#in-clause-revision-bare-a--e--o--u), not this fence series. Phrase-level ranked conjunction **is** this series (`zel` / `zael` / `zoel` / `zuel` / `zem` / …). Invert **ua** / **uo** / **ue** **is** this series too. Unary / nullary phrase only for the forms in [unary and nullary](#unary-phrase) (**…an** nullary-only; **…ul** / **…um** at all arities = [negation](#negation-u) *not X* / *no* / *none of*; **…ar** / **…or** / **…er** / **…ur** at all arities = *something* / *anything* / *whatever-by-rank* / *something else*; **…en** nullary = *it’s a draw*, **…an** nullary = *null* / *void*; **…ual** nullary = *everything*, **…uol** nullary = *anything (goes)*).
+- **Not** mixed-PoS joins; correlatives; `/x/` sentence linkers (*however*, *therefore*), general adversative *but*, quotation fences, or [numbered enumeration](numbers.md#number-as-discourse-marker-by-marker). In-clause *including* / *rather* / *instead* / *except* are [bare revision](#in-clause-revision-bare-a--e--o--u), not this fence series. Phrase-level ranked conjunction **is** this series (`zel` / `zael` / `zoel` / `zuel` / `zem` / …). Invert **ua** / **uo** / **ue** **is** this series too. Unary / nullary phrase only for the forms in [unary and nullary](#unary-phrase) (**…an** nullary-only; **…ul** / **…um** at all arities = [negation](#negation-u) *not X* / *no* / *none of*; **…ar** / **…or** / **…er** / **…ur** at all arities = *something* / *anything* / *whatever-by-rank* / *something else*; **…en** nullary = *it’s a draw*, **…an** nullary = *null* / *void*; **…ual** nullary = *everything*, **…uol** nullary = *anything (goes)*). Under `/h/` / `/w/`, only the [defined circumstance core](#circumstance-restriction-h-w) is used (`hal` = *never*, `hual` = *always*, `har` = *sometime*, …); other reserved spellings there are undefined.
 
 ## Reserved forms
 
-Under `/z/`, `/d/`, `/b/`, `/ɡ/`, `/w/`, and `/h/`, the coordination vowel series plus an allowed ending (`zal`, `zam`, `zan`, `zar`, `zol`, `zom`, `zor`, `zul`, `zum`, `zur`, … `zel`, `zem`, `zen`, `zer`, `zael`, `zaem`, `zaen`, `zoel`, `zoem`, `zoen`, `zual`, `zuam`, `zuan`, `zuol`, `zuom`, `zuon`, `zuel`, `zuem`, `zuen`, `dal`, … `gal`, `gam`, … `wal`, … `hal`, `ham`, … `hel`, `hem`, `hen`, `hael`, … `hoel`, … `hual`, `huol`, `huel`, …) are **only** these phrase coordinators — not ordinary content words with those vowel roots. No three-vowel stacks. Other roots under those prefixes are unchanged.
+Under `/z/`, `/d/`, `/b/`, `/ɡ/`, `/w/`, and `/h/`, the coordination vowel series plus an allowed ending (`zal`, `zam`, `zan`, `zar`, `zol`, `zom`, `zor`, `zul`, `zum`, `zur`, … `zel`, `zem`, `zen`, `zer`, `zael`, `zaem`, `zaen`, `zoel`, `zoem`, `zoen`, `zual`, `zuam`, `zuan`, `zuol`, `zuom`, `zuon`, `zuel`, `zuem`, `zuen`, `dal`, … `gal`, `gam`, … `wal`, … `hal`, `ham`, … `hel`, `hem`, `hen`, `hael`, … `hoel`, … `hual`, `huol`, `huel`, …) are **only** these phrase coordinators (under `/h/` / `/w/`: [circumstance restrictors](#circumstance-restriction-h-w) — **core defined**, other spellings reserved but **undefined**) — not ordinary content words with those vowel roots. No three-vowel stacks. Other roots under those prefixes are unchanged.
 
 ---
 
