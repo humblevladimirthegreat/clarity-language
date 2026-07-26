@@ -5,7 +5,7 @@ Plurality is marked by an optional suffix **-sh** after the [reference suffix](r
 ## Word shape
 
 ```
-[PoS prefix] + root (+ x + root …) + reference suffix + [sh?]
+[PoS prefix] + root (+ x + root ...) + reference suffix + (optional -sh)
 ```
 
 1. **PoS prefix** — role in the clause (see [language-reference.md](language-reference.md#part-of-speech-prefixes)).
@@ -17,7 +17,7 @@ Allowed word-final clusters: **-lsh**, **-msh**, **-nsh**, **-rsh**. Phonotactic
 
 ## Core sense
 
-Without **-sh**, the word picks **one** referent (or one named / indefinite introduction). With **-sh**, the word’s referent is a **group** (introduced, named, or resumed) — or, on `/ɡ/`, a property predicated of a group **as one unit** ([collective](#adjectives-ɡ)).
+Without **-sh**, the word picks **one** referent (or one named / indefinite introduction). With **-sh**, the word’s referent is a **group** (introduced, named, or resumed) — or, on `/ɡ/`, a property predicated of a group **as one unit** ([collective](#adjectives-g)).
 
 | Ending | Reading |
 |--------|---------|
@@ -28,15 +28,15 @@ Example with resume: `…r` points at one prior noun; `…rsh` points at the **g
 
 **-sh** is not agreement: you do not copy number onto verbs, adjectives, or other dependents. Mark the word whose referent is the group (or whose ascription is collective).
 
-**Not **-sh**:**
+**Not -sh:**
 
 | Need | Use instead |
 |------|-------------|
 | count / amount **`>1`** without treating a set as the referent | digitless **`g+l`** (etc.) — [zero digit groups](numbers.md#zero-digit-groups) |
 | *all* / *every* / kind-generic | **`zual` / `zuam` + SHARED kind** — [universals](coordination.md#universals-domains-generics) |
-| habitual / characterizing pattern | nullary **`hual` / `huam`** — [circumstance](coordination.md#circumstance-restriction-h-w) |
+| habitual / characterizing pattern | bare **`hual` / `huam`** — [circumstance](coordination.md#circumstance-restriction-h-w) |
 | *N times* / repetition count | [number words](numbers.md) under `/h/` (including digitless **`h+l`**) |
-| *everyone* (universal address) | nullary **`…ual`** (vocative / entity slot as usual) |
+| *everyone* (universal address) | bare **`…ual`** (vocative / entity slot as usual) |
 
 Indefinite **group introduction** stays **-lsh** / **-msh** on nouns (and parallel event-set intro on verbs). Do **not** replace that job with digitless numbers.
 
@@ -59,7 +59,7 @@ Do **not** read **-lsh** as kind-generic (*cats in general* / *all cats*) — th
 
 ## By part of speech
 
-The PoS prefix says what role the word plays **now**; **-sh** says the referent of that role is a group — except on `/ɡ/`, where it marks [collective ascription](#adjectives-ɡ). Reference-suffix choice (**-l** / **-m** / **-n** / **-r**) still follows [reference-suffix.md](reference-suffix.md).
+The PoS prefix says what role the word plays **now**; **-sh** says the referent of that role is a group — except on `/ɡ/`, where it marks [collective ascription](#adjectives-g). Reference-suffix choice (**-l** / **-m** / **-n** / **-r**) still follows [reference-suffix.md](reference-suffix.md).
 
 ### Nouns (`/z/`, `/d/`, `/b/`)
 
@@ -90,7 +90,7 @@ Natural home for **-sh**. The argument’s referent is a set: *some cats*, *thos
 **Not verb -sh:** plural *people* cooking once → plural on the **noun**, singular verb. *Knocked several times* as a count → **`h+3l`** / **`h+l`**, singular verb (unless the bout of knocks is itself the discourse set).
 
 ### Adjectives (`/ɡ/`)
-<a id="adjectives-ɡ"></a>
+<a id="adjectives-g"></a>
 <a id="collective"></a>
 <a id="collective-ascription"></a>
 
@@ -103,7 +103,7 @@ On `/ɡ/`, **-sh** marks **collective ascription**: the property holds of the **
 | host set + singular `/ɡ/` | distributive or underspecified (*the boxes are heavy* — each, or don’t care) |
 | host set + `/ɡ/`…**-sh** | **collective** (*heavy as a pile*; *sufficient together*; *large as a team*) |
 
-Most useful with [phrase conjunction](coordination.md): SHARED singular scale under **`a`** is already **distributive** (*each is ADJ*); SHARED **/ɡ/…-sh** is **collective** (*ADJ as a unit*).
+Most useful with [phrase join](coordination.md): SHARED singular scale under **`a`** is already **distributive** (*each is ADJ*); SHARED **/ɡ/…-sh** is **collective** (*ADJ as a unit*).
 
 | Example | Gloss |
 |---------|-------|
@@ -124,33 +124,33 @@ Most useful with [phrase conjunction](coordination.md): SHARED singular scale un
 
 ### Adjective adjuncts (`/w/`)
 
-**Do not use **-sh**.** Several applications or repeated framing are repetition / count (`/h/` + number) or separate mentions — not a group referent on the adjunct. Degree and frame stay singular.
+Do **not** use **-sh**. Several applications or repeated framing are repetition / count (`/h/` + number) or separate mentions — not a group referent on the adjunct. Degree and frame stay singular.
 
 ### Adverbs (`/h/`)
 
-**Do not use **-sh**.** Situative vs enduring / habitual framing is **`hual` / `huam`** (or a habit root), not plural morphology. Entity plurality stays on nouns (`/b/`…**-sh** for plural recipients or topics). Repetition count uses [number words](numbers.md) under `/h/`.
+Do **not** use **-sh**. Situative vs enduring / habitual framing is **`hual` / `huam`** (or a habit root), not plural morphology. Entity plurality stays on nouns (`/b/`…**-sh** for plural recipients or topics). Repetition count uses [number words](numbers.md) under `/h/`.
 
 ### Utterance markers (`/j/`)
 
 Depends on subclass (see [utterance markers](language-reference.md#utterance-markers-j)):
 
-* **Vocatives** — Address a **group**: **-lsh** for kind-based group address (*hey, kids*); **-nsh** for a titled group name (*Team Alpha*); **-rsh** to call the group containing a prior addressee. *Everyone* → nullary **`…ual`**, not **-lsh**.
-* **Interjections** — **Do not use **-sh**.** Group calls belong on vocatives or nouns.
-* **Clause force** — **Do not use **-sh****. Force forms (`jal` / `jol` / `jel` / …) are a closed set and are not numbered.
+* **Vocatives** — Address a **group**: **-lsh** for kind-based group address (*hey, kids*); **-nsh** for a titled group name (*Team Alpha*); **-rsh** to call the group containing a prior addressee. *Everyone* → bare **`…ual`**, not **-lsh**.
+* **Interjections** — Do **not** use **-sh**. Group calls belong on vocatives or nouns.
+* **Clause force** — Do **not** use **-sh**. Force forms (`jal` / `jol` / `jel` / …) are a closed set and are not numbered.
 
 ### Discourse markers (`/x/`)
 
-* **In-clause revision** ([**al** / **am** / **an** / **el** / **em** / **en** / …](coordination.md#in-clause-revision-bare-a--e--o--u)) — No **-sh** (**-l** / **-m** / named **-n** ending only). Plurality is marked on each side independently (`z-dogl am z-catlsh`).
-* **NP- / AP-level coordinators** ([`zam`](coordination.md#np-level-coordination), `dal`, [`gam`](coordination.md#ap-level-coordination), …) — No **-sh** on the coordinator; plurality stays on each phrase conjunct (or on SHARED `/ɡ/`…**-sh** when the ascription is [collective](#collective-ascription)).
-* **VP-level coordinators** ([`vam`](coordination.md#vp-level-coordination), `var`, …) — No **-sh** on the coordinator; plurality stays on material inside each VP conjunct.
-* **Clause coordinators** ([`xal`](coordination.md#clause-level-coordination), …) — Do **not** take **-sh**; plurality stays on material inside each sentence.
+* **Revisers** ([**al** / **am** / **an** / **el** / **em** / **en** / …](coordination.md#in-clause-revision-bare-a--e--o--u)) — No **-sh** (**-l** / **-m** / named **-n** ending only). Plurality is marked on each side independently (`z-dogl am z-catlsh`).
+* **NP- / AP-level joins** ([`zam`](coordination.md#np-level-coordination), `dal`, [`gam`](coordination.md#ap-level-coordination), …) — No **-sh** on the join; plurality stays on each phrase conjunct (or on SHARED `/ɡ/`…**-sh** when the ascription is [collective](#collective-ascription)).
+* **VP-level joins** ([`vam`](coordination.md#vp-level-coordination), `var`, …) — No **-sh** on the join; plurality stays on material inside each VP conjunct.
+* **Clause joins** ([`xal`](coordination.md#clause-level-coordination), …) — Do **not** take **-sh**; plurality stays on material inside each sentence.
 * **`/x/` linkers / fences** (*but*, *however*, …) — Do **not** take **-sh**; they are glue, not plural referents.
 * **Quotation / fence markers** — Do not pluralize the fence; plural material *inside* the quote marks **-sh** on its own words.
-* **Named discourse glue** — **Do not use **-sh****. Title a block with singular **-n**; resume with **-r**.
+* **Named discourse glue** — Do **not** use **-sh**. Title a block with singular **-n**; resume with **-r**.
 
 ### Number words
 
-[Number words](numbers.md) **do not take **-sh****. Quantity and numeric referents use marker + digits/ending (including [digitless](numbers.md#zero-digit-groups) forms). Group reference stays on ordinary nouns (or event-sets on verbs), not on the numeral.
+[Number words](numbers.md) do **not** take **-sh**. Quantity and numeric referents use marker + digits/ending (including [digitless](numbers.md#zero-digit-groups) forms). Group reference stays on ordinary nouns (or event-sets on verbs), not on the numeral.
 
 ## Summary
 
@@ -166,7 +166,7 @@ Depends on subclass (see [utterance markers](language-reference.md#utterance-mar
 | `/j/` clause force | *(not used)* |
 | `/x/` (all) | *(not used)* |
 | bare **al** / **am** / **an** / **el** / **em** / **en** / … | *(not used — ending only, no **-sh**)* |
-| phrase / VP / clause coordinators | *(not used — ending only, no **-sh**)* |
+| phrase / VP / clause joins | *(not used — ending only, no **-sh**)* |
 | number words | *(not used)* |
 
 | Reference + **-sh** | Means… |

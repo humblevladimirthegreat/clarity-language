@@ -1,6 +1,6 @@
 # Quotations, mentions, and asides
 
-This page is the source of truth for **quote / mention / aside fences**: preferred **bracket writing**, spoken **`xl-`** pronunciation, fidelity, and nesting. Discourse linkers and clause coordination under `/x/` stay in [language-reference.md](language-reference.md#discourse-markers-x) and [coordination.md](coordination.md). Phonotactic exception for onset **`xl-`**: [phonology.md](phonology.md#phonotactics). Parallel to [numbers](numbers.md): writing uses shorthand; speech is the full `xl-` form.
+This page is the source of truth for **quote / mention / aside fences**: preferred **bracket writing**, spoken **`xl-`** pronunciation, fidelity, and nesting. Discourse linkers and clause joins under `/x/` stay in [language-reference.md](language-reference.md#discourse-markers-x) and [coordination.md](coordination.md). Phonotactic exception for onset **`xl-`**: [phonology.md](phonology.md#phonotactics). Parallel to [numbers](numbers.md): writing uses shorthand; speech is the full `xl-` form.
 
 <a id="writing-vs-speech"></a>
 
@@ -46,7 +46,7 @@ Literal `[` / `]` / `{` / `}` / `(` / `)` / `~` glyphs that must appear as conte
 
 Span markers are a **closed** `/x/` subsystem used **in pronunciation only**. Onset is **`xl-`** (discourse `/x/` + mid-word **l**), then a **single** vowel, then an ending. **No stacked vowels** (`*xlael`, `*xluol`, …).
 
-These forms are **not** clause coordinators (`xal` / `xam` / …) and **not** number enumeration (`x+2l` / …).
+These forms are **not** clause joins (`xal` / `xam` / …) and **not** number enumeration (`x+2l` / …).
 
 | Piece | Job |
 |-------|-----|
@@ -148,7 +148,7 @@ There is **no** peer “escape vowel” in the `xl-` series.
 
 | Need | Use instead |
 |------|-------------|
-| Clause *and* / *or* / ranked claim join | `/x/` coordinators `xal` / `xol` / … — [coordination.md](coordination.md#clause-level-coordination) |
+| Clause *and* / *or* / ranked claim join | `/x/` joins `xal` / `xol` / … — [coordination.md](coordination.md#clause-level-coordination) |
 | *However* / *therefore* / *but* (asymmetric linkers) | other `/x/` lexicon roots — [discourse markers](language-reference.md#discourse-markers-x) |
 | Numbered *point N:* | `/x/` + number — [numbers.md](numbers.md#number-as-discourse-marker-by-marker) |
 | *Because* / *if* subordination | `/h/` + `/b/` next-clause pronoun — [dependent clauses](language-reference.md#dependent-clauses) |

@@ -44,7 +44,7 @@ Digit-strings (`ro`…) usually take the argument role the clause needs (often `
 
 ## Marker vowel (referential identity)
 
-**V** encodes the number’s **referential identity** — scalar vs ordinal vs digit-string. For **scalars**, **V** also carries the **sign of the whole number** (`a` positive, `u` negative). Ordinal **`e`** aligns with [ranked conjunction **e**](coordination.md#ranked-conjunction-e) (*rank*).
+**V** encodes the number’s **referential identity** — scalar vs ordinal vs digit-string. For **scalars**, **V** also carries the **sign of the whole number** (`a` positive, `u` negative). Ordinal **`e`** aligns with [rank join **e**](coordination.md#ranked-conjunction-e) (*rank*).
 
 | V | Writing | Referent | Examples |
 |---|---------|----------|----------|
@@ -463,7 +463,7 @@ Spans reuse [phrase fences](coordination.md) whose conjuncts are number words, w
 
 1. Exactly **two** endpoints that are **compatible** number words (same marker identity: both scalar, both ordinal, or both digit-string / time).
 2. Join **`a`** / **`e`** / **`ue`** / **`ua`** (or those vowels’ **-r**).
-3. A **SHARED continuum** `/ɡ/` immediately after the coordinator (lexicon: dimension / quantity line — *age*, *price*, *time*, *height*, …; stock **`g-spanl`** / **`g-amountl`** when the line is pure numeric or supplied by context/head).
+3. A **SHARED continuum** `/ɡ/` immediately after the join (lexicon: dimension / quantity line — *age*, *price*, *time*, *height*, …; stock **`g-spanl`** / **`g-amountl`** when the line is pure numeric or supplied by context/head).
 
 The fence PoS matches the slot (`zal` / `dal` / `gal` / `bal` / …). Mixed identities on one span are illegal.
 
@@ -477,17 +477,17 @@ The fence PoS matches the slot (`zal` / `dal` / `gal` / `bal` / …). Mixed iden
 | **`ua`** | `zual g-agel z+3l z+5l` | *outside 3–5* on age (complement on the line) |
 | **`o`** / **`ao`** | — | **Not** ranges — stay discrete (*3 or 5* / *3 and/or 5*); SHARED continuum does not license a span |
 | **`ae`** | `zael z+5l z+5l` / `zaem z+3l z+5l` | *equal to 5* / *approximately equal* — **not** a span (no continuum needed; continuum + **`ae`** + numbers is not a range reading) |
-| **`oe`** | — | **Not** ranges — exclusive ranked / nullary empty superlative with scale |
+| **`oe`** | — | **Not** ranges — exclusive ranked / bare empty superlative with scale |
 
-**Arity escape:** three or more number conjuncts under **`a`** stay an ordinary discrete inventory (`zal z+1l z+3l z+7l` = *1, 3, and 7*), even with SHARED. Unary **`zal z+3l`** stays *just 3*, not a ray. Unary **ranked** with a number is a [threshold](#numeric-thresholds), not ordinary *only X matters*.
+**Arity escape:** three or more number conjuncts under **`a`** stay an ordinary discrete inventory (`zal z+1l z+3l z+7l` = *1, 3, and 7*), even with SHARED. Focus **`zal z+3l`** stays *just 3*, not a ray. Focus **ranked** with a number is a [threshold](#numeric-thresholds), not ordinary *only X matters*.
 
 **Contrast with comparatives:** `zel g-bigl z-Samn z-Lean` = *Sam is bigger than Lea* (SHARED **scale**, non-number conjuncts). `zel g-agel z+3l z+5l` = *from 3 to 5 on age* (SHARED **continuum**, number endpoints). Bare `zel z+3l z+5l` = prefer 3 over 5.
 
-### Thresholds (unary ranked)
+### Thresholds (focus ranked)
 <a id="numeric-thresholds"></a>
 <a id="greater-less-than"></a>
 
-When the **sole** conjunct of a [ranked](coordination.md#ranked-conjunction-e) fence (**`e`** / **`ue`**, and their open / named twins) is a **compatible number word**, that number is an **extremum on the line**, not “only this value matters” and not a two-endpoint [span](#ranges). SHARED continuum is **optional** on thresholds: absent = implicit / contextual numeric line; present = that named line (`zel g-agel z+5l` = *age \< 5*).
+When the **sole** conjunct of a [rank join](coordination.md#ranked-conjunction-e) fence (**`e`** / **`ue`**, and their open / named twins) is a **compatible number word**, that number is an **extremum on the line**, not “only this value matters” and not a two-endpoint [span](#ranges). SHARED continuum is **optional** on thresholds: absent = implicit / contextual numeric line; present = that named line (`zel g-agel z+5l` = *age \< 5*).
 
 | Form | Reading | Mnemonic |
 |------|--------|----------|
@@ -499,17 +499,17 @@ When the **sole** conjunct of a [ranked](coordination.md#ranked-conjunction-e) f
 | **`zaen z+5l`** | named/conventional **equal-to-5** band / tie label | phrase **-n** on **ae** |
 | **`zuen z+5l`** | named/conventional floor band | phrase **-n** reverse |
 
-Same under `/d/` `/b/` `/ɡ/` (`gel g+5l` = modifier *\<5*; `duel d+10l` = object *\>10*). **`ae`** / **`oe`** unary with a number are **not** thresholds (stay ordinary ranked unary / triage). Boolean unary (**`zal`** / **`zol`** / …) is **not** a threshold.
+Same under `/d/` `/b/` `/ɡ/` (`gel g+5l` = modifier *\<5*; `duel d+10l` = object *\>10*). **`ae`** / **`oe`** focus with a number are **not** thresholds (stay ordinary ranked focus / triage). Boolean focus (**`zal`** / **`zol`** / …) is **not** a threshold.
 
-**Inclusive bounds:** default is **strict** (`<` / `>`). For **≤ 5** / **≥ 5**, use a two-endpoint [span](#ranges) with the bound included — do **not** flip unary ranked to inclusive. Exclusive-high **`ul`** stays a two-side span tool (`zal g-spanl z+3l ul z+5l`), not a unary threshold marker.
+**Inclusive bounds:** default is **strict** (`<` / `>`). For **≤ 5** / **≥ 5**, use a two-endpoint [span](#ranges) with the bound included — do **not** flip focus ranked to inclusive. Exclusive-high **`ul`** stays a two-side span tool (`zal g-spanl z+3l ul z+5l`), not a focus threshold marker.
 
 **Unspecified in a threshold:** bare **`e`** + **-r** = unspecified member of the *\< X* ray — `zer z+5l` → *some/whatever value \< 5* (under question → *which value \< 5?*). **`ue`** takes **no** **-r** (stacked forms never do — [coordination](coordination.md#unspecified-member-r-phrase)); there is no `zuer` threshold. For an unspecified value *\> 5*, use other wording for now (e.g. a two-endpoint span with an open high, once defined), not a reverse **-r** fence.
 
-Contrast: `zel g-agel z+3l z+5l` = *from 3 to 5 on age* (span); `zel z+3l z+5l` = *3 ≻ 5* (preference); `zel z+5l` = *\< 5* (unary threshold). `zel z-Samn` (non-number) stays ordinary *only Sam matters* / [superlative-with-scale](comparatives.md) — **unary number conjunct** triggers the threshold reading.
+Contrast: `zel g-agel z+3l z+5l` = *from 3 to 5 on age* (span); `zel z+3l z+5l` = *3 ≻ 5* (preference); `zel z+5l` = *\< 5* (focus threshold). `zel z-Samn` (non-number) stays ordinary *only Sam matters* / [superlative-with-scale](comparatives.md) — **focus number conjunct** triggers the threshold reading.
 
 ### Half-open (exclude the high end only)
 
-[In-clause revision](coordination.md#in-clause-revision-bare-a--e--o--u) **inside the range** marks an exclusive **upper** bound. Replace the second (high) conjunct with prefix-less **`ul`** + that number. SHARED continuum stays required:
+[Revisers](coordination.md#in-clause-revision-bare-a--e--o--u) **inside the range** marks an exclusive **upper** bound. Replace the second (high) conjunct with prefix-less **`ul`** + that number. SHARED continuum stays required:
 
 | Shape | Reading |
 |-------|--------|

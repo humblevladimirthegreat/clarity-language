@@ -1,6 +1,6 @@
 # Questions
 
-This page is the source of truth for **interrogative** grammar: the **question** clause forces (**jol** / soft **jom**), yes/no vs fill-ask, multi-gap **fill-all**, and how coordinator endings read under question force. Fence forms and their **statement** readings live in [coordination.md](coordination.md). Full force inventory and left-edge `/j/` order: [language-reference.md](language-reference.md#clause-force).
+This page is the source of truth for **interrogative** grammar: the **question** clause forces (**jol** / soft **jom**), yes/no vs fill-ask, multi-gap **fill-all**, and how join endings read under question force. Fence forms and their **statement** readings live in [coordination.md](coordination.md). Full force inventory and left-edge `/j/` order: [language-reference.md](language-reference.md#clause-force).
 
 <a id="interrogative-force"></a>
 <a id="polar-question"></a>
@@ -13,8 +13,8 @@ Under **jol** / **jom**:
 
 | Body shape | Ask type |
 |------------|----------|
-| **No** coordinator **-r** | **Yes/no** (confirm, offer, emptiness check, …) |
-| One or more coordinator **-r** | **Fill-ask** (name the unspecified member(s)) — see [below](#fill-ask-r) |
+| **No** join **-r** | **Yes/no** (confirm, offer, emptiness check, …) |
+| One or more join **-r** | **Fill-ask** (name the unspecified member(s)) — see [below](#fill-ask-r) |
 
 True yes/no *about* an unspecified member (*Did something happen?* / *Is someone there?*) is **not** a target reading of question + **-r**. Prefer emptiness yes/no (`zal` / `xal` → *Nothing?* / *Nothing happened?*) or an ordinary indefinite (`-l` / `-m`). Under question, **-r** always means fill-ask.
 
@@ -25,7 +25,7 @@ There is **no** separate interrogative pronoun. Unbound *who* / *what* / *where*
 
 ## Fill-all (multiple **-r**)
 
-Every coordinator **-r** under **question** force is a **gap**. The answer is expected to **fill all** of them.
+Every join **-r** under **question** force is a **gap**. The answer is expected to **fill all** of them.
 
 **Spoken order** of those **-r** fences is the expected **fill order** in the answer (free word order lets you front the gap you care about most; it does not drop other gaps).
 
@@ -37,15 +37,15 @@ Every coordinator **-r** under **question** force is a **gap**. The answer is ex
 
 Partial answers are fine in conversation; they do not redefine the grammar (still an incomplete multi-gap answer).
 
-**Single gap + real *something* elsewhere:** do **not** put a second coordinator **-r** in the question. Use an ordinary indefinite (`-l` / `-m`) or leave the slot out (`zar` + `d-foodl` → *Who ate (a) food?*; `zar` + `dar` → *Who ate what?*).
+**Single gap + real *something* elsewhere:** do **not** put a second join **-r** in the question. Use an ordinary indefinite (`-l` / `-m`) or leave the slot out (`zar` + `d-foodl` → *Who ate (a) food?*; `zar` + `dar` → *Who ate what?*).
 
-Content-word anaphor **-r** is not a fill gap — only [coordinator **-r**](coordination.md#unspecified-member-r-phrase) (`zar` / `var` / `xar` / …).
+Content-word anaphor **-r** is not a fill gap — only [join **-r**](coordination.md#unspecified-member-r-phrase) (`zar` / `var` / `xar` / …).
 
 <a id="answers"></a>
 
 ## Answers
 
-A fill **need not** keep **-r**: it may be a bare content word, unary **-l** / **-m** / **-n**, or a longer list with any allowed ending. Multi-gap answers follow spoken **-r** order ([fill-all](#fill-all)).
+A fill **need not** keep **-r**: it may be a bare content word, focus **-l** / **-m** / **-n**, or a longer list with any allowed ending. Multi-gap answers follow spoken **-r** order ([fill-all](#fill-all)).
 
 <a id="fill-ask-r"></a>
 <a id="content-questions"></a>
@@ -54,16 +54,16 @@ A fill **need not** keep **-r**: it may be a bare content word, unary **-l** / *
 
 Under **jol** / **jom**, prefixed **-r** on **a** / **o** / **e** / **u** is the **content-question** series (ask to name the unspecified member). Statement readings (*something* / *anything* / …): [coordination.md](coordination.md#unspecified-member-r-phrase).
 
-| Vowel | Nullary (phrase) | Nullary VP / clause | Under question (nullary) |
+| Vowel | Bare (phrase) | Bare VP / clause | Under question (bare) |
 |-------|------------------|---------------------|--------------------------|
 | **a** | `zar` / … → *something* / *someone* | `var` / `xar` → *do something* / *something happened* | *Who/what?* / *What (did they) do?* / *What happened?* |
 | **o** | `zor` / … → *anything* / *anyone* | `vor` / `xor` → *do anything* / *anything (may hold)* | *What (anything)?* / *Do anything?* / *Anything?* |
 | **e** | `zer` / … → *whatever’s most important* | `ver` / `xer` → *do whatever matters most* / *… as outcome* | *What’s the priority?* / *What’s the priority (to do / as outcome)?* |
 | **u** | `zur` / … → *something else* / *someone else* | `vur` / `xur` → *do something else* / *something else happened* | *What else?* / *Who else?* / *What else (did they do / happened)?* |
 
-**Circumstance** (`/h/` / `/w/` core): nullary `har` / `hor` / `hur` (and `war` / `wor` / `wur`) under question → *When?* / *Anytime?* / *When else?* — see [circumstance](#circumstance-when). (`her` / `wer` undefined.)
+**Circumstance** (`/h/` / `/w/` core): bare `har` / `hor` / `hur` (and `war` / `wor` / `wur`) under question → *When?* / *Anytime?* / *When else?* — see [circumstance](#circumstance-when). (`her` / `wer` undefined.)
 
-**Arity under question** (same length rule as [unary / nullary](coordination.md#unary-phrase)):
+**Arity under question** (same length rule as [focus / bare](coordination.md#focus-phrase)):
 
 | Length | **…ar** | **…or** | **…er** | **…ur** |
 |--------|---------|---------|---------|---------|
@@ -71,30 +71,31 @@ Under **jol** / **jom**, prefixed **-r** on **a** / **o** / **e** / **u** is the
 | **1** | *What/which (unknown) X?* | *Any X?* / *Which X (any is fine)?* | *Which X is first?* | *What else (besides X)?* / *Other than X?* |
 | **2+** | *Which of these?* | *Any of these?* | *Whichever ranks highest?* | *What else?* / *Other than these?* |
 
-Unbound *who* / *what* / *where* = nullary phrase **-r** in the queried slot (PoS = role). Unbound *what did they do?* / *what happened?* = nullary **`var`** / **`xar`** (etc.). Unbound *when?* = nullary **`har`** (etc.).
+Unbound *who* / *what* / *where* = bare phrase **-r** in the queried slot (PoS = role). Unbound *what did they do?* / *what happened?* = bare **`var`** / **`xar`** (etc.). Unbound *when?* = bare **`har`** (etc.).
 
 VP / clause under question (schematic): `var` → *What (did they) do?*; `vur` → *What else (did they do)?*; `xar` → *What happened?*; `xur` → *What else happened?*; `vul v-runl` → *Didn’t run?* (yes/no denial, not fill).
 
+<a id="yes-no-focus-bare"></a>
 <a id="yes-no-unary-nullary"></a>
 <a id="under-question"></a>
 
-## Yes/no and unary / nullary under question
+## Yes/no and focus / bare under question
 
-Phrase-level for entity/property slots; VP/clause for action/claim slots. Statement readings and contrasts: [coordination.md](coordination.md#unary-phrase). Under `/h/` / `/w/`, only the [defined circumstance core](coordination.md#circumstance-restriction-h-w) applies — not the entity/property emptiness rows below.
+Phrase-level for entity/property slots; VP/clause for action/claim slots. Statement readings and contrasts: [coordination.md](coordination.md#focus-phrase). Under `/h/` / `/w/`, only the [defined circumstance core](coordination.md#circumstance-restriction-h-w) applies — not the entity/property emptiness rows below.
 
 **Summary**
 
-- Unary **-l** / **-n** — confirm the singleton frame (*Just X?*, *Has to be X?*, conventional label).
-- Unary **-m** — **offer** that singleton (*How about X?*, *Want X?*, *Try X first?*).
-- Unary **…ul** / **…um** / **…un** — confirm / offer denial (*Not X?*, *Not X, among denials?*).
-- Nullary **-l** — colloquial check on emptiness (*Nothing?*, *No options?*, *Do nothing?*, *No?*).
-- Nullary **-m** — confirm open emptiness / speaker-style gap (*Got nothing?*, *No pick?*, *No ranking?*, soft *No?*) — **not** the primary fill-ask.
-- Nullary **-n** — confirm the conventional empty / denial label (*Null?*, *Draw?*, stock *No?*).
-- Nullary / unary / multi **…ar** / **…or** / **…er** / **…ur** — [fill-ask](#fill-ask-r).
+- Focus **-l** / **-n** — confirm the singleton frame (*Just X?*, *Has to be X?*, conventional label).
+- Focus **-m** — **offer** that singleton (*How about X?*, *Want X?*, *Try X first?*).
+- Focus **…ul** / **…um** / **…un** — confirm / offer denial (*Not X?*, *Not X, among denials?*).
+- Bare **-l** — colloquial check on emptiness (*Nothing?*, *No options?*, *Do nothing?*, *No?*).
+- Bare **-m** — confirm open emptiness / speaker-style gap (*Got nothing?*, *No pick?*, *No ranking?*, soft *No?*) — **not** the primary fill-ask.
+- Bare **-n** — confirm the conventional empty / denial label (*Null?*, *Draw?*, stock *No?*).
+- Bare / focus / multi **…ar** / **…or** / **…er** / **…ur** — [fill-ask](#fill-ask-r).
 
 **Length 2+** (no **-r**): **-l** = pick from this closed menu (esp. **o** / **oe**) — for **o**, exactly one, empty **not** allowed; **-m** = pick, or name something else — for **o** only, also *or none* / empty-allowed ([coordination.md](coordination.md#empty-allowed-om)); other vowels’ **-m** still not “none”; **u** = *none of* the listed; **ua** / **uo** = complement of the listed; **ue** = reverse-rank among the listed. With **-r**: [fill-ask arity](#fill-ask-r).
 
-### Ranked — unary (under question)
+### Rank — focus (under question)
 
 | Form | Under question |
 |------|----------------|
@@ -107,7 +108,7 @@ Phrase-level for entity/property slots; VP/clause for action/claim slots. Statem
 | **…en** (`zen` / …) | *X first, as usual?* |
 | **…er** (`zer` / …) | *Which X is first?* (fill-ask) |
 
-### Ranked — nullary (under question)
+### Rank — bare (under question)
 
 | Form | Under question |
 |------|----------------|
@@ -123,7 +124,7 @@ Phrase-level for entity/property slots; VP/clause for action/claim slots. Statem
 | **…en** | *Unspecified ranking?* (stock) |
 | **…er** | *What’s the priority?* / *What matters most?* (fill-ask) |
 
-### Boolean — unary (under question)
+### Set — focus (under question)
 
 | Form | Under question |
 |------|----------------|
@@ -144,7 +145,7 @@ Phrase-level for entity/property slots; VP/clause for action/claim slots. Statem
 | **…un** | *Not X, as usual?* / stock *Not X?* |
 | **…ur** | *What else (besides X)?* / *Other than X?* (fill-ask) |
 
-### Boolean — nullary (under question)
+### Set — bare (under question)
 
 | Form | Under question |
 |------|----------------|
@@ -172,13 +173,13 @@ Phrase-level for entity/property slots; VP/clause for action/claim slots. Statem
 
 Under `/h/` / `/w/`, only the [defined core](coordination.md#circumstance-restriction-h-w) has circumstance readings. Unspecified-member **-r** under question:
 
-| Form | Statement (nullary) | Under question (nullary) |
+| Form | Statement (bare) | Under question (bare) |
 |------|---------------------|--------------------------|
 | **`har`** / **`war`** | *sometime* | *When?* / *In what case?* |
 | **`hor`** / **`wor`** | *anytime* | *Anytime?* |
 | **`hur`** / **`wur`** | *sometime else* | *When else?* |
 
-With conjuncts: `har h-rainl h-snowl` → *sometime among rain or snow*; under question, nullary `har` → *When?* Unary / multi parallel the phrase fill-ask pattern in the circumstance slot.
+With conjuncts: `har h-rainl h-snowl` → *sometime among rain or snow*; under question, bare `har` → *When?* Focus / multi parallel the phrase fill-ask pattern in the circumstance slot.
 
 ---
 
