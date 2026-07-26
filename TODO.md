@@ -11,10 +11,7 @@ Fold into `docs/language-reference.md` when decided; dictionary lists specific f
 - Sentence linkers: *therefore, however, meanwhile, in other words, next, finally*, *but*, *instead*, *except*
 - Aside / parenthesis fences (begin-aside, end-aside), parallel to quotation markers
 
-## Clause operators — `/j/` force vs `/h/` (not `/x/`)
-
-- Negation (clause-level `/h/`; adjective-scoped negation via `/w/` if needed) Uses unary conjunctions?
-
 ## Still underspecified under existing PoS (no new prefix)
 
+- Negation: done via bare **u** on coordination ([coordination.md](docs/coordination.md#negation-u)); leftover if needed: NPI *anything*, *never* / *not yet* / *no longer* (likely `/h/` lexicon)
 - Comparatives (*bigger than X*) as complex adjective (`/ɡ/`+`/b/`) or `/w/`  (use the ranked conjunction?)
