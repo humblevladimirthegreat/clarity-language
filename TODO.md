@@ -3,7 +3,6 @@
 -local llm systematically review entire lexicon
 -speed reading display
 -rank reversal (by adding h-word)
--improve u coordination wording
 
 ## Discourse markers (`/x/`) — expand beyond quotes + linkers
 
@@ -14,7 +13,7 @@ Fold into `docs/language-reference.md` when decided; dictionary lists specific f
 
 ## Clause operators — `/j/` force vs `/h/` (not `/x/`)
 
-- Negation (clause-level `/h/`; adjective-scoped negation via `/w/` if needed) Uses unary conjunctions?
+- Negation (clause-level `/h/`; adjective-scoped negation via `/w/` if needed) Uses unary conjunctions? Repurpose u coordination to broadly mean negation/inverse?
 
 ## Still underspecified under existing PoS (no new prefix)
 
