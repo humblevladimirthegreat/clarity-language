@@ -118,7 +118,7 @@ On [value](values.md) compounds under `/h/` or `/w/` with an **`x`+a/e/o/u** sta
 
 On [ability](special-vocabulary.md#ability) compounds — **host + `x` + {a\|u}** (primary: `v-singxun`) or fallback **`ABIL + x + {a\|u}`** — **-l / -m / -n / -r** are **changeability** on both **`xa`** (capable) and **`xu`** (incapable) — same senses as unmet **`xu`**, not contact / standing / force. **`xe`** / **`xo`** are undefined on ability. Need-root + `x…` stays [values](values.md). Details: [special-vocabulary.md](special-vocabulary.md).
 
-On [role compounds](special-vocabulary.md#role-compounds) — **`{a\|e\|o} x ROOT`** (agent / patient / reltum) — **-l / -m / -n / -r** keep **ordinary** reference-suffix senses (kind / soft / titled / resume participant). Not contact / standing / force / changeability. Mid-word **`x`** families: [x-compounds.md](x-compounds.md).
+On [role compounds](special-vocabulary.md#role-compounds) — **`{a\|u\|o} x ROOT`** (agent / patient / reltum) — **-l / -m / -n / -r** keep **ordinary** reference-suffix senses (kind / soft / titled / resume participant). Not contact / standing / force / changeability. Mid-word **`x`** families: [x-compounds.md](x-compounds.md).
 
 ## Join exception
 

@@ -279,7 +279,7 @@ PoS + HOST + x + {a|u} + {-l|-m|-n|-r}
 | **`xa` / `xu`** | Capable / incapable |
 | **Ending** | [Changeability](#ability-changeability) only |
 
-**Parser cue:** root ∈ [six needs](values.md#need-inventory) + `x…` → **value** tables. Other roots + **`xa` / `xu`** → **ability**. **`xe` / `xo`** on non-need hosts stay **undefined** (do not borrow motive / prescription). After PoS, single ROLE vowel **a** / **e** / **o** then `x` then a **longer** root → [role compound](#role-compounds), not ability. After PoS, single TYPE vowel **a** / **e** / **o** / **u** then `x` then a single EDGE vowel + ending → [span form](quotations.md) (`daxal`, `daxan`, `daxar`, …); **`xuxul`** / **`xuxum`** → span close — not ability. Full map: **[x-compounds.md](x-compounds.md)**.
+**Parser cue:** root ∈ [six needs](values.md#need-inventory) + `x…` → **value** tables. Other roots + **`xa` / `xu`** → **ability**. **`xe` / `xo`** on non-need hosts stay **undefined** (do not borrow motive / prescription). After PoS, single ROLE vowel **a** / **u** / **o** then `x` then a **longer** root → [role compound](#role-compounds), not ability. After PoS, single TYPE vowel **a** / **e** / **o** / **u** then `x` then a single EDGE vowel + ending → [span form](quotations.md) (`daxal`, `daxan`, `daxar`, …); **`xuxul`** / **`xuxum`** → span close — not ability. Full map: **[x-compounds.md](x-compounds.md)**.
 
 **Ship first:** **`xu`** (incapability). **`xa`** when you want tagged *can*.
 
@@ -394,7 +394,7 @@ Stack when useful: e.g. can’t-sing plus unmet competence (`v-singxum` + `h-com
 - Do **not** overload [restrictors](restrictors.md) as ability morphology.
 - Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)); host **`/v/`** / **`/ɡ/`** ability compounds follow ordinary plurality rules for that PoS.
 
-## Role compounds (`a` / `e` / `o` × root)
+## Role compounds (`a` / `u` / `o` × root)
 <a id="role-compounds"></a>
 <a id="participant-compounds"></a>
 <a id="agent-patient-reltum"></a>
@@ -404,30 +404,30 @@ Derive **event/relation participants** without open lexicon role nouns (*attacke
 ### Pattern
 
 ```
-PoS + {a|e|o} + x + ROOT + {-l|-m|-n|-r}
+PoS + {a|u|o} + x + ROOT + {-l|-m|-n|-r}
 ```
 
 | Piece | Role |
 |-------|------|
 | **PoS** | Slot **now** — prefer `/z/` `/d/` `/b/` (entity participant). `/ɡ/` optional as classifying property; `/v/` `/h/` `/w/` **undefined** for now |
-| **ROLE** | Single vowel **`a`** / **`e`** / **`o`** (not a content root — no open root is a bare vowel) |
+| **ROLE** | Single vowel **`a`** / **`u`** / **`o`** (not a content root — no open root is a bare vowel) |
 | **`x`** | Ordinary [compound joiner](phonology.md#phonotactics) |
-| **ROOT** | Event stem (**`a`/`e`**) or relation stem (**`o`**) — `V(CV)+` |
+| **ROOT** | Event stem (**`a`/`u`**) or relation stem (**`o`**) — `V(CV)+` |
 | **Ending** | Ordinary [reference-suffix](reference-suffix.md) senses — **not** value/ability ending tables |
 
-**Parser cue:** after PoS, a single vowel then `x` then a **longer** root + ending → role compound. Same shape with a **single** vowel after `x` → [span](quotations.md), not role. **`u x …`** is **reserved** (undefined) — not a fourth ROLE.
+**Parser cue:** after PoS, a single vowel then `x` then a **longer** root + ending → role compound. Same shape with a **single** vowel after `x` → [span](quotations.md), not role. **`e x …`** is **reserved** (undefined) — not a fourth ROLE.
 
 ### Inventory
 
 | ROLE | Form | ROOT type | Referent |
 |------|------|-----------|----------|
 | **`a`** | `…axROOT…` | **event** (verb / event noun stem) | **agent** — doer / subject-like participant of that event |
-| **`e`** | `…exROOT…` | **event** | **patient** — undergoer / object-like participant of that event |
+| **`u`** | `…uxROOT…` | **event** | **patient** — undergoer / object-like participant of that event |
 | **`o`** | `…oxROOT…` | **relation** (complex `/ɡ/` / `/h/` / [join-relation](#join-relations) root, …) | **reltum** — the `/b/` argument pole of that relation |
 
 Recipients, beneficiaries, topic NPs, and other adjunct `/b/`s stay ordinary resume of that `/b/` noun (or the `/h/`+`/b/` unit) — do **not** invent more ROLE vowels for them.
 
-Mnemonic (loose only): **a** ≈ doer side; **e** ≈ affected; **o** ≈ oblique / `/b/` — **not** reviser or join readings.
+Mnemonic (loose only; parallels [values](values.md) **`xa`/`xu`** and join **a** / **u**): **`a`** ≈ additive / doer; **`u`** ≈ subtractive / undergoer (inverse of agent); **`o`** ≈ oblique / `/b/` — **not** reviser or join readings.
 
 ### Endings
 
@@ -436,11 +436,11 @@ Mnemonic (loose only): **a** ≈ doer side; **e** ≈ affected; **o** ≈ obliqu
 | **-l** | Indefinite / kind — *an attacker*, *attackers as a type* (`z-axattackl`) |
 | **-m** | Soft / hedged role |
 | **-n** | Titled / epithet role label (rare) |
-| **-r** | Definite — participant of the **most recent matching** event (**`a`/`e`**) or relation (**`o`**) for that ROOT |
+| **-r** | Definite — participant of the **most recent matching** event (**`a`/`u`**) or relation (**`o`**) for that ROOT |
 
 **-r** resolution: match ROOT to the most recent verb, event noun, or relation word with that stem (including a ROOT half inside a prior role compound). ROLE picks that frame’s agent, patient, or `/b/` pole — including when the participant was only introduced as [unspecified-member](coordination.md#unspecified-member-r-phrase) **`zar`** / **`dar`** / ….
 
-Bare event noun stays the event: `z-attackl` / `z-attackr` = *an / that attack*, not a participant. Cross-PoS content **-r** from a verb still resumes the [event](pronouns.md), not the agent — use **`ax`/`ex`** for participants.
+Bare event noun stays the event: `z-attackl` / `z-attackr` = *an / that attack*, not a participant. Cross-PoS content **-r** from a verb still resumes the [event](pronouns.md), not the agent — use **`ax`/`ux`** for participants.
 
 ### Examples (schematic roots)
 
@@ -449,7 +449,7 @@ Bare event noun stays the event: `z-attackl` / `z-attackr` = *an / that attack*,
 | `jal zar d-SPEAKER v-attackl` | *Someone attacked me* |
 | `jal z-axattackr v-fleel` | *The attacker fled* |
 | `z-axattackl` | *an attacker* (kind; no discourse event required) |
-| `d-exattackr` | *the one attacked* (as object now) |
+| `d-uxattackr` | *the one attacked* (as object now) |
 | `z-oxofr` | *that of-argument* (reltum of salient `…ofl b-…`) |
 | `z-attackr` | *that attack* (event — not agent) |
 
@@ -461,18 +461,19 @@ Bare event noun stays the event: `z-attackl` / `z-attackr` = *an / that attack*,
 | Content **-r** on event | The event / doing itself ([pronouns](pronouns.md)) |
 | **`zar`** / **`dar`** | Unspecified member introduce; weak resume target — prefer role **-r** once the event is named |
 | Ability `v-attackxun` | Can’t attack — **ROOT x vowel**, not ROLE vowel left of `x` |
-| Span `daxal` | Quote open — **vowel x vowel**, not ROLE x root |
+| Span `daxal` / `duxal` | Quote / opaque open — **vowel x vowel**, not ROLE x root |
 
 ### Out of scope (for now)
 
-- ROLE **`u`** (reserved; not *act done by entity* — resume verbs with ordinary **-r**, or use **`var`** for unnamed doing).
+- ROLE **`e`** (reserved).
 - Instrument / beneficiary / recipient as extra ROLE vowels.
 - Role compounds under `/v/` `/h/` `/w/`.
 - Stacking role + ability (`axattackxu…`) — ban; put ability on the bare event verb.
+- *Act done by entity* as a ROLE — resume verbs with ordinary **-r**, or use **`var`** for unnamed doing.
 
 ### Constraints
 
-- ROLE is **`a`/`e`/`o`** only; wrong ROOT type for a ROLE is illegal (not metaphorical).
+- ROLE is **`a`/`u`/`o`** only; wrong ROOT type for a ROLE is illegal (not metaphorical).
 - Endings stay **ordinary** reference-suffix senses on role compounds.
 - Do **not** read ROLE vowels as value stances, ability polarity, or span TYPE/EDGE.
 - Plural **-sh** on noun-slot role compounds follows ordinary [plurality](plurality.md) for that PoS.

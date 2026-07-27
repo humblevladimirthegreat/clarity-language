@@ -72,7 +72,7 @@ Each subsection is an **antecedent** PoS; the table rows are the **pronoun** PoS
 
 | Pronoun PoS | English approximation |
 |-------------|------------------------|
-| `/z/` `/d/` `/b/` | *that action / event / doing*; *the (act of) …-ing*; English *it* for the event — **not** the agent/patient; use [role compounds](special-vocabulary.md#role-compounds) (`z-axattackr`, `d-exattackr`) |
+| `/z/` `/d/` `/b/` | *that action / event / doing*; *the (act of) …-ing*; English *it* for the event — **not** the agent/patient; use [role compounds](special-vocabulary.md#role-compounds) (`z-axattackr`, `d-uxattackr`) |
 | `/v/` | *do so* / *do that* |
 | `/ɡ/` | *such* (done that way); property of having done that |
 | `/w/` | Frame on an adjective about that doing (*allegedly that*, *former that*) |
