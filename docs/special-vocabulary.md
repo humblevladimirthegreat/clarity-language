@@ -191,7 +191,7 @@ PoS + HOST + x + {a|u} + {-l|-m|-n|-r}
 | **`xa` / `xu`** | Capable / incapable |
 | **Ending** | [Changeability](#ability-changeability) only |
 
-**Parser cue:** root ∈ [six needs](values.md#need-inventory) + `x…` → **value** tables. Other roots + **`xa` / `xu`** → **ability**. **`xe` / `xo`** on non-need hosts stay **undefined** (do not borrow motive / prescription). After PoS, single TYPE vowel **a** / **e** / **o** / **u** then `x` then **`a`** + ending → [span open](quotations.md) (`daxal`); **`xuxul`** / **`xuxum`** → span close — not ability.
+**Parser cue:** root ∈ [six needs](values.md#need-inventory) + `x…` → **value** tables. Other roots + **`xa` / `xu`** → **ability**. **`xe` / `xo`** on non-need hosts stay **undefined** (do not borrow motive / prescription). After PoS, single TYPE vowel **a** / **e** / **o** / **u** then `x` then a single EDGE vowel + ending → [span form](quotations.md) (`daxal`, `daxan`, `daxar`, …); **`xuxul`** / **`xuxum`** → span close — not ability.
 
 **Ship first:** **`xu`** (incapability). **`xa`** when you want tagged *can*.
 
