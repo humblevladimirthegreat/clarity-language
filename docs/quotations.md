@@ -28,7 +28,7 @@ Same split as number shorthand (`g+3l` written, full CV spoken).
 | **PoS** | `z` `d` `b` `v` `g` `w` `h` `j` `x` | slot the **whole span** (or span anaphor) fills in the outer clause |
 | **TYPE** | **a** quote · **e** aside · **o** mention · **u** opaque | span kind (matches bracket shape) |
 | **`x`** | mid-word joiner | marks a span-fence form |
-| **EDGE** | **a** · **e** · **o** · **u** | **extent** — how much material the open covers ([EDGE](#edge)) |
+| **EDGE** | **a** · **e** · **o** · **u** | **extent** — how far an open runs, or (**`o`**) transparent escape ([EDGE](#edge), [escape](#escape)) |
 | **ENDING** | **-l** exact · **-m** paraphrase · **-n** atomic · **-r** anaphor | fidelity, single-token packaging, or span pronoun ([endings](#endings)) |
 
 Example: **`daxal`** = `d` + `a` + `x` + `a` + `l` → **open exact multi-token quote as direct object** (needs close).
@@ -47,11 +47,13 @@ xuxum  =  x + u + x + u + m
 
 Close does **not** repeat PoS, TYPE, EDGE, or open fidelity. Fidelity and extent are decided only at open. These forms are **not** clause joins (`xul` / `xum` = negation — different shape). They are **not** an empty quote under `/d/` (`daxul` = empty/redacted object quote; `xuxul` = close). **`xuxun`** / **`xuxur`** are undefined for now.
 
-Opens, empties, atomics, anaphors, and closes are **not** [value](values.md) / [ability](special-vocabulary.md#ability) compounds (those have a **content root** before `x`).
+Opens, empties, atomics, anaphors, the escape **`xoxol`**, and closes are **not** [value](values.md) / [ability](special-vocabulary.md#ability) compounds (those have a **content root** before `x`).
 
 **Parser cue — span form:** after PoS, material before the first `x` is exactly one TYPE vowel (**a** / **e** / **o** / **u**), and after `x` exactly one EDGE vowel (**a** / **e** / **o** / **u**) + **-l** / **-m** / **-n** / **-r**. Longer material before `x` → ordinary compound.
 
 **Parser cue — close:** exact words **`xuxul`** / **`xuxum`** only.
+
+**Parser cue — escape:** exact word **`xoxol`** only (EDGE **o** is otherwise undefined on span opens). The **next** token is raw surface — not an open, close, or anaphor.
 
 Spoken open/close may be omitted in casual speech when the listener has writing or clear prosody; they matter for voice-to-text, singing, and emphatic quoting.
 
@@ -114,18 +116,17 @@ Writing: `jol z-hen d[·] v-saidl`
 | `d[hi]` | `daxan hi` | **atomic** — one token; no close (closer optional in writing) |
 | `d<sushi>` | `duxan sushi` | atomic opaque |
 | `d[…` … (to clause end) | `daxel` … | **clause-scoped** (EDGE **e**); auto-pop before next clause-force `/j/` or clause join |
-| `d[…` … (interrupted) | `daxol` … | **soft / interrupted** (EDGE **o**); rare |
 | `d[]` | `daxul` | **empty / redacted** (EDGE **u**); no interior |
 | `d[·]` | `daxar` | **anaphor** — prior quote as object (*that*) |
 | `d{·}` / `d(·)` / `d<·>` | `doxar` / `dexar` / `duxar` | anaphor of that TYPE |
 
-Same TYPE with any other PoS (`zaxal`, `hexal`, `xoxal`, `duxal`, `zaxar`, …). Explicit close is **`xuxul`** (or **`xuxum`** to clear the stack) when EDGE **a** (or **o**) left a frame open.
+Same TYPE with any other PoS (`zaxal`, `hexal`, `xoxal`, `duxal`, `zaxar`, …). Explicit close is **`xuxul`** (or **`xuxum`** to clear the stack) when EDGE **a** left a frame open. EDGE **`o`** is **not** a multi-token open — only the fixed escape **`xoxol`** ([escape](#escape)).
 
 There is **no** separate “conventional saying” span type. Cite a proverb / stock line as a **quote**. Treat a formula as a named label / title with **mention** and ordinary content-word **-n** inside when it is a proper designation.
 
 Nesting is by matching depth — unescaped nests are legal (`d[ z[…] ]`, `d[ h(…) ]`, `~d[ z{…} ]`, `d[ d<…> ]`, …). Do **not** use nesting depth as an escape convention. **`~`** applies only to the immediately following open (each nested open may take its own `~` or not). Atomic and anaphor forms do **not** push a nest frame that needs a closer.
 
-Literal bracket / `~` / `<` / `>` glyphs that must appear as content use a writing escape (`\` before the glyph). Spoken escape: see [escape](#escape).
+Literal bracket / `~` / `<` / `>` / `·` / `»` glyphs that must appear as content use a writing escape (`\` before the glyph). Spoken escape: see [escape](#escape).
 
 <a id="type"></a>
 <a id="vowels"></a>
@@ -157,14 +158,14 @@ The vowel **after** `x` is **EDGE** — how far the open runs. It is **not** a s
 |------|-----|----------------|-----------------|
 | **a** | **Multi-token open** — push a stack frame until explicit close (default) | yes (unless atomic **-n** / anaphor **-r**) | `d[…]` … `]` |
 | **e** | **Clause-scoped** — auto-pop before the next clause-force `/j/` or clause-level `/x/` join | no (auto) | `d[…` run to clause end |
-| **o** | **Soft / interrupted** — open may be unfinished; listener may close | optional | rare |
+| **o** | **Escape** — only fixed **`xoxol`**: next token is raw surface ([escape](#escape)); not a multi-token open | no | (speech; writing uses `\`) |
 | **u** | **Empty / redacted** — no interior (*said ―*) | no | `d[]` |
 
 **Atomic `-n`** and **anaphor `-r`** always use EDGE **`a`** in the spoken template (`daxan`, `daxar`). Other EDGE + **-n** / **-r** combinations are undefined.
 
-EDGE **`e`** / **`o`** take ordinary fidelity **-l** / **-m** (`daxel`, `daxem`, `daxol`, …). EDGE **`u`** is normally exact **-l** (`daxul`); paraphrase-empty (`daxum`) is odd and unused for now.
+EDGE **`e`** takes ordinary fidelity **-l** / **-m** (`daxel`, `daxem`, …). EDGE **`u`** is normally exact **-l** (`daxul`); paraphrase-empty (`daxum`) is unused for now. EDGE **`o`** on ordinary PoS×TYPE opens (`*daxol`, `*hexol`, …) is **undefined** — only **`xoxol`**.
 
-Open (EDGE **a** / **e** / **o** with **-l** / **-m**) pushes a stack frame (PoS + TYPE + EDGE + fidelity) when there is interior to fence. **`xuxul`** pops one frame; **`xuxum`** pops all. Atomic and anaphor do not leave a frame that needs popping.
+Open (EDGE **a** / **e** with **-l** / **-m**) pushes a stack frame (PoS + TYPE + EDGE + fidelity) when there is interior to fence. **`xuxul`** pops one frame; **`xuxum`** pops all. Atomic, anaphor, empty, and **`xoxol`** do not leave a frame that needs popping.
 
 <a id="endings"></a>
 
@@ -174,7 +175,7 @@ Open (EDGE **a** / **e** / **o** with **-l** / **-m**) pushes a stack frame (PoS
 
 | Ending | Meaning | Preferred writing |
 |--------|---------|-------------------|
-| **-l** | **exact** — verbatim / precise surface (multi, clause-scoped, soft, or empty) | bare open (no `~`) |
+| **-l** | **exact** — verbatim / precise surface (multi, clause-scoped, or empty) | bare open (no `~`) |
 | **-m** | **paraphrase** — gist / non-verbatim rendering | **`~`** before PoS / opening bracket |
 | **-n** | **atomic** — exactly **one** following token; **exact** only; **no** close | `d[hi]`, `d<sushi>`, … (closer optional) |
 | **-r** | **anaphor** — pronoun for the **most recent span of this TYPE**; PoS = role **now**; **not** a new open | `d[·]`, `z{·}`, … |
@@ -207,9 +208,9 @@ Named entities *inside* a **quote / mention / aside** still take ordinary PoS + 
 | mention **o** | `…oxal` | `…oxam` | `…oxan` | `…oxar` |
 | opaque **u** | `…uxal` | `…uxam` | `…uxan` | `…uxar` |
 
-Clause-scoped / soft / empty (quote examples): `…axel` / `…axem`; `…axol` / `…axom`; `…axul` (empty). Same EDGE pattern on other TYPEs (`…exel`, `…uxul`, …).
+Clause-scoped / empty (quote examples): `…axel` / `…axem`; `…axul` (empty). Same EDGE pattern on other TYPEs (`…exel`, `…uxul`, …). Soft/interrupted EDGE **`o`** opens are **withdrawn**.
 
-Object-slot examples: `daxal` / `daxam` / `daxan` / `daxar`; `duxal` / `duxan` / `duxar`; `daxul` (empty quote).
+Object-slot examples: `daxal` / `daxam` / `daxan` / `daxar`; `duxal` / `duxan` / `duxar`; `daxul` (empty quote). Escape: **`xoxol`**.
 
 ### Closes
 
@@ -218,11 +219,17 @@ Object-slot examples: `daxal` / `daxam` / `daxan` / `daxar`; `duxal` / `duxan` /
 | `xuxul` | pop one |
 | `xuxum` | pop all |
 
+### Escape
+
+| Form | Job |
+|------|-----|
+| `xoxol` | next token is raw surface — [escape](#escape) |
+
 <a id="when-required"></a>
 
 ## When spans are required
 
-Use a span (PoS + brackets in writing; matching spoken open + close when a multi-token EDGE **a**/**o** open is pronounced) when:
+Use a span (PoS + brackets in writing; matching spoken open + close when a multi-token EDGE **a** open is pronounced) when:
 
 - quoting someone’s words, or citing a proverb / stock saying as wording (**quote** TYPE **a** / `…[…]`)
 - mid-sentence parenthetical digression (**aside** TYPE **e** / `…(…)`) — prefer PoS `/h/`; must **not** use floating `/j/` — [utterance markers](language-reference.md#utterance-markers-j)
@@ -273,16 +280,53 @@ Fences nest freely. Each multi-token open pushes; **`xuxul`** pops the innermost
 **Speech sketch** for `~d[ hello ]`: `daxam` … `xuxul`.  
 **Speech sketch** for atomic: `daxan hi`.  
 **Speech sketch** for anaphor: `daxar`.  
-**Speech sketch** for nested then clear: `daxal` … `zoxal` … `xuxum` (pops both).
+**Speech sketch** for nested then clear: `daxal` … `zoxal` … `xuxum` (pops both).  
+**Speech sketch** for transparent escape of a close-shaped word: `daxal` … `xoxol xuxul` … `xuxul`.
 
 <a id="escape"></a>
 
 ## Escape
 
-Escape is **only** for when a span-marker word (speech) or a raw bracket / `~` / `<` / `>` / PoS-before-bracket sequence (writing) must appear **as content** inside a span — **not** for ordinary nesting.
+Escape is **only** for when a span-marker word (speech) or a raw bracket / `~` / `<` / `>` / `·` / `»` / PoS-before-bracket sequence (writing) must appear **as content** inside a span — **not** for ordinary nesting.
 
-- **Writing:** `\` before `[` / `]` / `{` / `}` / `(` / `)` / `<` / `>` / `~` / `»`.
-- **Speech:** a dedicated longer escape root (dictionary form TBD; likely under `/x/`) immediately before the token that would otherwise be read as a span open/anaphor or as `xuxul` / `xuxum`.
+### Writing
+
+`\` before `[` / `]` / `{` / `}` / `(` / `)` / `<` / `>` / `~` / `»` / `·`. Literal backslash: `\\`.
+
+```text
+d[ he typed \] then left ]
+d<code \> 1>
+```
+
+### Speech — transparent escape (**`xoxol`**)
+
+Fixed discourse form (PoS `/x/`, TYPE **o**, EDGE **o**, **-l**):
+
+```text
+xoxol  =  x + o + x + o + l
+```
+
+**`xoxol`** makes the **immediately following** token raw surface — it is **not** read as a span open, empty, atomic, anaphor, or as **`xuxul`** / **`xuxum`**. It does **not** open a nested cite layer (transparent). Escape the escape: **`xoxol xoxol`**.
+
+```text
+daxal foo xoxol xuxul bar xuxul
+           └ literal “xuxul” ┘ └ close
+duxal foo xoxol xuxul bar xuxul
+           └ literal inside opaque ┘
+```
+
+Other EDGE **`o`** span spellings (`*daxol`, `*xoxom`, `*xoxor`, …) are **undefined**. Soft/interrupted multi-opens on EDGE **`o`** are **withdrawn**.
+
+### Speech — prefer nest when a cite is fine
+
+Atomic (especially **opaque** atomic) already binds the next token before fence recognition — use that when you **are** citing the word as a blob:
+
+```text
+daxal duxan xuxul xuxul
+      └ cite “xuxul” ┘ └ close quote
+```
+
+Writing: `d[ d<xuxul> ]`. Prefer **`xoxol`** when you need a transparent literal (no nested TYPE), especially inside opaque.
 
 <a id="not-this"></a>
 
@@ -299,9 +343,6 @@ Escape is **only** for when a span-marker word (speech) or a raw bracket / `~` /
 | Nativized loan as ordinary word | PoS + adapted root + ending — [loans](#loans) |
 | Ordinary content anaphor (*that dog*) | content root + **-r** — [pronouns.md](pronouns.md) |
 | Re-quoting the same words as a fresh cite | new open (`daxal` / `daxan` / …), not **-r** |
+| Literal fence word / meta glyph as content | [escape](#escape) — `\` / **`xoxol`** / nest atomic opaque |
 
 <a id="xl-span-markers"></a>
-
-## Historical note
-
-Earlier designs used discourse-only onset **`xl-`**, then PoS-matched EDGE-**u** closes (`daxul` = *close object quote*). Those closes are **withdrawn** in favor of **`xuxul`** / **`xuxum`**. Spoken **`daxul`** is now **empty/redacted** object quote (EDGE **u**), not a close. Opens are `{PoS}{TYPE}x{EDGE}{ENDING}` with TYPE and EDGE both **a** / **e** / **o** / **u**; closes are only **`xuxul`** / **`xuxum`**.
