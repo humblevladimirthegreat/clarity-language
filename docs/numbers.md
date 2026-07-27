@@ -1,6 +1,6 @@
 # Numbers
 
-Numerals are a **closed formal subsystem**, not ordinary lexicon roots. Open quantifiers (*many*, *all*, *some*, …) stay lexicon; the numeral word itself can be [digitless](#zero-digit-groups) (unspecified magnitude of a marker identity, including plural **`>1`** on **`ra`**). PoS prefixes are defined in [language-reference.md](language-reference.md); plural **-sh** in [plurality.md](plurality.md); general phonotactics live in [phonology.md](phonology.md); ordinary reference suffixes in [reference-suffix.md](reference-suffix.md). This page is the source of truth for numeral grammar, including [ranges](#ranges) (spans reuse [phrase fences](coordination.md) with SHARED continuum `/ɡ/`, documented here) and [measure phrases](#measure-phrases) (unit + amount for differentials and durations).
+Numerals are a **closed formal subsystem**, not ordinary lexicon roots. Open quantifiers (*many*, *all*, *some*, …) stay lexicon; the numeral word itself can be [digitless](#zero-digit-groups) (unspecified magnitude of a marker identity, including plural **`>1`** on **`ra`**). PoS prefixes are defined in [language-reference.md](language-reference.md); plural **-sh** in [plurality.md](plurality.md); general phonotactics live in [phonology.md](phonology.md); ordinary reference suffixes in [reference-suffix.md](reference-suffix.md). This page is the source of truth for numeral grammar, including [percent denominators](#percent-denominators) (whole NP + `/ɡ/` `…jo`), [ranges](#ranges) (spans reuse [phrase fences](coordination.md) with SHARED continuum `/ɡ/`, documented here) and [measure phrases](#measure-phrases) (unit + amount for differentials and durations).
 
 A whole numeric value is **one word**, even when it contains several digit groups (or none).
 
@@ -282,15 +282,39 @@ In [preferred writing](#writing-preferred-shorthand): **`%`** → speech **`jo`*
 
 | English habit | Clarity |
 |---------------|---------|
-| `25% of X` (portion) | **`jo`** number + whole in the clause |
+| `25% of X` (portion) | whole NP + `/ɡ/` **`…jo`** — [denominator](#percent-denominators) |
 | `+2 percentage points` / `from 10% to 12%` point delta | **`ju`** (often as `/v/` **`ra`** / **`ru`**: increase/decrease by that point amount) |
 | `+50% relative to baseline` (factor change) | **Not** **`jo`** / **`ju`** — use a multiplicative `/h/` factor (**`h+1.5l`**, etc.) or ordinary *relative-to* wording |
 
 `25%` (`…jo`) and `0.25` (plain scalar) name the same magnitude; **`jo`** only chooses the percent-scale reading. **`ju`** likewise names a ÷100 magnitude, but framed as **points** (not as “N% of a whole”).
 
 ### Denominator (portion “of what”)
+<a id="percent-denominators"></a>
+<a id="percent-of-what"></a>
 
-The **whole** / reference class is **not** inside the number word. Prefer clause structure that names it (typically noun + `/ɡ/` percent number, or a complex adjective/adverb + `/b/` whole). Exact denominator patterns are **TBD** later.
+The **whole** / reference class is **not** inside the number word — no denom closer, no open argument on the numeral.
+
+**Default:** the whole is the **host noun**; the percent is an ordinary `/ɡ/` scalar on that noun — same slot as a count (`z-catlsh g+3l` = *three cats*):
+
+| Shape | Gloss |
+|-------|--------|
+| `z-catlsh g+25%l` | *25% of the cats* |
+| `d-testlsh g+95%l` | *95% of the tests* (object) |
+| `b-peoplelsh g+5%l` under a host relation | *5% of the people* as `/b/` |
+
+The noun names the reference class; **`jo`** grades how much of that class. Same endings on the percent word (**-m** ≈ *about 25% of …*).
+
+**When the whole is not the modified head:** use a complex `/ɡ/` or `/h/` *of* / *out of* (lexicon relation) + `/b/` whole, with the percent elsewhere in the clause as needed. Do **not** invent a second `/b/` on the number word (numbers take no `/w/` and no open arguments).
+
+**Not a denom job** (no portion-whole required):
+
+| Habit | Why |
+|-------|-----|
+| **`…ju`** point amounts / deltas | Points move a percent-scale quantity already in play |
+| `from A% to B%` [spans](#ranges) | Endpoints are percent readings; continuum supplies the line |
+| `N% relative to` baseline | Factor change — `/h/` **`h+…`** or ordinary *relative-to* wording |
+| *top / bottom N%* | Rank band; class usually clear from context or named separately |
+| *N% done / complete* | Whole = the task; often clear without a separate denom NP |
 
 **Style:** a bare `/z/` (or other freestanding) **`…jo`** percent with no named whole is **grammatical but stylistically bad** — same pressure as Claritish *Percent of what*. Prefer an explicit whole. Bare **`…ju`** point amounts are fine when the percent-scale quantity being moved is already clear.
 
@@ -387,6 +411,7 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 | phone 555-123-4567 | `d_555,123,4567l` | *drovavavawoduremovagulel* (`d` + `ro` + va×3 · wo du re · mo va gu · le + `l`) |
 | scientific 5.2487083e-4 | `g+5.2487083e-4l` | *grabumojavajedumohalezoharel* (`ra` + bu mo **ja** + va **je** + du mo ha · le zo ha · re) |
 | 25% | `g+25%l` | *graduvajol* (`g` + `ra` + du va **jo** + `l`) |
+| 25% of the cats | `z-catlsh g+25%l` | host whole + `/ɡ/` percent — [denominator](#percent-denominators) |
 | about 3% | `g+3%m` | *grarejom* (`ra` + re **jo** + `m`) |
 | −12.5% | `g-12.5%l` | *gruwodujevajol* (`ru` + wo du **je** va **jo**) |
 | 100% | `g+100%l` | *grawozozojol* (`ra` + wo zo zo **jo**; normal mantissa digits) |
@@ -410,7 +435,7 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 | twenty-seven! (label) | `j_27l` | *jrodulel* (`j` + `ro` + du le) |
 | First! (place cheer) | `j#1l` | *jrewol* (`j` + `re` + wo) |
 
-In a sentence, the PoS attaches to that single number word (see [Parts of speech on numbers](#parts-of-speech-on-numbers); e.g. direct-object digit-string: `d_…l`). Prefer naming the whole with a `/ɡ/` **`jo`** percent (denominator patterns TBD).
+In a sentence, the PoS attaches to that single number word (see [Parts of speech on numbers](#parts-of-speech-on-numbers); e.g. direct-object digit-string: `d_…l`). Prefer naming the whole as the host of a `/ɡ/` **`jo`** percent ([denominator](#percent-denominators): `z-catlsh g+25%l`).
 
 ## Measure phrases
 <a id="measure-phrases"></a>
