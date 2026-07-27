@@ -40,8 +40,13 @@
     "antlr4ng": "^3.0.16"
   },
   "devDependencies": {
+    "@tiptap/core": "^3.29.1",
+    "@tiptap/markdown": "^3.29.1",
+    "@tiptap/pm": "^3.29.1",
+    "@tiptap/starter-kit": "^3.29.1",
     "@types/node": "^26.1.1",
     "antlr-ng": "^1.0.10",
+    "happy-dom": "^20.11.1",
     "tsx": "^4.23.1",
     "typescript": "^5.9.3"
   }

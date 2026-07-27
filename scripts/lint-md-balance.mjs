@@ -1,12 +1,20 @@
 #!/usr/bin/env node
 /**
- * Fail if Markdown emphasis markers (* / **) are left open at EOF.
- * Strips fenced code, inline code, and link destinations so morphology in
- * backticks does not confuse the scan. Catches the usual "rest of file
- * renders bold/italic" breakage from nested or mistyped **.
+ * Fail if Markdown will break Cursor's inline rich editor (TipTap / ProseMirror).
  *
- * Also flags lines whose *local* ** / * parity is odd — those are usually
- * the real typo; EOF imbalance is often just the cascade.
+ * Primary check: parse each file with TipTap's Markdown extension (same stack
+ * family as Cursor) and walk the resulting JSON for duplicate marks on a
+ * single text node — e.g. marks: ["italic","italic"]. That is exactly the
+ * RangeError Cursor throws:
+ *   Invalid collection of marks for node text: italic,italic
+ *
+ * Secondary (cheap, no TipTap): slash-joined emphasis with no spaces
+ * (e.g. *a* + "/" + *b* with no spaces), which historically produced the
+ * same class of error.
+ *
+ * Note: TipTap's default schema also rejects bold+code (`**`foo`**`). Cursor
+ * accepts that pattern (other docs render fine), so we do NOT treat bold+code
+ * as a failure — only duplicate same-type marks.
  *
  * Usage: node scripts/lint-md-balance.mjs [paths...]
  * Default: docs/, AGENTS.md, TODO.md, README.md (if present)
@@ -14,8 +22,46 @@
 import { readdir, readFile, access, stat } from "node:fs/promises";
 import { join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { Window } from "happy-dom";
+import { Editor } from "@tiptap/core";
+import StarterKit from "@tiptap/starter-kit";
+import { Markdown } from "@tiptap/markdown";
 
 const ROOT = resolve(fileURLToPath(new URL("..", import.meta.url)));
+
+/** Emph spans joined by "/" with no spaces (ProseMirror italic,italic / bold,bold). */
+const SLASH_JOINED_EMPHASIS =
+  /(?:\*\*[^*\n]+?\*\*|\*[^*\n]+?\*)(?:\/(?:\*\*[^*\n]+?\*\*|\*[^*\n]+?\*))+/g;
+
+function installDom() {
+  const window = new Window({ url: "https://example.local/" });
+  Object.defineProperty(globalThis, "window", {
+    value: window,
+    configurable: true,
+  });
+  Object.defineProperty(globalThis, "document", {
+    value: window.document,
+    configurable: true,
+  });
+  for (const key of [
+    "Node",
+    "Element",
+    "HTMLElement",
+    "DocumentFragment",
+    "MutationObserver",
+  ]) {
+    Object.defineProperty(globalThis, key, {
+      value: window[key],
+      configurable: true,
+    });
+  }
+  Object.defineProperty(globalThis, "getComputedStyle", {
+    value: window.getComputedStyle.bind(window),
+    configurable: true,
+  });
+  globalThis.requestAnimationFrame = (cb) => setTimeout(cb, 0);
+  globalThis.cancelAnimationFrame = (id) => clearTimeout(id);
+}
 
 async function exists(path) {
   try {
@@ -53,33 +99,30 @@ function stripProtected(line) {
   return s;
 }
 
-function isListMarkerStar(s, j) {
-  return (
-    s[j] === "*" &&
-    (j === 0 || s[j - 1] === " ") &&
-    s[j + 1] === " " &&
-    !s.startsWith("**", j)
-  );
+/**
+ * Walk TipTap JSON for text nodes whose mark list repeats a type
+ * (italic,italic / bold,bold) — illegal in ProseMirror and what Cursor throws.
+ * @returns {{ text: string, marks: string[] }[]}
+ */
+function findDuplicateMarks(node, out = []) {
+  if (node?.type === "text" && Array.isArray(node.marks) && node.marks.length) {
+    const names = node.marks.map((m) => m.type);
+    const counts = Object.create(null);
+    for (const n of names) counts[n] = (counts[n] || 0) + 1;
+    if (Object.values(counts).some((c) => c > 1)) {
+      out.push({ text: node.text ?? "", marks: names });
+    }
+  }
+  for (const child of node?.content ?? []) findDuplicateMarks(child, out);
+  return out;
 }
 
-/**
- * @returns {{
- *   strong: 0|1,
- *   em: 0|1,
- *   firstOpen: null | { line: number, col: number, marker: string },
- *   oddLines: { line: number, strong: 0|1, em: 0|1 }[],
- *   unclosedFence: boolean
- * }}
- */
-function lintFile(text) {
+/** Secondary: tight emph spans joined by "/" with no spaces around the slash. */
+function findSlashJoined(text) {
+  /** @type {{ line: number, col: number, match: string }[]} */
+  const hits = [];
   const lines = text.split(/\r?\n/);
   let inFence = false;
-  let strong = 0;
-  let em = 0;
-  let firstOpen = null;
-  /** @type {{ line: number, strong: 0|1, em: 0|1 }[]} */
-  const oddLines = [];
-
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
     if (line.trim().startsWith("```")) {
@@ -87,64 +130,21 @@ function lintFile(text) {
       continue;
     }
     if (inFence) continue;
-
     const s = stripProtected(line);
-    let lineStrong = 0;
-    let lineEm = 0;
-    let j = 0;
-    while (j < s.length) {
-      if (isListMarkerStar(s, j)) {
-        j += 1;
-        continue;
-      }
-      let marker;
-      let advance;
-      if (s.startsWith("***", j)) {
-        marker = "***";
-        advance = 3;
-        strong ^= 1;
-        em ^= 1;
-        lineStrong ^= 1;
-        lineEm ^= 1;
-      } else if (s.startsWith("**", j)) {
-        marker = "**";
-        advance = 2;
-        strong ^= 1;
-        lineStrong ^= 1;
-      } else if (s[j] === "*") {
-        marker = "*";
-        advance = 1;
-        em ^= 1;
-        lineEm ^= 1;
-      } else {
-        j += 1;
-        continue;
-      }
-      if ((strong || em) && !firstOpen) {
-        firstOpen = { line: i + 1, col: j + 1, marker };
-      }
-      if (!strong && !em) firstOpen = null;
-      j += advance;
-    }
-    if (lineStrong || lineEm) {
-      oddLines.push({
+    for (const m of s.matchAll(SLASH_JOINED_EMPHASIS)) {
+      hits.push({
         line: i + 1,
-        strong: /** @type {0|1} */ (lineStrong),
-        em: /** @type {0|1} */ (lineEm),
+        col: (m.index ?? 0) + 1,
+        match: m[0],
       });
     }
   }
-
-  return {
-    strong: /** @type {0|1} */ (strong),
-    em: /** @type {0|1} */ (em),
-    firstOpen,
-    oddLines,
-    unclosedFence: inFence,
-  };
+  return hits;
 }
 
 async function main() {
+  installDom();
+
   const args = process.argv.slice(2);
   const entries =
     args.length > 0 ? args : ["docs", "AGENTS.md", "TODO.md", "README.md"];
@@ -160,47 +160,39 @@ async function main() {
     process.exit(2);
   }
 
-  let failed = 0;
-  for (const file of files) {
-    const rel = relative(ROOT, file);
-    const text = await readFile(file, "utf8");
-    const { strong, em, firstOpen, oddLines, unclosedFence } = lintFile(text);
+  const mount = document.createElement("div");
+  document.body.appendChild(mount);
+  const editor = new Editor({
+    element: mount,
+    extensions: [StarterKit, Markdown],
+    content: "",
+    contentType: "markdown",
+  });
 
-    if (unclosedFence) {
-      failed += 1;
-      console.error(`${rel}: unclosed fenced code block (\`\`\`) at EOF`);
+  let failed = 0;
+  try {
+    for (const file of files) {
+      const rel = relative(ROOT, file);
+      const text = await readFile(file, "utf8");
+
+      editor.commands.setContent(text, { contentType: "markdown" });
+      const dups = findDuplicateMarks(editor.getJSON());
+      for (const hit of dups) {
+        failed += 1;
+        console.error(
+          `${rel}: TipTap parse produced duplicate marks [${hit.marks.join(",")}] on ${JSON.stringify(hit.text)} — Cursor rich preview throws RangeError: Invalid collection of marks for node text`,
+        );
+      }
+
+      for (const hit of findSlashJoined(text)) {
+        failed += 1;
+        console.error(
+          `${rel}:${hit.line}:${hit.col}: slash-joined emphasis ${JSON.stringify(hit.match)} — use spaces (*a* / *b*) or one span (*a/b*); Cursor rich preview rejects duplicate italic/bold marks`,
+        );
+      }
     }
-    for (const odd of oddLines) {
-      failed += 1;
-      const bits = [
-        odd.strong ? "odd **" : null,
-        odd.em ? "odd *" : null,
-      ]
-        .filter(Boolean)
-        .join(", ");
-      console.error(
-        `${rel}:${odd.line}: ${bits} on this line (likely unclosed emphasis)`,
-      );
-    }
-    if ((strong || em) && oddLines.length === 0) {
-      failed += 1;
-      const open = [
-        strong ? "bold (**)" : null,
-        em ? "italic (*)" : null,
-      ]
-        .filter(Boolean)
-        .join(" and ");
-      const where = firstOpen
-        ? `${rel}:${firstOpen.line}:${firstOpen.col} (${firstOpen.marker})`
-        : rel;
-      console.error(
-        `${rel}: unclosed ${open} at EOF — first left open at ${where}`,
-      );
-    } else if (strong || em) {
-      console.error(
-        `${rel}: (also unclosed at EOF — usually fixed by the odd-line hit(s) above)`,
-      );
-    }
+  } finally {
+    editor.destroy();
   }
 
   if (failed > 0) {
