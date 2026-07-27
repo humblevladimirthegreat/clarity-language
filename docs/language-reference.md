@@ -226,7 +226,7 @@ Numeral grammar (digit roots, [digitless / zero-group forms](numbers.md#zero-dig
 
 # Comparatives, superlatives, and equatives
 
-Scalar comparison (ranked **`e` / `oe` / `ue`** *more / …-est*, **`ae`** *as … as*, distributive **`a`** + SHARED `/ɡ/`, measured differentials): **[comparatives.md](comparatives.md)**. Measure NP shape (unit + amount): **[numbers.md § Measure phrases](numbers.md#measure-phrases)**.
+Scalar comparison (ranked **`e` / `oe` / `ue`** *more / …-est*, **`ae`** *as … as*, distributive **`a`** + SHARED `/ɡ/`, measured differentials, [judgment benchmarks](comparatives.md#judgment-benchmarks) *worse than Average|…* via **`ue`** + closed **-n** comparees): **[comparatives.md](comparatives.md)**. Measure NP shape (unit + amount): **[numbers.md § Measure phrases](numbers.md#measure-phrases)**.
 
 # Phrase-level, VP-level, and clause-level joins
 

@@ -5,6 +5,8 @@ This page is the source of truth for **closed special roots** under **`/h/`** / 
 
 Ordinary `/h/` / `/w/` content still defaults to values unless the root is in a clearer closed subcategory (restrictors, special vocabulary here, evidentiality/mood, degree, adjuncts, numbers) — see [values.md](values.md#default-reading-of-h-and-w).
 
+**Not here:** Claritish *worse than Average|…* benchmarks are NP comparees on comparative fences — [comparatives.md § Judgment benchmarks](comparatives.md#judgment-benchmarks).
+
 ## Ability
 <a id="ability"></a>
 <a id="incapability"></a>
