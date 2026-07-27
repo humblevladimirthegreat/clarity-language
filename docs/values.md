@@ -12,13 +12,13 @@ Ordinary content words under **`/h/`** (clause) and **`/w/`** (prior `/ɡ/`) are
 | Keep as non-value | Examples |
 |-------------------|----------|
 | Restrictor joins | `hal`, `hual`, `har`, `wal`, … — [restrictors](restrictors.md) |
-| Special vocabulary | ability / incapability — [special-vocabulary](special-vocabulary.md) |
+| Special vocabulary | ability / incapability (host+`xu`/`xa`, or `ABIL`) — [special-vocabulary](special-vocabulary.md) |
 | Evidentiality / mood | clause or adjective framing of *how you know* / claim strength |
 | Degree | *very*, *slightly*, … |
 | Time / place / manner / recipient adjuncts | ordinary adverb lexicon under `/h/` |
 | Number words under `/h/` | `h+…`, `h-…`, … — [numbers](numbers.md) |
 
-Parser cue: restrictor joins are PoS + join-vowel + ending only (`hal`). Special vocabulary uses closed non-need roots (e.g. ability). Value words have a **need root** (and usually an **`x`-addition**).
+Parser cue: restrictor joins are PoS + join-vowel + ending only (`hal`). **Need root** + `x…` → values (this page). **Other root** + **`xa` / `xu`** → [ability](special-vocabulary.md#ability). Closed **`ABIL`** is the hostless ability fallback.
 
 | Prefix | Scope |
 |--------|--------|
@@ -225,7 +225,7 @@ Elsewhere, values are optional — do not tax every clause.
 - **Whose-need** / **care direction** (thrive / guard) on prescription — optional later dimensions; force is the primary `xo` split.
 - **Listener / third-person possessives** — no forced value (reminder is for self-gratitude / self-ought / self-judgment).
 
-**Incapability** (Claritish `can't_t`, …) lives under the closed **ability** root — [special-vocabulary.md](special-vocabulary.md#incapability) — not on need compounds.
+**Incapability** (Claritish `can't_t`, …) compounds onto the **activity/property host** (`v-singxun`) or fallback **`ABIL`** — [special-vocabulary.md](special-vocabulary.md#incapability) — not onto need compounds (`competxun` remains unmet competence).
 
 ## Constraints
 

@@ -87,7 +87,7 @@ Nouns can stand alone as core arguments of the clause. Verbs mark the action.
 
 Subject (/z/) \- the thing doing the action  
 Direct Object (/d/) \- the thing on the receiving end of the action  
-Verb (/v/) \- the action being done
+Verb (/v/) \- the action being done. [Ability / incapability](special-vocabulary.md#ability) compounds onto the verb root when that is the denied activity (`v-singxun` = can’t sing, fixed); hostless *can’t* uses floating **`h-ABIL…`**.
 
 ## Adjectives (`/ɡ/`)
 
@@ -103,7 +103,7 @@ Left-bound is optional style (meter, focus, L1 comfort). Prefer default postpose
 
 ## Adjective adjuncts (`/w/`)
 
-`/w/` marks a word that **modifies the previous adjective** (`/ɡ/` unit). It does not modify the verb or the noun directly. **Default content reading is a [value](values.md)** (need ascription on that property: gratitude, judgment, …). Other closed subcategories stay non-value: degree (*very*, *slightly*), tense/mood/evidentiality scoped only to that property (*former* / *recent*, *alleged*, and the same mood roots as `/h/` when the framing applies just to the adjective), [special vocabulary](special-vocabulary.md) (e.g. ability / incapability), and [restrictor](restrictors.md) joins.
+`/w/` marks a word that **modifies the previous adjective** (`/ɡ/` unit). It does not modify the verb or the noun directly. **Default content reading is a [value](values.md)** (need ascription on that property: gratitude, judgment, …). Other closed subcategories stay non-value: degree (*very*, *slightly*), tense/mood/evidentiality scoped only to that property (*former* / *recent*, *alleged*, and the same mood roots as `/h/` when the framing applies just to the adjective), hostless [ability](special-vocabulary.md#ability) (`w-ABILxu…`), and [restrictor](restrictors.md) joins. Ability on a property root itself uses host+`xa`/`xu` on that `/ɡ/` (`g-leadxun`).
 
 The `/w/` word sits on its host: normally immediately after the `/ɡ/` (or after that `/ɡ/`’s contiguous `/b/` argument if the adjective is complex) — including when that `/ɡ/` is left-bound (`gl-…`). Unlike `/h/`, `/w/` does **not** float. Several `/w/` words may **juxtapose** on one `/ɡ/` (`g-happy w-recent w-very`); each applies to that same adjective — that is ordinary co-stacking, **not** a join fence. `/w/` words are typically simple (no `/b/` argument); if a relation needs an argument, use a complex adjective (`/ɡ/` + `/b/`) instead.
 
@@ -113,7 +113,7 @@ Same root, different prefix → different scope: `/h/` frames the clause; `/w/` 
 
 ## Adverbs (`/h/`)
 
-`/h/` marks **adverbs** (modifiers of the verb or clause). **Default content reading is a [value](values.md)** (clause-level need: motive, ought-stake, event judgment). Other closed subcategories stay non-value: manner, time/place adjuncts, recipients (*to* / *for*), topic/aboutness frames (*as for* / *regarding*), mood/tense/evidentiality, [special vocabulary](special-vocabulary.md) (e.g. ability / incapability), [restrictor](restrictors.md) joins, and [number](numbers.md) words under `/h/`. Example mood form: “h vizinin” means “I remember the events of this sentence (which occurred in the past).” Clause force is **not** `/h/`; it is an utterance marker (`/j/`).
+`/h/` marks **adverbs** (modifiers of the verb or clause). **Default content reading is a [value](values.md)** (clause-level need: motive, ought-stake, event judgment). Other closed subcategories stay non-value: manner, time/place adjuncts, recipients (*to* / *for*), topic/aboutness frames (*as for* / *regarding*), mood/tense/evidentiality, hostless [ability](special-vocabulary.md#ability) (`h-ABILxu…`), [restrictor](restrictors.md) joins, and [number](numbers.md) words under `/h/`. Ability on an event root uses host+`xa`/`xu` on `/v/` (`v-singxun`), not a floating `/h/` copy of that root. Example mood form: “h vizinin” means “I remember the events of this sentence (which occurred in the past).” Clause force is **not** `/h/`; it is an utterance marker (`/j/`).
 
 Because `/h/` always targets the clause’s verb, **position is free within the clause** (before/after arguments, next to the verb, clause-final, etc.) for style, focus, or meter. `/h/` material must stay inside its own clause: it must not float into a following sentence or into a trailing dependent clause (dependent clauses stay at the end; see below).
 
@@ -246,7 +246,7 @@ Ordinary **`/h/`** / **`/w/`** content defaults to **values** (needs): **topic**
 
 # Special vocabulary
 
-Closed non-need roots under **`/h/`** / **`/w/`** (not restrictors): **ability** / **incapability** — compound **`ABIL x {a\|u}`** with **changeability** endings only (**`xu`** = denied; optional **`xa`** = capable; **`xe`** / **`xo`** undefined). **[special-vocabulary.md](special-vocabulary.md)**.
+Closed non-need **ability** / **incapability**: primary compound **`HOST x {a\|u}`** with **changeability** endings (`v-singxun` = can’t sing, fixed); fallback closed **`ABIL x {a\|u}`** when hostless / clause-wide; **`xe`** / **`xo`** undefined. **[special-vocabulary.md](special-vocabulary.md)**.
 
 # Phonology and Phonotactics
 

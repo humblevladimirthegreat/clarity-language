@@ -1,7 +1,7 @@
-# Special vocabulary (`/h/` / `/w/`)
+# Special vocabulary
 <a id="special-vocabulary"></a>
 
-This page is the source of truth for **closed special roots** under **`/h/`** / **`/w/`** that are **not** [values](values.md) (needs) and **not** [restrictors](restrictors.md) (applicability joins). They reuse the value-compound **shape** where useful, but keep their own stance inventories.
+This page is the source of truth for **special morphology and closed roots** that are **not** [values](values.md) (needs) and **not** [restrictors](restrictors.md) (applicability joins). They reuse the value-compound **shape** (`… x {vowel} …`) where useful, but keep their own stance inventories.
 
 Ordinary `/h/` / `/w/` content still defaults to values unless the root is in a clearer closed subcategory (restrictors, special vocabulary here, evidentiality/mood, degree, adjuncts, numbers) — see [values.md](values.md#default-reading-of-h-and-w).
 
@@ -13,36 +13,62 @@ Ordinary `/h/` / `/w/` content still defaults to values unless the root is in a 
 
 Port of Claritish **Incapability** (`can't_t`, `impossible_i`, …): capability denials often smuggle permanence; tag **changeability** on the denial. Restrictors (`hal` = *never*, …) stay **when the host applies**, not ability speech acts — do not redefine them as *can’t*.
 
-### Closed root
+### Primary: host + `xa` / `xu`
 
-One closed **ability** root (lexicon form TBD; schematic `ABIL` below). Not one of the six needs. Parser cue: this root, not a need root.
+When the denied (or claimed) capability **is** a single content root, compound ability onto that root — same mid-word **`x`** joiner as [values](values.md#word-shape):
+
+```
+PoS + HOST + x + {a|u} + {-l|-m|-n|-r}
+```
+
+| Piece | Role |
+|-------|------|
+| **PoS** | Prefer the host’s usual role — `/v/` (event), `/ɡ/` (property), etc. |
+| **HOST** | Any **non-need** content root (*sing*, *lift*, *lead*, …) |
+| **`xa` / `xu`** | Capable / incapable |
+| **Ending** | [Changeability](#ability-changeability) only |
+
+**Parser cue:** root ∈ [six needs](values.md#need-inventory) + `x…` → **value** tables. Other roots + **`xa` / `xu`** → **ability**. **`xe` / `xo`** on non-need hosts stay **undefined** (do not borrow motive / prescription).
+
+**Ship first:** **`xu`** (incapability). **`xa`** when you want tagged *can*.
+
+| Form | Reading |
+|------|---------|
+| `v-singxul` / `g-singxul` | can’t sing **right now** (usually able) |
+| `…singxum` | can’t sing yet / may learn (or unknown) |
+| `…singxun` | can’t sing — fixed / impossible as far as you can tell |
+| `…singxur` | won’t sing (choice) — not can’t |
+| `…singxam` | can sing; capability open to change |
+| `…singxan` | can sing; claim treated as fixed |
+
+### Fallback: closed `ABIL` root
+
+When there is **no single host root** (complex VP, hostless *I can’t*, or ability as a floating adverb), use a closed **ability** root (lexicon form TBD; schematic `ABIL`):
+
+```
+[h|w] + ABIL + x + {a|u} + {-l|-m|-n|-r}
+```
 
 | Prefix | Scope |
 |--------|--------|
 | `/h/` | clause-level capability claim (floats like other `/h/`) |
 | `/w/` | capability framed on the preceding `/ɡ/` |
 
-### Word shape
-
-```
-[h|w] + ABIL [ + x + {a|u} ] + {-l|-m|-n|-r}
-```
-
-Same compound joiner **`x`** as [values](values.md#word-shape). Only stance vowels **`a`** and **`u`** are defined on ability. **`xe`** / **`xo`** are **undefined** here (do not borrow motive / prescription tables).
+Bare `h-ABILl` / `w-ABILl` = ability **topic** only (ordinary [reference-suffix](reference-suffix.md) for now). Prefer **host+`xu`/`xa`** whenever the activity fits one root.
 
 ### Stances
 
 | Form | Stance | Gloss |
 |------|--------|--------|
-| bare (no `x`) | **Topic** | Ability named only; ordinary [reference-suffix](reference-suffix.md) endings for now |
-| **`xa`** | **Capable** | Capability present / claimed (optional; Claritish does not force positive *can*) |
+| bare host (no `x`) | ordinary word | no ability claim |
+| bare **`ABIL`** (no `x`) | **Topic** | Ability named only |
+| **`xa`** | **Capable** | Capability present / claimed |
 | **`xu`** | **Incapable** | Capability denied — primary Claritish port |
 
-**Ship first:** **`xu`** (incapability). **`xa`** uses the same ending table when you want tagged *can*.
-
 ### Endings — changeability only
+<a id="ability-changeability"></a>
 
-On ability **`xa`** and **`xu`**, **-l / -m / -n / -r** are **changeability** — the same table as unmet values ([values.md § Changeability](values.md#value-changeability)). Not contact channel, preference standing, or prescription force.
+On ability **`xa`** and **`xu`** (host-attached or `ABIL`), **-l / -m / -n / -r** are **changeability** — the same table as unmet values ([values.md § Changeability](values.md#value-changeability)). Not contact channel, preference standing, or prescription force.
 
 | Ending | Changeability | Claritish | Mnemonic |
 |--------|---------------|-----------|----------|
@@ -68,39 +94,43 @@ On ability **`xa`** and **`xu`**, **-l / -m / -n / -r** are **changeability** �
 
 | Claritish | Clarity (schematic) |
 |-----------|---------------------|
-| `can't_t` / `cannot_t` / `unable_t` | `h-ABILxul` |
-| `can't_m` / … | `h-ABILxum` |
-| `impossible_i` / `can't_i` / … | `h-ABILxun` |
-| `can't_w` / … | `h-ABILxur` |
-| `incapable_x` / unspecified | `h-ABILxum` |
+| `can't_t` swim / sing | `v-swimxul` / `v-singxul` (host primary) |
+| `can't_m` … | `v-HOSTxum` |
+| `impossible_i` / `can't_i` … | `v-HOSTxun` |
+| `can't_w` … | `v-HOSTxur` |
+| `incapable_x` … | `v-HOSTxum` |
+| hostless / clause-wide *can’t_t* | `h-ABILxul` |
 
-Hosts `can't` / `cannot` / `unable` / `incapable` / `impossible` collapse to this denial shape under `/h/` (or `/w/` when scoped to a property).
+Hosts `can't` / `cannot` / `unable` / `incapable` / `impossible` collapse to **`xu` + changeability** on the activity root when there is one; otherwise on **`ABIL`**.
 
 ### Ability vs values vs restrictors
 
 | Claim | Prefer |
 |-------|--------|
-| Capability denial + changeability | **`h-ABILxu…`** / **`w-ABILxu…`** (this page) |
-| Need unmet + changeability | need **`xu…`** — [values](values.md) |
+| Can’t / can **this** activity or property | **host + `xu` / `xa`** (this page) |
+| Clause-wide / hostless capability | **`h-ABILxu…`** / **`w-ABILxu…`** |
+| Need unmet + changeability | need **`xu…`** — [values](values.md) (`competxun` ≠ “can’t competence”) |
 | When / never / sometime the host applies | [restrictors](restrictors.md) (`hal`, `har`, …) |
 
-Stack when useful: e.g. inability plus unmet competence (`h-ABILxum` + `h-competxum`). Do **not** use bare **`hal`** (*never*) as a substitute for tagged incapability.
+Stack when useful: e.g. can’t-sing plus unmet competence (`v-singxum` + `h-competxum`). Do **not** use bare **`hal`** (*never*) as a substitute for tagged incapability. Do **not** read need-root **`xu`** as ability.
 
 ### Examples
 
 | Clarity (schematic) | Reading |
 |---------------------|---------|
-| `… h-ABILxul` | can’t **right now** (usually able) |
-| `… h-ABILxum` | can’t yet / may become able (or unknown changeability) |
-| `… h-ABILxun` | impossible / fixed inability as far as you can tell |
-| `… h-ABILxur` | won’t (choice / deferral), not can’t |
-| `… h-ABILxam` | can, and that capability is open to change |
+| `v-singxul` | can’t sing **right now** |
+| `v-singxum` | can’t sing yet / may become able |
+| `v-singxun` | can’t sing (fixed / impossible as far as you can tell) |
+| `v-singxur` | won’t sing (choice), not can’t |
+| `g-leadxam` | can lead; capability open to change |
+| `v-singxum h-competxum` | can’t sing (modifiable) **and** unmet competence |
+| `… h-ABILxul` | can’t **right now** (no single host / clause-wide) |
 | `h-ABILl` | ability (**topic** only) |
 
 ### Out of scope (for now)
 
-- Lexicon phonetic form of the ability root.
-- **`xe`** / **`xo`** on ability (motive / prescription stay on [needs](values.md)).
+- Lexicon phonetic form of the fallback **`ABIL`** root.
+- **`xe`** / **`xo`** on ability hosts (motive / prescription stay on [needs](values.md)).
 - Whose-ability / evidentiality on the denial (use ordinary mood `/h/` later if needed).
 - Positive *can* forced on every clause (optional **`xa`** only).
 
@@ -108,5 +138,7 @@ Stack when useful: e.g. inability plus unmet competence (`h-ABILxum` + `h-compet
 
 - Ability is **not** a need; do **not** apply contact / preference-standing / prescription-force tables to it.
 - Defined ability stances are **`xa`** and **`xu`** only; endings on those compounds = **changeability** only.
+- Need roots + `x…` stay [values](values.md); never reinterpret as host-ability.
+- Prefer host-attached forms; use **`ABIL`** only when there is no suitable single host.
 - Do **not** overload [restrictors](restrictors.md) as ability morphology.
-- Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)).
+- Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)); host **`/v/`** / **`/ɡ/`** ability compounds follow ordinary plurality rules for that PoS.
