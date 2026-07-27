@@ -1,6 +1,6 @@
 # Numbers
 
-Numerals are a **closed formal subsystem**, not ordinary lexicon roots. Open quantifiers (*many*, *all*, *some*, …) stay lexicon; the numeral word itself can be [digitless](#zero-digit-groups) (unspecified magnitude of a marker identity, including plural **`>1`** on **`ra`**). PoS prefixes are defined in [language-reference.md](language-reference.md); plural **-sh** in [plurality.md](plurality.md); general phonotactics live in [phonology.md](phonology.md); ordinary reference suffixes in [reference-suffix.md](reference-suffix.md). This page is the source of truth for numeral grammar, including [percent denominators](#percent-denominators) (whole NP + `/ɡ/` `…jo`), [ranges](#ranges) (spans reuse [phrase fences](coordination.md) with SHARED continuum `/ɡ/`, documented here) and [measure phrases](#measure-phrases) (unit + amount for differentials and durations).
+Numerals are a **closed formal subsystem**, not ordinary lexicon roots. Open quantifiers (*many*, *all*, *some*, …) stay lexicon; the numeral word itself can be [digitless](#zero-digit-groups) (unspecified magnitude of a marker identity, including plural **`>1`** on **`ra`**). PoS prefixes are defined in [language-reference.md](language-reference.md); plural **-sh** in [plurality.md](plurality.md); general phonotactics live in [phonology.md](phonology.md); ordinary reference suffixes in [reference-suffix.md](reference-suffix.md). This page is the source of truth for numeral grammar, including [percent denominators](#percent-denominators) (whole NP + `/ɡ/` `…jo`), [ranges](#ranges) (spans reuse [phrase fences](coordination.md) with SHARED continuum `/ɡ/`, documented here), [extremum × digitless](#extremum-digitless) special values (+∞ / −∞ / last place / …), and [measure phrases](#measure-phrases) (unit + amount for differentials and durations).
 
 A whole numeric value is **one word**, even when it contains several digit groups (or none).
 
@@ -199,9 +199,9 @@ A number word may omit every digit group: **PoS + marker + ending** only. The ma
 
 | Overlay | Digitless examples |
 |---------|-------------------|
-| `/ɡ/` `/z/` `/d/` `/b/` | `g+l` *plural / more than one* (on a noun); `z-l` *some negative amount* (subj); `b#l` *of some rank*; `d_l` *some code* (obj) |
-| `/v/` | `v+l` *add some plural amount* / *increase by more than one*; `v-l` *decrease by some amount*; `v#l` *take / assign some rank*; `v_l` *enter / dial some code* |
-| `/h/` | `h+l` *multiple times* / ×(unspecified `>1`); `h-l` *÷(unspecified)* / *into some number of parts*; `h#l` *for some nth time*; `h_l` *at some clock or date* (still bare-`hro` **time** only — not channel codes) |
+| `/ɡ/` `/z/` `/d/` `/b/` | `g+l` *plural / more than one* (on a noun); `z-l` *some negative amount* (subj); `b#l` *of some rank*; `d_l` *some code* (obj). Focus ranked → [extremum × digitless](#extremum-digitless) (`zel z+l` = +∞) |
+| `/v/` | `v+l` *add some plural amount* / *increase by more than one*; `v-l` *decrease by some amount*; `v#l` *take / assign some rank*; `v_l` *enter / dial some code*. Focus ranked **`e`** → [without-bound](#extremum-digitless) (`vel v+l` / `vel v-l`) |
+| `/h/` | `h+l` *multiple times* / ×(unspecified `>1`); `h-l` *÷(unspecified)* / *into some number of parts*; `h#l` *for some nth time*; `h_l` *at some clock or date* (still bare-`hro` **time** only — not channel codes). Focus ranked **`e`** → [unbounded multiplicity / duplicity](#extremum-digitless) (`hel h+l` / `hel h-l`; preempts restrictor) |
 | `/j/` | `j+l` *More!* (unspecified plural addition); `j-l` *Short!* / *down by some amount!*; `j#l` *Nth!* (place cheer, rank unnamed); `j_l` *…!* (unspecified score / code call) |
 | `/x/` | `x#l` *some point:* (neutral, number unnamed); `x+l` / `x-l` corroborating / independent item of unnamed index; `x_l` *regarding some (unnamed) label* |
 
@@ -504,7 +504,7 @@ The fence PoS matches the slot (`zal` / `dal` / `gal` / `bal` / …). Mixed iden
 | **`ae`** | `zael z+5l z+5l` / `zaem z+3l z+5l` | *equal to 5* / *approximately equal* — **not** a span (no continuum needed; continuum + **`ae`** + numbers is not a range reading) |
 | **`oe`** | — | **Not** ranges — exclusive ranked / bare empty superlative with scale |
 
-**Arity escape:** three or more number conjuncts under **`a`** stay an ordinary discrete inventory (`zal z+1l z+3l z+7l` = *1, 3, and 7*), even with SHARED. Focus **`zal z+3l`** stays *just 3*, not a ray. Focus **ranked** with a number is a [threshold](#numeric-thresholds), not ordinary *only X matters*.
+**Arity escape:** three or more number conjuncts under **`a`** stay an ordinary discrete inventory (`zal z+1l z+3l z+7l` = *1, 3, and 7*), even with SHARED. Focus **`zal z+3l`** stays *just 3*, not a ray. Focus **ranked** with a **digitful** number is a [threshold](#numeric-thresholds); with a **digitless** number, [extremum × digitless](#extremum-digitless) — not ordinary *only X matters*.
 
 **Contrast with comparatives:** `zel g-bigl z-Samn z-Lean` = *Sam is bigger than Lea* (SHARED **scale**, non-number conjuncts). `zel g-agel z+3l z+5l` = *from 3 to 5 on age* (SHARED **continuum**, number endpoints). Bare `zel z+3l z+5l` = prefer 3 over 5.
 
@@ -512,7 +512,9 @@ The fence PoS matches the slot (`zal` / `dal` / `gal` / `bal` / …). Mixed iden
 <a id="numeric-thresholds"></a>
 <a id="greater-less-than"></a>
 
-When the **sole** conjunct of a [rank join](coordination.md#ranked-conjunction-e) fence (**`e`** / **`ue`**, and their open / named twins) is a **compatible number word**, that number is an **extremum on the line**, not “only this value matters” and not a two-endpoint [span](#ranges). SHARED continuum is **optional** on thresholds: absent = implicit / contextual numeric line; present = that named line (`zel g-agel z+5l` = *age \< 5*).
+When the **sole** conjunct of a [rank join](coordination.md#ranked-conjunction-e) fence (**`e`** / **`ue`**, and their open / named twins) is a **compatible number word with at least one digit group**, that number is an **extremum on the line**, not “only this value matters” and not a two-endpoint [span](#ranges). SHARED continuum is **optional** on thresholds: absent = implicit / contextual numeric line; present = that named line (`zel g-agel z+5l` = *age \< 5*).
+
+**Zero-group exception:** a **digitless** sole conjunct under the same focus ranked shapes is **not** a threshold — it is an [extremum × digitless](#extremum-digitless) special value (`zel z+l` = +∞, not *\< (plural)*).
 
 | Form | Reading | Mnemonic |
 |------|--------|----------|
@@ -528,9 +530,62 @@ Same under `/d/` `/b/` `/ɡ/` (`gel g+5l` = modifier *\<5*; `duel d+10l` = objec
 
 **Inclusive bounds:** default is **strict** (`<` / `>`). For **≤ 5** / **≥ 5**, use a two-endpoint [span](#ranges) with the bound included — do **not** flip focus ranked to inclusive. Exclusive-high **`ul`** stays a two-side span tool (`zal g-spanl z+3l ul z+5l`), not a focus threshold marker.
 
-**Unspecified in a threshold:** bare **`e`** + **-r** = unspecified member of the *\< X* ray — `zer z+5l` → *some/whatever value \< 5* (under question → *which value \< 5?*). **`ue`** takes **no** **-r** (stacked forms never do — [coordination](coordination.md#unspecified-member-r-phrase)); there is no `zuer` threshold. For an unspecified value *\> 5*, use other wording for now (e.g. a two-endpoint span with an open high, once defined), not a reverse **-r** fence.
+**Unspecified in a threshold:** bare **`e`** + **-r** = unspecified member of the *\< X* ray — `zer z+5l` → *some/whatever value \< 5* (under question → *which value \< 5?*). **`ue`** takes **no** **-r** (stacked forms never do — [coordination](coordination.md#unspecified-member-r-phrase)); there is no `zuer` threshold. For an unspecified value *\> 5*, use other wording for now (e.g. a two-endpoint span with an open high, once defined), not a reverse **-r** fence. Digitless **-r** under focus ranked resumes a prior special value or threshold endpoint — see [extremum × digitless](#extremum-digitless).
 
-Contrast: `zel g-agel z+3l z+5l` = *from 3 to 5 on age* (span); `zel z+3l z+5l` = *3 ≻ 5* (preference); `zel z+5l` = *\< 5* (focus threshold). `zel z-Samn` (non-number) stays ordinary *only Sam matters* / [superlative-with-scale](comparatives.md) — **focus number conjunct** triggers the threshold reading.
+Contrast: `zel g-agel z+3l z+5l` = *from 3 to 5 on age* (span); `zel z+3l z+5l` = *3 ≻ 5* (preference); `zel z+5l` = *\< 5* (focus threshold); `zel z+l` = +∞ ([extremum × digitless](#extremum-digitless)). `zel z-Samn` (non-number) stays ordinary *only Sam matters* / [superlative-with-scale](comparatives.md) — **focus digitful number conjunct** triggers the threshold reading.
+
+### Extremum × digitless
+<a id="extremum-digitless"></a>
+<a id="infinity"></a>
+<a id="special-numeric-values"></a>
+
+When the **sole** conjunct of focus ranked **`e`** / **`ue`** (open / named twins included) is a **[digitless](#zero-digit-groups)** number — marker + ending, **no** digit group — the threshold reading does **not** apply. Digitless openness pushed to an extremum yields a **closed special value** (or overlay action) of that marker identity.
+
+**Trigger:** focus ranked + **zero digit groups** + ending **-l** / **-m** / **-n** (new special value) or **-r** (resume a prior one of that identity). SHARED continuum is optional (names the line when useful). Digitful focus stays a [threshold](#numeric-thresholds). Multi (2+) digitless conjuncts stay ordinary preference / ranking, not this table. Bare ranked (0 conjuncts) is not a special value.
+
+#### Referential (`/ɡ/` `/z/` `/d/` `/b/`)
+
+| Form | Reading | Notes |
+|------|---------|-------|
+| **`zel z+l`** (etc.) | **+∞** | Greatest unspecified positive amount |
+| **`zuel z+l`** | **arbitrarily large but finite** | Reverse extremum of positive openness — unbounded as a floor claim, not completed infinity |
+| **`zel z-l`** | **−∞** | Greatest unspecified deficit / most-negative openness |
+| **`zuel z-l`** | **arbitrarily small but finite** | Least negative / vanishing-scale openness — still finite |
+| **`zel z#l`** | **last place** | Greatest unspecified rank |
+| **`zuel z#l`** | **unranked** | Reverse extremum of rank openness — **only** this reading (not “0th” / “before any place”) |
+| Digitless **`_`** under focus ranked | **Undefined** | Digit-string / label openness is not a continuum extremum |
+
+Same under `/d/` `/b/` `/ɡ/` (`gel g+l` = modifier +∞; `duel d-l` = object *arbitrarily small but finite*).
+
+**Endings** on these forms (same discourse jobs as elsewhere, relative to the special value):
+
+| Ending | Sense |
+|--------|-------|
+| **-l** | Exact / completed special value (default) |
+| **-m** | Soft / hyperbolic (*countless*, *roughly infinite*, *somewhere near last place*) |
+| **-n** | Conventional / named symbol or stock label (∞, −∞, *last place* as a title) |
+| **-r** | Resume a previously stated special value of that marker (`zel z+r` = *that +∞ again*) |
+
+Open fence twins (**`zem`** / **`zuem`**) soften the claim; named fence **-n** (**`zen`** / **`zuen`**) labels a conventional band — same habit as thresholds.
+
+**Not this table:** bare **`oe`** + continuum / scale (*there is no biggest*) stays the [empty superlative](comparatives.md) claim about the line — not a token meaning +∞. Prefer focus digitless **`e`** for the value +∞.
+
+#### Overlay `/v/` and `/h/` (without-bound only)
+
+Under focus ranked **`e`** only, digitless **`ra`** / **`ru`** number verbs and adverbs take **without-bound** readings. Reverse **`ue`** digitless overlays are **undefined** for now (no “arbitrarily large but finite” add/× parallel). Digitless **`re`** / **`ro`** under `/v/` `/h/` focus ranked stay undefined here.
+
+| Form | Reading |
+|------|---------|
+| **`vel v+l`** | **increase without bound** |
+| **`vel v-l`** | **decrease without bound** |
+| **`hel h+l`** | **unbounded multiplicity** (× without bound / unboundedly many times) |
+| **`hel h-l`** | **unbounded duplicity** (÷ without bound / into unboundedly many parts) |
+
+**`/h/` parse note:** ranked `/h/` forms are normally [restrictors](restrictors.md) (*preferably when…*). When the **sole** conjunct is a **digitless number word**, that circumstance reading is **preempted** — same exception pattern as digitful focus numbers → thresholds. Do **not** read `hel h+l` as *preferably when (multiple times)*.
+
+**Not defined** on extremum × digitless: `/j/` interjections, `/x/` discourse numbers, percent closers (**`jo`** / **`ju`** still need a mantissa), mid-word **`x`** onto the numeral stem.
+
+Examples: `zel z+l` → +∞; `zuel z+l` → arbitrarily large but finite; `zel z-l` → −∞; `zuel z-l` → arbitrarily small but finite; `zel z#l` → last place; `zuel z#l` → unranked; `gel g+l` → modifier +∞; `vel v+l` → increase without bound; `hel h+l` → unbounded multiplicity; `hel h-l` → unbounded duplicity; `zel z+5l` → *\< 5* (threshold — digitful).
 
 ### Half-open (exclude the high end only)
 
@@ -562,7 +617,7 @@ Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which val
 
 **Clock / date spans:** do **not** use bare circumstance-`hal` (that series is [applicability](restrictors.md)). Prefer SHARED continuum **`g-timel`** (or a host relation + `/b/`) with digit-string endpoints (`bal g-timel b_15,00l b_16,00l`).
 
-Examples: `zal g-agel z+3l z+5l` → *between ages 3 and 5*; `z-kidl gal g-agel g+3l g+5l` → *kids ages 3–5*; `zal g-spanl z+3l ul z+5l` → *[3, 5)*; `zel g-agel z+10l z+20l` → *from age 10 to 20*; `zel z+3l z+5l` → *3 ≻ 5* (preference, not a span); `zel z+5l` → *\< 5*; `zuel z+5l` → *\> 5*; `zael z+5l z+5l` → *equally 5* / *5 equals 5*; `zaem z+3l z+5l` → *3 and 5 approximately equal*; `zar g-spanl z+3l z+5l` → *some value in 3–5*; `zol z+3l z+5l` → *3 or 5* (discrete, not a range).
+Examples: `zal g-agel z+3l z+5l` → *between ages 3 and 5*; `z-kidl gal g-agel g+3l g+5l` → *kids ages 3–5*; `zal g-spanl z+3l ul z+5l` → *[3, 5)*; `zel g-agel z+10l z+20l` → *from age 10 to 20*; `zel z+3l z+5l` → *3 ≻ 5* (preference, not a span); `zel z+5l` → *\< 5*; `zuel z+5l` → *\> 5*; `zel z+l` → +∞; `zuel z-l` → arbitrarily small but finite; `zel z#l` → last place; `zuel z#l` → unranked; `vel v+l` → increase without bound; `hel h+l` → unbounded multiplicity; `zael z+5l z+5l` → *equally 5* / *5 equals 5*; `zaem z+3l z+5l` → *3 and 5 approximately equal*; `zar g-spanl z+3l z+5l` → *some value in 3–5*; `zol z+3l z+5l` → *3 or 5* (discrete, not a range).
 
 ## Stress (pronunciation guide)
 
