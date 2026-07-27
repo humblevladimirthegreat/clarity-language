@@ -3,7 +3,7 @@
 <a id="circumstance-h-w"></a>
 <a id="restrictors"></a>
 
-This page is the source of truth for **restrictors**: join-series spellings under `/h/` or `/w/` that limit when the host applies. Prefixed fence **joins** (entity / property / VP / clause): [coordination.md](coordination.md). Prefix-less **revisers**: [revisers.md](revisers.md). Ability / incapability (not restrictors): [special-vocabulary.md](special-vocabulary.md#ability). Interrogative *When?* readings: [questions.md](questions.md#circumstance-when).
+This page is the source of truth for **restrictors**: join-series spellings under `/h/` or `/w/` that limit when the host applies. Prefixed fence **joins** (entity / property / VP / clause): [coordination.md](coordination.md). Prefix-less **revisers**: [revisers.md](revisers.md). Ability / incapability (not restrictors): [special-vocabulary.md](special-vocabulary.md#ability). **`/h/`…**-n** join-vowel forms (`han`, `hon`, …) are [join-relations](special-vocabulary.md#join-relations), not restrictors. Interrogative *When?* readings: [questions.md](questions.md#circumstance-when).
 
 Under **`/h/`** and **`/w/`**, the join series + ending is **not** a same-slot sibling join. It marks **applicability circumstances**: when / under which cases the **host** holds.
 
@@ -74,8 +74,8 @@ Mnemonic: bare **`hal`** (*never*) ↔ **`hual`** (*always*); **`har`** (*someti
 Leave **undefined** (no circumstance reading) for now:
 
 - Bare **`hol` / `hom` / `haol` / `haom` / `hul` / `hum` / `huol` / `huom`**
-- All **`-n`** circumstance forms (`han` / `hen` / …) unless a stock label is added later
-- Ranked **`huel` / `huem` / `hen`** (any arity), and **bare** **`hel` / `hem` / `hoel` / `hoem`**
+- All **`-n`** spellings under `/h/` / `/w/` are **not** restrictors: `/h/`…**-n** (`han` / `hen` / …) = [join-relations](special-vocabulary.md#join-relations); `/w/`…**-n** stay reserved (no circumstance gloss)
+- Ranked **`huel` / `huem`** (any arity), and **bare** **`hel` / `hem` / `hoel` / `hoem`**
 - **`her` / `wer`** (any arity) — use **`hel`** + **`har`** instead of *whenever it matters most*
 - Other stacked or rare parallels not listed in the core tables
 

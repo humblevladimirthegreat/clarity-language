@@ -1,7 +1,7 @@
 # Special vocabulary
 <a id="special-vocabulary"></a>
 
-This page is the source of truth for **special morphology and closed roots** that are **not** [values](values.md) (needs) and **not** [restrictors](restrictors.md) (applicability joins). They reuse the value-compound **shape** (`… x {vowel} …`) where useful (ability), but keep their own stance inventories; some entries are closed mood roots with **no** `x`-addition (plan / predict, emotion activation / locus, **comment** / mindfulness noting); **join-act verbs** reuse join-vowel spellings under `/v/`…**-n**.
+This page is the source of truth for **special morphology and closed roots** that are **not** [values](values.md) (needs) and **not** [restrictors](restrictors.md) (applicability joins). They reuse the value-compound **shape** (`… x {vowel} …`) where useful (ability), but keep their own stance inventories; some entries are closed mood roots with **no** `x`-addition (plan / predict, emotion activation / locus, **comment** / mindfulness noting); **join-act verbs** and **join-relations** reuse join-vowel spellings under `/v/` `/ɡ/` `/h/`…**-n**.
 
 Ordinary `/h/` / `/w/` content still defaults to values unless the root is in a clearer closed subcategory (restrictors, special vocabulary here, evidentiality/mood, degree, adjuncts, numbers) — see [values.md](values.md#default-reading-of-h-and-w).
 
@@ -47,8 +47,53 @@ Closed `/v/` verbs that **perform the join-series act** on an object. Spellings 
 ### Constraints
 
 - Not VP joins and not soft packaging.
-- Not revisers (`an` / `on` / …) and not phrase named-list **-n**.
+- Not revisers (`an` / `on` / …) and not phrase named-list **-n** (those stay on `/z/` `/d/` `/b/` `/w/`).
 - Do **not** invent `-l` / `-m` content readings for these roots under `/v/` — those spellings are joins.
+
+## Join-relations (`g*n` / `h*n`)
+<a id="join-relations"></a>
+<a id="join-relation-gh"></a>
+
+Closed **complex** `/ɡ/` adjectives and `/h/` adverbs that **frame a host via the join-series move** toward one `/b/` argument. Same vowel map as [join-act verbs](#join-act-verbs). They are **not** phrase named-list joins and **not** [restrictors](restrictors.md) — stock AP bundles use [mention](quotations.md) spans instead of old `gan A B` lists.
+
+### Pattern
+
+- **One `/b/` argument** (singular or group). Group arguments use ordinary noun **-sh** (`b-…lsh`). Multi-member or empty domains: put a [phrase join](coordination.md) **inside** the `/b/` phrase (`gan bal b-nutl b-seedl`), or use a [nullary / bare](coordination.md#focus-phrase) `/b/` join as the sole argument (`gan bar` = *including something*; `guan bal` = *excluding nothing* / stripped frame).
+- **Defective**: only the **-n** exponent is content. Parallel `-l` / `-m` / `-r` under `/ɡ/` stay AP **joins**; under `/h/` they stay [restrictors](restrictors.md) (defined core) or reserved.
+- Contiguous unit: `g*n b-…` on a noun; `h*n b-…` floats as one complex adverb.
+- Vowel = which coordination move; **-n** = that move as a titled/conventional relation ([reference-suffix](reference-suffix.md#proper-name--n)).
+
+### Inventory
+
+| Form | `/ɡ/` (*N … b-X*) | `/h/` (*event … b-X*) | Example |
+|------|-------------------|------------------------|---------|
+| **`gan` / `han`** | *including / with* | *with / including* | `z-cakel gan b-nutl`; `jal z-Samn han b-Lean v-gol` |
+| **`gon` / `hon`** | *exclusive for* (X is N’s sole pick) | *exclusively for / as the one* | `z-menul gon b-teal`; `jal … hon b-teal v-orderl` |
+| **`gaon` / `haon`** | *open to* (X admitted; more may follow) | *among options* | `z-pizzal gaon b-toppingl`; `jal … haon b-toppingl v-orderl` |
+| **`gun` / `hun`** | *against / anti-* (refuses X) | *refusing* | `z-policyl gun b-liet`; `jal … hun b-meatol v-eatl` |
+| **`guan` / `huan`** | *without / excluding* | *excluding* | `z-cakel guan b-nutl`; `jal … huan b-nutl v-bakel` |
+| **`gen` / `hen`** | *prioritizing / headed by* | *prioritizing* | `z-backlogl gen b-bugl`; `jal … hen b-bugl v-fixl` |
+| **`gaen` / `haen`** | *on a par with* | *equating / tying* | `z-pathl gaen b-altl`; `jal … haen b-candidatelsh v-ratel` |
+| **`goen` / `hoen`** | *for trying / trial of* | *trying* | `z-pathl goen b-fixl`; `jal … hoen b-fixl v-deployl` |
+| **`guen` / `huen`** | *deprioritizing / trailing* | *deprioritizing* | `z-menul guen b-dessertl`; `jal … huen b-dessertl v-eatl` |
+
+**`guon` / `huon`** — reserved; **undefined** (parallel **`vuon`**).
+
+### Contrasts
+
+| | Clarity | Gloss |
+|--|---------|--------|
+| refuse vs exclude | `gun b-meatol` vs `guan b-meatol` | *anti-meat* vs *without meat* |
+| sole vs open pick | `gon b-pathl` vs `gaon b-pathl` | *path-only* vs *path among options* |
+| prioritize vs try | `gen b-fixl` vs `goen b-fixl` | *fix-first* vs *try-the-fix* |
+| relation vs reviser | `z-teaml gan b-Samn` vs `z-teaml al z-Samn` | PP-like *team including Sam* vs slot-repair *team, including Sam* |
+| stock AP label | `g{primary colors}` / mention span | **not** `gan g-redl g-bluel` (that spelling is content *including*, needs `/b/`) |
+
+### Constraints
+
+- Not AP joins, not restrictors, not named-list **-n** (named lists remain on `/z/` `/d/` `/b/` `/w/` only).
+- Unary `/b/` only — restore list/empty arity on the **argument**, not by stacking bare `g*n` / `h*n` as fences.
+- Do **not** invent `-l` / `-m` content readings for these roots under `/ɡ/` / `/h/`.
 
 ## Comment (mindfulness noting)
 <a id="comment"></a>
