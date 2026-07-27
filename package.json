@@ -16,6 +16,7 @@
     "build": "npm run generate && tsc",
     "dev": "tsx src/index.ts",
     "typecheck": "tsc --noEmit",
+    "lint:md": "node scripts/lint-md-balance.mjs",
     "parse": "tsx src/cli.ts",
     "convert-ngsl": "tsx scripts/convert-ngsl.ts",
     "convert-emojis": "tsx scripts/convert-emojis.ts",

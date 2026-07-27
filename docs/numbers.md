@@ -415,7 +415,7 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 | about 3% | `g+3%m` | *grarejom* (`ra` + re **jo** + `m`) |
 | −12.5% | `g-12.5%l` | *gruwodujevajol* (`ru` + wo du **je** va **jo**) |
 | 100% | `g+100%l` | *grawozozojol* (`ra` + wo zo zo **jo**; normal mantissa digits) |
-| +2 pp | `g+2%*l` | *gradujul* (`ra` + du **ju`) |
+| +2 pp | `g+2%*l` | *gradujul* (`ra` + du **ju**) |
 | about −1.5 pp | `g-1.5%*m` | *gruwojevajum* (`ru` + wo **je** va **ju** + `m`) |
 | neutral point 1 / 2 | `x#1l`, `x#2l` | *xrewol*, *xredul* (`x` + `re` + …) |
 | corroborating item 3 | `x+3l` | *xrarel* (`x` + `ra` + re) |

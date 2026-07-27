@@ -1,4 +1,5 @@
--rethink need met dimension (already implied by value?)
+-how to do loan words
+-emotion vs spiritual need met
 
 Dictionary entries:
 -special pronouns

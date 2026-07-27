@@ -37,3 +37,4 @@ This repo is TypeScript + ANTLR tooling (`grammar/*.g4` → `src/generated/`). A
 - Node ≥ 20; `npm run generate` / `npm run parse` exist for the current grammars — leave grammars alone unless explicitly asked.
 - Generated parsers live in `src/generated/` (gitignored).
 - Language design work goes through `docs/language-reference.md` (and `TODO.md` until absorbed).
+- After editing Markdown under `docs/` (or `AGENTS.md` / `TODO.md`), run **`npm run lint:md`** — it fails on unclosed `*` / `**` (the usual “rest of the file renders bold” breakage). Avoid nesting `**…**` inside already-bold text; in bold headings/bullets put forms in backticks only (`**Ranked (`e` / `ae`)**`, not `**ae**` inside).
