@@ -1,4 +1,3 @@
--how to do loan words
 -emotion vs spiritual need met
 
 Dictionary entries:

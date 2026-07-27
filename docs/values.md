@@ -18,7 +18,7 @@ Ordinary content words under **`/h/`** (clause) and **`/w/`** (prior `/ɡ/`) are
 | Time / place / manner / recipient adjuncts | ordinary adverb lexicon under `/h/` |
 | Number words under `/h/` | `h+…`, `h-…`, … — [numbers](numbers.md) |
 
-Parser cue: restrictor joins are PoS + join-vowel + ending only (`hal`). **Need root** + `x…` → values (this page). **Other root** + **`xa` / `xu`** → [ability](special-vocabulary.md#ability). Closed **`ABIL`** is the hostless ability fallback.
+Parser cue: restrictor joins are PoS + join-vowel + ending only (`hal`). **Need root** + `x…` → values (this page). **Other root** + **`xa` / `xu`** → [ability](special-vocabulary.md#ability). Closed **`ABIL`** is the hostless ability fallback. After PoS, a **single** vowel **a** / **e** / **o** then `x` then **a** / **u** + ending → [span fence](quotations.md) (`daxal`), not a value.
 
 | Prefix | Scope |
 |--------|--------|

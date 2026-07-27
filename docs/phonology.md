@@ -21,8 +21,6 @@ h /ɣ/, w /w/, g /ɡ/, d /d/, j /dʑ/, b /b/, z /z/, m /m/, n /n/, v /v/, x /ʒ/
 possible clusters:
 gr, gl, dr, br, bl
 
-(**`xl-`** is a closed discourse-span onset — legal only on [quote / mention / aside markers](quotations.md); not a global expansion of this list. See phonotactics **g)** below.)
-
 ### Consonants at end of syllables (except end of word)
 
 g /ɡ/, d /d/, j /dʑ/, b /b/, z /z/, m /m/, v /v/  (cannot double with the second beginning consonant)
@@ -33,7 +31,7 @@ g /ɡ/, d /d/, j /dʑ/, b /b/, z /z/, m /m/, v /v/  (cannot double with the seco
 
 A word contains these parts:
 1. the part of speech prefix
-2. optional mid-word **l** after the PoS prefix — **left-bound** on adjectives (`gl-`), or span-fence onset on discourse markers (`xl-`); see below
+2. optional mid-word **l** after the PoS prefix — **left-bound** on adjectives (`gl-`) only; see below
 3. the root(s) - multiple if compound word
 4. the [reference suffix](reference-suffix.md) (**-l**, **-m**, **-n**, or **-r**)
 5. optional plural **-sh** (group referent / collective `/ɡ/`), after the reference suffix — see [plurality.md](plurality.md)
@@ -45,7 +43,7 @@ a) A word root almost always starts with a vowel. The ending and beginning conso
 
 b) All **content** words end with a [reference suffix](reference-suffix.md) (**-l**, **-m**, **-n**, or **-r**), optionally followed by plural **-sh** (/ʃ/). No other syllables end with a consonant, so word boundaries stay clear even when pauses are unreliable (as in singing). Allowed word-final clusters are those suffixes plus **-sh** (**-lsh**, **-msh**, **-nsh**, **-rsh**). The digraph **sh** is used only as this plural marker (word-final, after a reference suffix); it is not an ordinary root consonant.
 
-c) Easy to tell the components of a compound word because **x** separates them. Mid-word **x** is only the compound joiner (never part of a root); word-initial **x** is the discourse-marker prefix.
+c) Easy to tell the components of a compound word because **x** separates them. Mid-word **x** is only the compound joiner (never part of a root); word-initial **x** is the discourse-marker prefix. Closed [quote / mention / aside](quotations.md) fences also use mid-word **`x`**: shape `{PoS}{TYPE}x{EDGE}{ENDING}` (e.g. `daxal` = open exact quote as object). Parser cue: after PoS, a single TYPE vowel (**a** / **e** / **o**) then `x` then EDGE (**a** / **u**) + ending → span fence; a longer root before `x` → ordinary compound (lexicon, [values](values.md), [ability](special-vocabulary.md#ability)).
 
 d) **Number-word exception:** After a PoS prefix, a following **r** (start of the number marker) may form a cluster that is not otherwise allowed (e.g. `/ɡ/`+`r`, `/z/`+`r`, `/v/`+`r`, `/h/`+`r`, `/j/`+`r`, `/x/`+`r`). That cluster is legal **only** in [number words](numbers.md); it is not a global expansion of the onset-cluster list above. Number stems are a closed formal grammar and must not be assigned as ordinary lexicon roots. Ordinary vs number-specific meanings of **-l** / **-m** / **-n** / **-r** are in [reference-suffix.md](reference-suffix.md#number-word-exception).
 
@@ -53,4 +51,4 @@ e) **Left-bound adjective (`gl-`):** After adjective prefix `/ɡ/`, an **l** may
 
 f) **Join and reviser vowels:** [Phrase-level](coordination.md#phrase-level-coordination) (`/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/`: `zal`, `zam`, `zar`, `zor`, `zer`, `zur`, `gal`, `gam`, `ham`, …), [VP-level](coordination.md#vp-level-coordination) (`/v/`: `val`, `vam`, `var`, …), and [clause-level](coordination.md#clause-level-coordination) (`/x/`: `xal`, `xam`, `xar`, …) joins use the same vowel series under an ordinary PoS+root+ending shape; those vowel roots are reserved as joins only (**-l** / **-m** / **-n** on **a** / **o** / **u** / **ao** / **e** / **ae** / **oe** / **ua** / **uo** / **ue** = closed / open / named at phrase level; soft **-n** at VP/clause; **-r** on **a** / **o** / **e** / **u** at all levels = [unspecified-member](coordination.md#unspecified-member-r-phrase) (*something* / *anything* / *whatever-by-rank* / *something else* — VP *do something*, clause *something happened*; plain **u** = [negation](coordination.md#negation-u)); **e** / **oe** = **rank joins** — unmarked / exclusive; **ae** = equality / tie; leading **u** on **a** / **o** / **e** = [invert](coordination.md#invert-u-stacks) (*everything but* / *anything but* / **rank reversal**; no three-vowel stacks; empty-allowed on plain **o** + **-m** only) — not ordinary reference-suffix senses). All levels use a **fence** (optional shared modifiers immediately after the join; juxtaposed conjuncts; **left** preferred, **right close** allowed for style/comedy; [fence nesting](coordination.md#fence-nesting); pure infix illegal). There are **no** bare (prefix-less) **join** particles. Prefix-less revisers **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** (**-l** / **-m** / named **-n** required; no **-r**; bare **a** / **e** / **o** / **u** illegal) are reserved as [revisers](revisers.md) (*including* / *rather* / *instead* / *except*; **-l** / **-m** = closed / open right-hand side; **-n** = named/conventional frame, phrase-style not soft; parallel chains on fixed A, mixed REV allowed).
 
-g) **Quote / mention / aside onset (`xl-`):** After discourse prefix `/x/`, an **l** may sit before a **single** vowel + ending, forming onset **`xl-`**. That marks [span fences](quotations.md) (`xlal` exact quote open, `xlel` aside open, `xlol` mention open, `xlul` close, …). Legal **only** in that closed series — not a global `xl` cluster, not left-bound attachment, and **not** clause joins (`xal` / `xam` / …). No stacked vowels on these forms. Mid-word **l** here is **not** the word-final ending.
+g) **Quote / mention / aside fences:** [Span markers](quotations.md) are ordinary PoS + two single-vowel roots joined by mid-word **`x`** + ending (**-l** / **-m** only). They are **not** left-bound `l`, **not** a global `xl` cluster, and **not** clause joins (`xal` / `xam` / … — joins have no mid `x` on that series). No stacked vowels on TYPE or EDGE. Discourse-only citations use PoS `/x/` (`xaxal` … `xaxul`).

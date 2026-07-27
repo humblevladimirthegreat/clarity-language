@@ -145,7 +145,7 @@ Depends on subclass (see [utterance markers](language-reference.md#utterance-mar
 * **VP-level joins** ([`vam`](coordination.md#vp-level-coordination), `var`, …) — No **-sh** on the join; plurality stays on material inside each VP conjunct.
 * **Clause joins** ([`xal`](coordination.md#clause-level-coordination), …) — Do **not** take **-sh**; plurality stays on material inside each sentence.
 * **`/x/` linkers / fences** (*but*, *however*, …) — Do **not** take **-sh**; they are glue, not plural referents.
-* **Quotation / fence markers** — Do not pluralize the fence; plural material *inside* the quote marks **-sh** on its own words.
+* **Quotation / fence markers** — Do not pluralize the fence (`*daxalsh`); plural material *inside* the span marks **-sh** on its own words.
 * **Named discourse glue** — Do **not** use **-sh**. Title a block with singular **-n**; resume with **-r**.
 
 ### Number words
