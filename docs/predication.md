@@ -88,6 +88,7 @@ g-SAME… b-OTHER
 - **No** general copula `/v/` for identity or classification.
 - **No** identity reading of multi **`ae`** without SHARED scale, and **no** SHARED-under-`ae` identity marker (that slot stays scalar equative only — [comparatives](comparatives.md#equatives)).
 - **No** dual bare subjects (`z-A z-B`) meaning *A is B*.
+- **No** adjacent same-PoS **-n** words as a multipart proper name (`z-Maryn z-Smithn`); use an **`x`-compound** (`z-MaryxSmithn`) — [phrasal proper names](reference-suffix.md#phrasal-proper-names).
 - Do **not** overload [equative](comparatives.md#equatives) `ae` or set **`a`** for co-reference.
 - Plural **-sh** on `SAME` is unused for “they are the same group”; mark group reference on the host nouns, or ascribe identity pairwise.
 - Multi-alias lists (*A, B, and C are one*): prefer pairwise `SAME`, or separate sentences — do **not** invent a second SHARED reading under `ae` for co-reference.

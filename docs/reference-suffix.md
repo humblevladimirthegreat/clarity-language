@@ -35,6 +35,24 @@ Prefer **-n** (and its **-r** pronoun) over speaker/listener special pronouns wh
 
 Named individuals, places, one-off objects, and other referents that are definite by nature: *Sam*, *Paris*, *the Odyssey* (as a titled work). You are not saying “a Sam” or “some Paris”; you are using the established name. Argument nouns under a complex adjective or adverb can be **-n** when the relation’s participant is a named entity (*book by* **[Rowling]**).
 
+### Phrasal proper names (mid-word `x`)
+<a id="phrasal-proper-names"></a>
+
+**Multipart proper names** — given + family, compact multi-token place names, and similar **one-referent** labels that English writes as several capitalized words — are **one content word** when short enough to stay handy: join the name parts with mid-word **`x`**, then a single reference suffix (**-n** when used as a proper designation).
+
+| Shape | Example (schematic) | Reading |
+|-------|---------------------|---------|
+| PoS + part₁ **`x`** part₂ (+ **`x`** …) + **-n** | `z-MaryxSmithn` | *Mary Smith* (one person) |
+| same under other slots | `d-NewxYorkn`, `b-LeonardoxtaVincin` | one named place / person as object or argument |
+
+**Do not** spell a phrasal name as adjacent bare same-PoS words (`z-Maryn z-Smithn`). Inside a [join](coordination.md) that would look like two conjuncts (*Mary and Smith*), and elsewhere it competes with inventory *and*, [identity](predication.md#identity), and [classification](predication.md#classification). One compound keeps **one** anaphor target ([pronouns](pronouns.md): resume from the compound’s root prefix through the 2nd vowel) and one slot filler.
+
+**Long titles** (book / film / album names, and other designations that would need many roots, mixed PoS, or an internal *and*) stay a [**mention**](quotations.md) span even when the interior is Clarity-shaped — do **not** force a single **`x`-compound**. Resume that title with a [span anaphor](quotations.md#endings) (`doxar` / …), not content-word **-r** on a fake mega-root. Compact person/place compounds above are the default; mention is the escape hatch when the compound would be clumsy.
+
+**Not this:** coordination of distinct people (`zam z-Maryn z-Smithn` = *Mary and Smith*); role ascription (`z-Samn g-teacherl`); co-reference (`g-SAMEl b-…`); raw foreign orthography still in donor spelling ([opaque](quotations.md) spans — [loans](quotations.md#loans)).
+
+Phonotactics for **`x`**: [phonology.md](phonology.md#phonotactics).
+
 ### Verbs (`/v/`)
 
 A **named action, rite, or event** — not a generic instance of the verb. English parallels: *perform* **[Hamlet]**, *run* **[the Boston Marathon]**, *observe* **[Ramadan]**, *do* **[the Macarena]**. The verb root names the kind of doing; **-n** says you mean **that** titled or conventional occurrence, not “a run” or “some performing” in the abstract.
@@ -68,7 +86,7 @@ Depends on the subclass (see [utterance markers](language-reference.md#utterance
 
 ### Borrowed and quoted forms
 
-Foreign / code / raw non-lexicon surfaces use [opaque spans](quotations.md) (`d<sushi>` / `duxan sushi` / `duxal` … `xuxul`). Use–mention and titles use [mention](quotations.md). Content-word **-n** marks a **name or fixed label** on ordinary or mention-interior words. Span markers use **-l** / **-m** / **-n** / **-r** (exact / paraphrase / atomic / span anaphor) — not content-word senses. **Nativized loans** (adapted Clarity root + ordinary PoS + ending) need no span — see [quotations.md § Mentions, opaque, and loan words](quotations.md#loans).
+Foreign / code / raw non-lexicon surfaces use [opaque spans](quotations.md) (`d<sushi>` / `duxan sushi` / `duxal` … `xuxul`). Use–mention and **long titles** use [mention](quotations.md). Content-word **-n** marks a **name or fixed label** on ordinary or mention-interior words. Span markers use **-l** / **-m** / **-n** / **-r** (exact / paraphrase / atomic / span anaphor) — not content-word senses. **Nativized loans** (adapted Clarity root + ordinary PoS + ending) need no span — see [quotations.md § Mentions, opaque, and loan words](quotations.md#loans). Compact nativized **multipart** person/place names use **`x`-compounds**; long / mixed-PoS titles stay **mention** — [phrasal proper names](#phrasal-proper-names).
 
 ### Summary
 

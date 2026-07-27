@@ -72,7 +72,7 @@ The **open** (or anaphor’s) PoS is the role of the **entire** span in the oute
 | `/ɡ/` | predicative or attributive span property |
 | `/w/` | rare — span frame on the preceding `/ɡ/` |
 | `/h/` | manner span; **asides** prefer this (`hexal` … `xuxul`) so digressions float like other adverbs |
-| `/j/` | vocative / expressive edge with a spanned formula |
+| `/j/` | vocative / expressive edge with a spanned call or title |
 | `/x/` | discourse-only citation (epigraph, freestanding span — not a main-clause argument) |
 
 Sketch (*he said “hi”* — atomic):
@@ -122,7 +122,7 @@ Writing: `jol z-hen d[·] v-saidl`
 
 Same TYPE with any other PoS (`zaxal`, `hexal`, `xoxal`, `duxal`, `zaxar`, …). Explicit close is **`xuxul`** (or **`xuxum`** to clear the stack) when EDGE **a** left a frame open. EDGE **`o`** is **not** a multi-token open — only the fixed escape **`xoxol`** ([escape](#escape)).
 
-There is **no** separate “conventional saying” span type. Cite a proverb / stock line as a **quote**. Treat a formula as a named label / title with **mention** and ordinary content-word **-n** inside when it is a proper designation.
+There is **no** separate “conventional saying” span type. Cite a proverb / stock line **as wording** with a **quote**. Refer to a **title or label as a designated surface** (book/film/work title, the phrase *X*, use–mention) with a **mention**; interior words may still take ordinary **-n**. Short nativized proper names and ritual calls used as ordinary words need **no** span — just PoS + root + **-n** (or an **`x`-compound** when multipart — [phrasal proper names](reference-suffix.md#phrasal-proper-names)).
 
 Nesting is by matching depth — unescaped nests are legal (`d[ z[…] ]`, `d[ h(…) ]`, `~d[ z{…} ]`, `d[ d<…> ]`, …). Do **not** use nesting depth as an escape convention. **`~`** applies only to the immediately following open (each nested open may take its own `~` or not). Atomic and anaphor forms do **not** push a nest frame that needs a closer.
 
@@ -233,13 +233,13 @@ Use a span (PoS + brackets in writing; matching spoken open + close when a multi
 
 - quoting someone’s words, or citing a proverb / stock saying as wording (**quote** TYPE **a** / `…[…]`)
 - mid-sentence parenthetical digression (**aside** TYPE **e** / `…(…)`) — prefer PoS `/h/`; must **not** use floating `/j/` — [utterance markers](language-reference.md#utterance-markers-j)
-- use–mention, title, or label when the interior may still be Clarity-shaped (**mention** TYPE **o** / `…{…}`)
+- use–mention, long title, or label when the interior may still be Clarity-shaped (**mention** TYPE **o** / `…{…}`)
 - foreign, code, IPA, or other non-lexicon surface the parser must **not** read as Clarity (**opaque** TYPE **u** / `…<…>`)
 - referring back to a prior span as a referent (**anaphor** **-r** / `…[·]`) — *said **that***
 
 Prefer **atomic `-n`** for a single quoted / mentioned / opaque token (`daxan hi`, `duxan sushi`). Prefer EDGE **`e`** for a long spoken quote that runs to the clause end without hunting for `xuxul`.
 
-Speech citation → **a**; label / use–mention → **o**; raw import → **u**.
+Speech citation → **a**; use–mention / long title → **o**; raw import → **u**.
 
 Material inside a **quote / aside / mention** may be a fragment or a full sentence (with its own `/j/` force if it is a full sentence). The outer clause does not treat **quoted** speech as the speaker’s assertoric commitment; **asides** remain asserted. **Opaque** material is a surface blob in that slot, not Clarity syntax. An anaphor contributes the prior span’s **surface / cite** as a referent in the new slot — it does not re-open attribution.
 
@@ -250,11 +250,11 @@ Material inside a **quote / aside / mention** may be a fragment or a full senten
 | Need | Use |
 |------|-----|
 | **Raw foreign / code / unparsed surface** in a clause slot | **opaque** — writing `d<sushi>`, speech `duxan sushi` (atomic) or `duxal sushi xuxul` |
-| **Use–mention / title / label** (form as designated surface; may be Clarity) | **mention** — `d{…}` / `doxal` … `xuxul` / `doxan` … |
+| **Use–mention / long title / label** (form as designated surface; may be Clarity) | **mention** — `d{…}` / `doxal` … `xuxul` / `doxan` … |
 | **Nativized loan** (adapted Clarity root, ordinary morphology) | ordinary PoS + adapted `V(CV)+` root + reference suffix — **no** span (`z-susil`, `z-susir`, `g-susil`, …) |
 | **That (prior opaque / quote / …) again** | span anaphor — `duxar` / `daxar` / … — [endings](#endings) |
 
-Prefer **opaque** while the form is foreign orthography, multi-word donor text, or code-like. Prefer **mention** for *the word X* / titled formulas. Prefer a nativized loan when you will resume with ordinary content **-r** or shift PoS freely. Do not write `z-<sushi>l` or attach reference suffixes outside the open template.
+Prefer **opaque** while the form is foreign orthography, unparsed donor text, or code-like. Prefer **mention** for **use–mention** (*the word X*) and for **long titles** — especially titles that mix several Clarity words / PoS roles or would make a clumsy multi-root **`x`-compound** (e.g. *Harry Potter and the Sorcerer's Stone* as `z{…}` / `doxal` …, not one mega-compound). Prefer a bare nativized loan when the name is short enough to resume with ordinary content **-r** or shift PoS freely. Compact **multipart** person/place names (given+family, *New York*) use mid-word **`x`** (`z-MaryxSmithn`), not adjacent `z-Maryn z-Smithn` — [phrasal proper names](reference-suffix.md#phrasal-proper-names). Do not write `z-<sushi>l` or attach reference suffixes outside the open template.
 
 <a id="nesting"></a>
 

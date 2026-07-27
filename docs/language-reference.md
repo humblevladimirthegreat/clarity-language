@@ -212,7 +212,7 @@ The next-clause pronoun takes whatever PoS prefix the slot needs:
 
 # Reference Suffix
 
-Reference suffix grammar (**-l** / **-m** / **-n** / **-r**) lives in **[reference-suffix.md](reference-suffix.md)**.
+Reference suffix grammar (**-l** / **-m** / **-n** / **-r**) lives in **[reference-suffix.md](reference-suffix.md)**. Compact multipart proper names (given+family, *New York*) are mid-word **`x`-compounds** with one ending — [phrasal proper names](reference-suffix.md#phrasal-proper-names) — not adjacent bare same-PoS **-n** words. Long / mixed-PoS work titles stay [mention](quotations.md) spans.
 
 # Plurality
 
