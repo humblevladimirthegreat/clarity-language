@@ -14,7 +14,7 @@ Prefixed forms are **joins** — **set joins** (**a** / **o** / **ao** / **u** /
 <a id="join-series-ending-shared"></a>
 <a id="join-type--ending-shared"></a>
 
-**Vowel(s)** choose set vs rank (plus invert / negation). All joins take an ending (no bare vowel) and a **PoS prefix** matching the slot. For every join vowel (**a** / **o** / **u** / **ao** / **e** / **ae** / **oe** / **ua** / **uo** / **ue**), **-l** / **-m** mark **closure**. Phrase-level **-n** marks a **named / conventional** list. **VP-level** and **clause-level** **-n** mark **soft packaging** (not named) — see [soft **-n**](#soft-n-vp-clause). **-r** on **a** / **o** / **e** / **u** marks an [unspecified member](#unspecified-member-r-phrase) at **every** level (*something* / *anything* / *whatever-by-rank* / *something else*). Plain **u** is [negation](#negation-u) at all arities.
+**Vowel(s)** choose set vs rank (plus invert / negation). All joins take an ending (no bare vowel) and a **PoS prefix** matching the slot. For every join vowel (**a** / **o** / **u** / **ao** / **e** / **ae** / **oe** / **ua** / **uo** / **ue**), **-l** / **-m** mark **closure**. Phrase-level **-n** marks a **named / conventional** list. **Clause-level** **-n** marks **soft packaging** (not named) — see [soft **-n**](#soft-n-clause). **VP-level** has **no** join **-n**: those spellings (`van`, `von`, …) are closed [join-act verbs](special-vocabulary.md#join-act-verbs). **-r** on **a** / **o** / **e** / **u** marks an [unspecified member](#unspecified-member-r-phrase) at **every** level (*something* / *anything* / *whatever-by-rank* / *something else*). Plain **u** is [negation](#negation-u) at all arities.
 
 ### Join series (vowels)
 
@@ -55,7 +55,7 @@ When unsure whether the list is complete, prefer **-m** (open). Use **-l** when 
 |--------|---------|
 | **-n** | **Named / conventional list** — the conjuncts are invoked as an established titled, formulaic, or canonical bundle (*the primary colors*, *RGB*, *stop–drop–roll*, a conventional triage order), not as a freshly composed open or closed inventory. |
 
-**-n** is an alternative to **-l** / **-m**, not a third completeness tier and not stackable with them. Completeness is whatever the conventional designation already fixes; you are naming the bundle, not arguing list closure in the moment. Same mnemonic as content-word [proper name **-n**](reference-suffix.md#proper-name--n): definite by established label. Used on **phrase-level** joins (`/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/`) — **not** on VP `/v/` or clause `/x/` forms (those use soft **-n** instead). [Revisers](revisers.md) also use this named sense (`an` / `en` / `on` / `un`). Soft packaging (`van`…, `ven`…, `xan`…, `xen`…) is not a named list — use other `/x/`…**-n** thread labels if you need a titled agenda item.
+**-n** is an alternative to **-l** / **-m**, not a third completeness tier and not stackable with them. Completeness is whatever the conventional designation already fixes; you are naming the bundle, not arguing list closure in the moment. Same mnemonic as content-word [proper name **-n**](reference-suffix.md#proper-name--n): definite by established label. Used on **phrase-level** joins (`/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/`) — **not** on VP `/v/` (those spellings are [join-act verbs](special-vocabulary.md#join-act-verbs)) or clause `/x/` forms (those use soft **-n** instead). [Revisers](revisers.md) also use this named sense (`an` / `en` / `on` / `un`). Soft packaging (`xan`…, `xen`…) is not a named list — use other `/x/`…**-n** thread labels if you need a titled agenda item. Narrative *and then* between clauses is **`xan`**, not a VP join.
 
 ### Unspecified-member ending (phrase-level, **a** / **o** / **e** / **u**)
 <a id="unspecified-member-r-phrase"></a>
@@ -116,13 +116,13 @@ Mnemonic: **-r** = member not named; vowel = frame (**a** = inventory existence;
 
 English glosses still vary by frame — *prefer A over B*, or *A, else B* — but that **preference vs contingency** contrast is read from context (or marked elsewhere with `/h/`), **not** by a different ending. **oe** marks exclusive realization along a ladder; **ue** flips spoken order vs preference (not empty-allowed).
 
-**-l** / **-m** / **-n** on **e** / **ae** / **oe** / **ue** are the same closure / named (phrase) or soft (VP/clause) senses as on **a** / **o** / **u** / **ao** / **ua** / **uo**. Fence chains keep ranking from **spoken conjunct order** (`vel A B C` → *A ≻ B ≻ C*, closed; `vuel A B C` → *A ≺ B ≺ C* i.e. *C ≻ B ≻ A*; same with `vael`… / `voel`… / `xel`…).
+**-l** / **-m** / **-n** on **e** / **ae** / **oe** / **ue** are the same closure / named (phrase) or soft (**clause** `/x/` only) senses as on **a** / **o** / **u** / **ao** / **ua** / **uo**. VP `/v/`…**-n** spellings are [join-act verbs](special-vocabulary.md#join-act-verbs), not soft joins. Fence chains keep ranking from **spoken conjunct order** (`vel A B C` → *A ≻ B ≻ C*, closed; `vuel A B C` → *A ≺ B ≺ C* i.e. *C ≻ B ≻ A*; same with `vael`… / `voel`… / `xel`…).
 
 | Ending | Form | Reading |
 |--------|------|---------|
 | **-l** | phrase: `zel` / `zael` / `zoel` / `zuel` (and `/d/` `/b/` `/ɡ/` `/w/` `/h/`); VP/clause: `vel` / `vael` / `voel` / `vuel` / `xel` / … | Closed: `zel A B` → *A ≻ B*; `zael A B` → *A tied with B* / equative with scale; `zoel A B C` → *A ≻ B ≻ C* (exclusive); `zuel A B` → *A ≺ B* |
 | **-m** | phrase: `zem` / `zaem` / `zoem` / `zuem` / …; VP/clause: `vem` / `vaem` / `voem` / `vuem` / … | Open twin of each closed form — others may exist; soft equative under **`zaem`** + scale |
-| **-n** | phrase: `zen` / `zaen` / `zoen` / `zuen` / …; VP/clause: `ven` / `vaen` / `voen` / `vuen` / … (soft) | Phrase: **`zen`** = named **unspecified** ranking; **`zaen`** = named **draw** / tie; **`zoen`** = named exclusive order; VP/clause soft — see [soft **-n**](#soft-n-vp-clause) |
+| **-n** | phrase: `zen` / `zaen` / `zoen` / `zuen` / …; clause soft: `xen` / `xaen` / `xoen` / `xuen` / …; VP: `ven` / `vaen` / `voen` / `vuen` = [join-act verbs](special-vocabulary.md#join-act-verbs) | Phrase: **`zen`** = named **unspecified** ranking; **`zaen`** = named **draw** / tie; **`zoen`** = named exclusive order; clause soft — see [soft **-n**](#soft-n-clause) |
 
 #### Comparatives, superlatives, and equatives
 <a id="comparatives"></a>
@@ -140,7 +140,7 @@ Scalar comparison — ranked **`e` / `oe` / `ue`** + SHARED scale (*bigger than*
 <a id="bare-phrase"></a>
 <a id="nullary-phrase"></a>
 
-A **one-conjunct** (**focus**) or **zero-conjunct** (**bare**) fence is allowed on phrase-level slots (`/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/`) for the forms below, and on **VP** / **clause** for **…ar** / **…or** / **…er** / **…ur** (`var` / `vor` / `ver` / `vur` / `xar` / …) **and** for negation **…ul** / **…um** / **…un** (`zul` / `zum` / `zun` / `vul` / `vum` / `vun` / `xul` / … — phrase **-n** named; VP/clause **-n** soft). The join alone (bare), or the join plus one conjunct (focus), fills the slot — optionally with **SHARED** after the join. All other VP/clause joins, and phrase joins outside the focus/bare set, stay **two or more** conjuncts.
+A **one-conjunct** (**focus**) or **zero-conjunct** (**bare**) fence is allowed on phrase-level slots (`/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/`) for the forms below, and on **VP** / **clause** for **…ar** / **…or** / **…er** / **…ur** (`var` / `vor` / `ver` / `vur` / `xar` / …) **and** for negation **…ul** / **…um** / **…un** where that spelling is still a join (`zul` / `zum` / `zun` / `vul` / `vum` / `xul` / `xum` / `xun` — phrase **-n** named; clause **-n** soft; **`vun`** is a [join-act verb](special-vocabulary.md#join-act-verbs), not a VP join). The join alone (bare), or the join plus one conjunct (focus), fills the slot — optionally with **SHARED** after the join. All other VP/clause joins, and phrase joins outside the focus/bare set, stay **two or more** conjuncts.
 
 **Arity pattern:** length 2+ = ordinary list (or, for **…ar** / **…or** / **…er**, unspecified member among the listed; for **…ur**, unspecified member **other than** the listed; for **…ul** / **…um** / **…un**, *none of* the listed); length 1 = focus / exhaustivity on that singleton, matching unspecified-member focus for **-r**, or [negation](#negation-u) focus *not X* for **…ul** / **…um** / **…un**; length 0 = emptiness in that join frame — except **…ar** / **…or** / **…er** / **…ur** (*something* / *anything* / *whatever-by-rank* / *something else*) and bare **…ual** / **…uol** (*everything* / *anything (goes)*), which are positive readings, not emptiness. Bare **…ul** / **…um** / **…un** are bare denial (*no*), not positive. On other bare forms, **-l** = empty **and claimed complete** for the frame; **-m** = empty **from the speaker’s list** (often epistemic) with residual existence or residual options outside what’s named; **-n** = named/conventional empty label.
 
@@ -239,7 +239,7 @@ Do not confuse prefixed **…em** / **…el** / **…en** / **…er** / **…al*
   |--------|---------------|-------------|
   | **-l** (`zol` / `vol` / `xol` / …) | pick **exactly one** — empty **not** allowed | forced choice, partitions, instructions |
   | **-m** (`zom` / `vom` / `xom` / …) | pick **at most one** — *or none* / empty-allowed; other exclusives may exist | offers, soft menus, permissions |
-  | **-n** | named/conventional (phrase) or soft (VP/clause) exclusive bundle — completeness / softness as usual; **not** an automatic empty-allowed bit (use **-om** when skip must be explicit) | stock xor labels; soft `von` / `xon` = uncertain alternatives |
+  | **-n** | named/conventional (phrase) or soft (clause) exclusive bundle — completeness / softness as usual; **not** an automatic empty-allowed bit (use **-om** when skip must be explicit). Soft **`xon`** = uncertain alternatives. VP **`von`** is a [join-act verb](special-vocabulary.md#join-act-verbs) (*chooses as the one choice*), not a soft join | stock xor labels; soft clause `xon` |
   Phrase/VP/clause same rule. Focus **`zol X`** = *has to be X*; focus **`zom X`** = *say, X* / *X, or skip*. Bare **`zol`** = *no options* / *stuck*; bare **`zom`** = *I got no pick* / skip is fine from the speaker’s side. Circumstance: **`hol`** = exclusive trigger (exactly one occasion); **`hom`** = exclusive trigger **or never** — [restrictors.md](restrictors.md). Nest if you need a rare mix (e.g. closed list but empty OK: `vol zol A B zal`).
 - **Inclusive (`ao`)** — one **or** more of the conjuncts may hold (English *and/or*). Built by combining **a** with **o**; bare **o** stays exclusive. **-m** on **ao** does **not** allow empty (still at least one).
 - **Negation (`u`)** — the listed conjuncts **fail** (none of them hold). Same vowel at every level (phrase / VP / clause); no separate `/h/` or `/w/` “not” root for ordinary polarity. Under **`/h/`** / **`/w/`**, **u** denies **applicability circumstances** (*not when…*), not manner polarity — see [restrictor use](restrictors.md).
@@ -247,15 +247,15 @@ Do not confuse prefixed **…em** / **…el** / **…en** / **…er** / **…al*
   |--------|---------|
   | **2+** (list) | *none of* the listed — `zul A B`, `vul A B`, `xul A B`; circumstance: `hul A B` → *not when A or B* |
   | **1** (focus) | *not X* — `zul X`, `vul v-runl` (*didn’t run*), `gul g-bigl` (*not big*), `xul SENT` (*not SENT*); circumstance: `hul h-rainl` → *not when raining* |
-  | **0** (bare) | bare *no* — `zul` / `vul` / `xul` (closed); open twin **…um**; phrase named **…un**; soft VP/clause **…un**. Contrast bare **…al** (*nothing* / *nobody* as empty inventory) and bare **…oel** (*do nothing* as empty exclusive triage). Circumstance: bare **`hal`** = *never*; bare **`hual`** = *always*; bare **`hul` / `hum`** are **undefined** under `/h/` / `/w/` — use `xul` / `vul` / `zul` for bare *no*. |
-  **-l** vs **-m** mark whether the denial is limited to what’s named (**…ul**) or leaves room for further denials (**…um**); phrase **-n** (`zun` / …) names a conventional *none of* / denial bundle (all arities); VP/clause soft **-n** (`vun` / `xun`) = soft / reconstructed denial. **-r** on **u** is *something else* / *someone else* (other than), not *not* — see [unspecified-member](#unspecified-member-r-phrase). Prefixed **`zul` / `vul` / …** are **not** revision **`ul` / `um`** (*A except B*). Nest fences for scope: `vul val A B` → ¬(A ∧ B); `val vul A vul B` → (¬A) ∧ (¬B).
+  | **0** (bare) | bare *no* — `zul` / `vul` / `xul` (closed); open twin **…um**; phrase named **…un**; soft clause **`xun`**. VP **`vun`** is a [join-act verb](special-vocabulary.md#join-act-verbs) (*denies / refuses*), not bare soft *no*. Contrast bare **…al** (*nothing* / *nobody* as empty inventory) and bare **…oel** (*do nothing* as empty exclusive triage). Circumstance: bare **`hal`** = *never*; bare **`hual`** = *always*; bare **`hul` / `hum`** are **undefined** under `/h/` / `/w/` — use `xul` / `vul` / `zul` for bare *no*. |
+  **-l** vs **-m** mark whether the denial is limited to what’s named (**…ul**) or leaves room for further denials (**…um**); phrase **-n** (`zun` / …) names a conventional *none of* / denial bundle (all arities); clause soft **-n** (`xun`) = soft / reconstructed denial. **-r** on **u** is *something else* / *someone else* (other than), not *not* — see [unspecified-member](#unspecified-member-r-phrase). Prefixed **`zul` / `vul` / …** are **not** revision **`ul` / `um`** (*A except B*). Nest fences for scope: `vul val A B` → ¬(A ∧ B); `val vul A vul B` → (¬A) ∧ (¬B).
 - **Invert (`ua` / `uo` / `ue`)** — leading **u** on **a** / **o** / **e** flips the base join. Contrast plain **u** (negation) vs **u**-stacks (complement or reverse). **-m** on invert forms does **not** imply empty-allowed / *or none* — only that unlisted conjuncts may exist. Empty-allowed is bare **o** + **-m** only ([above](#empty-allowed-om)).
   - **`ua`** — everything but the listed (domain minus the conjuncts); with SHARED kind → *every K (but …)* — [universals, domains, and generics](#universals-domains-generics).
   - **`uo`** — anything but the listed (free choice from the complement); SHARED kind narrows the menu the same way.
   - **`ue`** — rank reversal (*A ≺ B ≺ C*); exclusivity unmarked.
-- **Ranked (`e` / `ae` / `oe` / `ue`)** — **e** / **oe** / **ue** are ordered ranking (not boolean *and* / *or*). **ae** = equality / tie (multi without scale) or [equative](comparatives.md#equatives) (multi + SHARED scale). **e** / **oe**: first listed outranks second, and so on. **ue**: last listed outranks earlier. **e** leaves exclusivity unmarked; **oe** = exclusive ranked (**o**+**e**); bare **oe** + SHARED scale = empty superlative. **-l** / **-m** / **-n** still mark closed / open / named (phrase) or soft (VP/clause) packaging. **-m** on ranked forms (including **oe**) does **not** add empty-allowed — that bit stays bare **`…om`** only.
+- **Ranked (`e` / `ae` / `oe` / `ue`)** — **e** / **oe** / **ue** are ordered ranking (not boolean *and* / *or*). **ae** = equality / tie (multi without scale) or [equative](comparatives.md#equatives) (multi + SHARED scale). **e** / **oe**: first listed outranks second, and so on. **ue**: last listed outranks earlier. **e** leaves exclusivity unmarked; **oe** = exclusive ranked (**o**+**e**); bare **oe** + SHARED scale = empty superlative. **-l** / **-m** / **-n** still mark closed / open / named (phrase) or soft (**clause**) packaging; VP **-n** = [join-act verbs](special-vocabulary.md#join-act-verbs). **-m** on ranked forms (including **oe**) does **not** add empty-allowed — that bit stays bare **`…om`** only.
 
-**a** is the inventory set join (*and*) (*and*), not an *or*. All levels take **-l**, **-m**, or **-n** (named at phrase; soft at VP/clause) on **a** / **o** / **u** / **ao** / **e** / **ae** / **oe** / **ua** / **uo** / **ue**; **a** / **o** / **e** / **u** also take **-r** ([unspecified-member](#unspecified-member-r-phrase)). Stacked forms (**ao** / **ae** / **oe** / **ua** / **uo** / **ue**) never take **-r**.
+**a** is the inventory set join (*and*), not an *or*. Phrase and clause take **-l**, **-m**, or **-n** (named at phrase; soft at clause) on **a** / **o** / **u** / **ao** / **e** / **ae** / **oe** / **ua** / **uo** / **ue**; VP takes **-l** / **-m** (and **-r** where allowed) as joins — VP **-n** spellings are join-act verbs. **a** / **o** / **e** / **u** also take **-r** ([unspecified-member](#unspecified-member-r-phrase)). Stacked forms (**ao** / **ae** / **oe** / **ua** / **uo** / **ue**) never take **-r**.
 
 There are **no** bare (prefix-less) **joins**. Prefixed joins always have a PoS prefix + ending (`zam`, `val`, …). Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** are [revisers](revisers.md) only — not list joins. Whole-word **a** / **e** / **o** / **u** (no ending) are **illegal**.
 
@@ -513,26 +513,27 @@ Same rule at phrase, VP, and clause level (`zol A zal B C`, `vol A val B C`, `xo
 
 ---
 
-# Soft **-n** (VP and clause)
+# Soft **-n** (clause only)
+<a id="soft-n-clause"></a>
 <a id="soft-n-vp-clause"></a>
 <a id="ending-senses"></a>
 
-On **`/v/`** and **`/x/`** only, **-n** is **soft packaging** (not phrase named/conventional **-n**). Soft lists use the same **fence** shape as **-l** / **-m** (left preferred; right close allowed; nesting per [fence nesting](#fence-nesting)). Soft lists do **not** carry a separate closed/open bit; treat completeness as open-leaning unless you upgrade to a committed **-l** / **-m** fence (optionally with `/h/` evidential hedges). Per vowel:
+On **`/x/`** only, join **-n** is **soft packaging** (not phrase named/conventional **-n**). Narrative *and then* between clauses is **`xan`**. Soft lists use the same **fence** shape as **-l** / **-m** (left preferred; right close allowed; nesting per [fence nesting](#fence-nesting)). Soft lists do **not** carry a separate closed/open bit; treat completeness as open-leaning unless you upgrade to a committed **-l** / **-m** fence (optionally with `/h/` evidential hedges). Per vowel:
 
 | Form | Soft reading |
 |------|----------------|
-| **`van` / `xan`** (*and*) | *and then…* (temporal / story sequence, not mere logical *and*) |
-| **`von` / `xon`** (*xor*) | *or maybe…* — uncertain alternatives (not automatic empty-allowed; use **`vom` / `xom`** for *or none*) |
-| **`vun` / `xun`** (negation) | soft *not* / *none of… as I recall…* — reconstructed or hedged denial (focus *not X*; multi soft *none of*; bare soft *no*). Contrast phrase named **`zun`** (conventional denial bundle), not empty-allowed / *or none* |
-| **`vaon` / `xaon`** (*and/or*) | *and/or maybe…* — soft multi-fit |
-| **`vuan` / `xuan`** (*everything but*) | *everything but… maybe* — soft complement inventory |
-| **`vuon` / `xuon`** (*anything but*) | *anything but… maybe* — soft complement free choice |
-| **`ven` / `xen`** (*ranked*) | *maybe prefer… / else maybe…* — soft or reconstructed ranking (exclusivity unmarked; earlier ≻ later) |
-| **`vaen` / `xaen`** (*co-sat. ranked*) | soft ranked multi-fit |
-| **`voen` / `xoen`** (*excl. ranked*) | soft exclusive ranked fallback |
-| **`vuen` / `xuen`** (*rank reversal*) | soft ascending / reverse ranking (*A ≺ B ≺ C*) |
+| **`xan`** (*and*) | *and then…* (temporal / story sequence, not mere logical *and*) |
+| **`xon`** (*xor*) | *or maybe…* — uncertain alternatives (not automatic empty-allowed; use **`xom`** for *or none*) |
+| **`xun`** (negation) | soft *not* / *none of… as I recall…* — reconstructed or hedged denial (focus *not X*; multi soft *none of*; bare soft *no*). Contrast phrase named **`zun`** (conventional denial bundle), not empty-allowed / *or none* |
+| **`xaon`** (*and/or*) | *and/or maybe…* — soft multi-fit |
+| **`xuan`** (*everything but*) | *everything but… maybe* — soft complement inventory |
+| **`xuon`** (*anything but*) | *anything but… maybe* — soft complement free choice |
+| **`xen`** (*ranked*) | *maybe prefer… / else maybe…* — soft or reconstructed ranking (exclusivity unmarked; earlier ≻ later) |
+| **`xaen`** (*co-sat. ranked*) | soft ranked multi-fit |
+| **`xoen`** (*excl. ranked*) | soft exclusive ranked fallback |
+| **`xuen`** (*rank reversal*) | soft ascending / reverse ranking (*A ≺ B ≺ C*) |
 
-Titled / official discourse labels stay **other** `/x/`…**-n** forms (different roots, not this vowel series) — see [reference-suffix.md](reference-suffix.md#discourse-markers-x).
+VP `/v/`…**-n** spellings are **not** soft joins — they are closed [join-act verbs](special-vocabulary.md#join-act-verbs) (`van`, `von`, …). Titled / official discourse labels stay **other** `/x/`…**-n** forms (different roots, not this vowel series) — see [reference-suffix.md](reference-suffix.md#discourse-markers-x).
 
 ---
 
@@ -541,33 +542,33 @@ Titled / official discourse labels stay **other** `/x/`…**-n** forms (differen
 
 Word shape: prefix + vowel root (+ further vowels for stacked forms) + ending. Writing glues stacked vowels (`vaol`, `vael`, `voel`, `vual`, `vuol`, `vuel`, `xaol`, …). Spoken order is first vowel then next, then the ending — same as phrase-level `zaol` / `zael` / `zoel` / `zual` / `zuol` / `zuel`. No three-vowel stacks.
 
-| | **-l** | **-m** | **-n** soft | **-r** unspecified |
-|---|--------|--------|-------------|---------------------|
-| **a** (*and*) | `val` / `xal` closed | `vam` / `xam` open | `van` / `xan` | `var` / `xar` |
-| **o** (xor) | `vol` / `xol` closed | `vom` / `xom` open | `von` / `xon` | `vor` / `xor` |
-| **u** (negation) | `vul` / `xul` closed | `vum` / `xum` open | `vun` / `xun` | `vur` / `xur` |
-| **ao** (and/or) | `vaol` / `xaol` closed | `vaom` / `xaom` open | `vaon` / `xaon` | — |
-| **ua** (everything but) | `vual` / `xual` closed | `vuam` / `xuam` open | `vuan` / `xuan` | — |
-| **uo** (anything but) | `vuol` / `xuol` closed | `vuom` / `xuom` open | `vuon` / `xuon` | — |
-| **e** (ranked) | `vel` / `xel` closed | `vem` / `xem` open | `ven` / `xen` | `ver` / `xer` |
-| **ae** (equality / tie) | `vael` / `xael` closed | `vaem` / `xaem` open | `vaen` / `xaen` | — |
-| **oe** (excl. ranked) | `voel` / `xoel` closed | `voem` / `xoem` open | `voen` / `xoen` | — |
-| **ue** (rank reversal) | `vuel` / `xuel` closed | `vuem` / `xuem` open | `vuen` / `xuen` | — |
+| | **-l** | **-m** | **-n** | **-r** unspecified |
+|---|--------|--------|--------|---------------------|
+| **a** (*and*) | `val` / `xal` closed | `vam` / `xam` open | `xan` soft; **`van`** = [join-act](special-vocabulary.md#join-act-verbs) | `var` / `xar` |
+| **o** (xor) | `vol` / `xol` closed | `vom` / `xom` open | `xon` soft; **`von`** = join-act | `vor` / `xor` |
+| **u** (negation) | `vul` / `xul` closed | `vum` / `xum` open | `xun` soft; **`vun`** = join-act | `vur` / `xur` |
+| **ao** (and/or) | `vaol` / `xaol` closed | `vaom` / `xaom` open | `xaon` soft; **`vaon`** = join-act | — |
+| **ua** (everything but) | `vual` / `xual` closed | `vuam` / `xuam` open | `xuan` soft; **`vuan`** = join-act | — |
+| **uo** (anything but) | `vuol` / `xuol` closed | `vuom` / `xuom` open | `xuon` soft; **`vuon`** undefined as verb | — |
+| **e** (ranked) | `vel` / `xel` closed | `vem` / `xem` open | `xen` soft; **`ven`** = join-act | `ver` / `xer` |
+| **ae** (equality / tie) | `vael` / `xael` closed | `vaem` / `xaem` open | `xaen` soft; **`vaen`** = join-act | — |
+| **oe** (excl. ranked) | `voel` / `xoel` closed | `voem` / `xoem` open | `xoen` soft; **`voen`** = join-act | — |
+| **ue** (rank reversal) | `vuel` / `xuel` closed | `vuem` / `xuem` open | `xuen` soft; **`vuen`** = join-act | — |
 
 Prefix: **`/v/`** for [VP-level](#vp-level-coordination); **`/x/`** for [clause-level](#clause-level-coordination). **-r** only on **a** / **o** / **e** / **u** — see [unspecified-member](#unspecified-member-r-phrase). No stacked-vowel **-r** (`vaor` / `xaor` / `vaer` / `xaer` / `voer` / `xoer` / `vuar` / `vuor` / `vuer` / …).
 
-**-l** / **-m** — committed closed / open lists (same senses as phrase). Soft **-n** — [above](#soft-n-vp-clause). **-r** — unspecified-member (under question = fill-ask — [questions.md](questions.md#fill-ask-r)), not list continue.
+**-l** / **-m** — committed closed / open lists (same senses as phrase). Soft **-n** — clause only ([above](#soft-n-clause)). VP **-n** — [join-act verbs](special-vocabulary.md#join-act-verbs). **-r** — unspecified-member (under question = fill-ask — [questions.md](questions.md#fill-ask-r)), not list continue.
 
 **Flat fence shape** (same as phrase):
 
 ```
 COORD ( SHARED )* ITEM ITEM ( ITEM )*   ← left (preferred); two or more when not focus/bare-allowed
 ITEM ITEM ( ITEM )* COORD ( SHARED )*   ← right close
-COORD ( SHARED )* ITEM            ← focus …ar/…or/…er/…ur or negation …ul/…um/…un
-COORD ( SHARED )*               ← bare …ar/…or/…er/…ur or negation …ul/…um/…un
+COORD ( SHARED )* ITEM            ← focus …ar/…or/…er/…ur or negation …ul/…um (VP) / …un (phrase named / clause soft)
+COORD ( SHARED )*               ← bare …ar/…or/…er/…ur or negation …ul/…um (VP) / …un (phrase named / clause soft)
 ```
 
-Examples (flat): `vam A B` / `A B vam` → *A and B* (open); `val A B C` → closed three-way *and*; `van A B C` → *A and then B and then C*; `vel A B` → *A ≻ B*; `vol A B` → *A or B* (exactly one); `vom A B` → *A or B or neither* (at most one); `var` → *do something*; `xar` → *something happened*; `vul v-runl` → *didn’t run*; `vul` → *no* / *don’t* (bare denial); `xul SENT` → *not SENT*.
+Examples (flat): `vam A B` / `A B vam` → *A and B* (open); `val A B C` → closed three-way *and*; `xan A B C` → *A and then B and then C*; `vel A B` → *A ≻ B*; `vol A B` → *A or B* (exactly one); `vom A B` → *A or B or neither* (at most one); `var` → *do something*; `xar` → *something happened*; `vul v-runl` → *didn’t run*; `vul` → *no* / *don’t* (bare denial); `xul SENT` → *not SENT*.
 
 Nesting: [fence nesting](#fence-nesting) — e.g. `vol A val B C` → *A or (B and C)*; `A B vol C val` → *(A or B) and C*.
 
@@ -575,7 +576,7 @@ Nesting: [fence nesting](#fence-nesting) — e.g. `vol A val B C` → *A or (B a
 
 # VP-level joins
 
-VP-level joins join **verb phrases** inside one clause: each conjunct is a verb plus that verb’s own object material (`/d/` NP, including phrase-level structure on the object), unless a shared object sits before a left fence (below). They share one clause subject (`/z/`) and one [clause force](language-reference.md#utterance-markers-j). The join prefix is always **`/v/`**. Forms and endings: [VP / clause forms](#vp-clause-forms). Shape and nesting: [fence nesting](#fence-nesting). Soft **-n**: [soft **-n**](#soft-n-vp-clause). Unspecified **-r**: [unspecified-member](#unspecified-member-r-phrase).
+VP-level joins join **verb phrases** inside one clause: each conjunct is a verb plus that verb’s own object material (`/d/` NP, including phrase-level structure on the object), unless a shared object sits before a left fence (below). They share one clause subject (`/z/`) and one [clause force](language-reference.md#utterance-markers-j). The join prefix is always **`/v/`**. Forms and endings: [VP / clause forms](#vp-clause-forms) (**-l** / **-m** / **-r** only as joins). Shape and nesting: [fence nesting](#fence-nesting). Soft *and then*: clause **`xan`** ([soft **-n**](#soft-n-clause)). Unspecified **-r**: [unspecified-member](#unspecified-member-r-phrase).
 
 ## Conjuncts and scope
 
@@ -591,7 +592,6 @@ VP-level joins join **verb phrases** inside one clause: each conjunct is a verb 
 
 - `vam d-applel v-eatl d-waterl v-drinkl` → *(ate an apple) and (drank water)* (open); `d-applel v-eatl d-waterl v-drinkl vam` → same with right close
 - `val d-applel v-eatl d-waterl v-drinkl d-breadl v-bakel` → closed *and* of three VPs
-- `van v-runl v-jumpl v-restl` → *ran and then jumped and then rested*
 - `vel d-applel v-eatl d-cakel v-eatl` → *ate an apple ≻ ate a cake* (closed ranked, exclusivity unmarked)
 - `vael d-applel v-eatl d-cakel v-eatl` → *ate an apple as much as ate a cake* / *equally* (closed **ae** — equal weight / tie)
 - `vael` → *it’s a draw* / *tied outcome* (bare **ae** on VP)
@@ -599,7 +599,6 @@ VP-level joins join **verb phrases** inside one clause: each conjunct is a verb 
 - `vuel d-appetizerl v-eatl d-dessertl v-eatl` → *ate an appetizer ≺ ate dessert* (closed rank reversal)
 - `vual v-liet v-shoutl` → *do everything but lie or shout*
 - `vuol v-calll v-emaill` → *do anything but call or email*
-- `voen v-runl v-hidel v-fightl` → soft exclusive triage *run ≻ hide ≻ fight*
 - `vem d-applel v-eatl d-waterl v-drinkl` → *ate an apple ≻ drank water* (open ranked, unmarked)
 - `h-quicklyl vam d-applel v-eatl d-waterl v-drinkl` → *quickly* *(ate an apple and drank water)*
 - `vam d-applel v-eatl h-quicklyl d-waterl v-drinkl` → *(quickly ate an apple) and (drank water)*
@@ -610,6 +609,8 @@ VP-level joins join **verb phrases** inside one clause: each conjunct is a verb 
 - `var` → *do something*; `var v-runl` → *some (unspecified) running*; `vor v-runl v-jumpl` → *any of running or jumping*
 - `vul v-runl` → *didn’t run*; `vul d-applel v-eatl d-waterl v-drinkl` → *neither ate an apple nor drank water*; `vul` → *no* / *don’t* (bare denial; contrast `zoel` *do nothing* as empty triage); `vur` → *do something else*
 - Under question: `var` → *What (did they) do?*; `vur` → *What else (did they do)?*; `vul v-runl` → *Didn’t run?* — [questions.md](questions.md#fill-ask-r)
+- Join-act verbs (not joins): `jal z-Samn d-pathl von` → *Sam chooses the path (as the one choice)* — [special-vocabulary.md](special-vocabulary.md#join-act-verbs)
+- Clause sequence (*and then*): `xan SENT₁ SENT₂` — not a VP `van` join
 
 ## Constraints
 
@@ -619,18 +620,18 @@ VP-level joins join **verb phrases** inside one clause: each conjunct is a verb 
 - **No gapping** of subject or object across VPs (beyond the shared-object pattern).
 - **No `-sh`** on the join.
 - **Fence** — left preferred, right close allowed; nesting per [fence nesting](#fence-nesting); **no pure infix**.
-- **-r** is unspecified-member (`var` / `vor` / `ver` / `vur`), not continue. Focus/bare allowed on **-r** forms and on negation **`vul` / `vum` / `vun`** among VP joins.
+- **-r** is unspecified-member (`var` / `vor` / `ver` / `vur`), not continue. Focus/bare allowed on **-r** forms and on negation **`vul` / `vum`** among VP joins (not **`vun`** — that is a join-act verb).
 - **Not** full sentences — those stay `/x/`…; **not** phrase-level NP/AP joins — those stay [phrase-level](#phrase-level-coordination).
 
 ## Reserved forms
 
-Under `/v/`, the join series plus an allowed ending (`val`, `vam`, `van`, `var`, `vol`, `vom`, `von`, `vor`, `vul`, `vum`, `vun`, `vur`, `vaol`, `vaom`, `vaon`, `vual`, `vuam`, `vuan`, `vuol`, `vuom`, `vuon`, `vel`, `vem`, `ven`, `ver`, `vael`, `vaem`, `vaen`, `voel`, `voem`, `voen`, `vuel`, `vuem`, `vuen`) are **only** these VP joins — not ordinary content verbs with those vowel roots. No three-vowel stacks. No stacked-vowel **-r** (`vaor`, `vaer`, `voer`, `vuar`, `vuor`, `vuer`, …). Other roots under `/v/` are unchanged.
+Under `/v/`, join endings are **-l** / **-m** / **-r** only on the join vowels (`val`, `vam`, `var`, `vol`, `vom`, `vor`, `vul`, `vum`, `vur`, `vaol`, `vaom`, `vual`, `vuam`, `vuol`, `vuom`, `vel`, `vem`, `ver`, `vael`, `vaem`, `voel`, `voem`, `vuel`, `vuem`). Those spellings are **only** VP joins — not ordinary content verbs with those vowel roots. The parallel **-n** spellings (`van`, `von`, `vun`, `vaon`, `vuan`, `ven`, `vaen`, `voen`, `vuen`) are closed [join-act verbs](special-vocabulary.md#join-act-verbs); **`vuon`** is reserved but **undefined** as a verb for now (clause soft **`xuon`** stays). No three-vowel stacks. No stacked-vowel **-r** (`vaor`, `vaer`, `voer`, `vuar`, `vuor`, `vuer`, …). Other roots under `/v/` are unchanged.
 
 ---
 
 # Clause-level joins
 
-Clause-level joins join **full sentences**. They are **`/x/`** discourse markers whose **root is the same vowel series** as phrase- and VP-level joins. They take a [reference-suffix letter](reference-suffix.md): **-l**, **-m**, **-n**, or **-r**. They do **not** take plural **-sh**. Forms: [VP / clause forms](#vp-clause-forms). Shape and nesting: [fence nesting](#fence-nesting) (same as VP and phrase). Soft **-n**: [soft **-n**](#soft-n-vp-clause). Unspecified **-r**: [unspecified-member](#unspecified-member-r-phrase).
+Clause-level joins join **full sentences**. They are **`/x/`** discourse markers whose **root is the same vowel series** as phrase- and VP-level joins. They take a [reference-suffix letter](reference-suffix.md): **-l**, **-m**, **-n**, or **-r**. They do **not** take plural **-sh**. Forms: [VP / clause forms](#vp-clause-forms). Shape and nesting: [fence nesting](#fence-nesting) (same as VP and phrase). Soft **-n**: [soft **-n**](#soft-n-clause) (including *and then* **`xan`**). Unspecified **-r**: [unspecified-member](#unspecified-member-r-phrase).
 
 Endorsement strength and evidentiality stay on each clause’s `/h/` (or `/w/`), not on the join.
 

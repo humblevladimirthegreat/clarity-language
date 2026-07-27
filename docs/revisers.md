@@ -6,7 +6,7 @@
 
 Prefixed fence **joins**: [coordination.md](coordination.md). Circumstance **restrictors** (`/h/` `/w/`): [restrictors.md](restrictors.md).
 
-Prefix-less vowel + **-l** / **-m** / **-n** forms are **revisers** inside one clause. Each `REV` pairs a fixed left side **A** with one right-hand side. They are **not** joins: they do not take **-r**, and they do not join full sentences. An ending is **required**: **-l** / **-m** mark **completeness of that right-hand side**; **-n** marks a **named / conventional** revision (same mnemonic as phrase-level join **-n**, not VP/clause soft **-n**).
+Prefix-less vowel + **-l** / **-m** / **-n** forms are **revisers** inside one clause. Each `REV` pairs a fixed left side **A** with one right-hand side. They are **not** joins: they do not take **-r**, and they do not join full sentences. An ending is **required**: **-l** / **-m** mark **completeness of that right-hand side**; **-n** marks a **named / conventional** revision (same mnemonic as phrase-level join **-n**, not clause soft **-n**).
 
 ## Meanings (vowel)
 
@@ -29,7 +29,7 @@ Every revision word **must** take **-l**, **-m**, or **-n**; unmarked **a** / **
 | **-m** | `am` / `em` / `om` / `um` | **Open** — that right-hand side is non-exhaustive: including B *among others* · except B *(and maybe more)* · B is *a* replacement · B is *a* better wording. |
 | **-n** | `an` / `en` / `on` / `un` | **Named / conventional** — A (and/or this A–side revision) is invoked as an established titled, formulaic, or canonical frame (*the primary colors, including red*; *RGB except blue*; a stock *tea→coffee* swap; a conventional *happy, or rather content* rephrase). Completeness is whatever that designation already fixes. |
 
-Same mnemonic as phrase-level [named **-n**](coordination.md#named--conventional-ending-phrase-level-all-join-vowels) and content-word [proper name **-n**](reference-suffix.md#proper-name--n): definite by established label. **Not** VP/clause soft **-n** (*and then…* / tentative reconstruction). No **-r** (multi-side revision uses [parallel chains](#revision-chains-parallel-on-a), not a fence particle). When unsure between closed and open, prefer **-m**; use **-n** when you are naming a conventional frame rather than composing an inventory.
+Same mnemonic as phrase-level [named **-n**](coordination.md#named--conventional-ending-phrase-level-all-join-vowels) and content-word [proper name **-n**](reference-suffix.md#proper-name--n): definite by established label. **Not** clause soft **-n** (*and then…* **`xan`** / tentative reconstruction). No **-r** (multi-side revision uses [parallel chains](#revision-chains-parallel-on-a), not a fence particle). When unsure between closed and open, prefer **-m**; use **-n** when you are naming a conventional frame rather than composing an inventory.
 
 | | **-l** | **-m** | **-n** |
 |--|--------|--------|--------|

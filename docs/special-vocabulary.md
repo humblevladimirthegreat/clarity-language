@@ -1,11 +1,54 @@
 # Special vocabulary
 <a id="special-vocabulary"></a>
 
-This page is the source of truth for **special morphology and closed roots** that are **not** [values](values.md) (needs) and **not** [restrictors](restrictors.md) (applicability joins). They reuse the value-compound **shape** (`… x {vowel} …`) where useful (ability), but keep their own stance inventories; some entries are closed mood roots with **no** `x`-addition (plan / predict, emotion activation / locus, **comment** / mindfulness noting).
+This page is the source of truth for **special morphology and closed roots** that are **not** [values](values.md) (needs) and **not** [restrictors](restrictors.md) (applicability joins). They reuse the value-compound **shape** (`… x {vowel} …`) where useful (ability), but keep their own stance inventories; some entries are closed mood roots with **no** `x`-addition (plan / predict, emotion activation / locus, **comment** / mindfulness noting); **join-act verbs** reuse join-vowel spellings under `/v/`…**-n**.
 
 Ordinary `/h/` / `/w/` content still defaults to values unless the root is in a clearer closed subcategory (restrictors, special vocabulary here, evidentiality/mood, degree, adjuncts, numbers) — see [values.md](values.md#default-reading-of-h-and-w).
 
 **Not here:** Claritish *worse than Average|…* benchmarks are NP comparees on comparative fences — [comparatives.md § Judgment benchmarks](comparatives.md#judgment-benchmarks). **Classification** (kind as predicative `/ɡ/`) and closed **`SAME`** **identity** (`g-SAME` + `/b/`) live in **[predication.md](predication.md)** — not a general *to-be* verb and not `x`-compounds.
+
+## Join-act verbs (`v*n`)
+<a id="join-act-verbs"></a>
+<a id="verb-join-n"></a>
+
+Closed `/v/` verbs that **perform the join-series act** on an object. Spellings match the join vowel + **-n** (`van`, `von`, …). They are **not** VP soft-packaging joins — soft packaging (including *and then*) lives on clause `/x/`…**-n** only (`xan`, …) — [coordination.md § Soft **-n**](coordination.md#soft-n-clause).
+
+### Pattern
+
+- **One `/d/` object** (singular or group). Group objects use ordinary noun **-sh** (`d-…lsh`); verb **-sh** is only for an event-set referent ([plurality](plurality.md)).
+- **Defective**: only the **-n** exponent exists as a content verb. Parallel `-l` / `-m` / `-r` spellings stay VP **joins** (`val` / `vam` / `var`, …). Resume a prior join-act with a letter pronoun or a full paraphrase — not `var` (that is *do something*).
+- Vowel = which coordination move you enact; **-n** = that move as a titled/conventional doing ([reference-suffix](reference-suffix.md#proper-name--n) verb sense).
+
+### Inventory
+
+| Form | Gloss | Example |
+|------|--------|---------|
+| **`van`** | *includes / adds* | `jal z-Samn d-applel van` — *Sam includes/adds an apple* |
+| **`von`** | *chooses (as the one choice)* | `jal z-Samn d-teal von` — *Sam chooses tea (as the one choice)* |
+| **`vaon`** | *picks (with potentially more picks coming)* | `jal z-Samn d-toppingl vaon` — *Sam picks a topping (more picks may follow)* |
+| **`vun`** | *denies / refuses* | `jal z-Samn d-liet vun` — *Sam denies/refuses the lie* |
+| **`vuan`** | *excludes* | `jal z-Samn d-nutl vuan` — *Sam excludes nuts* |
+| **`ven`** | *prioritizes* | `jal z-Samn d-bugl ven` — *Sam prioritizes the bug* |
+| **`vaen`** | *equates / ties* | `jal z-Samn d-candidatelsh vaen` — *Sam equates the candidates* |
+| **`voen`** | *tries* | `jal z-Samn d-fixl voen` — *Sam tries the fix* |
+| **`vuen`** | *deprioritizes* | `jal z-Samn d-dessertl vuen` — *Sam deprioritizes dessert* |
+
+**`vuon`** — reserved spelling; **undefined** as a verb for now (too close to **`vun`**; clause soft **`xuon`** remains). Join particles **`vuol` / `vuom`** still mean *anything but* as fences.
+
+### Contrasts
+
+| | Clarity | Gloss |
+|--|---------|--------|
+| refuse vs exclude | `jal z-hen d-meatol vun` vs `jal z-hen d-meatol vuan` | *I refuse meat* vs *I exclude meat* |
+| one choice vs open picks | `jal z-hen d-pathl von` vs `jal z-hen d-pathl vaon` | *I choose that path (only)* vs *I pick that path (more may come)* |
+| prioritize vs try | `jal z-hen d-fixl ven` vs `jal z-hen d-fixl voen` | *I prioritize the fix* vs *I try the fix* |
+| *and then* (clauses) | `xan SENT₁ SENT₂` | *SENT₁ and then SENT₂* — **not** `van` |
+
+### Constraints
+
+- Not VP joins and not soft packaging.
+- Not revisers (`an` / `on` / …) and not phrase named-list **-n**.
+- Do **not** invent `-l` / `-m` content readings for these roots under `/v/` — those spellings are joins.
 
 ## Comment (mindfulness noting)
 <a id="comment"></a>
