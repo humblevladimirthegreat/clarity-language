@@ -1,11 +1,98 @@
 # Special vocabulary
 <a id="special-vocabulary"></a>
 
-This page is the source of truth for **special morphology and closed roots** that are **not** [values](values.md) (needs) and **not** [restrictors](restrictors.md) (applicability joins). They reuse the value-compound **shape** (`… x {vowel} …`) where useful (ability), but keep their own stance inventories; some entries are closed mood roots with **no** `x`-addition (plan / predict, emotion activation / locus).
+This page is the source of truth for **special morphology and closed roots** that are **not** [values](values.md) (needs) and **not** [restrictors](restrictors.md) (applicability joins). They reuse the value-compound **shape** (`… x {vowel} …`) where useful (ability), but keep their own stance inventories; some entries are closed mood roots with **no** `x`-addition (plan / predict, emotion activation / locus, **comment** / mindfulness noting).
 
 Ordinary `/h/` / `/w/` content still defaults to values unless the root is in a clearer closed subcategory (restrictors, special vocabulary here, evidentiality/mood, degree, adjuncts, numbers) — see [values.md](values.md#default-reading-of-h-and-w).
 
 **Not here:** Claritish *worse than Average|…* benchmarks are NP comparees on comparative fences — [comparatives.md § Judgment benchmarks](comparatives.md#judgment-benchmarks).
+
+## Comment (mindfulness noting)
+<a id="comment"></a>
+<a id="mindfulness-noting"></a>
+
+Port of Claritish **Mindfulness noting** (`I think_m`, `I fear_f`, …): first-person attitude / stance verbs often mark **mental commentary** — the mind storying experience rather than contacting it. Clarity does **not** keep *think* / *fear* / *hope* / *worry* as separate moods. One mood covers that class: **COMMENT**. Six closed `/h/` roots are **synonyms** of COMMENT; choosing among them is the **noting practice** (which sense channel stands out), not six different meanings.
+
+### Mood sense
+
+| Concept | Gloss |
+|---------|--------|
+| **COMMENT** | Mental commentary / rumination-like overlay — mind labeling or storying experience instead of bare contact |
+
+Not ordinary *think* as a content verb, not evidentiality (*how I know*), not [contact channel](values.md#value-contact) on met values (how you savor a payoff), and not perception-as-event (*she hears the door* — ordinary lexicon `/v/` if needed).
+
+### Six noting exponents (same mood)
+
+All six mean **COMMENT**. Pick **one** for what stands out most (Claritish `_l/_h/_f/_s/_t/_m`). Soft default when unsure → **mind**.
+
+| Claritish | Sense cue (practice only) | Clarity (schematic `/h/`) |
+|-----------|---------------------------|---------------------------|
+| **`_l`** | looking | `h-lookl` |
+| **`_h`** | hearing | `h-hearl` |
+| **`_f`** | feeling | `h-feell` |
+| **`_s`** | smelling | `h-smelll` |
+| **`_t`** | tasting | `h-tastel` |
+| **`_m`** | minding | `h-mindl` |
+
+Lexicon phonetic forms TBD; schematic English-shaped roots above. Optional `/w/` only when COMMENT frames a preceding `/ɡ/` (rare). Prefer floating `/h/`.
+
+**Not `x`-compounds:** COMMENT is a **mood root choice** (six synonymous exponents), not `xa`/`xu` polarity and not endings on attitude hosts. Do **not** compound COMMENT onto the content verb the way ability does.
+
+### When it fires
+
+Use COMMENT when the clause is doing **first-person commentary** work — the Claritish attitude / stance environments (*I think*, *I fear*, *we worry*, *I'm assuming*, *I hope*, *I imagine*, …). Exactly **one** noting exponent per such clause. Third-person *thinks* / other-minds claims stay **evidentiality** (and ordinary content), not COMMENT.
+
+Content verbs stay ordinary. COMMENT **frames** the clause; it does not replace the predicate with a sense verb.
+
+### Fear, hope, worry, … are not moods
+
+English attitude verbs smuggle COMMENT plus other loads. Keep COMMENT; put the rest on stacks you already have:
+
+| English bundle | Prefer |
+|----------------|--------|
+| *think / assume / suppose / imagine …* | **COMMENT** (noting exponent); add evidentiality only if asserting a world-claim |
+| *fear / worry / dread …* | **COMMENT** + unmet [value](values.md) (`xu`) ± [ACT / LOCUS](#emotion-compose) |
+| *hope / wish …* | **COMMENT** + motive (`xe`) and/or [**PLAN**](#plan-predict) / soft force — not a hope-mood |
+| *regret …* | **COMMENT** + unmet value (± past / tense `/h/`) |
+| *wonder …* | **COMMENT** + soft question (**jom**) / ask — not a wonder-mood |
+
+| Clarity (schematic) | Reading |
+|---------------------|---------|
+| `… h-mindl …` | *I think_m …* — commentary; minding noted |
+| `… z-meetingl w-competxul h-feell h-ACThighl …` | *I fear_f the meeting* — commentary (feeling noted); unmet competence; high arousal |
+| `… h-mindl h-PLANm …` | *I hope_m …* — commentary + soft plan (not a hope root) |
+| `… h-lookl …` | *I imagine_l …* — commentary; looking noted |
+
+### Do not overload other tables
+
+| Dimension | Stays | COMMENT is *not* |
+|-----------|--------|------------------|
+| Need met / unmet / motive / ought | [values](values.md) | a seventh need or attitude-value series |
+| Contact channel | `xa` endings (physical / mental / social / spiritual) | noting exponents (six sense cues; same COMMENT mood) |
+| Emotion ACT / LOCUS | [emotion compose](#emotion-compose) | fear/hope as activation roots |
+| Plan / predict | [plan / predict](#plan-predict) | *hope* / *expect* as future moods |
+| Evidentiality | shared mood `/h/` on claims | `_f/_s/_t` letter tags on *I think* (Claritish clash — gone here) |
+| Perception events | ordinary `/v/` lexicon | COMMENT `/h/` (*hearing* as commentary ≠ *hear the door*) |
+| Clause force | `/j/` (`jal`, `jam`, …) | a noting speech-act force |
+
+**Raw contact:** labeling sensation without commentary story may use a noting exponent alone as a thin frame, or leave unlabeled — see [emotion compose](#emotion-compose) raw feeling. Full emotion compose still applies when an emotion word would judge or explain.
+
+### Out of scope (for now)
+
+- Lexicon phonetic forms of the six COMMENT exponents.
+- Whether a dedicated bare `/j/` interjection (*feeling!*) reuses the same roots.
+- Forced COMMENT on every first-person clause (only commentary / attitude environments).
+- Merging smell/taste or collapsing channels.
+
+### Constraints
+
+- **COMMENT** is one mood; the six `/h/` roots are **synonymous** exponents — channel choice is practice-only.
+- Prefer floating `/h/`; do not use mid-word **`x` + {a\|e\|o\|u}** for COMMENT.
+- Do **not** invent separate moods for *fear* / *hope* / *worry* / *think*.
+- Do **not** reuse [value contact-channel](values.md#value-contact) endings as noting tags.
+- Do **not** treat COMMENT exponents as evidentiality letters.
+- **ACT** / **LOCUS** / **PLAN** / **PREDICT** / values remain separate `/h/` (or `/w/`) stacks when needed.
+- Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)).
 
 ## Emotion compose
 <a id="emotion-compose"></a>
@@ -27,7 +114,7 @@ Port of Claritish **Emotion decompose** (`_[hml][iec]` + value on the judged hos
 | `z-splitl w-relatxum h-ACThighl h-LOCUSexternl` | *resentful about the split* → unmet relatedness; high; charge on others |
 | `z-draftl w-competxam h-ACThighl h-LOCUSinternl` | *proud of the draft* → met competence (mental channel); high; charge internal |
 
-**Raw feeling:** contacting a sensation without judgment/explanation may leave it unlabeled (or use mindfulness noting later). Full compose is required when an emotion word would have done evaluative work — same nudge as neutral praise / criticism.
+**Raw feeling:** contacting a sensation without judgment/explanation may leave it unlabeled (or use [COMMENT / noting](#comment)). Full compose is required when an emotion word would have done evaluative work — same nudge as neutral praise / criticism.
 
 **Not `x`-compounds:** activation and locus are **root choices** (three-way mood inventories), not `xa`/`xu` polarity and not endings on need or ability compounds. Do **not** compound ACT/LOCUS onto the content verb the way ability does.
 
@@ -39,13 +126,12 @@ Port of Claritish **Emotion decompose** (`_[hml][iec]` + value on the judged hos
 | Contact channel | `xa` endings | locus (how you savor ≠ where charge sits) |
 | Preference standing | `xe` endings | locus (motive source ≠ felt-charge attribution) |
 | Ordinary degree | *very* / *slightly* | activation (intensity of *arousal*, not scalar property degree) |
-| Mindfulness noting | first-person attitude verbs (*I fear*, *I hope*, …) | emotion-label compose (noting = sense modality; separate port) |
+| Mental commentary | [COMMENT](#comment) (six synonymous noting `/h/`) | emotion-label compose (COMMENT ≠ ACT/LOCUS) |
 
 ### Out of scope (for now)
 
 - Lexicon phonetic forms of **ACT** / **LOCUS** roots (and whether MED shares a form with another soft default).
 - Whether ACT/LOCUS may bind as `/w/` on the judged `/ɡ/` vs only floating `/h/`.
-- Mindfulness noting inventory (sense channels) — separate special-vocabulary entry later.
 - Emotion lexicon retained only for non-judgmental sensation naming (if any).
 
 ### Constraints
