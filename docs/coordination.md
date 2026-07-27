@@ -549,7 +549,7 @@ Word shape: prefix + vowel root (+ further vowels for stacked forms) + ending. W
 | **u** (negation) | `vul` / `xul` closed | `vum` / `xum` open | `xun` soft; **`vun`** = join-act | `vur` / `xur` |
 | **ao** (and/or) | `vaol` / `xaol` closed | `vaom` / `xaom` open | `xaon` soft; **`vaon`** = join-act | — |
 | **ua** (everything but) | `vual` / `xual` closed | `vuam` / `xuam` open | `xuan` soft; **`vuan`** = join-act | — |
-| **uo** (anything but) | `vuol` / `xuol` closed | `vuom` / `xuom` open | `xuon` soft; **`vuon`** undefined as verb | — |
+| **uo** (anything but) | `vuol` / `xuol` closed | `vuom` / `xuom` open | `xuon` soft; **`vuon`** = join-act | — |
 | **e** (ranked) | `vel` / `xel` closed | `vem` / `xem` open | `xen` soft; **`ven`** = join-act | `ver` / `xer` |
 | **ae** (equality / tie) | `vael` / `xael` closed | `vaem` / `xaem` open | `xaen` soft; **`vaen`** = join-act | — |
 | **oe** (excl. ranked) | `voel` / `xoel` closed | `voem` / `xoem` open | `xoen` soft; **`voen`** = join-act | — |
@@ -625,7 +625,7 @@ VP-level joins join **verb phrases** inside one clause: each conjunct is a verb 
 
 ## Reserved forms
 
-Under `/v/`, join endings are **-l** / **-m** / **-r** only on the join vowels (`val`, `vam`, `var`, `vol`, `vom`, `vor`, `vul`, `vum`, `vur`, `vaol`, `vaom`, `vual`, `vuam`, `vuol`, `vuom`, `vel`, `vem`, `ver`, `vael`, `vaem`, `voel`, `voem`, `vuel`, `vuem`). Those spellings are **only** VP joins — not ordinary content verbs with those vowel roots. The parallel **-n** spellings (`van`, `von`, `vun`, `vaon`, `vuan`, `ven`, `vaen`, `voen`, `vuen`) are closed [join-act verbs](special-vocabulary.md#join-act-verbs); **`vuon`** is reserved but **undefined** as a verb for now (clause soft **`xuon`** stays). No three-vowel stacks. No stacked-vowel **-r** (`vaor`, `vaer`, `voer`, `vuar`, `vuor`, `vuer`, …). Other roots under `/v/` are unchanged.
+Under `/v/`, join endings are **-l** / **-m** / **-r** only on the join vowels (`val`, `vam`, `var`, `vol`, `vom`, `vor`, `vul`, `vum`, `vur`, `vaol`, `vaom`, `vual`, `vuam`, `vuol`, `vuom`, `vel`, `vem`, `ver`, `vael`, `vaem`, `voel`, `voem`, `vuel`, `vuem`). Those spellings are **only** VP joins — not ordinary content verbs with those vowel roots. The parallel **-n** spellings (`van`, `von`, `vun`, `vaon`, `vuan`, `vuon`, `ven`, `vaen`, `voen`, `vuen`) are closed [join-act verbs](special-vocabulary.md#join-act-verbs). No three-vowel stacks. No stacked-vowel **-r** (`vaor`, `vaer`, `voer`, `vuar`, `vuor`, `vuer`, …). Other roots under `/v/` are unchanged.
 
 ---
 

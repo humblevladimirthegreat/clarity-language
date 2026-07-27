@@ -28,18 +28,18 @@ Closed `/v/` verbs that **perform the join-series act** on an object. Spellings 
 | **`vaon`** | *picks (with potentially more picks coming)* | `jal z-Samn d-toppingl vaon` — *Sam picks a topping (more picks may follow)* |
 | **`vun`** | *denies / refuses* | `jal z-Samn d-liet vun` — *Sam denies/refuses the lie* |
 | **`vuan`** | *excludes* | `jal z-Samn d-nutl vuan` — *Sam excludes nuts* |
+| **`vuon`** | *bars (anything but)* | `jal z-Samn d-coffeel vuon` — *Sam bars coffee (anything else is fine)* |
 | **`ven`** | *prioritizes* | `jal z-Samn d-bugl ven` — *Sam prioritizes the bug* |
 | **`vaen`** | *equates / ties* | `jal z-Samn d-candidatelsh vaen` — *Sam equates the candidates* |
 | **`voen`** | *tries* | `jal z-Samn d-fixl voen` — *Sam tries the fix* |
 | **`vuen`** | *deprioritizes* | `jal z-Samn d-dessertl vuen` — *Sam deprioritizes dessert* |
-
-**`vuon`** — reserved spelling; **undefined** as a verb for now (too close to **`vun`**; clause soft **`xuon`** remains). Join particles **`vuol` / `vuom`** still mean *anything but* as fences.
 
 ### Contrasts
 
 | | Clarity | Gloss |
 |--|---------|--------|
 | refuse vs exclude | `jal z-hen d-meatol vun` vs `jal z-hen d-meatol vuan` | *I refuse meat* vs *I exclude meat* |
+| exclude vs anything but | `jal z-hen d-nutl vuan` vs `jal z-hen d-nutl vuon` | *I exclude nuts* vs *I bar nuts (anything else is fine)* |
 | one choice vs open picks | `jal z-hen d-pathl von` vs `jal z-hen d-pathl vaon` | *I choose that path (only)* vs *I pick that path (more may come)* |
 | prioritize vs try | `jal z-hen d-fixl ven` vs `jal z-hen d-fixl voen` | *I prioritize the fix* vs *I try the fix* |
 | *and then* (clauses) | `xan SENT₁ SENT₂` | *SENT₁ and then SENT₂* — **not** `van` |
@@ -72,18 +72,18 @@ Closed **complex** `/ɡ/` adjectives and `/h/` adverbs that **frame a host via t
 | **`gaon` / `haon`** | *open to* (X admitted; more may follow) | *among options* | `z-pizzal gaon b-toppingl`; `jal … haon b-toppingl v-orderl` |
 | **`gun` / `hun`** | *against / anti-* (refuses X) | *refusing* | `z-policyl gun b-liet`; `jal … hun b-meatol v-eatl` |
 | **`guan` / `huan`** | *without / excluding* | *excluding* | `z-cakel guan b-nutl`; `jal … huan b-nutl v-bakel` |
+| **`guon` / `huon`** | *open to anything but* (X barred; rest free) | *barring / anything but* | `z-menul guon b-nutl`; `jal … huon b-nutl v-orderl` |
 | **`gen` / `hen`** | *prioritizing / headed by* | *prioritizing* | `z-backlogl gen b-bugl`; `jal … hen b-bugl v-fixl` |
 | **`gaen` / `haen`** | *on a par with* | *equating / tying* | `z-pathl gaen b-altl`; `jal … haen b-candidatelsh v-ratel` |
 | **`goen` / `hoen`** | *for trying / trial of* | *trying* | `z-pathl goen b-fixl`; `jal … hoen b-fixl v-deployl` |
 | **`guen` / `huen`** | *deprioritizing / trailing* | *deprioritizing* | `z-menul guen b-dessertl`; `jal … huen b-dessertl v-eatl` |
-
-**`guon` / `huon`** — reserved; **undefined** (parallel **`vuon`**).
 
 ### Contrasts
 
 | | Clarity | Gloss |
 |--|---------|--------|
 | refuse vs exclude | `gun b-meatol` vs `guan b-meatol` | *anti-meat* vs *without meat* |
+| exclude vs anything but | `guan b-nutl` vs `guon b-nutl` | *without nuts* vs *open to anything but nuts* |
 | sole vs open pick | `gon b-pathl` vs `gaon b-pathl` | *path-only* vs *path among options* |
 | prioritize vs try | `gen b-fixl` vs `goen b-fixl` | *fix-first* vs *try-the-fix* |
 | relation vs reviser | `z-teaml gan b-Samn` vs `z-teaml al z-Samn` | PP-like *team including Sam* vs slot-repair *team, including Sam* |
