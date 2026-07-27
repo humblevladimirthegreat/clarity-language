@@ -49,7 +49,7 @@ Close does **not** repeat PoS, TYPE, EDGE, or open fidelity. Fidelity and extent
 
 Opens, empties, atomics, anaphors, the escape **`xoxol`**, and closes are **not** [value](values.md) / [ability](special-vocabulary.md#ability) compounds (those have a **content root** before `x`).
 
-**Parser cue — span form:** after PoS, material before the first `x` is exactly one TYPE vowel (**a** / **e** / **o** / **u**), and after `x` exactly one EDGE vowel (**a** / **e** / **o** / **u**) + **-l** / **-m** / **-n** / **-r**. Longer material before `x` → ordinary compound.
+**Parser cue — span form:** after PoS, material before the first `x` is exactly one TYPE vowel (**a** / **e** / **o** / **u**), and after `x` exactly one EDGE vowel (**a** / **e** / **o** / **u**) + **-l** / **-m** / **-n** / **-r**. One vowel before `x` + **longer** root after → [role compound](special-vocabulary.md#role-compounds). Longer material before `x` → ordinary / value / ability compound. Full map: **[x-compounds.md](x-compounds.md)**.
 
 **Parser cue — close:** exact words **`xuxul`** / **`xuxum`** only.
 

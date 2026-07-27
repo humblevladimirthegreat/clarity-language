@@ -12,13 +12,13 @@ Ordinary content words under **`/h/`** (clause) and **`/w/`** (prior `/ɡ/`) are
 | Keep as non-value | Examples |
 |-------------------|----------|
 | Restrictor joins | `hal`, `hual`, `har`, `wal`, … — [restrictors](restrictors.md) |
-| Special vocabulary | ability / incapability; join-act verbs / join-relations (`han`…); plan / predict; emotion ACT / LOCUS; **COMMENT** (noting) — [special-vocabulary](special-vocabulary.md) |
+| Special vocabulary | ability / incapability; [role compounds](special-vocabulary.md#role-compounds) (`ax…` / `ex…` / `ox…`); join-act verbs / join-relations (`han`…); plan / predict; emotion ACT / LOCUS; **COMMENT** (noting) — [special-vocabulary](special-vocabulary.md) |
 | Evidentiality / mood | clause or adjective framing of *how you know* / claim strength |
 | Degree | *very*, *slightly*, … |
 | Time / place / manner / recipient adjuncts | ordinary adverb lexicon under `/h/` |
 | Number words under `/h/` | `h+…`, `h-…`, … — [numbers](numbers.md) |
 
-Parser cue: restrictor joins are PoS + join-vowel + **-l** / **-m** / **-r** (`hal`). PoS + join-vowel + **-n** under `/h/` → [join-relation](special-vocabulary.md#join-relations) (`han b-…`). **Need root** + `x…` → values (this page). **Other root** + **`xa` / `xu`** → [ability](special-vocabulary.md#ability). Closed **`ABIL`** is the hostless ability fallback. After PoS, a **single** vowel **a** / **e** / **o** / **u** then `x` then a **single** EDGE vowel + ending → [span form](quotations.md) (`daxal`, `daxan`, `daxar`, …); exact **`xuxul`** / **`xuxum`** → span close — not a value.
+Parser cue: restrictor joins are PoS + join-vowel + **-l** / **-m** / **-r** (`hal`). PoS + join-vowel + **-n** under `/h/` → [join-relation](special-vocabulary.md#join-relations) (`han b-…`). **Need root** + `x…` → values (this page). **Other root** + **`xa` / `xu`** → [ability](special-vocabulary.md#ability). Closed **`ABIL`** is the hostless ability fallback. After PoS, a **single** vowel **a** / **e** / **o** then `x` then a **longer** root + ending → [role compound](special-vocabulary.md#role-compounds) (not a value). After PoS, a **single** vowel **a** / **e** / **o** / **u** then `x` then a **single** EDGE vowel + ending → [span form](quotations.md) (`daxal`, `daxan`, `daxar`, …); exact **`xuxul`** / **`xuxum`** → span close — not a value. Full mid-word **`x`** map: **[x-compounds.md](x-compounds.md)**.
 
 | Prefix | Scope |
 |--------|--------|

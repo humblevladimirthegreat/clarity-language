@@ -1,4 +1,3 @@
--emotion vs spiritual need met
 
 Dictionary entries:
 -special pronouns

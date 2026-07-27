@@ -488,7 +488,7 @@ Under `/h/` and `/w/`, the join series marks **applicability circumstances** (no
 ## Reserved forms
 <a id="phrase-reserved-forms"></a>
 
-Under `/z/`, `/d/`, `/b/`, `/ɡ/`, `/w/`, and `/h/`, the join series plus an allowed **join** ending (`zal`, `zam`, `zan`, `zar`, … under `/z/` `/d/` `/b/` `/w/`; `gal`, `gam`, `gar`, … under `/ɡ/`; `hal`, `ham`, `har`, … under `/h/` — **-l** / **-m** / **-r** only on `/ɡ/` `/h/`) are **only** these phrase joins or [restrictors](restrictors.md) (under `/h/` / `/w/`: **core defined**, other **-l**/**-m**/**-r** spellings reserved but **undefined**) — not ordinary open-lexicon content with those vowel roots. **`/ɡ/`…**-n** and **`/h/`…**-n** (`gan`, `han`, `gen`, `hen`, …) are closed [join-relations](special-vocabulary.md#join-relations), not joins. No three-vowel stacks. Other roots under those prefixes are unchanged.
+Under `/z/`, `/d/`, `/b/`, `/ɡ/`, `/w/`, and `/h/`, the join series plus an allowed **join** ending (`zal`, `zam`, `zan`, `zar`, … under `/z/` `/d/` `/b/` `/w/`; `gal`, `gam`, `gar`, … under `/ɡ/`; `hal`, `ham`, `har`, … under `/h/` — **-l** / **-m** / **-r** only on `/ɡ/` `/h/`) are **only** these phrase joins or [restrictors](restrictors.md) (under `/h/` / `/w/`: **core defined**, other **-l** / **-m** / **-r** spellings reserved but **undefined**) — not ordinary open-lexicon content with those vowel roots. **`/ɡ/`…**-n** and **`/h/`…**-n** (`gan`, `han`, `gen`, `hen`, …) are closed [join-relations](special-vocabulary.md#join-relations), not joins. No three-vowel stacks. Other roots under those prefixes are unchanged.
 
 ---
 
