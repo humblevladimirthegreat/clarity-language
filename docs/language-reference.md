@@ -246,7 +246,7 @@ Ordinary **`/h/`** / **`/w/`** content defaults to **values** (needs): **topic**
 
 # Special vocabulary
 
-Closed non-need **ability** / **incapability**: primary compound **`HOST x {a\|u}`** with **changeability** endings (`v-singxun` = can’t sing, fixed); fallback closed **`ABIL x {a\|u}`** when hostless / clause-wide; **`xe`** / **`xo`** undefined. **[special-vocabulary.md](special-vocabulary.md)**.
+Closed non-need **ability** / **incapability**: primary compound **`HOST x {a\|u}`** with **changeability** endings (`v-singxun` = can’t sing, fixed); fallback closed **`ABIL x {a\|u}`** when hostless / clause-wide; **`xe`** / **`xo`** undefined. **Plan / predict**: closed mood roots **`PLAN`** / **`PREDICT`** under `/h/` — **not** `x`-compounds; predict stacks with ordinary evidentiality. **Emotion compose**: drop opaque emotion-for-judgment; stack ordinary [value](values.md) + closed **ACT** (high/med/low) + **LOCUS** (internal/external/circumstantial) — **not** a parallel `x`-system. **[special-vocabulary.md](special-vocabulary.md)**.
 
 # Phonology and Phonotactics
 

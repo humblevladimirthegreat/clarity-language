@@ -1,11 +1,88 @@
 # Special vocabulary
 <a id="special-vocabulary"></a>
 
-This page is the source of truth for **special morphology and closed roots** that are **not** [values](values.md) (needs) and **not** [restrictors](restrictors.md) (applicability joins). They reuse the value-compound **shape** (`… x {vowel} …`) where useful, but keep their own stance inventories.
+This page is the source of truth for **special morphology and closed roots** that are **not** [values](values.md) (needs) and **not** [restrictors](restrictors.md) (applicability joins). They reuse the value-compound **shape** (`… x {vowel} …`) where useful (ability), but keep their own stance inventories; some entries are closed mood roots with **no** `x`-addition (plan / predict, emotion activation / locus).
 
 Ordinary `/h/` / `/w/` content still defaults to values unless the root is in a clearer closed subcategory (restrictors, special vocabulary here, evidentiality/mood, degree, adjuncts, numbers) — see [values.md](values.md#default-reading-of-h-and-w).
 
 **Not here:** Claritish *worse than Average|…* benchmarks are NP comparees on comparative fences — [comparatives.md § Judgment benchmarks](comparatives.md#judgment-benchmarks).
+
+## Emotion compose
+<a id="emotion-compose"></a>
+
+Port of Claritish **Emotion decompose** (`_[hml][iec]` + value on the judged host): opaque emotion words (*anxious*, *resentful*, *proud*, …) smuggle **activation**, **locus**, **need**, and **met/unmet** into one label. When that word is doing **judgment or explanation** work, Clarity **drops the emotion label** and **composes** from pieces — it does **not** invent a parallel emotion `x`-system.
+
+| Piece | Claritish | Clarity |
+|-------|-----------|---------|
+| Situation / judged host | neutral host (`talk`, `draft`, …) | ordinary NP / clause content |
+| Need + met / unmet (+ changeability) | `+c` / `-ct` / … | ordinary [value](values.md) word on that host (`w-competxul`, `w-competxam`, …) |
+| Activation (arousal) | `h` / `m` / `l` | closed mood roots **HIGH** / **MED** / **LOW** under `/h/` (optional `/w/` on a preceding `/ɡ/`) |
+| Locus (where the charge is attributed) | `i` / `e` / `c` | closed mood roots **INTERNAL** / **EXTERNAL** / **CIRCUMSTANTIAL** under `/h/` (same `/w/` option) |
+
+**Recipe (judgment / explanation):** neutral description + **one value ascription** + **one ACT** + **one LOCUS**. Stack as free `/h/` / `/w/` units — do not mega-tag one host the way Claritish `_hc-ct` does.
+
+| Clarity (schematic) | Reading |
+|---------------------|---------|
+| `z-talkl w-competxul h-ACThighl h-LOCUScircuml` | *anxious about the talk* → talk costs competence (temporary); high arousal; charge on the situation |
+| `z-splitl w-relatxum h-ACThighl h-LOCUSexternl` | *resentful about the split* → unmet relatedness; high; charge on others |
+| `z-draftl w-competxam h-ACThighl h-LOCUSinternl` | *proud of the draft* → met competence (mental channel); high; charge internal |
+
+**Raw feeling:** contacting a sensation without judgment/explanation may leave it unlabeled (or use mindfulness noting later). Full compose is required when an emotion word would have done evaluative work — same nudge as neutral praise / criticism.
+
+**Not `x`-compounds:** activation and locus are **root choices** (three-way mood inventories), not `xa`/`xu` polarity and not endings on need or ability compounds. Do **not** compound ACT/LOCUS onto the content verb the way ability does.
+
+**Do not overload other tables:**
+
+| Dimension | Stays | Emotion locus / activation is *not* |
+|-----------|--------|--------------------------------------|
+| Need met / unmet / motive / ought | [values](values.md) `xa` / `xe` / `xo` / `xu` | a second need inventory |
+| Contact channel | `xa` endings | locus (how you savor ≠ where charge sits) |
+| Preference standing | `xe` endings | locus (motive source ≠ felt-charge attribution) |
+| Ordinary degree | *very* / *slightly* | activation (intensity of *arousal*, not scalar property degree) |
+| Mindfulness noting | first-person attitude verbs (*I fear*, *I hope*, …) | emotion-label compose (noting = sense modality; separate port) |
+
+### Out of scope (for now)
+
+- Lexicon phonetic forms of **ACT** / **LOCUS** roots (and whether MED shares a form with another soft default).
+- Whether ACT/LOCUS may bind as `/w/` on the judged `/ɡ/` vs only floating `/h/`.
+- Mindfulness noting inventory (sense channels) — separate special-vocabulary entry later.
+- Emotion lexicon retained only for non-judgmental sensation naming (if any).
+
+### Constraints
+
+- Emotion compose **reuses** [value](values.md) ascription; it is **not** a parallel tag system on the host.
+- **ACT** and **LOCUS** are mood roots in the non-value `/h/` / `/w/` subcategory — not needs, not ability, not restrictors.
+- Do **not** reuse mid-word **`x` + {a\|e\|o\|u}** for activation or locus.
+- Do **not** encode activation × locus × need in one word’s endings.
+- Opaque emotion words used for judgment / explanation are replaced by the compose recipe, not merely tagged.
+
+## Plan / predict
+<a id="plan-predict"></a>
+
+Port of Claritish **Plan or predict** (`plan_None|Vague|Detail|Contingency`, `predict_` + evidentiality): English future cues (*will*, *going to*, *tomorrow*, …) smuggle whether you mean **intention** or **forecast**. Clarity keeps that fork as **two closed mood roots**, not value-style **`x`-compounds**.
+
+| Claim | Prefer |
+|-------|--------|
+| Intention / commitment about what *you* will do | closed **`PLAN`** under `/h/` (optional `/w/` if scoped only to a preceding `/ɡ/`) |
+| Forecast about what will happen | closed **`PREDICT`** under `/h/` (same `/w/` option) |
+| How detailed the intention is | endings (or a tiny closed set) on **`PLAN`** — Claritish None / Vague / Detail / Contingency; **-l / -m / -n / -r** is the natural four-way fit once lexicon lands |
+| How you know the forecast | ordinary **evidentiality** `/h/` stacked with **`PREDICT`** — same inventory as other claims (`caused_`, *thinks*, …), not a predict-only compound series |
+
+**Not `x`-compounds:** plan vs predict is a **root choice** (speech-act type), not `xa`/`xu` polarity on a host. Ability compounds onto an activity (`v-singxun`); plan/predict **frame the clause** — content verbs stay bare. Do **not** map plan grain onto contact / preference standing / prescription force / changeability, and do **not** invent `xe`/`xo` (or any `x`+vowel) for future framing.
+
+Schematic (lexicon forms TBD): `h-PLANn … v-finishl` (*detail plan: I finish*) vs `h-PREDICTl` + evidential `/h/` … `v-rainl` (*forecast: it rains*).
+
+### Out of scope (for now)
+
+- Lexicon phonetic forms of **`PLAN`** / **`PREDICT`**.
+- Exact ending ↔ None / Vague / Detail / Contingency assignment on **`PLAN`**.
+- Full evidentiality root / ending inventory (shared mood system; predict only participates).
+
+### Constraints
+
+- **`PLAN`** and **`PREDICT`** are mood roots in the non-value `/h/` / `/w/` subcategory — not needs, not ability hosts, not restrictors.
+- Do **not** reuse mid-word **`x` + {a\|e\|o\|u}** for plan/predict.
+- Prefer floating `/h/`; do not compound plan/predict onto the content verb the way ability does.
 
 ## Ability
 <a id="ability"></a>

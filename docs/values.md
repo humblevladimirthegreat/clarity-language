@@ -2,7 +2,7 @@
 <a id="values"></a>
 <a id="value-ascription"></a>
 
-This page is the source of truth for **values** (needs): which psychological payoff is at issue, **how you relate** to that need (topic / met / unmet / motive / prescription), and — on compound endings — a stance-specific dimension (**contact channel**, **preference standing**, **prescription force**, or **changeability**). Port of Claritish value tags (`+a` / `-ct`, `my+c`, `should+r`, …) into native Clarity morphology. Restrictors: [restrictors.md](restrictors.md). Ability / incapability (not needs): [special-vocabulary.md](special-vocabulary.md). Revisers (slot repair, not values): [revisers.md](revisers.md). Ordinary reference-suffix senses: [reference-suffix.md](reference-suffix.md).
+This page is the source of truth for **values** (needs): which psychological payoff is at issue, **how you relate** to that need (topic / met / unmet / motive / prescription), and — on compound endings — a stance-specific dimension (**contact channel**, **preference standing**, **prescription force**, or **changeability**). Port of Claritish value tags (`+a` / `-ct`, `my+c`, `should+r`, …) into native Clarity morphology. Restrictors: [restrictors.md](restrictors.md). Ability / incapability, plan / predict, emotion compose (not needs): [special-vocabulary.md](special-vocabulary.md). Revisers (slot repair, not values): [revisers.md](revisers.md). Ordinary reference-suffix senses: [reference-suffix.md](reference-suffix.md).
 
 ## Default reading of `/h/` and `/w/`
 <a id="default-reading-of-h-and-w"></a>
@@ -12,7 +12,7 @@ Ordinary content words under **`/h/`** (clause) and **`/w/`** (prior `/ɡ/`) are
 | Keep as non-value | Examples |
 |-------------------|----------|
 | Restrictor joins | `hal`, `hual`, `har`, `wal`, … — [restrictors](restrictors.md) |
-| Special vocabulary | ability / incapability (host+`xu`/`xa`, or `ABIL`) — [special-vocabulary](special-vocabulary.md) |
+| Special vocabulary | ability / incapability; plan / predict; emotion ACT / LOCUS — [special-vocabulary](special-vocabulary.md) |
 | Evidentiality / mood | clause or adjective framing of *how you know* / claim strength |
 | Degree | *very*, *slightly*, … |
 | Time / place / manner / recipient adjuncts | ordinary adverb lexicon under `/h/` |
@@ -221,7 +221,7 @@ Elsewhere, values are optional — do not tax every clause.
 
 ## Out of scope (for now)
 
-- **Emotion decompose** (activation × locus × value) — later feature that should *reuse* this ascription, not a parallel tag system.
+- **Emotion compose** details (ACT / LOCUS lexicon) — recipe lives in [special-vocabulary.md § Emotion compose](special-vocabulary.md#emotion-compose); it *reuses* this ascription, not a parallel tag system.
 - **Whose-need** / **care direction** (thrive / guard) on prescription — optional later dimensions; force is the primary `xo` split.
 - **Listener / third-person possessives** — no forced value (reminder is for self-gratitude / self-ought / self-judgment).
 
