@@ -23,13 +23,14 @@ This repo is TypeScript + ANTLR tooling (`grammar/*.g4` → `src/generated/`). A
 | `docs/revisers.md` | Prefix-less **revisers** (**al** / **am** / **an** / **el** / … — *including* / *rather* / *instead* / *except*); linked from the language reference. |
 | `docs/restrictors.md` | **`/h/`** / **`/w/`** **restrictors** (**hal**, **hual**, **har**, … — applicability, not sibling *and*); linked from the language reference. |
 | `docs/values.md` | **Values** on ordinary **`/h/`** / **`/w/`** (default reading): need inventory; stances **topic** (bare) / **met `xa`** / **motive `xe`** / **prescription `xo`** / **unmet `xu`**; endings = **contact channel**, **preference standing**, **prescription force** (invite / endorse / commit / bound), or **changeability**; linked from the language reference. |
+| `docs/special-vocabulary.md` | Closed special roots under **`/h/`** / **`/w/`** (not needs, not restrictors): **ability** / **incapability** (`ABIL + xu` + changeability endings; optional **`xa`**); linked from the language reference. |
 | `TODO.md` | Planned major revision notes (PoS prefixes, word-final consonants, pronoun/number rules, phonology). Fold into the reference, `phonology.md`, and `pronouns.md` as work proceeds. |
 | `docs/claritish-rules.js` | English “Claritish” regex enforcers (value tags, evidentiality, mindfulness noting, etc.). **To be ported** into Clarity (lexicon/grammar), not kept as an English overlay forever. |
 | `grammar/*.g4` | Existing ANTLR parsers for tooling experiments. **Do not change for now.** They may lag the reference; do not treat them as design authority. |
 
 ## Claritish → Clarity
 
-`claritish-rules.js` defines English-side constraints that force explicit tagging (e.g. `my+c`, `caused_i`, `always_c`, emotion decompose). The long-term goal is that Clarity’s own words and morphology carry those distinctions natively so speakers don’t need English suffixes. Values: **[docs/values.md](docs/values.md)**.
+`claritish-rules.js` defines English-side constraints that force explicit tagging (e.g. `my+c`, `caused_i`, `always_c`, emotion decompose). The long-term goal is that Clarity’s own words and morphology carry those distinctions natively so speakers don’t need English suffixes. Values: **[docs/values.md](docs/values.md)**. Incapability: **[docs/special-vocabulary.md](docs/special-vocabulary.md#incapability)**.
 
 ## Tooling notes
 

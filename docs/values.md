@@ -2,21 +2,23 @@
 <a id="values"></a>
 <a id="value-ascription"></a>
 
-This page is the source of truth for **values** (needs): which psychological payoff is at issue, **how you relate** to that need (topic / met / unmet / motive / prescription), and — on compound endings — a stance-specific dimension (**contact channel**, **preference standing**, **prescription force**, or **changeability**). Port of Claritish value tags (`+a` / `-ct`, `my+c`, `should+r`, …) into native Clarity morphology. Restrictors: [restrictors.md](restrictors.md). Revisers (slot repair, not values): [revisers.md](revisers.md). Ordinary reference-suffix senses: [reference-suffix.md](reference-suffix.md).
+This page is the source of truth for **values** (needs): which psychological payoff is at issue, **how you relate** to that need (topic / met / unmet / motive / prescription), and — on compound endings — a stance-specific dimension (**contact channel**, **preference standing**, **prescription force**, or **changeability**). Port of Claritish value tags (`+a` / `-ct`, `my+c`, `should+r`, …) into native Clarity morphology. Restrictors: [restrictors.md](restrictors.md). Ability / incapability (not needs): [special-vocabulary.md](special-vocabulary.md). Revisers (slot repair, not values): [revisers.md](revisers.md). Ordinary reference-suffix senses: [reference-suffix.md](reference-suffix.md).
 
 ## Default reading of `/h/` and `/w/`
+<a id="default-reading-of-h-and-w"></a>
 
 Ordinary content words under **`/h/`** (clause) and **`/w/`** (prior `/ɡ/`) are **values**, unless the form is already in a clearer closed subcategory:
 
 | Keep as non-value | Examples |
 |-------------------|----------|
 | Restrictor joins | `hal`, `hual`, `har`, `wal`, … — [restrictors](restrictors.md) |
+| Special vocabulary | ability / incapability — [special-vocabulary](special-vocabulary.md) |
 | Evidentiality / mood | clause or adjective framing of *how you know* / claim strength |
 | Degree | *very*, *slightly*, … |
 | Time / place / manner / recipient adjuncts | ordinary adverb lexicon under `/h/` |
 | Number words under `/h/` | `h+…`, `h-…`, … — [numbers](numbers.md) |
 
-Parser cue: restrictor joins are PoS + join-vowel + ending only (`hal`). Value words have a **need root** (and usually an **`x`-addition**).
+Parser cue: restrictor joins are PoS + join-vowel + ending only (`hal`). Special vocabulary uses closed non-need roots (e.g. ability). Value words have a **need root** (and usually an **`x`-addition**).
 
 | Prefix | Scope |
 |--------|--------|
@@ -220,9 +222,10 @@ Elsewhere, values are optional — do not tax every clause.
 ## Out of scope (for now)
 
 - **Emotion decompose** (activation × locus × value) — later feature that should *reuse* this ascription, not a parallel tag system.
-- **Incapability** changeability (`can't_t`, …) — same ending senses as **`xu`** may apply to ability denials later; not defined here.
 - **Whose-need** / **care direction** (thrive / guard) on prescription — optional later dimensions; force is the primary `xo` split.
 - **Listener / third-person possessives** — no forced value (reminder is for self-gratitude / self-ought / self-judgment).
+
+**Incapability** (Claritish `can't_t`, …) lives under the closed **ability** root — [special-vocabulary.md](special-vocabulary.md#incapability) — not on need compounds.
 
 ## Constraints
 
