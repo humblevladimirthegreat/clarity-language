@@ -89,9 +89,11 @@ Subject (/z/) \- the thing doing the action
 Direct Object (/d/) \- the thing on the receiving end of the action  
 Verb (/v/) \- the action being done. [Ability / incapability](special-vocabulary.md#ability) compounds onto the verb root when that is the denied activity (`v-singxun` = can’t sing, fixed); hostless *can’t* uses floating **`h-ABIL…`**.
 
+There is **no** general *to-be* verb. [Classification](predication.md#classification) (*Sam is a teacher*) and absolute property claims (*Sam is big*) are **zero-copula**: subject + predicative `/ɡ/`. [Identity](predication.md#identity) (*Clark is Superman*) uses closed complex **`g-SAME`** + `/b/`. Full rules: **[predication.md](predication.md)**.
+
 ## Adjectives (`/ɡ/`)
 
-`/ɡ/` marks **adjectives** (and noun-level relational phrases).
+`/ɡ/` marks **adjectives** (and noun-level relational phrases). Predicative use (property or kind ascription without `/v/`) is [zero-copula](predication.md#zero-copula).
 
 **Default (right-bound):** the adjective goes **after** the word it modifies (`z-dogl g-bigl` = *a big dog*). Attachment is to the **previous** eligible host.
 
@@ -227,6 +229,10 @@ Numeral grammar (digit roots, [digitless / zero-group forms](numbers.md#zero-dig
 # Comparatives, superlatives, and equatives
 
 Scalar comparison (ranked **`e` / `oe` / `ue`** *more / …-est*, **`ae`** *as … as*, distributive **`a`** + SHARED `/ɡ/`, measured differentials, [judgment benchmarks](comparatives.md#judgment-benchmarks) *worse than Average|…* via **`ue`** + closed **-n** comparees): **[comparatives.md](comparatives.md)**. Measure NP shape (unit + amount): **[numbers.md § Measure phrases](numbers.md#measure-phrases)**.
+
+# Predication (classification and identity)
+
+Zero-copula **classification** / property ascription (`jal z-Samn g-teacherl`) and closed **`SAME`** **identity** (`jal z-Clarkn g-SAMEl b-Superman`): **[predication.md](predication.md)**. Not scalar equative `ae`; no general *to-be* `/v/`.
 
 # Phrase-level, VP-level, and clause-level joins
 

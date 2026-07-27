@@ -2,7 +2,7 @@
 
 This page is the source of truth for **scalar comparison**: *more … than*, *the …-est*, *as … as*, pointers for measured differentials (*two inches taller*), and **judgment benchmarks** (*worse than Average|…* — Claritish **Worse than**). Fence join vowels, endings, and SHARED placement are defined in [coordination.md](coordination.md); this page says when those forms mean comparison rather than ordinary ranking or bundle description.
 
-PoS prefixes: [language-reference.md](language-reference.md). Scale adjectives are ordinary `/ɡ/` (lexicon-marked as **gradable / scalar**). Absolute (non-comparative) use stays unfenced: `z-Samn g-bigl` = *Sam is big*.
+PoS prefixes: [language-reference.md](language-reference.md). Scale adjectives are ordinary `/ɡ/` (lexicon-marked as **gradable / scalar**). Absolute (non-comparative) use stays unfenced: `z-Samn g-bigl` = *Sam is big* ([zero-copula](predication.md#zero-copula)). Kind / role classification and referent identity: **[predication.md](predication.md)** — not this page’s equative `ae`.
 
 ## Overview
 
@@ -54,7 +54,7 @@ Revision **`el`** (*or rather*) is unrelated. Do **not** encode *than* primarily
 
 Same under `/d/` / `/b/` when the ranked group fills that slot. Under `/ɡ/`, SHARED `/w/` on a ranked AP fence remains shared *degree* over ranked properties (`gel w-veryl g-happyl g-proudl`), not a noun-scale comparative — noun-scale comparatives use an NP-slot ranked fence (`/z/` `/d/` `/b/`) with SHARED `/ɡ/`.
 
-Assert the ranking as clause content with the same predicative pattern as plain adjectives (zero-copula / light verb as elsewhere): `jal zel g-bigl z-Samn z-Lean` → *Sam is bigger than Lea.* When discourse needs the comparee alone as subject of another verb, keep that subject ordinary and place the comparative claim in another slot or sentence — do not force the whole ladder to be the only subject.
+Assert the ranking as clause content with the same [zero-copula](predication.md#zero-copula) predicative pattern as plain adjectives: `jal zel g-bigl z-Samn z-Lean` → *Sam is bigger than Lea.* When discourse needs the comparee alone as subject of another verb, keep that subject ordinary and place the comparative claim in another slot or sentence — do not force the whole ladder to be the only subject.
 
 **Number ranges** (SHARED **continuum** `/ɡ/` + two number endpoints — not bare `zel z+3l z+5l`, which stays preference) and **numeric thresholds** (focus ranked **`zel z+5l`** = *\<5*, **`zuel z+5l`** = *\>5*): **[numbers.md § Ranges](numbers.md#ranges)** — not expanded here.
 
@@ -174,5 +174,6 @@ Six fixed senses (lexicon phonetics TBD; schematic labels below). Always **-n** 
 - Fence morphology, focus/bare tables, SHARED placement: [coordination.md](coordination.md)
 - Number ranges / thresholds: [numbers.md § Ranges](numbers.md#ranges)
 - Measure NPs (units + amounts): [numbers.md § Measure phrases](numbers.md#measure-phrases)
+- Classification / identity (not scalar equative): [predication.md](predication.md)
 - Ability / incapability (different job): [special-vocabulary.md](special-vocabulary.md)
 - Values for unmet criticism without a ladder: [values.md](values.md)
