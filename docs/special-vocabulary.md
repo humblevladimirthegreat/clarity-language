@@ -279,7 +279,7 @@ PoS + HOST + x + {a|u} + {-l|-m|-n|-r}
 | **`xa` / `xu`** | Capable / incapable |
 | **Ending** | [Changeability](#ability-changeability) only |
 
-**Parser cue:** root ∈ [six needs](values.md#need-inventory) + `x…` → **value** tables. Other roots + **`xa` / `xu`** → **ability**. **`xe` / `xo`** on non-need hosts stay **undefined** (do not borrow motive / prescription). After PoS, single ROLE vowel **a** / **u** / **o** then `x` then a **longer** root → [role compound](#role-compounds), not ability. After PoS, single TYPE vowel **a** / **e** / **o** / **u** then `x` then a single EDGE vowel + ending → [span form](quotations.md) (`daxal`, `daxan`, `daxar`, …); **`xuxul`** / **`xuxum`** → span close — not ability. Full map: **[x-compounds.md](x-compounds.md)**.
+**Parser cue:** root ∈ [six needs](values.md#need-inventory) + `x…` → **value** tables. Other roots + **`xa` / `xu`** → **ability**. **`xe` / `xo`** on non-need hosts stay **undefined** (do not borrow motive / prescription). After PoS, single ROLE vowel **a** / **u** / **o** then `x` then a **longer** root → [role compound](#role-compounds), not ability. After PoS, single TYPE vowel **a** / **e** / **o** / **u** then `x` then a single EDGE vowel + ending → [span form](quotations.md) (`daxal`, `daxol`, `daxan`, `daxar`, …); **`xuxul`** / **`xuxum`** → span close — not ability. Full map: **[x-compounds.md](x-compounds.md)**.
 
 **Ship first:** **`xu`** (incapability). **`xa`** when you want tagged *can*.
 

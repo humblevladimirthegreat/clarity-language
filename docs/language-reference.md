@@ -191,7 +191,7 @@ There is **no** prefix-less **join** series. **`/z/` `/d/` `/b/` `/ɡ/` `/v/` `/
 
 ## Discourse markers (`/x/`)
 
-Marked with x /ʒ/. Used for **discourse glue** that is not same-slot phrase/VP joins and not [discourse revisers](revisers.md#discourse-revisers): sentence linkers (*however*, *therefore*, *meanwhile*, *but*, standalone *next*, …), [numbered enumeration](numbers.md#number-as-discourse-marker-by-marker) (including *Starting with* = **`x#e-l`**, *Finally* = **`x#el`**), and related fences. (*Additionally* / *in other words* / claim-level *instead* / *except* use prefix-less revisers before `/j/`.) **Span fences** ([quotations.md](quotations.md)) **open** with any PoS for the slot they fill (`daxal` … = object quote; `daxan` = atomic; `daxar` = *that* quote; `hexal` … = aside; `duxal` … = opaque; `xaxal` … = discourse-only quote); **escape** with **`xoxol`** (next token raw); **close** with **`xuxul`** / **`xuxum`** under this prefix. The dictionary lists linker roots. The same sound **x** also joins roots inside compound words and inside span-fence markers (see [Phonotactics](phonology.md#phonotactics)); it is not used as an ordinary root consonant, so mid-word **x** always means “next root,” and word-initial **x** always means discourse-marker PoS.
+Marked with x /ʒ/. Used for **discourse glue** that is not same-slot phrase/VP joins and not [discourse revisers](revisers.md#discourse-revisers): sentence linkers (*however*, *therefore*, *meanwhile*, *but*, standalone *next*, …), [numbered enumeration](numbers.md#number-as-discourse-marker-by-marker) (including *Starting with* = **`x#e-l`**, *Finally* = **`x#el`**), and related fences. (*Additionally* / *in other words* / claim-level *instead* / *except* use prefix-less revisers before `/j/`.) **Span fences** ([quotations.md](quotations.md)) **open** with any PoS for the slot they fill (`daxal` … = object cite; `daxol` = atomic; `daxan` = proper; `daxar` = *that* cite; `hexal` … = aside; `duxal` … = opaque; `xaxal` … = discourse-only cite); **close** with **`xuxul`** / **`xuxum`** under this prefix. The dictionary lists linker roots. The same sound **x** also joins roots inside compound words and inside span-fence markers (see [Phonotactics](phonology.md#phonotactics)); it is not used as an ordinary root consonant, so mid-word **x** always means “next root,” and word-initial **x** always means discourse-marker PoS.
 
 Phrase-level *and* / *or* / *none of* / *and/or* / ranked / invert joins are **not** general `/x/` linkers — they use `/z/` `/d/` `/b/` `/ɡ/` + the join vowels + ending (`zam`, `gam`, `zar`, `zor`, `zer`, `zur`, `zel`, `zael`, `zoel`, `zual`, `zuol`, `zuel`, …) with a **fence** (left preferred; right close allowed — [coordination.md](coordination.md)). **`/h/`** / **`/w/`** use those same forms as [restrictors](restrictors.md) (`hal` / `wal` / …). VP-level uses `/v/` (`vam`, `var`, `vel`, `vael`, `voel`, `vual`, `vuol`, `vuel`, …) — same fence; **-r** = unspecified action (*do something*). Clause-level forms **are** `/x/` + the same vowels + ending (`xal`, `xar`, `xel`, `xael`, `xoel`, `xual`, `xuol`, `xuel`, …) — see [coordination.md](coordination.md#clause-level-coordination).
 
@@ -214,7 +214,7 @@ The next-clause pronoun takes whatever PoS prefix the slot needs:
 
 # Reference Suffix
 
-Reference suffix grammar (**-l** / **-m** / **-n** / **-r**) lives in **[reference-suffix.md](reference-suffix.md)**. Compact multipart proper names (given+family, *New York*) are mid-word **`x`-compounds** with one ending — [phrasal proper names](reference-suffix.md#phrasal-proper-names) — not adjacent bare same-PoS **-n** words. Long / mixed-PoS work titles stay [mention](quotations.md) spans.
+Reference suffix grammar (**-l** / **-m** / **-n** / **-r**) lives in **[reference-suffix.md](reference-suffix.md)**. Compact multipart proper names (given+family, *New York*) are mid-word **`x`-compounds** with one ending — [phrasal proper names](reference-suffix.md#phrasal-proper-names) — not adjacent bare same-PoS **-n** words. Long / mixed-PoS work titles prefer [cite](quotations.md) spans (often proper **`@`** / **-n**); *the title/saying X* as a named unit uses [mention](quotations.md) **-n**.
 
 # Plurality
 
@@ -244,9 +244,9 @@ Phrase-level **zam** / **gam** / …, VP **vam** / **var** / … (joins **-l** /
 
 Interrogative forces (**jol** / **jom**), yes/no vs fill-ask, multi-gap **fill-all**, and focus/bare under question: **[questions.md](questions.md)**.
 
-# Quotations, mentions, and asides
+# Citations, mentions, and asides
 
-Span fences: **open** `{PoS}{TYPE}x{EDGE}{ENDING}` (writing = PoS + `[…]` / `{…}` / `(…)` / `<…>` with **`~`** = paraphrase; TYPE **a** quote / **e** aside / **o** mention / **u** opaque; EDGE **a** multi / **e** clause-scoped / **u** empty; escape **`xoxol`** (EDGE **o**); **-l** exact / **-m** paraphrase / **-n** atomic / **-r** span anaphor (*that* quote); e.g. `daxal` / `daxan` / `daxar` / `d[…]` / `d[hi]` / `d[·]`); **close** **`xuxul`** (pop one) / **`xuxum`** (pop all): **[quotations.md](quotations.md)**.
+Span fences: **open** `{PoS}{TYPE}x{EDGE}{ENDING}` (writing = PoS + optional **`@`** / **`~`** after PoS + `[…]` / `{…}` / `(…)` / `<…>`; **`d@[…]`** = proper, **`d~[…]`** = paraphrase; hedged proper `@~` spelled **`d@[…]`** with uncertain tone; TYPE **a** cite / **e** aside / **o** mention / **u** opaque; EDGE **a** multi / **e** clause-scoped / **o** atomic / **u** empty; **-l** exact / **-m** paraphrase / **-n** proper / **-r** span anaphor (*that* cite); e.g. `daxal` / `daxol` / `daxan` / `daxar` / `d[…]` / `d[hi]` / `d@[…]` / `d[·]`); **close** **`xuxul`** (pop one) / **`xuxum`** (pop all): **[quotations.md](quotations.md)**.
 
 # Values
 
