@@ -6,30 +6,41 @@
 
 Prefixed fence **joins**: [coordination.md](coordination.md). Circumstance **restrictors** (`/h/` `/w/`): [restrictors.md](restrictors.md).
 
-Prefix-less vowel + **-l** / **-m** / **-n** forms are **revisers** inside one clause. Each `REV` pairs a fixed left side **A** with one right-hand side. They are **not** joins: they do not take **-r**, and they do not join full sentences. An ending is **required**: **-l** / **-m** mark **completeness of that right-hand side**; **-n** marks a **named / conventional** revision (same mnemonic as phrase-level join **-n**, not clause soft **-n**).
+Prefix-less vowel + **-l** / **-m** / **-n** forms are **revisers**. An ending is **required**: unmarked **a** / **e** / **o** / **u** are not legal. They are **not** joins: they do not take **-r**, and they are not the prefixed join series.
+
+Two placements, one form set:
+
+| Placement | Cue | Job |
+|-----------|-----|-----|
+| **In-clause** | same-slot `A REV B` (and parallel chains) | slot repair — *including* / *rather* / *instead* / *except* |
+| **Discourse** | `REV` immediately before the new sentence’s [clause force](language-reference.md#clause-force) `/j/` | claim-to-claim glue — *Finally* / *in other words* / *instead* / *except* |
+
+Do **not** key off mixed PoS mid-clause: `z-… ol d-…` stays **illegal**. Adversative *but* / *however*, *therefore*, *meanwhile*, and standalone *next* stay other `/x/` roots ([language-reference.md](language-reference.md#discourse-markers-x)). Narrative *and then* between full sentences is clause **`xan`**, not this series.
 
 ## Meanings (vowel)
 
-| Vowel | Gloss | `A REV B` reading |
-|-------|--------|-------------------|
-| **a** | *including* | A, including B (B is a highlighted member / part of A) |
-| **e** | *rather* | A, or rather B (soft correction; B outranks A; A need not be fully denied) |
-| **o** | *instead* | not A, but B (exclusive replacement) |
-| **u** | *except* / *but not* | A except B / A but not B (subtract B from the A frame) |
+| Vowel | In-clause `A REV B` | Discourse (before `/j/`) |
+|-------|---------------------|---------------------------|
+| **a** | *including* — A, including B (B is a highlighted member / part of A) | ***Finally*** — this sentence is a closing / coda point relative to prior discourse |
+| **e** | *rather* — A, or rather B (soft correction; B outranks A; A need not be fully denied) | ***in other words*** / *rather* — this sentence rephrases or soft-corrects the prior claim |
+| **o** | *instead* — not A, but B (exclusive replacement) | ***instead*** — this sentence replaces the prior claim |
+| **u** | *except* / *but not* — A except B / A but not B (subtract B from the A frame) | ***except*** — this sentence stands as an exception to the prior frame (not adversative *but* / *however*) |
 
-Mnemonics track the join series loosely: **a** additive membership, **e** directional soft rank, **o** exclusive swap, **u** subtractive denial (cf. invert **ua** / **uo** and plain **u** [negation](coordination.md#negation-u)) — but the job is **revision of a slot**, not a set/rank join fence. Prefixed **`zul` / `zum`** (*not X* / bare *no*) and **`zual` / `zuol`** (*everything but* / *anything but* a fence list) are **not** reviser **`ul` / `um`** (*A except B*).
+Mnemonics track the join series loosely: **a** additive membership (discourse = additive coda), **e** directional soft rank, **o** exclusive swap, **u** subtractive denial (cf. invert **ua** / **uo** and plain **u** [negation](coordination.md#negation-u)) — in-clause the job is **revision of a slot**; discourse the job is **how this sentence relates to prior talk**. Prefixed **`zul` / `zum`** (*not X* / bare *no*) and **`zual` / `zuol`** (*everything but* / *anything but* a fence list) are **not** reviser **`ul` / `um`**.
 
 ## Endings — required
 
-Every revision word **must** take **-l**, **-m**, or **-n**; unmarked **a** / **e** / **o** / **u** are not legal. **-l** / **-m** answer: *is this right-hand side the full story of this include / except / replace / rephrase?* — not whether A is complete. **-n** is an alternative to **-l** / **-m**, not a third completeness tier and not stackable with them on the same particle.
+Every reviser word **must** take **-l**, **-m**, or **-n**. **-l** / **-m** mark **closed** vs **open** completeness of the right-hand side (in-clause) or of this discourse move (discourse). **-n** marks a **named / conventional** frame — same mnemonic as phrase-level join **-n**, not clause soft **-n**.
 
-| Ending | Form | Sense |
-|--------|------|--------|
-| **-l** | `al` / `el` / `ol` / `ul` | **Closed** — that right-hand side is exhaustive for this revision step: including *only* these · except *only* these · B fully replaces A · B is the precise reading. |
-| **-m** | `am` / `em` / `om` / `um` | **Open** — that right-hand side is non-exhaustive: including B *among others* · except B *(and maybe more)* · B is *a* replacement · B is *a* better wording. |
-| **-n** | `an` / `en` / `on` / `un` | **Named / conventional** — A (and/or this A–side revision) is invoked as an established titled, formulaic, or canonical frame (*the primary colors, including red*; *RGB except blue*; a stock *tea→coffee* swap; a conventional *happy, or rather content* rephrase). Completeness is whatever that designation already fixes. |
+| Ending | Form | In-clause | Discourse |
+|--------|------|-----------|-----------|
+| **-l** | `al` / `el` / `ol` / `ul` | Right-hand side exhaustive for this step | Committed move (*Finally,* / *Instead,* / …) |
+| **-m** | `am` / `em` / `om` / `um` | Right-hand side non-exhaustive | Soft / non-exhaustive move |
+| **-n** | `an` / `en` / `on` / `un` | Named / conventional A–side frame | Formulaic / stock segue (*Finally, …* as ritual close; stock *Instead, …*; titled paraphrase frame) |
 
-Same mnemonic as phrase-level [named **-n**](coordination.md#named--conventional-ending-phrase-level-all-join-vowels) (on `/z/` `/d/` `/b/` `/w/`) and content-word [proper name **-n**](reference-suffix.md#proper-name--n): definite by established label. **Not** clause soft **-n** (*and then…* **`xan`** / tentative reconstruction). **Not** [join-relations](special-vocabulary.md#join-relations) (`gan` / `han` / … — PP-like unary `/b/`). No **-r** (multi-side revision uses [parallel chains](#revision-chains-parallel-on-a), not a fence particle). When unsure between closed and open, prefer **-m**; use **-n** when you are naming a conventional frame rather than composing an inventory.
+Same mnemonic as phrase-level [named **-n**](coordination.md#named--conventional-ending-phrase-level-all-join-vowels) (on `/z/` `/d/` `/b/` `/w/`) and content-word [proper name **-n**](reference-suffix.md#proper-name--n). **Not** clause soft **-n** (*and then…* **`xan`**). **Not** [join-relations](special-vocabulary.md#join-relations). No **-r**. When unsure between closed and open, prefer **-m**; use **-n** when naming a conventional frame rather than composing an inventory.
+
+### In-clause ending grid
 
 | | **-l** | **-m** | **-n** |
 |--|--------|--------|--------|
@@ -38,7 +49,19 @@ Same mnemonic as phrase-level [named **-n**](coordination.md#named--conventional
 | **o** (*instead*) | `ol` — B fully replaces A | `om` — B is a replacement (not sworn unique) | `on` — stock / conventional swap |
 | **u** (*except*) | `ul` — except only B | `um` — except B (and maybe more) | `un` — except B from a named/conventional A |
 
-## Shape and scope
+### Discourse ending grid
+
+| | **-l** | **-m** | **-n** |
+|--|--------|--------|--------|
+| **a** (*Finally*) | `al` — committed coda | `am` — soft / among wrap-ups | `an` — ritual / titled *Finally* |
+| **e** (*in other words*) | `el` — precise rephrase of prior | `em` — softer rewording | `en` — stock paraphrase segue |
+| **o** (*instead*) | `ol` — this claim fully replaces prior | `om` — a replacement claim | `on` — stock *Instead,* |
+| **u** (*except*) | `ul` — sole exception to prior frame | `um` — exception (maybe among others) | `un` — named / conventional exception frame |
+
+---
+
+# In-clause revision
+<a id="in-clause-shape"></a>
 
 ```
 A REV B
@@ -47,9 +70,9 @@ A REV₁ B REV₂ C ( REVᵢ SIDE )*
 
 **REV** is a prefix-less vowel + **-l**, **-m**, or **-n** (`ol`, `om`, `on`, `ul`, …) — never the bare vowel alone.
 
-- **In-clause only** — A and every right-hand side sit in the **same clause**. Do not use revision to link full sentences or to revise a prior sentence’s claim; that stays other `/x/` discourse roots.
+- **Same clause** — A and every right-hand side sit in the **same clause**.
 - **Same slot** — A and every right-hand side match in role: all subject NPs (`/z/`), all objects (`/d/`), all `/b/` arguments, all `/ɡ/` APs (plus local material), all `/w/` or all `/h/` units, or all VPs (verb ± that verb’s `/d/`). Mixed slots are illegal (`z-… ol d-…`).
-- **Fixed A, one or more right-hand sides** — the first side is **A**; each **REV** introduces the next right-hand side. No focus “instead of what was just said”; repeat material or use a pronoun for A, or use a later `/x/` form for cross-sentence repair. No left-fence shared-modifier slot on the particle; no **-r**.
+- **Fixed A, one or more right-hand sides** — the first side is **A**; each **REV** introduces the next right-hand side. No left-fence shared-modifier slot on the particle; no **-r**. Cross-sentence repair without a discourse reviser before `/j/` still uses other `/x/` roots when needed.
 - **Inside a coordinated list** — allowed **inside** a conjunct as local repair, not as a substitute for the join (`zam` / `vam` / …). **Binding:** a revision chain starting at A consumes following same-slot sides paired by **REV** particles, tighter than list absorb — so `zam z-dogl ol z-catl z-birdl` = *(dog instead of cat) and bird*, and `zam z-teaml am z-Samn ul z-Lean z-birdl` = *(team including Sam, except Lea) and bird*.
 - **Inside a [number range](numbers.md#ranges)** — **`ul`** after the low endpoint marks an exclusive **high** bound (`zal g-spanl z+3l ul z+5l` = *[3, 5)*; SHARED continuum required). Details in numbers.md.
 
@@ -70,7 +93,7 @@ Not the nested English parse *including (B except C)*. For that, put the inner r
 
 Same-vowel repeats are just the parallel rule with identical particles (`A am B am C` = multi-include under A). There is **no** fence **-r** on revisers.
 
-## Examples (schematic)
+## In-clause examples (schematic)
 
 - `z-animalsh am z-dogl` — *animals, including a dog among others* (open)
 - `z-animalsh am z-dogl am z-catl` — *animals, including a dog and a cat among others* (parallel multi-include)
@@ -92,12 +115,45 @@ Same-vowel repeats are just the parallel rule with identical particles (`A am B 
 - `v-runl om v-walkl` — *ran, with walk as a replacement* (VP slot, open)
 - `zam z-dogl ol z-catl z-birdl` — *(dog fully instead of cat) and bird* — closed revision inside the first conjunct
 
+---
+
+# Discourse revision (sentence glue)
+<a id="discourse-revisers"></a>
+<a id="discourse-glue"></a>
+
+When a prefix-less **`al` / `am` / `an` / `el` / `em` / `en` / `ol` / `om` / `on` / `ul` / `um` / `un`** sits in the [left-edge cluster](language-reference.md#left-edge-order-and-sentence-boundaries) **immediately before clause force**, it is **discourse glue**, not in-clause slot repair.
+
+```
+(vocative)* (interjection)* REV force BODY
+```
+
+- **Prior talk = A** — the preceding sentence (or prior discourse context if this opens a stretch). Not a same-slot phrase.
+- **This sentence = B** — the clause under that force.
+- **One REV** per sentence opener (no parallel discourse chains on one force). In-clause chains stay inside the body.
+- **Not** a clause join fence — no SHARED slot, no multi-SENT list under one particle; for sequenced *and then*, use **`xan`**.
+- **Not** mid-body: after force, the same spellings are only in-clause revisers (or illegal if mixed-slot).
+
+## Discourse examples (schematic)
+
+- `al jal …` — *Finally, …* (committed coda)
+- `am jal …` — soft *finally* / among wrap-up points
+- `an jal …` — ritual / titled *Finally, …*
+- `el jal …` — *In other words, …* (precise rephrase of prior)
+- `em jal …` — softer *rather* / rewording
+- `ol jal …` — *Instead, …* (this claim fully replaces prior)
+- `om jal …` — *instead* as a replacement claim
+- `ul jal …` — *Except, …* (sole exception to prior frame)
+- `jSamn al jal …` — vocative, then *Finally,* then statement force
+
+---
+
 ## Constraints
 
 - **Not** a list join — use prefixed coordination for *and* / *or* / negation (*not* / *none of*) / *and/or* / rank join.
-- **Not** sentence-level *instead* / *except* / *but* — those remain other `/x/` linkers when claims (not slot-mates) are related.
-- **Not** mixed-PoS, not cross-clause, not focus; ending **-l**, **-m**, or **-n** required; no **-r** / plural **-sh** on the particle; no bare **a** / **e** / **o** / **u**; **-n** is named/conventional only (not soft packaging). Chains are **parallel on A**, not nested `A REV (B REV C)`.
+- **Not** adversative *but* / *however*, *therefore*, *meanwhile*, or standalone *next* — those remain other `/x/` linkers.
+- **Not** mixed-PoS in-clause; ending **-l**, **-m**, or **-n** required; no **-r** / plural **-sh** on the particle; no bare **a** / **e** / **o** / **u**; **-n** is named/conventional only (not soft packaging). In-clause chains are **parallel on A**, not nested `A REV (B REV C)`.
+- Discourse cue is **REV before force**, not mismatched slots mid-clause.
 
 ## Reserved forms
 
-Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** are **only** these revisers. Prefixed + ending forms of the same vowels (`zal`, `zam`, `val`, …) remain [joins](coordination.md#join-series-ending-shared) only. Whole-word **a** / **e** / **o** / **u** are not reviser forms and not legal words.
+Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** are **only** these revisers (in-clause or discourse by placement). Prefixed + ending forms of the same vowels (`zal`, `zam`, `val`, …) remain [joins](coordination.md#join-series-ending-shared) only. Whole-word **a** / **e** / **o** / **u** are not reviser forms and not legal words.
