@@ -12,6 +12,9 @@ I chose vowels that aren't fully open or fully closed so you don't have to do [v
 
 e /e̞/ \- o /o̞/ \- u /ɶ/ \- a /ɑ/  (roundedness is non-contrastive)
 
+Note that stacked vowels are pronounced as separate syllables:
+juon = ju'on
+
 ### Consonants at beginning of syllables
 
 The language has no distinction between voiced/unvoiced, but the voiced version is preferred because you can sustain notes across letters (voiceless requires briefly stopping the airflow). You can still use the unvoiced for stylistic reasons.

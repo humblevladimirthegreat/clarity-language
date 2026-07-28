@@ -83,6 +83,19 @@ Closed **`/j/`** answer particles — **interjections**, not clause force. Shape
 
 Bare utterance is the default answer (`jael`, `juel`, …). The same particle may sit in the left-edge interjection slot before a restating force (`jael jal …`).
 
+<a id="confirming-a-negative"></a>
+
+**Confirming a negative.** **`jael`** / **`juel`** answer whether the **proposition under question** matches reality (including when that proposition is already negated). They are **not** English-style *agree with the speaker’s wording*. After a negative ask, **`jael`** confirms the denial; **`juel`** rejects it (the positive holds).
+
+| Ask | Answer | Means |
+|-----|--------|--------|
+| `jol … vul v-runl` (*Didn’t run?*) | **`jael`** | denial matches → *true, they didn’t* |
+| same | **`juel`** | denial is false → *false — they did run* |
+| `jol … zul z-Samn` (*Not Sam?*) | **`jael`** | *true, not Sam* |
+| same | **`juel`** | *false — it is Sam* |
+
+When clarity matters, restate: `jael jal vul v-runl` vs `juel jal v-runl`. Offer particles (**`jaol`** / **`juol`**, …) answer *take this?*, not truth-match — do not use them to confirm a negative claim.
+
 **Contrast:** body bare denial is plain **u** (`xul` / `vul` / `zul` — [negation](coordination.md#negation-u)), a clause/slot join, not an answer particle. Prefer **`juel`** / **`juol`** / **`jual`** (and soft twins) when answering a yes/no ask; prefer **`xul`** when denying inside or as a bare clausal frame. **`jul`** / **`jum`** remain **prohibition** force (*don’t…*), not polar *no* / *false*.
 
 ### Fill-ask
