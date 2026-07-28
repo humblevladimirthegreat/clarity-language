@@ -13,7 +13,7 @@ Two placements, one form set:
 | Placement | Cue | Job |
 |-----------|-----|-----|
 | **In-clause** | same-slot `A REV B` (and parallel chains) | slot repair — *including* / *rather* / *instead* / *except* |
-| **Discourse** | `REV` immediately before the new sentence’s [clause force](language-reference.md#clause-force) `/j/` | claim-to-claim glue — *Finally* / *in other words* / *instead* / *except* |
+| **Discourse** | `REV` immediately before the new sentence’s [clause force](language-reference.md#clause-force) `/j/` | claim-to-claim glue — *additionally* / *in other words* / *instead* / *except* |
 
 Do **not** key off mixed PoS mid-clause: `z-… ol d-…` stays **illegal**. Adversative *but* / *however*, *therefore*, *meanwhile*, and standalone *next* stay other `/x/` roots ([language-reference.md](language-reference.md#discourse-markers-x)). Narrative *and then* between full sentences is clause **`xan`**, not this series.
 
@@ -21,12 +21,12 @@ Do **not** key off mixed PoS mid-clause: `z-… ol d-…` stays **illegal**. Adv
 
 | Vowel | In-clause `A REV B` | Discourse (before `/j/`) |
 |-------|---------------------|---------------------------|
-| **a** | *including* — A, including B (B is a highlighted member / part of A) | ***Finally*** — this sentence is a closing / coda point relative to prior discourse |
+| **a** | *including* — A, including B (B is a highlighted member / part of A) | ***additionally*** — this sentence adds a further point relative to prior discourse |
 | **e** | *rather* — A, or rather B (soft correction; B outranks A; A need not be fully denied) | ***in other words*** / *rather* — this sentence rephrases or soft-corrects the prior claim |
 | **o** | *instead* — not A, but B (exclusive replacement) | ***instead*** — this sentence replaces the prior claim |
 | **u** | *except* / *but not* — A except B / A but not B (subtract B from the A frame) | ***except*** — this sentence stands as an exception to the prior frame (not adversative *but* / *however*) |
 
-Mnemonics track the join series loosely: **a** additive membership (discourse = additive coda), **e** directional soft rank, **o** exclusive swap, **u** subtractive denial (cf. invert **ua** / **uo** and plain **u** [negation](coordination.md#negation-u)) — in-clause the job is **revision of a slot**; discourse the job is **how this sentence relates to prior talk**. Prefixed **`zul` / `zum`** (*not X* / bare *no*) and **`zual` / `zuol`** (*everything but* / *anything but* a fence list) are **not** reviser **`ul` / `um`**.
+Mnemonics track the join series loosely: **a** additive membership (discourse = *additionally*), **e** directional soft rank, **o** exclusive swap, **u** subtractive denial (cf. invert **ua** / **uo** and plain **u** [negation](coordination.md#negation-u)) — in-clause the job is **revision of a slot**; discourse the job is **how this sentence relates to prior talk**. *Starting with* / *Finally* are **not** discourse **`a`** — use `/x/` start-place **`x#e-l`** / last-place **`x#el`** ([numbers.md](numbers.md#number-as-discourse-marker-by-marker)). Prefixed **`zul` / `zum`** (*not X* / bare *no*) and **`zual` / `zuol`** (*everything but* / *anything but* a fence list) are **not** reviser **`ul` / `um`**.
 
 ## Endings — required
 
@@ -34,9 +34,9 @@ Every reviser word **must** take **-l**, **-m**, or **-n**. **-l** / **-m** mark
 
 | Ending | Form | In-clause | Discourse |
 |--------|------|-----------|-----------|
-| **-l** | `al` / `el` / `ol` / `ul` | Right-hand side exhaustive for this step | Committed move (*Finally,* / *Instead,* / …) |
+| **-l** | `al` / `el` / `ol` / `ul` | Right-hand side exhaustive for this step | Committed move (*Additionally,* / *Instead,* / …) |
 | **-m** | `am` / `em` / `om` / `um` | Right-hand side non-exhaustive | Soft / non-exhaustive move |
-| **-n** | `an` / `en` / `on` / `un` | Named / conventional A–side frame | Formulaic / stock segue (*Finally, …* as ritual close; stock *Instead, …*; titled paraphrase frame) |
+| **-n** | `an` / `en` / `on` / `un` | Named / conventional A–side frame | Formulaic / stock segue (stock *Additionally, …*; stock *Instead, …*; titled paraphrase frame) |
 
 Same mnemonic as phrase-level [named **-n**](coordination.md#named--conventional-ending-phrase-level-all-join-vowels) (on `/z/` `/d/` `/b/` `/w/`) and content-word [proper name **-n**](reference-suffix.md#proper-name--n). **Not** clause soft **-n** (*and then…* **`xan`**). **Not** [join-relations](special-vocabulary.md#join-relations). No **-r**. When unsure between closed and open, prefer **-m**; use **-n** when naming a conventional frame rather than composing an inventory.
 
@@ -53,7 +53,7 @@ Same mnemonic as phrase-level [named **-n**](coordination.md#named--conventional
 
 | | **-l** | **-m** | **-n** |
 |--|--------|--------|--------|
-| **a** (*Finally*) | `al` — committed coda | `am` — soft / among wrap-ups | `an` — ritual / titled *Finally* |
+| **a** (*additionally*) | `al` — committed further point | `am` — soft / among further points | `an` — stock / titled *Additionally* |
 | **e** (*in other words*) | `el` — precise rephrase of prior | `em` — softer rewording | `en` — stock paraphrase segue |
 | **o** (*instead*) | `ol` — this claim fully replaces prior | `om` — a replacement claim | `on` — stock *Instead,* |
 | **u** (*except*) | `ul` — sole exception to prior frame | `um` — exception (maybe among others) | `un` — named / conventional exception frame |
@@ -135,15 +135,17 @@ When a prefix-less **`al` / `am` / `an` / `el` / `em` / `en` / `ol` / `om` / `on
 
 ## Discourse examples (schematic)
 
-- `al jal …` — *Finally, …* (committed coda)
-- `am jal …` — soft *finally* / among wrap-up points
-- `an jal …` — ritual / titled *Finally, …*
+- `al jal …` — *Additionally, …* (committed further point)
+- `am jal …` — soft *additionally* / among further points
+- `an jal …` — stock / titled *Additionally, …*
 - `el jal …` — *In other words, …* (precise rephrase of prior)
 - `em jal …` — softer *rather* / rewording
 - `ol jal …` — *Instead, …* (this claim fully replaces prior)
 - `om jal …` — *instead* as a replacement claim
 - `ul jal …` — *Except, …* (sole exception to prior frame)
-- `jSamn al jal …` — vocative, then *Finally,* then statement force
+- `jSamn al jal …` — vocative, then *Additionally,* then statement force
+- *Starting with* — **`x#e-l`** (not **`al`**) — [numbers.md](numbers.md#number-as-discourse-marker-by-marker)
+- *Finally* — **`x#el`** (not **`al`**) — [numbers.md](numbers.md#number-as-discourse-marker-by-marker)
 
 ---
 

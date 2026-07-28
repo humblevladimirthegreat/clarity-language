@@ -102,6 +102,7 @@ Contrasts:
 - `h_2026,07,22l` — *on 2026-07-22* (bare `hro` date)
 - `/h/` *on* + `b_101.1l` — *on 101.1* (non-time code; not bare `h_…`)
 - `h#3l` — *for the third time*
+- `h#1el` — *for the gazillionth time* ([hyperbole](#hyperbole-gazillion))
 - `j#3l` — *Third!* (place cheer)
 - `x#3l` — *point 3:* (neutral discourse item)
 - `g#3l` — *the third* (modifies a noun)
@@ -129,8 +130,10 @@ Contrasts:
 - `j-3l` — *Three short!* / *Three fewer!* / *−3!* (deficit)
 - `j_27l` — *Twenty-seven!* as label call
 - `j#1l` — *First!* (place cheer)
+- `j#1el` — *Gazillionth!* (comic place cheer — [hyperbole](#hyperbole-gazillion))
 - `x#1l` — *point 1:* (neutral discourse item)
 - `h#1l` — *for the first time*
+- `h#1el` — *for the gazillionth time*
 - `v#1l` — *take / assign 1st* (verb)
 
 Endings still apply (**-m** fuzzy *about three more!* / *about three!*, **-n** conventional call name, **-r** resume a prior shout’s value — digitless `j+r` / `j_r` allowed).
@@ -146,12 +149,20 @@ Endings still apply (**-m** fuzzy *about three more!* / *about three!*, **-n** c
 | **`ru`** | `x-Nl` | **Independent item N** — a new line of support or consideration (*independent N:*, *distinct N:*). Would still matter if other listed items were gone. |
 | **`ro`** | `x_…l` | **Cite a discourse label** — agenda item, section code, slide, ticket id (digits as label, not independence framing) (*regarding item 12; under 3.2*). |
 
-**Independence framing:** **`#`** = unmarked inventory or steps; **`+`** = corroborating (aligned with something already listed); **`-`** = independent (new line of support). Do not use **`+`** / **`-`** for for/against or open vs scratch a bullet — independence is the point. Ordinary *firstly / secondly* without that framing is **`x#Nl`**. For/against and both-sides checks stay in ordinary wording or claim-level evidentiality, not on the number marker.
+**Last point / *Finally*:** digitless-exp last-place under `/x/` + **`re`** is defined — **`x#el`** = *Finally:* / *last point:* (committed coda item). Soft **`x#em`** = near-final / soft wrap-up point; named **`x#en`** = ritual / titled *Finally*; **`x#er`** resumes that last-point marker. This is **not** discourse reviser **`al`** (*additionally* — [revisers.md](revisers.md#discourse-revisers)).
+
+**Starting point / *Starting with*:** digitless-exp start-place under `/x/` + **`re`** — **`x#e-l`** = *Starting with:* / *to begin:* (committed opening item; beginning/onset framing, **not** English *firstly*). Soft **`x#e-m`** = near-start / soft lead-in; named **`x#e-n`** = ritual / titled *Starting with*; **`x#e-r`** resumes that start-point marker. Ordinary numbered *firstly* stays **`x#1l`**.
+
+Other `/x/` no-mantissa digitless-exp forms (`x+el` +∞-as-index, `x-el` −∞-as-index, …) stay **undefined**. Mantissa + digitless-exp discourse indices (**`x#1el`** *umpteenth point:*, **`x#1e-l`** joke early item) are [hyperbole](#hyperbole-gazillion), not these landmarks.
+
+**Independence framing:** **`#`** = unmarked inventory or steps; **`+`** = corroborating (aligned with something already listed); **`-`** = independent (new line of support). Do not use **`+`** / **`-`** for for/against or open vs scratch a bullet — independence is the point. Ordinary *firstly / secondly* without that framing is **`x#Nl`**. *Starting with* without a numeric step count is **`x#e-l`**; *Finally* without a numeric step count is **`x#el`**. For/against and both-sides checks stay in ordinary wording or claim-level evidentiality, not on the number marker.
 
 Contrasts:
 
 - `g#2l` — *the second* (modifies a noun)
 - `x#2l` — *point 2:* (neutral discourse item)
+- `x#e-l` — *Starting with:* / *to begin:* (digitless start-place under `/x/`)
+- `x#el` — *Finally:* / *last point:* (digitless last-place under `/x/`)
 - `x+2l` — *corroborating 2:*
 - `x-2l` — *independent 2:*
 - `h#2l` — *for the second time* (event ordinal adverb)
@@ -160,7 +171,7 @@ Contrasts:
 - `j+3l` — *Three more!* (quantity addition)
 - `j-3l` — *Three short!* / *Three fewer!* / *−3!* (deficit)
 
-Endings still apply (**-l** newly stated item, **-r** *as in (N) above* or digitless `x#r` / `x+r` / … for *as in that item above* with same independence framing, **-n** titled / official item name, **-m** fuzzy *around item N*). Percent / percentage-point closers are not used with `/x/` numbers.
+Endings still apply (**-l** newly stated item, **-r** *as in (N) above* or digitless `x#r` / `x+r` / … for *as in that item above* with same independence framing, **-n** titled / official item name, **-m** fuzzy *around item N*; on last-place **`x#el`** / **`x#em`** / **`x#en`** / **`x#er`** and start-place **`x#e-l`** / **`x#e-m`** / **`x#e-n`** / **`x#e-r`** as above). Percent / percentage-point closers are not used with `/x/` numbers.
 
 ## Number endings
 
@@ -263,7 +274,7 @@ A digit group may use an exponent marker (**`ba`** or **`bu`**) with **no** expo
 | Shape | Reading |
 |-------|---------|
 | **`ba`/`bu` alone** (no mantissa) | **Special value** — +∞ / −∞ / last place / … (tables below) |
-| **Mantissa digits + `ba`/`bu`∅** | **Hyperbole** — *N gazillion* / *N gazillionth* (comic / vague huge or tiny scale) |
+| **Mantissa digits + `ba`/`bu`∅** | **Hyperbole** — *N gazillion* / *N gazillionth* (scalar); *the N-gazillionth* / comic early place (ordinal) |
 
 Neither is bare OoM (which always **names** the power: `g+e9l`) nor a [zero-group](#zero-digit-groups) word (`g+l` = plural `>1`).
 
@@ -283,22 +294,24 @@ Neither is bare OoM (which always **names** the power: `g+e9l`) nor a [zero-grou
 | **`g-el`** | **`ru`** + **`ba`∅** + **-l** | **−∞** |
 | **`g-em`** | **`ru`** + **`ba`∅** + **-m** | **arbitrarily large but finite** (negative / deficit) |
 | **`g#el`** | **`re`** + **`ba`∅** + **-l** | **last place** |
-| **`g#e-l`** | **`re`** + **`bu`∅** + **-l** | **unranked** |
+| **`g#em`** | **`re`** + **`ba`∅** + **-m** | **near last place** |
+| **`g#e-l`** | **`re`** + **`bu`∅** + **-l** | **start / beginning place** — first with emphasis on **onset** (*the starting one*, *at the beginning*), not mere numbered 1st (`g#1l`) |
+| **`g#e-m`** | **`re`** + **`bu`∅** + **-m** | **near first place** |
 | **`g-e-l`** (`ru` + **`bu`∅**) | — | **Undefined** for now (spare cell) |
 
-Same under `/z/` `/d/` `/b/` (`z+el` = +∞ as subject; `d#e-l` = unranked as object; `b+e-l` = *of an arbitrarily small but finite amount*).
+Same under `/z/` `/d/` `/b/` (`z+el` = +∞ as subject; `d#e-l` = start-place as object; `b+e-l` = *of an arbitrarily small but finite amount*). Contrast **`g#1l`** = numbered *first* / *1st*; **`g#e-l`** = beginning/onset landmark.
 
 **Endings** (no-mantissa specials):
 
 | Ending | Sense |
 |--------|-------|
-| **-l** | Exact special value (default): +∞ / −∞ / last place / arbitrarily small but finite / unranked as in the form table |
-| **-m** on **`ba`∅** (`…em`) | **Arbitrarily large but finite** on scalars (`g+em` / `g-em`); on ordinals (`g#em`) = soft / near **last place** |
-| **-m** on **`bu`∅** (`…e-m`) | Soft / approximate small or soft unranked |
-| **-n** | Proper / conventional designation of that special (named ∞ symbol, official *last place* title, …) |
-| **-r** | Resume a prior special value of that marker+exp polarity (`g+er` = *that +∞ again*; `g+e-r` = *that small/unranked again*) |
+| **-l** | Exact special value (default): +∞ / −∞ / last place / start place / arbitrarily small but finite as in the form table |
+| **-m** on **`ba`∅** (`…em`) | **Arbitrarily large but finite** on scalars (`g+em` / `g-em`); on ordinals (`g#em`) = **near last place** |
+| **-m** on **`bu`∅** (`…e-m`) | Soft / approximate small on scalars; on ordinals (`g#e-m`) = **near first place** |
+| **-n** | Proper / conventional designation of that special (named ∞ symbol, official *last place* / *starting* title, …) |
+| **-r** | Resume a prior special value of that marker+exp polarity (`g+er` = *that +∞ again*; `g+e-r` = *that start/small again*) |
 
-**Contrast:** zero-group `g+l` = plural count `>1`. Bare OoM `g+e9l` = order 10⁹. No-mantissa `g+el` = +∞. Mantissa + digitless exp (`g+1el`) = [hyperbole](#hyperbole-gazillion), not +∞. Focus ranked digitless (`zel z+l`) is **not** a special value — ordinary *only (plural) matters* / preference framing (the old focus→∞ reading is **removed**).
+**Contrast:** zero-group `g+l` = plural count `>1`. Bare OoM `g+e9l` = order 10⁹. No-mantissa `g+el` = +∞; no-mantissa `g#el` = last place. Mantissa + digitless exp (`g+1el` / `g#1el`) = [hyperbole](#hyperbole-gazillion), not those specials. Focus ranked digitless (`zel z+l`) is **not** a special value — ordinary *only (plural) matters* / preference framing (the old focus→∞ reading is **removed**).
 
 ##### Overlay `/v/` and `/h/` (without-bound only)
 
@@ -311,12 +324,14 @@ No-mantissa digitless-exp **`ra`** / **`ru`** under `/v/` and `/h/` with **-l**:
 | **`h+el`** | **unbounded multiplicity** (× without bound / unboundedly many times) |
 | **`h+e-l`** | **unbounded duplicity** (÷ without bound / into unboundedly many parts) |
 
-No-mantissa digitless-exp **`re`** / **`ro`** under `/v/` `/h/`, and `/j/` `/x/` no-mantissa digitless-exp forms, are **undefined** here.
+No-mantissa digitless-exp **`re`** / **`ro`** under `/v/` `/h/`, and `/j/` no-mantissa digitless-exp forms, are **undefined** here. Under `/x/`, **last-place** **`x#el`** (and **`x#em`** / **`x#en`** / **`x#er`**) = discourse *Finally* / last point, and **start-place** **`x#e-l`** (and **`x#e-m`** / **`x#e-n`** / **`x#e-r`**) = discourse *Starting with:* / beginning — see [Number as discourse marker](#number-as-discourse-marker-by-marker). Other `/x/` no-mantissa digitless-exp forms stay **undefined**.
 
 #### Hyperbole — mantissa + digitless exponent
 <a id="gazillion"></a>
 
-**Mantissa digits** (ordinary count) plus digitless **`ba`** / **`bu`** = a **hyperbolic** magnitude: comic or vague huge (*gazillion*) or tiny (*gazillionth*). Not a real power of ten and not +∞.
+**Mantissa digits** (ordinary count) plus digitless **`ba`** / **`bu`** = a **hyperbolic** magnitude: comic or vague huge (*gazillion*) or tiny (*gazillionth*) on scalars; comic late or early **place** on ordinals. Not a real power of ten and not a no-mantissa special (+∞ / last place / …).
+
+##### Scalar (`ra` / `ru`)
 
 | Form | Reading |
 |------|---------|
@@ -325,22 +340,49 @@ No-mantissa digitless-exp **`re`** / **`ro`** under `/v/` `/h/`, and `/j/` `/x/`
 | **`g+1e-l`** | *one gazillionth* / vanishingly small hyperbole |
 | **`g-1el`** | *minus one gazillion* (hyperbolic deficit) |
 
-Same under other referential PoS. **Scalars only** for now — mantissa + digitless exp on **`#`** / **`_`** is **undefined**.
+Same under other referential PoS for scalars.
+
+##### Ordinal (`re`)
+
+Mantissa = how many joke-units of **rank**; **`ba`** / **`bu`** = toward last vs toward start (same polarity as no-mantissa `g#el` / `g#e-l`). Still **finite** place hyperbole — not the landmarks.
+
+| Form | Reading |
+|------|---------|
+| **`g#1el`** | *the gazillionth* / *umpteenth* (comic late place) |
+| **`g#3el`** | *the three-gazillionth* |
+| **`g#1em`** | *about the gazillionth* / soft umpteenth |
+| **`g#1e-l`** | *the gazillionth-from-start* / comic vanishingly early place |
+| **`g#1e-m`** | soft comic near-start place |
+
+Contrast: **`g#el`** = last place; **`g#e-l`** = start/beginning place; **`g#1l`** = numbered *1st*; **`g#em`** / **`g#e-m`** = near last / near first (non-joke).
+
+Digit-string **`ro`** / **`_`** + mantissa + digitless exp stays **undefined**.
 
 **Endings** on hyperbolic forms:
 
 | Ending | Sense | Example |
 |--------|-------|---------|
-| **-l** | Committed hyperbole — speaker stands behind the joke magnitude | `g+1el` *one gazillion* |
-| **-m** | Soft / hedged hyperbole — *about a gazillion*, *umpteen* | `g+1em` *roughly a gazillion* |
-| **-n** | **Proper noun / proper designation** — the hyperbolic numeral as a name (a building called *the Gazillion*, a title *One Gazillion*, …) | `g+1en` |
-| **-r** | Resume that prior hyperbolic amount (mantissa may repeat or drop when clear: `g+1er` / `g+er` if the prior was this hyperbole) | |
+| **-l** | Committed hyperbole — speaker stands behind the joke magnitude | `g+1el` *one gazillion*; `g#1el` *the gazillionth* |
+| **-m** | Soft / hedged hyperbole — *about a gazillion*, *umpteen* | `g+1em` *roughly a gazillion*; `g#1em` *about the gazillionth* |
+| **-n** | **Proper noun / proper designation** — the hyperbolic numeral as a name (a building called *the Gazillion*, a title *One Gazillion*, *the Gazillionth*, …) | `g+1en`; `g#1en` |
+| **-r** | Resume that prior hyperbolic amount or place (mantissa may repeat or drop when clear: `g+1er` / `g+er`; `g#1er` / `g#er` if the prior was this hyperbole) | |
 
-**Overlays** inherit freely: `h+1el` = *a gazillion times*; `v+1el` = *add a gazillion*; `j+1el` = *a gazillion more!*. `/x/` hyperbolic discourse indices stay **undefined**.
+**Overlays** inherit freely:
 
-**Not hyperbole:** `g+el` (no mantissa) = +∞; `g+e9l` (digitful exp) = bare OoM; `g+1e9l` = 1×10⁹ (real engineering). Do not mix digitless exp with **`je`** / **`jo`** / **`ju`** in the same group.
+| Form | Reading |
+|------|---------|
+| **`h+1el`** | *a gazillion times* |
+| **`h#1el`** | *for the gazillionth time* |
+| **`v+1el`** | *add a gazillion* |
+| **`v#1el`** | *place / come in gazillionth* / *rank as umpteenth* |
+| **`j+1el`** | *a gazillion more!* |
+| **`j#1el`** | *Gazillionth!* (comic place cheer) |
+| **`x#1el`** | *umpteenth point:* / joke late agenda item |
+| **`x#1e-l`** | *umpteenth-from-start point:* / joke early agenda item |
 
-Examples: `g+el` → +∞; `g+em` → arbitrarily large but finite; `g+1el` → *one gazillion*; `g+1em` → *about a gazillion*; `g+1en` → proper name *One Gazillion* / *the Gazillion*; `g+1e-l` → *one gazillionth*; `g+e-l` → arbitrarily small but finite; `g-el` → −∞; `g#el` → last place; `g#e-l` → unranked; `v+el` → increase without bound; `h+el` → unbounded multiplicity; `h+1el` → *a gazillion times*; `g+e9l` → bare OoM e9; `g+l` → plural `>1`.
+**Not hyperbole:** `g+el` (no mantissa) = +∞; `g#el` / `g#e-l` (no mantissa) = last / start place; `g+e9l` (digitful exp) = bare OoM; `g+1e9l` = 1×10⁹ (real engineering). Do not mix digitless exp with **`je`** / **`jo`** / **`ju`** in the same group.
+
+Examples: `g+el` → +∞; `g+em` → arbitrarily large but finite; `g+1el` → *one gazillion*; `g+1em` → *about a gazillion*; `g+1en` → proper name *One Gazillion* / *the Gazillion*; `g+1e-l` → *one gazillionth*; `g+e-l` → arbitrarily small but finite; `g-el` → −∞; `g#el` → last place; `g#em` → near last place; `g#e-l` → start / beginning place; `g#e-m` → near first place; `g#1el` → *the gazillionth* / *umpteenth*; `g#1e-l` → comic vanishingly early place; `h#1el` → *for the gazillionth time*; `x#e-l` → *Starting with:*; `x#el` → *Finally:* / last discourse point; `v+el` → increase without bound; `h+el` → unbounded multiplicity; `h+1el` → *a gazillion times*; `g+e9l` → bare OoM e9; `g+l` → plural `>1`.
 
 ## Percent and percentage points
 
@@ -485,10 +527,20 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 | about a gazillion | `g+1em` | *grawobam* |
 | the Gazillion (proper name) | `g+1en` | *grawoban* |
 | one gazillionth | `g+1e-l` | *grawobul* (`ra` + wo + `bu` + `l`) |
+| the gazillionth / umpteenth | `g#1el` | *grewobal* (`re` + wo + `ba` + `l`) |
+| about the gazillionth | `g#1em` | *grewobam* |
+| gazillionth-from-start (comic early) | `g#1e-l` | *grewobul* (`re` + wo + `bu` + `l`) |
+| for the gazillionth time | `h#1el` | *hrewobal* |
+| *Gazillionth!* | `j#1el` | *jrewobal* |
+| umpteenth point: | `x#1el` | *xrewobal* |
 | arbitrarily small but finite | `g+e-l` | *grabul* (`ra` + `bu` + `l`) |
 | −∞ | `g-el` | *grubal* |
 | last place | `g#el` | *grebal* |
-| unranked | `g#e-l` | *grebul* |
+| near last place | `g#em` | *grebam* |
+| start / beginning place | `g#e-l` | *grebul* |
+| near first place | `g#e-m` | *grebum* |
+| *Starting with:* | `x#e-l` | *xrebul* |
+| *Finally:* | `x#el` | *xrebal* |
 | increase without bound | `v+el` | *vrabal* |
 | unbounded multiplicity | `h+el` | *hrabal* |
 | a gazillion times | `h+1el` | *hrawobal* |
@@ -669,7 +721,7 @@ Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which val
 
 **Clock / date spans:** do **not** use bare circumstance-`hal` (that series is [applicability](restrictors.md)). Prefer SHARED continuum **`g-timel`** (or a host relation + `/b/`) with digit-string endpoints (`bal g-timel b_15,00l b_16,00l`).
 
-Examples: `zal g-agel z+3l z+5l` → *between ages 3 and 5*; `z-kidl gal g-agel g+3l g+5l` → *kids ages 3–5*; `zal g-spanl z+3l ul z+5l` → *[3, 5)*; `zel g-agel z+10l z+20l` → *from age 10 to 20*; `zel z+3l z+5l` → *3 ≻ 5* (preference, not a span); `zel z+5l` → *\< 5*; `zuel z+5l` → *\> 5*; `g+el` → +∞; `g+1el` → *one gazillion*; `g+1en` → proper name *the Gazillion*; `g+em` → arbitrarily large but finite; `g+e-l` → arbitrarily small but finite; `g#el` → last place; `g#e-l` → unranked; `v+el` → increase without bound; `h+el` → unbounded multiplicity; `zael z+5l z+5l` → *equally 5* / *5 equals 5*; `zaem z+3l z+5l` → *3 and 5 approximately equal*; `zar g-spanl z+3l z+5l` → *some value in 3–5*; `zol z+3l z+5l` → *3 or 5* (discrete, not a range).
+Examples: `zal g-agel z+3l z+5l` → *between ages 3 and 5*; `z-kidl gal g-agel g+3l g+5l` → *kids ages 3–5*; `zal g-spanl z+3l ul z+5l` → *[3, 5)*; `zel g-agel z+10l z+20l` → *from age 10 to 20*; `zel z+3l z+5l` → *3 ≻ 5* (preference, not a span); `zel z+5l` → *\< 5*; `zuel z+5l` → *\> 5*; `g+el` → +∞; `g+1el` → *one gazillion*; `g+1en` → proper name *the Gazillion*; `g+em` → arbitrarily large but finite; `g+e-l` → arbitrarily small but finite; `g#el` → last place; `g#em` → near last place; `g#e-l` → start / beginning place; `g#e-m` → near first place; `g#1el` → *the gazillionth* / *umpteenth*; `h#1el` → *for the gazillionth time*; `x#e-l` → *Starting with:*; `v+el` → increase without bound; `h+el` → unbounded multiplicity; `zael z+5l z+5l` → *equally 5* / *5 equals 5*; `zaem z+3l z+5l` → *3 and 5 approximately equal*; `zar g-spanl z+3l z+5l` → *some value in 3–5*; `zol z+3l z+5l` → *3 or 5* (discrete, not a range).
 
 ## Stress (pronunciation guide)
 
