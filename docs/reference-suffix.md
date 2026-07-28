@@ -74,7 +74,7 @@ A **named circumstance, channel, or standard** framing the clause — official s
 Depends on the subclass (see [utterance markers](language-reference.md#utterance-markers-j)):
 
 * **Vocatives** — Natural home for **-n**. Address someone or something by name: *Sam!*, *Paris!* (as a city name). Kind-based address (*everyone*) stays **-l**; a titled group label (*Team Alpha*) takes **-n**. Prefer names here over speaker/listener special pronouns when a name exists.
-* **Interjections** — Mostly **-l** / **-m** (*wow*, *hello*). Use **-n** when the shout *is* a named formula or conventional call: **[Mazel tov]**, **[Amen]**, **[Bingo]** as the game’s proper call, branded catchphrases. Aligns with [number `/j/`…**-n**](numbers.md#number-as-interjection-by-marker) (conventional call name).
+* **Interjections** — Mostly **-l** / **-m** (*wow*, *hello*). Use **-n** when the shout *is* a named formula or conventional call: **[Mazel tov]**, **[Amen]**, **[Bingo]** as the game’s proper call, branded catchphrases. Aligns with [number `/j/`…**-n**](numbers.md#number-as-interjection-by-marker) (conventional call name). Closed [yes/no polarity](questions.md#yes-no-polarity) particles (**`jael`** / **`juel`** / **`jaol`** / **`juol`** / **`jual`**, and soft **-m** twins) use **-l** / **-m** only — not **-n** / **-r**.
 * **Clause force** — Do **not** use **-n** or **-r**. Force forms are the closed **`jal` / `jam` / `jol` / `jom` / `jel` / `jem` / `jul` / `jum`** set ([clause force](language-reference.md#clause-force)); they are not names.
 
 ### Discourse markers (`/x/`)

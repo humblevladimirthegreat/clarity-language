@@ -151,7 +151,7 @@ Marked with j /dʑ/. These frame the **utterance**, not the verb: **clause force
 The left edge of a sentence is a `/j/` cluster in this order:
 
 1. Optional **vocative**(s) — who is addressed (*Sam*, *everyone*, …)
-2. Optional **interjection**(s) — *wow*, greetings, and other expressives
+2. Optional **interjection**(s) — *wow*, greetings, [yes/no polarity](questions.md#yes-no-polarity) particles, and other expressives
 3. Optional **discourse reviser** — prefix-less **`al` / `am` / `an` / `el` / …** (*additionally* / *in other words* / *instead* / *except*) immediately before force — [revisers.md § Discourse](revisers.md#discourse-revisers)
 4. Required **clause force** — the speech act (see below); **last** in the cluster, immediately before the clause body
 
@@ -159,7 +159,7 @@ Clause force closes the opener and does not appear in the clause body. A new cla
 
 **Vocatives and interjections appear only in this left-edge cluster** (or as bare utterances below). They must not occur mid-clause or at the end of a sentence — otherwise a trailing `/j/` could be read as either the end of the current sentence or the start of the next. After a clause body, any non-force `/j/` begins the next utterance’s opener. Mid-sentence asides use [aside fences](spans.md) (prefer `/h/`: `hexal` / `h(…)` / … + `xuxul`), not floating `/j/`.
 
-Bare vocatives and exclamations with no clause (e.g. only calling a name, or only *wow*) use `/j/` without clause force.
+Bare vocatives and exclamations with no clause (e.g. only calling a name, only *wow*, or a bare polar answer **`jael`** / **`juel`**) use `/j/` without clause force.
 
 ### Clause force
 <a id="clause-force"></a>
@@ -182,6 +182,10 @@ Every full sentence includes exactly one **clause-force** `/j/`. Forms are **`j`
 **Numbers are not clause force.** A `/j/` number word is an [interjection](numbers.md#number-as-interjection-by-marker) (*N more!*, deficit/shortfall call, digit-label / score call, place cheer). It may sit in the left-edge cluster before force, or stand alone as a bare utterance with no force.
 
 Interrogative grammar (yes/no vs fill-ask, multi-gap **fill-all**, focus/bare under **jol** / **jom**): **[questions.md](questions.md)**.
+
+### Yes / no polarity (interjections)
+
+Closed **`/j/`** polar answer particles (**`jael`** / *true*, **`juel`** / *false*, **`jaol`**, **`juol`**, **`jual`**, soft **-m** twins, …) — inventory and readings: **[questions.md § Yes / no polarity](questions.md#yes-no-polarity)**. Not clause force; left-edge or bare utterance only.
 
 ## Phrase-level, VP-level, and clause-level joins
 
@@ -242,7 +246,7 @@ Phrase-level **zam** / **gam** / …, VP **vam** / **var** / … (joins **-l** /
 
 # Questions
 
-Interrogative forces (**jol** / **jom**), yes/no vs fill-ask, multi-gap **fill-all**, and focus/bare under question: **[questions.md](questions.md)**.
+Interrogative forces (**jol** / **jom**), yes/no vs fill-ask, multi-gap **fill-all**, focus/bare under question, and polar answers (**`jael`** / *true*, **`juel`** / *false*, **`jaol`** / **`juol`** / **`jual`** …): **[questions.md](questions.md)** ([yes/no polarity](questions.md#yes-no-polarity)).
 
 # Citations, mentions, and asides
 

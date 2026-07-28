@@ -1,6 +1,6 @@
 # Questions
 
-This page is the source of truth for **interrogative** grammar: the **question** clause forces (**jol** / soft **jom**), yes/no vs fill-ask, multi-gap **fill-all**, and how join endings read under question force. Fence forms and their **statement** readings live in [coordination.md](coordination.md). Full force inventory and left-edge `/j/` order: [language-reference.md](language-reference.md#clause-force).
+This page is the source of truth for **interrogative** grammar: the **question** clause forces (**jol** / soft **jom**), yes/no vs fill-ask, multi-gap **fill-all**, how join endings read under question force, and **yes / no polarity** answer particles (**`jael`** / **`juel`** / …). Fence forms and their **statement** readings live in [coordination.md](coordination.md). Full force inventory and left-edge `/j/` order: [language-reference.md](language-reference.md#clause-force).
 
 <a id="interrogative-force"></a>
 <a id="polar-question"></a>
@@ -42,8 +42,50 @@ Partial answers are fine in conversation; they do not redefine the grammar (stil
 Content-word anaphor **-r** is not a fill gap — only [join **-r**](coordination.md#unspecified-member-r-phrase) (`zar` / `var` / `xar` / …).
 
 <a id="answers"></a>
+<a id="yes-no-polarity"></a>
+<a id="yes-no-interjections"></a>
 
 ## Answers
+
+### Polar (yes / no)
+
+Closed **`/j/`** answer particles — **interjections**, not clause force. Shape is **`j` + stacked join vowel + `-l` / `-m`** (same letter jobs as [join series](coordination.md#join-type-vowel-series)). They sit in the left-edge interjection slot ([utterance markers](language-reference.md#utterance-markers-j)), or stand alone as a bare utterance (typical polar answer). Do **not** use **-n** or **-r** on these forms. Do **not** use them as force before a clause body.
+
+**Default polarity** uses **corank** / **counterrank** (**`ae`** / **`ue`**): match vs flip. **`jael`** also reads as *true*; **`juel`** as *false* (truth-value twin of confirmational *yes* / default *no*).
+
+| Form | Reading | Letter logic |
+|------|---------|----------------|
+| **jael** | confirmational *yes* / *true* — the claim matches; *that's right* / *correct* | **ae** equality / match + **-l** |
+| **jaem** | soft confirmational *yes* — *probably* / *I think so* | **ae** + **-m** |
+| **juel** | default *no* / *false* — does not match; *not so* / *no* | **ue** counterrank / flip + **-l** |
+| **juem** | soft default *no* — *no from me* / *I don't think so* | **ue** + **-m** |
+
+**Accepting *yes*** (**cochoice** **`ao`**) — menu / offer assent, not truth-match. Answers *Want / pick this?* more than *Is it so?*
+
+| Form | Reading |
+|------|---------|
+| **jaol** | *sure* / *fine* / *I'll take that* — that option counts |
+| **jaom** | soft accepting *yes* — *sure, from me* / *that would work for me* |
+
+**No variants** — subtler refusals than default **`juel`**:
+
+| Form | Reading | Letter logic |
+|------|---------|----------------|
+| **juol** | reject-this *no* — *not that* (other picks may be fine) | **uo** *anything but* + **-l** |
+| **juom** | soft reject-this *no* | **uo** + **-m** |
+| **jual** | absolute *no* — *nothing of that frame* / hard refusal | **ua** *everything but* + **-l** |
+| **juam** | soft absolute *no* — hard refusal from the speaker’s side | **ua** + **-m** |
+
+| Ask flavor | Prefer |
+|------------|--------|
+| *Is it so?* / *true?* / confirm the claim | **`jael`** / soft **`jaem`** · deny with **`juel`** / **`juem`** (*false*) |
+| *Want this?* / *Pick this?* / offer | **`jaol`** / soft **`jaom`** · reject-this with **`juol`** / **`juom`** · hard refuse with **`jual`** / **`juam`** |
+
+Bare utterance is the default answer (`jael`, `juel`, …). The same particle may sit in the left-edge interjection slot before a restating force (`jael jal …`).
+
+**Contrast:** body bare denial is plain **u** (`xul` / `vul` / `zul` — [negation](coordination.md#negation-u)), a clause/slot join, not an answer particle. Prefer **`juel`** / **`juol`** / **`jual`** (and soft twins) when answering a yes/no ask; prefer **`xul`** when denying inside or as a bare clausal frame. **`jul`** / **`jum`** remain **prohibition** force (*don’t…*), not polar *no* / *false*.
+
+### Fill-ask
 
 A fill **need not** keep **-r**: it may be a bare content word, focus **-l** / **-m** / **-n**, or a longer list with any allowed ending. Multi-gap answers follow spoken **-r** order ([fill-all](#fill-all)).
 

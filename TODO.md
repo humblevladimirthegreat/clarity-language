@@ -1,4 +1,5 @@
-
+-confirm dependent clauses
+-punctuation
 
 Dictionary entries:
 -special pronouns

@@ -135,7 +135,7 @@ Do **not** use **-sh**. Situative vs enduring / habitual framing is **`hual` / `
 Depends on subclass (see [utterance markers](language-reference.md#utterance-markers-j)):
 
 * **Vocatives** — Address a **group**: **-lsh** for kind-based group address (*hey, kids*); **-nsh** for a titled group name (*Team Alpha*); **-rsh** to call the group containing a prior addressee. *Everyone* → bare **`…ual`**, not **-lsh**.
-* **Interjections** — Do **not** use **-sh**. Group calls belong on vocatives or nouns.
+* **Interjections** — Do **not** use **-sh**. Group calls belong on vocatives or nouns. Closed [yes/no polarity](questions.md#yes-no-polarity) particles (**`jael`** / **`juel`** / …) likewise take no **-sh**.
 * **Clause force** — Do **not** use **-sh**. Force forms (`jal` / `jol` / `jel` / …) are a closed set and are not numbered.
 
 ### Discourse markers (`/x/`)
