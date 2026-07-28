@@ -1,6 +1,6 @@
 # Citations, mentions, asides, and opaque spans
 
-This page is the source of truth for **span fences**: every **open** carries a **PoS**, a **TYPE**, an **EDGE** (extent), and an **ENDING**; **close** is a fixed discourse pair (**`xuxul`** / **`xuxum`**). Preferred **bracket writing**, fidelity, extent, atomic spans, proper designation, and span anaphors. Discourse linkers and clause joins under `/x/` stay in [language-reference.md](language-reference.md#discourse-markers-x) and [coordination.md](coordination.md). Span fences use ordinary mid-word **`x`** (compound joiner) — [phonology.md](phonology.md#phonotactics). Parallel to [numbers](numbers.md): writing uses shorthand; speech is the full form.
+This page is the source of truth for **span fences**: every **open** carries a **PoS**, a **TYPE**, an **EDGE** (extent), and an **ENDING**; **close** is a fixed discourse quartet (**`xuxul`** / **`xuxur`** / **`xuxun`** / **`xuxum`**). Preferred **bracket writing**, fidelity, extent, atomic spans, proper designation, and span anaphors. Discourse linkers and clause joins under `/x/` stay in [language-reference.md](language-reference.md#discourse-markers-x) and [coordination.md](coordination.md). Span fences use ordinary mid-word **`x`** (compound joiner) — [phonology.md](phonology.md#phonotactics). Parallel to [numbers](numbers.md): writing uses shorthand; speech is the full form.
 
 <a id="writing-vs-speech"></a>
 
@@ -9,7 +9,7 @@ This page is the source of truth for **span fences**: every **open** carries a *
 | Channel | Form |
 |---------|------|
 | **Writing (preferred)** | **PoS letter** + optional **`@`** / **`~`** + brackets — type from bracket shape; marks sit **after** the PoS (`d@[…]`, `d~[…]`); anaphor uses interior **`=`** (`d[=]`, same glyph as [number **-r**](numbers.md#number-endings)); extent / atomic / empty from bracket shape (below). Do **not** write `daxal` / `xuxul` / … in ordinary text when a bracket form exists. |
-| **Speech** | full **open** `{PoS}{TYPE}x{EDGE}{ENDING}`; full **close** **`xuxul`** (pop one) or **`xuxum`** (pop all) when a multi-token open needs an explicit close. |
+| **Speech** | full **open** `{PoS}{TYPE}x{EDGE}{ENDING}`; full **close** **`xuxul`** (pop one, complete), **`xuxur`** (truncated), **`xuxun`** (sic / editorial), or **`xuxum`** (pop all) when a multi-token open needs an explicit close. |
 
 Same split as number shorthand (`g+3` written, full CV spoken).
 
@@ -37,21 +37,31 @@ Example: **`daxal`** = `d` + `a` + `x` + `a` + `l` → **open exact multi-token 
 
 | Spoken | Job | Writing |
 |--------|-----|---------|
-| **`xuxul`** | pop **one** (innermost open) | matching closer `]` / `}` / `)` / `>` |
-| **`xuxum`** | pop **all** open spans | optional close-all mark **`»`** (or matching closers for each open) |
+| **`xuxul`** | pop **one** (innermost) — **complete** surface | matching closer `]` / `}` / `)` / `>` |
+| **`xuxur`** | pop **one** (innermost) — **truncated** surface (cut off / trail off / incomplete) | ASCII hyphen + matching closer: `-]` / `-}` / `-)` / `->` (hyphen-minus `-`, not an em dash) |
+| **`xuxun`** | pop **one** (innermost) — **sic / editorial**: complete surface kept **as-is** (odd spelling, broken grammar, non-normative form); outer speaker does **not** normalize | `#]` / `#}` / `#)` / `#>` |
+| **`xuxum`** | pop **all** open spans | optional close-all mark `\|` (or matching closers for each open) |
+| **`xuxur`** + **`xuxum`** | truncated innermost, then pop **all** remaining | writing shorthand `-\|` (mark before close-all); speech says both words |
+| **`xuxun`** + **`xuxum`** | sic innermost, then pop **all** remaining | writing shorthand `#\|`; speech says both words |
 
 ```text
 xuxul  =  x + u + x + u + l
+xuxur  =  x + u + x + u + r
+xuxun  =  x + u + x + u + n
 xuxum  =  x + u + x + u + m
 ```
 
-Close does **not** repeat PoS, TYPE, EDGE, or open fidelity. Fidelity and extent are decided only at open. These forms are **not** clause joins (`xul` / `xum` = negation — different shape). They are **not** an empty cite under `/d/` (`daxul` = empty/redacted object cite; `xuxul` = close). **`xuxun`** / **`xuxur`** are undefined for now.
+Close does **not** repeat PoS, TYPE, EDGE, or open fidelity. Open fidelity (**-l** / **-m** / **-n**) still applies to whatever interior is present. **`xuxur`** adds that the surface is **incomplete** (interrupted speech, trail-off, broken recording) — not paraphrase, not empty/redacted (`d[]`), not abort/scratch. **`xuxun`** adds an **editorial** frame: the wording is committed **verbatim including its defects** (*sic*) — not open proper **-n** (titled unit), not paraphrase **-m**. Truncated and sic spans **are committed** and enter anaphor history (`d[=]` / `daxar` may resume them).
+
+**Combined writing `-\|` / `#\|`:** in closer position only — apply truncated or sic to the **innermost** open, then pop **all** remaining frames (those outer pops are plain complete). No new spoken stem: say **`xuxur xuxum`** / **`xuxun xuxum`**. Bare **`xuxur`** / **`xuxun`** in speech still means pop **one** only; do not make the listener infer close-all from ending alone. Writing may pack what speech spells as two closes (same channel split as brackets vs full opens). Illegal: `\|-` / `\|#` (mark must precede close-all).
+
+These forms are **not** clause joins (`xul` / `xum` = negation — different shape). They are **not** an empty cite under `/d/` (`daxul` = empty/redacted object cite; `xuxul` = complete close). Truncated and sic closes are for writing (and careful speech) when incompleteness or *as-written* oddity is part of what you want to record; casual mid-utterance repair needs no special close.
 
 Opens, empties, atomics, anaphors, and closes are **not** [value](values.md) / [ability](special-vocabulary.md#ability) compounds (those have a **content root** before `x`).
 
 **Parser cue — span form:** after PoS, material before the first `x` is exactly one TYPE vowel (**a** / **e** / **o** / **u**), and after `x` exactly one EDGE vowel (**a** / **e** / **o** / **u**) + **-l** / **-m** / **-n** / **-r**. One vowel before `x` + **longer** root after → [role compound](special-vocabulary.md#role-compounds). Longer material before `x` → ordinary / value / ability compound. Full map: **[x-compounds.md](x-compounds.md)**.
 
-**Parser cue — close:** exact words **`xuxul`** / **`xuxum`** only.
+**Parser cue — close:** exact words **`xuxul`** / **`xuxur`** / **`xuxun`** / **`xuxum`** only (combo writing expands to two closes in speech).
 
 Spoken open/close may be omitted in casual speech when the listener has writing or clear prosody; they matter for voice-to-text, singing, and emphatic citing.
 
@@ -59,7 +69,7 @@ Spoken open/close may be omitted in casual speech when the listener has writing 
 
 ## Part of speech (slot)
 
-The **open** (or anaphor’s) PoS is the **outer-clause slot** of the **entire** span — not the PoS of words inside the fence. Interior may be a fragment, a full sentence, foreign text, or code; the open’s PoS only says how that packaged surface sits in the host clause. Close is always `/x/`-shaped **`xuxul`** / **`xuxum`** (no PoS match required). Anaphor **-r** may take a **different** PoS than its antecedent open (`zaxar` = that prior cite as subject).
+The **open** (or anaphor’s) PoS is the **outer-clause slot** of the **entire** span — not the PoS of words inside the fence. Interior may be a fragment, a full sentence, foreign text, or code; the open’s PoS only says how that packaged surface sits in the host clause. Close is always `/x/`-shaped **`xuxul`** / **`xuxur`** / **`xuxun`** / **`xuxum`** (no PoS match required). Anaphor **-r** may take a **different** PoS than its antecedent open (`zaxar` = that prior cite as subject).
 
 Ask: *in the outer sentence, what slot does this chunk fill?* Prefer a **nativized** ordinary word (PoS + adapted root + ending, no span) when the surface wording is not the point. Prefer a **span** at that PoS when fidelity, opacity, use–mention, or attributed wording matters.
 
@@ -128,12 +138,18 @@ Order when both apply: **`@` then `~`** (`d@~[…]`). **Do not write** the stack
 
 | Writing | Speech (object slot) | Notes |
 |---------|----------------------|-------|
-| `d[…]` | `daxal` … `xuxul` | exact multi-token cite (EDGE **a**) |
+| `d[…]` | `daxal` … `xuxul` | exact multi-token cite (EDGE **a**); complete close |
+| `d[…-]` | `daxal` … `xuxur` | same open; **truncated** close (hyphen + `]`) |
+| `d[…#]` | `daxal` … `xuxun` | same open; **sic / editorial** close (`#` + `]`) |
+| `d[…-\|]` | `daxal` … `xuxur xuxum` | truncated innermost + **close-all** (writing `-\|`) |
+| `d[…#\|]` | `daxal` … `xuxun xuxum` | sic innermost + **close-all** (writing `#\|`) |
 | `d~[…]` | `daxam` … `xuxul` | paraphrased multi-token cite |
 | `d@[…]` | `daxan` … `xuxul` | **proper** multi-token cite; also the spelling of hedged proper (`@~`) — uncertain tone |
 | `d{…}` / `d~{…}` / `d@{…}` | `doxal` / `doxam` / `doxan` … `xuxul` | mention (exact / paraphrase / proper) |
 | `d(…)` / `d~(…)` / `d@(…)` | `dexal` / `dexam` / `dexan` … `xuxul` | aside |
 | `d<…>` / `d~<…>` / `d@<…>` | `duxal` / `duxam` / `duxan` … `xuxul` | opaque |
+| `d{…-}` / `d(…-)` / `d<…->` | … `xuxur` | truncated mention / aside / opaque (hyphen + matching closer) |
+| `d{…#}` / `d(…#)` / `d<…#>` | … `xuxun` | sic mention / aside / opaque (`#` + matching closer) |
 | `d[hi]` | `daxol hi` | **atomic** (EDGE **o**) — one token; no close (closer optional in writing) |
 | `d@[Hamlet]` | `daxon Hamlet` | atomic **proper** cite |
 | `d<sushi>` | `duxol sushi` | atomic opaque |
@@ -142,7 +158,7 @@ Order when both apply: **`@` then `~`** (`d@~[…]`). **Do not write** the stack
 | `d[=]` | `daxar` | **anaphor** — prior cite as object (*that*) |
 | `d{=}` / `d(=)` / `d<=>` | `doxar` / `dexar` / `duxar` | anaphor of that TYPE |
 
-Same TYPE with any other PoS (`zaxal`, `hexal`, `xoxal`, `duxal`, `zaxar`, `daxol`, …). Explicit close is **`xuxul`** (or **`xuxum`** to clear the stack) when EDGE **a** left a frame open. EDGE **`o`** is **atomic** — one following token; not a multi-token open.
+Same TYPE with any other PoS (`zaxal`, `hexal`, `xoxal`, `duxal`, `zaxar`, `daxol`, …). Explicit close is **`xuxul`** (complete), **`xuxur`** (truncated), **`xuxun`** (sic), or **`xuxum`** (clear stack) when EDGE **a** left a frame open. Prefer EDGE **`a`** + **`xuxur`** for cut-off cites; EDGE **`e`** auto-pop is **complete**, not truncated or sic. EDGE **`o`** is **atomic** — one following token; not a multi-token open.
 
 **Cite vs mention** (same string, different job):
 
@@ -156,7 +172,7 @@ Long / mixed-PoS work titles used to **pick out the work** prefer **cite** (ofte
 
 Nesting is by matching depth — nests are legal (`d[ z[…] ]`, `d[ h(…) ]`, `d~[ z{…} ]`, `d[ d<…> ]`, …). Do **not** use nesting depth as a glyph-escape convention. **`@`** / **`~`** apply only to the immediately following open (marks after that open’s PoS). Atomic and anaphor forms do **not** push a nest frame that needs a closer.
 
-Literal bracket / `~` / `@` / `<` / `>` / `=` / `»` glyphs that must appear as content use a writing escape (`\` before the glyph). Spoken: nest an **atomic opaque** (or other atomic) around the fence-shaped token — [literal content](#literal-content).
+Literal bracket / `~` / `@` / `<` / `>` / `=` / `|` / `#` / hyphen-before-closer glyphs that must appear as content use a writing escape (`\` before the glyph). Spoken: nest an **atomic opaque** (or other atomic) around the fence-shaped token — [literal content](#literal-content). Close-all `|`, truncated `-]` / `-}` / `-)` / `->`, sic `#]` / `#}` / `#)` / `#>`, and combined `-\|` / `#\|` are recognized only in closer position (outside an open interior); while scanning a span interior, bare `|` / `#` / hyphen are ordinary content unless they form a special-close digraph with the following closer or close-all. (Number words still use `#` for ordinals — [numbers.md](numbers.md) — that is not a span closer.)
 
 <a id="type"></a>
 <a id="vowels"></a>
@@ -184,10 +200,10 @@ Scare / ironic *“so-called”* distance is **not** a separate TYPE; use ordina
 
 The vowel **after** `x` is **EDGE** — how far the open runs. It is **not** a second TYPE.
 
-| EDGE | Job | Needs `xuxul`? | Typical writing |
-|------|-----|----------------|-----------------|
-| **a** | **Multi-token open** — push a stack frame until explicit close (default) | yes (unless anaphor **-r**) | `d[…]` … `]` |
-| **e** | **Clause-scoped** — auto-pop before the next clause-force `/j/` or clause-level `/x/` join | no (auto) | `d[…` run to clause end |
+| EDGE | Job | Needs close? | Typical writing |
+|------|-----|--------------|-----------------|
+| **a** | **Multi-token open** — push a stack frame until explicit close (default) | yes: **`xuxul`** / **`xuxur`** / **`xuxun`** (unless anaphor **-r**) | `d[…]` … `]` or `…-]` or `…#]` |
+| **e** | **Clause-scoped** — auto-pop before the next clause-force `/j/` or clause-level `/x/` join (**complete**) | no (auto) | `d[…` run to clause end |
 | **o** | **Atomic** — exactly **one** following token; no close | no | `d[hi]`, `d<sushi>`, … (closer optional) |
 | **u** | **Empty / redacted** — no interior (*said ―*) | no | `d[]` |
 
@@ -195,7 +211,7 @@ The vowel **after** `x` is **EDGE** — how far the open runs. It is **not** a s
 
 EDGE **`a`** / **`e`** / **`o`** take **-l** / **-m** / **-n** (`daxal`, `daxel`, `daxol`; `daxam`, `daxem`, `daxom`; `daxan`, `daxen`, `daxon`). EDGE **`u`** is normally exact **-l** (`daxul`); paraphrase-empty (`daxum`) and proper-empty (`daxun`) are unused for now.
 
-Open (EDGE **a** / **e** with interior) pushes a stack frame (PoS + TYPE + EDGE + ending) when there is interior to fence. **`xuxul`** pops one frame; **`xuxum`** pops all. Atomic (EDGE **o**), anaphor, and empty do not leave a frame that needs popping.
+Open (EDGE **a** / **e** with interior) pushes a stack frame (PoS + TYPE + EDGE + ending) when there is interior to fence. **`xuxul`** pops one frame (complete); **`xuxur`** pops one (truncated); **`xuxun`** pops one (sic); **`xuxum`** pops all. Atomic (EDGE **o**), anaphor, and empty do not leave a frame that needs popping.
 
 <a id="endings"></a>
 
@@ -216,12 +232,16 @@ Open (EDGE **a** / **e** with interior) pushes a stack frame (PoS + TYPE + EDGE 
 
 ### On closes
 
-| Form | Ending job |
-|------|------------|
-| **`xuxul`** | pop one |
-| **`xuxum`** | pop all |
+| Form | Ending job | Writing |
+|------|------------|---------|
+| **`xuxul`** | pop one — **complete** | `]` / `}` / `)` / `>` |
+| **`xuxur`** | pop one — **truncated** (cut off / trail off; unspecified remainder) | `-]` / `-}` / `-)` / `->` (ASCII hyphen + closer) |
+| **`xuxun`** | pop one — **sic / editorial** (complete as-written, including defects; conventional editorial frame) | `#]` / `#}` / `#)` / `#>` |
+| **`xuxum`** | pop all | `\|` (or matching closers) |
+| **`xuxur xuxum`** | truncated innermost + pop all | `-\|` |
+| **`xuxun xuxum`** | sic innermost + pop all | `#\|` |
 
-Close endings are **not** exact/paraphrase/proper (those live only on the open). **`xuxun`** / **`xuxur`** undefined.
+Close endings are **not** open exact/paraphrase/proper. Open **-n** = proper/titled span; close **-n** = sic/editorial — different jobs. Open **-r** = span anaphor; close **-r** = truncated. Truncated and sic spans are ordinary antecedents for later **-r** opens (`daxar` = *that* cut-off or *sic* cite). Combined `-\|` / `#\|` are writing-only shorthand for two spoken closes; bare `xuxur` / `xuxun` never means pop-all by themselves.
 
 Named entities *inside* a **cite / mention / aside** still take ordinary PoS + **-n** (`z-Samn`, …) — [reference-suffix.md](reference-suffix.md). **Opaque** interiors are not parsed as Clarity words.
 
@@ -246,8 +266,12 @@ Object-slot examples: `daxal` / `daxam` / `daxan` / `daxar`; `daxol` / `daxon`; 
 
 | Form | Job |
 |------|-----|
-| `xuxul` | pop one |
+| `xuxul` | pop one — complete |
+| `xuxur` | pop one — truncated |
+| `xuxun` | pop one — sic / editorial |
 | `xuxum` | pop all |
+| `xuxur xuxum` | truncated + pop all (writing `-\|`) |
+| `xuxun xuxum` | sic + pop all (writing `#\|`) |
 
 <a id="when-required"></a>
 
@@ -286,11 +310,15 @@ Prefer **opaque** while the form is foreign orthography, unparsed donor text, or
 
 ## Nesting
 
-Fences nest freely. Each multi-token open pushes; **`xuxul`** pops the innermost; **`xuxum`** clears the stack. Atomic and anaphor do not nest-push.
+Fences nest freely. Each multi-token open pushes; **`xuxul`** / **`xuxur`** / **`xuxun`** pops the innermost (complete / truncated / sic); **`xuxum`** clears the stack. Atomic and anaphor do not nest-push.
 
 **Writing examples:**
 
 - `d[…]` — exact multi cite as object
+- `d[…-]` — truncated exact multi cite (*“I was going to—”*)
+- `d[…#]` — sic / editorial exact multi cite (*“seperate”* [sic])
+- `d[ … z{…} -|]` — truncated innermost + close-all (speech `xuxur xuxum`)
+- `d[ … z{…} #|]` — sic innermost + close-all (speech `xuxun xuxum`)
 - `d~[…]` — paraphrased multi cite as object
 - `d@[…]` — proper multi cite as object (also spelling of hedged proper `@~`)
 - `d[hi]` — atomic exact cite (*“hi”*)
@@ -312,7 +340,16 @@ Fences nest freely. Each multi-token open pushes; **`xuxul`** pops the innermost
 **Speech sketch** for atomic: `daxol hi`.  
 **Speech sketch** for atomic proper: `daxon Hamlet`.  
 **Speech sketch** for anaphor: `daxar`.  
+**Speech sketch** for truncated cite: `daxal` … `xuxur`.  
+Writing: `d[I was going to-]`.  
+**Speech sketch** for sic cite: `daxal` … `xuxun`.  
+Writing: `d[seperate#]`.  
 **Speech sketch** for nested then clear: `daxal` … `zoxal` … `xuxum` (pops both).  
+Writing: `d[ … z{…} |` (close-all) — or matching closers `} ]`.  
+**Speech sketch** for truncated + clear: `daxal` … `zoxal` … `xuxur xuxum`.  
+Writing: `d[ … z{…} -|]`.  
+**Speech sketch** for sic + clear: `daxal` … `zoxal` … `xuxun xuxum`.  
+Writing: `d[ … z{…} #|]`.  
 **Speech sketch** for literal close-shaped word as content: `daxal duxol xuxul xuxul`.
 
 <a id="literal-content"></a>
@@ -320,17 +357,21 @@ Fences nest freely. Each multi-token open pushes; **`xuxul`** pops the innermost
 
 ## Literal content (fence words / meta glyphs)
 
-When a span-marker word (speech) or a raw bracket / `~` / `@` / `<` / `>` / `=` / `»` / PoS-before-bracket sequence (writing) must appear **as content** inside a span — **not** for ordinary nesting.
+When a span-marker word (speech) or a raw bracket / `~` / `@` / `<` / `>` / `=` / `|` / `#` / hyphen-before-closer / PoS-before-bracket sequence (writing) must appear **as content** inside a span — **not** for ordinary nesting.
 
 ### Writing
 
-`\` before `[` / `]` / `{` / `}` / `(` / `)` / `<` / `>` / `~` / `@` / `»` / `=`. Literal backslash: `\\`.
+`\` before `[` / `]` / `{` / `}` / `(` / `)` / `<` / `>` / `~` / `@` / `|` / `#` / `=` / `-` (when the hyphen would form truncated close with the following closer). Literal backslash: `\\`.
 
 ```text
 d[ he typed \] then left ]
 d<code \> 1>
+d[ pipe \| here ]
+d[ score\- ]
+d[ item \# ]
 ```
 
+`d[score\-]` is a **complete** cite whose interior ends in a hyphen. `d[item\#]` is a **complete** cite whose interior ends in `#` — not sic close `#]`.
 ### Speech — nest atomic opaque
 
 There is **no** transparent speech escape. Bind the fence-shaped token as an **atomic opaque** (or other atomic cite/mention) so it is content, not an open/close:
@@ -349,7 +390,12 @@ Writing: `d[ d<xuxul> ]`.
 | Need | Use instead |
 |------|-------------|
 | Clause *and* / *or* / ranked claim join | `/x/` joins `xal` / `xol` / … — [coordination.md](coordination.md#clause-level-coordination) |
-| Clause negation *no* / *not* | `xul` / `xum` / `xun` — **not** `xuxul` / `xuxum` |
+| Clause negation *no* / *not* | `xul` / `xum` / `xun` — **not** `xuxul` / `xuxum` / `xuxur` / `xuxun` |
+| Em dash as truncated closer | ASCII hyphen + closer `-]` / `xuxur` — not an em dash |
+| Casual abort / scratch of a draft cite | revise the text; closes do **not** abort (truncated `xuxur` and sic `xuxun` still **commit** the surface) |
+| Open proper **-n** / `d@[…]` | titled designation of the span — **not** sic; use `#]` / `xuxun` for editorial *as-written* |
+| Number ordinal `#` in a number word | [numbers.md](numbers.md) — not span sic close (sic is `#]` in closer position only) |
+| Inferring close-all from bare `xuxur` / `xuxun` in speech | say `xuxur xuxum` / `xuxun xuxum`; writing may use `-\|` / `#\|` |
 | *However* / *therefore* / *but* (asymmetric linkers) | other `/x/` lexicon roots — [discourse markers](language-reference.md#discourse-markers-x) |
 | Numbered *point N:* | `/x/` + number — [numbers.md](numbers.md#number-as-discourse-marker-by-marker) |
 | *Because* / *if* subordination | `/h/` + `/b/` next-clause pronoun — [dependent clauses](language-reference.md#dependent-clauses) |
