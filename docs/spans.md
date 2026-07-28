@@ -408,10 +408,10 @@ Scope islands fill that gap: **edges = parentheses; adjunct = function.**
 | **`^ … ^`** | open / close of one scope island (same glyph both edges) |
 
 ```text
-jal h-maybel ^ z-redl z-dogl ^ v-sawl
+jal ^ h-maybel z-redl z-dogl ^ v-sawl
 ```
 
-Rough English: *I saw maybe ^ the red dog ^* — *maybe* targets the island, not necessarily the whole clause.
+Rough English: *I saw ^ maybe the red dog ^* — *maybe* is **inside** the island, so it targets that chunk, not the clause.
 
 **Rules:**
 
@@ -420,7 +420,7 @@ Rough English: *I saw maybe ^ the red dog ^* — *maybe* targets the island, not
 - Interior is ordinary Clarity (parsed as usual). Do **not** use italic or bold as the scope mark.
 - Empty `^^` is illegal.
 - Open and close use the **same** glyph **`^`**; the first unmatched `^` opens, the next closes (one island per clause — no nesting).
-- Prefer spaces inside: `^ z-redl z-dogl ^` (not `^z-redl^` jammed) so edges stay obvious next to roots.
+- Prefer spaces inside: `^ h-maybel z-redl z-dogl ^` (not jammed against roots).
 - In Markdown docs, put islands in backticks or `text` fences so engines that treat `^…^` as superscript do not mangle examples.
 
 **Not span brackets:** do not reuse `[` `]` `{` `}` `(` `)` `<` `>` for scope — those are cite / mention / aside / opaque.
@@ -430,26 +430,40 @@ Rough English: *I saw maybe ^ the red dog ^* — *maybe* targets the island, not
 No spoken open/close word (not `xuxul`, not a new `/x/` stem). Edges are **non-phonemic**:
 
 1. **Open** — brief reset: tiny pause or pitch reset, then a slight upstep into the first word of the island.
-2. **Interior** — one tight intonation phrase (one legato / slur group); less internal pausing than ordinary free-order shuffling; ordinary word stress.
+2. **Interior** — one tight intonation phrase (one legato / slur group); less internal pausing than ordinary free-order shuffling; ordinary word stress. The binder (if any) is **inside** that slur.
 3. **Close** — boundary on the last island stress, then a short pause before what follows.
 
 In singing: an ordinary **phrase bow** on the island — not quote voice (cite), not quiet aside voice (aside). Micro-breaths at the edges only when the line needs them; do not invent a rest glyph for `^`.
 
 ### Binding
 
-An ordinary adjunct (**`/h/`** or **`/w/`**, or other operator that takes scope) **binds the island** when present. Without a binder, the island is **chunking / meter only** — no semantic effect.
+**Inside binds.** A scope-taking **`/h/`** (simple, or contiguous `/h/`+`/b/` unit) **binds the island only when it stands inside** `^ … ^`. Prefer it **first** in the island for scanning (`^ h-maybel … ^`).
 
-Default binding (for now): the **nearest preceding** scope-taking `/h/` or `/w/` in the same clause binds the island. If none precedes, the **nearest following** one in the same clause binds it. At most one binder per island. Exact tie-break with multiple candidates is TBD; prefer one clear adjunct next to the island in careful writing.
+| Placement | Reading |
+|-----------|---------|
+| `/h/` **inside** the island | frames that **chunk** (multi-word scope) |
+| `/h/` **outside** the island | ordinary floating adverb — frames the **verb / clause** as usual |
 
-The binder keeps its own lexicon meaning (*maybe*, *roughly*, *only*, *former*, …). The island only supplies **multi-word scope**.
+**`/w/` does not bind islands** — it still only frames the previous `/ɡ/`. For a single-adjective hedge, use `/w/` on that `/ɡ/` (no island).
+
+Bare `^ … ^` with **no** inside `/h/` is **chunking / meter only** — no semantic operator. Several `/h/` units inside one island all scope over that chunk (same co-stacking as clause-level juxtaposition, but island-bounded). Outside `/h/` never “steals” or loses clause scope just because an island is present:
+
+```text
+jal h-yesterdayl ^ h-maybel z-redl z-dogl ^ v-sawl
+```
+
+*yesterday* = clause; *maybe* = over *the red dog*.
+
+The binder keeps its lexicon meaning (*maybe*, *roughly*, *only*, …). The island only supplies **multi-word scope**.
 
 Sketch contrast:
 
 | Form | Reading |
 |------|---------|
 | `jam … z-redl z-dogl …` | whole-clause hedge (**`jam`**) |
-| `jal h-maybel z-redl z-dogl …` | *maybe* with default / ambiguous scope |
-| `jal h-maybel ^ z-redl z-dogl ^ …` | *maybe* over **the red dog** as a unit |
+| `jal h-maybel z-redl z-dogl …` | *maybe* with default clause scope (ambiguous vs NP) |
+| `jal ^ h-maybel z-redl z-dogl ^ …` | *maybe* over **the red dog** as a unit |
+| `jal h-maybel ^ z-redl z-dogl ^ …` | *maybe* still **clause-level**; island is meter-only (no inside binder) |
 
 ### Not this
 
@@ -458,6 +472,7 @@ Sketch contrast:
 | Nested packaging / wording fidelity / opaque | typed [span fences](#writing) |
 | Whole-clause soft assert | **`jam`** — [clause force](language-reference.md#clause-force) |
 | Single-adjective frame | `/w/` on that `/ɡ/` |
+| Outside `/h/` meant to cover a multi-word chunk | put that `/h/` **inside** `^ … ^` |
 | Cite / mention / aside / opaque brackets | `[` `]` `{` `}` `(` `)` `<` `>` with PoS |
 | Spoken name for the edges | *(none)* — prosody only |
 
