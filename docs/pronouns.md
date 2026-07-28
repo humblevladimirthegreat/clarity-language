@@ -150,7 +150,7 @@ Forms TBD. Roles:
 * **Speaker** (1st person)
 * **Listener** (2nd person)
 * **Generic single person** (a nonspecific individual — not impersonal *one*)
-* **Next clause** — placeholder for the immediately following sentence (dependent clauses). Takes the PoS prefix of the slot it fills (`/d/` complement, `/b/` under `/h/` *because* / *if*, etc.). Form TBD; see [Dependent Clauses](language-reference.md#dependent-clauses).
+* **Next clause** — placeholder for the material that **immediately follows** it (dependent clauses). **Matrix-final in its clause:** NEXT is the last word of that host (for `/h/`+`/b/` subordination, the contiguous unit ends with NEXT); the dependent follows with no intervening host words. **Chaining** allowed: a dependent may itself end in NEXT ([dependent clauses](language-reference.md#dependent-clauses)). Takes the PoS prefix of the slot it fills (`/d/` complement, `/b/` under `/h/` *because* / *if*, etc.). Form TBD.
 
 **Group containing** a referent is not a separate special pronoun: append **-sh** where [plurality](plurality.md) allows it (see above).
 

@@ -1,6 +1,5 @@
 -confirm dependent clauses
 -punctuation
--no dipthongs, different syllables?
 
 Dictionary entries:
 -special pronouns
