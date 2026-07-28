@@ -226,7 +226,7 @@ Pronoun grammar (anaphoric **-r** forms, special pronouns) lives in **[pronouns.
 
 # Numbers
 
-Numeral grammar (digit roots, [digitless / zero-group forms](numbers.md#zero-digit-groups), [digitless exponents](numbers.md#digitless-exponents) (+∞ / −∞ / last place / …), engineering/scientific forms, ordinals, digit-strings, `/x/` enumeration, number-word shape, [preferred writing](numbers.md#writing-preferred-shorthand) (second-slot **`~`** / **`@`** / **`=`** for endings), [percent denominators](numbers.md#percent-denominators), [ranges](numbers.md#ranges) / [thresholds](numbers.md#numeric-thresholds) / [measure phrases](numbers.md#measure-phrases)) lives in **[numbers.md](numbers.md)**.
+Numeral grammar (digit roots, [digitless / zero-group forms](numbers.md#zero-digit-groups), [digitless exponents](numbers.md#digitless-exponents) (+∞ / −∞ / last place / start place / `/v/` `/h/` overlays / **`j+e`** *To infinity!* / …), engineering/scientific forms, ordinals, digit-strings, `/x/` enumeration, number-word shape, [preferred writing](numbers.md#writing-preferred-shorthand) (second-slot **`~`** / **`@`** / **`=`** for endings), [percent denominators](numbers.md#percent-denominators), [ranges](numbers.md#ranges) / [thresholds](numbers.md#numeric-thresholds) / [measure phrases](numbers.md#measure-phrases)) lives in **[numbers.md](numbers.md)**.
 
 # Comparatives, superlatives, and equatives
 

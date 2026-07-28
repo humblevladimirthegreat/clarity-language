@@ -18,8 +18,8 @@ The language has no distinction between voiced/unvoiced, but the voiced version 
 
 h /ɣ/, w /w/, g /ɡ/, d /d/, j /dʑ/, b /b/, z /z/, m /m/, n /n/, v /v/, x /ʒ/
 
-possible clusters:
-gr, gl, dr, br, bl
+unused potential beginning clusters:
+gw, vw, xw, bl (should not mean left aligned b)
 
 ### Consonants at end of syllables (except end of word)
 

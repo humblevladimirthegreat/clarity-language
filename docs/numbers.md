@@ -98,15 +98,22 @@ Contrasts:
 
 - `h+3` — *three times* / ×3
 - `h-3` — ÷3 / every third / into 3
+- `h+` — *multiple times* (unspecified)
+- `h#e` — *for the last time*
+- `h#e-` — *for the first time* (onset landmark; contrast numbered `h#1`)
 - `h_15,30` — *at 15:30* (bare `hro` = time; [Time](#time))
 - `h_2026,07,22` — *on 2026-07-22* (bare `hro` date)
 - `/h/` *on* + `b_101.1` — *on 101.1* (non-time code; not bare `h_…`)
 - `h#3` — *for the third time*
 - `h#1e` — *for the gazillionth time* ([hyperbole](#hyperbole-gazillion))
 - `j#3` — *Third!* (place cheer)
+- `j#e` — *Finally!* ([digitless exp](#digitless-exponents))
+- `j+e` — *To infinity!*
 - `x#3` — *point 3:* (neutral discourse item)
 - `g#3` — *the third* (modifies a noun)
 - `v+3` — *add 3* (verb)
+- `v+` — *increase* (unspecified amount)
+- `v#e` — *take last place*
 
 Endings still apply (**-m** ≈ *about* that many times / that clock or date, **-r** resume — including digitless `h=+` / `h=_`). Relative %-change factors use **`h+…`** (e.g. ×1.5), not **`jo`** / **`ju`** alone — see [percent](#percent-and-percentage-points).
 
@@ -130,13 +137,20 @@ Contrasts:
 - `j-3` — *Three short!* / *Three fewer!* / *−3!* (deficit)
 - `j_27` — *Twenty-seven!* as label call
 - `j#1` — *First!* (place cheer)
+- `j#e` — *Finally!* (coda cheer — [digitless exp](#digitless-exponents); contrast **`x#e`** *Finally:*)
+- `j#e-` — *(finally, we're) starting!* (onset cheer; contrast **`x#e-`** *Starting with:*)
+- `j+e` — *To infinity!*
 - `j#1e` — *Gazillionth!* (comic place cheer — [hyperbole](#hyperbole-gazillion))
 - `j#2e-` — *Penultimate!* / *Second from last!* ([from the end](#from-the-end))
 - `x#1` — *point 1:* (neutral discourse item)
-- `h#1` — *for the first time*
+- `h#1` — *for the first time* (numbered)
+- `h#e-` — *for the first time* (onset landmark)
+- `h#e` — *for the last time*
 - `h#1e` — *for the gazillionth time*
 - `h#2e-` — *for the penultimate time*
 - `v#1` — *take / assign 1st* (verb)
+- `v#e` — *take last place*
+- `v#e-` — *take starting place*
 
 Endings still apply (**-m** fuzzy *about three more!* / *about three!*, **-n** conventional call name, **-r** resume a prior shout’s value — digitless `j=+` / `j=_` allowed).
 
@@ -155,7 +169,7 @@ Endings still apply (**-m** fuzzy *about three more!* / *about three!*, **-n** c
 
 **Starting point / *Starting with*:** digitless-exp start-place under `/x/` + **`re`** — **`x#e-`** = *Starting with:* / *to begin:* (committed opening item; beginning/onset framing, **not** English *firstly*). Soft **`x~#e-`** = near-start / soft lead-in; named **`x@#e-`** = ritual / titled *Starting with*; **`x=#e-`** resumes that start-point marker. Ordinary numbered *firstly* stays **`x#1`**.
 
-Other `/x/` no-mantissa digitless-exp forms (`x+e` +∞-as-index, `x-e` −∞-as-index, …) stay **undefined**. Mantissa + digitless-exp discourse indices: **`x#1e`** *umpteenth point:* ([hyperbole](#hyperbole-gazillion)); **`x#2e-`** *2nd-from-end point:* ([from the end](#from-the-end)) — not the start/last landmarks.
+Other `/x/` no-mantissa digitless-exp forms (**`x+e`**, **`x-e`**, …) stay **undefined**. Mantissa + digitless-exp discourse indices: **`x#1e`** *umpteenth point:* ([hyperbole](#hyperbole-gazillion)); **`x#2e-`** *2nd-from-end point:* ([from the end](#from-the-end)) — not the start/last landmarks.
 
 **Independence framing:** **`#`** = unmarked inventory or steps; **`+`** = corroborating (aligned with something already listed); **`-`** = independent (new line of support). Do not use **`+`** / **`-`** for for/against or open vs scratch a bullet — independence is the point. Ordinary *firstly / secondly* without that framing is **`x#N`**. *Starting with* without a numeric step count is **`x#e-`**; *Finally* without a numeric step count is **`x#e`**. For/against and both-sides checks stay in ordinary wording or claim-level evidentiality, not on the number marker.
 
@@ -165,6 +179,9 @@ Contrasts:
 - `x#2` — *point 2:* (neutral discourse item)
 - `x#e-` — *Starting with:* / *to begin:* (digitless start-place under `/x/`)
 - `x#e` — *Finally:* / *last point:* (digitless last-place under `/x/`)
+- `j#e-` — *(finally, we're) starting!* (onset cheer)
+- `j#e` — *Finally!* (coda cheer)
+- `j+e` — *To infinity!*
 - `x+2` — *corroborating 2:*
 - `x-2` — *independent 2:*
 - `h#2` — *for the second time* (event ordinal adverb)
@@ -213,9 +230,9 @@ A number word may omit every digit group: **PoS + marker + ending** only. The ma
 | Overlay | Digitless examples |
 |---------|-------------------|
 | `/ɡ/` `/z/` `/d/` `/b/` | `g+` *plural / more than one* (on a noun); `z-` *some negative amount* (subj); `b#` *of some rank*; `d_` *some code* (obj) |
-| `/v/` | `v+` *add some plural amount* / *increase by more than one*; `v-` *decrease by some amount*; `v#` *take / assign some rank*; `v_` *enter / dial some code* |
-| `/h/` | `h+` *multiple times* / ×(unspecified `>1`); `h-` *÷(unspecified)* / *into some number of parts*; `h#` *for some nth time*; `h_` *at some clock or date* (still bare-`hro` **time** only — not channel codes) |
-| `/j/` | `j+` *More!* (unspecified plural addition); `j-` *Short!* / *down by some amount!*; `j#` *Nth!* (place cheer, rank unnamed); `j_` *…!* (unspecified score / code call) |
+| `/v/` | Unspecified amount under the verb sense: **`v+`** *increase*; **`v-`** *decrease*; **`v#`** *take / assign some rank*; **`v_`** *enter / dial some code*. Soft: **`v~+`** *increase a bit*; **`v~-`** *decrease a bit* |
+| `/h/` | Unspecified amount under the adverb sense: **`h+`** *multiple times*; **`h-`** *÷ / into some number of parts*; **`h#`** *for some nth time*; **`h_`** *at some clock or date* (still bare-`hro` **time** only — not channel codes). Soft: **`h~+`** *a few times*; **`h~-`** *÷ a bit* / *into a few parts* |
+| `/j/` | **`j+`** *More!*; **`j-`** *Short!* / *down by some amount!*; **`j#`** *Nth!* (place cheer, rank unnamed); **`j_`** *…!* (unspecified score / code call). Soft: **`j~+`** *a bit more!* |
 | `/x/` | `x#` *some point:* (neutral, number unnamed); `x+` / `x-` corroborating / independent item of unnamed index; `x_` *regarding some (unnamed) label* |
 
 **`h_` vs `har`:** digitless time `h_` is still a **number word** (unspecified clock/date reading under bare `hro`). Circumstance **`har`** (*sometime*) is the [restrictor](restrictors.md), not a numeral — do not swap them.
@@ -315,18 +332,58 @@ Same under `/z/` `/d/` `/b/` (`z+e` = +∞ as subject; `d#e-` = start-place as o
 
 **Contrast:** zero-group `g+` = plural count `>1`. Bare OoM `g+e9` = order 10⁹. No-mantissa `g+e` = +∞; no-mantissa `g#e` = last place. Mantissa + digitless **`ba`** (`g+1e` / `g#1e`) = [hyperbole](#hyperbole-gazillion). Mantissa + digitless **`bu`** on **`#`** (`g#2e-`) = [from the end](#from-the-end). Focus ranked digitless (`zel z+`) is **not** a special value — ordinary *only (plural) matters* / preference framing (the old focus→∞ reading is **removed**).
 
-##### Overlay `/v/` and `/h/` (without-bound only)
+##### Overlay `/v/` and `/h/`
 
-No-mantissa digitless-exp **`ra`** / **`ru`** under `/v/` and `/h/` with **-l**:
+No-mantissa digitless-exp under `/v/` and `/h/` inherit special-value identity (∞ / last / start / micro) into the verb or adverb role. Soft **-m** parallels referential softs (*a lot but finite* / *near last* / …).
+
+**Scalars (`ra` / `ru`):**
 
 | Form | Reading |
 |------|---------|
 | **`v+e`** | **increase without bound** |
+| **`v~+e`** | *increase a lot but finite* |
 | **`v-e`** | **decrease without bound** |
+| **`v~-e`** | *decrease a lot but finite* |
+| **`v+e-`** | **nudge up** — increase by an arbitrarily small but finite amount |
+| **`v-e-`** | **nudge down** — decrease by an arbitrarily small but finite amount |
 | **`h+e`** | **unbounded multiplicity** (× without bound / unboundedly many times) |
+| **`h~+e`** | *many times but finite* |
 | **`h+e-`** | **unbounded duplicity** (÷ without bound / into unboundedly many parts) |
+| **`h~+e-`** | *÷ a lot / into many parts, but finite* |
 
-No-mantissa digitless-exp **`re`** / **`ro`** under `/v/` `/h/`, and `/j/` no-mantissa digitless-exp forms, are **undefined** here. Under `/x/`, **last-place** **`x#e`** (and **`x~#e`** / **`x@#e`** / **`x=#e`**) = discourse *Finally* / last point, and **start-place** **`x#e-`** (and **`x~#e-`** / **`x@#e-`** / **`x=#e-`**) = discourse *Starting with:* / beginning — see [Number as discourse marker](#number-as-discourse-marker-by-marker). Other `/x/` no-mantissa digitless-exp forms stay **undefined**.
+**Ordinals (`re`) — start/last landmarks:**
+
+| Form | Reading |
+|------|---------|
+| **`v#e`** | *take / come in last place* |
+| **`v~#e`** | *take / come in near last place* |
+| **`v#e-`** | *take / come in starting place* |
+| **`v~#e-`** | *take / come in near first place* |
+| **`h#e`** | *for the last time* |
+| **`h~#e`** | *for a near-last time* |
+| **`h#e-`** | *for the first time* (onset framing — contrast numbered **`h#1`**) |
+| **`h~#e-`** | *for a near-first time* |
+
+**`ro`** under `/v/` `/h/` stays **undefined**. Soft/named/resume endings (**`~`** / **`@`** / **`=`**) apply as on other specials.
+
+##### Overlay `/j/`
+
+No-mantissa digitless-exp under `/j/` (interjection cheers):
+
+| Form | Reading |
+|------|---------|
+| **`j+e`** | *To infinity!* |
+| **`j~+e`** | *To a huge (but finite) amount!* |
+| **`j#e`** | *Finally!* (place/coda cheer — contrast discourse **`x#e`** *Finally:*) |
+| **`j~#e`** | *Almost finally!* / soft coda cheer |
+| **`j#e-`** | *(finally, we're) starting!* (onset cheer — contrast discourse **`x#e-`** *Starting with:*) |
+| **`j~#e-`** | soft onset cheer |
+
+Other `/j/` no-mantissa digitless-exp forms (`j-e`, `j+e-`, `j_…`, …) stay **undefined**.
+
+##### Overlay `/x/`
+
+Under `/x/`, **last-place** **`x#e`** (and **`x~#e`** / **`x@#e`** / **`x=#e`**) = discourse *Finally* / last point, and **start-place** **`x#e-`** (and **`x~#e-`** / **`x@#e-`** / **`x=#e-`**) = discourse *Starting with:* / beginning — see [Number as discourse marker](#number-as-discourse-marker-by-marker). **`x+e`** / **`x-e`** (and other `/x/` no-mantissa digitless-exp forms beyond start/last) stay **undefined**.
 
 #### Hyperbole — mantissa + digitless exponent
 <a id="gazillion"></a>
@@ -389,7 +446,7 @@ On **`re`** only: mantissa digits + digitless **`bu`** (**`e-`**) = **Nth from t
 
 | Form | Reading |
 |------|---------|
-| **`g#1e-`** | *1st from the end* — same referent as last-place **`g#e`**, framed as counting from the end |
+| **`g#1e-`** | *1st from the end* — same referent as last-place **`g#e`**, framed as counting from the end (English *Starting with the last one*) |
 | **`g#2e-`** | *2nd from the end* / *penultimate* |
 | **`g#3e-`** | *3rd from the end* / *antepenultimate* |
 | **`g~#2e-`** | *about 2nd from the end* |
@@ -405,10 +462,10 @@ On **`re`** only: mantissa digits + digitless **`bu`** (**`e-`**) = **Nth from t
 | **`h#2e-`** | *for the 2nd-from-last time* / *the penultimate time* |
 | **`v#2e-`** | *place / come in 2nd from the end* |
 | **`j#2e-`** | *Penultimate!* / *Second from last!* |
-| **`x#1e-`** | *1st-from-end point:* (counting twin of **`x#e`** *Finally:*) |
+| **`x#1e-`** | *1st-from-end point:* / *Starting with the last one:* (counting twin of **`x#e`** *Finally:*) |
 | **`x#2e-`** | *2nd-from-end point:* / *penultimate item:* |
 
-Examples: `g+e` → +∞; `g~+e` → arbitrarily large but finite; `g+1e` → *one gazillion*; `g~+1e` → *about a gazillion*; `g@+1e` → proper name *One Gazillion* / *the Gazillion*; `g+1e-` → *one gazillionth*; `g+e-` → arbitrarily small but finite; `g-e` → −∞; `g#e` → last place; `g~#e` → near last place; `g#e-` → start / beginning place; `g~#e-` → near first place; `g#1e` → *the gazillionth* / *umpteenth*; `g#2e-` → *2nd from the end* / *penultimate*; `g#1e-` → *1st from the end* (counting last); `h#1e` → *for the gazillionth time*; `h#2e-` → *for the penultimate time*; `x#e-` → *Starting with:*; `x#e` → *Finally:* / last discourse point; `v+e` → increase without bound; `h+e` → unbounded multiplicity; `h+1e` → *a gazillion times*; `g+e9` → bare OoM e9; `g+` → plural `>1`.
+Examples: `g+e` → +∞; `g~+e` → arbitrarily large but finite; `g+1e` → *one gazillion*; `g~+1e` → *about a gazillion*; `g@+1e` → proper name *One Gazillion* / *the Gazillion*; `g+1e-` → *one gazillionth*; `g+e-` → arbitrarily small but finite; `g-e` → −∞; `g#e` → last place; `g~#e` → near last place; `g#e-` → start / beginning place; `g~#e-` → near first place; `g#1e` → *the gazillionth* / *umpteenth*; `g#2e-` → *2nd from the end* / *penultimate*; `g#1e-` → *1st from the end* / *Starting with the last one*; `h#1e` → *for the gazillionth time*; `h#2e-` → *for the penultimate time*; `x#e-` → *Starting with:*; `x#e` → *Finally:* / last discourse point; `v+e` → increase without bound; `v~+e` → increase a lot but finite; `v+e-` → nudge up; `h+e` → unbounded multiplicity; `h#e` → *for the last time*; `h#e-` → *for the first time* (onset); `v#e` → *take last place*; `v#e-` → *take starting place*; `j+e` → *To infinity!*; `j#e` → *Finally!*; `j#e-` → *(finally, we're) starting!*; `h+1e` → *a gazillion times*; `g+e9` → bare OoM e9; `g+` → plural `>1`.
 
 ## Percent and percentage points
 
@@ -568,7 +625,7 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 | the gazillionth / umpteenth | `g#1e` | *grewobal* (`re` + wo + `ba` + `l`) |
 | about the gazillionth | `g~#1e` | *grewobam* |
 | 2nd from the end / penultimate | `g#2e-` | *gredubul* (`re` + du + `bu` + `l`) |
-| 1st from the end (counting last) | `g#1e-` | *grewobul* (`re` + wo + `bu` + `l`) |
+| 1st from the end / *Starting with the last one* | `g#1e-` | *grewobul* (`re` + wo + `bu` + `l`) |
 | for the gazillionth time | `h#1e` | *hrewobal* |
 | for the penultimate time | `h#2e-` | *hredubul* |
 | *Gazillionth!* | `j#1e` | *jrewobal* |
@@ -584,15 +641,30 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 | *Starting with:* | `x#e-` | *xrebul* |
 | *Finally:* | `x#e` | *xrebal* |
 | increase without bound | `v+e` | *vrabal* |
+| increase a lot but finite | `v~+e` | *vrabam* |
+| nudge up | `v+e-` | *vrabul* |
+| decrease without bound | `v-e` | *vrubal* |
+| nudge down | `v-e-` | *vrubul* |
+| take last place | `v#e` | *vrebal* |
+| take starting place | `v#e-` | *vrebul* |
 | unbounded multiplicity | `h+e` | *hrabal* |
+| many times but finite | `h~+e` | *hrabam* |
 | a gazillion times | `h+1e` | *hrawobal* |
 | unbounded duplicity | `h+e-` | *hrabul* |
+| for the last time | `h#e` | *hrebal* |
+| for the first time (onset) | `h#e-` | *hrebul* |
+| *To infinity!* | `j+e` | *jrabal* |
+| *Finally!* | `j#e` | *jrebal* |
+| *(finally, we're) starting!* | `j#e-` | *jrebul* |
 | some negative amount | `z-` | *zrul* |
 | some rank | `g#` | *grel* |
 | some code (object) | `d_` | *drol* |
 | that (prior) scalar again | `g=+` | *grar* (digitless **-r**) |
 | that (prior) code again | `d=_` | *dror* |
+| increase (unspecified) | `v+` | *vral* |
+| increase a bit | `v~+` | *vram* |
 | multiple times | `h+` | *hral* |
+| a few times | `h~+` | *hram* |
 | at some clock/date | `h_` | *hrol* — still bare `hro` = time; ≠ `har` |
 | More! | `j+` | *jral* |
 | 3 | `g+3` | *grarel* (`g` + `ra` + re + `l`) |
@@ -763,7 +835,7 @@ Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which val
 
 **Clock / date spans:** do **not** use bare circumstance-`hal` (that series is [applicability](restrictors.md)). Prefer SHARED continuum **`g-timel`** (or a host relation + `/b/`) with digit-string endpoints (`bal g-timel b_15,00 b_16,00`).
 
-Examples: `zal g-agel z+3 z+5` → *between ages 3 and 5*; `z-kidl gal g-agel g+3 g+5` → *kids ages 3–5*; `zal g-spanl z+3 ul z+5` → *[3, 5)*; `zel g-agel z+10 z+20` → *from age 10 to 20*; `zel z+3 z+5` → *3 ≻ 5* (preference, not a span); `zel z+5` → *\< 5*; `zuel z+5` → *\> 5*; `g+e` → +∞; `g+1e` → *one gazillion*; `g@+1e` → proper name *the Gazillion*; `g~+e` → arbitrarily large but finite; `g+e-` → arbitrarily small but finite; `g#e` → last place; `g~#e` → near last place; `g#e-` → start / beginning place; `g~#e-` → near first place; `g#1e` → *the gazillionth* / *umpteenth*; `g#2e-` → *2nd from the end* / *penultimate*; `h#1e` → *for the gazillionth time*; `x#e-` → *Starting with:*; `v+e` → increase without bound; `h+e` → unbounded multiplicity; `zael z+5 z+5` → *equally 5* / *5 equals 5*; `zaem z+3 z+5` → *3 and 5 approximately equal*; `zar g-spanl z+3 z+5` → *some value in 3–5*; `zol z+3 z+5` → *3 or 5* (discrete, not a range).
+Examples: `zal g-agel z+3 z+5` → *between ages 3 and 5*; `z-kidl gal g-agel g+3 g+5` → *kids ages 3–5*; `zal g-spanl z+3 ul z+5` → *[3, 5)*; `zel g-agel z+10 z+20` → *from age 10 to 20*; `zel z+3 z+5` → *3 ≻ 5* (preference, not a span); `zel z+5` → *\< 5*; `zuel z+5` → *\> 5*; `g+e` → +∞; `g+1e` → *one gazillion*; `g@+1e` → proper name *the Gazillion*; `g~+e` → arbitrarily large but finite; `g+e-` → arbitrarily small but finite; `g#e` → last place; `g~#e` → near last place; `g#e-` → start / beginning place; `g~#e-` → near first place; `g#1e` → *the gazillionth* / *umpteenth*; `g#2e-` → *2nd from the end* / *penultimate*; `h#1e` → *for the gazillionth time*; `x#e-` → *Starting with:*; `v+e` → increase without bound; `h+e` → unbounded multiplicity; `j+e` → *To infinity!*; `j#e` → *Finally!*; `zael z+5 z+5` → *equally 5* / *5 equals 5*; `zaem z+3 z+5` → *3 and 5 approximately equal*; `zar g-spanl z+3 z+5` → *some value in 3–5*; `zol z+3 z+5` → *3 or 5* (discrete, not a range).
 
 ## Stress (pronunciation guide)
 
