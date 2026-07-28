@@ -59,21 +59,25 @@ Spoken open/close may be omitted in casual speech when the listener has writing 
 
 ## Part of speech (slot)
 
-The **open** (or anaphor’s) PoS is the role of the **entire** span in the outer clause. Close is always `/x/`-shaped **`xuxul`** / **`xuxum`** (no PoS match required).
+The **open** (or anaphor’s) PoS is the **outer-clause slot** of the **entire** span — not the PoS of words inside the fence. Interior may be a fragment, a full sentence, foreign text, or code; the open’s PoS only says how that packaged surface sits in the host clause. Close is always `/x/`-shaped **`xuxul`** / **`xuxum`** (no PoS match required). Anaphor **-r** may take a **different** PoS than its antecedent open (`zaxar` = that prior cite as subject).
 
-| PoS | Typical use |
-|-----|-------------|
-| `/d/` | *said “…”* — span as object (`daxal` … `xuxul`; `daxol hi`; `daxar`) |
-| `/z/` | span as subject |
-| `/b/` | span as argument of a complex `/ɡ/` or `/h/` (*about “…”*) |
-| `/v/` | cited / opaque VP chunk |
-| `/ɡ/` | predicative or attributive span property |
-| `/w/` | rare — span frame on the preceding `/ɡ/` |
-| `/h/` | manner span; **asides** prefer this (`hexal` … `xuxul`) so digressions float like other adverbs |
-| `/j/` | vocative / expressive edge with a spanned call or title |
-| `/x/` | discourse-only citation (epigraph, freestanding span — not a main-clause argument) |
+Ask: *in the outer sentence, what slot does this chunk fill?* Prefer a **nativized** ordinary word (PoS + adapted root + ending, no span) when the surface wording is not the point. Prefer a **span** at that PoS when fidelity, opacity, use–mention, or attributed wording matters.
 
-Sketch (*he said “hi”* — atomic):
+| PoS | When it earns its keep | Forms (sketch) |
+|-----|------------------------|----------------|
+| `/d/` | Default cite object — *said / wrote / typed “…”* | `daxal` … `xuxul`; `d[hi]`; `d[=]` |
+| `/z/` | The wording or title **is** the subject — *“Hello” started the fight*; *“Hamlet” sold out* | `zaxal` …; `z@[Hamlet]`; `z[=]` |
+| `/b/` | Host needs a `/b/` argument — *about “…”*, *of the form {…}*, *called “…”* | `baxal` …; `b{…}`; `b[=]` |
+| `/v/` | Span **is** the verb (phrase) — not an object of *say*: echo / report the act as wording (*don’t “I never said that” me*); opaque or foreign predicate (`v<code.run()>`); mention-as-predicate (*to “hello” someone*); anaphor in VP slot (*and then he `v[=]`-ed again*) | `vaxal` …; `v{hello}`; `vuxol run`; `v[=]` |
+| `/ɡ/` | Predicative or attributive property **is** the spanned string — *so-called “ready”*; title / opaque label as AP | `gaxal` …; `g@[Draft]`; `g[=]` |
+| `/w/` | Rare — span as **frame** on the preceding `/ɡ/` | `waxal` … |
+| `/h/` | Manner cite; **asides** prefer this so digressions float like other adverbs | `hexal` … `xuxul`; `h(…)`; `h~(…)` |
+| `/j/` | Vocative / expressive edge with a spanned call or title — *Hey, “Captain”!* | `jaxol Captain`; `j@[…]` |
+| `/x/` | Discourse-only citation (epigraph, freestanding span — not a main-clause argument) | `xaxal` …; `x[…]` |
+
+TYPE and EDGE are independent of PoS (`h` + **a** is still **cite** as manner; `/v/` + **u** is opaque VP). Prefer `/h/` for asides — that is a **PoS preference**, not a TYPE override.
+
+Sketch (*he said “hi”* — atomic object cite):
 
 ```text
 jal z-hen daxol hi v-saidl
@@ -88,6 +92,14 @@ jol z-hen daxar v-saidl
 ```
 
 Writing: `jol z-hen d[=] v-saidl`
+
+Sketch (*don’t “oops” me* — cite as VP):
+
+```text
+jul z-you vaxol oops d-mel
+```
+
+Writing: `jul z-you v[oops] d-mel`
 
 <a id="writing"></a>
 

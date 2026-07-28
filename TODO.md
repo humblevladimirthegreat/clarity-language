@@ -1,4 +1,4 @@
--gw as judgment values on 
+
 
 Dictionary entries:
 -special pronouns
