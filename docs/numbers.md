@@ -242,7 +242,7 @@ Within each digit group:
 - The **exponent comes before** the group’s mantissa digits.
 - If a mantissa follows the exponent, say **`ja`** after the last exponent digit, then the mantissa. Example: `27e12` → `ba` + `wo` + `du` + `ja` + `du` + `le`.
 - **Bare order of magnitude** (exponent only, no mantissa): use `ba`/`bu` + exponent digits and **omit** **`ja`**. The group ends at the next `ba`/`bu`, or at the word ending. Example: *e9* → `ba` + `na` (not `*banaja`).
-- **Digitless exponent** (special values): use `ba`/`bu` with **no** exponent digits and **no** mantissa — see [Digitless exponents](#digitless-exponents). Not the same as bare OoM (which always names the power) and not a [zero-group](#zero-digit-groups) word.
+- **Digitless exponent** ([special values](#digitless-exponents) or [hyperbole](#hyperbole-gazillion)): use `ba`/`bu` with **no** exponent digits — alone for specials (`g+el`), or after mantissa digits for hyperbole (`g+1el`). Not the same as bare OoM (which always names the power) and not a [zero-group](#zero-digit-groups) word.
 - If the exponent is **0**, omit the exponent (and thus omit **`ja`**) entirely — except do **not** confuse omitted-zero with digitless `ba`/`bu` special values.
 - Default spoken/written scale uses **engineering notation**: exponents are usually multiples of **3** (e.g. `27e6`, not `2.7e7`).
 - **Decimal point:** say **`je`** after the digit(s) left of the point; digits after **`je`** are the fractional part (group in threes if long). May appear with or without an exponent.
@@ -256,14 +256,24 @@ Within each digit group:
 <a id="extremum-digitless"></a>
 <a id="infinity"></a>
 <a id="special-numeric-values"></a>
+<a id="hyperbole-gazillion"></a>
 
-A digit group may be **only** an exponent marker (**`ba`** or **`bu`**) with **no** exponent digits and **no** mantissa. That shape is a **closed special value** (or overlay action) — unspecified order of magnitude pushed to an extreme — not bare OoM and not [zero-group](#zero-digit-groups) plural/unspecified payload.
+A digit group may use an exponent marker (**`ba`** or **`bu`**) with **no** exponent digits. Two readings, by whether a **mantissa** is present:
 
-**Writing:** **`e`** = speech **`ba`**; **`e-`** = speech **`bu`**. Digitless means nothing between that mark and the ending: `g+el`, `g+e-l`, `g#el`.
+| Shape | Reading |
+|-------|---------|
+| **`ba`/`bu` alone** (no mantissa) | **Special value** — +∞ / −∞ / last place / … (tables below) |
+| **Mantissa digits + `ba`/`bu`∅** | **Hyperbole** — *N gazillion* / *N gazillionth* (comic / vague huge or tiny scale) |
 
-**Shape:** one such group only (do not stack digitless exp with mantissa digits, percent closers, or further groups). Marker identity still applies.
+Neither is bare OoM (which always **names** the power: `g+e9l`) nor a [zero-group](#zero-digit-groups) word (`g+l` = plural `>1`).
 
-#### Referential (`/ɡ/` `/z/` `/d/` `/b/`)
+**Writing:** **`e`** = speech **`ba`**; **`e-`** = speech **`bu`**. Digitless means no power digits after that mark: `g+el`, `g+1el`, `g+e-l`, `g+1e-l`.
+
+**Shape limits:** one such group only in the word; do not combine digitless exp with real exp digits, percent closers, or further groups. Marker identity still applies. Digitless exp on **`ro`** / **`_`** is **undefined**.
+
+#### Special values — no mantissa
+
+##### Referential (`/ɡ/` `/z/` `/d/` `/b/`)
 
 | Form | Anatomy | Reading |
 |------|---------|---------|
@@ -274,26 +284,25 @@ A digit group may be **only** an exponent marker (**`ba`** or **`bu`**) with **n
 | **`g-em`** | **`ru`** + **`ba`∅** + **-m** | **arbitrarily large but finite** (negative / deficit) |
 | **`g#el`** | **`re`** + **`ba`∅** + **-l** | **last place** |
 | **`g#e-l`** | **`re`** + **`bu`∅** + **-l** | **unranked** |
-| Digitless exp on **`ro`** / **`_`** | — | **Undefined** (labels are not OoM) |
 | **`g-e-l`** (`ru` + **`bu`∅**) | — | **Undefined** for now (spare cell) |
 
 Same under `/z/` `/d/` `/b/` (`z+el` = +∞ as subject; `d#e-l` = unranked as object; `b+e-l` = *of an arbitrarily small but finite amount*).
 
-**Endings** (relative to the special value):
+**Endings** (no-mantissa specials):
 
 | Ending | Sense |
 |--------|-------|
 | **-l** | Exact special value (default): +∞ / −∞ / last place / arbitrarily small but finite / unranked as in the form table |
 | **-m** on **`ba`∅** (`…em`) | **Arbitrarily large but finite** on scalars (`g+em` / `g-em`); on ordinals (`g#em`) = soft / near **last place** |
 | **-m** on **`bu`∅** (`…e-m`) | Soft / approximate small or soft unranked |
-| **-n** | Conventional symbol or stock label (∞, −∞, *last place* as a title; small/unranked labels when useful) |
+| **-n** | Proper / conventional designation of that special (named ∞ symbol, official *last place* title, …) |
 | **-r** | Resume a prior special value of that marker+exp polarity (`g+er` = *that +∞ again*; `g+e-r` = *that small/unranked again*) |
 
-**Contrast:** zero-group `g+l` = plural count `>1` (unspecified magnitude, no exp). Bare OoM `g+e9l` = order 10⁹. Digitless exp `g+el` = +∞. Focus ranked digitless (`zel z+l`) is **not** a special value — ordinary *only (plural) matters* / preference framing, not infinity.
+**Contrast:** zero-group `g+l` = plural count `>1`. Bare OoM `g+e9l` = order 10⁹. No-mantissa `g+el` = +∞. Mantissa + digitless exp (`g+1el`) = [hyperbole](#hyperbole-gazillion), not +∞. Focus ranked digitless (`zel z+l`) is **not** a special value — ordinary *only (plural) matters* / preference framing (the old focus→∞ reading is **removed**).
 
-#### Overlay `/v/` and `/h/` (without-bound only)
+##### Overlay `/v/` and `/h/` (without-bound only)
 
-Digitless-exp **`ra`** / **`ru`** under `/v/` and `/h/` with **-l** take **without-bound** readings. Soft **-m** / named **-n** on overlays follow the referential ending table when useful (hyperbole / label); the canonical without-bound forms are **-l**.
+No-mantissa digitless-exp **`ra`** / **`ru`** under `/v/` and `/h/` with **-l**:
 
 | Form | Reading |
 |------|---------|
@@ -302,9 +311,36 @@ Digitless-exp **`ra`** / **`ru`** under `/v/` and `/h/` with **-l** take **witho
 | **`h+el`** | **unbounded multiplicity** (× without bound / unboundedly many times) |
 | **`h+e-l`** | **unbounded duplicity** (÷ without bound / into unboundedly many parts) |
 
-Digitless-exp **`re`** / **`ro`** under `/v/` `/h/`, and `/j/` `/x/` digitless-exp forms, are **undefined** here. Percent closers still need a mantissa — no `…e%l`. No mid-word **`x`** onto the numeral stem.
+No-mantissa digitless-exp **`re`** / **`ro`** under `/v/` `/h/`, and `/j/` `/x/` no-mantissa digitless-exp forms, are **undefined** here.
 
-Examples: `g+el` → +∞; `g+em` → arbitrarily large but finite; `g+e-l` → arbitrarily small but finite; `g-el` → −∞; `g#el` → last place; `g#e-l` → unranked; `v+el` → increase without bound; `h+el` → unbounded multiplicity; `h+e-l` → unbounded duplicity; `g+e9l` → bare OoM e9 (not a special value); `g+l` → plural `>1` (zero-group).
+#### Hyperbole — mantissa + digitless exponent
+<a id="gazillion"></a>
+
+**Mantissa digits** (ordinary count) plus digitless **`ba`** / **`bu`** = a **hyperbolic** magnitude: comic or vague huge (*gazillion*) or tiny (*gazillionth*). Not a real power of ten and not +∞.
+
+| Form | Reading |
+|------|---------|
+| **`g+1el`** | *one gazillion* (committed hyperbolic huge) |
+| **`g+3el`** | *three gazillion* |
+| **`g+1e-l`** | *one gazillionth* / vanishingly small hyperbole |
+| **`g-1el`** | *minus one gazillion* (hyperbolic deficit) |
+
+Same under other referential PoS. **Scalars only** for now — mantissa + digitless exp on **`#`** / **`_`** is **undefined**.
+
+**Endings** on hyperbolic forms:
+
+| Ending | Sense | Example |
+|--------|-------|---------|
+| **-l** | Committed hyperbole — speaker stands behind the joke magnitude | `g+1el` *one gazillion* |
+| **-m** | Soft / hedged hyperbole — *about a gazillion*, *umpteen* | `g+1em` *roughly a gazillion* |
+| **-n** | **Proper noun / proper designation** — the hyperbolic numeral as a name (a building called *the Gazillion*, a title *One Gazillion*, …) | `g+1en` |
+| **-r** | Resume that prior hyperbolic amount (mantissa may repeat or drop when clear: `g+1er` / `g+er` if the prior was this hyperbole) | |
+
+**Overlays** inherit freely: `h+1el` = *a gazillion times*; `v+1el` = *add a gazillion*; `j+1el` = *a gazillion more!*. `/x/` hyperbolic discourse indices stay **undefined**.
+
+**Not hyperbole:** `g+el` (no mantissa) = +∞; `g+e9l` (digitful exp) = bare OoM; `g+1e9l` = 1×10⁹ (real engineering). Do not mix digitless exp with **`je`** / **`jo`** / **`ju`** in the same group.
+
+Examples: `g+el` → +∞; `g+em` → arbitrarily large but finite; `g+1el` → *one gazillion*; `g+1em` → *about a gazillion*; `g+1en` → proper name *One Gazillion* / *the Gazillion*; `g+1e-l` → *one gazillionth*; `g+e-l` → arbitrarily small but finite; `g-el` → −∞; `g#el` → last place; `g#e-l` → unranked; `v+el` → increase without bound; `h+el` → unbounded multiplicity; `h+1el` → *a gazillion times*; `g+e9l` → bare OoM e9; `g+l` → plural `>1`.
 
 ## Percent and percentage points
 
@@ -422,7 +458,7 @@ Place the identity symbol **immediately after PoS, before the body** (or before 
 | *(no digit groups)* | *(empty — marker then ending)* `g+l`, `g-m`, `g#r`, `h_l` |
 | Digit syllables (`wo`…`zo`) | Arabic **`0`–`9`** |
 | `ba` / `bu` (+ `ja` when a mantissa follows) | **`e`** / **`e-`** (engineering or scientific form) |
-| `ba` / `bu` with **no** digits ([digitless exp](#digitless-exponents)) | **`e`** / **`e-`** immediately before the ending — `g+el`, `g+e-l`, `g#el` |
+| `ba` / `bu` with **no** digits ([digitless exp](#digitless-exponents)) | **`e`** / **`e-`** with no power digits — specials `g+el`, `g+e-l`; hyperbole `g+1el`, `g+1e-l` |
 | `je` | **`.`** |
 | `jo` | **`%`** |
 | `ju` | **`%*`** |
@@ -445,12 +481,17 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 | about several (`>1`) | `g+m` | *gram* |
 | +∞ | `g+el` | *grabal* (`g` + `ra` + `ba` + `l` — [digitless exp](#digitless-exponents)) |
 | arbitrarily large but finite | `g+em` | *grabam* |
+| one gazillion (hyperbole) | `g+1el` | *grawobal* (`ra` + wo + `ba` + `l`) |
+| about a gazillion | `g+1em` | *grawobam* |
+| the Gazillion (proper name) | `g+1en` | *grawoban* |
+| one gazillionth | `g+1e-l` | *grawobul* (`ra` + wo + `bu` + `l`) |
 | arbitrarily small but finite | `g+e-l` | *grabul* (`ra` + `bu` + `l`) |
 | −∞ | `g-el` | *grubal* |
 | last place | `g#el` | *grebal* |
 | unranked | `g#e-l` | *grebul* |
 | increase without bound | `v+el` | *vrabal* |
 | unbounded multiplicity | `h+el` | *hrabal* |
+| a gazillion times | `h+1el` | *hrawobal* |
 | unbounded duplicity | `h+e-l` | *hrabul* |
 | some negative amount | `z-l` | *zrul* |
 | some rank | `g#l` | *grel* |
@@ -628,7 +669,7 @@ Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which val
 
 **Clock / date spans:** do **not** use bare circumstance-`hal` (that series is [applicability](restrictors.md)). Prefer SHARED continuum **`g-timel`** (or a host relation + `/b/`) with digit-string endpoints (`bal g-timel b_15,00l b_16,00l`).
 
-Examples: `zal g-agel z+3l z+5l` → *between ages 3 and 5*; `z-kidl gal g-agel g+3l g+5l` → *kids ages 3–5*; `zal g-spanl z+3l ul z+5l` → *[3, 5)*; `zel g-agel z+10l z+20l` → *from age 10 to 20*; `zel z+3l z+5l` → *3 ≻ 5* (preference, not a span); `zel z+5l` → *\< 5*; `zuel z+5l` → *\> 5*; `g+el` → +∞; `g+em` → arbitrarily large but finite; `g+e-l` → arbitrarily small but finite; `g#el` → last place; `g#e-l` → unranked; `v+el` → increase without bound; `h+el` → unbounded multiplicity; `zael z+5l z+5l` → *equally 5* / *5 equals 5*; `zaem z+3l z+5l` → *3 and 5 approximately equal*; `zar g-spanl z+3l z+5l` → *some value in 3–5*; `zol z+3l z+5l` → *3 or 5* (discrete, not a range).
+Examples: `zal g-agel z+3l z+5l` → *between ages 3 and 5*; `z-kidl gal g-agel g+3l g+5l` → *kids ages 3–5*; `zal g-spanl z+3l ul z+5l` → *[3, 5)*; `zel g-agel z+10l z+20l` → *from age 10 to 20*; `zel z+3l z+5l` → *3 ≻ 5* (preference, not a span); `zel z+5l` → *\< 5*; `zuel z+5l` → *\> 5*; `g+el` → +∞; `g+1el` → *one gazillion*; `g+1en` → proper name *the Gazillion*; `g+em` → arbitrarily large but finite; `g+e-l` → arbitrarily small but finite; `g#el` → last place; `g#e-l` → unranked; `v+el` → increase without bound; `h+el` → unbounded multiplicity; `zael z+5l z+5l` → *equally 5* / *5 equals 5*; `zaem z+3l z+5l` → *3 and 5 approximately equal*; `zar g-spanl z+3l z+5l` → *some value in 3–5*; `zol z+3l z+5l` → *3 or 5* (discrete, not a range).
 
 ## Stress (pronunciation guide)
 
