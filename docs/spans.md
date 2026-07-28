@@ -1,6 +1,10 @@
-# Citations, mentions, asides, and opaque spans
+# Spans
 
-This page is the source of truth for **span fences**: every **open** carries a **PoS**, a **TYPE**, an **EDGE** (extent), and an **ENDING**; **close** is a fixed discourse quartet (**`xuxul`** / **`xuxur`** / **`xuxun`** / **`xuxum`**). Preferred **bracket writing**, fidelity, extent, atomic spans, proper designation, and span anaphors. Discourse linkers and clause joins under `/x/` stay in [language-reference.md](language-reference.md#discourse-markers-x) and [coordination.md](coordination.md). Span fences use ordinary mid-word **`x`** (compound joiner) — [phonology.md](phonology.md#phonotactics). Parallel to [numbers](numbers.md): writing uses shorthand; speech is the full form.
+This page is the source of truth for **span fences** (cite / aside / mention / opaque) and for **adjunct-scope islands** (`<< … >>`).
+
+**Span fences:** every **open** carries a **PoS**, a **TYPE**, an **EDGE** (extent), and an **ENDING**; **close** is a fixed discourse quartet (**`xuxul`** / **`xuxur`** / **`xuxun`** / **`xuxum`**). Preferred **bracket writing**, fidelity, extent, atomic spans, proper designation, and span anaphors. Discourse linkers and clause joins under `/x/` stay in [language-reference.md](language-reference.md#discourse-markers-x) and [coordination.md](coordination.md). Span fences use ordinary mid-word **`x`** (compound joiner) — [phonology.md](phonology.md#phonotactics). Parallel to [numbers](numbers.md): writing uses shorthand; speech is the full form.
+
+**Scope islands:** writing **`<< … >>`**; speech is **prosody only** (no spoken open/close word). The island is **meaningless until an adjunct binds it**. See [Adjunct-scope islands](#adjunct-scope-islands).
 
 <a id="writing-vs-speech"></a>
 
@@ -310,7 +314,7 @@ Prefer **opaque** while the form is foreign orthography, unparsed donor text, or
 
 ## Nesting
 
-Fences nest freely. Each multi-token open pushes; **`xuxul`** / **`xuxur`** / **`xuxun`** pops the innermost (complete / truncated / sic); **`xuxum`** clears the stack. Atomic and anaphor do not nest-push.
+Typed span fences nest freely. Each multi-token open pushes; **`xuxul`** / **`xuxur`** / **`xuxun`** pops the innermost (complete / truncated / sic); **`xuxum`** clears the stack. Atomic and anaphor do not nest-push. **Adjunct-scope islands** (`<< … >>`) do **not** nest — use a typed span when you need nested packaging ([scope islands](#adjunct-scope-islands)).
 
 **Writing examples:**
 
@@ -357,11 +361,11 @@ Writing: `d[ … z{…} #|]`.
 
 ## Literal content (fence words / meta glyphs)
 
-When a span-marker word (speech) or a raw bracket / `~` / `@` / `<` / `>` / `=` / `|` / `#` / hyphen-before-closer / PoS-before-bracket sequence (writing) must appear **as content** inside a span — **not** for ordinary nesting.
+When a span-marker word (speech) or a raw bracket / `~` / `@` / `<` / `>` / `=` / `|` / `#` / hyphen-before-closer / PoS-before-bracket / scope-island `<<` / `>>` sequence (writing) must appear **as content** inside a span — **not** for ordinary nesting.
 
 ### Writing
 
-`\` before `[` / `]` / `{` / `}` / `(` / `)` / `<` / `>` / `~` / `@` / `|` / `#` / `=` / `-` (when the hyphen would form truncated close with the following closer). Literal backslash: `\\`.
+`\` before `[` / `]` / `{` / `}` / `(` / `)` / `<` / `>` / `~` / `@` / `|` / `#` / `=` / `-` (when the hyphen would form truncated close with the following closer). Escape each angle of literal **`<<`** / **`>>`** as `\<<` / `\>>` (or `\>` / `\<` as needed so a span scanner does not see bare island edges). Literal backslash: `\\`.
 
 ```text
 d[ he typed \] then left ]
@@ -383,12 +387,86 @@ daxal duxol xuxul xuxul
 
 Writing: `d[ d<xuxul> ]`.
 
+<a id="adjunct-scope-islands"></a>
+
+## Adjunct-scope islands
+
+<a id="scope-islands"></a>
+
+**Scope islands** mark a **multi-word chunk** so an adjunct can bind that chunk instead of a single host or the whole clause. The edges carry **no meaning of their own**. Prosody (speech) and **`<< … >>`** (writing) are the same device.
+
+### Why
+
+A floating `/h/` (*maybe*, *roughly*, *only*, …) under free word order cannot reliably name *which* multi-word stretch it modifies. Clause force soft (**`jam`**) softens the **whole** claim. A `/w/` rides **one** `/ɡ/`. Typed [span fences](#writing) package **wording** (cite / aside / mention / opaque) — heavier than “operator scope over ordinary Clarity words.”
+
+Scope islands fill that gap: **edges = parentheses; adjunct = function.**
+
+### Writing
+
+| Form | Job |
+|------|-----|
+| **`<< … >>`** | open / close of one scope island |
+
+```text
+jal h-maybel << z-redl z-dogl >> v-sawl
+```
+
+Rough English: *I saw maybe << the red dog >>* — *maybe* targets the island, not necessarily the whole clause.
+
+**Rules:**
+
+- **No PoS** on the edges (contrast `d[…]`, `h(…)`, `d<…>`).
+- **One island per clause.** Do **not** nest islands. Nested packaging → typed span fences ([nesting](#nesting)).
+- Interior is ordinary Clarity (parsed as usual). Do **not** use italic or bold as the scope mark.
+- Empty `<<>>` is illegal.
+- Do **not** put a PoS letter immediately before `<<` (that pattern is reserved for span opens before `[` `{` `(` `<`).
+- Optional Unicode pretty-form **`« … »`** is the same pair as **`<< … >>`** (ASCII preferred in tooling).
+
+**Not span brackets:** do not reuse `[` `]` `{` `}` `(` `)` `<` `>` for scope — those are cite / mention / aside / opaque.
+
+### Speech / prosody
+
+No spoken open/close word (not `xuxul`, not a new `/x/` stem). Edges are **non-phonemic**:
+
+1. **Open** — brief reset: tiny pause or pitch reset, then a slight upstep into the first word of the island.
+2. **Interior** — one tight intonation phrase (one legato / slur group); less internal pausing than ordinary free-order shuffling; ordinary word stress.
+3. **Close** — boundary on the last island stress, then a short pause before what follows.
+
+In singing: an ordinary **phrase bow** on the island — not quote voice (cite), not quiet aside voice (aside). Micro-breaths at the edges only when the line needs them; do not invent a rest glyph for `<<` / `>>`.
+
+### Binding
+
+An ordinary adjunct (**`/h/`** or **`/w/`**, or other operator that takes scope) **binds the island** when present. Without a binder, the island is **chunking / meter only** — no semantic effect.
+
+Default binding (for now): the **nearest preceding** scope-taking `/h/` or `/w/` in the same clause binds the island. If none precedes, the **nearest following** one in the same clause binds it. At most one binder per island. Exact tie-break with multiple candidates is TBD; prefer one clear adjunct next to the island in careful writing.
+
+The binder keeps its own lexicon meaning (*maybe*, *roughly*, *only*, *former*, …). The island only supplies **multi-word scope**.
+
+Sketch contrast:
+
+| Form | Reading |
+|------|---------|
+| `jam … z-redl z-dogl …` | whole-clause hedge (**`jam`**) |
+| `jal h-maybel z-redl z-dogl …` | *maybe* with default / ambiguous scope |
+| `jal h-maybel << z-redl z-dogl >> …` | *maybe* over **the red dog** as a unit |
+
+### Not this
+
+| Need | Use instead |
+|------|-------------|
+| Nested packaging / wording fidelity / opaque | typed [span fences](#writing) |
+| Whole-clause soft assert | **`jam`** — [clause force](language-reference.md#clause-force) |
+| Single-adjective frame | `/w/` on that `/ɡ/` |
+| Cite / mention / aside / opaque brackets | `[` `]` `{` `}` `(` `)` `<` `>` with PoS |
+| Spoken name for the edges | *(none)* — prosody only |
+
 <a id="not-this"></a>
 
 ## Not this series
 
 | Need | Use instead |
 |------|-------------|
+| Multi-word adjunct scope without typed wording | [adjunct-scope islands](#adjunct-scope-islands) **`<< … >>`** |
 | Clause *and* / *or* / ranked claim join | `/x/` joins `xal` / `xol` / … — [coordination.md](coordination.md#clause-level-coordination) |
 | Clause negation *no* / *not* | `xul` / `xum` / `xun` — **not** `xuxul` / `xuxum` / `xuxur` / `xuxun` |
 | Em dash as truncated closer | ASCII hyphen + closer `-]` / `xuxur` — not an em dash |

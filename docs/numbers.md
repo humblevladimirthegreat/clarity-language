@@ -194,7 +194,7 @@ Endings still apply (**-l** newly stated item, **-r** *as in (N) above* or digit
 
 ## Number endings
 
-Ordinary [reference suffix](reference-suffix.md) senses do **not** apply inside number words. Speech keeps the ending letter; [preferred writing](#writing-preferred-shorthand) uses a **second-slot mark** after PoS (same glyphs as [span fences](quotations.md)).
+Ordinary [reference suffix](reference-suffix.md) senses do **not** apply inside number words. Speech keeps the ending letter; [preferred writing](#writing-preferred-shorthand) uses a **second-slot mark** after PoS (same glyphs as [span fences](spans.md)).
 
 | Ending | Meaning | Preferred writing |
 |--------|---------|-------------------|
@@ -568,7 +568,7 @@ Speech always uses the full CV grammar above (marker as `r`+V; ending as **-l** 
 
 ### Ending marks (second slot, after PoS)
 
-Same glyphs and jobs as [span-fence marks](quotations.md#writing) (**`~`** soft / **`@`** proper); anaphor uses **`=`** (keyboard-friendly; spans use interior **`=`** — `d[=]`).
+Same glyphs and jobs as [span-fence marks](spans.md#writing) (**`~`** soft / **`@`** proper); anaphor uses **`=`** (keyboard-friendly; spans use interior **`=`** — `d[=]`).
 
 | Mark | Speech ending | Job | Examples |
 |------|---------------|-----|----------|

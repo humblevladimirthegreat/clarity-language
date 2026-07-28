@@ -13,7 +13,7 @@ After the PoS prefix, look at what sits **left** and **right** of the first mid-
 
 | Shape (after PoS) | Family | Details |
 |-------------------|--------|---------|
-| **`VOWEL x VOWEL`** + ending | **[Span fence](quotations.md)** | TYPE **a** / **e** / **o** / **u** then EDGE **a** / **e** / **o** / **u**; exact **`xuxul`** / **`xuxur`** / **`xuxun`** / **`xuxum`** = close |
+| **`VOWEL x VOWEL`** + ending | **[Span fence](spans.md)** | TYPE **a** / **e** / **o** / **u** then EDGE **a** / **e** / **o** / **u**; exact **`xuxul`** / **`xuxur`** / **`xuxun`** / **`xuxum`** = close |
 | **`VOWEL x ROOT…`** + ending | **[Role compound](special-vocabulary.md#role-compounds)** | ROLE **`a`** / **`u`** / **`o`** then event or relation root; **`e`** reserved |
 | **`ROOT… x VOWEL`** + ending | **[Values](values.md)** or **[ability](special-vocabulary.md#ability)** | Need root + **`a`/`e`/`o`/`u`** → values; other root + **`xa`/`xu`** → ability (**`xe`/`xo`** undefined on ability) |
 | **`ROOT… x ROOT…`** + ending | **Ordinary compound** | Lexicon sense-compounds; [phrasal proper names](reference-suffix.md#phrasal-proper-names) (`z-MaryxSmithn`) |
@@ -23,7 +23,7 @@ No open content root is a **bare single vowel**, so a single vowel **left** of `
 ### Decision order (practical)
 
 1. Exact **`xuxul`** / **`xuxur`** / **`xuxun`** / **`xuxum`** → span close.
-2. After PoS: one vowel + `x` + one vowel + ending → **span open** (or atomic / anaphor / empty / proper per [quotations](quotations.md)).
+2. After PoS: one vowel + `x` + one vowel + ending → **span open** (or atomic / anaphor / empty / proper per [quotations](spans.md)).
 3. After PoS: one vowel **`a`/`u`/`o`** + `x` + longer root + ending → **role compound**.
 4. Longer material before `x`, then `x` + single stance vowel **`a`/`e`/`o`/`u`** + ending → **value** (need host) or **ability** (non-need + **`a`/`u`** only).
 5. Longer material on **both** sides of `x` → ordinary multi-root compound (sense / name).
@@ -37,6 +37,6 @@ Stacked vowels on TYPE/EDGE/ROLE are **not** used: role ROLE is one of **`a`** /
 | Role **`a`/`u`/`o`** (agent / patient / reltum) | [special-vocabulary.md § Role compounds](special-vocabulary.md#role-compounds) |
 | Values **`need x {a\|e\|o\|u}`** | [values.md](values.md) |
 | Ability **`HOST x {a\|u}`** | [special-vocabulary.md § Ability](special-vocabulary.md#ability) |
-| Span open / close | [quotations.md](quotations.md) |
+| Span open / close | [spans.md](spans.md) |
 | Phrasal names / sense compounds | [reference-suffix.md](reference-suffix.md#phrasal-proper-names), [phonology.md](phonology.md#phonotactics) |
 | Joins (no mid-word `x`) | [coordination.md](coordination.md) |

@@ -54,7 +54,7 @@ Closed `/v/` verbs that **perform the join-series act** on an object. Spellings 
 <a id="join-relations"></a>
 <a id="join-relation-gh"></a>
 
-Closed **complex** `/ɡ/` adjectives and `/h/` adverbs that **frame a host via the join-series move** toward one `/b/` argument. Same vowel map as [join-act verbs](#join-act-verbs). They are **not** phrase named-list joins and **not** [restrictors](restrictors.md) — stock AP bundles use [mention](quotations.md) spans instead of old `gan A B` lists.
+Closed **complex** `/ɡ/` adjectives and `/h/` adverbs that **frame a host via the join-series move** toward one `/b/` argument. Same vowel map as [join-act verbs](#join-act-verbs). They are **not** phrase named-list joins and **not** [restrictors](restrictors.md) — stock AP bundles use [mention](spans.md) spans instead of old `gan A B` lists.
 
 ### Pattern
 
@@ -279,7 +279,7 @@ PoS + HOST + x + {a|u} + {-l|-m|-n|-r}
 | **`xa` / `xu`** | Capable / incapable |
 | **Ending** | [Changeability](#ability-changeability) only |
 
-**Parser cue:** root ∈ [six needs](values.md#need-inventory) + `x…` → **value** tables. Other roots + **`xa` / `xu`** → **ability**. **`xe` / `xo`** on non-need hosts stay **undefined** (do not borrow motive / prescription). After PoS, single ROLE vowel **a** / **u** / **o** then `x` then a **longer** root → [role compound](#role-compounds), not ability. After PoS, single TYPE vowel **a** / **e** / **o** / **u** then `x` then a single EDGE vowel + ending → [span form](quotations.md) (`daxal`, `daxol`, `daxan`, `daxar`, …); **`xuxul`** / **`xuxur`** / **`xuxun`** / **`xuxum`** → span close — not ability. Full map: **[x-compounds.md](x-compounds.md)**.
+**Parser cue:** root ∈ [six needs](values.md#need-inventory) + `x…` → **value** tables. Other roots + **`xa` / `xu`** → **ability**. **`xe` / `xo`** on non-need hosts stay **undefined** (do not borrow motive / prescription). After PoS, single ROLE vowel **a** / **u** / **o** then `x` then a **longer** root → [role compound](#role-compounds), not ability. After PoS, single TYPE vowel **a** / **e** / **o** / **u** then `x` then a single EDGE vowel + ending → [span form](spans.md) (`daxal`, `daxol`, `daxan`, `daxar`, …); **`xuxul`** / **`xuxur`** / **`xuxun`** / **`xuxum`** → span close — not ability. Full map: **[x-compounds.md](x-compounds.md)**.
 
 **Ship first:** **`xu`** (incapability). **`xa`** when you want tagged *can*.
 
@@ -415,7 +415,7 @@ PoS + {a|u|o} + x + ROOT + {-l|-m|-n|-r}
 | **ROOT** | Event stem (**`a`/`u`**) or relation stem (**`o`**) — `V(CV)+` |
 | **Ending** | Ordinary [reference-suffix](reference-suffix.md) senses — **not** value/ability ending tables |
 
-**Parser cue:** after PoS, a single vowel then `x` then a **longer** root + ending → role compound. Same shape with a **single** vowel after `x` → [span](quotations.md), not role. **`e x …`** is **reserved** (undefined) — not a fourth ROLE.
+**Parser cue:** after PoS, a single vowel then `x` then a **longer** root + ending → role compound. Same shape with a **single** vowel after `x` → [span](spans.md), not role. **`e x …`** is **reserved** (undefined) — not a fourth ROLE.
 
 ### Inventory
 

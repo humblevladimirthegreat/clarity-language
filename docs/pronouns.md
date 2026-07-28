@@ -137,9 +137,9 @@ Each subsection is an **antecedent** PoS; the table rows are the **pronoun** PoS
 | *the red one* / *that quality* | Adjective antecedent → noun …`-r` |
 | *by doing so* / *thereby* | Verb antecedent → `/h/` …`-r` |
 | *that one’s* / *of that kind* | Noun antecedent → `/ɡ/` …`-r` |
-| *that* (prior cite / mention / aside / opaque) | [Span anaphor](quotations.md#endings) → `daxar` / `doxar` / `dexar` / `duxar` / … (TYPE selects antecedent kind; PoS = role now; writing `d[=]`) |
+| *that* (prior cite / mention / aside / opaque) | [Span anaphor](spans.md#endings) → `daxar` / `doxar` / `dexar` / `duxar` / … (TYPE selects antecedent kind; PoS = role now; writing `d[=]`) |
 
-**Span anaphors** are closed forms in the [span-fence](quotations.md) series (`{PoS}{TYPE}xa{r}`, EDGE **a**), not letter/full-root content pronouns. They resolve to the **most recent span of that TYPE** and treat it as a referent in the new slot (*he said **that**?!*) — they do **not** re-open a cite. Ordinary content **-r** still resumes words *inside* a non-opaque span when those words were introduced as ordinary lexicon.
+**Span anaphors** are closed forms in the [span-fence](spans.md) series (`{PoS}{TYPE}xa{r}`, EDGE **a**), not letter/full-root content pronouns. They resolve to the **most recent span of that TYPE** and treat it as a referent in the new slot (*he said **that**?!*) — they do **not** re-open a cite. Ordinary content **-r** still resumes words *inside* a non-opaque span when those words were introduced as ordinary lexicon.
 
 Special pronouns (speaker, listener, next clause) are **not** covered here — they are separate forms (below), not `-r` stems from ordinary antecedents. Content questions (*who* / *what* / *where* / *what did they do?* / *what happened?*) use [unspecified-member **-r** under **question** force](questions.md#fill-ask-r) (`zar` / `zor` / `zer` / `zur` / `var` / `vor` / `ver` / `vur` / `xar` / …), not a special pronoun.
 
