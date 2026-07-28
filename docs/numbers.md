@@ -1,6 +1,6 @@
 # Numbers
 
-Numerals are a **closed formal subsystem**, not ordinary lexicon roots. Open quantifiers (*many*, *all*, *some*, …) stay lexicon; the numeral word itself can be [digitless](#zero-digit-groups) (unspecified magnitude of a marker identity, including plural **`>1`** on **`ra`**). PoS prefixes are defined in [language-reference.md](language-reference.md); plural **-sh** in [plurality.md](plurality.md); general phonotactics live in [phonology.md](phonology.md); ordinary reference suffixes in [reference-suffix.md](reference-suffix.md). This page is the source of truth for numeral grammar, including [percent denominators](#percent-denominators) (whole NP + `/ɡ/` `…jo`), [ranges](#ranges) (spans reuse [phrase fences](coordination.md) with SHARED continuum `/ɡ/`, documented here), [extremum × digitless](#extremum-digitless) special values (+∞ / −∞ / last place / …), and [measure phrases](#measure-phrases) (unit + amount for differentials and durations).
+Numerals are a **closed formal subsystem**, not ordinary lexicon roots. Open quantifiers (*many*, *all*, *some*, …) stay lexicon; the numeral word itself can be [digitless](#zero-digit-groups) (unspecified magnitude of a marker identity, including plural **`>1`** on **`ra`**) or carry a [digitless exponent](#digitless-exponents) for special values (+∞ / −∞ / last place / …). PoS prefixes are defined in [language-reference.md](language-reference.md); plural **-sh** in [plurality.md](plurality.md); general phonotactics live in [phonology.md](phonology.md); ordinary reference suffixes in [reference-suffix.md](reference-suffix.md). This page is the source of truth for numeral grammar, including [percent denominators](#percent-denominators) (whole NP + `/ɡ/` `…jo`), [ranges](#ranges) (spans reuse [phrase fences](coordination.md) with SHARED continuum `/ɡ/`, documented here), [digitless exponents](#digitless-exponents), and [measure phrases](#measure-phrases) (unit + amount for differentials and durations).
 
 A whole numeric value is **one word**, even when it contains several digit groups (or none).
 
@@ -12,7 +12,7 @@ A whole numeric value is **one word**, even when it contains several digit group
 
 1. **PoS** — same prefix inventory as elsewhere; [roles for number words](#parts-of-speech-on-numbers) below.
 2. **Number marker** — consonant **r** plus a vowel **V** (see [Marker vowel](#marker-vowel-referential-identity)). The PoS+`r` cluster is a [number-only phonotactic exception](phonology.md#phonotactics).
-3. **Zero or more digit groups** — each group is an optional exponent and optional mantissa digits (at least one of the two **when the group is present**). Digits compound with **no** **x** separator. There is **no per-group polarity**; sign (when it applies) is once for the whole word — see [Sign](#sign). **No groups** = [unspecified magnitude](#zero-digit-groups) of that marker identity (or [digitless **-r** anaphora](#number-endings)).
+3. **Zero or more digit groups** — each group is an optional exponent and optional mantissa digits (at least one of the two **when the group is present**, except a [digitless exponent](#digitless-exponents) group is **`ba`/`bu` alone**). Digits compound with **no** **x** separator. There is **no per-group polarity**; sign (when it applies) is once for the whole word — see [Sign](#sign). **No groups** = [unspecified magnitude](#zero-digit-groups) of that marker identity (or [digitless **-r** anaphora](#number-endings)).
 4. **Ending** — `-l` / `-m` / `-n` / `-r` with [number-specific meanings](#number-endings) (not ordinary [reference suffix](reference-suffix.md) senses). Number words **do not** take plural **-sh** — group reference stays on ordinary nouns (see [plurality.md](plurality.md)).
 
 **Writing** uses a [preferred shorthand](#writing-preferred-shorthand) for the marker and body (`g+3l`, not *grarel*; digitless `g+l`, not *gral*); speech is always the full CV form.
@@ -199,15 +199,15 @@ A number word may omit every digit group: **PoS + marker + ending** only. The ma
 
 | Overlay | Digitless examples |
 |---------|-------------------|
-| `/ɡ/` `/z/` `/d/` `/b/` | `g+l` *plural / more than one* (on a noun); `z-l` *some negative amount* (subj); `b#l` *of some rank*; `d_l` *some code* (obj). Focus ranked → [extremum × digitless](#extremum-digitless) (`zel z+l` = +∞) |
-| `/v/` | `v+l` *add some plural amount* / *increase by more than one*; `v-l` *decrease by some amount*; `v#l` *take / assign some rank*; `v_l` *enter / dial some code*. Focus ranked **`e`** → [without-bound](#extremum-digitless) (`vel v+l` / `vel v-l`) |
-| `/h/` | `h+l` *multiple times* / ×(unspecified `>1`); `h-l` *÷(unspecified)* / *into some number of parts*; `h#l` *for some nth time*; `h_l` *at some clock or date* (still bare-`hro` **time** only — not channel codes). Focus ranked **`e`** → [unbounded multiplicity / duplicity](#extremum-digitless) (`hel h+l` / `hel h-l`; preempts restrictor) |
+| `/ɡ/` `/z/` `/d/` `/b/` | `g+l` *plural / more than one* (on a noun); `z-l` *some negative amount* (subj); `b#l` *of some rank*; `d_l` *some code* (obj) |
+| `/v/` | `v+l` *add some plural amount* / *increase by more than one*; `v-l` *decrease by some amount*; `v#l` *take / assign some rank*; `v_l` *enter / dial some code* |
+| `/h/` | `h+l` *multiple times* / ×(unspecified `>1`); `h-l` *÷(unspecified)* / *into some number of parts*; `h#l` *for some nth time*; `h_l` *at some clock or date* (still bare-`hro` **time** only — not channel codes) |
 | `/j/` | `j+l` *More!* (unspecified plural addition); `j-l` *Short!* / *down by some amount!*; `j#l` *Nth!* (place cheer, rank unnamed); `j_l` *…!* (unspecified score / code call) |
 | `/x/` | `x#l` *some point:* (neutral, number unnamed); `x+l` / `x-l` corroborating / independent item of unnamed index; `x_l` *regarding some (unnamed) label* |
 
 **`h_l` vs `har`:** digitless time `h_l` is still a **number word** (unspecified clock/date reading under bare `hro`). Circumstance **`har`** (*sometime*) is the [restrictor](restrictors.md), not a numeral — do not swap them.
 
-**Illegal with zero groups:** percent / percentage-point closers (**`jo`** / **`ju`**) still need a mantissa group — bare `…+%l` is not a shortcut for “some percent.” Exponent-only groups (`e9`) are **not** zero-group forms; they are ordinary one-group bare OoM.
+**Illegal with zero groups:** percent / percentage-point closers (**`jo`** / **`ju`**) still need a mantissa group — bare `…+%l` is not a shortcut for “some percent.” Exponent-only groups with **digits** (`e9`) are **not** zero-group forms; they are ordinary one-group bare OoM. Exponent markers **without** digits are [digitless exponents](#digitless-exponents) (special values) — also not zero-group forms.
 
 ## Digits
 
@@ -232,8 +232,8 @@ Within each digit group:
 
 | Marker | Role |
 |--------|------|
-| **ba** | Positive exponent, followed by the exponent’s digits |
-| **bu** | Negative exponent, followed by the exponent’s digits |
+| **ba** | Positive exponent, followed by the exponent’s digits — or [digitless](#digitless-exponents) (no digits) for special values |
+| **bu** | Negative exponent, followed by the exponent’s digits — or [digitless](#digitless-exponents) (no digits) for special values |
 | **ja** | After exponent digits when a **mantissa follows** (not a digit) |
 | **je** | **Decimal point** (not a digit) |
 | **jo** | **Percent** closer (not a digit) — see [Percent and percentage points](#percent-and-percentage-points) |
@@ -242,13 +242,69 @@ Within each digit group:
 - The **exponent comes before** the group’s mantissa digits.
 - If a mantissa follows the exponent, say **`ja`** after the last exponent digit, then the mantissa. Example: `27e12` → `ba` + `wo` + `du` + `ja` + `du` + `le`.
 - **Bare order of magnitude** (exponent only, no mantissa): use `ba`/`bu` + exponent digits and **omit** **`ja`**. The group ends at the next `ba`/`bu`, or at the word ending. Example: *e9* → `ba` + `na` (not `*banaja`).
-- If the exponent is **0**, omit the exponent (and thus omit **`ja`**) entirely.
+- **Digitless exponent** (special values): use `ba`/`bu` with **no** exponent digits and **no** mantissa — see [Digitless exponents](#digitless-exponents). Not the same as bare OoM (which always names the power) and not a [zero-group](#zero-digit-groups) word.
+- If the exponent is **0**, omit the exponent (and thus omit **`ja`**) entirely — except do **not** confuse omitted-zero with digitless `ba`/`bu` special values.
 - Default spoken/written scale uses **engineering notation**: exponents are usually multiples of **3** (e.g. `27e6`, not `2.7e7`).
 - **Decimal point:** say **`je`** after the digit(s) left of the point; digits after **`je`** are the fractional part (group in threes if long). May appear with or without an exponent.
 - **Scientific register** is optional: exp-first, then **`ja`**, then mantissa with **`je`** after the leading digit (usual scientific shape). Example: `5.2487083e-4` → `bu` + `mo` + `ja` + `va` + `je` + `du` + `mo` + `ha` + `le` + `zo` + `ha` + `re`.
-- Bare OoM uses scalar marker **`ra`** (or **`ru`** if negative).
+- Bare OoM uses scalar marker **`ra`** (or **`ru`** if negative). Digitless-exponent special values also use **`ra`** / **`ru`** / **`re`** as in that section — not **`ro`**.
 - **Cents / fixed subunits:** an exponent need not be a multiple of 3 when the unit has a conventional subunit (e.g. dollars: `4e-2` for four cents). Same pattern for other fixed subunits if needed. Do **not** use **`jo`** for money subunits.
 - **No metric prefixes** in speech or lexicon: see [measure phrases](#no-metric-prefixes) — base unit + engineering exponent / exact count (`40e3` grams, not “40 kilograms”; `12e-9` meters, not “12 nanometers”).
+
+### Digitless exponents
+<a id="digitless-exponents"></a>
+<a id="extremum-digitless"></a>
+<a id="infinity"></a>
+<a id="special-numeric-values"></a>
+
+A digit group may be **only** an exponent marker (**`ba`** or **`bu`**) with **no** exponent digits and **no** mantissa. That shape is a **closed special value** (or overlay action) — unspecified order of magnitude pushed to an extreme — not bare OoM and not [zero-group](#zero-digit-groups) plural/unspecified payload.
+
+**Writing:** **`e`** = speech **`ba`**; **`e-`** = speech **`bu`**. Digitless means nothing between that mark and the ending: `g+el`, `g+e-l`, `g#el`.
+
+**Shape:** one such group only (do not stack digitless exp with mantissa digits, percent closers, or further groups). Marker identity still applies.
+
+#### Referential (`/ɡ/` `/z/` `/d/` `/b/`)
+
+| Form | Anatomy | Reading |
+|------|---------|---------|
+| **`g+el`** (etc.) | **`ra`** + **`ba`∅** + **-l** | **+∞** |
+| **`g+em`** | **`ra`** + **`ba`∅** + **-m** | **arbitrarily large but finite** |
+| **`g+e-l`** | **`ra`** + **`bu`∅** + **-l** | **arbitrarily small but finite** |
+| **`g-el`** | **`ru`** + **`ba`∅** + **-l** | **−∞** |
+| **`g-em`** | **`ru`** + **`ba`∅** + **-m** | **arbitrarily large but finite** (negative / deficit) |
+| **`g#el`** | **`re`** + **`ba`∅** + **-l** | **last place** |
+| **`g#e-l`** | **`re`** + **`bu`∅** + **-l** | **unranked** |
+| Digitless exp on **`ro`** / **`_`** | — | **Undefined** (labels are not OoM) |
+| **`g-e-l`** (`ru` + **`bu`∅**) | — | **Undefined** for now (spare cell) |
+
+Same under `/z/` `/d/` `/b/` (`z+el` = +∞ as subject; `d#e-l` = unranked as object; `b+e-l` = *of an arbitrarily small but finite amount*).
+
+**Endings** (relative to the special value):
+
+| Ending | Sense |
+|--------|-------|
+| **-l** | Exact special value (default): +∞ / −∞ / last place / arbitrarily small but finite / unranked as in the form table |
+| **-m** on **`ba`∅** (`…em`) | **Arbitrarily large but finite** on scalars (`g+em` / `g-em`); on ordinals (`g#em`) = soft / near **last place** |
+| **-m** on **`bu`∅** (`…e-m`) | Soft / approximate small or soft unranked |
+| **-n** | Conventional symbol or stock label (∞, −∞, *last place* as a title; small/unranked labels when useful) |
+| **-r** | Resume a prior special value of that marker+exp polarity (`g+er` = *that +∞ again*; `g+e-r` = *that small/unranked again*) |
+
+**Contrast:** zero-group `g+l` = plural count `>1` (unspecified magnitude, no exp). Bare OoM `g+e9l` = order 10⁹. Digitless exp `g+el` = +∞. Focus ranked digitless (`zel z+l`) is **not** a special value — ordinary *only (plural) matters* / preference framing, not infinity.
+
+#### Overlay `/v/` and `/h/` (without-bound only)
+
+Digitless-exp **`ra`** / **`ru`** under `/v/` and `/h/` with **-l** take **without-bound** readings. Soft **-m** / named **-n** on overlays follow the referential ending table when useful (hyperbole / label); the canonical without-bound forms are **-l**.
+
+| Form | Reading |
+|------|---------|
+| **`v+el`** | **increase without bound** |
+| **`v-el`** | **decrease without bound** |
+| **`h+el`** | **unbounded multiplicity** (× without bound / unboundedly many times) |
+| **`h+e-l`** | **unbounded duplicity** (÷ without bound / into unboundedly many parts) |
+
+Digitless-exp **`re`** / **`ro`** under `/v/` `/h/`, and `/j/` `/x/` digitless-exp forms, are **undefined** here. Percent closers still need a mantissa — no `…e%l`. No mid-word **`x`** onto the numeral stem.
+
+Examples: `g+el` → +∞; `g+em` → arbitrarily large but finite; `g+e-l` → arbitrarily small but finite; `g-el` → −∞; `g#el` → last place; `g#e-l` → unranked; `v+el` → increase without bound; `h+el` → unbounded multiplicity; `h+e-l` → unbounded duplicity; `g+e9l` → bare OoM e9 (not a special value); `g+l` → plural `>1` (zero-group).
 
 ## Percent and percentage points
 
@@ -366,6 +422,7 @@ Place the identity symbol **immediately after PoS, before the body** (or before 
 | *(no digit groups)* | *(empty — marker then ending)* `g+l`, `g-m`, `g#r`, `h_l` |
 | Digit syllables (`wo`…`zo`) | Arabic **`0`–`9`** |
 | `ba` / `bu` (+ `ja` when a mantissa follows) | **`e`** / **`e-`** (engineering or scientific form) |
+| `ba` / `bu` with **no** digits ([digitless exp](#digitless-exponents)) | **`e`** / **`e-`** immediately before the ending — `g+el`, `g+e-l`, `g#el` |
 | `je` | **`.`** |
 | `jo` | **`%`** |
 | `ju` | **`%*`** |
@@ -386,6 +443,15 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 |-------|-------------------|---------------|
 | plural / more than one | `g+l` | *gral* (`g` + `ra` + `l` — [digitless](#zero-digit-groups)) |
 | about several (`>1`) | `g+m` | *gram* |
+| +∞ | `g+el` | *grabal* (`g` + `ra` + `ba` + `l` — [digitless exp](#digitless-exponents)) |
+| arbitrarily large but finite | `g+em` | *grabam* |
+| arbitrarily small but finite | `g+e-l` | *grabul* (`ra` + `bu` + `l`) |
+| −∞ | `g-el` | *grubal* |
+| last place | `g#el` | *grebal* |
+| unranked | `g#e-l` | *grebul* |
+| increase without bound | `v+el` | *vrabal* |
+| unbounded multiplicity | `h+el` | *hrabal* |
+| unbounded duplicity | `h+e-l` | *hrabul* |
 | some negative amount | `z-l` | *zrul* |
 | some rank | `g#l` | *grel* |
 | some code (object) | `d_l` | *drol* |
@@ -504,7 +570,7 @@ The fence PoS matches the slot (`zal` / `dal` / `gal` / `bal` / …). Mixed iden
 | **`ae`** | `zael z+5l z+5l` / `zaem z+3l z+5l` | *equal to 5* / *approximately equal* — **not** a span (no continuum needed; continuum + **`ae`** + numbers is not a range reading) |
 | **`oe`** | — | **Not** ranges — exclusive ranked / bare empty superlative with scale |
 
-**Arity escape:** three or more number conjuncts under **`a`** stay an ordinary discrete inventory (`zal z+1l z+3l z+7l` = *1, 3, and 7*), even with SHARED. Focus **`zal z+3l`** stays *just 3*, not a ray. Focus **ranked** with a **digitful** number is a [threshold](#numeric-thresholds); with a **digitless** number, [extremum × digitless](#extremum-digitless) — not ordinary *only X matters*.
+**Arity escape:** three or more number conjuncts under **`a`** stay an ordinary discrete inventory (`zal z+1l z+3l z+7l` = *1, 3, and 7*), even with SHARED. Focus **`zal z+3l`** stays *just 3*, not a ray. Focus **ranked** with a number is a [threshold](#numeric-thresholds), not ordinary *only X matters*.
 
 **Contrast with comparatives:** `zel g-bigl z-Samn z-Lean` = *Sam is bigger than Lea* (SHARED **scale**, non-number conjuncts). `zel g-agel z+3l z+5l` = *from 3 to 5 on age* (SHARED **continuum**, number endpoints). Bare `zel z+3l z+5l` = prefer 3 over 5.
 
@@ -512,9 +578,7 @@ The fence PoS matches the slot (`zal` / `dal` / `gal` / `bal` / …). Mixed iden
 <a id="numeric-thresholds"></a>
 <a id="greater-less-than"></a>
 
-When the **sole** conjunct of a [rank join](coordination.md#ranked-conjunction-e) fence (**`e`** / **`ue`**, and their open / named twins) is a **compatible number word with at least one digit group**, that number is an **extremum on the line**, not “only this value matters” and not a two-endpoint [span](#ranges). SHARED continuum is **optional** on thresholds: absent = implicit / contextual numeric line; present = that named line (`zel g-agel z+5l` = *age \< 5*).
-
-**Zero-group exception:** a **digitless** sole conjunct under the same focus ranked shapes is **not** a threshold — it is an [extremum × digitless](#extremum-digitless) special value (`zel z+l` = +∞, not *\< (plural)*).
+When the **sole** conjunct of a [rank join](coordination.md#ranked-conjunction-e) fence (**`e`** / **`ue`**, and their open / named twins) is a **compatible number word**, that number is an **extremum on the line**, not “only this value matters” and not a two-endpoint [span](#ranges). SHARED continuum is **optional** on thresholds: absent = implicit / contextual numeric line; present = that named line (`zel g-agel z+5l` = *age \< 5*). Special values such as +∞ use [digitless exponents](#digitless-exponents) inside the number word (`g+el`), not focus ranked zero-group forms.
 
 | Form | Reading | Mnemonic |
 |------|--------|----------|
@@ -526,66 +590,13 @@ When the **sole** conjunct of a [rank join](coordination.md#ranked-conjunction-e
 | **`zaen z+5l`** | named/conventional **equal-to-5** band / tie label | phrase **-n** on **ae** |
 | **`zuen z+5l`** | named/conventional floor band | phrase **-n** reverse |
 
-Same under `/d/` `/b/` `/ɡ/` (`gel g+5l` = modifier *\<5*; `duel d+10l` = object *\>10*). **`ae`** / **`oe`** focus with a number are **not** thresholds (stay ordinary ranked focus / triage). Boolean focus (**`zal`** / **`zol`** / …) is **not** a threshold.
+Same under `/d/` `/b/` `/ɡ/` (`gel g+5l` = modifier *\<5*; `duel d+10l` = object *\>10*). **`ae`** / **`oe`** focus with a number are **not** thresholds (stay ordinary ranked focus / triage). Boolean focus (**`zal`** / **`zol`** / …) is **not** a threshold. Focus **`zel z+l`** (zero-group) is **not** +∞ and **not** a threshold — ordinary focus on plural/unspecified amount; use **`z+el`** / **`g+el`** for +∞.
 
 **Inclusive bounds:** default is **strict** (`<` / `>`). For **≤ 5** / **≥ 5**, use a two-endpoint [span](#ranges) with the bound included — do **not** flip focus ranked to inclusive. Exclusive-high **`ul`** stays a two-side span tool (`zal g-spanl z+3l ul z+5l`), not a focus threshold marker.
 
-**Unspecified in a threshold:** bare **`e`** + **-r** = unspecified member of the *\< X* ray — `zer z+5l` → *some/whatever value \< 5* (under question → *which value \< 5?*). **`ue`** takes **no** **-r** (stacked forms never do — [coordination](coordination.md#unspecified-member-r-phrase)); there is no `zuer` threshold. For an unspecified value *\> 5*, use other wording for now (e.g. a two-endpoint span with an open high, once defined), not a reverse **-r** fence. Digitless **-r** under focus ranked resumes a prior special value or threshold endpoint — see [extremum × digitless](#extremum-digitless).
+**Unspecified in a threshold:** bare **`e`** + **-r** = unspecified member of the *\< X* ray — `zer z+5l` → *some/whatever value \< 5* (under question → *which value \< 5?*). **`ue`** takes **no** **-r** (stacked forms never do — [coordination](coordination.md#unspecified-member-r-phrase)); there is no `zuer` threshold. For an unspecified value *\> 5*, use other wording for now (e.g. a two-endpoint span with an open high, once defined), not a reverse **-r** fence.
 
-Contrast: `zel g-agel z+3l z+5l` = *from 3 to 5 on age* (span); `zel z+3l z+5l` = *3 ≻ 5* (preference); `zel z+5l` = *\< 5* (focus threshold); `zel z+l` = +∞ ([extremum × digitless](#extremum-digitless)). `zel z-Samn` (non-number) stays ordinary *only Sam matters* / [superlative-with-scale](comparatives.md) — **focus digitful number conjunct** triggers the threshold reading.
-
-### Extremum × digitless
-<a id="extremum-digitless"></a>
-<a id="infinity"></a>
-<a id="special-numeric-values"></a>
-
-When the **sole** conjunct of focus ranked **`e`** / **`ue`** (open / named twins included) is a **[digitless](#zero-digit-groups)** number — marker + ending, **no** digit group — the threshold reading does **not** apply. Digitless openness pushed to an extremum yields a **closed special value** (or overlay action) of that marker identity.
-
-**Trigger:** focus ranked + **zero digit groups** + ending **-l** / **-m** / **-n** (new special value) or **-r** (resume a prior one of that identity). SHARED continuum is optional (names the line when useful). Digitful focus stays a [threshold](#numeric-thresholds). Multi (2+) digitless conjuncts stay ordinary preference / ranking, not this table. Bare ranked (0 conjuncts) is not a special value.
-
-#### Referential (`/ɡ/` `/z/` `/d/` `/b/`)
-
-| Form | Reading | Notes |
-|------|---------|-------|
-| **`zel z+l`** (etc.) | **+∞** | Greatest unspecified positive amount |
-| **`zuel z+l`** | **arbitrarily large but finite** | Reverse extremum of positive openness — unbounded as a floor claim, not completed infinity |
-| **`zel z-l`** | **−∞** | Greatest unspecified deficit / most-negative openness |
-| **`zuel z-l`** | **arbitrarily small but finite** | Least negative / vanishing-scale openness — still finite |
-| **`zel z#l`** | **last place** | Greatest unspecified rank |
-| **`zuel z#l`** | **unranked** | Reverse extremum of rank openness — **only** this reading (not “0th” / “before any place”) |
-| Digitless **`_`** under focus ranked | **Undefined** | Digit-string / label openness is not a continuum extremum |
-
-Same under `/d/` `/b/` `/ɡ/` (`gel g+l` = modifier +∞; `duel d-l` = object *arbitrarily small but finite*).
-
-**Endings** on these forms (same discourse jobs as elsewhere, relative to the special value):
-
-| Ending | Sense |
-|--------|-------|
-| **-l** | Exact / completed special value (default) |
-| **-m** | Soft / hyperbolic (*countless*, *roughly infinite*, *somewhere near last place*) |
-| **-n** | Conventional / named symbol or stock label (∞, −∞, *last place* as a title) |
-| **-r** | Resume a previously stated special value of that marker (`zel z+r` = *that +∞ again*) |
-
-Open fence twins (**`zem`** / **`zuem`**) soften the claim; named fence **-n** (**`zen`** / **`zuen`**) labels a conventional band — same habit as thresholds.
-
-**Not this table:** bare **`oe`** + continuum / scale (*there is no biggest*) stays the [empty superlative](comparatives.md) claim about the line — not a token meaning +∞. Prefer focus digitless **`e`** for the value +∞.
-
-#### Overlay `/v/` and `/h/` (without-bound only)
-
-Under focus ranked **`e`** only, digitless **`ra`** / **`ru`** number verbs and adverbs take **without-bound** readings. Reverse **`ue`** digitless overlays are **undefined** for now (no “arbitrarily large but finite” add/× parallel). Digitless **`re`** / **`ro`** under `/v/` `/h/` focus ranked stay undefined here.
-
-| Form | Reading |
-|------|---------|
-| **`vel v+l`** | **increase without bound** |
-| **`vel v-l`** | **decrease without bound** |
-| **`hel h+l`** | **unbounded multiplicity** (× without bound / unboundedly many times) |
-| **`hel h-l`** | **unbounded duplicity** (÷ without bound / into unboundedly many parts) |
-
-**`/h/` parse note:** ranked `/h/` forms are normally [restrictors](restrictors.md) (*preferably when…*). When the **sole** conjunct is a **digitless number word**, that circumstance reading is **preempted** — same exception pattern as digitful focus numbers → thresholds. Do **not** read `hel h+l` as *preferably when (multiple times)*.
-
-**Not defined** on extremum × digitless: `/j/` interjections, `/x/` discourse numbers, percent closers (**`jo`** / **`ju`** still need a mantissa), mid-word **`x`** onto the numeral stem.
-
-Examples: `zel z+l` → +∞; `zuel z+l` → arbitrarily large but finite; `zel z-l` → −∞; `zuel z-l` → arbitrarily small but finite; `zel z#l` → last place; `zuel z#l` → unranked; `gel g+l` → modifier +∞; `vel v+l` → increase without bound; `hel h+l` → unbounded multiplicity; `hel h-l` → unbounded duplicity; `zel z+5l` → *\< 5* (threshold — digitful).
+Contrast: `zel g-agel z+3l z+5l` = *from 3 to 5 on age* (span); `zel z+3l z+5l` = *3 ≻ 5* (preference); `zel z+5l` = *\< 5* (focus threshold); `z+el` / `g+el` = +∞ ([digitless exponents](#digitless-exponents)). `zel z-Samn` (non-number) stays ordinary *only Sam matters* / [superlative-with-scale](comparatives.md) — **focus number conjunct** triggers the threshold reading when the number is a bound (typically digitful).
 
 ### Half-open (exclude the high end only)
 
@@ -617,11 +628,12 @@ Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which val
 
 **Clock / date spans:** do **not** use bare circumstance-`hal` (that series is [applicability](restrictors.md)). Prefer SHARED continuum **`g-timel`** (or a host relation + `/b/`) with digit-string endpoints (`bal g-timel b_15,00l b_16,00l`).
 
-Examples: `zal g-agel z+3l z+5l` → *between ages 3 and 5*; `z-kidl gal g-agel g+3l g+5l` → *kids ages 3–5*; `zal g-spanl z+3l ul z+5l` → *[3, 5)*; `zel g-agel z+10l z+20l` → *from age 10 to 20*; `zel z+3l z+5l` → *3 ≻ 5* (preference, not a span); `zel z+5l` → *\< 5*; `zuel z+5l` → *\> 5*; `zel z+l` → +∞; `zuel z-l` → arbitrarily small but finite; `zel z#l` → last place; `zuel z#l` → unranked; `vel v+l` → increase without bound; `hel h+l` → unbounded multiplicity; `zael z+5l z+5l` → *equally 5* / *5 equals 5*; `zaem z+3l z+5l` → *3 and 5 approximately equal*; `zar g-spanl z+3l z+5l` → *some value in 3–5*; `zol z+3l z+5l` → *3 or 5* (discrete, not a range).
+Examples: `zal g-agel z+3l z+5l` → *between ages 3 and 5*; `z-kidl gal g-agel g+3l g+5l` → *kids ages 3–5*; `zal g-spanl z+3l ul z+5l` → *[3, 5)*; `zel g-agel z+10l z+20l` → *from age 10 to 20*; `zel z+3l z+5l` → *3 ≻ 5* (preference, not a span); `zel z+5l` → *\< 5*; `zuel z+5l` → *\> 5*; `g+el` → +∞; `g+em` → arbitrarily large but finite; `g+e-l` → arbitrarily small but finite; `g#el` → last place; `g#e-l` → unranked; `v+el` → increase without bound; `h+el` → unbounded multiplicity; `zael z+5l z+5l` → *equally 5* / *5 equals 5*; `zaem z+3l z+5l` → *3 and 5 approximately equal*; `zar g-spanl z+3l z+5l` → *some value in 3–5*; `zol z+3l z+5l` → *3 or 5* (discrete, not a range).
 
 ## Stress (pronunciation guide)
 
 - Digitless numbers (marker + ending only): stress the **marker** syllable (`ra` / `ru` / `re` / `ro`).
+- [Digitless exponent](#digitless-exponents) forms (`ba`/`bu` alone): stress the **exponent marker** (`ba` / `bu`).
 - Single-digit magnitude groups: stress the digit syllable.
 - Multi-digit groups without exponent: stress the **leftmost** digit.
 - Groups with an exponent: stress the **leftmost exponent digit**.

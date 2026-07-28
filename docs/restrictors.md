@@ -58,8 +58,6 @@ Forms stay **reserved** under `/h/` / `/w/` (same spellings as other phrase slot
 | **`hael` / `haem`** | *as often as* / *equally when A and when B* — tied occasion frequency (closed / open) |
 | **`hoel` / `hoem`** | *if A, else if B…* — fallback occasions (exclusive contingency) |
 
-**Exception — digitless number sole conjunct:** focus **`hel` / `hem`** + a [digitless](numbers.md#zero-digit-groups) `/h/` number is **not** a restrictor — it is [unbounded multiplicity / duplicity](numbers.md#extremum-digitless) (`hel h+l` / `hel h-l`). Ordinary circumstance conjuncts are unchanged.
-
 **Unspecified-member (`-r`)** — statement readings below; under **question** force → [questions.md](questions.md#circumstance-when).
 
 | Form | With conjunct(s) | Bare |

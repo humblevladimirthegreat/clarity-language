@@ -152,15 +152,15 @@ Under `/h/` / `/w/`, only the [defined core](restrictors.md) uses circumstance g
 
 | Form | Focus reading | Contrast |
 |------|---------------|----------|
-| **…el** (`zel` / `del` / …) | *only X matters* / *X, period*; with SHARED scale → **superlative** (*X is the …-est* / *most …* of the domain); **digitful number X** → [threshold *\< X*](numbers.md#numeric-thresholds); **digitless number X** → [extremum × digitless](numbers.md#extremum-digitless) (+∞ / −∞ / last place / …) | Closed twin of **…em** — nothing else ranks for this claim; see [comparatives](comparatives.md) |
-| **…em** (`zem` / `dem` / `bem` / `gem` / `wem` / `hem`) | *X first* / *mainly X*; with SHARED scale → open **superlative** (*X is most … among those that come to mind* / top so far); **digitful number X** → soft *\< ~X*; **digitless number X** → soft extremum × digitless | Open preference — other ranks may exist; see [comparatives](comparatives.md) |
+| **…el** (`zel` / `del` / …) | *only X matters* / *X, period*; with SHARED scale → **superlative** (*X is the …-est* / *most …* of the domain); **number X** → [threshold *\< X*](numbers.md#numeric-thresholds) | Closed twin of **…em** — nothing else ranks for this claim; see [comparatives](comparatives.md) |
+| **…em** (`zem` / `dem` / `bem` / `gem` / `wem` / `hem`) | *X first* / *mainly X*; with SHARED scale → open **superlative** (*X is most … among those that come to mind* / top so far); **number X** → soft *\< ~X* | Open preference — other ranks may exist; see [comparatives](comparatives.md) |
 | **…ael** (`zael` / `dael` / …) | *X tied for* / *equal priority to X*; with SHARED scale → **not** equative (needs 2+ comparees) | Closed equal-rank singleton — tie frame on X, not a ladder |
 | **…aem** (`zaem` / `daem` / …) | *X about tied for* / soft equal priority | Open twin of **…ael** |
 | **…aen** (`zaen` / `daen` / …) | *X tied for* (stock) / conventional draw label on X | Named equal-rank singleton |
 | **…oem** (`zoem` / `doem` / …) | *start with X* / *try X first* | Contingency / menu primary — not value ranking |
 | **…oel** (`zoel` / `doel` / …) | *only try X* / *X with no listed fallback* | Closed twin of **…oem** — exclusive triage, no listed fallback (singleton already implies empty if X fails) |
-| **…uel** (`zuel` / `duel` / …) | *X last, period* / *only X as least*; with SHARED scale → **least** (*X is the least …* of the domain); **digitful number X** → [threshold *\> X*](numbers.md#numeric-thresholds); **digitless number X** → [extremum × digitless](numbers.md#extremum-digitless) (arbitrarily large/small but finite / unranked) | Closed reverse-ranked — X is the sole bottom / ascending singleton; see [comparatives](comparatives.md) |
-| **…uem** (`zuem` / `duem` / …) | *X last* / *mainly leave X for last*; **digitful number X** → soft *\> ~X*; **digitless number X** → soft reverse extremum × digitless | Open reverse-ranked — X is low on the ladder; other ranks may exist |
+| **…uel** (`zuel` / `duel` / …) | *X last, period* / *only X as least*; with SHARED scale → **least** (*X is the least …* of the domain); **number X** → [threshold *\> X*](numbers.md#numeric-thresholds) | Closed reverse-ranked — X is the sole bottom / ascending singleton; see [comparatives](comparatives.md) |
+| **…uem** (`zuem` / `duem` / …) | *X last* / *mainly leave X for last*; **number X** → soft *\> ~X* | Open reverse-ranked — X is low on the ladder; other ranks may exist |
 | **…en** (`zen` / `den` / …) | *X first* (stock) / *X, as usual* | Named / formulaic top item — **unspecified-ranking** label, not a draw (**…aen** = draw) |
 | **…er** (`zer` / `der` / …) | *preferably some X*; **number X** → *some/whatever value \< X* | Unspecified preferred member of kind X — not a closed “only X” (**…el**); see [thresholds](numbers.md#numeric-thresholds) |
 
