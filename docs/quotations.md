@@ -8,10 +8,10 @@ This page is the source of truth for **span fences**: every **open** carries a *
 
 | Channel | Form |
 |---------|------|
-| **Writing (preferred)** | **PoS letter** + optional **`@`** / **`~`** + brackets — type from bracket shape; marks sit **after** the PoS (`d@[…]`, `d~[…]`); extent / atomic / empty / anaphor from bracket shape (below). Do **not** write `daxal` / `xuxul` / … in ordinary text when a bracket form exists. |
+| **Writing (preferred)** | **PoS letter** + optional **`@`** / **`~`** + brackets — type from bracket shape; marks sit **after** the PoS (`d@[…]`, `d~[…]`); anaphor uses interior **`=`** (`d[=]`, same glyph as [number **-r**](numbers.md#number-endings)); extent / atomic / empty from bracket shape (below). Do **not** write `daxal` / `xuxul` / … in ordinary text when a bracket form exists. |
 | **Speech** | full **open** `{PoS}{TYPE}x{EDGE}{ENDING}`; full **close** **`xuxul`** (pop one) or **`xuxum`** (pop all) when a multi-token open needs an explicit close. |
 
-Same split as number shorthand (`g+3l` written, full CV spoken).
+Same split as number shorthand (`g+3` written, full CV spoken).
 
 <a id="shape"></a>
 
@@ -87,7 +87,7 @@ Sketch (*he said **that**?!* — anaphor to a prior cite):
 jol z-hen daxar v-saidl
 ```
 
-Writing: `jol z-hen d[·] v-saidl`
+Writing: `jol z-hen d[=] v-saidl`
 
 <a id="writing"></a>
 
@@ -110,7 +110,9 @@ Writing: `jol z-hen d[·] v-saidl`
 | **`~`** | **paraphrase** (-**m**) — `d~[…]` |
 | **`@`** | **proper** (-**n**) — `d@[…]` |
 
-Order when both apply: **`@` then `~`** (`d@~[…]`). **Do not write** the stack with both glyphs — spell **`d@[…]`** only. That writing is still spoken as the **proper** open (`daxan` / `daxon` / …), with **uncertain tonality**; English/other translation **hedges** (gist / soft rendering of the titled unit). Bare **`d~[…]`** remains ordinary paraphrase without proper. **`@`** does **not** combine with anaphor **-r**.
+Anaphor (**-r**) is **not** a second-slot mark here: write interior **`=`** (`d[=]`, `d{=}`, `d(=)`, `d<=>`). Numbers use second-slot **`=`** instead ([numbers.md](numbers.md#writing-preferred-shorthand)).
+
+Order when both apply: **`@` then `~`** (`d@~[…]`). **Do not write** the stack with both glyphs — spell **`d@[…]`** only. That writing is still spoken as the **proper** open (`daxan` / `daxon` / …), with **uncertain tonality**; English/other translation **hedges** (gist / soft rendering of the titled unit). Bare **`d~[…]`** remains ordinary paraphrase without proper. **`@`** / **`~`** do **not** combine with anaphor **-r**.
 
 | Writing | Speech (object slot) | Notes |
 |---------|----------------------|-------|
@@ -125,8 +127,8 @@ Order when both apply: **`@` then `~`** (`d@~[…]`). **Do not write** the stack
 | `d<sushi>` | `duxol sushi` | atomic opaque |
 | `d[…` … (to clause end) | `daxel` … | **clause-scoped** (EDGE **e**); auto-pop before next clause-force `/j/` or clause join |
 | `d[]` | `daxul` | **empty / redacted** (EDGE **u**); no interior |
-| `d[·]` | `daxar` | **anaphor** — prior cite as object (*that*) |
-| `d{·}` / `d(·)` / `d<·>` | `doxar` / `dexar` / `duxar` | anaphor of that TYPE |
+| `d[=]` | `daxar` | **anaphor** — prior cite as object (*that*) |
+| `d{=}` / `d(=)` / `d<=>` | `doxar` / `dexar` / `duxar` | anaphor of that TYPE |
 
 Same TYPE with any other PoS (`zaxal`, `hexal`, `xoxal`, `duxal`, `zaxar`, `daxol`, …). Explicit close is **`xuxul`** (or **`xuxum`** to clear the stack) when EDGE **a** left a frame open. EDGE **`o`** is **atomic** — one following token; not a multi-token open.
 
@@ -142,7 +144,7 @@ Long / mixed-PoS work titles used to **pick out the work** prefer **cite** (ofte
 
 Nesting is by matching depth — nests are legal (`d[ z[…] ]`, `d[ h(…) ]`, `d~[ z{…} ]`, `d[ d<…> ]`, …). Do **not** use nesting depth as a glyph-escape convention. **`@`** / **`~`** apply only to the immediately following open (marks after that open’s PoS). Atomic and anaphor forms do **not** push a nest frame that needs a closer.
 
-Literal bracket / `~` / `@` / `<` / `>` / `·` / `»` glyphs that must appear as content use a writing escape (`\` before the glyph). Spoken: nest an **atomic opaque** (or other atomic) around the fence-shaped token — [literal content](#literal-content).
+Literal bracket / `~` / `@` / `<` / `>` / `=` / `»` glyphs that must appear as content use a writing escape (`\` before the glyph). Spoken: nest an **atomic opaque** (or other atomic) around the fence-shaped token — [literal content](#literal-content).
 
 <a id="type"></a>
 <a id="vowels"></a>
@@ -194,7 +196,7 @@ Open (EDGE **a** / **e** with interior) pushes a stack frame (PoS + TYPE + EDGE 
 | **-l** | **exact** — verbatim / precise surface (multi, clause-scoped, atomic, or empty) | bare open (no `@` / `~`) |
 | **-m** | **paraphrase** — gist / non-verbatim rendering | **`~`** after PoS (`d~[…]`) |
 | **-n** | **proper** — titled / conventional designation of the **whole span** (work title, named saying, official citation unit) — same mnemonic as content-word [proper **-n**](reference-suffix.md#proper-name--n) | **`@`** after PoS (`d@[…]`); hedged proper (`@~`) uses the same spelling + uncertain tone |
-| **-r** | **anaphor** — pronoun for the **most recent span of this TYPE**; PoS = role **now**; **not** a new open | `d[·]`, `z{·}`, … |
+| **-r** | **anaphor** — pronoun for the **most recent span of this TYPE**; PoS = role **now**; **not** a new open | `d[=]`, `z{=}`, … (interior **`=`**; same glyph as [number anaphor](numbers.md#number-endings)) |
 
 **-n** is **not** one-token scope (that is EDGE **o**). A proper span may be multi (`d@[…]` / `daxan` … `xuxul`), clause-scoped (`d@[…` / `daxen` …), or atomic (`d@[Hamlet]` / `daxon Hamlet`). Morphological ending stays **-n** under hedged proper; **-m** is only for bare paraphrase writing (`d~[…]`).
 
@@ -245,7 +247,7 @@ Use a span (PoS + brackets in writing; matching spoken open + close when a multi
 - mid-sentence parenthetical digression (**aside** TYPE **e** / `…(…)`) — prefer PoS `/h/`; must **not** use floating `/j/` — [utterance markers](language-reference.md#utterance-markers-j)
 - use–mention, or *the saying/title X* as a named unit (**mention** TYPE **o** / `…{…}`; prefer **`d@{…}`** / **-n** for the named-unit reading)
 - foreign, code, IPA, or other non-lexicon surface the parser must **not** read as Clarity (**opaque** TYPE **u** / `…<…>`)
-- referring back to a prior span as a referent (**anaphor** **-r** / `…[·]`) — *said **that***
+- referring back to a prior span as a referent (**anaphor** **-r** / `…[=]`) — *said **that***
 
 Prefer **atomic** (EDGE **o**) for a single cited / mentioned / opaque token (`daxol hi`, `duxol sushi`). Prefer EDGE **`e`** for a long spoken cite that runs to the clause end without hunting for `xuxul`.
 
@@ -281,7 +283,7 @@ Fences nest freely. Each multi-token open pushes; **`xuxul`** pops the innermost
 - `d@[…]` — proper multi cite as object (also spelling of hedged proper `@~`)
 - `d[hi]` — atomic exact cite (*“hi”*)
 - `d@[Hamlet]` — atomic proper cite (*Hamlet* as title wording)
-- `d[·]` — anaphor (*that* cite)
+- `d[=]` — anaphor (*that* cite)
 - `d[]` — empty / redacted cite
 - `z{…}` — exact mention as subject
 - `z@{…}` — proper mention (*the title/saying …* as named unit)
@@ -306,11 +308,11 @@ Fences nest freely. Each multi-token open pushes; **`xuxul`** pops the innermost
 
 ## Literal content (fence words / meta glyphs)
 
-When a span-marker word (speech) or a raw bracket / `~` / `@` / `<` / `>` / `·` / `»` / PoS-before-bracket sequence (writing) must appear **as content** inside a span — **not** for ordinary nesting.
+When a span-marker word (speech) or a raw bracket / `~` / `@` / `<` / `>` / `=` / `»` / PoS-before-bracket sequence (writing) must appear **as content** inside a span — **not** for ordinary nesting.
 
 ### Writing
 
-`\` before `[` / `]` / `{` / `}` / `(` / `)` / `<` / `>` / `~` / `@` / `»` / `·`. Literal backslash: `\\`.
+`\` before `[` / `]` / `{` / `}` / `(` / `)` / `<` / `>` / `~` / `@` / `»` / `=`. Literal backslash: `\\`.
 
 ```text
 d[ he typed \] then left ]

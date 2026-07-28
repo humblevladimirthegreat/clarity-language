@@ -26,7 +26,7 @@ Do **not** key off mixed PoS mid-clause: `z-… ol d-…` stays **illegal**. Adv
 | **o** | *instead* — not A, but B (exclusive replacement) | ***instead*** — this sentence replaces the prior claim |
 | **u** | *except* / *but not* — A except B / A but not B (subtract B from the A frame) | ***except*** — this sentence stands as an exception to the prior frame (not adversative *but* / *however*) |
 
-Mnemonics track the join series loosely: **a** additive membership (discourse = *additionally*), **e** directional soft rank, **o** exclusive swap, **u** subtractive denial (cf. invert **ua** / **uo** and plain **u** [negation](coordination.md#negation-u)) — in-clause the job is **revision of a slot**; discourse the job is **how this sentence relates to prior talk**. *Starting with* / *Finally* are **not** discourse **`a`** — use `/x/` start-place **`x#e-l`** / last-place **`x#el`** ([numbers.md](numbers.md#number-as-discourse-marker-by-marker)). Prefixed **`zul` / `zum`** (*not X* / bare *no*) and **`zual` / `zuol`** (*everything but* / *anything but* a fence list) are **not** reviser **`ul` / `um`**.
+Mnemonics track the join series loosely: **a** additive membership (discourse = *additionally*), **e** directional soft rank, **o** exclusive swap, **u** subtractive denial (cf. invert **ua** / **uo** and plain **u** [negation](coordination.md#negation-u)) — in-clause the job is **revision of a slot**; discourse the job is **how this sentence relates to prior talk**. *Starting with* / *Finally* are **not** discourse **`a`** — use `/x/` start-place **`x#e-`** / last-place **`x#e`** ([numbers.md](numbers.md#number-as-discourse-marker-by-marker)). Prefixed **`zul` / `zum`** (*not X* / bare *no*) and **`zual` / `zuol`** (*everything but* / *anything but* a fence list) are **not** reviser **`ul` / `um`**.
 
 ## Endings — required
 
@@ -74,7 +74,7 @@ A REV₁ B REV₂ C ( REVᵢ SIDE )*
 - **Same slot** — A and every right-hand side match in role: all subject NPs (`/z/`), all objects (`/d/`), all `/b/` arguments, all `/ɡ/` APs (plus local material), all `/w/` or all `/h/` units, or all VPs (verb ± that verb’s `/d/`). Mixed slots are illegal (`z-… ol d-…`).
 - **Fixed A, one or more right-hand sides** — the first side is **A**; each **REV** introduces the next right-hand side. No left-fence shared-modifier slot on the particle; no **-r**. Cross-sentence repair without a discourse reviser before `/j/` still uses other `/x/` roots when needed.
 - **Inside a coordinated list** — allowed **inside** a conjunct as local repair, not as a substitute for the join (`zam` / `vam` / …). **Binding:** a revision chain starting at A consumes following same-slot sides paired by **REV** particles, tighter than list absorb — so `zam z-dogl ol z-catl z-birdl` = *(dog instead of cat) and bird*, and `zam z-teaml am z-Samn ul z-Lean z-birdl` = *(team including Sam, except Lea) and bird*.
-- **Inside a [number range](numbers.md#ranges)** — **`ul`** after the low endpoint marks an exclusive **high** bound (`zal g-spanl z+3l ul z+5l` = *[3, 5)*; SHARED continuum required). Details in numbers.md.
+- **Inside a [number range](numbers.md#ranges)** — **`ul`** after the low endpoint marks an exclusive **high** bound (`zal g-spanl z+3 ul z+5` = *[3, 5)*; SHARED continuum required). Details in numbers.md.
 
 ## Reviser chains (parallel on A)
 <a id="revision-chains-parallel-on-a"></a>
@@ -102,7 +102,7 @@ Same-vowel repeats are just the parallel rule with identical particles (`A am B 
 - `z-teaml ul z-Samn` — *the team except only Sam* (closed sole exception)
 - `z-teaml um z-Samn` — *the team except Sam (and maybe others)* (open)
 - `z-teaml am z-Samn ul z-Lean` — *the team, including Sam, except only Lea* (mixed parallel)
-- `zal g-spanl z+3l ul z+5l` — *[3, 5)* — [number range](numbers.md#ranges) exclusive high (SHARED continuum), not inventory *3 except 5*
+- `zal g-spanl z+3 ul z+5` — *[3, 5)* — [number range](numbers.md#ranges) exclusive high (SHARED continuum), not inventory *3 except 5*
 - `z-RGBn un z-bluel` — *RGB except blue* (named conventional set)
 - `z-RGBn un z-redl un z-bluel` — *RGB except red and except blue* (named; parallel multi-except)
 - `d-teal ol d-coffeel` — *coffee fully replaces tea* (closed)
@@ -144,8 +144,8 @@ When a prefix-less **`al` / `am` / `an` / `el` / `em` / `en` / `ol` / `om` / `on
 - `om jal …` — *instead* as a replacement claim
 - `ul jal …` — *Except, …* (sole exception to prior frame)
 - `jSamn al jal …` — vocative, then *Additionally,* then statement force
-- *Starting with* — **`x#e-l`** (not **`al`**) — [numbers.md](numbers.md#number-as-discourse-marker-by-marker)
-- *Finally* — **`x#el`** (not **`al`**) — [numbers.md](numbers.md#number-as-discourse-marker-by-marker)
+- *Starting with* — **`x#e-`** (not **`al`**) — [numbers.md](numbers.md#number-as-discourse-marker-by-marker)
+- *Finally* — **`x#e`** (not **`al`**) — [numbers.md](numbers.md#number-as-discourse-marker-by-marker)
 
 ---
 

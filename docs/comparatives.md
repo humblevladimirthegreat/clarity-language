@@ -56,7 +56,7 @@ Same under `/d/` / `/b/` when the ranked group fills that slot. Under `/ɡ/`, SH
 
 Assert the ranking as clause content with the same [zero-copula](predication.md#zero-copula) predicative pattern as plain adjectives: `jal zel g-bigl z-Samn z-Lean` → *Sam is bigger than Lea.* When discourse needs the comparee alone as subject of another verb, keep that subject ordinary and place the comparative claim in another slot or sentence — do not force the whole ladder to be the only subject.
 
-**Number ranges** (SHARED **continuum** `/ɡ/` + two number endpoints — not bare `zel z+3l z+5l`, which stays preference), **numeric thresholds** (focus ranked **`zel z+5l`** = *\<5*, **`zuel z+5l`** = *\>5*), and **digitless exponents** (**`g+el`** = +∞, **`g#el`** = last place, …): **[numbers.md § Ranges](numbers.md#ranges)** / **[digitless exponents](numbers.md#digitless-exponents)** — not expanded here.
+**Number ranges** (SHARED **continuum** `/ɡ/` + two number endpoints — not bare `zel z+3 z+5`, which stays preference), **numeric thresholds** (focus ranked **`zel z+5`** = *\<5*, **`zuel z+5`** = *\>5*), and **digitless exponents** (**`g+e`** = +∞, **`g#e`** = last place, …): **[numbers.md § Ranges](numbers.md#ranges)** / **[digitless exponents](numbers.md#digitless-exponents)** — not expanded here.
 
 ## Equatives (`ae` + SHARED scale)
 <a id="equatives"></a>
@@ -99,7 +99,7 @@ Full shape and unit grammar: **[numbers.md § Measure phrases](numbers.md#measur
 
 | Example | Gloss |
 |---------|-------|
-| `zel g-talll b-inchl g+2l z-Samn z-Lean` | *Sam is two inches taller than Lea* |
+| `zel g-talll b-inchl g+2 z-Samn z-Lean` | *Sam is two inches taller than Lea* |
 | `zel w-muchl g-talll z-Samn z-Lean` | *Sam is much taller than Lea* (vague degree — `/w/`, no measure NP) |
 
 Do **not** stack two `/b/` arguments (amount + unit) on the scale. Vague degree stays `/w/`; counted gaps use the measure-NP pattern.

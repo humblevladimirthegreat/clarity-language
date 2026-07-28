@@ -32,10 +32,10 @@ Example with resume: `…r` points at one prior noun; `…rsh` points at the **g
 
 | Need | Use instead |
 |------|-------------|
-| count / amount **`>1`** without treating a set as the referent | digitless **`g+l`** (etc.) — [zero digit groups](numbers.md#zero-digit-groups) |
+| count / amount **`>1`** without treating a set as the referent | digitless **`g+`** (etc.) — [zero digit groups](numbers.md#zero-digit-groups) |
 | *all* / *every* / kind-generic | **`zual` / `zuam` + SHARED kind** — [universals](coordination.md#universals-domains-generics) |
 | habitual / characterizing pattern | bare **`hual` / `huam`** — [circumstance](restrictors.md) |
-| *N times* / repetition count | [number words](numbers.md) under `/h/` (including digitless **`h+l`**) |
+| *N times* / repetition count | [number words](numbers.md) under `/h/` (including digitless **`h+`**) |
 | *everyone* (universal address) | bare **`…ual`** (vocative / entity slot as usual) |
 
 Indefinite **group introduction** stays **-lsh** / **-msh** on nouns (and parallel event-set intro on verbs). Do **not** replace that job with digitless numbers.
@@ -69,7 +69,7 @@ Natural home for **-sh**. The argument’s referent is a set: *some cats*, *thos
 * **-nsh** — a named plural / titled group (*the Beatles*, *the Alps*).
 * **-rsh** — the group containing a prior noun mention (*them* / *those* / *that group*).
 
-**Not noun -sh:** bare “more than one” when you only need quantity → singular noun + **`g+l`**. *Every cat* / *cats bark* (generic) → **`zual` / `hual`**, not **-lsh**.
+**Not noun -sh:** bare “more than one” when you only need quantity → singular noun + **`g+`**. *Every cat* / *cats bark* (generic) → **`zual` / `hual`**, not **-lsh**.
 
 ### Verbs (`/v/`)
 
@@ -87,7 +87,7 @@ Natural home for **-sh**. The argument’s referent is a set: *some cats*, *thos
   * After mentioning several knocks as a set: `/v/`…**-rsh** → *those doings* / *do that set again*.
   * After one knock only: `/v/`…**-r** → that one doing; add **-sh** only if you mean the **group of** knockings already in discourse.
 
-**Not verb -sh:** plural *people* cooking once → plural on the **noun**, singular verb. *Knocked several times* as a count → **`h+3l`** / **`h+l`**, singular verb (unless the bout of knocks is itself the discourse set).
+**Not verb -sh:** plural *people* cooking once → plural on the **noun**, singular verb. *Knocked several times* as a count → **`h+3`** / **`h+`**, singular verb (unless the bout of knocks is itself the discourse set).
 
 ### Adjectives (`/ɡ/`)
 <a id="adjectives-g"></a>
@@ -178,6 +178,6 @@ Depends on subclass (see [utterance markers](language-reference.md#utterance-mar
 
 ## Quantity, generics, and habit (not **-sh**)
 
-- **Quantity `>1`:** digitless positive scalar **`g+l`** (etc.) — [zero digit groups](numbers.md#zero-digit-groups). Different job from noun **-lsh** (group as referent). They may co-occur when both are meant (`z-catlsh g+3l`), but **`g+l`** does not replace indefinite group introduction.
+- **Quantity `>1`:** digitless positive scalar **`g+`** (etc.) — [zero digit groups](numbers.md#zero-digit-groups). Different job from noun **-lsh** (group as referent). They may co-occur when both are meant (`z-catlsh g+3`), but **`g+`** does not replace indefinite group introduction.
 - **Generics / *every K*:** [coordination](coordination.md#universals-domains-generics) — `zual g-catl`, `zuam g-…`, habitual **`hual`**.
 - **Do not** use **-sh** to mean *all* / *every* / *in general* / *always* / *as a character trait*.

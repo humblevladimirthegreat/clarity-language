@@ -137,7 +137,7 @@ Each subsection is an **antecedent** PoS; the table rows are the **pronoun** PoS
 | *the red one* / *that quality* | Adjective antecedent → noun …`-r` |
 | *by doing so* / *thereby* | Verb antecedent → `/h/` …`-r` |
 | *that one’s* / *of that kind* | Noun antecedent → `/ɡ/` …`-r` |
-| *that* (prior cite / mention / aside / opaque) | [Span anaphor](quotations.md#endings) → `daxar` / `doxar` / `dexar` / `duxar` / … (TYPE selects antecedent kind; PoS = role now; writing `d[·]`) |
+| *that* (prior cite / mention / aside / opaque) | [Span anaphor](quotations.md#endings) → `daxar` / `doxar` / `dexar` / `duxar` / … (TYPE selects antecedent kind; PoS = role now; writing `d[=]`) |
 
 **Span anaphors** are closed forms in the [span-fence](quotations.md) series (`{PoS}{TYPE}xa{r}`, EDGE **a**), not letter/full-root content pronouns. They resolve to the **most recent span of that TYPE** and treat it as a referent in the new slot (*he said **that**?!*) — they do **not** re-open a cite. Ordinary content **-r** still resumes words *inside* a non-opaque span when those words were introduced as ordinary lexicon.
 
