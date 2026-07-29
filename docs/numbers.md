@@ -1,6 +1,6 @@
 # Numbers
 
-Numerals are a **closed formal subsystem**, not ordinary lexicon roots. Open quantifiers (*many*, *all*, *some*, …) stay lexicon; the numeral word itself can be [digitless](#zero-digit-groups) (unspecified magnitude of a marker identity, including plural **`>1`** on **`ra`**) or carry a [digitless exponent](#digitless-exponents) for special values (+∞ / −∞ / last place / …). PoS prefixes are defined in [language-reference.md](language-reference.md); plural **-sh** in [plurality.md](plurality.md); general phonotactics live in [phonology.md](phonology.md); ordinary reference suffixes in [reference-suffix.md](reference-suffix.md). This page is the source of truth for numeral grammar, including [percent denominators](#percent-denominators) (whole NP + `/ɡ/` `…jo`), [ranges](#ranges) (spans reuse [phrase fences](coordination.md) with SHARED continuum `/ɡ/`, documented here), [digitless exponents](#digitless-exponents), and [measure phrases](#measure-phrases) (unit + amount for differentials and durations). PoS-less number stems also compound onto content roots as [numeric derivation](special-vocabulary.md#numeric-derivation) (`ROOTx+e` = *essence of ROOT*, `ROOTx+1e` = *gazillion-ROOT*, …) — not free clause-slot numerals.
+Numerals are a **closed formal subsystem**, not ordinary lexicon roots. Open quantifiers (*many*, *all*, *some*, …) stay lexicon; the numeral word itself can be [digitless](#zero-digit-groups) (unspecified magnitude of a marker identity, including plural **`>1`** on **`ra`**) or carry a [digitless exponent](#digitless-exponents) for special values (+∞ / −∞ / last place / [zero × exponent](#zero-exponent) / …). PoS prefixes are defined in [language-reference.md](language-reference.md); plural **-sh** in [plurality.md](plurality.md); general phonotactics live in [phonology.md](phonology.md); ordinary reference suffixes in [reference-suffix.md](reference-suffix.md). This page is the source of truth for numeral grammar, including [percent denominators](#percent-denominators) (whole NP + `/ɡ/` `…jo`), [ranges](#ranges) (spans reuse [phrase fences](coordination.md) with SHARED continuum `/ɡ/`, documented here), [digitless exponents](#digitless-exponents), and [measure phrases](#measure-phrases) (unit + amount for differentials and durations). PoS-less number stems also compound onto content roots as [numeric derivation](special-vocabulary.md#numeric-derivation) (`ROOTx+e` = *essence of ROOT*, `ROOTx+0e` = *total-null ROOT*, `ROOTx+1e` = *gazillion-ROOT*, …) — not free clause-slot numerals.
 
 A whole numeric value is **one word**, even when it contains several digit groups (or none).
 
@@ -272,8 +272,8 @@ Within each digit group:
 - The **exponent comes before** the group’s mantissa digits.
 - If a mantissa follows the exponent, say **`ja`** after the last exponent digit, then the mantissa. Example: `27e12` → `ba` + `wo` + `du` + `ja` + `du` + `le`.
 - **Bare order of magnitude** (exponent only, no mantissa): use `ba`/`bu` + exponent digits and **omit** **`ja`**. The group ends at the next `ba`/`bu`, or at the word ending. Example: *e9* → `ba` + `na` (not `*banaja`).
-- **Digitless exponent** ([special values](#digitless-exponents) or [hyperbole](#hyperbole-gazillion)): use `ba`/`bu` with **no** exponent digits — alone for specials (`g+e`), or after mantissa digits for hyperbole (`g+1e`). Not the same as bare OoM (which always names the power) and not a [zero-group](#zero-digit-groups) word.
-- If the exponent is **0**, omit the exponent (and thus omit **`ja`**) entirely — except do **not** confuse omitted-zero with digitless `ba`/`bu` special values.
+- **Digitless exponent** ([special values](#digitless-exponents), [hyperbole](#hyperbole-gazillion), or [zero × digitless exp](#zero-exponent)): use `ba`/`bu` with **no** exponent digits — alone for specials (`g+e`), after mantissa **`≠0`** for hyperbole (`g+1e`), or after mantissa **`0`** for total-null / sterile / residue specials (`g+0e`). Not the same as bare OoM (which always names the power) and not a [zero-group](#zero-digit-groups) word.
+- If the exponent is **0**, omit the exponent (and thus omit **`ja`**) entirely — **except** (1) do **not** confuse omitted-zero with digitless `ba`/`bu` special values; (2) **identity / paradox** forms that **name** exponent **0** on purpose — [zero × exponent](#zero-exponent) (`g+e0`, `g+0e0`, and overlays) and the parallel [derivation](special-vocabulary.md#zero-exponent-derivation) morphs — keep written/spoken **`e0`**. Ordinary magnitudes still omit (`g+3`, not `*g+3e0`).
 - Default spoken/written scale uses **engineering notation**: exponents are usually multiples of **3** (e.g. `27e6`, not `2.7e7`).
 - **Decimal point:** say **`je`** after the digit(s) left of the point; digits after **`je`** are the fractional part (group in threes if long). May appear with or without an exponent.
 - **Scientific register** is optional: exp-first, then **`ja`**, then mantissa with **`je`** after the leading digit (usual scientific shape). Example: `5.2487083e-4` → `bu` + `mo` + `ja` + `va` + `je` + `du` + `mo` + `ha` + `le` + `zo` + `ha` + `re`.
@@ -293,13 +293,14 @@ A digit group may use an exponent marker (**`ba`** or **`bu`**) with **no** expo
 | Shape | Reading |
 |-------|---------|
 | **`ba`/`bu` alone** (no mantissa) | **Special value** — +∞ / −∞ / last place / start place / … (tables below) |
-| **Mantissa digits + `ba`/`bu`∅** | **Hyperbole** on scalars (*N gazillion* / *N gazillionth*); on ordinals **`ba`** only (*the N-gazillionth* / *umpteenth*). Ordinal **`bu`** + mantissa = [N from the end](#from-the-end) (not hyperbole) |
+| **Mantissa `≠0` + `ba`/`bu`∅** | **Hyperbole** on scalars (*N gazillion* / *N gazillionth*); on ordinals **`ba`** only (*the N-gazillionth* / *umpteenth*). Ordinal **`bu`** + mantissa = [N from the end](#from-the-end) (not hyperbole) |
+| **Mantissa `0` + `ba`/`bu`∅** | **[Zero × digitless exp](#zero-exponent)** — total null / sterile / residue specials — **not** hyperbole |
 
-None of these is bare OoM (which always **names** the power: `g+e9`) nor a [zero-group](#zero-digit-groups) word (`g+` = plural `>1`).
+None of these is bare OoM (which always **names** the power: `g+e9`) nor a [zero-group](#zero-digit-groups) word (`g+` = plural `>1`). Named exponent **`0`** (`g+e0`, `g+0e0`) is also in [zero × exponent](#zero-exponent), not bare OoM-as-magnitude.
 
-**Writing:** **`e`** = speech **`ba`**; **`e-`** = speech **`bu`**. Digitless means no power digits after that mark: `g+e`, `g+1e`, `g+e-`, `g+1e-`.
+**Writing:** **`e`** = speech **`ba`**; **`e-`** = speech **`bu`**. Digitless means no power digits after that mark: `g+e`, `g+1e`, `g+0e`, `g+e-`, `g+1e-`. Identity/paradox forms write power **`0`**: `g+e0`, `g+0e0`.
 
-**Shape limits:** one such group only in the word; do not combine digitless exp with real exp digits, percent closers, or further groups. Marker identity still applies. Digitless exp on **`ro`** / **`_`** is **undefined** on free number words. Derivation compounds may use digitless **`_`** as [infinite / landmark labels](special-vocabulary.md#infinite-labels) (`ROOTx_e`, `ROOTx_e-`, `ROOTx_1e`, …).
+**Shape limits:** one such group only in the word; do not combine digitless exp with real exp digits (except the named-`0` identity/paradox cells), percent closers, or further groups. Marker identity still applies. Digitless exp on **`ro`** / **`_`** is **undefined** on free number words. Derivation compounds may use digitless **`_`** as [infinite / landmark labels](special-vocabulary.md#infinite-labels) (`ROOTx_e`, `ROOTx_e-`, `ROOTx_1e`, …).
 
 #### Special values — no mantissa
 
@@ -330,7 +331,7 @@ Same under `/z/` `/d/` `/b/` (`z+e` = +∞ as subject; `d#e-` = start-place as o
 | **-n** | Proper / conventional designation of that special (named ∞ symbol, official *last place* / *starting* title, …) |
 | **-r** | Resume a prior special value of that marker+exp polarity (`g=+e` = *that +∞ again*; `g=+e-` = *that start/small again*) |
 
-**Contrast:** zero-group `g+` = plural count `>1`. Bare OoM `g+e9` = order 10⁹. No-mantissa `g+e` = +∞; no-mantissa `g#e` = last place. Mantissa + digitless **`ba`** (`g+1e` / `g#1e`) = [hyperbole](#hyperbole-gazillion). Mantissa + digitless **`bu`** on **`#`** (`g#2e-`) = [from the end](#from-the-end). Focus ranked digitless (`zel z+`) is **not** a special value — ordinary *only (plural) matters* / preference framing (the old focus→∞ reading is **removed**).
+**Contrast:** zero-group `g+` = plural count `>1`. Bare OoM `g+e9` = order 10⁹. No-mantissa `g+e` = +∞; no-mantissa `g#e` = last place. Mantissa **`≠0`** + digitless **`ba`** (`g+1e` / `g#1e`) = [hyperbole](#hyperbole-gazillion). Mantissa **`0`** + digitless (`g+0e`) = [zero × exponent](#zero-exponent). Mantissa + digitless **`bu`** on **`#`** (`g#2e-`) = [from the end](#from-the-end). Named exp **`0`** (`g+e0` / `g+0e0`) = [zero × exponent](#zero-exponent). Focus ranked digitless (`zel z+`) is **not** a special value — ordinary *only (plural) matters* / preference framing (the old focus→∞ reading is **removed**).
 
 ##### Overlay `/v/` and `/h/`
 
@@ -385,10 +386,84 @@ Other `/j/` no-mantissa digitless-exp forms (`j-e`, `j+e-`, `j_…`, …) stay *
 
 Under `/x/`, **last-place** **`x#e`** (and **`x~#e`** / **`x@#e`** / **`x=#e`**) = discourse *Finally* / last point, and **start-place** **`x#e-`** (and **`x~#e-`** / **`x@#e-`** / **`x=#e-`**) = discourse *Starting with:* / beginning — see [Number as discourse marker](#number-as-discourse-marker-by-marker). **`x+e`** / **`x-e`** (and other `/x/` no-mantissa digitless-exp forms beyond start/last) stay **undefined**.
 
+#### Zero × exponent and exponent 0
+<a id="zero-exponent"></a>
+<a id="zero-exponential"></a>
+<a id="annihilate"></a>
+
+Forms that pair **mantissa `0`** with an exponent, or that **name exponent `0`** (normally omitted for ordinary magnitudes). Same anatomy family as [numeric derivation](special-vocabulary.md#zero-exponent-derivation); free words are **hostless** amounts / acts; derived words attach the morph to a ROOT.
+
+**Not** plain zero (`g+0`), **not** +∞ (`g+e`), **not** hyperbole (`g+1e`), **not** bare OoM magnitude (`g+e9`). Soft / named / resume endings (**`~`** / **`@`** / **`=`**) apply as on other specials.
+
+##### Referential (`/ɡ/` `/z/` `/d/` `/b/`)
+
+| Form | Anatomy | Reading |
+|------|---------|---------|
+| **`g+0e`** | mantissa **`0`** + digitless **`ba`** | **absolute zero** / totalized null quantity — stronger than plain **`g+0`** |
+| **`g+0e-`** | mantissa **`0`** + digitless **`bu`** | **sterile / null-at-seed** amount — emptiness at grain scale |
+| **`g-0e`** | **`ru`** + mantissa **`0`** + digitless **`ba`** | **absolute residue** quantity — amount that will not totally wipe |
+| **`g-0e-`** | **`ru`** + mantissa **`0`** + digitless **`bu`** | **micro-residue** amount |
+| **`g+e0`** | bare OoM **exp digit `0`** (no mantissa) | **unit / identity amount** — not count **`g+1`**, not +∞ **`g+e`** |
+| **`g+0e0`** | mantissa **`0`** × named exp **`0`** | **`0⁰` / indeterminate** — both empty and unit; refuse a forced pick between null and identity |
+
+Same under `/z/` `/d/` `/b/` (`z+0e` = absolute-zero as subject; `d+e0` = unit amount as object).
+
+**Emptiness chain (amounts):** **`g-e`** (−∞ deficit) ≠ **`g+0`** (plain zero) ≠ **`g+0e`** (absolute zero) ≠ **`g+0e-`** (sterile micro-null). **`g+e0`** is identity, not emptiness.
+
+##### Overlay `/v/` and `/h/`
+
+| Form | Reading |
+|------|---------|
+| **`v+0e`** / **`v+0el`** | **annihilate** / wipe totally (hostless total null as act) |
+| **`v+0e-`** | **sterilize** / null at the seed |
+| **`v-0e`** | **leave irreducible residue** / refuse total wipe |
+| **`v-0e-`** | leave **micro-residue** |
+| **`v+e0`** | **unitize** / normalize to identity |
+| **`v+0e0`** | **paradox-null** — treat as both empty and unit |
+| **`h+0e`** | **zero times (totally)** / annihilate repetition — **not** restrictor **`hal`** (*never* as applicability) |
+| **`h+0e-`** | sterile / grain-null multiplicity framing |
+| **`h-0e`** | with irreducible residual repetition |
+| **`h+e0`** | **once-as-identity** / unit multiplicity framing — not numbered **`h#1`** / **`h+1`** |
+| **`h+0e0`** | paradox null-and-unit multiplicity |
+
+Soft **-m** hedges (*almost annihilate*, *roughly unitize*, …).
+
+##### Overlay `/j/`
+
+| Form | Reading |
+|------|---------|
+| **`j+0e`** | *Annihilate!* / *Wipe it!* |
+| **`j+0e-`** | *Sterilize!* / *Null the seed!* |
+| **`j-0e`** | *Residue stands!* / *Won’t totally wipe!* |
+| **`j+e0`** | *Unitize!* / *To the identity!* |
+| **`j+0e0`** | *Both empty and unit!* (paradox cheer) |
+
+Other `/j/` zero-exp forms stay **undefined** for now.
+
+##### Overlay `/x/`
+
+**`x+0e`**, **`x+e0`**, **`x+0e0`**, and kin stay **undefined** for now (discourse items keep start/last landmarks and numbered points).
+
+##### Free vs derived
+
+| Free | Derived | Contrast |
+|------|---------|----------|
+| **`v+0el`** | **`v-scorex+0el`** | hostless *annihilate* vs *annihilate-the-score* (kind) |
+| **`g+0e`** | **`z-debtx+0el`** | absolute-zero amount vs total-null debt-kind |
+| **`g+e0`** | **`z-lovex+e0l`** | unit amount vs identity/unit form of love |
+| **`v+0l`** | **`v-scorex+0l`** | ordinary zeroing / null-reset — weaker than **`…+0e`** |
+
+##### Out of scope (for now)
+
+- Scale-specific **`…+0eN`** / **`…+0e-N`** (engineering-null at OoM N).
+- Ordinal **`#0e`** / **`#e0`** / **`#0e0`** (keep **`#0`** zeroth-order on derivation; free ordinal zero-exp undefined).
+- **`…Ne0`** for mantissa **`N≠0`** — omit exp **`0`** as ordinary magnitude (`g+3`, not `*g+3e0`).
+- Digit-string **`_`** zero-exp free forms.
+
 #### Hyperbole — mantissa + digitless exponent
 <a id="gazillion"></a>
 
-**Mantissa digits** (ordinary count) plus digitless **`ba`** / **`bu`** = a **hyperbolic** magnitude on **scalars** (comic huge / tiny). On **ordinals**, only mantissa + digitless **`ba`** is hyperbole (*umpteenth*); mantissa + digitless **`bu`** is [N from the end](#from-the-end), not hyperbole. Not a real power of ten and not a no-mantissa special (+∞ / last place / …).
+**Mantissa digits `≠0`** (ordinary count) plus digitless **`ba`** / **`bu`** = a **hyperbolic** magnitude on **scalars** (comic huge / tiny). Mantissa **`0`** + digitless is [zero × exponent](#zero-exponent), **not** hyperbole. On **ordinals**, only mantissa + digitless **`ba`** is hyperbole (*umpteenth*); mantissa + digitless **`bu`** is [N from the end](#from-the-end), not hyperbole. Not a real power of ten and not a no-mantissa special (+∞ / last place / …).
 
 ##### Scalar (`ra` / `ru`)
 
@@ -436,7 +511,7 @@ Digit-string **`ro`** / **`_`** + mantissa + digitless exp stays **undefined**.
 | **`j#1e`** | *Gazillionth!* (comic place cheer) |
 | **`x#1e`** | *umpteenth point:* / joke late agenda item |
 
-**Not hyperbole:** `g+e` (no mantissa) = +∞; `g#e` / `g#e-` (no mantissa) = last / start place; mantissa + **`bu`** on **`#`** = [from the end](#from-the-end); `g+e9` (digitful exp) = bare OoM; `g+1e9` = 1×10⁹ (real engineering). Do not mix digitless exp with **`je`** / **`jo`** / **`ju`** in the same group.
+**Not hyperbole:** `g+e` (no mantissa) = +∞; `g#e` / `g#e-` (no mantissa) = last / start place; mantissa **`0`** + digitless (`g+0e` / `g+0e-`) = [zero × exponent](#zero-exponent); named exp **`0`** (`g+e0` / `g+0e0`) = identity / paradox; mantissa + **`bu`** on **`#`** = [from the end](#from-the-end); `g+e9` (digitful exp) = bare OoM; `g+1e9` = 1×10⁹ (real engineering). Do not mix digitless exp with **`je`** / **`jo`** / **`ju`** in the same group.
 
 #### From the end — ordinal mantissa + digitless **`bu`**
 <a id="from-the-end"></a>
@@ -465,7 +540,7 @@ On **`re`** only: mantissa digits + digitless **`bu`** (**`e-`**) = **Nth from t
 | **`x#1e-`** | *1st-from-end point:* / *Starting with the last one:* (counting twin of **`x#e`** *Finally:*) |
 | **`x#2e-`** | *2nd-from-end point:* / *penultimate item:* |
 
-Examples: `g+e` → +∞; `g~+e` → arbitrarily large but finite; `g+1e` → *one gazillion*; `g~+1e` → *about a gazillion*; `g@+1e` → proper name *One Gazillion* / *the Gazillion*; `g+1e-` → *one gazillionth*; `g+e-` → arbitrarily small but finite; `g-e` → −∞; `g#e` → last place; `g~#e` → near last place; `g#e-` → start / beginning place; `g~#e-` → near first place; `g#1e` → *the gazillionth* / *umpteenth*; `g#2e-` → *2nd from the end* / *penultimate*; `g#1e-` → *1st from the end* / *Starting with the last one*; `h#1e` → *for the gazillionth time*; `h#2e-` → *for the penultimate time*; `x#e-` → *Starting with:*; `x#e` → *Finally:* / last discourse point; `v+e` → increase without bound; `v~+e` → increase a lot but finite; `v+e-` → nudge up; `h+e` → unbounded multiplicity; `h#e` → *for the last time*; `h#e-` → *for the first time* (onset); `v#e` → *take last place*; `v#e-` → *take starting place*; `j+e` → *To infinity!*; `j#e` → *Finally!*; `j#e-` → *(finally, we're) starting!*; `h+1e` → *a gazillion times*; `g+e9` → bare OoM e9; `g+` → plural `>1`.
+Examples: `g+e` → +∞; `g~+e` → arbitrarily large but finite; `g+1e` → *one gazillion*; `g~+1e` → *about a gazillion*; `g@+1e` → proper name *One Gazillion* / *the Gazillion*; `g+1e-` → *one gazillionth*; `g+e-` → arbitrarily small but finite; `g-e` → −∞; `g#e` → last place; `g~#e` → near last place; `g#e-` → start / beginning place; `g~#e-` → near first place; `g#1e` → *the gazillionth* / *umpteenth*; `g#2e-` → *2nd from the end* / *penultimate*; `g#1e-` → *1st from the end* / *Starting with the last one*; `g+0e` → absolute zero; `g+0e-` → sterile / null-at-seed amount; `g+e0` → unit / identity amount; `g+0e0` → `0⁰` / indeterminate; `v+0e` → *annihilate*; `v+e0` → *unitize*; `j+0e` → *Annihilate!*; `h#1e` → *for the gazillionth time*; `h#2e-` → *for the penultimate time*; `x#e-` → *Starting with:*; `x#e` → *Finally:* / last discourse point; `v+e` → increase without bound; `v~+e` → increase a lot but finite; `v+e-` → nudge up; `h+e` → unbounded multiplicity; `h#e` → *for the last time*; `h#e-` → *for the first time* (onset); `v#e` → *take last place*; `v#e-` → *take starting place*; `j+e` → *To infinity!*; `j#e` → *Finally!*; `j#e-` → *(finally, we're) starting!*; `h+1e` → *a gazillion times*; `g+e9` → bare OoM e9; `g+` → plural `>1`.
 
 ## Percent and percentage points
 
@@ -597,7 +672,8 @@ Place the identity symbol **immediately after** any ending mark (or after PoS wh
 | *(no digit groups)* | *(empty after marker)* `g+`, `g~-`, `g=#`, `h_` |
 | Digit syllables (`wo`…`zo`) | Arabic **`0`–`9`** |
 | `ba` / `bu` (+ `ja` when a mantissa follows) | **`e`** / **`e-`** (engineering or scientific form) |
-| `ba` / `bu` with **no** digits ([digitless exp](#digitless-exponents)) | **`e`** / **`e-`** with no power digits — specials `g+e`, `g+e-`; hyperbole `g+1e`, `g+1e-`; from-the-end `g#2e-` |
+| `ba` / `bu` with **no** digits ([digitless exp](#digitless-exponents)) | **`e`** / **`e-`** with no power digits — specials `g+e`, `g+e-`; zero×digitless `g+0e`, `g+0e-`; hyperbole `g+1e`, `g+1e-`; from-the-end `g#2e-` |
+| named exp **`0`** ([zero × exponent](#zero-exponent)) | **`e0`** kept on purpose — identity `g+e0`; paradox `g+0e0` (ordinary magnitudes still omit exp `0`) |
 | `je` | **`.`** |
 | `jo` | **`%`** |
 | `ju` | **`%*`** |
@@ -619,6 +695,13 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 | +∞ | `g+e` | *grabal* (`g` + `ra` + `ba` + `l` — [digitless exp](#digitless-exponents)) |
 | arbitrarily large but finite | `g~+e` | *grabam* |
 | one gazillion (hyperbole) | `g+1e` | *grawobal* (`ra` + wo + `ba` + `l`) |
+| absolute zero (totalized null) | `g+0e` | *grazobal* (`ra` + zo + `ba` + `l` — [zero × exponent](#zero-exponent)) |
+| sterile / null-at-seed amount | `g+0e-` | *grazobul* (`ra` + zo + `bu` + `l`) |
+| unit / identity amount | `g+e0` | *grabazol* (`ra` + `ba` + zo + `l`) |
+| `0⁰` / indeterminate | `g+0e0` | *grabazojaazol* (`ra` + `ba` + zo + `ja` + zo + `l`) |
+| *annihilate* | `v+0e` | *vrazobal* |
+| *unitize* | `v+e0` | *vrabazol* |
+| *Annihilate!* | `j+0e` | *jrazobal* |
 | about a gazillion | `g~+1e` | *grawobam* |
 | the Gazillion (proper name) | `g@+1e` | *grawoban* |
 | one gazillionth | `g+1e-` | *grawobul* (`ra` + wo + `bu` + `l`) |

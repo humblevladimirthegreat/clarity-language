@@ -501,7 +501,7 @@ PoS + ROOT + x + NUM + {-l|-m|-n|-r}
 
 **Ending rule:** because **-l / -m / -n / -r** attaches to the compound (the ROOT), there is **no** number soft / named / resume on `NUM`. Do **not** write `ROOTx~+e`, `ROOTx@+1e`, or `ROOTx=+`. Approximate, proper-designation, and resume use ordinary reference endings on the derived word, or free number words / ordinary syntax outside this family.
 
-**Parser cue:** longer material before `x`, then a right half that matches number-stem grammar (writing **`+` / `-` / `#` / `_`**, speech **`r`+V…**, digitless exp, hyperbole mantissa+`e`/`e-`, label digits under `_`, scalar digit morph **`+N` / `-N`**, or ordinal digit morph **`#N`**) + ordinary ending → this family. Bare **`ROOTxe`** is **not** essence (that shape is stance **`xe`**). Essence is **`ROOTx+e`**. Bare digit with no marker (`ROOTx1`) is **illegal** — digit morphs need a pronounceable marker vowel (**`ra`** / **`ru`** / **`re`**).
+**Parser cue:** longer material before `x`, then a right half that matches number-stem grammar (writing **`+` / `-` / `#` / `_`**, speech **`r`+V…**, digitless exp, hyperbole mantissa+`e`/`e-`, [zero × exp](numbers.md#zero-exponent) **`+0e` / `+e0` / `+0e0`**, label digits under `_`, scalar digit morph **`+N` / `-N`**, or ordinal digit morph **`#N`**) + ordinary ending → this family. Bare **`ROOTxe`** is **not** essence (that shape is stance **`xe`**). Essence is **`ROOTx+e`**. Bare digit with no marker (`ROOTx1`) is **illegal** — digit morphs need a pronounceable marker vowel (**`ra`** / **`ru`** / **`re`**).
 
 ### Inventory
 
@@ -518,7 +518,7 @@ PoS + ROOT + x + NUM + {-l|-m|-n|-r}
 | **`ROOTx+`** | **poly- / multi-ROOT** (unspecified >1) | `z-faithx+l` — *multi-faith* |
 | **`ROOTx-`** | **de- / un- / deficit-ROOT** | `v-mythx-l` — *to de-myth* |
 
-Digitless **`+` / `-` / `#`** on ROOT = **metaphysics of the kind** — **not** free special values. `ROOTx+e` is **not** free +∞ (`g+e`), and **not** comic hugeness (`ROOTx+1e`). Free twins: `g+e` = +∞; `g+e-` = arbitrarily small; `g-e` = −∞; `g#e-` / `g#e` = start / last place. Free `g-e-` stays undefined; derivation **`ROOTx-e-`** is defined. For *∞ as a property of the kind*, prefer hyperbole `ROOTx+1e` or ordinary wording — don’t overload essence. Digitless **`_`** = [catalog topology](#infinite-labels) (below).
+Digitless **`+` / `-` / `#`** on ROOT = **metaphysics of the kind** — **not** free special values. `ROOTx+e` is **not** free +∞ (`g+e`), and **not** comic hugeness (`ROOTx+1e`). Free twins: `g+e` = +∞; `g+e-` = arbitrarily small; `g-e` = −∞; `g#e-` / `g#e` = start / last place; [zero × exponent](numbers.md#zero-exponent) free forms (`g+0e`, `g+e0`, `v+0el`, …) parallel [derivation zero-exp](#zero-exponent-derivation). Free `g-e-` stays undefined; derivation **`ROOTx-e-`** is defined. For *∞ as a property of the kind*, prefer hyperbole `ROOTx+1e` or ordinary wording — don’t overload essence. Digitless **`_`** = [catalog topology](#infinite-labels) (below).
 
 #### Scalar digit morphs (`+N` / `-N`)
 
@@ -540,7 +540,7 @@ Single-digit scalars only. Writing **must** include the marker (**`+N`** / **`-N
 ##### Null / anti-null by PoS (`+0` / `-0`)
 <a id="null-anti-null"></a>
 
-**`+0`** = treat ROOT as **resettable / emptied**; **`-0`** = ROOT **resists emptying** (insistent residue). PoS says *what kind of thing* is being emptied or refusing. This is **modality of emptiness**, not quantity: not “negative zero amount,” and not absence of the kind (**`ROOTx-e`** = *void of ROOT*). Orthogonal to free counts, essence (`+e`), void (`-e`), and [ability](#ability) (`…xun` *can’t* ≠ *won’t null*).
+**`+0`** = treat ROOT as **resettable / emptied**; **`-0`** = ROOT **resists emptying** (insistent residue). PoS says *what kind of thing* is being emptied or refusing. This is **modality of emptiness**, not quantity: not “negative zero amount,” and not absence of the kind (**`ROOTx-e`** = *void of ROOT*). Stronger wipe = [total null](#zero-exponent-derivation) **`ROOTx+0e`** (free **`v+0el`** *annihilate*). Orthogonal to free counts, essence (`+e`), void (`-e`), and [ability](#ability) (`…xun` *can’t* ≠ *won’t null*).
 
 | PoS | `…x+0` | `…x-0` | Examples |
 |-----|--------|--------|----------|
@@ -552,6 +552,39 @@ Single-digit scalars only. Writing **must** include the marker (**`+N`** / **`-N
 | **`/j/`** (interjection) | discourse *Zero it!* / *Null!* | discourse *Won’t zero!* / *Residue stands!* | `j-scorex+0l`; `j-scorex-0l` |
 
 **Not** free counts: `z-catlsh g+3` = *three cats*; `z-dialogx+3l` = *triadic dialogue* (structure of the kind). Multi-digit scalars (`ROOTx+12`) stay out of this morph set — use free numbers or label **`_`**.
+
+#### Zero × exponent and identity (`+0e` / `+e0` / `+0e0`)
+<a id="zero-exponent-derivation"></a>
+<a id="total-null"></a>
+<a id="identity-form"></a>
+
+Same anatomy as free [zero × exponent](numbers.md#zero-exponent); on ROOT = **metaphysics of the kind**. Free **`v+0el`** = hostless *annihilate*; **`v-scorex+0el`** = annihilate-*score* (kind). Soft / named / resume stay on the **host ending** (no number `~`/`@`/`=` on `NUM`).
+
+| Shape | Reading | Example |
+|-------|---------|---------|
+| **`ROOTx+0e`** | **total null** / absolute wipe of the kind | `v-scorex+0el` — *annihilate the score* (kind); `z-debtx+0el` — *a totally wiped debt-kind* |
+| **`ROOTx+0e-`** | **sterile / null grain** of ROOT | `z-hopex+0e-l` — *sterile hope*; `z-truthx+0e-l` — *truth with no seed* |
+| **`ROOTx-0e`** | **absolute residue** of ROOT | `z-debtx-0el` — *debt as absolute residue*; `v-painx-0el` — *leave pain as absolute residue* |
+| **`ROOTx-0e-`** | **micro-residue** of ROOT | `z-memoryx-0e-l` — *memory as micro-residue* |
+| **`ROOTx+e0`** | **identity / unit form** of ROOT — *ROOT⁰* | `z-lovex+e0l` — *unit-love* / *identity-love*; `v-truthx+e0l` — *to unitize / normalize truth* |
+| **`ROOTx+0e0`** | **`0⁰` / paradox form** — both empty and unit | `g-truthx+0e0l` — *truth that is both empty and unit* |
+
+**Emptiness chain (kinds):** **`ROOTx-e`** (void of kind) ≠ **`ROOTx+0`** (resettable null) ≠ **`ROOTx+0e`** (total null) ≠ **`ROOTx+0e-`** (sterile grain). **`ROOTx+e0`** is identity, not emptiness — contrast **`ROOTx+1`** (singleton structure) and **`ROOTx+e`** (essence).
+
+##### Zero-exp derivation by PoS
+
+| PoS | `…x+0e` | `…x+e0` | Examples |
+|-----|---------|---------|----------|
+| **`/z/` `/d/` `/b/`** | totally wiped / annihilated kind | identity / unit kind | `z-debtx+0el`; `z-lovex+e0l` |
+| **`/v/`** | annihilate that kind | unitize / normalize that kind | `v-scorex+0el`; `v-truthx+e0l` |
+| **`/ɡ/`** | ascribed total-null | ascribed identity-form | `g-hopex+0el`; `g-lovex+e0l` |
+| **`/h/`** | clause framed as total wipe | clause framed as unitized | `h-effortx+0el`; `h-scalx+e0l` |
+| **`/w/`** | host graded toward total null | host graded toward identity | `g-debtl w-balancx+0el` |
+| **`/j/`** | *Annihilate that kind!* | *Unitize that kind!* | `j-scorex+0el`; `j-lovex+e0l` |
+
+**`-0e` / `-0e-` / `+0e0`** inherit the same PoS framing (absolute residue / micro-residue / paradox). Free twins: **`v+0el`** *annihilate*; **`g+0e`** absolute-zero amount; **`g+e0`** unit amount — [numbers.md § Zero × exponent](numbers.md#zero-exponent).
+
+**Out of scope here:** scale-specific **`ROOTx+0eN`**; ordinal **`#0e` / `#e0`**; **`ROOTx+Ne0`** for **`N≠0`** (omit; use **`+N`**).
 
 #### Ordinal digit morphs (`#N`)
 <a id="ordinal-digit-morphs"></a>
@@ -678,13 +711,21 @@ Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`z-meeti
 | `z-ticketx_e-l` | unassigned ticket slot |
 | `z-productx_1el` | gazillion-SKU product (label hyperbole) |
 | `v-scorex+0l` | *to null the score* |
+| `v-scorex+0el` | *to annihilate the score* (total-null kind) |
+| `v+0el` | *annihilate* (free hostless — [zero × exponent](numbers.md#zero-exponent)) |
+| `z-lovex+e0l` | *unit-love* / identity form |
+| `g+e0` | unit / identity amount (free) |
+| `g-truthx+0e0l` | *truth that is both empty and unit* |
+| `z-hopex+0e-l` | *sterile hope* |
 | `v-scorex-0l` | *to anti-null / refuse to zero the score* |
 | `g-scorex-0l` | *non-emptyable / residual score* (anti-null) |
 | `z-debtx-0l` | *a debt that won’t zero* (anti-null noun) |
+| `z-debtx-0el` | *debt as absolute residue* |
 | `z-fearx-el` | *void of fear* (no fear-kind) |
 | `z-fearx-0l` | *fear that won’t go to zero* |
 | `h-effortx-0l` | *with irreducible effort* (anti-null adverb) |
 | `j-scorex-0l` | *Won’t zero!* / *Residue stands!* (anti-null interjection) |
+| `j+0el` | *Annihilate!* (free) |
 | `z-rooml g_12` | room numbered 12 (ordinary) |
 | `z-roomx_12l` | room-12 as coded kind |
 | Ability `v-singxun` | can’t sing — stance vowel, not NUM |
@@ -702,12 +743,13 @@ Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`z-meeti
 - Role **`e x ROOT`** (stays reserved).
 - Percent / percentage-point closers (**`jo` / `ju`**) as derivation morphs.
 - Digit-string morphs as phone-dial or discourse-list substitutes.
+- Scale-specific **`ROOTx+0eN`** / **`ROOTx+0e-N`**; ordinal **`#0e` / `#e0` / `#0e0`**; **`ROOTx+Ne0`** for **`N≠0`** (omit exp `0`).
 
 ### Constraints
 
 - `NUM` has **no** PoS and **no** number ending; the compound’s ending is ordinary reference-suffix on ROOT.
 - Digit morphs are single-digit **`+N` / `-N`** (scalar) or **`#N`** (ordinal); markers supply the pronounceable vowel (**`ra`** / **`ru`** / **`re`**).
 - Do **not** read numeric morphs as free clause-slot numbers (use a free number word for count / rank / time / list item).
-- Do **not** confuse **`ROOTx+e`** (essence) with **`g+e`** (+∞) or **`ROOTx+1e`** (hyperbole), **`ROOTx+1`** (unit morph) with **`ROOTx#1`** (premiere-order) or **`ROOTx+1e`** (gazillion), **`ROOTx#1`** with free **`g#1`** / label **`ROOTx_1`**, or **`ROOTx_e`** (open catalog) with **`g+e`** (amount +∞) / free digitless **`_`** (undefined).
-- Digitless **`+`/`-`/`#`** = kind metaphysics; digitless **`_`** = catalog metaphysics ([infinite labels](#infinite-labels)).
+- Do **not** confuse **`ROOTx+e`** (essence) with **`g+e`** (+∞) or **`ROOTx+1e`** (hyperbole), **`ROOTx+0e`** (total null) with **`ROOTx+0`** (resettable null) or free **`v+0el`** (*annihilate*), **`ROOTx+e0`** (identity form) with **`ROOTx+1`** (singleton) or free **`g+e0`** (unit amount), **`ROOTx+1`** (unit morph) with **`ROOTx#1`** (premiere-order) or **`ROOTx+1e`** (gazillion), **`ROOTx#1`** with free **`g#1`** / label **`ROOTx_1`**, or **`ROOTx_e`** (open catalog) with **`g+e`** (amount +∞) / free digitless **`_`** (undefined).
+- Digitless **`+`/`-`/`#`** = kind metaphysics; digitless **`_`** = catalog metaphysics ([infinite labels](#infinite-labels)); zero×exp / identity morphs = [zero-exponent derivation](#zero-exponent-derivation).
 - Plural **-sh** on noun-slot numeric derivatives follows ordinary [plurality](plurality.md) for that PoS.
