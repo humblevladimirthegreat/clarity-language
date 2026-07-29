@@ -1,4 +1,3 @@
--imaginary numbers
 -assign all five-letter roots using score system
 -punctuation
 -consider numeric derivation uses phonetic spelling

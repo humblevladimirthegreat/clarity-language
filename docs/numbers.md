@@ -1,6 +1,6 @@
 # Numbers
 
-Numerals are a **closed formal subsystem**, not ordinary lexicon roots. Open quantifiers (*many*, *all*, *some*, …) stay lexicon; the numeral word itself can be [digitless](#zero-digit-groups) (unspecified magnitude of a marker identity, including plural **`>1`** on **`ra`**) or carry a [digitless exponent](#digitless-exponents) for special values (+∞ / −∞ / last place / [zero × exponent](#zero-exponent) / …). PoS prefixes are defined in [language-reference.md](language-reference.md); plural **-sh** in [plurality.md](plurality.md); general phonotactics live in [phonology.md](phonology.md); ordinary reference suffixes in [reference-suffix.md](reference-suffix.md). This page is the source of truth for numeral grammar, including [percent denominators](#percent-denominators) (whole NP + `/ɡ/` `…jo`), [ranges](#ranges) (spans reuse [phrase fences](coordination.md) with SHARED continuum `/ɡ/`, documented here), [digitless exponents](#digitless-exponents), and [measure phrases](#measure-phrases) (unit + amount for differentials and durations). PoS-less number stems also compound onto content roots as [numeric derivation](special-vocabulary.md#numeric-derivation) (`ROOTx+e` = *essence of ROOT*, `ROOTx+0e` = *total-null ROOT*, `ROOTx+1e` = *gazillion-ROOT*, …) — not free clause-slot numerals.
+Numerals are a **closed formal subsystem**, not ordinary lexicon roots. Open quantifiers (*many*, *all*, *some*, …) stay lexicon; the numeral word itself can be [digitless](#zero-digit-groups) (unspecified magnitude of a marker identity, including plural **`>1`** on **`ra`**) or carry a [digitless exponent](#digitless-exponents) for special values (+∞ / −∞ / last place / [notional / imaginary](#imaginary) **`g-e-`** / [zero × exponent](#zero-exponent) / …). PoS prefixes are defined in [language-reference.md](language-reference.md); plural **-sh** in [plurality.md](plurality.md); general phonotactics live in [phonology.md](phonology.md); ordinary reference suffixes in [reference-suffix.md](reference-suffix.md). This page is the source of truth for numeral grammar, including [percent denominators](#percent-denominators) (whole NP + `/ɡ/` `…jo`), [ranges](#ranges) (spans reuse [phrase fences](coordination.md) with SHARED continuum `/ɡ/`, documented here), [digitless exponents](#digitless-exponents), and [measure phrases](#measure-phrases) (unit + amount for differentials and durations). PoS-less number stems also compound onto content roots as [numeric derivation](special-vocabulary.md#numeric-derivation) (`ROOTx+e` = *essence of ROOT*, `ROOTx-e-` = *quasi-ROOT*, `ROOTx-e-2` = *quasi-dual*, `ROOTx+0e` = *total-null ROOT*, `ROOTx+1e` = *gazillion-ROOT*, …) — not free clause-slot numerals.
 
 A whole numeric value is **one word**, even when it contains several digit groups (or none).
 
@@ -169,7 +169,7 @@ Endings still apply (**-m** fuzzy *about three more!* / *about three!*, **-n** c
 
 **Starting point / *Starting with*:** digitless-exp start-place under `/x/` + **`re`** — **`x#e-`** = *Starting with:* / *to begin:* (committed opening item; beginning/onset framing, **not** English *firstly*). Soft **`x~#e-`** = near-start / soft lead-in; named **`x@#e-`** = ritual / titled *Starting with*; **`x=#e-`** resumes that start-point marker. Ordinary numbered *firstly* stays **`x#1`**.
 
-Other `/x/` no-mantissa digitless-exp forms (**`x+e`**, **`x-e`**, …) stay **undefined**. Mantissa + digitless-exp discourse indices: **`x#1e`** *umpteenth point:* ([hyperbole](#hyperbole-gazillion)); **`x#2e-`** *2nd-from-end point:* ([from the end](#from-the-end)) — not the start/last landmarks.
+Other `/x/` no-mantissa digitless-exp forms (**`x+e`**, **`x-e`**, …) stay **undefined** — except notional **`x-e-`** ([digitless exponents](#imaginary)). Mantissa + digitless-exp discourse indices: **`x#1e`** *umpteenth point:* ([hyperbole](#hyperbole-gazillion)); **`x#2e-`** *2nd-from-end point:* ([from the end](#from-the-end)) — not the start/last landmarks.
 
 **Independence framing:** **`#`** = unmarked inventory or steps; **`+`** = corroborating (aligned with something already listed); **`-`** = independent (new line of support). Do not use **`+`** / **`-`** for for/against or open vs scratch a bullet — independence is the point. Ordinary *firstly / secondly* without that framing is **`x#N`**. *Starting with* without a numeric step count is **`x#e-`**; *Finally* without a numeric step count is **`x#e`**. For/against and both-sides checks stay in ordinary wording or claim-level evidentiality, not on the number marker.
 
@@ -317,19 +317,25 @@ None of these is bare OoM (which always **names** the power: `g+e9`) nor a [zero
 | **`g~#e`** | **`re`** + **`ba`∅** + **-m** | **near last place** |
 | **`g#e-`** | **`re`** + **`bu`∅** + **-l** | **start / beginning place** — first with emphasis on **onset** (*the starting one*, *at the beginning*), not mere numbered 1st (`g#1`) |
 | **`g~#e-`** | **`re`** + **`bu`∅** + **-m** | **near first place** |
-| **`g-e-`** (`ru` + **`bu`∅**) | — | **Undefined** for now (spare cell) |
+| **`g-e-`** | **`ru`** + **`bu`∅** + **-l** | **notional / imaginary amount** — as-if magnitude off the real commitment ledger (metaphorical; not ℂ math notation) |
+| **`g~-e-`** | **`ru`** + **`bu`∅** + **-m** | **soft notional** — *sort of imaginary* / hedged as-if amount |
 
-Same under `/z/` `/d/` `/b/` (`z+e` = +∞ as subject; `d#e-` = start-place as object; `b+e-` = *of an arbitrarily small but finite amount*). Contrast **`g#1`** = numbered *first* / *1st*; **`g#e-`** = beginning/onset landmark.
+Same under `/z/` `/d/` `/b/` (`z+e` = +∞ as subject; `d#e-` = start-place as object; `b+e-` = *of an arbitrarily small but finite amount*; `z-e-` = notional amount as subject). Contrast **`g#1`** = numbered *first* / *1st*; **`g#e-`** = beginning/onset landmark.
+
+<a id="imaginary"></a>
+<a id="notional-amount"></a>
+
+**Notional / imaginary (`g-e-`):** negative marker (**`ru`**) + digitless negative exponent (**`bu`∅), no mantissa — completes the scalar special grid. Reading is **metaphorical**: a magnitude named *as if* it counted, without entering the real tally. **Not** falsehood ([yes/no polarity](questions.md#yes-no-polarity) **`juel`**), **not** ordinary soft real amount (`g~+3`), **not** −∞ (`g-e`), **not** micro-real (`g+e-`). No separate *i* closer — digitful engineering (`g-50e-6`) and bare OoM **`g-e-1`** / **`g-e-2`** stay real (−10⁻¹ / −10⁻²). Mantissa + digitless **`bu`** on **`ru`** (`g-1e-`) stays [hyperbole](#hyperbole-gazillion) (*minus one gazillionth*), not *Ni*. Kind-morph twins: [quasi-ROOT](special-vocabulary.md#quasi) **`ROOTx-e-`**; [quasi-N](special-vocabulary.md#quasi-n) **`ROOTx-e-1`** / **`ROOTx-e-2`** (derivation only — not free OoM).
 
 **Endings** (no-mantissa specials):
 
 | Ending | Sense |
 |--------|-------|
-| **-l** | Exact special value (default): +∞ / −∞ / last place / start place / arbitrarily small but finite as in the form table |
+| **-l** | Exact special value (default): +∞ / −∞ / last place / start place / arbitrarily small but finite / notional as in the form table |
 | **-m** on **`ba`∅** (`…em`) | **Arbitrarily large but finite** on scalars (`g~+e` / `g~-e`); on ordinals (`g~#e`) = **near last place** |
-| **-m** on **`bu`∅** (`…e-m`) | Soft / approximate small on scalars; on ordinals (`g~#e-`) = **near first place** |
-| **-n** | Proper / conventional designation of that special (named ∞ symbol, official *last place* / *starting* title, …) |
-| **-r** | Resume a prior special value of that marker+exp polarity (`g=+e` = *that +∞ again*; `g=+e-` = *that start/small again*) |
+| **-m** on **`bu`∅** (`…e-m`) | Soft / approximate small on scalars (`g~+e-`); soft notional on **`ru`+`bu`∅** (`g~-e-`); on ordinals (`g~#e-`) = **near first place** |
+| **-n** | Proper / conventional designation of that special (named ∞ symbol, official *last place* / *starting* title, conventional *imaginary* label, …) |
+| **-r** | Resume a prior special value of that marker+exp polarity (`g=+e` = *that +∞ again*; `g=+e-` = *that start/small again*; `g=-e-` = *that notional amount again*) |
 
 **Contrast:** zero-group `g+` = plural count `>1`. Bare OoM `g+e9` = order 10⁹. No-mantissa `g+e` = +∞; no-mantissa `g#e` = last place. Mantissa **`≠0`** + digitless **`ba`** (`g+1e` / `g#1e`) = [hyperbole](#hyperbole-gazillion). Mantissa **`0`** + digitless (`g+0e`) = [zero × exponent](#zero-exponent). Mantissa + digitless **`bu`** on **`#`** (`g#2e-`) = [from the end](#from-the-end). Named exp **`0`** (`g+e0` / `g+0e0`) = [zero × exponent](#zero-exponent). Focus ranked digitless (`zel z+`) is **not** a special value — ordinary *only (plural) matters* / preference framing (the old focus→∞ reading is **removed**).
 
@@ -346,11 +352,14 @@ No-mantissa digitless-exp under `/v/` and `/h/` inherit special-value identity (
 | **`v-e`** | **decrease without bound** |
 | **`v~-e`** | *decrease a lot but finite* |
 | **`v+e-`** | **nudge up** — increase by an arbitrarily small but finite amount |
-| **`v-e-`** | **nudge down** — decrease by an arbitrarily small but finite amount |
+| **`v-e-`** | **treat as imaginary / notionalize** — frame the patient as make-believe / mind-only / not for the real tally (not “nudge down”) |
+| **`v~-e-`** | *softly notionalize* / treat as *sort of* imaginary |
 | **`h+e`** | **unbounded multiplicity** (× without bound / unboundedly many times) |
 | **`h~+e`** | *many times but finite* |
 | **`h+e-`** | **unbounded duplicity** (÷ without bound / into unboundedly many parts) |
 | **`h~+e-`** | *÷ a lot / into many parts, but finite* |
+| **`h-e-`** | **notionally / as if / for the sake of argument** — event under imag framing |
+| **`h~-e-`** | soft notional framing |
 
 **Ordinals (`re`) — start/last landmarks:**
 
@@ -379,12 +388,14 @@ No-mantissa digitless-exp under `/j/` (interjection cheers):
 | **`j~#e`** | *Almost finally!* / soft coda cheer |
 | **`j#e-`** | *(finally, we're) starting!* (onset cheer — contrast discourse **`x#e-`** *Starting with:*) |
 | **`j~#e-`** | soft onset cheer |
+| **`j-e-`** | *As if!* / *Imagine!* / *In theory!* (notional cheer) |
+| **`j~-e-`** | soft *as if!* / hedged imagine-cheer |
 
 Other `/j/` no-mantissa digitless-exp forms (`j-e`, `j+e-`, `j_…`, …) stay **undefined**.
 
 ##### Overlay `/x/`
 
-Under `/x/`, **last-place** **`x#e`** (and **`x~#e`** / **`x@#e`** / **`x=#e`**) = discourse *Finally* / last point, and **start-place** **`x#e-`** (and **`x~#e-`** / **`x@#e-`** / **`x=#e-`**) = discourse *Starting with:* / beginning — see [Number as discourse marker](#number-as-discourse-marker-by-marker). **`x+e`** / **`x-e`** (and other `/x/` no-mantissa digitless-exp forms beyond start/last) stay **undefined**.
+Under `/x/`, **last-place** **`x#e`** (and **`x~#e`** / **`x@#e`** / **`x=#e`**) = discourse *Finally* / last point, and **start-place** **`x#e-`** (and **`x~#e-`** / **`x@#e-`** / **`x=#e-`**) = discourse *Starting with:* / beginning — see [Number as discourse marker](#number-as-discourse-marker-by-marker). **Notional discourse:** **`x-e-`** = *imagine that:* / notional agenda point (side-track; not corroborating **`x+`** or independent **`x-`**); soft **`x~-e-`**; named **`x@-e-`**; resume **`x=-e-`**. **`x+e`** / **`x-e`** (and other `/x/` no-mantissa digitless-exp forms beyond start/last/notional) stay **undefined**.
 
 #### Zero × exponent and exponent 0
 <a id="zero-exponent"></a>
@@ -540,7 +551,7 @@ On **`re`** only: mantissa digits + digitless **`bu`** (**`e-`**) = **Nth from t
 | **`x#1e-`** | *1st-from-end point:* / *Starting with the last one:* (counting twin of **`x#e`** *Finally:*) |
 | **`x#2e-`** | *2nd-from-end point:* / *penultimate item:* |
 
-Examples: `g+e` → +∞; `g~+e` → arbitrarily large but finite; `g+1e` → *one gazillion*; `g~+1e` → *about a gazillion*; `g@+1e` → proper name *One Gazillion* / *the Gazillion*; `g+1e-` → *one gazillionth*; `g+e-` → arbitrarily small but finite; `g-e` → −∞; `g#e` → last place; `g~#e` → near last place; `g#e-` → start / beginning place; `g~#e-` → near first place; `g#1e` → *the gazillionth* / *umpteenth*; `g#2e-` → *2nd from the end* / *penultimate*; `g#1e-` → *1st from the end* / *Starting with the last one*; `g+0e` → absolute zero; `g+0e-` → sterile / null-at-seed amount; `g+e0` → unit / identity amount; `g+0e0` → `0⁰` / indeterminate; `v+0e` → *annihilate*; `v+e0` → *unitize*; `j+0e` → *Annihilate!*; `h#1e` → *for the gazillionth time*; `h#2e-` → *for the penultimate time*; `x#e-` → *Starting with:*; `x#e` → *Finally:* / last discourse point; `v+e` → increase without bound; `v~+e` → increase a lot but finite; `v+e-` → nudge up; `h+e` → unbounded multiplicity; `h#e` → *for the last time*; `h#e-` → *for the first time* (onset); `v#e` → *take last place*; `v#e-` → *take starting place*; `j+e` → *To infinity!*; `j#e` → *Finally!*; `j#e-` → *(finally, we're) starting!*; `h+1e` → *a gazillion times*; `g+e9` → bare OoM e9; `g+` → plural `>1`.
+Examples: `g+e` → +∞; `g~+e` → arbitrarily large but finite; `g+1e` → *one gazillion*; `g~+1e` → *about a gazillion*; `g@+1e` → proper name *One Gazillion* / *the Gazillion*; `g+1e-` → *one gazillionth*; `g+e-` → arbitrarily small but finite; `g-e` → −∞; `g-e-` → notional / imaginary amount; `g~-e-` → soft notional; `g#e` → last place; `g~#e` → near last place; `g#e-` → start / beginning place; `g~#e-` → near first place; `g#1e` → *the gazillionth* / *umpteenth*; `g#2e-` → *2nd from the end* / *penultimate*; `g#1e-` → *1st from the end* / *Starting with the last one*; `g+0e` → absolute zero; `g+0e-` → sterile / null-at-seed amount; `g+e0` → unit / identity amount; `g+0e0` → `0⁰` / indeterminate; `v+0e` → *annihilate*; `v+e0` → *unitize*; `j+0e` → *Annihilate!*; `h#1e` → *for the gazillionth time*; `h#2e-` → *for the penultimate time*; `x#e-` → *Starting with:*; `x#e` → *Finally:* / last discourse point; `x-e-` → *imagine that:*; `v+e` → increase without bound; `v~+e` → increase a lot but finite; `v+e-` → nudge up; `v-e-` → treat as imaginary / notionalize; `h+e` → unbounded multiplicity; `h-e-` → notionally / as if; `h#e` → *for the last time*; `h#e-` → *for the first time* (onset); `v#e` → *take last place*; `v#e-` → *take starting place*; `j+e` → *To infinity!*; `j#e` → *Finally!*; `j#e-` → *(finally, we're) starting!*; `j-e-` → *As if!* / *Imagine!*; `h+1e` → *a gazillion times*; `g+e9` → bare OoM e9; `g+` → plural `>1`.
 
 ## Percent and percentage points
 
@@ -727,7 +738,13 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 | increase a lot but finite | `v~+e` | *vrabam* |
 | nudge up | `v+e-` | *vrabul* |
 | decrease without bound | `v-e` | *vrubal* |
-| nudge down | `v-e-` | *vrubul* |
+| treat as imaginary / notionalize | `v-e-` | *vrubul* |
+| soft notionalize | `v~-e-` | *vrubum* |
+| notional / imaginary amount | `g-e-` | *grubul* (`ru` + `bu` + `l`) |
+| soft notional | `g~-e-` | *grubum* |
+| notionally / as if | `h-e-` | *hrubul* |
+| *As if!* / *Imagine!* | `j-e-` | *jrubul* |
+| *imagine that:* | `x-e-` | *xrubul* |
 | take last place | `v#e` | *vrebal* |
 | take starting place | `v#e-` | *vrebul* |
 | unbounded multiplicity | `h+e` | *hrabal* |
@@ -918,7 +935,7 @@ Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which val
 
 **Clock / date spans:** do **not** use bare circumstance-`hal` (that series is [applicability](restrictors.md)). Prefer SHARED continuum **`g-timel`** (or a host relation + `/b/`) with digit-string endpoints (`bal g-timel b_15,00 b_16,00`).
 
-Examples: `z+3 z+5 zal g-agel` → *between ages 3 and 5*; `z-kidl g+3 g+5 gal g-agel` → *kids ages 3–5*; `z+3 ul z+5 zal g-spanl` → *[3, 5)*; `z+10 z+20 zel g-agel` → *from age 10 to 20*; `z+3 z+5 zel` → *3 ≻ 5* (preference, not a span); `z+5 zel` → *\< 5*; `z+5 zuel` → *\> 5*; `g+e` → +∞; `g+1e` → *one gazillion*; `g@+1e` → proper name *the Gazillion*; `g~+e` → arbitrarily large but finite; `g+e-` → arbitrarily small but finite; `g#e` → last place; `g~#e` → near last place; `g#e-` → start / beginning place; `g~#e-` → near first place; `g#1e` → *the gazillionth* / *umpteenth*; `g#2e-` → *2nd from the end* / *penultimate*; `h#1e` → *for the gazillionth time*; `x#e-` → *Starting with:*; `v+e` → increase without bound; `h+e` → unbounded multiplicity; `j+e` → *To infinity!*; `j#e` → *Finally!*; `z+5 z+5 zael` → *equally 5* / *5 equals 5*; `z+3 z+5 zaem` → *3 and 5 approximately equal*; `z+3 z+5 zar g-spanl` → *some value in 3–5*; `z+3 z+5 zol` → *3 or 5* (discrete, not a range).
+Examples: `z+3 z+5 zal g-agel` → *between ages 3 and 5*; `z-kidl g+3 g+5 gal g-agel` → *kids ages 3–5*; `z+3 ul z+5 zal g-spanl` → *[3, 5)*; `z+10 z+20 zel g-agel` → *from age 10 to 20*; `z+3 z+5 zel` → *3 ≻ 5* (preference, not a span); `z+5 zel` → *\< 5*; `z+5 zuel` → *\> 5*; `g+e` → +∞; `g-e-` → notional / imaginary amount; `g+1e` → *one gazillion*; `g@+1e` → proper name *the Gazillion*; `g~+e` → arbitrarily large but finite; `g+e-` → arbitrarily small but finite; `g#e` → last place; `g~#e` → near last place; `g#e-` → start / beginning place; `g~#e-` → near first place; `g#1e` → *the gazillionth* / *umpteenth*; `g#2e-` → *2nd from the end* / *penultimate*; `h#1e` → *for the gazillionth time*; `x#e-` → *Starting with:*; `x-e-` → *imagine that:*; `v+e` → increase without bound; `v-e-` → treat as imaginary; `h+e` → unbounded multiplicity; `h-e-` → notionally / as if; `j+e` → *To infinity!*; `j#e` → *Finally!*; `j-e-` → *As if!*; `z+5 z+5 zael` → *equally 5* / *5 equals 5*; `z+3 z+5 zaem` → *3 and 5 approximately equal*; `z+3 z+5 zar g-spanl` → *some value in 3–5*; `z+3 z+5 zol` → *3 or 5* (discrete, not a range).
 
 ## Numeric derivation (compounds)
 

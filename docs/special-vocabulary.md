@@ -501,7 +501,7 @@ PoS + ROOT + x + NUM + {-l|-m|-n|-r}
 
 **Ending rule:** because **-l / -m / -n / -r** attaches to the compound (the ROOT), there is **no** number soft / named / resume on `NUM`. Do **not** write `ROOTx~+e`, `ROOTx@+1e`, or `ROOTx=+`. Approximate, proper-designation, and resume use ordinary reference endings on the derived word, or free number words / ordinary syntax outside this family.
 
-**Parser cue:** longer material before `x`, then a right half that matches number-stem grammar (writing **`+` / `-` / `#` / `_`**, speech **`r`+V…**, digitless exp, hyperbole mantissa+`e`/`e-`, [zero × exp](numbers.md#zero-exponent) **`+0e` / `+e0` / `+0e0`**, label digits under `_`, scalar digit morph **`+N` / `-N`**, or ordinal digit morph **`#N`**) + ordinary ending → this family. Bare **`ROOTxe`** is **not** essence (that shape is stance **`xe`**). Essence is **`ROOTx+e`**. Bare digit with no marker (`ROOTx1`) is **illegal** — digit morphs need a pronounceable marker vowel (**`ra`** / **`ru`** / **`re`**).
+**Parser cue:** longer material before `x`, then a right half that matches number-stem grammar (writing **`+` / `-` / `#` / `_`**, speech **`r`+V…**, digitless exp, hyperbole mantissa+`e`/`e-`, [zero × exp](numbers.md#zero-exponent) **`+0e` / `+e0` / `+0e0`**, [quasi-N](#quasi-n) **`-e-1` / `-e-2`**, label digits under `_`, scalar digit morph **`+N` / `-N`**, or ordinal digit morph **`#N`**) + ordinary ending → this family. Bare **`ROOTxe`** is **not** essence (that shape is stance **`xe`**). Essence is **`ROOTx+e`**. Bare digit with no marker (`ROOTx1`) is **illegal** — digit morphs need a pronounceable marker vowel (**`ra`** / **`ru`** / **`re`**).
 
 ### Inventory
 
@@ -512,14 +512,52 @@ PoS + ROOT + x + NUM + {-l|-m|-n|-r}
 | **`ROOTx+e`** | **essence / absolute / pure type** of ROOT | `z-lovex+el` — *essence of love* |
 | **`ROOTx+e-`** | **grain / seed / infinitesimal** of ROOT | `z-truthx+e-l` — *grain of truth* |
 | **`ROOTx-e`** | **void of / absolute anti-ROOT** | `z-fearx-el` — *void of fear* |
-| **`ROOTx-e-`** | **anti-grain / coarse / non-seed** of ROOT (privative of `+e-`) | `z-sandx-e-l` — *coarse / non-infinitesimal sand* |
+| **`ROOTx-e-`** | **quasi-ROOT** — has the shape of ROOT without full real-axis status (English **`quasi-`**); **`ROOTx-e-1`** / **`ROOTx-e-2`** = [quasi-N](#quasi-n) | `z-friendx-e-l` — *quasi-friend*; `z-friendx-e-2l` — *quasi-pair* |
 | **`ROOTx#e-`** | **origin / prototype / onset-form** of ROOT | `z-lovex#e-l` — *love in its beginning form* |
 | **`ROOTx#e`** | **telos / culmination / final form** of ROOT | `z-storyx#el` — *story’s final form* |
 | **`ROOTx+`** | **poly- / multi-ROOT** (unspecified >1) | `z-faithx+l` — *multi-faith* |
 | **`ROOTx-`** | **de- / un- / deficit-ROOT** | `v-mythx-l` — *to de-myth* |
 
-Digitless **`+` / `-` / `#`** on ROOT = **metaphysics of the kind** — **not** free special values. `ROOTx+e` is **not** free +∞ (`g+e`), and **not** comic hugeness (`ROOTx+1e`). Free twins: `g+e` = +∞; `g+e-` = arbitrarily small; `g-e` = −∞; `g#e-` / `g#e` = start / last place; [zero × exponent](numbers.md#zero-exponent) free forms (`g+0e`, `g+e0`, `v+0el`, …) parallel [derivation zero-exp](#zero-exponent-derivation). Free `g-e-` stays undefined; derivation **`ROOTx-e-`** is defined. For *∞ as a property of the kind*, prefer hyperbole `ROOTx+1e` or ordinary wording — don’t overload essence. Digitless **`_`** = [catalog topology](#infinite-labels) (below).
+Digitless **`+` / `-` / `#`** on ROOT = **metaphysics of the kind** — **not** free special values. `ROOTx+e` is **not** free +∞ (`g+e`), and **not** comic hugeness (`ROOTx+1e`). Free twins: `g+e` = +∞; `g+e-` = arbitrarily small; `g-e` = −∞; `g-e-` = [notional / imaginary amount](numbers.md#imaginary); `g#e-` / `g#e` = start / last place; [zero × exponent](numbers.md#zero-exponent) free forms (`g+0e`, `g+e0`, `v+0el`, …) parallel [derivation zero-exp](#zero-exponent-derivation). **`ROOTx-e-`** = [quasi-ROOT](#quasi) (kind); free **`g-e-`** = notional amount — same stem shape, different job. For *∞ as a property of the kind*, prefer hyperbole `ROOTx+1e` or ordinary wording — don’t overload essence. Digitless **`_`** = [catalog topology](#infinite-labels) (below).
 
+##### Quasi-ROOT (`-e-` / `-e-1` / `-e-2`)
+<a id="quasi"></a>
+<a id="quasi-root"></a>
+<a id="quasi-n"></a>
+
+**`ROOTx-e-`** = ROOT in **quasi-** form: the shape / role of ROOT without committing it on the real ledger. Closest English affix: **`quasi-`** (*quasi-friend*, *quasi-official*). **Not** free notional amount (`g-e-`); **not** void of ROOT (`ROOTx-e`); **not** soft/approximate (`-m` on the host); **not** falsehood. Former “anti-grain / coarse” reading of this cell is **removed** — use ordinary wording for *coarse / non-seed*.
+
+| PoS | `…x-e-` | Examples |
+|-----|---------|----------|
+| **`/z/` `/d/` `/b/`** (noun) | a quasi-entity | `z-friendx-e-l` — *a quasi-friend*; `d-contractx-e-l` — *a quasi-contract* |
+| **`/v/`** (verb) | to treat as quasi- / as-if that kind | `v-friendx-e-l` — *to quasi-befriend* / treat as friend-shaped |
+| **`/ɡ/`** (adjective) | *quasi-* (ascribed) | `g-officialx-e-l` — *quasi-official* |
+| **`/h/`** (adverb) | under quasi- framing | `h-officialx-e-l` — *quasi-officially* |
+| **`/w/`** (adjunct) | host graded as quasi- | `g-deall w-contractx-e-l` — *quasi-contractual* |
+| **`/j/`** (interjection) | *Quasi-!* / *As if that kind!* | `j-friendx-e-l` |
+
+**Free vs derived:** **`g-e-`** / **`v-e-`** / **`h-e-`** / **`j-e-`** / **`x-e-`** = hostless notional amount / overlay ([numbers.md § Imaginary](numbers.md#imaginary)); **`ROOTx-e-`** = quasi-*kind*.
+
+###### Quasi-N (`-e-1` / `-e-2`)
+
+Stem shape **`ru` + `bu` + exponent digit `N`** (writing **`-e-N`**; bare-OoM anatomy, no mantissa). On ROOT = **quasi-** + the same strong digit reading as **`+N`** — as-if N-structure without real-axis commitment. **Derivation only** — free **`g-e-1`** / **`g-e-2`** stay real bare OoM (−10⁻¹ / −10⁻²).
+
+| Shape | Reading | Twin | Example |
+|-------|---------|------|---------|
+| **`ROOTx-e-1`** | **quasi-unit / as-if singleton** — unit-shaped without being a real one | **`ROOTx+1`** unit | `z-voicex-e-1l` — *a quasi-single voice* / as-if primary voice |
+| **`ROOTx-e-2`** | **quasi-dual / imaginary duality** — pair/mutual *as if*, not real reciprocity | **`ROOTx+2`** dual/mutual | `g-dutyx-e-2l` — *quasi-mutual duty*; `z-friendx-e-2l` — *quasi-pair / as-if partnership* |
+
+**Contrast:**
+
+| Form | Job |
+|------|-----|
+| **`ROOTx+2`** | real dual / mutual structure |
+| **`ROOTx-2`** | privative — non-reciprocal / one-sided |
+| **`ROOTx-e-2`** | quasi-dual — mutuality *as if* / imaginary duality |
+| **`ROOTx-e-`** | general quasi (N unnamed) |
+| **`g-e-2`** | free real −10⁻² (bare OoM) — **not** quasi-dual |
+
+**Not defined:** **`ROOTx-e-0`** — use **`ROOTx-0`** (anti-null) or **`ROOTx-0e-`** (micro-residue); **`ROOTx-e-3`…`-e-9`** — out of scope (prefer bare **`ROOTx-e-`** or ordinary wording). Same PoS framing as bare quasi.
 #### Scalar digit morphs (`+N` / `-N`)
 
 Single-digit scalars only. Writing **must** include the marker (**`+N`** / **`-N`**); bare **`ROOTxN`** is illegal (no marker vowel to pronounce). Speech is marker + digit (`ra`+`wo` for `+1`, `ru`+`wo` for `-1`, …). Writing **`+0`…`+9`** uses the strong readings below; **`-N`** (including **`-0`**) is the **privative** of that reading (lacks / undoes / inverse of the `+N` structure).
@@ -690,7 +728,15 @@ Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`z-meeti
 | `z-messx+1el` | **gazillion-mess** (rhetoric) |
 | `z-messlsh g+1e` | **one gazillion messes** (hyperbolic count) |
 | `z-truthx+e-l` | *grain of truth* |
-| `z-sandx-e-l` | *coarse / non-seed sand* (anti-grain) |
+| `z-friendx-e-l` | *quasi-friend* (quasi-ROOT) |
+| `z-voicex-e-1l` | *quasi-single / as-if primary voice* |
+| `z-friendx-e-2l` | *quasi-pair / imaginary duality* |
+| `g-dutyx-e-2l` | *quasi-mutual duty* |
+| `g-dutyx+2l` | *mutual duty* (real dual) |
+| `g-dutyx-2l` | *one-sided duty* (privative) |
+| `g-e-` | notional / imaginary amount (free — [imaginary](numbers.md#imaginary)) |
+| `v-e-` | *treat as imaginary* (free overlay) |
+| `z-fearx-el` | *void of fear* |
 | `z-catlsh g+3` | three cats (count) |
 | `z-catl g#3` | the third cat (rank) |
 | `z-dialogx+3l` | three-part / triadic dialogue (scalar digit morph) |
@@ -744,12 +790,13 @@ Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`z-meeti
 - Percent / percentage-point closers (**`jo` / `ju`**) as derivation morphs.
 - Digit-string morphs as phone-dial or discourse-list substitutes.
 - Scale-specific **`ROOTx+0eN`** / **`ROOTx+0e-N`**; ordinal **`#0e` / `#e0` / `#0e0`**; **`ROOTx+Ne0`** for **`N≠0`** (omit exp `0`).
+- Quasi-N beyond **`ROOTx-e-1`** / **`ROOTx-e-2`** (**`ROOTx-e-0`**, **`ROOTx-e-3`…`-e-9`**) — use bare **`ROOTx-e-`**, **`ROOTx-0`** / **`ROOTx-0e-`**, or ordinary wording.
 
 ### Constraints
 
 - `NUM` has **no** PoS and **no** number ending; the compound’s ending is ordinary reference-suffix on ROOT.
 - Digit morphs are single-digit **`+N` / `-N`** (scalar) or **`#N`** (ordinal); markers supply the pronounceable vowel (**`ra`** / **`ru`** / **`re`**).
 - Do **not** read numeric morphs as free clause-slot numbers (use a free number word for count / rank / time / list item).
-- Do **not** confuse **`ROOTx+e`** (essence) with **`g+e`** (+∞) or **`ROOTx+1e`** (hyperbole), **`ROOTx+0e`** (total null) with **`ROOTx+0`** (resettable null) or free **`v+0el`** (*annihilate*), **`ROOTx+e0`** (identity form) with **`ROOTx+1`** (singleton) or free **`g+e0`** (unit amount), **`ROOTx+1`** (unit morph) with **`ROOTx#1`** (premiere-order) or **`ROOTx+1e`** (gazillion), **`ROOTx#1`** with free **`g#1`** / label **`ROOTx_1`**, or **`ROOTx_e`** (open catalog) with **`g+e`** (amount +∞) / free digitless **`_`** (undefined).
+- Do **not** confuse **`ROOTx+e`** (essence) with **`g+e`** (+∞) or **`ROOTx+1e`** (hyperbole), **`ROOTx-e-`** (quasi-ROOT) with free **`g-e-`** (notional amount) or **`ROOTx-e`** (void), **`ROOTx-e-2`** (quasi-dual) with free **`g-e-2`** (real −10⁻²) or **`ROOTx+2`** / **`ROOTx-2`**, **`ROOTx+0e`** (total null) with **`ROOTx+0`** (resettable null) or free **`v+0el`** (*annihilate*), **`ROOTx+e0`** (identity form) with **`ROOTx+1`** (singleton) or free **`g+e0`** (unit amount), **`ROOTx+1`** (unit morph) with **`ROOTx#1`** (premiere-order) or **`ROOTx+1e`** (gazillion), **`ROOTx#1`** with free **`g#1`** / label **`ROOTx_1`**, or **`ROOTx_e`** (open catalog) with **`g+e`** (amount +∞) / free digitless **`_`** (undefined).
 - Digitless **`+`/`-`/`#`** = kind metaphysics; digitless **`_`** = catalog metaphysics ([infinite labels](#infinite-labels)); zero×exp / identity morphs = [zero-exponent derivation](#zero-exponent-derivation).
 - Plural **-sh** on noun-slot numeric derivatives follows ordinary [plurality](plurality.md) for that PoS.
