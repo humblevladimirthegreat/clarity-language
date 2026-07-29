@@ -1,4 +1,4 @@
--confirm dependent clauses
+-assign all five-letter roots using score system
 -punctuation
 
 Dictionary entries:
@@ -6,6 +6,7 @@ Dictionary entries:
 -comparison benchmarks
 -SAME identity root (noted in predication.md — closed complex `/ɡ/`; lexicon phonetics still open)
 -plan / predict (noted in special-vocabulary.md — closed mood roots; lexicon + PLAN endings + evidentiality inventory still open)
+-habits: triggered
 -emotion ACT / LOCUS roots
 -COMMENT / mindfulness noting (noted in special-vocabulary.md — six `/h/` exponents; lexicon phonetics still open)
 - Sentence linkers: *therefore*, *however*, *meanwhile*, *next*, *but*

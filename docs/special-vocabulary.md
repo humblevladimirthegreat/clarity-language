@@ -1,7 +1,7 @@
 # Special vocabulary
 <a id="special-vocabulary"></a>
 
-This page is the source of truth for **special morphology and closed roots** that are **not** [values](values.md) (needs) and **not** [restrictors](restrictors.md) (applicability joins). They reuse mid-word **`x`** where useful ([ability](#ability): host + stance vowel; [role compounds](#role-compounds): ROLE vowel + event/relation root), but keep their own inventories; some entries are closed mood roots with **no** `x`-addition (plan / predict, emotion activation / locus, **comment** / mindfulness noting); **join-act verbs** and **join-relations** reuse join-vowel spellings under `/v/` `/ɡ/` `/h/`…**-n**. Parser families for mid-word **`x`**: **[x-compounds.md](x-compounds.md)**.
+This page is the source of truth for **special morphology and closed roots** that are **not** [values](values.md) (needs) and **not** [restrictors](restrictors.md) (applicability joins). They reuse mid-word **`x`** where useful ([ability](#ability): host + stance vowel; [role compounds](#role-compounds): ROLE vowel + event/relation root; [numeric derivation](#numeric-derivation): host + number stem), but keep their own inventories; some entries are closed mood roots with **no** `x`-addition (plan / predict, emotion activation / locus, **comment** / mindfulness noting); **join-act verbs** and **join-relations** reuse join-vowel spellings under `/v/` `/ɡ/` `/h/`…**-n**. Parser families for mid-word **`x`**: **[x-compounds.md](x-compounds.md)**.
 
 Ordinary `/h/` / `/w/` content still defaults to values unless the form is already in a clearer closed subcategory (restrictors, special vocabulary here, evidentiality/mood, degree, adjuncts, numbers) — see [values.md](values.md#default-reading-of-h-and-w).
 
@@ -477,3 +477,136 @@ Bare event noun stays the event: `z-attackl` / `z-attackr` = *an / that attack*,
 - Endings stay **ordinary** reference-suffix senses on role compounds.
 - Do **not** read ROLE vowels as value stances, ability polarity, or span TYPE/EDGE.
 - Plural **-sh** on noun-slot role compounds follows ordinary [plurality](plurality.md) for that PoS.
+
+## Numeric derivation (`ROOT` × number stem)
+<a id="numeric-derivation"></a>
+<a id="number-compounds"></a>
+<a id="numeric-morphs"></a>
+
+Derive **new senses from a content root** by compounding a PoS-less [number](numbers.md) stem after mid-word **`x`**. Free number words stay the closed numeral subsystem; this family is **derivation**, not a count / rank / label in a clause slot. Mid-word **`x`** family map: **[x-compounds.md](x-compounds.md)**.
+
+### Pattern
+
+```
+PoS + ROOT + x + NUM + {-l|-m|-n|-r}
+```
+
+| Piece | Role |
+|-------|------|
+| **PoS** | Ordinary slot for the derived word |
+| **ROOT** | Open content host (`V(CV)+`) |
+| **`x`** | Ordinary [compound joiner](phonology.md#phonotactics) |
+| **NUM** | Number stem **without PoS and without its own ending** — same marker / digits / digitless-exp body as [numbers.md](numbers.md); [preferred writing](numbers.md#writing-preferred-shorthand) (`+e`, `_12`, `+1e`, …) |
+| **Ending** | Ordinary [reference-suffix](reference-suffix.md) on the **whole derived stem** (host ROOT) — **not** [number endings](numbers.md#number-endings) |
+
+**Ending rule:** because **-l / -m / -n / -r** attaches to the compound (the ROOT), there is **no** number soft / named / resume on `NUM`. Do **not** write `ROOTx~+e`, `ROOTx@+1e`, or `ROOTx=+`. Approximate, proper-designation, and resume use ordinary reference endings on the derived word, or free number words / ordinary syntax outside this family.
+
+**Parser cue:** longer material before `x`, then a right half that matches number-stem grammar (writing **`+` / `-` / `#` / `_`**, speech **`r`+V…**, digitless exp, hyperbole mantissa+`e`/`e-`, label digits under `_`, or scalar digit morph **`+N` / `-N`**) + ordinary ending → this family. Bare **`ROOTxe`** is **not** essence (that shape is stance **`xe`**). Essence is **`ROOTx+e`**. Bare digit with no marker (`ROOTx1`) is **illegal** — digit morphs need scalar **`+`** / **`-`** for a pronounceable marker vowel (**`ra`** / **`ru`**).
+
+### Inventory
+
+#### Limit / polarity / stage (digitless)
+
+| Shape | Reading | Example |
+|-------|---------|---------|
+| **`ROOTx+e`** | **essence / absolute / pure type** of ROOT | `z-lovex+el` — *essence of love* |
+| **`ROOTx+e-`** | **grain / seed / infinitesimal** of ROOT | `z-truthx+e-l` — *grain of truth* |
+| **`ROOTx-e`** | **void of / absolute anti-ROOT** | `z-fearx-el` — *void of fear* |
+| **`ROOTx#e-`** | **origin / prototype / onset-form** of ROOT | `z-lovex#e-l` — *love in its beginning form* |
+| **`ROOTx#e`** | **telos / culmination / final form** of ROOT | `z-storyx#el` — *story’s final form* |
+| **`ROOTx+`** | **poly- / multi-ROOT** (unspecified >1) | `z-faithx+l` — *multi-faith* |
+| **`ROOTx-`** | **de- / un- / deficit-ROOT** | `v-mythx-l` — *to de-myth* |
+
+`ROOTx+e` is **not** free +∞ (`g+e`), and **not** comic hugeness (`ROOTx+1e`).
+
+#### Digit morphs (`+N` / `-N`)
+
+Single-digit scalars only. Writing **must** include the marker (**`+N`** / **`-N`**); bare **`ROOTxN`** is illegal (no marker vowel to pronounce). Speech is marker + digit (`ra`+`wo` for `+1`, `ru`+`wo` for `-1`, …). Writing **`+0`…`+9`** uses the strong readings below; **`-N`** (including **`-0`**) is the **privative** of that reading (lacks / undoes / inverse of the `+N` structure).
+
+| `+N` | Strong reading | Example | `-N` privative | Example |
+|------|----------------|---------|----------------|---------|
+| **`ROOTx+1`** | unit / primary / singleton | `z-voicex+1l` — *a single / primary voice* | non-unitary / indistinct / not-a-one | `z-voicex-1l` — *an indistinct / non-singular voice* |
+| **`ROOTx+2`** | dual / mutual / reciprocal / pair | `g-dutyx+2l` — *mutual duty* | non-reciprocal / one-sided / unpaired | `g-dutyx-2l` — *one-sided duty* |
+| **`ROOTx+3`** | triad / triplet / 3-part / ternary | `z-dialogx+3l` — *a three-part dialogue* | non-tripartite / collapsed-from-three | `z-governmentx-3l` — *non-tripartite government* |
+| **`ROOTx+4`** | quad / 4-part / square / frame | `z-courtx+4l` — *a four-part / framed court* | unframed / out-of-box / unbound | `z-ideax-4l` — *an unframed idea* |
+| **`ROOTx+5`** | hand / pentad / agency-set | `z-toolx+5l` — *a handy / five-fold toolkit* | handless / without practical grasp | `z-planx-5l` — *a plan without practical grasp* |
+| **`ROOTx+6`** | hex / 6-part / honeycomb / pack | `z-cellx+6l` — *a hexagonal / six-pack cell* | unpacked / non-hex / broken pack | `z-teamx-6l` — *an unpacked team* |
+| **`ROOTx+7`** | heptad / week-cycle / complete series | `z-ritualx+7l` — *a seven-fold / week-cycle ritual* | incomplete series / broken cycle | `z-ritualx-7l` — *a broken-cycle ritual* |
+| **`ROOTx+8`** | octet / 8-part / doubled-quad | `z-blockx+8l` — *an octet / eight-part block* | non-octet / incomplete eight | `z-blockx-8l` — *a non-octet block* |
+| **`ROOTx+9`** | ennead / near-full / almost-ten | `z-choirx+9l` — *a nine-part / near-full choir* | far-from-full / short-of-complete | `z-choirx-9l` — *a far-from-full choir* |
+| **`ROOTx+0`** | null / reset / emptied | `v-scorex+0l` — *to zero-score / null the score* | **anti-null** / non-emptyable / insistent residue | `g-scorex-0l` — *a score that won’t null* / *stubborn residual score* |
+
+**Not** free counts: `z-catlsh g+3` = *three cats*; `z-dialogx+3l` = *triadic dialogue* (structure of the kind). Multi-digit scalars (`ROOTx+12`) stay out of this morph set — use free numbers or label **`_`**.
+
+#### Label / code sense (`_`)
+
+Marker **`_`** = ROOT identified by a **catalog / specimen / ID code**, not by count or rank. Digits (when present) are the **label payload** (*specimen #1*), not “first” and not “one-part.”
+
+| Shape | Reading | Example |
+|-------|---------|---------|
+| **`ROOTx_`** | ROOT as something that **bears a code** (taggable unit; code unnamed) | `z-specimenx_l` — *a coded specimen* / *a specimen-as-ID* |
+| **`ROOTx_N`** | **specimen / item #N** — the code is part of the kind | `z-specimenx_1l` — *specimen #1*; `z-roomx_12l` — *room-12* as a coded kind; `z-vitaminx_12l` — *B-12*-style kind |
+
+**Crucial contrast — label vs ordinal vs unit morph:**
+
+| Form | Job |
+|------|-----|
+| `z-specimenx_1l` | *specimen #1* (ID / catalog label) |
+| `z-specimenl g#1` | *the first specimen* (rank / order) |
+| `z-specimenx+1l` | *a unitary / singleton specimen* (digit morph) |
+| `z-specimenlsh g+1` | *one specimen* (count) |
+
+**Prefer ordinary syntax** when the number is only an argument of an ordinary noun: `z-rooml g_12` = *the room numbered 12*. Use **`ROOTx_N`** when the code is part of the **concept** (specimen ID, SKU, protocol code). Discourse item cites stay free **`x_…`**; dial/input stays free **`v_…`**.
+
+#### Hyperbole sense (`+1e` / `#1e`)
+
+Mantissa + digitless exp = **comic / rhetorical intensification**, same spirit as free [hyperbole](numbers.md#hyperbole-gazillion). Default mantissas **`1`**; other mantissas only when the joke needs them.
+
+| Shape | Reading | Example |
+|-------|---------|---------|
+| **`ROOTx+1e`** | *gazillion-ROOT* (comic huge) | `z-messx+1el` — *a gazillion-mess* |
+| **`ROOTx+1e-`** | *gazillionth-ROOT* (comic tiny) | `z-chancex+1e-l` — *a gazillionth-of-a-chance* |
+| **`ROOTx#1e`** | *umpteenth-ROOT* (comic late rank) | `z-tryx#1el` — *an umpteenth try* (as a kind) |
+
+Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`z-meetingx#1el`** = *an umpteenth-meeting* (noun kind).
+
+### Contrasts
+
+| Form | Job |
+|------|-----|
+| `z-messl g+e` | mess of size **+∞** (free number) |
+| `z-messx+el` | **essence** of mess |
+| `z-messx+1el` | **gazillion-mess** (rhetoric) |
+| `z-messlsh g+1e` | **one gazillion messes** (hyperbolic count) |
+| `z-catlsh g+3` | three cats (count) |
+| `z-catl g#3` | the third cat (rank) |
+| `z-dialogx+3l` | three-part / triadic dialogue (digit morph) |
+| `z-dialogx-3l` | non-tripartite dialogue (privative) |
+| `z-specimenx_1l` | *specimen #1* (catalog label) |
+| `z-specimenl g#1` | *the first specimen* (rank) |
+| `z-specimenx+1l` | *a unitary specimen* (digit morph) |
+| `v-scorex+0l` | *to null the score* |
+| `g-scorex-0l` | *non-emptyable / residual score* (anti-null) |
+| `z-rooml g_12` | room numbered 12 (ordinary) |
+| `z-roomx_12l` | room-12 as coded kind |
+| Ability `v-singxun` | can’t sing — stance vowel, not NUM |
+| Role `z-axattackr` | the attacker — ROLE left of `x` |
+| Stance `…xe…` | motive (needs) / undefined (ability) — **not** essence |
+
+### Out of scope (for now)
+
+- Number endings / writing **`~` / `@` / `=`** on `NUM` (impossible under the ending rule).
+- Productive multi-digit **scalar** morphs (`ROOTx+27`) — use free numbers; label codes under **`_`** are the exception.
+- Bare digit morphs (`ROOTx1`) — illegal; use **`ROOTx+1`**.
+- Bare **`ROOTxe`** as essence.
+- Role **`e x ROOT`** (stays reserved).
+- Percent / percentage-point closers (**`jo` / `ju`**) as derivation morphs.
+- Digit-string morphs as phone-dial or discourse-list substitutes.
+
+### Constraints
+
+- `NUM` has **no** PoS and **no** number ending; the compound’s ending is ordinary reference-suffix on ROOT.
+- Digit morphs are scalar **`+N` / `-N`** (single digit); **`+`** / **`-`** supply the pronounceable marker.
+- Do **not** read numeric morphs as free clause-slot numbers (use a free number word for count / rank / time / list item).
+- Do **not** confuse **`ROOTx+e`** (essence) with **`g+e`** (+∞) or **`ROOTx+1e`** (hyperbole), or **`ROOTx+1`** (unit morph) with **`ROOTx+1e`** (gazillion).
+- Plural **-sh** on noun-slot numeric derivatives follows ordinary [plurality](plurality.md) for that PoS.
