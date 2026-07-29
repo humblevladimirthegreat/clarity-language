@@ -501,7 +501,7 @@ PoS + ROOT + x + NUM + {-l|-m|-n|-r}
 
 **Ending rule:** because **-l / -m / -n / -r** attaches to the compound (the ROOT), there is **no** number soft / named / resume on `NUM`. Do **not** write `ROOTx~+e`, `ROOTx@+1e`, or `ROOTx=+`. Approximate, proper-designation, and resume use ordinary reference endings on the derived word, or free number words / ordinary syntax outside this family.
 
-**Parser cue:** longer material before `x`, then a right half that matches number-stem grammar (writing **`+` / `-` / `#` / `_`**, speech **`r`+V…**, digitless exp, hyperbole mantissa+`e`/`e-`, label digits under `_`, or scalar digit morph **`+N` / `-N`**) + ordinary ending → this family. Bare **`ROOTxe`** is **not** essence (that shape is stance **`xe`**). Essence is **`ROOTx+e`**. Bare digit with no marker (`ROOTx1`) is **illegal** — digit morphs need scalar **`+`** / **`-`** for a pronounceable marker vowel (**`ra`** / **`ru`**).
+**Parser cue:** longer material before `x`, then a right half that matches number-stem grammar (writing **`+` / `-` / `#` / `_`**, speech **`r`+V…**, digitless exp, hyperbole mantissa+`e`/`e-`, label digits under `_`, scalar digit morph **`+N` / `-N`**, or ordinal digit morph **`#N`**) + ordinary ending → this family. Bare **`ROOTxe`** is **not** essence (that shape is stance **`xe`**). Essence is **`ROOTx+e`**. Bare digit with no marker (`ROOTx1`) is **illegal** — digit morphs need a pronounceable marker vowel (**`ra`** / **`ru`** / **`re`**).
 
 ### Inventory
 
@@ -519,7 +519,7 @@ PoS + ROOT + x + NUM + {-l|-m|-n|-r}
 
 `ROOTx+e` is **not** free +∞ (`g+e`), and **not** comic hugeness (`ROOTx+1e`).
 
-#### Digit morphs (`+N` / `-N`)
+#### Scalar digit morphs (`+N` / `-N`)
 
 Single-digit scalars only. Writing **must** include the marker (**`+N`** / **`-N`**); bare **`ROOTxN`** is illegal (no marker vowel to pronounce). Speech is marker + digit (`ra`+`wo` for `+1`, `ru`+`wo` for `-1`, …). Writing **`+0`…`+9`** uses the strong readings below; **`-N`** (including **`-0`**) is the **privative** of that reading (lacks / undoes / inverse of the `+N` structure).
 
@@ -552,6 +552,34 @@ Single-digit scalars only. Writing **must** include the marker (**`+N`** / **`-N
 
 **Not** free counts: `z-catlsh g+3` = *three cats*; `z-dialogx+3l` = *triadic dialogue* (structure of the kind). Multi-digit scalars (`ROOTx+12`) stay out of this morph set — use free numbers or label **`_`**.
 
+#### Ordinal digit morphs (`#N`)
+<a id="ordinal-digit-morphs"></a>
+
+Single-digit ordinals only. Writing **must** include marker **`#`** (**`ROOTx#N`**); speech is **`re`** + digit. **`ROOTx#N`** types ROOT as a **rank-N / Nth-order form** — place is part of the **kind**, not “the Nth token in a contextual series” (that stays free **`… g#N`**). Unsigned only — no signed ordinal morph (`ROOTx#-2` illegal, same as free numbers). No privative twin of `#N`; scalar **`-N`** already covers “lacks N-structure.” Landmarks stay digitless: **`#e-`** origin, **`#e`** telos; **`#N`** = intermediate ranked stage of the kind. Multi-digit `ROOTx#12` → prefer free `g#12` or label **`_`** if it’s an ID.
+
+| `#N` | Strong reading | Example |
+|------|----------------|---------|
+| **`ROOTx#1`** | first-class / premiere / first-order | `z-editionx#1l` — *a first-edition* (kind); vs `z-editionl g#1` *the first edition (in this stack)* |
+| **`ROOTx#2`** | secondary / second-order / backup | `g-effectx#2l` — *a secondary effect* |
+| **`ROOTx#3`** | tertiary / third-order | `z-causex#3l` — *a third-order cause* |
+| **`ROOTx#4`** … **`#9`** | Nth-order / Nth-place form | `z-harmonicsx#5l` — *fifth-order harmonic* (as a kind) |
+| **`ROOTx#0`** | zeroth-order / pre-rank / unranked form | `z-approximx#0l` — *a zeroth-order approximation* |
+
+**`#1` ≠ `+1`:** premiere-place vs singleton/unit. **`#2` ≠ `+2`:** secondary vs dual/mutual.
+
+##### Ordinal morph by PoS
+
+| PoS | `…x#N` | Examples |
+|-----|--------|----------|
+| **`/z/` `/d/` `/b/`** (noun) | a rank-N kind | `z-draftx#2l` — *a second-draft (as type)*; `z-editionx#1l` — *a first-edition* |
+| **`/v/`** (verb) | treat as / assign that order (kind-act) | `v-rankx#1l` — *to first-class / premiere it* (not free `v#1` *take 1st place*) |
+| **`/ɡ/`** (adjective) | *Nth-order* (ascribed) | `g-effectx#2l` — *secondary* |
+| **`/h/`** (adverb) | *at Nth-order framing* | `h-approximx#0l` — *zeroth-order* |
+| **`/w/`** (adjunct) | host `/ɡ/` graded as Nth-order | `g-harml w-termx#3l` — *third-order (term)* |
+| **`/j/`** (interjection) | discourse call of that order-kind | `j-editionx#1l` — *First-edition!* (kind cheer, not free `j#1` *First!* place cheer) |
+
+**One-line rule:** `+N` = *how many parts*; `#N` = *which order/place in a hierarchy*; `_N` = *which code*; free `g#N` = *which token in the current series*.
+
 #### Label / code sense (`_`)
 
 Marker **`_`** = ROOT identified by a **catalog / specimen / ID code**, not by count or rank. Digits (when present) are the **label payload** (*specimen #1*), not “first” and not “one-part.”
@@ -561,13 +589,14 @@ Marker **`_`** = ROOT identified by a **catalog / specimen / ID code**, not by c
 | **`ROOTx_`** | ROOT as something that **bears a code** (taggable unit; code unnamed) | `z-specimenx_l` — *a coded specimen* / *a specimen-as-ID* |
 | **`ROOTx_N`** | **specimen / item #N** — the code is part of the kind | `z-specimenx_1l` — *specimen #1*; `z-roomx_12l` — *room-12* as a coded kind; `z-vitaminx_12l` — *B-12*-style kind |
 
-**Crucial contrast — label vs ordinal vs unit morph:**
+**Crucial contrast — label vs free ordinal vs ordinal morph vs unit morph:**
 
 | Form | Job |
 |------|-----|
 | `z-specimenx_1l` | *specimen #1* (ID / catalog label) |
-| `z-specimenl g#1` | *the first specimen* (rank / order) |
-| `z-specimenx+1l` | *a unitary / singleton specimen* (digit morph) |
+| `z-specimenl g#1` | *the first specimen* (rank / order in context) |
+| `z-specimenx#1l` | *a first-class / premiere specimen* (ordinal digit morph) |
+| `z-specimenx+1l` | *a unitary / singleton specimen* (scalar digit morph) |
 | `z-specimenlsh g+1` | *one specimen* (count) |
 
 **Prefer ordinary syntax** when the number is only an argument of an ordinary noun: `z-rooml g_12` = *the room numbered 12*. Use **`ROOTx_N`** when the code is part of the **concept** (specimen ID, SKU, protocol code). Discourse item cites stay free **`x_…`**; dial/input stays free **`v_…`**.
@@ -594,11 +623,17 @@ Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`z-meeti
 | `z-messlsh g+1e` | **one gazillion messes** (hyperbolic count) |
 | `z-catlsh g+3` | three cats (count) |
 | `z-catl g#3` | the third cat (rank) |
-| `z-dialogx+3l` | three-part / triadic dialogue (digit morph) |
+| `z-dialogx+3l` | three-part / triadic dialogue (scalar digit morph) |
 | `z-dialogx-3l` | non-tripartite dialogue (privative) |
+| `z-causex#3l` | third-order cause (ordinal digit morph) |
 | `z-specimenx_1l` | *specimen #1* (catalog label) |
-| `z-specimenl g#1` | *the first specimen* (rank) |
-| `z-specimenx+1l` | *a unitary specimen* (digit morph) |
+| `z-specimenl g#1` | *the first specimen* (free rank) |
+| `z-specimenx#1l` | *a premiere / first-class specimen* (ordinal morph) |
+| `z-specimenx+1l` | *a unitary specimen* (scalar digit morph) |
+| `z-editionx#1l` | *a first-edition* (kind) |
+| `z-editionl g#1` | *the first edition* (in this stack) |
+| `g-effectx#2l` | *a secondary effect* |
+| `z-approximx#0l` | *a zeroth-order approximation* |
 | `v-scorex+0l` | *to null the score* |
 | `v-scorex-0l` | *to anti-null / refuse to zero the score* |
 | `g-scorex-0l` | *non-emptyable / residual score* (anti-null) |
@@ -616,8 +651,10 @@ Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`z-meeti
 ### Out of scope (for now)
 
 - Number endings / writing **`~` / `@` / `=`** on `NUM` (impossible under the ending rule).
-- Productive multi-digit **scalar** morphs (`ROOTx+27`) — use free numbers; label codes under **`_`** are the exception.
-- Bare digit morphs (`ROOTx1`) — illegal; use **`ROOTx+1`**.
+- Productive multi-digit **scalar** or **ordinal** morphs (`ROOTx+27`, `ROOTx#12`) — use free numbers; label codes under **`_`** are the exception.
+- Bare digit morphs (`ROOTx1`) — illegal; use **`ROOTx+1`** / **`ROOTx#1`**.
+- Signed ordinal morphs (`ROOTx#-2`) — illegal.
+- Privative twin of ordinal **`#N`** — use scalar **`-N`** for “lacks N-structure,” or free wording.
 - Bare **`ROOTxe`** as essence.
 - Role **`e x ROOT`** (stays reserved).
 - Percent / percentage-point closers (**`jo` / `ju`**) as derivation morphs.
@@ -626,7 +663,7 @@ Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`z-meeti
 ### Constraints
 
 - `NUM` has **no** PoS and **no** number ending; the compound’s ending is ordinary reference-suffix on ROOT.
-- Digit morphs are scalar **`+N` / `-N`** (single digit); **`+`** / **`-`** supply the pronounceable marker.
+- Digit morphs are single-digit **`+N` / `-N`** (scalar) or **`#N`** (ordinal); markers supply the pronounceable vowel (**`ra`** / **`ru`** / **`re`**).
 - Do **not** read numeric morphs as free clause-slot numbers (use a free number word for count / rank / time / list item).
-- Do **not** confuse **`ROOTx+e`** (essence) with **`g+e`** (+∞) or **`ROOTx+1e`** (hyperbole), or **`ROOTx+1`** (unit morph) with **`ROOTx+1e`** (gazillion).
+- Do **not** confuse **`ROOTx+e`** (essence) with **`g+e`** (+∞) or **`ROOTx+1e`** (hyperbole), **`ROOTx+1`** (unit morph) with **`ROOTx#1`** (premiere-order) or **`ROOTx+1e`** (gazillion), or **`ROOTx#1`** with free **`g#1`** / label **`ROOTx_1`**.
 - Plural **-sh** on noun-slot numeric derivatives follows ordinary [plurality](plurality.md) for that PoS.
