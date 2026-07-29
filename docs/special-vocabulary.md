@@ -536,6 +536,20 @@ Single-digit scalars only. Writing **must** include the marker (**`+N`** / **`-N
 | **`ROOTx+9`** | ennead / near-full / almost-ten | `z-choirx+9l` — *a nine-part / near-full choir* | far-from-full / short-of-complete | `z-choirx-9l` — *a far-from-full choir* |
 | **`ROOTx+0`** | null / reset / emptied | `v-scorex+0l` — *to zero-score / null the score* | **anti-null** / non-emptyable / insistent residue | `g-scorex-0l` — *a score that won’t null* / *stubborn residual score* |
 
+##### Null / anti-null by PoS (`+0` / `-0`)
+<a id="null-anti-null"></a>
+
+**`+0`** = treat ROOT as **resettable / emptied**; **`-0`** = ROOT **resists emptying** (insistent residue). PoS says *what kind of thing* is being emptied or refusing. This is **modality of emptiness**, not quantity: not “negative zero amount,” and not absence of the kind (**`ROOTx-e`** = *void of ROOT*). Orthogonal to free counts, essence (`+e`), void (`-e`), and [ability](#ability) (`…xun` *can’t* ≠ *won’t null*).
+
+| PoS | `…x+0` | `…x-0` | Examples |
+|-----|--------|--------|----------|
+| **`/z/` `/d/` `/b/`** (noun) | emptied / wiped instance | entity that won’t zero / stubborn residue | `z-debtx+0l` — *a wiped debt*; `z-debtx-0l` — *a debt that won’t zero*; `d-memoryx-0l` — *that memory that won’t blank*; `b-scorex-0l` — non-null residue as argument |
+| **`/v/`** (verb) | act of nulling / resetting | act that refuses null / keeps residual | `v-scorex+0l` — *to null the score*; `v-scorex-0l` — *to anti-null / refuse to zero the score*; `v-painx+0l` — *to extinguish pain*; `v-painx-0l` — *to leave pain unextinguishable* |
+| **`/ɡ/`** (adjective) | null / reset (ascribed) | non-emptyable / residual (ascribed) | `g-scorex+0l` — *null / reset*; `g-scorex-0l` — *won’t-null / residual*; `g-hopex-0l` — *hope that won’t go to zero* (vs `g-hopex-el` *void of hope*) |
+| **`/h/`** (adverb) | clause framed as reset / zeroed | clause framed as irreducible residue | `h-effortx+0l` — *with effort zeroed*; `h-effortx-0l` — *with irreducible effort* / *despite any zeroing* |
+| **`/w/`** (adjunct) | host `/ɡ/` graded toward null | host `/ɡ/` graded toward anti-null | `g-debtl w-balancx+0l` — *debt (ascribed) zeroed*; `g-debtl w-balancx-0l` — *debt whose balance is anti-null* — non-value overlay; do not collide with value **`xu`** [changeability](values.md#value-changeability) |
+| **`/j/`** (interjection) | discourse *Zero it!* / *Null!* | discourse *Won’t zero!* / *Residue stands!* | `j-scorex+0l`; `j-scorex-0l` |
+
 **Not** free counts: `z-catlsh g+3` = *three cats*; `z-dialogx+3l` = *triadic dialogue* (structure of the kind). Multi-digit scalars (`ROOTx+12`) stay out of this morph set — use free numbers or label **`_`**.
 
 #### Label / code sense (`_`)
@@ -586,7 +600,13 @@ Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`z-meeti
 | `z-specimenl g#1` | *the first specimen* (rank) |
 | `z-specimenx+1l` | *a unitary specimen* (digit morph) |
 | `v-scorex+0l` | *to null the score* |
+| `v-scorex-0l` | *to anti-null / refuse to zero the score* |
 | `g-scorex-0l` | *non-emptyable / residual score* (anti-null) |
+| `z-debtx-0l` | *a debt that won’t zero* (anti-null noun) |
+| `z-fearx-el` | *void of fear* (no fear-kind) |
+| `z-fearx-0l` | *fear that won’t go to zero* |
+| `h-effortx-0l` | *with irreducible effort* (anti-null adverb) |
+| `j-scorex-0l` | *Won’t zero!* / *Residue stands!* (anti-null interjection) |
 | `z-rooml g_12` | room numbered 12 (ordinary) |
 | `z-roomx_12l` | room-12 as coded kind |
 | Ability `v-singxun` | can’t sing — stance vowel, not NUM |
