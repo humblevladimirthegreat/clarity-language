@@ -512,12 +512,13 @@ PoS + ROOT + x + NUM + {-l|-m|-n|-r}
 | **`ROOTx+e`** | **essence / absolute / pure type** of ROOT | `z-lovex+el` — *essence of love* |
 | **`ROOTx+e-`** | **grain / seed / infinitesimal** of ROOT | `z-truthx+e-l` — *grain of truth* |
 | **`ROOTx-e`** | **void of / absolute anti-ROOT** | `z-fearx-el` — *void of fear* |
+| **`ROOTx-e-`** | **anti-grain / coarse / non-seed** of ROOT (privative of `+e-`) | `z-sandx-e-l` — *coarse / non-infinitesimal sand* |
 | **`ROOTx#e-`** | **origin / prototype / onset-form** of ROOT | `z-lovex#e-l` — *love in its beginning form* |
 | **`ROOTx#e`** | **telos / culmination / final form** of ROOT | `z-storyx#el` — *story’s final form* |
 | **`ROOTx+`** | **poly- / multi-ROOT** (unspecified >1) | `z-faithx+l` — *multi-faith* |
 | **`ROOTx-`** | **de- / un- / deficit-ROOT** | `v-mythx-l` — *to de-myth* |
 
-`ROOTx+e` is **not** free +∞ (`g+e`), and **not** comic hugeness (`ROOTx+1e`).
+Digitless **`+` / `-` / `#`** on ROOT = **metaphysics of the kind** — **not** free special values. `ROOTx+e` is **not** free +∞ (`g+e`), and **not** comic hugeness (`ROOTx+1e`). Free twins: `g+e` = +∞; `g+e-` = arbitrarily small; `g-e` = −∞; `g#e-` / `g#e` = start / last place. Free `g-e-` stays undefined; derivation **`ROOTx-e-`** is defined. For *∞ as a property of the kind*, prefer hyperbole `ROOTx+1e` or ordinary wording — don’t overload essence. Digitless **`_`** = [catalog topology](#infinite-labels) (below).
 
 #### Scalar digit morphs (`+N` / `-N`)
 
@@ -581,15 +582,39 @@ Single-digit ordinals only. Writing **must** include marker **`#`** (**`ROOTx#N`
 **One-line rule:** `+N` = *how many parts*; `#N` = *which order/place in a hierarchy*; `_N` = *which code*; free `g#N` = *which token in the current series*.
 
 #### Label / code sense (`_`)
+<a id="label-code-sense"></a>
 
-Marker **`_`** = ROOT identified by a **catalog / specimen / ID code**, not by count or rank. Digits (when present) are the **label payload** (*specimen #1*), not “first” and not “one-part.”
+Marker **`_`** = ROOT identified by a **catalog / specimen / ID code**, not by count or rank. Digits (when present) are the **label payload** (*specimen #1*), not “first” and not “one-part.” Digitless exp under **`_`** is **undefined** on free number words ([numbers.md](numbers.md#digitless-exponents)); derivation opens it as **[catalog topology](#infinite-labels)** below.
 
 | Shape | Reading | Example |
 |-------|---------|---------|
 | **`ROOTx_`** | ROOT as something that **bears a code** (taggable unit; code unnamed) | `z-specimenx_l` — *a coded specimen* / *a specimen-as-ID* |
 | **`ROOTx_N`** | **specimen / item #N** — the code is part of the kind | `z-specimenx_1l` — *specimen #1*; `z-roomx_12l` — *room-12* as a coded kind; `z-vitaminx_12l` — *B-12*-style kind |
 
-**Crucial contrast — label vs free ordinal vs ordinal morph vs unit morph:**
+##### Infinite / landmark labels (`_e` / `_e-` / `_1e`)
+<a id="infinite-labels"></a>
+
+Digitless **`_`** = **metaphysics of the catalog**, not magnitude. Label ∞ means *the naming system has no bound*, not *the count is infinite*. **Not** free dialing (`d_…`); **not** free amount +∞ (`g+e`).
+
+| Shape | Reading | Example |
+|-------|---------|---------|
+| **`ROOTx_e`** | **open / unbounded catalog** — ∞-tagged, open ID space, any code in an unbounded ledger | `z-ticketx_el` — *open-ended ticket ID* / *∞-catalogued ticket* |
+| **`ROOTx_e-`** | **proto-label / unassigned slot** — pre-code, atomic empty tag | `z-ticketx_e-l` — *unassigned ticket slot* |
+| **`ROOTx_1e`** | comic **gazillion-coded** / umpteen-SKU | `z-productx_1el` — *a gazillion-SKU product* |
+| **`ROOTx_1e-`** | comic **gazillionth-of-a-code** / vanishing ID | `z-cluex_1e-l` — *a vanishingly coded clue* |
+
+###### Infinite label by PoS
+
+| PoS | `…x_e` | `…x_e-` | Examples |
+|-----|--------|--------|----------|
+| **`/z/` `/d/` `/b/`** (noun) | open-catalog entity | pre-labeled / slot entity | `z-ticketx_el`; `z-ticketx_e-l` |
+| **`/v/`** (verb) | to ∞-tag / put on an open ledger | to reserve an empty code slot | `v-ticketx_el`; `v-ticketx_e-l` |
+| **`/ɡ/`** (adjective) | open-endedly coded | proto-coded / unassigned | `g-ticketx_el`; `g-ticketx_e-l` |
+| **`/h/`** (adverb) | under open-catalog framing | under pre-label framing | `h-ticketx_el`; `h-ticketx_e-l` |
+| **`/w/`** (adjunct) | host graded as open-catalog | host graded as proto-label | `g-iteml w-codex_el` |
+| **`/j/`** (interjection) | *Open catalog!* / *∞-tagged!* | *Unassigned!* / *Empty slot!* | `j-ticketx_el`; `j-ticketx_e-l` |
+
+**Crucial contrast — label vs free ordinal vs ordinal morph vs unit morph vs catalog ∞:**
 
 | Form | Job |
 |------|-----|
@@ -598,18 +623,28 @@ Marker **`_`** = ROOT identified by a **catalog / specimen / ID code**, not by c
 | `z-specimenx#1l` | *a first-class / premiere specimen* (ordinal digit morph) |
 | `z-specimenx+1l` | *a unitary / singleton specimen* (scalar digit morph) |
 | `z-specimenlsh g+1` | *one specimen* (count) |
+| `z-ticketl g+e` | infinitely many tickets (count) |
+| `z-ticketx+el` | essence of ticket |
+| `z-ticketx+1el` | gazillion-ticket (rhetoric size) |
+| `z-ticketx_12l` | ticket-12 (SKU) |
+| `z-ticketx_el` | open-ended / ∞-catalogued ticket (kind) |
+| `z-ticketx_e-l` | unassigned ticket slot (kind) |
 
 **Prefer ordinary syntax** when the number is only an argument of an ordinary noun: `z-rooml g_12` = *the room numbered 12*. Use **`ROOTx_N`** when the code is part of the **concept** (specimen ID, SKU, protocol code). Discourse item cites stay free **`x_…`**; dial/input stays free **`v_…`**.
 
-#### Hyperbole sense (`+1e` / `#1e`)
+**Rule of thumb:** digitless **`+`/`-`/`#`** on ROOT = *metaphysics of the kind*; digitless **`_`** = *metaphysics of the catalog*.
 
-Mantissa + digitless exp = **comic / rhetorical intensification**, same spirit as free [hyperbole](numbers.md#hyperbole-gazillion). Default mantissas **`1`**; other mantissas only when the joke needs them.
+#### Hyperbole sense (`+1e` / `#1e` / `_1e`)
+
+Mantissa + digitless exp = **comic / rhetorical intensification**, same spirit as free [hyperbole](numbers.md#hyperbole-gazillion). Default mantissas **`1`**; other mantissas only when the joke needs them. Label hyperbole (`_1e` / `_1e-`) is catalog comedy — see [infinite labels](#infinite-labels).
 
 | Shape | Reading | Example |
 |-------|---------|---------|
 | **`ROOTx+1e`** | *gazillion-ROOT* (comic huge) | `z-messx+1el` — *a gazillion-mess* |
 | **`ROOTx+1e-`** | *gazillionth-ROOT* (comic tiny) | `z-chancex+1e-l` — *a gazillionth-of-a-chance* |
 | **`ROOTx#1e`** | *umpteenth-ROOT* (comic late rank) | `z-tryx#1el` — *an umpteenth try* (as a kind) |
+| **`ROOTx_1e`** | *gazillion-coded ROOT* (comic SKU sprawl) | `z-productx_1el` — *a gazillion-SKU product* |
+| **`ROOTx_1e-`** | *gazillionth-of-a-code ROOT* (vanishing ID) | `z-cluex_1e-l` — *a vanishingly coded clue* |
 
 Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`z-meetingx#1el`** = *an umpteenth-meeting* (noun kind).
 
@@ -621,6 +656,8 @@ Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`z-meeti
 | `z-messx+el` | **essence** of mess |
 | `z-messx+1el` | **gazillion-mess** (rhetoric) |
 | `z-messlsh g+1e` | **one gazillion messes** (hyperbolic count) |
+| `z-truthx+e-l` | *grain of truth* |
+| `z-sandx-e-l` | *coarse / non-seed sand* (anti-grain) |
 | `z-catlsh g+3` | three cats (count) |
 | `z-catl g#3` | the third cat (rank) |
 | `z-dialogx+3l` | three-part / triadic dialogue (scalar digit morph) |
@@ -634,6 +671,12 @@ Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`z-meeti
 | `z-editionl g#1` | *the first edition* (in this stack) |
 | `g-effectx#2l` | *a secondary effect* |
 | `z-approximx#0l` | *a zeroth-order approximation* |
+| `z-ticketl g+e` | infinitely many tickets (count) |
+| `z-ticketx+el` | essence of ticket |
+| `z-ticketx_12l` | ticket-12 (SKU) |
+| `z-ticketx_el` | open-ended / ∞-catalogued ticket |
+| `z-ticketx_e-l` | unassigned ticket slot |
+| `z-productx_1el` | gazillion-SKU product (label hyperbole) |
 | `v-scorex+0l` | *to null the score* |
 | `v-scorex-0l` | *to anti-null / refuse to zero the score* |
 | `g-scorex-0l` | *non-emptyable / residual score* (anti-null) |
@@ -665,5 +708,6 @@ Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`z-meeti
 - `NUM` has **no** PoS and **no** number ending; the compound’s ending is ordinary reference-suffix on ROOT.
 - Digit morphs are single-digit **`+N` / `-N`** (scalar) or **`#N`** (ordinal); markers supply the pronounceable vowel (**`ra`** / **`ru`** / **`re`**).
 - Do **not** read numeric morphs as free clause-slot numbers (use a free number word for count / rank / time / list item).
-- Do **not** confuse **`ROOTx+e`** (essence) with **`g+e`** (+∞) or **`ROOTx+1e`** (hyperbole), **`ROOTx+1`** (unit morph) with **`ROOTx#1`** (premiere-order) or **`ROOTx+1e`** (gazillion), or **`ROOTx#1`** with free **`g#1`** / label **`ROOTx_1`**.
+- Do **not** confuse **`ROOTx+e`** (essence) with **`g+e`** (+∞) or **`ROOTx+1e`** (hyperbole), **`ROOTx+1`** (unit morph) with **`ROOTx#1`** (premiere-order) or **`ROOTx+1e`** (gazillion), **`ROOTx#1`** with free **`g#1`** / label **`ROOTx_1`**, or **`ROOTx_e`** (open catalog) with **`g+e`** (amount +∞) / free digitless **`_`** (undefined).
+- Digitless **`+`/`-`/`#`** = kind metaphysics; digitless **`_`** = catalog metaphysics ([infinite labels](#infinite-labels)).
 - Plural **-sh** on noun-slot numeric derivatives follows ordinary [plurality](plurality.md) for that PoS.

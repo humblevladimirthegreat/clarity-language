@@ -299,7 +299,7 @@ None of these is bare OoM (which always **names** the power: `g+e9`) nor a [zero
 
 **Writing:** **`e`** = speech **`ba`**; **`e-`** = speech **`bu`**. Digitless means no power digits after that mark: `g+e`, `g+1e`, `g+e-`, `g+1e-`.
 
-**Shape limits:** one such group only in the word; do not combine digitless exp with real exp digits, percent closers, or further groups. Marker identity still applies. Digitless exp on **`ro`** / **`_`** is **undefined**.
+**Shape limits:** one such group only in the word; do not combine digitless exp with real exp digits, percent closers, or further groups. Marker identity still applies. Digitless exp on **`ro`** / **`_`** is **undefined** on free number words. Derivation compounds may use digitless **`_`** as [infinite / landmark labels](special-vocabulary.md#infinite-labels) (`ROOTx_e`, `ROOTx_e-`, `ROOTx_1e`, …).
 
 #### Special values — no mantissa
 
@@ -839,7 +839,7 @@ Examples: `zal g-agel z+3 z+5` → *between ages 3 and 5*; `z-kidl gal g-agel g+
 
 ## Numeric derivation (compounds)
 
-PoS-less number stems may follow mid-word **`x`** on an ordinary content root (`ROOTx+e`, `ROOTx_12`, `ROOTx+1e`, …). That family is **derivation** (essence, coded subtype, hyperbole-ROOT, …), documented in **[special-vocabulary.md § Numeric derivation](special-vocabulary.md#numeric-derivation)**; parser cue in **[x-compounds.md](x-compounds.md)**. Free number words on this page stay clause-slot counts, ranks, labels, overlays, and discourse items.
+PoS-less number stems may follow mid-word **`x`** on an ordinary content root (`ROOTx+e`, `ROOTx_12`, `ROOTx_e`, `ROOTx+1e`, …). That family is **derivation** (essence, coded subtype, [infinite labels](special-vocabulary.md#infinite-labels), hyperbole-ROOT, …), documented in **[special-vocabulary.md § Numeric derivation](special-vocabulary.md#numeric-derivation)**; parser cue in **[x-compounds.md](x-compounds.md)**. Free number words on this page stay clause-slot counts, ranks, labels, overlays, and discourse items.
 
 ## Stress (pronunciation guide)
 
