@@ -9,10 +9,10 @@ Under **`/h/`** and **`/w/`**, the join series + ending is **not** a same-slot s
 
 | Prefix | Host | Restrictor floats? |
 |--------|------|--------------------|
-| `/h/` | the **clause** (verb-level claim) — or a [VP chain](coordination.md#vp-level-coordination) when the restrictor sits before a left-fence `/v/` join | yes (same free position as ordinary `/h/`) |
+| `/h/` | the **clause** (verb-level claim) — or a [VP chain](coordination.md#vp-level-coordination) when the restrictor sits before the VP stretch / in SHARED after the `/v/` join | yes (same free position as ordinary `/h/`) |
 | `/w/` | the **preceding `/ɡ/`** (the property) | no (stays on that adjective, like ordinary `/w/`) |
 
-**Same fence rules** as other phrase slots: left preferred, right close allowed, SHARED immediately after the join, [nesting](coordination.md#fence-nesting), pure infix illegal, focus / bare / multi arities as elsewhere.
+**Same fence rules** as other phrase slots: right close only, SHARED immediately after the join, [nesting](coordination.md#fence-nesting), pure infix illegal, focus / bare / multi arities as elsewhere.
 
 ## Juxtaposition vs restrictor
 
@@ -20,10 +20,10 @@ Under **`/h/`** and **`/w/`**, the join series + ending is **not** a same-slot s
 |---------|---------|
 | `h-quicklyl h-quietlyl` | *quickly and quietly* — co-applying adverbs; **no** join |
 | `w-veryl w-slightlyl` on a `/ɡ/` | *very* and *slightly* (stacked adjuncts); **no** join |
-| `hal h-rainl` / `h-rainl hal` | *only when raining* — closed restrictor |
-| `ham h-rainl h-nightl` | *when raining and at night, among other possible cases* — open |
+| `h-rainl hal` / `h-rainl hal` | *only when raining* — closed restrictor |
+| `h-rainl h-nightl ham` | *when raining and at night, among other possible cases* — open |
 
-Do **not** write `ham h-quicklyl h-quietlyl` for manner *and*; that reads as restrictor use (*in the cases “quickly” and “quietly”*), not co-manner.
+Do **not** write `h-quicklyl h-quietlyl ham` for manner *and*; that reads as restrictor use (*in the cases “quickly” and “quietly”*), not co-manner.
 
 ## Conjuncts
 
@@ -84,20 +84,20 @@ Nesting and SHARED still apply to **defined** forms only.
 ## Examples
 
 - `hal` → *never*; `ham` → *never that I can think of*; `hual` → *always* (also the habitual frame for characterizing generics — [universals, domains, and generics](coordination.md#universals-domains-generics)); `huam` → *always from me*; `har` → *sometime*; `hor` → *anytime*; `hur` → *sometime else*
-- `hal h-rainl` / `h-rainl hal` → *only when raining*
-- `ham h-rainl h-nightl` → *when raining and at night (among other occasions)*
-- `hol h-weekdayl h-weekendl` → *either on a weekday or on a weekend (not both)*; `hom h-weekdayl h-weekendl` → *weekday or weekend (not both), or never*
-- `haol h-rainl h-snowl` → *when raining and/or when snowing*
-- `hul h-rainl` → *not when raining*; `hum h-rainl h-nightl` → *not when raining or at night, for one*
-- `hual h-rainl` → *always except when raining*
-- `huol h-rainl` → *anytime except when raining*
-- `hel h-emergencyl h-conveniencel` → *preferably in emergency ≻ for convenience*
-- `hael h-rainl h-snowl` → *as often when raining as when snowing* / *rain and snow equally often*
+- `h-rainl hal` / `h-rainl hal` → *only when raining*
+- `h-rainl h-nightl ham` → *when raining and at night (among other occasions)*
+- `h-weekdayl h-weekendl hol` → *either on a weekday or on a weekend (not both)*; `h-weekdayl h-weekendl hom` → *weekday or weekend (not both), or never*
+- `h-rainl h-snowl haol` → *when raining and/or when snowing*
+- `h-rainl hul` → *not when raining*; `h-rainl h-nightl hum` → *not when raining or at night, for one*
+- `h-rainl hual` → *always except when raining*
+- `h-rainl huol` → *anytime except when raining*
+- `h-emergencyl h-conveniencel hel` → *preferably in emergency ≻ for convenience*
+- `h-rainl h-snowl hael` → *as often when raining as when snowing* / *rain and snow equally often*
 - `hael` → *equally often* / *tied frequency frame* (bare)
-- `hoel h-fixl h-workaroundl` → *if (when) fix, else if workaround…*
-- `har h-rainl h-snowl` → *sometime among rain or snow*; under question, bare `har` → *When?* ([questions.md](questions.md#circumstance-when))
-- Complex conjunct: `hal h-atl b-homel` → *only at home*
-- `/w/` core: `wal` on `g-happyl` → *never* (for that property); `wal w-allegedl` → *only when alleged*; `wual` → *always* (property always applies); `war` → *sometime* (under some framing); juxtaposition `g-happyl w-veryl w-recentl` → *very* and *recent* (not a restrictor fence)
+- `h-fixl h-workaroundl hoel` → *if (when) fix, else if workaround…*
+- `h-rainl h-snowl har` → *sometime among rain or snow*; under question, bare `har` → *When?* ([questions.md](questions.md#circumstance-when))
+- Complex conjunct: `h-atl b-homel hal` → *only at home*
+- `/w/` core: `wal` on `g-happyl` → *never* (for that property); `w-allegedl wal` → *only when alleged*; `wual` → *always* (property always applies); `war` → *sometime* (under some framing); juxtaposition `g-happyl w-veryl w-recentl` → *very* and *recent* (not a restrictor fence)
 
 ## Constraints (extra)
 

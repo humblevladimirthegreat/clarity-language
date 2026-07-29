@@ -128,7 +128,7 @@ Under **jol** / **jom**, prefixed **-r** on **a** / **o** / **e** / **u** is the
 
 Unbound *who* / *what* / *where* = bare phrase **-r** in the queried slot (PoS = role). Unbound *what did they do?* / *what happened?* = bare **`var`** / **`xar`** (etc.). Unbound *when?* = bare **`har`** (etc.).
 
-VP / clause under question (schematic): `var` → *What (did they) do?*; `vur` → *What else (did they do)?*; `xar` → *What happened?*; `xur` → *What else happened?*; `vul v-runl` → *Didn’t run?* (yes/no denial, not fill).
+VP / clause under question (schematic): `var` → *What (did they) do?*; `vur` → *What else (did they do)?*; `xar` → *What happened?*; `xur` → *What else happened?*; `v-runl vul` → *Didn’t run?* (yes/no denial, not fill).
 
 <a id="yes-no-focus-bare"></a>
 <a id="yes-no-unary-nullary"></a>
@@ -234,7 +234,7 @@ Under `/h/` / `/w/`, only the [defined core](restrictors.md) has circumstance re
 | **`hor`** / **`wor`** | *anytime* | *Anytime?* |
 | **`hur`** / **`wur`** | *sometime else* | *When else?* |
 
-With conjuncts: `har h-rainl h-snowl` → *sometime among rain or snow*; under question, bare `har` → *When?* Focus / multi parallel the phrase fill-ask pattern in the circumstance slot.
+With conjuncts: `h-rainl h-snowl har` → *sometime among rain or snow*; under question, bare `har` → *When?* Focus / multi parallel the phrase fill-ask pattern in the circumstance slot.
 
 ---
 

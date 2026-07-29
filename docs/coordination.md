@@ -2,11 +2,11 @@
 
 **Joins**, **revisers**, and **restrictors** share the **join series** (vowels + endings). A **join** is a prefixed fence over same-slot material. A **reviser** is a prefix-less form: in-clause repair of a fixed left side, or discourse glue before clause force (*additionally* / …). A **restrictor** is a join-series spelling under `/h/` or `/w/` that limits when the host applies. Joins split into **set joins** (**a** / **o** / **ao** / **u** / **ua** / **uo**) and **rank joins** (**e** / **ae** / **oe** / **ue**). Arity: **bare** (0 conjuncts) / **focus** (1) / **list** (2+).
 
-This page is the source of truth for **phrase-level** (same-slot fence: left preferred, right close allowed), **VP-level**, and **clause-level** joins. **Revisers** (prefix-less **al** / **am** / …): [revisers.md](revisers.md). **Restrictors** (`/h/` `/w/`): [restrictors.md](restrictors.md). There is **no** prefix-less **join** series (lists still need a PoS prefix + ending). Correlatives (*both…and*, *either…or*) come later. Asymmetric discourse glue (*but*, *however*, *therefore*, *meanwhile*, *next*) is `/x/` but **not** the prefixed join series — see [language-reference.md](language-reference.md#discourse-markers-x). [Revisers](revisers.md) (**al** / **am** / **an** / **el** / … — ending required) cover in-clause *including* / *rather* / *instead* / *except* and, before clause force, discourse *additionally* / *in other words* / *instead* / *except*. *Starting with* = **`x#e-`**, *Finally* = **`x#e`** ([numbers.md](numbers.md#number-as-discourse-marker-by-marker)). [Comparatives / superlatives / equatives](comparatives.md) reuse NP fences with SHARED `/ɡ/` as scale (ranked **`e` / `oe` / `ue`** = *more / …-est*; **`ae`** = *as … as*; set **`a`** distributes SHARED `/ɡ/`). [Number ranges](numbers.md#ranges) (SHARED continuum `/ɡ/` + two number endpoints) and [measure phrases](numbers.md#measure-phrases) live in **numbers.md**. [Generics / *every K*](#universals-domains-generics) reuse invert **ua** with SHARED `/ɡ/` as kind domain (`zual g-catl`); habitual characterizing uses **`hual`**.
+This page is the source of truth for **phrase-level** (same-slot **right-close** fence only), **VP-level**, and **clause-level** joins. **Revisers** (prefix-less **al** / **am** / …): [revisers.md](revisers.md). **Restrictors** (`/h/` `/w/`): [restrictors.md](restrictors.md). There is **no** prefix-less **join** series (lists still need a PoS prefix + ending). Correlatives (*both…and*, *either…or*) come later. Asymmetric discourse glue (*but*, *however*, *therefore*, *meanwhile*, *next*) is `/x/` but **not** the prefixed join series — see [language-reference.md](language-reference.md#discourse-markers-x). [Revisers](revisers.md) (**al** / **am** / **an** / **el** / … — ending required) cover in-clause *including* / *rather* / *instead* / *except* and, before clause force, discourse *additionally* / *in other words* / *instead* / *except*. *Starting with* = **`x#e-`**, *Finally* = **`x#e`** ([numbers.md](numbers.md#number-as-discourse-marker-by-marker)). [Comparatives / superlatives / equatives](comparatives.md) reuse NP fences with SHARED `/ɡ/` as scale (ranked **`e` / `oe` / `ue`** = *more / …-est*; **`ae`** = *as … as*; set **`a`** distributes SHARED `/ɡ/`). [Number ranges](numbers.md#ranges) (SHARED continuum `/ɡ/` + two number endpoints) and [measure phrases](numbers.md#measure-phrases) live in **numbers.md**. [Generics / *every K*](#universals-domains-generics) reuse invert **ua** with SHARED `/ɡ/` as kind domain (`zual g-catl`); habitual characterizing uses **`hual`**. Join scope over a sub-stretch of same-slot material uses [scope islands](spans.md#adjunct-scope-islands) **`^ … ^`** with the join **inside** the island.
 
 PoS prefixes and ordinary word shape: [language-reference.md](language-reference.md). Reference suffixes: [reference-suffix.md](reference-suffix.md). Phonotactics for reserved join roots: [phonology.md](phonology.md#phonotactics). Interrogative readings of these forms: [questions.md](questions.md).
 
-**List shapes:** **Phrase-level**, **VP-level**, and **clause-level** all use a **fence**: prefixed join plus optional shared modifiers **immediately after** that join; conjuncts juxtaposed (no mid-chain continue particle). **-r** on **a** / **o** / **e** / **u** is the [unspecified-member](#unspecified-member-r-phrase) series at every level (*something* / *anything* / *whatever-by-rank* / *something else* — VP: *do something* / …; clause: *something happened* / …). Plain **u** = [negation](#negation-u) (*not* / *none of* / bare *no*). Leading **u** on **a** / **o** / **e** = [invert](#invert-u-stacks) (*everything but* / *anything but* / **rank reversal**). **Left fence** (join before the conjuncts) is preferred; **right close** (join after the conjuncts) is allowed for style or comedy. **Nesting** uses extra fences: left stack = right-associative, right stack = left-associative; **pure infix is illegal** — see [fence nesting](#fence-nesting).
+**List shapes:** **Phrase-level**, **VP-level**, and **clause-level** all use a **right-close fence**: conjuncts first, then the prefixed join, then optional shared modifiers **immediately after** that join; conjuncts juxtaposed (no mid-chain continue particle). **-r** on **a** / **o** / **e** / **u** is the [unspecified-member](#unspecified-member-r-phrase) series at every level (*something* / *anything* / *whatever-by-rank* / *something else* — VP: *do something* / …; clause: *something happened* / …). Plain **u** = [negation](#negation-u) (*not* / *none of* / bare *no*). Leading **u** on **a** / **o** / **e** = [invert](#invert-u-stacks) (*everything but* / *anything but* / **rank reversal**). **Left fences are illegal** (no join-before-conjuncts). **Nesting** uses stacked right closes only (**left-associative**); **pure infix is illegal** — see [fence nesting](#fence-nesting). To join only a sub-stretch when other same-slot material sits nearby, put that sub-stretch and its join **inside** a [scope island](spans.md#adjunct-scope-islands) — see [join scope islands](#join-scope-islands).
 
 Prefixed forms are **joins** — **set joins** (**a** / **o** / **ao** / **u** / **ua** / **uo**) and **rank joins** (**e** / **ae** / **oe** / **ue**) — except under **`/h/`** and **`/w/`**, where the same forms are [restrictors](restrictors.md) (applicability), not sibling *and* of modifiers. Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** are a separate **reviser** series — see [revisers.md](revisers.md).
 
@@ -37,7 +37,7 @@ Atomic vowels have fixed **names**. Stacked names are derived from those atomics
 <a id="empty-allowed-om"></a>
 <a id="join-type-vowel-series"></a>
 
-**Invert** (`u`-stacks / *counter-…*): leading **u** on **a** / **o** / **e** flips the base join — **counteradditive** (**ua**), **counterchoice** (**uo**), or **counterrank** (**ue**). This is **not** plain **u** ([negation](#negation-u): *not* / *none of* / bare *no*). Domain for **ua** / **uo** comes from context or SHARED `/ɡ/` (kind-as-property): bare `zual g-catl` → *every cat*; with exclusions `zual g-drinkl z-teal z-coffeel` → *every drink but tea and coffee* — see [universals, domains, and generics](#universals-domains-generics). **-m** on vowels other than plain **o** still only marks non-exhaustive listing (other unnamed conjuncts may exist) — it does **not** by itself allow *or none*. Empty-allowed / *or none* is **o**-specific: open **…om** only — see [empty-allowed **-om**](#empty-allowed-om). No **u** on plain **u**, and no **u** on stacked **ao** / **ae** / **oe** (no three-vowel **uao** / **uae** / **uoe** / **aoe**). No **-r** on any stacked form (**ao** / **ae** / **oe** / **ua** / **uo** / **ue**). Rank reversal is **ue** (**counterrank**) only — not an `/h/` adverb.
+**Invert** (`u`-stacks / *counter-…*): leading **u** on **a** / **o** / **e** flips the base join — **counteradditive** (**ua**), **counterchoice** (**uo**), or **counterrank** (**ue**). This is **not** plain **u** ([negation](#negation-u): *not* / *none of* / bare *no*). Domain for **ua** / **uo** comes from context or SHARED `/ɡ/` (kind-as-property): bare `zual g-catl` → *every cat*; with exclusions `z-teal z-coffeel zual g-drinkl` → *every drink but tea and coffee* — see [universals, domains, and generics](#universals-domains-generics). **-m** on vowels other than plain **o** still only marks non-exhaustive listing (other unnamed conjuncts may exist) — it does **not** by itself allow *or none*. Empty-allowed / *or none* is **o**-specific: open **…om** only — see [empty-allowed **-om**](#empty-allowed-om). No **u** on plain **u**, and no **u** on stacked **ao** / **ae** / **oe** (no three-vowel **uao** / **uae** / **uoe** / **aoe**). No **-r** on any stacked form (**ao** / **ae** / **oe** / **ua** / **uo** / **ue**). Rank reversal is **ue** (**counterrank**) only — not an `/h/` adverb.
 
 ### Closure ending (all join vowels)
 
@@ -91,14 +91,14 @@ Prefixed **-r** on **a** / **o** / **e** / **u** marks an **unspecified member o
 Mnemonic: **-r** = member not named; vowel = frame (**a** = inventory existence; **o** = exclusive menu; **e** = ranked preference; **ae** = equality / tie; **u** = other than / else). Positive twins of bare emptiness: `zal` / `zam` → **`zar`**; `zol` / `zom` → **`zor`**; `zel` / `zem` → **`zer`** (*whatever matters*, vs *unspecified ranking* / *I don’t have a ranking*); `zael` / `zaem` → tie / draw frame (not **`zer`**). Among vs other-than: **`zar`** = some *among* these; **`zur`** = some *other than* these; **`zual…`** = *everything but* (universal other-than); bare **`zul` / `zum` / `zun`** = *not* / *none of* / *no* (negation, not an other-than pick). Domain for **`zur`** (like **`zual`**) comes from context or SHARED when not fixed by conjuncts.
 
 **Contrast:**
-- Content-word `-l`: `z-personl` = ordinary first-mention indefinite (*a person*). `zar z-personl` / `z-personl zar` = **explicitly non-identified** (*some person, unknown / unspecified who*). Do not use `zar` / `zor` where ordinary `-l` / `-m` introduction is enough.
-- `zor A B C` = any of them is fine (**no** order). `zer A B C` = pick / take **by ranking** among them.
-- `zar A B` = some one **among** A and B. `zur A B` = some one **other than** A and B. `zual A B` = *everything but* A and B (all other than these). `zul A B` = *none of* A or B.
+- Content-word `-l`: `z-personl` = ordinary first-mention indefinite (*a person*). `z-personl zar` / `z-personl zar` = **explicitly non-identified** (*some person, unknown / unspecified who*). Do not use `zar` / `zor` where ordinary `-l` / `-m` introduction is enough.
+- `A B C zor` = any of them is fine (**no** order). `A B C zer` = pick / take **by ranking** among them.
+- `A B zar` = some one **among** A and B. `A B zur` = some one **other than** A and B. `A B zual` = *everything but* A and B (all other than these). `A B zul` = *none of* A or B.
 - Revision **`ul` / `um`**: *except* a named right-hand side. Prefixed **`zur`**: unspecified *something else* / other than the listed, not an *except*-reviser. Prefixed **`zul` / `zum` / `zun`**: [negation](#negation-u) (*not X* / bare *no*), not revision *except*. Not antonymy (*the opposite of X*) — other than the named/listed only.
 
 **Under [question](questions.md#interrogative-force) force:** these forms are **fill-asks** (content questions) — full tables, multi-gap **fill-all**, and answer shape: **[questions.md](questions.md#fill-ask-r)**. Ordinary negation is plain **u** ([negation](#negation-u)), not a separate `/h/` root. NPI-flavored *anything* (if needed later) is still not `zor` / `vor` / `xor` themselves — those are free-choice, not negative-polarity markers. *What’s wrong?* / *something’s amiss* is **not** this series — leftover lexicon (`/h/` or other root) if needed.
 
-**-r** is a **whole-fence** join (`zar` / `var` / `xar` alone, or with conjuncts), same placement rules as `zam` / `vam` / `xam`. Do not write `zam A zar B` or `vam A var B` as a mid-chain extender.
+**-r** is a **whole-fence** join (`zar` / `var` / `xar` alone, or with conjuncts), same placement rules as `zam` / `vam` / `xam`. Do not write `A zam B zar` or `A vam B var` as a mid-chain extender.
 
 ### Rank join (**e** / **ae** / **oe** / **ue**)
 <a id="ranked-conjunction-e"></a>
@@ -116,11 +116,11 @@ Mnemonic: **-r** = member not named; vowel = frame (**a** = inventory existence;
 
 English glosses still vary by frame — *prefer A over B*, or *A, else B* — but that **preference vs contingency** contrast is read from context (or marked elsewhere with `/h/`), **not** by a different ending. **oe** marks exclusive realization along a ladder; **ue** flips spoken order vs preference (not empty-allowed).
 
-**-l** / **-m** / **-n** on **e** / **ae** / **oe** / **ue** are the same closure / named (phrase `/z/` `/d/` `/b/` `/w/`) or soft (**clause** `/x/` only) senses as on **a** / **o** / **u** / **ao** / **ua** / **uo**. VP `/v/`…**-n** spellings are [join-act verbs](special-vocabulary.md#join-act-verbs); `/ɡ/` `/h/`…**-n** are [join-relations](special-vocabulary.md#join-relations) — not soft joins. Fence chains keep ranking from **spoken conjunct order** (`vel A B C` → *A ≻ B ≻ C*, closed; `vuel A B C` → *A ≺ B ≺ C* i.e. *C ≻ B ≻ A*; same with `vael`… / `voel`… / `xel`…).
+**-l** / **-m** / **-n** on **e** / **ae** / **oe** / **ue** are the same closure / named (phrase `/z/` `/d/` `/b/` `/w/`) or soft (**clause** `/x/` only) senses as on **a** / **o** / **u** / **ao** / **ua** / **uo**. VP `/v/`…**-n** spellings are [join-act verbs](special-vocabulary.md#join-act-verbs); `/ɡ/` `/h/`…**-n** are [join-relations](special-vocabulary.md#join-relations) — not soft joins. Fence chains keep ranking from **spoken conjunct order** (before the right-close join) (`A B C vel` → *A ≻ B ≻ C*, closed; `A B C vuel` → *A ≺ B ≺ C* i.e. *C ≻ B ≻ A*; same with `… vael` / `… voel` / `… xel`).
 
 | Ending | Form | Reading |
 |--------|------|---------|
-| **-l** | phrase: `zel` / `zael` / `zoel` / `zuel` (and `/d/` `/b/` `/ɡ/` `/w/` `/h/`); VP/clause: `vel` / `vael` / `voel` / `vuel` / `xel` / … | Closed: `zel A B` → *A ≻ B*; `zael A B` → *A tied with B* / equative with scale; `zoel A B C` → *A ≻ B ≻ C* (exclusive); `zuel A B` → *A ≺ B* |
+| **-l** | phrase: `zel` / `zael` / `zoel` / `zuel` (and `/d/` `/b/` `/ɡ/` `/w/` `/h/`); VP/clause: `vel` / `vael` / `voel` / `vuel` / `xel` / … | Closed: `A B zel` → *A ≻ B*; `A B zael` → *A tied with B* / equative with scale; `A B C zoel` → *A ≻ B ≻ C* (exclusive); `A B zuel` → *A ≺ B* |
 | **-m** | phrase: `zem` / `zaem` / `zoem` / `zuem` / …; VP/clause: `vem` / `vaem` / `voem` / `vuem` / … | Open twin of each closed form — others may exist; soft equative under **`zaem`** + scale |
 | **-n** | phrase named: `zen` / `zaen` / `zoen` / `zuen` / … under `/z/` `/d/` `/b/` `/w/`; clause soft: `xen` / `xaen` / `xoen` / `xuen` / …; VP: `ven` / … = [join-act verbs](special-vocabulary.md#join-act-verbs); `/ɡ/` `/h/`: `gen` / `hen` / … = [join-relations](special-vocabulary.md#join-relations) | Phrase: **`zen`** = named **unspecified** ranking; **`zaen`** = named **draw** / tie; **`zoen`** = named exclusive order; clause soft — see [soft **-n**](#soft-n-clause) |
 
@@ -130,7 +130,7 @@ English glosses still vary by frame — *prefer A over B*, or *A, else B* — bu
 <a id="comparative-shared-scale"></a>
 <a id="equatives"></a>
 
-Scalar comparison — ranked **`e` / `oe` / `ue`** + SHARED scale (*bigger than* / *the …-est* / bare **`oe`** empty superlative), **`ae`** + SHARED scale (*as … as*), distributive set **`a`** + SHARED `/ɡ/`, [collective](plurality.md#collective-ascription) **`a`** + SHARED `/ɡ/`…**-sh**, and measured differentials — lives in **[comparatives.md](comparatives.md)**. Number spans — **`a` / `e` / `ue` / `ua`** + SHARED **continuum** `/ɡ/` + two number endpoints (*between* / *from…to…* / outside) — live in **[numbers.md § Ranges](numbers.md#ranges)** (bare `zel z+3 z+5` stays preference, not a span). Fence morphology stays on this page; those pages are the source of truth for the scalar / span readings.
+Scalar comparison — ranked **`e` / `oe` / `ue`** + SHARED scale (*bigger than* / *the …-est* / bare **`oe`** empty superlative), **`ae`** + SHARED scale (*as … as*), distributive set **`a`** + SHARED `/ɡ/`, [collective](plurality.md#collective-ascription) **`a`** + SHARED `/ɡ/`…**-sh**, and measured differentials — lives in **[comparatives.md](comparatives.md)**. Number spans — **`a` / `e` / `ue` / `ua`** + SHARED **continuum** `/ɡ/` + two number endpoints (*between* / *from…to…* / outside) — live in **[numbers.md § Ranges](numbers.md#ranges)** (bare `z+3 z+5 zel` stays preference, not a span). Fence morphology stays on this page; those pages are the source of truth for the scalar / span readings.
 
 #### Focus and bare phrase-level
 <a id="focus-phrase"></a>
@@ -226,7 +226,7 @@ Under `/h/` / `/w/`, only the [defined core](restrictors.md) uses circumstance g
 
 **…an** is **bare-only** on the phrase fence under **`/z/` `/d/` `/b/` `/w/`** (no defined one-conjunct reading). Under **`/ɡ/` `/h/`**, **`…an`** / **`…en`** / **`…aen`** / other **-n** join-vowel spellings are [join-relations](special-vocabulary.md#join-relations) (unary `/b/`), not named empty/focus joins. **…ul** / **…um** / **…un** are defined at **all** arities where still joins (bare *no*; focus *not X*; multi *none of*) — see [negation](#negation-u): **-l** / **-m** closed/open; phrase named **…un** on `/z/` `/d/` `/b/` `/w/`; clause soft **`xun`**; **`vun`** / **`gun`** / **`hun`** are content (join-act / join-relation), not bare soft *no*. **…en** bare = *unspecified ranking* (stock) under named prefixes; focus **…en** stays *X first* (stock). **…aen** bare = *it’s a draw* / *tie* under named prefixes. **…ar** / **…or** / **…er** / **…ur** are defined at **all** arities (bare / focus / multi) — see [unspecified-member **-r**](#unspecified-member-r-phrase).
 
-Examples (focus): `zem z-truthrl` → *truth first* / *mainly truth*; `zel z-truthrl` → *only truth matters*; `zael z-truthrl` → *truth tied for* / *equal priority to truth*; `zoem z-fixl` → *try a fix first*; `zoel z-fixl` → *only try a fix*; `zuem z-dessertl` → *dessert last*; `zuel z-dessertl` → *dessert last, period*; `zen z-safetyl` → *safety first* (stock / named unspecified ranking); `zer z-safetyl` → *safety as a priority*; `zal z-waterl` → *just water*; `zam z-Samn` → *Sam, for one*; `zol z-waterl` → *has to be water*; `zom z-coffeel` → *say, coffee* / *coffee, or skip*; `zual z-teal` → *everything but tea* (not *every tea* — that is bare `zual g-teal`); `zuol z-coffeel` → *anything but coffee*; `zaol z-waterl` → *water’ll do*; `zaom z-waterl` → *at least water*; `zul z-Samn` → *not Sam*; `gum g-bigl` → *not big (among denials)*; `zun z-Samn` → *not Sam* (stock / conventional denial); `gul g-bigl` → *not big*; `zar z-personl` → *some (unknown) person*; `zor z-personl` → *any person*; `zur z-contractl` → *something other than the contract*.
+Examples (focus): `z-truthrl zem` → *truth first* / *mainly truth*; `z-truthrl zel` → *only truth matters*; `z-truthrl zael` → *truth tied for* / *equal priority to truth*; `z-fixl zoem` → *try a fix first*; `z-fixl zoel` → *only try a fix*; `z-dessertl zuem` → *dessert last*; `z-dessertl zuel` → *dessert last, period*; `z-safetyl zen` → *safety first* (stock / named unspecified ranking); `z-safetyl zer` → *safety as a priority*; `z-waterl zal` → *just water*; `z-Samn zam` → *Sam, for one*; `z-waterl zol` → *has to be water*; `z-coffeel zom` → *say, coffee* / *coffee, or skip*; `z-teal zual` → *everything but tea* (not *every tea* — that is bare `zual g-teal`); `z-coffeel zuol` → *anything but coffee*; `z-waterl zaol` → *water’ll do*; `z-waterl zaom` → *at least water*; `z-Samn zul` → *not Sam*; `g-bigl gum` → *not big (among denials)*; `z-Samn zun` → *not Sam* (stock / conventional denial); `g-bigl gul` → *not big*; `z-personl zar` → *some (unknown) person*; `z-personl zor` → *any person*; `z-contractl zur` → *something other than the contract*.
 
 Examples (bare): `zal` → *nothing* / *nobody*; `zam` → *nothing comes to mind*; `zan` → *null* / *void*; `zol` → *no options* / *we’re stuck*; `zom` → *I got no pick* / *skipping is fine*; `zual` → *everything* / *everyone*; `zual g-catl` → *every cat* ([generics](#universals-domains-generics)); `zuam g-catl` → soft *every cat that comes to mind*; `zuol` → *anything (goes)*; `zaol` → *all set*; `zaom` → *nothing I need*; `zul` → *no*; `zum` → *no from me*; `zun` → *no* (stock / conventional denial label); `zar` → *something* / *someone*; `zor` → *anything* / *anyone*; `zer` → *whatever’s most important*; `zur` → *something else* / *someone else*; `zel` → *unspecified ranking*; `zem` → *I don’t have a ranking*; `zael` → *it’s a draw* / *tie*; `zaem` → *probably a tie*; `zaen` → *it’s a draw* (stock); `zoem` → *not sure where to start*; `zoel` → *do nothing* / *don’t bother*; `zoel g-bigl` → *there is no biggest*; `zoem g-bigl` → *no biggest comes to mind*; `zuel` → *unspecified ranking (ascending)*; `zen` → *unspecified ranking* (stock). Same under `/d/` `/b/` `/ɡ/` (`dal`, `gam`, `zar`, `zor`, `zer`, `zur`, `zul`, `zun`, …). Under `/h/` / `/w/`, only the [defined core](restrictors.md) applies (`hal` → *never*; `hual` → *always*; `har` → *sometime*; `hael` → tied occasions — …) — not these entity/property emptiness readings.
 
@@ -240,15 +240,16 @@ Do not confuse prefixed **…em** / **…el** / **…en** / **…er** / **…al*
   | **-l** (`zol` / `vol` / `xol` / …) | pick **exactly one** — empty **not** allowed | forced choice, partitions, instructions |
   | **-m** (`zom` / `vom` / `xom` / …) | pick **at most one** — *or none* / empty-allowed; other exclusives may exist | offers, soft menus, permissions |
   | **-n** | named/conventional (phrase) or soft (clause) exclusive bundle — completeness / softness as usual; **not** an automatic empty-allowed bit (use **-om** when skip must be explicit). Soft **`xon`** = uncertain alternatives. VP **`von`** is a [join-act verb](special-vocabulary.md#join-act-verbs) (*chooses as the one choice*), not a soft join | stock xor labels; soft clause `xon` |
-  Phrase/VP/clause same rule. Focus **`zol X`** = *has to be X*; focus **`zom X`** = *say, X* / *X, or skip*. Bare **`zol`** = *no options* / *stuck*; bare **`zom`** = *I got no pick* / skip is fine from the speaker’s side. Circumstance: **`hol`** = exclusive trigger (exactly one occasion); **`hom`** = exclusive trigger **or never** — [restrictors.md](restrictors.md). Nest if you need a rare mix (e.g. closed list but empty OK: `vol zol A B zal`).
+  Phrase/VP/clause same rule. Focus **`X zol`** = *has to be X*; focus **`X zom`** = *say, X* / *X, or skip*. Bare **`zol`** = *no options* / *stuck*; bare **`zom`** = *I got no pick* / skip is fine from the speaker’s side. Circumstance: **`hol`** = exclusive trigger (exactly one occasion); **`hom`** = exclusive trigger **or never** — [restrictors.md](restrictors.md). Nest if you need a rare mix (e.g. closed list but empty OK: `A B vol zol zal`).
 - **Inclusive (`ao`)** — one **or** more of the conjuncts may hold (English *and/or*). Built by combining **a** with **o**; bare **o** stays exclusive. **-m** on **ao** does **not** allow empty (still at least one).
 - **Negation (`u`)** — the listed conjuncts **fail** (none of them hold). Same vowel at every level (phrase / VP / clause); no separate `/h/` or `/w/` “not” root for ordinary polarity. Under **`/h/`** / **`/w/`**, **u** denies **applicability circumstances** (*not when…*), not manner polarity — see [restrictor use](restrictors.md).
   | Length | Reading |
   |--------|---------|
-  | **2+** (list) | *none of* the listed — `zul A B`, `vul A B`, `xul A B`; circumstance: `hul A B` → *not when A or B* |
-  | **1** (focus) | *not X* — `zul X`, `vul v-runl` (*didn’t run*), `gul g-bigl` (*not big*), `xul SENT` (*not SENT*); circumstance: `hul h-rainl` → *not when raining* |
+  | **2+** (list) | *none of* the listed — `A B zul`, `A B vul`, `A B xul`; circumstance: `A B hul` → *not when A or B* |
+  | **1** (focus) | *not X* — `zul X`, `v-runl vul` (*didn’t run*), `g-bigl gul` (*not big*), `SENT xul` (*not SENT*); circumstance: `h-rainl hul` → *not when raining* |
   | **0** (bare) | bare *no* — `zul` / `vul` / `xul` (closed); open twin **…um**; phrase named **…un**; soft clause **`xun`**. VP **`vun`** is a [join-act verb](special-vocabulary.md#join-act-verbs) (*denies / refuses*), not bare soft *no*. Contrast bare **…al** (*nothing* / *nobody* as empty inventory) and bare **…oel** (*do nothing* as empty exclusive triage). Circumstance: bare **`hal`** = *never*; bare **`hual`** = *always*; bare **`hul` / `hum`** are **undefined** under `/h/` / `/w/` — use `xul` / `vul` / `zul` for bare *no*. Polar answer particles (**`juel`** / *false*, **`juol`** / **`jual`**, …) are `/j/` interjections — [yes/no polarity](questions.md#yes-no-polarity) — not this join. |
-  **-l** vs **-m** mark whether the denial is limited to what’s named (**…ul**) or leaves room for further denials (**…um**); phrase **-n** (`zun` / …) names a conventional *none of* / denial bundle (all arities); clause soft **-n** (`xun`) = soft / reconstructed denial. **-r** on **u** is *something else* / *someone else* (other than), not *not* — see [unspecified-member](#unspecified-member-r-phrase). Prefixed **`zul` / `vul` / …** are **not** revision **`ul` / `um`** (*A except B*). Nest fences for scope: `vul val A B` → ¬(A ∧ B); `val vul A vul B` → (¬A) ∧ (¬B).
+  **-l** vs **-m** mark whether the denial is limited to what’s named (**…ul**) or leaves room for further denials (**…um**); phrase **-n** (`zun` / …) names a conventional *none of* / denial bundle (all arities); clause soft **-n** (`xun`) = soft / reconstructed denial. **-r** on **u** is *something else* / *someone else* (other than), not *not* — see [unspecified-member](#unspecified-member-r-phrase). Prefixed **`zul` / `vul` / …** are **not** revision **`ul` / `um`** (*A except B*).
+  **Distribution (not De Morgan):** Negation over a join is **distributive** — it pushes into each conjunct and **keeps the same join vowel**. So ¬(A ∧ B) = (¬A) ∧ (¬B), and ¬(A ∨ B) = (¬A) ∨ (¬B). Clarity does **not** flip *and*↔*or* under negation (classical De Morgan). Flat multi **`…ul`** already reads as *none of* the listed (= each fails, under an *and*-of-denials frame). Nesting the same ideas: `A B val vul` → *not (A and B)* = *(¬A) ∧ (¬B)*; `A B vol vul` → *not (A or B)* = *(¬A) ∨ (¬B)*. Spelling each denial as its own conjunct (`A vul B vul val`) is equivalent when you want the distributed shape written out.
 - **Invert (`ua` / `uo` / `ue`)** — leading **u** on **a** / **o** / **e** flips the base join. Contrast plain **u** (negation) vs **u**-stacks (complement or reverse). **-m** on invert forms does **not** imply empty-allowed / *or none* — only that unlisted conjuncts may exist. Empty-allowed is bare **o** + **-m** only ([above](#empty-allowed-om)).
   - **`ua`** — everything but the listed (domain minus the conjuncts); with SHARED kind → *every K (but …)* — [universals, domains, and generics](#universals-domains-generics).
   - **`uo`** — anything but the listed (free choice from the complement); SHARED kind narrows the menu the same way.
@@ -271,7 +272,7 @@ There are **no** bare (prefix-less) **joins**. Prefixed joins always have a PoS 
 | bare **`zual`** | *everything* / *everyone* — unrestricted domain (context) |
 | bare **`zual` + SHARED `/ɡ/`** | ***every K*** — closed universal of that kind (`zual g-catl` = *every cat*) |
 | bare **`zuam` + SHARED `/ɡ/`** | soft / speaker-side universal of K (`zuam g-catl` = *every cat that comes to mind* / *as far as I know, all cats*) |
-| **`zual` + SHARED `/ɡ/` + conjuncts** | *every K but* those exclusions (`zual g-drinkl z-teal z-coffeel` = *every drink but tea and coffee*) |
+| **`zual` + SHARED `/ɡ/` + conjuncts** | *every K but* those exclusions (`z-teal z-coffeel zual g-drinkl` = *every drink but tea and coffee*) |
 | focus **`zual X`** (no SHARED kind) | *everything but X* — **not** *every X* |
 | bare **`hual`** | *always* — occasion universal; [circumstance](restrictors.md) |
 
@@ -284,9 +285,9 @@ There are **no** bare (prefix-less) **joins**. Prefixed joins always have a PoS 
 
 Same under `/d/` `/b/` when the universal fills that slot (`dual g-catl` = *every cat* as object). Under `/h/` / `/w/`, **`hual` / `wual`** stay circumstance *always* ([restrictors.md](restrictors.md)); do not read entity-style *every K* under those prefixes.
 
-**Trap:** `zual z-catl` = *everything but the cat*. For *every cat*, put the kind in SHARED: `zual g-catl`.
+**Trap:** `z-catl zual` = *everything but the cat*. For *every cat*, put the kind in SHARED: `zual g-catl`.
 
-Examples: `zual g-catl` → *every cat*; `zuam g-studentl` → *every student that comes to mind*; `zual g-drinkl z-teal z-coffeel` → *every drink but tea and coffee*; `zual` → *everything* / *everyone*; `zual z-teal` → *everything but tea*; `hual` → *always* (habitual frame).
+Examples: `zual g-catl` → *every cat*; `zuam g-studentl` → *every student that comes to mind*; `z-teal z-coffeel zual g-drinkl` → *every drink but tea and coffee*; `zual` → *everything* / *everyone*; `z-teal zual` → *everything but tea*; `hual` → *always* (habitual frame).
 
 ---
 
@@ -310,12 +311,13 @@ Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om*
 <a id="phrase-level-coordination"></a>
 <a id="left-fence"></a>
 <a id="right-close"></a>
+<a id="join-scope-islands"></a>
 
-Phrase-level joins join **same-slot** conjuncts (single words or multi-word phrases) with a **fence**: prefixed join(s) plus optional **shared** modifiers **immediately after** each join. Same vowel series and endings as above (**-l** / **-m** on all phrase prefixes; **-n** named on **`/z/` `/d/` `/b/` `/w/`** only — `/ɡ/` `/h/` **-n** = [join-relations](special-vocabulary.md#join-relations); **-r** on **a** / **o** / **e** / **u** for [unspecified-member](#unspecified-member-r-phrase); not plural **-sh**). Slots differ only in **which prefix** the join takes and **what counts as a conjunct**. Flat lists use one fence; nested joins use [fence nesting](#fence-nesting). **Pure infix is illegal** (`A zam B zal C`).
+Phrase-level joins join **same-slot** conjuncts (single words or multi-word phrases) with a **right-close fence**: conjuncts first, then the prefixed join, then optional **shared** modifiers **immediately after** the join. Same vowel series and endings as above (**-l** / **-m** on all phrase prefixes; **-n** named on **`/z/` `/d/` `/b/` `/w/`** only — `/ɡ/` `/h/` **-n** = [join-relations](special-vocabulary.md#join-relations); **-r** on **a** / **o** / **e** / **u** for [unspecified-member](#unspecified-member-r-phrase); not plural **-sh**). Slots differ only in **which prefix** the join takes and **what counts as a conjunct**. Flat lists use one fence; nested joins use [fence nesting](#fence-nesting). **Left fences are illegal.** **Pure infix is illegal** (`A zam B zal C`).
 
-**Fence — juxtaposed conjuncts.** No continue particle between conjuncts (`zam A B`, not `zam A zar B` for a flat *and*). `zar` / `zor` / `zer` / `zur` are whole-fence unspecified-member joins, not mid-chain extenders.
+**Fence — juxtaposed conjuncts.** No continue particle between conjuncts (`A B zam`, not mid-chain `zar` for a flat *and*). `zar` / `zor` / `zer` / `zur` are whole-fence unspecified-member joins, not mid-chain extenders.
 
-**Placement:** **Left fence** (join before the conjuncts) is **preferred**. **Right close** (join after the conjuncts) is allowed for **style or comedy**. Shared modifiers stay **right after the join** in either placement.
+**Placement:** **Right close only** (join after the conjuncts). Shared modifiers stay **immediately after** the join. To limit which same-slot material a join absorbs when other same-slot words sit nearby, use a [scope island](spans.md#adjunct-scope-islands) with the join **inside** — [join scope islands](#join-scope-islands-rules).
 
 ## Forms
 
@@ -336,134 +338,129 @@ The prefix on the join **must match** every conjunct head (`/z/` with `/z/`, `/�
 
 ## Shape
 
-**Left fence** (preferred):
-
-```
-P-JOIN ( SHARED )* PHRASE PHRASE ( PHRASE )*  ← two or more
-P-JOIN ( SHARED )* PHRASE             ← focus (allowed forms)
-P-JOIN ( SHARED )*                 ← bare (allowed forms)
-```
-
-**Right close** (style / comedy):
+**Right close only:**
 
 ```
 PHRASE PHRASE ( PHRASE )* P-JOIN ( SHARED )*  ← two or more
 PHRASE P-JOIN ( SHARED )*             ← focus (allowed forms)
-P-JOIN ( SHARED )*                 ← bare (same as left when empty)
+P-JOIN ( SHARED )*                 ← bare (allowed forms)
 ```
 
-- **P-JOIN** — one of the prefixed forms above (`zam`, `dol`, `bem`, `gam`, `wam`, `ham`, `zar`, `zor`, `zer`, `zur`, …). For a **flat** list, appears **only once**: either **before** all conjuncts (left) or **after** all conjuncts (right) — not between conjuncts. For **nested** lists, multiple fences stack — see [fence nesting](#fence-nesting). **Pure infix** (`A zam B zal C`) is illegal.
-- **SHARED** — optional material **immediately after** `P-JOIN` in either placement. **Always** scopes over the **whole coordinated phrase** (NP: ordinary `/ɡ/` / `/w/` / complex `/ɡ/`+`/b/`; AP: `/w/`; `/w/`-slot and `/h/`-slot joins: further same-slot material only if the lexicon allows stacking on the join as a unit). Shared ordinary `/ɡ/` / `/w/` here sit next to the fence (before the heads they grade on the left; after the list on the right) — the fence defines the host unit. Under ranked **`e` / `oe` / `ue`** on an NP slot (`/z/` `/d/` `/b/`), SHARED ordinary `/ɡ/` (+ `/w/`) is the [**comparison scale**](comparatives.md) (*bigger than* / superlative / bare **`oe`** empty superlative); bare **`e`** + scale = unspecified who’s top. Under **`ae`**, SHARED **scale** (gradable) `/ɡ/` is [**equative**](comparatives.md#equatives) (`zael g-bigl z-Samn z-Lean` = *Sam as big as Lea*). Under **`a`**, SHARED singular `/ɡ/` **distributes** over conjuncts (*both ADJ* when gradable) or is whole-phrase **bundle** description when non-scalar (`zam g-ofl b-Samn z-dogl z-catl` = *Sam’s (dog and cat)*); SHARED `/ɡ/`…**-sh** under **`a`** is [**collective**](plurality.md#collective-ascription) (*ADJ together*); SHARED under **`o` / `ao`** stays bundle description. Under invert **ua** / **uo**, SHARED `/ɡ/` is the **kind / domain** (*every K* / *any K but …*), not a descriptive bundle property — [universals, domains, and generics](#universals-domains-generics) (`zual g-catl` = *every cat*; `zual g-drinkl z-teal z-coffeel` = *every drink but tea and coffee*). With **exactly two number-word endpoints** under **`a` / `e` / `ue` / `ua`**, SHARED continuum `/ɡ/` is a [**numeric span**](numbers.md#ranges) (*between* / *from…to…* / outside); bare number pairs without that continuum stay ordinary coordination (e.g. `zel z+3 z+5` = preference). **Left-bound `gl-`** is **not** SHARED: after a left fence it binds only the **next** conjunct (see [Adjectives](language-reference.md#adjectives-ɡ)).
+- **P-JOIN** — one of the prefixed forms above (`zam`, `dol`, `bem`, `gam`, `wam`, `ham`, `zar`, `zor`, `zer`, `zur`, …). For a **flat** list, appears **once after** all conjuncts — not before them, not between conjuncts. For **nested** lists, multiple right closes stack — see [fence nesting](#fence-nesting). **Pure infix** (`A zam B zal C`) and **left fences** (`zam A B`) are illegal.
+- **SHARED** — optional material **immediately after** `P-JOIN`. **Always** scopes over the **whole coordinated phrase** (NP: ordinary `/ɡ/` / `/w/` / complex `/ɡ/`+`/b/`; AP: `/w/`; `/w/`-slot and `/h/`-slot joins: further same-slot material only if the lexicon allows stacking on the join as a unit). Shared ordinary `/ɡ/` / `/w/` sit after the list, after the join — the fence defines the host unit. Under ranked **`e` / `oe` / `ue`** on an NP slot (`/z/` `/d/` `/b/`), SHARED ordinary `/ɡ/` (+ `/w/`) is the [**comparison scale**](comparatives.md) (*bigger than* / superlative / bare **`oe`** empty superlative); bare **`e`** + scale = unspecified who’s top. Under **`ae`**, SHARED **scale** (gradable) `/ɡ/` is [**equative**](comparatives.md#equatives) (`z-Samn z-Lean zael g-bigl` = *Sam as big as Lea*). Under **`a`**, SHARED singular `/ɡ/` **distributes** over conjuncts (*both ADJ* when gradable) or is whole-phrase **bundle** description when non-scalar (`z-dogl z-catl zam g-ofl b-Samn` = *Sam’s (dog and cat)*); SHARED `/ɡ/`…**-sh** under **`a`** is [**collective**](plurality.md#collective-ascription) (*ADJ together*); SHARED under **`o` / `ao`** stays bundle description. Under invert **ua** / **uo**, SHARED `/ɡ/` is the **kind / domain** (*every K* / *any K but …*), not a descriptive bundle property — [universals, domains, and generics](#universals-domains-generics) (`zual g-catl` = *every cat*; `z-teal z-coffeel zual g-drinkl` = *every drink but tea and coffee*). With **exactly two number-word endpoints** under **`a` / `e` / `ue` / `ua`**, SHARED continuum `/ɡ/` is a [**numeric span**](numbers.md#ranges) (*between* / *from…to…* / outside); bare number pairs without that continuum stay ordinary coordination (e.g. `z+3 z+5 zel` = preference). **Left-bound `gl-`** is **not** SHARED: it binds only the **next** conjunct head it precedes (see [Adjectives](language-reference.md#adjectives-ɡ)) — never place `gl-` in the post-join SHARED slot expecting whole-phrase scope.
 - **PHRASE** — a conjunct: NP headed by `/z/`, `/d/`, or `/b/` (plus that head’s local `/ɡ/` / `/w/` / `/b/` material — default **after** the head, or [left-bound `gl-`](language-reference.md#adjectives-ɡ) **before** that head); AP headed by `/ɡ/` (plus contiguous `/b/`, further `/ɡ/` on that `/b/`, and local `/w/`); or a single `/w/` / `/h/` word (plus `/h/`’s contiguous `/b/` when complex). Local right-bound modifiers stay **inside** their conjunct, after that conjunct’s head; local `gl-` sits immediately before that head.
-- Two conjuncts (left): `P-JOIN PHRASE PHRASE`. Two (right): `PHRASE PHRASE P-JOIN`. Three or more: same pattern with more `PHRASE` items on the conjunct side of `P-JOIN`.
-- **Focus phrase** — **…em** / **…el** / **…oem** / **…oel** / **…uem** / **…uel** / **…en** / **…er** / **…al** / **…am** / **…ol** / **…om** / **…ual** / **…uam** / **…uol** / **…uom** / **…aol** / **…aom** / **…ul** / **…um** / **…un** / **…ar** / **…or** / **…ur**: `P-JOIN PHRASE` or `PHRASE P-JOIN` — see [focus and bare](#focus-phrase), [negation](#negation-u), and [unspecified-member **-r**](#unspecified-member-r-phrase).
-- **Bare phrase** — those same forms, plus **…an**: `P-JOIN` alone (optional `SHARED`) — the join fills the slot with the [bare reading](#bare-phrase). Left and right placement coincide when there are no conjuncts. A following matching-role head is still absorbed as a conjunct (so bare is only when no conjunct follows / precedes).
+- Two conjuncts: `PHRASE PHRASE P-JOIN`. Three or more: more `PHRASE` items before `P-JOIN`.
+- **Focus phrase** — **…em** / **…el** / **…oem** / **…oel** / **…uem** / **…uel** / **…en** / **…er** / **…al** / **…am** / **…ol** / **…om** / **…ual** / **…uam** / **…uol** / **…uom** / **…aol** / **…aom** / **…ul** / **…um** / **…un** / **…ar** / **…or** / **…ur**: `PHRASE P-JOIN` (optional `SHARED` after) — see [focus and bare](#focus-phrase), [negation](#negation-u), and [unspecified-member **-r**](#unspecified-member-r-phrase).
+- **Bare phrase** — those same forms, plus **…an**: `P-JOIN` alone (optional `SHARED`) — the join fills the slot with the [bare reading](#bare-phrase). A matching-role head **before** the join is absorbed as a conjunct (so bare is only when no conjunct precedes).
 - All other phrase joins need **two or more** conjuncts.
-- Single-word siblings: `zam z-dogl z-catl` or `z-dogl z-catl zam` (*a dog and a cat* — open).
-- Unspecified-member: `zar` → *something*; `zar z-personl` / `z-personl zar` → *some (unknown) person*; `zar z-teal z-coffeel` → *some one among tea and coffee*; `zor` → *anything*; `zor z-personl` → *any person*; `zor z-teal z-coffeel` → *any of tea or coffee*; `zer` → *whatever’s most important*; `zer z-safetyl` → *safety as a priority*; `zer z-teal z-coffeel` → *whichever of tea or coffee ranks higher*; `zur` → *something else*; `zur z-contractl` → *something other than the contract*; `zur z-costl z-riskl` → *something other than cost and risk*.
-- Negation: `zul z-Samn` → *not Sam*; `gul g-bigl` → *not big*; `zul z-teal z-coffeel` → *none of tea or coffee*; `zun z-teal z-coffeel` → *none of tea or coffee* (named/conventional denial bundle); `zul` → *no*; `zum` → *no from me*; `zun` → *no* (stock). Circumstance denial: `hul h-rainl` → *not when raining* ([restrictors.md](restrictors.md)).
+- Single-word siblings: `z-dogl z-catl zam` (*a dog and a cat* — open).
+- Unspecified-member: `zar` → *something*; `z-personl zar` → *some (unknown) person*; `z-teal z-coffeel zar` → *some one among tea and coffee*; `zor` → *anything*; `z-personl zor` → *any person*; `z-teal z-coffeel zor` → *any of tea or coffee*; `zer` → *whatever’s most important*; `z-safetyl zer` → *safety as a priority*; `z-teal z-coffeel zer` → *whichever of tea or coffee ranks higher*; `zur` → *something else*; `z-contractl zur` → *something other than the contract*; `z-costl z-riskl zur` → *something other than cost and risk*.
+- Negation: `z-Samn zul` → *not Sam*; `g-bigl gul` → *not big*; `z-teal z-coffeel zul` → *none of tea or coffee*; `z-teal z-coffeel zun` → *none of tea or coffee* (named/conventional denial bundle); `zul` → *no*; `zum` → *no from me*; `zun` → *no* (stock). Circumstance denial: `h-rainl hul` → *not when raining* ([restrictors.md](restrictors.md)).
 
-**Rank joins** (`zel` / `zael` / `zoel` / `zuel`, `zem` / …, `zen` / …): **`e` / `oe` / `ue`** take ranking from **spoken conjunct order** (before a right-close join) — **e** / **oe** earlier≻later; **ue** later≻earlier — see [rank join](#ranked-conjunction-e). **`ae`** = tie / equal rank (no order) or [equative](comparatives.md#equatives) with SHARED scale. SHARED `/ɡ/` on an NP ranked fence = [comparison scale](comparatives.md) under **`e` / `oe` / `ue`** (list = comparative; focus **`e`** = superlative; bare **`oe`** + scale = empty superlative; bare **`e`** + scale = unspecified top). Focus / bare without that scale: [focus and bare](#focus-phrase). Set **`a`** + SHARED `/ɡ/` = distributive / bundle / [collective](plurality.md#collective-ascription) (`…-sh`).
+**Rank joins** (`zel` / `zael` / `zoel` / `zuel`, `zem` / …, `zen` / …): **`e` / `oe` / `ue`** take ranking from **spoken conjunct order** (before the right-close join) — **e** / **oe** earlier≻later; **ue** later≻earlier — see [rank join](#ranked-conjunction-e). **`ae`** = tie / equal rank (no order) or [equative](comparatives.md#equatives) with SHARED scale. SHARED `/ɡ/` on an NP ranked fence = [comparison scale](comparatives.md) under **`e` / `oe` / `ue`** (list = comparative; focus **`e`** = superlative; bare **`oe`** + scale = empty superlative; bare **`e`** + scale = unspecified top). Focus / bare without that scale: [focus and bare](#focus-phrase). Set **`a`** + SHARED `/ɡ/` = distributive / bundle / [collective](plurality.md#collective-ascription) (`…-sh`).
+
+### Join scope islands
+<a id="join-scope-islands-rules"></a>
+
+A join’s lookback absorb normally takes every matching-role head immediately before it. [Scope islands](spans.md#adjunct-scope-islands) **`^ … ^`** limit that stretch: the join particle stands **inside** the island and absorbs **only** matching-role material inside that island. Prosody / writing edges carry no meaning of their own; the inside join (and/or an inside `/h/`) is the binder.
+
+| Shape | Reading |
+|-------|---------|
+| `z-Samn ^ z-waterl zal ^ zam` | *Sam and (just water)* — outer open *and*; inner focus closed *and* |
+| `z-Samn ^ zal ^ zam` | *Sam and nothing* — outer open *and*; inner bare empty inventory |
+| `^ z-waterl zal ^` | *just water* alone in the slot (no outer join needed) |
+| `^ h-maybel z-A z-B zam ^` | *maybe (A and B)* — `/h/` and join may **share** one island |
+
+**Illegal:** same-slot material outside an island with **no** outer join tying it to the island unit — e.g. `z-A ^ z-B z-C zam ^` (A plus a joined unit, no join for A). One island per clause; no nesting of islands. Full binder rules: [spans.md](spans.md#adjunct-scope-islands).
+
 ### Scope fence (`P-JOIN`)
 <a id="scope-fence-p-coord"></a>
 <a id="scope-fence-p-join"></a>
 
-**Rule:** A modifier **immediately after** a phrase-level join (`zam`, `gam`, `dam`, …) modifies the **entire joined phrase** — whether that join is a left fence or a right close — when it uses ordinary (right-bound) `/ɡ/` / `/w/` morphology. **Left-bound `gl-`** in that same position binds only the **next** conjunct.
+**Rule:** A modifier **immediately after** a phrase-level join (`zam`, `gam`, `dam`, …) modifies the **entire joined phrase** when it uses ordinary (right-bound) `/ɡ/` / `/w/` morphology. **Left-bound `gl-`** does not sit in SHARED for whole-phrase scope.
 
 - Modifiers **after a conjunct head** (and before the next matching-role head) belong to that conjunct only.
-- Modifiers in the **SHARED** slot (ordinary `/ɡ/` / `/w/` / complex `/ɡ/`+`/b/`) scope over **all** conjuncts as one unit — as **distributive** property under **`a`** (gradable singular `/ɡ/` on each conjunct host), as [**collective**](plurality.md#collective-ascription) under **`a`** when that SHARED `/ɡ/` takes **-sh** (`zal g-heavylsh z-boxl z-cratel` = *heavy together*), or as bundle description under **`a`** (non-scalar) / **`o` / `ao`**, as [equative scale](comparatives.md#equatives) under **`ae`** when gradable, as **kind / domain** under invert **ua** / **uo** ([universals, domains, and generics](#universals-domains-generics)), as [comparison scale](comparatives.md) under ranked **`e` / `oe` / `ue`** on NP slots, or as [continuum](numbers.md#ranges) under **`a` / `e` / `ue` / `ua`** when the two conjuncts are compatible number endpoints. Comparison scale and continuum `/ɡ/` stay singular (no **-sh**).
-- On a **right close**, do **not** put further matching-role conjunct heads after `P-JOIN` / `SHARED`; the list of conjuncts is already complete to the left of `P-JOIN`.
+- Modifiers in the **SHARED** slot (ordinary `/ɡ/` / `/w/` / complex `/ɡ/`+`/b/`) scope over **all** conjuncts as one unit — as **distributive** property under **`a`** (gradable singular `/ɡ/` on each conjunct host), as [**collective**](plurality.md#collective-ascription) under **`a`** when that SHARED `/ɡ/` takes **-sh** (`z-boxl z-cratel zal g-heavylsh` = *heavy together*), or as bundle description under **`a`** (non-scalar) / **`o` / `ao`**, as [equative scale](comparatives.md#equatives) under **`ae`** when gradable, as **kind / domain** under invert **ua** / **uo** ([universals, domains, and generics](#universals-domains-generics)), as [comparison scale](comparatives.md) under ranked **`e` / `oe` / `ue`** on NP slots, or as [continuum](numbers.md#ranges) under **`a` / `e` / `ue` / `ua`** when the two conjuncts are compatible number endpoints. Comparison scale and continuum `/ɡ/` stay singular (no **-sh**).
+- Do **not** put further matching-role conjunct heads after `P-JOIN` / `SHARED`; the list of conjuncts is already complete to the left of `P-JOIN`.
 
-Contrast (left fence):
-
-- `zam z-dogl z-catl g-bigl` → *(dog) and (big cat)* — big follows the last head → last conjunct only
-- `zam g-ofl b-Samn z-dogl z-catl` → *Sam’s (dog and cat)* — non-scalar SHARED → whole phrase (bundle)
-- `zal g-bigl z-dogl z-catl` → *(big dog) and (big cat)* — scale SHARED under **`a`** → distributive
-- `zal g-heavylsh z-boxl z-cratel` → *the box and the crate are heavy together* — SHARED `/ɡ/`…**-sh** under **`a`** → [collective](plurality.md#collective-ascription)
-- `zael g-bigl z-dogl z-catl` → *the dog is as big as the cat* — scale SHARED under **`ae`** → [equative](comparatives.md#equatives)
-- `zam gl-bigl z-dogl z-catl` → *(big dog) and (cat)* — left-bound `gl-` after the fence → next conjunct only (not SHARED)
-- `zam z-dogl g-bigl z-catl` → *(big dog) and (cat)* — big local to dog (right-bound)
-- `zam z-dogl gl-redl z-catl` → *(dog) and (red cat)* — left-bound local to the following head
-- `gam w-veryl g-happyl g-proudl` → *very (happy and proud)* — `/w/` after `gam` grades the whole AP join
-- `gam g-happyl w-veryl g-proudl` → *(very happy) and (proud)* — `/w/` local to first `/ɡ/`
-
-Right close (same SHARED rule after the join):
+Examples:
 
 - `z-dogl z-catl zam` → *a dog and a cat* (open) — join closes the list
-- `z-dogl z-catl zam g-ofl b-Samn` → *Sam’s (dog and cat)* — non-scalar shared after right-close `zam`
-- `z-dogl z-catl zal g-bigl` → *(big dog) and (big cat)* — distributive SHARED under **`a`** (right close)
-- `z-dogl z-catl zael g-bigl` → *dog as big as cat* ([equative](comparatives.md#equatives); right close)
+- `z-dogl z-catl zam g-ofl b-Samn` → *Sam’s (dog and cat)* — non-scalar SHARED after `zam`
+- `z-dogl z-catl zal g-bigl` → *(big dog) and (big cat)* — distributive SHARED under **`a`**
+- `z-dogl z-catl zael g-bigl` → *dog as big as cat* ([equative](comparatives.md#equatives))
+- `z-boxl z-cratel zal g-heavylsh` → *heavy together* — [collective](plurality.md#collective-ascription)
 - `z-dogl g-bigl z-catl zam` → *(big dog) and (cat)* — big local to dog; `zam` closes
-- `g-happyl g-proudl gam w-veryl` → *very (happy and proud)* — shared `/w/` after right-close `gam`
+- `z-dogl gl-redl z-catl zam` → *(dog) and (red cat)* — left-bound local to the following head
+- `g-happyl g-proudl gam w-veryl` → *very (happy and proud)* — shared `/w/` after `gam`
+- `g-happyl w-veryl g-proudl gam` → *(very happy) and (proud)* — `/w/` local to first `/ɡ/`
 
-Complex adjective on an NP bundle: `zam g-ofl b-Samn z-dogl z-catl` or `z-dogl z-catl zam g-ofl b-Samn` → *Sam’s (dog and cat)* — the complex `/ɡ/`+`/b/` in SHARED owns the whole join.
+Complex adjective on an NP bundle: `z-dogl z-catl zam g-ofl b-Samn` → *Sam’s (dog and cat)*.
 
 ### End of list
 
-- **Left fence — same-prefix absorb** — after `P-JOIN` (and any `SHARED`), every following matching-role head (plus its local modifiers) is a **conjunct** until the list ends. For AP `/ɡ/` on one host, that means you cannot stack an extra non-coordinated `/ɡ/` on the same noun after a `gam`… join; put further description in another sentence, or include it as another conjunct. Same absorb rule for `/w/` and `/h/` left-fence [circumstance](restrictors.md) chains (conjuncts = circumstance units, not co-manner stacks).
-- **Right close — lookback absorb** — matching-role heads (plus local modifiers) **immediately before** `P-JOIN` are the conjuncts; clause-level floating `/h/` inside that stretch is transparent (below). After right-close `P-JOIN` / `SHARED`, the coordinated phrase is finished — a later matching-role head is **not** another conjunct of this list.
+- **Lookback absorb** — matching-role heads (plus local modifiers) **immediately before** `P-JOIN` are the conjuncts, unless a [scope island](#join-scope-islands-rules) narrows the stretch; clause-level floating `/h/` inside that stretch is transparent (below). After `P-JOIN` / `SHARED`, the coordinated phrase is finished — a later matching-role head is **not** another conjunct of this list.
 - **Leaving the role** — a following word with a **different** clause/role prefix that is not local modifier material (and not `SHARED` after the fence) ends the list (e.g. after a `/z/` join, `/d/`, `/v/`, `/h/` as clause adverb, `/j/`, `/x/`, …).
-- **Floating `/h/` inside an NP/AP/`/b/` join** — clause-level `/h/` (simple or `/h/`+`/b/`) is **transparent**: it does not end the list and is not a conjunct; a later matching-role head is still a conjunct (left absorb) or still part of the lookback stretch (right close). (VP-chain `/h/` scope is different — see [VP-level](#vp-level-coordination).)
+- **Floating `/h/` inside an NP/AP/`/b/` join** — clause-level `/h/` (simple or `/h/`+`/b/`) is **transparent**: it does not end the list and is not a conjunct; a later matching-role head is still part of the lookback stretch. (VP-chain `/h/` scope is different — see [VP-level](#vp-level-coordination).)
 
 ### Examples (schematic)
 
 **NP**
 
-- `zam z-dogl g-bigl z-catl g-redl` — *(big dog) and (red cat)* — open; each color inside its conjunct
-- `z-dogl g-bigl z-catl g-redl zam` — same reading with right close
-- `zal z-dogl g-bigl z-birdl z-catl g-redl` — *(big dog), (bird), and (red cat)* — closed three-way NP list
-- `zam z-bookl g-onl b-tablel z-penl g-onl b-deskl` — *(book on the table) and (pen on the desk)*
-- `bam b-tablel b-shelfl` under one complex adjective — *on (the table and the shelf)*
-- `dam d-dogl g-bigl d-catl` — *(big dog) and (cat)* as **object** (open)
-- `dam g-ofl b-Samn d-dogl d-catl` — *Sam’s (dog and cat)* as object — non-scalar SHARED after the left fence
-- `d-dogl d-catl dam g-ofl b-Samn` — same shared bundle reading with right close
-- `zal g-bigl d-dogl d-catl` — *(big dog) and (big cat)* as object (distributive **`a`**)
-- `zael g-bigl d-dogl d-catl` — *dog as big as cat* as object ([equative](comparatives.md#equatives))
-- `zel z-teal z-coffeel z-waterl` — *tea ≻ coffee ≻ water* (closed ranked; exclusivity not claimed; prefer/else from context)
-- `zel g-bigl z-Samn z-Lean` — *Sam is bigger than Lea* (closed comparative; SHARED `/ɡ/` = scale — [comparatives](comparatives.md))
-- `zael g-bigl z-Samn z-Lean` — *Sam is as big as Lea* ([equative](comparatives.md#equatives))
-- `zal g-bigl z-Samn z-Lean` — *Sam and Lea are big* (distributive **`a`** — not equative)
-- `zal g-heavylsh z-boxl z-cratel` — *the box and the crate are heavy together* ([collective](plurality.md#collective-ascription))
-- `zael z-teal z-coffeel` — *tea tied with coffee* / *equal rank* (no scale)
-- `zel z+3 z+5` — *3 ≻ 5* (preference; bare numbers, no span)
-- `zal g-agel z+3 z+5` / `zar g-spanl z+3 z+5` — number range / in-span unspecified — [numbers.md § Ranges](numbers.md#ranges)
-- `zel g-bigl z-Samn` — *Sam is the biggest (of all)* (focus **superlative** on scale *big*)
-- `zel w-muchl g-bigl z-Samn z-Lean` — *Sam is much bigger than Lea*
-- `zel g-talll b-inchl g+2 z-Samn z-Lean` — *Sam is two inches taller than Lea* — [measure phrases](numbers.md#measure-phrases)
-- `zuel g-bigl z-Samn z-Lean` — *Sam is less big than Lea* (closed reverse on scale)
-- `zoel z-burgerl z-chickenl z-hot-dogl` — *burger ≻ chicken ≻ hot dog* (closed **exclusive** ranked — pick one, in that order)
-- `zuel z-appetizerl z-mainl z-dessertl` — *appetizer ≺ main ≺ dessert* (closed **rank reversal** — dessert preferred most)
-- `zual z-teal z-coffeel` — *everything but tea and coffee* (closed invert-**a**)
-- `zual g-catl` — *every cat* (bare **ua** + SHARED kind — [generics](#universals-domains-generics))
-- `zuam g-studentl` — *every student that comes to mind* (open soft universal + SHARED kind)
-- `zual g-drinkl z-teal z-coffeel` — *every drink but tea and coffee* (SHARED domain + exclusion conjuncts)
-- `zuom z-helpl z-moneyl` — *anything but help or money* (open invert-**o**)
-- `zem z-journall z-candlesh z-socksh` — *journal ≻ candles ≻ socks* (open ranked wishlist — bare **e**)
-- `zael z-journall z-candlesh z-socksh` — *journal, candles, and socks tied* / *equal priority* (no scale)
-- `z-teal z-coffeel z-waterl zel` — same neutral ranked ladder with right close
-- `zem z-dogl g-bigl z-catl g-redl` — *(big dog) ≻ (red cat)* (open ranked, exclusivity unmarked)
-- `zem z-truthrl` — *truth first* (focus open ranked); `zel z-truthrl` — *only truth matters* (focus closed); `zel g-bigl z-Samn` — *Sam is the biggest* (focus superlative + SHARED scale); `zem g-bigl z-Samn` — open superlative (*biggest among those that come to mind*); `zoem z-fixl` — *try a fix first* (focus open exclusive ranked); `zoel z-fixl` — *only try a fix* (focus closed exclusive ranked); `zuem z-dessertl` — *dessert last*; `zuel z-dessertl` — *dessert last, period*; `zen z-safetyl` — *safety first* (focus named ranked)
-- `zal z-waterl` — *just water* (focus closed *and*); `zam z-Samn` — *Sam, for one* (focus open *and*); `zol z-waterl` — *has to be water* (focus closed xor); `zom z-coffeel` — *say, coffee* / *coffee, or skip* (focus open xor, empty-allowed); `zual z-teal` — *everything but tea* (**not** *every tea* — use `zual g-teal` for *every tea*); `zuol z-coffeel` — *anything but coffee*; `zaol z-waterl` — *water’ll do* (focus closed *and/or*); `zaom z-waterl` — *at least water* (focus open *and/or*); `zar z-personl` — *some (unknown) person*; `zor z-personl` — *any person*; `zer z-safetyl` — *safety as a priority*; `zul z-Samn` — *not Sam*; `zun z-Samn` — *not Sam* (stock); `zur z-contractl` — *something other than the contract*; `z-personl zar` — same with right close
-- `zol z-teal z-coffeel` — *tea or coffee* (exactly one; closed); `zom z-teal z-coffeel` — *tea or coffee, or neither* (at most one; open, empty-allowed)
-- `zar z-teal z-coffeel` — *some one among tea and coffee*; `zor z-burgerl z-chickenl` — *any of burger or chicken*; `zer z-teal z-coffeel` — *whichever of tea or coffee ranks higher*; `zul z-teal z-coffeel` — *none of tea or coffee*; `zun z-teal z-coffeel` — *none of tea or coffee* (named denial); `zur z-costl z-riskl` — *something other than cost and risk*
-- `zal` — *nothing* / *nobody* (bare closed *and*); `zam` — *nothing comes to mind* (bare open *and*); `zan` — *null* / *void* (bare named); `zar` — *something* / *someone*; `zol` — *no options* / *we’re stuck* (bare closed xor); `zom` — *I got no pick* / *skipping is fine* (bare open xor); `zual` — *everything* / *everyone*; `zual g-catl` — *every cat* ([generics](#universals-domains-generics)); `zuam g-catl` — soft *every cat that comes to mind*; `zuol` — *anything (goes)*; `zor` — *anything* / *anyone*; `zaol` — *all set* (bare closed *and/or*); `zaom` — *nothing I need* (bare open *and/or*); `zul` — *no* (bare closed negation); `zum` — *no from me* (bare open negation); `zun` — *no* (bare named/conventional denial); `zur` — *something else*; `zel` — *unspecified ranking* (bare closed **e**); `zel g-bigl` — *unspecified who’s biggest*; `zem` — *I don’t have a ranking* (bare open **e**); `zer` — *whatever’s most important*; `zer g-bigl` — *whatever ranks highest on big*; `zael` — *it’s a draw* / *tie* (bare **ae**); `zaem` — *probably a tie*; `zaen` — *it’s a draw* (stock); `zoem` — *not sure where to start* (bare open **oe**); `zoel` — *do nothing* (bare closed **oe** without scale); `zoel g-bigl` — *there is no biggest* (bare empty superlative); `zoem g-bigl` — *no biggest comes to mind*; `zuel` — *unspecified ranking (ascending)*; `zen` — *unspecified ranking* (stock / named **e**)
+- `z-dogl g-bigl z-catl g-redl zam` — *(big dog) and (red cat)* — open; each color inside its conjunct
+- `z-dogl g-bigl z-birdl z-catl g-redl zal` — *(big dog), (bird), and (red cat)* — closed three-way NP list
+- `z-bookl g-onl b-tablel z-penl g-onl b-deskl zam` — *(book on the table) and (pen on the desk)*
+- `b-tablel b-shelfl bam` under one complex adjective — *on (the table and the shelf)*
+- `d-dogl g-bigl d-catl dam` — *(big dog) and (cat)* as **object** (open)
+- `d-dogl d-catl dam g-ofl b-Samn` — *Sam’s (dog and cat)* as object — non-scalar SHARED
+- `d-dogl d-catl zal g-bigl` — *(big dog) and (big cat)* as object (distributive **`a`**)
+- `d-dogl d-catl zael g-bigl` — *dog as big as cat* as object ([equative](comparatives.md#equatives))
+- `z-teal z-coffeel z-waterl zel` — *tea ≻ coffee ≻ water* (closed ranked)
+- `z-Samn z-Lean zel g-bigl` — *Sam is bigger than Lea* ([comparatives](comparatives.md))
+- `z-Samn z-Lean zael g-bigl` — *Sam is as big as Lea* ([equative](comparatives.md#equatives))
+- `z-Samn z-Lean zal g-bigl` — *Sam and Lea are big* (distributive **`a`**)
+- `z-boxl z-cratel zal g-heavylsh` — *heavy together* ([collective](plurality.md#collective-ascription))
+- `z-teal z-coffeel zael` — *tea tied with coffee* (no scale)
+- `z+3 z+5 zel` — *3 ≻ 5* (preference)
+- `z+3 z+5 zal g-agel` / `z+3 z+5 zar g-spanl` — [numbers.md § Ranges](numbers.md#ranges)
+- `z-Samn zel g-bigl` — *Sam is the biggest* (focus superlative)
+- `z-Samn z-Lean zel w-muchl g-bigl` — *Sam is much bigger than Lea*
+- `z-Samn z-Lean zel g-talll b-inchl g+2` — [measure phrases](numbers.md#measure-phrases)
+- `z-Samn z-Lean zuel g-bigl` — *Sam is less big than Lea*
+- `z-burgerl z-chickenl z-hot-dogl zoel` — exclusive ranked menu
+- `z-appetizerl z-mainl z-dessertl zuel` — rank reversal
+- `z-teal z-coffeel zual` — *everything but tea and coffee*
+- `zual g-catl` — *every cat* ([generics](#universals-domains-generics))
+- `zuam g-studentl` — soft *every student*
+- `z-teal z-coffeel zual g-drinkl` — *every drink but tea and coffee*
+- `z-helpl z-moneyl zuom` — *anything but help or money*
+- `z-journall z-candlesh z-socksh zem` — open ranked wishlist
+- `z-journall z-candlesh z-socksh zael` — equal priority
+- `z-dogl g-bigl z-catl g-redl zem` — *(big dog) ≻ (red cat)*
+- `z-Samn ^ z-waterl zal ^ zam` — *Sam and (just water)*; `z-Samn ^ zal ^ zam` — *Sam and nothing* ([join scope islands](#join-scope-islands-rules))
+- `z-truthrl zem` / `z-truthrl zel` / `z-Samn zel g-bigl` / `z-Samn zem g-bigl` / `z-fixl zoem` / `z-fixl zoel` / `z-dessertl zuem` / `z-dessertl zuel` / `z-safetyl zen` — focus ranked sketches
+- `z-waterl zal` / `z-Samn zam` / `z-waterl zol` / `z-coffeel zom` / `z-teal zual` / `z-coffeel zuol` / `z-waterl zaol` / `z-waterl zaom` / `z-personl zar` / `z-personl zor` / `z-safetyl zer` / `z-Samn zul` / `z-Samn zun` / `z-contractl zur` — focus set sketches
+- `z-teal z-coffeel zol` / `z-teal z-coffeel zom` — exclusive menu
+- `z-teal z-coffeel zar` / `z-burgerl z-chickenl zor` / `z-teal z-coffeel zer` / `z-teal z-coffeel zul` / `z-teal z-coffeel zun` / `z-costl z-riskl zur` — unspecified-member / negation lists
+- Bare sketches: `zal` / `zam` / `zan` / `zar` / `zol` / `zom` / `zual` / `zual g-catl` / `zuam g-catl` / `zuol` / `zor` / `zaol` / `zaom` / `zul` / `zum` / `zun` / `zur` / `zel` / `zel g-bigl` / `zem` / `zer` / `zer g-bigl` / `zael` / `zaem` / `zaen` / `zoem` / `zoel` / `zoel g-bigl` / `zoem g-bigl` / `zuel` / `zen`
+
+
 **AP**
 
-- `gam g-happyl w-veryl g-proudl w-slightlyl` — *(very happy) and (slightly proud)* — each degree inside its conjunct
-- `gam g-onl b-tablel g-ofl b-Samn` — *(on the table) and (Sam’s)* — two complex APs on one host
-- `gal g-redl g-softl g-warml` — *red, soft, and warm* — closed three-way AP list (absorb-all; no further bare `/ɡ/` on that host after this join)
-- `g-redl g-softl g-warml gal` — same closed AP list with right close
-- `z-cakel gan b-nutl` — *cake including nuts* ([join-relation](special-vocabulary.md#join-relations); not a named AP list — stock labels use [mention](spans.md))
-- `gel w-veryl g-happyl g-proudl` — *very (happy ≻ proud)* — shared degree after the fence; closed ranked on the AP (exclusivity unmarked)
-- `gael g-happyl g-proudl` — *equally happy and proud* / *happy tied with proud* — closed **ae** on the AP
-- `g-happyl g-proudl gel w-veryl` — same ranked AP with right close
-- `g-happyl g-proudl gael w-veryl` — *very (equally happy and proud)* — equative AP with shared degree
-- `z-backlogl gen b-bugl` — *bug-first backlog* (join-relation **`gen`**)
-- `z-pathl gaen b-altl` — *path on a par with the alternative* (join-relation **`gaen`**)
+- `g-happyl w-veryl g-proudl w-slightlyl gam` — *(very happy) and (slightly proud)*
+- `g-onl b-tablel g-ofl b-Samn gam` — *(on the table) and (Sam’s)*
+- `g-redl g-softl g-warml gal` — *red, soft, and warm* (closed)
+- `z-cakel gan b-nutl` — *cake including nuts* ([join-relation](special-vocabulary.md#join-relations))
+- `g-happyl g-proudl gel w-veryl` — *very (happy ≻ proud)*
+- `g-happyl g-proudl gael` — *equally happy and proud*
+- `g-happyl g-proudl gael w-veryl` — *very (equally happy and proud)*
+- `z-backlogl gen b-bugl` — join-relation **`gen`**
+- `z-pathl gaen b-altl` — join-relation **`gaen`**
+
 
 **`/w/` / `/h/` — restrictor use (not sibling *and*)**
 
-Sibling manner / degree / mood stacking uses **juxtaposition**, not a fence: `h-quicklyl h-quietlyl` → *quickly and quietly*; `w-veryl w-recentl` on a `/ɡ/` → *very* and *recent* on that adjective. Prefixed `/h/` / `/w/` joins are [restrictors](restrictors.md) — e.g. `hal h-rainl` → *only when raining*; `hal` → *never*; `wal w-allegedl` → *only when alleged* (property applies only under that framing).
+Sibling manner / degree / mood stacking uses **juxtaposition**, not a fence: `h-quicklyl h-quietlyl` → *quickly and quietly*; `w-veryl w-recentl` on a `/ɡ/` → *very* and *recent* on that adjective. Prefixed `/h/` / `/w/` joins are [restrictors](restrictors.md) — e.g. `h-rainl hal` → *only when raining*; `hal` → *never*; `w-allegedl wal` → *only when alleged* (property applies only under that framing).
 
 ## Restrictors (`/h/` / `/w/`)
 
@@ -479,7 +476,7 @@ Under `/h/` and `/w/`, the join series marks **applicability circumstances** (no
 
 - **One slot** — the chain is a single subject, object, `/b/` argument, `/ɡ/` stack position, `/w/` restrictor unit, or `/h/` restrictor unit in the clause. Under `/h/` / `/w/`, that slot is a [restrictor](restrictors.md), not a sibling modifier *and*.
 - **Matching role prefix** on every conjunct head and on the join.
-- **One fence placement per flat list** — left (preferred) or right (style / comedy); never pure infix between conjuncts. Nested joins: [fence nesting](#fence-nesting).
+- **One right-close fence per flat list** — never a left fence; never pure infix between conjuncts. Nested joins: [fence nesting](#fence-nesting).
 - **Shared modifiers** — only in the slot immediately after each `P-JOIN` (left or right); local modifiers stay after their own heads.
 - **Phrase `-r`** — only **`…ar`** / **`…or`** / **`…er`** / **`…ur`** ([unspecified-member](#unspecified-member-r-phrase)); no plural **-sh** on the join. Soft **-n** is clause only; VP **-n** = [join-act verbs](special-vocabulary.md#join-act-verbs); `/ɡ/` `/h/` **-n** = [join-relations](special-vocabulary.md#join-relations).
 - **Not** verb+object packages — use [VP-level](#vp-level-coordination); **not** full sentences — those stay `/x/`…
@@ -498,18 +495,17 @@ Under `/z/`, `/d/`, `/b/`, `/ɡ/`, `/w/`, and `/h/`, the join series plus an all
 <a id="vowels--endings"></a>
 <a id="ending-senses-clause-joins"></a>
 
-Flat coordination uses **one** fence (left or right). **Nested** joins use **more than one** fence of the same PoS prefix. Association follows fence side:
+Flat coordination uses **one** right-close fence. **Nested** joins use **more than one** right close of the same PoS prefix. Association is **left-associative** only (left-fence stacks are illegal):
 
 | Pattern | Associativity | Example | Reading |
 |---------|---------------|---------|---------|
-| **Left fence stack** | **Right-associative** | `vol A val B C` | *A ∨ (B ∧ C)* — later fence is one conjunct of the earlier |
 | **Right close stack** | **Left-associative** | `A B vol C val` | *(A ∨ B) ∧ C* — each close folds what’s to its left, then that group joins the next |
 
-Flat n-ary (one fence): `vol A B C` / `A B C vol` → *A ∨ B ∨ C*. Nested same-vowel: `vol A vol B C` → *A ∨ (B ∨ C)*; `A B vol C vol` → *(A ∨ B) ∨ C*.
+Flat n-ary (one fence): `A B C vol` → *A ∨ B ∨ C*. Nested same-vowel: `A B vol C vol` → *(A ∨ B) ∨ C*.
 
-**Pure infix is illegal:** do not write `A vol B val C` (join between every pair with neither a clean left stack nor a clean right stack). Use all-left or all-right nesting, or a flat single fence.
+**Pure infix is illegal:** do not write `A vol B val C` (join between every pair). Use stacked right closes or a flat single fence. **Left fences are illegal** (`vol A val B C`, …).
 
-Same rule at phrase, VP, and clause level (`zol A zal B C`, `vol A val B C`, `xol A xal B C`, …). Shared modifiers stay immediately after **each** fence particle they attach to.
+Same rule at phrase, VP, and clause level (`A B zol C zal`, `A B vol C val`, `A B xol C xal`, …). Shared modifiers stay immediately after **each** fence particle they attach to. Scope islands may wrap an inner join: `A ^ B C val ^ vol` → *A or (B and C)*.
 
 ---
 
@@ -518,7 +514,7 @@ Same rule at phrase, VP, and clause level (`zol A zal B C`, `vol A val B C`, `xo
 <a id="soft-n-vp-clause"></a>
 <a id="ending-senses"></a>
 
-On **`/x/`** only, join **-n** is **soft packaging** (not phrase named/conventional **-n**). Narrative *and then* between clauses is **`xan`**. Soft lists use the same **fence** shape as **-l** / **-m** (left preferred; right close allowed; nesting per [fence nesting](#fence-nesting)). Soft lists do **not** carry a separate closed/open bit; treat completeness as open-leaning unless you upgrade to a committed **-l** / **-m** fence (optionally with `/h/` evidential hedges). Per vowel:
+On **`/x/`** only, join **-n** is **soft packaging** (not phrase named/conventional **-n**). Narrative *and then* between clauses is **`xan`**. Soft lists use the same **right-close fence** shape as **-l** / **-m** (nesting per [fence nesting](#fence-nesting)). Soft lists do **not** carry a separate closed/open bit; treat completeness as open-leaning unless you upgrade to a committed **-l** / **-m** fence (optionally with `/h/` evidential hedges). Per vowel:
 
 | Form | Soft reading |
 |------|----------------|
@@ -559,58 +555,58 @@ Prefix: **`/v/`** for [VP-level](#vp-level-coordination); **`/x/`** for [clause-
 
 **-l** / **-m** — committed closed / open lists (same senses as phrase). Soft **-n** — clause only ([above](#soft-n-clause)). VP **-n** — [join-act verbs](special-vocabulary.md#join-act-verbs). **-r** — unspecified-member (under question = fill-ask — [questions.md](questions.md#fill-ask-r)), not list continue.
 
-**Flat fence shape** (same as phrase):
+**Flat fence shape** (same as phrase — right close only):
 
 ```
-COORD ( SHARED )* ITEM ITEM ( ITEM )*   ← left (preferred); two or more when not focus/bare-allowed
-ITEM ITEM ( ITEM )* COORD ( SHARED )*   ← right close
-COORD ( SHARED )* ITEM            ← focus …ar/…or/…er/…ur or negation …ul/…um (VP) / …un (phrase named / clause soft)
+ITEM ITEM ( ITEM )* COORD ( SHARED )*   ← two or more when not focus/bare-allowed
+ITEM COORD ( SHARED )*            ← focus …ar/…or/…er/…ur or negation …ul/…um (VP) / …un (phrase named / clause soft)
 COORD ( SHARED )*               ← bare …ar/…or/…er/…ur or negation …ul/…um (VP) / …un (phrase named / clause soft)
 ```
 
-Examples (flat): `vam A B` / `A B vam` → *A and B* (open); `val A B C` → closed three-way *and*; `xan A B C` → *A and then B and then C*; `vel A B` → *A ≻ B*; `vol A B` → *A or B* (exactly one); `vom A B` → *A or B or neither* (at most one); `var` → *do something*; `xar` → *something happened*; `vul v-runl` → *didn’t run*; `vul` → *no* / *don’t* (bare denial); `xul SENT` → *not SENT*.
+Examples (flat): `A B vam` → *A and B* (open); `A B C val` → closed three-way *and*; `A B C xan` → *A and then B and then C*; `A B vel` → *A ≻ B*; `A B vol` → *A or B* (exactly one); `A B vom` → *A or B or neither* (at most one); `var` → *do something*; `xar` → *something happened*; `v-runl vul` → *didn’t run*; `vul` → *no* / *don’t* (bare denial); `SENT xul` → *not SENT*.
 
-Nesting: [fence nesting](#fence-nesting) — e.g. `vol A val B C` → *A or (B and C)*; `A B vol C val` → *(A or B) and C*.
+Nesting: [fence nesting](#fence-nesting) — e.g. `A B vol C val` → *(A or B) and C*; with island `A ^ B C val ^ vol` → *A or (B and C)*.
 
 ---
 
 # VP-level joins
 
-VP-level joins join **verb phrases** inside one clause: each conjunct is a verb plus that verb’s own object material (`/d/` NP, including phrase-level structure on the object), unless a shared object sits before a left fence (below). They share one clause subject (`/z/`) and one [clause force](language-reference.md#utterance-markers-j). The join prefix is always **`/v/`**. Forms and endings: [VP / clause forms](#vp-clause-forms) (**-l** / **-m** / **-r** only as joins). Shape and nesting: [fence nesting](#fence-nesting). Soft *and then*: clause **`xan`** ([soft **-n**](#soft-n-clause)). Unspecified **-r**: [unspecified-member](#unspecified-member-r-phrase).
+VP-level joins join **verb phrases** inside one clause: each conjunct is a verb plus that verb’s own object material (`/d/` NP, including phrase-level structure on the object), unless a shared object sits **after** the right-close join in SHARED (below). They share one clause subject (`/z/`) and one [clause force](language-reference.md#utterance-markers-j). The join prefix is always **`/v/`**. Forms and endings: [VP / clause forms](#vp-clause-forms) (**-l** / **-m** / **-r** only as joins). Shape and nesting: [fence nesting](#fence-nesting) (right close only). Soft *and then*: clause **`xan`** ([soft **-n**](#soft-n-clause)). Unspecified **-r**: [unspecified-member](#unspecified-member-r-phrase).
 
 ## Conjuncts and scope
 
 - **VP** — one verb (`/v/` content word) plus that verb’s own `/d/` object material when present (simple object or [phrase-level](#phrase-level-coordination) object chain). Object NPs may include their `/ɡ/` / `/w/` / `/b/` stacks. The shared `/z/` subject is **outside** the VP chain.
-- **Shared object (verb-only conjuncts)** — when every conjunct is a bare verb (no per-conjunct `/d/`), a `/d/` **immediately before** a left-fence join scopes over **all** verbs alike: `d-applel vam v-washl v-eatl` → *washed and ate an apple*. If any conjunct carries its own `/d/`, do not use a pre-fence shared object; put objects inside each conjunct.
+- **Shared object (verb-only conjuncts)** — when every conjunct is a bare verb (no per-conjunct `/d/`), a `/d/` **immediately after** the join (SHARED) scopes over **all** verbs alike: `v-washl v-eatl vam d-applel` → *washed and ate an apple*. If any conjunct carries its own `/d/`, do not use a shared object; put objects inside each conjunct.
 - **`/h/` scope relative to the fence**
- - **`/h/` before a left-fence VP join** (outside the chain) → applies to **every** conjunct (*quickly washed and ate*).
- - **`/h/` inside a conjunct** (after that conjunct begins, before the next conjunct head or end of chain) → applies to **that VP only**.
- - **`/h/` after the whole VP chain** → attaches to the **last** conjunct only. For shared manner/mood over all VPs, put `/h/` before the left fence.
+ - **`/h/` before the VP conjunct stretch** (outside the chain) → applies to **every** conjunct (*quickly washed and ate*).
+ - **`/h/` in SHARED after the join** → also shared over **every** conjunct.
+ - **`/h/` inside a conjunct** (after that conjunct begins, before the next conjunct head or the join) → applies to **that VP only**.
+ - **`/h/` after SHARED** (with no room in SHARED) → prefer SHARED or pre-chain placement for whole-chain manner.
 - Other non-VP clause material (subject, clause force) stays outside the chain.
 
 ### Examples (schematic)
 
-- `vam d-applel v-eatl d-waterl v-drinkl` → *(ate an apple) and (drank water)* (open); `d-applel v-eatl d-waterl v-drinkl vam` → same with right close
-- `val d-applel v-eatl d-waterl v-drinkl d-breadl v-bakel` → closed *and* of three VPs
-- `vel d-applel v-eatl d-cakel v-eatl` → *ate an apple ≻ ate a cake* (closed ranked, exclusivity unmarked)
-- `vael d-applel v-eatl d-cakel v-eatl` → *ate an apple as much as ate a cake* / *equally* (closed **ae** — equal weight / tie)
+- `d-applel v-eatl d-waterl v-drinkl vam` → *(ate an apple) and (drank water)* (open)
+- `d-applel v-eatl d-waterl v-drinkl d-breadl v-bakel val` → closed *and* of three VPs
+- `d-applel v-eatl d-cakel v-eatl vel` → *ate an apple ≻ ate a cake* (closed ranked, exclusivity unmarked)
+- `d-applel v-eatl d-cakel v-eatl vael` → *ate an apple as much as ate a cake* / *equally* (closed **ae** — equal weight / tie)
 - `vael` → *it’s a draw* / *tied outcome* (bare **ae** on VP)
-- `voel d-bugl v-fixl d-workaroundl v-addl` → *fix the bug ≻ add a workaround* (closed exclusive ranked)
-- `vuel d-appetizerl v-eatl d-dessertl v-eatl` → *ate an appetizer ≺ ate dessert* (closed rank reversal)
-- `vual v-liet v-shoutl` → *do everything but lie or shout*
-- `vuol v-calll v-emaill` → *do anything but call or email*
-- `vem d-applel v-eatl d-waterl v-drinkl` → *ate an apple ≻ drank water* (open ranked, unmarked)
-- `h-quicklyl vam d-applel v-eatl d-waterl v-drinkl` → *quickly* *(ate an apple and drank water)*
-- `vam d-applel v-eatl h-quicklyl d-waterl v-drinkl` → *(quickly ate an apple) and (drank water)*
-- `d-applel vam v-washl v-eatl` → *washed and ate an apple* (shared object before left fence)
-- `vol d-applel v-eatl d-waterl v-drinkl` → *ate an apple or drank water* (exactly one); `vom d-applel v-eatl d-waterl v-drinkl` → *ate an apple or drank water or neither*
-- `vol d-applel v-eatl val d-waterl v-drinkl d-breadl v-bakel` → *ate an apple, or ((drank water) and (baked bread))* (left nest)
+- `d-bugl v-fixl d-workaroundl v-addl voel` → *fix the bug ≻ add a workaround* (closed exclusive ranked)
+- `d-appetizerl v-eatl d-dessertl v-eatl vuel` → *ate an appetizer ≺ ate dessert* (closed rank reversal)
+- `v-liet v-shoutl vual` → *do everything but lie or shout*
+- `v-calll v-emaill vuol` → *do anything but call or email*
+- `d-applel v-eatl d-waterl v-drinkl vem` → *ate an apple ≻ drank water* (open ranked, unmarked)
+- `h-quicklyl d-applel v-eatl d-waterl v-drinkl vam` → *quickly* *(ate an apple and drank water)*
+- `d-applel v-eatl h-quicklyl d-waterl v-drinkl vam` → *(quickly ate an apple) and (drank water)*
+- `v-washl v-eatl vam d-applel` → *washed and ate an apple* (shared object after join)
+- `d-applel v-eatl d-waterl v-drinkl vol` → *ate an apple or drank water* (exactly one); `d-applel v-eatl d-waterl v-drinkl vom` → *ate an apple or drank water or neither*
 - `d-applel v-eatl d-waterl v-drinkl vol d-breadl v-bakel val` → *((ate an apple) or (drank water)) and (baked bread)* (right nest)
-- `var` → *do something*; `var v-runl` → *some (unspecified) running*; `vor v-runl v-jumpl` → *any of running or jumping*
-- `vul v-runl` → *didn’t run*; `vul d-applel v-eatl d-waterl v-drinkl` → *neither ate an apple nor drank water*; `vul` → *no* / *don’t* (bare denial; contrast `zoel` *do nothing* as empty triage); `vur` → *do something else*
-- Under question: `var` → *What (did they) do?*; `vur` → *What else (did they do)?*; `vul v-runl` → *Didn’t run?* — [questions.md](questions.md#fill-ask-r)
+- `d-applel v-eatl ^ d-waterl v-drinkl d-breadl v-bakel val ^ vol` → *ate an apple, or ((drank water) and (baked bread))* (island-scoped inner *and*)
+- `var` → *do something*; `v-runl var` → *some (unspecified) running*; `v-runl v-jumpl vor` → *any of running or jumping*
+- `v-runl vul` → *didn’t run*; `d-applel v-eatl d-waterl v-drinkl vul` → *neither ate an apple nor drank water*; `vul` → *no* / *don’t* (bare denial; contrast `zoel` *do nothing* as empty triage); `vur` → *do something else*
+- Under question: `var` → *What (did they) do?*; `vur` → *What else (did they do)?*; `v-runl vul` → *Didn’t run?* — [questions.md](questions.md#fill-ask-r)
 - Join-act verbs (not joins): `jal z-Samn d-pathl von` → *Sam chooses the path (as the one choice)* — [special-vocabulary.md](special-vocabulary.md#join-act-verbs)
-- Clause sequence (*and then*): `xan SENT₁ SENT₂` — not a VP `van` join
+- Clause sequence (*and then*): `SENT₁ SENT₂ xan` — not a VP `van` join
 
 ## Constraints
 
@@ -619,7 +615,7 @@ VP-level joins join **verb phrases** inside one clause: each conjunct is a verb 
 - **`/h/`** follows the before-fence / inside-conjunct / after-chain rules above.
 - **No gapping** of subject or object across VPs (beyond the shared-object pattern).
 - **No `-sh`** on the join.
-- **Fence** — left preferred, right close allowed; nesting per [fence nesting](#fence-nesting); **no pure infix**.
+- **Fence** — right close only; nesting per [fence nesting](#fence-nesting); **no left fence**; **no pure infix**.
 - **-r** is unspecified-member (`var` / `vor` / `ver` / `vur`), not continue. Focus/bare allowed on **-r** forms and on negation **`vul` / `vum`** among VP joins (not **`vun`** — that is a join-act verb).
 - **Not** full sentences — those stay `/x/`…; **not** phrase-level NP/AP joins — those stay [phrase-level](#phrase-level-coordination).
 
@@ -638,27 +634,27 @@ Endorsement strength and evidentiality stay on each clause’s `/h/` (or `/w/`),
 ## Conjuncts
 
 - **SENT** — a complete sentence beginning with `/j/` (optional vocative(s) / interjection(s), then clause force, then clause body).
-- Flat lists: one fence before (preferred) or after the conjunct sentences. Nested lists: [fence nesting](#fence-nesting).
+- Flat lists: one right-close fence after the conjunct sentences. Nested lists: [fence nesting](#fence-nesting).
 
 ### Examples (schematic)
 
-- `xal A B` → *A and B* (closed); `xam A B` → open; `A B xam` → same open with right close
-- `xal A B C` → *A and B and C* (one closed *and*-list)
-- `xol A B C` → *A or B or C* (exactly one; closed); `xom A B C` → *A or B or C or none* (at most one; open, empty-allowed)
-- `xan A B C` → *A and then B and then C*
-- `xel A B` → *A ≻ B* (closed ranked, unmarked); `xem A B` → open; `xen A B C` → soft
-- `xael A B` → *A and B equally* / *tied claims* (closed **ae**); `xael` → *it’s a draw* (bare); `xoel A B C` → exclusive closed ranked
-- `xual A B` → *everything but A and B*; `xuol A B` → *anything but A or B*; `xuel A B` → *A ≺ B* (rank reversal)
-- Nesting: `xol A xol B C` → *A or (B or C)*; `A B xol C xol` → *(A or B) or C*; flat three-way *or* is `xol A B C`
-- `xol A xal B C` → *A or (B and C)*; `A B xol C xal` → *(A or B) and C*
-- `xar` → *something happened*; under question → *What happened?*; `xur` → *something else happened*; under question → *What else happened?* ([questions.md](questions.md#fill-ask-r)); `xul SENT` → *not SENT*; `xul` → *no* (bare denial)
+- `A B xal` → *A and B* (closed); `A B xam` → open
+- `A B C xal` → *A and B and C* (one closed *and*-list)
+- `A B C xol` → *A or B or C* (exactly one; closed); `A B C xom` → *A or B or C or none* (at most one; open, empty-allowed)
+- `A B C xan` → *A and then B and then C*
+- `A B xel` → *A ≻ B* (closed ranked, unmarked); `A B xem` → open; `A B C xen` → soft
+- `A B xael` → *A and B equally* / *tied claims* (closed **ae**); `xael` → *it’s a draw* (bare); `A B C xoel` → exclusive closed ranked
+- `A B xual` → *everything but A and B*; `A B xuol` → *anything but A or B*; `A B xuel` → *A ≺ B* (rank reversal)
+- Nesting: `A B xol C xol` → *(A or B) or C*; flat three-way *or* is `A B C xol`; island: `A ^ B C xal ^ xol` → *A or (B and C)*
+- `A B xol C xal` → *(A or B) and C*
+- `xar` → *something happened*; under question → *What happened?*; `xur` → *something else happened*; under question → *What else happened?* ([questions.md](questions.md#fill-ask-r)); `SENT xul` → *not SENT*; `xul` → *no* (bare denial)
 
 ## Constraints
 
 - **Same clause force** on every conjunct (same `/j/` force form — e.g. all **jal**, all **jol**, all **jel**, …). Mixed force → separate sentences or [subordination](language-reference.md#dependent-clauses), not this join.
 - **No gapping / shared arguments** across conjuncts. Repeat material, or use phrase-level (NP / AP / …) or VP-level joins inside one clause.
-- **Fence** — left preferred, right close allowed; nesting per [fence nesting](#fence-nesting); **no pure infix**.
-- **-r** is unspecified-member (`xar` / `xor` / `xer` / `xur`), not continue / “same linker again”. Focus/bare allowed on **-r** forms and on negation **`xul` / `xum` / `xun`** among clause joins. Resume of a prior non-join `/x/` linker still uses content-word **/x/`…`-r`** per [pronouns.md](pronouns.md).
+- **Fence** — right close only; nesting per [fence nesting](#fence-nesting); **no left fence**; **no pure infix**.
+- **-r** is unspecified-member (`xar` / `xor` / `xer` / `xur`), not continue / “same linker again”. Focus/bare allowed on **-r** forms and on negation **`xul` / `xum` / `xun`** among clause joins. Resume of a prior non-join `/x/` linker still uses content-word `/x/…-r` per [pronouns.md](pronouns.md).
 - **Not subordination:** *because* / *if* / *although* stay `/h/` + `/b/` [next-clause pronoun](pronouns.md#special-pronouns).
 - **Not general *but* / *however* / *therefore* / *meanwhile* / *next*:** those are other `/x/` linkers. *Including* / *rather* / *instead* / *except* (in-clause) and *additionally* / *in other words* / claim *instead* / *except* (before `/j/`) are [reviser](revisers.md), not clause joins. *Starting with* = **`x#e-`**; *Finally* = **`x#e`**. Phrase-, VP-, and clause-level **ranked** and **invert** (**zel** / **zael** / **zoel** / **zuel** / **zual** / **zuol** / **gel** / **vel** / **vael** / **voel** / **vuel** / **vual** / **vuol** / **xel** / **xuel** / …) **are** this series.
 

@@ -743,7 +743,7 @@ Use [engineering exponents](#exponents) on the amount when convenient (`e3` / `e
 
 **Measured differentials** (*two inches taller*) put that measure NP as the **single `/b/`** on the SHARED scale adjective of a [comparative](comparatives.md#measured-differentials):
 
-`zel g-talll b-inchl g+2 z-Samn z-Lean` → *Sam is two inches taller than Lea*
+`z-Samn z-Lean zel g-talll b-inchl g+2` → *Sam is two inches taller than Lea*
 
 Vague degree stays `/w/` on the scale (`zel w-muchl g-talll …`) — no unit. Duration and other clause measures use the same unit+amount habit in whatever slot the relation needs.
 
@@ -765,33 +765,33 @@ Spans reuse [phrase fences](coordination.md) whose conjuncts are number words, w
 
 The fence PoS matches the slot (`zal` / `dal` / `gal` / `bal` / …). Mixed identities on one span are illegal.
 
-**Without SHARED continuum:** two number conjuncts are **ordinary coordination** — never a span. In particular bare **`zel z+3 z+5`** = *3 ≻ 5* (preference / rank), not *from 3 to 5*.
+**Without SHARED continuum:** two number conjuncts are **ordinary coordination** — never a span. In particular bare **`z+3 z+5 zel`** = *3 ≻ 5* (preference / rank), not *from 3 to 5*.
 
 | Join | Inclusive shape | Reading |
 |------|-----------------|--------|
-| **`a`** | `zal g-agel z+3 z+5` | *between 3 and 5* on age (unordered filled interval; both ends in) |
-| **`e`** | `zel g-agel z+3 z+5` | *from 3 to 5* on age (directed; first → second) |
-| **`ue`** | `zuel g-agel z+5 z+3` | directed reverse path on age (spoken order = path; here *from 5 to 3*) |
-| **`ua`** | `zual g-agel z+3 z+5` | *outside 3–5* on age (complement on the line) |
+| **`a`** | `z+3 z+5 zal g-agel` | *between 3 and 5* on age (unordered filled interval; both ends in) |
+| **`e`** | `z+3 z+5 zel g-agel` | *from 3 to 5* on age (directed; first → second) |
+| **`ue`** | `z+5 z+3 zuel g-agel` | directed reverse path on age (spoken order = path; here *from 5 to 3*) |
+| **`ua`** | `z+3 z+5 zual g-agel` | *outside 3–5* on age (complement on the line) |
 | **`o`** / **`ao`** | — | **Not** ranges — stay discrete (*3 or 5* / *3 and/or 5*); SHARED continuum does not license a span |
-| **`ae`** | `zael z+5 z+5` / `zaem z+3 z+5` | *equal to 5* / *approximately equal* — **not** a span (no continuum needed; continuum + **`ae`** + numbers is not a range reading) |
+| **`ae`** | `z+5 z+5 zael` / `z+3 z+5 zaem` | *equal to 5* / *approximately equal* — **not** a span (no continuum needed; continuum + **`ae`** + numbers is not a range reading) |
 | **`oe`** | — | **Not** ranges — exclusive ranked / bare empty superlative with scale |
 
 **Arity escape:** three or more number conjuncts under **`a`** stay an ordinary discrete inventory (`zal z+1 z+3 z+7` = *1, 3, and 7*), even with SHARED. Focus **`zal z+3`** stays *just 3*, not a ray. Focus **ranked** with a number is a [threshold](#numeric-thresholds), not ordinary *only X matters*.
 
-**Contrast with comparatives:** `zel g-bigl z-Samn z-Lean` = *Sam is bigger than Lea* (SHARED **scale**, non-number conjuncts). `zel g-agel z+3 z+5` = *from 3 to 5 on age* (SHARED **continuum**, number endpoints). Bare `zel z+3 z+5` = prefer 3 over 5.
+**Contrast with comparatives:** `z-Samn z-Lean zel g-bigl` = *Sam is bigger than Lea* (SHARED **scale**, non-number conjuncts). `z+3 z+5 zel g-agel` = *from 3 to 5 on age* (SHARED **continuum**, number endpoints). Bare `z+3 z+5 zel` = prefer 3 over 5.
 
 ### Thresholds (focus ranked)
 <a id="numeric-thresholds"></a>
 <a id="greater-less-than"></a>
 
-When the **sole** conjunct of a [rank join](coordination.md#ranked-conjunction-e) fence (**`e`** / **`ue`**, and their open / named twins) is a **compatible number word**, that number is an **extremum on the line**, not “only this value matters” and not a two-endpoint [span](#ranges). SHARED continuum is **optional** on thresholds: absent = implicit / contextual numeric line; present = that named line (`zel g-agel z+5` = *age \< 5*). Special values such as +∞ use [digitless exponents](#digitless-exponents) inside the number word (`g+e`), not focus ranked zero-group forms.
+When the **sole** conjunct of a [rank join](coordination.md#ranked-conjunction-e) fence (**`e`** / **`ue`**, and their open / named twins) is a **compatible number word**, that number is an **extremum on the line**, not “only this value matters” and not a two-endpoint [span](#ranges). SHARED continuum is **optional** on thresholds: absent = implicit / contextual numeric line; present = that named line (`z+5 zel g-agel` = *age \< 5*). Special values such as +∞ use [digitless exponents](#digitless-exponents) inside the number word (`g+e`), not focus ranked zero-group forms.
 
 | Form | Reading | Mnemonic |
 |------|--------|----------|
-| **`zel z+5`** | ***less than 5*** (`< 5`) | 5 is the **greatest** (ceiling); the ray is everything it outranks |
+| **`z+5 zel`** | ***less than 5*** (`< 5`) | 5 is the **greatest** (ceiling); the ray is everything it outranks |
 | **`zem z+5`** | soft / approximate *less than ~5* | open twin |
-| **`zuel z+5`** | ***greater than 5*** (`> 5`) | 5 is the **least** (floor); reverse-ranked extremum |
+| **`z+5 zuel`** | ***greater than 5*** (`> 5`) | 5 is the **least** (floor); reverse-ranked extremum |
 | **`zuem z+5`** | soft / approximate *greater than ~5* | open reverse twin |
 | **`zen z+5`** | named/conventional **unspecified** extremum label (*under-fives*-style) | phrase **-n** on **e** |
 | **`zaen z+5`** | named/conventional **equal-to-5** band / tie label | phrase **-n** on **ae** |
@@ -799,11 +799,11 @@ When the **sole** conjunct of a [rank join](coordination.md#ranked-conjunction-e
 
 Same under `/d/` `/b/` `/ɡ/` (`gel g+5` = modifier *\<5*; `duel d+10` = object *\>10*). **`ae`** / **`oe`** focus with a number are **not** thresholds (stay ordinary ranked focus / triage). Boolean focus (**`zal`** / **`zol`** / …) is **not** a threshold. Focus **`zel z+`** (zero-group) is **not** +∞ and **not** a threshold — ordinary focus on plural/unspecified amount; use **`z+e`** / **`g+e`** for +∞.
 
-**Inclusive bounds:** default is **strict** (`<` / `>`). For **≤ 5** / **≥ 5**, use a two-endpoint [span](#ranges) with the bound included — do **not** flip focus ranked to inclusive. Exclusive-high **`ul`** stays a two-side span tool (`zal g-spanl z+3 ul z+5`), not a focus threshold marker.
+**Inclusive bounds:** default is **strict** (`<` / `>`). For **≤ 5** / **≥ 5**, use a two-endpoint [span](#ranges) with the bound included — do **not** flip focus ranked to inclusive. Exclusive-high **`ul`** stays a two-side span tool (`z+3 ul z+5 zal g-spanl`), not a focus threshold marker.
 
 **Unspecified in a threshold:** bare **`e`** + **-r** = unspecified member of the *\< X* ray — `zer z+5` → *some/whatever value \< 5* (under question → *which value \< 5?*). **`ue`** takes **no** **-r** (stacked forms never do — [coordination](coordination.md#unspecified-member-r-phrase)); there is no `zuer` threshold. For an unspecified value *\> 5*, use other wording for now (e.g. a two-endpoint span with an open high, once defined), not a reverse **-r** fence.
 
-Contrast: `zel g-agel z+3 z+5` = *from 3 to 5 on age* (span); `zel z+3 z+5` = *3 ≻ 5* (preference); `zel z+5` = *\< 5* (focus threshold); `z+e` / `g+e` = +∞ ([digitless exponents](#digitless-exponents)). `zel z-Samn` (non-number) stays ordinary *only Sam matters* / [superlative-with-scale](comparatives.md) — **focus number conjunct** triggers the threshold reading when the number is a bound (typically digitful).
+Contrast: `z+3 z+5 zel g-agel` = *from 3 to 5 on age* (span); `z+3 z+5 zel` = *3 ≻ 5* (preference); `z+5 zel` = *\< 5* (focus threshold); `z+e` / `g+e` = +∞ ([digitless exponents](#digitless-exponents)). `z-Samn zel` (non-number) stays ordinary *only Sam matters* / [superlative-with-scale](comparatives.md) — **focus number conjunct** triggers the threshold reading when the number is a bound (typically digitful).
 
 ### Half-open (exclude the high end only)
 
@@ -811,9 +811,9 @@ Contrast: `zel g-agel z+3 z+5` = *from 3 to 5 on age* (span); `zel z+3 z+5` = *3
 
 | Shape | Reading |
 |-------|--------|
-| `zal g-spanl z+3 z+5` | *[3, 5]* — inclusive both ends |
-| `zal g-spanl z+3 ul z+5` | *[3, 5)* — *3 up to but not including 5* |
-| `zel g-spanl z+3 ul z+5` | *from 3 up to but not including 5* |
+| `z+3 z+5 zal g-spanl` | *[3, 5]* — inclusive both ends |
+| `z+3 ul z+5 zal g-spanl` | *[3, 5)* — *3 up to but not including 5* |
+| `z+3 ul z+5 zel g-spanl` | *from 3 up to but not including 5* |
 
 The low endpoint is **always inclusive**. Do **not** exclude the beginning edge (no `ul` before the low; no open-low span). Do **not** list the high end as a conjunct and then except it (`*zal g-spanl z+3 z+5 ul z+5`); the exclusive high is **only** the in-range `ul` shape. Open **`um`** on the high end = soft / non-exhaustive exclusion of that bound (rare). Other revision vowels (**`al`** / **`el`** / **`ol`**) are not range-bound markers.
 
@@ -825,17 +825,17 @@ Fence **-r** on a number-range shape (still with SHARED continuum) = an **unspec
 
 | Form | Reading |
 |------|--------|
-| `zar g-spanl z+3 z+5` | *some value in [3, 5]* |
+| `z+3 z+5 zar g-spanl` | *some value in [3, 5]* |
 | `zar g-spanl z+3 ul z+5` | *some value in [3, 5)* |
 | `zor g-spanl z+3 z+5` | *any value in [3, 5]* (free-choice) |
 | `zer g-spanl z+3 z+5` | *whatever-by-rank in [3, 5]* |
 | `zur g-spanl z+3 z+5` | *some value other than (in) [3, 5]* — other-than the span |
 
-Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which value in 3–5?*). Same under `/d/` `/b/` / `/ɡ/` as the slot needs (`gal g-agel g+3 g+5` = modifier *ages 3–5*; `dar g-spanl d+10 ul d+20` = object *some value in [10, 20)*).
+Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which value in 3–5?*). Same under `/d/` `/b/` / `/ɡ/` as the slot needs (`g+3 g+5 gal g-agel` = modifier *ages 3–5*; `d+10 ul d+20 dar g-spanl` = object *some value in [10, 20)*).
 
 **Clock / date spans:** do **not** use bare circumstance-`hal` (that series is [applicability](restrictors.md)). Prefer SHARED continuum **`g-timel`** (or a host relation + `/b/`) with digit-string endpoints (`bal g-timel b_15,00 b_16,00`).
 
-Examples: `zal g-agel z+3 z+5` → *between ages 3 and 5*; `z-kidl gal g-agel g+3 g+5` → *kids ages 3–5*; `zal g-spanl z+3 ul z+5` → *[3, 5)*; `zel g-agel z+10 z+20` → *from age 10 to 20*; `zel z+3 z+5` → *3 ≻ 5* (preference, not a span); `zel z+5` → *\< 5*; `zuel z+5` → *\> 5*; `g+e` → +∞; `g+1e` → *one gazillion*; `g@+1e` → proper name *the Gazillion*; `g~+e` → arbitrarily large but finite; `g+e-` → arbitrarily small but finite; `g#e` → last place; `g~#e` → near last place; `g#e-` → start / beginning place; `g~#e-` → near first place; `g#1e` → *the gazillionth* / *umpteenth*; `g#2e-` → *2nd from the end* / *penultimate*; `h#1e` → *for the gazillionth time*; `x#e-` → *Starting with:*; `v+e` → increase without bound; `h+e` → unbounded multiplicity; `j+e` → *To infinity!*; `j#e` → *Finally!*; `zael z+5 z+5` → *equally 5* / *5 equals 5*; `zaem z+3 z+5` → *3 and 5 approximately equal*; `zar g-spanl z+3 z+5` → *some value in 3–5*; `zol z+3 z+5` → *3 or 5* (discrete, not a range).
+Examples: `z+3 z+5 zal g-agel` → *between ages 3 and 5*; `z-kidl g+3 g+5 gal g-agel` → *kids ages 3–5*; `z+3 ul z+5 zal g-spanl` → *[3, 5)*; `z+10 z+20 zel g-agel` → *from age 10 to 20*; `z+3 z+5 zel` → *3 ≻ 5* (preference, not a span); `z+5 zel` → *\< 5*; `z+5 zuel` → *\> 5*; `g+e` → +∞; `g+1e` → *one gazillion*; `g@+1e` → proper name *the Gazillion*; `g~+e` → arbitrarily large but finite; `g+e-` → arbitrarily small but finite; `g#e` → last place; `g~#e` → near last place; `g#e-` → start / beginning place; `g~#e-` → near first place; `g#1e` → *the gazillionth* / *umpteenth*; `g#2e-` → *2nd from the end* / *penultimate*; `h#1e` → *for the gazillionth time*; `x#e-` → *Starting with:*; `v+e` → increase without bound; `h+e` → unbounded multiplicity; `j+e` → *To infinity!*; `j#e` → *Finally!*; `z+5 z+5 zael` → *equally 5* / *5 equals 5*; `z+3 z+5 zaem` → *3 and 5 approximately equal*; `z+3 z+5 zar g-spanl` → *some value in 3–5*; `z+3 z+5 zol` → *3 or 5* (discrete, not a range).
 
 ## Numeric derivation (compounds)
 

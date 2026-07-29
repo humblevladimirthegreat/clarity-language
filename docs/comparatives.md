@@ -23,7 +23,7 @@ Revision **`el`** (*or rather*) is unrelated. Do **not** encode *than* primarily
 <a id="superlatives"></a>
 <a id="comparative-shared-scale"></a>
 
-**Comparatives reuse rank join.** Bare `zel A B` ranks *alternatives* (preference / priority / contingency from context). When a ranked fence (**`e` / `oe` / `ue`**) carries a SHARED ordinary `/ɡ/` (plus its `/w/` stack), that `/ɡ/` is the **scale of ranking** — not “property of the bundle.” Conjuncts are ordered **along that scale**. **`ae`** with SHARED scale is **not** a comparative ladder — it is [equative](#equatives).
+**Comparatives reuse rank join.** Bare `A B zel` ranks *alternatives* (preference / priority / contingency from context). When a ranked fence (**`e` / `oe` / `ue`**) carries a SHARED ordinary `/ɡ/` (plus its `/w/` stack), that `/ɡ/` is the **scale of ranking** — not “property of the bundle.” Conjuncts are ordered **along that scale**. **`ae`** with SHARED scale is **not** a comparative ladder — it is [equative](#equatives).
 
 | Pattern | Reading |
 |---------|---------|
@@ -37,26 +37,26 @@ Revision **`el`** (*or rather*) is unrelated. Do **not** encode *than* primarily
 
 | Example | Gloss |
 |---------|-------|
-| `zel g-bigl z-Samn z-Lean` | *Sam is bigger than Lea* (closed; Sam ≻ Lea on *big*) |
-| `zem g-talll z-Samn z-Lean z-Patn` | *Sam ≻ Lea ≻ Pat on height* (open; others may rank too) |
-| `zoel g-bigl z-Samn z-Lean` | *Sam is bigger than Lea* (exclusive ranked ladder on *big*) |
-| `zuel g-bigl z-Samn z-Lean` | *Sam is less big than Lea* / Sam ≺ Lea on *big* (closed reverse) |
-| `zel w-muchl g-bigl z-Samn z-Lean` | *Sam is much bigger than Lea* |
-| `zel g-bigl z-Samn` | *Sam is the biggest (of all)* — focus superlative; domain = context / discourse universe unless narrowed elsewhere |
+| `z-Samn z-Lean zel g-bigl` | *Sam is bigger than Lea* (closed; Sam ≻ Lea on *big*) |
+| `z-Samn z-Lean z-Patn zem g-talll` | *Sam ≻ Lea ≻ Pat on height* (open; others may rank too) |
+| `z-Samn z-Lean zoel g-bigl` | *Sam is bigger than Lea* (exclusive ranked ladder on *big*) |
+| `z-Samn z-Lean zuel g-bigl` | *Sam is less big than Lea* / Sam ≺ Lea on *big* (closed reverse) |
+| `z-Samn z-Lean zel w-muchl g-bigl` | *Sam is much bigger than Lea* |
+| `z-Samn zel g-bigl` | *Sam is the biggest (of all)* — focus superlative; domain = context / discourse universe unless narrowed elsewhere |
 | `zel g-bigl` | *unspecified who’s biggest* — bare **e** + scale (not emptiness) |
 | `zoel g-bigl` | *there is no biggest* — bare **empty superlative** (closed **oe** + scale) |
 | `zoem g-bigl` | *no biggest comes to mind* — bare empty superlative (open) |
-| `zuel g-bigl z-Samn` | *Sam is the least big (of all)* — focus reverse / bottom of the scale |
+| `z-Samn zuel g-bigl` | *Sam is the least big (of all)* — focus reverse / bottom of the scale |
 | `zuel g-bigl` | *unspecified who’s least* — bare **e**-family reverse with scale (not empty least) |
-| `zel g-bigl z-Samn z-Lean z-Patn` | *Sam is biggest among these three* (multi; Sam first) |
+| `z-Samn z-Lean z-Patn zel g-bigl` | *Sam is biggest among these three* (multi; Sam first) |
 | `zer g-bigl` | *whatever ranks highest on big* — positive twin of empty `zoel g-bigl`, not emptiness |
-| `zer g-bigl z-Samn z-Lean` | *whichever of Sam or Lea ranks higher on big* |
+| `z-Samn z-Lean zer g-bigl` | *whichever of Sam or Lea ranks higher on big* |
 
 Same under `/d/` / `/b/` when the ranked group fills that slot. Under `/ɡ/`, SHARED `/w/` on a ranked AP fence remains shared *degree* over ranked properties (`gel w-veryl g-happyl g-proudl`), not a noun-scale comparative — noun-scale comparatives use an NP-slot ranked fence (`/z/` `/d/` `/b/`) with SHARED `/ɡ/`.
 
-Assert the ranking as clause content with the same [zero-copula](predication.md#zero-copula) predicative pattern as plain adjectives: `jal zel g-bigl z-Samn z-Lean` → *Sam is bigger than Lea.* When discourse needs the comparee alone as subject of another verb, keep that subject ordinary and place the comparative claim in another slot or sentence — do not force the whole ladder to be the only subject.
+Assert the ranking as clause content with the same [zero-copula](predication.md#zero-copula) predicative pattern as plain adjectives: `jal z-Samn z-Lean zel g-bigl` → *Sam is bigger than Lea.* When discourse needs the comparee alone as subject of another verb, keep that subject ordinary and place the comparative claim in another slot or sentence — do not force the whole ladder to be the only subject.
 
-**Number ranges** (SHARED **continuum** `/ɡ/` + two number endpoints — not bare `zel z+3 z+5`, which stays preference), **numeric thresholds** (focus ranked **`zel z+5`** = *\<5*, **`zuel z+5`** = *\>5*), and **digitless exponents** (**`g+e`** = +∞, **`g#e`** = last place, …): **[numbers.md § Ranges](numbers.md#ranges)** / **[digitless exponents](numbers.md#digitless-exponents)** — not expanded here.
+**Number ranges** (SHARED **continuum** `/ɡ/` + two number endpoints — not bare `z+3 z+5 zel`, which stays preference), **numeric thresholds** (focus ranked **`z+5 zel`** = *\<5*, **`z+5 zuel`** = *\>5*), and **digitless exponents** (**`g+e`** = +∞, **`g#e`** = last place, …): **[numbers.md § Ranges](numbers.md#ranges)** / **[digitless exponents](numbers.md#digitless-exponents)** — not expanded here.
 
 ## Equatives (`ae` + SHARED scale)
 <a id="equatives"></a>
@@ -74,20 +74,20 @@ Assert the ranking as clause content with the same [zero-copula](predication.md#
 
 Open **-m** (`zaem`) = soft / approximate equality (*about as … as*). Closed **-l** = stand behind sameness on the scale for the claim. Named **-n** = conventional equal-set / draw label when useful.
 
-**Distributive *both are big* (not necessarily equal):** SHARED singular scale under **`a`**: `zal g-bigl z-Samn z-Lean` = *Sam and Lea are big*. **Collective** (*ADJ as a unit*): SHARED `/ɡ/`…**-sh** under **`a`** — `zal g-heavylsh z-boxl z-cratel` = *heavy together* — see [plurality.md](plurality.md#collective-ascription). Per-conjunct `/ɡ/` (or left-bound `gl-` per head) is still allowed when conjuncts differ in other material: `zam z-dogl g-bigl z-catl g-bigl`. Scale adjectives in comparative / equative SHARED stay singular (no **-sh**).
+**Distributive *both are big* (not necessarily equal):** SHARED singular scale under **`a`**: `z-Samn z-Lean zal g-bigl` = *Sam and Lea are big*. **Collective** (*ADJ as a unit*): SHARED `/ɡ/`…**-sh** under **`a`** — `z-boxl z-cratel zal g-heavylsh` = *heavy together* — see [plurality.md](plurality.md#collective-ascription). Per-conjunct `/ɡ/` (or left-bound `gl-` per head) is still allowed when conjuncts differ in other material: `z-dogl g-bigl z-catl g-bigl zam`. Scale adjectives in comparative / equative SHARED stay singular (no **-sh**).
 
 | Example | Gloss |
 |---------|-------|
-| `zael g-bigl z-Samn z-Lean` | *Sam is as big as Lea* (closed) |
-| `zaem g-talll z-Samn z-Lean` | *Sam is about as tall as Lea* (open / soft) |
-| `zael g-bigl z-Samn z-Lean z-Patn` | *Sam, Lea, and Pat are equally big* |
+| `z-Samn z-Lean zael g-bigl` | *Sam is as big as Lea* (closed) |
+| `z-Samn z-Lean zaem g-talll` | *Sam is about as tall as Lea* (open / soft) |
+| `z-Samn z-Lean z-Patn zael g-bigl` | *Sam, Lea, and Pat are equally big* |
 | `jal zael g-bigl z-Samn z-Lean` | predicative: *Sam is as big as Lea.* |
-| `zael g-bigl z-dogl z-catl` | *the dog is as big as the cat* |
-| `zal g-bigl z-Samn z-Lean` | *Sam and Lea are big* (distributive — not equative) |
+| `z-dogl z-catl zael g-bigl` | *the dog is as big as the cat* |
+| `z-Samn z-Lean zal g-bigl` | *Sam and Lea are big* (distributive — not equative) |
 
 Same under `/d/` / `/b/` when the equal group fills that slot. Under `/ɡ/`, an **`ae`** AP fence with SHARED `/w/` stays shared degree over conjoined properties — not a noun-scale equative (use an NP-slot **`ae`** fence with SHARED scale `/ɡ/`).
 
-**Contrast with comparative:** `zel g-bigl z-Samn z-Lean` = Sam ≻ Lea on *big*; `zael g-bigl z-Samn z-Lean` = Sam = Lea on *big*. Do **not** encode equative with bare ranked **`e`** (that asserts inequality). Do **not** encode equative with set **`a`** + SHARED scale.
+**Contrast with comparative:** `z-Samn z-Lean zel g-bigl` = Sam ≻ Lea on *big*; `z-Samn z-Lean zael g-bigl` = Sam = Lea on *big*. Do **not** encode equative with bare ranked **`e`** (that asserts inequality). Do **not** encode equative with set **`a`** + SHARED scale.
 
 ## Measured differentials
 <a id="measured-differentials"></a>
@@ -99,8 +99,8 @@ Full shape and unit grammar: **[numbers.md § Measure phrases](numbers.md#measur
 
 | Example | Gloss |
 |---------|-------|
-| `zel g-talll b-inchl g+2 z-Samn z-Lean` | *Sam is two inches taller than Lea* |
-| `zel w-muchl g-talll z-Samn z-Lean` | *Sam is much taller than Lea* (vague degree — `/w/`, no measure NP) |
+| `z-Samn z-Lean zel g-talll b-inchl g+2` | *Sam is two inches taller than Lea* |
+| `z-Samn z-Lean zel w-muchl g-talll` | *Sam is much taller than Lea* (vague degree — `/w/`, no measure NP) |
 
 Do **not** stack two `/b/` arguments (amount + unit) on the scale. Vague degree stays `/w/`; counted gaps use the measure-NP pattern.
 
@@ -116,9 +116,7 @@ Port of Claritish **Worse than** (`worse than Average|Typical|Mine|Social|Profes
 
 Prefer **reverse ranked** **`ue`** on a **positive / neutral** scale (avoid a loaded *bad* root as the SHARED scale):
 
-```
-zuel g-SCALEl z-JUDGEDl z-BENCHMARKn
-```
+```z-JUDGEDl z-BENCHMARKn zuel g-SCALEl```
 
 | Piece | Role |
 |-------|------|

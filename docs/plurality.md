@@ -107,9 +107,9 @@ Most useful with [phrase join](coordination.md): SHARED singular scale under **`
 
 | Example | Gloss |
 |---------|-------|
-| `zal g-heavyl z-boxl z-cratel` | *the box and the crate are (each) heavy* — distributive SHARED |
-| `zal g-heavylsh z-boxl z-cratel` | *the box and the crate are heavy together* — collective SHARED |
-| `zam z-boxl z-cratel g-heavylsh` | same collective reading with the adjective after the conjuncts |
+| `z-boxl z-cratel zal g-heavyl` | *the box and the crate are (each) heavy* — distributive SHARED |
+| `z-boxl z-cratel zal g-heavylsh` | *the box and the crate are heavy together* — collective SHARED |
+| `z-boxl z-cratel zam g-heavylsh` | collective with SHARED after the join (also OK as local `-sh` on last head when not SHARED) |
 | `z-teamr g-largelsh` | *the team is large* (group-level size), not “each member is large” |
 | `z-boxlsh g-heavyl` | *the boxes are heavy* (members / plain) |
 | `z-boxlsh g-heavylsh` | *the boxes are heavy collectively* |
@@ -120,7 +120,7 @@ Most useful with [phrase join](coordination.md): SHARED singular scale under **`
 
 **Scale / continuum `/ɡ/`** in [comparatives](comparatives.md) and [ranges](numbers.md#ranges) stays **singular** — a scale or continuum is one line. Do not pluralize SHARED scale or continuum adjectives.
 
-**Not adjective -sh:** *red books* → plural on the **noun**, singular `/ɡ/` *red*. *She is an angry person* (character) → singular `/ɡ/` + **`hual`** / trait lexicon — not **-sh**. *Both are big* → distributive SHARED **`zal g-bigl …`**, not **-sh**.
+**Not adjective -sh:** *red books* → plural on the **noun**, singular `/ɡ/` *red*. *She is an angry person* (character) → singular `/ɡ/` + **`hual`** / trait lexicon — not **-sh**. *Both are big* → distributive SHARED **`… zal g-bigl`**, not **-sh**.
 
 ### Adjective adjuncts (`/w/`)
 

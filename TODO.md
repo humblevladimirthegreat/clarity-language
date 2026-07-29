@@ -1,5 +1,7 @@
+-Zero exponential 
 -assign all five-letter roots using score system
 -punctuation
+-consider numeric derivation uses phonetic spelling
 
 Dictionary entries:
 -special pronouns

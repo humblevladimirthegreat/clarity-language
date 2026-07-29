@@ -4,7 +4,7 @@ This page is the source of truth for **span fences** (cite / aside / mention / o
 
 **Span fences:** every **open** carries a **PoS**, a **TYPE**, an **EDGE** (extent), and an **ENDING**; **close** is a fixed discourse quartet (**`xuxul`** / **`xuxur`** / **`xuxun`** / **`xuxum`**). Preferred **bracket writing**, fidelity, extent, atomic spans, proper designation, and span anaphors. Discourse linkers and clause joins under `/x/` stay in [language-reference.md](language-reference.md#discourse-markers-x) and [coordination.md](coordination.md). Span fences use ordinary mid-word **`x`** (compound joiner) — [phonology.md](phonology.md#phonotactics). Parallel to [numbers](numbers.md): writing uses shorthand; speech is the full form.
 
-**Scope islands:** writing **`^ … ^`**; speech is **prosody only** (no spoken open/close word). The island is **meaningless until an adjunct binds it**. See [Adjunct-scope islands](#adjunct-scope-islands).
+**Scope islands:** writing **`^ … ^`**; speech is **prosody only** (no spoken open/close word). The island requires an **inside binder** — a scope-taking `/h/` and/or a [join](coordination.md#join-scope-islands-rules). See [Adjunct-scope islands](#adjunct-scope-islands).
 
 <a id="writing-vs-speech"></a>
 
@@ -393,13 +393,13 @@ Writing: `d[ d<xuxul> ]`.
 
 <a id="scope-islands"></a>
 
-**Scope islands** mark a **multi-word chunk** so an adjunct can bind that chunk instead of a single host or the whole clause. The edges carry **no meaning of their own**. Prosody (speech) and **`^ … ^`** (writing) are the same device.
+**Scope islands** mark a **multi-word chunk** so an **inside binder** can target that chunk instead of a single host, the whole clause, or (for joins) the full same-slot lookback stretch. The edges carry **no meaning of their own**. Prosody (speech) and **`^ … ^`** (writing) are the same device.
 
 ### Why
 
-A floating `/h/` (*maybe*, *roughly*, *only*, …) under free word order cannot reliably name *which* multi-word stretch it modifies. Clause force soft (**`jam`**) softens the **whole** claim. A `/w/` rides **one** `/ɡ/`. Typed [span fences](#writing) package **wording** (cite / aside / mention / opaque) — heavier than “operator scope over ordinary Clarity words.”
+A floating `/h/` (*maybe*, *roughly*, *only*, …) under free word order cannot reliably name *which* multi-word stretch it modifies. Clause force soft (**`jam`**) softens the **whole** claim. A `/w/` rides **one** `/ɡ/`. A [right-close join](coordination.md) lookback-absorbs every matching-role head before it — too wide when only a sub-stretch should be focus, bare, or nested. Typed [span fences](#writing) package **wording** (cite / aside / mention / opaque) — heavier than “operator scope over ordinary Clarity words.”
 
-Scope islands fill that gap: **edges = parentheses; adjunct = function.**
+Scope islands fill that gap: **edges = parentheses; binder = function.**
 
 ### Writing
 
@@ -419,6 +419,7 @@ Rough English: *I saw ^ maybe the red dog ^* — *maybe* is **inside** the islan
 - **One island per clause.** Do **not** nest islands. Nested packaging → typed span fences ([nesting](#nesting)).
 - Interior is ordinary Clarity (parsed as usual). Do **not** use italic or bold as the scope mark.
 - Empty `^^` is illegal.
+- **Binder required:** the island must contain at least one binder — a scope-taking `/h/` (simple or contiguous `/h/`+`/b/`) and/or a [join](coordination.md#join-scope-islands-rules) particle. Binderless `^ … ^` is **illegal** (no meter-only / chunking-only use).
 - Open and close use the **same** glyph **`^`**; the first unmatched `^` opens, the next closes (one island per clause — no nesting).
 - Prefer spaces inside: `^ h-maybel z-redl z-dogl ^` (not jammed against roots).
 - In Markdown docs, put islands in backticks or `text` fences so engines that treat `^…^` as superscript do not mangle examples.
@@ -430,23 +431,32 @@ Rough English: *I saw ^ maybe the red dog ^* — *maybe* is **inside** the islan
 No spoken open/close word (not `xuxul`, not a new `/x/` stem). Edges are **non-phonemic**:
 
 1. **Open** — brief reset: tiny pause or pitch reset, then a slight upstep into the first word of the island.
-2. **Interior** — one tight intonation phrase (one legato / slur group); less internal pausing than ordinary free-order shuffling; ordinary word stress. The binder (if any) is **inside** that slur.
+2. **Interior** — one tight intonation phrase (one legato / slur group); less internal pausing than ordinary free-order shuffling; ordinary word stress. The binder is **inside** that slur.
 3. **Close** — boundary on the last island stress, then a short pause before what follows.
 
 In singing: an ordinary **phrase bow** on the island — not quote voice (cite), not quiet aside voice (aside). Micro-breaths at the edges only when the line needs them; do not invent a rest glyph for `^`.
 
 ### Binding
 
-**Inside binds.** A scope-taking **`/h/`** (simple, or contiguous `/h/`+`/b/` unit) **binds the island only when it stands inside** `^ … ^`. Prefer it **first** in the island for scanning (`^ h-maybel … ^`).
+**Inside binds.** Binders must stand **inside** `^ … ^`:
+
+| Binder | Job inside the island |
+|--------|------------------------|
+| Scope-taking **`/h/`** (simple or `/h/`+`/b/`) | frames that **chunk** (multi-word adjunct scope). Prefer it **first** in the island for scanning (`^ h-maybel … ^`). |
+| Prefixed **join** (right-close; phrase / VP / clause) | lookback-absorbs **only** matching-role material **inside** the island — [join scope islands](coordination.md#join-scope-islands-rules). The join particle itself is inside (`^ z-waterl zal ^`, not `^ z-waterl ^ zal`). |
+
+`/h/` and a join may **share** one island (`^ h-maybel z-A z-B zam ^` = *maybe (A and B)*).
 
 | Placement | Reading |
 |-----------|---------|
-| `/h/` **inside** the island | frames that **chunk** (multi-word scope) |
+| `/h/` **inside** the island | frames that **chunk** |
 | `/h/` **outside** the island | ordinary floating adverb — frames the **verb / clause** as usual |
+| Join **inside** the island | joins only interior conjuncts |
+| Join **outside** with island nearby | ordinary lookback (island edges do not filter an outside join) |
 
 **`/w/` does not bind islands** — it still only frames the previous `/ɡ/`. For a single-adjective hedge, use `/w/` on that `/ɡ/` (no island).
 
-Bare `^ … ^` with **no** inside `/h/` is **chunking / meter only** — no semantic operator. Several `/h/` units inside one island all scope over that chunk (same co-stacking as clause-level juxtaposition, but island-bounded). Outside `/h/` never “steals” or loses clause scope just because an island is present:
+Several `/h/` units inside one island all scope over that chunk (same co-stacking as clause-level juxtaposition, but island-bounded). Outside `/h/` never “steals” or loses clause scope just because an island is present:
 
 ```text
 jal h-yesterdayl ^ h-maybel z-redl z-dogl ^ v-sawl
@@ -454,7 +464,16 @@ jal h-yesterdayl ^ h-maybel z-redl z-dogl ^ v-sawl
 
 *yesterday* = clause; *maybe* = over *the red dog*.
 
-The binder keeps its lexicon meaning (*maybe*, *roughly*, *only*, …). The island only supplies **multi-word scope**.
+Join examples (right-close; outer join ties leftover same-slot material):
+
+```text
+jal z-Samn ^ z-waterl zal ^ zam v-sawl
+jal z-Samn ^ zal ^ zam v-sawl
+```
+
+*Sam and (just water)*; *Sam and nothing*. Illegal without the outer join: `z-Samn ^ z-waterl zal ^` as two subject units with no join.
+
+The binder keeps its lexicon / join meaning. The island only supplies **multi-word (or sub-list) scope**.
 
 Sketch contrast:
 
@@ -463,7 +482,8 @@ Sketch contrast:
 | `jam … z-redl z-dogl …` | whole-clause hedge (**`jam`**) |
 | `jal h-maybel z-redl z-dogl …` | *maybe* with default clause scope (ambiguous vs NP) |
 | `jal ^ h-maybel z-redl z-dogl ^ …` | *maybe* over **the red dog** as a unit |
-| `jal h-maybel ^ z-redl z-dogl ^ …` | *maybe* still **clause-level**; island is meter-only (no inside binder) |
+| `jal h-maybel ^ z-redl z-dogl ^ …` | **illegal** — island has no inside binder |
+| `jal z-Samn ^ z-waterl zal ^ zam …` | *Sam and (just water)* |
 
 ### Not this
 
@@ -473,6 +493,8 @@ Sketch contrast:
 | Whole-clause soft assert | **`jam`** — [clause force](language-reference.md#clause-force) |
 | Single-adjective frame | `/w/` on that `/ɡ/` |
 | Outside `/h/` meant to cover a multi-word chunk | put that `/h/` **inside** `^ … ^` |
+| Join over only part of a same-slot stretch | put that join **inside** `^ … ^` — [coordination.md](coordination.md#join-scope-islands-rules) |
+| Binderless / meter-only parentheses | **illegal** — require `/h/` and/or join inside |
 | Cite / mention / aside / opaque brackets | `[` `]` `{` `}` `(` `)` `<` `>` with PoS |
 | Spoken name for the edges | *(none)* — prosody only |
 
@@ -482,7 +504,7 @@ Sketch contrast:
 
 | Need | Use instead |
 |------|-------------|
-| Multi-word adjunct scope without typed wording | [adjunct-scope islands](#adjunct-scope-islands) **`^ … ^`** |
+| Multi-word adjunct or join scope without typed wording | [adjunct-scope islands](#adjunct-scope-islands) **`^ … ^`** (binder inside: `/h/` and/or join) |
 | Clause *and* / *or* / ranked claim join | `/x/` joins `xal` / `xol` / … — [coordination.md](coordination.md#clause-level-coordination) |
 | Clause negation *no* / *not* | `xul` / `xum` / `xun` — **not** `xuxul` / `xuxum` / `xuxur` / `xuxun` |
 | Em dash as truncated closer | ASCII hyphen + closer `-]` / `xuxur` — not an em dash |

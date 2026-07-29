@@ -42,7 +42,7 @@ Closed `/v/` verbs that **perform the join-series act** on an object. Spellings 
 | exclude vs anything but | `jal z-hen d-nutl vuan` vs `jal z-hen d-nutl vuon` | *I exclude nuts* vs *I bar nuts (anything else is fine)* |
 | one choice vs open picks | `jal z-hen d-pathl von` vs `jal z-hen d-pathl vaon` | *I choose that path (only)* vs *I pick that path (more may come)* |
 | prioritize vs try | `jal z-hen d-fixl ven` vs `jal z-hen d-fixl voen` | *I prioritize the fix* vs *I try the fix* |
-| *and then* (clauses) | `xan SENT₁ SENT₂` | *SENT₁ and then SENT₂* — **not** `van` |
+| *and then* (clauses) | `SENT₁ SENT₂ xan` | *SENT₁ and then SENT₂* — **not** `van` |
 
 ### Constraints
 
@@ -54,7 +54,7 @@ Closed `/v/` verbs that **perform the join-series act** on an object. Spellings 
 <a id="join-relations"></a>
 <a id="join-relation-gh"></a>
 
-Closed **complex** `/ɡ/` adjectives and `/h/` adverbs that **frame a host via the join-series move** toward one `/b/` argument. Same vowel map as [join-act verbs](#join-act-verbs). They are **not** phrase named-list joins and **not** [restrictors](restrictors.md) — stock AP bundles use [mention](spans.md) spans instead of old `gan A B` lists.
+Closed **complex** `/ɡ/` adjectives and `/h/` adverbs that **frame a host via the join-series move** toward one `/b/` argument. Same vowel map as [join-act verbs](#join-act-verbs). They are **not** phrase named-list joins and **not** [restrictors](restrictors.md) — stock AP bundles use [mention](spans.md) spans instead of old `A B gan` lists.
 
 ### Pattern
 
@@ -82,10 +82,10 @@ Closed **complex** `/ɡ/` adjectives and `/h/` adverbs that **frame a host via t
 
 | | Clarity | Gloss |
 |--|---------|--------|
-| refuse vs exclude | `gun b-meatol` vs `guan b-meatol` | *anti-meat* vs *without meat* |
-| exclude vs anything but | `guan b-nutl` vs `guon b-nutl` | *without nuts* vs *open to anything but nuts* |
-| sole vs open pick | `gon b-pathl` vs `gaon b-pathl` | *path-only* vs *path among options* |
-| prioritize vs try | `gen b-fixl` vs `goen b-fixl` | *fix-first* vs *try-the-fix* |
+| refuse vs exclude | `b-meatol gun` vs `b-meatol guan` | *anti-meat* vs *without meat* |
+| exclude vs anything but | `b-nutl guan` vs `b-nutl guon` | *without nuts* vs *open to anything but nuts* |
+| sole vs open pick | `b-pathl gon` vs `b-pathl gaon` | *path-only* vs *path among options* |
+| prioritize vs try | `b-fixl gen` vs `b-fixl goen` | *fix-first* vs *try-the-fix* |
 | relation vs reviser | `z-teaml gan b-Samn` vs `z-teaml al z-Samn` | PP-like *team including Sam* vs slot-repair *team, including Sam* |
 | stock AP label | `g{primary colors}` / mention span | **not** `gan g-redl g-bluel` (that spelling is content *including*, needs `/b/`) |
 
