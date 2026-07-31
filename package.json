@@ -30,7 +30,7 @@
     "ngsl-metaphor-apply": "python3 scripts/apply-ngsl-metaphor-waves.py",
     "metaphor-quality-apply": "python3 scripts/apply-metaphor-quality-pass.py",
     "metaphor-assign": "tsx scripts/phase5-metaphor-assign.ts",
-    "metaphor-assign-test": "tsx scripts/lib/metaphor-assign-data.test.ts",
+    "metaphor-assign-test": "tsx scripts/lib/metaphor-assign-data.test.ts && tsx scripts/lib/llm-client.test.ts",
     "web": "npx --yes serve . -p 4173"
   },
   "engines": {

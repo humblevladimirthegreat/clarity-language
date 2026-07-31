@@ -460,11 +460,34 @@ Helpers: `parseMetaphoricalCell` / `formatMetaphoricalCell` in `scripts/ngsl-cov
 
 ### LLM metaphor assignment
 
-Approach B for Phase 5: given a **target metaphor lemma**, find the best empty `metaphorical` row via a local OpenAI-compatible model (LM Studio, llama.cpp server, etc.).
+Approach B for Phase 5: given a **target metaphor lemma**, find the best empty `metaphorical` row via a local OpenAI-compatible model (**LM Studio** on the host).
+
+**Setup (devcontainer):**
+
+1. On the **host**, start LM Studio local server on port **1234** with the OpenAI-compatible API and load a model (e.g. Qwen 3.6 27B).
+2. The devcontainer sets `LM_STUDIO_BASE_URL=http://host.docker.internal:1234/v1` and `host.docker.internal` host-gateway mapping.
+3. Copy [`.env.example`](../.env.example) to `.env` and set `LM_STUDIO_MODEL` to an id from `GET /v1/models`.
+4. Verify from inside the container:
+
+```bash
+npm run metaphor-assign -- ping
+npm run metaphor-assign -- ping --smoke-test
+```
+
+**Environment variables:**
+
+| Variable | Purpose | Devcontainer default |
+|----------|---------|----------------------|
+| `LM_STUDIO_BASE_URL` | OpenAI-compatible `/v1` URL | `http://host.docker.internal:1234/v1` |
+| `LM_STUDIO_MODEL` | Model id (see `/models`) | *(required — set in `.env`)* |
+| `OPENAI_API_KEY` | Required by client; LM Studio ignores it | `lm-studio-local-key` |
+| `LLM_REQUEST_TIMEOUT_MS` | Per-request timeout | `600000` (10 min) |
+
+Legacy aliases: `OPENAI_BASE_URL`, `METAPHOR_ASSIGN_MODEL`. LangChain-style `openai:` model prefixes are stripped automatically.
 
 **Two-pass flow:**
 
-1. **Pass 1 (recall):** shuffle empty rows with a seeded RNG, split into random chunks (default 5 × ~90 rows), ask the model for top 10 picks per chunk → merge, dedupe, keep top 50.
+1. **Pass 1 (recall):** shuffle empty rows with a seeded RNG, split into random chunks (default 5 × ~90 rows), ask the model for top 10 picks per chunk (sequential calls) → merge, dedupe, keep top 50.
 2. **Pass 2 (precision):** from the pool of 50, return 5 ranked candidates with draft mnemonics and teachability scores.
 3. **Human review:** edit `data/phase5-assign/{lemma}.json` — set `human.chosen_rank`, `human.decision` (`accept` or `REVIEW`), optional `human.mnemonic_final`.
 4. **Apply:** write accepted choice to `lexicon-published.csv`. Run `deduplicate-metaphors.py` after batch applies.
@@ -472,9 +495,7 @@ Approach B for Phase 5: given a **target metaphor lemma**, find the best empty `
 **Commands:**
 
 ```bash
-export METAPHOR_ASSIGN_MODEL=your-local-model
-export OPENAI_BASE_URL=http://localhost:1234/v1   # optional
-
+npm run metaphor-assign -- ping [--smoke-test]
 npm run metaphor-assign -- propose --lemma=relief [--seed=42] [--chunks=5] [--per-chunk=10] [--pass=1|2|all]
 npm run metaphor-assign -- review --lemma=relief
 npm run metaphor-assign -- apply --lemma=relief [--dry-run]

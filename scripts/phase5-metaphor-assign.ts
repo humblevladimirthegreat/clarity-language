@@ -6,7 +6,7 @@
  * review  — print top-5 table for human
  * apply   — write human accept decision to lexicon-published.csv
  *
- * Env: OPENAI_BASE_URL, OPENAI_API_KEY, METAPHOR_ASSIGN_MODEL
+ * Env: LM_STUDIO_BASE_URL, LM_STUDIO_MODEL, OPENAI_API_KEY
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -31,8 +31,11 @@ import {
   type StagingFile,
 } from "./lib/metaphor-assign-data.js";
 import {
+  chatCompletion,
   chatCompletionJson,
+  checkLlmHealth,
   loadLlmConfig,
+  resolveLlmConfig,
   type LlmClientConfig,
 } from "./lib/llm-client.js";
 import {
@@ -43,26 +46,29 @@ import {
   pass2SystemPrompt,
   pass2UserPrompt,
 } from "./lib/metaphor-assign-prompts.js";
+import { loadProjectEnv } from "./lib/load-env.js";
 
 const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..");
+loadProjectEnv(rootDir);
 const assignDir = join(rootDir, "data", "phase5-assign");
 
 type CliArgs = {
-  command: "propose" | "review" | "apply";
+  command: "propose" | "review" | "apply" | "ping";
   lemma: string;
   seed: number;
   chunks: number;
   perChunk: number;
   pass: "1" | "2" | "all";
   dryRun: boolean;
+  smokeTest: boolean;
 };
 
 function parseArgs(argv: string[]): CliArgs {
   const tokens = argv.slice(2);
   const command = tokens[0];
-  if (command !== "propose" && command !== "review" && command !== "apply") {
+  if (command !== "propose" && command !== "review" && command !== "apply" && command !== "ping") {
     throw new Error(
-      "Usage: npm run metaphor-assign -- <propose|review|apply> --lemma=WORD [options]",
+      "Usage: npm run metaphor-assign -- <propose|review|apply|ping> [--lemma=WORD] [options]",
     );
   }
 
@@ -72,10 +78,15 @@ function parseArgs(argv: string[]): CliArgs {
   let perChunk = 10;
   let pass: "1" | "2" | "all" = "all";
   let dryRun = false;
+  let smokeTest = false;
 
   for (const token of tokens.slice(1)) {
     if (token === "--dry-run") {
       dryRun = true;
+      continue;
+    }
+    if (token === "--smoke-test") {
+      smokeTest = true;
       continue;
     }
     const eq = token.indexOf("=");
@@ -104,12 +115,14 @@ function parseArgs(argv: string[]): CliArgs {
     }
   }
 
-  if (!lemma) throw new Error("--lemma=WORD is required");
-  if (!Number.isInteger(seed)) throw new Error("--seed must be an integer");
-  if (!Number.isInteger(chunks) || chunks < 1) throw new Error("--chunks must be >= 1");
-  if (!Number.isInteger(perChunk) || perChunk < 1) throw new Error("--per-chunk must be >= 1");
+  if (command !== "ping" && !lemma) throw new Error("--lemma=WORD is required");
+  if (command === "propose" || command === "review" || command === "apply") {
+    if (!Number.isInteger(seed)) throw new Error("--seed must be an integer");
+    if (!Number.isInteger(chunks) || chunks < 1) throw new Error("--chunks must be >= 1");
+    if (!Number.isInteger(perChunk) || perChunk < 1) throw new Error("--per-chunk must be >= 1");
+  }
 
-  return { command, lemma, seed, chunks, perChunk, pass, dryRun };
+  return { command, lemma, seed, chunks, perChunk, pass, dryRun, smokeTest };
 }
 
 function loadStaging(lemma: string): StagingFile | null {
@@ -331,6 +344,68 @@ function cmdApply(lemma: string, dryRun: boolean): void {
   console.log(`Applied ${staging.lemma} → ${emoji} in ${publishedPath()}`);
 }
 
+async function ensureLlmHealthy(config: LlmClientConfig): Promise<void> {
+  const health = await checkLlmHealth(config);
+  if (!health.ok) {
+    throw new Error(
+      health.error ??
+        `LM Studio health check failed for ${health.baseUrl}. Run \`npm run metaphor-assign -- ping\`.`,
+    );
+  }
+}
+
+async function cmdPing(smokeTest: boolean): Promise<void> {
+  const config = resolveLlmConfigForPing();
+  const health = await checkLlmHealth(config);
+
+  console.log(`Base URL: ${health.baseUrl}`);
+  console.log(`Model: ${config.model || "(not set)"}`);
+  console.log(`Health: ${health.ok ? "ok" : "failed"}`);
+
+  if (health.models.length > 0) {
+    console.log("\nAvailable models:");
+    for (const id of health.models) {
+      const marker = id === config.model ? " *" : "";
+      console.log(`  - ${id}${marker}`);
+    }
+  }
+
+  if (!config.model) {
+    console.log("\nSet LM_STUDIO_MODEL to one of the ids above.");
+  }
+
+  if (health.error) {
+    console.error(`\nError: ${health.error}`);
+    process.exit(1);
+  }
+
+  if (!smokeTest) return;
+
+  if (!config.model) {
+    throw new Error("LM_STUDIO_MODEL is required for --smoke-test");
+  }
+
+  console.log("\nSmoke test: sending chat completion...");
+  const reply = await chatCompletion(
+    config,
+    [
+      { role: "system", content: "Reply with JSON only." },
+      { role: "user", content: 'Return exactly: {"status":"ok"}' },
+    ],
+    { temperature: 0, maxTokens: 512 },
+  );
+  console.log(`Response: ${reply.slice(0, 200)}`);
+  console.log("Smoke test passed.");
+}
+
+function resolveLlmConfigForPing(): LlmClientConfig {
+  try {
+    return loadLlmConfig();
+  } catch {
+    return resolveLlmConfig();
+  }
+}
+
 async function cmdPropose(args: CliArgs): Promise<void> {
   const lemma = normalizeLemma(args.lemma);
   if (!isValidLemma(lemma)) {
@@ -344,6 +419,7 @@ async function cmdPropose(args: CliArgs): Promise<void> {
   }
 
   const config = loadLlmConfig();
+  await ensureLlmHealthy(config);
   const existing = loadStaging(lemma);
   const staging =
     existing ??
@@ -384,6 +460,9 @@ async function main(): Promise<void> {
       break;
     case "apply":
       cmdApply(args.lemma, args.dryRun);
+      break;
+    case "ping":
+      await cmdPing(args.smokeTest);
       break;
     default:
       throw new Error(`Unknown command: ${args.command}`);

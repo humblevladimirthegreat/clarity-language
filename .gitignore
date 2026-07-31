@@ -7,3 +7,4 @@ src/generated/
 *.log
 .env
 .env.*
+!.env.example

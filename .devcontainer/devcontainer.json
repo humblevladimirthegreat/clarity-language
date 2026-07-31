@@ -1,6 +1,10 @@
 {
   "name": "clarity-language",
   "image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
+  "runArgs": ["--add-host=host.docker.internal:host-gateway"],
+  "containerEnv": {
+    "LM_STUDIO_BASE_URL": "http://host.docker.internal:1234/v1"
+  },
   "postCreateCommand": "npm install && npm run generate",
   "customizations": {
     "vscode": {
@@ -14,6 +18,6 @@
       }
     }
   },
-  "forwardPorts": [],
+  "forwardPorts": [1234],
   "remoteUser": "node"
 }
