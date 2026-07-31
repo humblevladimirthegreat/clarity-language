@@ -456,6 +456,31 @@ Helpers: `parseMetaphoricalCell` / `formatMetaphoricalCell` in `scripts/ngsl-cov
 | `scripts/generate-metaphor-batch.py` | Phase 5: generate places/symbols metaphor batch JSON |
 | `scripts/apply-metaphor-quality-pass.py` | Phase 5: apply quality metaphors + mnemonics to `lexicon-published.csv` |
 | `scripts/deduplicate-metaphors.py` | Phase 5: flag demonyms + unique metaphor dedup (`metaphorical` empty + `mnemonic=REVIEW` for losers) |
+| `scripts/phase5-metaphor-assign.ts` | Phase 5: two-pass LLM metaphor assignment (target lemma → empty row); see [LLM metaphor assignment](#llm-metaphor-assignment) |
+
+### LLM metaphor assignment
+
+Approach B for Phase 5: given a **target metaphor lemma**, find the best empty `metaphorical` row via a local OpenAI-compatible model (LM Studio, llama.cpp server, etc.).
+
+**Two-pass flow:**
+
+1. **Pass 1 (recall):** shuffle empty rows with a seeded RNG, split into random chunks (default 5 × ~90 rows), ask the model for top 10 picks per chunk → merge, dedupe, keep top 50.
+2. **Pass 2 (precision):** from the pool of 50, return 5 ranked candidates with draft mnemonics and teachability scores.
+3. **Human review:** edit `data/phase5-assign/{lemma}.json` — set `human.chosen_rank`, `human.decision` (`accept` or `REVIEW`), optional `human.mnemonic_final`.
+4. **Apply:** write accepted choice to `lexicon-published.csv`. Run `deduplicate-metaphors.py` after batch applies.
+
+**Commands:**
+
+```bash
+export METAPHOR_ASSIGN_MODEL=your-local-model
+export OPENAI_BASE_URL=http://localhost:1234/v1   # optional
+
+npm run metaphor-assign -- propose --lemma=relief [--seed=42] [--chunks=5] [--per-chunk=10] [--pass=1|2|all]
+npm run metaphor-assign -- review --lemma=relief
+npm run metaphor-assign -- apply --lemma=relief [--dry-run]
+```
+
+Staging files live in `data/phase5-assign/`. Re-run `propose` with a different `--seed` to explore other chunk neighborhoods. The target lemma must not already appear in `metaphorical`.
 
 Manual editing in `data/lexicon.csv` is the source of truth for `literal`. Treat `docs/language-reference.md` as grammar authority and `docs/phonology.md` as phonology authority; this doc owns lexicon process only.
 
