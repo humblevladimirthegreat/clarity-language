@@ -19,11 +19,11 @@ function loadExistingPublishedFields(): Map<string, { metaphorical: string; mnem
   const { rows } = parseCsv(readFileSync(outputPath, "utf8"));
   for (const row of rows) {
     const emoji = row.emoji ?? "";
-    const metaphorical = (row.metaphorical ?? "").trim();
-    const mnemonic = (row.mnemonic ?? "").trim();
-    if (emoji && (metaphorical || mnemonic)) {
-      map.set(emoji, { metaphorical, mnemonic });
-    }
+    if (!emoji) continue;
+    map.set(emoji, {
+      metaphorical: (row.metaphorical ?? "").trim(),
+      mnemonic: (row.mnemonic ?? "").trim(),
+    });
   }
   return map;
 }
@@ -47,7 +47,7 @@ for (const row of kept) {
   const literal = (row.literal ?? "").trim();
   const existing = existingPublished.get(emoji);
   try {
-    const clarity = toUniqueClarityWord(literal, usedRoots, 2, 8);
+    const clarity = toUniqueClarityWord(literal, usedRoots);
     out.push(
       [
         escapeCsvField(emoji),

@@ -75,8 +75,7 @@ for (const row of withConcepts) {
   const emoji = row.emoji ?? "";
   const english = (row.concept ?? "").trim();
   try {
-    // Emoji concepts collide more than NGSL; allow longer roots for uniqueness.
-    const clarity = toUniqueClarityWord(english, usedRoots, 2, 8);
+    const clarity = toUniqueClarityWord(english, usedRoots);
     out.push(
       `${escapeCsvField(emoji)},${escapeCsvField(english)},${escapeCsvField(clarity)}`,
     );
