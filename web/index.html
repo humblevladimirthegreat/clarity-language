@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Clarity Emojis</title>
+  <title>Clarity Lexicon</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -16,6 +16,7 @@
       --line: #d4cfc4;
       --row-hover: #e8e2d6;
       --focus: #2a6f6a;
+      --review: #8a6a2a;
     }
 
     * {
@@ -34,7 +35,7 @@
     }
 
     main {
-      max-width: 52rem;
+      max-width: 72rem;
       margin: 0 auto;
       padding: 2.5rem 1.25rem 4rem;
     }
@@ -144,7 +145,7 @@
     td {
       padding: 0.55rem 1rem;
       border-bottom: 1px solid var(--line);
-      vertical-align: middle;
+      vertical-align: top;
     }
 
     tbody tr:last-child td {
@@ -161,7 +162,7 @@
       width: 3.5rem;
     }
 
-    .english {
+    .literal {
       color: var(--ink);
     }
 
@@ -169,9 +170,29 @@
       font-family: "IBM Plex Mono", monospace;
       font-weight: 500;
       letter-spacing: 0.02em;
+      white-space: nowrap;
     }
 
-    @media (max-width: 480px) {
+    .empty {
+      color: var(--muted);
+    }
+
+    .review {
+      color: var(--review);
+      font-size: 0.85rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .match-fields {
+      display: block;
+      margin-top: 0.2rem;
+      color: var(--muted);
+      font-size: 0.78rem;
+    }
+
+    @media (max-width: 720px) {
       th, td {
         padding: 0.5rem 0.65rem;
       }
@@ -179,19 +200,23 @@
       .emoji {
         width: 2.75rem;
       }
+
+      .match-fields {
+        display: none;
+      }
     }
   </style>
 </head>
 <body>
   <main>
     <header>
-      <h1>Clarity Emojis</h1>
-      <p class="subtitle">Emoji → English gloss → Clarity word</p>
+      <h1>Clarity Lexicon</h1>
+      <p class="subtitle">Published emoji roots — literal, metaphorical, and Clarity word</p>
     </header>
 
     <div class="toolbar">
-      <label for="filter">Filter</label>
-      <input id="filter" type="search" placeholder="Filter by emoji, English, or Clarity…" autocomplete="off" />
+      <label for="filter">Search</label>
+      <input id="filter" type="search" placeholder="Search literal, metaphor, clarity, mnemonic…" autocomplete="off" />
       <span class="count" id="count" hidden></span>
     </div>
 
@@ -201,8 +226,10 @@
         <thead>
           <tr>
             <th scope="col">Emoji</th>
-            <th scope="col">English</th>
+            <th scope="col">Literal</th>
             <th scope="col">Clarity</th>
+            <th scope="col">Metaphorical</th>
+            <th scope="col">Mnemonic</th>
           </tr>
         </thead>
         <tbody id="tbody"></tbody>
@@ -210,60 +237,21 @@
     </div>
   </main>
 
-  <script>
-    const CSV_URL = "../data/emojis-clarity.csv";
+  <script type="module">
+    import {
+      createLexiconIndex,
+      parsePublishedCsv,
+      searchLexicon,
+    } from "./lib/lexicon-search.js";
 
-    /** @type {{ emoji: string, english: string, clarity: string }[]} */
+    const CSV_URL = "../data/lexicon-published.csv";
+    const DEBOUNCE_MS = 100;
+
+    /** @type {import("../src/lexicon-search.js").PublishedRow[]} */
     let rows = [];
-
-    /**
-     * Minimal CSV parser for this three-column file (no quoted commas).
-     * @param {string} text
-     */
-    function parseCsv(text) {
-      const lines = text.trim().split(/\r?\n/);
-      if (lines.length < 2) return [];
-      const header = lines[0].split(",");
-      if (header.join(",") !== "emoji,english,clarity") {
-        throw new Error(`Unexpected CSV header: ${header.join(",")}`);
-      }
-      return lines.slice(1).map((line) => {
-        const [emoji, english, clarity] = line.split(",");
-        return { emoji, english, clarity };
-      });
-    }
-
-    function render(filter = "") {
-      const q = filter.trim().toLowerCase();
-      const filtered = q
-        ? rows.filter(
-            (r) =>
-              r.emoji.includes(q) ||
-              r.english.toLowerCase().includes(q) ||
-              r.clarity.toLowerCase().includes(q)
-          )
-        : rows;
-
-      const tbody = document.getElementById("tbody");
-      tbody.replaceChildren(
-        ...filtered.map((r) => {
-          const tr = document.createElement("tr");
-          tr.innerHTML = `
-            <td class="emoji">${r.emoji}</td>
-            <td class="english">${escapeHtml(r.english)}</td>
-            <td class="clarity">${escapeHtml(r.clarity)}</td>
-          `;
-          return tr;
-        })
-      );
-
-      const count = document.getElementById("count");
-      count.hidden = false;
-      count.textContent =
-        filtered.length === rows.length
-          ? `${rows.length} rows`
-          : `${filtered.length} of ${rows.length}`;
-    }
+    /** @type {import("minisearch").default | null} */
+    let index = null;
+    let debounceTimer = 0;
 
     /** @param {string} s */
     function escapeHtml(s) {
@@ -274,13 +262,63 @@
         .replaceAll('"', "&quot;");
     }
 
+  /** @param {string} value */
+    function formatMetaphorical(value) {
+      if (!value) return '<span class="empty">—</span>';
+      return escapeHtml(value);
+    }
+
+    /** @param {string} value */
+    function formatMnemonic(value) {
+      if (!value) return '<span class="empty">—</span>';
+      if (value === "REVIEW") return '<span class="review">REVIEW</span>';
+      return escapeHtml(value);
+    }
+
+    /** @param {import("../src/lexicon-search.js").LexiconSearchResult} row */
+    function renderRow(row) {
+      const matchLabel =
+        row.matchFields.length > 0
+          ? `<span class="match-fields">matched: ${escapeHtml(row.matchFields.join(", "))}</span>`
+          : "";
+
+      return `
+        <td class="emoji">${row.emoji}</td>
+        <td class="literal">${escapeHtml(row.literal)}${matchLabel}</td>
+        <td class="clarity">${escapeHtml(row.clarity)}</td>
+        <td>${formatMetaphorical(row.metaphorical)}</td>
+        <td>${formatMnemonic(row.mnemonic)}</td>
+      `;
+    }
+
+    /** @param {string} query */
+    function render(query = "") {
+      const results = searchLexicon(index, rows, query);
+      const tbody = document.getElementById("tbody");
+      tbody.replaceChildren(
+        ...results.map((row) => {
+          const tr = document.createElement("tr");
+          tr.innerHTML = renderRow(row);
+          return tr;
+        }),
+      );
+
+      const count = document.getElementById("count");
+      count.hidden = false;
+      const trimmed = query.trim();
+      count.textContent = !trimmed
+        ? `${rows.length} rows`
+        : `${results.length} of ${rows.length}`;
+    }
+
     async function main() {
       const status = document.getElementById("status");
       const wrap = document.getElementById("table-wrap");
       try {
         const res = await fetch(CSV_URL);
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        rows = parseCsv(await res.text());
+        rows = parsePublishedCsv(await res.text());
+        index = createLexiconIndex(rows);
         status.hidden = true;
         wrap.hidden = false;
         render();
@@ -293,7 +331,9 @@
     }
 
     document.getElementById("filter").addEventListener("input", (e) => {
-      render(/** @type {HTMLInputElement} */ (e.target).value);
+      const value = /** @type {HTMLInputElement} */ (e.target).value;
+      window.clearTimeout(debounceTimer);
+      debounceTimer = window.setTimeout(() => render(value), DEBOUNCE_MS);
     });
 
     main();

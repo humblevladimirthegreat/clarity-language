@@ -31,7 +31,10 @@
     "metaphor-quality-apply": "python3 scripts/apply-metaphor-quality-pass.py",
     "metaphor-assign": "tsx scripts/phase5-metaphor-assign.ts",
     "metaphor-assign-test": "tsx scripts/lib/metaphor-assign-data.test.ts && tsx scripts/lib/llm-client.test.ts",
-    "web": "npx --yes serve . -p 4173"
+    "lexicon-search": "tsx scripts/lexicon-search.ts",
+    "build:lexicon-web": "esbuild src/lexicon-search.ts --bundle --format=esm --outfile=web/lib/lexicon-search.js --platform=browser",
+    "test": "tsx --test src/**/*.test.ts",
+    "web": "npm run build:lexicon-web && npx --yes serve . -p 4173 -o /web/"
   },
   "engines": {
     "node": ">=20"
@@ -39,9 +42,11 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "antlr4ng": "^3.0.16"
+    "antlr4ng": "^3.0.16",
+    "minisearch": "^7.2.0"
   },
   "devDependencies": {
+    "esbuild": "^0.25.0",
     "@tiptap/core": "^3.29.1",
     "@tiptap/markdown": "^3.29.1",
     "@tiptap/pm": "^3.29.1",
