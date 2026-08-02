@@ -1,4 +1,3 @@
--assign all five-letter roots using score system
 -punctuation
 -consider numeric derivation uses phonetic spelling
 -change values to compassion, rationality, empowerment, in that order
@@ -10,6 +9,8 @@ Dictionary entries:
 -habits: triggered
 -emotion ACT / LOCUS roots
 -COMMENT / mindfulness noting (noted in special-vocabulary.md — six `/h/` exponents; lexicon phonetics still open)
+-evidentiality mood roots (shared; Claritish `caused_` / `predict_` / … — causation.md + plan/predict)
+-universality mood (Claritish `_u` / `_c` / `_lf` / `_ln…` / `_lr(scope)` — port with causation.md)
 - Sentence linkers: *therefore*, *however*, *meanwhile*, *next*, *but*
 -direct observation vs imagination tense
 -thinks/believes is 1st person only

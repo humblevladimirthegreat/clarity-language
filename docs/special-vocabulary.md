@@ -5,7 +5,7 @@ This page is the source of truth for **special morphology and closed roots** tha
 
 Ordinary `/h/` / `/w/` content still defaults to values unless the form is already in a clearer closed subcategory (restrictors, special vocabulary here, evidentiality/mood, degree, adjuncts, numbers) — see [values.md](values.md#default-reading-of-h-and-w).
 
-**Not here:** Claritish *worse than Average|…* benchmarks are NP comparees on comparative fences — [comparatives.md § Judgment benchmarks](comparatives.md#judgment-benchmarks). **Classification** (kind as predicative `/ɡ/`) and closed **`SAME`** **identity** (`g-SAME` + `/b/`) live in **[predication.md](predication.md)** — not a general *to-be* verb and not `x`-compounds.
+**Not here:** Claritish *worse than Average|…* benchmarks are NP comparees on comparative fences — [comparatives.md § Judgment benchmarks](comparatives.md#judgment-benchmarks). **Classification** (kind as predicative `/ɡ/`) and closed **`SAME`** **identity** (`g-SAME` + `/b/`) live in **[predication.md](predication.md)** — not a general *to-be* verb and not `x`-compounds. **Causation** / necessary–sufficient (Claritish `caused_`) reuses joins and these join-relations — **[causation.md](causation.md)** — not a new mood or `x`-compound on this page (optional **`CAUSE`** mood later).
 
 ## Join-act verbs (`v*n`)
 <a id="join-act-verbs"></a>
@@ -88,6 +88,7 @@ Closed **complex** `/ɡ/` adjectives and `/h/` adverbs that **frame a host via t
 | prioritize vs try | `b-fixl gen` vs `b-fixl goen` | *fix-first* vs *try-the-fix* |
 | relation vs reviser | `z-teaml gan b-Samn` vs `z-teaml al z-Samn` | PP-like *team including Sam* vs slot-repair *team, including Sam* |
 | stock AP label | `g{primary colors}` / mention span | **not** `gan g-redl g-bluel` (that spelling is content *including*, needs `/b/`) |
+| open vs without (causal) | `haon b-effortl` vs `huan b-cloudl` | sufficient hit vs necessary-style exclusion — [causation](causation.md) |
 
 ### Constraints
 
@@ -240,7 +241,7 @@ Port of Claritish **Plan or predict** (`plan_None|Vague|Detail|Contingency`, `pr
 | Intention / commitment about what *you* will do | closed **`PLAN`** under `/h/` (optional `/w/` if scoped only to a preceding `/ɡ/`) |
 | Forecast about what will happen | closed **`PREDICT`** under `/h/` (same `/w/` option) |
 | How detailed the intention is | endings (or a tiny closed set) on **`PLAN`** — Claritish None / Vague / Detail / Contingency; **-l / -m / -n / -r** is the natural four-way fit once lexicon lands |
-| How you know the forecast | ordinary **evidentiality** `/h/` stacked with **`PREDICT`** — same inventory as other claims (`caused_`, *thinks*, …), not a predict-only compound series |
+| How you know the forecast | ordinary **evidentiality** `/h/` stacked with **`PREDICT`** — same inventory as other claims (`caused_`, *thinks*, …; causal hosts also use [causation](causation.md) join shapes), not a predict-only compound series |
 
 **Not `x`-compounds:** plan vs predict is a **root choice** (speech-act type), not `xa`/`xu` polarity on a host. Ability compounds onto an activity (`v-singxun`); plan/predict **frame the clause** — content verbs stay bare. Do **not** map plan grain onto contact / preference standing / prescription force / changeability, and do **not** invent `xe`/`xo` (or any `x`+vowel) for future framing.
 

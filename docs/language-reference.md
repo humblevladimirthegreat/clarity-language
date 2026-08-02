@@ -247,6 +247,10 @@ Scalar comparison (ranked **`e` / `oe` / `ue`** *more / …-est*, **`ae`** *as �
 
 Zero-copula **classification** / property ascription (`jal z-Samn g-teacherl`) and closed **`SAME`** **identity** (`jal z-Clarkn g-SAMEl b-Superman`): **[predication.md](predication.md)**. Not scalar equative `ae`; no general *to-be* `/v/`.
 
+# Causation (necessary / sufficient)
+
+Causal / condition claims reuse existing joins — default open sufficient (**`…aom`** / **`haon`**); necessity via **`huan`/`guan`** / **`hal`**; clause poles via `/h/`+NEXT (not `xaom`-as-cause); preference-as-law stacks [values](values.md); no cause-arrow word: **[causation.md](causation.md)**.
+
 # Phrase-level, VP-level, and clause-level joins
 
 Phrase-level **zam** / **gam** / …, VP **vam** / **var** / … (joins **-l** / **-m** / **-r**; VP `-n` = [join-act verbs](special-vocabulary.md#join-act-verbs); `/ɡ/` `/h/` `-n` = [join-relations](special-vocabulary.md#join-relations)), and clause `/x/` + vowel + ending (soft **-n** ≠ named **-n**; *and then* = **`xan`**; **-r** = unspecified-member at all levels): **fence** (right close only; shared modifiers immediately after the join; [fence nesting](coordination.md#fence-nesting)); SHARED scale `/ɡ/` = [comparatives / equatives](comparatives.md) (`z-Samn z-Lean zel g-bigl` / `z-Samn z-Lean zael g-bigl` / `z-Samn z-Lean zal g-bigl` = distributive *both big* / `z-boxl z-cratel zal g-heavylsh` = [collective](plurality.md#collective-ascription) / focus `z-Samn zel g-bigl` / bare `zoel g-bigl` = *no biggest*); SHARED continuum `/ɡ/` + two number endpoints = [number ranges](numbers.md#ranges) (`z+3 z+5 zel g-agel` = *from age 3 to 5*; bare `z+3 z+5 zel` = preference); invert **ua** SHARED `/ɡ/` = [kind domain / generics](coordination.md#universals-domains-generics) (`zual g-catl` = *every cat*; `hual` = habitual *always*); prefix-less **al** / **am** / **an** / **el** / … (**-l** / **-m** / named **-n** required; parallel chains on A) = revisers (*including* / *rather* / *instead* / *except*): **[coordination.md](coordination.md)**. Number ranges and measure phrases: **[numbers.md](numbers.md)**. No bare word-level joins.

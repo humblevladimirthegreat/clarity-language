@@ -3,7 +3,7 @@
 <a id="circumstance-h-w"></a>
 <a id="restrictors"></a>
 
-This page is the source of truth for **restrictors**: join-series spellings under `/h/` or `/w/` that limit when the host applies. Prefixed fence **joins** (entity / property / VP / clause): [coordination.md](coordination.md). Prefix-less **revisers**: [revisers.md](revisers.md). Ability / incapability (not restrictors): [special-vocabulary.md](special-vocabulary.md#ability). **`/h/`…**-n** join-vowel forms (`han`, `hon`, …) are [join-relations](special-vocabulary.md#join-relations), not restrictors. Interrogative *When?* readings: [questions.md](questions.md#circumstance-when).
+This page is the source of truth for **restrictors**: join-series spellings under `/h/` or `/w/` that limit when the host applies. Prefixed fence **joins** (entity / property / VP / clause): [coordination.md](coordination.md). Prefix-less **revisers**: [revisers.md](revisers.md). Ability / incapability (not restrictors): [special-vocabulary.md](special-vocabulary.md#ability). **`/h/`…**-n** join-vowel forms (`han`, `hon`, …) are [join-relations](special-vocabulary.md#join-relations), not restrictors. Necessity-style *never without…* uses **`hal`** (and join-relation **`huan`**) — [causation.md](causation.md#necessary). Interrogative *When?* readings: [questions.md](questions.md#circumstance-when).
 
 Under **`/h/`** and **`/w/`**, the join series + ending is **not** a same-slot sibling join. It marks **applicability circumstances**: when / under which cases the **host** holds.
 
