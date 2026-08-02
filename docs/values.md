@@ -221,7 +221,7 @@ Elsewhere, values are optional — do not tax every clause.
 
 ## Out of scope (for now)
 
-- **Emotion compose** details (ACT / LOCUS lexicon) — recipe lives in [special-vocabulary.md § Emotion compose](special-vocabulary.md#emotion-compose); it *reuses* this ascription, not a parallel tag system.
+- **Emotion compose** — ACT / LOCUS lexicon (`ogena` / `oju` / `ozono` / `abobo` / `oburo` / `agena`) and recipe live in [special-vocabulary.md § Emotion compose](special-vocabulary.md#emotion-compose); it *reuses* this ascription, not a parallel tag system.
 - **COMMENT** / mindfulness noting — [special-vocabulary.md § Comment](special-vocabulary.md#comment); six `/h/` exponents are practice cues, not contact-channel endings on **`xa`**.
 - **Whose-need** / **care direction** (thrive / guard) on prescription — optional later dimensions; force is the primary `xo` split.
 - **Listener / third-person possessives** — no forced value (reminder is for self-gratitude / self-ought / self-judgment).

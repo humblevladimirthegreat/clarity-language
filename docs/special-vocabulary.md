@@ -148,7 +148,7 @@ English attitude verbs smuggle COMMENT plus other loads. Keep COMMENT; put the r
 | Clarity (schematic) | Reading |
 |---------------------|---------|
 | `… h-mindl …` | *I think_m …* — commentary; minding noted |
-| `… z-meetingl w-competxul h-feell h-ACThighl …` | *I fear_f the meeting* — commentary (feeling noted); unmet competence; high arousal |
+| `… z-meetingl w-competxul h-feell h-ogenal …` | *I fear_f the meeting* — commentary (feeling noted); unmet competence; flood (high arousal) |
 | `… h-mindl h-owarom …` | *I hope_m …* — commentary + soft plan (not a hope root) |
 | `… h-lookl …` | *I imagine_l …* — commentary; looking noted |
 
@@ -193,16 +193,47 @@ Port of Claritish **Emotion decompose** (`_[hml][iec]` + value on the judged hos
 |-------|-----------|---------|
 | Situation / judged host | neutral host (`talk`, `draft`, …) | ordinary NP / clause content |
 | Need + met / unmet (+ changeability) | `+c` / `-ct` / … | ordinary [value](values.md) word on that host (`w-competxul`, `w-competxam`, …) |
-| Activation (arousal) | `h` / `m` / `l` | closed mood roots **HIGH** / **MED** / **LOW** under `/h/` (optional `/w/` on a preceding `/ɡ/`) |
-| Locus (where the charge is attributed) | `i` / `e` / `c` | closed mood roots **INTERNAL** / **EXTERNAL** / **CIRCUMSTANTIAL** under `/h/` (same `/w/` option) |
+| Activation (arousal) | `h` / `m` / `l` | closed mood roots **HIGH** / **MED** / **LOW** under `/h/` (optional `/w/` on a preceding `/ɡ/`) — water **tide** metaphors below |
+| Locus (where the charge is attributed) | `i` / `e` / `c` | closed mood roots **INTERNAL** / **EXTERNAL** / **CIRCUMSTANTIAL** under `/h/` (same `/w/` option) — water **vessel** metaphors below |
+
+**Conceptual metaphor (one fluid story):** affect is **water**. **ACT** = how much / how fast it moves (**tide** dynamics). **LOCUS** = where that water is held or directed (**vessel** / transfer / ambient field). Same substance on both axes — stack ACT + LOCUS; do not invent separate physics per cell.
+
+### Activation roots (ACT)
+
+| Slot | Claritish | Lexicon root | Metaphor |
+|------|-----------|--------------|----------|
+| **HIGH** | `h` | **`ogena`** 🌊 *ocean-wave* → *flood* | high arousal — water in flood / surge |
+| **MED** | `m` | **`oju`** 🪼 *jellyfish* → *flow* | mid arousal — drifts with the current |
+| **LOW** | `l` | **`ozono`** 🌨️ *snow* → *stillness* | low arousal — calm / slack water |
+
+### Locus roots (LOCUS)
+
+| Slot | Claritish | Lexicon root | Metaphor |
+|------|-----------|--------------|----------|
+| **INTERNAL** | `i` | **`abobo`** 🍼 *baby-bottle* → *bottle* | charge held inside the speaker (in-vessel) |
+| **EXTERNAL** | `e` | **`oburo`** 🫗 *pour* → *pour* | charge directed at / attributed to other people |
+| **CIRCUM** | `c` | **`agena`** 🕯️ *candle* → *awash* | charge on the situation / ambient field — not owned by a person |
+
+**Ordinary content still available:** these roots remain normal lexicon words under other PoS (`z-ogenal` *an ocean wave*; `v-oburol` *to pour*; …). The special reading is the floating mood use, especially `/h/`.
+
+**EXTERNAL is one root** (`oburo` = other-directed transfer). Teaching idioms **scale the transfer with ACT** (composition, not three EXTERNAL roots):
+
+| ACT × EXTERNAL | Idiom | Reading |
+|----------------|-------|---------|
+| **`ogena`** + **`oburo`** | *poured / surged onto them* | high other-directed charge |
+| **`oju`** + **`oburo`** | *flowing toward them* | mid other-directed charge |
+| **`ozono`** + **`oburo`** | *pooling at them* | low other-directed charge — settled water at their locus |
+
+Parallel INTERNAL / CIRCUM cues: *flood bottled* / *flow held* / *still in the vessel*; *room awash* / *undercurrent in the air* / *slack shared water*. Keep CIRCUM as **shared / ambient field** (candle-light filling the room), not a second vessel.
 
 **Recipe (judgment / explanation):** neutral description + **one value ascription** + **one ACT** + **one LOCUS**. Stack as free `/h/` / `/w/` units — do not mega-tag one host the way Claritish `_hc-ct` does.
 
-| Clarity (schematic) | Reading |
-|---------------------|---------|
-| `z-talkl w-competxul h-ACThighl h-LOCUScircuml` | *anxious about the talk* → talk costs competence (temporary); high arousal; charge on the situation |
-| `z-splitl w-relatxum h-ACThighl h-LOCUSexternl` | *resentful about the split* → unmet relatedness; high; charge on others |
-| `z-draftl w-competxam h-ACThighl h-LOCUSinternl` | *proud of the draft* → met competence (mental channel); high; charge internal |
+| Clarity | Reading |
+|---------|---------|
+| `z-talkl w-competxul h-ogenal h-agenal` | *anxious about the talk* → talk costs competence (temporary); flood; room awash (circumstantial) |
+| `z-splitl w-relatxum h-ogenal h-oburol` | *resentful about the split* → unmet relatedness; flood poured onto them |
+| `z-draftl w-competxam h-ogenal h-abobol` | *proud of the draft* → met competence (mental channel); flood bottled (internal) |
+| `z-notel w-relatxum h-ozonol h-oburol` | soft leftover blame → unmet relatedness; stillness pooling at them |
 
 **Raw feeling:** contacting a sensation without judgment/explanation may leave it unlabeled (or use [COMMENT / noting](#comment)). Full compose is required when an emotion word would have done evaluative work — same nudge as neutral praise / criticism.
 
@@ -220,14 +251,15 @@ Port of Claritish **Emotion decompose** (`_[hml][iec]` + value on the judged hos
 
 ### Out of scope (for now)
 
-- Lexicon phonetic forms of **ACT** / **LOCUS** roots (and whether MED shares a form with another soft default).
+- Whether MED (`oju`) shares a form with another soft default.
 - Whether ACT/LOCUS may bind as `/w/` on the judged `/ɡ/` vs only floating `/h/`.
 - Emotion lexicon retained only for non-judgmental sensation naming (if any).
 
 ### Constraints
 
 - Emotion compose **reuses** [value](values.md) ascription; it is **not** a parallel tag system on the host.
-- **ACT** and **LOCUS** are mood roots in the non-value `/h/` / `/w/` subcategory — not needs, not ability, not restrictors.
+- **ACT** (`ogena` / `oju` / `ozono`) and **LOCUS** (`abobo` / `oburo` / `agena`) are mood roots in the non-value `/h/` / `/w/` subcategory — not needs, not ability, not restrictors.
+- **EXTERNAL** stays one root (`oburo`); *pool at them* is the **`ozono` + `oburo`** idiom, not a seventh mood.
 - Do **not** reuse mid-word **`x` + {a\|e\|o\|u}** for activation or locus.
 - Do **not** encode activation × locus × need in one word’s endings.
 - Opaque emotion words used for judgment / explanation are replaced by the compose recipe, not merely tagged.
