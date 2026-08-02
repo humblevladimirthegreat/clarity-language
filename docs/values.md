@@ -2,7 +2,7 @@
 <a id="values"></a>
 <a id="value-ascription"></a>
 
-This page is the source of truth for **values** (needs): which psychological payoff is at issue, **how you relate** to that need (topic / met / unmet / motive / prescription), and — on compound endings — a stance-specific dimension (**contact channel**, **preference standing**, **prescription force**, or **changeability**). Port of Claritish value tags (`+a` / `-ct`, `my+c`, `should+r`, …) into native Clarity morphology. Restrictors: [restrictors.md](restrictors.md). Ability / incapability, plan / predict, emotion compose, **COMMENT** / mindfulness noting (not needs): [special-vocabulary.md](special-vocabulary.md). Preference dressed as a causal law stacks **`xo` / `xe`** on [causation](causation.md#preference-vs-law) shapes — not a stronger join. Revisers (slot repair, not values): [revisers.md](revisers.md). Ordinary reference-suffix senses: [reference-suffix.md](reference-suffix.md).
+This page is the source of truth for **values** (needs): which psychological payoff is at issue, **how you relate** to that need (topic / met / unmet / motive / prescription), and — on compound endings — a stance-specific dimension (**contact channel**, **preference standing**, **prescription force**, or **changeability**). Port of Claritish value tags (`+a` / `-ct`, `my+c`, `should+r`, …) into native Clarity morphology. Restrictors: [restrictors.md](restrictors.md). Ability / incapability, plan / predict, [memory / record](special-vocabulary.md#memory-record), emotion compose, **COMMENT** / mindfulness noting (not needs): [special-vocabulary.md](special-vocabulary.md). Preference dressed as a causal law stacks **`xo` / `xe`** on [causation](causation.md#preference-vs-law) shapes — not a stronger join. Revisers (slot repair, not values): [revisers.md](revisers.md). Ordinary reference-suffix senses: [reference-suffix.md](reference-suffix.md).
 
 ## Default reading of `/h/` and `/w/`
 <a id="default-reading-of-h-and-w"></a>
@@ -12,7 +12,7 @@ Ordinary content words under **`/h/`** (clause) and **`/w/`** (prior `/ɡ/`) are
 | Keep as non-value | Examples |
 |-------------------|----------|
 | Restrictor joins | `hal`, `hual`, `har`, `wal`, … — [restrictors](restrictors.md) |
-| Special vocabulary | ability / incapability; [role compounds](special-vocabulary.md#role-compounds) (`ax…` / `ux…` / `ox…`); join-act verbs / join-relations (`han`…); plan / predict; emotion ACT / LOCUS; **COMMENT** (noting) — [special-vocabulary](special-vocabulary.md) |
+| Special vocabulary | ability / incapability; [role compounds](special-vocabulary.md#role-compounds) (`ax…` / `ux…` / `ox…`); join-act verbs / join-relations (`han`…); plan / predict; [memory / record](special-vocabulary.md#memory-record) past framing; emotion ACT / LOCUS; **COMMENT** (noting) — [special-vocabulary](special-vocabulary.md) |
 | Evidentiality / mood | clause or adjective framing of *how you know* / claim strength |
 | Degree | *very*, *slightly*, … |
 | Time / place / manner / recipient adjuncts | ordinary adverb lexicon under `/h/` |

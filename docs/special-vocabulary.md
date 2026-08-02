@@ -1,11 +1,11 @@
 # Special vocabulary
 <a id="special-vocabulary"></a>
 
-This page is the source of truth for **special morphology and closed roots** that are **not** [values](values.md) (needs) and **not** [restrictors](restrictors.md) (applicability joins). They reuse mid-word **`x`** where useful ([ability](#ability): host + stance vowel; [role compounds](#role-compounds): ROLE vowel + event/relation root; [numeric derivation](#numeric-derivation): host + number stem), but keep their own inventories; some entries are closed mood roots with **no** `x`-addition (plan / predict, emotion activation / locus, **comment** / mindfulness noting); **join-act verbs** and **join-relations** reuse join-vowel spellings under `/v/` `/ɡ/` `/h/`…**-n**. Parser families for mid-word **`x`**: **[x-compounds.md](x-compounds.md)**.
+This page is the source of truth for **special morphology and closed roots** that are **not** [values](values.md) (needs) and **not** [restrictors](restrictors.md) (applicability joins). They reuse mid-word **`x`** where useful ([ability](#ability): host + stance vowel; [role compounds](#role-compounds): ROLE vowel + event/relation root; [numeric derivation](#numeric-derivation): host + number stem), but keep their own inventories; some entries are closed mood roots with **no** `x`-addition (plan / predict, [memory / record](#memory-record) past framing, emotion activation / locus, **comment** / mindfulness noting); **join-act verbs** and **join-relations** reuse join-vowel spellings under `/v/` `/ɡ/` `/h/`…**-n**. Parser families for mid-word **`x`**: **[x-compounds.md](x-compounds.md)**.
 
 Ordinary `/h/` / `/w/` content still defaults to values unless the form is already in a clearer closed subcategory (restrictors, special vocabulary here, evidentiality/mood, degree, adjuncts, numbers) — see [values.md](values.md#default-reading-of-h-and-w).
 
-**Not here:** Claritish *worse than Average|…* benchmarks are NP comparees on comparative fences — [comparatives.md § Judgment benchmarks](comparatives.md#judgment-benchmarks). **Classification** (kind as predicative `/ɡ/`) and closed **`SAME`** **identity** (`g-SAME` + `/b/`) live in **[predication.md](predication.md)** — not a general *to-be* verb and not `x`-compounds. **Causation** / necessary–sufficient (Claritish `caused_`) reuses joins and these join-relations — **[causation.md](causation.md)** — not a new mood or `x`-compound on this page (optional **`CAUSE`** mood later).
+**Not here:** Claritish *worse than Average|…* benchmarks are NP comparees on comparative fences — [comparatives.md § Judgment benchmarks](comparatives.md#judgment-benchmarks). **Classification** (kind as predicative `/ɡ/`) and closed **`SAME`** **identity** (`g-SAME` + `/b/`) live in **[predication.md](predication.md)** — not a general *to-be* verb and not `x`-compounds. **Causation** / necessary–sufficient (Claritish `caused_`) reuses joins and these join-relations — **[causation.md](causation.md)** — not a new mood or `x`-compound on this page (optional **`CAUSE`** mood = lexicon **`erage`** ⚙️ *mechanism* later).
 
 ## Join-act verbs (`v*n`)
 <a id="join-act-verbs"></a>
@@ -149,7 +149,7 @@ English attitude verbs smuggle COMMENT plus other loads. Keep COMMENT; put the r
 |---------------------|---------|
 | `… h-mindl …` | *I think_m …* — commentary; minding noted |
 | `… z-meetingl w-competxul h-feell h-ACThighl …` | *I fear_f the meeting* — commentary (feeling noted); unmet competence; high arousal |
-| `… h-mindl h-PLANm …` | *I hope_m …* — commentary + soft plan (not a hope root) |
+| `… h-mindl h-owarom …` | *I hope_m …* — commentary + soft plan (not a hope root) |
 | `… h-lookl …` | *I imagine_l …* — commentary; looking noted |
 
 ### Do not overload other tables
@@ -160,6 +160,7 @@ English attitude verbs smuggle COMMENT plus other loads. Keep COMMENT; put the r
 | Contact channel | `xa` endings (physical / mental / social / spiritual) | noting exponents (six sense cues; same COMMENT mood) |
 | Emotion ACT / LOCUS | [emotion compose](#emotion-compose) | fear/hope as activation roots |
 | Plan / predict | [plan / predict](#plan-predict) | *hope* / *expect* as future moods |
+| Memory / record | [memory / record](#memory-record) | generic *past* / *I remember* without source fork |
 | Evidentiality | shared mood `/h/` on claims | `_f/_s/_t` letter tags on *I think* (Claritish clash — gone here) |
 | Perception events | ordinary `/v/` lexicon | COMMENT `/h/` (*hearing* as commentary ≠ *hear the door*) |
 | Clause force | `/j/` (`jal`, `jam`, …) | a noting speech-act force |
@@ -180,7 +181,7 @@ English attitude verbs smuggle COMMENT plus other loads. Keep COMMENT; put the r
 - Do **not** invent separate moods for *fear* / *hope* / *worry* / *think*.
 - Do **not** reuse [value contact-channel](values.md#value-contact) endings as noting tags.
 - Do **not** treat COMMENT exponents as evidentiality letters.
-- **ACT** / **LOCUS** / **PLAN** / **PREDICT** / values remain separate `/h/` (or `/w/`) stacks when needed.
+- **ACT** / **LOCUS** / **PLAN** / **PREDICT** / [**MEMORY** / **RECORD**](#memory-record) / values remain separate `/h/` (or `/w/`) stacks when needed.
 - Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)).
 
 ## Emotion compose
@@ -236,28 +237,69 @@ Port of Claritish **Emotion decompose** (`_[hml][iec]` + value on the judged hos
 
 Port of Claritish **Plan or predict** (`plan_None|Vague|Detail|Contingency`, `predict_` + evidentiality): English future cues (*will*, *going to*, *tomorrow*, …) smuggle whether you mean **intention** or **forecast**. Clarity keeps that fork as **two closed mood roots**, not value-style **`x`-compounds**.
 
-| Claim | Prefer |
-|-------|--------|
-| Intention / commitment about what *you* will do | closed **`PLAN`** under `/h/` (optional `/w/` if scoped only to a preceding `/ɡ/`) |
-| Forecast about what will happen | closed **`PREDICT`** under `/h/` (same `/w/` option) |
-| How detailed the intention is | endings (or a tiny closed set) on **`PLAN`** — Claritish None / Vague / Detail / Contingency; **-l / -m / -n / -r** is the natural four-way fit once lexicon lands |
-| How you know the forecast | ordinary **evidentiality** `/h/` stacked with **`PREDICT`** — same inventory as other claims (`caused_`, *thinks*, …; causal hosts also use [causation](causation.md) join shapes), not a predict-only compound series |
+| Claim | Prefer | Lexicon root |
+|-------|--------|--------------|
+| Intention / commitment about what *you* will do | closed **`PLAN`** under `/h/` (optional `/w/` if scoped only to a preceding `/ɡ/`) | **`owaro`** 🗺️ *world-map* → *plan* |
+| Forecast about what will happen | closed **`PREDICT`** under `/h/` (same `/w/` option) | **`edelo`** 🔭 *telescope* → *forecast* |
+| How detailed the intention is | endings (or a tiny closed set) on **`PLAN`** — Claritish None / Vague / Detail / Contingency; **-l / -m / -n / -r** is the natural four-way fit once assigned | same **`owaro`** |
+| How you know the forecast | ordinary **evidentiality** `/h/` stacked with **`PREDICT`** — same inventory as other claims (`caused_`, *thinks*, …; causal hosts also use [causation](causation.md) join shapes), not a predict-only compound series | same **`edelo`** |
+
+**Conceptual metaphors:** a **map** charts a course you mean to take; a **telescope** looks ahead at a distance (provisional resolution — not dice, not crystal-ball certainty). Past framing is a separate fork — [memory / record](#memory-record).
 
 **Not `x`-compounds:** plan vs predict is a **root choice** (speech-act type), not `xa`/`xu` polarity on a host. Ability compounds onto an activity (`v-singxun`); plan/predict **frame the clause** — content verbs stay bare. Do **not** map plan grain onto contact / preference standing / prescription force / changeability, and do **not** invent `xe`/`xo` (or any `x`+vowel) for future framing.
 
-Schematic (lexicon forms TBD): `h-PLANn … v-finishl` (*detail plan: I finish*) vs `h-PREDICTl` + evidential `/h/` … `v-rainl` (*forecast: it rains*).
+Schematic: `h-owaron … v-finishl` (*detail plan: I finish*) vs `h-edelol` + evidential `/h/` … `v-rainl` (*forecast: it rains*).
 
 ### Out of scope (for now)
 
-- Lexicon phonetic forms of **`PLAN`** / **`PREDICT`**.
 - Exact ending ↔ None / Vague / Detail / Contingency assignment on **`PLAN`**.
 - Full evidentiality root / ending inventory (shared mood system; predict only participates).
 
 ### Constraints
 
-- **`PLAN`** and **`PREDICT`** are mood roots in the non-value `/h/` / `/w/` subcategory — not needs, not ability hosts, not restrictors.
+- **`PLAN`** (`owaro`) and **`PREDICT`** (`edelo`) are mood roots in the non-value `/h/` / `/w/` subcategory — not needs, not ability hosts, not restrictors.
 - Do **not** reuse mid-word **`x` + {a\|e\|o\|u}** for plan/predict.
 - Prefer floating `/h/`; do not compound plan/predict onto the content verb the way ability does.
+
+## Memory / record (past framing)
+<a id="memory-record"></a>
+<a id="memory"></a>
+<a id="record-past"></a>
+
+English past tense and *I remember* / *according to…* smuggle **how** the past is sourced. Clarity splits two closed roots (same non-value `/h/` / `/w/` mood subcategory as plan / predict):
+
+| Framing | Prefer | Lexicon root | Metaphor |
+|---------|--------|--------------|----------|
+| Reconstructive / recalled past (*according to my memory*, *as I remember it*) | closed **`MEMORY`** under `/h/` (optional `/w/` on a preceding `/ɡ/`) | **`uhunu`** 🎣 *fishing* → *memory* | Casting into opaque water — you may pull up a fish or a **boot** (misremember) |
+| Documented / captured past (*on record*, *as recorded*) | closed **`RECORD`** under `/h/` (same `/w/` option) | **`eroge`** ⏺️ *record* → *record* | Preserving what happened now for later playback |
+
+**`/h/` is the common case:** clause-level past framing — *according to memory, this happened* vs *on record, this happened*. That is a **source-of-past** mood, not a need and not ordinary tense morphology (dedicated observation vs imagination tense remains TBD — [TODO](../TODO.md)).
+
+**Ordinary content still available:** both roots are normal lexicon words under other PoS (`z-uhunul` *a memory*; `v-erogel` *to record*; `d-uhunux-0l` *that memory that won’t blank* — [null / anti-null](#null-anti-null)). The special reading is the floating mood use, especially `/h/`.
+
+**Not `x`-compounds:** memory vs record is a **root choice**, not `xa`/`xu` on a host. Do **not** treat **`MEMORY`** as a video-recorder archive (fishing is unreliable retrieval); do **not** treat **`RECORD`** as reconstructive recall.
+
+| Clarity (schematic) | Reading |
+|---------------------|---------|
+| `… h-uhunul …` | *as I remember / according to memory* — reconstructive past |
+| `… h-erogel …` | *on record / as recorded* — captured past |
+| `jal z-Samn … h-uhunul` | *Sam … (per memory)* |
+| `z-uhunul` / `d-uhunur` | *a / that memory* (content noun) |
+
+Idiom cue (teaching): *fish a boot* = retrieve the wrong past (🥾 `obodo` *boot* stays free for the punchline).
+
+### Out of scope (for now)
+
+- Ending tables on **`MEMORY`** / **`RECORD`** (grain of confidence, whose memory, …).
+- Full tense inventory (observation vs imagination) and how these stack with it.
+- Whether **`RECORD`** may double as an evidentiality exponent or stays a separate past-source mood.
+
+### Constraints
+
+- **`MEMORY`** (`uhunu`) and **`RECORD`** (`eroge`) are mood roots in the non-value `/h/` / `/w/` subcategory when framing the clause — not needs, not restrictors.
+- Prefer floating `/h/` for past-source framing; content PoS uses stay ordinary.
+- Do **not** reuse mid-word **`x` + {a\|e\|o\|u}** for memory/record mood.
+- Do **not** collapse the fork into one generic *past* adverb.
 
 ## Ability
 <a id="ability"></a>
@@ -569,7 +611,7 @@ Single-digit scalars only. Writing **must** include the marker (**`+N`** / **`-N
 | **`ROOTx+2`** | dual / mutual / reciprocal / pair | `g-dutyx+2l` — *mutual duty* | non-reciprocal / one-sided / unpaired | `g-dutyx-2l` — *one-sided duty* |
 | **`ROOTx+3`** | triad / triplet / 3-part / ternary | `z-dialogx+3l` — *a three-part dialogue* | non-tripartite / collapsed-from-three | `z-governmentx-3l` — *non-tripartite government* |
 | **`ROOTx+4`** | quad / 4-part / square / frame | `z-courtx+4l` — *a four-part / framed court* | unframed / out-of-box / unbound | `z-ideax-4l` — *an unframed idea* |
-| **`ROOTx+5`** | hand / pentad / agency-set | `z-toolx+5l` — *a handy / five-fold toolkit* | handless / without practical grasp | `z-planx-5l` — *a plan without practical grasp* |
+| **`ROOTx+5`** | hand / pentad / agency-set | `z-toolx+5l` — *a handy / five-fold toolkit* | handless / without practical grasp | `z-owarox-5l` — *a plan without practical grasp* |
 | **`ROOTx+6`** | hex / 6-part / honeycomb / pack | `z-cellx+6l` — *a hexagonal / six-pack cell* | unpacked / non-hex / broken pack | `z-teamx-6l` — *an unpacked team* |
 | **`ROOTx+7`** | heptad / week-cycle / complete series | `z-ritualx+7l` — *a seven-fold / week-cycle ritual* | incomplete series / broken cycle | `z-ritualx-7l` — *a broken-cycle ritual* |
 | **`ROOTx+8`** | octet / 8-part / doubled-quad | `z-blockx+8l` — *an octet / eight-part block* | non-octet / incomplete eight | `z-blockx-8l` — *a non-octet block* |
@@ -583,7 +625,7 @@ Single-digit scalars only. Writing **must** include the marker (**`+N`** / **`-N
 
 | PoS | `…x+0` | `…x-0` | Examples |
 |-----|--------|--------|----------|
-| **`/z/` `/d/` `/b/`** (noun) | emptied / wiped instance | entity that won’t zero / stubborn residue | `z-debtx+0l` — *a wiped debt*; `z-debtx-0l` — *a debt that won’t zero*; `d-memoryx-0l` — *that memory that won’t blank*; `b-scorex-0l` — non-null residue as argument |
+| **`/z/` `/d/` `/b/`** (noun) | emptied / wiped instance | entity that won’t zero / stubborn residue | `z-debtx+0l` — *a wiped debt*; `z-debtx-0l` — *a debt that won’t zero*; `d-uhunux-0l` — *that memory that won’t blank*; `b-scorex-0l` — non-null residue as argument |
 | **`/v/`** (verb) | act of nulling / resetting | act that refuses null / keeps residual | `v-scorex+0l` — *to null the score*; `v-scorex-0l` — *to anti-null / refuse to zero the score*; `v-painx+0l` — *to extinguish pain*; `v-painx-0l` — *to leave pain unextinguishable* |
 | **`/ɡ/`** (adjective) | null / reset (ascribed) | non-emptyable / residual (ascribed) | `g-scorex+0l` — *null / reset*; `g-scorex-0l` — *won’t-null / residual*; `g-hopex-0l` — *hope that won’t go to zero* (vs `g-hopex-el` *void of hope*) |
 | **`/h/`** (adverb) | clause framed as reset / zeroed | clause framed as irreducible residue | `h-effortx+0l` — *with effort zeroed*; `h-effortx-0l` — *with irreducible effort* / *despite any zeroing* |
@@ -604,7 +646,7 @@ Same anatomy as free [zero × exponent](numbers.md#zero-exponent); on ROOT = **m
 | **`ROOTx+0e`** | **total null** / absolute wipe of the kind | `v-scorex+0el` — *annihilate the score* (kind); `z-debtx+0el` — *a totally wiped debt-kind* |
 | **`ROOTx+0e-`** | **sterile / null grain** of ROOT | `z-hopex+0e-l` — *sterile hope*; `z-truthx+0e-l` — *truth with no seed* |
 | **`ROOTx-0e`** | **absolute residue** of ROOT | `z-debtx-0el` — *debt as absolute residue*; `v-painx-0el` — *leave pain as absolute residue* |
-| **`ROOTx-0e-`** | **micro-residue** of ROOT | `z-memoryx-0e-l` — *memory as micro-residue* |
+| **`ROOTx-0e-`** | **micro-residue** of ROOT | `z-uhunux-0e-l` — *memory as micro-residue* |
 | **`ROOTx+e0`** | **identity / unit form** of ROOT — *ROOT⁰* | `z-lovex+e0l` — *unit-love* / *identity-love*; `v-truthx+e0l` — *to unitize / normalize truth* |
 | **`ROOTx+0e0`** | **`0⁰` / paradox form** — both empty and unit | `g-truthx+0e0l` — *truth that is both empty and unit* |
 

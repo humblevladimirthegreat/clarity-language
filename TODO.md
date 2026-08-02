@@ -12,7 +12,8 @@ Dictionary entries:
 -evidentiality mood roots (shared; Claritish `caused_` / `predict_` / … — causation.md + plan/predict)
 -universality mood (Claritish `_u` / `_c` / `_lf` / `_ln…` / `_lr(scope)` — port with causation.md)
 - Sentence linkers: *therefore*, *however*, *meanwhile*, *next*, *but*
--direct observation vs imagination tense
+-direct observation vs imagination tense (stacks with memory/record past framing — special-vocabulary.md)
+-patience metaphor displaced from 🎣 (now memory); reassign when needed
 -thinks/believes is 1st person only
 -unconditional self acceptance
 -apology

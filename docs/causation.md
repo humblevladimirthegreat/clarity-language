@@ -189,7 +189,7 @@ Particular episode (*this delay was caused by…*) vs standing law (*clouds for 
 - Lexicon phonetics of **`IF`** / **`IFF`** / *because* relation roots and of evidentiality moods.
 - Full **`IF`** vs **`BECAUSE`** factivity write-up (hypothetical vs asserted explanation) and any epistemic-*because* twin.
 - Native universality mood inventory (Claritish `_u` / `_c` / `_lf` / …).
-- Closed **`CAUSE`** mood root (optional later; joins already carry condition type).
+- Closed **`CAUSE`** mood root (optional later; joins already carry condition type) — candidate lexicon **`erage`** ⚙️ *gear* → *mechanism*.
 - Closed **`COND`** complex adjective (rejected in favor of existing joins for now).
 - Ending tables on **`IF`** / **`IFF`** (soft vs closed law-like, if needed later).
 
@@ -201,4 +201,5 @@ Particular episode (*this delay was caused by…*) vs standing law (*clouds for 
 - Dependent clauses / NEXT: [language-reference.md](language-reference.md#dependent-clauses)
 - Values prescription / motive: [values.md](values.md)
 - Evidentiality pointer (with PREDICT): [special-vocabulary.md § Plan / predict](special-vocabulary.md#plan-predict)
+- Past framing (memory vs record): [special-vocabulary.md § Memory / record](special-vocabulary.md#memory-record)
 - Classification generics (not causation): [predication.md](predication.md), [universals](coordination.md#universals-domains-generics)
