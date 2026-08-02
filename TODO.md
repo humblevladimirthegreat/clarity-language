@@ -7,12 +7,10 @@ Dictionary entries:
 -comparison benchmarks
 -SAME identity root (noted in predication.md — closed complex `/ɡ/`; lexicon phonetics still open)
 -habits: triggered
--emotion ACT / LOCUS roots (noted in special-vocabulary.md — `ogena` / `oju` / `ozono` / `abobo` / `oburo` / `agena`)
--COMMENT / mindfulness noting (noted in special-vocabulary.md — six `/h/` exponents; lexicon phonetics still open) - might not be necessary with new emotion words
 -universality mood (Claritish `_u` / `_c` / `_lf` / `_ln…` / `_lr(scope)` — port with causation.md)
 - Sentence linkers: *therefore*, *however*, *meanwhile*, *next*, *but*
--direct observation vs imagination tense (stacks with memory/record past framing — special-vocabulary.md)
--thinks/believes is 1st person only
+-direct observation vs imagination tense (stacks with memory/record past framing — special-vocabulary.md), consider sense words for observation
+-belief evidentiality
 -unconditional self acceptance
 -apology
 -percentage chances for true

@@ -5,7 +5,7 @@ This page is the source of truth for **special morphology and closed roots** tha
 
 Ordinary `/h/` / `/w/` content still defaults to values unless the form is already in a clearer closed subcategory (restrictors, special vocabulary here, evidentiality/mood, degree, adjuncts, numbers) — see [values.md](values.md#default-reading-of-h-and-w).
 
-**Not here:** Claritish *worse than Average|…* benchmarks are NP comparees on comparative fences — [comparatives.md § Judgment benchmarks](comparatives.md#judgment-benchmarks). **Classification** (kind as predicative `/ɡ/`) and closed **`SAME`** **identity** (`g-SAME` + `/b/`) live in **[predication.md](predication.md)** — not a general *to-be* verb and not `x`-compounds. **Causation** / necessary–sufficient (Claritish `caused_`) reuses joins and these join-relations — **[causation.md](causation.md)** — not a new mood or `x`-compound on this page (optional **`CAUSE`** mood = lexicon **`erage`** ⚙️ *mechanism* later).
+**Not here:** *worse than Average|…* benchmarks are NP comparees on comparative fences — [comparatives.md § Judgment benchmarks](comparatives.md#judgment-benchmarks). **Classification** (kind as predicative `/ɡ/`) and closed **`SAME`** **identity** (`g-SAME` + `/b/`) live in **[predication.md](predication.md)** — not a general *to-be* verb and not `x`-compounds. **Causation** / necessary–sufficient reuses joins and these join-relations — **[causation.md](causation.md)** — not a new mood or `x`-compound on this page (optional **`CAUSE`** mood = lexicon **`erage`** ⚙️ *mechanism* later).
 
 ## Join-act verbs (`v*n`)
 <a id="join-act-verbs"></a>
@@ -100,119 +100,112 @@ Closed **complex** `/ɡ/` adjectives and `/h/` adverbs that **frame a host via t
 <a id="comment"></a>
 <a id="mindfulness-noting"></a>
 
-Port of Claritish **Mindfulness noting** (`I think_m`, `I fear_f`, …): first-person attitude / stance verbs often mark **mental commentary** — the mind storying experience rather than contacting it. Clarity does **not** keep *think* / *fear* / *hope* / *worry* as separate moods. One mood covers that class: **COMMENT**. Six closed `/h/` roots are **synonyms** of COMMENT; choosing among them is the **noting practice** (which sense channel stands out), not six different meanings.
+First-person **cognitive** attitude verbs often mark **mental commentary** — the mind storying experience rather than contacting it. Clarity does **not** keep *think* / *assume* / *imagine* / *wonder* as separate moods. One closed mood root covers that class: **COMMENT**.
+
+**Affect is not COMMENT.** *Fear* / *worry* / *dread* / *regret* / hope-as-feeling go to [emotion compose](#emotion-compose) (value + ACT + LOCUS) — do **not** stack COMMENT on those clauses. Hope-as-intention uses motive (`xe`) and/or [**PLAN**](#plan-predict), still without COMMENT. *Believe* (world-claim + warrant) waits on **evidentiality** — not this root.
 
 ### Mood sense
 
-| Concept | Gloss |
-|---------|--------|
-| **COMMENT** | Mental commentary / rumination-like overlay — mind labeling or storying experience instead of bare contact |
+| Concept | Gloss | Lexicon root |
+|---------|--------|--------------|
+| **COMMENT** | Mental commentary / rumination-like overlay — mind labeling or storying experience instead of bare contact | **`uho`** 💭 *thought* → *commentary* |
 
-Not ordinary *think* as a content verb, not evidentiality (*how I know*), not [contact channel](values.md#value-contact) on met values (how you savor a payoff), and not perception-as-event (*she hears the door* — ordinary lexicon `/v/` if needed).
+**Conceptual metaphor:** a **thought balloon** floats a take over the scene (voiceover / caption on experience). Bare contact = watching without narration. Ordinary content still available (`z-uhol` *a thought*; `v-uhol` *to think* as deliberate event). The special reading is the floating mood use, especially `/h/`.
 
-### Six noting exponents (same mood)
+Not evidentiality (*how I know*), not [contact channel](values.md#value-contact) on met values, not [emotion compose](#emotion-compose), and not perception-as-event (*she hears the door* — ordinary lexicon `/v/` if needed).
 
-All six mean **COMMENT**. Pick **one** for what stands out most (Claritish `_l/_h/_f/_s/_t/_m`). Soft default when unsure → **mind**.
+Optional `/w/` only when COMMENT frames a preceding `/ɡ/` (rare). Prefer floating `/h/`.
 
-| Claritish | Sense cue (practice only) | Clarity (schematic `/h/`) |
-|-----------|---------------------------|---------------------------|
-| **`_l`** | looking | `h-lookl` |
-| **`_h`** | hearing | `h-hearl` |
-| **`_f`** | feeling | `h-feell` |
-| **`_s`** | smelling | `h-smelll` |
-| **`_t`** | tasting | `h-tastel` |
-| **`_m`** | minding | `h-mindl` |
-
-Lexicon phonetic forms TBD; schematic English-shaped roots above. Optional `/w/` only when COMMENT frames a preceding `/ɡ/` (rare). Prefer floating `/h/`.
-
-**Not `x`-compounds:** COMMENT is a **mood root choice** (six synonymous exponents), not `xa`/`xu` polarity and not endings on attitude hosts. Do **not** compound COMMENT onto the content verb the way ability does.
+**Not `x`-compounds:** COMMENT is a **root choice**, not `xa`/`xu` polarity and not endings on attitude hosts. Do **not** compound COMMENT onto the content verb the way ability does.
 
 ### When it fires
 
-Use COMMENT when the clause is doing **first-person commentary** work — the Claritish attitude / stance environments (*I think*, *I fear*, *we worry*, *I'm assuming*, *I hope*, *I imagine*, …). Exactly **one** noting exponent per such clause. Third-person *thinks* / other-minds claims stay **evidentiality** (and ordinary content), not COMMENT.
+Use COMMENT when the clause is doing **first-person cognitive commentary** — *I think*, *I'm assuming*, *I imagine*, *I wonder*, *I suppose*, rumination / overthinking, …. Third-person *thinks* / other-minds claims stay **evidentiality** (and ordinary content), not COMMENT.
 
 Content verbs stay ordinary. COMMENT **frames** the clause; it does not replace the predicate with a sense verb.
 
-### Fear, hope, worry, … are not moods
+### Cognitive attitudes vs affect
 
-English attitude verbs smuggle COMMENT plus other loads. Keep COMMENT; put the rest on stacks you already have:
+English attitude verbs smuggle COMMENT **or** affect. Split them:
 
 | English bundle | Prefer |
 |----------------|--------|
-| *think / assume / suppose / imagine …* | **COMMENT** (noting exponent); add evidentiality only if asserting a world-claim |
-| *fear / worry / dread …* | **COMMENT** + unmet [value](values.md) (`xu`) ± [ACT / LOCUS](#emotion-compose) |
-| *hope / wish …* | **COMMENT** + motive (`xe`) and/or [**PLAN**](#plan-predict) / soft force — not a hope-mood |
-| *regret …* | **COMMENT** + unmet value (± past / tense `/h/`) |
+| *think / assume / suppose / imagine …* | **COMMENT** (`h-uhol`); add evidentiality only if asserting a world-claim |
 | *wonder …* | **COMMENT** + soft question (**jom**) / ask — not a wonder-mood |
+| *fear / worry / dread / regret …* | [emotion compose](#emotion-compose): unmet [value](values.md) (`xu`) + **ACT** + **LOCUS** — **no** COMMENT |
+| *hope / wish …* (feeling) | emotion compose (value + ACT + LOCUS) — **no** COMMENT |
+| *hope / wish …* (intention) | motive (`xe`) and/or [**PLAN**](#plan-predict) / soft force — **no** COMMENT; not a hope-mood |
+| *believe …* | evidentiality (inventory TBD) — **not** COMMENT |
 
-| Clarity (schematic) | Reading |
-|---------------------|---------|
-| `… h-mindl …` | *I think_m …* — commentary; minding noted |
-| `… z-meetingl w-competxul h-feell h-ogenal …` | *I fear_f the meeting* — commentary (feeling noted); unmet competence; flood (high arousal) |
-| `… h-mindl h-owarom …` | *I hope_m …* — commentary + soft plan (not a hope root) |
-| `… h-lookl …` | *I imagine_l …* — commentary; looking noted |
+| Clarity | Reading |
+|---------|---------|
+| `… h-uhol …` | *I think …* — commentary overlay |
+| `… h-uhol … jom …` | *I wonder …* — commentary + soft ask |
+| `z-meetingl w-competxul h-ogenal h-agenal` | *I fear the meeting* — unmet competence; flood; room awash — **no** COMMENT |
+| `… h-owarom …` | *I hope to …* (intention) — soft plan; **no** COMMENT |
 
 ### Do not overload other tables
 
 | Dimension | Stays | COMMENT is *not* |
 |-----------|--------|------------------|
 | Need met / unmet / motive / ought | [values](values.md) | a seventh need or attitude-value series |
-| Contact channel | `xa` endings (physical / mental / social / spiritual) | noting exponents (six sense cues; same COMMENT mood) |
-| Emotion ACT / LOCUS | [emotion compose](#emotion-compose) | fear/hope as activation roots |
+| Contact channel | `xa` endings (physical / mental / social / spiritual) | the COMMENT root |
+| Emotion ACT / LOCUS | [emotion compose](#emotion-compose) | a co-stack on fear/worry/regret (affect uses compose alone) |
 | Plan / predict | [plan / predict](#plan-predict) | *hope* / *expect* as future moods |
 | Memory / record | [memory / record](#memory-record) | generic *past* / *I remember* without source fork |
-| Evidentiality | shared mood `/h/` on claims | `_f/_s/_t` letter tags on *I think* (Claritish clash — gone here) |
+| Evidentiality | shared mood `/h/` on claims | *believe* / warrant / how you know |
 | Perception events | ordinary `/v/` lexicon | COMMENT `/h/` (*hearing* as commentary ≠ *hear the door*) |
 | Clause force | `/j/` (`jal`, `jam`, …) | a noting speech-act force |
 
-**Raw contact:** labeling sensation without commentary story may use a noting exponent alone as a thin frame, or leave unlabeled — see [emotion compose](#emotion-compose) raw feeling. Full emotion compose still applies when an emotion word would judge or explain.
+**Raw contact:** sensation without judgment/explanation may stay unlabeled — see [emotion compose](#emotion-compose) raw feeling. Do **not** reach for COMMENT just because the content is affective.
 
 ### Out of scope (for now)
 
-- Lexicon phonetic forms of the six COMMENT exponents.
-- Whether a dedicated bare `/j/` interjection (*feeling!*) reuses the same roots.
-- Forced COMMENT on every first-person clause (only commentary / attitude environments).
-- Merging smell/taste or collapsing channels.
+- Whether sense-channel noting (looking / hearing / feeling / …) returns as practice color on **`uho`** or stays English-only pedagogy.
+- Whether a dedicated bare `/j/` interjection reuses the same root.
+- Forced COMMENT on every first-person clause (only cognitive commentary environments).
+- *Believe* / warrant morphology (evidentiality inventory).
 
 ### Constraints
 
-- **COMMENT** is one mood; the six `/h/` roots are **synonymous** exponents — channel choice is practice-only.
+- **COMMENT** is one mood root: **`uho`** (*commentary*).
 - Prefer floating `/h/`; do not use mid-word **`x` + {a\|e\|o\|u}** for COMMENT.
-- Do **not** invent separate moods for *fear* / *hope* / *worry* / *think*.
-- Do **not** reuse [value contact-channel](values.md#value-contact) endings as noting tags.
-- Do **not** treat COMMENT exponents as evidentiality letters.
+- Do **not** invent separate moods for *think* / *assume* / *imagine* / *wonder*.
+- Do **not** stack COMMENT on [emotion compose](#emotion-compose) clauses (*fear* / *worry* / *regret* / hope-as-feeling).
+- Do **not** reuse [value contact-channel](values.md#value-contact) endings as COMMENT.
+- Do **not** treat COMMENT as evidentiality (*believe* / how you know).
 - **ACT** / **LOCUS** / **PLAN** / **PREDICT** / [**MEMORY** / **RECORD**](#memory-record) / values remain separate `/h/` (or `/w/`) stacks when needed.
 - Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)).
 
 ## Emotion compose
 <a id="emotion-compose"></a>
 
-Port of Claritish **Emotion decompose** (`_[hml][iec]` + value on the judged host): opaque emotion words (*anxious*, *resentful*, *proud*, …) smuggle **activation**, **locus**, **need**, and **met/unmet** into one label. When that word is doing **judgment or explanation** work, Clarity **drops the emotion label** and **composes** from pieces — it does **not** invent a parallel emotion `x`-system.
+Opaque emotion words (*anxious*, *resentful*, *proud*, …) smuggle **activation**, **locus**, **need**, and **met/unmet** into one label. When that word is doing **judgment or explanation** work, Clarity **drops the emotion label** and **composes** from pieces — it does **not** invent a parallel emotion `x`-system.
 
-| Piece | Claritish | Clarity |
-|-------|-----------|---------|
-| Situation / judged host | neutral host (`talk`, `draft`, …) | ordinary NP / clause content |
-| Need + met / unmet (+ changeability) | `+c` / `-ct` / … | ordinary [value](values.md) word on that host (`w-competxul`, `w-competxam`, …) |
-| Activation (arousal) | `h` / `m` / `l` | closed mood roots **HIGH** / **MED** / **LOW** under `/h/` (optional `/w/` on a preceding `/ɡ/`) — water **tide** metaphors below |
-| Locus (where the charge is attributed) | `i` / `e` / `c` | closed mood roots **INTERNAL** / **EXTERNAL** / **CIRCUMSTANTIAL** under `/h/` (same `/w/` option) — water **vessel** metaphors below |
+| Piece | Clarity |
+|-------|---------|
+| Situation / judged host | ordinary NP / clause content |
+| Need + met / unmet (+ changeability) | ordinary [value](values.md) word on that host (`w-competxul`, `w-competxam`, …) |
+| Activation (arousal) | closed mood roots **HIGH** / **MED** / **LOW** under `/h/` (optional `/w/` on a preceding `/ɡ/`) — water **tide** metaphors below |
+| Locus (where the charge is attributed) | closed mood roots **INTERNAL** / **EXTERNAL** / **CIRCUMSTANTIAL** under `/h/` (same `/w/` option) — water **vessel** metaphors below |
 
 **Conceptual metaphor (one fluid story):** affect is **water**. **ACT** = how much / how fast it moves (**tide** dynamics). **LOCUS** = where that water is held or directed (**vessel** / transfer / ambient field). Same substance on both axes — stack ACT + LOCUS; do not invent separate physics per cell.
 
 ### Activation roots (ACT)
 
-| Slot | Claritish | Lexicon root | Metaphor |
-|------|-----------|--------------|----------|
-| **HIGH** | `h` | **`ogena`** 🌊 *ocean-wave* → *flood* | high arousal — water in flood / surge |
-| **MED** | `m` | **`oju`** 🪼 *jellyfish* → *flow* | mid arousal — drifts with the current |
-| **LOW** | `l` | **`ozono`** 🌨️ *snow* → *stillness* | low arousal — calm / slack water |
+| Slot | Lexicon root | Metaphor |
+|------|--------------|----------|
+| **HIGH** | **`ogena`** 🌊 *ocean-wave* → *flood* | high arousal — water in flood / surge |
+| **MED** | **`oju`** 🪼 *jellyfish* → *flow* | mid arousal — drifts with the current |
+| **LOW** | **`ozono`** 🌨️ *snow* → *stillness* | low arousal — calm / slack water |
 
 ### Locus roots (LOCUS)
 
-| Slot | Claritish | Lexicon root | Metaphor |
-|------|-----------|--------------|----------|
-| **INTERNAL** | `i` | **`abobo`** 🍼 *baby-bottle* → *bottle* | charge held inside the speaker (in-vessel) |
-| **EXTERNAL** | `e` | **`oburo`** 🫗 *pour* → *pour* | charge directed at / attributed to other people |
-| **CIRCUM** | `c` | **`agena`** 🕯️ *candle* → *awash* | charge on the situation / ambient field — not owned by a person |
+| Slot | Lexicon root | Metaphor |
+|------|--------------|----------|
+| **INTERNAL** | **`abobo`** 🍼 *baby-bottle* → *bottle* | charge held inside the speaker (in-vessel) |
+| **EXTERNAL** | **`oburo`** 🫗 *pour* → *pour* | charge directed at / attributed to other people |
+| **CIRCUM** | **`agena`** 🕯️ *candle* → *awash* | charge on the situation / ambient field — not owned by a person |
 
 **Ordinary content still available:** these roots remain normal lexicon words under other PoS (`z-ogenal` *an ocean wave*; `v-oburol` *to pour*; …). The special reading is the floating mood use, especially `/h/`.
 
@@ -226,7 +219,7 @@ Port of Claritish **Emotion decompose** (`_[hml][iec]` + value on the judged hos
 
 Parallel INTERNAL / CIRCUM cues: *flood bottled* / *flow held* / *still in the vessel*; *room awash* / *undercurrent in the air* / *slack shared water*. Keep CIRCUM as **shared / ambient field** (candle-light filling the room), not a second vessel.
 
-**Recipe (judgment / explanation):** neutral description + **one value ascription** + **one ACT** + **one LOCUS**. Stack as free `/h/` / `/w/` units — do not mega-tag one host the way Claritish `_hc-ct` does.
+**Recipe (judgment / explanation):** neutral description + **one value ascription** + **one ACT** + **one LOCUS**. Stack as free `/h/` / `/w/` units — do not pack activation × locus × need into one host tag.
 
 | Clarity | Reading |
 |---------|---------|
@@ -235,7 +228,7 @@ Parallel INTERNAL / CIRCUM cues: *flood bottled* / *flow held* / *still in the v
 | `z-draftl w-competxam h-ogenal h-abobol` | *proud of the draft* → met competence (mental channel); flood bottled (internal) |
 | `z-notel w-relatxum h-ozonol h-oburol` | soft leftover blame → unmet relatedness; stillness pooling at them |
 
-**Raw feeling:** contacting a sensation without judgment/explanation may leave it unlabeled (or use [COMMENT / noting](#comment)). Full compose is required when an emotion word would have done evaluative work — same nudge as neutral praise / criticism.
+**Raw feeling:** contacting a sensation without judgment/explanation may leave it unlabeled. Full compose is required when an emotion word would have done evaluative work — same nudge as neutral praise / criticism. Do **not** add [COMMENT](#comment) on affect clauses.
 
 **Not `x`-compounds:** activation and locus are **root choices** (three-way mood inventories), not `xa`/`xu` polarity and not endings on need or ability compounds. Do **not** compound ACT/LOCUS onto the content verb the way ability does.
 
@@ -247,7 +240,7 @@ Parallel INTERNAL / CIRCUM cues: *flood bottled* / *flow held* / *still in the v
 | Contact channel | `xa` endings | locus (how you savor ≠ where charge sits) |
 | Preference standing | `xe` endings | locus (motive source ≠ felt-charge attribution) |
 | Ordinary degree | *very* / *slightly* | activation (intensity of *arousal*, not scalar property degree) |
-| Mental commentary | [COMMENT](#comment) (six synonymous noting `/h/`) | emotion-label compose (COMMENT ≠ ACT/LOCUS) |
+| Mental commentary | [COMMENT](#comment) (`uho`; cognitive attitudes only) | emotion-label compose (no COMMENT co-stack on affect) |
 
 ### Out of scope (for now)
 
@@ -267,13 +260,13 @@ Parallel INTERNAL / CIRCUM cues: *flood bottled* / *flow held* / *still in the v
 ## Plan / predict
 <a id="plan-predict"></a>
 
-Port of Claritish **Plan or predict** (`plan_None|Vague|Detail|Contingency`, `predict_` + evidentiality): English future cues (*will*, *going to*, *tomorrow*, …) smuggle whether you mean **intention** or **forecast**. Clarity keeps that fork as **two closed mood roots**, not value-style **`x`-compounds**.
+English future cues (*will*, *going to*, *tomorrow*, …) smuggle whether you mean **intention** or **forecast**. Clarity keeps that fork as **two closed mood roots**, not value-style **`x`-compounds**.
 
 | Claim | Prefer | Lexicon root |
 |-------|--------|--------------|
 | Intention / commitment about what *you* will do | closed **`PLAN`** under `/h/` (optional `/w/` if scoped only to a preceding `/ɡ/`) | **`owaro`** 🗺️ *world-map* → *plan* |
 | Forecast about what will happen | closed **`PREDICT`** under `/h/` (same `/w/` option) | **`edelo`** 🔭 *telescope* → *forecast* |
-| How detailed the intention is | endings (or a tiny closed set) on **`PLAN`** — Claritish None / Vague / Detail / Contingency; **-l / -m / -n / -r** is the natural four-way fit once assigned | same **`owaro`** |
+| How detailed the intention is | endings (or a tiny closed set) on **`PLAN`** — none / vague / detail / contingency; **-l / -m / -n / -r** is the natural four-way fit once assigned | same **`owaro`** |
 | How you know the forecast | ordinary **evidentiality** `/h/` stacked with **`PREDICT`** — same inventory as other claims (`caused_`, *thinks*, …; causal hosts also use [causation](causation.md) join shapes), not a predict-only compound series | same **`edelo`** |
 
 **Conceptual metaphors:** a **map** charts a course you mean to take; a **telescope** looks ahead at a distance (provisional resolution — not dice, not crystal-ball certainty). Past framing is a separate fork — [memory / record](#memory-record).
@@ -337,7 +330,7 @@ Idiom cue (teaching): *fish a boot* = retrieve the wrong past (🥾 `obodo` *boo
 <a id="ability"></a>
 <a id="incapability"></a>
 
-Port of Claritish **Incapability** (`can't_t`, `impossible_i`, …): capability denials often smuggle permanence; tag **changeability** on the denial. Restrictors (`hal` = *never*, …) stay **when the host applies**, not ability speech acts — do not redefine them as *can’t*.
+Capability denials often smuggle permanence; tag **changeability** on the denial. Restrictors (`hal` = *never*, …) stay **when the host applies**, not ability speech acts — do not redefine them as *can’t*.
 
 ### Primary: host + `xa` / `xu`
 
@@ -389,19 +382,19 @@ Bare `h-ABILl` / `w-ABILl` = ability **topic** only (ordinary [reference-suffix]
 | bare host (no `x`) | ordinary word | no ability claim |
 | bare **`ABIL`** (no `x`) | **Topic** | Ability named only |
 | **`xa`** | **Capable** | Capability present / claimed |
-| **`xu`** | **Incapable** | Capability denied — primary Claritish port |
+| **`xu`** | **Incapable** | Capability denied — ship this first |
 
 ### Endings — changeability only
 <a id="ability-changeability"></a>
 
 On ability **`xa`** and **`xu`** (host-attached or `ABIL`), **-l / -m / -n / -r** are **changeability** — the same table as unmet values ([values.md § Changeability](values.md#value-changeability)). Not contact channel, preference standing, or prescription force.
 
-| Ending | Changeability | Claritish | Mnemonic |
-|--------|---------------|-----------|----------|
-| **-l** | **temporary** — usually able; not this moment | **t** | closed *right-now* snapshot |
-| **-m** | **modifiable** — effort or circumstance may change it (also soft default if unknown; Claritish **`_x`** merges here) | **m** (+ **x**) | open to change |
-| **-n** | **irreversible** — fixed / impossible as far as you can tell | **i** | settled / named-as-fixed |
-| **-r** | **won't-now** — choice or deferral, not inability | **w** | not updating this *now* |
+| Ending | Changeability | Mnemonic |
+|--------|---------------|----------|
+| **-l** | **temporary** — usually able; not this moment | closed *right-now* snapshot |
+| **-m** | **modifiable** — effort or circumstance may change it (also soft default if unknown) | open to change |
+| **-n** | **irreversible** — fixed / impossible as far as you can tell | settled / named-as-fixed |
+| **-r** | **won't-now** — choice or deferral, not inability | not updating this *now* |
 
 **Can't vs won't:** **-n** (irreversible) vs **-r** (won't-now). Do not collapse them. Always pick an ending on **`xa`** / **`xu`**; unknown → **-m**.
 
@@ -416,18 +409,17 @@ On ability **`xa`** and **`xu`** (host-attached or `ABIL`), **-l / -m / -n / -r*
 | `…xun` | incapable, **irreversible** |
 | `…xur` | incapable, **won't-now** (choice) |
 
-### Claritish → Clarity
+### English → Clarity (schematic)
 
-| Claritish | Clarity (schematic) |
-|-----------|---------------------|
-| `can't_t` swim / sing | `v-swimxul` / `v-singxul` (host primary) |
-| `can't_m` … | `v-HOSTxum` |
-| `impossible_i` / `can't_i` … | `v-HOSTxun` |
-| `can't_w` … | `v-HOSTxur` |
-| `incapable_x` … | `v-HOSTxum` |
-| hostless / clause-wide *can’t_t* | `h-ABILxul` |
+| English | Clarity |
+|---------|---------|
+| *can’t* (usually able; not this moment) swim / sing | `v-swimxul` / `v-singxul` (host primary) |
+| *can’t* (may learn / unknown) … | `v-HOSTxum` |
+| *impossible* / *can’t* (fixed) … | `v-HOSTxun` |
+| *won’t* (choice, not inability) … | `v-HOSTxur` |
+| hostless / clause-wide *can’t* (temporary) | `h-ABILxul` |
 
-Hosts `can't` / `cannot` / `unable` / `incapable` / `impossible` collapse to **`xu` + changeability** on the activity root when there is one; otherwise on **`ABIL`**.
+Hosts *can't* / *cannot* / *unable* / *incapable* / *impossible* collapse to **`xu` + changeability** on the activity root when there is one; otherwise on **`ABIL`**.
 
 ### Ability vs values vs restrictors
 
