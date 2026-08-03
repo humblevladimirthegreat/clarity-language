@@ -4,7 +4,7 @@
 
 This page is the source of truth for **causal and condition** claims: how Clarity encodes *A leads to B*, *A is enough for B*, and *B does not happen without A* — without a dedicated “cause arrow” word and without resurrecting older generalization verbs that put the **justification** in the subject slot.
 
-Join **mechanics** stay in **[coordination.md](coordination.md)**. Join-relations stay in **[special-vocabulary.md § Join-relations](special-vocabulary.md#join-relations)**. Clause subordination (*because* / *if* / *iff*) stays in **[language-reference.md § Dependent clauses](language-reference.md#dependent-clauses)** — this page records the planned **`IF`** vs **`IFF`** split ([below](#if-vs-iff)). Preference dressed as a law stacks **[values](values.md)** (`xo` / `xe`). How you know stays shared **evidentiality** `/h/` (inventory TBD — [plan / predict](special-vocabulary.md#plan-predict)).
+Join **mechanics** stay in **[coordination.md](coordination.md)**. Join-relations stay in **[special-vocabulary.md § Join-relations](special-vocabulary.md#join-relations)**. Clause subordination (*because* / *if* / *iff*) stays in **[language-reference.md § Dependent clauses](language-reference.md#dependent-clauses)** — this page records the planned **`IF`** vs **`IFF`** split ([below](#if-vs-iff)). Preference dressed as a law stacks **[values](values.md)** (`xo` / `xe`). How you know stays shared **[evidentiality](special-vocabulary.md#evidentiality)** `/h/`.
 
 Port of Claritish **Evidentiality** on causal hosts (`caused_i`, `caused_p`, …) and the older Clarity idea that general causal “laws” should show their warrant (definition, pattern, desire, source, prior premise).
 
@@ -151,7 +151,7 @@ Do **not** upgrade `aom` → `ol` / `gon` just because you feel strongly. Streng
 
 | Stack | Role |
 |-------|------|
-| Evidentiality `/h/` | *how you know* the link (Claritish `caused_i` / `caused_p` / …) — shared inventory with **PREDICT** / other-minds claims; roots TBD |
+| Evidentiality `/h/` | *how you know* the link (Claritish `caused_i` / `caused_p` / …) — [evidentiality](special-vocabulary.md#evidentiality) (**INFERRED** `eve`, **PATTERN** `awa`, …); shared with **PREDICT** / other-minds claims |
 | **`hual` / `huam`** | habitual / characterizing pattern on the clause — [restrictors](restrictors.md) |
 | Universality | how exceptionless the claim is — [universality moods](special-vocabulary.md#universality) (**COMMON** `ewono` default; **UNCOUNTERED** / **FORMAL** / **NATURAL** / **RULE**) |
 | Values `xo` / `xe` | ought or motive — [above](#preference-vs-law) |
@@ -163,7 +163,7 @@ Particular episode (*this delay was caused by…*) vs standing law (*clouds for 
 
 | Claritish / English cue | Clarity |
 |-------------------------|---------|
-| `caused_` + evidentiality letter | condition shape (sufficient / necessary) + evidential `/h/` (when inventory lands) |
+| `caused_` + evidentiality letter | condition shape (sufficient / necessary) + evidential `/h/` ([inventory](special-vocabulary.md#evidentiality)) |
 | *leads to* / *results in* (ordinary) | open sufficient (`…aom` / `haon`, …) |
 | *necessary for* / *without X, no Y* | `huan` / `guan` / `hal` |
 | *the only cause* / *has to be* | marked `gon` / `hon` / `…ol` |
@@ -187,11 +187,12 @@ Particular episode (*this delay was caused by…*) vs standing law (*clouds for 
 ## Out of scope (for now)
 <a id="out-of-scope"></a>
 
-- Lexicon phonetics of **`IF`** / **`IFF`** / *because* relation roots and of evidentiality moods.
+- Lexicon phonetics of **`IF`** / **`IFF`** / *because* relation roots.
 - Full **`IF`** vs **`BECAUSE`** factivity write-up (hypothetical vs asserted explanation) and any epistemic-*because* twin.
 - Closed **`CAUSE`** mood root (optional later; joins already carry condition type) — candidate lexicon **`erage`** ⚙️ *gear* → *mechanism* (do **not** reuse for [NATURAL](special-vocabulary.md#universality) **`afafa`**).
 - Closed **`COND`** complex adjective (rejected in favor of existing joins for now).
 - Ending tables on **`IF`** / **`IFF`** (soft vs closed law-like, if needed later).
+- Evidential **NONE** / **UNSPECIFIED** roots ([evidentiality](special-vocabulary.md#evidentiality) out of scope).
 
 ## Cross-links
 
@@ -200,7 +201,6 @@ Particular episode (*this delay was caused by…*) vs standing law (*clouds for 
 - Restrictors **`hal` / `hual`**: [restrictors.md](restrictors.md)
 - Dependent clauses / NEXT: [language-reference.md](language-reference.md#dependent-clauses)
 - Values prescription / motive: [values.md](values.md)
-- Evidentiality pointer (with PREDICT): [special-vocabulary.md § Plan / predict](special-vocabulary.md#plan-predict)
-- Past framing (memory vs record): [special-vocabulary.md § Memory / record](special-vocabulary.md#memory-record)
+- Evidentiality (channels / *believe* / `caused_`): [special-vocabulary.md § Evidentiality](special-vocabulary.md#evidentiality)
 - Universality warrant: [special-vocabulary.md § Universality](special-vocabulary.md#universality)
 - Classification generics (not causation): [predication.md](predication.md), [universals](coordination.md#universals-domains-generics)

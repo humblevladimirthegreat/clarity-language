@@ -1,7 +1,7 @@
 # Special vocabulary
 <a id="special-vocabulary"></a>
 
-This page is the source of truth for **special morphology and closed roots** that are **not** [values](values.md) (needs) and **not** [restrictors](restrictors.md) (applicability joins). They reuse mid-word **`x`** where useful ([ability](#ability): host + stance vowel; [role compounds](#role-compounds): ROLE vowel + event/relation root; [numeric derivation](#numeric-derivation): host + number stem), but keep their own inventories; some entries are closed mood roots with **no** `x`-addition (plan / predict, [memory / record](#memory-record) past framing, [universality](#universality), emotion activation / locus, **comment** / mindfulness noting); **join-act verbs** and **join-relations** reuse join-vowel spellings under `/v/` `/ɡ/` `/h/`…**-n**. Parser families for mid-word **`x`**: **[x-compounds.md](x-compounds.md)**.
+This page is the source of truth for **special morphology and closed roots** that are **not** [values](values.md) (needs) and **not** [restrictors](restrictors.md) (applicability joins). They reuse mid-word **`x`** where useful ([ability](#ability): host + stance vowel; [role compounds](#role-compounds): ROLE vowel + event/relation root; [numeric derivation](#numeric-derivation): host + number stem), but keep their own inventories; some entries are closed mood roots with **no** `x`-addition (plan / predict, [evidentiality](#evidentiality) including [memory / record](#memory-record) past framing, [universality](#universality), emotion activation / locus, **comment** / mindfulness noting); **join-act verbs** and **join-relations** reuse join-vowel spellings under `/v/` `/ɡ/` `/h/`…**-n**. Parser families for mid-word **`x`**: **[x-compounds.md](x-compounds.md)**.
 
 Ordinary `/h/` / `/w/` content still defaults to values unless the form is already in a clearer closed subcategory (restrictors, special vocabulary here, evidentiality/mood, degree, adjuncts, numbers) — see [values.md](values.md#default-reading-of-h-and-w).
 
@@ -135,7 +135,7 @@ English attitude verbs smuggle COMMENT **or** affect. Split them:
 | *fear / worry / dread / regret …* | [emotion compose](#emotion-compose): unmet [value](values.md) (`xu`) + **ACT** + **LOCUS** — **no** COMMENT |
 | *hope / wish …* (feeling) | emotion compose (value + ACT + LOCUS) — **no** COMMENT |
 | *hope / wish …* (intention) | motive (`xe`) and/or [**PLAN**](#plan-predict) / soft force — **no** COMMENT; not a hope-mood |
-| *believe …* | evidentiality (inventory TBD) — **not** COMMENT |
+| *believe …* | [evidentiality](#evidentiality) (`h-uhunul`, `h-erarel`, …) — **not** COMMENT |
 
 | Clarity | Reading |
 |---------|---------|
@@ -152,8 +152,8 @@ English attitude verbs smuggle COMMENT **or** affect. Split them:
 | Contact channel | `xa` endings (physical / mental / social / spiritual) | the COMMENT root |
 | Emotion ACT / LOCUS | [emotion compose](#emotion-compose) | a co-stack on fear/worry/regret (affect uses compose alone) |
 | Plan / predict | [plan / predict](#plan-predict) | *hope* / *expect* as future moods |
-| Memory / record | [memory / record](#memory-record) | generic *past* / *I remember* without source fork |
-| Evidentiality | shared mood `/h/` on claims | *believe* / warrant / how you know |
+| Memory / record | [evidentiality](#evidentiality) **WITNESSED** / **RECORDED** | generic *past* / *I remember* without source fork |
+| Evidentiality | [evidentiality](#evidentiality) | *believe* / warrant / how you know |
 | Perception events | ordinary `/v/` lexicon | COMMENT `/h/` (*hearing* as commentary ≠ *hear the door*) |
 | Clause force | `/j/` (`jal`, `jam`, …) | a noting speech-act force |
 
@@ -164,7 +164,6 @@ English attitude verbs smuggle COMMENT **or** affect. Split them:
 - Whether sense-channel noting (looking / hearing / feeling / …) returns as practice color on **`uho`** or stays English-only pedagogy.
 - Whether a dedicated bare `/j/` interjection reuses the same root.
 - Forced COMMENT on every first-person clause (only cognitive commentary environments).
-- *Believe* / warrant morphology (evidentiality inventory).
 
 ### Constraints
 
@@ -174,7 +173,7 @@ English attitude verbs smuggle COMMENT **or** affect. Split them:
 - Do **not** stack COMMENT on [emotion compose](#emotion-compose) clauses (*fear* / *worry* / *regret* / hope-as-feeling).
 - Do **not** reuse [value contact-channel](values.md#value-contact) endings as COMMENT.
 - Do **not** treat COMMENT as evidentiality (*believe* / how you know).
-- **ACT** / **LOCUS** / **PLAN** / **PREDICT** / [**MEMORY** / **RECORD**](#memory-record) / [universality](#universality) / values remain separate `/h/` (or `/w/`) stacks when needed.
+- **ACT** / **LOCUS** / **PLAN** / **PREDICT** / [evidentiality](#evidentiality) / [universality](#universality) / values remain separate `/h/` (or `/w/`) stacks when needed.
 - Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)).
 
 ## Emotion compose
@@ -267,18 +266,17 @@ English future cues (*will*, *going to*, *tomorrow*, …) smuggle whether you me
 | Intention / commitment about what *you* will do | closed **`PLAN`** under `/h/` (optional `/w/` if scoped only to a preceding `/ɡ/`) | **`owaro`** 🗺️ *world-map* → *plan* |
 | Forecast about what will happen | closed **`PREDICT`** under `/h/` (same `/w/` option) | **`edelo`** 🔭 *telescope* → *forecast* |
 | How detailed the intention is | endings (or a tiny closed set) on **`PLAN`** — none / vague / detail / contingency; **-l / -m / -n / -r** is the natural four-way fit once assigned | same **`owaro`** |
-| How you know the forecast | ordinary **evidentiality** `/h/` stacked with **`PREDICT`** — same inventory as other claims (`caused_`, *thinks*, …; causal hosts also use [causation](causation.md) join shapes), not a predict-only compound series | same **`edelo`** |
+| How you know the forecast | ordinary **[evidentiality](#evidentiality)** `/h/` stacked with **`PREDICT`** — same inventory as other claims (`caused_`, *thinks*, …; causal hosts also use [causation](causation.md) join shapes), not a predict-only compound series | same **`edelo`** |
 
-**Conceptual metaphors:** a **map** charts a course you mean to take; a **telescope** looks ahead at a distance (provisional resolution — not dice, not crystal-ball certainty). Past framing is a separate fork — [memory / record](#memory-record).
+**Conceptual metaphors:** a **map** charts a course you mean to take; a **telescope** looks ahead at a distance (provisional resolution — not dice, not crystal-ball certainty). Past / source framing uses [evidentiality](#evidentiality) (e.g. **WITNESSED** / **RECORDED**).
 
 **Not `x`-compounds:** plan vs predict is a **root choice** (speech-act type), not `xa`/`xu` polarity on a host. Ability compounds onto an activity (`v-singxun`); plan/predict **frame the clause** — content verbs stay bare. Do **not** map plan grain onto contact / preference standing / prescription force / changeability, and do **not** invent `xe`/`xo` (or any `x`+vowel) for future framing.
 
-Schematic: `h-owaron … v-finishl` (*detail plan: I finish*) vs `h-edelol` + evidential `/h/` … `v-rainl` (*forecast: it rains*).
+Schematic: `h-owaron … v-finishl` (*detail plan: I finish*) vs `h-edelol` + evidential `/h/` … `v-rainl` (*forecast: it rains* — e.g. `h-awal` for pattern).
 
 ### Out of scope (for now)
 
 - Exact ending ↔ None / Vague / Detail / Contingency assignment on **`PLAN`**.
-- Full evidentiality root / ending inventory (shared mood system; predict only participates).
 
 ### Constraints
 
@@ -286,51 +284,109 @@ Schematic: `h-owaron … v-finishl` (*detail plan: I finish*) vs `h-edelol` + ev
 - Do **not** reuse mid-word **`x` + {a\|e\|o\|u}** for plan/predict.
 - Prefer floating `/h/`; do not compound plan/predict onto the content verb the way ability does.
 
-## Memory / record (past framing)
+## Evidentiality
+<a id="evidentiality"></a>
+<a id="evidential"></a>
+
+Claims about the world — what happened, what caused what, what someone else thinks, what will happen — often smuggle **how you know**. Clarity marks that as closed `/h/` mood roots (optional `/w/` when scoped only to a preceding `/ɡ/`) — same non-value mood subcategory as [plan / predict](#plan-predict).
+
+Port of Claritish **Evidentiality** (`_n` / `_w` / `_r` / `_p` / `_i` / `_t` / `_f` / `_s` / `_x`) on claim hosts (`caused_i`, `predict_p`, `thinks_t`, …).
+
+**Not COMMENT:** first-person *I think* / rumination is [**COMMENT**](#comment) (`uho`). *Believe* / other-minds *thinks* / causal warrant / forecast warrant use **this** inventory. Do **not** treat Claritish mindfulness noting letters on first-person attitude verbs (`I think_m`, …) as evidentiality.
+
+### Mood inventory (source-channel family)
+
+**Conceptual metaphor:** each root is a **channel** you got the claim through — memory catch, playback, trail of cases, detective work, listening, gut, tale. Content PoS stays ordinary (*an ear*, *a heart*, *a scroll*); under `/h/` / `/w/` mood use, the figurative channel reading wins.
+
+| Mood | Claritish | Lexicon root | Metaphor | Gloss |
+|------|-----------|--------------|----------|-------|
+| **WITNESSED** | `_w` | **`uhunu`** | 🎣 *fishing* → *memory* | firsthand / reconstructive — you (think you) caught it yourself; may pull a **boot** |
+| **RECORDED** | `_r` | **`eroge`** | ⏺️ *record* → *record* | documented / captured — playback of what was preserved |
+| **PATTERN** | `_p` | **`awa`** | 🐾 *paw-prints* → *trail* → *pattern* | from regularity / similar cases left behind |
+| **INFERRED** | `_i` | **`eve`** | 🕵️ *detective* → *investigation* → *inference* | reasoned from clues — not direct channel |
+| **TOLD** | `_t` | **`erare`** | 👂 *ear* → *listening* → *hearsay* | reportative — under `/h/`, *listening* = hearsay |
+| **FELT** | `_f` | **`ahe`** | ❤️ *heart* → *gut-felt* | proprioceptive / affective knowing — not [emotion compose](#emotion-compose) |
+| **STORY** | `_s` | **`orolo`** | 📜 *scroll* → *tale* | narrative / lore / anecdotal framing |
+| **NONE** | `_n` | TBD | — | no evidential warrant named |
+| **UNSPECIFIED** | `_x` | TBD | — | channel left open |
+
+**Default pedagogy:** when a world-claim needs a channel and none of the named sources fits, prefer naming one over silent assertion; **NONE** / **UNSPECIFIED** roots land later.
+
+**Not `x`-compounds:** channel is a **root choice**, not `xa`/`xu` on the claim host. Stack with **PREDICT**, causation shapes, [universality](#universality) **NATURAL**, other-minds content, ….
+
+| Clarity (schematic) | Reading |
+|---------------------|---------|
+| `… h-uhunul …` | *per memory / witnessed* (reconstructive) |
+| `… h-erogel …` | *on record / recorded* |
+| `… h-awal …` | *from the pattern / trail of cases* |
+| `… h-evel …` | *inferred / from investigation* |
+| `… h-erarel …` | *told / hearsay* |
+| `… h-ahel …` | *felt / gut-known* |
+| `… h-orolol …` | *per the tale / story* |
+| `h-edelol h-awal … v-rainl` | *forecast from pattern: it rains* |
+| `… haon b-…` + `h-evel` | *sufficient-cause claim, inferred* |
+
+### Memory / record (past framing)
 <a id="memory-record"></a>
 <a id="memory"></a>
 <a id="record-past"></a>
 
-English past tense and *I remember* / *according to…* smuggle **how** the past is sourced. Clarity splits two closed roots (same non-value `/h/` / `/w/` mood subcategory as plan / predict):
+**WITNESSED** (`uhunu`) and **RECORDED** (`eroge`) **are** the evidential roots — not a separate past-only mood pair. Past *I remember* / *according to…* / *on record* readings are the same channels applied to past claims.
 
-| Framing | Prefer | Lexicon root | Metaphor |
-|---------|--------|--------------|----------|
-| Reconstructive / recalled past (*according to my memory*, *as I remember it*) | closed **`MEMORY`** under `/h/` (optional `/w/` on a preceding `/ɡ/`) | **`uhunu`** 🎣 *fishing* → *memory* | Casting into opaque water — you may pull up a fish or a **boot** (misremember) |
-| Documented / captured past (*on record*, *as recorded*) | closed **`RECORD`** under `/h/` (same `/w/` option) | **`eroge`** ⏺️ *record* → *record* | Preserving what happened now for later playback |
+| Framing | Evidential mood | Lexicon root | Metaphor cue |
+|---------|-----------------|--------------|--------------|
+| Reconstructive / recalled past | **WITNESSED** | **`uhunu`** | Casting into opaque water — fish or **boot** |
+| Documented / captured past | **RECORDED** | **`eroge`** | Preserving now for later playback |
 
-**`/h/` is the common case:** clause-level past framing — *according to memory, this happened* vs *on record, this happened*. That is a **source-of-past** mood, not a need and not ordinary tense morphology (dedicated observation vs imagination tense remains TBD — [TODO](../TODO.md)).
+Dedicated observation vs imagination **tense** remains TBD — [TODO](../TODO.md); it stacks with these channels, it does not replace them.
 
-**Ordinary content still available:** both roots are normal lexicon words under other PoS (`z-uhunul` *a memory*; `v-erogel` *to record*; `d-uhunux-0l` *that memory that won’t blank* — [null / anti-null](#null-anti-null)). The special reading is the floating mood use, especially `/h/`.
-
-**Not `x`-compounds:** memory vs record is a **root choice**, not `xa`/`xu` on a host. Do **not** treat **`MEMORY`** as a video-recorder archive (fishing is unreliable retrieval); do **not** treat **`RECORD`** as reconstructive recall.
-
-| Clarity (schematic) | Reading |
-|---------------------|---------|
-| `… h-uhunul …` | *as I remember / according to memory* — reconstructive past |
-| `… h-erogel …` | *on record / as recorded* — captured past |
-| `jal z-Samn … h-uhunul` | *Sam … (per memory)* |
-| `z-uhunul` / `d-uhunur` | *a / that memory* (content noun) |
+**Ordinary content still available:** `z-uhunul` *a memory*; `v-erogel` *to record*; `d-uhunux-0l` *that memory that won’t blank* — [null / anti-null](#null-anti-null). Same for the other channel roots (`z-erarer` *that ear*, `z-orolol` *a scroll*, …).
 
 Idiom cue (teaching): *fish a boot* = retrieve the wrong past (🥾 `obodo` *boot* stays free for the punchline).
 
+### Claritish → Clarity
+
+| Claritish | Clarity |
+|-----------|---------|
+| `caused_i` / `predict_i` / … | claim shape + **`h-evel`** |
+| `caused_p` / `predict_p` / `always_lnp` | claim shape (+ **`h-afafal`** if natural) + **`h-awal`** |
+| `thinks_t` / `caused_t` | content + **`h-erarel`** |
+| `knew_f` | content + **`h-ahel`** |
+| `caused_w` / memory-sourced claim | **`h-uhunul`** |
+| `caused_r` / on-record claim | **`h-erogel`** |
+| `…_s` (story channel) | **`h-orolol`** |
+| `…_n` / `…_x` | TBD roots |
+
+### Contrasts
+
+| | Prefer | Avoid |
+|--|--------|-------|
+| COMMENT vs warrant | `h-uhol` = first-person commentary; evidential = how the **world-claim** is sourced | using COMMENT for *believe* / *thinks* |
+| Felt vs emotion | **`ahe`** = channel of knowing; emotion = value + ACT + LOCUS | stacking **FELT** as a seventh emotion ACT |
+| Told vs listening-event | `/h/` **`erare`** = hearsay; *hear the door* = ordinary `/v/` | collapsing both |
+| Pattern vs COMMON | **`awa`** = evidential trail; **`ewono`** = exceptionlessness warrant | encoding `_p` as universality |
+| Witnessed vs Recorded | fishing retrieval vs playback archive | one generic *past* adverb |
+
 ### Out of scope (for now)
 
-- Ending tables on **`MEMORY`** / **`RECORD`** (grain of confidence, whose memory, …).
-- Full tense inventory (observation vs imagination) and how these stack with it.
-- Whether **`RECORD`** may double as an evidentiality exponent or stays a separate past-source mood.
+- Lexicon roots for **NONE** (`_n`) and **UNSPECIFIED** (`_x`).
+- Ending tables on these roots (grain of confidence, whose memory, soft vs committed channel, …).
+- Full tense inventory (observation vs imagination) and how it stacks with channels.
 
 ### Constraints
 
-- **`MEMORY`** (`uhunu`) and **`RECORD`** (`eroge`) are mood roots in the non-value `/h/` / `/w/` subcategory when framing the clause — not needs, not restrictors.
-- Prefer floating `/h/` for past-source framing; content PoS uses stay ordinary.
-- Do **not** reuse mid-word **`x` + {a\|e\|o\|u}** for memory/record mood.
-- Do **not** collapse the fork into one generic *past* adverb.
+- Named channel roots (**`uhunu`**, **`eroge`**, **`awa`**, **`eve`**, **`erare`**, **`ahe`**, **`orolo`**) are mood roots in the non-value `/h/` / `/w/` subcategory — not needs, not restrictors.
+- Prefer floating `/h/`; content PoS uses stay ordinary.
+- Do **not** reuse mid-word **`x` + {a\|e\|o\|u}** for evidentiality.
+- Do **not** invent a predict-only or cause-only evidential series — one shared inventory.
+- Do **not** treat **FELT** as [emotion compose](#emotion-compose) or **TOLD** as perception-as-event.
+- **ACT** / **LOCUS** / **PLAN** / **PREDICT** / **COMMENT** / [universality](#universality) / values remain separate stacks when needed.
 
 ## Universality
 <a id="universality"></a>
 <a id="universality-mood"></a>
 
-English *always* / *every* / *never* / *everyone* smuggle **how exceptionless** the claim is. Clarity keeps **domain** on the [universal fences](coordination.md#universals-domains-generics) (`zual` / `hual` / …) and puts the **warrant** on closed `/h/` mood roots (optional `/w/` when scoped only to a preceding `/ɡ/`) — same non-value mood subcategory as [plan / predict](#plan-predict) and [memory / record](#memory-record).
+English *always* / *every* / *never* / *everyone* smuggle **how exceptionless** the claim is. Clarity keeps **domain** on the [universal fences](coordination.md#universals-domains-generics) (`zual` / `hual` / …) and puts the **warrant** on closed `/h/` mood roots (optional `/w/` when scoped only to a preceding `/ɡ/`) — same non-value mood subcategory as [plan / predict](#plan-predict) and [evidentiality](#evidentiality).
 
 Port of Claritish **Universality** (`_c` / `_u` / `_lf` / `_ln`+evidentiality / `_lr(scope)`).
 
@@ -351,7 +407,7 @@ Port of Claritish **Universality** (`_c` / `_u` / `_lf` / `_ln`+evidentiality / 
 | **COMMON** (default) | `_c` | **`ewono`** | ⛅ *weather* → *usual* | statistically / experientially usual — exceptions expected |
 | **UNCOUNTERED** | `_u` | **`ululu`** | 🌤️ *clear sky* → *uncountered* | no counterexample comes to mind — search, not proof |
 | **FORMAL** | `_lf` | **`idido`** | ⭐ *star chart* → *formal* | definition / math / proof — fixed constellation |
-| **NATURAL** | `_ln` + evidentiality | **`afafa`** | 🍎 *apple* → *natural* | natural necessity (unsupported objects fall); stack ordinary evidential `/h/` |
+| **NATURAL** | `_ln` + evidentiality | **`afafa`** | 🍎 *apple* → *natural* | natural necessity (unsupported objects fall); stack ordinary [evidential](#evidentiality) `/h/` |
 | **RULE** | `_lr(scope)` | **`ebebe`** | ♟️ *board* → *rule-frame* | holds inside a named frame; take `/b/` scope (`h-ebebel b-chessl`) |
 
 **Default:** when a universal / habitual claim needs a warrant and none of FORMAL / NATURAL / RULE / UNCOUNTERED fits, use **COMMON** (`h-ewonol`). Do not treat FORMAL as socially preferred.
@@ -363,7 +419,7 @@ Port of Claritish **Universality** (`_c` / `_u` / `_lf` / `_ln`+evidentiality / 
 | `… hual … h-ewonol` | *always, usually* (default warrant) |
 | `… hual … h-ululul` | *always, as far as I’ve checked* (no counterexample comes to mind) |
 | `zual g-squarel … h-ididol` | *every square, by definition* |
-| `… hual … h-afafal` + evidential `/h/` | *always, by natural necessity* (how you know stacked separately) |
+| `… hual … h-afafal` + evidential `/h/` | *always, by natural necessity* (how you know stacked separately — e.g. `h-awal`) |
 | `… hual … h-ebebel b-chessl` | *always, under chess* |
 | `zuam g-catl … h-ewonol` | soft domain *every cat that comes to mind* + usual warrant |
 
@@ -374,7 +430,7 @@ Port of Claritish **Universality** (`_c` / `_u` / `_lf` / `_ln`+evidentiality / 
 | `always_c` / `everyone_c` / `never_c` | domain fence (`hual` / `zual` / `hal` / …) + **`h-ewonol`** |
 | `always_u` / `never_u` | domain fence + **`h-ululul`** |
 | `all_lf` / definitional *every* | domain fence + **`h-ididol`** |
-| `always_lnp` (etc.) | domain fence + **`h-afafal`** + evidential `/h/` (letter inventory TBD) |
+| `always_lnp` (etc.) | domain fence + **`h-afafal`** + evidential `/h/` (e.g. **`h-awal`** for `_p`) |
 | `always_lr(chess)` | domain fence + **`h-ebebel b-…`** (scope NP) |
 
 ### Contrasts
@@ -384,13 +440,13 @@ Port of Claritish **Universality** (`_c` / `_u` / `_lf` / `_ln`+evidentiality / 
 | Domain vs warrant | `zual g-catl` + `h-ewonol` | encoding `_c` as `zuam` alone |
 | Soft list vs uncountered | `zuam` = open inventory; **`ululu`** = no counterexample found | collapsing both into **-m** |
 | Formal vs natural | **`idido`** = definition/proof; **`afafa`** = nature’s force + evidential | using either for “I can’t think of exceptions” |
+| Pattern vs COMMON | [evidential](#evidentiality) **`awa`** = trail of cases; **`ewono`** = usual warrant | encoding `_p` as universality |
 | Natural vs CAUSE | **`afafa`** for exceptionlessness; condition type stays [joins](causation.md); optional **`CAUSE`** mood keeps **`erage`** ⚙️ *gear* → *mechanism* | reusing **`erage`** as NATURAL |
 | Preference as law | values **`xo` / `xe`** — [causation](causation.md#preference-vs-law) | stronger universality mood instead of naming the need |
 
 ### Out of scope (for now)
 
 - Ending tables on these roots (committed vs soft warrant, anaphor, …).
-- Full evidentiality inventory that **NATURAL** stacks with.
 - Whether bare unmarked `hual` / `zual` **implies** COMMON or leaves warrant unspoken (pedagogy may still nudge **COMMON**).
 
 ### Constraints
@@ -400,7 +456,7 @@ Port of Claritish **Universality** (`_c` / `_u` / `_lf` / `_ln`+evidentiality / 
 - Do **not** reuse mid-word **`x` + {a\|e\|o\|u}** for universality.
 - Do **not** assign **`erage`** (optional **CAUSE**) to NATURAL.
 - Domain / habitual morphology stays [coordination](coordination.md#universals-domains-generics) / [restrictors](restrictors.md); this section only warrants exceptionlessness.
-- **ACT** / **LOCUS** / **PLAN** / **PREDICT** / **MEMORY** / **RECORD** / **COMMENT** / evidentiality / values remain separate stacks when needed.
+- **ACT** / **LOCUS** / **PLAN** / **PREDICT** / [evidentiality](#evidentiality) / **COMMENT** / values remain separate stacks when needed.
 
 ## Ability
 <a id="ability"></a>
