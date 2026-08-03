@@ -16,7 +16,7 @@ After the PoS prefix, look at what sits **left** and **right** of the first mid-
 | **`VOWEL x VOWEL`** + ending | **[Span fence](spans.md)** | TYPE **a** / **e** / **o** / **u** then EDGE **a** / **e** / **o** / **u**; exact **`xuxul`** / **`xuxur`** / **`xuxun`** / **`xuxum`** = close |
 | **`VOWEL x ROOT…`** + ending | **[Role compound](special-vocabulary.md#role-compounds)** | ROLE **`a`** / **`u`** / **`o`** then event or relation root; **`e`** reserved |
 | **`ROOT… x VOWEL`** + ending | **[Values](values.md)** or **[ability](special-vocabulary.md#ability)** | Need root + **`a`/`e`/`o`/`u`** → values; other root + **`xa`/`xu`** → ability (**`xe`/`xo`** undefined on ability) |
-| **`ROOT… x NUM…`** + ending | **[Numeric derivation](special-vocabulary.md#numeric-derivation)** | Right half matches [number](numbers.md) stem grammar **without** its own ending (marker **`+`/`-`/`#`/`_`**, digitless exp including label **`_e`/`_e-`**, hyperbole, [zero × exp](numbers.md#zero-exponent) **`+0e`/`+e0`/`+0e0`**, label digits, scalar digit morph **`+N`/`-N`**, or ordinal digit morph **`#N`** — not free end-relative **`#-`** / generation morphs) |
+| **`ROOT… x NUM…`** + ending | **[Numeric derivation](special-vocabulary.md#numeric-derivation)** | Right half matches [number](numbers.md) stem grammar **without** its own ending (marker **`+`/`-`/`#`/`_`**, digitless exp including label **`_e`/`_e-`**, hyperbole, [zero × exp](numbers.md#zero-exponent) **`+0e`/`±0e-1`/`#0e`**, label digits, scalar digit morph **`+N`/`-N`**, or ordinal digit morph **`#N`** — not free end-relative **`#-`** / generation / **`Ne0`** assert morphs; **`ROOTx+e0`/`+0e0`** TBD) |
 | **`ROOT… x ROOT…`** + ending | **Ordinary compound** | Lexicon sense-compounds; [phrasal proper names](reference-suffix.md#phrasal-proper-names) (`z-MaryxSmithn`) |
 
 No open content root is a **bare single vowel**, so a single vowel **left** of `x` is never an ordinary host root. Spans are the only family with a **single vowel right** of `x` (EDGE); role compounds put a full **`V(CV)+`** root there. Numeric **`NUM`** is never a content root — it is a PoS-less number stem (see [numeric derivation](special-vocabulary.md#numeric-derivation)).
@@ -39,7 +39,7 @@ Stacked vowels on TYPE/EDGE/ROLE are **not** used: role ROLE is one of **`a`** /
 | Topic | Page |
 |-------|------|
 | Role **`a`/`u`/`o`** (agent / patient / reltum) | [special-vocabulary.md § Role compounds](special-vocabulary.md#role-compounds) |
-| Numeric derivation (**`ROOT x NUM`**) | [special-vocabulary.md § Numeric derivation](special-vocabulary.md#numeric-derivation) — includes [zero×exp / identity](special-vocabulary.md#zero-exponent-derivation) |
+| Numeric derivation (**`ROOT x NUM`**) | [special-vocabulary.md § Numeric derivation](special-vocabulary.md#numeric-derivation) — includes [zero×exp](special-vocabulary.md#zero-exponent-derivation) |
 | Values **`need x {a\|e\|o\|u}`** | [values.md](values.md) |
 | Ability **`HOST x {a\|u}`** | [special-vocabulary.md § Ability](special-vocabulary.md#ability) |
 | Number stem grammar (free words) | [numbers.md](numbers.md) |
