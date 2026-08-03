@@ -63,6 +63,31 @@ The goal of r/claritylanguage is to help foster compassion, rationality, and emp
 
 Parts of speech are determined by a prefix consonant added before each word. Words do not change form based on usage, and can be used in most parts of speech, so the prefix is how you know a word's role.
 
+<a id="orthography"></a>
+<a id="writing-words"></a>
+
+### Orthography (actual words)
+
+**No hyphen after the PoS letter.** Real Clarity concatenates prefix + root + ending in one token:
+
+| Actual writing | Not this |
+|----------------|----------|
+| `zivon` | ~~`z-ivon`~~ |
+| `dilen` | ~~`d-ilen`~~ |
+| `glbigl` | ~~`gl-bigl`~~ |
+
+Hyphens in these docs (`z-ivon`, `v-singxun`, …) are **pedagogical only** — they mark the PoS|root boundary for readers. They are **not** part of the language. Migration of examples to unhyphenated form is TBD; do not treat `z-…` as correct orthography.
+
+**Foreign / non-Clarity roots** sit in **`<>`**, with the reference suffix **after** the closer:
+
+| Actual writing | Role |
+|----------------|------|
+| `d<english>l` | foreign root *english* as direct object, exact (**-l**) |
+| `z<Sam>n` | foreign proper *Sam* as subject |
+| `g<teacher>l` | foreign root as adjective |
+
+Parser does **not** read inside `<>` as Clarity phonology. Full opaque **span fences** (multi-token foreign/code blobs, speech `dux…`) stay in [spans.md](spans.md); the `PoS<…>ENDING` shape is the compact foreign-root word.
+
 Every sentence begins with an **utterance-frame** `/j/` cluster that includes **clause force** (see [Utterance markers](#utterance-markers-j)); that fixed left edge is how sentence boundaries stay clear under free word order. After that opener, the standard order is Subject \- Direct Object \- Verb. Order of those core roles can change for stylistic reasons (including **focus**), or to put a [next-clause pronoun](#dependent-clauses) **matrix-final** before a trailing dependent. Adjectives (`/ɡ/`) go **after** what they modify by default, or **before** when marked left-bound (**`gl-`** — see [Adjectives](#adjectives-ɡ)). Adverbs (`/h/`) may appear anywhere in the clause (see below) except a next-clause `/h/`+`/b/` unit, which is matrix-final.
 
 ## Part-of-speech prefixes

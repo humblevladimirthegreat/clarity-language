@@ -39,4 +39,5 @@ Clarity encodes psychologically useful distinctions natively (no English tag ove
 - Node ≥ 20; `npm run generate` / `npm run parse` exist for the current grammars — leave grammars alone unless explicitly asked.
 - Generated parsers live in `src/generated/` (gitignored).
 - Language design work goes through `docs/language-reference.md` (and `TODO.md` until absorbed).
+- **Orthography:** actual Clarity has **no hyphen** after the PoS letter (`zivon`, not `z-ivon`); foreign roots use `PoS<…>ENDING` (e.g. `d<english>l`). Doc hyphens are pedagogical only — see [language-reference.md § Orthography](docs/language-reference.md#orthography).
 - After editing Markdown under `docs/` (or `AGENTS.md` / `TODO.md`), run **`npm run lint:md`** — it fails on unclosed `*` / `**` and on slash-joined emphasis (`*a*/*b*`, which breaks Cursor’s rich preview with `italic,italic`). Prefer spaces (`*a* / *b*`) or one span (`*a/b*`). Avoid nesting `**…**` inside already-bold text; in bold headings/bullets put forms in backticks only (`**Ranked (`e` / `ae`)**`, not `**ae**` inside).
