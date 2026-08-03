@@ -6,7 +6,7 @@ This page is the source of truth for **phrase-level** (same-slot **right-close**
 
 PoS prefixes and ordinary word shape: [language-reference.md](language-reference.md). Reference suffixes: [reference-suffix.md](reference-suffix.md). Phonotactics for reserved join roots: [phonology.md](phonology.md#phonotactics). Interrogative readings of these forms: [questions.md](questions.md).
 
-**List shapes:** **Phrase-level**, **VP-level**, and **clause-level** all use a **right-close fence**: conjuncts first, then the prefixed join, then optional shared modifiers **immediately after** that join; conjuncts juxtaposed (no mid-chain continue particle). **-r** on **a** / **o** / **e** / **u** is the [unspecified-member](#unspecified-member-r-phrase) series at every level (*something* / *anything* / *whatever-by-rank* / *something else* — VP: *do something* / …; clause: *something happened* / …). Plain **u** = [negation](#negation-u) (*not* / *none of* / bare *no*). Leading **u** on **a** / **o** / **e** = [invert](#invert-u-stacks) (*everything but* / *anything but* / **rank reversal**). **Left fences are illegal** (no join-before-conjuncts). **Nesting** uses stacked right closes only (**left-associative**); **pure infix is illegal** — see [fence nesting](#fence-nesting). To join only a sub-stretch when other same-slot material sits nearby, put that sub-stretch and its join **inside** a [scope island](spans.md#adjunct-scope-islands) — see [join scope islands](#join-scope-islands).
+**List shapes:** **Phrase-level**, **VP-level**, and **clause-level** all use a **right-close fence**: conjuncts first, then the prefixed join, then optional shared modifiers **immediately after** that join; conjuncts juxtaposed (no mid-chain continue particle). **-r** on **a** / **o** / **e** / **u** is the [unspecified-member](#unspecified-member-r-phrase) series at every level (*something* / *anything* / *whatever-by-rank* / *something else* — VP: *do something* / …; clause: *something happened* / …). Plain **u** = [negation](#negation-u) (*not* / *none of* / bare *no*). Leading **u** on **a** / **o** / **e** = [invert](#invert-u-stacks) (*everything but* / *anything but* / **rank reversal**). **Left fences are illegal** (no join-before-conjuncts). To put the join **frame** first without left-fencing (*everything but…* / *all of these…*), use [frame echo](#frame-echo) (bare announce beat, then a second right-close with the same join). **Nesting** uses stacked right closes only (**left-associative**); **pure infix is illegal** — see [fence nesting](#fence-nesting). To join only a sub-stretch when other same-slot material sits nearby, put that sub-stretch and its join **inside** a [scope island](spans.md#adjunct-scope-islands) — see [join scope islands](#join-scope-islands).
 
 Prefixed forms are **joins** — **set joins** (**a** / **o** / **ao** / **u** / **ua** / **uo**) and **rank joins** (**e** / **ae** / **oe** / **ue**) — except under **`/h/`** and **`/w/`**, where the same forms are [restrictors](restrictors.md) (applicability), not sibling *and* of modifiers. Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** are a separate **reviser** series — see [revisers.md](revisers.md).
 
@@ -291,6 +291,31 @@ Same under `/d/` `/b/` when the universal fills that slot (`dual gagadal` = *eve
 
 Examples: `zual gagadal` → *every cat*; `zuam guzedul` → *every student that comes to mind*; `zadedal zogevel zual g<drink>l` → *every drink but tea and coffee*; `zual` → *everything* / *everyone*; `zadedal zual` → *everything but tea*; `hual` → *always* (habitual frame); `hual hewonol` → *always, usually*; `zual g<square>l hididol` → *every square, by definition*.
 
+### Frame echo (two-beat)
+<a id="frame-echo"></a>
+<a id="frame-echo-two-beat"></a>
+
+When the **join frame** should be clear before the conjuncts (*everything but…* / *all of these…* / *anything but…* — menus, toppings, triage), keep **right-close** and use **two beats**: announce with a **bare** (or bare + SHARED domain) join, then list the conjuncts under a **second** right-close with the **same** join spelling. A pause / prosodic break separates the beats in speech; writing spells **both** joins (the frame is echoed, not left-fenced).
+
+| Beat | Shape | Role |
+|------|-------|------|
+| **1 — announce** | bare `P-JOIN` (optional SHARED domain / kind) | sets the frame (*everything* / *every K* / *the whole closed lot* / *anything goes* / …) |
+| **2 — seal** | `PHRASE… P-JOIN` (same vowel + ending; optional SHARED again if needed) | exclusions or members under that frame |
+
+**Still illegal:** a single left fence (`zual z<onion>l z<pickle>l`). Beat 1 is its own bare fence; beat 2 is an ordinary right-close list. They are **two** join phrases in sequence, not one operator-first list.
+
+**Typical frames:** invert **`ua` / `uo`** (and open twins), closed **`a`** (*all of these*), free-choice **`…or`**, and other bare forms whose early reading is the decision. Domain from beat 1 carries by context into beat 2 unless beat 2 restates SHARED.
+
+Examples:
+
+- `zual` · `z<onion>l z<pickle>l zual` → *everything — (but) onion and pickle* (frame first, then exclusions)
+- `zual g<topping>l` · `z<onion>l z<pickle>l zual` → *every topping — except onion and pickle* (kind on the announce beat)
+- `zal` · `z<lettuce>l z<tomato>l z<onion>l zal` → *the lot — lettuce, tomato, and onion* (closed inventory, frame first)
+- `zuol` · `z<mayo>l z<mustard>l zuol` → *anything but — mayo or mustard*
+- Same under `/d/` / `/b/` / VP / clause when that slot holds the order (`dual` · `d<onion>l d<pickle>l dual`, …)
+
+Prefer a single right-close when early frame is unnecessary (`z<onion>l z<pickle>l zual`). Frame echo is **style**, not a second grammar — speech and writing use the same two-beat shape.
+
 ---
 
 # Revisers
@@ -432,6 +457,8 @@ Complex adjective on an NP bundle: `zogodol zagadal zam g<of>l b<Sam>n` → *Sam
 - `z<burger>l zugehul zohodol zoel` — exclusive ranked menu
 - `z<appetizer>l z<main>l z<dessert>l zuel` — rank reversal
 - `zadedal zogevel zual` — *everything but tea and coffee*
+- `zual` · `z<onion>l z<pickle>l zual` — [frame echo](#frame-echo) (*everything — but onion and pickle*)
+- `zal` · `z<lettuce>l z<tomato>l zal` — frame echo (*the lot — lettuce and tomato*)
 - `zual gagadal` — *every cat* ([generics](#universals-domains-generics))
 - `zuam guzedul` — soft *every student*
 - `zadedal zogevel zual g<drink>l` — *every drink but tea and coffee*
