@@ -140,7 +140,7 @@ A common REBT-shaped claim: *hard work should earn a promotion* — the “rule�
 |-------|------|
 | Condition shape | open sufficient (`haon` / `…aom`, …) if you still mean “effort would count toward promotion” |
 | Ought / motive | **`xo`** (prescription) or **`xe`** (motive) — [values](values.md) |
-| Warrant | evidentiality / universality when asserting a world regularity (TBD roots) |
+| Warrant | evidentiality / [universality](special-vocabulary.md#universality) when asserting a world regularity |
 
 Do **not** upgrade `aom` → `ol` / `gon` just because you feel strongly. Strength of feeling is values force / evidentiality, not exclusive join.
 
@@ -153,10 +153,10 @@ Do **not** upgrade `aom` → `ol` / `gon` just because you feel strongly. Streng
 |-------|------|
 | Evidentiality `/h/` | *how you know* the link (Claritish `caused_i` / `caused_p` / …) — shared inventory with **PREDICT** / other-minds claims; roots TBD |
 | **`hual` / `huam`** | habitual / characterizing pattern on the clause — [restrictors](restrictors.md) |
-| Universality (future mood) | how exceptionless the claim is (Claritish `_u` / `_c` / `_lf` / `_ln…` / `_lr(scope)`) — not yet a native closed set |
+| Universality | how exceptionless the claim is — [universality moods](special-vocabulary.md#universality) (**COMMON** `ewono` default; **UNCOUNTERED** / **FORMAL** / **NATURAL** / **RULE**) |
 | Values `xo` / `xe` | ought or motive — [above](#preference-vs-law) |
 
-Particular episode (*this delay was caused by…*) vs standing law (*clouds for rain*) shares the same necessary/sufficient shapes; tense, **`hual`**, and evidentiality distinguish them.
+Particular episode (*this delay was caused by…*) vs standing law (*clouds for rain*) shares the same necessary/sufficient shapes; tense, **`hual`**, evidentiality, and universality warrant distinguish them.
 
 ## Claritish → Clarity
 <a id="claritish"></a>
@@ -168,6 +168,7 @@ Particular episode (*this delay was caused by…*) vs standing law (*clouds for 
 | *necessary for* / *without X, no Y* | `huan` / `guan` / `hal` |
 | *the only cause* / *has to be* | marked `gon` / `hon` / `…ol` |
 | *should* as universal causal law | sufficient shape + **`xo`** (name the need) — not a stronger join |
+| `always_c` / `always_u` / `always_lf` / … | domain (`hual` / …) + [universality](special-vocabulary.md#universality) mood |
 | *because* / *if* + clause | `/h/` + `/b/` NEXT — not `xaom`-as-cause |
 | *if and only if* / *iff* | marked **`IFF`** + NEXT — not bare **`IF`** ([above](#if-vs-iff)) |
 | *therefore* (discourse) | `/x/` linker — not this page’s morphology |
@@ -188,8 +189,7 @@ Particular episode (*this delay was caused by…*) vs standing law (*clouds for 
 
 - Lexicon phonetics of **`IF`** / **`IFF`** / *because* relation roots and of evidentiality moods.
 - Full **`IF`** vs **`BECAUSE`** factivity write-up (hypothetical vs asserted explanation) and any epistemic-*because* twin.
-- Native universality mood inventory (Claritish `_u` / `_c` / `_lf` / …).
-- Closed **`CAUSE`** mood root (optional later; joins already carry condition type) — candidate lexicon **`erage`** ⚙️ *gear* → *mechanism*.
+- Closed **`CAUSE`** mood root (optional later; joins already carry condition type) — candidate lexicon **`erage`** ⚙️ *gear* → *mechanism* (do **not** reuse for [NATURAL](special-vocabulary.md#universality) **`afafa`**).
 - Closed **`COND`** complex adjective (rejected in favor of existing joins for now).
 - Ending tables on **`IF`** / **`IFF`** (soft vs closed law-like, if needed later).
 
@@ -202,4 +202,5 @@ Particular episode (*this delay was caused by…*) vs standing law (*clouds for 
 - Values prescription / motive: [values.md](values.md)
 - Evidentiality pointer (with PREDICT): [special-vocabulary.md § Plan / predict](special-vocabulary.md#plan-predict)
 - Past framing (memory vs record): [special-vocabulary.md § Memory / record](special-vocabulary.md#memory-record)
+- Universality warrant: [special-vocabulary.md § Universality](special-vocabulary.md#universality)
 - Classification generics (not causation): [predication.md](predication.md), [universals](coordination.md#universals-domains-generics)

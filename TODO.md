@@ -7,7 +7,7 @@ Dictionary entries:
 -comparison benchmarks
 -SAME identity root (noted in predication.md — closed complex `/ɡ/`; lexicon phonetics still open)
 -habits: triggered
--universality mood (Claritish `_u` / `_c` / `_lf` / `_ln…` / `_lr(scope)` — port with causation.md)
+-universality mood — done: special-vocabulary.md § Universality (`ewono` / `ululu` / `idido` / `afafa` / `ebebe`)
 - Sentence linkers: *therefore*, *however*, *meanwhile*, *next*, *but*
 -direct observation vs imagination tense (stacks with memory/record past framing — special-vocabulary.md), consider sense words for observation
 -belief evidentiality

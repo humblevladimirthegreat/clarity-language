@@ -1,7 +1,7 @@
 # Special vocabulary
 <a id="special-vocabulary"></a>
 
-This page is the source of truth for **special morphology and closed roots** that are **not** [values](values.md) (needs) and **not** [restrictors](restrictors.md) (applicability joins). They reuse mid-word **`x`** where useful ([ability](#ability): host + stance vowel; [role compounds](#role-compounds): ROLE vowel + event/relation root; [numeric derivation](#numeric-derivation): host + number stem), but keep their own inventories; some entries are closed mood roots with **no** `x`-addition (plan / predict, [memory / record](#memory-record) past framing, emotion activation / locus, **comment** / mindfulness noting); **join-act verbs** and **join-relations** reuse join-vowel spellings under `/v/` `/ɡ/` `/h/`…**-n**. Parser families for mid-word **`x`**: **[x-compounds.md](x-compounds.md)**.
+This page is the source of truth for **special morphology and closed roots** that are **not** [values](values.md) (needs) and **not** [restrictors](restrictors.md) (applicability joins). They reuse mid-word **`x`** where useful ([ability](#ability): host + stance vowel; [role compounds](#role-compounds): ROLE vowel + event/relation root; [numeric derivation](#numeric-derivation): host + number stem), but keep their own inventories; some entries are closed mood roots with **no** `x`-addition (plan / predict, [memory / record](#memory-record) past framing, [universality](#universality), emotion activation / locus, **comment** / mindfulness noting); **join-act verbs** and **join-relations** reuse join-vowel spellings under `/v/` `/ɡ/` `/h/`…**-n**. Parser families for mid-word **`x`**: **[x-compounds.md](x-compounds.md)**.
 
 Ordinary `/h/` / `/w/` content still defaults to values unless the form is already in a clearer closed subcategory (restrictors, special vocabulary here, evidentiality/mood, degree, adjuncts, numbers) — see [values.md](values.md#default-reading-of-h-and-w).
 
@@ -174,7 +174,7 @@ English attitude verbs smuggle COMMENT **or** affect. Split them:
 - Do **not** stack COMMENT on [emotion compose](#emotion-compose) clauses (*fear* / *worry* / *regret* / hope-as-feeling).
 - Do **not** reuse [value contact-channel](values.md#value-contact) endings as COMMENT.
 - Do **not** treat COMMENT as evidentiality (*believe* / how you know).
-- **ACT** / **LOCUS** / **PLAN** / **PREDICT** / [**MEMORY** / **RECORD**](#memory-record) / values remain separate `/h/` (or `/w/`) stacks when needed.
+- **ACT** / **LOCUS** / **PLAN** / **PREDICT** / [**MEMORY** / **RECORD**](#memory-record) / [universality](#universality) / values remain separate `/h/` (or `/w/`) stacks when needed.
 - Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)).
 
 ## Emotion compose
@@ -325,6 +325,82 @@ Idiom cue (teaching): *fish a boot* = retrieve the wrong past (🥾 `obodo` *boo
 - Prefer floating `/h/` for past-source framing; content PoS uses stay ordinary.
 - Do **not** reuse mid-word **`x` + {a\|e\|o\|u}** for memory/record mood.
 - Do **not** collapse the fork into one generic *past* adverb.
+
+## Universality
+<a id="universality"></a>
+<a id="universality-mood"></a>
+
+English *always* / *every* / *never* / *everyone* smuggle **how exceptionless** the claim is. Clarity keeps **domain** on the [universal fences](coordination.md#universals-domains-generics) (`zual` / `hual` / …) and puts the **warrant** on closed `/h/` mood roots (optional `/w/` when scoped only to a preceding `/ɡ/`) — same non-value mood subcategory as [plan / predict](#plan-predict) and [memory / record](#memory-record).
+
+Port of Claritish **Universality** (`_c` / `_u` / `_lf` / `_ln`+evidentiality / `_lr(scope)`).
+
+**Three axes stay distinct:**
+
+| Axis | Clarity | Not the warrant mood |
+|------|---------|----------------------|
+| Domain (*who / when*) | `zual` / `hual` / SHARED kind — [universals](coordination.md#universals-domains-generics) | — |
+| Inventory softness | join **-l** / **-m** (`zual` vs `zuam`, `hual` vs `huam`) | — |
+| Exceptionlessness warrant | this section’s mood roots | do **not** strengthen joins or invent a cause-arrow |
+
+### Mood inventory (weather / sky family)
+
+**Conceptual metaphor:** universal claims are **weather reports**. Default climate is usual weather — not a law. Stronger warrants name a different sky story.
+
+| Mood | Claritish | Lexicon root | Metaphor | Gloss |
+|------|-----------|--------------|----------|-------|
+| **COMMON** (default) | `_c` | **`ewono`** | ⛅ *weather* → *usual* | statistically / experientially usual — exceptions expected |
+| **UNCOUNTERED** | `_u` | **`ululu`** | 🌤️ *clear sky* → *uncountered* | no counterexample comes to mind — search, not proof |
+| **FORMAL** | `_lf` | **`idido`** | ⭐ *star chart* → *formal* | definition / math / proof — fixed constellation |
+| **NATURAL** | `_ln` + evidentiality | **`afafa`** | 🍎 *apple* → *natural* | natural necessity (unsupported objects fall); stack ordinary evidential `/h/` |
+| **RULE** | `_lr(scope)` | **`ebebe`** | ♟️ *board* → *rule-frame* | holds inside a named frame; take `/b/` scope (`h-ebebel b-chessl`) |
+
+**Default:** when a universal / habitual claim needs a warrant and none of FORMAL / NATURAL / RULE / UNCOUNTERED fits, use **COMMON** (`h-ewonol`). Do not treat FORMAL as socially preferred.
+
+**Not `x`-compounds:** warrant is a **root choice**, not `xa`/`xu` on the quantifier host. Domain stays `zual` / `hual`; the mood **frames the claim**.
+
+| Clarity (schematic) | Reading |
+|---------------------|---------|
+| `… hual … h-ewonol` | *always, usually* (default warrant) |
+| `… hual … h-ululul` | *always, as far as I’ve checked* (no counterexample comes to mind) |
+| `zual g-squarel … h-ididol` | *every square, by definition* |
+| `… hual … h-afafal` + evidential `/h/` | *always, by natural necessity* (how you know stacked separately) |
+| `… hual … h-ebebel b-chessl` | *always, under chess* |
+| `zuam g-catl … h-ewonol` | soft domain *every cat that comes to mind* + usual warrant |
+
+### Claritish → Clarity
+
+| Claritish | Clarity |
+|-----------|---------|
+| `always_c` / `everyone_c` / `never_c` | domain fence (`hual` / `zual` / `hal` / …) + **`h-ewonol`** |
+| `always_u` / `never_u` | domain fence + **`h-ululul`** |
+| `all_lf` / definitional *every* | domain fence + **`h-ididol`** |
+| `always_lnp` (etc.) | domain fence + **`h-afafal`** + evidential `/h/` (letter inventory TBD) |
+| `always_lr(chess)` | domain fence + **`h-ebebel b-…`** (scope NP) |
+
+### Contrasts
+
+| | Prefer | Avoid |
+|--|--------|-------|
+| Domain vs warrant | `zual g-catl` + `h-ewonol` | encoding `_c` as `zuam` alone |
+| Soft list vs uncountered | `zuam` = open inventory; **`ululu`** = no counterexample found | collapsing both into **-m** |
+| Formal vs natural | **`idido`** = definition/proof; **`afafa`** = nature’s force + evidential | using either for “I can’t think of exceptions” |
+| Natural vs CAUSE | **`afafa`** for exceptionlessness; condition type stays [joins](causation.md); optional **`CAUSE`** mood keeps **`erage`** ⚙️ *gear* → *mechanism* | reusing **`erage`** as NATURAL |
+| Preference as law | values **`xo` / `xe`** — [causation](causation.md#preference-vs-law) | stronger universality mood instead of naming the need |
+
+### Out of scope (for now)
+
+- Ending tables on these roots (committed vs soft warrant, anaphor, …).
+- Full evidentiality inventory that **NATURAL** stacks with.
+- Whether bare unmarked `hual` / `zual` **implies** COMMON or leaves warrant unspoken (pedagogy may still nudge **COMMON**).
+
+### Constraints
+
+- **COMMON** (`ewono`), **UNCOUNTERED** (`ululu`), **FORMAL** (`idido`), **NATURAL** (`afafa`), and **RULE** (`ebebe`) are mood roots in the non-value `/h/` / `/w/` subcategory — not needs, not restrictors, not domain joins.
+- Prefer floating `/h/`; **RULE** is complex `/h/` + `/b/` scope when the frame is named.
+- Do **not** reuse mid-word **`x` + {a\|e\|o\|u}** for universality.
+- Do **not** assign **`erage`** (optional **CAUSE**) to NATURAL.
+- Domain / habitual morphology stays [coordination](coordination.md#universals-domains-generics) / [restrictors](restrictors.md); this section only warrants exceptionlessness.
+- **ACT** / **LOCUS** / **PLAN** / **PREDICT** / **MEMORY** / **RECORD** / **COMMENT** / evidentiality / values remain separate stacks when needed.
 
 ## Ability
 <a id="ability"></a>

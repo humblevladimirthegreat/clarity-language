@@ -83,7 +83,7 @@ Nesting and SHARED still apply to **defined** forms only.
 
 ## Examples
 
-- `hal` → *never*; `ham` → *never that I can think of*; `hual` → *always* (also the habitual frame for characterizing generics — [universals, domains, and generics](coordination.md#universals-domains-generics)); `huam` → *always from me*; `har` → *sometime*; `hor` → *anytime*; `hur` → *sometime else*
+- `hal` → *never*; `ham` → *never that I can think of*; `hual` → *always* (also the habitual frame for characterizing generics — [universals, domains, and generics](coordination.md#universals-domains-generics); exceptionlessness warrant stacks separately — [universality](special-vocabulary.md#universality)); `huam` → *always from me*; `har` → *sometime*; `hor` → *anytime*; `hur` → *sometime else*
 - `h-rainl hal` / `h-rainl hal` → *only when raining*
 - `h-rainl h-nightl ham` → *when raining and at night (among other occasions)*
 - `h-weekdayl h-weekendl hol` → *either on a weekday or on a weekend (not both)*; `h-weekdayl h-weekendl hom` → *weekday or weekend (not both), or never*

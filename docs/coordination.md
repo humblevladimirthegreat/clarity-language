@@ -278,16 +278,18 @@ There are **no** bare (prefix-less) **joins**. Prefixed joins always have a PoS 
 
 **Generics** (characterizing claims about a kind) use these fences — **not** plural **-sh** ([plurality.md](plurality.md)):
 
-- **Strict / definitional** (*All triangles have three sides*; *Every cat is a mammal*) → closed **`zual` + SHARED kind**.
-- **Soft / epistemic** (*As far as I know, all …*) → open **`zuam` + SHARED kind**.
-- **Habitual / characterizing** (*Dogs bark*; *Sam drinks coffee* as a standing pattern) → bare **`hual`** (or **`huam`**) on the clause, with an ordinary number-neutral or plural subject as needed — not entity-`zual` unless you mean ∀ of the kind.
+- **Strict / definitional** (*All triangles have three sides*; *Every cat is a mammal*) → closed **`zual` + SHARED kind** + [FORMAL](special-vocabulary.md#universality) warrant (`h-ididol`) when you mean no exception can exist by definition.
+- **Soft / epistemic** (*As far as I know, all …*) → open **`zuam` + SHARED kind** (inventory softness); optional [UNCOUNTERED](special-vocabulary.md#universality) (`h-ululul`) when the point is *no counterexample comes to mind*.
+- **Habitual / characterizing** (*Dogs bark*; *Sam drinks coffee* as a standing pattern) → bare **`hual`** (or **`huam`**) on the clause, with an ordinary number-neutral or plural subject as needed — not entity-`zual` unless you mean ∀ of the kind. Default exceptionlessness warrant is [COMMON](special-vocabulary.md#universality) (`h-ewonol`).
 - **Free-choice disposition** (*Any cat will do*) → **`zor`** (+ kind conjunct or SHARED as usual for **-r**), not **`zual`**.
+
+Exceptionlessness warrant (Claritish `_c` / `_u` / `_lf` / `_ln…` / `_lr(scope)`) is **not** the domain fence — [universality moods](special-vocabulary.md#universality).
 
 Same under `/d/` `/b/` when the universal fills that slot (`dual g-catl` = *every cat* as object). Under `/h/` / `/w/`, **`hual` / `wual`** stay circumstance *always* ([restrictors.md](restrictors.md)); do not read entity-style *every K* under those prefixes.
 
 **Trap:** `z-catl zual` = *everything but the cat*. For *every cat*, put the kind in SHARED: `zual g-catl`.
 
-Examples: `zual g-catl` → *every cat*; `zuam g-studentl` → *every student that comes to mind*; `z-teal z-coffeel zual g-drinkl` → *every drink but tea and coffee*; `zual` → *everything* / *everyone*; `z-teal zual` → *everything but tea*; `hual` → *always* (habitual frame).
+Examples: `zual g-catl` → *every cat*; `zuam g-studentl` → *every student that comes to mind*; `z-teal z-coffeel zual g-drinkl` → *every drink but tea and coffee*; `zual` → *everything* / *everyone*; `z-teal zual` → *everything but tea*; `hual` → *always* (habitual frame); `hual h-ewonol` → *always, usually*; `zual g-squarel h-ididol` → *every square, by definition*.
 
 ---
 
