@@ -2,7 +2,7 @@
 <a id="values"></a>
 <a id="value-ascription"></a>
 
-This page is the source of truth for **values** (needs): which psychological payoff is at issue, **how you relate** to that need (topic / met / unmet / motive / prescription), and — on compound endings — a stance-specific dimension (**contact channel**, **preference standing**, **prescription force**, or **changeability**). Port of Claritish value tags (`+a` / `-ct`, `my+c`, `should+r`, …) into native Clarity morphology. Restrictors: [restrictors.md](restrictors.md). Ability / incapability, plan / predict, [evidentiality](special-vocabulary.md#evidentiality), emotion compose, **COMMENT** / mindfulness noting (not needs): [special-vocabulary.md](special-vocabulary.md). Preference dressed as a causal law stacks **`xo` / `xe`** on [causation](causation.md#preference-vs-law) shapes — not a stronger join. Revisers (slot repair, not values): [revisers.md](revisers.md). Ordinary reference-suffix senses: [reference-suffix.md](reference-suffix.md).
+This page is the source of truth for **values** (needs): which psychological payoff is at issue, **how you relate** to that need (topic / met / unmet / motive / prescription), and — on compound endings — a stance-specific dimension (**contact channel**, **preference standing**, **prescription force**, or **changeability**). Restrictors: [restrictors.md](restrictors.md). Ability / incapability, plan / predict, [evidentiality](special-vocabulary.md#evidentiality), emotion compose, **COMMENT** / mindfulness noting (not needs): [special-vocabulary.md](special-vocabulary.md). Preference dressed as a causal law stacks **`xo` / `xe`** on [causation](causation.md#preference-vs-law) shapes — not a stronger join. Revisers (slot repair, not values): [revisers.md](revisers.md). Ordinary reference-suffix senses: [reference-suffix.md](reference-suffix.md).
 
 ## Default reading of `/h/` and `/w/`
 <a id="default-reading-of-h-and-w"></a>
@@ -27,16 +27,16 @@ Parser cue: restrictor joins are PoS + join-vowel + **-l** / **-m** / **-r** (`h
 
 ## Need inventory
 
-Closed set of six needs (Claritish `a/c/r/p/s/x`). Lexicon roots TBD; senses are fixed:
+Closed set of six needs. Lexicon roots TBD; senses are fixed:
 
-| Sense | Claritish | Gloss |
-|-------|-----------|--------|
-| autonomy | **a** | choice, agency, self-direction |
-| competence | **c** | efficacy, skill, getting things to work |
-| relatedness | **r** | connection, belonging, care |
-| pleasure | **p** | enjoyment, comfort, aesthetic payoff |
-| survival | **s** | safety, health, material sufficiency |
-| unspecified | **x** | need named without picking among the five |
+| Sense | Gloss |
+|-------|--------|
+| autonomy | choice, agency, self-direction |
+| competence | efficacy, skill, getting things to work |
+| relatedness | connection, belonging, care |
+| pleasure | enjoyment, comfort, aesthetic payoff |
+| survival | safety, health, material sufficiency |
+| unspecified | need named without picking among the five |
 
 No ranked “better” need — unspecified is first-class (avoids shame).
 
@@ -67,7 +67,7 @@ Five ways of relating to a need. Vowels loosely echo [revisers](revisers.md) / j
 | bare (no `x`) | **Topic** | Need named only |
 | **`xa`** | **Met / serves** | Host pays off this need |
 | **`xe`** | **Motive** | Agent is doing the host *for* this need (descriptive reason; replaces *have to* / *need to*) |
-| **`xo`** | **Prescription (ought)** | Agent / situation **ought to act** so this need is served or protected (Claritish `should+`) — whether or not anyone is acting from it now |
+| **`xo`** | **Prescription (ought)** | Agent / situation **ought to act** so this need is served or protected (*should* / *ought*) — whether or not anyone is acting from it now |
 | **`xu`** | **Unmet / costs** | Host subtracts from this need |
 
 **Met vs unmet** is **`xa`** vs **`xu`**. **Motive vs prescription:** **`xe`** = *am doing for X*; **`xo`** = *should serve/protect X*. Do not use **`xo`** for “prefer this reading” or exclusive need-pick — use topic, motive, or multiple value words.
@@ -144,14 +144,14 @@ No ranked “better” force — each is legitimate. Gloss **-r** as **boundary 
 ## Changeability (endings on unmet)
 <a id="value-changeability"></a>
 
-On **`xu`** compounds only, **-l / -m / -n / -r** encode temporariness / reversibility (Claritish `_t/_m/_i/_w` on unmet tags). Four endings → four codes; Claritish unspecified changeability (**`_x`**) merges into **-m** (“when unsure, prefer open”).
+On **`xu`** compounds only, **-l / -m / -n / -r** encode temporariness / reversibility. Four endings → four codes; when changeability is unspecified, prefer **-m** (“when unsure, prefer open”).
 
-| Ending | Changeability | Claritish | Mnemonic |
-|--------|---------------|-----------|----------|
-| **-l** | **temporary** — usually met/able; not this moment | **t** | closed *right-now* snapshot |
-| **-m** | **modifiable** — effort or circumstance may change it (also soft default if unknown) | **m** (+ **x**) | open to change |
-| **-n** | **irreversible** — fixed as far as you can tell | **i** | settled / named-as-fixed |
-| **-r** | **won't-now** — choice or deferral, not inability | **w** | not updating this *now* |
+| Ending | Changeability | Mnemonic |
+|--------|---------------|----------|
+| **-l** | **temporary** — usually met/able; not this moment | closed *right-now* snapshot |
+| **-m** | **modifiable** — effort or circumstance may change it (also soft default if unknown) | open to change |
+| **-n** | **irreversible** — fixed as far as you can tell | settled / named-as-fixed |
+| **-r** | **won't-now** — choice or deferral, not inability | not updating this *now* |
 
 **Can't vs won't:** **-n** (irreversible) vs **-r** (won't-now). Do not collapse them. Always pick an ending on **`xu`**; unknown → **-m**.
 
@@ -185,13 +185,13 @@ Need root shown as `compet` / `relat` only for readability.
 
 ## Attachment sites (where the nudge fires)
 
-| Site | Typical shape | Claritish analogue |
-|------|---------------|-------------------|
-| Speaker-possessive / gratitude | host + `/ɡ/` possessive + `w-NEEDxa…` + channel ending | `my+c` |
-| Valence judgment (praise) | neutral host + `w-` / `h-` **`xa`** + channel | `gift+r` |
-| Valence judgment (criticism) | neutral host + **`xu`** + changeability ending | `meeting-at` |
-| Prescription / normative | clause + `h-NEEDxo…` + force ending | `should+r` |
-| Motive (ex-*need to* / *have to*) | clause + `h-NEEDxe…` + preference standing | `I+r am …` |
+| Site | Typical shape | English cue |
+|------|---------------|-------------|
+| Speaker-possessive / gratitude | host + `/ɡ/` possessive + `w-NEEDxa…` + channel ending | *my … (for competence)* |
+| Valence judgment (praise) | neutral host + `w-` / `h-` **`xa`** + channel | *gift (serves relatedness)* |
+| Valence judgment (criticism) | neutral host + **`xu`** + changeability ending | *meeting (costs autonomy, temporary)* |
+| Prescription / normative | clause + `h-NEEDxo…` + force ending | *should (for relatedness)* |
+| Motive (ex-*need to* / *have to*) | clause + `h-NEEDxe…` + preference standing | *I am … (for relatedness)* |
 | Topic-only | bare `h-NEED…` / `w-NEED…` | need named without claim |
 
 Prefer **`xa`** for gratitude / praise; **`xu`** for unmet; **`xo`** for *should*; **`xe`** for actual reason-for-acting; **-m** on **`xu`** / **`xe`** / **`xo`** when that table’s dimension is unclear. Bare need words are fine for topic-only mention.
@@ -202,7 +202,7 @@ Elsewhere, values are optional — do not tax every clause.
 
 | Clarity (schematic) | Reading |
 |---------------------|---------|
-| `z-neighborhoodl g-ofl b-SPEAKER w-competxal` | *my+c* — serves competence; **physical** contact (felt place / scene) |
+| `z-neighborhoodl g-ofl b-SPEAKER w-competxal` | *my neighborhood* — serves competence; **physical** contact (felt place / scene) |
 | `z-giftl w-relatxan` | gift serves relatedness; **social** channel (interpersonal gift) |
 | `… w-survivxam` | survival met via **mental** integration (encoding / baseline orientation) |
 | `… w-pleasxar` | pleasure met via **spiritual** step-back (big-picture savoring) |
@@ -226,7 +226,7 @@ Elsewhere, values are optional — do not tax every clause.
 - **Whose-need** / **care direction** (thrive / guard) on prescription — optional later dimensions; force is the primary `xo` split.
 - **Listener / third-person possessives** — no forced value (reminder is for self-gratitude / self-ought / self-judgment).
 
-**Incapability** (Claritish `can't_t`, …) compounds onto the **activity/property host** (`v-singxun`) or fallback **`ABIL`** — [special-vocabulary.md](special-vocabulary.md#incapability) — not onto need compounds (`competxun` remains unmet competence).
+**Incapability** compounds onto the **activity/property host** (`v-singxun`) or fallback **`ABIL`** — [special-vocabulary.md](special-vocabulary.md#incapability) — not onto need compounds (`competxun` remains unmet competence).
 
 ## Constraints
 

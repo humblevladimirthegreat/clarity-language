@@ -746,7 +746,7 @@ The noun names the reference class; **`jo`** grades how much of that class. Same
 | *top / bottom N%* | Rank band; class usually clear from context or named separately |
 | *N% done / complete* | Whole = the task; often clear without a separate denom NP |
 
-**Style:** a bare `/z/` (or other freestanding) **`…jo`** percent with no named whole is **grammatical but stylistically bad** — same pressure as Claritish *Percent of what*. Prefer an explicit whole. Bare **`…ju`** point amounts are fine when the percent-scale quantity being moved is already clear.
+**Style:** a bare `/z/` (or other freestanding) **`…jo`** percent with no named whole is **grammatical but stylistically bad** — prefer an explicit whole (*percent of what*). Bare **`…ju`** point amounts are fine when the percent-scale quantity being moved is already clear.
 
 ## Digit-strings
 

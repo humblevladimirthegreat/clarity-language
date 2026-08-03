@@ -43,8 +43,8 @@ Atomic vowels have fixed **names**. Stacked names are derived from those atomics
 
 | Ending | Meaning |
 |--------|---------|
-| **-l** | **Closed** (exhaustive) — the listed conjuncts are treated as the **only** ones in play for this claim (Claritish *eor*-style completeness). |
-| **-m** | **Open** (non-exhaustive) — other conjuncts may exist (*among others*, *including but not limited to*; Claritish *ior*-style). On plain **o** only, **-m** also marks [empty-allowed](#empty-allowed-om) (*or none*). |
+| **-l** | **Closed** (exhaustive) — the listed conjuncts are treated as the **only** ones in play for this claim (*eor*-style completeness). |
+| **-m** | **Open** (non-exhaustive) — other conjuncts may exist (*among others*, *including but not limited to*; *ior*-style). On plain **o** only, **-m** also marks [empty-allowed](#empty-allowed-om) (*or none*). |
 
 When unsure whether the list is complete, prefer **-m** (open). Use **-l** when you stand behind completeness (inventories, forced-choice menus, definitions, full ranked ladders). Do **not** read **-m** on **a** / **ao** / **e** / **ae** / **oe** / **u** / **ua** / **uo** / **ue** as *or none* — only **`…om`** carries that bit.
 
@@ -283,7 +283,7 @@ There are **no** bare (prefix-less) **joins**. Prefixed joins always have a PoS 
 - **Habitual / characterizing** (*Dogs bark*; *Sam drinks coffee* as a standing pattern) → bare **`hual`** (or **`huam`**) on the clause, with an ordinary number-neutral or plural subject as needed — not entity-`zual` unless you mean ∀ of the kind. Default exceptionlessness warrant is [COMMON](special-vocabulary.md#universality) (`h-ewonol`).
 - **Free-choice disposition** (*Any cat will do*) → **`zor`** (+ kind conjunct or SHARED as usual for **-r**), not **`zual`**.
 
-Exceptionlessness warrant (Claritish `_c` / `_u` / `_lf` / `_ln…` / `_lr(scope)`) is **not** the domain fence — [universality moods](special-vocabulary.md#universality).
+Exceptionlessness warrant (**COMMON** / **UNCOUNTERED** / **FORMAL** / **NATURAL** / **RULE**) is **not** the domain fence — [universality moods](special-vocabulary.md#universality).
 
 Same under `/d/` `/b/` when the universal fills that slot (`dual g-catl` = *every cat* as object). Under `/h/` / `/w/`, **`hual` / `wual`** stay circumstance *always* ([restrictors.md](restrictors.md)); do not read entity-style *every K* under those prefixes.
 

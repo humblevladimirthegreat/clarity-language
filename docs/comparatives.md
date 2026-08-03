@@ -1,6 +1,6 @@
 # Comparatives, superlatives, and equatives
 
-This page is the source of truth for **scalar comparison**: *more … than*, *the …-est*, *as … as*, pointers for measured differentials (*two inches taller*), and **judgment benchmarks** (*worse than Average|…* — Claritish **Worse than**). Fence join vowels, endings, and SHARED placement are defined in [coordination.md](coordination.md); this page says when those forms mean comparison rather than ordinary ranking or bundle description.
+This page is the source of truth for **scalar comparison**: *more … than*, *the …-est*, *as … as*, pointers for measured differentials (*two inches taller*), and **judgment benchmarks** (*worse than Average|Typical|…*). Fence join vowels, endings, and SHARED placement are defined in [coordination.md](coordination.md); this page says when those forms mean comparison rather than ordinary ranking or bundle description.
 
 PoS prefixes: [language-reference.md](language-reference.md). Scale adjectives are ordinary `/ɡ/` (lexicon-marked as **gradable / scalar**). Absolute (non-comparative) use stays unfenced: `z-Samn g-bigl` = *Sam is big* ([zero-copula](predication.md#zero-copula)). Kind / role classification and referent identity: **[predication.md](predication.md)** — not this page’s equative `ae`.
 
@@ -108,7 +108,7 @@ Do **not** stack two `/b/` arguments (amount + unit) on the scale. Vague degree 
 <a id="judgment-benchmarks"></a>
 <a id="worse-than"></a>
 
-Port of Claritish **Worse than** (`worse than Average|Typical|Mine|Social|Professional|Everyone`): bare *bad* / *terrible* hides an unfair or unspoken standard. Clarity keeps the ordinary [comparative](#comparatives) fence and puts the standard in the **than**-conjunct as a **closed benchmark root**.
+Bare *bad* / *terrible* hides an unfair or unspoken standard. Clarity keeps the ordinary [comparative](#comparatives) fence and puts the standard in the **than**-conjunct as a **closed benchmark root** (`worse than Average|Typical|Mine|Social|Professional|Everyone`).
 
 **Not** [special vocabulary](special-vocabulary.md) `x`-compounds — benchmarks are NP comparees. **Not** `/w/`…**-n** alone on the scale (*spicy* **[Scoville]** names a measurement frame — [reference-suffix](reference-suffix.md); that is a different job).
 
@@ -125,7 +125,7 @@ Prefer **reverse ranked** **`ue`** on a **positive / neutral** scale (avoid a lo
 | first conjunct | who / what is judged |
 | second conjunct | **benchmark** root + **-n** (named standard) |
 
-Closed **-l** = stand behind the ranking; open **-m** (`zuem`) = soft / approximate *somewhat worse than…*; exclusive **`oe`**-family when the ladder is triage (*only this standard matters*). Forward **`e`** is fine when the scale is already cost/harm-oriented; for Claritish-style *worse than*, prefer **`ue` + positive scale**.
+Closed **-l** = stand behind the ranking; open **-m** (`zuem`) = soft / approximate *somewhat worse than…*; exclusive **`oe`**-family when the ladder is triage (*only this standard matters*). Forward **`e`** is fine when the scale is already cost/harm-oriented; for English-style *worse than*, prefer **`ue` + positive scale**.
 
 Predicative: `jal zuel g-SCALEl z-JUDGEDl z-BENCHMARKn`. Same under `/d/` / `/b/` when the ladder fills that slot.
 
@@ -135,8 +135,8 @@ Predicative: `jal zuel g-SCALEl z-JUDGEDl z-BENCHMARKn`. Same under `/d/` / `/b/
 
 Six fixed senses (lexicon phonetics TBD; schematic labels below). Always **-n** as **named reference-class standards**, not indefinite kinds (**-l**) and not anaphora (**-r**).
 
-| Claritish | Sense | Schematic comparee |
-|-----------|--------|-------------------|
+| English | Sense | Schematic comparee |
+|---------|--------|-------------------|
 | **Average** | mean of the relevant population | `z-AVGn` |
 | **Typical** | usual / modal case | `z-TYPn` |
 | **Mine** | speaker’s personal baseline (not “me as a person”) | `z-MINEn` |

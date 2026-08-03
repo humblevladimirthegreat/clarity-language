@@ -16,7 +16,7 @@ A root dictionary where each kept entry has (in `data/lexicon-published.csv`):
 
 Entries are **roots** only. Part-of-speech prefixes (`/z/`, `/v/`, `/ɡ/`, …) and [reference suffixes](reference-suffix.md) (`-l`, `-m`, …) are applied at use time; this file does not list PoS variants or usage notes.
 
-Psychological / Claritish vocabulary goals are out of scope for this lexicon pass.
+Psychological vocabulary goals are out of scope for this lexicon pass.
 
 ## Seed and unit of entry
 
@@ -507,7 +507,7 @@ Manual editing in `data/lexicon.csv` is the source of truth for `literal`. Treat
 
 ## Out of scope (for now)
 
-- Claritish / psychology-driven sense splits
+- Psychology-driven sense splits
 - Usage notes, example sentences, PoS-specific entries
 - Compounds and “in the sense of [topic]” infixes (optional later quality pass)
 - Non-emoji roots (optional later)

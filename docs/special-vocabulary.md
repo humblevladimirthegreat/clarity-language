@@ -266,7 +266,7 @@ English future cues (*will*, *going to*, *tomorrow*, …) smuggle whether you me
 | Intention / commitment about what *you* will do | closed **`PLAN`** under `/h/` (optional `/w/` if scoped only to a preceding `/ɡ/`) | **`owaro`** 🗺️ *world-map* → *plan* |
 | Forecast about what will happen | closed **`PREDICT`** under `/h/` (same `/w/` option) | **`edelo`** 🔭 *telescope* → *forecast* |
 | How detailed the intention is | endings (or a tiny closed set) on **`PLAN`** — none / vague / detail / contingency; **-l / -m / -n / -r** is the natural four-way fit once assigned | same **`owaro`** |
-| How you know the forecast | ordinary **[evidentiality](#evidentiality)** `/h/` stacked with **`PREDICT`** — same inventory as other claims (`caused_`, *thinks*, …; causal hosts also use [causation](causation.md) join shapes), not a predict-only compound series | same **`edelo`** |
+| How you know the forecast | ordinary **[evidentiality](#evidentiality)** `/h/` stacked with **`PREDICT`** — same inventory as other claims (*caused by…*, *thinks*, …; causal hosts also use [causation](causation.md) join shapes), not a predict-only compound series | same **`edelo`** |
 
 **Conceptual metaphors:** a **map** charts a course you mean to take; a **telescope** looks ahead at a distance (provisional resolution — not dice, not crystal-ball certainty). Past / source framing uses [evidentiality](#evidentiality) (e.g. **WITNESSED** / **RECORDED**).
 
@@ -290,25 +290,23 @@ Schematic: `h-owaron … v-finishl` (*detail plan: I finish*) vs `h-edelol` + ev
 
 Claims about the world — what happened, what caused what, what someone else thinks, what will happen — often smuggle **how you know**. Clarity marks that as closed `/h/` mood roots (optional `/w/` when scoped only to a preceding `/ɡ/`) — same non-value mood subcategory as [plan / predict](#plan-predict).
 
-Port of Claritish **Evidentiality** (`_n` / `_w` / `_r` / `_p` / `_i` / `_t` / `_f` / `_s` / `_x`) on claim hosts (`caused_i`, `predict_p`, `thinks_t`, …).
-
-**Not COMMENT:** first-person *I think* / rumination is [**COMMENT**](#comment) (`uho`). *Believe* / other-minds *thinks* / causal warrant / forecast warrant use **this** inventory. Do **not** treat Claritish mindfulness noting letters on first-person attitude verbs (`I think_m`, …) as evidentiality.
+**Not COMMENT:** first-person *I think* / rumination is [**COMMENT**](#comment) (`uho`). *Believe* / other-minds *thinks* / causal warrant / forecast warrant use **this** inventory. Do **not** treat COMMENT / mindfulness noting on first-person attitude verbs as evidentiality.
 
 ### Mood inventory (source-channel family)
 
 **Conceptual metaphor:** each root is a **channel** you got the claim through — memory catch, playback, trail of cases, detective work, listening, gut, tale. Content PoS stays ordinary (*an ear*, *a heart*, *a scroll*); under `/h/` / `/w/` mood use, the figurative channel reading wins.
 
-| Mood | Claritish | Lexicon root | Metaphor | Gloss |
-|------|-----------|--------------|----------|-------|
-| **WITNESSED** | `_w` | **`uhunu`** | 🎣 *fishing* → *memory* | firsthand / reconstructive — you (think you) caught it yourself; may pull a **boot** |
-| **RECORDED** | `_r` | **`eroge`** | ⏺️ *record* → *record* | documented / captured — playback of what was preserved |
-| **PATTERN** | `_p` | **`awa`** | 🐾 *paw-prints* → *trail* → *pattern* | from regularity / similar cases left behind |
-| **INFERRED** | `_i` | **`eve`** | 🕵️ *detective* → *investigation* → *inference* | reasoned from clues — not direct channel |
-| **TOLD** | `_t` | **`erare`** | 👂 *ear* → *listening* → *hearsay* | reportative — under `/h/`, *listening* = hearsay |
-| **FELT** | `_f` | **`ahe`** | ❤️ *heart* → *gut-felt* | proprioceptive / affective knowing — not [emotion compose](#emotion-compose) |
-| **STORY** | `_s` | **`orolo`** | 📜 *scroll* → *tale* | narrative / lore / anecdotal framing |
-| **NONE** | `_n` | TBD | — | no evidential warrant named |
-| **UNSPECIFIED** | `_x` | TBD | — | channel left open |
+| Mood | Lexicon root | Metaphor | Gloss |
+|------|--------------|----------|-------|
+| **WITNESSED** | **`uhunu`** | 🎣 *fishing* → *memory* | firsthand / reconstructive — you (think you) caught it yourself; may pull a **boot** |
+| **RECORDED** | **`eroge`** | ⏺️ *record* → *record* | documented / captured — playback of what was preserved |
+| **PATTERN** | **`awa`** | 🐾 *paw-prints* → *trail* → *pattern* | from regularity / similar cases left behind |
+| **INFERRED** | **`eve`** | 🕵️ *detective* → *investigation* → *inference* | reasoned from clues — not direct channel |
+| **TOLD** | **`erare`** | 👂 *ear* → *listening* → *hearsay* | reportative — under `/h/`, *listening* = hearsay |
+| **FELT** | **`ahe`** | ❤️ *heart* → *gut-felt* | proprioceptive / affective knowing — not [emotion compose](#emotion-compose) |
+| **STORY** | **`orolo`** | 📜 *scroll* → *tale* | narrative / lore / anecdotal framing |
+| **NONE** | TBD | — | no evidential warrant named |
+| **UNSPECIFIED** | TBD | — | channel left open |
 
 **Default pedagogy:** when a world-claim needs a channel and none of the named sources fits, prefer naming one over silent assertion; **NONE** / **UNSPECIFIED** roots land later.
 
@@ -344,18 +342,18 @@ Dedicated observation vs imagination **tense** remains TBD — [TODO](../TODO.md
 
 Idiom cue (teaching): *fish a boot* = retrieve the wrong past (🥾 `obodo` *boot* stays free for the punchline).
 
-### Claritish → Clarity
+### English → Clarity
 
-| Claritish | Clarity |
-|-----------|---------|
-| `caused_i` / `predict_i` / … | claim shape + **`h-evel`** |
-| `caused_p` / `predict_p` / `always_lnp` | claim shape (+ **`h-afafal`** if natural) + **`h-awal`** |
-| `thinks_t` / `caused_t` | content + **`h-erarel`** |
-| `knew_f` | content + **`h-ahel`** |
-| `caused_w` / memory-sourced claim | **`h-uhunul`** |
-| `caused_r` / on-record claim | **`h-erogel`** |
-| `…_s` (story channel) | **`h-orolol`** |
-| `…_n` / `…_x` | TBD roots |
+| English cue | Clarity |
+|-------------|---------|
+| *caused / predicted, inferred* | claim shape + **`h-evel`** |
+| *caused / predicted from pattern*; *always by nature* + pattern | claim shape (+ **`h-afafal`** if natural) + **`h-awal`** |
+| *thinks / was told* (hearsay) | content + **`h-erarel`** |
+| *knew / felt* (gut channel) | content + **`h-ahel`** |
+| memory-sourced claim | **`h-uhunul`** |
+| on-record claim | **`h-erogel`** |
+| story / lore channel | **`h-orolol`** |
+| no / unspecified channel | TBD roots |
 
 ### Contrasts
 
@@ -364,12 +362,12 @@ Idiom cue (teaching): *fish a boot* = retrieve the wrong past (🥾 `obodo` *boo
 | COMMENT vs warrant | `h-uhol` = first-person commentary; evidential = how the **world-claim** is sourced | using COMMENT for *believe* / *thinks* |
 | Felt vs emotion | **`ahe`** = channel of knowing; emotion = value + ACT + LOCUS | stacking **FELT** as a seventh emotion ACT |
 | Told vs listening-event | `/h/` **`erare`** = hearsay; *hear the door* = ordinary `/v/` | collapsing both |
-| Pattern vs COMMON | **`awa`** = evidential trail; **`ewono`** = exceptionlessness warrant | encoding `_p` as universality |
+| Pattern vs COMMON | **`awa`** = evidential trail; **`ewono`** = exceptionlessness warrant | encoding PATTERN as universality |
 | Witnessed vs Recorded | fishing retrieval vs playback archive | one generic *past* adverb |
 
 ### Out of scope (for now)
 
-- Lexicon roots for **NONE** (`_n`) and **UNSPECIFIED** (`_x`).
+- Lexicon roots for **NONE** and **UNSPECIFIED**.
 - Ending tables on these roots (grain of confidence, whose memory, soft vs committed channel, …).
 - Full tense inventory (observation vs imagination) and how it stacks with channels.
 
@@ -388,8 +386,6 @@ Idiom cue (teaching): *fish a boot* = retrieve the wrong past (🥾 `obodo` *boo
 
 English *always* / *every* / *never* / *everyone* smuggle **how exceptionless** the claim is. Clarity keeps **domain** on the [universal fences](coordination.md#universals-domains-generics) (`zual` / `hual` / …) and puts the **warrant** on closed `/h/` mood roots (optional `/w/` when scoped only to a preceding `/ɡ/`) — same non-value mood subcategory as [plan / predict](#plan-predict) and [evidentiality](#evidentiality).
 
-Port of Claritish **Universality** (`_c` / `_u` / `_lf` / `_ln`+evidentiality / `_lr(scope)`).
-
 **Three axes stay distinct:**
 
 | Axis | Clarity | Not the warrant mood |
@@ -402,13 +398,13 @@ Port of Claritish **Universality** (`_c` / `_u` / `_lf` / `_ln`+evidentiality / 
 
 **Conceptual metaphor:** universal claims are **weather reports**. Default climate is usual weather — not a law. Stronger warrants name a different sky story.
 
-| Mood | Claritish | Lexicon root | Metaphor | Gloss |
-|------|-----------|--------------|----------|-------|
-| **COMMON** (default) | `_c` | **`ewono`** | ⛅ *weather* → *usual* | statistically / experientially usual — exceptions expected |
-| **UNCOUNTERED** | `_u` | **`ululu`** | 🌤️ *clear sky* → *uncountered* | no counterexample comes to mind — search, not proof |
-| **FORMAL** | `_lf` | **`idido`** | ⭐ *star chart* → *formal* | definition / math / proof — fixed constellation |
-| **NATURAL** | `_ln` + evidentiality | **`afafa`** | 🍎 *apple* → *natural* | natural necessity (unsupported objects fall); stack ordinary [evidential](#evidentiality) `/h/` |
-| **RULE** | `_lr(scope)` | **`ebebe`** | ♟️ *board* → *rule-frame* | holds inside a named frame; take `/b/` scope (`h-ebebel b-chessl`) |
+| Mood | Lexicon root | Metaphor | Gloss |
+|------|--------------|----------|-------|
+| **COMMON** (default) | **`ewono`** | ⛅ *weather* → *usual* | statistically / experientially usual — exceptions expected |
+| **UNCOUNTERED** | **`ululu`** | 🌤️ *clear sky* → *uncountered* | no counterexample comes to mind — search, not proof |
+| **FORMAL** | **`idido`** | ⭐ *star chart* → *formal* | definition / math / proof — fixed constellation |
+| **NATURAL** | **`afafa`** | 🍎 *apple* → *natural* | natural necessity (unsupported objects fall); stack ordinary [evidential](#evidentiality) `/h/` |
+| **RULE** | **`ebebe`** | ♟️ *board* → *rule-frame* | holds inside a named frame; take `/b/` scope (`h-ebebel b-chessl`) |
 
 **Default:** when a universal / habitual claim needs a warrant and none of FORMAL / NATURAL / RULE / UNCOUNTERED fits, use **COMMON** (`h-ewonol`). Do not treat FORMAL as socially preferred.
 
@@ -423,24 +419,24 @@ Port of Claritish **Universality** (`_c` / `_u` / `_lf` / `_ln`+evidentiality / 
 | `… hual … h-ebebel b-chessl` | *always, under chess* |
 | `zuam g-catl … h-ewonol` | soft domain *every cat that comes to mind* + usual warrant |
 
-### Claritish → Clarity
+### English → Clarity
 
-| Claritish | Clarity |
-|-----------|---------|
-| `always_c` / `everyone_c` / `never_c` | domain fence (`hual` / `zual` / `hal` / …) + **`h-ewonol`** |
-| `always_u` / `never_u` | domain fence + **`h-ululul`** |
-| `all_lf` / definitional *every* | domain fence + **`h-ididol`** |
-| `always_lnp` (etc.) | domain fence + **`h-afafal`** + evidential `/h/` (e.g. **`h-awal`** for `_p`) |
-| `always_lr(chess)` | domain fence + **`h-ebebel b-…`** (scope NP) |
+| English cue | Clarity |
+|-------------|---------|
+| *always / everyone / never, usually* | domain fence (`hual` / `zual` / `hal` / …) + **`h-ewonol`** |
+| *always / never, as far as I’ve checked* | domain fence + **`h-ululul`** |
+| definitional *every* / *all* | domain fence + **`h-ididol`** |
+| *always by nature* (+ how you know) | domain fence + **`h-afafal`** + evidential `/h/` (e.g. **`h-awal`**) |
+| *always under [frame]* (e.g. chess) | domain fence + **`h-ebebel b-…`** (scope NP) |
 
 ### Contrasts
 
 | | Prefer | Avoid |
 |--|--------|-------|
-| Domain vs warrant | `zual g-catl` + `h-ewonol` | encoding `_c` as `zuam` alone |
+| Domain vs warrant | `zual g-catl` + `h-ewonol` | encoding COMMON as `zuam` alone |
 | Soft list vs uncountered | `zuam` = open inventory; **`ululu`** = no counterexample found | collapsing both into **-m** |
 | Formal vs natural | **`idido`** = definition/proof; **`afafa`** = nature’s force + evidential | using either for “I can’t think of exceptions” |
-| Pattern vs COMMON | [evidential](#evidentiality) **`awa`** = trail of cases; **`ewono`** = usual warrant | encoding `_p` as universality |
+| Pattern vs COMMON | [evidential](#evidentiality) **`awa`** = trail of cases; **`ewono`** = usual warrant | encoding PATTERN as universality |
 | Natural vs CAUSE | **`afafa`** for exceptionlessness; condition type stays [joins](causation.md); optional **`CAUSE`** mood keeps **`erage`** ⚙️ *gear* → *mechanism* | reusing **`erage`** as NATURAL |
 | Preference as law | values **`xo` / `xe`** — [causation](causation.md#preference-vs-law) | stronger universality mood instead of naming the need |
 

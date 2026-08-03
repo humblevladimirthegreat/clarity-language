@@ -49,4 +49,3 @@ long term:
 -parser
 -local llm systematically review entire lexicon
 -speed reading display
--update claritish
