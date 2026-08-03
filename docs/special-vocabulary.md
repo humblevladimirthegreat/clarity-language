@@ -5,7 +5,7 @@ This page is the source of truth for **special morphology and closed roots** tha
 
 Ordinary `/h/` / `/w/` content still defaults to values unless the form is already in a clearer closed subcategory (restrictors, special vocabulary here, evidentiality/mood, degree, adjuncts, numbers) — see [values.md](values.md#default-reading-of-h-and-w).
 
-**Not here:** *worse than Average|…* benchmarks are NP comparees on comparative fences — [comparatives.md § Judgment benchmarks](comparatives.md#judgment-benchmarks). **Classification** (kind as predicative `/ɡ/`) and closed **`SAME`** **identity** (`g-SAME` + `/b/`) live in **[predication.md](predication.md)** — not a general *to-be* verb and not `x`-compounds. **Causation** / necessary–sufficient reuses joins and these join-relations — **[causation.md](causation.md)** — not a new mood or `x`-compound on this page (optional **`CAUSE`** mood = lexicon **`erage`** ⚙️ *mechanism* later).
+**Not here:** *worse than Average|…* benchmarks are NP comparees on comparative fences — [comparatives.md § Judgment benchmarks](comparatives.md#judgment-benchmarks). **Classification** (kind as predicative `/ɡ/`) and closed **`SAME`** **identity** (`g-SAME` + `/b/`) live in **[predication.md](predication.md)** — not a general *to-be* verb and not `x`-compounds. **Causation** / necessary–sufficient reuses joins and these join-relations — **[causation.md](causation.md)** — not a new mood or `x`-compound on this page (optional **`CAUSE`** mood = lexicon **`erage`** ⚙️ *mechanism* later). **Numbered alternatives** (ideation *problem1* / *solution2* / *goal3*) is style + lexicon on free ordinals — [numbered alternatives](#numbered-alternatives) below — **not** new morphology.
 
 ## Join-act verbs (`v*n`)
 <a id="join-act-verbs"></a>
@@ -1014,3 +1014,71 @@ Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`z-meeti
 - Do **not** confuse **`ROOTx+e`** (essence) with **`g+e`** (+∞) or **`ROOTx+1e`** (hyperbole), **`ROOTx-e-`** (quasi-ROOT) with free **`g-e-`** (notional amount) or **`ROOTx-e`** (void), **`ROOTx-e-2`** (quasi-dual) with free **`g-e-2`** (real −10⁻²) or **`ROOTx+2`** / **`ROOTx-2`**, **`ROOTx+0e`** (total null) with **`ROOTx+0`** (resettable null) or free **`v+0el`** (*annihilate*), **`ROOTx+0e-1`** (engineering null at OoM −1) with digitless sterile **`ROOTx+0e-`** or free bare OoM **`g+e-1`**, **`ROOTx#0e`** (rank annihilated) with **`ROOTx#0`** (zeroth-order) or **`ROOTx+0e`**, free **`g+e0`** (ones band) with **`ROOTx+1`** (singleton) or free **`g+1`**, **`ROOTx+1`** (unit morph) with **`ROOTx#1`** (premiere-order) or **`ROOTx+1e`** (gazillion), **`ROOTx#1`** with free **`g#1`** / label **`ROOTx_1`**, or **`ROOTx_e`** (open catalog) with **`g+e`** (amount +∞) / free digitless **`_`** (undefined).
 - Digitless **`+`/`-`/`#`** = kind metaphysics; digitless **`_`** = catalog metaphysics ([infinite labels](#infinite-labels)); zero×exp morphs = [zero-exponent derivation](#zero-exponent-derivation) (including **`±0e-1`** / **`#0e`**; **`ROOTx+e0`** / **`+0e0`** TBD).
 - Plural **-sh** on noun-slot numeric derivatives follows ordinary [plurality](plurality.md) for that PoS.
+
+## Numbered alternatives (problem / solution / goal)
+<a id="numbered-alternatives"></a>
+<a id="ideation"></a>
+
+Port of Claritish **Numbered alternatives** (`problem1`, `solution2`, `goal3` instead of *the problem* / *the solution* / *the goal*). Fixating on a single frame hurts creativity; numbering candidates reminds speaker and listener to look for more.
+
+**No new morphology.** Use ordinary lexicon nouns + free [ordinals](numbers.md) (`g#N`). Same style pressure as bare [percent denominators](numbers.md#percent-denominators): unique bare *the problem* (etc.) when framing ideation is **grammatical but stylistically bad**.
+
+### Preferred roots
+
+Published lexicon triad (puzzle → key → goal-net):
+
+| Sense | Root | Emoji / literal | Metaphor |
+|-------|------|-----------------|----------|
+| **problem** | **`ubezu`** | 🧩 *puzzle-piece* | something to fit / solve |
+| **solution** | **`egoge`** | 🔑 *key* | what unlocks it |
+| **goal** | **`ogalo`** | 🥅 *goal* | net you aim at / objective |
+
+Ordinary PoS still available (`z-ubezul` *a puzzle piece*; `v-egogel` *to unlock*; …). The figurative jobs above are the ideation readings.
+
+### Recipe
+
+`z-ubezul g#1` / `z-egogel g#2` / `z-ogalol g#1`
+
+| Piece | Role |
+|-------|------|
+| **`ubezu` / `egoge` / `ogalo`** | candidate kind (problem / solution / goal) |
+| free **`g#N`** | rank in **this** ideation series (*candidate N*) |
+| soft **`g~#N`** | tentative ranking |
+
+Prefer at least **`g#1`**; often name a second candidate. Soft **-m** on the number when the order is tentative.
+
+### Claritish → Clarity
+
+| Claritish / English cue | Clarity |
+|-------------------------|---------|
+| `problem1` / `solution2` / `goal3` | `z-ubezul g#1` / `z-egogel g#2` / `z-ogalol g#3` |
+| *the problem* / *the solution* / *the goal* (ideation) | stylistically bad — number candidates |
+| discourse *point N:* | free **`x#N`** — [discourse marker](numbers.md#number-as-discourse-marker-by-marker); not a problem NP |
+
+### Not this
+
+| Form | Job | Why not for ideation numbering |
+|------|-----|--------------------------------|
+| **`ROOTx#N`** (`z-ubezux#1l`) | ordinal **kind-order** (*premiere* / *secondary*) — [ordinal digit morphs](#ordinal-digit-morphs) | not “token #N in this brainstorm” |
+| **`ROOTx_N`** (`z-ubezux_1l`) | catalog / ID — [label-code](#label-code-sense) | specimen code, not candidate rank |
+| **`owaro`** | [PLAN](#plan-predict) mood | intention framing, not goal-as-noun (`ogalo`) |
+| **`onuzu`** | *blockage* | obstacle in the way, not problem-as-to-solve |
+| **`ululu`** | *remedy*; also [UNCOUNTERED](#universality) | medical fix / warrant mood, not solution proposal |
+| **`obawo` / `ubelo`** | *aim* / *precision* | how you direct, not the goal itself |
+| **`egeha` / `edale`** | *finish* / *achievement* | outcome markers, not the aimed-at objective |
+
+### Reframe vs number (separate jobs)
+
+Numbering = **multiple candidates**. Reframing the **same** situation = different wording of one frame — **not** a second digit:
+
+| Job | Prefer |
+|-----|--------|
+| Exact framing | ordinary **-l** (or exact [cite](spans.md)) |
+| Restatement / rephrase | metaphorical **-m**, discourse reviser **`el` / `em`** (*in other words* — [revisers](revisers.md#discourse-revisers)), or paraphrase span **`…~[…]`** |
+| Origin / telos of a **kind** | **`ROOTx#e-` / `ROOTx#e`** — [numeric derivation](#numeric-derivation); not “first wording vs rewrite” |
+
+### Constraints
+
+- Do **not** invent fused `problem1`-style roots or a dedicated ideation mood.
+- Do **not** require digits on every occurrence of these roots (*the problem of free will* as a philosophical topic is fine without `g#N`).
+- Numbering is not “more virtuous” than leaving candidates unranked — the nudge is against treating the first frame as unique when generating options.
