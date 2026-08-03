@@ -1,6 +1,6 @@
 # Numbers
 
-Numerals are a **closed formal subsystem**, not ordinary lexicon roots. Open quantifiers (*many*, *all*, *some*, …) stay lexicon; the numeral word itself can be [digitless](#zero-digit-groups) (unspecified magnitude of a marker identity, including plural **`>1`** on **`ra`**) or carry a [digitless exponent](#digitless-exponents) for special values (+∞ / −∞ / last place / [notional / imaginary](#imaginary) **`g-e-`** / [zero × exponent](#zero-exponent) / …). Ordinals distinguish forward **`#`**, end-relative **`#-`** / **`eu`** ([from the end](#from-the-end)), and [generation](#ordinal-generation) via digitful exp. PoS prefixes are defined in [language-reference.md](language-reference.md); plural **-sh** in [plurality.md](plurality.md); general phonotactics live in [phonology.md](phonology.md); ordinary reference suffixes in [reference-suffix.md](reference-suffix.md). This page is the source of truth for numeral grammar, including [percent denominators](#percent-denominators) (whole NP + `/ɡ/` `…jo`), [ranges](#ranges) (spans reuse [phrase fences](coordination.md) with SHARED continuum `/ɡ/`, documented here), [digitless exponents](#digitless-exponents), and [measure phrases](#measure-phrases) (unit + amount for differentials and durations). PoS-less number stems also compound onto content roots as [numeric derivation](special-vocabulary.md#numeric-derivation) (`ROOTx+e` = *essence of ROOT*, `ROOTx-e-` = *quasi-ROOT*, `ROOTx-e-2` = *quasi-dual*, `ROOTx+0e` = *total-null ROOT*, `ROOTx+1e` = *gazillion-ROOT*, …) — not free clause-slot numerals.
+Numerals are a **closed formal subsystem**, not ordinary lexicon roots. Open quantifiers (*many*, *all*, *some*, …) stay lexicon; the numeral word itself can be [digitless](#zero-digit-groups) (unspecified magnitude of a marker identity, including plural **`>1`** on **`ra`**) or carry a [digitless exponent](#digitless-exponents) for special values (+∞ / −∞ / last place / [notional / imaginary](#imaginary) **`g-e-`** / [zero × exponent](#zero-exponent) / …). Ordinals distinguish forward **`#`**, end-relative **`#-`** / **`eu`** ([from the end](#from-the-end)), and [generation](#ordinal-generation) via digitful exp. PoS prefixes are defined in [language-reference.md](language-reference.md); plural **-sh** in [plurality.md](plurality.md); general phonotactics live in [phonology.md](phonology.md); ordinary reference suffixes in [reference-suffix.md](reference-suffix.md). This page is the source of truth for numeral grammar, including [percent denominators](#percent-denominators) (whole NP + `/ɡ/` `…jo`), [ranges](#ranges) (spans reuse [phrase fences](coordination.md) with SHARED continuum `/ɡ/`, documented here), [digitless exponents](#digitless-exponents), and [measure phrases](#measure-phrases) (unit + amount for differentials and durations). PoS-less number stems also compound onto content roots as [numeric derivation](special-vocabulary.md#numeric-derivation) (`ROOTx+e` = *essence of ROOT*, `ROOTx-e-` = *quasi-ROOT*, `ROOTx-e-2` = *quasi-dual*, `ROOTx+0e` = *total-null ROOT*, `ROOTx±0e-1` = *engineering null·residue at OoM −1*, `ROOTx#0e` = *rank-annihilated ROOT*, `ROOTx+1e` = *gazillion-ROOT*, …) — not free clause-slot numerals.
 
 A whole numeric value is **one word**, even when it contains several digit groups (or none).
 
@@ -294,8 +294,8 @@ Within each digit group:
 - The **exponent comes before** the group’s mantissa digits.
 - If a mantissa follows the exponent, say **`ja`** after the last exponent digit, then the mantissa. Example: `27e12` → `ba` + `wo` + `du` + `ja` + `du` + `le`.
 - **Bare order of magnitude** (exponent only, no mantissa): use `ba`/`bu` + exponent digits and **omit** **`ja`**. The group ends at the next `ba`/`bu`, or at the word ending. Example: *e9* → `ba` + `na` (not `*banaja`).
-- **Digitless exponent** ([special values](#digitless-exponents), [hyperbole](#hyperbole-gazillion), or [zero × digitless exp](#zero-exponent)): use `ba`/`bu` with **no** exponent digits — alone for specials (`g+e`), after mantissa **`≠0`** for hyperbole (`g+1e`), or after mantissa **`0`** for total-null / sterile / residue specials (`g+0e`). Not the same as bare OoM (which always names the power) and not a [zero-group](#zero-digit-groups) word.
-- If the exponent is **0**, omit the exponent (and thus omit **`ja`**) entirely — **except** (1) do **not** confuse omitted-zero with digitless `ba`/`bu` special values; (2) **identity / paradox** forms that **name** exponent **0** on purpose — [zero × exponent](#zero-exponent) (`g+e0`, `g+0e0`, and overlays) and the parallel [derivation](special-vocabulary.md#zero-exponent-derivation) morphs — keep written/spoken **`e0`**. Ordinary magnitudes still omit (`g+3`, not `*g+3e0`).
+- **Digitless exponent** ([special values](#digitless-exponents), [hyperbole](#hyperbole-gazillion), or [zero × digitless exp](#zero-exponent)): use `ba`/`bu` with **no** exponent digits — alone for specials (`g+e`), after mantissa **`≠0`** for hyperbole (`g+1e`), or after mantissa **`0`** for total-null / sterile / residue specials (`g+0e`). Not the same as bare OoM (which always names the power) and not a [zero-group](#zero-digit-groups) word. Mantissa **`0`** + **digitful** exp **`-1`** only is the [engineering null / residue](#zero-exponent) pair **`±0e-1`** (other **`±0eN`** TBD).
+- If the exponent is **0**, omit the exponent (and thus omit **`ja`**) entirely — **except** (1) do **not** confuse omitted-zero with digitless `ba`/`bu` special values; (2) **identity / paradox** forms that **name** exponent **0** on purpose — [zero × exponent](#zero-exponent) (`g+e0`, `g+0e0`, and overlays) and the parallel [derivation](special-vocabulary.md#zero-exponent-derivation) morphs — keep written/spoken **`e0`**. Ordinary magnitudes still omit (`g+3`, not `*g+3e0`). Whether mantissa **`N≠0`** + named **`e0`** (`…Ne0`) becomes a special is **TBD**; until then, omit.
 - Default spoken/written scale uses **engineering notation**: exponents are usually multiples of **3** (e.g. `27e6`, not `2.7e7`).
 - **Decimal point:** say **`je`** after the digit(s) left of the point; digits after **`je`** are the fractional part (group in threes if long). May appear with or without an exponent.
 - **Scientific register** is optional: exp-first, then **`ja`**, then mantissa with **`je`** after the leading digit (usual scientific shape). Example: `5.2487083e-4` → `bu` + `mo` + `ja` + `va` + `je` + `du` + `mo` + `ha` + `le` + `zo` + `ha` + `re`.
@@ -359,7 +359,7 @@ Same under `/z/` `/d/` `/b/` (`z+e` = +∞ as subject; `d#e-` = start-place as o
 | **-n** | Proper / conventional designation of that special (named ∞ symbol, official *last place* / *starting* title, conventional *imaginary* label, …) |
 | **-r** | Resume a prior special value of that marker+exp polarity (`g=+e` = *that +∞ again*; `g=+e-` = *that start/small again*; `g=-e-` = *that notional amount again*) |
 
-**Contrast:** zero-group `g+` = plural count `>1`. Bare OoM `g+e9` = order 10⁹. No-mantissa `g+e` = +∞; no-mantissa `g#e` = last place. Mantissa **`≠0`** + digitless **`ba`/`bu`** (`g+1e` / `g#1e` / `g#1e-`) = [hyperbole](#hyperbole-gazillion). Mantissa **`0`** + digitless (`g+0e`) = [zero × exponent](#zero-exponent). Named exp **`0`** (`g+e0` / `g+0e0`) = [zero × exponent](#zero-exponent). End-relative ordinals use marker **`#-`** ([from the end](#from-the-end)). Focus ranked digitless (`zel z+`) is **not** a special value — ordinary *only (plural) matters* / preference framing (the old focus→∞ reading is **removed**).
+**Contrast:** zero-group `g+` = plural count `>1`. Bare OoM `g+e9` = order 10⁹. No-mantissa `g+e` = +∞; no-mantissa `g#e` = last place. Mantissa **`≠0`** + digitless **`ba`/`bu`** (`g+1e` / `g#1e` / `g#1e-`) = [hyperbole](#hyperbole-gazillion). Mantissa **`0`** + digitless (`g+0e` / `g#0e`) = [zero × exponent](#zero-exponent). Mantissa **`0`** + digitful **`e-1`** (`g±0e-1`) = engineering null / residue. Named exp **`0`** (`g+e0` / `g+0e0`) = [zero × exponent](#zero-exponent). End-relative ordinals use marker **`#-`** ([from the end](#from-the-end)). Focus ranked digitless (`zel z+`) is **not** a special value — ordinary *only (plural) matters* / preference framing (the old focus→∞ reading is **removed**).
 
 ##### Overlay `/v/` and `/h/`
 
@@ -436,12 +436,16 @@ Forms that pair **mantissa `0`** with an exponent, or that **name exponent `0`**
 | **`g+0e-`** | mantissa **`0`** + digitless **`bu`** | **sterile / null-at-seed** amount — emptiness at grain scale |
 | **`g-0e`** | **`ru`** + mantissa **`0`** + digitless **`ba`** | **absolute residue** quantity — amount that will not totally wipe |
 | **`g-0e-`** | **`ru`** + mantissa **`0`** + digitless **`bu`** | **micro-residue** amount |
+| **`g+0e-1`** | mantissa **`0`** + digitful **`bu`** + exp **`1`** | **engineering null at OoM −1** — amount wiped at scale 10⁻¹ (deci-null); **not** sterile digitless **`g+0e-`**, **not** bare OoM **`g+e-1`** |
+| **`g-0e-1`** | **`ru`** + mantissa **`0`** + digitful **`bu`** + exp **`1`** | **engineering residue at OoM −1** — irreducible leftover at that scale |
 | **`g+e0`** | bare OoM **exp digit `0`** (no mantissa) | **unit / identity amount** — not count **`g+1`**, not +∞ **`g+e`** |
 | **`g+0e0`** | mantissa **`0`** × named exp **`0`** | **`0⁰` / indeterminate** — both empty and unit; refuse a forced pick between null and identity |
 
-Same under `/z/` `/d/` `/b/` (`z+0e` = absolute-zero as subject; `d+e0` = unit amount as object).
+Same under `/z/` `/d/` `/b/` (`z+0e` = absolute-zero as subject; `d+e0` = unit amount as object; `z+0e-1` = deci-null as subject).
 
-**Emptiness chain (amounts):** **`g-e`** (−∞ deficit) ≠ **`g+0`** (plain zero) ≠ **`g+0e`** (absolute zero) ≠ **`g+0e-`** (sterile micro-null). **`g+e0`** is identity, not emptiness.
+**Emptiness chain (amounts):** **`g-e`** (−∞ deficit) ≠ **`g+0`** (plain zero) ≠ **`g+0e`** (absolute zero) ≠ **`g+0e-`** (sterile micro-null) ≠ **`g+0e-1`** (engineering null at 10⁻¹). **`g+e0`** is identity, not emptiness.
+
+**Scalars only for `±0e-1`:** engineering scale-null is **`ra` / `ru`**. On ordinals, digitful exp is [generation](#ordinal-generation) (`g#0e-1` ≠ engineering). Ordinal zero×digitless **`g#0e`** = [rank annihilated](#rank-annihilated) below.
 
 ##### Overlay `/v/` and `/h/`
 
@@ -449,17 +453,21 @@ Same under `/z/` `/d/` `/b/` (`z+0e` = absolute-zero as subject; `d+e0` = unit a
 |------|---------|
 | **`v+0e`** / **`v+0el`** | **annihilate** / wipe totally (hostless total null as act) |
 | **`v+0e-`** | **sterilize** / null at the seed |
+| **`v+0e-1`** | **null at OoM −1** / wipe at deci scale |
 | **`v-0e`** | **leave irreducible residue** / refuse total wipe |
 | **`v-0e-`** | leave **micro-residue** |
+| **`v-0e-1`** | leave **residue at OoM −1** |
 | **`v+e0`** | **unitize** / normalize to identity |
 | **`v+0e0`** | **paradox-null** — treat as both empty and unit |
 | **`h+0e`** | **zero times (totally)** / annihilate repetition — **not** restrictor **`hal`** (*never* as applicability) |
 | **`h+0e-`** | sterile / grain-null multiplicity framing |
+| **`h+0e-1`** | zero-times framing **at OoM −1** |
 | **`h-0e`** | with irreducible residual repetition |
+| **`h-0e-1`** | residual repetition **at OoM −1** |
 | **`h+e0`** | **once-as-identity** / unit multiplicity framing — not numbered **`h#1`** / **`h+1`** |
 | **`h+0e0`** | paradox null-and-unit multiplicity |
 
-Soft **-m** hedges (*almost annihilate*, *roughly unitize*, …).
+Soft **-m** hedges (*almost annihilate*, *roughly unitize*, *almost deci-null*, …).
 
 ##### Overlay `/j/`
 
@@ -467,7 +475,9 @@ Soft **-m** hedges (*almost annihilate*, *roughly unitize*, …).
 |------|---------|
 | **`j+0e`** | *Annihilate!* / *Wipe it!* |
 | **`j+0e-`** | *Sterilize!* / *Null the seed!* |
+| **`j+0e-1`** | *Null at deci!* / *Wipe at 10⁻¹!* |
 | **`j-0e`** | *Residue stands!* / *Won’t totally wipe!* |
+| **`j-0e-1`** | *Deci-residue stands!* |
 | **`j+e0`** | *Unitize!* / *To the identity!* |
 | **`j+0e0`** | *Both empty and unit!* (paradox cheer) |
 
@@ -475,7 +485,22 @@ Other `/j/` zero-exp forms stay **undefined** for now.
 
 ##### Overlay `/x/`
 
-**`x+0e`**, **`x+e0`**, **`x+0e0`**, and kin stay **undefined** for now (discourse items keep start/last landmarks and numbered points).
+**`x+0e`**, **`x+e0`**, **`x+0e0`**, **`x±0e-1`**, and kin stay **undefined** for now (discourse items keep start/last landmarks and numbered points).
+
+##### Ordinal rank annihilated (`#0e`)
+<a id="rank-annihilated"></a>
+
+Mantissa **`0`** + digitless **`ba`** under forward ordinal **`re` / `#`**. **Not** zeroth-order **`#0`** (still a rung), **not** origin **`#e-`**, **not** generation **`#0e-1`** (digitful), **not** scalar **`+0e`**.
+
+| Form | Reading |
+|------|---------|
+| **`g#0e`** | **rank annihilated** / **disqualified** / place wiped — unplaceable in the series |
+| **`z#0e`** / **`d#0e`** / **`b#0e`** | same as subject / object / modifier |
+| **`v#0e`** | *disqualify* / take annihilated place |
+| **`h#0e`** | *for a disqualified / struck turn* |
+| **`j#0e`** | *Disqualified!* / *Rank wiped!* |
+
+Soft **-m** hedges (*near-disqualified*, …). **`x#0e`** and other ordinal zero-exp beyond **`#0e`** stay **undefined** for now. Free twin of derivation **`ROOTx#0e`** — [special-vocabulary.md](special-vocabulary.md#rank-annihilated-morph).
 
 ##### Free vs derived
 
@@ -483,14 +508,17 @@ Other `/j/` zero-exp forms stay **undefined** for now.
 |------|---------|----------|
 | **`v+0el`** | **`v-scorex+0el`** | hostless *annihilate* vs *annihilate-the-score* (kind) |
 | **`g+0e`** | **`z-debtx+0el`** | absolute-zero amount vs total-null debt-kind |
+| **`g+0e-1`** | **`z-debtx+0e-1l`** | deci-null amount vs kind nullified at OoM −1 |
+| **`g-0e-1`** | **`z-debtx-0e-1l`** | deci-residue amount vs kind residue at OoM −1 |
+| **`g#0e`** | **`z-contestantx#0el`** | disqualified place vs disqualified-*kind* |
 | **`g+e0`** | **`z-lovex+e0l`** | unit amount vs identity/unit form of love |
 | **`v+0l`** | **`v-scorex+0l`** | ordinary zeroing / null-reset — weaker than **`…+0e`** |
 
-##### Out of scope (for now)
+##### Out of scope / TBD (for now)
 
-- Scale-specific **`…+0eN`** / **`…+0e-N`** (engineering-null at OoM N).
-- Ordinal **`#0e`** / **`#e0`** / **`#0e0`** (keep **`#0`** zeroth-order on derivation; free ordinal zero-exp undefined).
-- **`…Ne0`** for mantissa **`N≠0`** — omit exp **`0`** as ordinary magnitude (`g+3`, not `*g+3e0`).
+- Scale-specific **`…±0eN`** / **`…±0e-N`** for **`N≠1`** (and positive **`…±0eN`**) — only **`±0e-1`** is defined (engineering null / residue at OoM −1).
+- Ordinal **`#e0`** / **`#0e0`** — **TBD** (keep **`#0`** zeroth-order; **`#0e`** = rank annihilated above).
+- **`…Ne0`** for mantissa **`N≠0`** — **TBD** as a special; ordinary magnitudes still **omit** exp **`0`** (`g+3`, not `*g+3e0`).
 - Digit-string **`_`** zero-exp free forms.
 
 #### Hyperbole — mantissa + digitless exponent
@@ -610,13 +638,13 @@ On forward **`#`** / **`re`** and end-relative **`#-`** / **`reu`**, a **digitfu
 | **`g#e-1`** | generation −1 / parent layer (member unspecified) |
 | **`g#1e-1`** | 1st of generation −1 (often *the parent* when the cohort is singleton-framed) |
 
-**Not** this cell: digitless **`g#e`** / **`g#e-`** = telos / origin **landmarks** (extremes of the axis); digitless mantissa forms **`g#1e`** / **`g#1e-`** = [hyperbole](#hyperbole-gazillion). Do **not** read **`g#2e-`** as *grandparent* — use **`g#e-2`** / **`g#1e-2`**.
+**Not** this cell: digitless **`g#e`** / **`g#e-`** = telos / origin **landmarks** (extremes of the axis); digitless mantissa forms **`g#1e`** / **`g#1e-`** = [hyperbole](#hyperbole-gazillion); digitless **`g#0e`** = [rank annihilated](#rank-annihilated) (not generation). Do **not** read **`g#2e-`** as *grandparent* — use **`g#e-2`** / **`g#1e-2`**. Do **not** read **`g#0e-1`** as engineering null — that is scalar **`g+0e-1`**.
 
 **Overlays:** `/x/` treats generation as **agenda nesting** (`x#3e2` = *3rd sub-sub-point under the focus*). `/h/` / `/v/` / `/j/` inherit the same product (*for the 3rd time in gen +2*, *place 3rd in gen +2*, …) when the series is generation-structured; flat event counts stay **`h#N`**.
 
 **Derivation:** free generation is series-relative; kind morphs keep digitless **`ROOTx#e-`** / **`ROOTx#e`** as origin / telos of the **kind** — no productive free-style **`ROOTx#-N`** or **`ROOTx#NeK`** in this pass ([special-vocabulary.md](special-vocabulary.md#ordinal-digit-morphs)).
 
-Examples: `g+e` → +∞; `g~+e` → arbitrarily large but finite; `g+1e` → *one gazillion*; `g~+1e` → *about a gazillion*; `g@+1e` → proper name *One Gazillion* / *the Gazillion*; `g+1e-` → *one gazillionth*; `g+e-` → arbitrarily small but finite; `g-e` → −∞; `g-e-` → notional / imaginary amount; `g~-e-` → soft notional; `g#e` → last place; `g~#e` → near last place; `g#e-` → start / beginning place; `g~#e-` → near first place; `g#1e` → *the gazillionth* / *umpteenth*; `g#1e-` → *the gazillionth-first*; `g#-2` → *2nd from the end* / *penultimate*; `g#-1` → *1st from the end* / *Starting with the last one*; `g#3e2` → *3rd of gen +2*; `g#e-2` → *gen −2 cohort*; `g+0e` → absolute zero; `g+0e-` → sterile / null-at-seed amount; `g+e0` → unit / identity amount; `g+0e0` → `0⁰` / indeterminate; `v+0e` → *annihilate*; `v+e0` → *unitize*; `j+0e` → *Annihilate!*; `h#1e` → *for the gazillionth time*; `h#-2` → *for the penultimate time*; `x#e-` → *Starting with:*; `x#e` → *Finally:* / last discourse point; `x#-1` → *Starting with the last one:*; `x#-2` → *penultimate point:*; `x#3e2` → *3rd nested point at depth +2:*; `x-e-` → *imagine that:*; `v+e` → increase without bound; `v~+e` → increase a lot but finite; `v+e-` → nudge up; `v-e-` → treat as imaginary / notionalize; `h+e` → unbounded multiplicity; `h-e-` → notionally / as if; `h#e` → *for the last time*; `h#e-` → *for the first time* (onset); `v#e` → *take last place*; `v#e-` → *take starting place*; `v#-2` → *take 2nd from the end*; `j+e` → *To infinity!*; `j#e` → *Finally!*; `j#e-` → *(finally, we're) starting!*; `j#-2` → *Penultimate!*; `j-e-` → *As if!* / *Imagine!*; `h+1e` → *a gazillion times*; `g+e9` → bare OoM e9; `g+` → plural `>1`.
+Examples: `g+e` → +∞; `g~+e` → arbitrarily large but finite; `g+1e` → *one gazillion*; `g~+1e` → *about a gazillion*; `g@+1e` → proper name *One Gazillion* / *the Gazillion*; `g+1e-` → *one gazillionth*; `g+e-` → arbitrarily small but finite; `g-e` → −∞; `g-e-` → notional / imaginary amount; `g~-e-` → soft notional; `g#e` → last place; `g~#e` → near last place; `g#e-` → start / beginning place; `g~#e-` → near first place; `g#1e` → *the gazillionth* / *umpteenth*; `g#1e-` → *the gazillionth-first*; `g#-2` → *2nd from the end* / *penultimate*; `g#-1` → *1st from the end* / *Starting with the last one*; `g#3e2` → *3rd of gen +2*; `g#e-2` → *gen −2 cohort*; `g+0e` → absolute zero; `g+0e-` → sterile / null-at-seed amount; `g+0e-1` → engineering null at OoM −1; `g-0e-1` → engineering residue at OoM −1; `g#0e` → rank annihilated / disqualified; `g+e0` → unit / identity amount; `g+0e0` → `0⁰` / indeterminate; `v+0e` → *annihilate*; `v+e0` → *unitize*; `j+0e` → *Annihilate!*; `j#0e` → *Disqualified!*; `h#1e` → *for the gazillionth time*; `h#-2` → *for the penultimate time*; `x#e-` → *Starting with:*; `x#e` → *Finally:* / last discourse point; `x#-1` → *Starting with the last one:*; `x#-2` → *penultimate point:*; `x#3e2` → *3rd nested point at depth +2:*; `x-e-` → *imagine that:*; `v+e` → increase without bound; `v~+e` → increase a lot but finite; `v+e-` → nudge up; `v-e-` → treat as imaginary / notionalize; `h+e` → unbounded multiplicity; `h-e-` → notionally / as if; `h#e` → *for the last time*; `h#e-` → *for the first time* (onset); `v#e` → *take last place*; `v#e-` → *take starting place*; `v#-2` → *take 2nd from the end*; `j+e` → *To infinity!*; `j#e` → *Finally!*; `j#e-` → *(finally, we're) starting!*; `j#-2` → *Penultimate!*; `j-e-` → *As if!* / *Imagine!*; `h+1e` → *a gazillion times*; `g+e9` → bare OoM e9; `g+` → plural `>1`.
 ## Percent and percentage points
 
 Percent and percentage points are **scalar notation modes** on **`ra`** / **`ru`**, not new marker identities and not endings. They use group closers **`jo`** / **`ju`**, parallel to **`je`**.
@@ -748,8 +776,9 @@ Place the identity symbol **immediately after** any ending mark (or after PoS wh
 | *(no digit groups)* | *(empty after marker)* `g+`, `g~-`, `g=#`, `g=#-`, `h_` |
 | Digit syllables (`wo`…`zo`) | Arabic **`0`–`9`** |
 | `ba` / `bu` (+ `ja` when a mantissa follows) | **`e`** / **`e-`** (engineering, scientific, or [ordinal generation](#ordinal-generation)) |
-| `ba` / `bu` with **no** digits ([digitless exp](#digitless-exponents)) | **`e`** / **`e-`** with no power digits — specials `g+e`, `g+e-`; zero×digitless `g+0e`, `g+0e-`; hyperbole `g+1e`, `g+1e-`, `g#1e`, `g#1e-` |
-| named exp **`0`** ([zero × exponent](#zero-exponent)) | **`e0`** kept on purpose — identity `g+e0`; paradox `g+0e0` (ordinary magnitudes still omit exp `0`) |
+| `ba` / `bu` with **no** digits ([digitless exp](#digitless-exponents)) | **`e`** / **`e-`** with no power digits — specials `g+e`, `g+e-`; zero×digitless `g+0e`, `g+0e-`, `g#0e`; hyperbole `g+1e`, `g+1e-`, `g#1e`, `g#1e-` |
+| named exp **`0`** ([zero × exponent](#zero-exponent)) | **`e0`** kept on purpose — identity `g+e0`; paradox `g+0e0` (ordinary magnitudes still omit exp `0`; **`Ne0`** as special **TBD**) |
+| mantissa **`0`** + digitful **`e-1`** ([engineering null](#zero-exponent)) | **`0e-1`** — `g+0e-1` / `g-0e-1` (other **`±0eN`** TBD) |
 | `je` | **`.`** |
 | `jo` | **`%`** |
 | `ju` | **`%*`** |
@@ -773,6 +802,9 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 | one gazillion (hyperbole) | `g+1e` | *grawobal* (`ra` + wo + `ba` + `l`) |
 | absolute zero (totalized null) | `g+0e` | *grazobal* (`ra` + zo + `ba` + `l` — [zero × exponent](#zero-exponent)) |
 | sterile / null-at-seed amount | `g+0e-` | *grazobul* (`ra` + zo + `bu` + `l`) |
+| engineering null at OoM −1 | `g+0e-1` | *grabuwojazool* (`ra` + `bu` wo **ja** zo + `l`) |
+| engineering residue at OoM −1 | `g-0e-1` | *grubuwojazool* (`ru` + `bu` wo **ja** zo + `l`) |
+| rank annihilated / disqualified | `g#0e` | *grezobal* (`re` + zo + `ba` + `l`) |
 | unit / identity amount | `g+e0` | *grabazol* (`ra` + `ba` + zo + `l`) |
 | `0⁰` / indeterminate | `g+0e0` | *grabazojaazol* (`ra` + `ba` + zo + `ja` + zo + `l`) |
 | *annihilate* | `v+0e` | *vrazobal* |
