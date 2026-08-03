@@ -163,36 +163,36 @@ Need root shown as `compet` / `relat` only for readability.
 
 | | **-l** physical | **-m** mental | **-n** social | **-r** spiritual |
 |--|-----------------|---------------|---------------|------------------|
-| **xa** met | `w-competxal` | `w-competxam` | `w-competxan` | `w-competxar` |
+| **xa** met | `w<compet>xal` | `w<compet>xam` | `w<compet>xan` | `w<compet>xar` |
 
 ### Motive — preference standing
 
 | | **-l** circumstantial | **-m** internal | **-n** habitual | **-r** protective |
 |--|----------------------|-----------------|-----------------|-------------------|
-| **xe** motive | `h-relatxel` | `h-relatxem` | `h-relatxen` | `h-relatxer` |
+| **xe** motive | `h<relat>xel` | `h<relat>xem` | `h<relat>xen` | `h<relat>xer` |
 
 ### Prescription — force
 
 | | **-l** invite | **-m** endorse | **-n** commit | **-r** bound |
 |--|---------------|----------------|---------------|--------------|
-| **xo** ought | `h-relatxol` | `h-relatxom` | `h-relatxon` | `h-relatxor` |
+| **xo** ought | `h<relat>xol` | `h<relat>xom` | `h<relat>xon` | `h<relat>xor` |
 
 ### Unmet — changeability
 
 | | **-l** temporary | **-m** modifiable | **-n** irreversible | **-r** won't-now |
 |--|------------------|-------------------|---------------------|------------------|
-| **xu** unmet | `h-relatxul` | `h-relatxum` | `h-relatxun` | `h-relatxur` |
+| **xu** unmet | `h<relat>xul` | `h<relat>xum` | `h<relat>xun` | `h<relat>xur` |
 
 ## Attachment sites (where the nudge fires)
 
 | Site | Typical shape | English cue |
 |------|---------------|-------------|
-| Speaker-possessive / gratitude | host + `/ɡ/` possessive + `w-NEEDxa…` + channel ending | *my … (for competence)* |
+| Speaker-possessive / gratitude | host + `/ɡ/` possessive + `w<NEED>xa…` + channel ending | *my … (for competence)* |
 | Valence judgment (praise) | neutral host + `w-` / `h-` **`xa`** + channel | *gift (serves relatedness)* |
 | Valence judgment (criticism) | neutral host + **`xu`** + changeability ending | *meeting (costs autonomy, temporary)* |
-| Prescription / normative | clause + `h-NEEDxo…` + force ending | *should (for relatedness)* |
-| Motive (ex-*need to* / *have to*) | clause + `h-NEEDxe…` + preference standing | *I am … (for relatedness)* |
-| Topic-only | bare `h-NEED…` / `w-NEED…` | need named without claim |
+| Prescription / normative | clause + `h<NEED>xo…` + force ending | *should (for relatedness)* |
+| Motive (ex-*need to* / *have to*) | clause + `h<NEED>xe…` + preference standing | *I am … (for relatedness)* |
+| Topic-only | bare `h<NEED>…` / `w<NEED>…` | need named without claim |
 
 Prefer **`xa`** for gratitude / praise; **`xu`** for unmet; **`xo`** for *should*; **`xe`** for actual reason-for-acting; **-m** on **`xu`** / **`xe`** / **`xo`** when that table’s dimension is unclear. Bare need words are fine for topic-only mention.
 
@@ -202,22 +202,22 @@ Elsewhere, values are optional — do not tax every clause.
 
 | Clarity (schematic) | Reading |
 |---------------------|---------|
-| `z-neighborhoodl g-ofl b-ivon w-competxal` | *my neighborhood* — serves competence; **physical** contact (felt place / scene) |
-| `z-giftl w-relatxan` | gift serves relatedness; **social** channel (interpersonal gift) |
-| `… w-survivxam` | survival met via **mental** integration (encoding / baseline orientation) |
-| `… w-pleasxar` | pleasure met via **spiritual** step-back (big-picture savoring) |
-| `z-meetingl w-autonxul` | meeting costs autonomy **right now** (temporary) |
-| `… h-relatxel` | motive relatedness; **circumstantial** |
-| `… h-relatxem` | motive relatedness; **internal** |
-| `… h-relatxen` | motive relatedness; **habitual** |
-| `… h-relatxer` | motive relatedness; **protective** (guard against unmet) |
-| `… h-relatxol` | should serve/protect relatedness; **invite** |
-| `… h-relatxom` | should serve/protect relatedness; **endorse** |
-| `… h-relatxon` | should serve/protect relatedness; **commit** (promise / role / agreement) |
-| `… h-relatxor` | should serve/protect relatedness; **bound** (in-frame boundary) |
-| `… h-relatxun` | costs relatedness; **irreversible** |
-| `… h-relatxur` | costs relatedness; **won't address that now** |
-| `h-pleasl` | pleasure (**topic** only; no met/unmet/motive/ought) |
+| `z<neighborhood>l g<of>l bivon w<compet>xal` | *my neighborhood* — serves competence; **physical** contact (felt place / scene) |
+| `z<gift>l w<relat>xan` | gift serves relatedness; **social** channel (interpersonal gift) |
+| `… w<surviv>xam` | survival met via **mental** integration (encoding / baseline orientation) |
+| `… w<pleas>xar` | pleasure met via **spiritual** step-back (big-picture savoring) |
+| `z<meeting>l w<auton>xul` | meeting costs autonomy **right now** (temporary) |
+| `… h<relat>xel` | motive relatedness; **circumstantial** |
+| `… h<relat>xem` | motive relatedness; **internal** |
+| `… h<relat>xen` | motive relatedness; **habitual** |
+| `… h<relat>xer` | motive relatedness; **protective** (guard against unmet) |
+| `… h<relat>xol` | should serve/protect relatedness; **invite** |
+| `… h<relat>xom` | should serve/protect relatedness; **endorse** |
+| `… h<relat>xon` | should serve/protect relatedness; **commit** (promise / role / agreement) |
+| `… h<relat>xor` | should serve/protect relatedness; **bound** (in-frame boundary) |
+| `… h<relat>xun` | costs relatedness; **irreversible** |
+| `… h<relat>xur` | costs relatedness; **won't address that now** |
+| `h<pleas>l` | pleasure (**topic** only; no met/unmet/motive/ought) |
 
 ## Out of scope (for now)
 
@@ -226,7 +226,7 @@ Elsewhere, values are optional — do not tax every clause.
 - **Whose-need** / **care direction** (thrive / guard) on prescription — optional later dimensions; force is the primary `xo` split.
 - **Listener / third-person possessives** — no forced value (reminder is for self-gratitude / self-ought / self-judgment).
 
-**Incapability** compounds onto the **activity/property host** (`v-singxun`) or fallback **`ABIL`** — [special-vocabulary.md](special-vocabulary.md#incapability) — not onto need compounds (`competxun` remains unmet competence).
+**Incapability** compounds onto the **activity/property host** (`v<sing>xun`) or fallback **`ABIL`** — [special-vocabulary.md](special-vocabulary.md#incapability) — not onto need compounds (`competxun` remains unmet competence).
 
 ## Constraints
 
@@ -237,4 +237,4 @@ Elsewhere, values are optional — do not tax every clause.
 - Do **not** treat **`xo`** as exclusive need-pick or contact/savoring; do **not** treat **`xe`** as *should*.
 - Value `x`-second halves are the bare vowels **`a` / `e` / `o` / `u`** inside a compound — not prefix-less reviser words (`al`, `ul`, …) and not restrictor joins (`hal`, …).
 - Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)).
-- Multiple values = multiple `/h/` or `/w/` words (`h-competxal h-relatxan`), not stacked `x`-additions on one need.
+- Multiple values = multiple `/h/` or `/w/` words (`h<compet>xal h<relat>xan`), not stacked `x`-additions on one need.

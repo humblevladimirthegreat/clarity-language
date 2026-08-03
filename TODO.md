@@ -1,8 +1,6 @@
 -punctuation
 -consider numeric derivation uses phonetic spelling
 -change values to compassion, rationality, empowerment, in that order
--migrate doc examples off pedagogical `z-rootl` hyphens → actual `zrootl`; schematic English → `z<english>l` ([orthography](docs/language-reference.md#orthography))
-
 Dictionary entries:
 -comparison benchmarks
 -habits: triggered

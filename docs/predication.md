@@ -14,9 +14,9 @@ A clause may assert a property of a subject **without** a `/v/`: utterance force
 
 | Shape | Reading |
 |-------|---------|
-| `jal z-HOST g-PROPl` | *HOST is PROP* (absolute property) |
-| `jal zel g-SCALEl z-A z-B` | comparative claim as clause content — [comparatives](comparatives.md) |
-| `jal z-HOST g-ogunol b-OTHER` | *HOST is (identical to) OTHER* — [identity](#identity) |
+| `jal z<HOST> g<PROP>l` | *HOST is PROP* (absolute property) |
+| `jal zel g<SCALE>l z<A> z<B>` | comparative claim as clause content — [comparatives](comparatives.md) |
+| `jal z<HOST> gogunol b<OTHER>` | *HOST is (identical to) OTHER* — [identity](#identity) |
 
 Same pattern under other NP slots when the predicative phrase fills `/d/` or `/b/`. When discourse needs the host alone as subject of another verb, keep that subject ordinary and put the predicative claim in another slot or sentence.
 
@@ -24,23 +24,23 @@ Same pattern under other NP slots when the predicative phrase fills `/d/` or `/b
 <a id="classification"></a>
 <a id="kind-ascription"></a>
 
-**Classification** = kind / role / category ascription. Treat the kind as an ordinary **adjective** on the host (zero-copula), the same way absolute scalars work (`z-Samn g-bigl` = *Sam is big*).
+**Classification** = kind / role / category ascription. Treat the kind as an ordinary **adjective** on the host (zero-copula), the same way absolute scalars work (`z<Sam>n g<big>l` = *Sam is big*).
 
 | Pattern | Example | Gloss |
 |---------|---------|--------|
-| Kind / role as `/ɡ/` | `jal z-Samn g-teacherl` | *Sam is a teacher* |
-| Named category / titled role | `jal z-Samn g-teachern` | *Sam is Teacher* (proper designation) — [**-n** on `/ɡ/`](reference-suffix.md) |
-| Soft / hedged class | `jal z-Samn g-teacherl` + open packaging or `/w/` hedge | *Sam is a teacher (among readings)* / *allegedly…* |
-| Characterizing / habitual | `jal z-Samn g-teacherl hual` | *Sam is the teaching type* / habitual — [**hual**](restrictors.md) |
-| Negation | `jal z-Samn gul g-teacherl` | *Sam is not a teacher* — [negation **u**](coordination.md#negation-u) |
+| Kind / role as `/ɡ/` | `jal z<Sam>n gedagel` | *Sam is a teacher* |
+| Named category / titled role | `jal z<Sam>n gedagen` | *Sam is Teacher* (proper designation) — [**-n** on `/ɡ/`](reference-suffix.md) |
+| Soft / hedged class | `jal z<Sam>n gedagel` + open packaging or `/w/` hedge | *Sam is a teacher (among readings)* / *allegedly…* |
+| Characterizing / habitual | `jal z<Sam>n gedagel hual` | *Sam is the teaching type* / habitual — [**hual**](restrictors.md) |
+| Negation | `jal z<Sam>n gul gedagel` | *Sam is not a teacher* — [negation **u**](coordination.md#negation-u) |
 
-**Kind as property** already appears under invert **ua** / **uo** SHARED (`zual g-catl` = *every cat*). Predicative classification is the same kind of `/ɡ/` reading on a single host, not a join.
+**Kind as property** already appears under invert **ua** / **uo** SHARED (`zual gagadal` = *every cat*). Predicative classification is the same kind of `/ɡ/` reading on a single host, not a join.
 
-**Role nouns vs role adjectives:** when you **refer** to a person-as-role, use a noun slot (`z-teacherl`). When you **ascribe** the role to a named or resumed host, use predicative `/ɡ/` (`z-Samn g-teacherl`). Do not invent a light *be* between two `/z/` nouns for classification.
+**Role nouns vs role adjectives:** when you **refer** to a person-as-role, use a noun slot (`zedagel`). When you **ascribe** the role to a named or resumed host, use predicative `/ɡ/` (`z<Sam>n gedagel`). Do not invent a light *be* between two `/z/` nouns for classification.
 
 **Not classification:** co-reference of two labels → [identity](#identity). Equal degree on a scale → [equative](comparatives.md#equatives). Membership in a listed inventory without ascription → ordinary joins (`zar` / `zam` / …).
 
-Values still stack on the classifying `/ɡ/` (`g-teacherl w-…xa…`) when the point is gratitude, judgment, or other need framing of that role — [values.md](values.md).
+Values still stack on the classifying `/ɡ/` (`gedagel w-…xa…`) when the point is gratitude, judgment, or other need framing of that role — [values.md](values.md).
 
 ## Identity
 <a id="identity"></a>
@@ -56,17 +56,17 @@ One closed complex adjective root **`SAME`**:
 |---------|--------|--------------|
 | **SAME** | *identical-to* / *same-as* (two expressions, one referent) | **`oguno`** 🪙 *coin* → *same* |
 
-**Conceptual metaphor:** a **coin** has two faces and one substance. Different labels / presentations are faces; co-reference is the one coin. Bias check: more appearances do not multiply the person. Ordinary content still available (`z-ogunol` *a coin*; `g-ogunol` as *token*-like when not in the identity frame). The special reading wins under closed predicative **`g-oguno…` + `/b/`**.
+**Conceptual metaphor:** a **coin** has two faces and one substance. Different labels / presentations are faces; co-reference is the one coin. Bias check: more appearances do not multiply the person. Ordinary content still available (`zogunol` *a coin*; `gogunol` as *token*-like when not in the identity frame). The special reading wins under closed predicative **`goguno…` + `/b/`**.
 
 ```
-g-oguno… b-OTHER
+goguno… b<OTHER>
 ```
 
 | Piece | Role |
 |-------|------|
 | host NP | the expression treated as given / topic (`/z/`, or `/d/` / `/b/` when the identity phrase fills that slot) |
-| **`g-oguno`** | *identical-to* / *same-as* (closed relation) |
-| **`b-OTHER`** | the other label or description |
+| **`goguno`** | *identical-to* / *same-as* (closed relation) |
+| **`b<OTHER>`** | the other label or description |
 
 **Endings on `SAME` (`oguno`):**
 
@@ -81,20 +81,20 @@ g-oguno… b-OTHER
 
 | Clarity | Reading |
 |---------|---------|
-| `jal z-Clarkn g-ogunol b-Superman` | *Clark is (the same as) Superman* |
-| `jal z-Clarkn g-ogunom b-Superman` | soft: *Clark is basically Superman* |
-| `jal z-Clarkn gul g-ogunol b-Superman` | *Clark is not (identical to) Superman* |
-| `jal z-Clarkn g-ogunol w-allegedl b-Superman` | *Clark is allegedly Superman* |
-| `z-personl g-ogunol b-Superman` | NP-internal: *the person who is Superman* |
+| `jal z<Clark>n gogunol b<Superman>n` | *Clark is (the same as) Superman* |
+| `jal z<Clark>n gogunom b<Superman>n` | soft: *Clark is basically Superman* |
+| `jal z<Clark>n gul gogunol b<Superman>n` | *Clark is not (identical to) Superman* |
+| `jal z<Clark>n gogunol w<alleged>l b<Superman>n` | *Clark is allegedly Superman* |
+| `zeborel gogunol b<Superman>n` | NP-internal: *the person who is Superman* |
 
-`oguno`+`/b/` stay **contiguous**, like other complex adjectives (`g-ofl b-Samn`).
+`oguno`+`/b/` stay **contiguous**, like other complex adjectives (`g<of>l b<Sam>n`).
 
 ### Constraints
 
 - **No** general copula `/v/` for identity or classification.
 - **No** identity reading of multi **`ae`** without SHARED scale, and **no** SHARED-under-`ae` identity marker (that slot stays scalar equative only — [comparatives](comparatives.md#equatives)).
-- **No** dual bare subjects (`z-A z-B`) meaning *A is B*.
-- **No** adjacent same-PoS **-n** words as a multipart proper name (`z-Maryn z-Smithn`); use an **`x`-compound** (`z-MaryxSmithn`) — [phrasal proper names](reference-suffix.md#phrasal-proper-names).
+- **No** dual bare subjects (`z<A> z<B>`) meaning *A is B*.
+- **No** adjacent same-PoS **-n** words as a multipart proper name (`z<Mary>n z<Smith>n`); use an **`x`-compound** (`z<Mary Smith>n`) — [phrasal proper names](reference-suffix.md#phrasal-proper-names).
 - Do **not** overload [equative](comparatives.md#equatives) `ae` or set **`a`** for co-reference.
 - Plural **-sh** on `SAME` (`oguno`) is unused for “they are the same group”; mark group reference on the host nouns, or ascribe identity pairwise.
 - Multi-alias lists (*A, B, and C are one*): prefer pairwise `SAME`, or separate sentences — do **not** invent a second SHARED reading under `ae` for co-reference.

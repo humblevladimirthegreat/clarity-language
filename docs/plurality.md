@@ -107,12 +107,12 @@ Most useful with [phrase join](coordination.md): SHARED singular scale under **`
 
 | Example | Gloss |
 |---------|-------|
-| `z-boxl z-cratel zal g-heavyl` | *the box and the crate are (each) heavy* — distributive SHARED |
-| `z-boxl z-cratel zal g-heavylsh` | *the box and the crate are heavy together* — collective SHARED |
-| `z-boxl z-cratel zam g-heavylsh` | collective with SHARED after the join (also OK as local `-sh` on last head when not SHARED) |
-| `z-teamr g-largelsh` | *the team is large* (group-level size), not “each member is large” |
-| `z-boxlsh g-heavyl` | *the boxes are heavy* (members / plain) |
-| `z-boxlsh g-heavylsh` | *the boxes are heavy collectively* |
+| `z<box>l z<crate>l zal g<heavy>l` | *the box and the crate are (each) heavy* — distributive SHARED |
+| `z<box>l z<crate>l zal g<heavy>lsh` | *the box and the crate are heavy together* — collective SHARED |
+| `z<box>l z<crate>l zam g<heavy>lsh` | collective with SHARED after the join (also OK as local `-sh` on last head when not SHARED) |
+| `z<team>r g<large>lsh` | *the team is large* (group-level size), not “each member is large” |
+| `z<box>lsh g<heavy>l` | *the boxes are heavy* (members / plain) |
+| `z<box>lsh g<heavy>lsh` | *the boxes are heavy collectively* |
 
 * **-lsh** / **-msh** — first mention of that property as a **collective** ascription (literal / metaphorical).
 * **-nsh** — collective reading under a **named** category/style when the label applies to the set as a unit (rare; prefer singular **-n** for ordinary named labels on an occasion).
@@ -120,7 +120,7 @@ Most useful with [phrase join](coordination.md): SHARED singular scale under **`
 
 **Scale / continuum `/ɡ/`** in [comparatives](comparatives.md) and [ranges](numbers.md#ranges) stays **singular** — a scale or continuum is one line. Do not pluralize SHARED scale or continuum adjectives.
 
-**Not adjective -sh:** *red books* → plural on the **noun**, singular `/ɡ/` *red*. *She is an angry person* (character) → singular `/ɡ/` + **`hual`** / trait lexicon — not **-sh**. *Both are big* → distributive SHARED **`… zal g-bigl`**, not **-sh**.
+**Not adjective -sh:** *red books* → plural on the **noun**, singular `/ɡ/` *red*. *She is an angry person* (character) → singular `/ɡ/` + **`hual`** / trait lexicon — not **-sh**. *Both are big* → distributive SHARED **`… zal g<big>l`**, not **-sh**.
 
 ### Adjective adjuncts (`/w/`)
 
@@ -140,7 +140,7 @@ Depends on subclass (see [utterance markers](language-reference.md#utterance-mar
 
 ### Discourse markers (`/x/`)
 
-* **Revisers** ([**al** / **am** / **an** / **el** / **em** / **en** / …](revisers.md)) — No **-sh** (**-l** / **-m** / named **-n** ending only). Plurality is marked on each side independently (`z-dogl am z-catlsh`).
+* **Revisers** ([**al** / **am** / **an** / **el** / **em** / **en** / …](revisers.md)) — No **-sh** (**-l** / **-m** / named **-n** ending only). Plurality is marked on each side independently (`zogodol am zagadalsh`).
 * **NP- / AP-level joins** ([`zam`](coordination.md#np-level-coordination), `dal`, [`gam`](coordination.md#ap-level-coordination), …) — No **-sh** on the join; plurality stays on each phrase conjunct (or on SHARED `/ɡ/`…**-sh** when the ascription is [collective](#collective-ascription)).
 * **VP-level joins** ([`vam`](coordination.md#vp-level-coordination), `var`, …) — No **-sh** on the join; plurality stays on material inside each VP conjunct.
 * **Clause joins** ([`xal`](coordination.md#clause-level-coordination), …) — Do **not** take **-sh**; plurality stays on material inside each sentence.
@@ -178,6 +178,6 @@ Depends on subclass (see [utterance markers](language-reference.md#utterance-mar
 
 ## Quantity, generics, and habit (not **-sh**)
 
-- **Quantity `>1`:** digitless positive scalar **`g+`** (etc.) — [zero digit groups](numbers.md#zero-digit-groups). Different job from noun **-lsh** (group as referent). They may co-occur when both are meant (`z-catlsh g+3`), but **`g+`** does not replace indefinite group introduction.
-- **Generics / *every K*:** [coordination](coordination.md#universals-domains-generics) — `zual g-catl`, `zuam g-…`, habitual **`hual`**.
+- **Quantity `>1`:** digitless positive scalar **`g+`** (etc.) — [zero digit groups](numbers.md#zero-digit-groups). Different job from noun **-lsh** (group as referent). They may co-occur when both are meant (`zagadalsh g+3`), but **`g+`** does not replace indefinite group introduction.
+- **Generics / *every K*:** [coordination](coordination.md#universals-domains-generics) — `zual gagadal`, `zuam g-…`, habitual **`hual`**.
 - **Do not** use **-sh** to mean *all* / *every* / *in general* / *always* / *as a character trait*.

@@ -72,7 +72,7 @@ Each subsection is an **antecedent** PoS; the table rows are the **pronoun** PoS
 
 | Pronoun PoS | English approximation |
 |-------------|------------------------|
-| `/z/` `/d/` `/b/` | *that action / event / doing*; *the (act of) …-ing*; English *it* for the event — **not** the agent/patient; use [role compounds](special-vocabulary.md#role-compounds) (`z-axattackr`, `d-uxattackr`) |
+| `/z/` `/d/` `/b/` | *that action / event / doing*; *the (act of) …-ing*; English *it* for the event — **not** the agent/patient; use [role compounds](special-vocabulary.md#role-compounds) (`zax<attack>r`, `dux<attack>r`) |
 | `/v/` | *do so* / *do that* |
 | `/ɡ/` | *such* (done that way); property of having done that |
 | `/w/` | Frame on an adjective about that doing (*allegedly that*, *former that*) |
@@ -150,16 +150,16 @@ Closed discourse-role roots (not letter/full-root **-r** from ordinary anteceden
 
 | Role | Root | Image → sense | Default ending | Example |
 |------|------|---------------|----------------|---------|
-| **Speaker** | **`ivo`** | 🎤 *mic* → *producer-role* | **-n** | `z-ivon` *I* (this utterance’s producer) |
-| **Listener** | **`ile`** | 🎧 *headphones* → *addressee-role* | **-n** | `d-ilen` *you* (this utterance’s addressee) |
-| **Generic person** | **`enu`** | 👤 *silhouette* → *a person* | **-n** | `z-enun` *someone* (a nonspecific individual) |
-| **Next clause** | **`odo`** | 🚪 *doorway* → *what follows* | **-l** | `b-odol` / `d-odol` — placeholder for the dependent that follows |
+| **Speaker** | **`ivo`** | 🎤 *mic* → *producer-role* | **-n** | `zivon` *I* (this utterance’s producer) |
+| **Listener** | **`ile`** | 🎧 *headphones* → *addressee-role* | **-n** | `dilen` *you* (this utterance’s addressee) |
+| **Generic person** | **`enu`** | 👤 *silhouette* → *a person* | **-n** | `zenun` *someone* (a nonspecific individual) |
+| **Next clause** | **`odo`** | 🚪 *doorway* → *what follows* | **-l** | `bodol` / `dodol` — placeholder for the dependent that follows |
 
 **Medium-neutral.** **Speaker** and **listener** name the **producer** and **addressee** of the current utterance — speech, writing, signing, or any other channel. They are not restricted to oral talk (*speaker* ≠ “person vocalizing”; *listener* ≠ “person hearing”). Same roots in a letter, chat, book, or recording.
 
 **Endings.** Person roles default to **-n** (definite discourse roles, parallel to proper names). Soft **-m** is available when the role framing is hedged. **Next clause** defaults to **-l** (exact forward slot). Soft **-m** on **`odo`** hedges the subordination edge. Do **not** treat these roots as ordinary indefinite kinds (**-l** on person roles) or as content anaphors built from a prior lexicon stem.
 
-**Speaker / listener.** 1st / 2nd person only when a name is unavailable or undesired. They label **roles in this discourse**, not identity essence. Do **not** substitute bare **`ivo`** for the [Mine](comparatives.md#judgment-benchmarks) benchmark (`z-MINEn` = personal baseline, not “me as a person”). Do **not** reuse **`ile`** for [evidential](special-vocabulary.md#evidentiality) hearsay (**`erare`** stays *told*).
+**Speaker / listener.** 1st / 2nd person only when a name is unavailable or undesired. They label **roles in this discourse**, not identity essence. Do **not** substitute bare **`ivo`** for the [Mine](comparatives.md#judgment-benchmarks) benchmark (`z<MINE>n` = personal baseline, not “me as a person”). Do **not** reuse **`ile`** for [evidential](special-vocabulary.md#evidentiality) hearsay (**`erare`** stays *told*).
 
 **Generic person (`enu`).** A nonspecific **individual** — not English impersonal *one*, not [unspecified-member](coordination.md#unspecified-member-r-phrase) **`zar`** / **`dar`** (those are join gaps / indefinites of any kind), and not a 3rd-person anaphor (use content **-r** once someone is introduced).
 
@@ -167,12 +167,12 @@ Closed discourse-role roots (not letter/full-root **-r** from ordinary anteceden
 
 | Clarity | Reading |
 |---------|---------|
-| `jal z-ivon v-gol` | *I go* |
-| `jal z-ivon v-writel d-ilen` | *I write you* (letter / message — same roots) |
-| `jal z-enun v-arrivedl` | *Someone (a person) arrived* |
-| `jal z-ivon v-toldl d-Samn d-odol jal z-Lean v-leftl` | *I told Sam that Lea left* |
-| `… h-becausel b-odol jal …` | *… because [dependent]* |
+| `jal zivon v<go>l` | *I go* |
+| `jal zivon v<write>l dilen` | *I write you* (letter / message — same roots) |
+| `jal zenun v<arrived>l` | *Someone (a person) arrived* |
+| `jal zivon v<told>l d<Sam>n dodol jal z<Lea>n v<left>l` | *I told Sam that Lea left* |
+| `… h<because>l bodol jal …` | *… because [dependent]* |
 
-**Group containing** a referent is not a separate special pronoun: append **-sh** where [plurality](plurality.md) allows it (`z-ivonsh` = the group containing the speaker; inclusive *we* = join of speaker + listener, not a fifth root).
+**Group containing** a referent is not a separate special pronoun: append **-sh** where [plurality](plurality.md) allows it (`zivonsh` = the group containing the speaker; inclusive *we* = join of speaker + listener, not a fifth root).
 
 **Prefer names.** When a proper name is available, use it (`-n`) and/or its pronoun (`-r` from the name’s root) — including for self-address — rather than **`ivo`** / **`ile`**. Proper names are definite; the special pronouns are for the narrow cases where a name is unavailable or undesired. See [Proper name (`-n`)](reference-suffix.md#proper-name--n).

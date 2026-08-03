@@ -94,26 +94,26 @@ TYPE and EDGE are independent of PoS (`h` + **a** is still **cite** as manner; `
 Sketch (*he said “hi”* — atomic object cite):
 
 ```text
-jal z-hen daxol hi v-saidl
+jal z<he>n daxol hi v<said>l
 ```
 
-Writing: `jal z-hen d[hi] v-saidl`
+Writing: `jal z<he>n d[hi] v<said>l`
 
 Sketch (*he said **that**?!* — anaphor to a prior cite):
 
 ```text
-jol z-hen daxar v-saidl
+jol z<he>n daxar v<said>l
 ```
 
-Writing: `jol z-hen d[=] v-saidl`
+Writing: `jol z<he>n d[=] v<said>l`
 
 Sketch (*don’t “oops” me* — cite as VP):
 
 ```text
-jul z-you vaxol oops d-mel
+jul z<you>n vaxol oops d<me>l
 ```
 
-Writing: `jul z-you v[oops] d-mel`
+Writing: `jul z<you>n v[oops] d<me>l`
 
 <a id="writing"></a>
 
@@ -247,7 +247,7 @@ Open (EDGE **a** / **e** with interior) pushes a stack frame (PoS + TYPE + EDGE 
 
 Close endings are **not** open exact/paraphrase/proper. Open **-n** = proper/titled span; close **-n** = sic/editorial — different jobs. Open **-r** = span anaphor; close **-r** = truncated. Truncated and sic spans are ordinary antecedents for later **-r** opens (`daxar` = *that* cut-off or *sic* cite). Combined `-\|` / `#\|` are writing-only shorthand for two spoken closes; bare `xuxur` / `xuxun` never means pop-all by themselves.
 
-Named entities *inside* a **cite / mention / aside** still take ordinary PoS + **-n** (`z-Samn`, …) — [reference-suffix.md](reference-suffix.md). **Opaque** interiors are not parsed as Clarity words.
+Named entities *inside* a **cite / mention / aside** still take ordinary PoS + **-n** (`z<Sam>n`, …) — [reference-suffix.md](reference-suffix.md). **Opaque** interiors are not parsed as Clarity words.
 
 <a id="inventory"></a>
 
@@ -301,14 +301,17 @@ Material inside a **cite / aside / mention** may be a fragment or a full sentenc
 
 | Need | Use |
 |------|-----|
-| **Raw foreign / code / unparsed surface** in a clause slot | **opaque** — writing `d<sushi>`, speech `duxol sushi` (atomic) or `duxal sushi xuxul` |
+| **Raw foreign / code / unparsed surface** in a clause slot | **opaque** — writing `d<sushi>` (**no** reference suffix after `>`), speech `duxol sushi` (atomic) or `duxal sushi xuxul` |
+| **Compact foreign content word** (donor root, ordinary morphology) | `PoS<…>ENDING` — e.g. `d<sushi>l`, `z<Sam>n` — [orthography](language-reference.md#orthography) |
 | **Use–mention** (*the word/form X*) | **mention** — `d{…}` / `doxal` … `xuxul` / `doxol` … |
 | **Title string / proverb as wording** (pick out work; recite/report line) | **cite** — `d[…]` / `d@[…]` / `daxal` … / `daxan` … |
 | ***The title X* / *the proverb X*** as named unit | **mention** **-n** — `d@{…}` / `doxan` … |
-| **Nativized loan** (adapted Clarity root, ordinary morphology) | ordinary PoS + adapted `V(CV)+` root + reference suffix — **no** span (`z-susil`, `z-susir`, `g-susil`, …) |
+| **Nativized loan** (published / adapted Clarity root, ordinary morphology) | ordinary PoS + root + reference suffix — **no** span / no `<>` (`zuzuzul`, `zuzuzur`, `guzuzul`, …) |
 | **That (prior opaque / cite / …) again** | span anaphor — `duxar` / `daxar` / … — [endings](#endings) |
 
-Prefer **opaque** while the form is foreign orthography, unparsed donor text, or code-like. Prefer **cite** for **long / mixed-PoS work titles** used to name the work — especially titles that would make a clumsy multi-root **`x`-compound** (e.g. *Harry Potter and the Sorcerer's Stone* as `z@[…]` / `zaxan` …, not one mega-compound). Prefer **mention** **-n** when the point is the conventional unit (*the title …*, *the proverb …*). Prefer a bare nativized loan when the name is short enough to resume with ordinary content **-r** or shift PoS freely. Compact **multipart** person/place names (given+family, *New York*) use mid-word **`x`** (`z-MaryxSmithn`), not adjacent `z-Maryn z-Smithn` — [phrasal proper names](reference-suffix.md#phrasal-proper-names). Do not write `z-<sushi>l` or attach reference suffixes outside the open template.
+**Opaque vs compact foreign:** `d<sushi>` is a span open + interior blob (ending lives on the open in speech: `duxol`); `d<sushi>l` is one content word whose root is foreign. Do **not** put **-l** / **-m** / **-n** / **-r** after an opaque closer.
+
+Prefer **opaque** while the form is unparsed donor text or code-like. Prefer **compact foreign** `PoS<…>ENDING` for a single borrowed root in an ordinary slot. Prefer **cite** for **long / mixed-PoS work titles** used to name the work — especially titles that would make a clumsy multi-root **`x`-compound** (e.g. *Harry Potter and the Sorcerer's Stone* as `z@[…]` / `zaxan` …, not one mega-compound). Prefer **mention** **-n** when the point is the conventional unit (*the title …*, *the proverb …*). Prefer a bare nativized loan when the published lexicon has the gloss (`zuzuzul` for *sushi*) and you want ordinary **-r** resume / PoS shift. Compact **multipart** names: foreign `z<Mary Smith>n` (one `<>`); nativized halves use mid-word **`x`** (`zuzuzuxogeven`) — not adjacent `z<Mary>n z<Smith>n` — [phrasal proper names](reference-suffix.md#phrasal-proper-names).
 
 <a id="nesting"></a>
 
@@ -408,7 +411,7 @@ Scope islands fill that gap: **edges = parentheses; binder = function.**
 | **`^ … ^`** | open / close of one scope island (same glyph both edges) |
 
 ```text
-jal ^ h-maybel z-redl z-dogl ^ v-sawl
+jal ^ h<maybe>l zedejel zogodol ^ v<saw>l
 ```
 
 Rough English: *I saw ^ maybe the red dog ^* — *maybe* is **inside** the island, so it targets that chunk, not the clause.
@@ -421,7 +424,7 @@ Rough English: *I saw ^ maybe the red dog ^* — *maybe* is **inside** the islan
 - Empty `^^` is illegal.
 - **Binder required:** the island must contain at least one binder — a scope-taking `/h/` (simple or contiguous `/h/`+`/b/`) and/or a [join](coordination.md#join-scope-islands-rules) particle. Binderless `^ … ^` is **illegal** (no meter-only / chunking-only use).
 - Open and close use the **same** glyph **`^`**; the first unmatched `^` opens, the next closes (one island per clause — no nesting).
-- Prefer spaces inside: `^ h-maybel z-redl z-dogl ^` (not jammed against roots).
+- Prefer spaces inside: `^ h<maybe>l zedejel zogodol ^` (not jammed against roots).
 - In Markdown docs, put islands in backticks or `text` fences so engines that treat `^…^` as superscript do not mangle examples.
 
 **Not span brackets:** do not reuse `[` `]` `{` `}` `(` `)` `<` `>` for scope — those are cite / mention / aside / opaque.
@@ -442,10 +445,10 @@ In singing: an ordinary **phrase bow** on the island — not quote voice (cite),
 
 | Binder | Job inside the island |
 |--------|------------------------|
-| Scope-taking **`/h/`** (simple or `/h/`+`/b/`) | frames that **chunk** (multi-word adjunct scope). Prefer it **first** in the island for scanning (`^ h-maybel … ^`). |
-| Prefixed **join** (right-close; phrase / VP / clause) | lookback-absorbs **only** matching-role material **inside** the island — [join scope islands](coordination.md#join-scope-islands-rules). The join particle itself is inside (`^ z-waterl zal ^`, not `^ z-waterl ^ zal`). |
+| Scope-taking **`/h/`** (simple or `/h/`+`/b/`) | frames that **chunk** (multi-word adjunct scope). Prefer it **first** in the island for scanning (`^ h<maybe>l … ^`). |
+| Prefixed **join** (right-close; phrase / VP / clause) | lookback-absorbs **only** matching-role material **inside** the island — [join scope islands](coordination.md#join-scope-islands-rules). The join particle itself is inside (`^ z<water>l zal ^`, not `^ z<water>l ^ zal`). |
 
-`/h/` and a join may **share** one island (`^ h-maybel z-A z-B zam ^` = *maybe (A and B)*).
+`/h/` and a join may **share** one island (`^ h<maybe>l z<A> z<B> zam ^` = *maybe (A and B)*).
 
 | Placement | Reading |
 |-----------|---------|
@@ -459,7 +462,7 @@ In singing: an ordinary **phrase bow** on the island — not quote voice (cite),
 Several `/h/` units inside one island all scope over that chunk (same co-stacking as clause-level juxtaposition, but island-bounded). Outside `/h/` never “steals” or loses clause scope just because an island is present:
 
 ```text
-jal h-yesterdayl ^ h-maybel z-redl z-dogl ^ v-sawl
+jal h<yesterday>l ^ h<maybe>l zedejel zogodol ^ v<saw>l
 ```
 
 *yesterday* = clause; *maybe* = over *the red dog*.
@@ -467,11 +470,11 @@ jal h-yesterdayl ^ h-maybel z-redl z-dogl ^ v-sawl
 Join examples (right-close; outer join ties leftover same-slot material):
 
 ```text
-jal z-Samn ^ z-waterl zal ^ zam v-sawl
-jal z-Samn ^ zal ^ zam v-sawl
+jal z<Sam>n ^ z<water>l zal ^ zam v<saw>l
+jal z<Sam>n ^ zal ^ zam v<saw>l
 ```
 
-*Sam and (just water)*; *Sam and nothing*. Illegal without the outer join: `z-Samn ^ z-waterl zal ^` as two subject units with no join.
+*Sam and (just water)*; *Sam and nothing*. Illegal without the outer join: `z<Sam>n ^ z<water>l zal ^` as two subject units with no join.
 
 The binder keeps its lexicon / join meaning. The island only supplies **multi-word (or sub-list) scope**.
 
@@ -479,11 +482,11 @@ Sketch contrast:
 
 | Form | Reading |
 |------|---------|
-| `jam … z-redl z-dogl …` | whole-clause hedge (**`jam`**) |
-| `jal h-maybel z-redl z-dogl …` | *maybe* with default clause scope (ambiguous vs NP) |
-| `jal ^ h-maybel z-redl z-dogl ^ …` | *maybe* over **the red dog** as a unit |
-| `jal h-maybel ^ z-redl z-dogl ^ …` | **illegal** — island has no inside binder |
-| `jal z-Samn ^ z-waterl zal ^ zam …` | *Sam and (just water)* |
+| `jam … zedejel zogodol …` | whole-clause hedge (**`jam`**) |
+| `jal h<maybe>l zedejel zogodol …` | *maybe* with default clause scope (ambiguous vs NP) |
+| `jal ^ h<maybe>l zedejel zogodol ^ …` | *maybe* over **the red dog** as a unit |
+| `jal h<maybe>l ^ zedejel zogodol ^ …` | **illegal** — island has no inside binder |
+| `jal z<Sam>n ^ z<water>l zal ^ zam …` | *Sam and (just water)* |
 
 ### Not this
 
@@ -521,4 +524,4 @@ Sketch contrast:
 | Re-citing the same words as a fresh cite | new open (`daxal` / `daxol` / `daxan` / …), not **-r** |
 | Literal fence word / meta glyph as content | [literal content](#literal-content) — `\` / nest atomic opaque |
 
-<a id="xl-span-markers"></a>
+<a id="xl<spa>n-markers"></a>

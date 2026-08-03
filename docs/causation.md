@@ -58,9 +58,9 @@ Closed **`…aol`** (*X is enough* / full inclusive story) is the **stronger** t
 
 | Clarity (schematic) | Reading |
 |---------------------|---------|
-| `… haon b-effortl` on a promote / promotion frame | *promotion is open to effort (among routes)* |
-| `z-effortl zaom` inside an outcome / goal frame whose host is promotion | *effort would work (for that outcome)* |
-| `z-cloudl z-frontl zaom` … rain frame | *clouds or a front would work (for rain)* |
+| `… haon bazem` on a promote / promotion frame | *promotion is open to effort (among routes)* |
+| `zazem zaom` inside an outcome / goal frame whose host is promotion | *effort would work (for that outcome)* |
+| `zogulol z<front>l zaom` … rain frame | *clouds or a front would work (for rain)* |
 
 ### Necessary (marked)
 <a id="necessary"></a>
@@ -74,7 +74,7 @@ Do **not** recycle `ao` / `aom` with a different gloss for necessity. Use exclus
 
 | Clarity (schematic) | Reading |
 |---------------------|---------|
-| `… huan b-cloudl` on raining | *raining excluding / without clouds* |
+| `… huan bogulol` on raining | *raining excluding / without clouds* |
 | rain clause + **`hal`** under no-clouds circumstance | *never rains when …* |
 
 ### Marked unique path (not the default)
@@ -105,7 +105,7 @@ When the antecedent and/or consequent is a **full clause**, do **not** treat cla
 **Prefer subordination:**
 
 ```
-matrix …  h-IF / h-IFF / h-BECAUSE  b-odol   [dependent sentence]
+matrix …  h<IF> / h<IFF> / h<BECAUSE>  bodol   [dependent sentence]
 ```
 
 **`odo`** ([next-clause pronoun](pronouns.md#special-pronouns)) is matrix-final; the dependent is a full `/j/`… sentence — [dependent clauses](language-reference.md#dependent-clauses). Lexicon relation names *if* / *iff* / *because* / *although* / …; open-sufficient vs necessary nudges then live on **which relation** you choose and on restrictors (`hal`, …), not on stuffing a clause into phrase `aom`.
@@ -144,7 +144,7 @@ A common REBT-shaped claim: *hard work should earn a promotion* — the “rule�
 
 Do **not** upgrade `aom` → `ol` / `gon` just because you feel strongly. Strength of feeling is values force / evidentiality, not exclusive join.
 
-**Schematic:** `… haon b-effortl` on promotion + `h-competxol` (or soft invite force) ≈ *effort is among routes that ought to count for competence payoff* — not *effort is the sole causal law of promotion*.
+**Schematic:** `… haon bazem` on promotion + `h<compet>xol` (or soft invite force) ≈ *effort is among routes that ought to count for competence payoff* — not *effort is the sole causal law of promotion*.
 
 ## Stacks (evidentiality and habit)
 <a id="stacks"></a>

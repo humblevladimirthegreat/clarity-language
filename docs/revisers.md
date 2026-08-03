@@ -73,8 +73,8 @@ A REV₁ B REV₂ C ( REVᵢ SIDE )*
 - **Same clause** — A and every right-hand side sit in the **same clause**.
 - **Same slot** — A and every right-hand side match in role: all subject NPs (`/z/`), all objects (`/d/`), all `/b/` arguments, all `/ɡ/` APs (plus local material), all `/w/` or all `/h/` units, or all VPs (verb ± that verb’s `/d/`). Mixed slots are illegal (`z-… ol d-…`).
 - **Fixed A, one or more right-hand sides** — the first side is **A**; each **REV** introduces the next right-hand side. No left-fence shared-modifier slot on the particle; no **-r**. Cross-sentence repair without a discourse reviser before `/j/` still uses other `/x/` roots when needed.
-- **Inside a coordinated list** — allowed **inside** a conjunct as local repair, not as a substitute for the join (`zam` / `vam` / …). **Binding:** a revision chain starting at A consumes following same-slot sides paired by **REV** particles, tighter than list absorb — so `zam z-dogl ol z-catl z-birdl` = *(dog instead of cat) and bird*, and `zam z-teaml am z-Samn ul z-Lean z-birdl` = *(team including Sam, except Lea) and bird*.
-- **Inside a [number range](numbers.md#ranges)** — **`ul`** after the low endpoint marks an exclusive **high** bound (`zal g-spanl z+3 ul z+5` = *[3, 5)*; SHARED continuum required). Details in numbers.md.
+- **Inside a coordinated list** — allowed **inside** a conjunct as local repair, not as a substitute for the join (`zam` / `vam` / …). **Binding:** a revision chain starting at A consumes following same-slot sides paired by **REV** particles, tighter than list absorb — so `zam zogodol ol zagadal zuburul` = *(dog instead of cat) and bird*, and `zam z<team>l am z<Sam>n ul z<Lea>n zuburul` = *(team including Sam, except Lea) and bird*.
+- **Inside a [number range](numbers.md#ranges)** — **`ul`** after the low endpoint marks an exclusive **high** bound (`zal g<span>l z+3 ul z+5` = *[3, 5)*; SHARED continuum required). Details in numbers.md.
 
 ## Reviser chains (parallel on A)
 <a id="revision-chains-parallel-on-a"></a>
@@ -95,25 +95,25 @@ Same-vowel repeats are just the parallel rule with identical particles (`A am B 
 
 ## In-clause examples (schematic)
 
-- `z-animalsh am z-dogl` — *animals, including a dog among others* (open)
-- `z-animalsh am z-dogl am z-catl` — *animals, including a dog and a cat among others* (parallel multi-include)
-- `z-toolsh al z-hammerl` — *tools, including only a hammer* (closed — B exhausts the highlight)
-- `z-primary-colorsh an z-redl` — *the primary colors, including red* (named frame)
-- `z-teaml ul z-Samn` — *the team except only Sam* (closed sole exception)
-- `z-teaml um z-Samn` — *the team except Sam (and maybe others)* (open)
-- `z-teaml am z-Samn ul z-Lean` — *the team, including Sam, except only Lea* (mixed parallel)
-- `zal g-spanl z+3 ul z+5` — *[3, 5)* — [number range](numbers.md#ranges) exclusive high (SHARED continuum), not inventory *3 except 5*
-- `z-RGBn un z-bluel` — *RGB except blue* (named conventional set)
-- `z-RGBn un z-redl un z-bluel` — *RGB except red and except blue* (named; parallel multi-except)
-- `d-teal ol d-coffeel` — *coffee fully replaces tea* (closed)
-- `d-teal om d-coffeel` — *coffee as a replacement for tea* (open)
-- `d-teal on d-coffeel` — *the stock tea→coffee swap* (named/conventional)
-- `d-teal ol d-coffeel ol d-waterl` — *coffee and water fully replace tea* (parallel multi-instead)
-- `g-happyl el g-contentl` — *content* as the precise reading (closed)
-- `g-happyl em g-contentl` — *happy, or rather content* as a better wording (open)
-- `g-happyl en g-contentl` — conventional *happy → content* rephrase (named)
-- `v-runl om v-walkl` — *ran, with walk as a replacement* (VP slot, open)
-- `zam z-dogl ol z-catl z-birdl` — *(dog fully instead of cat) and bird* — closed revision inside the first conjunct
+- `z<anima>lsh am zogodol` — *animals, including a dog among others* (open)
+- `z<anima>lsh am zogodol am zagadal` — *animals, including a dog and a cat among others* (parallel multi-include)
+- `z<too>lsh al zamemal` — *tools, including only a hammer* (closed — B exhausts the highlight)
+- `z<primary-colo>rsh an zedejel` — *the primary colors, including red* (named frame)
+- `z<team>l ul z<Sam>n` — *the team except only Sam* (closed sole exception)
+- `z<team>l um z<Sam>n` — *the team except Sam (and maybe others)* (open)
+- `z<team>l am z<Sam>n ul z<Lea>n` — *the team, including Sam, except only Lea* (mixed parallel)
+- `zal g<span>l z+3 ul z+5` — *[3, 5)* — [number range](numbers.md#ranges) exclusive high (SHARED continuum), not inventory *3 except 5*
+- `z<RGB>n un zulebul` — *RGB except blue* (named conventional set)
+- `z<RGB>n un zedejel un zulebul` — *RGB except red and except blue* (named; parallel multi-except)
+- `dadedal ol dogevel` — *coffee fully replaces tea* (closed)
+- `dadedal om dogevel` — *coffee as a replacement for tea* (open)
+- `dadedal on dogevel` — *the stock tea→coffee swap* (named/conventional)
+- `dadedal ol dogevel ol d<water>l` — *coffee and water fully replace tea* (parallel multi-instead)
+- `guzem el g<content>l` — *content* as the precise reading (closed)
+- `guzem em g<content>l` — *happy, or rather content* as a better wording (open)
+- `guzem en g<content>l` — conventional *happy → content* rephrase (named)
+- `v<run>l om v<walk>l` — *ran, with walk as a replacement* (VP slot, open)
+- `zam zogodol ol zagadal zuburul` — *(dog fully instead of cat) and bird* — closed revision inside the first conjunct
 
 ---
 
@@ -143,7 +143,7 @@ When a prefix-less **`al` / `am` / `an` / `el` / `em` / `en` / `ol` / `om` / `on
 - `ol jal …` — *Instead, …* (this claim fully replaces prior)
 - `om jal …` — *instead* as a replacement claim
 - `ul jal …` — *Except, …* (sole exception to prior frame)
-- `jSamn al jal …` — vocative, then *Additionally,* then statement force
+- `j<Sam>n al jal …` — vocative, then *Additionally,* then statement force
 - *Starting with* — **`x#e-`** (not **`al`**) — [numbers.md](numbers.md#number-as-discourse-marker-by-marker)
 - *Finally* — **`x#e`** (not **`al`**) — [numbers.md](numbers.md#number-as-discourse-marker-by-marker)
 

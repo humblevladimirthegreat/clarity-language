@@ -18,12 +18,12 @@ Under **`/h/`** and **`/w/`**, the join series + ending is **not** a same-slot s
 
 | Pattern | Reading |
 |---------|---------|
-| `h-quicklyl h-quietlyl` | *quickly and quietly* — co-applying adverbs; **no** join |
-| `w-veryl w-slightlyl` on a `/ɡ/` | *very* and *slightly* (stacked adjuncts); **no** join |
-| `h-rainl hal` / `h-rainl hal` | *only when raining* — closed restrictor |
-| `h-rainl h-nightl ham` | *when raining and at night, among other possible cases* — open |
+| `h<quickly>l h<quietly>l` | *quickly and quietly* — co-applying adverbs; **no** join |
+| `w<very>l w<slightly>l` on a `/ɡ/` | *very* and *slightly* (stacked adjuncts); **no** join |
+| `harunal hal` / `harunal hal` | *only when raining* — closed restrictor |
+| `harunal hudunul ham` | *when raining and at night, among other possible cases* — open |
 
-Do **not** write `h-quicklyl h-quietlyl ham` for manner *and*; that reads as restrictor use (*in the cases “quickly” and “quietly”*), not co-manner.
+Do **not** write `h<quickly>l h<quietly>l ham` for manner *and*; that reads as restrictor use (*in the cases “quickly” and “quietly”*), not co-manner.
 
 ## Conjuncts
 
@@ -84,20 +84,20 @@ Nesting and SHARED still apply to **defined** forms only.
 ## Examples
 
 - `hal` → *never*; `ham` → *never that I can think of*; `hual` → *always* (also the habitual frame for characterizing generics — [universals, domains, and generics](coordination.md#universals-domains-generics); exceptionlessness warrant stacks separately — [universality](special-vocabulary.md#universality)); `huam` → *always from me*; `har` → *sometime*; `hor` → *anytime*; `hur` → *sometime else*
-- `h-rainl hal` / `h-rainl hal` → *only when raining*
-- `h-rainl h-nightl ham` → *when raining and at night (among other occasions)*
-- `h-weekdayl h-weekendl hol` → *either on a weekday or on a weekend (not both)*; `h-weekdayl h-weekendl hom` → *weekday or weekend (not both), or never*
-- `h-rainl h-snowl haol` → *when raining and/or when snowing*
-- `h-rainl hul` → *not when raining*; `h-rainl h-nightl hum` → *not when raining or at night, for one*
-- `h-rainl hual` → *always except when raining*
-- `h-rainl huol` → *anytime except when raining*
-- `h-emergencyl h-conveniencel hel` → *preferably in emergency ≻ for convenience*
-- `h-rainl h-snowl hael` → *as often when raining as when snowing* / *rain and snow equally often*
+- `harunal hal` / `harunal hal` → *only when raining*
+- `harunal hudunul ham` → *when raining and at night (among other occasions)*
+- `h<weekday>l h<weekend>l hol` → *either on a weekday or on a weekend (not both)*; `h<weekday>l h<weekend>l hom` → *weekday or weekend (not both), or never*
+- `harunal hozonol haol` → *when raining and/or when snowing*
+- `harunal hul` → *not when raining*; `harunal hudunul hum` → *not when raining or at night, for one*
+- `harunal hual` → *always except when raining*
+- `harunal huol` → *anytime except when raining*
+- `hamubam hogenum hel` → *preferably in emergency ≻ for convenience*
+- `harunal hozonol hael` → *as often when raining as when snowing* / *rain and snow equally often*
 - `hael` → *equally often* / *tied frequency frame* (bare)
-- `h-fixl h-workaroundl hoel` → *if (when) fix, else if workaround…*
-- `h-rainl h-snowl har` → *sometime among rain or snow*; under question, bare `har` → *When?* ([questions.md](questions.md#circumstance-when))
-- Complex conjunct: `h-atl b-homel hal` → *only at home*
-- `/w/` core: `wal` on `g-happyl` → *never* (for that property); `w-allegedl wal` → *only when alleged*; `wual` → *always* (property always applies); `war` → *sometime* (under some framing); juxtaposition `g-happyl w-veryl w-recentl` → *very* and *recent* (not a restrictor fence)
+- `h<fix>l h<workaround>l hoel` → *if (when) fix, else if workaround…*
+- `harunal hozonol har` → *sometime among rain or snow*; under question, bare `har` → *When?* ([questions.md](questions.md#circumstance-when))
+- Complex conjunct: `h<at>l bohuzem hal` → *only at home*
+- `/w/` core: `wal` on `guzem` → *never* (for that property); `w<alleged>l wal` → *only when alleged*; `wual` → *always* (property always applies); `war` → *sometime* (under some framing); juxtaposition `guzem w<very>l w<recent>l` → *very* and *recent* (not a restrictor fence)
 
 ## Constraints (extra)
 

@@ -37,7 +37,7 @@ Every join **-r** under **question** force is a **gap**. The answer is expected 
 
 Partial answers are fine in conversation; they do not redefine the grammar (still an incomplete multi-gap answer).
 
-**Single gap + real *something* elsewhere:** do **not** put a second join **-r** in the question. Use an ordinary indefinite (`-l` / `-m`) or leave the slot out (`zar` + `d-foodl` → *Who ate (a) food?*; `zar` + `dar` → *Who ate what?*).
+**Single gap + real *something* elsewhere:** do **not** put a second join **-r** in the question. Use an ordinary indefinite (`-l` / `-m`) or leave the slot out (`zar` + `d<food>l` → *Who ate (a) food?*; `zar` + `dar` → *Who ate what?*).
 
 Content-word anaphor **-r** is not a fill gap — only [join **-r**](coordination.md#unspecified-member-r-phrase) (`zar` / `var` / `xar` / …).
 
@@ -89,12 +89,12 @@ Bare utterance is the default answer (`jael`, `juel`, …). The same particle ma
 
 | Ask | Answer | Means |
 |-----|--------|--------|
-| `jol … vul v-runl` (*Didn’t run?*) | **`jael`** | denial matches → *true, they didn’t* |
+| `jol … vul v<run>l` (*Didn’t run?*) | **`jael`** | denial matches → *true, they didn’t* |
 | same | **`juel`** | denial is false → *false — they did run* |
-| `jol … zul z-Samn` (*Not Sam?*) | **`jael`** | *true, not Sam* |
+| `jol … zul z<Sam>n` (*Not Sam?*) | **`jael`** | *true, not Sam* |
 | same | **`juel`** | *false — it is Sam* |
 
-When clarity matters, restate: `jael jal vul v-runl` vs `juel jal v-runl`. Offer particles (**`jaol`** / **`juol`**, …) answer *take this?*, not truth-match — do not use them to confirm a negative claim.
+When clarity matters, restate: `jael jal vul v<run>l` vs `juel jal v<run>l`. Offer particles (**`jaol`** / **`juol`**, …) answer *take this?*, not truth-match — do not use them to confirm a negative claim.
 
 **Contrast:** body bare denial is plain **u** (`xul` / `vul` / `zul` — [negation](coordination.md#negation-u)), a clause/slot join, not an answer particle. Prefer **`juel`** / **`juol`** / **`jual`** (and soft twins) when answering a yes/no ask; prefer **`xul`** when denying inside or as a bare clausal frame. **`jul`** / **`jum`** remain **prohibition** force (*don’t…*), not polar *no* / *false*.
 
@@ -128,7 +128,7 @@ Under **jol** / **jom**, prefixed **-r** on **a** / **o** / **e** / **u** is the
 
 Unbound *who* / *what* / *where* = bare phrase **-r** in the queried slot (PoS = role). Unbound *what did they do?* / *what happened?* = bare **`var`** / **`xar`** (etc.). Unbound *when?* = bare **`har`** (etc.).
 
-VP / clause under question (schematic): `var` → *What (did they) do?*; `vur` → *What else (did they do)?*; `xar` → *What happened?*; `xur` → *What else happened?*; `v-runl vul` → *Didn’t run?* (yes/no denial, not fill).
+VP / clause under question (schematic): `var` → *What (did they) do?*; `vur` → *What else (did they do)?*; `xar` → *What happened?*; `xur` → *What else happened?*; `v<run>l vul` → *Didn’t run?* (yes/no denial, not fill).
 
 <a id="yes-no-focus-bare"></a>
 <a id="yes-no-unary-nullary"></a>
@@ -234,7 +234,7 @@ Under `/h/` / `/w/`, only the [defined core](restrictors.md) has circumstance re
 | **`hor`** / **`wor`** | *anytime* | *Anytime?* |
 | **`hur`** / **`wur`** | *sometime else* | *When else?* |
 
-With conjuncts: `h-rainl h-snowl har` → *sometime among rain or snow*; under question, bare `har` → *When?* Focus / multi parallel the phrase fill-ask pattern in the circumstance slot.
+With conjuncts: `harunal hozonol har` → *sometime among rain or snow*; under question, bare `har` → *When?* Focus / multi parallel the phrase fill-ask pattern in the circumstance slot.
 
 ---
 
