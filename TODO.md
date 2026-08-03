@@ -5,12 +5,9 @@
 Dictionary entries:
 -special pronouns
 -comparison benchmarks
--SAME identity root (noted in predication.md — closed complex `/ɡ/`; lexicon phonetics still open)
 -habits: triggered
--universality mood — done: special-vocabulary.md § Universality (`ewono` / `ululu` / `idido` / `afafa` / `ebebe`)
 - Sentence linkers: *therefore*, *however*, *meanwhile*, *next*, *but*
 -direct observation vs imagination tense (stacks with evidentiality / memory-record channels — special-vocabulary.md), consider sense words for observation
--belief evidentiality — done: special-vocabulary.md § Evidentiality (`uhunu` / `eroge` / `awa` / `eve` / `erare` / `ahe` / `orolo`; NONE / UNSPECIFIED TBD)
 -unconditional self acceptance
 -apology
 -percentage chances for true

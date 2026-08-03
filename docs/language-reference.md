@@ -89,7 +89,7 @@ Subject (/z/) \- the thing doing the action
 Direct Object (/d/) \- the thing on the receiving end of the action  
 Verb (/v/) \- the action being done. [Ability / incapability](special-vocabulary.md#ability) compounds onto the verb root when that is the denied activity (`v-singxun` = can’t sing, fixed); hostless *can’t* uses floating **`h-ABIL…`**.
 
-There is **no** general *to-be* verb. [Classification](predication.md#classification) (*Sam is a teacher*) and absolute property claims (*Sam is big*) are **zero-copula**: subject + predicative `/ɡ/`. [Identity](predication.md#identity) (*Clark is Superman*) uses closed complex **`g-SAME`** + `/b/`. Full rules: **[predication.md](predication.md)**.
+There is **no** general *to-be* verb. [Classification](predication.md#classification) (*Sam is a teacher*) and absolute property claims (*Sam is big*) are **zero-copula**: subject + predicative `/ɡ/`. [Identity](predication.md#identity) (*Clark is Superman*) uses closed complex **`SAME`** (**`oguno`** 🪙) + `/b/`. Full rules: **[predication.md](predication.md)**.
 
 ## Adjectives (`/ɡ/`)
 
@@ -245,7 +245,7 @@ Scalar comparison (ranked **`e` / `oe` / `ue`** *more / …-est*, **`ae`** *as �
 
 # Predication (classification and identity)
 
-Zero-copula **classification** / property ascription (`jal z-Samn g-teacherl`) and closed **`SAME`** **identity** (`jal z-Clarkn g-SAMEl b-Superman`): **[predication.md](predication.md)**. Not scalar equative `ae`; no general *to-be* `/v/`.
+Zero-copula **classification** / property ascription (`jal z-Samn g-teacherl`) and closed **`SAME`** **identity** (`jal z-Clarkn g-ogunol b-Superman` — **`oguno`** 🪙): **[predication.md](predication.md)**. Not scalar equative `ae`; no general *to-be* `/v/`.
 
 # Causation (necessary / sufficient)
 

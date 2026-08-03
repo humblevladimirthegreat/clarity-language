@@ -49,7 +49,7 @@ Named individuals, places, one-off objects, and other referents that are definit
 
 **Long titles** (book / film / album names, and other designations that would need many roots, mixed PoS, or an internal *and*) prefer a [**cite**](spans.md) span when used as title wording to pick out the work (often proper **`@`** / **-n**); *the title X* / *the proverb X* as a named unit uses [**mention**](spans.md) **-n** — do **not** force a single **`x`-compound**. Resume with a [span anaphor](spans.md#endings) (`daxar` / `doxar` / …), not content-word **-r** on a fake mega-root. Compact person/place compounds above are the default; span fences are the escape hatch when the compound would be clumsy.
 
-**Not this:** coordination of distinct people (`zam z-Maryn z-Smithn` = *Mary and Smith*); role ascription (`z-Samn g-teacherl`); co-reference (`g-SAMEl b-…`); raw foreign orthography still in donor spelling ([opaque](spans.md) spans — [loans](spans.md#loans)).
+**Not this:** coordination of distinct people (`zam z-Maryn z-Smithn` = *Mary and Smith*); role ascription (`z-Samn g-teacherl`); co-reference (`g-ogunol b-…`); raw foreign orthography still in donor spelling ([opaque](spans.md) spans — [loans](spans.md#loans)).
 
 Phonotactics for **`x`**: [phonology.md](phonology.md#phonotactics).
 

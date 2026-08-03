@@ -16,7 +16,7 @@ A clause may assert a property of a subject **without** a `/v/`: utterance force
 |-------|---------|
 | `jal z-HOST g-PROPl` | *HOST is PROP* (absolute property) |
 | `jal zel g-SCALEl z-A z-B` | comparative claim as clause content — [comparatives](comparatives.md) |
-| `jal z-HOST g-SAMEl b-OTHER` | *HOST is (identical to) OTHER* — [identity](#identity) |
+| `jal z-HOST g-ogunol b-OTHER` | *HOST is (identical to) OTHER* — [identity](#identity) |
 
 Same pattern under other NP slots when the predicative phrase fills `/d/` or `/b/`. When discourse needs the host alone as subject of another verb, keep that subject ordinary and put the predicative claim in another slot or sentence.
 
@@ -50,19 +50,25 @@ Values still stack on the classifying `/ɡ/` (`g-teacherl w-…xa…`) when the 
 
 ### Closed complex adjective **SAME**
 
-One closed complex adjective root **`SAME`** (lexicon phonetics TBD; schematic `g-SAME…`):
+One closed complex adjective root **`SAME`**:
+
+| Concept | Gloss | Lexicon root |
+|---------|--------|--------------|
+| **SAME** | *identical-to* / *same-as* (two expressions, one referent) | **`oguno`** 🪙 *coin* → *same* |
+
+**Conceptual metaphor:** a **coin** has two faces and one substance. Different labels / presentations are faces; co-reference is the one coin. Bias check: more appearances do not multiply the person. Ordinary content still available (`z-ogunol` *a coin*; `g-ogunol` as *token*-like when not in the identity frame). The special reading wins under closed predicative **`g-oguno…` + `/b/`**.
 
 ```
-g-SAME… b-OTHER
+g-oguno… b-OTHER
 ```
 
 | Piece | Role |
 |-------|------|
 | host NP | the expression treated as given / topic (`/z/`, or `/d/` / `/b/` when the identity phrase fills that slot) |
-| **`g-SAME`** | *identical-to* / *same-as* (closed relation) |
+| **`g-oguno`** | *identical-to* / *same-as* (closed relation) |
 | **`b-OTHER`** | the other label or description |
 
-**Endings on `SAME`:**
+**Endings on `SAME` (`oguno`):**
 
 | Ending | Reading |
 |--------|---------|
@@ -73,15 +79,15 @@ g-SAME… b-OTHER
 
 **Predicative:**
 
-| Clarity (schematic) | Reading |
-|---------------------|---------|
-| `jal z-Clarkn g-SAMEl b-Superman` | *Clark is (the same as) Superman* |
-| `jal z-Clarkn g-SAMEm b-Superman` | soft: *Clark is basically Superman* |
-| `jal z-Clarkn gul g-SAMEl b-Superman` | *Clark is not (identical to) Superman* |
-| `jal z-Clarkn g-SAMEl w-allegedl b-Superman` | *Clark is allegedly Superman* |
-| `z-personl g-SAMEl b-Superman` | NP-internal: *the person who is Superman* |
+| Clarity | Reading |
+|---------|---------|
+| `jal z-Clarkn g-ogunol b-Superman` | *Clark is (the same as) Superman* |
+| `jal z-Clarkn g-ogunom b-Superman` | soft: *Clark is basically Superman* |
+| `jal z-Clarkn gul g-ogunol b-Superman` | *Clark is not (identical to) Superman* |
+| `jal z-Clarkn g-ogunol w-allegedl b-Superman` | *Clark is allegedly Superman* |
+| `z-personl g-ogunol b-Superman` | NP-internal: *the person who is Superman* |
 
-`SAME`+`/b/` stay **contiguous**, like other complex adjectives (`g-ofl b-Samn`).
+`oguno`+`/b/` stay **contiguous**, like other complex adjectives (`g-ofl b-Samn`).
 
 ### Constraints
 
@@ -90,12 +96,11 @@ g-SAME… b-OTHER
 - **No** dual bare subjects (`z-A z-B`) meaning *A is B*.
 - **No** adjacent same-PoS **-n** words as a multipart proper name (`z-Maryn z-Smithn`); use an **`x`-compound** (`z-MaryxSmithn`) — [phrasal proper names](reference-suffix.md#phrasal-proper-names).
 - Do **not** overload [equative](comparatives.md#equatives) `ae` or set **`a`** for co-reference.
-- Plural **-sh** on `SAME` is unused for “they are the same group”; mark group reference on the host nouns, or ascribe identity pairwise.
+- Plural **-sh** on `SAME` (`oguno`) is unused for “they are the same group”; mark group reference on the host nouns, or ascribe identity pairwise.
 - Multi-alias lists (*A, B, and C are one*): prefer pairwise `SAME`, or separate sentences — do **not** invent a second SHARED reading under `ae` for co-reference.
 
 ### Out of scope (for now)
 
-- Lexicon phonetic form of **`SAME`**.
 - Dedicated *become* / *remain* / *turn into* (ordinary content verbs when needed).
 - Mathematical “=” as a numeral or `/x/` device (different job from discourse identity).
 
