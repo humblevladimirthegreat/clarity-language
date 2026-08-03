@@ -8,7 +8,7 @@ Join **mechanics** stay in **[coordination.md](coordination.md)**. Join-relation
 
 Causal “laws” should show their warrant (definition, pattern, desire, source, prior premise) via [evidentiality](special-vocabulary.md#evidentiality) and [universality](special-vocabulary.md#universality) — not via a stronger join.
 
-**No new arrow morpheme.** Condition type is carried by **which existing join / relation / restrictor** you use, plus ordinary host vs `/b/` / NEXT poles.
+**No new arrow morpheme.** Condition type is carried by **which existing join / relation / restrictor** you use, plus ordinary host vs `/b/` / **`odo`** poles.
 
 ## Why split the forms
 <a id="why-split"></a>
@@ -105,10 +105,10 @@ When the antecedent and/or consequent is a **full clause**, do **not** treat cla
 **Prefer subordination:**
 
 ```
-matrix …  h-IF / h-IFF / h-BECAUSE  b-NEXT   [dependent sentence]
+matrix …  h-IF / h-IFF / h-BECAUSE  b-odol   [dependent sentence]
 ```
 
-NEXT is matrix-final; the dependent is a full `/j/`… sentence — [dependent clauses](language-reference.md#dependent-clauses). Lexicon relation names *if* / *iff* / *because* / *although* / …; open-sufficient vs necessary nudges then live on **which relation** you choose and on restrictors (`hal`, …), not on stuffing a clause into phrase `aom`.
+**`odo`** ([next-clause pronoun](pronouns.md#special-pronouns)) is matrix-final; the dependent is a full `/j/`… sentence — [dependent clauses](language-reference.md#dependent-clauses). Lexicon relation names *if* / *iff* / *because* / *although* / …; open-sufficient vs necessary nudges then live on **which relation** you choose and on restrictors (`hal`, …), not on stuffing a clause into phrase `aom`.
 
 ### `IF` vs `IFF`
 <a id="if-vs-iff"></a>
@@ -125,11 +125,11 @@ Bare **`IF`** must not be read as *iff*. Do **not** rely on De Morgan rewrites (
 | Poles | Prefer |
 |-------|--------|
 | NP–NP | phrase `…aom` / `haon` / `huan` ([above](#np-poles)) |
-| Clause–clause conditional (one-way) | `/h/` **`IF`** + **NEXT** |
-| Clause–clause biconditional | `/h/` **`IFF`** + **NEXT** (marked) |
-| Clause–clause explanation | `/h/` *because* + **NEXT** |
+| Clause–clause conditional (one-way) | `/h/` **`IF`** + **`odo`** |
+| Clause–clause biconditional | `/h/` **`IFF`** + **`odo`** (marked) |
+| Clause–clause explanation | `/h/` *because* + **`odo`** |
 | Clause–clause inclusive bundle | `xaom` / `xaol` as **coordination only** |
-| Mixed NP + clause | NEXT under a relation, or span / nominalization in `/b/` / `/d/` — not bare `zaom` on a sentence |
+| Mixed NP + clause | **`odo`** under a relation, or span / nominalization in `/b/` / `/d/` — not bare `zaom` on a sentence |
 
 ## Preference vs law
 <a id="preference-vs-law"></a>
@@ -169,8 +169,8 @@ Particular episode (*this delay was caused by…*) vs standing law (*clouds for 
 | *the only cause* / *has to be* | marked `gon` / `hon` / `…ol` |
 | *should* as universal causal law | sufficient shape + **`xo`** (name the need) — not a stronger join |
 | *always* / *every* / *never* (exceptionlessness) | domain (`hual` / …) + [universality](special-vocabulary.md#universality) mood |
-| *because* / *if* + clause | `/h/` + `/b/` NEXT — not `xaom`-as-cause |
-| *if and only if* / *iff* | marked **`IFF`** + NEXT — not bare **`IF`** ([above](#if-vs-iff)) |
+| *because* / *if* + clause | `/h/` + `/b/` **`odo`** — not `xaom`-as-cause |
+| *if and only if* / *iff* | marked **`IFF`** + **`odo`** — not bare **`IF`** ([above](#if-vs-iff)) |
 | *therefore* (discourse) | `/x/` linker — not this page’s morphology |
 
 ## Constraints
@@ -178,7 +178,7 @@ Particular episode (*this delay was caused by…*) vs standing law (*clouds for 
 
 - **No** dedicated cause-arrow word or generalization verb whose subject is the justification.
 - Everyday causal claims default to **open sufficient**; necessity uses **exclusion / never**.
-- Clause conditionals use **NEXT** subordination; do not redefine **`xaom`** as entailment.
+- Clause conditionals use **`odo`** subordination; do not redefine **`xaom`** as entailment.
 - Bare **`IF`** is one-way only; biconditional force requires marked **`IFF`** ([above](#if-vs-iff)).
 - Do not overload ranked joins or `xan` as causation.
 - Exclusive joins for causation are **marked** unique-path claims only.
@@ -199,7 +199,7 @@ Particular episode (*this delay was caused by…*) vs standing law (*clouds for 
 - Inclusive focus **`…aom` / `…aol`**: [coordination.md § Focus](coordination.md#focus-phrase)
 - Join-relations **`haon` / `huan` / `hon`**: [special-vocabulary.md](special-vocabulary.md#join-relations)
 - Restrictors **`hal` / `hual`**: [restrictors.md](restrictors.md)
-- Dependent clauses / NEXT: [language-reference.md](language-reference.md#dependent-clauses)
+- Dependent clauses / **`odo`**: [language-reference.md](language-reference.md#dependent-clauses)
 - Values prescription / motive: [values.md](values.md)
 - Evidentiality (channels / *believe* / causal warrant): [special-vocabulary.md § Evidentiality](special-vocabulary.md#evidentiality)
 - Universality warrant: [special-vocabulary.md § Universality](special-vocabulary.md#universality)

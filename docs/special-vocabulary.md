@@ -641,7 +641,7 @@ Bare event noun stays the event: `z-attackl` / `z-attackr` = *an / that attack*,
 
 | Clarity | Gloss |
 |---------|--------|
-| `jal zar d-SPEAKER v-attackl` | *Someone attacked me* |
+| `jal zar d-ivon v-attackl` | *Someone attacked me* |
 | `jal z-axattackr v-fleel` | *The attacker fled* |
 | `z-axattackl` | *an attacker* (kind; no discourse event required) |
 | `d-uxattackr` | *the one attacked* (as object now) |

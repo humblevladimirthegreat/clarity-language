@@ -3,7 +3,6 @@
 -change values to compassion, rationality, empowerment, in that order
 
 Dictionary entries:
--special pronouns
 -comparison benchmarks
 -habits: triggered
 - Sentence linkers: *therefore*, *however*, *meanwhile*, *next*, *but*

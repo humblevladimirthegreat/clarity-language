@@ -202,7 +202,7 @@ Elsewhere, values are optional — do not tax every clause.
 
 | Clarity (schematic) | Reading |
 |---------------------|---------|
-| `z-neighborhoodl g-ofl b-SPEAKER w-competxal` | *my neighborhood* — serves competence; **physical** contact (felt place / scene) |
+| `z-neighborhoodl g-ofl b-ivon w-competxal` | *my neighborhood* — serves competence; **physical** contact (felt place / scene) |
 | `z-giftl w-relatxan` | gift serves relatedness; **social** channel (interpersonal gift) |
 | `… w-survivxam` | survival met via **mental** integration (encoding / baseline orientation) |
 | `… w-pleasxar` | pleasure met via **spiritual** step-back (big-picture savoring) |

@@ -144,7 +144,7 @@ Six fixed senses (lexicon phonetics TBD; schematic labels below). Always **-n** 
 | **Professional** | experts / role standard | `z-PROn` |
 | **Everyone** | universal reference class | `z-ALLn` |
 
-**Mine** is a closed **standard** root — do **not** substitute the bare speaker special pronoun for this benchmark (that compares to the person, not to “my baseline”). Ordinary named people stay ordinary **-n** names: `zuel g-SCALEl z-Samn z-Lean`.
+**Mine** is a closed **standard** root — do **not** substitute bare **`ivo`** ([speaker](pronouns.md#special-pronouns)) for this benchmark (that compares to the person, not to “my baseline”). Ordinary named people stay ordinary **-n** names: `zuel g-SCALEl z-Samn z-Lean`.
 
 **Everyone** vs focus reverse-superlative: `zuel g-SCALEl z-JUDGEDl` (focus) ≈ *the least … of all* in the discourse domain; `z-ALLn` as comparee **names** the universal class explicitly. Prefer the benchmark when the point is “against everyone as a standard,” not absolute bottom-of-scale.
 
@@ -152,13 +152,13 @@ Six fixed senses (lexicon phonetics TBD; schematic labels below). Always **-n** 
 
 | Clarity (schematic) | Reading |
 |---------------------|---------|
-| `zuel g-singl z-SPEAKER z-PROn` | *worse than Professional* at singing (less skilled than the pro standard) |
+| `zuel g-singl z-ivon z-PROn` | *worse than Professional* at singing (less skilled than the pro standard) |
 | `zuem g-clearl z-draftl z-AVGn` | soft: draft is somewhat less clear than Average |
-| `zuel g-kindl z-SPEAKER z-MINEn` | less kind than **my** baseline (Mine standard) |
-| `zuel g-skilll z-SPEAKER z-SOCn` | less skilled than Social (peers) |
-| `zuel g-skilll z-SPEAKER z-TYPn` | less skilled than Typical |
-| `zuel g-skilll z-SPEAKER z-ALLn` | less skilled than Everyone (universal class) |
-| `zuel g-singl z-SPEAKER z-Lean` | less skilled than **Lea** (ordinary person comparee — not a benchmark root) |
+| `zuel g-kindl z-ivon z-MINEn` | less kind than **my** baseline (Mine standard) |
+| `zuel g-skilll z-ivon z-SOCn` | less skilled than Social (peers) |
+| `zuel g-skilll z-ivon z-TYPn` | less skilled than Typical |
+| `zuel g-skilll z-ivon z-ALLn` | less skilled than Everyone (universal class) |
+| `zuel g-singl z-ivon z-Lean` | less skilled than **Lea** (ordinary person comparee — not a benchmark root) |
 
 ### Constraints
 

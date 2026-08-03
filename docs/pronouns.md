@@ -141,17 +141,38 @@ Each subsection is an **antecedent** PoS; the table rows are the **pronoun** PoS
 
 **Span anaphors** are closed forms in the [span-fence](spans.md) series (`{PoS}{TYPE}xa{r}`, EDGE **a**), not letter/full-root content pronouns. They resolve to the **most recent span of that TYPE** and treat it as a referent in the new slot (*he said **that**?!*) — they do **not** re-open a cite. Ordinary content **-r** still resumes words *inside* a non-opaque span when those words were introduced as ordinary lexicon.
 
-Special pronouns (speaker, listener, next clause) are **not** covered here — they are separate forms (below), not `-r` stems from ordinary antecedents. Content questions (*who* / *what* / *where* / *what did they do?* / *what happened?*) use [unspecified-member **-r** under **question** force](questions.md#fill-ask-r) (`zar` / `zor` / `zer` / `zur` / `var` / `vor` / `ver` / `vur` / `xar` / …), not a special pronoun.
+Special pronouns (**`ivo`** / **`ile`** / **`enu`** / **`odo`**) are **not** covered here — they are separate forms (below), not `-r` stems from ordinary antecedents. Content questions (*who* / *what* / *where* / *what did they do?* / *what happened?*) use [unspecified-member **-r** under **question** force](questions.md#fill-ask-r) (`zar` / `zor` / `zer` / `zur` / `var` / `vor` / `ver` / `vur` / `xar` / …), not a special pronoun.
 
 ## Special pronouns
+<a id="special-pronouns"></a>
 
-Forms TBD. Roles:
+Closed discourse-role roots (not letter/full-root **-r** from ordinary antecedents). They take the usual PoS prefix for the slot they fill.
 
-* **Speaker** (1st person)
-* **Listener** (2nd person)
-* **Generic single person** (a nonspecific individual — not impersonal *one*)
-* **Next clause** — placeholder for the material that **immediately follows** it (dependent clauses). **Matrix-final in its clause:** NEXT is the last word of that host (for `/h/`+`/b/` subordination, the contiguous unit ends with NEXT); the dependent follows with no intervening host words. **Chaining** allowed: a dependent may itself end in NEXT ([dependent clauses](language-reference.md#dependent-clauses)). Takes the PoS prefix of the slot it fills (`/d/` complement, `/b/` under `/h/` *because* / *if*, etc.). Form TBD.
+| Role | Root | Image → sense | Default ending | Example |
+|------|------|---------------|----------------|---------|
+| **Speaker** | **`ivo`** | 🎤 *mic* → *producer-role* | **-n** | `z-ivon` *I* (this utterance’s producer) |
+| **Listener** | **`ile`** | 🎧 *headphones* → *addressee-role* | **-n** | `d-ilen` *you* (this utterance’s addressee) |
+| **Generic person** | **`enu`** | 👤 *silhouette* → *a person* | **-n** | `z-enun` *someone* (a nonspecific individual) |
+| **Next clause** | **`odo`** | 🚪 *doorway* → *what follows* | **-l** | `b-odol` / `d-odol` — placeholder for the dependent that follows |
 
-**Group containing** a referent is not a separate special pronoun: append **-sh** where [plurality](plurality.md) allows it (see above).
+**Medium-neutral.** **Speaker** and **listener** name the **producer** and **addressee** of the current utterance — speech, writing, signing, or any other channel. They are not restricted to oral talk (*speaker* ≠ “person vocalizing”; *listener* ≠ “person hearing”). Same roots in a letter, chat, book, or recording.
 
-**Prefer names.** When a proper name is available, use it (`-n`) and/or its pronoun (`-r` from the name’s root) — including for self-address — rather than the speaker/listener special pronoun. Proper names are definite; the special pronouns are for the narrow cases where a name is unavailable or undesired. See [Proper name (`-n`)](reference-suffix.md#proper-name--n).
+**Endings.** Person roles default to **-n** (definite discourse roles, parallel to proper names). Soft **-m** is available when the role framing is hedged. **Next clause** defaults to **-l** (exact forward slot). Soft **-m** on **`odo`** hedges the subordination edge. Do **not** treat these roots as ordinary indefinite kinds (**-l** on person roles) or as content anaphors built from a prior lexicon stem.
+
+**Speaker / listener.** 1st / 2nd person only when a name is unavailable or undesired. They label **roles in this discourse**, not identity essence. Do **not** substitute bare **`ivo`** for the [Mine](comparatives.md#judgment-benchmarks) benchmark (`z-MINEn` = personal baseline, not “me as a person”). Do **not** reuse **`ile`** for [evidential](special-vocabulary.md#evidentiality) hearsay (**`erare`** stays *told*).
+
+**Generic person (`enu`).** A nonspecific **individual** — not English impersonal *one*, not [unspecified-member](coordination.md#unspecified-member-r-phrase) **`zar`** / **`dar`** (those are join gaps / indefinites of any kind), and not a 3rd-person anaphor (use content **-r** once someone is introduced).
+
+**Next clause (`odo`).** Placeholder for the material that **immediately follows** it ([dependent clauses](language-reference.md#dependent-clauses)). **Matrix-final in its clause:** **`odo`** is the last word of that host (for `/h/`+`/b/` subordination, the contiguous unit ends with **`odo`**); the dependent follows with no intervening host words. **Chaining** allowed: a dependent may itself end in **`odo`**. Takes the PoS prefix of the slot it fills (`/d/` complement, `/b/` under `/h/` *because* / *if*, etc.).
+
+| Clarity | Reading |
+|---------|---------|
+| `jal z-ivon v-gol` | *I go* |
+| `jal z-ivon v-writel d-ilen` | *I write you* (letter / message — same roots) |
+| `jal z-enun v-arrivedl` | *Someone (a person) arrived* |
+| `jal z-ivon v-toldl d-Samn d-odol jal z-Lean v-leftl` | *I told Sam that Lea left* |
+| `… h-becausel b-odol jal …` | *… because [dependent]* |
+
+**Group containing** a referent is not a separate special pronoun: append **-sh** where [plurality](plurality.md) allows it (`z-ivonsh` = the group containing the speaker; inclusive *we* = join of speaker + listener, not a fifth root).
+
+**Prefer names.** When a proper name is available, use it (`-n`) and/or its pronoun (`-r` from the name’s root) — including for self-address — rather than **`ivo`** / **`ile`**. Proper names are definite; the special pronouns are for the narrow cases where a name is unavailable or undesired. See [Proper name (`-n`)](reference-suffix.md#proper-name--n).

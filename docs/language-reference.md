@@ -208,18 +208,18 @@ Phrase-level *and* / *or* / *none of* / *and/or* / ranked / invert joins are **n
 ## Dependent Clauses
 <a id="dependent-clauses"></a>
 
-Dependent clauses use a [next-clause special pronoun](pronouns.md#special-pronouns) (form TBD): it stands in the main clause for “whatever follows immediately.”
+Dependent clauses use the [next-clause special pronoun](pronouns.md#special-pronouns) **`odo`**: it stands in the main clause for “whatever follows immediately.”
 
-**Placement (hard):** the next-clause pronoun is **matrix-final** in **its** clause, and the dependent material **immediately follows** it — no host-clause words after that NEXT, and no gap between NEXT and the dependent. Rearrange free word order so that holds. For adverbial subordination, the whole contiguous `/h/` + `/b/` NEXT unit is matrix-final (NEXT last). That final NEXT is the **subordinating edge**: everything after it (until the next peer boundary) is the dependent of **that** clause.
+**Placement (hard):** **`odo`** is **matrix-final** in **its** clause, and the dependent material **immediately follows** it — no host-clause words after that **`odo`**, and no gap between **`odo`** and the dependent. Rearrange free word order so that holds. For adverbial subordination, the whole contiguous `/h/` + `/b/` **`odo`** unit is matrix-final (**`odo`** last). That final **`odo`** is the **subordinating edge**: everything after it (until the next peer boundary) is the dependent of **that** clause.
 
-**Chaining:** allowed. Each clause may have **at most one** matrix-final NEXT. A dependent may itself end in NEXT and bind a further dependent (*I said NEXT₁ [that she left NEXT₂ [because it rained]]*). Depth is right-branching only — no second NEXT in the same clause, and no two dependents as siblings under one host. Host-clause `/h/` units stay in their own clause and do not float into a dependent.
+**Chaining:** allowed. Each clause may have **at most one** matrix-final **`odo`**. A dependent may itself end in **`odo`** and bind a further dependent (*I said `odo`₁ [that she left `odo`₂ [because it rained]]*). Depth is right-branching only — no second **`odo`** in the same clause, and no two dependents as siblings under one host. Host-clause `/h/` units stay in their own clause and do not float into a dependent.
 
-The dependent material is itself a **full sentence** and begins with its own `/j/` cluster (optional vocative(s) and interjection(s), then clause force). Force marks the dependent’s illocution (statement / embedded ask / directed action, …); the **boundary** is NEXT, not that `/j/`.
+The dependent material is itself a **full sentence** and begins with its own `/j/` cluster (optional vocative(s) and interjection(s), then clause force). Force marks the dependent’s illocution (statement / embedded ask / directed action, …); the **boundary** is **`odo`**, not that `/j/`.
 
-The next-clause pronoun takes whatever PoS prefix the slot needs:
+**`odo`** takes whatever PoS prefix the slot needs:
 
-* **Complement / content clause** — usually a core argument, matrix-final. Example: *I told him that…* → next-clause as direct object (`/d/`) of *tell* (last in the matrix); dependent sentence follows immediately.
-* **Adverbial relation** (*because*, *if*, *although*, *while*, *until*, …) — a complex adverb: `/h/` relation word + `/b/` next-clause pronoun, as a contiguous **matrix-final** unit. The lexicon entry names the relation; there is **no** separate `/x/` subordinator for these.
+* **Complement / content clause** — usually a core argument, matrix-final. Example: *I told him that…* → `d-odol` as direct object of *tell* (last in the matrix); dependent sentence follows immediately.
+* **Adverbial relation** (*because*, *if*, *although*, *while*, *until*, …) — a complex adverb: `/h/` relation word + `/b/` **`odo`**, as a contiguous **matrix-final** unit. The lexicon entry names the relation; there is **no** separate `/x/` subordinator for these.
 
 `/x/` is only for discourse glue that does **not** occupy a main-clause argument or adjunct slot (sentence linkers still under `/x/`, discourse-only [span](spans.md) opens with PoS `/x/`, span closes **`xuxul`** / **`xuxur`** / **`xuxun`** / **`xuxum`**, [numbered enumeration](numbers.md#number-as-discourse-marker-by-marker) including *Starting with* **`x#e-`**, *Finally* **`x#e`**). *Additionally* / *in other words* / claim *instead* / *except* are [discourse revisers](revisers.md#discourse-revisers) (prefix-less, before `/j/`), not `/x/`. Spans that fill a clause slot **open** with that slot’s PoS (`daxal`, `zoxal`, `hexal`, `duxal`, …). Phrase-level uses `/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/`; VP-level uses `/v/`; clause joins uses this vowel series under `/x/` ([coordination.md](coordination.md)). Do not encode *because* / *if*-style subordination as `/x/`.
 
@@ -249,7 +249,7 @@ Zero-copula **classification** / property ascription (`jal z-Samn g-teacherl`) a
 
 # Causation (necessary / sufficient)
 
-Causal / condition claims reuse existing joins — default open sufficient (**`…aom`** / **`haon`**); necessity via **`huan`/`guan`** / **`hal`**; clause poles via `/h/`+NEXT (not `xaom`-as-cause); preference-as-law stacks [values](values.md); no cause-arrow word: **[causation.md](causation.md)**.
+Causal / condition claims reuse existing joins — default open sufficient (**`…aom`** / **`haon`**); necessity via **`huan`/`guan`** / **`hal`**; clause poles via `/h/`+**`odo`** (not `xaom`-as-cause); preference-as-law stacks [values](values.md); no cause-arrow word: **[causation.md](causation.md)**.
 
 # Phrase-level, VP-level, and clause-level joins
 
