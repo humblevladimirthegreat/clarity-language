@@ -288,7 +288,7 @@ Span fences: **open** `{PoS}{TYPE}x{EDGE}{ENDING}` (writing = PoS + optional **`
 
 # Values
 
-Ordinary **`/h/`** / **`/w/`** content defaults to **values** (needs): **topic** (bare need) or compound **`need x {a\|e\|o\|u}`** = **met** / **motive** / **prescription** / **unmet**; endings = **contact channel** on **`xa`**, **preference standing** on **`xe`**, **prescription force** on **`xo`** (invite / endorse / commit / bound), or **changeability** on **`xu`**. **[values.md](values.md)**.
+Ordinary **`/h/`** / **`/w/`** content defaults to **values** (needs): closed roots **`obola`** (autonomy) / **`odolo`** (competence) / **`ogono`** (relatedness) / **`azedo`** (pleasure) / **`uzehu`** (survival) / **`egege`** (unspecified); **topic** (bare need) or compound **`need x {a\|e\|o\|u}`** = **met** / **motive** / **prescription** / **unmet**; endings = **contact channel** on **`xa`**, **preference standing** on **`xe`**, **prescription force** on **`xo`** (invite / endorse / commit / bound), or **changeability** on **`xu`**. **[values.md](values.md)**.
 
 # Special vocabulary
 

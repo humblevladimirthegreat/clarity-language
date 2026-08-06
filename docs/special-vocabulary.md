@@ -141,7 +141,7 @@ English attitude verbs smuggle COMMENT **or** affect. Split them:
 |---------|---------|
 | `… huhol …` | *I think …* — commentary overlay |
 | `… huhol … jom …` | *I wonder …* — commentary + soft ask |
-| `z<meeting>l w<compet>xul hogenal hagenal` | *I fear the meeting* — unmet competence; flood; room awash — **no** COMMENT |
+| `z<meeting>l wodoloxul hogenal hagenal` | *I fear the meeting* — unmet competence; flood; room awash — **no** COMMENT |
 | `… howarom …` | *I hope to …* (intention) — soft plan; **no** COMMENT |
 
 ### Do not overload other tables
@@ -184,7 +184,7 @@ Opaque emotion words (*anxious*, *resentful*, *proud*, …) smuggle **activation
 | Piece | Clarity |
 |-------|---------|
 | Situation / judged host | ordinary NP / clause content |
-| Need + met / unmet (+ changeability) | ordinary [value](values.md) word on that host (`w<compet>xul`, `w<compet>xam`, …) |
+| Need + met / unmet (+ changeability) | ordinary [value](values.md) word on that host (`wodoloxul`, `wodoloxam`, …) |
 | Activation (arousal) | closed mood roots **HIGH** / **MED** / **LOW** under `/h/` (optional `/w/` on a preceding `/ɡ/`) — water **tide** metaphors below |
 | Locus (where the charge is attributed) | closed mood roots **INTERNAL** / **EXTERNAL** / **CIRCUMSTANTIAL** under `/h/` (same `/w/` option) — water **vessel** metaphors below |
 
@@ -222,10 +222,10 @@ Parallel INTERNAL / CIRCUM cues: *flood bottled* / *flow held* / *still in the v
 
 | Clarity | Reading |
 |---------|---------|
-| `z<talk>l w<compet>xul hogenal hagenal` | *anxious about the talk* → talk costs competence (temporary); flood; room awash (circumstantial) |
-| `z<split>l w<relat>xum hogenal hoburol` | *resentful about the split* → unmet relatedness; flood poured onto them |
-| `zebunem w<compet>xam hogenal habobol` | *proud of the draft* → met competence (mental channel); flood bottled (internal) |
-| `z<note>l w<relat>xum hozonol hoburol` | soft leftover blame → unmet relatedness; stillness pooling at them |
+| `z<talk>l wodoloxul hogenal hagenal` | *anxious about the talk* → talk costs competence (temporary); flood; room awash (circumstantial) |
+| `z<split>l wogonoxum hogenal hoburol` | *resentful about the split* → unmet relatedness; flood poured onto them |
+| `zebunem wodoloxam hogenal habobol` | *proud of the draft* → met competence (mental channel); flood bottled (internal) |
+| `z<note>l wogonoxum hozonol hoburol` | soft leftover blame → unmet relatedness; stillness pooling at them |
 
 **Raw feeling:** contacting a sensation without judgment/explanation may leave it unlabeled. Full compose is required when an emotion word would have done evaluative work — same nudge as neutral praise / criticism. Do **not** add [COMMENT](#comment) on affect clauses.
 
@@ -555,10 +555,10 @@ Hosts *can't* / *cannot* / *unable* / *incapable* / *impossible* collapse to **`
 |-------|--------|
 | Can’t / can **this** activity or property | **host + `xu` / `xa`** (this page) |
 | Clause-wide / hostless capability | **`h<ABIL>xu…`** / **`w<ABIL>xu…`** |
-| Need unmet + changeability | need **`xu…`** — [values](values.md) (`competxun` ≠ “can’t competence”) |
+| Need unmet + changeability | need **`xu…`** — [values](values.md) (`hodoloxun` ≠ “can’t competence”) |
 | When / never / sometime the host applies | [restrictors](restrictors.md) (`hal`, `har`, …) |
 
-Stack when useful: e.g. can’t-sing plus unmet competence (`v<sing>xum` + `h<compet>xum`). Do **not** use bare **`hal`** (*never*) as a substitute for tagged incapability. Do **not** read need-root **`xu`** as ability.
+Stack when useful: e.g. can’t-sing plus unmet competence (`v<sing>xum` + `hodoloxum`). Do **not** use bare **`hal`** (*never*) as a substitute for tagged incapability. Do **not** read need-root **`xu`** as ability.
 
 ### Examples
 
@@ -569,7 +569,7 @@ Stack when useful: e.g. can’t-sing plus unmet competence (`v<sing>xum` + `h<co
 | `v<sing>xun` | can’t sing (fixed / impossible as far as you can tell) |
 | `v<sing>xur` | won’t sing (choice), not can’t |
 | `g<lead>xam` | can lead; capability open to change |
-| `v<sing>xum h<compet>xum` | can’t sing (modifiable) **and** unmet competence |
+| `v<sing>xum hodoloxum` | can’t sing (modifiable) **and** unmet competence |
 | `… h<ABIL>xul` | can’t **right now** (no single host / clause-wide) |
 | `h<ABIL>l` | ability (**topic** only) |
 

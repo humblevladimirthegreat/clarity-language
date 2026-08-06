@@ -26,17 +26,18 @@ Parser cue: restrictor joins are PoS + join-vowel + **-l** / **-m** / **-r** (`h
 | `/w/` | the **preceding `/ɡ/`** (property or possessive ascription) — stays on that adjective |
 
 ## Need inventory
+<a id="need-inventory"></a>
 
-Closed set of six needs. Lexicon roots TBD; senses are fixed:
+Closed set of six needs. Senses are fixed; lexicon roots are published ([lexicon-published.csv](../data/lexicon-published.csv)). Ordinary content PoS stays available (`zobolal` *a ballot box*; `vuzehul` *to defend*); under `/h/` / `/w/` value morphology, the need reading wins.
 
-| Sense | Gloss |
-|-------|--------|
-| autonomy | choice, agency, self-direction |
-| competence | efficacy, skill, getting things to work |
-| relatedness | connection, belonging, care |
-| pleasure | enjoyment, comfort, aesthetic payoff |
-| survival | safety, health, material sufficiency |
-| unspecified | need named without picking among the five |
+| Sense | Lexicon root | Metaphor | Gloss |
+|-------|--------------|----------|--------|
+| autonomy | **`obola`** | 🗳️ *ballot-box* → *choice* | choice, agency, self-direction |
+| competence | **`odolo`** | 🧰 *toolbox* → *readiness* | efficacy, skill, getting things to work |
+| relatedness | **`ogono`** | 🪢 *knot* → *bond* | connection, belonging, care |
+| pleasure | **`azedo`** | 🍓 *strawberry* → *sweetness* | enjoyment, comfort, aesthetic payoff |
+| survival | **`uzehu`** | 🛡️ *shield* → *defense* | safety, health, material sufficiency |
+| unspecified | **`egege`** | 🥚 *egg* → *potential* | need named without picking among the five |
 
 No ranked “better” need — unspecified is first-class (avoids shame).
 
@@ -47,15 +48,13 @@ No ranked “better” need — unspecified is first-class (avoids shame).
 ```
 
 1. **PoS** — `/h/` or `/w/`.
-2. **Need root** — one of the six senses (`V(CV)+`).
+2. **Need root** — one of the six published roots (`obola` / `odolo` / `ogono` / `azedo` / `uzehu` / `egege`).
 3. **Optional `x`-addition** — compound second half: vowel **`a` / `e` / `o` / `u`** (stance). Mid-word **`x`** is the ordinary [compound joiner](phonology.md#phonotactics).
 4. **Ending** — on value compounds with an `x`-addition, sense depends on the stance vowel ([contact channel](#value-contact) / [preference standing](#value-preference) / [prescription force](#value-force) / [changeability](#value-changeability)), not ordinary literal / metaphorical / name / pronoun.
 
-**Bare need** (no `x`-addition): **topic** only — names the need with no met / unmet / motive / prescription claim. Ending on a bare need keeps ordinary [reference-suffix](reference-suffix.md) senses for now.
+**Bare need** (no `x`-addition): **topic** only — names the need with no met / unmet / motive / prescription claim. Ending on a bare need keeps ordinary [reference-suffix](reference-suffix.md) senses for now (`hazedol` = pleasure topic).
 
-**Compound need** (`…x{a|e|o|u}…`): met, motive, prescription, or unmet ascriptions.
-
-Schematic examples use English-shaped need roots (`compet`, `relat`, …) until the lexicon assigns Clarity roots.
+**Compound need** (`…x{a|e|o|u}…`): met, motive, prescription, or unmet ascriptions (`wodoloxal` = met competence, physical channel).
 
 ## Stances (`x` + vowel)
 <a id="value-stake"></a>
@@ -155,44 +154,44 @@ On **`xu`** compounds only, **-l / -m / -n / -r** encode temporariness / reversi
 
 **Can't vs won't:** **-n** (irreversible) vs **-r** (won't-now). Do not collapse them. Always pick an ending on **`xu`**; unknown → **-m**.
 
-## Combined matrices (schematic)
+## Combined matrices
 
-Need root shown as `compet` / `relat` only for readability.
+Competence (`odolo`) and relatedness (`ogono`) shown for readability; same endings on every need root.
 
 ### Met — contact channel
 
 | | **-l** physical | **-m** mental | **-n** social | **-r** spiritual |
 |--|-----------------|---------------|---------------|------------------|
-| **xa** met | `w<compet>xal` | `w<compet>xam` | `w<compet>xan` | `w<compet>xar` |
+| **xa** met | `wodoloxal` | `wodoloxam` | `wodoloxan` | `wodoloxar` |
 
 ### Motive — preference standing
 
 | | **-l** circumstantial | **-m** internal | **-n** habitual | **-r** protective |
 |--|----------------------|-----------------|-----------------|-------------------|
-| **xe** motive | `h<relat>xel` | `h<relat>xem` | `h<relat>xen` | `h<relat>xer` |
+| **xe** motive | `hogonoxel` | `hogonoxem` | `hogonoxen` | `hogonoxer` |
 
 ### Prescription — force
 
 | | **-l** invite | **-m** endorse | **-n** commit | **-r** bound |
 |--|---------------|----------------|---------------|--------------|
-| **xo** ought | `h<relat>xol` | `h<relat>xom` | `h<relat>xon` | `h<relat>xor` |
+| **xo** ought | `hogonoxol` | `hogonoxom` | `hogonoxon` | `hogonoxor` |
 
 ### Unmet — changeability
 
 | | **-l** temporary | **-m** modifiable | **-n** irreversible | **-r** won't-now |
 |--|------------------|-------------------|---------------------|------------------|
-| **xu** unmet | `h<relat>xul` | `h<relat>xum` | `h<relat>xun` | `h<relat>xur` |
+| **xu** unmet | `hogonoxul` | `hogonoxum` | `hogonoxun` | `hogonoxur` |
 
 ## Attachment sites (where the nudge fires)
 
 | Site | Typical shape | English cue |
 |------|---------------|-------------|
-| Speaker-possessive / gratitude | host + `/ɡ/` possessive + `w<NEED>xa…` + channel ending | *my … (for competence)* |
-| Valence judgment (praise) | neutral host + `w-` / `h-` **`xa`** + channel | *gift (serves relatedness)* |
-| Valence judgment (criticism) | neutral host + **`xu`** + changeability ending | *meeting (costs autonomy, temporary)* |
-| Prescription / normative | clause + `h<NEED>xo…` + force ending | *should (for relatedness)* |
-| Motive (ex-*need to* / *have to*) | clause + `h<NEED>xe…` + preference standing | *I am … (for relatedness)* |
-| Topic-only | bare `h<NEED>…` / `w<NEED>…` | need named without claim |
+| Speaker-possessive / gratitude | host + `/ɡ/` possessive + `w…xa…` + channel ending | *my … (for competence)* — `wodoloxa…` |
+| Valence judgment (praise) | neutral host + `w-` / `h-` **`xa`** + channel | *gift (serves relatedness)* — `wogonoxa…` |
+| Valence judgment (criticism) | neutral host + **`xu`** + changeability ending | *meeting (costs autonomy, temporary)* — `woboloxu…` |
+| Prescription / normative | clause + `h…xo…` + force ending | *should (for relatedness)* — `hogonoxo…` |
+| Motive (ex-*need to* / *have to*) | clause + `h…xe…` + preference standing | *I am … (for relatedness)* — `hogonoxe…` |
+| Topic-only | bare `h…` / `w…` need word | need named without claim — `hazedol` |
 
 Prefer **`xa`** for gratitude / praise; **`xu`** for unmet; **`xo`** for *should*; **`xe`** for actual reason-for-acting; **-m** on **`xu`** / **`xe`** / **`xo`** when that table’s dimension is unclear. Bare need words are fine for topic-only mention.
 
@@ -200,24 +199,25 @@ Elsewhere, values are optional — do not tax every clause.
 
 ## Examples
 
-| Clarity (schematic) | Reading |
-|---------------------|---------|
-| `z<neighborhood>l g<of>l bivon w<compet>xal` | *my neighborhood* — serves competence; **physical** contact (felt place / scene) |
-| `z<gift>l w<relat>xan` | gift serves relatedness; **social** channel (interpersonal gift) |
-| `… w<surviv>xam` | survival met via **mental** integration (encoding / baseline orientation) |
-| `… w<pleas>xar` | pleasure met via **spiritual** step-back (big-picture savoring) |
-| `z<meeting>l w<auton>xul` | meeting costs autonomy **right now** (temporary) |
-| `… h<relat>xel` | motive relatedness; **circumstantial** |
-| `… h<relat>xem` | motive relatedness; **internal** |
-| `… h<relat>xen` | motive relatedness; **habitual** |
-| `… h<relat>xer` | motive relatedness; **protective** (guard against unmet) |
-| `… h<relat>xol` | should serve/protect relatedness; **invite** |
-| `… h<relat>xom` | should serve/protect relatedness; **endorse** |
-| `… h<relat>xon` | should serve/protect relatedness; **commit** (promise / role / agreement) |
-| `… h<relat>xor` | should serve/protect relatedness; **bound** (in-frame boundary) |
-| `… h<relat>xun` | costs relatedness; **irreversible** |
-| `… h<relat>xur` | costs relatedness; **won't address that now** |
-| `h<pleas>l` | pleasure (**topic** only; no met/unmet/motive/ought) |
+| Clarity | Reading |
+|---------|---------|
+| `z<neighborhood>l g<of>l bivon wodoloxal` | *my neighborhood* — serves competence; **physical** contact (felt place / scene) |
+| `z<gift>l wogonoxan` | gift serves relatedness; **social** channel (interpersonal gift) |
+| `… wuzuhuxam` | survival met via **mental** integration (encoding / baseline orientation) |
+| `… wazedoxar` | pleasure met via **spiritual** step-back (big-picture savoring) |
+| `z<meeting>l woboloxul` | meeting costs autonomy **right now** (temporary) |
+| `… hogonoxel` | motive relatedness; **circumstantial** |
+| `… hogonoxem` | motive relatedness; **internal** |
+| `… hogonoxen` | motive relatedness; **habitual** |
+| `… hogonoxer` | motive relatedness; **protective** (guard against unmet) |
+| `… hogonoxol` | should serve/protect relatedness; **invite** |
+| `… hogonoxom` | should serve/protect relatedness; **endorse** |
+| `… hogonoxon` | should serve/protect relatedness; **commit** (promise / role / agreement) |
+| `… hogonoxor` | should serve/protect relatedness; **bound** (in-frame boundary) |
+| `… hogonoxun` | costs relatedness; **irreversible** |
+| `… hogonoxur` | costs relatedness; **won't address that now** |
+| `hazedol` | pleasure (**topic** only; no met/unmet/motive/ought) |
+| `hegegel` | unspecified need (**topic** only) |
 
 ## Out of scope (for now)
 
@@ -226,7 +226,7 @@ Elsewhere, values are optional — do not tax every clause.
 - **Whose-need** / **care direction** (thrive / guard) on prescription — optional later dimensions; force is the primary `xo` split.
 - **Listener / third-person possessives** — no forced value (reminder is for self-gratitude / self-ought / self-judgment).
 
-**Incapability** compounds onto the **activity/property host** (`v<sing>xun`) or fallback **`ABIL`** — [special-vocabulary.md](special-vocabulary.md#incapability) — not onto need compounds (`competxun` remains unmet competence).
+**Incapability** compounds onto the **activity/property host** (`v<sing>xun`) or fallback **`ABIL`** — [special-vocabulary.md](special-vocabulary.md#incapability) — not onto need compounds (`hodoloxun` remains unmet competence).
 
 ## Constraints
 
@@ -237,4 +237,4 @@ Elsewhere, values are optional — do not tax every clause.
 - Do **not** treat **`xo`** as exclusive need-pick or contact/savoring; do **not** treat **`xe`** as *should*.
 - Value `x`-second halves are the bare vowels **`a` / `e` / `o` / `u`** inside a compound — not prefix-less reviser words (`al`, `ul`, …) and not restrictor joins (`hal`, …).
 - Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)).
-- Multiple values = multiple `/h/` or `/w/` words (`h<compet>xal h<relat>xan`), not stacked `x`-additions on one need.
+- Multiple values = multiple `/h/` or `/w/` words (`hodoloxal hogonoxan`), not stacked `x`-additions on one need.

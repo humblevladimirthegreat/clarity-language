@@ -144,7 +144,7 @@ A common REBT-shaped claim: *hard work should earn a promotion* — the “rule�
 
 Do **not** upgrade `aom` → `ol` / `gon` just because you feel strongly. Strength of feeling is values force / evidentiality, not exclusive join.
 
-**Schematic:** `… haon bazem` on promotion + `h<compet>xol` (or soft invite force) ≈ *effort is among routes that ought to count for competence payoff* — not *effort is the sole causal law of promotion*.
+**Schematic:** `… haon bazem` on promotion + `hodoloxol` (or soft invite force) ≈ *effort is among routes that ought to count for competence payoff* — not *effort is the sole causal law of promotion*.
 
 ## Stacks (evidentiality and habit)
 <a id="stacks"></a>
