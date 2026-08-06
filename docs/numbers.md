@@ -15,7 +15,7 @@ A whole numeric value is **one word**, even when it contains several digit group
 3. **Zero or more digit groups** — each group is an optional exponent and optional mantissa digits (at least one of the two **when the group is present**, except a [digitless exponent](#digitless-exponents) group is **`ba`/`bu` alone**). Digits compound with **no** **x** separator. There is **no per-group polarity**; sign (when it applies) is once for the whole word — see [Sign](#sign). **No groups** = [unspecified magnitude](#zero-digit-groups) of that marker identity (or [digitless **-r** anaphora](#number-endings)).
 4. **Ending** — `-l` / `-m` / `-n` / `-r` with [number-specific meanings](#number-endings) (not ordinary [reference suffix](reference-suffix.md) senses). Number words **do not** take plural **-sh** — group reference stays on ordinary nouns (see [plurality.md](plurality.md)).
 
-**Writing** uses a [preferred shorthand](#writing-preferred-shorthand) for the marker and body (`g+3`, not *grarel*; digitless `g+`, not *gral*; end-relative `g#-2`, not *greudul*); speech is always the full CV form.
+**Writing** for free number words uses a [preferred shorthand](#writing-preferred-shorthand) for the marker and body (`g+3`, not *grarel*; digitless `g+`, not *gral*; end-relative `g#-2`, not *greudul`); speech is always the full CV form. [Numeric derivation](special-vocabulary.md#numeric-derivation) prefers the spelled CV form in running text — see [Style](#writing-style-numeric-vs-spelled).
 
 **Lexicon rule:** Any stem that matches this grammar is a number, never an ordinary root. Dictionary generation must reject colliding roots. A number stem **after mid-word `x`** on a content host is [numeric derivation](special-vocabulary.md#numeric-derivation), not a free number word (and takes the host’s ordinary reference ending, not [number endings](#number-endings)).
 
@@ -535,14 +535,14 @@ Soft **-m** hedges (*near-disqualified*, …). **`x#0e`** and other ordinal zero
 
 ##### Free vs derived
 
-| Free | Derived | Contrast |
+| Free | Derived (spelled) | Contrast |
 |------|---------|----------|
-| **`v+0el`** | **`v<score>x+0el`** | hostless *annihilate* vs *annihilate-the-score* (kind) |
-| **`g+0e`** | **`z<debt>x+0el`** | absolute-zero amount vs total-null debt-kind |
-| **`g+0e-1`** | **`z<debt>x+0e-1l`** | deci-null amount vs kind nullified at OoM −1 |
-| **`g-0e-1`** | **`z<debt>x-0e-1l`** | deci-residue amount vs kind residue at OoM −1 |
-| **`g#0e`** | **`z<contestant>x#0el`** | disqualified place vs disqualified-*kind* |
-| **`v+0l`** | **`v<score>x+0l`** | ordinary zeroing / null-reset — weaker than **`…+0e`** |
+| **`v+0el`** | **`v<score>xrazobal`** | hostless *annihilate* vs *annihilate-the-score* (kind) |
+| **`g+0e`** | **`z<debt>xrazobal`** | absolute-zero amount vs total-null debt-kind |
+| **`g+0e-1`** | **`z<debt>xrabuwojazol`** | deci-null amount vs kind nullified at OoM −1 |
+| **`g-0e-1`** | **`z<debt>xrubuwojazol`** | deci-residue amount vs kind residue at OoM −1 |
+| **`g#0e`** | **`z<contestant>xrezobal`** | disqualified place vs disqualified-*kind* |
+| **`v+0l`** | **`v<score>xrazol`** | ordinary zeroing / null-reset — weaker than **`…+0e`** |
 
 Free **`g+e0`** / **`g+Ne0`** are bare OoM / scale assert, **not** derivation twins here — **`ROOTx+e0`** / **`ROOTx+0e0`** stay **TBD**.
 
@@ -773,11 +773,33 @@ Endings: **-l** exact reading; **-m** fuzzy (*around 15:30*); **-n** conventiona
 ## Writing (preferred shorthand)
 <a id="writing-preferred-shorthand"></a>
 
-Speech always uses the full CV grammar above (marker as `r`+V; ending as **-l** / **-m** / **-n** / **-r**). **Writing prefers shorthand** for the ending, marker, and body.
+Speech always uses the full CV grammar above (marker as `r`+V; ending as **-l** / **-m** / **-n** / **-r**). For **free number words**, writing prefers shorthand for the ending, marker, and body. Which surface to use when (shorthand vs spelled CV) is [style](#writing-style-numeric-vs-spelled), not grammar — parsers accept both.
 
 ```
 [PoS] + [~|@|=]? + [marker] + [body?]
 ```
+
+### Style (numeric vs spelled)
+<a id="writing-style-numeric-vs-spelled"></a>
+<a id="writing-style"></a>
+
+Both writings name the **same word**. Choose the surface by **job**: quantity/math vs ordinary lexicon.
+
+| Job | Prefer | Why |
+|-----|--------|-----|
+| Free number in a clause slot | **shorthand** | `g+3`, `x#2`, `d_…` — numeral as numeral |
+| [Numeric derivation](special-vocabulary.md#numeric-derivation) / kind morph | **spelled CV** | `zolexrabal`, not `zolex+el` |
+| Metalanguage / inventory tables | **shorthand** | patterns like `ROOTx+e` stay scannable |
+
+**Prefer shorthand** for counts, measures, ranks, ranges, thresholds (`zagadalsh g+3`, `z+3 z+5 zel`); digit-strings / times / codes (`d_555,123,4567`, `h_15:30`); scientific / engineering register (`g+5.2e-4`, `g+0e-1`, `g+e3`); compact agenda markers (`x#1`, `x#3e2`); and docs that teach the numeral system.
+
+**Prefer spelled CV** for anything after mid-word **`x`** on a content root (lexicon citation forms always spelled); lexicalized morphs treated as affixes (essence / void / quasi / poly / digit morphs / zero×exp on ROOT); literary, sung, or long prose where `+` `#` `_` and second-slot `~`/`@`/`=` break word rhythm; and pronunciation teaching.
+
+**Avoid** the hybrid that derivation invites: shorthand body + host letter ending (`…x+el`). Free numbers use second-slot marks or trailing letters consistently; derived words use ordinary reference endings on the host with a fully spelled `NUM`.
+
+**Gray zone (either OK):** discourse *Finally* / *Starting with* (`x#e` / `x#e-` vs `xrebal` / `xrebual` — lean spelled in prose, shorthand in outlines); digitless plural (`g+` / `gral`); cheers (`j+e` / `jrabal`); soft free specials when hedging a discourse particle rather than a quantity.
+
+**House rules:** (1) free numeral → shorthand by default; (2) content-root derivation → spelled CV by default; (3) shorthand in derivation tables is schematic only; (4) never put number second-slot marks (`~`/`@`/`=`) on derived `NUM`; (5) parsers accept both.
 
 ### Ending marks (second slot, after PoS)
 
@@ -790,7 +812,7 @@ Same glyphs and jobs as [span-fence marks](spans.md#writing) (**`~`** soft / **`
 | **`@`** | **-n** | conventional / proper | `g@#2`, `g@+1e`, `x@#e` |
 | **`=`** | **-r** | anaphoric resume | `g=+`, `d=_`, `x=#2`, `g=#1e` |
 
-Order when both **`@`** and **`~`** apply: **`@` then `~`**. **Do not write** the stack with both glyphs — spell **`@`** only, with uncertain tonality (same hedge habit as spans). **`=`** does **not** combine with **`~`** / **`@`**. Full phonetic spelling with a trailing ending letter (e.g. *grarel*, *gram*) is fine as a pronunciation gloss, not preferred in running text.
+Order when both **`@`** and **`~`** apply: **`@` then `~`**. **Do not write** the stack with both glyphs — spell **`@`** only, with uncertain tonality (same hedge habit as spans). **`=`** does **not** combine with **`~`** / **`@`**. Full phonetic spelling with a trailing ending letter (e.g. *grarel*, *gram*) is the [style default](#writing-style-numeric-vs-spelled) for [numeric derivation](special-vocabulary.md#numeric-derivation); on free number words it is fine as a pronunciation gloss, not preferred in running text.
 
 ### Marker (not written as `r`+V)
 
@@ -1080,7 +1102,7 @@ Examples: `z+3 z+5 zal g<age>l` → *between ages 3 and 5*; `z<kid>l g+3 g+5 gal
 
 ## Numeric derivation (compounds)
 
-PoS-less number stems may follow mid-word **`x`** on an ordinary content root (`ROOTx+e`, `ROOTx_12`, `ROOTx_e`, `ROOTx+1e`, …). That family is **derivation** (essence, coded subtype, [infinite labels](special-vocabulary.md#infinite-labels), hyperbole-ROOT, …), documented in **[special-vocabulary.md § Numeric derivation](special-vocabulary.md#numeric-derivation)**; parser cue in **[x-compounds.md](x-compounds.md)**. Free number words on this page stay clause-slot counts, ranks, labels, overlays, and discourse items.
+PoS-less number stems may follow mid-word **`x`** on an ordinary content root (`ROOTx+e`, `ROOTx_12`, `ROOTx_e`, `ROOTx+1e`, …). That family is **derivation** (essence, coded subtype, [infinite labels](special-vocabulary.md#infinite-labels), hyperbole-ROOT, …), documented in **[special-vocabulary.md § Numeric derivation](special-vocabulary.md#numeric-derivation)**; parser cue in **[x-compounds.md](x-compounds.md)**. Running-text examples prefer spelled CV (`zolexrabal`) — [writing style](#writing-style-numeric-vs-spelled). Free number words on this page stay clause-slot counts, ranks, labels, overlays, and discourse items.
 
 ## Stress (pronunciation guide)
 

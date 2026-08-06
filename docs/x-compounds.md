@@ -19,7 +19,7 @@ After the PoS prefix, look at what sits **left** and **right** of the first mid-
 | **`ROOT… x NUM…`** + ending | **[Numeric derivation](special-vocabulary.md#numeric-derivation)** | Right half matches [number](numbers.md) stem grammar **without** its own ending (marker **`+`/`-`/`#`/`_`**, digitless exp including label **`_e`/`_e-`**, hyperbole, [zero × exp](numbers.md#zero-exponent) **`+0e`/`±0e-1`/`#0e`**, label digits, scalar digit morph **`+N`/`-N`**, or ordinal digit morph **`#N`** — not free end-relative **`#-`** / generation / **`Ne0`** assert morphs; **`ROOTx+e0`/`+0e0`** TBD) |
 | **`ROOT… x ROOT…`** + ending | **Ordinary compound** | Lexicon sense-compounds; [phrasal proper names](reference-suffix.md#phrasal-proper-names) (`z<Mary Smith>n`) |
 
-No open content root is a **bare single vowel**, so a single vowel **left** of `x` is never an ordinary host root. Spans are the only family with a **single vowel right** of `x` (EDGE); role compounds put a full **`V(CV)+`** root there. Numeric **`NUM`** is never a content root — it is a PoS-less number stem (see [numeric derivation](special-vocabulary.md#numeric-derivation)).
+No open content root is a **bare single vowel**, so a single vowel **left** of `x` is never an ordinary host root. Spans are the only family with a **single vowel right** of `x` (EDGE); role compounds put a full **`V(CV)+`** root there. Numeric **`NUM`** is never a content root — it is a PoS-less number stem (see [numeric derivation](special-vocabulary.md#numeric-derivation)). Running-text / citation examples prefer spelled CV (`…xraba…`); inventory tables may keep shorthand — [writing style](numbers.md#writing-style-numeric-vs-spelled).
 
 ### Decision order (practical)
 

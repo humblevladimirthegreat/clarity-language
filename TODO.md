@@ -1,5 +1,4 @@
 -punctuation
--consider numeric derivation uses phonetic spelling
 -change values to compassion, rationality, empowerment, in that order
 
 ## TBD number / derivation forms (readings not assigned)
