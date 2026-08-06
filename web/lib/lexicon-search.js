@@ -1856,7 +1856,10 @@ function parseCsvLine(line) {
 }
 
 // src/lexicon-search.ts
+var PUBLISHED_HEADERS = ["emoji", "literal", "clarity", "metaphorical", "mnemonic"];
+var OVERLAY_HEADERS = ["sense_form", "pos", "emoji", "definition", "mnemonic"];
 var SEARCH_FIELDS = ["literal", "literalTokens", "clarity", "metaphorical", "mnemonic"];
+var OVERLAY_SEARCH_FIELDS = ["senseForm", "writtenForm", "root", "pos", "definition", "mnemonic"];
 var FIELD_BOOSTS = {
   literal: 2,
   metaphorical: 2,
@@ -1864,8 +1867,21 @@ var FIELD_BOOSTS = {
   literalTokens: 1.5,
   mnemonic: 1
 };
+var OVERLAY_FIELD_BOOSTS = {
+  senseForm: 2,
+  writtenForm: 2.5,
+  root: 1.5,
+  definition: 2,
+  mnemonic: 1,
+  pos: 1
+};
 var SEARCH_OPTIONS = {
   boost: FIELD_BOOSTS,
+  fuzzy: 0.2,
+  prefix: true
+};
+var OVERLAY_SEARCH_OPTIONS = {
+  boost: OVERLAY_FIELD_BOOSTS,
   fuzzy: 0.2,
   prefix: true
 };
@@ -1876,12 +1892,16 @@ var MATCH_FIELD_LABELS = {
   clarity: "clarity",
   metaphorical: "metaphorical",
   mnemonic: "mnemonic",
-  emoji: "emoji"
+  emoji: "emoji",
+  senseForm: "sense_form",
+  writtenForm: "sense_form",
+  root: "sense_form",
+  pos: "pos",
+  definition: "definition"
 };
 function parsePublishedCsv(text) {
   const { headers, rows } = parseCsv(text);
-  const expected = ["emoji", "literal", "clarity", "metaphorical", "mnemonic"];
-  if (headers.join(",") !== expected.join(",")) {
+  if (headers.join(",") !== PUBLISHED_HEADERS.join(",")) {
     throw new Error(`Unexpected CSV header: ${headers.join(",")}`);
   }
   return rows.map((row) => ({
@@ -1892,12 +1912,93 @@ function parsePublishedCsv(text) {
     mnemonic: row.mnemonic ?? ""
   }));
 }
+function parseOverlayCsv(text) {
+  const { headers, rows } = parseCsv(text);
+  if (headers.join(",") !== OVERLAY_HEADERS.join(",")) {
+    throw new Error(`Unexpected overlay CSV header: ${headers.join(",")}`);
+  }
+  const seen = /* @__PURE__ */ new Set();
+  const overlays = [];
+  for (const row of rows) {
+    const senseForm = (row.sense_form ?? "").trim();
+    const pos = (row.pos ?? "").trim();
+    if (!senseForm || !pos) continue;
+    const key = `${senseForm}\0${pos}`;
+    if (seen.has(key)) {
+      throw new Error(`Duplicate overlay key: ${senseForm} + ${pos}`);
+    }
+    seen.add(key);
+    overlays.push({
+      senseForm,
+      pos,
+      emoji: (row.emoji ?? "").trim(),
+      definition: (row.definition ?? "").trim(),
+      mnemonic: (row.mnemonic ?? "").trim()
+    });
+  }
+  return overlays;
+}
+function senseFormRoot(senseForm) {
+  const match = senseForm.match(/^(.+)([lmnr])$/);
+  return match ? match[1] : senseForm;
+}
+function senseFormEnding(senseForm) {
+  const match = senseForm.match(/([lmnr])$/);
+  return match ? match[1] : null;
+}
+function overlayWrittenForm(overlay) {
+  return `${overlay.pos}${overlay.senseForm}`;
+}
 function tokenizeLiteral(literal) {
   const base = literal.trim().toLowerCase();
   if (!base) return "";
   const parts = base.split("-").filter(Boolean);
   if (parts.length <= 1) return base;
   return `${parts.join(" ")} ${base}`;
+}
+function attachOverlays(rows, overlays) {
+  const byEmoji = /* @__PURE__ */ new Map();
+  const byRootEnding = /* @__PURE__ */ new Map();
+  for (const overlay of overlays) {
+    if (overlay.emoji) {
+      const list = byEmoji.get(overlay.emoji) ?? [];
+      list.push(overlay);
+      byEmoji.set(overlay.emoji, list);
+    }
+    const ending = senseFormEnding(overlay.senseForm);
+    const root = senseFormRoot(overlay.senseForm);
+    if (ending) {
+      const key = `${root}\0${ending}`;
+      const list = byRootEnding.get(key) ?? [];
+      list.push(overlay);
+      byRootEnding.set(key, list);
+    }
+  }
+  const attached = /* @__PURE__ */ new Map();
+  rows.forEach((row, index) => {
+    const matched = /* @__PURE__ */ new Map();
+    if (row.emoji) {
+      for (const overlay of byEmoji.get(row.emoji) ?? []) {
+        matched.set(`${overlay.senseForm}\0${overlay.pos}`, overlay);
+      }
+    }
+    const keys = [
+      [`${row.clarity}\0l`, "l"],
+      ...row.metaphorical ? [[`${row.clarity}\0m`, "m"]] : []
+    ];
+    for (const [key] of keys) {
+      for (const overlay of byRootEnding.get(key) ?? []) {
+        matched.set(`${overlay.senseForm}\0${overlay.pos}`, overlay);
+      }
+    }
+    if (matched.size > 0) {
+      attached.set(
+        index,
+        [...matched.values()].sort((a, b) => a.senseForm.localeCompare(b.senseForm) || a.pos.localeCompare(b.pos))
+      );
+    }
+  });
+  return attached;
 }
 function createLexiconIndex(rows) {
   const docs = rows.map((row, id) => ({
@@ -1913,6 +2014,25 @@ function createLexiconIndex(rows) {
     fields: [...SEARCH_FIELDS],
     storeFields: ["emoji", "literal", "clarity", "metaphorical", "mnemonic"],
     searchOptions: SEARCH_OPTIONS
+  });
+  index.addAll(docs);
+  return index;
+}
+function createOverlayIndex(overlays) {
+  const docs = overlays.map((overlay, id) => ({
+    id,
+    senseForm: overlay.senseForm.toLowerCase(),
+    writtenForm: overlayWrittenForm(overlay).toLowerCase(),
+    pos: overlay.pos.toLowerCase(),
+    emoji: overlay.emoji,
+    root: senseFormRoot(overlay.senseForm).toLowerCase(),
+    definition: overlay.definition.toLowerCase(),
+    mnemonic: overlay.mnemonic.toLowerCase()
+  }));
+  const index = new MiniSearch({
+    fields: [...OVERLAY_SEARCH_FIELDS],
+    storeFields: ["senseForm", "writtenForm", "pos", "emoji", "root", "definition", "mnemonic"],
+    searchOptions: OVERLAY_SEARCH_OPTIONS
   });
   index.addAll(docs);
   return index;
@@ -1934,7 +2054,8 @@ function findEmojiMatches(rows, query) {
   return rows.map((row, id) => ({ row, id })).filter(({ row }) => row.emoji.includes(query)).map(({ row, id }) => ({
     ...row,
     score: 10,
-    matchFields: ["emoji"]
+    matchFields: ["emoji"],
+    overlays: []
   }));
 }
 function exactMatchBoost(row, query) {
@@ -1959,67 +2080,155 @@ function exactMatchBoost(row, query) {
   }
   return { boost, fields };
 }
+function exactOverlayBoost(overlay, query) {
+  const q = query.toLowerCase();
+  let boost = 0;
+  const fields = [];
+  if (overlayWrittenForm(overlay).toLowerCase() === q) {
+    boost += 140;
+    fields.push("sense_form");
+  } else if (overlay.senseForm.toLowerCase() === q) {
+    boost += 120;
+    fields.push("sense_form");
+  }
+  if (overlay.definition.toLowerCase() === q) {
+    boost += 80;
+    fields.push("definition");
+  }
+  if (overlay.mnemonic.toLowerCase() === q) {
+    boost += 50;
+    fields.push("mnemonic");
+  }
+  if (overlay.pos.toLowerCase() === q) {
+    boost += 40;
+    fields.push("pos");
+  }
+  return { boost, fields };
+}
+function overlayResultFromPublished(row, overlays, score, matchFields) {
+  return {
+    ...row,
+    score,
+    matchFields,
+    overlays
+  };
+}
+function overlayOnlyResult(overlay, score, matchFields) {
+  return {
+    emoji: overlay.emoji,
+    literal: overlay.definition,
+    clarity: overlayWrittenForm(overlay),
+    metaphorical: "",
+    mnemonic: overlay.mnemonic,
+    score,
+    matchFields,
+    overlays: [overlay],
+    overlayOnly: true
+  };
+}
 function searchLexicon(index, rows, query, opts) {
   const trimmed = query.trim();
   const limit = opts?.limit;
+  const overlays = opts?.overlays ?? [];
+  const overlayIndex = opts?.overlayIndex;
+  const attached = attachOverlays(rows, overlays);
   if (!trimmed) {
-    const all = rows.map((row) => ({
+    const all = rows.map((row, id) => ({
       ...row,
       score: 0,
-      matchFields: []
+      matchFields: [],
+      overlays: attached.get(id) ?? []
     }));
     return limit === void 0 ? all : all.slice(0, limit);
   }
   const emojiResults = findEmojiMatches(rows, trimmed);
   const merged = /* @__PURE__ */ new Map();
+  const publishedKey = (id) => `p:${id}`;
+  const overlayKey = (senseForm, pos) => `o:${senseForm}:${pos}`;
   for (const hit of index.search(trimmed, SEARCH_OPTIONS)) {
-    const row = rows[hit.id];
+    const id = hit.id;
+    const row = rows[id];
     const exact = exactMatchBoost(row, trimmed);
-    merged.set(hit.id, {
-      ...row,
-      score: hit.score + exact.boost,
-      matchFields: [.../* @__PURE__ */ new Set([...normalizeMatchFields(hit.match), ...exact.fields])].sort()
-    });
+    const key = publishedKey(id);
+    merged.set(key, overlayResultFromPublished(
+      row,
+      attached.get(id) ?? [],
+      hit.score + exact.boost,
+      [.../* @__PURE__ */ new Set([...normalizeMatchFields(hit.match), ...exact.fields])].sort()
+    ));
   }
   for (const result of emojiResults) {
     const id = rows.findIndex((row) => row.emoji === result.emoji);
     if (id < 0) continue;
     const exact = exactMatchBoost(rows[id], trimmed);
-    const boosted = {
-      ...result,
-      score: result.score + exact.boost,
-      matchFields: [.../* @__PURE__ */ new Set([...result.matchFields, ...exact.fields])].sort()
-    };
-    const existing = merged.get(id);
+    const key = publishedKey(id);
+    const boosted = overlayResultFromPublished(
+      rows[id],
+      attached.get(id) ?? [],
+      result.score + exact.boost,
+      [.../* @__PURE__ */ new Set([...result.matchFields, ...exact.fields])].sort()
+    );
+    const existing = merged.get(key);
     if (existing) {
-      merged.set(id, {
+      merged.set(key, {
         ...existing,
         score: Math.max(existing.score, boosted.score),
         matchFields: [.../* @__PURE__ */ new Set([...existing.matchFields, ...boosted.matchFields])].sort()
       });
     } else {
-      merged.set(id, boosted);
+      merged.set(key, boosted);
     }
   }
   if (merged.size === 0) {
     rows.forEach((row, id) => {
       const exact = exactMatchBoost(row, trimmed);
       if (exact.boost > 0) {
-        merged.set(id, {
-          ...row,
-          score: exact.boost,
-          matchFields: exact.fields
-        });
+        merged.set(publishedKey(id), overlayResultFromPublished(row, attached.get(id) ?? [], exact.boost, exact.fields));
       }
     });
+  }
+  if (overlayIndex) {
+    for (const hit of overlayIndex.search(trimmed, OVERLAY_SEARCH_OPTIONS)) {
+      const overlay = overlays[hit.id];
+      const exact = exactOverlayBoost(overlay, trimmed);
+      const score = hit.score + exact.boost;
+      const matchFields = [.../* @__PURE__ */ new Set([...normalizeMatchFields(hit.match), ...exact.fields])].sort();
+      const publishedIndex = rows.findIndex(
+        (row) => row.emoji === overlay.emoji || row.clarity === senseFormRoot(overlay.senseForm) || `${row.clarity}${senseFormEnding(overlay.senseForm) ?? ""}` === overlay.senseForm
+      );
+      if (publishedIndex >= 0) {
+        const key = publishedKey(publishedIndex);
+        const row = rows[publishedIndex];
+        const rowOverlays = attached.get(publishedIndex) ?? [];
+        const existing = merged.get(key);
+        const next = overlayResultFromPublished(
+          row,
+          rowOverlays.length > 0 ? rowOverlays : [overlay],
+          Math.max(existing?.score ?? 0, score),
+          [.../* @__PURE__ */ new Set([...existing?.matchFields ?? [], ...matchFields])].sort()
+        );
+        merged.set(key, next);
+      } else {
+        const key = overlayKey(overlay.senseForm, overlay.pos);
+        const existing = merged.get(key);
+        const next = overlayOnlyResult(overlay, Math.max(existing?.score ?? 0, score), matchFields);
+        merged.set(key, next);
+      }
+    }
   }
   const sorted = [...merged.values()].sort((a, b) => b.score - a.score);
   const effectiveLimit = limit ?? 20;
   return sorted.slice(0, effectiveLimit);
 }
 export {
+  attachOverlays,
   createLexiconIndex,
+  createOverlayIndex,
+  overlayWrittenForm,
+  parseOverlayCsv,
   parsePublishedCsv,
   searchLexicon,
+  senseFormEnding,
+  senseFormRoot,
   tokenizeLiteral
 };

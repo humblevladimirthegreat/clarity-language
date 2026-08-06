@@ -1,0 +1,112 @@
+sense_form,pos,emoji,definition,mnemonic
+obolam,h,🗳️,autonomy need (choice / agency),ballot records choice; choice is agency and self-direction
+obolam,w,🗳️,autonomy need (choice / agency),ballot records choice; choice is agency and self-direction
+odolom,h,🧰,competence need (readiness / efficacy),toolbox holds gear for the job; readiness is prepared skill
+odolom,w,🧰,competence need (readiness / efficacy),toolbox holds gear for the job; readiness is prepared skill
+ogonom,h,🪢,relatedness need (bond / belonging),knot ties two ends; bond is connection and care
+ogonom,w,🪢,relatedness need (bond / belonging),knot ties two ends; bond is connection and care
+azedom,h,🍓,pleasure need (sweetness / enjoyment),strawberry is pure sweetness; sweetness is enjoyment payoff
+azedom,w,🍓,pleasure need (sweetness / enjoyment),strawberry is pure sweetness; sweetness is enjoyment payoff
+uzehum,h,🛡️,survival need (defense / safety),shield blocks blows; defense is safety and health
+uzehum,w,🛡️,survival need (defense / safety),shield blocks blows; defense is safety and health
+egegem,h,🥚,unspecified need (potential),egg holds unrealized life; potential names a need without picking which
+egegem,w,🥚,unspecified need (potential),egg holds unrealized life; potential names a need without picking which
+uhunum,h,🎣,witnessed evidential (per memory / reconstructive),fishing pulls from opaque water; memory retrieves the past (may be a boot)
+uhunum,w,🎣,witnessed evidential (per memory / reconstructive),fishing pulls from opaque water; memory retrieves the past (may be a boot)
+erogem,h,⏺️,recorded evidential (on record / captured),record button preserves now; record is playback of what was kept
+erogem,w,⏺️,recorded evidential (on record / captured),record button preserves now; record is playback of what was kept
+awam,h,🐾,pattern evidential (from trail of cases),paw prints mark a trail; trail is regularity left behind
+awam,w,🐾,pattern evidential (from trail of cases),paw prints mark a trail; trail is regularity left behind
+evem,h,🕵️,inferred evidential (from investigation),detective follows clues; investigation is reasoned inference
+evem,w,🕵️,inferred evidential (from investigation),detective follows clues; investigation is reasoned inference
+erarem,h,👂,told evidential (hearsay / reportative),ear enables listening; listening under /h/ is hearsay channel
+erarem,w,👂,told evidential (hearsay / reportative),ear enables listening; listening under /h/ is hearsay channel
+ahem,h,❤️,felt evidential (gut-known / proprioceptive),heart marks gut feeling; gut-felt is affective knowing channel
+ahem,w,❤️,felt evidential (gut-known / proprioceptive),heart marks gut feeling; gut-felt is affective knowing channel
+orolom,h,📜,story evidential (tale / lore / anecdote),scroll holds a tale; tale is narrative framing channel
+orolom,w,📜,story evidential (tale / lore / anecdote),scroll holds a tale; tale is narrative framing channel
+owarom,h,🗺️,plan mood (intention / commitment),map charts a route; plan charts a course you mean to take
+owarom,w,🗺️,plan mood (intention / commitment),map charts a route; plan charts a course you mean to take
+edelom,h,🔭,predict mood (forecast about what will happen),telescope shows what is far; forecast looks ahead at a distance
+edelom,w,🔭,predict mood (forecast about what will happen),telescope shows what is far; forecast looks ahead at a distance
+uhom,h,💭,comment mood (mental commentary / rumination),thought balloon floats a take; commentary is mind storying experience
+uhom,w,💭,comment mood (mental commentary / rumination),thought balloon floats a take; commentary is mind storying experience
+ogenam,h,🌊,emotion HIGH activation (flood / surge),ocean wave surges; flood is high-arousal water motion
+ogenam,w,🌊,emotion HIGH activation (flood / surge),ocean wave surges; flood is high-arousal water motion
+ojum,h,🪼,emotion MED activation (flow / drift),jellyfish drifts with current; flow is mid motion of water
+ojum,w,🪼,emotion MED activation (flow / drift),jellyfish drifts with current; flow is mid motion of water
+ozonom,h,🌨️,emotion LOW activation (stillness / slack),snow quiets the landscape; stillness is calm slack water
+ozonom,w,🌨️,emotion LOW activation (stillness / slack),snow quiets the landscape; stillness is calm slack water
+abobom,h,🍼,emotion INTERNAL locus (charge held inside),bottle holds liquid inside; bottle is in-vessel charge
+abobom,w,🍼,emotion INTERNAL locus (charge held inside),bottle holds liquid inside; bottle is in-vessel charge
+oburom,h,🫗,emotion EXTERNAL locus (charge toward others),pour directs liquid outward; pour is other-directed charge
+oburom,w,🫗,emotion EXTERNAL locus (charge toward others),pour directs liquid outward; pour is other-directed charge
+agenam,h,🕯️,emotion CIRCUM locus (ambient / situational field),candle light fills the room; awash is charge in the surrounding field
+agenam,w,🕯️,emotion CIRCUM locus (ambient / situational field),candle light fills the room; awash is charge in the surrounding field
+egeram,h,🥣,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host
+egeram,w,🥣,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host
+ewonol,h,⛅,universality COMMON warrant (usual / exceptions expected),weather is the usual climate; usual warrant expects exceptions
+ewonol,w,⛅,universality COMMON warrant (usual / exceptions expected),weather is the usual climate; usual warrant expects exceptions
+ululul,h,💊,universality UNCOUNTERED warrant (no counterexample found),pill remedies what ails; uncountered is no case comes to mind
+ululul,w,💊,universality UNCOUNTERED warrant (no counterexample found),pill remedies what ails; uncountered is no case comes to mind
+ididol,h,⭐,universality FORMAL warrant (definition / proof),star chart fixes constellations; formal is proof-level exceptionlessness
+ididol,w,⭐,universality FORMAL warrant (definition / proof),star chart fixes constellations; formal is proof-level exceptionlessness
+afafal,h,🍎,universality NATURAL warrant (natural necessity),apple falls by nature; natural is necessity in the world
+afafal,w,🍎,universality NATURAL warrant (natural necessity),apple falls by nature; natural is necessity in the world
+ebebel,h,🌶️,universality RULE warrant (holds inside named frame),board game has its rules; rule-frame scopes exceptionlessness
+ebebel,w,🌶️,universality RULE warrant (holds inside named frame),board game has its rules; rule-frame scopes exceptionlessness
+onugon,z,☯️,judgment benchmark Average (population mean),yin-yang holds balance; balance is the average standard
+onugon,d,☯️,judgment benchmark Average (population mean),yin-yang holds balance; balance is the average standard
+onugon,b,☯️,judgment benchmark Average (population mean),yin-yang holds balance; balance is the average standard
+aheman,z,🐹,judgment benchmark Typical (modal / usual case),hamster on a wheel of routine; routine is the typical standard
+aheman,d,🐹,judgment benchmark Typical (modal / usual case),hamster on a wheel of routine; routine is the typical standard
+aheman,b,🐹,judgment benchmark Typical (modal / usual case),hamster on a wheel of routine; routine is the typical standard
+ivoxrawon,z,,judgment benchmark Mine (speaker normative standard),ivo plus unit morph; primary bar is my personal standard
+ivoxrawon,d,,judgment benchmark Mine (speaker normative standard),ivo plus unit morph; primary bar is my personal standard
+ivoxrawon,b,,judgment benchmark Mine (speaker normative standard),ivo plus unit morph; primary bar is my personal standard
+ulohun,z,👥,judgment benchmark Social (peers / in-group),silhouettes form community; community is the peer standard
+ulohun,d,👥,judgment benchmark Social (peers / in-group),silhouettes form community; community is the peer standard
+ulohun,b,👥,judgment benchmark Social (peers / in-group),silhouettes form community; community is the peer standard
+aloban,z,🥼,judgment benchmark Professional (expert / role standard),lab coat marks expertise; expertise is the pro standard
+aloban,d,🥼,judgment benchmark Professional (expert / role standard),lab coat marks expertise; expertise is the pro standard
+aloban,b,🥼,judgment benchmark Professional (expert / role standard),lab coat marks expertise; expertise is the pro standard
+uan,z,,judgment benchmark Everyone (universal reference class),bare stock everyone name; everyone is the universal comparee
+uan,d,,judgment benchmark Everyone (universal reference class),bare stock everyone name; everyone is the universal comparee
+uan,b,,judgment benchmark Everyone (universal reference class),bare stock everyone name; everyone is the universal comparee
+ogunol,g,🪙,SAME identity (identical-to / same-as),coin has two faces one substance; same is one referent two labels
+orodol,h,🚪,IF clause pole (one-way conditional),door opens one way; opportunity is if without iff force
+eluvel,h,↔️,IFF clause pole (biconditional),left-right arrow goes both ways; reciprocity is if-and-only-if
+urugul,h,🧱,BECAUSE clause pole (explanatory reason),brick stacks as foundation; foundation is because-reason under claim
+ubezum,z,🧩,numbered-alternative problem slot (ideation),puzzle piece must fit; problem is something to solve in a set
+egogem,z,🔑,numbered-alternative solution slot (ideation),key opens what was locked; solution unlocks the problem
+ogalom,z,🥅,numbered-alternative goal slot (ideation),goal net is what you aim for; objective is the target aim
+an,v,,join-act includes or adds object,set join a+n as verb; includes adds this object to the set
+an,g,,join-relation including (adjective + argument),set join a+n on /g/; including frames host with argument
+an,h,,join-relation with or including (adverb + argument),set join a+n on /h/; with frames event alongside argument
+on,v,,join-act chooses sole object,set join o+n as verb; chooses this as the one pick
+on,g,,join-relation exclusive for (sole pick adjective),set join o+n on /g/; exclusive for names the only pick
+on,h,,join-relation exclusively for (adverb),set join o+n on /h/; exclusively for as the one choice
+aon,v,,join-act picks with more picks open,set join ao+n as verb; picks one while more may follow
+aon,g,,join-relation open to (adjective),set join ao+n on /g/; open to admits among options
+aon,h,,join-relation among options (adverb),set join ao+n on /h/; among options keeps picks open
+un,v,,join-act denies or refuses object,negation u+n as verb; denies refuses the object
+un,g,,join-relation against or anti- (adjective),negation u+n on /g/; against refuses the argument
+un,h,,join-relation refusing (adverb),negation u+n on /h/; refusing blocks the argument
+uan,v,,join-act excludes object,counteradditive ua+n as verb; excludes bars from the set
+uan,g,,join-relation without or excluding (adjective),counteradditive ua+n on /g/; without excludes argument
+uan,h,,join-relation excluding (adverb),counteradditive ua+n on /h/; excluding leaves argument out
+uon,v,,join-act bars anything but object,counterchoice uo+n as verb; anything but leaves the rest open
+uon,g,,join-relation open to anything but (adjective),counterchoice uo+n on /g/; anything but bars only this
+uon,h,,join-relation barring anything but (adverb),counterchoice uo+n on /h/; barring leaves rest free
+en,v,,join-act prioritizes object,rank join e+n as verb; prioritizes puts this first
+en,g,,join-relation prioritizing (adjective),rank join e+n on /g/; prioritizing heads by argument
+en,h,,join-relation prioritizing (adverb),rank join e+n on /h/; prioritizing puts argument first
+aen,v,,join-act equates or ties objects,equative ae+n as verb; equates ties candidates together
+aen,g,,join-relation on a par with (adjective),equative ae+n on /g/; on a par equates with argument
+aen,h,,join-relation equating or tying (adverb),equative ae+n on /h/; equating ties to argument
+oen,v,,join-act tries object,trial oe+n as verb; tries tests the fix
+oen,g,,join-relation for trying (adjective),trial oe+n on /g/; for trying tests argument
+oen,h,,join-relation trying (adverb),trial oe+n on /h/; trying is trial of argument
+uen,v,,join-act deprioritizes object,counterrank ue+n as verb; deprioritizes puts this last
+uen,g,,join-relation deprioritizing (adjective),counterrank ue+n on /g/; deprioritizing trails argument
+uen,h,,join-relation deprioritizing (adverb),counterrank ue+n on /h/; deprioritizing puts argument last

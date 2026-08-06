@@ -7,6 +7,13 @@ Ordinary `/h/` / `/w/` content still defaults to values unless the form is alrea
 
 **Not here:** *worse than Average|…* benchmarks are NP comparees on comparative fences — [comparatives.md § Judgment benchmarks](comparatives.md#judgment-benchmarks) (lexicon **-n** comparees; **Everyone** = bare **`zuan`**; normative **Mine** = **`zivoxrawon`** under [numeric derivation](#numeric-derivation) below). **Classification** (kind as predicative `/ɡ/`) and closed **`SAME`** **identity** (`goguno` 🪙 + `/b/`) live in **[predication.md](predication.md)** — not a general *to-be* verb and not `x`-compounds. **Causation** / necessary–sufficient reuses joins and these join-relations — **[causation.md](causation.md)** — not a new mood or `x`-compound on this page (optional **`CAUSE`** mood = lexicon **`erage`** ⚙️ *mechanism*; do not reuse for NATURAL). **Numbered alternatives** (ideation *problem1* / *solution2* / *goal3*) is style + lexicon on free ordinals — [numbered alternatives](#numbered-alternatives) below — **not** new morphology.
 
+## Sense-form overlays
+<a id="sense-form"></a>
+
+**Sense-form** = published Clarity root + [reference ending](reference-suffix.md) that **is** the closed overlay reading for that PoS — no PoS prefix. Example: **`uhunum`** under `/h/` = evidential *memory / witnessed*; **`huhunul`** = ordinary literal *in a fishing manner* — not the evidential. Mood overlays **generally** use **-m** (figurative published sense); other endings when that is how the overlay is defined (benchmark **-n**, universality **-l**, join-act / join-relation defective **-n**, …). Join-act / join-relation stems are the vowel + **-n** only (`an` / `on` / …); written words are **`pos` + sense-form** (`van` / `gan` / `han`).
+
+Closed overlay inventory: **[lexicon-overlays.csv](../data/lexicon-overlays.csv)** — one row per **`(sense_form, pos)`** with **`definition`** and **`mnemonic`** columns; ordinary content PoS on the same root is **not** listed. Published roots: [lexicon-published.csv](../data/lexicon-published.csv).
+
 ## Join-act verbs (`v*n`)
 <a id="join-act-verbs"></a>
 <a id="verb-join-n"></a>
@@ -130,17 +137,17 @@ English attitude verbs smuggle COMMENT **or** affect. Split them:
 
 | English bundle | Prefer |
 |----------------|--------|
-| *think / assume / suppose / imagine …* | **COMMENT** (`huhol`); add evidentiality only if asserting a world-claim |
+| *think / assume / suppose / imagine …* | **COMMENT** (`huhom`); add evidentiality only if asserting a world-claim |
 | *wonder …* | **COMMENT** + soft question (**jom**) / ask — not a wonder-mood |
 | *fear / worry / dread / regret …* | [emotion compose](#emotion-compose): unmet [value](values.md) (`xu`) + **ACT** + **LOCUS** — **no** COMMENT |
 | *hope / wish …* (feeling) | emotion compose (value + ACT + LOCUS) — **no** COMMENT |
 | *hope / wish …* (intention) | motive (`xe`) and/or [**PLAN**](#plan-predict) / soft force — **no** COMMENT; not a hope-mood |
-| *believe …* | [evidentiality](#evidentiality) (`huhunul`, `herarel`, …) — **not** COMMENT |
+| *believe …* | [evidentiality](#evidentiality) (`huhunum`, `herarem`, …) — **not** COMMENT |
 
 | Clarity | Reading |
 |---------|---------|
-| `… huhol …` | *I think …* — commentary overlay |
-| `… huhol … jom …` | *I wonder …* — commentary + soft ask |
+| `… huhom …` | *I think …* — commentary overlay |
+| `… huhom … jom …` | *I wonder …* — commentary + soft ask |
 | `z<meeting>l wodoloxul hogenal hagenal` | *I fear the meeting* — unmet competence; flood; room awash — **no** COMMENT |
 | `… howarom …` | *I hope to …* (intention) — soft plan; **no** COMMENT |
 
@@ -272,7 +279,7 @@ English future cues (*will*, *going to*, *tomorrow*, …) smuggle whether you me
 
 **Not `x`-compounds:** plan vs predict is a **root choice** (speech-act type), not `xa`/`xu` polarity on a host. Ability compounds onto an activity (`v<sing>xun`); plan/predict **frame the clause** — content verbs stay bare. Do **not** map plan grain onto contact / preference standing / prescription force / changeability, and do **not** invent `xe`/`xo` (or any `x`+vowel) for future framing.
 
-Schematic: `howaron … vegeham` (*detail plan: I finish*) vs `hedelol` + evidential `/h/` … `varunal` (*forecast: it rains* — e.g. `hawal` for pattern).
+Schematic: `howarom … vegeham` (*detail plan: I finish*) vs `hedelom hawam … varunal` (*forecast from pattern: it rains*).
 
 ### Out of scope (for now)
 
@@ -305,24 +312,20 @@ Claims about the world — what happened, what caused what, what someone else th
 | **TOLD** | **`erare`** | 👂 *ear* → *listening* → *hearsay* | reportative — under `/h/`, *listening* = hearsay |
 | **FELT** | **`ahe`** | ❤️ *heart* → *gut-felt* | proprioceptive / affective knowing — not [emotion compose](#emotion-compose) |
 | **STORY** | **`orolo`** | 📜 *scroll* → *tale* | narrative / lore / anecdotal framing |
-| **NONE** | TBD | — | no evidential warrant named |
-| **UNSPECIFIED** | TBD | — | channel left open |
-
-**Default pedagogy:** when a world-claim needs a channel and none of the named sources fits, prefer naming one over silent assertion; **NONE** / **UNSPECIFIED** roots land later.
 
 **Not `x`-compounds:** channel is a **root choice**, not `xa`/`xu` on the claim host. Stack with **PREDICT**, causation shapes, [universality](#universality) **NATURAL**, other-minds content, ….
 
 | Clarity (schematic) | Reading |
 |---------------------|---------|
-| `… huhunul …` | *per memory / witnessed* (reconstructive) |
-| `… herogel …` | *on record / recorded* |
-| `… hawal …` | *from the pattern / trail of cases* |
-| `… hevel …` | *inferred / from investigation* |
-| `… herarel …` | *told / hearsay* |
-| `… hahel …` | *felt / gut-known* |
-| `… horolol …` | *per the tale / story* |
-| `hedelol hawal … varunal` | *forecast from pattern: it rains* |
-| `… haon b-…` + `hevel` | *sufficient-cause claim, inferred* |
+| `… huhunum …` | *per memory / witnessed* (reconstructive) |
+| `… herogem …` | *on record / recorded* |
+| `… hawam …` | *from the pattern / trail of cases* |
+| `… hevem …` | *inferred / from investigation* |
+| `… herarem …` | *told / hearsay* |
+| `… hahem …` | *felt / gut-known* |
+| `… horolom …` | *per the tale / story* |
+| `hedelom hawam … varunal` | *forecast from pattern: it rains* |
+| `… haon b-…` + `hevem` | *sufficient-cause claim, inferred* |
 
 ### Memory / record (past framing)
 <a id="memory-record"></a>
@@ -346,20 +349,19 @@ Idiom cue (teaching): *fish a boot* = retrieve the wrong past (🥾 `obodo` *boo
 
 | English cue | Clarity |
 |-------------|---------|
-| *caused / predicted, inferred* | claim shape + **`hevel`** |
-| *caused / predicted from pattern*; *always by nature* + pattern | claim shape (+ **`hafafal`** if natural) + **`hawal`** |
-| *thinks / was told* (hearsay) | content + **`herarel`** |
-| *knew / felt* (gut channel) | content + **`hahel`** |
-| memory-sourced claim | **`huhunul`** |
-| on-record claim | **`herogel`** |
-| story / lore channel | **`horolol`** |
-| no / unspecified channel | TBD roots |
+| *caused / predicted, inferred* | claim shape + **`hevem`** |
+| *caused / predicted from pattern*; *always by nature* + pattern | claim shape (+ **`hafafal`** if natural) + **`hawam`** |
+| *thinks / was told* (hearsay) | content + **`herarem`** |
+| *knew / felt* (gut channel) | content + **`hahem`** |
+| memory-sourced claim | **`huhunum`** |
+| on-record claim | **`herogem`** |
+| story / lore channel | **`horolom`** |
 
 ### Contrasts
 
 | | Prefer | Avoid |
 |--|--------|-------|
-| COMMENT vs warrant | `huhol` = first-person commentary; evidential = how the **world-claim** is sourced | using COMMENT for *believe* / *thinks* |
+| COMMENT vs warrant | `huhom` = first-person commentary; evidential = how the **world-claim** is sourced | using COMMENT for *believe* / *thinks* |
 | Felt vs emotion | **`ahe`** = channel of knowing; emotion = value + ACT + LOCUS | stacking **FELT** as a seventh emotion ACT |
 | Told vs listening-event | `/h/` **`erare`** = hearsay; *hear the door* = ordinary `/v/` | collapsing both |
 | Pattern vs COMMON | **`awa`** = evidential trail; **`ewono`** = exceptionlessness warrant | encoding PATTERN as universality |
@@ -367,7 +369,6 @@ Idiom cue (teaching): *fish a boot* = retrieve the wrong past (🥾 `obodo` *boo
 
 ### Out of scope (for now)
 
-- Lexicon roots for **NONE** and **UNSPECIFIED**.
 - Ending tables on these roots (grain of confidence, whose memory, soft vs committed channel, …).
 - Full tense inventory (observation vs imagination) and how it stacks with channels.
 
@@ -415,7 +416,7 @@ English *always* / *every* / *never* / *everyone* smuggle **how exceptionless** 
 | `… hual … hewonol` | *always, usually* (default warrant) |
 | `… hual … hululul` | *always, as far as I’ve checked* (no counterexample comes to mind) |
 | `zual g<square>l … hididol` | *every square, by definition* |
-| `… hual … hafafal` + evidential `/h/` | *always, by natural necessity* (how you know stacked separately — e.g. `hawal`) |
+| `… hual … hafafal` + evidential `/h/` | *always, by natural necessity* (how you know stacked separately — e.g. `hawam`) |
 | `… hual … hebebel b<chess>l` | *always, under chess* |
 | `zuam gagadal … hewonol` | soft domain *every cat that comes to mind* + usual warrant |
 
@@ -426,7 +427,7 @@ English *always* / *every* / *never* / *everyone* smuggle **how exceptionless** 
 | *always / everyone / never, usually* | domain fence (`hual` / `zual` / `hal` / …) + **`hewonol`** |
 | *always / never, as far as I’ve checked* | domain fence + **`hululul`** |
 | definitional *every* / *all* | domain fence + **`hididol`** |
-| *always by nature* (+ how you know) | domain fence + **`hafafal`** + evidential `/h/` (e.g. **`hawal`**) |
+| *always by nature* (+ how you know) | domain fence + **`hafafal`** + evidential `/h/` (e.g. **`hawam`**) |
 | *always under [frame]* (e.g. chess) | domain fence + **`hebebel b-…`** (scope NP) |
 
 ### Contrasts

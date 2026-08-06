@@ -229,6 +229,7 @@
             <th scope="col">Literal</th>
             <th scope="col">Clarity</th>
             <th scope="col">Metaphorical</th>
+            <th scope="col">Overlays</th>
             <th scope="col">Mnemonic</th>
           </tr>
         </thead>
@@ -240,17 +241,24 @@
   <script type="module">
     import {
       createLexiconIndex,
+      createOverlayIndex,
+      parseOverlayCsv,
       parsePublishedCsv,
       searchLexicon,
     } from "./lib/lexicon-search.js";
 
     const CSV_URL = "../data/lexicon-published.csv";
+    const OVERLAY_URL = "../data/lexicon-overlays.csv";
     const DEBOUNCE_MS = 100;
 
     /** @type {import("../src/lexicon-search.js").PublishedRow[]} */
     let rows = [];
+    /** @type {import("../src/lexicon-search.js").OverlayRow[]} */
+    let overlays = [];
     /** @type {import("minisearch").default | null} */
     let index = null;
+    /** @type {import("minisearch").default | null} */
+    let overlayIndex = null;
     let debounceTimer = 0;
 
     /** @param {string} s */
@@ -276,24 +284,37 @@
     }
 
     /** @param {import("../src/lexicon-search.js").LexiconSearchResult} row */
+    function formatOverlays(row) {
+      if (!row.overlays || row.overlays.length === 0) {
+        return '<span class="empty">—</span>';
+      }
+      const text = row.overlays
+        .map((o) => `${o.senseForm}+${o.pos}: ${o.definition}`)
+        .join("; ");
+      return escapeHtml(text);
+    }
+
+    /** @param {import("../src/lexicon-search.js").LexiconSearchResult} row */
     function renderRow(row) {
       const matchLabel =
         row.matchFields.length > 0
           ? `<span class="match-fields">matched: ${escapeHtml(row.matchFields.join(", "))}</span>`
           : "";
+      const literalLabel = row.literal || (row.overlayOnly ? row.overlays[0]?.definition || "(overlay)" : "—");
 
       return `
-        <td class="emoji">${row.emoji}</td>
-        <td class="literal">${escapeHtml(row.literal)}${matchLabel}</td>
+        <td class="emoji">${row.emoji || "—"}</td>
+        <td class="literal">${escapeHtml(literalLabel)}${matchLabel}</td>
         <td class="clarity">${escapeHtml(row.clarity)}</td>
         <td>${formatMetaphorical(row.metaphorical)}</td>
+        <td>${formatOverlays(row)}</td>
         <td>${formatMnemonic(row.mnemonic)}</td>
       `;
     }
 
     /** @param {string} query */
     function render(query = "") {
-      const results = searchLexicon(index, rows, query);
+      const results = searchLexicon(index, rows, query, { overlays, overlayIndex });
       const tbody = document.getElementById("tbody");
       tbody.replaceChildren(
         ...results.map((row) => {
@@ -315,10 +336,16 @@
       const status = document.getElementById("status");
       const wrap = document.getElementById("table-wrap");
       try {
-        const res = await fetch(CSV_URL);
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        rows = parsePublishedCsv(await res.text());
+        const [publishedRes, overlayRes] = await Promise.all([
+          fetch(CSV_URL),
+          fetch(OVERLAY_URL),
+        ]);
+        if (!publishedRes.ok) throw new Error(`HTTP ${publishedRes.status} for published CSV`);
+        if (!overlayRes.ok) throw new Error(`HTTP ${overlayRes.status} for overlay CSV`);
+        rows = parsePublishedCsv(await publishedRes.text());
+        overlays = parseOverlayCsv(await overlayRes.text());
         index = createLexiconIndex(rows);
+        overlayIndex = createOverlayIndex(overlays);
         status.hidden = true;
         wrap.hidden = false;
         render();

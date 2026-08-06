@@ -1,8 +1,8 @@
 /**
- * Search data/lexicon-published.csv from the command line.
+ * Search data/lexicon-published.csv and data/lexicon-overlays.csv from the command line.
  *
  * Run: npm run lexicon-search -- happy
- *      npm run lexicon-search -- laugh --limit 10
+ *      npm run lexicon-search -- uhunum --limit 10
  *      npm run lexicon-search -- --json uze
  */
 import { readFileSync } from "node:fs";
@@ -11,6 +11,8 @@ import { fileURLToPath } from "node:url";
 
 import {
   createLexiconIndex,
+  createOverlayIndex,
+  parseOverlayCsv,
   parsePublishedCsv,
   searchLexicon,
   type LexiconSearchResult,
@@ -18,6 +20,7 @@ import {
 
 const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..");
 const publishedPath = join(rootDir, "data", "lexicon-published.csv");
+const overlayPath = join(rootDir, "data", "lexicon-overlays.csv");
 
 type CliOptions = {
   query: string;
@@ -65,17 +68,25 @@ function printUsage(): void {
 
 Examples:
   npm run lexicon-search -- happy
-  npm run lexicon-search -- laugh --limit 10
+  npm run lexicon-search -- uhunum --limit 10
   npm run lexicon-search -- --json uze`);
 }
 
+function formatOverlayList(result: LexiconSearchResult): string {
+  if (result.overlays.length === 0) return "—";
+  return result.overlays
+    .map((o) => `${o.senseForm}+${o.pos}: ${o.definition}`)
+    .join("; ");
+}
+
 function formatTable(results: LexiconSearchResult[]): void {
-  const headers = ["emoji", "literal", "clarity", "metaphorical", "score"];
+  const headers = ["emoji", "literal", "clarity", "metaphorical", "overlays", "score"];
   const rows = results.map((r) => [
-    r.emoji,
-    r.literal,
+    r.emoji || "—",
+    r.literal || (r.overlayOnly ? "(overlay)" : "—"),
     r.clarity,
     r.metaphorical || "—",
+    formatOverlayList(r),
     r.score.toFixed(2),
   ]);
 
@@ -95,10 +106,15 @@ function formatTable(results: LexiconSearchResult[]): void {
 
 function main(): void {
   const options = parseArgs(process.argv.slice(2));
-  const text = readFileSync(publishedPath, "utf8");
-  const rows = parsePublishedCsv(text);
+  const rows = parsePublishedCsv(readFileSync(publishedPath, "utf8"));
+  const overlays = parseOverlayCsv(readFileSync(overlayPath, "utf8"));
   const index = createLexiconIndex(rows);
-  const results = searchLexicon(index, rows, options.query, { limit: options.limit });
+  const overlayIndex = createOverlayIndex(overlays);
+  const results = searchLexicon(index, rows, options.query, {
+    limit: options.limit,
+    overlays,
+    overlayIndex,
+  });
 
   if (options.json) {
     console.log(JSON.stringify(results, null, 2));

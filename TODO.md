@@ -45,7 +45,6 @@ setback responses:
 
 
 long term:
--word classes
 -parser
 -local llm systematically review entire lexicon
 -speed reading display

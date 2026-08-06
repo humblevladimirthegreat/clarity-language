@@ -195,7 +195,6 @@ Particular episode (*this delay was caused by…*) vs standing law (*clouds for 
 - Shipping closed **`CAUSE`** mood as everyday morphology (joins already carry condition type; root reserved: **`erage`**).
 - Closed **`COND`** complex adjective (rejected in favor of existing joins for now).
 - Ending tables on **`IF`** / **`IFF`** / **`BECAUSE`** (soft vs closed law-like, if needed later).
-- Evidential **NONE** / **UNSPECIFIED** roots ([evidentiality](special-vocabulary.md#evidentiality) out of scope).
 - Other adverbial subordinators (*although* / *while* / *until*, …) — lexicon roots TBD.
 
 ## Cross-links

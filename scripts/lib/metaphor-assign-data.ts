@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { parseCsv } from "../collapse-variants.js";
+import { parseCsv } from "../../src/csv.js";
 
 const rootDir = join(dirname(fileURLToPath(import.meta.url)), "../..");
 
@@ -99,42 +99,18 @@ export function publishedPath(): string {
   return join(rootDir, "data", "lexicon-published.csv");
 }
 
-export function lexiconPath(): string {
-  return join(rootDir, "data", "lexicon.csv");
-}
-
-function loadLexiconMeta(): Map<string, { group: string; subgroup: string }> {
-  const content = readFileSync(lexiconPath(), "utf8");
-  const { rows } = parseCsv(content);
-  const map = new Map<string, { group: string; subgroup: string }>();
-  for (const row of rows) {
-    const emoji = row.emoji ?? "";
-    if (!emoji) continue;
-    map.set(emoji, {
-      group: (row.group ?? "").trim(),
-      subgroup: (row.subgroup ?? "").trim(),
-    });
-  }
-  return map;
-}
-
 export function loadPublishedRows(): PublishedRow[] {
   const content = readFileSync(publishedPath(), "utf8");
   const { rows } = parseCsv(content);
-  const meta = loadLexiconMeta();
-  return rows.map((row) => {
-    const emoji = row.emoji ?? "";
-    const m = meta.get(emoji);
-    return {
-      emoji,
-      literal: (row.literal ?? "").trim(),
-      clarity: (row.clarity ?? "").trim(),
-      metaphorical: (row.metaphorical ?? "").trim(),
-      mnemonic: (row.mnemonic ?? "").trim(),
-      group: m?.group ?? "",
-      subgroup: m?.subgroup ?? "",
-    };
-  });
+  return rows.map((row) => ({
+    emoji: row.emoji ?? "",
+    literal: (row.literal ?? "").trim(),
+    clarity: (row.clarity ?? "").trim(),
+    metaphorical: (row.metaphorical ?? "").trim(),
+    mnemonic: (row.mnemonic ?? "").trim(),
+    group: "",
+    subgroup: "",
+  }));
 }
 
 export function getEmptyRows(rows: PublishedRow[]): PublishedRow[] {

@@ -12,7 +12,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { escapeCsvField, parseCsv } from "./collapse-variants.js";
+import { escapeCsvField, parseCsv } from "../src/csv.js";
 import {
   chunkEmptyRowsRandom,
   enrichPass2Candidates,
