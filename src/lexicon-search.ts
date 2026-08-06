@@ -33,7 +33,6 @@ type IndexedDoc = PublishedRow & {
 type OverlayIndexedDoc = {
   id: number;
   senseForm: string;
-  writtenForm: string;
   pos: string;
   emoji: string;
   root: string;
@@ -44,8 +43,11 @@ type OverlayIndexedDoc = {
 const PUBLISHED_HEADERS = ["emoji", "literal", "clarity", "metaphorical", "mnemonic"] as const;
 const OVERLAY_HEADERS = ["sense_form", "pos", "emoji", "definition", "mnemonic"] as const;
 
+/** Single-letter PoS prefixes used when a query is a full spelled word. */
+const POS_PREFIXES = new Set(["z", "d", "b", "g", "v", "w", "h", "j", "x"]);
+
 const SEARCH_FIELDS = ["literal", "literalTokens", "clarity", "metaphorical", "mnemonic"] as const;
-const OVERLAY_SEARCH_FIELDS = ["senseForm", "writtenForm", "root", "pos", "definition", "mnemonic"] as const;
+const OVERLAY_SEARCH_FIELDS = ["senseForm", "root", "pos", "definition", "mnemonic"] as const;
 
 const FIELD_BOOSTS: Record<(typeof SEARCH_FIELDS)[number], number> = {
   literal: 2,
@@ -57,7 +59,6 @@ const FIELD_BOOSTS: Record<(typeof SEARCH_FIELDS)[number], number> = {
 
 const OVERLAY_FIELD_BOOSTS: Record<(typeof OVERLAY_SEARCH_FIELDS)[number], number> = {
   senseForm: 2,
-  writtenForm: 2.5,
   root: 1.5,
   definition: 2,
   mnemonic: 1,
@@ -86,7 +87,6 @@ const MATCH_FIELD_LABELS: Record<string, string> = {
   mnemonic: "mnemonic",
   emoji: "emoji",
   senseForm: "sense_form",
-  writtenForm: "sense_form",
   root: "sense_form",
   pos: "pos",
   definition: "definition",
@@ -149,9 +149,20 @@ export function senseFormEnding(senseForm: string): string | null {
   return match ? match[1]! : null;
 }
 
-/** Full spelled overlay word: PoS prefix + sense-form (no PoS in the CSV stem). */
-export function overlayWrittenForm(overlay: Pick<OverlayRow, "senseForm" | "pos">): string {
-  return `${overlay.pos}${overlay.senseForm}`;
+/**
+ * If the query looks like a spelled Clarity word (PoS + vowel-initial sense-form
+ * ending in a reference letter), return that PoS and the sense-form stem.
+ * Otherwise pos is null and stem is the whole query.
+ */
+export function splitPosPrefixedQuery(query: string): { pos: string | null; stem: string } {
+  const q = query.trim().toLowerCase();
+  if (q.length < 2) return { pos: null, stem: q };
+  const pos = q[0]!;
+  const stem = q.slice(1);
+  if (POS_PREFIXES.has(pos) && /^[aeiou].*[lmnr]$/.test(stem)) {
+    return { pos, stem };
+  }
+  return { pos: null, stem: q };
 }
 
 export function tokenizeLiteral(literal: string): string {
@@ -242,7 +253,6 @@ export function createOverlayIndex(overlays: OverlayRow[]): MiniSearch<OverlayIn
   const docs: OverlayIndexedDoc[] = overlays.map((overlay, id) => ({
     id,
     senseForm: overlay.senseForm.toLowerCase(),
-    writtenForm: overlayWrittenForm(overlay).toLowerCase(),
     pos: overlay.pos.toLowerCase(),
     emoji: overlay.emoji,
     root: senseFormRoot(overlay.senseForm).toLowerCase(),
@@ -252,7 +262,7 @@ export function createOverlayIndex(overlays: OverlayRow[]): MiniSearch<OverlayIn
 
   const index = new MiniSearch<OverlayIndexedDoc>({
     fields: [...OVERLAY_SEARCH_FIELDS],
-    storeFields: ["senseForm", "writtenForm", "pos", "emoji", "root", "definition", "mnemonic"],
+    storeFields: ["senseForm", "pos", "emoji", "root", "definition", "mnemonic"],
     searchOptions: OVERLAY_SEARCH_OPTIONS,
   });
 
@@ -313,15 +323,21 @@ function exactMatchBoost(row: PublishedRow, query: string): { boost: number; fie
   return { boost, fields };
 }
 
-function exactOverlayBoost(overlay: OverlayRow, query: string): { boost: number; fields: string[] } {
+function exactOverlayBoost(
+  overlay: OverlayRow,
+  query: string,
+  split: { pos: string | null; stem: string },
+): { boost: number; fields: string[] } {
   const q = query.toLowerCase();
   let boost = 0;
   const fields: string[] = [];
+  const sense = overlay.senseForm.toLowerCase();
+  const pos = overlay.pos.toLowerCase();
 
-  if (overlayWrittenForm(overlay).toLowerCase() === q) {
+  if (split.pos && pos === split.pos && sense === split.stem) {
     boost += 140;
-    fields.push("sense_form");
-  } else if (overlay.senseForm.toLowerCase() === q) {
+    fields.push("sense_form", "pos");
+  } else if (sense === q || sense === split.stem) {
     boost += 120;
     fields.push("sense_form");
   }
@@ -333,7 +349,7 @@ function exactOverlayBoost(overlay: OverlayRow, query: string): { boost: number;
     boost += 50;
     fields.push("mnemonic");
   }
-  if (overlay.pos.toLowerCase() === q) {
+  if (pos === q) {
     boost += 40;
     fields.push("pos");
   }
@@ -359,7 +375,7 @@ function overlayOnlyResult(overlay: OverlayRow, score: number, matchFields: stri
   return {
     emoji: overlay.emoji,
     literal: overlay.definition,
-    clarity: overlayWrittenForm(overlay),
+    clarity: overlay.senseForm,
     metaphorical: "",
     mnemonic: overlay.mnemonic,
     score,
@@ -443,36 +459,45 @@ export function searchLexicon(
   }
 
   if (overlayIndex) {
-    for (const hit of overlayIndex.search(trimmed, OVERLAY_SEARCH_OPTIONS)) {
-      const overlay = overlays[hit.id as number]!;
-      const exact = exactOverlayBoost(overlay, trimmed);
-      const score = hit.score + exact.boost;
-      const matchFields = [...new Set([...normalizeMatchFields(hit.match), ...exact.fields])].sort();
+    const split = splitPosPrefixedQuery(trimmed);
+    const overlayQueries = new Set<string>([trimmed.toLowerCase()]);
+    if (split.pos) overlayQueries.add(split.stem);
 
-      const publishedIndex = rows.findIndex(
-        (row) =>
-          row.emoji === overlay.emoji ||
-          row.clarity === senseFormRoot(overlay.senseForm) ||
-          `${row.clarity}${senseFormEnding(overlay.senseForm) ?? ""}` === overlay.senseForm,
-      );
+    for (const overlayQuery of overlayQueries) {
+      const fromStem = Boolean(split.pos && overlayQuery === split.stem);
+      for (const hit of overlayIndex.search(overlayQuery, OVERLAY_SEARCH_OPTIONS)) {
+        const overlay = overlays[hit.id as number]!;
+        if (fromStem && overlay.pos.toLowerCase() !== split.pos) continue;
 
-      if (publishedIndex >= 0) {
-        const key = publishedKey(publishedIndex);
-        const row = rows[publishedIndex]!;
-        const rowOverlays = attached.get(publishedIndex) ?? [];
-        const existing = merged.get(key);
-        const next = overlayResultFromPublished(
-          row,
-          rowOverlays.length > 0 ? rowOverlays : [overlay],
-          Math.max(existing?.score ?? 0, score),
-          [...new Set([...(existing?.matchFields ?? []), ...matchFields])].sort(),
+        const exact = exactOverlayBoost(overlay, trimmed, split);
+        const score = hit.score + exact.boost;
+        const matchFields = [...new Set([...normalizeMatchFields(hit.match), ...exact.fields])].sort();
+
+        const publishedIndex = rows.findIndex(
+          (row) =>
+            row.emoji === overlay.emoji ||
+            row.clarity === senseFormRoot(overlay.senseForm) ||
+            `${row.clarity}${senseFormEnding(overlay.senseForm) ?? ""}` === overlay.senseForm,
         );
-        merged.set(key, next);
-      } else {
-        const key = overlayKey(overlay.senseForm, overlay.pos);
-        const existing = merged.get(key);
-        const next = overlayOnlyResult(overlay, Math.max(existing?.score ?? 0, score), matchFields);
-        merged.set(key, next);
+
+        if (publishedIndex >= 0) {
+          const key = publishedKey(publishedIndex);
+          const row = rows[publishedIndex]!;
+          const rowOverlays = attached.get(publishedIndex) ?? [];
+          const existing = merged.get(key);
+          const next = overlayResultFromPublished(
+            row,
+            rowOverlays.length > 0 ? rowOverlays : [overlay],
+            Math.max(existing?.score ?? 0, score),
+            [...new Set([...(existing?.matchFields ?? []), ...matchFields])].sort(),
+          );
+          merged.set(key, next);
+        } else {
+          const key = overlayKey(overlay.senseForm, overlay.pos);
+          const existing = merged.get(key);
+          const next = overlayOnlyResult(overlay, Math.max(existing?.score ?? 0, score), matchFields);
+          merged.set(key, next);
+        }
       }
     }
   }

@@ -11,6 +11,7 @@ import {
   parseOverlayCsv,
   parsePublishedCsv,
   searchLexicon,
+  splitPosPrefixedQuery,
   tokenizeLiteral,
 } from "./lexicon-search.js";
 
@@ -24,6 +25,20 @@ describe("tokenizeLiteral", () => {
     assert.match(tokens, /nervous/);
     assert.match(tokens, /laugh/);
     assert.match(tokens, /nervous-laugh/);
+  });
+});
+
+describe("splitPosPrefixedQuery", () => {
+  it("strips a PoS letter before a vowel-initial sense-form", () => {
+    assert.deepEqual(splitPosPrefixedQuery("van"), { pos: "v", stem: "an" });
+    assert.deepEqual(splitPosPrefixedQuery("huhunum"), { pos: "h", stem: "uhunum" });
+    assert.deepEqual(splitPosPrefixedQuery("gan"), { pos: "g", stem: "an" });
+  });
+
+  it("leaves gloss queries and bare stems alone", () => {
+    assert.deepEqual(splitPosPrefixedQuery("hearsay"), { pos: null, stem: "hearsay" });
+    assert.deepEqual(splitPosPrefixedQuery("an"), { pos: null, stem: "an" });
+    assert.deepEqual(splitPosPrefixedQuery("uze"), { pos: null, stem: "uze" });
   });
 });
 
@@ -85,10 +100,10 @@ describe("searchLexicon", () => {
   it("finds join-act overlay van without a published row", () => {
     const results = searchLexicon(index, rows, "van", { limit: 10, overlays, overlayIndex });
     const hit = results.find(
-      (r) => r.overlayOnly && r.clarity === "van" && r.overlays[0]?.senseForm === "an",
+      (r) => r.overlayOnly && r.overlays[0]?.senseForm === "an" && r.overlays[0]?.pos === "v",
     );
-    assert.ok(hit, "expected overlay-only van result");
-    assert.equal(hit.overlays[0]?.pos, "v");
+    assert.ok(hit, "expected overlay-only an+v for van query");
+    assert.equal(hit.clarity, "an");
     assert.match(hit.literal, /includes/i);
     assert.ok(hit.mnemonic.length > 0);
   });
@@ -100,11 +115,17 @@ describe("searchLexicon", () => {
       ["g", "h", "v"],
     );
     const gan = searchLexicon(index, rows, "gan", { limit: 10, overlays, overlayIndex }).find(
-      (r) => r.overlayOnly && r.clarity === "gan",
+      (r) => r.overlayOnly && r.overlays[0]?.senseForm === "an" && r.overlays[0]?.pos === "g",
     );
     assert.ok(gan);
-    assert.equal(gan.overlays[0]?.senseForm, "an");
-    assert.equal(gan.overlays[0]?.pos, "g");
+    assert.equal(gan.clarity, "an");
+  });
+
+  it("finds evidential via spelled word huhunum", () => {
+    const results = searchLexicon(index, rows, "huhunum", { limit: 10, overlays, overlayIndex });
+    const hit = results.find((r) => r.clarity === "uhunu");
+    assert.ok(hit, "expected fishing/uhunu for huhunum query");
+    assert.ok(hit.overlays.some((o) => o.senseForm === "uhunum" && o.pos === "h"));
   });
 
   it("finds overlay rows by definition text", () => {
