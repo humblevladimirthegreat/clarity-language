@@ -6,9 +6,6 @@
 
 Closed senses with fixed jobs but no published Clarity root yet:
 
-**Judgment benchmarks** ([comparatives.md](docs/comparatives.md#judgment-benchmarks)) — six `-n` standards:
-- Average (`AVG`), Typical (`TYP`), Mine (`MINE`), Social (`SOC`), Professional (`PRO`), Everyone (`ALL`)
-
 **Ability fallback** ([special-vocabulary.md](docs/special-vocabulary.md#ability)):
 - `ABIL` (hostless / clause-wide ability root)
 

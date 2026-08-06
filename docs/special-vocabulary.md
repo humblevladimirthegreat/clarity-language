@@ -5,7 +5,7 @@ This page is the source of truth for **special morphology and closed roots** tha
 
 Ordinary `/h/` / `/w/` content still defaults to values unless the form is already in a clearer closed subcategory (restrictors, special vocabulary here, evidentiality/mood, degree, adjuncts, numbers) — see [values.md](values.md#default-reading-of-h-and-w).
 
-**Not here:** *worse than Average|…* benchmarks are NP comparees on comparative fences — [comparatives.md § Judgment benchmarks](comparatives.md#judgment-benchmarks). **Classification** (kind as predicative `/ɡ/`) and closed **`SAME`** **identity** (`goguno` 🪙 + `/b/`) live in **[predication.md](predication.md)** — not a general *to-be* verb and not `x`-compounds. **Causation** / necessary–sufficient reuses joins and these join-relations — **[causation.md](causation.md)** — not a new mood or `x`-compound on this page (optional **`CAUSE`** mood = lexicon **`erage`** ⚙️ *mechanism* later). **Numbered alternatives** (ideation *problem1* / *solution2* / *goal3*) is style + lexicon on free ordinals — [numbered alternatives](#numbered-alternatives) below — **not** new morphology.
+**Not here:** *worse than Average|…* benchmarks are NP comparees on comparative fences — [comparatives.md § Judgment benchmarks](comparatives.md#judgment-benchmarks) (lexicon **-n** comparees; **Everyone** = bare **`zuan`**; normative **Mine** = **`zivox+1n`** under [numeric derivation](#numeric-derivation) below). **Classification** (kind as predicative `/ɡ/`) and closed **`SAME`** **identity** (`goguno` 🪙 + `/b/`) live in **[predication.md](predication.md)** — not a general *to-be* verb and not `x`-compounds. **Causation** / necessary–sufficient reuses joins and these join-relations — **[causation.md](causation.md)** — not a new mood or `x`-compound on this page (optional **`CAUSE`** mood = lexicon **`erage`** ⚙️ *mechanism* later). **Numbered alternatives** (ideation *problem1* / *solution2* / *goal3*) is style + lexicon on free ordinals — [numbered alternatives](#numbered-alternatives) below — **not** new morphology.
 
 ## Join-act verbs (`v*n`)
 <a id="join-act-verbs"></a>
@@ -759,7 +759,7 @@ Single-digit scalars only. Writing **must** include the marker (**`+N`** / **`-N
 
 | `+N` | Strong reading | Example | `-N` privative | Example |
 |------|----------------|---------|----------------|---------|
-| **`ROOTx+1`** | unit / primary / singleton | `z<voice>x+1l` — *a single / primary voice* | non-unitary / indistinct / not-a-one | `z<voice>x-1l` — *an indistinct / non-singular voice* |
+| **`ROOTx+1`** | unit / primary / singleton | `z<voice>x+1l` — *a single / primary voice*; **`zivox+1n`** — [personal standard](comparatives.md#mine-vs-speaker) (normative Mine; host = [speaker](pronouns.md#special-pronouns) **`ivo`**) | non-unitary / indistinct / not-a-one | `z<voice>x-1l` — *an indistinct / non-singular voice* |
 | **`ROOTx+2`** | dual / mutual / reciprocal / pair | `g<duty>x+2l` — *mutual duty* | non-reciprocal / one-sided / unpaired | `g<duty>x-2l` — *one-sided duty* |
 | **`ROOTx+3`** | triad / triplet / 3-part / ternary | `z<dialog>x+3l` — *a three-part dialogue* | non-tripartite / collapsed-from-three | `z<government>x-3l` — *non-tripartite government* |
 | **`ROOTx+4`** | quad / 4-part / square / frame | `z<court>x+4l` — *a four-part / framed court* | unframed / out-of-box / unbound | `z<idea>x-4l` — *an unframed idea* |
