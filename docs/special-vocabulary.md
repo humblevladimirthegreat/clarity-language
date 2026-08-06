@@ -5,7 +5,7 @@ This page is the source of truth for **special morphology and closed roots** tha
 
 Ordinary `/h/` / `/w/` content still defaults to values unless the form is already in a clearer closed subcategory (restrictors, special vocabulary here, evidentiality/mood, degree, adjuncts, numbers) — see [values.md](values.md#default-reading-of-h-and-w).
 
-**Not here:** *worse than Average|…* benchmarks are NP comparees on comparative fences — [comparatives.md § Judgment benchmarks](comparatives.md#judgment-benchmarks) (lexicon **-n** comparees; **Everyone** = bare **`zuan`**; normative **Mine** = **`zivox+1n`** under [numeric derivation](#numeric-derivation) below). **Classification** (kind as predicative `/ɡ/`) and closed **`SAME`** **identity** (`goguno` 🪙 + `/b/`) live in **[predication.md](predication.md)** — not a general *to-be* verb and not `x`-compounds. **Causation** / necessary–sufficient reuses joins and these join-relations — **[causation.md](causation.md)** — not a new mood or `x`-compound on this page (optional **`CAUSE`** mood = lexicon **`erage`** ⚙️ *mechanism* later). **Numbered alternatives** (ideation *problem1* / *solution2* / *goal3*) is style + lexicon on free ordinals — [numbered alternatives](#numbered-alternatives) below — **not** new morphology.
+**Not here:** *worse than Average|…* benchmarks are NP comparees on comparative fences — [comparatives.md § Judgment benchmarks](comparatives.md#judgment-benchmarks) (lexicon **-n** comparees; **Everyone** = bare **`zuan`**; normative **Mine** = **`zivox+1n`** under [numeric derivation](#numeric-derivation) below). **Classification** (kind as predicative `/ɡ/`) and closed **`SAME`** **identity** (`goguno` 🪙 + `/b/`) live in **[predication.md](predication.md)** — not a general *to-be* verb and not `x`-compounds. **Causation** / necessary–sufficient reuses joins and these join-relations — **[causation.md](causation.md)** — not a new mood or `x`-compound on this page (optional **`CAUSE`** mood = lexicon **`erage`** ⚙️ *mechanism*; do not reuse for NATURAL). **Numbered alternatives** (ideation *problem1* / *solution2* / *goal3*) is style + lexicon on free ordinals — [numbered alternatives](#numbered-alternatives) below — **not** new morphology.
 
 ## Join-act verbs (`v*n`)
 <a id="join-act-verbs"></a>
@@ -488,12 +488,12 @@ PoS + HOST + x + {a|u} + {-l|-m|-n|-r}
 | `…singxam` | can sing; capability open to change |
 | `…singxan` | can sing; claim treated as fixed |
 
-### Fallback: closed `ABIL` root
+### Fallback: closed `ABIL` root (`egera`)
 
-When there is **no single host root** (complex VP, hostless *I can’t*, or ability as a floating adverb), use a closed **ability** root (lexicon form TBD; schematic `ABIL`):
+When there is **no single host root** (complex VP, hostless *I can’t*, or ability as a floating adverb), use closed **`ABIL`** = lexicon **`egera`** 🥣 *cereal* → *capacity*:
 
 ```
-[h|w] + ABIL + x + {a|u} + {-l|-m|-n|-r}
+[h|w] + egera + x + {a|u} + {-l|-m|-n|-r}
 ```
 
 | Prefix | Scope |
@@ -501,21 +501,23 @@ When there is **no single host root** (complex VP, hostless *I can’t*, or abil
 | `/h/` | clause-level capability claim (floats like other `/h/`) |
 | `/w/` | capability framed on the preceding `/ɡ/` |
 
-Bare `h<ABIL>l` / `w<ABIL>l` = ability **topic** only (ordinary [reference-suffix](reference-suffix.md) for now). Prefer **host+`xu`/`xa`** whenever the activity fits one root.
+**Conceptual metaphor:** a bowl holds **what it can** — hostless ability names that capacity without naming one activity root. Ordinary content still available (`zegeral` *cereal* / *a capacity*). Prefer **host+`xu`/`xa`** whenever the activity fits one root.
+
+Bare `hegeral` / `wegeral` = ability **topic** only (ordinary [reference-suffix](reference-suffix.md) for now).
 
 ### Stances
 
 | Form | Stance | Gloss |
 |------|--------|--------|
 | bare host (no `x`) | ordinary word | no ability claim |
-| bare **`ABIL`** (no `x`) | **Topic** | Ability named only |
+| bare **`egera`** (no `x`) | **Topic** | Ability named only |
 | **`xa`** | **Capable** | Capability present / claimed |
 | **`xu`** | **Incapable** | Capability denied — ship this first |
 
 ### Endings — changeability only
 <a id="ability-changeability"></a>
 
-On ability **`xa`** and **`xu`** (host-attached or `ABIL`), **-l / -m / -n / -r** are **changeability** — the same table as unmet values ([values.md § Changeability](values.md#value-changeability)). Not contact channel, preference standing, or prescription force.
+On ability **`xa`** and **`xu`** (host-attached or **`egera`**), **-l / -m / -n / -r** are **changeability** — the same table as unmet values ([values.md § Changeability](values.md#value-changeability)). Not contact channel, preference standing, or prescription force.
 
 | Ending | Changeability | Mnemonic |
 |--------|---------------|----------|
@@ -545,20 +547,20 @@ On ability **`xa`** and **`xu`** (host-attached or `ABIL`), **-l / -m / -n / -r*
 | *can’t* (may learn / unknown) … | `v<HOST>xum` |
 | *impossible* / *can’t* (fixed) … | `v<HOST>xun` |
 | *won’t* (choice, not inability) … | `v<HOST>xur` |
-| hostless / clause-wide *can’t* (temporary) | `h<ABIL>xul` |
+| hostless / clause-wide *can’t* (temporary) | `hegeraxul` |
 
-Hosts *can't* / *cannot* / *unable* / *incapable* / *impossible* collapse to **`xu` + changeability** on the activity root when there is one; otherwise on **`ABIL`**.
+Hosts *can't* / *cannot* / *unable* / *incapable* / *impossible* collapse to **`xu` + changeability** on the activity root when there is one; otherwise on **`egera`**.
 
 ### Ability vs values vs restrictors
 
 | Claim | Prefer |
 |-------|--------|
 | Can’t / can **this** activity or property | **host + `xu` / `xa`** (this page) |
-| Clause-wide / hostless capability | **`h<ABIL>xu…`** / **`w<ABIL>xu…`** |
+| Clause-wide / hostless capability | **`hegeraxu…`** / **`wegeraxu…`** |
 | Need unmet + changeability | need **`xu…`** — [values](values.md) (`hodoloxun` ≠ “can’t competence”) |
 | When / never / sometime the host applies | [restrictors](restrictors.md) (`hal`, `har`, …) |
 
-Stack when useful: e.g. can’t-sing plus unmet competence (`v<sing>xum` + `hodoloxum`). Do **not** use bare **`hal`** (*never*) as a substitute for tagged incapability. Do **not** read need-root **`xu`** as ability.
+Stack when useful: e.g. can’t-sing plus unmet competence (`v<sing>xum` + `hodoloxum`). Do **not** use bare **`hal`** (*never*) as a substitute for tagged incapability. Do **not** read need-root **`xu`** as ability. Do **not** reuse unspecified need **`egege`** 🥚 (*potential*) as **`ABIL`**.
 
 ### Examples
 
@@ -570,12 +572,11 @@ Stack when useful: e.g. can’t-sing plus unmet competence (`v<sing>xum` + `hodo
 | `v<sing>xur` | won’t sing (choice), not can’t |
 | `g<lead>xam` | can lead; capability open to change |
 | `v<sing>xum hodoloxum` | can’t sing (modifiable) **and** unmet competence |
-| `… h<ABIL>xul` | can’t **right now** (no single host / clause-wide) |
-| `h<ABIL>l` | ability (**topic** only) |
+| `… hegeraxul` | can’t **right now** (no single host / clause-wide) |
+| `hegeral` | ability (**topic** only) |
 
 ### Out of scope (for now)
 
-- Lexicon phonetic form of the fallback **`ABIL`** root.
 - **`xe`** / **`xo`** on ability hosts (motive / prescription stay on [needs](values.md)).
 - Whose-ability / evidentiality on the denial (use ordinary mood `/h/` later if needed).
 - Positive *can* forced on every clause (optional **`xa`** only).
@@ -585,7 +586,7 @@ Stack when useful: e.g. can’t-sing plus unmet competence (`v<sing>xum` + `hodo
 - Ability is **not** a need; do **not** apply contact / preference-standing / prescription-force tables to it.
 - Defined ability stances are **`xa`** and **`xu`** only; endings on those compounds = **changeability** only.
 - Need roots + `x…` stay [values](values.md); never reinterpret as host-ability.
-- Prefer host-attached forms; use **`ABIL`** only when there is no suitable single host.
+- Fallback **`ABIL`** is **`egera`** (*capacity*); prefer host-attached forms; use **`egera`** only when there is no suitable single host.
 - Do **not** overload [restrictors](restrictors.md) as ability morphology.
 - Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)); host **`/v/`** / **`/ɡ/`** ability compounds follow ordinary plurality rules for that PoS.
 

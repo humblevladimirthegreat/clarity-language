@@ -18,7 +18,7 @@ Ordinary content words under **`/h/`** (clause) and **`/w/`** (prior `/ɡ/`) are
 | Time / place / manner / recipient adjuncts | ordinary adverb lexicon under `/h/` |
 | Number words under `/h/` | `h+…`, `h-…`, … — [numbers](numbers.md) |
 
-Parser cue: restrictor joins are PoS + join-vowel + **-l** / **-m** / **-r** (`hal`). PoS + join-vowel + **-n** under `/h/` → [join-relation](special-vocabulary.md#join-relations) (`b-… han`). **Need root** + `x…` → values (this page). **Other root** + **`xa` / `xu`** → [ability](special-vocabulary.md#ability). Closed **`ABIL`** is the hostless ability fallback. After PoS, a **single** vowel **a** / **u** / **o** then `x` then a **longer** root + ending → [role compound](special-vocabulary.md#role-compounds) (not a value). After PoS, a **single** vowel **a** / **e** / **o** / **u** then `x` then a **single** EDGE vowel + ending → [span form](spans.md) (`daxal`, `daxol`, `daxan`, `daxar`, …); exact **`xuxul`** / **`xuxur`** / **`xuxun`** / **`xuxum`** → span close — not a value. Full mid-word **`x`** map: **[x-compounds.md](x-compounds.md)**.
+Parser cue: restrictor joins are PoS + join-vowel + **-l** / **-m** / **-r** (`hal`). PoS + join-vowel + **-n** under `/h/` → [join-relation](special-vocabulary.md#join-relations) (`b-… han`). **Need root** + `x…` → values (this page). **Other root** + **`xa` / `xu`** → [ability](special-vocabulary.md#ability). Closed **`ABIL`** fallback is **`egera`** (*capacity*). After PoS, a **single** vowel **a** / **u** / **o** then `x` then a **longer** root + ending → [role compound](special-vocabulary.md#role-compounds) (not a value). After PoS, a **single** vowel **a** / **e** / **o** / **u** then `x` then a **single** EDGE vowel + ending → [span form](spans.md) (`daxal`, `daxol`, `daxan`, `daxar`, …); exact **`xuxul`** / **`xuxur`** / **`xuxun`** / **`xuxum`** → span close — not a value. Full mid-word **`x`** map: **[x-compounds.md](x-compounds.md)**.
 
 | Prefix | Scope |
 |--------|--------|
@@ -226,7 +226,7 @@ Elsewhere, values are optional — do not tax every clause.
 - **Whose-need** / **care direction** (thrive / guard) on prescription — optional later dimensions; force is the primary `xo` split.
 - **Listener / third-person possessives** — no forced value (reminder is for self-gratitude / self-ought / self-judgment).
 
-**Incapability** compounds onto the **activity/property host** (`v<sing>xun`) or fallback **`ABIL`** — [special-vocabulary.md](special-vocabulary.md#incapability) — not onto need compounds (`hodoloxun` remains unmet competence).
+**Incapability** compounds onto the **activity/property host** (`v<sing>xun`) or fallback **`egera`** (**`ABIL`**) — [special-vocabulary.md](special-vocabulary.md#incapability) — not onto need compounds (`hodoloxun` remains unmet competence).
 
 ## Constraints
 

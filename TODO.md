@@ -2,20 +2,6 @@
 -consider numeric derivation uses phonetic spelling
 -change values to compassion, rationality, empowerment, in that order
 
-## TBD lexicon forms (phonetics still schematic)
-
-Closed senses with fixed jobs but no published Clarity root yet:
-
-**Ability fallback** ([special-vocabulary.md](docs/special-vocabulary.md#ability)):
-- `ABIL` (hostless / clause-wide ability root)
-
-**Clause condition / cause relations** ([causation.md](docs/causation.md#if-vs-iff)):
-- `IF`, `IFF`, *because* (and related `/h/`+`/b/` relation roots)
-- optional **CAUSE** mood (candidate `erage` ⚙️ *mechanism* — not NATURAL)
-
-**Sentence linkers** (`/x/`):
-- *therefore*, *however*, *meanwhile*, *next*, *but*
-
 ## TBD number / derivation forms (readings not assigned)
 
 Not lexicon roots — stem shapes still undefined:

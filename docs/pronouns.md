@@ -171,7 +171,9 @@ Closed discourse-role roots (not letter/full-root **-r** from ordinary anteceden
 | `jal zivon v<write>l dilen` | *I write you* (letter / message — same roots) |
 | `jal zenun v<arrived>l` | *Someone (a person) arrived* |
 | `jal zivon v<told>l d<Sam>n dodol jal z<Lea>n v<left>l` | *I told Sam that Lea left* |
-| `… h<because>l bodol jal …` | *… because [dependent]* |
+| `… hurugul bodol jal …` | *… because [dependent]* |
+| `… horodol bodol jal …` | *… if [dependent]* (one-way) |
+| `… heluvel bodol jal …` | *… iff [dependent]* (both ways) |
 
 **Group containing** a referent is not a separate special pronoun: append **-sh** where [plurality](plurality.md) allows it (`zivonsh` = the group containing the speaker; inclusive *we* = join of speaker + listener, not a fifth root).
 
