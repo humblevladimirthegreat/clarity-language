@@ -10,25 +10,42 @@ Clarity has the following goals for its phonology:
 
 I chose vowels that aren't fully open or fully closed so you don't have to do [vowel modification](https://www.singwise.com/articles/vowels-formants-modifications) (see section "VOWEL MODIFICATION ('COPERTURA')") to sing them in your high/low range.
 
-e /e̞/ \- o /o̞/ \- u /ɶ/ \- a /ɑ/  (roundedness is non-contrastive)
+Cue words are Standard American English:
 
-Note that stacked vowels are pronounced as separate syllables:
+| Letter | IPA | English cue |
+|--------|-----|-------------|
+| **e** | /e̞/ | *bet* |
+| **a** | /æ/ | *cat* |
+| **o** | /o/ | *coat* (don't glide, like Spanish *no*) |
+| **u** | /ɑ/ | *father* |
+
+Stacked vowels are pronounced as separate syllables:
 juon = ju'on
+
+Design note: I know u=/ɑ/ doesn't have a good mnemonic, you'll just have to memorize that. It was the most singable leftover vowel distinct from the others and neither of the leftover i/u were a good letter fit. The more common ʌ as in "cup" is bad for sustained singing. The better ɔ in "sought" is too close to /o/ and often merged.
 
 ### Consonants at beginning of syllables
 
 The language has no distinction between voiced/unvoiced, but the voiced version is preferred because you can sustain notes across letters (voiceless requires briefly stopping the airflow). You can still use the unvoiced for stylistic reasons.
 
-h /ɣ/, w /w/, g /ɡ/, d /d/, j /dʑ/, b /b/, z /z/, m /m/, n /n/, v /v/, x /ʒ/
+| Letter | IPA | English cue |
+|--------|-----|-------------|
+| **h** | /ɦ/ | *ahead* |
+| **w** | /w/ | *we* |
+| **g** | /ɡ/ | *go* |
+| **d** | /d/ | *do* |
+| **j** | /j/ | *yes* (Germanic j as in "ja") |
+| **b** | /b/ | *be* |
+| **z** | /z/ | *zoo* |
+| **m** | /m/ | *me* |
+| **n** | /n/ | *no* |
+| **v** | /v/ | *vie* |
+| **x** | /ʒ/ | *vision* (the *si*) |
+
+Word-final only (not ordinary onsets): reference suffixes **-l** / **-m** / **-n** / **-r**, and plural digraph **sh** /ʃ/ (*ship*) — see Phonotactics below.
 
 unused potential beginning clusters:
 gw, vw, xw, bl (should not mean left aligned b)
-
-### Consonants at end of syllables (except end of word)
-
-g /ɡ/, d /d/, j /dʑ/, b /b/, z /z/, m /m/, v /v/  (cannot double with the second beginning consonant)
-
-(**x** /ʒ/ is not used as a syllable coda or as an ordinary root consonant; see compounds below.)
 
 ### Phonotactics
 
