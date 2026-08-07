@@ -15,14 +15,12 @@ Cue words are Standard American English:
 | Letter | IPA | English cue |
 |--------|-----|-------------|
 | **e** | /e̞/ | *bet* |
-| **a** | /æ/ | *cat* |
-| **o** | /o/ | *coat* (don't glide, like Spanish *no*) |
-| **u** | /ɑ/ | *father* |
+| **u** | /ʌ/ | *but* |
+| **o** | /o/ | *boat* (don't glide, like Spanish *no*) |
+| **a** | /ɑ/ | *father* |
 
 Stacked vowels are pronounced as separate syllables:
 juon = ju'on
-
-Design note: I know u=/ɑ/ doesn't have a good mnemonic, you'll just have to memorize that. It was the most singable leftover vowel distinct from the others and neither of the leftover i/u were a good letter fit. The more common ʌ as in "cup" is bad for sustained singing. The better ɔ in "sought" is too close to /o/ and often merged.
 
 ### Consonants at beginning of syllables
 
