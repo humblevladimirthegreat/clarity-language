@@ -187,24 +187,29 @@ The left edge of a **new turn** is a `/j/` cluster in this order:
 
 When force is written, it closes the opener and does not appear in the clause body. A new `/j/` turn (after any vocatives/interjections/discourse reviser of the new sentence) starts a new utterance. **`/x/`** continues under inherited force — do **not** repeat **`jal`** on each conjunct. That split keeps sentence boundaries clear under free word order.
 
-**Vocatives and interjections appear only in this left-edge cluster** (or as bare utterances below). They must not occur mid-clause or at the end of a sentence — otherwise a trailing `/j/` could be read as either the end of the current sentence or the start of the next. After a clause body, any non-force `/j/` begins the next utterance’s opener. Mid-sentence asides use [aside fences](spans.md) (prefer `/h/`: `hexal` / `h(…)` / … + `xuxul`), not floating `/j/`.
+**Vocatives and interjections appear only in this left-edge cluster** (or as bare utterances below). They must not occur mid-clause or at the end of a sentence — otherwise a trailing `/j/` could be read as either the end of the current sentence or the start of the next. After a clause body, any non-force `/j/` begins the next utterance’s opener. Mid-sentence asides use [aside fences](spans.md) (prefer `/h/`: `hexal` / `h(…)` / … + `xuxul`), not floating `/j/`. **Polar “tags”** (*…, yes*) are a **second bare turn** after a period (`zumogon v<go>l. jael.`), not same-sentence final `/j/`.
 
 Bare vocatives and exclamations with no clause (e.g. only calling a name, only *wow*, or a bare polar stance **`jael`** / **`juel`**) use `/j/` without written clause force (polar **`-l`** still implies **`jal`** when a body follows).
 
 ### Orthography and prosody (periods)
 <a id="orthography-and-prosody-periods"></a>
 
-Writing uses **periods** (and aligned **`?`** / **`!`**) as utterance boundaries. Speech matches:
+Writing uses **periods** (and aligned **`?`** / **`!`**) as **body** boundaries. Speech matches. **Force domains** are not reset by every period:
 
 | Writing | Prosody | Force |
 |---------|---------|--------|
-| `.` | Fall on last stress + short pause; pitch reset on next **`/j/`** turn | Default **`jal`** (or inherited assertoric) |
+| `.` | Fall on last stress + short pause | Closes the prior **body**. Next stretch still defaults to **`jal`** unless a new **`/j/`** turn, marked force, or polar sets otherwise |
+| Next **`/j/`** turn (polar, vocative, marked force) | Pitch **reset** into the turn | New turn; polar **`-l`** / **`-m`** imply **`jal`** / **`jam`** |
+| Bare body or `REV BODY` after `.` | No full reset required | Implied **`jal`** (or **`jam`** only if a soft polar / written **`jam`** said so) |
 | `?` | Rise or high level on last stress | Question (**`jol`** / **`jom`**) — force usually written |
 | `!` | Sharp or clipped fall | Directive / prohibition — force usually written |
 | Soft assert / soft polar **`-m`** | Lighter fall; boundary still clear | **`jam`** (implied or written) |
-| **`/x/`** continue (clause join or linker) | Dip or short pause; **no** full pitch reset | Inherit opener force; prefer comma or no full stop **between** fence conjuncts; period after the **whole** joined stretch |
+| **`/x/`** continue (clause join) | Dip or short pause; **no** full pitch reset | Inherit opener force; **no** period **inside** the fence; period after the **whole** joined stretch |
+| **`/x/`** linker after `.` (`xamalal …`) | Dip into the linker; no turn reset | Inherit prior illocution; may start a new written sentence under that force |
 
-Period marks **closure**, not commitment strength — **`jal`** vs **`jam`** and polar **`-l`** vs **`-m`** carry that. Do not use a period **between** conjuncts of one [clause `/x/` fence](#discourse-markers-x) when they share one force.
+Period marks **body closure**, not commitment strength and not automatic turn reset — **`jal`** vs **`jam`** and polar **`-l`** vs **`-m`** carry commitment; a new **`/j/`** cluster starts a new turn. Do not use a period **between** conjuncts of one [clause `/x/` fence](#discourse-markers-x) when they share one force.
+
+**Speech / song:** when pauses are weak (singing, fast free order), prefer an audible left cue after silence — polar, vocative, or marked force — rather than a bare body with only implied **`jal`**. Writing still uses `.` for body edges.
 
 ### Clause force
 <a id="clause-force"></a>

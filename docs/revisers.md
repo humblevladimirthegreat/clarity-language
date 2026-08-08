@@ -140,7 +140,7 @@ Discourse revisers glue **this utterance** (or conjunct / linker stretch) to **p
 
 On a **non-initial** conjunct under a [clause `/x/` fence](coordination.md#clause-level-coordination), **`REV`** sits immediately before that conjunct’s body (no `/j/` force — inherited illocution). Example: `A al B xam` → *A and additionally B*.
 
-Before an **`/x/`** sentence linker (*therefore*, *however*, …), **`REV`** scopes the linker+body stretch: `al xamalal …` → *Additionally, therefore …* (inherits assertoric force unless a new turn opens).
+Before an **`/x/`** sentence linker (*therefore*, *however*, …), **`REV`** scopes the linker+body stretch: `al xamalal …` → *Additionally, therefore …* (inherits assertoric force unless a new turn opens). Treat reviser+linker stacking as **rare**; prefer plain `al …` or plain `xamalal …` when one cue is enough.
 
 ## Discourse examples (schematic)
 

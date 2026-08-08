@@ -49,7 +49,7 @@ Content-word anaphor **-r** is not a fill gap — only [join **-r**](coordinatio
 
 Closed **`/j/`** particles — **interjections**, not clause force. Shape is **`j` + stacked join vowel + `-l` / `-m`** (same letter jobs as [join series](coordination.md#join-type-vowel-series)). They mark a **turn** ([utterance markers](language-reference.md#utterance-markers-j)) — toward another speaker or as a **self-turn** in monologue. They sit in the left-edge interjection slot, or stand alone as a bare utterance. Do **not** use **-n** or **-r** on these forms. Do **not** use them as force before a clause body.
 
-**Implied force:** polar **`-l`** implies **`jal`**; **`-m`** implies **`jam`**. Prefer **`jael …`** over **`jael jal …`** when a body follows. Marked non-default force (**`jol`**, **`jel`**, **`jul`**, …) is still written when needed.
+**Implied force:** polar **`-l`** implies **`jal`**; **`-m`** implies **`jam`**. Prefer **`jael …`** over **`jael jal …`** when a body follows. Soft polar + body is soft stance **and** soft assert (`jaem zumogon v<go>l` = provisional endorse + hedged claim), not soft stance under hard **`jal`**. Marked non-default force (**`jol`**, **`jel`**, **`jul`**, …) is still written when needed.
 
 **Letter jobs** (not emotion valence — that is [values](values.md) / [emotion compose](special-vocabulary.md#emotion-compose)):
 
@@ -109,9 +109,11 @@ Polar particles are **high-frequency discourse glue**, not only answers to **`jo
 **Shapes:**
 
 - **Bare turn** — `jael.` / `jaol.` / `juel.` (complete utterance; implied **`jal`**).
-- **Stance + body** — `jael zivon v<go>l.` (*yes — I go*); no restated **`jal`**.
-- **Tag** — `… jael.` / `… jaom.` at end of own claim (*…, yes.* / *…, okay.*).
+- **Stance + body** — `jael zumogon v<go>l.` (*yes — I go*); no restated **`jal`**.
+- **Confirm tag** — a **second bare turn** after a period (`zumogon v<go>l. jael.` = *I go. Yes.*), not same-sentence final `/j/` ([left-edge rules](language-reference.md#left-edge-order-and-sentence-boundaries)).
 - **Monologue self-turn** — answer a silent prior (expectation, option, draft claim, reader objection): `juel` before correction (*No — the real issue is…*); `jaol` before next step (*So — we do X*); `jael` after locking a point (*Yes — that stands*).
+
+**Anti-filler:** do **not** sprinkle **`jael`** as empty English *yeah / right*. Keep **`ae`** (match / lock / *true*) distinct from **`ao`** (uptake / proceed / *ok*). In monologue, lean **`jaol`** for forward steps; reserve **`jael`** for “this holds / matches.”
 
 **Same-force continuation** after a polar+body beat uses **`/x/`** ([clause joins](coordination.md#clause-level-coordination), linkers) — not another polar unless taking a **new** stance turn.
 

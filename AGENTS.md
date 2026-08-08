@@ -4,7 +4,7 @@ Constructed language and tooling that encode psychologically useful distinctions
 
 Always call the language **Clarity** (never Geran or other legacy names).
 
-This repo is TypeScript + ANTLR tooling (`grammar/*.g4` → `src/generated/`). A web UI may come later.
+This repo is TypeScript tooling around the language docs and lexicon. A web UI may come later.
 
 ## Sources of truth
 
@@ -30,7 +30,6 @@ This repo is TypeScript + ANTLR tooling (`grammar/*.g4` → `src/generated/`). A
 | `data/lexicon-overlays.csv` | Closed overlay inventory: **`(sense_form, pos)`** rows with **`definition`** and **`mnemonic`** for special vocabulary only — [sense-form](docs/special-vocabulary.md#sense-form). |
 | `docs/x-compounds.md` | Mid-word **`x`** **parser families** (span vs role vs values/ability vs numeric derivation vs ordinary compound) — linked from the language reference / phonology. |
 | `TODO.md` | Planned major revision notes (PoS prefixes, word-final consonants, pronoun/number rules, phonology). Fold into the reference, `phonology.md`, and `pronouns.md` as work proceeds. |
-| `grammar/*.g4` | Existing ANTLR parsers for tooling experiments. **Do not change for now.** They may lag the reference; do not treat them as design authority. |
 
 ## Psychological morphology
 
@@ -38,9 +37,8 @@ Clarity encodes psychologically useful distinctions natively (no English tag ove
 
 ## Tooling notes
 
-- Node ≥ 20; `npm run generate` / `npm run parse` exist for the current grammars — leave grammars alone unless explicitly asked.
-- Generated parsers live in `src/generated/` (gitignored).
-- Language design work goes through `docs/language-reference.md` (and `TODO.md` until absorbed).
+- Node ≥ 20.
+- Language design work goes through `docs/language-reference.md` (and `TODO.md` until absorbed). Do **not** treat deleted legacy ANTLR grammars or any future parsers as design authority until they match the docs.
 - **Orthography:** actual Clarity has **no hyphen** after the PoS letter (`zumogon`, not `z-umogo`); foreign roots use `PoS<…>ENDING` (e.g. `d<english>l`); opaque spans take no ending after `>` (`d<sushi>`). Prefer published lexicon roots when the gloss matches; use **-m** for metaphorical gloss matches — see [language-reference.md § Orthography](docs/language-reference.md#orthography).
-- **Utterance framing:** **`/j/`** = turn (vocatives, [polar stance](docs/questions.md#yes-no-polarity), marked force); **`/x/`** = same-force forward motion (clause joins, linkers — inherit force). Default assertoric **`jal`** is **omissible** when recoverable (period, polar **-l** / **-m**, `/x/` continue, same-force **`odo`** dependent). Do not require leading **`jal`** on every example sentence.
+- **Utterance framing:** **`/j/`** = turn (vocatives, [polar stance](docs/questions.md#yes-no-polarity), marked force); **`/x/`** = same-force forward motion (clause joins, linkers — inherit force). Default assertoric **`jal`** is **omissible** when recoverable (period, polar **-l** / **-m**, `/x/` continue, same-force **`odo`** dependent). Do not require leading **`jal`** on every example sentence. Polar confirm tags are a **second bare turn** after `.` (`…. jael.`), not same-sentence final `/j/`.
 - After editing Markdown under `docs/` (or `AGENTS.md` / `TODO.md`), run **`npm run lint:md`** — it fails on unclosed `*` / `**` and on slash-joined emphasis (`*a*/*b*`, which breaks Cursor’s rich preview with `italic,italic`). Prefer spaces (`*a* / *b*`) or one span (`*a/b*`). Avoid nesting `**…**` inside already-bold text; in bold headings/bullets put forms in backticks only (`**Ranked (`e` / `ae`)**`, not `**ae**` inside).

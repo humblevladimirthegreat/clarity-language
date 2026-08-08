@@ -5,12 +5,11 @@
   "containerEnv": {
     "LM_STUDIO_BASE_URL": "http://host.docker.internal:1234/v1"
   },
-  "postCreateCommand": "npm install && npm run generate",
+  "postCreateCommand": "npm install",
   "customizations": {
     "vscode": {
       "extensions": [
-        "dbaeumer.vscode-eslint",
-        "mike-lischke.vscode-antlr4"
+        "dbaeumer.vscode-eslint"
       ],
       "settings": {
         "editor.formatOnSave": true,

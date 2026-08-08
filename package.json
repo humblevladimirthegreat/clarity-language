@@ -1,7 +1,7 @@
 {
   "name": "clarity-language",
   "version": "0.1.0",
-  "description": "Clarity Language tooling — ANTLR parsers and agent-facing APIs",
+  "description": "Clarity Language tooling — lexicon helpers and agent-facing docs",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -12,12 +12,10 @@
     }
   },
   "scripts": {
-    "generate": "antlr-ng -Dlanguage=TypeScript -l false -o src/generated --exact-output-dir true grammar/SentenceParser.g4 grammar/WordParser.g4",
-    "build": "npm run generate && tsc",
+    "build": "tsc",
     "dev": "tsx src/index.ts",
     "typecheck": "tsc --noEmit",
     "lint:md": "node scripts/lint-md-balance.mjs",
-    "parse": "tsx src/cli.ts",
     "convert-word": "tsx scripts/convert-word.ts",
     "metaphor-assign": "tsx scripts/phase5-metaphor-assign.ts",
     "metaphor-assign-test": "tsx scripts/lib/metaphor-assign-data.test.ts && tsx scripts/lib/llm-client.test.ts",
@@ -32,17 +30,15 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "antlr4ng": "^3.0.16",
     "minisearch": "^7.2.0"
   },
   "devDependencies": {
-    "esbuild": "^0.25.0",
     "@tiptap/core": "^3.29.1",
     "@tiptap/markdown": "^3.29.1",
     "@tiptap/pm": "^3.29.1",
     "@tiptap/starter-kit": "^3.29.1",
     "@types/node": "^26.1.1",
-    "antlr-ng": "^1.0.10",
+    "esbuild": "^0.25.0",
     "happy-dom": "^20.11.1",
     "tsx": "^4.23.1",
     "typescript": "^5.9.3"
