@@ -72,8 +72,8 @@ Parts of speech are determined by a prefix consonant added before each word. Wor
 
 | Actual writing | Not this |
 |----------------|----------|
-| `zivon` | ~~`z-ivon`~~ |
-| `dilen` | ~~`d-ilen`~~ |
+| `zumogon` | ~~`z-umogo`~~ |
+| `dehadon` | ~~`d-ehado`~~ |
 | `glulebul` | ~~`gl-ulebul`~~ / ~~`gl-bluel`~~ |
 
 **Foreign / non-Clarity roots** sit in **`<>`**, with the reference suffix **after** the closer:
@@ -280,7 +280,7 @@ Numeral grammar (digit roots, [digitless / zero-group forms](numbers.md#zero-dig
 
 # Comparatives, superlatives, and equatives
 
-Scalar comparison (ranked **`e` / `oe` / `ue`** *more / …-est*, **`ae`** *as … as*, distributive **`a`** + SHARED `/ɡ/`, measured differentials, [judgment benchmarks](comparatives.md#judgment-benchmarks) *worse than Average|…* via **`ue`** + **`zonugon`** / **`zaheman`** / **`zivoxrawon`** / **`zulohun`** / **`zaloban`** / **`zuan`** — performance vs personal standard: **`zivon`** vs **`zivoxrawon`**): **[comparatives.md](comparatives.md)**. Measure NP shape (unit + amount): **[numbers.md § Measure phrases](numbers.md#measure-phrases)**.
+Scalar comparison (ranked **`e` / `oe` / `ue`** *more / …-est*, **`ae`** *as … as*, distributive **`a`** + SHARED `/ɡ/`, measured differentials, [judgment benchmarks](comparatives.md#judgment-benchmarks) *worse than Average|…* via **`ue`** + **`zonugon`** / **`zaheman`** / **`zumogoxrawon`** / **`zulohun`** / **`zaloban`** / **`zuan`** — performance vs personal standard: **`zumogon`** vs **`zumogoxrawon`**): **[comparatives.md](comparatives.md)**. Measure NP shape (unit + amount): **[numbers.md § Measure phrases](numbers.md#measure-phrases)**.
 
 # Predication (classification and identity)
 

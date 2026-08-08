@@ -5,7 +5,7 @@ This page is the source of truth for **special morphology and closed roots** tha
 
 Ordinary `/h/` / `/w/` content still defaults to values unless the form is already in a clearer closed subcategory (restrictors, special vocabulary here, evidentiality/mood, degree, adjuncts, numbers) — see [values.md](values.md#default-reading-of-h-and-w).
 
-**Not here:** *worse than Average|…* benchmarks are NP comparees on comparative fences — [comparatives.md § Judgment benchmarks](comparatives.md#judgment-benchmarks) (lexicon **-n** comparees; **Everyone** = bare **`zuan`**; normative **Mine** = **`zivoxrawon`** under [numeric derivation](#numeric-derivation) below). **Classification** (kind as predicative `/ɡ/`) and closed **`SAME`** **identity** (`goguno` 🪙 + `/b/`) live in **[predication.md](predication.md)** — not a general *to-be* verb and not `x`-compounds. **Causation** / necessary–sufficient reuses joins and these join-relations — **[causation.md](causation.md)** — not a new mood or `x`-compound on this page (optional **`CAUSE`** mood = lexicon **`erage`** ⚙️ *mechanism*; do not reuse for NATURAL). **Numbered alternatives** (ideation *problem1* / *solution2* / *goal3*) is style + lexicon on free ordinals — [numbered alternatives](#numbered-alternatives) below — **not** new morphology.
+**Not here:** *worse than Average|…* benchmarks are NP comparees on comparative fences — [comparatives.md § Judgment benchmarks](comparatives.md#judgment-benchmarks) (lexicon **-n** comparees; **Everyone** = bare **`zuan`**; normative **Mine** = **`zumogoxrawon`** under [numeric derivation](#numeric-derivation) below). **Classification** (kind as predicative `/ɡ/`) and closed **`SAME`** **identity** (`goguno` 🪙 + `/b/`) live in **[predication.md](predication.md)** — not a general *to-be* verb and not `x`-compounds. **Causation** / necessary–sufficient reuses joins and these join-relations — **[causation.md](causation.md)** — not a new mood or `x`-compound on this page (optional **`CAUSE`** mood = lexicon **`erage`** ⚙️ *mechanism*; do not reuse for NATURAL). **Numbered alternatives** (ideation *problem1* / *solution2* / *goal3*) is style + lexicon on free ordinals — [numbered alternatives](#numbered-alternatives) below — **not** new morphology.
 
 ## Sense-form overlays
 <a id="sense-form"></a>
@@ -45,10 +45,10 @@ Closed `/v/` verbs that **perform the join-series act** on an object. Spellings 
 
 | | Clarity | Gloss |
 |--|---------|--------|
-| refuse vs exclude | `jal zivon demadel vun` vs `jal zivon demadel vuan` | *I refuse meat* vs *I exclude meat* |
-| exclude vs anything but | `jal zivon d<nut>l vuan` vs `jal zivon d<nut>l vuon` | *I exclude nuts* vs *I bar nuts (anything else is fine)* |
-| one choice vs open picks | `jal zivon d<path>l von` vs `jal zivon d<path>l vaon` | *I choose that path (only)* vs *I pick that path (more may come)* |
-| prioritize vs try | `jal zivon d<fix>l ven` vs `jal zivon d<fix>l voen` | *I prioritize the fix* vs *I try the fix* |
+| refuse vs exclude | `jal zumogon demadel vun` vs `jal zumogon demadel vuan` | *I refuse meat* vs *I exclude meat* |
+| exclude vs anything but | `jal zumogon d<nut>l vuan` vs `jal zumogon d<nut>l vuon` | *I exclude nuts* vs *I bar nuts (anything else is fine)* |
+| one choice vs open picks | `jal zumogon d<path>l von` vs `jal zumogon d<path>l vaon` | *I choose that path (only)* vs *I pick that path (more may come)* |
+| prioritize vs try | `jal zumogon d<fix>l ven` vs `jal zumogon d<fix>l voen` | *I prioritize the fix* vs *I try the fix* |
 | *and then* (clauses) | `SENT₁ SENT₂ xan` | *SENT₁ and then SENT₂* — **not** `van` |
 
 ### Constraints
@@ -643,7 +643,7 @@ Bare event noun stays the event: `z<attack>l` / `z<attack>r` = *an / that attack
 
 | Clarity | Gloss |
 |---------|--------|
-| `jal zar divon v<attack>l` | *Someone attacked me* |
+| `jal zar dumogon v<attack>l` | *Someone attacked me* |
 | `jal zax<attack>r v<flee>l` | *The attacker fled* |
 | `zax<attack>l` | *an attacker* (kind; no discourse event required) |
 | `dux<attack>r` | *the one attacked* (as object now) |
@@ -763,7 +763,7 @@ Single-digit scalars only. Inventory / metalanguage writing uses the marker (**`
 
 | `+N` | Strong reading | Example | `-N` privative | Example |
 |------|----------------|---------|----------------|---------|
-| **`ROOTx+1`** | unit / primary / singleton | `z<voice>xrawol` — *a single / primary voice*; **`zivoxrawon`** — [personal standard](comparatives.md#mine-vs-speaker) (normative Mine; host = [speaker](pronouns.md#special-pronouns) **`ivo`**) | non-unitary / indistinct / not-a-one | `z<voice>xruwol` — *an indistinct / non-singular voice* |
+| **`ROOTx+1`** | unit / primary / singleton | `z<voice>xrawol` — *a single / primary voice*; **`zumogoxrawon`** — [personal standard](comparatives.md#mine-vs-speaker) (normative Mine; host = [speaker](pronouns.md#special-pronouns) **`umogo`**) | non-unitary / indistinct / not-a-one | `z<voice>xruwol` — *an indistinct / non-singular voice* |
 | **`ROOTx+2`** | dual / mutual / reciprocal / pair | `g<duty>xradul` — *mutual duty* | non-reciprocal / one-sided / unpaired | `g<duty>xrudul` — *one-sided duty* |
 | **`ROOTx+3`** | triad / triplet / 3-part / ternary | `z<dialog>xrarel` — *a three-part dialogue* | non-tripartite / collapsed-from-three | `z<government>xrurel` — *non-tripartite government* |
 | **`ROOTx+4`** | quad / 4-part / square / frame | `z<court>xramol` — *a four-part / framed court* | unframed / out-of-box / unbound | `z<idea>xrumol` — *an unframed idea* |

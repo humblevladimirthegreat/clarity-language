@@ -1,6 +1,6 @@
 # Comparatives, superlatives, and equatives
 
-This page is the source of truth for **scalar comparison**: *more … than*, *the …-est*, *as … as*, pointers for measured differentials (*two inches taller*), and **judgment benchmarks** (*worse than Average|Typical|Mine|Social|Professional|Everyone* — **`zonugon`** / **`zaheman`** / **`zivoxrawon`** / **`zulohun`** / **`zaloban`** / **`zuan`**). Fence join vowels, endings, and SHARED placement are defined in [coordination.md](coordination.md); this page says when those forms mean comparison rather than ordinary ranking or bundle description.
+This page is the source of truth for **scalar comparison**: *more … than*, *the …-est*, *as … as*, pointers for measured differentials (*two inches taller*), and **judgment benchmarks** (*worse than Average|Typical|Mine|Social|Professional|Everyone* — **`zonugon`** / **`zaheman`** / **`zumogoxrawon`** / **`zulohun`** / **`zaloban`** / **`zuan`**). Fence join vowels, endings, and SHARED placement are defined in [coordination.md](coordination.md); this page says when those forms mean comparison rather than ordinary ranking or bundle description.
 
 PoS prefixes: [language-reference.md](language-reference.md). Scale adjectives are ordinary `/ɡ/` (lexicon-marked as **gradable / scalar**). Absolute (non-comparative) use stays unfenced: `z<Sam>n g<big>l` = *Sam is big* ([zero-copula](predication.md#zero-copula)). Kind / role classification and referent identity: **[predication.md](predication.md)** — not this page’s equative `ae`.
 
@@ -110,7 +110,7 @@ Do **not** stack two `/b/` arguments (amount + unit) on the scale. Vague degree 
 
 Bare *bad* / *terrible* hides an unfair or unspoken standard. Clarity keeps the ordinary [comparative](#comparatives) fence and puts the standard in the **than**-conjunct as a **named comparee** (`worse than Average|Typical|Mine|Social|Professional|Everyone`).
 
-Benchmarks are **NP comparees** on the ranked fence — not [ability](special-vocabulary.md#ability) / [role](special-vocabulary.md#role-compounds) hosts, and not `/w/`…**-n** on the scale (*spicy* **[Scoville]** names a measurement frame — [reference-suffix](reference-suffix.md)). **Personal standard** is [numeric derivation](special-vocabulary.md#numeric-derivation) on [speaker](pronouns.md#special-pronouns) **`ivo`**; **Everyone** reuses bare named **`zuan`** ([coordination](coordination.md#focus-phrase)).
+Benchmarks are **NP comparees** on the ranked fence — not [ability](special-vocabulary.md#ability) / [role](special-vocabulary.md#role-compounds) hosts, and not `/w/`…**-n** on the scale (*spicy* **[Scoville]** names a measurement frame — [reference-suffix](reference-suffix.md)). **Personal standard** is [numeric derivation](special-vocabulary.md#numeric-derivation) on [speaker](pronouns.md#special-pronouns) **`umogo`**; **Everyone** reuses bare named **`zuan`** ([coordination](coordination.md#focus-phrase)).
 
 ### Recipe
 
@@ -139,7 +139,7 @@ Six fixed standards. Lexicon rows use the published **metaphorical** gloss as th
 |---------|--------|----------|--------|
 | **Average** | mean of the relevant population | **`zonugon`** | ☯️ **`onugo`** *yin-yang* → *balance* |
 | **Typical** | usual / modal case | **`zaheman`** | 🐹 **`ahema`** *hamster* → *routine* |
-| **Mine** (personal standard) | speaker’s **normative** bar (expectation / self-standard) | **`zivoxrawon`** | [**`ivo`**](pronouns.md#special-pronouns) + digit morph **`+1`** (*unit / primary*) |
+| **Mine** (personal standard) | speaker’s **normative** bar (expectation / self-standard) | **`zumogoxrawon`** | published 🎤 **`umogo`** (*microphone* → [speaker](pronouns.md#special-pronouns)) + digit morph **`+1`** (*unit / primary*) |
 | **Social** | peers / in-group | **`zulohun`** | 👥 **`ulohu`** *silhouettes* → *community* |
 | **Professional** | experts / role standard | **`zaloban`** | 🥼 **`aloba`** *lab-coat* → *expertise* |
 | **Everyone** | universal reference class | **`zuan`** | bare named **`ua`** (*stock everyone*) |
@@ -150,10 +150,10 @@ Six fixed standards. Lexicon rows use the published **metaphorical** gloss as th
 
 | Comparee | Reading |
 |----------|---------|
-| **`zivon`** | less … than **where I sit** on the scale (ordinary [speaker](pronouns.md#special-pronouns) person comparee — current skill / performance) |
-| **`zivoxrawon`** | less … than **my personal standard** (primary / unit of speaker — the bar I apply) |
+| **`zumogon`** | less … than **where I sit** on the scale (ordinary [speaker](pronouns.md#special-pronouns) person comparee — current skill / performance) |
+| **`zumogoxrawon`** | less … than **my personal standard** (primary / unit of speaker — the bar I apply) |
 
-Do **not** collapse them. Soft personal standard: **`zivoxrawom`**. Ordinary named people stay ordinary **-n** names: `zuel g<SCALE>l z<Sam>n z<Lea>n`.
+Do **not** collapse them. Soft personal standard: **`zumogoxrawom`**. Ordinary named people stay ordinary **-n** names: `zuel g<SCALE>l z<Sam>n z<Lea>n`.
 
 **Everyone** vs focus reverse-superlative: `zuel g<SCALE>l z<JUDGED>l` (focus) ≈ *the least … of all* in the discourse domain; **`zuan`** as comparee **names** the universal class explicitly. Prefer the benchmark when the point is “against everyone as a standard,” not absolute bottom-of-scale. Bare closed **`zual`** remains ordinary *everything / everyone* in non-benchmark slots — do not swap **`zual`** in for **`zuan`** on this ladder (ending and stock-name job differ).
 
@@ -161,14 +161,14 @@ Do **not** collapse them. Soft personal standard: **`zivoxrawom`**. Ordinary nam
 
 | Clarity | Reading |
 |---------|---------|
-| `zuel g<sing>l zivon zaloban` | *worse than Professional* at singing (less skilled than the pro standard) |
+| `zuel g<sing>l zumogon zaloban` | *worse than Professional* at singing (less skilled than the pro standard) |
 | `zuem g<clear>l zebunem zonugon` | soft: draft is somewhat less clear than Average |
-| `zuel g<kind>l z<Sam>n zivoxrawon` | Sam is less kind than **my personal standard** (normative Mine) |
-| `zuel g<sing>l z<Sam>n zivon` | Sam is less skilled at singing than **I am** (performance — not Mine) |
-| `zuel g<skill>l zivon zulohun` | less skilled than Social (peers) |
-| `zuel g<skill>l zivon zaheman` | less skilled than Typical |
-| `zuel g<skill>l zivon zuan` | less skilled than Everyone (universal class) |
-| `zuel g<sing>l zivon z<Lea>n` | less skilled than **Lea** (ordinary person comparee — not a benchmark) |
+| `zuel g<kind>l z<Sam>n zumogoxrawon` | Sam is less kind than **my personal standard** (normative Mine) |
+| `zuel g<sing>l z<Sam>n zumogon` | Sam is less skilled at singing than **I am** (performance — not Mine) |
+| `zuel g<skill>l zumogon zulohun` | less skilled than Social (peers) |
+| `zuel g<skill>l zumogon zaheman` | less skilled than Typical |
+| `zuel g<skill>l zumogon zuan` | less skilled than Everyone (universal class) |
+| `zuel g<sing>l zumogon z<Lea>n` | less skilled than **Lea** (ordinary person comparee — not a benchmark) |
 
 ### Constraints
 
@@ -176,7 +176,7 @@ Do **not** collapse them. Soft personal standard: **`zivoxrawom`**. Ordinary nam
 - Do **not** encode Average / Professional / … as ending letters on one root — distinct comparees, one **-n** (or bare named **`zuan`**) sense.
 - Do **not** use lexicon benchmark roots as [restrictors](restrictors.md) or as [ability](special-vocabulary.md#ability) hosts.
 - Benchmark comparees fill NP slots on fences (`/z/` `/d/` `/b/`), not SHARED scale adjectives.
-- Do **not** use bare **`zivon`** for normative Mine — that is performance; use **`zivoxrawon`**.
+- Do **not** use bare **`zumogon`** for normative Mine — that is performance; use **`zumogoxrawon`**.
 
 ## Cross-links
 

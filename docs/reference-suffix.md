@@ -8,7 +8,7 @@ Every content word ends with a **reference suffix** — one of four final conson
 [PoS prefix] + [l?] + root (+ x + root …) + reference suffix + [sh?]
 ```
 
-Written as **one token with no hyphen** after the PoS letter (`zivon`, not `z-ivon`). Foreign roots: `PoS<…>ENDING` (e.g. `d<english>l`). Opaque spans: no ending after `>` (`d<sushi>`). See **[orthography](language-reference.md#orthography)**.
+Written as **one token with no hyphen** after the PoS letter (`zumogon`, not `z-umogo`). Foreign roots: `PoS<…>ENDING` (e.g. `d<english>l`). Opaque spans: no ending after `>` (`d<sushi>`). See **[orthography](language-reference.md#orthography)**.
 
 1. **PoS prefix** — role in the clause (see [language-reference.md](language-reference.md#part-of-speech-prefixes)).
 2. **Left-bound `l`** — optional; **adjectives only** (`/ɡ/` → **`gl-`**). Marks [left-bound attachment](language-reference.md#adjectives-ɡ) (adjective before host). Not the word-final reference suffix **-l**.

@@ -141,25 +141,25 @@ Each subsection is an **antecedent** PoS; the table rows are the **pronoun** PoS
 
 **Span anaphors** are closed forms in the [span-fence](spans.md) series (`{PoS}{TYPE}xa{r}`, EDGE **a**), not letter/full-root content pronouns. They resolve to the **most recent span of that TYPE** and treat it as a referent in the new slot (*he said **that**?!*) — they do **not** re-open a cite. Ordinary content **-r** still resumes words *inside* a non-opaque span when those words were introduced as ordinary lexicon.
 
-Special pronouns (**`ivo`** / **`ile`** / **`enu`** / **`odo`**) are **not** covered here — they are separate forms (below), not `-r` stems from ordinary antecedents. Content questions (*who* / *what* / *where* / *what did they do?* / *what happened?*) use [unspecified-member **-r** under **question** force](questions.md#fill-ask-r) (`zar` / `zor` / `zer` / `zur` / `var` / `vor` / `ver` / `vur` / `xar` / …), not a special pronoun.
+Special pronouns (**`umogo`** / **`ehado`** / **`enu`** / **`odo`**) are **not** covered here — they are separate forms (below), not `-r` stems from ordinary antecedents. Content questions (*who* / *what* / *where* / *what did they do?* / *what happened?*) use [unspecified-member **-r** under **question** force](questions.md#fill-ask-r) (`zar` / `zor` / `zer` / `zur` / `var` / `vor` / `ver` / `vur` / `xar` / …), not a special pronoun.
 
 ## Special pronouns
 <a id="special-pronouns"></a>
 
-Closed discourse-role roots (not letter/full-root **-r** from ordinary antecedents). They take the usual PoS prefix for the slot they fill.
+Discourse-role forms (not letter/full-root **-r** from ordinary antecedents). They take the usual PoS prefix for the slot they fill. **Speaker** / **listener** reuse the published lexicon roots **`umogo`** (🎤 *microphone*) and **`ehado`** (🎧 *headphones*); **`enu`** / **`odo`** remain closed.
 
 | Role | Root | Image → sense | Default ending | Example |
 |------|------|---------------|----------------|---------|
-| **Speaker** | **`ivo`** | 🎤 *mic* → *producer-role* | **-n** | `zivon` *I* (this utterance’s producer) |
-| **Listener** | **`ile`** | 🎧 *headphones* → *addressee-role* | **-n** | `dilen` *you* (this utterance’s addressee) |
+| **Speaker** | **`umogo`** | 🎤 *microphone* → *producer-role* | **-n** | `zumogon` *I* (this utterance’s producer) |
+| **Listener** | **`ehado`** | 🎧 *headphones* → *addressee-role* | **-n** | `dehadon` *you* (this utterance’s addressee) |
 | **Generic person** | **`enu`** | 👤 *silhouette* → *a person* | **-n** | `zenun` *someone* (a nonspecific individual) |
 | **Next clause** | **`odo`** | 🚪 *doorway* → *what follows* | **-l** | `bodol` / `dodol` — placeholder for the dependent that follows |
 
-**Medium-neutral.** **Speaker** and **listener** name the **producer** and **addressee** of the current utterance — speech, writing, signing, or any other channel. They are not restricted to oral talk (*speaker* ≠ “person vocalizing”; *listener* ≠ “person hearing”). Same roots in a letter, chat, book, or recording.
+**Medium-neutral.** **Speaker** and **listener** name the **producer** and **addressee** of the current utterance — speech, writing, signing, or any other channel. They are not restricted to oral talk (*speaker* ≠ “person vocalizing”; *listener* ≠ “person hearing”). Same roots in a letter, chat, book, or recording. Ordinary instrument readings (*a microphone*, *headphones*) stay available under other PoS / endings; the person-role reading is this discourse use with **-n** (or soft **-m**).
 
-**Endings.** Person roles default to **-n** (definite discourse roles, parallel to proper names). Soft **-m** is available when the role framing is hedged. **Next clause** defaults to **-l** (exact forward slot). Soft **-m** on **`odo`** hedges the subordination edge. Do **not** treat these roots as ordinary indefinite kinds (**-l** on person roles) or as content anaphors built from a prior lexicon stem.
+**Endings.** Person roles default to **-n** (definite discourse roles, parallel to proper names). Soft **-m** is available when the role framing is hedged. **Next clause** defaults to **-l** (exact forward slot). Soft **-m** on **`odo`** hedges the subordination edge. Do **not** treat person-role uses as ordinary indefinite kinds (**-l** on speaker / listener / generic person) or as content anaphors built from a prior mention of the same root.
 
-**Speaker / listener.** 1st / 2nd person only when a name is unavailable or undesired. They label **roles in this discourse**, not identity essence. On [judgment benchmarks](comparatives.md#judgment-benchmarks): bare **`zivon`** = *less … than where I sit* (performance); normative personal standard = **`zivoxrawon`** ([digit morph **`+1`**](special-vocabulary.md#numeric-derivation) on **`ivo`**). Do **not** reuse **`ile`** for [evidential](special-vocabulary.md#evidentiality) hearsay (**`erare`** stays *told*).
+**Speaker / listener.** 1st / 2nd person only when a name is unavailable or undesired. They label **roles in this discourse**, not identity essence. On [judgment benchmarks](comparatives.md#judgment-benchmarks): bare **`zumogon`** = *less … than where I sit* (performance); normative personal standard = **`zumogoxrawon`** ([digit morph **`+1`**](special-vocabulary.md#numeric-derivation) on **`umogo`**). Do **not** reuse **`ehado`** for [evidential](special-vocabulary.md#evidentiality) hearsay (**`erare`** stays *told*).
 
 **Generic person (`enu`).** A nonspecific **individual** — not English impersonal *one*, not [unspecified-member](coordination.md#unspecified-member-r-phrase) **`zar`** / **`dar`** (those are join gaps / indefinites of any kind), and not a 3rd-person anaphor (use content **-r** once someone is introduced).
 
@@ -167,14 +167,14 @@ Closed discourse-role roots (not letter/full-root **-r** from ordinary anteceden
 
 | Clarity | Reading |
 |---------|---------|
-| `jal zivon v<go>l` | *I go* |
-| `jal zivon v<write>l dilen` | *I write you* (letter / message — same roots) |
+| `jal zumogon v<go>l` | *I go* |
+| `jal zumogon v<write>l dehadon` | *I write you* (letter / message — same roots) |
 | `jal zenun v<arrived>l` | *Someone (a person) arrived* |
-| `jal zivon v<told>l d<Sam>n dodol jal z<Lea>n v<left>l` | *I told Sam that Lea left* |
+| `jal zumogon v<told>l d<Sam>n dodol jal z<Lea>n v<left>l` | *I told Sam that Lea left* |
 | `… hurugul bodol jal …` | *… because [dependent]* |
 | `… horodol bodol jal …` | *… if [dependent]* (one-way) |
 | `… heluvel bodol jal …` | *… iff [dependent]* (both ways) |
 
-**Group containing** a referent is not a separate special pronoun: append **-sh** where [plurality](plurality.md) allows it (`zivonsh` = the group containing the speaker; inclusive *we* = join of speaker + listener, not a fifth root).
+**Group containing** a referent is not a separate special pronoun: append **-sh** where [plurality](plurality.md) allows it (`zumogonsh` = the group containing the speaker; inclusive *we* = join of speaker + listener, not a fifth root).
 
-**Prefer names.** When a proper name is available, use it (`-n`) and/or its pronoun (`-r` from the name’s root) — including for self-address — rather than **`ivo`** / **`ile`**. Proper names are definite; the special pronouns are for the narrow cases where a name is unavailable or undesired. See [Proper name (`-n`)](reference-suffix.md#proper-name--n).
+**Prefer names.** When a proper name is available, use it (`-n`) and/or its pronoun (`-r` from the name’s root) — including for self-address — rather than **`umogo`** / **`ehado`**. Proper names are definite; the special pronouns are for the narrow cases where a name is unavailable or undesired. See [Proper name (`-n`)](reference-suffix.md#proper-name--n).

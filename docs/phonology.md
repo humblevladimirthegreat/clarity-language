@@ -54,7 +54,7 @@ A word contains these parts:
 4. the [reference suffix](reference-suffix.md) (**-l**, **-m**, **-n**, or **-r**)
 5. optional plural **-sh** (group referent / collective `/ɡ/`), after the reference suffix — see [plurality.md](plurality.md)
 
-**Writing:** these pieces are one unbroken token — **no hyphen** after the PoS letter (`zivon`, not `z-ivon`). Foreign roots use `PoS<…>ENDING` (e.g. `d<english>l`). Opaque span brackets take **no** ending on the closer (`d<sushi>`). Full orthography note: **[language-reference.md § Orthography](language-reference.md#orthography)**.
+**Writing:** these pieces are one unbroken token — **no hyphen** after the PoS letter (`zumogon`, not `z-umogo`). Foreign roots use `PoS<…>ENDING` (e.g. `d<english>l`). Opaque span brackets take **no** ending on the closer (`d<sushi>`). Full orthography note: **[language-reference.md § Orthography](language-reference.md#orthography)**.
 
 roots have form V(CV)+
 if a compound root, then **x** separates them
