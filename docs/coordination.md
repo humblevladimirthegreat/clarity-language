@@ -1,8 +1,8 @@
 # Joins
 
-**Joins**, **revisers**, and **restrictors** share the **join series** (vowels + endings). A **join** is a prefixed fence over same-slot material. A **reviser** is a prefix-less form: in-clause repair of a fixed left side, or discourse glue before clause force (*additionally* / …). A **restrictor** is a join-series spelling under `/h/` or `/w/` that limits when the host applies. Joins split into **set joins** (**a** / **o** / **ao** / **u** / **ua** / **uo**) and **rank joins** (**e** / **ae** / **oe** / **ue**). Arity: **bare** (0 conjuncts) / **focus** (1) / **list** (2+).
+**Joins**, **revisers**, and **restrictors** share the **join series** (vowels + endings). A **join** is a prefixed fence over same-slot material. A **reviser** is a prefix-less form: in-clause repair of a fixed left side, or discourse glue before force / omitted-default body / [clause `/x/`](#clause-level-coordination) continue / `/x/` linker (*additionally* / …). A **restrictor** is a join-series spelling under `/h/` or `/w/` that limits when the host applies. Joins split into **set joins** (**a** / **o** / **ao** / **u** / **ua** / **uo**) and **rank joins** (**e** / **ae** / **oe** / **ue**). Arity: **bare** (0 conjuncts) / **focus** (1) / **list** (2+).
 
-This page is the source of truth for **phrase-level** (same-slot **right-close** fence only), **VP-level**, and **clause-level** joins. **Revisers** (prefix-less **al** / **am** / …): [revisers.md](revisers.md). **Restrictors** (`/h/` `/w/`): [restrictors.md](restrictors.md). There is **no** prefix-less **join** series (lists still need a PoS prefix + ending). Correlatives (*both…and*, *either…or*) come later. Asymmetric discourse glue (*but*, *however*, *therefore*, *meanwhile*, *next*) is `/x/` but **not** the prefixed join series — see [language-reference.md](language-reference.md#discourse-markers-x). [Revisers](revisers.md) (**al** / **am** / **an** / **el** / … — ending required) cover in-clause *including* / *rather* / *instead* / *except* and, before clause force, discourse *additionally* / *in other words* / *instead* / *except*. *Starting with* = **`x#e-`**, *Finally* = **`x#e`** ([numbers.md](numbers.md#number-as-discourse-marker-by-marker)). Causal / necessary–sufficient readings of inclusive and exclusion joins: [causation.md](causation.md). [Comparatives / superlatives / equatives](comparatives.md) reuse NP fences with SHARED `/ɡ/` as scale (ranked **`e` / `oe` / `ue`** = *more / …-est*; **`ae`** = *as … as*; set **`a`** distributes SHARED `/ɡ/`). [Number ranges](numbers.md#ranges) (SHARED continuum `/ɡ/` + two number endpoints) and [measure phrases](numbers.md#measure-phrases) live in **numbers.md**. [Generics / *every K*](#universals-domains-generics) reuse invert **ua** with SHARED `/ɡ/` as kind domain (`zual gagadal`); habitual characterizing uses **`hual`**. Join scope over a sub-stretch of same-slot material uses [scope islands](spans.md#adjunct-scope-islands) **`^ … ^`** with the join **inside** the island.
+This page is the source of truth for **phrase-level** (same-slot **right-close** fence only), **VP-level**, and **clause-level** joins. **Revisers** (prefix-less **al** / **am** / …): [revisers.md](revisers.md). **Restrictors** (`/h/` `/w/`): [restrictors.md](restrictors.md). There is **no** prefix-less **join** series (lists still need a PoS prefix + ending). Correlatives (*both…and*, *either…or*) come later. Asymmetric discourse glue (*but*, *however*, *therefore*, *meanwhile*, *next*) is `/x/` but **not** the prefixed join series — see [language-reference.md](language-reference.md#discourse-markers-x). [Revisers](revisers.md) (**al** / **am** / **an** / **el** / … — ending required) cover in-clause *including* / *rather* / *instead* / *except* and discourse *additionally* / *in other words* / *instead* / *except* (before force, omitted-default body, `/x/` continue, or linker). *Starting with* = **`x#e-`**, *Finally* = **`x#e`** ([numbers.md](numbers.md#number-as-discourse-marker-by-marker)). Causal / necessary–sufficient readings of inclusive and exclusion joins: [causation.md](causation.md). [Comparatives / superlatives / equatives](comparatives.md) reuse NP fences with SHARED `/ɡ/` as scale (ranked **`e` / `oe` / `ue`** = *more / …-est*; **`ae`** = *as … as*; set **`a`** distributes SHARED `/ɡ/`). [Number ranges](numbers.md#ranges) (SHARED continuum `/ɡ/` + two number endpoints) and [measure phrases](numbers.md#measure-phrases) live in **numbers.md**. [Generics / *every K*](#universals-domains-generics) reuse invert **ua** with SHARED `/ɡ/` as kind domain (`zual gagadal`); habitual characterizing uses **`hual`**. Join scope over a sub-stretch of same-slot material uses [scope islands](spans.md#adjunct-scope-islands) **`^ … ^`** with the join **inside** the island.
 
 PoS prefixes and ordinary word shape: [language-reference.md](language-reference.md). Reference suffixes: [reference-suffix.md](reference-suffix.md). Phonotactics for reserved join roots: [phonology.md](phonology.md#phonotactics). Interrogative readings of these forms: [questions.md](questions.md).
 
@@ -329,7 +329,7 @@ Moved to **[revisers.md](revisers.md)**.
 <a id="revisers"></a>
 <a id="revision-chains-parallel-on-a"></a>
 
-Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** — in-clause repair of a fixed left side, or discourse glue before `/j/`. Full grammar: [revisers.md](revisers.md).
+Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** — in-clause repair of a fixed left side, or discourse glue before force / omitted-default body / [clause `/x/`](#clause-level-coordination) continue / `/x/` linker. Full grammar: [revisers.md](revisers.md).
 
 ---
 
@@ -636,7 +636,7 @@ VP-level joins join **verb phrases** inside one clause: each conjunct is a verb 
 - `v<run>l vul` → *didn’t run*; `dabebal v<eat>l d<water>l v<drink>l vul` → *neither ate an apple nor drank water*; `vul` → *no* / *don’t* (bare denial; contrast `zoel` *do nothing* as empty triage); `vur` → *do something else*
 - Under question: `var` → *What (did they) do?*; `vur` → *What else (did they do)?*; `v<run>l vul` → *Didn’t run?* — [questions.md](questions.md#fill-ask-r)
 - Join-act verbs (not joins): `jal z<Sam>n d<path>l von` → *Sam chooses the path (as the one choice)* — [special-vocabulary.md](special-vocabulary.md#join-act-verbs)
-- Clause sequence (*and then*): `SENT₁ SENT₂ xan` — not a VP `van` join
+- Clause sequence (*and then*): `A B xan` — opener + inherited-force body; not a VP `van` join
 
 ## Constraints
 
@@ -656,22 +656,29 @@ Under `/v/`, join endings are **-l** / **-m** / **-r** only on the join vowels (
 ---
 
 # Clause-level joins
+<a id="clause-level-coordination"></a>
 
-Clause-level joins join **full sentences**. They are **`/x/`** discourse markers whose **root is the same vowel series** as phrase- and VP-level joins. They take a [reference-suffix letter](reference-suffix.md): **-l**, **-m**, **-n**, or **-r**. They do **not** take plural **-sh**. Forms: [VP / clause forms](#vp-clause-forms). Shape and nesting: [fence nesting](#fence-nesting) (same as VP and phrase). Soft **-n**: [soft **-n**](#soft-n-clause) (including *and then* **`xan`**). Unspecified **-r**: [unspecified-member](#unspecified-member-r-phrase).
+Clause-level joins join **utterances** under **one illocution**. They are **`/x/`** discourse markers whose **root is the same vowel series** as phrase- and VP-level joins. They take a [reference-suffix letter](reference-suffix.md): **-l**, **-m**, **-n**, or **-r**. They do **not** take plural **-sh**. Forms: [VP / clause forms](#vp-clause-forms). Shape and nesting: [fence nesting](#fence-nesting) (same as VP and phrase). Soft **-n**: [soft **-n**](#soft-n-clause) (including *and then* **`xan`**). Unspecified **-r**: [unspecified-member](#unspecified-member-r-phrase).
+
+**Forward motion:** clause `/x/` is **same-force continuation** — not a new [turn](language-reference.md#utterance-markers-j). Non-initial conjuncts **inherit** opener force and omit **`/j/`** (including omissible default **`jal`**). Do **not** repeat **`jal`** on each conjunct.
 
 Endorsement strength and evidentiality stay on each clause’s `/h/` (or `/w/`), not on the join.
 
 ## Conjuncts
 
-- **SENT** — a complete sentence beginning with `/j/` (optional vocative(s) / interjection(s), then clause force, then clause body).
-- Flat lists: one right-close fence after the conjunct sentences. Nested lists: [fence nesting](#fence-nesting).
+- **Opener** — a **turn** or period-bounded assertoric body: optional `/j/` cluster (vocative / [polar stance](questions.md#yes-no-polarity) / written force) + body, **or** body alone when default **`jal`** is recoverable ([language-reference.md](language-reference.md#clause-force)).
+- **Later conjuncts** — **body only** (optional discourse [reviser](revisers.md#discourse-revisers) before the body); **no** `/j/` force stamp. Inherit the opener’s illocution.
+- Flat lists: one right-close fence after the conjuncts. Nested lists: [fence nesting](#fence-nesting).
 
 ### Examples (schematic)
 
+- `jal A B xam` → *A and B* (closed); opener sets **`jal`**; **B** has no **`jal`**
+- `A B xam` → same when period/context supplies default **`jal`** on **A**
+- `A B C xan` → *A and then B and then C* — one force, three bodies
+- `A al B xam` → *A and additionally B* — reviser on non-initial conjunct
+- `jaol A B xan` → uptake stance + proceed (*ok — A and then B*); implied **`jal`** from **`jaol`**
 - `A B xal` → *A and B* (closed); `A B xam` → open
-- `A B C xal` → *A and B and C* (one closed *and*-list)
 - `A B C xol` → *A or B or C* (exactly one; closed); `A B C xom` → *A or B or C or none* (at most one; open, empty-allowed)
-- `A B C xan` → *A and then B and then C*
 - `A B xel` → *A ≻ B* (closed ranked, unmarked); `A B xem` → open; `A B C xen` → soft
 - `A B xael` → *A and B equally* / *tied claims* (closed **ae**); `xael` → *it’s a draw* (bare); `A B C xoel` → exclusive closed ranked
 - `A B xual` → *everything but A and B*; `A B xuol` → *anything but A or B*; `A B xuel` → *A ≺ B* (rank reversal)
@@ -681,12 +688,12 @@ Endorsement strength and evidentiality stay on each clause’s `/h/` (or `/w/`),
 
 ## Constraints
 
-- **Same clause force** on every conjunct (same `/j/` force form — e.g. all **jal**, all **jol**, all **jel**, …). Mixed force → separate sentences or [subordination](language-reference.md#dependent-clauses), not this join.
+- **One illocution** for the whole fence — set by the **opener** (written force, implied **`jal`** / **`jam`** from polar **-l** / **-m**, or period-bounded default **`jal`**). Non-initial conjuncts **inherit**; mixed illocution inside one fence is **illegal** (e.g. assertoric + question). Mixed force → separate turns or [subordination](language-reference.md#dependent-clauses), not this join.
 - **No gapping / shared arguments** across conjuncts. Repeat material, or use phrase-level (NP / AP / …) or VP-level joins inside one clause.
 - **Fence** — right close only; nesting per [fence nesting](#fence-nesting); **no left fence**; **no pure infix**.
 - **-r** is unspecified-member (`xar` / `xor` / `xer` / `xur`), not continue / “same linker again”. Focus/bare allowed on **-r** forms and on negation **`xul` / `xum` / `xun`** among clause joins. Resume of a prior non-join `/x/` linker still uses content-word `/x/…-r` per [pronouns.md](pronouns.md).
 - **Not subordination:** *because* / *if* / *although* stay `/h/` + `/b/` [next-clause pronoun](pronouns.md#special-pronouns). Do **not** read **`xaom` / `xaol`** as *SENT₁ is a sufficient condition for SENT₂* — peer inclusive coordination only; causal clause poles → [causation.md § Clause poles](causation.md#clause-poles).
-- **Not general *but* / *however* / *therefore* / *meanwhile* / *next*:** those are other `/x/` linkers. *Including* / *rather* / *instead* / *except* (in-clause) and *additionally* / *in other words* / claim *instead* / *except* (before `/j/`) are [reviser](revisers.md), not clause joins. *Starting with* = **`x#e-`**; *Finally* = **`x#e`**. Phrase-, VP-, and clause-level **ranked** and **invert** (**zel** / **zael** / **zoel** / **zuel** / **zual** / **zuol** / **gel** / **vel** / **vael** / **voel** / **vuel** / **vual** / **vuol** / **xel** / **xuel** / …) **are** this series.
+- **Not general *but* / *however* / *therefore* / *meanwhile* / *next*:** those are other `/x/` linkers (inherit force; [reviser](revisers.md) may precede linker). *Including* / *rather* / *instead* / *except* (in-clause) and discourse *additionally* / *in other words* / claim *instead* / *except* are [revisers](revisers.md), not clause joins. *Starting with* = **`x#e-`**; *Finally* = **`x#e`**. Phrase-, VP-, and clause-level **ranked** and **invert** (**zel** / **zael** / **zoel** / **zuel** / **zual** / **zuol** / **gel** / **vel** / **vael** / **voel** / **vuel** / **vual** / **vuol** / **xel** / **xuel** / …) **are** this series.
 
 ## Reserved forms
 

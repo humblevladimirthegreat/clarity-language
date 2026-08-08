@@ -13,14 +13,14 @@ Two placements, one form set:
 | Placement | Cue | Job |
 |-----------|-----|-----|
 | **In-clause** | same-slot `A REV B` (and parallel chains) | slot repair — *including* / *rather* / *instead* / *except* |
-| **Discourse** | `REV` immediately before the new sentence’s [clause force](language-reference.md#clause-force) `/j/` | claim-to-claim glue — *additionally* / *in other words* / *instead* / *except* |
+| **Discourse** | `REV` before force, omitted-default body, non-initial [clause `/x/`](#discourse-on-x-continue) conjunct, or `/x/` linker | claim-to-claim glue — *additionally* / *in other words* / *instead* / *except* |
 
 Do **not** key off mixed PoS mid-clause: `z-… ol d-…` stays **illegal**. Adversative *but* / *however*, *therefore*, *meanwhile*, and standalone *next* stay other `/x/` roots ([language-reference.md](language-reference.md#discourse-markers-x)). Narrative *and then* between full sentences is clause **`xan`**, not this series.
 
 ## Meanings (vowel)
 
-| Vowel | In-clause `A REV B` | Discourse (before `/j/`) |
-|-------|---------------------|---------------------------|
+| Vowel | In-clause `A REV B` | Discourse (before force / body / `/x/` continue / linker) |
+|-------|---------------------|-----------------------------------------------------------|
 | **a** | *including* — A, including B (B is a highlighted member / part of A) | ***additionally*** — this sentence adds a further point relative to prior discourse |
 | **e** | *rather* — A, or rather B (soft correction; B outranks A; A need not be fully denied) | ***in other words*** / *rather* — this sentence rephrases or soft-corrects the prior claim |
 | **o** | *instead* — not A, but B (exclusive replacement) | ***instead*** — this sentence replaces the prior claim |
@@ -72,7 +72,7 @@ A REV₁ B REV₂ C ( REVᵢ SIDE )*
 
 - **Same clause** — A and every right-hand side sit in the **same clause**.
 - **Same slot** — A and every right-hand side match in role: all subject NPs (`/z/`), all objects (`/d/`), all `/b/` arguments, all `/ɡ/` APs (plus local material), all `/w/` or all `/h/` units, or all VPs (verb ± that verb’s `/d/`). Mixed slots are illegal (`z-… ol d-…`).
-- **Fixed A, one or more right-hand sides** — the first side is **A**; each **REV** introduces the next right-hand side. No left-fence shared-modifier slot on the particle; no **-r**. Cross-sentence repair without a discourse reviser before `/j/` still uses other `/x/` roots when needed.
+- **Fixed A, one or more right-hand sides** — the first side is **A**; each **REV** introduces the next right-hand side. No left-fence shared-modifier slot on the particle; no **-r**. Cross-sentence repair without a discourse reviser still uses other `/x/` roots when needed.
 - **Inside a coordinated list** — allowed **inside** a conjunct as local repair, not as a substitute for the join (`zam` / `vam` / …). **Binding:** a revision chain starting at A consumes following same-slot sides paired by **REV** particles, tighter than list absorb — so `zam zogodol ol zagadal zuburul` = *(dog instead of cat) and bird*, and `zam z<team>l am z<Sam>n ul z<Lea>n zuburul` = *(team including Sam, except Lea) and bird*.
 - **Inside a [number range](numbers.md#ranges)** — **`ul`** after the low endpoint marks an exclusive **high** bound (`zal g<span>l z+3 ul z+5` = *[3, 5)*; SHARED continuum required). Details in numbers.md.
 
@@ -121,29 +121,40 @@ Same-vowel repeats are just the parallel rule with identical particles (`A am B 
 <a id="discourse-revisers"></a>
 <a id="discourse-glue"></a>
 
-When a prefix-less **`al` / `am` / `an` / `el` / `em` / `en` / `ol` / `om` / `on` / `ul` / `um` / `un`** sits in the [left-edge cluster](language-reference.md#left-edge-order-and-sentence-boundaries) **immediately before clause force**, it is **discourse glue**, not in-clause slot repair.
+Discourse revisers glue **this utterance** (or conjunct / linker stretch) to **prior talk**. Four placements — same spellings, same vowel meanings:
 
-```
-(vocative)* (interjection)* REV force BODY
-```
+| Placement | Shape | Force |
+|-----------|-------|--------|
+| Before written force | `(vocative)* (interjection)* REV force BODY` | Force explicit |
+| Before omitted-default body | `REV BODY` | Implied **`jal`** / **`jam`** ([language-reference.md](language-reference.md#clause-force)) |
+| Non-initial [clause `/x/`](#discourse-on-x-continue) conjunct | `… REV BODY … JOIN` | Inherit opener illocution |
+| Before `/x/` linker | `REV LINKER BODY` | Inherit prior illocution; linker + body continue |
 
 - **Prior talk = A** — the preceding sentence (or prior discourse context if this opens a stretch). Not a same-slot phrase.
-- **This sentence = B** — the clause under that force.
-- **One REV** per sentence opener (no parallel discourse chains on one force). In-clause chains stay inside the body.
-- **Not** a clause join fence — no SHARED slot, no multi-SENT list under one particle; for sequenced *and then*, use **`xan`**.
-- **Not** mid-body: after force, the same spellings are only in-clause revisers (or illegal if mixed-slot).
+- **This move = B** — the clause body under inherited or written force, or the linker+body stretch after **`REV`**.
+- **One REV** per discourse opener (no parallel discourse chains on one force). In-clause chains stay inside the body.
+- **Not** a clause join fence — no SHARED slot, no multi-conjunct list under one particle; for sequenced *and then*, use **`xan`** ([coordination.md](coordination.md#clause-level-coordination)).
+- **Not** mid-body after force: after an explicit force token, the same spellings are only in-clause revisers (or illegal if mixed-slot).
+
+<a id="discourse-on-x-continue"></a>
+
+On a **non-initial** conjunct under a [clause `/x/` fence](coordination.md#clause-level-coordination), **`REV`** sits immediately before that conjunct’s body (no `/j/` force — inherited illocution). Example: `A al B xam` → *A and additionally B*.
+
+Before an **`/x/`** sentence linker (*therefore*, *however*, …), **`REV`** scopes the linker+body stretch: `al xamalal …` → *Additionally, therefore …* (inherits assertoric force unless a new turn opens).
 
 ## Discourse examples (schematic)
 
-- `al jal …` — *Additionally, …* (committed further point)
-- `am jal …` — soft *additionally* / among further points
+- `al jal …` / `al …` — *Additionally, …* (committed further point; second omits **`jal`**)
+- `am jal …` / `am …` — soft *additionally* / among further points
 - `an jal …` — stock / titled *Additionally, …*
-- `el jal …` — *In other words, …* (precise rephrase of prior)
+- `el jal …` / `el …` — *In other words, …* (precise rephrase of prior)
 - `em jal …` — softer *rather* / rewording
-- `ol jal …` — *Instead, …* (this claim fully replaces prior)
+- `ol jal …` / `ol …` — *Instead, …* (this claim fully replaces prior)
 - `om jal …` — *instead* as a replacement claim
 - `ul jal …` — *Except, …* (sole exception to prior frame)
-- `j<Sam>n al jal …` — vocative, then *Additionally,* then statement force
+- `A al B xam` — *A and additionally B* (reviser on `/x/` continue)
+- `al xamalal …` — *Additionally, therefore …*
+- `j<Sam>n al …` — vocative, then *Additionally,* then body (implied **`jal`**)
 - *Starting with* — **`x#e-`** (not **`al`**) — [numbers.md](numbers.md#number-as-discourse-marker-by-marker)
 - *Finally* — **`x#e`** (not **`al`**) — [numbers.md](numbers.md#number-as-discourse-marker-by-marker)
 
@@ -154,7 +165,7 @@ When a prefix-less **`al` / `am` / `an` / `el` / `em` / `en` / `ol` / `om` / `on
 - **Not** a list join — use prefixed coordination for *and* / *or* / negation (*not* / *none of*) / *and/or* / rank join.
 - **Not** adversative *but* / *however*, *therefore*, *meanwhile*, or standalone *next* — those remain other `/x/` linkers.
 - **Not** mixed-PoS in-clause; ending **-l**, **-m**, or **-n** required; no **-r** / plural **-sh** on the particle; no bare **a** / **e** / **o** / **u**; **-n** is named/conventional only (not soft packaging). In-clause chains are **parallel on A**, not nested `A REV (B REV C)`.
-- Discourse cue is **REV before force**, not mismatched slots mid-clause.
+- Discourse cue is **REV** before force, omitted-default body, non-initial `/x/` conjunct, or `/x/` linker — not mismatched slots mid-clause.
 
 ## Reserved forms
 

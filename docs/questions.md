@@ -1,6 +1,6 @@
 # Questions
 
-This page is the source of truth for **interrogative** grammar: the **question** clause forces (**jol** / soft **jom**), yes/no vs fill-ask, multi-gap **fill-all**, how join endings read under question force, and **yes / no polarity** answer particles (**`jael`** / **`juel`** / …). Fence forms and their **statement** readings live in [coordination.md](coordination.md). Full force inventory and left-edge `/j/` order: [language-reference.md](language-reference.md#clause-force).
+This page is the source of truth for **interrogative** grammar: the **question** clause forces (**jol** / soft **jom**), yes/no vs fill-ask, multi-gap **fill-all**, how join endings read under question force, and **polar stance** particles (**`jael`** / **`juel`** / …). Fence forms and their **statement** readings live in [coordination.md](coordination.md). Force inventory, turn vs continue, and omissible default **`jal`**: [language-reference.md](language-reference.md#utterance-markers-j).
 
 <a id="interrogative-force"></a>
 <a id="polar-question"></a>
@@ -45,11 +45,23 @@ Content-word anaphor **-r** is not a fill gap — only [join **-r**](coordinatio
 <a id="yes-no-polarity"></a>
 <a id="yes-no-interjections"></a>
 
-## Answers
+## Polar stance (`/j/` interjections)
 
-### Polar (yes / no)
+Closed **`/j/`** particles — **interjections**, not clause force. Shape is **`j` + stacked join vowel + `-l` / `-m`** (same letter jobs as [join series](coordination.md#join-type-vowel-series)). They mark a **turn** ([utterance markers](language-reference.md#utterance-markers-j)) — toward another speaker or as a **self-turn** in monologue. They sit in the left-edge interjection slot, or stand alone as a bare utterance. Do **not** use **-n** or **-r** on these forms. Do **not** use them as force before a clause body.
 
-Closed **`/j/`** answer particles — **interjections**, not clause force. Shape is **`j` + stacked join vowel + `-l` / `-m`** (same letter jobs as [join series](coordination.md#join-type-vowel-series)). They sit in the left-edge interjection slot ([utterance markers](language-reference.md#utterance-markers-j)), or stand alone as a bare utterance (typical polar answer). Do **not** use **-n** or **-r** on these forms. Do **not** use them as force before a clause body.
+**Implied force:** polar **`-l`** implies **`jal`**; **`-m`** implies **`jam`**. Prefer **`jael …`** over **`jael jal …`** when a body follows. Marked non-default force (**`jol`**, **`jel`**, **`jul`**, …) is still written when needed.
+
+**Letter jobs** (not emotion valence — that is [values](values.md) / [emotion compose](special-vocabulary.md#emotion-compose)):
+
+| Stack | Job |
+|-------|-----|
+| **`ae`** (`jael` / `jaem`) | match / receipt / *true* |
+| **`ao`** (`jaol` / `jaom`) | option uptake / *sure* / *that one* |
+| **`ue`** (`juel` / `juem`) | flip / mismatch / *false* |
+| **`uo`** (`juol` / `juom`) | reject-this option (*not that*) |
+| **`ua`** (`jual` / `juam`) | reject whole frame (rare) |
+
+### Inventory
 
 **Default polarity** uses **corank** / **counterrank** (**`ae`** / **`ue`**): match vs flip. **`jael`** also reads as *true*; **`juel`** as *false* (truth-value twin of confirmational *yes* / default *no*).
 
@@ -81,7 +93,38 @@ Closed **`/j/`** answer particles — **interjections**, not clause force. Shape
 | *Is it so?* / *true?* / confirm the claim | **`jael`** / soft **`jaem`** · deny with **`juel`** / **`juem`** (*false*) |
 | *Want this?* / *Pick this?* / offer | **`jaol`** / soft **`jaom`** · reject-this with **`juol`** / **`juom`** · hard refuse with **`jual`** / **`juam`** |
 
-Bare utterance is the default answer (`jael`, `juel`, …). The same particle may sit in the left-edge interjection slot before a restating force (`jael jal …`).
+### Turn-taking and monologue
+
+Polar particles are **high-frequency discourse glue**, not only answers to **`jol`**.
+
+| Role | Workhorse | Soft |
+|------|-----------|------|
+| Receipt / track | **`jael`** | **`jaem`** — *got it* / *right* / *I'm with you* |
+| Epistemic endorse | **`jael`** | **`jaem`** — *true* / *that holds* |
+| Uptake / go-ahead | **`jaol`** | **`jaom`** — *ok* / *sure* / *let's* / *that one* |
+| Repair / flip | **`juel`** | **`juem`** — *no* / *that's not so* |
+| Option steer | **`juol`** | **`juom`** — *not that* (other options ok) |
+| Hard shut-down | **`jual`** | **`juam`** — rare; *none of this* |
+
+**Shapes:**
+
+- **Bare turn** — `jael.` / `jaol.` / `juel.` (complete utterance; implied **`jal`**).
+- **Stance + body** — `jael zivon v<go>l.` (*yes — I go*); no restated **`jal`**.
+- **Tag** — `… jael.` / `… jaom.` at end of own claim (*…, yes.* / *…, okay.*).
+- **Monologue self-turn** — answer a silent prior (expectation, option, draft claim, reader objection): `juel` before correction (*No — the real issue is…*); `jaol` before next step (*So — we do X*); `jael` after locking a point (*Yes — that stands*).
+
+**Same-force continuation** after a polar+body beat uses **`/x/`** ([clause joins](coordination.md#clause-level-coordination), linkers) — not another polar unless taking a **new** stance turn.
+
+### Contrasts (do not collapse)
+
+| Particle / form | Role |
+|-----------------|------|
+| **`jael`** / **`jaol`** | stance match vs option uptake — both frequent; not interchangeable |
+| **`juel`** / **`juol`** | truth flip vs reject-this option |
+| Body **`xul`** / **`vul`** / **`zul`** | deny *inside* the proposition ([negation](coordination.md#negation-u)) |
+| **`jul`** / **`jum`** | **prohibition** force (*don't…*), not polar *no* / *false* |
+| Values **`xu`** / **`xo`** | unmet need / prescription — not true/false |
+| Clause **`xael`** | tie *between* claims — not *yes* |
 
 <a id="confirming-a-negative"></a>
 
@@ -94,11 +137,13 @@ Bare utterance is the default answer (`jael`, `juel`, …). The same particle ma
 | `jol … zul z<Sam>n` (*Not Sam?*) | **`jael`** | *true, not Sam* |
 | same | **`juel`** | *false — it is Sam* |
 
-When clarity matters, restate: `jael jal vul v<run>l` vs `juel jal v<run>l`. Offer particles (**`jaol`** / **`juol`**, …) answer *take this?*, not truth-match — do not use them to confirm a negative claim.
+When clarity matters, restate: `jael vul v<run>l` vs `juel v<run>l` (implied **`jal`**). Offer particles (**`jaol`** / **`juol`**, …) answer *take this?*, not truth-match — do not use them to confirm a negative claim.
 
-**Contrast:** body bare denial is plain **u** (`xul` / `vul` / `zul` — [negation](coordination.md#negation-u)), a clause/slot join, not an answer particle. Prefer **`juel`** / **`juol`** / **`jual`** (and soft twins) when answering a yes/no ask; prefer **`xul`** when denying inside or as a bare clausal frame. **`jul`** / **`jum`** remain **prohibition** force (*don’t…*), not polar *no* / *false*.
+**Contrast:** body bare denial is plain **u** (`xul` / `vul` / `zul` — [negation](coordination.md#negation-u)), a clause/slot join, not a stance particle. Prefer **`juel`** / **`juol`** / **`jual`** (and soft twins) when answering a yes/no ask; prefer **`xul`** when denying inside or as a bare clausal frame.
 
-### Fill-ask
+## Answers (fill-ask)
+
+<a id="fill-ask-answers"></a>
 
 A fill **need not** keep **-r**: it may be a bare content word, focus **-l** / **-m** / **-n**, or a longer list with any allowed ending. Multi-gap answers follow spoken **-r** order ([fill-all](#fill-all)).
 

@@ -163,17 +163,18 @@ Discourse-role forms (not letter/full-root **-r** from ordinary antecedents). Th
 
 **Generic person (`enu`).** A nonspecific **individual** — not English impersonal *one*, not [unspecified-member](coordination.md#unspecified-member-r-phrase) **`zar`** / **`dar`** (those are join gaps / indefinites of any kind), and not a 3rd-person anaphor (use content **-r** once someone is introduced).
 
-**Next clause (`odo`).** Placeholder for the material that **immediately follows** it ([dependent clauses](language-reference.md#dependent-clauses)). **Matrix-final in its clause:** **`odo`** is the last word of that host (for `/h/`+`/b/` subordination, the contiguous unit ends with **`odo`**); the dependent follows with no intervening host words. **Chaining** allowed: a dependent may itself end in **`odo`**. Takes the PoS prefix of the slot it fills (`/d/` complement, `/b/` under `/h/` *because* / *if*, etc.).
+**Next clause (`odo`).** Placeholder for the material that **immediately follows** it ([dependent clauses](language-reference.md#dependent-clauses)). **Matrix-final in its clause:** **`odo`** is the last word of that host (for `/h/`+`/b/` subordination, the contiguous unit ends with **`odo`**); the dependent follows with no intervening host words. **Chaining** allowed: a dependent may itself end in **`odo`**. Takes the PoS prefix of the slot it fills (`/d/` complement, `/b/` under `/h/` *because* / *if*, etc.). When illocution matches the matrix, the dependent may **inherit** force and omit **`/j/`** (including omissible default **`jal`**); different illocution still needs its own force.
 
 | Clarity | Reading |
 |---------|---------|
 | `jal zumogon v<go>l` | *I go* |
+| `zumogon v<go>l` | *I go* (implied **`jal`**) |
 | `jal zumogon v<write>l dehadon` | *I write you* (letter / message — same roots) |
 | `jal zenun v<arrived>l` | *Someone (a person) arrived* |
-| `jal zumogon v<told>l d<Sam>n dodol jal z<Lea>n v<left>l` | *I told Sam that Lea left* |
-| `… hurugul bodol jal …` | *… because [dependent]* |
-| `… horodol bodol jal …` | *… if [dependent]* (one-way) |
-| `… heluvel bodol jal …` | *… iff [dependent]* (both ways) |
+| `jal zumogon v<told>l d<Sam>n dodol z<Lea>n v<left>l` | *I told Sam that Lea left* (dependent inherits assertoric force) |
+| `… hurugul bodol …` | *… because [dependent]* (same-force dependent may omit **`jal`**) |
+| `… horodol bodol …` | *… if [dependent]* (one-way) |
+| `… heluvel bodol …` | *… iff [dependent]* (both ways) |
 
 **Group containing** a referent is not a separate special pronoun: append **-sh** where [plurality](plurality.md) allows it (`zumogonsh` = the group containing the speaker; inclusive *we* = join of speaker + listener, not a fifth root).
 
