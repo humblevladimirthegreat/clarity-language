@@ -16,18 +16,64 @@ A gloss should answer: *what is each Clarity piece doing in the clause — in En
 | Underspecification | Keep vague Clarity vague (`someone`, bare joins) | Sharpen into a specific English claim |
 | Separation | Stay word-aligned | Replace the free English line |
 
-**Free English** (italic line / table “Gloss” in grammar pages) answers *what would you say naturally?* — idiomatic paraphrase, tone, and discourse flow. Do not merge free English into the morph gloss.
+**Free English** (italic line / table “Gloss” in grammar pages) answers *what would you say naturally?* — idiomatic paraphrase, tone, and discourse flow. Do not merge free English into the morph gloss. Default free English is **loose** ([strict vs loose](#strict-vs-loose-free-english)).
 
 ## Layers
 
 | Layer | Where | Form |
 |-------|--------|------|
 | **Morph gloss** | Dialogue turns, worked examples, teaching lines | Word-aligned pieces joined with ` · ` (below) |
-| **Free English** | Same places, under or beside the morph gloss | Natural paraphrase (*…*) |
-| **Grammar-table gloss** | Inventory / contrast tables in grammar docs | Short free English (often *italic*); optional parenthetical notes |
+| **Free English (loose)** | Same places, under or beside the morph gloss — **default** when only one free line | Natural paraphrase (*…*); drop Clarity packaging English doesn’t mark |
+| **Free English (strict)** | Optional second free line (or alone when teaching packaging) | Keeps join packaging, value endings, evidential tags, cast letters, …; teaching dialogues may show **both** labeled `strict:` / `loose:` |
+| **Grammar-table gloss** | Inventory / contrast tables in grammar docs | Short free English (often *italic*); optional parenthetical notes — loose unless the row teaches packaging |
 | **Lexicon fields** | `lexicon-published.csv` / overlays | Literal / metaphorical / mnemonic / definition — **inputs** to morph glosses, not utterance glosses |
 
 Grammar tables may keep a column named **Gloss** for free English. When a table needs morphology, use a **Morph** column or a separate morph line in the same format as dialogues.
+
+## Strict vs loose free English
+<a id="strict-vs-loose-free-english"></a>
+
+| Layer | Job |
+|-------|-----|
+| **Morph** | Keep Clarity structure (PoS, binding, join job, stance tags, …) |
+| **Loose free** | Idiomatic English claim — default when a page shows one free line |
+| **Strict free** | Same claim with Clarity packaging spelled out in English — use alone for packaging lessons, or **with** loose in teaching dialogues (e.g. [rainy evening](examples/rainy-evening-dialogue.md)) |
+
+**Loose** drops distinctions English doesn’t mark; morph already carries them. **Keep** in loose only what changes the English sentence (who / what / polarity / negation; force English can say; stance that changes the verb; comparative / causal / plan content when that is the point).
+
+### Drop in loose
+
+| Clarity distinction | Loose free does |
+|---------------------|-----------------|
+| Cast / letter anaphors (`zuzur` + “(A)”) | Ordinary *I / you / he / she / they*, or a **name** once known |
+| Role metalanguage (`speaker`, `listener`, `interlocutors`) | *I / you / we* |
+| Join packaging (open `zam` vs closed `zal`, exclusive `dol`, fence shape) | Plain *and / or*; no “exactly one”, no open-list footnotes |
+| Sense-picking **-l / -m / -n** | Never (already omitted from morph when they only pick sense) |
+| Values **channel / standing / force / changeability** | Keep only what changes English (*can't* vs *shouldn't* vs unmet need as content); drop “(motive, soft standing)”, “commit force”, … |
+| Emotion compose ACT / LOCUS / activation | Ordinary emotion English (*we're glad*), not “pleasure met · internal” |
+| Evidential / universality **tags** | Fold in only if English wants it (*I hear…*, *usually*); else omit |
+| Span fence labels | Quotes / parentheses; no “Cite:” / “aside:” |
+| Role / SAME scaffolding | *the speaker* / *is* — not “agent of speech” / “identical to” |
+| Associative **-sh** spelled out | *you all* / *they* when English is enough |
+| Numbered-alternative pedagogy | *First, …* / *Finally, …* is fine; drop “problem #1” metalabel unless teaching numbering |
+
+### Keep in loose
+
+- Who / what / polarity / negation
+- Force English can say (*please*, *don’t*, *I wonder*)
+- Stance that changes the verb (*can't* vs *ought not* vs unmet need as content)
+- Comparatives / equatives / causation / plan when they are the point of the turn
+
+### Example (same Clarity, three readings)
+
+Clarity: `jol duber dadedal dogevel dol von.`
+
+```
+gloss: `j-question` · `d-←Ubenaxuzonun` · `d-tea` · `d-coffee` · `d-or-exactly-one` · `v-choose`
+
+*Do you want tea or coffee?*                          ← loose (default)
+*Do you (B) choose tea or coffee — exactly one?*      ← strict (teaching exclusive *or*)
+```
 
 ## Senses are separate roots
 
@@ -150,14 +196,14 @@ Bake join / reviser **job** into the English label (including open vs closed whe
 | `gogunol` | `g-SAME` | *identical to* (identity host) |
 | `von` | `v-choose` | *chooses (exactly one)* |
 
-### Dialogue turn (morph + free)
+### Dialogue turn (morph + loose free)
 
-Clarity: `jael. zumogon zam zehadon zal guzem.`
+Clarity: `jael zumogon zam zehadon zal guzem.`
 
 ```
 gloss: `j-yes` · `z-speaker` · `z-and.open` · `z-listener` · `z-and` · `g-happy`
 
-*Yes. I and you are happy.*
+*Yes — you and I are happy.*
 ```
 
 (Prefer **`zanan guzem`** when the point is interlocutor *we*, not an explicit two-name census.)
@@ -169,17 +215,19 @@ Clarity: `xezabel zuber huhunum zarunal.`
 ```
 gloss: `x-however` · `z-←Ubenaxuzonun` · `h-witnessed` · `z-rain`
 
-*However — that one (B), per memory — it rains.*
+*Still — it’s raining, as I remember.*
 ```
+
+(Strict teaching line: *However — that one (B), per memory — it rains.*)
 
 ### Ability + value motive
 
-Clarity: `juel. zumogon vawuxul hodoloxem.`
+Clarity: `juel zumogon vawuxul hodoloxem.`
 
 ```
 gloss: `j-no` · `z-speaker` · `v-walking-x-can't` · `h-competence-x-motive`
 
-*No. I can't walk — for competence (motive).*
+*No — I can't walk right now.*
 ```
 
 ### Numbered alternative + unmet pleasure
@@ -189,22 +237,22 @@ Clarity: `x#e- zubezul g#1 zumogonsh hazedoxul.`
 ```
 gloss: `x-starting-with` · `z-problem` · `g-first` · `z-speaker-sh` · `h-pleasure-x-unmet`
 
-*Starting with: problem one — I and associates have unmet pleasure.*
+*First problem: we're not enjoying this.*
 ```
 
 ### Inclusive *we* (interlocutors)
 
-Clarity: `jael. xamalal zanan howarom vawul vul.`
+Clarity: `jael xamalal zanan howarom vawul vul.`
 
 ```
 gloss: `j-yes` · `x-therefore` · `z-interlocutors` · `h-plan` · `v-walking` · `v-not`
 
-*Yes. Therefore we (you and I) plan not to walk.*
+*Yes — so we're planning not to walk.*
 ```
 
 ### Grammar-table gloss (free English only)
 
-From comparative inventories — no morph line required:
+From comparative inventories — no morph line required (loose claim; parenthetical note OK when the row teaches packaging):
 
 | Example | Gloss |
 |---------|-------|
@@ -226,6 +274,7 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 | `z-microphone-l` | Ending already chose the literal root | `z-microphone` |
 | `z-microphone→speaker` | Etymology chain | `z-speaker` |
 | Morph line that is only idiomatic English | Confuses layers | Morph + separate free line |
+| Loose free packed with cast letters / join footnotes / value endings | Duplicates morph; not “what you’d say” | Idiomatic claim; use **strict** free only for teaching |
 | English *he* / *she* inside morph for **-r** | Hides Clarity binding | `z-←Antecedent` |
 | New synonym every example for the same overlay | Unstable inventory | Fixed labels (`witnessed`, `COMMENT`, …) |
 
@@ -236,7 +285,7 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 3. No **-l** / **-m** / **-n** when they only selected the sense-root.
 4. Compounds / stance / role / span `x` pieces are segmented in English.
 5. **-r** uses `←…` (no trailing `-r`); **-sh** stays as `-sh`.
-6. Free English is on its own line (or grammar-table Gloss column).
+6. Free English is on its own line (or grammar-table Gloss column) — **loose** by default; **strict** only when teaching packaging.
 
 ## See also
 
@@ -245,3 +294,4 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 - [pronouns.md](pronouns.md) — **-r** and special pronouns
 - [x-compounds.md](x-compounds.md) — mid-word `x` families
 - [language-reference.md](language-reference.md#orthography) — written orthography
+- [values.md](values.md) — need stances and endings (morph keeps them; loose free usually drops channel / standing / force / changeability)

@@ -45,7 +45,12 @@ We're not trying to be as precise as Ithkuil, because that language is very diff
 * Vagueness is helpful in language because we often think in vague terms. You should be able to say something is “good” without specifying precisely which aspect you are referring to.  
 * Derivational opaqueness is also fine. There doesn’t need to be any indication that “food” and “cook” are related.
 
+# Learning levels
+
+Grammar docs use **beginner** / **intermediate** / **advanced** sections so learners finish all beginner material across docs before intermediate, then advanced. Assignment rubric: **[learning-levels.md](learning-levels.md)**.
+
 # Criterion for Features
+<a id="criterion-for-features"></a>
 
 The goal of r/claritylanguage is to help foster compassion, rationality, and empowerment in its speakers, using language design techniques described in Language as a Cognitive Framework. I’ve decided to formalize requirements for adding new features to the language.
 
@@ -303,7 +308,7 @@ Pronoun grammar (anaphoric **-r** forms; special **`umogo`** / **`ehado`** / **`
 
 # Glosses
 
-How to write morph glosses and free English in docs and examples (senses as separate roots; no etymology arrows): **[glosses.md](glosses.md)**.
+How to write morph glosses and free English in docs and examples (senses as separate roots; no etymology arrows; free English **loose** by default): **[glosses.md](glosses.md)** ([strict vs loose](glosses.md#strict-vs-loose-free-english)).
 
 # Numbers
 
