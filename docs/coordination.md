@@ -600,6 +600,7 @@ Nesting: [fence nesting](#fence-nesting) — e.g. `A B vol C val` → *(A or B) 
 ---
 
 # VP-level joins
+<a id="vp-level-coordination"></a>
 
 VP-level joins join **verb phrases** inside one clause: each conjunct is a verb plus that verb’s own object material (`/d/` NP, including phrase-level structure on the object), unless a shared object sits **after** the right-close join in SHARED (below). They share one clause subject (`/z/`) and one [clause force](language-reference.md#utterance-markers-j). The join prefix is always **`/v/`**. Forms and endings: [VP / clause forms](#vp-clause-forms) (**-l** / **-m** / **-r** only as joins). Shape and nesting: [fence nesting](#fence-nesting) (right close only). Soft *and then*: clause **`xan`** ([soft **-n**](#soft-n-clause)). Unspecified **-r**: [unspecified-member](#unspecified-member-r-phrase).
 

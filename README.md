@@ -16,7 +16,7 @@ Or open the repo in a [Dev Container](.devcontainer/devcontainer.json) (Node 22 
 |--------|---------|
 | `npm run build` | Compile TypeScript to `dist/` |
 | `npm run typecheck` | Typecheck without emit |
-| `npm run lint:md` | Check Markdown emphasis balance under `docs/` |
+| `npm run lint:md` | Check Markdown emphasis balance and internal links under `docs/` |
 | `npm run lexicon-search` | Lexicon search CLI |
 | `npm run web` | Serve the lexicon search page |
 | `npm run dev` | Run `src/index.ts` via tsx |

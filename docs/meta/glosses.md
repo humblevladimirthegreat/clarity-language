@@ -37,7 +37,7 @@ Grammar tables may keep a column named **Gloss** for free English. When a table 
 |-------|-----|
 | **Morph** | Keep Clarity structure (PoS, binding, join job, stance tags, …) |
 | **Loose free** | Idiomatic English claim — default when a page shows one free line |
-| **Strict free** | Same claim with Clarity packaging spelled out in English — use alone for packaging lessons, or **with** loose in teaching dialogues (e.g. [rainy evening](examples/rainy-evening-dialogue.md)) |
+| **Strict free** | Same claim with Clarity packaging spelled out in English — use alone for packaging lessons, or **with** loose in teaching dialogues (e.g. [rainy evening](../examples/rainy-evening-dialogue.md)) |
 
 **Loose** drops distinctions English doesn’t mark; morph already carries them. **Keep** in loose only what changes the English sentence (who / what / polarity / negation; force English can say; stance that changes the verb; comparative / causal / plan content when that is the point).
 
@@ -90,11 +90,11 @@ Published strings share one phonological root, but **literal**, **metaphorical**
 | `huhunum` | `h-witnessed` | `h-uhunu(fishing→witnessed)-m` |
 | `gohuzem` | `g-home` | `g-ohuze(house→home)-m` |
 
-Same English label for `zumogom` and `zumogon` is fine: both are the *speaker* sense-root; the written ending is recoverable from the Clarity line and from [reference-suffix.md](reference-suffix.md). The gloss’s job is the **sense**, not a second orthography.
+Same English label for `zumogom` and `zumogon` is fine: both are the *speaker* sense-root; the written ending is recoverable from the Clarity line and from [reference-suffix.md](../reference-suffix.md). The gloss’s job is the **sense**, not a second orthography.
 
-**Closed overlays** ([sense-form](special-vocabulary.md#sense-form)): gloss the overlay reading for that `(sense_form, pos)`, not the ordinary lexicon literal. Prefer short stable labels (`witnessed`, `COMMENT`, `SAME`, `plan`, …).
+**Closed overlays** ([sense-form](../special-vocabulary.md#sense-form)): gloss the overlay reading for that `(sense_form, pos)`, not the ordinary lexicon literal. Prefer short stable labels (`witnessed`, `COMMENT`, `SAME`, `plan`, …).
 
-**Special pronouns** ([pronouns.md](pronouns.md)): `zumogon` / `zehadon` / `zanan` / `zenun` / `…odo…` → `z-speaker` / `z-listener` / `z-interlocutors` / `z-someone` / `…-next-clause` — never emoji etymology.
+**Special pronouns** ([pronouns.md](../pronouns.md)): `zumogon` / `zehadon` / `zanan` / `zenun` / `…odo…` → `z-speaker` / `z-listener` / `z-interlocutors` / `z-someone` / `…-next-clause` — never emoji etymology.
 
 ## Morph gloss format
 
@@ -146,7 +146,7 @@ Do not write `z-←microphone` for a speaker antecedent.
 
 ### Mid-word `x` families
 
-Gloss each piece by **family** ([x-compounds.md](x-compounds.md)) — English only; drop sense-picking endings:
+Gloss each piece by **family** ([x-compounds.md](../x-compounds.md)) — English only; drop sense-picking endings:
 
 | Family | Example Clarity | Morph gloss |
 |--------|-----------------|-------------|
@@ -289,9 +289,9 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 
 ## See also
 
-- [reference-suffix.md](reference-suffix.md) — **-l** / **-m** / **-n** / **-r**
-- [special-vocabulary.md](special-vocabulary.md#sense-form) — overlays and closed labels
-- [pronouns.md](pronouns.md) — **-r** and special pronouns
-- [x-compounds.md](x-compounds.md) — mid-word `x` families
+- [reference-suffix.md](../reference-suffix.md) — **-l** / **-m** / **-n** / **-r**
+- [special-vocabulary.md](../special-vocabulary.md#sense-form) — overlays and closed labels
+- [pronouns.md](../pronouns.md) — **-r** and special pronouns
+- [x-compounds.md](../x-compounds.md) — mid-word `x` families
 - [language-reference.md](../language-reference.md#orthography) — written orthography
-- [values.md](values.md) — need stances and endings (morph keeps them; loose free usually drops channel / standing / force / changeability)
+- [values.md](../values.md) — need stances and endings (morph keeps them; loose free usually drops channel / standing / force / changeability)
