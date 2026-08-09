@@ -1,10 +1,16 @@
 # Numbers
+<a id="numbers"></a>
 
-Numerals are a **closed formal subsystem**, not ordinary lexicon roots. Open quantifiers (*many*, *all*, *some*, …) stay lexicon; the numeral word itself can be [digitless](#zero-digit-groups) (unspecified magnitude of a marker identity, including plural **`>1`** on **`ra`**) or carry a [digitless exponent](#digitless-exponents) for special values (+∞ / −∞ / last place / [notional / imaginary](#imaginary) **`g-e-`** / [zero × exponent](#zero-exponent) / …). [Bare OoM](#bare-oom-bands) names a **decade band** (`g+e3` = 1000–9999; `g+e0` = ones 1–9); named **`Ne0`** asserts OoM 0 ([ambient scale](#ambient-scale) — discouraged formally, expected casually). Ordinals distinguish forward **`#`**, end-relative **`#-`** / **`eu`** ([from the end](#from-the-end)), and [generation](#ordinal-generation) via digitful exp (**`g#e0`** = current generation). PoS prefixes are defined in [core.md](core.md); plural **-sh** in [plurality.md](plurality.md); general phonotactics live in [phonology.md](phonology.md); ordinary reference suffixes in [reference-suffix.md](reference-suffix.md). This page is the source of truth for numeral grammar, including [percent denominators](#percent-denominators) (whole NP + `/ɡ/` `…jo`), [ranges](#ranges) (spans reuse [phrase fences](coordination.md) with SHARED continuum `/ɡ/`, documented here), [digitless exponents](#digitless-exponents), and [measure phrases](#measure-phrases) (unit + amount for differentials and durations). PoS-less number stems also compound onto content roots as [numeric derivation](special-vocabulary.md#numeric-derivation) (`ROOTx+e` = *essence of ROOT*, `ROOTx-e-` = *quasi-ROOT*, `ROOTx-e-2` = *quasi-dual*, `ROOTx+0e` = *total-null ROOT*, `ROOTx±0e-1` = *engineering null·residue at OoM −1*, `ROOTx#0e` = *rank-annihilated ROOT*, `ROOTx+1e` = *gazillion-ROOT*, …) — not free clause-slot numerals.
+Numerals are a **closed formal subsystem**, not ordinary lexicon roots. Open quantifiers (*many*, *all*, *some*, …) stay lexicon. This page owns numeral grammar: [digitless](#zero-digit-groups) forms, [digitless exponents](#digitless-exponents), [writing](#writing-preferred-shorthand), [percent](#percent-and-percentage-points), [ranges](#ranges), and [measure phrases](#measure-phrases). PoS-less stems after mid-word **`x`** on content roots are [numeric derivation](special-vocabulary.md#numeric-derivation) — not free clause-slot numerals.
 
 A whole numeric value is **one word**, even when it contains several digit groups (or none).
 
-## Word shape
+**Prerequisites:** [core.md](core.md) Beginner (PoS prefixes); [reference-suffix.md](reference-suffix.md) Beginner (ordinary **-l** / **-m** / **-n** / **-r** — number endings differ); [plurality.md](plurality.md) Beginner (**-sh** is not used on number words).
+
+## Beginner
+<a id="beginner"></a>
+
+### Word shape
 
 ```
 [PoS] + r + V + ( [exponent?] [mantissa digits?] )* + [ending]
@@ -19,11 +25,12 @@ A whole numeric value is **one word**, even when it contains several digit group
 
 **Lexicon rule:** Any stem that matches this grammar is a number, never an ordinary root. Dictionary generation must reject colliding roots. A number stem **after mid-word `x`** on a content host is [numeric derivation](special-vocabulary.md#numeric-derivation), not a free number word (and takes the host’s ordinary reference ending, not [number endings](#number-endings)).
 
-## Parts of speech on numbers
+### Parts of speech on numbers
+<a id="parts-of-speech-on-numbers"></a>
 
 The number word takes whichever PoS prefix the role needs (clause slot, interjection, or discourse glue). The stem (marker + digits + ending) does not change.
 
-**Referential** prefixes (`/ɡ/`, `/z/`, `/d/`, `/b/`) use [marker identity](#marker-vowel-referential-identity) as-is — PoS only chooses the slot or modifier role. **Overlay** prefixes (`/v/`, `/h/`, `/j/`, `/x/`) keep that identity but add a role-specific reading (sections below).
+**Referential** prefixes (`/ɡ/`, `/z/`, `/d/`, `/b/`) use [marker identity](#marker-vowel-referential-identity) as-is — PoS only chooses the slot or modifier role. **Overlay** prefixes (`/v/`, `/h/`, `/j/`, `/x/`) keep that identity but add a role-specific reading — [Intermediate overlays](#number-overlays).
 
 | Prefix | Role with a number |
 |--------|--------------------|
@@ -36,13 +43,13 @@ The number word takes whichever PoS prefix the role needs (clause slot, interjec
 | `/j/` | **interjection** — overlay: see [by marker](#number-as-interjection-by-marker) (*N more!*, deficit, label/score call, place cheer). Left-edge or bare utterance only — [utterance-marker rules](core.md#utterance-markers-j). **Not** clause force. |
 | `/x/` | **discourse marker** — overlay: see [by marker](#number-as-discourse-marker-by-marker). Does **not** fill a clause slot. |
 
-**Not valid with numbers:**
+**`/w/` (adjective adjunct):** numbers do not take `/w/`, and a `/ɡ/` number is not a host for `/w/` grading or framing. Degree and “aboutness” of a quantity use [number endings](#number-endings) (especially **-m** for approximate).
 
-- **`/w/` (adjective adjunct)** — numbers do not take `/w/`, and a `/ɡ/` number is not a host for `/w/` grading or framing. Degree and “aboutness” of a quantity use [number endings](#number-endings) (especially **-m** for approximate), not `/w/`.
 
 Digit-strings (`ro`…) usually take the argument role the clause needs (often `/d/`). Ordinals that modify a noun use `/ɡ/`; an ordinal used as a standalone rank uses `/z/`, `/d/`, or `/b/` as appropriate. Discourse list items use `/x/` + number ([by marker](#number-as-discourse-marker-by-marker): **`re`** / **`reu`** neutral forward / end-relative, **`ra`** corroborating, **`ru`** independent); *for the Nth time* uses `/h/` + **`re`** / **`reu`**; place cheer *First!* uses `/j/` + **`re`** — none of these is `/ɡ/`.
 
-## Marker vowel (referential identity)
+### Marker vowel (referential identity)
+<a id="marker-vowel-referential-identity"></a>
 
 **V** encodes the number’s **referential identity** — scalar vs ordinal vs digit-string. For **scalars**, **V** also carries the **sign of the whole number** (`a` positive, `u` negative). Forward ordinal **`e`** aligns with [rank join **e**](coordination.md#ranked-conjunction-e) (*rank*); end-relative ordinal **`eu`** is a **separate marker** (speech digraph), not join **`ue`** and not scalar **`u`**.
 
@@ -56,7 +63,8 @@ Digit-strings (`ro`…) usually take the argument role the clause needs (often `
 
 Do not combine conflicting identity types on one word (e.g. do not use `re` and `ro` for the same token). In [preferred writing](#writing-preferred-shorthand), the marker is **`+`** / **`-`** / **`#`** / **`#-`** / **`_`** (not written `r`+V). Write end-relative as **`#-`** after PoS (or after an ending mark): `g#-2`, never `g-#2` (that looks like scalar **`-`** then ordinal).
 
-### Sign
+#### Sign
+<a id="sign"></a>
 
 | Identity | How sign works |
 |----------|----------------|
@@ -69,9 +77,181 @@ Do **not** insert speech **`ru`** after **`re`** / **`reu`** / **`ro`**. Do **no
 
 There is no separate “mathematical object” marker. To talk about a number as an entity, use a scalar (**`ra`** / **`ru`**) in a referential slot (often with ordinary wording such as the noun *number*), not a distinct numeral class.
 
-`/v/`, `/h/`, `/j/`, and `/x/` still choose among the same markers, but each overlay gives that identity a **role-specific** reading (add vs ×N vs *N more!* vs corroborating/independent list item, and so on) — see the sections below.
+`/v/`, `/h/`, `/j/`, and `/x/` still choose among the same markers, but each overlay gives that identity a **role-specific** reading (add vs ×N vs *N more!* vs corroborating/independent list item, and so on) — [Intermediate overlays](#number-overlays).
 
-### Number as verb (by marker)
+### Number endings
+<a id="number-endings"></a>
+
+Ordinary [reference suffix](reference-suffix.md) senses do **not** apply inside number words. Speech keeps the ending letter; [preferred writing](#writing-preferred-shorthand) uses a **second-slot mark** after PoS (same glyphs as [span fences](spans.md)).
+
+| Ending | Meaning | Preferred writing |
+|--------|---------|-------------------|
+| **-l** | Exact, newly stated (default) | *(none)* — `g+3`, `g+` |
+| **-m** | Approximate / non-literal (“about N”) | **`~`** after PoS — `g~+3`, `g~+` |
+| **-n** | Conventional / proper designation (titles, official labels, *the Second…*) | **`@`** after PoS — `g@#2`, `g@+1e` |
+| **-r** | Anaphoric resume of a previously stated number, code, or rank | **`=`** after PoS — `g=+`, `x=#2`, `d=_` |
+
+**-r** may be **digitless**: marker + **-r** alone resumes the prior value of that identity without restating digits (`g=+` = *that (scalar) amount again*; `d=_` = *that code again*; `g=#` = *that rank again*). Digits + **-r** still fine when you want to name which prior item (`x=#2` = *as in (2) above*). Marker must match the resumed identity (do not resume a scalar with `g=#`). **`=`** does **not** combine with **`~`** / **`@`**.
+
+On [digitless](#zero-digit-groups) words, **-l** / **-m** / **-n** keep the same discourse jobs relative to the unspecified magnitude (*exact plural count* / *about several* / *conventional “plural” or unlabeled-rank style*, etc.).
+
+### Zero digit groups
+<a id="zero-digit-groups"></a>
+<a id="digitless-numbers"></a>
+<a id="bare-marker"></a>
+
+A number word may omit every digit group: **PoS + marker + ending** only. The marker still fixes referential identity. With **-l** / **-m** / **-n**, the magnitude (or label/rank payload) is **unspecified** as in the table below. With **-r**, the word is [digitless anaphora](#number-endings) only — resume a prior value of that identity; it does **not** introduce a new unspecified magnitude.
+
+| Marker | Writing | Digitless sense | Partition / notes |
+|--------|---------|-----------------|-------------------|
+| **`ra`** | `…+` (etc.) | Unspecified **positive scalar**, specialized to **plural count / amount `>1`** | Complements `…+0` (zero), `…+1` (one), `…+N` (exact N≥2). Not “any non-negative,” not “≥0.” |
+| **`ru`** | `…-` | Unspecified **negative scalar** (*some negative amount*; deficit of unnamed size) | Exact negatives stay `…-N`. |
+| **`re`** | `…#` | Unspecified **rank from the start** (*some nth* / *some place*) | Exact ranks stay `…#N`. |
+| **`reu`** | `…#-` | Unspecified **end-relative rank** (*some nth from the end*) | Exact end-relative ranks stay `…#-N`. |
+| **`ro`** | `…_` | Unspecified **digit-string / label** (*some code*; *a label*) | Exact labels stay `…_…`. |
+
+**Vs noun plural `-sh`:** `-sh` marks that a **referent is a group** ([plurality.md](plurality.md)) — indefinite group introduction stays **-lsh** / **-msh**, not digitless. Digitless **`ra`** marks that a **count/amount is `>1`** without naming N. They are different jobs (quantity vs group-reference) and may co-occur (`zagadalsh g+3`). Do **not** treat `g+` as a replacement for noun **-lsh**, nor as plural morphology on verbs, circumstance, or number words themselves.
+
+**Vs fence `-r`:** phrase **`zar`** / **`zor`** / … pick an unspecified **member of an inventory**. Digitless number **-r** resumes a **prior numeric value**. Digitless number **-l** (etc.) introduces an unspecified magnitude of that marker — not inventory membership.
+
+**Overlays** inherit the same emptiness (marker identity → role reading, payload unspecified):
+
+| Overlay | Digitless examples |
+|---------|-------------------|
+| `/ɡ/` `/z/` `/d/` `/b/` | `g+` *plural / more than one* (on a noun); `z-` *some negative amount* (subj); `b#` *of some rank*; `b#-` *of some end-relative rank*; `d_` *some code* (obj) |
+| `/v/` | Unspecified amount under the verb sense: **`v+`** *increase*; **`v-`** *decrease*; **`v#`** *take / assign some rank*; **`v#-`** *take some end-relative place*; **`v_`** *enter / dial some code*. Soft: **`v~+`** *increase a bit*; **`v~-`** *decrease a bit* |
+| `/h/` | Unspecified amount under the adverb sense: **`h+`** *multiple times*; **`h-`** *÷ / into some number of parts*; **`h#`** *for some nth time*; **`h#-`** *for some nth-from-last time*; **`h_`** *at some clock or date* (still bare-`hro` **time** only — not channel codes). Soft: **`h~+`** *a few times*; **`h~-`** *÷ a bit* / *into a few parts* |
+| `/j/` | **`j+`** *More!*; **`j-`** *Short!* / *down by some amount!*; **`j#`** *Nth!* (place cheer, rank unnamed); **`j#-`** *Nth-from-end!*; **`j_`** *…!* (unspecified score / code call). Soft: **`j~+`** *a bit more!* |
+| `/x/` | `x#` *some point:* (neutral, number unnamed); `x#-` *some end-relative point:*; `x+` / `x-` corroborating / independent item of unnamed index; `x_` *regarding some (unnamed) label* |
+
+**`h_` vs `har`:** digitless time `h_` is still a **number word** (unspecified clock/date reading under bare `hro`). Circumstance **`har`** (*sometime*) is the [restrictor](restrictors.md), not a numeral — do not swap them.
+
+**Illegal with zero groups:** percent / percentage-point closers (**`jo`** / **`ju`**) still need a mantissa group — bare `…+%` is not a shortcut for “some percent.” Exponent-only groups with **digits** (`e9`) are **not** zero-group forms; they are ordinary one-group bare OoM. Exponent markers **without** digits are [digitless exponents](#digitless-exponents) (special values) — also not zero-group forms.
+
+### Digits
+
+Remapped CV syllables (current vowels; preferred voiced consonants):
+
+| Digit | Syllable |
+|-------|----------|
+| 1 | wo |
+| 2 | du |
+| 3 | re |
+| 4 | mo |
+| 5 | va |
+| 6 | gu |
+| 7 | le |
+| 8 | ha |
+| 9 | na |
+| 0 | zo |
+
+
+How each syllable sounds: [phonology.md](phonology.md).
+
+### Exponents
+
+Within each digit group, speech markers build ordinary magnitudes (and later specials):
+
+| Marker | Role |
+|--------|------|
+| **ba** | Positive exponent, followed by the exponent’s digits |
+| **bu** | Negative exponent, followed by the exponent’s digits |
+| **ja** | After exponent digits when a **mantissa follows** (not a digit) |
+| **je** | **Decimal point** (not a digit) |
+| **jo** | **Percent** closer — [percent](#percent-and-percentage-points) |
+| **ju** | **Percentage-point** closer — [percent](#percent-and-percentage-points) |
+
+- The **exponent comes before** the group’s mantissa digits.
+- If a mantissa follows the exponent, say **`ja`** after the last exponent digit, then the mantissa. Example: `27e12` → `ba` + `wo` + `du` + `ja` + `du` + `le`.
+- **Bare order of magnitude** (exponent only, no mantissa): use `ba`/`bu` + exponent digits and **omit** **`ja`**. Example: *e9* → `ba` + `na`. Decade-band readings: [Bare OoM](#bare-oom-bands).
+- Ordinary magnitudes usually **omit** exponent **`0`** — `g+3`, not `*g+3e0`. Named **`e0`** / ambient scale: [Ambient scale](#ambient-scale).
+- Default scale uses **engineering notation**: exponents are usually multiples of **3** (e.g. `27e6`, not `2.7e7`).
+- **Decimal point:** say **`je`** after the digit(s) left of the point; digits after **`je`** are the fractional part.
+- **No metric prefixes** in the lexicon — base unit + exponent / exact count on the amount ([measure phrases](#no-metric-prefixes)).
+
+Digitless specials (+∞, last place, hyperbole, zero×exp, …) and ordinal **generation** offsets: [Intermediate](#intermediate) / [Advanced](#advanced).
+
+### Writing (preferred shorthand)
+<a id="writing-preferred-shorthand"></a>
+
+Speech always uses the full CV grammar above (marker as `r`+V; ending as **-l** / **-m** / **-n** / **-r**). For **free number words**, writing prefers shorthand for the ending, marker, and body. Which surface to use when (shorthand vs spelled CV) is [style](#writing-style-numeric-vs-spelled), not grammar — parsers accept both.
+
+```
+[PoS] + [~|@|=]? + [marker] + [body?]
+```
+
+#### Ending marks (second slot, after PoS)
+
+Same glyphs and jobs as [span-fence marks](spans.md#writing) (**`~`** soft / **`@`** proper); anaphor uses **`=`** (keyboard-friendly; spans use interior **`=`** — `d[=]`).
+
+| Mark | Speech ending | Job | Examples |
+|------|---------------|-----|----------|
+| *(none)* | **-l** | exact (default) | `g+3`, `g+`, `x#2`, `d_555,123,4567` |
+| **`~`** | **-m** | approximate / soft | `g~+3`, `g~+`, `g~+27e6`, `g~#e` |
+| **`@`** | **-n** | conventional / proper | `g@#2`, `g@+1e`, `x@#e` |
+| **`=`** | **-r** | anaphoric resume | `g=+`, `d=_`, `x=#2`, `g=#1e` |
+
+Order when both **`@`** and **`~`** apply: **`@` then `~`**. **Do not write** the stack with both glyphs — spell **`@`** only, with uncertain tonality (same hedge habit as spans). **`=`** does **not** combine with **`~`** / **`@`**. Full phonetic spelling with a trailing ending letter (e.g. *grarel*, *gram*) is the [style default](#writing-style-numeric-vs-spelled) for [numeric derivation](special-vocabulary.md#numeric-derivation); on free number words it is fine as a pronunciation gloss, not preferred in running text.
+
+#### Marker (not written as `r`+V)
+
+| Symbol | Speech | Meaning |
+|--------|--------|---------|
+| **`+`** | `ra` | Positive scalar |
+| **`-`** | `ru` | Negative scalar |
+| **`#`** | `re` | Ordinal (from the start) |
+| **`#-`** | `reu` | End-relative ordinal (from the end) |
+| **`_`** | `ro` | Digit-string |
+
+Place the identity symbol **immediately after** any ending mark (or after PoS when exact), **before the body** (or alone when the body is empty): `g+3`, `g~+3`, `g=+`, `d_555,123,4567`, `d=_`, `g@#2`, `g#-2`, `g~#-2`. Marker **`#-`** is one identity (two glyphs); do **not** write `g-#2`. After bare **`_`**, do **not** write a following **`-`** (labels stay unsigned) — see [Sign](#sign).
+
+#### Body
+
+| Speech | Preferred writing |
+|--------|-------------------|
+| *(no digit groups)* | *(empty after marker)* `g+`, `g~-`, `g=#`, `g=#-`, `h_` |
+| Digit syllables (`wo`…`zo`) | Arabic **`0`–`9`** |
+| `ba` / `bu` (+ `ja` when a mantissa follows) | **`e`** / **`e-`** (engineering, scientific, or [ordinal generation](#ordinal-generation)) |
+| `ba` / `bu` with **no** digits ([digitless exp](#digitless-exponents)) | **`e`** / **`e-`** with no power digits — specials `g+e`, `g+e-`; zero×digitless `g+0e`, `g+0e-`, `g#0e`; hyperbole `g+1e`, `g+1e-`, `g#1e`, `g#1e-` |
+| named exp **`0`** (bare OoM / assert) | **`e0`** — ones band `g+e0`; assert `g+3e0` / `g#e0` (omit still usual when ones/current is clear; [ambient](#ambient-scale)) |
+| mantissa **`0`** + digitful **`e-1`** ([engineering null](#zero-exponent)) | **`0e-1`** — `g+0e-1` / `g-0e-1` only |
+| `je` | **`.`** |
+| `jo` | **`%`** |
+| `ju` | **`%*`** |
+
+Do **not** write out **`ja`**, **`je`**, **`jo`**, or **`ju`** in shorthand — use `e` / `.` / `%` / `%*` instead.
+
+**Commas** separate digit groups for readability (preferred for multi-group values). Commas are orthographic only; they are not spoken and do not change the word. Digitless forms have no commas.
+
+For long values, break into digit groups of at most three mantissa digits (plus their exponents); all groups still sit in **one** word after a single marker.
+
+### Starter examples
+
+Prefer shorthand in free slots. Speech is always the full CV form.
+
+| Value | Writing | Reading |
+|-------|---------|--------|
+| plural / more than one | `g+` | *more than one* (digitless **`ra`**) |
+| three (modifier) | `g+3` | *three* (on a noun) |
+| three (subject) | `z+3` | *three* |
+| −3 (object) | `d-3` | *−3* |
+| second (modifier) | `g#2` | *the second* |
+| about 3 | `g~+3` | approximate (**-m**) |
+| that amount again | `g=+` | digitless **-r** resume |
+| room 12 | `g_12` | digit-string label |
+
+Full inventory tables: [Intermediate examples](#examples).
+
+## Intermediate
+<a id="intermediate"></a>
+
+### Overlay roles (`/v/` `/h/` `/j/` `/x/`)
+<a id="number-overlays"></a>
+
+Overlay prefixes keep marker identity but add a role-specific reading. Referential prefixes (`/ɡ/` `/z/` `/d/` `/b/`) use the marker as-is — [Beginner marker vowel](#marker-vowel-referential-identity).
+
+#### Number as verb (by marker)
+<a id="number-as-verb-by-marker"></a>
 
 `/v/` + number inherits the marker’s identity, so the action type follows **V**.
 
@@ -87,7 +267,8 @@ There is no separate “mathematical object” marker. To talk about a number as
 
 Endings still apply (**-m** ≈ *about* that amount/code/rank, **-r** resume — including [digitless](#zero-digit-groups) `v=+` / `v=_`, etc.).
 
-### Number as adverb (by marker)
+#### Number as adverb (by marker)
+<a id="number-as-adverb-by-marker"></a>
 
 `/h/` + number inherits the marker’s identity, so the adverbial role follows **V**.
 
@@ -127,7 +308,8 @@ Contrasts:
 
 Endings still apply (**-m** ≈ *about* that many times / that clock or date, **-r** resume — including digitless `h=+` / `h=_`). Relative %-change factors use **`h+…`** (e.g. ×1.5), not **`jo`** / **`ju`** alone — see [percent](#percent-and-percentage-points).
 
-### Number as interjection (by marker)
+#### Number as interjection (by marker)
+<a id="number-as-interjection-by-marker"></a>
 
 `/j/` + number is an **interjection** (expressive call-out), not clause force. Clause force stays the closed non-numeric set in the [utterance-marker section](core.md#clause-force). Number interjections appear only in the left-edge `/j/` cluster (before force, when a clause follows) or as a bare utterance with no force.
 
@@ -168,7 +350,8 @@ Contrasts:
 
 Endings still apply (**-m** fuzzy *about three more!* / *about three!*, **-n** conventional call name, **-r** resume a prior shout’s value — digitless `j=+` / `j=_` allowed).
 
-### Number as discourse marker (by marker)
+#### Number as discourse marker (by marker)
+<a id="number-as-discourse-marker-by-marker"></a>
 
 `/x/` + number is discourse glue for numbered list items and label cites. Marker vowel encodes **independence framing** of the list item (or cite-as-label for **`ro`**), except **`reu`** / **`#-`**, which marks **end-relative** place in the list (not independence). It does **not** occupy a main-clause argument or adjunct slot (contrast `/ɡ/` *the second page*, `/h/` *three times* / *for the Nth time*, `/j/` interjection shouts).
 
@@ -213,97 +396,8 @@ Contrasts:
 
 Endings still apply (**-l** newly stated item, **-r** *as in (N) above* or digitless `x=#` / `x=#-` / `x=+` / … for *as in that item above* with same marker framing, **-n** titled / official item name, **-m** fuzzy *around item N*; on last-place **`x#e`** / **`x~#e`** / **`x@#e`** / **`x=#e`** and start-place **`x#e-`** / **`x~#e-`** / **`x@#e-`** / **`x=#e-`** as above). Percent / percentage-point closers are not used with `/x/` numbers.
 
-## Number endings
 
-Ordinary [reference suffix](reference-suffix.md) senses do **not** apply inside number words. Speech keeps the ending letter; [preferred writing](#writing-preferred-shorthand) uses a **second-slot mark** after PoS (same glyphs as [span fences](spans.md)).
-
-| Ending | Meaning | Preferred writing |
-|--------|---------|-------------------|
-| **-l** | Exact, newly stated (default) | *(none)* — `g+3`, `g+` |
-| **-m** | Approximate / non-literal (“about N”) | **`~`** after PoS — `g~+3`, `g~+` |
-| **-n** | Conventional / proper designation (titles, official labels, *the Second…*) | **`@`** after PoS — `g@#2`, `g@+1e` |
-| **-r** | Anaphoric resume of a previously stated number, code, or rank | **`=`** after PoS — `g=+`, `x=#2`, `d=_` |
-
-**-r** may be **digitless**: marker + **-r** alone resumes the prior value of that identity without restating digits (`g=+` = *that (scalar) amount again*; `d=_` = *that code again*; `g=#` = *that rank again*). Digits + **-r** still fine when you want to name which prior item (`x=#2` = *as in (2) above*). Marker must match the resumed identity (do not resume a scalar with `g=#`). **`=`** does **not** combine with **`~`** / **`@`**.
-
-On [digitless](#zero-digit-groups) words, **-l** / **-m** / **-n** keep the same discourse jobs relative to the unspecified magnitude (*exact plural count* / *about several* / *conventional “plural” or unlabeled-rank style*, etc.).
-
-## Zero digit groups
-<a id="zero-digit-groups"></a>
-<a id="digitless-numbers"></a>
-<a id="bare-marker"></a>
-
-A number word may omit every digit group: **PoS + marker + ending** only. The marker still fixes referential identity. With **-l** / **-m** / **-n**, the magnitude (or label/rank payload) is **unspecified** as in the table below. With **-r**, the word is [digitless anaphora](#number-endings) only — resume a prior value of that identity; it does **not** introduce a new unspecified magnitude.
-
-| Marker | Writing | Digitless sense | Partition / notes |
-|--------|---------|-----------------|-------------------|
-| **`ra`** | `…+` (etc.) | Unspecified **positive scalar**, specialized to **plural count / amount `>1`** | Complements `…+0` (zero), `…+1` (one), `…+N` (exact N≥2). Not “any non-negative,” not “≥0.” |
-| **`ru`** | `…-` | Unspecified **negative scalar** (*some negative amount*; deficit of unnamed size) | Exact negatives stay `…-N`. |
-| **`re`** | `…#` | Unspecified **rank from the start** (*some nth* / *some place*) | Exact ranks stay `…#N`. |
-| **`reu`** | `…#-` | Unspecified **end-relative rank** (*some nth from the end*) | Exact end-relative ranks stay `…#-N`. |
-| **`ro`** | `…_` | Unspecified **digit-string / label** (*some code*; *a label*) | Exact labels stay `…_…`. |
-
-**Vs noun plural `-sh`:** `-sh` marks that a **referent is a group** ([plurality.md](plurality.md)) — indefinite group introduction stays **-lsh** / **-msh**, not digitless. Digitless **`ra`** marks that a **count/amount is `>1`** without naming N. They are different jobs (quantity vs group-reference) and may co-occur (`zagadalsh g+3`). Do **not** treat `g+` as a replacement for noun **-lsh**, nor as plural morphology on verbs, circumstance, or number words themselves.
-
-**Vs fence `-r`:** phrase **`zar`** / **`zor`** / … pick an unspecified **member of an inventory**. Digitless number **-r** resumes a **prior numeric value**. Digitless number **-l** (etc.) introduces an unspecified magnitude of that marker — not inventory membership.
-
-**Overlays** inherit the same emptiness (marker identity → role reading, payload unspecified):
-
-| Overlay | Digitless examples |
-|---------|-------------------|
-| `/ɡ/` `/z/` `/d/` `/b/` | `g+` *plural / more than one* (on a noun); `z-` *some negative amount* (subj); `b#` *of some rank*; `b#-` *of some end-relative rank*; `d_` *some code* (obj) |
-| `/v/` | Unspecified amount under the verb sense: **`v+`** *increase*; **`v-`** *decrease*; **`v#`** *take / assign some rank*; **`v#-`** *take some end-relative place*; **`v_`** *enter / dial some code*. Soft: **`v~+`** *increase a bit*; **`v~-`** *decrease a bit* |
-| `/h/` | Unspecified amount under the adverb sense: **`h+`** *multiple times*; **`h-`** *÷ / into some number of parts*; **`h#`** *for some nth time*; **`h#-`** *for some nth-from-last time*; **`h_`** *at some clock or date* (still bare-`hro` **time** only — not channel codes). Soft: **`h~+`** *a few times*; **`h~-`** *÷ a bit* / *into a few parts* |
-| `/j/` | **`j+`** *More!*; **`j-`** *Short!* / *down by some amount!*; **`j#`** *Nth!* (place cheer, rank unnamed); **`j#-`** *Nth-from-end!*; **`j_`** *…!* (unspecified score / code call). Soft: **`j~+`** *a bit more!* |
-| `/x/` | `x#` *some point:* (neutral, number unnamed); `x#-` *some end-relative point:*; `x+` / `x-` corroborating / independent item of unnamed index; `x_` *regarding some (unnamed) label* |
-
-**`h_` vs `har`:** digitless time `h_` is still a **number word** (unspecified clock/date reading under bare `hro`). Circumstance **`har`** (*sometime*) is the [restrictor](restrictors.md), not a numeral — do not swap them.
-
-**Illegal with zero groups:** percent / percentage-point closers (**`jo`** / **`ju`**) still need a mantissa group — bare `…+%` is not a shortcut for “some percent.” Exponent-only groups with **digits** (`e9`) are **not** zero-group forms; they are ordinary one-group bare OoM. Exponent markers **without** digits are [digitless exponents](#digitless-exponents) (special values) — also not zero-group forms.
-
-## Digits
-
-Remapped CV syllables (current vowels; preferred voiced consonants):
-
-| Digit | Syllable | IPA (approx.) |
-|-------|----------|----------------|
-| 1 | wo | /wo̞/ |
-| 2 | du | /dɶ/ |
-| 3 | re | /re̞/ |
-| 4 | mo | /mo̞/ |
-| 5 | va | /vɑ/ |
-| 6 | gu | /ɡɶ/ |
-| 7 | le | /le̞/ |
-| 8 | ha | /ɣɑ/ |
-| 9 | na | /nɑ/ |
-| 0 | zo | /zo̞/ |
-
-## Exponents
-
-Within each digit group:
-
-| Marker | Role |
-|--------|------|
-| **ba** | Positive exponent, followed by the exponent’s digits — or [digitless](#digitless-exponents) (no digits) for special values |
-| **bu** | Negative exponent, followed by the exponent’s digits — or [digitless](#digitless-exponents) (no digits) for special values |
-| **ja** | After exponent digits when a **mantissa follows** (not a digit) |
-| **je** | **Decimal point** (not a digit) |
-| **jo** | **Percent** closer (not a digit) — see [Percent and percentage points](#percent-and-percentage-points) |
-| **ju** | **Percentage-point** closer (not a digit) — see [Percent and percentage points](#percent-and-percentage-points) |
-
-- The **exponent comes before** the group’s mantissa digits.
-- If a mantissa follows the exponent, say **`ja`** after the last exponent digit, then the mantissa. Example: `27e12` → `ba` + `wo` + `du` + `ja` + `du` + `le`.
-- **Bare order of magnitude** (exponent only, no mantissa): use `ba`/`bu` + exponent digits and **omit** **`ja`**. The group ends at the next `ba`/`bu`, or at the word ending. Example: *e9* → `ba` + `na` (not `*banaja`). See [Bare OoM decade bands](#bare-oom-bands).
-- **Digitless exponent** ([special values](#digitless-exponents), [hyperbole](#hyperbole-gazillion), or [zero × digitless exp](#zero-exponent)): use `ba`/`bu` with **no** exponent digits — alone for specials (`g+e`), after mantissa **`≠0`** for hyperbole (`g+1e`), or after mantissa **`0`** for total-null / sterile / residue specials (`g+0e`). Not the same as bare OoM (which always names the power) and not a [zero-group](#zero-digit-groups) word. Mantissa **`0`** + **digitful** exp **`-1`** only is the [engineering null / residue](#zero-exponent) pair **`±0e-1`**.
-- **Exponent `0`:** ordinary magnitudes usually **omit** the exponent (and **`ja`**) — `g+3`, not `*g+3e0`. **Named `e0`** is ordinary bare / mantissa+exp anatomy (not a digitless special): bare **`g+e0`** = ones-decade band; mantissa **`Ne0`** (**`g+3e0`**) = *N × 10⁰* and **asserts OoM 0** (see [Ambient scale](#ambient-scale)). Do **not** confuse omit/`e0` with digitless `ba`/`bu` specials (`g+e`). Mantissa **`0`** + named **`e0`** (**`…0e0`**) is **not used**. Derivation does **not** take **`ROOTx+e0`** — [special-vocabulary.md](special-vocabulary.md#zero-exponent-derivation).
-- Default spoken/written scale uses **engineering notation**: exponents are usually multiples of **3** (e.g. `27e6`, not `2.7e7`).
-- **Decimal point:** say **`je`** after the digit(s) left of the point; digits after **`je`** are the fractional part (group in threes if long). May appear with or without an exponent.
-- **Scientific register** is optional: exp-first, then **`ja`**, then mantissa with **`je`** after the leading digit (usual scientific shape). Example: `5.2487083e-4` → `bu` + `mo` + `ja` + `va` + `je` + `du` + `mo` + `ha` + `le` + `zo` + `ha` + `re`.
-- Bare OoM uses scalar marker **`ra`** (or **`ru`** if negative) for power-of-ten magnitude. On ordinals **`re`** / **`reu`**, bare OoM / mantissa+digitful exp is [generation offset](#ordinal-generation), not ×10ᴺ — including named **`#e0`** = **current generation** (assert gen 0). Digitless-exponent special values also use **`ra`** / **`ru`** / **`re`** as in that section — not **`ro`**. Digitless-exp on **`reu`** / **`#-`** is undefined.
-- **Cents / fixed subunits:** an exponent need not be a multiple of 3 when the unit has a conventional subunit (e.g. dollars: `4e-2` for four cents). Same pattern for other fixed subunits if needed. Do **not** use **`jo`** for money subunits.
-- **No metric prefixes** in speech or lexicon: see [measure phrases](#no-metric-prefixes) — base unit + engineering exponent / exact count (`40e3` grams, not “40 kilograms”; `12e-9` meters, not “12 nanometers”).
-
-#### Bare OoM decade bands
+### Bare OoM decade bands
 <a id="bare-oom-bands"></a>
 <a id="bare-oom"></a>
 
@@ -322,7 +416,8 @@ Same under `/z/` `/d/` `/b/`. Soft **`g~+e3`** ≈ *about in the thousands band*
 
 **Overlays** inherit the band as the verb/adverb magnitude: **`v+e3`** *increase by a thousands-band amount*; **`h+e0`** *× a ones-band factor*; **`j+e3`** *Thousands!* (band cheer).
 
-#### Ambient scale (casual)
+
+### Ambient scale (casual)
 <a id="ambient-scale"></a>
 
 In **formal** writing and careful speech, treat **omitted exp as ones-place** (`g+3` = 3). **Do not** rely on a discourse-default decade.
@@ -339,6 +434,456 @@ In **formal** writing and careful speech, treat **omitted exp as ones-place** (`
 | **`g+e0`** | *ones-band amount* (bare OoM), not ambient thousands |
 
 **`Ne0`** is the normal assert form (any mantissa **`N≠0`**). Formal prose that never uses ambient still rarely needs **`e0`**; omit remains fine when ones-place is already clear.
+
+
+### From the end — end-relative ordinal marker **`#-`** / **`eu`**
+<a id="from-the-end"></a>
+<a id="nth-from-the-end"></a>
+<a id="negative-ordinal"></a>
+
+**End-relative place** uses marker **`eu`** (writing **`#-`**), not mantissa + digitless **`bu`** on forward **`#`**. Count back from last place within the **same generation / cohort** (exp omitted). Exact (or soft) end-relative ordinal; **not** hyperbole and **not** the no-mantissa start landmark **`g#e-`**.
+
+Speech is **`reu`** + digits + ending (e.g. `g#-2` → *greudul*). Digraph **`eu`** avoids colliding with rank-join **`ue`**.
+
+| Form | Reading |
+|------|---------|
+| **`g#-1`** | *1st from the end* — same referent as last-place **`g#e`**, framed as counting from the end (English *Starting with the last one*) |
+| **`g#-2`** | *2nd from the end* / *penultimate* |
+| **`g#-3`** | *3rd from the end* / *antepenultimate* |
+| **`g~#-2`** | *about 2nd from the end* |
+| **`g@#-2`** | conventional / titled *penultimate* (etc.) |
+| **`g=#-2`** | resume that prior end-relative place |
+| **`g#-`** | unspecified end-relative rank ([zero groups](#zero-digit-groups)) |
+
+**Contrast:** **`g#2`** = numbered *2nd* (from the start); **`g#-2`** = *2nd from the end*; **`g#e`** = last as landmark; **`g~#e`** = near last (no count); **`g#e-`** / **`g~#e-`** = start / near first (no mantissa); **`g#2e-`** = early hyperbole (not penultimate); **`g#2e-1`** = 2nd of gen −1 ([generation](#ordinal-generation)).
+
+**Overlays** inherit:
+
+| Form | Reading |
+|------|---------|
+| **`h#-2`** | *for the 2nd-from-last time* / *the penultimate time* |
+| **`v#-2`** | *place / come in 2nd from the end* |
+| **`j#-2`** | *Penultimate!* / *Second from last!* |
+| **`x#-1`** | *1st-from-end point:* / *Starting with the last one:* (counting twin of **`x#e`** *Finally:*) |
+| **`x#-2`** | *2nd-from-end point:* / *penultimate item:* |
+
+Digitless-exp and hyperbole on **`#-`** stay **undefined**. Combine with [digitful generation](#ordinal-generation) when needed: **`g#-3e2`** = 3rd from the end **in generation +2**.
+
+
+### Ordinal generation — digitful exponent on **`#`** / **`#-`**
+<a id="ordinal-generation"></a>
+<a id="generation-ordinal"></a>
+
+On forward **`#`** / **`re`** and end-relative **`#-`** / **`reu`**, a **digitful** exponent is **not** scalar power-of-ten. It is **generation offset** from the **focused item** (kinship, version line, nested outline, …):
+
+| Piece | Job |
+|-------|-----|
+| **Marker `#` / `#-`** | Count **from the start** / **from the end** within that generation’s cohort |
+| **Digitful exp `eK` / `e-K`** | Generation **+K** (descendants / nested deeper) or **−K** (ancestors / enclosing layer) |
+| **Mantissa** | Which **slot** in that cohort (omit mantissa = bare OoM: the generation as a whole) |
+| **Exp omitted** | **Same generation** as the focus (`g#3` = 3rd peer) — formal default |
+| **Named `e0`** | **Assert current generation** (gen 0) — parallel to scalar [OoM-0 assert](#ambient-scale); usually redundant when omit already means current, but cancels casual “ambient generation” elision |
+
+| Form | Reading |
+|------|---------|
+| **`g#3`** | 3rd of the focus’s own generation (from the start) |
+| **`g#-3`** | 3rd of the focus’s own generation (from the end) |
+| **`g#3e0`** | 3rd of the **current** generation, exp asserted (gen 0) |
+| **`g#e0`** | **current generation** cohort as a whole (member unspecified) |
+| **`g#3e2`** | 3rd from the start **in generation +2** (e.g. 3rd in the grandchild cohort) |
+| **`g#3e-2`** | 3rd from the start **in generation −2** (e.g. 3rd in the great-grandparent cohort) |
+| **`g#-1e2`** | last of generation +2 (end-framed within that cohort) |
+| **`g#e2`** | generation +2 cohort as a whole (member unspecified) |
+| **`g#e-1`** | generation −1 / parent layer (member unspecified) |
+| **`g#1e-1`** | 1st of generation −1 (often *the parent* when the cohort is singleton-framed) |
+
+**Not** this cell: digitless **`g#e`** / **`g#e-`** = telos / origin **landmarks** (extremes of the axis); digitless mantissa forms **`g#1e`** / **`g#1e-`** = [hyperbole](#hyperbole-gazillion); digitless **`g#0e`** = [rank annihilated](#rank-annihilated) (not generation). Do **not** read **`g#2e-`** as *grandparent* — use **`g#e-2`** / **`g#1e-2`**. Do **not** read **`g#0e-1`** as engineering null — that is scalar **`g+0e-1`**.
+
+**Overlays:** `/x/` treats generation as **agenda nesting** (`x#3e2` = *3rd sub-sub-point under the focus*; **`x#e0`** = *current-layer item(s)* / assert this outline level). `/h/` / `/v/` / `/j/` inherit the same product (*for the 3rd time in gen +2*, *place 3rd in gen +2*, …) when the series is generation-structured; flat event counts stay **`h#N`**.
+
+**Derivation:** free generation is series-relative; kind morphs keep digitless **`ROOTx#e-`** / **`ROOTx#e`** as origin / telos of the **kind** — no productive free-style **`ROOTx#-N`** or **`ROOTx#NeK`** in this pass ([special-vocabulary.md](special-vocabulary.md#ordinal-digit-morphs)).
+
+
+### Percent and percentage points
+<a id="percent-and-percentage-points"></a>
+
+Percent and percentage points are **scalar notation modes** on **`ra`** / **`ru`**, not new marker identities and not endings. They use group closers **`jo`** / **`ju`**, parallel to **`je`**.
+
+| Closer | Sense | Mantissa digits | Underlying magnitude |
+|--------|-------|-----------------|----------------------|
+| **`jo`** | **Percent** (portion of a whole) | Everyday percent figure (`25` in `25%`) | mantissa ÷ 100 |
+| **`ju`** | **Percentage points** (point-scale amount or delta) | Point figure (`2` in `+2%*`) | mantissa ÷ 100 |
+
+Mantissa digits follow the [normal mantissa rules](#exponents) (including optional **`je`** inside the percent/point reading). Say the digits you mean (`100%` → `wo zo zo jo`, not a shortened speech form).
+
+#### Form
+
+```
+mantissa-digits ( je fraction-digits )? jo|ju
+```
+
+- **Order:** integer digits, optional **`je`** + fractional digits, then **`jo`** or **`ju`**. Never `… jo/ju … je …`.
+- **Scalars only:** **`re…jo/ju`** and **`ro…jo/ju`** are illegal.
+- **No exponent in the same group:** do not combine **`ba`** / **`bu`** with **`jo`** or **`ju`**. Use a plain scalar (`je` / `e-N`) for rates outside everyday percent talk.
+- **One closer per word:** at most one **`jo`** or **`ju`** group in the number word (not both; not repeated across groups).
+- **Bare closer** (no mantissa): illegal.
+- Do not mark the same group with both **`jo`** and an equivalent `e-2` exponent.
+
+Endings still apply (**-l** exact, **-m** about, **-n** conventional label, **-r** resume).
+
+In [preferred writing](#writing-preferred-shorthand): **`%`** → speech **`jo`**; **`%*`** → speech **`ju`** (sign still on **`ra`** / **`ru`**, written **`+`** / **`-`**).
+
+#### What each closer is for
+
+| English habit | Clarity |
+|---------------|---------|
+| `25% of X` (portion) | whole NP + `/ɡ/` **`…jo`** — [denominator](#percent-denominators) |
+| `+2 percentage points` / `from 10% to 12%` point delta | **`ju`** (often as `/v/` **`ra`** / **`ru`**: increase/decrease by that point amount) |
+| `+50% relative to baseline` (factor change) | **Not** **`jo`** / **`ju`** — use a multiplicative `/h/` factor (**`h+1.5`**, etc.) or ordinary *relative-to* wording |
+
+`25%` (`…jo`) and `0.25` (plain scalar) name the same magnitude; **`jo`** only chooses the percent-scale reading. **`ju`** likewise names a ÷100 magnitude, but framed as **points** (not as “N% of a whole”).
+
+#### Denominator (portion “of what”)
+<a id="percent-denominators"></a>
+<a id="percent-of-what"></a>
+
+The **whole** / reference class is **not** inside the number word — no denom closer, no open argument on the numeral.
+
+**Default:** the whole is the **host noun**; the percent is an ordinary `/ɡ/` scalar on that noun — same slot as a count (`zagadalsh g+3` = *three cats*):
+
+| Shape | Gloss |
+|-------|--------|
+| `zagadalsh g+25%` | *25% of the cats* |
+| `d<test>lsh g+95%` | *95% of the tests* (object) |
+| `b<people>lsh g+5%` under a host relation | *5% of the people* as `/b/` |
+
+The noun names the reference class; **`jo`** grades how much of that class. Same endings on the percent word (**-m** ≈ *about 25% of …*).
+
+**When the whole is not the modified head:** use a complex `/ɡ/` or `/h/` *of* / *out of* (lexicon relation) + `/b/` whole, with the percent elsewhere in the clause as needed. Do **not** invent a second `/b/` on the number word (numbers take no `/w/` and no open arguments).
+
+**Not a denom job** (no portion-whole required):
+
+| Habit | Why |
+|-------|-----|
+| **`…ju`** point amounts / deltas | Points move a percent-scale quantity already in play |
+| `from A% to B%` [spans](#ranges) | Endpoints are percent readings; continuum supplies the line |
+| `N% relative to` baseline | Factor change — `/h/` **`h+…`** or ordinary *relative-to* wording |
+| *top / bottom N%* | Rank band; class usually clear from context or named separately |
+| *N% done / complete* | Whole = the task; often clear without a separate denom NP |
+
+**Style:** a bare `/z/` (or other freestanding) **`…jo`** percent with no named whole is **grammatical but stylistically bad** — prefer an explicit whole (*percent of what*). Bare **`…ju`** point amounts are fine when the percent-scale quantity being moved is already clear.
+
+
+### Digit-strings
+
+Use marker **`ro`** (written **`_`**). Omit exponents. Prefer groups of three digits when digits are present. Ending is usually **-l** (exact label); **-n** for an official designation; **-r** to resume a prior code (**digitless** `d=_` / `g=_` allowed). [Digitless](#zero-digit-groups) `…_` = unspecified label / some code. Bare `/h/` + **`ro`** is **[temporal circumstance only](#time)** (`h_15,30`, `h_2026,07,22`, digitless `h_`) — not a generic code adverb. Non-time labels as circumstance use a host relation + `/b/` (e.g. `/h/` *on* + `b_7` *channel 7*), or modify a noun with `/ɡ/`. Digit-strings are unsigned — see [Sign](#sign). Clock and calendar field orders are under [Time](#time).
+
+
+### Time
+<a id="time"></a>
+
+Time uses the existing number grammar; there is **no** fifth marker vowel and **no** time closer parallel to **`jo`** / **`ju`**.
+
+**Bare `/h/` + `ro` (`hro…`) is reserved for temporal circumstance** (clock or calendar). Spoken `hro` already marks that reading; do not use bare `h_…` for channel, frequency, gate, room-as-where, or other non-time codes.
+
+| Job | How |
+|-----|-----|
+| **Clock / schedule** | Digit-string **`ro`** as bare `/h/`. Default **24h**. Fields left→right, commas orthographic only: hour, minute, optional seconds — `h_15,30`, `h_15,30,00`. Digitless `h_` = *at some (unspecified) clock time*. |
+| **Calendar date** | Digit-string **`ro`**, ISO-ish fields: year, month, day — bare `h_2026,07,22`, or modifier `g_2026,07,22`. Digitless `h_` likewise covers an unspecified date reading when context is calendric. An explicit *date* host + `/b/` is optional when you want to name the relation; it is not required to license bare `hro` (bare `hro` already means time). |
+| **Duration** | Scalar **`ra`** / **`ru`** plus a lexicon **unit** in a [measure phrase](#measure-phrases) (*hour*, *day*, …) — not a digit-string, not bare `hro`. Same engineering-exponent habits as other measures when useful. |
+| **Deixis / tense** | Ordinary lexicon `/h/` (*yesterday*, *ago*, *until*, mood/evidential). Numbers appear only for a numeric payload (*3 days ago* = relation + scalar + unit). |
+| **Non-time digit labels** | Host relation + `/b/` (`/h/` *on* + `b_101.1`), or `/ɡ/` on a noun (*channel* `g_7`) — **not** bare `h_…`. |
+
+**Not bare `hro`:** `h+3` (×3 / *three times*); `h#3` (*for the third time*); non-time codes as above. Do not use a scalar for a clock face (`*g+1530*` for 15:30). Timezone, era, and calendar system stay lexicon adjuncts, not inside the number word.
+
+Endings: **-l** exact reading; **-m** fuzzy (*around 15:30*); **-n** conventional schedule/date name; **-r** resume a prior clock or date label (digitless `h=_` = *that time/date again*). Digitless `h_` ≠ circumstance **`har`** (*sometime*) — see [zero digit groups](#zero-digit-groups).
+
+
+### Style (numeric vs spelled)
+<a id="writing-style-numeric-vs-spelled"></a>
+<a id="writing-style"></a>
+
+Both writings name the **same word**. Choose the surface by **job**: quantity/math vs ordinary lexicon.
+
+| Job | Prefer | Why |
+|-----|--------|-----|
+| Free number in a clause slot | **shorthand** | `g+3`, `x#2`, `d_…` — numeral as numeral |
+| [Numeric derivation](special-vocabulary.md#numeric-derivation) / kind morph | **spelled CV** | `zolexrabal`, not `zolex+el` |
+| Metalanguage / inventory tables | **shorthand** | patterns like `ROOTx+e` stay scannable |
+
+**Prefer shorthand** for counts, measures, ranks, ranges, thresholds (`zagadalsh g+3`, `z+3 z+5 zel`); digit-strings / times / codes (`d_555,123,4567`, `h_15:30`); scientific / engineering register (`g+5.2e-4`, `g+0e-1`, `g+e3`); compact agenda markers (`x#1`, `x#3e2`); and docs that teach the numeral system.
+
+**Prefer spelled CV** for anything after mid-word **`x`** on a content root (lexicon citation forms always spelled); lexicalized morphs treated as affixes (essence / void / quasi / poly / digit morphs / zero×exp on ROOT); literary, sung, or long prose where `+` `#` `_` and second-slot `~`/`@`/`=` break word rhythm; and pronunciation teaching.
+
+**Avoid** the hybrid that derivation invites: shorthand body + host letter ending (`…x+el`). Free numbers use second-slot marks or trailing letters consistently; derived words use ordinary reference endings on the host with a fully spelled `NUM`.
+
+**Gray zone (either OK):** discourse *Finally* / *Starting with* (`x#e` / `x#e-` vs `xrebal` / `xrebual` — lean spelled in prose, shorthand in outlines); digitless plural (`g+` / `gral`); cheers (`j+e` / `jrabal`); soft free specials when hedging a discourse particle rather than a quantity.
+
+**House rules:** (1) free numeral → shorthand by default; (2) content-root derivation → spelled CV by default; (3) shorthand in derivation tables is schematic only; (4) never put number second-slot marks (`~`/`@`/`=`) on derived `NUM`; (5) parsers accept both.
+
+
+### Measure phrases
+<a id="measure-phrases"></a>
+<a id="units"></a>
+<a id="unit-amount"></a>
+
+A **measure** is a lexicon **unit** noun plus a scalar **amount** grading that unit — not two bare `/b/` arguments, and not a new number closer (unlike closed **`jo`** / **`ju`**).
+
+**Shape:** unit as the head noun in the needed slot; amount as ordinary `/ɡ/` scalar on that unit:
+
+| Slot | Shape | Gloss |
+|------|--------|--------|
+| Argument of a complex `/ɡ/` / `/h/` | `b<inch>l g+2` | *two inches* (one `/b/` NP) |
+| Subject / object / … | `z<hour>l g+3`, `d<meter>l g+5` | *three hours*, *five meters* |
+| Modifier on a noun | `g<inch>l g+2` on a host | rare; prefer unit as `/b/` or freestanding NP |
+
+Same endings and fuzzy **-m** habits as other number words on the amount (`g~+2` ≈ *about two*). The **unit** is ordinary lexicon (reference suffixes as usual). Do **not** encode open-class units inside the numeral word.
+
+#### No metric prefixes
+<a id="no-metric-prefixes"></a>
+<a id="metric-prefixes"></a>
+
+**Metric prefixes are not lexicon roots.** There is no dictionary entry *kilometer*, *milligram*, *nanosecond*, and so on. Lexicon units are **base** (*meter*, *gram*, *second*, …). Scale the amount instead:
+
+| Prefer | Avoid |
+|--------|--------|
+| *meter* + amount in thousands / `e3` (or the exact count) | *kilometer* |
+| `b<meter>l g+5400` or `b<meter>l g+5.4e3` for 5.4 km | `*b<kilometer>l g+5.4` |
+| `b<gram>l g+40e3` | *40 kilograms* as a prefixed unit word |
+
+Use [engineering exponents](#exponents) on the amount when convenient (`e3` / `e-3` / `e6` / …), or write the full scalar (`5400` meters). Same habit for other SI-style prefixes (*milli-*, *micro-*, *mega-*, …): keep the base unit; put the power of ten in the number.
+
+**Measured differentials** (*two inches taller*) put that measure NP as the **single `/b/`** on the SHARED scale adjective of a [comparative](comparatives.md#measured-differentials):
+
+`z<Sam>n z<Lea>n zel g<tall>l b<inch>l g+2` → *Sam is two inches taller than Lea*
+
+Vague degree stays `/w/` on the scale (`zel w<much>l g<tall>l …`) — no unit. Duration and other clause measures use the same unit+amount habit in whatever slot the relation needs.
+
+**Not this pattern:** percentage closers (**`jo`** / **`ju`**); bare multiplicative `/h/` factors (`h+1.5`); stacking `b+2 b<inch>l` as two arguments of one adjective.
+
+
+### Ranges
+<a id="ranges"></a>
+<a id="number-ranges"></a>
+<a id="numeric-ranges"></a>
+<a id="from-to"></a>
+<a id="shared-continuum"></a>
+
+Spans reuse [phrase fences](coordination.md) whose conjuncts are number words, with a **SHARED continuum** `/ɡ/` naming the line — the same SHARED slot [comparatives](comparatives.md) use for a scale, but here the `/ɡ/` is a **dimension / quantity continuum**, not an entity-ranking scale. There is **no** range form inside a single number word (no `g+3-5`). Fence join vowels, endings, revision, and **-r** are defined in coordination; **this section** is the source of truth for when those forms mean a numeric span.
+
+**Trigger (all required):**
+
+1. Exactly **two** endpoints that are **compatible** number words (same marker identity: both scalar, both ordinal, or both digit-string / time).
+2. Join **`a`** / **`e`** / **`ue`** / **`ua`** (or those vowels’ **-r**).
+3. A **SHARED continuum** `/ɡ/` immediately after the join (lexicon: dimension / quantity line — *age*, *price*, *time*, *height*, …; stock **`g<span>l`** / **`g<amount>l`** when the line is pure numeric or supplied by context/head).
+
+The fence PoS matches the slot (`zal` / `dal` / `gal` / `bal` / …). Mixed identities on one span are illegal.
+
+**Without SHARED continuum:** two number conjuncts are **ordinary coordination** — never a span. In particular bare **`z+3 z+5 zel`** = *3 ≻ 5* (preference / rank), not *from 3 to 5*.
+
+| Join | Inclusive shape | Reading |
+|------|-----------------|--------|
+| **`a`** | `z+3 z+5 zal g<age>l` | *between 3 and 5* on age (unordered filled interval; both ends in) |
+| **`e`** | `z+3 z+5 zel g<age>l` | *from 3 to 5* on age (directed; first → second) |
+| **`ue`** | `z+5 z+3 zuel g<age>l` | directed reverse path on age (spoken order = path; here *from 5 to 3*) |
+| **`ua`** | `z+3 z+5 zual g<age>l` | *outside 3–5* on age (complement on the line) |
+| **`o`** / **`ao`** | — | **Not** ranges — stay discrete (*3 or 5* / *3 and/or 5*); SHARED continuum does not license a span |
+| **`ae`** | `z+5 z+5 zael` / `z+3 z+5 zaem` | *equal to 5* / *approximately equal* — **not** a span (no continuum needed; continuum + **`ae`** + numbers is not a range reading) |
+| **`oe`** | — | **Not** ranges — exclusive ranked / bare empty superlative with scale |
+
+**Arity escape:** three or more number conjuncts under **`a`** stay an ordinary discrete inventory (`zal z+1 z+3 z+7` = *1, 3, and 7*), even with SHARED. Focus **`zal z+3`** stays *just 3*, not a ray. Focus **ranked** with a number is a [threshold](#numeric-thresholds), not ordinary *only X matters*.
+
+**Contrast with comparatives:** `z<Sam>n z<Lea>n zel g<big>l` = *Sam is bigger than Lea* (SHARED **scale**, non-number conjuncts). `z+3 z+5 zel g<age>l` = *from 3 to 5 on age* (SHARED **continuum**, number endpoints). Bare `z+3 z+5 zel` = prefer 3 over 5.
+
+#### Thresholds (focus ranked)
+<a id="numeric-thresholds"></a>
+<a id="greater-less-than"></a>
+
+When the **sole** conjunct of a [rank join](coordination.md#ranked-conjunction-e) fence (**`e`** / **`ue`**, and their open / named twins) is a **compatible number word**, that number is an **extremum on the line**, not “only this value matters” and not a two-endpoint [span](#ranges). SHARED continuum is **optional** on thresholds: absent = implicit / contextual numeric line; present = that named line (`z+5 zel g<age>l` = *age \< 5*). Special values such as +∞ use [digitless exponents](#digitless-exponents) inside the number word (`g+e`), not focus ranked zero-group forms.
+
+| Form | Reading | Mnemonic |
+|------|--------|----------|
+| **`z+5 zel`** | ***less than 5*** (`< 5`) | 5 is the **greatest** (ceiling); the ray is everything it outranks |
+| **`zem z+5`** | soft / approximate *less than ~5* | open twin |
+| **`z+5 zuel`** | ***greater than 5*** (`> 5`) | 5 is the **least** (floor); reverse-ranked extremum |
+| **`zuem z+5`** | soft / approximate *greater than ~5* | open reverse twin |
+| **`zen z+5`** | named/conventional **unspecified** extremum label (*under-fives*-style) | phrase **-n** on **e** |
+| **`zaen z+5`** | named/conventional **equal-to-5** band / tie label | phrase **-n** on **ae** |
+| **`zuen z+5`** | named/conventional floor band | phrase **-n** reverse |
+
+Same under `/d/` `/b/` `/ɡ/` (`gel g+5` = modifier *\<5*; `duel d+10` = object *\>10*). **`ae`** / **`oe`** focus with a number are **not** thresholds (stay ordinary ranked focus / triage). Boolean focus (**`zal`** / **`zol`** / …) is **not** a threshold. Focus **`zel z+`** (zero-group) is **not** +∞ and **not** a threshold — ordinary focus on plural/unspecified amount; use **`z+e`** / **`g+e`** for +∞.
+
+**Inclusive bounds:** default is **strict** (`<` / `>`). For **≤ 5** / **≥ 5**, use a two-endpoint [span](#ranges) with the bound included — do **not** flip focus ranked to inclusive. Exclusive-high **`ul`** stays a two-side span tool (`z+3 ul z+5 zal g<span>l`), not a focus threshold marker.
+
+**Unspecified in a threshold:** bare **`e`** + **-r** = unspecified member of the *\< X* ray — `zer z+5` → *some/whatever value \< 5* (under question → *which value \< 5?*). **`ue`** takes **no** **-r** (stacked forms never do — [coordination](coordination.md#unspecified-member-r-phrase)); there is no `zuer` threshold. For an unspecified value *\> 5*, use other wording (not a reverse **-r** fence).
+
+Contrast: `z+3 z+5 zel g<age>l` = *from 3 to 5 on age* (span); `z+3 z+5 zel` = *3 ≻ 5* (preference); `z+5 zel` = *\< 5* (focus threshold); `z+e` / `g+e` = +∞ ([digitless exponents](#digitless-exponents)). `z<Sam>n zel` (non-number) stays ordinary *only Sam matters* / [superlative-with-scale](comparatives.md) — **focus number conjunct** triggers the threshold reading when the number is a bound (typically digitful).
+
+#### Half-open (exclude the high end only)
+
+[Revisers](revisers.md) **inside the range** marks an exclusive **upper** bound. Replace the second (high) conjunct with prefix-less **`ul`** + that number. SHARED continuum stays required:
+
+| Shape | Reading |
+|-------|--------|
+| `z+3 z+5 zal g<span>l` | *[3, 5]* — inclusive both ends |
+| `z+3 ul z+5 zal g<span>l` | *[3, 5)* — *3 up to but not including 5* |
+| `z+3 ul z+5 zel g<span>l` | *from 3 up to but not including 5* |
+
+The low endpoint is **always inclusive**. Do **not** exclude the beginning edge (no `ul` before the low; no open-low span). Do **not** list the high end as a conjunct and then except it (`*zal g<span>l z+3 z+5 ul z+5`); the exclusive high is **only** the in-range `ul` shape. Open **`um`** on the high end = soft / non-exhaustive exclusion of that bound (rare). Other revision vowels (**`al`** / **`el`** / **`ol`**) are not range-bound markers.
+
+Fence **-l** / **-m** / **-n** keep ordinary closed / open / named senses on the span (*exactly this band* / *around this band* / *the teens*-style label). Endpoint [number endings](#number-endings) still apply (**-m** ≈ fuzzy that bound).
+
+#### Unspecified value in the span (**-r**)
+
+Fence **-r** on a number-range shape (still with SHARED continuum) = an **unspecified member of the span** (not content-word anaphor **-r**, not a discrete *something among two listed values*):
+
+| Form | Reading |
+|------|--------|
+| `z+3 z+5 zar g<span>l` | *some value in [3, 5]* |
+| `zar g<span>l z+3 ul z+5` | *some value in [3, 5)* |
+| `zor g<span>l z+3 z+5` | *any value in [3, 5]* (free-choice) |
+| `zer g<span>l z+3 z+5` | *whatever-by-rank in [3, 5]* |
+| `zur g<span>l z+3 z+5` | *some value other than (in) [3, 5]* — other-than the span |
+
+Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which value in 3–5?*). Same under `/d/` `/b/` / `/ɡ/` as the slot needs (`g+3 g+5 gal g<age>l` = modifier *ages 3–5*; `d+10 ul d+20 dar g<span>l` = object *some value in [10, 20)*).
+
+**Clock / date spans:** do **not** use bare circumstance-`hal` (that series is [applicability](restrictors.md)). Prefer SHARED continuum **`gumedul`** (or a host relation + `/b/`) with digit-string endpoints (`bal gumedul b_15,00 b_16,00`).
+
+Examples: `z+3 z+5 zal g<age>l` → *between ages 3 and 5*; `z<kid>l g+3 g+5 gal g<age>l` → *kids ages 3–5*; `z+3 ul z+5 zal g<span>l` → *[3, 5)*; `z+10 z+20 zel g<age>l` → *from age 10 to 20*; `z+3 z+5 zel` → *3 ≻ 5* (preference, not a span); `z+5 zel` → *\< 5*; `z+5 zuel` → *\> 5*; `g+e` → +∞; `g-e-` → notional / imaginary amount; `g+1e` → *one gazillion*; `g@+1e` → proper name *the Gazillion*; `g~+e` → arbitrarily large but finite; `g+e-` → arbitrarily small but finite; `g#e` → last place; `g~#e` → near last place; `g#e-` → start / beginning place; `g~#e-` → near first place; `g#1e` → *the gazillionth* / *umpteenth*; `g#1e-` → *the gazillionth-first*; `g#-2` → *2nd from the end* / *penultimate*; `g#3e2` → *3rd of gen +2*; `h#1e` → *for the gazillionth time*; `h#-2` → *for the penultimate time*; `x#e-` → *Starting with:*; `x#-1` → *Starting with the last one:*; `x-e-` → *imagine that:*; `v+e` → increase without bound; `v-e-` → treat as imaginary; `h+e` → unbounded multiplicity; `h-e-` → notionally / as if; `j+e` → *To infinity!*; `j#e` → *Finally!*; `j#-2` → *Penultimate!*; `j-e-` → *As if!*; `z+5 z+5 zael` → *equally 5* / *5 equals 5*; `z+3 z+5 zaem` → *3 and 5 approximately equal*; `z+3 z+5 zar g<span>l` → *some value in 3–5*; `z+3 z+5 zol` → *3 or 5* (discrete, not a range).
+
+
+### Examples inventory
+<a id="examples"></a>
+
+
+Preferred writing first; speech sketches show structure (exact **-l** unless noted). Digits in speech use the [digit table](#digits).
+
+| Value | Preferred writing | Speech sketch |
+|-------|-------------------|---------------|
+| plural / more than one | `g+` | *gral* (`g` + `ra` + `l` — [digitless](#zero-digit-groups)) |
+| about several (`>1`) | `g~+` | *gram* |
+| +∞ | `g+e` | *grabal* (`g` + `ra` + `ba` + `l` — [digitless exp](#digitless-exponents)) |
+| arbitrarily large but finite | `g~+e` | *grabam* |
+| one gazillion (hyperbole) | `g+1e` | *grawobal* (`ra` + wo + `ba` + `l`) |
+| absolute zero (totalized null) | `g+0e` | *grazobal* (`ra` + zo + `ba` + `l` — [zero × exponent](#zero-exponent)) |
+| sterile / null-at-seed amount | `g+0e-` | *grazobul* (`ra` + zo + `bu` + `l`) |
+| engineering null at OoM −1 | `g+0e-1` | *grabuwojazool* (`ra` + `bu` wo **ja** zo + `l`) |
+| engineering residue at OoM −1 | `g-0e-1` | *grubuwojazool* (`ru` + `bu` wo **ja** zo + `l`) |
+| rank annihilated / disqualified | `g#0e` | *grezobal* (`re` + zo + `ba` + `l`) |
+| ones band (1–9) | `g+e0` | *grabazol* (`ra` + `ba` + zo + `l` — [bare OoM](#bare-oom-bands)) |
+| three at asserted OoM 0 | `g+3e0` | *grabazojarel* (`ra` + `ba` + zo + `ja` + re + `l`) |
+| thousands band (1000–9999) | `g+e3` | *grabarel* (`ra` + `ba` + re + `l`) |
+| current generation cohort | `g#e0` | *grebazol* (`re` + `ba` + zo + `l` — [generation](#ordinal-generation)) |
+| *annihilate* | `v+0e` | *vrazobal* |
+| *Annihilate!* | `j+0e` | *jrazobal* |
+| about a gazillion | `g~+1e` | *grawobam* |
+| the Gazillion (proper name) | `g@+1e` | *grawoban* |
+| one gazillionth | `g+1e-` | *grawobul* (`ra` + wo + `bu` + `l`) |
+| the gazillionth / umpteenth | `g#1e` | *grewobal* (`re` + wo + `ba` + `l`) |
+| about the gazillionth | `g~#1e` | *grewobam* |
+| the gazillionth-first | `g#1e-` | *grewobul* (`re` + wo + `bu` + `l`) |
+| 2nd from the end / penultimate | `g#-2` | *greudul* (`reu` + du + `l`) |
+| 1st from the end / *Starting with the last one* | `g#-1` | *greuwol* (`reu` + wo + `l`) |
+| 3rd of gen +2 | `g#3e2` | *grebadujarel* (`re` + `ba` + du + `ja` + re + `l` — [generation](#ordinal-generation)) |
+| gen −2 cohort | `g#e-2` | *grebudul* (`re` + `bu` + du + `l`) |
+| for the gazillionth time | `h#1e` | *hrewobal* |
+| for the penultimate time | `h#-2` | *hreudul* |
+| *Gazillionth!* | `j#1e` | *jrewobal* |
+| *Penultimate!* | `j#-2` | *jreudul* |
+| umpteenth point: | `x#1e` | *xrewobal* |
+| 2nd-from-end point: | `x#-2` | *xreudul* |
+| *Starting with the last one:* | `x#-1` | *xreuwol* |
+| arbitrarily small but finite | `g+e-` | *grabul* (`ra` + `bu` + `l`) |
+| −∞ | `g-e` | *grubal* |
+| last place | `g#e` | *grebal* |
+| near last place | `g~#e` | *grebam* |
+| start / beginning place | `g#e-` | *grebul* |
+| near first place | `g~#e-` | *grebum* |
+| *Starting with:* | `x#e-` | *xrebul* |
+| *Finally:* | `x#e` | *xrebal* |
+| increase without bound | `v+e` | *vrabal* |
+| increase a lot but finite | `v~+e` | *vrabam* |
+| nudge up | `v+e-` | *vrabul* |
+| decrease without bound | `v-e` | *vrubal* |
+| treat as imaginary / notionalize | `v-e-` | *vrubul* |
+| soft notionalize | `v~-e-` | *vrubum* |
+| notional / imaginary amount | `g-e-` | *grubul* (`ru` + `bu` + `l`) |
+| soft notional | `g~-e-` | *grubum* |
+| notionally / as if | `h-e-` | *hrubul* |
+| *As if!* / *Imagine!* | `j-e-` | *jrubul* |
+| *imagine that:* | `x-e-` | *xrubul* |
+| take last place | `v#e` | *vrebal* |
+| take starting place | `v#e-` | *vrebul* |
+| take 2nd from the end | `v#-2` | *vreudul* |
+| some end-relative rank | `g#-` | *greul* |
+| unbounded multiplicity | `h+e` | *hrabal* |
+| many times but finite | `h~+e` | *hrabam* |
+| a gazillion times | `h+1e` | *hrawobal* |
+| unbounded duplicity | `h+e-` | *hrabul* |
+| for the last time | `h#e` | *hrebal* |
+| for the first time (onset) | `h#e-` | *hrebul* |
+| *To infinity!* | `j+e` | *jrabal* |
+| *Finally!* | `j#e` | *jrebal* |
+| *(finally, we're) starting!* | `j#e-` | *jrebul* |
+| some negative amount | `z-` | *zrul* |
+| some rank | `g#` | *grel* |
+| some code (object) | `d_` | *drol* |
+| that (prior) scalar again | `g=+` | *grar* (digitless **-r**) |
+| that (prior) code again | `d=_` | *dror* |
+| increase (unspecified) | `v+` | *vral* |
+| increase a bit | `v~+` | *vram* |
+| multiple times | `h+` | *hral* |
+| a few times | `h~+` | *hram* |
+| at some clock/date | `h_` | *hrol* — still bare `hro` = time; ≠ `har` |
+| More! | `j+` | *jral* |
+| 3 | `g+3` | *grarel* (`g` + `ra` + re + `l`) |
+| −3 | `g-3` | *grurel* (`g` + `ru` + re + `l`) |
+| 3 (as subject) | `z+3` | *zrarel* |
+| −3 (as object) | `d-3` | *drurel* |
+| of size 12 | `b+12` | *brawodul* (`b` + `ra` + wo du) |
+| room 12 (modifier) | `g_12` | *growodul* (`g` + `ro` + wo du) |
+| 139 | `g+139` | *graworenal* (`ra` + wo re na) |
+| 27e12 | `g+27e12` | *grabawodujadulel* (`ra` + ba wo du **ja** + du le) |
+| e9 (bare) | `g+e9` | *grabanal* (`ra` + ba na; **no** `ja`) |
+| 50e-6 | `g+50e-6` | *grabugujavazol* (`ra` + bu gu **ja** + va zo) |
+| −1e9 −265e3 −4 | `g-1e9,265e3,4` | *grubanajawobarejaduguvamol* — **`ru`**; groups: ba na **ja** wo · ba re **ja** du gu va · mo |
+| $5860.04 → 5e3 + 860 + 4e-2 | `g+5e3,860,4e-2` | *grabarejavahaguzobudujamol* — ba re **ja** va · ha gu zo · bu du **ja** mo |
+| 2nd | `g#2` | *gredul*; title-like *the Second…* may take **-n** (`g@#2` / *gredun*) |
+| penultimate | `g#-2` | *greudul* |
+| about 27e6 | `g~+27e6` | *grabagujadulem* (ba gu **ja** du le, ending **-m**) |
+| phone 555-123-4567 | `d_555,123,4567` | *drovavavawoduremovagulel* (`d` + `ro` + va×3 · wo du re · mo va gu · le + `l`) |
+| scientific 5.2487083e-4 | `g+5.2487083e-4` | *grabumojavajedumohalezoharel* (`ra` + bu mo **ja** + va **je** + du mo ha · le zo ha · re) |
+| 25% | `g+25%` | *graduvajol* (`g` + `ra` + du va **jo** + `l`) |
+| 25% of the cats | `zagadalsh g+25%` | host whole + `/ɡ/` percent — [denominator](#percent-denominators) |
+| about 3% | `g~+3%` | *grarejom* (`ra` + re **jo** + `m`) |
+| −12.5% | `g-12.5%` | *gruwodujevajol* (`ru` + wo du **je** va **jo**) |
+| 100% | `g+100%` | *grawozozojol* (`ra` + wo zo zo **jo**; normal mantissa digits) |
+| +2 pp | `g+2%*` | *gradujul* (`ra` + du **ju**) |
+| about −1.5 pp | `g~-1.5%*` | *gruwojevajum* (`ru` + wo **je** va **ju** + `m`) |
+| neutral point 1 / 2 | `x#1`, `x#2` | *xrewol*, *xredul* (`x` + `re` + …) |
+| end-relative point 2 | `x#-2` | *xreudul* (`x` + `reu` + du) |
+| corroborating item 3 | `x+3` | *xrarel* (`x` + `ra` + re) |
+| independent item 2 | `x-2` | *xrudul* (`x` + `ru` + du) — ≠ **`x#-2`** |
+| regarding agenda 12 | `x_12` | *xrowodul* (`x` + `ro` + wo du) |
+| as in (2) above (neutral) | `x=#2` | *xredur* (ending **-r**) |
+| three times / ×3 | `h+3` | *hrarel* (`h` + `ra` + re) |
+| ÷3 / every third | `h-3` | *hrurel* (`h` + `ru` + re) |
+| at 15:30 | `h_15,30` | *hrowovarezol* (`h` + `ro` + wo va · re zo) — bare `hro` = time |
+| on 2026-07-22 | `h_2026,07,22` | *hrowoduzoguzoledudul* (`h` + `ro` + …) — bare `hro` date |
+| date 2026-07-22 (modifier) | `g_2026,07,22` | *growoduzoguzoledudul* (`g` + `ro` + wo du zo gu · zo le · du du) — date fields, not threes |
+| on 101.1 (frequency) | `/h/` *on* + `b_101.1` | not bare `h_…`; host + `/b/` digit-string |
+| for the third time | `h#3` | *hrerel* (`h` + `re` + re) |
+| Three! (label / score) | `j_3` | *jrorel* (`j` + `ro` + re) |
+| Three more! | `j+3` | *jrarel* (`j` + `ra` + re) |
+| Three short! / Three fewer! / −3! | `j-3` | *jrurel* (`j` + `ru` + re) |
+| twenty-seven! (label) | `j_27` | *jrodulel* (`j` + `ro` + du le) |
+| First! (place cheer) | `j#1` | *jrewol* (`j` + `re` + wo) |
+
+In a sentence, the PoS attaches to that single number word (see [Parts of speech on numbers](#parts-of-speech-on-numbers); e.g. direct-object digit-string: `d_…`). Prefer naming the whole as the host of a `/ɡ/` **`jo`** percent ([denominator](#percent-denominators): `zagadalsh g+25%`).
+
+
+## Advanced
+<a id="advanced"></a>
 
 ### Digitless exponents
 <a id="digitless-exponents"></a>
@@ -606,498 +1151,15 @@ Digit-string **`ro`** / **`_`** + mantissa + digitless exp stays **undefined**. 
 
 **Not hyperbole:** `g+e` (no mantissa) = +∞; `g#e` / `g#e-` (no mantissa) = last / start place; mantissa **`0`** + digitless (`g+0e` / `g+0e-`) = [zero × exponent](#zero-exponent); bare / assert **`e0`** (`g+e0` / `g+3e0`) = [ones band](#bare-oom-bands) / [OoM-0 assert](#ambient-scale); end-relative **`g#-N`** = [from the end](#from-the-end); digitful ordinal exp = [generation](#ordinal-generation) (**`g#e0`** = current gen); `g+e9` (digitful exp) = bare OoM; `g+1e9` = 1×10⁹ (real engineering). Do not mix digitless exp with **`je`** / **`jo`** / **`ju`** in the same group.
 
-#### From the end — end-relative ordinal marker **`#-`** / **`eu`**
-<a id="from-the-end"></a>
-<a id="nth-from-the-end"></a>
-<a id="negative-ordinal"></a>
-
-**End-relative place** uses marker **`eu`** (writing **`#-`**), not mantissa + digitless **`bu`** on forward **`#`**. Count back from last place within the **same generation / cohort** (exp omitted). Exact (or soft) end-relative ordinal; **not** hyperbole and **not** the no-mantissa start landmark **`g#e-`**.
-
-Speech is **`reu`** + digits + ending (e.g. `g#-2` → *greudul*). Digraph **`eu`** avoids colliding with rank-join **`ue`**.
-
-| Form | Reading |
-|------|---------|
-| **`g#-1`** | *1st from the end* — same referent as last-place **`g#e`**, framed as counting from the end (English *Starting with the last one*) |
-| **`g#-2`** | *2nd from the end* / *penultimate* |
-| **`g#-3`** | *3rd from the end* / *antepenultimate* |
-| **`g~#-2`** | *about 2nd from the end* |
-| **`g@#-2`** | conventional / titled *penultimate* (etc.) |
-| **`g=#-2`** | resume that prior end-relative place |
-| **`g#-`** | unspecified end-relative rank ([zero groups](#zero-digit-groups)) |
-
-**Contrast:** **`g#2`** = numbered *2nd* (from the start); **`g#-2`** = *2nd from the end*; **`g#e`** = last as landmark; **`g~#e`** = near last (no count); **`g#e-`** / **`g~#e-`** = start / near first (no mantissa); **`g#2e-`** = early hyperbole (not penultimate); **`g#2e-1`** = 2nd of gen −1 ([generation](#ordinal-generation)).
-
-**Overlays** inherit:
-
-| Form | Reading |
-|------|---------|
-| **`h#-2`** | *for the 2nd-from-last time* / *the penultimate time* |
-| **`v#-2`** | *place / come in 2nd from the end* |
-| **`j#-2`** | *Penultimate!* / *Second from last!* |
-| **`x#-1`** | *1st-from-end point:* / *Starting with the last one:* (counting twin of **`x#e`** *Finally:*) |
-| **`x#-2`** | *2nd-from-end point:* / *penultimate item:* |
-
-Digitless-exp and hyperbole on **`#-`** stay **undefined**. Combine with [digitful generation](#ordinal-generation) when needed: **`g#-3e2`** = 3rd from the end **in generation +2**.
-
-#### Ordinal generation — digitful exponent on **`#`** / **`#-`**
-<a id="ordinal-generation"></a>
-<a id="generation-ordinal"></a>
-
-On forward **`#`** / **`re`** and end-relative **`#-`** / **`reu`**, a **digitful** exponent is **not** scalar power-of-ten. It is **generation offset** from the **focused item** (kinship, version line, nested outline, …):
-
-| Piece | Job |
-|-------|-----|
-| **Marker `#` / `#-`** | Count **from the start** / **from the end** within that generation’s cohort |
-| **Digitful exp `eK` / `e-K`** | Generation **+K** (descendants / nested deeper) or **−K** (ancestors / enclosing layer) |
-| **Mantissa** | Which **slot** in that cohort (omit mantissa = bare OoM: the generation as a whole) |
-| **Exp omitted** | **Same generation** as the focus (`g#3` = 3rd peer) — formal default |
-| **Named `e0`** | **Assert current generation** (gen 0) — parallel to scalar [OoM-0 assert](#ambient-scale); usually redundant when omit already means current, but cancels casual “ambient generation” elision |
-
-| Form | Reading |
-|------|---------|
-| **`g#3`** | 3rd of the focus’s own generation (from the start) |
-| **`g#-3`** | 3rd of the focus’s own generation (from the end) |
-| **`g#3e0`** | 3rd of the **current** generation, exp asserted (gen 0) |
-| **`g#e0`** | **current generation** cohort as a whole (member unspecified) |
-| **`g#3e2`** | 3rd from the start **in generation +2** (e.g. 3rd in the grandchild cohort) |
-| **`g#3e-2`** | 3rd from the start **in generation −2** (e.g. 3rd in the great-grandparent cohort) |
-| **`g#-1e2`** | last of generation +2 (end-framed within that cohort) |
-| **`g#e2`** | generation +2 cohort as a whole (member unspecified) |
-| **`g#e-1`** | generation −1 / parent layer (member unspecified) |
-| **`g#1e-1`** | 1st of generation −1 (often *the parent* when the cohort is singleton-framed) |
-
-**Not** this cell: digitless **`g#e`** / **`g#e-`** = telos / origin **landmarks** (extremes of the axis); digitless mantissa forms **`g#1e`** / **`g#1e-`** = [hyperbole](#hyperbole-gazillion); digitless **`g#0e`** = [rank annihilated](#rank-annihilated) (not generation). Do **not** read **`g#2e-`** as *grandparent* — use **`g#e-2`** / **`g#1e-2`**. Do **not** read **`g#0e-1`** as engineering null — that is scalar **`g+0e-1`**.
-
-**Overlays:** `/x/` treats generation as **agenda nesting** (`x#3e2` = *3rd sub-sub-point under the focus*; **`x#e0`** = *current-layer item(s)* / assert this outline level). `/h/` / `/v/` / `/j/` inherit the same product (*for the 3rd time in gen +2*, *place 3rd in gen +2*, …) when the series is generation-structured; flat event counts stay **`h#N`**.
-
-**Derivation:** free generation is series-relative; kind morphs keep digitless **`ROOTx#e-`** / **`ROOTx#e`** as origin / telos of the **kind** — no productive free-style **`ROOTx#-N`** or **`ROOTx#NeK`** in this pass ([special-vocabulary.md](special-vocabulary.md#ordinal-digit-morphs)).
 
 Examples: `g+e` → +∞; `g~+e` → arbitrarily large but finite; `g+1e` → *one gazillion*; `g~+1e` → *about a gazillion*; `g@+1e` → proper name *One Gazillion* / *the Gazillion*; `g+1e-` → *one gazillionth*; `g+e-` → arbitrarily small but finite; `g-e` → −∞; `g-e-` → notional / imaginary amount; `g~-e-` → soft notional; `g#e` → last place; `g~#e` → near last place; `g#e-` → start / beginning place; `g~#e-` → near first place; `g#1e` → *the gazillionth* / *umpteenth*; `g#1e-` → *the gazillionth-first*; `g#-2` → *2nd from the end* / *penultimate*; `g#-1` → *1st from the end* / *Starting with the last one*; `g#3e2` → *3rd of gen +2*; `g#e0` → current generation cohort; `g#3e0` → *3rd of current gen (asserted)*; `g#e-2` → *gen −2 cohort*; `g+0e` → absolute zero; `g+0e-` → sterile / null-at-seed amount; `g+0e-1` → engineering null at OoM −1; `g-0e-1` → engineering residue at OoM −1; `g#0e` → rank annihilated / disqualified; `g+e0` → ones band (1–9); `g+3e0` → *three at OoM 0*; `g+e3` → thousands band (1000–9999); `v+0e` → *annihilate*; `j+0e` → *Annihilate!*; `j#0e` → *Disqualified!*; `h#1e` → *for the gazillionth time*; `h#-2` → *for the penultimate time*; `x#e-` → *Starting with:*; `x#e` → *Finally:* / last discourse point; `x#e0` → *current-layer point(s):*; `x#-1` → *Starting with the last one:*; `x#-2` → *penultimate point:*; `x#3e2` → *3rd nested point at depth +2:*; `x-e-` → *imagine that:*; `v+e` → increase without bound; `v~+e` → increase a lot but finite; `v+e-` → nudge up; `v-e-` → treat as imaginary / notionalize; `h+e` → unbounded multiplicity; `h-e-` → notionally / as if; `h#e` → *for the last time*; `h#e-` → *for the first time* (onset); `v#e` → *take last place*; `v#e-` → *take starting place*; `v#-2` → *take 2nd from the end*; `j+e` → *To infinity!*; `j#e` → *Finally!*; `j#e-` → *(finally, we're) starting!*; `j#-2` → *Penultimate!*; `j-e-` → *As if!* / *Imagine!*; `h+1e` → *a gazillion times*; `g+e9` → bare OoM e9 band; `g+` → plural `>1`.
-## Percent and percentage points
 
-Percent and percentage points are **scalar notation modes** on **`ra`** / **`ru`**, not new marker identities and not endings. They use group closers **`jo`** / **`ju`**, parallel to **`je`**.
-
-| Closer | Sense | Mantissa digits | Underlying magnitude |
-|--------|-------|-----------------|----------------------|
-| **`jo`** | **Percent** (portion of a whole) | Everyday percent figure (`25` in `25%`) | mantissa ÷ 100 |
-| **`ju`** | **Percentage points** (point-scale amount or delta) | Point figure (`2` in `+2%*`) | mantissa ÷ 100 |
-
-Mantissa digits follow the [normal mantissa rules](#exponents) (including optional **`je`** inside the percent/point reading). Say the digits you mean (`100%` → `wo zo zo jo`, not a shortened speech form).
-
-### Form
-
-```
-mantissa-digits ( je fraction-digits )? jo|ju
-```
-
-- **Order:** integer digits, optional **`je`** + fractional digits, then **`jo`** or **`ju`**. Never `… jo/ju … je …`.
-- **Scalars only:** **`re…jo/ju`** and **`ro…jo/ju`** are illegal.
-- **No exponent in the same group:** do not combine **`ba`** / **`bu`** with **`jo`** or **`ju`**. Use a plain scalar (`je` / `e-N`) for rates outside everyday percent talk.
-- **One closer per word:** at most one **`jo`** or **`ju`** group in the number word (not both; not repeated across groups).
-- **Bare closer** (no mantissa): illegal.
-- Do not mark the same group with both **`jo`** and an equivalent `e-2` exponent.
-
-Endings still apply (**-l** exact, **-m** about, **-n** conventional label, **-r** resume).
-
-In [preferred writing](#writing-preferred-shorthand): **`%`** → speech **`jo`**; **`%*`** → speech **`ju`** (sign still on **`ra`** / **`ru`**, written **`+`** / **`-`**).
-
-### What each closer is for
-
-| English habit | Clarity |
-|---------------|---------|
-| `25% of X` (portion) | whole NP + `/ɡ/` **`…jo`** — [denominator](#percent-denominators) |
-| `+2 percentage points` / `from 10% to 12%` point delta | **`ju`** (often as `/v/` **`ra`** / **`ru`**: increase/decrease by that point amount) |
-| `+50% relative to baseline` (factor change) | **Not** **`jo`** / **`ju`** — use a multiplicative `/h/` factor (**`h+1.5`**, etc.) or ordinary *relative-to* wording |
-
-`25%` (`…jo`) and `0.25` (plain scalar) name the same magnitude; **`jo`** only chooses the percent-scale reading. **`ju`** likewise names a ÷100 magnitude, but framed as **points** (not as “N% of a whole”).
-
-### Denominator (portion “of what”)
-<a id="percent-denominators"></a>
-<a id="percent-of-what"></a>
-
-The **whole** / reference class is **not** inside the number word — no denom closer, no open argument on the numeral.
-
-**Default:** the whole is the **host noun**; the percent is an ordinary `/ɡ/` scalar on that noun — same slot as a count (`zagadalsh g+3` = *three cats*):
-
-| Shape | Gloss |
-|-------|--------|
-| `zagadalsh g+25%` | *25% of the cats* |
-| `d<test>lsh g+95%` | *95% of the tests* (object) |
-| `b<people>lsh g+5%` under a host relation | *5% of the people* as `/b/` |
-
-The noun names the reference class; **`jo`** grades how much of that class. Same endings on the percent word (**-m** ≈ *about 25% of …*).
-
-**When the whole is not the modified head:** use a complex `/ɡ/` or `/h/` *of* / *out of* (lexicon relation) + `/b/` whole, with the percent elsewhere in the clause as needed. Do **not** invent a second `/b/` on the number word (numbers take no `/w/` and no open arguments).
-
-**Not a denom job** (no portion-whole required):
-
-| Habit | Why |
-|-------|-----|
-| **`…ju`** point amounts / deltas | Points move a percent-scale quantity already in play |
-| `from A% to B%` [spans](#ranges) | Endpoints are percent readings; continuum supplies the line |
-| `N% relative to` baseline | Factor change — `/h/` **`h+…`** or ordinary *relative-to* wording |
-| *top / bottom N%* | Rank band; class usually clear from context or named separately |
-| *N% done / complete* | Whole = the task; often clear without a separate denom NP |
-
-**Style:** a bare `/z/` (or other freestanding) **`…jo`** percent with no named whole is **grammatical but stylistically bad** — prefer an explicit whole (*percent of what*). Bare **`…ju`** point amounts are fine when the percent-scale quantity being moved is already clear.
-
-## Digit-strings
-
-Use marker **`ro`** (written **`_`**). Omit exponents. Prefer groups of three digits when digits are present. Ending is usually **-l** (exact label); **-n** for an official designation; **-r** to resume a prior code (**digitless** `d=_` / `g=_` allowed). [Digitless](#zero-digit-groups) `…_` = unspecified label / some code. Bare `/h/` + **`ro`** is **[temporal circumstance only](#time)** (`h_15,30`, `h_2026,07,22`, digitless `h_`) — not a generic code adverb. Non-time labels as circumstance use a host relation + `/b/` (e.g. `/h/` *on* + `b_7` *channel 7*), or modify a noun with `/ɡ/`. Digit-strings are unsigned — see [Sign](#sign). Clock and calendar field orders are under [Time](#time).
-
-## Time
-
-Time uses the existing number grammar; there is **no** fifth marker vowel and **no** time closer parallel to **`jo`** / **`ju`**.
-
-**Bare `/h/` + `ro` (`hro…`) is reserved for temporal circumstance** (clock or calendar). Spoken `hro` already marks that reading; do not use bare `h_…` for channel, frequency, gate, room-as-where, or other non-time codes.
-
-| Job | How |
-|-----|-----|
-| **Clock / schedule** | Digit-string **`ro`** as bare `/h/`. Default **24h**. Fields left→right, commas orthographic only: hour, minute, optional seconds — `h_15,30`, `h_15,30,00`. Digitless `h_` = *at some (unspecified) clock time*. |
-| **Calendar date** | Digit-string **`ro`**, ISO-ish fields: year, month, day — bare `h_2026,07,22`, or modifier `g_2026,07,22`. Digitless `h_` likewise covers an unspecified date reading when context is calendric. An explicit *date* host + `/b/` is optional when you want to name the relation; it is not required to license bare `hro` (bare `hro` already means time). |
-| **Duration** | Scalar **`ra`** / **`ru`** plus a lexicon **unit** in a [measure phrase](#measure-phrases) (*hour*, *day*, …) — not a digit-string, not bare `hro`. Same engineering-exponent habits as other measures when useful. |
-| **Deixis / tense** | Ordinary lexicon `/h/` (*yesterday*, *ago*, *until*, mood/evidential). Numbers appear only for a numeric payload (*3 days ago* = relation + scalar + unit). |
-| **Non-time digit labels** | Host relation + `/b/` (`/h/` *on* + `b_101.1`), or `/ɡ/` on a noun (*channel* `g_7`) — **not** bare `h_…`. |
-
-**Not bare `hro`:** `h+3` (×3 / *three times*); `h#3` (*for the third time*); non-time codes as above. Do not use a scalar for a clock face (`*g+1530*` for 15:30). Timezone, era, and calendar system stay lexicon adjuncts, not inside the number word.
-
-Endings: **-l** exact reading; **-m** fuzzy (*around 15:30*); **-n** conventional schedule/date name; **-r** resume a prior clock or date label (digitless `h=_` = *that time/date again*). Digitless `h_` ≠ circumstance **`har`** (*sometime*) — see [zero digit groups](#zero-digit-groups).
-
-## Writing (preferred shorthand)
-<a id="writing-preferred-shorthand"></a>
-
-Speech always uses the full CV grammar above (marker as `r`+V; ending as **-l** / **-m** / **-n** / **-r**). For **free number words**, writing prefers shorthand for the ending, marker, and body. Which surface to use when (shorthand vs spelled CV) is [style](#writing-style-numeric-vs-spelled), not grammar — parsers accept both.
-
-```
-[PoS] + [~|@|=]? + [marker] + [body?]
-```
-
-### Style (numeric vs spelled)
-<a id="writing-style-numeric-vs-spelled"></a>
-<a id="writing-style"></a>
-
-Both writings name the **same word**. Choose the surface by **job**: quantity/math vs ordinary lexicon.
-
-| Job | Prefer | Why |
-|-----|--------|-----|
-| Free number in a clause slot | **shorthand** | `g+3`, `x#2`, `d_…` — numeral as numeral |
-| [Numeric derivation](special-vocabulary.md#numeric-derivation) / kind morph | **spelled CV** | `zolexrabal`, not `zolex+el` |
-| Metalanguage / inventory tables | **shorthand** | patterns like `ROOTx+e` stay scannable |
-
-**Prefer shorthand** for counts, measures, ranks, ranges, thresholds (`zagadalsh g+3`, `z+3 z+5 zel`); digit-strings / times / codes (`d_555,123,4567`, `h_15:30`); scientific / engineering register (`g+5.2e-4`, `g+0e-1`, `g+e3`); compact agenda markers (`x#1`, `x#3e2`); and docs that teach the numeral system.
-
-**Prefer spelled CV** for anything after mid-word **`x`** on a content root (lexicon citation forms always spelled); lexicalized morphs treated as affixes (essence / void / quasi / poly / digit morphs / zero×exp on ROOT); literary, sung, or long prose where `+` `#` `_` and second-slot `~`/`@`/`=` break word rhythm; and pronunciation teaching.
-
-**Avoid** the hybrid that derivation invites: shorthand body + host letter ending (`…x+el`). Free numbers use second-slot marks or trailing letters consistently; derived words use ordinary reference endings on the host with a fully spelled `NUM`.
-
-**Gray zone (either OK):** discourse *Finally* / *Starting with* (`x#e` / `x#e-` vs `xrebal` / `xrebual` — lean spelled in prose, shorthand in outlines); digitless plural (`g+` / `gral`); cheers (`j+e` / `jrabal`); soft free specials when hedging a discourse particle rather than a quantity.
-
-**House rules:** (1) free numeral → shorthand by default; (2) content-root derivation → spelled CV by default; (3) shorthand in derivation tables is schematic only; (4) never put number second-slot marks (`~`/`@`/`=`) on derived `NUM`; (5) parsers accept both.
-
-### Ending marks (second slot, after PoS)
-
-Same glyphs and jobs as [span-fence marks](spans.md#writing) (**`~`** soft / **`@`** proper); anaphor uses **`=`** (keyboard-friendly; spans use interior **`=`** — `d[=]`).
-
-| Mark | Speech ending | Job | Examples |
-|------|---------------|-----|----------|
-| *(none)* | **-l** | exact (default) | `g+3`, `g+`, `x#2`, `d_555,123,4567` |
-| **`~`** | **-m** | approximate / soft | `g~+3`, `g~+`, `g~+27e6`, `g~#e` |
-| **`@`** | **-n** | conventional / proper | `g@#2`, `g@+1e`, `x@#e` |
-| **`=`** | **-r** | anaphoric resume | `g=+`, `d=_`, `x=#2`, `g=#1e` |
-
-Order when both **`@`** and **`~`** apply: **`@` then `~`**. **Do not write** the stack with both glyphs — spell **`@`** only, with uncertain tonality (same hedge habit as spans). **`=`** does **not** combine with **`~`** / **`@`**. Full phonetic spelling with a trailing ending letter (e.g. *grarel*, *gram*) is the [style default](#writing-style-numeric-vs-spelled) for [numeric derivation](special-vocabulary.md#numeric-derivation); on free number words it is fine as a pronunciation gloss, not preferred in running text.
-
-### Marker (not written as `r`+V)
-
-| Symbol | Speech | Meaning |
-|--------|--------|---------|
-| **`+`** | `ra` | Positive scalar |
-| **`-`** | `ru` | Negative scalar |
-| **`#`** | `re` | Ordinal (from the start) |
-| **`#-`** | `reu` | End-relative ordinal (from the end) |
-| **`_`** | `ro` | Digit-string |
-
-Place the identity symbol **immediately after** any ending mark (or after PoS when exact), **before the body** (or alone when the body is empty): `g+3`, `g~+3`, `g=+`, `d_555,123,4567`, `d=_`, `g@#2`, `g#-2`, `g~#-2`. Marker **`#-`** is one identity (two glyphs); do **not** write `g-#2`. After bare **`_`**, do **not** write a following **`-`** (labels stay unsigned) — see [Sign](#sign).
-
-### Body
-
-| Speech | Preferred writing |
-|--------|-------------------|
-| *(no digit groups)* | *(empty after marker)* `g+`, `g~-`, `g=#`, `g=#-`, `h_` |
-| Digit syllables (`wo`…`zo`) | Arabic **`0`–`9`** |
-| `ba` / `bu` (+ `ja` when a mantissa follows) | **`e`** / **`e-`** (engineering, scientific, or [ordinal generation](#ordinal-generation)) |
-| `ba` / `bu` with **no** digits ([digitless exp](#digitless-exponents)) | **`e`** / **`e-`** with no power digits — specials `g+e`, `g+e-`; zero×digitless `g+0e`, `g+0e-`, `g#0e`; hyperbole `g+1e`, `g+1e-`, `g#1e`, `g#1e-` |
-| named exp **`0`** (bare OoM / assert) | **`e0`** — ones band `g+e0`; assert `g+3e0` / `g#e0` (omit still usual when ones/current is clear; [ambient](#ambient-scale)) |
-| mantissa **`0`** + digitful **`e-1`** ([engineering null](#zero-exponent)) | **`0e-1`** — `g+0e-1` / `g-0e-1` only |
-| `je` | **`.`** |
-| `jo` | **`%`** |
-| `ju` | **`%*`** |
-
-Do **not** write out **`ja`**, **`je`**, **`jo`**, or **`ju`** in shorthand — use `e` / `.` / `%` / `%*` instead.
-
-**Commas** separate digit groups for readability (preferred for multi-group values). Commas are orthographic only; they are not spoken and do not change the word. Digitless forms have no commas.
-
-For long values, break into digit groups of at most three mantissa digits (plus their exponents); all groups still sit in **one** word after a single marker.
-
-## Examples
-
-Preferred writing first; speech sketches show structure (exact **-l** unless noted). Digits in speech use the [digit table](#digits).
-
-| Value | Preferred writing | Speech sketch |
-|-------|-------------------|---------------|
-| plural / more than one | `g+` | *gral* (`g` + `ra` + `l` — [digitless](#zero-digit-groups)) |
-| about several (`>1`) | `g~+` | *gram* |
-| +∞ | `g+e` | *grabal* (`g` + `ra` + `ba` + `l` — [digitless exp](#digitless-exponents)) |
-| arbitrarily large but finite | `g~+e` | *grabam* |
-| one gazillion (hyperbole) | `g+1e` | *grawobal* (`ra` + wo + `ba` + `l`) |
-| absolute zero (totalized null) | `g+0e` | *grazobal* (`ra` + zo + `ba` + `l` — [zero × exponent](#zero-exponent)) |
-| sterile / null-at-seed amount | `g+0e-` | *grazobul* (`ra` + zo + `bu` + `l`) |
-| engineering null at OoM −1 | `g+0e-1` | *grabuwojazool* (`ra` + `bu` wo **ja** zo + `l`) |
-| engineering residue at OoM −1 | `g-0e-1` | *grubuwojazool* (`ru` + `bu` wo **ja** zo + `l`) |
-| rank annihilated / disqualified | `g#0e` | *grezobal* (`re` + zo + `ba` + `l`) |
-| ones band (1–9) | `g+e0` | *grabazol* (`ra` + `ba` + zo + `l` — [bare OoM](#bare-oom-bands)) |
-| three at asserted OoM 0 | `g+3e0` | *grabazojarel* (`ra` + `ba` + zo + `ja` + re + `l`) |
-| thousands band (1000–9999) | `g+e3` | *grabarel* (`ra` + `ba` + re + `l`) |
-| current generation cohort | `g#e0` | *grebazol* (`re` + `ba` + zo + `l` — [generation](#ordinal-generation)) |
-| *annihilate* | `v+0e` | *vrazobal* |
-| *Annihilate!* | `j+0e` | *jrazobal* |
-| about a gazillion | `g~+1e` | *grawobam* |
-| the Gazillion (proper name) | `g@+1e` | *grawoban* |
-| one gazillionth | `g+1e-` | *grawobul* (`ra` + wo + `bu` + `l`) |
-| the gazillionth / umpteenth | `g#1e` | *grewobal* (`re` + wo + `ba` + `l`) |
-| about the gazillionth | `g~#1e` | *grewobam* |
-| the gazillionth-first | `g#1e-` | *grewobul* (`re` + wo + `bu` + `l`) |
-| 2nd from the end / penultimate | `g#-2` | *greudul* (`reu` + du + `l`) |
-| 1st from the end / *Starting with the last one* | `g#-1` | *greuwol* (`reu` + wo + `l`) |
-| 3rd of gen +2 | `g#3e2` | *grebadujarel* (`re` + `ba` + du + `ja` + re + `l` — [generation](#ordinal-generation)) |
-| gen −2 cohort | `g#e-2` | *grebudul* (`re` + `bu` + du + `l`) |
-| for the gazillionth time | `h#1e` | *hrewobal* |
-| for the penultimate time | `h#-2` | *hreudul* |
-| *Gazillionth!* | `j#1e` | *jrewobal* |
-| *Penultimate!* | `j#-2` | *jreudul* |
-| umpteenth point: | `x#1e` | *xrewobal* |
-| 2nd-from-end point: | `x#-2` | *xreudul* |
-| *Starting with the last one:* | `x#-1` | *xreuwol* |
-| arbitrarily small but finite | `g+e-` | *grabul* (`ra` + `bu` + `l`) |
-| −∞ | `g-e` | *grubal* |
-| last place | `g#e` | *grebal* |
-| near last place | `g~#e` | *grebam* |
-| start / beginning place | `g#e-` | *grebul* |
-| near first place | `g~#e-` | *grebum* |
-| *Starting with:* | `x#e-` | *xrebul* |
-| *Finally:* | `x#e` | *xrebal* |
-| increase without bound | `v+e` | *vrabal* |
-| increase a lot but finite | `v~+e` | *vrabam* |
-| nudge up | `v+e-` | *vrabul* |
-| decrease without bound | `v-e` | *vrubal* |
-| treat as imaginary / notionalize | `v-e-` | *vrubul* |
-| soft notionalize | `v~-e-` | *vrubum* |
-| notional / imaginary amount | `g-e-` | *grubul* (`ru` + `bu` + `l`) |
-| soft notional | `g~-e-` | *grubum* |
-| notionally / as if | `h-e-` | *hrubul* |
-| *As if!* / *Imagine!* | `j-e-` | *jrubul* |
-| *imagine that:* | `x-e-` | *xrubul* |
-| take last place | `v#e` | *vrebal* |
-| take starting place | `v#e-` | *vrebul* |
-| take 2nd from the end | `v#-2` | *vreudul* |
-| some end-relative rank | `g#-` | *greul* |
-| unbounded multiplicity | `h+e` | *hrabal* |
-| many times but finite | `h~+e` | *hrabam* |
-| a gazillion times | `h+1e` | *hrawobal* |
-| unbounded duplicity | `h+e-` | *hrabul* |
-| for the last time | `h#e` | *hrebal* |
-| for the first time (onset) | `h#e-` | *hrebul* |
-| *To infinity!* | `j+e` | *jrabal* |
-| *Finally!* | `j#e` | *jrebal* |
-| *(finally, we're) starting!* | `j#e-` | *jrebul* |
-| some negative amount | `z-` | *zrul* |
-| some rank | `g#` | *grel* |
-| some code (object) | `d_` | *drol* |
-| that (prior) scalar again | `g=+` | *grar* (digitless **-r**) |
-| that (prior) code again | `d=_` | *dror* |
-| increase (unspecified) | `v+` | *vral* |
-| increase a bit | `v~+` | *vram* |
-| multiple times | `h+` | *hral* |
-| a few times | `h~+` | *hram* |
-| at some clock/date | `h_` | *hrol* — still bare `hro` = time; ≠ `har` |
-| More! | `j+` | *jral* |
-| 3 | `g+3` | *grarel* (`g` + `ra` + re + `l`) |
-| −3 | `g-3` | *grurel* (`g` + `ru` + re + `l`) |
-| 3 (as subject) | `z+3` | *zrarel* |
-| −3 (as object) | `d-3` | *drurel* |
-| of size 12 | `b+12` | *brawodul* (`b` + `ra` + wo du) |
-| room 12 (modifier) | `g_12` | *growodul* (`g` + `ro` + wo du) |
-| 139 | `g+139` | *graworenal* (`ra` + wo re na) |
-| 27e12 | `g+27e12` | *grabawodujadulel* (`ra` + ba wo du **ja** + du le) |
-| e9 (bare) | `g+e9` | *grabanal* (`ra` + ba na; **no** `ja`) |
-| 50e-6 | `g+50e-6` | *grabugujavazol* (`ra` + bu gu **ja** + va zo) |
-| −1e9 −265e3 −4 | `g-1e9,265e3,4` | *grubanajawobarejaduguvamol* — **`ru`**; groups: ba na **ja** wo · ba re **ja** du gu va · mo |
-| $5860.04 → 5e3 + 860 + 4e-2 | `g+5e3,860,4e-2` | *grabarejavahaguzobudujamol* — ba re **ja** va · ha gu zo · bu du **ja** mo |
-| 2nd | `g#2` | *gredul*; title-like *the Second…* may take **-n** (`g@#2` / *gredun*) |
-| penultimate | `g#-2` | *greudul* |
-| about 27e6 | `g~+27e6` | *grabagujadulem* (ba gu **ja** du le, ending **-m**) |
-| phone 555-123-4567 | `d_555,123,4567` | *drovavavawoduremovagulel* (`d` + `ro` + va×3 · wo du re · mo va gu · le + `l`) |
-| scientific 5.2487083e-4 | `g+5.2487083e-4` | *grabumojavajedumohalezoharel* (`ra` + bu mo **ja** + va **je** + du mo ha · le zo ha · re) |
-| 25% | `g+25%` | *graduvajol* (`g` + `ra` + du va **jo** + `l`) |
-| 25% of the cats | `zagadalsh g+25%` | host whole + `/ɡ/` percent — [denominator](#percent-denominators) |
-| about 3% | `g~+3%` | *grarejom* (`ra` + re **jo** + `m`) |
-| −12.5% | `g-12.5%` | *gruwodujevajol* (`ru` + wo du **je** va **jo**) |
-| 100% | `g+100%` | *grawozozojol* (`ra` + wo zo zo **jo**; normal mantissa digits) |
-| +2 pp | `g+2%*` | *gradujul* (`ra` + du **ju**) |
-| about −1.5 pp | `g~-1.5%*` | *gruwojevajum* (`ru` + wo **je** va **ju** + `m`) |
-| neutral point 1 / 2 | `x#1`, `x#2` | *xrewol*, *xredul* (`x` + `re` + …) |
-| end-relative point 2 | `x#-2` | *xreudul* (`x` + `reu` + du) |
-| corroborating item 3 | `x+3` | *xrarel* (`x` + `ra` + re) |
-| independent item 2 | `x-2` | *xrudul* (`x` + `ru` + du) — ≠ **`x#-2`** |
-| regarding agenda 12 | `x_12` | *xrowodul* (`x` + `ro` + wo du) |
-| as in (2) above (neutral) | `x=#2` | *xredur* (ending **-r**) |
-| three times / ×3 | `h+3` | *hrarel* (`h` + `ra` + re) |
-| ÷3 / every third | `h-3` | *hrurel* (`h` + `ru` + re) |
-| at 15:30 | `h_15,30` | *hrowovarezol* (`h` + `ro` + wo va · re zo) — bare `hro` = time |
-| on 2026-07-22 | `h_2026,07,22` | *hrowoduzoguzoledudul* (`h` + `ro` + …) — bare `hro` date |
-| date 2026-07-22 (modifier) | `g_2026,07,22` | *growoduzoguzoledudul* (`g` + `ro` + wo du zo gu · zo le · du du) — date fields, not threes |
-| on 101.1 (frequency) | `/h/` *on* + `b_101.1` | not bare `h_…`; host + `/b/` digit-string |
-| for the third time | `h#3` | *hrerel* (`h` + `re` + re) |
-| Three! (label / score) | `j_3` | *jrorel* (`j` + `ro` + re) |
-| Three more! | `j+3` | *jrarel* (`j` + `ra` + re) |
-| Three short! / Three fewer! / −3! | `j-3` | *jrurel* (`j` + `ru` + re) |
-| twenty-seven! (label) | `j_27` | *jrodulel* (`j` + `ro` + du le) |
-| First! (place cheer) | `j#1` | *jrewol* (`j` + `re` + wo) |
-
-In a sentence, the PoS attaches to that single number word (see [Parts of speech on numbers](#parts-of-speech-on-numbers); e.g. direct-object digit-string: `d_…`). Prefer naming the whole as the host of a `/ɡ/` **`jo`** percent ([denominator](#percent-denominators): `zagadalsh g+25%`).
-
-## Measure phrases
-<a id="measure-phrases"></a>
-<a id="units"></a>
-<a id="unit-amount"></a>
-
-A **measure** is a lexicon **unit** noun plus a scalar **amount** grading that unit — not two bare `/b/` arguments, and not a new number closer (unlike closed **`jo`** / **`ju`**).
-
-**Shape:** unit as the head noun in the needed slot; amount as ordinary `/ɡ/` scalar on that unit:
-
-| Slot | Shape | Gloss |
-|------|--------|--------|
-| Argument of a complex `/ɡ/` / `/h/` | `b<inch>l g+2` | *two inches* (one `/b/` NP) |
-| Subject / object / … | `z<hour>l g+3`, `d<meter>l g+5` | *three hours*, *five meters* |
-| Modifier on a noun | `g<inch>l g+2` on a host | rare; prefer unit as `/b/` or freestanding NP |
-
-Same endings and fuzzy **-m** habits as other number words on the amount (`g~+2` ≈ *about two*). The **unit** is ordinary lexicon (reference suffixes as usual). Do **not** encode open-class units inside the numeral word.
-
-### No metric prefixes
-<a id="no-metric-prefixes"></a>
-<a id="metric-prefixes"></a>
-
-**Metric prefixes are not lexicon roots.** There is no dictionary entry *kilometer*, *milligram*, *nanosecond*, and so on. Lexicon units are **base** (*meter*, *gram*, *second*, …). Scale the amount instead:
-
-| Prefer | Avoid |
-|--------|--------|
-| *meter* + amount in thousands / `e3` (or the exact count) | *kilometer* |
-| `b<meter>l g+5400` or `b<meter>l g+5.4e3` for 5.4 km | `*b<kilometer>l g+5.4` |
-| `b<gram>l g+40e3` | *40 kilograms* as a prefixed unit word |
-
-Use [engineering exponents](#exponents) on the amount when convenient (`e3` / `e-3` / `e6` / …), or write the full scalar (`5400` meters). Same habit for other SI-style prefixes (*milli-*, *micro-*, *mega-*, …): keep the base unit; put the power of ten in the number.
-
-**Measured differentials** (*two inches taller*) put that measure NP as the **single `/b/`** on the SHARED scale adjective of a [comparative](comparatives.md#measured-differentials):
-
-`z<Sam>n z<Lea>n zel g<tall>l b<inch>l g+2` → *Sam is two inches taller than Lea*
-
-Vague degree stays `/w/` on the scale (`zel w<much>l g<tall>l …`) — no unit. Duration and other clause measures use the same unit+amount habit in whatever slot the relation needs.
-
-**Not this pattern:** percentage closers (**`jo`** / **`ju`**); bare multiplicative `/h/` factors (`h+1.5`); stacking `b+2 b<inch>l` as two arguments of one adjective.
-
-## Ranges
-<a id="number-ranges"></a>
-<a id="numeric-ranges"></a>
-<a id="from-to"></a>
-<a id="shared-continuum"></a>
-
-Spans reuse [phrase fences](coordination.md) whose conjuncts are number words, with a **SHARED continuum** `/ɡ/` naming the line — the same SHARED slot [comparatives](comparatives.md) use for a scale, but here the `/ɡ/` is a **dimension / quantity continuum**, not an entity-ranking scale. There is **no** range form inside a single number word (no `g+3-5`). Fence join vowels, endings, revision, and **-r** are defined in coordination; **this section** is the source of truth for when those forms mean a numeric span.
-
-**Trigger (all required):**
-
-1. Exactly **two** endpoints that are **compatible** number words (same marker identity: both scalar, both ordinal, or both digit-string / time).
-2. Join **`a`** / **`e`** / **`ue`** / **`ua`** (or those vowels’ **-r**).
-3. A **SHARED continuum** `/ɡ/` immediately after the join (lexicon: dimension / quantity line — *age*, *price*, *time*, *height*, …; stock **`g<span>l`** / **`g<amount>l`** when the line is pure numeric or supplied by context/head).
-
-The fence PoS matches the slot (`zal` / `dal` / `gal` / `bal` / …). Mixed identities on one span are illegal.
-
-**Without SHARED continuum:** two number conjuncts are **ordinary coordination** — never a span. In particular bare **`z+3 z+5 zel`** = *3 ≻ 5* (preference / rank), not *from 3 to 5*.
-
-| Join | Inclusive shape | Reading |
-|------|-----------------|--------|
-| **`a`** | `z+3 z+5 zal g<age>l` | *between 3 and 5* on age (unordered filled interval; both ends in) |
-| **`e`** | `z+3 z+5 zel g<age>l` | *from 3 to 5* on age (directed; first → second) |
-| **`ue`** | `z+5 z+3 zuel g<age>l` | directed reverse path on age (spoken order = path; here *from 5 to 3*) |
-| **`ua`** | `z+3 z+5 zual g<age>l` | *outside 3–5* on age (complement on the line) |
-| **`o`** / **`ao`** | — | **Not** ranges — stay discrete (*3 or 5* / *3 and/or 5*); SHARED continuum does not license a span |
-| **`ae`** | `z+5 z+5 zael` / `z+3 z+5 zaem` | *equal to 5* / *approximately equal* — **not** a span (no continuum needed; continuum + **`ae`** + numbers is not a range reading) |
-| **`oe`** | — | **Not** ranges — exclusive ranked / bare empty superlative with scale |
-
-**Arity escape:** three or more number conjuncts under **`a`** stay an ordinary discrete inventory (`zal z+1 z+3 z+7` = *1, 3, and 7*), even with SHARED. Focus **`zal z+3`** stays *just 3*, not a ray. Focus **ranked** with a number is a [threshold](#numeric-thresholds), not ordinary *only X matters*.
-
-**Contrast with comparatives:** `z<Sam>n z<Lea>n zel g<big>l` = *Sam is bigger than Lea* (SHARED **scale**, non-number conjuncts). `z+3 z+5 zel g<age>l` = *from 3 to 5 on age* (SHARED **continuum**, number endpoints). Bare `z+3 z+5 zel` = prefer 3 over 5.
-
-### Thresholds (focus ranked)
-<a id="numeric-thresholds"></a>
-<a id="greater-less-than"></a>
-
-When the **sole** conjunct of a [rank join](coordination.md#ranked-conjunction-e) fence (**`e`** / **`ue`**, and their open / named twins) is a **compatible number word**, that number is an **extremum on the line**, not “only this value matters” and not a two-endpoint [span](#ranges). SHARED continuum is **optional** on thresholds: absent = implicit / contextual numeric line; present = that named line (`z+5 zel g<age>l` = *age \< 5*). Special values such as +∞ use [digitless exponents](#digitless-exponents) inside the number word (`g+e`), not focus ranked zero-group forms.
-
-| Form | Reading | Mnemonic |
-|------|--------|----------|
-| **`z+5 zel`** | ***less than 5*** (`< 5`) | 5 is the **greatest** (ceiling); the ray is everything it outranks |
-| **`zem z+5`** | soft / approximate *less than ~5* | open twin |
-| **`z+5 zuel`** | ***greater than 5*** (`> 5`) | 5 is the **least** (floor); reverse-ranked extremum |
-| **`zuem z+5`** | soft / approximate *greater than ~5* | open reverse twin |
-| **`zen z+5`** | named/conventional **unspecified** extremum label (*under-fives*-style) | phrase **-n** on **e** |
-| **`zaen z+5`** | named/conventional **equal-to-5** band / tie label | phrase **-n** on **ae** |
-| **`zuen z+5`** | named/conventional floor band | phrase **-n** reverse |
-
-Same under `/d/` `/b/` `/ɡ/` (`gel g+5` = modifier *\<5*; `duel d+10` = object *\>10*). **`ae`** / **`oe`** focus with a number are **not** thresholds (stay ordinary ranked focus / triage). Boolean focus (**`zal`** / **`zol`** / …) is **not** a threshold. Focus **`zel z+`** (zero-group) is **not** +∞ and **not** a threshold — ordinary focus on plural/unspecified amount; use **`z+e`** / **`g+e`** for +∞.
-
-**Inclusive bounds:** default is **strict** (`<` / `>`). For **≤ 5** / **≥ 5**, use a two-endpoint [span](#ranges) with the bound included — do **not** flip focus ranked to inclusive. Exclusive-high **`ul`** stays a two-side span tool (`z+3 ul z+5 zal g<span>l`), not a focus threshold marker.
-
-**Unspecified in a threshold:** bare **`e`** + **-r** = unspecified member of the *\< X* ray — `zer z+5` → *some/whatever value \< 5* (under question → *which value \< 5?*). **`ue`** takes **no** **-r** (stacked forms never do — [coordination](coordination.md#unspecified-member-r-phrase)); there is no `zuer` threshold. For an unspecified value *\> 5*, use other wording (not a reverse **-r** fence).
-
-Contrast: `z+3 z+5 zel g<age>l` = *from 3 to 5 on age* (span); `z+3 z+5 zel` = *3 ≻ 5* (preference); `z+5 zel` = *\< 5* (focus threshold); `z+e` / `g+e` = +∞ ([digitless exponents](#digitless-exponents)). `z<Sam>n zel` (non-number) stays ordinary *only Sam matters* / [superlative-with-scale](comparatives.md) — **focus number conjunct** triggers the threshold reading when the number is a bound (typically digitful).
-
-### Half-open (exclude the high end only)
-
-[Revisers](revisers.md) **inside the range** marks an exclusive **upper** bound. Replace the second (high) conjunct with prefix-less **`ul`** + that number. SHARED continuum stays required:
-
-| Shape | Reading |
-|-------|--------|
-| `z+3 z+5 zal g<span>l` | *[3, 5]* — inclusive both ends |
-| `z+3 ul z+5 zal g<span>l` | *[3, 5)* — *3 up to but not including 5* |
-| `z+3 ul z+5 zel g<span>l` | *from 3 up to but not including 5* |
-
-The low endpoint is **always inclusive**. Do **not** exclude the beginning edge (no `ul` before the low; no open-low span). Do **not** list the high end as a conjunct and then except it (`*zal g<span>l z+3 z+5 ul z+5`); the exclusive high is **only** the in-range `ul` shape. Open **`um`** on the high end = soft / non-exhaustive exclusion of that bound (rare). Other revision vowels (**`al`** / **`el`** / **`ol`**) are not range-bound markers.
-
-Fence **-l** / **-m** / **-n** keep ordinary closed / open / named senses on the span (*exactly this band* / *around this band* / *the teens*-style label). Endpoint [number endings](#number-endings) still apply (**-m** ≈ fuzzy that bound).
-
-### Unspecified value in the span (**-r**)
-
-Fence **-r** on a number-range shape (still with SHARED continuum) = an **unspecified member of the span** (not content-word anaphor **-r**, not a discrete *something among two listed values*):
-
-| Form | Reading |
-|------|--------|
-| `z+3 z+5 zar g<span>l` | *some value in [3, 5]* |
-| `zar g<span>l z+3 ul z+5` | *some value in [3, 5)* |
-| `zor g<span>l z+3 z+5` | *any value in [3, 5]* (free-choice) |
-| `zer g<span>l z+3 z+5` | *whatever-by-rank in [3, 5]* |
-| `zur g<span>l z+3 z+5` | *some value other than (in) [3, 5]* — other-than the span |
-
-Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which value in 3–5?*). Same under `/d/` `/b/` / `/ɡ/` as the slot needs (`g+3 g+5 gal g<age>l` = modifier *ages 3–5*; `d+10 ul d+20 dar g<span>l` = object *some value in [10, 20)*).
-
-**Clock / date spans:** do **not** use bare circumstance-`hal` (that series is [applicability](restrictors.md)). Prefer SHARED continuum **`gumedul`** (or a host relation + `/b/`) with digit-string endpoints (`bal gumedul b_15,00 b_16,00`).
-
-Examples: `z+3 z+5 zal g<age>l` → *between ages 3 and 5*; `z<kid>l g+3 g+5 gal g<age>l` → *kids ages 3–5*; `z+3 ul z+5 zal g<span>l` → *[3, 5)*; `z+10 z+20 zel g<age>l` → *from age 10 to 20*; `z+3 z+5 zel` → *3 ≻ 5* (preference, not a span); `z+5 zel` → *\< 5*; `z+5 zuel` → *\> 5*; `g+e` → +∞; `g-e-` → notional / imaginary amount; `g+1e` → *one gazillion*; `g@+1e` → proper name *the Gazillion*; `g~+e` → arbitrarily large but finite; `g+e-` → arbitrarily small but finite; `g#e` → last place; `g~#e` → near last place; `g#e-` → start / beginning place; `g~#e-` → near first place; `g#1e` → *the gazillionth* / *umpteenth*; `g#1e-` → *the gazillionth-first*; `g#-2` → *2nd from the end* / *penultimate*; `g#3e2` → *3rd of gen +2*; `h#1e` → *for the gazillionth time*; `h#-2` → *for the penultimate time*; `x#e-` → *Starting with:*; `x#-1` → *Starting with the last one:*; `x-e-` → *imagine that:*; `v+e` → increase without bound; `v-e-` → treat as imaginary; `h+e` → unbounded multiplicity; `h-e-` → notionally / as if; `j+e` → *To infinity!*; `j#e` → *Finally!*; `j#-2` → *Penultimate!*; `j-e-` → *As if!*; `z+5 z+5 zael` → *equally 5* / *5 equals 5*; `z+3 z+5 zaem` → *3 and 5 approximately equal*; `z+3 z+5 zar g<span>l` → *some value in 3–5*; `z+3 z+5 zol` → *3 or 5* (discrete, not a range).
-
-## Numeric derivation (compounds)
+### Numeric derivation (compounds)
 
 PoS-less number stems may follow mid-word **`x`** on an ordinary content root (`ROOTx+e`, `ROOTx_12`, `ROOTx_e`, `ROOTx+1e`, …). That family is **derivation** (essence, coded subtype, [infinite labels](special-vocabulary.md#infinite-labels), hyperbole-ROOT, …), documented in **[special-vocabulary.md § Numeric derivation](special-vocabulary.md#numeric-derivation)**; parser cue in **[x-compounds.md](x-compounds.md)**. Running-text examples prefer spelled CV (`zolexrabal`) — [writing style](#writing-style-numeric-vs-spelled). Free number words on this page stay clause-slot counts, ranks, labels, overlays, and discourse items.
 
-## Stress (pronunciation guide)
+
+### Stress (pronunciation guide)
 
 - Digitless numbers (marker + ending only): stress the **marker** syllable (`ra` / `ru` / `re` / `reu` / `ro`). For **`reu`**, stress the first vowel of the digraph (`e`).
 - [Digitless exponent](#digitless-exponents) forms (`ba`/`bu` alone): stress the **exponent marker** (`ba` / `bu`).
@@ -1107,3 +1169,12 @@ PoS-less number stems may follow mid-word **`x`** on an ordinary content root (`
 - **`je`** (decimal point): always stressed when present.
 - **`jo`** / **`ju`** (percent / percentage points): always stressed when present.
 - Digit-string groups: stress the **first digit** of each group.
+
+## See also
+
+- Phrase fences for ranges: [coordination.md](coordination.md)
+- Scalar comparison / measured differentials: [comparatives.md](comparatives.md)
+- Numeric derivation on roots: [special-vocabulary.md](special-vocabulary.md#numeric-derivation)
+- Mid-word **`x`** families: [x-compounds.md](x-compounds.md)
+- Number-word phonotactics: [phonology.md](phonology.md)
+- Discourse *Starting with* / *Finally* vs revisers: [revisers.md](revisers.md)

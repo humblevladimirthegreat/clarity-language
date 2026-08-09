@@ -4,7 +4,7 @@ Plan to bring every file in **`docs/grammar/`** in line with [grammar-docs.md](g
 
 **Phase 0 done:** all former top-level `docs/*.md` live under `docs/grammar/`; core sentence page is [core.md](../grammar/core.md); repo pointers updated; grammar pages no longer cite `meta/` / `data/` / other folders.
 
-**Still to do:** Waves 4–7 (Phases 1–3 banding continues; Waves 0–3 done).
+**Still to do:** Waves 5–7 (Phases 1–3 banding continues; Waves 0–4 done).
 
 ## Scope (read this first)
 
@@ -173,9 +173,9 @@ Keep the list short; link to each doc’s `#beginner` (or equivalent).
 - [x] `restrictors.md`
 - [x] `coordination.md`
 - [x] `spans.md`
-- [ ] `numbers.md` (may be multiple PRs)
-- [ ] `comparatives.md`
-- [ ] `causation.md`
+- [x] `numbers.md` (may be multiple PRs)
+- [x] `comparatives.md`
+- [x] `causation.md`
 - [ ] `values.md`
 - [ ] `special-vocabulary.md`
 - [ ] `x-compounds.md`
