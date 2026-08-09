@@ -47,7 +47,7 @@ We're not trying to be as precise as Ithkuil, because that language is very diff
 
 # Learning levels
 
-Grammar docs use **beginner** / **intermediate** / **advanced** sections so learners finish all beginner material across docs before intermediate, then advanced. Assignment rubric: **[learning-levels.md](learning-levels.md)**.
+Grammar docs use **beginner** / **intermediate** / **advanced** sections so learners finish all beginner material across docs before intermediate, then advanced. Assignment rubric: **[learning-levels.md](meta/learning-levels.md)**.
 
 # Criterion for Features
 <a id="criterion-for-features"></a>
@@ -308,7 +308,7 @@ Pronoun grammar (anaphoric **-r** forms; special **`umogo`** / **`ehado`** / **`
 
 # Glosses
 
-How to write morph glosses and free English in docs and examples (senses as separate roots; no etymology arrows; free English **loose** by default): **[glosses.md](glosses.md)** ([strict vs loose](glosses.md#strict-vs-loose-free-english)).
+How to write morph glosses and free English in docs and examples (senses as separate roots; no etymology arrows; free English **loose** by default): **[glosses.md](meta/glosses.md)** ([strict vs loose](meta/glosses.md#strict-vs-loose-free-english)).
 
 # Numbers
 

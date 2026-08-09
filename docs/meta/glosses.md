@@ -293,5 +293,5 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 - [special-vocabulary.md](special-vocabulary.md#sense-form) — overlays and closed labels
 - [pronouns.md](pronouns.md) — **-r** and special pronouns
 - [x-compounds.md](x-compounds.md) — mid-word `x` families
-- [language-reference.md](language-reference.md#orthography) — written orthography
+- [language-reference.md](../language-reference.md#orthography) — written orthography
 - [values.md](values.md) — need stances and endings (morph keeps them; loose free usually drops channel / standing / force / changeability)
