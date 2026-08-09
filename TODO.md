@@ -1,5 +1,4 @@
 -punctuation
--change values to compassion, rationality, empowerment, in that order
 
 ## Unassigned number / derivation readings
 

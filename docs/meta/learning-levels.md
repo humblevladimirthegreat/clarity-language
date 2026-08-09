@@ -2,7 +2,7 @@
 
 Grammar docs are organized so a learner can finish **all beginner** sections across docs before **intermediate**, then **advanced**. Levels are assigned with a **small fixed rubric**, applied **loosely** — enough consistency for a cross-doc path, not a score for every morph.
 
-This page is pedagogy, not language design. Design authority stays in [language-reference.md](../language-reference.md) and the linked grammar docs. Prose and example style for those pages: [grammar-docs.md](grammar-docs.md).
+This page is pedagogy, not language design. Design authority stays in [introduction.md](../introduction.md), [language-reference.md](../language-reference.md), and the linked grammar docs. Prose and example style for those pages: [grammar-docs.md](grammar-docs.md).
 
 ## Rubric (three questions)
 
@@ -10,7 +10,7 @@ Ask in order. Prefer the **earlier** band when a concept sits on a boundary and 
 
 1. **Usable after one short explanation?**  
    Can someone use it in ordinary dialogue after roughly one paragraph and a couple of examples (and at most a second of thought once practiced)?  
-   If yes → **beginner** (or at least not advanced). Aligns with the language’s [easy-to-use feature criterion](../language-reference.md#criterion-for-features).
+   If yes → **beginner** (or at least not advanced). Aligns with the language’s [easy-to-use feature criterion](../introduction.md#criterion-for-features).
 
 2. **Does it depend on another subsystem already being fluent?**  
    If the form only makes sense after joins, numbers, values, spans, etc. are already comfortable → at least **intermediate**.  
@@ -28,7 +28,7 @@ Ask in order. Prefer the **earlier** band when a concept sits on a boundary and 
 
 ## Cross-doc path
 
-1. Read every doc’s **Beginner** sections (start from [language-reference.md](../language-reference.md) PoS / orthography, then core linked docs; exact order can be listed here once section tags exist).
+1. Read every doc’s **Beginner** sections (start from [introduction.md](../introduction.md) for orientation, then [language-reference.md](../language-reference.md) PoS / orthography, then core linked docs; exact order can be listed here once section tags exist).
 2. Then every **Intermediate** section.
 3. Then every **Advanced** section.
 

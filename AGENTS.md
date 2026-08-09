@@ -1,6 +1,6 @@
 # Clarity Language
 
-Constructed language and tooling that encode psychologically useful distinctions into vocabulary and grammar (love / truth / freedom themes: gratitude, bias awareness, authentic choice). Unambiguous syntax supports computational tools; phonology aims to be easy to sing.
+Constructed language and tooling that encode psychologically useful distinctions into vocabulary and grammar (compassion / rationality / empowerment themes: gratitude, bias awareness, authentic choice). Unambiguous syntax supports computational tools; phonology aims to be easy to sing.
 
 Always call the language **Clarity** (never Geran or other legacy names).
 
@@ -10,7 +10,8 @@ This repo is TypeScript tooling around the language docs and lexicon. A web UI m
 
 | Source | Role |
 |--------|------|
-| `docs/language-reference.md` | **Source of truth** for the language design. Revise it as design decisions land. |
+| `docs/introduction.md` | Purpose (compassion / rationality / empowerment), grammar design goals, learning path, feature criteria. |
+| `docs/language-reference.md` | **Source of truth** for core clause grammar (PoS, orthography, utterance framing, …). Revise it as design decisions land. Linked grammar docs own their subsystems. |
 | `docs/meta/learning-levels.md` | Rubric for tagging grammar docs **beginner** / **intermediate** / **advanced** (cross-doc learning path — pedagogy, not design authority). |
 | `docs/meta/grammar-docs.md` | Style for learner-facing grammar prose (page skeleton, teach order, no process/corrective leftover text — pedagogy, not design authority). |
 | `docs/phonology.md` | Phonology and phonotactics (linked from the language reference). |
@@ -41,7 +42,7 @@ Clarity encodes psychologically useful distinctions natively (no English tag ove
 ## Tooling notes
 
 - Node ≥ 20.
-- Language design work goes through `docs/language-reference.md` (and `TODO.md` until absorbed). Do **not** treat deleted legacy ANTLR grammars or any future parsers as design authority until they match the docs.
+- Language design work goes through `docs/introduction.md` (purpose / feature criteria), `docs/language-reference.md` and the linked grammar docs (and `TODO.md` until absorbed). Do **not** treat deleted legacy ANTLR grammars or any future parsers as design authority until they match the docs.
 - **Orthography:** actual Clarity has **no hyphen** after the PoS letter (`zumogon`, not `z-umogo`); foreign roots use `PoS<…>ENDING` (e.g. `d<english>l`); opaque spans take no ending after `>` (`d<sushi>`). Prefer published lexicon roots when the gloss matches; use **-m** for metaphorical gloss matches — see [language-reference.md § Orthography](docs/language-reference.md#orthography).
 - **Utterance framing:** **`/j/`** = turn (vocatives, [polar stance](docs/questions.md#yes-no-polarity), marked force); **`/x/`** = same-force forward motion (clause joins, linkers — inherit force). Default assertoric **`jal`** is **omissible** when recoverable (period, polar **-l** / **-m**, `/x/` continue, same-force **`odo`** dependent). Do not require leading **`jal`** on every example sentence. Polar confirm tags are a **second bare turn** after `.` (`…. jael.`), not same-sentence final `/j/`.
 - After editing Markdown under `docs/` (or `AGENTS.md` / `TODO.md`), run **`npm run lint:md`** — it fails on unclosed `*` / `**` and on slash-joined emphasis (`*a*/*b*`, which breaks Cursor’s rich preview with `italic,italic`). Prefer spaces (`*a* / *b*`) or one span (`*a/b*`). Avoid nesting `**…**` inside already-bold text; in bold headings/bullets put forms in backticks only (`**Ranked (`e` / `ae`)**`, not `**ae**` inside).

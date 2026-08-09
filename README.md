@@ -21,4 +21,4 @@ Or open the repo in a [Dev Container](.devcontainer/devcontainer.json) (Node 22 
 | `npm run web` | Serve the lexicon search page |
 | `npm run dev` | Run `src/index.ts` via tsx |
 
-Design authority is **`docs/language-reference.md`** and the linked docs — not obsolete parsers.
+Design authority is **`docs/introduction.md`**, **`docs/language-reference.md`**, and the linked docs — not obsolete parsers.

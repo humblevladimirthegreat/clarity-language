@@ -49,7 +49,7 @@ Headings, leads, and asides must make sense to someone who never saw an earlier 
 4. Inside each band: **concept → rule in one breath → 1–3 examples → (optional contrast) → full table if needed**.
 5. Optional **See also** at the end — no long link walls in the lead.
 
-Front matter that orients (goals, feature criteria on the language reference) is not a learning band.
+Front matter that orients (purpose, design goals, feature criteria — [introduction.md](../introduction.md)) is not a learning band.
 
 ## Teach in this order
 
@@ -66,7 +66,7 @@ Do not open a section with a complete paradigm table. Tables come after the patt
 ## Voice and length
 
 - Address the learner in second person (“use **-r** when…”, “prefer names when…”).
-- One idea per H2/H3; the first paragraph should be roughly one short explanation (same bar as the [easy-to-use feature criterion](../language-reference.md#criterion-for-features)).
+- One idea per H2/H3; the first paragraph should be roughly one short explanation (same bar as the [easy-to-use feature criterion](../introduction.md#criterion-for-features)).
 - Prefer short paragraphs plus a table over a wall of prose.
 - Bold sparingly; put Clarity forms in backticks (`jal`, **-r**, `/ɡ/`).
 - Always call the language **Clarity**.
@@ -76,11 +76,11 @@ Do not open a section with a complete paradigm table. Tables come after the patt
 | Do | Don’t |
 |----|--------|
 | Minimal clause that shows *only* the new point | Kitchen-sink showcases in Beginner |
-| Published roots when the gloss matches; `PoS<…>ENDING` for donor spelling | Hyphen after the PoS letter (`zumogon`, not a split token) |
-| Omit recoverable **`jal`** when the page is not teaching force | Lead every example with **`jal`** by habit |
-| Morph gloss + **loose** free English by default ([glosses.md](glosses.md)) | Merge free English into the morph gloss |
+| Published roots when the gloss matches; `PoS<…>ENDING` for donor spelling | Split or hyphenated PoS tokens in learner text |
+| Omit recoverable **`jal`** when the page is not teaching force | Leading every example with **`jal`** by habit |
+| Morph gloss + **loose** free English by default ([glosses.md](glosses.md)) | Merging free English into the morph gloss |
 | Strict free English only when teaching packaging | Strict-only Beginner pages |
-| A **Not this** only for a documented confusable | A ritual counter-example (or **Not this** column) on every row |
+| A negative / **Not this** only for an **expected** learner mistake | Listing “no X” or a counter-example column by habit |
 
 Default example block:
 
@@ -96,17 +96,22 @@ Multi-turn practice belongs under [examples/](../examples/), not inside every gr
 
 ## Contrasts and boundaries
 
-Counter-examples are **high value when they name a real trap**; **low value when they are mandatory padding**.
+State the **positive** rule. Do **not** list negatives by default — neither a **Not this** column nor inline “no X / don’t Y / never Z.”
 
-Clarity often earns them: many errors are “use the sibling subsystem” (`-sh` vs **`ana`**, classification vs **`SAME`**, free `g+e` vs `ROOTx+e`, join **-r** vs content **-r**). One decisive **Not this** with the right link often teaches faster than another positive example.
+| Prefer | Avoid (unless the trap is real) |
+|--------|----------------------------------|
+| Write **prefix + root + ending** as one token: `zumogon` | “…as one token — **no hyphen** after the PoS letter” |
+| Vocatives sit in the left-edge cluster | “Vocatives **do not** appear mid-clause” *with no learner reason to try that yet* |
 
-**Use a counter-example when** there is a documented confusable — an English false friend, or another Clarity construction learners will reach for. Cross-link once; do not restate the other doc.
+**Negatives earn their keep only when** a learner is expected to make that mistake — typically an English false friend, or another Clarity construction they will reach for. Then one decisive contrast (sentence or table cell) with the right link is enough. Cross-link once; do not restate the other doc.
 
-**Skip them when:**
+Clarity often earns them: sibling-subsystem swaps (`-sh` vs **`ana`**, classification vs **`SAME`**, free `g+e` vs `ROOTx+e`, join **-r** vs content **-r**).
 
-- The wrong form is something a learner would not invent yet (editor-hygiene pairs like ~~`z-umogo`~~ in Beginner).
-- The negative line only restates the positive rule.
-- A section would get a ritual **Not this** (or a permanent **Not this** table column) with nothing decisive to say.
+**Skip negatives when:**
+
+- The wrong form is something a learner would not invent (editor-hygiene pairs like hyphenated PoS, ~~`z-umogo`~~).
+- The negative only restates the positive rule (“write one token” already implies no hyphen).
+- A section would get a ritual **Not this** (or a permanent **Not this** column) with nothing decisive to say.
 
 Do **not** require a **Not this** column on every table, or a counter-example on every form. A strong positive example is enough when there is no near-miss.
 
@@ -131,7 +136,8 @@ Do **not** require a **Not this** column on every table, or a counter-example on
 | Gloss format | [glosses.md](glosses.md) |
 | Level rubric / reading order | [learning-levels.md](learning-levels.md) |
 | Doc prose / example style | This page |
-| Goals / feature criteria | [language-reference.md](../language-reference.md) |
+| Goals / feature criteria | [introduction.md](../introduction.md) |
+| Core clause grammar hub | [language-reference.md](../language-reference.md) |
 | Unassigned or rejected design | [TODO.md](../../TODO.md) or **Design notes** |
 | Multi-turn practice | [examples/](../examples/) |
 
