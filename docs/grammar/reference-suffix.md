@@ -29,17 +29,17 @@ gloss: `z-dog` · `g-blue`
 ```
 
 ```
-`z<Sam>n v<go>l.`
+`zazaman vawul.`
 
-gloss: `z-Sam` · `v-go`
+gloss: `z-Sam` · `v-walk`
 
 *Sam goes.* (named person)
 ```
 
 ```
-`zur v<go>l.`
+`zazar vawul.`
 
-gloss: `z-r` · `v-go`
+gloss: `z-r` · `v-walk`
 
 *He/she/it goes.* (resume — stem from prior mention; see [pronouns](pronouns.md))
 ```
@@ -52,7 +52,7 @@ Prefer a published root when the English meaning matches; use **-m** when the ma
 [role letter] + [l?] + root (+ x + root …) + ending + [sh?]
 ```
 
-Write **role letter + root + ending** as **one token** (`zumogon`). Foreign roots: `PoS<…>ENDING` (e.g. `d<english>l`). Opaque spans take no ending after `>` (`d<sushi>`). Full writing rules: [core.md § Writing words](core.md#orthography).
+Write **role letter + root + ending** as **one token** (`zumogon`). Full writing rules: [core.md § Writing words](core.md#orthography).
 
 1. **Role letter** — job in the sentence ([core.md](core.md#part-of-speech-prefixes)). Outside a sentence, omit it for a [citation](core.md#citation-forms) (`godol`, `umogon`) — **`/z/` is not implied**.
 2. **Left-bound `l`** — optional; **adjectives only** (`/ɡ/` → **`gl-`**) when the adjective sits **before** its host ([left-bound adjectives](core.md#left-bound-adjectives)). Not the same as word-final **-l**.
@@ -91,13 +91,11 @@ Named individuals, places, one-off objects, titled works: *Sam*, *Paris*, *the O
 
 | Shape | Example | Reading |
 |-------|---------|---------|
-| **Foreign** multipart (donor spelling in one `<>`) | `z<Mary Smith>n` | *Mary Smith* (one person) — space inside `<>` OK |
-| same under other slots | `d<New York>n`, `b<Leonardo da Vinci>n` | one named place / person as object or argument |
-| **Nativized** multipart (Agelan roots + mid-word **`x`**) | `zuzuzuxogeven` | *Sushi-Coffee* as one nativized label |
+| **Nativized** multipart (Agelan roots + mid-word **`x`**) | `zameraxezeman` | *Mary Smith* (one person) |
+| same under other slots | `donujan`, `bolevan` | one named place / person as object or argument |
+| **Sense compound** (two lexicon roots) | `zuzuzuxogeven` | *Sushi-Coffee* as one nativized label |
 
-**Trap:** adjacent bare same-role words (`z<Mary>n z<Smith>n`) look like two people in a [join](coordination.md) (*Mary and Smith*). One word (foreign `<>` or nativized **`x`-compound**) keeps **one** resume target and one slot filler.
-
-**Long titles** (book / film / album names that would need many roots or an internal *and*) prefer a [cite](spans.md) span; *the title X* / *the proverb X* as a named unit uses [mention](spans.md) **-n**. Resume with a [span anaphor](spans.md#endings) (`daxar` / …), not content-word **-r** on a fake mega-root.
+**Trap:** adjacent bare same-role words (`zameran zezeman`) look like two people in a [join](coordination.md) (*Mary and Smith*). One **`x`-compound** keeps **one** resume target and one slot filler.
 
 Phonotactics for **`x`**: [phonology.md](phonology.md#phonotactics).
 
@@ -121,7 +119,7 @@ A **named circumstance, channel, or standard** framing the clause. Aligns with [
 
 | Subclass | **-n**? |
 |----------|---------|
-| **Vocatives** | Natural home — address by name (`jumogon`, `j<Sam>n`). Kind-based address (*everyone*) stays **-l**; titled group (*Team Alpha*) takes **-n**. |
+| **Vocatives** | Natural home — address by name (`jumogon`, `jazaman`). Kind-based address (*everyone*) stays **-l**; titled group (*Team Alpha*) takes **-n**. |
 | **Interjections** | Mostly **-l** / **-m**. Use **-n** for a named formula (**[Amen]**, branded catchphrases). Closed [yes/no polarity](questions.md#yes-no-polarity) particles use **-l** / **-m** only. |
 | **Clause force** | Closed **`jal` / `jol` / …** set — no **-n** / **-r** ([clause force](core.md#clause-force)). |
 
@@ -133,13 +131,12 @@ A **named circumstance, channel, or standard** framing the clause. Aligns with [
 | **Linkers** (*but*, *therefore*, …) | Stay **-l** / **-m** |
 | **Named discourse glue** (other `/x/` roots) | **-n** = titled agenda / section label — thread shift (*let’s now talk about X*) |
 | **Clause joins** | **-n** = soft packaging (*and then* **`xan`**, …) — not phrase named-list **-n**; full table [coordination.md](coordination.md) |
-| **Span markers** | **-l** exact / **-m** paraphrase / **-n** proper / **-r** span anaphor — [spans.md](spans.md) |
 
 *Starting with* / *Finally* are number discourse **`x#e-`** / **`x#e`** ([numbers.md](numbers.md#number-as-discourse-marker-by-marker)), not revisers. Prefix-less [discourse revisers](revisers.md#discourse-revisers) keep reviser endings including named **-n**.
 
-#### Borrowed and cited forms
+#### Nativized loans and multipart names
 
-Foreign / code surfaces use [opaque spans](spans.md) (`d<sushi>` / …). Use–mention and *the title X* as a named unit use [mention](spans.md) (often **-n**); long work titles prefer [cite](spans.md). **Nativized loans** (adapted Agelan root + ordinary ending) need no span. Compact multipart person/place names: [phrasal proper names](#phrasal-proper-names).
+**Nativized loans** (adapted Agelan root + ordinary ending) use ordinary reference suffixes. Compact multipart person/place names: [phrasal proper names](#phrasal-proper-names).
 
 #### Summary by role letter
 
@@ -153,7 +150,7 @@ Foreign / code surfaces use [opaque spans](spans.md) (`d<sushi>` / …). Use–m
 | `/j/` vocative | Address this named person, place, or title |
 | `/j/` interjection | This named formula or conventional call |
 | `/j/` clause force | *(not used)* |
-| `/x/` | Titled discourse label (thread shift) on other roots; soft join packaging on clause joins; proper on span markers — see [coordination.md](coordination.md) / [spans.md](spans.md) |
+| `/x/` | Titled discourse label (thread shift) on other roots; soft join packaging on clause joins — see [coordination.md](coordination.md) |
 
 ### Number-word exception
 <a id="number-word-exception"></a>
@@ -178,7 +175,7 @@ Bare need words (no `x`-addition) are **topic** only and keep ordinary **-l / -m
 
 ### Ability endings
 
-On [ability](special-vocabulary.md#ability) compounds — **host + `x` + {a\|u}** (e.g. `v<sing>xun`) or fallback **`egera` + `x` + {a\|u}`** — **-l / -m / -n / -r** are **changeability** on both **`xa`** (capable) and **`xu`** (incapable). **`xe`** / **`xo`** are undefined on ability. Details: [special-vocabulary.md](special-vocabulary.md).
+On [ability](special-vocabulary.md#ability) compounds — **host + `x` + {a\|u}** (e.g. `veguxun`) or fallback **`egera` + `x` + {a\|u}`** — **-l / -m / -n / -r** are **changeability** on both **`xa`** (capable) and **`xu`** (incapable). **`xe`** / **`xo`** are undefined on ability. Details: [special-vocabulary.md](special-vocabulary.md).
 
 ### Role compounds
 
@@ -190,10 +187,9 @@ On [joins](coordination.md), the same letters are specialized again: phrase-leve
 
 ### Discourse `/x/` inventory (dense)
 
-Clause joins, span fences, and named discourse glue reuse the four ending letters with family-specific jobs. Prefer the owner pages when learning:
+Clause joins and named discourse glue reuse the four ending letters with family-specific jobs. Prefer the owner pages when learning:
 
 - Phrase / VP / clause joins — [coordination.md](coordination.md)
-- Cite / aside / mention / opaque — [spans.md](spans.md)
 - Discourse revisers — [revisers.md](revisers.md)
 - Number-as-discourse — [numbers.md](numbers.md#number-as-discourse-marker-by-marker)
 

@@ -25,7 +25,7 @@ There is **no** separate interrogative pronoun. Unbound *who* / *what* / *where*
 Under question, join **-r** always means fill-ask — not “did something happen?” For emptiness yes/no, prefer bare emptiness forms (`zal` / `xal` → *Nothing?* / *Nothing happened?*) or an ordinary indefinite (`-l` / `-m`).
 
 ```
-`jol zumogon v<go>l.`
+`jol zumogon vawul.`
 
 gloss: `j-ask` · `z-speaker` · `v-go`
 
@@ -33,7 +33,7 @@ gloss: `j-ask` · `z-speaker` · `v-go`
 ```
 
 ```
-`jol zar v<go>l.`
+`jol zar vawul.`
 
 gloss: `j-ask` · `z-ar` · `v-go`
 
@@ -69,7 +69,7 @@ Every join **-r** under question is a **gap**. The answer is expected to **fill 
 | `zar` … `har` | *Who … when?* |
 | `var` … `zar` | *Do what … who?* |
 
-**Single gap + real *something* elsewhere:** use an ordinary indefinite (`-l` / `-m`), not a second join **-r** (`zar` + `d<food>l` → *Who ate (a) food?*; `zar` + `dar` → *Who ate what?*).
+**Single gap + real *something* elsewhere:** use an ordinary indefinite (`-l` / `-m`), not a second join **-r** (`zar` + `dabebal` → *Who ate an apple?*; `zar` + `dar` → *Who ate what?*).
 
 ### Polar stance (workhorses)
 <a id="answers"></a>
@@ -93,7 +93,7 @@ Closed **`/j/`** particles — **reaction words**, not clause force. Shape is **
 ```
 
 ```
-`zumogon v<go>l. jael.`
+`zumogon vawul. jael.`
 
 gloss: `z-speaker` · `v-go` · `j-yes`
 
@@ -127,7 +127,7 @@ A fill answer **need not** keep **-r** — bare content, focus **-l** / **-m** /
 **Shapes:**
 
 - **Bare turn** — `jael.` / `juel.`
-- **Stance + body** — `jael zumogon v<go>l.` (*yes — I go*)
+- **Stance + body** — `jael zumogon vawul.` (*yes — I go*)
 - **Confirm tag** — second bare turn after `.` ([left-edge rules](core.md#left-edge-order-and-sentence-boundaries))
 - **Monologue self-turn** — `juel` before correction; `jaol` before next step; `jael` after locking a point
 
@@ -140,10 +140,10 @@ Same-force continuation after a polar+body beat uses **`/x/`**, not another pola
 
 | Ask | Answer | Means |
 |-----|--------|--------|
-| `jol … vul v<run>l` (*Didn’t run?*) | **`jael`** | *true, they didn’t* |
+| `jol … vul vurunul` (*Didn’t run?*) | **`jael`** | *true, they didn’t* |
 | same | **`juel`** | *false — they did run* |
 
-When clarity matters, restate: `jael vul v<run>l` vs `juel v<run>l`. Offer particles (**`jaol`** / **`juol`**, …) answer *take this?*, not truth-match.
+When clarity matters, restate: `jael vul vurunul` vs `juel vurunul`. Offer particles (**`jaol`** / **`juol`**, …) answer *take this?*, not truth-match.
 
 ### Fill-ask arity
 

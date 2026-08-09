@@ -20,15 +20,15 @@ Without **-sh**, the word picks **one** referent. With **-sh**, the default cont
 **Mnemonic:** **-sh** = **s**et with the anchor — *Sam-sh* ≈ *Sam and associates*.
 
 ```
-`z<Sam>nsh v<go>l.`
+`zazamansh vawul.`
 
-gloss: `z-Sam-sh` · `v-go`
+gloss: `z-Sam-sh` · `v-walk`
 
 *Sam and associates go.*
 ```
 
 ```
-`zursh v<sit>l.`
+`zazarsh vahural.`
 
 gloss: `z-r-sh` · `v-sit`
 
@@ -133,7 +133,7 @@ On `/ɡ/`, **-sh** marks **collective ascription**: the property holds of the **
 | Shape | Reading |
 |-------|---------|
 | host set + singular `/ɡ/` | distributive or underspecified (*the boxes are heavy* — each, or don’t care) |
-| host set + `/ɡ/`…**-sh** | **collective** (*heavy as a pile*; *large as a team*) |
+| host set + `/ɡ/`…**-sh** | **collective** (*heavy as a pile*; *vast as a team*) |
 
 **Mnemonic:** adjective **-sh** = the set **shares** the property as one pile — not “more red.”
 
@@ -141,17 +141,17 @@ Most useful with [phrase join](coordination.md): SHARED singular scale under **`
 
 | Example | Gloss |
 |---------|-------|
-| `z<box>l z<crate>l zal g<heavy>l` | *the box and the crate are (each) heavy* |
-| `z<box>l z<crate>l zal g<heavy>lsh` | *heavy together* — collective SHARED |
-| `z<team>r g<large>lsh` | *the team is large* (group-level size) |
-| `z<box>lsh g<heavy>l` | *the boxes are heavy* (members / plain) |
-| `z<box>lsh g<heavy>lsh` | *the boxes are heavy collectively* |
+| `zulebol zodolol zal gudurum` | *the file-box and the toolbox are (each) heavy* |
+| `zulebol zodolol zal gudurumsh` | *heavy together* — collective SHARED |
+| `zahanalr gumolam` | *the team is vast* (group-level size) |
+| `zulebolsh gudurum` | *the file-boxes are heavy* (members / plain) |
+| `zulebolsh gudurumsh` | *the file-boxes are heavy collectively* |
 
 **-rsh** on `/ɡ/` resumes a prior **collective** ascription (*still collectively so*), not “those red ones” (entity plurality stays on the noun).
 
 **Scale / continuum `/ɡ/`** in [comparatives](comparatives.md) and [ranges](numbers.md#ranges) stays **singular** — one line. Do not pluralize SHARED scale or continuum adjectives.
 
-**Not adjective -sh:** *red books* → plural on the **noun**, singular `/ɡ/` *red*. Character trait → singular `/ɡ/` + **`hual`**. *Both are big* → distributive SHARED **`… zal g<big>l`**.
+**Not adjective -sh:** *red books* → plural on the **noun**, singular `/ɡ/` *red*. Character trait → singular `/ɡ/` + **`hual`**. *Both are challenging* → distributive SHARED **`… zal gonudam`**.
 
 ### Vocatives (`/j/`)
 

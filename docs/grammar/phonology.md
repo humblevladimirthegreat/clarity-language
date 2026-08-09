@@ -58,7 +58,7 @@ A content word has these parts, written as **one unbroken token**:
 4. The [reference suffix](reference-suffix.md) (**-l**, **-m**, **-n**, or **-r**)
 5. Optional plural **-sh** after the reference suffix — [plurality.md](plurality.md)
 
-**Writing:** no hyphen after the PoS letter (`zumogon`). Foreign roots use `PoS<…>ENDING` (e.g. `d<english>l`). Opaque span brackets take **no** ending on the closer (`d<sushi>`). Full orthography: [core.md § Orthography](core.md#orthography).
+**Writing:** no hyphen after the PoS letter (`zumogon`). Full orthography: [core.md § Orthography](core.md#orthography).
 
 **Roots** have form **V(CV)+**. Compound roots are separated by mid-word **`x`**.
 
@@ -73,7 +73,7 @@ A content word has these parts, written as **one unbroken token**:
 
 ### Mid-word `x` families (pointer)
 
-Ordinary compounds include lexicon sense-compounds, [values](values.md), [ability](special-vocabulary.md#ability), [role compounds](special-vocabulary.md#role-compounds) (**`a`/`u`/`o` x ROOT**), [numeric derivation](special-vocabulary.md#numeric-derivation) (**`ROOT x NUM`**), and compact [phrasal proper names](reference-suffix.md#phrasal-proper-names). Closed [span fences](spans.md) also use mid-word **`x`**: open `{PoS}{TYPE}x{EDGE}{ENDING}`; close **`xuxul`** / **`xuxur`** / **`xuxun`** / **`xuxum`**. Full table: [x-compounds.md](x-compounds.md).
+Ordinary compounds include lexicon sense-compounds, [values](values.md), [ability](special-vocabulary.md#ability), [role compounds](special-vocabulary.md#role-compounds) (**`a`/`u`/`o` x ROOT**), [numeric derivation](special-vocabulary.md#numeric-derivation) (**`ROOT x NUM`**), and compact [phrasal proper names](reference-suffix.md#phrasal-proper-names). Mid-word **`x`** also appears in closed [span fences](spans.md). Full table: [x-compounds.md](x-compounds.md).
 
 ### Number-word exception
 
@@ -82,7 +82,7 @@ After a PoS prefix, a following **r** (start of the number marker) may form a cl
 ### Left-bound adjective (`gl-`)
 <a id="left-bound"></a>
 
-After adjective prefix `/ɡ/`, an **l** may sit before the root, forming onset **`gl-`**. That marks [left-bound attachment](core.md#left-bound-adjectives): the adjective precedes its host (`gl<big>l zogodol`). Default right-bound adjectives are `/ɡ/` + vowel after the host (`zogodol g<big>l`). This mid-word **l** is **not** the word-final reference suffix **-l**, and it is **not** available on other PoS prefixes (no `zl-`, `wl-`, `hl-`, …). Complex `/b/` and adjunct `/w/` stay after the `/ɡ/` word in either order.
+After adjective prefix `/ɡ/`, an **l** may sit before the root, forming onset **`gl-`**. That marks [left-bound attachment](core.md#left-bound-adjectives): the adjective precedes its host (`glgonudam zogodol`). Default right-bound adjectives are `/ɡ/` + vowel after the host (`zogodol gonudam`). This mid-word **l** is **not** the word-final reference suffix **-l**, and it is **not** available on other PoS prefixes (no `zl-`, `wl-`, `hl-`, …). Complex `/b/` and adjunct `/w/` stay after the `/ɡ/` word in either order.
 
 ### Joins, revisers, and span vowels
 

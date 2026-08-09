@@ -23,14 +23,14 @@ Under **`/h/`** and **`/w/`**, the join series + ending is **not** a same-slot s
 
 | Pattern | Reading |
 |---------|---------|
-| `h<quickly>l h<quietly>l` | *quickly and quietly* — co-applying adverbs; **no** join |
+| `hadal hazebo` | *quickly and quietly* — co-applying adverbs; **no** join |
 | `harunal hal` | *only when raining* — closed restrictor |
 | `hal` (bare) | *never* |
 
-**Trap:** `h<quickly>l h<quietly>l ham` reads as restrictor use (*in the cases “quickly” and “quietly”*), not co-manner *and*.
+**Trap:** `hadal hazebo ham` reads as restrictor use (*in the cases “quickly” and “quietly”*), not co-manner *and*.
 
 ```
-`zumogon v<go>l harunal hal.`
+`zumogon vawul harunal hal.`
 
 gloss: `z-speaker` · `v-go` · `h-rain` · `hal`
 
@@ -38,7 +38,7 @@ gloss: `z-speaker` · `v-go` · `h-rain` · `hal`
 ```
 
 ```
-`zumogon v<go>l hal.`
+`zumogon vawul hal.`
 
 gloss: `z-speaker` · `v-go` · `hal`
 
@@ -129,7 +129,7 @@ Statement readings below; under **question** force → [questions.md](questions.
 
 ### More examples
 
-- `h<weekday>l h<weekend>l hol` → *either on a weekday or on a weekend (not both)*; `… hom` → *… or never*
+- `harunal hudunul hol` → *either when raining or at night (not both)*; `… hom` → *… or never*
 - `harunal hozonol haol` → *when raining and/or when snowing*
 - `harunal hul` → *not when raining*; `harunal hudunul hum` → *not when raining or at night, for one*
 - `harunal hual` → *always except when raining*
@@ -137,10 +137,10 @@ Statement readings below; under **question** force → [questions.md](questions.
 - `hamubam hogenum hel` → *preferably in emergency ≻ for convenience*
 - `harunal hozonol hael` → *as often when raining as when snowing*
 - `hael` → *equally often* / *tied frequency frame* (bare)
-- `h<fix>l h<workaround>l hoel` → *if (when) fix, else if workaround…*
+- `bemamal bamugal hoel` → *if (when) fix, else if workaround…*
 - `harunal hozonol har` → *sometime among rain or snow*
-- Complex conjunct: `h<at>l bohuzem hal` → *only at home*
-- `/w/` core: `w<alleged>l wal` → *only when alleged*; `war` → *sometime* (under some framing); juxtaposition `guzem w<very>l w<recent>l` → *very* and *recent* (not a restrictor fence)
+- Complex conjunct: `hohuzel hal` → *only at home*
+- `/w/` core: `hevem wal` → *only when alleged*; `war` → *sometime* (under some framing); juxtaposition `guzem wube wenazel` → *very* and *recent* (not a restrictor fence)
 
 ### Conjuncts and next-clause *when*
 

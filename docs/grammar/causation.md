@@ -52,9 +52,9 @@ Closed **`…aol`** (*X is enough* / full inclusive story) is the **stronger** t
 
 | Agelan (schematic) | Reading |
 |---------------------|---------|
-| `… haon bazem` on a promote / promotion frame | *promotion is open to effort (among routes)* |
-| `zazem zaom` inside an outcome / goal frame whose host is promotion | *effort would work (for that outcome)* |
-| `zogulol z<front>l zaom` … rain frame | *clouds or a front would work (for rain)* |
+| `… haon beladel` on a promotion / advancement frame | *promotion is open to effort (among routes)* |
+| `zazel zaom` inside an outcome / goal frame whose host is promotion | *effort would work (for that outcome)* |
+| `zogulol zozono zaom` … rain frame | *clouds or snow would work (for rain)* |
 
 **Mnemonic:** open **`…aom` / `haon`** = *would work among routes* — the everyday *leads to* shape.
 
@@ -147,7 +147,7 @@ A common shape: *hard work should earn a promotion* — the “rule” is a **wi
 
 Strength of feeling is values force / evidentiality — not upgrading `aom` → `ol` / `gon`.
 
-**Schematic:** `… haon bazem` on promotion + `hodoloxol` (or soft invite force) ≈ *effort is among routes that ought to count for competence payoff* — not *effort is the sole causal law of promotion*.
+**Schematic:** `… haon beladel` on promotion + `hodoloxol` (or soft invite force) ≈ *effort is among routes that ought to count for competence payoff* — not *effort is the sole causal law of promotion*.
 
 ## Advanced
 <a id="advanced"></a>

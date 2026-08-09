@@ -86,7 +86,7 @@ gloss: `h-pleasure`
 **Met (`xa`):** claim that the host serves the need. Ending = [contact channel](#value-contact).
 
 ```
-`z<gift>l wogonoxan.`
+`zawerul wogonoxan.`
 
 gloss: `z-gift` · `w-relatedness-met-social`
 
@@ -116,9 +116,9 @@ On **`xa`** compounds, **-l / -m / -n / -r** mark **how you contact** the (claim
 | `…xar` | **spiritual** |
 
 ```
-`z<neighborhood>l g<of>l bivon wodoloxal.`
+`zugodal gohuzem bumogon wodoloxal.`
 
-gloss: `z-neighborhood` · `g-of` · `b-speaker` · `w-competence-met-physical`
+gloss: `z-neighborhood` · `g-home` · `b-speaker` · `w-competence-met-physical`
 
 *My neighborhood — serves competence; physical contact (felt place).*
 ```
@@ -211,7 +211,7 @@ gloss: `h-relatedness-ought-endorse`
 | `…xur` | **won't-now** |
 
 ```
-`z<meeting>l woboloxul.`
+`zazudol woboloxul.`
 
 gloss: `z-meeting` · `w-autonomy-unmet-temporary`
 
@@ -298,7 +298,7 @@ Competence (`odolo`) and relatedness (`ogono`) shown for readability; same endin
 - Ordinary **-l / -m** (literal / metaphorical) do not mean met / unmet on these compounds.
 - Value second halves are bare vowels **`a` / `e` / `o` / `u`** inside a compound — not prefix-less revisers (`al`, `ul`, …) and not restrictor joins (`hal`, …).
 - Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)).
-- **Incapability** compounds onto the **activity/property host** (`v<sing>xun`) or fallback **`egera`** — [ability](special-vocabulary.md#ability) — not onto need compounds (`hodoloxun` remains unmet competence).
+- **Incapability** compounds onto the **activity/property host** (`veguxun`) or fallback **`egera`** — [ability](special-vocabulary.md#ability) — not onto need compounds (`hodoloxun` remains unmet competence).
 
 ### Design notes
 

@@ -21,9 +21,9 @@ Two stem lengths:
 There are no English-style 3rd-person pronoun lexemes (*he* / *she* / *it* / *they*) and no impersonal *one*.
 
 ```
-`z<Sam>n v<go>l. zur v<sit>l.`
+`zazaman vawul. zazar vahural.`
 
-gloss: `z-Sam` · `v-go` · `z-r` · `v-sit`
+gloss: `z-Sam` · `v-walk` · `z-r` · `v-sit`
 
 *Sam goes. He sits.* (resume from the name’s root prefix)
 ```
@@ -50,17 +50,17 @@ Discourse-role forms (not letter/full-root **-r** from ordinary antecedents). Th
 **Prefer names.** When a proper name is available, use **-n** and/or its **-r** resume — including for self-address — rather than **`umogo`** / **`ehado`**. See [proper name](reference-suffix.md#proper-name--n).
 
 ```
-`zumogon v<go>l.`
+`zumogon vawul.`
 
-gloss: `z-speaker` · `v-go`
+gloss: `z-speaker` · `v-walk`
 
 *I go.*
 ```
 
 ```
-`zanan v<go>l.`
+`zanan vawul.`
 
-gloss: `z-interlocutors` · `v-go`
+gloss: `z-interlocutors` · `v-walk`
 
 *We (you and I) go.*
 ```
@@ -85,9 +85,9 @@ When names are unavailable:
 **`odo`:** placeholder for the material that **immediately follows** ([dependent clauses](core.md#dependent-clauses)). Put **`odo` last** in its host slot; the dependent follows with no intervening host words. Same speech act as the main sentence → dependent may omit `/j/`; a different speech act needs its own force word.
 
 ```
-`zumogon v<told>l d<Sam>n dodol z<Lea>n v<left>l.`
+`zumogon vezabul dazaman dodol zelejan vedabul.`
 
-gloss: `z-speaker` · `v-told` · `d-Sam` · `d-next-clause` · `z-Lea` · `v-left`
+gloss: `z-speaker` · `v-tell` · `d-Sam` · `d-next-clause` · `z-Lea` · `v-depart`
 
 *I told Sam that Lea left.*
 ```
@@ -159,11 +159,11 @@ Same referent, new role — English needs a longer paraphrase. Full PoS×PoS tab
 
 | Agelan | Reading |
 |---------|---------|
-| `zumogon v<go>l` | *I go* (implied **`jal`**) |
-| `zumogon v<write>l dehadon` | *I write you* (letter / message — same roots) |
-| `zehadonsh v<go>l` | *You-all (address set) go* |
-| `zumogonsh v<go>l` | *I and my associates go* (not necessarily you) |
-| `zenun v<arrived>l` | *Someone (a person) arrived* |
+| `zumogon vawul` | *I go* (implied **`jal`**) |
+| `zumogon vezebel dehadon` | *I write you* (letter / message — same roots) |
+| `zehadonsh vawul` | *You-all (address set) go* |
+| `zumogonsh vawul` | *I and my associates go* (not necessarily you) |
+| `zenun varural` | *Someone (a person) arrived* |
 | `… hurugul bodol …` | *… because [dependent]* |
 | `… horodol bodol …` | *… if [dependent]* |
 | `… heluvel bodol …` | *… iff [dependent]* |

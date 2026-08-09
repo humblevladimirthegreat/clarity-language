@@ -59,11 +59,11 @@ A REV B
 - Allowed **inside** a conjunct as local repair — not as a substitute for the join (`zam` / `vam` / …).
 
 ```
-`z<anima>lsh am zogodol.`
+`zogodolsh am zagadal.`
 
-gloss: `z-animal-sh` · `am` · `z-dog`
+gloss: `z-dog-sh` · `am` · `z-cat`
 
-*Animals, including a dog among others.*
+*Dogs, including a cat among others.*
 ```
 
 ```
@@ -75,7 +75,7 @@ gloss: `d-tea` · `ol` · `d-coffee`
 ```
 
 ```
-`z<team>l ul z<Sam>n.`
+`zahanal ul zazaman.`
 
 gloss: `z-team` · `ul` · `z-Sam`
 
@@ -98,9 +98,9 @@ Discourse revisers glue **this utterance** to **prior talk**. Prior talk = A; th
 Omit recoverable **`jal`** after the reviser when the body is a default statement.
 
 ```
-`al zumogon v<go>l.`
+`al zumogon vawul.`
 
-gloss: `al` · `z-speaker` · `v-go`
+gloss: `al` · `z-speaker` · `v-walk`
 
 *Additionally, I go.*
 ```
@@ -154,7 +154,7 @@ Every `REVᵢ` applies **in parallel to the same A**, each with its own right-ha
 For nested English *including (B except C)*, put the inner revision **inside** one side.
 
 ```
-`z<team>l am z<Sam>n ul z<Lea>n.`
+`zahanal am zazaman ul zelejan.`
 
 gloss: `z-team` · `am` · `z-Sam` · `ul` · `z-Lea`
 
@@ -162,9 +162,9 @@ gloss: `z-team` · `am` · `z-Sam` · `ul` · `z-Lea`
 ```
 
 ```
-`guzem el g<content>l.`
+`guzem el gerul.`
 
-gloss: `g-happy` · `el` · `g-content`
+gloss: `g-happy` · `el` · `g-calm`
 
 *Content* as the precise reading (rather than *happy*).
 ```
@@ -191,9 +191,9 @@ On a **non-initial** conjunct under a [clause `/x/` fence](coordination.md#claus
 Before an **`/x/`** linker (*therefore*, *however*, …), **`REV`** scopes the linker+body stretch: `al xamalal …` → *Additionally, therefore …*. Prefer plain `al …` or plain `xamalal …` when one cue is enough.
 
 ```
-`j<Sam>n al zumogon v<go>l.`
+`jazaman al zumogon vawul.`
 
-gloss: `j-Sam` · `al` · `z-speaker` · `v-go`
+gloss: `j-Sam` · `al` · `z-speaker` · `v-walk`
 
 *Sam — additionally, I go.* (vocative, then discourse reviser)
 ```
@@ -203,13 +203,13 @@ gloss: `j-Sam` · `al` · `z-speaker` · `v-go`
 
 ### More examples
 
-- `z<too>lsh al zamemal` — *tools, including only a hammer* (closed)
-- `z<primary-colo>rsh an zedejel` — *the primary colors, including red* (named frame)
-- `z<RGB>n un zulebul` — *RGB except blue* (named conventional set)
+- `zodololsh al zamemal` — *tools, including only a hammer* (closed)
+- `zurebensh an zedejel` — *the primary colors, including red* (named frame)
+- `zureben un zulebul` — *RGB except blue* (named conventional set)
 - `dadedal om dogevel` — *coffee as a replacement for tea* (open)
 - `dadedal on dogevel` — *the stock tea→coffee swap* (named)
-- `v<run>l om v<walk>l` — *ran, with walk as a replacement* (VP slot)
-- `zal g<span>l z+3 ul z+5` — *[3, 5)* — [number range](numbers.md#ranges) exclusive high (SHARED continuum), not inventory *3 except 5*
+- `vurunul om vawul` — *ran, with walk as a replacement* (VP slot)
+- `zal gurelul z+3 ul z+5` — *[3, 5)* — [number range](numbers.md#ranges) exclusive high (SHARED continuum), not inventory *3 except 5*
 
 ### Constraints
 

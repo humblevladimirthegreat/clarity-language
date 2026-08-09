@@ -21,11 +21,11 @@ Content `/v/` is for events and actions — not bare copular glue.
 | `z<HOST> gogunol b<OTHER>` | *HOST is (identical to) OTHER* — [identity](#identity) |
 
 ```
-`z<Sam>n g<big>l.`
+`zazaman gonudam.`
 
-gloss: `z-Sam` · `g-big`
+gloss: `z-azama` · `g-challenging`
 
-*Sam is big.*
+*Sam is challenging.*
 ```
 
 **Mnemonic:** property sits on `/ɡ/` like any adjective; there is no light *be* verb between two nouns for classification.
@@ -38,18 +38,18 @@ gloss: `z-Sam` · `g-big`
 
 | Pattern | Example | Reading |
 |---------|---------|---------|
-| Kind / role as `/ɡ/` | `z<Sam>n gedagel` | *Sam is a teacher* |
-| Named category / titled role | `z<Sam>n gedagen` | *Sam is Teacher* (proper designation) — [**-n** on `/ɡ/`](reference-suffix.md) |
+| Kind / role as `/ɡ/` | `zazaman gedagel` | *Sam is a teacher* |
+| Named category / titled role | `zazaman gedagen` | *Sam is Teacher* (proper designation) — [**-n** on `/ɡ/`](reference-suffix.md) |
 
 ```
-`z<Sam>n gedagel.`
+`zazaman gedagel.`
 
 gloss: `z-Sam` · `g-teacher`
 
 *Sam is a teacher.*
 ```
 
-**Role noun vs role adjective:** when you **refer** to a person-as-role, use a noun slot (`zedagel`). When you **ascribe** the role to a named or resumed host, use predicative `/ɡ/` (`z<Sam>n gedagel`).
+**Role noun vs role adjective:** when you **refer** to a person-as-role, use a noun slot (`zedagel`). When you **ascribe** the role to a named or resumed host, use predicative `/ɡ/` (`zazaman gedagel`).
 
 Kind-as-property already appears under invert **ua** / **uo** SHARED (`zual gagadal` = *every cat*). Predicative classification is the same kind of `/ɡ/` reading on a single host — not a join.
 
@@ -76,14 +76,14 @@ goguno… b<OTHER>
 | **`b<OTHER>`** | the other label or description |
 
 ```
-`z<Clark>n gogunol b<Superman>n.`
+`zogalan gogunol buzuran.`
 
-gloss: `z-Clark` · `g-SAME` · `b-Superman`
+gloss: `z-ogala` · `g-SAME` · `b-uzura`
 
 *Clark is Superman.*
 ```
 
-`oguno`+`/b/` stay **contiguous**, like other complex adjectives (`g<of>l b<Sam>n`).
+`oguno`+`/b/` stay **contiguous**, like other complex adjectives (`gogobul bazaman`).
 
 ## Intermediate
 <a id="intermediate"></a>
@@ -92,9 +92,9 @@ gloss: `z-Clark` · `g-SAME` · `b-Superman`
 
 | Pattern | Example | Reading |
 |---------|---------|---------|
-| Soft / hedged class | `z<Sam>n gedagel` + open packaging or `/w/` hedge | *Sam is a teacher (among readings)* / *allegedly…* |
-| Characterizing / habitual | `z<Sam>n gedagel hual` | *Sam is the teaching type* — [**hual**](restrictors.md) |
-| Negation | `z<Sam>n gul gedagel` | *Sam is not a teacher* — [negation **u**](coordination.md#negation-u) |
+| Soft / hedged class | `zazaman gedagel` + open packaging or `/w/` hedge | *Sam is a teacher (among readings)* / *allegedly…* |
+| Characterizing / habitual | `zazaman gedagel hual` | *Sam is the teaching type* — [**hual**](restrictors.md) |
+| Negation | `zazaman gul gedagel` | *Sam is not a teacher* — [negation **u**](coordination.md#negation-u) |
 
 Values still stack on the classifying `/ɡ/` (`gedagel w-…xa…`) when the point is gratitude, judgment, or other need framing of that role — [values.md](values.md).
 
@@ -111,11 +111,11 @@ Values still stack on the classifying `/ɡ/` (`gedagel w-…xa…`) when the poi
 
 | Agelan | Reading |
 |---------|---------|
-| `z<Clark>n gogunol b<Superman>n` | *Clark is (the same as) Superman* |
-| `z<Clark>n gogunom b<Superman>n` | soft: *Clark is basically Superman* |
-| `z<Clark>n gul gogunol b<Superman>n` | *Clark is not (identical to) Superman* |
-| `z<Clark>n gogunol w<alleged>l b<Superman>n` | *Clark is allegedly Superman* |
-| `zeborel gogunol b<Superman>n` | NP-internal: *the person who is Superman* |
+| `zogalan gogunol buzuran` | *Clark is (the same as) Superman* |
+| `zogalan gogunom buzuran` | soft: *Clark is basically Superman* |
+| `zogalan gul gogunol buzuran` | *Clark is not (identical to) Superman* |
+| `zogalan gogunol wedahem buzuran` | *Clark is allegedly Superman* |
+| `zeborel gogunol buzuran` | NP-internal: *the person who is Superman* |
 
 Ordinary content still available (`zogunol` *a coin*; `gogunol` as *token*-like when not in the identity frame). The special reading wins under closed predicative **`goguno…` + `/b/`**.
 
@@ -127,7 +127,7 @@ Comparative claims as clause content use the same zero-copula shape with a ranke
 ### Boundaries
 
 - Dual bare subjects (`z<A> z<B>`) do not mean *A is B*.
-- Adjacent same-PoS **-n** words are not a multipart proper name (`z<Mary>n z<Smith>n`); use an **`x`-compound** (`z<Mary Smith>n`) — [phrasal proper names](reference-suffix.md#phrasal-proper-names).
+- Adjacent same-PoS **-n** words are not a multipart proper name (`zazaman zelejan`); use an **`x`-compound** (`zazama xelejan`) — [phrasal proper names](reference-suffix.md#phrasal-proper-names).
 - Plural **-sh** on `SAME` (`oguno`) is unused for “they are the same group”; mark group reference on the host nouns, or ascribe identity pairwise.
 - Multi-alias lists (*A, B, and C are one*): prefer pairwise `SAME`, or separate sentences — do not invent a second SHARED reading under `ae` for co-reference.
 

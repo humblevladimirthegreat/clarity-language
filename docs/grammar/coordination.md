@@ -73,9 +73,9 @@ gloss: `z-dog` · `z-cat` · `zam`
 ```
 
 ```
-`dabebal v<eat>l d<water>l v<drink>l vam.`
+`dabebal vabebal dudural vudural vam.`
 
-gloss: `d-apple` · `v-eat` · `d-water` · `v-drink` · `vam`
+gloss: `d-apple` · `v-tempt` · `d-water` · `v-drink` · `vam`
 
 *ate an apple and drank water.*
 ```
@@ -175,15 +175,15 @@ Plain **u** means the listed conjuncts **fail** — not invert, not *something e
 | Arity | Shape | Reading |
 |-------|-------|---------|
 | list | `A B zul` | *none of A or B* |
-| focus | `z<Sam>n zul` | *not Sam* |
+| focus | `zazaman zul` | *not Sam* |
 | bare | `zul` / `zum` / `zun` | *no* |
 
 ```
-`g<big>l gul.`
+`gonudam gul.`
 
-gloss: `g-big` · `gul`
+gloss: `g-challenging` · `gul`
 
-*not big.*
+*not challenging.*
 ```
 
 ```
@@ -356,7 +356,7 @@ Under [question](questions.md#interrogative-force) force: yes/no, offer, emptine
 | **ue** | not claimed | later ≻ earlier | ascending build-up lists |
 
 ```
-`zadedal zogevel z<water>l zel.`
+`zadedal zogevel zudural zel.`
 
 gloss: `z-tea` · `z-coffee` · `z-water` · `zel`
 
@@ -364,11 +364,11 @@ gloss: `z-tea` · `z-coffee` · `z-water` · `zel`
 ```
 
 ```
-`z<Sam>n z<Lea>n zael g<big>l.`
+`zazaman zelejan zael gonudam.`
 
-gloss: `z-Sam` · `z-Lea` · `zael` · `g-big`
+gloss: `z-azama` · `z-eleja` · `zael` · `g-challenging`
 
-*Sam is as big as Lea.*
+*Sam is as challenging as Lea.*
 ```
 
 Fence chains keep ranking from **spoken conjunct order** before the right-close join.
@@ -477,17 +477,17 @@ Modifiers **immediately after** a phrase-level join scope over the **whole coord
 Local modifiers stay **inside** each conjunct (after that conjunct's head, or `gl-` before the head). Do not put further matching-role conjunct heads after `P-JOIN` / `SHARED`.
 
 ```
-`zogodol zagadal zal g<big>l.`
+`zogodol zagadal zal gonudam.`
 
-gloss: `z-dog` · `z-cat` · `zal` · `g-big`
+gloss: `z-dog` · `z-cat` · `zal` · `g-challenging`
 
-*(big dog) and (big cat).*
+*(challenging dog) and (challenging cat).*
 ```
 
 ```
-`zogodol zagadal zam g<of>l b<Sam>n.`
+`zogodol zagadal zam gogobul bazaman.`
 
-gloss: `z-dog` · `z-cat` · `zam` · `g-of` · `b-Sam`
+gloss: `z-dog` · `z-cat` · `zam` · `g-ownership` · `b-azama`
 
 *Sam's (dog and cat).*
 ```
@@ -500,10 +500,10 @@ When other same-slot material sits nearby, wrap the sub-stretch and its join **i
 
 | Shape | Reading |
 |-------|---------|
-| `z<Sam>n ^ z<water>l zal ^ zam` | *Sam and (just water)* |
-| `z<Sam>n ^ zal ^ zam` | *Sam and nothing* |
-| `^ z<water>l zal ^` | *just water* alone in the slot |
-| `^ h<maybe>l z<A> z<B> zam ^` | *maybe (A and B)* |
+| `zazaman ^ zudural zal ^ zam` | *Sam and (just water)* |
+| `zazaman ^ zal ^ zam` | *Sam and nothing* |
+| `^ zudural zal ^` | *just water* alone in the slot |
+| `^ hadazol z<A> z<B> zam ^` | *maybe (A and B)* |
 
 One island per clause; no nesting of islands. Same-slot material outside an island with no outer join tying it in is illegal.
 
@@ -519,15 +519,15 @@ When the join frame should be clear **before** the conjuncts (*everything but…
 | 2 — seal | `PHRASE… P-JOIN` | exclusions or members under that frame |
 
 ```
-`zual` · `z<onion>l z<pickle>l zual`
+`zual` · `zonunol zugugel zual`
 
-*everything — (but) onion and pickle.*
+*everything — (but) onion and cucumber.*
 ```
 
 ```
-`zal` · `z<lettuce>l z<tomato>l zal`
+`zal` · `zegerel zodamol zal`
 
-*the lot — lettuce and tomato.*
+*the lot — greens and tomato.*
 ```
 
 Prefer a single right-close when early frame is unnecessary. Frame echo is **style**, not a second grammar.
@@ -583,7 +583,7 @@ VP `/v/`…**-n** spellings are [join-act verbs](special-vocabulary.md#join-act-
 | **oe** | `voel` / `xoel` | `voem` / `xoem` | `xoen` soft | — |
 | **ue** | `vuel` / `xuel` | `vuem` / `xuem` | `xuen` soft | — |
 
-**VP-level** — each conjunct is a verb plus its own object material. When every conjunct is a bare verb, a `/d/` **immediately after** the join (SHARED) scopes over all verbs: `v<wash>l v<eat>l vam dabebal` → *washed and ate an apple*.
+**VP-level** — each conjunct is a verb plus its own object material. When every conjunct is a bare verb, a `/d/` **immediately after** the join (SHARED) scopes over all verbs: `vohewo vabebal vam dabebal` → *washed and ate an apple*.
 
 **`/h/` scope relative to VP fence:**
 
@@ -658,7 +658,7 @@ Phonotactics for reserved join roots: [phonology.md](phonology.md#phonotactics).
 - **No** prefix-less joins. Prefixed joins always have PoS prefix + ending. Prefix-less **al** / **am** / … are revisers only. Whole-word **a** / **e** / **o** / **u** (no ending) are illegal.
 - Floating `/h/` inside an NP/AP/`/b/` join is **transparent** — it does not end the list. VP-chain `/h/` scope differs — see [VP-level](#vp-level-coordination).
 - Clause-level: no gapping across conjuncts; subordination (*because* / *if*) stays `/h/` + `/b/` [next-clause pronoun](pronouns.md#special-pronouns).
-- Sibling manner stacking on `/h/` `/w/` uses **juxtaposition**, not a fence (`h<quickly>l h<quietly>l`).
+- Sibling manner stacking on `/h/` `/w/` uses **juxtaposition**, not a fence (`hadal hemudel`).
 
 ### Revisers
 <a id="in-clause-revision-bare-a--e--o--u"></a>

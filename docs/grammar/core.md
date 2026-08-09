@@ -33,7 +33,7 @@ Final letters (**-l** / **-m** / **-n** / **-r**) say how the root enters the ta
 
 When you are **not** filling a clause slot — lexicon head, list, title line, or a freestanding non-clausal turn — you may write **root + ending** with **no** role letter:
 
-`godol.` · `uzem.` · `umogon.` · `Samn.`
+`godol.` · `uzem.` · `umogon.` · `azaman.`
 
 | Ending | Job |
 |--------|-----|
@@ -46,7 +46,7 @@ When you are **not** filling a clause slot — lexicon head, list, title line, o
 
 **Trap:** the closed prefix-less set **`al` / `am` / `an` / `el` / `em` / `en` / `ol` / `om` / `on` / `ul` / `um` / `un`** are always [revisers](revisers.md), never citations. Open content roots are longer than one vowel ([phonology](phonology.md#phonotactics)), so ordinary citations cannot collide with that set.
 
-Foreign surfaces use the same pattern without inventing a role (`<Sam>n`). Packaging wording **inside** a clause uses a [span](spans.md) with a real PoS — not a prefix-less citation. Free [number](numbers.md) words keep the number subsystem (including a PoS) even as a bare turn.
+Free [number](numbers.md) words keep the number subsystem (including a PoS) even as a bare turn.
 
 **Mnemonic:** no slot → no role letter; endings still answer *how does this root enter the talk?*
 

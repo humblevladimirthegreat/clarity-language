@@ -3,7 +3,7 @@
 
 How Agelan does scalar comparison: *more … than*, *the …-est*, *as … as*, measured differentials (*two inches taller*), and **judgment benchmarks** (*worse than Average|Typical|Mine|…*). Fence join vowels and SHARED placement stay in [coordination.md](coordination.md); this page says when those forms mean comparison rather than ordinary ranking or bundle description.
 
-Absolute (non-comparative) scalars stay unfenced: `z<Sam>n g<big>l` = *Sam is big* ([predication](predication.md#zero-copula)). Kind / role and identity: [predication.md](predication.md) — not this page’s equative **`ae`**.
+Absolute (non-comparative) scalars stay unfenced: `zazaman gonudam` = *Sam is challenging* ([predication](predication.md#zero-copula)). Kind / role and identity: [predication.md](predication.md) — not this page’s equative **`ae`**.
 
 **Prerequisites:** [coordination.md](coordination.md) Beginner (rank joins **`e` / `ae` / `oe` / `ue`**, SHARED after the join); [predication.md](predication.md) Beginner (zero-copula `/ɡ/`).
 
@@ -40,27 +40,27 @@ Scale adjectives are ordinary `/ɡ/` (lexicon-marked as **gradable / scalar**). 
 Ordinary scalar *than* uses **`e`** (exclusivity unmarked — both may be high on the scale).
 
 ```
-`z<Sam>n z<Lea>n zel g<big>l.`
+`zazaman zelejan zel gonudam.`
 
-gloss: `z-Sam` · `z-Lea` · `zel` · `g-big`
+gloss: `z-azama` · `z-eleja` · `zel` · `g-challenging`
 
-*Sam is bigger than Lea.*
+*Sam is more challenging than Lea.*
 ```
 
 ```
-`z<Sam>n zel g<big>l.`
+`zazaman zel gonudam.`
 
-gloss: `z-Sam` · `zel` · `g-big`
+gloss: `z-azama` · `zel` · `g-challenging`
 
-*Sam is the biggest (of all).*
+*Sam is the most challenging (of all).*
 ```
 
 ```
-`z<Sam>n z<Lea>n zel w<much>l g<big>l.`
+`zazaman zelejan zel wogenal gonudam.`
 
-gloss: `z-Sam` · `z-Lea` · `zel` · `w-much` · `g-big`
+gloss: `z-azama` · `z-eleja` · `zel` · `w-flood` · `g-challenging`
 
-*Sam is much bigger than Lea.*
+*Sam is much more challenging than Lea.*
 ```
 
 Assert the ranking with the same [zero-copula](predication.md#zero-copula) pattern as plain adjectives. Same under `/d/` / `/b/` when the ranked group fills that slot.
@@ -79,19 +79,19 @@ Assert the ranking with the same [zero-copula](predication.md#zero-copula) patte
 Open **-m** (`zaem`) = soft / approximate equality (*about as … as*). Closed **-l** = stand behind sameness on the scale.
 
 ```
-`z<Sam>n z<Lea>n zael g<big>l.`
+`zazaman zelejan zael gonudam.`
 
-gloss: `z-Sam` · `z-Lea` · `zael` · `g-big`
+gloss: `z-azama` · `z-eleja` · `zael` · `g-challenging`
 
-*Sam is as big as Lea.*
+*Sam is as challenging as Lea.*
 ```
 
 ```
-`z<Sam>n z<Lea>n zaem g<tall>l.`
+`zazaman zelejan zaem gurubul.`
 
-gloss: `z-Sam` · `z-Lea` · `zaem` · `g-tall`
+gloss: `z-azama` · `z-eleja` · `zaem` · `g-bright`
 
-*Sam is about as tall as Lea.*
+*Sam is about as bright as Lea.*
 ```
 
 **Trap:** `zel` asserts inequality on the scale; `zael` asserts equality. Set **`a`** + SHARED scale is *both are ADJ* — not necessarily equal ([below](#distributive-both)).
@@ -114,15 +114,15 @@ Use **`oe`** for exclusive *ladders* (triage / pick-one along the scale). **`ue`
 
 | Example | Reading |
 |---------|---------|
-| `z<Sam>n z<Lea>n z<Pat>n zem g<tall>l` | *Sam ≻ Lea ≻ Pat on height* (open) |
-| `z<Sam>n z<Lea>n zoel g<big>l` | *Sam is bigger than Lea* (exclusive ranked ladder) |
-| `z<Sam>n z<Lea>n zuel g<big>l` | *Sam is less big than Lea* |
-| `zel g<big>l` | *unspecified who’s biggest* |
-| `zoel g<big>l` | *there is no biggest* |
-| `zoem g<big>l` | *no biggest comes to mind* |
-| `z<Sam>n zuel g<big>l` | *Sam is the least big (of all)* |
-| `zer g<big>l` | *whatever ranks highest on big* — positive twin of empty `zoel g<big>l` |
-| `z<Sam>n z<Lea>n zer g<big>l` | *whichever of Sam or Lea ranks higher on big* |
+| `zazaman zelejan zepatan zem gonudam` | *Sam ≻ Lea ≻ Pat on challenge* (open) |
+| `zazaman zelejan zoel gonudam` | *Sam is more challenging than Lea* (exclusive ranked ladder) |
+| `zazaman zelejan zuel gonudam` | *Sam is less challenging than Lea* |
+| `zel gonudam` | *unspecified who’s most challenging* |
+| `zoel gonudam` | *there is no most challenging* |
+| `zoem gonudam` | *no most challenging comes to mind* |
+| `zazaman zuel gonudam` | *Sam is the least challenging (of all)* |
+| `zer gonudam` | *whatever ranks highest on challenging* — positive twin of empty `zoel gonudam` |
+| `zazaman zelejan zer gonudam` | *whichever of Sam or Lea ranks higher on challenging* |
 
 Under `/ɡ/`, SHARED `/w/` on a ranked AP fence remains shared *degree* over ranked properties — not a noun-scale comparative (use an NP-slot ranked fence with SHARED `/ɡ/`).
 
@@ -133,13 +133,13 @@ When discourse needs the comparee alone as subject of another verb, keep that su
 ### Distributive *both are ADJ*
 <a id="distributive-both"></a>
 
-SHARED singular scale under **`a`**: `z<Sam>n z<Lea>n zal g<big>l` = *Sam and Lea are big* (not necessarily equal). **Collective** (*ADJ as a unit*): SHARED `/ɡ/`…**-sh** under **`a`** — [plurality](plurality.md#collective-ascription).
+SHARED singular scale under **`a`**: `zazaman zelejan zal gonudam` = *Sam and Lea are challenging* (not necessarily equal). **Collective** (*ADJ as a unit*): SHARED `/ɡ/`…**-sh** under **`a`** — [plurality](plurality.md#collective-ascription).
 
 | Example | Reading |
 |---------|---------|
-| `z<Sam>n z<Lea>n zal g<big>l` | *Sam and Lea are big* (distributive — not equative) |
-| `z<Sam>n z<Lea>n z<Pat>n zael g<big>l` | *Sam, Lea, and Pat are equally big* |
-| `zogodol zagadal zael g<big>l` | *the dog is as big as the cat* |
+| `zazaman zelejan zal gonudam` | *Sam and Lea are challenging* (distributive — not equative) |
+| `zazaman zelejan zepatan zael gonudam` | *Sam, Lea, and Pat are equally challenging* |
+| `zogodol zagadal zael gonudam` | *the dog is as challenging as the cat* |
 
 Focus / bare **`ae`** + SHARED scale stay ordinary focus / bare **`ae`** readings — equative needs **two or more** comparees. **`ae`** without SHARED scale = equal rank / tie among conjuncts — not a scalar equative. Scale adjectives in comparative / equative SHARED stay singular (no **-sh**).
 
@@ -147,12 +147,12 @@ Focus / bare **`ae`** + SHARED scale stay ordinary focus / bare **`ae`** reading
 <a id="measured-differentials"></a>
 <a id="measure-gap"></a>
 
-*Two inches taller* is still a **comparative** (ranked + SHARED scale). The gap size is a **measure NP** as the scale adjective’s single `/b/` argument: **unit** as the `/b/` noun, **amount** as `/ɡ/` on that unit — [numbers.md § Measure phrases](numbers.md#measure-phrases).
+*Two measures more challenging* is still a **comparative** (ranked + SHARED scale). The gap size is a **measure NP** as the scale adjective’s single `/b/` argument: **unit** as the `/b/` noun, **amount** as `/ɡ/` on that unit — [numbers.md § Measure phrases](numbers.md#measure-phrases).
 
 | Example | Reading |
 |---------|---------|
-| `z<Sam>n z<Lea>n zel g<tall>l b<inch>l g+2` | *Sam is two inches taller than Lea* |
-| `z<Sam>n z<Lea>n zel w<much>l g<tall>l` | *Sam is much taller than Lea* (vague degree — `/w/`, no measure NP) |
+| `zazaman zelejan zel gonudam burelul g+2` | *Sam is two measures more challenging than Lea* |
+| `zazaman zelejan zel wogenal gonudam` | *Sam is much more challenging than Lea* (vague degree — `/w/`, no measure NP) |
 
 Vague degree stays `/w/`; counted gaps use the measure-NP pattern (one `/b/` on the scale, not amount + unit as two `/b/`s).
 
@@ -210,20 +210,20 @@ Six fixed standards. Ending stays **-n** (named reference-class standard), not o
 | **`zumogon`** | less … than **where I sit** on the scale (ordinary [speaker](pronouns.md#special-pronouns) — current skill / performance) |
 | **`zumogoxrawon`** | less … than **my personal standard** (the bar I apply) |
 
-Soft personal standard: **`zumogoxrawom`**. Ordinary named people stay ordinary **-n** names: `zuel g<SCALE>l z<Sam>n z<Lea>n`.
+Soft personal standard: **`zumogoxrawom`**. Ordinary named people stay ordinary **-n** names: `zuel g<SCALE>l zazaman zelejan`.
 
 **Everyone** vs focus reverse-superlative: `zuel g<SCALE>l z<JUDGED>l` ≈ *the least … of all* in the discourse domain; **`zuan`** as comparee **names** the universal class explicitly. Prefer the benchmark when the point is “against everyone as a standard.” Bare closed **`zual`** remains ordinary *everything / everyone* in non-benchmark slots.
 
 | Agelan | Reading |
 |---------|---------|
-| `zuel g<sing>l zumogon zaloban` | *worse than Professional* at singing |
-| `zuem g<clear>l zebunem zonugon` | soft: draft is somewhat less clear than Average |
-| `zuel g<kind>l z<Sam>n zumogoxrawon` | Sam is less kind than **my personal standard** |
-| `zuel g<sing>l z<Sam>n zumogon` | Sam is less skilled at singing than **I am** (performance) |
-| `zuel g<skill>l zumogon zulohun` | less skilled than Social |
-| `zuel g<skill>l zumogon zaheman` | less skilled than Typical |
-| `zuel g<skill>l zumogon zuan` | less skilled than Everyone |
-| `zuel g<sing>l zumogon z<Lea>n` | less skilled than **Lea** (ordinary person comparee) |
+| `zuel gegul zumogon zaloban` | *worse than Professional* at singing |
+| `zuem gagelal debunel zonugon` | soft: draft is somewhat less clear than Average |
+| `zuel geredom zazaman zumogoxrawon` | Sam is less kind than **my personal standard** |
+| `zuel gegul zazaman zumogon` | Sam is less skilled at singing than **I am** (performance) |
+| `zuel gabunul zumogon zulohun` | less skilled than Social |
+| `zuel gabunul zumogon zaheman` | less skilled than Typical |
+| `zuel gabunul zumogon zuan` | less skilled than Everyone |
+| `zuel gegul zumogon zelejan` | less skilled than **Lea** (ordinary person comparee) |
 
 #### Constraints
 
