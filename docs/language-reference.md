@@ -14,7 +14,7 @@ Example: When you say you believe something, you specify whether you also looked
 
 (3) Freedom. Clarity frees us to live our authentic selves and be creative by helping us recognize the reasons behind our actions and break free from old patterns and traditions.
 
-Example: When framing work to do, bare *the problem* / *the solution* / *the goal* is stylistically bad — prefer numbered candidates (`zubezul g#1`, `zegogel g#2`, …) so you look for more than one ([numbered alternatives](special-vocabulary.md#numbered-alternatives)). Reframing the same situation uses paraphrase (**-m**, discourse **`el`/`em`**, or `…~[…]`), not a second digit.
+Example: When framing work to do, bare *the problem* / *the solution* / *the goal* is stylistically bad — prefer numbered candidates (`zubezul g#1`, `zegogel g#2`, …) so you look for more than one ([numbered alternatives](special-vocabulary.md#numbered-alternatives)). Reframing the same situation uses paraphrase (**-m**, discourse **`el`/`em`**, or a paraphrase span — [spans.md](spans.md)), not a second digit.
 
 Aside from the psychology-based vocabulary, there are also some non-core features that I am also excited about:  
 a) The grammar is unambiguous, but still easy to use. This will allow some computer applications to potentially further improve our lives, such as an automated tutoring system for learning the language.  
@@ -47,7 +47,7 @@ We're not trying to be as precise as Ithkuil, because that language is very diff
 
 # Learning levels
 
-Grammar docs use **beginner** / **intermediate** / **advanced** sections so learners finish all beginner material across docs before intermediate, then advanced. Assignment rubric: **[learning-levels.md](meta/learning-levels.md)**.
+Grammar docs use **beginner** / **intermediate** / **advanced** sections so learners finish all beginner material across docs before intermediate, then advanced. Assignment rubric: **[learning-levels.md](meta/learning-levels.md)**. Learner-facing prose and example style: **[grammar-docs.md](meta/grammar-docs.md)**. On this page, grammar after the feature criterion is banded under **Beginner** / **Intermediate** / **Advanced** below. Front-matter (introduction, goals, criterion) is orientation, not a learning band.
 
 # Criterion for Features
 <a id="criterion-for-features"></a>
@@ -64,36 +64,33 @@ The goal of r/claritylanguage is to help foster compassion, rationality, and emp
 
 * Reminders where they are needed. Ideally, the feature should encourage compassion, rationality, and/or empowerment only in cases where that is relevant - i.e. when we are likely to act uncompassionately, irrationally, and/or disempowered. There will be many false positives, but the feature should strive to minimize pointless applications.
 
-# Parts of Speech
+## Beginner
+
+Core clause shape: PoS prefixes, orthography, default word order, utterance framing, basic `/x/` continue and sentence linkers, and simple **`odo`** dependents. Enough to read ordinary dialogue once [reference-suffix](reference-suffix.md), [pronouns](pronouns.md), and related beginner sections are also done. Examples on this page use **published Clarity roots** (and closed grammar forms); donor roots and span packaging live in [spans.md](spans.md#mentions-opaque-and-loan-words).
+
+### Parts of Speech
 
 Parts of speech are determined by a prefix consonant added before each word. Words do not change form based on usage, and can be used in most parts of speech, so the prefix is how you know a word's role.
 
 <a id="orthography"></a>
 <a id="writing-words"></a>
 
-### Orthography (actual words)
+#### Orthography
 
-**No hyphen after the PoS letter.** Real Clarity concatenates prefix + root + ending in one token:
+Write prefix + root + ending as **one token** — no hyphen after the PoS letter:
 
-| Actual writing | Not this |
-|----------------|----------|
+| Form | Not this |
+|------|----------|
 | `zumogon` | ~~`z-umogo`~~ |
 | `dehadon` | ~~`d-ehado`~~ |
 | `glulebul` | ~~`gl-ulebul`~~ / ~~`gl-bluel`~~ |
 
-**Foreign / non-Clarity roots** sit in **`<>`**, with the reference suffix **after** the closer:
-
-| Actual writing | Role |
-|----------------|------|
-| `d<english>l` | foreign root *english* as direct object, exact (**-l**) |
-| `z<Sam>n` | foreign proper *Sam* as subject |
-| `gedagel` | published root *teacher* (`edage`) as adjective — prefer this over `g<teacher>l` when the lexicon has the gloss |
-
-Parser does **not** read inside `<>` as Clarity phonology. Prefer a [published](../data/lexicon-published.csv) root when the English gloss matches (`dabebal` for *apple*, not `d<apple>l`). Use **-m** when the match is the published **metaphorical** gloss (`guzem` for *happy* ← smile). Full opaque **span fences** (multi-token foreign/code blobs, speech `dux…`) stay in [spans.md](spans.md) and take **no** reference suffix on the brackets (`d<sushi>`, not `d<sushi>l`); the `PoS<…>ENDING` shape is the compact foreign-root **content word**.
+Prefer a [published](../data/lexicon-published.csv) root when the English gloss matches (`dabebal` for *apple*). Use **-m** when the match is the published **metaphorical** gloss (`guzem` for *happy* ← smile). Donor roots and span packaging: **[spans.md](spans.md#mentions-opaque-and-loan-words)**.
 
 **Turn** vs **continue:** a new **turn** opens with **`/j/`** (vocatives, [polar stance](questions.md#yes-no-polarity) particles, marked [clause force](#clause-force)) — including self-turns in monologue. **Same-force forward motion** uses **`/x/`** ([clause joins](#discourse-markers-x), sentence linkers): later material **inherits** force and does **not** re-stamp **`jal`**. Default assertoric force is **`jal`** and is **omissible** when recoverable (see [Utterance markers](#utterance-markers-j)). After the opener (or inherited continue), the standard order is Subject \- Direct Object \- Verb. Order of those core roles can change for stylistic reasons (including **focus**), or to put a [next-clause pronoun](#dependent-clauses) **matrix-final** before a trailing dependent. Adjectives (`/ɡ/`) go **after** what they modify by default, or **before** when marked left-bound (**`gl-`** — see [Adjectives](#adjectives-ɡ)). Adverbs (`/h/`) may appear anywhere in the clause (see below) except a next-clause `/h/`+`/b/` unit, which is matrix-final.
 
-## Part-of-speech prefixes
+### Part-of-speech prefixes
+<a id="part-of-speech-prefixes"></a>
 
 | Prefix | Role |
 |--------|------|
@@ -104,82 +101,87 @@ Parser does **not** read inside `<>` as Clarity phonology. Prefer a [published](
 | /ɡ/ | adjective |
 | /w/ | adjective adjunct (modifies the previous `/ɡ/`) |
 | /h/ | adverb (mood / tense / evidentiality, adjuncts) |
-| x /ʒ/ | discourse marker (sentence linkers, discourse-only [span](spans.md) opens, span closes **`xuxul`** / **`xuxur`** / **`xuxun`** / **`xuxum`**, …) |
+| x /ʒ/ | discourse marker (sentence linkers, [span](spans.md) fences, …) |
 | j /dʑ/ | utterance marker (clause force, vocative, interjection) |
 
 There is no dedicated indirect-object prefix. Recipients and beneficiaries (English *to* / *for*) are expressed with a complex adverb (`/h/` + `/b/`) plus an argument noun, the same pattern as other verb-level prepositional-phrase meanings.
 
-## Nouns and verbs
+### Nouns and verbs
 
 Nouns can stand alone as core arguments of the clause. Verbs mark the action.
 
 Subject (/z/) \- the thing doing the action  
 Direct Object (/d/) \- the thing on the receiving end of the action  
-Verb (/v/) \- the action being done. [Ability / incapability](special-vocabulary.md#ability) compounds onto the verb root when that is the denied activity (`v<sing>xun` = can’t sing, fixed); hostless *can’t* uses floating **`hegera…`** (**`egera`** 🥣 *capacity*).
+Verb (/v/) \- the action being done.
 
-There is **no** general *to-be* verb. [Classification](predication.md#classification) (*Sam is a teacher*) and absolute property claims (*Sam is big*) are **zero-copula**: subject + predicative `/ɡ/`. [Identity](predication.md#identity) (*Clark is Superman*) uses closed complex **`SAME`** (**`oguno`** 🪙) + `/b/`. Full rules: **[predication.md](predication.md)**.
+There is **no** general *to-be* verb. [Classification](predication.md#classification) (*I am a teacher*) and absolute property claims (*the dog is blue*) are **zero-copula**: subject + predicative `/ɡ/` — e.g. `zumogon gedagel`, `zogodol gulebul`. [Identity](predication.md#identity) (*these two labels name the same referent*) uses closed complex **`SAME`** (**`oguno`** 🪙) + `/b/`. Full rules: **[predication.md](predication.md)**. Ability / incapability: **[special-vocabulary.md](special-vocabulary.md#ability)**.
 
-## Adjectives (`/ɡ/`)
+### Adjectives (`/ɡ/`)
+<a id="adjectives-ɡ"></a>
 
 `/ɡ/` marks **adjectives** (and noun-level relational phrases). Predicative use (property or kind ascription without `/v/`) is [zero-copula](predication.md#zero-copula).
 
-**Default (right-bound):** the adjective goes **after** the word it modifies (`zogodol g<big>l` = *a big dog*). Attachment is to the **previous** eligible host.
+**Default (right-bound):** the adjective goes **after** the word it modifies (`zogodol gulebul` = *a blue dog*). Attachment is to the **previous** eligible host.
 
-**Left-bound (`gl-`):** insert **l** as the second letter of the word — PoS `/ɡ/` + **l** + root + reference suffix — forming the onset cluster **`gl-`** (already legal in [phonology](phonology.md#phonotactics)). That adjective goes **before** its host and binds the **next** eligible host (`gl<big>l zogodol` = *a big dog*). Only `/ɡ/` may take this mid-word **l**; other PoS prefixes have no left-bound **l** form.
+**Left-bound (`gl-`):** insert **l** as the second letter of the word — PoS `/ɡ/` + **l** + root + reference suffix — forming the onset cluster **`gl-`** (already legal in [phonology](phonology.md#phonotactics)). That adjective goes **before** its host and binds the **next** eligible host (`glulebul zogodol` = *a blue dog*). Only `/ɡ/` may take this mid-word **l**; other PoS prefixes have no left-bound **l** form.
 
-The contiguous adjective unit is the same in both orders: simple `/ɡ/`, or complex `/ɡ/` + `/b/`, plus any following `/w/` stack on that `/ɡ/`. Left-bound marks the `/ɡ/` word; `/b/` and `/w/` still follow that `/ɡ/` (`gl<of>l b<Sam>n zogodol` = *Sam’s dog*; `gl<big>l w<very>l zogodol` = *a very big dog*). Do not invent `wl-` or `bl-` for left attachment.
+The contiguous adjective unit is the same in both orders: simple `/ɡ/`, or complex `/ɡ/` + `/b/`, plus any following `/w/` stack on that `/ɡ/`. Left-bound marks the `/ɡ/` word; `/b/` and `/w/` still follow that `/ɡ/` (`glulebul wazebol zogodol` = *a loud-volume blue dog*). Do not invent `wl-` or `bl-` for left attachment.
 
-Left-bound is optional style (meter, focus, L1 comfort). Prefer default postposed order in neutral prose. On [phrase fences](coordination.md#scope-fence-p-coord), ordinary `/ɡ/` in the SHARED slot under **`a`** **distributes** over conjuncts when gradable (`z<Sam>n z<Lea>n zal g<big>l` = *Sam and Lea are big*) or is whole-phrase description when non-scalar (`zogodol zagadal zam g<of>l b<Sam>n`); SHARED `/ɡ/`…**-sh** under **`a`** is [**collective**](plurality.md#collective-ascription) (*heavy together* — `z<box>l z<crate>l zal g<heavy>lsh`); under **`ae`**, SHARED scale `/ɡ/` is [equative](comparatives.md#equatives) (`z<Sam>n z<Lea>n zael g<big>l` = *as big as*); under invert **ua** / **uo**, SHARED `/ɡ/` is the [kind / domain](coordination.md#universals-domains-generics) (`zual gagadal` = *every cat*); under ranked **`e` / `oe` / `ue`**, SHARED `/ɡ/` is the [comparison scale](comparatives.md) (`z<Sam>n z<Lea>n zel g<big>l` = *Sam is bigger than Lea*; focus `z<Sam>n zel g<big>l` = *Sam is the biggest*; bare `zoel g<big>l` = *there is no biggest*; bare `zel g<big>l` = *unspecified who’s biggest*); under **`a` / `e` / `ue` / `ua`** with exactly two number endpoints, SHARED continuum `/ɡ/` is a [numeric span](numbers.md#ranges) (`z+3 z+5 zel g<age>l` = *from age 3 to 5*; bare `z+3 z+5 zel` = preference). Scale and continuum `/ɡ/` stay singular (no **-sh**). `gl-` after a left fence binds only the **next** conjunct (`zogodol zagadal zam gl<big>l` = *(big dog) and (cat)*).
+Left-bound is optional style (meter, focus, L1 comfort). Prefer default postposed order in neutral prose.
 
-## Adjective adjuncts (`/w/`)
+SHARED `/ɡ/` under phrase joins: [coordination.md](coordination.md), [comparatives.md](comparatives.md), [plurality.md](plurality.md), [numbers.md](numbers.md#ranges).
 
-`/w/` marks a word that **modifies the previous adjective** (`/ɡ/` unit). It does not modify the verb or the noun directly. **Default content reading is a [value](values.md)** (need ascription on that property: gratitude, judgment, …). Other closed subcategories stay non-value: degree (*very*, *slightly*), tense/mood/evidentiality scoped only to that property (*former* / *recent*, *alleged*, and the same mood roots as `/h/` when the framing applies just to the adjective), hostless [ability](special-vocabulary.md#ability) (`wegeraxu…`), and [restrictor](restrictors.md) joins. Ability on a property root itself uses host+`xa`/`xu` on that `/ɡ/` (`g<lead>xun`).
+### Adjective adjuncts (`/w/`)
 
-The `/w/` word sits on its host: normally immediately after the `/ɡ/` (or after that `/ɡ/`’s contiguous `/b/` argument if the adjective is complex) — including when that `/ɡ/` is left-bound (`gl-…`). Unlike `/h/`, `/w/` does **not** float. Several `/w/` words may **juxtapose** on one `/ɡ/` (`guzem w<recent>l w<very>l`); each applies to that same adjective — that is ordinary co-stacking, **not** a join fence. `/w/` words are typically simple (no `/b/` argument); if a relation needs an argument, use a complex adjective (`/ɡ/` + `/b/`) instead.
+`/w/` marks a word that **modifies the previous adjective** (`/ɡ/` unit). It does not modify the verb or the noun directly.
 
-Prefixed `/w/` **joins** (`wal` / `wam` / …, `war` / …) are **not** sibling adjunct *and*. They are [restrictors](restrictors.md) on when the host adjective applies (`wal` → *never* for that property; `w<alleged>l wal` → *only when alleged*). Same fence rules; `/w/` exact parallel of `/h/` (**defined core** only).
+The `/w/` word sits on its host: normally immediately after the `/ɡ/` (or after that `/ɡ/`’s contiguous `/b/` argument if the adjective is complex) — including when that `/ɡ/` is left-bound (`gl-…`). Unlike `/h/`, `/w/` does **not** float. Several `/w/` words may **juxtapose** on one `/ɡ/` (`guzem wazebol wazebel`); each applies to that same adjective — that is ordinary co-stacking, **not** a join fence. `/w/` words are typically simple (no `/b/` argument); if a relation needs an argument, use a complex adjective (`/ɡ/` + `/b/`) instead.
 
 Same root, different prefix → different scope: `/h/` frames the clause; `/w/` frames only the preceding adjective.
 
-## Adverbs (`/h/`)
+Default **values** reading: [values.md](values.md). Prefixed `/w/` joins as restrictors: [restrictors.md](restrictors.md).
 
-`/h/` marks **adverbs** (modifiers of the verb or clause). **Default content reading is a [value](values.md)** (clause-level need: motive, ought-stake, event judgment). Other closed subcategories stay non-value: manner, time/place adjuncts, recipients (*to* / *for*), topic/aboutness frames (*as for* / *regarding*), mood/tense/evidentiality (including [COMMENT](special-vocabulary.md#comment) / mindfulness noting, [emotion compose](special-vocabulary.md#emotion-compose) ACT / LOCUS, [plan / predict](special-vocabulary.md#plan-predict), [evidentiality](special-vocabulary.md#evidentiality) (WITNESSED / RECORDED / PATTERN / …), [universality](special-vocabulary.md#universality)), hostless [ability](special-vocabulary.md#ability) (`hegeraxu…`), [restrictor](restrictors.md) joins, and [number](numbers.md) words under `/h/`. Ability on an event root uses host+`xa`/`xu` on `/v/` (`v<sing>xun`), not a floating `/h/` copy of that root. Example channels: `huhunum` = *per memory / witnessed*; `herogem` = *on record*; `herarem` = *hearsay* — [evidentiality](special-vocabulary.md#evidentiality). Clause force is **not** `/h/`; it is an utterance marker (`/j/`).
+### Adverbs (`/h/`)
+<a id="adverbs-h"></a>
+
+`/h/` marks **adverbs** (modifiers of the verb or clause): manner, time/place adjuncts, recipients (*to* / *for*), topic/aboutness frames, mood/tense/evidentiality, and related closed subcategories. Clause force is **not** `/h/`; it is an utterance marker (`/j/`).
 
 Because `/h/` always targets the clause’s verb, **position is free within the clause** (before/after arguments, next to the verb, clause-final, etc.) for style, focus, or meter — **except** a next-clause `/h/`+`/b/` unit, which must be [matrix-final](#dependent-clauses). `/h/` material must stay inside its own clause: it must not float into a following sentence or into a trailing dependent clause.
 
-**Co-applying adverbs** (manner, mood, …) **juxtapose** with no join: `h<quickly>l h<quietly>l` → *quickly and quietly*. Prefixed `/h/` **joins** (`hal` / `ham` / …, `har` / …) are [restrictors](restrictors.md): they say **when / under which cases** the clause holds (`hal` → *never*; `harunal hal` → *only when raining*; `hual` → *always*). Only a **defined core** is used; other reserved `/h/` spellings are undefined there. Complex `/h/`+`/b/` units may be circumstance conjuncts; next-clause *when* / *if* stays `/h/`+`/b/` next-clause pronoun (not this fence series).
+**Co-applying adverbs** (manner, mood, …) **juxtapose** with no join: `hadal hozonol` → *hastily and still/quietly*.
 
 **Topic** (*as for X*, *regarding X*) is a complex adverb: `/h/` + `/b/` topic noun (lexicon role: aboutness). There are **no dedicated focus markers**; highlight by rearranging free word order (and ordinary intensifiers like *only* / *especially* if needed). Topic/focus are not `/x/` discourse markers.
 
-English-looking **epistemic hedges** that really mark how you know or how strong the claim is (*apparently*, *supposedly*, *allegedly*, *maybe*, *perhaps*) are **mood/evidentiality**, not discourse markers: use `/h/` for the whole clause, or `/w/` when the framing applies only to the preceding adjective (e.g. *alleged*). Do not put them under `/x/`.
+There is **no fixed scope-band order** among multiple `/h/` units. Each adverb’s contribution comes from its **lexicon role**; spoken order is free for style and does not reorder those roles. If two units of the same role need a relative ranking, left-to-right in the spoken order breaks the tie.
 
-There is **no fixed scope-band order** among multiple `/h/` units. Each adverb’s contribution (mood/evidential, time/place/recipient adjunct, manner, and so on) comes from its **lexicon role**; spoken order is free for style and does not reorder those roles. If two units of the same role need a relative ranking, left-to-right in the spoken order breaks the tie. Circumstance **ranking** of cases uses the `/h/` ranked restrictor series (`hel` / …), not bare juxtaposition order.
+Default **values** reading: [values.md](values.md). Restrictors, evidentiality, and related mood: [restrictors.md](restrictors.md), [special-vocabulary.md](special-vocabulary.md#evidentiality). Epistemic hedges (*apparently*, *allegedly*, …) are `/h/` or `/w/` mood/evidentiality — not `/x/`.
 
-## Complex adjectives, complex adverbs, and argument nouns
+### Complex adjectives, complex adverbs, and argument nouns
+<a id="complex-adjectives-complex-adverbs-and-argument-nouns"></a>
 
 A **complex adjective** or **complex adverb** takes an extra participant: the adjective or adverb word plus an **argument noun** (`/b/`). The argument immediately follows the adjective or adverb. That word carries the relation; `/b/` only marks “argument of that adjective or adverb” (the dictionary entry says how it relates to the host).
 
-- **Complex adjectives** use `/ɡ/` + `/b/` (e.g. possessive owner, “book *on* the table”).
+- **Complex adjectives** use `/ɡ/` + `/b/` (the `/ɡ/` root names the relation; `/b/` is its argument — e.g. closed **`SAME`**: `gogunol buzuzul`).
 - **Complex adverbs** use `/h/` + `/b/` (e.g. recipient *to*, “happened *at*”, topic *regarding*, adverbial subordination *because* / *if* with the [next-clause pronoun](pronouns.md#special-pronouns) as `/b/`). The `/h/` + `/b/` pair is one unit and **stays contiguous**. Ordinary pairs may float; a pair whose `/b/` is the next-clause pronoun is **[matrix-final](#dependent-clauses)** (it does not float mid-clause).
 
-Example (recipient): `/h/` *to* + `/b/` recipient may sit anywhere in the clause as a pair. Example (topic): `/h/` *regarding* + `/b/` topic noun likewise floats as a pair. Example (cause): `/h/` *because* + `/b/` next-clause pronoun is matrix-final; the reason sentence follows immediately.
+Example (recipient): `/h/` *to* + `/b/` recipient may sit anywhere in the clause as a pair. Example (topic): `/h/` *regarding* + `/b/` topic noun likewise floats as a pair. Example (cause): `hurugul bodo` (*because* + next-clause) is matrix-final; the reason sentence follows immediately.
 
 After a complex adjective or adverb, the argument is the new noun for further adjective modification: a simple `/ɡ/` after `/b/` describes the argument, not the original host. `/w/` after a `/ɡ/` (+ optional `/b/`) grades or frames that adjective, not the noun. You can chain by having a complex adjective or adverb modify another complex adjective/adverb or its argument. You can’t have two complex adjectives affect the same noun; if you need that, describe the noun further in a separate sentence. Multiple `/h/` units on the same verb are allowed (each simple `/h/` or contiguous `/h/`+`/b/` counts as one unit); each unit’s role is read from the lexicon as above.
 
 Complex adjectives and adverbs cover what would be prepositional phrases in other languages. A verb used as a complex adverb with a `/b/` argument can form a simple dependent-clause-like adjunct (the `/b/` argument is the clause’s subject-like participant).
 
-## Utterance markers (`/j/`)
+### Utterance markers (`/j/`)
 <a id="utterance-markers-j"></a>
 
 Marked with j /dʑ/. **`/j/`** marks a **turn** — a speech-act move toward another or toward oneself (monologue self-turn). It frames the **utterance**, not the verb: **clause force**, **vocatives** (direct address), and **interjections** (exclamations, greetings, [polar stance](questions.md#yes-no-polarity) particles, and similar). **Forward motion** under the **same** illocution uses **`/x/`** ([clause joins](#discourse-markers-x), linkers) — not a new `/j/` stamp. The dictionary lists the forms and which subclass each root belongs to.
 
-### Left-edge order and sentence boundaries
+#### Left-edge order and sentence boundaries
 <a id="left-edge-order-and-sentence-boundaries"></a>
 
 The left edge of a **new turn** is a `/j/` cluster in this order:
 
-1. Optional **vocative**(s) — who is addressed (*Sam*, *everyone*, …)
-2. Optional **interjection**(s) — *wow*, greetings, [polar stance](questions.md#yes-no-polarity) particles, and other expressives
+1. Optional **vocative**(s) — who is addressed (`jumogon`, `jehadon`, …)
+2. Optional **interjection**(s) — greetings, [polar stance](questions.md#yes-no-polarity) particles, and other expressives
 3. Optional **discourse reviser** — prefix-less **`al` / `am` / `an` / `el` / …** (*additionally* / *in other words* / *instead* / *except*) immediately before force or before an omitted-default body — [revisers.md § Discourse](revisers.md#discourse-revisers)
 4. **Clause force** — the speech act when not implied (see below); **last** in the cluster when present, immediately before the clause body
 
@@ -192,11 +194,11 @@ The left edge of a **new turn** is a `/j/` cluster in this order:
 
 When force is written, it closes the opener and does not appear in the clause body. A new `/j/` turn (after any vocatives/interjections/discourse reviser of the new sentence) starts a new utterance. **`/x/`** continues under inherited force — do **not** repeat **`jal`** on each conjunct. That split keeps sentence boundaries clear under free word order.
 
-**Vocatives and interjections appear only in this left-edge cluster** (or as bare utterances below). They must not occur mid-clause or at the end of a sentence — otherwise a trailing `/j/` could be read as either the end of the current sentence or the start of the next. After a clause body, any non-force `/j/` begins the next utterance’s opener. Mid-sentence asides use [aside fences](spans.md) (prefer `/h/`: `hexal` / `h(…)` / … + `xuxul`), not floating `/j/`. **Polar “tags”** (*…, yes*) are a **second bare turn** after a period (`zumogon v<go>l. jael.`), not same-sentence final `/j/`.
+**Vocatives and interjections appear only in this left-edge cluster** (or as bare utterances below). They must not occur mid-clause or at the end of a sentence — otherwise a trailing `/j/` could be read as either the end of the current sentence or the start of the next. After a clause body, any non-force `/j/` begins the next utterance’s opener. Mid-sentence asides use [aside fences](spans.md), not floating `/j/`. **Polar “tags”** (*…, yes*) are a **second bare turn** after a period (`zumogon vawul. jael.`), not same-sentence final `/j/`.
 
-Bare vocatives and exclamations with no clause (e.g. only calling a name, only *wow*, or a bare polar stance **`jael`** / **`juel`**) use `/j/` without written clause force (polar **`-l`** still implies **`jal`** when a body follows).
+Bare vocatives and exclamations with no clause (e.g. only calling someone, or a bare polar stance **`jael`** / **`juel`**) use `/j/` without written clause force (polar **`-l`** still implies **`jal`** when a body follows).
 
-### Orthography and prosody (periods)
+#### Orthography and prosody (periods)
 <a id="orthography-and-prosody-periods"></a>
 
 Writing uses **periods** (and aligned **`?`** / **`!`**) as **body** boundaries. Speech matches. **Force domains** are not reset by every period:
@@ -214,9 +216,9 @@ Writing uses **periods** (and aligned **`?`** / **`!`**) as **body** boundaries.
 
 Period marks **body closure**, not commitment strength and not automatic turn reset — **`jal`** vs **`jam`** and polar **`-l`** vs **`-m`** carry commitment; a new **`/j/`** cluster starts a new turn. Do not use a period **between** conjuncts of one [clause `/x/` fence](#discourse-markers-x) when they share one force.
 
-**Speech / song:** when pauses are weak (singing, fast free order), prefer an audible left cue after silence — polar, vocative, or marked force — rather than a bare body with only implied **`jal`**. Writing still uses `.` for body edges.
+Speech / song tip when pauses are weak: [Advanced](#speech-song-left-cues).
 
-### Clause force
+#### Clause force
 <a id="clause-force"></a>
 
 Every utterance has exactly one **clause-force** (written **`/j/`** or implied **`jal`** / **`jam`**). Forms are **`j` + join vowel + ending** (same letter jobs as [join series](coordination.md#join-type-vowel-series)): vowel = illocution frame; **-l** = closed / committed; **-m** = open / soft. Do **not** use **-n** or **-r** on force (**-r** stays on body joins for unspecified-member / fill-ask). Marked non-default forces (**`jol`**, **`jel`**, **`jul`**, …) are **written**; default assertoric **`jal`** is **omissible** under the recoverability rules above.
@@ -238,22 +240,20 @@ Every utterance has exactly one **clause-force** (written **`/j/`** or implied *
 
 Interrogative grammar (yes/no vs fill-ask, multi-gap **fill-all**, focus/bare under **jol** / **jom**): **[questions.md](questions.md)**.
 
-### Yes / no polarity (interjections)
+#### Yes / no polarity (interjections)
 
 Closed **`/j/`** [polar stance](questions.md#yes-no-polarity) particles (**`jael`** / *true*, **`juel`** / *false*, **`jaol`**, **`juol`**, **`jual`**, soft **-m** twins, …) — inventory, turn-taking readings, and monologue use: **[questions.md § Yes / no polarity](questions.md#yes-no-polarity)**. Not clause force; left-edge or bare utterance. **`-l`** implies **`jal`**; **`-m`** implies **`jam`** — prefer **`jael …`** over **`jael jal …`** when a body follows.
 
-## Phrase-level, VP-level, and clause-level joins
-
-There is **no** prefix-less **join** series. **`/z/` `/d/` `/b/` `/ɡ/` `/v/` `/x/`** + the join vowels + ending (`zam`, `dol`, `bem`, `gam`, `vam`, `xam`, `zar`, `zor`, `zer`, `zur`, `var`, `xar`, …) join same-slot phrases, VPs, or sentences with a **right-close fence** (shared modifiers immediately after the join — e.g. `zogodol zagadal zam g<of>l b<Sam>n` = *Sam’s (dog and cat)*; nesting: right-close stack left-assoc `A B vol C val` = *(A or B) and C*; island `A ^ B C val ^ vol` = *A or (B and C)*; **left fences illegal**; **pure infix illegal**; frame-first without left-fencing = [frame echo](coordination.md#frame-echo) — bare announce then echoed right-close, e.g. `zual` · `z<onion>l z<pickle>l zual`). **`/h/`** and **`/w/`** use the **same fence forms** as [restrictors](restrictors.md) (defined core: `hal` = *never*, `harunal hal` = *only when raining*, `hual` = *always*, `har` = *sometime* (under question → *When?* — [questions.md](questions.md#circumstance-when)); sibling manner/adjunct *and* is **juxtaposition**; other `/h/`/`/w/` join spellings reserved but undefined). On VP chains, `/h/` before the VP stretch (or in SHARED after the join) scopes over all VPs; `/h/` inside a conjunct scopes that VP only. **-l** / **-m** = closed/open on every join vowel (**a** / **o** / **u** / **ao** / **e** / **ae** / **oe** / **ua** / **uo** / **ue**); phrase **-n** = named; clause soft **-n** = *and then…* **`xan`** / uncertain reconstruction / soft ranking; VP `-n` = [join-act verbs](special-vocabulary.md#join-act-verbs); **-r** on **a** / **o** / **e** / **u** at all levels = [unspecified-member](coordination.md#unspecified-member-r-phrase) (`zar` / `zor` / `zer` / `zur` / `var` / `vor` / `ver` / `vur` / `xar` / … = *something* / *anything* / *whatever-by-rank* / *something else* (other than) — VP *do something*, clause *something happened*; under [question](questions.md) = fill-ask; under `/h/` `/w/` = *sometime* / *anytime* / … — *When?* under question: [questions.md](questions.md#circumstance-when)); **e** / **oe** / **ue** are **directional **rank join (**e** / **oe**: earlier ≻ later; **oe** = exclusive; **ue** = rank reversal); **ae** = **equality / tie** (multi + SHARED scale = [equative](comparatives.md#equatives); bare **ae** = draw). On NP fences, SHARED scale `/ɡ/` under **`e` / `oe` / `ue`** = [comparatives](comparatives.md) (multi = *bigger than*; focus **`e`** = **superlative** — `z<Sam>n zel g<big>l`; bare **`oe`** = **empty superlative** — `zoel g<big>l`; bare **`e`** + scale = unspecified top — `zel g<big>l`); under **`ae`** multi = *as … as* — `z<Sam>n z<Lea>n zael g<big>l`; under **`a`** = distributive — `z<Sam>n z<Lea>n zal g<big>l`; plain **u** = [negation](coordination.md#negation-u) (focus *not X*, multi *none of*, bare *no*; no separate `/h/` “not” root); leading **u** on **a** / **o** / **e** = [invert](coordination.md#invert-u-stacks) (`ua` = *everything but*; `uo` = *anything but*; `ue` = **rank reversal**, later ≻ earlier — not plain **u** [negation](coordination.md#negation-u) (*not* / *none of* / *no*); no three-vowel stacks; empty-allowed / *or none* on plain **o** + **-m** only (`zom` / `vom` / `xom` = at most one; `zol` / `vol` / `xol` = exactly one — [coordination.md](coordination.md#empty-allowed-om)); **-m** on other join vowels does not imply *or none*). Phrase focus / bare: **…em** / **…el** / **…ael** / **…aem** / **…aen** / **…oem** / **…oel** / **…uem** / **…uel** / **…en** / **…al** / **…am** / **…an** / **…ol** / **…om** / **…ual** / **…uam** / **…uol** / **…uom** / **…aol** / **…aom** / **…ul** / **…um** / **…un** / **…ar** / **…or** / **…er** / **…ur** (focus: *X first* / *only X matters* / *try X first* / *only try X* / *X last* / *not X* / *everything but X* / *anything but X* / …; bare: *unspecified ranking* / *nothing comes to mind* / *null* / *no options* / *no* / *everything* / *anything (goes)* / …; **…an** = *null* / *void*, **…aen** = *it’s a draw*, **…en** = *unspecified ranking* (stock), **…ar** = *something*, **…or** = *anything*, **…er** = *whatever-by-rank*, **…ur** = *something else*, **…un** = named/conventional *not X* / *no* — [coordination.md](coordination.md#focus-phrase); under `/h/` `/w/`: `hal` = *never*, `hual` = *always*, `hael` = *equally often*, … — [circumstance](restrictors.md); VP/clause focus/bare on **-r** and on negation **…ul** / **…um** / soft **…un**; interrogative readings: [questions.md](questions.md)). Correlatives come later.
-
-**Revisers:** prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** (**-l** / **-m** / **-n** required; bare **a** / **e** / **o** / **u** illegal). **In-clause:** same-slot `A REV B` (parallel chains: `A am B ul C` = including B and except C). **Discourse:** same forms before force, before an omitted-default body, on non-initial [clause `/x/`](#discourse-markers-x) conjuncts, or before an `/x/` linker (`al xamalal …`) — *additionally* / *in other words* / *instead* / *except* ([revisers.md § Discourse](revisers.md#discourse-revisers)). *Starting with* = **`x#e-`**, *Finally* = **`x#e`** ([numbers.md](numbers.md#number-as-discourse-marker-by-marker)), not **`al`**. Not list joins; not adversative *but* / *however*. Joins: **[coordination.md](coordination.md)**. Revisers: **[revisers.md](revisers.md)**. Restrictors: **[restrictors.md](restrictors.md)**.
-
-## Discourse markers (`/x/`)
+### Discourse markers (`/x/`) — turn vs continue
 <a id="discourse-markers-x"></a>
 
-Marked with x /ʒ/. **`/x/`** carries **same-force forward motion**: [clause-level joins](#discourse-markers-x) (conjuncts inherit opener force), **sentence linkers** (*however*, *therefore*, *meanwhile*, *but*, standalone *next*, …), [numbered enumeration](numbers.md#number-as-discourse-marker-by-marker) (including *Starting with* = **`x#e-`**, *Finally* = **`x#e`**), and related fences. Do **not** re-stamp **`jal`** on each conjunct — only the **first** turn (or omitted-default opener) sets force; later `/x/` material continues under it. (*Additionally* / *in other words* / claim-level *instead* / *except* use prefix-less [revisers](revisers.md#discourse-revisers) before force, before omitted-default body, on `/x/` continues, or before linkers.) **Span fences** ([spans.md](spans.md)) **open** with any PoS for the slot they fill (`daxal` … = object cite; `daxol` = atomic; `daxan` = proper; `daxar` = *that* cite; `hexal` … = aside; `duxal` … = opaque; `xaxal` … = discourse-only cite); **close** with **`xuxul`** / **`xuxur`** / **`xuxun`** / **`xuxum`** under this prefix. The same sound **x** also joins roots inside compound words and inside span-fence markers (see [Phonotactics](phonology.md#phonotactics)); it is not used as an ordinary root consonant, so mid-word **x** always means “next root,” and word-initial **x** always means discourse-marker PoS.
+Marked with x /ʒ/. **`/x/`** carries **same-force forward motion**: [clause-level joins](coordination.md#clause-level-coordination) (conjuncts inherit opener force), **sentence linkers** (*however*, *therefore*, *meanwhile*, *but*, standalone *next*, …), and related fences. Do **not** re-stamp **`jal`** on each conjunct — only the **first** turn (or omitted-default opener) sets force; later `/x/` material continues under it. (*Additionally* / *in other words* / claim-level *instead* / *except* use prefix-less [revisers](revisers.md#discourse-revisers) before force, before omitted-default body, on `/x/` continues, or before linkers.)
 
-### Sentence linkers
+`/x/` connects or fences discourse; it does **not** carry evidential or epistemic framing of the claim. Softeners that encode source-of-knowledge or claim strength stay `/h/` or `/w/` (see [Adverbs](#adverbs-h)). Contrast: *however* / *therefore* → `/x/` linkers (`xezabel` / `xamalal`); *apparently* / *allegedly* → `/h/` or `/w/`.
+
+Span fences and numbered enumeration: [spans.md](spans.md), [numbers.md](numbers.md#number-as-discourse-marker-by-marker). Mid-word **x** vs word-initial **x**: [Intermediate](#mid-word-x-vs-discourse-x).
+
+#### Sentence linkers
 <a id="sentence-linkers"></a>
 
 Asymmetric discourse glue (not clause joins, not revisers). Ending is ordinary [reference-suffix](reference-suffix.md) (**-l** default closed):
@@ -266,86 +266,87 @@ Asymmetric discourse glue (not clause joins, not revisers). Ending is ordinary [
 | *next* | **`uvulu`** | 🎞️ *film* → *sequence* | `xuvulul` |
 | *but* | **`onuzu`** | 🚧 *construction* → *blockage* | `xonuzul` |
 
-**Teaching:** *therefore* moves the discourse forward from the prior claim; *however* marks contrast; *meanwhile* is concurrent passage of time; *next* is the next frame in sequence; *but* blocks the expected continuation (harder adversative than *however*). Ordinary content readings stay available under other PoS. *Starting with* / *Finally* stay **`x#e-`** / **`x#e`**, not this table. Clause *because* / *if* stay `/h/` + **`odo`** — [causation](causation.md#if-vs-iff).
+**Teaching:** *therefore* moves the discourse forward from the prior claim; *however* marks contrast; *meanwhile* is concurrent passage of time; *next* is the next frame in sequence; *but* blocks the expected continuation (harder adversative than *however*). Ordinary content readings stay available under other PoS. *Starting with* / *Finally* stay **`x#e-`** / **`x#e`** — [numbers.md](numbers.md#number-as-discourse-marker-by-marker). Clause *because* / *if* stay `/h/` + **`odo`** — [causation](causation.md#if-vs-iff).
 
-Phrase-level *and* / *or* / *none of* / *and/or* / ranked / invert joins are **not** general `/x/` linkers — they use `/z/` `/d/` `/b/` `/ɡ/` + the join vowels + ending (`zam`, `gam`, `zar`, `zor`, `zer`, `zur`, `zel`, `zael`, `zoel`, `zual`, `zuol`, `zuel`, …) with a **fence** (right close only — [coordination.md](coordination.md)). **`/h/`** / **`/w/`** use those same forms as [restrictors](restrictors.md) (`hal` / `wal` / …). VP-level uses `/v/` (`vam`, `var`, `vel`, `vael`, `voel`, `vual`, `vuol`, `vuel`, …) — same fence; **-r** = unspecified action (*do something*). Clause-level forms **are** `/x/` + the same vowels + ending (`xal`, `xar`, `xel`, `xael`, `xoel`, `xual`, `xuol`, `xuel`, …) — see [coordination.md](coordination.md#clause-level-coordination).
+Phrase-level / VP-level / clause-level join fences are **not** these linkers — **[coordination.md](coordination.md)**.
 
-`/x/` connects or fences discourse; it does **not** carry evidential or epistemic framing of the claim. Softeners that encode source-of-knowledge or claim strength stay `/h/` or `/w/` (see [Adverbs](#adverbs-h)). Contrast: *however* / *therefore* → `/x/` linkers (`xezabel` / `xamalal`); *Starting with* → **`x#e-`**; *Finally* → **`x#e`**; *additionally* / *in other words* / claim *instead* / *except* → [discourse reviser](revisers.md#discourse-revisers); *apparently* / *allegedly* → `/h/` or `/w/`.
-
-**Numbered list / enumeration markers** are `/x/` + [number word](numbers.md#number-as-discourse-marker-by-marker) (*point N:* neutral, *corroborating N:*, *independent N:*, *re item 12*). Marker vowel chooses independence framing (or cite-as-label); details live in numbers.md.
-
-**Not `/x/`:** phrase-level and VP-level joins ([coordination.md](coordination.md)); [revisers](revisers.md) (in-clause *and* discourse *additionally* / *in other words* / *instead* / *except*); English-style subordinators that relate a following clause to a slot in the main clause (*if*, *because*, *although*, *while*, *until*) — those use the [next-clause pronoun](pronouns.md#special-pronouns) plus a lexicon relation (usually `/h/` + `/b/`), not a discourse-marker prefix. `/x/` sentence linkers (*therefore* **`xamalal`**, *however* **`xezabel`**, *meanwhile* **`xamenol`**, *but* **`xonuzul`**, *next* **`xuvulul`**), number enumeration markers (including **`x#e-`** *Starting with*, **`x#e`** *Finally*), and related fences do not fill a main-clause argument or adjunct slot.
-
-## Dependent Clauses
+### Dependent Clauses — basics
 <a id="dependent-clauses"></a>
 
 Dependent clauses use the [next-clause special pronoun](pronouns.md#special-pronouns) **`odo`**: it stands in the main clause for “whatever follows immediately.”
 
 **Placement (hard):** **`odo`** is **matrix-final** in **its** clause, and the dependent material **immediately follows** it — no host-clause words after that **`odo`**, and no gap between **`odo`** and the dependent. Rearrange free word order so that holds. For adverbial subordination, the whole contiguous `/h/` + `/b/` **`odo`** unit is matrix-final (**`odo`** last). That final **`odo`** is the **subordinating edge**: everything after it (until the next peer boundary) is the dependent of **that** clause.
 
-**Chaining:** allowed. Each clause may have **at most one** matrix-final **`odo`**. A dependent may itself end in **`odo`** and bind a further dependent (*I said `odo`₁ [that she left `odo`₂ [because it rained]]*). Depth is right-branching only — no second **`odo`** in the same clause, and no two dependents as siblings under one host. Host-clause `/h/` units stay in their own clause and do not float into a dependent.
-
 The dependent material is a **sentence** that may begin with its own `/j/` cluster (optional vocative(s) and interjection(s), then clause force) or **inherit** matrix force and omit **`/j/`** when illocution matches. Force marks the dependent’s illocution when written; the **boundary** is **`odo`**, not that `/j/`. Different illocution (embedded ask, directive, …) requires its own force.
 
-**`odo`** takes whatever PoS prefix the slot needs:
+**Complement / content clause** — usually a core argument, matrix-final. Example: *I tell the listener that…* → `zumogon dehadon dodol vezabul` (`dodol` last in the matrix); dependent sentence follows immediately.
 
-* **Complement / content clause** — usually a core argument, matrix-final. Example: *I told him that…* → `dodol` as direct object of *tell* (last in the matrix); dependent sentence follows immediately.
-* **Adverbial relation** (*because*, *if*, *iff*, *although*, *while*, *until*, …) — a complex adverb: `/h/` relation word + `/b/` **`odo`**, as a contiguous **matrix-final** unit. Core condition / explanation roots: **`urugu`** (*because*), **`orodo`** (*if*), **`eluve`** (*iff*) — [causation.md § IF vs IFF](causation.md#if-vs-iff). There is **no** separate `/x/` subordinator for these.
+Chaining and adverbial *because* / *if* / *iff*: [Intermediate](#dependent-clauses-chaining-and-adverbial).
 
-`/x/` is only for discourse glue that does **not** occupy a main-clause argument or adjunct slot (sentence linkers still under `/x/`, discourse-only [span](spans.md) opens with PoS `/x/`, span closes **`xuxul`** / **`xuxur`** / **`xuxun`** / **`xuxum`**, [numbered enumeration](numbers.md#number-as-discourse-marker-by-marker) including *Starting with* **`x#e-`**, *Finally* **`x#e`**). *Additionally* / *in other words* / claim *instead* / *except* are [discourse revisers](revisers.md#discourse-revisers) (prefix-less, before force / omitted-default body / `/x/` continue / linker), not `/x/` joins. Spans that fill a clause slot **open** with that slot’s PoS (`daxal`, `zoxal`, `hexal`, `duxal`, …). Phrase-level uses `/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/`; VP-level uses `/v/`; clause joins uses this vowel series under `/x/` ([coordination.md](coordination.md)). Do not encode *because* / *if*-style subordination as `/x/`.
+## Intermediate
 
-# Reference Suffix
+Pointers into subsystems that stack on the beginner core. Full inventories live in the linked docs.
 
-Reference suffix grammar (**-l** / **-m** / **-n** / **-r**) lives in **[reference-suffix.md](reference-suffix.md)**. Compact multipart proper names (given+family, *New York*) are mid-word **`x`-compounds** with one ending — [phrasal proper names](reference-suffix.md#phrasal-proper-names) — not adjacent bare same-PoS **-n** words. Long / mixed-PoS work titles prefer [cite](spans.md) spans (often proper **`@`** / **-n**); *the title/saying X* as a named unit uses [mention](spans.md) **-n**.
+### Ability on hosts
+<a id="ability-on-hosts"></a>
 
-# Plurality
+Host+`xa`/`xu` ability / incapability, and hostless **`egera`**: **[special-vocabulary.md § Ability](special-vocabulary.md#ability)**.
 
-Plural grammar (**-sh** after the reference suffix: [associative](plurality.md#associative) *anchor and associates* on nouns / event-sets / vocatives; **listener…sh** = [address set](plurality.md#person-role-sh); **collective** ascription on `/ɡ/`; unused on `/w/` `/h/` `/x/` and number words) lives in **[plurality.md](plurality.md)**. Generics and *every K* use invert **ua** with SHARED kind (`zual gagadal`), not **-sh** — [coordination.md](coordination.md#universals-domains-generics). Habitual / characterizing pattern uses **`hual`**, not adjective **-sh**. Exceptionlessness warrant ([COMMON](special-vocabulary.md#universality) `ewono` default, …) stacks as mood `/h/`, separate from the domain fence.
+### Adjectives in SHARED fence slots
+<a id="adjectives-in-shared-fence-slots"></a>
 
-# Pronouns
+SHARED `/ɡ/` under phrase joins (distributive, equative, comparative, kind domain, numeric span, collective **-sh**): **[coordination.md](coordination.md)**, **[comparatives.md](comparatives.md)**, **[plurality.md](plurality.md)**, **[numbers.md § Ranges](numbers.md#ranges)**.
 
-Pronoun grammar (anaphoric **-r** forms; special **`umogo`** / **`ehado`** / **`ana`** / **`enu`** / **`odo`** — inclusive *we* = **`ana`**, [clusivity](pronouns.md#clusivity)) lives in **[pronouns.md](pronouns.md)**.
+### Values and restrictors on `/w/` / `/h/`
+<a id="values-and-restrictors-on-w-h"></a>
 
-# Glosses
+Ordinary `/w/` and `/h/` **default** to [values](values.md). Prefixed `hal` / `wal` / … are [restrictors](restrictors.md), not sibling *and*. Evidential and related mood roots: [special-vocabulary.md](special-vocabulary.md#evidentiality).
 
-How to write morph glosses and free English in docs and examples (senses as separate roots; no etymology arrows; free English **loose** by default): **[glosses.md](meta/glosses.md)** ([strict vs loose](meta/glosses.md#strict-vs-loose-free-english)).
+### Phrase-level, VP-level, and clause-level joins
+<a id="phrase-level-vp-level-and-clause-level-joins"></a>
 
-# Numbers
+Same-slot joins use PoS + join vowel + ending with a **right-close fence** only (no left fence; no pure infix). Full vowel series, focus/bare, negation, invert, frame echo, and nesting: **[coordination.md](coordination.md)**. Revisers (*including* / *rather* / *instead* / *except*): **[revisers.md](revisers.md)**. `/h/`/`/w/` circumstance fences: **[restrictors.md](restrictors.md)**.
 
-Numeral grammar (digit roots, [digitless / zero-group forms](numbers.md#zero-digit-groups), [digitless exponents](numbers.md#digitless-exponents) (+∞ / −∞ / last place / start place / [notional / imaginary](numbers.md#imaginary) **`g-e-`** / [zero × exponent](numbers.md#zero-exponent) — **`g+0e`** absolute zero / **`g±0e-1`** engineering null·residue at OoM −1 / **`g#0e`** rank annihilated; [bare OoM](numbers.md#bare-oom-bands) **`g+e0`** ones / **`Ne0`** OoM-0 assert ([ambient](numbers.md#ambient-scale)); **`g#e0`** current generation; **`v+0el`** *annihilate* / **`j+0e`** *Annihilate!* / …; `/v/` `/h/` overlays / **`j+e`** *To infinity!* / …), engineering/scientific forms, ordinals (forward **`#`**, end-relative **`#-`** / **`eu`**, [generation](numbers.md#ordinal-generation) via digitful exp — **`g#e0`** current gen), digit-strings, `/x/` enumeration, number-word shape, [preferred writing](numbers.md#writing-preferred-shorthand) / [style](numbers.md#writing-style-numeric-vs-spelled) (second-slot **`~`** / **`@`** / **`=`** for endings), [percent denominators](numbers.md#percent-denominators), [ranges](numbers.md#ranges) / [thresholds](numbers.md#numeric-thresholds) / [measure phrases](numbers.md#measure-phrases); PoS-less stems in [numeric derivation](special-vocabulary.md#numeric-derivation) compounds) lives in **[numbers.md](numbers.md)**.
+### Mid-word **x** vs discourse **x**
+<a id="mid-word-x-vs-discourse-x"></a>
+<a id="discourse-markers-spans-and-enumeration"></a>
 
-# Comparatives, superlatives, and equatives
+Word-initial **x** is discourse-marker PoS (linkers, clause joins, span closes). Mid-word **x** joins roots inside compounds (and inside span-fence *speech* opens). It is not an ordinary root consonant. Phonotactics: [phonology.md](phonology.md#phonotactics). Parser families: [x-compounds.md](x-compounds.md). Span fences: [spans.md](spans.md). Numbered enumeration (`x#e-` / `x#e`, …): [numbers.md](numbers.md#number-as-discourse-marker-by-marker).
 
-Scalar comparison (ranked **`e` / `oe` / `ue`** *more / …-est*, **`ae`** *as … as*, distributive **`a`** + SHARED `/ɡ/`, measured differentials, [judgment benchmarks](comparatives.md#judgment-benchmarks) *worse than Average|…* via **`ue`** + **`zonugon`** / **`zaheman`** / **`zumogoxrawon`** / **`zulohun`** / **`zaloban`** / **`zuan`** — performance vs personal standard: **`zumogon`** vs **`zumogoxrawon`**): **[comparatives.md](comparatives.md)**. Measure NP shape (unit + amount): **[numbers.md § Measure phrases](numbers.md#measure-phrases)**.
+### Dependent clauses — chaining and adverbial
+<a id="dependent-clauses-chaining-and-adverbial"></a>
 
-# Predication (classification and identity)
+**Chaining:** each clause may have at most one matrix-final **`odo`**; a dependent may itself end in **`odo`** (right-branching only). **Adverbial** *because* / *if* / *iff* / … = `/h/` relation + `/b/` **`odo`** (contiguous, matrix-final). Core roots **`urugu`** / **`orodo`** / **`eluve`**: [causation.md § IF vs IFF](causation.md#if-vs-iff). Do not encode those subordinators as `/x/`.
 
-Zero-copula **classification** / property ascription (`jal z<Sam>n gedagel`) and closed **`SAME`** **identity** (`jal z<Clark>n gogunol b<Superman>n` — **`oguno`** 🪙): **[predication.md](predication.md)**. Not scalar equative `ae`; no general *to-be* `/v/`.
+## Advanced
 
-# Causation (necessary / sufficient)
+Rare or stylistic material on this hub. Most advanced inventory lives in linked grammar docs.
 
-Causal / condition claims reuse existing joins — default open sufficient (**`…aom`** / **`haon`**); necessity via **`huan`/`guan`** / **`hal`**; clause poles via `/h/`+**`odo`** (not `xaom`-as-cause); preference-as-law stacks [values](values.md); no cause-arrow word: **[causation.md](causation.md)**.
+### Speech / song left cues
+<a id="speech-song-left-cues"></a>
 
-# Phrase-level, VP-level, and clause-level joins
+**Speech / song:** when pauses are weak (singing, fast free order), prefer an audible left cue after silence — polar, vocative, or marked force — rather than a bare body with only implied **`jal`**. Writing still uses `.` for body edges.
 
-Phrase-level **zam** / **gam** / …, VP **vam** / **var** / … (joins **-l** / **-m** / **-r**; VP `-n` = [join-act verbs](special-vocabulary.md#join-act-verbs); `/ɡ/` `/h/` `-n` = [join-relations](special-vocabulary.md#join-relations)), and clause `/x/` + vowel + ending (soft **-n** ≠ named **-n**; *and then* = **`xan`**; **-r** = unspecified-member at all levels): **fence** (right close only; shared modifiers immediately after the join; [fence nesting](coordination.md#fence-nesting)); SHARED scale `/ɡ/` = [comparatives / equatives](comparatives.md) (`z<Sam>n z<Lea>n zel g<big>l` / `z<Sam>n z<Lea>n zael g<big>l` / `z<Sam>n z<Lea>n zal g<big>l` = distributive *both big* / `z<box>l z<crate>l zal g<heavy>lsh` = [collective](plurality.md#collective-ascription) / focus `z<Sam>n zel g<big>l` / bare `zoel g<big>l` = *no biggest*); SHARED continuum `/ɡ/` + two number endpoints = [number ranges](numbers.md#ranges) (`z+3 z+5 zel g<age>l` = *from age 3 to 5*; bare `z+3 z+5 zel` = preference); invert **ua** SHARED `/ɡ/` = [kind domain / generics](coordination.md#universals-domains-generics) (`zual gagadal` = *every cat*; `hual` = habitual *always*); prefix-less **al** / **am** / **an** / **el** / … (**-l** / **-m** / named **-n** required; parallel chains on A) = revisers (*including* / *rather* / *instead* / *except*): **[coordination.md](coordination.md)**. Number ranges and measure phrases: **[numbers.md](numbers.md)**. No bare word-level joins.
+# Linked grammar
 
-# Questions
-
-Interrogative forces (**jol** / **jom**), yes/no vs fill-ask, multi-gap **fill-all**, focus/bare under question, and polar answers (**`jael`** / *true*, **`juel`** / *false*, **`jaol`** / **`juol`** / **`jual`** …): **[questions.md](questions.md)** ([yes/no polarity](questions.md#yes-no-polarity)).
-
-# Citations, mentions, and asides
-
-Span fences: **open** `{PoS}{TYPE}x{EDGE}{ENDING}` (writing = PoS + optional **`@`** / **`~`** after PoS + `[…]` / `{…}` / `(…)` / `<…>`; **`d@[…]`** = proper, **`d~[…]`** = paraphrase; hedged proper `@~` spelled **`d@[…]`** with uncertain tone; TYPE **a** cite / **e** aside / **o** mention / **u** opaque; EDGE **a** multi / **e** clause-scoped / **o** atomic / **u** empty; **-l** exact / **-m** paraphrase / **-n** proper / **-r** span anaphor (*that* cite); e.g. `daxal` / `daxol` / `daxan` / `daxar` / `d[…]` / `d[hi]` / `d@[…]` / `d[=]`); **close** **`xuxul`** (complete) / **`xuxur`** (truncated — `-]`) / **`xuxun`** (sic — `#]`) / **`xuxum`** (pop all; writing `-\|` / `#\|` = truncated or sic + pop all). **Adjunct-scope islands** **`^ … ^`** (prosody-only; binder inside: `/h/` and/or join; no nesting): **[spans.md](spans.md)**.
-
-# Values
-
-Ordinary **`/h/`** / **`/w/`** content defaults to **values** (needs): closed roots **`obola`** (autonomy) / **`odolo`** (competence) / **`ogono`** (relatedness) / **`azedo`** (pleasure) / **`uzehu`** (survival) / **`egege`** (unspecified); **topic** (bare need) or compound **`need x {a\|e\|o\|u}`** = **met** / **motive** / **prescription** / **unmet**; endings = **contact channel** on **`xa`**, **preference standing** on **`xe`**, **prescription force** on **`xo`** (invite / endorse / commit / bound), or **changeability** on **`xu`**. **[values.md](values.md)**.
-
-# Special vocabulary
-
-Closed non-need **ability** / **incapability**: primary compound **`HOST x {a\|u}`** with **changeability** endings (`v<sing>xun` = can’t sing, fixed); fallback closed **`egera` x {a\|u}`** (**`ABIL`**) when hostless / clause-wide; **`xe`** / **`xo`** undefined. **Role compounds**: **`{a\|u\|o} x ROOT`** = **agent** / **patient** / **reltum** of an event or relation root (`zax<attack>r` = *the attacker*; `dux<attack>r` = *the one attacked*; bare `z<attack>r` = *that attack*); **`e x …`** reserved; ordinary **-l/-m/-n/-r**. **Numeric derivation**: **`ROOT x NUM`** (PoS-less number stem, no number ending on `NUM`) = essence (`ROOTx+e`), grain (`ROOTx+e-`), void (`ROOTx-e`), quasi (`ROOTx-e-`; `ROOTx-e-1` / `ROOTx-e-2` quasi-N), origin/telos (`ROOTx#e-` / `ROOTx#e`), poly/de (`ROOTx+` / `ROOTx-`), digit morphs (`ROOTx+1`…`+9` strong readings; `ROOTx-N` = privative including `ROOTx-0` anti-null; `ROOTx+0` = null; PoS readings for null / anti-null — [null / anti-null](special-vocabulary.md#null-anti-null); ordinal digit morphs `ROOTx#N` = rank-N / Nth-order kind — [ordinal digit morphs](special-vocabulary.md#ordinal-digit-morphs); bare `ROOTxN` illegal), [zero × exp](special-vocabulary.md#zero-exponent-derivation) (`ROOTx+0e` total null / `ROOTx+0e-` sterile / `ROOTx±0e-1` engineering null·residue at OoM −1 / `ROOTx-0e` absolute residue / `ROOTx#0e` rank annihilated — free twins **`v+0el`** *annihilate*, **`g+0e-1`**, **`g#0e`**, …; free **`g+e0`** ones band / **`Ne0`** OoM-0 assert / **`g#e0`** current gen in [numbers.md](numbers.md); no **`ROOTx+e0`** / **`+0e0`** / **`+Ne0`** morphs), label/code (`ROOTx_` / `ROOTx_N` — *specimen #1*, not *first*; infinite / landmark labels `ROOTx_e` / `ROOTx_e-` / `ROOTx_1e` — [infinite labels](special-vocabulary.md#infinite-labels)), hyperbole (`ROOTx+1e` / `ROOTx#1e` / `ROOTx_1e`); ordinary host ending only — [numeric derivation](special-vocabulary.md#numeric-derivation). **Join-act verbs**: closed defective `/v/`…**-n** (`van` / `von` / …) enact the join-series move on an object — not VP soft joins; *and then* = clause **`xan`**. **Join-relations**: closed defective `/ɡ/` `/h/`…**-n** (`gan` / `han` / …) = complex adj/adv with unary `/b/` (*including* / *with* / *without* / …) — not named AP lists (use [mention](spans.md) for stock bundles). **Plan / predict**: closed mood roots **`owaro`** (*plan*, 🗺️) / **`edelo`** (*forecast*, 🔭) under `/h/` — **not** `x`-compounds; predict stacks with ordinary [evidentiality](special-vocabulary.md#evidentiality). **Evidentiality** (how you know): closed channels under `/h/` — **`uhunu`** 🎣 (*memory* / **WITNESSED**), **`eroge`** ⏺️ (**RECORDED**), **`awa`** 🐾 (*trail* / **PATTERN**), **`eve`** 🕵️ (*investigation* / **INFERRED**), **`erare`** 👂 (*listening* / **TOLD** / hearsay), **`ahe`** ❤️ (*gut-felt* / **FELT**), **`orolo`** 📜 (*tale* / **STORY**); **not** `x`-compounds. **Emotion compose**: drop opaque emotion-for-judgment; stack ordinary [value](values.md) + closed **ACT** (`ogena` flood / `oju` flow / `ozono` stillness) + **LOCUS** (`abobo` bottle / `oburo` pour / `agena` awash) — water tide/vessel metaphors; **not** a parallel `x`-system. **COMMENT** (mindfulness noting): closed **`uho`** 💭 (*thought* → *commentary*) for **cognitive** attitudes (*think* / *assume* / *imagine* / *wonder*) — **not** stacked on [emotion compose](special-vocabulary.md#emotion-compose); *believe* uses [evidentiality](special-vocabulary.md#evidentiality). **Numbered alternatives** (ideation): lexicon **`ubezu`** / **`egoge`** / **`ogalo`** + free **`g#N`** — style, not new morphology — [numbered alternatives](special-vocabulary.md#numbered-alternatives). **[special-vocabulary.md](special-vocabulary.md)**. Mid-word **`x`** parser families: **[x-compounds.md](x-compounds.md)**.
-
-# Phonology and Phonotactics
-
-Phonology, syllable structure, and phonotactics live in **[phonology.md](phonology.md)**. Mid-word **`x`** family disambiguation: **[x-compounds.md](x-compounds.md)**.
+| Doc | Topic |
+|-----|--------|
+| [reference-suffix.md](reference-suffix.md) | **-l** / **-m** / **-n** / **-r**; [phrasal proper names](reference-suffix.md#phrasal-proper-names) |
+| [plurality.md](plurality.md) | **-sh** associative / address-set / collective |
+| [pronouns.md](pronouns.md) | Letter anaphors; **`umogo`** / **`ehado`** / **`ana`** / **`enu`** / **`odo`** |
+| [meta/glosses.md](meta/glosses.md) | Morph glosses; [strict vs loose](meta/glosses.md#strict-vs-loose-free-english) free English |
+| [meta/learning-levels.md](meta/learning-levels.md) | Beginner / intermediate / advanced banding |
+| [meta/grammar-docs.md](meta/grammar-docs.md) | Learner-facing grammar prose style |
+| [numbers.md](numbers.md) | Numerals, ranges, measures, `/x/` enumeration |
+| [comparatives.md](comparatives.md) | Rank joins; equatives; judgment benchmarks |
+| [predication.md](predication.md) | Zero-copula classification; **`SAME`** identity |
+| [causation.md](causation.md) | Necessary / sufficient; *if* / *iff* / *because* |
+| [coordination.md](coordination.md) | Phrase / VP / clause joins |
+| [questions.md](questions.md) | **jol** / **jom**; [polar stance](questions.md#yes-no-polarity) |
+| [spans.md](spans.md) | Cite / aside / mention / loan packaging; adjunct islands |
+| [values.md](values.md) | Needs on `/h/` / `/w/` |
+| [special-vocabulary.md](special-vocabulary.md) | Ability, roles, numeric derivation, moods, … |
+| [phonology.md](phonology.md) | Phonology and phonotactics |
+| [x-compounds.md](x-compounds.md) | Mid-word **`x`** parser families |
+| [revisers.md](revisers.md) | Prefix-less revisers |
+| [restrictors.md](restrictors.md) | `/h/` / `/w/` restrictor joins |

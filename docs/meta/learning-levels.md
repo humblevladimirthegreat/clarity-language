@@ -2,7 +2,7 @@
 
 Grammar docs are organized so a learner can finish **all beginner** sections across docs before **intermediate**, then **advanced**. Levels are assigned with a **small fixed rubric**, applied **loosely** — enough consistency for a cross-doc path, not a score for every morph.
 
-This page is pedagogy, not language design. Design authority stays in [language-reference.md](../language-reference.md) and the linked grammar docs.
+This page is pedagogy, not language design. Design authority stays in [language-reference.md](../language-reference.md) and the linked grammar docs. Prose and example style for those pages: [grammar-docs.md](grammar-docs.md).
 
 ## Rubric (three questions)
 

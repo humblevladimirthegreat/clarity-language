@@ -302,7 +302,7 @@ Material inside a **cite / aside / mention** may be a fragment or a full sentenc
 | Need | Use |
 |------|-----|
 | **Raw foreign / code / unparsed surface** in a clause slot | **opaque** — writing `d<sushi>` (**no** reference suffix after `>`), speech `duxol sushi` (atomic) or `duxal sushi xuxul` |
-| **Compact foreign content word** (donor root, ordinary morphology) | `PoS<…>ENDING` — e.g. `d<sushi>l`, `z<Sam>n` — [orthography](language-reference.md#orthography) |
+| **Compact foreign content word** (donor root, ordinary morphology) | `PoS<…>ENDING` — e.g. `d<sushi>l`, `z<Sam>n` (ending after `>`; ordinary content word, not a span fence) |
 | **Use–mention** (*the word/form X*) | **mention** — `d{…}` / `doxal` … `xuxul` / `doxol` … |
 | **Title string / proverb as wording** (pick out work; recite/report line) | **cite** — `d[…]` / `d@[…]` / `daxal` … / `daxan` … |
 | ***The title X* / *the proverb X*** as named unit | **mention** **-n** — `d@{…}` / `doxan` … |
