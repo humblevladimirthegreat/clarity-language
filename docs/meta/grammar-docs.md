@@ -1,12 +1,14 @@
 # Grammar doc style (for learners)
 
-How to write Clarity **grammar docs** so a learner can use them. Design authority for morphology stays in those pages and [language-reference.md](../language-reference.md); this page standardizes **pedagogy and prose** only.
+How to write Clarity **grammar docs** under **`docs/grammar/`** so a learner can use them. Applies **only** to that folder (not to `meta/`, `examples/`, or `proposals/`). Design authority for morphology stays in those pages (core sentence grammar: [language-reference.md](../language-reference.md) until Phase 0 renames it to `grammar/core.md`); this page standardizes **pedagogy and prose** only.
+
+Grammar pages must **not** link to or mention `meta/` or any other folder outside `grammar/` — only peer links inside `grammar/`. Editors follow this page and [learning-levels.md](learning-levels.md) privately. Rollout: [migration-grammar-docs.md](migration-grammar-docs.md).
 
 Related meta:
 
 | Page | Owns |
 |------|------|
-| [learning-levels.md](learning-levels.md) | **Beginner** / **Intermediate** / **Advanced** banding rubric |
+| [learning-levels.md](learning-levels.md) | **Beginner** / **Intermediate** / **Advanced** banding rubric (for `docs/grammar/` only) |
 | [glosses.md](glosses.md) | Morph glosses and free English |
 
 ## Dual role
@@ -154,10 +156,11 @@ Do **not** require a **Not this** column on every table, or a counter-example on
 
 ## Cross-links and scope
 
-- Own your subsystem; link out for PoS, endings, joins, numbers, and so on.
+- Own your subsystem; link out for PoS, endings, joins, numbers, and so on — **only to other files in `docs/grammar/`**.
+- Never link to or mention `meta/`, `examples/`, `proposals/`, `data/`, or repo-root files from a grammar page.
 - One canonical anchor per concept (`<a id="…">`); keep ids stable.
 - Do not dump the whole related-inventory into the lead paragraph.
-- **IPA and pronunciation** belong only in [phonology.md](../phonology.md). Grammar docs use orthographic letters (`j`, `x`, `/j/`, `/x/`) — never IPA transcriptions or sound cues. If a learner needs how a letter sounds, link once to phonology.
+- **IPA and pronunciation** belong only in [phonology.md](../phonology.md). Grammar docs use orthographic letters (`j`, `x`, `/j/`, `/x/`) — never IPA transcriptions or sound cues. If a learner needs how a letter sounds, link once to phonology (peer in `grammar/` after Phase 0).
 
 ## What belongs where
 
@@ -168,7 +171,7 @@ Do **not** require a **Not this** column on every table, or a counter-example on
 | Level rubric / reading order | [learning-levels.md](learning-levels.md) |
 | Doc prose / example style | This page |
 | Goals / feature criteria | [introduction.md](../introduction.md) |
-| Core sentence grammar | [language-reference.md](../language-reference.md) |
+| Core sentence grammar | [language-reference.md](../language-reference.md) (→ `docs/grammar/core.md` after [migration](migration-grammar-docs.md) Phase 0) |
 | IPA / pronunciation / phonotactics | [phonology.md](../phonology.md) |
 | Unassigned or rejected design | [TODO.md](../../TODO.md) or **Design notes** |
 | Multi-turn practice | [examples/](../examples/) |
