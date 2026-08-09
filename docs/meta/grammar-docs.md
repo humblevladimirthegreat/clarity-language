@@ -142,6 +142,7 @@ Do **not** require a **Not this** column on every table, or a counter-example on
 - Own your subsystem; link out for PoS, endings, joins, numbers, and so on.
 - One canonical anchor per concept (`<a id="…">`); keep ids stable.
 - Do not dump the whole related-inventory into the lead paragraph.
+- **IPA and pronunciation** belong only in [phonology.md](../phonology.md). Grammar docs use orthographic letters (`j`, `x`, `/j/`, `/x/`) — never IPA transcriptions or sound cues. If a learner needs how a letter sounds, link once to phonology.
 
 ## What belongs where
 
@@ -153,6 +154,7 @@ Do **not** require a **Not this** column on every table, or a counter-example on
 | Doc prose / example style | This page |
 | Goals / feature criteria | [introduction.md](../introduction.md) |
 | Core sentence grammar | [language-reference.md](../language-reference.md) |
+| IPA / pronunciation / phonotactics | [phonology.md](../phonology.md) |
 | Unassigned or rejected design | [TODO.md](../../TODO.md) or **Design notes** |
 | Multi-turn practice | [examples/](../examples/) |
 
