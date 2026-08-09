@@ -1,91 +1,257 @@
 # Special vocabulary
 <a id="special-vocabulary"></a>
 
-This page is the source of truth for **special morphology and closed roots** that are **not** [values](values.md) (needs) and **not** [restrictors](restrictors.md) (applicability joins). They reuse mid-word **`x`** where useful ([ability](#ability): host + stance vowel; [role compounds](#role-compounds): ROLE vowel + event/relation root; [numeric derivation](#numeric-derivation): host + number stem), but keep their own inventories; some entries are closed mood roots with **no** `x`-addition (plan / predict, [evidentiality](#evidentiality) including [memory / record](#memory-record) past framing, [universality](#universality), emotion activation / locus, **comment** / mindfulness noting); **join-act verbs** and **join-relations** reuse join-vowel spellings under `/v/` `/ɡ/` `/h/`…**-n**. Parser families for mid-word **`x`**: **[x-compounds.md](x-compounds.md)**.
+Closed morphology and mood roots that are **not** [values](values.md) (needs) and **not** [restrictors](restrictors.md) (applicability). Some reuse mid-word **`x`** ([ability](#ability), [role compounds](#role-compounds), [numeric derivation](#numeric-derivation)); others are closed `/h/` mood roots with no `x`-addition (plan / predict, evidentiality, universality, emotion ACT / LOCUS, **COMMENT**); join-act verbs and join-relations reuse join-vowel spellings under `/v/` `/ɡ/` `/h/`…**-n**. Mid-word **`x`** parser families: [x-compounds.md](x-compounds.md).
 
-Ordinary `/h/` / `/w/` content still defaults to values unless the form is already in a clearer closed subcategory (restrictors, special vocabulary here, evidentiality/mood, degree, adjuncts, numbers) — see [values.md](values.md#default-reading-of-h-and-w).
+**Prerequisites:** [core.md](core.md) Beginner; [reference-suffix.md](reference-suffix.md) Beginner; [coordination.md](coordination.md) Beginner for joins; [values.md](values.md) Beginner for ability contrast; [x-compounds.md](x-compounds.md) Intermediate when parsing mid-word **`x`**.
 
-**Not here:** *worse than Average|…* benchmarks are NP comparees on comparative fences — [comparatives.md § Judgment benchmarks](comparatives.md#judgment-benchmarks) (lexicon **-n** comparees; **Everyone** = bare **`zuan`**; normative **Mine** = **`zumogoxrawon`** under [numeric derivation](#numeric-derivation) below). **Classification** (kind as predicative `/ɡ/`) and closed **`SAME`** **identity** (`goguno` 🪙 + `/b/`) live in **[predication.md](predication.md)** — not a general *to-be* verb and not `x`-compounds. **Causation** / necessary–sufficient reuses joins and these join-relations — **[causation.md](causation.md)** — not a new mood or `x`-compound on this page (optional **`CAUSE`** mood = lexicon **`erage`** ⚙️ *mechanism*; do not reuse for NATURAL). **Numbered alternatives** (ideation *problem1* / *solution2* / *goal3*) is style + lexicon on free ordinals — [numbered alternatives](#numbered-alternatives) below — **not** new morphology.
+## Beginner
+<a id="beginner"></a>
 
-## Sense-form overlays
+### Sense-form overlays
 <a id="sense-form"></a>
 
-**Sense-form** = published Clarity root + [reference ending](reference-suffix.md) that **is** the closed overlay reading for that PoS — no PoS prefix. Example: **`uhunum`** under `/h/` = evidential *memory / witnessed*; **`huhunul`** = ordinary literal *in a fishing manner* — not the evidential. Mood overlays **generally** use **-m** (figurative published sense); other endings when that is how the overlay is defined (benchmark **-n**, universality **-l**, join-act / join-relation defective **-n**, …). Join-act / join-relation stems are the vowel + **-n** only (`an` / `on` / …); written words are **`pos` + sense-form** (`van` / `gan` / `han`).
+Some published roots carry a **closed overlay reading** for a fixed PoS — the word **is** that special sense, without inventing a new root. Example: **`uhunum`** under `/h/` = evidential *memory / witnessed*; **`huhunul`** = ordinary literal *in a fishing manner*.
 
-Closed overlay inventory: one entry per **`(sense_form, pos)`** with a fixed definition and mnemonic; ordinary content PoS on the same root is **not** listed. Prefer published roots when the English sense matches.
+**Shape:** sense-form + [reference ending](reference-suffix.md). Mood overlays usually take **-m** (figurative published sense); other endings when that is how the overlay is defined (benchmark **-n**, universality **-l**, join-act / join-relation defective **-n**, …). Join-act / join-relation stems are the vowel + **-n** only (`an` / `on` / …); written words are **`pos` + sense-form** (`van` / `gan` / `han`).
 
-## Join-act verbs (`v*n`)
+**Mnemonic:** same root, special PoS reading — the ending marks which overlay you mean.
+
+Ordinary content PoS on the same root stays available and is **not** the overlay. Prefer published roots when the English sense matches.
+
+### Join-act verbs (`v*n`)
 <a id="join-act-verbs"></a>
 <a id="verb-join-n"></a>
 
-Closed `/v/` verbs that **perform the join-series act** on an object. Spellings match the join vowel + **-n** (`van`, `von`, …). They are **not** VP soft-packaging joins — soft packaging (including *and then*) lives on clause `/x/`…**-n** only (`xan`, …) — [coordination.md § Soft **-n**](coordination.md#soft-n-clause).
+Name the **coordination move you perform** on an object — *include*, *choose*, *exclude*, … — as a closed `/v/` verb.
 
-### Pattern
+**Shape:** join vowel + **-n** under `/v/` (`van`, `von`, …). One `/d/` object (singular or group). Group objects use ordinary noun **-sh** (`d-…lsh`); verb **-sh** is only for an event-set referent ([plurality](plurality.md)).
 
-- **One `/d/` object** (singular or group). Group objects use ordinary noun **-sh** (`d-…lsh`); verb **-sh** is only for an event-set referent ([plurality](plurality.md)).
-- **Defective**: only the **-n** exponent exists as a content verb. Parallel `-l` / `-m` / `-r` spellings stay VP **joins** (`val` / `vam` / `var`, …). Resume a prior join-act with a letter pronoun or a full paraphrase — not `var` (that is *do something*).
-- Vowel = which coordination move you enact; **-n** = that move as a titled/conventional doing ([reference-suffix](reference-suffix.md#proper-name--n) verb sense).
+**Mnemonic:** vowel = which join move; **-n** = that move as a titled doing ([reference-suffix](reference-suffix.md#proper-name--n) verb sense).
 
-### Inventory
+```
+`z<Sam>n dabebal van.`
+
+gloss: `z-Sam` · `d-apple` · `v-includes`
+
+*Sam includes/adds an apple.*
+```
+
+These are **content verbs**, not VP soft-packaging joins. Soft packaging (including *and then*) lives on clause `/x/`…**-n** only (`xan`, …) — [coordination.md § Soft **-n**](coordination.md#soft-n-clause). Parallel `-l` / `-m` / `-r` under `/v/` stay VP **joins** (`val` / `vam` / `var`, …). Resume a prior join-act with a letter pronoun or a full paraphrase — not `var` (that is *do something*).
 
 | Form | Gloss | Example |
 |------|--------|---------|
-| **`van`** | *includes / adds* | `jal z<Sam>n dabebal van` — *Sam includes/adds an apple* |
-| **`von`** | *chooses (as the one choice)* | `jal z<Sam>n dadedal von` — *Sam chooses tea (as the one choice)* |
-| **`vaon`** | *picks (with potentially more picks coming)* | `jal z<Sam>n d<topping>l vaon` — *Sam picks a topping (more picks may follow)* |
-| **`vun`** | *denies / refuses* | `jal z<Sam>n dulel vun` — *Sam denies/refuses the lie* |
-| **`vuan`** | *excludes* | `jal z<Sam>n d<nut>l vuan` — *Sam excludes nuts* |
-| **`vuon`** | *bars (anything but)* | `jal z<Sam>n dogevel vuon` — *Sam bars coffee (anything else is fine)* |
-| **`ven`** | *prioritizes* | `jal z<Sam>n dugujul ven` — *Sam prioritizes the bug* |
-| **`vaen`** | *equates / ties* | `jal z<Sam>n d<candidate>lsh vaen` — *Sam equates the candidates* |
-| **`voen`** | *tries* | `jal z<Sam>n d<fix>l voen` — *Sam tries the fix* |
-| **`vuen`** | *deprioritizes* | `jal z<Sam>n d<dessert>l vuen` — *Sam deprioritizes dessert* |
+| **`van`** | *includes / adds* | `z<Sam>n dabebal van` — *Sam includes/adds an apple* |
+| **`von`** | *chooses (as the one choice)* | `z<Sam>n dadedal von` — *Sam chooses tea (as the one choice)* |
+| **`vaon`** | *picks (with potentially more picks coming)* | `z<Sam>n d<topping>l vaon` — *Sam picks a topping (more picks may follow)* |
+| **`vun`** | *denies / refuses* | `z<Sam>n dulel vun` — *Sam denies/refuses the lie* |
+| **`vuan`** | *excludes* | `z<Sam>n d<nut>l vuan` — *Sam excludes nuts* |
+| **`vuon`** | *bars (anything but)* | `z<Sam>n dogevel vuon` — *Sam bars coffee (anything else is fine)* |
+| **`ven`** | *prioritizes* | `z<Sam>n dugujul ven` — *Sam prioritizes the bug* |
+| **`vaen`** | *equates / ties* | `z<Sam>n d<candidate>lsh vaen` — *Sam equates the candidates* |
+| **`voen`** | *tries* | `z<Sam>n d<fix>l voen` — *Sam tries the fix* |
+| **`vuen`** | *deprioritizes* | `z<Sam>n d<dessert>l vuen` — *Sam deprioritizes dessert* |
 
-### Contrasts
+**Key contrasts** (English near-misses):
 
 | | Clarity | Gloss |
 |--|---------|--------|
-| refuse vs exclude | `jal zumogon demadel vun` vs `jal zumogon demadel vuan` | *I refuse meat* vs *I exclude meat* |
-| exclude vs anything but | `jal zumogon d<nut>l vuan` vs `jal zumogon d<nut>l vuon` | *I exclude nuts* vs *I bar nuts (anything else is fine)* |
-| one choice vs open picks | `jal zumogon d<path>l von` vs `jal zumogon d<path>l vaon` | *I choose that path (only)* vs *I pick that path (more may come)* |
-| prioritize vs try | `jal zumogon d<fix>l ven` vs `jal zumogon d<fix>l voen` | *I prioritize the fix* vs *I try the fix* |
-| *and then* (clauses) | `SENT₁ SENT₂ xan` | *SENT₁ and then SENT₂* — **not** `van` |
+| refuse vs exclude | `zumogon demadel vun` vs `zumogon demadel vuan` | *I refuse meat* vs *I exclude meat* |
+| exclude vs anything but | `zumogon d<nut>l vuan` vs `zumogon d<nut>l vuon` | *I exclude nuts* vs *I bar nuts (anything else is fine)* |
+| one choice vs open picks | `zumogon d<path>l von` vs `zumogon d<path>l vaon` | *I choose that path (only)* vs *I pick that path (more may come)* |
+| prioritize vs try | `zumogon d<fix>l ven` vs `zumogon d<fix>l voen` | *I prioritize the fix* vs *I try the fix* |
+| *and then* (clauses) | `SENT₁ SENT₂ xan` | *SENT₁ and then SENT₂* — use clause soft **-n**, not `van` |
 
-### Constraints
+Boundaries: not revisers (`an` / `on` / …) and not phrase named-list **-n** (those stay on `/z/` `/d/` `/b/` `/w/`). Only the **-n** exponent is a content join-act; `-l` / `-m` / `-r` under `/v/` remain joins.
 
-- Not VP joins and not soft packaging.
-- Not revisers (`an` / `on` / …) and not phrase named-list **-n** (those stay on `/z/` `/d/` `/b/` `/w/`).
-- Do **not** invent `-l` / `-m` content readings for these roots under `/v/` — those spellings are joins.
+### Role compounds (`a` / `u` / `o` × root)
+<a id="role-compounds"></a>
+<a id="participant-compounds"></a>
+<a id="agent-patient-reltum"></a>
 
-## Join-relations (`g*n` / `h*n`)
+Name an **event or relation participant** (*attacker*, *the one attacked*, *that of-argument*) without open lexicon role nouns.
+
+**Shape:** ROLE vowel **left** of `x` — opposite order from [values](values.md) / [ability](#ability) (those put the stance vowel **right** of `x`):
+
+```
+PoS + {a|u|o} + x + ROOT + {-l|-m|-n|-r}
+```
+
+| Piece | Role |
+|-------|------|
+| **PoS** | Prefer `/z/` `/d/` `/b/` (entity participant). `/ɡ/` optional as classifying property; `/v/` `/h/` `/w/` undefined |
+| **ROLE** | Single vowel **`a`** / **`u`** / **`o`** (not a content root) |
+| **`x`** | Ordinary [compound joiner](phonology.md#phonotactics) |
+| **ROOT** | Event stem (**`a`/`u`**) or relation stem (**`o`**) — `V(CV)+` |
+| **Ending** | Ordinary [reference-suffix](reference-suffix.md) senses — not value/ability ending tables |
+
+**Mnemonic:** **`a`** ≈ additive / doer; **`u`** ≈ subtractive / undergoer; **`o`** ≈ oblique / `/b/` pole — vowel echo only, not reviser or join readings. Mid-word **`x`** map: [x-compounds.md](x-compounds.md).
+
+**Parser cue:** after PoS, a single vowel then `x` then a **longer** root + ending → role compound. Same shape with a **single** vowel after `x` → [span](spans.md), not role. **`e x …`** is reserved (undefined) — not a fourth ROLE.
+
+| ROLE | Form | ROOT type | Referent |
+|------|------|-----------|----------|
+| **`a`** | `…axROOT…` | **event** (verb / event noun stem) | **agent** — doer / subject-like participant of that event |
+| **`u`** | `…uxROOT…` | **event** | **patient** — undergoer / object-like participant of that event |
+| **`o`** | `…oxROOT…` | **relation** (complex `/ɡ/` / `/h/` / [join-relation](#join-relations) root, …) | **reltum** — the `/b/` argument pole of that relation |
+
+Recipients, beneficiaries, topic NPs, and other adjunct `/b/`s stay ordinary resume of that `/b/` noun (or the `/h/`+`/b/` unit).
+
+#### Endings
+
+| Ending | Reading |
+|--------|---------|
+| **-l** | Indefinite / kind — *an attacker*, *attackers as a type* (`zax<attack>l`) |
+| **-m** | Soft / hedged role |
+| **-n** | Titled / epithet role label (rare) |
+| **-r** | Definite — participant of the **most recent matching** event (**`a`/`u`**) or relation (**`o`**) for that ROOT |
+
+**-r** resolution: match ROOT to the most recent verb, event noun, or relation word with that stem (including a ROOT half inside a prior role compound). ROLE picks that frame’s agent, patient, or `/b/` pole — including when the participant was only introduced as [unspecified-member](coordination.md#unspecified-member-r-phrase) **`zar`** / **`dar`** / ….
+
+Bare event noun stays the event: `z<attack>l` / `z<attack>r` = *an / that attack*, not a participant. Cross-PoS content **-r** from a verb still resumes the [event](pronouns.md), not the agent — use **`ax`/`ux`** for participants.
+
+```
+`zar dumogon v<attack>l.`
+`zax<attack>r v<flee>l.`
+
+gloss: `z-someone` · `d-me` · `v-attack` · `z-attack-agent-r` · `v-flee`
+
+*Someone attacked me. The attacker fled.*
+```
+
+| Clarity | Gloss |
+|---------|--------|
+| `zax<attack>l` | *an attacker* (kind; no discourse event required) |
+| `dux<attack>r` | *the one attacked* (as object now) |
+| `zox<of>r` | *that of-argument* (reltum of salient `…ofl b-…`) |
+| `z<attack>r` | *that attack* (event — not agent) |
+
+**Key contrasts:**
+
+| | Use |
+|--|-----|
+| Role compound | Participant derived from event/relation root |
+| Content **-r** on event | The event / doing itself ([pronouns](pronouns.md)) |
+| **`zar`** / **`dar`** | Unspecified member introduce; prefer role **-r** once the event is named |
+| Ability `v<attack>xun` | Can’t attack — **ROOT x vowel**, not ROLE vowel left of `x` |
+| Span `daxal` / `duxal` | Quote / opaque open — **vowel x vowel**, not ROLE x root |
+
+ROLE is **`a`/`u`/`o`** only; wrong ROOT type for a ROLE is illegal. Plural **-sh** on noun-slot role compounds follows ordinary [plurality](plurality.md) for that PoS.
+
+### Ability (primary: host + `xa` / `xu`)
+<a id="ability"></a>
+<a id="incapability"></a>
+
+Tag **can** / **can’t** on an activity or property root, with **changeability** on the denial (or claim) — so *can’t right now* stays distinct from *impossible* and from *won’t*.
+
+**Shape** (when the capability **is** a single content root) — same mid-word **`x`** joiner as [values](values.md#word-shape):
+
+```
+PoS + HOST + x + {a|u} + {-l|-m|-n|-r}
+```
+
+| Piece | Role |
+|-------|------|
+| **PoS** | Prefer the host’s usual role — `/v/` (event), `/ɡ/` (property), etc. |
+| **HOST** | Any **non-need** content root (*sing*, *lift*, *lead*, …) |
+| **`xa` / `xu`** | Capable / incapable |
+| **Ending** | [Changeability](#ability-changeability) only |
+
+**Mnemonic:** **`xu`** first (*can’t*); endings = how fixed the claim is — same changeability table as unmet values.
+
+**Ship first:** **`xu`** (incapability). **`xa`** when you want tagged *can*.
+
+**Parser cue:** root ∈ [six needs](values.md#need-inventory) + `x…` → **value** tables. Other roots + **`xa` / `xu`** → **ability**. **`xe` / `xo`** on non-need hosts stay undefined. After PoS, single ROLE vowel **a** / **u** / **o** then `x` then a **longer** root → [role compound](#role-compounds). After PoS, single TYPE vowel then `x` then a single EDGE vowel + ending → [span form](spans.md). Full map: [x-compounds.md](x-compounds.md).
+
+| Form | Reading |
+|------|---------|
+| `v<sing>xul` / `g<sing>xul` | can’t sing **right now** (usually able) |
+| `…singxum` | can’t sing yet / may learn (or unknown) |
+| `…singxun` | can’t sing — fixed / impossible as far as you can tell |
+| `…singxur` | won’t sing (choice) — not can’t |
+| `…singxam` | can sing; capability open to change |
+| `…singxan` | can sing; claim treated as fixed |
+
+#### Endings — changeability only
+<a id="ability-changeability"></a>
+
+On ability **`xa`** and **`xu`**, **-l / -m / -n / -r** are **changeability** — the same table as unmet values ([values.md § Changeability](values.md#value-changeability)). Not contact channel, preference standing, or prescription force.
+
+| Ending | Changeability | Mnemonic |
+|--------|---------------|----------|
+| **-l** | **temporary** — usually able; not this moment | closed *right-now* snapshot |
+| **-m** | **modifiable** — effort or circumstance may change it (also soft default if unknown) | open to change |
+| **-n** | **irreversible** — fixed / impossible as far as you can tell | settled / named-as-fixed |
+| **-r** | **won't-now** — choice or deferral, not inability | not updating this *now* |
+
+**Can't vs won't:** **-n** (irreversible) vs **-r** (won't-now). Always pick an ending on **`xa`** / **`xu`**; unknown → **-m**.
+
+| Form | Reading |
+|------|---------|
+| `…xal` | capable, **temporary** standing of that claim |
+| `…xam` | capable, **modifiable** (or unknown) |
+| `…xan` | capable, **irreversible** / fixed as far as you can tell |
+| `…xar` | capable, **won't-claim-now** (defer saying you can) |
+| `…xul` | incapable, **temporary** |
+| `…xum` | incapable, **modifiable** (or unknown) |
+| `…xun` | incapable, **irreversible** |
+| `…xur` | incapable, **won't-now** (choice) |
+
+```
+`v<sing>xul.`
+
+gloss: `v-sing-incapable-temporary`
+
+*Can’t sing right now.*
+```
+
+```
+`v<sing>xur.`
+
+gloss: `v-sing-incapable-won't-now`
+
+*Won’t sing (choice), not can’t.*
+```
+
+Hostless / clause-wide ability uses fallback **`egera`** — [Intermediate](#ability-fallback). Ability is not a need: endings stay changeability only. Plural **-sh** on `/h/` `/w/` stays unused ([plurality](plurality.md)); host `/v/` / `/ɡ/` ability compounds follow ordinary plurality for that PoS.
+
+## Intermediate
+<a id="intermediate"></a>
+
+### Join-relations (`g*n` / `h*n`)
 <a id="join-relations"></a>
 <a id="join-relation-gh"></a>
 
-Closed **complex** `/ɡ/` adjectives and `/h/` adverbs that **frame a host via the join-series move** toward one `/b/` argument. Same vowel map as [join-act verbs](#join-act-verbs). They are **not** phrase named-list joins and **not** [restrictors](restrictors.md) — stock AP bundles use [mention](spans.md) spans instead of old `A B gan` lists.
+Frame a host with the **same join-series move** toward one `/b/` argument — *including nuts*, *without meat*, *prioritizing the bug* — as a closed complex `/ɡ/` adjective or `/h/` adverb.
 
-### Pattern
+**Shape:** join vowel + **-n** under `/ɡ/` or `/h/` (`gan` / `han`, …). One `/b/` argument (singular or group). Group arguments use ordinary noun **-sh** (`b-…lsh`). Multi-member or empty domains: put a [phrase join](coordination.md) **inside** the `/b/` phrase (`gan bal b<nut>l b<seed>l`), or use a [nullary / bare](coordination.md#focus-phrase) `/b/` join as the sole argument (`gan bar` = *including something*; `guan bal` = *excluding nothing* / stripped frame).
 
-- **One `/b/` argument** (singular or group). Group arguments use ordinary noun **-sh** (`b-…lsh`). Multi-member or empty domains: put a [phrase join](coordination.md) **inside** the `/b/` phrase (`gan bal b<nut>l b<seed>l`), or use a [nullary / bare](coordination.md#focus-phrase) `/b/` join as the sole argument (`gan bar` = *including something*; `guan bal` = *excluding nothing* / stripped frame).
-- **Defective**: only the **-n** exponent is content. Parallel `-l` / `-m` / `-r` under `/ɡ/` stay AP **joins**; under `/h/` they stay [restrictors](restrictors.md) (defined core) or reserved.
-- Contiguous unit: `g*n b-…` on a noun; `h*n b-…` floats as one complex adverb.
-- Vowel = which coordination move; **-n** = that move as a titled/conventional relation ([reference-suffix](reference-suffix.md#proper-name--n)).
+**Mnemonic:** same vowels as [join-act verbs](#join-act-verbs); **-n** = titled relation toward `/b/`. Contiguous unit: `g*n b-…` on a noun; `h*n b-…` floats as one complex adverb.
 
-### Inventory
+```
+`z<cake>l gan b<nut>l.`
+
+gloss: `z-cake` · `g-including` · `b-nut`
+
+*Cake including / with nuts.*
+```
+
+These are **not** phrase named-list joins and **not** [restrictors](restrictors.md). Stock AP bundles use [mention](spans.md) spans instead of list-style `A B gan` without `/b/`. Parallel `-l` / `-m` / `-r` under `/ɡ/` stay AP **joins**; under `/h/` they stay [restrictors](restrictors.md) (defined core) or reserved.
 
 | Form | `/ɡ/` (*N … b-X*) | `/h/` (*event … b-X*) | Example |
 |------|-------------------|------------------------|---------|
-| **`gan` / `han`** | *including / with* | *with / including* | `z<cake>l gan b<nut>l`; `jal z<Sam>n han b<Lea>n v<go>l` |
-| **`gon` / `hon`** | *exclusive for* (X is N’s sole pick) | *exclusively for / as the one* | `z<menu>l gon badedal`; `jal … hon badedal vebonem` |
-| **`gaon` / `haon`** | *open to* (X admitted; more may follow) | *among options* | `zubazul gaon b<topping>l`; `jal … haon b<topping>l vebonem` |
-| **`gun` / `hun`** | *against / anti-* (refuses X) | *refusing* | `z<policy>l gun bulel`; `jal … hun bemadel v<eat>l` |
-| **`guan` / `huan`** | *without / excluding* | *excluding* | `z<cake>l guan b<nut>l`; `jal … huan b<nut>l v<bake>l` |
-| **`guon` / `huon`** | *open to anything but* (X barred; rest free) | *barring / anything but* | `z<menu>l guon b<nut>l`; `jal … huon b<nut>l vebonem` |
-| **`gen` / `hen`** | *prioritizing / headed by* | *prioritizing* | `z<backlog>l gen bugujul`; `jal … hen bugujul v<fix>l` |
-| **`gaen` / `haen`** | *on a par with* | *equating / tying* | `z<path>l gaen b<alt>l`; `jal … haen b<candidate>lsh v<rate>l` |
-| **`goen` / `hoen`** | *for trying / trial of* | *trying* | `z<path>l goen b<fix>l`; `jal … hoen b<fix>l v<deploy>l` |
-| **`guen` / `huen`** | *deprioritizing / trailing* | *deprioritizing* | `z<menu>l guen b<dessert>l`; `jal … huen b<dessert>l v<eat>l` |
+| **`gan` / `han`** | *including / with* | *with / including* | `z<cake>l gan b<nut>l`; `z<Sam>n han b<Lea>n v<go>l` |
+| **`gon` / `hon`** | *exclusive for* (X is N’s sole pick) | *exclusively for / as the one* | `z<menu>l gon badedal`; `… hon badedal vebonem` |
+| **`gaon` / `haon`** | *open to* (X admitted; more may follow) | *among options* | `zubazul gaon b<topping>l`; `… haon b<topping>l vebonem` |
+| **`gun` / `hun`** | *against / anti-* (refuses X) | *refusing* | `z<policy>l gun bulel`; `… hun bemadel v<eat>l` |
+| **`guan` / `huan`** | *without / excluding* | *excluding* | `z<cake>l guan b<nut>l`; `… huan b<nut>l v<bake>l` |
+| **`guon` / `huon`** | *open to anything but* (X barred; rest free) | *barring / anything but* | `z<menu>l guon b<nut>l`; `… huon b<nut>l vebonem` |
+| **`gen` / `hen`** | *prioritizing / headed by* | *prioritizing* | `z<backlog>l gen bugujul`; `… hen bugujul v<fix>l` |
+| **`gaen` / `haen`** | *on a par with* | *equating / tying* | `z<path>l gaen b<alt>l`; `… haen b<candidate>lsh v<rate>l` |
+| **`goen` / `hoen`** | *for trying / trial of* | *trying* | `z<path>l goen b<fix>l`; `… hoen b<fix>l v<deploy>l` |
+| **`guen` / `huen`** | *deprioritizing / trailing* | *deprioritizing* | `z<menu>l guen b<dessert>l`; `… huen b<dessert>l v<eat>l` |
 
-### Contrasts
+**Key contrasts:**
 
 | | Clarity | Gloss |
 |--|---------|--------|
@@ -94,110 +260,129 @@ Closed **complex** `/ɡ/` adjectives and `/h/` adverbs that **frame a host via t
 | sole vs open pick | `b<path>l gon` vs `b<path>l gaon` | *path-only* vs *path among options* |
 | prioritize vs try | `b<fix>l gen` vs `b<fix>l goen` | *fix-first* vs *try-the-fix* |
 | relation vs reviser | `z<team>l gan b<Sam>n` vs `z<team>l al z<Sam>n` | PP-like *team including Sam* vs slot-repair *team, including Sam* |
-| stock AP label | `g{primary colors}` / mention span | **not** `gan gedejel gulebul` (that spelling is content *including*, needs `/b/`) |
+| stock AP label | `g{primary colors}` / mention span | content *including* needs `/b/` (`gan b-…`) |
 | open vs without (causal) | `haon bazem` vs `huan bogulol` | sufficient hit vs necessary-style exclusion — [causation](causation.md) |
 
-### Constraints
+Unary `/b/` only — restore list/empty arity on the **argument**, not by stacking bare `g*n` / `h*n` as fences. Only the **-n** exponent is content under `/ɡ/` / `/h/` for these roots.
 
-- Not AP joins, not restrictors, not named-list **-n** (named lists remain on `/z/` `/d/` `/b/` `/w/` only).
-- Unary `/b/` only — restore list/empty arity on the **argument**, not by stacking bare `g*n` / `h*n` as fences.
-- Do **not** invent `-l` / `-m` content readings for these roots under `/ɡ/` / `/h/`.
+### Ability fallback (`egera`)
+<a id="ability-fallback"></a>
 
-## Comment (mindfulness noting)
+When there is **no single host root** (complex VP, hostless *I can’t*, or ability as a floating adverb), use closed **`ABIL`** = lexicon **`egera`** 🥣 *cereal* → *capacity*:
+
+```
+[h|w] + egera + x + {a|u} + {-l|-m|-n|-r}
+```
+
+| Prefix | Scope |
+|--------|--------|
+| `/h/` | clause-level capability claim (floats like other `/h/`) |
+| `/w/` | capability framed on the preceding `/ɡ/` |
+
+**Mnemonic:** a bowl holds **what it can** — hostless ability names that capacity without naming one activity root. Ordinary content still available (`zegeral` *cereal* / *a capacity*). Prefer **host+`xu`/`xa`** whenever the activity fits one root ([Beginner ability](#ability)).
+
+Bare `hegeral` / `wegeral` = ability **topic** only (ordinary [reference-suffix](reference-suffix.md)).
+
+| Form | Stance | Gloss |
+|------|--------|--------|
+| bare host (no `x`) | ordinary word | no ability claim |
+| bare **`egera`** (no `x`) | **Topic** | Ability named only |
+| **`xa`** | **Capable** | Capability present / claimed |
+| **`xu`** | **Incapable** | Capability denied — ship this first |
+
+Endings on **`egera` + `xa`/`xu`** are the same [changeability](#ability-changeability) table as host-attached ability.
+
+```
+`hegeraxul.`
+
+gloss: `h-ABIL-incapable-temporary`
+
+*Can’t right now (no single host / clause-wide).*
+```
+
+#### Ability vs values vs restrictors
+
+| Claim | Prefer |
+|-------|--------|
+| Can’t / can **this** activity or property | **host + `xu` / `xa`** ([Beginner](#ability)) |
+| Clause-wide / hostless capability | **`hegeraxu…`** / **`wegeraxu…`** |
+| Need unmet + changeability | need **`xu…`** — [values](values.md) (`hodoloxun` ≠ “can’t competence”) |
+| When / never / sometime the host applies | [restrictors](restrictors.md) (`hal`, `har`, …) |
+
+Stack when useful: e.g. can’t-sing plus unmet competence (`v<sing>xum` + `hodoloxum`). Bare **`hal`** (*never*) is applicability, not tagged incapability. Need-root **`xu`** stays unmet need, not ability. Unspecified need **`egege`** 🥚 (*potential*) is not **`ABIL`**.
+
+| Clarity (schematic) | Reading |
+|---------------------|---------|
+| `v<sing>xul` | can’t sing **right now** |
+| `v<sing>xum` | can’t sing yet / may become able |
+| `v<sing>xun` | can’t sing (fixed / impossible as far as you can tell) |
+| `v<sing>xur` | won’t sing (choice), not can’t |
+| `g<lead>xam` | can lead; capability open to change |
+| `v<sing>xum hodoloxum` | can’t sing (modifiable) **and** unmet competence |
+| `… hegeraxul` | can’t **right now** (no single host / clause-wide) |
+| `hegeral` | ability (**topic** only) |
+
+### Comment (mindfulness noting)
 <a id="comment"></a>
 <a id="mindfulness-noting"></a>
 
-First-person **cognitive** attitude verbs often mark **mental commentary** — the mind storying experience rather than contacting it. Clarity does **not** keep *think* / *assume* / *imagine* / *wonder* as separate moods. One closed mood root covers that class: **COMMENT**.
+Mark **first-person mental commentary** — the mind storying or labeling experience — with one closed mood root instead of separate *think* / *assume* / *imagine* / *wonder* moods.
 
-**Affect is not COMMENT.** *Fear* / *worry* / *dread* / *regret* / hope-as-feeling go to [emotion compose](#emotion-compose) (value + ACT + LOCUS) — do **not** stack COMMENT on those clauses. Hope-as-intention uses motive (`xe`) and/or [**PLAN**](#plan-predict), still without COMMENT. *Believe* (world-claim + warrant) waits on **evidentiality** — not this root.
+**Shape:** floating **`/h/`** mood **`uho`** 💭 *thought* → *commentary* (optional `/w/` only when COMMENT frames a preceding `/ɡ/` — rare). Prefer floating `/h/`.
 
-### Mood sense
+**Mnemonic:** a **thought balloon** floats a take over the scene. Bare contact = watching without narration. Ordinary content still available (`zuhol` *a thought*; `vuhol` *to think* as deliberate event).
 
-| Concept | Gloss | Lexicon root |
-|---------|--------|--------------|
-| **COMMENT** | Mental commentary / rumination-like overlay — mind labeling or storying experience instead of bare contact | **`uho`** 💭 *thought* → *commentary* |
+```
+`… huhom …`
 
-**Conceptual metaphor:** a **thought balloon** floats a take over the scene (voiceover / caption on experience). Bare contact = watching without narration. Ordinary content still available (`zuhol` *a thought*; `vuhol` *to think* as deliberate event). The special reading is the floating mood use, especially `/h/`.
+gloss: `h-COMMENT`
 
-Not evidentiality (*how I know*), not [contact channel](values.md#value-contact) on met values, not [emotion compose](#emotion-compose), and not perception-as-event (*she hears the door* — ordinary lexicon `/v/` if needed).
+*I think …* — commentary overlay
+```
 
-Optional `/w/` only when COMMENT frames a preceding `/ɡ/` (rare). Prefer floating `/h/`.
+```
+`… huhom … jom …`
 
-**Not `x`-compounds:** COMMENT is a **root choice**, not `xa`/`xu` polarity and not endings on attitude hosts. Do **not** compound COMMENT onto the content verb the way ability does.
+gloss: `h-COMMENT` · `j-soft-ask`
 
-### When it fires
+*I wonder …* — commentary + soft ask
+```
 
-Use COMMENT when the clause is doing **first-person cognitive commentary** — *I think*, *I'm assuming*, *I imagine*, *I wonder*, *I suppose*, rumination / overthinking, …. Third-person *thinks* / other-minds claims stay **evidentiality** (and ordinary content), not COMMENT.
+Use COMMENT when the clause is doing **first-person cognitive commentary**. Third-person *thinks* / other-minds claims stay **evidentiality** (and ordinary content). Content verbs stay ordinary; COMMENT **frames** the clause.
 
-Content verbs stay ordinary. COMMENT **frames** the clause; it does not replace the predicate with a sense verb.
-
-### Cognitive attitudes vs affect
-
-English attitude verbs smuggle COMMENT **or** affect. Split them:
+**Affect is not COMMENT.** *Fear* / *worry* / *dread* / *regret* / hope-as-feeling go to [emotion compose](#emotion-compose). Hope-as-intention uses motive (`xe`) and/or [**PLAN**](#plan-predict). *Believe* (world-claim + warrant) waits on [evidentiality](#evidentiality).
 
 | English bundle | Prefer |
 |----------------|--------|
 | *think / assume / suppose / imagine …* | **COMMENT** (`huhom`); add evidentiality only if asserting a world-claim |
-| *wonder …* | **COMMENT** + soft question (**jom**) / ask — not a wonder-mood |
-| *fear / worry / dread / regret …* | [emotion compose](#emotion-compose): unmet [value](values.md) (`xu`) + **ACT** + **LOCUS** — **no** COMMENT |
-| *hope / wish …* (feeling) | emotion compose (value + ACT + LOCUS) — **no** COMMENT |
-| *hope / wish …* (intention) | motive (`xe`) and/or [**PLAN**](#plan-predict) / soft force — **no** COMMENT; not a hope-mood |
-| *believe …* | [evidentiality](#evidentiality) (`huhunum`, `herarem`, …) — **not** COMMENT |
+| *wonder …* | **COMMENT** + soft question (**jom**) / ask |
+| *fear / worry / dread / regret …* | [emotion compose](#emotion-compose): unmet [value](values.md) (`xu`) + **ACT** + **LOCUS** |
+| *hope / wish …* (feeling) | emotion compose (value + ACT + LOCUS) |
+| *hope / wish …* (intention) | motive (`xe`) and/or [**PLAN**](#plan-predict) / soft force |
+| *believe …* | [evidentiality](#evidentiality) (`huhunum`, `herarem`, …) |
 
 | Clarity | Reading |
 |---------|---------|
-| `… huhom …` | *I think …* — commentary overlay |
-| `… huhom … jom …` | *I wonder …* — commentary + soft ask |
-| `z<meeting>l wodoloxul hogenal hagenal` | *I fear the meeting* — unmet competence; flood; room awash — **no** COMMENT |
-| `… howarom …` | *I hope to …* (intention) — soft plan; **no** COMMENT |
+| `z<meeting>l wodoloxul hogenal hagenal` | *I fear the meeting* — unmet competence; flood; room awash — no COMMENT |
+| `… howarom …` | *I hope to …* (intention) — soft plan; no COMMENT |
 
-### Do not overload other tables
+COMMENT is a **root choice**, not `xa`/`xu` polarity and not endings on attitude hosts. It is not evidentiality, not [contact channel](values.md#value-contact) on met values, not [emotion compose](#emotion-compose), and not perception-as-event (*she hears the door* — ordinary lexicon `/v/` if needed). Raw sensation without judgment may stay unlabeled — see [emotion compose](#emotion-compose). Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)).
 
-| Dimension | Stays | COMMENT is *not* |
-|-----------|--------|------------------|
-| Need met / unmet / motive / ought | [values](values.md) | a seventh need or attitude-value series |
-| Contact channel | `xa` endings (physical / mental / social / spiritual) | the COMMENT root |
-| Emotion ACT / LOCUS | [emotion compose](#emotion-compose) | a co-stack on fear/worry/regret (affect uses compose alone) |
-| Plan / predict | [plan / predict](#plan-predict) | *hope* / *expect* as future moods |
-| Memory / record | [evidentiality](#evidentiality) **WITNESSED** / **RECORDED** | generic *past* / *I remember* without source fork |
-| Evidentiality | [evidentiality](#evidentiality) | *believe* / warrant / how you know |
-| Perception events | ordinary `/v/` lexicon | COMMENT `/h/` (*hearing* as commentary ≠ *hear the door*) |
-| Clause force | `/j/` (`jal`, `jam`, …) | a noting speech-act force |
-
-**Raw contact:** sensation without judgment/explanation may stay unlabeled — see [emotion compose](#emotion-compose) raw feeling. Do **not** reach for COMMENT just because the content is affective.
-
-### Out of scope
-
-- Whether sense-channel noting (looking / hearing / feeling / …) returns as practice color on **`uho`** or stays English-only pedagogy.
-- Whether a dedicated bare `/j/` interjection reuses the same root.
-- Forced COMMENT on every first-person clause (only cognitive commentary environments).
-
-### Constraints
-
-- **COMMENT** is one mood root: **`uho`** (*commentary*).
-- Prefer floating `/h/`; do not use mid-word **`x` + {a\|e\|o\|u}** for COMMENT.
-- Do **not** invent separate moods for *think* / *assume* / *imagine* / *wonder*.
-- Do **not** stack COMMENT on [emotion compose](#emotion-compose) clauses (*fear* / *worry* / *regret* / hope-as-feeling).
-- Do **not** reuse [value contact-channel](values.md#value-contact) endings as COMMENT.
-- Do **not** treat COMMENT as evidentiality (*believe* / how you know).
-- **ACT** / **LOCUS** / **PLAN** / **PREDICT** / [evidentiality](#evidentiality) / [universality](#universality) / values remain separate `/h/` (or `/w/`) stacks when needed.
-- Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)).
-
-## Emotion compose
+### Emotion compose
 <a id="emotion-compose"></a>
 
-Opaque emotion words (*anxious*, *resentful*, *proud*, …) smuggle **activation**, **locus**, **need**, and **met/unmet** into one label. When that word is doing **judgment or explanation** work, Clarity **drops the emotion label** and **composes** from pieces — it does **not** invent a parallel emotion `x`-system.
+When an opaque emotion word (*anxious*, *resentful*, *proud*, …) is doing **judgment or explanation** work, drop the emotion label and **compose** from pieces — value + activation + locus.
 
 | Piece | Clarity |
 |-------|---------|
 | Situation / judged host | ordinary NP / clause content |
 | Need + met / unmet (+ changeability) | ordinary [value](values.md) word on that host (`wodoloxul`, `wodoloxam`, …) |
-| Activation (arousal) | closed mood roots **HIGH** / **MED** / **LOW** under `/h/` (optional `/w/` on a preceding `/ɡ/`) — water **tide** metaphors below |
-| Locus (where the charge is attributed) | closed mood roots **INTERNAL** / **EXTERNAL** / **CIRCUMSTANTIAL** under `/h/` (same `/w/` option) — water **vessel** metaphors below |
+| Activation (arousal) | closed mood roots **HIGH** / **MED** / **LOW** under `/h/` (optional `/w/` on a preceding `/ɡ/`) |
+| Locus (where the charge is attributed) | closed mood roots **INTERNAL** / **EXTERNAL** / **CIRCUMSTANTIAL** under `/h/` (same `/w/` option) |
 
-**Conceptual metaphor (one fluid story):** affect is **water**. **ACT** = how much / how fast it moves (**tide** dynamics). **LOCUS** = where that water is held or directed (**vessel** / transfer / ambient field). Same substance on both axes — stack ACT + LOCUS; do not invent separate physics per cell.
+**Mnemonic:** affect is **water**. **ACT** = tide dynamics (how much / how fast). **LOCUS** = vessel / transfer / ambient field (where water sits). Stack ACT + LOCUS as free `/h/` / `/w/` units.
 
-### Activation roots (ACT)
+#### Activation roots (ACT)
 
 | Slot | Lexicon root | Metaphor |
 |------|--------------|----------|
@@ -205,7 +390,7 @@ Opaque emotion words (*anxious*, *resentful*, *proud*, …) smuggle **activation
 | **MED** | **`oju`** 🪼 *jellyfish* → *flow* | mid arousal — drifts with the current |
 | **LOW** | **`ozono`** 🌨️ *snow* → *stillness* | low arousal — calm / slack water |
 
-### Locus roots (LOCUS)
+#### Locus roots (LOCUS)
 
 | Slot | Lexicon root | Metaphor |
 |------|--------------|----------|
@@ -213,9 +398,9 @@ Opaque emotion words (*anxious*, *resentful*, *proud*, …) smuggle **activation
 | **EXTERNAL** | **`oburo`** 🫗 *pour* → *pour* | charge directed at / attributed to other people |
 | **CIRCUM** | **`agena`** 🕯️ *candle* → *awash* | charge on the situation / ambient field — not owned by a person |
 
-**Ordinary content still available:** these roots remain normal lexicon words under other PoS (`zogenal` *an ocean wave*; `voburol` *to pour*; …). The special reading is the floating mood use, especially `/h/`.
+Ordinary content still available (`zogenal` *an ocean wave*; `voburol` *to pour*; …). The special reading is the floating mood use, especially `/h/`.
 
-**EXTERNAL is one root** (`oburo` = other-directed transfer). Teaching idioms **scale the transfer with ACT** (composition, not three EXTERNAL roots):
+**EXTERNAL** is one root (`oburo`). Teaching idioms **scale the transfer with ACT**:
 
 | ACT × EXTERNAL | Idiom | Reading |
 |----------------|-------|---------|
@@ -223,9 +408,9 @@ Opaque emotion words (*anxious*, *resentful*, *proud*, …) smuggle **activation
 | **`oju`** + **`oburo`** | *flowing toward them* | mid other-directed charge |
 | **`ozono`** + **`oburo`** | *pooling at them* | low other-directed charge — settled water at their locus |
 
-Parallel INTERNAL / CIRCUM cues: *flood bottled* / *flow held* / *still in the vessel*; *room awash* / *undercurrent in the air* / *slack shared water*. Keep CIRCUM as **shared / ambient field** (candle-light filling the room), not a second vessel.
+Parallel INTERNAL / CIRCUM cues: *flood bottled* / *flow held* / *still in the vessel*; *room awash* / *undercurrent in the air* / *slack shared water*. Keep CIRCUM as **shared / ambient field**, not a second vessel.
 
-**Recipe (judgment / explanation):** neutral description + **one value ascription** + **one ACT** + **one LOCUS**. Stack as free `/h/` / `/w/` units — do not pack activation × locus × need into one host tag.
+**Recipe:** neutral description + **one value ascription** + **one ACT** + **one LOCUS**.
 
 | Clarity | Reading |
 |---------|---------|
@@ -234,74 +419,51 @@ Parallel INTERNAL / CIRCUM cues: *flood bottled* / *flow held* / *still in the v
 | `zebunem wodoloxam hogenal habobol` | *proud of the draft* → met competence (mental channel); flood bottled (internal) |
 | `z<note>l wogonoxum hozonol hoburol` | soft leftover blame → unmet relatedness; stillness pooling at them |
 
-**Raw feeling:** contacting a sensation without judgment/explanation may leave it unlabeled. Full compose is required when an emotion word would have done evaluative work — same nudge as neutral praise / criticism. Do **not** add [COMMENT](#comment) on affect clauses.
+**Raw feeling:** contacting a sensation without judgment/explanation may leave it unlabeled. Full compose is for when an emotion word would have done evaluative work. Skip [COMMENT](#comment) on affect clauses.
 
-**Not `x`-compounds:** activation and locus are **root choices** (three-way mood inventories), not `xa`/`xu` polarity and not endings on need or ability compounds. Do **not** compound ACT/LOCUS onto the content verb the way ability does.
+ACT and LOCUS are **root choices**, not `xa`/`xu` polarity. They are not a second need inventory, not contact channel, not preference standing, and not ordinary scalar degree (*very* / *slightly*).
 
-**Do not overload other tables:**
-
-| Dimension | Stays | Emotion locus / activation is *not* |
-|-----------|--------|--------------------------------------|
-| Need met / unmet / motive / ought | [values](values.md) `xa` / `xe` / `xo` / `xu` | a second need inventory |
-| Contact channel | `xa` endings | locus (how you savor ≠ where charge sits) |
-| Preference standing | `xe` endings | locus (motive source ≠ felt-charge attribution) |
-| Ordinary degree | *very* / *slightly* | activation (intensity of *arousal*, not scalar property degree) |
-| Mental commentary | [COMMENT](#comment) (`uho`; cognitive attitudes only) | emotion-label compose (no COMMENT co-stack on affect) |
-
-### Out of scope
-
-- Whether MED (`oju`) shares a form with another soft default.
-- Whether ACT/LOCUS may bind as `/w/` on the judged `/ɡ/` vs only floating `/h/`.
-- Emotion lexicon retained only for non-judgmental sensation naming (if any).
-
-### Constraints
-
-- Emotion compose **reuses** [value](values.md) ascription; it is **not** a parallel tag system on the host.
-- **ACT** (`ogena` / `oju` / `ozono`) and **LOCUS** (`abobo` / `oburo` / `agena`) are mood roots in the non-value `/h/` / `/w/` subcategory — not needs, not ability, not restrictors.
-- **EXTERNAL** stays one root (`oburo`); *pool at them* is the **`ozono` + `oburo`** idiom, not a seventh mood.
-- Do **not** reuse mid-word **`x` + {a\|e\|o\|u}** for activation or locus.
-- Do **not** encode activation × locus × need in one word’s endings.
-- Opaque emotion words used for judgment / explanation are replaced by the compose recipe, not merely tagged.
-
-## Plan / predict
+### Plan / predict
 <a id="plan-predict"></a>
 
-English future cues (*will*, *going to*, *tomorrow*, …) smuggle whether you mean **intention** or **forecast**. Clarity keeps that fork as **two closed mood roots**, not value-style **`x`-compounds**.
+English future cues (*will*, *going to*, *tomorrow*, …) smuggle whether you mean **intention** or **forecast**. Clarity keeps that fork as **two closed mood roots**.
 
 | Claim | Prefer | Lexicon root |
 |-------|--------|--------------|
 | Intention / commitment about what *you* will do | closed **`PLAN`** under `/h/` (optional `/w/` if scoped only to a preceding `/ɡ/`) | **`owaro`** 🗺️ *world-map* → *plan* |
 | Forecast about what will happen | closed **`PREDICT`** under `/h/` (same `/w/` option) | **`edelo`** 🔭 *telescope* → *forecast* |
 | How detailed the intention is | endings (or a tiny closed set) on **`PLAN`** — none / vague / detail / contingency; **-l / -m / -n / -r** is the natural four-way fit once assigned | same **`owaro`** |
-| How you know the forecast | ordinary **[evidentiality](#evidentiality)** `/h/` stacked with **`PREDICT`** — same inventory as other claims (*caused by…*, *thinks*, …; causal hosts also use [causation](causation.md) join shapes), not a predict-only compound series | same **`edelo`** |
+| How you know the forecast | ordinary **[evidentiality](#evidentiality)** `/h/` stacked with **`PREDICT`** | same **`edelo`** |
 
-**Conceptual metaphors:** a **map** charts a course you mean to take; a **telescope** looks ahead at a distance (provisional resolution — not dice, not crystal-ball certainty). Past / source framing uses [evidentiality](#evidentiality) (e.g. **WITNESSED** / **RECORDED**).
+**Mnemonic:** a **map** charts a course you mean to take; a **telescope** looks ahead at a distance (provisional resolution). Past / source framing uses [evidentiality](#evidentiality) (e.g. **WITNESSED** / **RECORDED**).
 
-**Not `x`-compounds:** plan vs predict is a **root choice** (speech-act type), not `xa`/`xu` polarity on a host. Ability compounds onto an activity (`v<sing>xun`); plan/predict **frame the clause** — content verbs stay bare. Do **not** map plan grain onto contact / preference standing / prescription force / changeability, and do **not** invent `xe`/`xo` (or any `x`+vowel) for future framing.
+```
+`howarom … vegeham`
 
-Schematic: `howarom … vegeham` (*detail plan: I finish*) vs `hedelom hawam … varunal` (*forecast from pattern: it rains*).
+gloss: `h-PLAN-detail` · `v-finish`
 
-### Out of scope
+*Detail plan: I finish.*
+```
 
-- Exact ending ↔ None / Vague / Detail / Contingency assignment on **`PLAN`**.
+```
+`hedelom hawam … varunal`
 
-### Constraints
+gloss: `h-PREDICT` · `h-PATTERN` · `v-rain`
 
-- **`PLAN`** (`owaro`) and **`PREDICT`** (`edelo`) are mood roots in the non-value `/h/` / `/w/` subcategory — not needs, not ability hosts, not restrictors.
-- Do **not** reuse mid-word **`x` + {a\|e\|o\|u}** for plan/predict.
-- Prefer floating `/h/`; do not compound plan/predict onto the content verb the way ability does.
+*Forecast from pattern: it rains.*
+```
 
-## Evidentiality
+Plan vs predict is a **root choice**, not `xa`/`xu` on a host. Ability compounds onto an activity (`v<sing>xun`); plan/predict **frame the clause** — content verbs stay bare. Prefer floating `/h/`.
+
+### Evidentiality
 <a id="evidentiality"></a>
 <a id="evidential"></a>
 
-Claims about the world — what happened, what caused what, what someone else thinks, what will happen — often smuggle **how you know**. Clarity marks that as closed `/h/` mood roots (optional `/w/` when scoped only to a preceding `/ɡ/`) — same non-value mood subcategory as [plan / predict](#plan-predict).
+Mark **how you know** a world-claim — what happened, what caused what, what someone else thinks, what will happen — with closed `/h/` mood roots (optional `/w/` when scoped only to a preceding `/ɡ/`).
 
-**Not COMMENT:** first-person *I think* / rumination is [**COMMENT**](#comment) (`uho`). *Believe* / other-minds *thinks* / causal warrant / forecast warrant use **this** inventory. Do **not** treat COMMENT / mindfulness noting on first-person attitude verbs as evidentiality.
+**Mnemonic:** each root is a **channel** you got the claim through — memory catch, playback, trail of cases, detective work, listening, gut, tale.
 
-### Mood inventory (source-channel family)
-
-**Conceptual metaphor:** each root is a **channel** you got the claim through — memory catch, playback, trail of cases, detective work, listening, gut, tale. Content PoS stays ordinary (*an ear*, *a heart*, *a scroll*); under `/h/` / `/w/` mood use, the figurative channel reading wins.
+First-person *I think* / rumination is [**COMMENT**](#comment) (`uho`). *Believe* / other-minds *thinks* / causal warrant / forecast warrant use **this** inventory.
 
 | Mood | Lexicon root | Metaphor | Gloss |
 |------|--------------|----------|-------|
@@ -313,7 +475,7 @@ Claims about the world — what happened, what caused what, what someone else th
 | **FELT** | **`ahe`** | ❤️ *heart* → *gut-felt* | proprioceptive / affective knowing — not [emotion compose](#emotion-compose) |
 | **STORY** | **`orolo`** | 📜 *scroll* → *tale* | narrative / lore / anecdotal framing |
 
-**Not `x`-compounds:** channel is a **root choice**, not `xa`/`xu` on the claim host. Stack with **PREDICT**, causation shapes, [universality](#universality) **NATURAL**, other-minds content, ….
+Channel is a **root choice**, not `xa`/`xu` on the claim host. Stack with **PREDICT**, causation shapes, [universality](#universality) **NATURAL**, other-minds content, ….
 
 | Clarity (schematic) | Reading |
 |---------------------|---------|
@@ -327,7 +489,7 @@ Claims about the world — what happened, what caused what, what someone else th
 | `hedelom hawam … varunal` | *forecast from pattern: it rains* |
 | `… haon b-…` + `hevem` | *sufficient-cause claim, inferred* |
 
-### Memory / record (past framing)
+#### Memory / record (past framing)
 <a id="memory-record"></a>
 <a id="memory"></a>
 <a id="record-past"></a>
@@ -339,11 +501,9 @@ Claims about the world — what happened, what caused what, what someone else th
 | Reconstructive / recalled past | **WITNESSED** | **`uhunu`** | Casting into opaque water — fish or **boot** |
 | Documented / captured past | **RECORDED** | **`eroge`** | Preserving now for later playback |
 
-**Ordinary content still available:** `zuhunul` *a memory*; `verogel` *to record*; `duhunuxruzol` *that memory that won’t blank* — [null / anti-null](#null-anti-null). Same for the other channel roots (`zerarer` *that ear*, `zorolol` *a scroll*, …).
+Ordinary content still available: `zuhunul` *a memory*; `verogel` *to record*; `duhunuxruzol` *that memory that won’t blank* — [null / anti-null](#null-anti-null). Same for the other channel roots (`zerarer` *that ear*, `zorolol` *a scroll*, …).
 
-Idiom cue (teaching): *fish a boot* = retrieve the wrong past (🥾 `obodo` *boot* stays free for the punchline).
-
-### English → Clarity
+Idiom cue: *fish a boot* = retrieve the wrong past (🥾 `obodo` *boot* stays free for the punchline).
 
 | English cue | Clarity |
 |-------------|---------|
@@ -355,47 +515,90 @@ Idiom cue (teaching): *fish a boot* = retrieve the wrong past (🥾 `obodo` *boo
 | on-record claim | **`herogem`** |
 | story / lore channel | **`horolom`** |
 
-### Contrasts
+**Key contrasts:**
 
-| | Prefer | Avoid |
-|--|--------|-------|
-| COMMENT vs warrant | `huhom` = first-person commentary; evidential = how the **world-claim** is sourced | using COMMENT for *believe* / *thinks* |
-| Felt vs emotion | **`ahe`** = channel of knowing; emotion = value + ACT + LOCUS | stacking **FELT** as a seventh emotion ACT |
-| Told vs listening-event | `/h/` **`erare`** = hearsay; *hear the door* = ordinary `/v/` | collapsing both |
-| Pattern vs COMMON | **`awa`** = evidential trail; **`ewono`** = exceptionlessness warrant | encoding PATTERN as universality |
-| Witnessed vs Recorded | fishing retrieval vs playback archive | one generic *past* adverb |
+| | Prefer |
+|--|--------|
+| COMMENT vs warrant | `huhom` = first-person commentary; evidential = how the **world-claim** is sourced |
+| Felt vs emotion | **`ahe`** = channel of knowing; emotion = value + ACT + LOCUS |
+| Told vs listening-event | `/h/` **`erare`** = hearsay; *hear the door* = ordinary `/v/` |
+| Pattern vs COMMON | **`awa`** = evidential trail; **`ewono`** = exceptionlessness warrant ([universality](#universality)) |
+| Witnessed vs Recorded | fishing retrieval vs playback archive |
 
-### Out of scope
+Prefer floating `/h/`; content PoS uses stay ordinary. One shared inventory for predict / cause / other-minds — not separate series.
 
-- Ending tables on these roots (grain of confidence, whose memory, soft vs committed channel, …).
-- Full tense inventory (observation vs imagination) and how it stacks with channels.
+### Numbered alternatives (problem / solution / goal)
+<a id="numbered-alternatives"></a>
+<a id="ideation"></a>
 
-### Constraints
+When brainstorming, **number candidates** (*problem1*, *solution2*, *goal3*) so the first frame does not look unique. No new morphology — ordinary lexicon nouns + free [ordinals](numbers.md) (`g#N`). Unique bare *the problem* when framing ideation is grammatical but stylistically weak (same nudge as bare [percent denominators](numbers.md#percent-denominators)).
 
-- Named channel roots (**`uhunu`**, **`eroge`**, **`awa`**, **`eve`**, **`erare`**, **`ahe`**, **`orolo`**) are mood roots in the non-value `/h/` / `/w/` subcategory — not needs, not restrictors.
-- Prefer floating `/h/`; content PoS uses stay ordinary.
-- Do **not** reuse mid-word **`x` + {a\|e\|o\|u}** for evidentiality.
-- Do **not** invent a predict-only or cause-only evidential series — one shared inventory.
-- Do **not** treat **FELT** as [emotion compose](#emotion-compose) or **TOLD** as perception-as-event.
-- **ACT** / **LOCUS** / **PLAN** / **PREDICT** / **COMMENT** / [universality](#universality) / values remain separate stacks when needed.
+**Preferred roots** (puzzle → key → goal-net):
 
-## Universality
+| Sense | Root | Emoji / literal | Metaphor |
+|-------|------|-----------------|----------|
+| **problem** | **`ubezu`** | 🧩 *puzzle-piece* | something to fit / solve |
+| **solution** | **`egoge`** | 🔑 *key* | what unlocks it |
+| **goal** | **`ogalo`** | 🥅 *goal* | net you aim at / objective |
+
+Ordinary PoS still available (`zubezul` *a puzzle piece*; `vegogel` *to unlock*; …). The figurative jobs above are the ideation readings.
+
+**Recipe:** `zubezul g#1` / `zegogel g#2` / `zogalol g#1`
+
+| Piece | Role |
+|-------|------|
+| **`ubezu` / `egoge` / `ogalo`** | candidate kind (problem / solution / goal) |
+| free **`g#N`** | rank in **this** ideation series (*candidate N*) |
+| soft **`g~#N`** | tentative ranking |
+
+Prefer at least **`g#1`**; often name a second candidate. Soft **-m** on the number when the order is tentative.
+
+| English cue | Clarity |
+|-------------|---------|
+| `problem1` / `solution2` / `goal3` | `zubezul g#1` / `zegogel g#2` / `zogalol g#3` |
+| *the problem* / *the solution* / *the goal* (ideation) | number candidates |
+| discourse *point N:* | free **`x#N`** — [discourse marker](numbers.md#number-as-discourse-marker-by-marker); not a problem NP |
+
+**Not this** (real traps):
+
+| Form | Job | Why not for ideation numbering |
+|------|-----|--------------------------------|
+| **`ROOTx#N`** (`zubezuxrewol`) | ordinal **kind-order** (*premiere* / *secondary*) — [ordinal digit morphs](#ordinal-digit-morphs) | not “token #N in this brainstorm” |
+| **`ROOTx_N`** (`z<ubezu>xrowol`) | catalog / ID — [label-code](#label-code-sense) | specimen code, not candidate rank |
+| **`owaro`** | [PLAN](#plan-predict) mood | intention framing, not goal-as-noun (`ogalo`) |
+| **`onuzu`** | *blockage* | obstacle in the way, not problem-as-to-solve |
+| **`ululu`** | *remedy*; also [UNCOUNTERED](#universality) | medical fix / warrant mood, not solution proposal |
+| **`obawo` / `ubelo`** | *aim* / *precision* | how you direct, not the goal itself |
+| **`egeha` / `edale`** | *finish* / *achievement* | outcome markers, not the aimed-at objective |
+
+Numbering = **multiple candidates**. Reframing the **same** situation = different wording of one frame — not a second digit:
+
+| Job | Prefer |
+|-----|--------|
+| Exact framing | ordinary **-l** (or exact [cite](spans.md)) |
+| Restatement / rephrase | metaphorical **-m**, discourse reviser **`el` / `em`** (*in other words* — [revisers](revisers.md#discourse-revisers)), or paraphrase span **`…~[…]`** |
+| Origin / telos of a **kind** | **`ROOTx#e-` / `ROOTx#e`** — [numeric derivation](#numeric-derivation); not “first wording vs rewrite” |
+
+Digits are optional when these roots name a topic outside ideation (*the problem of free will*). Numbering nudges against treating the first frame as unique when generating options.
+
+## Advanced
+<a id="advanced"></a>
+
+### Universality
 <a id="universality"></a>
 <a id="universality-mood"></a>
 
-English *always* / *every* / *never* / *everyone* smuggle **how exceptionless** the claim is. Clarity keeps **domain** on the [universal fences](coordination.md#universals-domains-generics) (`zual` / `hual` / …) and puts the **warrant** on closed `/h/` mood roots (optional `/w/` when scoped only to a preceding `/ɡ/`) — same non-value mood subcategory as [plan / predict](#plan-predict) and [evidentiality](#evidentiality).
+English *always* / *every* / *never* / *everyone* smuggle **how exceptionless** the claim is. Keep **domain** on the [universal fences](coordination.md#universals-domains-generics) (`zual` / `hual` / …) and put the **warrant** on closed `/h/` mood roots (optional `/w/` when scoped only to a preceding `/ɡ/`).
 
 **Three axes stay distinct:**
 
-| Axis | Clarity | Not the warrant mood |
-|------|---------|----------------------|
-| Domain (*who / when*) | `zual` / `hual` / SHARED kind — [universals](coordination.md#universals-domains-generics) | — |
-| Inventory softness | join **-l** / **-m** (`zual` vs `zuam`, `hual` vs `huam`) | — |
-| Exceptionlessness warrant | this section’s mood roots | do **not** strengthen joins or invent a cause-arrow |
+| Axis | Clarity |
+|------|---------|
+| Domain (*who / when*) | `zual` / `hual` / SHARED kind — [universals](coordination.md#universals-domains-generics) |
+| Inventory softness | join **-l** / **-m** (`zual` vs `zuam`, `hual` vs `huam`) |
+| Exceptionlessness warrant | this section’s mood roots |
 
-### Mood inventory (weather / sky family)
-
-**Conceptual metaphor:** universal claims are **weather reports**. Default climate is usual weather — not a law. Stronger warrants name a different sky story.
+**Mnemonic:** universal claims are **weather reports**. Default climate is usual weather — not a law. Stronger warrants name a different sky story.
 
 | Mood | Lexicon root | Metaphor | Gloss |
 |------|--------------|----------|-------|
@@ -405,9 +608,9 @@ English *always* / *every* / *never* / *everyone* smuggle **how exceptionless** 
 | **NATURAL** | **`afafa`** | 🍎 *apple* → *natural* | natural necessity (unsupported objects fall); stack ordinary [evidential](#evidentiality) `/h/` |
 | **RULE** | **`ebebe`** | ♟️ *board* → *rule-frame* | holds inside a named frame; take `/b/` scope (`hebebel b<chess>l`) |
 
-**Default:** when a universal / habitual claim needs a warrant and none of FORMAL / NATURAL / RULE / UNCOUNTERED fits, use **COMMON** (`hewonol`). Do not treat FORMAL as socially preferred.
+**Default:** when a universal / habitual claim needs a warrant and none of FORMAL / NATURAL / RULE / UNCOUNTERED fits, use **COMMON** (`hewonol`). FORMAL is definition/proof, not “socially preferred.”
 
-**Not `x`-compounds:** warrant is a **root choice**, not `xa`/`xu` on the quantifier host. Domain stays `zual` / `hual`; the mood **frames the claim**.
+Warrant is a **root choice**, not `xa`/`xu` on the quantifier host. Domain stays `zual` / `hual`; the mood **frames the claim**.
 
 | Clarity (schematic) | Reading |
 |---------------------|---------|
@@ -418,8 +621,6 @@ English *always* / *every* / *never* / *everyone* smuggle **how exceptionless** 
 | `… hual … hebebel b<chess>l` | *always, under chess* |
 | `zuam gagadal … hewonol` | soft domain *every cat that comes to mind* + usual warrant |
 
-### English → Clarity
-
 | English cue | Clarity |
 |-------------|---------|
 | *always / everyone / never, usually* | domain fence (`hual` / `zual` / `hal` / …) + **`hewonol`** |
@@ -428,259 +629,27 @@ English *always* / *every* / *never* / *everyone* smuggle **how exceptionless** 
 | *always by nature* (+ how you know) | domain fence + **`hafafal`** + evidential `/h/` (e.g. **`hawam`**) |
 | *always under [frame]* (e.g. chess) | domain fence + **`hebebel b-…`** (scope NP) |
 
-### Contrasts
+**Key contrasts:**
 
-| | Prefer | Avoid |
-|--|--------|-------|
-| Domain vs warrant | `zual gagadal` + `hewonol` | encoding COMMON as `zuam` alone |
-| Soft list vs uncountered | `zuam` = open inventory; **`ululu`** = no counterexample found | collapsing both into **-m** |
-| Formal vs natural | **`idido`** = definition/proof; **`afafa`** = nature’s force + evidential | using either for “I can’t think of exceptions” |
-| Pattern vs COMMON | [evidential](#evidentiality) **`awa`** = trail of cases; **`ewono`** = usual warrant | encoding PATTERN as universality |
-| Natural vs CAUSE | **`afafa`** for exceptionlessness; condition type stays [joins](causation.md); optional **`CAUSE`** mood keeps **`erage`** ⚙️ *gear* → *mechanism* | reusing **`erage`** as NATURAL |
-| Preference as law | values **`xo` / `xe`** — [causation](causation.md#preference-vs-law) | stronger universality mood instead of naming the need |
+| | Prefer |
+|--|--------|
+| Domain vs warrant | `zual gagadal` + `hewonol` (not COMMON encoded as `zuam` alone) |
+| Soft list vs uncountered | `zuam` = open inventory; **`ululu`** = no counterexample found |
+| Formal vs natural | **`idido`** = definition/proof; **`afafa`** = nature’s force + evidential |
+| Pattern vs COMMON | [evidential](#evidentiality) **`awa`** = trail of cases; **`ewono`** = usual warrant |
+| Natural vs CAUSE | **`afafa`** for exceptionlessness; condition type stays [joins](causation.md); optional **`CAUSE`** mood keeps **`erage`** ⚙️ *gear* → *mechanism* |
+| Preference as law | values **`xo` / `xe`** — [causation](causation.md#preference-vs-law) |
 
-### Out of scope
+Prefer floating `/h/`; **RULE** is complex `/h/` + `/b/` scope when the frame is named. Domain / habitual morphology stays [coordination](coordination.md#universals-domains-generics) / [restrictors](restrictors.md); this section only warrants exceptionlessness.
 
-- Ending tables on these roots (committed vs soft warrant, anaphor, …).
-- Whether bare unmarked `hual` / `zual` **implies** COMMON or leaves warrant unspoken (pedagogy may still nudge **COMMON**).
-
-### Constraints
-
-- **COMMON** (`ewono`), **UNCOUNTERED** (`ululu`), **FORMAL** (`idido`), **NATURAL** (`afafa`), and **RULE** (`ebebe`) are mood roots in the non-value `/h/` / `/w/` subcategory — not needs, not restrictors, not domain joins.
-- Prefer floating `/h/`; **RULE** is complex `/h/` + `/b/` scope when the frame is named.
-- Do **not** reuse mid-word **`x` + {a\|e\|o\|u}** for universality.
-- Do **not** assign **`erage`** (optional **CAUSE**) to NATURAL.
-- Domain / habitual morphology stays [coordination](coordination.md#universals-domains-generics) / [restrictors](restrictors.md); this section only warrants exceptionlessness.
-- **ACT** / **LOCUS** / **PLAN** / **PREDICT** / [evidentiality](#evidentiality) / **COMMENT** / values remain separate stacks when needed.
-
-## Ability
-<a id="ability"></a>
-<a id="incapability"></a>
-
-Capability denials often smuggle permanence; tag **changeability** on the denial. Restrictors (`hal` = *never*, …) stay **when the host applies**, not ability speech acts — do not redefine them as *can’t*.
-
-### Primary: host + `xa` / `xu`
-
-When the denied (or claimed) capability **is** a single content root, compound ability onto that root — same mid-word **`x`** joiner as [values](values.md#word-shape):
-
-```
-PoS + HOST + x + {a|u} + {-l|-m|-n|-r}
-```
-
-| Piece | Role |
-|-------|------|
-| **PoS** | Prefer the host’s usual role — `/v/` (event), `/ɡ/` (property), etc. |
-| **HOST** | Any **non-need** content root (*sing*, *lift*, *lead*, …) |
-| **`xa` / `xu`** | Capable / incapable |
-| **Ending** | [Changeability](#ability-changeability) only |
-
-**Parser cue:** root ∈ [six needs](values.md#need-inventory) + `x…` → **value** tables. Other roots + **`xa` / `xu`** → **ability**. **`xe` / `xo`** on non-need hosts stay **undefined** (do not borrow motive / prescription). After PoS, single ROLE vowel **a** / **u** / **o** then `x` then a **longer** root → [role compound](#role-compounds), not ability. After PoS, single TYPE vowel **a** / **e** / **o** / **u** then `x` then a single EDGE vowel + ending → [span form](spans.md) (`daxal`, `daxol`, `daxan`, `daxar`, …); **`xuxul`** / **`xuxur`** / **`xuxun`** / **`xuxum`** → span close — not ability. Full map: **[x-compounds.md](x-compounds.md)**.
-
-**Ship first:** **`xu`** (incapability). **`xa`** when you want tagged *can*.
-
-| Form | Reading |
-|------|---------|
-| `v<sing>xul` / `g<sing>xul` | can’t sing **right now** (usually able) |
-| `…singxum` | can’t sing yet / may learn (or unknown) |
-| `…singxun` | can’t sing — fixed / impossible as far as you can tell |
-| `…singxur` | won’t sing (choice) — not can’t |
-| `…singxam` | can sing; capability open to change |
-| `…singxan` | can sing; claim treated as fixed |
-
-### Fallback: closed `ABIL` root (`egera`)
-
-When there is **no single host root** (complex VP, hostless *I can’t*, or ability as a floating adverb), use closed **`ABIL`** = lexicon **`egera`** 🥣 *cereal* → *capacity*:
-
-```
-[h|w] + egera + x + {a|u} + {-l|-m|-n|-r}
-```
-
-| Prefix | Scope |
-|--------|--------|
-| `/h/` | clause-level capability claim (floats like other `/h/`) |
-| `/w/` | capability framed on the preceding `/ɡ/` |
-
-**Conceptual metaphor:** a bowl holds **what it can** — hostless ability names that capacity without naming one activity root. Ordinary content still available (`zegeral` *cereal* / *a capacity*). Prefer **host+`xu`/`xa`** whenever the activity fits one root.
-
-Bare `hegeral` / `wegeral` = ability **topic** only (ordinary [reference-suffix](reference-suffix.md)).
-
-### Stances
-
-| Form | Stance | Gloss |
-|------|--------|--------|
-| bare host (no `x`) | ordinary word | no ability claim |
-| bare **`egera`** (no `x`) | **Topic** | Ability named only |
-| **`xa`** | **Capable** | Capability present / claimed |
-| **`xu`** | **Incapable** | Capability denied — ship this first |
-
-### Endings — changeability only
-<a id="ability-changeability"></a>
-
-On ability **`xa`** and **`xu`** (host-attached or **`egera`**), **-l / -m / -n / -r** are **changeability** — the same table as unmet values ([values.md § Changeability](values.md#value-changeability)). Not contact channel, preference standing, or prescription force.
-
-| Ending | Changeability | Mnemonic |
-|--------|---------------|----------|
-| **-l** | **temporary** — usually able; not this moment | closed *right-now* snapshot |
-| **-m** | **modifiable** — effort or circumstance may change it (also soft default if unknown) | open to change |
-| **-n** | **irreversible** — fixed / impossible as far as you can tell | settled / named-as-fixed |
-| **-r** | **won't-now** — choice or deferral, not inability | not updating this *now* |
-
-**Can't vs won't:** **-n** (irreversible) vs **-r** (won't-now). Do not collapse them. Always pick an ending on **`xa`** / **`xu`**; unknown → **-m**.
-
-| Form | Reading |
-|------|---------|
-| `…xal` | capable, **temporary** standing of that claim |
-| `…xam` | capable, **modifiable** (or unknown) |
-| `…xan` | capable, **irreversible** / fixed as far as you can tell |
-| `…xar` | capable, **won't-claim-now** (defer saying you can) |
-| `…xul` | incapable, **temporary** |
-| `…xum` | incapable, **modifiable** (or unknown) |
-| `…xun` | incapable, **irreversible** |
-| `…xur` | incapable, **won't-now** (choice) |
-
-### English → Clarity (schematic)
-
-| English | Clarity |
-|---------|---------|
-| *can’t* (usually able; not this moment) swim / sing | `v<swim>xul` / `v<sing>xul` (host primary) |
-| *can’t* (may learn / unknown) … | `v<HOST>xum` |
-| *impossible* / *can’t* (fixed) … | `v<HOST>xun` |
-| *won’t* (choice, not inability) … | `v<HOST>xur` |
-| hostless / clause-wide *can’t* (temporary) | `hegeraxul` |
-
-Hosts *can't* / *cannot* / *unable* / *incapable* / *impossible* collapse to **`xu` + changeability** on the activity root when there is one; otherwise on **`egera`**.
-
-### Ability vs values vs restrictors
-
-| Claim | Prefer |
-|-------|--------|
-| Can’t / can **this** activity or property | **host + `xu` / `xa`** (this page) |
-| Clause-wide / hostless capability | **`hegeraxu…`** / **`wegeraxu…`** |
-| Need unmet + changeability | need **`xu…`** — [values](values.md) (`hodoloxun` ≠ “can’t competence”) |
-| When / never / sometime the host applies | [restrictors](restrictors.md) (`hal`, `har`, …) |
-
-Stack when useful: e.g. can’t-sing plus unmet competence (`v<sing>xum` + `hodoloxum`). Do **not** use bare **`hal`** (*never*) as a substitute for tagged incapability. Do **not** read need-root **`xu`** as ability. Do **not** reuse unspecified need **`egege`** 🥚 (*potential*) as **`ABIL`**.
-
-### Examples
-
-| Clarity (schematic) | Reading |
-|---------------------|---------|
-| `v<sing>xul` | can’t sing **right now** |
-| `v<sing>xum` | can’t sing yet / may become able |
-| `v<sing>xun` | can’t sing (fixed / impossible as far as you can tell) |
-| `v<sing>xur` | won’t sing (choice), not can’t |
-| `g<lead>xam` | can lead; capability open to change |
-| `v<sing>xum hodoloxum` | can’t sing (modifiable) **and** unmet competence |
-| `… hegeraxul` | can’t **right now** (no single host / clause-wide) |
-| `hegeral` | ability (**topic** only) |
-
-### Out of scope
-
-- **`xe`** / **`xo`** on ability hosts (motive / prescription stay on [needs](values.md)).
-- Whose-ability / evidentiality on the denial (use ordinary mood `/h/` later if needed).
-- Positive *can* forced on every clause (optional **`xa`** only).
-
-### Constraints
-
-- Ability is **not** a need; do **not** apply contact / preference-standing / prescription-force tables to it.
-- Defined ability stances are **`xa`** and **`xu`** only; endings on those compounds = **changeability** only.
-- Need roots + `x…` stay [values](values.md); never reinterpret as host-ability.
-- Fallback **`ABIL`** is **`egera`** (*capacity*); prefer host-attached forms; use **`egera`** only when there is no suitable single host.
-- Do **not** overload [restrictors](restrictors.md) as ability morphology.
-- Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)); host **`/v/`** / **`/ɡ/`** ability compounds follow ordinary plurality rules for that PoS.
-
-## Role compounds (`a` / `u` / `o` × root)
-<a id="role-compounds"></a>
-<a id="participant-compounds"></a>
-<a id="agent-patient-reltum"></a>
-
-Derive **event/relation participants** without open lexicon role nouns (*attacker*, *victim*, …). Shape is **ROLE vowel left of `x`**, opposite order from [values](values.md) / [ability](#ability) (those put the stance vowel **right** of `x`). Mid-word **`x`** family map: **[x-compounds.md](x-compounds.md)**.
-
-### Pattern
-
-```
-PoS + {a|u|o} + x + ROOT + {-l|-m|-n|-r}
-```
-
-| Piece | Role |
-|-------|------|
-| **PoS** | Prefer `/z/` `/d/` `/b/` (entity participant). `/ɡ/` optional as classifying property; `/v/` `/h/` `/w/` **undefined** |
-| **ROLE** | Single vowel **`a`** / **`u`** / **`o`** (not a content root — no open root is a bare vowel) |
-| **`x`** | Ordinary [compound joiner](phonology.md#phonotactics) |
-| **ROOT** | Event stem (**`a`/`u`**) or relation stem (**`o`**) — `V(CV)+` |
-| **Ending** | Ordinary [reference-suffix](reference-suffix.md) senses — **not** value/ability ending tables |
-
-**Parser cue:** after PoS, a single vowel then `x` then a **longer** root + ending → role compound. Same shape with a **single** vowel after `x` → [span](spans.md), not role. **`e x …`** is **reserved** (undefined) — not a fourth ROLE.
-
-### Inventory
-
-| ROLE | Form | ROOT type | Referent |
-|------|------|-----------|----------|
-| **`a`** | `…axROOT…` | **event** (verb / event noun stem) | **agent** — doer / subject-like participant of that event |
-| **`u`** | `…uxROOT…` | **event** | **patient** — undergoer / object-like participant of that event |
-| **`o`** | `…oxROOT…` | **relation** (complex `/ɡ/` / `/h/` / [join-relation](#join-relations) root, …) | **reltum** — the `/b/` argument pole of that relation |
-
-Recipients, beneficiaries, topic NPs, and other adjunct `/b/`s stay ordinary resume of that `/b/` noun (or the `/h/`+`/b/` unit) — do **not** invent more ROLE vowels for them.
-
-Mnemonic (loose only; parallels [values](values.md) **`xa`/`xu`** and join **a** / **u**): **`a`** ≈ additive / doer; **`u`** ≈ subtractive / undergoer (inverse of agent); **`o`** ≈ oblique / `/b/` — **not** reviser or join readings.
-
-### Endings
-
-| Ending | Reading |
-|--------|---------|
-| **-l** | Indefinite / kind — *an attacker*, *attackers as a type* (`zax<attack>l`) |
-| **-m** | Soft / hedged role |
-| **-n** | Titled / epithet role label (rare) |
-| **-r** | Definite — participant of the **most recent matching** event (**`a`/`u`**) or relation (**`o`**) for that ROOT |
-
-**-r** resolution: match ROOT to the most recent verb, event noun, or relation word with that stem (including a ROOT half inside a prior role compound). ROLE picks that frame’s agent, patient, or `/b/` pole — including when the participant was only introduced as [unspecified-member](coordination.md#unspecified-member-r-phrase) **`zar`** / **`dar`** / ….
-
-Bare event noun stays the event: `z<attack>l` / `z<attack>r` = *an / that attack*, not a participant. Cross-PoS content **-r** from a verb still resumes the [event](pronouns.md), not the agent — use **`ax`/`ux`** for participants.
-
-### Examples (schematic roots)
-
-| Clarity | Gloss |
-|---------|--------|
-| `jal zar dumogon v<attack>l` | *Someone attacked me* |
-| `jal zax<attack>r v<flee>l` | *The attacker fled* |
-| `zax<attack>l` | *an attacker* (kind; no discourse event required) |
-| `dux<attack>r` | *the one attacked* (as object now) |
-| `zox<of>r` | *that of-argument* (reltum of salient `…ofl b-…`) |
-| `z<attack>r` | *that attack* (event — not agent) |
-
-### Contrasts
-
-| | Use |
-|--|-----|
-| Role compound | Participant derived from event/relation root — no *attacker* lexicon entry |
-| Content **-r** on event | The event / doing itself ([pronouns](pronouns.md)) |
-| **`zar`** / **`dar`** | Unspecified member introduce; weak resume target — prefer role **-r** once the event is named |
-| Ability `v<attack>xun` | Can’t attack — **ROOT x vowel**, not ROLE vowel left of `x` |
-| Span `daxal` / `duxal` | Quote / opaque open — **vowel x vowel**, not ROLE x root |
-
-### Out of scope
-
-- ROLE **`e`** (reserved).
-- Instrument / beneficiary / recipient as extra ROLE vowels.
-- Role compounds under `/v/` `/h/` `/w/`.
-- Stacking role + ability (`axattackxu…`) — ban; put ability on the bare event verb.
-- *Act done by entity* as a ROLE — resume verbs with ordinary **-r**, or use **`var`** for unnamed doing.
-
-### Constraints
-
-- ROLE is **`a`/`u`/`o`** only; wrong ROOT type for a ROLE is illegal (not metaphorical).
-- Endings stay **ordinary** reference-suffix senses on role compounds.
-- Do **not** read ROLE vowels as value stances, ability polarity, or span TYPE/EDGE.
-- Plural **-sh** on noun-slot role compounds follows ordinary [plurality](plurality.md) for that PoS.
-
-## Numeric derivation (`ROOT` × number stem)
+### Numeric derivation (`ROOT` × number stem)
 <a id="numeric-derivation"></a>
 <a id="number-compounds"></a>
 <a id="numeric-morphs"></a>
 
-Derive **new senses from a content root** by compounding a PoS-less [number](numbers.md) stem after mid-word **`x`**. Free number words stay the closed numeral subsystem; this family is **derivation**, not a count / rank / label in a clause slot. Mid-word **`x`** family map: **[x-compounds.md](x-compounds.md)**.
+Derive **new senses from a content root** by compounding a PoS-less [number](numbers.md) stem after mid-word **`x`**. Free number words stay the closed numeral subsystem; this family is **derivation**, not a count / rank / label in a clause slot. Mid-word **`x`** map: [x-compounds.md](x-compounds.md).
 
-### Pattern
+**Shape:**
 
 ```
 PoS + ROOT + x + NUM + {-l|-m|-n|-r}
@@ -691,16 +660,16 @@ PoS + ROOT + x + NUM + {-l|-m|-n|-r}
 | **PoS** | Ordinary slot for the derived word |
 | **ROOT** | Open content host (`V(CV)+`) |
 | **`x`** | Ordinary [compound joiner](phonology.md#phonotactics) |
-| **NUM** | Number stem **without PoS and without its own ending** — same marker / digits / digitless-exp body as [numbers.md](numbers.md); inventory tables use [shorthand](numbers.md#writing-preferred-shorthand) (`+e`, `_12`, `+1e`, …); **running-text / citation examples prefer spelled CV** (`raba`, `ro…`, `rawoba`, …) — [writing style](numbers.md#writing-style-numeric-vs-spelled) |
+| **NUM** | Number stem **without PoS and without its own ending** — same marker / digits / digitless-exp body as [numbers.md](numbers.md); inventory tables use [shorthand](numbers.md#writing-preferred-shorthand) (`+e`, `_12`, `+1e`, …); running-text / citation examples prefer spelled CV (`raba`, `ro…`, `rawoba`, …) — [writing style](numbers.md#writing-style-numeric-vs-spelled) |
 | **Ending** | Ordinary [reference-suffix](reference-suffix.md) on the **whole derived stem** (host ROOT) — **not** [number endings](numbers.md#number-endings) |
 
-**Writing style:** free numbers stay shorthand by default; derived words prefer **spelled CV** so the compound looks like an ordinary word (`zolexrabal`, not `zolex+el`). Shape columns below keep shorthand as schematic (`ROOTx+e`); example cells use spelled forms. Do **not** hybridize shorthand `NUM` + host letter ending.
+**Mnemonic:** free numbers count or rank in a clause slot; `ROOTxNUM` names a **kind property** of ROOT (essence, dual structure, specimen code, …).
 
-**Ending rule:** because **-l / -m / -n / -r** attaches to the compound (the ROOT), there is **no** number soft / named / resume on `NUM`. Do **not** write `ROOTx~+e`, `ROOTx@+1e`, or `ROOTx=+` (and do not spell those hybrids either). Approximate, proper-designation, and resume use ordinary reference endings on the derived word, or free number words / ordinary syntax outside this family.
+**Writing style:** free numbers stay shorthand by default; derived words prefer **spelled CV** so the compound looks like an ordinary word (`zolexrabal`, not `zolex+el`). Shape columns below keep shorthand as schematic (`ROOTx+e`); example cells use spelled forms. Avoid hybridizing shorthand `NUM` + host letter ending.
+
+**Ending rule:** because **-l / -m / -n / -r** attaches to the compound (the ROOT), there is **no** number soft / named / resume on `NUM`. Approximate, proper-designation, and resume use ordinary reference endings on the derived word, or free number words / ordinary syntax outside this family.
 
 **Parser cue:** longer material before `x`, then a right half that matches number-stem grammar (writing **`+` / `-` / `#` / `#-` / `_`**, speech **`r`+V…** including digraph **`reu`**, digitless exp, hyperbole mantissa+`e`/`e-`, [zero × exp](numbers.md#zero-exponent) **`+0e` / `±0e-1`**, ordinal rank-annihilated **`#0e`**, [quasi-N](#quasi-n) **`-e-1` / `-e-2`**, label digits under `_`, scalar digit morph **`+N` / `-N`**, or ordinal digit morph **`#N`**) + ordinary ending → this family. Bare **`ROOTxe`** is **not** essence (that shape is stance **`xe`**). Essence is **`ROOTx+e`**. Bare digit with no marker (`ROOTx1`) is **illegal** — digit morphs need a pronounceable marker vowel (**`ra`** / **`ru`** / **`re`**). End-relative free ranks (**`#-N`**), [ordinal generation](numbers.md#ordinal-generation) (**`#e0`** / **`#NeK`**), and free scale assert (**`Ne0`**) stay free-number only (no **`ROOTx#-N`** / **`ROOTx#NeK`** / **`ROOTx+Ne0`** / **`ROOTx+e0`** / **`ROOTx+0e0`** morphs).
-
-### Inventory
 
 #### Limit / polarity / stage (digitless)
 
@@ -715,14 +684,14 @@ PoS + ROOT + x + NUM + {-l|-m|-n|-r}
 | **`ROOTx+`** | **poly- / multi-ROOT** (unspecified >1) | `zurujuxram` — *multi-faith* |
 | **`ROOTx-`** | **de- / un- / deficit-ROOT** | `v<myth>xrul` — *to de-myth* |
 
-Digitless **`+` / `-` / `#`** on ROOT = **metaphysics of the kind** — **not** free special values. `ROOTx+e` is **not** free +∞ (`g+e`), and **not** comic hugeness (`ROOTx+1e`). Free twins: `g+e` = +∞; `g+e-` = arbitrarily small; `g-e` = −∞; `g-e-` = [notional / imaginary amount](numbers.md#imaginary); `g#e-` / `g#e` = start / last place (origin / telos poles); free [generation](numbers.md#ordinal-generation) (`g#3e2`, `g#e0`, `g#e-2`) and end-relative **`g#-N`** are series-relative, not kind morphs; [zero × exponent](numbers.md#zero-exponent) free forms (`g+0e`, `v+0el`, …) parallel [derivation zero-exp](#zero-exponent-derivation). Free bare **`g+e0`** / **`g+Ne0`** = [ones band / OoM-0 assert](numbers.md#bare-oom-bands) — **not** kind morphs (no **`ROOTx+e0`**). **`ROOTx-e-`** = [quasi-ROOT](#quasi) (kind); free **`g-e-`** = notional amount — same stem shape, different job. For *∞ as a property of the kind*, prefer hyperbole `ROOTx+1e` or ordinary wording — don’t overload essence. Digitless **`_`** = [catalog topology](#infinite-labels) (below).
+Digitless **`+` / `-` / `#`** on ROOT = **metaphysics of the kind** — not free special values. `ROOTx+e` is not free +∞ (`g+e`), and not comic hugeness (`ROOTx+1e`). Free twins: `g+e` = +∞; `g+e-` = arbitrarily small; `g-e` = −∞; `g-e-` = [notional / imaginary amount](numbers.md#imaginary); `g#e-` / `g#e` = start / last place (origin / telos poles); free [generation](numbers.md#ordinal-generation) (`g#3e2`, `g#e0`, `g#e-2`) and end-relative **`g#-N`** are series-relative, not kind morphs; [zero × exponent](numbers.md#zero-exponent) free forms (`g+0e`, `v+0el`, …) parallel [derivation zero-exp](#zero-exponent-derivation). Free bare **`g+e0`** / **`g+Ne0`** = [ones band / OoM-0 assert](numbers.md#bare-oom-bands) — not kind morphs (no **`ROOTx+e0`**). **`ROOTx-e-`** = [quasi-ROOT](#quasi) (kind); free **`g-e-`** = notional amount — same stem shape, different job. For *∞ as a property of the kind*, prefer hyperbole `ROOTx+1e` or ordinary wording. Digitless **`_`** = [catalog topology](#infinite-labels) (below).
 
 ##### Quasi-ROOT (`-e-` / `-e-1` / `-e-2`)
 <a id="quasi"></a>
 <a id="quasi-root"></a>
 <a id="quasi-n"></a>
 
-**`ROOTx-e-`** = ROOT in **quasi-** form: the shape / role of ROOT without committing it on the real ledger. Closest English affix: **`quasi-`** (*quasi-friend*, *quasi-official*). **Not** free notional amount (`g-e-`); **not** void of ROOT (`ROOTx-e`); **not** soft/approximate (`-m` on the host); **not** falsehood. Former “anti-grain / coarse” reading of this cell is **removed** — use ordinary wording for *coarse / non-seed*.
+**`ROOTx-e-`** = ROOT in **quasi-** form: the shape / role of ROOT without committing it on the real ledger. Closest English affix: **`quasi-`** (*quasi-friend*, *quasi-official*). Not free notional amount (`g-e-`); not void of ROOT (`ROOTx-e`); not soft/approximate (`-m` on the host); not falsehood.
 
 | PoS | `…x-e-` | Examples |
 |-----|---------|----------|
@@ -744,20 +713,19 @@ Stem shape **`ru` + `bu` + exponent digit `N`** (writing **`-e-N`**; bare-OoM an
 | **`ROOTx-e-1`** | **quasi-unit / as-if singleton** — unit-shaped without being a real one | **`ROOTx+1`** unit | `z<voice>xrubuwol` — *a quasi-single voice* / as-if primary voice |
 | **`ROOTx-e-2`** | **quasi-dual / imaginary duality** — pair/mutual *as if*, not real reciprocity | **`ROOTx+2`** dual/mutual | `g<duty>xrubudul` — *quasi-mutual duty*; `z<friend>xrubudul` — *quasi-pair / as-if partnership* |
 
-**Contrast:**
-
 | Form | Job |
 |------|-----|
 | **`ROOTx+2`** | real dual / mutual structure |
 | **`ROOTx-2`** | privative — non-reciprocal / one-sided |
 | **`ROOTx-e-2`** | quasi-dual — mutuality *as if* / imaginary duality |
 | **`ROOTx-e-`** | general quasi (N unnamed) |
-| **`g-e-2`** | free real −10⁻² (bare OoM) — **not** quasi-dual |
+| **`g-e-2`** | free real −10⁻² (bare OoM) — not quasi-dual |
 
-**Not defined:** **`ROOTx-e-0`** — use **`ROOTx-0`** (anti-null) or **`ROOTx-0e-`** (micro-residue); **`ROOTx-e-3`…`-e-9`** — out of scope (prefer bare **`ROOTx-e-`** or ordinary wording). Same PoS framing as bare quasi.
+**`ROOTx-e-0`** is undefined — use **`ROOTx-0`** (anti-null) or **`ROOTx-0e-`** (micro-residue). **`ROOTx-e-3`…`-e-9`** stay out of this morph set — prefer bare **`ROOTx-e-`** or ordinary wording. Same PoS framing as bare quasi.
+
 #### Scalar digit morphs (`+N` / `-N`)
 
-Single-digit scalars only. Inventory / metalanguage writing uses the marker (**`+N`** / **`-N`**); bare **`ROOTxN`** is illegal (no marker vowel to pronounce). Speech is marker + digit (`ra`+`wo` for `+1`, `ru`+`wo` for `-1`, …). **Running-text examples prefer spelled CV** (`…xrawol`, not `…x+1l`) — [writing style](numbers.md#writing-style-numeric-vs-spelled). Writing **`+0`…`+9`** uses the strong readings below; **`-N`** (including **`-0`**) is the **privative** of that reading (lacks / undoes / inverse of the `+N` structure).
+Single-digit scalars only. Inventory / metalanguage writing uses the marker (**`+N`** / **`-N`**); bare **`ROOTxN`** is illegal (no marker vowel to pronounce). Speech is marker + digit (`ra`+`wo` for `+1`, `ru`+`wo` for `-1`, …). Running-text examples prefer spelled CV (`…xrawol`, not `…x+1l`) — [writing style](numbers.md#writing-style-numeric-vs-spelled). Writing **`+0`…`+9`** uses the strong readings below; **`-N`** (including **`-0`**) is the **privative** of that reading (lacks / undoes / inverse of the `+N` structure).
 
 | `+N` | Strong reading | Example | `-N` privative | Example |
 |------|----------------|---------|----------------|---------|
@@ -786,7 +754,7 @@ Single-digit scalars only. Inventory / metalanguage writing uses the marker (**`
 | **`/w/`** (adjunct) | host `/ɡ/` graded toward null | host `/ɡ/` graded toward anti-null | `g<debt>l w<balanc>xrazol` — *debt (ascribed) zeroed*; `g<debt>l w<balanc>xruzol` — *debt whose balance is anti-null* — non-value overlay; do not collide with value **`xu`** [changeability](values.md#value-changeability) |
 | **`/j/`** (interjection) | discourse *Zero it!* / *Null!* | discourse *Won’t zero!* / *Residue stands!* | `j<score>xrazol`; `j<score>xruzol` |
 
-**Not** free counts: `zagadalsh g+3` = *three cats*; `z<dialog>xrarel` = *triadic dialogue* (structure of the kind). Multi-digit scalars (`ROOTx+12`) stay out of this morph set — use free numbers or label **`_`**.
+Not free counts: `zagadalsh g+3` = *three cats*; `z<dialog>xrarel` = *triadic dialogue* (structure of the kind). Multi-digit scalars (`ROOTx+12`) stay out of this morph set — use free numbers or label **`_`**.
 
 #### Zero × exponent (`+0e` / `±0e-1` / …)
 <a id="zero-exponent-derivation"></a>
@@ -804,9 +772,9 @@ Same anatomy as free [zero × exponent](numbers.md#zero-exponent); on ROOT = **m
 | **`ROOTx-0e-`** | **micro-residue** of ROOT | `zuhunuxruzobul` — *memory as micro-residue* |
 | **`ROOTx-0e-1`** | **engineering residue at OoM −1** of ROOT | `z<debt>xrubuwojazol` — *debt as deci-scale residue* |
 
-**Emptiness chain (kinds):** **`ROOTx-e`** (void of kind) ≠ **`ROOTx+0`** (resettable null) ≠ **`ROOTx+0e`** (total null) ≠ **`ROOTx+0e-`** (sterile grain) ≠ **`ROOTx+0e-1`** (engineering null at 10⁻¹). Free bare **`g+e0`** / **`Ne0`** are [ones-band / OoM-0 assert](numbers.md#bare-oom-bands) on free numbers — **not** kind morphs here.
+**Emptiness chain (kinds):** **`ROOTx-e`** (void of kind) ≠ **`ROOTx+0`** (resettable null) ≠ **`ROOTx+0e`** (total null) ≠ **`ROOTx+0e-`** (sterile grain) ≠ **`ROOTx+0e-1`** (engineering null at 10⁻¹). Free bare **`g+e0`** / **`Ne0`** are [ones-band / OoM-0 assert](numbers.md#bare-oom-bands) on free numbers — not kind morphs here.
 
-**`±0e-1` is scalar anatomy only** on free numbers; on ROOT the same stems are kind-scale wipe / residue. No other **`±0eN`** morphs. Free **`…0e0`** and derivation **`ROOTx+e0`** / **`ROOTx+0e0`** / **`ROOTx+Ne0`** are **not used**.
+**`±0e-1` is scalar anatomy only** on free numbers; on ROOT the same stems are kind-scale wipe / residue. No other **`±0eN`** morphs. Free **`…0e0`** and derivation **`ROOTx+e0`** / **`ROOTx+0e0`** / **`ROOTx+Ne0`** are not used.
 
 ##### Zero-exp derivation by PoS
 
@@ -835,7 +803,7 @@ Free ordinal **`#e0`** = current generation — free-number only (no **`ROOTx#e0
 #### Ordinal digit morphs (`#N`)
 <a id="ordinal-digit-morphs"></a>
 
-Single-digit ordinals only. Inventory writing uses marker **`#`** (**`ROOTx#N`**); speech is **`re`** + digit; **running-text examples prefer spelled CV** (`…xrewol`, not `…x#1l`). **`ROOTx#N`** types ROOT as a **rank-N / Nth-order form** — place is part of the **kind**, not “the Nth token in a contextual series” (that stays free **`… g#N`**). Forward **`#N`** only — no end-relative morph (**`ROOTx#-2`** illegal; free **`g#-2`** covers penultimate tokens) and no generation morph (**`ROOTx#3e2`** / **`ROOTx#e0`** illegal; free **`g#e0`** = current gen). No privative twin of `#N`; scalar **`-N`** already covers “lacks N-structure.” Landmarks stay digitless: **`#e-`** origin, **`#e`** telos; **`#0e`** = [rank annihilated](#rank-annihilated-morph); **`#N`** = intermediate ranked stage of the kind. Multi-digit `ROOTx#12` → prefer free `g#12` or label **`_`** if it’s an ID.
+Single-digit ordinals only. Inventory writing uses marker **`#`** (**`ROOTx#N`**); speech is **`re`** + digit; running-text examples prefer spelled CV (`…xrewol`, not `…x#1l`). **`ROOTx#N`** types ROOT as a **rank-N / Nth-order form** — place is part of the **kind**, not “the Nth token in a contextual series” (that stays free **`… g#N`**). Forward **`#N`** only — no end-relative morph (**`ROOTx#-2`** illegal; free **`g#-2`** covers penultimate tokens) and no generation morph (**`ROOTx#3e2`** / **`ROOTx#e0`** illegal; free **`g#e0`** = current gen). No privative twin of `#N`; scalar **`-N`** already covers “lacks N-structure.” Landmarks stay digitless: **`#e-`** origin, **`#e`** telos; **`#0e`** = [rank annihilated](#rank-annihilated-morph); **`#N`** = intermediate ranked stage of the kind. Multi-digit `ROOTx#12` → prefer free `g#12` or label **`_`** if it’s an ID.
 
 | `#N` | Strong reading | Example |
 |------|----------------|---------|
@@ -863,7 +831,7 @@ Single-digit ordinals only. Inventory writing uses marker **`#`** (**`ROOTx#N`**
 #### Label / code sense (`_`)
 <a id="label-code-sense"></a>
 
-Marker **`_`** = ROOT identified by a **catalog / specimen / ID code**, not by count or rank. Digits (when present) are the **label payload** (*specimen #1*), not “first” and not “one-part.” Digitless exp under **`_`** is **undefined** on free number words ([numbers.md](numbers.md#digitless-exponents)); derivation opens it as **[catalog topology](#infinite-labels)** below.
+Marker **`_`** = ROOT identified by a **catalog / specimen / ID code**, not by count or rank. Digits (when present) are the **label payload** (*specimen #1*), not “first” and not “one-part.” Digitless exp under **`_`** is undefined on free number words ([numbers.md](numbers.md#digitless-exponents)); derivation opens it as **[catalog topology](#infinite-labels)** below.
 
 | Shape | Reading | Example |
 |-------|---------|---------|
@@ -873,7 +841,7 @@ Marker **`_`** = ROOT identified by a **catalog / specimen / ID code**, not by c
 ##### Infinite / landmark labels (`_e` / `_e-` / `_1e`)
 <a id="infinite-labels"></a>
 
-Digitless **`_`** = **metaphysics of the catalog**, not magnitude. Label ∞ means *the naming system has no bound*, not *the count is infinite*. **Not** free dialing (`d_…`); **not** free amount +∞ (`g+e`).
+Digitless **`_`** = **metaphysics of the catalog**, not magnitude. Label ∞ means *the naming system has no bound*, not *the count is infinite*. Not free dialing (`d_…`); not free amount +∞ (`g+e`).
 
 | Shape | Reading | Example |
 |-------|---------|---------|
@@ -909,7 +877,7 @@ Digitless **`_`** = **metaphysics of the catalog**, not magnitude. Label ∞ mea
 | `z<ticket>xrobal` | open-ended / ∞-catalogued ticket (kind) |
 | `z<ticket>xrobul` | unassigned ticket slot (kind) |
 
-**Prefer ordinary syntax** when the number is only an argument of an ordinary noun: `z<room>l g_12` = *the room numbered 12*. Use **`ROOTx_N`** when the code is part of the **concept** (specimen ID, SKU, protocol code). Discourse item cites stay free **`x_…`**; dial/input stays free **`v_…`**.
+Prefer ordinary syntax when the number is only an argument of an ordinary noun: `z<room>l g_12` = *the room numbered 12*. Use **`ROOTx_N`** when the code is part of the **concept** (specimen ID, SKU, protocol code). Discourse item cites stay free **`x_…`**; dial/input stays free **`v_…`**.
 
 **Rule of thumb:** digitless **`+`/`-`/`#`** on ROOT = *metaphysics of the kind*; digitless **`_`** = *metaphysics of the catalog*.
 
@@ -927,7 +895,7 @@ Mantissa + digitless exp = **comic / rhetorical intensification**, same spirit a
 
 Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`z<meeting>xrewobal`** = *an umpteenth-meeting* (noun kind).
 
-### Contrasts
+#### Numeric contrasts (edge inventory)
 
 | Form | Job |
 |------|-----|
@@ -989,96 +957,35 @@ Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`z<meeti
 | `z<room>xrowodul` | room-12 as coded kind |
 | Ability `v<sing>xun` | can’t sing — stance vowel, not NUM |
 | Role `zax<attack>r` | the attacker — ROLE left of `x` |
-| Stance `…xe…` | motive (needs) / undefined (ability) — **not** essence |
+| Stance `…xe…` | motive (needs) / undefined (ability) — not essence |
 
-### Out of scope
+`NUM` has **no** PoS and **no** number ending; the compound’s ending is ordinary reference-suffix on ROOT. Digit morphs are single-digit **`+N` / `-N`** (scalar) or **`#N`** (ordinal); markers supply the pronounceable vowel (**`ra`** / **`ru`** / **`re`**). Free end-relative **`reu`** / **`#-`** is not a derivation morph. Digitless **`+`/`-`/`#`** = kind metaphysics; digitless **`_`** = catalog metaphysics ([infinite labels](#infinite-labels)); zero×exp morphs = [zero-exponent derivation](#zero-exponent-derivation) (including **`±0e-1`** / **`#0e`**). Plural **-sh** on noun-slot numeric derivatives follows ordinary [plurality](plurality.md) for that PoS.
 
-- Number endings / writing **`~` / `@` / `=`** on `NUM` (impossible under the ending rule).
-- Productive multi-digit **scalar** or **ordinal** morphs (`ROOTx+27`, `ROOTx#12`) — use free numbers; label codes under **`_`** are the exception.
-- Bare digit morphs (`ROOTx1`) — illegal; use **`ROOTx+1`** / **`ROOTx#1`**.
-- Signed / end-relative ordinal morphs (`ROOTx#-2`) — illegal; use free **`g#-N`**.
-- Ordinal generation morphs (`ROOTx#3e2`) — illegal; use free [generation](numbers.md#ordinal-generation).
-- Privative twin of ordinal **`#N`** — use scalar **`-N`** for “lacks N-structure,” or free wording.
-- Bare **`ROOTxe`** as essence.
-- Role **`e x ROOT`** (stays reserved).
-- Percent / percentage-point closers (**`jo` / `ju`**) as derivation morphs.
-- Digit-string morphs as phone-dial or discourse-list substitutes.
-- Scale-specific **`ROOTx±0eN`** / **`ROOTx±0e-N`** for **`N≠1`** (and positive **`…0eN`**) — not used; only **`±0e-1`** is defined. **`ROOTx+e0`** / **`ROOTx+0e0`** / **`#0e0`** / **`ROOTx+Ne0`** — not used; free **`#e0`** / **`Ne0`** are free-number only ([generation](numbers.md#ordinal-generation) / [ambient](numbers.md#ambient-scale)). **`ROOTx#0e`** is defined ([rank annihilated](#rank-annihilated-morph)).
-- Quasi-N beyond **`ROOTx-e-1`** / **`ROOTx-e-2`** (**`ROOTx-e-0`**, **`ROOTx-e-3`…`-e-9`**) — use bare **`ROOTx-e-`**, **`ROOTx-0`** / **`ROOTx-0e-`**, or ordinary wording.
+### Design notes
 
-### Constraints
+Unassigned or rare edges (not required for ordinary reading):
 
-- `NUM` has **no** PoS and **no** number ending; the compound’s ending is ordinary reference-suffix on ROOT.
-- Digit morphs are single-digit **`+N` / `-N`** (scalar) or **`#N`** (ordinal); markers supply the pronounceable vowel (**`ra`** / **`ru`** / **`re`**). Free end-relative **`reu`** / **`#-`** is not a derivation morph.
-- Do **not** read numeric morphs as free clause-slot numbers (use a free number word for count / rank / time / list item).
-- Do **not** confuse **`ROOTx+e`** (essence) with **`g+e`** (+∞) or **`ROOTx+1e`** (hyperbole), **`ROOTx-e-`** (quasi-ROOT) with free **`g-e-`** (notional amount) or **`ROOTx-e`** (void), **`ROOTx-e-2`** (quasi-dual) with free **`g-e-2`** (real −10⁻²) or **`ROOTx+2`** / **`ROOTx-2`**, **`ROOTx+0e`** (total null) with **`ROOTx+0`** (resettable null) or free **`v+0el`** (*annihilate*), **`ROOTx+0e-1`** (engineering null at OoM −1) with digitless sterile **`ROOTx+0e-`** or free bare OoM **`g+e-1`**, **`ROOTx#0e`** (rank annihilated) with **`ROOTx#0`** (zeroth-order) or **`ROOTx+0e`**, free **`g+e0`** (ones band) with **`ROOTx+1`** (singleton) or free **`g+1`**, **`ROOTx+1`** (unit morph) with **`ROOTx#1`** (premiere-order) or **`ROOTx+1e`** (gazillion), **`ROOTx#1`** with free **`g#1`** / label **`ROOTx_1`**, or **`ROOTx_e`** (open catalog) with **`g+e`** (amount +∞) / free digitless **`_`** (undefined).
-- Digitless **`+`/`-`/`#`** = kind metaphysics; digitless **`_`** = catalog metaphysics ([infinite labels](#infinite-labels)); zero×exp morphs = [zero-exponent derivation](#zero-exponent-derivation) (including **`±0e-1`** / **`#0e`**).
-- Plural **-sh** on noun-slot numeric derivatives follows ordinary [plurality](plurality.md) for that PoS.
+- **COMMENT:** sense-channel noting color on **`uho`**; dedicated bare `/j/` interjection; forced COMMENT on every first-person clause (only cognitive commentary environments).
+- **Emotion compose:** whether MED (`oju`) shares a form with another soft default; `/w/` bind on the judged `/ɡ/` vs only floating `/h/`; emotion lexicon retained only for non-judgmental sensation naming.
+- **Plan:** exact ending ↔ None / Vague / Detail / Contingency assignment on **`PLAN`**.
+- **Evidentiality / universality:** ending tables (confidence grain, soft vs committed warrant, …); full tense inventory stacking with channels; whether bare unmarked `hual` / `zual` implies COMMON or leaves warrant unspoken.
+- **Ability:** **`xe` / `xo`** on ability hosts (motive / prescription stay on [needs](values.md)); whose-ability / evidentiality on the denial; positive *can* forced on every clause.
+- **Role compounds:** ROLE **`e`** (reserved); instrument / beneficiary / recipient as extra ROLE vowels; role compounds under `/v/` `/h/` `/w/`; stacking role + ability (`axattackxu…`) — put ability on the bare event verb; *act done by entity* as a ROLE — resume verbs with ordinary **-r**, or use **`var`** for unnamed doing.
+- **Numeric derivation:** number endings / writing **`~` / `@` / `=`** on `NUM`; productive multi-digit scalar or ordinal morphs (`ROOTx+27`, `ROOTx#12`); bare digit morphs (`ROOTx1`); signed / end-relative ordinal morphs (`ROOTx#-2`); ordinal generation morphs (`ROOTx#3e2`); privative twin of ordinal **`#N`**; bare **`ROOTxe`** as essence; role **`e x ROOT`**; percent closers (**`jo` / `ju`**) as derivation morphs; digit-string morphs as phone-dial or discourse-list substitutes; scale-specific **`ROOTx±0eN`** for **`N≠1`**; **`ROOTx+e0`** / **`ROOTx+0e0`** / **`#0e0`** / **`ROOTx+Ne0`**; quasi-N beyond **`-e-1` / `-e-2`**.
 
-## Numbered alternatives (problem / solution / goal)
-<a id="numbered-alternatives"></a>
-<a id="ideation"></a>
+Judgment benchmarks (*worse than Average|…*) are NP comparees on comparative fences — [comparatives.md § Judgment benchmarks](comparatives.md#judgment-benchmarks). **Classification** and closed **`SAME`** identity live in [predication.md](predication.md). **Causation** reuses joins and join-relations — [causation.md](causation.md) (optional **`CAUSE`** mood = lexicon **`erage`** ⚙️ *mechanism*; not NATURAL).
 
-Port of Claritish **Numbered alternatives** (`problem1`, `solution2`, `goal3` instead of *the problem* / *the solution* / *the goal*). Fixating on a single frame hurts creativity; numbering candidates reminds speaker and listener to look for more.
+## See also
 
-**No new morphology.** Use ordinary lexicon nouns + free [ordinals](numbers.md) (`g#N`). Same style pressure as bare [percent denominators](numbers.md#percent-denominators): unique bare *the problem* (etc.) when framing ideation is **grammatical but stylistically bad**.
-
-### Preferred roots
-
-Published lexicon triad (puzzle → key → goal-net):
-
-| Sense | Root | Emoji / literal | Metaphor |
-|-------|------|-----------------|----------|
-| **problem** | **`ubezu`** | 🧩 *puzzle-piece* | something to fit / solve |
-| **solution** | **`egoge`** | 🔑 *key* | what unlocks it |
-| **goal** | **`ogalo`** | 🥅 *goal* | net you aim at / objective |
-
-Ordinary PoS still available (`zubezul` *a puzzle piece*; `vegogel` *to unlock*; …). The figurative jobs above are the ideation readings.
-
-### Recipe
-
-`zubezul g#1` / `zegogel g#2` / `zogalol g#1`
-
-| Piece | Role |
-|-------|------|
-| **`ubezu` / `egoge` / `ogalo`** | candidate kind (problem / solution / goal) |
-| free **`g#N`** | rank in **this** ideation series (*candidate N*) |
-| soft **`g~#N`** | tentative ranking |
-
-Prefer at least **`g#1`**; often name a second candidate. Soft **-m** on the number when the order is tentative.
-
-### Claritish → Clarity
-
-| Claritish / English cue | Clarity |
-|-------------------------|---------|
-| `problem1` / `solution2` / `goal3` | `zubezul g#1` / `zegogel g#2` / `zogalol g#3` |
-| *the problem* / *the solution* / *the goal* (ideation) | stylistically bad — number candidates |
-| discourse *point N:* | free **`x#N`** — [discourse marker](numbers.md#number-as-discourse-marker-by-marker); not a problem NP |
-
-### Not this
-
-| Form | Job | Why not for ideation numbering |
-|------|-----|--------------------------------|
-| **`ROOTx#N`** (`zubezuxrewol`) | ordinal **kind-order** (*premiere* / *secondary*) — [ordinal digit morphs](#ordinal-digit-morphs) | not “token #N in this brainstorm” |
-| **`ROOTx_N`** (`z<ubezu>xrowol`) | catalog / ID — [label-code](#label-code-sense) | specimen code, not candidate rank |
-| **`owaro`** | [PLAN](#plan-predict) mood | intention framing, not goal-as-noun (`ogalo`) |
-| **`onuzu`** | *blockage* | obstacle in the way, not problem-as-to-solve |
-| **`ululu`** | *remedy*; also [UNCOUNTERED](#universality) | medical fix / warrant mood, not solution proposal |
-| **`obawo` / `ubelo`** | *aim* / *precision* | how you direct, not the goal itself |
-| **`egeha` / `edale`** | *finish* / *achievement* | outcome markers, not the aimed-at objective |
-
-### Reframe vs number (separate jobs)
-
-Numbering = **multiple candidates**. Reframing the **same** situation = different wording of one frame — **not** a second digit:
-
-| Job | Prefer |
-|-----|--------|
-| Exact framing | ordinary **-l** (or exact [cite](spans.md)) |
-| Restatement / rephrase | metaphorical **-m**, discourse reviser **`el` / `em`** (*in other words* — [revisers](revisers.md#discourse-revisers)), or paraphrase span **`…~[…]`** |
-| Origin / telos of a **kind** | **`ROOTx#e-` / `ROOTx#e`** — [numeric derivation](#numeric-derivation); not “first wording vs rewrite” |
-
-### Constraints
-
-- Do **not** invent fused `problem1`-style roots or a dedicated ideation mood.
-- Do **not** require digits on every occurrence of these roots (*the problem of free will* as a philosophical topic is fine without `g#N`).
-- Numbering is not “more virtuous” than leaving candidates unranked — the nudge is against treating the first frame as unique when generating options.
+- [values.md](values.md) — needs vs ability / COMMENT / emotion compose
+- [coordination.md](coordination.md) — joins; soft **-n**; universals / domains
+- [restrictors.md](restrictors.md) — applicability vs join-relations / ability
+- [x-compounds.md](x-compounds.md) — mid-word **`x`** parser families
+- [numbers.md](numbers.md) — free numerals vs numeric derivation
+- [causation.md](causation.md) — join-relation causal readings; preference as law
+- [comparatives.md](comparatives.md) — judgment benchmarks; normative Mine
+- [predication.md](predication.md) — classification / **`SAME`**
+- [spans.md](spans.md) — mention / cite vs join-relation stock labels
+- [plurality.md](plurality.md) — **-sh** on nouns / event-sets
+- [pronouns.md](pronouns.md) — content **-r** vs role **-r**
+- [revisers.md](revisers.md) — in-clause *including* vs join-relation *including*

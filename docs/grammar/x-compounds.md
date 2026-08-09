@@ -2,11 +2,27 @@
 <a id="x-compounds"></a>
 <a id="compound-parser"></a>
 
-This page is the source of truth for **disambiguating mid-word `x`**. Mid-word **`x`** is only the [compound joiner](phonology.md#phonotactics) (never an ordinary root consonant). Word-initial **`x`** is the discourse-marker PoS — not this table.
+How to **disambiguate mid-word `x`**. Mid-word **`x`** is only the [compound joiner](phonology.md#phonotactics) — never an ordinary root consonant. Word-initial **`x`** is the discourse-marker PoS — not this page.
 
-Family-specific morphology lives elsewhere; this page is the **parser cue** map.
+Family-specific morphology lives on the owner pages; this page is the **parser cue** map.
 
-## Families by shape
+**Prerequisites:** [core.md](core.md) Beginner (PoS); [phonology.md](phonology.md) Beginner (compound joiner). Useful after you meet [spans](spans.md), [values](values.md), or [role compounds](special-vocabulary.md#role-compounds).
+
+## Beginner
+<a id="beginner"></a>
+
+### What mid-word `x` does
+
+Inside a word, **`x`** joins two halves into one compound. Different shapes mean different families (span fence, role, value / ability, numeric derivation, or ordinary sense compound).
+
+You do **not** need the full decision table for early dialogue. When a form looks like `…x…`, follow the owner page linked from the example. Come back here when several families collide.
+
+**Mnemonic:** mid-word **`x`** = glue; word-initial **`x`** = discourse PoS.
+
+## Intermediate
+<a id="intermediate"></a>
+
+### Families by shape
 <a id="families-by-shape"></a>
 
 After the PoS prefix, look at what sits **left** and **right** of the first mid-word **`x`**:
@@ -19,12 +35,12 @@ After the PoS prefix, look at what sits **left** and **right** of the first mid-
 | **`ROOT… x NUM…`** + ending | **[Numeric derivation](special-vocabulary.md#numeric-derivation)** | Right half matches [number](numbers.md) stem grammar **without** its own ending (marker **`+`/`-`/`#`/`_`**, digitless exp including label **`_e`/`_e-`**, hyperbole, [zero × exp](numbers.md#zero-exponent) **`+0e`/`±0e-1`/`#0e`**, label digits, scalar digit morph **`+N`/`-N`**, or ordinal digit morph **`#N`** — not free end-relative **`#-`** / generation / **`Ne0`** assert morphs; no **`ROOTx+e0`/`+0e0`**) |
 | **`ROOT… x ROOT…`** + ending | **Ordinary compound** | Lexicon sense-compounds; [phrasal proper names](reference-suffix.md#phrasal-proper-names) (`z<Mary Smith>n`) |
 
-No open content root is a **bare single vowel**, so a single vowel **left** of `x` is never an ordinary host root. Spans are the only family with a **single vowel right** of `x` (EDGE); role compounds put a full **`V(CV)+`** root there. Numeric **`NUM`** is never a content root — it is a PoS-less number stem (see [numeric derivation](special-vocabulary.md#numeric-derivation)). Running-text / citation examples prefer spelled CV (`…xraba…`); inventory tables may keep shorthand — [writing style](numbers.md#writing-style-numeric-vs-spelled).
+No open content root is a **bare single vowel**, so a single vowel **left** of `x` is never an ordinary host root. Spans are the only family with a **single vowel right** of `x` (EDGE); role compounds put a full **`V(CV)+`** root there. Numeric **`NUM`** is a PoS-less number stem — [numeric derivation](special-vocabulary.md#numeric-derivation). Running-text / citation examples prefer spelled CV (`…xraba…`); inventory tables may keep shorthand — [writing style](numbers.md#writing-style-numeric-vs-spelled).
 
-### Decision order (practical)
+### Decision order
 
 1. Exact **`xuxul`** / **`xuxur`** / **`xuxun`** / **`xuxum`** → span close.
-2. After PoS: one vowel + `x` + one vowel + ending → **span open** (or atomic / anaphor / empty / proper per [quotations](spans.md)).
+2. After PoS: one vowel + `x` + one vowel + ending → **span open** (or atomic / anaphor / empty / proper per [spans](spans.md)).
 3. After PoS: one vowel **`a`/`u`/`o`** + `x` + longer root + ending → **role compound**.
 4. Longer material before `x`, then `x` + single stance vowel **`a`/`e`/`o`/`u`** + ending → **value** (need host) or **ability** (non-need + **`a`/`u`** only).
 5. Longer material before `x`, then `x` + material that matches **number stem** grammar (writing **`+`/`-`/`#`/`_`**, speech **`r`+V…**, including digit morph **`+N`/`-N`** / **`#N`**) + ending → **numeric derivation**.
@@ -32,17 +48,24 @@ No open content root is a **bare single vowel**, so a single vowel **left** of `
 
 Stacked vowels on TYPE/EDGE/ROLE are **not** used: role ROLE is one of **`a`** / **`u`** / **`o`** only; span TYPE/EDGE stay single vowels.
 
-**Do not** parse bare **`ROOT x e`** as infinity-essence — that is stance **`xe`** (values / undefined on ability). Essence uses scalar digitless exp writing **`ROOTx+e`**.
+## Advanced
+<a id="advanced"></a>
 
-## Cross-links
+### Traps worth one look
 
-| Topic | Page |
-|-------|------|
-| Role **`a`/`u`/`o`** (agent / patient / reltum) | [special-vocabulary.md § Role compounds](special-vocabulary.md#role-compounds) |
-| Numeric derivation (**`ROOT x NUM`**) | [special-vocabulary.md § Numeric derivation](special-vocabulary.md#numeric-derivation) — includes [zero×exp](special-vocabulary.md#zero-exponent-derivation) |
-| Values **`need x {a\|e\|o\|u}`** | [values.md](values.md) |
-| Ability **`HOST x {a\|u}`** | [special-vocabulary.md § Ability](special-vocabulary.md#ability) |
-| Number stem grammar (free words) | [numbers.md](numbers.md) |
-| Span open / close | [spans.md](spans.md) |
-| Phrasal names / sense compounds | [reference-suffix.md](reference-suffix.md#phrasal-proper-names), [phonology.md](phonology.md#phonotactics) |
-| Joins (no mid-word `x`) | [coordination.md](coordination.md) |
+| Shape | Reading |
+|-------|---------|
+| Bare **`ROOT x e`** | Stance **`xe`** (values; undefined on ability) — **not** infinity-essence |
+| Essence | Scalar digitless exp **`ROOTx+e`** — [numeric derivation](special-vocabulary.md#numeric-derivation) |
+| **`e x ROOT`** | Reserved (undefined ROLE) — not a fourth role vowel |
+
+## See also
+
+- Role **`a`/`u`/`o`**: [special-vocabulary.md § Role compounds](special-vocabulary.md#role-compounds)
+- Numeric derivation: [special-vocabulary.md § Numeric derivation](special-vocabulary.md#numeric-derivation)
+- Values: [values.md](values.md)
+- Ability: [special-vocabulary.md § Ability](special-vocabulary.md#ability)
+- Number stems (free words): [numbers.md](numbers.md)
+- Span open / close: [spans.md](spans.md)
+- Phrasal names / sense compounds: [reference-suffix.md](reference-suffix.md#phrasal-proper-names), [phonology.md](phonology.md#phonotactics)
+- Joins (no mid-word `x`): [coordination.md](coordination.md)
