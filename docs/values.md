@@ -52,7 +52,7 @@ No ranked “better” need — unspecified is first-class (avoids shame).
 3. **Optional `x`-addition** — compound second half: vowel **`a` / `e` / `o` / `u`** (stance). Mid-word **`x`** is the ordinary [compound joiner](phonology.md#phonotactics).
 4. **Ending** — on value compounds with an `x`-addition, sense depends on the stance vowel ([contact channel](#value-contact) / [preference standing](#value-preference) / [prescription force](#value-force) / [changeability](#value-changeability)), not ordinary literal / metaphorical / name / pronoun.
 
-**Bare need** (no `x`-addition): **topic** only — names the need with no met / unmet / motive / prescription claim. Ending on a bare need keeps ordinary [reference-suffix](reference-suffix.md) senses for now (`hazedol` = pleasure topic).
+**Bare need** (no `x`-addition): **topic** only — names the need with no met / unmet / motive / prescription claim. Ending on a bare need keeps ordinary [reference-suffix](reference-suffix.md) senses (`hazedol` = pleasure topic).
 
 **Compound need** (`…x{a|e|o|u}…`): met, motive, prescription, or unmet ascriptions (`wodoloxal` = met competence, physical channel).
 
@@ -219,7 +219,7 @@ Elsewhere, values are optional — do not tax every clause.
 | `hazedol` | pleasure (**topic** only; no met/unmet/motive/ought) |
 | `hegegel` | unspecified need (**topic** only) |
 
-## Out of scope (for now)
+## Out of scope
 
 - **Emotion compose** — ACT / LOCUS lexicon (`ogena` / `oju` / `ozono` / `abobo` / `oburo` / `agena`) and recipe live in [special-vocabulary.md § Emotion compose](special-vocabulary.md#emotion-compose); it *reuses* this ascription, not a parallel tag system.
 - **COMMENT** / mindfulness noting — [special-vocabulary.md § Comment](special-vocabulary.md#comment); closed **`uho`** (*commentary*); cognitive attitudes only (not stacked on emotion compose); not contact-channel endings on **`xa`**.

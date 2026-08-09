@@ -29,7 +29,7 @@ Do **not** write `h<quickly>l h<quietly>l ham` for manner *and*; that reads as r
 
 Each conjunct is a **simple** `/h/` or `/w/` content word, or a **complex** unit (`/h/`+`/b/` / contiguous `/w/` material the lexicon allows). Matching role prefix on every conjunct head and on the join.
 
-**Not in this series (for now):** next-clause *when* / *if* subordination — that stays ordinary complex `/h/` + `/b/` [next-clause pronoun](pronouns.md#special-pronouns) ([language-reference.md](language-reference.md#dependent-clauses)). Circumstance fences list **phrase** circumstances, not dependent sentences.
+**Not in this series:** next-clause *when* / *if* subordination — that stays ordinary complex `/h/` + `/b/` [next-clause pronoun](pronouns.md#special-pronouns) ([language-reference.md](language-reference.md#dependent-clauses)). Circumstance fences list **phrase** circumstances, not dependent sentences.
 
 ## Series glosses (`/h/`; `/w/` exact parallel on the adjective)
 
@@ -71,7 +71,7 @@ Mnemonic: bare **`hal`** (*never*) ↔ **`hual`** (*always*); **`har`** (*someti
 
 ### Undefined under `/h/` / `/w/` (reserved, no gloss)
 
-Leave **undefined** (no circumstance reading) for now:
+Leave **undefined** (no circumstance reading):
 
 - Bare **`hol` / `hom` / `haol` / `haom` / `hul` / `hum` / `huol` / `huom`**
 - All **`-n`** spellings under `/h/` / `/w/` are **not** restrictors: `/h/`…**-n** (`han` / `hen` / …) = [join-relations](special-vocabulary.md#join-relations); `/w/`…**-n** stay reserved (no circumstance gloss)
@@ -101,7 +101,7 @@ Nesting and SHARED still apply to **defined** forms only.
 
 ## Constraints (extra)
 
-- Use only **defined** circumstance forms above; other reserved `/h/` / `/w/` joins stay unused for now.
+- Use only **defined** circumstance forms above; other reserved `/h/` / `/w/` joins stay unused.
 - **One restrictor chain** occupies one `/h/` floating unit or one `/w/` stack position on its host.
 - **Not** sibling manner / degree *and* — use juxtaposition.
 - **Not** next-clause *when* / *if* (yet) — use `/h/`+`/b/` next-clause pronoun.

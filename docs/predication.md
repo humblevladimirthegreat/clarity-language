@@ -99,7 +99,7 @@ goguno… b<OTHER>
 - Plural **-sh** on `SAME` (`oguno`) is unused for “they are the same group”; mark group reference on the host nouns, or ascribe identity pairwise.
 - Multi-alias lists (*A, B, and C are one*): prefer pairwise `SAME`, or separate sentences — do **not** invent a second SHARED reading under `ae` for co-reference.
 
-### Out of scope (for now)
+### Out of scope
 
 - Dedicated *become* / *remain* / *turn into* (ordinary content verbs when needed).
 - Mathematical “=” as a numeral or `/x/` device (different job from discourse identity).

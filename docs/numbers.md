@@ -294,8 +294,8 @@ Within each digit group:
 - The **exponent comes before** the group’s mantissa digits.
 - If a mantissa follows the exponent, say **`ja`** after the last exponent digit, then the mantissa. Example: `27e12` → `ba` + `wo` + `du` + `ja` + `du` + `le`.
 - **Bare order of magnitude** (exponent only, no mantissa): use `ba`/`bu` + exponent digits and **omit** **`ja`**. The group ends at the next `ba`/`bu`, or at the word ending. Example: *e9* → `ba` + `na` (not `*banaja`). See [Bare OoM decade bands](#bare-oom-bands).
-- **Digitless exponent** ([special values](#digitless-exponents), [hyperbole](#hyperbole-gazillion), or [zero × digitless exp](#zero-exponent)): use `ba`/`bu` with **no** exponent digits — alone for specials (`g+e`), after mantissa **`≠0`** for hyperbole (`g+1e`), or after mantissa **`0`** for total-null / sterile / residue specials (`g+0e`). Not the same as bare OoM (which always names the power) and not a [zero-group](#zero-digit-groups) word. Mantissa **`0`** + **digitful** exp **`-1`** only is the [engineering null / residue](#zero-exponent) pair **`±0e-1`** (other **`±0eN`** TBD).
-- **Exponent `0`:** ordinary magnitudes usually **omit** the exponent (and **`ja`**) — `g+3`, not `*g+3e0`. **Named `e0`** is ordinary bare / mantissa+exp anatomy (not a digitless special): bare **`g+e0`** = ones-decade band; mantissa **`Ne0`** (**`g+3e0`**) = *N × 10⁰* and **asserts OoM 0** (see [Ambient scale](#ambient-scale)). Do **not** confuse omit/`e0` with digitless `ba`/`bu` specials (`g+e`). Mantissa **`0`** + named **`e0`** (**`…0e0`**) is **TBD**. Derivation **`ROOTx+e0`** is **TBD** — [special-vocabulary.md](special-vocabulary.md#zero-exponent-derivation).
+- **Digitless exponent** ([special values](#digitless-exponents), [hyperbole](#hyperbole-gazillion), or [zero × digitless exp](#zero-exponent)): use `ba`/`bu` with **no** exponent digits — alone for specials (`g+e`), after mantissa **`≠0`** for hyperbole (`g+1e`), or after mantissa **`0`** for total-null / sterile / residue specials (`g+0e`). Not the same as bare OoM (which always names the power) and not a [zero-group](#zero-digit-groups) word. Mantissa **`0`** + **digitful** exp **`-1`** only is the [engineering null / residue](#zero-exponent) pair **`±0e-1`**.
+- **Exponent `0`:** ordinary magnitudes usually **omit** the exponent (and **`ja`**) — `g+3`, not `*g+3e0`. **Named `e0`** is ordinary bare / mantissa+exp anatomy (not a digitless special): bare **`g+e0`** = ones-decade band; mantissa **`Ne0`** (**`g+3e0`**) = *N × 10⁰* and **asserts OoM 0** (see [Ambient scale](#ambient-scale)). Do **not** confuse omit/`e0` with digitless `ba`/`bu` specials (`g+e`). Mantissa **`0`** + named **`e0`** (**`…0e0`**) is **not used**. Derivation does **not** take **`ROOTx+e0`** — [special-vocabulary.md](special-vocabulary.md#zero-exponent-derivation).
 - Default spoken/written scale uses **engineering notation**: exponents are usually multiples of **3** (e.g. `27e6`, not `2.7e7`).
 - **Decimal point:** say **`je`** after the digit(s) left of the point; digits after **`je`** are the fractional part (group in threes if long). May appear with or without an exponent.
 - **Scientific register** is optional: exp-first, then **`ja`**, then mantissa with **`je`** after the leading digit (usual scientific shape). Example: `5.2487083e-4` → `bu` + `mo` + `ja` + `va` + `je` + `du` + `mo` + `ha` + `le` + `zo` + `ha` + `re`.
@@ -355,7 +355,7 @@ A digit group may use an exponent marker (**`ba`** or **`bu`**) with **no** expo
 | **Mantissa `≠0` + `ba`/`bu`∅** | **Hyperbole** on scalars (*N gazillion* / *N gazillionth*); on ordinals **both** polarities (*umpteenth* late / *umpteenth-first* early) — see [hyperbole](#hyperbole-gazillion). End-relative place is marker **`#-`**, not mantissa+`bu` |
 | **Mantissa `0` + `ba`/`bu`∅** | **[Zero × digitless exp](#zero-exponent)** — total null / sterile / residue specials — **not** hyperbole |
 
-None of these is bare OoM (which always **names** the power: `g+e9`, including ones-band **`g+e0`**) nor a [zero-group](#zero-digit-groups) word (`g+` = plural `>1`). Named **`e0`** on scalars is ordinary bare OoM / **`Ne0`** assert — [Bare OoM](#bare-oom-bands) / [Ambient scale](#ambient-scale) — **not** a digitless special. Mantissa **`0`** + named **`e0`** (**`g+0e0`**) is **TBD**. On ordinals, **digitful** exp is [generation offset](#ordinal-generation), not scalar power-of-ten (**`g#e0`** = current generation).
+None of these is bare OoM (which always **names** the power: `g+e9`, including ones-band **`g+e0`**) nor a [zero-group](#zero-digit-groups) word (`g+` = plural `>1`). Named **`e0`** on scalars is ordinary bare OoM / **`Ne0`** assert — [Bare OoM](#bare-oom-bands) / [Ambient scale](#ambient-scale) — **not** a digitless special. Mantissa **`0`** + named **`e0`** (**`g+0e0`**) is **not used**. On ordinals, **digitful** exp is [generation offset](#ordinal-generation), not scalar power-of-ten (**`g#e0`** = current generation).
 
 **Writing:** **`e`** = speech **`ba`**; **`e-`** = speech **`bu`**. Digitless means no power digits after that mark: `g+e`, `g+1e`, `g+0e`, `g+e-`, `g+1e-`. Bare / assert **`e0`** writes power **`0`**: `g+e0`, `g+3e0` (not digitless).
 
@@ -396,7 +396,7 @@ Same under `/z/` `/d/` `/b/` (`z+e` = +∞ as subject; `d#e-` = start-place as o
 | **-n** | Proper / conventional designation of that special (named ∞ symbol, official *last place* / *starting* title, conventional *imaginary* label, …) |
 | **-r** | Resume a prior special value of that marker+exp polarity (`g=+e` = *that +∞ again*; `g=+e-` = *that start/small again*; `g=-e-` = *that notional amount again*) |
 
-**Contrast:** zero-group `g+` = plural count `>1`. Bare OoM `g+e9` = [decade band](#bare-oom-bands) `[10⁹, 10¹⁰)`; **`g+e0`** = ones band **1–9**. No-mantissa `g+e` = +∞; no-mantissa `g#e` = last place. Mantissa **`≠0`** + digitless **`ba`/`bu`** (`g+1e` / `g#1e` / `g#1e-`) = [hyperbole](#hyperbole-gazillion). Mantissa **`0`** + digitless (`g+0e` / `g#0e`) = [zero × exponent](#zero-exponent). Mantissa **`0`** + digitful **`e-1`** (`g±0e-1`) = engineering null / residue. Mantissa **`≠0`** + named **`e0`** (`g+3e0`) = ones-place assert ([ambient](#ambient-scale)). **`g+0e0`** **TBD**. End-relative ordinals use marker **`#-`** ([from the end](#from-the-end)). Focus ranked digitless (`zel z+`) is **not** a special value — ordinary *only (plural) matters* / preference framing (the old focus→∞ reading is **removed**).
+**Contrast:** zero-group `g+` = plural count `>1`. Bare OoM `g+e9` = [decade band](#bare-oom-bands) `[10⁹, 10¹⁰)`; **`g+e0`** = ones band **1–9**. No-mantissa `g+e` = +∞; no-mantissa `g#e` = last place. Mantissa **`≠0`** + digitless **`ba`/`bu`** (`g+1e` / `g#1e` / `g#1e-`) = [hyperbole](#hyperbole-gazillion). Mantissa **`0`** + digitless (`g+0e` / `g#0e`) = [zero × exponent](#zero-exponent). Mantissa **`0`** + digitful **`e-1`** (`g±0e-1`) = engineering null / residue. Mantissa **`≠0`** + named **`e0`** (`g+3e0`) = ones-place assert ([ambient](#ambient-scale)). End-relative ordinals use marker **`#-`** ([from the end](#from-the-end)). Focus ranked digitless (`zel z+`) is **not** a special value — ordinary *only (plural) matters* / preference framing (not a special-value reading).
 
 ##### Overlay `/v/` and `/h/`
 
@@ -482,7 +482,7 @@ Same under `/z/` `/d/` `/b/` (`z+0e` = absolute-zero as subject; `z+0e-1` = deci
 
 **Scalars only for `±0e-1`:** engineering scale-null is **`ra` / `ru`**. On ordinals, digitful exp is [generation](#ordinal-generation) (`g#0e-1` ≠ engineering; **`g#e0`** = current generation). Ordinal zero×digitless **`g#0e`** = [rank annihilated](#rank-annihilated) below.
 
-**TBD:** mantissa **`0`** + named exp **`0`** (**`g+0e0`** and overlays) — no defined reading yet (the old `0⁰` / paradox gloss is **removed**; `e` is always OoM, so `0×10⁰` is not raw `0⁰`).
+Mantissa **`0`** + named exp **`0`** (**`…0e0`**) is **not used**.
 
 ##### Overlay `/v/` and `/h/`
 
@@ -500,7 +500,7 @@ Same under `/z/` `/d/` `/b/` (`z+0e` = absolute-zero as subject; `z+0e-1` = deci
 | **`h-0e`** | with irreducible residual repetition |
 | **`h-0e-1`** | residual repetition **at OoM −1** |
 
-Ones-band / assert-`e0` overlays are ordinary bare OoM / **`Ne0`** (**`v+e0`**, **`h+3e0`**, …) — [Bare OoM](#bare-oom-bands) / [Ambient](#ambient-scale) — **not** this zero×exp table. Soft **-m** hedges (*almost annihilate*, *almost deci-null*, …). **`v+0e0`** / **`h+0e0`** **TBD**.
+Ones-band / assert-`e0` overlays are ordinary bare OoM / **`Ne0`** (**`v+e0`**, **`h+3e0`**, …) — [Bare OoM](#bare-oom-bands) / [Ambient](#ambient-scale) — **not** this zero×exp table. Soft **-m** hedges (*almost annihilate*, *almost deci-null*, …).
 
 ##### Overlay `/j/`
 
@@ -512,11 +512,11 @@ Ones-band / assert-`e0` overlays are ordinary bare OoM / **`Ne0`** (**`v+e0`**, 
 | **`j-0e`** | *Residue stands!* / *Won’t totally wipe!* |
 | **`j-0e-1`** | *Deci-residue stands!* |
 
-**`j+e0`** = ones-band cheer (ordinary bare OoM). **`j+0e0`** **TBD**. Other `/j/` zero-exp forms stay **undefined** for now.
+**`j+e0`** = ones-band cheer (ordinary bare OoM). Other `/j/` zero-exp forms beyond the table above are **undefined**.
 
 ##### Overlay `/x/`
 
-**`x+0e`**, **`x+0e0`**, **`x±0e-1`**, and kin stay **undefined** for now. Discourse nesting uses [generation](#ordinal-generation) (**`x#e0`** = current-layer assert; **`x#3e2`** = nested depth).
+Zero×exp under `/x/` is **undefined**. Discourse nesting uses [generation](#ordinal-generation) (**`x#e0`** = current-layer assert; **`x#3e2`** = nested depth).
 
 ##### Ordinal rank annihilated (`#0e`)
 <a id="rank-annihilated"></a>
@@ -531,7 +531,7 @@ Mantissa **`0`** + digitless **`ba`** under forward ordinal **`re` / `#`**. **No
 | **`h#0e`** | *for a disqualified / struck turn* |
 | **`j#0e`** | *Disqualified!* / *Rank wiped!* |
 
-Soft **-m** hedges (*near-disqualified*, …). **`x#0e`** and other ordinal zero×digitless beyond **`#0e`** stay **undefined** for now. Free twin of derivation **`ROOTx#0e`** — [special-vocabulary.md](special-vocabulary.md#rank-annihilated-morph).
+Soft **-m** hedges (*near-disqualified*, …). Ordinal zero×digitless under `/x/` is **undefined**. Free twin of derivation **`ROOTx#0e`** — [special-vocabulary.md](special-vocabulary.md#rank-annihilated-morph).
 
 ##### Free vs derived
 
@@ -544,14 +544,7 @@ Soft **-m** hedges (*near-disqualified*, …). **`x#0e`** and other ordinal zero
 | **`g#0e`** | **`z<contestant>xrezobal`** | disqualified place vs disqualified-*kind* |
 | **`v+0l`** | **`v<score>xrazol`** | ordinary zeroing / null-reset — weaker than **`…+0e`** |
 
-Free **`g+e0`** / **`g+Ne0`** are bare OoM / scale assert, **not** derivation twins here — **`ROOTx+e0`** / **`ROOTx+0e0`** stay **TBD**.
-
-##### Out of scope / TBD (for now)
-
-- Scale-specific **`…±0eN`** / **`…±0e-N`** for **`N≠1`** (and positive **`…±0eN`**) — only **`±0e-1`** is defined (engineering null / residue at OoM −1).
-- Mantissa **`0`** + named **`e0`** (**`…0e0`**, including ordinal **`#0e0`**) — **TBD**.
-- Derivation **`ROOTx+e0`** / **`ROOTx+0e0`** — **TBD** ([special-vocabulary.md](special-vocabulary.md#zero-exponent-derivation)).
-- Digit-string **`_`** zero-exp free forms.
+Free **`g+e0`** / **`g+Ne0`** are bare OoM / scale assert, **not** derivation morphs. Engineering scale-null is **only** **`±0e-1`** (no other **`±0eN`**). Mantissa **`0`** + named **`e0`** is **not used**.
 
 #### Hyperbole — mantissa + digitless exponent
 <a id="gazillion"></a>
@@ -611,7 +604,7 @@ Digit-string **`ro`** / **`_`** + mantissa + digitless exp stays **undefined**. 
 | **`x#1e`** | *umpteenth point:* / joke late agenda item |
 | **`x#1e-`** | *umpteenth-first point:* / joke early agenda item |
 
-**Not hyperbole:** `g+e` (no mantissa) = +∞; `g#e` / `g#e-` (no mantissa) = last / start place; mantissa **`0`** + digitless (`g+0e` / `g+0e-`) = [zero × exponent](#zero-exponent); bare / assert **`e0`** (`g+e0` / `g+3e0`) = [ones band](#bare-oom-bands) / [OoM-0 assert](#ambient-scale); **`g+0e0`** **TBD**; end-relative **`g#-N`** = [from the end](#from-the-end); digitful ordinal exp = [generation](#ordinal-generation) (**`g#e0`** = current gen); `g+e9` (digitful exp) = bare OoM; `g+1e9` = 1×10⁹ (real engineering). Do not mix digitless exp with **`je`** / **`jo`** / **`ju`** in the same group.
+**Not hyperbole:** `g+e` (no mantissa) = +∞; `g#e` / `g#e-` (no mantissa) = last / start place; mantissa **`0`** + digitless (`g+0e` / `g+0e-`) = [zero × exponent](#zero-exponent); bare / assert **`e0`** (`g+e0` / `g+3e0`) = [ones band](#bare-oom-bands) / [OoM-0 assert](#ambient-scale); end-relative **`g#-N`** = [from the end](#from-the-end); digitful ordinal exp = [generation](#ordinal-generation) (**`g#e0`** = current gen); `g+e9` (digitful exp) = bare OoM; `g+1e9` = 1×10⁹ (real engineering). Do not mix digitless exp with **`je`** / **`jo`** / **`ju`** in the same group.
 
 #### From the end — end-relative ordinal marker **`#-`** / **`eu`**
 <a id="from-the-end"></a>
@@ -673,7 +666,7 @@ On forward **`#`** / **`re`** and end-relative **`#-`** / **`reu`**, a **digitfu
 | **`g#e-1`** | generation −1 / parent layer (member unspecified) |
 | **`g#1e-1`** | 1st of generation −1 (often *the parent* when the cohort is singleton-framed) |
 
-**Not** this cell: digitless **`g#e`** / **`g#e-`** = telos / origin **landmarks** (extremes of the axis); digitless mantissa forms **`g#1e`** / **`g#1e-`** = [hyperbole](#hyperbole-gazillion); digitless **`g#0e`** = [rank annihilated](#rank-annihilated) (not generation). Do **not** read **`g#2e-`** as *grandparent* — use **`g#e-2`** / **`g#1e-2`**. Do **not** read **`g#0e-1`** as engineering null — that is scalar **`g+0e-1`**. Ordinal **`#0e0`** **TBD**.
+**Not** this cell: digitless **`g#e`** / **`g#e-`** = telos / origin **landmarks** (extremes of the axis); digitless mantissa forms **`g#1e`** / **`g#1e-`** = [hyperbole](#hyperbole-gazillion); digitless **`g#0e`** = [rank annihilated](#rank-annihilated) (not generation). Do **not** read **`g#2e-`** as *grandparent* — use **`g#e-2`** / **`g#1e-2`**. Do **not** read **`g#0e-1`** as engineering null — that is scalar **`g+0e-1`**.
 
 **Overlays:** `/x/` treats generation as **agenda nesting** (`x#3e2` = *3rd sub-sub-point under the focus*; **`x#e0`** = *current-layer item(s)* / assert this outline level). `/h/` / `/v/` / `/j/` inherit the same product (*for the 3rd time in gen +2*, *place 3rd in gen +2*, …) when the series is generation-structured; flat event counts stay **`h#N`**.
 
@@ -834,8 +827,8 @@ Place the identity symbol **immediately after** any ending mark (or after PoS wh
 | Digit syllables (`wo`…`zo`) | Arabic **`0`–`9`** |
 | `ba` / `bu` (+ `ja` when a mantissa follows) | **`e`** / **`e-`** (engineering, scientific, or [ordinal generation](#ordinal-generation)) |
 | `ba` / `bu` with **no** digits ([digitless exp](#digitless-exponents)) | **`e`** / **`e-`** with no power digits — specials `g+e`, `g+e-`; zero×digitless `g+0e`, `g+0e-`, `g#0e`; hyperbole `g+1e`, `g+1e-`, `g#1e`, `g#1e-` |
-| named exp **`0`** (bare OoM / assert) | **`e0`** — ones band `g+e0`; assert `g+3e0` / `g#e0` (omit still usual when ones/current is clear; [ambient](#ambient-scale)); **`…0e0`** **TBD** |
-| mantissa **`0`** + digitful **`e-1`** ([engineering null](#zero-exponent)) | **`0e-1`** — `g+0e-1` / `g-0e-1` (other **`±0eN`** TBD) |
+| named exp **`0`** (bare OoM / assert) | **`e0`** — ones band `g+e0`; assert `g+3e0` / `g#e0` (omit still usual when ones/current is clear; [ambient](#ambient-scale)) |
+| mantissa **`0`** + digitful **`e-1`** ([engineering null](#zero-exponent)) | **`0e-1`** — `g+0e-1` / `g-0e-1` only |
 | `je` | **`.`** |
 | `jo` | **`%`** |
 | `ju` | **`%*`** |
@@ -1064,7 +1057,7 @@ Same under `/d/` `/b/` `/ɡ/` (`gel g+5` = modifier *\<5*; `duel d+10` = object 
 
 **Inclusive bounds:** default is **strict** (`<` / `>`). For **≤ 5** / **≥ 5**, use a two-endpoint [span](#ranges) with the bound included — do **not** flip focus ranked to inclusive. Exclusive-high **`ul`** stays a two-side span tool (`z+3 ul z+5 zal g<span>l`), not a focus threshold marker.
 
-**Unspecified in a threshold:** bare **`e`** + **-r** = unspecified member of the *\< X* ray — `zer z+5` → *some/whatever value \< 5* (under question → *which value \< 5?*). **`ue`** takes **no** **-r** (stacked forms never do — [coordination](coordination.md#unspecified-member-r-phrase)); there is no `zuer` threshold. For an unspecified value *\> 5*, use other wording for now (e.g. a two-endpoint span with an open high, once defined), not a reverse **-r** fence.
+**Unspecified in a threshold:** bare **`e`** + **-r** = unspecified member of the *\< X* ray — `zer z+5` → *some/whatever value \< 5* (under question → *which value \< 5?*). **`ue`** takes **no** **-r** (stacked forms never do — [coordination](coordination.md#unspecified-member-r-phrase)); there is no `zuer` threshold. For an unspecified value *\> 5*, use other wording (not a reverse **-r** fence).
 
 Contrast: `z+3 z+5 zel g<age>l` = *from 3 to 5 on age* (span); `z+3 z+5 zel` = *3 ≻ 5* (preference); `z+5 zel` = *\< 5* (focus threshold); `z+e` / `g+e` = +∞ ([digitless exponents](#digitless-exponents)). `z<Sam>n zel` (non-number) stays ordinary *only Sam matters* / [superlative-with-scale](comparatives.md) — **focus number conjunct** triggers the threshold reading when the number is a bound (typically digitful).
 

@@ -213,7 +213,7 @@ The vowel **after** `x` is **EDGE** — how far the open runs. It is **not** a s
 
 **Anaphor `-r`** always uses EDGE **`a`** in the spoken template (`daxar`). Other EDGE + **-r** combinations are undefined.
 
-EDGE **`a`** / **`e`** / **`o`** take **-l** / **-m** / **-n** (`daxal`, `daxel`, `daxol`; `daxam`, `daxem`, `daxom`; `daxan`, `daxen`, `daxon`). EDGE **`u`** is normally exact **-l** (`daxul`); paraphrase-empty (`daxum`) and proper-empty (`daxun`) are unused for now.
+EDGE **`a`** / **`e`** / **`o`** take **-l** / **-m** / **-n** (`daxal`, `daxel`, `daxol`; `daxam`, `daxem`, `daxom`; `daxan`, `daxen`, `daxon`). EDGE **`u`** is normally exact **-l** (`daxul`); paraphrase-empty (`daxum`) and proper-empty (`daxun`) are unused.
 
 Open (EDGE **a** / **e** with interior) pushes a stack frame (PoS + TYPE + EDGE + ending) when there is interior to fence. **`xuxul`** pops one frame (complete); **`xuxur`** pops one (truncated); **`xuxun`** pops one (sic); **`xuxum`** pops all. Atomic (EDGE **o**), anaphor, and empty do not leave a frame that needs popping.
 

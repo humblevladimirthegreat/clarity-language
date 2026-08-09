@@ -1,16 +1,38 @@
 -punctuation
 -change values to compassion, rationality, empowerment, in that order
 
-## TBD number / derivation forms (readings not assigned)
+## Unassigned number / derivation readings
 
-Not lexicon roots — stem shapes still undefined:
-- free **`…0e0`** (`g+0e0`, `v+0e0`, `h+0e0`, `j+0e0`, ordinal `#0e0`, …)
-- other free **`±0eN`** for **`N≠1`** (only **`±0e-1`** defined)
-- derivation **`ROOTx+e0`**, **`ROOTx+0e0`**, **`ROOTx+Ne0`**, ordinal morph **`#0e0`**
+Stem shapes in the number / numeric-derivation anatomy that still need readings (not in the grammar docs until assigned):
 
-Dictionary entries (open lexicon / concepts — not the closed TBD list above):
+**Free numbers**
+- **`…0e0`** — mantissa **`0`** + named exp **`0`** (`g+0e0`, `v+0e0`, `h+0e0`, `j+0e0`, ordinal `#0e0`, overlays, …)
+- other free **`±0eN`** / **`±0e-N`** for **`N≠1`** (and positive **`…0eN`**) — only **`±0e-1`** is assigned
+- digit-string **`_`** zero-exp free forms
+- further `/j/` / `/x/` zero-exp cells left blank (`x+0e`, `x±0e-1`, `x#0e`, …) beyond defined overlays
+
+**Numeric derivation**
+- **`ROOTx+e0`** (kind twin of free ones-band **`g+e0`**)
+- **`ROOTx+0e0`** (kind twin of free **`…0e0`**)
+- **`ROOTx+Ne0`** (kind twin of free scale-assert **`Ne0`**)
+- ordinal morph **`ROOTx#0e0`** / free ordinal **`#0e0`**
+- scale-specific **`ROOTx±0eN`** for **`N≠1`** (only **`±0e-1`** assigned)
+
+## Causation / mood (not in grammar yet)
+
+- Full **`IF`** vs **`BECAUSE`** factivity write-up; epistemic-*because* twin
+- Everyday shipping of closed **`CAUSE`** mood (**`erage`** reserved)
+- Closed **`COND`** complex adjective (rejected in favor of joins)
+- Ending tables on **`IF`** / **`IFF`** / **`BECAUSE`**
+- Other adverbial subordinators (*although* / *while* / *until*, …) — lexicon roots
+
+## Evidentiality / tense
+
+- Dedicated observation vs imagination **tense** (stacks with evidentiality channels; does not replace them)
+- Consider sense words for observation
+
+Dictionary entries (open lexicon / concepts — not the closed list above):
 -habits: triggered
--direct observation vs imagination tense (stacks with evidentiality / memory-record channels — special-vocabulary.md), consider sense words for observation
 -unconditional self acceptance
 -apology
 -percentage chances for true

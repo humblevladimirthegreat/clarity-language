@@ -188,15 +188,6 @@ Particular episode (*this delay was caused by…*) vs standing law (*clouds for 
 - Justification (desire, definition, source, pattern) is **values + evidentiality / universality**, not subject-of-verb.
 - Optional **`CAUSE`** mood (if used) is **`erage`** ⚙️ *gear* → *mechanism* — do **not** reuse for [NATURAL](special-vocabulary.md#universality) **`afafa`**.
 
-## Out of scope (for now)
-<a id="out-of-scope"></a>
-
-- Full **`IF`** vs **`BECAUSE`** factivity write-up (hypothetical vs asserted explanation) and any epistemic-*because* twin.
-- Shipping closed **`CAUSE`** mood as everyday morphology (joins already carry condition type; root reserved: **`erage`**).
-- Closed **`COND`** complex adjective (rejected in favor of existing joins for now).
-- Ending tables on **`IF`** / **`IFF`** / **`BECAUSE`** (soft vs closed law-like, if needed later).
-- Other adverbial subordinators (*although* / *while* / *until*, …) — lexicon roots TBD.
-
 ## Cross-links
 
 - Inclusive focus **`…aom` / `…aol`**: [coordination.md § Focus](coordination.md#focus-phrase)

@@ -16,8 +16,8 @@ Ask in order. Prefer the **earlier** band when a concept sits on a boundary and 
    If the form only makes sense after joins, numbers, values, spans, etc. are already comfortable → at least **intermediate**.  
    Prefer **dependency** over “feels hard”: freestanding but dense material (e.g. basic **-l** / **-m** / **-n**) can stay beginner; easy-feeling but stacked material (e.g. rank joins for *the biggest*) can be intermediate.
 
-3. **Edge-case, stylistic, rare inventory, or TBD?**  
-   Hyperbole landmarks, uncommon span variants, overlay sense-forms, undefined stem shapes, and similar → **advanced**. Learners should not need these to finish a first dialogue corpus.
+3. **Edge-case, stylistic, or rare inventory?**  
+   Hyperbole landmarks, uncommon span variants, overlay sense-forms, and similar → **advanced**. Learners should not need these to finish a first dialogue corpus.
 
 ## How to apply
 
@@ -28,7 +28,7 @@ Ask in order. Prefer the **earlier** band when a concept sits on a boundary and 
 
 ## Cross-doc path
 
-1. Read every doc’s **Beginner** sections (order TBD when sections land — start from [language-reference.md](language-reference.md) PoS / orthography, then core linked docs).
+1. Read every doc’s **Beginner** sections (start from [language-reference.md](language-reference.md) PoS / orthography, then core linked docs; exact order can be listed here once section tags exist).
 2. Then every **Intermediate** section.
 3. Then every **Advanced** section.
 
