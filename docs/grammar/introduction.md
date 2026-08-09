@@ -69,6 +69,20 @@ Suggested **Beginner** order:
 
 Then every peer’s **Intermediate** section (same page order), then every peer’s **Advanced**.
 
+### Psychological features (tour only)
+<a id="psychological-features"></a>
+
+To see how compassion / rationality / empowerment land in the grammar, these pages carry that morphology:
+
+1. [values.md](values.md) — needs and stances on `/h/` `/w/`
+2. [special-vocabulary.md](special-vocabulary.md) — ability / incapability, roles, plan / predict, evidentiality, universality, emotion compose, **COMMENT**, **NOTIONAL**, numbered alternatives
+3. [causation.md](causation.md#preference-vs-law) — preference as law
+4. [comparatives.md](comparatives.md#judgment-benchmarks) — judgment benchmarks (*worse than…*)
+5. [x-compounds.md](x-compounds.md) — mid-word **`x`** families (values vs ability vs roles)
+6. [restrictors.md](restrictors.md) — applicability *when* (neighbor to values, not need-stance)
+
+**Skip the full Beginner path only for a tour.** Those pages assume clause basics from earlier steps. To learn to speak or parse Agelan, stay with the order above.
+
 ## Criterion for features
 <a id="criterion-for-features"></a>
 
