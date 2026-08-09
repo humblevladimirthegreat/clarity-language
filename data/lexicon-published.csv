@@ -283,7 +283,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🐪,camel,agema,endurance,camel endures the desert
 🦙,llama,alala,composure,no drama llama stays composed
 🦒,giraffe,ugare,overview,giraffe sees the overview
-🐘,elephant,eleba,,
+🐘,elephant,eleba,size,elephant is large in size; size is how big something is
 🦣,mammoth,amo,enormity,mammoth is enormous in scale
 🦏,rhinoceros,urohe,charge,rhino charges headlong
 🦛,hippopotamus,oha,bulk,hippo is sheer bulk
@@ -313,7 +313,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🦅,eagle,egale,vision,eagle eye sees far
 🦆,duck,udugu,,
 🦢,swan,azawa,grace,swan glides with grace
-🦉,owl,olowo,,
+🦉,owl,olowo,quietude,owl hunts without sound; quietude is low-noise manner
 🦤,dodo,odojo,obsolescence,dodo is dead and gone
 🪶,feather,evade,,
 🦩,flamingo,avulo,flamboyance,flamingo stands out flamboyantly
@@ -327,13 +327,13 @@ emoji,literal,clarity,metaphorical,mnemonic
 🐢,turtle,uredu,,
 🦎,lizard,ulazu,,
 🐍,snake,azena,treachery,snake in the grass
-🐉,dragon,adora,,
+🐉,dragon,adora,legend,dragon lives in legend; legend is an inherited mythic tale
 🦕,sauropod,azuro,antiquity,sauropod is ancient past
 🦖,t-rex,ereze,,
 🐋,whale,aweha,magnitude,whale-sized magnitude
 🐬,dolphin,odulo,,
 🫍,orca,orago,,
-🦭,seal,ezale,,
+🦭,seal,ezale,imprimatur,seal stamps a document as sanctioned; imprimatur is official backing
 🐟,fish,uhuvu,abundance,plenty of fish in the sea
 🦈,shark,azaha,ruthlessness,shark is ruthless predator
 🐙,octopus,ogodu,reach,octopus reaches in every direction
@@ -475,9 +475,9 @@ emoji,literal,clarity,metaphorical,mnemonic
 🍦,ice-cream,ugege,,
 🍩,doughnut,odugu,reward,donut is a sweet reward
 🍪,cookie,oguge,compliance,browser cookie tracks compliance
-🎂,birthday-cake,ubaro,,
+🎂,birthday-cake,ubaro,age,birthday cake marks years lived; age is how old on the continuum
 🍰,shortcake,ozahe,,
-🧁,cupcake,ugabe,,
+🧁,cupcake,ugabe,dessert,cupcake is a sweet course; dessert is the sweet finish
 🥧,pie,ubebu,,
 🍫,chocolate,ogoha,,
 🍬,candy,agona,,
@@ -518,7 +518,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🛘,landslide,alune,collapse,landslide is sudden collapse
 🌋,volcano,ovalo,eruption,a volcano bursts outward; eruption is bursting emotion
 🏕️,camping,aguma,,
-🏖️,beach,egahe,,
+🏖️,beach,egahe,weekend,beach marks the off-work stretch; weekend is the leisure days
 🏜️,desert,edeze,barren,a desert has little life; barren is empty of results
 🏝️,island,uzalu,isolation,an island stands apart; isolation is standing apart
 🏞️,national-park,anudo,refuge,a park is a green refuge; refuge is safe respite
@@ -526,9 +526,9 @@ emoji,literal,clarity,metaphorical,mnemonic
 🏛️,classical-building,agula,institution,grand columns mark public power; institution is established order
 🏗️,construction-site,ogunu,,
 🧱,brick,urugu,foundation,bricks stack from the ground up; foundation is the base layer
-🪨,rock,ojoro,,
+🪨,rock,ojoro,heaviness,rock is hard to lift; heaviness is weight on a scale
 🪵,wood,owodo,raw,wood is unfinished material; raw is unprocessed state
-🛖,hut,uhudu,,
+🛖,hut,uhudu,locality,hut sits in a small settlement; locality is the near neighborhood
 🏠,house,ohuze,home,a house is walls and roof; home is where you belong
 🏢,office,ovuve,corporate,tall offices for business; corporate is organized commerce
 🏤,post-office,obozu,delivery,post office sends mail out; delivery is sending something through
@@ -539,10 +539,10 @@ emoji,literal,clarity,metaphorical,mnemonic
 🏪,convenience-store,ogenu,convenience,corner store is always nearby; convenience is easy to reach
 🏫,school,ozogo,,
 🏬,department-store,edabe,,
-🏭,factory,avogo,,
+🏭,factory,avogo,product,factory turns out goods; product is the made output
 🏰,castle,ageza,fortress,castle walls defend within; fortress is defended stronghold
 💒,wedding,ewude,union,wedding chapel joins two people; union is joining together
-🗼,tokyo-tower,odowo,,
+🗼,tokyo-tower,odowo,height,tokyo tower rises high; height is vertical extent
 🗽,statue-of-liberty,azude,,
 ⛪,church,uruju,faith,church gathers believers; faith is trust in what is unseen
 🕌,mosque,ozuge,,
@@ -552,7 +552,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🕋,kaaba,agaba,pilgrimage,kaaba draws the faithful; pilgrimage is a sacred journey
 ⛲,fountain,ovuna,,
 ⛺,tent,edene,,
-🌁,foggy,ovogo,,
+🌁,foggy,ovogo,purport,foggy skyline leaves outlines unclear; purport is claimed but unsettled
 🌃,night,udunu,unknown,night hides what day shows; unknown is what is hidden
 🏙️,cityscape,ugoda,urban,towers and lights fill the skyline; urban is city life
 🌄,sunrise-mountains,uzune,dawn,sun rises over peaks; dawn is a new beginning
@@ -607,16 +607,16 @@ emoji,literal,clarity,metaphorical,mnemonic
 🛸,ufo,uvovu,,
 🛎️,bellhop,ebole,,
 🧳,luggage,ulage,baggage,luggage is what you carry along; baggage is what you carry with you
-⌛,hourglass-done,ohura,,
+⌛,hourglass-done,ohura,recency,hourglass just emptied; recency is nearness in time
 ⏳,hourglass,oruga,finite,sand runs out in the hourglass; finite is having a limit
 ⌚,watch,awada,punctuality,watch tracks the exact moment; punctuality is being on time
-⏰,alarm-clock,alaro,,
+⏰,alarm-clock,alaro,weekday,alarm clock starts the workweek morning; weekday is a workday
 ⏱️,stopwatch,azoda,,
 ⏲️,timer,udemu,deadline,timer counts down to zero; deadline is the moment time runs out
 🕰️,mantel-clock,ameno,passage,mantel clock marks hours passing; passage is time going by
-🕐,time,umedu,,
+🕐,time,umedu,time,clock face marks the hour; time is the duration continuum
 🌙,crescent-moon,egero,,
-🌡️,thermometer,edohe,,
+🌡️,thermometer,edohe,temperature,thermometer reads how hot or cold; temperature is the heat continuum
 ☀️,sun,uzunu,,
 🪐,saturn,uzadu,grandeur,ringed planet looms vast in space; grandeur is impressive scale
 ⭐,star,azada,,
@@ -657,7 +657,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🎟️,admission-tickets,adumu,admission,ticket grants entry inside; admission is being let in
 🎫,ticket,eduge,,
 🎖️,honor,ohono,honor,medal marks distinguished service; honor is earned respect
-🏆,trophy,oboho,,
+🏆,trophy,oboho,score,trophy marks the final tally; score is the counted result
 🏅,medal,edale,achievement,medal marks accomplished feat; achievement is reaching a goal
 🥇,gold,olodo,first,gold medal marks top place; first is leading all others
 🥈,silver,uzelu,second,silver medal marks runner-up; second is next after first
@@ -765,7 +765,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 💎,gemstone,egome,value,gem is rare and precious; value is worth holding dear
 🔇,mute,emude,suppression,mute silences all sound; suppression is holding back expression
 🔈,speaker-low,azebo,volume,quiet speaker plays low; volume is level of sound
-🔉,speaker-medium,azebe,,
+🔉,speaker-medium,azebe,voice,mid speaker carries a speaking voice; voice is audible expression
 🔊,speaker-high,egare,amplification,loud speaker fills the room; amplification is making louder
 📣,megaphone,emago,announcement,megaphone broadcasts to the crowd; announcement is public declaration
 📯,postal-horn,obazo,summons,horn calls people to gather; summons is calling to come
@@ -825,14 +825,14 @@ emoji,literal,clarity,metaphorical,mnemonic
 📓,notebook,onedo,,
 📒,ledger,edege,,
 📃,page-curl,abegu,,
-📜,scroll,orolo,,
+📜,scroll,orolo,tale,scroll records a tale; tale is a told story
 📄,page,egabe,document,page is a document
 📰,newspaper,enawe,news,newspaper delivers news
 📑,bookmark-tab,oboga,organization,bookmark tab organizes
 🔖,bookmark,ogoma,reminder,bookmark marks a reminder
 🏷️,label,aleba,classification,label gives classification
 🪙,coin,oguno,same,coin has two faces of one thing; same is two labels for one referent
-💰,money-bag,onebo,,
+💰,money-bag,onebo,debt,money bag holds what is owed; debt is an unpaid balance
 🪎,treasure-chest,edaru,riches,treasure chest holds riches
 💴,yen,oneno,,
 💵,dollar,odalo,,
@@ -855,21 +855,21 @@ emoji,literal,clarity,metaphorical,mnemonic
 🖊️,pen,enebe,commitment,pen ink stays on the page; commitment is a binding promise
 🖌️,paintbrush,abunu,artistry,brush paints with flowing strokes; artistry is skilled creative work
 🖍️,crayon,agoro,boldness,crayon marks with thick color; boldness is strong visible stroke
-📝,memo,emome,,
+📝,memo,emome,policy,memo records a standing decision; policy is a standing rule
 💼,briefcase,ubera,business,briefcase carries work affairs; business is commercial affairs
 📁,file-folder,ulevo,,
 🗂️,index-divider,udezu,,
 📅,calendar,egala,schedule,calendar marks planned dates; schedule is planned timing
 🗒️,notepad,oneda,,
 📇,index-card,uneda,index,card index sorts for lookup; index is sorted reference
-📈,chart-up,aguha,,
+📈,chart-up,aguha,degree,chart rising marks more on the scale; degree is vague how-much
 📉,chart-down,agoha,,
 📊,bar-chart,abara,analysis,bar chart compares quantities; analysis is examining data
 📋,clipboard,ugola,accountability,clipboard tracks tasks to do; accountability is answerable tracking
 📌,pushpin,unuju,highlight,pin marks an important spot; highlight is marking as important
 📎,paperclip,abebu,attachment,paperclip holds sheets together; attachment is joined addition
 📏,ruler,urelu,measurement,ruler measures exact length; measurement is precise tracking
-📐,set-square,ezuda,,
+📐,set-square,ezuda,extent,set square marks a measured span; extent is the continuum line
 ✂️,scissors,uzogu,separation,scissors cut material apart; separation is dividing apart
 🗃️,file-box,ulebo,archive,file box stores old records; archive is stored past record
 🗄️,filing-cabinet,uvula,,
@@ -887,7 +887,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🏹,bow-arrow,obawo,aim,bow sends arrow to target; aim is directing toward target
 🛡️,shield,uzehu,defense,shield blocks incoming blows; defense is guarding against harm
 🪚,saw,awaza,division,saw cuts material apart; division is splitting into parts
-🔧,wrench,ewere,,
+🔧,wrench,ewere,workaround,wrench turns past a stuck bolt; workaround is an improvised bypass
 🪛,screwdriver,ezuge,assembly,screwdriver joins parts together; assembly is putting together
 🔩,nut-bolt,unodu,,
 ⚙️,gear,erage,mechanism,gear drives mechanism
@@ -904,7 +904,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🪏,shovel,ozeho,excavation,shovel digs excavation
 ⚗️,alembic,alemu,,
 🧪,test-tube,eduze,experiment,test tube tries a small sample; experiment is testing a hypothesis
-🧫,petri-dish,ebudu,,
+🧫,petri-dish,ebudu,specimen,petri dish holds a sample to study; specimen is a sample under study
 🧬,dna,adana,,
 🔬,microscope,ugoro,,
 🔭,telescope,edelo,forecast,telescope shows what is far; forecast is looking ahead at a distance
@@ -1043,7 +1043,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 ♾️,infinity,unuvu,endless,infinity loop never closes an end; endless is without limit
 ‼️,exclamation-double,ezaga,,
 ⁉️,interrobang,unedo,,
-❓,question-red,ugezu,,
+❓,question-red,ugezu,possibility,red question marks the open case; possibility is maybe-so
 ❗,exclamation-red,azagu,,
 〰️,dash-wavy,adazo,hesitation,wavy dash trails off uncertainly; hesitation is holding back action
 💱,currency-exchange,urero,exchange,currency arrows swap one for another; exchange is swapping between sides

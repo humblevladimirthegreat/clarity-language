@@ -1,42 +1,5 @@
 # TODO
 
-Grammar-docs / learning-levels migration for `docs/grammar/` is **complete** — see [docs/meta/migration-grammar-docs.md](docs/meta/migration-grammar-docs.md) and the [cross-doc path](docs/meta/learning-levels.md#cross-doc-path). Unassigned design below stays out of learner grammar pages until assigned.
-
--punctuation
-
-## Lexical gaps (grammar-doc substitutions)
-
-Senses that grammar examples needed but lack a dedicated published root (examples were rewritten around other roots). Define later if pedagogy should name them directly:
-
-**Scalars / degree**
-- *big* / *large* / *tall* / *heavy* (size & weight scales — docs use *challenging* `onuda`, *bright* `urubu`, *haul* `uduru`, *vast* `umola`, …)
-- *much* / *very* (vague degree — docs use HIGH-activation `ogena` as `/w/`)
-- *age* (continuum — docs use *time* `umedu`)
-- pure numeric continuum label (*span* / *amount* — docs use *measurement* `urelu`)
-
-**Motion / body / events**
-- *go* (docs use *walk* `awu`)
-- *eat* / *drink* (docs use activity hosts like *apple* / *drinking-water*)
-- *sit* / *flee* / *bake* / *deploy* / *write* / *arrive* / *win* (as dedicated verbs)
-- *attack* (docs use *conflict* `ozowe`)
-- *sing* as verb (docs use *singer* / *expression* `egu`)
-
-**Social / abstract nouns**
-- *friend* (docs lean on co-participation `ana` / handshake)
-- *team* (docs use *teamwork* `ahana`)
-- *meeting* / *talk* / *gift* / *neighborhood* / *policy* / *menu* / *path* / *fix* / *candidate* / *dessert* / *topping*
-- *debt* / *score* / *duty* / *skill* / *truth* / *voice* / *story* / *myth* / *specimen*
-- *error* / *clue* / *cause* / *block* / *front* / *court* / *cell* / *backlog* / *edition* / *product* / *contestant*
-
-**Units / measures**
-- *inch* / *meter* / *gram* / *kilometer* / *hour* as measure units (docs reuse *measurement* `urelu` / *time* `umedu`)
-
-**Manner / stance**
-- *quickly* / *quietly* / *maybe* / *alleged* / *recent* / *official* / *weekend* / *weekday* / *workaround*
-
-**Invented proper-name roots** (not lexicon; grammar-only cast — publish or replace if desired)
-- `azama` (Sam), `edeja` (Lea), `odava` (Clark), `uzuba` (Superman), `ameva` / `ezema` (Mary / Smith), `enava` (Pat), `odeva` (Leonardo), `onuja` (New York), `udebe` (RGB)
-
 ## Unassigned number / derivation readings
 
 Stem shapes in the number / numeric-derivation anatomy that still need readings (not in the grammar docs until assigned):

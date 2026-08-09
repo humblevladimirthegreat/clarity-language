@@ -147,11 +147,11 @@ Focus / bare **`ae`** + SHARED scale stay ordinary focus / bare **`ae`** reading
 <a id="measured-differentials"></a>
 <a id="measure-gap"></a>
 
-*Two measures more challenging* is still a **comparative** (ranked + SHARED scale). The gap size is a **measure NP** as the scale adjective’s single `/b/` argument: **unit** as the `/b/` noun, **amount** as `/ɡ/` on that unit — [numbers.md § Measure phrases](numbers.md#measure-phrases).
+*Two meters more challenging* is still a **comparative** (ranked + SHARED scale). The gap size is a **measure NP** as the scale adjective’s single `/b/` argument: **unit** as the `/b/` noun, **amount** as `/ɡ/` on that unit — [numbers.md § Measure phrases](numbers.md#measure-phrases) (bare host `urelu` *measurement* = short meter; titled `ureluxrawon` when needed).
 
 | Example | Reading |
 |---------|---------|
-| `zazaman zedejan zel gonudam burelul g+2` | *Sam is two measures more challenging than Lea* |
+| `zazaman zedejan zel gonudam burelul g+2` | *Sam is two meters more challenging than Lea* |
 | `zazaman zedejan zel wogenal gonudam` | *Sam is much more challenging than Lea* (vague degree — `/w/`, no measure NP) |
 
 Vague degree stays `/w/`; counted gaps use the measure-NP pattern (one `/b/` on the scale, not amount + unit as two `/b/`s).

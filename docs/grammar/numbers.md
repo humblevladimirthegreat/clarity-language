@@ -590,7 +590,7 @@ Time uses the existing number grammar; there is **no** fifth marker vowel and **
 |-----|-----|
 | **Clock / schedule** | Digit-string **`ro`** as bare `/h/`. Default **24h**. Fields left→right, commas orthographic only: hour, minute, optional seconds — `h_15,30`, `h_15,30,00`. Digitless `h_` = *at some (unspecified) clock time*. |
 | **Calendar date** | Digit-string **`ro`**, ISO-ish fields: year, month, day — bare `h_2026,07,22`, or modifier `g_2026,07,22`. Digitless `h_` likewise covers an unspecified date reading when context is calendric. An explicit *date* host + `/b/` is optional when you want to name the relation; it is not required to license bare `hro` (bare `hro` already means time). |
-| **Duration** | Scalar **`ra`** / **`ru`** plus a lexicon **unit** in a [measure phrase](#measure-phrases) (*hour*, *day*, …) — not a digit-string, not bare `hro`. Same engineering-exponent habits as other measures when useful. |
+| **Duration** | Scalar **`ra`** / **`ru`** plus a lexicon **unit** in a [measure phrase](#measure-phrases) — SI **`ameno`** (*second*) or civil **`umedu`** (*time* / hours); not a digit-string, not bare `hro`. Same engineering-exponent habits as other measures when useful. |
 | **Deixis / tense** | Ordinary lexicon `/h/` (*yesterday*, *ago*, *until*, mood/evidential). Numbers appear only for a numeric payload (*3 days ago* = relation + scalar + unit). |
 | **Non-time digit labels** | Host relation + `/b/` (`/h/` *on* + `b_101.1`), or `/ɡ/` on a noun (*channel* `g_7`) — **not** bare `h_…`. |
 
@@ -626,6 +626,8 @@ Both writings name the **same word**. Choose the surface by **job**: quantity/ma
 <a id="measure-phrases"></a>
 <a id="units"></a>
 <a id="unit-amount"></a>
+<a id="si-units"></a>
+<a id="measure-hosts"></a>
 
 A **measure** is a lexicon **unit** noun plus a scalar **amount** grading that unit — not two bare `/b/` arguments, and not a new number closer (unlike closed **`jo`** / **`ju`**).
 
@@ -633,33 +635,67 @@ A **measure** is a lexicon **unit** noun plus a scalar **amount** grading that u
 
 | Slot | Shape | Gloss |
 |------|--------|--------|
-| Argument of a complex `/ɡ/` / `/h/` | `burelul g+2` | *two measures* (one `/b/` NP) |
-| Subject / object / … | `zumedul g+3`, `durelul g+5` | *three hours*, *five measures* |
+| Argument of a complex `/ɡ/` / `/h/` | `burelul g+2` | *two meters* (one `/b/` NP) |
+| Subject / object / … | `zamenol g+3`, `dojorol g+5` | *three seconds*, *five grams* |
 | Modifier on a noun | `gurelul g+2` on a host | rare; prefer unit as `/b/` or freestanding NP |
 
 Same endings and fuzzy **-m** habits as other number words on the amount (`g~+2` ≈ *about two*). The **unit** is ordinary lexicon (reference suffixes as usual). Do **not** encode open-class units inside the numeral word.
+
+#### Bare host vs unit morph (`x+1`)
+<a id="bare-vs-unit-morph"></a>
+<a id="unit-short-form"></a>
+
+Measure hosts are **published metaphorical roots** (dimension / quantity metaphors). There are **no freestanding SI stems** and **no Latin-style abbreviations** (`m`, `kg`, `s`, …).
+
+| Register | Shape | Example | When |
+|----------|--------|---------|------|
+| **Short / default** | bare host + amount | `burelul g+2` | ordinary measure phrases — the scalar licenses the unit reading |
+| **Full / titled** | host + digit morph **`+1`** (*unit / primary*) | `bureluxrawon g+2` | need *the named unit of that dimension* vs the ordinary metaphor (*measurement*, *heaviness*, …) |
+| **Resume** | letter pronoun or **-r** | `bur` / `bureluxrawor` | after the unit NP is on the table — not a standing abbreviation inventory |
+
+Spelled **`…xrawol`** / **`…xrawon`** — [numeric derivation](special-vocabulary.md#numeric-derivation) (**`ROOTx+1`**). Prefer **-n** on the titled form when the unit is a conventional SI name; **-l** when naming a unit-instance without that title force. Soft **-m** hedges amount or unit, not a short name.
+
+**Bare is enough** when the measure reading is clear (`bojorol g+70` ≈ *70 grams*). Use **`…x+1`** when the same root is also active as a quality or continuum (*how heavy*, *passage of time*, *heat*) and the unit reading must stay distinct — same habit as normative Mine **`zumogoxrawon`** vs performance **`zumogon`** ([comparatives](comparatives.md#judgment-benchmarks)).
+
+#### Stock measure hosts
+<a id="stock-measure-hosts"></a>
+
+| SI / everyday unit | Host (metaphor) | Bare measure | Titled unit |
+|--------------------|-----------------|--------------|-------------|
+| meter | `urelu` 📏 *measurement* | `burelul` | `bureluxrawon` |
+| gram | `ojoro` 🪨 *heaviness* | `bojorol` | `bojoroxrawon` |
+| second | `ameno` 🕰️ *passage* | `bamenol` | `bamenoxrawon` |
+| liter | `ozobo` 🥄 *portion* | `bozobol` | `bozoboxrawon` |
+| ampere | `oju` 🪼 *flow* | `bojul` | `bojuxrawon` |
+| kelvin | `ebebe` 🌶️ *heat* | `bebebel` | `bebeboxrawon` |
+| mole | `emade` 🍖 *substance* | `bemadel` | `bemadexrawon` |
+| candela | `agena` 🕯️ *awash* | `bagenal` | `bagenaxrawon` |
+
+**Civil duration** (*hours*, *days*) uses continuum **`umedu`** 🕐 *time* as the measure host (`bumedul g+3` ≈ *three hours*) — not a second `+1` morph on `ameno`. SHARED range continua stay **`gumedul`** / **`gurelul`** / **`gezudal`** as the line needs ([ranges](#ranges)). Temperature continuum **`edohe`** 🌡️ *temperature* grades heat without naming kelvin.
+
+**Common derived (optional):** newton `ubunu` *force*; pascal `agala` *pressure*; joule `abedo` *energy*; watt `ubulu` *power*; hertz `urumu` *rhythm*; ohm `onuzu` *blockage*; coulomb `urohe` *charge*; radian `erola` *cycle* — same bare / `…x+1` habit.
 
 #### No metric prefixes
 <a id="no-metric-prefixes"></a>
 <a id="metric-prefixes"></a>
 
-**Metric prefixes are not lexicon roots.** There is no dictionary entry for prefixed SI units. Lexicon units are **base** measure words (*measure*, *time*, …). Scale the amount instead:
+**Metric prefixes are not lexicon roots.** There is no dictionary entry for *kilo-* / *milli-* / *mega-* units. Keep the **base** host; put the power of ten on the **amount**:
 
 | Prefer | Avoid |
 |--------|--------|
-| *measure* + amount in thousands / `e3` (or the exact count) | prefixed unit roots |
-| `burelul g+5400` or `burelul g+5.4e3` for long distances | invented prefixed unit word |
-| `burelul g+40e3` | *40 kilo-units* as a prefixed unit word |
+| bare / titled base unit + `e3` / `e-3` / exact count | prefixed unit roots (*kilometer*, *kilogram*, …) |
+| `burelul g+5400` or `burelul g+5.4e3` | invented prefixed length word |
+| `bojorol g+70e3` | *70 kilograms* as a prefixed mass word |
 
-Use [engineering exponents](#exponents) on the amount when convenient (`e3` / `e-3` / `e6` / …), or write the full scalar (`5400` meters). Same habit for other SI-style prefixes (*milli-*, *micro-*, *mega-*, …): keep the base unit; put the power of ten in the number.
+Same habit for every SI-style prefix: scale the number, not the unit stem.
 
-**Measured differentials** (*two inches taller*) put that measure NP as the **single `/b/`** on the SHARED scale adjective of a [comparative](comparatives.md#measured-differentials):
+**Measured differentials** (*two meters taller*) put that measure NP as the **single `/b/`** on the SHARED scale adjective of a [comparative](comparatives.md#measured-differentials):
 
-`zazaman zedejan zel gonudam burelul g+2` → *Sam is two measures more challenging than Lea*
+`zazaman zedejan zel gonudam burelul g+2` → *Sam is two meters more challenging than Lea*
 
 Vague degree stays `/w/` on the scale (`zel wogenal gonudam …`) — no unit. Duration and other clause measures use the same unit+amount habit in whatever slot the relation needs.
 
-**Not this pattern:** percentage closers (**`jo`** / **`ju`**); bare multiplicative `/h/` factors (`h+1.5`); stacking `b+2 burelul` as two arguments of one adjective.
+**Not this pattern:** percentage closers (**`jo`** / **`ju`**); bare multiplicative `/h/` factors (`h+1.5`); stacking `b+2 burelul` as two arguments of one adjective; Latin letter abbreviations as Agelan orthography.
 
 
 ### Ranges
@@ -1176,6 +1212,7 @@ PoS-less number stems may follow mid-word **`x`** on an ordinary content root (`
 
 - Phrase fences for ranges: [coordination.md](coordination.md)
 - Scalar comparison / measured differentials: [comparatives.md](comparatives.md)
+- Digit morph **`+1`** (*unit*) on measure hosts: [special-vocabulary.md](special-vocabulary.md#numeric-derivation)
 - Numeric derivation on roots: [special-vocabulary.md](special-vocabulary.md#numeric-derivation)
 - Mid-word **`x`** families: [x-compounds.md](x-compounds.md)
 - Number-word phonotactics: [phonology.md](phonology.md)

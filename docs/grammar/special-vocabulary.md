@@ -806,7 +806,7 @@ Single-digit scalars only. Inventory / metalanguage writing uses the marker (**`
 
 | `+N` | Strong reading | Example | `-N` privative | Example |
 |------|----------------|---------|----------------|---------|
-| **`ROOTx+1`** | unit / primary / singleton | `zegarexrawol` — *a single / primary voice*; **`zumogoxrawon`** — [personal standard](comparatives.md#mine-vs-speaker) (normative Mine; host = [speaker](pronouns.md#special-pronouns) **`umogo`**) | non-unitary / indistinct / not-a-one | `zegarexruwol` — *an indistinct / non-singular voice* |
+| **`ROOTx+1`** | unit / primary / singleton | `zegarexrawol` — *a single / primary voice*; **`zumogoxrawon`** — [personal standard](comparatives.md#mine-vs-speaker) (normative Mine; host = [speaker](pronouns.md#special-pronouns) **`umogo`**); titled SI measure units on dimension hosts (`bureluxrawon` *meter* — [measure phrases](numbers.md#bare-vs-unit-morph); bare host is the short form) | non-unitary / indistinct / not-a-one | `zegarexruwol` — *an indistinct / non-singular voice* |
 | **`ROOTx+2`** | dual / mutual / reciprocal / pair | `gobulexradul` — *mutual duty* | non-reciprocal / one-sided / unpaired | `gobulexrudul` — *one-sided duty* |
 | **`ROOTx+3`** | triad / triplet / 3-part / ternary | `zezebexrarel` — *a three-part dialogue* | non-tripartite / collapsed-from-three | `zovuvexrurel` — *non-tripartite government* |
 | **`ROOTx+4`** | quad / 4-part / square / frame | `zezagexramol` — *a four-part / framed court* | unframed / out-of-box / unbound | `zuruxrumol` — *an unframed idea* |
@@ -1058,7 +1058,7 @@ Judgment benchmarks (*worse than Average|…*) are NP comparees on comparative f
 - [coordination.md](coordination.md) — joins; soft **-n**; universals / domains
 - [restrictors.md](restrictors.md) — applicability vs join-relations / ability
 - [x-compounds.md](x-compounds.md) — mid-word **`x`** parser families
-- [numbers.md](numbers.md) — free numerals vs numeric derivation
+- [numbers.md](numbers.md) — free numerals vs numeric derivation; [measure phrases](numbers.md#measure-phrases) (bare host vs **`ROOTx+1`** unit)
 - [causation.md](causation.md) — join-relation causal readings; preference as law
 - [comparatives.md](comparatives.md) — judgment benchmarks; normative Mine
 - [predication.md](predication.md) — classification / **`SAME`**
