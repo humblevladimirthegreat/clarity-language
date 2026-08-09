@@ -86,6 +86,21 @@ One short cue is enough (table column, parenthetical, or a line under the rule).
 - Bold sparingly; put Clarity forms in backticks (`jal`, **-r**, `/ɡ/`).
 - Always call the language **Clarity**.
 
+## Plain language (no assumed linguistics)
+
+Do **not** assume the reader knows linguistics jargon. Write for a motivated learner with ordinary school grammar (*subject*, *verb*, *adjective*), not for a linguistics seminar.
+
+| Do | Don’t |
+|----|--------|
+| Prefer everyday English for the job (*statement*, *ask*, *main clause*, *at the end of…*) | Lead with bare terms like *assertoric*, *illocution*, *matrix-final*, *predicative*, *prosody*, *paradigm* |
+| If a short technical label helps later cross-links, **define it in the same breath** on first use | Use the label alone and hope context teaches it |
+| Keep Clarity-invented labels that the page is teaching (`clause force`, *turn* vs *continue*) and gloss them once | Stack several undefined jargon words in one sentence |
+| School-grammar words (*subject*, *direct object*, *adverb*) are fine when the English job is clear | Pack morphosyntax shorthand (*zero-copula*, *right-bound*, *adjunct*, *complement clause*) without a plain gloss |
+
+**Test:** would a careful reader who never took a linguistics class still get the rule from the first paragraph and the example? If not, rewrite the lead in plain words and demote the technical term to a parenthetical or a later Intermediate note.
+
+Stable section ids and cross-doc anchor names may keep older technical wording (`matrix-final`, `clause-force`); the **prose the learner reads** still has to explain the idea in ordinary English.
+
 ## Examples
 
 | Do | Don’t |
