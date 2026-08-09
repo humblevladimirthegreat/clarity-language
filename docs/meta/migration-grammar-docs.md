@@ -164,10 +164,10 @@ Keep the list short; link to each doc’s `#beginner` (or equivalent).
 ## Tracking
 
 - [x] Phase 0: `docs/grammar/` move + `core.md` rename + link sweep + strip out-of-folder mentions + `lint:md`
-- [ ] `reference-suffix.md`
-- [ ] `pronouns.md`
-- [ ] `plurality.md`
-- [ ] `questions.md`
+- [x] `reference-suffix.md`
+- [x] `pronouns.md`
+- [x] `plurality.md`
+- [x] `questions.md`
 - [ ] `predication.md`
 - [ ] `revisers.md`
 - [ ] `restrictors.md`

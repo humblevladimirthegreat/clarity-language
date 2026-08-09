@@ -1,128 +1,204 @@
-# Reference Suffix
+# Reference suffix
 
-Every content word ends with a **reference suffix** — one of four final consonants that encode how the root is used in discourse: literal vs metaphorical sense, proper name, or anaphoric reference. The lexicon stores **roots** only; the reference suffix (and PoS prefix) are applied at use time.
+Every content word ends with a **reference suffix** — one of four final letters that say how the root enters the talk: literal kind, metaphorical sense, proper name, or resume of something already mentioned. The lexicon stores **roots** only; you add the ending (and the role letter) when you use the word.
 
-## Word shape
+**Prerequisites:** [core.md](core.md) Beginner (role letters and word shape).
+
+## Beginner
+<a id="beginner"></a>
+
+### The four endings
+
+| Ending | Job | Mnemonic |
+|--------|-----|----------|
+| **-l** | First mention in the **literal** sense (*a / some X*) | **l**iteral |
+| **-m** | First mention in a **metaphorical** sense | **m**etaphor |
+| **-n** | **Named** / definite by label (*Sam*, *Paris*) | **n**ame |
+| **-r** | **Resume** an already-introduced referent | **r**esume / **r**efer back |
+
+A bare **-l** / **-m** word always **introduces**. To point back, use **-r**. Anaphoric **-r** detail lives in [pronouns.md](pronouns.md).
+
+**Mnemonic:** endings answer *how does this root enter the talk?* — new literal, new figurative, named, or already on the table.
 
 ```
-[PoS prefix] + [l?] + root (+ x + root …) + reference suffix + [sh?]
+`zogodol gulebul.`
+
+gloss: `z-dog` · `g-blue`
+
+*A dog is blue.* (first mention, literal)
 ```
 
-Written as **one token with no hyphen** after the PoS letter (`zumogon`, not `z-umogo`). Foreign roots: `PoS<…>ENDING` (e.g. `d<english>l`). Opaque spans: no ending after `>` (`d<sushi>`). See **[orthography](core.md#orthography)**.
+```
+`z<Sam>n v<go>l.`
 
-1. **PoS prefix** — role in the clause (see [core.md](core.md#part-of-speech-prefixes)).
-2. **Left-bound `l`** — optional; **adjectives only** (`/ɡ/` → **`gl-`**). Marks [left-bound attachment](core.md#left-bound-adjectives) (adjective before host). Not the word-final reference suffix **-l**.
-3. **Root(s)** — `V(CV)+`; compound roots join with **x** (see [phonology.md](phonology.md#phonotactics)).
-4. **Reference suffix** — **-l**, **-m**, **-n**, or **-r** (below).
-5. **Plural -sh** — optional; marks an **associative group** (or address-set / collective `/ɡ/`), after the reference suffix — see [plurality.md](plurality.md).
+gloss: `z-Sam` · `v-go`
 
-## The four suffixes
+*Sam goes.* (named person)
+```
 
-| Suffix | Name | Discourse job |
-|--------|------|----------------|
-| **-l** | literal | Indefinite introduction in the literal sense (“a / some X”) — first mention |
-| **-m** | metaphorical | Indefinite introduction in a figurative sense — first mention |
-| **-n** | proper name | Definite / unique by nature (not “a John”) |
-| **-r** | pronoun | Definite reference to an already-introduced referent |
+```
+`zur v<go>l.`
 
-A bare **-l** / **-m** word always introduces; it is never used to resume a prior referent. Resumption is always marked with **-r**. Anaphoric **-r** grammar lives in **[pronouns.md](pronouns.md)**. The dictionary has separate entries for the literal (**-l**) and metaphorical (**-m**) sense of each word.
+gloss: `z-r` · `v-go`
 
-## Proper name (`-n`)
+*He/she/it goes.* (resume — stem from prior mention; see [pronouns](pronouns.md))
+```
 
-**-n** marks a **named designation**: the speaker treats the root as a definite, established label — not “a kind of X” (`-l` / `-m`) and not a back-reference (`-r`). The usual case is people and places (`/z/`…**-n**, `/d/`…**-n**), but **-n** is available on **any** PoS prefix. The prefix says what role the word plays **now**; **-n** says you are invoking a **title, proper label, or conventionally unique name** for that root, not introducing a fresh indefinite reading.
+Prefer a published root when the English meaning matches; use **-m** when the match is the published **metaphorical** sense.
 
-Prefer **-n** (and its **-r** pronoun) over speaker/listener special pronouns when a name exists — see [pronouns.md](pronouns.md#special-pronouns).
+### Word shape
 
-### Nouns (`/z/`, `/d/`, `/b/`)
+```
+[role letter] + [l?] + root (+ x + root …) + ending + [sh?]
+```
 
-Named individuals, places, one-off objects, and other referents that are definite by nature: *Sam*, *Paris*, *the Odyssey* (as a titled work). You are not saying “a Sam” or “some Paris”; you are using the established name. Argument nouns under a complex adjective or adverb can be **-n** when the relation’s participant is a named entity (*book by* **[Rowling]**).
+Write **role letter + root + ending** as **one token** (`zumogon`). Foreign roots: `PoS<…>ENDING` (e.g. `d<english>l`). Opaque spans take no ending after `>` (`d<sushi>`). Full writing rules: [core.md § Writing words](core.md#orthography).
 
-### Phrasal proper names (mid-word `x`)
+1. **Role letter** — job in the sentence ([core.md](core.md#part-of-speech-prefixes)).
+2. **Left-bound `l`** — optional; **adjectives only** (`/ɡ/` → **`gl-`**) when the adjective sits **before** its host ([left-bound adjectives](core.md#left-bound-adjectives)). Not the same as word-final **-l**.
+3. **Root(s)** — compounds join with mid-word **`x`** ([phonology.md](phonology.md#phonotactics)).
+4. **Reference suffix** — **-l**, **-m**, **-n**, or **-r**.
+5. **Plural `-sh`** — optional; after the ending — [plurality.md](plurality.md).
+
+### Proper names on nouns (starter)
+
+**-n** marks a **named designation**: you treat the root as a definite, established label — not “a kind of X.” Usual first cases are people and places (`/z/`…**-n**, `/d/`…**-n**).
+
+Prefer **-n** (and its **-r** resume) over speaker/listener specials when a name exists — [pronouns.md](pronouns.md#special-pronouns).
+
+**-n** on other role letters, multipart names, and titled events are Intermediate ([proper name](#proper-name--n)).
+
+### Plural `-sh` (pointer)
+
+After the ending, **-sh** marks an **associative group** (anchor and associates) — or related jobs on adjectives / vocatives. Short form: `…r` is one referent; `…rsh` is that referent **and associates**. Inclusive *we* is special **`ana`**, not **-sh**. Full rules: [plurality.md](plurality.md).
+
+## Intermediate
+<a id="intermediate"></a>
+
+### Proper name (`-n`)
+<a id="proper-name--n"></a>
+
+**-n** is available on **any** role letter. The letter says what job the word plays **now**; **-n** says you are invoking a **title, proper label, or conventionally unique name**, not introducing a fresh indefinite reading.
+
+#### Nouns (`/z/`, `/d/`, `/b/`)
+
+Named individuals, places, one-off objects, titled works: *Sam*, *Paris*, *the Odyssey*. Argument nouns under a complex adjective or adverb can be **-n** when that participant is a named entity (*book by* **[Rowling]**).
+
+#### Phrasal proper names (mid-word `x`)
 <a id="phrasal-proper-names"></a>
 
-**Multipart proper names** — given + family, compact multi-token place names, and similar **one-referent** labels that English writes as several capitalized words — are **one content word** when short enough to stay handy.
+**Multipart proper names** — given + family, compact multi-token place names, and similar **one-referent** labels — are **one content word** when short enough to stay handy.
 
 | Shape | Example | Reading |
 |-------|---------|---------|
 | **Foreign** multipart (donor spelling in one `<>`) | `z<Mary Smith>n` | *Mary Smith* (one person) — space inside `<>` OK |
 | same under other slots | `d<New York>n`, `b<Leonardo da Vinci>n` | one named place / person as object or argument |
-| **Nativized** multipart (published / adapted Clarity roots + mid-word **`x`**) | `zuzuzuxogeven` | *Sushi-Coffee* as one nativized label (roots `uzuzu` / `ogeve`) — pattern for when both halves are lexicon roots |
+| **Nativized** multipart (Clarity roots + mid-word **`x`**) | `zuzuzuxogeven` | *Sushi-Coffee* as one nativized label |
 
-**Do not** spell a phrasal name as adjacent bare same-PoS words (`z<Mary>n z<Smith>n`). Inside a [join](coordination.md) that would look like two conjuncts (*Mary and Smith*), and elsewhere it competes with inventory *and*, [identity](predication.md#identity), and [classification](predication.md#classification). One word (foreign `<>` or nativized **`x`-compound**) keeps **one** anaphor target ([pronouns](pronouns.md): resume from the compound’s root prefix through the 2nd vowel) and one slot filler.
+**Trap:** adjacent bare same-role words (`z<Mary>n z<Smith>n`) look like two people in a [join](coordination.md) (*Mary and Smith*). One word (foreign `<>` or nativized **`x`-compound**) keeps **one** resume target and one slot filler.
 
-**Long titles** (book / film / album names, and other designations that would need many roots, mixed PoS, or an internal *and*) prefer a [**cite**](spans.md) span when used as title wording to pick out the work (often proper **`@`** / **-n**); *the title X* / *the proverb X* as a named unit uses [**mention**](spans.md) **-n** — do **not** force a single **`x`-compound**. Resume with a [span anaphor](spans.md#endings) (`daxar` / `doxar` / …), not content-word **-r** on a fake mega-root. Compact person/place compounds above are the default; span fences are the escape hatch when the compound would be clumsy.
-
-**Not this:** coordination of distinct people (`zam z<Mary>n z<Smith>n` = *Mary and Smith*); role ascription (`z<Sam>n gedagel`); co-reference (`gogunol b-…`); raw donor spelling as an **opaque** span when you meant a compact foreign content word (`d<sushi>` opaque blob ≠ `d<sushi>l` / nativized `duzuzul` — [loans](spans.md#loans)).
+**Long titles** (book / film / album names that would need many roots or an internal *and*) prefer a [cite](spans.md) span; *the title X* / *the proverb X* as a named unit uses [mention](spans.md) **-n**. Resume with a [span anaphor](spans.md#endings) (`daxar` / …), not content-word **-r** on a fake mega-root.
 
 Phonotactics for **`x`**: [phonology.md](phonology.md#phonotactics).
 
-### Verbs (`/v/`)
+#### Verbs (`/v/`)
 
-A **named action, rite, or event** — not a generic instance of the verb. English parallels: *perform* **[Hamlet]**, *run* **[the Boston Marathon]**, *observe* **[Ramadan]**, *do* **[the Macarena]**. The verb root names the kind of doing; **-n** says you mean **that** titled or conventional occurrence, not “a run” or “some performing” in the abstract.
+A **named action, rite, or event** — not a generic instance. English parallels: *perform* **[Hamlet]**, *run* **[the Boston Marathon]**, *observe* **[Ramadan]**. The verb root names the kind of doing; **-n** says you mean **that** titled occurrence.
 
-### Adjectives (`/ɡ/`)
+#### Adjectives (`/ɡ/`)
 
-A **named category, style, or affiliation** used as a label on the host noun — when the point is the proper designation, not a fresh literal description. English parallels: **[Art Deco]** furniture, **[Buddhist]** monastery (the named tradition), **[iOS]** app. Contrast **-l**: *a buddhist text* (indefinite, literal kind) vs **-n** when the tradition’s name is the intended frame. Brand and movement names on `/ɡ/` belong here; generic material or color readings stay **-l**.
+A **named category, style, or affiliation** on the host — when the point is the proper designation. English parallels: **[Art Deco]** furniture, **[Buddhist]** monastery, **[iOS]** app. Contrast **-l**: *a buddhist text* (indefinite kind) vs **-n** when the tradition’s name is the frame.
 
-### Adjective adjuncts (`/w/`)
+#### Adjective extras (`/w/`)
 
-Rare. **-n** marks a **named scale, grade, or criterion** for reading the preceding `/ɡ/` — not ordinary intensity. The adjunct names *which* fixed standard or named band applies to that property. English parallels: *spicy* **[Scoville]** (under that scale), *severe* **[DSM]** (under that diagnostic frame), *large* **[King-size]** (that commercial size name), *original* **[Director’s Cut]** (that titled cut’s sense of “original”). Ordinary degree and mood/evidentiality on the adjective (*very*, *slightly*, *alleged*, *former*) stay **-l** / **-m**. If the root is itself the category label on the noun (**[Art Deco]** furniture), that stays `/ɡ/`…**-n**, not `/w/`. **Judgment benchmarks** (*worse than Professional*, …) are **not** this `/w/` use — they are **-n** comparees on a ranked fence: [comparatives.md § Judgment benchmarks](comparatives.md#judgment-benchmarks).
+Rare. **-n** marks a **named scale, grade, or criterion** for reading the preceding `/ɡ/` — not ordinary intensity. English parallels: *spicy* **[Scoville]**, *large* **[King-size]**. Ordinary degree stays **-l** / **-m**. **Judgment benchmarks** (*worse than Professional*, …) are **-n** comparees on a ranked fence: [comparatives.md](comparatives.md#judgment-benchmarks).
 
-### Adverbs (`/h/`)
+#### Adverbs (`/h/`)
 
-A **named circumstance, channel, or standard** framing the clause — official schedules, titled eras, conventional place labels in time/space adjuncts. Aligns with [number **-n**](numbers.md#number-endings) (*the Second…*, a conventional date name). English parallels: *according to* **[GAAP]**, *on* **[channel 7]** when 7 is a fixed designation, *in* **[Q3]** as the named quarter. Manner and mood roots usually stay **-l** / **-m** unless the manner is itself a proper name (*do it* **[the Walmart way]**).
+A **named circumstance, channel, or standard** framing the clause. Aligns with [number **-n**](numbers.md#number-endings). English parallels: *according to* **[GAAP]**, *in* **[Q3]** as the named quarter. Manner roots usually stay **-l** / **-m** unless the manner is itself a proper name.
 
-### Utterance markers (`/j/`)
+#### Utterance markers (`/j/`)
 
-Depends on the subclass (see [utterance markers](core.md#utterance-markers-j)):
+| Subclass | **-n**? |
+|----------|---------|
+| **Vocatives** | Natural home — address by name (`jumogon`, `j<Sam>n`). Kind-based address (*everyone*) stays **-l**; titled group (*Team Alpha*) takes **-n**. |
+| **Interjections** | Mostly **-l** / **-m**. Use **-n** for a named formula (**[Amen]**, branded catchphrases). Closed [yes/no polarity](questions.md#yes-no-polarity) particles use **-l** / **-m** only. |
+| **Clause force** | Closed **`jal` / `jol` / …** set — no **-n** / **-r** ([clause force](core.md#clause-force)). |
 
-* **Vocatives** — Natural home for **-n**. Address someone or something by name: *Sam!*, *Paris!* (as a city name). Kind-based address (*everyone*) stays **-l**; a titled group label (*Team Alpha*) takes **-n**. Prefer names here over speaker/listener special pronouns when a name exists.
-* **Interjections** — Mostly **-l** / **-m** (*wow*, *hello*). Use **-n** when the shout *is* a named formula or conventional call: **[Mazel tov]**, **[Amen]**, **[Bingo]** as the game’s proper call, branded catchphrases. Aligns with [number `/j/`…**-n**](numbers.md#number-as-interjection-by-marker) (conventional call name). Closed [yes/no polarity](questions.md#yes-no-polarity) particles (**`jael`** / **`juel`** / **`jaol`** / **`juol`** / **`jual`**, and soft **-m** twins) use **-l** / **-m** only — not **-n** / **-r**.
-* **Clause force** — Do **not** use **-n** or **-r**. Force forms are the closed **`jal` / `jam` / `jol` / `jom` / `jel` / `jem` / `jul` / `jum`** set ([clause force](core.md#clause-force)); they are not names.
+#### Discourse markers (`/x/`) — overview
+<a id="discourse-markers-x"></a>
 
-### Discourse markers (`/x/`)
+| Family | Ending job |
+|--------|------------|
+| **Linkers** (*but*, *therefore*, …) | Stay **-l** / **-m** |
+| **Named discourse glue** (other `/x/` roots) | **-n** = titled agenda / section label — thread shift (*let’s now talk about X*) |
+| **Clause joins** | **-n** = soft packaging (*and then* **`xan`**, …) — not phrase named-list **-n**; full table [coordination.md](coordination.md) |
+| **Span markers** | **-l** exact / **-m** paraphrase / **-n** proper / **-r** span anaphor — [spans.md](spans.md) |
 
-* **Linkers** (*but*, *however*, *therefore*, …) — Stay **-l** / **-m**; not names. Prefix-less [discourse revisers](revisers.md#discourse-revisers) (*additionally* / *in other words* / *instead* / *except* before `/j/`) keep reviser **-l** / **-m** / named **-n**. *Starting with* / *Finally* are number discourse **`x#e-`** / **`x#e`** ([numbers.md](numbers.md#number-as-discourse-marker-by-marker)), not revisers. Phrase-level *and* / *or* / *none of* / *and/or* / rank join use `/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/` (`zam`, `zan`, `zar`, `zor`, `zer`, `zur`, `zul`, `zum`, `zun`, `gam`, `gal`, `zel`, `zael`, `zoel`, `zen`, …) with named **-n** on `/z/` `/d/` `/b/` `/w/` and **-r** on **a** / **o** / **e** / **u** for *something* / *anything* / *whatever-by-rank* / *something else* (fence: right close only; nesting per [fence nesting](coordination.md#fence-nesting)). `/ɡ/` `/h/` **-n** (`gan`, `han`, …) are [join-relations](special-vocabulary.md#join-relations). VP-level uses `/v/` (`vam`, `var`, `vul`, `vum`, `vel`, `vael`, `voel`, …) with **-l** / **-m** / **-r** only as joins; VP `-n` spellings (`van`, `von`, …) are [join-act verbs](special-vocabulary.md#join-act-verbs) — see [coordination.md](coordination.md).
-* **Clause joins** (`xa` / `xo` / `xu` / `xao` / `xe` / `xae` / `xoe` + ending) — Vowel = join type (**e** / **oe** = ranked — unmarked / exclusive; **ae** = equality / tie); **-l** / **-m** = closed vs open committed lists on every join vowel; **-n** = soft packaging (*and then* **`xan`** / uncertain reconstruction / soft ranking / soft denial; **not** phrase named-list **-n**); **-r** on **a** / **o** / **e** / **u** = unspecified-member (*something happened* / *anything* / *whatever-by-rank* / *something else*; under [question](questions.md) = fill-ask) — **not** list continue. Same **right-close fence** as phrase and VP (nesting left-associative only; left fences illegal; pure infix illegal). Full table: [coordination.md](coordination.md#vp-clause-forms).
-* **Cite / aside / mention / opaque markers** — Closed span series ([spans.md](spans.md)): **open** `{PoS}{TYPE}x{EDGE}{ENDING}` (e.g. `daxal`); TYPE = **a** cite / **e** aside / **o** mention / **u** opaque; EDGE = **a** multi / **e** clause-scoped / **o** atomic / **u** empty; **-l** = exact; **-m** = paraphrase; **-n** = proper (titled designation of the whole span — same mnemonic as content-word **-n**); **-r** = [span anaphor](spans.md#endings) (*that* cite / mention / … — ordinary pronoun, not a re-open). **Close** = **`xuxul`** (complete) / **`xuxur`** (truncated — **`-]`**) / **`xuxun`** (sic — **`#]`**) / **`xuxum`** (pop all) — not PoS/TYPE-matched; not clause-join soft **-n**. Named material *inside* cite / mention / aside still takes ordinary content-word **-n** (`z<Sam>n`, …). Opaque interiors are not parsed as Clarity.
-* **Named discourse glue** — **-n** for titled section/agenda labels, official list-item names, and branded discourse frames (**other** `/x/` roots — not the clause-join vowel series, where **-n** is soft join packaging, and not span-fence markers). Like `/x/`…**-r** on [pronouns](pronouns.md) (*going back to subject X* / thread resume), titled `/x/`…**-n** is **discourse navigation**: a **thread shift** — *let’s now talk about X* (opening or moving to that named topic), not clause aboutness. English parallels: **[Item Zero]**, **[Appendix A]** as a discourse cite, a fixed ritual segue name. Ordinary *firstly* stays **-l**. Aligns with [number `/x/`…**-n**](numbers.md#number-as-discourse-marker-by-marker) (titled / official item name).
+*Starting with* / *Finally* are number discourse **`x#e-`** / **`x#e`** ([numbers.md](numbers.md#number-as-discourse-marker-by-marker)), not revisers. Prefix-less [discourse revisers](revisers.md#discourse-revisers) keep reviser endings including named **-n**.
 
-### Borrowed and cited forms
+#### Borrowed and cited forms
 
-Foreign / code / raw non-lexicon surfaces use [opaque spans](spans.md) (`d<sushi>` / `duxol sushi` / `duxal` … `xuxul`). Use–mention and *the title/saying X* as a named unit use [mention](spans.md) (often **-n**); long work titles used as wording to pick out the work prefer [cite](spans.md) (often proper **-n**). Content-word **-n** marks a **name or fixed label** on ordinary or span-interior words. Span markers use **-l** / **-m** / **-n** / **-r** (exact / paraphrase / proper / span anaphor) — span **-n** matches this proper-name mnemonic for the **whole span**. **Nativized loans** (adapted Clarity root + ordinary PoS + ending) need no span — see [spans.md § Mentions, opaque, and loan words](spans.md#loans). Compact nativized **multipart** person/place names use **`x`-compounds**; long / mixed-PoS titles stay **cite** (or mention **-n** for the named-unit reading) — [phrasal proper names](#phrasal-proper-names).
+Foreign / code surfaces use [opaque spans](spans.md) (`d<sushi>` / …). Use–mention and *the title X* as a named unit use [mention](spans.md) (often **-n**); long work titles prefer [cite](spans.md). **Nativized loans** (adapted Clarity root + ordinary ending) need no span. Compact multipart person/place names: [phrasal proper names](#phrasal-proper-names).
 
-### Summary
+#### Summary by role letter
 
-| PoS | **-n** means… |
-|-----|----------------|
+| Role | **-n** means… |
+|------|----------------|
 | `/z/` `/d/` `/b/` | This named entity (person, place, title, unique referent) |
-| `/v/` | This named event, rite, performance, or titled action. Closed [join-act verbs](special-vocabulary.md#join-act-verbs) (`van`, `von`, …) live here as defective **-n**-only forms. |
-| `/ɡ/` | This named style, tradition, brand, or category label. Closed [join-relations](special-vocabulary.md#join-relations) (`gan`, `gon`, …) live here as defective **-n**-only complex adjectives (unary `/b/`). |
-| `/w/` | (Rare) this named scale, grade, or criterion on the preceding adjective |
-| `/h/` | This named standard, channel, period, or official circumstance. Closed [join-relations](special-vocabulary.md#join-relations) (`han`, `hon`, …) live here as defective **-n**-only complex adverbs (unary `/b/`). |
+| `/v/` | This named event, rite, or titled action. Closed [join-act verbs](special-vocabulary.md#join-act-verbs) (`van`, …) are defective **-n**-only forms. |
+| `/ɡ/` | This named style, tradition, brand, or category. Closed [join-relations](special-vocabulary.md#join-relations) (`gan`, …) are defective **-n**-only complex adjectives. |
+| `/w/` | (Rare) this named scale / grade / criterion on the preceding adjective |
+| `/h/` | This named standard, channel, or official circumstance. Closed join-relations (`han`, …) live here as defective **-n**-only complex adverbs. |
 | `/j/` vocative | Address this named person, place, or title |
 | `/j/` interjection | This named formula or conventional call |
 | `/j/` clause force | *(not used)* |
-| `/x/` | Titled / official discourse label — thread shift (*let’s now talk about X*; other roots). On [span](spans.md) markers, **-l** / **-m** / **-n** / **-r** = exact / paraphrase / proper / span anaphor; closes are **`xuxul`** / **`xuxur`** / **`xuxun`** / **`xuxum`**. On clause joins, **-n** is soft join packaging (*and then* **`xan`** / uncertain reconstruction / soft ranking); **-r** on **a** / **o** / **e** / **u** is unspecified-member (*something happened*, …) — see [coordination.md](coordination.md). Ordinary *but* / *however* stay **-l** / **-m**. Phrase- and VP-level joins: [coordination.md](coordination.md); VP `-n` = [join-act verbs](special-vocabulary.md#join-act-verbs); `/ɡ/` `/h/` `-n` = [join-relations](special-vocabulary.md#join-relations) |
+| `/x/` | Titled discourse label (thread shift) on other roots; soft join packaging on clause joins; proper on span markers — see [coordination.md](coordination.md) / [spans.md](spans.md) |
 
-Do **not** use **-n** for generic first mention (**-l** / **-m**) or for resuming a prior mention (**-r**).
+### Number-word exception
+<a id="number-word-exception"></a>
 
-## Plural **-sh**
+In [number words](numbers.md), the same four letters have **number-specific** meanings instead of ordinary reference-suffix senses. After a role letter, the number marker **r** may also form clusters that are not otherwise allowed — legal **only** in number words ([phonology.md](phonology.md#phonotactics)).
 
-Plural grammar (**-sh** after the reference suffix; [associative](plurality.md#associative) on nouns/verbs/vocatives; **listener…sh** = [address set](plurality.md#person-role-sh); collective on `/ɡ/`; unused on `/w/` `/h/` `/x/` and number words) lives in **[plurality.md](plurality.md)**. Short form: `…r` is one referent; `…rsh` is that referent **and associates**. Inclusive *we* is special **`ana`**, not **-sh** — [pronouns](pronouns.md#clusivity). Allowed word-final clusters: **-lsh**, **-msh**, **-nsh**, **-rsh** — see [phonology.md](phonology.md#phonotactics).
+## Advanced
+<a id="advanced"></a>
 
-## Number-word exception
+### Value-compound endings
 
-In [number words](numbers.md), the same four letters (**-l**, **-m**, **-n**, **-r**) have **number-specific** meanings instead of ordinary reference-suffix senses. After a PoS prefix, the number marker **r** may also form clusters that are not otherwise allowed; that is legal **only** in number words — see [phonology.md](phonology.md#phonotactics).
+On [value](values.md) compounds under `/h/` or `/w/` with an **`x`+a/e/o/u** stake half, the same four letters are specialized:
 
-## Value-compound exception
+| Stake | Ending means… |
+|-------|----------------|
+| **`xa`** | **contact channel** (physical / mental / social / spiritual) |
+| **`xe`** | **preference standing** (circumstantial / internal / habitual / protective) |
+| **`xo`** | **prescription force** (invite / endorse / commit / bound) |
+| **`xu`** | **changeability** (temporary / modifiable / irreversible / won't-now) |
 
-On [value](values.md) compounds under `/h/` or `/w/` with an **`x`+a/e/o/u** stake half, the same four letters are specialized: on **`xa`** they mean **contact channel** (physical / mental / social / spiritual); on **`xe`** they mean **preference standing** (circumstantial / internal / habitual / protective); on **`xo`** they mean **prescription force** (invite / endorse / commit / bound); on **`xu`** they mean **changeability** (temporary / modifiable / irreversible / won't-now). Bare need words (no `x`-addition) are **topic** only and keep ordinary **-l / -m / -n / -r**. Details: [values.md](values.md).
+Bare need words (no `x`-addition) are **topic** only and keep ordinary **-l / -m / -n / -r**. Details: [values.md](values.md).
 
-On [ability](special-vocabulary.md#ability) compounds — **host + `x` + {a\|u}** (primary: `v<sing>xun`) or fallback **`egera` + `x` + {a\|u}`** (**`ABIL`**) — **-l / -m / -n / -r** are **changeability** on both **`xa`** (capable) and **`xu`** (incapable) — same senses as unmet **`xu`**, not contact / standing / force. **`xe`** / **`xo`** are undefined on ability. Need-root + `x…` stays [values](values.md). Details: [special-vocabulary.md](special-vocabulary.md).
+### Ability endings
 
-On [role compounds](special-vocabulary.md#role-compounds) — **`{a\|u\|o} x ROOT`** (agent / patient / reltum) — **-l / -m / -n / -r** keep **ordinary** reference-suffix senses (kind / soft / titled / resume participant). Not contact / standing / force / changeability. Mid-word **`x`** families: [x-compounds.md](x-compounds.md).
+On [ability](special-vocabulary.md#ability) compounds — **host + `x` + {a\|u}** (e.g. `v<sing>xun`) or fallback **`egera` + `x` + {a\|u}`** — **-l / -m / -n / -r** are **changeability** on both **`xa`** (capable) and **`xu`** (incapable). **`xe`** / **`xo`** are undefined on ability. Details: [special-vocabulary.md](special-vocabulary.md).
 
-## Join exception
+### Role compounds
 
-On [joins](coordination.md), the same letters are specialized again: phrase-level **zal** / **zam** / **zan** / **zar** / **zol** / **zom** / **zor** / **zul** / **zum** / **zun** / **zur** / **zel** / **zem** / **zen** / **zer** / **zael** / **zoel** / … (and `/d/` `/b/` `/w/` forms) use **-l** / **-m** / **-n** for **closed** / **open** / **named** on every join vowel; `/ɡ/` **gal** / **gam** / **gar** / **gel** / … and `/h/` **hal** / **ham** / **har** / … use **-l** / **-m** / **-r** as joins or [restrictors](restrictors.md) — their **-n** spellings (`gan`, `han`, `gen`, `hen`, …) are closed [join-relations](special-vocabulary.md#join-relations) (unary `/b/`), not named lists. Rank vowels **e** / **ae** / **oe** / **ue** as usual. **-r** on **a** / **o** / **e** / **u** = [unspecified-member](coordination.md#unspecified-member-r-phrase) at all levels. VP-level **val** / **vam** / **var** / … use **-l** / **-m** / **-r** as joins; VP **-n** (`van`, `von`, …) = [join-act verbs](special-vocabulary.md#join-act-verbs). Clause **xal** / **xan** / … use **-l** / **-m** closed/open, **-n** soft packaging (*and then* **`xan`**), **-r** unspecified-member. All levels share a **right-close fence** (left fences illegal; [fence nesting](coordination.md#fence-nesting); pure infix illegal). There are no prefix-less joins. Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** are [revisers](revisers.md) (in-clause or discourse by placement). Details live in coordination.md / revisers.md.
+On [role compounds](special-vocabulary.md#role-compounds) — **`{a\|u\|o} x ROOT`** (agent / patient / reltum) — endings keep **ordinary** reference-suffix senses. Mid-word **`x`** families: [x-compounds.md](x-compounds.md).
+
+### Join endings
+
+On [joins](coordination.md), the same letters are specialized again: phrase-level forms use **-l** / **-m** / **-n** for **closed** / **open** / **named** on join vowels (where allowed); **/ɡ/** **/h/** **-n** spellings are [join-relations](special-vocabulary.md#join-relations); VP **-n** is [join-act verbs](special-vocabulary.md#join-act-verbs); clause **-n** is soft packaging (*and then* **`xan`**). **-r** on **a** / **o** / **e** / **u** = [unspecified-member](coordination.md#unspecified-member-r-phrase). Prefix-less **al** / **am** / … are [revisers](revisers.md), not joins. Full detail: [coordination.md](coordination.md).
+
+### Discourse `/x/` inventory (dense)
+
+Clause joins, span fences, and named discourse glue reuse the four ending letters with family-specific jobs. Prefer the owner pages when learning:
+
+- Phrase / VP / clause joins — [coordination.md](coordination.md)
+- Cite / aside / mention / opaque — [spans.md](spans.md)
+- Discourse revisers — [revisers.md](revisers.md)
+- Number-as-discourse — [numbers.md](numbers.md#number-as-discourse-marker-by-marker)
+
+## See also
+
+- [pronouns.md](pronouns.md) — anaphoric **-r**; special **`umogo`** / **`ehado`** / **`ana`** / **`enu`** / **`odo`**
+- [plurality.md](plurality.md) — **-sh** after the ending
+- [core.md](core.md) — role letters and writing words

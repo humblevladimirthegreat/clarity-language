@@ -1,129 +1,124 @@
 # Pronouns
 
-Anaphoric pronouns use the **-r** [reference suffix](reference-suffix.md). Pronouns replace definite articles: once something has been introduced, you refer back with a **-r** form (or an alternate construct below), not with a separate “the X” form.
+Once something is on the table, you point back with a **-r** form — Clarity has no separate “the X” article. Special discourse roles (**`umogo`** / **`ehado`** / **`ana`** / **`enu`** / **`odo`**) are separate closed roots, not letter stems from ordinary antecedents.
 
-## Letter-based and full-root anaphoric pronouns
+**Prerequisites:** [core.md](core.md) Beginner; [reference-suffix.md](reference-suffix.md) Beginner (**-r** = resume).
 
-An anaphoric pronoun can refer back to **any prior word** (noun, verb, adjective, adverb, and so on — not only arguments). It takes the usual part-of-speech prefix and the **-r** reference suffix. The pronoun’s PoS prefix is whatever role you need **now**; it need not match the antecedent’s original PoS.
+## Beginner
+<a id="beginner"></a>
 
-Two lengths of stem:
+### Resume with **-r**
 
-1. **Letter pronoun** — a **fixed prefix of that word’s root**, cut **up to and including the 2nd vowel**. (Roots are `V(CV)+`, so the stem is typically the opening `VCV`.) Prefer this when it already picks the intended antecedent.
-2. **Full-root pronoun** — the **entire root** of the antecedent, still ending in **-r**. Use this when the letter pronoun’s most recent match is **not** what you intend. The **-r** ending is obligatory: this is still a reference, not a new indefinite (`-l` / `-m`) mention.
+An anaphoric pronoun can point at **any prior word** (noun, verb, adjective, … — not only subjects). It takes the usual role letter for the slot you need **now** (that letter need not match the antecedent’s original role) and ends in **-r**.
 
-Resolution is always unambiguous for the listener and for a parser: a **-r** pronoun refers to the **most recently mentioned matching** antecedent — the most recent word whose root begins with that stem (letter length or full root, depending on which form was used). There is no guesswork about which match was meant.
+Two stem lengths:
 
-**Mention = any word use in the discourse** (any part of speech), including pronoun uses themselves. Resolving a pronoun counts as a new mention of that referent and makes it the most recent again.
+1. **Letter pronoun** — a **fixed prefix of that word’s root**, cut **up to and including the 2nd vowel** (roots are `V(CV)+`, so typically the opening `VCV`). Prefer this when it already picks the right antecedent.
+2. **Full-root pronoun** — the **entire root** + **-r**. Use this when the letter form’s most recent match is **not** what you mean.
 
-It is the **speaker’s** job to ensure the intended referent is the most recent match. Use the letter pronoun when that is already true. If the most recent match is **not** what you intend, use the **full-root `-r` form**. If even that isn't distinct, add an **adjective / ordinal** to disambiguate. That mention becomes most recent, so later pronouns can refer to it again.
+**Mnemonic:** **-r** = **r**esume. The listener always takes the **most recent matching** stem — your job is to make the intended one most recent (letter form, full root, or an adjective / ordinal to disambiguate).
 
-Add **-sh** after the reference suffix to mark a **group referent**: by default **associative** — the anchor **and associates** (cohort fixed by context: family, team, unit, …) on nouns / event-sets — or [collective ascription](plurality.md#collective-ascription) on `/ɡ/`. Example: `…r` refers to one noun; `…rsh` refers to that noun **and associates**. Special person-role exceptions (**listener** → address set; **interlocutors** already a set) live in [plurality.md § Person-role **-sh**](plurality.md#person-role-sh) and below. See [plurality.md](plurality.md).
+There are no English-style 3rd-person pronoun lexemes (*he* / *she* / *it* / *they*) and no impersonal *one*.
 
-There are no English-style 3rd-person pronouns (*he* / *she* / *it* / *they*) and no impersonal *one*.
+```
+`z<Sam>n v<go>l. zur v<sit>l.`
 
-## English translation guide (antecedent PoS × pronoun PoS)
+gloss: `z-Sam` · `v-go` · `z-r` · `v-sit`
 
-Clarity has one anaphoric mechanism (`-r`); English does not. Approximate by crossing **what was mentioned** (antecedent’s PoS) with **what role you need now** (pronoun’s PoS). The referent stays the same discourse entity; only the English wording changes with the type shift.
+*Sam goes. He sits.* (resume from the name’s root prefix)
+```
 
-**How to use the tables**
+Add **-sh** after **-r** for a **group** referent (anchor **and associates**) — [plurality.md](plurality.md). Example: `…r` = one; `…rsh` = that one and associates.
 
-1. Find the **antecedent’s PoS** (the prior mention you are pointing at) — same-role table, or the matching cross-role subsection.
-2. Find the **pronoun’s PoS** (the slot you are filling).
-3. Use that English gloss as a reading aid — not as a claim that Clarity has separate pronoun lexemes.
+### Special pronouns
+<a id="special-pronouns"></a>
 
-Noun prefixes `/z/`, `/d/`, and `/b/` share the same “entity” reading; English case and preposition choice follow the pronoun column. Group **-sh** → *they* / *those* / *X and associates* (associative; see [plurality](plurality.md)).
+Discourse-role forms (not letter/full-root **-r** from ordinary antecedents). They take the usual role letter for the slot they fill.
 
-**Pronoun `/x/` vs `/h/`:** `/x/`…`-r` is **discourse navigation** — *going back to subject X* / *returning to that thread* (removing it does not change the following claim). Clause **aboutness** (*regarding X*, as part of what the claim is about) stays `/h/` + `/b/` X — see [Adverbs](core.md#adverbs-h) and [Discourse markers](core.md#discourse-markers-x).
+| Role | Root | Image → sense | Default ending | Example |
+|------|------|---------------|----------------|---------|
+| **Speaker** | **`umogo`** | 🎤 *microphone* → *producer-role* | **-n** | `zumogon` *I* |
+| **Listener** | **`ehado`** | 🎧 *headphones* → *addressee-role* | **-n** | `dehadon` *you* |
+| **Interlocutors** | **`ana`** | 🤝 *handshake* → *co-participants* | **-n** | `zanan` *we* (speaker ∪ address set) |
+| **Generic person** | **`enu`** | 👤 *silhouette* → *a person* | **-n** | `zenun` *someone* |
+| **Next clause** | **`odo`** | 🚪 *doorway* → *what follows* | **-l** | `bodol` / `dodol` — placeholder for the dependent that follows |
 
-### Same-role resume (antecedent PoS ≈ pronoun PoS)
+**Mnemonic:** mic / headphones / handshake name **roles in this utterance** (speech, writing, signing — any channel), not identity essence.
+
+**Endings.** Person roles default to **-n** (definite discourse roles). Soft **-m** hedges the role framing. **`odo`** defaults to **-l** (exact forward slot); soft **-m** hedges the subordination edge.
+
+**Prefer names.** When a proper name is available, use **-n** and/or its **-r** resume — including for self-address — rather than **`umogo`** / **`ehado`**. See [proper name](reference-suffix.md#proper-name--n).
+
+```
+`zumogon v<go>l.`
+
+gloss: `z-speaker` · `v-go`
+
+*I go.*
+```
+
+```
+`zanan v<go>l.`
+
+gloss: `z-interlocutors` · `v-go`
+
+*We (you and I) go.*
+```
+
+### Clusivity
+<a id="clusivity"></a>
+
+When names are unavailable:
+
+| Form | Reading |
+|------|---------|
+| `zumogonsh` | speaker **and associates** (listener **not** assumed) |
+| `zehadonsh` | **address set** — all current addressees (no speaker) |
+| `zanan` | **interlocutors** — speaker ∪ address set (inclusive *we*) |
+| name…**-sh** | that person **and associates** |
+| join list | exact membership census |
+
+**Trap:** inclusive *we* is **`ana`**, not speaker **-sh**. Plural listener is the [address set](plurality.md#person-role-sh) (`zehadonsh`); *you and yours* uses a **name**…**-sh**.
+
+**`enu`:** a nonspecific **individual** — not English impersonal *one*, not join **`zar`** / **`dar`**, and not a 3rd-person anaphor (use content **-r** once someone is introduced).
+
+**`odo`:** placeholder for the material that **immediately follows** ([dependent clauses](core.md#dependent-clauses)). Put **`odo` last** in its host slot; the dependent follows with no intervening host words. Same speech act as the main sentence → dependent may omit `/j/`; a different speech act needs its own force word.
+
+```
+`zumogon v<told>l d<Sam>n dodol z<Lea>n v<left>l.`
+
+gloss: `z-speaker` · `v-told` · `d-Sam` · `d-next-clause` · `z-Lea` · `v-left`
+
+*I told Sam that Lea left.*
+```
+
+## Intermediate
+<a id="intermediate"></a>
+
+### How English approximates **-r**
+
+Clarity has one resume mechanism; English does not. Approximate by crossing **what was mentioned** (antecedent role) with **what slot you need now** (pronoun role). The referent stays the same; only the English wording changes.
+
+**Pronoun `/x/` vs `/h/`:** `/x/`…`-r` is **discourse navigation** — *going back to subject X* / *returning to that thread* (removing it does not change the following claim). Clause **aboutness** (*regarding X*) stays `/h/` + `/b/` X — [adverbs](core.md#adverbs-h) / [discourse markers](core.md#discourse-markers-x).
+
+#### Same-role resume
 
 | Antecedent → pronoun | English approximation |
 |----------------------|------------------------|
 | `/z/` → `/z/` | *he / she / it / they* (subject); *that one* |
 | `/d/` → `/d/` | *him / her / it / them* (object); *that one* |
-| `/b/` → `/b/` | *him / her / it / them* as the relation’s argument (*of/to/for/with that*, per the host) |
-| `/v/` → `/v/` | *do so* / *do that* / verb again |
-| `/ɡ/` → `/ɡ/` | *such* / *that* / *so* (same property again) |
-| `/w/` → `/w/` | *that* degree / frame / criterion again (*likewise very / alleged / …*) |
-| `/h/` → `/h/` | *thus* / *so* / *that way* / *then* (same clause framing) |
-| `/j/` vocative → `/j/` vocative | calling the same addressee again (*you there* / the name again) |
-| `/j/` interjection → `/j/` interjection | repeating that exclamation / formula |
-| `/x/` → `/x/` | *and so* / *likewise* / the same linker or fence again |
+| `/b/` → `/b/` | *him / her / it / them* as the relation’s argument |
+| `/v/` → `/v/` | *do so* / *do that* |
+| `/ɡ/` → `/ɡ/` | *such* / *that* / *so* (same property) |
+| `/w/` → `/w/` | *that* degree / frame again |
+| `/h/` → `/h/` | *thus* / *so* / *that way* / *then* |
+| `/j/` vocative → `/j/` | calling the same addressee again |
+| `/j/` interjection → `/j/` | repeating that exclamation |
+| `/x/` → `/x/` | *and so* / *likewise* / the same linker again |
 
-Clause-force `/j/` is not resumed with `-r` (closed force set; see [utterance markers](core.md#utterance-markers-j)).
+Clause-force `/j/` is not resumed with `-r` ([utterance markers](core.md#utterance-markers-j)).
 
-### Cross-role recast (antecedent PoS ≠ pronoun PoS)
-
-Each subsection is an **antecedent** PoS; the table rows are the **pronoun** PoS. Same referent, new role — English just needs a longer paraphrase.
-
-#### Antecedent was a noun (`/z/`, `/d/`, or `/b/`)
-
-| Pronoun PoS | English approximation |
-|-------------|------------------------|
-| `/z/` `/d/` `/b/` | Ordinary 3rd-person or *that (one)* — see same-role table; `/b/` follows the host relation |
-| `/v/` | Treat that entity as the action: *do that (to/with it)* / *X it* (English noun→verb) |
-| `/ɡ/` | *that one’s* / *of that kind* / property tied to that entity |
-| `/w/` | Degree or frame scoped to a property of that entity (*that* standard of grading) |
-| `/h/` | Circumstance framed by that entity (*with/by that*); clause aboutness is `/h/` + `/b/` …`-r` (*regarding that*), not bare `/h/`…`-r` |
-| `/j/` vocative | Address that entity (*hey, you* / the name) |
-| `/x/` | *Going back to subject X* / *returning to that thread* (discourse resume; not clause aboutness) |
-
-#### Antecedent was a verb (`/v/`)
-
-| Pronoun PoS | English approximation |
-|-------------|------------------------|
-| `/z/` `/d/` `/b/` | *that action / event / doing*; *the (act of) …-ing*; English *it* for the event — **not** the agent/patient; use [role compounds](special-vocabulary.md#role-compounds) (`zax<attack>r`, `dux<attack>r`) |
-| `/v/` | *do so* / *do that* |
-| `/ɡ/` | *such* (done that way); property of having done that |
-| `/w/` | Frame on an adjective about that doing (*allegedly that*, *former that*) |
-| `/h/` | *by doing so* / *thereby* / *in that manner of acting* |
-| `/j/` | Vocative/interjection built on that named act (rare) |
-| `/x/` | *Going back to that (doing / event)* — resume that thread |
-
-#### Antecedent was an adjective (`/ɡ/`)
-
-| Pronoun PoS | English approximation |
-|-------------|------------------------|
-| `/z/` `/d/` `/b/` | *the … one*; *that quality / property*; *those who are …* |
-| `/v/` | *be/do that* (act characterized by the property) |
-| `/ɡ/` | *such* / *that* (same property) |
-| `/w/` | *that* degree of the property (*very much so*) |
-| `/h/` | *in that way* / *so* (manner from the property) |
-| `/j/` | Rare; named category used as call |
-| `/x/` | *Going back to that (property / category)* — resume that thread |
-
-#### Antecedent was an adjective adjunct (`/w/`)
-
-| Pronoun PoS | English approximation |
-|-------------|------------------------|
-| `/z/` `/d/` `/b/` | *that degree / scale / criterion* (as a thing) |
-| `/ɡ/` | Host property under *that* frame again |
-| `/w/` | Same adjunct again |
-| `/v/` `/h/` | Act or clause framed by that degree/criterion |
-| `/j/` | Rare |
-| `/x/` | *Going back to that (scale / criterion)* — resume that thread |
-
-#### Antecedent was an adverb (`/h/`)
-
-| Pronoun PoS | English approximation |
-|-------------|------------------------|
-| `/z/` `/d/` `/b/` | *that time / place / manner / reason / recipient-slot* (the adjunct as a noun) |
-| `/v/` | Act under that circumstance |
-| `/ɡ/` | Property *as of* that circumstance |
-| `/w/` | Adjective-level echo of that frame |
-| `/h/` | *thus* / *so* / *then* / *that way* |
-| `/j/` | Rare |
-| `/x/` | *Going back to that (circumstance / framing)* — resume that thread |
-
-#### Antecedent was an utterance marker (`/j/`) or discourse marker (`/x/`)
-
-| Pronoun PoS | English approximation |
-|-------------|------------------------|
-| Same class (`/j/` or `/x/`) | Repeat that vocative, interjection, or linker (see same-role table) |
-| `/x/` from a content antecedent | *Going back to subject X* (see cross-role `/x/` rows above) |
-| Noun / verb / adjective / adverb | Recast the *named formula or discourse label* as an ordinary referent (*that greeting*, *that agenda item*, *that cite-fence*) — common for `-n` titles, rare for ordinary *and* / *wow* |
-
-### Quick English cheat sheet
+#### Quick English cheat sheet
 
 | You want English… | Typical Clarity shape |
 |-------------------|------------------------|
@@ -133,69 +128,126 @@ Each subsection is an **antecedent** PoS; the table rows are the **pronoun** PoS
 | *thus* / *that way* | Adverb antecedent → `/h/` …`-r` |
 | *regarding that* (clause aboutness) | `/h/` *regarding* + `/b/` …`-r` |
 | *going back to subject X* (thread resume) | Any antecedent → `/x/` …`-r` |
-| *the doing of it* / *that action* | Verb antecedent → noun …`-r` |
-| *the red one* / *that quality* | Adjective antecedent → noun …`-r` |
-| *by doing so* / *thereby* | Verb antecedent → `/h/` …`-r` |
-| *that one’s* / *of that kind* | Noun antecedent → `/ɡ/` …`-r` |
-| *that* (prior cite / mention / aside / opaque) | [Span anaphor](spans.md#endings) → `daxar` / `doxar` / `dexar` / `duxar` / … (TYPE selects antecedent kind; PoS = role now; writing `d[=]`) |
+| *that* (prior cite / mention / aside) | [Span anaphor](spans.md#endings) → `daxar` / … |
 
-**Span anaphors** are closed forms in the [span-fence](spans.md) series (`{PoS}{TYPE}xa{r}`, EDGE **a**), not letter/full-root content pronouns. They resolve to the **most recent span of that TYPE** and treat it as a referent in the new slot (*he said **that**?!*) — they do **not** re-open a cite. Ordinary content **-r** still resumes words *inside* a non-opaque span when those words were introduced as ordinary lexicon.
+**Span anaphors** are closed [span-fence](spans.md) forms — they resolve to the **most recent span of that TYPE**, not letter/full-root content pronouns. Ordinary content **-r** still resumes words *inside* a non-opaque span.
 
-Special pronouns (**`umogo`** / **`ehado`** / **`ana`** / **`enu`** / **`odo`**) are **not** covered here — they are separate forms (below), not `-r` stems from ordinary antecedents. Content questions (*who* / *what* / *where* / *what did they do?* / *what happened?*) use [unspecified-member **-r** under **question** force](questions.md#fill-ask-r) (`zar` / `zor` / `zer` / `zur` / `var` / `vor` / `ver` / `vur` / `xar` / …), not a special pronoun.
+Content questions (*who* / *what* / …) use [unspecified-member **-r** under question](questions.md#fill-ask-r) (`zar` / `var` / `xar` / …), not a special pronoun.
 
-## Special pronouns
-<a id="special-pronouns"></a>
+### Cross-role recast (sketch)
 
-Discourse-role forms (not letter/full-root **-r** from ordinary antecedents). They take the usual PoS prefix for the slot they fill. **Speaker** / **listener** / **interlocutors** reuse the published lexicon roots **`umogo`** (🎤 *microphone*), **`ehado`** (🎧 *headphones*), and **`ana`** (🤝 *handshake*); **`enu`** / **`odo`** remain closed.
+Same referent, new role — English needs a longer paraphrase. Full PoS×PoS tables are Advanced ([cross-role inventory](#cross-role-inventory)).
 
-| Role | Root | Image → sense | Default ending | Example |
-|------|------|---------------|----------------|---------|
-| **Speaker** | **`umogo`** | 🎤 *microphone* → *producer-role* | **-n** | `zumogon` *I* (this utterance’s producer) |
-| **Listener** | **`ehado`** | 🎧 *headphones* → *addressee-role* | **-n** | `dehadon` *you* (this utterance’s addressee) |
-| **Interlocutors** | **`ana`** | 🤝 *handshake* → *co-participants* | **-n** | `zanan` *we* (speaker ∪ current address set) |
-| **Generic person** | **`enu`** | 👤 *silhouette* → *a person* | **-n** | `zenun` *someone* (a nonspecific individual) |
-| **Next clause** | **`odo`** | 🚪 *doorway* → *what follows* | **-l** | `bodol` / `dodol` — placeholder for the dependent that follows |
+| Antecedent was… | Pronoun as… | English sketch |
+|-----------------|-------------|----------------|
+| noun | `/v/` | *do that (to/with it)* |
+| noun | `/ɡ/` | *that one’s* / *of that kind* |
+| noun | `/x/` | *going back to subject X* |
+| verb | noun | *that action / event* — **not** the agent; use [role compounds](special-vocabulary.md#role-compounds) for agent/patient |
+| verb | `/h/` | *by doing so* / *thereby* |
+| adjective | noun | *the … one* / *that quality* |
 
-**Medium-neutral.** **Speaker**, **listener**, and **interlocutors** name **roles in the current utterance** — speech, writing, signing, or any other channel. They are not restricted to oral talk (*speaker* ≠ “person vocalizing”; *listener* ≠ “person hearing”). Same roots in a letter, chat, book, or recording. Ordinary instrument / gesture readings (*a microphone*, *headphones*, *a handshake*) stay available under other PoS / endings; the person-role reading is this discourse use with **-n** (or soft **-m**).
+### Specials — further notes
 
-**Endings.** Person roles default to **-n** (definite discourse roles, parallel to proper names). Soft **-m** is available when the role framing is hedged. **Next clause** defaults to **-l** (exact forward slot). Soft **-m** on **`odo`** hedges the subordination edge. Do **not** treat person-role uses as ordinary indefinite kinds (**-l** on speaker / listener / interlocutors / generic person) or as content anaphors built from a prior mention of the same root.
+**Speaker / listener.** 1st / 2nd person only when a name is unavailable or undesired. On [judgment benchmarks](comparatives.md#judgment-benchmarks): bare **`zumogon`** = *less … than where I sit* (performance); normative personal standard = **`zumogoxrawon`**. Do **not** reuse **`ehado`** for [evidential](special-vocabulary.md#evidentiality) hearsay (**`erare`** stays *told*).
 
-**Speaker / listener.** 1st / 2nd person only when a name is unavailable or undesired. They label **roles in this discourse**, not identity essence. On [judgment benchmarks](comparatives.md#judgment-benchmarks): bare **`zumogon`** = *less … than where I sit* (performance); normative personal standard = **`zumogoxrawon`** ([digit morph **`+1`**](special-vocabulary.md#numeric-derivation) on **`umogo`**). Do **not** reuse **`ehado`** for [evidential](special-vocabulary.md#evidentiality) hearsay (**`erare`** stays *told*).
+**Interlocutors (`ana`).** Inclusive *we* as a **discourse role** — not “my side,” not a titled team, and not an exact census (those use [associative **-sh**](plurality.md#associative) / joins). Soft **`zanam`** hedges co-agency.
 
-**Interlocutors (`ana`).** Inclusive *we* as a **discourse role**: the **speaker union the current address set** (everyone this turn is talking *to*). Not “my side,” not a titled team, and not an exact census of named people — those use [associative **-sh**](plurality.md#associative) / joins. Soft **`zanam`** hedges co-agency (*sort of we*). Do **not** invent a separate inclusive-*you* root: plural listener is the [address set](plurality.md#person-role-sh) (`zehadonsh`); associative *you and yours* uses a **name**…**-sh**.
+**Address set.** Prefer: everyone named in this turn’s vocative cluster, plus anyone still held as addressee by context. One addressee → singular **`ehado`**; several → **`ehado…sh`**. Inclusive co-agency (*shall we…*) → **`ana`**, not speaker **-sh**.
 
-<a id="clusivity"></a>
-
-**Clusivity triangle** (when names are unavailable):
-
-| Form | Reading |
-|------|---------|
-| `zumogonsh` | speaker **and associates** (listener **not** assumed) |
-| `zehadonsh` | **address set** — all current addressees (no speaker) |
-| `zanan` | **interlocutors** — speaker ∪ address set (inclusive *we*) |
-| name…**-sh** | that person **and associates** |
-| join list | exact membership census (`zuzur zuber zamer zal`) |
-
-**Address set.** Prefer: everyone named in this turn’s vocative cluster, plus anyone still held as addressee by context. One addressee → singular **`ehado`**; several → **`ehado…sh`** available. Inclusive co-agency (*shall we…*) → **`ana`**, not speaker **-sh**.
-
-**Generic person (`enu`).** A nonspecific **individual** — not English impersonal *one*, not [unspecified-member](coordination.md#unspecified-member-r-phrase) **`zar`** / **`dar`** (those are join gaps / indefinites of any kind), and not a 3rd-person anaphor (use content **-r** once someone is introduced).
-
-**Next clause (`odo`).** Placeholder for the material that **immediately follows** it ([dependent clauses](core.md#dependent-clauses)). **Matrix-final in its clause:** **`odo`** is the last word of that host (for `/h/`+`/b/` subordination, the contiguous unit ends with **`odo`**); the dependent follows with no intervening host words. **Chaining** allowed: a dependent may itself end in **`odo`**. Takes the PoS prefix of the slot it fills (`/d/` complement, `/b/` under `/h/` *because* / *if*, etc.). When illocution matches the matrix, the dependent may **inherit** force and omit **`/j/`** (including omissible default **`jal`**); different illocution still needs its own force.
+**`odo` chaining.** A dependent may itself end in **`odo`**. Takes the role letter of the slot it fills (`/d/` complement, `/b/` under `/h/` *because* / *if*, etc.).
 
 | Clarity | Reading |
 |---------|---------|
-| `jal zumogon v<go>l` | *I go* |
 | `zumogon v<go>l` | *I go* (implied **`jal`**) |
-| `jal zumogon v<write>l dehadon` | *I write you* (letter / message — same roots) |
-| `jal zanan v<go>l` | *We (you and I / interlocutors) go* |
-| `jal zehadonsh v<go>l` | *You-all (address set) go* |
-| `jal zumogonsh v<go>l` | *I and my associates go* (not necessarily you) |
-| `jal zenun v<arrived>l` | *Someone (a person) arrived* |
-| `jal zumogon v<told>l d<Sam>n dodol z<Lea>n v<left>l` | *I told Sam that Lea left* (dependent inherits assertoric force) |
-| `… hurugul bodol …` | *… because [dependent]* (same-force dependent may omit **`jal`**) |
-| `… horodol bodol …` | *… if [dependent]* (one-way) |
-| `… heluvel bodol …` | *… iff [dependent]* (both ways) |
+| `zumogon v<write>l dehadon` | *I write you* (letter / message — same roots) |
+| `zehadonsh v<go>l` | *You-all (address set) go* |
+| `zumogonsh v<go>l` | *I and my associates go* (not necessarily you) |
+| `zenun v<arrived>l` | *Someone (a person) arrived* |
+| `… hurugul bodol …` | *… because [dependent]* |
+| `… horodol bodol …` | *… if [dependent]* |
+| `… heluvel bodol …` | *… iff [dependent]* |
 
-**Associative plurality** is not a separate special pronoun: append **-sh** where [plurality](plurality.md) allows it (`zumogonsh` = speaker and associates). Inclusive *we* is **`ana`**, not speaker+listener join-as-only-option (joins remain for exact censuses).
+Prefer **`ana`** over a speaker+listener join when the point is **co-participant role**; prefer name joins when membership identity is the point; prefer name…**-sh** for associative cohorts.
 
-**Prefer names.** When a proper name is available, use it (`-n`) and/or its pronoun (`-r` from the name’s root) — including for self-address — rather than **`umogo`** / **`ehado`**. Prefer **`ana`** over a speaker+listener join when the point is **co-participant role**, not identity; prefer name joins when membership identity is the point; prefer name…**-sh** for associative cohorts. See [Proper name (`-n`)](reference-suffix.md#proper-name--n).
+## Advanced
+<a id="advanced"></a>
+
+### Cross-role inventory
+<a id="cross-role-inventory"></a>
+
+Each subsection is an **antecedent** role; table rows are the **pronoun** role. Reading aid only — Clarity still has one **-r** mechanism.
+
+#### Antecedent was a noun (`/z/`, `/d/`, or `/b/`)
+
+| Pronoun role | English approximation |
+|--------------|------------------------|
+| `/z/` `/d/` `/b/` | Ordinary 3rd-person or *that (one)*; `/b/` follows the host relation |
+| `/v/` | Treat that entity as the action: *do that (to/with it)* / *X it* |
+| `/ɡ/` | *that one’s* / *of that kind* / property tied to that entity |
+| `/w/` | Degree or frame scoped to a property of that entity |
+| `/h/` | Circumstance framed by that entity; clause aboutness is `/h/` + `/b/` …`-r` |
+| `/j/` vocative | Address that entity |
+| `/x/` | *Going back to subject X* (discourse resume; not clause aboutness) |
+
+#### Antecedent was a verb (`/v/`)
+
+| Pronoun role | English approximation |
+|--------------|------------------------|
+| `/z/` `/d/` `/b/` | *that action / event / doing* — **not** the agent/patient; use [role compounds](special-vocabulary.md#role-compounds) |
+| `/v/` | *do so* / *do that* |
+| `/ɡ/` | *such* (done that way); property of having done that |
+| `/w/` | Frame on an adjective about that doing |
+| `/h/` | *by doing so* / *thereby* / *in that manner of acting* |
+| `/j/` | Vocative/interjection built on that named act (rare) |
+| `/x/` | *Going back to that (doing / event)* |
+
+#### Antecedent was an adjective (`/ɡ/`)
+
+| Pronoun role | English approximation |
+|--------------|------------------------|
+| `/z/` `/d/` `/b/` | *the … one*; *that quality*; *those who are …* |
+| `/v/` | *be/do that* (act characterized by the property) |
+| `/ɡ/` | *such* / *that* (same property) |
+| `/w/` | *that* degree of the property |
+| `/h/` | *in that way* / *so* (manner from the property) |
+| `/j/` | Rare; named category used as call |
+| `/x/` | *Going back to that (property / category)* |
+
+#### Antecedent was an adjective extra (`/w/`)
+
+| Pronoun role | English approximation |
+|--------------|------------------------|
+| `/z/` `/d/` `/b/` | *that degree / scale / criterion* (as a thing) |
+| `/ɡ/` | Host property under *that* frame again |
+| `/w/` | Same adjunct again |
+| `/v/` `/h/` | Act or clause framed by that degree/criterion |
+| `/j/` | Rare |
+| `/x/` | *Going back to that (scale / criterion)* |
+
+#### Antecedent was an adverb (`/h/`)
+
+| Pronoun role | English approximation |
+|--------------|------------------------|
+| `/z/` `/d/` `/b/` | *that time / place / manner / reason / recipient-slot* (the adjunct as a noun) |
+| `/v/` | Act under that circumstance |
+| `/ɡ/` | Property *as of* that circumstance |
+| `/w/` | Adjective-level echo of that frame |
+| `/h/` | *thus* / *so* / *then* / *that way* |
+| `/j/` | Rare |
+| `/x/` | *Going back to that (circumstance / framing)* |
+
+#### Antecedent was `/j/` or `/x/`
+
+| Pronoun role | English approximation |
+|--------------|------------------------|
+| Same class (`/j/` or `/x/`) | Repeat that vocative, interjection, or linker |
+| `/x/` from a content antecedent | *Going back to subject X* |
+| Noun / verb / adjective / adverb | Recast the *named formula or discourse label* as an ordinary referent — common for `-n` titles |
+
+## See also
+
+- [reference-suffix.md](reference-suffix.md) — **-l** / **-m** / **-n** / **-r**
+- [plurality.md](plurality.md) — **-sh**; address set vs associative
+- [questions.md](questions.md) — fill-ask **-r** under question (not content anaphor)
+- [core.md](core.md#dependent-clauses) — **`odo`** placement
