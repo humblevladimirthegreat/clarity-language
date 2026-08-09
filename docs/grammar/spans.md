@@ -112,8 +112,9 @@ gloss: `j-command` · `z-you` · `v-[oops]` · `d-me`
 | ***The title X* / *the proverb X*** as named unit | **mention** **-n** — `d@{…}` |
 | **Nativized loan** | ordinary PoS + root + ending — no span |
 | **That (prior span) again** | span anaphor — `daxar` / `duxar` / … |
+| **Name / word citation outside a clause** | prefix-less **root + ending** — [citation forms](core.md#citation-forms) (`umogon.`, `<Sam>n`) — not a span |
 
-**Trap:** `d<sushi>` is a span open + interior blob; `d<sushi>l` is one content word whose root is foreign. Do not put **-l** / **-m** / **-n** / **-r** after an opaque closer.
+**Trap:** `d<sushi>` is a span open + interior blob; `d<sushi>l` is one content word whose root is foreign. Do not put **-l** / **-m** / **-n** / **-r** after an opaque closer. Spans need a PoS because they fill a **clause** slot; freestanding citation drops the role letter instead.
 
 ## Intermediate
 <a id="intermediate"></a>
@@ -385,5 +386,6 @@ While scanning a span interior, bare `|` / `#` / hyphen are ordinary content unl
 
 - Join scope islands: [coordination.md](coordination.md#join-scope-islands-rules)
 - Phrasal proper names (no span needed): [reference-suffix.md](reference-suffix.md#phrasal-proper-names)
+- Prefix-less citation outside a clause: [core.md § Outside a sentence](core.md#citation-forms)
 - Mid-word **`x`** families: [x-compounds.md](x-compounds.md)
 - Number writing shorthand: [numbers.md](numbers.md#writing-preferred-shorthand)

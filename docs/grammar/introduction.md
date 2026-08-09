@@ -33,7 +33,7 @@ Two supporting goals sit beside the psychology:
 
 Agelan keeps three kinds of clarity in ordinary speech:
 
-**Syntactic.** Every content word carries a PoS prefix, so role in the clause does not depend on guessing from English-style word class. Default order is SOV, but free order is safe because the prefix is authoritative.
+**Syntactic.** In a clause, every content word carries a PoS prefix, so role does not depend on guessing from English-style word class. Default order is SOV, but free order is safe because the prefix is authoritative. Outside a sentence, prefix-less **root + ending** is a [citation](core.md#citation-forms) (not a default `/z/`).
 
 **Referential.** Anaphoric pronouns are built from a fixed prefix of **any** prior word’s root (through the 2nd vowel) and resolve to the **most recently mentioned matching** antecedent ([pronouns.md](pronouns.md)), plus a small set of special discourse-role pronouns. There are no vague English-style *it* / *they* pronouns.
 

@@ -54,7 +54,7 @@ Prefer a published root when the English meaning matches; use **-m** when the ma
 
 Write **role letter + root + ending** as **one token** (`zumogon`). Foreign roots: `PoS<…>ENDING` (e.g. `d<english>l`). Opaque spans take no ending after `>` (`d<sushi>`). Full writing rules: [core.md § Writing words](core.md#orthography).
 
-1. **Role letter** — job in the sentence ([core.md](core.md#part-of-speech-prefixes)).
+1. **Role letter** — job in the sentence ([core.md](core.md#part-of-speech-prefixes)). Outside a sentence, omit it for a [citation](core.md#citation-forms) (`godol`, `umogon`) — **`/z/` is not implied**.
 2. **Left-bound `l`** — optional; **adjectives only** (`/ɡ/` → **`gl-`**) when the adjective sits **before** its host ([left-bound adjectives](core.md#left-bound-adjectives)). Not the same as word-final **-l**.
 3. **Root(s)** — compounds join with mid-word **`x`** ([phonology.md](phonology.md#phonotactics)).
 4. **Reference suffix** — **-l**, **-m**, **-n**, or **-r**.
@@ -62,7 +62,7 @@ Write **role letter + root + ending** as **one token** (`zumogon`). Foreign root
 
 ### Proper names on nouns (starter)
 
-**-n** marks a **named designation**: you treat the root as a definite, established label — not “a kind of X.” Usual first cases are people and places (`/z/`…**-n**, `/d/`…**-n**).
+**-n** marks a **named designation**: you treat the root as a definite, established label — not “a kind of X.” Usual first cases are people and places (`/z/`…**-n**, `/d/`…**-n**). Prefix-less **…n** outside a clause cites a **name** or **the word-as-label** — [citation forms](core.md#citation-forms).
 
 Prefer **-n** (and its **-r** resume) over speaker/listener specials when a name exists — [pronouns.md](pronouns.md#special-pronouns).
 
@@ -202,3 +202,4 @@ Clause joins, span fences, and named discourse glue reuse the four ending letter
 - [pronouns.md](pronouns.md) — anaphoric **-r**; special **`umogo`** / **`ehado`** / **`ana`** / **`enu`** / **`odo`**
 - [plurality.md](plurality.md) — **-sh** after the ending
 - [core.md](core.md) — role letters and writing words
+- [core.md § Outside a sentence](core.md#citation-forms) — prefix-less citation (**-l** / **-m** / **-n** / **-r**)

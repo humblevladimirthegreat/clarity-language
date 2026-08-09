@@ -220,7 +220,7 @@ gloss: `j-Sam` · `al` · `z-speaker` · `v-go`
 
 ### Reserved forms
 
-Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** are **only** these revisers (in-clause or discourse by placement). Prefixed + ending forms of the same vowels (`zal`, `zam`, `val`, …) remain [joins](coordination.md#join-series-ending-shared) only. Whole-word **a** / **e** / **o** / **u** are not reviser forms and not legal words.
+Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** are **only** these revisers (in-clause or discourse by placement). They are **not** [citation forms](core.md#citation-forms). Prefixed + ending forms of the same vowels (`zal`, `zam`, `val`, …) remain [joins](coordination.md#join-series-ending-shared) only. Whole-word **a** / **e** / **o** / **u** are not reviser forms and not legal words. Longer prefix-less **root + ending** outside a sentence (`godol`, `umogon`, …) is citation, not revision.
 
 ## See also
 
@@ -228,3 +228,4 @@ Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om*
 - Circumstance restrictors: [restrictors.md](restrictors.md)
 - *Starting with* / *Finally*: [numbers.md](numbers.md#number-as-discourse-marker-by-marker)
 - Discourse `/x/` linkers: [core.md](core.md#discourse-markers-x)
+- Prefix-less citation (not revisers): [core.md § Outside a sentence](core.md#citation-forms)
