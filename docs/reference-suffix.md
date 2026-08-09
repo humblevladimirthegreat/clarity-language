@@ -11,7 +11,7 @@ Every content word ends with a **reference suffix** — one of four final conson
 Written as **one token with no hyphen** after the PoS letter (`zumogon`, not `z-umogo`). Foreign roots: `PoS<…>ENDING` (e.g. `d<english>l`). Opaque spans: no ending after `>` (`d<sushi>`). See **[orthography](language-reference.md#orthography)**.
 
 1. **PoS prefix** — role in the clause (see [language-reference.md](language-reference.md#part-of-speech-prefixes)).
-2. **Left-bound `l`** — optional; **adjectives only** (`/ɡ/` → **`gl-`**). Marks [left-bound attachment](language-reference.md#adjectives-ɡ) (adjective before host). Not the word-final reference suffix **-l**.
+2. **Left-bound `l`** — optional; **adjectives only** (`/ɡ/` → **`gl-`**). Marks [left-bound attachment](language-reference.md#left-bound-adjectives) (adjective before host). Not the word-final reference suffix **-l**.
 3. **Root(s)** — `V(CV)+`; compound roots join with **x** (see [phonology.md](phonology.md#phonotactics)).
 4. **Reference suffix** — **-l**, **-m**, **-n**, or **-r** (below).
 5. **Plural -sh** — optional; marks an **associative group** (or address-set / collective `/ɡ/`), after the reference suffix — see [plurality.md](plurality.md).

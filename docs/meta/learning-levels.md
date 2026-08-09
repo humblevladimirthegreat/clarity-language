@@ -28,8 +28,8 @@ Ask in order. Prefer the **earlier** band when a concept sits on a boundary and 
 
 ## Cross-doc path
 
-1. Read every doc’s **Beginner** sections (start from [introduction.md](../introduction.md) for orientation, then [language-reference.md](../language-reference.md) for core sentences, then other grammar docs under `docs/`; exact order can be listed here once section tags exist).
-2. Then every **Intermediate** section.
+1. Read every doc’s **Beginner** sections (start from [introduction.md](../introduction.md) for orientation, then [language-reference.md](../language-reference.md) **Beginner** for core sentences, then other grammar docs under `docs/`; exact order can be listed here once more docs carry section tags).
+2. Then every **Intermediate** section (including [language-reference.md Intermediate](../language-reference.md#intermediate)).
 3. Then every **Advanced** section.
 
-A concrete reading order list can live here once the first pass of section tags exists.
+[language-reference.md](../language-reference.md) is the first grammar page with **Beginner** / **Intermediate** / **Advanced** bands; other docs still need the same pass.
