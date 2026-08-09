@@ -1,4 +1,9 @@
+import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vitepress'
+
+const repoRoot = fileURLToPath(new URL('../../..', import.meta.url))
+const dataDir = fileURLToPath(new URL('../../../data', import.meta.url))
+const srcDir = fileURLToPath(new URL('../../../src', import.meta.url))
 
 const readingOrder = [
   { text: 'Introduction', link: '/' },
@@ -31,15 +36,33 @@ export default defineConfig({
   // Amplify static hosting serves `.html` files as-is; avoid extensionless URLs
   cleanUrls: false,
   ignoreDeadLinks: false,
+  vite: {
+    resolve: {
+      alias: {
+        '@data': dataDir,
+        '@lexicon-search': `${srcDir}/lexicon-search.ts`,
+      },
+    },
+    server: {
+      fs: {
+        allow: [repoRoot],
+      },
+    },
+  },
   themeConfig: {
     nav: [
       { text: 'Introduction', link: '/' },
       { text: 'Core', link: '/core' },
+      { text: 'Lexicon', link: '/lexicon' },
     ],
     sidebar: [
       {
         text: 'Suggested reading order',
         items: readingOrder,
+      },
+      {
+        text: 'Tools',
+        items: [{ text: 'Lexicon', link: '/lexicon' }],
       },
     ],
     outline: {
