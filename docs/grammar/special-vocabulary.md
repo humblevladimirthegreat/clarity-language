@@ -240,7 +240,7 @@ These are **not** phrase named-list joins and **not** [restrictors](restrictors.
 
 | Form | `/ɡ/` (*N … b-X*) | `/h/` (*event … b-X*) | Example |
 |------|-------------------|------------------------|---------|
-| **`gan` / `han`** | *including / with* | *with / including* | `zubarol gan bebanul`; `zazaman han belejan vawul` |
+| **`gan` / `han`** | *including / with* | *with / including* | `zubarol gan bebanul`; `zazaman han bedejan vawul` |
 | **`gon` / `hon`** | *exclusive for* (X is N’s sole pick) | *exclusively for / as the one* | `zugolal gon badedal`; `… hon badedal vebonem` |
 | **`gaon` / `haon`** | *open to* (X admitted; more may follow) | *among options* | `zubazul gaon bugabel`; `… haon bugabel vebonem` |
 | **`gun` / `hun`** | *against / anti-* (refuses X) | *refusing* | `zobulel gun bulel`; `… hun vemedel` |

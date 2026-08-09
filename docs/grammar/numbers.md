@@ -655,7 +655,7 @@ Use [engineering exponents](#exponents) on the amount when convenient (`e3` / `e
 
 **Measured differentials** (*two inches taller*) put that measure NP as the **single `/b/`** on the SHARED scale adjective of a [comparative](comparatives.md#measured-differentials):
 
-`zazaman zelejan zel gonudam burelul g+2` → *Sam is two measures more challenging than Lea*
+`zazaman zedejan zel gonudam burelul g+2` → *Sam is two measures more challenging than Lea*
 
 Vague degree stays `/w/` on the scale (`zel wogenal gonudam …`) — no unit. Duration and other clause measures use the same unit+amount habit in whatever slot the relation needs.
 
@@ -693,7 +693,7 @@ The fence PoS matches the slot (`zal` / `dal` / `gal` / `bal` / …). Mixed iden
 
 **Arity escape:** three or more number conjuncts under **`a`** stay an ordinary discrete inventory (`zal z+1 z+3 z+7` = *1, 3, and 7*), even with SHARED. Focus **`zal z+3`** stays *just 3*, not a ray. Focus **ranked** with a number is a [threshold](#numeric-thresholds), not ordinary *only X matters*.
 
-**Contrast with comparatives:** `zazaman zelejan zel gonudam` = *Sam is more challenging than Lea* (SHARED **scale**, non-number conjuncts). `z+3 z+5 zel gumedul` = *from 3 to 5 on time* (SHARED **continuum**, number endpoints). Bare `z+3 z+5 zel` = prefer 3 over 5.
+**Contrast with comparatives:** `zazaman zedejan zel gonudam` = *Sam is more challenging than Lea* (SHARED **scale**, non-number conjuncts). `z+3 z+5 zel gumedul` = *from 3 to 5 on time* (SHARED **continuum**, number endpoints). Bare `z+3 z+5 zel` = prefer 3 over 5.
 
 #### Thresholds (focus ranked)
 <a id="numeric-thresholds"></a>

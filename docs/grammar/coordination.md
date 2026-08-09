@@ -364,9 +364,9 @@ gloss: `z-tea` · `z-coffee` · `z-water` · `zel`
 ```
 
 ```
-`zazaman zelejan zael gonudam.`
+`zazaman zedejan zael gonudam.`
 
-gloss: `z-azama` · `z-eleja` · `zael` · `g-challenging`
+gloss: `z-azama` · `z-edeja` · `zael` · `g-challenging`
 
 *Sam is as challenging as Lea.*
 ```

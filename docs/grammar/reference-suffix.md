@@ -37,7 +37,7 @@ gloss: `z-Sam` · `v-walk`
 ```
 
 ```
-`zazar vawul.`
+`zazamar vawul.`
 
 gloss: `z-r` · `v-walk`
 
@@ -91,11 +91,11 @@ Named individuals, places, one-off objects, titled works: *Sam*, *Paris*, *the O
 
 | Shape | Example | Reading |
 |-------|---------|---------|
-| **Nativized** multipart (Agelan roots + mid-word **`x`**) | `zameraxezeman` | *Mary Smith* (one person) |
-| same under other slots | `donujan`, `bolevan` | one named place / person as object or argument |
+| **Nativized** multipart (Agelan roots + mid-word **`x`**) | `zamevaxezeman` | *Mary Smith* (one person) |
+| same under other slots | `donujan`, `bodevan` | one named place / person as object or argument |
 | **Sense compound** (two lexicon roots) | `zuzuzuxogeven` | *Sushi-Coffee* as one nativized label |
 
-**Trap:** adjacent bare same-role words (`zameran zezeman`) look like two people in a [join](coordination.md) (*Mary and Smith*). One **`x`-compound** keeps **one** resume target and one slot filler.
+**Trap:** adjacent bare same-role words (`zamevan zezeman`) look like two people in a [join](coordination.md) (*Mary and Smith*). One **`x`-compound** keeps **one** resume target and one slot filler.
 
 Phonotactics for **`x`**: [phonology.md](phonology.md#phonotactics).
 

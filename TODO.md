@@ -35,7 +35,7 @@ Senses that grammar examples needed but lack a dedicated published root (example
 - *quickly* / *quietly* / *maybe* / *alleged* / *recent* / *official* / *weekend* / *weekday* / *workaround*
 
 **Invented proper-name roots** (not lexicon; grammar-only cast — publish or replace if desired)
-- `azama` (Sam), `eleja` (Lea), `ogala` (Clark), `uzura` (Superman), `amera` / `ezema` (Mary / Smith), `epata` (Pat), `oleva` (Leonardo), `onuja` (New York), `urebe` (RGB)
+- `azama` (Sam), `edeja` (Lea), `odava` (Clark), `uzuba` (Superman), `ameva` / `ezema` (Mary / Smith), `enava` (Pat), `odeva` (Leonardo), `onuja` (New York), `udebe` (RGB)
 
 ## Unassigned number / derivation readings
 

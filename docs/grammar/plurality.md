@@ -28,7 +28,7 @@ gloss: `z-Sam-sh` · `v-walk`
 ```
 
 ```
-`zazarsh vahural.`
+`zazamarsh vahural.`
 
 gloss: `z-r-sh` · `v-sit`
 

@@ -154,7 +154,7 @@ Every `REVᵢ` applies **in parallel to the same A**, each with its own right-ha
 For nested English *including (B except C)*, put the inner revision **inside** one side.
 
 ```
-`zahanal am zazaman ul zelejan.`
+`zahanal am zazaman ul zedejan.`
 
 gloss: `z-team` · `am` · `z-Sam` · `ul` · `z-Lea`
 
@@ -204,8 +204,8 @@ gloss: `j-Sam` · `al` · `z-speaker` · `v-walk`
 ### More examples
 
 - `zodololsh al zamemal` — *tools, including only a hammer* (closed)
-- `zurebensh an zedejel` — *the primary colors, including red* (named frame)
-- `zureben un zulebul` — *RGB except blue* (named conventional set)
+- `zudebensh an zedejel` — *the primary colors, including red* (named frame)
+- `zudeben un zulebul` — *RGB except blue* (named conventional set)
 - `dadedal om dogevel` — *coffee as a replacement for tea* (open)
 - `dadedal on dogevel` — *the stock tea→coffee swap* (named)
 - `vurunul om vawul` — *ran, with walk as a replacement* (VP slot)

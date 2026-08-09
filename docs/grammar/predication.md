@@ -76,9 +76,9 @@ goguno… b<OTHER>
 | **`b<OTHER>`** | the other label or description |
 
 ```
-`zogalan gogunol buzuran.`
+`zodavan gogunol buzuban.`
 
-gloss: `z-ogala` · `g-SAME` · `b-uzura`
+gloss: `z-odava` · `g-SAME` · `b-uzuba`
 
 *Clark is Superman.*
 ```
@@ -111,11 +111,11 @@ Values still stack on the classifying `/ɡ/` (`gedagel w-…xa…`) when the poi
 
 | Agelan | Reading |
 |---------|---------|
-| `zogalan gogunol buzuran` | *Clark is (the same as) Superman* |
-| `zogalan gogunom buzuran` | soft: *Clark is basically Superman* |
-| `zogalan gul gogunol buzuran` | *Clark is not (identical to) Superman* |
-| `zogalan gogunol wedahem buzuran` | *Clark is allegedly Superman* |
-| `zeborel gogunol buzuran` | NP-internal: *the person who is Superman* |
+| `zodavan gogunol buzuban` | *Clark is (the same as) Superman* |
+| `zodavan gogunom buzuban` | soft: *Clark is basically Superman* |
+| `zodavan gul gogunol buzuban` | *Clark is not (identical to) Superman* |
+| `zodavan gogunol wedahem buzuban` | *Clark is allegedly Superman* |
+| `zeborel gogunol buzuban` | NP-internal: *the person who is Superman* |
 
 Ordinary content still available (`zogunol` *a coin*; `gogunol` as *token*-like when not in the identity frame). The special reading wins under closed predicative **`goguno…` + `/b/`**.
 
@@ -127,7 +127,7 @@ Comparative claims as clause content use the same zero-copula shape with a ranke
 ### Boundaries
 
 - Dual bare subjects (`z<A> z<B>`) do not mean *A is B*.
-- Adjacent same-PoS **-n** words are not a multipart proper name (`zazaman zelejan`); use an **`x`-compound** (`zazama xelejan`) — [phrasal proper names](reference-suffix.md#phrasal-proper-names).
+- Adjacent same-PoS **-n** words are not a multipart proper name (`zazaman zedejan`); use an **`x`-compound** (`zamevaxezeman`) — [phrasal proper names](reference-suffix.md#phrasal-proper-names).
 - Plural **-sh** on `SAME` (`oguno`) is unused for “they are the same group”; mark group reference on the host nouns, or ascribe identity pairwise.
 - Multi-alias lists (*A, B, and C are one*): prefer pairwise `SAME`, or separate sentences — do not invent a second SHARED reading under `ae` for co-reference.
 

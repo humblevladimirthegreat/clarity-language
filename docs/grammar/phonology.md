@@ -43,9 +43,11 @@ There is no phonemic voiced / unvoiced contrast; voiced is preferred.
 | **m** | /m/ | *me* |
 | **n** | /n/ | *no* |
 | **v** | /v/ | *vie* |
+| **l** | /l/ | *lie* |
+| **r** | /ɹ/ | *red* |
 | **x** | /ʒ/ | *vision* (the *si*) |
 
-Word-final only (not ordinary onsets): reference suffixes **-l** / **-m** / **-n** / **-r**, and plural digraph **sh** /ʃ/ (*ship*) — [Phonotactics](#phonotactics).
+**Same letters, two jobs:** **m** / **n** / **l** / **r** are ordinary root onsets (**`alu`**, **`uru`**) and also the [reference suffixes](reference-suffix.md) (**-l** / **-m** / **-n** / **-r**) at the **end** of a content word. Digraph **sh** /ʃ/ (*ship*) is **word-final only** (plural after a reference suffix) — not a root onset — [Phonotactics](#phonotactics).
 
 ### Phonotactics (word shape)
 <a id="phonotactics"></a>
@@ -60,11 +62,13 @@ A content word has these parts, written as **one unbroken token**:
 
 **Writing:** no hyphen after the PoS letter (`zumogon`). Full orthography: [core.md § Orthography](core.md#orthography).
 
-**Roots** have form **V(CV)+**. Compound roots are separated by mid-word **`x`**.
+**Roots** have form **V(CV)+** (vowel-initial; mid consonants are ordinary onsets, including **l** / **r**). Compound roots are separated by mid-word **`x`**. A root does **not** end in a consonant — the only word-final consonants are the reference suffix (and optional plural **sh**).
 
-**Clear syllables:** a content root almost always starts with a vowel. Ending and beginning consonants are chosen so you never confuse which syllable a consonant belongs to (`vaban` = *va'ban*, not *vab'an*) — syllables do not end with a consonant except at the **end of the word**.
+**Clear syllables:** a content root almost always starts with a vowel. Ending and beginning consonants are chosen so you never confuse which syllable a consonant belongs to (`vaban` = *va'ban*, not *vab'an*; `zalul` = *z-alu-l* — mid **l** onset in the root, final **-l** the ending) — syllables do not end with a consonant except at the **end of the word**.
 
 **Word edges:** all **content** words end with a reference suffix (**-l** / **-m** / **-n** / **-r**), optionally followed by plural **-sh** (/ʃ/). Allowed word-final clusters: **-lsh**, **-msh**, **-nsh**, **-rsh**. Digraph **sh** is only this plural marker (word-final, after a reference suffix) — not an ordinary root consonant. **Utterance** boundaries (period, `/j/` turn vs `/x/` continue) are [orthography and prosody](core.md#orthography-and-prosody-periods) — discourse pauses, not word-edge phonotactics.
+
+**No clash with endings / numbers / left-bound:** mid-root **l** / **r** are always followed by a vowel inside the root, so they are not mistaken for a final suffix. Ordinary content after a PoS letter begins with a **vowel**, so **`PoS+r…`** stays [number-only](#number-word-exception) and **`gl-`** stays [left-bound `/ɡ/`](#left-bound).
 
 **Compounds:** mid-word **`x`** separates halves. Mid-word **`x`** is only the compound joiner (never part of a root); word-initial **`x`** is the discourse-marker prefix. Family map: [x-compounds.md](x-compounds.md).
 
@@ -76,13 +80,14 @@ A content word has these parts, written as **one unbroken token**:
 Ordinary compounds include lexicon sense-compounds, [values](values.md), [ability](special-vocabulary.md#ability), [role compounds](special-vocabulary.md#role-compounds) (**`a`/`u`/`o` x ROOT**), [numeric derivation](special-vocabulary.md#numeric-derivation) (**`ROOT x NUM`**), and compact [phrasal proper names](reference-suffix.md#phrasal-proper-names). Mid-word **`x`** also appears in closed [span fences](spans.md). Full table: [x-compounds.md](x-compounds.md).
 
 ### Number-word exception
+<a id="number-word-exception"></a>
 
-After a PoS prefix, a following **r** (start of the number marker) may form a cluster that is not otherwise allowed (e.g. `/ɡ/`+`r`, `/z/`+`r`, `/v/`+`r`, `/h/`+`r`, `/j/`+`r`, `/x/`+`r`). That cluster is legal **only** in [number words](numbers.md). Number-marker **V** is usually a single vowel (`ra` / `ru` / `re` / `ro`); end-relative ordinals use digraph **`eu`** (`reu…`, writing **`#-`**) — stacked vowels as elsewhere, not join **`ue`**. Number stems are a closed formal grammar and must not be assigned as ordinary lexicon roots. Ordinary vs number-specific endings: [reference-suffix.md](reference-suffix.md#number-word-exception).
+After a PoS prefix, a following **r** (start of the number marker) may form a cluster that ordinary content words never use (e.g. `/ɡ/`+`r`, `/z/`+`r`, `/v/`+`r`, `/h/`+`r`, `/j/`+`r`, `/x/`+`r`) — content roots are **vowel-initial**, so **`r` as a root onset** only appears **after a vowel** inside the root (`uru`), never immediately after the PoS letter. That **`PoS+r`** cluster is legal **only** in [number words](numbers.md). Number-marker **V** is usually a single vowel (`ra` / `ru` / `re` / `ro`); end-relative ordinals use digraph **`eu`** (`reu…`, writing **`#-`**) — stacked vowels as elsewhere, not join **`ue`**. Number stems are a closed formal grammar and must not be assigned as ordinary lexicon roots. Ordinary vs number-specific endings: [reference-suffix.md](reference-suffix.md#number-word-exception).
 
 ### Left-bound adjective (`gl-`)
 <a id="left-bound"></a>
 
-After adjective prefix `/ɡ/`, an **l** may sit before the root, forming onset **`gl-`**. That marks [left-bound attachment](core.md#left-bound-adjectives): the adjective precedes its host (`glgonudam zogodol`). Default right-bound adjectives are `/ɡ/` + vowel after the host (`zogodol gonudam`). This mid-word **l** is **not** the word-final reference suffix **-l**, and it is **not** available on other PoS prefixes (no `zl-`, `wl-`, `hl-`, …). Complex `/b/` and adjunct `/w/` stay after the `/ɡ/` word in either order.
+After adjective prefix `/ɡ/`, an **l** may sit before the root, forming onset **`gl-`**. That marks [left-bound attachment](core.md#left-bound-adjectives): the adjective precedes its host (`glgonudam zogodol`). Default right-bound adjectives are `/ɡ/` + vowel after the host (`zogodol gonudam`). This **`gl-`** **l** is morphology after the PoS letter — **not** the word-final reference suffix **-l**, **not** a root-onset **l** (those follow a vowel: `alu`), and it is **not** available on other PoS prefixes (no `zl-`, `wl-`, `hl-`, …). Complex `/b/` and adjunct `/w/` stay after the `/ɡ/` word in either order.
 
 ### Joins, revisers, and span vowels
 

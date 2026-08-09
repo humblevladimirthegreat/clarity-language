@@ -40,9 +40,9 @@ Scale adjectives are ordinary `/ɡ/` (lexicon-marked as **gradable / scalar**). 
 Ordinary scalar *than* uses **`e`** (exclusivity unmarked — both may be high on the scale).
 
 ```
-`zazaman zelejan zel gonudam.`
+`zazaman zedejan zel gonudam.`
 
-gloss: `z-azama` · `z-eleja` · `zel` · `g-challenging`
+gloss: `z-azama` · `z-edeja` · `zel` · `g-challenging`
 
 *Sam is more challenging than Lea.*
 ```
@@ -56,9 +56,9 @@ gloss: `z-azama` · `zel` · `g-challenging`
 ```
 
 ```
-`zazaman zelejan zel wogenal gonudam.`
+`zazaman zedejan zel wogenal gonudam.`
 
-gloss: `z-azama` · `z-eleja` · `zel` · `w-flood` · `g-challenging`
+gloss: `z-azama` · `z-edeja` · `zel` · `w-flood` · `g-challenging`
 
 *Sam is much more challenging than Lea.*
 ```
@@ -79,17 +79,17 @@ Assert the ranking with the same [zero-copula](predication.md#zero-copula) patte
 Open **-m** (`zaem`) = soft / approximate equality (*about as … as*). Closed **-l** = stand behind sameness on the scale.
 
 ```
-`zazaman zelejan zael gonudam.`
+`zazaman zedejan zael gonudam.`
 
-gloss: `z-azama` · `z-eleja` · `zael` · `g-challenging`
+gloss: `z-azama` · `z-edeja` · `zael` · `g-challenging`
 
 *Sam is as challenging as Lea.*
 ```
 
 ```
-`zazaman zelejan zaem gurubul.`
+`zazaman zedejan zaem gurubul.`
 
-gloss: `z-azama` · `z-eleja` · `zaem` · `g-bright`
+gloss: `z-azama` · `z-edeja` · `zaem` · `g-bright`
 
 *Sam is about as bright as Lea.*
 ```
@@ -114,15 +114,15 @@ Use **`oe`** for exclusive *ladders* (triage / pick-one along the scale). **`ue`
 
 | Example | Reading |
 |---------|---------|
-| `zazaman zelejan zepatan zem gonudam` | *Sam ≻ Lea ≻ Pat on challenge* (open) |
-| `zazaman zelejan zoel gonudam` | *Sam is more challenging than Lea* (exclusive ranked ladder) |
-| `zazaman zelejan zuel gonudam` | *Sam is less challenging than Lea* |
+| `zazaman zedejan zenavan zem gonudam` | *Sam ≻ Lea ≻ Pat on challenge* (open) |
+| `zazaman zedejan zoel gonudam` | *Sam is more challenging than Lea* (exclusive ranked ladder) |
+| `zazaman zedejan zuel gonudam` | *Sam is less challenging than Lea* |
 | `zel gonudam` | *unspecified who’s most challenging* |
 | `zoel gonudam` | *there is no most challenging* |
 | `zoem gonudam` | *no most challenging comes to mind* |
 | `zazaman zuel gonudam` | *Sam is the least challenging (of all)* |
 | `zer gonudam` | *whatever ranks highest on challenging* — positive twin of empty `zoel gonudam` |
-| `zazaman zelejan zer gonudam` | *whichever of Sam or Lea ranks higher on challenging* |
+| `zazaman zedejan zer gonudam` | *whichever of Sam or Lea ranks higher on challenging* |
 
 Under `/ɡ/`, SHARED `/w/` on a ranked AP fence remains shared *degree* over ranked properties — not a noun-scale comparative (use an NP-slot ranked fence with SHARED `/ɡ/`).
 
@@ -133,12 +133,12 @@ When discourse needs the comparee alone as subject of another verb, keep that su
 ### Distributive *both are ADJ*
 <a id="distributive-both"></a>
 
-SHARED singular scale under **`a`**: `zazaman zelejan zal gonudam` = *Sam and Lea are challenging* (not necessarily equal). **Collective** (*ADJ as a unit*): SHARED `/ɡ/`…**-sh** under **`a`** — [plurality](plurality.md#collective-ascription).
+SHARED singular scale under **`a`**: `zazaman zedejan zal gonudam` = *Sam and Lea are challenging* (not necessarily equal). **Collective** (*ADJ as a unit*): SHARED `/ɡ/`…**-sh** under **`a`** — [plurality](plurality.md#collective-ascription).
 
 | Example | Reading |
 |---------|---------|
-| `zazaman zelejan zal gonudam` | *Sam and Lea are challenging* (distributive — not equative) |
-| `zazaman zelejan zepatan zael gonudam` | *Sam, Lea, and Pat are equally challenging* |
+| `zazaman zedejan zal gonudam` | *Sam and Lea are challenging* (distributive — not equative) |
+| `zazaman zedejan zenavan zael gonudam` | *Sam, Lea, and Pat are equally challenging* |
 | `zogodol zagadal zael gonudam` | *the dog is as challenging as the cat* |
 
 Focus / bare **`ae`** + SHARED scale stay ordinary focus / bare **`ae`** readings — equative needs **two or more** comparees. **`ae`** without SHARED scale = equal rank / tie among conjuncts — not a scalar equative. Scale adjectives in comparative / equative SHARED stay singular (no **-sh**).
@@ -151,8 +151,8 @@ Focus / bare **`ae`** + SHARED scale stay ordinary focus / bare **`ae`** reading
 
 | Example | Reading |
 |---------|---------|
-| `zazaman zelejan zel gonudam burelul g+2` | *Sam is two measures more challenging than Lea* |
-| `zazaman zelejan zel wogenal gonudam` | *Sam is much more challenging than Lea* (vague degree — `/w/`, no measure NP) |
+| `zazaman zedejan zel gonudam burelul g+2` | *Sam is two measures more challenging than Lea* |
+| `zazaman zedejan zel wogenal gonudam` | *Sam is much more challenging than Lea* (vague degree — `/w/`, no measure NP) |
 
 Vague degree stays `/w/`; counted gaps use the measure-NP pattern (one `/b/` on the scale, not amount + unit as two `/b/`s).
 
@@ -210,7 +210,7 @@ Six fixed standards. Ending stays **-n** (named reference-class standard), not o
 | **`zumogon`** | less … than **where I sit** on the scale (ordinary [speaker](pronouns.md#special-pronouns) — current skill / performance) |
 | **`zumogoxrawon`** | less … than **my personal standard** (the bar I apply) |
 
-Soft personal standard: **`zumogoxrawom`**. Ordinary named people stay ordinary **-n** names: `zuel g<SCALE>l zazaman zelejan`.
+Soft personal standard: **`zumogoxrawom`**. Ordinary named people stay ordinary **-n** names: `zuel g<SCALE>l zazaman zedejan`.
 
 **Everyone** vs focus reverse-superlative: `zuel g<SCALE>l z<JUDGED>l` ≈ *the least … of all* in the discourse domain; **`zuan`** as comparee **names** the universal class explicitly. Prefer the benchmark when the point is “against everyone as a standard.” Bare closed **`zual`** remains ordinary *everything / everyone* in non-benchmark slots.
 
@@ -223,7 +223,7 @@ Soft personal standard: **`zumogoxrawom`**. Ordinary named people stay ordinary 
 | `zuel gabunul zumogon zulohun` | less skilled than Social |
 | `zuel gabunul zumogon zaheman` | less skilled than Typical |
 | `zuel gabunul zumogon zuan` | less skilled than Everyone |
-| `zuel gegul zumogon zelejan` | less skilled than **Lea** (ordinary person comparee) |
+| `zuel gegul zumogon zedejan` | less skilled than **Lea** (ordinary person comparee) |
 
 #### Constraints
 

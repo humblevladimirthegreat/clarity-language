@@ -21,7 +21,7 @@ Two stem lengths:
 There are no English-style 3rd-person pronoun lexemes (*he* / *she* / *it* / *they*) and no impersonal *one*.
 
 ```
-`zazaman vawul. zazar vahural.`
+`zazaman vawul. zazamar vahural.`
 
 gloss: `z-Sam` · `v-walk` · `z-r` · `v-sit`
 
@@ -85,7 +85,7 @@ When names are unavailable:
 **`odo`:** placeholder for the material that **immediately follows** ([dependent clauses](core.md#dependent-clauses)). Put **`odo` last** in its host slot; the dependent follows with no intervening host words. Same speech act as the main sentence → dependent may omit `/j/`; a different speech act needs its own force word.
 
 ```
-`zumogon vezabul dazaman dodol zelejan vedabul.`
+`zumogon vezabul dazaman dodol zedejan vedabul.`
 
 gloss: `z-speaker` · `v-tell` · `d-Sam` · `d-next-clause` · `z-Lea` · `v-depart`
 
