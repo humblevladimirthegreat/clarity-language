@@ -4,7 +4,7 @@ Plan to bring every file in **`docs/grammar/`** in line with [grammar-docs.md](g
 
 **Phase 0 done:** all former top-level `docs/*.md` live under `docs/grammar/`; core sentence page is [core.md](../grammar/core.md); repo pointers updated; grammar pages no longer cite `meta/` / `data/` / other folders.
 
-**Still to do:** band/restyle the rest of the grammar set (Phases 1–3).
+**Still to do:** Waves 3–7 (Phases 1–3 banding continues; Wave 2 done).
 
 ## Scope (read this first)
 
@@ -168,9 +168,9 @@ Keep the list short; link to each doc’s `#beginner` (or equivalent).
 - [x] `pronouns.md`
 - [x] `plurality.md`
 - [x] `questions.md`
-- [ ] `predication.md`
-- [ ] `revisers.md`
-- [ ] `restrictors.md`
+- [x] `predication.md`
+- [x] `revisers.md`
+- [x] `restrictors.md`
 - [ ] `coordination.md`
 - [ ] `spans.md`
 - [ ] `numbers.md` (may be multiple PRs)
