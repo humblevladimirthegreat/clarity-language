@@ -48,7 +48,7 @@ Same English label for `zumogom` and `zumogon` is fine: both are the *speaker* s
 
 **Closed overlays** ([sense-form](special-vocabulary.md#sense-form)): gloss the overlay reading for that `(sense_form, pos)`, not the ordinary lexicon literal. Prefer short stable labels (`witnessed`, `COMMENT`, `SAME`, `plan`, …).
 
-**Special pronouns** ([pronouns.md](pronouns.md)): `zumogon` / `zehadon` / `zenun` / `…odo…` → `z-speaker` / `z-listener` / `z-someone` / `…-next-clause` — never emoji etymology.
+**Special pronouns** ([pronouns.md](pronouns.md)): `zumogon` / `zehadon` / `zanan` / `zenun` / `…odo…` → `z-speaker` / `z-listener` / `z-interlocutors` / `z-someone` / `…-next-clause` — never emoji etymology.
 
 ## Morph gloss format
 
@@ -62,7 +62,7 @@ Same English label for `zumogom` and `zumogon` is fine: both are the *speaker* s
 - **english** — short English label for the **active** sense (hyphens OK inside a label: `next-clause`, `or-exactly-one`). **No** Clarity root letters.
 - **`-x-`** — mid-word compound / stance / role / span hinge; each piece is English (or a stable TAG).
 - **-l / -m / -n** — **omit** when they only choose which sense-root is in play (the usual content-word case).
-- **-sh** — append `-sh` when the written word has group **-sh** (`z-speaker-sh`).
+- **-sh** — append `-sh` when the written word has associative / address-set / collective **-sh** (`z-speaker-sh`, `z-listener-sh`).
 - **Prefix-less** revisers: English only — `instead`, `rather`, `additionally` (no fake PoS).
 
 Separate words with ` · ` (space-middot-space). One morph gloss line per Clarity line (or per turn).
@@ -73,7 +73,7 @@ Only when it is **not** already baked into the English sense-root:
 
 | Keep in gloss | Why |
 |---------------|-----|
-| `-sh` | Group / collective — not a sense picker |
+| `-sh` | Associative / collective / address-set — not a sense picker |
 | `(←…)` binding for **-r** | Resume is not a lexicon sense; see below |
 | Rare teaching callouts | If you must contrast two same-sense forms that differ only by ending, prefer distinct English labels (`and.open` / `and`) over re-attaching `-m` / `-l` |
 
@@ -141,6 +141,9 @@ Bake join / reviser **job** into the English label (including open vs closed whe
 | `zumogol` | `z-microphone` | *a microphone* |
 | `zumogon` | `z-speaker` | *I* / *the speaker* |
 | `zehadon` | `z-listener` | *you* / *the listener* |
+| `zanan` | `z-interlocutors` | *we* (speaker ∪ address set) |
+| `zumogonsh` | `z-speaker-sh` | *I and associates* |
+| `zehadonsh` | `z-listener-sh` | *you-all* (address set) |
 | `guzem` | `g-happy` | *happy* |
 | `huhunum` | `h-witnessed` | *per memory* |
 | `howarom` | `h-plan` | *as a plan* |
@@ -156,6 +159,8 @@ gloss: `j-yes` · `z-speaker` · `z-and.open` · `z-listener` · `z-and` · `g-h
 
 *Yes. I and you are happy.*
 ```
+
+(Prefer **`zanan guzem`** when the point is interlocutor *we*, not an explicit two-name census.)
 
 ### Metaphor vs overlay vs literal
 
@@ -184,7 +189,17 @@ Clarity: `x#e- zubezul g#1 zumogonsh hazedoxul.`
 ```
 gloss: `x-starting-with` · `z-problem` · `g-first` · `z-speaker-sh` · `h-pleasure-x-unmet`
 
-*Starting with: problem one — we (group containing me) have unmet pleasure.*
+*Starting with: problem one — I and associates have unmet pleasure.*
+```
+
+### Inclusive *we* (interlocutors)
+
+Clarity: `jael. xamalal zanan howarom vawul vul.`
+
+```
+gloss: `j-yes` · `x-therefore` · `z-interlocutors` · `h-plan` · `v-walking` · `v-not`
+
+*Yes. Therefore we (you and I) plan not to walk.*
 ```
 
 ### Grammar-table gloss (free English only)

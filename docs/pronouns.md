@@ -17,7 +17,7 @@ Resolution is always unambiguous for the listener and for a parser: a **-r** pro
 
 It is the **speaker’s** job to ensure the intended referent is the most recent match. Use the letter pronoun when that is already true. If the most recent match is **not** what you intend, use the **full-root `-r` form**. If even that isn't distinct, add an **adjective / ordinal** to disambiguate. That mention becomes most recent, so later pronouns can refer to it again.
 
-Add **-sh** after the reference suffix to mark a **group referent**: the **group containing** the referent (on nouns / event-sets), or [collective ascription](plurality.md#collective-ascription) on `/ɡ/`. Example: `…r` refers to one noun; `…rsh` refers to the group that includes that noun. The same **-sh** works on full words (`…lsh`, `…nsh`, etc.) where plurality allows it. See [plurality.md](plurality.md).
+Add **-sh** after the reference suffix to mark a **group referent**: by default **associative** — the anchor **and associates** (cohort fixed by context: family, team, unit, …) on nouns / event-sets — or [collective ascription](plurality.md#collective-ascription) on `/ɡ/`. Example: `…r` refers to one noun; `…rsh` refers to that noun **and associates**. Special person-role exceptions (**listener** → address set; **interlocutors** already a set) live in [plurality.md § Person-role **-sh**](plurality.md#person-role-sh) and below. See [plurality.md](plurality.md).
 
 There are no English-style 3rd-person pronouns (*he* / *she* / *it* / *they*) and no impersonal *one*.
 
@@ -31,7 +31,7 @@ Clarity has one anaphoric mechanism (`-r`); English does not. Approximate by cro
 2. Find the **pronoun’s PoS** (the slot you are filling).
 3. Use that English gloss as a reading aid — not as a claim that Clarity has separate pronoun lexemes.
 
-Noun prefixes `/z/`, `/d/`, and `/b/` share the same “entity” reading; English case and preposition choice follow the pronoun column. Group **-sh** → *they* / *those* / *that group* (the group containing the referent).
+Noun prefixes `/z/`, `/d/`, and `/b/` share the same “entity” reading; English case and preposition choice follow the pronoun column. Group **-sh** → *they* / *those* / *X and associates* (associative; see [plurality](plurality.md)).
 
 **Pronoun `/x/` vs `/h/`:** `/x/`…`-r` is **discourse navigation** — *going back to subject X* / *returning to that thread* (removing it does not change the following claim). Clause **aboutness** (*regarding X*, as part of what the claim is about) stays `/h/` + `/b/` X — see [Adverbs](language-reference.md#adverbs-h) and [Discourse markers](language-reference.md#discourse-markers-x).
 
@@ -141,25 +141,42 @@ Each subsection is an **antecedent** PoS; the table rows are the **pronoun** PoS
 
 **Span anaphors** are closed forms in the [span-fence](spans.md) series (`{PoS}{TYPE}xa{r}`, EDGE **a**), not letter/full-root content pronouns. They resolve to the **most recent span of that TYPE** and treat it as a referent in the new slot (*he said **that**?!*) — they do **not** re-open a cite. Ordinary content **-r** still resumes words *inside* a non-opaque span when those words were introduced as ordinary lexicon.
 
-Special pronouns (**`umogo`** / **`ehado`** / **`enu`** / **`odo`**) are **not** covered here — they are separate forms (below), not `-r` stems from ordinary antecedents. Content questions (*who* / *what* / *where* / *what did they do?* / *what happened?*) use [unspecified-member **-r** under **question** force](questions.md#fill-ask-r) (`zar` / `zor` / `zer` / `zur` / `var` / `vor` / `ver` / `vur` / `xar` / …), not a special pronoun.
+Special pronouns (**`umogo`** / **`ehado`** / **`ana`** / **`enu`** / **`odo`**) are **not** covered here — they are separate forms (below), not `-r` stems from ordinary antecedents. Content questions (*who* / *what* / *where* / *what did they do?* / *what happened?*) use [unspecified-member **-r** under **question** force](questions.md#fill-ask-r) (`zar` / `zor` / `zer` / `zur` / `var` / `vor` / `ver` / `vur` / `xar` / …), not a special pronoun.
 
 ## Special pronouns
 <a id="special-pronouns"></a>
 
-Discourse-role forms (not letter/full-root **-r** from ordinary antecedents). They take the usual PoS prefix for the slot they fill. **Speaker** / **listener** reuse the published lexicon roots **`umogo`** (🎤 *microphone*) and **`ehado`** (🎧 *headphones*); **`enu`** / **`odo`** remain closed.
+Discourse-role forms (not letter/full-root **-r** from ordinary antecedents). They take the usual PoS prefix for the slot they fill. **Speaker** / **listener** / **interlocutors** reuse the published lexicon roots **`umogo`** (🎤 *microphone*), **`ehado`** (🎧 *headphones*), and **`ana`** (🤝 *handshake*); **`enu`** / **`odo`** remain closed.
 
 | Role | Root | Image → sense | Default ending | Example |
 |------|------|---------------|----------------|---------|
 | **Speaker** | **`umogo`** | 🎤 *microphone* → *producer-role* | **-n** | `zumogon` *I* (this utterance’s producer) |
 | **Listener** | **`ehado`** | 🎧 *headphones* → *addressee-role* | **-n** | `dehadon` *you* (this utterance’s addressee) |
+| **Interlocutors** | **`ana`** | 🤝 *handshake* → *co-participants* | **-n** | `zanan` *we* (speaker ∪ current address set) |
 | **Generic person** | **`enu`** | 👤 *silhouette* → *a person* | **-n** | `zenun` *someone* (a nonspecific individual) |
 | **Next clause** | **`odo`** | 🚪 *doorway* → *what follows* | **-l** | `bodol` / `dodol` — placeholder for the dependent that follows |
 
-**Medium-neutral.** **Speaker** and **listener** name the **producer** and **addressee** of the current utterance — speech, writing, signing, or any other channel. They are not restricted to oral talk (*speaker* ≠ “person vocalizing”; *listener* ≠ “person hearing”). Same roots in a letter, chat, book, or recording. Ordinary instrument readings (*a microphone*, *headphones*) stay available under other PoS / endings; the person-role reading is this discourse use with **-n** (or soft **-m**).
+**Medium-neutral.** **Speaker**, **listener**, and **interlocutors** name **roles in the current utterance** — speech, writing, signing, or any other channel. They are not restricted to oral talk (*speaker* ≠ “person vocalizing”; *listener* ≠ “person hearing”). Same roots in a letter, chat, book, or recording. Ordinary instrument / gesture readings (*a microphone*, *headphones*, *a handshake*) stay available under other PoS / endings; the person-role reading is this discourse use with **-n** (or soft **-m**).
 
-**Endings.** Person roles default to **-n** (definite discourse roles, parallel to proper names). Soft **-m** is available when the role framing is hedged. **Next clause** defaults to **-l** (exact forward slot). Soft **-m** on **`odo`** hedges the subordination edge. Do **not** treat person-role uses as ordinary indefinite kinds (**-l** on speaker / listener / generic person) or as content anaphors built from a prior mention of the same root.
+**Endings.** Person roles default to **-n** (definite discourse roles, parallel to proper names). Soft **-m** is available when the role framing is hedged. **Next clause** defaults to **-l** (exact forward slot). Soft **-m** on **`odo`** hedges the subordination edge. Do **not** treat person-role uses as ordinary indefinite kinds (**-l** on speaker / listener / interlocutors / generic person) or as content anaphors built from a prior mention of the same root.
 
 **Speaker / listener.** 1st / 2nd person only when a name is unavailable or undesired. They label **roles in this discourse**, not identity essence. On [judgment benchmarks](comparatives.md#judgment-benchmarks): bare **`zumogon`** = *less … than where I sit* (performance); normative personal standard = **`zumogoxrawon`** ([digit morph **`+1`**](special-vocabulary.md#numeric-derivation) on **`umogo`**). Do **not** reuse **`ehado`** for [evidential](special-vocabulary.md#evidentiality) hearsay (**`erare`** stays *told*).
+
+**Interlocutors (`ana`).** Inclusive *we* as a **discourse role**: the **speaker union the current address set** (everyone this turn is talking *to*). Not “my side,” not a titled team, and not an exact census of named people — those use [associative **-sh**](plurality.md#associative) / joins. Soft **`zanam`** hedges co-agency (*sort of we*). Do **not** invent a separate inclusive-*you* root: plural listener is the [address set](plurality.md#person-role-sh) (`zehadonsh`); associative *you and yours* uses a **name**…**-sh**.
+
+<a id="clusivity"></a>
+
+**Clusivity triangle** (when names are unavailable):
+
+| Form | Reading |
+|------|---------|
+| `zumogonsh` | speaker **and associates** (listener **not** assumed) |
+| `zehadonsh` | **address set** — all current addressees (no speaker) |
+| `zanan` | **interlocutors** — speaker ∪ address set (inclusive *we*) |
+| name…**-sh** | that person **and associates** |
+| join list | exact membership census (`zuzur zuber zamer zal`) |
+
+**Address set.** Prefer: everyone named in this turn’s vocative cluster, plus anyone still held as addressee by context. One addressee → singular **`ehado`**; several → **`ehado…sh`** available. Inclusive co-agency (*shall we…*) → **`ana`**, not speaker **-sh**.
 
 **Generic person (`enu`).** A nonspecific **individual** — not English impersonal *one*, not [unspecified-member](coordination.md#unspecified-member-r-phrase) **`zar`** / **`dar`** (those are join gaps / indefinites of any kind), and not a 3rd-person anaphor (use content **-r** once someone is introduced).
 
@@ -170,12 +187,15 @@ Discourse-role forms (not letter/full-root **-r** from ordinary antecedents). Th
 | `jal zumogon v<go>l` | *I go* |
 | `zumogon v<go>l` | *I go* (implied **`jal`**) |
 | `jal zumogon v<write>l dehadon` | *I write you* (letter / message — same roots) |
+| `jal zanan v<go>l` | *We (you and I / interlocutors) go* |
+| `jal zehadonsh v<go>l` | *You-all (address set) go* |
+| `jal zumogonsh v<go>l` | *I and my associates go* (not necessarily you) |
 | `jal zenun v<arrived>l` | *Someone (a person) arrived* |
 | `jal zumogon v<told>l d<Sam>n dodol z<Lea>n v<left>l` | *I told Sam that Lea left* (dependent inherits assertoric force) |
 | `… hurugul bodol …` | *… because [dependent]* (same-force dependent may omit **`jal`**) |
 | `… horodol bodol …` | *… if [dependent]* (one-way) |
 | `… heluvel bodol …` | *… iff [dependent]* (both ways) |
 
-**Group containing** a referent is not a separate special pronoun: append **-sh** where [plurality](plurality.md) allows it (`zumogonsh` = the group containing the speaker; inclusive *we* = join of speaker + listener, not a fifth root).
+**Associative plurality** is not a separate special pronoun: append **-sh** where [plurality](plurality.md) allows it (`zumogonsh` = speaker and associates). Inclusive *we* is **`ana`**, not speaker+listener join-as-only-option (joins remain for exact censuses).
 
-**Prefer names.** When a proper name is available, use it (`-n`) and/or its pronoun (`-r` from the name’s root) — including for self-address — rather than **`umogo`** / **`ehado`**. Proper names are definite; the special pronouns are for the narrow cases where a name is unavailable or undesired. See [Proper name (`-n`)](reference-suffix.md#proper-name--n).
+**Prefer names.** When a proper name is available, use it (`-n`) and/or its pronoun (`-r` from the name’s root) — including for self-address — rather than **`umogo`** / **`ehado`**. Prefer **`ana`** over a speaker+listener join when the point is **co-participant role**, not identity; prefer name joins when membership identity is the point; prefer name…**-sh** for associative cohorts. See [Proper name (`-n`)](reference-suffix.md#proper-name--n).

@@ -52,7 +52,7 @@ A word contains these parts:
 2. optional mid-word **l** after the PoS prefix — **left-bound** on adjectives (`gl-`) only; see below
 3. the root(s) - multiple if compound word
 4. the [reference suffix](reference-suffix.md) (**-l**, **-m**, **-n**, or **-r**)
-5. optional plural **-sh** (group referent / collective `/ɡ/`), after the reference suffix — see [plurality.md](plurality.md)
+5. optional plural **-sh** (associative group / address-set on listener / collective `/ɡ/`), after the reference suffix — see [plurality.md](plurality.md)
 
 **Writing:** these pieces are one unbroken token — **no hyphen** after the PoS letter (`zumogon`, not `z-umogo`). Foreign roots use `PoS<…>ENDING` (e.g. `d<english>l`). Opaque span brackets take **no** ending on the closer (`d<sushi>`). Full orthography note: **[language-reference.md § Orthography](language-reference.md#orthography)**.
 

@@ -14,7 +14,7 @@ Written as **one token with no hyphen** after the PoS letter (`zumogon`, not `z-
 2. **Left-bound `l`** — optional; **adjectives only** (`/ɡ/` → **`gl-`**). Marks [left-bound attachment](language-reference.md#adjectives-ɡ) (adjective before host). Not the word-final reference suffix **-l**.
 3. **Root(s)** — `V(CV)+`; compound roots join with **x** (see [phonology.md](phonology.md#phonotactics)).
 4. **Reference suffix** — **-l**, **-m**, **-n**, or **-r** (below).
-5. **Plural -sh** — optional; marks a **group referent** (or collective `/ɡ/`), after the reference suffix — see [plurality.md](plurality.md).
+5. **Plural -sh** — optional; marks an **associative group** (or address-set / collective `/ɡ/`), after the reference suffix — see [plurality.md](plurality.md).
 
 ## The four suffixes
 
@@ -109,7 +109,7 @@ Do **not** use **-n** for generic first mention (**-l** / **-m**) or for resumin
 
 ## Plural **-sh**
 
-Plural grammar (**-sh** after the reference suffix; group referent on nouns/verbs/vocatives; collective on `/ɡ/`; unused on `/w/` `/h/` `/x/` and number words) lives in **[plurality.md](plurality.md)**. Short form: `…r` is one referent; `…rsh` is the group that includes that referent. Allowed word-final clusters: **-lsh**, **-msh**, **-nsh**, **-rsh** — see [phonology.md](phonology.md#phonotactics).
+Plural grammar (**-sh** after the reference suffix; [associative](plurality.md#associative) on nouns/verbs/vocatives; **listener…sh** = [address set](plurality.md#person-role-sh); collective on `/ɡ/`; unused on `/w/` `/h/` `/x/` and number words) lives in **[plurality.md](plurality.md)**. Short form: `…r` is one referent; `…rsh` is that referent **and associates**. Inclusive *we* is special **`ana`**, not **-sh** — [pronouns](pronouns.md#clusivity). Allowed word-final clusters: **-lsh**, **-msh**, **-nsh**, **-rsh** — see [phonology.md](phonology.md#phonotactics).
 
 ## Number-word exception
 

@@ -1,6 +1,6 @@
 # Plurality
 
-Plurality is marked by an optional suffix **-sh** after the [reference suffix](reference-suffix.md). It marks a **group as the discourse referent** — not a separate “they” lexeme, not quantity, not universality, and not habituality. Details of anaphoric resume stay in [pronouns.md](pronouns.md); this page is the source of truth for when and how **-sh** applies.
+Plurality is marked by an optional suffix **-sh** after the [reference suffix](reference-suffix.md). On content nouns (and parallel cases below) it marks an **associative group** as the discourse referent — **anchor and associates**, not a separate “they” lexeme, not quantity, not universality, and not habituality. Details of anaphoric resume stay in [pronouns.md](pronouns.md); this page is the source of truth for when and how **-sh** applies.
 
 ## Word shape
 
@@ -16,17 +16,20 @@ Plurality is marked by an optional suffix **-sh** after the [reference suffix](r
 Allowed word-final clusters: **-lsh**, **-msh**, **-nsh**, **-rsh**. Phonotactics live in [phonology.md](phonology.md#phonotactics).
 
 ## Core sense
+<a id="associative"></a>
 
-Without **-sh**, the word picks **one** referent (or one named / indefinite introduction). With **-sh**, the word’s referent is a **group** (introduced, named, or resumed) — or, on `/ɡ/`, a property predicated of a group **as one unit** ([collective](#adjectives-g)).
+Without **-sh**, the word picks **one** referent (or one named / indefinite introduction). With **-sh**, the default content reading is **associative**: the **anchor plus a contextually salient associate set** (family, coworkers, unit, household, faction, …) — or, on `/ɡ/`, a property predicated of a group **as one unit** ([collective](#adjectives-g)). Exact who counts as an associate is **not** morphologically fixed; discourse and situation pick the cohort (see [resolution](#associate-resolution)).
 
 | Ending | Reading |
 |--------|---------|
 | `…l` / `…m` / `…n` / `…r` | singular (one referent / one introduction) |
-| `…lsh` / `…msh` / `…nsh` / `…rsh` | group referent (or collective ascription on `/ɡ/`) |
+| `…lsh` / `…msh` / `…nsh` / `…rsh` | associative group (or collective ascription on `/ɡ/`) |
 
-Example with resume: `…r` points at one prior noun; `…rsh` points at the **group that includes** that noun. The same **-sh** works on full words (`…lsh`, `…nsh`, etc.), not only on pronouns.
+Example with resume: `…r` points at one prior noun; `…rsh` points at that noun **and associates**. The same **-sh** works on full words (`…lsh`, `…nsh`, etc.), not only on pronouns.
 
 **-sh** is not agreement: you do not copy number onto verbs, adjectives, or other dependents. Mark the word whose referent is the group (or whose ascription is collective).
+
+**Not clusivity:** associative **-sh** does **not** mean inclusive *we*. Speaker ∪ addressees uses special **`ana`** ([pronouns](pronouns.md#special-pronouns)); listener plural on the role word is the [address set](#person-role-sh), not “you and your family.”
 
 **Not -sh:**
 
@@ -37,19 +40,33 @@ Example with resume: `…r` points at one prior noun; `…rsh` points at the **g
 | habitual / characterizing pattern | bare **`hual` / `huam`** — [circumstance](restrictors.md) |
 | *N times* / repetition count | [number words](numbers.md) under `/h/` (including digitless **`h+`**) |
 | *everyone* (universal address) | bare **`…ual`** (vocative / entity slot as usual) |
+| inclusive *we* (interlocutors) | **`ana`** — [pronouns](pronouns.md#special-pronouns) |
+| exact membership census | [phrase join](coordination.md) list |
 
 Indefinite **group introduction** stays **-lsh** / **-msh** on nouns (and parallel event-set intro on verbs). Do **not** replace that job with digitless numbers.
 
+### Associate-set resolution
+<a id="associate-resolution"></a>
+
+When membership matters and is not listed:
+
+1. **Explicit join / except wins** (`ul dehadon` = associates minus the listener).
+2. Else **recently named cohort** (family introduced, team title, …).
+3. Else **institutional frame** of the scene (this meeting, this household).
+4. Else **underspecified** — do not force the listener in or out.
+
+Mark when the wrong reading would matter: co-agency → **`ana`** or a join; “not you” → speaker/name **-sh** or a join that omits the listener.
+
 ## By reference suffix
 
-**-sh** keeps the reference suffix’s discourse job and only adds group reference (or collective ascription on `/ɡ/`).
+**-sh** keeps the reference suffix’s discourse job and only adds associative group reference (or collective ascription on `/ɡ/`).
 
 | Suffix + plural | Discourse job |
 |-----------------|---------------|
-| **-lsh** | Indefinite **group** introduction, **literal** sense — first mention of a discourse set of that kind (*some cats* as a set) |
-| **-msh** | Indefinite **group** introduction, **metaphorical** sense — first mention of that figurative kind as a set |
+| **-lsh** | Indefinite **associative group** introduction, **literal** sense — first mention of a discourse set of that kind (*some cats* as a set; *Sam and associates* when the anchor is indefinite) |
+| **-msh** | Indefinite **associative group** introduction, **metaphorical** sense — first mention of that figurative kind as a set |
 | **-nsh** | **Named / titled group** — a proper plural name or designation that names a set (*the Beatles*, *Team Alpha*, *the Alps*) |
-| **-rsh** | Definite **group** resume — the group containing an already-introduced referent, or resume of a prior group (letter or full-root **-r** stem) |
+| **-rsh** | Definite **associative** resume — the prior referent **and associates**, or resume of a prior group (letter or full-root **-r** stem) |
 
 Bare **-l** / **-m** still always introduce; **-lsh** / **-msh** introduce a **group** indefinite, not a resume. Resumption of a prior group (or of a group built from a singular) is **-rsh**. Do not use **-lsh** / **-msh** to mean “those again.”
 
@@ -59,17 +76,33 @@ Do **not** read **-lsh** as kind-generic (*cats in general* / *all cats*) — th
 
 ## By part of speech
 
-The PoS prefix says what role the word plays **now**; **-sh** says the referent of that role is a group — except on `/ɡ/`, where it marks [collective ascription](#adjectives-g). Reference-suffix choice (**-l** / **-m** / **-n** / **-r**) still follows [reference-suffix.md](reference-suffix.md).
+The PoS prefix says what role the word plays **now**; **-sh** says the referent of that role is a group — except on `/ɡ/`, where it marks [collective ascription](#adjectives-g), and on special person-role roots, where [person-role **-sh**](#person-role-sh) applies. Reference-suffix choice (**-l** / **-m** / **-n** / **-r**) still follows [reference-suffix.md](reference-suffix.md).
 
 ### Nouns (`/z/`, `/d/`, `/b/`)
 
-Natural home for **-sh**. The argument’s referent is a set: *some cats*, *those people*, *the books on the table* (as a set). `/z/`…**-sh**, `/d/`…**-sh**, and `/b/`…**-sh** share the same group-entity reading; case/role comes only from the prefix.
+Natural home for **-sh**. The argument’s referent is an associative set: *some cats*, *Sam and associates*, *the books on the table* (as a set). `/z/`…**-sh**, `/d/`…**-sh**, and `/b/`…**-sh** share the same group-entity reading; case/role comes only from the prefix.
 
 * **-lsh** / **-msh** — first mention of a discourse group of that kind (*some cats*; metaphorical group under **-m**).
 * **-nsh** — a named plural / titled group (*the Beatles*, *the Alps*).
-* **-rsh** — the group containing a prior noun mention (*them* / *those* / *that group*).
+* **-rsh** — prior noun **and associates** (*them* / *those* / *X’s crowd*).
 
 **Not noun -sh:** bare “more than one” when you only need quantity → singular noun + **`g+`**. *Every cat* / *cats bark* (generic) → **`zual` / `hual`**, not **-lsh**.
+
+### Person-role **-sh**
+<a id="person-role-sh"></a>
+
+Special pronouns ([pronouns.md](pronouns.md#special-pronouns)) keep **-sh** available, but the default is **not** uniform associative:
+
+| Form | **-sh** reading |
+|------|-----------------|
+| **`umogo…sh`** (`zumogonsh`, …) | speaker **and associates** (listener not assumed) |
+| **`ehado…sh`** (`zehadonsh`, …) | **address set** — all current addressees (plural occupancy of the listener role); **not** “you and your family” |
+| **`ana`** (`zanan`, …) | already the interlocutor set; do **not** use **-sh** for ordinary inclusive *we* (no `*zanansh` for that job) |
+| name / content **-r**…**-sh** | that person **and associates** |
+
+**Address set vs associative you.** Several people in the addressee role → **`ehado…sh`**. *You (singular) and your associates* → **name…**-sh** (or an explicit join), not **`ehado…sh`**. Inclusive *we* → **`ana`**, not **`umogo…sh`**.
+
+**Address-set resolution:** prefer everyone in this turn’s vocative cluster, plus anyone still held as addressee by context.
 
 ### Verbs (`/v/`)
 
@@ -134,7 +167,7 @@ Do **not** use **-sh**. Situative vs enduring / habitual framing is **`hual` / `
 
 Depends on subclass (see [utterance markers](language-reference.md#utterance-markers-j)):
 
-* **Vocatives** — Address a **group**: **-lsh** for kind-based group address (*hey, kids*); **-nsh** for a titled group name (*Team Alpha*); **-rsh** to call the group containing a prior addressee. *Everyone* → bare **`…ual`**, not **-lsh**.
+* **Vocatives** — Address a **group**: **-lsh** for kind-based group address (*hey, kids*); **-nsh** for a titled group name (*Team Alpha*); **-rsh** to call a prior addressee **and associates** (or resume a prior addressed group). Multi-addressee role without naming → **`jehadonsh`** ([address set](#person-role-sh)). *Everyone* → bare **`…ual`**, not **-lsh**.
 * **Interjections** — Do **not** use **-sh**. Group calls belong on vocatives or nouns. Closed [yes/no polarity](questions.md#yes-no-polarity) particles (**`jael`** / **`juel`** / …) likewise take no **-sh**.
 * **Clause force** — Do **not** use **-sh**. Force forms (`jal` / `jol` / `jel` / …) are a closed set and are not numbered.
 
@@ -156,7 +189,7 @@ Depends on subclass (see [utterance markers](language-reference.md#utterance-mar
 
 | PoS | **-sh** means… |
 |-----|----------------|
-| `/z/` `/d/` `/b/` | Group entities in that noun slot (introduce / name / resume a set) |
+| `/z/` `/d/` `/b/` | Associative group in that noun slot (introduce / name / resume anchor+associates); person-role exceptions in [person-role **-sh**](#person-role-sh) |
 | `/v/` | Event-set as discourse referent (not agreement; not mere *N times*) |
 | `/ɡ/` | **Collective** ascription (property of the set as a unit); not trait, not “more,” not host agreement |
 | `/w/` | *(not used)* |
@@ -171,13 +204,14 @@ Depends on subclass (see [utterance markers](language-reference.md#utterance-mar
 
 | Reference + **-sh** | Means… |
 |---------------------|--------|
-| **-lsh** | First mention, literal, group (or collective `/ɡ/`) |
-| **-msh** | First mention, metaphorical, group (or collective `/ɡ/`) |
+| **-lsh** | First mention, literal, associative group (or collective `/ɡ/`) |
+| **-msh** | First mention, metaphorical, associative group (or collective `/ɡ/`) |
 | **-nsh** | Named / titled group (or rare named collective `/ɡ/`) |
-| **-rsh** | Resume: group containing the prior referent (or prior collective `/ɡ/`) |
+| **-rsh** | Resume: prior referent **and associates** (or prior collective `/ɡ/`) |
 
 ## Quantity, generics, and habit (not **-sh**)
 
-- **Quantity `>1`:** digitless positive scalar **`g+`** (etc.) — [zero digit groups](numbers.md#zero-digit-groups). Different job from noun **-lsh** (group as referent). They may co-occur when both are meant (`zagadalsh g+3`), but **`g+`** does not replace indefinite group introduction.
+- **Quantity `>1`:** digitless positive scalar **`g+`** (etc.) — [zero digit groups](numbers.md#zero-digit-groups). Different job from noun **-lsh** (associative / group as referent). They may co-occur when both are meant (`zagadalsh g+3`), but **`g+`** does not replace indefinite group introduction.
 - **Generics / *every K*:** [coordination](coordination.md#universals-domains-generics) — `zual gagadal`, `zuam g-…`, habitual **`hual`**.
+- **Inclusive *we* / address set:** [pronouns](pronouns.md#clusivity) (**`ana`**, **`ehado…sh`**) — not content associative **-sh**.
 - **Do not** use **-sh** to mean *all* / *every* / *in general* / *always* / *as a character trait*.

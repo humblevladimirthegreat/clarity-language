@@ -1,6 +1,6 @@
 # Rainy evening — Pure Clarity dialogue
 
-A short three-speaker scene (~30 turns) using **only published Clarity roots** (no foreign `<>` words). Names are nativized phrasal compounds (`ROOT₁xROOT₂` + **-n**). After a name is introduced, later turns resume it with a letter **-r** pronoun (`zuzur` / `zuber` / `zamer`, …), not the full name.
+A short three-speaker scene (~30 turns) using **only published Clarity roots** (no foreign `<>` words). Names are nativized phrasal compounds (`ROOT₁xROOT₂` + **-n**). After a name is introduced, later turns resume it with a letter **-r** pronoun (`zuzur` / `zuber` / `zamer`, …), not the full name — **including for self and addressee** (prefer name pronouns over **`umogo`** / **`ehado`**). Inclusive *we* (interlocutors) uses **`ana`** (`zanan`) when membership is the talk-participants, not a name census.
 
 Each turn has: **Clarity** · **gloss** (PoS + English sense; see **[glosses.md](../glosses.md)**) · **free** English.
 
@@ -12,7 +12,7 @@ Each turn has: **Clarity** · **gloss** (PoS + English sense; see **[glosses.md]
 | B | **Ubenaxuzonun** | `ubena`×`uzone` (*hospitality*×*optimism*) | `zuber` / `duber` / `juber` … |
 | C | **Amedaxogonon** | `ameda`×`ogono` (*fellowship*×*bond*) | `zamer` / `damer` / `jamer` … |
 
-**Features touched:** vocatives; polar stance; `jol` / `jom` / `jel` / `jem` / `jum`; omissible `jal`; speaker/listener/generic/`odo`; content **-r**; phrase joins + revisers; restrictors; values; evidentiality; COMMENT; plan/predict; causation; comparatives/equatives; numbered alternatives; ability; role compound; SAME; plurality **-sh**; clause `xan`; linkers; `x#e-` / `x#e`; zero-copula; emotion compose; universality; aside span; join-act verbs.
+**Features touched:** vocatives; polar stance; `jol` / `jom` / `jel` / `jem` / `jum`; omissible `jal`; name **-r** (self / addressee / third); special **`ana`** (inclusive *we*); generic **`enu`** / next-clause **`odo`**; phrase joins + revisers; restrictors; values; evidentiality; COMMENT; plan/predict; causation; comparatives/equatives; numbered alternatives; ability; role compound; SAME; plurality **-sh**; clause `xan`; linkers; `x#e-` / `x#e`; zero-copula; emotion compose; universality; aside span; join-act verbs.
 
 ---
 
@@ -28,29 +28,29 @@ gloss: `j-fellowship-x-bond` · `j-sushi-x-coffee` · `j-uptake` · `j-greeting`
 
 *Amedaxogonon, Uzuzuxogeven! Sure — hello.*
 
-**C:** `jael. zumogon zam zehadon zal guzem.`
+**C:** `jael. zamer zam zuzur zam zuber zal guzem.`
 
-gloss: `j-yes` · `z-speaker` · `z-and.open` · `z-listener` · `z-and` · `g-happy`
+gloss: `j-yes` · `z-←Amedaxogonon` · `z-and.open` · `z-←Uzuzuxogeven` · `z-and.open` · `z-←Ubenaxuzonun` · `z-and` · `g-happy`
 
-*Yes. I and you are happy.*
+*Yes. I (C) and you (A) and you (B) are happy.*
 
-**A:** `jol dehadon dadedal dogevel dol von.`
+**A:** `jol duber dadedal dogevel dol von.`
 
-gloss: `j-question` · `d-listener` · `d-tea` · `d-coffee` · `d-or-exactly-one` · `v-choose`
+gloss: `j-question` · `d-←Ubenaxuzonun` · `d-tea` · `d-coffee` · `d-or-exactly-one` · `v-choose`
 
-*Do you choose tea or coffee — exactly one?*
+*Do you (B) choose tea or coffee — exactly one?*
 
-**B:** `jaol. zumogon dadedal ol dogevel von.`
+**B:** `jaol. zuber dadedal ol dogevel von.`
 
-gloss: `j-uptake` · `z-speaker` · `d-tea` · `instead` · `d-coffee` · `v-choose`
+gloss: `j-uptake` · `z-←Ubenaxuzonun` · `d-tea` · `instead` · `d-coffee` · `v-choose`
 
-*I'll take that. I choose tea instead of coffee.*
+*I'll take that. I (B) choose tea instead of coffee.*
 
-**C:** `xonuzul zumogon dogevel von.`
+**C:** `xonuzul zamer dogevel von.`
 
-gloss: `x-but` · `z-speaker` · `d-coffee` · `v-choose`
+gloss: `x-but` · `z-←Amedaxogonon` · `d-coffee` · `v-choose`
 
-*But I choose coffee.*
+*But I (C) choose coffee.*
 
 **A:** `xezabel zuber huhunum zarunal.`
 
@@ -58,11 +58,11 @@ gloss: `x-however` · `z-←Ubenaxuzonun` · `h-witnessed` · `z-rain`
 
 *However — that one (B), per memory — it rains.*
 
-**B:** `jael. xamalal zumogonsh howarom vawul zul.`
+**B:** `jael. xamalal zanan howarom vawul vul.`
 
-gloss: `j-yes` · `x-therefore` · `z-speaker-sh` · `h-plan` · `v-walking` · `z-not`
+gloss: `j-yes` · `x-therefore` · `z-interlocutors` · `h-plan` · `v-walking` · `v-not`
 
-*Yes. Therefore we (the group containing me) plan not to walk.*
+*Yes. Therefore we (A and B and C as interlocutors) plan not to walk.*
 
 **C:** `jom huhom zar vawul.`
 
@@ -70,23 +70,23 @@ gloss: `j-question` · `h-COMMENT` · `z-who` · `v-walking`
 
 *I wonder — who walks?*
 
-**A:** `juel. zumogon vawuxul hodoloxem.`
+**A:** `juel. zuzur vawuxul hodoloxem.`
 
-gloss: `j-no` · `z-speaker` · `v-walking-x-can't` · `h-competence-x-motive`
+gloss: `j-no` · `z-←Uzuzuxogeven` · `v-walking-x-can't` · `h-competence-x-motive`
 
-*No. I can't walk right now — for competence (motive, soft standing).*
+*No. I (A) can't walk right now — for competence (motive, soft standing).*
 
-**B:** `el zumogon hegeraxul vawul.`
+**B:** `el zuzur hegeraxul vawul.`
 
-gloss: `in-other-words` · `z-speaker` · `h-capacity-x-can't` · `v-walking`
+gloss: `in-other-words` · `z-←Uzuzuxogeven` · `h-capacity-x-can't` · `v-walking`
 
-*In other words, I lack the capacity to walk.*
+*In other words, that one (A) lacks the capacity to walk.*
 
-**C:** `x#e- zubezul g#1. zumogonsh hazedoxul.`
+**C:** `x#e- zubezul g#1. zanan hazedoxul.`
 
-gloss: `x-starting-with` · `z-problem` · `g-first` · `z-speaker-sh` · `h-pleasure-x-unmet`
+gloss: `x-starting-with` · `z-problem` · `g-first` · `z-interlocutors` · `h-pleasure-x-unmet`
 
-*Starting with: problem #1. Our group — pleasure unmet (temporary).*
+*Starting with: problem #1. We (interlocutors) — pleasure unmet (temporary).*
 
 **A:** `x#2 zegogel g#2. jem juber derade dam dadedal vogojol.`
 
@@ -94,11 +94,11 @@ gloss: `x-point-2` · `z-solution` · `g-second` · `j-request` · `j-←Ubenaxu
 
 *Point 2: solution #2. Please, you (B), cook bread and tea.*
 
-**B:** `jaol. howarom. xan zumogon dogobo von.`
+**B:** `jaol. howarom. xan zuber dogobo von.`
 
-gloss: `j-uptake` · `h-plan` · `x-and-then` · `z-speaker` · `d-book` · `v-choose`
+gloss: `j-uptake` · `h-plan` · `x-and-then` · `z-←Ubenaxuzonun` · `d-book` · `v-choose`
 
-*Sure. (I) plan (to). And then I choose a book.*
+*Sure. (I) plan (to). And then I (B) choose a book.*
 
 **C:** `jol har.`
 
@@ -112,17 +112,17 @@ gloss: `h-night` · `h-aside-x-multi` · `z-fatigue` · `x-span-close`
 
 *At night. (aside: fatigue.)*
 
-**B:** `zumogon zehadon zel guzem.`
+**B:** `zuber zamer zel guzem.`
 
-gloss: `z-speaker` · `z-listener` · `z-rank/more` · `g-happy`
+gloss: `z-←Ubenaxuzonun` · `z-←Amedaxogonon` · `z-rank/more` · `g-happy`
 
-*I am happier than you.*
+*I (B) am happier than you (C).*
 
-**C:** `juol. zumogon zehadon zael guzem.`
+**C:** `juol. zamer zuber zael guzem.`
 
-gloss: `j-not-that` · `z-speaker` · `z-listener` · `z-as…as` · `g-happy`
+gloss: `j-not-that` · `z-←Amedaxogonon` · `z-←Ubenaxuzonun` · `z-as…as` · `g-happy`
 
-*Not that — other framings are fine. I and you are as happy (as each other).*
+*Not that — other framings are fine. I (C) and you (B) are as happy (as each other).*
 
 **A:** `al zamer gogojol.`
 
@@ -130,11 +130,11 @@ gloss: `additionally` · `z-←Amedaxogonon` · `g-cook`
 
 *Additionally, that one (C) is a cook.*
 
-**C:** `jaem. jam zumogon gogojom.`
+**C:** `jaem. jam zamer gogojom.`
 
-gloss: `j-yes` · `j-statement` · `z-speaker` · `g-cook`
+gloss: `j-yes` · `j-statement` · `z-←Amedaxogonon` · `g-cook`
 
-*Soft yes. Softly: I am a cook.*
+*Soft yes. Softly: I (C) am a cook.*
 
 **B:** `herarem zenun dohuzem varural.`
 
@@ -154,11 +154,11 @@ gloss: `z-←someone` · `rather` · `z-agent-x-dialogue`
 
 *That person. Rather: that speaker (agent of speech).*
 
-**C:** `daxal zumogon dadedal von xuxul.`
+**C:** `daxal zuber dadedal von xuxul.`
 
-gloss: `d-cite-x-multi` · `z-speaker` · `d-tea` · `v-choose` · `x-span-close`
+gloss: `d-cite-x-multi` · `z-←Ubenaxuzonun` · `d-tea` · `v-choose` · `x-span-close`
 
-*Cite: “I choose tea.”*
+*Cite: “I (B) choose tea.”*
 
 **A:** `jael.`
 
@@ -166,11 +166,11 @@ gloss: `j-yes`
 
 *Yes. / True.*
 
-**B:** `jel dehadonsh dabolo von.`
+**B:** `jel zuzur zamer zal dabolo von.`
 
-gloss: `j-imperative` · `d-listener-sh` · `d-play` · `v-choose`
+gloss: `j-imperative` · `z-←Uzuzuxogeven` · `z-←Amedaxogonon` · `z-and` · `d-play` · `v-choose`
 
-*(You-group,) choose play!*
+*(You A and you C,) choose play!*
 
 **C:** `jum vawul. hodoloxon.`
 
@@ -178,17 +178,17 @@ gloss: `j-prohibition` · `v-walking` · `h-competence-x-ought`
 
 *Please don’t walk. (Ought: competence — commit force.)*
 
-**A:** `jem zumogonsh dohuzem vazudal horodol bodol zarunal.`
+**A:** `jem zuzur zuber zamer zal dohuzem vazudal horodol bodol zarunal.`
 
-gloss: `j-request` · `z-speaker-sh` · `d-home` · `v-standing` · `h-if` · `b-next-clause` · `z-rain`
+gloss: `j-request` · `z-←Uzuzuxogeven` · `z-←Ubenaxuzonun` · `z-←Amedaxogonon` · `z-and` · `d-home` · `v-standing` · `h-if` · `b-next-clause` · `z-rain`
 
-*Please, let’s stay standing at home if it rains.*
+*Please, let’s (A and B and C) stay standing at home if it rains.*
 
-**B:** `x#e zogalol g#3. zumogonsh hazedoxal hojum habobom.`
+**B:** `x#e zogalol g#3. zuzur zuber zamer zal hazedoxal hojum habobom.`
 
-gloss: `x-finally` · `z-goal` · `g-third` · `z-speaker-sh` · `h-pleasure-x-met` · `h-flow` · `h-INTERNAL`
+gloss: `x-finally` · `z-goal` · `g-third` · `z-←Uzuzuxogeven` · `z-←Ubenaxuzonun` · `z-←Amedaxogonon` · `z-and` · `h-pleasure-x-met` · `h-flow` · `h-INTERNAL`
 
-*Finally: goal #3. We — pleasure met, medium activation, internal locus.*
+*Finally: goal #3. We (A and B and C) — pleasure met, medium activation, internal locus.*
 
 **C:** `hewonol harunal hual zenun vawul zul.`
 
@@ -196,17 +196,17 @@ gloss: `h-COMMON` · `h-rain` · `h-always` · `z-someone` · `v-walking` · `z-
 
 *Usually, when it rains, a person never walks.*
 
-**A:** `xamalal zumogon vezebel dodol zuber guzem.`
+**A:** `xamalal zuzur vezebel dodol zuber guzem.`
 
-gloss: `x-therefore` · `z-speaker` · `v-dialogue` · `d-next-clause` · `z-←Ubenaxuzonun` · `g-happy`
+gloss: `x-therefore` · `z-←Uzuzuxogeven` · `v-dialogue` · `d-next-clause` · `z-←Ubenaxuzonun` · `g-happy`
 
-*Therefore I say that that one (B) is happy.*
+*Therefore I (A) say that that one (B) is happy.*
 
-**B:** `jaol. zuber gogunol bumogon.`
+**B:** `jaol. zaxezeber gogunol buber.`
 
-gloss: `j-uptake` · `z-←Ubenaxuzonun` · `g-SAME` · `b-speaker`
+gloss: `j-uptake` · `z-agent-x-dialogue` · `g-SAME` · `b-←Ubenaxuzonun`
 
-*Sure. That one (B) is the same as me (speaker).*
+*Sure. That speaker (agent of speech) is the same as me (B).*
 
 **C:** `jalum. zuzur zam zuber zam zamer zal gohuzem.`
 
@@ -235,6 +235,7 @@ gloss: `j-amusement` · `z-←Uzuzuxogeven` · `z-and.open` · `z-←Ubenaxuzonu
 | `azuda` | standing |
 | `ezebe` | speech; *dialogue* (metaphorical) |
 | `enu` | someone (generic person) |
+| `ana` | interlocutors (inclusive *we*) |
+| `odo` | next-clause |
 | `alu` | laugh; *amusement* (metaphorical) |
-| `umogo` / `ehado` | microphone / headphones; *speaker* / *listener* (special) |
 | `uhunu` / `erare` / `uho` | fishing / ear / thought; *witnessed* / *hearsay* / *COMMENT* (overlays) |

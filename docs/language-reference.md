@@ -295,11 +295,11 @@ Reference suffix grammar (**-l** / **-m** / **-n** / **-r**) lives in **[referen
 
 # Plurality
 
-Plural grammar (**-sh** after the reference suffix: group referent on nouns / event-sets / vocatives; **collective** ascription on `/ɡ/`; unused on `/w/` `/h/` `/x/` and number words) lives in **[plurality.md](plurality.md)**. Generics and *every K* use invert **ua** with SHARED kind (`zual gagadal`), not **-sh** — [coordination.md](coordination.md#universals-domains-generics). Habitual / characterizing pattern uses **`hual`**, not adjective **-sh**. Exceptionlessness warrant ([COMMON](special-vocabulary.md#universality) `ewono` default, …) stacks as mood `/h/`, separate from the domain fence.
+Plural grammar (**-sh** after the reference suffix: [associative](plurality.md#associative) *anchor and associates* on nouns / event-sets / vocatives; **listener…sh** = [address set](plurality.md#person-role-sh); **collective** ascription on `/ɡ/`; unused on `/w/` `/h/` `/x/` and number words) lives in **[plurality.md](plurality.md)**. Generics and *every K* use invert **ua** with SHARED kind (`zual gagadal`), not **-sh** — [coordination.md](coordination.md#universals-domains-generics). Habitual / characterizing pattern uses **`hual`**, not adjective **-sh**. Exceptionlessness warrant ([COMMON](special-vocabulary.md#universality) `ewono` default, …) stacks as mood `/h/`, separate from the domain fence.
 
 # Pronouns
 
-Pronoun grammar (anaphoric **-r** forms, special pronouns) lives in **[pronouns.md](pronouns.md)**.
+Pronoun grammar (anaphoric **-r** forms; special **`umogo`** / **`ehado`** / **`ana`** / **`enu`** / **`odo`** — inclusive *we* = **`ana`**, [clusivity](pronouns.md#clusivity)) lives in **[pronouns.md](pronouns.md)**.
 
 # Glosses
 
