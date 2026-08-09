@@ -4,7 +4,7 @@
 
 This page is the source of truth for **causal and condition** claims: how Clarity encodes *A leads to B*, *A is enough for B*, and *B does not happen without A* — without a dedicated “cause arrow” word and without resurrecting older generalization verbs that put the **justification** in the subject slot.
 
-Join **mechanics** stay in **[coordination.md](coordination.md)**. Join-relations stay in **[special-vocabulary.md § Join-relations](special-vocabulary.md#join-relations)**. Clause subordination (*because* / *if* / *iff*) stays in **[language-reference.md § Dependent clauses](language-reference.md#dependent-clauses)** — this page records the **`IF`** vs **`IFF`** split and lexicon roots ([below](#if-vs-iff)). Preference dressed as a law stacks **[values](values.md)** (`xo` / `xe`). How you know stays shared **[evidentiality](special-vocabulary.md#evidentiality)** `/h/`.
+Join **mechanics** stay in **[coordination.md](coordination.md)**. Join-relations stay in **[special-vocabulary.md § Join-relations](special-vocabulary.md#join-relations)**. Clause subordination (*because* / *if* / *iff*) stays in **[core.md § Dependent clauses](core.md#dependent-clauses)** — this page records the **`IF`** vs **`IFF`** split and lexicon roots ([below](#if-vs-iff)). Preference dressed as a law stacks **[values](values.md)** (`xo` / `xe`). How you know stays shared **[evidentiality](special-vocabulary.md#evidentiality)** `/h/`.
 
 Causal “laws” should show their warrant (definition, pattern, desire, source, prior premise) via [evidentiality](special-vocabulary.md#evidentiality) and [universality](special-vocabulary.md#universality) — not via a stronger join.
 
@@ -108,7 +108,7 @@ When the antecedent and/or consequent is a **full clause**, do **not** treat cla
 matrix …  horodol / heluvel / hurugul  bodol   [dependent sentence]
 ```
 
-**`odo`** ([next-clause pronoun](pronouns.md#special-pronouns)) is matrix-final; the dependent is a full `/j/`… sentence — [dependent clauses](language-reference.md#dependent-clauses). Lexicon relation roots name *if* / *iff* / *because* (and later *although* / …); open-sufficient vs necessary nudges then live on **which relation** you choose and on restrictors (`hal`, …), not on stuffing a clause into phrase `aom`.
+**`odo`** ([next-clause pronoun](pronouns.md#special-pronouns)) is matrix-final; the dependent is a full `/j/`… sentence — [dependent clauses](core.md#dependent-clauses). Lexicon relation roots name *if* / *iff* / *because* (and later *although* / …); open-sufficient vs necessary nudges then live on **which relation** you choose and on restrictors (`hal`, …), not on stuffing a clause into phrase `aom`.
 
 ### `IF` vs `IFF`
 <a id="if-vs-iff"></a>
@@ -174,7 +174,7 @@ Particular episode (*this delay was caused by…*) vs standing law (*clouds for 
 | *always* / *every* / *never* (exceptionlessness) | domain (`hual` / …) + [universality](special-vocabulary.md#universality) mood |
 | *because* / *if* + clause | **`hurugul bodol`** / **`horodol bodol`** — not `xaom`-as-cause |
 | *if and only if* / *iff* | **`heluvel bodol`** — not bare **`horodol`** ([above](#if-vs-iff)) |
-| *therefore* (discourse) | **`xamalal`** — [discourse markers](language-reference.md#discourse-markers-x); not this page’s morphology |
+| *therefore* (discourse) | **`xamalal`** — [discourse markers](core.md#discourse-markers-x); not this page’s morphology |
 
 ## Constraints
 <a id="constraints"></a>
@@ -193,7 +193,7 @@ Particular episode (*this delay was caused by…*) vs standing law (*clouds for 
 - Inclusive focus **`…aom` / `…aol`**: [coordination.md § Focus](coordination.md#focus-phrase)
 - Join-relations **`haon` / `huan` / `hon`**: [special-vocabulary.md](special-vocabulary.md#join-relations)
 - Restrictors **`hal` / `hual`**: [restrictors.md](restrictors.md)
-- Dependent clauses / **`odo`**: [language-reference.md](language-reference.md#dependent-clauses)
+- Dependent clauses / **`odo`**: [core.md](core.md#dependent-clauses)
 - Values prescription / motive: [values.md](values.md)
 - Evidentiality (channels / *believe* / causal warrant): [special-vocabulary.md § Evidentiality](special-vocabulary.md#evidentiality)
 - Universality warrant: [special-vocabulary.md § Universality](special-vocabulary.md#universality)

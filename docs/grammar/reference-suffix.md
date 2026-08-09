@@ -8,10 +8,10 @@ Every content word ends with a **reference suffix** — one of four final conson
 [PoS prefix] + [l?] + root (+ x + root …) + reference suffix + [sh?]
 ```
 
-Written as **one token with no hyphen** after the PoS letter (`zumogon`, not `z-umogo`). Foreign roots: `PoS<…>ENDING` (e.g. `d<english>l`). Opaque spans: no ending after `>` (`d<sushi>`). See **[orthography](language-reference.md#orthography)**.
+Written as **one token with no hyphen** after the PoS letter (`zumogon`, not `z-umogo`). Foreign roots: `PoS<…>ENDING` (e.g. `d<english>l`). Opaque spans: no ending after `>` (`d<sushi>`). See **[orthography](core.md#orthography)**.
 
-1. **PoS prefix** — role in the clause (see [language-reference.md](language-reference.md#part-of-speech-prefixes)).
-2. **Left-bound `l`** — optional; **adjectives only** (`/ɡ/` → **`gl-`**). Marks [left-bound attachment](language-reference.md#left-bound-adjectives) (adjective before host). Not the word-final reference suffix **-l**.
+1. **PoS prefix** — role in the clause (see [core.md](core.md#part-of-speech-prefixes)).
+2. **Left-bound `l`** — optional; **adjectives only** (`/ɡ/` → **`gl-`**). Marks [left-bound attachment](core.md#left-bound-adjectives) (adjective before host). Not the word-final reference suffix **-l**.
 3. **Root(s)** — `V(CV)+`; compound roots join with **x** (see [phonology.md](phonology.md#phonotactics)).
 4. **Reference suffix** — **-l**, **-m**, **-n**, or **-r** (below).
 5. **Plural -sh** — optional; marks an **associative group** (or address-set / collective `/ɡ/`), after the reference suffix — see [plurality.md](plurality.md).
@@ -74,11 +74,11 @@ A **named circumstance, channel, or standard** framing the clause — official s
 
 ### Utterance markers (`/j/`)
 
-Depends on the subclass (see [utterance markers](language-reference.md#utterance-markers-j)):
+Depends on the subclass (see [utterance markers](core.md#utterance-markers-j)):
 
 * **Vocatives** — Natural home for **-n**. Address someone or something by name: *Sam!*, *Paris!* (as a city name). Kind-based address (*everyone*) stays **-l**; a titled group label (*Team Alpha*) takes **-n**. Prefer names here over speaker/listener special pronouns when a name exists.
 * **Interjections** — Mostly **-l** / **-m** (*wow*, *hello*). Use **-n** when the shout *is* a named formula or conventional call: **[Mazel tov]**, **[Amen]**, **[Bingo]** as the game’s proper call, branded catchphrases. Aligns with [number `/j/`…**-n**](numbers.md#number-as-interjection-by-marker) (conventional call name). Closed [yes/no polarity](questions.md#yes-no-polarity) particles (**`jael`** / **`juel`** / **`jaol`** / **`juol`** / **`jual`**, and soft **-m** twins) use **-l** / **-m** only — not **-n** / **-r**.
-* **Clause force** — Do **not** use **-n** or **-r**. Force forms are the closed **`jal` / `jam` / `jol` / `jom` / `jel` / `jem` / `jul` / `jum`** set ([clause force](language-reference.md#clause-force)); they are not names.
+* **Clause force** — Do **not** use **-n** or **-r**. Force forms are the closed **`jal` / `jam` / `jol` / `jom` / `jel` / `jem` / `jul` / `jum`** set ([clause force](core.md#clause-force)); they are not names.
 
 ### Discourse markers (`/x/`)
 

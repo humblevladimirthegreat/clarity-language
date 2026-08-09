@@ -29,7 +29,7 @@ Do **not** write `h<quickly>l h<quietly>l ham` for manner *and*; that reads as r
 
 Each conjunct is a **simple** `/h/` or `/w/` content word, or a **complex** unit (`/h/`+`/b/` / contiguous `/w/` material the lexicon allows). Matching role prefix on every conjunct head and on the join.
 
-**Not in this series:** next-clause *when* / *if* subordination — that stays ordinary complex `/h/` + `/b/` [next-clause pronoun](pronouns.md#special-pronouns) ([language-reference.md](language-reference.md#dependent-clauses)). Circumstance fences list **phrase** circumstances, not dependent sentences.
+**Not in this series:** next-clause *when* / *if* subordination — that stays ordinary complex `/h/` + `/b/` [next-clause pronoun](pronouns.md#special-pronouns) ([core.md](core.md#dependent-clauses)). Circumstance fences list **phrase** circumstances, not dependent sentences.
 
 ## Series glosses (`/h/`; `/w/` exact parallel on the adjective)
 

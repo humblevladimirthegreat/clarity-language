@@ -90,11 +90,11 @@ Published strings share one phonological root, but **literal**, **metaphorical**
 | `huhunum` | `h-witnessed` | `h-uhunu(fishing→witnessed)-m` |
 | `gohuzem` | `g-home` | `g-ohuze(house→home)-m` |
 
-Same English label for `zumogom` and `zumogon` is fine: both are the *speaker* sense-root; the written ending is recoverable from the Clarity line and from [reference-suffix.md](../reference-suffix.md). The gloss’s job is the **sense**, not a second orthography.
+Same English label for `zumogom` and `zumogon` is fine: both are the *speaker* sense-root; the written ending is recoverable from the Clarity line and from [reference-suffix.md](../grammar/reference-suffix.md). The gloss’s job is the **sense**, not a second orthography.
 
-**Closed overlays** ([sense-form](../special-vocabulary.md#sense-form)): gloss the overlay reading for that `(sense_form, pos)`, not the ordinary lexicon literal. Prefer short stable labels (`witnessed`, `COMMENT`, `SAME`, `plan`, …).
+**Closed overlays** ([sense-form](../grammar/special-vocabulary.md#sense-form)): gloss the overlay reading for that `(sense_form, pos)`, not the ordinary lexicon literal. Prefer short stable labels (`witnessed`, `COMMENT`, `SAME`, `plan`, …).
 
-**Special pronouns** ([pronouns.md](../pronouns.md)): `zumogon` / `zehadon` / `zanan` / `zenun` / `…odo…` → `z-speaker` / `z-listener` / `z-interlocutors` / `z-someone` / `…-next-clause` — never emoji etymology.
+**Special pronouns** ([pronouns.md](../grammar/pronouns.md)): `zumogon` / `zehadon` / `zanan` / `zenun` / `…odo…` → `z-speaker` / `z-listener` / `z-interlocutors` / `z-someone` / `…-next-clause` — never emoji etymology.
 
 ## Morph gloss format
 
@@ -146,7 +146,7 @@ Do not write `z-←microphone` for a speaker antecedent.
 
 ### Mid-word `x` families
 
-Gloss each piece by **family** ([x-compounds.md](../x-compounds.md)) — English only; drop sense-picking endings:
+Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) — English only; drop sense-picking endings:
 
 | Family | Example Clarity | Morph gloss |
 |--------|-----------------|-------------|
@@ -289,9 +289,9 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 
 ## See also
 
-- [reference-suffix.md](../reference-suffix.md) — **-l** / **-m** / **-n** / **-r**
-- [special-vocabulary.md](../special-vocabulary.md#sense-form) — overlays and closed labels
-- [pronouns.md](../pronouns.md) — **-r** and special pronouns
-- [x-compounds.md](../x-compounds.md) — mid-word `x` families
-- [language-reference.md](../language-reference.md#orthography) — written orthography
-- [values.md](../values.md) — need stances and endings (morph keeps them; loose free usually drops channel / standing / force / changeability)
+- [reference-suffix.md](../grammar/reference-suffix.md) — **-l** / **-m** / **-n** / **-r**
+- [special-vocabulary.md](../grammar/special-vocabulary.md#sense-form) — overlays and closed labels
+- [pronouns.md](../grammar/pronouns.md) — **-r** and special pronouns
+- [x-compounds.md](../grammar/x-compounds.md) — mid-word `x` families
+- [core.md](../grammar/core.md#orthography) — written orthography
+- [values.md](../grammar/values.md) — need stances and endings (morph keeps them; loose free usually drops channel / standing / force / changeability)

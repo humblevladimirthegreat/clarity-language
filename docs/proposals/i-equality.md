@@ -1,7 +1,7 @@
 # Proposal: atomic **`i`** for equality; **`ae`** → sequence
 
 **Status:** REJECTED. The new ae unary and nullary forms weren't useful enough. The ai and oi stacks were also useless.  
-**Phonology of `i`:** TBD — not yet in the [vowel inventory](../phonology.md) (`a` `e` `o` `u` only; singing constraint against fully closed vowels). Orthography **`i`** is a placeholder until a singable quality (or alternate letter) is chosen.
+**Phonology of `i`:** TBD — not yet in the [vowel inventory](../grammar/phonology.md) (`a` `e` `o` `u` only; singing constraint against fully closed vowels). Orthography **`i`** is a placeholder until a singable quality (or alternate letter) is chosen.
 
 ## Motivation
 
@@ -12,7 +12,7 @@ Equality / tie / equative currently lives on stacked **`ae`** (*corank* = **a**+
 | **`i`** (atomic) | **equality** — equal rank / tie; + SHARED scale → equative (*as … as*) |
 | **`ae`** (**a**+**e**) | **sequence** — all hold, spoken order = *then* (steps / agenda / procedure); **not** set, **not** preference, **not** scalar rank |
 
-Identity (*Clark is Superman*) stays [**SAME**](../predication.md#identity) — not **`i`**.
+Identity (*Clark is Superman*) stays [**SAME**](../grammar/predication.md#identity) — not **`i`**.
 
 ## Proposed join-series shape
 
@@ -130,7 +130,7 @@ SHARED scale under bare/focus **`i`**-series stays **non-equative** (equative ne
 
 **SHARED under `ae`:** like **`a`** — distributive / bundle description; **never** scale-as-equative (that’s **`i`**).
 
-## Summary of changes to [coordination.md](../coordination.md)
+## Summary of changes to [coordination.md](../grammar/coordination.md)
 
 - Add equality family **`i` / `ai` / `oi` / `ui`**; move **`ae`** out of rank/equality into its **own sequence family** (not set).
 - Series table: *corank* → drop; add *equal* / *coequal* / *choicequal* / *counterequal* / *sequence*.
@@ -138,7 +138,7 @@ SHARED scale under bare/focus **`i`**-series stays **non-equative** (equative ne
 - Equative / inequative pointers → **`i`** / **`ui`** + SHARED scale.
 - **-r:** optional on atomic **`i`** only among the new forms; stacks stay **-r**-less.
 - Examples and cross-links retarget tie/equative off **`ae`** onto **`i`**; **`ae`** demos become *then*-sequences.
-- Downstream: [comparatives.md](../comparatives.md), [restrictors.md](../restrictors.md), [phonology.md](../phonology.md), [language-reference.md](../language-reference.md), [predication.md](../predication.md), [questions.md](../questions.md), [AGENTS.md](../../AGENTS.md).
+- Downstream: [comparatives.md](../grammar/comparatives.md), [restrictors.md](../grammar/restrictors.md), [phonology.md](../grammar/phonology.md), [core.md](../grammar/core.md), [predication.md](../grammar/predication.md), [questions.md](../grammar/questions.md), [AGENTS.md](../../AGENTS.md).
 
 ## Open questions
 
@@ -151,4 +151,4 @@ SHARED scale under bare/focus **`i`**-series stays **non-equative** (equative ne
 
 ## Acceptance
 
-Adopt by folding this into [coordination.md](../coordination.md) (and downstream pages), choosing phonology, then removing the TODO line for “another vowel for equality.”
+Adopt by folding this into [coordination.md](../grammar/coordination.md) (and downstream pages), choosing phonology, then removing the TODO line for “another vowel for equality.”

@@ -2,7 +2,7 @@
 
 This page is the source of truth for **scalar comparison**: *more … than*, *the …-est*, *as … as*, pointers for measured differentials (*two inches taller*), and **judgment benchmarks** (*worse than Average|Typical|Mine|Social|Professional|Everyone* — **`zonugon`** / **`zaheman`** / **`zumogoxrawon`** / **`zulohun`** / **`zaloban`** / **`zuan`**). Fence join vowels, endings, and SHARED placement are defined in [coordination.md](coordination.md); this page says when those forms mean comparison rather than ordinary ranking or bundle description.
 
-PoS prefixes: [language-reference.md](language-reference.md). Scale adjectives are ordinary `/ɡ/` (lexicon-marked as **gradable / scalar**). Absolute (non-comparative) use stays unfenced: `z<Sam>n g<big>l` = *Sam is big* ([zero-copula](predication.md#zero-copula)). Kind / role classification and referent identity: **[predication.md](predication.md)** — not this page’s equative `ae`.
+PoS prefixes: [core.md](core.md). Scale adjectives are ordinary `/ɡ/` (lexicon-marked as **gradable / scalar**). Absolute (non-comparative) use stays unfenced: `z<Sam>n g<big>l` = *Sam is big* ([zero-copula](predication.md#zero-copula)). Kind / role classification and referent identity: **[predication.md](predication.md)** — not this page’s equative `ae`.
 
 ## Overview
 

@@ -12,7 +12,7 @@ Ask in order. Prefer the **earlier** band when a concept sits on a boundary and 
 
 1. **Usable after one short explanation?**  
    Can someone use it in ordinary dialogue after roughly one paragraph and a couple of examples (and at most a second of thought once practiced)?  
-   If yes → **beginner** (or at least not advanced). Aligns with the language’s [easy-to-use feature criterion](../introduction.md#criterion-for-features).
+   If yes → **beginner** (or at least not advanced). Aligns with the language’s [easy-to-use feature criterion](../grammar/introduction.md#criterion-for-features).
 
 2. **Does it depend on another subsystem already being fluent?**  
    If the form only makes sense after joins, numbers, values, spans, etc. are already comfortable → at least **intermediate**.  
@@ -30,8 +30,8 @@ Ask in order. Prefer the **earlier** band when a concept sits on a boundary and 
 
 ## Cross-doc path
 
-1. Read every **`docs/grammar/`** doc’s **Beginner** sections (start from [introduction.md](../introduction.md) for orientation, then [language-reference.md](../language-reference.md) **Beginner** for core sentences, then the other peers in that folder; exact order can be listed here once more docs carry section tags — paths become `../grammar/…` after Phase 0 of the [migration](migration-grammar-docs.md)).
-2. Then every **Intermediate** section (including [language-reference.md Intermediate](../language-reference.md#intermediate)).
+1. Read every **`docs/grammar/`** doc’s **Beginner** sections (start from [introduction.md](../grammar/introduction.md) for orientation, then [core.md](../grammar/core.md) **Beginner** for core sentences, then the other peers in that folder; exact order can be listed here once more docs carry section tags).
+2. Then every **Intermediate** section (including [core.md Intermediate](../grammar/core.md#intermediate)).
 3. Then every **Advanced** section.
 
-[language-reference.md](../language-reference.md) is the first grammar page with **Beginner** / **Intermediate** / **Advanced** bands; other `grammar/` docs still need the same pass.
+[core.md](../grammar/core.md) is the first grammar page with **Beginner** / **Intermediate** / **Advanced** bands; other `grammar/` docs still need the same pass ([migration](migration-grammar-docs.md)).

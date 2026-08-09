@@ -1,6 +1,6 @@
 # Introduction to Clarity
 
-Why the language exists, how the grammar supports that, how to read the docs, and what bars new features must meet. Core clause grammar starts in **[language-reference.md](language-reference.md)**.
+Why the language exists, how the grammar supports that, how to read the docs, and what bars new features must meet. Core clause grammar starts in **[core.md](core.md)**.
 
 ## Purpose
 
@@ -41,9 +41,9 @@ Clarity keeps three kinds of clarity in ordinary speech:
 
 ## How to learn from these docs
 
-Grammar pages use **beginner** / **intermediate** / **advanced** sections so you can finish all beginner material across docs before intermediate, then advanced. Rubric: **[learning-levels.md](meta/learning-levels.md)**. Prose and example style: **[grammar-docs.md](meta/grammar-docs.md)**.
+Grammar pages use **Beginner** / **Intermediate** / **Advanced** sections so you can finish all Beginner material across this set before Intermediate, then Advanced.
 
-Start with [language-reference.md](language-reference.md) (core sentence grammar), then Beginner sections in the other grammar docs under `docs/`. Orientation on this page is not a learning band.
+Start with [core.md](core.md) (core sentence grammar), then Beginner sections in the other grammar pages. Orientation on this page is not a learning band.
 
 ## Criterion for features
 <a id="criterion-for-features"></a>
@@ -54,7 +54,7 @@ New language features should meet these bars:
 
 * **Addresses a common problem.** Targets biases or friction that show up for most people. Rare edge cases do not justify heavy machinery.
 
-* **Easy to use.** Explainable in roughly one paragraph plus a couple of examples; usable in sentences with at most about one extra second of thought after practice. Same bar guides how grammar sections are written ([grammar-docs.md](meta/grammar-docs.md)).
+* **Easy to use.** Explainable in roughly one paragraph plus a couple of examples; usable in sentences with at most about one extra second of thought after practice. Same bar guides how grammar sections are written.
 
 * **Avoids shame.** No option should read as the socially “correct” default. Each choice has situations where it belongs.
 

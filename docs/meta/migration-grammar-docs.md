@@ -1,10 +1,10 @@
 # Migration: grammar-docs + learning-levels for `docs/grammar/`
 
-Plan to (1) move learner grammar pages into **`docs/grammar/`**, (2) rename the core sentence page to **`core.md`**, and (3) bring every file in that folder in line with [grammar-docs.md](grammar-docs.md) and [learning-levels.md](learning-levels.md).
+Plan to bring every file in **`docs/grammar/`** in line with [grammar-docs.md](grammar-docs.md) and [learning-levels.md](learning-levels.md).
 
-**Done so far:** [language-reference.md](../language-reference.md) (still at `docs/` top level) already uses the page skeleton (title + job, prerequisites, `## Beginner` / `## Intermediate` / `## Advanced`, teach-first sections, mnemonics, plain-language leads).
+**Phase 0 done:** all former top-level `docs/*.md` live under `docs/grammar/`; core sentence page is [core.md](../grammar/core.md); repo pointers updated; grammar pages no longer cite `meta/` / `data/` / other folders.
 
-**Not done:** folder move + rename, strip out-of-folder mentions from grammar pages, band/restyle the rest of the grammar set, update repo pointers.
+**Still to do:** band/restyle the rest of the grammar set (Phases 1–3).
 
 ## Scope (read this first)
 
@@ -27,7 +27,7 @@ Plan to (1) move learner grammar pages into **`docs/grammar/`**, (2) rename the 
 
 1. **`git mv`** every current top-level `docs/*.md` into `docs/grammar/`, and **rename** `language-reference.md` → `core.md` (title may become “Clarity core grammar” or similar; keep stable section anchors).
 2. **Strip** from every `grammar/` page any links or mentions of folders outside `grammar/` (including today’s `meta/learning-levels` / `meta/grammar-docs` lines on the core page).
-3. **Band** every grammar page that teaches morphology/phonology with `## Beginner` / `## Intermediate` / `## Advanced` (and `<a id="beginner">` etc. where useful). Exception: [introduction.md](../introduction.md) stays orientation + feature criteria — **not** a learning band — but still lives in `grammar/` and must obey the no-out-of-folder rule.
+3. **Band** every grammar page that teaches morphology/phonology with `## Beginner` / `## Intermediate` / `## Advanced` (and `<a id="beginner">` etc. where useful). Exception: [introduction.md](../grammar/introduction.md) stays orientation + feature criteria — **not** a learning band — but still lives in `grammar/` and must obey the no-out-of-folder rule.
 4. **Restyle** each banded page to the [grammar-docs](grammar-docs.md) skeleton and voice.
 5. **Publish a cross-doc path** in [learning-levels.md](learning-levels.md) once enough pages are banded (exact Beginner reading order among `grammar/` files).
 
@@ -52,7 +52,7 @@ Do this **first** (one mechanical commit) so later page edits do not thrash path
 ```
 docs/
   grammar/          ← all former top-level docs/*.md
-    core.md         ← was language-reference.md
+    core.md         ← was core.md
     introduction.md
     phonology.md
     …
@@ -65,21 +65,21 @@ docs/
 
 1. `mkdir -p docs/grammar`
 2. `git mv` **every** current top-level file `docs/*.md` into `docs/grammar/` (today: `introduction`, `language-reference`, `phonology`, `reference-suffix`, `pronouns`, `plurality`, `questions`, `predication`, `revisers`, `restrictors`, `coordination`, `spans`, `numbers`, `comparatives`, `causation`, `values`, `special-vocabulary`, `x-compounds`, and any other top-level `.md` present at migration time). Leave `meta/`, `examples/`, and `proposals/` where they are.
-3. `git mv docs/grammar/language-reference.md docs/grammar/core.md`
+3. `git mv docs/grammar/core.md docs/grammar/core.md`
 4. Adjust `core.md` H1 / one-line job if needed (“core sentence grammar”, not “language reference”).
 5. **Repo-wide link sweep** (outside `grammar/` and inside):
-   - Replace `language-reference.md` → `core.md` (or `grammar/core.md` from outside the folder).
+   - Replace `core.md` → `core.md` (or `grammar/core.md` from outside the folder).
    - Prefix former top-level doc links with `grammar/` when linking from `AGENTS.md`, `README.md`, `TODO.md`, `docs/meta/*`, `docs/examples/*`, `docs/proposals/*`.
    - Fix relative paths between peers now living under `grammar/` (many were same-directory already and stay same-directory).
 6. **Inside every `grammar/` file:** remove links and prose that mention `meta/`, `examples/`, `proposals/`, `data/`, or other out-of-folder paths. On `core.md` specifically, drop prerequisite lines that point at learning-levels / grammar-docs; keep only peer grammar prerequisites (e.g. `reference-suffix.md`, `pronouns.md`) and/or a short in-page note that levels are Beginner → Intermediate → Advanced without naming the meta files.
 7. Prefer link text like “core grammar” / `core.md` over “language reference”.
-8. Default: **no stub** at old `docs/language-reference.md` or old top-level paths (no redirect trails for learners).
+8. Default: **no stub** at old `docs/core.md` or old top-level paths (no redirect trails for learners).
 9. Run `npm run lint:md` and fix broken anchors.
 
 **Acceptance:**
 
 - No `docs/*.md` left at the top level of `docs/` (only subfolders + whatever non-markdown assets belong there).
-- Zero in-repo references to `language-reference.md` (except historical notes in this plan).
+- Zero in-repo references to `core.md` (except historical notes in this plan).
 - Zero links from `docs/grammar/**` to `meta/`, `examples/`, `proposals/`, `data/`, or repo-root docs.
 - `core.md` still has Beginner / Intermediate / Advanced; lint passes.
 
@@ -163,7 +163,7 @@ Keep the list short; link to each doc’s `#beginner` (or equivalent).
 
 ## Tracking
 
-- [ ] Phase 0: `docs/grammar/` move + `core.md` rename + link sweep + strip out-of-folder mentions + `lint:md`
+- [x] Phase 0: `docs/grammar/` move + `core.md` rename + link sweep + strip out-of-folder mentions + `lint:md`
 - [ ] `reference-suffix.md`
 - [ ] `pronouns.md`
 - [ ] `plurality.md`

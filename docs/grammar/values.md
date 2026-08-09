@@ -28,7 +28,7 @@ Parser cue: restrictor joins are PoS + join-vowel + **-l** / **-m** / **-r** (`h
 ## Need inventory
 <a id="need-inventory"></a>
 
-Closed set of six needs. Senses are fixed; lexicon roots are published ([lexicon-published.csv](../data/lexicon-published.csv)). Ordinary content PoS stays available (`zobolal` *a ballot box*; `vuzehul` *to defend*); under `/h/` / `/w/` value morphology, the need reading wins.
+Closed set of six needs. Senses are fixed; lexicon roots are published. Ordinary content PoS stays available (`zobolal` *a ballot box*; `vuzehul` *to defend*); under `/h/` / `/w/` value morphology, the need reading wins.
 
 | Sense | Lexicon root | Metaphor | Gloss |
 |-------|--------------|----------|--------|

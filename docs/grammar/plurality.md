@@ -8,7 +8,7 @@ Plurality is marked by an optional suffix **-sh** after the [reference suffix](r
 [PoS prefix] + root (+ x + root ...) + reference suffix + (optional -sh)
 ```
 
-1. **PoS prefix** — role in the clause (see [language-reference.md](language-reference.md#part-of-speech-prefixes)).
+1. **PoS prefix** — role in the clause (see [core.md](core.md#part-of-speech-prefixes)).
 2. **Root(s)** — `V(CV)+`; compound roots join with **x** (see [phonology.md](phonology.md#phonotactics)).
 3. **Reference suffix** — **-l**, **-m**, **-n**, or **-r**.
 4. **Plural -sh** — optional; after the reference suffix only. Never before it; never alone without a reference suffix.
@@ -165,7 +165,7 @@ Do **not** use **-sh**. Situative vs enduring / habitual framing is **`hual` / `
 
 ### Utterance markers (`/j/`)
 
-Depends on subclass (see [utterance markers](language-reference.md#utterance-markers-j)):
+Depends on subclass (see [utterance markers](core.md#utterance-markers-j)):
 
 * **Vocatives** — Address a **group**: **-lsh** for kind-based group address (*hey, kids*); **-nsh** for a titled group name (*Team Alpha*); **-rsh** to call a prior addressee **and associates** (or resume a prior addressed group). Multi-addressee role without naming → **`jehadonsh`** ([address set](#person-role-sh)). *Everyone* → bare **`…ual`**, not **-lsh**.
 * **Interjections** — Do **not** use **-sh**. Group calls belong on vocatives or nouns. Closed [yes/no polarity](questions.md#yes-no-polarity) particles (**`jael`** / **`juel`** / …) likewise take no **-sh**.

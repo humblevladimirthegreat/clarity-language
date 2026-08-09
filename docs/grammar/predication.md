@@ -1,9 +1,9 @@
 # Predication (classification and identity)
 <a id="predication"></a>
 
-This page is the source of truth for **predicative** uses of English *to be* that Clarity does **not** encode with a general copula verb: **classification** (*Sam is a teacher*) and **identity** (*Clark is Superman*). Scalar *as ADJ as* stays [equatives](comparatives.md#equatives). Location / relation (*on*, *at*) stay ordinary complex `/ɡ/`+`/b/` or `/h/`+`/b/` ([language-reference](language-reference.md#complex-adjectives-complex-adverbs-and-argument-nouns)).
+This page is the source of truth for **predicative** uses of English *to be* that Clarity does **not** encode with a general copula verb: **classification** (*Sam is a teacher*) and **identity** (*Clark is Superman*). Scalar *as ADJ as* stays [equatives](comparatives.md#equatives). Location / relation (*on*, *at*) stay ordinary complex `/ɡ/`+`/b/` or `/h/`+`/b/` ([core grammar](core.md#complex-adjectives-complex-adverbs-and-argument-nouns)).
 
-PoS prefixes and zero-copula clause shape: [language-reference.md](language-reference.md). Reference suffixes: [reference-suffix.md](reference-suffix.md).
+PoS prefixes and zero-copula clause shape: [core.md](core.md). Reference suffixes: [reference-suffix.md](reference-suffix.md).
 
 **No general *to-be* verb.** Predicative property and identity claims use `/ɡ/` (optionally complex). Content `/v/` is for events and actions, not bare copular glue.
 
@@ -107,7 +107,7 @@ goguno… b<OTHER>
 ## Cross-links
 
 - Absolute scalars and comparative predicative clauses: [comparatives.md](comparatives.md)
-- Complex `/ɡ/`+`/b/`: [language-reference.md](language-reference.md)
+- Complex `/ɡ/`+`/b/`: [core.md](core.md)
 - Negation / focus packaging on properties: [coordination.md](coordination.md#negation-u)
 - Habitual **`hual`**: [restrictors.md](restrictors.md)
 - Named category **-n** on `/ɡ/`: [reference-suffix.md](reference-suffix.md)

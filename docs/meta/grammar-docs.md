@@ -1,6 +1,6 @@
 # Grammar doc style (for learners)
 
-How to write Clarity **grammar docs** under **`docs/grammar/`** so a learner can use them. Applies **only** to that folder (not to `meta/`, `examples/`, or `proposals/`). Design authority for morphology stays in those pages (core sentence grammar: [language-reference.md](../language-reference.md) until Phase 0 renames it to `grammar/core.md`); this page standardizes **pedagogy and prose** only.
+How to write Clarity **grammar docs** under **`docs/grammar/`** so a learner can use them. Applies **only** to that folder (not to `meta/`, `examples/`, or `proposals/`). Design authority for morphology stays in those pages (core sentence grammar: [core.md](../grammar/core.md)); this page standardizes **pedagogy and prose** only.
 
 Grammar pages must **not** link to or mention `meta/` or any other folder outside `grammar/` — only peer links inside `grammar/`. Editors follow this page and [learning-levels.md](learning-levels.md) privately. Rollout: [migration-grammar-docs.md](migration-grammar-docs.md).
 
@@ -46,12 +46,12 @@ Headings, leads, and asides must make sense to someone who never saw an earlier 
 ## Page skeleton
 
 1. **Title + one-line job** — what this page owns (and what it does not).
-2. **Prerequisites** — one to three links (“needs Beginner [reference-suffix](../reference-suffix.md) and [pronouns](../pronouns.md)”).
+2. **Prerequisites** — one to three links (“needs Beginner [reference-suffix](../grammar/reference-suffix.md) and [pronouns](../grammar/pronouns.md)”).
 3. **`## Beginner` / `## Intermediate` / `## Advanced`** — per [learning-levels.md](learning-levels.md).
 4. Inside each band: **concept → rule in one breath → 1–3 examples → (optional contrast) → full table if needed**.
 5. Optional **See also** at the end — no long link walls in the lead.
 
-Front matter that orients (purpose, design goals, feature criteria — [introduction.md](../introduction.md)) is not a learning band.
+Front matter that orients (purpose, design goals, feature criteria — [introduction.md](../grammar/introduction.md)) is not a learning band.
 
 ## Teach in this order
 
@@ -83,7 +83,7 @@ One short cue is enough (table column, parenthetical, or a line under the rule).
 ## Voice and length
 
 - Address the learner in second person (“use **-r** when…”, “prefer names when…”).
-- One idea per H2/H3; the first paragraph should be roughly one short explanation (same bar as the [easy-to-use feature criterion](../introduction.md#criterion-for-features)).
+- One idea per H2/H3; the first paragraph should be roughly one short explanation (same bar as the [easy-to-use feature criterion](../grammar/introduction.md#criterion-for-features)).
 - Prefer short paragraphs plus a table over a wall of prose.
 - Bold sparingly; put Clarity forms in backticks (`jal`, **-r**, `/ɡ/`).
 - Always call the language **Clarity**.
@@ -160,7 +160,7 @@ Do **not** require a **Not this** column on every table, or a counter-example on
 - Never link to or mention `meta/`, `examples/`, `proposals/`, `data/`, or repo-root files from a grammar page.
 - One canonical anchor per concept (`<a id="…">`); keep ids stable.
 - Do not dump the whole related-inventory into the lead paragraph.
-- **IPA and pronunciation** belong only in [phonology.md](../phonology.md). Grammar docs use orthographic letters (`j`, `x`, `/j/`, `/x/`) — never IPA transcriptions or sound cues. If a learner needs how a letter sounds, link once to phonology (peer in `grammar/` after Phase 0).
+- **IPA and pronunciation** belong only in [phonology.md](../grammar/phonology.md). Grammar docs use orthographic letters (`j`, `x`, `/j/`, `/x/`) — never IPA transcriptions or sound cues. If a learner needs how a letter sounds, link once to phonology (peer in `grammar/`).
 
 ## What belongs where
 
@@ -170,9 +170,9 @@ Do **not** require a **Not this** column on every table, or a counter-example on
 | Gloss format | [glosses.md](glosses.md) |
 | Level rubric / reading order | [learning-levels.md](learning-levels.md) |
 | Doc prose / example style | This page |
-| Goals / feature criteria | [introduction.md](../introduction.md) |
-| Core sentence grammar | [language-reference.md](../language-reference.md) (→ `docs/grammar/core.md` after [migration](migration-grammar-docs.md) Phase 0) |
-| IPA / pronunciation / phonotactics | [phonology.md](../phonology.md) |
+| Goals / feature criteria | [introduction.md](../grammar/introduction.md) |
+| Core sentence grammar | [core.md](../grammar/core.md) |
+| IPA / pronunciation / phonotactics | [phonology.md](../grammar/phonology.md) |
 | Unassigned or rejected design | [TODO.md](../../TODO.md) or **Design notes** |
 | Multi-turn practice | [examples/](../examples/) |
 

@@ -12,7 +12,7 @@ Ordinary `/h/` / `/w/` content still defaults to values unless the form is alrea
 
 **Sense-form** = published Clarity root + [reference ending](reference-suffix.md) that **is** the closed overlay reading for that PoS — no PoS prefix. Example: **`uhunum`** under `/h/` = evidential *memory / witnessed*; **`huhunul`** = ordinary literal *in a fishing manner* — not the evidential. Mood overlays **generally** use **-m** (figurative published sense); other endings when that is how the overlay is defined (benchmark **-n**, universality **-l**, join-act / join-relation defective **-n**, …). Join-act / join-relation stems are the vowel + **-n** only (`an` / `on` / …); written words are **`pos` + sense-form** (`van` / `gan` / `han`).
 
-Closed overlay inventory: **[lexicon-overlays.csv](../data/lexicon-overlays.csv)** — one row per **`(sense_form, pos)`** with **`definition`** and **`mnemonic`** columns; ordinary content PoS on the same root is **not** listed. Published roots: [lexicon-published.csv](../data/lexicon-published.csv).
+Closed overlay inventory: one entry per **`(sense_form, pos)`** with a fixed definition and mnemonic; ordinary content PoS on the same root is **not** listed. Prefer published roots when the English sense matches.
 
 ## Join-act verbs (`v*n`)
 <a id="join-act-verbs"></a>

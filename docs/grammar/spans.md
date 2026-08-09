@@ -2,7 +2,7 @@
 
 This page is the source of truth for **span fences** (cite / aside / mention / opaque) and for **adjunct-scope islands** (`^ … ^`).
 
-**Span fences:** every **open** carries a **PoS**, a **TYPE**, an **EDGE** (extent), and an **ENDING**; **close** is a fixed discourse quartet (**`xuxul`** / **`xuxur`** / **`xuxun`** / **`xuxum`**). Preferred **bracket writing**, fidelity, extent, atomic spans, proper designation, and span anaphors. Discourse linkers and clause joins under `/x/` stay in [language-reference.md](language-reference.md#discourse-markers-x) and [coordination.md](coordination.md). Span fences use ordinary mid-word **`x`** (compound joiner) — [phonology.md](phonology.md#phonotactics). Parallel to [numbers](numbers.md): writing uses shorthand; speech is the full form.
+**Span fences:** every **open** carries a **PoS**, a **TYPE**, an **EDGE** (extent), and an **ENDING**; **close** is a fixed discourse quartet (**`xuxul`** / **`xuxur`** / **`xuxun`** / **`xuxum`**). Preferred **bracket writing**, fidelity, extent, atomic spans, proper designation, and span anaphors. Discourse linkers and clause joins under `/x/` stay in [core.md](core.md#discourse-markers-x) and [coordination.md](coordination.md). Span fences use ordinary mid-word **`x`** (compound joiner) — [phonology.md](phonology.md#phonotactics). Parallel to [numbers](numbers.md): writing uses shorthand; speech is the full form.
 
 **Scope islands:** writing **`^ … ^`**; speech is **prosody only** (no spoken open/close word). The island requires an **inside binder** — a scope-taking `/h/` and/or a [join](coordination.md#join-scope-islands-rules). See [Adjunct-scope islands](#adjunct-scope-islands).
 
@@ -284,7 +284,7 @@ Object-slot examples: `daxal` / `daxam` / `daxan` / `daxar`; `daxol` / `daxon`; 
 Use a span (PoS + brackets in writing; matching spoken open + close when a multi-token EDGE **a** open is pronounced) when:
 
 - citing someone’s words, a title string, or a proverb / stock saying **as wording** (**cite** TYPE **a** / `…[…]`)
-- mid-sentence parenthetical digression (**aside** TYPE **e** / `…(…)`) — prefer PoS `/h/`; must **not** use floating `/j/` — [utterance markers](language-reference.md#utterance-markers-j)
+- mid-sentence parenthetical digression (**aside** TYPE **e** / `…(…)`) — prefer PoS `/h/`; must **not** use floating `/j/` — [utterance markers](core.md#utterance-markers-j)
 - use–mention, or *the saying/title X* as a named unit (**mention** TYPE **o** / `…{…}`; prefer **`d@{…}`** / **-n** for the named-unit reading)
 - foreign, code, IPA, or other non-lexicon surface the parser must **not** read as Clarity (**opaque** TYPE **u** / `…<…>`)
 - referring back to a prior span as a referent (**anaphor** **-r** / `…[=]`) — *said **that***
@@ -493,7 +493,7 @@ Sketch contrast:
 | Need | Use instead |
 |------|-------------|
 | Nested packaging / wording fidelity / opaque | typed [span fences](#writing) |
-| Whole-clause soft assert | **`jam`** — [clause force](language-reference.md#clause-force) |
+| Whole-clause soft assert | **`jam`** — [clause force](core.md#clause-force) |
 | Single-adjective frame | `/w/` on that `/ɡ/` |
 | Outside `/h/` meant to cover a multi-word chunk | put that `/h/` **inside** `^ … ^` |
 | Join over only part of a same-slot stretch | put that join **inside** `^ … ^` — [coordination.md](coordination.md#join-scope-islands-rules) |
@@ -515,9 +515,9 @@ Sketch contrast:
 | Open proper **-n** / `d@[…]` | titled designation of the span — **not** sic; use `#]` / `xuxun` for editorial *as-written* |
 | Number ordinal `#` in a number word | [numbers.md](numbers.md) — not span sic close (sic is `#]` in closer position only) |
 | Inferring close-all from bare `xuxur` / `xuxun` in speech | say `xuxur xuxum` / `xuxun xuxum`; writing may use `-\|` / `#\|` |
-| *However* / *therefore* / *but* (asymmetric linkers) | other `/x/` lexicon roots — [discourse markers](language-reference.md#discourse-markers-x) |
+| *However* / *therefore* / *but* (asymmetric linkers) | other `/x/` lexicon roots — [discourse markers](core.md#discourse-markers-x) |
 | Numbered *point N:* | `/x/` + number — [numbers.md](numbers.md#number-as-discourse-marker-by-marker) |
-| *Because* / *if* subordination | `/h/` + `/b/` next-clause pronoun — [dependent clauses](language-reference.md#dependent-clauses) |
+| *Because* / *if* subordination | `/h/` + `/b/` next-clause pronoun — [dependent clauses](core.md#dependent-clauses) |
 | Vocative / interjection | left-edge `/j/` only — not mid-clause asides |
 | Nativized loan as ordinary word | PoS + adapted root + ending — [loans](#loans) |
 | Ordinary content anaphor (*that dog*) | content root + **-r** — [pronouns.md](pronouns.md) |

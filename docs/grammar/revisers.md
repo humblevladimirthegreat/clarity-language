@@ -15,7 +15,7 @@ Two placements, one form set:
 | **In-clause** | same-slot `A REV B` (and parallel chains) | slot repair — *including* / *rather* / *instead* / *except* |
 | **Discourse** | `REV` before force, omitted-default body, non-initial [clause `/x/`](#discourse-on-x-continue) conjunct, or `/x/` linker | claim-to-claim glue — *additionally* / *in other words* / *instead* / *except* |
 
-Do **not** key off mixed PoS mid-clause: `z-… ol d-…` stays **illegal**. Adversative *but* / *however*, *therefore*, *meanwhile*, and standalone *next* stay other `/x/` roots ([language-reference.md](language-reference.md#discourse-markers-x)). Narrative *and then* between full sentences is clause **`xan`**, not this series.
+Do **not** key off mixed PoS mid-clause: `z-… ol d-…` stays **illegal**. Adversative *but* / *however*, *therefore*, *meanwhile*, and standalone *next* stay other `/x/` roots ([core.md](core.md#discourse-markers-x)). Narrative *and then* between full sentences is clause **`xan`**, not this series.
 
 ## Meanings (vowel)
 
@@ -126,7 +126,7 @@ Discourse revisers glue **this utterance** (or conjunct / linker stretch) to **p
 | Placement | Shape | Force |
 |-----------|-------|--------|
 | Before written force | `(vocative)* (interjection)* REV force BODY` | Force explicit |
-| Before omitted-default body | `REV BODY` | Implied **`jal`** / **`jam`** ([language-reference.md](language-reference.md#clause-force)) |
+| Before omitted-default body | `REV BODY` | Implied **`jal`** / **`jam`** ([core.md](core.md#clause-force)) |
 | Non-initial [clause `/x/`](#discourse-on-x-continue) conjunct | `… REV BODY … JOIN` | Inherit opener illocution |
 | Before `/x/` linker | `REV LINKER BODY` | Inherit prior illocution; linker + body continue |
 

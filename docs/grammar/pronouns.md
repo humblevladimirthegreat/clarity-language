@@ -33,7 +33,7 @@ Clarity has one anaphoric mechanism (`-r`); English does not. Approximate by cro
 
 Noun prefixes `/z/`, `/d/`, and `/b/` share the same “entity” reading; English case and preposition choice follow the pronoun column. Group **-sh** → *they* / *those* / *X and associates* (associative; see [plurality](plurality.md)).
 
-**Pronoun `/x/` vs `/h/`:** `/x/`…`-r` is **discourse navigation** — *going back to subject X* / *returning to that thread* (removing it does not change the following claim). Clause **aboutness** (*regarding X*, as part of what the claim is about) stays `/h/` + `/b/` X — see [Adverbs](language-reference.md#adverbs-h) and [Discourse markers](language-reference.md#discourse-markers-x).
+**Pronoun `/x/` vs `/h/`:** `/x/`…`-r` is **discourse navigation** — *going back to subject X* / *returning to that thread* (removing it does not change the following claim). Clause **aboutness** (*regarding X*, as part of what the claim is about) stays `/h/` + `/b/` X — see [Adverbs](core.md#adverbs-h) and [Discourse markers](core.md#discourse-markers-x).
 
 ### Same-role resume (antecedent PoS ≈ pronoun PoS)
 
@@ -50,7 +50,7 @@ Noun prefixes `/z/`, `/d/`, and `/b/` share the same “entity” reading; Engli
 | `/j/` interjection → `/j/` interjection | repeating that exclamation / formula |
 | `/x/` → `/x/` | *and so* / *likewise* / the same linker or fence again |
 
-Clause-force `/j/` is not resumed with `-r` (closed force set; see [utterance markers](language-reference.md#utterance-markers-j)).
+Clause-force `/j/` is not resumed with `-r` (closed force set; see [utterance markers](core.md#utterance-markers-j)).
 
 ### Cross-role recast (antecedent PoS ≠ pronoun PoS)
 
@@ -180,7 +180,7 @@ Discourse-role forms (not letter/full-root **-r** from ordinary antecedents). Th
 
 **Generic person (`enu`).** A nonspecific **individual** — not English impersonal *one*, not [unspecified-member](coordination.md#unspecified-member-r-phrase) **`zar`** / **`dar`** (those are join gaps / indefinites of any kind), and not a 3rd-person anaphor (use content **-r** once someone is introduced).
 
-**Next clause (`odo`).** Placeholder for the material that **immediately follows** it ([dependent clauses](language-reference.md#dependent-clauses)). **Matrix-final in its clause:** **`odo`** is the last word of that host (for `/h/`+`/b/` subordination, the contiguous unit ends with **`odo`**); the dependent follows with no intervening host words. **Chaining** allowed: a dependent may itself end in **`odo`**. Takes the PoS prefix of the slot it fills (`/d/` complement, `/b/` under `/h/` *because* / *if*, etc.). When illocution matches the matrix, the dependent may **inherit** force and omit **`/j/`** (including omissible default **`jal`**); different illocution still needs its own force.
+**Next clause (`odo`).** Placeholder for the material that **immediately follows** it ([dependent clauses](core.md#dependent-clauses)). **Matrix-final in its clause:** **`odo`** is the last word of that host (for `/h/`+`/b/` subordination, the contiguous unit ends with **`odo`**); the dependent follows with no intervening host words. **Chaining** allowed: a dependent may itself end in **`odo`**. Takes the PoS prefix of the slot it fills (`/d/` complement, `/b/` under `/h/` *because* / *if*, etc.). When illocution matches the matrix, the dependent may **inherit** force and omit **`/j/`** (including omissible default **`jal`**); different illocution still needs its own force.
 
 | Clarity | Reading |
 |---------|---------|

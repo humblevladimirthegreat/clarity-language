@@ -1,8 +1,8 @@
-# Clarity language reference (v0.7)
+# Clarity core grammar (v0.7)
 
 How to read and write a Clarity **sentence**: word roles, word shape, default order, how a turn starts (`/j/` vs `/x/`), and dependent sentences with **`odo`**.
 
-**Prerequisites:** [introduction.md](introduction.md) (purpose and how to learn). Level bands: [learning-levels.md](meta/learning-levels.md). Word endings in full: [reference-suffix.md](reference-suffix.md). Pronouns (including **`odo`**): [pronouns.md](pronouns.md). Writing style for these docs: [grammar-docs.md](meta/grammar-docs.md).
+**Prerequisites:** [introduction.md](introduction.md) (purpose and how to learn). Word endings in full: [reference-suffix.md](reference-suffix.md). Pronouns (including **`odo`**): [pronouns.md](pronouns.md). This page uses **Beginner** / **Intermediate** / **Advanced** sections — finish Beginner here before Intermediate.
 
 ## Beginner
 <a id="beginner"></a>
@@ -21,7 +21,7 @@ Write **role letter + root + ending** as one word:
 
 `zumogon` · `dehadon` · `glulebul`
 
-Prefer a [published](../data/lexicon-published.csv) root when the English meaning matches (`dabebal` for *apple*). Use **-m** when the match is the published **metaphorical** sense (`guzem` for *happy*).
+Prefer a published root when the English meaning matches (`dabebal` for *apple*). Use **-m** when the match is the published **metaphorical** sense (`guzem` for *happy*).
 
 Final letters (**-l** / **-m** / **-n** / **-r**) say how the root enters the talk — full list in [reference-suffix.md](reference-suffix.md).
 
