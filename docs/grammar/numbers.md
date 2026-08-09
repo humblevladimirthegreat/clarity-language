@@ -931,6 +931,8 @@ Same under `/z/` `/d/` `/b/` (`z+e` = +∞ as subject; `d#e-` = start-place as o
 
 **Notional / imaginary (`g-e-`):** negative marker (**`ru`**) + digitless negative exponent (**`bu`∅), no mantissa — completes the scalar special grid. Reading is **metaphorical**: a magnitude named *as if* it counted, without entering the real tally. **Not** falsehood ([yes/no polarity](questions.md#yes-no-polarity) **`juel`**), **not** ordinary soft real amount (`g~+3`), **not** −∞ (`g-e`), **not** micro-real (`g+e-`). No separate *i* closer — digitful engineering (`g-50e-6`) and bare OoM **`g-e-1`** / **`g-e-2`** stay real (−10⁻¹ / −10⁻²). Mantissa + digitless **`bu`** on **`ru`** (`g-1e-`) stays [hyperbole](#hyperbole-gazillion) (*minus one gazillionth*), not *Ni*. Kind-morph twins: [quasi-ROOT](special-vocabulary.md#quasi) **`ROOTx-e-`**; [quasi-N](special-vocabulary.md#quasi-n) **`ROOTx-e-1`** / **`ROOTx-e-2`** (derivation only — not free OoM).
 
+**Psychological as-if** (clause framed as pretensive / mind-only, with flexibility hold endings) uses spelled mood **`edahe`** — [special-vocabulary.md § Notional](special-vocabulary.md#notional) (`hedahem`, …) — not these free number forms. Free **`grubul`** / **`xrubul`** / **`hrubul`** / **`vrubul`** / **`jrubul`** stay amount, discourse *imagine that:*, manner *as if*, verb *notionalize*, and cheer overlays on the number grid.
+
 **Endings** (no-mantissa specials):
 
 | Ending | Sense |

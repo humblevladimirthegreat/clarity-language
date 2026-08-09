@@ -1,7 +1,7 @@
 # Special vocabulary
 <a id="special-vocabulary"></a>
 
-Closed morphology and mood roots that are **not** [values](values.md) (needs) and **not** [restrictors](restrictors.md) (applicability). Some reuse mid-word **`x`** ([ability](#ability), [role compounds](#role-compounds), [numeric derivation](#numeric-derivation)); others are closed `/h/` mood roots with no `x`-addition (plan / predict, evidentiality, universality, emotion ACT / LOCUS, **COMMENT**); join-act verbs and join-relations reuse join-vowel spellings under `/v/` `/ɡ/` `/h/`…**-n**. Mid-word **`x`** parser families: [x-compounds.md](x-compounds.md).
+Closed morphology and mood roots that are **not** [values](values.md) (needs) and **not** [restrictors](restrictors.md) (applicability). Some reuse mid-word **`x`** ([ability](#ability), [role compounds](#role-compounds), [numeric derivation](#numeric-derivation)); others are closed `/h/` mood roots with no `x`-addition (plan / predict, evidentiality, universality, emotion ACT / LOCUS, **COMMENT**, **NOTIONAL**); join-act verbs and join-relations reuse join-vowel spellings under `/v/` `/ɡ/` `/h/`…**-n**. Mid-word **`x`** parser families: [x-compounds.md](x-compounds.md).
 
 **Prerequisites:** [core.md](core.md) Beginner; [reference-suffix.md](reference-suffix.md) Beginner; [coordination.md](coordination.md) Beginner for joins; [values.md](values.md) Beginner for ability contrast; [x-compounds.md](x-compounds.md) Intermediate when parsing mid-word **`x`**.
 
@@ -13,7 +13,7 @@ Closed morphology and mood roots that are **not** [values](values.md) (needs) an
 
 Some published roots carry a **closed overlay reading** for a fixed PoS — the word **is** that special sense, without inventing a new root. Example: **`uhunum`** under `/h/` = evidential *memory / witnessed*; **`huhunul`** = ordinary literal *in a fishing manner*.
 
-**Shape:** sense-form + [reference ending](reference-suffix.md). Mood overlays usually take **-m** (figurative published sense); other endings when that is how the overlay is defined (benchmark **-n**, universality **-l**, join-act / join-relation defective **-n**, …). Join-act / join-relation stems are the vowel + **-n** only (`an` / `on` / …); written words are **`pos` + sense-form** (`van` / `gan` / `han`).
+**Shape:** sense-form + [reference ending](reference-suffix.md). Mood overlays usually take **-m** (figurative published sense / soft default); other endings when that is how the overlay is defined (benchmark **-n**, universality **-l**, join-act / join-relation defective **-n**, [COMMENT](#comment-hold) / [NOTIONAL](#notional-hold) hold **-l / -m / -n / -r**, …). Join-act / join-relation stems are the vowel + **-n** only (`an` / `on` / …); written words are **`pos` + sense-form** (`van` / `gan` / `han`).
 
 **Mnemonic:** same root, special PoS reading — the ending marks which overlay you mean.
 
@@ -328,34 +328,35 @@ Stack when useful: e.g. can’t-sing plus unmet competence (`v<sing>xum` + `hodo
 
 Mark **first-person mental commentary** — the mind storying or labeling experience — with one closed mood root instead of separate *think* / *assume* / *imagine* / *wonder* moods.
 
-**Shape:** floating **`/h/`** mood **`uho`** 💭 *thought* → *commentary* (optional `/w/` only when COMMENT frames a preceding `/ɡ/` — rare). Prefer floating `/h/`.
+**Shape:** floating **`/h/`** mood **`uho`** 💭 *thought* → *commentary* (optional `/w/` only when COMMENT frames a preceding `/ɡ/` — rare). Prefer floating `/h/`. Ending = [hold](#comment-hold) (how tightly you take the balloon).
 
 **Mnemonic:** a **thought balloon** floats a take over the scene. Bare contact = watching without narration. Ordinary content still available (`zuhol` *a thought*; `vuhol` *to think* as deliberate event).
 
 ```
 `… huhom …`
 
-gloss: `h-COMMENT`
+gloss: `h-COMMENT-soft`
 
-*I think …* — commentary overlay
+*I think …* — commentary held lightly (default)
 ```
 
 ```
 `… huhom … jom …`
 
-gloss: `h-COMMENT` · `j-soft-ask`
+gloss: `h-COMMENT-soft` · `j-soft-ask`
 
-*I wonder …* — commentary + soft ask
+*I wonder …* — soft commentary + soft ask
 ```
 
 Use COMMENT when the clause is doing **first-person cognitive commentary**. Third-person *thinks* / other-minds claims stay **evidentiality** (and ordinary content). Content verbs stay ordinary; COMMENT **frames** the clause.
 
-**Affect is not COMMENT.** *Fear* / *worry* / *dread* / *regret* / hope-as-feeling go to [emotion compose](#emotion-compose). Hope-as-intention uses motive (`xe`) and/or [**PLAN**](#plan-predict). *Believe* (world-claim + warrant) waits on [evidentiality](#evidentiality).
+**Affect is not COMMENT.** *Fear* / *worry* / *dread* / *regret* / hope-as-feeling go to [emotion compose](#emotion-compose). Hope-as-intention uses motive (`xe`) and/or [**PLAN**](#plan-predict). *Believe* (world-claim + warrant) waits on [evidentiality](#evidentiality). Clause framed as *as if* / mind-only scene (not *I think*) uses [**NOTIONAL**](#notional).
 
 | English bundle | Prefer |
 |----------------|--------|
-| *think / assume / suppose / imagine …* | **COMMENT** (`huhom`); add evidentiality only if asserting a world-claim |
+| *think / assume / suppose / imagine …* (attitude) | **COMMENT** (`huhom`); add evidentiality only if asserting a world-claim |
 | *wonder …* | **COMMENT** + soft question (**jom**) / ask |
+| *as if / imagine that:* (scene framing) | [**NOTIONAL**](#notional) (`hedahem`) |
 | *fear / worry / dread / regret …* | [emotion compose](#emotion-compose): unmet [value](values.md) (`xu`) + **ACT** + **LOCUS** |
 | *hope / wish …* (feeling) | emotion compose (value + ACT + LOCUS) |
 | *hope / wish …* (intention) | motive (`xe`) and/or [**PLAN**](#plan-predict) / soft force |
@@ -365,8 +366,83 @@ Use COMMENT when the clause is doing **first-person cognitive commentary**. Thir
 |---------|---------|
 | `z<meeting>l wodoloxul hogenal hagenal` | *I fear the meeting* — unmet competence; flood; room awash — no COMMENT |
 | `… howarom …` | *I hope to …* (intention) — soft plan; no COMMENT |
+| `… huhol …` | commentary taken as the scene (fused) |
+| `… huhur …` | commentary named *and* stepped back from |
 
-COMMENT is a **root choice**, not `xa`/`xu` polarity and not endings on attitude hosts. It is not evidentiality, not [contact channel](values.md#value-contact) on met values, not [emotion compose](#emotion-compose), and not perception-as-event (*she hears the door* — ordinary lexicon `/v/` if needed). Raw sensation without judgment may stay unlabeled — see [emotion compose](#emotion-compose). Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)).
+#### Hold endings (COMMENT)
+<a id="comment-hold"></a>
+<a id="hold-endings"></a>
+
+On **`uho`**, **-l / -m / -n / -r** mark **how you hold** the commentary — flexible attention cues on the inflexibility host. Same map as [NOTIONAL hold](#notional-hold). Not contact channel, not changeability, not ordinary reference-suffix on this mood.
+
+| Ending | Form | Hold | Reading |
+|--------|------|------|---------|
+| **-m** | **`huhom`** | **soft** (default) | commentary noticed, held lightly |
+| **-l** | **`huhol`** | **fused** | commentary taken as the scene (*it is so because I think*) |
+| **-n** | **`huhon`** | **named loop** | titled / habitual rumination frame (*the usual story*) |
+| **-r** | **`huhur`** | **return** | same commentary *and* a cue to step back toward bare contact |
+
+**Mnemonic:** **-m** soft/open; **-l** exact/closed fusion; **-n** named frame; **-r** resume/return. When unsure, prefer **`huhom`**.
+
+COMMENT is a **root choice**, not `xa`/`xu` polarity. It is not evidentiality, not [contact channel](values.md#value-contact) on met values, not [emotion compose](#emotion-compose), not [NOTIONAL](#notional), and not perception-as-event (*she hears the door* — ordinary lexicon `/v/` if needed). Raw sensation without judgment may stay unlabeled — see [emotion compose](#emotion-compose). Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)).
+
+### Notional (as-if framing)
+<a id="notional"></a>
+<a id="notional-mood"></a>
+
+Mark a clause as **as-if / mind-only / off the real ledger** — pretensive scene framing — with one closed mood root. Do **not** use free number specials (`grubul`, `xrubul`, …) for this psychological job; those stay amount / discourse overlays in [numbers.md](numbers.md#imaginary).
+
+**Shape:** floating **`/h/`** mood **`edahe`** 🎭 *theater* → *pretense* (optional `/w/` when scoped only to a preceding `/ɡ/` — rare). Prefer floating `/h/`. Ending = [hold](#notional-hold) (same map as COMMENT).
+
+**Mnemonic:** a **stage mask** frames the scene as play — real tally stays offstage. Ordinary content still available (`zedahel` *a theater*; `vedahel` *to pretend*).
+
+```
+`… hedahem …`
+
+gloss: `h-NOTIONAL-soft`
+
+*as if …* / *imagine that …* — notional framing held lightly (default)
+```
+
+```
+`… hedahel …`
+
+gloss: `h-NOTIONAL-fused`
+
+*as if …* — immersed in the imagined scene
+```
+
+Use NOTIONAL when the clause is **framed as pretensive / for-the-sake-of-argument / mind-only**, not when you are marking first-person *I think / I imagine* attitude — that stays [COMMENT](#comment).
+
+| English bundle | Prefer |
+|----------------|--------|
+| *as if / for the sake of argument / pretend that …* | **NOTIONAL** (`hedahem`) |
+| *imagine that:* (side scene / agenda) | **NOTIONAL** (`hedahem`) |
+| *I imagine / I think …* (attitude) | [COMMENT](#comment) (`huhom`) |
+| notional **amount** / soft imaginary magnitude | free number forms (`grubul`, `grubum`, …) — [numbers.md](numbers.md#imaginary) |
+| quasi-*kind* (*quasi-friend*) | numeric derivation **`ROOTx-e-`** — [quasi](#quasi) |
+
+| Clarity | Reading |
+|---------|---------|
+| `… hedahem zumogon v<win>l.` | *as if I win* — soft notional frame |
+| `… hedaher …` | notional frame *and* step back toward contact |
+| `… hedahen …` | conventional thought-experiment frame |
+
+#### Hold endings (NOTIONAL)
+<a id="notional-hold"></a>
+
+On **`edahe`**, **-l / -m / -n / -r** mark **how you hold** the as-if frame — same flexibility map as [COMMENT hold](#comment-hold).
+
+| Ending | Form | Hold | Reading |
+|--------|------|------|---------|
+| **-m** | **`hedahem`** | **soft** (default) | as-if noticed, held lightly |
+| **-l** | **`hedahel`** | **fused** | immersed in the imagined scene |
+| **-n** | **`hedahen`** | **named frame** | conventional thought-experiment / stock *as if* |
+| **-r** | **`hedaher`** | **return** | same as-if *and* a cue to step back toward bare contact |
+
+When unsure, prefer **`hedahem`**.
+
+NOTIONAL is a **root choice**, not `xa`/`xu` polarity and not a free digitless number word. It is not COMMENT, not evidentiality, not [emotion compose](#emotion-compose), and not quasi-kind derivation. Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)).
 
 ### Emotion compose
 <a id="emotion-compose"></a>
@@ -520,6 +596,7 @@ Idiom cue: *fish a boot* = retrieve the wrong past (🥾 `obodo` *boot* stays fr
 | | Prefer |
 |--|--------|
 | COMMENT vs warrant | `huhom` = first-person commentary; evidential = how the **world-claim** is sourced |
+| NOTIONAL vs warrant | `hedahem` = as-if clause frame; evidential = how you know a real claim |
 | Felt vs emotion | **`ahe`** = channel of knowing; emotion = value + ACT + LOCUS |
 | Told vs listening-event | `/h/` **`erare`** = hearsay; *hear the door* = ordinary `/v/` |
 | Pattern vs COMMON | **`awa`** = evidential trail; **`ewono`** = exceptionlessness warrant ([universality](#universality)) |
@@ -965,7 +1042,7 @@ Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`z<meeti
 
 Unassigned or rare edges (not required for ordinary reading):
 
-- **COMMENT:** sense-channel noting color on **`uho`**; dedicated bare `/j/` interjection; forced COMMENT on every first-person clause (only cognitive commentary environments).
+- **COMMENT / NOTIONAL:** sense-channel noting color on **`uho`**; dedicated bare `/j/` interjection on either root; forced COMMENT on every first-person clause (only cognitive commentary environments); whether **`edahe`** under `/j/` doubles number-style *As if!* cheer.
 - **Emotion compose:** whether MED (`oju`) shares a form with another soft default; `/w/` bind on the judged `/ɡ/` vs only floating `/h/`; emotion lexicon retained only for non-judgmental sensation naming.
 - **Plan:** exact ending ↔ None / Vague / Detail / Contingency assignment on **`PLAN`**.
 - **Evidentiality / universality:** ending tables (confidence grain, soft vs committed warrant, …); full tense inventory stacking with channels; whether bare unmarked `hual` / `zual` implies COMMON or leaves warrant unspoken.
@@ -977,7 +1054,7 @@ Judgment benchmarks (*worse than Average|…*) are NP comparees on comparative f
 
 ## See also
 
-- [values.md](values.md) — needs vs ability / COMMENT / emotion compose
+- [values.md](values.md) — needs vs ability / COMMENT / NOTIONAL / emotion compose
 - [coordination.md](coordination.md) — joins; soft **-n**; universals / domains
 - [restrictors.md](restrictors.md) — applicability vs join-relations / ability
 - [x-compounds.md](x-compounds.md) — mid-word **`x`** parser families

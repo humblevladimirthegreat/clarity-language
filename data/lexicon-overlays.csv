@@ -29,8 +29,22 @@ owarom,h,🗺️,plan mood (intention / commitment),map charts a route; plan cha
 owarom,w,🗺️,plan mood (intention / commitment),map charts a route; plan charts a course you mean to take
 edelom,h,🔭,predict mood (forecast about what will happen),telescope shows what is far; forecast looks ahead at a distance
 edelom,w,🔭,predict mood (forecast about what will happen),telescope shows what is far; forecast looks ahead at a distance
-uhom,h,💭,comment mood (mental commentary / rumination),thought balloon floats a take; commentary is mind storying experience
-uhom,w,💭,comment mood (mental commentary / rumination),thought balloon floats a take; commentary is mind storying experience
+uhom,h,💭,comment mood soft hold (mental commentary held lightly),thought balloon floats a take; soft commentary is noticed without fusion
+uhom,w,💭,comment mood soft hold (mental commentary held lightly),thought balloon floats a take; soft commentary is noticed without fusion
+uhol,h,💭,comment mood fused hold (commentary taken as the scene),thought balloon fills the frame; fused commentary is treated as the scene
+uhol,w,💭,comment mood fused hold (commentary taken as the scene),thought balloon fills the frame; fused commentary is treated as the scene
+uhon,h,💭,comment mood named-loop hold (titled rumination frame),thought balloon as a stock caption; named loop is the usual story
+uhon,w,💭,comment mood named-loop hold (titled rumination frame),thought balloon as a stock caption; named loop is the usual story
+uhur,h,💭,comment mood return hold (commentary plus step-back cue),thought balloon noted then set down; return cues step-back toward contact
+uhur,w,💭,comment mood return hold (commentary plus step-back cue),thought balloon noted then set down; return cues step-back toward contact
+edahem,h,🎭,notional mood soft hold (as-if framing held lightly),theater mask marks play; soft pretense is as-if without immersion
+edahem,w,🎭,notional mood soft hold (as-if framing held lightly),theater mask marks play; soft pretense is as-if without immersion
+edahel,h,🎭,notional mood fused hold (immersed in imagined scene),theater mask covers the face; fused pretense immerses in the scene
+edahel,w,🎭,notional mood fused hold (immersed in imagined scene),theater mask covers the face; fused pretense immerses in the scene
+edahen,h,🎭,notional mood named-frame hold (conventional thought-experiment),theater as stock stage setup; named frame is the usual as-if exercise
+edahen,w,🎭,notional mood named-frame hold (conventional thought-experiment),theater as stock stage setup; named frame is the usual as-if exercise
+edaher,h,🎭,notional mood return hold (as-if plus step-back cue),theater mask noted then lifted; return cues step-back toward contact
+edaher,w,🎭,notional mood return hold (as-if plus step-back cue),theater mask noted then lifted; return cues step-back toward contact
 ogenam,h,🌊,emotion HIGH activation (flood / surge),ocean wave surges; flood is high-arousal water motion
 ogenam,w,🌊,emotion HIGH activation (flood / surge),ocean wave surges; flood is high-arousal water motion
 ojum,h,🪼,emotion MED activation (flow / drift),jellyfish drifts with current; flow is mid motion of water
