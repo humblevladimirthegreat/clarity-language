@@ -1,3 +1,7 @@
+# TODO
+
+Grammar-docs / learning-levels migration for `docs/grammar/` is **complete** — see [docs/meta/migration-grammar-docs.md](docs/meta/migration-grammar-docs.md) and the [cross-doc path](docs/meta/learning-levels.md#cross-doc-path). Unassigned design below stays out of learner grammar pages until assigned.
+
 -punctuation
 
 ## Unassigned number / derivation readings

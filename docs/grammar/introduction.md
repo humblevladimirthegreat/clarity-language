@@ -1,6 +1,6 @@
 # Introduction to Clarity
 
-Why the language exists, how the grammar supports that, how to read the docs, and what bars new features must meet. Core clause grammar starts in **[core.md](core.md)**.
+Why the language exists, how the grammar supports that, how to read the docs, and what bars new features must meet. Core clause grammar starts in [core.md](core.md).
 
 ## Purpose
 
@@ -40,10 +40,19 @@ Clarity keeps three kinds of clarity in ordinary speech:
 **What stays vague on purpose.** You can say something is “good” without naming every facet. Derivations need not show that *food* and *cook* are related. Precision that would make the language hard to use is out of scope.
 
 ## How to learn from these docs
+<a id="how-to-learn"></a>
 
-Grammar pages use **Beginner** / **Intermediate** / **Advanced** sections so you can finish all Beginner material across this set before Intermediate, then Advanced.
+Grammar pages use **Beginner** / **Intermediate** / **Advanced** sections so you can finish all Beginner material across this folder before Intermediate, then Advanced. This page is orientation only — not a learning band.
 
-Start with [core.md](core.md) (core sentence grammar), then Beginner sections in the other grammar pages. Orientation on this page is not a learning band.
+Suggested **Beginner** order:
+
+1. [core.md](core.md#beginner) — clause shape, PoS, writing words, utterance framing
+2. [phonology.md](phonology.md#beginner) — letters and word edges (optional early)
+3. [reference-suffix.md](reference-suffix.md#beginner) — **-l** / **-m** / **-n** / **-r**
+4. [pronouns.md](pronouns.md#beginner), [plurality.md](plurality.md#beginner), [questions.md](questions.md#beginner)
+5. Remaining peers’ Beginner sections ([predication](predication.md#beginner), [revisers](revisers.md#beginner), [restrictors](restrictors.md#beginner), [coordination](coordination.md#beginner), [spans](spans.md#beginner), [numbers](numbers.md#beginner), [comparatives](comparatives.md#beginner), [causation](causation.md#beginner), [values](values.md#beginner), [special-vocabulary](special-vocabulary.md#beginner), [x-compounds](x-compounds.md#beginner))
+
+Then every page’s **Intermediate**, then every page’s **Advanced**.
 
 ## Criterion for features
 <a id="criterion-for-features"></a>

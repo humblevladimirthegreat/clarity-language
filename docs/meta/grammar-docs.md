@@ -2,13 +2,13 @@
 
 How to write Clarity **grammar docs** under **`docs/grammar/`** so a learner can use them. Applies **only** to that folder (not to `meta/`, `examples/`, or `proposals/`). Design authority for morphology stays in those pages (core sentence grammar: [core.md](../grammar/core.md)); this page standardizes **pedagogy and prose** only.
 
-Grammar pages must **not** link to or mention `meta/` or any other folder outside `grammar/` — only peer links inside `grammar/`. Editors follow this page and [learning-levels.md](learning-levels.md) privately. Rollout: [migration-grammar-docs.md](migration-grammar-docs.md).
+Grammar pages must **not** link to or mention `meta/` or any other folder outside `grammar/` — only peer links inside `grammar/`. Editors follow this page and [learning-levels.md](learning-levels.md) privately. Banding / folder move history: [migration-grammar-docs.md](migration-grammar-docs.md) (complete).
 
 Related meta:
 
 | Page | Owns |
 |------|------|
-| [learning-levels.md](learning-levels.md) | **Beginner** / **Intermediate** / **Advanced** banding rubric (for `docs/grammar/` only) |
+| [learning-levels.md](learning-levels.md) | **Beginner** / **Intermediate** / **Advanced** banding rubric and [cross-doc path](learning-levels.md#cross-doc-path) (for `docs/grammar/` only) |
 | [glosses.md](glosses.md) | Morph glosses and free English |
 
 ## Dual role
@@ -166,15 +166,16 @@ Do **not** require a **Not this** column on every table, or a counter-example on
 
 | Material | Place |
 |----------|--------|
-| How to use the form | Grammar doc body (banded) |
+| How to use the form | Grammar doc body under **`docs/grammar/`** (banded **Beginner** / **Intermediate** / **Advanced**) |
 | Gloss format | [glosses.md](glosses.md) |
-| Level rubric / reading order | [learning-levels.md](learning-levels.md) |
+| Level rubric / reading order | [learning-levels.md](learning-levels.md) ([cross-doc path](learning-levels.md#cross-doc-path)) |
 | Doc prose / example style | This page |
 | Goals / feature criteria | [introduction.md](../grammar/introduction.md) |
 | Core sentence grammar | [core.md](../grammar/core.md) |
-| IPA / pronunciation / phonotactics | [phonology.md](../grammar/phonology.md) |
-| Unassigned or rejected design | [TODO.md](../../TODO.md) or **Design notes** |
-| Multi-turn practice | [examples/](../examples/) |
+| IPA / pronunciation / phonotactics | [phonology.md](../grammar/phonology.md) (only page that may use IPA) |
+| Unassigned or rejected design | [TODO.md](../../TODO.md) or a short **Design notes** appendix on the grammar page |
+| Multi-turn practice | [examples/](../examples/) (not linked from grammar pages) |
+| Editor pedagogy / migration notes | `docs/meta/` only — never from grammar pages |
 
 ## Banding checklist
 

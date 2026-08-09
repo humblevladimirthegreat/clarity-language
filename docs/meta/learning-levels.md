@@ -2,11 +2,12 @@
 
 Applies **only** to learner grammar pages under **`docs/grammar/`** (not to `meta/`, `examples/`, or `proposals/`). Those pages are organized so a learner can finish **all beginner** sections across the folder before **intermediate**, then **advanced**. Levels are assigned with a **small fixed rubric**, applied **loosely** — enough consistency for a cross-doc path, not a score for every morph.
 
-This page is pedagogy, not language design. Design authority stays in the `docs/grammar/` pages. Prose and example style for those pages: [grammar-docs.md](grammar-docs.md). Rollout (folder move, `core.md` rename, banding): [migration-grammar-docs.md](migration-grammar-docs.md).
+This page is pedagogy, not language design. Design authority stays in the `docs/grammar/` pages. Prose and example style for those pages: [grammar-docs.md](grammar-docs.md).
 
 Grammar pages must not link here or mention `meta/` — editors use this rubric privately.
 
 ## Rubric (three questions)
+<a id="rubric-three-questions"></a>
 
 Ask in order. Prefer the **earlier** band when a concept sits on a boundary and learners need it to read ordinary examples.
 
@@ -29,9 +30,25 @@ Ask in order. Prefer the **earlier** band when a concept sits on a boundary and 
 - Boundary cases needed early for reading examples → prefer the **earlier** band.
 
 ## Cross-doc path
+<a id="cross-doc-path"></a>
 
-1. Read every **`docs/grammar/`** doc’s **Beginner** sections (start from [introduction.md](../grammar/introduction.md) for orientation, then [core.md](../grammar/core.md) **Beginner** for core sentences, then the other peers in that folder; exact order can be listed here once more docs carry section tags).
-2. Then every **Intermediate** section (including [core.md Intermediate](../grammar/core.md#intermediate)).
-3. Then every **Advanced** section.
+Read **`docs/grammar/`** only, in band order. [introduction.md](../grammar/introduction.md) is orientation (not a band).
 
-[core.md](../grammar/core.md) is the first grammar page with **Beginner** / **Intermediate** / **Advanced** bands; other `grammar/` docs still need the same pass ([migration](migration-grammar-docs.md)).
+### Beginner
+
+1. [introduction.md](../grammar/introduction.md) — purpose and feature criteria
+2. [core.md Beginner](../grammar/core.md#beginner)
+3. [phonology.md Beginner](../grammar/phonology.md#beginner) (letters / word edges; optional early)
+4. [reference-suffix.md Beginner](../grammar/reference-suffix.md#beginner)
+5. [pronouns.md](../grammar/pronouns.md#beginner) · [plurality.md](../grammar/plurality.md#beginner) · [questions.md](../grammar/questions.md#beginner)
+6. [predication.md](../grammar/predication.md#beginner) · [revisers.md](../grammar/revisers.md#beginner) · [restrictors.md](../grammar/restrictors.md#beginner)
+7. [coordination.md](../grammar/coordination.md#beginner) · [spans.md](../grammar/spans.md#beginner)
+8. [numbers.md](../grammar/numbers.md#beginner) · [comparatives.md](../grammar/comparatives.md#beginner) · [causation.md](../grammar/causation.md#beginner)
+9. [values.md](../grammar/values.md#beginner) · [special-vocabulary.md](../grammar/special-vocabulary.md#beginner) · [x-compounds.md](../grammar/x-compounds.md#beginner)
+
+### Intermediate then Advanced
+
+10. Every peer’s **[Intermediate](../grammar/core.md#intermediate)** section (same dependency order as above is fine).
+11. Every peer’s **Advanced** section.
+
+Learners can also follow the short path on [introduction.md § How to learn](../grammar/introduction.md#how-to-learn).
