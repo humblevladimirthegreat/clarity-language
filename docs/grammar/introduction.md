@@ -42,17 +42,30 @@ Clarity keeps three kinds of clarity in ordinary speech:
 ## How to learn from these docs
 <a id="how-to-learn"></a>
 
-Grammar pages use **Beginner** / **Intermediate** / **Advanced** sections so you can finish all Beginner material across this folder before Intermediate, then Advanced. This page is orientation only — not a learning band. Full numbered list: [index.md](index.md).
+Grammar pages use **Beginner** / **Intermediate** / **Advanced** sections so you can finish all Beginner material across this folder before Intermediate, then Advanced. This page is orientation only — not a learning band.
 
 Suggested **Beginner** order:
 
-1. [core.md](core.md#beginner) — clause shape, PoS, writing words, utterance framing
-2. [phonology.md](phonology.md#beginner) — letters and word edges (optional early)
-3. [reference-suffix.md](reference-suffix.md#beginner) — **-l** / **-m** / **-n** / **-r**
-4. [pronouns.md](pronouns.md#beginner), [plurality.md](plurality.md#beginner), [questions.md](questions.md#beginner)
-5. Remaining peers’ Beginner sections ([predication](predication.md#beginner), [revisers](revisers.md#beginner), [restrictors](restrictors.md#beginner), [coordination](coordination.md#beginner), [spans](spans.md#beginner), [numbers](numbers.md#beginner), [comparatives](comparatives.md#beginner), [causation](causation.md#beginner), [values](values.md#beginner), [special-vocabulary](special-vocabulary.md#beginner), [x-compounds](x-compounds.md#beginner))
+1. This page — purpose, design goals, how to learn, feature criteria
+2. [core.md](core.md#beginner) — clause shape, PoS, writing words, utterance framing, **`odo`**
+3. [phonology.md](phonology.md#beginner) — letters, word edges, phonotactics (optional early)
+4. [reference-suffix.md](reference-suffix.md#beginner) — **-l** / **-m** / **-n** / **-r**
+5. [pronouns.md](pronouns.md#beginner) — resume **-r**, special discourse pronouns
+6. [plurality.md](plurality.md#beginner) — associative **-sh**
+7. [questions.md](questions.md#beginner) — **jol** / **jom**, fill-ask, polar stance
+8. [predication.md](predication.md#beginner) — classification and identity (*to be*)
+9. [revisers.md](revisers.md#beginner) — prefix-less *including* / *rather* / *instead* / *except*
+10. [restrictors.md](restrictors.md#beginner) — `/h/` `/w/` applicability (*when*)
+11. [coordination.md](coordination.md#beginner) — joins (phrase, VP, clause)
+12. [spans.md](spans.md#beginner) — span fences and adjunct-scope islands
+13. [numbers.md](numbers.md#beginner) — numerals, ranges, measure phrases
+14. [comparatives.md](comparatives.md#beginner) — comparatives, superlatives, equatives
+15. [causation.md](causation.md#beginner) — necessary / sufficient, *if* / *because*
+16. [values.md](values.md#beginner) — needs and stances on `/h/` `/w/`
+17. [special-vocabulary.md](special-vocabulary.md#beginner) — closed morphs and mood roots
+18. [x-compounds.md](x-compounds.md#beginner) — mid-word **`x`** parser families
 
-Then every page’s **Intermediate**, then every page’s **Advanced**.
+Then every peer’s **Intermediate** section (same page order), then every peer’s **Advanced**.
 
 ## Criterion for features
 <a id="criterion-for-features"></a>
