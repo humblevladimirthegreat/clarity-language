@@ -42,7 +42,7 @@ Clarity keeps three kinds of clarity in ordinary speech:
 ## How to learn from these docs
 <a id="how-to-learn"></a>
 
-Grammar pages use **Beginner** / **Intermediate** / **Advanced** sections so you can finish all Beginner material across this folder before Intermediate, then Advanced. This page is orientation only — not a learning band.
+Grammar pages use **Beginner** / **Intermediate** / **Advanced** sections so you can finish all Beginner material across this folder before Intermediate, then Advanced. This page is orientation only — not a learning band. Full numbered list: [index.md](index.md).
 
 Suggested **Beginner** order:
 

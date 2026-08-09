@@ -51,4 +51,4 @@ Read **`docs/grammar/`** only, in band order. [introduction.md](../grammar/intro
 10. Every peer’s **[Intermediate](../grammar/core.md#intermediate)** section (same dependency order as above is fine).
 11. Every peer’s **Advanced** section.
 
-Learners can also follow the short path on [introduction.md § How to learn](../grammar/introduction.md#how-to-learn).
+Learner-facing numbered list: [grammar/index.md](../grammar/index.md). Short path also on [introduction.md § How to learn](../grammar/introduction.md#how-to-learn).
