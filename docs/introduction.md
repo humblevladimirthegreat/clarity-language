@@ -43,7 +43,7 @@ Clarity keeps three kinds of clarity in ordinary speech:
 
 Grammar pages use **beginner** / **intermediate** / **advanced** sections so you can finish all beginner material across docs before intermediate, then advanced. Rubric: **[learning-levels.md](meta/learning-levels.md)**. Prose and example style: **[grammar-docs.md](meta/grammar-docs.md)**.
 
-Start with [language-reference.md](language-reference.md) **Beginner** (PoS / orthography / utterance framing), then Beginner sections in the linked grammar docs. Orientation on this page is not a learning band.
+Start with [language-reference.md](language-reference.md) (core sentence grammar), then Beginner sections in the other grammar docs under `docs/`. Orientation on this page is not a learning band.
 
 ## Criterion for features
 <a id="criterion-for-features"></a>

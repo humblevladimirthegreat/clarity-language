@@ -11,7 +11,7 @@ This repo is TypeScript tooling around the language docs and lexicon. A web UI m
 | Source | Role |
 |--------|------|
 | `docs/introduction.md` | Purpose (compassion / rationality / empowerment), grammar design goals, learning path, feature criteria. |
-| `docs/language-reference.md` | **Source of truth** for core clause grammar (PoS, orthography, utterance framing, …). Revise it as design decisions land. Linked grammar docs own their subsystems. |
+| `docs/language-reference.md` | **Source of truth** for core sentence grammar (PoS, orthography, utterance framing, `/x/` continue, **`odo`**). Other grammar docs own their subsystems. |
 | `docs/meta/learning-levels.md` | Rubric for tagging grammar docs **beginner** / **intermediate** / **advanced** (cross-doc learning path — pedagogy, not design authority). |
 | `docs/meta/grammar-docs.md` | Style for learner-facing grammar prose (page skeleton, teach order, no process/corrective leftover text — pedagogy, not design authority). |
 | `docs/phonology.md` | Phonology and phonotactics (linked from the language reference). |

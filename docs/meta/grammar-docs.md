@@ -57,11 +57,26 @@ Front matter that orients (purpose, design goals, feature criteria — [introduc
 |-------|---------|
 | 1 | What you can *do* (English job) |
 | 2 | The Clarity shape (minimal pattern) |
-| 3 | Worked example(s) |
-| 4 | Contrast with near-misses — **only when there is a real trap** (below) |
-| 5 | Inventory / edge cases |
+| 3 | A **mnemonic** so the form sticks (below) |
+| 4 | Worked example(s) |
+| 5 | Contrast with near-misses — **only when there is a real trap** (below) |
+| 6 | Inventory / edge cases |
 
 Do not open a section with a complete paradigm table. Tables come after the pattern is usable.
+
+## Mnemonics
+
+Every teaching gets a **mnemonic** — something that makes the form memorable, not only grammatical.
+
+Usual sources (prefer one; reuse the language’s own systems):
+
+| Source | When |
+|--------|------|
+| **Metaphorical / lexicon sense** | Closed roots and overlays (`amala` ➡️ *right* → *therefore*; **`SAME`**, **`COMMENT`**, …) |
+| **Vowel series** | Join / force / polar stacks that share letter jobs (`a` inventory, `o` menu, `e` rank, `u` negation, …) |
+| **Ending letters** | **-l** / **-m** / **-n** / **-r** (and stance endings) when the ending *is* the lesson |
+
+One short cue is enough (table column, parenthetical, or a line under the rule). Do not invent a second mnemonic system beside metaphor, vowels, and endings when those already explain the form.
 
 ## Voice and length
 
@@ -137,7 +152,7 @@ Do **not** require a **Not this** column on every table, or a counter-example on
 | Level rubric / reading order | [learning-levels.md](learning-levels.md) |
 | Doc prose / example style | This page |
 | Goals / feature criteria | [introduction.md](../introduction.md) |
-| Core clause grammar hub | [language-reference.md](../language-reference.md) |
+| Core sentence grammar | [language-reference.md](../language-reference.md) |
 | Unassigned or rejected design | [TODO.md](../../TODO.md) or **Design notes** |
 | Multi-turn practice | [examples/](../examples/) |
 

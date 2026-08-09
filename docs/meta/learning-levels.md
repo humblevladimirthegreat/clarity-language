@@ -28,7 +28,7 @@ Ask in order. Prefer the **earlier** band when a concept sits on a boundary and 
 
 ## Cross-doc path
 
-1. Read every doc’s **Beginner** sections (start from [introduction.md](../introduction.md) for orientation, then [language-reference.md](../language-reference.md) PoS / orthography, then core linked docs; exact order can be listed here once section tags exist).
+1. Read every doc’s **Beginner** sections (start from [introduction.md](../introduction.md) for orientation, then [language-reference.md](../language-reference.md) for core sentences, then other grammar docs under `docs/`; exact order can be listed here once section tags exist).
 2. Then every **Intermediate** section.
 3. Then every **Advanced** section.
 
