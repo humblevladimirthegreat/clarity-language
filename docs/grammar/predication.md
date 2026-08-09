@@ -1,7 +1,7 @@
 # Predication (classification and identity)
 <a id="predication"></a>
 
-How Clarity says English *to be* for **kind / role** (*Sam is a teacher*) and **identity** (*Clark is Superman*) — without a general *to-be* verb. Scalar *as ADJ as* stays [equatives](comparatives.md#equatives). Location / relation (*on*, *at*) stay ordinary complex `/ɡ/`+`/b/` or `/h/`+`/b/` ([core.md](core.md#complex-adjectives-complex-adverbs-and-argument-nouns)).
+How Agelan says English *to be* for **kind / role** (*Sam is a teacher*) and **identity** (*Clark is Superman*) — without a general *to-be* verb. Scalar *as ADJ as* stays [equatives](comparatives.md#equatives). Location / relation (*on*, *at*) stay ordinary complex `/ɡ/`+`/b/` or `/h/`+`/b/` ([core.md](core.md#complex-adjectives-complex-adverbs-and-argument-nouns)).
 
 **Prerequisites:** [core.md](core.md) Beginner (clause shape, predicative `/ɡ/`); [reference-suffix.md](reference-suffix.md) Beginner.
 
@@ -109,7 +109,7 @@ Values still stack on the classifying `/ɡ/` (`gedagel w-…xa…`) when the poi
 | **-n** | named / conventional identity frame (rare; titled equivalence) |
 | **-r** | resume a prior identity ascription |
 
-| Clarity | Reading |
+| Agelan | Reading |
 |---------|---------|
 | `z<Clark>n gogunol b<Superman>n` | *Clark is (the same as) Superman* |
 | `z<Clark>n gogunom b<Superman>n` | soft: *Clark is basically Superman* |

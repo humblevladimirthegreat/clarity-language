@@ -27,7 +27,7 @@ Same split as number shorthand (`g+3` written, full CV spoken). Prefer brackets 
 | `[` … `]` | **cite** — attributed speech / cited wording (including title strings and proverbs cited as wording) |
 | `{` … `}` | **mention** — use–mention; form / label as designated surface; with **-n**, *the saying / proverb / title X* as a named unit |
 | `(` … `)` | **aside** — parenthetical digression; still asserted |
-| `<` … `>` | **opaque** — foreign, code, raw orthography; **do not** parse interior as Clarity |
+| `<` … `>` | **opaque** — foreign, code, raw orthography; **do not** parse interior as Agelan |
 
 **PoS:** write the PoS letter immediately before any **`@`** / **`~`** marks and the opening bracket (`d[…]`, `z{…}`, `h(…)`, `d<…>`).
 
@@ -63,7 +63,7 @@ Use a span when:
 - citing someone’s words, a title string, or a proverb **as wording** (**cite**)
 - mid-sentence parenthetical digression (**aside** — prefer PoS `/h/`; must not use floating `/j/`)
 - use–mention, or *the saying / title X* as a named unit (**mention**; prefer **`@`** / **-n** for the named-unit reading)
-- foreign, code, or other surface the parser must **not** read as Clarity (**opaque**)
+- foreign, code, or other surface the parser must **not** read as Agelan (**opaque**)
 - referring back to a prior span (**anaphor** **-r** / `…[=]`)
 
 Prefer **atomic** one-token forms for a single cited / mentioned / opaque token (`d[hi]`, `d<sushi>`). Prefer a nativized ordinary word when the surface wording is not the point.
@@ -184,7 +184,7 @@ EDGE **`a`** / **`e`** / **`o`** take **-l** / **-m** / **-n**. EDGE **`u`** is 
 
 **-r** is ordinary [anaphora](pronouns.md), not “resume citing.” `daxar` = *that (cite)* as object — matching the most recent **cite** (TYPE **a**). The pronoun’s PoS need not match the antecedent open’s PoS (`zaxar` = that cite as subject). No interior; no close.
 
-Named entities *inside* a cite / mention / aside still take ordinary PoS + **-n** (`z<Sam>n`). Opaque interiors are not parsed as Clarity words.
+Named entities *inside* a cite / mention / aside still take ordinary PoS + **-n** (`z<Sam>n`). Opaque interiors are not parsed as Agelan words.
 
 ### Writing ↔ speech map (core)
 

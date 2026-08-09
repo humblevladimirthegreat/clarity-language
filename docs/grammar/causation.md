@@ -2,19 +2,19 @@
 <a id="causation"></a>
 <a id="necessary-sufficient"></a>
 
-How Clarity encodes *A leads to B*, *A is enough for B*, and *B does not happen without A* — **without** a dedicated “cause arrow” word. Join **mechanics** stay in [coordination.md](coordination.md); join-relations in [special-vocabulary.md](special-vocabulary.md#join-relations); clause subordination shape in [core.md](core.md#dependent-clauses). This page owns **which** existing join / relation / restrictor carries sufficient vs necessary, plus the **`IF`** / **`IFF`** / **`BECAUSE`** root split.
+How Agelan encodes *A leads to B*, *A is enough for B*, and *B does not happen without A* — **without** a dedicated “cause arrow” word. Join **mechanics** stay in [coordination.md](coordination.md); join-relations in [special-vocabulary.md](special-vocabulary.md#join-relations); clause subordination shape in [core.md](core.md#dependent-clauses). This page owns **which** existing join / relation / restrictor carries sufficient vs necessary, plus the **`IF`** / **`IFF`** / **`BECAUSE`** root split.
 
 **Prerequisites:** [coordination.md](coordination.md) Beginner (inclusive / exclusion joins); [core.md](core.md) Intermediate ([dependent clauses](core.md#dependent-clauses) / **`odo`**); [pronouns.md](pronouns.md) Beginner (**`odo`**).
 
 ## Beginner
 <a id="beginner"></a>
 
-### Why Clarity splits the forms
+### Why Agelan splits the forms
 <a id="why-split"></a>
 
-English *cause* / *leads to* / *needs* collapses distinctions that drive common mistakes. Clarity keeps them **asymmetric**:
+English *cause* / *leads to* / *needs* collapses distinctions that drive common mistakes. Agelan keeps them **asymmetric**:
 
-| Trap | Clarity nudge |
+| Trap | Agelan nudge |
 |------|----------------|
 | Treating one cause as the **only** cause | Default = **open inclusive** (*would work* / *open to*; others may count) |
 | Confusing **sufficient** with **necessary** | Two **different** constructions — never one bare *cause* join |
@@ -34,7 +34,7 @@ Condition type is carried by **which** join / relation / restrictor you use, plu
 
 **Default layout:** consequent is the **host** (effect clause, outcome NP, or event being framed); antecedent sits in the **open-inclusive** or **without** slot (`…aom`, `haon b-…`, `huan b-…`, …).
 
-Informal glosses like *effort ⇒ promotion* are English-only teaching shortcuts — Clarity has no mid-clause arrow.
+Informal glosses like *effort ⇒ promotion* are English-only teaching shortcuts — Agelan has no mid-clause arrow.
 
 ### Sufficient (default everyday claim)
 <a id="sufficient"></a>
@@ -50,7 +50,7 @@ When both poles are **nouns / phrases**, reuse the inclusive family already in [
 
 Closed **`…aol`** (*X is enough* / full inclusive story) is the **stronger** twin — use when this alone settles the inclusive frame, not as the casual default.
 
-| Clarity (schematic) | Reading |
+| Agelan (schematic) | Reading |
 |---------------------|---------|
 | `… haon bazem` on a promote / promotion frame | *promotion is open to effort (among routes)* |
 | `zazem zaom` inside an outcome / goal frame whose host is promotion | *effort would work (for that outcome)* |
@@ -71,7 +71,7 @@ Use exclusion / never — not a different gloss on `ao` / `aom`:
 | **`guan` / `huan`** | *without / excluding* the antecedent on the **effect** |
 | **`hal`** (restrictor) | *never* under the circumstance where the antecedent is absent |
 
-| Clarity (schematic) | Reading |
+| Agelan (schematic) | Reading |
 |---------------------|---------|
 | `… huan bogulol` on raining | *raining excluding / without clouds* |
 | rain clause + **`hal`** under no-clouds circumstance | *never rains when …* |
@@ -166,10 +166,10 @@ Particular episode (*this delay was caused by…*) vs standing law (*clouds for 
 
 Causal “laws” show their warrant via evidentiality and universality — not via a stronger join.
 
-### English → Clarity
+### English → Agelan
 <a id="english-cues"></a>
 
-| English cue | Clarity |
+| English cue | Agelan |
 |-------------|---------|
 | *caused by* + how you know | condition shape (sufficient / necessary) + evidential `/h/` |
 | *leads to* / *results in* (ordinary) | open sufficient (`…aom` / `haon`, …) |

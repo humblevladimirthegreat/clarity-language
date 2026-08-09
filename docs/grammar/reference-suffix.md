@@ -93,7 +93,7 @@ Named individuals, places, one-off objects, titled works: *Sam*, *Paris*, *the O
 |-------|---------|---------|
 | **Foreign** multipart (donor spelling in one `<>`) | `z<Mary Smith>n` | *Mary Smith* (one person) — space inside `<>` OK |
 | same under other slots | `d<New York>n`, `b<Leonardo da Vinci>n` | one named place / person as object or argument |
-| **Nativized** multipart (Clarity roots + mid-word **`x`**) | `zuzuzuxogeven` | *Sushi-Coffee* as one nativized label |
+| **Nativized** multipart (Agelan roots + mid-word **`x`**) | `zuzuzuxogeven` | *Sushi-Coffee* as one nativized label |
 
 **Trap:** adjacent bare same-role words (`z<Mary>n z<Smith>n`) look like two people in a [join](coordination.md) (*Mary and Smith*). One word (foreign `<>` or nativized **`x`-compound**) keeps **one** resume target and one slot filler.
 
@@ -139,7 +139,7 @@ A **named circumstance, channel, or standard** framing the clause. Aligns with [
 
 #### Borrowed and cited forms
 
-Foreign / code surfaces use [opaque spans](spans.md) (`d<sushi>` / …). Use–mention and *the title X* as a named unit use [mention](spans.md) (often **-n**); long work titles prefer [cite](spans.md). **Nativized loans** (adapted Clarity root + ordinary ending) need no span. Compact multipart person/place names: [phrasal proper names](#phrasal-proper-names).
+Foreign / code surfaces use [opaque spans](spans.md) (`d<sushi>` / …). Use–mention and *the title X* as a named unit use [mention](spans.md) (often **-n**); long work titles prefer [cite](spans.md). **Nativized loans** (adapted Agelan root + ordinary ending) need no span. Compact multipart person/place names: [phrasal proper names](#phrasal-proper-names).
 
 #### Summary by role letter
 

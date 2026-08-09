@@ -276,7 +276,7 @@ function* clarityRootCandidates(input: string): Generator<string> {
 }
 
 /**
- * Convert an alphabetical string into a Clarity-compatible root of form V(CV)+.
+ * Convert an alphabetical string into an Agelan-compatible root of form V(CV)+.
  * Vowel and consonant tracks are zipped with wraparound to fill the requested syllable count.
  */
 export function toClarityWord(input: string, syllables: number): string {
@@ -289,7 +289,7 @@ export function toClarityWord(input: string, syllables: number): string {
 }
 
 /**
- * Assign a unique Clarity root using tiered collision resolution.
+ * Assign a unique Agelan root using tiered collision resolution.
  * Tries 2-syllable track variants first, then hyphen segments, reverse tracks,
  * a single 3-syllable expansion (5 letters max), filler consonants, and hash fallback.
  */
@@ -302,6 +302,6 @@ export function toUniqueClarityWord(input: string, usedRoots: Set<string>): stri
   }
 
   throw new Error(
-    `Could not assign unique Clarity root for "${input}" within ${MAX_ROOT_LENGTH} letters`,
+    `Could not assign unique Agelan root for "${input}" within ${MAX_ROOT_LENGTH} letters`,
   );
 }

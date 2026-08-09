@@ -54,7 +54,7 @@ These are **content verbs**, not VP soft-packaging joins. Soft packaging (includ
 
 **Key contrasts** (English near-misses):
 
-| | Clarity | Gloss |
+| | Agelan | Gloss |
 |--|---------|--------|
 | refuse vs exclude | `zumogon demadel vun` vs `zumogon demadel vuan` | *I refuse meat* vs *I exclude meat* |
 | exclude vs anything but | `zumogon d<nut>l vuan` vs `zumogon d<nut>l vuon` | *I exclude nuts* vs *I bar nuts (anything else is fine)* |
@@ -119,7 +119,7 @@ gloss: `z-someone` · `d-me` · `v-attack` · `z-attack-agent-r` · `v-flee`
 *Someone attacked me. The attacker fled.*
 ```
 
-| Clarity | Gloss |
+| Agelan | Gloss |
 |---------|--------|
 | `zax<attack>l` | *an attacker* (kind; no discourse event required) |
 | `dux<attack>r` | *the one attacked* (as object now) |
@@ -253,7 +253,7 @@ These are **not** phrase named-list joins and **not** [restrictors](restrictors.
 
 **Key contrasts:**
 
-| | Clarity | Gloss |
+| | Agelan | Gloss |
 |--|---------|--------|
 | refuse vs exclude | `bemadel gun` vs `bemadel guan` | *anti-meat* vs *without meat* |
 | exclude vs anything but | `b<nut>l guan` vs `b<nut>l guon` | *without nuts* vs *open to anything but nuts* |
@@ -311,7 +311,7 @@ gloss: `h-ABIL-incapable-temporary`
 
 Stack when useful: e.g. can’t-sing plus unmet competence (`v<sing>xum` + `hodoloxum`). Bare **`hal`** (*never*) is applicability, not tagged incapability. Need-root **`xu`** stays unmet need, not ability. Unspecified need **`egege`** 🥚 (*potential*) is not **`ABIL`**.
 
-| Clarity (schematic) | Reading |
+| Agelan (schematic) | Reading |
 |---------------------|---------|
 | `v<sing>xul` | can’t sing **right now** |
 | `v<sing>xum` | can’t sing yet / may become able |
@@ -362,7 +362,7 @@ Use COMMENT when the clause is doing **first-person cognitive commentary**. Thir
 | *hope / wish …* (intention) | motive (`xe`) and/or [**PLAN**](#plan-predict) / soft force |
 | *believe …* | [evidentiality](#evidentiality) (`huhunum`, `herarem`, …) |
 
-| Clarity | Reading |
+| Agelan | Reading |
 |---------|---------|
 | `z<meeting>l wodoloxul hogenal hagenal` | *I fear the meeting* — unmet competence; flood; room awash — no COMMENT |
 | `… howarom …` | *I hope to …* (intention) — soft plan; no COMMENT |
@@ -422,7 +422,7 @@ Use NOTIONAL when the clause is **framed as pretensive / for-the-sake-of-argumen
 | notional **amount** / soft imaginary magnitude | free number forms (`grubul`, `grubum`, …) — [numbers.md](numbers.md#imaginary) |
 | quasi-*kind* (*quasi-friend*) | numeric derivation **`ROOTx-e-`** — [quasi](#quasi) |
 
-| Clarity | Reading |
+| Agelan | Reading |
 |---------|---------|
 | `… hedahem zumogon v<win>l.` | *as if I win* — soft notional frame |
 | `… hedaher …` | notional frame *and* step back toward contact |
@@ -449,7 +449,7 @@ NOTIONAL is a **root choice**, not `xa`/`xu` polarity and not a free digitless n
 
 When an opaque emotion word (*anxious*, *resentful*, *proud*, …) is doing **judgment or explanation** work, drop the emotion label and **compose** from pieces — value + activation + locus.
 
-| Piece | Clarity |
+| Piece | Agelan |
 |-------|---------|
 | Situation / judged host | ordinary NP / clause content |
 | Need + met / unmet (+ changeability) | ordinary [value](values.md) word on that host (`wodoloxul`, `wodoloxam`, …) |
@@ -488,7 +488,7 @@ Parallel INTERNAL / CIRCUM cues: *flood bottled* / *flow held* / *still in the v
 
 **Recipe:** neutral description + **one value ascription** + **one ACT** + **one LOCUS**.
 
-| Clarity | Reading |
+| Agelan | Reading |
 |---------|---------|
 | `z<talk>l wodoloxul hogenal hagenal` | *anxious about the talk* → talk costs competence (temporary); flood; room awash (circumstantial) |
 | `z<split>l wogonoxum hogenal hoburol` | *resentful about the split* → unmet relatedness; flood poured onto them |
@@ -502,7 +502,7 @@ ACT and LOCUS are **root choices**, not `xa`/`xu` polarity. They are not a secon
 ### Plan / predict
 <a id="plan-predict"></a>
 
-English future cues (*will*, *going to*, *tomorrow*, …) smuggle whether you mean **intention** or **forecast**. Clarity keeps that fork as **two closed mood roots**.
+English future cues (*will*, *going to*, *tomorrow*, …) smuggle whether you mean **intention** or **forecast**. Agelan keeps that fork as **two closed mood roots**.
 
 | Claim | Prefer | Lexicon root |
 |-------|--------|--------------|
@@ -553,7 +553,7 @@ First-person *I think* / rumination is [**COMMENT**](#comment) (`uho`). *Believe
 
 Channel is a **root choice**, not `xa`/`xu` on the claim host. Stack with **PREDICT**, causation shapes, [universality](#universality) **NATURAL**, other-minds content, ….
 
-| Clarity (schematic) | Reading |
+| Agelan (schematic) | Reading |
 |---------------------|---------|
 | `… huhunum …` | *per memory / witnessed* (reconstructive) |
 | `… herogem …` | *on record / recorded* |
@@ -581,7 +581,7 @@ Ordinary content still available: `zuhunul` *a memory*; `verogel` *to record*; `
 
 Idiom cue: *fish a boot* = retrieve the wrong past (🥾 `obodo` *boot* stays free for the punchline).
 
-| English cue | Clarity |
+| English cue | Agelan |
 |-------------|---------|
 | *caused / predicted, inferred* | claim shape + **`hevem`** |
 | *caused / predicted from pattern*; *always by nature* + pattern | claim shape (+ **`hafafal`** if natural) + **`hawam`** |
@@ -630,7 +630,7 @@ Ordinary PoS still available (`zubezul` *a puzzle piece*; `vegogel` *to unlock*;
 
 Prefer at least **`g#1`**; often name a second candidate. Soft **-m** on the number when the order is tentative.
 
-| English cue | Clarity |
+| English cue | Agelan |
 |-------------|---------|
 | `problem1` / `solution2` / `goal3` | `zubezul g#1` / `zegogel g#2` / `zogalol g#3` |
 | *the problem* / *the solution* / *the goal* (ideation) | number candidates |
@@ -669,7 +669,7 @@ English *always* / *every* / *never* / *everyone* smuggle **how exceptionless** 
 
 **Three axes stay distinct:**
 
-| Axis | Clarity |
+| Axis | Agelan |
 |------|---------|
 | Domain (*who / when*) | `zual` / `hual` / SHARED kind — [universals](coordination.md#universals-domains-generics) |
 | Inventory softness | join **-l** / **-m** (`zual` vs `zuam`, `hual` vs `huam`) |
@@ -689,7 +689,7 @@ English *always* / *every* / *never* / *everyone* smuggle **how exceptionless** 
 
 Warrant is a **root choice**, not `xa`/`xu` on the quantifier host. Domain stays `zual` / `hual`; the mood **frames the claim**.
 
-| Clarity (schematic) | Reading |
+| Agelan (schematic) | Reading |
 |---------------------|---------|
 | `… hual … hewonol` | *always, usually* (default warrant) |
 | `… hual … hululul` | *always, as far as I’ve checked* (no counterexample comes to mind) |
@@ -698,7 +698,7 @@ Warrant is a **root choice**, not `xa`/`xu` on the quantifier host. Domain stays
 | `… hual … hebebel b<chess>l` | *always, under chess* |
 | `zuam gagadal … hewonol` | soft domain *every cat that comes to mind* + usual warrant |
 
-| English cue | Clarity |
+| English cue | Agelan |
 |-------------|---------|
 | *always / everyone / never, usually* | domain fence (`hual` / `zual` / `hal` / …) + **`hewonol`** |
 | *always / never, as far as I’ve checked* | domain fence + **`hululul`** |

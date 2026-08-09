@@ -535,7 +535,7 @@ In [preferred writing](#writing-preferred-shorthand): **`%`** → speech **`jo`*
 
 #### What each closer is for
 
-| English habit | Clarity |
+| English habit | Agelan |
 |---------------|---------|
 | `25% of X` (portion) | whole NP + `/ɡ/` **`…jo`** — [denominator](#percent-denominators) |
 | `+2 percentage points` / `from 10% to 12%` point delta | **`ju`** (often as `/v/` **`ra`** / **`ru`**: increase/decrease by that point amount) |

@@ -9,7 +9,7 @@ const PHASE5_RULES = `Phase 5 rules for metaphorical glosses:
 - Do not reuse metaphors already taken (listed when provided).`;
 
 export function pass1SystemPrompt(): string {
-  return `You help assign English metaphor lemmas to emoji lexicon rows for the Clarity language dictionary.
+  return `You help assign English metaphor lemmas to emoji lexicon rows for the Agelan language dictionary.
 
 ${PHASE5_RULES}
 
@@ -43,7 +43,7 @@ Return a JSON array of up to ${perChunkTop} picks, best first.`;
 }
 
 export function pass2SystemPrompt(): string {
-  return `You help finalize metaphor assignments for the Clarity language emoji lexicon.
+  return `You help finalize metaphor assignments for the Agelan language emoji lexicon.
 
 ${PHASE5_RULES}
 

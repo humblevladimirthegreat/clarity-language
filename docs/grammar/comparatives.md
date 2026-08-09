@@ -1,7 +1,7 @@
 # Comparatives, superlatives, and equatives
 <a id="comparatives-page"></a>
 
-How Clarity does scalar comparison: *more … than*, *the …-est*, *as … as*, measured differentials (*two inches taller*), and **judgment benchmarks** (*worse than Average|Typical|Mine|…*). Fence join vowels and SHARED placement stay in [coordination.md](coordination.md); this page says when those forms mean comparison rather than ordinary ranking or bundle description.
+How Agelan does scalar comparison: *more … than*, *the …-est*, *as … as*, measured differentials (*two inches taller*), and **judgment benchmarks** (*worse than Average|Typical|Mine|…*). Fence join vowels and SHARED placement stay in [coordination.md](coordination.md); this page says when those forms mean comparison rather than ordinary ranking or bundle description.
 
 Absolute (non-comparative) scalars stay unfenced: `z<Sam>n g<big>l` = *Sam is big* ([predication](predication.md#zero-copula)). Kind / role and identity: [predication.md](predication.md) — not this page’s equative **`ae`**.
 
@@ -214,7 +214,7 @@ Soft personal standard: **`zumogoxrawom`**. Ordinary named people stay ordinary 
 
 **Everyone** vs focus reverse-superlative: `zuel g<SCALE>l z<JUDGED>l` ≈ *the least … of all* in the discourse domain; **`zuan`** as comparee **names** the universal class explicitly. Prefer the benchmark when the point is “against everyone as a standard.” Bare closed **`zual`** remains ordinary *everything / everyone* in non-benchmark slots.
 
-| Clarity | Reading |
+| Agelan | Reading |
 |---------|---------|
 | `zuel g<sing>l zumogon zaloban` | *worse than Professional* at singing |
 | `zuem g<clear>l zebunem zonugon` | soft: draft is somewhat less clear than Average |

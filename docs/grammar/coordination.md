@@ -9,7 +9,7 @@ Prefixed **joins** coordinate same-slot material — noun phrases, verb phrases,
 
 ### What you use joins for
 
-You use joins when English would say *and*, *or*, *not*, *prefer A over B*, *something*, or *everything but*. Clarity spells that job with a **PoS prefix** + **vowel root** (+ stacked vowel when needed) + **ending**.
+You use joins when English would say *and*, *or*, *not*, *prefer A over B*, *something*, or *everything but*. Agelan spells that job with a **PoS prefix** + **vowel root** (+ stacked vowel when needed) + **ending**.
 
 | Level | Prefix | Example job |
 |-------|--------|-------------|
@@ -412,7 +412,7 @@ No **u** on plain **u**, and no **u** on stacked **ao** / **ae** / **oe**. No **
 
 **Inclusive (`ao`)** — one or more may hold. **-m** on **ao** does **not** allow empty.
 
-**Negation distribution (not De Morgan):** negation over a join is **distributive** — it pushes into each conjunct and **keeps the same join vowel**. Clarity does **not** flip *and*↔*or* under negation.
+**Negation distribution (not De Morgan):** negation over a join is **distributive** — it pushes into each conjunct and **keeps the same join vowel**. Agelan does **not** flip *and*↔*or* under negation.
 
 ```
 `A B val vul.`

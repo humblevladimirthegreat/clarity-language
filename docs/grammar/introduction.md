@@ -1,10 +1,12 @@
-# Introduction to Clarity
+# Introduction to Agelan
+
+**Agelan** (`agela` + proper **-n**) translates to English *clarity*.
 
 Why the language exists, how the grammar supports that, how to read the docs, and what bars new features must meet. Core clause grammar starts in [core.md](core.md).
 
 ## Purpose
 
-Clarity encodes psychological concepts and techniques into vocabulary and grammar so that using the language nudges you toward better habits. For example, there are two words for *to say*: one means “they literally said,” and the other “I perceived the meta-message to be.” That split helps you notice when you are adding your own interpretation, and it helps speakers stay mindful of attitude toward the listener.
+Agelan encodes psychological concepts and techniques into vocabulary and grammar so that using the language nudges you toward better habits. For example, there are two words for *to say*: one means “they literally said,” and the other “I perceived the meta-message to be.” That split helps you notice when you are adding your own interpretation, and it helps speakers stay mindful of attitude toward the listener.
 
 The design aims at three outcomes, in this order:
 
@@ -29,7 +31,7 @@ Two supporting goals sit beside the psychology:
 - **Unambiguous but usable** — so tutoring and other tools can rely on the parse without making ordinary speech hard.
 - **Singable phonology** — syllable shape chosen to be easy to sing ([phonology.md](phonology.md)).
 
-Clarity keeps three kinds of clarity in ordinary speech:
+Agelan keeps three kinds of clarity in ordinary speech:
 
 **Syntactic.** Every content word carries a PoS prefix, so role in the clause does not depend on guessing from English-style word class. Default order is SOV, but free order is safe because the prefix is authoritative.
 

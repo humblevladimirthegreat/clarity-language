@@ -27,9 +27,9 @@ const readingOrder = [
 ]
 
 export default defineConfig({
-  title: 'Clarity Grammar',
+  title: 'Agelan Grammar',
   description:
-    'Learner grammar for Clarity — compassion, rationality, and empowerment encoded in vocabulary and grammar.',
+    'Learner grammar for Agelan — compassion, rationality, and empowerment encoded in vocabulary and grammar.',
   base: '/grammar/',
   // Repo root `dist/grammar/` so Amplify can publish `dist/` and serve at /grammar/
   outDir: '../../dist/grammar',

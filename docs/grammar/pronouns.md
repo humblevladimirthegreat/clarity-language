@@ -1,6 +1,6 @@
 # Pronouns
 
-Once something is on the table, you point back with a **-r** form — Clarity has no separate “the X” article. Special discourse roles (**`umogo`** / **`ehado`** / **`ana`** / **`enu`** / **`odo`**) are separate closed roots, not letter stems from ordinary antecedents.
+Once something is on the table, you point back with a **-r** form — Agelan has no separate “the X” article. Special discourse roles (**`umogo`** / **`ehado`** / **`ana`** / **`enu`** / **`odo`**) are separate closed roots, not letter stems from ordinary antecedents.
 
 **Prerequisites:** [core.md](core.md) Beginner; [reference-suffix.md](reference-suffix.md) Beginner (**-r** = resume).
 
@@ -97,7 +97,7 @@ gloss: `z-speaker` · `v-told` · `d-Sam` · `d-next-clause` · `z-Lea` · `v-le
 
 ### How English approximates **-r**
 
-Clarity has one resume mechanism; English does not. Approximate by crossing **what was mentioned** (antecedent role) with **what slot you need now** (pronoun role). The referent stays the same; only the English wording changes.
+Agelan has one resume mechanism; English does not. Approximate by crossing **what was mentioned** (antecedent role) with **what slot you need now** (pronoun role). The referent stays the same; only the English wording changes.
 
 **Pronoun `/x/` vs `/h/`:** `/x/`…`-r` is **discourse navigation** — *going back to subject X* / *returning to that thread* (removing it does not change the following claim). Clause **aboutness** (*regarding X*) stays `/h/` + `/b/` X — [adverbs](core.md#adverbs-h) / [discourse markers](core.md#discourse-markers-x).
 
@@ -120,7 +120,7 @@ Clause-force `/j/` is not resumed with `-r` ([utterance markers](core.md#utteran
 
 #### Quick English cheat sheet
 
-| You want English… | Typical Clarity shape |
+| You want English… | Typical Agelan shape |
 |-------------------|------------------------|
 | *he / she / it / they* (entity again) | Noun antecedent → `/z/` `/d/` or `/b/` …`-r` |
 | *do so* / *do that* | Verb antecedent → `/v/` …`-r` |
@@ -157,7 +157,7 @@ Same referent, new role — English needs a longer paraphrase. Full PoS×PoS tab
 
 **`odo` chaining.** A dependent may itself end in **`odo`**. Takes the role letter of the slot it fills (`/d/` complement, `/b/` under `/h/` *because* / *if*, etc.).
 
-| Clarity | Reading |
+| Agelan | Reading |
 |---------|---------|
 | `zumogon v<go>l` | *I go* (implied **`jal`**) |
 | `zumogon v<write>l dehadon` | *I write you* (letter / message — same roots) |
@@ -176,7 +176,7 @@ Prefer **`ana`** over a speaker+listener join when the point is **co-participant
 ### Cross-role inventory
 <a id="cross-role-inventory"></a>
 
-Each subsection is an **antecedent** role; table rows are the **pronoun** role. Reading aid only — Clarity still has one **-r** mechanism.
+Each subsection is an **antecedent** role; table rows are the **pronoun** role. Reading aid only — Agelan still has one **-r** mechanism.
 
 #### Antecedent was a noun (`/z/`, `/d/`, or `/b/`)
 

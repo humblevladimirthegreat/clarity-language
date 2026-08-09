@@ -1,5 +1,5 @@
 /**
- * Convert English text to a Clarity root.
+ * Convert English text to an Agelan root.
  *
  * Run: npm run convert-word -- fishing
  *      npm run convert-word -- --unique fishing

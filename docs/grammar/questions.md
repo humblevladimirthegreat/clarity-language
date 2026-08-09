@@ -1,6 +1,6 @@
 # Questions
 
-How to **ask** in Clarity: question force (**jol** / soft **jom**), yes/no vs fill-ask, multi-gap **fill-all**, and **polar stance** particles (**`jael`** / **`juel`** / …). Fence forms and their **statement** readings live in [coordination.md](coordination.md). Force inventory and turn vs continue: [core.md](core.md#utterance-markers-j).
+How to **ask** in Agelan: question force (**jol** / soft **jom**), yes/no vs fill-ask, multi-gap **fill-all**, and **polar stance** particles (**`jael`** / **`juel`** / …). Fence forms and their **statement** readings live in [coordination.md](coordination.md). Force inventory and turn vs continue: [core.md](core.md#utterance-markers-j).
 
 **Prerequisites:** [core.md](core.md) Beginner (especially [clause force](core.md#clause-force-beginner)); [reference-suffix.md](reference-suffix.md) Beginner.
 

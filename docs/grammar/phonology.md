@@ -1,7 +1,7 @@
 # Phonology and phonotactics
 <a id="phonology"></a>
 
-How Clarity **sounds** and how syllables are built. Goals: easy to sing, spelling that shows pronunciation, and clear word boundaries (including inside compounds). This is the only grammar page that uses **IPA**.
+How Agelan **sounds** and how syllables are built. Goals: easy to sing, spelling that shows pronunciation, and clear word boundaries (including inside compounds). This is the only grammar page that uses **IPA**.
 
 **Prerequisites:** none for the letter charts; [core.md](core.md) Beginner helps for PoS prefixes and writing tokens.
 
@@ -10,7 +10,7 @@ How Clarity **sounds** and how syllables are built. Goals: easy to sing, spellin
 
 ### Why these sounds
 
-Clarity prefers vowels that are not fully open or fully closed, so you can sing high and low without heavy vowel modification. Consonants prefer the **voiced** version so you can sustain a note across letters (voiceless stops the airflow briefly). You may still use unvoiced variants for style.
+Agelan prefers vowels that are not fully open or fully closed, so you can sing high and low without heavy vowel modification. Consonants prefer the **voiced** version so you can sustain a note across letters (voiceless stops the airflow briefly). You may still use unvoiced variants for style.
 
 **Mnemonic:** singable vowels + clear edges — spelling shows the sound.
 

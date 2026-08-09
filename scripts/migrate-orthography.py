@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Migrate docs: strip PoS hyphens; English roots → published Clarity or PoS<…>ENDING."""
+"""Migrate docs: strip PoS hyphens; English roots → published Agelan or PoS<…>ENDING."""
 
 from __future__ import annotations
 
@@ -21,7 +21,7 @@ FALSE_FRIENDS = {
     "wave",  # ocean wave in emotion docs may be ogena; greeting awe — context-sensitive
 }
 
-# Pedagogical spellings → English gloss to resolve (or Clarity root if value is a root).
+# Pedagogical spellings → English gloss to resolve (or Agelan root if value is a root).
 ALIAS_ROOT = {
     "susi": "sushi",  # old fake nativization; published root is uzuzu
     "meato": "meat",
@@ -34,7 +34,7 @@ MERGED_NAME_ENDINGS = {
     "Superman": ("Superman", "n"),
 }
 
-# Closed / special Clarity roots (strip hyphen only; never wrap in <>).
+# Closed / special Agelan roots (strip hyphen only; never wrap in <>).
 SPECIAL_ROOTS = {
     "ivo",
     "ile",
@@ -116,7 +116,7 @@ def is_clarity_shaped(root: str) -> bool:
 
 
 def resolve_simple(english: str, ending: str) -> tuple[str, str]:
-    """Return (root_writing, ending) — root_writing is bare Clarity or <Foreign>."""
+    """Return (root_writing, ending) — root_writing is bare Agelan or <Foreign>."""
     # Alias pedagogical / typo spellings to a gloss (preserve capitalization for <>).
     key = english.lower()
     if key in ALIAS_ROOT:
@@ -127,7 +127,7 @@ def resolve_simple(english: str, ending: str) -> tuple[str, str]:
     if key in FALSE_FRIENDS:
         return f"<{english}>", ending
 
-    # Closed special / published Clarity root used as itself (ivo, oguno, ogena, …)
+    # Closed special / published Agelan root used as itself (ivo, oguno, ogena, …)
     if key in SPECIAL_ROOTS:
         return key, ending
     if (

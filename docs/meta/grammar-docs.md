@@ -1,6 +1,6 @@
 # Grammar doc style (for learners)
 
-How to write Clarity **grammar docs** under **`docs/grammar/`** so a learner can use them. Applies **only** to that folder (not to `meta/`, `examples/`, or `proposals/`). Design authority for morphology stays in those pages (core sentence grammar: [core.md](../grammar/core.md)); this page standardizes **pedagogy and prose** only.
+How to write Agelan **grammar docs** under **`docs/grammar/`** so a learner can use them. Applies **only** to that folder (not to `meta/`, `examples/`, or `proposals/`). Design authority for morphology stays in those pages (core sentence grammar: [core.md](../grammar/core.md)); this page standardizes **pedagogy and prose** only.
 
 Grammar pages must **not** link to or mention `meta/` or any other folder outside `grammar/` — only peer links inside `grammar/`. Editors follow this page and [learning-levels.md](learning-levels.md) privately. Banding / folder move history: [migration-grammar-docs.md](migration-grammar-docs.md) (complete).
 
@@ -58,7 +58,7 @@ Front matter that orients (purpose, design goals, feature criteria — [introduc
 | Order | Content |
 |-------|---------|
 | 1 | What you can *do* (English job) |
-| 2 | The Clarity shape (minimal pattern) |
+| 2 | The Agelan shape (minimal pattern) |
 | 3 | A **mnemonic** so the form sticks (below) |
 | 4 | Worked example(s) |
 | 5 | Contrast with near-misses — **only when there is a real trap** (below) |
@@ -85,8 +85,8 @@ One short cue is enough (table column, parenthetical, or a line under the rule).
 - Address the learner in second person (“use **-r** when…”, “prefer names when…”).
 - One idea per H2/H3; the first paragraph should be roughly one short explanation (same bar as the [easy-to-use feature criterion](../grammar/introduction.md#criterion-for-features)).
 - Prefer short paragraphs plus a table over a wall of prose.
-- Bold sparingly; put Clarity forms in backticks (`jal`, **-r**, `/ɡ/`).
-- Always call the language **Clarity**.
+- Bold sparingly; put Agelan forms in backticks (`jal`, **-r**, `/ɡ/`).
+- Always call the language **Agelan**.
 
 ## Plain language (no assumed linguistics)
 
@@ -96,7 +96,7 @@ Do **not** assume the reader knows linguistics jargon. Write for a motivated lea
 |----|--------|
 | Prefer everyday English for the job (*statement*, *ask*, *main clause*, *at the end of…*) | Lead with bare terms like *assertoric*, *illocution*, *matrix-final*, *predicative*, *prosody*, *paradigm* |
 | If a short technical label helps later cross-links, **define it in the same breath** on first use | Use the label alone and hope context teaches it |
-| Keep Clarity-invented labels that the page is teaching (`clause force`, *turn* vs *continue*) and gloss them once | Stack several undefined jargon words in one sentence |
+| Keep Agelan-invented labels that the page is teaching (`clause force`, *turn* vs *continue*) and gloss them once | Stack several undefined jargon words in one sentence |
 | School-grammar words (*subject*, *direct object*, *adverb*) are fine when the English job is clear | Pack morphosyntax shorthand (*zero-copula*, *right-bound*, *adjunct*, *complement clause*) without a plain gloss |
 
 **Test:** would a careful reader who never took a linguistics class still get the rule from the first paragraph and the example? If not, rewrite the lead in plain words and demote the technical term to a parenthetical or a later Intermediate note.
@@ -135,9 +135,9 @@ State the **positive** rule. Do **not** list negatives by default — neither a 
 | Write **prefix + root + ending** as one token: `zumogon` | “…as one token — **no hyphen** after the PoS letter” |
 | Vocatives sit in the left-edge cluster | “Vocatives **do not** appear mid-clause” *with no learner reason to try that yet* |
 
-**Negatives earn their keep only when** a learner is expected to make that mistake — typically an English false friend, or another Clarity construction they will reach for. Then one decisive contrast (sentence or table cell) with the right link is enough. Cross-link once; do not restate the other doc.
+**Negatives earn their keep only when** a learner is expected to make that mistake — typically an English false friend, or another Agelan construction they will reach for. Then one decisive contrast (sentence or table cell) with the right link is enough. Cross-link once; do not restate the other doc.
 
-Clarity often earns them: sibling-subsystem swaps (`-sh` vs **`ana`**, classification vs **`SAME`**, free `g+e` vs `ROOTx+e`, join **-r** vs content **-r**).
+Agelan often earns them: sibling-subsystem swaps (`-sh` vs **`ana`**, classification vs **`SAME`**, free `g+e` vs `ROOTx+e`, join **-r** vs content **-r**).
 
 **Skip negatives when:**
 
