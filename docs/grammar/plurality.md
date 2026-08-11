@@ -1,8 +1,6 @@
 # Plurality
 
-Optional **-sh** after the [reference suffix](reference-suffix.md) marks an **associative group** — **anchor and associates** — as the discourse referent. It is not a separate “they” lexeme, not quantity, not *every*, and not habituality. Resume detail stays in [pronouns.md](pronouns.md); this page owns when and how **-sh** applies.
-
-**Prerequisites:** [core.md](core.md) Beginner; [reference-suffix.md](reference-suffix.md) Beginner; [pronouns.md](pronouns.md) Beginner (for person-role forms).
+Optional **-sh** after the [reference suffix](reference-suffix.md) marks an **associative group** — *anchor and associates* — not quantity, not *every*, not habituality. Resume detail: [pronouns.md](pronouns.md).
 
 ## Beginner
 <a id="beginner"></a>

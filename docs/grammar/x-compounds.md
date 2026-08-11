@@ -2,11 +2,7 @@
 <a id="x-compounds"></a>
 <a id="compound-parser"></a>
 
-How to **disambiguate mid-word `x`**. Mid-word **`x`** is only the [compound joiner](phonology.md#phonotactics) — never an ordinary root consonant. Word-initial **`x`** is the discourse-marker PoS — not this page.
-
-Family-specific morphology lives on the owner pages; this page is the **parser cue** map.
-
-**Prerequisites:** [core.md](core.md) Beginner (PoS); [phonology.md](phonology.md) Beginner (compound joiner). Useful after you meet [spans](spans.md), [values](values.md), or [role compounds](special-vocabulary.md#role-compounds).
+How to **disambiguate mid-word `x`**. Mid-word **`x`** is only the [compound joiner](phonology.md#phonotactics) — never an ordinary root consonant. Word-initial **`x`** is the discourse-marker PoS — not this page. Family-specific morphology lives on the owner pages; this page is the **parser cue** map.
 
 ## Beginner
 <a id="beginner"></a>

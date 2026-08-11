@@ -1,11 +1,9 @@
 # Numbers
 <a id="numbers"></a>
 
-Numerals are a **closed formal subsystem**, not ordinary lexicon roots. Open quantifiers (*many*, *all*, *some*, …) stay lexicon. This page owns numeral grammar: [digitless](#zero-digit-groups) forms, [digitless exponents](#digitless-exponents), [writing](#writing-preferred-shorthand), [percent](#percent-and-percentage-points), [ranges](#ranges), and [measure phrases](#measure-phrases). PoS-less stems after mid-word **`x`** on content roots are [numeric derivation](special-vocabulary.md#numeric-derivation) — not free clause-slot numerals.
+Closed numeral grammar — counts, exponents, writing, percent, ranges, measure phrases — not open lexicon quantifiers like *many* / *all*. Stems after mid-word **`x`** on content roots are [numeric derivation](special-vocabulary.md#numeric-derivation).
 
 A whole numeric value is **one word**, even when it contains several digit groups (or none).
-
-**Prerequisites:** [core.md](core.md) Beginner (PoS prefixes); [reference-suffix.md](reference-suffix.md) Beginner (ordinary **-l** / **-m** / **-n** / **-r** — number endings differ); [plurality.md](plurality.md) Beginner (**-sh** is not used on number words).
 
 ## Beginner
 <a id="beginner"></a>

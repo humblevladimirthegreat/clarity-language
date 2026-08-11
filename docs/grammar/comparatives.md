@@ -1,11 +1,9 @@
 # Comparatives, superlatives, and equatives
 <a id="comparatives-page"></a>
 
-How Agelan does scalar comparison: *more … than*, *the …-est*, *as … as*, measured differentials (*two inches taller*), and **judgment benchmarks** (*worse than Average|Typical|Mine|…*). Fence join vowels and SHARED placement stay in [coordination.md](coordination.md); this page says when those forms mean comparison rather than ordinary ranking or bundle description.
+Scalar comparison: *more … than*, *the …-est*, *as … as*, measured differentials, and judgment benchmarks (*worse than Average* / …). Fence join vowels stay in [coordination.md](coordination.md); absolute (non-comparative) scalars stay unfenced — [predication](predication.md#zero-copula).
 
-Absolute (non-comparative) scalars stay unfenced: `zazaman gonudam` = *Sam is challenging* ([predication](predication.md#zero-copula)). Kind / role and identity: [predication.md](predication.md) — not this page’s equative **`ae`**.
-
-**Prerequisites:** [coordination.md](coordination.md) Beginner (rank joins **`e` / `ae` / `oe` / `ue`**, SHARED after the join); [predication.md](predication.md) Beginner (zero-copula `/ɡ/`).
+**Needs:** [coordination.md](coordination.md) Beginner (rank joins **`e` / `ae` / `oe` / `ue`**).
 
 ## Beginner
 <a id="beginner"></a>

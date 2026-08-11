@@ -1,9 +1,7 @@
 # Special vocabulary
 <a id="special-vocabulary"></a>
 
-Closed morphology and mood roots that are **not** [values](values.md) (needs) and **not** [restrictors](restrictors.md) (applicability). Some reuse mid-word **`x`** ([ability](#ability), [role compounds](#role-compounds), [numeric derivation](#numeric-derivation)); others are closed `/h/` mood roots with no `x`-addition (plan / predict, **DECISION**, evidentiality, **CAUSE**, universality, emotion ACT / LOCUS, **COMMENT**, **NOTIONAL**); join-act verbs and join-relations reuse join-vowel spellings under `/v/` `/ɡ/` `/h/`…**-n**. Mid-word **`x`** parser families: [x-compounds.md](x-compounds.md).
-
-**Prerequisites:** [core.md](core.md) Beginner; [reference-suffix.md](reference-suffix.md) Beginner; [coordination.md](coordination.md) Beginner for joins; [values.md](values.md) Beginner for ability contrast; [x-compounds.md](x-compounds.md) Intermediate when parsing mid-word **`x`**.
+Closed morphology and mood roots that are **not** [values](values.md) and **not** [restrictors](restrictors.md) — ability, roles, plan / predict, evidentiality, emotion compose, and related forms. Mid-word **`x`** families: [x-compounds.md](x-compounds.md).
 
 ## Beginner
 <a id="beginner"></a>

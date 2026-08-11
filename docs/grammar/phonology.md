@@ -3,8 +3,6 @@
 
 How Agelan **sounds** and how syllables are built. Goals: easy to sing, spelling that shows pronunciation, and clear word boundaries (including inside compounds). This is the only grammar page that uses **IPA**.
 
-**Prerequisites:** none for the letter charts; [core.md](core.md) Beginner helps for PoS prefixes and writing tokens.
-
 ## Beginner
 <a id="beginner"></a>
 

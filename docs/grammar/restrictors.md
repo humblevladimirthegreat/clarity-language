@@ -3,9 +3,7 @@
 <a id="circumstance-h-w"></a>
 <a id="restrictors"></a>
 
-Join-series spellings under `/h/` or `/w/` that limit **when** the host applies — *only when…*, *never*, *always*, *sometime* — not sibling *and* of manner or degree. Prefixed fence **joins** (entity / property / VP / clause): [coordination.md](coordination.md). Prefix-less **revisers**: [revisers.md](revisers.md).
-
-**Prerequisites:** [core.md](core.md) Beginner (`/h/` and `/w/`); [questions.md](questions.md) Beginner helpful for *When?* under question force.
+Join-series spellings under `/h/` or `/w/` that limit **when** the host applies — *only when…*, *never*, *always*, *sometime* — not sibling *and* of manner or degree. Prefixed fence **joins**: [coordination.md](coordination.md). Prefix-less **revisers**: [revisers.md](revisers.md).
 
 ## Beginner
 <a id="beginner"></a>

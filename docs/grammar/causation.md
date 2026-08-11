@@ -2,9 +2,9 @@
 <a id="causation"></a>
 <a id="necessary-sufficient"></a>
 
-How Agelan encodes *A leads to B*, *A is enough for B*, and *B does not happen without A* — **without** a dedicated “cause arrow” word. Join **mechanics** stay in [coordination.md](coordination.md); join-relations in [special-vocabulary.md](special-vocabulary.md#join-relations); clause subordination shape in [core.md](core.md#dependent-clauses). This page owns **which** existing join / relation / restrictor carries sufficient vs necessary, plus the **`IF`** / **`IFF`** / **`BECAUSE`** root split.
+How to say *A leads to B*, *A is enough for B*, and *B needs A* — using joins, restrictors, and **`IF`** / **`IFF`** / **`BECAUSE`**, not a dedicated cause-arrow word.
 
-**Prerequisites:** [coordination.md](coordination.md) Beginner (inclusive / exclusion joins); [core.md](core.md) Intermediate ([dependent clauses](core.md#dependent-clauses) / **`odo`**); [pronouns.md](pronouns.md) Beginner (**`odo`**).
+**Needs:** [coordination.md](coordination.md) Beginner (inclusive / exclusion joins); [core.md](core.md) Intermediate ([dependent clauses](core.md#dependent-clauses) / **`odo`**).
 
 ## Beginner
 <a id="beginner"></a>

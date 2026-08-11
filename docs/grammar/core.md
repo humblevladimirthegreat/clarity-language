@@ -2,8 +2,6 @@
 
 How to read and write an Agelan **sentence**: word roles, word shape, default order, how a turn starts (`/j/` vs `/x/`), and dependent sentences with **`odo`**.
 
-**Prerequisites:** [why-agelan.md](why-agelan.md) (psychological purpose / limits); [introduction.md](introduction.md) (grammar design, how to learn). Word endings in full: [reference-suffix.md](reference-suffix.md). Pronouns (including **`odo`**): [pronouns.md](pronouns.md). This page uses **Beginner** / **Intermediate** / **Advanced** sections — finish Beginner here before Intermediate.
-
 ## Beginner
 <a id="beginner"></a>
 

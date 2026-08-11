@@ -1,8 +1,6 @@
 # Joins
 
-Prefixed **joins** coordinate same-slot material — noun phrases, verb phrases, or whole sentence bodies — with a **right-close fence**: conjuncts first, then the join word, then optional shared modifiers. This page owns join morphology and fence shape at phrase, VP, and clause level. **Revisers** (prefix-less **al** / **am** / …) and **restrictors** (`/h/` `/w/` circumstance joins) reuse the vowel series but are separate subsystems.
-
-**Prerequisites:** [core.md](core.md) Beginner (clause shape, PoS prefixes); [reference-suffix.md](reference-suffix.md) Beginner (**-l** / **-m** / **-n** / **-r**).
+Coordinate same-slot material (NPs, VPs, or clause bodies) with a **right-close fence**: conjuncts, then the join word, then optional shared modifiers. Prefix-less **revisers** and `/h/` `/w/` **restrictors** reuse the vowel series but are separate — [revisers.md](revisers.md), [restrictors.md](restrictors.md).
 
 ## Beginner
 <a id="beginner"></a>

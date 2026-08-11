@@ -2,8 +2,6 @@
 
 Once something is on the table, you point back with a **-r** form — Agelan has no separate “the X” article. Special discourse roles (**`umogo`** / **`ehado`** / **`ana`** / **`enu`** / **`odo`**) are separate closed roots, not letter stems from ordinary antecedents.
 
-**Prerequisites:** [core.md](core.md) Beginner; [reference-suffix.md](reference-suffix.md) Beginner (**-r** = resume).
-
 ## Beginner
 <a id="beginner"></a>
 

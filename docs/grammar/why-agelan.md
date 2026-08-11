@@ -45,7 +45,7 @@ Agelan puts those framings into ordinary words and optional morphology. When you
 ## Criterion for features
 <a id="criterion-for-features"></a>
 
-New psychological features should meet these bars:
+Psychological features fit these criteria:
 
 * **Helps with language goals.** Supports compassion, rationality, and/or empowerment. Prefer research when it exists; user testing is fine when research is scarce.
 
@@ -57,7 +57,12 @@ New psychological features should meet these bars:
 
 * **Reminders where they are needed.** Nudge compassion, rationality, or empowerment mainly where those failures are likely — accept some false positives, minimize pointless ones. Nudges stay **optional and targeted**, not stamped on every clause.
 
-## Needs, gratitude, and oughts
+## Psychological features
+<a id="psychological-features"></a>
+
+How the aims show up in vocabulary and grammar before you learn full clause shape. Detail lives in the linked pages; this tour does not teach paradigms.
+
+### Needs, gratitude, and oughts
 <a id="needs-gratitude-and-oughts"></a>
 
 English often collapses *I want*, *I need*, *I should*, and *this is good for me* — so gratitude, motive, and ought blur together.
@@ -76,7 +81,7 @@ Agelan’s [values](values.md) name a closed inventory of **needs** (autonomy, c
 
 Naming the need and your stance toward it helps you notice gratitude, motive, and oughts instead of collapsing them into vague *want* / *should* / *good*.
 
-## Emotions as composition
+### Emotions as composition
 <a id="emotions-as-composition"></a>
 
 Opaque labels (*angry*, *anxious*, *proud*) hide which need is in play and what to ask for.
@@ -85,7 +90,7 @@ Agelan [composes emotion](special-vocabulary.md#emotion-compose) from pieces: a 
 
 Composing emotion from need + activation + locus helps you ask for what would actually help instead of stopping at the label.
 
-## Can, can’t, and won’t
+### Can, can’t, and won’t
 <a id="can-cant-and-wont"></a>
 
 *I can’t* blurs temporary block, lasting incapability, and choice.
@@ -94,7 +99,7 @@ Composing emotion from need + activation + locus helps you ask for what would ac
 
 Tagging *can’t right now* vs *impossible* vs *won’t* helps you stop treating a temporary block or a choice as a fixed incapability.
 
-## How you know — and *I think*
+### How you know — and *I think*
 <a id="how-you-know"></a>
 
 It is easy to treat a take as settled fact — mixing memory, hearsay, gut feel, and *I think* into one warrant.
@@ -103,7 +108,7 @@ Claims about the world take a **channel**: memory, record, pattern, inference, h
 
 Marking the channel (and separating *I think* from world-warrant) helps you catch overconfidence, hearsay, and confirmation bias before you treat a take as settled fact.
 
-## Intention, forecast, and firmness
+### Intention, forecast, and firmness
 <a id="intention-forecast-and-firmness"></a>
 
 English *will* smuggles plan and prediction together, and it is easy to talk as if the future were already known — a certain prediction that fuels anxiety or overconfidence — while a pick often sounds more locked than it is.
@@ -112,7 +117,7 @@ Agelan splits them: [PLAN](special-vocabulary.md#plan-predict) for what you mean
 
 Splitting plan, prediction, and decision firmness helps you avoid treating a wishful or “certain” forecast as settled fact (or as a commitment), and a revisable pick as locked forever.
 
-## Open lists, closed lists, and false dichotomies
+### Open lists, closed lists, and false dichotomies
 <a id="open-and-closed-lists"></a>
 
 It is easy to present two options as if they were the only ones possible.
@@ -121,7 +126,7 @@ It is easy to present two options as if they were the only ones possible.
 
 Saying whether a list is open or closed helps you notice False Dichotomies — and leaves room for options you have not named yet.
 
-## Causes, *if*, and preference-as-law
+### Causes, *if*, and preference-as-law
 <a id="causes-if-and-preference"></a>
 
 Everyday English *because* / *leads to* / *have to* blur sufficient vs necessary, world-reason vs speaker-grounds, and wish vs natural law.
@@ -130,7 +135,7 @@ Everyday English *because* / *leads to* / *have to* blur sufficient vs necessary
 
 Keeping those forks apart helps you stop treating wishes and habits as if the world must obey them.
 
-## Alternatives, reframes, and judgment bars
+### Alternatives, reframes, and judgment bars
 <a id="alternatives-reframes-and-bars"></a>
 
 Work talk often freezes on *the* problem / *the* solution, or ranks against an invisible yardstick.
@@ -139,7 +144,7 @@ Prefer [numbered alternatives](special-vocabulary.md#numbered-alternatives) (`zu
 
 Numbering candidates, paraphrasing, and naming the judgment bar help you keep choice and standards revisable instead of freezing on a single frame or a hidden bar.
 
-## Conceptual metaphors
+### Conceptual metaphors
 <a id="conceptual-metaphors"></a>
 <a id="metaphors-and-precise-vocabulary"></a>
 
@@ -193,18 +198,3 @@ Even if the language does lose its potency over a century, having a positive imp
 <a id="next"></a>
 
 Continue with [introduction.md](introduction.md) for the name, grammar design, and how to learn these docs, then [core.md](core.md#beginner) for clause shape. Community updates: [r/ClarityLanguage](https://www.reddit.com/r/ClarityLanguage).
-
-## See also
-<a id="see-also"></a>
-<a id="psychological-features"></a>
-
-Morphology detail (assumes clause basics from earlier Beginner steps). **Skip the full Beginner path only for this tour** — to speak or parse Agelan, follow the sidebar order.
-
-1. [values.md](values.md) — needs and stances on `/h/` `/w/`
-2. [special-vocabulary.md](special-vocabulary.md) — ability / incapability, roles, plan / predict, evidentiality, universality, emotion compose, **COMMENT**, **NOTIONAL**, numbered alternatives
-3. [causation.md](causation.md#preference-vs-law) — preference as law
-4. [comparatives.md](comparatives.md#judgment-benchmarks) — judgment benchmarks (*worse than…*)
-5. [x-compounds.md](x-compounds.md) — mid-word **`x`** families (values vs ability vs roles)
-6. [restrictors.md](restrictors.md) — applicability *when* (neighbor to values, not need-stance)
-7. [coordination.md](coordination.md) — joins and list closure
-8. [spans.md](spans.md) — paraphrase and cite packaging

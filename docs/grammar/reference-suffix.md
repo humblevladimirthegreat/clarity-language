@@ -2,8 +2,6 @@
 
 Every content word ends with a **reference suffix** — one of four final letters that say how the root enters the talk: literal kind, metaphorical sense, proper name, or resume of something already mentioned. The lexicon stores **roots** only; you add the ending (and the role letter) when you use the word.
 
-**Prerequisites:** [core.md](core.md) Beginner (role letters and word shape).
-
 ## Beginner
 <a id="beginner"></a>
 

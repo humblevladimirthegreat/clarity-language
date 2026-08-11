@@ -1,10 +1,6 @@
 # Spans
 
-**Span fences** package wording (cite / aside / mention / opaque) with a PoS, TYPE, EDGE, and ending. Preferred writing uses brackets; speech uses full open / close words. This page also owns **adjunct-scope islands** (`^ … ^`) — multi-word binder scope, not typed wording.
-
-Discourse linkers and clause joins under `/x/` stay in [core.md](core.md#discourse-markers-x) and [coordination.md](coordination.md). Span fences use ordinary mid-word **`x`** — [phonology.md](phonology.md#phonotactics).
-
-**Prerequisites:** [core.md](core.md) Beginner (PoS slots, utterance framing); [reference-suffix.md](reference-suffix.md) Beginner (**-l** / **-m** / **-n** / **-r**).
+Package wording (cite / aside / mention / opaque) with a PoS, TYPE, EDGE, and ending — brackets in writing, open / close words in speech. Multi-word binder scope uses **`^ … ^`** (not typed wording).
 
 ## Beginner
 <a id="beginner"></a>

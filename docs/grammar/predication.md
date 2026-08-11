@@ -1,9 +1,7 @@
 # Predication (classification and identity)
 <a id="predication"></a>
 
-How Agelan says English *to be* for **kind / role** (*Sam is a teacher*) and **identity** (*Clark is Superman*) — without a general *to-be* verb. Scalar *as ADJ as* stays [equatives](comparatives.md#equatives). Location / relation (*on*, *at*) stay ordinary complex `/ɡ/`+`/b/` or `/h/`+`/b/` ([core.md](core.md#complex-adjectives-complex-adverbs-and-argument-nouns)).
-
-**Prerequisites:** [core.md](core.md) Beginner (clause shape, predicative `/ɡ/`); [reference-suffix.md](reference-suffix.md) Beginner.
+How Agelan says English *to be* for **kind / role** (*Sam is a teacher*) and **identity** (*Clark is Superman*) — without a general *to-be* verb. Scalar *as ADJ as* stays [equatives](comparatives.md#equatives).
 
 ## Beginner
 <a id="beginner"></a>

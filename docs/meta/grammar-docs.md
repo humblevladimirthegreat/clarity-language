@@ -2,7 +2,7 @@
 
 How to write Agelan **grammar docs** under **`docs/grammar/`** so a learner can use them. Applies **only** to that folder (not to `meta/`, `examples/`, or `proposals/`). Design authority for morphology stays in those pages (core sentence grammar: [core.md](../grammar/core.md)); this page standardizes **pedagogy and prose** only.
 
-Grammar pages must **not** link to or mention `meta/` or any other folder outside `grammar/` — only peer links inside `grammar/`. Editors follow this page and [learning-levels.md](learning-levels.md) privately. Banding / folder move history: [migration-grammar-docs.md](migration-grammar-docs.md) (complete).
+Grammar pages must **not** link to or mention `meta/` or any other folder outside `grammar/` — only peer links inside `grammar/`. Editors follow this page and [learning-levels.md](learning-levels.md) privately.
 
 Related meta:
 
@@ -45,13 +45,13 @@ Headings, leads, and asides must make sense to someone who never saw an earlier 
 
 ## Page skeleton
 
-1. **Title + one-line job** — what this page owns (and what it does not).
-2. **Prerequisites** — one to three links (“needs Beginner [reference-suffix](../grammar/reference-suffix.md) and [pronouns](../grammar/pronouns.md)”).
+1. **Title + one-line job** — the English job this page teaches (learner-facing). Sibling links only for real near-misses — not “this page owns / does not own” fencing.
+2. **Needs** (optional) — **rare.** Use only when the page is late and the dependency is not obvious from the [cross-doc path](learning-levels.md#cross-doc-path) (e.g. causation → joins + **`odo`**; comparatives → rank joins). Label as `**Needs:**` with one short link line. Do **not** ritualize “core Beginner; reference-suffix Beginner” on every page.
 3. **`## Beginner` / `## Intermediate` / `## Advanced`** — per [learning-levels.md](learning-levels.md).
 4. Inside each band: **concept → rule in one breath → 1–3 examples → (optional contrast) → full table if needed**.
 5. Optional **See also** at the end — no long link walls in the lead.
 
-Front matter that orients (psychological purpose / limits / feature criteria / benefit tour — [why-agelan.md](../grammar/why-agelan.md); grammar design / how to learn — [introduction.md](../grammar/introduction.md)) is not a learning band.
+Front matter that orients (psychological purpose / limits / feature criteria / benefit tour — [why-agelan.md](../grammar/why-agelan.md); grammar design / how to learn — [introduction.md](../grammar/introduction.md)) is not a learning band. Reading order lives in the path / sidebar — not repeated as Prerequisites.
 
 ## Teach in this order
 

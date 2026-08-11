@@ -2,9 +2,7 @@
 <a id="values"></a>
 <a id="value-ascription"></a>
 
-How Agelan names a **need** (psychological payoff) and how you relate to it — topic only, met, unmet, motive, or prescription — plus a stance-specific ending table (contact channel, preference standing, prescription force, or changeability). Applicability *when* is [restrictors](restrictors.md). Ability, plan / predict, **DECISION**, evidentiality, emotion compose, **COMMENT**, and **NOTIONAL** live in [special-vocabulary.md](special-vocabulary.md). Preference as a causal law stacks **`xo` / `xe`** on [causation](causation.md#preference-vs-law) shapes.
-
-**Prerequisites:** [core.md](core.md) Beginner (`/h/` and `/w/`); [reference-suffix.md](reference-suffix.md) Beginner (ordinary endings on bare needs).
+How to name a **need** and how you relate to it — topic, met, unmet, motive, or prescription — with stance-specific endings. Applicability *when*: [restrictors](restrictors.md). Ability, plan / predict, evidentiality, emotion compose, and related mood: [special-vocabulary.md](special-vocabulary.md).
 
 ## Beginner
 <a id="beginner"></a>

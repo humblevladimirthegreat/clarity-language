@@ -6,8 +6,6 @@
 
 Prefix-less vowel + **-l** / **-m** / **-n** forms that **revise** a slot or glue this sentence to prior talk: *including* / *rather* / *instead* / *except* (in-clause) and *additionally* / *in other words* / *instead* / *except* (discourse). Prefixed fence **joins**: [coordination.md](coordination.md). Circumstance **restrictors** (`/h/` `/w/`): [restrictors.md](restrictors.md).
 
-**Prerequisites:** [core.md](core.md) Beginner (clause force, left edge); [reference-suffix.md](reference-suffix.md) Beginner (**-l** / **-m** / **-n**).
-
 ## Beginner
 <a id="beginner"></a>
 

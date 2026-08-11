@@ -4,8 +4,6 @@
 
 What the language is called, how these docs work, and what “good grammar design” means here. Psychological purpose, limits, feature criteria, and the benefit tour: [why-agelan.md](why-agelan.md). Core clause grammar starts in [core.md](core.md).
 
-**Prerequisites:** [why-agelan.md](why-agelan.md) (why the language exists — recommended first).
-
 ## Purpose (short)
 <a id="purpose"></a>
 
