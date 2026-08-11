@@ -1,14 +1,14 @@
 # Phonology and phonotactics
 <a id="phonology"></a>
 
-How Agelan **sounds** and how syllables are built. Goals: easy to sing, spelling that shows pronunciation, and clear word boundaries (including inside compounds). This is the only grammar page that uses **IPA**.
+How Agelan **sounds** and how syllables are built. Goals: easy to sing, spelling that shows pronunciation, and clear word boundaries (including inside compounds). This is the only grammar page that uses **IPA**. Grammar-design framing: [introduction.md](introduction.md#grammar-design). Fuller singability checklist: [Advanced](#singability-constraints).
 
 ## Beginner
 <a id="beginner"></a>
 
 ### Why these sounds
 
-Agelan prefers vowels that are not fully open or fully closed, so you can sing high and low without heavy vowel modification. Consonants prefer the **voiced** version so you can sustain a note across letters (voiceless stops the airflow briefly). You may still use unvoiced variants for style.
+Agelan uses vowels that are not fully closed, so you can sing high and low without heavy vowel modification. Consonants prefer the **voiced** version so you can sustain a note across letters (voiceless stops the airflow briefly). You may still use unvoiced variants for style. Word shape keeps consonants at **onsets** and at the **word edge**, so held notes and quick singing do not fight mid-syllable stops — and the ending still marks where each word stops when rhythm eats pauses.
 
 **Mnemonic:** singable vowels + clear edges — spelling shows the sound.
 
@@ -23,11 +23,11 @@ Cue words are Standard American English:
 | **o** | /o/ | *boat* (no glide — like Spanish *no*) |
 | **a** | /ɑ/ | *father* |
 
-Stacked vowels are separate syllables: `juon` = *ju'on*.
+These four sit in a mid-to-open range that stays singable at the top of an untrained range. Stacked vowels are separate syllables — not a glide: `juon` = *ju'on*. Hold each vowel; do not slide them into a diphthong.
 
 ### Consonants (syllable onsets)
 
-There is no phonemic voiced / unvoiced contrast; voiced is preferred.
+There is no phonemic voiced / unvoiced contrast; voiced is preferred so the vocal cords can stay engaged through the letter. Unvoiced variants are fine for style.
 
 | Letter | IPA | English cue |
 |--------|-----|-------------|
@@ -60,11 +60,11 @@ A content word has these parts, written as **one unbroken token**:
 
 **Writing:** no hyphen after the PoS letter (`zumogon`). Full orthography: [core.md § Orthography](core.md#orthography).
 
-**Roots** have form **V(CV)+** (vowel-initial; mid consonants are ordinary onsets, including **l** / **r**). Compound roots are separated by mid-word **`x`**. A root does **not** end in a consonant — the only word-final consonants are the reference suffix (and optional plural **sh**).
+**Roots** have form **V(CV)+** (vowel-initial; mid consonants are ordinary onsets). Compound roots are separated by mid-word **`x`**. A root does **not** end in a consonant — the only word-final consonants are the reference suffix (and optional plural **sh**). That keeps held notes on vowels inside the word.
 
-**Clear syllables:** a content root almost always starts with a vowel. Ending and beginning consonants are chosen so you never confuse which syllable a consonant belongs to (`vaban` = *va'ban*, not *vab'an*; `zalul` = *z-alu-l* — mid **l** onset in the root, final **-l** the ending) — syllables do not end with a consonant except at the **end of the word**.
+**Clear syllables:** a content root almost always starts with a vowel. Ending and beginning consonants are chosen so you never confuse which syllable a consonant belongs to (`vaban` = *va'ban*, not *vab'an*; `zalul` = *z-alu-l* — mid **l** onset in the root, final **-l** the ending) — syllables do not end with a consonant except at the **end of the word**. Spelling therefore has one pronunciation path; lexical stress is not part of the system (musical rhythm may place emphasis).
 
-**Word edges:** all **content** words end with a reference suffix (**-l** / **-m** / **-n** / **-r**), optionally followed by plural **-sh** (/ʃ/). Allowed word-final clusters: **-lsh**, **-msh**, **-nsh**, **-rsh**. Digraph **sh** is only this plural marker (word-final, after a reference suffix) — not an ordinary root consonant. **Utterance** boundaries (period, `/j/` turn vs `/x/` continue) are [orthography and prosody](core.md#orthography-and-prosody-periods) — discourse pauses, not word-edge phonotactics.
+**Word edges:** all **content** words end with a reference suffix (**-l** / **-m** / **-n** / **-r**), optionally followed by plural **-sh** (/ʃ/). Allowed word-final clusters: **-lsh**, **-msh**, **-nsh**, **-rsh**. Digraph **sh** is only this plural marker (word-final, after a reference suffix) — not an ordinary root consonant. Those endings are the audible stop when song compresses pauses. **Utterance** boundaries (period, `/j/` turn vs `/x/` continue) are [orthography and prosody](core.md#orthography-and-prosody-periods) — discourse pauses, not word-edge phonotactics.
 
 **No clash with endings / numbers / left-bound:** mid-root **l** / **r** are always followed by a vowel inside the root, so they are not mistaken for a final suffix. Ordinary content after a PoS letter begins with a **vowel**, so **`PoS+r…`** stays [number-only](#number-word-exception) and **`gl-`** stays [left-bound `/ɡ/`](#left-bound).
 
@@ -96,6 +96,36 @@ Morphology and readings live on those pages; phonology only requires that the sp
 ## Advanced
 <a id="advanced"></a>
 
+### Singability constraints
+<a id="singability-constraints"></a>
+
+The Beginner rules above are the usable inventory. This checklist is the design filter behind them — what Agelan avoids so ordinary singing stays easy:
+
+| Constraint | Why it helps | How Agelan keeps it |
+|------------|--------------|---------------------|
+| No fully closed vowels | Closed vowels shrink comfortable high range | Four mid-to-open vowels (**e u o a**) |
+| No diphthongs | Glides force tract changes mid-note | Stacked letters = separate syllables (`juon` = *ju'on*) |
+| Few consonant clusters | Clusters are harder to pronounce quickly | Ordinary shape is onset + vowel; limited exceptions below |
+| No voice contrast | Voiceless stops cut the note; singers often voice them anyway | Voiced preferred; unvoiced allowed as style only |
+| No mid-word coda | Ending a syllable on a consonant breaks a held note | Roots are **V(CV)+**; coda only at the **word edge** |
+| No lexical stress | Music already places emphasis | Rhythm may stress a beat; spelling does not encode stress |
+| Spelling = pronunciation | Singer need not memorize special readings | One path from letters to sound |
+| Audible word edges | Song often removes speech pauses | Content words end in **-l** / **-m** / **-n** / **-r** (optional **-sh**) |
+
+**Limited clusters (still legal):** left-bound **`gl-`**; number-word **`PoS+r`**; word-final **-lsh** / **-msh** / **-nsh** / **-rsh**. 
+
+**Try it:** sing a short Agelan line quickly at a high comfortable pitch, then compare a line that piles closed vowels, clusters, and mid-word stops:
+
+`zumogon guzem.`
+
+/ zu.mo.ɡon ɡu.zem /
+
+Versus (not Agelan — built to violate the constraints):
+
+/ seiɹ ˈʈʂuɹt tis ˈheb.ɡiɹn fuofts /
+
+The first should stay easier to sustain even when the second is only a little harder to speak.
+
 ### Design notes
 
 - Unused potential onset clusters (not part of the language): *gw*, *vw*, *xw*, *bl* (should not mean left-aligned *b*).
@@ -104,6 +134,7 @@ Morphology and readings live on those pages; phonology only requires that the sp
 
 ## See also
 
+- Grammar design goals (including singable phonology): [introduction.md](introduction.md#grammar-design)
 - Writing words / orthography: [core.md](core.md#orthography)
 - Reference endings: [reference-suffix.md](reference-suffix.md)
 - Plural **-sh**: [plurality.md](plurality.md)
