@@ -13,7 +13,7 @@ Ask in order. Prefer the **earlier** band when a concept sits on a boundary and 
 
 1. **Usable after one short explanation?**  
    Can someone use it in ordinary dialogue after roughly one paragraph and a couple of examples (and at most a second of thought once practiced)?  
-   If yes → **beginner** (or at least not advanced). Aligns with the language’s [easy-to-use feature criterion](../grammar/introduction.md#criterion-for-features).
+   If yes → **beginner** (or at least not advanced). Aligns with the language’s [easy-to-use feature criterion](../grammar/design-methods.md#criterion-for-features).
 
 2. **Does it depend on another subsystem already being fluent?**  
    If the form only makes sense after joins, numbers, values, spans, etc. are already comfortable → at least **intermediate**.  
@@ -32,23 +32,24 @@ Ask in order. Prefer the **earlier** band when a concept sits on a boundary and 
 ## Cross-doc path
 <a id="cross-doc-path"></a>
 
-Read **`docs/grammar/`** only, in band order. [introduction.md](../grammar/introduction.md) is orientation (not a band).
+Read **`docs/grammar/`** only, in band order. [design-methods.md](../grammar/design-methods.md) and [introduction.md](../grammar/introduction.md) are orientation (not bands).
 
 ### Beginner
 
-1. [introduction.md](../grammar/introduction.md) — purpose and feature criteria
-2. [core.md Beginner](../grammar/core.md#beginner)
-3. [phonology.md Beginner](../grammar/phonology.md#beginner) (letters / word edges; optional early)
-4. [reference-suffix.md Beginner](../grammar/reference-suffix.md#beginner)
-5. [pronouns.md](../grammar/pronouns.md#beginner) · [plurality.md](../grammar/plurality.md#beginner) · [questions.md](../grammar/questions.md#beginner)
-6. [predication.md](../grammar/predication.md#beginner) · [revisers.md](../grammar/revisers.md#beginner) · [restrictors.md](../grammar/restrictors.md#beginner)
-7. [coordination.md](../grammar/coordination.md#beginner) · [spans.md](../grammar/spans.md#beginner)
-8. [numbers.md](../grammar/numbers.md#beginner) · [comparatives.md](../grammar/comparatives.md#beginner) · [causation.md](../grammar/causation.md#beginner)
-9. [values.md](../grammar/values.md#beginner) · [special-vocabulary.md](../grammar/special-vocabulary.md#beginner) · [x-compounds.md](../grammar/x-compounds.md#beginner)
+1. [design-methods.md](../grammar/design-methods.md) — psychological purpose, limits, feature criteria, benefit tour (not a learning band)
+2. [introduction.md](../grammar/introduction.md) — name, grammar design, how to learn
+3. [core.md Beginner](../grammar/core.md#beginner)
+4. [phonology.md Beginner](../grammar/phonology.md#beginner) (letters / word edges; optional early)
+5. [reference-suffix.md Beginner](../grammar/reference-suffix.md#beginner)
+6. [pronouns.md](../grammar/pronouns.md#beginner) · [plurality.md](../grammar/plurality.md#beginner) · [questions.md](../grammar/questions.md#beginner)
+7. [predication.md](../grammar/predication.md#beginner) · [revisers.md](../grammar/revisers.md#beginner) · [restrictors.md](../grammar/restrictors.md#beginner)
+8. [coordination.md](../grammar/coordination.md#beginner) · [spans.md](../grammar/spans.md#beginner)
+9. [numbers.md](../grammar/numbers.md#beginner) · [comparatives.md](../grammar/comparatives.md#beginner) · [causation.md](../grammar/causation.md#beginner)
+10. [values.md](../grammar/values.md#beginner) · [special-vocabulary.md](../grammar/special-vocabulary.md#beginner) · [x-compounds.md](../grammar/x-compounds.md#beginner)
 
 ### Intermediate then Advanced
 
 10. Every peer’s **[Intermediate](../grammar/core.md#intermediate)** section (same dependency order as above is fine).
 11. Every peer’s **Advanced** section.
 
-Learner-facing reading order: [introduction.md § How to learn](../grammar/introduction.md#how-to-learn).
+Learner-facing reading order: site sidebar (**Suggested reading order**); banding notes: [introduction.md § How to learn](../grammar/introduction.md#how-to-learn).

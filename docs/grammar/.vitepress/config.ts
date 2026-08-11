@@ -6,7 +6,8 @@ const dataDir = fileURLToPath(new URL('../../../data', import.meta.url))
 const srcDir = fileURLToPath(new URL('../../../src', import.meta.url))
 
 const readingOrder = [
-  { text: 'Introduction', link: '/' },
+  { text: 'How Agelan helps', link: '/' },
+  { text: 'Introduction', link: '/introduction' },
   { text: 'Core', link: '/core' },
   { text: 'Phonology', link: '/phonology' },
   { text: 'Reference suffix', link: '/reference-suffix' },
@@ -51,7 +52,8 @@ export default defineConfig({
   },
   themeConfig: {
     nav: [
-      { text: 'Introduction', link: '/' },
+      { text: 'How Agelan helps', link: '/' },
+      { text: 'Introduction', link: '/introduction' },
       { text: 'Core', link: '/core' },
       { text: 'Lexicon', link: '/lexicon' },
     ],

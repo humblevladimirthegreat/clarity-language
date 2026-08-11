@@ -10,7 +10,8 @@ This repo is TypeScript tooling around the language docs and lexicon. A web UI m
 
 | Source | Role |
 |--------|------|
-| `docs/grammar/introduction.md` | Purpose (compassion / rationality / empowerment), grammar design goals, learning path, feature criteria. |
+| `docs/grammar/design-methods.md` | Psychological purpose (compassion / rationality / empowerment), limits, feature criteria, learner tour of how that morphology helps (overview; not morphology authority). Site home. |
+| `docs/grammar/introduction.md` | Name / gloss, grammar design goals (unambiguous / singable / three clarities), learning path. |
 | `docs/grammar/core.md` | **Source of truth** for core sentence grammar (PoS, orthography, utterance framing, `/x/` continue, **`odo`**, adverbial subordinators *because* / *if* / *although* / *while* / *until* / *before* / *after*). Other grammar docs own their subsystems. |
 | `docs/meta/learning-levels.md` | Rubric for tagging grammar docs **beginner** / **intermediate** / **advanced** and the [cross-doc Beginner path](docs/meta/learning-levels.md#cross-doc-path) (pedagogy, not design authority). |
 | `docs/meta/grammar-docs.md` | Style for learner-facing grammar prose under `docs/grammar/` only (page skeleton, teach order, no process leftover — pedagogy, not design authority). |
@@ -42,7 +43,7 @@ Agelan encodes psychologically useful distinctions natively (no English tag over
 ## Tooling notes
 
 - Node ≥ 20.
-- Language design work goes through `docs/grammar/introduction.md` (purpose / feature criteria), `docs/grammar/core.md` and the linked grammar docs (and `TODO.md` until absorbed). Do **not** treat deleted legacy ANTLR grammars or any future parsers as design authority until they match the docs.
+- Language design work goes through `docs/grammar/introduction.md` (grammar design), `docs/grammar/design-methods.md` (psychological purpose / feature criteria), `docs/grammar/core.md` and the linked grammar docs (and `TODO.md` until absorbed). Do **not** treat deleted legacy ANTLR grammars or any future parsers as design authority until they match the docs.
 - **Orthography:** actual Agelan has **no hyphen** after the PoS letter (`zumogon`, not `z-umogo`); foreign roots use `PoS<…>ENDING` (e.g. `d<english>l`); opaque spans take no ending after `>` (`d<sushi>`). Prefer published lexicon roots when the gloss matches; use **-m** for metaphorical gloss matches — see [core.md § Orthography](docs/grammar/core.md#orthography). Outside a sentence, prefix-less **root + ending** is [citation](docs/grammar/core.md#citation-forms) (not a default `/z/`); closed **`al` / `am` / …** stay [revisers](docs/grammar/revisers.md).
 - **Utterance framing:** **`/j/`** = turn (vocatives, [polar stance](docs/grammar/questions.md#yes-no-polarity), marked force); **`/x/`** = same-force forward motion (clause joins, linkers — inherit force). Default assertoric **`jal`** is **omissible** when recoverable (period, polar **-l** / **-m**, `/x/` continue, same-force **`odo`** dependent). Do not require leading **`jal`** on every example sentence. Polar confirm tags are a **second bare turn** after `.` (`…. jael.`), not same-sentence final `/j/`.
 - After editing Markdown under `docs/` (or `AGENTS.md` / `TODO.md`), run **`npm run lint:md`** — it fails on unclosed `*` / `**`, slash-joined emphasis (`*a*/*b*`, which breaks Cursor’s rich preview with `italic,italic`), and broken internal links / anchors. Prefer spaces (`*a* / *b*`) or one span (`*a/b*`). Avoid nesting `**…**` inside already-bold text; in bold headings/bullets put forms in backticks only (`**Ranked (`e` / `ae`)**`, not `**ae**` inside).
