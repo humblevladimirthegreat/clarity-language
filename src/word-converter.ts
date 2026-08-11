@@ -46,8 +46,25 @@ const DIGIT_TO_LETTER: Record<string, string> = {
 };
 
 const MAX_ROOT_LENGTH = 5;
-const CLARITY_VOWELS = ["a", "e", "o", "u"] as const;
-const CLARITY_CONSONANTS = ["b", "d", "g", "v", "z", "m", "n", "h", "w", "j", "l", "r"] as const;
+
+/** Agelan root vowels (phonology inventory). */
+export const CLARITY_VOWELS = ["a", "e", "o", "u"] as const;
+
+/** Agelan root onset consonants (phonology inventory; mid-word `x` is never a root letter). */
+export const CLARITY_CONSONANTS = [
+  "b",
+  "d",
+  "g",
+  "v",
+  "z",
+  "m",
+  "n",
+  "h",
+  "w",
+  "j",
+  "l",
+  "r",
+] as const;
 
 type Tracks = {
   remappedVowels: string[];
@@ -273,6 +290,66 @@ function* clarityRootCandidates(input: string): Generator<string> {
   yield* yieldWords(collectFillerCandidates(forwardTracks));
   yield* yieldWords(collectTrackOffsetCandidates(getTracks(letters, true), 3));
   yield* yieldWords(collectHashFallbackCandidates(input));
+}
+
+/**
+ * Whether `root` is a legal ordinary content root: V(CV)+ using the phonology letter inventory.
+ */
+export function isClarityRootShape(root: string): boolean {
+  if (root.length === 0 || root.length % 2 === 0) {
+    return false;
+  }
+  for (let i = 0; i < root.length; i++) {
+    const ch = root[i]!;
+    if (i % 2 === 0) {
+      if (!(CLARITY_VOWELS as readonly string[]).includes(ch)) {
+        return false;
+      }
+    } else if (!(CLARITY_CONSONANTS as readonly string[]).includes(ch)) {
+      return false;
+    }
+  }
+  return true;
+}
+
+/** Syllable count for a V(CV)+ root (one syllable per vowel). */
+export function clarityRootSyllables(root: string): number {
+  if (!isClarityRootShape(root)) {
+    throw new Error(`Not a legal Agelan root shape: ${root}`);
+  }
+  return (root.length + 1) / 2;
+}
+
+/**
+ * Enumerate every legal ordinary root with the given syllable count (VCV, VCVCV, …).
+ */
+export function allClarityRoots(syllables: number): string[] {
+  if (!Number.isInteger(syllables) || syllables < 1) {
+    throw new Error("Syllable count must be a positive integer");
+  }
+
+  const out: string[] = [];
+
+  const walk = (prefix: string, syllablesLeft: number): void => {
+    if (syllablesLeft === 0) {
+      out.push(prefix);
+      return;
+    }
+    if (prefix.length === 0) {
+      for (const v of CLARITY_VOWELS) {
+        walk(v, syllablesLeft - 1);
+      }
+      return;
+    }
+    for (const c of CLARITY_CONSONANTS) {
+      for (const v of CLARITY_VOWELS) {
+        walk(prefix + c + v, syllablesLeft - 1);
+      }
+    }
+  };
+
+  walk("", syllables);
+  return out;
 }
 
 /**

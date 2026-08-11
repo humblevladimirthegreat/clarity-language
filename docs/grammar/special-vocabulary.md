@@ -28,27 +28,27 @@ Name the **coordination move you perform** on an object — *include*, *choose*,
 **Mnemonic:** vowel = which join move; **-n** = that move as a titled doing ([reference-suffix](reference-suffix.md#proper-name--n) verb sense).
 
 ```
-`zazaman dabebal van.`
+`zazawan dabebal van.`
 
-gloss: `z-azama` · `d-apple` · `v-includes`
+gloss: `z-grace` · `d-apple` · `v-includes`
 
-*Sam includes/adds an apple.*
+*Azawan includes/adds an apple.*
 ```
 
 These are **content verbs**, not VP soft-packaging joins. Soft packaging (including *and then*) lives on clause `/x/`…**-n** only (`xan`, …) — [coordination.md § Soft **-n**](coordination.md#soft-n-clause). Parallel `-l` / `-m` / `-r` under `/v/` stay VP **joins** (`val` / `vam` / `var`, …). Resume a prior join-act with a letter pronoun or a full paraphrase — not `var` (that is *do something*).
 
 | Form | Gloss | Example |
 |------|--------|---------|
-| **`van`** | *includes / adds* | `zazaman dabebal van` — *Sam includes/adds an apple* |
-| **`von`** | *chooses (as the one choice)* | `zazaman dadedal von` — *Sam chooses tea (as the one choice)* |
-| **`vaon`** | *picks (with potentially more picks coming)* | `zazaman dugabel vaon` — *Sam picks a topping (more picks may follow)* |
-| **`vun`** | *denies / refuses* | `zazaman dulel vun` — *Sam denies/refuses the lie* |
-| **`vuan`** | *excludes* | `zazaman debanul vuan` — *Sam excludes nuts* |
-| **`vuon`** | *bars (anything but)* | `zazaman dogevel vuon` — *Sam bars coffee (anything else is fine)* |
-| **`ven`** | *prioritizes* | `zazaman dugujul ven` — *Sam prioritizes the bug* |
-| **`vaen`** | *equates / ties* | `zazaman degogelsh vaen` — *Sam equates the candidates* |
-| **`voen`** | *tries* | `zazaman damugal voen` — *Sam tries the fix* |
-| **`vuen`** | *deprioritizes* | `zazaman dodugul vuen` — *Sam deprioritizes dessert* |
+| **`van`** | *includes / adds* | `zazawan dabebal van` — *Azawan includes/adds an apple* |
+| **`von`** | *chooses (as the one choice)* | `zazawan dadedal von` — *Azawan chooses tea (as the one choice)* |
+| **`vaon`** | *picks (with potentially more picks coming)* | `zazawan dugabel vaon` — *Azawan picks a topping (more picks may follow)* |
+| **`vun`** | *denies / refuses* | `zazawan dulel vun` — *Azawan denies/refuses the lie* |
+| **`vuan`** | *excludes* | `zazawan debanul vuan` — *Azawan excludes nuts* |
+| **`vuon`** | *bars (anything but)* | `zazawan dogevel vuon` — *Azawan bars coffee (anything else is fine)* |
+| **`ven`** | *prioritizes* | `zazawan dugujul ven` — *Azawan prioritizes the bug* |
+| **`vaen`** | *equates / ties* | `zazawan degogelsh vaen` — *Azawan equates the candidates* |
+| **`voen`** | *tries* | `zazawan damugal voen` — *Azawan tries the fix* |
+| **`vuen`** | *deprioritizes* | `zazawan dodugul vuen` — *Azawan deprioritizes dessert* |
 
 **Key contrasts** (English near-misses):
 
@@ -225,7 +225,7 @@ These are **not** phrase named-list joins and **not** [restrictors](restrictors.
 
 | Form | `/ɡ/` (*N … b-X*) | `/h/` (*event … b-X*) | Example |
 |------|-------------------|------------------------|---------|
-| **`gan` / `han`** | *including / with* | *with / including* | `zubarol gan bebanul`; `zazaman han bedejan vawul` |
+| **`gan` / `han`** | *including / with* | *with / including* | `zubarol gan bebanul`; `zazawan han bulonun vawul` |
 | **`gon` / `hon`** | *exclusive for* (X is N’s sole pick) | *exclusively for / as the one* | `zugolal gon badedal`; `… hon badedal vebonem` |
 | **`gaon` / `haon`** | *open to* (X admitted; more may follow) | *among options* | `zubazul gaon bugabel`; `… haon bugabel vebonem` |
 | **`gun` / `hun`** | *against / anti-* (refuses X) | *refusing* | `zobulel gun bulel`; `… hun vemedel` |
@@ -244,7 +244,7 @@ These are **not** phrase named-list joins and **not** [restrictors](restrictors.
 | exclude vs anything but | `bebanul guan` vs `bebanul guon` | *without nuts* vs *open to anything but nuts* |
 | sole vs open pick | `balenal gon` vs `balenal gaon` | *path-only* vs *path among options* |
 | prioritize vs try | `bamugal gen` vs `bamugal goen` | *fix-first* vs *try-the-fix* |
-| relation vs reviser | `zahanal gan bazaman` vs `zahanal al zazaman` | PP-like *team including Sam* vs slot-repair *team, including Sam* |
+| relation vs reviser | `zahanal gan bazawan` vs `zahanal al zazawan` | PP-like *team including Azawan* vs slot-repair *team, including Azawan* |
 | stock AP label | `g{primary colors}` / mention span | content *including* needs `/b/` (`gan b-…`) |
 | open vs without (causal) | `haon bazem` vs `huan bogulol` | sufficient hit vs necessary-style exclusion — [causation](causation.md) |
 
@@ -302,7 +302,7 @@ These roots **require** a viewpoint **`x`+ANCHOR** when the sense is **space** (
 | **`odewo`** | ↙️ *down-left* | down-left |
 | **`oduwo`** | ↘️ *down-right* | down-right |
 
-Bare spatial forms are **illegal** (`gevedel`, `hamalal`, `hevedel`, …). Prefer listener / name frames when facing someone (`…xehadon`, `…xazaman`) rather than silent speaker default.
+Bare spatial forms are **illegal** (`gevedel`, `hamalal`, `hevedel`, …). Prefer listener / name frames when facing someone (`…xehadon`, `…xazawan`) rather than silent speaker default.
 
 **Not covered by the ban:**
 
@@ -338,7 +338,7 @@ The **`/b/`** argument is the landmark, not the viewpoint. Put the facing being 
 | `gevedexumogon` | *my left* (speaker facing) |
 | `gevedexehadon` | *your left* (listener facing) |
 | `gevedexanan` | *our left* (interlocutors sharing a facing) |
-| `gevedexazaman` | *Sam’s left* |
+| `gevedexazawan` | *Azawan’s left* |
 | `gevedel` (spatial) | **illegal** |
 | `xamalal` | discourse *therefore* — metaphor, not spatial right |
 | Role `zaxozower` | participant — ROLE vowel left of **`x`**, not DIR |

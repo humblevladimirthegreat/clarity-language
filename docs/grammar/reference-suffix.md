@@ -11,7 +11,7 @@ Every content word ends with a **reference suffix** — one of four final letter
 |--------|-----|----------|
 | **-l** | First mention in the **literal** sense (*a / some X*) | **l**iteral |
 | **-m** | First mention in a **metaphorical** sense | **m**etaphor |
-| **-n** | **Named** / definite by label (*Sam*, *Paris*) | **n**ame |
+| **-n** | **Named** / definite by label (*Azawan*, *Paris*) | **n**ame |
 | **-r** | **Resume** an already-introduced referent | **r**esume / **r**efer back |
 
 A bare **-l** / **-m** word always **introduces**. To point back, use **-r** (how resume chooses its antecedent: [pronouns.md](pronouns.md)).
@@ -27,15 +27,15 @@ gloss: `z-dog` · `g-blue`
 ```
 
 ```
-`zazaman vawul.`
+`zazawan vawul.`
 
-gloss: `z-Sam` · `v-walk`
+gloss: `z-grace` · `v-walk`
 
-*Sam goes.* (named person)
+*Azawan goes.* (named person)
 ```
 
 ```
-`zazamar vawul.`
+`zazawar vawul.`
 
 gloss: `z-r` · `v-walk`
 
@@ -80,7 +80,7 @@ After the ending, **-sh** marks an **associative group** (anchor and associates)
 
 #### Nouns (`/z/`, `/d/`, `/b/`)
 
-Named individuals, places, one-off objects, titled works: *Sam*, *Paris*, *the Odyssey*. Argument nouns under a complex adjective or adverb can be **-n** when that participant is a named entity (*book by* **[Rowling]**).
+Named individuals, places, one-off objects, titled works: *Azawan*, *Paris*, *the Odyssey*. Argument nouns under a complex adjective or adverb can be **-n** when that participant is a named entity (*book by* **[Rowling]**).
 
 #### Phrasal proper names (mid-word `x`)
 <a id="phrasal-proper-names"></a>
@@ -89,11 +89,11 @@ Named individuals, places, one-off objects, titled works: *Sam*, *Paris*, *the O
 
 | Shape | Example | Reading |
 |-------|---------|---------|
-| **Nativized** multipart (Agelan roots + mid-word **`x`**) | `zamevaxezeman` | *Mary Smith* (one person) |
-| same under other slots | `donujan`, `bodevan` | one named place / person as object or argument |
+| **Nativized** multipart (Agelan roots + mid-word **`x`**) | `zozohuxalenan` | *Ozohuxalenan* (*wish*×*guidance* — one person) |
+| same under other slots | `dozohuxalenan`, `bozohuxalenan` | one named place / person as object or argument |
 | **Sense compound** (two lexicon roots) | `zuzuzuxogeven` | *Sushi-Coffee* as one nativized label |
 
-**Trap:** adjacent bare same-role words (`zamevan zezeman`) look like two people in a [join](coordination.md) (*Mary and Smith*). One **`x`-compound** keeps **one** resume target and one slot filler.
+**Trap:** adjacent bare same-role words (`zozohun zalenan`) look like two people in a [join](coordination.md) (*Ozohun and Alenan*). One **`x`-compound** keeps **one** resume target and one slot filler.
 
 Phonotactics for **`x`**: [phonology.md](phonology.md#phonotactics).
 
@@ -117,7 +117,7 @@ A **named circumstance, channel, or standard** framing the clause. Aligns with [
 
 | Subclass | **-n**? |
 |----------|---------|
-| **Vocatives** | Natural home — address by name (`jumogon`, `jazaman`). Kind-based address (*everyone*) stays **-l**; titled group (*Team Alpha*) takes **-n**. |
+| **Vocatives** | Natural home — address by name (`jumogon`, `jazawan`). Kind-based address (*everyone*) stays **-l**; titled group (*Team Alpha*) takes **-n**. |
 | **Interjections** | Mostly **-l** / **-m**. Use **-n** for a named formula (**[Amen]**, branded catchphrases). Closed [yes/no polarity](questions.md#yes-no-polarity) particles use **-l** / **-m** only. |
 | **Clause force** | Closed **`jal` / `jol` / …** set — no **-n** / **-r** ([clause force](core.md#clause-force)). |
 

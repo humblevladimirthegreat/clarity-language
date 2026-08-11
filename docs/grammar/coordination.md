@@ -11,7 +11,7 @@ You use joins when English would say *and*, *or*, *not*, *prefer A over B*, *som
 
 | Level | Prefix | Example job |
 |-------|--------|-------------|
-| Phrase | `/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/` | *Sam and Lea*, *big and red* |
+| Phrase | `/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/` | *Azawan and Ulonun*, *big and red* |
 | VP | `/v/` | *ate and drank* |
 | Clause | `/x/` | *It rained and then we left* |
 
@@ -173,7 +173,7 @@ Plain **u** means the listed conjuncts **fail** — not invert, not *something e
 | Arity | Shape | Reading |
 |-------|-------|---------|
 | list | `A B zul` | *none of A or B* |
-| focus | `zazaman zul` | *not Sam* |
+| focus | `zazawan zul` | *not Azawan* |
 | bare | `zul` / `zum` / `zun` | *no* |
 
 ```
@@ -362,11 +362,11 @@ gloss: `z-tea` · `z-coffee` · `z-water` · `zel`
 ```
 
 ```
-`zazaman zedejan zael gonudam.`
+`zazawan zulonun zael gonudam.`
 
-gloss: `z-azama` · `z-edeja` · `zael` · `g-challenging`
+gloss: `z-grace` · `z-courage` · `zael` · `g-challenging`
 
-*Sam is as challenging as Lea.*
+*Azawan is as challenging as Ulonun.*
 ```
 
 Fence chains keep ranking from **spoken conjunct order** before the right-close join.
@@ -483,11 +483,11 @@ gloss: `z-dog` · `z-cat` · `zal` · `g-challenging`
 ```
 
 ```
-`zogodol zagadal zam gogobul bazaman.`
+`zogodol zagadal zam gogobul bazawan.`
 
-gloss: `z-dog` · `z-cat` · `zam` · `g-ownership` · `b-azama`
+gloss: `z-dog` · `z-cat` · `zam` · `g-ownership` · `b-grace`
 
-*Sam's (dog and cat).*
+*Azawan's (dog and cat).*
 ```
 
 ### Join scope islands
@@ -498,8 +498,8 @@ When other same-slot material sits nearby, wrap the sub-stretch and its join **i
 
 | Shape | Reading |
 |-------|---------|
-| `zazaman ^ zudural zal ^ zam` | *Sam and (just water)* |
-| `zazaman ^ zal ^ zam` | *Sam and nothing* |
+| `zazawan ^ zudural zal ^ zam` | *Azawan and (just water)* |
+| `zazawan ^ zal ^ zam` | *Azawan and nothing* |
 | `^ zudural zal ^` | *just water* alone in the slot |
 | `^ hadazol z<A> z<B> zam ^` | *maybe (A and B)* |
 

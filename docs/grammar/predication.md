@@ -1,7 +1,7 @@
 # Predication (classification and identity)
 <a id="predication"></a>
 
-How Agelan says English *to be* for **kind / role** (*Sam is a teacher*) and **identity** (*Clark is Superman*) — without a general *to-be* verb.
+How Agelan says English *to be* for **kind / role** (*Azawan is a teacher*) and **identity** (*Clark is Superman*) — without a general *to-be* verb.
 
 ## Beginner
 <a id="beginner"></a>
@@ -19,11 +19,11 @@ Content `/v/` is for events and actions — not bare copular glue.
 | `z<HOST> gogunol b<OTHER>` | *HOST is (identical to) OTHER* — [identity](#identity) |
 
 ```
-`zazaman gonudam.`
+`zazawan gonudam.`
 
-gloss: `z-azama` · `g-challenging`
+gloss: `z-grace` · `g-challenging`
 
-*Sam is challenging.*
+*Azawan is challenging.*
 ```
 
 **Mnemonic:** property sits on `/ɡ/` like any adjective; there is no light *be* verb between two nouns for classification.
@@ -36,18 +36,18 @@ gloss: `z-azama` · `g-challenging`
 
 | Pattern | Example | Reading |
 |---------|---------|---------|
-| Kind / role as `/ɡ/` | `zazaman gedagel` | *Sam is a teacher* |
-| Named category / titled role | `zazaman gedagen` | *Sam is Teacher* (proper designation) — [**-n** on `/ɡ/`](reference-suffix.md) |
+| Kind / role as `/ɡ/` | `zazawan gedagel` | *Azawan is a teacher* |
+| Named category / titled role | `zazawan gedagen` | *Azawan is Teacher* (proper designation) — [**-n** on `/ɡ/`](reference-suffix.md) |
 
 ```
-`zazaman gedagel.`
+`zazawan gedagel.`
 
-gloss: `z-Sam` · `g-teacher`
+gloss: `z-grace` · `g-teacher`
 
-*Sam is a teacher.*
+*Azawan is a teacher.*
 ```
 
-**Role noun vs role adjective:** when you **refer** to a person-as-role, use a noun slot (`zedagel`). When you **ascribe** the role to a named or resumed host, use predicative `/ɡ/` (`zazaman gedagel`).
+**Role noun vs role adjective:** when you **refer** to a person-as-role, use a noun slot (`zedagel`). When you **ascribe** the role to a named or resumed host, use predicative `/ɡ/` (`zazawan gedagel`).
 
 Kind-as-property already appears under invert **ua** / **uo** SHARED (`zual gagadal` = *every cat*). Predicative classification is the same kind of `/ɡ/` reading on a single host — not a join.
 
@@ -81,7 +81,7 @@ gloss: `z-odava` · `g-SAME` · `b-uzuba`
 *Clark is Superman.*
 ```
 
-`oguno`+`/b/` stay **contiguous**, like other complex adjectives (`gogobul bazaman`).
+`oguno`+`/b/` stay **contiguous**, like other complex adjectives (`gogobul bazawan`).
 
 ## Intermediate
 <a id="intermediate"></a>
@@ -90,9 +90,9 @@ gloss: `z-odava` · `g-SAME` · `b-uzuba`
 
 | Pattern | Example | Reading |
 |---------|---------|---------|
-| Soft / hedged class | `zazaman gedagel` + open packaging or `/w/` hedge | *Sam is a teacher (among readings)* / *allegedly…* |
-| Characterizing / habitual | `zazaman gedagel hual` | *Sam is the teaching type* — [**hual**](restrictors.md) |
-| Negation | `zazaman gul gedagel` | *Sam is not a teacher* — [negation **u**](coordination.md#negation-u) |
+| Soft / hedged class | `zazawan gedagel` + open packaging or `/w/` hedge | *Azawan is a teacher (among readings)* / *allegedly…* |
+| Characterizing / habitual | `zazawan gedagel hual` | *Azawan is the teaching type* — [**hual**](restrictors.md) |
+| Negation | `zazawan gul gedagel` | *Azawan is not a teacher* — [negation **u**](coordination.md#negation-u) |
 
 Values still stack on the classifying `/ɡ/` (`gedagel w-…xa…`) when the point is gratitude, judgment, or other need framing of that role — [values.md](values.md).
 
@@ -125,7 +125,7 @@ Comparative claims as clause content use the same zero-copula shape with a ranke
 ### Boundaries
 
 - Dual bare subjects (`z<A> z<B>`) do not mean *A is B*.
-- Adjacent same-PoS **-n** words are not a multipart proper name (`zazaman zedejan`); use an **`x`-compound** (`zamevaxezeman`) — [phrasal proper names](reference-suffix.md#phrasal-proper-names).
+- Adjacent same-PoS **-n** words are not a multipart proper name (`zazawan zulonun`); use an **`x`-compound** (`zozohuxalenan`) — [phrasal proper names](reference-suffix.md#phrasal-proper-names).
 - Plural **-sh** on `SAME` (`oguno`) is unused for “they are the same group”; mark group reference on the host nouns, or ascribe identity pairwise.
 - Multi-alias lists (*A, B, and C are one*): prefer pairwise `SAME`, or separate sentences — do not invent a second SHARED reading under `ae` for co-reference.
 

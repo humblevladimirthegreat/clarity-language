@@ -683,7 +683,7 @@ Same habit for every SI-style prefix: scale the number, not the unit stem.
 
 **Measured differentials** (*two meters taller*) put that measure NP as the **single `/b/`** on the SHARED scale adjective of a [comparative](comparatives.md#measured-differentials):
 
-`zazaman zedejan zel gonudam burelul g+2` → *Sam is two meters more challenging than Lea*
+`zazawan zulonun zel gonudam burelul g+2` → *Azawan is two meters more challenging than Ulonun*
 
 Vague degree stays `/w/` on the scale (`zel wogenal gonudam …`) — no unit. Duration and other clause measures use the same unit+amount habit in whatever slot the relation needs.
 
@@ -721,7 +721,7 @@ The fence PoS matches the slot (`zal` / `dal` / `gal` / `bal` / …). Mixed iden
 
 **Arity escape:** three or more number conjuncts under **`a`** stay an ordinary discrete inventory (`zal z+1 z+3 z+7` = *1, 3, and 7*), even with SHARED. Focus **`zal z+3`** stays *just 3*, not a ray. Focus **ranked** with a number is a [threshold](#numeric-thresholds), not ordinary *only X matters*.
 
-**Contrast with comparatives:** `zazaman zedejan zel gonudam` = *Sam is more challenging than Lea* (SHARED **scale**, non-number conjuncts). `z+3 z+5 zel gumedul` = *from 3 to 5 on time* (SHARED **continuum**, number endpoints). Bare `z+3 z+5 zel` = prefer 3 over 5.
+**Contrast with comparatives:** `zazawan zulonun zel gonudam` = *Azawan is more challenging than Ulonun* (SHARED **scale**, non-number conjuncts). `z+3 z+5 zel gumedul` = *from 3 to 5 on time* (SHARED **continuum**, number endpoints). Bare `z+3 z+5 zel` = prefer 3 over 5.
 
 #### Thresholds (focus ranked)
 <a id="numeric-thresholds"></a>
@@ -745,7 +745,7 @@ Same under `/d/` `/b/` `/ɡ/` (`gel g+5` = modifier *\<5*; `duel d+10` = object 
 
 **Unspecified in a threshold:** bare **`e`** + **-r** = unspecified member of the *\< X* ray — `zer z+5` → *some/whatever value \< 5* (under question → *which value \< 5?*). **`ue`** takes **no** **-r** (stacked forms never do — [coordination](coordination.md#unspecified-member-r-phrase)); there is no `zuer` threshold. For an unspecified value *\> 5*, use other wording (not a reverse **-r** fence).
 
-Contrast: `z+3 z+5 zel gumedul` = *from 3 to 5 on time* (span); `z+3 z+5 zel` = *3 ≻ 5* (preference); `z+5 zel` = *\< 5* (focus threshold); `z+e` / `g+e` = +∞ ([digitless exponents](#digitless-exponents)). `zazaman zel` (non-number) stays ordinary *only Sam matters* / [superlative-with-scale](comparatives.md) — **focus number conjunct** triggers the threshold reading when the number is a bound (typically digitful).
+Contrast: `z+3 z+5 zel gumedul` = *from 3 to 5 on time* (span); `z+3 z+5 zel` = *3 ≻ 5* (preference); `z+5 zel` = *\< 5* (focus threshold); `z+e` / `g+e` = +∞ ([digitless exponents](#digitless-exponents)). `zazawan zel` (non-number) stays ordinary *only Azawan matters* / [superlative-with-scale](comparatives.md) — **focus number conjunct** triggers the threshold reading when the number is a bound (typically digitful).
 
 #### Half-open (exclude the high end only)
 

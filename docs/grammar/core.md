@@ -30,7 +30,7 @@ Final letters (**-l** / **-m** / **-n** / **-r**) say how the root enters the ta
 
 Agelan writing is **unicase**: use **lowercase** for every native letter — role letter, root, ending, plural **-sh**, numbers, revisers, join closes, and citation forms. Sentence starts after `.` / `?` / `!` stay lowercase. Named reference is **-n** / **`@`**, not a capital letter.
 
-Capital letters appear only inside **foreign or raw** payloads that keep another writing system’s casing — opaque spans (`d<NaCl>`, `d<iPhone>`), compact foreign content words (`z<Sam>n`), and cite / mention interiors whose wording is not Agelan (`d@[Hamlet]`). Once a root is nativized (published or adapted Agelan shape), write it lowercase with an ordinary ending (`zazaman`, not `zAzaman`).
+Capital letters appear only inside **foreign or raw** payloads that keep another writing system’s casing — opaque spans (`d<NaCl>`, `d<iPhone>`), compact foreign content words (`z<Sam>n`), and cite / mention interiors whose wording is not Agelan (`d@[Hamlet]`). Once a root is nativized (published or adapted Agelan shape), write it lowercase with an ordinary ending (`zazawan`, not `zAzawan`).
 
 Do not use capitals for shouting, titles, or emphasis — use clause force, polar stance, or other closed mood tools instead.
 
@@ -44,7 +44,7 @@ Do not use capitals for shouting, titles, or emphasis — use clause force, pola
 
 When you are **not** filling a clause slot — lexicon head, list, title line, or a freestanding non-clausal turn — you may write **root + ending** with **no** role letter:
 
-`godol.` · `uzem.` · `umogon.` · `azaman.`
+`godol.` · `uzem.` · `umogon.` · `azawan.`
 
 | Ending | Job |
 |--------|-----|

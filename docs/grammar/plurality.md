@@ -15,18 +15,18 @@ Without **-sh**, the word picks **one** referent. With **-sh**, the default cont
 | `…l` / `…m` / `…n` / `…r` | singular (one referent / one introduction) |
 | `…lsh` / `…msh` / `…nsh` / `…rsh` | associative group (or collective ascription on `/ɡ/`) |
 
-**Mnemonic:** **-sh** = **s**et with the anchor — *Sam-sh* ≈ *Sam and associates*.
+**Mnemonic:** **-sh** = **s**et with the anchor — *Azawan-sh* ≈ *Azawan and associates*.
 
 ```
-`zazamansh vawul.`
+`zazawansh vawul.`
 
-gloss: `z-Sam-sh` · `v-walk`
+gloss: `z-grace-sh` · `v-walk`
 
-*Sam and associates go.*
+*Azawan and associates go.*
 ```
 
 ```
-`zazamarsh vahural.`
+`zazawarsh vahural.`
 
 gloss: `z-r-sh` · `v-sit`
 
@@ -60,7 +60,7 @@ Bare **-l** / **-m** still always introduce; **-lsh** / **-msh** introduce a **g
 
 ### Nouns (`/z/`, `/d/`, `/b/`)
 
-Natural home for **-sh**. The argument’s referent is an associative set: *some cats*, *Sam and associates*.
+Natural home for **-sh**. The argument’s referent is an associative set: *some cats*, *Azawan and associates*.
 
 * **-lsh** / **-msh** — first mention of a discourse group of that kind.
 * **-nsh** — a named plural / titled group.

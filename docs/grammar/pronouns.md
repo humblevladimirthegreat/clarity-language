@@ -19,11 +19,11 @@ Two stem lengths:
 There are no English-style 3rd-person pronoun lexemes (*he* / *she* / *it* / *they*) and no impersonal *one*.
 
 ```
-`zazaman vawul. zazamar vahural.`
+`zazawan vawul. zazawar vahural.`
 
-gloss: `z-Sam` · `v-walk` · `z-r` · `v-sit`
+gloss: `z-grace` · `v-walk` · `z-r` · `v-sit`
 
-*Sam goes. He sits.* (resume from the name’s root prefix)
+*Azawan goes. He sits.* (resume from the name’s root prefix)
 ```
 
 Add **-sh** after **-r** for a **group** referent (anchor **and associates**) — [plurality.md](plurality.md). Example: `…r` = one; `…rsh` = that one and associates.
@@ -83,11 +83,11 @@ When names are unavailable:
 **`odo`:** placeholder for the material that **immediately follows** ([dependent clauses](core.md#dependent-clauses)). Put **`odo` last** in its host slot; the dependent follows with no intervening host words. Same speech act as the main sentence → dependent may omit `/j/`; a different speech act needs its own force word.
 
 ```
-`zumogon vezabul dazaman dodol zedejan vedabul.`
+`zumogon vezabul dazawan dodol zulonun vedabul.`
 
-gloss: `z-speaker` · `v-tell` · `d-Sam` · `d-next-clause` · `z-Lea` · `v-depart`
+gloss: `z-speaker` · `v-tell` · `d-grace` · `d-next-clause` · `z-courage` · `v-depart`
 
-*I told Sam that Lea left.*
+*I told Azawan that Ulonun left.*
 ```
 
 ## Intermediate

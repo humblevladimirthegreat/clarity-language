@@ -73,11 +73,11 @@ gloss: `d-tea` · `ol` · `d-coffee`
 ```
 
 ```
-`zahanal ul zazaman.`
+`zahanal ul zazawan.`
 
-gloss: `z-team` · `ul` · `z-Sam`
+gloss: `z-team` · `ul` · `z-grace`
 
-*The team except only Sam.*
+*The team except only Azawan.*
 ```
 
 ### Discourse shape (starter)
@@ -152,11 +152,11 @@ Every `REVᵢ` applies **in parallel to the same A**, each with its own right-ha
 For nested English *including (B except C)*, put the inner revision **inside** one side.
 
 ```
-`zahanal am zazaman ul zedejan.`
+`zahanal am zazawan ul zulonun.`
 
-gloss: `z-team` · `am` · `z-Sam` · `ul` · `z-Lea`
+gloss: `z-team` · `am` · `z-grace` · `ul` · `z-courage`
 
-*The team, including Sam, except only Lea.*
+*The team, including Azawan, except only Ulonun.*
 ```
 
 ```
@@ -189,11 +189,11 @@ On a **non-initial** conjunct under a [clause `/x/` fence](coordination.md#claus
 Before an **`/x/`** linker (*therefore*, *however*, …), **`REV`** scopes the linker+body stretch: `al xamalal …` → *Additionally, therefore …*. Prefer plain `al …` or plain `xamalal …` when one cue is enough.
 
 ```
-`jazaman al zumogon vawul.`
+`jazawan al zumogon vawul.`
 
-gloss: `j-Sam` · `al` · `z-speaker` · `v-walk`
+gloss: `j-grace` · `al` · `z-speaker` · `v-walk`
 
-*Sam — additionally, I go.* (vocative, then discourse reviser)
+*Azawan — additionally, I go.* (vocative, then discourse reviser)
 ```
 
 ## Advanced
