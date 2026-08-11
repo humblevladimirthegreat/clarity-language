@@ -107,7 +107,7 @@ gloss: `j-command` · `z-you` · `v-[oops]` · `d-me`
 | **Title string / proverb as wording** | **cite** — `d[…]` / `d@[…]` |
 | ***The title X* / *the proverb X*** as named unit | **mention** **-n** — `d@{…}` |
 | **Nativized loan** | ordinary PoS + root + ending — no span |
-| **That (prior span) again** | span anaphor — `daxar` / `duxar` / … |
+| **That (prior span) again** | span anaphor — `daxur` / `duxur` / … |
 | **Name / word citation outside a clause** | prefix-less **root + ending** — [citation forms](core.md#citation-forms) (`umogon.`, `<Sam>n`) — not a span |
 
 **Trap:** `d<sushi>` is a span open + interior blob; `d<sushi>l` is one content word whose root is foreign. Do not put **-l** / **-m** / **-n** / **-r** after an opaque closer. Spans need a PoS because they fill a **clause** slot; freestanding citation drops the role letter instead.
@@ -158,14 +158,14 @@ The vowel **after** `x` is **EDGE** — how far the open runs. It is **not** a s
 
 | EDGE | Job | Needs close? | Typical writing |
 |------|-----|--------------|-----------------|
-| **a** | **Multi-token open** — push a stack frame until explicit close (default) | yes (unless anaphor **-r**) | `d[…]` … `]` |
+| **a** | **Multi-token open** — push a stack frame until explicit close (default) | yes | `d[…]` … `]` |
 | **e** | **Clause-scoped** — auto-pop before the next clause-force `/j/` or clause-level `/x/` join (**complete**) | no (auto) | `d[…` run to clause end |
 | **o** | **Atomic** — exactly **one** following token | no | `d[hi]`, `d<sushi>` |
-| **u** | **Empty / redacted** — no interior | no | `d[]` |
+| **u** | **Empty / redacted** — no interior; also **anaphor** **-r** | no | `d[]`, `d[=]` |
 
-**Anaphor `-r`** always uses EDGE **`a`** in the spoken template (`daxar`). Other EDGE + **-r** combinations are undefined.
+**Anaphor `-r`** always uses EDGE **`u`** in the spoken template (`daxur`). Other EDGE + **-r** combinations are undefined.
 
-EDGE **`a`** / **`e`** / **`o`** take **-l** / **-m** / **-n**. EDGE **`u`** is normally exact **-l** (`daxul`); paraphrase-empty and proper-empty are unused.
+EDGE **`a`** / **`e`** / **`o`** take **-l** / **-m** / **-n**. EDGE **`u`** takes exact **-l** (`daxul`) or anaphor **-r** (`daxur`); paraphrase-empty and proper-empty are unused.
 
 ### Endings on opens and span pronouns
 <a id="endings"></a>
@@ -179,7 +179,7 @@ EDGE **`a`** / **`e`** / **`o`** take **-l** / **-m** / **-n**. EDGE **`u`** is 
 
 **-n** is not one-token scope (that is EDGE **o**). A proper span may be multi, clause-scoped, or atomic. Hedged proper (`@~`) is written **`d@[…]`** only (spoken as the **proper** open with uncertain tonality). **`@`** / **`~`** do not combine with anaphor **-r**.
 
-**-r** is ordinary [anaphora](pronouns.md), not “resume citing.” `daxar` = *that (cite)* as object — matching the most recent **cite** (TYPE **a**). The pronoun’s PoS need not match the antecedent open’s PoS (`zaxar` = that cite as subject). No interior; no close.
+**-r** is ordinary [anaphora](pronouns.md), not “resume citing.” `daxur` = *that (cite)* as object — matching the most recent **cite** (TYPE **a**). The pronoun’s PoS need not match the antecedent open’s PoS (`zaxur` = that cite as subject). No interior; no close (EDGE **`u`**).
 
 Named entities *inside* a cite / mention / aside still take ordinary PoS + **-n** (`z<Sam>n`). Opaque interiors are not parsed as Agelan words.
 
@@ -197,7 +197,7 @@ Named entities *inside* a cite / mention / aside still take ordinary PoS + **-n*
 | `d@[Hamlet]` | `daxon Hamlet` | atomic proper cite |
 | `d[…` … (to clause end) | `daxel` … | clause-scoped (EDGE **e**) |
 | `d[]` | `daxul` | empty / redacted (EDGE **u**) |
-| `d[=]` | `daxar` | anaphor |
+| `d[=]` | `daxur` | anaphor (EDGE **u**) |
 
 Close does not repeat PoS, TYPE, EDGE, or open fidelity. Explicit close for EDGE **a**: **`xuxul`** (complete) — Intermediate trunc/sic/close-all live in Advanced.
 
@@ -288,9 +288,9 @@ xuxum  =  x + u + x + u + m
 
 **Mnemonic:** close endings are not open exact/paraphrase/proper. Open **-n** = proper/titled span; close **-n** = sic. Open **-r** = span anaphor; close **-r** = truncated.
 
-Truncated and sic spans **are committed** and enter anaphor history (`d[=]` / `daxar` may resume them). Combined `-\|` / `#\|` are writing-only shorthand for two spoken closes; bare `xuxur` / `xuxun` never means pop-all by themselves. Illegal: `\|-` / `\|#` (mark must precede close-all).
+Truncated and sic spans **are committed** and enter anaphor history (`d[=]` / `daxur` may resume them). Combined `-\|` / `#\|` are writing-only shorthand for two spoken closes; bare `xuxur` / `xuxun` never means pop-all by themselves. Illegal: `\|-` / `\|#` (mark must precede close-all).
 
-These forms are not clause joins (`xul` / `xum` = negation — different shape). They are not an empty cite under `/d/` (`daxul` = empty/redacted; `xuxul` = complete close).
+These forms are not clause joins (`xul` / `xum` = negation — different shape). They are not an empty cite under `/d/` (`daxul` = empty/redacted; `daxur` = that cite; `xuxul` = complete close; `xuxur` = truncated close).
 
 | Writing | Speech | Notes |
 |---------|--------|-------|
@@ -306,14 +306,14 @@ Prefer EDGE **`a`** + **`xuxur`** for cut-off cites; EDGE **`e`** auto-pop is **
 
 #### Opens and related (PoS shown as `…`; EDGE **a** unless noted)
 
-| TYPE | exact multi **-l** | paraphrase **-m** | proper **-n** | anaphor **-r** |
-|------|--------------------|-------------------|---------------|----------------|
-| cite **a** | `…axal` | `…axam` | `…axan` | `…axar` |
-| aside **e** | `…exal` | `…exam` | `…exan` | `…exar` |
-| mention **o** | `…oxal` | `…oxam` | `…oxan` | `…oxar` |
-| opaque **u** | `…uxal` | `…uxam` | `…uxan` | `…uxar` |
+| TYPE | exact multi **-l** | paraphrase **-m** | proper **-n** | anaphor **-r** (EDGE **u**) |
+|------|--------------------|-------------------|---------------|------------------------------|
+| cite **a** | `…axal` | `…axam` | `…axan` | `…axur` |
+| aside **e** | `…exal` | `…exam` | `…exan` | `…exur` |
+| mention **o** | `…oxal` | `…oxam` | `…oxan` | `…oxur` |
+| opaque **u** | `…uxal` | `…uxam` | `…uxan` | `…uxur` |
 
-Atomic (EDGE **o**): `…axol` / `…axom` / `…axon` (cite examples); same pattern on other TYPEs. Clause-scoped (EDGE **e**): `…axel` / `…axem` / `…axen`. Empty: `…axul` (exact).
+Atomic (EDGE **o**): `…axol` / `…axom` / `…axon` (cite examples); same pattern on other TYPEs. Clause-scoped (EDGE **e**): `…axel` / `…axem` / `…axen`. Empty exact (EDGE **u**): `…axul` / `…exul` / `…oxul` / `…uxul`.
 
 #### Closes
 

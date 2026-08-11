@@ -126,7 +126,7 @@ Clause-force `/j/` is not resumed with `-r` ([utterance markers](core.md#utteran
 | *thus* / *that way* | Adverb antecedent → `/h/` …`-r` |
 | *regarding that* (clause aboutness) | `/h/` *regarding* + `/b/` …`-r` |
 | *going back to subject X* (thread resume) | Any antecedent → `/x/` …`-r` |
-| *that* (prior cite / mention / aside) | [Span anaphor](spans.md#endings) → `daxar` / … |
+| *that* (prior cite / mention / aside) | [Span anaphor](spans.md#endings) → `daxur` / … |
 
 **Span anaphors** are closed [span-fence](spans.md) forms — they resolve to the **most recent span of that TYPE**, not letter/full-root content pronouns. Ordinary content **-r** still resumes words *inside* a non-opaque span.
 
