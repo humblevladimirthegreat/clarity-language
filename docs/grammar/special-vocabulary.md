@@ -447,7 +447,7 @@ Use COMMENT when the clause is doing **first-person cognitive commentary**. Thir
 | Agelan | Reading |
 |---------|---------|
 | `zanal wodoloxur hogenal hagenal` | *I fear the get-together* — unmet competence; flood; room awash — no COMMENT |
-| `… howarom …` | *I hope to …* (intention) — soft plan; no COMMENT |
+| `… howarom …` | *I hope to …* (intention) — sketch plan; no COMMENT |
 | `… huhol …` | commentary taken as the scene (fused) |
 | `… huhur …` | commentary named *and* stepped back from |
 
@@ -590,17 +590,27 @@ English future cues (*will*, *going to*, *tomorrow*, …) smuggle whether you me
 |-------|--------|--------------|
 | Intention / commitment about what *you* will do | closed **`PLAN`** under `/h/` (optional `/w/` if scoped only to a preceding `/ɡ/`) | **`owaro`** 🗺️ *world-map* → *plan* |
 | Forecast about what will happen | closed **`PREDICT`** under `/h/` (same `/w/` option) | **`edelo`** 🔭 *telescope* → *forecast* |
-| How detailed the intention is | endings (or a tiny closed set) on **`PLAN`** — none / vague / detail / contingency; **-l / -m / -n / -r** is the natural four-way fit once assigned | same **`owaro`** |
+| How drawn the intention map is | endings on **`PLAN`** — [map resolution](#plan-map-resolution) (**sketch** / **itinerary** / **fork** / **proper**) | same **`owaro`** |
 | How you know the forecast | ordinary **[evidentiality](#evidentiality)** `/h/` stacked with **`PREDICT`** | same **`edelo`** |
 
-**Mnemonic:** a **map** charts a course you mean to take; a **telescope** looks ahead at a distance (provisional resolution). Past / source framing uses [evidentiality](#evidentiality) (e.g. **WITNESSED** / **RECORDED**).
+**Shape:** floating **`/h/`** mood **`owaro`** 🗺️ *world-map* → *plan* (optional `/w/` when scoped only to a preceding `/ɡ/` — rare). Prefer floating `/h/`. Ending = [map resolution](#plan-map-resolution).
+
+**Mnemonic:** a **map** charts a course you mean to take; a **telescope** looks ahead at a distance (provisional resolution). Past / source framing uses [evidentiality](#evidentiality) (e.g. **WITNESSED** / **RECORDED**). Ordinary content still available (`zowarol` *a map*; `vowarol` *to plan*).
 
 ```
 `howarom … vegeham`
 
-gloss: `h-PLAN-detail` · `v-finish`
+gloss: `h-PLAN-sketch` · `v-finish`
 
-*Detail plan: I finish.*
+*Sketch plan: I finish.* (direction only — default)
+```
+
+```
+`howarol … vegeham`
+
+gloss: `h-PLAN-itinerary` · `v-finish`
+
+*Itinerary plan: I finish.* (steps on the map)
 ```
 
 ```
@@ -611,7 +621,43 @@ gloss: `h-PREDICT` · `h-PATTERN` · `v-rain`
 *Forecast from pattern: it rains.*
 ```
 
-Plan vs predict is a **root choice**, not ability stance on a host. Ability compounds onto an activity (`veguxul`); plan/predict **frame the clause** — content verbs stay bare. Prefer floating `/h/`.
+Use **PLAN** when the clause is doing **intention framing**. Forecast stays **PREDICT**. Pick firmness stays [**DECISION**](#decision). Ability compounds onto an activity (`veguxul`); plan/predict **frame the clause** — content verbs stay bare. Prefer floating `/h/`.
+
+| English bundle | Prefer |
+|----------------|--------|
+| *I plan to … / I mean to …* (direction) | **PLAN** sketch (`howarom`) |
+| *here's how I'll …* (steps filled in) | **PLAN** itinerary (`howarol`) |
+| *if that fails, I'll …* (backup path) | **PLAN** fork (`howaror`) |
+| *the roadmap / Plan B* (titled course) | **PLAN** proper (`howaron`) |
+| *it will rain / I expect …* (world forecast) | **PREDICT** (`hedelom`, …) + evidentiality as needed |
+| *I've decided …* (how locked) | [**DECISION**](#decision) |
+
+| Agelan | Reading |
+|---------|---------|
+| `… howarom …` | intention; **sketch** (soft default) |
+| `… howarol …` | intention; **itinerary** |
+| `… howaron …` | intention; **proper** / named plan |
+| `… howaror …` | intention; **fork** / contingency |
+| `howarol … hehegel` | itinerary **and** settled pick — stack with DECISION |
+
+#### Endings — map resolution (+ proper **-n**)
+<a id="plan-map-resolution"></a>
+<a id="plan-endings"></a>
+
+On **`owaro`**, **-l / -m / -n / -r** mark **how drawn the intention map is** — resolution of the course, not pick firmness, not ability, not COMMENT hold.
+
+| Ending | Form | Job | Reading |
+|--------|------|-----|---------|
+| **-m** | **`howarom`** | **sketch** (soft default) | direction only — *I mean to …* without steps |
+| **-l** | **`howarol`** | **itinerary** | steps filled in — *how* is on the map |
+| **-n** | **`howaron`** | **proper** | named / titled plan (*the roadmap*, *Plan B* as label) |
+| **-r** | **`howaror`** | **fork** | contingency / backup path — *if not A, then B* |
+
+**Mnemonic:** **-m** open sketch; **-l** locked itinerary; **-n** named map; **-r** forked / other-path. When unsure, prefer **`howarom`**. Omit **PLAN** when you are not framing intention (or use soft **-m** rather than a separate “none” grain).
+
+**Not DECISION:** map resolution ≠ revisability. Stack when both matter (`howarol … hehegel`). **Not ability:** *can't plan yet* stays host + **`xe` / `xo` / `xu`**. Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)).
+
+Plan vs predict is a **root choice**, not ability stance on a host.
 
 ### Decision (revisability)
 <a id="decision"></a>
@@ -639,13 +685,13 @@ gloss: `h-DECISION-irreversible`
 *I've decided …* — settled / not taking it back
 ```
 
-Use **DECISION** when the clause is doing **pick firmness**. The choosing **act** stays [join-act **`von`**](#join-act-verbs) (*chooses as the one*). Intention detail stays [**PLAN**](#plan-predict). Autonomy-as-need stays [**`obola`**](values.md#need-inventory). *Can’t decide yet* on an activity host stays [ability](#ability) (`…xe…` / `…xo…` / …), not this mood. *Won’t decide* is refusal / choice packaging — not ability and not changeability **-r**.
+Use **DECISION** when the clause is doing **pick firmness**. The choosing **act** stays [join-act **`von`**](#join-act-verbs) (*chooses as the one*). Intention map resolution stays [**PLAN**](#plan-predict). Autonomy-as-need stays [**`obola`**](values.md#need-inventory). *Can’t decide yet* on an activity host stays [ability](#ability) (`…xe…` / `…xo…` / …), not this mood. *Won’t decide* is refusal / choice packaging — not ability and not changeability **-r**.
 
 | English bundle | Prefer |
 |----------------|--------|
 | *I've decided / that's my decision* (+ how locked) | **DECISION** (`hehegem`, …) |
 | *choose X (as the one)* | join-act **`von`** |
-| *I plan to …* (intention grain) | [**PLAN**](#plan-predict) (`howarom`, …) |
+| *I plan to …* (map grain) | [**PLAN**](#plan-predict) (`howarom`, …) |
 | *choice / agency* (need) | value **`obola`** |
 | *can’t decide* (capacity) | host + ability **`xe` / `xo` / `xu`** (or **`xa`** if able) |
 | *won’t decide* (refusal) | ordinary refuse / choice packaging — not ability |
@@ -658,7 +704,7 @@ Use **DECISION** when the clause is doing **pick firmness**. The choosing **act*
 | `… hehegen …` | decided; **proper** / named decision frame |
 | `… heheger …` | decided **for now** (temporary) |
 | `zumogon dalenal von hehegel` | *I choose that path (only); settled* |
-| `… howarom …` | intention detail — soft plan; not DECISION firmness |
+| `… howarom …` | intention **sketch** — not DECISION firmness |
 
 #### Endings — changeability (+ proper **-n**)
 <a id="decision-changeability"></a>
@@ -1225,8 +1271,7 @@ Unassigned or rare edges (not required for ordinary reading):
 
 - **COMMENT / NOTIONAL:** sense-channel noting color on **`uho`**; dedicated bare `/j/` interjection on either root; forced COMMENT on every first-person clause (only cognitive commentary environments); whether **`edahe`** under `/j/` doubles number-style *As if!* cheer.
 - **Emotion compose:** whether MED (`oju`) shares a form with another soft default; `/w/` bind on the judged `/ɡ/` vs only floating `/h/`; emotion lexicon retained only for non-judgmental sensation naming.
-- **Plan:** exact ending ↔ None / Vague / Detail / Contingency assignment on **`PLAN`**.
-- **DECISION:** whether bare unmarked pick clauses imply **`hehegem`** or leave firmness unspoken; stacking with **PLAN** detail endings on the same clause.
+- **DECISION:** whether bare unmarked pick clauses imply **`hehegem`** or leave firmness unspoken; stacking with **PLAN** map-resolution endings on the same clause.
 - **Evidentiality / universality:** ending tables (confidence grain, soft vs committed warrant, …); full tense inventory stacking with channels; whether bare unmarked `hual` / `zual` implies COMMON or leaves warrant unspoken.
 - **Ability:** scaffolding stacks on **`xa`** (assisted / instrumental); *won’t* as ability morph; whose-ability / evidentiality on the denial; positive *can* forced on every clause.
 - **Role compounds:** ROLE **`e`** (reserved); instrument / beneficiary / recipient as extra ROLE vowels; role compounds under `/v/` `/h/` `/w/`; stacking role + ability (`axattackxu…`) — put ability on the bare event verb; *act done by entity* as a ROLE — resume verbs with ordinary **-r**, or use **`var`** for unnamed doing.

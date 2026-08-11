@@ -295,6 +295,7 @@ Competence (`odolo`) and relatedness (`ogono`) shown for readability; same endin
 - **COMMENT** / mindfulness noting — [special-vocabulary.md § Comment](special-vocabulary.md#comment); closed **`uho`** + [hold endings](special-vocabulary.md#comment-hold); not contact-channel endings on **`xa`**.
 - **NOTIONAL** / as-if framing — [special-vocabulary.md § Notional](special-vocabulary.md#notional); closed **`edahe`** + same hold map; not free number notional forms.
 - **DECISION** / pick firmness — [special-vocabulary.md § Decision](special-vocabulary.md#decision); closed **`ehege`** + [changeability](special-vocabulary.md#decision-changeability); not unmet-need **`xu`**, not ability, not PLAN.
+- **PLAN** / intention map resolution — [special-vocabulary.md § Plan](special-vocabulary.md#plan-predict); closed **`owaro`** + [map resolution](special-vocabulary.md#plan-map-resolution) (sketch / itinerary / fork / proper); not DECISION, not PREDICT.
 - Whose-need / care direction on prescription, and forced listener / third-person possessives, stay optional later dimensions.
 
 ## See also

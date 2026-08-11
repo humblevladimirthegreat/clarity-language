@@ -25,8 +25,14 @@ ahem,h,❤️,felt evidential (gut-known / proprioceptive),heart marks gut feeli
 ahem,w,❤️,felt evidential (gut-known / proprioceptive),heart marks gut feeling; gut-felt is affective knowing channel
 orolom,h,📜,story evidential (tale / lore / anecdote),scroll holds a tale; tale is narrative framing channel
 orolom,w,📜,story evidential (tale / lore / anecdote),scroll holds a tale; tale is narrative framing channel
-owarom,h,🗺️,plan mood (intention / commitment),map charts a route; plan charts a course you mean to take
-owarom,w,🗺️,plan mood (intention / commitment),map charts a route; plan charts a course you mean to take
+owarom,h,🗺️,plan mood sketch map-resolution (direction-only intention),map charts a route; sketch plan is intention without steps
+owarom,w,🗺️,plan mood sketch map-resolution (direction-only intention),map charts a route; sketch plan is intention without steps
+owarol,h,🗺️,plan mood itinerary map-resolution (steps on the map),map charts a route; itinerary plan fills in how
+owarol,w,🗺️,plan mood itinerary map-resolution (steps on the map),map charts a route; itinerary plan fills in how
+owaron,h,🗺️,plan mood proper (named plan / titled course),map charts a route; proper -n titles the plan
+owaron,w,🗺️,plan mood proper (named plan / titled course),map charts a route; proper -n titles the plan
+owaror,h,🗺️,plan mood fork map-resolution (contingency / backup path),map charts a route; fork plan is if-not-A-then-B
+owaror,w,🗺️,plan mood fork map-resolution (contingency / backup path),map charts a route; fork plan is if-not-A-then-B
 edelom,h,🔭,predict mood (forecast about what will happen),telescope shows what is far; forecast looks ahead at a distance
 edelom,w,🔭,predict mood (forecast about what will happen),telescope shows what is far; forecast looks ahead at a distance
 ehegel,h,✅,decision mood irreversible changeability (settled pick),checkmark confirms a pick; irreversible decision is settled as final

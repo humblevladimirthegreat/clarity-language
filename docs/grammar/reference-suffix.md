@@ -179,6 +179,10 @@ On [ability](special-vocabulary.md#ability) compounds — **host + `x` + {a\|e\|
 
 On [DECISION](special-vocabulary.md#decision) — closed mood **`ehege`** under `/h/` / `/w/` — endings match unmet changeability: **-l** irreversible, **-m** modifiable, **-n** proper, **-r** temporary (no won’t-now). No mid-word **`x`**. Details: [special-vocabulary.md § Decision](special-vocabulary.md#decision).
 
+### Plan endings
+
+On [PLAN](special-vocabulary.md#plan-predict) — closed mood **`owaro`** under `/h/` / `/w/` — endings mark **map resolution**: **-m** sketch, **-l** itinerary, **-n** proper, **-r** fork (contingency). Not DECISION firmness, not PREDICT. No mid-word **`x`**. Details: [special-vocabulary.md § Plan map resolution](special-vocabulary.md#plan-map-resolution).
+
 ### Role compounds
 
 On [role compounds](special-vocabulary.md#role-compounds) — **`{a\|u\|o} x ROOT`** (agent / patient / reltum) — endings keep **ordinary** reference-suffix senses. Mid-word **`x`** families: [x-compounds.md](x-compounds.md).

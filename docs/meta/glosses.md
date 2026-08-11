@@ -192,7 +192,7 @@ Bake join / reviser **job** into the English label (including open vs closed whe
 | `zehadonsh` | `z-listener-sh` | *you-all* (address set) |
 | `guzem` | `g-happy` | *happy* |
 | `huhunum` | `h-witnessed` | *per memory* |
-| `howarom` | `h-plan` | *as a plan* |
+| `howarom` | `h-plan-sketch` | *as a sketch plan* |
 | `gogunol` | `g-SAME` | *identical to* (identity host) |
 | `von` | `v-choose` | *chooses (exactly one)* |
 

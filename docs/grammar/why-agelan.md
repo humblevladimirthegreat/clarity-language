@@ -113,7 +113,7 @@ Marking the channel (and separating *I think* from world-warrant) helps you catc
 
 English *will* smuggles plan and prediction together, and it is easy to talk as if the future were already known — a certain prediction that fuels anxiety or overconfidence — while a pick often sounds more locked than it is.
 
-Agelan splits them: [PLAN](special-vocabulary.md#plan-predict) for what you mean to do; [PREDICT](special-vocabulary.md#plan-predict) for a forecast, usually stacked with [evidentiality](special-vocabulary.md#evidentiality) for *how* you forecast (pattern, inference, …) rather than bare certainty. [DECISION](special-vocabulary.md#decision) marks how revisable a pick is — same changeability map as unmet values — without replacing the choosing act or the plan detail.
+Agelan splits them: [PLAN](special-vocabulary.md#plan-predict) for what you mean to do (endings = how drawn the intention map is — sketch / itinerary / fork / proper); [PREDICT](special-vocabulary.md#plan-predict) for a forecast, usually stacked with [evidentiality](special-vocabulary.md#evidentiality) for *how* you forecast (pattern, inference, …) rather than bare certainty. [DECISION](special-vocabulary.md#decision) marks how revisable a pick is — same changeability map as unmet values — without replacing the choosing act or the plan’s map resolution.
 
 Splitting plan, prediction, and decision firmness helps you avoid treating a wishful or “certain” forecast as settled fact (or as a commitment), and a revisable pick as locked forever.
 
