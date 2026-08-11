@@ -6,7 +6,7 @@ const dataDir = fileURLToPath(new URL('../../../data', import.meta.url))
 const srcDir = fileURLToPath(new URL('../../../src', import.meta.url))
 
 const readingOrder = [
-  { text: 'How Agelan helps', link: '/' },
+  { text: 'Why Agelan', link: '/' },
   { text: 'Introduction', link: '/introduction' },
   { text: 'Core', link: '/core' },
   { text: 'Phonology', link: '/phonology' },
@@ -52,7 +52,7 @@ export default defineConfig({
   },
   themeConfig: {
     nav: [
-      { text: 'How Agelan helps', link: '/' },
+      { text: 'Why Agelan', link: '/' },
       { text: 'Introduction', link: '/introduction' },
       { text: 'Core', link: '/core' },
       { text: 'Lexicon', link: '/lexicon' },

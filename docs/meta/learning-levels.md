@@ -13,7 +13,7 @@ Ask in order. Prefer the **earlier** band when a concept sits on a boundary and 
 
 1. **Usable after one short explanation?**  
    Can someone use it in ordinary dialogue after roughly one paragraph and a couple of examples (and at most a second of thought once practiced)?  
-   If yes → **beginner** (or at least not advanced). Aligns with the language’s [easy-to-use feature criterion](../grammar/design-methods.md#criterion-for-features).
+   If yes → **beginner** (or at least not advanced). Aligns with the language’s [easy-to-use feature criterion](../grammar/why-agelan.md#criterion-for-features).
 
 2. **Does it depend on another subsystem already being fluent?**  
    If the form only makes sense after joins, numbers, values, spans, etc. are already comfortable → at least **intermediate**.  
@@ -32,11 +32,11 @@ Ask in order. Prefer the **earlier** band when a concept sits on a boundary and 
 ## Cross-doc path
 <a id="cross-doc-path"></a>
 
-Read **`docs/grammar/`** only, in band order. [design-methods.md](../grammar/design-methods.md) and [introduction.md](../grammar/introduction.md) are orientation (not bands).
+Read **`docs/grammar/`** only, in band order. [why-agelan.md](../grammar/why-agelan.md) and [introduction.md](../grammar/introduction.md) are orientation (not bands).
 
 ### Beginner
 
-1. [design-methods.md](../grammar/design-methods.md) — psychological purpose, limits, feature criteria, benefit tour (not a learning band)
+1. [why-agelan.md](../grammar/why-agelan.md) — psychological purpose, limits, feature criteria, benefit tour (not a learning band)
 2. [introduction.md](../grammar/introduction.md) — name, grammar design, how to learn
 3. [core.md Beginner](../grammar/core.md#beginner)
 4. [phonology.md Beginner](../grammar/phonology.md#beginner) (letters / word edges; optional early)

@@ -1,31 +1,28 @@
-# How Agelan helps
+# Why Agelan
+<a id="why-agelan"></a>
 <a id="design-methods"></a>
-
-Why Agelan encodes psychological distinctions, what compassion / rationality / empowerment mean here, limits on those claims, how that morphology shows up before you learn clause shape, and the bars new psychological features should meet. Detail lives in the linked grammar pages; this page does not teach full paradigms.
-
-This is the first page in the sidebar order. Next: [introduction.md](introduction.md) (name, grammar design, how to learn), then [core.md](core.md#beginner).
 
 ## Purpose
 <a id="purpose"></a>
 
-Agelan encodes psychological concepts and techniques into vocabulary and grammar so that using the language nudges you toward better habits. For example, there are two words for *to say*: one means “they literally said,” and the other “I perceived the meta-message to be.” That split helps you notice when you are adding your own interpretation, and it helps speakers stay mindful of attitude toward the listener.
+Agelan encodes psychological concepts and techniques into vocabulary and grammar so that using the language nudges you toward better habits. For example, *I think* can frame a clause as cognitive commentary ([COMMENT](special-vocabulary.md#comment)) without upgrading it to a world warrant — that split helps you notice when you are storying the scene rather than reporting how you know.
 
 The design aims at three outcomes, in this order:
 
 ### Compassion
 <a id="compassion"></a>
 
-Support self-acceptance and acceptance of others, and make judgments visible when they arise. Example: a personal possessive can mark gratitude for what you have — a [value](values.md) on `/w/` (`…xa…` = serves a named need).
+Support self-acceptance and acceptance of others, and make judgments visible when they arise. Examples: praise with a met [value](values.md) (`…xa…` + contact channel) so gratitude names the need served, not vague *good*; compose *angry* / *anxious* as unmet need + activation + locus so the charge’s target stays audible ([emotion compose](special-vocabulary.md#emotion-compose)); tag *can’t* as temporary, modifiable, irreversible, or won’t-now so a block or a choice is not a fixed identity ([ability](special-vocabulary.md#ability)).
 
 ### Rationality
 <a id="rationality"></a>
 
-Surface common biases that make self-delusion easy. Example: when you say you believe something, you can mark whether you also looked for disconfirming evidence (heard both sides) — a check against confirmation bias.
+Surface common biases that make self-delusion easy. Examples: mark how you know a claim — memory, record, hearsay, pattern, inference, … — and keep *I think* as [COMMENT](special-vocabulary.md#comment), not a warrant ([evidentiality](special-vocabulary.md#evidentiality)); say whether a choice list is open or closed so two options are not smuggled as the only ones ([joins](coordination.md)); keep habitual *always* as usual weather, not a law of nature ([universality](special-vocabulary.md#universality)); when the “must” is really an ought, stack [values](values.md) on the condition shape instead of upgrading a wish into natural law ([preference vs law](causation.md#preference-vs-law)).
 
 ### Empowerment
 <a id="empowerment"></a>
 
-Support authentic choice by making reasons for action visible. Example: when framing work to do, prefer numbered candidates (`zubezul g#1`, `zegogel g#2`, …) over bare *the problem* / *the solution* / *the goal* ([numbered alternatives](special-vocabulary.md#numbered-alternatives)). Reframe the same situation with paraphrase (**-m**, discourse **`el`/`em`**, or a paraphrase span — [spans.md](spans.md)), not a second digit.
+Support authentic choice by making reasons for action visible. Examples: name motive (`xe`) or prescription (`xo`) on a [value](values.md) instead of bare *should*; prefer numbered candidates (`zubezul g#1`, `zegogel g#2`, …) over bare *the problem* / *the solution* / *the goal* ([numbered alternatives](special-vocabulary.md#numbered-alternatives)), and reframe the same situation with paraphrase rather than a second digit; mark how revisable a pick is ([DECISION](special-vocabulary.md#decision)), and split what you mean to do ([PLAN](special-vocabulary.md#plan-predict)) from a forecast ([PREDICT](special-vocabulary.md#plan-predict)); name the judgment bar when ranking (*worse than Average* / *Mine* / … — [judgment benchmarks](comparatives.md#judgment-benchmarks)).
 
 **Why this order.** Rationality is hard without compassion first: lack of self-acceptance fuels motivated reasoning, so truth-seeking collapses into defense. Empowerment without rationality is foolish; without compassion it is antisocial; without both it is dangerous. So the stack is compassion → rationality → empowerment.
 

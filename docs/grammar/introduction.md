@@ -2,14 +2,14 @@
 
 **Agelan** (`agela` + proper **-n**) translates to English *clarity*.
 
-What the language is called, how these docs work, and what “good grammar design” means here. Psychological purpose, limits, feature criteria, and the benefit tour: [design-methods.md](design-methods.md). Core clause grammar starts in [core.md](core.md).
+What the language is called, how these docs work, and what “good grammar design” means here. Psychological purpose, limits, feature criteria, and the benefit tour: [why-agelan.md](why-agelan.md). Core clause grammar starts in [core.md](core.md).
 
-**Prerequisites:** [design-methods.md](design-methods.md) (why the language exists — recommended first).
+**Prerequisites:** [why-agelan.md](why-agelan.md) (why the language exists — recommended first).
 
 ## Purpose (short)
 <a id="purpose"></a>
 
-Agelan encodes psychological distinctions into vocabulary and grammar so ordinary speech can nudge **compassion → rationality → empowerment**. Full outcomes, limits, examples, and the subsystem tour: [design-methods.md](design-methods.md).
+Agelan encodes psychological distinctions into vocabulary and grammar so ordinary speech can nudge **compassion → rationality → empowerment**. Full outcomes, limits, examples, and the subsystem tour: [why-agelan.md](why-agelan.md).
 
 ## Grammar design
 <a id="grammar-design"></a>
@@ -32,7 +32,7 @@ Agelan keeps three kinds of clarity in ordinary speech:
 ## How to learn from these docs
 <a id="how-to-learn"></a>
 
-Grammar pages use **Beginner** / **Intermediate** / **Advanced** sections so you can finish all Beginner material across this folder before Intermediate, then Advanced. [design-methods.md](design-methods.md) and this page are orientation only — not learning bands.
+Grammar pages use **Beginner** / **Intermediate** / **Advanced** sections so you can finish all Beginner material across this folder before Intermediate, then Advanced. [why-agelan.md](why-agelan.md) and this page are orientation only — not learning bands.
 
 Follow the **Suggested reading order** in the site sidebar (same sequence on every page). Read each page’s Beginner section in that order, then every peer’s Intermediate, then Advanced.
 
