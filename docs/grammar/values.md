@@ -207,7 +207,7 @@ gloss: `z-meeting` · `w-autonomy-unmet-temporary`
 *The meeting costs autonomy right now (temporary).*
 ```
 
-Same changeability table is reused on [ability](special-vocabulary.md#ability) **`xa` / `xu`** and on [DECISION](special-vocabulary.md#decision) (**`ehege`**). Unmet competence (`hodoloxun`) is still a **need** claim — not “can’t competence.”
+Same changeability table is reused on [DECISION](special-vocabulary.md#decision) (**`ehege`**). [Ability](special-vocabulary.md#ability) puts temporary / modifiable / irreversible *can’t* on stance vowels instead (**`xe` / `xo` / `xu`**) and keeps ordinary endings. Unmet competence (`hodoloxun`) is still a **need** claim — not “can’t competence.”
 
 ### Which ending table?
 
@@ -287,7 +287,7 @@ Competence (`odolo`) and relatedness (`ogono`) shown for readability; same endin
 - Ordinary **-l / -m** (literal / metaphorical) do not mean met / unmet on these compounds.
 - Value second halves are bare vowels **`a` / `e` / `o` / `u`** inside a compound — not prefix-less revisers (`al`, `ul`, …) and not restrictor joins (`hal`, …).
 - Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)).
-- **Incapability** compounds onto the **activity/property host** (`veguxun`) or fallback **`egera`** — [ability](special-vocabulary.md#ability) — not onto need compounds (`hodoloxun` remains unmet competence).
+- **Incapability** compounds onto the **activity/property host** (`veguxul`) or fallback **`egera`** — [ability](special-vocabulary.md#ability) — not onto need compounds (`hodoloxun` remains unmet competence).
 
 ### Design notes
 
@@ -300,4 +300,4 @@ Competence (`odolo`) and relatedness (`ogono`) shown for readability; same endin
 ## See also
 
 - Applicability *when* (not a need stance): [restrictors.md](restrictors.md)
-- Ability **`xu`/`xa`** and other closed mood (not needs): [special-vocabulary.md](special-vocabulary.md)
+- Ability **`xa` / `xe` / `xo` / `xu`** and other closed mood (not needs): [special-vocabulary.md](special-vocabulary.md)

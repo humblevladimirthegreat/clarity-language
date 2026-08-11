@@ -25,7 +25,7 @@ After the PoS prefix, look at what sits **left** and **right** of the first mid-
 |-------------------|--------|---------|
 | **`VOWEL x VOWEL`** + ending | **[Span fence](spans.md)** | TYPE **a** / **e** / **o** / **u** then EDGE **a** / **e** / **o** / **u**; exact **`xuxul`** / **`xuxur`** / **`xuxun`** / **`xuxum`** = close |
 | **`VOWEL x ROOT…`** + ending | **[Role compound](special-vocabulary.md#role-compounds)** | ROLE **`a`** / **`u`** / **`o`** then event or relation root; **`e`** reserved |
-| **`ROOT… x VOWEL`** + ending | **[Values](values.md)** or **[ability](special-vocabulary.md#ability)** | Need root + **`a`/`e`/`o`/`u`** → values; other root + **`xa`/`xu`** → ability (**`xe`/`xo`** undefined on ability) |
+| **`ROOT… x VOWEL`** + ending | **[Values](values.md)** or **[ability](special-vocabulary.md#ability)** | Need root + **`a`/`e`/`o`/`u`** → values; other root + **`xa`/`xe`/`xo`/`xu`** → ability |
 | **`ROOT… x NUM…`** + ending | **[Numeric derivation](special-vocabulary.md#numeric-derivation)** | Right half matches [number](numbers.md) stem grammar **without** its own ending (marker **`+`/`-`/`#`/`_`**, digitless exp including label **`_e`/`_e-`**, hyperbole, [zero × exp](numbers.md#zero-exponent) **`+0e`/`±0e-1`/`#0e`**, label digits, scalar digit morph **`+N`/`-N`**, or ordinal digit morph **`#N`** — not free end-relative **`#-`** / generation / **`Ne0`** assert morphs; no **`ROOTx+e0`/`+0e0`**) |
 | **`ROOT… x ROOT…`** + ending | **Ordinary compound** | Lexicon sense-compounds; [phrasal proper names](reference-suffix.md#phrasal-proper-names) (`zamevaxezeman`); [viewpoint laterals](special-vocabulary.md#viewpoint-laterals) (`gevedexehadon` *your left*) |
 
@@ -36,7 +36,7 @@ No open content root is a **bare single vowel**, so a single vowel **left** of `
 1. Exact **`xuxul`** / **`xuxur`** / **`xuxun`** / **`xuxum`** → span close.
 2. After PoS: one vowel + `x` + one vowel + ending → **span open** (or atomic / anaphor / empty / proper per [spans](spans.md)).
 3. After PoS: one vowel **`a`/`u`/`o`** + `x` + longer root + ending → **role compound**.
-4. Longer material before `x`, then `x` + single stance vowel **`a`/`e`/`o`/`u`** + ending → **value** (need host) or **ability** (non-need + **`a`/`u`** only).
+4. Longer material before `x`, then `x` + single stance vowel **`a`/`e`/`o`/`u`** + ending → **value** (need host) or **ability** (non-need host).
 5. Longer material before `x`, then `x` + material that matches **number stem** grammar (writing **`+`/`-`/`#`/`_`**, speech **`r`+V…**, including digit morph **`+N`/`-N`** / **`#N`**) + ending → **numeric derivation**.
 6. Longer material on **both** sides of `x` → ordinary multi-root compound (sense / name).
 
@@ -49,7 +49,8 @@ Stacked vowels on TYPE/EDGE/ROLE are **not** used: role ROLE is one of **`a`** /
 
 | Shape | Reading |
 |-------|---------|
-| Bare **`ROOT x e`** | Stance **`xe`** (values; undefined on ability) — **not** infinity-essence |
+| Bare **`ROOT x e`** | Stance **`xe`** (values motive **or** ability temporary *can’t*) — **not** infinity-essence |
+| Bare **`ROOT x o`** | Stance **`xo`** (values prescription **or** ability modifiable *can’t*) — **not** a ROLE |
 | Essence | Scalar digitless exp **`ROOTx+e`** — [numeric derivation](special-vocabulary.md#numeric-derivation) |
 | **`e x ROOT`** | Reserved (undefined ROLE) — not a fourth role vowel |
 | Lateral **`DIR x ANCHOR`** | Ordinary compound with closed spatial reading — [viewpoint laterals](special-vocabulary.md#viewpoint-laterals); bare spatial `gevedel` illegal |

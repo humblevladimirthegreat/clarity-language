@@ -177,7 +177,7 @@ Refine fields when implementation starts; keep the **stage split** stable.
 
 ## Build order
 
-1. Peggy word grammar + fixtures (`zumogon`, `g+3`, `daxal` / `xuxul`, `v<sing>xun`, revisers, number shorthand vs speech).  
+1. Peggy word grammar + fixtures (`zumogon`, `g+3`, `daxal` / `xuxul`, `veguxel`, revisers, number shorthand vs speech).  
 2. `classify` against overlays + published roots.  
 3. Chevrotain sentence over synthetic `LexWord[]` (`/j/` / `/x/`, joins first).  
 4. Spans + **`odo`** in Chevrotain.  

@@ -151,7 +151,7 @@ Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) —
 | Family | Example Agelan | Morph gloss |
 |--------|-----------------|-------------|
 | Ordinary / name compound | `jubenaxuzonun` | `j-hospitality-x-optimism` |
-| Ability / values stance | `vawuxul` | `v-walking-x-can't` |
+| Ability / values stance | `vawuxel` | `v-walking-unable-temporary` |
 | Values stance on need | `hodoloxem` | `h-competence-x-motive` |
 | Role compound | `zaxezeber` | `z-agent-x-dialogue` |
 | Span open / close | `hexal` … `xuxul` | `h-aside-x-multi` · … · `x-span-close` |
@@ -222,10 +222,10 @@ gloss: `x-however` · `z-←Ubenaxuzonun` · `h-witnessed` · `z-rain`
 
 ### Ability + value motive
 
-Agelan: `juel zumogon vawuxul hodoloxem.`
+Agelan: `juel zumogon vawuxel hodoloxem.`
 
 ```
-gloss: `j-no` · `z-speaker` · `v-walking-x-can't` · `h-competence-x-motive`
+gloss: `j-no` · `z-speaker` · `v-walking-unable-temporary` · `h-competence-x-motive`
 
 *No — I can't walk right now.*
 ```

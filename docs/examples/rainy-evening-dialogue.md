@@ -88,17 +88,17 @@ strict: *I wonder — who walks?*
 
 loose: *I wonder — who walks?*
 
-**A:** `juel zuzur vawuxul hodoloxem.`
+**A:** `juel zuzur vawuxel hodoloxem.`
 
-gloss: `j-no` · `z-←Uzuzuxogeven` · `v-walking-x-can't` · `h-competence-x-motive`
+gloss: `j-no` · `z-←Uzuzuxogeven` · `v-walking-unable-temporary` · `h-competence-x-motive`
 
 strict: *No — I (A) can't walk right now — for competence (motive, soft standing).*
 
 loose: *No — I can't walk right now.*
 
-**B:** `el zuzur hegeraxul vawul.`
+**B:** `el zuzur hegeraxel vawul.`
 
-gloss: `in-other-words` · `z-←Uzuzuxogeven` · `h-capacity-x-can't` · `v-walking`
+gloss: `in-other-words` · `z-←Uzuzuxogeven` · `h-ABIL-unable-temporary` · `v-walking`
 
 strict: *In other words, that one (A) lacks the capacity to walk.*
 

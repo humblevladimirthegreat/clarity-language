@@ -173,7 +173,7 @@ Bare need words (no `x`-addition) are **topic** only and keep ordinary **-l / -m
 
 ### Ability endings
 
-On [ability](special-vocabulary.md#ability) compounds — **host + `x` + {a\|u}** (e.g. `veguxun`) or fallback **`egera` + `x` + {a\|u}`** — **-l / -m / -n / -r** are **changeability** on both **`xa`** (capable) and **`xu`** (incapable). **`xe`** / **`xo`** are undefined on ability. Details: [special-vocabulary.md](special-vocabulary.md).
+On [ability](special-vocabulary.md#ability) compounds — **host + `x` + {a\|e\|o\|u}** (e.g. `veguxel`) or fallback **`egera` + `x` + {a\|e\|o\|u}`** — **-l / -m / -n / -r** keep **ordinary** reference-suffix senses on the host (literal / metaphorical / proper / anaphor). Stance lives on the vowel: **`xa`** can; **`xe`** temporary *can’t*; **`xo`** modifiable *can’t*; **`xu`** irreversible *can’t*. Details: [special-vocabulary.md](special-vocabulary.md).
 
 ### Decision endings
 

@@ -131,87 +131,74 @@ gloss: `z-someone` · `d-me` · `v-conflict` · `z-conflict-agent-r` · `v-run`
 | Role compound | Participant derived from event/relation root |
 | Content **-r** on event | The event / doing itself ([pronouns](pronouns.md)) |
 | **`zar`** / **`dar`** | Unspecified member introduce; prefer role **-r** once the event is named |
-| Ability `vozowexun` | Can’t fight — **ROOT x vowel**, not ROLE vowel left of `x` |
+| Ability `vozowexul` | Can’t fight (fixed) — **ROOT x vowel**, not ROLE vowel left of `x` |
 | Span `daxal` / `duxal` | Quote / opaque open — **vowel x vowel**, not ROLE x root |
 
 ROLE is **`a`/`u`/`o`** only; wrong ROOT type for a ROLE is illegal. Plural **-sh** on noun-slot role compounds follows ordinary [plurality](plurality.md) for that PoS.
 
-### Ability (primary: host + `xa` / `xu`)
+### Ability (primary: host + `xa` / `xe` / `xo` / `xu`)
 <a id="ability"></a>
 <a id="incapability"></a>
+<a id="ability-changeability"></a>
 
-Tag **can** / **can’t** on an activity or property root, with **changeability** on the denial (or claim) — so *can’t right now* stays distinct from *impossible* and from *won’t*.
+Tag **can** / **can’t** on an activity or property root. The stance **vowel** carries capability polarity and *can’t* grain; the **ending** stays ordinary [reference-suffix](reference-suffix.md) so literal / metaphorical / proper / anaphor stay audible on the host.
 
 **Shape** (when the capability **is** a single content root) — same mid-word **`x`** joiner as [values](values.md#word-shape):
 
 ```
-PoS + HOST + x + {a|u} + {-l|-m|-n|-r}
+PoS + HOST + x + {a|e|o|u} + {-l|-m|-n|-r}
 ```
 
 | Piece | Role |
 |-------|------|
 | **PoS** | Prefer the host’s usual role — `/v/` (event), `/ɡ/` (property), etc. |
 | **HOST** | Any **non-need** content root (*sing*, *lift*, *lead*, …) |
-| **`xa` / `xu`** | Capable / incapable |
-| **Ending** | [Changeability](#ability-changeability) only |
+| **Stance vowel** | [Ability stance](#ability-stance) — **`a`** can; **`e` / `o` / `u`** can’t grains |
+| **Ending** | Ordinary [reference-suffix](reference-suffix.md) on the **host** sense |
 
-**Mnemonic:** **`xu`** first (*can’t*); endings = how fixed the claim is — same changeability table as unmet values.
+**Mnemonic:** vowel = can / *can’t how*; ending = how the root enters the talk (**-l** literal, **-m** metaphorical, …).
 
-**Ship first:** **`xu`** (incapability). **`xa`** when you want tagged *can*.
+**Ship first:** incapability vowels (**`xe` / `xo` / `xu`**). **`xa`** when you want tagged *can*. Soft default *can’t* when grain is unclear → **`xo`**.
 
-**Parser cue:** root ∈ [six needs](values.md#need-inventory) + `x…` → **value** tables. Other roots + **`xa` / `xu`** → **ability**. **`xe` / `xo`** on non-need hosts stay undefined. After PoS, single ROLE vowel **a** / **u** / **o** then `x` then a **longer** root → [role compound](#role-compounds). After PoS, single TYPE vowel then `x` then a single EDGE vowel + ending → [span form](spans.md). Full map: [x-compounds.md](x-compounds.md).
+**Parser cue:** root ∈ [six needs](values.md#need-inventory) + `x…` → **value** tables. Other roots + **`xa` / `xe` / `xo` / `xu`** → **ability**. After PoS, single ROLE vowel **a** / **u** / **o** then `x` then a **longer** root → [role compound](#role-compounds). After PoS, single TYPE vowel then `x` then a single EDGE vowel + ending → [span form](spans.md). Full map: [x-compounds.md](x-compounds.md).
 
-| Form | Reading |
-|------|---------|
-| `veguxul` / `geguxul` | can’t sing **right now** (usually able) |
-| `…eguxum` | can’t sing yet / may learn (or unknown) |
-| `…eguxun` | can’t sing — fixed / impossible as far as you can tell |
-| `…eguxur` | won’t sing (choice) — not can’t |
-| `…eguxam` | can sing; capability open to change |
-| `…eguxan` | can sing; claim treated as fixed |
+#### Stance vowels
+<a id="ability-stance"></a>
 
-#### Endings — changeability only
-<a id="ability-changeability"></a>
+| Form | Stance | Reading |
+|------|--------|---------|
+| **`xa`** | **Capable** | can (solo / underspecified scaffold) |
+| **`xe`** | **Temporary can’t** | can’t **right now** (usually able) |
+| **`xo`** | **Modifiable can’t** | can’t, and that may change — **unspecified** whether the speaker will change it (also soft default if grain unknown) |
+| **`xu`** | **Irreversible can’t** | can’t — fixed / impossible as far as you can tell |
 
-On ability **`xa`** and **`xu`**, **-l / -m / -n / -r** are **changeability** — the same table as unmet values ([values.md § Changeability](values.md#value-changeability)) and [DECISION](#decision). Not contact channel, preference standing, or prescription force.
-
-| Ending | Changeability | Mnemonic |
-|--------|---------------|----------|
-| **-l** | **temporary** — usually able; not this moment | closed *right-now* snapshot |
-| **-m** | **modifiable** — effort or circumstance may change it (also soft default if unknown) | open to change |
-| **-n** | **irreversible** — fixed / impossible as far as you can tell | settled / named-as-fixed |
-| **-r** | **won't-now** — choice or deferral, not inability | not updating this *now* |
-
-**Can't vs won't:** **-n** (irreversible) vs **-r** (won't-now). Always pick an ending on **`xa`** / **`xu`**; unknown → **-m**.
+**Not won’t:** ability morph marks capability, not refusal. *Won’t* / *choose not to* stays ordinary lexicon (or other packaging) — not a fourth ability vowel.
 
 | Form | Reading |
 |------|---------|
-| `…xal` | capable, **temporary** standing of that claim |
-| `…xam` | capable, **modifiable** (or unknown) |
-| `…xan` | capable, **irreversible** / fixed as far as you can tell |
-| `…xar` | capable, **won't-claim-now** (defer saying you can) |
-| `…xul` | incapable, **temporary** |
-| `…xum` | incapable, **modifiable** (or unknown) |
-| `…xun` | incapable, **irreversible** |
-| `…xur` | incapable, **won't-now** (choice) |
+| `veguxal` / `geguxal` | can sing (literal host) |
+| `veguxam` | can sing (metaphorical host sense) |
+| `veguxel` | can’t sing **right now** |
+| `veguxol` | can’t sing yet / may become able (or unknown grain) |
+| `veguxul` | can’t sing — fixed / impossible as far as you can tell |
 
 ```
-`veguxul.`
+`veguxel.`
 
-gloss: `v-express-incapable-temporary`
+gloss: `v-express-unable-temporary`
 
 *Can’t sing right now.*
 ```
 
 ```
-`veguxur.`
+`veguxol.`
 
-gloss: `v-express-incapable-won't-now`
+gloss: `v-express-unable-modifiable`
 
-*Won’t sing (choice), not can’t.*
+*Can’t sing (open to change — not claiming who will change it).*
 ```
 
-Hostless / clause-wide ability uses fallback **`egera`** — [Intermediate](#ability-fallback). Ability is not a need: endings stay changeability only. Plural **-sh** on `/h/` `/w/` stays unused ([plurality](plurality.md)); host `/v/` / `/ɡ/` ability compounds follow ordinary plurality for that PoS.
+Hostless / clause-wide ability uses fallback **`egera`** — [Intermediate](#ability-fallback). Ability is not a need: stance lives on the vowel; endings stay ordinary reference-suffix. Plural **-sh** on `/h/` `/w/` stays unused ([plurality](plurality.md)); host `/v/` / `/ɡ/` ability compounds follow ordinary plurality for that PoS.
 
 ## Intermediate
 <a id="intermediate"></a>
@@ -355,7 +342,7 @@ The **`/b/`** argument is the landmark, not the viewpoint. Put the facing being 
 | `gevedel` (spatial) | **illegal** |
 | `xamalal` | discourse *therefore* — metaphor, not spatial right |
 | Role `zaxozower` | participant — ROLE vowel left of **`x`**, not DIR |
-| Ability `veguxun` | stance vowel right of **`x`**, not a person root |
+| Ability `veguxul` | stance vowel right of **`x`**, not a person root |
 
 Forward / back (`ovaro` / `agaja`) may reuse the same **`DIR x ANCHOR`** pattern when facing matters; they are not under the bare-lateral ban.
 
@@ -365,7 +352,7 @@ Forward / back (`ovaro` / `agaja`) may reuse the same **`DIR x ANCHOR`** pattern
 When there is **no single host root** (complex VP, hostless *I can’t*, or ability as a floating adverb), use closed **`ABIL`** = lexicon **`egera`** 🥣 *cereal* → *capacity*:
 
 ```
-[h|w] + egera + x + {a|u} + {-l|-m|-n|-r}
+[h|w] + egera + x + {a|e|o|u} + {-l|-m|-n|-r}
 ```
 
 | Prefix | Scope |
@@ -373,7 +360,7 @@ When there is **no single host root** (complex VP, hostless *I can’t*, or abil
 | `/h/` | clause-level capability claim (floats like other `/h/`) |
 | `/w/` | capability framed on the preceding `/ɡ/` |
 
-**Mnemonic:** a bowl holds **what it can** — hostless ability names that capacity without naming one activity root. Ordinary content still available (`zegeral` *cereal* / *a capacity*). Prefer **host+`xu`/`xa`** whenever the activity fits one root ([Beginner ability](#ability)).
+**Mnemonic:** a bowl holds **what it can** — hostless ability names that capacity without naming one activity root. Ordinary content still available (`zegeral` *cereal* / *a capacity*). Prefer **host + stance** whenever the activity fits one root ([Beginner ability](#ability)).
 
 Bare `hegeral` / `wegeral` = ability **topic** only (ordinary [reference-suffix](reference-suffix.md)).
 
@@ -381,15 +368,17 @@ Bare `hegeral` / `wegeral` = ability **topic** only (ordinary [reference-suffix]
 |------|--------|--------|
 | bare host (no `x`) | ordinary word | no ability claim |
 | bare **`egera`** (no `x`) | **Topic** | Ability named only |
-| **`xa`** | **Capable** | Capability present / claimed |
-| **`xu`** | **Incapable** | Capability denied — ship this first |
+| **`xa`** | **Capable** | can |
+| **`xe`** | **Temporary can’t** | can’t right now |
+| **`xo`** | **Modifiable can’t** | can’t; may change (speaker change unspecified) — soft default |
+| **`xu`** | **Irreversible can’t** | can’t; fixed as far as you can tell |
 
-Endings on **`egera` + `xa`/`xu`** are the same [changeability](#ability-changeability) table as host-attached ability.
+Endings on **`egera` + stance** are ordinary [reference-suffix](reference-suffix.md) (same as host-attached ability). Overlay mood reading usually prefers **-m** when the published sense is figurative; **-l** when you mean capacity in a literal *bowl / cereal* frame.
 
 ```
-`hegeraxul.`
+`hegeraxel.`
 
-gloss: `h-ABIL-incapable-temporary`
+gloss: `h-ABIL-unable-temporary`
 
 *Can’t right now (no single host / clause-wide).*
 ```
@@ -398,22 +387,21 @@ gloss: `h-ABIL-incapable-temporary`
 
 | Claim | Prefer |
 |-------|--------|
-| Can’t / can **this** activity or property | **host + `xu` / `xa`** ([Beginner](#ability)) |
-| Clause-wide / hostless capability | **`hegeraxu…`** / **`wegeraxu…`** |
+| Can’t / can **this** activity or property | **host + `xa` / `xe` / `xo` / `xu`** ([Beginner](#ability)) |
+| Clause-wide / hostless capability | **`hegeraxa…`** / **`hegeraxe…`** / **`hegeraxo…`** / **`hegeraxu…`** (same under `/w/`) |
 | Need unmet + changeability | need **`xu…`** — [values](values.md) (`hodoloxun` ≠ “can’t competence”) |
 | When / never / sometime the host applies | [restrictors](restrictors.md) (`hal`, `har`, …) |
 
-Stack when useful: e.g. can’t-sing plus unmet competence (`veguxum` + `hodoloxum`). Bare **`hal`** (*never*) is applicability, not tagged incapability. Need-root **`xu`** stays unmet need, not ability. Unspecified need **`egege`** 🥚 (*potential*) is not **`ABIL`**.
+Stack when useful: e.g. can’t-sing plus unmet competence (`veguxol` + `hodoloxum`). Bare **`hal`** (*never*) is applicability, not tagged incapability. Need-root **`xu`** stays unmet need, not ability. Unspecified need **`egege`** 🥚 (*potential*) is not **`ABIL`**.
 
 | Agelan (schematic) | Reading |
 |---------------------|---------|
-| `veguxul` | can’t sing **right now** |
-| `veguxum` | can’t sing yet / may become able |
-| `veguxun` | can’t sing (fixed / impossible as far as you can tell) |
-| `veguxur` | won’t sing (choice), not can’t |
-| `golodoxam` | can lead; capability open to change |
-| `veguxum hodoloxum` | can’t sing (modifiable) **and** unmet competence |
-| `… hegeraxul` | can’t **right now** (no single host / clause-wide) |
+| `veguxel` | can’t sing **right now** |
+| `veguxol` | can’t sing yet / may become able (or unknown) |
+| `veguxul` | can’t sing (fixed / impossible as far as you can tell) |
+| `golodoxal` | can lead (literal) |
+| `veguxol hodoloxum` | can’t sing (modifiable) **and** unmet competence |
+| `… hegeraxel` | can’t **right now** (no single host / clause-wide) |
 | `hegeral` | ability (**topic** only) |
 
 ### Comment (mindfulness noting)
@@ -623,7 +611,7 @@ gloss: `h-PREDICT` · `h-PATTERN` · `v-rain`
 *Forecast from pattern: it rains.*
 ```
 
-Plan vs predict is a **root choice**, not `xa`/`xu` on a host. Ability compounds onto an activity (`veguxun`); plan/predict **frame the clause** — content verbs stay bare. Prefer floating `/h/`.
+Plan vs predict is a **root choice**, not ability stance on a host. Ability compounds onto an activity (`veguxul`); plan/predict **frame the clause** — content verbs stay bare. Prefer floating `/h/`.
 
 ### Decision (revisability)
 <a id="decision"></a>
@@ -631,7 +619,7 @@ Plan vs predict is a **root choice**, not `xa`/`xu` on a host. Ability compounds
 
 Mark **how revisable a pick is** — temporary / open / settled / not-revising-now — with one closed mood root. English *decide* / *I've decided* / *final decision* smuggles firmness; Agelan puts firmness on the ending.
 
-**Shape:** floating **`/h/`** mood **`ehege`** ✅ *check* → *decision* (optional `/w/` when scoped only to a preceding `/ɡ/` — rare). Prefer floating `/h/`. Ending = [changeability](#decision-changeability) (same table as unmet values and ability).
+**Shape:** floating **`/h/`** mood **`ehege`** ✅ *check* → *decision* (optional `/w/` when scoped only to a preceding `/ɡ/` — rare). Prefer floating `/h/`. Ending = [changeability](#decision-changeability) (same table as unmet values — **not** ability stance vowels).
 
 **Mnemonic:** a **checkmark** confirms a pick. Ordinary content still available (`zehegel` *a checkmark*; `vehegel` *to check / tick*).
 
@@ -651,7 +639,7 @@ gloss: `h-DECISION-irreversible`
 *I've decided …* — settled / not taking it back
 ```
 
-Use **DECISION** when the clause is doing **pick firmness**. The choosing **act** stays [join-act **`von`**](#join-act-verbs) (*chooses as the one*). Intention detail stays [**PLAN**](#plan-predict). Autonomy-as-need stays [**`obola`**](values.md#need-inventory). *Can’t decide yet* / *won’t decide* on an activity host stays [ability](#ability) (`…xa…` / `…xu…`), not this mood.
+Use **DECISION** when the clause is doing **pick firmness**. The choosing **act** stays [join-act **`von`**](#join-act-verbs) (*chooses as the one*). Intention detail stays [**PLAN**](#plan-predict). Autonomy-as-need stays [**`obola`**](values.md#need-inventory). *Can’t decide yet* on an activity host stays [ability](#ability) (`…xe…` / `…xo…` / …), not this mood. *Won’t decide* is refusal / choice packaging — not ability.
 
 | English bundle | Prefer |
 |----------------|--------|
@@ -659,7 +647,8 @@ Use **DECISION** when the clause is doing **pick firmness**. The choosing **act*
 | *choose X (as the one)* | join-act **`von`** |
 | *I plan to …* (intention grain) | [**PLAN**](#plan-predict) (`howarom`, …) |
 | *choice / agency* (need) | value **`obola`** |
-| *can’t / won’t decide* (capacity) | host + ability **`xu`/`xa`** |
+| *can’t decide* (capacity) | host + ability **`xe` / `xo` / `xu`** (or **`xa`** if able) |
+| *won’t decide* (refusal) | ordinary refuse / choice packaging — not ability |
 | *commitment / policy / indecision* (lexicon nouns) | ordinary **`enebe`** / **`emome`** / **`aweva`** |
 
 | Agelan | Reading |
@@ -674,7 +663,7 @@ Use **DECISION** when the clause is doing **pick firmness**. The choosing **act*
 #### Endings — changeability only
 <a id="decision-changeability"></a>
 
-On **`ehege`**, **-l / -m / -n / -r** are **changeability** — the same table as unmet values ([values.md § Changeability](values.md#value-changeability)) and [ability](#ability-changeability). Not contact channel, preference standing, prescription force, COMMENT / NOTIONAL hold, or ordinary reference-suffix on this mood.
+On **`ehege`**, **-l / -m / -n / -r** are **changeability** — the same table as unmet values ([values.md § Changeability](values.md#value-changeability)). Not ability stance vowels, contact channel, preference standing, prescription force, COMMENT / NOTIONAL hold, or ordinary reference-suffix on this mood.
 
 | Ending | Form | Changeability | Reading |
 |--------|------|---------------|---------|
@@ -1012,7 +1001,7 @@ Single-digit scalars only. Inventory / metalanguage writing uses the marker (**`
 ##### Null / anti-null by PoS (`+0` / `-0`)
 <a id="null-anti-null"></a>
 
-**`+0`** = treat ROOT as **resettable / emptied**; **`-0`** = ROOT **resists emptying** (insistent residue). PoS says *what kind of thing* is being emptied or refusing. This is **modality of emptiness**, not quantity: not “negative zero amount,” and not absence of the kind (**`ROOTx-e`** = *void of ROOT*). Stronger wipe = [total null](#zero-exponent-derivation) **`ROOTx+0e`** (free **`v+0el`** *annihilate*). Orthogonal to free counts, essence (`+e`), void (`-e`), and [ability](#ability) (`…xun` *can’t* ≠ *won’t null*).
+**`+0`** = treat ROOT as **resettable / emptied**; **`-0`** = ROOT **resists emptying** (insistent residue). PoS says *what kind of thing* is being emptied or refusing. This is **modality of emptiness**, not quantity: not “negative zero amount,” and not absence of the kind (**`ROOTx-e`** = *void of ROOT*). Stronger wipe = [total null](#zero-exponent-derivation) **`ROOTx+0e`** (free **`v+0el`** *annihilate*). Orthogonal to free counts, essence (`+e`), void (`-e`), and [ability](#ability) (`…xul` *can’t* ≠ emptied ROOT).
 
 | PoS | `…x+0` | `…x-0` | Examples |
 |-----|--------|--------|----------|
@@ -1224,9 +1213,9 @@ Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`zanaxre
 | `j+0el` | *Annihilate!* (free) |
 | `zohuzel g_12` | room numbered 12 (ordinary) |
 | `zohuzexrowodul` | room-12 as coded kind |
-| Ability `veguxun` | can’t sing — stance vowel, not NUM |
+| Ability `veguxul` | can’t sing (fixed) — stance vowel, not NUM |
 | Role `zaxozower` | the fighter — ROLE left of `x` |
-| Stance `…xe…` | motive (needs) / undefined (ability) — not essence |
+| Stance `…xe…` | motive (needs) / temporary *can’t* (ability) — not essence |
 
 `NUM` has **no** PoS and **no** number ending; the compound’s ending is ordinary reference-suffix on ROOT. Digit morphs are single-digit **`+N` / `-N`** (scalar) or **`#N`** (ordinal); markers supply the pronounceable vowel (**`ra`** / **`ru`** / **`re`**). Free end-relative **`reu`** / **`#-`** is not a derivation morph. Digitless **`+`/`-`/`#`** = kind metaphysics; digitless **`_`** = catalog metaphysics ([infinite labels](#infinite-labels)); zero×exp morphs = [zero-exponent derivation](#zero-exponent-derivation) (including **`±0e-1`** / **`#0e`**). Plural **-sh** on noun-slot numeric derivatives follows ordinary [plurality](plurality.md) for that PoS.
 
@@ -1239,7 +1228,7 @@ Unassigned or rare edges (not required for ordinary reading):
 - **Plan:** exact ending ↔ None / Vague / Detail / Contingency assignment on **`PLAN`**.
 - **DECISION:** whether bare unmarked pick clauses imply **`hehegem`** or leave firmness unspoken; stacking with **PLAN** detail endings on the same clause.
 - **Evidentiality / universality:** ending tables (confidence grain, soft vs committed warrant, …); full tense inventory stacking with channels; whether bare unmarked `hual` / `zual` implies COMMON or leaves warrant unspoken.
-- **Ability:** **`xe` / `xo`** on ability hosts (motive / prescription stay on [needs](values.md)); whose-ability / evidentiality on the denial; positive *can* forced on every clause.
+- **Ability:** scaffolding stacks on **`xa`** (assisted / instrumental); *won’t* as ability morph; whose-ability / evidentiality on the denial; positive *can* forced on every clause.
 - **Role compounds:** ROLE **`e`** (reserved); instrument / beneficiary / recipient as extra ROLE vowels; role compounds under `/v/` `/h/` `/w/`; stacking role + ability (`axattackxu…`) — put ability on the bare event verb; *act done by entity* as a ROLE — resume verbs with ordinary **-r**, or use **`var`** for unnamed doing.
 - **Viewpoint laterals:** whether forward / back join the bare-ban inventory; absolute compass cards as titled **-n**; inanimate “facing” (screens, vehicles) as legal ANCHOR; forced listener frame under every command.
 - **Numeric derivation:** number endings / writing **`~` / `@` / `=`** on `NUM`; productive multi-digit scalar or ordinal morphs (`ROOTx+27`, `ROOTx#12`); bare digit morphs (`ROOTx1`); signed / end-relative ordinal morphs (`ROOTx#-2`); ordinal generation morphs (`ROOTx#3e2`); privative twin of ordinal **`#N`**; bare **`ROOTxe`** as essence; role **`e x ROOT`**; percent closers (**`jo` / `ju`**) as derivation morphs; digit-string morphs as phone-dial or discourse-list substitutes; scale-specific **`ROOTx±0eN`** for **`N≠1`**; **`ROOTx+e0`** / **`ROOTx+0e0`** / **`#0e0`** / **`ROOTx+Ne0`**; quasi-N beyond **`-e-1` / `-e-2`**.

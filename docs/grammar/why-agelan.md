@@ -12,7 +12,7 @@ The design aims at three outcomes, in this order:
 ### Compassion
 <a id="compassion"></a>
 
-Support self-acceptance and acceptance of others, and make judgments visible when they arise. Examples: praise that names the need served, not vague *good*; compose *angry* / *anxious* as unmet need + activation + locus so the charge’s target stays audible; tag *can’t* as temporary, modifiable, irreversible, or won’t-now so a block or a choice is not a fixed identity.
+Support self-acceptance and acceptance of others, and make judgments visible when they arise. Examples: praise that names the need served, not vague *good*; compose *angry* / *anxious* as unmet need + activation + locus so the charge’s target stays audible; tag *can’t* as temporary, modifiable, or irreversible so a block is not a fixed identity.
 
 ### Rationality
 <a id="rationality"></a>
@@ -95,9 +95,9 @@ Composing emotion from need + activation + locus helps you ask for what would ac
 
 *I can’t* blurs temporary block, lasting incapability, and choice.
 
-[Ability](special-vocabulary.md#ability) tags **can** / **can’t** on an activity or property, with the same **changeability** endings as unmet values — temporary, modifiable, irreversible, or won’t-now. Hostless *I can’t* uses a closed fallback root.
+[Ability](special-vocabulary.md#ability) tags **can** / **can’t** on an activity or property with stance vowels — **`xa`** can; **`xe`** can’t right now; **`xo`** can’t but may change (speaker change unspecified); **`xu`** can’t as fixed — so a block is not a fixed identity. Endings stay ordinary literal / metaphorical / proper. Hostless *I can’t* uses a closed fallback root. *Won’t* stays ordinary refusal / choice packaging — not an ability vowel.
 
-Tagging *can’t right now* vs *impossible* vs *won’t* helps you stop treating a temporary block or a choice as a fixed incapability.
+Tagging *can’t right now* vs *may yet* vs *impossible* helps you stop treating a temporary block as a fixed incapability; keep *won’t* off the ability morph so choice is not smuggled as can’t.
 
 ### How you know — and *I think*
 <a id="how-you-know"></a>
@@ -113,7 +113,7 @@ Marking the channel (and separating *I think* from world-warrant) helps you catc
 
 English *will* smuggles plan and prediction together, and it is easy to talk as if the future were already known — a certain prediction that fuels anxiety or overconfidence — while a pick often sounds more locked than it is.
 
-Agelan splits them: [PLAN](special-vocabulary.md#plan-predict) for what you mean to do; [PREDICT](special-vocabulary.md#plan-predict) for a forecast, usually stacked with [evidentiality](special-vocabulary.md#evidentiality) for *how* you forecast (pattern, inference, …) rather than bare certainty. [DECISION](special-vocabulary.md#decision) marks how revisable a pick is — same changeability map as ability — without replacing the choosing act or the plan detail.
+Agelan splits them: [PLAN](special-vocabulary.md#plan-predict) for what you mean to do; [PREDICT](special-vocabulary.md#plan-predict) for a forecast, usually stacked with [evidentiality](special-vocabulary.md#evidentiality) for *how* you forecast (pattern, inference, …) rather than bare certainty. [DECISION](special-vocabulary.md#decision) marks how revisable a pick is — same changeability map as unmet values — without replacing the choosing act or the plan detail.
 
 Splitting plan, prediction, and decision firmness helps you avoid treating a wishful or “certain” forecast as settled fact (or as a commitment), and a revisable pick as locked forever.
 
