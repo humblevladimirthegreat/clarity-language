@@ -17,14 +17,6 @@ Stem shapes in the number / numeric-derivation anatomy that still need readings 
 - ordinal morph **`ROOTx#0e0`** / free ordinal **`#0e0`**
 - scale-specific **`ROOTx±0eN`** for **`N≠1`** (only **`±0e-1`** assigned)
 
-## Causation / mood (not in grammar yet)
-
-- Full **`IF`** vs **`BECAUSE`** factivity write-up; epistemic-*because* twin
-- Everyday shipping of closed **`CAUSE`** mood (**`erage`** reserved)
-- Closed **`COND`** complex adjective (rejected in favor of joins)
-- Ending tables on **`IF`** / **`IFF`** / **`BECAUSE`**
-- Other adverbial subordinators (*although* / *while* / *until*, …) — lexicon roots
-
 ## Evidentiality / tense
 
 - Dedicated observation vs imagination **tense** (stacks with evidentiality channels; does not replace them)

@@ -1,7 +1,7 @@
 # Special vocabulary
 <a id="special-vocabulary"></a>
 
-Closed morphology and mood roots that are **not** [values](values.md) (needs) and **not** [restrictors](restrictors.md) (applicability). Some reuse mid-word **`x`** ([ability](#ability), [role compounds](#role-compounds), [numeric derivation](#numeric-derivation)); others are closed `/h/` mood roots with no `x`-addition (plan / predict, **DECISION**, evidentiality, universality, emotion ACT / LOCUS, **COMMENT**, **NOTIONAL**); join-act verbs and join-relations reuse join-vowel spellings under `/v/` `/ɡ/` `/h/`…**-n**. Mid-word **`x`** parser families: [x-compounds.md](x-compounds.md).
+Closed morphology and mood roots that are **not** [values](values.md) (needs) and **not** [restrictors](restrictors.md) (applicability). Some reuse mid-word **`x`** ([ability](#ability), [role compounds](#role-compounds), [numeric derivation](#numeric-derivation)); others are closed `/h/` mood roots with no `x`-addition (plan / predict, **DECISION**, evidentiality, **CAUSE**, universality, emotion ACT / LOCUS, **COMMENT**, **NOTIONAL**); join-act verbs and join-relations reuse join-vowel spellings under `/v/` `/ɡ/` `/h/`…**-n**. Mid-word **`x`** parser families: [x-compounds.md](x-compounds.md).
 
 **Prerequisites:** [core.md](core.md) Beginner; [reference-suffix.md](reference-suffix.md) Beginner; [coordination.md](coordination.md) Beginner for joins; [values.md](values.md) Beginner for ability contrast; [x-compounds.md](x-compounds.md) Intermediate when parsing mid-word **`x`**.
 
@@ -13,7 +13,7 @@ Closed morphology and mood roots that are **not** [values](values.md) (needs) an
 
 Some published roots carry a **closed overlay reading** for a fixed PoS — the word **is** that special sense, without inventing a new root. Example: **`uhunum`** under `/h/` = evidential *memory / witnessed*; **`huhunul`** = ordinary literal *in a fishing manner*.
 
-**Shape:** sense-form + [reference ending](reference-suffix.md). Mood overlays usually take **-m** (figurative published sense / soft default); other endings when that is how the overlay is defined (benchmark **-n**, universality **-l**, join-act / join-relation defective **-n**, [COMMENT](#comment-hold) / [NOTIONAL](#notional-hold) hold **-l / -m / -n / -r**, [DECISION](#decision-changeability) changeability **-l / -m / -n / -r**, …). Join-act / join-relation stems are the vowel + **-n** only (`an` / `on` / …); written words are **`pos` + sense-form** (`van` / `gan` / `han`).
+**Shape:** sense-form + [reference ending](reference-suffix.md). Mood overlays usually take **-m** (figurative published sense / soft default); other endings when that is how the overlay is defined (benchmark **-n**, universality **-l**, join-act / join-relation defective **-n**, [COMMENT](#comment-hold) / [NOTIONAL](#notional-hold) hold **-l / -m / -n / -r**, [DECISION](#decision-changeability) changeability **-l / -m / -n / -r**, [CAUSE](#cause) and [clause poles](causation.md#if-vs-iff) **-m** only, …). Join-act / join-relation stems are the vowel + **-n** only (`an` / `on` / …); written words are **`pos` + sense-form** (`van` / `gan` / `han`).
 
 **Mnemonic:** same root, special PoS reading — the ending marks which overlay you mean.
 
@@ -666,6 +666,42 @@ Idiom cue: *fish a boot* = retrieve the wrong past (🥾 `obodo` *boot* stays fr
 
 Prefer floating `/h/`; content PoS uses stay ordinary. One shared inventory for predict / cause / other-minds — not separate series.
 
+### Cause (mechanism framing)
+<a id="cause"></a>
+<a id="cause-mood"></a>
+
+Mark a clause as **mechanism-framed** — *how the gears engage* — with one closed mood root. Condition type (sufficient / necessary / *if* / *because*) stays on [joins and clause poles](causation.md); exceptionlessness stays on [universality](#universality).
+
+**Shape:** floating **`/h/`** mood **`erage`** ⚙️ *gear* → *mechanism* (optional `/w/` when scoped only to a preceding `/ɡ/` — rare). Prefer floating `/h/`. Ending = **-m** only (metaphorical overlay) — **`heragem`**.
+
+**Mnemonic:** a **gear train** names that you are talking about the mechanism, not merely listing a sufficient hit or a natural law. Ordinary content still available (`zeragel` *a gear*; `veragel` *to mesh / engage*).
+
+```
+`… haon beladel heragem.`
+
+gloss: `h-open-to` · `b-effort` · `h-CAUSE`
+
+*… open to effort — as mechanism* (how the payoff gears turn)
+```
+
+Use **CAUSE** when the clause is doing **mechanism highlight**. Everyday *leads to* / *would work* stays open sufficient without this mood. *Always by nature* stays **NATURAL** (`hafafal`) + evidentiality. *Because* / *if* subordination stays **`hurugum` / `horodom` + `odo`**.
+
+| English bundle | Prefer |
+|----------------|--------|
+| *how it works / the mechanism is…* | **CAUSE** (`heragem`) on the claim |
+| *X would work / is among routes* | open sufficient (`…aom` / `haon`) — no **CAUSE** required |
+| *always by nature* | [**NATURAL**](#universality) (`hafafal`) + evidential `/h/` |
+| *because / if* + clause | [clause poles](causation.md#if-vs-iff) (`hurugum` / `horodom`) |
+| *I think … because…* (speaker grounds) | [COMMENT](#comment) — [epistemic *because*](causation.md#epistemic-because) |
+
+| | Prefer |
+|--|--------|
+| Condition type vs mechanism | joins / **`odo`** poles = type; **`erage`** = mechanism frame |
+| NATURAL vs CAUSE | **`afafa`** = exceptionlessness warrant; **`erage`** = gears / how |
+| Evidential vs CAUSE | channel of knowing vs mechanism highlight — stack when both matter |
+
+**CAUSE** is a **root choice**, not `xa`/`xu` and not a mid-word **`x`** compound. Ending stays **-m**; other endings are not defined for this overlay. Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)).
+
 ### Numbered alternatives (problem / solution / goal)
 <a id="numbered-alternatives"></a>
 <a id="ideation"></a>
@@ -776,7 +812,7 @@ Warrant is a **root choice**, not `xa`/`xu` on the quantifier host. Domain stays
 | Soft list vs uncountered | `zuam` = open inventory; **`ululu`** = no counterexample found |
 | Formal vs natural | **`idido`** = definition/proof; **`afafa`** = nature’s force + evidential |
 | Pattern vs COMMON | [evidential](#evidentiality) **`awa`** = trail of cases; **`ewono`** = usual warrant |
-| Natural vs CAUSE | **`afafa`** for exceptionlessness; condition type stays [joins](causation.md); optional **`CAUSE`** mood keeps **`erage`** ⚙️ *gear* → *mechanism* |
+| Natural vs CAUSE | **`afafa`** for exceptionlessness; condition type stays [joins](causation.md); **CAUSE** mood **`erage`** / **`heragem`** = [mechanism framing](#cause) |
 | Preference as law | values **`xo` / `xe`** — [causation](causation.md#preference-vs-law) |
 
 Prefer floating `/h/`; **RULE** is complex `/h/` + `/b/` scope when the frame is named. Domain / habitual morphology stays [coordination](coordination.md#universals-domains-generics) / [restrictors](restrictors.md); this section only warrants exceptionlessness.
@@ -1113,7 +1149,7 @@ Unassigned or rare edges (not required for ordinary reading):
 - **Role compounds:** ROLE **`e`** (reserved); instrument / beneficiary / recipient as extra ROLE vowels; role compounds under `/v/` `/h/` `/w/`; stacking role + ability (`axattackxu…`) — put ability on the bare event verb; *act done by entity* as a ROLE — resume verbs with ordinary **-r**, or use **`var`** for unnamed doing.
 - **Numeric derivation:** number endings / writing **`~` / `@` / `=`** on `NUM`; productive multi-digit scalar or ordinal morphs (`ROOTx+27`, `ROOTx#12`); bare digit morphs (`ROOTx1`); signed / end-relative ordinal morphs (`ROOTx#-2`); ordinal generation morphs (`ROOTx#3e2`); privative twin of ordinal **`#N`**; bare **`ROOTxe`** as essence; role **`e x ROOT`**; percent closers (**`jo` / `ju`**) as derivation morphs; digit-string morphs as phone-dial or discourse-list substitutes; scale-specific **`ROOTx±0eN`** for **`N≠1`**; **`ROOTx+e0`** / **`ROOTx+0e0`** / **`#0e0`** / **`ROOTx+Ne0`**; quasi-N beyond **`-e-1` / `-e-2`**.
 
-Judgment benchmarks (*worse than Average|…*) are NP comparees on comparative fences — [comparatives.md § Judgment benchmarks](comparatives.md#judgment-benchmarks). **Classification** and closed **`SAME`** identity live in [predication.md](predication.md). **Causation** reuses joins and join-relations — [causation.md](causation.md) (optional **`CAUSE`** mood = lexicon **`erage`** ⚙️ *mechanism*; not NATURAL).
+Judgment benchmarks (*worse than Average|…*) are NP comparees on comparative fences — [comparatives.md § Judgment benchmarks](comparatives.md#judgment-benchmarks). **Classification** and closed **`SAME`** identity live in [predication.md](predication.md). **Causation** reuses joins and join-relations — [causation.md](causation.md); **CAUSE** mood **`erage`** / **`heragem`** = mechanism framing (not NATURAL).
 
 ## See also
 
@@ -1122,7 +1158,7 @@ Judgment benchmarks (*worse than Average|…*) are NP comparees on comparative f
 - [restrictors.md](restrictors.md) — applicability vs join-relations / ability
 - [x-compounds.md](x-compounds.md) — mid-word **`x`** parser families
 - [numbers.md](numbers.md) — free numerals vs numeric derivation; [measure phrases](numbers.md#measure-phrases) (bare host vs **`ROOTx+1`** unit)
-- [causation.md](causation.md) — join-relation causal readings; preference as law
+- [causation.md](causation.md) — join-relation causal readings; factivity; preference as law
 - [comparatives.md](comparatives.md) — judgment benchmarks; normative Mine
 - [predication.md](predication.md) — classification / **`SAME`**
 - [spans.md](spans.md) — mention / cite vs join-relation stock labels

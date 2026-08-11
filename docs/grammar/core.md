@@ -156,7 +156,7 @@ A **complex** adjective or adverb needs an extra participant: the `/ɡ/` or `/h/
 | Shape | Job | Example | Mnemonic |
 |-------|-----|---------|----------|
 | `/ɡ/` + `/b/` | complex adjective | `gogunol buzuzul` (*same as…*) | **`oguno`** 🪙 *coin* → two faces, one substance |
-| `/h/` + `/b/` | complex adverb (*to*, *at*, *regarding*, *because* / *if* + **`odo`**) | `hurugul bodo` (*because* + next sentence) | relation word + bound extra noun |
+| `/h/` + `/b/` | complex adverb (*to*, *at*, *regarding*, *because* / *if* + **`odo`**) | `hurugum bodo` (*because* + next sentence) | relation word + bound extra noun |
 
 Keep the `/h/` + `/b/` pair **together with no gap**. Ordinary pairs may move as a unit; a pair whose `/b/` is the next-sentence pronoun must sit **[last in the main sentence](#dependent-clauses)**.
 
@@ -251,7 +251,20 @@ gloss: `z-speaker` · `d-listener` · `d-next-clause` · `v-tell`
 *I tell you that…* (dependent sentence follows immediately)
 ```
 
-**Because / if / …** = `/h/` relation + `/b/` **`odo`** (together, last in the main sentence), e.g. `hurugul bodo` … (**`urugu`** 🧱 *brick* / *foundation* → *because*).
+**Because / if / …** = `/h/` relation + `/b/` **`odo`** (together, last in the main sentence). Overlay ending is always **-m** (metaphorical sense).
+
+| English | Form | Lexicon | Metaphor |
+|---------|------|---------|----------|
+| *because* | **`hurugum bodol`** | **`urugu`** | 🧱 *brick* → *foundation* |
+| *if* | **`horodom bodol`** | **`orodo`** | 🚪 *door* → *opportunity* |
+| *iff* | **`heluvem bodol`** | **`eluve`** | ↔️ *left-right* → *reciprocity* |
+| *although* / *even though* | **`hezabem bodol`** | **`ezabe`** | 🦓 *zebra* → *contrast* |
+| *while* (concurrent) | **`hegumum bodol`** | **`egumu`** | ♊ *gemini* → *duality* |
+| *until* | **`hudemum bodol`** | **`udemu`** | ⏲️ *timer* → *deadline* |
+| *before* | **`hagagam bodol`** | **`agaga`** | 🎒 *backpack* → *preparation* |
+| *after* | **`hohuram bodol`** | **`ohura`** | ⌛ *hourglass-done* → *recency* |
+
+**Mnemonic:** same doorway shape for every adverbial subordinator — pick the relation root, keep **-m**, end the matrix on **`bodol`**. Condition / factivity detail for *if* / *because* / *iff*: [causation.md](causation.md#if-vs-iff). Discourse *however* / *meanwhile* stay `/x/` linkers ([below](#sentence-linkers)), not these `/h/` poles.
 
 Nesting dependents inside dependents is Intermediate ([nested dependents](#nested-dependents)).
 
@@ -341,6 +354,8 @@ One-way glue between sentences (ordinary ending; **-l** default closed):
 | *but* | **`onuzu`** | 🚧 *construction* → *blockage* | `xonuzul` |
 
 *therefore* moves forward from the prior claim; *however* marks contrast; *meanwhile* is concurrent passage; *next* is the next frame; *but* blocks the expected continuation (harder push-back than *however*). Ordinary content readings of those roots stay available under other role letters.
+
+**Not the same as clause poles:** discourse **`xezabel`** (*however*) / **`xamenol`** (*meanwhile*) glue prior sentences; subordinating **`hezabem bodol`** (*although*) / **`hegumum bodol`** (*while*) attach a dependent under **`odo`** — [dependent clauses](#dependent-clauses).
 
 ### Nested dependents
 <a id="nested-dependents"></a>

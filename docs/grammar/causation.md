@@ -105,13 +105,14 @@ When the antecedent and/or consequent is a **full clause**, clause inclusive **`
 Prefer subordination:
 
 ```
-matrix …  horodol / heluvel / hurugul  bodol   [dependent sentence]
+matrix …  horodom / heluvem / hurugum  bodol   [dependent sentence]
 ```
 
 **`odo`** ([next-clause pronoun](pronouns.md#special-pronouns)) is matrix-final; the dependent is a full `/j/`… sentence — [dependent clauses](core.md#dependent-clauses). Open-sufficient vs necessary nudges then live on **which relation** you choose and on restrictors (`hal`, …).
 
-### `IF` vs `IFF`
+### `IF` vs `IFF` vs `BECAUSE`
 <a id="if-vs-iff"></a>
+<a id="if-vs-because"></a>
 
 | Root | Lexicon | Metaphor | Reading | Parallel |
 |------|---------|----------|---------|----------|
@@ -121,18 +122,20 @@ matrix …  horodol / heluvel / hurugul  bodol   [dependent sentence]
 
 **Mnemonic:** *if* opens a one-way door; *iff* is the two-way arrow; *because* is the foundation under the claim.
 
-Ordinary content still available (`zorodol` *a door* / *an opportunity*; `zeluvel` *reciprocity*; `zurugul` *a brick* / *a foundation*).
+**Ending:** clause-pole overlays always take **-m** (metaphorical published sense) — **`horodom`** / **`heluvem`** / **`hurugum`**. Ordinary literal content on the same roots still uses ordinary endings (`zorodol` *a door*; `zeluvel` *reciprocity*; `zurugul` *a brick*).
 
-Bare **`IF`** (`horodol`) is one-way only. Prefer the root split over De Morgan rewrites as the normal spoken form.
+Bare **`IF`** (`horodom`) is one-way only. Prefer the root split over De Morgan rewrites as the normal spoken form.
 
 | Poles | Prefer |
 |-------|--------|
 | NP–NP | phrase `…aom` / `haon` / `huan` ([Beginner](#np-poles)) |
-| Clause–clause conditional (one-way) | **`horodol bodol`** |
-| Clause–clause biconditional | **`heluvel bodol`** (marked) |
-| Clause–clause explanation | **`hurugul bodol`** |
+| Clause–clause conditional (one-way) | **`horodom bodol`** |
+| Clause–clause biconditional | **`heluvem bodol`** (marked) |
+| Clause–clause explanation | **`hurugum bodol`** |
 | Clause–clause inclusive bundle | `xaom` / `xaol` as **coordination only** |
 | Mixed NP + clause | **`odo`** under a relation, or span / nominalization in `/b/` / `/d/` — not bare `zaom` on a sentence |
+
+Other adverbial subordinators (*although* / *while* / *until* / *before* / *after*) reuse the same `/h/` + **`odo`** shape — inventory in [core.md § Dependent clauses](core.md#dependent-clauses). They are not condition-type joins.
 
 ### Preference vs law
 <a id="preference-vs-law"></a>
@@ -152,19 +155,66 @@ Strength of feeling is values force / evidentiality — not upgrading `aom` → 
 ## Advanced
 <a id="advanced"></a>
 
-### Stacks (evidentiality and habit)
+### Factivity (`IF` vs `BECAUSE`)
+<a id="factivity"></a>
+
+English *because* / *if* blur whether the dependent is **on the world ledger**. Agelan separates that on the clause root:
+
+| Root | Dependent | Matrix | Link |
+|------|-----------|--------|------|
+| **`IF`** (`horodom`) | **not** asserted as fact — hypothetical / opportunity door | claimed **under** the dependent | one-way open sufficient |
+| **`IFF`** (`heluvem`) | stands or falls **with** the matrix — not a free freestanding fact claim | stands or falls **with** the dependent | both directions |
+| **`BECAUSE`** (`hurugum`) | **asserted** as the foundation the matrix rests on | asserted (or already in force) | explanation |
+
+**Mnemonic:** *if* does not put the dependent on the ledger; *because* does; *iff* locks both sides of the hinge.
+
+```
+`… hurugum bodol zarunal.`
+
+gloss: `h-BECAUSE` · `b-next-clause` · `z-rain`
+
+*… because it rains.* — rain is asserted as the reason
+```
+
+```
+`… horodom bodol zarunal.`
+
+gloss: `h-IF` · `b-next-clause` · `z-rain`
+
+*… if it rains.* — rain is not asserted; matrix is under that opportunity
+```
+
+Do **not** rewrite factivity with De Morgan alone when the spoken form should be the root split.
+
+#### Epistemic *because* (no twin root)
+<a id="epistemic-because"></a>
+
+English often uses *because* for **speaker grounds** (*I say P because Q* / *I think P, because…*) without putting Q on the world ledger as the matrix’s foundation. Agelan keeps **`BECAUSE`** for **world-reason** under the claim.
+
+| English bundle | Prefer |
+|----------------|--------|
+| *P because Q* (Q grounds P in the world) | **`hurugum bodol`** (+ evidentiality / [**CAUSE**](special-vocabulary.md#cause) when naming mechanism) |
+| *I think / say P because Q* (Q is my reason for the take) | [**COMMENT**](special-vocabulary.md#comment) on the matrix (`huhom`, …); optional **`hurugum bodol`** only if Q is also asserted as world-foundation |
+| *P, since / given that Q* (Q already shared) | **`hurugum bodol`** (Q asserted); soft force / evidentiality if the warrant is tentative |
+| *P if Q* (no ledger for Q) | **`horodom bodol`** — never stretch **`BECAUSE`** into a soft *if* |
+
+**No dedicated epistemic-*because* root.** Speaker-grounds stay COMMENT (and evidentiality for *how you know*); world-foundation stays **`urugu`**. Stacking is the twin — not a fourth clause pole.
+
+### Stacks (evidentiality, mechanism, habit)
 <a id="stacks"></a>
 
 | Stack | Role |
 |-------|------|
 | Evidentiality `/h/` | *how you know* the link — [evidentiality](special-vocabulary.md#evidentiality) (**INFERRED** `eve`, **PATTERN** `awa`, …) |
+| **`CAUSE`** (`heragem`) | *mechanism framing* — [CAUSE mood](special-vocabulary.md#cause); not condition type, not NATURAL |
 | **`hual` / `huam`** | habitual / characterizing pattern — [restrictors](restrictors.md) |
 | Universality | how exceptionless the claim is — [universality moods](special-vocabulary.md#universality) |
 | Values `xo` / `xe` | ought or motive — [above](#preference-vs-law) |
+| COMMENT | speaker-grounds / attitude — [epistemic *because*](#epistemic-because) |
 
-Particular episode (*this delay was caused by…*) vs standing law (*clouds for rain*) share the same necessary/sufficient shapes; tense, **`hual`**, evidentiality, and universality warrant distinguish them.
+Particular episode (*this delay was caused by…*) vs standing law (*clouds for rain*) share the same necessary/sufficient shapes; tense, **`hual`**, evidentiality, **`CAUSE`**, and universality warrant distinguish them.
 
-Causal “laws” show their warrant via evidentiality and universality — not via a stronger join.
+Causal “laws” show their warrant via evidentiality and universality — not via a stronger join. Mechanism highlight uses **`heragem`**; exceptionlessness uses **`hafafal`**.
 
 ### English → Agelan
 <a id="english-cues"></a>
@@ -172,32 +222,42 @@ Causal “laws” show their warrant via evidentiality and universality — not 
 | English cue | Agelan |
 |-------------|---------|
 | *caused by* + how you know | condition shape (sufficient / necessary) + evidential `/h/` |
+| *caused by* + mechanism focus | condition shape + **`heragem`** ([CAUSE](special-vocabulary.md#cause)) |
 | *leads to* / *results in* (ordinary) | open sufficient (`…aom` / `haon`, …) |
 | *necessary for* / *without X, no Y* | `huan` / `guan` / `hal` |
 | *the only cause* / *has to be* | marked `gon` / `hon` / `…ol` |
 | *should* as universal causal law | sufficient shape + **`xo`** (name the need) |
 | *always* / *every* / *never* (exceptionlessness) | domain (`hual` / …) + [universality](special-vocabulary.md#universality) mood |
-| *because* / *if* + clause | **`hurugul bodol`** / **`horodol bodol`** |
-| *if and only if* / *iff* | **`heluvel bodol`** — not bare **`horodol`** |
+| *because* / *if* + clause | **`hurugum bodol`** / **`horodom bodol`** |
+| *if and only if* / *iff* | **`heluvem bodol`** — not bare **`horodom`** |
+| *although* / *while* / *until* / *before* / *after* | same `/h/`+**`odo`** shape — [core.md](core.md#dependent-clauses) |
+| *I think P because Q* (speaker grounds) | COMMENT + optional **`hurugum`** — [above](#epistemic-because) |
 | *therefore* (discourse) | **`xamalal`** — [discourse markers](core.md#discourse-markers-x) |
+| *however* / *meanwhile* (discourse) | **`xezabel`** / **`xamenol`** — not **`hezabem`** / **`hegumum`** |
 
 ### Constraints
 <a id="constraints"></a>
 
 - Everyday causal claims default to **open sufficient**; necessity uses **exclusion / never**.
 - Clause conditionals use **`odo`** subordination; **`xaom`** stays peer coordination.
-- Bare **`IF`** (`orodo` / `horodol`) is one-way only; biconditional force requires marked **`IFF`** (`eluve` / `heluvel`).
+- Bare **`IF`** (`orodo` / `horodom`) is one-way only; biconditional force requires marked **`IFF`** (`eluve` / `heluvem`).
+- Clause-pole overlays stay **-m**; do not use literal **-l** for **`IF`** / **`IFF`** / **`BECAUSE`** (same **-m** rule for *although* / *while* / *until* / *before* / *after*).
 - Exclusive joins for causation are **marked** unique-path claims only.
 - Justification (desire, definition, source, pattern) is **values + evidentiality / universality**, not subject-of-verb.
-- Optional **`CAUSE`** mood (if used) is **`erage`** ⚙️ *gear* → *mechanism* — distinct from [NATURAL](special-vocabulary.md#universality) **`afafa`**.
+- **`CAUSE`** mood (**`erage`** / **`heragem`**) marks mechanism framing — distinct from [NATURAL](special-vocabulary.md#universality) **`afafa`** and from condition-type joins.
+- Closed **`COND`** adjective is rejected; use joins + **`odo`** poles.
+- Epistemic *because* stacks COMMENT — no twin clause root.
+- Discourse *however* / *meanwhile* are `/x/` linkers — not subordinating **`hezabem`** / **`hegumum`**.
 
 ## See also
 
 - Inclusive focus **`…aom` / `…aol`**: [coordination.md](coordination.md#focus-phrase)
 - Join-relations **`haon` / `huan` / `hon`**: [special-vocabulary.md](special-vocabulary.md#join-relations)
 - Restrictors **`hal` / `hual`**: [restrictors.md](restrictors.md)
-- Dependent clauses / **`odo`**: [core.md](core.md#dependent-clauses)
+- Dependent clauses / **`odo`** / other subordinators: [core.md](core.md#dependent-clauses)
 - Values prescription / motive: [values.md](values.md)
 - Evidentiality: [special-vocabulary.md](special-vocabulary.md#evidentiality)
+- **CAUSE** mood: [special-vocabulary.md](special-vocabulary.md#cause)
 - Universality warrant: [special-vocabulary.md](special-vocabulary.md#universality)
+- COMMENT (speaker grounds): [special-vocabulary.md](special-vocabulary.md#comment)
 - Classification generics (not causation): [predication.md](predication.md), [universals](coordination.md#universals-domains-generics)

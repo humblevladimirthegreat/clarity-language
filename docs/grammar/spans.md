@@ -373,7 +373,7 @@ While scanning a span interior, bare `|` / `#` / hyphen are ordinary content unl
 | Inferring close-all from bare `xuxur` / `xuxun` | say `xuxur xuxum` / `xuxun xuxum`; writing may use `-\|` / `#\|` |
 | *However* / *therefore* / *but* | other `/x/` lexicon roots — [discourse markers](core.md#discourse-markers-x) |
 | Numbered *point N:* | `/x/` + number — [numbers.md](numbers.md#number-as-discourse-marker-by-marker) |
-| *Because* / *if* subordination | `/h/` + `/b/` next-clause pronoun — [dependent clauses](core.md#dependent-clauses) |
+| *Because* / *if* / *although* / … subordination | `/h/` + `/b/` next-clause pronoun — [dependent clauses](core.md#dependent-clauses) |
 | Vocative / interjection | left-edge `/j/` only — not mid-clause asides |
 | Nativized loan as ordinary word | PoS + adapted root + ending — [loans](#loans) |
 | Ordinary content anaphor (*that dog*) | content root + **-r** — [pronouns.md](pronouns.md) |

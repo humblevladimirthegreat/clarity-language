@@ -232,7 +232,7 @@ strict: *Don’t walk — ought: competence (commit force).*
 
 loose: *Please don’t walk — stay able.*
 
-**A:** `jem zuzur zuber zamer zal dohuzem vazudal horodol bodol zarunal.`
+**A:** `jem zuzur zuber zamer zal dohuzem vazudal horodom bodol zarunal.`
 
 gloss: `j-request` · `z-←Uzuzuxogeven` · `z-←Ubenaxuzonun` · `z-←Amedaxogonon` · `z-and` · `d-home` · `v-standing` · `h-if` · `b-next-clause` · `z-rain`
 
