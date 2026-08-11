@@ -1,7 +1,7 @@
 # Comparatives, superlatives, and equatives
 <a id="comparatives-page"></a>
 
-Scalar comparison: *more … than*, *the …-est*, *as … as*, measured differentials, and judgment benchmarks (*worse than Average* / …). Fence join vowels stay in [coordination.md](coordination.md); absolute (non-comparative) scalars stay unfenced — [predication](predication.md#zero-copula).
+Scalar comparison: *more … than*, *the …-est*, *as … as*, measured differentials, and judgment benchmarks (*worse than Average* / …).
 
 **Needs:** [coordination.md](coordination.md) Beginner (rank joins **`e` / `ae` / `oe` / `ue`**).
 
@@ -233,8 +233,5 @@ Soft personal standard: **`zumogoxrawom`**. Ordinary named people stay ordinary 
 ## See also
 
 - Fence morphology, focus/bare, SHARED placement: [coordination.md](coordination.md)
-- Number ranges / thresholds: [numbers.md](numbers.md#ranges)
-- Measure NPs: [numbers.md](numbers.md#measure-phrases)
 - Classification / identity (not scalar equative): [predication.md](predication.md)
-- Ability / incapability: [special-vocabulary.md](special-vocabulary.md)
-- Values for unmet criticism without a ladder: [values.md](values.md)
+- Measure NPs: [numbers.md](numbers.md#measure-phrases)

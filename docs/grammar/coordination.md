@@ -1,6 +1,6 @@
 # Joins
 
-Coordinate same-slot material (NPs, VPs, or clause bodies) with a **right-close fence**: conjuncts, then the join word, then optional shared modifiers. Prefix-less **revisers** and `/h/` `/w/` **restrictors** reuse the vowel series but are separate — [revisers.md](revisers.md), [restrictors.md](restrictors.md).
+Coordinate same-slot material (NPs, VPs, or clause bodies) with a **right-close fence**: conjuncts, then the join word, then optional shared modifiers.
 
 ## Beginner
 <a id="beginner"></a>
@@ -603,7 +603,7 @@ VP `/v/`…**-n** spellings are [join-act verbs](special-vocabulary.md#join-act-
 *(A or B) and C.*
 ```
 
-Causal readings of inclusive / exclusion joins → [causation.md](causation.md). Do not read **`xaom`** / **`xaol`** as *SENT₁ is sufficient for SENT₂* — peer coordination only.
+Do not read **`xaom`** / **`xaol`** as *SENT₁ is sufficient for SENT₂* — peer coordination only.
 
 ## Advanced
 <a id="advanced"></a>
@@ -676,11 +676,6 @@ Under `/h/` and `/w/`, the join series marks **applicability circumstances** (no
 
 ## See also
 
-- [comparatives.md](comparatives.md) — scalar comparison on SHARED `/ɡ/`
-- [revisers.md](revisers.md) — prefix-less revision series
-- [restrictors.md](restrictors.md) — `/h/` `/w/` circumstance joins
-- [spans.md](spans.md) — scope islands **`^ … ^`**
-- [questions.md](questions.md) — fill-ask and yes/no on focus/bare joins
-- [causation.md](causation.md) — causal readings of joins
-- [plurality.md](plurality.md) — collective **-sh**; generics vs **-sh**
-- [numbers.md](numbers.md) — ranges, measure phrases, discourse **`x#e-`** / **`x#e`**
+- Prefix-less revision (*including* / *rather*): [revisers.md](revisers.md)
+- Applicability *when* under `/h/` `/w/`: [restrictors.md](restrictors.md)
+- Fill-ask and yes/no on focus/bare joins: [questions.md](questions.md)

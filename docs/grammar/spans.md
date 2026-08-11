@@ -33,7 +33,7 @@ Same split as number shorthand (`g+3` written, full CV spoken). Prefer brackets 
 | **`~`** | **paraphrase** (**-m**) — `d~[…]` |
 | **`@`** | **proper** (**-n**) — `d@[…]` |
 
-Anaphor (**-r**): interior **`=`** (`d[=]`, `d{=}`, `d(=)`, `d<=>`) — same glyph idea as [number **-r**](numbers.md#number-endings).
+Anaphor (**-r**): interior **`=`** (`d[=]`, `d{=}`, `d(=)`, `d<=>`).
 
 ```
 `z<he>n d[hi] v<said>l.`
@@ -132,7 +132,7 @@ gloss: `j-command` · `z-you` · `v-[oops]` · `d-me`
 
 Example: **`daxal`** = `d` + `a` + `x` + `a` + `l` → open exact multi-token cite as direct object (needs close).
 
-**Parser cue:** after PoS, material before the first `x` is exactly one TYPE vowel, and after `x` exactly one EDGE vowel + ending. Longer material before `x` → ordinary / value / ability compound. Full map: [x-compounds.md](x-compounds.md).
+**Parser cue:** after PoS, material before the first `x` is exactly one TYPE vowel, and after `x` exactly one EDGE vowel + ending. Longer material before `x` is a different compound family.
 
 ### TYPE (vowels)
 <a id="type"></a>
@@ -360,18 +360,9 @@ While scanning a span interior, bare `|` / `#` / hyphen are ordinary content unl
 | Need | Use instead |
 |------|-------------|
 | Multi-word adjunct or join scope without typed wording | [adjunct-scope islands](#adjunct-scope-islands) **`^ … ^`** |
-| Clause *and* / *or* / ranked claim join | `/x/` joins — [coordination.md](coordination.md#clause-level-coordination) |
 | Clause negation *no* / *not* | `xul` / `xum` / `xun` — **not** `xuxul` / `xuxum` / `xuxur` / `xuxun` |
 | Em dash as truncated closer | ASCII hyphen + closer `-]` / `xuxur` |
-| Casual abort / scratch of a draft cite | revise the text; truncated and sic still **commit** the surface |
-| Open proper **-n** / `d@[…]` | titled designation — **not** sic; use `#]` / `xuxun` for editorial *as-written* |
-| Number ordinal `#` in a number word | [numbers.md](numbers.md) — sic is `#]` in closer position only |
 | Inferring close-all from bare `xuxur` / `xuxun` | say `xuxur xuxum` / `xuxun xuxum`; writing may use `-\|` / `#\|` |
-| *However* / *therefore* / *but* | other `/x/` lexicon roots — [discourse markers](core.md#discourse-markers-x) |
-| Numbered *point N:* | `/x/` + number — [numbers.md](numbers.md#number-as-discourse-marker-by-marker) |
-| *Because* / *if* / *although* / … subordination | `/h/` + `/b/` next-clause pronoun — [dependent clauses](core.md#dependent-clauses) |
-| Vocative / interjection | left-edge `/j/` only — not mid-clause asides |
-| Nativized loan as ordinary word | PoS + adapted root + ending — [loans](#loans) |
 | Ordinary content anaphor (*that dog*) | content root + **-r** — [pronouns.md](pronouns.md) |
 | Re-citing the same words as a fresh cite | new open, not **-r** |
 | Literal fence word / meta glyph as content | [literal content](#literal-content) |
@@ -383,5 +374,3 @@ While scanning a span interior, bare `|` / `#` / hyphen are ordinary content unl
 - Join scope islands: [coordination.md](coordination.md#join-scope-islands-rules)
 - Phrasal proper names (no span needed): [reference-suffix.md](reference-suffix.md#phrasal-proper-names)
 - Prefix-less citation outside a clause: [core.md § Outside a sentence](core.md#citation-forms)
-- Mid-word **`x`** families: [x-compounds.md](x-compounds.md)
-- Number writing shorthand: [numbers.md](numbers.md#writing-preferred-shorthand)

@@ -1,7 +1,7 @@
 # Numbers
 <a id="numbers"></a>
 
-Closed numeral grammar — counts, exponents, writing, percent, ranges, measure phrases — not open lexicon quantifiers like *many* / *all*. Stems after mid-word **`x`** on content roots are [numeric derivation](special-vocabulary.md#numeric-derivation).
+Closed numeral grammar — counts, exponents, writing, percent, ranges, and measure phrases.
 
 A whole numeric value is **one word**, even when it contains several digit groups (or none).
 
@@ -17,34 +17,28 @@ A whole numeric value is **one word**, even when it contains several digit group
 1. **PoS** — same prefix inventory as elsewhere; [roles for number words](#parts-of-speech-on-numbers) below.
 2. **Number marker** — consonant **r** plus a vowel **V** (see [Marker vowel](#marker-vowel-referential-identity)). **V** is usually a single vowel; end-relative ordinals use digraph **`eu`**. The PoS+`r` cluster is a [number-only phonotactic exception](phonology.md#phonotactics).
 3. **Zero or more digit groups** — each group is an optional exponent and optional mantissa digits (at least one of the two **when the group is present**, except a [digitless exponent](#digitless-exponents) group is **`ba`/`bu` alone**). Digits compound with **no** **x** separator. There is **no per-group polarity**; sign (when it applies) is once for the whole word — see [Sign](#sign). **No groups** = [unspecified magnitude](#zero-digit-groups) of that marker identity (or [digitless **-r** anaphora](#number-endings)).
-4. **Ending** — `-l` / `-m` / `-n` / `-r` with [number-specific meanings](#number-endings) (not ordinary [reference suffix](reference-suffix.md) senses). Number words **do not** take plural **-sh** — group reference stays on ordinary nouns (see [plurality.md](plurality.md)).
+4. **Ending** — `-l` / `-m` / `-n` / `-r` with [number-specific meanings](#number-endings). Number words **do not** take plural **-sh** — group reference stays on ordinary nouns.
 
-**Writing** for free number words uses a [preferred shorthand](#writing-preferred-shorthand) for the marker and body (`g+3`, not *grarel*; digitless `g+`, not *gral*; end-relative `g#-2`, not *greudul`); speech is always the full CV form. [Numeric derivation](special-vocabulary.md#numeric-derivation) prefers the spelled CV form in running text — see [Style](#writing-style-numeric-vs-spelled).
+**Writing** for free number words uses a [preferred shorthand](#writing-preferred-shorthand) for the marker and body (`g+3`, not *grarel*; digitless `g+`, not *gral*; end-relative `g#-2`, not *greudul*); speech is always the full CV form.
 
-**Lexicon rule:** Any stem that matches this grammar is a number, never an ordinary root. Dictionary generation must reject colliding roots. A number stem **after mid-word `x`** on a content host is [numeric derivation](special-vocabulary.md#numeric-derivation), not a free number word (and takes the host’s ordinary reference ending, not [number endings](#number-endings)).
+**Lexicon rule:** Any stem that matches this grammar is a number, never an ordinary root. Dictionary generation must reject colliding roots.
 
 ### Parts of speech on numbers
 <a id="parts-of-speech-on-numbers"></a>
 
-The number word takes whichever PoS prefix the role needs (clause slot, interjection, or discourse glue). The stem (marker + digits + ending) does not change.
-
-**Referential** prefixes (`/ɡ/`, `/z/`, `/d/`, `/b/`) use [marker identity](#marker-vowel-referential-identity) as-is — PoS only chooses the slot or modifier role. **Overlay** prefixes (`/v/`, `/h/`, `/j/`, `/x/`) keep that identity but add a role-specific reading — [Intermediate overlays](#number-overlays).
+The number word takes whichever PoS prefix the role needs. Beginner dialogue mostly uses **referential** prefixes (`/ɡ/`, `/z/`, `/d/`, `/b/`) — the marker identity is as-is; PoS only chooses the slot. Verb / adverb / interjection / discourse overlays are Intermediate ([number overlays](#number-overlays)).
 
 | Prefix | Role with a number |
 |--------|--------------------|
-| `/ɡ/` | **modifier** — referential: the number describes the preceding noun (*three cats*, *the second page*, *room 12*). Goes after the noun, like other adjectives. |
-| `/z/` | **subject** — referential: the numeric value, digit-string, or rank is the subject. |
-| `/d/` | **direct object** — referential: the number is the object (common for digit-strings / codes being dialed, entered, stated). |
-| `/b/` | **argument noun** — referential: the number fills the `/b/` slot of a complex adjective or adverb (*of size 12*, host *on* + channel/label, host *at* + time when a relation is named, …). Bare temporal circumstance (no host) uses `/h/` + **`ro`** ([Time](#time)). |
-| `/v/` | **verb** — overlay: the number is the clause’s action; see [by marker](#number-as-verb-by-marker). Not multiply/divide by N (use ordinary *multiply* / *divide* plus `/h/`). |
-| `/h/` | **adverb** — overlay: see [by marker](#number-as-adverb-by-marker) (*N times*, ÷N, **time** via **`ro`**, *for the Nth time*). |
-| `/j/` | **interjection** — overlay: see [by marker](#number-as-interjection-by-marker) (*N more!*, deficit, label/score call, place cheer). Left-edge or bare utterance only — [utterance-marker rules](core.md#utterance-markers-j). **Not** clause force. |
-| `/x/` | **discourse marker** — overlay: see [by marker](#number-as-discourse-marker-by-marker). Does **not** fill a clause slot. |
+| `/ɡ/` | **modifier** — the number describes the preceding noun (*three cats*, *the second page*, *room 12*). Goes after the noun, like other adjectives. |
+| `/z/` | **subject** — the numeric value, digit-string, or rank is the subject. |
+| `/d/` | **direct object** — the number is the object (common for digit-strings / codes being dialed, entered, stated). |
+| `/b/` | **argument noun** — the number fills the `/b/` slot of a complex adjective or adverb (*of size 12*, host *on* + channel/label, host *at* + time when a relation is named, …). Bare temporal circumstance (no host) uses `/h/` + **`ro`** ([Time](#time)). |
 
 **`/w/` (adjective adjunct):** numbers do not take `/w/`, and a `/ɡ/` number is not a host for `/w/` grading or framing. Degree and “aboutness” of a quantity use [number endings](#number-endings) (especially **-m** for approximate).
 
 
-Digit-strings (`ro`…) usually take the argument role the clause needs (often `/d/`). Ordinals that modify a noun use `/ɡ/`; an ordinal used as a standalone rank uses `/z/`, `/d/`, or `/b/` as appropriate. Discourse list items use `/x/` + number ([by marker](#number-as-discourse-marker-by-marker): **`re`** / **`reu`** neutral forward / end-relative, **`ra`** corroborating, **`ru`** independent); *for the Nth time* uses `/h/` + **`re`** / **`reu`**; place cheer *First!* uses `/j/` + **`re`** — none of these is `/ɡ/`.
+Digit-strings (`ro`…) usually take the argument role the clause needs (often `/d/`). Ordinals that modify a noun use `/ɡ/`; an ordinal used as a standalone rank uses `/z/`, `/d/`, or `/b/` as appropriate.
 
 ### Marker vowel (referential identity)
 <a id="marker-vowel-referential-identity"></a>
@@ -75,7 +69,7 @@ Do **not** insert speech **`ru`** after **`re`** / **`reu`** / **`ro`**. Do **no
 
 There is no separate “mathematical object” marker. To talk about a number as an entity, use a scalar (**`ra`** / **`ru`**) in a referential slot (often with ordinary wording such as the noun *number*), not a distinct numeral class.
 
-`/v/`, `/h/`, `/j/`, and `/x/` still choose among the same markers, but each overlay gives that identity a **role-specific** reading (add vs ×N vs *N more!* vs corroborating/independent list item, and so on) — [Intermediate overlays](#number-overlays).
+`/v/`, `/h/`, `/j/`, and `/x/` still choose among the same markers; each overlay’s role-specific reading is Intermediate ([number overlays](#number-overlays)).
 
 ### Number endings
 <a id="number-endings"></a>
@@ -1210,8 +1204,4 @@ PoS-less number stems may follow mid-word **`x`** on an ordinary content root (`
 
 - Phrase fences for ranges: [coordination.md](coordination.md)
 - Scalar comparison / measured differentials: [comparatives.md](comparatives.md)
-- Digit morph **`+1`** (*unit*) on measure hosts: [special-vocabulary.md](special-vocabulary.md#numeric-derivation)
-- Numeric derivation on roots: [special-vocabulary.md](special-vocabulary.md#numeric-derivation)
-- Mid-word **`x`** families: [x-compounds.md](x-compounds.md)
 - Number-word phonotactics: [phonology.md](phonology.md)
-- Discourse *Starting with* / *Finally* vs revisers: [revisers.md](revisers.md)

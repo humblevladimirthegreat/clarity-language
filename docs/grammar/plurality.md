@@ -1,6 +1,6 @@
 # Plurality
 
-Optional **-sh** after the [reference suffix](reference-suffix.md) marks an **associative group** — *anchor and associates* — not quantity, not *every*, not habituality. Resume detail: [pronouns.md](pronouns.md).
+Optional **-sh** after the [reference suffix](reference-suffix.md) marks an **associative group** — *anchor and associates*.
 
 ## Beginner
 <a id="beginner"></a>
@@ -56,7 +56,7 @@ gloss: `z-r-sh` · `v-sit`
 
 Bare **-l** / **-m** still always introduce; **-lsh** / **-msh** introduce a **group** indefinite. Resume of a group is **-rsh**.
 
-**Trap:** **-lsh** is not kind-generic (*cats in general*) — that is **`zual g-…`** ([universals](coordination.md#universals-domains-generics)). Inclusive *we* is **`ana`**, not speaker **-sh** ([clusivity](pronouns.md#clusivity)).
+**Trap:** **-lsh** is not kind-generic (*cats in general*) and not inclusive *we* — inclusive *we* is **`ana`**, not speaker **-sh** ([clusivity](pronouns.md#clusivity)).
 
 ### Nouns (`/z/`, `/d/`, `/b/`)
 
@@ -66,7 +66,7 @@ Natural home for **-sh**. The argument’s referent is an associative set: *some
 * **-nsh** — a named plural / titled group.
 * **-rsh** — prior noun **and associates**.
 
-Bare “more than one” when you only need quantity → singular noun + digitless **`g+`** ([numbers](numbers.md#zero-digit-groups)). *Every cat* → **`zual`**, not **-lsh**.
+*Every cat* and bare quantity-without-a-set are different jobs — not **-lsh**.
 
 ### Person-role **-sh**
 <a id="person-role-sh"></a>
@@ -81,16 +81,6 @@ Special pronouns keep **-sh** available, but the default is **not** uniform asso
 | name / content **-r**…**-sh** | that person **and associates** |
 
 **Trap:** *You (singular) and your associates* → **name…**-sh**, not **`ehado…sh`**. Inclusive *we* → **`ana`**, not **`umogo…sh`**.
-
-### Not **-sh** (quick map)
-
-| Need | Use instead |
-|------|-------------|
-| count / amount **`>1`** without a set as the referent | digitless **`g+`** — [numbers](numbers.md#zero-digit-groups) |
-| *all* / *every* / kind-generic | **`zual` / `zuam` + SHARED kind** — [universals](coordination.md#universals-domains-generics) |
-| habitual / characterizing pattern | **`hual` / `huam`** — [restrictors](restrictors.md) |
-| inclusive *we* | **`ana`** — [pronouns](pronouns.md#special-pronouns) |
-| exact membership census | [phrase join](coordination.md) list |
 
 ## Intermediate
 <a id="intermediate"></a>
@@ -198,7 +188,5 @@ Revisers (**al** / **am** / …) and join fences take ending only, no **-sh**. P
 
 ## See also
 
-- [pronouns.md](pronouns.md) — resume; **`ana`** / address set
-- [reference-suffix.md](reference-suffix.md) — endings before **-sh**
-- [coordination.md](coordination.md#universals-domains-generics) — *every* / generics
-- [numbers.md](numbers.md#zero-digit-groups) — quantity without group referent
+- Resume and **`ana`** / address set: [pronouns.md](pronouns.md)
+- Endings before **-sh**: [reference-suffix.md](reference-suffix.md)

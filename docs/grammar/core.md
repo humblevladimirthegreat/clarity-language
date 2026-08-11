@@ -32,7 +32,7 @@ Agelan writing is **unicase**: use **lowercase** for every native letter — rol
 
 Capital letters appear only inside **foreign or raw** payloads that keep another writing system’s casing — opaque spans (`d<NaCl>`, `d<iPhone>`), compact foreign content words (`z<Sam>n`), and cite / mention interiors whose wording is not Agelan (`d@[Hamlet]`). Once a root is nativized (published or adapted Agelan shape), write it lowercase with an ordinary ending (`zazaman`, not `zAzaman`).
 
-Do not use capitals for shouting, titles, or emphasis — use clause force, polar stance, values, or **COMMENT** instead.
+Do not use capitals for shouting, titles, or emphasis — use clause force, polar stance, or other closed mood tools instead.
 
 **Mnemonic:** lowercase is Agelan; capitals are **borrowed ink** from another orthography.
 
@@ -56,8 +56,6 @@ When you are **not** filling a clause slot — lexicon head, list, title line, o
 **`/z/` is not a default** here — a missing role letter does **not** mean subject. Inside a sentence, every content word still needs its role letter.
 
 **Trap:** the closed prefix-less set **`al` / `am` / `an` / `el` / `em` / `en` / `ol` / `om` / `on` / `ul` / `um` / `un`** are always [revisers](revisers.md), never citations. Open content roots are longer than one vowel ([phonology](phonology.md#phonotactics)), so ordinary citations cannot collide with that set.
-
-Free [number](numbers.md) words keep the number subsystem (including a PoS) even as a bare turn.
 
 **Mnemonic:** no slot → no role letter; endings still answer *how does this root enter the talk?*
 
@@ -275,7 +273,7 @@ gloss: `z-speaker` · `d-listener` · `d-next-clause` · `v-tell`
 | *before* | **`hagagam bodol`** | **`agaga`** | 🎒 *backpack* → *preparation* |
 | *after* | **`hohuram bodol`** | **`ohura`** | ⌛ *hourglass-done* → *recency* |
 
-**Mnemonic:** same doorway shape for every adverbial subordinator — pick the relation root, keep **-m**, end the matrix on **`bodol`**. Condition / factivity detail for *if* / *because* / *iff*: [causation.md](causation.md#if-vs-iff). Discourse *however* / *meanwhile* stay `/x/` linkers ([below](#sentence-linkers)), not these `/h/` poles.
+**Mnemonic:** same doorway shape for every adverbial subordinator — pick the relation root, keep **-m**, end the matrix on **`bodol`**. Discourse *however* / *meanwhile* stay `/x/` linkers ([below](#sentence-linkers)), not these `/h/` poles.
 
 Nesting dependents inside dependents is Intermediate ([nested dependents](#nested-dependents)).
 

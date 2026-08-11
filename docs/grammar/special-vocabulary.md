@@ -1,7 +1,7 @@
 # Special vocabulary
 <a id="special-vocabulary"></a>
 
-Closed morphology and mood roots that are **not** [values](values.md) and **not** [restrictors](restrictors.md) — ability, roles, plan / predict, evidentiality, emotion compose, [viewpoint laterals](#viewpoint-laterals), and related forms. Mid-word **`x`** families: [x-compounds.md](x-compounds.md).
+Closed morphology and mood roots for jobs such as ability, roles, plan / predict, evidentiality, emotion compose, and [viewpoint laterals](#viewpoint-laterals). Each section below states its own ending rules.
 
 ## Beginner
 <a id="beginner"></a>
@@ -11,7 +11,7 @@ Closed morphology and mood roots that are **not** [values](values.md) and **not*
 
 Some published roots carry a **closed overlay reading** for a fixed PoS — the word **is** that special sense, without inventing a new root. Example: **`uhunum`** under `/h/` = evidential *memory / witnessed*; **`huhunul`** = ordinary literal *in a fishing manner*.
 
-**Shape:** sense-form + [reference ending](reference-suffix.md). Mood overlays usually take **-m** (figurative published sense / soft default); other endings when that is how the overlay is defined (benchmark **-n**, universality **-l**, join-act / join-relation defective **-n**, [COMMENT](#comment-hold) / [NOTIONAL](#notional-hold) hold **-l / -m / -n / -r**, [DECISION](#decision-changeability) changeability **-l / -m / -n / -r**, [CAUSE](#cause) and [clause poles](causation.md#if-vs-iff) **-m** only, …). Join-act / join-relation stems are the vowel + **-n** only (`an` / `on` / …); written words are **`pos` + sense-form** (`van` / `gan` / `han`).
+**Shape:** sense-form + [reference ending](reference-suffix.md). Mood overlays usually take **-m** (figurative published sense / soft default); each overlay section below notes when another ending applies. Join-act / join-relation stems are the vowel + **-n** only (`an` / `on` / …); written words are **`pos` + sense-form** (`van` / `gan` / `han`).
 
 **Mnemonic:** same root, special PoS reading — the ending marks which overlay you mean.
 
@@ -1248,16 +1248,7 @@ Judgment benchmarks (*worse than Average|…*) are NP comparees on comparative f
 
 ## See also
 
-- [values.md](values.md) — needs vs ability / DECISION / COMMENT / NOTIONAL / emotion compose
-- [coordination.md](coordination.md) — joins; soft **-n**; universals / domains
-- [restrictors.md](restrictors.md) — applicability vs join-relations / ability
-- [x-compounds.md](x-compounds.md) — mid-word **`x`** parser families (viewpoint laterals = ordinary compound)
-- [numbers.md](numbers.md) — free numerals vs numeric derivation; [measure phrases](numbers.md#measure-phrases) (bare host vs **`ROOTx+1`** unit)
-- [causation.md](causation.md) — join-relation causal readings; factivity; preference as law
-- [comparatives.md](comparatives.md) — judgment benchmarks; normative Mine
-- [predication.md](predication.md) — classification / **`SAME`**
-- [spans.md](spans.md) — mention / cite vs join-relation stock labels
-- [plurality.md](plurality.md) — **-sh** on nouns / event-sets
-- [pronouns.md](pronouns.md) — content **-r** vs role **-r**; specials as lateral ANCHOR
-- [revisers.md](revisers.md) — in-clause *including* vs join-relation *including*
-- [core.md](core.md) — complex `/ɡ/` + `/b/` landmark vs viewpoint **`x`**
+- Needs vs ability / COMMENT / NOTIONAL / emotion: [values.md](values.md)
+- Soft **-n** joins vs join-act verbs: [coordination.md](coordination.md)
+- Free numerals vs numeric derivation: [numbers.md](numbers.md)
+- Mid-word **`x`** shape map: [x-compounds.md](x-compounds.md)

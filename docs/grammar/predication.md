@@ -1,7 +1,7 @@
 # Predication (classification and identity)
 <a id="predication"></a>
 
-How Agelan says English *to be* for **kind / role** (*Sam is a teacher*) and **identity** (*Clark is Superman*) — without a general *to-be* verb. Scalar *as ADJ as* stays [equatives](comparatives.md#equatives).
+How Agelan says English *to be* for **kind / role** (*Sam is a teacher*) and **identity** (*Clark is Superman*) — without a general *to-be* verb.
 
 ## Beginner
 <a id="beginner"></a>
@@ -136,9 +136,6 @@ Comparative claims as clause content use the same zero-copula shape with a ranke
 
 ## See also
 
-- Absolute scalars and comparative predicative clauses: [comparatives.md](comparatives.md)
+- Scalar *as ADJ as* / comparative predicative clauses: [comparatives.md](comparatives.md)
 - Complex `/ɡ/`+`/b/`: [core.md](core.md)
 - Negation / focus packaging on properties: [coordination.md](coordination.md#negation-u)
-- Habitual **`hual`**: [restrictors.md](restrictors.md)
-- Named category **-n** on `/ɡ/`: [reference-suffix.md](reference-suffix.md)
-- Closed roots inventory: [special-vocabulary.md](special-vocabulary.md)

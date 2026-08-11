@@ -50,7 +50,7 @@ Headings, leads, and asides must make sense to someone who never saw an earlier 
 2. **Needs** (optional) — **rare.** Use only when the page is late and the dependency is not obvious from the [cross-doc path](learning-levels.md#cross-doc-path) (e.g. causation → joins + **`odo`**; comparatives → rank joins). Label as `**Needs:**` with one short link line. Do **not** ritualize “core Beginner; reference-suffix Beginner” on every page.
 3. **`## Beginner` / `## Intermediate` / `## Advanced`** — per [learning-levels.md](learning-levels.md).
 4. Inside each band: **concept → rule in one breath → 1–3 examples → (optional contrast) → full table if needed**.
-5. Optional **See also** at the end — no long link walls in the lead.
+5. Optional **See also** at the end — a few precise near-misses only; no long link walls in the lead (and no lead preview of later peers — [teach now; don’t preview later](#teach-now-dont-preview-later)).
 
 Front matter that orients (psychological purpose / limits / feature criteria / benefit tour — [why-agelan.md](../grammar/why-agelan.md); grammar design / how to learn — [introduction.md](../grammar/introduction.md)) is not a learning band. Reading order lives in the path / sidebar — not repeated as Prerequisites.
 
@@ -162,6 +162,22 @@ Do **not** require a **Not this** column on every table, or a counter-example on
 - One canonical anchor per concept (`<a id="…">`); keep ids stable.
 - Do not dump the whole related-inventory into the lead paragraph.
 - **IPA and pronunciation** belong only in [phonology.md](../grammar/phonology.md). Grammar docs use orthographic letters (`j`, `x`, `/j/`, `/x/`) — never IPA transcriptions or sound cues. If a learner needs how a letter sounds, link once to phonology (peer in `grammar/`).
+
+### Teach now; don’t preview later
+<a id="teach-now-dont-preview-later"></a>
+
+In each section, mention **only what that section is teaching**. Do not name, teaser, or deep-link subsystems the learner meets later on the [cross-doc path](learning-levels.md#cross-doc-path).
+
+| Keep | Cut / demote |
+|------|----------------|
+| One peer link when the learner **already** met the form, or when resolving a **real near-miss** they will invent *now* | “You’ll later learn…”, “full treatment in…”, and ownership fences (“this page owns / does not own X”) |
+| Rare **Needs:** when the dependency is not obvious from the path | Ritual prereq walls and long **See also** lists in the lead |
+| Same-page deferrals (“X is Intermediate ([…])”) | Peek-ahead to a **later peer’s** Intermediate / Advanced in Beginner prose |
+| Optional short **See also** at the **end** (a few precise near-misses) | Link walls that restate the sidebar path or dump every related peer |
+
+**Test:** if the sentence’s only job is to name a topic the path has not reached yet, delete it. If it resolves a trap the learner will hit *now*, one link is enough — do not restate the other doc.
+
+Pages stay dual-role (learner text + source of truth): Intermediate / Advanced inventories and precise end anchors are fine when the *lead and Beginner teach block* stay slim.
 
 ## What belongs where
 

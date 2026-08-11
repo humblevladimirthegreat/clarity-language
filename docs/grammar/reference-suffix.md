@@ -14,7 +14,7 @@ Every content word ends with a **reference suffix** — one of four final letter
 | **-n** | **Named** / definite by label (*Sam*, *Paris*) | **n**ame |
 | **-r** | **Resume** an already-introduced referent | **r**esume / **r**efer back |
 
-A bare **-l** / **-m** word always **introduces**. To point back, use **-r**. Anaphoric **-r** detail lives in [pronouns.md](pronouns.md).
+A bare **-l** / **-m** word always **introduces**. To point back, use **-r** (how resume chooses its antecedent: [pronouns.md](pronouns.md)).
 
 **Mnemonic:** endings answer *how does this root enter the talk?* — new literal, new figurative, named, or already on the table.
 
@@ -130,7 +130,7 @@ A **named circumstance, channel, or standard** framing the clause. Aligns with [
 | **Named discourse glue** (other `/x/` roots) | **-n** = titled agenda / section label — thread shift (*let’s now talk about X*) |
 | **Clause joins** | **-n** = soft packaging (*and then* **`xan`**, …) — not phrase named-list **-n**; full table [coordination.md](coordination.md) |
 
-*Starting with* / *Finally* are number discourse **`x#e-`** / **`x#e`** ([numbers.md](numbers.md#number-as-discourse-marker-by-marker)), not revisers. Prefix-less [discourse revisers](revisers.md#discourse-revisers) keep reviser endings including named **-n**.
+Prefix-less [discourse revisers](revisers.md#discourse-revisers) keep reviser endings including named **-n**.
 
 #### Nativized loans and multipart names
 
@@ -190,20 +190,15 @@ On [viewpoint laterals](special-vocabulary.md#viewpoint-laterals) — **`DIR x A
 
 ### Join endings
 
-On [joins](coordination.md), the same letters are specialized again: phrase-level forms use **-l** / **-m** / **-n** for **closed** / **open** / **named** on join vowels (where allowed); **/ɡ/** **/h/** **-n** spellings are [join-relations](special-vocabulary.md#join-relations); VP **-n** is [join-act verbs](special-vocabulary.md#join-act-verbs); clause **-n** is soft packaging (*and then* **`xan`**). **-r** on **a** / **o** / **e** / **u** = [unspecified-member](coordination.md#unspecified-member-r-phrase). Prefix-less **al** / **am** / … are [revisers](revisers.md), not joins. Full detail: [coordination.md](coordination.md).
+On [joins](coordination.md), the same letters are specialized again: phrase-level forms use **-l** / **-m** / **-n** for **closed** / **open** / **named** on join vowels (where allowed); clause **-n** is soft packaging (*and then* **`xan`**); **-r** on **a** / **o** / **e** / **u** = [unspecified-member](coordination.md#unspecified-member-r-phrase). Prefix-less **al** / **am** / … are [revisers](revisers.md), not joins.
 
 ### Discourse `/x/` inventory (dense)
 
-Clause joins and named discourse glue reuse the four ending letters with family-specific jobs. Prefer the owner pages when learning:
-
-- Phrase / VP / clause joins — [coordination.md](coordination.md)
-- Discourse revisers — [revisers.md](revisers.md)
-- Number-as-discourse — [numbers.md](numbers.md#number-as-discourse-marker-by-marker)
+Clause joins and named discourse glue reuse the four ending letters with family-specific jobs — see [coordination.md](coordination.md) and [revisers.md](revisers.md).
 
 ## See also
 
 - [pronouns.md](pronouns.md) — anaphoric **-r**; special **`umogo`** / **`ehado`** / **`ana`** / **`enu`** / **`odo`**
 - [plurality.md](plurality.md) — **-sh** after the ending
-- [special-vocabulary.md § Viewpoint laterals](special-vocabulary.md#viewpoint-laterals) — **`DIR x ANCHOR`** (ordinary endings)
 - [core.md](core.md) — role letters and writing words
 - [core.md § Outside a sentence](core.md#citation-forms) — prefix-less citation (**-l** / **-m** / **-n** / **-r**)

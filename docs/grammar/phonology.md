@@ -89,9 +89,9 @@ After adjective prefix `/ɡ/`, an **l** may sit before the root, forming onset *
 
 ### Joins, revisers, and span vowels
 
-[Phrase](coordination.md#phrase-level-coordination) / [VP](coordination.md#vp-level-coordination) / [clause](coordination.md#clause-level-coordination) joins reuse ordinary PoS + reserved vowel roots + endings under the same phonotactic shape. Prefix-less revisers (**al** / **am** / …) are [revisers](revisers.md). Span opens are PoS + TYPE vowel + **`x`** + EDGE vowel + ending; closes are only **`xuxul`** / **`xuxur`** / **`xuxun`** / **`xuxum`** — [spans.md](spans.md). No stacked vowels on TYPE or EDGE. Discourse-only opens use PoS `/x/` (`xaxal`, …).
+Join closes, prefix-less revisers (**al** / **am** / …), and span open / close words reuse the same phonotactic shape: PoS (when present) + reserved vowels + endings. Span opens use mid-word **`x`** between TYPE and EDGE vowels; closes are only **`xuxul`** / **`xuxur`** / **`xuxun`** / **`xuxum`**. No stacked vowels on TYPE or EDGE.
 
-Morphology and readings live on those pages; phonology only requires that the spellings fit the word shape above.
+Phonology only requires that those spellings fit the word shape above; readings live on their own pages.
 
 ## Advanced
 <a id="advanced"></a>
@@ -129,14 +129,9 @@ The first should stay easier to sustain even when the second is only a little ha
 ### Design notes
 
 - Unused potential onset clusters (not part of the language): *gw*, *vw*, *xw*, *bl* (should not mean left-aligned *b*).
-- Join-series vowel inventory and fence nesting details: [coordination.md](coordination.md).
-- Span TYPE × EDGE inventory: [spans.md](spans.md).
 
 ## See also
 
-- Grammar design goals (including singable phonology): [introduction.md](introduction.md#grammar-design)
 - Writing words / orthography: [core.md](core.md#orthography)
-- Reference endings: [reference-suffix.md](reference-suffix.md)
-- Plural **-sh**: [plurality.md](plurality.md)
-- Mid-word **`x`** families: [x-compounds.md](x-compounds.md)
 - Numbers (PoS+`r` exception): [numbers.md](numbers.md)
+- Mid-word **`x`**: [x-compounds.md](x-compounds.md)

@@ -28,6 +28,7 @@ Ask in order. Prefer the **earlier** band when a concept sits on a boundary and 
 - Do **not** score every morph. For each H2/H3, run the three questions, pick a band, move on.
 - When bands conflict, **dependency wins** over subjective difficulty.
 - Boundary cases needed early for reading examples → prefer the **earlier** band.
+- Grammar prose: [teach now; don’t preview later](grammar-docs.md#teach-now-dont-preview-later) — no teaser links to peers the path has not reached yet.
 
 ## Cross-doc path
 <a id="cross-doc-path"></a>

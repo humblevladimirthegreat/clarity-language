@@ -2,16 +2,14 @@
 <a id="x-compounds"></a>
 <a id="compound-parser"></a>
 
-How to **disambiguate mid-word `x`**. Mid-word **`x`** is only the [compound joiner](phonology.md#phonotactics) — never an ordinary root consonant. Word-initial **`x`** is the discourse-marker PoS — not this page. Family-specific morphology lives on the owner pages; this page is the **parser cue** map.
+How to **disambiguate mid-word `x`**. Mid-word **`x`** is only the [compound joiner](phonology.md#phonotactics) — never an ordinary root consonant. Word-initial **`x`** is the discourse-marker PoS — a different job.
 
 ## Beginner
 <a id="beginner"></a>
 
 ### What mid-word `x` does
 
-Inside a word, **`x`** joins two halves into one compound. Different shapes mean different families (span fence, role, value / ability, numeric derivation, or ordinary sense compound).
-
-You do **not** need the full decision table for early dialogue. When a form looks like `…x…`, follow the owner page linked from the example. Come back here when several families collide.
+Inside a word, **`x`** joins two halves into one compound. Different shapes mean different families (span fence, role, value / ability, numeric derivation, or ordinary sense compound). When a form looks like `…x…`, match the shape in the Intermediate table below.
 
 **Mnemonic:** mid-word **`x`** = glue; word-initial **`x`** = discourse PoS.
 
@@ -58,12 +56,5 @@ Stacked vowels on TYPE/EDGE/ROLE are **not** used: role ROLE is one of **`a`** /
 
 ## See also
 
-- Role **`a`/`u`/`o`**: [special-vocabulary.md § Role compounds](special-vocabulary.md#role-compounds)
-- Viewpoint laterals: [special-vocabulary.md § Viewpoint laterals](special-vocabulary.md#viewpoint-laterals)
-- Numeric derivation: [special-vocabulary.md § Numeric derivation](special-vocabulary.md#numeric-derivation)
-- Values: [values.md](values.md)
-- Ability: [special-vocabulary.md § Ability](special-vocabulary.md#ability)
-- Number stems (free words): [numbers.md](numbers.md)
-- Span open / close: [spans.md](spans.md)
-- Phrasal names / sense compounds: [reference-suffix.md](reference-suffix.md#phrasal-proper-names), [phonology.md](phonology.md#phonotactics)
-- Joins (no mid-word `x`): [coordination.md](coordination.md)
+- Word-initial **`x`** discourse role: [core.md](core.md#discourse-markers-x)
+- Phonotactics of mid-word **`x`**: [phonology.md](phonology.md#phonotactics)

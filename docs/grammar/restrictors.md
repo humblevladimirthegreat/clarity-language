@@ -3,18 +3,18 @@
 <a id="circumstance-h-w"></a>
 <a id="restrictors"></a>
 
-Join-series spellings under `/h/` or `/w/` that limit **when** the host applies — *only when…*, *never*, *always*, *sometime* — not sibling *and* of manner or degree. Prefixed fence **joins**: [coordination.md](coordination.md). Prefix-less **revisers**: [revisers.md](revisers.md).
+Join-series spellings under `/h/` or `/w/` that limit **when** the host applies — *only when…*, *never*, *always*, *sometime* — not sibling *and* of manner or degree.
 
 ## Beginner
 <a id="beginner"></a>
 
 ### Applicability, not sibling *and*
 
-Under **`/h/`** and **`/w/`**, the join series + ending is **not** a same-slot sibling join. It marks **applicability circumstances**: when / under which cases the **host** holds.
+Under **`/h/`** and **`/w/`**, these forms mark **applicability circumstances**: when / under which cases the **host** holds — not co-manner *and*.
 
 | Prefix | Host | Floats? |
 |--------|------|---------|
-| `/h/` | the **clause** (verb-level claim) — or a [VP chain](coordination.md#vp-level-coordination) when the restrictor sits before the VP stretch / in SHARED after the `/v/` join | yes (same free position as ordinary `/h/`) |
+| `/h/` | the **clause** (verb-level claim) — or a VP chain when the restrictor sits before the VP stretch / in SHARED after a `/v/` join | yes (same free position as ordinary `/h/`) |
 | `/w/` | the **preceding `/ɡ/`** (the property) | no (stays on that adjective) |
 
 **Mnemonic:** bare **`hal`** (*never*) ↔ **`hual`** (*always*); **`har`** (*sometime*) is the positive twin of empty **`hal`**.
@@ -173,8 +173,5 @@ Nesting and SHARED still apply to **defined** forms only.
 
 ## See also
 
-- Phrase / VP / clause joins: [coordination.md](coordination.md)
+- Sibling *and* joins (not applicability): [coordination.md](coordination.md)
 - *When?* under question: [questions.md](questions.md#circumstance-when)
-- Necessity / causation with **`hal`**: [causation.md](causation.md#necessary)
-- Habitual generics: [universals](coordination.md#universals-domains-generics)
-- Join-relations (`han`, …): [special-vocabulary.md](special-vocabulary.md#join-relations)

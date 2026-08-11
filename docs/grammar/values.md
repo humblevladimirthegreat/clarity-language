@@ -2,7 +2,7 @@
 <a id="values"></a>
 <a id="value-ascription"></a>
 
-How to name a **need** and how you relate to it — topic, met, unmet, motive, or prescription — with stance-specific endings. Applicability *when*: [restrictors](restrictors.md). Ability, plan / predict, evidentiality, emotion compose, and related mood: [special-vocabulary.md](special-vocabulary.md).
+How to name a **need** and how you relate to it — topic, met, unmet, motive, or prescription — with stance-specific endings.
 
 ## Beginner
 <a id="beginner"></a>
@@ -10,23 +10,14 @@ How to name a **need** and how you relate to it — topic, met, unmet, motive, o
 ### Default reading of `/h/` and `/w/`
 <a id="default-reading-of-h-and-w"></a>
 
-Ordinary content under **`/h/`** (clause) and **`/w/`** (prior `/ɡ/`) is a **value**, unless the form already belongs to a clearer closed subcategory:
-
-| Keep as non-value | Examples |
-|-------------------|----------|
-| Restrictors | `hal`, `hual`, `har`, `wal`, … — [restrictors](restrictors.md) |
-| Special vocabulary | ability; [role compounds](special-vocabulary.md#role-compounds); join-act / join-relations; plan / predict; **DECISION** (`ehege`); [evidentiality](special-vocabulary.md#evidentiality); emotion ACT / LOCUS; **COMMENT** (`uho`); **NOTIONAL** (`edahe`) — [special-vocabulary](special-vocabulary.md) |
-| Evidentiality / mood | how you know / claim strength |
-| Degree | *very*, *slightly*, … |
-| Time / place / manner / recipient | ordinary adverb lexicon under `/h/` |
-| Number words under `/h/` | `h+…`, `h-…`, … — [numbers](numbers.md) |
+Ordinary content under **`/h/`** (clause) and **`/w/`** (prior `/ɡ/`) is a **value** when the root is one of the six needs below and you use value stance morphology. Degree, time / place / manner, and other ordinary adverb lexicon stay ordinary — not value readings.
 
 | Prefix | Scope |
 |--------|--------|
 | `/h/` | the **clause** (motive, prescription, judgment of the event) — floats like other `/h/` |
 | `/w/` | the **preceding `/ɡ/`** (property or possessive ascription) — stays on that adjective |
 
-**Parser cue (short):** PoS + join-vowel + **-l** / **-m** / **-r** under `/h/` → restrictor (`hal`). PoS + join-vowel + **-n** → [join-relation](special-vocabulary.md#join-relations). **Need root** + `x…` → this page. **Other root** + **`xa` / `xu`** → [ability](special-vocabulary.md#ability). Full mid-word **`x`** map: [x-compounds.md](x-compounds.md).
+**Shape cue:** **need root** + mid-word **`x`** + stance vowel + ending → value word on this page.
 
 ### Need inventory
 <a id="need-inventory"></a>
@@ -308,8 +299,5 @@ Competence (`odolo`) and relatedness (`ogono`) shown for readability; same endin
 
 ## See also
 
-- Restrictors: [restrictors.md](restrictors.md)
-- Ability / DECISION / emotion / COMMENT / NOTIONAL / evidentiality: [special-vocabulary.md](special-vocabulary.md)
-- Mid-word **`x`** families: [x-compounds.md](x-compounds.md)
-- Preference as causal law: [causation.md](causation.md#preference-vs-law)
-- Ordinary endings: [reference-suffix.md](reference-suffix.md)
+- Applicability *when* (not a need stance): [restrictors.md](restrictors.md)
+- Ability **`xu`/`xa`** and other closed mood (not needs): [special-vocabulary.md](special-vocabulary.md)

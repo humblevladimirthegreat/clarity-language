@@ -147,7 +147,7 @@ Same referent, new role — English needs a longer paraphrase. Full PoS×PoS tab
 
 ### Specials — further notes
 
-**Speaker / listener.** 1st / 2nd person only when a name is unavailable or undesired. On [judgment benchmarks](comparatives.md#judgment-benchmarks): bare **`zumogon`** = *less … than where I sit* (performance); normative personal standard = **`zumogoxrawon`**. As the ANCHOR half of [viewpoint laterals](special-vocabulary.md#viewpoint-laterals): **`…xumogo…`** = speaker-facing side; **`…xehado…`** = listener-facing side (prefer when facing someone). Do **not** reuse **`ehado`** for [evidential](special-vocabulary.md#evidentiality) hearsay (**`erare`** stays *told*).
+**Speaker / listener.** 1st / 2nd person only when a name is unavailable or undesired.
 
 **Interlocutors (`ana`).** Inclusive *we* as a **discourse role** — not “my side,” not a titled team, and not an exact census (those use [associative **-sh**](plurality.md#associative) / joins). Soft **`zanam`** hedges co-agency.
 
@@ -252,5 +252,4 @@ Each subsection is an **antecedent** role; table rows are the **pronoun** role. 
 
 - [reference-suffix.md](reference-suffix.md) — **-l** / **-m** / **-n** / **-r**
 - [plurality.md](plurality.md) — **-sh**; address set vs associative
-- [questions.md](questions.md) — fill-ask **-r** under question (not content anaphor)
 - [core.md](core.md#dependent-clauses) — **`odo`** placement

@@ -4,14 +4,14 @@
 <a id="in-clause-revision"></a>
 <a id="revisers"></a>
 
-Prefix-less vowel + **-l** / **-m** / **-n** forms that **revise** a slot or glue this sentence to prior talk: *including* / *rather* / *instead* / *except* (in-clause) and *additionally* / *in other words* / *instead* / *except* (discourse). Prefixed fence **joins**: [coordination.md](coordination.md). Circumstance **restrictors** (`/h/` `/w/`): [restrictors.md](restrictors.md).
+Prefix-less vowel + **-l** / **-m** / **-n** forms that **revise** a slot or glue this sentence to prior talk: *including* / *rather* / *instead* / *except* (in-clause) and *additionally* / *in other words* / *instead* / *except* (discourse).
 
 ## Beginner
 <a id="beginner"></a>
 
 ### What a reviser is
 
-An ending is **required**: unmarked **a** / **e** / **o** / **u** are not legal words. Revisers are **not** joins: they do not take **-r**, and they are not the prefixed join series.
+An ending is **required**: unmarked **a** / **e** / **o** / **u** are not legal words. Revisers do not take **-r**, and they are not a list join.
 
 Two placements, one form set:
 
@@ -222,8 +222,5 @@ Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om*
 
 ## See also
 
-- Prefixed joins: [coordination.md](coordination.md)
-- Circumstance restrictors: [restrictors.md](restrictors.md)
-- *Starting with* / *Finally*: [numbers.md](numbers.md#number-as-discourse-marker-by-marker)
-- Discourse `/x/` linkers: [core.md](core.md#discourse-markers-x)
+- List joins (*and* / *or*): [coordination.md](coordination.md)
 - Prefix-less citation (not revisers): [core.md § Outside a sentence](core.md#citation-forms)

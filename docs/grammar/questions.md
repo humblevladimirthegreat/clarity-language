@@ -1,6 +1,6 @@
 # Questions
 
-How to **ask** in Agelan: question force (**jol** / soft **jom**), yes/no vs fill-ask, multi-gap **fill-all**, and **polar stance** particles (**`jael`** / **`juel`** / …). Fence forms and their **statement** readings: [coordination.md](coordination.md).
+How to **ask** in Agelan: question force (**jol** / soft **jom**), yes/no vs fill-ask, multi-gap **fill-all**, and **polar stance** particles (**`jael`** / **`juel`** / …).
 
 ## Beginner
 <a id="beginner"></a>
@@ -42,7 +42,7 @@ gloss: `j-ask` · `z-ar` · `v-go`
 <a id="fill-ask-r"></a>
 <a id="content-questions"></a>
 
-Under **jol** / **jom**, prefixed **-r** on **a** / **o** / **e** / **u** asks to name the unspecified member. Statement readings (*something* / *anything* / …): [coordination.md](coordination.md#unspecified-member-r-phrase).
+Under **jol** / **jom**, prefixed **-r** on **a** / **o** / **e** / **u** asks to name the unspecified member.
 
 | Vowel | Under question (bare) | Examples |
 |-------|------------------------|----------|
@@ -107,7 +107,7 @@ A fill answer **need not** keep **-r** — bare content, focus **-l** / **-m** /
 
 ### Polar stance — fuller inventory
 
-**Letter jobs** (not emotion valence — that is [values](values.md) / [emotion compose](special-vocabulary.md#emotion-compose)):
+**Letter jobs** (not emotion valence):
 
 | Stack | Job |
 |-------|-----|
@@ -171,7 +171,7 @@ Under `/h/` / `/w/`, only the [defined core](restrictors.md) has circumstance re
 <a id="yes-no-unary-nullary"></a>
 <a id="under-question"></a>
 
-Under question, focus and bare join endings ask for confirmation or offer — statement readings stay in [coordination.md](coordination.md#focus-phrase).
+Under question, focus and bare join endings ask for confirmation or offer.
 
 - Focus **-l** / **-n** — confirm the singleton (*Just X?*, *Has to be X?*).
 - Focus **-m** — **offer** that singleton (*How about X?*, *Want X?*).
