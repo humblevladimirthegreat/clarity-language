@@ -67,5 +67,7 @@ setback responses:
 
 long term:
 -parser
+-web tools (overlay glosses)
 -local llm systematically review entire lexicon
 -speed reading display
+-vocab flashcard generator/system

@@ -2,7 +2,7 @@
 
 **Agelan** (`agela` + proper **-n**) translates to English *clarity*.
 
-Why the language exists, how the grammar supports that, how to read the docs, and what bars new features must meet. Core clause grammar starts in [core.md](core.md).
+Why the language exists, how the grammar supports that, how to read the docs, what bars new features must meet, and limits / credits. Core clause grammar starts in [core.md](core.md).
 
 ## Purpose
 
@@ -23,6 +23,15 @@ Surface common biases that make self-delusion easy. Example: when you say you be
 Support authentic choice by making reasons for action visible. Example: when framing work to do, prefer numbered candidates (`zubezul g#1`, `zegogel g#2`, …) over bare *the problem* / *the solution* / *the goal* ([numbered alternatives](special-vocabulary.md#numbered-alternatives)). Reframe the same situation with paraphrase (**-m**, discourse **`el`/`em`**, or a paraphrase span — [spans.md](spans.md)), not a second digit.
 
 **Why this order.** Rationality is hard without compassion first: lack of self-acceptance fuels motivated reasoning, so truth-seeking collapses into defense. Empowerment without rationality is foolish; without compassion it is antisocial; without both it is dangerous. So the stack is compassion → rationality → empowerment.
+
+## Limits
+<a id="limits"></a>
+
+Agelan encodes psychological concepts and techniques, but it is **not therapy, counseling, or medical advice**, and it is not a substitute for professional care when you need it.
+
+The design *aims* at compassion, rationality, and empowerment, and prefers research when it exists ([feature criteria](#criterion-for-features)). That is design intent — **not a claim** that speaking or studying Agelan has been shown to improve mental health or other outcomes.
+
+The language is currently in **beta**: grammar, lexicon, and these docs can change as the design settles.
 
 ## Grammar design
 
@@ -48,7 +57,7 @@ Grammar pages use **Beginner** / **Intermediate** / **Advanced** sections so you
 
 Suggested **Beginner** order:
 
-1. This page — purpose, design goals, how to learn, feature criteria
+1. This page — purpose, limits, design goals, how to learn, feature criteria
 2. [core.md](core.md#beginner) — clause shape, PoS, writing words, utterance framing, **`odo`**
 3. [phonology.md](phonology.md#beginner) — letters, word edges, phonotactics (optional early)
 4. [reference-suffix.md](reference-suffix.md#beginner) — **-l** / **-m** / **-n** / **-r**
@@ -97,3 +106,12 @@ New language features should meet these bars:
 * **Avoids shame.** No option should read as the socially “correct” default. Each choice has situations where it belongs.
 
 * **Reminders where they are needed.** Nudge compassion, rationality, or empowerment mainly where those failures are likely — accept some false positives, minimize pointless ones.
+
+## Acknowledgments
+<a id="acknowledgments"></a>
+
+I would like to thank ClearerThinking.org and their book The 12 Levers for being a helpful compository of scientifically-validated  personal growth techniques and noting their safety conditions.
+
+I would also like to thank the Conlangs community on Reddit for their wealth of resources, ideas, and support for conlangers everywhere.
+
+I also thank all the beta testers and reviewers for your feedback and questions.
