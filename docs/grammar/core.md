@@ -25,6 +25,19 @@ Final letters (**-l** / **-m** / **-n** / **-r**) say how the root enters the ta
 
 **Mnemonic (endings):** **-l** literal kind, **-m** metaphorical sense, **-n** proper / named, **-r** resume (point back).
 
+##### Capitalization
+<a id="capitalization"></a>
+
+Agelan writing is **unicase**: use **lowercase** for every native letter — role letter, root, ending, plural **-sh**, numbers, revisers, join closes, and citation forms. Sentence starts after `.` / `?` / `!` stay lowercase. Named reference is **-n** / **`@`**, not a capital letter.
+
+Capital letters appear only inside **foreign or raw** payloads that keep another writing system’s casing — opaque spans (`d<NaCl>`, `d<iPhone>`), compact foreign content words (`z<Sam>n`), and cite / mention interiors whose wording is not Agelan (`d@[Hamlet]`). Once a root is nativized (published or adapted Agelan shape), write it lowercase with an ordinary ending (`zazaman`, not `zAzaman`).
+
+Do not use capitals for shouting, titles, or emphasis — use clause force, polar stance, values, or **COMMENT** instead.
+
+**Mnemonic:** lowercase is Agelan; capitals are **borrowed ink** from another orthography.
+
+**Trap:** capitalizing the first letter of a sentence changes the role stamp’s look (`Zumogon` vs `zumogon`). Keep the role letter lowercase so it stays the same stamp everywhere.
+
 #### Outside a sentence (citation)
 <a id="citation-forms"></a>
 <a id="prefix-less-citation"></a>
@@ -265,6 +278,149 @@ gloss: `z-speaker` · `d-listener` · `d-next-clause` · `v-tell`
 **Mnemonic:** same doorway shape for every adverbial subordinator — pick the relation root, keep **-m**, end the matrix on **`bodol`**. Condition / factivity detail for *if* / *because* / *iff*: [causation.md](causation.md#if-vs-iff). Discourse *however* / *meanwhile* stay `/x/` linkers ([below](#sentence-linkers)), not these `/h/` poles.
 
 Nesting dependents inside dependents is Intermediate ([nested dependents](#nested-dependents)).
+
+### Translation practice
+<a id="translation-practice"></a>
+
+Short drills on this Beginner band. Try each item before opening **Show answer**. Use **published roots** only — no opaque `<>` loans.
+
+**Roots used here:** `umogo` *speaker* · `ehado` *listener* · `edage` *teacher* · `uzedu` *student* · `ogodo` *dog* · `agada` *cat* · `ogobo` *book* · `ohuze` *house* · `ulebu` *blue* · `edeje` *red* · `eleba` *size* · `uze` smile → *happy* (**-m**) · `awu` *walk* · `urunu` *run* · `ezele` *sleep* · `ezabu` *tell* · `uwa` *write* · `egu` *sing* · `ejo` *perception* (*see*) · `ahura` *sit* · `ada` *haste* · `odo` *next clause* · `urugu` *because* (**-m** on `/h/`)
+
+#### English → Agelan
+
+**1.** *I am a teacher.*
+
+::: details Show answer
+`zumogon gedagel.`
+:::
+
+**2.** *A dog is blue.*
+
+::: details Show answer
+`zogodol gulebul.`
+:::
+
+**3.** *I walk.*
+
+::: details Show answer
+`zumogon vawul.`
+:::
+
+**4.** *I see a cat.*
+
+::: details Show answer
+`zumogon dagadal vejol.`
+:::
+
+**5.** *You are happy.*
+
+::: details Show answer
+`zehadon guzem.`
+:::
+
+**6.** *I write a book.*
+
+::: details Show answer
+`zumogon dogobol vuwal.`
+:::
+
+**7.** *Walk!*
+
+::: details Show answer
+`jel vawul.`
+:::
+
+**8.** *Don’t run.*
+
+::: details Show answer
+`jul vurunul.`
+:::
+
+**9.** *Are you a student?*
+
+::: details Show answer
+`jol zehadon gezedul.`
+:::
+
+**10.** *I tell you that the dog runs.*
+
+::: details Show answer
+`zumogon dehadon dodol vezabul zogodol vurunul.`
+:::
+
+**11.** *I am happy because you walk.*
+
+::: details Show answer
+`zumogon guzem hurugum bodol zehadon vawul.`
+:::
+
+#### Agelan → English
+
+**1.** `zumogon gezedul.`
+
+::: details Show answer
+*I am a student.*
+:::
+
+**2.** `zagadal gedejel.`
+
+::: details Show answer
+*A cat is red.*
+:::
+
+**3.** `zehadon vurunul.`
+
+::: details Show answer
+*You run.*
+:::
+
+**4.** `zogodol gelebal.`
+
+::: details Show answer
+*A dog is big.*
+:::
+
+**5.** `zumogon vahural.`
+
+::: details Show answer
+*I sit.*
+:::
+
+**6.** `jel vegul.`
+
+::: details Show answer
+*Sing!*
+:::
+
+**7.** `jol zehadon guzem.`
+
+::: details Show answer
+*Are you happy?*
+:::
+
+**8.** `zumogon hadal vawul.`
+
+::: details Show answer
+*I walk hastily.* / *I hurry on foot.*
+:::
+
+**9.** `zohuzel gulebul.`
+
+::: details Show answer
+*A house is blue.* / *a blue house*
+:::
+
+**10.** `zumogon dehadon dodol vezabul zehadon vezelel.`
+
+::: details Show answer
+*I tell you that you sleep.*
+:::
+
+**11.** `zumogon vawul hurugum bodol zehadon vezelel.`
+
+::: details Show answer
+*I walk because you sleep.*
+:::
 
 ## Intermediate
 <a id="intermediate"></a>

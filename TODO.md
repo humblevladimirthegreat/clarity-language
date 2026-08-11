@@ -62,4 +62,5 @@ long term:
 -web tools (overlay glosses)
 -local llm systematically review entire lexicon
 -speed reading display
+-text to speech
 -vocab flashcard generator/system

@@ -58,7 +58,7 @@ A content word has these parts, written as **one unbroken token**:
 4. The [reference suffix](reference-suffix.md) (**-l**, **-m**, **-n**, or **-r**)
 5. Optional plural **-sh** after the reference suffix — [plurality.md](plurality.md)
 
-**Writing:** no hyphen after the PoS letter (`zumogon`). Full orthography: [core.md § Orthography](core.md#orthography).
+**Writing:** no hyphen after the PoS letter (`zumogon`); native Agelan is **lowercase** only ([capitalization](core.md#capitalization)). Full orthography: [core.md § Orthography](core.md#orthography).
 
 **Roots** have form **V(CV)+** (vowel-initial; mid consonants are ordinary onsets). Compound roots are separated by mid-word **`x`**. A root does **not** end in a consonant — the only word-final consonants are the reference suffix (and optional plural **sh**). That keeps held notes on vowels inside the word.
 

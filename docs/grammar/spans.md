@@ -101,8 +101,8 @@ gloss: `j-command` · `z-you` · `v-[oops]` · `d-me`
 
 | Need | Use |
 |------|-----|
-| **Raw foreign / code / unparsed surface** | **opaque** — `d<sushi>` (no ending after `>`) |
-| **Compact foreign content word** | `PoS<…>ENDING` — e.g. `d<sushi>l` (ordinary word, not a span fence) |
+| **Raw foreign / code / unparsed surface** | **opaque** — `d<sushi>` (no ending after `>`); keep the source’s **casing** inside `<>` when that orthography uses case (`d<NaCl>`, `d<iPhone>`) — [capitalization](core.md#capitalization) |
+| **Compact foreign content word** | `PoS<…>ENDING` — e.g. `d<sushi>l`, `z<Sam>n` (ordinary word, not a span fence); same casing rule inside `<>` |
 | **Use–mention** | **mention** — `d{…}` |
 | **Title string / proverb as wording** | **cite** — `d[…]` / `d@[…]` |
 | ***The title X* / *the proverb X*** as named unit | **mention** **-n** — `d@{…}` |

@@ -2,7 +2,7 @@
 
 How to write Agelan **grammar docs** under **`docs/grammar/`** so a learner can use them. Applies **only** to that folder (not to `meta/`, `examples/`, or `proposals/`). Design authority for morphology stays in those pages (core sentence grammar: [core.md](../grammar/core.md)); this page standardizes **pedagogy and prose** only.
 
-Grammar pages must **not** link to or mention `meta/` or any other folder outside `grammar/` — only peer links inside `grammar/`. Editors follow this page and [learning-levels.md](learning-levels.md) privately.
+Grammar pages must **not** link to or mention `meta/` or any other folder outside `grammar/` — only peer links inside `grammar/`. Editors follow this page, [learning-levels.md](learning-levels.md), and [translation-exercises.md](translation-exercises.md) privately.
 
 Related meta:
 
@@ -10,6 +10,7 @@ Related meta:
 |------|------|
 | [learning-levels.md](learning-levels.md) | **Beginner** / **Intermediate** / **Advanced** banding rubric and [cross-doc path](learning-levels.md#cross-doc-path) (for `docs/grammar/` only) |
 | [glosses.md](glosses.md) | Morph glosses and free English |
+| [translation-exercises.md](translation-exercises.md) | Eng ↔ Agelan checkpoints (placement, principles, spoiler shape) |
 
 ## Dual role
 
@@ -124,7 +125,7 @@ gloss: `z-Sam` · `g-teacher`
 *Sam is a teacher.*
 ```
 
-Multi-turn practice belongs under [examples/](../examples/), not inside every grammar section.
+Short Eng ↔ Agelan checkpoints: end of a page band only — [translation-exercises.md](translation-exercises.md). Multi-turn practice belongs under [examples/](../examples/), not inside every grammar section.
 
 ## Contrasts and boundaries
 
@@ -174,6 +175,7 @@ Do **not** require a **Not this** column on every table, or a counter-example on
 | Core sentence grammar | [core.md](../grammar/core.md) |
 | IPA / pronunciation / phonotactics | [phonology.md](../grammar/phonology.md) (only page that may use IPA) |
 | Unassigned or rejected design | [TODO.md](../../TODO.md) or a short **Design notes** appendix on the grammar page |
+| Short Eng ↔ Agelan checkpoint | End of a page band — [translation-exercises.md](translation-exercises.md) |
 | Multi-turn practice | [examples/](../examples/) (not linked from grammar pages) |
 | Editor pedagogy / migration notes | `docs/meta/` only — never from grammar pages |
 

@@ -60,7 +60,7 @@ Write **role letter + root + ending** as **one token** (`zumogon`). Full writing
 
 ### Proper names on nouns (starter)
 
-**-n** marks a **named designation**: you treat the root as a definite, established label — not “a kind of X.” Usual first cases are people and places (`/z/`…**-n**, `/d/`…**-n**). Prefix-less **…n** outside a clause cites a **name** or **the word-as-label** — [citation forms](core.md#citation-forms).
+**-n** marks a **named designation**: you treat the root as a definite, established label — not “a kind of X.” Usual first cases are people and places (`/z/`…**-n**, `/d/`…**-n**). Prefix-less **…n** outside a clause cites a **name** or **the word-as-label** — [citation forms](core.md#citation-forms). Writing stays lowercase; namedness is the ending, not a capital letter ([capitalization](core.md#capitalization)).
 
 Prefer **-n** (and its **-r** resume) over speaker/listener specials when a name exists — [pronouns.md](pronouns.md#special-pronouns).
 
