@@ -1,7 +1,7 @@
 # Special vocabulary
 <a id="special-vocabulary"></a>
 
-Closed morphology and mood roots that are **not** [values](values.md) (needs) and **not** [restrictors](restrictors.md) (applicability). Some reuse mid-word **`x`** ([ability](#ability), [role compounds](#role-compounds), [numeric derivation](#numeric-derivation)); others are closed `/h/` mood roots with no `x`-addition (plan / predict, evidentiality, universality, emotion ACT / LOCUS, **COMMENT**, **NOTIONAL**); join-act verbs and join-relations reuse join-vowel spellings under `/v/` `/ɡ/` `/h/`…**-n**. Mid-word **`x`** parser families: [x-compounds.md](x-compounds.md).
+Closed morphology and mood roots that are **not** [values](values.md) (needs) and **not** [restrictors](restrictors.md) (applicability). Some reuse mid-word **`x`** ([ability](#ability), [role compounds](#role-compounds), [numeric derivation](#numeric-derivation)); others are closed `/h/` mood roots with no `x`-addition (plan / predict, **DECISION**, evidentiality, universality, emotion ACT / LOCUS, **COMMENT**, **NOTIONAL**); join-act verbs and join-relations reuse join-vowel spellings under `/v/` `/ɡ/` `/h/`…**-n**. Mid-word **`x`** parser families: [x-compounds.md](x-compounds.md).
 
 **Prerequisites:** [core.md](core.md) Beginner; [reference-suffix.md](reference-suffix.md) Beginner; [coordination.md](coordination.md) Beginner for joins; [values.md](values.md) Beginner for ability contrast; [x-compounds.md](x-compounds.md) Intermediate when parsing mid-word **`x`**.
 
@@ -13,7 +13,7 @@ Closed morphology and mood roots that are **not** [values](values.md) (needs) an
 
 Some published roots carry a **closed overlay reading** for a fixed PoS — the word **is** that special sense, without inventing a new root. Example: **`uhunum`** under `/h/` = evidential *memory / witnessed*; **`huhunul`** = ordinary literal *in a fishing manner*.
 
-**Shape:** sense-form + [reference ending](reference-suffix.md). Mood overlays usually take **-m** (figurative published sense / soft default); other endings when that is how the overlay is defined (benchmark **-n**, universality **-l**, join-act / join-relation defective **-n**, [COMMENT](#comment-hold) / [NOTIONAL](#notional-hold) hold **-l / -m / -n / -r**, …). Join-act / join-relation stems are the vowel + **-n** only (`an` / `on` / …); written words are **`pos` + sense-form** (`van` / `gan` / `han`).
+**Shape:** sense-form + [reference ending](reference-suffix.md). Mood overlays usually take **-m** (figurative published sense / soft default); other endings when that is how the overlay is defined (benchmark **-n**, universality **-l**, join-act / join-relation defective **-n**, [COMMENT](#comment-hold) / [NOTIONAL](#notional-hold) hold **-l / -m / -n / -r**, [DECISION](#decision-changeability) changeability **-l / -m / -n / -r**, …). Join-act / join-relation stems are the vowel + **-n** only (`an` / `on` / …); written words are **`pos` + sense-form** (`van` / `gan` / `han`).
 
 **Mnemonic:** same root, special PoS reading — the ending marks which overlay you mean.
 
@@ -175,7 +175,7 @@ PoS + HOST + x + {a|u} + {-l|-m|-n|-r}
 #### Endings — changeability only
 <a id="ability-changeability"></a>
 
-On ability **`xa`** and **`xu`**, **-l / -m / -n / -r** are **changeability** — the same table as unmet values ([values.md § Changeability](values.md#value-changeability)). Not contact channel, preference standing, or prescription force.
+On ability **`xa`** and **`xu`**, **-l / -m / -n / -r** are **changeability** — the same table as unmet values ([values.md § Changeability](values.md#value-changeability)) and [DECISION](#decision). Not contact channel, preference standing, or prescription force.
 
 | Ending | Changeability | Mnemonic |
 |--------|---------------|----------|
@@ -530,6 +530,68 @@ gloss: `h-PREDICT` · `h-PATTERN` · `v-rain`
 ```
 
 Plan vs predict is a **root choice**, not `xa`/`xu` on a host. Ability compounds onto an activity (`veguxun`); plan/predict **frame the clause** — content verbs stay bare. Prefer floating `/h/`.
+
+### Decision (revisability)
+<a id="decision"></a>
+<a id="decision-mood"></a>
+
+Mark **how revisable a pick is** — temporary / open / settled / not-revising-now — with one closed mood root. English *decide* / *I've decided* / *final decision* smuggles firmness; Agelan puts firmness on the ending.
+
+**Shape:** floating **`/h/`** mood **`ehege`** ✅ *check* → *decision* (optional `/w/` when scoped only to a preceding `/ɡ/` — rare). Prefer floating `/h/`. Ending = [changeability](#decision-changeability) (same table as unmet values and ability).
+
+**Mnemonic:** a **checkmark** confirms a pick. Ordinary content still available (`zehegel` *a checkmark*; `vehegel` *to check / tick*).
+
+```
+`… hehegem …`
+
+gloss: `h-DECISION-modifiable`
+
+*I've decided …* — pick open to revision (default)
+```
+
+```
+`… hehegen …`
+
+gloss: `h-DECISION-irreversible`
+
+*I've decided …* — settled / not taking it back
+```
+
+Use **DECISION** when the clause is doing **pick firmness**. The choosing **act** stays [join-act **`von`**](#join-act-verbs) (*chooses as the one*). Intention detail stays [**PLAN**](#plan-predict). Autonomy-as-need stays [**`obola`**](values.md#need-inventory). *Can’t decide yet* / *won’t decide* on an activity host stays [ability](#ability) (`…xa…` / `…xu…`), not this mood.
+
+| English bundle | Prefer |
+|----------------|--------|
+| *I've decided / that's my decision* (+ how locked) | **DECISION** (`hehegem`, …) |
+| *choose X (as the one)* | join-act **`von`** |
+| *I plan to …* (intention grain) | [**PLAN**](#plan-predict) (`howarom`, …) |
+| *choice / agency* (need) | value **`obola`** |
+| *can’t / won’t decide* (capacity) | host + ability **`xu`/`xa`** |
+| *commitment / policy / indecision* (lexicon nouns) | ordinary **`enebe`** / **`emome`** / **`aweva`** |
+
+| Agelan | Reading |
+|---------|---------|
+| `… hehegel …` | decided **for now** (temporary) |
+| `… hehegem …` | decided; **open to change** (or unknown) |
+| `… hehegen …` | decided; **irreversible** / settled |
+| `… heheger …` | decided; **won't revise now** (deferral) |
+| `zumogon dalenal von hehegen` | *I choose that path (only); settled* |
+| `… howarom …` | intention detail — soft plan; not DECISION firmness |
+
+#### Endings — changeability only
+<a id="decision-changeability"></a>
+
+On **`ehege`**, **-l / -m / -n / -r** are **changeability** — the same table as unmet values ([values.md § Changeability](values.md#value-changeability)) and [ability](#ability-changeability). Not contact channel, preference standing, prescription force, COMMENT / NOTIONAL hold, or ordinary reference-suffix on this mood.
+
+| Ending | Form | Changeability | Reading |
+|--------|------|---------------|---------|
+| **-l** | **`hehegel`** | **temporary** | pick for this moment; usually revisable later |
+| **-m** | **`hehegem`** | **modifiable** (soft default if unknown) | open to revision |
+| **-n** | **`hehegen`** | **irreversible** | settled / final as far as you can tell |
+| **-r** | **`heheger`** | **won't-now** | not revising *this turn* (deferral, not inability) |
+
+**Settled vs won't-revise-now:** **-n** (irreversible) vs **-r** (won't-now). Always pick an ending on **DECISION**; unknown → **-m**.
+
+DECISION is a **root choice**, not `xa`/`xu` polarity and not a mid-word **`x`** compound. It is not PLAN, not join-act **`von`**, not autonomy **`obola`**, and not ability *can’t decide*. Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)).
 
 ### Evidentiality
 <a id="evidentiality"></a>
@@ -1045,6 +1107,7 @@ Unassigned or rare edges (not required for ordinary reading):
 - **COMMENT / NOTIONAL:** sense-channel noting color on **`uho`**; dedicated bare `/j/` interjection on either root; forced COMMENT on every first-person clause (only cognitive commentary environments); whether **`edahe`** under `/j/` doubles number-style *As if!* cheer.
 - **Emotion compose:** whether MED (`oju`) shares a form with another soft default; `/w/` bind on the judged `/ɡ/` vs only floating `/h/`; emotion lexicon retained only for non-judgmental sensation naming.
 - **Plan:** exact ending ↔ None / Vague / Detail / Contingency assignment on **`PLAN`**.
+- **DECISION:** whether bare unmarked pick clauses imply **`hehegem`** or leave firmness unspoken; stacking with **PLAN** detail endings on the same clause.
 - **Evidentiality / universality:** ending tables (confidence grain, soft vs committed warrant, …); full tense inventory stacking with channels; whether bare unmarked `hual` / `zual` implies COMMON or leaves warrant unspoken.
 - **Ability:** **`xe` / `xo`** on ability hosts (motive / prescription stay on [needs](values.md)); whose-ability / evidentiality on the denial; positive *can* forced on every clause.
 - **Role compounds:** ROLE **`e`** (reserved); instrument / beneficiary / recipient as extra ROLE vowels; role compounds under `/v/` `/h/` `/w/`; stacking role + ability (`axattackxu…`) — put ability on the bare event verb; *act done by entity* as a ROLE — resume verbs with ordinary **-r**, or use **`var`** for unnamed doing.
@@ -1054,7 +1117,7 @@ Judgment benchmarks (*worse than Average|…*) are NP comparees on comparative f
 
 ## See also
 
-- [values.md](values.md) — needs vs ability / COMMENT / NOTIONAL / emotion compose
+- [values.md](values.md) — needs vs ability / DECISION / COMMENT / NOTIONAL / emotion compose
 - [coordination.md](coordination.md) — joins; soft **-n**; universals / domains
 - [restrictors.md](restrictors.md) — applicability vs join-relations / ability
 - [x-compounds.md](x-compounds.md) — mid-word **`x`** parser families

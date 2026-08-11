@@ -177,6 +177,10 @@ Bare need words (no `x`-addition) are **topic** only and keep ordinary **-l / -m
 
 On [ability](special-vocabulary.md#ability) compounds — **host + `x` + {a\|u}** (e.g. `veguxun`) or fallback **`egera` + `x` + {a\|u}`** — **-l / -m / -n / -r** are **changeability** on both **`xa`** (capable) and **`xu`** (incapable). **`xe`** / **`xo`** are undefined on ability. Details: [special-vocabulary.md](special-vocabulary.md).
 
+### Decision endings
+
+On [DECISION](special-vocabulary.md#decision) — closed mood **`ehege`** under `/h/` / `/w/` — **-l / -m / -n / -r** are the same **changeability** table (temporary / modifiable / irreversible / won't-now). No mid-word **`x`**. Details: [special-vocabulary.md § Decision](special-vocabulary.md#decision).
+
 ### Role compounds
 
 On [role compounds](special-vocabulary.md#role-compounds) — **`{a\|u\|o} x ROOT`** (agent / patient / reltum) — endings keep **ordinary** reference-suffix senses. Mid-word **`x`** families: [x-compounds.md](x-compounds.md).

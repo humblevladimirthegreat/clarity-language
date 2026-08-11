@@ -29,6 +29,14 @@ owarom,h,🗺️,plan mood (intention / commitment),map charts a route; plan cha
 owarom,w,🗺️,plan mood (intention / commitment),map charts a route; plan charts a course you mean to take
 edelom,h,🔭,predict mood (forecast about what will happen),telescope shows what is far; forecast looks ahead at a distance
 edelom,w,🔭,predict mood (forecast about what will happen),telescope shows what is far; forecast looks ahead at a distance
+ehegel,h,✅,decision mood temporary changeability (pick for now),checkmark confirms a pick; temporary decision holds only this moment
+ehegel,w,✅,decision mood temporary changeability (pick for now),checkmark confirms a pick; temporary decision holds only this moment
+ehegem,h,✅,decision mood modifiable changeability (open to revision),checkmark confirms a pick; modifiable decision stays open to change
+ehegem,w,✅,decision mood modifiable changeability (open to revision),checkmark confirms a pick; modifiable decision stays open to change
+ehegen,h,✅,decision mood irreversible changeability (settled pick),checkmark confirms a pick; irreversible decision is settled as final
+ehegen,w,✅,decision mood irreversible changeability (settled pick),checkmark confirms a pick; irreversible decision is settled as final
+eheger,h,✅,decision mood won't-now changeability (not revising this turn),checkmark confirms a pick; won't-now defers revision without unlocking
+eheger,w,✅,decision mood won't-now changeability (not revising this turn),checkmark confirms a pick; won't-now defers revision without unlocking
 uhom,h,💭,comment mood soft hold (mental commentary held lightly),thought balloon floats a take; soft commentary is noticed without fusion
 uhom,w,💭,comment mood soft hold (mental commentary held lightly),thought balloon floats a take; soft commentary is noticed without fusion
 uhol,h,💭,comment mood fused hold (commentary taken as the scene),thought balloon fills the frame; fused commentary is treated as the scene

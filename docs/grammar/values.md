@@ -2,7 +2,7 @@
 <a id="values"></a>
 <a id="value-ascription"></a>
 
-How Agelan names a **need** (psychological payoff) and how you relate to it — topic only, met, unmet, motive, or prescription — plus a stance-specific ending table (contact channel, preference standing, prescription force, or changeability). Applicability *when* is [restrictors](restrictors.md). Ability, plan / predict, evidentiality, emotion compose, **COMMENT**, and **NOTIONAL** live in [special-vocabulary.md](special-vocabulary.md). Preference as a causal law stacks **`xo` / `xe`** on [causation](causation.md#preference-vs-law) shapes.
+How Agelan names a **need** (psychological payoff) and how you relate to it — topic only, met, unmet, motive, or prescription — plus a stance-specific ending table (contact channel, preference standing, prescription force, or changeability). Applicability *when* is [restrictors](restrictors.md). Ability, plan / predict, **DECISION**, evidentiality, emotion compose, **COMMENT**, and **NOTIONAL** live in [special-vocabulary.md](special-vocabulary.md). Preference as a causal law stacks **`xo` / `xe`** on [causation](causation.md#preference-vs-law) shapes.
 
 **Prerequisites:** [core.md](core.md) Beginner (`/h/` and `/w/`); [reference-suffix.md](reference-suffix.md) Beginner (ordinary endings on bare needs).
 
@@ -17,7 +17,7 @@ Ordinary content under **`/h/`** (clause) and **`/w/`** (prior `/ɡ/`) is a **va
 | Keep as non-value | Examples |
 |-------------------|----------|
 | Restrictors | `hal`, `hual`, `har`, `wal`, … — [restrictors](restrictors.md) |
-| Special vocabulary | ability; [role compounds](special-vocabulary.md#role-compounds); join-act / join-relations; plan / predict; [evidentiality](special-vocabulary.md#evidentiality); emotion ACT / LOCUS; **COMMENT** (`uho`); **NOTIONAL** (`edahe`) — [special-vocabulary](special-vocabulary.md) |
+| Special vocabulary | ability; [role compounds](special-vocabulary.md#role-compounds); join-act / join-relations; plan / predict; **DECISION** (`ehege`); [evidentiality](special-vocabulary.md#evidentiality); emotion ACT / LOCUS; **COMMENT** (`uho`); **NOTIONAL** (`edahe`) — [special-vocabulary](special-vocabulary.md) |
 | Evidentiality / mood | how you know / claim strength |
 | Degree | *very*, *slightly*, … |
 | Time / place / manner / recipient | ordinary adverb lexicon under `/h/` |
@@ -218,7 +218,7 @@ gloss: `z-meeting` · `w-autonomy-unmet-temporary`
 *The meeting costs autonomy right now (temporary).*
 ```
 
-Same changeability table is reused on [ability](special-vocabulary.md#ability) **`xa` / `xu`**. Unmet competence (`hodoloxun`) is still a **need** claim — not “can’t competence.”
+Same changeability table is reused on [ability](special-vocabulary.md#ability) **`xa` / `xu`** and on [DECISION](special-vocabulary.md#decision) (**`ehege`**). Unmet competence (`hodoloxun`) is still a **need** claim — not “can’t competence.”
 
 ### Which ending table?
 
@@ -305,12 +305,13 @@ Competence (`odolo`) and relatedness (`ogono`) shown for readability; same endin
 - **Emotion compose** reuses this ascription — [special-vocabulary.md § Emotion compose](special-vocabulary.md#emotion-compose).
 - **COMMENT** / mindfulness noting — [special-vocabulary.md § Comment](special-vocabulary.md#comment); closed **`uho`** + [hold endings](special-vocabulary.md#comment-hold); not contact-channel endings on **`xa`**.
 - **NOTIONAL** / as-if framing — [special-vocabulary.md § Notional](special-vocabulary.md#notional); closed **`edahe`** + same hold map; not free number notional forms.
+- **DECISION** / pick firmness — [special-vocabulary.md § Decision](special-vocabulary.md#decision); closed **`ehege`** + [changeability](special-vocabulary.md#decision-changeability); not unmet-need **`xu`**, not ability, not PLAN.
 - Whose-need / care direction on prescription, and forced listener / third-person possessives, stay optional later dimensions.
 
 ## See also
 
 - Restrictors: [restrictors.md](restrictors.md)
-- Ability / emotion / COMMENT / NOTIONAL / evidentiality: [special-vocabulary.md](special-vocabulary.md)
+- Ability / DECISION / emotion / COMMENT / NOTIONAL / evidentiality: [special-vocabulary.md](special-vocabulary.md)
 - Mid-word **`x`** families: [x-compounds.md](x-compounds.md)
 - Preference as causal law: [causation.md](causation.md#preference-vs-law)
 - Ordinary endings: [reference-suffix.md](reference-suffix.md)

@@ -92,7 +92,7 @@ Published strings share one phonological root, but **literal**, **metaphorical**
 
 Same English label for `zumogom` and `zumogon` is fine: both are the *speaker* sense-root; the written ending is recoverable from the Agelan line and from [reference-suffix.md](../grammar/reference-suffix.md). The gloss’s job is the **sense**, not a second orthography.
 
-**Closed overlays** ([sense-form](../grammar/special-vocabulary.md#sense-form)): gloss the overlay reading for that `(sense_form, pos)`, not the ordinary lexicon literal. Prefer short stable labels (`witnessed`, `COMMENT`, `SAME`, `plan`, …).
+**Closed overlays** ([sense-form](../grammar/special-vocabulary.md#sense-form)): gloss the overlay reading for that `(sense_form, pos)`, not the ordinary lexicon literal. Prefer short stable labels (`witnessed`, `COMMENT`, `SAME`, `plan`, `DECISION`, …).
 
 **Special pronouns** ([pronouns.md](../grammar/pronouns.md)): `zumogon` / `zehadon` / `zanan` / `zenun` / `…odo…` → `z-speaker` / `z-listener` / `z-interlocutors` / `z-someone` / `…-next-clause` — never emoji etymology.
 
@@ -128,7 +128,7 @@ Do **not** write `-l` / `-m` / `-n` after a sense that already is the literal / 
 ### Sense labels
 
 - Prefer lexicon / overlay wording when short (`tea`, `speaker`, `witnessed`).
-- Prefer **stable tags** for closed inventory (uppercase OK when the docs already use them): `COMMENT`, `SAME`, `WITNESSED`, `ABIL`.
+- Prefer **stable tags** for closed inventory (uppercase OK when the docs already use them): `COMMENT`, `DECISION`, `SAME`, `WITNESSED`, `ABIL`.
 - Do **not** use arrows (`→`) or etymology chains.
 - Do **not** put PoS names in the label (`noun`, `proper`).
 
