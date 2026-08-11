@@ -232,7 +232,7 @@ gloss: `j-no` · `z-speaker` · `v-walking-unable-temporary` · `h-competence-x-
 
 ### Numbered alternative + unmet pleasure
 
-Agelan: `x#e- zubezul g#1 zumogonsh hazedoxul.`
+Agelan: `x#e- zubezul g#1 zumogonsh hazedoxur.`
 
 ```
 gloss: `x-starting-with` · `z-problem` · `g-first` · `z-speaker-sh` · `h-pleasure-x-unmet`

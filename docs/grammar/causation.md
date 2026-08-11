@@ -150,7 +150,7 @@ A common shape: *hard work should earn a promotion* — the “rule” is a **wi
 
 Strength of feeling is values force / evidentiality — not upgrading `aom` → `ol` / `gon`.
 
-**Schematic:** `… haon beladel` on promotion + `hodoloxol` (or soft invite force) ≈ *effort is among routes that ought to count for competence payoff* — not *effort is the sole causal law of promotion*.
+**Schematic:** `… haon beladel` on promotion + `hodoloxor` (soft invite force) ≈ *effort is among routes that ought to count for competence payoff* — not *effort is the sole causal law of promotion*.
 
 ## Advanced
 <a id="advanced"></a>

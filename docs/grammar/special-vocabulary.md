@@ -389,7 +389,7 @@ gloss: `h-ABIL-unable-temporary`
 |-------|--------|
 | Can’t / can **this** activity or property | **host + `xa` / `xe` / `xo` / `xu`** ([Beginner](#ability)) |
 | Clause-wide / hostless capability | **`hegeraxa…`** / **`hegeraxe…`** / **`hegeraxo…`** / **`hegeraxu…`** (same under `/w/`) |
-| Need unmet + changeability | need **`xu…`** — [values](values.md) (`hodoloxun` ≠ “can’t competence”) |
+| Need unmet + changeability | need **`xu…`** — [values](values.md) (`hodoloxul` ≠ “can’t competence”) |
 | When / never / sometime the host applies | [restrictors](restrictors.md) (`hal`, `har`, …) |
 
 Stack when useful: e.g. can’t-sing plus unmet competence (`veguxol` + `hodoloxum`). Bare **`hal`** (*never*) is applicability, not tagged incapability. Need-root **`xu`** stays unmet need, not ability. Unspecified need **`egege`** 🥚 (*potential*) is not **`ABIL`**.
@@ -446,7 +446,7 @@ Use COMMENT when the clause is doing **first-person cognitive commentary**. Thir
 
 | Agelan | Reading |
 |---------|---------|
-| `zanal wodoloxul hogenal hagenal` | *I fear the get-together* — unmet competence; flood; room awash — no COMMENT |
+| `zanal wodoloxur hogenal hagenal` | *I fear the get-together* — unmet competence; flood; room awash — no COMMENT |
 | `… howarom …` | *I hope to …* (intention) — soft plan; no COMMENT |
 | `… huhol …` | commentary taken as the scene (fused) |
 | `… huhur …` | commentary named *and* stepped back from |
@@ -534,7 +534,7 @@ When an opaque emotion word (*anxious*, *resentful*, *proud*, …) is doing **ju
 | Piece | Agelan |
 |-------|---------|
 | Situation / judged host | ordinary NP / clause content |
-| Need + met / unmet (+ changeability) | ordinary [value](values.md) word on that host (`wodoloxul`, `wodoloxam`, …) |
+| Need + met / unmet (+ changeability) | ordinary [value](values.md) word on that host (`wodoloxur`, `wodoloxam`, …) |
 | Activation (arousal) | closed mood roots **HIGH** / **MED** / **LOW** under `/h/` (optional `/w/` on a preceding `/ɡ/`) |
 | Locus (where the charge is attributed) | closed mood roots **INTERNAL** / **EXTERNAL** / **CIRCUMSTANTIAL** under `/h/` (same `/w/` option) |
 
@@ -572,7 +572,7 @@ Parallel INTERNAL / CIRCUM cues: *flood bottled* / *flow held* / *still in the v
 
 | Agelan | Reading |
 |---------|---------|
-| `zezebel wodoloxul hogenal hagenal` | *anxious about the dialogue* → dialogue costs competence (temporary); flood; room awash (circumstantial) |
+| `zezebel wodoloxur hogenal hagenal` | *anxious about the dialogue* → dialogue costs competence (temporary); flood; room awash (circumstantial) |
 | `zawazal wogonoxum hogenal hoburol` | *resentful about the division* → unmet relatedness; flood poured onto them |
 | `zebunem wodoloxam hogenal habobol` | *proud of the draft* → met competence (mental channel); flood bottled (internal) |
 | `zemomel wogonoxum hozonol hoburol` | *resentful about the memo* → unmet relatedness; stillness pooling at them |
@@ -617,7 +617,7 @@ Plan vs predict is a **root choice**, not ability stance on a host. Ability comp
 <a id="decision"></a>
 <a id="decision-mood"></a>
 
-Mark **how revisable a pick is** — temporary / open / settled / not-revising-now — with one closed mood root. English *decide* / *I've decided* / *final decision* smuggles firmness; Agelan puts firmness on the ending.
+Mark **how revisable a pick is** — temporary / open / settled — with one closed mood root. English *decide* / *I've decided* / *final decision* smuggles firmness; Agelan puts firmness on the ending (same map as unmet values).
 
 **Shape:** floating **`/h/`** mood **`ehege`** ✅ *check* → *decision* (optional `/w/` when scoped only to a preceding `/ɡ/` — rare). Prefer floating `/h/`. Ending = [changeability](#decision-changeability) (same table as unmet values — **not** ability stance vowels).
 
@@ -632,14 +632,14 @@ gloss: `h-DECISION-modifiable`
 ```
 
 ```
-`… hehegen …`
+`… hehegel …`
 
 gloss: `h-DECISION-irreversible`
 
 *I've decided …* — settled / not taking it back
 ```
 
-Use **DECISION** when the clause is doing **pick firmness**. The choosing **act** stays [join-act **`von`**](#join-act-verbs) (*chooses as the one*). Intention detail stays [**PLAN**](#plan-predict). Autonomy-as-need stays [**`obola`**](values.md#need-inventory). *Can’t decide yet* on an activity host stays [ability](#ability) (`…xe…` / `…xo…` / …), not this mood. *Won’t decide* is refusal / choice packaging — not ability.
+Use **DECISION** when the clause is doing **pick firmness**. The choosing **act** stays [join-act **`von`**](#join-act-verbs) (*chooses as the one*). Intention detail stays [**PLAN**](#plan-predict). Autonomy-as-need stays [**`obola`**](values.md#need-inventory). *Can’t decide yet* on an activity host stays [ability](#ability) (`…xe…` / `…xo…` / …), not this mood. *Won’t decide* is refusal / choice packaging — not ability and not changeability **-r**.
 
 | English bundle | Prefer |
 |----------------|--------|
@@ -653,26 +653,26 @@ Use **DECISION** when the clause is doing **pick firmness**. The choosing **act*
 
 | Agelan | Reading |
 |---------|---------|
-| `… hehegel …` | decided **for now** (temporary) |
+| `… hehegel …` | decided; **irreversible** / settled |
 | `… hehegem …` | decided; **open to change** (or unknown) |
-| `… hehegen …` | decided; **irreversible** / settled |
-| `… heheger …` | decided; **won't revise now** (deferral) |
-| `zumogon dalenal von hehegen` | *I choose that path (only); settled* |
+| `… hehegen …` | decided; **proper** / named decision frame |
+| `… heheger …` | decided **for now** (temporary) |
+| `zumogon dalenal von hehegel` | *I choose that path (only); settled* |
 | `… howarom …` | intention detail — soft plan; not DECISION firmness |
 
-#### Endings — changeability only
+#### Endings — changeability (+ proper **-n**)
 <a id="decision-changeability"></a>
 
-On **`ehege`**, **-l / -m / -n / -r** are **changeability** — the same table as unmet values ([values.md § Changeability](values.md#value-changeability)). Not ability stance vowels, contact channel, preference standing, prescription force, COMMENT / NOTIONAL hold, or ordinary reference-suffix on this mood.
+On **`ehege`**, endings match unmet [changeability](values.md#value-changeability): **-l** irreversible, **-m** modifiable, **-n** proper, **-r** temporary. Not ability stance vowels, contact channel, preference standing, prescription force, COMMENT / NOTIONAL hold, or ordinary anaphor on this mood.
 
-| Ending | Form | Changeability | Reading |
-|--------|------|---------------|---------|
-| **-l** | **`hehegel`** | **temporary** | pick for this moment; usually revisable later |
+| Ending | Form | Job | Reading |
+|--------|------|-----|---------|
+| **-l** | **`hehegel`** | **irreversible** | settled / final as far as you can tell |
 | **-m** | **`hehegem`** | **modifiable** (soft default if unknown) | open to revision |
-| **-n** | **`hehegen`** | **irreversible** | settled / final as far as you can tell |
-| **-r** | **`heheger`** | **won't-now** | not revising *this turn* (deferral, not inability) |
+| **-n** | **`hehegen`** | **proper** | named / titled decision frame |
+| **-r** | **`heheger`** | **temporary** | pick for this moment; usually revisable later |
 
-**Settled vs won't-revise-now:** **-n** (irreversible) vs **-r** (won't-now). Always pick an ending on **DECISION**; unknown → **-m**.
+**No won’t-revise-now** ending — deferral stays ordinary packaging. Always pick an ending on **DECISION**; unknown → **-m**.
 
 DECISION is a **root choice**, not `xa`/`xu` polarity and not a mid-word **`x`** compound. It is not PLAN, not join-act **`von`**, not autonomy **`obola`**, and not ability *can’t decide*. Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)).
 

@@ -74,7 +74,7 @@ Agelan’s [values](values.md) name a closed inventory of **needs** (autonomy, c
 | Topic (bare need) | Name the payoff without claiming met/unmet |
 | Met (`xa`) | This serves the need — endings mark **how you contact** the payoff (including gratitude / savoring) |
 | Motive (`xe`) | Acting *for* this need — endings mark where the reason stands |
-| Prescription (`xo`) | *Ought* to serve or protect this need — endings mark invite → commit force |
+| Prescription (`xo`) | *Ought* to serve or protect this need — endings mark force (**-l** bound … **-r** invite) |
 | Unmet (`xu`) | Costs the need — endings mark how changeable that is |
 
 **Mnemonic:** name the need first; the stance vowel says *how you stand toward it*. Prefer met-forms for praise and gratitude.

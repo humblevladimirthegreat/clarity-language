@@ -166,8 +166,8 @@ On [value](values.md) compounds under `/h/` or `/w/` with an **`x`+a/e/o/u** sta
 |-------|----------------|
 | **`xa`** | **contact channel** (physical / mental / social / spiritual) |
 | **`xe`** | **preference standing** (circumstantial / internal / habitual / protective) |
-| **`xo`** | **prescription force** (invite / endorse / commit / bound) |
-| **`xu`** | **changeability** (temporary / modifiable / irreversible / won't-now) |
+| **`xo`** | **prescription force** (bound / endorse / commit / invite — **-l** hardest) |
+| **`xu`** | **changeability** (irreversible / modifiable / proper **-n** / temporary — no won’t-now) |
 
 Bare need words (no `x`-addition) are **topic** only and keep ordinary **-l / -m / -n / -r**. Details: [values.md](values.md).
 
@@ -177,7 +177,7 @@ On [ability](special-vocabulary.md#ability) compounds — **host + `x` + {a\|e\|
 
 ### Decision endings
 
-On [DECISION](special-vocabulary.md#decision) — closed mood **`ehege`** under `/h/` / `/w/` — **-l / -m / -n / -r** are the same **changeability** table (temporary / modifiable / irreversible / won't-now). No mid-word **`x`**. Details: [special-vocabulary.md § Decision](special-vocabulary.md#decision).
+On [DECISION](special-vocabulary.md#decision) — closed mood **`ehege`** under `/h/` / `/w/` — endings match unmet changeability: **-l** irreversible, **-m** modifiable, **-n** proper, **-r** temporary (no won’t-now). No mid-word **`x`**. Details: [special-vocabulary.md § Decision](special-vocabulary.md#decision).
 
 ### Role compounds
 

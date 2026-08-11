@@ -104,7 +104,7 @@ strict: *In other words, that one (A) lacks the capacity to walk.*
 
 loose: *In other words, they can't manage walking.*
 
-**C:** `x#e- zubezul g#1. zanan hazedoxul.`
+**C:** `x#e- zubezul g#1. zanan hazedoxur.`
 
 gloss: `x-starting-with` · `z-problem` · `g-first` · `z-interlocutors` · `h-pleasure-x-unmet`
 

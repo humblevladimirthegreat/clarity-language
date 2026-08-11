@@ -154,19 +154,19 @@ gloss: `h-relatedness-motive-internal`
 
 | Ending | Force | You are saying |
 |--------|--------|----------------|
-| **-l** | **invite** | Worth considering here |
+| **-l** | **bound** | Non-negotiable in this frame (hardest — same **-l** hardness as firm force / closed joins) |
 | **-m** | **endorse** | I stand behind this should (soft default if unknown) |
 | **-n** | **commit** | Holds as promise, role, or agreed standard |
-| **-r** | **bound** | Non-negotiable in this frame (boundary) |
+| **-r** | **invite** | Worth considering here (lightest) |
 
-**Mnemonic:** invite → endorse → commit → bound. Gloss **-r** as **boundary in-frame**, not “morally mandatory forever.” Always pick an ending on **`xo`**; unknown → **-m**.
+**Mnemonic:** **-l** locked / bound; **-r** light invite — matches language-wide **-l** hardness (`jal`, closed joins). Gloss **-l** as **bound in-frame**, not “morally mandatory forever.” Always pick an ending on **`xo`**; unknown → **-m**.
 
 | Form | Force |
 |------|--------|
-| `…xol` | **invite** |
+| `…xol` | **bound** |
 | `…xom` | **endorse** |
 | `…xon` | **commit** |
-| `…xor` | **bound** |
+| `…xor` | **invite** |
 
 ```
 `… hogonoxom.`
@@ -181,33 +181,33 @@ gloss: `h-relatedness-ought-endorse`
 ### Unmet (`xu`) — changeability
 <a id="value-changeability"></a>
 
-**`xu`** = host costs / subtracts from the need. Ending = **changeability** (temporariness / reversibility).
+**`xu`** = host costs / subtracts from the need. Ending = **changeability** (temporariness / reversibility), with **-n** reserved for **proper**.
 
-| Ending | Changeability | Mnemonic |
-|--------|---------------|----------|
-| **-l** | **temporary** — usually met; not this moment | closed *right-now* snapshot |
+| Ending | Job | Mnemonic |
+|--------|-----|----------|
+| **-l** | **irreversible** — fixed as far as you can tell | hard / locked (**-l**) |
 | **-m** | **modifiable** — effort or circumstance may change it (soft default if unknown) | open to change |
-| **-n** | **irreversible** — fixed as far as you can tell | settled |
-| **-r** | **won't-now** — choice or deferral, not inability | not updating *now* |
+| **-n** | **proper** — named / titled unmet frame | ordinary **n**ame |
+| **-r** | **temporary** — usually met; not this moment | light / this-moment only |
 
-**Can't vs won't:** **-n** irreversible vs **-r** won't-now. Always pick an ending on **`xu`**; unknown → **-m**.
+**No won’t-now** on changeability — deferral / “not updating this turn” stays ordinary packaging (same split as [ability](special-vocabulary.md#ability) *won’t*). Always pick an ending on **`xu`**; unknown grain → **-m**.
 
-| Form | Changeability |
-|------|---------------|
-| `…xul` | **temporary** |
+| Form | Reading |
+|------|---------|
+| `…xul` | **irreversible** |
 | `…xum` | **modifiable** |
-| `…xun` | **irreversible** |
-| `…xur` | **won't-now** |
+| `…xun` | **proper** |
+| `…xur` | **temporary** |
 
 ```
-`zazudol woboloxul.`
+`zazudol woboloxur.`
 
 gloss: `z-meeting` · `w-autonomy-unmet-temporary`
 
 *The meeting costs autonomy right now (temporary).*
 ```
 
-Same changeability table is reused on [DECISION](special-vocabulary.md#decision) (**`ehege`**). [Ability](special-vocabulary.md#ability) puts temporary / modifiable / irreversible *can’t* on stance vowels instead (**`xe` / `xo` / `xu`**) and keeps ordinary endings. Unmet competence (`hodoloxun`) is still a **need** claim — not “can’t competence.”
+Same changeability table is reused on [DECISION](special-vocabulary.md#decision) (**`ehege`**). [Ability](special-vocabulary.md#ability) puts temporary / modifiable / irreversible *can’t* on stance vowels instead (**`xe` / `xo` / `xu`**) and keeps ordinary endings. Unmet competence (`hodoloxul`) is still a **need** claim — not “can’t competence.”
 
 ### Which ending table?
 
@@ -242,11 +242,11 @@ Prefer **-m** on **`xu` / `xe` / `xo`** when that table’s dimension is unclear
 | `… hogonoxel` | motive relatedness; **circumstantial** |
 | `… hogonoxen` | motive relatedness; **habitual** |
 | `… hogonoxer` | motive relatedness; **protective** |
-| `… hogonoxol` | should relatedness; **invite** |
+| `… hogonoxol` | should relatedness; **bound** |
 | `… hogonoxon` | should relatedness; **commit** |
-| `… hogonoxor` | should relatedness; **bound** |
-| `… hogonoxun` | costs relatedness; **irreversible** |
-| `… hogonoxur` | costs relatedness; **won't address now** |
+| `… hogonoxor` | should relatedness; **invite** |
+| `… hogonoxul` | costs relatedness; **irreversible** |
+| `… hogonoxur` | costs relatedness; **temporary** |
 | `hegegel` | unspecified need (**topic** only) |
 
 ## Advanced
@@ -270,14 +270,14 @@ Competence (`odolo`) and relatedness (`ogono`) shown for readability; same endin
 
 #### Prescription — force
 
-| | **-l** invite | **-m** endorse | **-n** commit | **-r** bound |
-|--|---------------|----------------|---------------|--------------|
+| | **-l** bound | **-m** endorse | **-n** commit | **-r** invite |
+|--|--------------|----------------|---------------|----------------|
 | **xo** ought | `hogonoxol` | `hogonoxom` | `hogonoxon` | `hogonoxor` |
 
 #### Unmet — changeability
 
-| | **-l** temporary | **-m** modifiable | **-n** irreversible | **-r** won't-now |
-|--|------------------|-------------------|---------------------|------------------|
+| | **-l** irreversible | **-m** modifiable | **-n** proper | **-r** temporary |
+|--|---------------------|-------------------|---------------|------------------|
 | **xu** unmet | `hogonoxul` | `hogonoxum` | `hogonoxun` | `hogonoxur` |
 
 ### Boundaries
@@ -287,7 +287,7 @@ Competence (`odolo`) and relatedness (`ogono`) shown for readability; same endin
 - Ordinary **-l / -m** (literal / metaphorical) do not mean met / unmet on these compounds.
 - Value second halves are bare vowels **`a` / `e` / `o` / `u`** inside a compound — not prefix-less revisers (`al`, `ul`, …) and not restrictor joins (`hal`, …).
 - Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)).
-- **Incapability** compounds onto the **activity/property host** (`veguxul`) or fallback **`egera`** — [ability](special-vocabulary.md#ability) — not onto need compounds (`hodoloxun` remains unmet competence).
+- **Incapability** compounds onto the **activity/property host** (`veguxul`) or fallback **`egera`** — [ability](special-vocabulary.md#ability) — not onto need compounds (`hodoloxul` remains unmet competence).
 
 ### Design notes
 
