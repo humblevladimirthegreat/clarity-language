@@ -1,7 +1,7 @@
 # Special vocabulary
 <a id="special-vocabulary"></a>
 
-Closed morphology and mood roots that are **not** [values](values.md) and **not** [restrictors](restrictors.md) — ability, roles, plan / predict, evidentiality, emotion compose, and related forms. Mid-word **`x`** families: [x-compounds.md](x-compounds.md).
+Closed morphology and mood roots that are **not** [values](values.md) and **not** [restrictors](restrictors.md) — ability, roles, plan / predict, evidentiality, emotion compose, [viewpoint laterals](#viewpoint-laterals), and related forms. Mid-word **`x`** families: [x-compounds.md](x-compounds.md).
 
 ## Beginner
 <a id="beginner"></a>
@@ -262,6 +262,102 @@ These are **not** phrase named-list joins and **not** [restrictors](restrictors.
 | open vs without (causal) | `haon bazem` vs `huan bogulol` | sufficient hit vs necessary-style exclusion — [causation](causation.md) |
 
 Unary `/b/` only — restore list/empty arity on the **argument**, not by stacking bare `g*n` / `h*n` as fences. Only the **-n** exponent is content under `/ɡ/` / `/h/` for these roots.
+
+### Viewpoint laterals (`DIR` × anchor)
+<a id="viewpoint-laterals"></a>
+<a id="spatial-laterals"></a>
+<a id="my-left-your-left"></a>
+
+Name **whose left / right** you mean. Facing someone, bare *left* is a shared-frame trap — Agelan requires an explicit **viewpoint**.
+
+**Shape:** ordinary [compound](x-compounds.md) — direction root left of mid-word **`x`**, viewpoint root right of **`x`**, then an ordinary [reference ending](reference-suffix.md):
+
+```
+PoS + DIR + x + ANCHOR + {-l|-m|-n|-r}
+```
+
+| Piece | Role |
+|-------|------|
+| **PoS** | Slot as usual (`/ɡ/` property, `/h/` path / manner, `/z/` `/d/` `/b/` side-region, …) |
+| **DIR** | A **lateral** lexicon root (table below) |
+| **`x`** | Ordinary [compound joiner](phonology.md#phonotactics) |
+| **ANCHOR** | Whose facing counts — [special](pronouns.md#special-pronouns) **`umogo`** / **`ehado`** / **`ana`**, a name, or a content **-r** of a being that can face |
+| **Ending** | Ordinary reference-suffix senses on the **whole** direction word |
+
+**Mnemonic:** glue the side to a face — **`x`** = *whose eyes*. Parser family stays **ordinary** `ROOT…xROOT…` ([x-compounds.md](x-compounds.md)) — not role, value, ability, or numeric derivation.
+
+```
+`jel zehadon vawul hevedexehadon.`
+
+gloss: `j-command` · `z-listener` · `v-walk` · `h-left-listener`
+
+*You, walk left — your left.*
+```
+
+```
+`zohuzel gevedexumogon.`
+
+gloss: `z-room` · `g-left-speaker`
+
+*The room on my left.*
+```
+
+#### Lateral hosts (spatial use)
+
+These roots **require** a viewpoint **`x`+ANCHOR** when the sense is **space** (side, path, turn, region):
+
+| Root | Image | Spatial job |
+|------|-------|-------------|
+| **`evede`** | ⬅️ *left* | left |
+| **`amala`** | ➡️ *right* | right |
+| **`ebule`** | ↖️ *up-left* | up-left |
+| **`uduju`** | ↗️ *up-right* | up-right |
+| **`odewo`** | ↙️ *down-left* | down-left |
+| **`oduwo`** | ↘️ *down-right* | down-right |
+
+Bare spatial forms are **illegal** (`gevedel`, `hamalal`, `hevedel`, …). Prefer listener / name frames when facing someone (`…xehadon`, `…xazaman`) rather than silent speaker default.
+
+**Not covered by the ban:**
+
+| Use | Status |
+|-----|--------|
+| Published **metaphor** of the same root (`amala` → *progress* / discourse **`xamalal`**; `evede` → *return*; `odewo` → *retreat*; …) | Legal without viewpoint **`x`** |
+| Pure **vertical** / non-lateral arrows (`ububu` *up*, `owono` *down*, …) | Bare spatial OK |
+| Compass / heading root **`ogamo`** | Bare OK when not naming a body-relative side |
+
+#### Viewpoint vs landmark
+
+| Pattern | Job | Example |
+|---------|-----|---------|
+| **`DIR x ANCHOR`** | side in **ANCHOR’s** facing frame | `gevedexehadon` *listener-left* |
+| **complex `/ɡ/` + `/b/`** | region on a side **of a landmark** | `gevedexumogon beredel` *on my-left of the tree* |
+| Landmark **`/b/` alone** with bare DIR | Illegal for laterals — still needs viewpoint on DIR | — |
+
+The **`/b/`** argument is the landmark, not the viewpoint. Put the facing being after **`x`**; put the tree / door / wall in `/b/` when you need both.
+
+#### Endings and resume
+
+| Ending | Reading |
+|--------|---------|
+| **-l** | indefinite / kind side-region or unmarked path |
+| **-m** | soft / hedged frame |
+| **-n** | titled / conventional side label (rare) |
+| **-r** | resume the most recent matching **`DIR x …`** compound (same DIR stem), or the DIR half when that is the latest match — ordinary [pronoun](pronouns.md) rules |
+
+**Key contrasts:**
+
+| | Use |
+|--|-----|
+| `gevedexumogon` | *my left* (speaker facing) |
+| `gevedexehadon` | *your left* (listener facing) |
+| `gevedexanan` | *our left* (interlocutors sharing a facing) |
+| `gevedexazaman` | *Sam’s left* |
+| `gevedel` (spatial) | **illegal** |
+| `xamalal` | discourse *therefore* — metaphor, not spatial right |
+| Role `zaxozower` | participant — ROLE vowel left of **`x`**, not DIR |
+| Ability `veguxun` | stance vowel right of **`x`**, not a person root |
+
+Forward / back (`ovaro` / `agaja`) may reuse the same **`DIR x ANCHOR`** pattern when facing matters; they are not under the bare-lateral ban.
 
 ### Ability fallback (`egera`)
 <a id="ability-fallback"></a>
@@ -1145,6 +1241,7 @@ Unassigned or rare edges (not required for ordinary reading):
 - **Evidentiality / universality:** ending tables (confidence grain, soft vs committed warrant, …); full tense inventory stacking with channels; whether bare unmarked `hual` / `zual` implies COMMON or leaves warrant unspoken.
 - **Ability:** **`xe` / `xo`** on ability hosts (motive / prescription stay on [needs](values.md)); whose-ability / evidentiality on the denial; positive *can* forced on every clause.
 - **Role compounds:** ROLE **`e`** (reserved); instrument / beneficiary / recipient as extra ROLE vowels; role compounds under `/v/` `/h/` `/w/`; stacking role + ability (`axattackxu…`) — put ability on the bare event verb; *act done by entity* as a ROLE — resume verbs with ordinary **-r**, or use **`var`** for unnamed doing.
+- **Viewpoint laterals:** whether forward / back join the bare-ban inventory; absolute compass cards as titled **-n**; inanimate “facing” (screens, vehicles) as legal ANCHOR; forced listener frame under every command.
 - **Numeric derivation:** number endings / writing **`~` / `@` / `=`** on `NUM`; productive multi-digit scalar or ordinal morphs (`ROOTx+27`, `ROOTx#12`); bare digit morphs (`ROOTx1`); signed / end-relative ordinal morphs (`ROOTx#-2`); ordinal generation morphs (`ROOTx#3e2`); privative twin of ordinal **`#N`**; bare **`ROOTxe`** as essence; role **`e x ROOT`**; percent closers (**`jo` / `ju`**) as derivation morphs; digit-string morphs as phone-dial or discourse-list substitutes; scale-specific **`ROOTx±0eN`** for **`N≠1`**; **`ROOTx+e0`** / **`ROOTx+0e0`** / **`#0e0`** / **`ROOTx+Ne0`**; quasi-N beyond **`-e-1` / `-e-2`**.
 
 Judgment benchmarks (*worse than Average|…*) are NP comparees on comparative fences — [comparatives.md § Judgment benchmarks](comparatives.md#judgment-benchmarks). **Classification** and closed **`SAME`** identity live in [predication.md](predication.md). **Causation** reuses joins and join-relations — [causation.md](causation.md); **CAUSE** mood **`erage`** / **`heragem`** = mechanism framing (not NATURAL).
@@ -1154,12 +1251,13 @@ Judgment benchmarks (*worse than Average|…*) are NP comparees on comparative f
 - [values.md](values.md) — needs vs ability / DECISION / COMMENT / NOTIONAL / emotion compose
 - [coordination.md](coordination.md) — joins; soft **-n**; universals / domains
 - [restrictors.md](restrictors.md) — applicability vs join-relations / ability
-- [x-compounds.md](x-compounds.md) — mid-word **`x`** parser families
+- [x-compounds.md](x-compounds.md) — mid-word **`x`** parser families (viewpoint laterals = ordinary compound)
 - [numbers.md](numbers.md) — free numerals vs numeric derivation; [measure phrases](numbers.md#measure-phrases) (bare host vs **`ROOTx+1`** unit)
 - [causation.md](causation.md) — join-relation causal readings; factivity; preference as law
 - [comparatives.md](comparatives.md) — judgment benchmarks; normative Mine
 - [predication.md](predication.md) — classification / **`SAME`**
 - [spans.md](spans.md) — mention / cite vs join-relation stock labels
 - [plurality.md](plurality.md) — **-sh** on nouns / event-sets
-- [pronouns.md](pronouns.md) — content **-r** vs role **-r**
+- [pronouns.md](pronouns.md) — content **-r** vs role **-r**; specials as lateral ANCHOR
 - [revisers.md](revisers.md) — in-clause *including* vs join-relation *including*
+- [core.md](core.md) — complex `/ɡ/` + `/b/` landmark vs viewpoint **`x`**

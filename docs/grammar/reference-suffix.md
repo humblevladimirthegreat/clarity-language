@@ -183,6 +183,11 @@ On [DECISION](special-vocabulary.md#decision) — closed mood **`ehege`** under 
 
 On [role compounds](special-vocabulary.md#role-compounds) — **`{a\|u\|o} x ROOT`** (agent / patient / reltum) — endings keep **ordinary** reference-suffix senses. Mid-word **`x`** families: [x-compounds.md](x-compounds.md).
 
+### Viewpoint laterals
+<a id="viewpoint-laterals-endings"></a>
+
+On [viewpoint laterals](special-vocabulary.md#viewpoint-laterals) — **`DIR x ANCHOR`** — endings keep **ordinary** reference-suffix senses on the whole direction word (not value / ability tables).
+
 ### Join endings
 
 On [joins](coordination.md), the same letters are specialized again: phrase-level forms use **-l** / **-m** / **-n** for **closed** / **open** / **named** on join vowels (where allowed); **/ɡ/** **/h/** **-n** spellings are [join-relations](special-vocabulary.md#join-relations); VP **-n** is [join-act verbs](special-vocabulary.md#join-act-verbs); clause **-n** is soft packaging (*and then* **`xan`**). **-r** on **a** / **o** / **e** / **u** = [unspecified-member](coordination.md#unspecified-member-r-phrase). Prefix-less **al** / **am** / … are [revisers](revisers.md), not joins. Full detail: [coordination.md](coordination.md).
@@ -199,5 +204,6 @@ Clause joins and named discourse glue reuse the four ending letters with family-
 
 - [pronouns.md](pronouns.md) — anaphoric **-r**; special **`umogo`** / **`ehado`** / **`ana`** / **`enu`** / **`odo`**
 - [plurality.md](plurality.md) — **-sh** after the ending
+- [special-vocabulary.md § Viewpoint laterals](special-vocabulary.md#viewpoint-laterals) — **`DIR x ANCHOR`** (ordinary endings)
 - [core.md](core.md) — role letters and writing words
 - [core.md § Outside a sentence](core.md#citation-forms) — prefix-less citation (**-l** / **-m** / **-n** / **-r**)

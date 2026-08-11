@@ -17,7 +17,7 @@ Support self-acceptance and acceptance of others, and make judgments visible whe
 ### Rationality
 <a id="rationality"></a>
 
-Surface common biases that make self-delusion easy. Examples: mark how you know a claim — memory, record, hearsay, pattern, inference, … — and keep *I think* as [COMMENT](special-vocabulary.md#comment), not a warrant ([evidentiality](special-vocabulary.md#evidentiality)); say whether a choice list is open or closed so two options are not smuggled as the only ones ([joins](coordination.md)); keep habitual *always* as usual weather, not a law of nature ([universality](special-vocabulary.md#universality)); when the “must” is really an ought, stack [values](values.md) on the condition shape instead of upgrading a wish into natural law ([preference vs law](causation.md#preference-vs-law)).
+Surface common biases that make self-delusion easy. Examples: mark how you know a claim — memory, record, hearsay, pattern, inference, … — and keep *I think* as [COMMENT](special-vocabulary.md#comment), not a warrant ([evidentiality](special-vocabulary.md#evidentiality)); say whether a choice list is open or closed so two options are not smuggled as the only ones ([joins](coordination.md)); keep habitual *always* as usual weather, not a law of nature ([universality](special-vocabulary.md#universality)); when the “must” is really an ought, stack [values](values.md) on the condition shape instead of upgrading a wish into natural law ([preference vs law](causation.md#preference-vs-law)); name *whose left* so facing someone does not smuggle a shared frame ([viewpoint laterals](special-vocabulary.md#viewpoint-laterals)).
 
 ### Empowerment
 <a id="empowerment"></a>
@@ -125,6 +125,15 @@ It is easy to present two options as if they were the only ones possible.
 [Joins](coordination.md) mark what kind of list you are building (inventory, exclusive choice, inclusive *and/or*, rank, …) and whether the listed items are the **only** ones in play (**closed `-l`**) or still open (**`-m`**). Soft or open forms leave room for unlisted alternatives.
 
 Saying whether a list is open or closed helps you notice False Dichotomies — and leaves room for options you have not named yet.
+
+### Whose left — shared frames
+<a id="whose-left"></a>
+
+Facing someone, English *on the left* often assumes your facing is theirs.
+
+[Viewpoint laterals](special-vocabulary.md#viewpoint-laterals) force an explicit ANCHOR (`gevedexehadon` *your left*, `gevedexumogon` *my left*). Bare spatial left / right is illegal; discourse *therefore* (`xamalal`) stays a separate metaphorical reading of **`amala`**.
+
+Naming whose facing counts helps you catch perspective slips before you give a mirrored instruction.
 
 ### Causes, *if*, and preference-as-law
 <a id="causes-if-and-preference"></a>
