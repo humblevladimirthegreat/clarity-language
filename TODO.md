@@ -1,4 +1,5 @@
 # TODO
+review all grammar docs
 
 ## Unassigned number / derivation readings
 
@@ -58,9 +59,6 @@ setback responses:
 
 
 long term:
--parser
--web tools (overlay glosses)
+https://main.d2xds94zsgwptg.amplifyapp.com
 -local llm systematically review entire lexicon
--speed reading display
--text to speech
--vocab flashcard generator/system
+-vocab flashcard generator/system — [docs/proposals/vocab-flashcards.md](docs/proposals/vocab-flashcards.md)
