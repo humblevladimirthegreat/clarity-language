@@ -47,7 +47,7 @@ Six closed needs. Senses are fixed; lexicon roots are published. Ordinary conten
 3. **Optional `x`-addition** — stance vowel **`a` / `e` / `o` / `u`**. Mid-word **`x`** is the ordinary [compound joiner](phonology.md#phonotactics).
 4. **Ending** — on bare needs, ordinary [reference-suffix](reference-suffix.md); on compounds, the stance’s own table ([contact](#value-contact) / [preference](#value-preference) / [force](#value-force) / [changeability](#value-changeability)).
 
-### Topic and met
+### Stances
 <a id="value-stake"></a>
 
 Five ways of relating to a need. Vowels loosely echo [revisers](revisers.md) / joins (**a** additive, **e** soft, **o** exclusive-ish, **u** subtract) as a mnemonic only — value stances are not include / rather / instead / except.
@@ -60,7 +60,7 @@ Five ways of relating to a need. Vowels loosely echo [revisers](revisers.md) / j
 | **`xo`** | **Prescription (ought)** | Agent / situation **ought to act** so this need is served or protected |
 | **`xu`** | **Unmet / costs** | Host subtracts from this need |
 
-**Beginner focus:** bare **topic** and **`xa`** (met). Motive, prescription, and unmet are [Intermediate](#intermediate).
+**Beginner focus:** bare **topic**, **`xa`** (met), **`xo`** (ought), and **`xu`** (unmet). Motive **`xe`** is [Intermediate](#intermediate).
 
 **Bare need** (no `x`): topic only. Ending keeps ordinary reference-suffix senses (`hazedol` = pleasure topic).
 
@@ -114,6 +114,69 @@ gloss: `z-neighborhood` · `g-home` · `b-speaker` · `w-competence-met-physical
 
 Prefer **`xa`** for gratitude / praise. Values stay optional — you need not tax every clause.
 
+### Prescription (`xo`) — force
+<a id="value-force"></a>
+<a id="value-ought"></a>
+
+**`xo`** = *should* / *ought* — act so the need is served or protected, whether or not anyone is acting from it now. Ending = **prescription force** (how strongly you claim the ought). Not clause force (`jol`, …), not motive, not met/unmet.
+
+| Ending | Force | You are saying |
+|--------|--------|----------------|
+| **-l** | **bound** | Non-negotiable in this frame (hardest — same **-l** hardness as firm force / closed joins) |
+| **-m** | **endorse** | I stand behind this should (soft default if unknown) |
+| **-n** | **commit** | Holds as promise, role, or agreed standard |
+| **-r** | **invite** | Worth considering here (lightest) |
+
+**Mnemonic:** **-l** locked / bound; **-r** light invite — matches language-wide **-l** hardness (`jal`, closed joins). Gloss **-l** as **bound in-frame**, not “morally mandatory forever.” Always pick an ending on **`xo`**; unknown → **-m**.
+
+| Form | Force |
+|------|--------|
+| `…xol` | **bound** |
+| `…xom` | **endorse** |
+| `…xon` | **commit** |
+| `…xor` | **invite** |
+
+```
+`… hogonoxom.`
+
+gloss: `h-relatedness-ought-endorse`
+
+*… should serve/protect relatedness (endorse).*
+```
+
+**`xo`** is *should serve/protect X*. Motive **`xe`** (*am doing for X*) is [Intermediate](#value-preference). Prefer topic or multiple value words when you mean “this need (among others)” — not **`xo`** as exclusive pick.
+
+### Unmet (`xu`) — changeability
+<a id="value-changeability"></a>
+
+**`xu`** = host costs / subtracts from the need. Ending = **changeability** (temporariness / reversibility), with **-n** reserved for **proper**.
+
+| Ending | Job | Mnemonic |
+|--------|-----|----------|
+| **-l** | **irreversible** — fixed as far as you can tell | hard / locked (**-l**) |
+| **-m** | **modifiable** — effort or circumstance may change it (soft default if unknown) | open to change |
+| **-n** | **proper** — named / titled unmet frame | ordinary **n**ame |
+| **-r** | **temporary** — usually met; not this moment | light / this-moment only |
+
+**No won’t-now** on changeability — deferral / “not updating this turn” stays ordinary packaging (same split as [ability](ability.md#ability) *won’t*). Always pick an ending on **`xu`**; unknown grain → **-m**.
+
+| Form | Reading |
+|------|---------|
+| `…xul` | **irreversible** |
+| `…xum` | **modifiable** |
+| `…xun` | **proper** |
+| `…xur` | **temporary** |
+
+```
+`zazudol woboloxur.`
+
+gloss: `z-meeting` · `w-autonomy-unmet-temporary`
+
+*The meeting costs autonomy right now (temporary).*
+```
+
+Unmet competence (`hodoloxul`) is still a **need** claim — not “can’t competence.” [Ability](ability.md#ability) puts temporary / modifiable / irreversible *can’t* on stance vowels instead.
+
 ## Intermediate
 <a id="intermediate"></a>
 
@@ -146,68 +209,9 @@ gloss: `h-relatedness-motive-internal`
 *… for relatedness (internal reason).*
 ```
 
-### Prescription (`xo`) — force
-<a id="value-force"></a>
-<a id="value-ought"></a>
+**Motive vs prescription:** **`xe`** = *am doing for X*; **`xo`** = *should serve/protect X*.
 
-**`xo`** = *should* / *ought* — act so the need is served or protected, whether or not anyone is acting from it now. Ending = **prescription force** (how strongly you claim the ought). Not clause force (`jol`, …), not motive, not met/unmet.
-
-| Ending | Force | You are saying |
-|--------|--------|----------------|
-| **-l** | **bound** | Non-negotiable in this frame (hardest — same **-l** hardness as firm force / closed joins) |
-| **-m** | **endorse** | I stand behind this should (soft default if unknown) |
-| **-n** | **commit** | Holds as promise, role, or agreed standard |
-| **-r** | **invite** | Worth considering here (lightest) |
-
-**Mnemonic:** **-l** locked / bound; **-r** light invite — matches language-wide **-l** hardness (`jal`, closed joins). Gloss **-l** as **bound in-frame**, not “morally mandatory forever.” Always pick an ending on **`xo`**; unknown → **-m**.
-
-| Form | Force |
-|------|--------|
-| `…xol` | **bound** |
-| `…xom` | **endorse** |
-| `…xon` | **commit** |
-| `…xor` | **invite** |
-
-```
-`… hogonoxom.`
-
-gloss: `h-relatedness-ought-endorse`
-
-*… should serve/protect relatedness (endorse).*
-```
-
-**Motive vs prescription:** **`xe`** = *am doing for X*; **`xo`** = *should serve/protect X*. Prefer topic, motive, or multiple value words when you mean “this need (among others)” — not **`xo`** as exclusive pick.
-
-### Unmet (`xu`) — changeability
-<a id="value-changeability"></a>
-
-**`xu`** = host costs / subtracts from the need. Ending = **changeability** (temporariness / reversibility), with **-n** reserved for **proper**.
-
-| Ending | Job | Mnemonic |
-|--------|-----|----------|
-| **-l** | **irreversible** — fixed as far as you can tell | hard / locked (**-l**) |
-| **-m** | **modifiable** — effort or circumstance may change it (soft default if unknown) | open to change |
-| **-n** | **proper** — named / titled unmet frame | ordinary **n**ame |
-| **-r** | **temporary** — usually met; not this moment | light / this-moment only |
-
-**No won’t-now** on changeability — deferral / “not updating this turn” stays ordinary packaging (same split as [ability](special-vocabulary.md#ability) *won’t*). Always pick an ending on **`xu`**; unknown grain → **-m**.
-
-| Form | Reading |
-|------|---------|
-| `…xul` | **irreversible** |
-| `…xum` | **modifiable** |
-| `…xun` | **proper** |
-| `…xur` | **temporary** |
-
-```
-`zazudol woboloxur.`
-
-gloss: `z-meeting` · `w-autonomy-unmet-temporary`
-
-*The meeting costs autonomy right now (temporary).*
-```
-
-Same changeability table is reused on [DECISION](special-vocabulary.md#decision) (**`ehege`**). [Ability](special-vocabulary.md#ability) puts temporary / modifiable / irreversible *can’t* on stance vowels instead (**`xe` / `xo` / `xu`**) and keeps ordinary endings. Unmet competence (`hodoloxul`) is still a **need** claim — not “can’t competence.”
+Same changeability table as unmet **`xu`** is reused on [DECISION](plan-decision.md#decision) (**`ehege`**). [Ability](ability.md#ability) puts temporary / modifiable / irreversible *can’t* on stance vowels instead (**`xe` / `xo` / `xu`**) and keeps ordinary endings.
 
 ### Which ending table?
 
@@ -287,18 +291,19 @@ Competence (`odolo`) and relatedness (`ogono`) shown for readability; same endin
 - Ordinary **-l / -m** (literal / metaphorical) do not mean met / unmet on these compounds.
 - Value second halves are bare vowels **`a` / `e` / `o` / `u`** inside a compound — not prefix-less revisers (`al`, `ul`, …) and not restrictor joins (`hal`, …).
 - Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)).
-- **Incapability** compounds onto the **activity/property host** (`veguxul`) or fallback **`egera`** — [ability](special-vocabulary.md#ability) — not onto need compounds (`hodoloxul` remains unmet competence).
+- **Incapability** compounds onto the **activity/property host** (`veguxul`) or fallback **`egera`** — [ability](ability.md#ability) — not onto need compounds (`hodoloxul` remains unmet competence).
 
 ### Design notes
 
 - **Emotion compose** reuses this ascription — [special-vocabulary.md § Emotion compose](special-vocabulary.md#emotion-compose).
-- **COMMENT** / mindfulness noting — [special-vocabulary.md § Comment](special-vocabulary.md#comment); closed **`uho`** + [hold endings](special-vocabulary.md#comment-hold); not contact-channel endings on **`xa`**.
-- **NOTIONAL** / as-if framing — [special-vocabulary.md § Notional](special-vocabulary.md#notional); closed **`edahe`** + same hold map; not free number notional forms.
-- **DECISION** / pick firmness — [special-vocabulary.md § Decision](special-vocabulary.md#decision); closed **`ehege`** + [changeability](special-vocabulary.md#decision-changeability); not unmet-need **`xu`**, not ability, not PLAN.
-- **PLAN** / intention map resolution — [special-vocabulary.md § Plan](special-vocabulary.md#plan-predict); closed **`owaro`** + [map resolution](special-vocabulary.md#plan-map-resolution) (sketch / itinerary / fork / proper); not DECISION, not PREDICT.
+- **COMMENT** / mindfulness noting — [commentary.md § Comment](commentary.md#comment); closed **`uho`** + [hold endings](commentary.md#comment-hold); not contact-channel endings on **`xa`**.
+- **NOTIONAL** / as-if framing — [commentary.md § Notional](commentary.md#notional); closed **`edahe`** + same hold map; not free number notional forms.
+- **DECISION** / pick firmness — [plan-decision.md § Decision](plan-decision.md#decision); closed **`ehege`** + [changeability](plan-decision.md#decision-changeability); not unmet-need **`xu`**, not ability, not PLAN.
+- **PLAN** / intention map resolution — [plan-decision.md § Plan](plan-decision.md#plan-predict); closed **`owaro`** + [map resolution](plan-decision.md#plan-map-resolution) (sketch / itinerary / fork / proper); not DECISION, not PREDICT.
 - Whose-need / care direction on prescription, and forced listener / third-person possessives, stay optional later dimensions.
 
 ## See also
 
 - Applicability *when* (not a need stance): [restrictors.md](restrictors.md)
-- Ability **`xa` / `xe` / `xo` / `xu`** and other closed mood (not needs): [special-vocabulary.md](special-vocabulary.md)
+- Ability **`xa` / `xe` / `xo` / `xu`**: [ability.md](ability.md)
+- COMMENT / NOTIONAL: [commentary.md](commentary.md)

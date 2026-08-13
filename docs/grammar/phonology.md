@@ -75,7 +75,7 @@ A content word has these parts, written as **one unbroken token**:
 
 ### Mid-word `x` families (pointer)
 
-Ordinary compounds include lexicon sense-compounds, [values](values.md), [ability](special-vocabulary.md#ability), [role compounds](special-vocabulary.md#role-compounds) (**`a`/`u`/`o` x ROOT**), [viewpoint laterals](special-vocabulary.md#viewpoint-laterals) (**`DIR x ANCHOR`**), [numeric derivation](special-vocabulary.md#numeric-derivation) (**`ROOT x NUM`**), and compact [phrasal proper names](reference-suffix.md#phrasal-proper-names). Mid-word **`x`** also appears in closed [span fences](spans.md). Full table: [x-compounds.md](x-compounds.md).
+Ordinary compounds include lexicon sense-compounds, [values](values.md), [ability](ability.md#ability), [role compounds](roles.md#role-compounds) (**`a`/`u`/`o` x ROOT**), [viewpoint laterals](roles.md#viewpoint-laterals) (**`DIR x ANCHOR`**), [numeric derivation](numeric-derivation.md#numeric-derivation) (**`ROOT x NUM`**), and compact [phrasal proper names](reference-suffix.md#phrasal-proper-names). Mid-word **`x`** also appears in closed [span fences](spans.md). Full table: [x-compounds.md](x-compounds.md).
 
 ### Number-word exception
 <a id="number-word-exception"></a>

@@ -41,20 +41,23 @@ Read **`docs/grammar/`** only, in band order. [why-agelan.md](../grammar/why-age
 1. [why-agelan.md](../grammar/why-agelan.md) — psychological purpose, limits, feature criteria, benefit tour (not a learning band)
 2. [introduction.md](../grammar/introduction.md) — name, grammar design, how to learn
 3. [core.md Beginner](../grammar/core.md#beginner)
-4. [phonology.md Beginner](../grammar/phonology.md#beginner) (letters / word edges; optional early)
-5. [reference-suffix.md Beginner](../grammar/reference-suffix.md#beginner)
-6. [pronouns.md](../grammar/pronouns.md#beginner) · [plurality.md](../grammar/plurality.md#beginner)
-7. [predication.md](../grammar/predication.md#beginner)
-8. [coordination.md](../grammar/coordination.md#beginner)
-9. [questions.md](../grammar/questions.md#beginner)
-10. [revisers.md](../grammar/revisers.md#beginner) · [restrictors.md](../grammar/restrictors.md#beginner)
-11. [spans.md](../grammar/spans.md#beginner)
-12. [numbers.md](../grammar/numbers.md#beginner) · [comparatives.md](../grammar/comparatives.md#beginner) · [causation.md](../grammar/causation.md#beginner)
-13. [values.md](../grammar/values.md#beginner) · [special-vocabulary.md](../grammar/special-vocabulary.md#beginner) · [x-compounds.md](../grammar/x-compounds.md#beginner)
+4. [vowel-series.md](../grammar/vowel-series.md#beginner) (one-screen map; not a new morph)
+5. [phonology.md Beginner](../grammar/phonology.md#beginner) (letters / word edges; optional early)
+6. [reference-suffix.md Beginner](../grammar/reference-suffix.md#beginner)
+7. [pronouns.md](../grammar/pronouns.md#beginner) · [plurality.md](../grammar/plurality.md#beginner)
+8. [predication.md](../grammar/predication.md#beginner)
+9. [coordination.md](../grammar/coordination.md#beginner)
+10. [questions.md](../grammar/questions.md#beginner)
+11. [revisers.md](../grammar/revisers.md#beginner) · [restrictors.md](../grammar/restrictors.md#beginner)
+12. [spans.md](../grammar/spans.md#beginner)
+13. [numbers.md](../grammar/numbers.md#beginner) · [comparatives.md](../grammar/comparatives.md#beginner) · [causation.md](../grammar/causation.md#beginner)
+14. [values.md](../grammar/values.md#beginner) · [ability.md](../grammar/ability.md#beginner) · [commentary.md](../grammar/commentary.md#beginner) · [roles.md](../grammar/roles.md#beginner) · [x-compounds.md](../grammar/x-compounds.md#beginner)
+
+Numbers Intermediate / Advanced and [numeric-derivation.md](../grammar/numeric-derivation.md) are **optional** — not required to finish a first dialogue corpus. [join-extras.md](../grammar/join-extras.md), [plan-decision.md](../grammar/plan-decision.md), and leftover [special-vocabulary.md](../grammar/special-vocabulary.md) start at Intermediate (no Beginner slot).
 
 ### Intermediate then Advanced
 
-14. Every peer’s **[Intermediate](../grammar/core.md#intermediate)** section (same dependency order as above is fine).
-15. Every peer’s **Advanced** section.
+15. Every peer’s **[Intermediate](../grammar/core.md#intermediate)** section (same dependency order as above is fine). Skip pages with no Intermediate (vowel-series). Numbers Intermediate and leftover join / plan / overlay pages belong here.
+16. Every peer’s **Advanced** section. Numbers Advanced and [numeric-derivation.md](../grammar/numeric-derivation.md) stay **optional**.
 
 Learner-facing reading order: site sidebar (**Suggested reading order**); banding notes: [introduction.md § How to learn](../grammar/introduction.md#how-to-learn).

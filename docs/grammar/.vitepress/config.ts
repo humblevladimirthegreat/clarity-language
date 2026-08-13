@@ -9,6 +9,7 @@ const readingOrder = [
   { text: 'Why Agelan', link: '/' },
   { text: 'Introduction', link: '/introduction' },
   { text: 'Core', link: '/core' },
+  { text: 'Vowel series', link: '/vowel-series' },
   { text: 'Phonology', link: '/phonology' },
   { text: 'Reference suffix', link: '/reference-suffix' },
   { text: 'Pronouns', link: '/pronouns' },
@@ -23,8 +24,14 @@ const readingOrder = [
   { text: 'Comparatives', link: '/comparatives' },
   { text: 'Causation', link: '/causation' },
   { text: 'Values', link: '/values' },
-  { text: 'Special vocabulary', link: '/special-vocabulary' },
+  { text: 'Ability', link: '/ability' },
+  { text: 'Commentary', link: '/commentary' },
+  { text: 'Roles', link: '/roles' },
   { text: 'x-compounds', link: '/x-compounds' },
+  { text: 'Join extras', link: '/join-extras' },
+  { text: 'Plan / decision', link: '/plan-decision' },
+  { text: 'Special vocabulary', link: '/special-vocabulary' },
+  { text: 'Numeric derivation', link: '/numeric-derivation' },
 ]
 
 export default defineConfig({

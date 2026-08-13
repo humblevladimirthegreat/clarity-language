@@ -34,12 +34,12 @@ After the PoS prefix, look at what sits **left** and **right** of the first mid-
 | Shape (after PoS) | Family | Details |
 |-------------------|--------|---------|
 | **`VOWEL x VOWEL`** + ending | **[Span fence](spans.md)** | TYPE **a** / **e** / **o** / **u** then EDGE **a** / **e** / **o** / **u**; exact **`xuxul`** / **`xuxur`** / **`xuxun`** / **`xuxum`** = close |
-| **`VOWEL x ROOT…`** + ending | **[Role compound](special-vocabulary.md#role-compounds)** | ROLE **`a`** / **`u`** / **`o`** then event or relation root; **`e`** reserved |
-| **`ROOT… x VOWEL`** + ending | **[Values](values.md)** or **[ability](special-vocabulary.md#ability)** | Need root + **`a`/`e`/`o`/`u`** → values; other root + **`xa`/`xe`/`xo`/`xu`** → ability |
-| **`ROOT… x NUM…`** + ending | **[Numeric derivation](special-vocabulary.md#numeric-derivation)** | Right half matches [number](numbers.md) stem grammar **without** its own ending (marker **`+`/`-`/`#`/`_`**, digitless exp including label **`_e`/`_e-`**, hyperbole, [zero × exp](numbers.md#zero-exponent) **`+0e`/`±0e-1`/`#0e`**, label digits, scalar digit morph **`+N`/`-N`**, or ordinal digit morph **`#N`** — not free end-relative **`#-`** / generation / **`Ne0`** assert morphs; no **`ROOTx+e0`/`+0e0`**) |
-| **`ROOT… x ROOT…`** + ending | **Ordinary compound** | Lexicon sense-compounds; [phrasal proper names](reference-suffix.md#phrasal-proper-names) (`zozohuxalenan`); [viewpoint laterals](special-vocabulary.md#viewpoint-laterals) (`gevedexehadon` *your left*) |
+| **`VOWEL x ROOT…`** + ending | **[Role compound](roles.md#role-compounds)** | ROLE **`a`** / **`u`** / **`o`** then event or relation root; **`e`** reserved |
+| **`ROOT… x VOWEL`** + ending | **[Values](values.md)** or **[ability](ability.md#ability)** | Need root + **`a`/`e`/`o`/`u`** → values; other root + **`xa`/`xe`/`xo`/`xu`** → ability |
+| **`ROOT… x NUM…`** + ending | **[Numeric derivation](numeric-derivation.md#numeric-derivation)** | Right half matches [number](numbers.md) stem grammar **without** its own ending (marker **`+`/`-`/`#`/`_`**, digitless exp including label **`_e`/`_e-`**, hyperbole, [zero × exp](numbers.md#zero-exponent) **`+0e`/`±0e-1`/`#0e`**, label digits, scalar digit morph **`+N`/`-N`**, or ordinal digit morph **`#N`** — not free end-relative **`#-`** / generation / **`Ne0`** assert morphs; no **`ROOTx+e0`/`+0e0`**) |
+| **`ROOT… x ROOT…`** + ending | **Ordinary compound** | Lexicon sense-compounds; [phrasal proper names](reference-suffix.md#phrasal-proper-names) (`zozohuxalenan`); [viewpoint laterals](roles.md#viewpoint-laterals) (`gevedexehadon` *your left*) |
 
-No open content root is a **bare single vowel**, so a single vowel **left** of `x` is never an ordinary host root. Spans are the only family with a **single vowel right** of `x` (EDGE); role compounds put a full **`V(CV)+`** root there. Numeric **`NUM`** is a PoS-less number stem — [numeric derivation](special-vocabulary.md#numeric-derivation). Running-text / citation examples prefer spelled CV (`…xraba…`); inventory tables may keep shorthand — [writing style](numbers.md#writing-style-numeric-vs-spelled).
+No open content root is a **bare single vowel**, so a single vowel **left** of `x` is never an ordinary host root. Spans are the only family with a **single vowel right** of `x` (EDGE); role compounds put a full **`V(CV)+`** root there. Numeric **`NUM`** is a PoS-less number stem — [numeric derivation](numeric-derivation.md#numeric-derivation). Running-text / citation examples prefer spelled CV (`…xraba…`); inventory tables may keep shorthand — [writing style](numbers.md#writing-style-numeric-vs-spelled).
 
 ### Decision order
 
@@ -61,11 +61,14 @@ Stacked vowels on TYPE/EDGE/ROLE are **not** used: role ROLE is one of **`a`** /
 |-------|---------|
 | Bare **`ROOT x e`** | Stance **`xe`** (values motive **or** ability temporary *can’t*) — **not** infinity-essence |
 | Bare **`ROOT x o`** | Stance **`xo`** (values prescription **or** ability modifiable *can’t*) — **not** a ROLE |
-| Essence | Scalar digitless exp **`ROOTx+e`** — [numeric derivation](special-vocabulary.md#numeric-derivation) |
+| Essence | Scalar digitless exp **`ROOTx+e`** — [numeric derivation](numeric-derivation.md#numeric-derivation) |
 | **`e x ROOT`** | Reserved (undefined ROLE) — not a fourth role vowel |
-| Lateral **`DIR x ANCHOR`** | Ordinary compound with closed spatial reading — [viewpoint laterals](special-vocabulary.md#viewpoint-laterals); bare spatial `gevedel` illegal |
+| Lateral **`DIR x ANCHOR`** | Ordinary compound with closed spatial reading — [viewpoint laterals](roles.md#viewpoint-laterals); bare spatial `gevedel` illegal |
 
 ## See also
 
 - Word-initial **`x`** discourse role: [core.md](core.md#discourse-markers-x)
 - Phonotactics of mid-word **`x`**: [phonology.md](phonology.md#phonotactics)
+- Ability / values stance: [ability.md](ability.md) / [values.md](values.md)
+- Role compounds / laterals: [roles.md](roles.md)
+- Numeric derivation: [numeric-derivation.md](numeric-derivation.md)

@@ -1,0 +1,196 @@
+# Roles and viewpoints
+<a id="roles"></a>
+
+Name event participants (*fighter*, *the one fought*) and **whose** left / right you mean.
+
+## Beginner
+<a id="beginner"></a>
+
+### Role compounds (`a` / `u` / `o` × root)
+<a id="role-compounds"></a>
+<a id="participant-compounds"></a>
+<a id="agent-patient-reltum"></a>
+
+Name an **event or relation participant** (*fighter*, *the one fought*, *that bond-argument*) without open lexicon role nouns.
+
+**Shape:** ROLE vowel **left** of `x` — opposite order from [values](values.md) / [ability](ability.md#ability) (those put the stance vowel **right** of `x`):
+
+```
+PoS + {a|u|o} + x + ROOT + {-l|-m|-n|-r}
+```
+
+| Piece | Role |
+|-------|------|
+| **PoS** | Prefer `/z/` `/d/` `/b/` (entity participant). `/ɡ/` optional as classifying property; `/v/` `/h/` `/w/` undefined |
+| **ROLE** | Single vowel **`a`** / **`u`** / **`o`** (not a content root) |
+| **`x`** | Ordinary [compound joiner](phonology.md#phonotactics) |
+| **ROOT** | Event stem (**`a`/`u`**) or relation stem (**`o`**) — `V(CV)+` |
+| **Ending** | Ordinary [reference-suffix](reference-suffix.md) senses — not value/ability ending tables |
+
+**Mnemonic:** **`a`** ≈ additive / doer; **`u`** ≈ subtractive / undergoer; **`o`** ≈ oblique / `/b/` pole — vowel echo only, not reviser or join readings. Mid-word **`x`** map: [x-compounds.md](x-compounds.md).
+
+**Parser cue:** after PoS, a single vowel then `x` then a **longer** root + ending → role compound. Same shape with a **single** vowel after `x` → [span](spans.md), not role. **`e x …`** is reserved (undefined) — not a fourth ROLE.
+
+| ROLE | Form | ROOT type | Referent |
+|------|------|-----------|----------|
+| **`a`** | `…axROOT…` | **event** (verb / event noun stem) | **agent** — doer / subject-like participant of that event |
+| **`u`** | `…uxROOT…` | **event** | **patient** — undergoer / object-like participant of that event |
+| **`o`** | `…oxROOT…` | **relation** (complex `/ɡ/` / `/h/` / [join-relation](join-extras.md#join-relations) root, …) | **reltum** — the `/b/` argument pole of that relation |
+
+Recipients, beneficiaries, topic NPs, and other adjunct `/b/`s stay ordinary resume of that `/b/` noun (or the `/h/`+`/b/` unit).
+
+#### Endings
+
+| Ending | Reading |
+|--------|---------|
+| **-l** | Indefinite / kind — *a fighter*, *fighters as a type* (`zaxozowel`) |
+| **-m** | Soft / hedged role |
+| **-n** | Titled / epithet role label (rare) |
+| **-r** | Definite — participant of the **most recent matching** event (**`a`/`u`**) or relation (**`o`**) for that ROOT |
+
+**-r** resolution: match ROOT to the most recent verb, event noun, or relation word with that stem (including a ROOT half inside a prior role compound). ROLE picks that frame’s agent, patient, or `/b/` pole — including when the participant was only introduced as [unspecified-member](coordination.md#unspecified-member-r-phrase) **`zar`** / **`dar`** / ….
+
+Bare event noun stays the event: `zozowel` / `zozower` = *an / that fight*, not a participant. Cross-PoS content **-r** from a verb still resumes the [event](pronouns.md), not the agent — use **`ax`/`ux`** for participants.
+
+```
+`zar dumogon vozowel.`
+`zaxozower vurunul.`
+
+gloss: `z-someone` · `d-me` · `v-conflict` · `z-conflict-agent-r` · `v-run`
+
+*Someone fought me. The fighter fled.*
+```
+
+| Agelan | Gloss |
+|---------|--------|
+| `zaxozowel` | *a fighter* (kind; no discourse event required) |
+| `duxozower` | *the one fought* (as object now) |
+| `zoxogonor` | *that bond-argument* (reltum of salient `…ogonol b-…`) |
+| `zozower` | *that fight* (event — not agent) |
+
+**Key contrasts:**
+
+| | Use |
+|--|-----|
+| Role compound | Participant derived from event/relation root |
+| Content **-r** on event | The event / doing itself ([pronouns](pronouns.md)) |
+| **`zar`** / **`dar`** | Unspecified member introduce; prefer role **-r** once the event is named |
+| Ability `vozowexul` | Can’t fight (fixed) — **ROOT x vowel**, not ROLE vowel left of `x` |
+| Span `daxal` / `duxal` | Quote / opaque open — **vowel x vowel**, not ROLE x root |
+
+ROLE is **`a`/`u`/`o`** only; wrong ROOT type for a ROLE is illegal. Plural **-sh** on noun-slot role compounds follows ordinary [plurality](plurality.md) for that PoS.
+
+## Intermediate
+<a id="intermediate"></a>
+
+### Viewpoint laterals (`DIR` × anchor)
+<a id="viewpoint-laterals"></a>
+<a id="spatial-laterals"></a>
+<a id="my-left-your-left"></a>
+
+Name **whose left / right** you mean. Facing someone, bare *left* is a shared-frame trap — Agelan requires an explicit **viewpoint**.
+
+**Shape:** ordinary [compound](x-compounds.md) — direction root left of mid-word **`x`**, viewpoint root right of **`x`**, then an ordinary [reference ending](reference-suffix.md):
+
+```
+PoS + DIR + x + ANCHOR + {-l|-m|-n|-r}
+```
+
+| Piece | Role |
+|-------|------|
+| **PoS** | Slot as usual (`/ɡ/` property, `/h/` path / manner, `/z/` `/d/` `/b/` side-region, …) |
+| **DIR** | A **lateral** lexicon root (table below) |
+| **`x`** | Ordinary [compound joiner](phonology.md#phonotactics) |
+| **ANCHOR** | Whose facing counts — [special](pronouns.md#special-pronouns) **`umogo`** / **`ehado`** / **`ana`**, a name, or a content **-r** of a being that can face |
+| **Ending** | Ordinary reference-suffix senses on the **whole** direction word |
+
+**Mnemonic:** glue the side to a face — **`x`** = *whose eyes*. Parser family stays **ordinary** `ROOT…xROOT…` ([x-compounds.md](x-compounds.md)) — not role, value, ability, or numeric derivation.
+
+```
+`jel zehadon vawul hevedexehadon.`
+
+gloss: `j-command` · `z-listener` · `v-walk` · `h-left-listener`
+
+*You, walk left — your left.*
+```
+
+```
+`zohuzel gevedexumogon.`
+
+gloss: `z-room` · `g-left-speaker`
+
+*The room on my left.*
+```
+
+#### Lateral hosts (spatial use)
+
+These roots **require** a viewpoint **`x`+ANCHOR** when the sense is **space** (side, path, turn, region):
+
+| Root | Image | Spatial job |
+|------|-------|-------------|
+| **`evede`** | ⬅️ *left* | left |
+| **`amala`** | ➡️ *right* | right |
+| **`ebule`** | ↖️ *up-left* | up-left |
+| **`uduju`** | ↗️ *up-right* | up-right |
+| **`odewo`** | ↙️ *down-left* | down-left |
+| **`oduwo`** | ↘️ *down-right* | down-right |
+
+Bare spatial forms are **illegal** (`gevedel`, `hamalal`, `hevedel`, …). Prefer listener / name frames when facing someone (`…xehadon`, `…xazawan`) rather than silent speaker default.
+
+**Not covered by the ban:**
+
+| Use | Status |
+|-----|--------|
+| Published **metaphor** of the same root (`amala` → *progress* / discourse **`xamalal`**; `evede` → *return*; `odewo` → *retreat*; …) | Legal without viewpoint **`x`** |
+| Pure **vertical** / non-lateral arrows (`ububu` *up*, `owono` *down*, …) | Bare spatial OK |
+| Compass / heading root **`ogamo`** | Bare OK when not naming a body-relative side |
+
+#### Viewpoint vs landmark
+
+| Pattern | Job | Example |
+|---------|-----|---------|
+| **`DIR x ANCHOR`** | side in **ANCHOR’s** facing frame | `gevedexehadon` *listener-left* |
+| **complex `/ɡ/` + `/b/`** | region on a side **of a landmark** | `gevedexumogon beredel` *on my-left of the tree* |
+| Landmark **`/b/` alone** with bare DIR | Illegal for laterals — still needs viewpoint on DIR | — |
+
+The **`/b/`** argument is the landmark, not the viewpoint. Put the facing being after **`x`**; put the tree / door / wall in `/b/` when you need both.
+
+#### Endings and resume
+
+| Ending | Reading |
+|--------|---------|
+| **-l** | indefinite / kind side-region or unmarked path |
+| **-m** | soft / hedged frame |
+| **-n** | titled / conventional side label (rare) |
+| **-r** | resume the most recent matching **`DIR x …`** compound (same DIR stem), or the DIR half when that is the latest match — ordinary [pronoun](pronouns.md) rules |
+
+**Key contrasts:**
+
+| | Use |
+|--|-----|
+| `gevedexumogon` | *my left* (speaker facing) |
+| `gevedexehadon` | *your left* (listener facing) |
+| `gevedexanan` | *our left* (interlocutors sharing a facing) |
+| `gevedexazawan` | *Azawan’s left* |
+| `gevedel` (spatial) | **illegal** |
+| `xamalal` | discourse *therefore* — metaphor, not spatial right |
+| Role `zaxozower` | participant — ROLE vowel left of **`x`**, not DIR |
+| Ability `veguxul` | stance vowel right of **`x`**, not a person root |
+
+Forward / back (`ovaro` / `agaja`) may reuse the same **`DIR x ANCHOR`** pattern when facing matters; they are not under the bare-lateral ban.
+
+## Advanced
+<a id="advanced"></a>
+
+### Design notes
+
+Unassigned or rare edges (not required for ordinary reading):
+
+- **Role compounds:** ROLE **`e`** (reserved); instrument / beneficiary / recipient as extra ROLE vowels; role compounds under `/v/` `/h/` `/w/`; stacking role + ability — put ability on the bare event verb; *act done by entity* as a ROLE — resume verbs with ordinary **-r**, or use **`var`** for unnamed doing.
+- **Viewpoint laterals:** whether forward / back join the bare-ban inventory; absolute compass cards as titled **-n**; inanimate “facing” (screens, vehicles) as legal ANCHOR; forced listener frame under every command.
+
+## See also
+
+- Event resume vs participant: [pronouns.md](pronouns.md)
+- Mid-word **`x`** families: [x-compounds.md](x-compounds.md)
+- Join-relations as relation roots: [join-extras.md](join-extras.md#join-relations)

@@ -1,12 +1,61 @@
 # Numbers
 <a id="numbers"></a>
 
-Closed numeral grammar — counts, exponents, writing, percent, ranges, and measure phrases.
-
-A whole numeric value is **one word**, even when it contains several digit groups (or none).
+Count and rank with number words. A whole numeric value is **one word**, even when it contains several digit groups (or none).
 
 ## Beginner
 <a id="beginner"></a>
+
+Count and rank with a **`/ɡ/`** number word after the noun. Write the short form (`g+3`, `g#2`); speech uses a longer CV shape ([Intermediate](#intermediate)).
+
+### Counts (`g+N`)
+
+`g+3` = *three* on the preceding noun. Same slot as other adjectives.
+
+```
+`zagadalsh g+3.`
+
+gloss: `z-cat-sh` · `g-+3`
+
+*Three cats.*
+```
+
+**Mnemonic:** **`+`** = how many.
+
+### Ordinals (`g#N`)
+
+`g#2` = *the second* on the preceding noun.
+
+```
+`zogobol g#2.`
+
+gloss: `z-book` · `g-#2`
+
+*The second book.*
+```
+
+**Mnemonic:** **`#`** = which place (rank from the start).
+
+### More than one (`g+`)
+
+Digitless **`g+`** = the count is **more than one**, without naming N. Noun group-reference still uses [**-sh**](plurality.md) — quantity vs group are different jobs and may co-occur (`zagadalsh g+`).
+
+```
+`zagadalsh g+.`
+
+gloss: `z-cat-sh` · `g-+`
+
+*Cats — more than one.*
+```
+
+**Mnemonic:** empty after **`+`** = plural amount, not “some unspecified member.”
+
+Overlays, writing marks, ranges, percent, and exponents are Intermediate / Advanced — **optional** for a first dialogue corpus.
+
+## Intermediate
+<a id="intermediate"></a>
+
+Word shape, other prefixes, overlays, writing marks, percent, ranges, and measure phrases. **Optional** — not required to finish a first dialogue corpus.
 
 ### Word shape
 
@@ -26,7 +75,7 @@ A whole numeric value is **one word**, even when it contains several digit group
 ### Parts of speech on numbers
 <a id="parts-of-speech-on-numbers"></a>
 
-The number word takes whichever PoS prefix the role needs. Beginner dialogue mostly uses **referential** prefixes (`/ɡ/`, `/z/`, `/d/`, `/b/`) — the marker identity is as-is; PoS only chooses the slot. Verb / adverb / interjection / discourse overlays are Intermediate ([number overlays](#number-overlays)).
+The number word takes whichever PoS prefix the role needs. Referential prefixes (`/ɡ/`, `/z/`, `/d/`, `/b/`) use the marker as-is; PoS only chooses the slot. Verb / adverb / interjection / discourse overlays are [below](#number-overlays).
 
 | Prefix | Role with a number |
 |--------|--------------------|
@@ -161,7 +210,7 @@ Within each digit group, speech markers build ordinary magnitudes (and later spe
 - **Decimal point:** say **`je`** after the digit(s) left of the point; digits after **`je`** are the fractional part.
 - **No metric prefixes** in the lexicon — base unit + exponent / exact count on the amount ([measure phrases](#no-metric-prefixes)).
 
-Digitless specials (+∞, last place, hyperbole, zero×exp, …) and ordinal **generation** offsets: [Intermediate](#intermediate) / [Advanced](#advanced).
+Digitless specials (+∞, last place, hyperbole, zero×exp, …) and ordinal **generation** offsets: [Advanced](#advanced).
 
 ### Writing (preferred shorthand)
 <a id="writing-preferred-shorthand"></a>
@@ -183,7 +232,7 @@ Same glyphs and jobs as [span-fence marks](spans.md#writing) (**`~`** soft / **`
 | **`@`** | **-n** | conventional / proper | `g@#2`, `g@+1e`, `x@#e` |
 | **`=`** | **-r** | anaphoric resume | `g=+`, `d=_`, `x=#2`, `g=#1e` |
 
-Order when both **`@`** and **`~`** apply: **`@` then `~`**. **Do not write** the stack with both glyphs — spell **`@`** only, with uncertain tonality (same hedge habit as spans). **`=`** does **not** combine with **`~`** / **`@`**. Full phonetic spelling with a trailing ending letter (e.g. *grarel*, *gram*) is the [style default](#writing-style-numeric-vs-spelled) for [numeric derivation](special-vocabulary.md#numeric-derivation); on free number words it is fine as a pronunciation gloss, not preferred in running text.
+Order when both **`@`** and **`~`** apply: **`@` then `~`**. **Do not write** the stack with both glyphs — spell **`@`** only, with uncertain tonality (same hedge habit as spans). **`=`** does **not** combine with **`~`** / **`@`**. Full phonetic spelling with a trailing ending letter (e.g. *grarel*, *gram*) is the [style default](#writing-style-numeric-vs-spelled) for [numeric derivation](numeric-derivation.md#numeric-derivation); on free number words it is fine as a pronunciation gloss, not preferred in running text.
 
 #### Marker (not written as `r`+V)
 
@@ -232,15 +281,12 @@ Prefer shorthand in free slots. Speech is always the full CV form.
 | that amount again | `g=+` | digitless **-r** resume |
 | room 12 | `g_12` | digit-string label |
 
-Full inventory tables: [Intermediate examples](#examples).
-
-## Intermediate
-<a id="intermediate"></a>
+Full inventory tables: [examples](#examples).
 
 ### Overlay roles (`/v/` `/h/` `/j/` `/x/`)
 <a id="number-overlays"></a>
 
-Overlay prefixes keep marker identity but add a role-specific reading. Referential prefixes (`/ɡ/` `/z/` `/d/` `/b/`) use the marker as-is — [Beginner marker vowel](#marker-vowel-referential-identity).
+Overlay prefixes keep marker identity but add a role-specific reading. Referential prefixes (`/ɡ/` `/z/` `/d/` `/b/`) use the marker as-is — [marker vowel](#marker-vowel-referential-identity).
 
 #### Number as verb (by marker)
 <a id="number-as-verb-by-marker"></a>
@@ -493,7 +539,7 @@ On forward **`#`** / **`re`** and end-relative **`#-`** / **`reu`**, a **digitfu
 
 **Overlays:** `/x/` treats generation as **agenda nesting** (`x#3e2` = *3rd sub-sub-point under the focus*; **`x#e0`** = *current-layer item(s)* / assert this outline level). `/h/` / `/v/` / `/j/` inherit the same product (*for the 3rd time in gen +2*, *place 3rd in gen +2*, …) when the series is generation-structured; flat event counts stay **`h#N`**.
 
-**Derivation:** free generation is series-relative; kind morphs keep digitless **`ROOTx#e-`** / **`ROOTx#e`** as origin / telos of the **kind** — no productive free-style **`ROOTx#-N`** or **`ROOTx#NeK`** in this pass ([special-vocabulary.md](special-vocabulary.md#ordinal-digit-morphs)).
+**Derivation:** free generation is series-relative; kind morphs keep digitless **`ROOTx#e-`** / **`ROOTx#e`** as origin / telos of the **kind** — no productive free-style **`ROOTx#-N`** or **`ROOTx#NeK`** in this pass ([numeric-derivation.md](numeric-derivation.md#ordinal-digit-morphs)).
 
 
 ### Percent and percentage points
@@ -600,7 +646,7 @@ Both writings name the **same word**. Choose the surface by **job**: quantity/ma
 | Job | Prefer | Why |
 |-----|--------|-----|
 | Free number in a clause slot | **shorthand** | `g+3`, `x#2`, `d_…` — numeral as numeral |
-| [Numeric derivation](special-vocabulary.md#numeric-derivation) / kind morph | **spelled CV** | `zolexrabal`, not `zolex+el` |
+| [Numeric derivation](numeric-derivation.md#numeric-derivation) / kind morph | **spelled CV** | `zolexrabal`, not `zolex+el` |
 | Metalanguage / inventory tables | **shorthand** | patterns like `ROOTx+e` stay scannable |
 
 **Prefer shorthand** for counts, measures, ranks, ranges, thresholds (`zagadalsh g+3`, `z+3 z+5 zel`); digit-strings / times / codes (`d_555,123,4567`, `h_15:30`); scientific / engineering register (`g+5.2e-4`, `g+0e-1`, `g+e3`); compact agenda markers (`x#1`, `x#3e2`); and docs that teach the numeral system.
@@ -645,7 +691,7 @@ Measure hosts are **published metaphorical roots** (dimension / quantity metapho
 | **Full / titled** | host + digit morph **`+1`** (*unit / primary*) | `bureluxrawon g+2` | need *the named unit of that dimension* vs the ordinary metaphor (*measurement*, *heaviness*, …) |
 | **Resume** | letter pronoun or **-r** | `bur` / `bureluxrawor` | after the unit NP is on the table — not a standing abbreviation inventory |
 
-Spelled **`…xrawol`** / **`…xrawon`** — [numeric derivation](special-vocabulary.md#numeric-derivation) (**`ROOTx+1`**). Prefer **-n** on the titled form when the unit is a conventional SI name; **-l** when naming a unit-instance without that title force. Soft **-m** hedges amount or unit, not a short name.
+Spelled **`…xrawol`** / **`…xrawon`** — [numeric derivation](numeric-derivation.md#numeric-derivation) (**`ROOTx+1`**). Prefer **-n** on the titled form when the unit is a conventional SI name; **-l** when naming a unit-instance without that title force. Soft **-m** hedges amount or unit, not a short name.
 
 **Bare is enough** when the measure reading is clear (`bojorol g+70` ≈ *70 grams*). Use **`…x+1`** when the same root is also active as a quality or continuum (*how heavy*, *passage of time*, *heat*) and the unit reading must stay distinct — same habit as normative Mine **`zumogoxrawon`** vs performance **`zumogon`** ([comparatives](comparatives.md#judgment-benchmarks)).
 
@@ -913,6 +959,8 @@ In a sentence, the PoS attaches to that single number word (see [Parts of speech
 ## Advanced
 <a id="advanced"></a>
 
+Digitless exponents, zero×exp, hyperbole, and related specials. **Optional** with Intermediate — not required to finish a first dialogue corpus.
+
 ### Digitless exponents
 <a id="digitless-exponents"></a>
 <a id="extremum-digitless"></a>
@@ -932,7 +980,7 @@ None of these is bare OoM (which always **names** the power: `g+e9`, including o
 
 **Writing:** **`e`** = speech **`ba`**; **`e-`** = speech **`bu`**. Digitless means no power digits after that mark: `g+e`, `g+1e`, `g+0e`, `g+e-`, `g+1e-`. Bare / assert **`e0`** writes power **`0`**: `g+e0`, `g+3e0` (not digitless).
 
-**Shape limits:** one such group only in the word; do not combine digitless exp with real exp digits, percent closers, or further groups. Marker identity still applies. Digitless exp on **`ro`** / **`_`** is **undefined** on free number words. Derivation compounds may use digitless **`_`** as [infinite / landmark labels](special-vocabulary.md#infinite-labels) (`ROOTx_e`, `ROOTx_e-`, `ROOTx_1e`, …).
+**Shape limits:** one such group only in the word; do not combine digitless exp with real exp digits, percent closers, or further groups. Marker identity still applies. Digitless exp on **`ro`** / **`_`** is **undefined** on free number words. Derivation compounds may use digitless **`_`** as [infinite / landmark labels](numeric-derivation.md#infinite-labels) (`ROOTx_e`, `ROOTx_e-`, `ROOTx_1e`, …).
 
 #### Special values — no mantissa
 
@@ -957,9 +1005,9 @@ Same under `/z/` `/d/` `/b/` (`z+e` = +∞ as subject; `d#e-` = start-place as o
 <a id="imaginary"></a>
 <a id="notional-amount"></a>
 
-**Notional / imaginary (`g-e-`):** negative marker (**`ru`**) + digitless negative exponent (**`bu`∅), no mantissa — completes the scalar special grid. Reading is **metaphorical**: a magnitude named *as if* it counted, without entering the real tally. **Not** falsehood ([yes/no polarity](questions.md#yes-no-polarity) **`juel`**), **not** ordinary soft real amount (`g~+3`), **not** −∞ (`g-e`), **not** micro-real (`g+e-`). No separate *i* closer — digitful engineering (`g-50e-6`) and bare OoM **`g-e-1`** / **`g-e-2`** stay real (−10⁻¹ / −10⁻²). Mantissa + digitless **`bu`** on **`ru`** (`g-1e-`) stays [hyperbole](#hyperbole-gazillion) (*minus one gazillionth*), not *Ni*. Kind-morph twins: [quasi-ROOT](special-vocabulary.md#quasi) **`ROOTx-e-`**; [quasi-N](special-vocabulary.md#quasi-n) **`ROOTx-e-1`** / **`ROOTx-e-2`** (derivation only — not free OoM).
+**Notional / imaginary (`g-e-`):** negative marker (**`ru`**) + digitless negative exponent (**`bu`∅), no mantissa — completes the scalar special grid. Reading is **metaphorical**: a magnitude named *as if* it counted, without entering the real tally. **Not** falsehood ([yes/no polarity](questions.md#yes-no-polarity) **`juel`**), **not** ordinary soft real amount (`g~+3`), **not** −∞ (`g-e`), **not** micro-real (`g+e-`). No separate *i* closer — digitful engineering (`g-50e-6`) and bare OoM **`g-e-1`** / **`g-e-2`** stay real (−10⁻¹ / −10⁻²). Mantissa + digitless **`bu`** on **`ru`** (`g-1e-`) stays [hyperbole](#hyperbole-gazillion) (*minus one gazillionth*), not *Ni*. Kind-morph twins: [quasi-ROOT](numeric-derivation.md#quasi) **`ROOTx-e-`**; [quasi-N](numeric-derivation.md#quasi-n) **`ROOTx-e-1`** / **`ROOTx-e-2`** (derivation only — not free OoM).
 
-**Psychological as-if** (clause framed as pretensive / mind-only, with flexibility hold endings) uses spelled mood **`edahe`** — [special-vocabulary.md § Notional](special-vocabulary.md#notional) (`hedahem`, …) — not these free number forms. Free **`grubul`** / **`xrubul`** / **`hrubul`** / **`vrubul`** / **`jrubul`** stay amount, discourse *imagine that:*, manner *as if*, verb *notionalize*, and cheer overlays on the number grid.
+**Psychological as-if** (clause framed as pretensive / mind-only, with flexibility hold endings) uses spelled mood **`edahe`** — [commentary.md § Notional](commentary.md#notional) (`hedahem`, …) — not these free number forms. Free **`grubul`** / **`xrubul`** / **`hrubul`** / **`vrubul`** / **`jrubul`** stay amount, discourse *imagine that:*, manner *as if*, verb *notionalize*, and cheer overlays on the number grid.
 
 **Endings** (no-mantissa specials):
 
@@ -1036,7 +1084,7 @@ Under `/x/`, **last-place** **`x#e`** (and **`x~#e`** / **`x@#e`** / **`x=#e`**)
 <a id="zero-exponential"></a>
 <a id="annihilate"></a>
 
-Forms that pair **mantissa `0`** with an exponent (digitless or the engineering **`e-1`** pair). Same anatomy family as [numeric derivation](special-vocabulary.md#zero-exponent-derivation); free words are **hostless** amounts / acts; derived words attach the morph to a ROOT.
+Forms that pair **mantissa `0`** with an exponent (digitless or the engineering **`e-1`** pair). Same anatomy family as [numeric derivation](numeric-derivation.md#zero-exponent-derivation); free words are **hostless** amounts / acts; derived words attach the morph to a ROOT.
 
 **Not** plain zero (`g+0`), **not** +∞ (`g+e`), **not** hyperbole (`g+1e`), **not** bare OoM (`g+e9`, **`g+e0`** ones band — [Bare OoM](#bare-oom-bands)). Soft / named / resume endings (**`~`** / **`@`** / **`=`**) apply as on other specials.
 
@@ -1106,7 +1154,7 @@ Mantissa **`0`** + digitless **`ba`** under forward ordinal **`re` / `#`**. **No
 | **`h#0e`** | *for a disqualified / struck turn* |
 | **`j#0e`** | *Disqualified!* / *Rank wiped!* |
 
-Soft **-m** hedges (*near-disqualified*, …). Ordinal zero×digitless under `/x/` is **undefined**. Free twin of derivation **`ROOTx#0e`** — [special-vocabulary.md](special-vocabulary.md#rank-annihilated-morph).
+Soft **-m** hedges (*near-disqualified*, …). Ordinal zero×digitless under `/x/` is **undefined**. Free twin of derivation **`ROOTx#0e`** — [numeric-derivation.md](numeric-derivation.md#rank-annihilated-morph).
 
 ##### Free vs derived
 
@@ -1186,7 +1234,7 @@ Examples: `g+e` → +∞; `g~+e` → arbitrarily large but finite; `g+1e` → *o
 
 ### Numeric derivation (compounds)
 
-PoS-less number stems may follow mid-word **`x`** on an ordinary content root (`ROOTx+e`, `ROOTx_12`, `ROOTx_e`, `ROOTx+1e`, …). That family is **derivation** (essence, coded subtype, [infinite labels](special-vocabulary.md#infinite-labels), hyperbole-ROOT, …), documented in **[special-vocabulary.md § Numeric derivation](special-vocabulary.md#numeric-derivation)**; parser cue in **[x-compounds.md](x-compounds.md)**. Running-text examples prefer spelled CV (`zolexrabal`) — [writing style](#writing-style-numeric-vs-spelled). Free number words on this page stay clause-slot counts, ranks, labels, overlays, and discourse items.
+PoS-less number stems may follow mid-word **`x`** on an ordinary content root (`ROOTx+e`, `ROOTx_12`, `ROOTx_e`, `ROOTx+1e`, …). That family is **derivation** (essence, coded subtype, [infinite labels](numeric-derivation.md#infinite-labels), hyperbole-ROOT, …), documented in **[numeric-derivation.md](numeric-derivation.md#numeric-derivation)**; parser cue in **[x-compounds.md](x-compounds.md)**. Running-text examples prefer spelled CV (`zolexrabal`) — [writing style](#writing-style-numeric-vs-spelled). Free number words on this page stay clause-slot counts, ranks, labels, overlays, and discourse items.
 
 
 ### Stress (pronunciation guide)
@@ -1205,3 +1253,4 @@ PoS-less number stems may follow mid-word **`x`** on an ordinary content root (`
 - Phrase fences for ranges: [coordination.md](coordination.md)
 - Scalar comparison / measured differentials: [comparatives.md](comparatives.md)
 - Number-word phonotactics: [phonology.md](phonology.md)
+- Kind morphs (`ROOTxNUM`): [numeric-derivation.md](numeric-derivation.md)

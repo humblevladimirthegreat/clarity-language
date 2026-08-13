@@ -203,7 +203,7 @@ English often uses *because* for **speaker grounds** (*I say P because Q* / *I t
 | English bundle | Prefer |
 |----------------|--------|
 | *P because Q* (Q grounds P in the world) | **`hurugum bodol`** (+ evidentiality / [**CAUSE**](special-vocabulary.md#cause) when naming mechanism) |
-| *I think / say P because Q* (Q is my reason for the take) | [**COMMENT**](special-vocabulary.md#comment) on the matrix (`huhom`, …); optional **`hurugum bodol`** only if Q is also asserted as world-foundation |
+| *I think / say P because Q* (Q is my reason for the take) | [**COMMENT**](commentary.md#comment) on the matrix (`huhom`, …); optional **`hurugum bodol`** only if Q is also asserted as world-foundation |
 | *P, since / given that Q* (Q already shared) | **`hurugum bodol`** (Q asserted); soft force / evidentiality if the warrant is tentative |
 | *P if Q* (no ledger for Q) | **`horodom bodol`** — never stretch **`BECAUSE`** into a soft *if* |
 
@@ -214,7 +214,7 @@ English often uses *because* for **speaker grounds** (*I say P because Q* / *I t
 
 | Stack | Role |
 |-------|------|
-| Evidentiality `/h/` | *how you know* the link — [evidentiality](special-vocabulary.md#evidentiality) (**INFERRED** `eve`, **PATTERN** `awa`, …) |
+| Evidentiality `/h/` | *how you know* the link — [evidentiality](commentary.md#evidentiality) (**INFERRED** `eve`, **PATTERN** `awa`, …) |
 | **`CAUSE`** (`heragem`) | *mechanism framing* — [CAUSE mood](special-vocabulary.md#cause); not condition type, not NATURAL |
 | **`hual` / `huam`** | habitual / characterizing pattern — [restrictors](restrictors.md) |
 | Universality | how exceptionless the claim is — [universality moods](special-vocabulary.md#universality) |
@@ -261,7 +261,7 @@ Causal “laws” show their warrant via evidentiality and universality — not 
 ## See also
 
 - Inclusive focus **`…aom` / `…aol`**: [coordination.md](coordination.md#focus-phrase)
-- Join-relations **`haon` / `huan` / `hon`**: [special-vocabulary.md](special-vocabulary.md#join-relations)
+- Join-relations **`haon` / `huan` / `hon`**: [join-extras.md](join-extras.md#join-relations)
 - Restrictors **`hal` / `hual`**: [restrictors.md](restrictors.md)
 - Dependent clauses / **`odo`**: [core.md](core.md#dependent-clauses)
 - Preference as law (values on the condition): [values.md](values.md)

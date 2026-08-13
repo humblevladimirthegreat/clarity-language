@@ -141,7 +141,7 @@ Same referent, new role — English needs a longer paraphrase. Full PoS×PoS tab
 | noun | `/v/` | *do that (to/with it)* |
 | noun | `/ɡ/` | *that one’s* / *of that kind* |
 | noun | `/x/` | *going back to subject X* |
-| verb | noun | *that action / event* — **not** the agent; use [role compounds](special-vocabulary.md#role-compounds) for agent/patient |
+| verb | noun | *that action / event* — **not** the agent; use [role compounds](roles.md#role-compounds) for agent/patient |
 | verb | `/h/` | *by doing so* / *thereby* |
 | adjective | noun | *the … one* / *that quality* |
 
@@ -197,7 +197,7 @@ Each subsection is an **antecedent** role; table rows are the **pronoun** role. 
 
 | Pronoun role | English approximation |
 |--------------|------------------------|
-| `/z/` `/d/` `/b/` | *that action / event / doing* — **not** the agent/patient; use [role compounds](special-vocabulary.md#role-compounds) |
+| `/z/` `/d/` `/b/` | *that action / event / doing* — **not** the agent/patient; use [role compounds](roles.md#role-compounds) |
 | `/v/` | *do so* / *do that* |
 | `/ɡ/` | *such* (done that way); property of having done that |
 | `/w/` | Frame on an adjective about that doing |

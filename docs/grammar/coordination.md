@@ -249,7 +249,7 @@ Under [question](questions.md#interrogative-force) force, these forms are **fill
 | `/w/` | restrictor on preceding `/ɡ/` — [restrictors.md](restrictors.md) |
 | `/h/` | clause circumstance restrictor — [restrictors.md](restrictors.md) |
 
-The join prefix **must match** every conjunct head. Under `/ɡ/` `/h/`, joins are **-l** / **-m** / **-r** only; **-n** spellings there are [join-relations](special-vocabulary.md#join-relations).
+The join prefix **must match** every conjunct head. Under `/ɡ/` `/h/`, joins are **-l** / **-m** / **-r** only; **-n** spellings there are [join-relations](join-extras.md#join-relations).
 
 ## Intermediate
 <a id="intermediate"></a>
@@ -335,7 +335,7 @@ The starter table above covers common cases. Below are the full phrase-level foc
 | **…or** (`zor` / …) | *anything* / *anyone* |
 | **…ur** (`zur` / …) | *something else* / *someone else* |
 
-Focus/bare is also allowed on VP **…ul** / **…um** and clause **…ul** / **…um** / **…un** among joins. **`vun`** is a [join-act verb](special-vocabulary.md#join-act-verbs), not a VP join.
+Focus/bare is also allowed on VP **…ul** / **…um** and clause **…ul** / **…um** / **…un** among joins. **`vun`** is a [join-act verb](join-extras.md#join-act-verbs), not a VP join.
 
 Under [question](questions.md#interrogative-force) force: yes/no, offer, emptiness check, and fill-ask — [questions.md](questions.md#yes-no-unary-nullary).
 
@@ -561,7 +561,7 @@ On **`/x/`** only, join **-n** is **soft packaging** — not phrase named **-n**
 | `xuan` / `xuon` | soft complement inventory / free choice |
 | `xen` / `xaen` / `xoen` / `xuen` | soft ranked / tie / exclusive / reversal |
 
-VP `/v/`…**-n** spellings are [join-act verbs](special-vocabulary.md#join-act-verbs). `/ɡ/` `/h/`…**-n** are [join-relations](special-vocabulary.md#join-relations).
+VP `/v/`…**-n** spellings are [join-act verbs](join-extras.md#join-act-verbs). `/ɡ/` `/h/`…**-n** are [join-relations](join-extras.md#join-relations).
 
 ### VP and clause forms
 <a id="vp-clause-forms"></a>
@@ -615,7 +615,7 @@ On **phrase-level** joins under **`/z/` `/d/` `/b/` `/w/`** only, **-n** marks a
 
 **-n** is an alternative to **-l** / **-m**, not a third completeness tier and not stackable with them. Same mnemonic as content-word [proper name **-n**](reference-suffix.md#proper-name--n). **Not** on `/ɡ/` or `/h/` (join-relations), **not** on VP `/v/` (join-act verbs), **not** on clause `/x/` (soft **-n** instead). Stock AP bundles use [mention](spans.md) spans, not a `/ɡ/` named join.
 
-**…an** is **bare-only** on phrase fences under **`/z/` `/d/` `/b/` `/w/`** (no one-conjunct reading). Under `/ɡ/` `/h/`, **…an** / **…en** / other **-n** join-vowel spellings are [join-relations](special-vocabulary.md#join-relations).
+**…an** is **bare-only** on phrase fences under **`/z/` `/d/` `/b/` `/w/`** (no one-conjunct reading). Under `/ɡ/` `/h/`, **…an** / **…en** / other **-n** join-vowel spellings are [join-relations](join-extras.md#join-relations).
 
 ### Rare arities and edge readings
 
@@ -635,9 +635,9 @@ On **phrase-level** joins under **`/z/` `/d/` `/b/` `/w/`** only, **-n** marks a
 ### Reserved forms
 <a id="phrase-reserved-forms"></a>
 
-Under `/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/`, the join series plus allowed endings are **only** these joins or [restrictors](restrictors.md) (under `/h/` `/w/`: core defined, other spellings reserved but undefined). **`/ɡ/`…**-n** and **`/h/`…**-n** are [join-relations](special-vocabulary.md#join-relations). No three-vowel stacks.
+Under `/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/`, the join series plus allowed endings are **only** these joins or [restrictors](restrictors.md) (under `/h/` `/w/`: core defined, other spellings reserved but undefined). **`/ɡ/`…**-n** and **`/h/`…**-n** are [join-relations](join-extras.md#join-relations). No three-vowel stacks.
 
-Under `/v/`, join endings are **-l** / **-m** / **-r** only; parallel **-n** spellings are [join-act verbs](special-vocabulary.md#join-act-verbs).
+Under `/v/`, join endings are **-l** / **-m** / **-r** only; parallel **-n** spellings are [join-act verbs](join-extras.md#join-act-verbs).
 
 Under `/x/`, the join series plus allowed endings are **only** these clause joins. No stacked-vowel **-r**.
 
@@ -679,3 +679,4 @@ Under `/h/` and `/w/`, the join series marks **applicability circumstances** (no
 - Prefix-less revision (*including* / *rather*): [revisers.md](revisers.md)
 - Applicability *when* under `/h/` `/w/`: [restrictors.md](restrictors.md)
 - Fill-ask and yes/no on focus/bare joins: [questions.md](questions.md)
+- Join-act verbs / join-relations: [join-extras.md](join-extras.md)

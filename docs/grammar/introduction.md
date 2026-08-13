@@ -34,6 +34,8 @@ Grammar pages use **Beginner** / **Intermediate** / **Advanced** sections so you
 
 Follow the **Suggested reading order** in the site sidebar (same sequence on every page). Read each page’s Beginner section in that order, then every peer’s Intermediate, then Advanced.
 
+Numbers Intermediate / Advanced (overlays, ranges, exponents, derivation) is a **specialist module** — optional for a first dialogue corpus. Beginner counts (`g+3`), ordinals (`g#2`), and digitless `g+` are enough to keep reading.
+
 ## Acknowledgments
 <a id="acknowledgments"></a>
 

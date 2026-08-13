@@ -148,7 +148,7 @@ Each conjunct is a **simple** `/h/` or `/w/` content word, or a **complex** unit
 
 Next-clause *when* / *if* subordination stays ordinary complex `/h/` + `/b/` [next-clause pronoun](pronouns.md#special-pronouns) ([core.md](core.md#dependent-clauses)). Circumstance fences list **phrase** circumstances, not dependent sentences.
 
-Necessity-style *never without…* uses **`hal`** (and join-relation **`huan`**) — [causation.md](causation.md#necessary). Ability / incapability are not restrictors — [special-vocabulary.md](special-vocabulary.md#ability). **`/h/`…**-n** forms (`han`, `hon`, …) are [join-relations](special-vocabulary.md#join-relations), not restrictors.
+Necessity-style *never without…* uses **`hal`** (and join-relation **`huan`**) — [causation.md](causation.md#necessary). Ability / incapability are not restrictors — [ability.md](ability.md#ability). **`/h/`…**-n** forms (`han`, `hon`, …) are [join-relations](join-extras.md#join-relations), not restrictors.
 
 ## Advanced
 <a id="advanced"></a>
@@ -158,7 +158,7 @@ Necessity-style *never without…* uses **`hal`** (and join-relation **`huan`**)
 Leave **undefined** (no circumstance reading):
 
 - Bare **`hol` / `hom` / `haol` / `haom` / `hul` / `hum` / `huol` / `huom`**
-- All **-n** spellings under `/h/` / `/w/` are **not** restrictors: `/h/`…**-n** (`han` / `hen` / …) = [join-relations](special-vocabulary.md#join-relations); `/w/`…**-n** stay reserved (no circumstance gloss)
+- All **-n** spellings under `/h/` / `/w/` are **not** restrictors: `/h/`…**-n** (`han` / `hen` / …) = [join-relations](join-extras.md#join-relations); `/w/`…**-n** stay reserved (no circumstance gloss)
 - Ranked **`huel` / `huem`** (any arity), and **bare** **`hel` / `hem` / `hoel` / `hoem`**
 - **`her` / `wer`** (any arity) — use **`hel`** + **`har`** instead of *whenever it matters most*
 - Other stacked or rare parallels not listed in the core tables

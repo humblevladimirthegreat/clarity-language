@@ -141,8 +141,8 @@ Prefix-less [discourse revisers](revisers.md#discourse-revisers) keep reviser en
 | Role | **-n** means… |
 |------|----------------|
 | `/z/` `/d/` `/b/` | This named entity (person, place, title, unique referent) |
-| `/v/` | This named event, rite, or titled action. Closed [join-act verbs](special-vocabulary.md#join-act-verbs) (`van`, …) are defective **-n**-only forms. |
-| `/ɡ/` | This named style, tradition, brand, or category. Closed [join-relations](special-vocabulary.md#join-relations) (`gan`, …) are defective **-n**-only complex adjectives. |
+| `/v/` | This named event, rite, or titled action. Closed [join-act verbs](join-extras.md#join-act-verbs) (`van`, …) are defective **-n**-only forms. |
+| `/ɡ/` | This named style, tradition, brand, or category. Closed [join-relations](join-extras.md#join-relations) (`gan`, …) are defective **-n**-only complex adjectives. |
 | `/w/` | (Rare) this named scale / grade / criterion on the preceding adjective |
 | `/h/` | This named standard, channel, or official circumstance. Closed join-relations (`han`, …) live here as defective **-n**-only complex adverbs. |
 | `/j/` vocative | Address this named person, place, or title |
@@ -173,24 +173,24 @@ Bare need words (no `x`-addition) are **topic** only and keep ordinary **-l / -m
 
 ### Ability endings
 
-On [ability](special-vocabulary.md#ability) compounds — **host + `x` + {a\|e\|o\|u}** (e.g. `veguxel`) or fallback **`egera` + `x` + {a\|e\|o\|u}`** — **-l / -m / -n / -r** keep **ordinary** reference-suffix senses on the host (literal / metaphorical / proper / anaphor). Stance lives on the vowel: **`xa`** can; **`xe`** temporary *can’t*; **`xo`** modifiable *can’t*; **`xu`** irreversible *can’t*. Details: [special-vocabulary.md](special-vocabulary.md).
+On [ability](ability.md#ability) compounds — **host + `x` + {a\|e\|o\|u}** (e.g. `veguxel`) or fallback **`egera` + `x` + {a\|e\|o\|u}`** — **-l / -m / -n / -r** keep **ordinary** reference-suffix senses on the host (literal / metaphorical / proper / anaphor). Stance lives on the vowel: **`xa`** can; **`xe`** temporary *can’t*; **`xo`** modifiable *can’t*; **`xu`** irreversible *can’t*. Details: [ability.md](ability.md).
 
 ### Decision endings
 
-On [DECISION](special-vocabulary.md#decision) — closed mood **`ehege`** under `/h/` / `/w/` — endings match unmet changeability: **-l** irreversible, **-m** modifiable, **-n** proper, **-r** temporary (no won’t-now). No mid-word **`x`**. Details: [special-vocabulary.md § Decision](special-vocabulary.md#decision).
+On [DECISION](plan-decision.md#decision) — closed mood **`ehege`** under `/h/` / `/w/` — endings match unmet changeability: **-l** irreversible, **-m** modifiable, **-n** proper, **-r** temporary (no won’t-now). No mid-word **`x`**. Details: [plan-decision.md § Decision](plan-decision.md#decision).
 
 ### Plan endings
 
-On [PLAN](special-vocabulary.md#plan-predict) — closed mood **`owaro`** under `/h/` / `/w/` — endings mark **map resolution**: **-m** sketch, **-l** itinerary, **-n** proper, **-r** fork (contingency). Not DECISION firmness, not PREDICT. No mid-word **`x`**. Details: [special-vocabulary.md § Plan map resolution](special-vocabulary.md#plan-map-resolution).
+On [PLAN](plan-decision.md#plan-predict) — closed mood **`owaro`** under `/h/` / `/w/` — endings mark **map resolution**: **-m** sketch, **-l** itinerary, **-n** proper, **-r** fork (contingency). Not DECISION firmness, not PREDICT. No mid-word **`x`**. Details: [plan-decision.md § Plan map resolution](plan-decision.md#plan-map-resolution).
 
 ### Role compounds
 
-On [role compounds](special-vocabulary.md#role-compounds) — **`{a\|u\|o} x ROOT`** (agent / patient / reltum) — endings keep **ordinary** reference-suffix senses. Mid-word **`x`** families: [x-compounds.md](x-compounds.md).
+On [role compounds](roles.md#role-compounds) — **`{a\|u\|o} x ROOT`** (agent / patient / reltum) — endings keep **ordinary** reference-suffix senses. Mid-word **`x`** families: [x-compounds.md](x-compounds.md).
 
 ### Viewpoint laterals
 <a id="viewpoint-laterals-endings"></a>
 
-On [viewpoint laterals](special-vocabulary.md#viewpoint-laterals) — **`DIR x ANCHOR`** — endings keep **ordinary** reference-suffix senses on the whole direction word (not value / ability tables).
+On [viewpoint laterals](roles.md#viewpoint-laterals) — **`DIR x ANCHOR`** — endings keep **ordinary** reference-suffix senses on the whole direction word (not value / ability tables).
 
 ### Join endings
 

@@ -163,7 +163,7 @@ Vague degree stays `/w/`; counted gaps use the measure-NP pattern (one `/b/` on 
 
 Bare *bad* / *terrible* can hide an unfair or unspoken standard. Keep the ordinary [comparative](#comparatives) fence and put the standard in the **than**-conjunct as a **named comparee**.
 
-Benchmarks are **NP comparees** on the ranked fence — not [ability](special-vocabulary.md#ability) / [role](special-vocabulary.md#role-compounds) hosts, and not `/w/`…**-n** on the scale (*spicy* **[Scoville]** names a measurement frame — [reference-suffix](reference-suffix.md)). **Personal standard** is [numeric derivation](special-vocabulary.md#numeric-derivation) on [speaker](pronouns.md#special-pronouns) **`umogo`**; **Everyone** reuses bare named **`zuan`** ([coordination](coordination.md#focus-phrase)).
+Benchmarks are **NP comparees** on the ranked fence — not [ability](ability.md#ability) / [role](roles.md#role-compounds) hosts, and not `/w/`…**-n** on the scale (*spicy* **[Scoville]** names a measurement frame — [reference-suffix](reference-suffix.md)). **Personal standard** is [numeric derivation](numeric-derivation.md#numeric-derivation) on [speaker](pronouns.md#special-pronouns) **`umogo`**; **Everyone** reuses bare named **`zuan`** ([coordination](coordination.md#focus-phrase)).
 
 #### Recipe
 
@@ -228,7 +228,7 @@ Soft personal standard: **`zumogoxrawom`**. Ordinary named people stay ordinary 
 - Benchmarks are distinct comparees with **-n** (or bare named **`zuan`**) — not ending letters on one root.
 - Benchmark comparees fill NP slots on fences (`/z/` `/d/` `/b/`), not SHARED scale adjectives.
 - Bare **`zumogon`** is performance; normative Mine is **`zumogoxrawon`**.
-- Lexicon benchmark roots are not [restrictors](restrictors.md) or [ability](special-vocabulary.md#ability) hosts.
+- Lexicon benchmark roots are not [restrictors](restrictors.md) or [ability](ability.md#ability) hosts.
 
 ## See also
 

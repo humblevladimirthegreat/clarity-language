@@ -95,7 +95,7 @@ Composing emotion from need + activation + locus helps you ask for what would ac
 
 *I can’t* blurs temporary block, lasting incapability, and choice.
 
-[Ability](special-vocabulary.md#ability) tags **can** / **can’t** on an activity or property with stance vowels — **`xa`** can; **`xe`** can’t right now; **`xo`** can’t but may change (speaker change unspecified); **`xu`** can’t as fixed — so a block is not a fixed identity. Endings stay ordinary literal / metaphorical / proper. Hostless *I can’t* uses a closed fallback root. *Won’t* stays ordinary refusal / choice packaging — not an ability vowel.
+[Ability](ability.md#ability) tags **can** / **can’t** on an activity or property with stance vowels — **`xa`** can; **`xe`** can’t right now; **`xo`** can’t but may change (speaker change unspecified); **`xu`** can’t as fixed — so a block is not a fixed identity. Endings stay ordinary literal / metaphorical / proper. Hostless *I can’t* uses a closed fallback root. *Won’t* stays ordinary refusal / choice packaging — not an ability vowel.
 
 Tagging *can’t right now* vs *may yet* vs *impossible* helps you stop treating a temporary block as a fixed incapability; keep *won’t* off the ability morph so choice is not smuggled as can’t.
 
@@ -104,7 +104,7 @@ Tagging *can’t right now* vs *may yet* vs *impossible* helps you stop treating
 
 It is easy to treat a take as settled fact — mixing memory, hearsay, gut feel, and *I think* into one warrant.
 
-Claims about the world take a **channel**: memory, record, pattern, inference, hearsay, gut-felt, or story — closed [evidentiality](special-vocabulary.md#evidentiality) moods under `/h/`. Memory still carries the fishing metaphor — retrieval from opaque water, with room for a wrong catch. First-person rumination (*I think / assume / wonder…*) is a different job: [COMMENT](special-vocabulary.md#comment) frames the clause as cognitive commentary, not as a world warrant. Other-minds *thinks* and *believe*-as-warrant stay on evidentiality. *As if* / for-the-sake-of-argument scenes use [NOTIONAL](special-vocabulary.md#notional). When you mark belief, you can also stack whether you looked for disconfirming trails (pattern / both-sides habits) — a check against confirmation bias ([rationality](#rationality)).
+Claims about the world take a **channel**: memory, record, pattern, inference, hearsay, gut-felt, or story — closed [evidentiality](commentary.md#evidentiality) moods under `/h/`. Memory still carries the fishing metaphor — retrieval from opaque water, with room for a wrong catch. First-person rumination (*I think / assume / wonder…*) is a different job: [COMMENT](commentary.md#comment) frames the clause as cognitive commentary, not as a world warrant. Other-minds *thinks* and *believe*-as-warrant stay on evidentiality. *As if* / for-the-sake-of-argument scenes use [NOTIONAL](commentary.md#notional). When you mark belief, you can also stack whether you looked for disconfirming trails (pattern / both-sides habits) — a check against confirmation bias ([rationality](#rationality)).
 
 Marking the channel (and separating *I think* from world-warrant) helps you catch overconfidence, hearsay, and confirmation bias before you treat a take as settled fact.
 
@@ -113,7 +113,7 @@ Marking the channel (and separating *I think* from world-warrant) helps you catc
 
 English *will* smuggles plan and prediction together, and it is easy to talk as if the future were already known — a certain prediction that fuels anxiety or overconfidence — while a pick often sounds more locked than it is.
 
-Agelan splits them: [PLAN](special-vocabulary.md#plan-predict) for what you mean to do (endings = how drawn the intention map is — sketch / itinerary / fork / proper); [PREDICT](special-vocabulary.md#plan-predict) for a forecast, usually stacked with [evidentiality](special-vocabulary.md#evidentiality) for *how* you forecast (pattern, inference, …) rather than bare certainty. [DECISION](special-vocabulary.md#decision) marks how revisable a pick is — same changeability map as unmet values — without replacing the choosing act or the plan’s map resolution.
+Agelan splits them: [PLAN](plan-decision.md#plan-predict) for what you mean to do (endings = how drawn the intention map is — sketch / itinerary / fork / proper); [PREDICT](plan-decision.md#plan-predict) for a forecast, usually stacked with [evidentiality](commentary.md#evidentiality) for *how* you forecast (pattern, inference, …) rather than bare certainty. [DECISION](plan-decision.md#decision) marks how revisable a pick is — same changeability map as unmet values — without replacing the choosing act or the plan’s map resolution.
 
 Splitting plan, prediction, and decision firmness helps you avoid treating a wishful or “certain” forecast as settled fact (or as a commitment), and a revisable pick as locked forever.
 
@@ -131,7 +131,7 @@ Saying whether a list is open or closed helps you notice False Dichotomies — a
 
 Facing someone, English *on the left* often assumes your facing is theirs.
 
-[Viewpoint laterals](special-vocabulary.md#viewpoint-laterals) force an explicit ANCHOR (`gevedexehadon` *your left*, `gevedexumogon` *my left*). Bare spatial left / right is illegal; discourse *therefore* (`xamalal`) stays a separate metaphorical reading of **`amala`**.
+[Viewpoint laterals](roles.md#viewpoint-laterals) force an explicit ANCHOR (`gevedexehadon` *your left*, `gevedexumogon` *my left*). Bare spatial left / right is illegal; discourse *therefore* (`xamalal`) stays a separate metaphorical reading of **`amala`**.
 
 Naming whose facing counts helps you catch perspective slips before you give a mirrored instruction.
 
@@ -161,9 +161,9 @@ Abstract ideas are hard to hold; without a concrete picture, the psychologically
 
 Published roots keep a **metaphorical** sense beside the literal one (emoji seed + mnemonic), so the abstract job rides on a familiar scene that already carries the caution. Examples from [special vocabulary](special-vocabulary.md):
 
-* [Memory as fishing](special-vocabulary.md#evidentiality) — cast into opaque water; you may pull a fish or a **boot** (retrieval is reconstructive, not a clean archive).
+* [Memory as fishing](commentary.md#evidentiality) — cast into opaque water; you may pull a fish or a **boot** (retrieval is reconstructive, not a clean archive).
 * [Usual as weather](special-vocabulary.md#universality) — a habitual *always* is a climate report, not a law of nature; [uncountered](special-vocabulary.md#universality) is clear sky (*no counterexample comes to mind*), search rather than proof.
-* [*As if* as theater](special-vocabulary.md#notional) — a stage mask frames play; the real tally stays **offstage** (pretensive scenes do not upgrade to ledger facts).
+* [*As if* as theater](commentary.md#notional) — a stage mask frames play; the real tally stays **offstage** (pretensive scenes do not upgrade to ledger facts).
 * [Mechanism as gears](special-vocabulary.md#cause) — naming the gear train marks *how it meshes*, not a bare sufficient hit or a natural-law claim.
 * [Affect as water](special-vocabulary.md#emotion-compose) — tide (arousal) plus vessel / pour / ambient field (locus) instead of an opaque emotion label that hides the need and the blame target.
 
