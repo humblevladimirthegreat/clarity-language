@@ -21,7 +21,7 @@ There are no English-style 3rd-person pronoun lexemes (*he* / *she* / *it* / *th
 ```
 `zazawan vawul. zazawar vahural.`
 
-gloss: `z-grace` · `v-walk` · `z-r` · `v-sit`
+gloss: `z-grace` · `v-walk` · `z-←grace` · `v-sit`
 
 *Azawan goes. He sits.* (resume from the name’s root prefix)
 ```
@@ -164,7 +164,7 @@ Same referent, new role — English needs a longer paraphrase. Full PoS×PoS tab
 | `zenun varural` | *Someone (a person) arrived* |
 | `… hurugum bodol …` | *… because [dependent]* |
 | `… horodom bodol …` | *… if [dependent]* |
-| `… heluvem bodol …` | *… iff [dependent]* |
+| `… heluvem bodol …` | *… if and only if [dependent]* |
 | `… hezabem bodol …` | *… although [dependent]* |
 | `… hegumum bodol …` | *… while [dependent]* |
 | `… hudemum bodol …` | *… until [dependent]* |

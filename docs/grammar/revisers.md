@@ -178,8 +178,8 @@ Four placements — same spellings, same vowel meanings:
 |-----------|-------|--------|
 | Before written force | `(vocative)* (interjection)* REV force BODY` | Force explicit |
 | Before omitted-default body | `REV BODY` | Implied **`jal`** / **`jam`** ([core.md](core.md#clause-force)) |
-| Non-initial clause `/x/` conjunct | `… REV BODY … JOIN` | Inherit opener illocution |
-| Before `/x/` linker | `REV LINKER BODY` | Inherit prior illocution |
+| Non-initial clause `/x/` conjunct | `… REV BODY … JOIN` | Inherit the opener’s speech act |
+| Before `/x/` linker | `REV LINKER BODY` | Inherit the prior speech act |
 
 - **One REV** per discourse opener (no parallel discourse chains on one force). In-clause chains stay inside the body.
 - After an explicit force token, the same spellings are only in-clause revisers (or illegal if mixed-slot).

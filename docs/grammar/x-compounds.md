@@ -9,9 +9,19 @@ How to **disambiguate mid-word `x`**. Mid-word **`x`** is only the [compound joi
 
 ### What mid-word `x` does
 
-Inside a word, **`x`** joins two halves into one compound. Different shapes mean different families (span fence, role, value / ability, numeric derivation, or ordinary sense compound). When a form looks like `…x…`, match the shape in the Intermediate table below.
+Inside a word, **`x`** glues two roots into **one** content word. Write it as one token; the ending applies to the whole compound.
+
+```
+`zuzuzuxogeven.`
+
+gloss: `z-sushi-x-coffee`
+
+*Sushi-Coffee* (one label — two roots, one word)
+```
 
 **Mnemonic:** mid-word **`x`** = glue; word-initial **`x`** = discourse PoS.
+
+Other shapes (span fences, role compounds, values / ability, numbers) are Intermediate ([families by shape](#families-by-shape)).
 
 ## Intermediate
 <a id="intermediate"></a>

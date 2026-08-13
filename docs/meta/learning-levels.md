@@ -29,6 +29,7 @@ Ask in order. Prefer the **earlier** band when a concept sits on a boundary and 
 - When bands conflict, **dependency wins** over subjective difficulty.
 - Boundary cases needed early for reading examples → prefer the **earlier** band.
 - Grammar prose: [teach now; don’t preview later](grammar-docs.md#teach-now-dont-preview-later) — no teaser links to peers the path has not reached yet.
+- A thin Beginner that only says “see Intermediate” does **not** earn a Beginner slot. Give one usable pattern, or drop the page from the Beginner path.
 
 ## Cross-doc path
 <a id="cross-doc-path"></a>
@@ -42,15 +43,18 @@ Read **`docs/grammar/`** only, in band order. [why-agelan.md](../grammar/why-age
 3. [core.md Beginner](../grammar/core.md#beginner)
 4. [phonology.md Beginner](../grammar/phonology.md#beginner) (letters / word edges; optional early)
 5. [reference-suffix.md Beginner](../grammar/reference-suffix.md#beginner)
-6. [pronouns.md](../grammar/pronouns.md#beginner) · [plurality.md](../grammar/plurality.md#beginner) · [questions.md](../grammar/questions.md#beginner)
-7. [predication.md](../grammar/predication.md#beginner) · [revisers.md](../grammar/revisers.md#beginner) · [restrictors.md](../grammar/restrictors.md#beginner)
-8. [coordination.md](../grammar/coordination.md#beginner) · [spans.md](../grammar/spans.md#beginner)
-9. [numbers.md](../grammar/numbers.md#beginner) · [comparatives.md](../grammar/comparatives.md#beginner) · [causation.md](../grammar/causation.md#beginner)
-10. [values.md](../grammar/values.md#beginner) · [special-vocabulary.md](../grammar/special-vocabulary.md#beginner) · [x-compounds.md](../grammar/x-compounds.md#beginner)
+6. [pronouns.md](../grammar/pronouns.md#beginner) · [plurality.md](../grammar/plurality.md#beginner)
+7. [predication.md](../grammar/predication.md#beginner)
+8. [coordination.md](../grammar/coordination.md#beginner)
+9. [questions.md](../grammar/questions.md#beginner)
+10. [revisers.md](../grammar/revisers.md#beginner) · [restrictors.md](../grammar/restrictors.md#beginner)
+11. [spans.md](../grammar/spans.md#beginner)
+12. [numbers.md](../grammar/numbers.md#beginner) · [comparatives.md](../grammar/comparatives.md#beginner) · [causation.md](../grammar/causation.md#beginner)
+13. [values.md](../grammar/values.md#beginner) · [special-vocabulary.md](../grammar/special-vocabulary.md#beginner) · [x-compounds.md](../grammar/x-compounds.md#beginner)
 
 ### Intermediate then Advanced
 
-10. Every peer’s **[Intermediate](../grammar/core.md#intermediate)** section (same dependency order as above is fine).
-11. Every peer’s **Advanced** section.
+14. Every peer’s **[Intermediate](../grammar/core.md#intermediate)** section (same dependency order as above is fine).
+15. Every peer’s **Advanced** section.
 
 Learner-facing reading order: site sidebar (**Suggested reading order**); banding notes: [introduction.md § How to learn](../grammar/introduction.md#how-to-learn).

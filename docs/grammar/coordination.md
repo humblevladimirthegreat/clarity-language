@@ -589,7 +589,7 @@ VP `/v/`…**-n** spellings are [join-act verbs](special-vocabulary.md#join-act-
 - `/h/` in SHARED after the join → shared over every conjunct.
 - `/h/` inside a conjunct → that VP only.
 
-**Clause-level** — `/x/` is **same-force continuation**. Non-initial conjuncts **inherit** opener force and omit `/j/` (including recoverable **`jal`**). One illocution for the whole fence; mixed force inside one fence is illegal.
+**Clause-level** — `/x/` is **same-force continuation**. Non-initial conjuncts **inherit** opener force and omit `/j/` (including recoverable **`jal`**). One speech act for the whole fence; mixed force inside one fence is illegal.
 
 ```
 `A B C xan.`

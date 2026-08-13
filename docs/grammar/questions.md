@@ -33,7 +33,7 @@ gloss: `j-ask` · `z-speaker` · `v-go`
 ```
 `jol zar vawul.`
 
-gloss: `j-ask` · `z-ar` · `v-go`
+gloss: `j-ask` · `z-who` · `v-go`
 
 *Who goes?* (fill-ask)
 ```
@@ -99,6 +99,14 @@ gloss: `z-speaker` · `v-go` · `j-yes`
 ```
 
 **Trap:** do not sprinkle **`jael`** as empty English *yeah*. Keep **`ae`** (match / *true*) distinct from **`ao`** (uptake / *ok*). **`jul`** is **prohibition** force (*don't…*), not polar *no*.
+
+These three jobs stay distinct:
+
+| System | Forms | Job |
+|--------|-------|-----|
+| Clause force | **`jal`** / **`jul`** | statement vs *don’t…* |
+| Polar stance | **`jael`** / **`juel`** / **`jaol`** | *true* vs *false* vs *I’ll take that* |
+| Denial inside the clause | **`zul`** / **`vul`** / **`xul`** | *not X* / *no* as a join |
 
 A fill answer **need not** keep **-r** — bare content, focus **-l** / **-m** / **-n**, or a longer list is fine ([fill-ask answers](#fill-ask-answers)).
 

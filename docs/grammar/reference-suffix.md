@@ -37,7 +37,7 @@ gloss: `z-grace` · `v-walk`
 ```
 `zazawar vawul.`
 
-gloss: `z-r` · `v-walk`
+gloss: `z-←grace` · `v-walk`
 
 *He/she/it goes.* (resume — stem from prior mention; see [pronouns](pronouns.md))
 ```

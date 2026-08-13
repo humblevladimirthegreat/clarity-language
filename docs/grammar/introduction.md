@@ -37,7 +37,7 @@ Follow the **Suggested reading order** in the site sidebar (same sequence on eve
 ## Acknowledgments
 <a id="acknowledgments"></a>
 
-I would like to thank ClearerThinking.org and their book The 12 Levers for being a helpful compository of scientifically-validated  personal growth techniques and noting their safety conditions.
+I would like to thank ClearerThinking.org and their book The 12 Levers for being a helpful compendium of scientifically-validated personal growth techniques and noting their safety conditions.
 
 I would also like to thank the Conlangs community on Reddit for their wealth of resources, ideas, and support for conlangers everywhere.
 

@@ -22,6 +22,8 @@ Per-feature teaching already has its practice: rule → mnemonic → 1–3 worke
 
 **Skip thin pages** unless the form is productive — e.g. phonology letter charts, small closed inventories. Favor pages that stack productive syntax (core, coordination, questions, …).
 
+**Status:** only [core.md Beginner](../grammar/core.md#translation-practice) has a checkpoint so far. The template below stands; **next pages:** coordination, questions, values. Skip phonology, x-compounds, and overlay lists.
+
 ## What belongs where
 <a id="what-belongs-where"></a>
 

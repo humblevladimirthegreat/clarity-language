@@ -28,7 +28,7 @@ gloss: `z-grace-sh` · `v-walk`
 ```
 `zazawarsh vahural.`
 
-gloss: `z-r-sh` · `v-sit`
+gloss: `z-←grace-sh` · `v-sit`
 
 *They (that one and associates) sit.*
 ```

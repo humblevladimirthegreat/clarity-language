@@ -43,7 +43,9 @@ gloss: `z-speaker` · `v-go` · `hal`
 *I never go.*
 ```
 
-### Bare workhorses
+### The forms (closed starter set)
+
+These are the restrictors you use first — a **small closed list**, not a join table with missing cells. Other join spellings under `/h/` / `/w/` have no circumstance reading until Intermediate / Advanced.
 
 | Form | Bare reading |
 |------|----------------|

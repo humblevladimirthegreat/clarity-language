@@ -21,7 +21,7 @@ Same split as number shorthand (`g+3` written, full CV spoken). Prefer brackets 
 | Brackets | Span type |
 |----------|-----------|
 | `[` … `]` | **cite** — attributed speech / cited wording (including title strings and proverbs cited as wording) |
-| `{` … `}` | **mention** — use–mention; form / label as designated surface; with **-n**, *the saying / proverb / title X* as a named unit |
+| `{` … `}` | **mention** — the word or form itself (*the word X*); with **-n**, *the saying / proverb / title X* as a named unit |
 | `(` … `)` | **aside** — parenthetical digression; still asserted |
 | `<` … `>` | **opaque** — foreign, code, raw orthography; **do not** parse interior as Agelan |
 
@@ -58,7 +58,7 @@ Use a span when:
 
 - citing someone’s words, a title string, or a proverb **as wording** (**cite**)
 - mid-sentence parenthetical digression (**aside** — prefer PoS `/h/`; must not use floating `/j/`)
-- use–mention, or *the saying / title X* as a named unit (**mention**; prefer **`@`** / **-n** for the named-unit reading)
+- talking about the word or form itself, or *the saying / title X* as a named unit (**mention**; prefer **`@`** / **-n** for the named-unit reading)
 - foreign, code, or other surface the parser must **not** read as Agelan (**opaque**)
 - referring back to a prior span (**anaphor** **-r** / `…[=]`)
 
@@ -68,7 +68,7 @@ Prefer **atomic** one-token forms for a single cited / mentioned / opaque token 
 |---------|-----|
 | **Title-as-cite** / **proverb-as-cite** | **cite** `[…]` — deploy the **wording** |
 | **Title-as-mention** / **proverb-as-mention** | **mention** `{…}` — point at the **form** or **named unit** (prefer **`@`** / **-n**) |
-| Ordinary use–mention (*the word X*) | **mention** exact / paraphrase |
+| Ordinary *the word X* | **mention** exact / paraphrase |
 
 ### Part of speech (slot)
 <a id="pos"></a>
@@ -103,7 +103,7 @@ gloss: `j-command` · `z-you` · `v-[oops]` · `d-me`
 |------|-----|
 | **Raw foreign / code / unparsed surface** | **opaque** — `d<sushi>` (no ending after `>`); keep the source’s **casing** inside `<>` when that orthography uses case (`d<NaCl>`, `d<iPhone>`) — [capitalization](core.md#capitalization) |
 | **Compact foreign content word** | `PoS<…>ENDING` — e.g. `d<sushi>l`, `z<Sam>n` (ordinary word, not a span fence); same casing rule inside `<>` |
-| **Use–mention** | **mention** — `d{…}` |
+| **The word or form itself** | **mention** — `d{…}` |
 | **Title string / proverb as wording** | **cite** — `d[…]` / `d@[…]` |
 | ***The title X* / *the proverb X*** as named unit | **mention** **-n** — `d@{…}` |
 | **Nativized loan** | ordinary PoS + root + ending — no span |
@@ -146,7 +146,7 @@ Only **a** / **e** / **o** / **u** on TYPE. No stacked vowels on TYPE.
 |------|------|---------|
 | **a** | **cite** — cited wording; clausal interiors: outer speaker does **not** assert | `[` … `]` |
 | **e** | **aside** — digression; outer speaker **does** assert | `(` … `)` |
-| **o** | **mention** — use–mention / form-as-object; with **-n**, named unit | `{` … `}` |
+| **o** | **mention** — the word or form as object; with **-n**, named unit | `{` … `}` |
 | **u** | **opaque** — foreign / code / raw blob; parser **skips** interior | `<` … `>` |
 
 Scare / ironic *“so-called”* distance is not a separate TYPE; use ordinary lexicon attitude if needed.

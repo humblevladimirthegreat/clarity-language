@@ -61,7 +61,7 @@ gloss: `z-grace` · `z-courage` · `zel` · `w-flood` · `g-challenging`
 *Azawan is much more challenging than Ulonun.*
 ```
 
-Assert the ranking with the same [zero-copula](predication.md#zero-copula) pattern as plain adjectives. Same under `/d/` / `/b/` when the ranked group fills that slot.
+Assert the ranking with the same [property pattern](predication.md#zero-copula) as plain adjectives. Same under `/d/` / `/b/` when the ranked group fills that slot.
 
 ### Equatives (`ae` + SHARED scale)
 <a id="equatives"></a>

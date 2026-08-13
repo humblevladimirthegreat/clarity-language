@@ -176,7 +176,7 @@ Conceptual metaphors help you reach and remember the healthier frame by tying it
 
 This section addresses common criticisms regarding the use of language to influence thought.
 
-### Sapir-Whorf Hypothesis
+### Can a language change how you think?
 <a id="sapir-whorf-hypothesis"></a>
 
 Some don’t believe it is possible for a language to influence the speaker’s thoughts (the weak Sapir-Whorf Hypothesis). I make no claims here about whether it happens for natural languages, but for Agelan specifically, I give the following argument:
@@ -206,4 +206,4 @@ Even if the language does lose its potency over a century, having a positive imp
 ## Next
 <a id="next"></a>
 
-Continue with [introduction.md](introduction.md) for the name, grammar design, and how to learn these docs, then [core.md](core.md#beginner) for clause shape. Community updates: [r/ClarityLanguage](https://www.reddit.com/r/ClarityLanguage).
+Continue with [introduction.md](introduction.md) for the name, grammar design, and how to learn these docs, then [core.md](core.md#beginner) for clause shape. Community updates: [Agelan on Reddit](https://www.reddit.com/r/ClarityLanguage).

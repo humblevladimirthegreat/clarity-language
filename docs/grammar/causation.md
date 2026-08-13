@@ -2,9 +2,9 @@
 <a id="causation"></a>
 <a id="necessary-sufficient"></a>
 
-How to say *A leads to B*, *A is enough for B*, and *B needs A* — using joins, restrictors, and **`IF`** / **`IFF`** / **`BECAUSE`**, not a dedicated cause-arrow word.
+How to say *A leads to B*, *A is enough for B*, and *B needs A* — using joins, restrictors, and *if* / *because*, not a dedicated cause-arrow word.
 
-**Needs:** [coordination.md](coordination.md) Beginner (inclusive / exclusion joins); [core.md](core.md) Intermediate ([dependent clauses](core.md#dependent-clauses) / **`odo`**).
+**Needs:** [coordination.md](coordination.md) Beginner (inclusive / exclusion joins); [core.md](core.md) Beginner ([dependent clauses](core.md#dependent-clauses) / **`odo`**).
 
 ## Beginner
 <a id="beginner"></a>
@@ -18,7 +18,7 @@ English *cause* / *leads to* / *needs* collapses distinctions that drive common 
 |------|----------------|
 | Treating one cause as the **only** cause | Default = **open inclusive** (*would work* / *open to*; others may count) |
 | Confusing **sufficient** with **necessary** | Two **different** constructions — never one bare *cause* join |
-| Hearing *if* as *iff* | Separate clause roots **`IF`** vs **`IFF`** ([below](#if-vs-iff)) |
+| Hearing *if* as *if and only if* | Separate clause roots for one-way *if* vs both-ways *if and only if* ([Intermediate](#if-vs-iff)) |
 
 **Mnemonic:** everyday causation is **cheap and open** — “this would work” — not “this alone is the law.”
 
@@ -32,7 +32,7 @@ Condition type is carried by **which** join / relation / restrictor you use, plu
 | **Antecedent** | the putative cause / condition (effort, clouds, …) |
 | **Consequent** | the effect / outcome (promotion, rain, …) |
 
-**Default layout:** consequent is the **host** (effect clause, outcome NP, or event being framed); antecedent sits in the **open-inclusive** or **without** slot (`…aom`, `haon b-…`, `huan b-…`, …).
+**Default layout:** the outcome is the **host** (effect clause, outcome noun, or event being framed); the condition sits in the **open-inclusive** slot (`…aom`, …).
 
 Informal glosses like *effort ⇒ promotion* are English-only teaching shortcuts — Agelan has no mid-clause arrow.
 
@@ -40,23 +40,32 @@ Informal glosses like *effort ⇒ promotion* are English-only teaching shortcuts
 <a id="sufficient"></a>
 <a id="np-poles"></a>
 
-When both poles are **nouns / phrases**, reuse the inclusive family already in [coordination](coordination.md) and [join-relations](special-vocabulary.md#join-relations).
+When both poles are **nouns / phrases**, reuse the inclusive family already in [coordination](coordination.md).
 
 | Prefer | Gloss | Job |
 |--------|--------|-----|
 | focus **`…aom`** (`zaom` / `daom` / …) | *at least X* / *X would work* | Open sufficient hit — others may count |
-| **`gaon` / `haon`** | *open to X* / *among options* | Same open bit as a join-relation toward `/b/` |
 | multi inclusive **`…ao…`** | several jointly listed hits | Multiple sufficient routes |
 
 Closed **`…aol`** (*X is enough* / full inclusive story) is the **stronger** twin — use when this alone settles the inclusive frame, not as the casual default.
 
-| Agelan (schematic) | Reading |
-|---------------------|---------|
-| `… haon beladel` on a promotion / advancement frame | *promotion is open to effort (among routes)* |
-| `zazel zaom` inside an outcome / goal frame whose host is promotion | *effort would work (for that outcome)* |
-| `zogulol zozono zaom` … rain frame | *clouds or snow would work (for rain)* |
+```
+`zazel zaom.`
 
-**Mnemonic:** open **`…aom` / `haon`** = *would work among routes* — the everyday *leads to* shape.
+gloss: `z-effort` · `z-would-work`
+
+*Effort would work (among other routes).*
+```
+
+```
+`zogulol zozonol zaom.`
+
+gloss: `z-cloud` · `z-snow` · `z-would-work`
+
+*Clouds or snow would work (for that outcome).*
+```
+
+**Mnemonic:** open **`…aom`** = *would work among routes* — the everyday *leads to* shape.
 
 ## Intermediate
 <a id="intermediate"></a>
@@ -105,10 +114,10 @@ When the antecedent and/or consequent is a **full clause**, clause inclusive **`
 Prefer subordination:
 
 ```
-matrix …  horodom / heluvem / hurugum  bodol   [dependent sentence]
+main sentence …  horodom / heluvem / hurugum  bodol   [dependent sentence]
 ```
 
-**`odo`** ([next-clause pronoun](pronouns.md#special-pronouns)) is matrix-final; the dependent is a full `/j/`… sentence — [dependent clauses](core.md#dependent-clauses). Open-sufficient vs necessary nudges then live on **which relation** you choose and on restrictors (`hal`, …).
+**`odo`** ([next-clause pronoun](pronouns.md#special-pronouns)) sits **last in the main sentence**; the dependent is a full sentence (own force word only if the speech act differs) — [dependent clauses](core.md#dependent-clauses). Open-sufficient vs necessary nudges then live on **which relation** you choose and on restrictors (`hal`, …).
 
 ### `IF` vs `IFF` vs `BECAUSE`
 <a id="if-vs-iff"></a>

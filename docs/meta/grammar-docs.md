@@ -14,7 +14,7 @@ Related meta:
 
 ## Dual role
 
-Each grammar page is both **source of truth** for its subsystem and **learner text**. Prefer teach-first structure over inventory-first dumps. Unassigned or rejected design stays in [TODO.md](../../TODO.md) or a short **Design notes** appendix — not in Beginner sections.
+Each grammar page is both **source of truth** for its subsystem and **learner text**. Prefer teach-first structure over inventory-first dumps in **Beginner**. **Advanced may be inventory-first**; if Advanced dwarfs Beginner, split the file. Unassigned or rejected design stays in [TODO.md](../../TODO.md) or a short **Design notes** appendix — not in Beginner sections.
 
 ## Present the current language only
 
@@ -47,7 +47,7 @@ Headings, leads, and asides must make sense to someone who never saw an earlier 
 ## Page skeleton
 
 1. **Title + one-line job** — the English job this page teaches (learner-facing). Sibling links only for real near-misses — not “this page owns / does not own” fencing.
-2. **Needs** (optional) — **rare.** Use only when the page is late and the dependency is not obvious from the [cross-doc path](learning-levels.md#cross-doc-path) (e.g. causation → joins + **`odo`**; comparatives → rank joins). Label as `**Needs:**` with one short link line. Do **not** ritualize “core Beginner; reference-suffix Beginner” on every page.
+2. **Needs** (optional) — **rare.** Use only when the page is late and the dependency is not obvious from the [cross-doc path](learning-levels.md#cross-doc-path) (e.g. causation → joins + **`odo`** from core Beginner; comparatives → rank joins). Label as `**Needs:**` with one short link line. Do **not** ritualize “core Beginner; reference-suffix Beginner” on every page.
 3. **`## Beginner` / `## Intermediate` / `## Advanced`** — per [learning-levels.md](learning-levels.md).
 4. Inside each band: **concept → rule in one breath → 1–3 examples → (optional contrast) → full table if needed**.
 5. Optional **See also** at the end — a few precise near-misses only; no long link walls in the lead (and no lead preview of later peers — [teach now; don’t preview later](#teach-now-dont-preview-later)).
@@ -60,7 +60,7 @@ Front matter that orients (psychological purpose / limits / feature criteria / b
 |-------|---------|
 | 1 | What you can *do* (English job) |
 | 2 | The Agelan shape (minimal pattern) |
-| 3 | A **mnemonic** so the form sticks (below) |
+| 3 | A **mnemonic** so the form sticks (Beginner; below) |
 | 4 | Worked example(s) |
 | 5 | Contrast with near-misses — **only when there is a real trap** (below) |
 | 6 | Inventory / edge cases |
@@ -69,7 +69,7 @@ Do not open a section with a complete paradigm table. Tables come after the patt
 
 ## Mnemonics
 
-Every teaching gets a **mnemonic** — something that makes the form memorable, not only grammatical.
+Every **Beginner** teaching gets a **mnemonic** — something that makes the form memorable, not only grammatical. Intermediate / Advanced inventories need not invent a cue per cell.
 
 Usual sources (prefer one; reuse the language’s own systems):
 
@@ -177,7 +177,7 @@ In each section, mention **only what that section is teaching**. Do not name, te
 
 **Test:** if the sentence’s only job is to name a topic the path has not reached yet, delete it. If it resolves a trap the learner will hit *now*, one link is enough — do not restate the other doc.
 
-Pages stay dual-role (learner text + source of truth): Intermediate / Advanced inventories and precise end anchors are fine when the *lead and Beginner teach block* stay slim.
+Pages stay dual-role (learner text + source of truth): Intermediate / Advanced inventories and precise end anchors are fine when the *lead and Beginner teach block* stay slim. If an Advanced inventory dwarfs the Beginner teach block, split the file.
 
 ## What belongs where
 

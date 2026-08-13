@@ -284,7 +284,7 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 2. No `→` etymology chains.
 3. No **-l** / **-m** / **-n** when they only selected the sense-root.
 4. Compounds / stance / role / span `x` pieces are segmented in English.
-5. **-r** uses `←…` (no trailing `-r`); **-sh** stays as `-sh`.
+5. **-r** uses `←…` (no trailing `-r`); **-sh** stays as `-sh`. Resume is `z-←grace`, not `z-r`. Fill-ask is `z-who`, not `z-ar`.
 6. Free English is on its own line (or grammar-table Gloss column) — **loose** by default; **strict** only when teaching packaging.
 
 ## See also

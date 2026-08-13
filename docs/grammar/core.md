@@ -1,4 +1,4 @@
-# Agelan core grammar (v0.7)
+# Agelan core grammar
 
 How to read and write an Agelan **sentence**: word roles, word shape, default order, how a turn starts (`/j/` vs `/x/`), and dependent sentences with **`odo`**.
 
@@ -266,14 +266,14 @@ gloss: `z-speaker` · `d-listener` · `d-next-clause` · `v-tell`
 |---------|------|---------|----------|
 | *because* | **`hurugum bodol`** | **`urugu`** | 🧱 *brick* → *foundation* |
 | *if* | **`horodom bodol`** | **`orodo`** | 🚪 *door* → *opportunity* |
-| *iff* | **`heluvem bodol`** | **`eluve`** | ↔️ *left-right* → *reciprocity* |
+| *if and only if* | **`heluvem bodol`** | **`eluve`** | ↔️ *left-right* → *reciprocity* |
 | *although* / *even though* | **`hezabem bodol`** | **`ezabe`** | 🦓 *zebra* → *contrast* |
 | *while* (concurrent) | **`hegumum bodol`** | **`egumu`** | ♊ *gemini* → *duality* |
 | *until* | **`hudemum bodol`** | **`udemu`** | ⏲️ *timer* → *deadline* |
 | *before* | **`hagagam bodol`** | **`agaga`** | 🎒 *backpack* → *preparation* |
 | *after* | **`hohuram bodol`** | **`ohura`** | ⌛ *hourglass-done* → *recency* |
 
-**Mnemonic:** same doorway shape for every adverbial subordinator — pick the relation root, keep **-m**, end the matrix on **`bodol`**. Discourse *however* / *meanwhile* stay `/x/` linkers ([below](#sentence-linkers)), not these `/h/` poles.
+**Mnemonic:** same doorway shape for every adverbial subordinator — pick the relation root, keep **-m**, end the main sentence on **`bodol`**. Discourse *however* / *meanwhile* stay `/x/` linkers ([below](#sentence-linkers)), not these `/h/` poles.
 
 Nesting dependents inside dependents is Intermediate ([nested dependents](#nested-dependents)).
 
