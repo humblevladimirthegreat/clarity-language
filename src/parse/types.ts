@@ -128,3 +128,113 @@ export type LexWord = MorphWord & {
   rootGloss?: RootGloss;
   reading: LexReading;
 };
+
+// ── Stage 3 sentence AST ────────────────────────────────────────────────────
+
+export type ImpliedForce = "jal" | "jam";
+
+export type ClauseForce =
+  | "jal"
+  | "jam"
+  | "jol"
+  | "jom"
+  | "jel"
+  | "jem"
+  | "jul"
+  | "jum";
+
+export type PunctKind = "period" | "qmark" | "bang";
+
+/** Left-edge cluster before a clause body. */
+export type LeftEdge = {
+  vocatives: LexWord[];
+  polars: LexWord[];
+  reviser?: LexWord;
+  force?: LexWord;
+  impliedForce?: ImpliedForce;
+};
+
+export type GPackage = {
+  word: LexWord;
+  bound?: LexWord;
+  modifiers: LexWord[];
+};
+
+export type NpHead = LexWord;
+
+export type NpPackage = {
+  glAdj?: GPackage;
+  head: NpHead;
+  adjs: GPackage[];
+};
+
+export type HUnit = {
+  word: LexWord;
+  bound?: LexWord;
+};
+
+export type CoordShared = GPackage | LexWord;
+
+export type NpItem =
+  | { kind: "package"; package: NpPackage }
+  | { kind: "island"; island: IslandUnit };
+
+export type NpCoord = {
+  level: "z" | "d" | "b";
+  parts: { items: NpItem[]; join?: LexWord; shared: CoordShared[] }[];
+};
+
+export type VpCoord = {
+  parts: { items: LexWord[]; join?: LexWord; shared: CoordShared[] }[];
+};
+
+export type ClauseCoord = {
+  parts: { clauses: Clause[]; join: LexWord }[];
+};
+
+export type SpanUnit = {
+  open: LexWord;
+  content: Clause[];
+  close: LexWord;
+};
+
+export type IslandUnit = {
+  units: Unit[];
+};
+
+export type OdoDependent = {
+  odo: LexWord;
+  clause: Clause;
+};
+
+export type Unit =
+  | { kind: "np"; coord: NpCoord }
+  | { kind: "vp"; coord: VpCoord }
+  | { kind: "predicate"; adj: GPackage }
+  | { kind: "h"; unit: HUnit }
+  | { kind: "linker"; word: LexWord }
+  | { kind: "reviser"; word: LexWord }
+  | { kind: "span"; span: SpanUnit }
+  | { kind: "writingSpan"; word: LexWord }
+  | { kind: "island"; island: IslandUnit }
+  | { kind: "clauseCoord"; coord: ClauseCoord };
+
+export type Clause = {
+  units: Unit[];
+  dependent?: OdoDependent;
+};
+
+export type BodyClause = {
+  linker?: LexWord;
+  clause: Clause;
+  punct?: PunctKind;
+};
+
+export type Utterance = {
+  left: LeftEdge;
+  bodies: BodyClause[];
+};
+
+export type ParseResult = {
+  utterances: Utterance[];
+};
