@@ -49,6 +49,7 @@ export default defineConfig({
       alias: {
         '@data': dataDir,
         '@lexicon-search': `${srcDir}/lexicon-search.ts`,
+        '@parse-browser': `${srcDir}/parse/browser.ts`,
       },
     },
     server: {
@@ -63,6 +64,7 @@ export default defineConfig({
       { text: 'Introduction', link: '/introduction' },
       { text: 'Core', link: '/core' },
       { text: 'Lexicon', link: '/lexicon' },
+      { text: 'Gloss overlay', link: '/gloss' },
     ],
     sidebar: [
       {
@@ -71,7 +73,10 @@ export default defineConfig({
       },
       {
         text: 'Tools',
-        items: [{ text: 'Lexicon', link: '/lexicon' }],
+        items: [
+          { text: 'Lexicon', link: '/lexicon' },
+          { text: 'Gloss overlay', link: '/gloss' },
+        ],
       },
     ],
     outline: {

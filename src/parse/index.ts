@@ -17,6 +17,12 @@ export { letterPrefix, numberMarkerIdentity, resolve } from "./resolve.js";
 export { classifyToTokenType } from "./tokens.js";
 export { segmentUtterance, tokenizeUtterance } from "./tokenize.js";
 export { parseWord, parseWords, WordParseError } from "./word.js";
+export { inspectText, glossFor, chipsFor, morphDetails, endingSense } from "./inspect.js";
+export type {
+  InspectError,
+  InspectResult,
+  InspectToken,
+} from "./inspect.js";
 export type * from "./types.js";
 
 let defaultTables: ClassifyTables | null = null;
