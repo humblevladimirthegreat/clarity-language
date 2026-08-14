@@ -168,3 +168,16 @@ describe("parse — illegal fences", () => {
     assert.throws(() => parseSentenceTokens(tokens), SentenceParseError);
   });
 });
+
+describe("parse — stage 4 resolve", () => {
+  it("attaches resolve to parse(text)", () => {
+    const result = parseText("zulonun vawul. zulor vahural.");
+    assert.ok(result.resolve);
+    assert.equal(result.resolve.anaphors[0]?.antecedent?.raw, "zulonun");
+  });
+
+  it("marks jol zar vawul. as fill-ask", () => {
+    const result = parseText("jol zar vawul.");
+    assert.equal(result.resolve?.asks[0]?.kind, "fillAsk");
+  });
+});

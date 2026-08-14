@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 import type { IToken } from "chevrotain";
 
 import { createClassifyTables, type ClassifyTables } from "./classify.js";
+import { resolve } from "./resolve.js";
 import { parseSentenceTokens, SentenceParseError } from "./sentence-parser.js";
 import { tokenizeUtterance } from "./tokenize.js";
 import { Bang, Force, Period, Polar, QMark, Reviser, Vocative } from "./tokens.js";
@@ -12,6 +13,7 @@ import type { ParseResult } from "./types.js";
 
 export { classify, classifyAll, createClassifyTables, NEED_ROOTS } from "./classify.js";
 export { parseSentenceTokens, SentenceParseError } from "./sentence-parser.js";
+export { letterPrefix, numberMarkerIdentity, resolve } from "./resolve.js";
 export { classifyToTokenType } from "./tokens.js";
 export { segmentUtterance, tokenizeUtterance } from "./tokenize.js";
 export { parseWord, parseWords, WordParseError } from "./word.js";
@@ -74,5 +76,5 @@ export function parse(text: string, tables?: ClassifyTables): ParseResult {
     return parseSentenceTokens(group).utterances;
   });
 
-  return { utterances };
+  return resolve({ utterances });
 }

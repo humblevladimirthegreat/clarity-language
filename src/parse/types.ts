@@ -237,4 +237,55 @@ export type Utterance = {
 
 export type ParseResult = {
   utterances: Utterance[];
+  /** Stage 4 discourse annotations. Present after `parse()` / `resolve()`. */
+  resolve?: ResolveInfo;
+};
+
+// ── Stage 4 resolve ─────────────────────────────────────────────────────────
+
+export type ContentMatch = "letter" | "fullRoot";
+
+export type AnaphorKind = "content" | "span" | "number" | "role";
+
+export type AnaphorBind = {
+  pronoun: LexWord;
+  kind: AnaphorKind;
+  /** Content letter vs full-root match. */
+  match?: ContentMatch;
+  /** Span TYPE vowel (cite / aside / mention / opaque). */
+  typeVowel?: "a" | "e" | "o" | "u";
+  /** Role compound vowel (agent / patient / reltum). */
+  roleVowel?: "a" | "u" | "o";
+  /** Absent when no prior match. */
+  antecedent?: LexWord;
+};
+
+export type AskKind = "yesNo" | "fillAsk" | "none";
+
+export type AskRecord = {
+  utteranceIndex: number;
+  kind: AskKind;
+  /** Join `-r` gaps in spoken order (fill-all). */
+  gaps: LexWord[];
+};
+
+export type SharedRole =
+  | "distribute"
+  | "collective"
+  | "scale"
+  | "equative"
+  | "continuum"
+  | "kind"
+  | "ordinary";
+
+export type SharedRecord = {
+  join: LexWord;
+  role: SharedRole;
+  shared: GPackage;
+};
+
+export type ResolveInfo = {
+  anaphors: AnaphorBind[];
+  asks: AskRecord[];
+  shared: SharedRecord[];
 };

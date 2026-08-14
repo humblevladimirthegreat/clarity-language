@@ -1,38 +1,35 @@
-# Proposal: library-first multi-stage parser
+# Parser pipeline
 
-**Status:** PROPOSED  
-**Design authority:** remains [`docs/grammar/`](../grammar/introduction.md) — parsers implement the docs; they do not define the language.  
+**Status:** CURRENT  
+**Design authority:** [`docs/grammar/`](../grammar/introduction.md) — parsers implement the docs; they do not define the language.
 
-## Motivation
-
-Agelan is meant to be surface-unambiguous (PoS prefixes, right-close joins, mid-word **`x`** families with a documented decision order). Tooling still needs a real parser for CLI checks, future UI, and fixtures that lock the grammar docs.
-
-Hand-rolled combinators and one giant CFG both tend to accumulate bugs: either custom backtracking logic, or a grammar that silently diverges from prose decision procedures. This proposal minimizes **custom parsing algorithms** by putting recursive / ordered-choice structure in mature libraries, and keeping TypeScript to **wiring + table lookup**.
+Library-first multi-stage parser for CLI checks, fixtures that lock the grammar docs, and later UI. Recursive / ordered-choice structure lives in Peggy and Chevrotain; TypeScript is wiring, table lookup, AST assembly, and a discourse post-pass.
 
 ## Goals
 
 1. **Library-owned string and clause structure** — morphology, numbers, writing atoms, joins, spans, utterance framing.
-2. **Thin custom layer** — lexicon/overlay classification, token adapters, AST assembly, orchestration.
+2. **Thin custom layer** — lexicon/overlay classification, token adapters, AST assembly, orchestration, resolve.
 3. **Doc sync** — mid-word **`x`** rule order mirrors [x-compounds.md](../grammar/x-compounds.md); number stems mirror [numbers.md](../grammar/numbers.md); sentence fences mirror [coordination.md](../grammar/coordination.md) / [spans.md](../grammar/spans.md) / [core.md](../grammar/core.md).
-4. **Testable stages** — morph fixtures and sentence fixtures can fail independently.
+4. **Testable stages** — morph fixtures, classify fixtures, sentence fixtures, and resolve fixtures fail independently.
 5. **No design authority creep** — if a parse fork is not in the docs, fix the docs or reject the input; do not paper over with backtracking across stages.
 
-## Non-goals
+## Non-goals (still out)
 
-- Full discourse resolve in v1 (anaphors, fill-ask vs yes/no reinterpretation) — optional later pass.
+- Multi-document / conversation-level discourse (this pipeline resolves within one `parse(text)` call).
+- Checking fill-ask *answers* against prior gaps.
 - Treating the parser as a substitute for grammar docs.
-- In-house PEG combinator kits as the foundation (acceptable only as a last resort if a library cannot express a stage).
+- In-house PEG combinator kits as the foundation.
 
-## Recommended stack
+## Stack
 
 | Layer | Library | Role |
 |-------|---------|------|
-| Word morph, number stems, writing forms | **[Peggy](https://peggyjs.org/)** | Mature PEG generator; **ordered choice** matches the [x-compounds decision order](../grammar/x-compounds.md#decision-order); packrat cache; generates JS + `.d.ts` |
-| Sentence / joins / spans / `odo` / framing | **[Chevrotain](https://chevrotain.io/)** | Mature TypeScript parser toolkit; grammar as TS (no second codegen for this stage); CST / error recovery; operates on **typed word tokens**, not raw characters |
+| Word morph, number stems, writing forms | **[Peggy](https://peggyjs.org/)** | Ordered choice matches the [x-compounds decision order](../grammar/x-compounds.md#decision-order); generates JS + `.d.ts` at build time |
+| Sentence / joins / spans / `odo` / framing | **[Chevrotain](https://chevrotain.io/)** | Grammar as TS; CST → sentence AST; operates on **typed word tokens**, not raw characters |
 | Overlays and open roots | CSV → `Map` | [`lexicon-overlays.csv`](../../data/lexicon-overlays.csv), [`lexicon-published.csv`](../../data/lexicon-published.csv) — classification, not parsing |
-| Anaphor / question resolve | Post-pass (later) | Discourse over a finished AST |
+| Anaphor / question / SHARED resolve | [`src/parse/resolve.ts`](../../src/parse/resolve.ts) | Discourse over a finished AST |
 
-**Rejected for the foundation:** Parsimmon / Arcsecond / `typescript-parsec` (API fit, weak maintenance); Ohm as default (mature, but v18 API still in flux — revisit later if desired); Chevrotain alone for character-level morph (token-first model fights mid-word **`x`** / number spelling); a single mega-grammar for all stages.
+**Rejected for the foundation:** Parsimmon / Arcsecond / `typescript-parsec`; Ohm as default; Chevrotain alone for character-level morph; a single mega-grammar for all stages.
 
 ## Pipeline
 
@@ -41,7 +38,7 @@ Agelan text
     │
     ▼
 ┌──────────────────────────────────────┐
-│  Peggy — WordGrammar                 │
+│  Peggy — grammar/word.peggy          │
 │  PoS / gl- / endings / -sh           │
 │  <> foreign, writing atoms, numbers  │
 │  xFamily via alternation order       │
@@ -61,12 +58,23 @@ Agelan text
 │  right-close joins, span stacks      │
 │  ^ islands, odo dependents           │
 └──────────────────────────────────────┘
+    │  ParseResult.utterances
+    ▼
+┌──────────────────────────────────────┐
+│  resolve() — discourse sidecar       │
+│  -r anaphors, fill-ask vs yes/no     │
+│  SHARED /ɡ/ scale vs continuum vs …  │
+└──────────────────────────────────────┘
     │
     ▼
-AST  (+ optional resolve pass)
+ParseResult  (utterances + resolve)
 ```
 
+Public entry: `parse(text)` in [`src/parse/index.ts`](../../src/parse/index.ts). CLI: `npm run parse -- 'zazawan vawul.'`
+
 ### Stage 1 — Peggy (characters → `MorphWord`)
+
+[`grammar/word.peggy`](../../grammar/word.peggy) → [`src/generated/word-parser.js`](../../src/generated/word-parser.js) via `npm run generate:word`. Wrapper: [`src/parse/word.ts`](../../src/parse/word.ts).
 
 Owns every **string-shaped** subsystem:
 
@@ -77,24 +85,24 @@ Owns every **string-shaped** subsystem:
 - Span open/close **word shapes**; writing bracket atoms (`d@[…]`, …)
 - Prefix-less [revisers](../grammar/revisers.md)
 
-Semantic actions build a small discriminated `MorphWord` only. **No lexicon calls inside Peggy.**
+Semantic actions build a discriminated `MorphWord` only. **No lexicon calls inside Peggy.**
 
 ### Stage 2 — classify (tables → `LexWord`)
 
-Lookup order (sketch):
+[`src/parse/classify.ts`](../../src/parse/classify.ts). Lookup order:
 
-1. Overlay hit on `(sense_form, pos)` → closed special vocabulary reading  
-2. Else already-classified number stem → stay number  
-3. Else published root (and need-list when values apply)  
-4. Else unknown / foreign payload  
+1. Overlay hit on `(sense_form, pos)` → closed special vocabulary reading
+2. Else already-classified number stem → stay number
+3. Else published root (and need-list when values apply)
+4. Else unknown / foreign payload
 
 This is where join-act vs soft clause **-n**, mood vs manner, value vs ability, etc. become **readings** without re-parsing spelling.
 
 ### Stage 3 — Chevrotain (typed tokens → sentence AST)
 
-A thin adapter maps `LexWord[]` → Chevrotain `IToken[]` (no second character lexer).
+Adapter: [`src/parse/tokens.ts`](../../src/parse/tokens.ts) / [`src/parse/tokenize.ts`](../../src/parse/tokenize.ts) maps `LexWord[]` plus peeled `.` `?` `!` `^` → Chevrotain `IToken[]` (no second character lexer). Grammar: [`src/parse/sentence-parser.ts`](../../src/parse/sentence-parser.ts).
 
-Grammar rules own:
+Owns:
 
 - Utterance framing ([core.md](../grammar/core.md) — `/j/` turns, omissible default assertoric, `/x/` continue)
 - Right-close joins at phrase / VP / clause level; [frame echo](../grammar/coordination.md#frame-echo) as two sequential closes (no illegal left fence)
@@ -102,152 +110,115 @@ Grammar rules own:
 - Complex `/ɡ|h/` + `/b/`; floating `/h/` as adjuncts
 - Matrix-final **`odo`** + contiguous dependent
 
-Fence nesting lives **in the Chevrotain grammar**, not a hand-maintained stack helper.
+Recovery is off. Illegal left fences, infix joins, and binderless islands throw `SentenceParseError`.
 
-### Stage 4 — resolve (optional, later)
+### Stage 4 — resolve (AST → discourse sidecar)
 
-**-r** anaphors, question force reinterpretation of join **-r**, SHARED `/ɡ/` after rank joins (scale vs continuum vs distribute). Structure first; discourse second.
+[`src/parse/resolve.ts`](../../src/parse/resolve.ts). `parse(text)` always runs it; `resolve(result)` is also exported. Annotations sit on `ParseResult.resolve` — the Stage 3 tree is unchanged.
+
+| Job | Rule |
+|-----|------|
+| Content **-r** | Most recent prior root whose full stem **or** letter prefix (cut through the 2nd vowel) matches ([pronouns.md](../grammar/pronouns.md)) |
+| Span **-r** / `d[=]` | Most recent span open of that TYPE ([spans.md](../grammar/spans.md)) |
+| Number **-r** / `g=+` | Most recent number with the same marker identity ([numbers.md](../grammar/numbers.md#number-endings)) |
+| Role **-r** | Most recent verb / event noun / relation / role compound with that ROOT ([roles.md](../grammar/roles.md)) |
+| Join **-r** under `jol` / `jom` | Fill-ask gaps in spoken order; none → yes/no ([questions.md](../grammar/questions.md)) |
+| SHARED `/ɡ/` after a join | `scale` / `equative` / `distribute` / `collective` / `continuum` / `kind` / `ordinary` from join series + conjunct kinds |
+
+Skipped as anaphors: join **-r** (ask / unspecified-member), restrictors, values / ability ending channels. Dangling resumes are recorded with no `antecedent` — they do not fail the parse.
+
+SHARED classification is **structural** (join vowel + whether conjuncts are number words). The lexicon CSV has no gradable / continuum column yet.
 
 ## Custom code budget
-
-Expect glue, not parser engines:
 
 | Allowed custom | Not allowed as “the parser” |
 |----------------|-----------------------------|
 | `classify` Map lookups + small PoS/ending branches | Recursive morph / number descent |
 | `LexWord` → `IToken` adapter | Character-level backtracking toolkit |
 | Peggy / Chevrotain action bodies that build AST nodes | Parallel hand fence-stack that duplicates Chevrotain rules |
+| `resolve` walks over a finished AST | Re-parsing spelling to bind anaphors |
 | `parse(text)` orchestration + CLI | Silent recovery that invents structure absent from docs |
 
-Principle: **mature libraries parse; repo code classifies and assembles.** If a rule is in `docs/grammar/`, it should appear as a Peggy/Chevrotain production or a CSV row.
+Principle: **mature libraries parse; repo code classifies, assembles, and annotates.** If a rule is in `docs/grammar/`, it should appear as a Peggy/Chevrotain production, a CSV row, or an explicit resolve walk.
 
-## Suggested repo layout
+## Repo layout
 
 ```text
-grammar/                         # machine grammars (not design authority)
+grammar/
   word.peggy                     # Peggy — morph + numbers + writing atoms
 src/
-  generated/word-parser.js       # Peggy output (+ .d.ts)
+  generated/word-parser.js       # Peggy output (+ .d.ts) — import this, do not generate at runtime
   parse/
-    classify.ts
-    tokens.ts                    # LexWord → Chevrotain tokens
-    sentence-parser.ts           # Chevrotain rules
-    index.ts                     # parse(text) pipeline
-    types.ts                     # MorphWord / LexWord / AST
+    word.ts                      # Stage 1 wrapper
+    classify.ts                  # Stage 2
+    tokenize.ts / tokens.ts      # peel .?!^ ; LexWord → IToken
+    sentence-parser.ts           # Stage 3 Chevrotain
+    resolve.ts                   # Stage 4
+    index.ts                     # parse(text)
+    types.ts                     # MorphWord / LexWord / AST / ResolveInfo
+    cli.ts                       # npm run parse
 data/
   lexicon-overlays.csv
   lexicon-published.csv
 ```
 
-npm scripts (illustrative): Peggy generate; `tsx` fixture tests; public `parse` CLI once stage 3 exists. Chevrotain needs no generate step.
+npm scripts: `generate:word` (Peggy); `build` (generate + `tsc`); `test`; `parse`. Chevrotain needs no generate step.
 
-## IR sketch
+## IR
 
-```ts
-type MorphWord = {
-  raw: string;
-  pos?: "z" | "d" | "b" | "v" | "g" | "w" | "h" | "x" | "j"; // absent = reviser
-  ending?: "l" | "m" | "n" | "r";
-  plural?: boolean;
-  family:
-    | { kind: "content"; roots: string[] }
-    | { kind: "number"; stem: /* number AST */ unknown }
-    | { kind: "x"; xFamily: "span" | "role" | "value" | "ability" | "numeric" | "compound" }
-    | { kind: "spanClose" }
-    | { kind: "reviser"; form: string }
-    | { kind: "joinMarker"; level: "phrase" | "vp" | "clause"; series: string };
-};
+Canonical types: [`src/parse/types.ts`](../../src/parse/types.ts).
 
-type LexWord = MorphWord & {
-  overlay?: { sense_form: string; pos: string; definition: string };
-  rootGloss?: { literal?: string; metaphorical?: string };
-  reading:
-    | "ordinary"
-    | "value"
-    | "restrictor"
-    | "mood"
-    | "joinAct"
-    | "joinRelation"
-    | "number"
-    | "unknown";
-};
-```
-
-Refine fields when implementation starts; keep the **stage split** stable.
-
-## Build order
-
-1. Peggy word grammar + fixtures (`zumogon`, `g+3`, `daxal` / `xuxul`, `veguxel`, revisers, number shorthand vs speech).  
-2. `classify` against overlays + published roots.  
-3. Chevrotain sentence over synthetic `LexWord[]` (`/j/` / `/x/`, joins first).  
-4. Spans + **`odo`** in Chevrotain.  
-5. End-to-end `parse(text)` + doc-derived fixture suite.
+- **`MorphWord`** — Stage 1: `pos`, `ending`, `plural`, `gl`, discriminated `family` (`content` / `number` / `x` / `spanClose` / `reviser` / `joinMarker` / `writingSpan` / `foreign`).
+- **`LexWord`** — Stage 2: `MorphWord` plus `reading`, optional `overlay` / `rootGloss`.
+- **Sentence AST** — `Utterance` → `BodyClause` → `Clause` (`units`, optional `odo` `dependent`). Units: NP/VP coords, predicate `/ɡ/`, `/h/`, spans, islands, clause coords, revisers.
+- **`ResolveInfo`** — `anaphors[]`, `asks[]` (`yesNo` / `fillAsk` / `none`), `shared[]` (`SharedRole`).
 
 ## Browser / bundle size
 
-In-browser use is a **goal** (CLI and web share one pipeline). Both libraries support that; weight depends on **what is shipped at runtime**.
+In-browser use is a **goal** (CLI and web share one pipeline). Peggy is **pre-generated**; do **not** call `peggy.generate()` in the page. Chevrotain ships browser ESM.
 
-| Piece | Approx size (orders of magnitude) | Ship to browser? |
-|-------|-----------------------------------|------------------|
-| **Peggy compiler** (`peggy.min.js`) | ~161 KB min / **~44 KB gzip** | **No** — build-time only |
-| **Generated Peggy parser** (from `word.peggy`) | Toy morph ~19 KB / **~4 KB gzip**; full number + **`x`** grammar likely **tens of KB** gzip | **Yes** |
-| **Chevrotain** runtime | ~114 KB min / **~31 KB gzip** | **Yes** — fixed cost |
+A production **parse** bundle is **not wired yet** (`build:lexicon-web` only bundles lexicon search). Expected page cost once shipped: Chevrotain (~31 KB gzip) + generated morph parser (~5–40 KB gzip) + classify/AST/resolve glue → on the order of **~40–80 KB gzip** before lexicon data.
 
-**Expected page cost for this stack:** Chevrotain (~31 KB gzip) + generated morph parser (~5–40 KB gzip) + classify/AST glue → on the order of **~40–80 KB gzip** before lexicon data. Lexicon CSVs / search will often dominate.
+## What is shipped vs leftover
 
-### Practices
+**Shipped**
 
-- Generate the Peggy parser in `npm run build` (or a dedicated generate script); **import the generated JS** in Node and browser. Do **not** call `peggy.generate()` in the page unless building a live grammar editor.
-- Chevrotain ships browser ESM (`chevrotain.min.mjs`); no Node-only APIs needed for ordinary parsing.
-- Bundle with the same esbuild (or equivalent) path already used for lexicon web assets.
+- Peggy word grammar covers orthography, numbers (writing + speech), and [x-compounds](../grammar/x-compounds.md) decision order.
+- `classify` is table-driven from the two lexicon CSVs (plus the need-set for values).
+- Chevrotain sentence grammar covers framing, right-close joins, spans, islands, and **`odo`** dependents.
+- Public `parse(text)` returns a typed AST plus `resolve`; fixture tests drawn from `docs/grammar/`.
+- Peggy parser is pre-generated; `peggy` is a devDependency.
+- No ANTLR artifacts.
 
-### If size becomes a constraint later
+**Not yet**
 
-Chevrotain is the main **fixed** weight (~31 KB gzip floor; hard to tree-shake much further). Fallback options (not defaults):
+- Browser bundle of the parse pipeline.
+- Lexicon column for gradable / continuum adjectives (SHARED `scale` vs ordinary `/ɡ/` is join-driven for now).
+- Speech span anaphors (`daxur`) as NP-slot tokens — Chevrotain still treats all spoken span opens as fence openers; writing `d[=]` resolves.
+- Join-arity inventory checks beyond fence shape.
+- Multi-turn discourse outside one `parse(text)` call.
 
-1. **Peggy for both stages** — generated word + sentence parsers, no Chevrotain runtime (likely smaller; sentence fences are more awkward in pure PEG).  
-2. **Peggy morph + thin hand clause parser** — lightest runtime, more custom code (against the library-first goal).
-
-Browser use does **not** block adopting Peggy + Chevrotain as proposed.
-
-## Risks and mitigations
+## Risks
 
 | Risk | Mitigation |
 |------|------------|
 | Peggy grammar drifts from docs | Fixtures quoted from grammar pages; fail CI on mismatch |
 | Chevrotain LL(k) vs PEG morph | Morph finished before clause stage; clause tokens are already disambiguated |
 | Overlay vs restrictor vs value same spelling | `classify` tables + PoS/ending; document any residual ambiguity as a language bug |
-| Scope creep into discourse | Ship AST without resolve; add stage 4 explicitly later |
-| Ohm temptation mid-project | Stick to Peggy unless a concrete Ohm feature blocks shipping |
-| Accidental Peggy-compiler-in-bundle | Generate at build time; CI/bundle check that `peggy` is not a production browser dependency |
-
-## Alternatives considered
-
-| Alternative | Why not default |
-|-------------|-----------------|
-| In-house PEG combinators | Minimizes deps but maximizes bug surface — opposite of this proposal’s goal |
-| Chevrotain-only | Poor fit for mid-word / number character structure |
-| Peggy-only through clauses | Possible (and likely **smaller** in-browser); typed-token Chevrotain still preferred for join/span fence work and TS tooling in v1 |
-| Ohm instead of Peggy | Strong toolkit; prefer stable Peggy generate path for v1 |
-| Single-stage “full language” grammar | Mixes lexicon policy with spelling; harder to test and to keep aligned with docs |
-
-## Acceptance criteria (for absorbing this proposal)
-
-- [ ] Peggy word grammar covers orthography, numbers (both writing styles), and [x-compounds](../grammar/x-compounds.md) decision order.  
-- [ ] `classify` is table-driven from the two lexicon CSVs (plus explicit need-set if required for values).  
-- [ ] Chevrotain sentence grammar covers framing, right-close joins, spans, and **`odo`** dependents.  
-- [ ] Public `parse(text)` returns a typed AST; fixture tests drawn from `docs/grammar/`.  
-- [ ] Browser-ready: Peggy parser is **pre-generated**; production browser bundles do not include the Peggy compiler.  
-- [x] Docs remain sole design authority; no legacy parser artifacts in the repo.
+| Resolve over-binds (join `-r`, value `-r`) | Explicit skip list; fixtures that `zar` / `hobolaxar` are not content anaphors |
+| Accidental Peggy-compiler-in-bundle | Generate at build time; do not import `peggy` from `src/parse/` |
 
 ## Cross-links
 
 | Topic | Doc |
-|-------|-----|
+|-------|------|
 | Core sentence grammar / orthography / framing | [core.md](../grammar/core.md) |
 | Mid-word **`x`** families | [x-compounds.md](../grammar/x-compounds.md) |
 | Numbers | [numbers.md](../grammar/numbers.md) |
 | Joins | [coordination.md](../grammar/coordination.md) |
 | Spans | [spans.md](../grammar/spans.md) |
+| Pronouns / **-r** | [pronouns.md](../grammar/pronouns.md) |
+| Questions / fill-ask | [questions.md](../grammar/questions.md) |
+| Comparatives / SHARED scale | [comparatives.md](../grammar/comparatives.md) |
 | Overlays / special vocabulary | [special-vocabulary.md](../grammar/special-vocabulary.md) |
 | Revisers | [revisers.md](../grammar/revisers.md) |
