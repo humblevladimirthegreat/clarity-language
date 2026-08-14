@@ -10,11 +10,14 @@ import {
   normalizeTokenRange,
   selectionToTokenRange,
 } from './selectionToTokens'
+import { useAgelanSpeak } from '../composables/useAgelanSpeak'
 
 const props = defineProps<{
   result: InspectResult
   initialPinned?: boolean
 }>()
+
+const { busy, speakText } = useAgelanSpeak()
 
 const overlayRef = ref<HTMLElement | null>(null)
 const popoverRef = ref<HTMLElement | null>(null)
@@ -200,6 +203,12 @@ async function copyRaw() {
   } catch {
     copied.value = false
   }
+}
+
+function speakSelection() {
+  const text = copyText()
+  if (!text) return
+  void speakText(text)
 }
 
 function followWhy() {
@@ -423,6 +432,10 @@ function onKey(event: KeyboardEvent) {
     if (event.metaKey || event.ctrlKey) return
     event.preventDefault()
     void copyRaw()
+  } else if (event.key === 's' || event.key === 'S') {
+    if (event.metaKey || event.ctrlKey) return
+    event.preventDefault()
+    speakSelection()
   }
 }
 
@@ -494,6 +507,9 @@ onBeforeUnmount(() => {
         @jump="jump"
       />
       <div class="actions pin-actions">
+        <button type="button" class="btn" :disabled="!copyText()" @click="speakSelection">
+          {{ busy ? 'Stop' : 'Speak word' }}
+        </button>
         <button type="button" class="btn" @click="copyRaw">
           {{ copied ? 'Copied' : 'Copy romanized' }}
         </button>
@@ -532,6 +548,9 @@ onBeforeUnmount(() => {
         />
         <div class="actions">
           <button type="button" class="btn" @click="select(selected, true)">Pin</button>
+          <button type="button" class="btn" :disabled="!copyText()" @click="speakSelection">
+            {{ busy ? 'Stop' : 'Speak word' }}
+          </button>
           <button type="button" class="btn" :disabled="!copyText()" @click="copyRaw">
             {{ copied ? 'Copied' : 'Copy romanized' }}
           </button>

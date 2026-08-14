@@ -1,7 +1,7 @@
 # Proposal: usable learner TTS (in-browser)
 
-**Status:** PROPOSED  
-**Related:** long-term TODO *text to speech*; depends on [parser-pipeline.md](parser-pipeline.md) (**assumed shipped** — `parse(text)` → typed AST)  
+**Status:** PHASE 1 IN PROGRESS (phoneme core + Gloss overlay play)  
+**Related:** long-term TODO *text to speech*; depends on [parser-pipeline.md](../meta/parser-pipeline.md) (**assumed shipped** — `parse(text)` → typed AST)  
 **Design authority:** spoken forms stay in the grammar docs ([phonology.md](../grammar/phonology.md), [spans.md](../grammar/spans.md#writing-vs-speech), [numbers.md](../grammar/numbers.md#writing-preferred-shorthand), [core.md](../grammar/core.md#orthography-and-prosody-periods)). This proposal covers **tooling only**: writing → speech surface → audio.
 
 ## Motivation
@@ -59,7 +59,7 @@ Agelan text (writing or speech surface)
 
 | Stage | Input | Output | Owns |
 |-------|--------|--------|------|
-| **Parse** | Surface string | Typed AST | Existing library ([parser-pipeline.md](parser-pipeline.md)) |
+| **Parse** | Surface string | Typed AST | Existing library ([parser-pipeline.md](../meta/parser-pipeline.md)) |
 | **`toSpeech`** | AST | Ordered **speech tokens** + boundary tags | Writing↔speech maps in spans / numbers / core |
 | **`toPhonemes`** | Speech tokens | Phoneme strings + syllable breaks | [phonology.md](../grammar/phonology.md) letter table only |
 | **`synthesize`** | Phoneme plan | Audio | Third-party engine + thin adapter |
@@ -188,9 +188,10 @@ CLI: `npm run speak -- "zumogon guzem."` prints speech surface + phonemes and op
 
 | Surface | Behavior |
 |---------|----------|
-| Grammar doc examples | Play control on fenced Agelan lines / exercise keys |
+| **Gloss overlay** (Phase 1) | **Speak Agelan** on the paste box; **Speak word** / `s` on the inspect card. Lazy WASM. |
+| Grammar doc examples | Play control on fenced Agelan lines / exercise keys (Phase 5) |
 | Future web tools | Play selection or current sentence |
-| Errors | If `parse` fails, do not invent audio; show parse error (same as other tooling) |
+| Errors | If a token is not a native speech-shaped word, skip it; do not invent audio |
 
 Accessibility: Play button has an accessible name (“Speak Agelan”); do not autoplay on page load.
 
@@ -236,26 +237,26 @@ Expect the WASM voice pack to dwarf the TS glue; keep it out of the critical ren
 ## Acceptance criteria
 
 - [ ] `toSpeech(ast)` expands number shorthand and span writing forms to the spoken channel per grammar docs.  
-- [ ] `toPhonemes` matches the phonology letter table; stacked vowels are separate syllables; **-sh** is /ʃ/.  
-- [ ] In-browser Play speaks a parseable example offline after first WASM load.  
-- [ ] Opaque/foreign interiors never use Agelan G2P; loan policy is documented and tested.  
-- [ ] Fixtures cover at least: plain clause, plural **-sh**, compound mid-word **`x`**, free-number shorthand, multi-token cite with close, island boundaries, `?` / `/x/` continue.  
-- [ ] `previewSpeech` available for pedagogy (“show what will be spoken”).  
-- [ ] No cloud TTS required for native Agelan audio.
+- [x] `toPhonemes` matches the phonology letter table; stacked vowels are separate syllables; **-sh** is /ʃ/. (Phase 1)  
+- [ ] In-browser Play speaks a parseable example offline after first WASM load. (Phase 1 Gloss overlay)  
+- [ ] Opaque/foreign interiors never use Agelan G2P; loan policy is documented and tested. (Phase 1 skips them; loan islands are Phase 4)  
+- [ ] Fixtures cover at least: plain clause, plural **-sh**, compound mid-word **`x`**, free-number shorthand, multi-token cite with close, island boundaries, `?` / `/x/` continue. (Phase 1: plain / **-sh** / **`x`** / skip shorthand and islands; rest later)  
+- [x] `previewSpeech` available for pedagogy (“show what will be spoken”). (Phase 1 Gloss preview line + CLI)  
+- [x] No cloud TTS required for native Agelan audio.
 
 ## Phased delivery
 
-1. **Phoneme core** — native words only (already speech-shaped strings) + WASM play.  
+1. **Phoneme core** — native words only (already speech-shaped strings) + WASM play. **v1 surface:** [Gloss overlay](../grammar/gloss.md) (**Speak Agelan** / **Speak word**).  
 2. **Normalizer** — numbers + spans + period/`?`/`!` pauses.  
 3. **Framing cues** — `/j/` vs `/x/`, soft **-m**, islands.  
 4. **Loan islands** — `speechSynthesis` (or skip) for `<>` payloads.  
-5. **Doc UX** — Play on examples; `previewSpeech` toggle.
+5. **Doc UX** — Play on grammar examples; `previewSpeech` toggle in docs.
 
 ## Cross-links
 
 | Topic | Doc |
 |-------|-----|
-| Parser dependency | [parser-pipeline.md](parser-pipeline.md) |
+| Parser dependency | [parser-pipeline.md](../meta/parser-pipeline.md) |
 | Phonology / IPA | [phonology.md](../grammar/phonology.md) |
 | Writing vs speech (spans) | [spans.md](../grammar/spans.md#writing-vs-speech) |
 | Number shorthand vs speech | [numbers.md](../grammar/numbers.md#writing-preferred-shorthand) |

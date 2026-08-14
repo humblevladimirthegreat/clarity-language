@@ -50,6 +50,7 @@ export default defineConfig({
         '@data': dataDir,
         '@lexicon-search': `${srcDir}/lexicon-search.ts`,
         '@parse-browser': `${srcDir}/parse/browser.ts`,
+        '@tts-browser': `${srcDir}/tts/browser.ts`,
       },
     },
     server: {
