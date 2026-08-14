@@ -521,6 +521,113 @@ Each clause may have at most one main-sentence-final **`odo`**; a dependent may 
 
 A `/j/` **number** word is a call-out (*N more!*, score call, …), not clause force. It may sit in the left-edge cluster before force, or stand alone as a bare turn. Readings by marker: [numbers.md](numbers.md#number-as-interjection-by-marker).
 
+### Translation practice
+<a id="translation-practice-intermediate"></a>
+
+Short drills on this Intermediate band. Try each item before opening **Show answer**.
+
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `uzedu` *student* · `ogodo` *dog* · `agada` *cat* · `ulebu` *blue* · `edeje` *red* · `uze` smile → *happy* (**-m**) · `awu` *walk* · `urunu` *run* · `ezele` *sleep* · `ejo` *perception* (*see*) · `egu` *sing* · `ahura` *sit* · `azebo` *loud volume* · `amala` *therefore* · `ezabe` *however* / *although* · `ameno` *meanwhile* · `odo` *next clause* · `urugu` *because* (**-m** on `/h/`)
+
+#### English → Agelan
+
+**1.** *Maybe Azawan walks.*
+
+::: details Show answer
+`jam zazawan vawul.`
+:::
+
+**2.** *Is Ulonun happy, perhaps?*
+
+::: details Show answer
+`jom zulonun guzem?`
+:::
+
+**3.** *Please sing.*
+
+::: details Show answer
+`jem vegul!`
+:::
+
+**4.** *Please don’t run.*
+
+::: details Show answer
+`jum vurunul!`
+:::
+
+**5.** *A blue dog walks.* (adjective before the noun)
+
+::: details Show answer
+`glulebul zogodol vawul.`
+:::
+
+**6.** *Azawan sees a loud blue dog.* (adjective before the noun)
+
+::: details Show answer
+`zazawan glulebul wazebol dogodol vejol.`
+:::
+
+**7.** *Azawan walks. Therefore Ulonun runs.*
+
+::: details Show answer
+`zazawan vawul. xamalal zulonun vurunul.`
+:::
+
+**8.** *Azawan is happy because Ulonun walks because Ubuzun sleeps.*
+
+::: details Show answer
+`zazawan guzem hurugum bodol zulonun vawul hurugum bodol zubuzun vezelel.`
+:::
+
+#### Agelan → English
+
+**1.** `jam zubuzun vezelel.`
+
+::: details Show answer
+*Maybe Ubuzun sleeps.*
+:::
+
+**2.** `jom zazawan gezedul?`
+
+::: details Show answer
+*Is Azawan a student, perhaps?*
+:::
+
+**3.** `jem vahural!`
+
+::: details Show answer
+*Please sit.*
+:::
+
+**4.** `jum vawul!`
+
+::: details Show answer
+*Please don’t walk.*
+:::
+
+**5.** `gledejel zagadal vurunul.`
+
+::: details Show answer
+*A red cat runs.*
+:::
+
+**6.** `zulonun vawul. xezabel zazawan vezelel.`
+
+::: details Show answer
+*Ulonun walks. However Azawan sleeps.*
+:::
+
+**7.** `zazawan vawul. xamenol zulonun vezelel.`
+
+::: details Show answer
+*Azawan walks. Meanwhile Ulonun sleeps.*
+:::
+
+**8.** `zazawan vawul hurugum bodol zulonun guzem hezabem bodol zubuzun vezelel.`
+
+::: details Show answer
+*Azawan walks because Ulonun is happy although Ubuzun sleeps.*
+:::
+
 ## Advanced
 <a id="advanced"></a>
 

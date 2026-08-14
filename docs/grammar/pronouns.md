@@ -90,7 +90,113 @@ gloss: `z-speaker` · `v-tell` · `d-grace` · `d-next-clause` · `z-courage` ·
 *I told Azawan that Ulonun left.*
 ```
 
-## Intermediate
+### Translation practice
+<a id="translation-practice"></a>
+
+Short drills on this Beginner band. Try each item before opening **Show answer**.
+
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ogodo` *dog* · `ogobo` *book* · `awu` *walk* · `ahura` *sit* · `ezele` *sleep* · `urunu` *run* · `ejo` *see* · `ezabu` *tell* · `edabu` *depart* · `eleba` *size* / *big* · `umogo` *speaker* · `ehado` *listener* · `ana` *interlocutors* · `enu` *generic person* · `odo` *next clause*
+
+#### English → Agelan
+
+**1.** *Azawan walks. He sits.*
+
+::: details Show answer
+`zazawan vawul. zazawar vahural.`
+:::
+
+**2.** *A dog walks. A book is big. The dog sits.*
+
+::: details Show answer
+`zogodol vawul. zogobol gelebal. zogodor vahural.`
+:::
+
+**3.** *I walk.*
+
+::: details Show answer
+`zumogon vawul.`
+:::
+
+**4.** *We (you and I) walk.*
+
+::: details Show answer
+`zanan vawul.`
+:::
+
+**5.** *We (I and my people, not you) walk.*
+
+::: details Show answer
+`zumogonsh vawul.`
+:::
+
+**6.** *You all sit.*
+
+::: details Show answer
+`zehadonsh vahural.`
+:::
+
+**7.** *Someone sleeps.*
+
+::: details Show answer
+`zenun vezelel.`
+:::
+
+**8.** *I told Azawan that Ulonun left.*
+
+::: details Show answer
+`zumogon vezabul dazawan dodol zulonun vedabul.`
+:::
+
+#### Agelan → English
+
+**1.** `zulonun vawul. zulor vahural.`
+
+::: details Show answer
+*Ulonun walks. He sits.*
+:::
+
+**2.** `zogodol vezelel. zogobol gelebal. zogor vawul.`
+
+::: details Show answer
+*A dog sleeps. A book is big. The book walks.*
+:::
+
+**3.** `zazawan dehadon vejol.`
+
+::: details Show answer
+*Azawan sees you.*
+:::
+
+**4.** `zanan vezelel.`
+
+::: details Show answer
+*We (you and I) sleep.*
+:::
+
+**5.** `zazawansh vawul.`
+
+::: details Show answer
+*Azawan and associates walk.*
+:::
+
+**6.** `zenun vawul.`
+
+::: details Show answer
+*Someone walks.*
+:::
+
+**7.** `zazawan dulonun dodol vezabul zogodol vurunul.`
+
+::: details Show answer
+*Azawan tells Ulonun that the dog runs.*
+:::
+
+**8.** `jol zumogon vahural.`
+
+::: details Show answer
+*Do I sit?*
+:::
+
 <a id="intermediate"></a>
 
 ### How English approximates **-r**
@@ -173,6 +279,113 @@ Same referent, new role — English needs a longer paraphrase. Full PoS×PoS tab
 
 Prefer **`ana`** over a speaker+listener join when the point is **co-participant role**; prefer name joins when membership identity is the point; prefer name…**-sh** for associative cohorts.
 
+### Translation practice
+<a id="translation-practice-intermediate"></a>
+
+Short drills on this Intermediate band. Try each item before opening **Show answer**.
+
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `awu` *walk* · `urunu` *run* · `ezele` *sleep* · `ahura` *sit* · `ejo` *see* · `uze` smile → *happy* (**-m**) · `ada` *haste* · `ana` *interlocutors* · `umogo` *speaker* · `ehado` *listener*
+
+#### English → Agelan
+
+**1.** *Azawan walks. Ulonun does so.*
+
+::: details Show answer
+`zazawan vawul. zulonun vawur.`
+:::
+
+**2.** *Azawan is happy. Ulonun is such.*
+
+::: details Show answer
+`zazawan guzem. zulonun guzer.`
+:::
+
+**3.** *Azawan sees Ulonun. Ubuzun sees him.*
+
+::: details Show answer
+`zazawan dulonun vejol. zubuzun dulor vejol.`
+:::
+
+**4.** *Azawan walks. Ulonun runs. Going back to Azawan, he sleeps.*
+
+::: details Show answer
+`zazawan vawul. zulonun vurunul. xazawar vezelel.`
+:::
+
+**5.** *Azawan walks in haste. Ulonun runs that way.*
+
+::: details Show answer
+`zazawan hadal vawul. zulonun har vurunul.`
+:::
+
+**6.** *We (you and I) sit.*
+
+::: details Show answer
+`zanan vahural.`
+:::
+
+**7.** *Azawan and Ulonun walk.* (exact two people)
+
+::: details Show answer
+`zazawan zulonun zal vawul.`
+:::
+
+**8.** *Azawan and associates walk.*
+
+::: details Show answer
+`zazawansh vawul.`
+:::
+
+#### Agelan → English
+
+**1.** `zulonun vurunul. zazawan vurunur.`
+
+::: details Show answer
+*Ulonun runs. Azawan does so.*
+:::
+
+**2.** `zazawan dulonun vejol. zubuzun dulor vejol.`
+
+::: details Show answer
+*Azawan sees Ulonun. Ubuzun sees him.*
+:::
+
+**3.** `xulor vahural.`
+
+::: details Show answer
+*Going back to Ulonun, he sits.*
+:::
+
+**4.** `zazawan hadal vawul. zulonun har vurunul.`
+
+::: details Show answer
+*Azawan walks in haste. Ulonun runs that way.*
+:::
+
+**5.** `zanan vawul.`
+
+::: details Show answer
+*We (you and I) walk.*
+:::
+
+**6.** `zazawan zubuzun zal vezelel.`
+
+::: details Show answer
+*Azawan and Ubuzun sleep.*
+:::
+
+**7.** `zulonunsh vawul.`
+
+::: details Show answer
+*Ulonun and associates walk.*
+:::
+
+**8.** `zehadonsh vahural.`
+
+::: details Show answer
+*You all sit.*
+:::
+
 ## Advanced
 <a id="advanced"></a>
 
@@ -248,8 +461,77 @@ Each subsection is an **antecedent** role; table rows are the **pronoun** role. 
 | `/x/` from a content antecedent | *Going back to subject X* |
 | Noun / verb / adjective / adverb | Recast the *named formula or discourse label* as an ordinary referent — common for `-n` titles |
 
-## See also
+### Translation practice
+<a id="translation-practice-advanced"></a>
 
-- [reference-suffix.md](reference-suffix.md) — **-l** / **-m** / **-n** / **-r**
+Short drills on this Advanced band. Try each item before opening **Show answer**.
+
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ogodo` *dog* · `awu` *walk* · `urunu` *run* · `ahura` *sit* · `ezele` *sleep* · `eleba` *size* / *big* · `uze` smile → *happy* (**-m**) · `ada` *haste*
+
+#### English → Agelan
+
+**1.** *Azawan sits. Ulonun does that with him.*
+
+::: details Show answer
+`zazawan vahural. zulonun vazar.`
+:::
+
+**2.** *A dog walks. That action is big.*
+
+::: details Show answer
+`zogodol vawul. zawur gelebal.`
+:::
+
+**3.** *Azawan walks. By doing so, Ulonun sits.*
+
+::: details Show answer
+`zazawan vawul. zulonun hawur vahural.`
+:::
+
+**4.** *Azawan is happy. The happy one runs.*
+
+::: details Show answer
+`zazawan guzem. zuzer vurunul.`
+:::
+
+**5.** *Azawan is happy. Ulonun does that.*
+
+::: details Show answer
+`zazawan guzem. zulonun vuzer.`
+:::
+
+#### Agelan → English
+
+**1.** `zazawan vawul. gazar gelebal.`
+
+::: details Show answer
+*Azawan walks. That one's kind is big.*
+:::
+
+**2.** `zulonun vawul. zazawan hawur vahural.`
+
+::: details Show answer
+*Ulonun walks. By doing so, Azawan sits.*
+:::
+
+**3.** `zazawan guzem. zulonun vuzer.`
+
+::: details Show answer
+*Azawan is happy. Ulonun does that.*
+:::
+
+**4.** `zazawan hadal vawul. zadar gelebal.`
+
+::: details Show answer
+*Azawan walks in haste. That haste is big.*
+:::
+
+**5.** `zogodol vahural. zazawan vogor.`
+
+::: details Show answer
+*A dog sits. Azawan does that with it.*
+:::
+
+## See also
 - [plurality.md](plurality.md) — **-sh**; address set vs associative
 - [core.md](core.md#dependent-clauses) — **`odo`** placement

@@ -82,6 +82,113 @@ Special pronouns keep **-sh** available, but the default is **not** uniform asso
 
 **Trap:** *You (singular) and your associates* → **name…**-sh**, not **`ehado…sh`**. Inclusive *we* → **`ana`**, not **`umogo…sh`**.
 
+### Translation practice
+<a id="translation-practice"></a>
+
+Short drills on this Beginner band. Try each item before opening **Show answer**.
+
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `agada` *cat* · `ogodo` *dog* · `uze` smile → *happy* (**-m**) · `eleba` *size* / *big* · `awu` *walk* · `ahura` *sit* · `urunu` *run* · `ezele` *sleep* · `ejo` *see* · `ana` inclusive *we* · `umogo` speaker · `ehado` listener
+
+#### English → Agelan
+
+**1.** *Azawan and associates walk.*
+
+::: details Show answer
+`zazawansh vawul.`
+:::
+
+**2.** *Some cats sit.*
+
+::: details Show answer
+`zagadalsh vahural.`
+:::
+
+**3.** *They (that one and associates) run.*
+
+::: details Show answer
+`zazawarsh vurunul.`
+:::
+
+**4.** *We (you and I) walk.*
+
+::: details Show answer
+`zanan vawul.`
+:::
+
+**5.** *Speaker and associates (not you) sit.*
+
+::: details Show answer
+`zumogonsh vahural.`
+:::
+
+**6.** *You all (the addressees) walk.*
+
+::: details Show answer
+`zehadonsh vawul.`
+:::
+
+**7.** *You (Ulonun) and your associates sit.*
+
+::: details Show answer
+`zulonunsh vahural.`
+:::
+
+**8.** *Azawan sees some dogs.*
+
+::: details Show answer
+`zazawan dogodolsh vejol.`
+:::
+
+#### Agelan → English
+
+**1.** `zazawansh vawul.`
+
+::: details Show answer
+*Azawan and associates walk.*
+:::
+
+**2.** `zagadalsh vahural.`
+
+::: details Show answer
+*Some cats sit.* / *A group of cats sit.*
+:::
+
+**3.** `zazawarsh vahural.`
+
+::: details Show answer
+*They (that one and associates) sit.*
+:::
+
+**4.** `zanan vezelel.`
+
+::: details Show answer
+*We (including you) sleep.*
+:::
+
+**5.** `zehadonsh vahural.`
+
+::: details Show answer
+*You all (the addressees) sit.*
+:::
+
+**6.** `zumogonsh vawul.`
+
+::: details Show answer
+*Speaker and associates (not you) walk.*
+:::
+
+**7.** `zogodolsh gelebal.`
+
+::: details Show answer
+*Some dogs are big.*
+:::
+
+**8.** `jol zulonunsh guzem.`
+
+::: details Show answer
+*Are Ulonun and associates happy?*
+:::
+
 ## Intermediate
 <a id="intermediate"></a>
 
@@ -146,6 +253,113 @@ Most useful with [phrase join](coordination.md): SHARED singular scale under **`
 Address a **group**: **-lsh** for kind-based group address (*hey, kids*); **-nsh** for a titled group (*Team Alpha*); **-rsh** to call a prior addressee **and associates**. Multi-addressee role without naming → **`jehadonsh`**. *Everyone* → bare **`…ual`**, not **-lsh**.
 
 Interjections and clause force take **no** **-sh**. Closed [yes/no polarity](questions.md#yes-no-polarity) particles likewise take no **-sh**.
+
+### Translation practice
+<a id="translation-practice-intermediate"></a>
+
+Short drills on this Intermediate band. Try each item before opening **Show answer**.
+
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `olebo` *file-box* · `uduru` *heavy* · `ahana` *team* · `umola` *vast* · `uzedu` *student* · `egu` *sing* · `awu` *walk* · `urunu` *run* · `ana` inclusive *we* · `umogo` speaker · `ehado` listener
+
+#### English → Agelan
+
+**1.** *The file-boxes are heavy.* (members, or don’t care)
+
+::: details Show answer
+`zulebolsh gudurum.`
+:::
+
+**2.** *The file-boxes are heavy as a pile.*
+
+::: details Show answer
+`zulebolsh gudurumsh.`
+:::
+
+**3.** *We (including you) run.*
+
+::: details Show answer
+`zanan vurunul.`
+:::
+
+**4.** *Speaker and associates run (listener not assumed).*
+
+::: details Show answer
+`zumogonsh vurunul.`
+:::
+
+**5.** *Azawan sings as a set of performances.*
+
+::: details Show answer
+`zazawan vegulsh.`
+:::
+
+**6.** *Azawan and associates sing.* (one outing — not an event-set)
+
+::: details Show answer
+`zazawansh vegul.`
+:::
+
+**7.** *Hey, students!*
+
+::: details Show answer
+`jezedulsh.`
+:::
+
+**8.** *Hey, you all (the addressees)!*
+
+::: details Show answer
+`jehadonsh.`
+:::
+
+#### Agelan → English
+
+**1.** `zulebolsh gudurumsh.`
+
+::: details Show answer
+*The file-boxes are heavy collectively.* / *heavy as a pile*
+:::
+
+**2.** `zulebolsh gudurum.`
+
+::: details Show answer
+*The file-boxes are heavy.* (members / plain)
+:::
+
+**3.** `zahanal gumolam.`
+
+::: details Show answer
+*The team is vast.*
+:::
+
+**4.** `zazawan vegulsh.`
+
+::: details Show answer
+*Azawan sings as a set of performances.* / *There is a set of Azawan’s singings.*
+:::
+
+**5.** `zazawansh vegul.`
+
+::: details Show answer
+*Azawan and associates sing.*
+:::
+
+**6.** `jezedulsh.`
+
+::: details Show answer
+*Hey, students!*
+:::
+
+**7.** `jehadonsh.`
+
+::: details Show answer
+*Hey, you all (the addressees)!*
+:::
+
+**8.** `jazawansh.`
+
+::: details Show answer
+*Hey, Azawan and associates!*
+:::
 
 ## Advanced
 <a id="advanced"></a>

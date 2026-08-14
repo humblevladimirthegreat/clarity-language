@@ -81,6 +81,113 @@ gloss: `z-odava` · `g-SAME` · `b-uzuba`
 
 `oguno`+`/b/` stay **contiguous**, like other complex adjectives (`gogobul bazawan`).
 
+### Translation practice
+<a id="translation-practice"></a>
+
+Short drills on this Beginner band. Try each item before opening **Show answer**. Property and kind sit on `/ɡ/`; identity uses **`gogunol`** plus `/b/` — not a *to-be* verb.
+
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `edage` *teacher* · `uzedu` *student* · `ogodo` *dog* · `agada` *cat* · `ogobo` *book* · `ulebu` *blue* · `uze` smile → *happy* (**-m**) · `onuda` *challenging* (**-m**) · `awu` *walk* · `ezele` *sleep* · `oguno` **SAME** · `odava` *Clark* · `uzuba` *Superman*
+
+#### English → Agelan
+
+**1.** *Azawan is challenging.*
+
+::: details Show answer
+`zazawan gonudam.`
+:::
+
+**2.** *Azawan is a teacher.*
+
+::: details Show answer
+`zazawan gedagel.`
+:::
+
+**3.** *Ulonun is a student.*
+
+::: details Show answer
+`zulonun gezedul.`
+:::
+
+**4.** *The teacher walks.*
+
+::: details Show answer
+`zedagel vawul.`
+:::
+
+**5.** *Azawan is Teacher.*
+
+::: details Show answer
+`zazawan gedagen.`
+:::
+
+**6.** *Clark is Superman.*
+
+::: details Show answer
+`zodavan gogunol buzuban.`
+:::
+
+**7.** *Ubuzun is happy.*
+
+::: details Show answer
+`zubuzun guzem.`
+:::
+
+**8.** *The cat is blue.*
+
+::: details Show answer
+`zagadal gulebul.`
+:::
+
+#### Agelan → English
+
+**1.** `zazawan gonudam.`
+
+::: details Show answer
+*Azawan is challenging.*
+:::
+
+**2.** `zulonun gedagel.`
+
+::: details Show answer
+*Ulonun is a teacher.*
+:::
+
+**3.** `zedagel vezelel.`
+
+::: details Show answer
+*The teacher sleeps.*
+:::
+
+**4.** `zazawan gedagen.`
+
+::: details Show answer
+*Azawan is Teacher.*
+:::
+
+**5.** `zodavan gogunol buzuban.`
+
+::: details Show answer
+*Clark is Superman.*
+:::
+
+**6.** `zuzuban gogunol bodavan.`
+
+::: details Show answer
+*Superman is Clark.*
+:::
+
+**7.** `zogodol gonudam.`
+
+::: details Show answer
+*The dog is challenging.*
+:::
+
+**8.** `zubuzun gezedul.`
+
+::: details Show answer
+*Ubuzun is a student.*
+:::
+
 ## Intermediate
 <a id="intermediate"></a>
 
@@ -116,6 +223,101 @@ Values still stack on the classifying `/ɡ/` (`gedagel w-…xa…`) when the poi
 Ordinary content still available (`zogunol` *a coin*; `gogunol` as *token*-like when not in the identity frame). The special reading wins under closed **`goguno…` + `/b/`** used as the property.
 
 Comparative claims as clause content use the same no-*be*-verb shape with a ranked fence — [comparatives](comparatives.md).
+
+### Translation practice
+<a id="translation-practice-intermediate"></a>
+
+Short drills on this Intermediate band. Try each item before opening **Show answer**. Classification packaging and **SAME** endings (**-l** / **-m** / **-n** / **-r**) are the point.
+
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `edage` *teacher* · `uzedu` *student* · `oguno` **SAME** · `odava` *Clark* · `uzuba` *Superman* · `ebore` (band: *the person who…*) · `awu` *walk* · `ezele` *sleep*
+
+#### English → Agelan
+
+**1.** *Clark is Superman.*
+
+::: details Show answer
+`zodavan gogunol buzuban.`
+:::
+
+**2.** *Clark is basically Superman.*
+
+::: details Show answer
+`zodavan gogunom buzuban.`
+:::
+
+**3.** *Clark is Superman (titled identity).*
+
+::: details Show answer
+`zodavan gogunon buzuban.`
+:::
+
+**4.** *The person who is Superman walks.*
+
+::: details Show answer
+`zeborel gogunol buzuban vawul.`
+:::
+
+**5.** *The teacher is Azawan.*
+
+::: details Show answer
+`zedagel gogunol bazawan.`
+:::
+
+**6.** *Azawan is a teacher.*
+
+::: details Show answer
+`zazawan gedagel.`
+:::
+
+**7.** *Clark is the same (as already ascribed) as Superman.*
+
+::: details Show answer
+`zodavan gogunor buzuban.`
+:::
+
+#### Agelan → English
+
+**1.** `zodavan gogunom buzuban.`
+
+::: details Show answer
+*Clark is basically Superman.*
+:::
+
+**2.** `zodavan gogunol buzuban.`
+
+::: details Show answer
+*Clark is Superman.*
+:::
+
+**3.** `zeborel gogunol buzuban vezelel.`
+
+::: details Show answer
+*The person who is Superman sleeps.*
+:::
+
+**4.** `zedagel gogunol bazawan.`
+
+::: details Show answer
+*The teacher is Azawan.*
+:::
+
+**5.** `zodavan gogunon buzuban.`
+
+::: details Show answer
+*Clark is Superman (titled identity).*
+:::
+
+**6.** `zulonun gedagel.`
+
+::: details Show answer
+*Ulonun is a teacher.*
+:::
+
+**7.** `zodavan gogunor buzuban.`
+
+::: details Show answer
+*Clark is the same (as already ascribed) as Superman.*
+:::
 
 ## Advanced
 <a id="advanced"></a>

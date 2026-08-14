@@ -70,6 +70,113 @@ Prefer **-n** (and its **-r** resume) over speaker/listener specials when a name
 
 After the ending, **-sh** marks an **associative group** (anchor and associates) — or related jobs on adjectives / vocatives. Short form: `…r` is one referent; `…rsh` is that referent **and associates**. Inclusive *we* is special **`ana`**, not **-sh**. Full rules: [plurality.md](plurality.md).
 
+### Translation practice
+<a id="translation-practice"></a>
+
+Short drills on this Beginner band. Try each item before opening **Show answer**. Choose **-l** (new literal), **-m** (new metaphor), **-n** (named), or **-r** (resume). Citation items are prefix-less.
+
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `edage` *teacher* · `ogodo` *dog* · `agada` *cat* · `ogobo` *book* · `ulebu` *blue* · `uze` smile → *happy* (**-m**) · `awu` *walk* · `ezele` *sleep* · `uwa` *write* · `ahura` *sit*
+
+#### English → Agelan
+
+**1.** *A dog is blue.*
+
+::: details Show answer
+`zogodol gulebul.`
+:::
+
+**2.** *Azawan walks.*
+
+::: details Show answer
+`zazawan vawul.`
+:::
+
+**3.** *A teacher walks.*
+
+::: details Show answer
+`zedagel vawul.`
+:::
+
+**4.** *Ulonun is happy.*
+
+::: details Show answer
+`zulonun guzem.`
+:::
+
+**5.** *Azawan walks. He/she/it sleeps.*
+
+::: details Show answer
+`zazawan vawul. zazawar vezelel.`
+:::
+
+**6.** *Citation form of the name Azawan.*
+
+::: details Show answer
+`azawan`
+:::
+
+**7.** *A cat sits.*
+
+::: details Show answer
+`zagadal vahural.`
+:::
+
+**8.** *Ubuzun writes a book.*
+
+::: details Show answer
+`zubuzun dogobol vuwal.`
+:::
+
+#### Agelan → English
+
+**1.** `zogodol gulebul.`
+
+::: details Show answer
+*A dog is blue.*
+:::
+
+**2.** `zazawan vawul.`
+
+::: details Show answer
+*Azawan walks.*
+:::
+
+**3.** `zedagel vawul.`
+
+::: details Show answer
+*A teacher walks.*
+:::
+
+**4.** `zulonun guzem.`
+
+::: details Show answer
+*Ulonun is happy.*
+:::
+
+**5.** `zazawan vawul. zazawar vezelel.`
+
+::: details Show answer
+*Azawan walks. He/she/it sleeps.*
+:::
+
+**6.** `azawan`
+
+::: details Show answer
+*Azawan* (name, cited)
+:::
+
+**7.** `godol`
+
+::: details Show answer
+*dog* (literal kind, cited)
+:::
+
+**8.** `zubuzun dogobol vuwal.`
+
+::: details Show answer
+*Ubuzun writes a book.*
+:::
+
 ## Intermediate
 <a id="intermediate"></a>
 
@@ -154,6 +261,113 @@ Prefix-less [discourse revisers](revisers.md#discourse-revisers) keep reviser en
 <a id="number-word-exception"></a>
 
 In [number words](numbers.md), the same four letters have **number-specific** meanings instead of ordinary reference-suffix senses. After a role letter, the number marker **r** may also form clusters that are not otherwise allowed — legal **only** in number words ([phonology.md](phonology.md#phonotactics)).
+
+### Translation practice
+<a id="translation-practice-intermediate"></a>
+
+Short drills on this Intermediate band. Try each item before opening **Show answer**. The point is **-n** as a title on any role letter, or one **`x`-compound** name.
+
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `ogobo` *book* · `ulebu` *blue* · `awu` *walk* · `urunu` *run* · `egu` *sing* · `ejo` *perception* (*see*) · `uwa` *write* · `ada` *haste* · `ozohu`×`alena` (name **Ozohuxalenan**) · `uzu`×`ogeve` (label **Sushi-Coffee**)
+
+#### English → Agelan
+
+**1.** *Ozohuxalenan walks.*
+
+::: details Show answer
+`zozohuxalenan vawul.`
+:::
+
+**2.** *Azawan sees Ozohuxalenan* (the place).
+
+::: details Show answer
+`zazawan dozohuxalenan vejol.`
+:::
+
+**3.** *Sushi-Coffee writes.*
+
+::: details Show answer
+`zuzuzuxogeven vuwal.`
+:::
+
+**4.** *Ubuzun sings the Sing* (that titled performance).
+
+::: details Show answer
+`zubuzun vegun.`
+:::
+
+**5.** *Azawan runs the Run* (that titled race).
+
+::: details Show answer
+`zazawan vurunun.`
+:::
+
+**6.** *The book is Blue* (the named style).
+
+::: details Show answer
+`dogobol gulebun.`
+:::
+
+**7.** *Azawan walks in Haste* (the named standard).
+
+::: details Show answer
+`zazawan hadan vawul.`
+:::
+
+**8.** *Azawan sees the Blue book* (named style, adjective before the noun).
+
+::: details Show answer
+`zazawan glulebun dogobol vejol.`
+:::
+
+#### Agelan → English
+
+**1.** `zozohuxalenan vawul.`
+
+::: details Show answer
+*Ozohuxalenan walks.*
+:::
+
+**2.** `zazawan dozohuxalenan vejol.`
+
+::: details Show answer
+*Azawan sees Ozohuxalenan* (the place).
+:::
+
+**3.** `zuzuzuxogeven vuwal.`
+
+::: details Show answer
+*Sushi-Coffee writes.*
+:::
+
+**4.** `zubuzun vegun.`
+
+::: details Show answer
+*Ubuzun sings the Sing* (that titled performance).
+:::
+
+**5.** `zazawan vurunun.`
+
+::: details Show answer
+*Azawan runs the Run* (that titled race).
+:::
+
+**6.** `dogobol gulebun.`
+
+::: details Show answer
+*The book is Blue* (the named style).
+:::
+
+**7.** `zazawan hadan vawul.`
+
+::: details Show answer
+*Azawan walks in Haste* (the named standard).
+:::
+
+**8.** `zazawan glulebun dogobol vejol.`
+
+::: details Show answer
+*Azawan sees the Blue book* (named style, adjective before the noun).
+:::
 
 ## Advanced
 <a id="advanced"></a>

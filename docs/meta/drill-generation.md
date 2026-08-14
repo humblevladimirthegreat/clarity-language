@@ -209,10 +209,10 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 3 | `core.md` | **exists** | PoS letters; SVO; `/ɡ/` after noun; `/w/`; `/h/`; complex `/ɡ|h/`+`/b/`; omit **`jal`**; **`jol` / `jel` / `jul`**; vocatives; **`jael`** as confirm tag; `/x/` continue vs `/j/` turn; **`odo` last**; adverbial subordinators (`hurugum` / `horodom` / `heluvem` / `hezabem` / `hegumum` / `hudemum` / `hagagam` / `hohuram` **`bodol`**); house names; **-l** / **-m** / **-n** as used in examples | Do not use **`gl-`**, **`jam`/`jom`/`jem`/`jum`**, nested **`odo`**, `/x/` linkers, letter **-r** mechanism, **-sh**, joins |
 | 4 | `vowel-series.md` | skip | — | mnemonic only |
 | 5 | `phonology.md` | skip | — | not translation |
-| 6 | `reference-suffix.md` | generate | Choose **-l** vs **-m** vs **-n** vs **-r** on a content word; named person vs kind; citation prefix-less **…n** | Pointers to **-sh** / **`gl-`** / full **-r** algorithm: do **not** make those the item. One two-sentence resume item is enough if it matches the page example |
-| 7 | `pronouns.md` | generate | Letter vs full-root **-r**; specials **`umogo` / `ehado` / `ana` / `enu`** (when the *role* is the point); **`odo`** recap; clusivity **`ana`** vs speaker **-sh** | **-sh** on specials / names for clusivity only. Default people still house names; specials only when testing specials |
-| 7 | `plurality.md` | generate | Associative **-sh** (`-lsh` / `-nsh` / `-rsh`); not agreement; person-role **-sh** (address set vs name…**-sh**) | **`ana`** as the *not this* for inclusive *we*. **`umogo`/`ehado`** only on person-role items |
-| 8 | `predication.md` | generate | Zero-copula property; classification `z… g…` vs role *noun* `zedagel`; identity **`gogunol` + `/b/`** | No general *to-be* `/v/`. Prefer house names + **SAME**; page-example roots (`odava` / `uzuba`) OK if already on the band |
+| 6 | `reference-suffix.md` | **exists** | Choose **-l** vs **-m** vs **-n** vs **-r** on a content word; named person vs kind; citation prefix-less **…n** | Pointers to **-sh** / **`gl-`** / full **-r** algorithm: do **not** make those the item. One two-sentence resume item is enough if it matches the page example |
+| 7 | `pronouns.md` | **exists** | Letter vs full-root **-r**; specials **`umogo` / `ehado` / `ana` / `enu`** (when the *role* is the point); **`odo`** recap; clusivity **`ana`** vs speaker **-sh** | **-sh** on specials / names for clusivity only. Default people still house names; specials only when testing specials |
+| 7 | `plurality.md` | **exists** | Associative **-sh** (`-lsh` / `-nsh` / `-rsh`); not agreement; person-role **-sh** (address set vs name…**-sh**) | **`ana`** as the *not this* for inclusive *we*. **`umogo`/`ehado`** only on person-role items |
+| 8 | `predication.md` | **exists** | Zero-copula property; classification `z… g…` vs role *noun* `zedagel`; identity **`gogunol` + `/b/`** | No general *to-be* `/v/`. Prefer house names + **SAME**; page-example roots (`odava` / `uzuba`) OK if already on the band |
 | 9 | `coordination.md` | generate | Right-close fence; set vs rank vowels; **-l** vs **-m**; list / focus / bare starter forms; negation **`u`**; unspecified **-r** as *something* (not fill-ask) | No revisers, no restrictor `/h/` join readings, no comparatives SHARED scale as the point (that is comparatives) |
 | 10 | `questions.md` | generate | **`jol`/`jom`** yes/no vs fill-ask (join **-r**); fill-all; polar **`jael` / `juel` / `jaol`** vs **`jul`** vs join **`zul`** | **`jom`** is taught here as soft *ask* — allowed on this page even though full force twins are core Intermediate. Circumstance *when?* **`har`** is Intermediate on this page — do not use |
 | 11 | `revisers.md` | generate | Prefix-less **`al`/`am`/`ol`/`ul`** (and **e** / **n** as on the band); in-clause `A REV B`; discourse **`al`** *additionally* before a body | Not a join (`zam` vs `am`). Not **`x#e-` / `x#e`** (numbers discourse) |
@@ -234,15 +234,15 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 
 | Path | File | Band | Status | Introduces (test these) | Notes |
 |------|------|------|--------|-------------------------|-------|
-| 3 | `core.md` | Intermediate | generate | **`jam`/`jom`/`jem`/`jum`**; **`gl-`**; adverb topic `/h/`+`/b/`; complex chaining; `/x/` linkers (`xamalal`, `xezabel`, …); nested **`odo`**; number-as-interjection pointer only if the band’s examples already show it | Do not require numbers Intermediate readings |
+| 3 | `core.md` | Intermediate | **exists** | **`jam`/`jom`/`jem`/`jum`**; **`gl-`**; adverb topic `/h/`+`/b/`; complex chaining; `/x/` linkers (`xamalal`, `xezabel`, …); nested **`odo`**; number-as-interjection pointer only if the band’s examples already show it | Do not require numbers Intermediate readings |
 | 3 | `core.md` | Advanced | skip | weak-pause cues | recognition |
-| 6 | `reference-suffix.md` | Intermediate | generate | **-n** on any PoS (titled verb/adjective/adverb); phrasal proper names `ROOTxROOT`+**-n** | Not value/ability/plan ending tables (Advanced pointers) |
+| 6 | `reference-suffix.md` | Intermediate | **exists** | **-n** on any PoS (titled verb/adjective/adverb); phrasal proper names `ROOTxROOT`+**-n** | Not value/ability/plan ending tables (Advanced pointers) |
 | 6 | `reference-suffix.md` | Advanced | skip | ending tables owned by other pages | pointer inventory |
-| 7 | `pronouns.md` | Intermediate | generate | English approximations of **-r**; `/x/`…`-r` thread resume vs `/h/` aboutness; **`ana`** vs name join vs name…**-sh** | |
-| 7 | `pronouns.md` | Advanced | generate | Cross-role recast (one or two PoS flips, not the whole grid) | 4–6 items |
-| 7 | `plurality.md` | Intermediate | generate | Associate-set resolution; verb event-sets; collective `/ɡ/`…**-sh**; vocative **-sh** | |
+| 7 | `pronouns.md` | Intermediate | **exists** | English approximations of **-r**; `/x/`…`-r` thread resume vs `/h/` aboutness; **`ana`** vs name join vs name…**-sh** | |
+| 7 | `pronouns.md` | Advanced | **exists** | Cross-role recast (one or two PoS flips, not the whole grid) | 4–6 items |
+| 7 | `plurality.md` | Intermediate | **exists** | Associate-set resolution; verb event-sets; collective `/ɡ/`…**-sh**; vocative **-sh** | |
 | 7 | `plurality.md` | Advanced | skip | unused / summary | |
-| 8 | `predication.md` | Intermediate | generate | Classification packaging; **SAME** endings / soft identity | |
+| 8 | `predication.md` | Intermediate | **exists** | Classification packaging; **SAME** endings / soft identity | |
 | 8 | `predication.md` | Advanced | skip | boundaries | |
 | 9 | `coordination.md` | Intermediate | generate | Full focus/bare; rank joins as *the* stack if not already fluent; invert **`ua`/`uo`/`ue`**; universals/domains; SHARED after join; `^` islands; frame echo; fence nesting; clause soft **-n** (`xan`); VP/clause forms | Sample **decisions**, not every H3. 6–8 items |
 | 9 | `coordination.md` | Advanced | generate | Named phrase **-n**; one rare-arity or reserved contrast from the band | 4–6 items |
