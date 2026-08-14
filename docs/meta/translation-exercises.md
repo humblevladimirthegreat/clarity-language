@@ -22,7 +22,7 @@ Per-feature teaching already has its practice: rule → mnemonic → 1–3 worke
 
 **Coverage:** every **productive** page-band gets a checkpoint. Orientation, phonology charts, and parser maps do not — skip list and path allowlist: [drill-generation.md](drill-generation.md#skip). Do **not** add a spoiler block after every H3.
 
-**Status:** path 3–12 checkpoints **exist** (see [allowlist](drill-generation.md#allowlist)). Remaining **generate** rows: invoke [drill-generation.md](drill-generation.md#execute) **one grammar file per agent** (no extra prompt).
+**Status:** all **generate** checkpoints **exist** (see [allowlist](drill-generation.md#allowlist)). Invoke [drill-generation.md](drill-generation.md#execute) **one grammar file per agent** only to **replace** a checkpoint.
 
 ## What belongs where
 <a id="what-belongs-where"></a>

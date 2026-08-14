@@ -67,6 +67,113 @@ gloss: `z-cloud` · `z-snow` · `z-would-work`
 
 **Mnemonic:** open **`…aom`** = *would work among routes* — the everyday *leads to* shape.
 
+### Translation practice
+<a id="translation-practice"></a>
+
+Short drills on this Beginner band. Try each item before opening **Show answer**. Everyday *leads to* is open sufficient **`…aom`** (outcome as host); there is no cause-arrow word. Closed **`…aol`** is the stronger “this settles it” twin. Clause *because* stays **`hurugum bodol`**.
+
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `azel` *effort* · `ogulo` *cloud* · `ozono` *snow* · `ogodo` *dog* · `agada` *cat* · `ogobo` *book* · `ohuze` *house* · `awu` *walk* · `egu` *sing* · `ezele` *sleep* · `odo` *next clause* · `urugu` *because* (**-m** on `/h/`)
+
+#### English → Agelan
+
+**1.** *Effort would work (among other routes).*
+
+::: details Show answer
+`zazel zaom.`
+:::
+
+**2.** *Clouds would work.*
+
+::: details Show answer
+`zogulol zaom.`
+:::
+
+**3.** *Clouds or snow would work.*
+
+::: details Show answer
+`zogulol zozonol zaom.`
+:::
+
+**4.** *A dog would work.*
+
+::: details Show answer
+`zogodol zaom.`
+:::
+
+**5.** *A dog or a cat would work.*
+
+::: details Show answer
+`zogodol zagadal zaom.`
+:::
+
+**6.** *A book is enough.*
+
+::: details Show answer
+`zogobol zaol.`
+:::
+
+**7.** *Walking would work.*
+
+::: details Show answer
+`zawul zaom.`
+:::
+
+**8.** *Azawan walks because Ulonun sleeps.*
+
+::: details Show answer
+`zazawan vawul hurugum bodol zulonun vezelel.`
+:::
+
+#### Agelan → English
+
+**1.** `zazel zaom.`
+
+::: details Show answer
+*Effort would work (among other routes).*
+:::
+
+**2.** `zogulol zozonol zaom.`
+
+::: details Show answer
+*Clouds or snow would work.*
+:::
+
+**3.** `zogobol zaol.`
+
+::: details Show answer
+*A book is enough.*
+:::
+
+**4.** `zagadal zaom.`
+
+::: details Show answer
+*A cat would work.*
+:::
+
+**5.** `zohuzel zaom.`
+
+::: details Show answer
+*A house would work.*
+:::
+
+**6.** `zubuzun vegul zaom.`
+
+::: details Show answer
+*Ubuzun’s singing would work.*
+:::
+
+**7.** `zazawan vawul hurugum bodol zulonun vezelel.`
+
+::: details Show answer
+*Azawan walks because Ulonun sleeps.*
+:::
+
+**8.** `zogodol zagadal zaom.`
+
+::: details Show answer
+*A dog or a cat would work.*
+:::
+
 ## Intermediate
 <a id="intermediate"></a>
 
@@ -160,6 +267,113 @@ A common shape: *hard work should earn a promotion* — the “rule” is a **wi
 Strength of feeling is values force / evidentiality — not upgrading `aom` → `ol` / `gon`.
 
 **Schematic:** `… haon beladel` on promotion + `hodoloxor` (soft invite force) ≈ *effort is among routes that ought to count for competence payoff* — not *effort is the sole causal law of promotion*.
+
+### Translation practice
+<a id="translation-practice-intermediate"></a>
+
+Short drills on this Intermediate band. Try each item before opening **Show answer**. Mark **necessary** with exclusion / **`hal`**, unique path with **`gon` / `hon` / `…ol`**, and clause poles with **`horodom` / `heluvem` / `hurugum`**. An ought sits on values **`xo`**, not by upgrading **`aom`** to a sole-cause join.
+
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `edage` *teacher* · `azel` *effort* · `aruna` *rain* · `ogulo` *cloud* · `ogodo` *dog* · `ogobo` *book* · `elade` *promotion* · `odolo` *competence* · `awu` *walk* · `ezele` *sleep* · `odo` *next clause* · `orodo` *if* · `eluve` *iff* · `urugu` *because*
+
+#### English → Agelan
+
+**1.** *Azawan walks without a dog.*
+
+::: details Show answer
+`zazawan vawul huan bogodol.`
+:::
+
+**2.** *Azawan never walks.*
+
+::: details Show answer
+`zazawan vawul hal.`
+:::
+
+**3.** *It has to be Azawan.*
+
+::: details Show answer
+`zazawan gon.`
+:::
+
+**4.** *Azawan walks if Ulonun sleeps.*
+
+::: details Show answer
+`zazawan vawul horodom bodol zulonun vezelel.`
+:::
+
+**5.** *Azawan walks if and only if Ulonun sleeps.*
+
+::: details Show answer
+`zazawan vawul heluvem bodol zulonun vezelel.`
+:::
+
+**6.** *Azawan walks because Ulonun sleeps.*
+
+::: details Show answer
+`zazawan vawul hurugum bodol zulonun vezelel.`
+:::
+
+**7.** *Effort would count toward promotion — as an ought, not the sole law.*
+
+::: details Show answer
+`zazel haon beladel hodoloxor.`
+:::
+
+**8.** *It has to be a book.*
+
+::: details Show answer
+`zogobol gon.`
+:::
+
+#### Agelan → English
+
+**1.** `zarunal huan bogulol.`
+
+::: details Show answer
+*Raining without / excluding clouds.*
+:::
+
+**2.** `zedagel hon.`
+
+::: details Show answer
+*It has to be the teacher.*
+:::
+
+**3.** `zazawan vawul horodom bodol zulonun vezelel.`
+
+::: details Show answer
+*Azawan walks if Ulonun sleeps.*
+:::
+
+**4.** `zazawan vawul heluvem bodol zulonun vezelel.`
+
+::: details Show answer
+*Azawan walks if and only if Ulonun sleeps.*
+:::
+
+**5.** `zazawan vawul hurugum bodol zulonun vezelel.`
+
+::: details Show answer
+*Azawan walks because Ulonun sleeps.*
+:::
+
+**6.** `zazel haon beladel hodoloxor.`
+
+::: details Show answer
+*Effort would count toward promotion — as an ought, not the sole law.*
+:::
+
+**7.** `zazawan guan bogodol.`
+
+::: details Show answer
+*Azawan without a dog.*
+:::
+
+**8.** `zazawan vawul hal.`
+
+::: details Show answer
+*Azawan never walks.*
+:::
 
 ## Advanced
 <a id="advanced"></a>
@@ -257,6 +471,77 @@ Causal “laws” show their warrant via evidentiality and universality — not 
 - Closed **`COND`** adjective is rejected; use joins + **`odo`** poles.
 - Epistemic *because* stacks COMMENT — no twin clause root.
 - Discourse *however* / *meanwhile* are `/x/` linkers — not subordinating **`hezabem`** / **`hegumum`**.
+
+### Translation practice
+<a id="translation-practice-advanced"></a>
+
+Short drills on this Advanced band. Try each item before opening **Show answer**. **`hurugum`** puts the dependent on the world ledger; **`horodom`** does not; speaker-grounds stay **`huhom`**. Habit uses **`hual`**.
+
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `aruna` *rain* · `ogulo` *cloud* · `awu` *walk* · `ezele` *sleep* · `odo` *next clause* · `orodo` *if* · `eluve` *iff* · `urugu` *because* · `uho` *commentary* (**`huhom`**)
+
+#### English → Agelan
+
+**1.** *Azawan walks because it rains.* (rain is on the ledger)
+
+::: details Show answer
+`zazawan vawul hurugum bodol zarunal.`
+:::
+
+**2.** *Azawan walks if it rains.* (rain is not asserted)
+
+::: details Show answer
+`zazawan vawul horodom bodol zarunal.`
+:::
+
+**3.** *Azawan walks if and only if it rains.*
+
+::: details Show answer
+`zazawan vawul heluvem bodol zarunal.`
+:::
+
+**4.** *Azawan walks — that’s a take.* (speaker-grounds, not a world-reason)
+
+::: details Show answer
+`zazawan huhom vawul.`
+:::
+
+**5.** *Clouds would work, as a standing pattern.*
+
+::: details Show answer
+`zogulol zaom hual.`
+:::
+
+#### Agelan → English
+
+**1.** `zazawan vawul hurugum bodol zarunal.`
+
+::: details Show answer
+*Azawan walks because it rains.* (rain is asserted as the reason)
+:::
+
+**2.** `zazawan vawul horodom bodol zarunal.`
+
+::: details Show answer
+*Azawan walks if it rains.* (rain is not asserted)
+:::
+
+**3.** `zazawan vawul heluvem bodol zarunal.`
+
+::: details Show answer
+*Azawan walks if and only if it rains.*
+:::
+
+**4.** `zazawan huhom vawul hurugum bodol zulonun vezelel.`
+
+::: details Show answer
+*Azawan walks, I’d note, because Ulonun sleeps.* (take plus world-foundation)
+:::
+
+**5.** `zogulol zaom hual.`
+
+::: details Show answer
+*Clouds would work, as a standing pattern.*
+:::
 
 ## See also
 

@@ -52,6 +52,113 @@ gloss: `z-cat-sh` · `g-+`
 
 Overlays, writing marks, ranges, percent, and exponents are Intermediate / Advanced — **optional** for a first dialogue corpus.
 
+### Translation practice
+<a id="translation-practice"></a>
+
+Short drills on this Beginner band. Try each item before opening **Show answer**. Count with `g+N`, rank with `g#N`, and use digitless **`g+`** with **-sh** on the noun for *more than one*.
+
+**Roots used here:** `azawa` / `ulonu` / `ubuzu` · `agada` *cat* · `ogodo` *dog* · `ogobo` *book* · `ohuze` *house* · `uzedu` *student* · `ejo` *see* · `uwa` *write*
+
+#### English → Agelan
+
+**1.** *Three cats.*
+
+::: details Show answer
+`zagadalsh g+3.`
+:::
+
+**2.** *The second book.*
+
+::: details Show answer
+`zogobol g#2.`
+:::
+
+**3.** *Cats — more than one.*
+
+::: details Show answer
+`zagadalsh g+.`
+:::
+
+**4.** *Two dogs.*
+
+::: details Show answer
+`zogodolsh g+2.`
+:::
+
+**5.** *The first house.*
+
+::: details Show answer
+`zohuzel g#1.`
+:::
+
+**6.** *Azawan sees three books.*
+
+::: details Show answer
+`zazawan vejol zogobolsh g+3.`
+:::
+
+**7.** *More than one student.*
+
+::: details Show answer
+`zuzedulsh g+.`
+:::
+
+**8.** *Ulonun writes the third book.*
+
+::: details Show answer
+`zulonun vuwal zogobol g#3.`
+:::
+
+#### Agelan → English
+
+**1.** `zagadalsh g+3.`
+
+::: details Show answer
+*Three cats.*
+:::
+
+**2.** `zogobol g#2.`
+
+::: details Show answer
+*The second book.*
+:::
+
+**3.** `zagadalsh g+.`
+
+::: details Show answer
+*Cats — more than one.*
+:::
+
+**4.** `zohuzelsh g+2.`
+
+::: details Show answer
+*Two houses.*
+:::
+
+**5.** `zuzedul g#1.`
+
+::: details Show answer
+*The first student.*
+:::
+
+**6.** `zubuzun vejol zagadalsh g+.`
+
+::: details Show answer
+*Ubuzun sees more than one cat.*
+:::
+
+**7.** `zazawan vejol zogodolsh g+3.`
+
+::: details Show answer
+*Azawan sees three dogs.*
+:::
+
+**8.** `zulonun vuwal zogobol g#1.`
+
+::: details Show answer
+*Ulonun writes the first book.*
+:::
+
 ## Intermediate
 <a id="intermediate"></a>
 
@@ -955,6 +1062,112 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 
 In a sentence, the PoS attaches to that single number word (see [Parts of speech on numbers](#parts-of-speech-on-numbers); e.g. direct-object digit-string: `d_…`). Prefer naming the whole as the host of a `/ɡ/` **`jo`** percent ([denominator](#percent-denominators): `zagadalsh g+25%`).
 
+### Translation practice
+<a id="translation-practice-intermediate"></a>
+
+Short drills on this Intermediate band. Try each item before opening **Show answer**. Prefer shorthand (`g~+3`, `g#-2`, `h_15,30`). Sample PoS, endings, digitless overlays, and **one** time reading — not the whole inventory.
+
+**Roots used here:** `azawa` / `ulonu` / `ubuzu` · `agada` *cat* · `ogobo` *book* · `ohuze` *house* · `ulebu` *blue* · `awu` *walk* · `ezele` *sleep* · `ejo` *see*
+
+#### English → Agelan
+
+**1.** *Three (as the subject) is blue.*
+
+::: details Show answer
+`z+3 gulebun.`
+:::
+
+**2.** *About three cats.*
+
+::: details Show answer
+`zagadalsh g~+3.`
+:::
+
+**3.** *Azawan sees −3.*
+
+::: details Show answer
+`zazawan vejol d-3.`
+:::
+
+**4.** *Ulonun walks three times.*
+
+::: details Show answer
+`zulonun vawul h+3.`
+:::
+
+**5.** *Three more!*
+
+::: details Show answer
+`j+3.`
+:::
+
+**6.** *Three!* (score / label reading)
+
+::: details Show answer
+`j_3.`
+:::
+
+**7.** *The penultimate book.*
+
+::: details Show answer
+`zogobol g#-2.`
+:::
+
+**8.** *Ubuzun sleeps at 15:30.*
+
+::: details Show answer
+`zubuzun vezelel h_15,30.`
+:::
+
+#### Agelan → English
+
+**1.** `zagadalsh g~+3.`
+
+::: details Show answer
+*About three cats.*
+:::
+
+**2.** `z+3 gulebun.`
+
+::: details Show answer
+*Three is blue.*
+:::
+
+**3.** `zulonun vawul h+.`
+
+::: details Show answer
+*Ulonun walks multiple times.*
+:::
+
+**4.** `j#1.`
+
+::: details Show answer
+*First!*
+:::
+
+**5.** `x#2 zulonun vawul.`
+
+::: details Show answer
+*Point 2: Ulonun walks.*
+:::
+
+**6.** `zogobol g#-2.`
+
+::: details Show answer
+*The penultimate book.*
+:::
+
+**7.** `zubuzun vezelel h_15,30.`
+
+::: details Show answer
+*Ubuzun sleeps at 15:30.*
+:::
+
+**8.** `zazawan vejol d=_.`
+
+::: details Show answer
+*Azawan sees that code again.*
+:::
 
 ## Advanced
 <a id="advanced"></a>
@@ -1247,6 +1460,89 @@ PoS-less number stems may follow mid-word **`x`** on an ordinary content root (`
 - **`je`** (decimal point): always stressed when present.
 - **`jo`** / **`ju`** (percent / percentage points): always stressed when present.
 - Digit-string groups: stress the **first digit** of each group.
+
+### Translation practice
+<a id="translation-practice-advanced"></a>
+
+Short drills on this Advanced band. Try each item before opening **Show answer**. Digitless exponents, hyperbole, and zero×exp as in the teach tables — shorthand (`g+e`, `g+1e`, `x#e`).
+
+**Roots used here:** `azawa` / `ulonu` / `ubuzu` · `agada` *cat* · `ogobo` *book* · `awu` *walk* · `egu` *sing*
+
+#### English → Agelan
+
+**1.** *Cats — infinitely many.*
+
+::: details Show answer
+`zagadalsh g+e.`
+:::
+
+**2.** *One gazillion books.*
+
+::: details Show answer
+`zogobolsh g+1e.`
+:::
+
+**3.** *Finally: Azawan walks.*
+
+::: details Show answer
+`x#e zazawan vawul.`
+:::
+
+**4.** *To infinity!*
+
+::: details Show answer
+`j+e.`
+:::
+
+**5.** *Starting with: Ubuzun sings.*
+
+::: details Show answer
+`x#e- zubuzun vegul.`
+:::
+
+**6.** *Annihilate!*
+
+::: details Show answer
+`j+0e.`
+:::
+
+#### Agelan → English
+
+**1.** `zagadalsh g+e.`
+
+::: details Show answer
+*Cats — infinitely many.* / *+∞ cats.*
+:::
+
+**2.** `j#e.`
+
+::: details Show answer
+*Finally!*
+:::
+
+**3.** `x#e- zulonun vawul.`
+
+::: details Show answer
+*Starting with: Ulonun walks.*
+:::
+
+**4.** `zogobol g#1e.`
+
+::: details Show answer
+*The gazillionth / umpteenth book.*
+:::
+
+**5.** `zazawan vawul h#1e.`
+
+::: details Show answer
+*Azawan walks for the gazillionth time.*
+:::
+
+**6.** `j+0e.`
+
+::: details Show answer
+*Annihilate!* / *Wipe it!*
+:::
 
 ## See also
 

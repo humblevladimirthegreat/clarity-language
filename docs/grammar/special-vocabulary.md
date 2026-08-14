@@ -162,6 +162,113 @@ Numbering = **multiple candidates**. Reframing the **same** situation = differen
 
 Digits are optional when these roots name a topic outside ideation (*the problem of free will*). Numbering nudges against treating the first frame as unique when generating options.
 
+### Translation practice
+<a id="translation-practice-intermediate"></a>
+
+Short drills on this Intermediate band. Try each item before opening **Show answer**. Compose emotion (one value + ACT + LOCUS), mark mechanism with **`heragem`**, or number ideation candidates (`g#N`) — not overlay-inventory lookup, and not universality warrant.
+
+**Roots used here:** `azawa` / `ulonu` / `ubuzu` · `odolo` *competence* · `ogono` *relatedness* · `ezebe` *dialogue* · `awaza` *division* · `ebun` *draft* · `emome` *memo* · `ogena` HIGH · `oju` MED · `ozono` LOW · `abobo` INTERNAL · `oburo` EXTERNAL · `agena` CIRCUM · `erage` CAUSE · `elade` *effort* · `ubezu` *problem* · `egoge` *solution* · `ogalo` *goal* · `awu` *walk* · `ezabu` *tell* · `egu` *sing*
+
+#### English → Agelan
+
+**1.** *Anxious about the dialogue* (competence at stake, temporary; flood; room awash)
+
+::: details Show answer
+`zezebel wodoloxur hogenal hagenal.`
+:::
+
+**2.** *Resentful about the division* (unmet relatedness; flood poured onto them)
+
+::: details Show answer
+`zawazal wogonoxum hogenal hoburol.`
+:::
+
+**3.** *Proud of the draft* (met competence, mental channel; flood bottled)
+
+::: details Show answer
+`zebunem wodoloxam hogenal habobol.`
+:::
+
+**4.** *Resentful about the memo* (unmet relatedness; stillness pooling at them)
+
+::: details Show answer
+`zemomel wogonoxum hozonol hoburol.`
+:::
+
+**5.** *Resentful about the division* (unmet relatedness; mid arousal flowing toward them)
+
+::: details Show answer
+`zawazal wogonoxum hojul hoburol.`
+:::
+
+**6.** *Ulonun walks — as mechanism.*
+
+::: details Show answer
+`zulonun vawul heragem.`
+:::
+
+**7.** *Problem 1.*
+
+::: details Show answer
+`zubezul g#1.`
+:::
+
+**8.** *Azawan names solution 2.*
+
+::: details Show answer
+`zazawan zegogel g#2 vezabul.`
+:::
+
+#### Agelan → English
+
+**1.** `zebunem wodoloxam hojul habobol.`
+
+::: details Show answer
+*Proud of the draft* (met competence; mid arousal held inside).
+:::
+
+**2.** `zezebel wodoloxur hozonol hagenal.`
+
+::: details Show answer
+*Anxious about the dialogue* (competence at stake, temporary; stillness; slack shared water).
+:::
+
+**3.** `zemomel wogonoxum hogenal hoburol.`
+
+::: details Show answer
+*Resentful about the memo* (unmet relatedness; flood poured onto them).
+:::
+
+**4.** `zazawan vegul heragem.`
+
+::: details Show answer
+*Azawan sings — as mechanism.*
+:::
+
+**5.** `haon beladel heragem.`
+
+::: details Show answer
+*Open to effort — as mechanism.*
+:::
+
+**6.** `zogalol g#1.`
+
+::: details Show answer
+*Goal 1.*
+:::
+
+**7.** `zegogel g~#2.`
+
+::: details Show answer
+*Solution 2* (tentative rank).
+:::
+
+**8.** `zubuzun zubezul g#1 vezabul.`
+
+::: details Show answer
+*Ubuzun names problem 1.*
+:::
+
 ## Advanced
 <a id="advanced"></a>
 
@@ -231,6 +338,89 @@ Unassigned or rare edges (not required for ordinary reading):
 - **Universality:** ending tables (soft vs committed warrant, …); whether bare unmarked `hual` / `zual` implies COMMON or leaves warrant unspoken.
 
 Judgment benchmarks (*worse than Average|…*) are NP comparees on comparative fences — [comparatives.md § Judgment benchmarks](comparatives.md#judgment-benchmarks). **Classification** and closed **`SAME`** identity live in [predication.md](predication.md). **Causation** reuses joins and join-relations — [causation.md](causation.md); **CAUSE** mood **`erage`** / **`heragem`** = mechanism framing (not NATURAL).
+
+### Translation practice
+<a id="translation-practice-advanced"></a>
+
+Short drills on this Advanced band. Try each item before opening **Show answer**. Pair a domain fence (`hual` / `zual` / `zuam`) with an exceptionlessness warrant — not mechanism **`heragem`**, and not domain softness standing in for a warrant.
+
+**Roots used here:** `azawa` / `ulonu` / `ubuzu` · `ewono` COMMON · `ululu` UNCOUNTERED · `idido` FORMAL · `afafa` NATURAL · `ebebe` RULE · `ahaze` *chess* · `ezuda` *square* · `agada` *cat* · `ogodo` *dog* · `ogobo` *book* · `edage` *teacher* · `awu` *walk* · `egu` *sing* · `ezele` *sleep* · `ahura` *sit* · `ejo` *see* · `urunu` *run* · `awa` evidential *pattern*
+
+#### English → Agelan
+
+**1.** *Azawan always walks, usually.*
+
+::: details Show answer
+`zazawan hual vawul hewonol.`
+:::
+
+**2.** *Ulonun always sleeps, as far as checked.*
+
+::: details Show answer
+`zulonun hual vezelel hululul.`
+:::
+
+**3.** *Every square, by definition.*
+
+::: details Show answer
+`zual gezudal hididol.`
+:::
+
+**4.** *Ubuzun always sits, by natural necessity* (plus a trail of cases).
+
+::: details Show answer
+`zubuzun hual vahural hafafal hawam.`
+:::
+
+**5.** *Azawan always sings, under chess.*
+
+::: details Show answer
+`zazawan hual vegul hebebel behazel.`
+:::
+
+**6.** *Every cat that comes to mind, usually.*
+
+::: details Show answer
+`zuam gagadal hewonol.`
+:::
+
+#### Agelan → English
+
+**1.** `zulonun hual vurunul hewonol.`
+
+::: details Show answer
+*Ulonun always runs, usually.*
+:::
+
+**2.** `zazawan hual vejol hululul.`
+
+::: details Show answer
+*Azawan always sees, as far as checked.*
+:::
+
+**3.** `zual gedagel hididol.`
+
+::: details Show answer
+*Every teacher, by definition.*
+:::
+
+**4.** `zogodol hual vezelel hafafal hawam.`
+
+::: details Show answer
+*The dog always sleeps, by natural necessity* (plus a trail of cases).
+:::
+
+**5.** `zubuzun hual vawul hebebel behazel.`
+
+::: details Show answer
+*Ubuzun always walks, under chess.*
+:::
+
+**6.** `zuam gogobol hewonol.`
+
+::: details Show answer
+*Every book that comes to mind, usually.*
+:::
 
 ## See also
 <a id="see-also"></a>

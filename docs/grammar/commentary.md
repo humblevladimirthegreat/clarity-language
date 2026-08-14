@@ -55,6 +55,113 @@ On **`uho`**, **-l / -m / -n / -r** mark **how you hold** the commentary — fle
 
 COMMENT is a **root choice**, not `xa`/`xu` polarity. It is not evidentiality and not [contact channel](values.md#value-contact) on met values. Perception-as-event (*she hears the door*) stays ordinary lexicon `/v/` if needed. Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)).
 
+### Translation practice
+<a id="translation-practice"></a>
+
+Short drills on this Beginner band. Try each item before opening **Show answer**.
+
+**Roots used here:** `azawa` / `ulonu` / `ubuzu` · `ogodo` · `awu` · `ezele` · `egu` · `urunu` · `ejo` · `uho`
+
+#### English → Agelan
+
+**1.** *I think Azawan walks.* (light commentary)
+
+::: details Show answer
+`zazawan huhom vawul.`
+:::
+
+**2.** *I think Ulonun sleeps.*
+
+::: details Show answer
+`zulonun huhom vezelel.`
+:::
+
+**3.** *Ubuzun sings — and that take is the scene.* (fused hold)
+
+::: details Show answer
+`zubuzun huhol vegul.`
+:::
+
+**4.** *The usual story: Azawan runs.* (named loop)
+
+::: details Show answer
+`zazawan huhon vurunul.`
+:::
+
+**5.** *I think Ulonun walks — and step back from that take.*
+
+::: details Show answer
+`zulonun huhur vawul.`
+:::
+
+**6.** *Azawan thinks.* (deliberate event, not a commentary frame)
+
+::: details Show answer
+`zazawan vuhol.`
+:::
+
+**7.** *I think Azawan sees a dog.*
+
+::: details Show answer
+`zazawan huhom vejol dogodol.`
+:::
+
+**8.** *Does Ubuzun sleep?* (yes/no; light commentary over the ask)
+
+::: details Show answer
+`jol zubuzun huhom vezelel.`
+:::
+
+#### Agelan → English
+
+**1.** `zazawan huhom vawul.`
+
+::: details Show answer
+*I think Azawan walks.*
+:::
+
+**2.** `zulonun huhol vezelel.`
+
+::: details Show answer
+*Ulonun sleeps — and that commentary is taken as the scene.*
+:::
+
+**3.** `zubuzun huhon vegul.`
+
+::: details Show answer
+*The usual story: Ubuzun sings.*
+:::
+
+**4.** `zazawan huhur vurunul.`
+
+::: details Show answer
+*I think Azawan runs — and step back from that take.*
+:::
+
+**5.** `zulonun vuhol.`
+
+::: details Show answer
+*Ulonun thinks.* (an event of thinking, not COMMENT)
+:::
+
+**6.** `jol zazawan huhom vawul.`
+
+::: details Show answer
+*Does Azawan walk?* (asked with light commentary)
+:::
+
+**7.** `zazawan huhom vejol dogodol.`
+
+::: details Show answer
+*I think Azawan sees a dog.*
+:::
+
+**8.** `zubuzun huhom vegul.`
+
+::: details Show answer
+*I think Ubuzun sings.*
+:::
+
 ## Intermediate
 <a id="intermediate"></a>
 
@@ -207,6 +314,113 @@ On **`edahe`**, **-l / -m / -n / -r** mark **how you hold** the as-if frame — 
 When unsure, prefer **`hedahem`**.
 
 NOTIONAL is a **root choice**, not `xa`/`xu` polarity and not a free digitless number word. It is not COMMENT, not evidentiality, not [emotion compose](special-vocabulary.md#emotion-compose), and not quasi-kind derivation. Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)).
+
+### Translation practice
+<a id="translation-practice-intermediate"></a>
+
+Short drills on this Intermediate band. Try each item before opening **Show answer**.
+
+**Roots used here:** `azawa` / `ulonu` / `ubuzu` · `ogodo` · `awu` · `ezele` · `egu` · `urunu` · `uwa` · `uho` · `uhunu` · `eroge` · `awa` · `eve` · `erare` · `ahe` · `orolo` · `edahe`
+
+#### English → Agelan
+
+**1.** *I think Azawan walks.* (attitude — not how you know a world-claim)
+
+::: details Show answer
+`zazawan huhom vawul.`
+:::
+
+**2.** *Azawan walks — from memory / witnessed.*
+
+::: details Show answer
+`zazawan huhunum vawul.`
+:::
+
+**3.** *Ulonun sleeps — on record.*
+
+::: details Show answer
+`zulonun herogem vezelel.`
+:::
+
+**4.** *Ubuzun runs — from the pattern of cases.*
+
+::: details Show answer
+`zubuzun hawam vurunul.`
+:::
+
+**5.** *Azawan sings — inferred from clues.*
+
+::: details Show answer
+`zazawan hevem vegul.`
+:::
+
+**6.** *Ulonun writes — so they say.* (hearsay)
+
+::: details Show answer
+`zulonun herarem vuwal.`
+:::
+
+**7.** *As if Azawan walks.* (soft pretensive frame)
+
+::: details Show answer
+`zazawan hedahem vawul.`
+:::
+
+**8.** *I wonder whether Ubuzun sleeps.* (commentary + soft ask)
+
+::: details Show answer
+`jom zubuzun huhom vezelel.`
+:::
+
+#### Agelan → English
+
+**1.** `zazawan hahem vawul.`
+
+::: details Show answer
+*Azawan walks — felt / gut-known.*
+:::
+
+**2.** `zulonun horolom vezelel.`
+
+::: details Show answer
+*Ulonun sleeps — per the tale.*
+:::
+
+**3.** `zubuzun hedahel vegul.`
+
+::: details Show answer
+*As if Ubuzun sings* — immersed in the imagined scene.
+:::
+
+**4.** `zazawan hedahen vurunul.`
+
+::: details Show answer
+*As if Azawan runs* — a conventional thought-experiment frame.
+:::
+
+**5.** `zulonun hedaher vuwal.`
+
+::: details Show answer
+*As if Ulonun writes* — and step back toward contact.
+:::
+
+**6.** `zazawan herogem vejol dogodol.`
+
+::: details Show answer
+*Azawan sees a dog — on record.*
+:::
+
+**7.** `zulonun huhunum vezelel.`
+
+::: details Show answer
+*Ulonun sleeps — from memory / witnessed.*
+:::
+
+**8.** `jom zazawan huhom vawul.`
+
+::: details Show answer
+*I wonder whether Azawan walks.*
+:::
 
 ## Advanced
 <a id="advanced"></a>

@@ -177,6 +177,113 @@ gloss: `z-meeting` · `w-autonomy-unmet-temporary`
 
 Unmet competence (`hodoloxul`) is still a **need** claim — not “can’t competence.” [Ability](ability.md#ability) puts temporary / modifiable / irreversible *can’t* on stance vowels instead.
 
+### Translation practice
+<a id="translation-practice"></a>
+
+Short drills on this Beginner band. Try each item before opening **Show answer**.
+
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `edage` *teacher* · `ogobo` *book* · `ohuze` *house* · `awu` *walk* · `ezabu` *tell* · `egu` *sing* · `aweru` *gift* · `azudo` *meeting* · `obola` *autonomy* · `odolo` *competence* · `ogono` *relatedness* · `azedo` *pleasure* · `uzehu` *survival* · `egege` *unspecified need*
+
+#### English → Agelan
+
+**1.** *Pleasure (as a topic).*
+
+::: details Show answer
+`hazedol.`
+:::
+
+**2.** *The gift serves relatedness (social channel).*
+
+::: details Show answer
+`zawerul wogonoxan.`
+:::
+
+**3.** *The house serves competence (physical channel).*
+
+::: details Show answer
+`zohuzel wodoloxal.`
+:::
+
+**4.** *The meeting costs autonomy right now (temporary).*
+
+::: details Show answer
+`zazudol woboloxur.`
+:::
+
+**5.** *Azawan tells — relatedness ought to be served (endorse).*
+
+::: details Show answer
+`zazawan vezabul hogonoxom.`
+:::
+
+**6.** *Unspecified need (as a topic).*
+
+::: details Show answer
+`hegegel.`
+:::
+
+**7.** *The book serves competence (mental channel).*
+
+::: details Show answer
+`zogobol wodoloxam.`
+:::
+
+**8.** *Ubuzun sings — survival ought to be protected (bound).*
+
+::: details Show answer
+`zubuzun vegul huzuhuxol.`
+:::
+
+#### Agelan → English
+
+**1.** `hazedol.`
+
+::: details Show answer
+*Pleasure (as a topic).*
+:::
+
+**2.** `zawerul wogonoxan.`
+
+::: details Show answer
+*The gift serves relatedness (social channel).*
+:::
+
+**3.** `zazudol woboloxur.`
+
+::: details Show answer
+*The meeting costs autonomy right now (temporary).*
+:::
+
+**4.** `zogobol wodoloxam.`
+
+::: details Show answer
+*The book serves competence (mental channel).*
+:::
+
+**5.** `hegegel.`
+
+::: details Show answer
+*Unspecified need (as a topic).*
+:::
+
+**6.** `zulonun vezabul hogonoxor.`
+
+::: details Show answer
+*Ulonun tells — relatedness ought to be served (invite).*
+:::
+
+**7.** `zohuzel wuzuhuxal.`
+
+::: details Show answer
+*The house serves survival (physical channel).*
+:::
+
+**8.** `zedagel wodoloxum.`
+
+::: details Show answer
+*The teacher costs competence (modifiable).*
+:::
+
 ## Intermediate
 <a id="intermediate"></a>
 
@@ -253,6 +360,113 @@ Prefer **-m** on **`xu` / `xe` / `xo`** when that table’s dimension is unclear
 | `… hogonoxur` | costs relatedness; **temporary** |
 | `hegegel` | unspecified need (**topic** only) |
 
+### Translation practice
+<a id="translation-practice-intermediate"></a>
+
+Short drills on this Intermediate band. Try each item before opening **Show answer**.
+
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `ogobo` *book* · `ohuze` *house* · `awu` *walk* · `ezabu` *tell* · `egu` *sing* · `uwa` *write* · `ahura` *sit* · `aweru` *gift* · `azudo` *meeting* · `obola` *autonomy* · `odolo` *competence* · `ogono` *relatedness* · `azedo` *pleasure* · `uzehu` *survival*
+
+#### English → Agelan
+
+**1.** *Azawan tells for relatedness (internal reason).*
+
+::: details Show answer
+`zazawan vezabul hogonoxem.`
+:::
+
+**2.** *Ulonun walks for relatedness (the situation pulls it).*
+
+::: details Show answer
+`zulonun vawul hogonoxel.`
+:::
+
+**3.** *Ubuzun sings for relatedness (habitual motive).*
+
+::: details Show answer
+`zubuzun vegul hogonoxen.`
+:::
+
+**4.** *Azawan sits for relatedness (protective motive).*
+
+::: details Show answer
+`zazawan vahural hogonoxer.`
+:::
+
+**5.** *Ulonun writes for competence (internal reason).*
+
+::: details Show answer
+`zulonun vuwal hodoloxem.`
+:::
+
+**6.** *Azawan’s house serves competence (physical channel).*
+
+::: details Show answer
+`zohuzel gohuzem bazawan wodoloxal.`
+:::
+
+**7.** *The gift serves relatedness (social) — met contact, not motive.*
+
+::: details Show answer
+`zawerul wogonoxan.`
+:::
+
+**8.** *Ubuzun tells — relatedness ought to hold as a commitment.*
+
+::: details Show answer
+`zubuzun vezabul hogonoxon.`
+:::
+
+#### Agelan → English
+
+**1.** `zazawan vezabul hogonoxem.`
+
+::: details Show answer
+*Azawan tells for relatedness (internal reason).*
+:::
+
+**2.** `zulonun vawul hogonoxel.`
+
+::: details Show answer
+*Ulonun walks for relatedness (circumstantial motive).*
+:::
+
+**3.** `zubuzun vegul hogonoxen.`
+
+::: details Show answer
+*Ubuzun sings for relatedness (habitual motive).*
+:::
+
+**4.** `zazawan vahural hogonoxer.`
+
+::: details Show answer
+*Azawan sits for relatedness (protective motive).*
+:::
+
+**5.** `zulonun vuwal hodoloxem.`
+
+::: details Show answer
+*Ulonun writes for competence (internal reason).*
+:::
+
+**6.** `zohuzel gohuzem bazawan wodoloxal.`
+
+::: details Show answer
+*Azawan’s house serves competence (physical channel).*
+:::
+
+**7.** `zawerul wazedoxar.`
+
+::: details Show answer
+*The gift serves pleasure (spiritual channel).*
+:::
+
+**8.** `zazudol woboloxum.`
+
+::: details Show answer
+*The meeting costs autonomy (modifiable).*
+:::
+
 ## Advanced
 <a id="advanced"></a>
 
@@ -301,6 +515,77 @@ Competence (`odolo`) and relatedness (`ogono`) shown for readability; same endin
 - **DECISION** / pick firmness — [plan-decision.md § Decision](plan-decision.md#decision); closed **`ehege`** + [changeability](plan-decision.md#decision-changeability); not unmet-need **`xu`**, not ability, not PLAN.
 - **PLAN** / intention map resolution — [plan-decision.md § Plan](plan-decision.md#plan-predict); closed **`owaro`** + [map resolution](plan-decision.md#plan-map-resolution) (sketch / itinerary / fork / proper); not DECISION, not PREDICT.
 - Whose-need / care direction on prescription, and forced listener / third-person possessives, stay optional later dimensions.
+
+### Translation practice
+<a id="translation-practice-advanced"></a>
+
+Short drills on this Advanced band. Try each item before opening **Show answer**.
+
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ezabu` *tell* · `edage` *teacher* · `azudo` *meeting* · `odolo` *competence* · `ogono` *relatedness* · `azedo` *pleasure*
+
+#### English → Agelan
+
+**1.** *Azawan tells — competence met (physical) and relatedness as internal motive.*
+
+::: details Show answer
+`zazawan vezabul hodoloxal hogonoxem.`
+:::
+
+**2.** *Ulonun tells — relatedness ought (bound) and relatedness as circumstantial motive.*
+
+::: details Show answer
+`zulonun vezabul hogonoxol hogonoxel.`
+:::
+
+**3.** *The meeting costs competence for good (unmet need, irreversible — not “can’t”).*
+
+::: details Show answer
+`zazudol wodoloxul.`
+:::
+
+**4.** *Pleasure as a topic (ordinary ending — not met).*
+
+::: details Show answer
+`hazedol.`
+:::
+
+**5.** *Azawan is a teacher — relatedness unmet (proper named frame).*
+
+::: details Show answer
+`zazawan gedagel hogonoxun.`
+:::
+
+#### Agelan → English
+
+**1.** `zazawan vezabul hodoloxal hogonoxem.`
+
+::: details Show answer
+*Azawan tells — competence is met (physical contact) and relatedness is the internal motive.*
+:::
+
+**2.** `zulonun vezabul hogonoxol hogonoxel.`
+
+::: details Show answer
+*Ulonun tells — relatedness is bound as an ought, and relatedness is the circumstantial motive.*
+:::
+
+**3.** `zazudol wodoloxul.`
+
+::: details Show answer
+*The meeting costs competence (irreversible unmet need).*
+:::
+
+**4.** `hazedol.`
+
+::: details Show answer
+*Pleasure (as a topic).*
+:::
+
+**5.** `wogonoxan.` `hogonoxen.` `hogonoxon.` `hogonoxun.`
+
+::: details Show answer
+*Relatedness served (social channel). For relatedness out of habit. Relatedness ought to hold as a commitment. Relatedness unmet (named frame).*
+:::
 
 ## See also
 

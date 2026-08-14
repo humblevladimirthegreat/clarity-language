@@ -98,6 +98,101 @@ These are **not** phrase named-list joins and **not** [restrictors](restrictors.
 
 Unary `/b/` only — restore list/empty arity on the **argument**, not by stacking bare `g*n` / `h*n` as fences. Only the **-n** exponent is content under `/ɡ/` / `/h/` for these roots.
 
+### Translation practice
+<a id="translation-practice-intermediate"></a>
+
+Short drills on this Intermediate band. Try each item before opening **Show answer**. Name a **join-act** (`van` / `von` / …) when someone *does* the move to an object; name a **join-relation** (`gan` / `han` / … plus one `/b/`) when a host is framed *including* / *without* / *prioritizing* something.
+
+**Roots used here:** `azawa` / `ulonu` / `ubuzu` (house names); `abeba` *apple*; `adeda` *tea*; `ugabe` *topping*; `ule` *lie*; `ebanu` *nuts*; `ogeve` *coffee*; `uguju` *bug*; `egoge` *candidate*; `amuga` *fix*; `ubaro` *cake*; `ugola` *drink*; `ahana` *team*; `awu` *walk*.
+
+#### English → Agelan
+
+**1.** *Azawan includes an apple.*
+
+::: details Show answer
+`zazawan dabebal van.`
+:::
+
+**2.** *Cake including nuts.*
+
+::: details Show answer
+`zubarol gan bebanul.`
+:::
+
+**3.** *Ulonun chooses tea (as the one choice).*
+
+::: details Show answer
+`zulonun dadedal von.`
+:::
+
+**4.** *Azawan walks with Ulonun.*
+
+::: details Show answer
+`zazawan han bulonun vawul.`
+:::
+
+**5.** *Azawan excludes nuts.*
+
+::: details Show answer
+`zazawan debanul vuan.`
+:::
+
+**6.** *Cake without nuts.*
+
+::: details Show answer
+`zubarol guan bebanul.`
+:::
+
+**7.** *Azawan picks a topping (more picks may follow).*
+
+::: details Show answer
+`zazawan dugabel vaon.`
+:::
+
+#### Agelan → English
+
+**1.** `zulonun dulel vun.`
+
+::: details Show answer
+*Ulonun refuses / denies the lie.*
+:::
+
+**2.** `zazawan dogevel vuon.`
+
+::: details Show answer
+*Azawan bars coffee (anything else is fine).*
+:::
+
+**3.** `zugolal gon badedal.`
+
+::: details Show answer
+*A drink exclusive for tea (tea is the sole pick).*
+:::
+
+**4.** `zazawan damugal voen.`
+
+::: details Show answer
+*Azawan tries the fix.*
+:::
+
+**5.** `zahanal gan bazawan.`
+
+::: details Show answer
+*A team including Azawan.*
+:::
+
+**6.** `zazawan hen bugujul vamugal.`
+
+::: details Show answer
+*Azawan works the fix, prioritizing the bug.*
+:::
+
+**7.** `zazawan degogelsh vaen.`
+
+::: details Show answer
+*Azawan equates the candidates.*
+:::
+
 ## See also
 
 - List joins (right-close fence): [coordination.md](coordination.md)

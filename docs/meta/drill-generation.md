@@ -218,13 +218,13 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 11 | `revisers.md` | **exists** | Prefix-less **`al`/`am`/`ol`/`ul`** (and **e** / **n** as on the band); in-clause `A REV B`; discourse **`al`** *additionally* before a body | Not a join (`zam` vs `am`). Not **`x#e-` / `x#e`** (numbers discourse) |
 | 11 | `restrictors.md` | **exists** | **`hal`/`ham`/`hual`/`huam`/`har`/`hor`/`hur`** (and `/w/` twins); *only when* vs co-manner *and*; bare *never* / *always* | Not sibling revisers. Not coordination **`zam`** as circumstance |
 | 12 | `spans.md` | **exists** | Writing fences `[ ]` `{ }` `( )` `< >`; **`~`/`@`**; anaphor `d[=]`; PoS = outer slot; when a span is required vs nativized word | `<>` loans **allowed** (this band teaches them). Prefer atomic one-token cites |
-| 13 | `numbers.md` | generate | `g+N` count; `g#N` ordinal; digitless **`g+`** (*more than one*) with **-sh** on the noun | No overlays, exponents, ranges, percent, measures (later). **-sh** from plurality is recycle |
-| 13 | `comparatives.md` | generate | Rank fence **`e`/`oe`/`ue`** + SHARED scale `/ɡ/`; focus superlative; equative **`ae`** | **Needs:** coordination Beginner rank joins. No measure phrases (Intermediate). No numbers Intermediate |
-| 13 | `causation.md` | generate | Sufficient = open inclusive (`…aom` / default pole habit); no cause-arrow word; outcome as host | **Needs:** coordination Beginner inclusive/exclusion + core **`odo`**. Necessary / **`IF` vs `IFF`** are Intermediate — do not use |
-| 14 | `values.md` | generate | Six needs; `/h/` vs `/w/`; topic (bare); **`xa`** met + contact endings; **`xo`** prescription force; **`xu`** unmet changeability | **Not** motive **`xe`** (Intermediate). Not ability (non-need + `x` vowel). Not COMMENT |
-| 14 | `ability.md` | generate | Host (non-need) + **`xa`/`xe`/`xo`/`xu`**; *can’t* grains vs *won’t* | Not values (need roots). Not role compounds (vowel *left* of `x`) |
-| 14 | `commentary.md` | generate | **COMMENT** **`uho`** + hold endings (**`huhom`** default); not a world warrant | Not evidentiality / NOTIONAL (Intermediate). Not **`jom`** (core Intermediate) unless you only recycle **`jol`** from core/questions Beginner |
-| 14 | `roles.md` | generate | Role compounds **`a`/`u`/`o` x ROOT`** (agent / patient / reltum); endings on the role word | Not viewpoint laterals (Intermediate). Not values/ability (vowel *right* of `x`). Not join-relations |
+| 13 | `numbers.md` | **exists** | `g+N` count; `g#N` ordinal; digitless **`g+`** (*more than one*) with **-sh** on the noun | No overlays, exponents, ranges, percent, measures (later). **-sh** from plurality is recycle |
+| 13 | `comparatives.md` | **exists** | Rank fence **`e`/`oe`/`ue`** + SHARED scale `/ɡ/`; focus superlative; equative **`ae`** | **Needs:** coordination Beginner rank joins. No measure phrases (Intermediate). No numbers Intermediate |
+| 13 | `causation.md` | **exists** | Sufficient = open inclusive (`…aom` / default pole habit); no cause-arrow word; outcome as host | **Needs:** coordination Beginner inclusive/exclusion + core **`odo`**. Necessary / **`IF` vs `IFF`** are Intermediate — do not use |
+| 14 | `values.md` | **exists** | Six needs; `/h/` vs `/w/`; topic (bare); **`xa`** met + contact endings; **`xo`** prescription force; **`xu`** unmet changeability | **Not** motive **`xe`** (Intermediate). Not ability (non-need + `x` vowel). Not COMMENT |
+| 14 | `ability.md` | **exists** | Host (non-need) + **`xa`/`xe`/`xo`/`xu`**; *can’t* grains vs *won’t* | Not values (need roots). Not role compounds (vowel *left* of `x`) |
+| 14 | `commentary.md` | **exists** | **COMMENT** **`uho`** + hold endings (**`huhom`** default); not a world warrant | Not evidentiality / NOTIONAL (Intermediate). Not **`jom`** (core Intermediate) unless you only recycle **`jol`** from core/questions Beginner |
+| 14 | `roles.md` | **exists** | Role compounds **`a`/`u`/`o` x ROOT`** (agent / patient / reltum); endings on the role word | Not viewpoint laterals (Intermediate). Not values/ability (vowel *right* of `x`). Not join-relations |
 | 14 | `x-compounds.md` | skip | — | map only |
 
 ### Intermediate then Advanced
@@ -254,26 +254,26 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 11 | `restrictors.md` | Advanced | skip | undefined reserved cells | |
 | 12 | `spans.md` | Intermediate | **exists** | Spoken open shape; TYPE; EDGE; endings; nesting; **`^ … ^`** adjunct islands | |
 | 12 | `spans.md` | Advanced | **exists** | Close forms (`xuxul` / truncated / sic / close-all) | 4–6 items |
-| 13 | `numbers.md` | Intermediate | generate | PoS on numbers; markers; endings; digitless; overlays `/v/` `/h/` `/j/` `/x/` as on the band; **one of** measure / range / percent / time if you can keep the item to that decision | **Optional track.** Do not dump the whole Intermediate. 6–8 items |
-| 13 | `numbers.md` | Advanced | generate | Digitless exponents / hyperbole / zero×exp **as used in the band’s teach examples** — not unassigned TODO cells | Optional track. 4–6 items |
-| 13 | `comparatives.md` | Intermediate | generate | Full comparative arity; distributive **`a`** + SHARED `/ɡ/`; measured differentials | Measured items **Sibling OK:** numbers Intermediate **measure phrases** only |
-| 13 | `comparatives.md` | Advanced | generate | Judgment benchmarks (`zonugon`, `zaheman`, **`zumogoxrawon`** Mine vs performance **`zumogon`**, …) | **`umogo`** allowed on Mine/performance items |
-| 13 | `causation.md` | Intermediate | generate | Necessary (marked); unique path; clause poles **`orodo` / `eluve` / `urugu`**; preference vs law (values stack if values Beginner is recycle — it is) | |
-| 13 | `causation.md` | Advanced | generate | Factivity; evidential / mechanism / habit stacks as on the band | COMMENT/evidentiality are Beginner/Intermediate recycle by the time Advanced is read |
-| 14 | `values.md` | Intermediate | generate | Motive **`xe`** + preference standing; which ending table; attachment sites | |
-| 14 | `values.md` | Advanced | generate | Combined matrices; one boundary trap | 4–6 items |
-| 14 | `ability.md` | Intermediate | generate | Hostless fallback **`egera`** (**ABIL**) | |
+| 13 | `numbers.md` | Intermediate | **exists** | PoS on numbers; markers; endings; digitless; overlays `/v/` `/h/` `/j/` `/x/` as on the band; **one of** measure / range / percent / time if you can keep the item to that decision | **Optional track.** Do not dump the whole Intermediate. 6–8 items |
+| 13 | `numbers.md` | Advanced | **exists** | Digitless exponents / hyperbole / zero×exp **as used in the band’s teach examples** — not unassigned TODO cells | Optional track. 4–6 items |
+| 13 | `comparatives.md` | Intermediate | **exists** | Full comparative arity; distributive **`a`** + SHARED `/ɡ/`; measured differentials | Measured items **Sibling OK:** numbers Intermediate **measure phrases** only |
+| 13 | `comparatives.md` | Advanced | **exists** | Judgment benchmarks (`zonugon`, `zaheman`, **`zumogoxrawon`** Mine vs performance **`zumogon`**, …) | **`umogo`** allowed on Mine/performance items |
+| 13 | `causation.md` | Intermediate | **exists** | Necessary (marked); unique path; clause poles **`orodo` / `eluve` / `urugu`**; preference vs law (values stack if values Beginner is recycle — it is) | |
+| 13 | `causation.md` | Advanced | **exists** | Factivity; evidential / mechanism / habit stacks as on the band | COMMENT/evidentiality are Beginner/Intermediate recycle by the time Advanced is read |
+| 14 | `values.md` | Intermediate | **exists** | Motive **`xe`** + preference standing; which ending table; attachment sites | |
+| 14 | `values.md` | Advanced | **exists** | Combined matrices; one boundary trap | 4–6 items |
+| 14 | `ability.md` | Intermediate | **exists** | Hostless fallback **`egera`** (**ABIL**) | |
 | 14 | `ability.md` | Advanced | skip | design notes | |
-| 14 | `commentary.md` | Intermediate | generate | Evidentiality channels; **NOTIONAL** **`edahe`** + hold map; COMMENT vs nearby jobs | |
+| 14 | `commentary.md` | Intermediate | **exists** | Evidentiality channels; **NOTIONAL** **`edahe`** + hold map; COMMENT vs nearby jobs | |
 | 14 | `commentary.md` | Advanced | skip | design notes | |
-| 14 | `roles.md` | Intermediate | generate | Viewpoint laterals **`DIR x ANCHOR`**; name/listener anchor; bare spatial illegal | Prefer `…xazawan` over silent speaker default. **`ehado`/`umogo`** only when testing role-anchor |
+| 14 | `roles.md` | Intermediate | **exists** | Viewpoint laterals **`DIR x ANCHOR`**; name/listener anchor; bare spatial illegal | Prefer `…xazawan` over silent speaker default. **`ehado`/`umogo`** only when testing role-anchor |
 | 14 | `roles.md` | Advanced | skip | design notes | |
-| 15 | `join-extras.md` | Intermediate | generate | Join-act verbs `van` / `von` / …; join-relations `gan` / `han` / … (unary `/b/`) | No Beginner slot. Recycle = all Beginner + earlier Intermediate (path before 15), except optional numbers unless needed |
-| 15 | `plan-decision.md` | Intermediate | generate | **PLAN** **`owaro`** map-resolution endings vs **PREDICT** **`edelo`**; **DECISION** **`ehege`** changeability | Stack evidentiality on PREDICT only as the band shows |
+| 15 | `join-extras.md` | Intermediate | **exists** | Join-act verbs `van` / `von` / …; join-relations `gan` / `han` / … (unary `/b/`) | No Beginner slot. Recycle = all Beginner + earlier Intermediate (path before 15), except optional numbers unless needed |
+| 15 | `plan-decision.md` | Intermediate | **exists** | **PLAN** **`owaro`** map-resolution endings vs **PREDICT** **`edelo`**; **DECISION** **`ehege`** changeability | Stack evidentiality on PREDICT only as the band shows |
 | 15 | `plan-decision.md` | Advanced | skip | design notes | |
-| 15 | `special-vocabulary.md` | Intermediate | generate | Emotion compose (ACT + LOCUS + a value); **CAUSE** **`erage`** **-m**; numbered alternatives `ubezu`/`egoge`/`ogalo` + `g#N` | Overlay *inventory* is not a drill. **Needs** values Beginner (recycle). Not universality (Advanced) |
-| 15 | `special-vocabulary.md` | Advanced | generate | Universality warrant (`ewono` / `ululu` / …) as on the band | 4–6 items |
-| 16 | `numeric-derivation.md` | Advanced | generate | `ROOT x NUM` as the band teaches (essence / `+N` / `#N` / quasi / …) — only assigned readings | **Optional track.** No **`ROOTx+e0`** / unassigned TODO cells. 4–6 items |
+| 15 | `special-vocabulary.md` | Intermediate | **exists** | Emotion compose (ACT + LOCUS + a value); **CAUSE** **`erage`** **-m**; numbered alternatives `ubezu`/`egoge`/`ogalo` + `g#N` | Overlay *inventory* is not a drill. **Needs** values Beginner (recycle). Not universality (Advanced) |
+| 15 | `special-vocabulary.md` | Advanced | **exists** | Universality warrant (`ewono` / `ululu` / …) as on the band | 4–6 items |
+| 16 | `numeric-derivation.md` | Advanced | **exists** | `ROOT x NUM` as the band teaches (essence / `+N` / `#N` / quasi / …) — only assigned readings | **Optional track.** No **`ROOTx+e0`** / unassigned TODO cells. 4–6 items |
 
 ## Leak index
 <a id="leak-index"></a>

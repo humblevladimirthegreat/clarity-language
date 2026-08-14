@@ -147,6 +147,113 @@ On **`ehege`**, endings match unmet [changeability](values.md#value-changeabilit
 
 DECISION is a **root choice**, not `xa`/`xu` polarity and not a mid-word **`x`** compound. It is not PLAN, not join-act **`von`**, not autonomy **`obola`**, and not ability *can’t decide*. Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)).
 
+### Translation practice
+<a id="translation-practice-intermediate"></a>
+
+Short drills on this Intermediate band. Try each item before opening **Show answer**. Pick **PLAN** (`owaro` + map-resolution ending), **PREDICT** (`edelo`), or **DECISION** (`ehege` + changeability) — not a generic English *will* / *I've decided*.
+
+**Roots used here:** `azawa` / `ulonu` / `ubuzu` · `owaro` · `edelo` · `ehege` · `awu` · `uwa` · `egu` · `ezele` · `urunu` · `aruna` · `awa` (*pattern*, evidential)
+
+#### English → Agelan
+
+**1.** *Azawan means to walk.* (direction only)
+
+::: details Show answer
+`zazawan howarom vawul.`
+:::
+
+**2.** *Ulonun has the steps on the map: walk.*
+
+::: details Show answer
+`zulonun howarol vawul.`
+:::
+
+**3.** *If that path fails, Ubuzun will walk.* (backup course)
+
+::: details Show answer
+`zubuzun howaror vawul.`
+:::
+
+**4.** *Azawan’s named plan is to write.*
+
+::: details Show answer
+`zazawan howaron vuwal.`
+:::
+
+**5.** *From the usual pattern, it will rain.*
+
+::: details Show answer
+`hedelom hawam varunal.`
+:::
+
+**6.** *Ulonun has decided to sing, and can still change that.*
+
+::: details Show answer
+`zulonun hehegem veguul.`
+:::
+
+**7.** *Ubuzun has decided for good to sleep.*
+
+::: details Show answer
+`zubuzun hehegel vezelel.`
+:::
+
+**8.** *Azawan has the itinerary, and the pick is settled: walk.*
+
+::: details Show answer
+`zazawan howarol hehegel vawul.`
+:::
+
+#### Agelan → English
+
+**1.** `zulonun howarom vawul.`
+
+::: details Show answer
+*Ulonun means to walk.* (sketch plan)
+:::
+
+**2.** `zazawan howarol vuwal.`
+
+::: details Show answer
+*Azawan’s itinerary is to write.*
+:::
+
+**3.** `zubuzun howaror vurunun.`
+
+::: details Show answer
+*If that path fails, Ubuzun will run.* (fork plan)
+:::
+
+**4.** `hedelom hawam varunal.`
+
+::: details Show answer
+*Forecast from pattern: it rains.*
+:::
+
+**5.** `zazawan hehegem veguul.`
+
+::: details Show answer
+*Azawan has decided to sing — still open to revision.*
+:::
+
+**6.** `zulonun hehegel vezelel.`
+
+::: details Show answer
+*Ulonun has decided for good to sleep.*
+:::
+
+**7.** `zubuzun heheger vawul.`
+
+::: details Show answer
+*Ubuzun has decided for now to walk.* (temporary pick)
+:::
+
+**8.** `zulonun hehegen vuwal.`
+
+::: details Show answer
+*Ulonun’s named decision is to write.*
+:::
+
 ## Advanced
 <a id="advanced"></a>
 

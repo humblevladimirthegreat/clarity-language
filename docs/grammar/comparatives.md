@@ -94,6 +94,113 @@ gloss: `z-grace` · `z-courage` · `zaem` · `g-bright`
 
 **Trap:** `zel` asserts inequality on the scale; `zael` asserts equality. Set **`a`** + SHARED scale is *both are ADJ* — not necessarily equal ([below](#distributive-both)).
 
+### Translation practice
+<a id="translation-practice"></a>
+
+Short drills on this Beginner band. Try each item before opening **Show answer**. Rank fence plus SHARED scale `/ɡ/` is the comparison; focus `zel` is the superlative; `zael` / `zaem` are equative.
+
+**Roots used here:** `azawa` / `ulonu` / `ubuzu` · `onuda` · `urubu` · `ogene` · `eleba` · `uze`
+
+#### English → Agelan
+
+**1.** *Azawan is more challenging than Ulonun.*
+
+::: details Show answer
+`zazawan zulonun zel gonudam.`
+:::
+
+**2.** *Azawan is the most challenging.*
+
+::: details Show answer
+`zazawan zel gonudam.`
+:::
+
+**3.** *Azawan is as challenging as Ulonun.*
+
+::: details Show answer
+`zazawan zulonun zael gonudam.`
+:::
+
+**4.** *Azawan is about as bright as Ulonun.*
+
+::: details Show answer
+`zazawan zulonun zaem gurubul.`
+:::
+
+**5.** *Azawan is much more challenging than Ulonun.*
+
+::: details Show answer
+`zazawan zulonun zel wogenal gonudam.`
+:::
+
+**6.** *Ubuzun is bigger than Azawan.*
+
+::: details Show answer
+`zubuzun zazawan zel gelebal.`
+:::
+
+**7.** *Ulonun is as happy as Ubuzun.*
+
+::: details Show answer
+`zulonun zubuzun zael guzem.`
+:::
+
+**8.** *Ubuzun is the happiest.*
+
+::: details Show answer
+`zubuzun zel guzem.`
+:::
+
+#### Agelan → English
+
+**1.** `zulonun zazawan zel gonudam.`
+
+::: details Show answer
+*Ulonun is more challenging than Azawan.*
+:::
+
+**2.** `zulonun zel gurubul.`
+
+::: details Show answer
+*Ulonun is the brightest.*
+:::
+
+**3.** `zubuzun zulonun zael gelebal.`
+
+::: details Show answer
+*Ubuzun is as big as Ulonun.*
+:::
+
+**4.** `zazawan zubuzun zaem gonudam.`
+
+::: details Show answer
+*Azawan is about as challenging as Ubuzun.*
+:::
+
+**5.** `zulonun zubuzun zel wogenal gelebal.`
+
+::: details Show answer
+*Ulonun is much bigger than Ubuzun.*
+:::
+
+**6.** `zazawan zulonun zael guzem.`
+
+::: details Show answer
+*Azawan is as happy as Ulonun.*
+:::
+
+**7.** `zubuzun zazawan zel gurubul.`
+
+::: details Show answer
+*Ubuzun is brighter than Azawan.*
+:::
+
+**8.** `zazawan zel gelebal.`
+
+::: details Show answer
+*Azawan is the biggest.*
+:::
+
 ## Intermediate
 <a id="intermediate"></a>
 
@@ -153,6 +260,113 @@ Focus / bare **`ae`** + SHARED scale stay ordinary focus / bare **`ae`** reading
 | `zazawan zulonun zel wogenal gonudam` | *Azawan is much more challenging than Ulonun* (vague degree — `/w/`, no measure NP) |
 
 Vague degree stays `/w/`; counted gaps use the measure-NP pattern (one `/b/` on the scale, not amount + unit as two `/b/`s).
+
+### Translation practice
+<a id="translation-practice-intermediate"></a>
+
+Short drills on this Intermediate band. Try each item before opening **Show answer**. Test arity (`oe` / `ue` / bare / `zer`), distributive **`a`**, and counted measure gaps versus vague `/w/`.
+
+**Roots used here:** `azawa` / `ulonu` / `ubuzu` · `onuda` · `ogene` · `eleba` · `urelu` · `uze`
+
+#### English → Agelan
+
+**1.** *Azawan is less challenging than Ulonun.*
+
+::: details Show answer
+`zazawan zulonun zuel gonudam.`
+:::
+
+**2.** *Azawan is the least challenging.*
+
+::: details Show answer
+`zazawan zuel gonudam.`
+:::
+
+**3.** *There is no most challenging.*
+
+::: details Show answer
+`zoel gonudam.`
+:::
+
+**4.** *Azawan and Ulonun are challenging.*
+
+::: details Show answer
+`zazawan zulonun zal gonudam.`
+:::
+
+**5.** *Azawan is two meters more challenging than Ulonun.*
+
+::: details Show answer
+`zazawan zulonun zel gonudam burelul g+2.`
+:::
+
+**6.** *Azawan is more challenging than Ulonun* (exclusive ladder).
+
+::: details Show answer
+`zazawan zulonun zoel gonudam.`
+:::
+
+**7.** *Unspecified who's most challenging.*
+
+::: details Show answer
+`zel gonudam.`
+:::
+
+**8.** *Azawan, Ulonun, and Ubuzun are challenging.*
+
+::: details Show answer
+`zazawan zulonun zubuzun zal gonudam.`
+:::
+
+#### Agelan → English
+
+**1.** `zazawan zulonun zubuzun zem gonudam.`
+
+::: details Show answer
+*Azawan is more challenging than Ulonun, who is more challenging than Ubuzun.*
+:::
+
+**2.** `zoem gonudam.`
+
+::: details Show answer
+*No most challenging comes to mind.*
+:::
+
+**3.** `zazawan zulonun zer gonudam.`
+
+::: details Show answer
+*Whichever of Azawan or Ulonun ranks higher on challenging.*
+:::
+
+**4.** `zazawan zulonun zal guzem.`
+
+::: details Show answer
+*Azawan and Ulonun are happy.*
+:::
+
+**5.** `zulonun zazawan zel gonudam burelul g+2.`
+
+::: details Show answer
+*Ulonun is two meters more challenging than Azawan.*
+:::
+
+**6.** `zazawan zulonun zel wogenal gelebal.`
+
+::: details Show answer
+*Azawan is much bigger than Ulonun.*
+:::
+
+**7.** `zer gonudam.`
+
+::: details Show answer
+*Whatever ranks highest on challenging.*
+:::
+
+**8.** `zubuzun zuel gelebal.`
+
+::: details Show answer
+*Ubuzun is the smallest.*
+:::
 
 ## Advanced
 <a id="advanced"></a>
@@ -229,6 +443,83 @@ Soft personal standard: **`zumogoxrawom`**. Ordinary named people stay ordinary 
 - Benchmark comparees fill NP slots on fences (`/z/` `/d/` `/b/`), not SHARED scale adjectives.
 - Bare **`zumogon`** is performance; normative Mine is **`zumogoxrawon`**.
 - Lexicon benchmark roots are not [restrictors](restrictors.md) or [ability](ability.md#ability) hosts.
+
+### Translation practice
+<a id="translation-practice-advanced"></a>
+
+Short drills on this Advanced band. Try each item before opening **Show answer**. Put the standard in the *than*-conjunct; **`zumogon`** is performance, **`zumogoxrawon`** is Mine.
+
+**Roots used here:** `azawa` / `ulonu` · `egu` · `abunu` · `eredo` · `agela` · `ebun` · `onugo` · `ahema` · `umogo` · `ulohu` · `aloba` · `ua`
+
+#### English → Agelan
+
+**1.** *Azawan is less kind than my personal standard.*
+
+::: details Show answer
+`zuel geredom zazawan zumogoxrawon.`
+:::
+
+**2.** *Azawan is less skilled at singing than I am.*
+
+::: details Show answer
+`zuel gegul zazawan zumogon.`
+:::
+
+**3.** *I am worse at singing than Professional.*
+
+::: details Show answer
+`zuel gegul zumogon zaloban.`
+:::
+
+**4.** *The draft is somewhat less clear than Average.*
+
+::: details Show answer
+`zuem gagelal debunel zonugon.`
+:::
+
+**5.** *I am less skilled than Typical.*
+
+::: details Show answer
+`zuel gabunul zumogon zaheman.`
+:::
+
+**6.** *I am less skilled than Everyone.*
+
+::: details Show answer
+`zuel gabunul zumogon zuan.`
+:::
+
+#### Agelan → English
+
+**1.** `zuel gabunul zumogon zulohun.`
+
+::: details Show answer
+*I am less skilled than Social.*
+:::
+
+**2.** `zuel gegul zumogon zulonun.`
+
+::: details Show answer
+*I am worse at singing than Ulonun.*
+:::
+
+**3.** `zuel geredom zazawan zumogoxrawom.`
+
+::: details Show answer
+*Azawan is somewhat less kind than my personal standard.*
+:::
+
+**4.** `zuel gabunul zazawan zaloban.`
+
+::: details Show answer
+*Azawan is less skilled than Professional.*
+:::
+
+**5.** `zuem gegul zazawan zonugon.`
+
+::: details Show answer
+*Azawan is somewhat worse at singing than Average.*
+:::
 
 ## See also
 

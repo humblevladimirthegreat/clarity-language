@@ -329,6 +329,77 @@ Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`zanaxre
 
 Unassigned or rare edges (not required for ordinary reading): number endings / writing **`~` / `@` / `=`** on `NUM`; productive multi-digit scalar or ordinal morphs (`ROOTx+27`, `ROOTx#12`); bare digit morphs (`ROOTx1`); signed / end-relative ordinal morphs (`ROOTx#-2`); ordinal generation morphs (`ROOTx#3e2`); privative twin of ordinal **`#N`**; bare **`ROOTxe`** as essence; role **`e x ROOT`**; percent closers (**`jo` / `ju`**) as derivation morphs; digit-string morphs as phone-dial or discourse-list substitutes; scale-specific **`ROOTx±0eN`** for **`N≠1`**; **`ROOTx+e0`** / **`ROOTx+0e0`** / **`#0e0`** / **`ROOTx+Ne0`**; quasi-N beyond **`-e-1` / `-e-2`**.
 
+### Translation practice
+<a id="translation-practice-advanced"></a>
+
+Short drills on this Advanced band. Try each item before opening **Show answer**. `ROOT x NUM` names a **kind property** (essence, grain, quasi, part-count, order-kind, catalog code, total-null) — spelled CV plus the **host** ending, not a free count or rank in a clause slot.
+
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `ole` *love* · `eregu` *truth* · `ana` *friend* (kind, as on this band) · `bule` *duty* · `ezebe` *dialogue* · `omo` *effect* · `egabe` *edition* · `adoma` *specimen* · `eva` *fear* · `ezehu` *score* · `ejo` *see* · `ezabu` *tell* · `uwa` *write*
+
+#### English → Agelan
+
+**1.** *Azawan sees the essence of love.*
+
+::: details Show answer
+`zazawan vejol zolexrabal.`
+:::
+
+**2.** *Ulonun tells a grain of truth.*
+
+::: details Show answer
+`zulonun vezabul zereguxrabul.`
+:::
+
+**3.** *Ubuzun is a quasi-friend.*
+
+::: details Show answer
+`zubuzun ganaxrubul.`
+:::
+
+**4.** *Azawan sees mutual duty.*
+
+::: details Show answer
+`zazawan vejol gobulexradul.`
+:::
+
+**5.** *Ulonun writes a first-edition.*
+
+::: details Show answer
+`zulonun vuwal degabexrewol.`
+:::
+
+#### Agelan → English
+
+**1.** `zazawan vejol zevaxrubal.`
+
+::: details Show answer
+*Azawan sees a void of fear.*
+:::
+
+**2.** `zulonun vezabul zezebexrarel.`
+
+::: details Show answer
+*Ulonun tells a three-part dialogue.*
+:::
+
+**3.** `zubuzun vejol gomoxredul.`
+
+::: details Show answer
+*Ubuzun sees a secondary effect.*
+:::
+
+**4.** `zazawan vejol zadomaxrowol.`
+
+::: details Show answer
+*Azawan sees specimen #1.*
+:::
+
+**5.** `zulonun vezehuxrazobal.`
+
+::: details Show answer
+*Ulonun annihilates the score.*
+:::
+
 ## See also
 
 - Free counts / ranks / overlays: [numbers.md](numbers.md)

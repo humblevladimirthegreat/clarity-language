@@ -80,6 +80,113 @@ gloss: `z-someone` · `d-me` · `v-conflict` · `z-conflict-agent-r` · `v-run`
 
 ROLE is **`a`/`u`/`o`** only; wrong ROOT type for a ROLE is illegal. Plural **-sh** on noun-slot role compounds follows ordinary [plurality](plurality.md) for that PoS.
 
+### Translation practice
+<a id="translation-practice"></a>
+
+Short drills on this Beginner band. Try each item before opening **Show answer**.
+
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `agada` *cat* · `uze` smile → *happy* (**-m**) · `awu` *walk* · `urunu` *run* · `ezele` *sleep* · `egu` *sing* · `ejo` *see* · `uwa` *write* · `ahura` *sit* · `ozowe` *conflict* / *fight* · `ogono` *bond*
+
+#### English → Agelan
+
+**1.** *A fighter runs.*
+
+::: details Show answer
+`zaxozowel vurunul.`
+:::
+
+**2.** *Azawan walks. The walker sleeps.*
+
+::: details Show answer
+`zazawan vawul. zaxawur vezelel.`
+:::
+
+**3.** *Ulonun sings. The singer sits.*
+
+::: details Show answer
+`zulonun vegul. zaxegur vahural.`
+:::
+
+**4.** *Azawan sees a cat. The one seen runs.*
+
+::: details Show answer
+`zazawan dagadal vejol. zuxejor vurunul.`
+:::
+
+**5.** *A writer is happy.*
+
+::: details Show answer
+`zaxuwal guzem.`
+:::
+
+**6.** *Azawan is a fighter, in a manner of speaking.*
+
+::: details Show answer
+`zazawan zaxozowem.`
+:::
+
+**7.** *Azawan sees a fight.*
+
+::: details Show answer
+`zazawan dozowel vejol.`
+:::
+
+**8.** *Azawan is bound to Ulonun. That bond-argument runs.*
+
+::: details Show answer
+`zazawan gogonol bulonun. zoxogonor vurunul.`
+:::
+
+#### Agelan → English
+
+**1.** `zaxurunul vawul.`
+
+::: details Show answer
+*A runner walks.*
+:::
+
+**2.** `zulonun vegul. zaxegur vezelel.`
+
+::: details Show answer
+*Ulonun sings. The singer sleeps.*
+:::
+
+**3.** `zazawan dagadal vejol. zuxejor vahural.`
+
+::: details Show answer
+*Azawan sees a cat. The one seen sits.*
+:::
+
+**4.** `zaxawul guzem.`
+
+::: details Show answer
+*A walker is happy.*
+:::
+
+**5.** `zazawan vozowel. zaxozower vurunul.`
+
+::: details Show answer
+*Azawan fought. The fighter ran.*
+:::
+
+**6.** `zubuzun dulonun vozowel. duxozower vawul.`
+
+::: details Show answer
+*Ubuzun fought Ulonun. The one fought walks.*
+:::
+
+**7.** `zazawan dozowel vejol.`
+
+::: details Show answer
+*Azawan sees a fight.*
+:::
+
+**8.** `zazawan zaxozowem.`
+
+::: details Show answer
+*Azawan is a fighter, in a manner of speaking.*
+:::
+
 ## Intermediate
 <a id="intermediate"></a>
 
@@ -178,6 +285,113 @@ The **`/b/`** argument is the landmark, not the viewpoint. Put the facing being 
 | Ability `veguxul` | stance vowel right of **`x`**, not a person root |
 
 Forward / back (`ovaro` / `agaja`) may reuse the same **`DIR x ANCHOR`** pattern when facing matters; they are not under the bare-lateral ban.
+
+### Translation practice
+<a id="translation-practice-intermediate"></a>
+
+Short drills on this Intermediate band. Try each item before opening **Show answer**.
+
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `ohuze` *house* · `agada` *cat* · `ogodo` *dog* · `ogobo` *book* · `awu` *walk* · `evede` *left* · `amala` *right* · `ebule` *up-left* · `oduwo` *down-right* · `erede` *tree* · `ehado` *listener* · `umogo` *speaker* · `ana` *we (inclusive)*
+
+#### English → Agelan
+
+**1.** *The house on Azawan’s left.*
+
+::: details Show answer
+`zohuzel gevedexazawan.`
+:::
+
+**2.** *The cat on Ulonun’s right.*
+
+::: details Show answer
+`zagadal gamalaxulonun.`
+:::
+
+**3.** *Walk left — Azawan’s left.*
+
+::: details Show answer
+`jel vawul hevedexazawan.`
+:::
+
+**4.** *The dog on Ubuzun’s up-left.*
+
+::: details Show answer
+`zogodol gebulexubuzun.`
+:::
+
+**5.** *The book is on Azawan’s left of the tree.*
+
+::: details Show answer
+`zogobol gevedexazawan beredel.`
+:::
+
+**6.** *The house on our left.*
+
+::: details Show answer
+`zohuzel gevedexanan.`
+:::
+
+**7.** *You, walk left — your left.*
+
+::: details Show answer
+`jel zehadon vawul hevedexehadon.`
+:::
+
+**8.** *The house on my left.*
+
+::: details Show answer
+`zohuzel gevedexumogon.`
+:::
+
+#### Agelan → English
+
+**1.** `zohuzel gamalaxazawan.`
+
+::: details Show answer
+*The house on Azawan’s right.*
+:::
+
+**2.** `zagadal gevedexulonun.`
+
+::: details Show answer
+*The cat on Ulonun’s left.*
+:::
+
+**3.** `jel vawul hamalaxubuzun.`
+
+::: details Show answer
+*Walk right — Ubuzun’s right.*
+:::
+
+**4.** `zogodol goduwoxazawan.`
+
+::: details Show answer
+*The dog on Azawan’s down-right.*
+:::
+
+**5.** `zogobol gevedexulonun beredel.`
+
+::: details Show answer
+*The book is on Ulonun’s left of the tree.*
+:::
+
+**6.** `zohuzel gevedexanan.`
+
+::: details Show answer
+*The house on our left.*
+:::
+
+**7.** `jel zehadon vawul hamalaxehadon.`
+
+::: details Show answer
+*You, walk right — your right.*
+:::
+
+**8.** `zohuzel gevedexumogon.`
+
+::: details Show answer
+*The house on my left.*
+:::
 
 ## Advanced
 <a id="advanced"></a>
