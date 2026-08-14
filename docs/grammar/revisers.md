@@ -105,6 +105,113 @@ gloss: `al` · `z-speaker` · `v-walk`
 
 Adversative *but* / *however*, *therefore*, *meanwhile*, and standalone *next* stay other `/x/` roots ([core.md](core.md#discourse-markers-x)). Narrative *and then* between full sentences is clause **`xan`**, not this series.
 
+### Translation practice
+<a id="translation-practice"></a>
+
+Short drills on this Beginner band. Try each item before opening **Show answer**.
+
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `ogodo` *dog* · `agada` *cat* · `odeda` *tea* · `ogeve` *coffee* · `ahana` *team* · `edage` *teacher* · `uze` smile → *happy* (**-m**) · `eleba` *size* · `awu` *walk* · `ezele` *sleep*
+
+#### English → Agelan
+
+**1.** *Dogs, including a cat among others.*
+
+::: details Show answer
+`zogodolsh am zagadal.`
+:::
+
+**2.** *Coffee fully replaces tea.*
+
+::: details Show answer
+`dadedal ol dogevel.`
+:::
+
+**3.** *The team except only Azawan.*
+
+::: details Show answer
+`zahanal ul zazawan.`
+:::
+
+**4.** *Additionally, Azawan walks.*
+
+::: details Show answer
+`al zazawan vawul.`
+:::
+
+**5.** *A dog and a cat.* (list join, not a reviser)
+
+::: details Show answer
+`zogodol zagadal zam.`
+:::
+
+**6.** *Azawan is happy — or rather, big.*
+
+::: details Show answer
+`zazawan guzem el gelebal.`
+:::
+
+**7.** *Instead, Ulonun sleeps.*
+
+::: details Show answer
+`ol zulonun vezelel.`
+:::
+
+**8.** *In other words, Ubuzun is a teacher.*
+
+::: details Show answer
+`el zubuzun gedagel.`
+:::
+
+#### Agelan → English
+
+**1.** `zogodolsh am zagadal.`
+
+::: details Show answer
+*Dogs, including a cat among others.*
+:::
+
+**2.** `dadedal ol dogevel.`
+
+::: details Show answer
+*Coffee fully replaces tea.*
+:::
+
+**3.** `zahanal ul zazawan.`
+
+::: details Show answer
+*The team except only Azawan.*
+:::
+
+**4.** `al zubuzun vawul.`
+
+::: details Show answer
+*Additionally, Ubuzun walks.*
+:::
+
+**5.** `el zulonun guzem.`
+
+::: details Show answer
+*In other words, Ulonun is happy.*
+:::
+
+**6.** `zogodolsh al zagadal.`
+
+::: details Show answer
+*Dogs, including only a cat.*
+:::
+
+**7.** `zogodol zagadal zam.`
+
+::: details Show answer
+*A dog and a cat.*
+:::
+
+**8.** `ul zazawan vezelel.`
+
+::: details Show answer
+*Except, Azawan sleeps.*
+:::
+
 ## Intermediate
 <a id="intermediate"></a>
 
@@ -195,6 +302,113 @@ gloss: `j-grace` · `al` · `z-speaker` · `v-walk`
 
 *Azawan — additionally, I go.* (vocative, then discourse reviser)
 ```
+
+### Translation practice
+<a id="translation-practice-intermediate"></a>
+
+Short drills on this Intermediate band. Try each item before opening **Show answer**.
+
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `ogodo` *dog* · `agada` *cat* · `odeda` *tea* · `ogeve` *coffee* · `ahana` *team* · `uze` smile → *happy* (**-m**) · `eru` *calm* · `awu` *walk* · `urunu` *run* · `amala` *therefore*
+
+#### English → Agelan
+
+**1.** *The team, including Azawan, except only Ulonun.*
+
+::: details Show answer
+`zahanal am zazawan ul zulonun.`
+:::
+
+**2.** *Azawan is happy — or rather, precisely calm.*
+
+::: details Show answer
+`zazawan guzem el gerul.`
+:::
+
+**3.** *Azawan — additionally, Ulonun walks.*
+
+::: details Show answer
+`jazawan al zulonun vawul.`
+:::
+
+**4.** *Additionally, therefore Azawan walks.*
+
+::: details Show answer
+`al xamalal zazawan vawul.`
+:::
+
+**5.** *Additionally, does Azawan walk?*
+
+::: details Show answer
+`al jol zazawan vawul.`
+:::
+
+**6.** *The team, including Azawan and including Ubuzun (both open).*
+
+::: details Show answer
+`zahanal am zazawan am zubuzun.`
+:::
+
+**7.** *Azawan walks and additionally Ulonun runs.*
+
+::: details Show answer
+`zazawan vawul al zulonun vurunul xam.`
+:::
+
+**8.** *Tea, with coffee as a replacement (not sworn unique).*
+
+::: details Show answer
+`dadedal om dogevel.`
+:::
+
+#### Agelan → English
+
+**1.** `zahanal am zazawan ul zulonun.`
+
+::: details Show answer
+*The team, including Azawan, except only Ulonun.*
+:::
+
+**2.** `zazawan guzem el gerul.`
+
+::: details Show answer
+*Azawan is happy — or rather, precisely calm.*
+:::
+
+**3.** `jazawan al zulonun vawul.`
+
+::: details Show answer
+*Azawan — additionally, Ulonun walks.*
+:::
+
+**4.** `al xamalal zulonun vurunul.`
+
+::: details Show answer
+*Additionally, therefore Ulonun runs.*
+:::
+
+**5.** `al jol zazawan vawul.`
+
+::: details Show answer
+*Additionally, does Azawan walk?*
+:::
+
+**6.** `zahanal am zazawan am zubuzun.`
+
+::: details Show answer
+*The team, including Azawan and including Ubuzun.*
+:::
+
+**7.** `zazawan vawul al zulonun vurunul xam.`
+
+::: details Show answer
+*Azawan walks and additionally Ulonun runs.*
+:::
+
+**8.** `zahanal an zazawan un zulonun.`
+
+::: details Show answer
+*The named team, including Azawan, and except Ulonun from that named frame.*
+:::
 
 ## Advanced
 <a id="advanced"></a>

@@ -110,6 +110,113 @@ These three jobs stay distinct:
 
 A fill answer **need not** keep **-r** — bare content, focus **-l** / **-m** / **-n**, or a longer list is fine ([fill-ask answers](#fill-ask-answers)).
 
+### Translation practice
+<a id="translation-practice"></a>
+
+Short drills on this Beginner band. Try each item before opening **Show answer**.
+
+**Roots used here:** `azawa` / `ulonu` / `ubuzu` · `edage` · `ogodo` · `awu` · `ezele` · `egu` · `ejo` · `uwa` · `urunu`
+
+#### English → Agelan
+
+**1.** *Does Azawan walk?*
+
+::: details Show answer
+`jol zazawan vawul.`
+:::
+
+**2.** *Who walks?*
+
+::: details Show answer
+`jol zar vawul.`
+:::
+
+**3.** *Does Ulonun sleep?* (gentle / wondering)
+
+::: details Show answer
+`jom zulonun vezelel.`
+:::
+
+**4.** *Who sees what?*
+
+::: details Show answer
+`jol zar vejol dar.`
+:::
+
+**5.** *Who sees a dog?* (one gap; the dog is real, not a second blank)
+
+::: details Show answer
+`jol zar vejol dogodol.`
+:::
+
+**6.** *Azawan walks. Yes.* (confirm as a second turn)
+
+::: details Show answer
+`zazawan vawul. jael.`
+:::
+
+**7.** *No.* / *False.* (polar, not “don’t”)
+
+::: details Show answer
+`juel.`
+:::
+
+**8.** *Don’t walk.*
+
+::: details Show answer
+`jul vawul.`
+:::
+
+#### Agelan → English
+
+**1.** `jol zubuzun vegul.`
+
+::: details Show answer
+*Does Ubuzun sing?*
+:::
+
+**2.** `jom zar vuwal.`
+
+::: details Show answer
+*Who writes?* (soft ask)
+:::
+
+**3.** `jol zulonun gedagel.`
+
+::: details Show answer
+*Is Ulonun a teacher?*
+:::
+
+**4.** `jaol.`
+
+::: details Show answer
+*Sure.* / *I’ll take that.*
+:::
+
+**5.** `jol zal vawul.`
+
+::: details Show answer
+*Does nobody walk?* / *Nothing walks?*
+:::
+
+**6.** `jul vurunul.`
+
+::: details Show answer
+*Don’t run.*
+:::
+
+**7.** `jol zur vezelel.`
+
+::: details Show answer
+*Who else sleeps?*
+:::
+
+**8.** `zubuzun vawul. jael.`
+
+::: details Show answer
+*Ubuzun walks. Yes.*
+:::
+
 ## Intermediate
 <a id="intermediate"></a>
 
@@ -145,7 +252,7 @@ Same-force continuation after a polar+body beat uses **`/x/`**, not another pola
 **`jael`** / **`juel`** answer whether the **proposition under question** matches reality — including when that proposition is already negated. After a negative ask, **`jael`** confirms the denial; **`juel`** rejects it (the positive holds).
 
 | Ask | Answer | Means |
-|-----|--------|--------|
+|-----|--------|-------|
 | `jol … vul vurunul` (*Didn’t run?*) | **`jael`** | *true, they didn’t* |
 | same | **`juel`** | *false — they did run* |
 
@@ -194,6 +301,115 @@ Worked rank / set inventories are Advanced ([focus and bare inventory](#focus-ba
 <a id="fill-ask-answers"></a>
 
 A fill may be a bare content word, focus **-l** / **-m** / **-n**, or a longer list. Multi-gap answers follow spoken **-r** order ([fill-all](#fill-all)).
+
+### Translation practice
+<a id="translation-practice-intermediate"></a>
+
+Short drills on this Intermediate band. Try each item before opening **Show answer**.
+
+**Roots used here:** `azawa` / `ulonu` / `ubuzu` · `ogodo` · `awu` · `urunu` · `ezele`
+
+#### English → Agelan
+
+**1.** *Didn’t Azawan run?* Then confirm: *true, Azawan didn’t.*
+
+::: details Show answer
+`jol zazawan vul vurunul.`
+`jael.`
+:::
+
+**2.** *Didn’t Ulonun sleep?* Then reject that: *false — Ulonun did sleep.*
+
+::: details Show answer
+`jol zulonun vul vezelel.`
+`juel.`
+:::
+
+**3.** *When does Ubuzun walk?*
+
+::: details Show answer
+`jol zubuzun vawul har.`
+:::
+
+**4.** *Which dog?* (one unknown)
+
+::: details Show answer
+`jol dogodol zar.`
+:::
+
+**5.** *Which of Azawan and Ulonun?*
+
+::: details Show answer
+`jol zazawan zulonun zar.`
+:::
+
+**6.** *Just Azawan?* (confirm the singleton)
+
+::: details Show answer
+`jol zazawan zal.`
+:::
+
+**7.** *How about Ubuzun?* (offer)
+
+::: details Show answer
+`jol zubuzun zam.`
+:::
+
+**8.** *Not that.* (reject this option, not a truth-flip)
+
+::: details Show answer
+`juol.`
+:::
+
+#### Agelan → English
+
+**1.** `jol hor.`
+
+::: details Show answer
+*Anytime?*
+:::
+
+**2.** `jael vul vurunul.`
+
+::: details Show answer
+*True — (they) didn’t run.*
+:::
+
+**3.** `juel vurunul.`
+
+::: details Show answer
+*False — (they) did run.*
+:::
+
+**4.** `jol var.`
+
+::: details Show answer
+*What did they do?*
+:::
+
+**5.** `jol hur.`
+
+::: details Show answer
+*When else?*
+:::
+
+**6.** `jual.`
+
+::: details Show answer
+*No.* (hard refuse of the whole frame)
+:::
+
+**7.** `jol zazawan zul.`
+
+::: details Show answer
+*Not Azawan?*
+:::
+
+**8.** `zazawan.`
+
+::: details Show answer
+*Azawan.* (a fill-ask answer — no leftover **-r**)
+:::
 
 ## Advanced
 <a id="advanced"></a>
@@ -287,6 +503,77 @@ Length **2+** (no **-r**): **-l** = pick from this closed menu; **-m** = pick or
 | **…ar** | *Who/what?* (fill-ask) |
 | **…or** | *Anything?* (fill-ask) |
 | **…ur** | *What else?* (fill-ask) |
+
+### Translation practice
+<a id="translation-practice-advanced"></a>
+
+Short drills on this Advanced band. Try each item before opening **Show answer**.
+
+**Roots used here:** `azawa` / `ulonu` / `ubuzu` · `awu` · `urunu`
+
+#### English → Agelan
+
+**1.** *Is Azawan the only priority?*
+
+::: details Show answer
+`jol zazawan zel.`
+:::
+
+**2.** *Prefer Ulonun?* / *Ulonun first?* (rank offer)
+
+::: details Show answer
+`jol zulonun zem.`
+:::
+
+**3.** *Has to be Ulonun?*
+
+::: details Show answer
+`jol zulonun zol.`
+:::
+
+**4.** *Tie?* (bare rank)
+
+::: details Show answer
+`jol zael.`
+:::
+
+**5.** *Don’t run.* (prohibition force, not polar *no*)
+
+::: details Show answer
+`jul vurunul.`
+:::
+
+#### Agelan → English
+
+**1.** `jael.` vs `jaol.`
+
+::: details Show answer
+*`jael`* = *yes / true* (match). *`jaol`* = *sure / I’ll take that* (uptake). Not interchangeable.
+:::
+
+**2.** `juel.` vs `juol.`
+
+::: details Show answer
+*`juel`* = *no / false* (truth flip). *`juol`* = *not that* (reject this option).
+:::
+
+**3.** `jol zazawan zulonun zual.`
+
+::: details Show answer
+*Everything but Azawan and Ulonun?*
+:::
+
+**4.** `jol zoel.`
+
+::: details Show answer
+*Do nothing?* / *Skip it?*
+:::
+
+**5.** `jum vawul.`
+
+::: details Show answer
+*Don’t walk.* (soft prohibition — not polar *no*)
+:::
 
 ## See also
 

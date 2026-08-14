@@ -213,11 +213,11 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 7 | `pronouns.md` | **exists** | Letter vs full-root **-r**; specials **`umogo` / `ehado` / `ana` / `enu`** (when the *role* is the point); **`odo`** recap; clusivity **`ana`** vs speaker **-sh** | **-sh** on specials / names for clusivity only. Default people still house names; specials only when testing specials |
 | 7 | `plurality.md` | **exists** | Associative **-sh** (`-lsh` / `-nsh` / `-rsh`); not agreement; person-role **-sh** (address set vs name…**-sh**) | **`ana`** as the *not this* for inclusive *we*. **`umogo`/`ehado`** only on person-role items |
 | 8 | `predication.md` | **exists** | Zero-copula property; classification `z… g…` vs role *noun* `zedagel`; identity **`gogunol` + `/b/`** | No general *to-be* `/v/`. Prefer house names + **SAME**; page-example roots (`odava` / `uzuba`) OK if already on the band |
-| 9 | `coordination.md` | generate | Right-close fence; set vs rank vowels; **-l** vs **-m**; list / focus / bare starter forms; negation **`u`**; unspecified **-r** as *something* (not fill-ask) | No revisers, no restrictor `/h/` join readings, no comparatives SHARED scale as the point (that is comparatives) |
-| 10 | `questions.md` | generate | **`jol`/`jom`** yes/no vs fill-ask (join **-r**); fill-all; polar **`jael` / `juel` / `jaol`** vs **`jul`** vs join **`zul`** | **`jom`** is taught here as soft *ask* — allowed on this page even though full force twins are core Intermediate. Circumstance *when?* **`har`** is Intermediate on this page — do not use |
-| 11 | `revisers.md` | generate | Prefix-less **`al`/`am`/`ol`/`ul`** (and **e** / **n** as on the band); in-clause `A REV B`; discourse **`al`** *additionally* before a body | Not a join (`zam` vs `am`). Not **`x#e-` / `x#e`** (numbers discourse) |
-| 11 | `restrictors.md` | generate | **`hal`/`ham`/`hual`/`huam`/`har`/`hor`/`hur`** (and `/w/` twins); *only when* vs co-manner *and*; bare *never* / *always* | Not sibling revisers. Not coordination **`zam`** as circumstance |
-| 12 | `spans.md` | generate | Writing fences `[ ]` `{ }` `( )` `< >`; **`~`/`@`**; anaphor `d[=]`; PoS = outer slot; when a span is required vs nativized word | `<>` loans **allowed** (this band teaches them). Prefer atomic one-token cites |
+| 9 | `coordination.md` | **exists** | Right-close fence; set vs rank vowels; **-l** vs **-m**; list / focus / bare starter forms; negation **`u`**; unspecified **-r** as *something* (not fill-ask) | No revisers, no restrictor `/h/` join readings, no comparatives SHARED scale as the point (that is comparatives) |
+| 10 | `questions.md` | **exists** | **`jol`/`jom`** yes/no vs fill-ask (join **-r**); fill-all; polar **`jael` / `juel` / `jaol`** vs **`jul`** vs join **`zul`** | **`jom`** is taught here as soft *ask* — allowed on this page even though full force twins are core Intermediate. Circumstance *when?* **`har`** is Intermediate on this page — do not use |
+| 11 | `revisers.md` | **exists** | Prefix-less **`al`/`am`/`ol`/`ul`** (and **e** / **n** as on the band); in-clause `A REV B`; discourse **`al`** *additionally* before a body | Not a join (`zam` vs `am`). Not **`x#e-` / `x#e`** (numbers discourse) |
+| 11 | `restrictors.md` | **exists** | **`hal`/`ham`/`hual`/`huam`/`har`/`hor`/`hur`** (and `/w/` twins); *only when* vs co-manner *and*; bare *never* / *always* | Not sibling revisers. Not coordination **`zam`** as circumstance |
+| 12 | `spans.md` | **exists** | Writing fences `[ ]` `{ }` `( )` `< >`; **`~`/`@`**; anaphor `d[=]`; PoS = outer slot; when a span is required vs nativized word | `<>` loans **allowed** (this band teaches them). Prefer atomic one-token cites |
 | 13 | `numbers.md` | generate | `g+N` count; `g#N` ordinal; digitless **`g+`** (*more than one*) with **-sh** on the noun | No overlays, exponents, ranges, percent, measures (later). **-sh** from plurality is recycle |
 | 13 | `comparatives.md` | generate | Rank fence **`e`/`oe`/`ue`** + SHARED scale `/ɡ/`; focus superlative; equative **`ae`** | **Needs:** coordination Beginner rank joins. No measure phrases (Intermediate). No numbers Intermediate |
 | 13 | `causation.md` | generate | Sufficient = open inclusive (`…aom` / default pole habit); no cause-arrow word; outcome as host | **Needs:** coordination Beginner inclusive/exclusion + core **`odo`**. Necessary / **`IF` vs `IFF`** are Intermediate — do not use |
@@ -244,16 +244,16 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 7 | `plurality.md` | Advanced | skip | unused / summary | |
 | 8 | `predication.md` | Intermediate | **exists** | Classification packaging; **SAME** endings / soft identity | |
 | 8 | `predication.md` | Advanced | skip | boundaries | |
-| 9 | `coordination.md` | Intermediate | generate | Full focus/bare; rank joins as *the* stack if not already fluent; invert **`ua`/`uo`/`ue`**; universals/domains; SHARED after join; `^` islands; frame echo; fence nesting; clause soft **-n** (`xan`); VP/clause forms | Sample **decisions**, not every H3. 6–8 items |
-| 9 | `coordination.md` | Advanced | generate | Named phrase **-n**; one rare-arity or reserved contrast from the band | 4–6 items |
-| 10 | `questions.md` | Intermediate | generate | Fuller polar inventory; confirming a negative; fill-ask arity; circumstance **`har`**; yes/no with focus/bare; fill-ask answers | |
-| 10 | `questions.md` | Advanced | generate | Polar contrasts; focus/bare inventory under question | 4–6 items |
-| 11 | `revisers.md` | Intermediate | generate | Ending grids; parallel chains; discourse placements (before force, `/x/` continue/linker) | |
+| 9 | `coordination.md` | Intermediate | **exists** | Full focus/bare; rank joins as *the* stack if not already fluent; invert **`ua`/`uo`/`ue`**; universals/domains; SHARED after join; `^` islands; frame echo; fence nesting; clause soft **-n** (`xan`); VP/clause forms | Sample **decisions**, not every H3. 6–8 items |
+| 9 | `coordination.md` | Advanced | **exists** | Named phrase **-n**; one rare-arity or reserved contrast from the band | 4–6 items |
+| 10 | `questions.md` | Intermediate | **exists** | Fuller polar inventory; confirming a negative; fill-ask arity; circumstance **`har`**; yes/no with focus/bare; fill-ask answers | |
+| 10 | `questions.md` | Advanced | **exists** | Polar contrasts; focus/bare inventory under question | 4–6 items |
+| 11 | `revisers.md` | Intermediate | **exists** | Ending grids; parallel chains; discourse placements (before force, `/x/` continue/linker) | |
 | 11 | `revisers.md` | Advanced | skip | more examples / reserved | |
-| 11 | `restrictors.md` | Intermediate | generate | Defined core (full); conjuncts; next-clause *when* | |
+| 11 | `restrictors.md` | Intermediate | **exists** | Defined core (full); conjuncts; next-clause *when* | |
 | 11 | `restrictors.md` | Advanced | skip | undefined reserved cells | |
-| 12 | `spans.md` | Intermediate | generate | Spoken open shape; TYPE; EDGE; endings; nesting; **`^ … ^`** adjunct islands | |
-| 12 | `spans.md` | Advanced | generate | Close forms (`xuxul` / truncated / sic / close-all) | 4–6 items |
+| 12 | `spans.md` | Intermediate | **exists** | Spoken open shape; TYPE; EDGE; endings; nesting; **`^ … ^`** adjunct islands | |
+| 12 | `spans.md` | Advanced | **exists** | Close forms (`xuxul` / truncated / sic / close-all) | 4–6 items |
 | 13 | `numbers.md` | Intermediate | generate | PoS on numbers; markers; endings; digitless; overlays `/v/` `/h/` `/j/` `/x/` as on the band; **one of** measure / range / percent / time if you can keep the item to that decision | **Optional track.** Do not dump the whole Intermediate. 6–8 items |
 | 13 | `numbers.md` | Advanced | generate | Digitless exponents / hyperbole / zero×exp **as used in the band’s teach examples** — not unassigned TODO cells | Optional track. 4–6 items |
 | 13 | `comparatives.md` | Intermediate | generate | Full comparative arity; distributive **`a`** + SHARED `/ɡ/`; measured differentials | Measured items **Sibling OK:** numbers Intermediate **measure phrases** only |

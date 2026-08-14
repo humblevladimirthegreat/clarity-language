@@ -251,6 +251,113 @@ Under [question](questions.md#interrogative-force) force, these forms are **fill
 
 The join prefix **must match** every conjunct head. Under `/ɡ/` `/h/`, joins are **-l** / **-m** / **-r** only; **-n** spellings there are [join-relations](join-extras.md#join-relations).
 
+### Translation practice
+<a id="translation-practice"></a>
+
+Short drills on this Beginner band. Try each item before opening **Show answer**. The join sits **after** the conjuncts; pick the vowel (set vs rank, including **`u`**) and the ending (**-l** / **-m** / **-r**), including focus and bare starter forms.
+
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `ogodo` *dog* · `agada` *cat* · `odeda` *tea* · `ogeve` *coffee* · `abeba` *apple* · `udura` *water* · `onuda` *challenging* · `ebore` *person* · `awu` *walk* · `urunu` *run* · `ezele` *sleep*
+
+#### English → Agelan
+
+**1.** *a dog and a cat*
+
+::: details Show answer
+`zogodol zagadal zam.`
+:::
+
+**2.** *tea or coffee — pick exactly one*
+
+::: details Show answer
+`zadedal zogevel zol.`
+:::
+
+**3.** *coffee, or skip*
+
+::: details Show answer
+`zogevel zom.`
+:::
+
+**4.** *just Azawan*
+
+::: details Show answer
+`zazawan zal.`
+:::
+
+**5.** *not challenging*
+
+::: details Show answer
+`gonudam gul.`
+:::
+
+**6.** *none of tea or coffee*
+
+::: details Show answer
+`zadedal zogevel zul.`
+:::
+
+**7.** *something* / *someone*
+
+::: details Show answer
+`zar.`
+:::
+
+**8.** *Azawan walks and Ulonun runs.*
+
+::: details Show answer
+`zazawan vawul zulonun vurunul xam.`
+:::
+
+#### Agelan → English
+
+**1.** `zogodol zagadal zam.`
+
+::: details Show answer
+*a dog and a cat*
+:::
+
+**2.** `zadedal zogevel zol.`
+
+::: details Show answer
+*tea or coffee — pick exactly one*
+:::
+
+**3.** `zazawan zul.`
+
+::: details Show answer
+*not Azawan*
+:::
+
+**4.** `zual.`
+
+::: details Show answer
+*everything* / *everyone*
+:::
+
+**5.** `zeborel zar.`
+
+::: details Show answer
+*some (unknown) person*
+:::
+
+**6.** `zadedal zogevel zar.`
+
+::: details Show answer
+*some one among tea and coffee*
+:::
+
+**7.** `zazawan zel.`
+
+::: details Show answer
+*only Azawan matters* / *Azawan first*
+:::
+
+**8.** `dabebal vabebal dudural vudural vam.`
+
+::: details Show answer
+*ate an apple and drank water*
+:::
+
 ## Intermediate
 <a id="intermediate"></a>
 
@@ -605,6 +712,107 @@ VP `/v/`…**-n** spellings are [join-act verbs](join-extras.md#join-act-verbs).
 
 Do not read **`xaom`** / **`xaol`** as *SENT₁ is sufficient for SENT₂* — peer coordination only.
 
+### Translation practice
+<a id="translation-practice-intermediate"></a>
+
+Short drills on this Intermediate band. Try each item before opening **Show answer**. Sample the decisions this band adds: invert **`ua`**, universals vs *everything but*, SHARED after the join, islands, nesting, frame echo, and clause **`xan`**.
+
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `ogodo` *dog* · `agada` *cat* · `odeda` *tea* · `ogeve` *coffee* · `udura` *water* · `onuda` *challenging* · `onuno` *onion* · `uguge` *cucumber* · `abeba` *apple* · `ohewo` *wash* · `awu` *walk* · `urunu` *run* · `ezele` *sleep*
+
+#### English → Agelan
+
+**1.** *tea ≻ coffee ≻ water*
+
+::: details Show answer
+`zadedal zogevel zudural zel.`
+:::
+
+**2.** *everything but tea and coffee*
+
+::: details Show answer
+`zadedal zogevel zual.`
+:::
+
+**3.** *every cat*
+
+::: details Show answer
+`zual gagadal.`
+:::
+
+**4.** *(challenging dog) and (challenging cat)*
+
+::: details Show answer
+`zogodol zagadal zal gonudam.`
+:::
+
+**5.** *Azawan and (just water)*
+
+::: details Show answer
+`zazawan ^ zudural zal ^ zam.`
+:::
+
+**6.** *Azawan walks and then Ulonun runs.*
+
+::: details Show answer
+`zazawan vawul zulonun vurunul xan.`
+:::
+
+**7.** *at least Azawan*
+
+::: details Show answer
+`zazawan zaom.`
+:::
+
+**8.** *(tea or coffee) and water*
+
+::: details Show answer
+`zadedal zogevel zol zudural zal.`
+:::
+
+#### Agelan → English
+
+**1.** `zual gagadal.`
+
+::: details Show answer
+*every cat*
+:::
+
+**2.** `zagadal zual.`
+
+::: details Show answer
+*everything but the cat*
+:::
+
+**3.** `zadedal zogevel zudural zel.`
+
+::: details Show answer
+*tea ≻ coffee ≻ water*
+:::
+
+**4.** `zazawan ^ zal ^ zam.`
+
+::: details Show answer
+*Azawan and nothing*
+:::
+
+**5.** `zual` · `zonunol zugugel zual`
+
+::: details Show answer
+*everything — (but) onion and cucumber*
+:::
+
+**6.** `vohewo vabebal vam dabebal.`
+
+::: details Show answer
+*washed and ate an apple*
+:::
+
+**7.** `zazawan vawul zulonun vurunul xol zubuzun vezelel xal.`
+
+::: details Show answer
+*(Azawan walks or Ulonun runs) and Ubuzun sleeps.*
+:::
+
 ## Advanced
 <a id="advanced"></a>
 
@@ -673,6 +881,77 @@ Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om*
 <a id="restrictors"></a>
 
 Under `/h/` and `/w/`, the join series marks **applicability circumstances** (not sibling *and*). Full grammar: **[restrictors.md](restrictors.md)**.
+
+### Translation practice
+<a id="translation-practice-advanced"></a>
+
+Short drills on this Advanced band. Try each item before opening **Show answer**. Phrase **-n** is a **named / conventional** list (not clause soft **-n**); one item also tests a rare-arity contrast (**`zor`** vs **`zer`**, **`zur`**, or bare **`zan`**).
+
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `odeda` *tea* · `ogeve` *coffee* · `udura` *water* · `ebore` *person*
+
+#### English → Agelan
+
+**1.** *tea or coffee (the usual named menu)*
+
+::: details Show answer
+`zadedal zogevel zon.`
+:::
+
+**2.** *null* / *void*
+
+::: details Show answer
+`zan.`
+:::
+
+**3.** *any of tea, coffee, or water is fine (no order)*
+
+::: details Show answer
+`zadedal zogevel zudural zor.`
+:::
+
+**4.** *pick tea, coffee, or water by ranking*
+
+::: details Show answer
+`zadedal zogevel zudural zer.`
+:::
+
+**5.** *someone other than Azawan and Ulonun*
+
+::: details Show answer
+`zazawan zulonun zur.`
+:::
+
+#### Agelan → English
+
+**1.** `zan.`
+
+::: details Show answer
+*null* / *void*
+:::
+
+**2.** `zadedal zogevel zon.`
+
+::: details Show answer
+*tea or coffee (the usual named menu)*
+:::
+
+**3.** `zaen.`
+
+::: details Show answer
+*it's a draw* (stock)
+:::
+
+**4.** `zadedal zogevel zudural zer.`
+
+::: details Show answer
+*pick tea, coffee, or water by ranking*
+:::
+
+**5.** `zazawan zulonun zur.`
+
+::: details Show answer
+*someone other than Azawan and Ulonun*
+:::
 
 ## See also
 
