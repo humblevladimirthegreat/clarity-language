@@ -67,6 +67,28 @@ function tokenIs(token: IToken, ...types: { tokenTypeIdx?: number }[]): boolean 
   return types.some((type) => token.tokenType === type);
 }
 
+type NpSlot = "z" | "d" | "b";
+
+function npSlot(token: IToken): NpSlot | undefined {
+  if (token.tokenType === JoinZ || token.tokenType === Z) return "z";
+  if (token.tokenType === JoinD || token.tokenType === D) return "d";
+  if (token.tokenType === JoinB || token.tokenType === B) return "b";
+  if (token.tokenType === Odo || token.tokenType === WritingSpan) {
+    const pos = (token.payload as LexWord | undefined)?.pos;
+    if (pos === "z" || pos === "d" || pos === "b") return pos;
+  }
+  return undefined;
+}
+
+function isGlHead(token: IToken): boolean {
+  return token.tokenType === G && (token.payload as LexWord).gl === true;
+}
+
+function isNpSlotLookahead(la1: IToken, la2: IToken, slot: NpSlot): boolean {
+  if (npSlot(la1) === slot) return true;
+  return isGlHead(la1) && npSlot(la2) === slot;
+}
+
 class AgelanSentenceParser extends CstParser {
   constructor() {
     super(allTokens, { recoveryEnabled: false, maxLookahead: 3 });
@@ -177,9 +199,16 @@ class AgelanSentenceParser extends CstParser {
       { GATE: () => this.LA(1).tokenType === IslandEdge, ALT: () => this.SUBRULE(this.islandUnit) },
       { GATE: () => this.LA(1).tokenType === SpanOpen, ALT: () => this.SUBRULE(this.spanUnit) },
       {
-        GATE: () =>
-          tokenIs(this.LA(1), Z, D, B, Odo, WritingSpan, JoinZ, JoinD, JoinB),
-        ALT: () => this.SUBRULE(this.npCoord),
+        GATE: () => isNpSlotLookahead(this.LA(1), this.LA(2), "z"),
+        ALT: () => this.SUBRULE(this.zCoord),
+      },
+      {
+        GATE: () => isNpSlotLookahead(this.LA(1), this.LA(2), "d"),
+        ALT: () => this.SUBRULE(this.dCoord),
+      },
+      {
+        GATE: () => isNpSlotLookahead(this.LA(1), this.LA(2), "b"),
+        ALT: () => this.SUBRULE(this.bCoord),
       },
       {
         GATE: () => tokenIs(this.LA(1), V, JoinV),
@@ -216,27 +245,108 @@ class AgelanSentenceParser extends CstParser {
     this.CONSUME(SpanClose);
   });
 
-  public npCoord = this.RULE("npCoord", () => {
-    this.AT_LEAST_ONE(() => {
-      this.SUBRULE(this.npCoordPart);
+  public zCoord = this.RULE("zCoord", () => {
+    this.AT_LEAST_ONE({
+      GATE: () => isNpSlotLookahead(this.LA(1), this.LA(2), "z"),
+      DEF: () => {
+        this.SUBRULE(this.zCoordPart);
+      },
     });
   });
 
-  public npCoordPart = this.RULE("npCoordPart", () => {
+  public dCoord = this.RULE("dCoord", () => {
+    this.AT_LEAST_ONE({
+      GATE: () => isNpSlotLookahead(this.LA(1), this.LA(2), "d"),
+      DEF: () => {
+        this.SUBRULE(this.dCoordPart);
+      },
+    });
+  });
+
+  public bCoord = this.RULE("bCoord", () => {
+    this.AT_LEAST_ONE({
+      GATE: () => isNpSlotLookahead(this.LA(1), this.LA(2), "b"),
+      DEF: () => {
+        this.SUBRULE(this.bCoordPart);
+      },
+    });
+  });
+
+  public zCoordPart = this.RULE("zCoordPart", () => {
     this.OR([
       {
-        GATE: () => tokenIs(this.LA(1), JoinZ, JoinD, JoinB),
+        GATE: () => this.LA(1).tokenType === JoinZ,
         ALT: () => {
           this.SUBRULE(this.npJoinClose);
         },
       },
       {
         ALT: () => {
-          this.AT_LEAST_ONE(() => {
-            this.SUBRULE(this.npConjunct);
+          this.AT_LEAST_ONE({
+            GATE: () => isNpSlotLookahead(this.LA(1), this.LA(2), "z") && this.LA(1).tokenType !== JoinZ,
+            DEF: () => {
+              this.SUBRULE(this.npConjunct);
+            },
           });
-          this.OPTION(() => {
-            this.SUBRULE2(this.npJoinClose);
+          this.OPTION({
+            GATE: () => this.LA(1).tokenType === JoinZ,
+            DEF: () => {
+              this.SUBRULE2(this.npJoinClose);
+            },
+          });
+        },
+      },
+    ]);
+  });
+
+  public dCoordPart = this.RULE("dCoordPart", () => {
+    this.OR([
+      {
+        GATE: () => this.LA(1).tokenType === JoinD,
+        ALT: () => {
+          this.SUBRULE(this.npJoinClose);
+        },
+      },
+      {
+        ALT: () => {
+          this.AT_LEAST_ONE({
+            GATE: () => isNpSlotLookahead(this.LA(1), this.LA(2), "d") && this.LA(1).tokenType !== JoinD,
+            DEF: () => {
+              this.SUBRULE(this.npConjunct);
+            },
+          });
+          this.OPTION({
+            GATE: () => this.LA(1).tokenType === JoinD,
+            DEF: () => {
+              this.SUBRULE2(this.npJoinClose);
+            },
+          });
+        },
+      },
+    ]);
+  });
+
+  public bCoordPart = this.RULE("bCoordPart", () => {
+    this.OR([
+      {
+        GATE: () => this.LA(1).tokenType === JoinB,
+        ALT: () => {
+          this.SUBRULE(this.npJoinClose);
+        },
+      },
+      {
+        ALT: () => {
+          this.AT_LEAST_ONE({
+            GATE: () => isNpSlotLookahead(this.LA(1), this.LA(2), "b") && this.LA(1).tokenType !== JoinB,
+            DEF: () => {
+              this.SUBRULE(this.npConjunct);
+            },
+          });
+          this.OPTION({
+            GATE: () => this.LA(1).tokenType === JoinB,
+            DEF: () => {
+              this.SUBRULE2(this.npJoinClose);
+            },
           });
         },
       },
@@ -620,8 +730,20 @@ function buildNpItem(cst: CstNode): NpItem {
   return { kind: "package", package: buildNpPackage(childNodes(cst, "npPackage")[0]!) };
 }
 
+function npCoordCst(parent: CstNode): CstNode | undefined {
+  return childNodes(parent, "zCoord")[0] ?? childNodes(parent, "dCoord")[0] ?? childNodes(parent, "bCoord")[0];
+}
+
+function npCoordParts(cst: CstNode): CstNode[] {
+  const z = childNodes(cst, "zCoordPart");
+  if (z.length > 0) return z;
+  const d = childNodes(cst, "dCoordPart");
+  if (d.length > 0) return d;
+  return childNodes(cst, "bCoordPart");
+}
+
 function buildNpCoord(cst: CstNode): NpCoord {
-  const parts = childNodes(cst, "npCoordPart");
+  const parts = npCoordParts(cst);
   const built = parts.map((part) => {
     const close = childNodes(part, "npJoinClose")[0];
     const { join, shared } = joinFromClose(close);
@@ -705,7 +827,7 @@ function buildUnit(cst: CstNode): Unit {
   if (island) return { kind: "island", island: buildIsland(island) };
   const span = childNodes(cst, "spanUnit")[0];
   if (span) return { kind: "span", span: buildSpan(span) };
-  const np = childNodes(cst, "npCoord")[0];
+  const np = npCoordCst(cst);
   if (np) return { kind: "np", coord: buildNpCoord(np) };
   const vp = childNodes(cst, "vpCoord")[0];
   if (vp) return { kind: "vp", coord: buildVpCoord(vp) };
@@ -729,7 +851,7 @@ function expandUnits(cst: CstNode): Unit[] {
   if (island) return [{ kind: "island", island: buildIsland(island) }];
   const span = childNodes(cst, "spanUnit")[0];
   if (span) return [{ kind: "span", span: buildSpan(span) }];
-  const np = childNodes(cst, "npCoord")[0];
+  const np = npCoordCst(cst);
   if (np) return [{ kind: "np", coord: buildNpCoord(np) }];
   const vp = childNodes(cst, "vpCoord")[0];
   if (vp) return [{ kind: "vp", coord: buildVpCoord(vp) }];

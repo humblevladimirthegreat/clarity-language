@@ -157,6 +157,25 @@ describe("parse — spans", () => {
   });
 });
 
+describe("parse — SVO slots", () => {
+  it("parses zar dumogon vozowel as subject, object, verb (roles.md)", () => {
+    const result = parseText("zar dumogon vozowel.");
+    const units = result.utterances[0]!.bodies[0]!.clause.units;
+    assert.equal(units.length, 3);
+    assert.equal(units[0]!.kind, "np");
+    assert.equal(units[1]!.kind, "np");
+    assert.equal(units[2]!.kind, "vp");
+    if (units[0]!.kind !== "np" || units[1]!.kind !== "np") return;
+    assert.equal(units[0]!.coord.level, "z");
+    assert.equal(units[0]!.coord.parts[0]!.join?.raw, "zar");
+    assert.equal(units[1]!.coord.level, "d");
+    const obj = units[1]!.coord.parts[0]!.items[0];
+    assert.equal(obj?.kind, "package");
+    if (obj?.kind !== "package") return;
+    assert.equal(obj.package.head.raw, "dumogon");
+  });
+});
+
 describe("parse — illegal fences", () => {
   it("rejects left fence zam zogodol zagadal", () => {
     const tokens = tokenizeUtterance("zam zogodol zagadal.", tables);

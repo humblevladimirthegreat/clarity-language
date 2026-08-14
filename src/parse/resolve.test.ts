@@ -113,7 +113,7 @@ describe("resolve — span and number anaphors", () => {
 
 describe("resolve — role anaphors (roles.md)", () => {
   it("binds zaxozower to the prior conflict verb", () => {
-    const { anaphors } = resolveOf("zumogon vozowel. zaxozower vurunul.");
+    const { anaphors } = resolveOf("zar dumogon vozowel. zaxozower vurunul.");
     const role = anaphors.find((a) => a.kind === "role");
     assert.ok(role);
     assert.equal(role!.pronoun.raw, "zaxozower");
