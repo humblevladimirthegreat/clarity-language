@@ -9,8 +9,8 @@ Related meta:
 | Page | Owns |
 |------|------|
 | [learning-levels.md](learning-levels.md) | **Beginner** / **Intermediate** / **Advanced** banding rubric and [cross-doc path](learning-levels.md#cross-doc-path) (for `docs/grammar/` only) |
-| [glosses.md](glosses.md) | Morph glosses and free English |
-| [translation-exercises.md](translation-exercises.md) | Eng ↔ Agelan checkpoints (placement, principles, spoiler shape) |
+| [glosses.md](glosses.md) | Morph glosses and free English ([house-name glosses](glosses.md#house-cast)) |
+| [translation-exercises.md](translation-exercises.md) | Eng ↔ Agelan checkpoints (placement, principles including house-cast people, spoiler shape) |
 
 ## Dual role
 
@@ -83,7 +83,7 @@ One short cue is enough (table column, parenthetical, or a line under the rule).
 
 ## Voice and length
 
-- Address the learner in second person (“use **-r** when…”, “prefer names when…”).
+- Address the learner in second person (“use **-r** when…”, “prefer names when…”). That *you* is English pedagogy — not Agelan **`ehado`**.
 - One idea per H2/H3; the first paragraph should be roughly one short explanation (same bar as the [easy-to-use feature criterion](../grammar/why-agelan.md#criterion-for-features)).
 - Prefer short paragraphs plus a table over a wall of prose.
 - Bold sparingly; put Agelan forms in backticks (`jal`, **-r**, `/ɡ/`).
@@ -110,19 +110,33 @@ Stable section ids and cross-doc anchor names may keep older technical wording (
 |----|--------|
 | Minimal clause that shows *only* the new point | Kitchen-sink showcases in Beginner |
 | Published roots when the gloss matches; `PoS<…>ENDING` for donor spelling | Split or hyphenated PoS tokens in learner text |
+| Named [house people](#house-cast) when the clause needs a person | Default *I* / *you* (`zumogon` / `zehadon`) as dummy subjects |
 | Omit recoverable **`jal`** when the page is not teaching force | Leading every example with **`jal`** by habit |
 | Morph gloss + **loose** free English by default ([glosses.md](glosses.md)) | Merging free English into the morph gloss |
 | Strict free English only when teaching packaging | Strict-only Beginner pages |
 | A negative / **Not this** only for an **expected** learner mistake | Listing “no X” or a counter-example column by habit |
 
+### House people
+<a id="house-cast"></a>
+
+When an example needs a **person**, use these nativized names (published root + **-n**). Free English keeps *Azawan*, not *Grace* / *I* / *you*.
+
+| Agelan | English | Root |
+|--------|---------|------|
+| `zazawan` | *Azawan* | `azawa` *grace* |
+| `zulonun` | *Ulonun* | `ulonu` *courage* |
+| `zubuzun` | *Ubuzun* | `ubuzu` *beauty* |
+
+**`umogo` / `ehado`** only when that page is teaching those specials, the point is the **discourse role** (name unavailable, address set, clusivity), or a closed construction is keyed to speaker/listener (*Mine* **`zumogoxrawon`**, viewpoint *my left* when the anchor is the role). Inclusive *we* stays **`ana`**; nonspecific *someone* stays **`enu`**. Foreign `PoS<…>n` names only when teaching loans or spans. Checkpoints: [translation-exercises.md](translation-exercises.md#principles). Morph / resume: [glosses.md](glosses.md#house-cast).
+
 Default example block:
 
 ```
-`z<Sam>n gedagel.`
+`zazawan gedagel.`
 
-gloss: `z-Sam` · `g-teacher`
+gloss: `z-grace` · `g-teacher`
 
-*Sam is a teacher.*
+*Azawan is a teacher.*
 ```
 
 Short Eng ↔ Agelan checkpoints: end of a page band only — [translation-exercises.md](translation-exercises.md). Multi-turn practice belongs under [examples/](../examples/), not inside every grammar section.
@@ -133,7 +147,7 @@ State the **positive** rule. Do **not** list negatives by default — neither a 
 
 | Prefer | Avoid (unless the trap is real) |
 |--------|----------------------------------|
-| Write **prefix + root + ending** as one token: `zumogon` | “…as one token — **no hyphen** after the PoS letter” |
+| Write **prefix + root + ending** as one token: `zazawan` | “…as one token — **no hyphen** after the PoS letter” |
 | Vocatives sit in the left-edge cluster | “Vocatives **do not** appear mid-clause” *with no learner reason to try that yet* |
 
 **Negatives earn their keep only when** a learner is expected to make that mistake — typically an English false friend, or another Agelan construction they will reach for. Then one decisive contrast (sentence or table cell) with the right link is enough. Cross-link once; do not restate the other doc.

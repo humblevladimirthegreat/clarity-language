@@ -45,7 +45,7 @@ Discourse-role forms (not letter/full-root **-r** from ordinary antecedents). Th
 
 **Endings.** Person roles default to **-n** (definite discourse roles). Soft **-m** hedges the role framing. **`odo`** defaults to **-l** (exact forward slot); soft **-m** hedges the subordination edge.
 
-**Prefer names.** When a proper name is available, use **-n** and/or its **-r** resume — including for self-address — rather than **`umogo`** / **`ehado`**. See [proper name](reference-suffix.md#proper-name--n).
+**Prefer names.** When a proper name is available, use **-n** and/or its **-r** resume — including for self-address — rather than **`umogo`** / **`ehado`**. See [proper name](reference-suffix.md#proper-name--n). Usual named people in examples: **Azawan**, **Ulonun**, **Ubuzun** (`azawa` / `ulonu` / `ubuzu` + **-n**).
 
 ```
 `zumogon vawul.`

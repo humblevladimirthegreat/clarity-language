@@ -50,9 +50,9 @@ Prefer a published root when the English meaning matches; use **-m** when the ma
 [role letter] + [l?] + root (+ x + root …) + ending + [sh?]
 ```
 
-Write **role letter + root + ending** as **one token** (`zumogon`). Full writing rules: [core.md § Writing words](core.md#orthography).
+Write **role letter + root + ending** as **one token** (`zazawan`). Full writing rules: [core.md § Writing words](core.md#orthography).
 
-1. **Role letter** — job in the sentence ([core.md](core.md#part-of-speech-prefixes)). Outside a sentence, omit it for a [citation](core.md#citation-forms) (`godol`, `umogon`) — **`/z/` is not implied**.
+1. **Role letter** — job in the sentence ([core.md](core.md#part-of-speech-prefixes)). Outside a sentence, omit it for a [citation](core.md#citation-forms) (`godol`, `azawan`) — **`/z/` is not implied**.
 2. **Left-bound `l`** — optional; **adjectives only** (`/ɡ/` → **`gl-`**) when the adjective sits **before** its host ([left-bound adjectives](core.md#left-bound-adjectives)). Not the same as word-final **-l**.
 3. **Root(s)** — compounds join with mid-word **`x`** ([phonology.md](phonology.md#phonotactics)).
 4. **Reference suffix** — **-l**, **-m**, **-n**, or **-r**.
@@ -60,7 +60,7 @@ Write **role letter + root + ending** as **one token** (`zumogon`). Full writing
 
 ### Proper names on nouns (starter)
 
-**-n** marks a **named designation**: you treat the root as a definite, established label — not “a kind of X.” Usual first cases are people and places (`/z/`…**-n**, `/d/`…**-n**). Prefix-less **…n** outside a clause cites a **name** or **the word-as-label** — [citation forms](core.md#citation-forms). Writing stays lowercase; namedness is the ending, not a capital letter ([capitalization](core.md#capitalization)).
+**-n** marks a **named designation**: you treat the root as a definite, established label — not “a kind of X.” Usual first cases are people and places (`/z/`…**-n**, `/d/`…**-n**). Prefix-less **…n** outside a clause cites a **name** or **the word-as-label** — [citation forms](core.md#citation-forms). Writing stays lowercase; namedness is the ending, not a capital letter ([capitalization](core.md#capitalization)). Usual named people in examples: *Azawan*, *Ulonun*, *Ubuzun*.
 
 Prefer **-n** (and its **-r** resume) over speaker/listener specials when a name exists — [pronouns.md](pronouns.md#special-pronouns).
 

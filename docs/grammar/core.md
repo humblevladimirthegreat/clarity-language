@@ -17,7 +17,7 @@ Each content word starts with a **first letter** that marks its job in the sente
 
 Write **role letter + root + ending** as one word:
 
-`zumogon` · `dehadon` · `glulebul`
+`zazawan` · `dulonun` · `glulebul`
 
 Prefer a published root when the English meaning matches (`dabebal` for *apple*). Use **-m** when the match is the published **metaphorical** sense (`guzem` for *happy*).
 
@@ -36,7 +36,7 @@ Do not use capitals for shouting, titles, or emphasis — use clause force, pola
 
 **Mnemonic:** lowercase is Agelan; capitals are **borrowed ink** from another orthography.
 
-**Trap:** capitalizing the first letter of a sentence changes the role stamp’s look (`Zumogon` vs `zumogon`). Keep the role letter lowercase so it stays the same stamp everywhere.
+**Trap:** capitalizing the first letter of a sentence changes the role stamp’s look (`Zazawan` vs `zazawan`). Keep the role letter lowercase so it stays the same stamp everywhere.
 
 #### Outside a sentence (citation)
 <a id="citation-forms"></a>
@@ -44,7 +44,7 @@ Do not use capitals for shouting, titles, or emphasis — use clause force, pola
 
 When you are **not** filling a clause slot — lexicon head, list, title line, or a freestanding non-clausal turn — you may write **root + ending** with **no** role letter:
 
-`godol.` · `uzem.` · `umogon.` · `azawan.`
+`godol.` · `uzem.` · `azawan.` · `ulonun.`
 
 | Ending | Job |
 |--------|-----|
@@ -104,11 +104,11 @@ To say someone *is* a kind or has a property, use subject + adjective — there 
 **Mnemonic:** the property is an adjective **label** on the subject — no linking verb.
 
 ```
-`zumogon gedagel.`
+`zazawan gedagel.`
 
-gloss: `z-speaker` · `g-teacher`
+gloss: `z-grace` · `g-teacher`
 
-*I am a teacher.*
+*Azawan is a teacher.*
 ```
 
 ```
@@ -183,7 +183,7 @@ This pattern covers much of what other languages do with little words like *to*,
 
 The start of a **new turn** is a `/j/` cluster in this order:
 
-1. Optional **call**(s) — who you address (`jumogon`, `jehadon`, …)
+1. Optional **call**(s) — who you address (`jazawan`, `julonun`, …)
 2. Optional **reaction / greeting word**(s) — greetings, *yes* / *no* particles, other expressives
 3. Optional **reviser** — prefix-less **`al` / `am` / …** right before force or before a body that defaults to a statement ([revisers.md](revisers.md))
 4. **Clause force** — when written; **last** in the cluster, immediately before the sentence body
@@ -197,7 +197,7 @@ The start of a **new turn** is a `/j/` cluster in this order:
 
 When force is written, it closes the opener. A new `/j/` turn starts a new utterance. `/x/` continues under the same speech act.
 
-**Calls and reaction words** sit in this left-edge cluster (or stand alone). A `/j/` after a finished body starts the **next** turn. A *…, yes?* style tag is a **second bare turn** after a period (`zumogon vawul. jael.`).
+**Calls and reaction words** sit in this left-edge cluster (or stand alone). A `/j/` after a finished body starts the **next** turn. A *…, yes?* style tag is a **second bare turn** after a period (`zazawan vawul. jael.`).
 
 Bare calls and exclamations with no sentence body use `/j/` without a written force word (a firm *yes* / *no* **-l** still implies statement **`jal`** when a body follows).
 
@@ -253,11 +253,11 @@ The dependent is a **full sentence**. It may open with its own `/j/` cluster, or
 **That-clause / content** — often a core object, with **`odo` last** in the main sentence:
 
 ```
-`zumogon dehadon dodol vezabul.`
+`zazawan dulonun dodol vezabul.`
 
-gloss: `z-speaker` · `d-listener` · `d-next-clause` · `v-tell`
+gloss: `z-grace` · `d-courage` · `d-next-clause` · `v-tell`
 
-*I tell you that…* (dependent sentence follows immediately)
+*Azawan tells Ulonun that…* (dependent sentence follows immediately)
 ```
 
 **Because / if / …** = `/h/` relation + `/b/` **`odo`** (together, last in the main sentence). Overlay ending is always **-m** (metaphorical sense).
@@ -282,14 +282,14 @@ Nesting dependents inside dependents is Intermediate ([nested dependents](#neste
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Use **published roots** only — no opaque `<>` loans.
 
-**Roots used here:** `umogo` *speaker* · `ehado` *listener* · `edage` *teacher* · `uzedu` *student* · `ogodo` *dog* · `agada` *cat* · `ogobo` *book* · `ohuze` *house* · `ulebu` *blue* · `edeje` *red* · `eleba` *size* · `uze` smile → *happy* (**-m**) · `awu` *walk* · `urunu` *run* · `ezele` *sleep* · `ezabu` *tell* · `uwa` *write* · `egu` *sing* · `ejo` *perception* (*see*) · `ahura` *sit* · `ada` *haste* · `odo` *next clause* · `urugu` *because* (**-m** on `/h/`)
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `edage` *teacher* · `uzedu` *student* · `ogodo` *dog* · `agada` *cat* · `ogobo` *book* · `ohuze` *house* · `ulebu` *blue* · `edeje` *red* · `eleba` *size* · `uze` smile → *happy* (**-m**) · `awu` *walk* · `urunu` *run* · `ezele` *sleep* · `ezabu` *tell* · `uwa` *write* · `egu` *sing* · `ejo` *perception* (*see*) · `ahura` *sit* · `ada` *haste* · `odo` *next clause* · `urugu` *because* (**-m** on `/h/`)
 
 #### English → Agelan
 
-**1.** *I am a teacher.*
+**1.** *Azawan is a teacher.*
 
 ::: details Show answer
-`zumogon gedagel.`
+`zazawan gedagel.`
 :::
 
 **2.** *A dog is blue.*
@@ -298,28 +298,28 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zogodol gulebul.`
 :::
 
-**3.** *I walk.*
+**3.** *Azawan walks.*
 
 ::: details Show answer
-`zumogon vawul.`
+`zazawan vawul.`
 :::
 
-**4.** *I see a cat.*
+**4.** *Azawan sees a cat.*
 
 ::: details Show answer
-`zumogon dagadal vejol.`
+`zazawan dagadal vejol.`
 :::
 
-**5.** *You are happy.*
+**5.** *Ulonun is happy.*
 
 ::: details Show answer
-`zehadon guzem.`
+`zulonun guzem.`
 :::
 
-**6.** *I write a book.*
+**6.** *Azawan writes a book.*
 
 ::: details Show answer
-`zumogon dogobol vuwal.`
+`zazawan dogobol vuwal.`
 :::
 
 **7.** *Walk!*
@@ -334,30 +334,30 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `jul vurunul.`
 :::
 
-**9.** *Are you a student?*
+**9.** *Is Ulonun a student?*
 
 ::: details Show answer
-`jol zehadon gezedul.`
+`jol zulonun gezedul.`
 :::
 
-**10.** *I tell you that the dog runs.*
+**10.** *Azawan tells Ulonun that the dog runs.*
 
 ::: details Show answer
-`zumogon dehadon dodol vezabul zogodol vurunul.`
+`zazawan dulonun dodol vezabul zogodol vurunul.`
 :::
 
-**11.** *I am happy because you walk.*
+**11.** *Azawan is happy because Ulonun walks.*
 
 ::: details Show answer
-`zumogon guzem hurugum bodol zehadon vawul.`
+`zazawan guzem hurugum bodol zulonun vawul.`
 :::
 
 #### Agelan → English
 
-**1.** `zumogon gezedul.`
+**1.** `zazawan gezedul.`
 
 ::: details Show answer
-*I am a student.*
+*Azawan is a student.*
 :::
 
 **2.** `zagadal gedejel.`
@@ -366,10 +366,10 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *A cat is red.*
 :::
 
-**3.** `zehadon vurunul.`
+**3.** `zulonun vurunul.`
 
 ::: details Show answer
-*You run.*
+*Ulonun runs.*
 :::
 
 **4.** `zogodol gelebal.`
@@ -378,10 +378,10 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *A dog is big.*
 :::
 
-**5.** `zumogon vahural.`
+**5.** `zazawan vahural.`
 
 ::: details Show answer
-*I sit.*
+*Azawan sits.*
 :::
 
 **6.** `jel vegul.`
@@ -390,16 +390,16 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Sing!*
 :::
 
-**7.** `jol zehadon guzem.`
+**7.** `jol zulonun guzem.`
 
 ::: details Show answer
-*Are you happy?*
+*Is Ulonun happy?*
 :::
 
-**8.** `zumogon hadal vawul.`
+**8.** `zazawan hadal vawul.`
 
 ::: details Show answer
-*I walk hastily.* / *I hurry on foot.*
+*Azawan walks hastily.* / *Azawan hurries on foot.*
 :::
 
 **9.** `zohuzel gulebul.`
@@ -408,16 +408,16 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *A house is blue.* / *a blue house*
 :::
 
-**10.** `zumogon dehadon dodol vezabul zehadon vezelel.`
+**10.** `zazawan dulonun dodol vezabul zubuzun vezelel.`
 
 ::: details Show answer
-*I tell you that you sleep.*
+*Azawan tells Ulonun that Ubuzun sleeps.*
 :::
 
-**11.** `zumogon vawul hurugum bodol zehadon vezelel.`
+**11.** `zazawan vawul hurugum bodol zulonun vezelel.`
 
 ::: details Show answer
-*I walk because you sleep.*
+*Azawan walks because Ulonun sleeps.*
 :::
 
 ## Intermediate
@@ -474,7 +474,7 @@ There is no fixed order among several `/h/` units. Each unit’s job comes from 
 
 After a complex adjective or adverb, a further plain `/ɡ/` describes the **extra noun**, not the original host. `/w/` after a `/ɡ/` (+ optional `/b/`) grades that adjective. You can chain complex units onto those extra nouns; two complex adjectives on the same host noun need another sentence. Multiple `/h/` units on one verb are fine (each plain `/h/` or together `/h/`+`/b/` counts as one).
 
-Spatial *left* / *right* need a [viewpoint compound](roles.md#viewpoint-laterals) on the direction word; `/b/` only adds the landmark (`gevedexumogon beredel` = *on my-left of the tree*). Bare lateral hosts are illegal in space. Discourse **`xamalal`** (*therefore*) stays the metaphorical linker — not spatial right.
+Spatial *left* / *right* need a [viewpoint compound](roles.md#viewpoint-laterals) on the direction word; `/b/` only adds the landmark (`gevedexazawan beredel` = *on Azawan’s-left of the tree*). Bare lateral hosts are illegal in space. Discourse **`xamalal`** (*therefore*) stays the metaphorical linker — not spatial right.
 
 ### Writing and speech rhythm (periods)
 <a id="orthography-and-prosody-periods"></a>

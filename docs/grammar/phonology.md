@@ -58,7 +58,7 @@ A content word has these parts, written as **one unbroken token**:
 4. The [reference suffix](reference-suffix.md) (**-l**, **-m**, **-n**, or **-r**)
 5. Optional plural **-sh** after the reference suffix — [plurality.md](plurality.md)
 
-**Writing:** write **role letter + root + ending** as one word (`zumogon`); native Agelan is **lowercase** only ([capitalization](core.md#capitalization)). Full orthography: [core.md § Orthography](core.md#orthography).
+**Writing:** write **role letter + root + ending** as one word (`zazawan`); native Agelan is **lowercase** only ([capitalization](core.md#capitalization)). Full orthography: [core.md § Orthography](core.md#orthography).
 
 **Roots** have form **V(CV)+** (vowel-initial; mid consonants are ordinary onsets). Compound roots are separated by mid-word **`x`**. A root does **not** end in a consonant — the only word-final consonants are the reference suffix (and optional plural **sh**). That keeps held notes on vowels inside the word.
 
@@ -116,9 +116,9 @@ The Beginner rules above are the usable inventory. This checklist is the design 
 
 **Try it:** sing a short Agelan line quickly at a high comfortable pitch, then compare a line that piles closed vowels, clusters, and mid-word stops:
 
-`zumogon guzem.`
+`zazawan guzem.`
 
-/ zu.mo.ɡon ɡu.zem /
+/ za.za.wan ɡu.zem /
 
 Versus (not Agelan — built to violate the constraints):
 

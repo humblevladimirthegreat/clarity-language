@@ -139,10 +139,22 @@ The binder **is** the gloss root. No trailing `-r` (resume is already marked by 
 | Case | Morph gloss |
 |------|-------------|
 | Letter / full-root resume with known name | `z-←Ubenaxuzonun` |
+| House-cast name (`zazawan`, …) | `z-←grace` / `z-←courage` / `z-←beauty` |
 | Resume of a prior content word | `z-←someone` / `d-←tea` |
 | Fill-ask / unspecified member | `z-who` / `z-something` (as the docs require for that form) |
 
 Do not write `z-←microphone` for a speaker antecedent.
+
+### House-cast given names
+<a id="house-cast"></a>
+
+Grammar examples use three single-root names ([grammar-docs.md](grammar-docs.md#house-cast)). Morph gloss is the published sense that formed the label; free English is the name, not the virtue word and not *I* / *you*. Resume uses that same sense (`z-←grace`). Do not write `z-Azawan`.
+
+| Agelan | Morph gloss | Free English | Resume |
+|--------|-------------|--------------|--------|
+| `zazawan` | `z-grace` | *Azawan* | `zazar` → `z-←grace` |
+| `zulonun` | `z-courage` | *Ulonun* | `zulor` → `z-←courage` |
+| `zubuzun` | `z-beauty` | *Ubuzun* | `zubur` → `z-←beauty` |
 
 ### Mid-word `x` families
 
@@ -187,6 +199,7 @@ Bake join / reviser **job** into the English label (including open vs closed whe
 | `zumogol` | `z-microphone` | *a microphone* |
 | `zumogon` | `z-speaker` | *I* / *the speaker* |
 | `zehadon` | `z-listener` | *you* / *the listener* |
+| `zazawan` | `z-grace` | *Azawan* |
 | `zanan` | `z-interlocutors` | *we* (speaker ∪ address set) |
 | `zumogonsh` | `z-speaker-sh` | *I and associates* |
 | `zehadonsh` | `z-listener-sh` | *you-all* (address set) |
