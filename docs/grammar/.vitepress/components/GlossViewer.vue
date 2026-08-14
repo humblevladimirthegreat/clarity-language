@@ -28,9 +28,10 @@ const result = computed<InspectResult>(() => {
       :disabled="status !== 'ready'"
     />
     <p class="hint">
-      Hover for a short gloss. Click a word to inspect morphology. Click a join, span fence, or
-      <code>^</code> to inspect the construction. Pin or press Enter for the full breakdown. Copy
-      uses the romanized surface form (not English). Arrow keys walk words; <kbd>g</kbd> opens Why.
+      Hover for a short gloss. Click or highlight a word for a floating inspect card. Highlight a
+      join, span fence, or <code>^</code> to inspect the construction. Pin or press Enter for the
+      full breakdown beside the stream. Copy uses the romanized surface form (not English). Arrow
+      keys walk words; <kbd>g</kbd> opens Why; <kbd>Esc</kbd> closes the card.
     </p>
     <p v-if="status === 'error'" class="warn">Could not load lexicon. {{ errorMessage }}</p>
     <p v-else-if="result.sentenceWarning" class="warn">

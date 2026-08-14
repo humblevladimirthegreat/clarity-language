@@ -26,7 +26,7 @@
     "lexicon-search": "tsx scripts/lexicon-search.ts",
     "unused-roots": "tsx scripts/unused-roots.ts",
     "build:lexicon-web": "esbuild src/lexicon-search.ts --bundle --format=esm --outfile=web/lib/lexicon-search.js --platform=browser",
-    "test": "tsx --test src/*.test.ts src/**/*.test.ts",
+    "test": "tsx --test src/*.test.ts src/**/*.test.ts docs/grammar/.vitepress/components/*.test.ts",
     "parse": "tsx src/parse/cli.ts",
     "web": "npm run build:lexicon-web && npx --yes serve . -p 4173 -o /web/"
   },

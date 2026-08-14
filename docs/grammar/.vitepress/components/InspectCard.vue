@@ -5,6 +5,9 @@ const props = defineProps<{
   token: InspectToken | null
   construction?: InspectConstruction | null
   constructionRaws?: string[]
+  phraseRaws?: string[]
+  phraseGlosses?: string[]
+  highlightedChipIndex?: number | null
   expanded?: boolean
 }>()
 
@@ -21,7 +24,14 @@ const emit = defineEmits<{
     </header>
     <p class="gloss">{{ (constructionRaws ?? []).join(' ') }}</p>
   </div>
-  <div v-else-if="!token" class="empty">Click a word for PoS, ending, and gloss.</div>
+  <div v-else-if="phraseRaws?.length" class="card phrase">
+    <header>
+      <span class="surface">{{ phraseRaws.join(' ') }}</span>
+      <span class="chip">phrase</span>
+    </header>
+    <p class="gloss">{{ (phraseGlosses ?? []).join(' · ') }}</p>
+  </div>
+  <div v-else-if="!token" class="empty">Click or highlight a word for PoS, ending, and gloss.</div>
   <div v-else-if="token.kind === 'error'" class="card error">
     <header>
       <span class="surface">{{ token.raw }}</span>
@@ -57,7 +67,13 @@ const emit = defineEmits<{
       </li>
     </ul>
     <ul class="chips">
-      <li v-for="(chip, i) in token.chips" :key="i">{{ chip }}</li>
+      <li
+        v-for="(chip, i) in token.chips"
+        :key="i"
+        :class="{ active: highlightedChipIndex === i }"
+      >
+        {{ chip }}
+      </li>
     </ul>
     <dl v-if="expanded" class="details">
       <template v-for="row in morphDetails(token.word)" :key="row.label">
@@ -179,6 +195,11 @@ header {
   border-radius: 4px;
   background: var(--vp-c-bg);
   border: 1px solid var(--vp-c-divider);
+}
+
+.chips li.active {
+  border-color: var(--vp-c-brand-1);
+  background: var(--vp-c-bg-mute);
 }
 
 .details {

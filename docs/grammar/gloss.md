@@ -5,6 +5,6 @@ outline: false
 
 # Gloss overlay
 
-Paste Agelan and click a word for part of speech, reference ending, lexicon or overlay gloss, and morph chips. Failed words stay in the stream with an error card. Click a join, span fence, or `^` to inspect the construction.
+Paste Agelan and click or highlight a word for a floating gloss card with part of speech, reference ending, lexicon or overlay gloss, and morph chips. Failed words stay in the stream with an error card. Highlight a join, span fence, or `^` to inspect the construction.
 
 <GlossViewer />
