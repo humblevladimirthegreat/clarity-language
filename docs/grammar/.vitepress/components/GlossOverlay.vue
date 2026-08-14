@@ -110,7 +110,6 @@ function onKey(event: KeyboardEvent) {
           {{ token.raw }}
         </button>
         <span v-else class="tok punct">{{ token.raw }}</span>
-        <span class="gap"> </span>
       </template>
     </p>
 
@@ -141,6 +140,10 @@ function onKey(event: KeyboardEvent) {
 }
 
 .stream {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem 0.5rem;
   font-family: var(--vp-font-family-mono);
   font-size: 1.15rem;
   line-height: 1.9;
@@ -150,11 +153,12 @@ function onKey(event: KeyboardEvent) {
 .tok {
   font: inherit;
   color: inherit;
-  background: transparent;
-  border: none;
-  padding: 0 0 0.12rem;
+  background: var(--vp-c-bg);
   cursor: pointer;
-  border-bottom: 2px solid var(--vp-c-divider);
+  padding: 0.12rem 0.45rem;
+  border: 1px solid var(--vp-c-divider);
+  border-bottom-width: 2px;
+  border-radius: 4px;
 }
 
 .tok.punct {
