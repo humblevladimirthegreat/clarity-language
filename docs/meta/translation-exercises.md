@@ -2,7 +2,7 @@
 
 How to place and write **short translation drills** in learner grammar pages under **`docs/grammar/`**. Applies **only** to that folder (not to `meta/`, `examples/`, or `proposals/`). Design authority for morphology stays in the grammar pages; this page is pedagogy only.
 
-Grammar pages must **not** link here or mention `meta/` — editors follow this privately. Prose / example style: [grammar-docs.md](grammar-docs.md). Banding: [learning-levels.md](learning-levels.md). Glosses in worked examples (not in spoiler answers): [glosses.md](glosses.md).
+Grammar pages must **not** link here or mention `meta/` — editors follow this privately. Prose / example style: [grammar-docs.md](grammar-docs.md). Banding: [learning-levels.md](learning-levels.md). Glosses in worked examples (not in spoiler answers): [glosses.md](glosses.md). Generating missing checkpoints: [drill-generation.md](drill-generation.md).
 
 ## Default placement
 <a id="placement"></a>
@@ -20,9 +20,9 @@ Per-feature teaching already has its practice: rule → mnemonic → 1–3 worke
 
 **When to add a band checkpoint:** if the learner can misuse the form in the *next* section’s examples, put drills at the **end of this band**. If the form is mostly recognition (a small closed table), the worked example is enough.
 
-**Skip thin pages** unless the form is productive — e.g. phonology letter charts, small closed inventories. Favor pages that stack productive syntax (core, coordination, questions, …).
+**Coverage:** every **productive** page-band gets a checkpoint. Orientation, phonology charts, and parser maps do not — skip list and path allowlist: [drill-generation.md](drill-generation.md#skip). Do **not** add a spoiler block after every H3.
 
-**Status:** only [core.md Beginner](../grammar/core.md#translation-practice) has a checkpoint so far. The template below stands; **next pages:** coordination, questions, values. Skip phonology, x-compounds, and overlay lists.
+**Status:** only [core.md Beginner](../grammar/core.md#translation-practice) exists so far. To add the rest, invoke [drill-generation.md](drill-generation.md#execute) **one grammar file per agent** (no extra prompt).
 
 ## What belongs where
 <a id="what-belongs-where"></a>
@@ -85,3 +85,4 @@ Omit recoverable **`jal`** unless the drill is teaching force. Match orthography
 | [grammar-docs.md](grammar-docs.md) | Learner prose, teach order, worked examples, [house cast](grammar-docs.md#house-cast) |
 | [learning-levels.md](learning-levels.md) | Beginner / Intermediate / Advanced bands and cross-doc path |
 | [glosses.md](glosses.md) | Morph gloss and free English (for teaching lines, not required in spoilers); [house-name glosses](glosses.md#house-cast) |
+| [drill-generation.md](drill-generation.md) | Path allowlist, root bank, and **execute** procedure (one file per agent) |

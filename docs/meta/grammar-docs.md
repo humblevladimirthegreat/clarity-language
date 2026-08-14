@@ -11,6 +11,7 @@ Related meta:
 | [learning-levels.md](learning-levels.md) | **Beginner** / **Intermediate** / **Advanced** banding rubric and [cross-doc path](learning-levels.md#cross-doc-path) (for `docs/grammar/` only) |
 | [glosses.md](glosses.md) | Morph glosses and free English ([house-name glosses](glosses.md#house-cast)) |
 | [translation-exercises.md](translation-exercises.md) | Eng ↔ Agelan checkpoints (placement, principles including house-cast people, spoiler shape) |
+| [drill-generation.md](drill-generation.md) | Path allowlist and execute procedure (one file per agent) |
 
 ## Dual role
 
@@ -205,7 +206,7 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 | Core sentence grammar | [core.md](../grammar/core.md) |
 | IPA / pronunciation / phonotactics | [phonology.md](../grammar/phonology.md) (only page that may use IPA) |
 | Unassigned or rejected design | [TODO.md](../../TODO.md) or a short **Design notes** appendix on the grammar page |
-| Short Eng ↔ Agelan checkpoint | End of a page band — [translation-exercises.md](translation-exercises.md) |
+| Short Eng ↔ Agelan checkpoint | End of a page band — [translation-exercises.md](translation-exercises.md); generate via [drill-generation.md](drill-generation.md) |
 | Multi-turn practice | [examples/](../examples/) (not linked from grammar pages) |
 | Editor pedagogy / migration notes | `docs/meta/` only — never from grammar pages |
 
