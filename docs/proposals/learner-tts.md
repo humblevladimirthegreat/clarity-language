@@ -1,6 +1,6 @@
 # Proposal: usable learner TTS (in-browser)
 
-**Status:** PHASE 1 IN PROGRESS (phoneme core + Gloss overlay play)  
+**Status:** PHASE 3 DONE (framing cues); Phase 4 (loan islands) next  
 **Related:** long-term TODO *text to speech*; depends on [parser-pipeline.md](../meta/parser-pipeline.md) (**assumed shipped** — `parse(text)` → typed AST)  
 **Design authority:** spoken forms stay in the grammar docs ([phonology.md](../grammar/phonology.md), [spans.md](../grammar/spans.md#writing-vs-speech), [numbers.md](../grammar/numbers.md#writing-preferred-shorthand), [core.md](../grammar/core.md#orthography-and-prosody-periods)). This proposal covers **tooling only**: writing → speech surface → audio.
 
@@ -240,7 +240,7 @@ Expect the WASM voice pack to dwarf the TS glue; keep it out of the critical ren
 - [x] `toPhonemes` matches the phonology letter table; stacked vowels are separate syllables; **-sh** is /ʃ/. (Phase 1)  
 - [x] In-browser Play speaks a parseable example offline after first WASM load. (Phase 1 Gloss overlay)  
 - [x] Opaque/foreign interiors never use Agelan G2P; loan policy is documented and tested. (Phase 2 skips interiors; loan islands are Phase 4)  
-- [ ] Fixtures cover at least: plain clause, plural **-sh**, compound mid-word **`x`**, free-number shorthand, multi-token cite with close, island boundaries, `?` / `/x/` continue. (Phase 2: shorthand, multi-token cite, `?`; island / `/x/` continue in Phase 3)  
+- [x] Fixtures cover at least: plain clause, plural **-sh**, compound mid-word **`x`**, free-number shorthand, multi-token cite with close, island boundaries, `?` / `/x/` continue. (Phase 3: island boundaries, `/x/` continue, soft **-m**, `/j/` turn)  
 - [x] `previewSpeech` available for pedagogy (“show what will be spoken”). (Phase 1 Gloss preview line + CLI)  
 - [x] No cloud TTS required for native Agelan audio.
 
@@ -248,7 +248,7 @@ Expect the WASM voice pack to dwarf the TS glue; keep it out of the critical ren
 
 1. **Phoneme core** — native words only (already speech-shaped strings) + WASM play. **v1 surface:** [Gloss overlay](../grammar/gloss.md) (**Speak Agelan** / **Speak word**).  
 2. **Normalizer** — numbers + spans + period/`?`/`!` pauses.  
-3. **Framing cues** — `/j/` vs `/x/`, soft **-m**, islands.  
+3. **Framing cues** — `/j/` vs `/x/`, soft **-m**, islands. **Done** (boundary tags + eSpeak mapping).  
 4. **Loan islands** — `speechSynthesis` (or skip) for `<>` payloads.  
 5. **Doc UX** — Play on grammar examples; `previewSpeech` toggle in docs.
 

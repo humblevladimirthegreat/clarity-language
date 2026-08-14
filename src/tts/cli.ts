@@ -18,7 +18,7 @@ if (speech.spoken.length === 0) {
   console.log(`eSpeak: ${phonemes.espeak}`);
 }
 
-const notable = speech.skipped.filter((s) => s.reason !== "island");
+const notable = speech.skipped;
 if (notable.length) {
   console.log("Skipped:");
   for (const item of notable) {

@@ -6,9 +6,17 @@ import { isNativeSurface, toPhonemeWord, type PhonemeWord } from "./phonemes.js"
 import { numberWordToSpeech } from "./numbers.js";
 import { expandOpaqueSpan, expandWritingSpan } from "./spans.js";
 
-export type SkipReason = "foreign" | "writing" | "punct" | "island" | "error" | "shorthand";
+export type SkipReason = "foreign" | "writing" | "punct" | "error" | "shorthand";
 
-export type BoundaryTag = "period" | "qmark" | "bang";
+export type BoundaryTag =
+  | "period"
+  | "qmark"
+  | "bang"
+  | "softM"
+  | "xContinue"
+  | "jTurn"
+  | "islandEnter"
+  | "islandExit";
 
 export type SpeechToken =
   | { kind: "word"; raw: string }
@@ -27,9 +35,42 @@ export type PhonemePlan = {
   espeak: string;
 };
 
+type FramingRole = "force" | "polar" | "vocative" | "linker" | "clauseJoin" | "reviser" | "ordinary";
+
+type SpeechSegment =
+  | { kind: "word"; word: MorphWord }
+  | { kind: "error"; raw: string }
+  | { kind: "punct"; punct: PunctKind }
+  | { kind: "islandEdge" };
+
 function isNumberWord(word: MorphWord): boolean {
   const family = word.family;
   return family.kind === "number" || (family.kind === "x" && family.xFamily === "numeric");
+}
+
+function classifyFramingRole(word: MorphWord): FramingRole {
+  const { family, pos } = word;
+
+  if (family.kind === "reviser") return "reviser";
+
+  if (pos === "j") {
+    if (family.kind === "joinMarker") {
+      return family.series.length === 1 ? "force" : "polar";
+    }
+    return "vocative";
+  }
+
+  if (pos === "x") {
+    if (family.kind === "content") return "linker";
+    if (family.kind === "joinMarker") return "clauseJoin";
+  }
+
+  return "ordinary";
+}
+
+function isSoftFramingWord(word: MorphWord): boolean {
+  const role = classifyFramingRole(word);
+  return (role === "force" || role === "polar") && word.ending === "m";
 }
 
 export function expandWordToTokens(word: MorphWord): SpeechToken[] {
@@ -54,11 +95,6 @@ export function expandWordToTokens(word: MorphWord): SpeechToken[] {
 
   return [{ kind: "word", raw: word.raw }];
 }
-
-type SpeechSegment =
-  | { kind: "word"; word: MorphWord }
-  | { kind: "punct"; punct: PunctKind }
-  | { kind: "islandEdge" };
 
 /** Batch whitespace-split chunks and parse with Peggy `words` (same as sentence tokenize). */
 function speechSegmentsFromText(text: string): SpeechSegment[] {
@@ -87,53 +123,85 @@ function speechSegmentsFromText(text: string): SpeechSegment[] {
   return out;
 }
 
-export function toSpeech(segments: TokenizeSegment[]): SpeechToken[] {
-  const tokens: SpeechToken[] = [];
+function tokenizeSegmentsToSpeechSegments(segments: TokenizeSegment[]): SpeechSegment[] {
+  const out: SpeechSegment[] = [];
 
   for (const segment of segments) {
     if (segment.kind === "punct") {
-      tokens.push({
-        kind: "boundary",
-        tag: segment.punct,
-        raw: punctChar(segment.punct),
-      });
+      out.push({ kind: "punct", punct: segment.punct });
       continue;
     }
     if (segment.kind === "islandEdge") {
-      tokens.push({ kind: "skip", raw: "^", reason: "island" });
+      out.push({ kind: "islandEdge" });
       continue;
     }
     try {
-      const word = parseWord(segment.text);
-      tokens.push(...expandWordToTokens(word));
+      out.push({ kind: "word", word: parseWord(segment.text) });
     } catch {
-      tokens.push({ kind: "skip", raw: segment.text, reason: "error" });
+      out.push({ kind: "error", raw: segment.text });
     }
+  }
+
+  return out;
+}
+
+function speechTokensFromSegments(segments: SpeechSegment[]): SpeechToken[] {
+  const tokens: SpeechToken[] = [];
+  let softBodyPunct = false;
+  let afterBodyEnd = false;
+  let islandOpen = false;
+
+  for (const segment of segments) {
+    if (segment.kind === "punct") {
+      const tag: BoundaryTag = softBodyPunct && segment.punct === "period" ? "softM" : segment.punct;
+      tokens.push({ kind: "boundary", tag, raw: boundaryRaw(tag) });
+      softBodyPunct = false;
+      afterBodyEnd = true;
+      continue;
+    }
+
+    if (segment.kind === "islandEdge") {
+      if (!islandOpen) {
+        tokens.push({ kind: "boundary", tag: "islandEnter", raw: "^" });
+        islandOpen = true;
+      } else {
+        tokens.push({ kind: "boundary", tag: "islandExit", raw: "^" });
+        islandOpen = false;
+      }
+      continue;
+    }
+
+    if (segment.kind === "error") {
+      tokens.push({ kind: "skip", raw: segment.raw, reason: "error" });
+      continue;
+    }
+
+    const role = classifyFramingRole(segment.word);
+
+    if (role === "linker" || role === "clauseJoin") {
+      tokens.push({ kind: "boundary", tag: "xContinue", raw: "" });
+    } else if (afterBodyEnd && (role === "force" || role === "polar" || role === "vocative")) {
+      tokens.push({ kind: "boundary", tag: "jTurn", raw: "" });
+    }
+
+    afterBodyEnd = false;
+
+    if (isSoftFramingWord(segment.word)) {
+      softBodyPunct = true;
+    }
+
+    tokens.push(...expandWordToTokens(segment.word));
   }
 
   return tokens;
 }
 
+export function toSpeech(segments: TokenizeSegment[]): SpeechToken[] {
+  return speechTokensFromSegments(tokenizeSegmentsToSpeechSegments(segments));
+}
+
 export function toSpeechText(text: string): SpeechToken[] {
-  const tokens: SpeechToken[] = [];
-
-  for (const segment of speechSegmentsFromText(text)) {
-    if (segment.kind === "punct") {
-      tokens.push({
-        kind: "boundary",
-        tag: segment.punct,
-        raw: punctChar(segment.punct),
-      });
-      continue;
-    }
-    if (segment.kind === "islandEdge") {
-      tokens.push({ kind: "skip", raw: "^", reason: "island" });
-      continue;
-    }
-    tokens.push(...expandWordToTokens(segment.word));
-  }
-
-  return tokens;
+  return speechTokensFromSegments(speechSegmentsFromText(text));
 }
 
 function buildPlan(tokens: SpeechToken[]): SpeechPlan {
@@ -149,24 +217,41 @@ export function previewSpeech(text: string): SpeechPlan {
 }
 
 function boundaryToEspeak(tag: BoundaryTag): string {
-  if (tag === "qmark") return "?";
-  if (tag === "bang") return "!";
-  return ".";
+  switch (tag) {
+    case "qmark":
+      return "?";
+    case "bang":
+      return "!";
+    case "softM":
+      return ";";
+    case "xContinue":
+    case "islandEnter":
+    case "islandExit":
+      return ",";
+    case "jTurn":
+      return "_:200";
+    default:
+      return ".";
+  }
 }
 
 export function toPhonemes(plan: SpeechPlan): PhonemePlan {
   const words: PhonemeWord[] = [];
   const parts: string[] = [];
+  let islandDepth = 0;
 
   for (const token of plan.tokens) {
     if (token.kind === "word") {
       const phoneme = toPhonemeWord(token.raw);
       words.push(phoneme);
-      parts.push(phoneme.espeak);
+      parts.push({ espeak: phoneme.espeak, inIsland: islandDepth > 0 });
       continue;
     }
+
     if (token.kind === "boundary") {
-      parts.push(boundaryToEspeak(token.tag));
+      if (token.tag === "islandEnter") islandDepth++;
+      else if (token.tag === "islandExit") islandDepth = Math.max(0, islandDepth - 1);
+      parts.push({ espeak: boundaryToEspeak(token.tag), inIsland: false, boundary: true });
     }
   }
 
@@ -179,26 +264,37 @@ export function toPhonemes(plan: SpeechPlan): PhonemePlan {
   };
 }
 
+type EspeakPart = { espeak: string; inIsland: boolean; boundary?: boolean };
+
 /** Join phoneme spans and punctuation for eSpeak clause intonation. */
-function wrapEspeakParts(parts: string[]): string {
+function wrapEspeakParts(parts: EspeakPart[]): string {
   if (parts.length === 0) return "";
   const chunks: string[] = [];
   let phonemeRun: string[] = [];
+  let runInIsland = false;
 
   function flushPhonemes(): void {
     if (phonemeRun.length === 0) return;
-    chunks.push(`[[${phonemeRun.join(" _ ")}]]`);
+    const sep = runInIsland ? " " : " _ ";
+    chunks.push(`[[${phonemeRun.join(sep)}]]`);
     phonemeRun = [];
   }
 
   for (const part of parts) {
-    if (part === "." || part === "?" || part === "!") {
+    if (part.boundary) {
       flushPhonemes();
-      chunks.push(part);
-    } else {
-      phonemeRun.push(part);
+      chunks.push(part.espeak);
+      continue;
     }
+
+    if (phonemeRun.length > 0 && part.inIsland !== runInIsland) {
+      flushPhonemes();
+    }
+
+    runInIsland = part.inIsland;
+    phonemeRun.push(part.espeak);
   }
+
   flushPhonemes();
   return chunks.join("");
 }
@@ -207,10 +303,8 @@ export function previewPhonemes(text: string): PhonemePlan {
   return toPhonemes(previewSpeech(text));
 }
 
-function punctChar(punct: BoundaryTag): string {
-  if (punct === "qmark") return "?";
-  if (punct === "bang") return "!";
-  return ".";
+function boundaryRaw(tag: BoundaryTag): string {
+  return boundaryToEspeak(tag);
 }
 
 export function skipLabel(reason: SkipReason): string {
@@ -223,8 +317,6 @@ export function skipLabel(reason: SkipReason): string {
       return "unexpanded writing shorthand";
     case "punct":
       return "punctuation";
-    case "island":
-      return "island edge (no spoken open/close yet)";
     case "error":
       return "unparsed token";
   }

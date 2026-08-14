@@ -129,7 +129,7 @@ Exact beginner slices can follow [learning-levels.md](../meta/learning-levels.md
 | Lexicon search (shipped) | Discovery and filtering inspiration; flashcards are retention, not lookup |
 | [gloss-overlay-ui.md](gloss-overlay-ui.md) | Sentence inspect while reading; flashcards study isolated roots/overlays |
 | [learner-tts.md](learner-tts.md) | Optional later audio on Agelan face; not a v1 dependency |
-| [parser-pipeline.md](parser-pipeline.md) | Needed for inflected / cloze decks (v3), not for root export |
+| [parser-pipeline.md](../meta/parser-pipeline.md) | Needed for inflected / cloze decks (v3), not for root export |
 
 ## Out of scope for product debates
 
