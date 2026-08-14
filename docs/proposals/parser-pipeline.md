@@ -238,7 +238,7 @@ Browser use does **not** block adopting Peggy + Chevrotain as proposed.
 - [ ] Chevrotain sentence grammar covers framing, right-close joins, spans, and **`odo`** dependents.  
 - [ ] Public `parse(text)` returns a typed AST; fixture tests drawn from `docs/grammar/`.  
 - [ ] Browser-ready: Peggy parser is **pre-generated**; production browser bundles do not include the Peggy compiler.  
-- [ ] No dependency on deleted ANTLR artifacts; docs remain sole design authority.
+- [x] Docs remain sole design authority; no legacy parser artifacts in the repo.
 
 ## Cross-links
 

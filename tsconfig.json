@@ -18,12 +18,5 @@
     "isolatedModules": true
   },
   "include": ["src/**/*.ts"],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "src/generated/WordParserLexer.ts",
-    "src/generated/WordParserParser.ts",
-    "src/generated/SentenceParserLexer.ts",
-    "src/generated/SentenceParserParser.ts"
-  ]
+  "exclude": ["node_modules", "dist"]
 }

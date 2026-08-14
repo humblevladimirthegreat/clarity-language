@@ -2,8 +2,6 @@ node_modules/
 dist/
 docs/grammar/.vitepress/cache
 docs/grammar/.vitepress/dist
-*.tokens
-*.interp
 .DS_Store
 *.log
 .env
