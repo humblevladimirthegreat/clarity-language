@@ -7,6 +7,6 @@ outline: false
 
 Paste Agelan and click or highlight a word for a floating gloss card with part of speech, reference ending, lexicon or overlay gloss, and morph chips. Failed words stay in the stream with an error card. Highlight a join, span fence, or `^` to inspect the construction.
 
-**Speak Agelan** plays native words in the browser (lazy eSpeak-NG). Phase 1 skips writing shorthand, span brackets, and `<>` payloads — those are not Agelan phonology yet. Speech is Agelan, not the English gloss.
+**Speak Agelan** plays Agelan in the browser (lazy eSpeak-NG). Writing shorthand and span brackets expand to spoken forms; foreign `<>` interiors and compact loan words are still skipped (not Agelan phonology). Speech is Agelan, not the English gloss.
 
 <GlossViewer />

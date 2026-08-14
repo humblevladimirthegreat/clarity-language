@@ -49,8 +49,8 @@ const spokenPreview = computed(() => lineFor(text.value))
       join, span fence, or <code>^</code> to inspect the construction. Pin or press Enter for the
       full breakdown beside the stream. Copy uses the romanized surface form (not English). Arrow
       keys walk words; <kbd>g</kbd> opens Why; <kbd>s</kbd> speaks the selection; <kbd>Esc</kbd>
-      closes the card. Speak Agelan plays native words only (Phase 1 skips writing shorthand and
-      <code>&lt;&gt;</code> payloads).
+      closes the card. Speak Agelan expands number shorthand and span brackets; foreign
+      <code>&lt;&gt;</code> interiors and compact loans are still skipped.
     </p>
     <p v-if="status === 'error'" class="warn">Could not load lexicon. {{ errorMessage }}</p>
     <p v-else-if="result.sentenceWarning" class="warn">

@@ -146,14 +146,14 @@ export function stopSpeaking(): void {
 
 export async function speakPlan(plan: PhonemePlan, opts?: { rate?: number }): Promise<void> {
   if (plan.words.length === 0) {
-    const skip = plan.skipped.find((s) => s.reason !== 'punct')
+    const skip = plan.skipped.find((s) => s.reason !== 'island')
     const extra = skip ? skipLabel(skip.reason) : 'no native words'
     throw new Error(`Nothing to speak — ${extra}`)
   }
   const mine = ++playToken
   const engine = await getEngine()
   if (mine !== playToken) return
-  const samples = await synthesize(engine, `[[${plan.espeak}]]`, espeakRate(opts?.rate))
+  const samples = await synthesize(engine, plan.espeak, espeakRate(opts?.rate))
   if (mine !== playToken) return
   await playSamples(samples)
 }
@@ -164,7 +164,7 @@ export async function speak(text: string, opts?: { rate?: number }): Promise<voi
 
 export function previewLine(plan: PhonemePlan): string {
   const spoken = plan.words.map((w) => w.raw).join(' ')
-  const skipped = plan.skipped.filter((s) => s.reason !== 'punct' && s.reason !== 'island')
+  const skipped = plan.skipped.filter((s) => s.reason !== 'island')
   if (!spoken && skipped.length) {
     return `Skipped: ${skipped.map((s) => `${s.raw} (${skipLabel(s.reason)})`).join('; ')}`
   }

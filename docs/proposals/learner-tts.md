@@ -236,11 +236,11 @@ Expect the WASM voice pack to dwarf the TS glue; keep it out of the critical ren
 
 ## Acceptance criteria
 
-- [ ] `toSpeech(ast)` expands number shorthand and span writing forms to the spoken channel per grammar docs.  
+- [x] `toSpeech` expands number shorthand and span writing forms to the spoken channel per grammar docs. (Phase 2)  
 - [x] `toPhonemes` matches the phonology letter table; stacked vowels are separate syllables; **-sh** is /ʃ/. (Phase 1)  
-- [ ] In-browser Play speaks a parseable example offline after first WASM load. (Phase 1 Gloss overlay)  
-- [ ] Opaque/foreign interiors never use Agelan G2P; loan policy is documented and tested. (Phase 1 skips them; loan islands are Phase 4)  
-- [ ] Fixtures cover at least: plain clause, plural **-sh**, compound mid-word **`x`**, free-number shorthand, multi-token cite with close, island boundaries, `?` / `/x/` continue. (Phase 1: plain / **-sh** / **`x`** / skip shorthand and islands; rest later)  
+- [x] In-browser Play speaks a parseable example offline after first WASM load. (Phase 1 Gloss overlay)  
+- [x] Opaque/foreign interiors never use Agelan G2P; loan policy is documented and tested. (Phase 2 skips interiors; loan islands are Phase 4)  
+- [ ] Fixtures cover at least: plain clause, plural **-sh**, compound mid-word **`x`**, free-number shorthand, multi-token cite with close, island boundaries, `?` / `/x/` continue. (Phase 2: shorthand, multi-token cite, `?`; island / `/x/` continue in Phase 3)  
 - [x] `previewSpeech` available for pedagogy (“show what will be spoken”). (Phase 1 Gloss preview line + CLI)  
 - [x] No cloud TTS required for native Agelan audio.
 

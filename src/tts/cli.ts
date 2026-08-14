@@ -11,14 +11,14 @@ const speech = previewSpeech(text);
 const phonemes = previewPhonemes(text);
 
 if (speech.spoken.length === 0) {
-  console.log("Nothing to speak (Phase 1: native speech-shaped words only).");
+  console.log("Nothing to speak.");
 } else {
   console.log(`Spoken: ${speech.spoken.join(" ")}`);
   console.log(`IPA: ${phonemes.words.map((w) => w.ipa).join("  ")}`);
-  console.log(`eSpeak: [[${phonemes.espeak}]]`);
+  console.log(`eSpeak: ${phonemes.espeak}`);
 }
 
-const notable = speech.skipped.filter((s) => s.reason !== "punct");
+const notable = speech.skipped.filter((s) => s.reason !== "island");
 if (notable.length) {
   console.log("Skipped:");
   for (const item of notable) {
