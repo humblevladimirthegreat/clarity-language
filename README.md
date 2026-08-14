@@ -14,7 +14,8 @@ Or open the repo in a [Dev Container](.devcontainer/devcontainer.json) (Node 22 
 
 | Script | Purpose |
 |--------|---------|
-| `npm run build` | Compile TypeScript to `dist/` |
+| `npm run generate:word` | Generate the Stage-1 Peggy word parser from `grammar/word.peggy` |
+| `npm run build` | Regenerate the word parser, then compile TypeScript to `dist/` |
 | `npm run typecheck` | Typecheck without emit |
 | `npm run lint:md` | Check Markdown emphasis balance and internal links under `docs/` |
 | `npm run docs:dev` | VitePress local preview of grammar docs (served under `/grammar/`) |
