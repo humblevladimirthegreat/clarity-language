@@ -88,6 +88,14 @@ describe("classify", () => {
     assert.ok(word.rootGloss);
   });
 
+  it("ordinary compound glosses both roots", () => {
+    const word = expectReading("zuzuzuxogeven", "ordinary");
+    assert.equal(word.family.kind, "x");
+    if (word.family.kind !== "x") return;
+    assert.equal(word.family.xFamily, "compound");
+    assert.equal(word.rootGloss?.literal, "sushi · coffee");
+  });
+
   it("ordinary reviser without overlay", () => {
     const word = expectReading("al", "ordinary");
     assert.equal(word.family.kind, "reviser");

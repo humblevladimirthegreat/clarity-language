@@ -66,13 +66,6 @@ function overlayFromRow(row: OverlayRow): LexOverlay {
   };
 }
 
-function rootGlossFromRow(row: PublishedRow): { literal?: string; metaphorical?: string } {
-  const gloss: { literal?: string; metaphorical?: string } = {};
-  if (row.literal) gloss.literal = row.literal;
-  if (row.metaphorical) gloss.metaphorical = row.metaphorical;
-  return gloss;
-}
-
 function overlaySenseForm(word: MorphWord): string | null {
   const { family, ending } = word;
   if (!ending) return null;
@@ -171,12 +164,30 @@ function publishedRoots(word: MorphWord): string[] {
   }
 }
 
-function lookupPublished(tables: ClassifyTables, roots: string[]): PublishedRow | undefined {
+function publishedGlossForRoots(
+  tables: ClassifyTables,
+  roots: string[],
+): { gloss: { literal?: string; metaphorical?: string }; allFound: boolean } | undefined {
+  if (roots.length === 0) return undefined;
+  const literals: string[] = [];
+  const metaphoricals: string[] = [];
+  let allFound = true;
+  let any = false;
   for (const root of roots) {
     const row = tables.published.get(root);
-    if (row) return row;
+    if (!row) {
+      allFound = false;
+      continue;
+    }
+    any = true;
+    literals.push(row.literal || root);
+    if (row.metaphorical) metaphoricals.push(row.metaphorical);
   }
-  return undefined;
+  if (!any) return undefined;
+  const gloss: { literal?: string; metaphorical?: string } = {};
+  if (literals.length) gloss.literal = literals.join(" · ");
+  if (metaphoricals.length) gloss.metaphorical = metaphoricals.join(" · ");
+  return { gloss, allFound };
 }
 
 export function createClassifyTables(
@@ -261,12 +272,12 @@ export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
   }
 
   const roots = publishedRoots(word);
-  const publishedRow = lookupPublished(tables, roots);
-  if (publishedRow) {
+  const published = publishedGlossForRoots(tables, roots);
+  if (published) {
     return {
       ...word,
-      rootGloss: rootGlossFromRow(publishedRow),
-      reading: "ordinary",
+      rootGloss: published.gloss,
+      reading: published.allFound ? "ordinary" : "unknown",
     };
   }
 
