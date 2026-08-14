@@ -95,3 +95,36 @@ export type MorphWord = {
   plural?: boolean;
   family: MorphWordFamily;
 };
+
+/** Stage-2 lexicon reading (tables + thin PoS/ending branches). */
+export type LexReading =
+  | "ordinary"
+  | "value"
+  | "ability"
+  | "restrictor"
+  | "mood"
+  | "joinAct"
+  | "joinRelation"
+  | "number"
+  | "unknown";
+
+export type LexOverlay = {
+  senseForm: string;
+  pos: string;
+  definition: string;
+  mnemonic: string;
+};
+
+export type RootGloss = {
+  literal?: string;
+  metaphorical?: string;
+};
+
+/**
+ * Stage-2 classified word (morph structure + lexicon readings).
+ */
+export type LexWord = MorphWord & {
+  overlay?: LexOverlay;
+  rootGloss?: RootGloss;
+  reading: LexReading;
+};

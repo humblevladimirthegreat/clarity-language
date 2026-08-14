@@ -1,48 +1,32 @@
-import { parse as pegParse } from "../generated/word-parser.js";
+import { parse as peggyParse, SyntaxError as PeggySyntaxError } from "../generated/word-parser.js";
+
 import type { MorphWord } from "./types.js";
 
-export type {
-  Ending,
-  MorphWord,
-  MorphWordFamily,
-  NumberGroup,
-  NumberStem,
-  Pos,
-  SpanCloseFlavor,
-  XFamily,
-} from "./types.js";
-
 export class WordParseError extends Error {
-  readonly input: string;
-  readonly location?: { line: number; column: number; offset: number };
+  readonly peggyError: PeggySyntaxError;
 
-  constructor(input: string, cause: unknown) {
-    const message = cause instanceof Error ? cause.message : String(cause);
-    super(`Could not parse Agelan word ${JSON.stringify(input)}: ${message}`);
+  constructor(peggyError: PeggySyntaxError) {
+    super(peggyError.message);
     this.name = "WordParseError";
-    this.input = input;
-    if (cause && typeof cause === "object" && "location" in cause) {
-      const loc = (cause as { location?: { start?: { line: number; column: number; offset: number } } })
-        .location?.start;
-      if (loc) this.location = loc;
-    }
+    this.peggyError = peggyError;
   }
 }
 
-/** Parse one Agelan token into a Stage-1 `MorphWord`. */
+/** Parse one Agelan word from surface text (Stage 1 Peggy grammar). */
 export function parseWord(input: string): MorphWord {
   try {
-    return pegParse(input) as MorphWord;
-  } catch (cause) {
-    throw new WordParseError(input, cause);
+    return peggyParse(input.trim()) as MorphWord;
+  } catch (error) {
+    if (error instanceof PeggySyntaxError) {
+      throw new WordParseError(error);
+    }
+    throw error;
   }
 }
 
-/** Parse whitespace-separated Agelan tokens. */
+/** Parse whitespace-separated words. */
 export function parseWords(input: string): MorphWord[] {
-  try {
-    return pegParse(input, { startRule: "words" }) as MorphWord[];
-  } catch (cause) {
-    throw new WordParseError(input, cause);
-  }
+  const trimmed = input.trim();
+  if (!trimmed) return [];
+  return trimmed.split(/\s+/).map((token) => parseWord(token));
 }
