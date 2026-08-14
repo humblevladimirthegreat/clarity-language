@@ -19,6 +19,8 @@ gloss: `z-sushi-x-coffee`
 *Sushi-Coffee* (one label — two roots, one word)
 ```
 
+<AgelanInspect text="zuzuzuxogeven." />
+
 **Mnemonic:** mid-word **`x`** = glue; word-initial **`x`** = discourse PoS.
 
 Other shapes (span fences, role compounds, values / ability, numbers) are Intermediate ([families by shape](#families-by-shape)).

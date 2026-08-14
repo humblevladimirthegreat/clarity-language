@@ -1,34 +1,17 @@
 <script setup lang="ts">
-import { computed, onMounted, ref, shallowRef } from 'vue'
-import publishedCsv from '@data/lexicon-published.csv?raw'
-import overlayCsv from '@data/lexicon-overlays.csv?raw'
-import {
-  createClassifyTables,
-  inspectText,
-  type ClassifyTables,
-  type InspectResult,
-} from '@parse-browser'
+import { computed, ref } from 'vue'
+import { inspectText, type InspectResult } from '@parse-browser'
+import { useClassifyTables } from '../composables/useClassifyTables'
 import GlossOverlay from './GlossOverlay.vue'
 
 const SAMPLE = 'zazawan vawul.'
 
 const text = ref(SAMPLE)
-const status = ref<'loading' | 'ready' | 'error'>('loading')
-const errorMessage = ref('')
-const tables = shallowRef<ClassifyTables | null>(null)
 
-onMounted(() => {
-  try {
-    tables.value = createClassifyTables(publishedCsv, overlayCsv)
-    status.value = 'ready'
-  } catch (err) {
-    status.value = 'error'
-    errorMessage.value = err instanceof Error ? err.message : String(err)
-  }
-})
+const { tables, status, errorMessage } = useClassifyTables()
 
 const result = computed<InspectResult>(() => {
-  if (!tables.value) return { tokens: [] }
+  if (!tables.value) return { tokens: [], constructions: [] }
   return inspectText(text.value, tables.value)
 })
 </script>
@@ -45,14 +28,15 @@ const result = computed<InspectResult>(() => {
       :disabled="status !== 'ready'"
     />
     <p class="hint">
-      Hover for a short gloss. Click a word to inspect morphology. Pin or press Enter for the full
-      breakdown. Copy uses the romanized surface form (not English). Arrow keys walk words.
+      Hover for a short gloss. Click a word to inspect morphology. Click a join, span fence, or
+      <code>^</code> to inspect the construction. Pin or press Enter for the full breakdown. Copy
+      uses the romanized surface form (not English). Arrow keys walk words; <kbd>g</kbd> opens Why.
     </p>
     <p v-if="status === 'error'" class="warn">Could not load lexicon. {{ errorMessage }}</p>
     <p v-else-if="result.sentenceWarning" class="warn">
       Sentence parse: {{ result.sentenceWarning }}
     </p>
-    <GlossOverlay v-if="status === 'ready'" :tokens="result.tokens" />
+    <GlossOverlay v-if="status === 'ready'" :result="result" />
   </div>
 </template>
 

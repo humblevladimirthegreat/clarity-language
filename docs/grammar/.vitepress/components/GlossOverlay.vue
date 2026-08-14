@@ -1,51 +1,90 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
-import type { InspectToken } from '@parse-browser'
+import type { InspectConstruction, InspectResult, InspectToken } from '@parse-browser'
 import InspectCard from './InspectCard.vue'
 
 const props = defineProps<{
-  tokens: InspectToken[]
+  result: InspectResult
+  initialPinned?: boolean
 }>()
 
 const selected = ref(0)
+const constructionIndex = ref<number | null>(null)
 const pinned = ref(false)
 const hovered = ref<number | null>(null)
 const copied = ref(false)
-const root = ref<HTMLElement | null>(null)
+
+const tokens = computed(() => props.result.tokens)
+const constructions = computed(() => props.result.constructions)
 
 const inspectable = computed(() =>
-  props.tokens
+  tokens.value
     .map((token, index) => ({ token, index }))
-    .filter(({ token }) => token.kind === 'word' || token.kind === 'error'),
+    .filter(({ token }) => token.kind === 'word' || token.kind === 'error' || token.kind === 'island'),
 )
 
-const selectedToken = computed(() => props.tokens[selected.value] ?? null)
+const selectedToken = computed(() => tokens.value[selected.value] ?? null)
+
+const selectedConstruction = computed<InspectConstruction | null>(() => {
+  if (constructionIndex.value === null) return null
+  return constructions.value[constructionIndex.value] ?? null
+})
+
+const constructionRaws = computed(() => {
+  const group = selectedConstruction.value
+  if (!group) return []
+  return group.tokenIndices
+    .map((i) => tokens.value[i]?.raw)
+    .filter((raw): raw is string => Boolean(raw))
+})
+
+const highlighted = computed(() => {
+  const group = selectedConstruction.value
+  if (!group) return new Set<number>()
+  return new Set(group.tokenIndices)
+})
 
 watch(
-  () => props.tokens,
+  () => props.result,
   () => {
     selected.value = inspectable.value[0]?.index ?? 0
-    pinned.value = false
+    constructionIndex.value = null
+    pinned.value = Boolean(props.initialPinned)
     hovered.value = null
   },
+  { immediate: true },
 )
 
 function endingClass(token: InspectToken): string {
   if (token.kind === 'error') return 'is-error'
+  if (token.kind === 'island') return 'is-island'
   if (token.kind !== 'word' || !token.word.ending) return 'is-plain'
   return `ending-${token.word.ending}`
 }
 
+function triggerConstruction(index: number): number | undefined {
+  return constructions.value.findIndex((group) => group.triggerIndices.includes(index))
+}
+
 function select(index: number, pin = false) {
-  const token = props.tokens[index]
-  if (!token || (token.kind !== 'word' && token.kind !== 'error')) return
-  if (pin || (selected.value === index && !pinned.value)) {
+  const token = tokens.value[index]
+  if (!token) return
+  const groupIdx = triggerConstruction(index)
+  const useGroup = groupIdx >= 0 && (token.kind === 'island' || token.kind === 'word')
+
+  if (pin || (selected.value === index && constructionIndex.value === (useGroup ? groupIdx : null) && !pinned.value)) {
     selected.value = index
+    constructionIndex.value = useGroup ? groupIdx : null
     pinned.value = true
     return
   }
   selected.value = index
+  constructionIndex.value = useGroup ? groupIdx : null
   pinned.value = false
+}
+
+function jump(index: number) {
+  select(index)
 }
 
 function step(delta: number) {
@@ -56,11 +95,18 @@ function step(delta: number) {
   if (next) select(next.index)
 }
 
-async function copyRaw() {
+function copyText(): string {
+  if (selectedConstruction.value) return constructionRaws.value.join(' ')
   const token = selectedToken.value
-  if (!token || token.kind === 'punct' || token.kind === 'island') return
+  if (!token || token.kind === 'punct') return ''
+  return token.raw
+}
+
+async function copyRaw() {
+  const text = copyText()
+  if (!text) return
   try {
-    await navigator.clipboard.writeText(token.raw)
+    await navigator.clipboard.writeText(text)
     copied.value = true
     window.setTimeout(() => {
       copied.value = false
@@ -68,6 +114,12 @@ async function copyRaw() {
   } catch {
     copied.value = false
   }
+}
+
+function followWhy() {
+  const token = selectedToken.value
+  if (token?.kind !== 'word' || !token.why) return
+  window.location.assign(token.why.href)
 }
 
 function onKey(event: KeyboardEvent) {
@@ -80,29 +132,39 @@ function onKey(event: KeyboardEvent) {
   } else if (event.key === 'Enter') {
     event.preventDefault()
     select(selected.value, true)
+  } else if (event.key === 'g' || event.key === 'G') {
+    if (event.metaKey || event.ctrlKey) return
+    event.preventDefault()
+    followWhy()
   } else if (event.key === 'c' || event.key === 'C') {
     if (event.metaKey || event.ctrlKey) return
     event.preventDefault()
     void copyRaw()
   }
 }
+
+function clickable(token: InspectToken): boolean {
+  return token.kind === 'word' || token.kind === 'error' || token.kind === 'island'
+}
 </script>
 
 <template>
-  <div
-    ref="root"
-    class="overlay"
-    tabindex="0"
-    @keydown="onKey"
-  >
+  <div class="overlay" tabindex="0" @keydown="onKey">
     <p class="stream" aria-label="Agelan tokens">
       <template v-for="(token, index) in tokens" :key="`${token.start}-${token.raw}`">
         <button
-          v-if="token.kind === 'word' || token.kind === 'error'"
+          v-if="clickable(token)"
           type="button"
           class="tok"
-          :class="[endingClass(token), { active: selected === index, pinned: pinned && selected === index }]"
-          :title="token.kind === 'word' ? token.gloss : token.error.message"
+          :class="[
+            endingClass(token),
+            {
+              active: selected === index,
+              pinned: pinned && selected === index,
+              inGroup: highlighted.has(index),
+            },
+          ]"
+          :title="token.kind === 'word' ? token.gloss : token.kind === 'error' ? token.error.message : 'island'"
           @mouseenter="hovered = index"
           @mouseleave="hovered = null"
           @click="select(index)"
@@ -118,7 +180,13 @@ function onKey(event: KeyboardEvent) {
     </p>
 
     <div class="peek">
-      <InspectCard :token="selectedToken" :expanded="false" />
+      <InspectCard
+        :token="selectedConstruction ? null : selectedToken"
+        :construction="selectedConstruction"
+        :construction-raws="constructionRaws"
+        :expanded="false"
+        @jump="jump"
+      />
       <div class="actions">
         <button type="button" class="btn" @click="select(selected, true)">Pin</button>
         <button type="button" class="btn" @click="copyRaw">
@@ -128,7 +196,12 @@ function onKey(event: KeyboardEvent) {
     </div>
 
     <aside v-if="pinned" class="pin" aria-label="Pinned morph">
-      <InspectCard :token="selectedToken" :expanded="true" />
+      <InspectCard
+        :token="selectedToken"
+        :construction="null"
+        :expanded="true"
+        @jump="jump"
+      />
     </aside>
   </div>
 </template>
@@ -184,10 +257,15 @@ function onKey(event: KeyboardEvent) {
   border-bottom-color: var(--vp-c-danger-1);
   color: var(--vp-c-danger-1);
 }
+.is-island {
+  border-bottom-color: var(--vp-c-text-2);
+}
 
 .tok.active {
   background: var(--vp-c-bg-mute);
-  border-radius: 3px;
+}
+.tok.inGroup {
+  background: var(--vp-c-bg-mute);
 }
 .tok.pinned {
   box-shadow: inset 0 -2px 0 var(--vp-c-brand-1);

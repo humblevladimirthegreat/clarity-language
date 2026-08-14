@@ -66,5 +66,52 @@ describe("inspectText", () => {
     const result = inspectText("zazawan vawul xuxul.", tables);
     assert.ok(result.tokens.some((token) => token.kind === "word"));
     assert.ok(result.sentenceWarning);
+    assert.equal(result.constructions.length, 0);
+  });
+
+  it("groups a right-close join as a construction", () => {
+    const result = inspectText("zogodol zagadal zam.", tables);
+    const join = result.constructions.find((group) => group.kind === "join");
+    assert.ok(join);
+    const raws = join!.tokenIndices.map((i) => result.tokens[i]!.raw);
+    assert.deepEqual(raws, ["zogodol", "zagadal", "zam"]);
+    const zam = result.tokens.findIndex((token) => token.raw === "zam");
+    assert.ok(join!.triggerIndices.includes(zam));
+  });
+
+  it("pairs span open and close as Related", () => {
+    const result = inspectText("daxal zogodol xuxul vawul.", tables);
+    const span = result.constructions.find((group) => group.kind === "span");
+    assert.ok(span);
+    const open = result.tokens.find((token) => token.kind === "word" && token.raw === "daxal");
+    assert.equal(open?.kind, "word");
+    if (open?.kind !== "word") return;
+    const closeRel = open.related?.find((rel) => rel.label === "span close");
+    assert.equal(closeRel?.raw, "xuxul");
+    assert.equal(result.tokens[closeRel!.tokenIndex]?.raw, "xuxul");
+  });
+
+  it("links -r to its antecedent", () => {
+    const result = inspectText("zulonun vawul. zulor vahural.", tables);
+    const pronoun = result.tokens.find((token) => token.kind === "word" && token.raw === "zulor");
+    assert.equal(pronoun?.kind, "word");
+    if (pronoun?.kind !== "word") return;
+    const ant = pronoun.related?.find((rel) => rel.label === "antecedent");
+    assert.equal(ant?.raw, "zulonun");
+    assert.equal(result.tokens[ant!.tokenIndex]?.raw, "zulonun");
+  });
+
+  it("Why distinguishes values from role compounds", () => {
+    const value = inspectText("hobolaxal", tables).tokens[0];
+    assert.equal(value?.kind, "word");
+    if (value?.kind !== "word") return;
+    assert.equal(value.why?.line, "values, not role");
+    assert.equal(value.why?.href, "values.html");
+
+    const role = inspectText("zaxozowel", tables).tokens[0];
+    assert.equal(role?.kind, "word");
+    if (role?.kind !== "word") return;
+    assert.equal(role.why?.line, "role compound");
+    assert.equal(role.why?.href, "roles.html#role-compounds");
   });
 });

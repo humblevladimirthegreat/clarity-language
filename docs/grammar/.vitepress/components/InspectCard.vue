@@ -1,14 +1,27 @@
 <script setup lang="ts">
-import { endingSense, morphDetails, type InspectToken } from '@parse-browser'
+import { endingSense, morphDetails, type InspectConstruction, type InspectToken } from '@parse-browser'
 
-defineProps<{
+const props = defineProps<{
   token: InspectToken | null
+  construction?: InspectConstruction | null
+  constructionRaws?: string[]
   expanded?: boolean
+}>()
+
+const emit = defineEmits<{
+  jump: [tokenIndex: number]
 }>()
 </script>
 
 <template>
-  <div v-if="!token" class="empty">Click a word for PoS, ending, and gloss.</div>
+  <div v-if="construction" class="card construction">
+    <header>
+      <span class="surface">{{ construction.label }}</span>
+      <span class="chip">{{ construction.kind }}</span>
+    </header>
+    <p class="gloss">{{ (constructionRaws ?? []).join(' ') }}</p>
+  </div>
+  <div v-else-if="!token" class="empty">Click a word for PoS, ending, and gloss.</div>
   <div v-else-if="token.kind === 'error'" class="card error">
     <header>
       <span class="surface">{{ token.raw }}</span>
@@ -26,6 +39,23 @@ defineProps<{
       </span>
     </header>
     <p class="gloss">{{ token.gloss }}</p>
+    <p v-if="token.why" class="why">
+      Why: {{ token.why.line }}
+      <a :href="token.why.href">grammar</a>
+    </p>
+    <ul v-if="token.related?.length" class="related">
+      <li v-for="(rel, i) in token.related" :key="i">
+        <button
+          v-if="rel.raw !== '—'"
+          type="button"
+          class="rel"
+          @click="emit('jump', rel.tokenIndex)"
+        >
+          {{ rel.label }}: {{ rel.raw }}
+        </button>
+        <span v-else>{{ rel.label }}</span>
+      </li>
+    </ul>
     <ul class="chips">
       <li v-for="(chip, i) in token.chips" :key="i">{{ chip }}</li>
     </ul>
@@ -33,6 +63,14 @@ defineProps<{
       <template v-for="row in morphDetails(token.word)" :key="row.label">
         <dt>{{ row.label }}</dt>
         <dd>{{ row.value }}</dd>
+      </template>
+      <template v-if="token.why">
+        <dt>Why</dt>
+        <dd>
+          {{ token.why.line }}
+          ·
+          <a :href="token.why.href">{{ token.why.href }}</a>
+        </dd>
       </template>
     </dl>
   </div>
@@ -94,10 +132,35 @@ header {
   color: var(--vp-c-text-1);
 }
 
+.why,
 .expected {
-  margin: 0;
+  margin: 0 0 0.5rem;
   font-size: 0.85rem;
   color: var(--vp-c-text-2);
+}
+
+.why a {
+  margin-left: 0.35rem;
+}
+
+.related {
+  list-style: none;
+  margin: 0 0 0.5rem;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.rel {
+  font: inherit;
+  font-size: 0.8rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  border: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg);
+  color: var(--vp-c-text-1);
+  cursor: pointer;
 }
 
 .chips {
