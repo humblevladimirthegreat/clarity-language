@@ -71,12 +71,16 @@ describe("inspectText", () => {
 
   it("groups a right-close join as a construction", () => {
     const result = inspectText("zogodol zagadal zam.", tables);
+    const zam = result.tokens.find((token) => token.kind === "word" && token.raw === "zam");
+    assert.equal(zam?.kind, "word");
+    if (zam?.kind !== "word") return;
+    assert.equal(zam.gloss, "and (open)");
     const join = result.constructions.find((group) => group.kind === "join");
     assert.ok(join);
     const raws = join!.tokenIndices.map((i) => result.tokens[i]!.raw);
     assert.deepEqual(raws, ["zogodol", "zagadal", "zam"]);
-    const zam = result.tokens.findIndex((token) => token.raw === "zam");
-    assert.ok(join!.triggerIndices.includes(zam));
+    const zamIdx = result.tokens.findIndex((token) => token.raw === "zam");
+    assert.ok(join!.triggerIndices.includes(zamIdx));
   });
 
   it("pairs span open and close as Related", () => {

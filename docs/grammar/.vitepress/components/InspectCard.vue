@@ -35,7 +35,7 @@ const emit = defineEmits<{
       <span class="surface">{{ token.raw }}</span>
       <span v-if="token.word.pos" class="chip pos">/{{ token.word.pos }}/</span>
       <span v-if="token.word.ending" class="chip ending">
-        -{{ token.word.ending }} {{ endingSense(token.word.ending) }}
+        -{{ token.word.ending }} {{ endingSense(token.word.ending, token.word) }}
       </span>
     </header>
     <p class="gloss">{{ token.gloss }}</p>

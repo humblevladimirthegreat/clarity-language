@@ -121,7 +121,7 @@ function isQuestionForce(word: LexWord | undefined): boolean {
 
 function isJoinGap(word: LexWord): boolean {
   if (word.ending !== "r" || word.family.kind !== "joinMarker") return false;
-  return word.reading === "ordinary" || word.reading === "restrictor";
+  return word.reading === "join" || word.reading === "restrictor";
 }
 
 function isGPackage(shared: CoordShared): shared is GPackage {

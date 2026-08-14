@@ -112,6 +112,40 @@ function isRestrictor(word: MorphWord): boolean {
   return RESTRICTOR_CORE.has(family.series + ending);
 }
 
+/** Join series English jobs — [coordination.md](docs/grammar/coordination.md) beginner set/rank tables. */
+const JOIN_SERIES_GLOSS: Record<string, string> = {
+  a: "and",
+  o: "exclusive or",
+  ao: "and/or",
+  u: "not / none of",
+  ua: "everything but",
+  uo: "anything but",
+  e: "rank",
+  ae: "equal rank",
+  oe: "ranked exclusive or",
+  ue: "rank reversal",
+};
+
+const JOIN_ENDING_GLOSS: Record<string, string> = {
+  l: "closed",
+  m: "open",
+  n: "named",
+  r: "unspecified member",
+};
+
+/** Fence-join gloss (not restrictors, join-acts, or `/j/` force/polar). */
+export function joinFenceGloss(series: string, ending: string | undefined): string {
+  const job = JOIN_SERIES_GLOSS[series] ?? `join ${series}`;
+  const close = ending ? JOIN_ENDING_GLOSS[ending] : undefined;
+  return close ? `${job} (${close})` : job;
+}
+
+function isFenceJoin(word: MorphWord): boolean {
+  if (word.family.kind !== "joinMarker") return false;
+  if (!word.pos || word.pos === "j") return false;
+  return !isRestrictor(word);
+}
+
 function bareNeedTopic(word: MorphWord): boolean {
   const { family, pos } = word;
   if (family.kind !== "content" || family.roots.length !== 1) return false;
@@ -212,6 +246,14 @@ export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
 
   if (isRestrictor(word)) {
     return { ...word, reading: "restrictor" };
+  }
+
+  if (isFenceJoin(word) && word.family.kind === "joinMarker") {
+    return {
+      ...word,
+      reading: "join",
+      rootGloss: { literal: joinFenceGloss(word.family.series, word.ending) },
+    };
   }
 
   if (bareNeedTopic(word)) {

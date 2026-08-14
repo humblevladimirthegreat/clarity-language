@@ -50,7 +50,7 @@ describe("classifyToTokenType", () => {
     assert.equal(classifyToTokenType(lex("van")).name, V.name);
   });
 
-  it("maps ordinary val to JoinV", () => {
+  it("maps fence-join val to JoinV", () => {
     assert.equal(classifyToTokenType(lex("val")).name, JoinV.name);
   });
 

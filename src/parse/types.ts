@@ -103,6 +103,7 @@ export type LexReading =
   | "ability"
   | "restrictor"
   | "mood"
+  | "join"
   | "joinAct"
   | "joinRelation"
   | "number"

@@ -46,9 +46,10 @@ describe("classify", () => {
     expectReading("gan", "joinRelation");
   });
 
-  it("ordinary join marker without overlay", () => {
-    const word = expectReading("val", "ordinary");
+  it("fence join marker is a join reading with series gloss", () => {
+    const word = expectReading("zam", "join");
     assert.equal(word.family.kind, "joinMarker");
+    assert.equal(word.rootGloss?.literal, "and (open)");
   });
 
   it("restrictor on defined core hal", () => {

@@ -106,8 +106,16 @@ const ENDING_SENSE: Record<Ending, string> = {
   r: "anaphor",
 };
 
-export function endingSense(ending: Ending | undefined): string | undefined {
+const JOIN_ENDING_SENSE: Record<Ending, string> = {
+  l: "closed",
+  m: "open",
+  n: "named",
+  r: "unspecified member",
+};
+
+export function endingSense(ending: Ending | undefined, word?: LexWord): string | undefined {
   if (!ending) return undefined;
+  if (word?.reading === "join") return JOIN_ENDING_SENSE[ending];
   return ENDING_SENSE[ending];
 }
 
@@ -140,6 +148,9 @@ export function glossFor(word: LexWord): string {
 
   if (word.reading === "unknown") return "unknown root";
   if (word.reading === "number") return "number";
+  if (word.reading === "join") {
+    return word.rootGloss?.literal ?? "join";
+  }
 
   if (word.ending === "m") {
     return word.rootGloss?.metaphorical ?? word.rootGloss?.literal ?? word.reading;
@@ -195,7 +206,7 @@ function familyChips(family: MorphWordFamily): string[] {
 export function chipsFor(word: LexWord): string[] {
   const chips: string[] = [];
   if (word.pos) chips.push(`/${word.pos}/`);
-  if (word.ending) chips.push(`-${word.ending} ${ENDING_SENSE[word.ending]}`);
+  if (word.ending) chips.push(`-${word.ending} ${endingSense(word.ending, word)}`);
   if (word.gl) chips.push("gl-");
   if (word.plural) chips.push("-sh");
   chips.push(...familyChips(word.family));
@@ -210,7 +221,7 @@ export function morphDetails(word: LexWord): { label: string; value: string }[] 
   ];
   if (word.pos) rows.push({ label: "PoS", value: word.pos });
   if (word.ending) {
-    rows.push({ label: "ending", value: `-${word.ending} (${ENDING_SENSE[word.ending]})` });
+    rows.push({ label: "ending", value: `-${word.ending} (${endingSense(word.ending, word)})` });
   }
   if (word.gl) rows.push({ label: "bound", value: "gl-" });
   if (word.plural) rows.push({ label: "plural", value: "-sh associative" });
