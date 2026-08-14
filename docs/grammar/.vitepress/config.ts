@@ -64,7 +64,7 @@ export default defineConfig({
       { text: 'Introduction', link: '/introduction' },
       { text: 'Core', link: '/core' },
       { text: 'Lexicon', link: '/lexicon' },
-      { text: 'Gloss overlay', link: '/gloss' },
+      { text: 'Gloss', link: '/gloss' },
     ],
     sidebar: [
       {
@@ -75,7 +75,7 @@ export default defineConfig({
         text: 'Tools',
         items: [
           { text: 'Lexicon', link: '/lexicon' },
-          { text: 'Gloss overlay', link: '/gloss' },
+          { text: 'Gloss', link: '/gloss' },
         ],
       },
     ],
