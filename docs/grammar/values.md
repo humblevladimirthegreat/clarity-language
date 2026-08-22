@@ -33,8 +33,6 @@ Six closed needs. Senses are fixed; lexicon roots are published. Ordinary conten
 | survival | **`uzehu`** | 🛡️ *shield* → *defense* | safety, health, material sufficiency |
 | unspecified | **`egege`** | 🥚 *egg* → *potential* | need named without picking among the five |
 
-**Mnemonic:** unspecified is first-class — no ranked “better” need.
-
 ### Word shape
 <a id="word-shape"></a>
 
@@ -44,7 +42,7 @@ Six closed needs. Senses are fixed; lexicon roots are published. Ordinary conten
 
 1. **PoS** — `/h/` or `/w/`.
 2. **Need root** — one of the six (`obola` / `odolo` / `ogono` / `azedo` / `uzehu` / `egege`).
-3. **Optional `x`-addition** — stance vowel **`a` / `e` / `o` / `u`**. Mid-word **`x`** is the ordinary [compound joiner](phonology.md#phonotactics).
+3. **Optional `x`-addition** — stance vowel **`a` / `e` / `o` / `u`**.
 4. **Ending** — on bare needs, ordinary [reference-suffix](reference-suffix.md); on compounds, the stance’s own table ([contact](#value-contact) / [preference](#value-preference) / [force](#value-force) / [changeability](#value-changeability)).
 
 ### Stances
@@ -86,14 +84,14 @@ gloss: `z-gift` · `w-relatedness-met-social`
 <a id="value-contact"></a>
 <a id="value-savoring"></a>
 
-On **`xa`** compounds, **-l / -m / -n / -r** mark **how you contact** the (claimed) payoff — savoring / gratitude channel. Not tense. Not motive standing, prescription force, or changeability.
+On **`xa`** compounds, **-l / -m / -n / -r** mark **how you contact** the (claimed) payoff — savoring / gratitude channel.
 
 | Ending | Channel | Focus |
 |--------|---------|--------|
 | **-l** | **physical** | Sensory / ambient / embodied ease |
 | **-m** | **mental** | Cognitive integration, memory, self-directed gratitude |
 | **-n** | **social** | Relational connection, gifts, acknowledgment |
-| **-r** | **spiritual** | Big-picture step-back (wider frame — not a theology claim) |
+| **-r** | **spiritual** | Big-picture step-back (wider frame — not theology) |
 
 **Mnemonic:** **-l** immediate scene; **-m** mental; **-n** named persons; **-r** resume to a larger frame. No ranked “better” channel.
 
@@ -112,13 +110,11 @@ gloss: `z-neighborhood` · `g-home` · `b-speaker` · `w-competence-met-physical
 *My neighborhood — serves competence; physical contact (felt place).*
 ```
 
-Prefer **`xa`** for gratitude / praise. Values stay optional — you need not tax every clause.
-
 ### Prescription (`xo`) — force
 <a id="value-force"></a>
 <a id="value-ought"></a>
 
-**`xo`** = *should* / *ought* — act so the need is served or protected, whether or not anyone is acting from it now. Ending = **prescription force** (how strongly you claim the ought). Not clause force (`jol`, …), not motive, not met/unmet.
+**`xo`** = *should* / *ought* — act so the need is served or protected, whether or not anyone is acting from it now. Ending = **prescription force** (how strongly you claim the ought).
 
 | Ending | Force | You are saying |
 |--------|--------|----------------|
@@ -144,8 +140,6 @@ gloss: `h-relatedness-ought-endorse`
 *… should serve/protect relatedness (endorse).*
 ```
 
-**`xo`** is *should serve/protect X*. Motive **`xe`** (*am doing for X*) is [Intermediate](#value-preference). Prefer topic or multiple value words when you mean “this need (among others)” — not **`xo`** as exclusive pick.
-
 ### Unmet (`xu`) — changeability
 <a id="value-changeability"></a>
 
@@ -157,8 +151,6 @@ gloss: `h-relatedness-ought-endorse`
 | **-m** | **modifiable** — effort or circumstance may change it (soft default if unknown) | open to change |
 | **-n** | **proper** — named / titled unmet frame | ordinary **n**ame |
 | **-r** | **temporary** — usually met; not this moment | light / this-moment only |
-
-**No won’t-now** on changeability — deferral / “not updating this turn” stays ordinary packaging (same split as [ability](ability.md#ability) *won’t*). Always pick an ending on **`xu`**; unknown grain → **-m**.
 
 | Form | Reading |
 |------|---------|
@@ -174,8 +166,6 @@ gloss: `z-meeting` · `w-autonomy-unmet-temporary`
 
 *The meeting costs autonomy right now (temporary).*
 ```
-
-Unmet competence (`hodoloxul`) is still a **need** claim — not “can’t competence.” [Ability](ability.md#ability) puts temporary / modifiable / irreversible *can’t* on stance vowels instead.
 
 ### Translation practice
 <a id="translation-practice"></a>

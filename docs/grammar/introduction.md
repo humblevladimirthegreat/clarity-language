@@ -19,22 +19,20 @@ Two supporting goals sit beside the psychology:
 
 Agelan keeps three kinds of clarity in ordinary speech:
 
-**Syntactic.** In a clause, every content word carries a PoS prefix, so role does not depend on guessing from English-style word class. Default order is SOV, but free order is safe because the prefix is authoritative. Outside a sentence, prefix-less **root + ending** is a citation (not a default `/z/`).
+**Syntactic.** In a clause, every content word carries a PoS prefix, so role does not depend on guessing from English-style word class. Default order is SOV, but free order is safe because the prefix is authoritative. Outside a sentence, prefix-less **root + ending** is a citation. [TODO: avoid jargon]
 
-**Referential.** Anaphoric pronouns are built from a fixed prefix of **any** prior word’s root (through the 2nd vowel) and resolve to the **most recently mentioned matching** antecedent, plus a small set of special discourse-role pronouns. There are no vague English-style *it* / *they* pronouns.
+**Referential.** Pronouns are built from a fixed prefix of **any** prior word’s root (through the 2nd vowel) and resolve to the **most recently mentioned matching** antecedent, plus a small set of special discourse-role pronouns. There are no vague English-style *it* / *they* pronouns.
 
 **Semantic.** Each dictionary sense is one entry. Related senses across fields use an explicit “in the sense of [topic]” compound pattern rather than unmarked polysemy.
 
-**What stays vague on purpose.** You can say something is “good” without naming every facet. Derivations need not show that *food* and *cook* are related. Precision that would make the language hard to use is out of scope.
+**What stays vague on purpose.** Derivations need not show that *food* and *cook* are related. Precision that would make the language hard to use is out of scope.
 
 ## How to learn from these docs
 <a id="how-to-learn"></a>
 
-Grammar pages use **Beginner** / **Intermediate** / **Advanced** sections so you can finish all Beginner material across this folder before Intermediate, then Advanced. [why-agelan.md](why-agelan.md) and this page are orientation only — not learning bands.
+Grammar pages use **Beginner** / **Intermediate** / **Advanced** sections so you can finish all Beginner material across this folder before Intermediate, then Advanced.
 
 Follow the **Suggested reading order** in the site sidebar (same sequence on every page). Read each page’s Beginner section in that order, then every peer’s Intermediate, then Advanced.
-
-Numbers Intermediate / Advanced (overlays, ranges, exponents, derivation) is a **specialist module** — optional for a first dialogue corpus. Beginner counts (`g+3`), ordinals (`g#2`), and digitless `g+` are enough to keep reading.
 
 ## Acknowledgments
 <a id="acknowledgments"></a>

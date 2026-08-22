@@ -3,6 +3,8 @@
 
 How Agelan says English *to be* for **kind / role** (*Azawan is a teacher*) and **identity** (*Clark is Superman*) — without a general *to-be* verb.
 
+[TODO: justify why no general to-be]
+
 ## Beginner
 <a id="beginner"></a>
 
@@ -53,7 +55,7 @@ gloss: `z-grace` · `g-teacher`
 <a id="identity"></a>
 <a id="same"></a>
 
-**Identity** = two expressions pick **one** referent (*Clark is Superman*, *this is that*). Use the closed complex adjective **`SAME`** (`gogunol` + extra noun).
+**Identity** = two expressions pick **one** referent (*Clark is Superman*, *this is that*). Use the closed complex adjective **`SAME`** (`gogunom` + extra noun).
 
 | Concept | Gloss | Lexicon root |
 |---------|--------|--------------|
@@ -62,7 +64,7 @@ gloss: `z-grace` · `g-teacher`
 **Mnemonic:** a **coin** has two faces and one substance — different labels are faces; co-reference is the one coin.
 
 ```
-`gogunol buzuban`
+`gogunom buzuban`
 ```
 
 | Piece | Role |

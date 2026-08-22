@@ -8,7 +8,7 @@ Optional **-sh** after the [reference suffix](reference-suffix.md) marks an **as
 ### Core sense
 <a id="associative"></a>
 
-Without **-sh**, the word picks **one** referent. With **-sh**, the default content reading is **associative**: the **anchor plus a contextually salient associate set** (family, coworkers, unit, household, …). Exact who counts as an associate is fixed by discourse and situation, not by the morphology alone.
+Without **-sh**, the word picks **one** referent. With **-sh**, the default content reading is **associative**: the **anchor plus a contextually salient associate set** (family, coworkers, unit, household, …). Exact who counts as an associate is determined by discourse and situation.
 
 | Ending | Reading |
 |--------|---------|
@@ -32,8 +32,6 @@ gloss: `z-←grace-sh` · `v-sit`
 
 *They (that one and associates) sit.*
 ```
-
-**-sh** is not agreement: you do not copy number onto verbs or adjectives. Mark the word whose referent is the group.
 
 ### Word shape
 

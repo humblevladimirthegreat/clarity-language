@@ -2,9 +2,7 @@
 <a id="causation"></a>
 <a id="necessary-sufficient"></a>
 
-How to say *A leads to B*, *A is enough for B*, and *B needs A* — using joins, restrictors, and *if* / *because*, not a dedicated cause-arrow word.
-
-**Needs:** [coordination.md](coordination.md) Beginner (inclusive / exclusion joins); [core.md](core.md) Beginner ([dependent clauses](core.md#dependent-clauses) / **`odo`**).
+How to say *A leads to B*, *A is enough for B*, and *B needs A* — using joins, restrictors, and *if* / *because*.
 
 ## Beginner
 <a id="beginner"></a>
@@ -20,8 +18,6 @@ English *cause* / *leads to* / *needs* collapses distinctions that drive common 
 | Confusing **sufficient** with **necessary** | Two **different** constructions — never one bare *cause* join |
 | Hearing *if* as *if and only if* | Separate clause roots for one-way *if* vs both-ways *if and only if* ([Intermediate](#if-vs-iff)) |
 
-**Mnemonic:** everyday causation is **cheap and open** — “this would work” — not “this alone is the law.”
-
 Condition type is carried by **which** join / relation / restrictor you use, plus host vs `/b/` / **`odo`** poles. There is **no** new arrow morpheme.
 
 ### Pole habit
@@ -33,8 +29,6 @@ Condition type is carried by **which** join / relation / restrictor you use, plu
 | **Consequent** | the effect / outcome (promotion, rain, …) |
 
 **Default layout:** the outcome is the **host** (effect clause, outcome noun, or event being framed); the condition sits in the **open-inclusive** slot (`…aom`, …).
-
-Informal glosses like *effort ⇒ promotion* are English-only teaching shortcuts — Agelan has no mid-clause arrow.
 
 ### Sufficient (default everyday claim)
 <a id="sufficient"></a>
@@ -64,8 +58,7 @@ gloss: `z-cloud` · `z-snow` · `z-would-work`
 
 *Clouds or snow would work (for that outcome).*
 ```
-
-**Mnemonic:** open **`…aom`** = *would work among routes* — the everyday *leads to* shape.
+[TODO: mnemonic ties ao to the general vowel series]
 
 ### Translation practice
 <a id="translation-practice"></a>

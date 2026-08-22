@@ -2,6 +2,7 @@
 <a id="roles"></a>
 
 Name event participants (*fighter*, *the one fought*) and **whose** left / right you mean.
+[TODO: figure out why getting 404 when accessing this on web]
 
 ## Beginner
 <a id="beginner"></a>
@@ -28,16 +29,13 @@ PoS + {a|u|o} + x + ROOT + {-l|-m|-n|-r}
 | **Ending** | Ordinary [reference-suffix](reference-suffix.md) senses — not value/ability ending tables |
 
 **Mnemonic:** **`a`** ≈ additive / doer; **`u`** ≈ subtractive / undergoer; **`o`** ≈ oblique / `/b/` pole — vowel echo only, not reviser or join readings. Mid-word **`x`** map: [x-compounds.md](x-compounds.md).
-
-**Parser cue:** after PoS, a single vowel then `x` then a **longer** root + ending → role compound. Same shape with a **single** vowel after `x` → [span](spans.md), not role. **`e x …`** is reserved (undefined) — not a fourth ROLE.
+[TODO: move mnemonic to column in below table]
 
 | ROLE | Form | ROOT type | Referent |
 |------|------|-----------|----------|
 | **`a`** | `…axROOT…` | **event** (verb / event noun stem) | **agent** — doer / subject-like participant of that event |
 | **`u`** | `…uxROOT…` | **event** | **patient** — undergoer / object-like participant of that event |
 | **`o`** | `…oxROOT…` | **relation** (complex `/ɡ/` / `/h/` / [join-relation](join-extras.md#join-relations) root, …) | **reltum** — the `/b/` argument pole of that relation |
-
-Recipients, beneficiaries, topic NPs, and other adjunct `/b/`s stay ordinary resume of that `/b/` noun (or the `/h/`+`/b/` unit).
 
 #### Endings
 

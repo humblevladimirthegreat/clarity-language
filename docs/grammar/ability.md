@@ -28,10 +28,6 @@ PoS + HOST + x + {a|e|o|u} + {-l|-m|-n|-r}
 
 **Mnemonic:** vowel = can / *can’t how*; ending = how the root enters the talk (**-l** literal, **-m** metaphorical, …).
 
-Start with incapability vowels (**`xe` / `xo` / `xu`**). **`xa`** when you want tagged *can*. Soft default *can’t* when grain is unclear → **`xo`**.
-
-**Parser cue:** root ∈ [six needs](values.md#need-inventory) + `x…` → **value** tables. Other roots + **`xa` / `xe` / `xo` / `xu`** → **ability**. After PoS, single ROLE vowel **a** / **u** / **o** then `x` then a **longer** root → [role compound](roles.md#role-compounds). After PoS, single TYPE vowel then `x` then a single EDGE vowel + ending → [span form](spans.md). Full map: [x-compounds.md](x-compounds.md).
-
 #### Stance vowels
 <a id="ability-stance"></a>
 
@@ -39,10 +35,8 @@ Start with incapability vowels (**`xe` / `xo` / `xu`**). **`xa`** when you want 
 |------|--------|---------|
 | **`xa`** | **Capable** | can (solo / underspecified scaffold) |
 | **`xe`** | **Temporary can’t** | can’t **right now** (usually able) |
-| **`xo`** | **Modifiable can’t** | can’t, and that may change — **unspecified** whether the speaker will change it (also soft default if grain unknown) |
+| **`xo`** | **Modifiable can’t** | can’t, and that may change (also soft default if grain unknown) |
 | **`xu`** | **Irreversible can’t** | can’t — fixed / impossible as far as you can tell |
-
-**Not won’t:** ability morph marks capability, not refusal. *Won’t* / *choose not to* stays ordinary lexicon (or other packaging) — not a fourth ability vowel.
 
 | Form | Reading |
 |------|---------|
@@ -67,8 +61,6 @@ gloss: `v-express-unable-modifiable`
 
 *Can’t sing (open to change — not claiming who will change it).*
 ```
-
-Hostless / clause-wide ability uses fallback **`egera`** — [Intermediate](#ability-fallback). Ability is not a need: stance lives on the vowel; endings stay ordinary reference-suffix. Plural **-sh** on `/h/` `/w/` stays unused ([plurality](plurality.md)); host `/v/` / `/ɡ/` ability compounds follow ordinary plurality for that PoS.
 
 ### Translation practice
 <a id="translation-practice"></a>

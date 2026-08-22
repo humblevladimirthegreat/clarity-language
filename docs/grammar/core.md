@@ -9,8 +9,6 @@ How to read and write an Agelan **sentence**: word roles, word shape, default or
 
 Each content word starts with a **first letter** that marks its job in the sentence. The root stays the same when the job changes — only that first letter changes.
 
-**Mnemonic:** the **first letter is the role stamp** — read it before the root.
-
 #### Writing words
 <a id="orthography"></a>
 <a id="writing-words"></a>
@@ -24,40 +22,20 @@ Prefer a published root when the English meaning matches (`dabebal` for *apple*)
 Final letters (**-l** / **-m** / **-n** / **-r**) say how the root enters the talk — full list in [reference-suffix.md](reference-suffix.md).
 
 **Mnemonic (endings):** **-l** literal kind, **-m** metaphorical sense, **-n** proper / named, **-r** resume (point back).
+[TODO: don't mention ending letters yet. only use literal words for now]
 
 ##### Capitalization
 <a id="capitalization"></a>
 
-Agelan writing is **unicase**: use **lowercase** for every native letter — role letter, root, ending, plural **-sh**, numbers, revisers, join closes, and citation forms. Sentence starts after `.` / `?` / `!` stay lowercase. Named reference is **-n** / **`@`**, not a capital letter.
-
-Capital letters appear only inside **foreign or raw** payloads that keep another writing system’s casing — opaque spans (`d<NaCl>`, `d<iPhone>`), compact foreign content words (`z<Sam>n`), and cite / mention interiors whose wording is not Agelan (`d@[Hamlet]`). Once a root is nativized (published or adapted Agelan shape), write it lowercase with an ordinary ending (`zazawan`, not `zAzawan`).
-
-Do not use capitals for shouting, titles, or emphasis — use clause force, polar stance, or other closed mood tools instead.
-
-**Mnemonic:** lowercase is Agelan; capitals are **borrowed ink** from another orthography.
-
-**Trap:** capitalizing the first letter of a sentence changes the role stamp’s look (`Zazawan` vs `zazawan`). Keep the role letter lowercase so it stays the same stamp everywhere.
+Agelan writing is **unicase**: use **lowercase** for every native letter. Capital letters appear only when writing foreign words (you learn how to write foreign content later).
 
 #### Outside a sentence (citation)
 <a id="citation-forms"></a>
 <a id="prefix-less-citation"></a>
 
-When you are **not** filling a clause slot — lexicon head, list, title line, or a freestanding non-clausal turn — you may write **root + ending** with **no** role letter:
+When you are **not** filling a clause slot — lexicon head, list, title line, or a freestanding non-clausal turn — you may write the **root** with **no** role letter:
 
 `godol.` · `uzem.` · `azawan.` · `ulonun.`
-
-| Ending | Job |
-|--------|-----|
-| **-l** | Cite the **literal** lexicon sense |
-| **-m** | Cite the **metaphorical** lexicon sense |
-| **-n** | Cite as a **name** or as **the word-as-label** (form pointed at as a designation) |
-| **-r** | **Resume** a prior freestanding citation in this talk |
-
-**`/z/` is not a default** here — a missing role letter does **not** mean subject. Inside a sentence, every content word still needs its role letter.
-
-**Trap:** the closed prefix-less set **`al` / `am` / `an` / `el` / `em` / `en` / `ol` / `om` / `on` / `ul` / `um` / `un`** are always [revisers](revisers.md), never citations. Open content roots are longer than one vowel ([phonology](phonology.md#phonotactics)), so ordinary citations cannot collide with that set.
-
-**Mnemonic:** no slot → no role letter; endings still answer *how does this root enter the talk?*
 
 #### Role letters (parts of speech)
 <a id="part-of-speech-prefixes"></a>
@@ -76,7 +54,7 @@ When you are **not** filling a clause slot — lexicon head, list, title line, o
 
 English *to* / *for* (recipient) uses a complex adverb (`/h/` + `/b/`) plus that extra noun — the same pattern as other “relation + who/what” meanings on the verb.
 
-**Mnemonic:** `/b/` is **bound** to the preceding `/ɡ/` or `/h/` (the pair stays together).
+[TODO: mnemonic column so users can remember letter-job assignments]
 
 ### Default sentence order
 
@@ -90,6 +68,8 @@ You may rearrange those core roles for style or to put something in **focus** (w
 **Turn** vs **continue:** a new **turn** opens with `/j/` (calling someone, *yes* / *no* words, written [statement / question / command](#clause-force-beginner)) — including turns you take with yourself. **Continuing under the same speech act** uses `/x/` ([discourse markers](#discourse-markers-x)): what follows **keeps** that speech act. Default statement force is **`jal`**, and you may **leave it out** when it is already clear ([Utterance markers](#utterance-markers-j)).
 
 **Mnemonic:** `/j/` = **jump** to a new speech act; `/x/` = **extend** under the same act.
+
+[TODO: clarify what a "turn" is. Might be unnecessary to mention turns here.]
 
 ### Nouns and verbs
 
@@ -110,6 +90,7 @@ gloss: `z-grace` · `g-teacher`
 
 *Azawan is a teacher.*
 ```
+[TODO: change example, we haven't introduced proper names yet]
 
 ```
 `zogodol gulebul.`
@@ -134,28 +115,23 @@ gloss: `z-dog` · `g-blue`
 *a blue dog*
 ```
 
-Prefer this order in ordinary prose. Optional before-the-noun order (**`gl-`**) is Intermediate ([left-bound adjectives](#left-bound-adjectives)).
-
 ### Adjective extras (`/w/`)
 
 `/w/` adds detail to the **previous adjective** (`/ɡ/` unit) — intensity, manner of the property, and similar.
 
 It sits on that adjective: normally right after the `/ɡ/` (or after that `/ɡ/`’s attached `/b/` if complex). Several `/w/` words may sit in a row on one `/ɡ/` (`guzem wazebol wazebel`). If the relation needs an extra noun, use complex `/ɡ/` + `/b/` instead.
+[TODO: give translation of this example]
 
 **Mnemonic:** `/w/` = **with** the adjective (narrow); `/h/` = the **whole** sentence. Same root, different first letter → different reach.
 
 ### Adverbs (`/h/`)
 <a id="adverbs-h"></a>
 
-`/h/` marks adverbs: how, when, where, *to* / *for*, mood / tense / “how I know,” and related closed kinds. Statement / question / command force is `/j/`, not `/h/`.
+`/h/` marks adverbs: how, when, where, *to* / *for*, mood / tense / “how I know,” and related closed kinds.
 
 Because `/h/` talks about the sentence’s verb, **you may place it anywhere in that sentence** — except a “next sentence” `/h/`+`/b/` unit, which must sit **last in the main sentence** ([Dependent clauses](#dependent-clauses)). `/h/` material stays inside its own sentence.
 
 **Several adverbs at once** just sit next to each other: `hadal hozonol` → *hastily and still/quietly*.
-
-**Mnemonic (trap):** “apparently / allegedly” stays `/h/` or `/w/`; “however / therefore” is `/x/` ([below](#discourse-markers-x)).
-
-*As for…* / *regarding…* and how to break ties among several `/h/` words are Intermediate ([adverb topic and free-order ties](#adverb-topic-and-free-order-ties)).
 
 ### Complex adjectives, complex adverbs, and extra nouns
 <a id="complex-adjectives-complex-adverbs-and-argument-nouns"></a>
@@ -174,9 +150,7 @@ This pattern covers much of what other languages do with little words like *to*,
 ### Utterance markers (`/j/`)
 <a id="utterance-markers-j"></a>
 
-`/j/` starts a **turn** — a speech move toward someone else, or toward yourself when you talk alone. It frames what you are doing: **statement / question / command**, **calling someone**, and **short reaction words** (greetings, *yes* / *no*, and similar). **Going on under the same speech act** uses `/x/`.
-
-**Mnemonic:** `/j/` opens a **turn**; `/x/` **continues** it.
+`/j/` starts a **turn** — a speech move toward someone else, or toward yourself when you talk alone. It frames what you are doing: **statement / question / command**, **calling someone**, and **short reaction words** (greetings, *yes* / *no*, and similar).
 
 #### Opening a turn (left edge)
 <a id="left-edge-order-and-sentence-boundaries"></a>
@@ -195,20 +169,18 @@ The start of a **new turn** is a `/j/` cluster in this order:
 - A later piece under a clause `/x/` continue ([discourse markers](#discourse-markers-x))
 - A [dependent sentence](#dependent-clauses) under **`odo`** with the **same** speech act as the main sentence (a different speech act still needs its own force word)
 
-When force is written, it closes the opener. A new `/j/` turn starts a new utterance. `/x/` continues under the same speech act.
+When force is written, it closes the opener. A new `/j/` turn starts a new utterance.
 
 **Calls and reaction words** sit in this left-edge cluster (or stand alone). A `/j/` after a finished body starts the **next** turn. A *…, yes?* style tag is a **second bare turn** after a period (`zazawan vawul. jael.`).
 
 Bare calls and exclamations with no sentence body use `/j/` without a written force word (a firm *yes* / *no* **-l** still implies statement **`jal`** when a body follows).
-
-How periods, `?` / `!`, and pitch line up with speech-act stretches is Intermediate ([writing and speech rhythm](#orthography-and-prosody-periods)).
 
 #### Clause force (Beginner)
 <a id="clause-force-beginner"></a>
 
 Every utterance has exactly one **clause force** — the speech-act setting (statement, question, command, …). Default statement **`jal`** may be **left out** when recoverable (above). Other settings write a `/j/` force word **last** in the left-edge cluster, before the body.
 
-Forms you need for ordinary dialogue (plain jobs — letter logic is Intermediate):
+Forms you need for ordinary dialogue:
 
 | Form | Job |
 |------|-----|
@@ -216,8 +188,6 @@ Forms you need for ordinary dialogue (plain jobs — letter logic is Intermediat
 | **jol** | question — yes/no and “fill in the blank” ask ([questions.md](questions.md)) |
 | **jel** | command / instruction |
 | **jul** | prohibition — *don’t…* |
-
-Softer twins (**`jam`** / **`jom`** / **`jem`** / **`jum`**) and the shared join-vowel mnemonic are Intermediate ([clause force](#clause-force)) — easiest after Beginner [join vowels](coordination.md#join-type-vowel-series).
 
 #### *Yes* / *no* particles (pointer)
 
@@ -230,14 +200,12 @@ Closed `/j/` words such as **`jael`** (*yes* / *true*), **`juel`** (*no* / *fals
 
 `/x/` means **keep going under the same speech act**: continue a joined stretch that inherits the opener’s force, and **sentence linkers** (*however*, *therefore*, …). Only the first turn (or a default statement body) sets the speech act.
 
-**Mnemonic:** word-initial **x** = discourse role (**eXtend** the talk). Mid-word **x** joins roots inside a compound (`zuzuzuxogeven`) — a different job.
+**Mnemonic:** word-initial **x** = discourse role (**eXtend** the talk).
 
 | Job | Form family |
 |-----|-------------|
 | Glue between sentences (*however*, *therefore*, …) | `/x/` linkers (`xezabel`, `xamalal`, …) |
 | Source / strength (*apparently*, *allegedly*, …) | `/h/` or `/w/` mood |
-
-Common linker forms are Intermediate ([sentence linkers](#sentence-linkers)).
 
 ### Dependent clauses
 <a id="dependent-clauses"></a>
@@ -253,9 +221,9 @@ The dependent is a **full sentence**. It may open with its own `/j/` cluster, or
 **That-clause / content** — often a core object, with **`odo` last** in the main sentence:
 
 ```
-`zazawan dulonun dodol vezabul.`
+`zazawan dulonun vezabul dodol.`
 
-gloss: `z-grace` · `d-courage` · `d-next-clause` · `v-tell`
+gloss: `z-Azawan` · `d-Ulonun` · `v-tell` · `d-next-clause`
 
 *Azawan tells Ulonun that…* (dependent sentence follows immediately)
 ```
@@ -272,10 +240,6 @@ gloss: `z-grace` · `d-courage` · `d-next-clause` · `v-tell`
 | *until* | **`hudemum bodol`** | **`udemu`** | ⏲️ *timer* → *deadline* |
 | *before* | **`hagagam bodol`** | **`agaga`** | 🎒 *backpack* → *preparation* |
 | *after* | **`hohuram bodol`** | **`ohura`** | ⌛ *hourglass-done* → *recency* |
-
-**Mnemonic:** same doorway shape for every adverbial subordinator — pick the relation root, keep **-m**, end the main sentence on **`bodol`**. Discourse *however* / *meanwhile* stay `/x/` linkers ([below](#sentence-linkers)), not these `/h/` poles.
-
-Nesting dependents inside dependents is Intermediate ([nested dependents](#nested-dependents)).
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -426,7 +390,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 ### Clause force
 <a id="clause-force"></a>
 
-Prerequisite: Beginner [join vowel series](coordination.md#join-type-vowel-series) (**a** / **o** / **e** / **u**). Beginner force jobs (omit **`jal`**; write **`jol`** / **`jel`** / **`jul`**): [above](#clause-force-beginner).
+Prerequisite: Beginner [join vowel series](coordination.md#join-type-vowel-series) (**a** / **o** / **e** / **u**).
 
 Every utterance has exactly one **clause force** (written `/j/` or implied **`jal`** / **`jam`**). Shape is **`j` + vowel + ending`**: the vowel picks the speech-act family; **-l** = firm / closed; **-m** = soft / open. Non-default forces are **written**; default statement **`jal`** may be omitted under the Beginner rules.
 
@@ -466,6 +430,8 @@ The package is the same as after-the-noun order: plain `/ɡ/`, or complex `/ɡ/`
 <a id="adverb-topic-and-free-order-ties"></a>
 
 **Topic** (*as for X*, *regarding X*) is complex `/h/` + `/b/` naming the topic noun. Highlight focus by rearranging free word order (and ordinary *very*-type words if needed).
+
+[TODO: confirm that the h roots for this is actually defined]
 
 There is no fixed order among several `/h/` units. Each unit’s job comes from its dictionary role; spoken order is free. If two units share a role and need a ranking, left-to-right breaks the tie.
 

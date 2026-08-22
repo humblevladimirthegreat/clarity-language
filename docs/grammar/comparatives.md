@@ -3,8 +3,6 @@
 
 Scalar comparison: *more … than*, *the …-est*, *as … as*, measured differentials, and judgment benchmarks (*worse than Average* / …).
 
-**Needs:** [coordination.md](coordination.md) Beginner (rank joins **`e` / `ae` / `oe` / `ue`**).
-
 ## Beginner
 <a id="beginner"></a>
 
@@ -18,8 +16,6 @@ Scale adjectives are ordinary `/ɡ/` (lexicon-marked as **gradable / scalar**). 
 | Ranked **`e` / `oe` / `ue`** | **Comparative / superlative** — conjuncts ordered **along** the scale |
 | **`ae`** | **Equative** — conjuncts **equal** on the scale (*as … as*) |
 | Set **`a`** | **Distributive** — each conjunct carries the SHARED property (*both ADJ*) |
-
-**Mnemonic:** the fence is the spine of *than* / *as* — not a dedicated `/w/` *than* particle. Revision **`el`** (*or rather*) is unrelated.
 
 **Trigger:** SHARED ordinary `/ɡ/` that the lexicon treats as a **scale**, on an NP-slot fence. Degree on that scale (*much*, *slightly*) is `/w/` in SHARED on the scale `/ɡ/`.
 
@@ -40,7 +36,7 @@ Ordinary scalar *than* uses **`e`** (exclusivity unmarked — both may be high o
 ```
 `zazawan zulonun zel gonudam.`
 
-gloss: `z-grace` · `z-courage` · `zel` · `g-challenging`
+gloss: `z-Azawan` · `z-Ulonun` · `zel` · `g-challenging`
 
 *Azawan is more challenging than Ulonun.*
 ```
@@ -48,15 +44,15 @@ gloss: `z-grace` · `z-courage` · `zel` · `g-challenging`
 ```
 `zazawan zel gonudam.`
 
-gloss: `z-grace` · `zel` · `g-challenging`
+gloss: `z-Azawan` · `zel` · `g-challenging`
 
 *Azawan is the most challenging (of all).*
 ```
 
 ```
-`zazawan zulonun zel wogenal gonudam.`
+`zazawan zulonun zel gonudam wogenal.`
 
-gloss: `z-grace` · `z-courage` · `zel` · `w-flood` · `g-challenging`
+gloss: `z-Azawan` · `z-Ulonun` · `zel` · `g-challenging` · `w-flood`
 
 *Azawan is much more challenging than Ulonun.*
 ```
@@ -91,8 +87,6 @@ gloss: `z-grace` · `z-courage` · `zaem` · `g-bright`
 
 *Azawan is about as bright as Ulonun.*
 ```
-
-**Trap:** `zel` asserts inequality on the scale; `zael` asserts equality. Set **`a`** + SHARED scale is *both are ADJ* — not necessarily equal ([below](#distributive-both)).
 
 ### Translation practice
 <a id="translation-practice"></a>

@@ -44,12 +44,14 @@ There is no phonemic voiced / unvoiced contrast; voiced is preferred so the voca
 | **l** | /l/ | *lie* |
 | **r** | /ɹ/ | *red* |
 | **x** | /ʒ/ | *vision* (the *si*) |
+[TODO: columns for unvoiced variant. Leave cell blank if unused in SAE]
 
-**Same letters, two jobs:** **m** / **n** / **l** / **r** are ordinary root onsets (**`alu`**, **`uru`**) and also the [reference suffixes](reference-suffix.md) (**-l** / **-m** / **-n** / **-r**) at the **end** of a content word. Digraph **sh** /ʃ/ (*ship*) is **word-final only** (plural after a reference suffix) — not a root onset — [Phonotactics](#phonotactics).
+[TODO: add examples with IPA; use component that allows tts]
 
 ### Phonotactics (word shape)
 <a id="phonotactics"></a>
 
+[TODO: move this section to intermediate, beginners don't need this]
 A content word has these parts, written as **one unbroken token**:
 
 1. Part-of-speech prefix
@@ -57,6 +59,7 @@ A content word has these parts, written as **one unbroken token**:
 3. The root(s) — more than one if compounded
 4. The [reference suffix](reference-suffix.md) (**-l**, **-m**, **-n**, or **-r**)
 5. Optional plural **-sh** after the reference suffix — [plurality.md](plurality.md)
+[TODO: mention numbers]
 
 **Writing:** write **role letter + root + ending** as one word (`zazawan`); native Agelan is **lowercase** only ([capitalization](core.md#capitalization)). Full orthography: [core.md § Orthography](core.md#orthography).
 
@@ -64,7 +67,7 @@ A content word has these parts, written as **one unbroken token**:
 
 **Clear syllables:** a content root almost always starts with a vowel. Ending and beginning consonants are chosen so you never confuse which syllable a consonant belongs to (`vaban` = *va'ban*, not *vab'an*; `zalul` = *z-alu-l* — mid **l** onset in the root, final **-l** the ending) — syllables do not end with a consonant except at the **end of the word**. Spelling therefore has one pronunciation path; lexical stress is not part of the system (musical rhythm may place emphasis).
 
-**Word edges:** all **content** words end with a reference suffix (**-l** / **-m** / **-n** / **-r**), optionally followed by plural **-sh** (/ʃ/). Allowed word-final clusters: **-lsh**, **-msh**, **-nsh**, **-rsh**. Digraph **sh** is only this plural marker (word-final, after a reference suffix) — not an ordinary root consonant. Those endings are the audible stop when song compresses pauses. **Utterance** boundaries (period, `/j/` turn vs `/x/` continue) are [orthography and prosody](core.md#orthography-and-prosody-periods) — discourse pauses, not word-edge phonotactics.
+**Word edges:** all **content** words end with a reference suffix (**-l** / **-m** / **-n** / **-r**), optionally followed by plural **-sh** (/ʃ/). Allowed word-final clusters: **-lsh**, **-msh**, **-nsh**, **-rsh**. Digraph **sh** is only this plural marker (word-final, after a reference suffix) — not an ordinary root consonant. Those endings are the audible stop when song compresses pauses. 
 
 **No clash with endings / numbers / left-bound:** mid-root **l** / **r** are always followed by a vowel inside the root, so they are not mistaken for a final suffix. Ordinary content after a PoS letter begins with a **vowel**, so **`PoS+r…`** stays [number-only](#number-word-exception) and **`gl-`** stays [left-bound `/ɡ/`](#left-bound).
 

@@ -69,7 +69,7 @@ gloss: `z-dog-sh` · `am` · `z-cat`
 
 gloss: `d-tea` · `ol` · `d-coffee`
 
-*Coffee fully replaces tea.* (object slot)
+*Coffee instead of tea.* (object slot)
 ```
 
 ```
@@ -77,7 +77,7 @@ gloss: `d-tea` · `ol` · `d-coffee`
 
 gloss: `z-team` · `ul` · `z-grace`
 
-*The team except only Azawan.*
+*The team except Azawan.*
 ```
 
 ### Discourse shape (starter)

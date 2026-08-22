@@ -217,3 +217,10 @@ Before tagging a section **Beginner**, ask the [three questions](learning-levels
 ## Markdown hygiene
 
 After editing Markdown under `docs/` (or `AGENTS.md` / `TODO.md`), run **`npm run lint:md`**. It checks emphasis balance, slash-joined emphasis, and internal links / anchors. Prefer spaces in slash-joined emphasis (`*a* / *b*`) over `*a*/*b*`. In bold headings or bullets, put forms in backticks only (`**Ranked (`e` / `ae`)**`), not nested bold inside bold.
+
+# Style guidance notes
+- reduce stating negatives "it's X, not Y" "X is done this way. Y is a different form". Decide rules for determining whether we should state contrastive negatives
+- avoid em dash
+-analyze the manual changes from git to detect patterns
+- avoid mentioning something comes in a later stage
+- consolidate final word shape into a single place instead of a bunch of places where it is either incomplete or uses unlearned forms

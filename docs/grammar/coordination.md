@@ -30,7 +30,7 @@ You use joins when English would say *and*, *or*, *not*, *prefer A over B*, *som
 | **ua** | counteradditive | *everything but* |
 | **uo** | counterchoice | *anything but* |
 
-**Rank joins** order items by priority — not boolean *and* / *or*:
+**Rank joins** order items by priority:
 
 | Vowel | Name | English job |
 |-------|------|-------------|
@@ -43,7 +43,7 @@ You use joins when English would say *and*, *or*, *not*, *prefer A over B*, *som
 <a id="join-series-ending-shared"></a>
 <a id="join-type--ending-shared"></a>
 
-Stacked vowels glue in writing (`zaol`, `zual`, `zoel`, …). Spoken order is first vowel, then next, then ending. There are **no** three-vowel stacks and **no** bare vowel without an ending.
+Stacked vowels glue in writing (`zaol`, `zual`, `zoel`, …). Spoken order is first vowel, then next, then ending.
 
 ### Right-close fence (flat lists)
 <a id="phrase-level-coordination"></a>
@@ -84,9 +84,8 @@ gloss: `d-apple` · `v-tempt` · `d-water` · `v-drink` · `vam`
 gloss: `x-…` · `x-…` · `xam`
 
 *A and B.*
+[TODO: give actual example]
 ```
-
-**Left fences are illegal** — you never put the join before the conjuncts (`zam zogodol zagadal`). **Pure infix is illegal** — you never put a join between every pair (`A zam B zal C`).
 
 ### Arity: list, focus, and bare
 
@@ -163,12 +162,10 @@ These are the joins you meet first. Each row is **bare** (0 conjuncts) or **focu
 
 Same pattern under `/d/` `/b/` (`dal`, `dam`, …), `/v/` (`val`, `vam`, `vul`, …), and `/x/` (`xal`, `xam`, `xul`, …). Under `/ɡ/` `/h/` `/w/`, only the [restrictor core](restrictors.md) uses circumstance readings — not entity emptiness.
 
-Do not confuse prefixed **`zem`** / **`zal`** (joins) with reviser **`em`** / **`al`** (slot repair) — [revisers.md](revisers.md).
-
 ### Negation (**`u`**)
 <a id="negation-u"></a>
 
-Plain **u** means the listed conjuncts **fail** — not invert, not *something else*.
+Plain **u** means the listed conjuncts **fail**.
 
 | Arity | Shape | Reading |
 |-------|-------|---------|
@@ -192,7 +189,7 @@ gloss: `z-tea` · `z-coffee` · `zul`
 *none of tea or coffee.*
 ```
 
-**Mnemonic:** **u** = *under* the claim — what does **not** hold. **-r** on **u** (`zur`) is *something else*, not *not* — see below.
+**Mnemonic:** **u** = *under* the claim — what does **not** hold.
 
 ### Unspecified member (**`-r`**)
 <a id="unspecified-member-r-phrase"></a>
@@ -208,7 +205,7 @@ gloss: `z-tea` · `z-coffee` · `zul`
 | **e** | `zer` / `ver` / `xer` | *whatever ranks highest* / *whatever matters most* |
 | **u** | `zur` / `vur` / `xur` | *something else* / *someone else* |
 
-Stacked vowels (**ao** / **ae** / **oe** / **ua** / **uo** / **ue**) take **no** **-r**. **-r** does not stack with **-l** / **-m** / **-n**.
+Stacked vowels (**ao** / **ae** / **oe** / **ua** / **uo** / **ue**) take **no** **-r**.
 
 ```
 `zar.`
@@ -235,8 +232,6 @@ gloss: `z-tea` · `z-coffee` · `zar`
 ```
 
 **Trap:** `A B zar` is a whole-fence join — not a mid-chain extender between `A zam B`.
-
-Under [question](questions.md#interrogative-force) force, these forms are **fill-asks** — [questions.md](questions.md#fill-ask-r).
 
 ### Phrase prefixes (quick map)
 

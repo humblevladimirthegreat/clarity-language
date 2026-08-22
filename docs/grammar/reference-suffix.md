@@ -60,15 +60,15 @@ Write **role letter + root + ending** as **one token** (`zazawan`). Full writing
 
 ### Proper names on nouns (starter)
 
-**-n** marks a **named designation**: you treat the root as a definite, established label — not “a kind of X.” Usual first cases are people and places (`/z/`…**-n**, `/d/`…**-n**). Prefix-less **…n** outside a clause cites a **name** or **the word-as-label** — [citation forms](core.md#citation-forms). Writing stays lowercase; namedness is the ending, not a capital letter ([capitalization](core.md#capitalization)). Usual named people in examples: *Azawan*, *Ulonun*, *Ubuzun*.
-
-Prefer **-n** (and its **-r** resume) over speaker/listener specials when a name exists — [pronouns.md](pronouns.md#special-pronouns).
+**-n** marks a **named designation**: you treat the root as a definite, established label. Usual first cases are people and places (`/z/`…**-n**, `/d/`…**-n**). Prefix-less **…n** outside a clause cites a **name** or **the word-as-label** — [citation forms](core.md#citation-forms). Writing stays lowercase; namedness is the ending, not a capital letter ([capitalization](core.md#capitalization)). Usual named people in examples: *Azawan*, *Ulonun*, *Ubuzun*.
 
 **-n** on other role letters, multipart names, and titled events are Intermediate ([proper name](#proper-name--n)).
 
 ### Plural `-sh` (pointer)
 
 After the ending, **-sh** marks an **associative group** (anchor and associates) — or related jobs on adjectives / vocatives. Short form: `…r` is one referent; `…rsh` is that referent **and associates**. Inclusive *we* is special **`ana`**, not **-sh**. Full rules: [plurality.md](plurality.md).
+
+[TODO: remove plural mention here]
 
 ### Translation practice
 <a id="translation-practice"></a>

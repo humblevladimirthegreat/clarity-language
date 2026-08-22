@@ -1,13 +1,13 @@
 # Pronouns
 
-Once something is on the table, you point back with a **-r** form — Agelan has no separate “the X” article. Special discourse roles (**`umogo`** / **`ehado`** / **`ana`** / **`enu`** / **`odo`**) are separate closed roots, not letter stems from ordinary antecedents.
+Once something is on the table, you point back with a **-r** form — Agelan has no separate “the X” article.
 
 ## Beginner
 <a id="beginner"></a>
 
 ### Resume with **-r**
 
-An anaphoric pronoun can point at **any prior word** (noun, verb, adjective, … — not only subjects). It takes the usual role letter for the slot you need **now** (that letter need not match the antecedent’s original role) and ends in **-r**.
+A pronoun can point at **any prior word** (noun, verb, adjective, … — not only subjects). It takes the usual role letter for the slot you need **now** (that letter need not match the antecedent’s original role) and ends in **-r**.
 
 Two stem lengths:
 
@@ -19,7 +19,7 @@ Two stem lengths:
 There are no English-style 3rd-person pronoun lexemes (*he* / *she* / *it* / *they*) and no impersonal *one*.
 
 ```
-`zazawan vawul. zazawar vahural.`
+`zazawan vawul. zazar vahural.`
 
 gloss: `z-grace` · `v-walk` · `z-←grace` · `v-sit`
 
@@ -27,6 +27,8 @@ gloss: `z-grace` · `v-walk` · `z-←grace` · `v-sit`
 ```
 
 Add **-sh** after **-r** for a **group** referent (anchor **and associates**) — [plurality.md](plurality.md). Example: `…r` = one; `…rsh` = that one and associates.
+
+[TODO: give example]
 
 ### Special pronouns
 <a id="special-pronouns"></a>
@@ -46,6 +48,8 @@ Discourse-role forms (not letter/full-root **-r** from ordinary antecedents). Th
 **Endings.** Person roles default to **-n** (definite discourse roles). Soft **-m** hedges the role framing. **`odo`** defaults to **-l** (exact forward slot); soft **-m** hedges the subordination edge.
 
 **Prefer names.** When a proper name is available, use **-n** and/or its **-r** resume — including for self-address — rather than **`umogo`** / **`ehado`**. See [proper name](reference-suffix.md#proper-name--n). Usual named people in examples: **Azawan**, **Ulonun**, **Ubuzun** (`azawa` / `ulonu` / `ubuzu` + **-n**).
+
+[TODO: add self-address example choosing some name]
 
 ```
 `zumogon vawul.`

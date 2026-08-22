@@ -3,6 +3,8 @@
 
 Count and rank with number words. A whole numeric value is **one word**, even when it contains several digit groups (or none).
 
+[TODO: pronunciation and labels should be introduced in beginner. move numeric form to intermediate]
+
 ## Beginner
 <a id="beginner"></a>
 

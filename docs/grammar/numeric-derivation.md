@@ -1,7 +1,7 @@
 # Numeric derivation
 <a id="numeric-derivation-page"></a>
 
-Derive **new senses from a content root** by compounding a PoS-less number stem after mid-word **`x`**. Free number words stay [numbers.md](numbers.md). This page is **Advanced** and **optional** — not required to finish a first dialogue corpus.
+Derive **new senses from a content root** by compounding a PoS-less number stem after mid-word **`x`**. Free number words stay [numbers.md](numbers.md). This page is **Advanced**, come back when you are ready for that level.
 
 ## Advanced
 <a id="advanced"></a>

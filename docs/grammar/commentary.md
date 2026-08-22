@@ -36,8 +36,6 @@ Use COMMENT when the clause is doing **first-person cognitive commentary**. Cont
 
 **Overlay:** same published root, special `/h/` reading — `huhom` is commentary; `zuhol` is *a thought*.
 
-*Believe* as a world warrant, *as if* scene framing, and emotion labels are Intermediate ([evidentiality](#evidentiality), [NOTIONAL](#notional)).
-
 #### Hold endings (COMMENT)
 <a id="comment-hold"></a>
 <a id="hold-endings"></a>
@@ -50,10 +48,7 @@ On **`uho`**, **-l / -m / -n / -r** mark **how you hold** the commentary — fle
 | **-l** | **`huhol`** | **fused** | commentary taken as the scene (*it is so because I think*) |
 | **-n** | **`huhon`** | **named loop** | titled / habitual rumination frame (*the usual story*) |
 | **-r** | **`huhur`** | **return** | same commentary *and* a cue to step back toward bare contact |
-
-**Mnemonic:** **-m** soft/open; **-l** exact/closed fusion; **-n** named frame; **-r** resume/return. When unsure, prefer **`huhom`**.
-
-COMMENT is a **root choice**, not `xa`/`xu` polarity. It is not evidentiality and not [contact channel](values.md#value-contact) on met values. Perception-as-event (*she hears the door*) stays ordinary lexicon `/v/` if needed. Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)).
+[TODO: replace -n with usual proper]
 
 ### Translation practice
 <a id="translation-practice"></a>

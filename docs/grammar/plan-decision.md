@@ -80,10 +80,6 @@ On **`owaro`**, **-l / -m / -n / -r** mark **how drawn the intention map is** �
 
 **Mnemonic:** **-m** open sketch; **-l** locked itinerary; **-n** named map; **-r** forked / other-path. When unsure, prefer **`howarom`**. Omit **PLAN** when you are not framing intention (or use soft **-m** rather than a separate “none” grain).
 
-**Not DECISION:** map resolution ≠ revisability. Stack when both matter (`howarol … hehegel`). **Not ability:** *can't plan yet* stays host + **`xe` / `xo` / `xu`**. Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)).
-
-Plan vs predict is a **root choice**, not ability stance on a host.
-
 ### Decision (revisability)
 <a id="decision"></a>
 <a id="decision-mood"></a>

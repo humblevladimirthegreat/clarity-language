@@ -3,6 +3,10 @@
 
 Closed mood roots for emotion compose, mechanism **CAUSE**, numbered alternatives, universality warrant, and the overlay inventory.
 
+## Beginner
+
+Nothing on this page is needed for beginners. Come back when you are ready for intermediate.
+
 ## Intermediate
 <a id="intermediate"></a>
 

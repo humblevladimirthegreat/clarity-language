@@ -5,6 +5,8 @@ Package wording (cite / aside / mention / opaque) with a PoS, TYPE, EDGE, and en
 ## Beginner
 <a id="beginner"></a>
 
+[TODO: add introduction]
+
 ### Writing vs speech
 <a id="writing-vs-speech"></a>
 
@@ -14,6 +16,7 @@ Package wording (cite / aside / mention / opaque) with a PoS, TYPE, EDGE, and en
 | **Speech** | full **open** `{PoS}{TYPE}x{EDGE}{ENDING}`; full **close** when a multi-token open needs an explicit close |
 
 Same split as number shorthand (`g+3` written, full CV spoken). Prefer brackets in ordinary text when a bracket form exists.
+[TODO: remove this section; only mention speech in intermediate]
 
 ### Writing fences
 <a id="writing"></a>
@@ -23,7 +26,7 @@ Same split as number shorthand (`g+3` written, full CV spoken). Prefer brackets 
 | `[` … `]` | **cite** — attributed speech / cited wording (including title strings and proverbs cited as wording) |
 | `{` … `}` | **mention** — the word or form itself (*the word X*); with **-n**, *the saying / proverb / title X* as a named unit |
 | `(` … `)` | **aside** — parenthetical digression; still asserted |
-| `<` … `>` | **opaque** — foreign, code, raw orthography; **do not** parse interior as Agelan |
+| `<` … `>` | **opaque** — foreign, code, raw orthography |
 
 **PoS:** write the PoS letter immediately before any **`@`** / **`~`** marks and the opening bracket (`d[…]`, `z{…}`, `h(…)`, `d<…>`).
 
@@ -40,7 +43,7 @@ Anaphor (**-r**): interior **`=`** (`d[=]`, `d{=}`, `d(=)`, `d<=>`).
 
 gloss: `z-he` · `d-[hi]` · `v-said`
 
-*He said “hi.”* (atomic object cite)
+*He said “hi.”*
 ```
 
 ```
@@ -61,8 +64,6 @@ Use a span when:
 - talking about the word or form itself, or *the saying / title X* as a named unit (**mention**; prefer **`@`** / **-n** for the named-unit reading)
 - foreign, code, or other surface the parser must **not** read as Agelan (**opaque**)
 - referring back to a prior span (**anaphor** **-r** / `…[=]`)
-
-Prefer **atomic** one-token forms for a single cited / mentioned / opaque token (`d[hi]`, `d<sushi>`). Prefer a nativized ordinary word when the surface wording is not the point.
 
 | Reading | Use |
 |---------|-----|
@@ -86,14 +87,13 @@ The open’s PoS is the **outer-clause slot** of the **entire** span — not the
 | `/j/` | Vocative / expressive edge with a spanned call | `j@[…]` |
 | `/x/` | Discourse-only citation (epigraph, freestanding span) | `x[…]` |
 
-TYPE and EDGE are independent of PoS (`h` + **a** is still **cite** as manner). Prefer `/h/` for asides — a **PoS preference**, not a TYPE override.
-
 ```
 `jul z<you>n v[oops] d<me>l.`
 
 gloss: `j-command` · `z-you` · `v-[oops]` · `d-me`
 
 *Don’t “oops” me.*
+[TODO: replace with a native agelan example]
 ```
 
 ### Mentions, opaque, and loan words
@@ -220,6 +220,8 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 :::
 ## Intermediate
 <a id="intermediate"></a>
+
+[TODO: this is where you mention that span fences are pronouncable]
 
 ### Spoken word shape
 <a id="shape"></a>

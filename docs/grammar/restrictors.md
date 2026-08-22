@@ -3,7 +3,7 @@
 <a id="circumstance-h-w"></a>
 <a id="restrictors"></a>
 
-Join-series spellings under `/h/` or `/w/` that limit **when** the host applies — *only when…*, *never*, *always*, *sometime* — not sibling *and* of manner or degree.
+Join-series spellings under `/h/` or `/w/` that limit **when** the host applies — *only when…*, *never*, *always*, *sometime*.
 
 ## Beginner
 <a id="beginner"></a>
@@ -17,15 +17,11 @@ Under **`/h/`** and **`/w/`**, these forms mark **applicability circumstances**:
 | `/h/` | the **clause** (verb-level claim) — or a VP chain when the restrictor sits before the VP stretch / in SHARED after a `/v/` join | yes (same free position as ordinary `/h/`) |
 | `/w/` | the **preceding `/ɡ/`** (the property) | no (stays on that adjective) |
 
-**Mnemonic:** bare **`hal`** (*never*) ↔ **`hual`** (*always*); **`har`** (*sometime*) is the positive twin of empty **`hal`**.
-
 | Pattern | Reading |
 |---------|---------|
 | `hadal hazebo` | *quickly and quietly* — co-applying adverbs; **no** join |
 | `harunal hal` | *only when raining* — closed restrictor |
 | `hal` (bare) | *never* |
-
-**Trap:** `hadal hazebo ham` reads as restrictor use (*in the cases “quickly” and “quietly”*), not co-manner *and*.
 
 ```
 `zumogon vawul harunal hal.`
@@ -43,14 +39,12 @@ gloss: `z-speaker` · `v-go` · `hal`
 *I never go.*
 ```
 
-### The forms (closed starter set)
-
-These are the restrictors you use first — a **small closed list**, not a join table with missing cells. Other join spellings under `/h/` / `/w/` have no circumstance reading until Intermediate / Advanced.
+### The forms (beginner)
 
 | Form | Bare reading |
 |------|----------------|
-| **`hal` / `ham`** | ***never*** / *never that I can think of* |
-| **`hual` / `huam`** | ***always*** / *always from me* |
+| **`hal` / `ham`** | ***never*** / *never as far as I know* |
+| **`hual` / `huam`** | ***always*** / *always as far as I know* |
 | **`har`** | *sometime* |
 | **`hor`** | *anytime* |
 | **`hur`** | *sometime else* |
@@ -64,8 +58,6 @@ gloss: `g-happy` · `w-al`
 
 *Never happy* (for that property).
 ```
-
-**`hual`** is also the habitual frame for characterizing generics — [universals](coordination.md#universals-domains-generics).
 
 ### With conjuncts (starter)
 

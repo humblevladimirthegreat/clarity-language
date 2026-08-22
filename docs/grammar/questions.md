@@ -9,14 +9,13 @@ How to **ask** in Agelan: question force (**jol** / soft **jom**), yes/no vs fil
 <a id="interrogative-force"></a>
 <a id="polar-question"></a>
 
-**jol** (and soft **jom**) cover **all** asking — yes/no **and** content (*who* / *what* / *when?* / *what happened?*). There is **no** separate content-question speech act. **jom** is only a softer ask (wonder / gentle / offer-like); it does not change yes/no vs fill-ask.
+**jol** (and soft **jom**) cover **all** asking — yes/no **and** content (*who* / *what* / *when?* / *what happened?*).
 
 | Body shape | Ask type |
 |------------|----------|
 | **No** join **-r** | **Yes/no** |
 | One or more join **-r** | **Fill-ask** (name the unspecified member(s)) |
 
-**Mnemonic:** **jol** = **j**ump to ask; join **-r** in the body = “fill this blank.”
 
 There is **no** separate interrogative pronoun. Unbound *who* / *what* / *where* / *when?* / *what happened?* use [unspecified-member **-r**](coordination.md#unspecified-member-r-phrase) in the queried slot.
 
@@ -28,6 +27,7 @@ Under question, join **-r** always means fill-ask — not “did something happe
 gloss: `j-ask` · `z-speaker` · `v-go`
 
 *Do I go?* / *Am I going?* (yes/no — no join **-r**)
+[TODO: replace with third person name]
 ```
 
 ```
@@ -83,6 +83,7 @@ Closed **`/j/`** particles — **reaction words**, not clause force. Shape is **
 | **jael** / soft **jaem** | confirmational *yes* / *true* | **ae** = match |
 | **juel** / soft **juem** | default *no* / *false* | **ue** = flip |
 | **jaol** / soft **jaom** | *sure* / *I'll take that* (offer uptake) | **ao** = option |
+[TODO: clarify mnemonic - the stacks are naturally a combination of the components]
 
 ```
 `jael.`
@@ -97,8 +98,6 @@ gloss: `z-speaker` · `v-go` · `j-yes`
 
 *I go. Yes.* (confirm tag = **second bare turn** after `.`)
 ```
-
-**Trap:** do not sprinkle **`jael`** as empty English *yeah*. Keep **`ae`** (match / *true*) distinct from **`ao`** (uptake / *ok*). **`jul`** is **prohibition** force (*don't…*), not polar *no*.
 
 These three jobs stay distinct:
 
