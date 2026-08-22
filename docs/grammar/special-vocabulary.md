@@ -17,10 +17,6 @@ Some published roots carry a **closed overlay reading** for a fixed PoS — the 
 
 **Shape:** sense-form + [reference ending](reference-suffix.md). Mood overlays usually take **-m** (figurative published sense / soft default); each overlay page notes when another ending applies. Join-act / join-relation stems are the vowel + **-n** only (`an` / `on` / …); written words are **`pos` + sense-form** (`van` / `gan` / `han`) — [join extras](join-extras.md).
 
-**Mnemonic:** same root, special PoS reading — the ending marks which overlay you mean.
-
-Ordinary content PoS on the same root stays available and is **not** the overlay. Prefer published roots when the English sense matches.
-
 ### Emotion compose
 <a id="emotion-compose"></a>
 
@@ -74,8 +70,6 @@ Parallel INTERNAL / CIRCUM cues: *flood bottled* / *flow held* / *still in the v
 
 **Raw feeling:** contacting a sensation without judgment/explanation may leave it unlabeled. Full compose is for when an emotion word would have done evaluative work. Skip [COMMENT](commentary.md#comment) on affect clauses.
 
-ACT and LOCUS are **root choices**, not `xa`/`xu` polarity. They are not a second need inventory, not contact channel, not preference standing, and not ordinary scalar degree (*very* / *slightly*).
-
 ### Cause (mechanism framing)
 <a id="cause"></a>
 <a id="cause-mood"></a>
@@ -110,7 +104,7 @@ Use **CAUSE** when the clause is doing **mechanism highlight**. Everyday *leads 
 | NATURAL vs CAUSE | **`afafa`** = exceptionlessness warrant; **`erage`** = gears / how |
 | Evidential vs CAUSE | channel of knowing vs mechanism highlight — stack when both matter |
 
-**CAUSE** is a **root choice**, not `xa`/`xu` and not a mid-word **`x`** compound. Ending stays **-m**; other endings are not defined for this overlay. Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)).
+TODO: isn't causation handled by causation.md? See if this section is needed or should move into causation.md
 
 ### Numbered alternatives (problem / solution / goal)
 <a id="numbered-alternatives"></a>
@@ -144,25 +138,7 @@ Prefer at least **`g#1`**; often name a second candidate. Soft **-m** on the num
 | *the problem* / *the solution* / *the goal* (ideation) | number candidates |
 | discourse *point N:* | free **`x#N`** — [discourse marker](numbers.md#number-as-discourse-marker-by-marker); not a problem NP |
 
-**Not this** (real traps):
-
-| Form | Job | Why not for ideation numbering |
-|------|-----|--------------------------------|
-| **`ROOTx#N`** (`zubezuxrewol`) | ordinal **kind-order** (*premiere* / *secondary*) — [ordinal digit morphs](numeric-derivation.md#ordinal-digit-morphs) | not “token #N in this brainstorm” |
-| **`ROOTx_N`** (`zubuzuxrowol`) | catalog / ID — [label-code](numeric-derivation.md#label-code-sense) | specimen code, not candidate rank |
-| **`owaro`** | [PLAN](plan-decision.md#plan-predict) mood | intention framing, not goal-as-noun (`ogalo`) |
-| **`onuzu`** | *blockage* | obstacle in the way, not problem-as-to-solve |
-| **`ululu`** | *remedy*; also [UNCOUNTERED](#universality) | medical fix / warrant mood, not solution proposal |
-| **`obawo` / `ubelo`** | *aim* / *precision* | how you direct, not the goal itself |
-| **`egeha` / `edale`** | *finish* / *achievement* | outcome markers, not the aimed-at objective |
-
 Numbering = **multiple candidates**. Reframing the **same** situation = different wording of one frame — not a second digit:
-
-| Job | Prefer |
-|-----|--------|
-| Exact framing | ordinary **-l** (or exact [cite](spans.md)) |
-| Restatement / rephrase | metaphorical **-m**, discourse reviser **`el` / `em`** (*in other words* — [revisers](revisers.md#discourse-revisers)), or paraphrase span **`…~[…]`** |
-| Origin / telos of a **kind** | **`ROOTx#e-` / `ROOTx#e`** — [numeric derivation](numeric-derivation.md#numeric-derivation); not “first wording vs rewrite” |
 
 Digits are optional when these roots name a topic outside ideation (*the problem of free will*). Numbering nudges against treating the first frame as unique when generating options.
 

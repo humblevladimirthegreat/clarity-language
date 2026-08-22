@@ -197,9 +197,11 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 | Pattern | Example | Reading |
 |---------|---------|---------|
-| Soft / hedged class | `zazawan gedagel` + open packaging or `/w/` hedge | *Azawan is a teacher (among readings)* / *allegedly…* |
+| Soft / hedged class | `zazawan gedagel` + open packaging or `/w/` hedge | *Azawan is a teacher (among other things)* / *allegedly…* |
 | Characterizing / habitual | `zazawan gedagel hual` | *Azawan is the teaching type* — [**hual**](restrictors.md) |
 | Negation | `zazawan gul gedagel` | *Azawan is not a teacher* — [negation **u**](coordination.md#negation-u) |
+
+TODO: The first row is unclear, where is the w hedge?
 
 Values still stack on the classifying `/ɡ/` (`gedagel w-…xa…`) when the point is gratitude, judgment, or other need framing of that role — [values.md](values.md).
 

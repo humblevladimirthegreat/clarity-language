@@ -240,8 +240,6 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 Example: **`daxal`** = `d` + `a` + `x` + `a` + `l` → open exact multi-token cite as direct object (needs close).
 
-**Parser cue:** after PoS, material before the first `x` is exactly one TYPE vowel, and after `x` exactly one EDGE vowel + ending. Longer material before `x` is a different compound family.
-
 ### TYPE (vowels)
 <a id="type"></a>
 <a id="vowels"></a>
@@ -262,7 +260,7 @@ Scare / ironic *“so-called”* distance is not a separate TYPE; use ordinary l
 ### EDGE (extent)
 <a id="edge"></a>
 
-The vowel **after** `x` is **EDGE** — how far the open runs. It is **not** a second TYPE.
+The vowel **after** `x` is **EDGE** — how far the open runs.
 
 | EDGE | Job | Needs close? | Typical writing |
 |------|-----|--------------|-----------------|
@@ -270,6 +268,8 @@ The vowel **after** `x` is **EDGE** — how far the open runs. It is **not** a s
 | **e** | **Clause-scoped** — auto-pop before the next clause-force `/j/` or clause-level `/x/` join (**complete**) | no (auto) | `d[…` run to clause end |
 | **o** | **Atomic** — exactly **one** following token | no | `d[hi]`, `d<sushi>` |
 | **u** | **Empty / redacted** — no interior; also **anaphor** **-r** | no | `d[]`, `d[=]` |
+
+TODO: replace words with actual clarity not foreign hi/sushi
 
 **Anaphor `-r`** always uses EDGE **`u`** in the spoken template (`daxur`). Other EDGE + **-r** combinations are undefined.
 
@@ -285,11 +285,9 @@ EDGE **`a`** / **`e`** / **`o`** take **-l** / **-m** / **-n**. EDGE **`u`** tak
 | **-n** | **proper** — titled / conventional designation of the **whole span** | **`@`** after PoS (`d@[…]`) |
 | **-r** | **anaphor** — pronoun for the **most recent span of this TYPE**; PoS = role **now** | `d[=]`, `z{=}`, … |
 
-**-n** is not one-token scope (that is EDGE **o**). A proper span may be multi, clause-scoped, or atomic. Hedged proper (`@~`) is written **`d@[…]`** only (spoken as the **proper** open with uncertain tonality). **`@`** / **`~`** do not combine with anaphor **-r**.
+ Hedged proper (`@~`) is written **`d@[…]`** only (spoken as the **proper** open with uncertain tonality). **`@`** / **`~`** do not combine with anaphor **-r**.
 
-**-r** is ordinary [anaphora](pronouns.md), not “resume citing.” `daxur` = *that (cite)* as object — matching the most recent **cite** (TYPE **a**). The pronoun’s PoS need not match the antecedent open’s PoS (`zaxur` = that cite as subject). No interior; no close (EDGE **`u`**).
-
-Named entities *inside* a cite / mention / aside still take ordinary PoS + **-n** (`z<Sam>n`). Opaque interiors are not parsed as Agelan words.
+**-r** is ordinary [anaphora](pronouns.md). `daxur` = *that (cite)* as object — matching the most recent **cite** (TYPE **a**). The pronoun’s PoS need not match the antecedent open’s PoS (`zaxur` = that cite as subject). No interior; no close (EDGE **`u`**).
 
 ### Writing ↔ speech map (core)
 

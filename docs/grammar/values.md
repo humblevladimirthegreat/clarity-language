@@ -319,7 +319,7 @@ Same changeability table as unmet **`xu`** is reused on [DECISION](plan-decision
 | **`xo`** ought | [prescription force](#value-force) |
 | **`xu`** unmet | [changeability](#value-changeability) |
 
-Same letters, different jobs per stance.
+TODO: mnemonic column to remember which letter means what.
 
 ### Attachment sites
 

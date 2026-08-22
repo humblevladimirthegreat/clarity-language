@@ -266,7 +266,7 @@ The **`/b/`** argument is the landmark, not the viewpoint. Put the facing being 
 |--------|---------|
 | **-l** | indefinite / kind side-region or unmarked path |
 | **-m** | soft / hedged frame |
-| **-n** | titled / conventional side label (rare) |
+| **-n** | proper name |
 | **-r** | resume the most recent matching **`DIR x …`** compound (same DIR stem), or the DIR half when that is the latest match — ordinary [pronoun](pronouns.md) rules |
 
 **Key contrasts:**
@@ -283,6 +283,8 @@ The **`/b/`** argument is the landmark, not the viewpoint. Put the facing being 
 | Ability `veguxul` | stance vowel right of **`x`**, not a person root |
 
 Forward / back (`ovaro` / `agaja`) may reuse the same **`DIR x ANCHOR`** pattern when facing matters; they are not under the bare-lateral ban.
+
+TODO: think of ways to remove temptation to use bare spatial. May require rethinking whole feature
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>

@@ -217,7 +217,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 ### Ending grids
 
-**-l** / **-m** mark **closed** vs **open** completeness of the right-hand side (in-clause) or of this discourse move. **-n** marks a **named / conventional** frame — same mnemonic as phrase-level join **-n**, not clause soft **-n**.
+**-l** / **-m** mark **closed** vs **open** completeness of the right-hand side (in-clause) or of this discourse move. **-n** marks a **named / conventional** frame.
 
 #### In-clause
 
@@ -274,7 +274,7 @@ gloss: `g-happy` · `el` · `g-calm`
 *Content* as the precise reading (rather than *happy*).
 ```
 
-**Binding with joins:** a revision chain starting at A consumes following same-slot sides paired by **REV**, tighter than list absorb — so `zam zogodol ol zagadal zuburul` = *(dog instead of cat) and bird*.
+**Binding with joins:** a revision chain starting at A consumes following same-slot sides paired by **REV**, tighter than list absorb — so `zogodol ol zagadal zuburul zam` = *(dog instead of cat) and bird*.
 
 ### Discourse placements
 <a id="discourse-on-x-continue"></a>

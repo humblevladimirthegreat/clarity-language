@@ -202,8 +202,6 @@ Named individuals, places, one-off objects, titled works: *Azawan*, *Paris*, *th
 
 **Trap:** adjacent bare same-role words (`zozohun zalenan`) look like two people in a [join](coordination.md) (*Ozohun and Alenan*). One **`x`-compound** keeps **one** resume target and one slot filler.
 
-Phonotactics for **`x`**: [phonology.md](phonology.md#phonotactics).
-
 #### Verbs (`/v/`)
 
 A **named action, rite, or event** — not a generic instance. English parallels: *perform* **[Hamlet]**, *run* **[the Boston Marathon]**, *observe* **[Ramadan]**. The verb root names the kind of doing; **-n** says you mean **that** titled occurrence.
@@ -224,7 +222,7 @@ A **named circumstance, channel, or standard** framing the clause. Aligns with [
 
 | Subclass | **-n**? |
 |----------|---------|
-| **Vocatives** | Natural home — address by name (`jumogon`, `jazawan`). Kind-based address (*everyone*) stays **-l**; titled group (*Team Alpha*) takes **-n**. |
+| **Vocatives** | address by name (`jumogon`, `jazawan`). Kind-based address (*everyone*) stays **-l**; titled group (*Team Alpha*) takes **-n**. |
 | **Interjections** | Mostly **-l** / **-m**. Use **-n** for a named formula (**[Amen]**, branded catchphrases). Closed [yes/no polarity](questions.md#yes-no-polarity) particles use **-l** / **-m** only. |
 | **Clause force** | Closed **`jal` / `jol` / …** set — no **-n** / **-r** ([clause force](core.md#clause-force)). |
 

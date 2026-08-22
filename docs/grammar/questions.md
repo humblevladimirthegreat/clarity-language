@@ -219,9 +219,9 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 ## Intermediate
 <a id="intermediate"></a>
 
-### Polar stance — fuller inventory
+TODO: remind the vowel series
 
-**Letter jobs** (not emotion valence):
+### Polar stance — fuller inventory
 
 | Stack | Job |
 |-------|-----|
@@ -229,7 +229,9 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 | **`ao`** (`jaol` / `jaom`) | option uptake / *sure* |
 | **`ue`** (`juel` / `juem`) | flip / mismatch / *false* |
 | **`uo`** (`juol` / `juom`) | reject-this option (*not that*) |
-| **`ua`** (`jual` / `juam`) | reject whole frame (rare) |
+| **`ua`** (`jual` / `juam`) | reject whole frame (*Hell No!*) |
+
+TODO: have separate rows for soft version. Have mnemonic column for how vowel series applies here
 
 | Ask flavor | Prefer |
 |------------|--------|

@@ -238,9 +238,9 @@ Clause-force `/j/` is not resumed with `-r` ([utterance markers](core.md#utteran
 | *going back to subject X* (thread resume) | Any antecedent → `/x/` …`-r` |
 | *that* (prior cite / mention / aside) | [Span anaphor](spans.md#endings) → `daxur` / … |
 
-**Span anaphors** are closed [span-fence](spans.md) forms — they resolve to the **most recent span of that TYPE**, not letter/full-root content pronouns. Ordinary content **-r** still resumes words *inside* a non-opaque span.
+**Span anaphors** are closed [span-fence](spans.md) forms. They get translated as it or that. "He said *that*?!" "that (title)" "that (proverb)"
 
-Content questions (*who* / *what* / …) use [unspecified-member **-r** under question](questions.md#fill-ask-r) (`zar` / `var` / `xar` / …), not a special pronoun.
+Content questions (*who* / *what* / …) use [unspecified-member **-r** under question](questions.md#fill-ask-r) (`zar` / `var` / `xar` / …).
 
 ### Cross-role recast (sketch)
 
@@ -280,6 +280,8 @@ Same referent, new role — English needs a longer paraphrase. Full PoS×PoS tab
 | `… hudemum bodol …` | *… until [dependent]* |
 | `… hagagam bodol …` | *… before [dependent]* |
 | `… hohuram bodol …` | *… after [dependent]* |
+
+[TODO: I'm pretty sure odo is covered in core.md. If so, remove the above section and table]
 
 Prefer **`ana`** over a speaker+listener join when the point is **co-participant role**; prefer name joins when membership identity is the point; prefer name…**-sh** for associative cohorts.
 

@@ -164,7 +164,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 ## Intermediate
 <a id="intermediate"></a>
 
-Word shape, other prefixes, overlays, writing marks, percent, ranges, and measure phrases. **Optional** — not required to finish a first dialogue corpus.
+Word shape, other prefixes, overlays, writing marks, percent, ranges, and measure phrases.
 
 ### Word shape
 
@@ -178,8 +178,6 @@ Word shape, other prefixes, overlays, writing marks, percent, ranges, and measur
 4. **Ending** — `-l` / `-m` / `-n` / `-r` with [number-specific meanings](#number-endings). Number words **do not** take plural **-sh** — group reference stays on ordinary nouns.
 
 **Writing** for free number words uses a [preferred shorthand](#writing-preferred-shorthand) for the marker and body (`g+3`, not *grarel*; digitless `g+`, not *gral*; end-relative `g#-2`, not *greudul*); speech is always the full CV form.
-
-**Lexicon rule:** Any stem that matches this grammar is a number, never an ordinary root. Dictionary generation must reject colliding roots.
 
 ### Parts of speech on numbers
 <a id="parts-of-speech-on-numbers"></a>
@@ -201,7 +199,7 @@ Digit-strings (`ro`…) usually take the argument role the clause needs (often `
 ### Marker vowel (referential identity)
 <a id="marker-vowel-referential-identity"></a>
 
-**V** encodes the number’s **referential identity** — scalar vs ordinal vs digit-string. For **scalars**, **V** also carries the **sign of the whole number** (`a` positive, `u` negative). Forward ordinal **`e`** aligns with [rank join **e**](coordination.md#ranked-conjunction-e) (*rank*); end-relative ordinal **`eu`** is a **separate marker** (speech digraph), not join **`ue`** and not scalar **`u`**.
+**V** encodes the number’s **referential identity** — scalar vs ordinal vs digit-string. For **scalars**, **V** also carries the **sign of the whole number** (`a` positive, `u` negative). Forward ordinal **`e`** aligns with [rank join **e**](coordination.md#ranked-conjunction-e) (*rank*); end-relative ordinal **`eu`** is a **separate marker**.
 
 | V | Writing | Referent | Examples |
 |---|---------|----------|----------|
@@ -219,15 +217,9 @@ Do not combine conflicting identity types on one word (e.g. do not use `re` and 
 | Identity | How sign works |
 |----------|----------------|
 | **Scalar** (`a` / `u`, written `+` / `-`) | Sign **is** **V**. Multi-group scalars share one sign for the whole word (e.g. −1 000 265 004 is one **`ru`** word). |
-| **Forward ordinal** (`e`, written `#`) | **No scalar-style sign extender.** Direction *from the start* is the marker itself. End-relative place uses the **separate** marker **`#-`** / **`eu`**, not `#` plus a minus. |
-| **End-relative ordinal** (`eu`, written `#-`) | Direction *from the end* **is** the marker. Digits are the count-back index (`#-1` = last, end-framed). |
+| **Forward ordinal** (`e`, written `#`) | Direction *from the start* |
+| **End-relative ordinal** (`eu`, written `#-`) | Direction *from the end*. Digits are the count-back index (`#-1` = last, end-framed). |
 | **Digit-string** (`o`, written `_`) | **Unsigned only.** Do **not** write `_-…`. |
-
-Do **not** insert speech **`ru`** after **`re`** / **`reu`** / **`ro`**. Do **not** write join-shaped **`ue`** as a number marker — end-relative speech is **`eu`** (`reu…`). If a negative-looking **label** must be described (a code that includes a minus), use ordinary lexicon plus an unsigned digit-string — not a numeral sign extender.
-
-There is no separate “mathematical object” marker. To talk about a number as an entity, use a scalar (**`ra`** / **`ru`**) in a referential slot (often with ordinary wording such as the noun *number*), not a distinct numeral class.
-
-`/v/`, `/h/`, `/j/`, and `/x/` still choose among the same markers; each overlay’s role-specific reading is Intermediate ([number overlays](#number-overlays)).
 
 ### Number endings
 <a id="number-endings"></a>
@@ -243,14 +235,12 @@ Ordinary [reference suffix](reference-suffix.md) senses do **not** apply inside 
 
 **-r** may be **digitless**: marker + **-r** alone resumes the prior value of that identity without restating digits (`g=+` = *that (scalar) amount again*; `d=_` = *that code again*; `g=#` = *that rank again*). Digits + **-r** still fine when you want to name which prior item (`x=#2` = *as in (2) above*). Marker must match the resumed identity (do not resume a scalar with `g=#`). **`=`** does **not** combine with **`~`** / **`@`**.
 
-On [digitless](#zero-digit-groups) words, **-l** / **-m** / **-n** keep the same discourse jobs relative to the unspecified magnitude (*exact plural count* / *about several* / *conventional “plural” or unlabeled-rank style*, etc.).
-
 ### Zero digit groups
 <a id="zero-digit-groups"></a>
 <a id="digitless-numbers"></a>
 <a id="bare-marker"></a>
 
-A number word may omit every digit group: **PoS + marker + ending** only. The marker still fixes referential identity. With **-l** / **-m** / **-n**, the magnitude (or label/rank payload) is **unspecified** as in the table below. With **-r**, the word is [digitless anaphora](#number-endings) only — resume a prior value of that identity; it does **not** introduce a new unspecified magnitude.
+A number word may omit every digit group: **PoS + marker + ending** only. The marker still fixes referential identity. With **-l** / **-m** / **-n**, the magnitude (or label/rank payload) is **unspecified** as in the table below. With **-r**, the word is [digitless anaphora](#number-endings) only — resume a prior value of that identity.
 
 | Marker | Writing | Digitless sense | Partition / notes |
 |--------|---------|-----------------|-------------------|
@@ -271,12 +261,10 @@ A number word may omit every digit group: **PoS + marker + ending** only. The ma
 | `/ɡ/` `/z/` `/d/` `/b/` | `g+` *plural / more than one* (on a noun); `z-` *some negative amount* (subj); `b#` *of some rank*; `b#-` *of some end-relative rank*; `d_` *some code* (obj) |
 | `/v/` | Unspecified amount under the verb sense: **`v+`** *increase*; **`v-`** *decrease*; **`v#`** *take / assign some rank*; **`v#-`** *take some end-relative place*; **`v_`** *enter / dial some code*. Soft: **`v~+`** *increase a bit*; **`v~-`** *decrease a bit* |
 | `/h/` | Unspecified amount under the adverb sense: **`h+`** *multiple times*; **`h-`** *÷ / into some number of parts*; **`h#`** *for some nth time*; **`h#-`** *for some nth-from-last time*; **`h_`** *at some clock or date* (still bare-`hro` **time** only — not channel codes). Soft: **`h~+`** *a few times*; **`h~-`** *÷ a bit* / *into a few parts* |
-| `/j/` | **`j+`** *More!*; **`j-`** *Short!* / *down by some amount!*; **`j#`** *Nth!* (place cheer, rank unnamed); **`j#-`** *Nth-from-end!*; **`j_`** *…!* (unspecified score / code call). Soft: **`j~+`** *a bit more!* |
+| `/j/` | **`j+`** *More!*; **`j-`** *Short!* / *down by some amount!*; **`j#`** *Nth!* (place cheer, rank unnamed); **`j#-`** *Nth-from-last!*; **`j_`** *…!* (unspecified score / code call). Soft: **`j~+`** *a bit more!* |
 | `/x/` | `x#` *some point:* (neutral, number unnamed); `x#-` *some end-relative point:*; `x+` / `x-` corroborating / independent item of unnamed index; `x_` *regarding some (unnamed) label* |
 
 **`h_` vs `har`:** digitless time `h_` is still a **number word** (unspecified clock/date reading under bare `hro`). Circumstance **`har`** (*sometime*) is the [restrictor](restrictors.md), not a numeral — do not swap them.
-
-**Illegal with zero groups:** percent / percentage-point closers (**`jo`** / **`ju`**) still need a mantissa group — bare `…+%` is not a shortcut for “some percent.” Exponent-only groups with **digits** (`e9`) are **not** zero-group forms; they are ordinary one-group bare OoM. Exponent markers **without** digits are [digitless exponents](#digitless-exponents) (special values) — also not zero-group forms.
 
 ### Digits
 
@@ -295,8 +283,7 @@ Remapped CV syllables (current vowels; preferred voiced consonants):
 | 9 | na |
 | 0 | zo |
 
-
-How each syllable sounds: [phonology.md](phonology.md).
+TODO: move digit pronunciation to beginner
 
 ### Exponents
 
@@ -318,8 +305,6 @@ Within each digit group, speech markers build ordinary magnitudes (and later spe
 - Default scale uses **engineering notation**: exponents are usually multiples of **3** (e.g. `27e6`, not `2.7e7`).
 - **Decimal point:** say **`je`** after the digit(s) left of the point; digits after **`je`** are the fractional part.
 - **No metric prefixes** in the lexicon — base unit + exponent / exact count on the amount ([measure phrases](#no-metric-prefixes)).
-
-Digitless specials (+∞, last place, hyperbole, zero×exp, …) and ordinal **generation** offsets: [Advanced](#advanced).
 
 ### Writing (preferred shorthand)
 <a id="writing-preferred-shorthand"></a>
@@ -368,8 +353,6 @@ Place the identity symbol **immediately after** any ending mark (or after PoS wh
 | `je` | **`.`** |
 | `jo` | **`%`** |
 | `ju` | **`%*`** |
-
-Do **not** write out **`ja`**, **`je`**, **`jo`**, or **`ju`** in shorthand — use `e` / `.` / `%` / `%*` instead.
 
 **Commas** separate digit groups for readability (preferred for multi-group values). Commas are orthographic only; they are not spoken and do not change the word. Digitless forms have no commas.
 
@@ -582,6 +565,8 @@ In **formal** writing and careful speech, treat **omitted exp as ones-place** (`
 
 **`Ne0`** is the normal assert form (any mantissa **`N≠0`**). Formal prose that never uses ambient still rarely needs **`e0`**; omit remains fine when ones-place is already clear.
 
+TODO: move ambient scale to advanced
+
 
 ### From the end — end-relative ordinal marker **`#-`** / **`eu`**
 <a id="from-the-end"></a>
@@ -768,6 +753,7 @@ Both writings name the **same word**. Choose the surface by **job**: quantity/ma
 
 **House rules:** (1) free numeral → shorthand by default; (2) content-root derivation → spelled CV by default; (3) shorthand in derivation tables is schematic only; (4) never put number second-slot marks (`~`/`@`/`=`) on derived `NUM`; (5) parsers accept both.
 
+TODO: move style to advanced
 
 ### Measure phrases
 <a id="measure-phrases"></a>
@@ -844,6 +830,7 @@ Vague degree stays `/w/` on the scale (`zel wogenal gonudam …`) — no unit. D
 
 **Not this pattern:** percentage closers (**`jo`** / **`ju`**); bare multiplicative `/h/` factors (`h+1.5`); stacking `b+2 burelul` as two arguments of one adjective; Latin letter abbreviations as Agelan orthography.
 
+TODO: consider moving measurements, time, date to a new file
 
 ### Ranges
 <a id="ranges"></a>

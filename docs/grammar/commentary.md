@@ -308,7 +308,7 @@ On **`edahe`**, **-l / -m / -n / -r** mark **how you hold** the as-if frame — 
 
 When unsure, prefer **`hedahem`**.
 
-NOTIONAL is a **root choice**, not `xa`/`xu` polarity and not a free digitless number word. It is not COMMENT, not evidentiality, not [emotion compose](special-vocabulary.md#emotion-compose), and not quasi-kind derivation. Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)).
+TODO: remove -n distinction. 
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>

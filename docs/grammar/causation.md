@@ -175,6 +175,8 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 Use exclusion / never — not a different gloss on `ao` / `aom`:
 
+TODO: mnemonic column on these tables to show application of vowel series
+
 | Prefer | Gloss |
 |--------|--------|
 | **`guan` / `huan`** | *without / excluding* the antecedent on the **effect** |
@@ -194,17 +196,6 @@ Use exclusion / never — not a different gloss on `ao` / `aom`:
 | **`…al` / `…el`** | *only X* / *only X matters* — inventory or priority, **not** entailment |
 
 Everyday causation should feel **cheaper** as open sufficient than as exclusive sole cause.
-
-### Keep these for other jobs
-<a id="avoid-as-cause"></a>
-
-| Form | Keep for |
-|------|----------|
-| ranked **`e` / `el` / …** | priority / comparison — [comparatives](comparatives.md) |
-| **`xan`** | narrative *and then* — [coordination](coordination.md) |
-| `/x/` *therefore* | discourse glue — [core.md](core.md#discourse-markers-x) |
-
-Pick a sufficient or necessary shape; there is no bare undifferentiated *cause* join.
 
 ### Clause poles (subordination)
 <a id="clause-poles"></a>
@@ -231,9 +222,11 @@ main sentence …  horodom / heluvem / hurugum  bodol   [dependent sentence]
 
 **Mnemonic:** *if* opens a one-way door; *iff* is the two-way arrow; *because* is the foundation under the claim.
 
+TODO: have mnemonic be a column instead of free text
+
 **Ending:** clause-pole overlays always take **-m** (metaphorical published sense) — **`horodom`** / **`heluvem`** / **`hurugum`**. Ordinary literal content on the same roots still uses ordinary endings (`zorodol` *a door*; `zeluvel` *reciprocity*; `zurugul` *a brick*).
 
-Bare **`IF`** (`horodom`) is one-way only. Prefer the root split over De Morgan rewrites as the normal spoken form.
+Bare **`IF`** (`horodom`) is one-way only.
 
 | Poles | Prefer |
 |-------|--------|
@@ -243,8 +236,6 @@ Bare **`IF`** (`horodom`) is one-way only. Prefer the root split over De Morgan 
 | Clause–clause explanation | **`hurugum bodol`** |
 | Clause–clause inclusive bundle | `xaom` / `xaol` as **coordination only** |
 | Mixed NP + clause | **`odo`** under a relation, or span / nominalization in `/b/` / `/d/` — not bare `zaom` on a sentence |
-
-Other adverbial subordinators (*although* / *while* / *until* / *before* / *after*) reuse the same `/h/` + **`odo`** shape — inventory in [core.md § Dependent clauses](core.md#dependent-clauses). They are not condition-type joins.
 
 ### Preference vs law
 <a id="preference-vs-law"></a>

@@ -407,8 +407,6 @@ Every utterance has exactly one **clause force** (written `/j/` or implied **`ja
 | **jul** | **prohibition** — *don’t…* (firm) | **u** negation + **-l** |
 | **jum** | **soft prohibition** — *please don’t…* / *I’d rather you not…* | **u** + **-m** |
 
-A `/j/` **number** word is a call-out interjection (*N more!*, score call, …), not clause force ([number as interjection](#number-as-interjection)).
-
 ### Adjectives before the noun (`gl-`)
 <a id="left-bound-adjectives"></a>
 
@@ -445,7 +443,7 @@ Spatial *left* / *right* need a [viewpoint compound](roles.md#viewpoint-laterals
 ### Writing and speech rhythm (periods)
 <a id="orthography-and-prosody-periods"></a>
 
-Writing uses **periods** (and matching **`?`** / **`!`**) as **body** boundaries. Speech matches. A period ends the body; it does **not** always start a brand-new speech act:
+Writing uses **periods** (and matching **`?`** / **`!`**) as **body** boundaries. Speech matches:
 
 | Writing | Speech | Force |
 |---------|--------|--------|

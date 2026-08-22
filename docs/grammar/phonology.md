@@ -76,25 +76,11 @@ A content word has these parts, written as **one unbroken token**:
 ## Intermediate
 <a id="intermediate"></a>
 
-### Mid-word `x` families (pointer)
-
-Ordinary compounds include lexicon sense-compounds, [values](values.md), [ability](ability.md#ability), [role compounds](roles.md#role-compounds) (**`a`/`u`/`o` x ROOT**), [viewpoint laterals](roles.md#viewpoint-laterals) (**`DIR x ANCHOR`**), [numeric derivation](numeric-derivation.md#numeric-derivation) (**`ROOT x NUM`**), and compact [phrasal proper names](reference-suffix.md#phrasal-proper-names). Mid-word **`x`** also appears in closed [span fences](spans.md). Full table: [x-compounds.md](x-compounds.md).
-
 ### Number-word exception
 <a id="number-word-exception"></a>
 
 After a PoS prefix, a following **r** (start of the number marker) may form a cluster that ordinary content words never use (e.g. `/ɡ/`+`r`, `/z/`+`r`, `/v/`+`r`, `/h/`+`r`, `/j/`+`r`, `/x/`+`r`) — content roots are **vowel-initial**, so **`r` as a root onset** only appears **after a vowel** inside the root (`uru`), never immediately after the PoS letter. That **`PoS+r`** cluster is legal **only** in [number words](numbers.md). Number-marker **V** is usually a single vowel (`ra` / `ru` / `re` / `ro`); end-relative ordinals use digraph **`eu`** (`reu…`, writing **`#-`**) — stacked vowels as elsewhere, not join **`ue`**. Number stems are a closed formal grammar and must not be assigned as ordinary lexicon roots. Ordinary vs number-specific endings: [reference-suffix.md](reference-suffix.md#number-word-exception).
 
-### Left-bound adjective (`gl-`)
-<a id="left-bound"></a>
-
-After adjective prefix `/ɡ/`, an **l** may sit before the root, forming onset **`gl-`**. That marks [left-bound attachment](core.md#left-bound-adjectives): the adjective precedes its host (`glgonudam zogodol`). Default right-bound adjectives are `/ɡ/` + vowel after the host (`zogodol gonudam`). This **`gl-`** **l** is morphology after the PoS letter — **not** the word-final reference suffix **-l**, **not** a root-onset **l** (those follow a vowel: `alu`), and it is **not** available on other PoS prefixes (no `zl-`, `wl-`, `hl-`, …). Complex `/b/` and adjunct `/w/` stay after the `/ɡ/` word in either order.
-
-### Joins, revisers, and span vowels
-
-Join closes, prefix-less revisers (**al** / **am** / …), and span open / close words reuse the same phonotactic shape: PoS (when present) + reserved vowels + endings. Span opens use mid-word **`x`** between TYPE and EDGE vowels; closes are only **`xuxul`** / **`xuxur`** / **`xuxun`** / **`xuxum`**. No stacked vowels on TYPE or EDGE.
-
-Phonology only requires that those spellings fit the word shape above; readings live on their own pages.
 
 ## Advanced
 <a id="advanced"></a>

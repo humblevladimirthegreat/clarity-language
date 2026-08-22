@@ -210,11 +210,13 @@ Mark when the wrong reading would matter: co-agency → **`ana`** or a join; “
 
 **Contrast with `/h/`:** *three times* / *multiple times* / habitual *always* are clause framing ([numbers](numbers.md) under `/h/`, or **`hual`**). Verb **-sh** is only when the **verb’s own referent** is a set of doings.
 
-* **-lsh** / **-msh** — first mention of several instances as one event-set (*there were some meetings*).
-* **-nsh** — a **named series** (*the Olympic Games* as the series) — contrast singular **-n** (*perform* **[Hamlet]** once).
-* **-rsh** — resume a prior set of doings.
+* **-lsh** / **-msh** — first mention of several instances as one event-set ("they **held a series of** meetings").
+* **-nsh** — a **named series** (*the Olympic Games* as the series) — contrast singular **-n** (*perform* **[Hamlet]** once). [TODO: come up with better example, Olympic Games is a noun]
+* **-rsh** — resume the prior actions and related. "He did **that (and related actions)**". 
 
 **Not verb -sh:** plural *people* cooking once → plural on the **noun**, singular verb. *Knocked several times* as a count → **`h+3`** / **`h+`**, singular verb (unless the bout is itself the discourse set).
+
+TODO: consider removing -sh on verbs. It is hard to come up with examples so it's probably not needed.
 
 ### Adjectives (`/ɡ/`) — collective
 <a id="adjectives-g"></a>
@@ -249,8 +251,6 @@ Most useful with [phrase join](coordination.md): SHARED singular scale under **`
 ### Vocatives (`/j/`)
 
 Address a **group**: **-lsh** for kind-based group address (*hey, kids*); **-nsh** for a titled group (*Team Alpha*); **-rsh** to call a prior addressee **and associates**. Multi-addressee role without naming → **`jehadonsh`**. *Everyone* → bare **`…ual`**, not **-lsh**.
-
-Interjections and clause force take **no** **-sh**. Closed [yes/no polarity](questions.md#yes-no-polarity) particles likewise take no **-sh**.
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>

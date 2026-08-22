@@ -227,8 +227,6 @@ Under `/ɡ/`, SHARED `/w/` on a ranked AP fence remains shared *degree* over ran
 
 When discourse needs the comparee alone as subject of another verb, keep that subject ordinary and place the comparative claim in another slot or sentence.
 
-**Number ranges**, **numeric thresholds**, and **digitless exponents**: [numbers.md § Ranges](numbers.md#ranges) / [digitless exponents](numbers.md#digitless-exponents).
-
 ### Distributive *both are ADJ*
 <a id="distributive-both"></a>
 

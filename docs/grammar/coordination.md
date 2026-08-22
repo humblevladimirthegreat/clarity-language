@@ -362,6 +362,8 @@ The starter table above covers common cases. Below are the full phrase-level foc
 
 **Rank — focus**
 
+Apply these readings when there is only one item in the list.
+
 | Form | Focus reading |
 |------|---------------|
 | **…el** (`zel` / …) | *only X matters* / *X, period*; + SHARED scale → superlative — [comparatives.md](comparatives.md) |
@@ -378,22 +380,28 @@ The starter table above covers common cases. Below are the full phrase-level foc
 
 **Rank — bare**
 
+Apply these readings when it is by itself (empty list).
+
 | Form | Bare reading |
 |------|--------------|
 | **…el** (`zel` / …) | *unspecified ranking*; + SHARED scale → unspecified who's top |
-| **…em** (`zem` / …) | *I don't have a ranking* |
+| **…em** (`zem` / …) | *whichever* (literally: *there is no ranking*) |
 | **…ael** (`zael` / …) | *it's a draw* / *tie* |
 | **…aem** (`zaem` / …) | *probably a tie* / *looks even* |
 | **…aen** (`zaen` / …) | *it's a draw* (stock) |
 | **…oem** (`zoem` / …) | *not sure where to start* |
 | **…oel** (`zoel` / …) | *do nothing* / *don't bother*; + SHARED scale → empty superlative |
 | **…oem** + SHARED scale | *no biggest comes to mind* |
-| **…uem** (`zuem` / …) | *no ascending ranking from me* |
-| **…uel** (`zuel` / …) | *unspecified ranking (ascending frame)* |
+| **…uem** (`zuem` / …) | *I don't care* / *whatever* |
+| **…uel** (`zuel` / …) | *I couldn't care less* (literally: *there is nothing with a higher ranking*) |
 | **…en** (`zen` / …) | *unspecified ranking* (stock) |
 | **…er** (`zer` / …) | *whatever's most important* |
 
+TODO: come up with new readings for zel,zem,zuem,zuel. There should be a consistent distinction between bare -e- (there is no descending order) and -ue (there is no ascending order)
+
 **Set — focus**
+
+Apply these readings when there is only one item in the list.
 
 | Form | Focus reading |
 |------|---------------|
@@ -410,11 +418,15 @@ The starter table above covers common cases. Below are the full phrase-level foc
 | **…ar** (`zar` / …) | *some (unknown) X* |
 | **…or** (`zor` / …) | *any X* |
 | **…ul** (`zul` / …) | *not X* |
-| **…um** (`zum` / …) | *not X (among denials)* |
+| **…um** (`zum` / …) | *not X (among other denials)* |
 | **…un** (`zun` / …) | *not X* (stock / conventional) |
 | **…ur** (`zur` / …) | *something other than X* |
 
+TODO: clarify -un
+
 **Set — bare**
+
+Apply these readings when it is by itself (empty list).
 
 | Form | Bare reading |
 |------|--------------|
@@ -432,7 +444,7 @@ The starter table above covers common cases. Below are the full phrase-level foc
 | **…aom** (`zaom` / …) | *nothing I need that I can think of* |
 | **…ul** (`zul` / …) | *no* |
 | **…um** (`zum` / …) | *no from me* |
-| **…un** (`zun` / …) | *no* (stock) |
+| **…un** (`zun` / …) | *No* (stock) |
 | **…ar** (`zar` / …) | *something* / *someone* |
 | **…or** (`zor` / …) | *anything* / *anyone* |
 | **…ur** (`zur` / …) | *something else* / *someone else* |
@@ -473,13 +485,7 @@ gloss: `z-grace` · `z-courage` · `zael` · `g-challenging`
 
 Fence chains keep ranking from **spoken conjunct order** before the right-close join.
 
-### Comparatives, superlatives, and equatives
-<a id="comparatives"></a>
-<a id="superlatives"></a>
-<a id="comparative-shared-scale"></a>
-<a id="equatives"></a>
-
-Scalar comparison — ranked **e** / **oe** / **ue** + SHARED scale, **ae** + SHARED scale, distributive set **a** + SHARED `/ɡ/`, [collective](plurality.md#collective-ascription) **a** + SHARED `/ɡ/`…**-sh**, and measured differentials — lives in **[comparatives.md](comparatives.md)**. Number spans (**a** / **e** / **ue** / **ua** + SHARED continuum `/ɡ/` + two endpoints) live in **[numbers.md § Ranges](numbers.md#ranges)**. Fence morphology stays on this page.
+TODO: isn't this section already covered in beginner? See what else is already described for rank join.
 
 ### Invert (**`ua`** / **`uo`** / **`ue`**)
 <a id="invert-u-stacks"></a>
@@ -525,8 +531,6 @@ No **u** on plain **u**, and no **u** on stacked **ao** / **ae** / **oe**. No **
 
 *not (A or B) = (¬A) ∨ (¬B).*
 ```
-
-Under **`/h/`** / **`/w/`**, **u** denies **applicability circumstances** (*not when…*), not manner polarity — [restrictors.md](restrictors.md). Polar answer particles (**`juel`**, **`juol`**, …) are `/j/` interjections — [questions.md](questions.md#yes-no-polarity).
 
 ### Universals, domains, and generics
 <a id="universals-domains-generics"></a>
@@ -607,6 +611,8 @@ When other same-slot material sits nearby, wrap the sub-stretch and its join **i
 
 One island per clause; no nesting of islands. Same-slot material outside an island with no outer join tying it in is illegal.
 
+TODO: span islands aren't introduced yet, so move this section to Advanced
+
 ### Frame echo (two-beat)
 <a id="frame-echo"></a>
 <a id="frame-echo-two-beat"></a>
@@ -631,6 +637,8 @@ When the join frame should be clear **before** the conjuncts (*everything but…
 ```
 
 Prefer a single right-close when early frame is unnecessary. Frame echo is **style**, not a second grammar.
+
+[TODO: remove this two-beat feature from docs and parser]
 
 ### Fence nesting
 <a id="fence-nesting"></a>
@@ -704,8 +712,6 @@ VP `/v/`…**-n** spellings are [join-act verbs](join-extras.md#join-act-verbs).
 
 *(A or B) and C.*
 ```
-
-Do not read **`xaom`** / **`xaol`** as *SENT₁ is sufficient for SENT₂* — peer coordination only.
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
