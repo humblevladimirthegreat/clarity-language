@@ -371,6 +371,8 @@ Bare *bad* / *terrible* can hide an unfair or unspoken standard. Keep the ordina
 
 Benchmarks are **NP comparees** on the ranked fence — not [ability](ability.md#ability) / [role](roles.md#role-compounds) hosts, and not `/w/`…**-n** on the scale (*spicy* **[Scoville]** names a measurement frame — [reference-suffix](reference-suffix.md)). **Personal standard** is [numeric derivation](numeric-derivation.md#numeric-derivation) on [speaker](pronouns.md#special-pronouns) **`umogo`**; **Everyone** reuses bare named **`zuan`** ([coordination](coordination.md#focus-phrase)).
 
+TODO: personal standard doesn't necessary use speaker pronoun, prefer names (need not be yours)
+
 #### Recipe
 
 Prefer **reverse ranked** **`ue`** on a **positive / neutral** scale:

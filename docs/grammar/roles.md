@@ -396,12 +396,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 ## Advanced
 <a id="advanced"></a>
 
-### Design notes
-
-Unassigned or rare edges (not required for ordinary reading):
-
-- **Role compounds:** ROLE **`e`** (reserved); instrument / beneficiary / recipient as extra ROLE vowels; role compounds under `/v/` `/h/` `/w/`; stacking role + ability — put ability on the bare event verb; *act done by entity* as a ROLE — resume verbs with ordinary **-r**, or use **`var`** for unnamed doing.
-- **Viewpoint laterals:** whether forward / back join the bare-ban inventory; absolute compass cards as titled **-n**; inanimate “facing” (screens, vehicles) as legal ANCHOR; forced listener frame under every command.
+This page has no advanced section. Proceed to the next page.
 
 ## See also
 

@@ -326,17 +326,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 ## Advanced
 <a id="advanced"></a>
 
-### Boundaries
-
-- Dual bare subjects (`zodavan zuzuban`) do not mean *A is B*.
-- Adjacent same-PoS **-n** words are not a multipart proper name (`zazawan zulonun`); use an **`x`-compound** (`zozohuxalenan`) — [phrasal proper names](reference-suffix.md#phrasal-proper-names).
-- Plural **-sh** on `SAME` (`oguno`) is unused for “they are the same group”; mark group reference on the host nouns, or ascribe identity pairwise.
-- Multi-alias lists (*A, B, and C are one*): prefer pairwise `SAME`, or separate sentences — do not invent a second SHARED reading under `ae` for co-reference.
-
-### Out of scope
-
-- Dedicated *become* / *remain* / *turn into* (ordinary content verbs when needed).
-- Mathematical “=” as a numeral or `/x/` device (different job from discourse identity).
+Nothing advanced for this subject. Continue to the next page.
 
 ## See also
 

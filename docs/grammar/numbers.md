@@ -1161,7 +1161,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 ## Advanced
 <a id="advanced"></a>
 
-Digitless exponents, zero×exp, hyperbole, and related specials. **Optional** with Intermediate — not required to finish a first dialogue corpus.
+Digitless exponents, zero×exp, hyperbole, and related specials.
 
 ### Digitless exponents
 <a id="digitless-exponents"></a>
@@ -1177,8 +1177,6 @@ A digit group may use an exponent marker (**`ba`** or **`bu`**) with **no** expo
 | **`ba`/`bu` alone** (no mantissa) | **Special value** — +∞ / −∞ / last place / start place / … (tables below) |
 | **Mantissa `≠0` + `ba`/`bu`∅** | **Hyperbole** on scalars (*N gazillion* / *N gazillionth*); on ordinals **both** polarities (*umpteenth* late / *umpteenth-first* early) — see [hyperbole](#hyperbole-gazillion). End-relative place is marker **`#-`**, not mantissa+`bu` |
 | **Mantissa `0` + `ba`/`bu`∅** | **[Zero × digitless exp](#zero-exponent)** — total null / sterile / residue specials — **not** hyperbole |
-
-None of these is bare OoM (which always **names** the power: `g+e9`, including ones-band **`g+e0`**) nor a [zero-group](#zero-digit-groups) word (`g+` = plural `>1`). Named **`e0`** on scalars is ordinary bare OoM / **`Ne0`** assert — [Bare OoM](#bare-oom-bands) / [Ambient scale](#ambient-scale) — **not** a digitless special. Mantissa **`0`** + named **`e0`** (**`g+0e0`**) is **not used**. On ordinals, **digitful** exp is [generation offset](#ordinal-generation), not scalar power-of-ten (**`g#e0`** = current generation).
 
 **Writing:** **`e`** = speech **`ba`**; **`e-`** = speech **`bu`**. Digitless means no power digits after that mark: `g+e`, `g+1e`, `g+0e`, `g+e-`, `g+1e-`. Bare / assert **`e0`** writes power **`0`**: `g+e0`, `g+3e0` (not digitless).
 
@@ -1202,12 +1200,14 @@ None of these is bare OoM (which always **names** the power: `g+e9`, including o
 | **`g-e-`** | **`ru`** + **`bu`∅** + **-l** | **notional / imaginary amount** — as-if magnitude off the real commitment ledger (metaphorical; not ℂ math notation) |
 | **`g~-e-`** | **`ru`** + **`bu`∅** + **-m** | **soft notional** — *sort of imaginary* / hedged as-if amount |
 
+TODO: define g~-e to mean **arbitrarily close but still a deficit / (almost)**
+
 Same under `/z/` `/d/` `/b/` (`z+e` = +∞ as subject; `d#e-` = start-place as object; `b+e-` = *of an arbitrarily small but finite amount*; `z-e-` = notional amount as subject). Contrast **`g#1`** = numbered *first* / *1st*; **`g#e-`** = beginning/onset landmark.
 
 <a id="imaginary"></a>
 <a id="notional-amount"></a>
 
-**Notional / imaginary (`g-e-`):** negative marker (**`ru`**) + digitless negative exponent (**`bu`∅), no mantissa — completes the scalar special grid. Reading is **metaphorical**: a magnitude named *as if* it counted, without entering the real tally. **Not** falsehood ([yes/no polarity](questions.md#yes-no-polarity) **`juel`**), **not** ordinary soft real amount (`g~+3`), **not** −∞ (`g-e`), **not** micro-real (`g+e-`). No separate *i* closer — digitful engineering (`g-50e-6`) and bare OoM **`g-e-1`** / **`g-e-2`** stay real (−10⁻¹ / −10⁻²). Mantissa + digitless **`bu`** on **`ru`** (`g-1e-`) stays [hyperbole](#hyperbole-gazillion) (*minus one gazillionth*), not *Ni*. Kind-morph twins: [quasi-ROOT](numeric-derivation.md#quasi) **`ROOTx-e-`**; [quasi-N](numeric-derivation.md#quasi-n) **`ROOTx-e-1`** / **`ROOTx-e-2`** (derivation only — not free OoM).
+**Notional / imaginary (`g-e-`):** negative marker (**`ru`**) + digitless negative exponent (**`bu`∅), no mantissa — completes the scalar special grid. Reading is **metaphorical**: a magnitude named *as if* it counted, without entering the real tally.
 
 **Psychological as-if** (clause framed as pretensive / mind-only, with flexibility hold endings) uses spelled mood **`edahe`** — [commentary.md § Notional](commentary.md#notional) (`hedahem`, …) — not these free number forms. Free **`grubul`** / **`xrubul`** / **`hrubul`** / **`vrubul`** / **`jrubul`** stay amount, discourse *imagine that:*, manner *as if*, verb *notionalize*, and cheer overlays on the number grid.
 
@@ -1220,8 +1220,6 @@ Same under `/z/` `/d/` `/b/` (`z+e` = +∞ as subject; `d#e-` = start-place as o
 | **-m** on **`bu`∅** (`…e-m`) | Soft / approximate small on scalars (`g~+e-`); soft notional on **`ru`+`bu`∅** (`g~-e-`); on ordinals (`g~#e-`) = **near first place** |
 | **-n** | Proper / conventional designation of that special (named ∞ symbol, official *last place* / *starting* title, conventional *imaginary* label, …) |
 | **-r** | Resume a prior special value of that marker+exp polarity (`g=+e` = *that +∞ again*; `g=+e-` = *that start/small again*; `g=-e-` = *that notional amount again*) |
-
-**Contrast:** zero-group `g+` = plural count `>1`. Bare OoM `g+e9` = [decade band](#bare-oom-bands) `[10⁹, 10¹⁰)`; **`g+e0`** = ones band **1–9**. No-mantissa `g+e` = +∞; no-mantissa `g#e` = last place. Mantissa **`≠0`** + digitless **`ba`/`bu`** (`g+1e` / `g#1e` / `g#1e-`) = [hyperbole](#hyperbole-gazillion). Mantissa **`0`** + digitless (`g+0e` / `g#0e`) = [zero × exponent](#zero-exponent). Mantissa **`0`** + digitful **`e-1`** (`g±0e-1`) = engineering null / residue. Mantissa **`≠0`** + named **`e0`** (`g+3e0`) = ones-place assert ([ambient](#ambient-scale)). End-relative ordinals use marker **`#-`** ([from the end](#from-the-end)). Focus ranked digitless (`zel z+`) is **not** a special value — ordinary *only (plural) matters* / preference framing (not a special-value reading).
 
 ##### Overlay `/v/` and `/h/`
 
@@ -1285,6 +1283,8 @@ Under `/x/`, **last-place** **`x#e`** (and **`x~#e`** / **`x@#e`** / **`x=#e`**)
 <a id="zero-exponent"></a>
 <a id="zero-exponential"></a>
 <a id="annihilate"></a>
+
+TODO: does this already exist in numeric-derivation.md? If so, remove this section. Otherwise consider moving this to there.
 
 Forms that pair **mantissa `0`** with an exponent (digitless or the engineering **`e-1`** pair). Same anatomy family as [numeric derivation](numeric-derivation.md#zero-exponent-derivation); free words are **hostless** amounts / acts; derived words attach the morph to a ROOT.
 

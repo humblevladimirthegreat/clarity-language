@@ -310,15 +310,6 @@ Warrant is a **root choice**, not `xa`/`xu` on the quantifier host. Domain stays
 
 Prefer floating `/h/`; **RULE** is complex `/h/` + `/b/` scope when the frame is named. Domain / habitual morphology stays [coordination](coordination.md#universals-domains-generics) / [restrictors](restrictors.md); this section only warrants exceptionlessness.
 
-### Design notes
-
-Unassigned or rare edges (not required for ordinary reading):
-
-- **Emotion compose:** whether MED (`oju`) shares a form with another soft default; `/w/` bind on the judged `/ɡ/` vs only floating `/h/`; emotion lexicon retained only for non-judgmental sensation naming.
-- **Universality:** ending tables (soft vs committed warrant, …); whether bare unmarked `hual` / `zual` implies COMMON or leaves warrant unspoken.
-
-Judgment benchmarks (*worse than Average|…*) are NP comparees on comparative fences — [comparatives.md § Judgment benchmarks](comparatives.md#judgment-benchmarks). **Classification** and closed **`SAME`** identity live in [predication.md](predication.md). **Causation** reuses joins and join-relations — [causation.md](causation.md); **CAUSE** mood **`erage`** / **`heragem`** = mechanism framing (not NATURAL).
-
 ### Translation practice
 <a id="translation-practice-advanced"></a>
 

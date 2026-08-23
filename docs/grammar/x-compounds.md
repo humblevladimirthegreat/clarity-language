@@ -57,15 +57,7 @@ Stacked vowels on TYPE/EDGE/ROLE are **not** used: role ROLE is one of **`a`** /
 ## Advanced
 <a id="advanced"></a>
 
-### Traps worth one look
-
-| Shape | Reading |
-|-------|---------|
-| Bare **`ROOT x e`** | Stance **`xe`** (values motive **or** ability temporary *can’t*) — **not** infinity-essence |
-| Bare **`ROOT x o`** | Stance **`xo`** (values prescription **or** ability modifiable *can’t*) — **not** a ROLE |
-| Essence | Scalar digitless exp **`ROOTx+e`** — [numeric derivation](numeric-derivation.md#numeric-derivation) |
-| **`e x ROOT`** | Reserved (undefined ROLE) — not a fourth role vowel |
-| Lateral **`DIR x ANCHOR`** | Ordinary compound with closed spatial reading — [viewpoint laterals](roles.md#viewpoint-laterals); bare spatial `gevedel` illegal |
+There is no advanced section for this page. Proceed to the next page.
 
 ## See also
 

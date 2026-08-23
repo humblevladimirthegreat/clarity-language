@@ -417,15 +417,10 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *I wonder whether Azawan walks.*
 :::
 
-## Advanced
+## Advanced (empty)
 <a id="advanced"></a>
 
-### Design notes
-
-Unassigned or rare edges (not required for ordinary reading):
-
-- **COMMENT / NOTIONAL:** sense-channel noting color on **`uho`**; dedicated bare `/j/` interjection on either root; forced COMMENT on every first-person clause (only cognitive commentary environments); whether **`edahe`** under `/j/` doubles number-style *As if!* cheer.
-- **Evidentiality:** ending tables (confidence grain, …); full tense inventory stacking with channels.
+There is no advanced section. Proceed to the next page.
 
 ## See also
 

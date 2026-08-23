@@ -362,6 +362,8 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 ## Advanced
 <a id="advanced"></a>
 
+TODO: consider removing this learning band
+
 ### Where **-sh** is unused
 
 | Slot | **-sh**? |

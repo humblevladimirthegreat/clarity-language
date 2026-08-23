@@ -428,10 +428,14 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 **`jual`** / **`juam`** — absolute *no* / hard refusal of the whole frame (rare). Prefer **`juel`** / **`juol`** for ordinary answers; prefer **`xul`** when denying inside the clause.
 
+TODO: add column of examples
+
 ### Focus and bare inventory
 <a id="focus-bare-inventory"></a>
 
 Length **2+** (no **-r**): **-l** = pick from this closed menu; **-m** = pick or name something else (for **o**, also *or none*); **u** = *none of* the listed; **ua** / **uo** = complement of the listed; **ue** = reverse-rank among the listed. With **-r**: [fill-ask arity](#fill-ask-r). Under `/h/` / `/w/`, only the [defined circumstance core](restrictors.md) applies.
+
+TODO: for all tables below, add mnemonics column to explain how the vowel series translates to this form
 
 #### Rank — focus (under question)
 

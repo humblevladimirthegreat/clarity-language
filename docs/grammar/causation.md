@@ -365,7 +365,11 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 ### Factivity (`IF` vs `BECAUSE`)
 <a id="factivity"></a>
 
-English *because* / *if* blur whether the dependent is **on the world ledger**. Agelan separates that on the clause root:
+English *because* / *if* blur whether the dependent is **on the world ledger**. 
+
+TODO: use clearer language than "world ledger"
+
+Agelan separates that on the clause root:
 
 | Root | Dependent | Matrix | Link |
 |------|-----------|--------|------|
@@ -374,6 +378,8 @@ English *because* / *if* blur whether the dependent is **on the world ledger**. 
 | **`BECAUSE`** (`hurugum`) | **asserted** as the foundation the matrix rests on | asserted (or already in force) | explanation |
 
 **Mnemonic:** *if* does not put the dependent on the ledger; *because* does; *iff* locks both sides of the hinge.
+
+TODO: mnemonic should be a column and use the metaphor emoji as the reminder
 
 ```
 `… hurugum bodol zarunal.`
@@ -391,8 +397,6 @@ gloss: `h-IF` · `b-next-clause` · `z-rain`
 *… if it rains.* — rain is not asserted; matrix is under that opportunity
 ```
 
-Do **not** rewrite factivity with De Morgan alone when the spoken form should be the root split.
-
 #### Epistemic *because* (no twin root)
 <a id="epistemic-because"></a>
 
@@ -404,8 +408,6 @@ English often uses *because* for **speaker grounds** (*I say P because Q* / *I t
 | *I think / say P because Q* (Q is my reason for the take) | [**COMMENT**](commentary.md#comment) on the matrix (`huhom`, …); optional **`hurugum bodol`** only if Q is also asserted as world-foundation |
 | *P, since / given that Q* (Q already shared) | **`hurugum bodol`** (Q asserted); soft force / evidentiality if the warrant is tentative |
 | *P if Q* (no ledger for Q) | **`horodom bodol`** — never stretch **`BECAUSE`** into a soft *if* |
-
-**No dedicated epistemic-*because* root.** Speaker-grounds stay COMMENT (and evidentiality for *how you know*); world-foundation stays **`urugu`**. Stacking is the twin — not a fourth clause pole.
 
 ### Stacks (evidentiality, mechanism, habit)
 <a id="stacks"></a>
@@ -422,6 +424,8 @@ English often uses *because* for **speaker grounds** (*I say P because Q* / *I t
 Particular episode (*this delay was caused by…*) vs standing law (*clouds for rain*) share the same necessary/sufficient shapes; tense, **`hual`**, evidentiality, **`CAUSE`**, and universality warrant distinguish them.
 
 Causal “laws” show their warrant via evidentiality and universality — not via a stronger join. Mechanism highlight uses **`heragem`**; exceptionlessness uses **`hafafal`**.
+
+TODO: there should be a mnemonics column with emoji metaphor
 
 ### English → Agelan
 <a id="english-cues"></a>

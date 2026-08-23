@@ -434,6 +434,8 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** are **only** these revisers (in-clause or discourse by placement). They are **not** [citation forms](core.md#citation-forms). Prefixed + ending forms of the same vowels (`zal`, `zam`, `val`, …) remain [joins](coordination.md#join-series-ending-shared) only. Whole-word **a** / **e** / **o** / **u** are not reviser forms and not legal words. Longer prefix-less **root + ending** outside a sentence (`godol`, `umogon`, …) is citation, not revision.
 
+TODO: prefix-less can be citation if it's the only word in the sentence or within a mention span.
+
 ## See also
 
 - List joins (*and* / *or*): [coordination.md](coordination.md)

@@ -90,6 +90,8 @@ After a PoS prefix, a following **r** (start of the number marker) may form a cl
 
 The Beginner rules above are the usable inventory. This checklist is the design filter behind them — what Agelan avoids so ordinary singing stays easy:
 
+TODO: replace the vowel letters below with the actual IPA
+
 | Constraint | Why it helps | How Agelan keeps it |
 |------------|--------------|---------------------|
 | No fully closed vowels | Closed vowels shrink comfortable high range | Four mid-to-open vowels (**e u o a**) |

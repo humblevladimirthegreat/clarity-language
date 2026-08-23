@@ -259,9 +259,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 ## Advanced
 <a id="advanced"></a>
 
-### Design notes
-
-Unassigned or rare edges (not required for ordinary reading): whether bare unmarked pick clauses imply **`hehegem`** or leave firmness unspoken; stacking with **PLAN** map-resolution endings on the same clause.
+This page has no advanced section. Proceed to the next page.
 
 ## See also
 

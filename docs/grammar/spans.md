@@ -498,7 +498,11 @@ xuxun  =  x + u + x + u + n
 xuxum  =  x + u + x + u + m
 ```
 
+TODO: reserve xuxun as normal proper. Replace truncated with editorial
+
 **Mnemonic:** close endings are not open exact/paraphrase/proper. Open **-n** = proper/titled span; close **-n** = sic. Open **-r** = span anaphor; close **-r** = truncated.
+
+TODO: move mnemonic to column in table above
 
 Truncated and sic spans **are committed** and enter anaphor history (`d[=]` / `daxur` may resume them). Combined `-\|` / `#\|` are writing-only shorthand for two spoken closes; bare `xuxur` / `xuxun` never means pop-all by themselves. Illegal: `\|-` / `\|#` (mark must precede close-all).
 
@@ -558,6 +562,8 @@ d[ item \# ]
 
 **Speech:** there is no transparent speech escape. Bind the fence-shaped token as an **atomic opaque** so it is content, not an open/close:
 
+TODO: consider changing slash as escape to just opaque. 
+
 ```text
 daxal duxol xuxul xuxul
 ```
@@ -565,19 +571,6 @@ daxal duxol xuxul xuxul
 Writing: `d[ d<xuxul> ]`.
 
 While scanning a span interior, bare `|` / `#` / hyphen are ordinary content unless they form a special-close digraph with the following closer or close-all. Number words still use `#` for ordinals — [numbers.md](numbers.md) — that is not a span closer.
-
-### Not this series
-<a id="not-this"></a>
-
-| Need | Use instead |
-|------|-------------|
-| Multi-word adjunct or join scope without typed wording | [adjunct-scope islands](#adjunct-scope-islands) **`^ … ^`** |
-| Clause negation *no* / *not* | `xul` / `xum` / `xun` — **not** `xuxul` / `xuxum` / `xuxur` / `xuxun` |
-| Em dash as truncated closer | ASCII hyphen + closer `-]` / `xuxur` |
-| Inferring close-all from bare `xuxur` / `xuxun` | say `xuxur xuxum` / `xuxun xuxum`; writing may use `-\|` / `#\|` |
-| Ordinary content anaphor (*that dog*) | content root + **-r** — [pronouns.md](pronouns.md) |
-| Re-citing the same words as a fresh cite | new open, not **-r** |
-| Literal fence word / meta glyph as content | [literal content](#literal-content) |
 
 ### Translation practice
 <a id="translation-practice-advanced"></a>

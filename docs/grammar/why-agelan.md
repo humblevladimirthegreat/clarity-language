@@ -128,15 +128,6 @@ It is easy to present two options as if they were the only ones possible.
 
 Saying whether a list is open or closed helps you notice False Dichotomies — and leaves room for options you have not named yet.
 
-### Whose left — shared frames
-<a id="whose-left"></a>
-
-Facing someone, English *on the left* often assumes your facing is theirs.
-
-[Viewpoint laterals](roles.md#viewpoint-laterals) force an explicit ANCHOR (`gevedexehadon` *your left*, `gevedexumogon` *my left*). Bare spatial left / right is illegal; discourse *therefore* (`xamalal`) stays a separate metaphorical reading of **`amala`**.
-
-Naming whose facing counts helps you catch perspective slips before you give a mirrored instruction.
-
 ### Causes, *if*, and preference-as-law
 <a id="causes-if-and-preference"></a>
 

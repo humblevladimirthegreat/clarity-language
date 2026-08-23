@@ -822,8 +822,6 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 On **phrase-level** joins under **`/z/` `/d/` `/b/` `/w/`** only, **-n** marks a **named / conventional list** — an established bundle (*the primary colors*, *stop–drop–roll*), not a freshly composed inventory.
 
-**-n** is an alternative to **-l** / **-m**, not a third completeness tier and not stackable with them. Same mnemonic as content-word [proper name **-n**](reference-suffix.md#proper-name--n). **Not** on `/ɡ/` or `/h/` (join-relations), **not** on VP `/v/` (join-act verbs), **not** on clause `/x/` (soft **-n** instead). Stock AP bundles use [mention](spans.md) spans, not a `/ɡ/` named join.
-
 **…an** is **bare-only** on phrase fences under **`/z/` `/d/` `/b/` `/w/`** (no one-conjunct reading). Under `/ɡ/` `/h/`, **…an** / **…en** / other **-n** join-vowel spellings are [join-relations](join-extras.md#join-relations).
 
 ### Rare arities and edge readings
@@ -866,22 +864,6 @@ Phonotactics for reserved join roots: [phonology.md](phonology.md#phonotactics).
 - Floating `/h/` inside an NP/AP/`/b/` join is **transparent** — it does not end the list. VP-chain `/h/` scope differs — see [VP-level](#vp-level-coordination).
 - Clause-level: no gapping across conjuncts; subordination (*because* / *if*) stays `/h/` + `/b/` [next-clause pronoun](pronouns.md#special-pronouns).
 - Sibling manner stacking on `/h/` `/w/` uses **juxtaposition**, not a fence (`hadal hemudel`).
-
-### Revisers
-<a id="in-clause-revision-bare-a--e--o--u"></a>
-<a id="bare-revision"></a>
-<a id="in-clause-revision"></a>
-<a id="revisers"></a>
-<a id="revision-chains-parallel-on-a"></a>
-
-Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** — in-clause repair of a fixed left side, or discourse glue before force / omitted-default body / [clause `/x/`](#clause-level-coordination) continue / `/x/` linker. Full grammar: **[revisers.md](revisers.md)**.
-
-### Restrictors
-<a id="circumstance-restriction-h-w"></a>
-<a id="circumstance-h-w"></a>
-<a id="restrictors"></a>
-
-Under `/h/` and `/w/`, the join series marks **applicability circumstances** (not sibling *and*). Full grammar: **[restrictors.md](restrictors.md)**.
 
 ### Translation practice
 <a id="translation-practice-advanced"></a>

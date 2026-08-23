@@ -367,51 +367,6 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan sees the Blue book* (named style, adjective before the noun).
 :::
 
-## Advanced
-<a id="advanced"></a>
-
-### Value-compound endings
-
-On [value](values.md) compounds under `/h/` or `/w/` with an **`x`+a/e/o/u** stake half, the same four letters are specialized:
-
-| Stake | Ending means… |
-|-------|----------------|
-| **`xa`** | **contact channel** (physical / mental / social / spiritual) |
-| **`xe`** | **preference standing** (circumstantial / internal / habitual / protective) |
-| **`xo`** | **prescription force** (bound / endorse / commit / invite — **-l** hardest) |
-| **`xu`** | **changeability** (irreversible / modifiable / proper **-n** / temporary — no won’t-now) |
-
-Bare need words (no `x`-addition) are **topic** only and keep ordinary **-l / -m / -n / -r**. Details: [values.md](values.md).
-
-### Ability endings
-
-On [ability](ability.md#ability) compounds — **host + `x` + {a\|e\|o\|u}** (e.g. `veguxel`) or fallback **`egera` + `x` + {a\|e\|o\|u}`** — **-l / -m / -n / -r** keep **ordinary** reference-suffix senses on the host (literal / metaphorical / proper / anaphor). Stance lives on the vowel: **`xa`** can; **`xe`** temporary *can’t*; **`xo`** modifiable *can’t*; **`xu`** irreversible *can’t*. Details: [ability.md](ability.md).
-
-### Decision endings
-
-On [DECISION](plan-decision.md#decision) — closed mood **`ehege`** under `/h/` / `/w/` — endings match unmet changeability: **-l** irreversible, **-m** modifiable, **-n** proper, **-r** temporary (no won’t-now). No mid-word **`x`**. Details: [plan-decision.md § Decision](plan-decision.md#decision).
-
-### Plan endings
-
-On [PLAN](plan-decision.md#plan-predict) — closed mood **`owaro`** under `/h/` / `/w/` — endings mark **map resolution**: **-m** sketch, **-l** itinerary, **-n** proper, **-r** fork (contingency). Not DECISION firmness, not PREDICT. No mid-word **`x`**. Details: [plan-decision.md § Plan map resolution](plan-decision.md#plan-map-resolution).
-
-### Role compounds
-
-On [role compounds](roles.md#role-compounds) — **`{a\|u\|o} x ROOT`** (agent / patient / reltum) — endings keep **ordinary** reference-suffix senses. Mid-word **`x`** families: [x-compounds.md](x-compounds.md).
-
-### Viewpoint laterals
-<a id="viewpoint-laterals-endings"></a>
-
-On [viewpoint laterals](roles.md#viewpoint-laterals) — **`DIR x ANCHOR`** — endings keep **ordinary** reference-suffix senses on the whole direction word (not value / ability tables).
-
-### Join endings
-
-On [joins](coordination.md), the same letters are specialized again: phrase-level forms use **-l** / **-m** / **-n** for **closed** / **open** / **named** on join vowels (where allowed); clause **-n** is soft packaging (*and then* **`xan`**); **-r** on **a** / **o** / **e** / **u** = [unspecified-member](coordination.md#unspecified-member-r-phrase). Prefix-less **al** / **am** / … are [revisers](revisers.md), not joins.
-
-### Discourse `/x/` inventory (dense)
-
-Clause joins and named discourse glue reuse the four ending letters with family-specific jobs — see [coordination.md](coordination.md) and [revisers.md](revisers.md).
-
 ## See also
 
 - [pronouns.md](pronouns.md) — anaphoric **-r**; special **`umogo`** / **`ehado`** / **`ana`** / **`enu`** / **`odo`**

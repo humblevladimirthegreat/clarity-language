@@ -328,9 +328,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 ## Advanced
 <a id="advanced"></a>
 
-### Design notes
-
-Unassigned or rare edges (not required for ordinary reading): scaffolding stacks on **`xa`** (assisted / instrumental); *won’t* as ability morph; whose-ability / evidentiality on the denial; positive *can* forced on every clause.
+There is no advanced section. Continue to next page.
 
 ## See also
 
