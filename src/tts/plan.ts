@@ -3,7 +3,7 @@ import { segmentUtterance, type TokenizeSegment } from "../parse/tokenize.js";
 import type { MorphWord, PunctKind } from "../parse/types.js";
 import { parseWord } from "../parse/word.js";
 import { isNativeSurface, toPhonemeWord, type PhonemeWord } from "./phonemes.js";
-import { numberWordToSpeech } from "./numbers.js";
+import { numberWordToSpeechStressed } from "./numbers.js";
 import { expandOpaqueSpan, expandWritingSpan } from "./spans.js";
 
 export type SkipReason = "foreign" | "writing" | "punct" | "error" | "shorthand";
@@ -19,7 +19,7 @@ export type BoundaryTag =
   | "islandExit";
 
 export type SpeechToken =
-  | { kind: "word"; raw: string }
+  | { kind: "word"; raw: string; stress?: number[] }
   | { kind: "boundary"; tag: BoundaryTag; raw: string }
   | { kind: "skip"; raw: string; reason: SkipReason };
 
@@ -86,7 +86,8 @@ export function expandWordToTokens(word: MorphWord): SpeechToken[] {
   }
 
   if (isNumberWord(word)) {
-    return [{ kind: "word", raw: numberWordToSpeech(word) }];
+    const spoken = numberWordToSpeechStressed(word);
+    return [{ kind: "word", raw: spoken.raw, stress: spoken.stress }];
   }
 
   if (!isNativeSurface(word.raw)) {
@@ -242,7 +243,7 @@ export function toPhonemes(plan: SpeechPlan): PhonemePlan {
 
   for (const token of plan.tokens) {
     if (token.kind === "word") {
-      const phoneme = toPhonemeWord(token.raw);
+      const phoneme = toPhonemeWord(token.raw, token.stress);
       words.push(phoneme);
       parts.push({ espeak: phoneme.espeak, inIsland: islandDepth > 0 });
       continue;

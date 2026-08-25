@@ -1441,14 +1441,14 @@ PoS-less number stems may follow mid-word **`x`** on an ordinary content root (`
 
 ### Stress (pronunciation guide)
 
+Structural prosody, not lexical stress — ordinary spelling carries no stress ([phonology](phonology.md#design-notes)). On number words, stress marks number-internal structure:
+
 - Digitless numbers (marker + ending only): stress the **marker** syllable (`ra` / `ru` / `re` / `reu` / `ro`). For **`reu`**, stress the first vowel of the digraph (`e`).
-- [Digitless exponent](#digitless-exponents) forms (`ba`/`bu` alone): stress the **exponent marker** (`ba` / `bu`).
-- Single-digit magnitude groups: stress the digit syllable.
-- Multi-digit groups without exponent: stress the **leftmost** digit.
-- Groups with an exponent: stress the **leftmost exponent digit**.
+- Each **digit group** stresses its **last digit**: the last **exponent** digit when the group has an exponent — even when a mantissa follows; otherwise the last **mantissa** digit. A group with no digits at all (bare **`ba`** / **`bu`**) stresses the marker itself.
+- That group-final stress doubles as the **spoken group boundary**: a stressed digit followed by another digit opens a new group. This keeps multi-group values unambiguous in speech even though the written commas are silent (`g+5e3,860,4e-2`).
+- Digit-string groups follow the same rule: last digit of each group.
 - **`je`** (decimal point): always stressed when present.
 - **`jo`** / **`ju`** (percent / percentage points): always stressed when present.
-- Digit-string groups: stress the **first digit** of each group.
 
 ### Translation practice
 <a id="translation-practice-advanced"></a>

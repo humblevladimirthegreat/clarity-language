@@ -53,6 +53,8 @@ export type Phone = {
   ipa: string;
   espeak: string;
   vowel: boolean;
+  /** Char index of this phone's source letter in the raw word. */
+  index: number;
 };
 
 export type Syllable = {
@@ -79,7 +81,7 @@ function phonesOf(raw: string): Phone[] {
   let i = 0;
   while (i < raw.length) {
     if (i === raw.length - 2 && raw.endsWith("sh")) {
-      phones.push({ letter: "sh", ipa: "ʃ", espeak: "S", vowel: false });
+      phones.push({ letter: "sh", ipa: "ʃ", espeak: "S", vowel: false, index: i });
       break;
     }
     const letter = raw[i]!;
@@ -88,7 +90,7 @@ function phonesOf(raw: string): Phone[] {
     if (!ipa || !espeak) {
       throw new Error(`No phoneme for letter ${letter} in ${raw}`);
     }
-    phones.push({ letter, ipa, espeak, vowel: VOWELS.has(letter) });
+    phones.push({ letter, ipa, espeak, vowel: VOWELS.has(letter), index: i });
     i += 1;
   }
   return phones;
@@ -108,6 +110,7 @@ export function syllabify(phones: Phone[]): Syllable[] {
         last.phones.push(...leftover);
         last.ipa = last.phones.map((p) => p.ipa).join("");
         last.espeak = last.phones.map((p) => p.espeak).join("");
+        // NOTE: caller re-maps via syllableFrom for stress; keep raw merge here.
       } else {
         syllables.push(syllableFrom(leftover));
       }
@@ -121,16 +124,18 @@ export function syllabify(phones: Phone[]): Syllable[] {
   return syllables;
 }
 
-function syllableFrom(phones: Phone[]): Syllable {
-  return {
-    phones,
-    ipa: phones.map((p) => p.ipa).join(""),
-    espeak: phones.map((p) => p.espeak).join(""),
-  };
+function syllableFrom(phones: Phone[], stress: ReadonlySet<number> = new Set()): Syllable {
+  const espeak = phones.map((p) => (p.vowel && stress.has(p.index) ? `'${p.espeak}` : p.espeak)).join("");
+  const ipa = phones.map((p) => (p.vowel && stress.has(p.index) ? `ˈ${p.ipa}` : p.ipa)).join("");
+  return { phones, ipa, espeak };
 }
 
-export function toPhonemeWord(raw: string): PhonemeWord {
-  const syllables = syllabify(phonesOf(raw));
+export function toPhonemeWord(
+  raw: string,
+  stressVowels?: Iterable<number>,
+): PhonemeWord {
+  const stress = new Set(stressVowels ?? []);
+  const syllables = syllabify(phonesOf(raw)).map((s) => syllableFrom(s.phones, stress));
   return {
     raw,
     syllables,

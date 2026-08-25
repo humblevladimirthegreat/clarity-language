@@ -52,43 +52,106 @@ export function digitlessExpToSpeech(exp: string): string {
 }
 
 function groupToSpeech(group: NumberGroup): string {
-  let out = "";
+  return groupToSpeechStressed(group).text;
+}
+
+/** Speech text for one group plus char offsets (within that text) of vowels to stress. */
+function groupToSpeechStressed(group: NumberGroup): { text: string; stress: number[] } {
+  let text = "";
+  const stress: number[] = [];
   const hasExponent = !!group.exponentSign;
   const hasMantissa = group.mantissa !== undefined && group.mantissa !== "";
 
   if (hasExponent) {
-    out += group.exponentSign!;
-    if (group.exponentDigits) out += digitsToSyllables(group.exponentDigits);
+    const signStart = text.length;
+    text += group.exponentSign!;
+    if (group.exponentDigits) {
+      text += digitsToSyllables(group.exponentDigits);
+      // Stress the LAST exponent digit's vowel — the group-final boundary cue.
+      // Marker "ba"/"bu" is 2 chars; each digit syllable is 2 chars; vowel is the 2nd.
+      stress.push(signStart + 2 + (group.exponentDigits.length - 1) * 2 + 1);
+    } else {
+      // Digitless exponent marker (`ba` / `bu` alone): stress the marker vowel.
+      stress.push(signStart + 1);
+    }
   }
 
   if (hasMantissa) {
-    if (hasExponent) out += "ja";
-    out += digitsToSyllables(group.mantissa!);
+    if (hasExponent) text += "ja";
+    const mantissaStart = text.length;
+    text += digitsToSyllables(group.mantissa!);
+    if (!hasExponent) {
+      // No exponent: stress the LAST mantissa digit's vowel.
+      stress.push(mantissaStart + (group.mantissa!.length - 1) * 2 + 1);
+    }
+    // je (decimal point) is always stressed wherever it appears.
+    let at = mantissaStart;
+    for (const ch of group.mantissa!) {
+      if (ch === ".") stress.push(at + 1);
+      at += ch === "." ? 2 : 2;
+    }
   }
 
-  if (group.percent) out += group.percent;
-  return out;
+  if (group.percent) {
+    stress.push(text.length + 1); // jo / ju always stressed
+    text += group.percent;
+  }
+
+  return { text, stress };
 }
 
 /** Serialize a normalized number stem to speech CV (marker + body, no PoS or ending). */
 export function numberStemToSpeech(stem: NumberStem): string {
-  let out = markerToSpeech(stem.marker);
+  return numberStemToSpeechStressed(stem).text;
+}
+
+const DIGITLESS_EXP_STRESS: Record<string, number> = {
+  // text: marker/digit vowel offsets within digitlessExpToSpeech output
+  e: 1, // ba — bare marker
+  "e-": 1, // bu — bare marker
+  "0e": 1, // zoba — mantissa zo (no exponent digits)
+  "0e-": 1, // zobu
+  "1e": 1, // woba
+  "1e-": 1, // wobu
+  "0e-1": 3, // bu·wo·ja·zo — last exponent digit wo
+};
+
+/** Speech text plus char offsets of vowels to carry primary stress. */
+export function numberStemToSpeechStressed(stem: NumberStem): {
+  text: string;
+  stress: number[];
+} {
+  const stress: number[] = [];
+  let text = markerToSpeech(stem.marker);
+  if (stem.groups.length === 0 && !stem.digitlessExp) {
+    // Digitless word: stress the marker vowel.
+    stress.push(1);
+  }
 
   if (stem.digitlessExp) {
-    out += digitlessExpToSpeech(stem.digitlessExp);
-    return out;
+    text += digitlessExpToSpeech(stem.digitlessExp);
+    const at = DIGITLESS_EXP_STRESS[stem.digitlessExp];
+    if (at !== undefined) stress.push(text.length - digitlessExpToSpeech(stem.digitlessExp).length + at);
+    return { text, stress };
   }
 
   if (stem.marker === "_" || stem.marker === "ro") {
-    const digits = stem.groups.map((g) => g.mantissa ?? "").join("");
-    out += digitsToSyllables(digits);
-    return out;
+    // Digit-string label: last digit of each comma group.
+    for (const group of stem.groups) {
+      const start = text.length;
+      const mantissa = group.mantissa ?? "";
+      text += digitsToSyllables(mantissa);
+      if (mantissa.length > 0) stress.push(start + (mantissa.length - 1) * 2 + 1);
+    }
+    return { text, stress };
   }
 
   for (const group of stem.groups) {
-    out += groupToSpeech(group);
+    const part = groupToSpeechStressed(group);
+    for (const s of part.stress) stress.push(text.length + s);
+    text += part.text;
   }
-  return out;
+  return { text, stress };
 }
 
 function posPrefix(word: MorphWord): string {
@@ -104,13 +167,31 @@ function endingSuffix(word: MorphWord): string {
 
 /** Full speech CV surface for a free number word or numeric-derivation host. */
 export function numberWordToSpeech(word: MorphWord): string {
+  return numberWordToSpeechStressed(word).raw;
+}
+
+/**
+ * Speech CV surface plus char offsets of vowels that carry primary stress
+ * ([numbers.md § Stress](../../../docs/grammar/numbers.md)).
+ */
+export function numberWordToSpeechStressed(word: MorphWord): {
+  raw: string;
+  stress: number[];
+} {
   const family = word.family;
+  let head = "";
+  let stem: NumberStem;
   if (family.kind === "number") {
-    return posPrefix(word) + numberStemToSpeech(family.stem) + endingSuffix(word);
+    head = posPrefix(word);
+    stem = family.stem;
+  } else if (family.kind === "x" && family.xFamily === "numeric" && family.numberStem) {
+    stem = family.numberStem;
+    head = posPrefix(word) + family.leftRoots.join("") + "x";
+  } else {
+    throw new Error(`Not a number word: ${word.raw}`);
   }
-  if (family.kind === "x" && family.xFamily === "numeric" && family.numberStem) {
-    const host = family.leftRoots.join("");
-    return posPrefix(word) + host + "x" + numberStemToSpeech(family.numberStem) + endingSuffix(word);
-  }
-  throw new Error(`Not a number word: ${word.raw}`);
+
+  const body = numberStemToSpeechStressed(stem);
+  const raw = head + body.text + endingSuffix(word);
+  return { raw, stress: body.stress.map((s) => s + head.length) };
 }

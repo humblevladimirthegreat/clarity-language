@@ -1,8 +1,6 @@
 # TODO
-proceed. Ensure that the rule is the last digit of the digit group inlcuding exponent - if there is an exponent, it is the last digit of the exponent. If there is no exponent it is the last digit of mantissa (even if none).
-fix any broken links
-ensure we've defined how to combine digits with different oom
 Dates written DDeMMnYYa
+There have been a number of manual editing notes as TODO items in the grammar docs. Find them. Apply as many changes you can confidently do without review
 Phonology english-to-agelan conversion prioritizes similar placements 
 Confirm word compounding past two
 Statistics captures consonant and vowel distribution 

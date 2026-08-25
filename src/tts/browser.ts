@@ -18,6 +18,6 @@ export type {
   SpeechPlan,
   SpeechToken,
 } from "./plan.js";
-export { numberStemToSpeech, numberWordToSpeech } from "./numbers.js";
+export { numberStemToSpeech, numberStemToSpeechStressed, numberWordToSpeech, numberWordToSpeechStressed } from "./numbers.js";
 export { isNativeSurface, toPhonemeWord } from "./phonemes.js";
 export type { PhonemeWord, Syllable } from "./phonemes.js";

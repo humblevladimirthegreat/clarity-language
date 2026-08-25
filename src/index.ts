@@ -27,6 +27,6 @@ export type {
   SpeechPlan,
   SpeechToken,
 } from "./tts/plan.js";
-export { numberStemToSpeech, numberWordToSpeech } from "./tts/numbers.js";
+export { numberStemToSpeech, numberStemToSpeechStressed, numberWordToSpeech, numberWordToSpeechStressed } from "./tts/numbers.js";
 export { isNativeSurface, toPhonemeWord } from "./tts/phonemes.js";
 export type { PhonemeWord, Syllable } from "./tts/phonemes.js";
