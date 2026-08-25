@@ -59,6 +59,7 @@
   }
 
   function writingMarkerFromSpeechV(v) {
+    if (v === "oe") return "_";
     if (v === "a") return "+";
     if (v === "u") return "-";
     if (v === "e") return "#";
@@ -168,7 +169,13 @@ WritingEndingMark
 
 // Writing-style number stem (mantissa, then exponent — opposite of speech)
 WritingNumberStem
-  = marker:WritingMarker body:WritingNumberBody? {
+  = "_" "#" body:WritingNumberBody? {
+      // Calendar-ordinal date (numbers.md § Time): fields read day, month, year.
+      const stem = { marker: "_", calendarOrdinal: true, groups: body && body.groups ? body.groups : [] };
+      if (body && body.digitlessExp) stem.digitlessExp = body.digitlessExp;
+      return stem;
+    }
+  / marker:WritingMarker body:WritingNumberBody? {
       const stem = { marker, groups: body && body.groups ? body.groups : [] };
       if (body && body.digitlessExp) stem.digitlessExp = body.digitlessExp;
       return stem;
@@ -243,12 +250,13 @@ Digit = [0-9]
 SpeechNumberStem
   = "r" v:SpeechMarkerV groups:SpeechDigitGroup* digitless:SpeechDigitlessTail? {
       const stem = { marker: writingMarkerFromSpeechV(v), groups };
+      if (v === "oe") stem.calendarOrdinal = true;
       if (digitless) stem.digitlessExp = digitless;
       return stem;
     }
 
 SpeechMarkerV
-  = "eu" / [aeou]
+  = "oe" / "eu" / [aeou]
 
 SpeechDigitGroup
   = sign:("ba" / "bu") expDigits:SpeechDigitSeq "ja" mantissa:SpeechMantissa percent:SpeechPercent? {

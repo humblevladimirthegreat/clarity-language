@@ -122,7 +122,8 @@ export function numberStemToSpeechStressed(stem: NumberStem): {
   stress: number[];
 } {
   const stress: number[] = [];
-  let text = markerToSpeech(stem.marker);
+  // Calendar-ordinal dates (`_` + `#`, numbers.md § Time) speak the digraph marker `roe`.
+  let text = stem.calendarOrdinal ? "roe" : markerToSpeech(stem.marker);
   if (stem.groups.length === 0 && !stem.digitlessExp) {
     // Digitless word: stress the marker vowel.
     stress.push(1);

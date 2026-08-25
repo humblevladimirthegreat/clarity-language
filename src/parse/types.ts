@@ -7,8 +7,8 @@ export type Ending = "l" | "m" | "n" | "r";
 /** Writing-style number marker symbols. */
 export type WritingMarker = "+" | "-" | "#" | "#-" | "_";
 
-/** Speech-style number marker (r + V). */
-export type SpeechMarker = "ra" | "ru" | "re" | "reu" | "ro";
+/** Speech-style number marker (r + V, including digraphs). */
+export type SpeechMarker = "ra" | "ru" | "re" | "reu" | "ro" | "roe";
 
 export type NumberMarker = WritingMarker | SpeechMarker;
 
@@ -36,6 +36,12 @@ export type NumberStem = {
   marker: NumberMarker;
   /** Digit groups after the marker (empty = digitless). */
   groups: NumberGroup[];
+  /**
+   * Calendar-ordinal reading (dates): written `_` + `#`, spoken `roe`.
+   * Fields then read positionally day, month, optional year
+   * ([numbers.md § Time](../../docs/grammar/numbers.md#time)).
+   */
+  calendarOrdinal?: boolean;
   /**
    * Digitless exponent shorthand not folded into groups
    * (e.g. `e`, `e-`, `+0e`, `+1e`, speech `raba`…).

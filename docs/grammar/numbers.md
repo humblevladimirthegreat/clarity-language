@@ -419,7 +419,7 @@ Contrasts:
 - `h#e-` — *for the first time* (onset landmark; contrast numbered `h#1`)
 - `h#-2` — *for the penultimate time* ([from the end](#from-the-end))
 - `h_15,30` — *at 15:30* (bare `hro` = time; [Time](#time))
-- `h_2026,07,22` — *on 2026-07-22* (bare `hro` date)
+- `h_#22,7,2026` — *on July 22, 2026* (bare `hro` date; `#` tags the day)
 - `/h/` *on* + `b_101.1` — *on 101.1* (non-time code; not bare `h_…`)
 - `h#3` — *for the third time*
 - `h#1e` — *for the gazillionth time* ([hyperbole](#hyperbole-gazillion))
@@ -708,7 +708,7 @@ The noun names the reference class; **`jo`** grades how much of that class. Same
 
 ### Digit-strings
 
-Use marker **`ro`** (written **`_`**). Omit exponents. Prefer groups of three digits when digits are present. Ending is usually **-l** (exact label); **-n** for an official designation; **-r** to resume a prior code (**digitless** `d=_` / `g=_` allowed). [Digitless](#zero-digit-groups) `…_` = unspecified label / some code. Bare `/h/` + **`ro`** is **[temporal circumstance only](#time)** (`h_15,30`, `h_2026,07,22`, digitless `h_`) — not a generic code adverb. Non-time labels as circumstance use a host relation + `/b/` (e.g. `/h/` *on* + `b_7` *channel 7*), or modify a noun with `/ɡ/`. Digit-strings are unsigned — see [Sign](#sign). Clock and calendar field orders are under [Time](#time).
+Use marker **`ro`** (written **`_`**). Omit exponents. Prefer groups of three digits when digits are present. Ending is usually **-l** (exact label); **-n** for an official designation; **-r** to resume a prior code (**digitless** `d=_` / `g=_` allowed). [Digitless](#zero-digit-groups) `…_` = unspecified label / some code. Bare `/h/` + **`ro`** is **[temporal circumstance only](#time)** (`h_15,30`, `h_#22,7,2026`, digitless `h_`) — not a generic code adverb. Non-time labels as circumstance use a host relation + `/b/` (e.g. `/h/` *on* + `b_7` *channel 7*), or modify a noun with `/ɡ/`. Digit-strings are unsigned — see [Sign](#sign). Clock and calendar field orders are under [Time](#time).
 
 
 ### Time
@@ -721,7 +721,7 @@ Time uses the existing number grammar; there is **no** fifth marker vowel and **
 | Job | How |
 |-----|-----|
 | **Clock / schedule** | Digit-string **`ro`** as bare `/h/`. Default **24h**. Fields left→right, commas orthographic only: hour, minute, optional seconds — `h_15,30`, `h_15,30,00`. Digitless `h_` = *at some (unspecified) clock time*. |
-| **Calendar date** | Digit-string **`ro`**, ISO-ish fields: year, month, day — bare `h_2026,07,22`, or modifier `g_2026,07,22`. Digitless `h_` likewise covers an unspecified date reading when context is calendric. An explicit *date* host + `/b/` is optional when you want to name the relation; it is not required to license bare `hro` (bare `hro` already means time). |
+| **Calendar date** | Digit-string **`ro`** with the **calendar-ordinal marker vowel `oe`** (spoken **`roe`**, written `h_#…`; digraph like `reu`). The marker makes the whole word a date, so fields read by position: **day, month, optional year** — `h_#22,7`, `h_#22,7,2026`; modifier `g_#22,7`. This makes dates order-proof (no guessing which number is the month), so zero-padding is optional style, not required. A year is written as **one digit group regardless of length** (`2026` stays one group). Digitless `h_` likewise covers an unspecified date reading when context is calendric. An explicit *date* host + `/b/` is optional when you want to name the relation; it is not required to license bare `hro` (bare `hro` already means time). |
 | **Duration** | Scalar **`ra`** / **`ru`** plus a lexicon **unit** in a [measure phrase](#measure-phrases) — SI **`ameno`** (*second*) or civil **`umedu`** (*time* / hours); not a digit-string, not bare `hro`. Same engineering-exponent habits as other measures when useful. |
 | **Deixis / tense** | Ordinary lexicon `/h/` (*yesterday*, *ago*, *until*, mood/evidential). Numbers appear only for a numeric payload (*3 days ago* = relation + scalar + unit). |
 | **Non-time digit labels** | Host relation + `/b/` (`/h/` *on* + `b_101.1`), or `/ɡ/` on a noun (*channel* `g_7`) — **not** bare `h_…`. |
@@ -1039,8 +1039,8 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 | three times / ×3 | `h+3` | *hrarel* (`h` + `ra` + re) |
 | ÷3 / every third | `h-3` | *hrurel* (`h` + `ru` + re) |
 | at 15:30 | `h_15,30` | *hrowovarezol* (`h` + `ro` + wo va · re zo) — bare `hro` = time |
-| on 2026-07-22 | `h_2026,07,22` | *hrowoduzoguzoledudul* (`h` + `ro` + …) — bare `hro` date |
-| date 2026-07-22 (modifier) | `g_2026,07,22` | *growoduzoguzoledudul* (`g` + `ro` + wo du zo gu · zo le · du du) — date fields, not threes |
+| on July 22, 2026 | `h_#22,7,2026` | *hroeduduleduzodugul* (`h` + `roe` + …) — calendar-ordinal `roe` = date |
+| date July 22, 2026 (modifier) | `g_#22,7,2026` | *groeduduleduzodugul* (`g` + `roe` + …) — day, month, year |
 | on 101.1 (frequency) | `/h/` *on* + `b_101.1` | not bare `h_…`; host + `/b/` digit-string |
 | for the third time | `h#3` | *hrerel* (`h` + `re` + re) |
 | Three! (label / score) | `j_3` | *jrorel* (`j` + `ro` + re) |

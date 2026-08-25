@@ -76,6 +76,24 @@ describe("numberStemToSpeech", () => {
     assert.equal(numberWordToSpeech(parseWord("h_15,30")), "hrowovarezol");
   });
 
+  it("expands calendar date h_#22,7 with roe marker", () => {
+    const word = parseWord("h_#22,7");
+    assert.equal(word.family.kind, "number");
+    if (word.family.kind !== "number") return;
+    assert.equal(word.family.stem.calendarOrdinal, true);
+    assert.equal(word.family.stem.marker, "_");
+    assert.equal(numberWordToSpeech(word), "hroedudulel");
+  });
+
+  it("expands full calendar date h_#22,7,2026 (year stays one group)", () => {
+    assert.equal(numberWordToSpeech(parseWord("h_#22,7,2026")), "hroeduduleduzodugul");
+  });
+
+  it("round-trips spoken calendar date groedudulel", () => {
+    const word = parseWord("groedudulel");
+    assert.equal(numberWordToSpeech(word), "groedudulel");
+  });
+
   it("round-trips speech-shaped grarel", () => {
     assert.equal(numberWordToSpeech(parseWord("grarel")), "grarel");
   });

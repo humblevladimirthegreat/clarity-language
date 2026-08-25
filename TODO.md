@@ -1,6 +1,5 @@
 # TODO
-Dates written DDeMMnYYa
-There have been a number of manual editing notes as TODO items in the grammar docs. Find them. Apply as many changes you can confidently do without review
+There have been a number of manual editing notes as TODO items in the grammar docs. Find them. Apply as many changes you can confidently do without review. For the rest, write a meta doc with the remaining todo items.
 Phonology english-to-agelan conversion prioritizes similar placements 
 Confirm word compounding past two
 Statistics captures consonant and vowel distribution 
