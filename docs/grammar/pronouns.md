@@ -263,25 +263,7 @@ Same referent, new role — English needs a longer paraphrase. Full PoS×PoS tab
 
 **Address set.** Prefer: everyone named in this turn’s vocative cluster, plus anyone still held as addressee by context. One addressee → singular **`ehado`**; several → **`ehado…sh`**. Inclusive co-agency (*shall we…*) → **`ana`**, not speaker **-sh**.
 
-**`odo` chaining.** A dependent may itself end in **`odo`**. Takes the role letter of the slot it fills (`/d/` complement, `/b/` under `/h/` *because* / *if*, etc.).
-
-| Agelan | Reading |
-|---------|---------|
-| `zumogon vawul` | *I go* (implied **`jal`**) |
-| `zumogon vezebel dehadon` | *I write you* (letter / message — same roots) |
-| `zehadonsh vawul` | *You-all (address set) go* |
-| `zumogonsh vawul` | *I and my associates go* (not necessarily you) |
-| `zenun varural` | *Someone (a person) arrived* |
-| `… hurugum bodol …` | *… because [dependent]* |
-| `… horodom bodol …` | *… if [dependent]* |
-| `… heluvem bodol …` | *… if and only if [dependent]* |
-| `… hezabem bodol …` | *… although [dependent]* |
-| `… hegumum bodol …` | *… while [dependent]* |
-| `… hudemum bodol …` | *… until [dependent]* |
-| `… hagagam bodol …` | *… before [dependent]* |
-| `… hohuram bodol …` | *… after [dependent]* |
-
-[TODO: I'm pretty sure odo is covered in core.md. If so, remove the above section and table]
+**Subordinators.** The full *because* / *if* / *although* / *while* / *until* / *before* / *after* table and **`odo`** chaining live in [core.md § Dependent clauses](core.md#dependent-clauses).
 
 Prefer **`ana`** over a speaker+listener join when the point is **co-participant role**; prefer name joins when membership identity is the point; prefer name…**-sh** for associative cohorts.
 

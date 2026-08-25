@@ -38,6 +38,24 @@ gloss: `z-book` · `g-#2`
 
 **Mnemonic:** **`#`** = which place (rank from the start).
 
+### Digit pronunciation
+<a id="digits"></a>
+
+Digits are spoken as remapped CV syllables (current vowels; preferred voiced consonants):
+
+| Digit | Syllable |
+|-------|----------|
+| 1 | wo |
+| 2 | du |
+| 3 | re |
+| 4 | mo |
+| 5 | va |
+| 6 | gu |
+| 7 | le |
+| 8 | ha |
+| 9 | na |
+| 0 | zo |
+
 ### More than one (`g+`)
 
 Digitless **`g+`** = the count is **more than one**, without naming N. Noun group-reference still uses [**-sh**](plurality.md) — quantity vs group are different jobs and may co-occur (`zagadalsh g+`).
@@ -265,25 +283,6 @@ A number word may omit every digit group: **PoS + marker + ending** only. The ma
 | `/x/` | `x#` *some point:* (neutral, number unnamed); `x#-` *some end-relative point:*; `x+` / `x-` corroborating / independent item of unnamed index; `x_` *regarding some (unnamed) label* |
 
 **`h_` vs `har`:** digitless time `h_` is still a **number word** (unspecified clock/date reading under bare `hro`). Circumstance **`har`** (*sometime*) is the [restrictor](restrictors.md), not a numeral — do not swap them.
-
-### Digits
-
-Remapped CV syllables (current vowels; preferred voiced consonants):
-
-| Digit | Syllable |
-|-------|----------|
-| 1 | wo |
-| 2 | du |
-| 3 | re |
-| 4 | mo |
-| 5 | va |
-| 6 | gu |
-| 7 | le |
-| 8 | ha |
-| 9 | na |
-| 0 | zo |
-
-TODO: move digit pronunciation to beginner
 
 ### Exponents
 
@@ -547,27 +546,6 @@ Same under `/z/` `/d/` `/b/`. Soft **`g~+e3`** ≈ *about in the thousands band*
 **Overlays** inherit the band as the verb/adverb magnitude: **`v+e3`** *increase by a thousands-band amount*; **`h+e0`** *× a ones-band factor*; **`j+e3`** *Thousands!* (band cheer).
 
 
-### Ambient scale (casual)
-<a id="ambient-scale"></a>
-
-In **formal** writing and careful speech, treat **omitted exp as ones-place** (`g+3` = 3). **Do not** rely on a discourse-default decade.
-
-**Casually**, measure-heavy talk may establish an **ambient OoM** (often an engineering `e3` / `e6` / …) and elide repeating exponents — bare mantissas then heard at that ambient scale. That habit is **discouraged** in the reference standard but expected in informal use.
-
-**Named `e0` asserts OoM 0** and cancels ambient inheritance:
-
-| In a stretch where ambient OoM = 3 | Reading |
-|------------------------------------|---------|
-| **`g+3`** (casual ambient) | *three at ambient* → often 3×10³ |
-| **`g+3e3`** | *three at 10³* (exp explicit) |
-| **`g+3e0`** | *three at OoM 0* → 3×10⁰ = **3** (break out of ambient) |
-| **`g+e0`** | *ones-band amount* (bare OoM), not ambient thousands |
-
-**`Ne0`** is the normal assert form (any mantissa **`N≠0`**). Formal prose that never uses ambient still rarely needs **`e0`**; omit remains fine when ones-place is already clear.
-
-TODO: move ambient scale to advanced
-
-
 ### From the end — end-relative ordinal marker **`#-`** / **`eu`**
 <a id="from-the-end"></a>
 <a id="nth-from-the-end"></a>
@@ -752,8 +730,6 @@ Both writings name the **same word**. Choose the surface by **job**: quantity/ma
 **Gray zone (either OK):** discourse *Finally* / *Starting with* (`x#e` / `x#e-` vs `xrebal` / `xrebual` — lean spelled in prose, shorthand in outlines); digitless plural (`g+` / `gral`); cheers (`j+e` / `jrabal`); soft free specials when hedging a discourse particle rather than a quantity.
 
 **House rules:** (1) free numeral → shorthand by default; (2) content-root derivation → spelled CV by default; (3) shorthand in derivation tables is schematic only; (4) never put number second-slot marks (`~`/`@`/`=`) on derived `NUM`; (5) parsers accept both.
-
-TODO: move style to advanced
 
 ### Measure phrases
 <a id="measure-phrases"></a>
@@ -1163,6 +1139,46 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 Digitless exponents, zero×exp, hyperbole, and related specials.
 
+### Ambient scale (casual)
+<a id="ambient-scale"></a>
+
+In **formal** writing and careful speech, treat **omitted exp as ones-place** (`g+3` = 3). **Do not** rely on a discourse-default decade.
+
+**Casually**, measure-heavy talk may establish an **ambient OoM** (often an engineering `e3` / `e6` / …) and elide repeating exponents — bare mantissas then heard at that ambient scale. That habit is **discouraged** in the reference standard but expected in informal use.
+
+**Named `e0` asserts OoM 0** and cancels ambient inheritance:
+
+| In a stretch where ambient OoM = 3 | Reading |
+|------------------------------------|---------|
+| **`g+3`** (casual ambient) | *three at ambient* → often 3×10³ |
+| **`g+3e3`** | *three at 10³* (exp explicit) |
+| **`g+3e0`** | *three at OoM 0* → 3×10⁰ = **3** (break out of ambient) |
+| **`g+e0`** | *ones-band amount* (bare OoM), not ambient thousands |
+
+**`Ne0`** is the normal assert form (any mantissa **`N≠0`**). Formal prose that never uses ambient still rarely needs **`e0`**; omit remains fine when ones-place is already clear.
+
+### Style (numeric vs spelled)
+<a id="writing-style-numeric-vs-spelled"></a>
+<a id="writing-style"></a>
+
+Both writings name the **same word**. Choose the surface by **job**: quantity/math vs ordinary lexicon.
+
+| Job | Prefer | Why |
+|-----|--------|-----|
+| Free number in a clause slot | **shorthand** | `g+3`, `x#2`, `d_…` — numeral as numeral |
+| [Numeric derivation](numeric-derivation.md#numeric-derivation) / kind morph | **spelled CV** | `zolexrabal`, not `zolex+el` |
+| Metalanguage / inventory tables | **shorthand** | patterns like `ROOTx+e` stay scannable |
+
+**Prefer shorthand** for counts, measures, ranks, ranges, thresholds (`zagadalsh g+3`, `z+3 z+5 zel`); digit-strings / times / codes (`d_555,123,4567`, `h_15:30`); scientific / engineering register (`g+5.2e-4`, `g+0e-1`, `g+e3`); compact agenda markers (`x#1`, `x#3e2`); and docs that teach the numeral system.
+
+**Prefer spelled CV** for anything after mid-word **`x`** on a content root (lexicon citation forms always spelled); lexicalized morphs treated as affixes (essence / void / quasi / poly / digit morphs / zero×exp on ROOT); literary, sung, or long prose where `+` `#` `_` and second-slot `~`/`@`/`=` break word rhythm; and pronunciation teaching.
+
+**Avoid** the hybrid that derivation invites: shorthand body + host letter ending (`…x+el`). Free numbers use second-slot marks or trailing letters consistently; derived words use ordinary reference endings on the host with a fully spelled `NUM`.
+
+**Gray zone (either OK):** discourse *Finally* / *Starting with* (`x#e` / `x#e-` vs `xrebal` / `xrebual` — lean spelled in prose, shorthand in outlines); digitless plural (`g+` / `gral`); cheers (`j+e` / `jrabal`); soft free specials when hedging a discourse particle rather than a quantity.
+
+**House rules:** (1) free numeral → shorthand by default; (2) content-root derivation → spelled CV by default; (3) shorthand in derivation tables is schematic only; (4) never put number second-slot marks (`~`/`@`/`=`) on derived `NUM`; (5) parsers accept both.
+
 ### Digitless exponents
 <a id="digitless-exponents"></a>
 <a id="extremum-digitless"></a>
@@ -1192,15 +1208,13 @@ A digit group may use an exponent marker (**`ba`** or **`bu`**) with **no** expo
 | **`g~+e`** | **`ra`** + **`ba`∅** + **-m** | **arbitrarily large but finite** |
 | **`g+e-`** | **`ra`** + **`bu`∅** + **-l** | **arbitrarily small but finite** |
 | **`g-e`** | **`ru`** + **`ba`∅** + **-l** | **−∞** |
-| **`g~-e`** | **`ru`** + **`ba`∅** + **-m** | **arbitrarily large but finite** (negative / deficit) |
+| **`g~-e`** | **`ru`** + **`ba`∅** + **-m** | **arbitrarily large but finite** (negative / deficit); against a bound: *arbitrarily close but still short* — *(almost)* |
 | **`g#e`** | **`re`** + **`ba`∅** + **-l** | **last place** / telos landmark (ultimate-descendant pole of the [generation](#ordinal-generation) axis) |
 | **`g~#e`** | **`re`** + **`ba`∅** + **-m** | **near last place** |
 | **`g#e-`** | **`re`** + **`bu`∅** + **-l** | **start / beginning place** / origin landmark — first with emphasis on **onset** (*the starting one*, *at the beginning*), not mere numbered 1st (`g#1`); ultimate-ancestor pole |
 | **`g~#e-`** | **`re`** + **`bu`∅** + **-m** | **near first place** |
 | **`g-e-`** | **`ru`** + **`bu`∅** + **-l** | **notional / imaginary amount** — as-if magnitude off the real commitment ledger (metaphorical; not ℂ math notation) |
 | **`g~-e-`** | **`ru`** + **`bu`∅** + **-m** | **soft notional** — *sort of imaginary* / hedged as-if amount |
-
-TODO: define g~-e to mean **arbitrarily close but still a deficit / (almost)**
 
 Same under `/z/` `/d/` `/b/` (`z+e` = +∞ as subject; `d#e-` = start-place as object; `b+e-` = *of an arbitrarily small but finite amount*; `z-e-` = notional amount as subject). Contrast **`g#1`** = numbered *first* / *1st*; **`g#e-`** = beginning/onset landmark.
 
@@ -1284,7 +1298,7 @@ Under `/x/`, **last-place** **`x#e`** (and **`x~#e`** / **`x@#e`** / **`x=#e`**)
 <a id="zero-exponential"></a>
 <a id="annihilate"></a>
 
-TODO: does this already exist in numeric-derivation.md? If so, remove this section. Otherwise consider moving this to there.
+[numeric-derivation.md](numeric-derivation.md#zero-exponent-derivation) owns the derived **ROOT**-attached morphs (`ROOTx+0e`, …). This section owns the **free, hostless** number words — the same anatomy family used as standalone amounts / acts.
 
 Forms that pair **mantissa `0`** with an exponent (digitless or the engineering **`e-1`** pair). Same anatomy family as [numeric derivation](numeric-derivation.md#zero-exponent-derivation); free words are **hostless** amounts / acts; derived words attach the morph to a ROOT.
 
@@ -1441,7 +1455,7 @@ PoS-less number stems may follow mid-word **`x`** on an ordinary content root (`
 
 ### Stress (pronunciation guide)
 
-Structural prosody, not lexical stress — ordinary spelling carries no stress ([phonology](phonology.md#design-notes)). On number words, stress marks number-internal structure:
+Structural prosody, not lexical stress — ordinary spelling carries no stress ([phonology](phonology.md#phonotactics)). On number words, stress marks number-internal structure:
 
 - Digitless numbers (marker + ending only): stress the **marker** syllable (`ra` / `ru` / `re` / `reu` / `ro`). For **`reu`**, stress the first vowel of the digraph (`e`).
 - Each **digit group** stresses its **last digit**: the last **exponent** digit when the group has an exponent — even when a mantissa follows; otherwise the last **mantissa** digit. A group with no digits at all (bare **`ba`** / **`bu`**) stresses the marker itself.

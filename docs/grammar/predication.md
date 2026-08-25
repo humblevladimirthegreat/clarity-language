@@ -3,7 +3,7 @@
 
 How Agelan says English *to be* for **kind / role** (*Azawan is a teacher*) and **identity** (*Clark is Superman*) — without a general *to-be* verb.
 
-[TODO: justify why no general to-be]
+Why no copula: every job English gives *to be* already has its own shape here. Kind / role is subject + classifying adjective; identity is the closed **SAME** pattern ([below](#identity)); equal degree on a scale is the [equative](comparatives.md#equatives). A general *to-be* would blur those distinct jobs without adding a meaning of its own.
 
 ## Beginner
 <a id="beginner"></a>
@@ -197,11 +197,9 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 | Pattern | Example | Reading |
 |---------|---------|---------|
-| Soft / hedged class | `zazawan gedagel` + open packaging or `/w/` hedge | *Azawan is a teacher (among other things)* / *allegedly…* |
+| Soft / hedged class | plain classifying clause (`zazawan gedagel`) with a `/w/` hedge stacked on the classifying `/ɡ/` | *Azawan is something of a teacher* / *a teacher, sort of* |
 | Characterizing / habitual | `zazawan gedagel hual` | *Azawan is the teaching type* — [**hual**](restrictors.md) |
 | Negation | `zazawan gul gedagel` | *Azawan is not a teacher* — [negation **u**](coordination.md#negation-u) |
-
-TODO: The first row is unclear, where is the w hedge?
 
 Values still stack on the classifying `/ɡ/` (`gedagel w-…xa…`) when the point is gratitude, judgment, or other need framing of that role — [values.md](values.md).
 

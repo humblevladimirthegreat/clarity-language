@@ -29,29 +29,28 @@ These four sit in a mid-to-open range that stays singable at the top of an untra
 
 There is no phonemic voiced / unvoiced contrast; voiced is preferred so the vocal cords can stay engaged through the letter. Unvoiced variants are fine for style.
 
-| Letter | IPA | English cue |
-|--------|-----|-------------|
-| **h** | /ɦ/ | *ahead* |
-| **w** | /w/ | *we* |
-| **g** | /ɡ/ | *go* |
-| **d** | /d/ | *do* |
-| **j** | /j/ | *yes* (Germanic *j* as in *ja*) |
-| **b** | /b/ | *be* |
-| **z** | /z/ | *zoo* |
-| **m** | /m/ | *me* |
-| **n** | /n/ | *no* |
-| **v** | /v/ | *vie* |
-| **l** | /l/ | *lie* |
-| **r** | /ɹ/ | *red* |
-| **x** | /ʒ/ | *vision* (the *si*) |
-[TODO: columns for unvoiced variant. Leave cell blank if unused in SAE]
+| Letter | IPA | English cue | Unvoiced variant | Example |
+|--------|-----|-------------|------------------|---------|
+| **h** | /ɦ/ | *ahead* | /h/ — *hat* | `huan` /ɦu.ɑn/ |
+| **w** | /w/ | *we* | | `wul` /wul/ |
+| **g** | /ɡ/ | *go* | /k/ — *kite* | `gedagel` |
+| **d** | /d/ | *do* | /t/ — *toe* | `daxal` |
+| **j** | /j/ | *yes* (Germanic *j* as in *ja*) | | `jael` /ja.el/ |
+| **b** | /b/ | *be* | /p/ — *pay* | `bodol` |
+| **z** | /z/ | *zoo* | /s/ — *sea* | `zazawan` |
+| **m** | /m/ | *me* | | `zemogol` |
+| **n** | /n/ | *no* | | `na` /na/ |
+| **v** | /v/ | *vie* | /f/ — *fee* | `veguxel` |
+| **l** | /l/ | *lie* | | `zel` /zel/ |
+| **r** | /ɹ/ | *red* | | `reu` /ɹeu/ |
+| **x** | /ʒ/ | *vision* (the *si*) | /ʃ/ — *shy* | `xuxul` |
 
-[TODO: add examples with IPA; use component that allows tts]
+## Intermediate
+<a id="intermediate"></a>
 
 ### Phonotactics (word shape)
 <a id="phonotactics"></a>
 
-[TODO: move this section to intermediate, beginners don't need this]
 A content word has these parts, written as **one unbroken token**:
 
 1. Part-of-speech prefix
@@ -59,7 +58,8 @@ A content word has these parts, written as **one unbroken token**:
 3. The root(s) — more than one if compounded
 4. The [reference suffix](reference-suffix.md) (**-l**, **-m**, **-n**, or **-r**)
 5. Optional plural **-sh** after the reference suffix — [plurality.md](plurality.md)
-[TODO: mention numbers]
+
+Number words are a closed exception built on the PoS prefix plus an **r**-initial marker ([number-word exception](#number-word-exception)).
 
 **Writing:** write **role letter + root + ending** as one word (`zazawan`); native Agelan is **lowercase** only ([capitalization](core.md#capitalization)). Full orthography: [core.md § Orthography](core.md#orthography).
 
@@ -72,9 +72,6 @@ A content word has these parts, written as **one unbroken token**:
 **No clash with endings / numbers:** mid-root **l** / **r** are always followed by a vowel inside the root, so they are not mistaken for a final suffix. Ordinary content after a PoS letter begins with a **vowel**, so **`PoS+r…`** stays [number-only](#number-word-exception).
 
 **Compounds:** mid-word **`x`** separates halves. Mid-word **`x`** is only the compound joiner (never part of a root); word-initial **`x`** is the discourse-marker prefix. Family map: [x-compounds.md](x-compounds.md).
-
-## Intermediate
-<a id="intermediate"></a>
 
 ### Number-word exception
 <a id="number-word-exception"></a>
@@ -90,11 +87,9 @@ After a PoS prefix, a following **r** (start of the number marker) may form a cl
 
 The Beginner rules above are the usable inventory. This checklist is the design filter behind them — what Agelan avoids so ordinary singing stays easy:
 
-TODO: replace the vowel letters below with the actual IPA
-
 | Constraint | Why it helps | How Agelan keeps it |
 |------------|--------------|---------------------|
-| No fully closed vowels | Closed vowels shrink comfortable high range | Four mid-to-open vowels (**e u o a**) |
+| No fully closed vowels | Closed vowels shrink comfortable high range | Four mid-to-open vowels (/e̞ ʌ o ɑ/) |
 | No diphthongs | Glides force tract changes mid-note | Stacked letters = separate syllables (`juon` = *ju'on*) |
 | Few consonant clusters | Clusters are harder to pronounce quickly | Ordinary shape is onset + vowel; limited exceptions below |
 | No voice contrast | Voiceless stops cut the note; singers often voice them anyway | Voiced preferred; unvoiced allowed as style only |
@@ -116,10 +111,6 @@ Versus (not Agelan — built to violate the constraints):
 / seiɹ ˈʈʂuɹt tis ˈheb.ɡiɹn fuofts /
 
 The first should stay easier to sustain even when the second is only a little harder to speak.
-
-### Design notes
-
-- Unused potential onset clusters (not part of the language): *gw*, *vw*, *xw*, *bl* (should not mean left-aligned *b*).
 
 ## See also
 

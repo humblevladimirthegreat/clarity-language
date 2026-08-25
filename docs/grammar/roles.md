@@ -28,14 +28,13 @@ PoS + {a|u|o} + x + ROOT + {-l|-m|-n|-r}
 | **ROOT** | Event stem (**`a`/`u`**) or relation stem (**`o`**) — `V(CV)+` |
 | **Ending** | Ordinary [reference-suffix](reference-suffix.md) senses — not value/ability ending tables |
 
-**Mnemonic:** **`a`** ≈ additive / doer; **`u`** ≈ subtractive / undergoer; **`o`** ≈ oblique / `/b/` pole — vowel echo only, not reviser or join readings. Mid-word **`x`** map: [x-compounds.md](x-compounds.md).
-[TODO: move mnemonic to column in below table]
+| ROLE | Form | ROOT type | Referent | Mnemonic |
+|------|------|-----------|----------|----------|
+| **`a`** | `…axROOT…` | **event** (verb / event noun stem) | **agent** — doer / subject-like participant of that event | **a** ≈ additive: adds a doer |
+| **`u`** | `…uxROOT…` | **event** | **patient** — undergoer / object-like participant of that event | **u** ≈ subtractive: undergoes it |
+| **`o`** | `…oxROOT…` | **relation** (complex `/ɡ/` / `/h/` / [join-relation](join-extras.md#join-relations) root, …) | **reltum** — the `/b/` argument pole of that relation | **o** ≈ oblique: the `/b/` pole |
 
-| ROLE | Form | ROOT type | Referent |
-|------|------|-----------|----------|
-| **`a`** | `…axROOT…` | **event** (verb / event noun stem) | **agent** — doer / subject-like participant of that event |
-| **`u`** | `…uxROOT…` | **event** | **patient** — undergoer / object-like participant of that event |
-| **`o`** | `…oxROOT…` | **relation** (complex `/ɡ/` / `/h/` / [join-relation](join-extras.md#join-relations) root, …) | **reltum** — the `/b/` argument pole of that relation |
+Vowel echo only — not reviser or join readings. Mid-word **`x`** map: [x-compounds.md](x-compounds.md).
 
 #### Endings
 

@@ -89,3 +89,4 @@ long term:
 https://main.d2xds94zsgwptg.amplifyapp.com
 -local llm systematically review entire lexicon
 -vocab flashcard generator/system — [docs/proposals/vocab-flashcards.md](docs/proposals/vocab-flashcards.md)
+- unused potential onset clusters (not part of the language; moved from phonology.md Design notes): *gw*, *vw*, *xw*, *bl* (should not mean left-aligned *b*)

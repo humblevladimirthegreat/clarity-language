@@ -58,7 +58,7 @@ gloss: `z-cloud` · `z-snow` · `z-would-work`
 
 *Clouds or snow would work (for that outcome).*
 ```
-[TODO: mnemonic ties ao to the general vowel series]
+**Mnemonic:** the join’s first vowel is series **`a`** (*add*) — add the antecedent and the outcome follows; closing with exact **-l** (`…aol`) narrows it to the one settled route.
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -175,12 +175,10 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 Use exclusion / never — not a different gloss on `ao` / `aom`:
 
-TODO: mnemonic column on these tables to show application of vowel series
-
-| Prefer | Gloss |
-|--------|--------|
-| **`guan` / `huan`** | *without / excluding* the antecedent on the **effect** |
-| **`hal`** (restrictor) | *never* under the circumstance where the antecedent is absent |
+| Prefer | Gloss | Mnemonic |
+|--------|--------|----------|
+| **`guan` / `huan`** | *without / excluding* the antecedent on the **effect** | series **`u`** (*undo*): take the antecedent away and the effect fails |
+| **`hal`** (restrictor) | *never* under the circumstance where the antecedent is absent | exact **-l**: the circumstance is closed off completely |
 
 | Agelan (schematic) | Reading |
 |---------------------|---------|
@@ -219,10 +217,6 @@ main sentence …  horodom / heluvem / hurugum  bodol   [dependent sentence]
 | **`IF`** (default) | **`orodo`** | 🚪 *door* → *opportunity* | one-way: under dependent, claim matrix; dependent **not** asserted as fact; **not** “matrix only if dependent” | open sufficient (`…aom` / `haon`) |
 | **`IFF`** (marked) | **`eluve`** | ↔️ *left-right* → *reciprocity* | both ways: dependent and matrix stand or fall together | sufficient **and** necessary — not bare `IF` |
 | **`BECAUSE`** | **`urugu`** | 🧱 *brick* → *foundation* | asserted explanation — reason the matrix rests on | explanation (not bare conditional) |
-
-**Mnemonic:** *if* opens a one-way door; *iff* is the two-way arrow; *because* is the foundation under the claim.
-
-TODO: have mnemonic be a column instead of free text
 
 **Ending:** clause-pole overlays always take **-m** (metaphorical published sense) — **`horodom`** / **`heluvem`** / **`hurugum`**. Ordinary literal content on the same roots still uses ordinary endings (`zorodol` *a door*; `zeluvel` *reciprocity*; `zurugul` *a brick*).
 
@@ -365,21 +359,17 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 ### Factivity (`IF` vs `BECAUSE`)
 <a id="factivity"></a>
 
-English *because* / *if* blur whether the dependent is **on the world ledger**. 
-
-TODO: use clearer language than "world ledger"
+English *because* / *if* blur whether the dependent is **asserted as a fact about the world**.
 
 Agelan separates that on the clause root:
 
 | Root | Dependent | Matrix | Link |
 |------|-----------|--------|------|
-| **`IF`** (`horodom`) | **not** asserted as fact — hypothetical / opportunity door | claimed **under** the dependent | one-way open sufficient |
-| **`IFF`** (`heluvem`) | stands or falls **with** the matrix — not a free freestanding fact claim | stands or falls **with** the dependent | both directions |
-| **`BECAUSE`** (`hurugum`) | **asserted** as the foundation the matrix rests on | asserted (or already in force) | explanation |
+| **`IF`** (`horodom`) 🚪 | **not** asserted as fact — hypothetical / opportunity door | claimed **under** the dependent | one-way open sufficient |
+| **`IFF`** (`heluvem`) ↔️ | stands or falls **with** the matrix — not a free freestanding fact claim | stands or falls **with** the dependent | both directions |
+| **`BECAUSE`** (`hurugum`) 🧱 | **asserted** as the foundation the matrix rests on | asserted (or already in force) | explanation |
 
-**Mnemonic:** *if* does not put the dependent on the ledger; *because* does; *iff* locks both sides of the hinge.
-
-TODO: mnemonic should be a column and use the metaphor emoji as the reminder
+Mnemonic: 🚪 opens onto a maybe, 🧱 is laid down as real, ↔️ welds both sides together.
 
 ```
 `… hurugum bodol zarunal.`
@@ -400,32 +390,30 @@ gloss: `h-IF` · `b-next-clause` · `z-rain`
 #### Epistemic *because* (no twin root)
 <a id="epistemic-because"></a>
 
-English often uses *because* for **speaker grounds** (*I say P because Q* / *I think P, because…*) without putting Q on the world ledger as the matrix’s foundation. Agelan keeps **`BECAUSE`** for **world-reason** under the claim.
+English often uses *because* for **speaker grounds** (*I say P because Q* / *I think P, because…*) without asserting Q as a fact of the world that grounds the matrix. Agelan keeps **`BECAUSE`** for **world-reason** under the claim.
 
 | English bundle | Prefer |
 |----------------|--------|
 | *P because Q* (Q grounds P in the world) | **`hurugum bodol`** (+ evidentiality / [**CAUSE**](special-vocabulary.md#cause) when naming mechanism) |
 | *I think / say P because Q* (Q is my reason for the take) | [**COMMENT**](commentary.md#comment) on the matrix (`huhom`, …); optional **`hurugum bodol`** only if Q is also asserted as world-foundation |
 | *P, since / given that Q* (Q already shared) | **`hurugum bodol`** (Q asserted); soft force / evidentiality if the warrant is tentative |
-| *P if Q* (no ledger for Q) | **`horodom bodol`** — never stretch **`BECAUSE`** into a soft *if* |
+| *P if Q* (Q not asserted) | **`horodom bodol`** — never stretch **`BECAUSE`** into a soft *if* |
 
 ### Stacks (evidentiality, mechanism, habit)
 <a id="stacks"></a>
 
-| Stack | Role |
-|-------|------|
-| Evidentiality `/h/` | *how you know* the link — [evidentiality](commentary.md#evidentiality) (**INFERRED** `eve`, **PATTERN** `awa`, …) |
-| **`CAUSE`** (`heragem`) | *mechanism framing* — [CAUSE mood](special-vocabulary.md#cause); not condition type, not NATURAL |
-| **`hual` / `huam`** | habitual / characterizing pattern — [restrictors](restrictors.md) |
-| Universality | how exceptionless the claim is — [universality moods](special-vocabulary.md#universality) |
-| Values `xo` / `xe` | ought or motive — [above](#preference-vs-law) |
-| COMMENT | speaker-grounds / attitude — [epistemic *because*](#epistemic-because) |
+| Stack | Role | Mnemonic |
+|-------|------|----------|
+| Evidentiality `/h/` | *how you know* the link — [evidentiality](commentary.md#evidentiality) (**INFERRED** `eve`, **PATTERN** `awa`, …) | 🔍 the trail behind the claim |
+| **`CAUSE`** (`heragem`) | *mechanism framing* — [CAUSE mood](special-vocabulary.md#cause); not condition type, not NATURAL | ⚙️ the gears inside |
+| **`hual` / `huam`** | habitual / characterizing pattern — [restrictors](restrictors.md) | 🔁 whenever, as a rule |
+| Universality | how exceptionless the claim is — [universality moods](special-vocabulary.md#universality) | 🌐 no exceptions anywhere |
+| Values `xo` / `xe` | ought or motive — [above](#preference-vs-law) | 🧭 the need it serves |
+| COMMENT | speaker-grounds / attitude — [epistemic *because*](#epistemic-because) | 💭 what the speaker thinks |
 
 Particular episode (*this delay was caused by…*) vs standing law (*clouds for rain*) share the same necessary/sufficient shapes; tense, **`hual`**, evidentiality, **`CAUSE`**, and universality warrant distinguish them.
 
 Causal “laws” show their warrant via evidentiality and universality — not via a stronger join. Mechanism highlight uses **`heragem`**; exceptionlessness uses **`hafafal`**.
-
-TODO: there should be a mnemonics column with emoji metaphor
 
 ### English → Agelan
 <a id="english-cues"></a>
@@ -463,13 +451,13 @@ TODO: there should be a mnemonics column with emoji metaphor
 ### Translation practice
 <a id="translation-practice-advanced"></a>
 
-Short drills on this Advanced band. Try each item before opening **Show answer**. **`hurugum`** puts the dependent on the world ledger; **`horodom`** does not; speaker-grounds stay **`huhom`**. Habit uses **`hual`**.
+Short drills on this Advanced band. Try each item before opening **Show answer**. **`hurugum`** asserts the dependent as a fact the matrix rests on; **`horodom`** does not; speaker-grounds stay **`huhom`**. Habit uses **`hual`**.
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `aruna` *rain* · `ogulo` *cloud* · `awu` *walk* · `ezele` *sleep* · `odo` *next clause* · `orodo` *if* · `eluve` *iff* · `urugu` *because* · `uho` *commentary* (**`huhom`**)
 
 #### English → Agelan
 
-**1.** *Azawan walks because it rains.* (rain is on the ledger)
+**1.** *Azawan walks because it rains.* (rain is asserted)
 
 ::: details Show answer
 `zazawan vawul hurugum bodol zarunal.`

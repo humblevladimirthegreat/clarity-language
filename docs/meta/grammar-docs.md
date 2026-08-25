@@ -260,4 +260,3 @@ After editing Markdown under `docs/` (or `AGENTS.md` / `TODO.md`), run **`npm ru
 
 # Open style questions
 - consolidate final word shape into a single place instead of a bunch of places where it is either incomplete or uses unlearned forms
-- if there is a TODO item, then try to resolve that item is there is a clear action. If it says to consider doing something, then present options to the user in the chat window (leave the TODO unchanged in the doc)

@@ -5,7 +5,7 @@ Package wording (cite / aside / mention / opaque) with a PoS, TYPE, EDGE, and en
 ## Beginner
 <a id="beginner"></a>
 
-[TODO: add introduction]
+English marks special wording with quotes, parentheses, and italics. Agelan does it with **span fences**: a PoS letter plus a bracket pair in writing (or open / close words in speech). The bracket shape tells you the **type** — cite, mention, aside, or opaque.
 
 ### Writing vs speech
 <a id="writing-vs-speech"></a>
@@ -13,10 +13,8 @@ Package wording (cite / aside / mention / opaque) with a PoS, TYPE, EDGE, and en
 | Channel | Form |
 |---------|------|
 | **Writing (preferred)** | **PoS letter** + optional **`@`** / **`~`** + brackets — type from bracket shape; marks sit **after** the PoS (`d@[…]`, `d~[…]`); anaphor uses interior **`=`** (`d[=]`) |
-| **Speech** | full **open** `{PoS}{TYPE}x{EDGE}{ENDING}`; full **close** when a multi-token open needs an explicit close |
 
-Same split as number shorthand (`g+3` written, full CV spoken). Prefer brackets in ordinary text when a bracket form exists.
-[TODO: remove this section; only mention speech in intermediate]
+Same split as number shorthand (`g+3` written, full CV spoken); the spoken shapes are Intermediate ([below](#shape)). Prefer brackets in ordinary text when a bracket form exists.
 
 ### Writing fences
 <a id="writing"></a>
@@ -39,11 +37,11 @@ Same split as number shorthand (`g+3` written, full CV spoken). Prefer brackets 
 Anaphor (**-r**): interior **`=`** (`d[=]`, `d{=}`, `d(=)`, `d<=>`).
 
 ```
-`z<he>n d[hi] v<said>l.`
+`zehadon v[egu] d[jael]l.`
 
-gloss: `z-he` · `d-[hi]` · `v-said`
+gloss: `z-listener` · `v-[sing]` · `d-[yes]`
 
-*He said “hi.”*
+*You “sing” a “yes.”*
 ```
 
 ```
@@ -78,7 +76,7 @@ The open’s PoS is the **outer-clause slot** of the **entire** span — not the
 
 | PoS | When it earns its keep | Writing sketch |
 |-----|------------------------|----------------|
-| `/d/` | Default cite object — *said / wrote “…”* | `d[hi]`, `d[=]` |
+| `/d/` | Default cite object — *said / wrote “…”* | `d[jael]`, `d[=]` |
 | `/z/` | The wording or title **is** the subject | `z@[Hamlet]`, `z[=]` |
 | `/b/` | Host needs a `/b/` argument — *about “…”*, *called “…”* | `b{…}`, `b[=]` |
 | `/v/` | Span **is** the verb (phrase) — echo / report the act as wording | `v[oops]`, `v[=]` |
@@ -88,12 +86,11 @@ The open’s PoS is the **outer-clause slot** of the **entire** span — not the
 | `/x/` | Discourse-only citation (epigraph, freestanding span) | `x[…]` |
 
 ```
-`jul z<you>n v[oops] d<me>l.`
+`jul zehadon v[egu] dumogol.`
 
-gloss: `j-command` · `z-you` · `v-[oops]` · `d-me`
+gloss: `j-command` · `z-listener` · `v-[sing]` · `d-speaker`
 
-*Don’t “oops” me.*
-[TODO: replace with a native agelan example]
+*Don’t “sing” at me.*
 ```
 
 ### Mentions, opaque, and loan words
@@ -221,7 +218,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 ## Intermediate
 <a id="intermediate"></a>
 
-[TODO: this is where you mention that span fences are pronouncable]
+Span fences are **pronounceable**: every bracket has a spoken word shape, given below.
 
 ### Spoken word shape
 <a id="shape"></a>
@@ -266,10 +263,8 @@ The vowel **after** `x` is **EDGE** — how far the open runs.
 |------|-----|--------------|-----------------|
 | **a** | **Multi-token open** — push a stack frame until explicit close (default) | yes | `d[…]` … `]` |
 | **e** | **Clause-scoped** — auto-pop before the next clause-force `/j/` or clause-level `/x/` join (**complete**) | no (auto) | `d[…` run to clause end |
-| **o** | **Atomic** — exactly **one** following token | no | `d[hi]`, `d<sushi>` |
+| **o** | **Atomic** — exactly **one** following token | no | `d[egu]`, `d<sushi>` |
 | **u** | **Empty / redacted** — no interior; also **anaphor** **-r** | no | `d[]`, `d[=]` |
-
-TODO: replace words with actual clarity not foreign hi/sushi
 
 **Anaphor `-r`** always uses EDGE **`u`** in the spoken template (`daxur`). Other EDGE + **-r** combinations are undefined.
 
@@ -482,14 +477,14 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 ### Close forms (complete / truncated / sic / close-all)
 
-| Spoken | Job | Writing |
-|--------|-----|---------|
-| **`xuxul`** | pop **one** — **complete** | matching closer `]` / `}` / `)` / `>` |
-| **`xuxur`** | pop **one** — **truncated** (cut off / trail off) | `-]` / `-}` / `-)` / `->` (ASCII hyphen + closer) |
-| **`xuxun`** | pop **one** — **sic / editorial** (complete as-written, including defects) | `#]` / `#}` / `#)` / `#>` |
-| **`xuxum`** | pop **all** open spans | optional close-all mark `\|` |
-| **`xuxur`** + **`xuxum`** | truncated innermost, then pop all | `-\|` |
-| **`xuxun`** + **`xuxum`** | sic innermost, then pop all | `#\|` |
+| Spoken | Job | Writing | Mnemonic |
+|--------|-----|---------|----------|
+| **`xuxul`** | pop **one** — **complete** | matching closer `]` / `}` / `)` / `>` | exact **-l**: the span closes whole |
+| **`xuxur`** | pop **one** — **truncated** (cut off / trail off) | `-]` / `-}` / `-)` / `->` (ASCII hyphen + closer) | resume **-r**: the wording stops short, resume may pick up |
+| **`xuxun`** | pop **one** — **sic / editorial** (complete as-written, including defects) | `#]` / `#}` / `#)` / `#>` | named **-n**: kept exactly as written, under its own name |
+| **`xuxum`** | pop **all** open spans | optional close-all mark `\|` | soft **-m**: sweep everything lightly |
+| **`xuxur`** + **`xuxum`** | truncated innermost, then pop all | `-\|` | |
+| **`xuxun`** + **`xuxum`** | sic innermost, then pop all | `#\|` | |
 
 ```text
 xuxul  =  x + u + x + u + l
@@ -499,10 +494,6 @@ xuxum  =  x + u + x + u + m
 ```
 
 TODO: reserve xuxun as normal proper. Replace truncated with editorial
-
-**Mnemonic:** close endings are not open exact/paraphrase/proper. Open **-n** = proper/titled span; close **-n** = sic. Open **-r** = span anaphor; close **-r** = truncated.
-
-TODO: move mnemonic to column in table above
 
 Truncated and sic spans **are committed** and enter anaphor history (`d[=]` / `daxur` may resume them). Combined `-\|` / `#\|` are writing-only shorthand for two spoken closes; bare `xuxur` / `xuxun` never means pop-all by themselves. Illegal: `\|-` / `\|#` (mark must precede close-all).
 

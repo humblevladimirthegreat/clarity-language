@@ -64,12 +64,6 @@ Write **role letter + root + ending** as **one token** (`zazawan`). Full writing
 
 **-n** on other role letters, multipart names, and titled events are Intermediate ([proper name](#proper-name--n)).
 
-### Plural `-sh` (pointer)
-
-After the ending, **-sh** marks an **associative group** (anchor and associates) — or related jobs on adjectives / vocatives. Short form: `…r` is one referent; `…rsh` is that referent **and associates**. Inclusive *we* is special **`ana`**, not **-sh**. Full rules: [plurality.md](plurality.md).
-
-[TODO: remove plural mention here]
-
 ### Translation practice
 <a id="translation-practice"></a>
 

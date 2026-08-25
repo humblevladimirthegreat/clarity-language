@@ -79,12 +79,11 @@ gloss: `d-apple` · `v-tempt` · `d-water` · `v-drink` · `vam`
 ```
 
 ```
-`A B xam.`
+`zazawan zulonun xam.`
 
-gloss: `x-…` · `x-…` · `xam`
+gloss: `z-Azawan` · `z-Ulonun` · `xam`
 
-*A and B.*
-[TODO: give actual example]
+*Azawan and Ulonun.*
 ```
 
 ### Arity: list, focus, and bare
@@ -422,7 +421,7 @@ Apply these readings when there is only one item in the list.
 | **…un** (`zun` / …) | *not X* (stock / conventional) |
 | **…ur** (`zur` / …) | *something other than X* |
 
-TODO: clarify -un
+**…un** is the stock denial — the conventional, formulaic *not X* (a set phrase rather than a computed exclusion). Use **…ul** / **…um** for ordinary denials; **…un** only where the denial itself is the fixed expression.
 
 **Set — bare**
 
@@ -458,22 +457,7 @@ Under [question](questions.md#interrogative-force) force: yes/no, offer, emptine
 <a id="rank-joins"></a>
 <a id="priority-ranking-e"></a>
 
-**e** / **oe** are **directional** — earlier conjuncts outrank later (*A ≻ B ≻ C*). **ae** is **not** directional: multi **ae** = equal rank / tie; multi **ae** + SHARED scale = [equative](comparatives.md#equatives). **ue** is [rank reversal](#invert-u-stacks): later outranks earlier.
-
-| Vowel | Exclusivity | Direction | Typical use |
-|-------|-------------|-----------|-------------|
-| **e** | not claimed | earlier ≻ later | preference ladders; comparatives with SHARED scale |
-| **ae** | equal | no order | tie / draw; *as ADJ as* with scale |
-| **oe** | exclusive — pick one | earlier ≻ later | menu fallback; bare + scale = empty superlative |
-| **ue** | not claimed | later ≻ earlier | ascending build-up lists |
-
-```
-`zadedal zogevel zudural zel.`
-
-gloss: `z-tea` · `z-coffee` · `z-water` · `zel`
-
-*tea ≻ coffee ≻ water.*
-```
+The four rank vowels (**`e`** / **`ae`** / **`oe`** / **`ue`**) and their directions are introduced in [Beginner](#set-joins-and-rank-joins). Two Intermediate refinements: multi **`ae`** + SHARED scale is the [equative](comparatives.md#equatives) (*as ADJ as*), and bare **`oe`** + SHARED scale is the empty superlative (*no biggest comes to mind*).
 
 ```
 `zazawan zulonun zael gonudam.`
@@ -484,8 +468,6 @@ gloss: `z-grace` · `z-courage` · `zael` · `g-challenging`
 ```
 
 Fence chains keep ranking from **spoken conjunct order** before the right-close join.
-
-TODO: isn't this section already covered in beginner? See what else is already described for rank join.
 
 ### Invert (**`ua`** / **`uo`** / **`ue`**)
 <a id="invert-u-stacks"></a>
@@ -595,23 +577,6 @@ gloss: `z-dog` · `z-cat` · `zam` · `g-ownership` · `b-grace`
 
 *Azawan's (dog and cat).*
 ```
-
-### Join scope islands
-<a id="join-scope-islands"></a>
-<a id="join-scope-islands-rules"></a>
-
-When other same-slot material sits nearby, wrap the sub-stretch and its join **inside** a [scope island](spans.md#adjunct-scope-islands) **`^ … ^`**. The join stands **inside** the island and absorbs only matching-role material there.
-
-| Shape | Reading |
-|-------|---------|
-| `zazawan ^ zudural zal ^ zam` | *Azawan and (just water)* |
-| `zazawan ^ zal ^ zam` | *Azawan and nothing* |
-| `^ zudural zal ^` | *just water* alone in the slot |
-| `^ hadazol z<A> z<B> zam ^` | *maybe (A and B)* |
-
-One island per clause; no nesting of islands. Same-slot material outside an island with no outer join tying it in is illegal.
-
-TODO: span islands aren't introduced yet, so move this section to Advanced
 
 ### Frame echo (two-beat)
 <a id="frame-echo"></a>
@@ -816,6 +781,23 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 ## Advanced
 <a id="advanced"></a>
+
+### Join scope islands
+<a id="join-scope-islands"></a>
+<a id="join-scope-islands-rules"></a>
+
+Span fences are an [Intermediate span topic](spans.md#adjunct-scope-islands); islands over joins build on them.
+
+When other same-slot material sits nearby, wrap the sub-stretch and its join **inside** a [scope island](spans.md#adjunct-scope-islands) **`^ … ^`**. The join stands **inside** the island and absorbs only matching-role material there.
+
+| Shape | Reading |
+|-------|---------|
+| `zazawan ^ zudural zal ^ zam` | *Azawan and (just water)* |
+| `zazawan ^ zal ^ zam` | *Azawan and nothing* |
+| `^ zudural zal ^` | *just water* alone in the slot |
+| `^ hadazol z<A> z<B> zam ^` | *maybe (A and B)* |
+
+One island per clause; no nesting of islands. Same-slot material outside an island with no outer join tying it in is illegal.
 
 ### Named phrase **`-n`**
 <a id="named--conventional-ending-phrase-level-all-join-vowels"></a>

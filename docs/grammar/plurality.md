@@ -211,7 +211,7 @@ Mark when the wrong reading would matter: co-agency → **`ana`** or a join; “
 **Contrast with `/h/`:** *three times* / *multiple times* / habitual *always* are clause framing ([numbers](numbers.md) under `/h/`, or **`hual`**). Verb **-sh** is only when the **verb’s own referent** is a set of doings.
 
 * **-lsh** / **-msh** — first mention of several instances as one event-set ("they **held a series of** meetings").
-* **-nsh** — a **named series** (*the Olympic Games* as the series) — contrast singular **-n** (*perform* **[Hamlet]** once). [TODO: come up with better example, Olympic Games is a noun]
+* **-nsh** — a **named series** of doings under one title or habit-name (*Azawan’s morning walks* held as the series) — contrast singular **-n** (*perform* **[Hamlet]** once).
 * **-rsh** — resume the prior actions and related. "He did **that (and related actions)**". 
 
 **Not verb -sh:** plural *people* cooking once → plural on the **noun**, singular verb. *Knocked several times* as a count → **`h+3`** / **`h+`**, singular verb (unless the bout is itself the discourse set).

@@ -19,10 +19,7 @@ Write **role letter + root + ending** as one word:
 
 Prefer a published root when the English meaning matches (`dabebal` for *apple*). Use **-m** when the match is the published **metaphorical** sense (`guzem` for *happy*).
 
-Final letters (**-l** / **-m** / **-n** / **-r**) say how the root enters the talk — full list in [reference-suffix.md](reference-suffix.md).
-
-**Mnemonic (endings):** **-l** literal kind, **-m** metaphorical sense, **-n** proper / named, **-r** resume (point back).
-[TODO: don't mention ending letters yet. only use literal words for now]
+Words end in a final letter that says how the root enters the talk — you will meet those letters in [reference-suffix.md](reference-suffix.md). For now, read the whole word as its plain meaning.
 
 ##### Capitalization
 <a id="capitalization"></a>
@@ -40,21 +37,19 @@ When you are **not** filling a clause slot — lexicon head, list, title line, o
 #### Role letters (parts of speech)
 <a id="part-of-speech-prefixes"></a>
 
-| First letter | Job |
-|--------------|-----|
-| `/z/` | subject (who or what the sentence is about as actor) |
-| `/d/` | direct object (who or what is acted on) |
-| `/b/` | extra noun tied to a complex adjective or adverb |
-| `/v/` | verb (the action) |
-| `/ɡ/` | adjective (property or kind label) |
-| `/w/` | extra detail on the previous adjective |
-| `/h/` | adverb (how / when / where / to whom, and similar) |
-| `/x/` | discourse marker (link sentences, continue under the same speech act) |
-| `/j/` | utterance marker (start a turn: statement / question / command, call someone, *yes* / *no*, …) |
+| First letter | Job | Mnemonic |
+|--------------|-----|----------|
+| `/z/` | subject (who or what the sentence is about as actor) | **z** = the star of the sentence |
+| `/d/` | direct object (who or what is acted on) | **d** = done to |
+| `/b/` | extra noun tied to a complex adjective or adverb | **b** = bolted-on extra |
+| `/v/` | verb (the action) | **v** = the verb itself |
+| `/ɡ/` | adjective (property or kind label) | **ɡ** = grade / property label |
+| `/w/` | extra detail on the previous adjective | **w** = with that adjective |
+| `/h/` | adverb (how / when / where / to whom, and similar) | **h** = how, when, where |
+| `/x/` | discourse marker (link sentences, continue under the same speech act) | **x** = extend the speech act |
+| `/j/` | utterance marker (start a turn: statement / question / command, call someone, *yes* / *no*, …) | **j** = jump to a new act |
 
 English *to* / *for* (recipient) uses a complex adverb (`/h/` + `/b/`) plus that extra noun — the same pattern as other “relation + who/what” meanings on the verb.
-
-[TODO: mnemonic column so users can remember letter-job assignments]
 
 ### Default sentence order
 
@@ -69,8 +64,6 @@ You may rearrange those core roles for style or to put something in **focus** (w
 
 **Mnemonic:** `/j/` = **jump** to a new speech act; `/x/` = **extend** under the same act.
 
-[TODO: clarify what a "turn" is. Might be unnecessary to mention turns here.]
-
 ### Nouns and verbs
 
 | Slot | Job |
@@ -84,13 +77,12 @@ To say someone *is* a kind or has a property, use subject + adjective — there 
 **Mnemonic:** the property is an adjective **label** on the subject — no linking verb.
 
 ```
-`zazawan gedagel.`
+`zeborel gedagel.`
 
-gloss: `z-grace` · `g-teacher`
+gloss: `z-person` · `g-teacher`
 
-*Azawan is a teacher.*
+*A person is a teacher.*
 ```
-[TODO: change example, we haven't introduced proper names yet]
 
 ```
 `zogodol gulebul.`
@@ -119,8 +111,7 @@ gloss: `z-dog` · `g-blue`
 
 `/w/` adds detail to the **previous adjective** (`/ɡ/` unit) — intensity, manner of the property, and similar.
 
-It sits on that adjective: normally right after the `/ɡ/` (or after that `/ɡ/`’s attached `/b/` if complex). Several `/w/` words may sit in a row on one `/ɡ/` (`guzem wazebol wazebel`). If the relation needs an extra noun, use complex `/ɡ/` + `/b/` instead.
-[TODO: give translation of this example]
+It sits on that adjective: normally right after the `/ɡ/` (or after that `/ɡ/`’s attached `/b/` if complex). Several `/w/` words may sit in a row on one `/ɡ/` (`guzem wazebol wazebel` = *happy, loudly, very loudly*). If the relation needs an extra noun, use complex `/ɡ/` + `/b/` instead.
 
 **Mnemonic:** `/w/` = **with** the adjective (narrow); `/h/` = the **whole** sentence. Same root, different first letter → different reach.
 
@@ -427,9 +418,7 @@ The package is the same as after-the-noun order: plain `/ɡ/`, or complex `/ɡ/`
 ### Adverb topic and free-order ties
 <a id="adverb-topic-and-free-order-ties"></a>
 
-**Topic** (*as for X*, *regarding X*) is complex `/h/` + `/b/` naming the topic noun. Highlight focus by rearranging free word order (and ordinary *very*-type words if needed).
-
-[TODO: confirm that the h roots for this is actually defined]
+**Topic** (*as for X*, *regarding X*) is complex `/h/` + `/b/` naming the topic noun. Published **`ahaza`** *topic* is the dedicated host: `hahazal b<X>l` = *as for X*. Highlight focus by rearranging free word order (and ordinary *very*-type words if needed).
 
 There is no fixed order among several `/h/` units. Each unit’s job comes from its dictionary role; spoken order is free. If two units share a role and need a ranking, left-to-right breaks the tie.
 

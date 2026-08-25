@@ -369,9 +369,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 Bare *bad* / *terrible* can hide an unfair or unspoken standard. Keep the ordinary [comparative](#comparatives) fence and put the standard in the **than**-conjunct as a **named comparee**.
 
-Benchmarks are **NP comparees** on the ranked fence — not [ability](ability.md#ability) / [role](roles.md#role-compounds) hosts, and not `/w/`…**-n** on the scale (*spicy* **[Scoville]** names a measurement frame — [reference-suffix](reference-suffix.md)). **Personal standard** is [numeric derivation](numeric-derivation.md#numeric-derivation) on [speaker](pronouns.md#special-pronouns) **`umogo`**; **Everyone** reuses bare named **`zuan`** ([coordination](coordination.md#focus-phrase)).
-
-TODO: personal standard doesn't necessary use speaker pronoun, prefer names (need not be yours)
+Benchmarks are **NP comparees** on the ranked fence — not [ability](ability.md#ability) / [role](roles.md#role-compounds) hosts, and not `/w/`…**-n** on the scale (*spicy* **[Scoville]** names a measurement frame — [reference-suffix](reference-suffix.md)). A **personal standard** is [numeric derivation](numeric-derivation.md#numeric-derivation) on any named person — the speaker (**`umogo`**), a house-cast name, or whoever’s bar is meant; **Everyone** reuses bare named **`zuan`** ([coordination](coordination.md#focus-phrase)).
 
 #### Recipe
 
