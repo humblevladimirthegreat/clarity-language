@@ -55,7 +55,7 @@ There is no phonemic voiced / unvoiced contrast; voiced is preferred so the voca
 A content word has these parts, written as **one unbroken token**:
 
 1. Part-of-speech prefix
-2. Optional mid-word **l** after `/ɡ/` only — **left-bound** adjectives (`gl-`); see [Intermediate](#left-bound)
+2. Optional mid-word **l** after `/ɡ/` only — **left-bound** adjectives (`gl-`)
 3. The root(s) — more than one if compounded
 4. The [reference suffix](reference-suffix.md) (**-l**, **-m**, **-n**, or **-r**)
 5. Optional plural **-sh** after the reference suffix — [plurality.md](plurality.md)
@@ -69,7 +69,7 @@ A content word has these parts, written as **one unbroken token**:
 
 **Word edges:** all **content** words end with a reference suffix (**-l** / **-m** / **-n** / **-r**), optionally followed by plural **-sh** (/ʃ/). Allowed word-final clusters: **-lsh**, **-msh**, **-nsh**, **-rsh**. Digraph **sh** is only this plural marker (word-final, after a reference suffix) — not an ordinary root consonant. Those endings are the audible stop when song compresses pauses. 
 
-**No clash with endings / numbers / left-bound:** mid-root **l** / **r** are always followed by a vowel inside the root, so they are not mistaken for a final suffix. Ordinary content after a PoS letter begins with a **vowel**, so **`PoS+r…`** stays [number-only](#number-word-exception) and **`gl-`** stays [left-bound `/ɡ/`](#left-bound).
+**No clash with endings / numbers:** mid-root **l** / **r** are always followed by a vowel inside the root, so they are not mistaken for a final suffix. Ordinary content after a PoS letter begins with a **vowel**, so **`PoS+r…`** stays [number-only](#number-word-exception).
 
 **Compounds:** mid-word **`x`** separates halves. Mid-word **`x`** is only the compound joiner (never part of a root); word-initial **`x`** is the discourse-marker prefix. Family map: [x-compounds.md](x-compounds.md).
 

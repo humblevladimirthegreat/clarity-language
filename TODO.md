@@ -1,5 +1,34 @@
 # TODO
-review all grammar docs
+proceed. Ensure that the rule is the last digit of the digit group inlcuding exponent - if there is an exponent, it is the last digit of the exponent. If there is no exponent it is the last digit of mantissa (even if none).
+fix any broken links
+ensure we've defined how to combine digits with different oom
+Dates written DDeMMnYYa
+Phonology english-to-agelan conversion prioritizes similar placements 
+Confirm word compounding past two
+Statistics captures consonant and vowel distribution 
+Conceptual metaphor (growth mindset) for failure 
+Consider j pos implies simple command, no pos single word sentence is interjection 
+Voice generator shows IPA
+Ensure asides are allowed on any part of speech. Decide aka type parentheticals
+Single page application?
+Consider formalizing abbreviations (mentions)
+Span mnemonics 
+compound words stop using x, just raw concatenation
+Consider reserving two syllable words for special
+Confirm hyphenated phrases (using cite?)
+How hard is speech to text?
+redundancy mode - if choppy connection, maybe repeat words?
+consider moving reference suffixes before core
+consider moving vowel series before coordination
+consider moving phonology before core
+consistently use role compound for words (teacher)
+remove left join possibility. If needed use revisers "everything except..."
+consider removing -n senses from values
+limit deployments to tagged releases
+if a page doesn't have a particular learning band, state so with an empty section
+doc pages should have table of contents
+completely separate out intermediate/advanced into their own pages
+move design notes (especially undefined/reserved forms) to meta page
 
 ## Unassigned number / derivation readings
 
