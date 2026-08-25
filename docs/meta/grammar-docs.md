@@ -15,7 +15,7 @@ Related meta:
 
 ## Dual role
 
-Each grammar page is both **source of truth** for its subsystem and **learner text**. Prefer teach-first structure over inventory-first dumps in **Beginner**. **Advanced may be inventory-first**; if Advanced dwarfs Beginner, split the file. Unassigned or rejected design stays in [TODO.md](../../TODO.md) or a short **Design notes** appendix — not in Beginner sections.
+Each grammar page is both **source of truth** for its subsystem and **learner text**. Prefer teach-first structure over inventory-first dumps in **Beginner**. **Advanced may be inventory-first**; if Advanced dwarfs Beginner, split the file. Unassigned or rejected design stays in [TODO.md](../../TODO.md) — never in a grammar page appendix.
 
 ## Present the current language only
 
@@ -44,6 +44,46 @@ Headings, leads, and asides must make sense to someone who never saw an earlier 
 | Scare-quotes or scare-emphasis on the “real” way | Implies a fake competing system | Neutral wording |
 
 **Test:** if you delete the phrase and a new learner loses no meaning, delete it. If the only audience for a sentence is a future editor, move it to `TODO.md`, a PR, or this meta page — not the grammar body.
+
+## Contrastive negatives (“X, not Y”)
+
+Default to stating only the allowed form. A contrastive negative spends the learner’s attention on a form they are told *not* to build; most of them exist to correct a writer habit, not teach a reading.
+
+| Smell | Verdict |
+|-------|---------|
+| Boilerplate disclaimers: “X is a **root choice**, not `xa`/`xu` polarity”, “plural **-sh** stays unused on `/h/` `/w/`”, “there is no dedicated root”, “not a fourth vowel/role/join”, “**Not won’t:** …” | Delete. State what the form does instead |
+| **Trap tables** (“Not this (real traps)”, “Traps worth one look”, “Keep these for other jobs”) | Delete from body. If two forms are genuinely confusable *at this band*, cover it with one sentence plus an example of each — see below |
+| “Do not confuse X with Y” | Delete unless the learner will actually produce the wrong form while reading this section |
+
+**When a contrast earns its place** (all three must hold): the learner can plausibly build the wrong form *now*; both forms appear with a real example; and the contrast fits in one or two sentences inside the relevant table row or paragraph. Otherwise cut it.
+
+## Mnemonics live in tables
+
+Do not append free-text `**Mnemonic:**` paragraphs after a table. Put mnemonics in a dedicated column of that table so each row carries its own memory hook. For tables whose rows come from the [vowel series](../grammar/vowel-series.md), the mnemonic column shows how **`a`** / **`o`** / **`e`** / **`u`** maps to that row’s meaning. Metaphor emoji may serve as the visual hook, consistent with published-root conventions.
+
+If a page has several such tables, give each its own mnemonic column; never summarize the whole series once in prose and leave later tables bare.
+
+## Empty bands
+
+An Advanced (or Intermediate) band with nothing to teach is written as one plain sentence, not filled with leftover inventory or a Design-notes dump:
+
+```markdown
+## Advanced
+<a id="advanced"></a>
+
+There is no advanced section for this page. Continue to the next page.
+```
+
+Material that did not make the band belongs in [TODO.md](../../TODO.md), not in a stub appendix on the page.
+
+## Examples use the house cast
+<a id="house-cast"></a>
+
+Example sentences name their people with the [house cast](glosses.md#house-cast): **`zazawan`** / **`zulonun`** / **`zubuzun`** (three single-root names). Do not cast abstract roots as participants (`jal zazawan gedagel`, not “grace is more challenging than courage”). Keep abstract roots for the form being taught.
+
+## Punctuation
+
+Prefer commas, colons, parentheses, or separate sentences over em dashes. An em dash is allowed only when a sentence genuinely needs a strong break; do not use it as default clause glue.
 
 ## Page skeleton
 
@@ -205,7 +245,7 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 | Goals / feature criteria | [why-agelan.md](../grammar/why-agelan.md) (psych); [introduction.md](../grammar/introduction.md) (grammar design) |
 | Core sentence grammar | [core.md](../grammar/core.md) |
 | IPA / pronunciation / phonotactics | [phonology.md](../grammar/phonology.md) (only page that may use IPA) |
-| Unassigned or rejected design | [TODO.md](../../TODO.md) or a short **Design notes** appendix on the grammar page |
+| Unassigned or rejected design | [TODO.md](../../TODO.md) |
 | Short Eng ↔ Agelan checkpoint | End of a page band — [translation-exercises.md](translation-exercises.md); generate via [drill-generation.md](drill-generation.md) |
 | Multi-turn practice | [examples/](../examples/) (not linked from grammar pages) |
 | Editor pedagogy / migration notes | `docs/meta/` only — never from grammar pages |
@@ -218,10 +258,6 @@ Before tagging a section **Beginner**, ask the [three questions](learning-levels
 
 After editing Markdown under `docs/` (or `AGENTS.md` / `TODO.md`), run **`npm run lint:md`**. It checks emphasis balance, slash-joined emphasis, and internal links / anchors. Prefer spaces in slash-joined emphasis (`*a* / *b*`) over `*a*/*b*`. In bold headings or bullets, put forms in backticks only (`**Ranked (`e` / `ae`)**`), not nested bold inside bold.
 
-# Style guidance notes
-- reduce stating negatives "it's X, not Y" "X is done this way. Y is a different form". Decide rules for determining whether we should state contrastive negatives
-- avoid em dash
--analyze the manual changes from git to detect patterns
-- avoid mentioning something comes in a later stage
+# Open style questions
 - consolidate final word shape into a single place instead of a bunch of places where it is either incomplete or uses unlearned forms
 - if there is a TODO item, then try to resolve that item is there is a clear action. If it says to consider doing something, then present options to the user in the chat window (leave the TODO unchanged in the doc)
