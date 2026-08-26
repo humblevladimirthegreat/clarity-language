@@ -535,35 +535,38 @@ Atomic (EDGE **o**): `…axol` / `…axom` / `…axon` (cite examples); same pat
 <a id="literal-content"></a>
 <a id="escape"></a>
 
-When a span-marker word (speech) or a raw bracket / `~` / `@` / `<` / `>` / `=` / `|` / `#` / hyphen-before-closer / scope-island `^` sequence (writing) must appear **as content** inside a span — not for ordinary nesting.
+When a span-marker word or a fence glyph (`[` / `]` / `{` / `}` / `(` / `)` / `<` / `>` / `=` / `|` / `#` / hyphen-before-closer / `^`) must appear **as content** — not ordinary nesting — wrap that token in **atomic opaque**. Writing and speech use the same vehicle. There is no backslash escape.
 
-**Writing:** `\` before `[` / `]` / `{` / `}` / `(` / `)` / `<` / `>` / `~` / `@` / `|` / `#` / `=` / `^` / `-` (when the hyphen would form editorial close). Literal backslash: `\\`.
+The outer span’s wording is the opaque **interior** (the wrapper is packaging, not extra cited words).
 
 ```text
-d[ he typed \] then left ]
-d<code \> 1>
-d[ pipe \| here ]
-d[ score\- ]
-d[ item \# ]
+d[ he typed d<]> then left ]
+d[ d<xuxul> ]
+d[ pipe d<|> here ]
+d[ score d<-> ]
+d[ item d<#> ]
 ```
 
-`d[score\-]` is a **complete** cite whose interior ends in a hyphen. `d[item\#]` is a **complete** cite whose interior ends in `#` — not the special close `#]`.
-
-**Speech:** there is no transparent speech escape. Bind the fence-shaped token as an **atomic opaque** so it is content, not an open/close:
-
+Speech for a fence **word**:
 
 ```text
 daxal duxol xuxul xuxul
 ```
 
-Writing: `d[ d<xuxul> ]`.
+`d[ score d<-> ]` is a **complete** cite whose last content character is a hyphen. `d[ item d<#> ]` is a **complete** cite whose last content character is `#` — not the special close `#]`.
+
+Writing opaque `d<…>` closes on the first `>`. If the blob **contains** `>`, do not use `<>`; write the spoken opaque (EDGE **a** + **`xuxul`**):
+
+```text
+duxal code > 1 xuxul
+```
 
 While scanning a span interior, bare `|` / `#` / hyphen are ordinary content unless they form a special-close digraph with the following closer or close-all. Number words still use `#` for ordinals — [numbers.md](numbers.md) — that is not a span closer.
 
 ### Translation practice
 <a id="translation-practice-advanced"></a>
 
-Short drills on this Advanced band. Try each item before opening **Show answer**. Test how the span **closes** (complete / editorial / proper / close-all), not only the open.
+Short drills on this Advanced band. Try each item before opening **Show answer**. Test how the span **closes** (complete / editorial / proper / close-all), or literal fence material as **opaque** content.
 
 **Roots used here:** `azawa` / `ulonu` / `ubuzu` · `ezabu` *tell* · `uze` *happy* (**-m**)
 
@@ -599,6 +602,12 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 `zulonun d[hi#|] vezabul.`
 :::
 
+**6.** *Azawan said “he typed ] then left.”*
+
+::: details Show answer
+`zazawan d[ he typed d<]> then left ] vezabul.`
+:::
+
 #### Agelan → English
 
 **1.** `zazawan d[hi-] vezabul.`
@@ -629,6 +638,12 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 ::: details Show answer
 *Ulonun said the word “xuxul” (as opaque content inside a cite).*
+:::
+
+**6.** `zulonun duxal code > 1 xuxul vezabul.`
+
+::: details Show answer
+*Ulonun said “code > 1.”* (opaque blob; spoken close — writing `<>` would take the first `>` as closer)
 :::
 
 <a id="xl<spa>n-markers"></a>

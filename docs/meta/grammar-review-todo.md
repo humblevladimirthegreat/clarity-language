@@ -9,7 +9,7 @@ Open review items moved out of the learner-facing pages under `docs/grammar/` (g
 | `commentary.md` | Replace the **-n** COMMENT hold (“named loop”) with the usual proper reading |
 | `commentary.md` | Remove the **-n** distinction on NOTIONAL hold endings |
 | `roles.md` | Think of ways to remove the temptation to use bare spatial left/right; may require rethinking the whole viewpoint-lateral feature |
-| `spans.md` | Consider changing the slash escape to just opaque |
+| `spans.md` | ~~Consider changing the slash escape to just opaque~~ **done**: literal fence material is nested atomic opaque (no `\`); blobs that contain `>` use spoken `…uxal … xuxul` |
 
 ## Structure / ownership
 
