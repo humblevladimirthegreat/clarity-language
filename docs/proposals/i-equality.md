@@ -108,7 +108,7 @@ SHARED scale under bare/focus **`i`**-series stays **non-equative** (equative ne
 
 ### Sequence — **`ae`**
 
-**Not** set emptiness (*nothing*) and **not** rank emptiness (*unspecified ranking*). Sequence frame = steps / procedure / agenda.
+**Not** set emptiness (*nothing*) and **not** rank emptiness (*no favorite*). Sequence frame = steps / procedure / agenda.
 
 **Focus (1 conjunct)**
 

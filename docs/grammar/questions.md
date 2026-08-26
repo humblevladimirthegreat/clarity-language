@@ -452,16 +452,16 @@ Mnemonic for all tables below: first vowel = series job — **`e`** orders (rank
 
 | Form | Under question | Mnemonic |
 |------|----------------|----------|
-| **…el** | *Unspecified ranking?* / *No ordered winner?* | **e** order + exact: is there a fixed order at all? |
-| **…em** | *No ranking?* | **e** order + soft: maybe no order |
+| **…el** | *No favorite?* | **e** order + exact: is the top slot empty? |
+| **…em** | *Are you easy?* / *Whichever?* | **e** order + soft: no pick from the top? |
 | **…ael** | *Tie?* | **a** add equally + exact: added at the same rank |
 | **…aem** | *Probably a tie?* | **a** add equally + soft |
 | **…aen** | *Draw?* (stock) | **a** add equally + stock **n**: the usual draw |
 | **…oem** | *Not sure where to start?* | **o** one + soft: no single starting pick yet |
 | **…oel** | *Do nothing?* / *Skip it?* | **o** one + exact: zero steps chosen |
-| **…uem** | *No ascending ranking?* | **u** undo the ascending order + soft |
-| **…uel** | *No preference (ascending)?* | **u** undo the ascending order + exact |
-| **…en** | *Unspecified ranking?* (stock) | **e** order + stock **n**: usual open order |
+| **…uem** | *Don't mind?* / *No objection?* | **u** undo ascending + soft: no veto? |
+| **…uel** | *No least-favorite?* / *No one last?* | **u** undo ascending + exact: is the bottom slot empty? |
+| **…en** | *No favorite?* (stock) | **e** order + stock **n**: usual empty top |
 | **…er** | *What’s the priority?* (fill-ask) | **e** order + fill **r**: name the priority |
 
 #### Set — focus (under question)

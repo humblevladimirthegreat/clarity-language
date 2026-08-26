@@ -216,7 +216,8 @@ Use **`oe`** for exclusive *ladders* (triage / pick-one along the scale). **`ue`
 | `zazawan zulonun zubuzun zem gonudam` | *Azawan ≻ Ulonun ≻ Ubuzun on challenge* (open) |
 | `zazawan zulonun zoel gonudam` | *Azawan is more challenging than Ulonun* (exclusive ranked ladder) |
 | `zazawan zulonun zuel gonudam` | *Azawan is less challenging than Ulonun* |
-| `zel gonudam` | *unspecified who’s most challenging* |
+| `zel gonudam` | *unspecified who’s most challenging* / *no favorite on challenge* |
+| `zuel gonudam` | *unspecified who’s least challenging* / *no least-favorite on challenge* |
 | `zoel gonudam` | *there is no most challenging* |
 | `zoem gonudam` | *no most challenging comes to mind* |
 | `zazawan zuel gonudam` | *Azawan is the least challenging (of all)* |

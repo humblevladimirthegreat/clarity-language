@@ -154,7 +154,7 @@ These are the joins you meet first. Each row is **bare** (0 conjuncts) or **focu
 | `zul` / `zum` / `zun` + `z<X>l` | focus | *not X* |
 | `zual` + `z<X>l` | focus | *everything but X* |
 | `zuol` + `z<X>l` | focus | *anything but X* |
-| `zel` / `zem` | bare | *unspecified ranking* · *I don't have a ranking* |
+| `zel` / `zem` | bare | *no favorite* · *I'm easy* / *whichever* |
 | `zel` / `zem` + `z<X>l` | focus | *only X matters* / *X first* |
 | `zoel` / `zoem` + `z<X>l` | focus | *only try X* / *try X first* |
 | `zael` / `zaem` | bare | *it's a draw* / *tie* · *probably a tie* |
@@ -379,21 +379,21 @@ Apply these readings when there is only one item in the list.
 
 **Rank — bare**
 
-Apply these readings when it is by itself (empty list).
+Apply these readings when it is by itself (empty list). Bare **e** answers *who first / what's your favorite* with **no descending ranking** (no favorite). Bare **ue** answers *who last / what do you not want* with **no ascending ranking** (no least, no veto). Closed **-l** is a fact about the set; open **-m** is the speaker's shrug.
 
 | Form | Bare reading |
 |------|--------------|
-| **…el** (`zel` / …) | *unspecified ranking*; + SHARED scale → unspecified who's top |
-| **…em** (`zem` / …) | *whichever* (literally: *there is no ranking*) |
+| **…el** (`zel` / …) | *no favorite* / *nobody's first*; + SHARED scale → unspecified who's top |
+| **…em** (`zem` / …) | *I'm easy* / *whichever* (not picking who goes first) |
 | **…ael** (`zael` / …) | *it's a draw* / *tie* |
 | **…aem** (`zaem` / …) | *probably a tie* / *looks even* |
 | **…aen** (`zaen` / …) | *it's a draw* (stock) |
 | **…oem** (`zoem` / …) | *not sure where to start* |
 | **…oel** (`zoel` / …) | *do nothing* / *don't bother*; + SHARED scale → empty superlative |
 | **…oem** + SHARED scale | *no biggest comes to mind* |
-| **…uem** (`zuem` / …) | *I don't care* / *whatever* |
-| **…uel** (`zuel` / …) | *I couldn't care less* (literally: *there is nothing with a higher ranking*) |
-| **…en** (`zen` / …) | *unspecified ranking* (stock) |
+| **…uel** (`zuel` / …) | *no least-favorite* / *nobody's last*; + SHARED scale → unspecified who's bottom |
+| **…uem** (`zuem` / …) | *I don't mind* / *no objection* (not naming a veto) |
+| **…en** (`zen` / …) | *no favorite* (stock) |
 | **…er** (`zer` / …) | *whatever's most important* |
 
 
@@ -809,7 +809,7 @@ On **phrase-level** joins under **`/z/` `/d/` `/b/` `/w/`** only, **-n** marks a
 - Focus / bare phrase forms listed in Intermediate are the defined set; all other phrase joins need two or more conjuncts.
 - **…ul** / **…um** / **…un** are defined at **all** arities where still joins (bare *no*; focus *not X*; multi *none of*).
 - **…ar** / **…or** / **…er** / **…ur** at all arities — see [unspecified-member **-r**](#unspecified-member-r-phrase).
-- **…aen** bare = *it's a draw*; **…en** bare = *unspecified ranking* (stock); **…an** bare = *null* / *void*.
+- **…aen** bare = *it's a draw*; **…en** bare = *no favorite* (stock); **…an** bare = *null* / *void*.
 - **…ual** bare = *everything*; **…uol** bare = *anything (goes)*.
 - Content-word `-l`: `zeborel` = ordinary indefinite (*a person*). `zeborel zar` = explicitly non-identified (*some person, unknown who*).
 - `A B C zor` = any of them is fine (**no** order). `A B C zer` = pick by ranking.
