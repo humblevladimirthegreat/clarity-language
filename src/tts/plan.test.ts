@@ -47,7 +47,7 @@ describe("previewSpeech", () => {
     const plan = previewSpeech("^ zazawan vawul ^");
     assert.deepEqual(boundaryTags(plan), ["islandEnter", "islandExit"]);
     assert.deepEqual(plan.spoken, ["zazawan", "vawul"]);
-    assert.equal(plan.skipped.some((s) => s.reason === "island"), false);
+    assert.equal(plan.skipped.length, 0);
   });
 
   it("tags island in join scope example", () => {

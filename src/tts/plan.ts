@@ -238,7 +238,7 @@ function boundaryToEspeak(tag: BoundaryTag): string {
 
 export function toPhonemes(plan: SpeechPlan): PhonemePlan {
   const words: PhonemeWord[] = [];
-  const parts: string[] = [];
+  const parts: EspeakPart[] = [];
   let islandDepth = 0;
 
   for (const token of plan.tokens) {
