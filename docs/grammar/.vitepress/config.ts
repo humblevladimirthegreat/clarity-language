@@ -1,5 +1,6 @@
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vitepress'
+import { injectInArticleToc } from './lib/inject-in-article-toc'
 
 const repoRoot = fileURLToPath(new URL('../../..', import.meta.url))
 const dataDir = fileURLToPath(new URL('../../../data', import.meta.url))
@@ -85,6 +86,12 @@ export default defineConfig({
     },
     search: {
       provider: 'local',
+    },
+  },
+  markdown: {
+    toc: { level: [2, 3] },
+    config(md) {
+      injectInArticleToc(md)
     },
   },
 })

@@ -1,0 +1,47 @@
+/* In-article TOC: visible where the right-rail outline is hidden (< 1280px). */
+@media (min-width: 1280px) {
+  .vp-doc .in-article-toc {
+    display: none;
+  }
+}
+
+.vp-doc .in-article-toc {
+  margin: 1.25rem 0 1.5rem;
+  padding: 0.35rem 0.85rem 0.5rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  background: var(--vp-c-bg-soft);
+  max-height: min(50vh, 28rem);
+  overflow: auto;
+}
+
+.vp-doc .in-article-toc > summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.4rem 0;
+}
+
+.vp-doc .in-article-toc .table-of-contents {
+  margin: 0 0 0.35rem;
+}
+
+.vp-doc .in-article-toc .table-of-contents ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.vp-doc .in-article-toc .table-of-contents ul ul {
+  padding-left: 1rem;
+}
+
+.vp-doc .in-article-toc .table-of-contents li {
+  margin: 0.15rem 0;
+  line-height: 1.4;
+}
+
+.vp-doc .in-article-toc .table-of-contents a {
+  font-weight: 500;
+  text-decoration: none;
+}
