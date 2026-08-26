@@ -1,6 +1,6 @@
 # Rainy evening — Pure Agelan dialogue
 
-A short three-speaker scene (~30 turns) using **only published Agelan roots** (no foreign `<>` words). Names are nativized phrasal compounds (`ROOT₁xROOT₂` + **-n**). After a name is introduced, later turns resume it with a letter **-r** pronoun (`zuzur` / `zuber` / `zamer`, …), not the full name — **including for self and addressee** (prefer name pronouns over **`umogo`** / **`ehado`**). Inclusive *we* (interlocutors) uses **`ana`** (`zanan`) when membership is the talk-participants, not a name census.
+A short three-speaker scene (~30 turns) using **only published Agelan roots** (no foreign `<>` words). Names are nativized phrasal compounds (`ROOT x ROOT` … + **-n**). After a name is introduced, later turns resume it with a letter **-r** pronoun (`zuzur` / `zuber` / `zamer`, …), not the full name — **including for self and addressee** (prefer name pronouns over **`umogo`** / **`ehado`**). Inclusive *we* (interlocutors) uses **`ana`** (`zanan`) when membership is the talk-participants, not a name census.
 
 Each turn has: **Agelan** · **gloss** (PoS + English sense; see **[glosses.md](../meta/glosses.md)**) · **strict** free English (packaging spelled out) · **loose** free English (idiomatic paraphrase — [strict vs loose](../meta/glosses.md#strict-vs-loose-free-english)).
 

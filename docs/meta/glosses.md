@@ -163,6 +163,7 @@ Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) —
 | Family | Example Agelan | Morph gloss |
 |--------|-----------------|-------------|
 | Ordinary / name compound | `jubenaxuzonun` | `j-hospitality-x-optimism` |
+| Ordinary (three roots) | `zuzuzuxogevexadedan` | `z-sushi-x-coffee-x-tea` |
 | Ability / values stance | `vawuxel` | `v-walking-unable-temporary` |
 | Values stance on need | `hodoloxem` | `h-competence-x-motive` |
 | Role compound | `zaxezeber` | `z-agent-x-dialogue` |

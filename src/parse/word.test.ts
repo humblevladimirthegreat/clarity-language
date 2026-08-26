@@ -215,6 +215,16 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
       rightRoots: ["ogeve"],
     });
   });
+
+  it("parses three-root ordinary compound zuzuzuxogevexadedan (x-compounds.md)", () => {
+    const word = parseOk("zuzuzuxogevexadedan");
+    assert.deepEqual(word.family, {
+      kind: "x",
+      xFamily: "compound",
+      leftRoots: ["uzuzu"],
+      rightRoots: ["ogeve", "adeda"],
+    });
+  });
 });
 
 describe("parseWord — illegal shapes", () => {

@@ -1,9 +1,7 @@
 # TODO
 Phonology english-to-agelan conversion prioritizes similar placements 
-Confirm word compounding past two
 Statistics captures consonant and vowel distribution 
 Conceptual metaphor (growth mindset) for failure 
-Consider j pos implies simple command, no pos single word sentence is interjection 
 Voice generator shows IPA
 Ensure asides are allowed on any part of speech. Decide aka type parentheticals
 Single page application?

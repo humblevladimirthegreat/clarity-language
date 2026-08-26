@@ -164,7 +164,7 @@ Published roots keep a **metaphorical** sense beside the literal one, so the abs
 * [Mechanism as gears](causation.md#cause) — naming the gear train marks *how it meshes*, not a bare sufficient hit or a natural-law claim.
 * [Affect as water](special-vocabulary.md#emotion-compose) — tide (arousal) plus vessel / pour / ambient field (locus) instead of an opaque emotion label that hides the need and the blame target.
 
-Related senses across fields still prefer an explicit “in the sense of …” pattern over unmarked polysemy ([grammar design](introduction.md#grammar-design)).
+Related senses across fields still prefer an explicit kind-then-topic compound over unmarked polysemy ([grammar design](introduction.md#grammar-design)).
 
 Conceptual metaphors help you reach and remember the healthier frame by tying it to a concrete analogy that already encodes the bias you are trying to catch.
 

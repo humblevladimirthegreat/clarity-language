@@ -190,15 +190,15 @@ Named individuals, places, one-off objects, titled works: *Azawan*, *Paris*, *th
 #### Phrasal proper names (mid-word `x`)
 <a id="phrasal-proper-names"></a>
 
-**Multipart proper names** — given + family, compact multi-token place names, and similar **one-referent** labels — are **one content word** when short enough to stay handy.
+**Multipart proper names** — given + family, compact multi-token place names, and similar **one-referent** labels — are **one content word** when short enough to stay handy. Roots join left to right ([ordinary compound order](x-compounds.md#ordinary-compound-order)): first root is the kind or given name; later roots narrow or continue the title.
 
 | Shape | Example | Reading |
 |-------|---------|---------|
 | **Nativized** multipart (Agelan roots + mid-word **`x`**) | `zozohuxalenan` | *Ozohuxalenan* (*wish*×*guidance* — one person) |
 | same under other slots | `dozohuxalenan`, `bozohuxalenan` | one named place / person as object or argument |
-| **Sense compound** (two lexicon roots) | `zuzuzuxogeven` | *Sushi-Coffee* as one nativized label |
+| **Sense / shop label** (two or more lexicon roots) | `zuzuzuxogeven`, `zuzuzuxogevexadedan` | *Sushi-Coffee*; *Sushi-Coffee-Tea* |
 
-**Trap:** adjacent bare same-role words (`zozohun zalenan`) look like two people in a [join](coordination.md) (*Ozohun and Alenan*). One **`x`-compound** keeps **one** resume target and one slot filler.
+Adjacent bare same-role words (`zozohun zalenan`) are two people in a [join](coordination.md). One **`x`-compound** is one resume target and one slot filler.
 
 #### Verbs (`/v/`)
 
