@@ -21,7 +21,7 @@ Praise can name the need a person’s work actually served instead of stopping a
 
 Surface common biases that make self-delusion easy.
 
-Claims can say how you know: memory, record, hearsay, pattern, inference. Choice lists can say whether they are open or closed, so two options cannot smuggle themselves in as the only ones. Habitual *always* stays weather-report rather than law of nature; when the “must” is really an ought, the sentence shows the value behind it instead of upgrading a wish into natural law; and left / right names whose facing counts, so instructing someone does not borrow their perspective unasked.
+Claims can say how you know: memory, record, hearsay, pattern, inference. Choice lists can say whether they are open or closed, so two options cannot smuggle themselves in as the only ones. Habitual *always* stays weather-report rather than law of nature; when the “must” is really an ought, the sentence shows the value behind it instead of upgrading a wish into natural law; and the short direction word is a shared compass point, while body-relative left / right names whose facing counts, so instructing someone does not borrow their perspective unasked.
 
 ### Empowerment
 <a id="empowerment"></a>

@@ -1,7 +1,7 @@
 # Roles and viewpoints
 <a id="roles"></a>
 
-Name event participants (*fighter*, *the one fought*) and **whose** left / right you mean.
+Name event participants (*fighter*, *the one fought*), compass sides, and **whose** left / right you mean.
 
 ## Beginner
 <a id="beginner"></a>
@@ -191,7 +191,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 <a id="spatial-laterals"></a>
 <a id="my-left-your-left"></a>
 
-Name **whose left / right** you mean. Facing someone, bare *left* is a shared-frame trap — Agelan requires an explicit **viewpoint**.
+Bare arrow-rose words are **compass** points (north-up map). Body-relative *left* / *right* / *ahead* / *back* use the same roots with an explicit **viewpoint**: whose facing counts as that map’s north.
 
 **Shape:** ordinary [compound](x-compounds.md) — direction root left of mid-word **`x`**, viewpoint root right of **`x`**, then an ordinary [reference ending](reference-suffix.md):
 
@@ -199,64 +199,92 @@ Name **whose left / right** you mean. Facing someone, bare *left* is a shared-fr
 PoS + DIR + x + ANCHOR + {-l|-m|-n|-r}
 ```
 
-| Piece | Role |
-|-------|------|
-| **PoS** | Slot as usual (`/ɡ/` property, `/h/` path / manner, `/z/` `/d/` `/b/` side-region, …) |
-| **DIR** | A **lateral** lexicon root (table below) |
-| **`x`** | Ordinary [compound joiner](phonology.md#phonotactics) |
-| **ANCHOR** | Whose facing counts — [special](pronouns.md#special-pronouns) **`umogo`** / **`ehado`** / **`ana`**, a name, or a content **-r** of a being that can face |
-| **Ending** | Ordinary reference-suffix senses on the **whole** direction word |
+| Piece | Role | Mnemonic |
+|-------|------|----------|
+| **PoS** | Slot as usual (`/ɡ/` property, `/h/` path / manner, `/z/` `/d/` `/b/` side-region, …) | same slots as other content |
+| **DIR** | An arrow-rose root (table below) | map point, or that point on a face |
+| **`x`** | Ordinary [compound joiner](phonology.md#phonotactics) | **`x`** = *whose eyes* |
+| **ANCHOR** | Whose facing = personal north — [special](pronouns.md#special-pronouns) **`umogo`** / **`ehado`** / **`ana`**, a name, or a content **-r** of a being that can face | glue the rose to a face |
+| **Ending** | Ordinary reference-suffix senses on the **whole** direction word | ending scopes the compound |
 
-**Mnemonic:** glue the side to a face — **`x`** = *whose eyes*. Parser family stays **ordinary** `ROOT…xROOT…` ([x-compounds.md](x-compounds.md)) — not role, value, ability, or numeric derivation.
+Parser family stays **ordinary** `ROOT…xROOT…` ([x-compounds.md](x-compounds.md)).
+
+```
+`jel vawul hevedel.`
+
+gloss: `j-command` · `v-walk` · `h-west`
+
+*Walk west.*
+```
+
+```
+`jel vawul hevedexazawan.`
+
+gloss: `j-command` · `v-walk` · `h-west-Azawan`
+
+*Walk left — Azawan’s left.*
+```
 
 ```
 `jel zehadon vawul hevedexehadon.`
 
-gloss: `j-command` · `z-listener` · `v-walk` · `h-left-listener`
+gloss: `j-command` · `z-listener` · `v-walk` · `h-west-listener`
 
 *You, walk left — your left.*
 ```
 
+#### Arrow rose (compass vs face)
+
+| Root | Image | Bare spatial | `DIR × ANCHOR` (facing = north) |
+|------|-------|--------------|----------------------------------|
+| **`ububu`** | ⬆️ | north | ahead |
+| **`owono`** | ⬇️ | south | back |
+| **`amala`** | ➡️ | east | right |
+| **`evede`** | ⬅️ | west | left |
+| **`uduju`** | ↗️ | northeast | forward-right |
+| **`ebule`** | ↖️ | northwest | forward-left |
+| **`oduwo`** | ↘️ | southeast | back-right |
+| **`odewo`** | ↙️ | southwest | back-left |
+
+Indoor headings may follow a local map (building north). Prefer a name or listener frame when you mean someone’s body rose (`…xazawan`, `…xehadon`).
+
+Published **metaphors** of the same roots stay bare (`amala` → *progress* / discourse **`xamalal`**; `evede` → *return*; `odewo` → *retreat*). Generic heading **`ogamo`** stays *compass* / *direction*. Path *forward* / *back* **`ovaro`** / **`agaja`** stay those roots; facing-relative ahead / back on this rose is **`ububu` / `owono` × ANCHOR**.
+
+#### Gravity (`avuza` / `ovazo`)
+
+Skyward / toward the pull is a **shared** frame, not a face:
+
+| Root | Image | Spatial job | Metaphor |
+|------|-------|-------------|----------|
+| **`avuza`** | ⏫ | up (gravity) | *rise* |
+| **`ovazo`** | ⏬ | down (gravity) | *fall* |
+| **`ubodu`** | ↕️ | the vertical axis | — |
+
 ```
-`zohuzel gevedexumogon.`
+`jel vawul havuzal.`
 
-gloss: `z-room` · `g-left-speaker`
+gloss: `j-command` · `v-walk` · `h-up`
 
-*The room on my left.*
+*Walk up.*
 ```
 
-#### Lateral hosts (spatial use)
+```
+`javuzal.`
 
-These roots **require** a viewpoint **`x`+ANCHOR** when the sense is **space** (side, path, turn, region):
+gloss: `j-up`
 
-| Root | Image | Spatial job |
-|------|-------|-------------|
-| **`evede`** | ⬅️ *left* | left |
-| **`amala`** | ➡️ *right* | right |
-| **`ebule`** | ↖️ *up-left* | up-left |
-| **`uduju`** | ↗️ *up-right* | up-right |
-| **`odewo`** | ↙️ *down-left* | down-left |
-| **`oduwo`** | ↘️ *down-right* | down-right |
-
-Bare spatial forms are **illegal** (`gevedel`, `hamalal`, `hevedel`, …). Prefer listener / name frames when facing someone (`…xehadon`, `…xazawan`) rather than silent speaker default.
-
-**Not covered by the ban:**
-
-| Use | Status |
-|-----|--------|
-| Published **metaphor** of the same root (`amala` → *progress* / discourse **`xamalal`**; `evede` → *return*; `odewo` → *retreat*; …) | Legal without viewpoint **`x`** |
-| Pure **vertical** / non-lateral arrows (`ububu` *up*, `owono` *down*, …) | Bare spatial OK |
-| Compass / heading root **`ogamo`** | Bare OK when not naming a body-relative side |
+*Up!*
+```
 
 #### Viewpoint vs landmark
 
 | Pattern | Job | Example |
 |---------|-----|---------|
-| **`DIR x ANCHOR`** | side in **ANCHOR’s** facing frame | `gevedexehadon` *listener-left* |
-| **complex `/ɡ/` + `/b/`** | region on a side **of a landmark** | `gevedexumogon beredel` *on my-left of the tree* |
-| Landmark **`/b/` alone** with bare DIR | Illegal for laterals — still needs viewpoint on DIR | — |
+| Bare DIR | compass / gravity | `gevedel` *west*; `gavuzal` *up* |
+| **`DIR x ANCHOR`** | that point on **ANCHOR’s** facing rose | `gevedexehadon` *listener-left* |
+| **complex `/ɡ/` + `/b/`** | region on a side **of a landmark** | `gevedexazawan beredel` *on Azawan’s-left of the tree* |
 
-The **`/b/`** argument is the landmark, not the viewpoint. Put the facing being after **`x`**; put the tree / door / wall in `/b/` when you need both.
+The **`/b/`** argument is the landmark, not the viewpoint. Put the facing being after **`x`**; put the tree / door / wall in `/b/` when you need both. Bare compass + `/b/` is a region on that heading of the landmark (`gevedel beredel` *west of the tree*).
 
 #### Endings and resume
 
@@ -269,18 +297,17 @@ The **`/b/`** argument is the landmark, not the viewpoint. Put the facing being 
 
 **Key contrasts:**
 
-| | Use |
-|--|-----|
-| `gevedexumogon` | *my left* (speaker facing) |
-| `gevedexehadon` | *your left* (listener facing) |
-| `gevedexanan` | *our left* (interlocutors sharing a facing) |
+| Form | Reading |
+|------|---------|
+| `gevedel` | *west* (shared map) |
 | `gevedexazawan` | *Azawan’s left* |
-| `gevedel` (spatial) | **illegal** |
-| `xamalal` | discourse *therefore* — metaphor, not spatial right |
+| `gevedexehadon` | *your left* (listener facing) |
+| `gevedexumogon` | *my left* (speaker facing) |
+| `gevedexanan` | *our left* (shared facing) |
+| `gavuzal` / `havuzal` | gravity *up* |
+| `xamalal` | discourse *therefore* — *progress*, not east and not body-right |
 | Role `zaxozower` | participant — ROLE vowel left of **`x`**, not DIR |
 | Ability `veguxul` | stance vowel right of **`x`**, not a person root |
-
-Forward / back (`ovaro` / `agaja`) may reuse the same **`DIR x ANCHOR`** pattern when facing matters; they are not under the bare-lateral ban.
 
 
 ### Translation practice
@@ -288,7 +315,7 @@ Forward / back (`ovaro` / `agaja`) may reuse the same **`DIR x ANCHOR`** pattern
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `ohuze` *house* · `agada` *cat* · `ogodo` *dog* · `ogobo` *book* · `awu` *walk* · `evede` *left* · `amala` *right* · `ebule` *up-left* · `oduwo` *down-right* · `erede` *tree* · `ehado` *listener* · `umogo` *speaker* · `ana` *we (inclusive)*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `ohuze` *house* · `agada` *cat* · `ogodo` *dog* · `ogobo` *book* · `awu` *walk* · `evede` *west* / body *left* · `amala` *east* / body *right* · `ebule` *northwest* / *forward-left* · `avuza` *up* (gravity) · `erede` *tree* · `ehado` *listener* · `umogo` *speaker*
 
 #### English → Agelan
 
@@ -304,28 +331,28 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zagadal gamalaxulonun.`
 :::
 
-**3.** *Walk left — Azawan’s left.*
+**3.** *Walk west.*
 
 ::: details Show answer
-`jel vawul hevedexazawan.`
+`jel vawul hevedel.`
 :::
 
-**4.** *The dog on Ubuzun’s up-left.*
+**4.** *Walk up.*
+
+::: details Show answer
+`jel vawul havuzal.`
+:::
+
+**5.** *The dog on Ubuzun’s forward-left.*
 
 ::: details Show answer
 `zogodol gebulexubuzun.`
 :::
 
-**5.** *The book is on Azawan’s left of the tree.*
+**6.** *The book is on Azawan’s left of the tree.*
 
 ::: details Show answer
 `zogobol gevedexazawan beredel.`
-:::
-
-**6.** *The house on our left.*
-
-::: details Show answer
-`zohuzel gevedexanan.`
 :::
 
 **7.** *You, walk left — your left.*
@@ -354,28 +381,28 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *The cat on Ulonun’s left.*
 :::
 
-**3.** `jel vawul hamalaxubuzun.`
+**3.** `jel vawul hevedel.`
 
 ::: details Show answer
-*Walk right — Ubuzun’s right.*
+*Walk west.*
 :::
 
-**4.** `zogodol goduwoxazawan.`
+**4.** `jel vawul havuzal.`
 
 ::: details Show answer
-*The dog on Azawan’s down-right.*
+*Walk up.*
 :::
 
-**5.** `zogobol gevedexulonun beredel.`
+**5.** `zohuzel gevedel.`
+
+::: details Show answer
+*The house on the west.*
+:::
+
+**6.** `zogobol gevedexulonun beredel.`
 
 ::: details Show answer
 *The book is on Ulonun’s left of the tree.*
-:::
-
-**6.** `zohuzel gevedexanan.`
-
-::: details Show answer
-*The house on our left.*
 :::
 
 **7.** `jel zehadon vawul hamalaxehadon.`

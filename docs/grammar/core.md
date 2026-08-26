@@ -427,7 +427,7 @@ There is no fixed order among several `/h/` units. Each unit’s job comes from 
 
 After a complex adjective or adverb, a further plain `/ɡ/` describes the **extra noun**, not the original host. `/w/` after a `/ɡ/` (+ optional `/b/`) grades that adjective. You can chain complex units onto those extra nouns; two complex adjectives on the same host noun need another sentence. Multiple `/h/` units on one verb are fine (each plain `/h/` or together `/h/`+`/b/` counts as one).
 
-Spatial *left* / *right* need a [viewpoint compound](roles.md#viewpoint-laterals) on the direction word; `/b/` only adds the landmark (`gevedexazawan beredel` = *on Azawan’s-left of the tree*). Bare lateral hosts are illegal in space. Discourse **`xamalal`** (*therefore*) stays the metaphorical linker — not spatial right.
+Bare [arrow-rose](roles.md#viewpoint-laterals) direction is a compass point (`gevedel` = *west*); body-relative *left* / *right* glue the same root to a facing being (`gevedexazawan beredel` = *on Azawan’s-left of the tree*). Gravity *up* / *down* uses **`avuza` / `ovazo`**. Discourse **`xamalal`** (*therefore*) stays the *progress* linker — not east and not body-right.
 
 ### Writing and speech rhythm (periods)
 <a id="orthography-and-prosody-periods"></a>
@@ -454,7 +454,7 @@ One-way glue between sentences (ordinary ending; **-l** default closed):
 
 | Linker | Lexicon root | Metaphor | Example |
 |--------|--------------|----------|---------|
-| *therefore* | **`amala`** | ➡️ *right* → *progress* | `xamalal` |
+| *therefore* | **`amala`** | ➡️ *east* → *progress* | `xamalal` |
 | *however* | **`ezabe`** | 🦓 *zebra* → *contrast* | `xezabel` |
 | *meanwhile* | **`ameno`** | 🕰️ *mantel-clock* → *passage* | `xamenol` |
 | *next* | **`uvulu`** | 🎞️ *film* → *sequence* | `xuvulul` |

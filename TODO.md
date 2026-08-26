@@ -1,5 +1,5 @@
 # TODO
-consider broadly removing all -n special forms and reserving it for proper.
+I'm thinking of broadly removing all -n special forms and reserving it for the usual proper name. Are there any special -n forms that are worth keeping or reassigning?
 Phonology english-to-agelan conversion prioritizes similar placements 
 Confirm word compounding past two
 Statistics captures consonant and vowel distribution 

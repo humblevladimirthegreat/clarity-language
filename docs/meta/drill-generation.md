@@ -269,7 +269,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 14 | `ability.md` | Advanced | skip | design notes | |
 | 14 | `commentary.md` | Intermediate | **exists** | Evidentiality channels; **NOTIONAL** **`edahe`** + hold map; COMMENT vs nearby jobs | |
 | 14 | `commentary.md` | Advanced | skip | design notes | |
-| 14 | `roles.md` | Intermediate | **exists** | Viewpoint laterals **`DIR x ANCHOR`**; name/listener anchor; bare spatial illegal | Prefer `…xazawan` over silent speaker default. **`ehado`/`umogo`** only when testing role-anchor |
+| 14 | `roles.md` | Intermediate | **exists** | Viewpoint laterals **`DIR x ANCHOR`**; bare arrow roots = compass; gravity **`avuza`/`ovazo`**; name/listener anchor | Prefer `…xazawan` over silent speaker default. **`ehado`/`umogo`** only when testing role-anchor. Include at least one bare cardinal and one gravity item |
 | 14 | `roles.md` | Advanced | skip | design notes | |
 | 15 | `join-extras.md` | Intermediate | **exists** | Join-act verbs `van` / `von` / …; join-relations `gan` / `han` / … (unary `/b/`) | No Beginner slot. Recycle = all Beginner + earlier Intermediate (path before 15), except optional numbers unless needed |
 | 15 | `plan-decision.md` | Intermediate | **exists** | **DECISION** **`ehege`** changeability; evidentiality stacked on **PREDICT**; PLAN + DECISION stack | Recycle Beginner PLAN / PREDICT. Stack evidentiality on PREDICT only as the band shows. Join-act **`von`** only if already on this band |

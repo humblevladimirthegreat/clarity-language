@@ -970,16 +970,16 @@ emoji,literal,clarity,metaphorical,mnemonic
 🔞,no-minors,onumo,,
 ☢️,radioactive,adugo,,
 ☣️,biohazard,uboha,,
-⬆️,up,ububu,,
-↗️,up-right,uduju,,
-➡️,right,amala,progress,right arrow points forward; progress is moving ahead
-↘️,down-right,oduwo,,
-⬇️,down,owono,fall,down arrow points lower; fall is moving downward
-↙️,down-left,odewo,retreat,down-left arrow drops and pulls back; retreat is moving away back
-⬅️,left,evede,return,left arrow points backward; return is going back again
-↖️,up-left,ebule,,
-↕️,up-down,ubodu,,
-↔️,left-right,eluve,reciprocity,left-right arrow goes both ways; reciprocity is mutual give and take
+⬆️,north,ububu,,
+↗️,northeast,uduju,,
+➡️,east,amala,progress,map-right is east; progress is moving ahead
+↘️,southeast,oduwo,,
+⬇️,south,owono,,
+↙️,southwest,odewo,retreat,map down-left is southwest; retreat is moving away back
+⬅️,west,evede,return,map-left is west; return is going back again
+↖️,northwest,ebule,,
+↕️,vertical,ubodu,,
+↔️,east-west,eluve,reciprocity,east-west arrow runs both ways; reciprocity is mutual give and take
 ↩️,back,agaja,revert,return arrow curves back left; revert is going back to before
 ↪️,forward,ovaro,redirect,return arrow curves forward right; redirect is sending another way
 ⤴️,curve-up,eguru,,
@@ -1021,8 +1021,8 @@ emoji,literal,clarity,metaphorical,mnemonic
 ◀️,rewind,eruwe,reverse,reverse plays backward in time; reverse is going opposite direction
 ⏪,fast-rewind,avezu,rewind,rewind goes back to earlier; rewind is returning to before
 ⏮️,prev-track,erave,,
-⏫,fast-up,avuza,rise,fast up jumps higher quickly; rise is moving upward
-⏬,fast-down,ovazo,,
+⏫,up,avuza,rise,double-up chevron is skyward; rise is moving upward
+⏬,down,ovazo,fall,double-down chevron is toward the pull; fall is moving downward
 ⏸️,pause,abuze,pause,pause halts what is playing; pause is temporary halt
 ⏺️,record,eroge,record,record captures what happens now; record is preserving over time
 ⏏️,eject,eje,eject,eject pushes media out; eject is forcing outward removal

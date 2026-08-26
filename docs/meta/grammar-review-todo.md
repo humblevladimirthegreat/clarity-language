@@ -9,8 +9,3 @@ Open review items moved out of the learner-facing pages under `docs/grammar/` (g
 | `commentary.md` | Replace the **-n** COMMENT hold (“named loop”) with the usual proper reading |
 | `commentary.md` | Remove the **-n** distinction on NOTIONAL hold endings |
 
-## Tooling / site
-
-| Page | Item |
-|------|------|
-| `roles.md` | Figure out why the page 404s on the web deploy |

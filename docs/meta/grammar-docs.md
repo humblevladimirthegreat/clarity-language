@@ -110,7 +110,7 @@ Usual sources (prefer one; reuse the language’s own systems):
 
 | Source | When |
 |--------|------|
-| **Metaphorical / lexicon sense** | Closed roots and overlays (`amala` ➡️ *right* → *therefore*; **`SAME`**, **`COMMENT`**, …) |
+| **Metaphorical / lexicon sense** | Closed roots and overlays (`amala` ➡️ *east* → *therefore*; **`SAME`**, **`COMMENT`**, …) |
 | **Vowel series** | Join / force / polar stacks that share letter jobs (`a` inventory, `o` menu, `e` rank, `u` negation, …) |
 | **Ending letters** | **-l** / **-m** / **-n** / **-r** (and stance endings) when the ending *is* the lesson |
 
