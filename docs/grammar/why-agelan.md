@@ -156,12 +156,12 @@ Numbering candidates, paraphrasing, and naming the judgment bar help you keep ch
 
 Abstract ideas are hard to hold; without a concrete picture, the psychologically useful reading of a word slips away in the moment.
 
-Published roots keep a **metaphorical** sense beside the literal one, so the abstract job rides on a familiar scene that already carries the caution. Examples from [special vocabulary](special-vocabulary.md):
+Published roots keep a **metaphorical** sense beside the literal one, so the abstract job rides on a familiar scene that already carries the caution. Examples:
 
 * [Memory as fishing](commentary.md#evidentiality) — cast into opaque water; you may pull a fish or a **boot** (retrieval is reconstructive, not a clean archive).
 * [Usual as weather](special-vocabulary.md#universality) — a habitual *always* is a climate report, not a law of nature; [uncountered](special-vocabulary.md#universality) is clear sky (*no counterexample comes to mind*), search rather than proof.
 * [*As if* as theater](commentary.md#notional) — a stage mask frames play; the real tally stays **offstage** (pretensive scenes do not upgrade to ledger facts).
-* [Mechanism as gears](special-vocabulary.md#cause) — naming the gear train marks *how it meshes*, not a bare sufficient hit or a natural-law claim.
+* [Mechanism as gears](causation.md#cause) — naming the gear train marks *how it meshes*, not a bare sufficient hit or a natural-law claim.
 * [Affect as water](special-vocabulary.md#emotion-compose) — tide (arousal) plus vessel / pour / ambient field (locus) instead of an opaque emotion label that hides the need and the blame target.
 
 Related senses across fields still prefer an explicit “in the sense of …” pattern over unmarked polysemy ([grammar design](introduction.md#grammar-design)).

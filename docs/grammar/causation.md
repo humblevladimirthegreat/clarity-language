@@ -231,6 +231,38 @@ Bare **`IF`** (`horodom`) is one-way only.
 | Clause–clause inclusive bundle | `xaom` / `xaol` as **coordination only** |
 | Mixed NP + clause | **`odo`** under a relation, or span / nominalization in `/b/` / `/d/` — not bare `zaom` on a sentence |
 
+### Cause (mechanism framing)
+<a id="cause"></a>
+<a id="cause-mood"></a>
+
+Mark a clause as **mechanism-framed** — *how the gears engage* — with one closed mood root. Condition type (sufficient / necessary / *if* / *because*) stays on the joins and clause poles above; exceptionlessness stays on [universality](special-vocabulary.md#universality).
+
+**Shape:** floating **`/h/`** mood **`erage`** ⚙️ *gear* → *mechanism* (optional `/w/` when scoped only to a preceding `/ɡ/` — rare). Prefer floating `/h/`. Ending = **-m** only (metaphorical overlay) — **`heragem`**. Ordinary content still available (`zeragel` *a gear*; `veragel` *to mesh / engage*).
+
+```
+`… haon beladel heragem.`
+
+gloss: `h-open-to` · `b-effort` · `h-CAUSE`
+
+*… open to effort — as mechanism* (how the payoff gears turn)
+```
+
+Use **CAUSE** when the clause is doing **mechanism highlight**. Everyday *leads to* / *would work* stays open sufficient without this mood.
+
+| English bundle | Prefer | Mnemonic |
+|----------------|--------|----------|
+| *how it works / the mechanism is…* | **CAUSE** (`heragem`) on the claim | ⚙️ gear train |
+| *X would work / is among routes* | open sufficient (`…aom` / `haon`) — no **CAUSE** required | add a route |
+| *always by nature* | [**NATURAL**](special-vocabulary.md#universality) (`hafafal`) + evidential `/h/` | 🍎 nature’s force |
+| *because / if* + clause | [clause poles](#if-vs-iff) (`hurugum` / `horodom`) | foundation / door |
+| *I think … because…* (speaker grounds) | [COMMENT](commentary.md#comment) — [epistemic *because*](#epistemic-because) | 💭 speaker take |
+
+| Contrast | Prefer |
+|----------|--------|
+| Condition type vs mechanism | joins / **`odo`** poles = type; **`erage`** = mechanism frame |
+| NATURAL vs CAUSE | **`afafa`** = exceptionlessness warrant; **`erage`** = gears / how |
+| Evidential vs CAUSE | channel of knowing vs mechanism highlight — stack when both matter |
+
 ### Preference vs law
 <a id="preference-vs-law"></a>
 
@@ -249,9 +281,9 @@ Strength of feeling is values force / evidentiality — not upgrading `aom` → 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills on this Intermediate band. Try each item before opening **Show answer**. Mark **necessary** with exclusion / **`hal`**, unique path with **`gon` / `hon` / `…ol`**, and clause poles with **`horodom` / `heluvem` / `hurugum`**. An ought sits on values **`xo`**, not by upgrading **`aom`** to a sole-cause join.
+Short drills on this Intermediate band. Try each item before opening **Show answer**. Mark **necessary** with exclusion / **`hal`**, unique path with **`gon` / `hon` / `…ol`**, clause poles with **`horodom` / `heluvem` / `hurugum`**, and mechanism with **`heragem`**. An ought sits on values **`xo`**, not by upgrading **`aom`** to a sole-cause join.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `edage` *teacher* · `azel` *effort* · `aruna` *rain* · `ogulo` *cloud* · `ogodo` *dog* · `ogobo` *book* · `elade` *promotion* · `odolo` *competence* · `awu` *walk* · `ezele` *sleep* · `odo` *next clause* · `orodo` *if* · `eluve` *iff* · `urugu` *because*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `edage` *teacher* · `azel` *effort* · `aruna` *rain* · `ogulo` *cloud* · `ogodo` *dog* · `ogobo` *book* · `elade` *promotion* · `odolo` *competence* · `awu` *walk* · `egu` *sing* · `ezele` *sleep* · `odo` *next clause* · `orodo` *if* · `eluve` *iff* · `urugu` *because* · `erage` CAUSE
 
 #### English → Agelan
 
@@ -301,6 +333,18 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 ::: details Show answer
 `zogobol gon.`
+:::
+
+**9.** *Ulonun walks — as mechanism.*
+
+::: details Show answer
+`zulonun vawul heragem.`
+:::
+
+**10.** *Open to effort — as mechanism.*
+
+::: details Show answer
+`haon beladel heragem.`
 :::
 
 #### Agelan → English
@@ -353,6 +397,18 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan never walks.*
 :::
 
+**9.** `zazawan vegul heragem.`
+
+::: details Show answer
+*Azawan sings — as mechanism.*
+:::
+
+**10.** `haon beladel heragem.`
+
+::: details Show answer
+*Open to effort — as mechanism.*
+:::
+
 ## Advanced
 <a id="advanced"></a>
 
@@ -394,7 +450,7 @@ English often uses *because* for **speaker grounds** (*I say P because Q* / *I t
 
 | English bundle | Prefer |
 |----------------|--------|
-| *P because Q* (Q grounds P in the world) | **`hurugum bodol`** (+ evidentiality / [**CAUSE**](special-vocabulary.md#cause) when naming mechanism) |
+| *P because Q* (Q grounds P in the world) | **`hurugum bodol`** (+ evidentiality / [**CAUSE**](#cause) when naming mechanism) |
 | *I think / say P because Q* (Q is my reason for the take) | [**COMMENT**](commentary.md#comment) on the matrix (`huhom`, …); optional **`hurugum bodol`** only if Q is also asserted as world-foundation |
 | *P, since / given that Q* (Q already shared) | **`hurugum bodol`** (Q asserted); soft force / evidentiality if the warrant is tentative |
 | *P if Q* (Q not asserted) | **`horodom bodol`** — never stretch **`BECAUSE`** into a soft *if* |
@@ -405,7 +461,7 @@ English often uses *because* for **speaker grounds** (*I say P because Q* / *I t
 | Stack | Role | Mnemonic |
 |-------|------|----------|
 | Evidentiality `/h/` | *how you know* the link — [evidentiality](commentary.md#evidentiality) (**INFERRED** `eve`, **PATTERN** `awa`, …) | 🔍 the trail behind the claim |
-| **`CAUSE`** (`heragem`) | *mechanism framing* — [CAUSE mood](special-vocabulary.md#cause); not condition type, not NATURAL | ⚙️ the gears inside |
+| **`CAUSE`** (`heragem`) | *mechanism framing* — [CAUSE mood](#cause); not condition type, not NATURAL | ⚙️ the gears inside |
 | **`hual` / `huam`** | habitual / characterizing pattern — [restrictors](restrictors.md) | 🔁 whenever, as a rule |
 | Universality | how exceptionless the claim is — [universality moods](special-vocabulary.md#universality) | 🌐 no exceptions anywhere |
 | Values `xo` / `xe` | ought or motive — [above](#preference-vs-law) | 🧭 the need it serves |
@@ -421,7 +477,7 @@ Causal “laws” show their warrant via evidentiality and universality — not 
 | English cue | Agelan |
 |-------------|---------|
 | *caused by* + how you know | condition shape (sufficient / necessary) + evidential `/h/` |
-| *caused by* + mechanism focus | condition shape + **`heragem`** ([CAUSE](special-vocabulary.md#cause)) |
+| *caused by* + mechanism focus | condition shape + **`heragem`** ([CAUSE](#cause)) |
 | *leads to* / *results in* (ordinary) | open sufficient (`…aom` / `haon`, …) |
 | *necessary for* / *without X, no Y* | `huan` / `guan` / `hal` |
 | *the only cause* / *has to be* | marked `gon` / `hon` / `…ol` |

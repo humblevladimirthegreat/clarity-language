@@ -261,7 +261,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 13 | `numbers.md` | Advanced | **exists** | Digitless exponents / hyperbole / zero×exp **as used in the band’s teach examples** — not unassigned TODO cells | Optional track. 4–6 items |
 | 13 | `comparatives.md` | Intermediate | **exists** | Full comparative arity; distributive **`a`** + SHARED `/ɡ/`; measured differentials | Measured items **Sibling OK:** numbers Intermediate **measure phrases** only |
 | 13 | `comparatives.md` | Advanced | **exists** | Judgment benchmarks (`zonugon`, `zaheman`, **`zumogoxrawon`** Mine vs performance **`zumogon`**, …) | **`umogo`** allowed on Mine/performance items |
-| 13 | `causation.md` | Intermediate | **exists** | Necessary (marked); unique path; clause poles **`orodo` / `eluve` / `urugu`**; preference vs law (values stack if values Beginner is recycle — it is) | |
+| 13 | `causation.md` | Intermediate | **exists** | Necessary (marked); unique path; clause poles **`orodo` / `eluve` / `urugu`**; **CAUSE** **`erage`** **-m**; preference vs law (values stack if values Beginner is recycle — it is) | |
 | 13 | `causation.md` | Advanced | **exists** | Factivity; evidential / mechanism / habit stacks as on the band | COMMENT/evidentiality are Beginner/Intermediate recycle by the time Advanced is read |
 | 14 | `values.md` | Intermediate | **exists** | Motive **`xe`** + preference standing; which ending table; attachment sites | |
 | 14 | `values.md` | Advanced | **exists** | Combined matrices; one boundary trap | 4–6 items |
@@ -274,7 +274,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 15 | `join-extras.md` | Intermediate | **exists** | Join-act verbs `van` / `von` / …; join-relations `gan` / `han` / … (unary `/b/`) | No Beginner slot. Recycle = all Beginner + earlier Intermediate (path before 15), except optional numbers unless needed |
 | 15 | `plan-decision.md` | Intermediate | **exists** | **DECISION** **`ehege`** changeability; evidentiality stacked on **PREDICT**; PLAN + DECISION stack | Recycle Beginner PLAN / PREDICT. Stack evidentiality on PREDICT only as the band shows. Join-act **`von`** only if already on this band |
 | 15 | `plan-decision.md` | Advanced | skip | design notes | |
-| 15 | `special-vocabulary.md` | Intermediate | **exists** | Emotion compose (ACT + LOCUS + a value); **CAUSE** **`erage`** **-m**; numbered alternatives `ubezu`/`egoge`/`ogalo` + `g#N` | Overlay *inventory* is not a drill. **Needs** values Beginner (recycle). Not universality (Advanced) |
+| 15 | `special-vocabulary.md` | Intermediate | **exists** | Emotion compose (ACT + LOCUS + a value); numbered alternatives `ubezu`/`egoge`/`ogalo` + `g#N` | Overlay *inventory* is not a drill. **Needs** values Beginner (recycle). Not universality (Advanced) |
 | 15 | `special-vocabulary.md` | Advanced | **exists** | Universality warrant (`ewono` / `ululu` / …) as on the band | 4–6 items |
 | 16 | `numeric-derivation.md` | Advanced | **exists** | `ROOT x NUM` as the band teaches (essence / `+N` / `#N` / quasi / …) — only assigned readings | **Optional track.** No **`ROOTx+e0`** / unassigned TODO cells. 4–6 items |
 
@@ -299,6 +299,7 @@ First-taught checkpoint for forms agents leak most often. If this checkpoint’s
 | `g+N` / `g#N` / `g+` | `numbers.md` Beginner |
 | SHARED scale comparatives | `comparatives.md` Beginner |
 | Sufficient open-inclusive causation | `causation.md` Beginner |
+| **CAUSE** **`erage`** / **`heragem`** | `causation.md` Intermediate |
 | Value **`xa`/`xo`/`xu`** on **need** roots | `values.md` Beginner |
 | Ability **`xa`/`xe`/`xo`/`xu`** on **non-need** hosts | `ability.md` Beginner |
 | **COMMENT** **`huhom`** | `commentary.md` Beginner |
@@ -310,7 +311,7 @@ First-taught checkpoint for forms agents leak most often. If this checkpoint’s
 | Join-act **`van`** / join-relation **`gan`** | `join-extras.md` Intermediate |
 | **PLAN** / **PREDICT** | `plan-decision.md` Beginner |
 | **DECISION** | `plan-decision.md` Intermediate |
-| Emotion compose; **CAUSE** **`erage`**; numbered alternatives | `special-vocabulary.md` Intermediate |
+| Emotion compose; numbered alternatives | `special-vocabulary.md` Intermediate |
 | Judgment **Mine** **`zumogoxrawon`** | `comparatives.md` Advanced |
 | `ROOT x NUM` derivation | `numeric-derivation.md` Advanced |
 | Universality overlays | `special-vocabulary.md` Advanced |

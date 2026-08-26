@@ -1,7 +1,7 @@
 # Special vocabulary
 <a id="special-vocabulary"></a>
 
-Closed mood roots for emotion compose, mechanism **CAUSE**, numbered alternatives, universality warrant, and the overlay inventory.
+Closed mood roots for emotion compose, numbered alternatives, universality warrant, and the overlay inventory.
 
 ## Beginner
 
@@ -70,41 +70,6 @@ Parallel INTERNAL / CIRCUM cues: *flood bottled* / *flow held* / *still in the v
 
 **Raw feeling:** contacting a sensation without judgment/explanation may leave it unlabeled. Full compose is for when an emotion word would have done evaluative work. Skip [COMMENT](commentary.md#comment) on affect clauses.
 
-### Cause (mechanism framing)
-<a id="cause"></a>
-<a id="cause-mood"></a>
-
-Mark a clause as **mechanism-framed** — *how the gears engage* — with one closed mood root. Condition type (sufficient / necessary / *if* / *because*) stays on [joins and clause poles](causation.md); exceptionlessness stays on [universality](#universality).
-
-**Shape:** floating **`/h/`** mood **`erage`** ⚙️ *gear* → *mechanism* (optional `/w/` when scoped only to a preceding `/ɡ/` — rare). Prefer floating `/h/`. Ending = **-m** only (metaphorical overlay) — **`heragem`**.
-
-**Mnemonic:** a **gear train** names that you are talking about the mechanism, not merely listing a sufficient hit or a natural law. Ordinary content still available (`zeragel` *a gear*; `veragel` *to mesh / engage*).
-
-```
-`… haon beladel heragem.`
-
-gloss: `h-open-to` · `b-effort` · `h-CAUSE`
-
-*… open to effort — as mechanism* (how the payoff gears turn)
-```
-
-Use **CAUSE** when the clause is doing **mechanism highlight**. Everyday *leads to* / *would work* stays open sufficient without this mood. *Always by nature* stays **NATURAL** (`hafafal`) + evidentiality. *Because* / *if* subordination stays **`hurugum` / `horodom` + `odo`**.
-
-| English bundle | Prefer |
-|----------------|--------|
-| *how it works / the mechanism is…* | **CAUSE** (`heragem`) on the claim |
-| *X would work / is among routes* | open sufficient (`…aom` / `haon`) — no **CAUSE** required |
-| *always by nature* | [**NATURAL**](#universality) (`hafafal`) + evidential `/h/` |
-| *because / if* + clause | [clause poles](causation.md#if-vs-iff) (`hurugum` / `horodom`) |
-| *I think … because…* (speaker grounds) | [COMMENT](commentary.md#comment) — [epistemic *because*](causation.md#epistemic-because) |
-
-| | Prefer |
-|--|--------|
-| Condition type vs mechanism | joins / **`odo`** poles = type; **`erage`** = mechanism frame |
-| NATURAL vs CAUSE | **`afafa`** = exceptionlessness warrant; **`erage`** = gears / how |
-| Evidential vs CAUSE | channel of knowing vs mechanism highlight — stack when both matter |
-
-
 ### Numbered alternatives (problem / solution / goal)
 <a id="numbered-alternatives"></a>
 <a id="ideation"></a>
@@ -144,9 +109,9 @@ Digits are optional when these roots name a topic outside ideation (*the problem
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills on this Intermediate band. Try each item before opening **Show answer**. Compose emotion (one value + ACT + LOCUS), mark mechanism with **`heragem`**, or number ideation candidates (`g#N`) — not overlay-inventory lookup, and not universality warrant.
+Short drills on this Intermediate band. Try each item before opening **Show answer**. Compose emotion (one value + ACT + LOCUS), or number ideation candidates (`g#N`) — not overlay-inventory lookup, and not universality warrant.
 
-**Roots used here:** `azawa` / `ulonu` / `ubuzu` · `odolo` *competence* · `ogono` *relatedness* · `ezebe` *dialogue* · `awaza` *division* · `ebun` *draft* · `emome` *memo* · `ogena` HIGH · `oju` MED · `ozono` LOW · `abobo` INTERNAL · `oburo` EXTERNAL · `agena` CIRCUM · `erage` CAUSE · `elade` *effort* · `ubezu` *problem* · `egoge` *solution* · `ogalo` *goal* · `awu` *walk* · `ezabu` *tell* · `egu` *sing*
+**Roots used here:** `azawa` / `ulonu` / `ubuzu` · `odolo` *competence* · `ogono` *relatedness* · `ezebe` *dialogue* · `awaza` *division* · `ebun` *draft* · `emome` *memo* · `ogena` HIGH · `oju` MED · `ozono` LOW · `abobo` INTERNAL · `oburo` EXTERNAL · `agena` CIRCUM · `ubezu` *problem* · `egoge` *solution* · `ogalo` *goal* · `ezabu` *tell*
 
 #### English → Agelan
 
@@ -180,19 +145,13 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zawazal wogonoxum hojul hoburol.`
 :::
 
-**6.** *Ulonun walks — as mechanism.*
-
-::: details Show answer
-`zulonun vawul heragem.`
-:::
-
-**7.** *Problem 1.*
+**6.** *Problem 1.*
 
 ::: details Show answer
 `zubezul g#1.`
 :::
 
-**8.** *Azawan names solution 2.*
+**7.** *Azawan names solution 2.*
 
 ::: details Show answer
 `zazawan zegogel g#2 vezabul.`
@@ -218,31 +177,19 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Resentful about the memo* (unmet relatedness; flood poured onto them).
 :::
 
-**4.** `zazawan vegul heragem.`
-
-::: details Show answer
-*Azawan sings — as mechanism.*
-:::
-
-**5.** `haon beladel heragem.`
-
-::: details Show answer
-*Open to effort — as mechanism.*
-:::
-
-**6.** `zogalol g#1.`
+**4.** `zogalol g#1.`
 
 ::: details Show answer
 *Goal 1.*
 :::
 
-**7.** `zegogel g~#2.`
+**5.** `zegogel g~#2.`
 
 ::: details Show answer
 *Solution 2* (tentative rank).
 :::
 
-**8.** `zubuzun zubezul g#1 vezabul.`
+**6.** `zubuzun zubezul g#1 vezabul.`
 
 ::: details Show answer
 *Ubuzun names problem 1.*
@@ -304,7 +251,7 @@ Warrant is a **root choice**, not `xa`/`xu` on the quantifier host. Domain stays
 | Soft list vs uncountered | `zuam` = open inventory; **`ululu`** = no counterexample found |
 | Formal vs natural | **`idido`** = definition/proof; **`afafa`** = nature’s force + evidential |
 | Pattern vs COMMON | [evidential](commentary.md#evidentiality) **`awa`** = trail of cases; **`ewono`** = usual warrant |
-| Natural vs CAUSE | **`afafa`** for exceptionlessness; condition type stays [joins](causation.md); **CAUSE** mood **`erage`** / **`heragem`** = [mechanism framing](#cause) |
+| Natural vs CAUSE | **`afafa`** for exceptionlessness; condition type stays [joins](causation.md); **CAUSE** mood **`erage`** / **`heragem`** = [mechanism framing](causation.md#cause) |
 | Preference as law | values **`xo` / `xe`** — [causation](causation.md#preference-vs-law) |
 
 Prefer floating `/h/`; **RULE** is complex `/h/` + `/b/` scope when the frame is named. Domain / habitual morphology stays [coordination](coordination.md#universals-domains-generics) / [restrictors](restrictors.md); this section only warrants exceptionlessness.
