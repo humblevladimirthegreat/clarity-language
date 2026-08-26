@@ -253,7 +253,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 11 | `restrictors.md` | Intermediate | **exists** | Defined core (full); conjuncts; next-clause *when* | |
 | 11 | `restrictors.md` | Advanced | skip | undefined reserved cells | |
 | 12 | `spans.md` | Intermediate | **exists** | Spoken open shape; TYPE; EDGE; endings; nesting; **`^ … ^`** adjunct islands | |
-| 12 | `spans.md` | Advanced | **exists** | Close forms (`xuxul` / truncated / sic / close-all) | 4–6 items |
+| 12 | `spans.md` | Advanced | **exists** | Close forms (`xuxul` / editorial / proper / close-all) | 4–6 items |
 | 13 | `numbers.md` | Intermediate | **exists** | PoS on numbers; markers; endings; digitless; overlays `/v/` `/h/` `/j/` `/x/` as on the band; **one of** measure / range / percent / time if you can keep the item to that decision | **Optional track.** Do not dump the whole Intermediate. 6–8 items |
 | 13 | `numbers.md` | Advanced | **exists** | Digitless exponents / hyperbole / zero×exp **as used in the band’s teach examples** — not unassigned TODO cells | Optional track. 4–6 items |
 | 13 | `comparatives.md` | Intermediate | **exists** | Full comparative arity; distributive **`a`** + SHARED `/ɡ/`; measured differentials | Measured items **Sibling OK:** numbers Intermediate **measure phrases** only |

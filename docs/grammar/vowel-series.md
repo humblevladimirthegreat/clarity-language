@@ -23,7 +23,6 @@ Later pages reuse these letters (joins, revisers, values, ability, roles). Same 
 
 Stacked two-vowel forms (`ao`, `ae`, `ua`, …) stay legal; three-vowel stacks are not used.
 
-[TODO: explain stacks and how that relates to the stacked j]
 
 ## See also
 

@@ -5,7 +5,7 @@
 ## Purpose
 <a id="purpose"></a>
 
-Agelan encodes psychological concepts and self-improvement techniques into vocabulary and grammar so that using the language nudges you toward better habits. For example, the word for *I think* can frame a clause as cognitive commentary without upgrading it to a world warrant — that split helps you notice when you are storying the scene rather than reporting how you know. [TODO: choose different exapmle]
+Agelan encodes psychological concepts and self-improvement techniques into vocabulary and grammar so that using the language nudges you toward better habits. For example, the word for *I think* can frame a clause as cognitive commentary without upgrading it to a world warrant — that split helps you notice when you are storying the scene rather than reporting how you know.
 
 The design aims at three outcomes, in this order:
 
@@ -24,7 +24,6 @@ Surface common biases that make self-delusion easy. Examples: mark how you know 
 
 Support authentic choice by making reasons for action visible. Examples: name motive or prescription on a need instead of bare *should*; prefer numbered candidates over bare *the problem* / *the solution* / *the goal*, and reframe the same situation with paraphrase rather than a second digit; mark how revisable a pick is, and split what you mean to do from a forecast; name the judgment bar when ranking (*worse than Average* / *Mine* / …).
 
-[TODO: for the above sections, separate short paragraph per example, more natural wording]
 
 **Why this order.** Rationality is hard without compassion first: lack of self-acceptance fuels motivated reasoning, so truth-seeking collapses into defense. Empowerment without rationality is foolish; without compassion it is antisocial; without both it is dangerous. So the stack is compassion → rationality → empowerment.
 
@@ -64,7 +63,6 @@ Psychological features fit these criteria:
 
 How the aims show up in vocabulary and grammar — orientation only; learn the forms later on the reading path. The sections below name English jobs and give a taste of the morphology; they are not paradigms.
 
-[TODO: for all features, avoid giving the exact agelan forms here, simply describe them and users will learn it in the appropriate grammar docs]
 
 ### Needs, gratitude, and oughts
 <a id="needs-gratitude-and-oughts"></a>

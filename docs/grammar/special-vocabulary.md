@@ -104,7 +104,6 @@ Use **CAUSE** when the clause is doing **mechanism highlight**. Everyday *leads 
 | NATURAL vs CAUSE | **`afafa`** = exceptionlessness warrant; **`erage`** = gears / how |
 | Evidential vs CAUSE | channel of knowing vs mechanism highlight — stack when both matter |
 
-TODO: isn't causation handled by causation.md? See if this section is needed or should move into causation.md
 
 ### Numbered alternatives (problem / solution / goal)
 <a id="numbered-alternatives"></a>

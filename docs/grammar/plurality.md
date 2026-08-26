@@ -216,7 +216,6 @@ Mark when the wrong reading would matter: co-agency → **`ana`** or a join; “
 
 **Not verb -sh:** plural *people* cooking once → plural on the **noun**, singular verb. *Knocked several times* as a count → **`h+3`** / **`h+`**, singular verb (unless the bout is itself the discourse set).
 
-TODO: consider removing -sh on verbs. It is hard to come up with examples so it's probably not needed.
 
 ### Adjectives (`/ɡ/`) — collective
 <a id="adjectives-g"></a>
@@ -362,7 +361,6 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 ## Advanced
 <a id="advanced"></a>
 
-TODO: consider removing this learning band
 
 ### Where **-sh** is unused
 

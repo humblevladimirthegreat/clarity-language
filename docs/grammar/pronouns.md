@@ -28,7 +28,6 @@ gloss: `z-grace` · `v-walk` · `z-←grace` · `v-sit`
 
 Add **-sh** after **-r** for a **group** referent (anchor **and associates**) — [plurality.md](plurality.md). Example: `…r` = one; `…rsh` = that one and associates.
 
-[TODO: give example]
 
 ### Special pronouns
 <a id="special-pronouns"></a>
@@ -49,7 +48,6 @@ Discourse-role forms (not letter/full-root **-r** from ordinary antecedents). Th
 
 **Prefer names.** When a proper name is available, use **-n** and/or its **-r** resume — including for self-address — rather than **`umogo`** / **`ehado`**. See [proper name](reference-suffix.md#proper-name--n). Usual named people in examples: **Azawan**, **Ulonun**, **Ubuzun** (`azawa` / `ulonu` / `ubuzu` + **-n**).
 
-[TODO: add self-address example choosing some name]
 
 ```
 `zumogon vawul.`

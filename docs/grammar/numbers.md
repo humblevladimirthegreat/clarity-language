@@ -3,7 +3,6 @@
 
 Count and rank with number words. A whole numeric value is **one word**, even when it contains several digit groups (or none).
 
-[TODO: pronunciation and labels should be introduced in beginner. move numeric form to intermediate]
 
 ## Beginner
 <a id="beginner"></a>
@@ -806,7 +805,6 @@ Vague degree stays `/w/` on the scale (`zel wogenal gonudam …`) — no unit. D
 
 **Not this pattern:** percentage closers (**`jo`** / **`ju`**); bare multiplicative `/h/` factors (`h+1.5`); stacking `b+2 burelul` as two arguments of one adjective; Latin letter abbreviations as Agelan orthography.
 
-TODO: consider moving measurements, time, date to a new file
 
 ### Ranges
 <a id="ranges"></a>

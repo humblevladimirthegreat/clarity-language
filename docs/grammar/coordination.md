@@ -396,7 +396,6 @@ Apply these readings when it is by itself (empty list).
 | **…en** (`zen` / …) | *unspecified ranking* (stock) |
 | **…er** (`zer` / …) | *whatever's most important* |
 
-TODO: come up with new readings for zel,zem,zuem,zuel. There should be a consistent distinction between bare -e- (there is no descending order) and -ue (there is no ascending order)
 
 **Set — focus**
 
@@ -603,7 +602,6 @@ When the join frame should be clear **before** the conjuncts (*everything but…
 
 Prefer a single right-close when early frame is unnecessary. Frame echo is **style**, not a second grammar.
 
-[TODO: remove this two-beat feature from docs and parser]
 
 ### Fence nesting
 <a id="fence-nesting"></a>

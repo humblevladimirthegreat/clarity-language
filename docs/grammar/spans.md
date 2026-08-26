@@ -300,7 +300,7 @@ EDGE **`a`** / **`e`** / **`o`** take **-l** / **-m** / **-n**. EDGE **`u`** tak
 | `d[]` | `daxul` | empty / redacted (EDGE **u**) |
 | `d[=]` | `daxur` | anaphor (EDGE **u**) |
 
-Close does not repeat PoS, TYPE, EDGE, or open fidelity. Explicit close for EDGE **a**: **`xuxul`** (complete) — Intermediate trunc/sic/close-all live in Advanced.
+Close does not repeat PoS, TYPE, EDGE, or open fidelity. Explicit close for EDGE **a**: **`xuxul`** (complete) — Intermediate editorial/proper/close-all live in Advanced.
 
 ### Nesting
 <a id="nesting"></a>
@@ -475,16 +475,16 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 ## Advanced
 <a id="advanced"></a>
 
-### Close forms (complete / truncated / sic / close-all)
+### Close forms (complete / editorial / proper / close-all)
 
 | Spoken | Job | Writing | Mnemonic |
 |--------|-----|---------|----------|
 | **`xuxul`** | pop **one** — **complete** | matching closer `]` / `}` / `)` / `>` | exact **-l**: the span closes whole |
-| **`xuxur`** | pop **one** — **truncated** (cut off / trail off) | `-]` / `-}` / `-)` / `->` (ASCII hyphen + closer) | resume **-r**: the wording stops short, resume may pick up |
-| **`xuxun`** | pop **one** — **sic / editorial** (complete as-written, including defects) | `#]` / `#}` / `#)` / `#>` | named **-n**: kept exactly as written, under its own name |
+| **`xuxur`** | pop **one** — **editorial** (wording kept as written under an editorial mark: cut off, trail off, or defect noted) | `-]` / `-}` / `-)` / `->` (ASCII hyphen + closer) | resume **-r**: the wording stops short or carries a mark; resume may pick up |
+| **`xuxun`** | pop **one** — **proper / titled** close (reserved — matches the open’s proper **-n**) | `#]` / `#}` / `#)` / `#>` | named **-n**: closes a span held as a proper / titled unit |
 | **`xuxum`** | pop **all** open spans | optional close-all mark `\|` | soft **-m**: sweep everything lightly |
-| **`xuxur`** + **`xuxum`** | truncated innermost, then pop all | `-\|` | |
-| **`xuxun`** + **`xuxum`** | sic innermost, then pop all | `#\|` | |
+| **`xuxur`** + **`xuxum`** | editorial innermost, then pop all | `-\|` | |
+| **`xuxun`** + **`xuxum`** | proper innermost, then pop all | `#\|` | |
 
 ```text
 xuxul  =  x + u + x + u + l
@@ -493,20 +493,18 @@ xuxun  =  x + u + x + u + n
 xuxum  =  x + u + x + u + m
 ```
 
-TODO: reserve xuxun as normal proper. Replace truncated with editorial
+Editorial and proper spans **are committed** and enter anaphor history (`d[=]` / `daxur` may resume them). Combined `-\|` / `#\|` are writing-only shorthand for two spoken closes; bare `xuxur` / `xuxun` never means pop-all by themselves. Illegal: `\|-` / `\|#` (mark must precede close-all).
 
-Truncated and sic spans **are committed** and enter anaphor history (`d[=]` / `daxur` may resume them). Combined `-\|` / `#\|` are writing-only shorthand for two spoken closes; bare `xuxur` / `xuxun` never means pop-all by themselves. Illegal: `\|-` / `\|#` (mark must precede close-all).
-
-These forms are not clause joins (`xul` / `xum` = negation — different shape). They are not an empty cite under `/d/` (`daxul` = empty/redacted; `daxur` = that cite; `xuxul` = complete close; `xuxur` = truncated close).
+These forms are not clause joins (`xul` / `xum` = negation — different shape). They are not an empty cite under `/d/` (`daxul` = empty/redacted; `daxur` = that cite; `xuxul` = complete close; `xuxur` = editorial close).
 
 | Writing | Speech | Notes |
 |---------|--------|-------|
-| `d[…-]` | `daxal` … `xuxur` | truncated close |
-| `d[…#]` | `daxal` … `xuxun` | sic / editorial close |
-| `d[…-\|]` | `daxal` … `xuxur xuxum` | truncated + close-all |
-| `d[…#\|]` | `daxal` … `xuxun xuxum` | sic + close-all |
+| `d[…-]` | `daxal` … `xuxur` | editorial close |
+| `d[…#]` | `daxal` … `xuxun` | proper close (reserved) |
+| `d[…-\|]` | `daxal` … `xuxur xuxum` | editorial + close-all |
+| `d[…#\|]` | `daxal` … `xuxun xuxum` | proper + close-all |
 
-Prefer EDGE **`a`** + **`xuxur`** for cut-off cites; EDGE **`e`** auto-pop is **complete**, not truncated or sic.
+Prefer EDGE **`a`** + **`xuxur`** for cut-off cites; EDGE **`e`** auto-pop is **complete**, not editorial or proper.
 
 ### Spoken inventory
 <a id="inventory"></a>
@@ -527,11 +525,11 @@ Atomic (EDGE **o**): `…axol` / `…axom` / `…axon` (cite examples); same pat
 | Form | Job |
 |------|-----|
 | `xuxul` | pop one — complete |
-| `xuxur` | pop one — truncated |
-| `xuxun` | pop one — sic / editorial |
+| `xuxur` | pop one — editorial |
+| `xuxun` | pop one — proper (reserved) |
 | `xuxum` | pop all |
-| `xuxur xuxum` | truncated + pop all (writing `-\|`) |
-| `xuxun xuxum` | sic + pop all (writing `#\|`) |
+| `xuxur xuxum` | editorial + pop all (writing `-\|`) |
+| `xuxun xuxum` | proper + pop all (writing `#\|`) |
 
 ### Literal content (fence words / meta glyphs)
 <a id="literal-content"></a>
@@ -539,7 +537,7 @@ Atomic (EDGE **o**): `…axol` / `…axom` / `…axon` (cite examples); same pat
 
 When a span-marker word (speech) or a raw bracket / `~` / `@` / `<` / `>` / `=` / `|` / `#` / hyphen-before-closer / scope-island `^` sequence (writing) must appear **as content** inside a span — not for ordinary nesting.
 
-**Writing:** `\` before `[` / `]` / `{` / `}` / `(` / `)` / `<` / `>` / `~` / `@` / `|` / `#` / `=` / `^` / `-` (when the hyphen would form truncated close). Literal backslash: `\\`.
+**Writing:** `\` before `[` / `]` / `{` / `}` / `(` / `)` / `<` / `>` / `~` / `@` / `|` / `#` / `=` / `^` / `-` (when the hyphen would form editorial close). Literal backslash: `\\`.
 
 ```text
 d[ he typed \] then left ]
@@ -549,11 +547,10 @@ d[ score\- ]
 d[ item \# ]
 ```
 
-`d[score\-]` is a **complete** cite whose interior ends in a hyphen. `d[item\#]` is a **complete** cite whose interior ends in `#` — not sic close `#]`.
+`d[score\-]` is a **complete** cite whose interior ends in a hyphen. `d[item\#]` is a **complete** cite whose interior ends in `#` — not the special close `#]`.
 
 **Speech:** there is no transparent speech escape. Bind the fence-shaped token as an **atomic opaque** so it is content, not an open/close:
 
-TODO: consider changing slash as escape to just opaque. 
 
 ```text
 daxal duxol xuxul xuxul
@@ -566,7 +563,7 @@ While scanning a span interior, bare `|` / `#` / hyphen are ordinary content unl
 ### Translation practice
 <a id="translation-practice-advanced"></a>
 
-Short drills on this Advanced band. Try each item before opening **Show answer**. Test how the span **closes** (complete / truncated / sic / close-all), not only the open.
+Short drills on this Advanced band. Try each item before opening **Show answer**. Test how the span **closes** (complete / editorial / proper / close-all), not only the open.
 
 **Roots used here:** `azawa` / `ulonu` / `ubuzu` · `ezabu` *tell* · `uze` *happy* (**-m**)
 
@@ -578,10 +575,10 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 `zazawan daxal hi xuxur vezabul.`
 :::
 
-**2.** *Ulonun said “hi”* (keep the wording as-written, defects and all)
+**2.** *Ulonun said “hi”* (keep the wording as written, defects and all — editorial close)
 
 ::: details Show answer
-`zulonun daxal hi xuxun vezabul.`
+`zulonun daxal hi xuxur vezabul.`
 :::
 
 **3.** *Ubuzun said “hi” (happily)* — then pop every open span at once.
@@ -596,7 +593,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 `zazawan d[hi-|] vezabul.`
 :::
 
-**5.** *Ulonun said “hi”* (sic), then pop all remaining opens. (writing)
+**5.** *Ulonun cited “hi” as a titled wording*, then pop all remaining opens. (writing)
 
 ::: details Show answer
 `zulonun d[hi#|] vezabul.`
@@ -607,13 +604,13 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 **1.** `zazawan d[hi-] vezabul.`
 
 ::: details Show answer
-*Azawan said “hi…”* (truncated cite)
+*Azawan said “hi…”* (editorial cite — wording trails off)
 :::
 
 **2.** `zulonun daxal hi xuxun vezabul.`
 
 ::: details Show answer
-*Ulonun said “hi”* (sic / editorial close — keep the wording as written)
+*Ulonun said “hi”.* (proper close — reserved for spans held as titled units)
 :::
 
 **3.** `zubuzun daxal hi xuxul vezabul.`
@@ -625,7 +622,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 **4.** `zazawan daxal hi xuxur xuxum vezabul.`
 
 ::: details Show answer
-*Azawan said “hi…”* (truncated innermost, then pop all)
+*Azawan said “hi…”* (editorial innermost, then pop all)
 :::
 
 **5.** `zulonun daxal duxol xuxul xuxul vezabul.`

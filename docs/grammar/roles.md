@@ -2,7 +2,6 @@
 <a id="roles"></a>
 
 Name event participants (*fighter*, *the one fought*) and **whose** left / right you mean.
-[TODO: figure out why getting 404 when accessing this on web]
 
 ## Beginner
 <a id="beginner"></a>
@@ -283,7 +282,6 @@ The **`/b/`** argument is the landmark, not the viewpoint. Put the facing being 
 
 Forward / back (`ovaro` / `agaja`) may reuse the same **`DIR x ANCHOR`** pattern when facing matters; they are not under the bare-lateral ban.
 
-TODO: think of ways to remove temptation to use bare spatial. May require rethinking whole feature
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>

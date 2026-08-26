@@ -7,7 +7,6 @@ Intention vs forecast, and how revisable a pick is — closed `/h/` mood roots.
 
 This is an intermediate feature. Come back when you are ready for that level.
 
-TODO: consider whether plan/predict should be beginner level
 
 ## Intermediate
 <a id="intermediate"></a>

@@ -48,7 +48,6 @@ On **`uho`**, **-l / -m / -n / -r** mark **how you hold** the commentary — fle
 | **-l** | **`huhol`** | **fused** | commentary taken as the scene (*it is so because I think*) |
 | **-n** | **`huhon`** | **named loop** | titled / habitual rumination frame (*the usual story*) |
 | **-r** | **`huhur`** | **return** | same commentary *and* a cue to step back toward bare contact |
-[TODO: replace -n with usual proper]
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -308,7 +307,6 @@ On **`edahe`**, **-l / -m / -n / -r** mark **how you hold** the as-if frame — 
 
 When unsure, prefer **`hedahem`**.
 
-TODO: remove -n distinction. 
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
