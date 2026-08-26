@@ -10,7 +10,9 @@ const SAMPLE = 'zazawan vawul.'
 const text = ref(SAMPLE)
 
 const { tables, status, errorMessage } = useClassifyTables()
-const { busy, error: speakError, lineFor, speakText } = useAgelanSpeak()
+const { busy, error: speakError, lineFor, ipaFor, speakText } = useAgelanSpeak()
+
+const showIpa = ref(false)
 
 const result = computed<InspectResult>(() => {
   if (!tables.value) return { tokens: [], constructions: [] }
@@ -18,6 +20,7 @@ const result = computed<InspectResult>(() => {
 })
 
 const spokenPreview = computed(() => lineFor(text.value))
+const ipaPreview = computed(() => ipaFor(text.value))
 </script>
 
 <template>
@@ -41,7 +44,23 @@ const spokenPreview = computed(() => lineFor(text.value))
       >
         {{ busy ? 'Stop' : 'Speak Agelan' }}
       </button>
-      <p v-if="spokenPreview" class="preview">{{ spokenPreview }}</p>
+      <div v-if="spokenPreview" class="spoken">
+        <p class="preview">{{ spokenPreview }}</p>
+        <button
+          type="button"
+          class="btn"
+          :disabled="!ipaPreview"
+          :aria-pressed="showIpa"
+          aria-label="Show IPA"
+          @click="showIpa = !showIpa"
+        >
+          {{ showIpa ? 'Hide IPA' : 'Show IPA' }}
+        </button>
+        <p v-if="showIpa && ipaPreview" class="ipa" lang="und-Latn-fonipa">
+          <span class="ipa-label">IPA</span>
+          {{ ipaPreview }}
+        </p>
+      </div>
     </div>
     <p v-if="speakError" class="warn">{{ speakError }}</p>
     <p class="hint">
@@ -49,7 +68,8 @@ const spokenPreview = computed(() => lineFor(text.value))
       join, span fence, or <code>^</code> to inspect the construction. Pin or press Enter for the
       full breakdown beside the stream. Copy uses the romanized surface form (not English). Arrow
       keys walk words; <kbd>g</kbd> opens Why; <kbd>s</kbd> speaks the selection; <kbd>Esc</kbd>
-      closes the card. Speak Agelan expands number shorthand and span brackets; foreign
+      closes the card. Speak Agelan expands number shorthand and span brackets; Show IPA
+      transcribes the spoken forms (not the writing shorthand). Foreign
       <code>&lt;&gt;</code> interiors and compact loans are still skipped.
     </p>
     <p v-if="status === 'error'" class="warn">Could not load lexicon. {{ errorMessage }}</p>
@@ -92,6 +112,15 @@ textarea:focus {
   margin: 0.65rem 0 0;
 }
 
+.spoken {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 0.85rem;
+  min-width: 0;
+  flex: 1 1 12rem;
+}
+
 .btn {
   font: inherit;
   font-size: 0.85rem;
@@ -108,10 +137,24 @@ textarea:focus {
   cursor: not-allowed;
 }
 
-.preview {
+.preview,
+.ipa {
   margin: 0;
   color: var(--vp-c-text-2);
   font-size: 0.9rem;
+}
+
+.ipa {
+  font-family: var(--vp-font-family-mono);
+}
+
+.ipa-label {
+  font-family: var(--vp-font-family-base);
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--vp-c-text-3);
+  margin-right: 0.35rem;
 }
 
 .hint {

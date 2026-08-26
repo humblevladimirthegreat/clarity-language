@@ -188,7 +188,7 @@ CLI: `npm run speak -- "zumogon guzem."` prints speech surface + phonemes and op
 
 | Surface | Behavior |
 |---------|----------|
-| **Gloss overlay** (Phase 1) | **Speak Agelan** on the paste box; **Speak word** / `s` on the inspect card. Lazy WASM. |
+| **Gloss overlay** (Phase 1) | **Speak Agelan** and **Show IPA** on the paste box (IPA beside the spoken preview); **Speak word** / `s` on the inspect card. Lazy WASM. |
 | Grammar doc examples | Play control on fenced Agelan lines / exercise keys (Phase 5) |
 | Future web tools | Play selection or current sentence |
 | Errors | If a token is not a native speech-shaped word, skip it; do not invent audio |

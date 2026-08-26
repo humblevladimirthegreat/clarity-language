@@ -2,7 +2,6 @@
 Phonology english-to-agelan conversion prioritizes similar placements 
 Statistics captures consonant and vowel distribution 
 Conceptual metaphor (growth mindset) for failure 
-Voice generator shows IPA
 Ensure asides are allowed on any part of speech. Decide aka type parentheticals
 Single page application?
 Consider formalizing abbreviations (mentions)

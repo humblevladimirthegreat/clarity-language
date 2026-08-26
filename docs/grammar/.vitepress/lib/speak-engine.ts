@@ -173,3 +173,8 @@ export function previewLine(plan: PhonemePlan): string {
   }
   return spoken ? `Will speak: ${spoken}` : ''
 }
+
+/** Phonology IPA for spoken words (same join as the CLI). */
+export function ipaLine(plan: PhonemePlan): string {
+  return plan.words.map((w) => w.ipa).join('  ')
+}

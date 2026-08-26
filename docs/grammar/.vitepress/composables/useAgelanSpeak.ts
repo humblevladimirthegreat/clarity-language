@@ -1,6 +1,6 @@
 import { ref } from 'vue'
 import { previewPhonemes } from '@tts-browser'
-import { previewLine, speak, stopSpeaking } from '../lib/speak-engine'
+import { ipaLine, previewLine, speak, stopSpeaking } from '../lib/speak-engine'
 
 const busy = ref(false)
 const error = ref('')
@@ -10,6 +10,11 @@ export function useAgelanSpeak() {
   function lineFor(text: string): string {
     if (!text.trim()) return ''
     return previewLine(previewPhonemes(text))
+  }
+
+  function ipaFor(text: string): string {
+    if (!text.trim()) return ''
+    return ipaLine(previewPhonemes(text))
   }
 
   async function speakText(text: string): Promise<void> {
@@ -36,5 +41,5 @@ export function useAgelanSpeak() {
     busy.value = false
   }
 
-  return { busy, error, lineFor, speakText, stop }
+  return { busy, error, lineFor, ipaFor, speakText, stop }
 }
