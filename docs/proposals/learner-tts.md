@@ -1,7 +1,7 @@
 # Proposal: usable learner TTS (in-browser)
 
 **Status:** PHASE 3 DONE (framing cues); Phase 4 (loan islands) next  
-**Related:** long-term TODO *text to speech*; depends on [parser-pipeline.md](../meta/parser-pipeline.md) (**assumed shipped** — `parse(text)` → typed AST)  
+**Related:** long-term TODO *text to speech*; depends on [parser-pipeline.md](../meta/parser-pipeline.md) (**assumed shipped** — `parse(text)` → typed AST); inverse dictation (no Agelan speech training) is [learner-stt.md](learner-stt.md)  
 **Design authority:** spoken forms stay in the grammar docs ([phonology.md](../grammar/phonology.md), [spans.md](../grammar/spans.md#writing-vs-speech), [numbers.md](../grammar/numbers.md#writing-preferred-shorthand), [core.md](../grammar/core.md#orthography-and-prosody-periods)). This proposal covers **tooling only**: writing → speech surface → audio.
 
 ## Motivation
@@ -262,3 +262,4 @@ Expect the WASM voice pack to dwarf the TS glue; keep it out of the critical ren
 | Number shorthand vs speech | [numbers.md](../grammar/numbers.md#writing-preferred-shorthand) |
 | Periods / force prosody | [core.md](../grammar/core.md#orthography-and-prosody-periods) |
 | Orthography | [core.md](../grammar/core.md#orthography) |
+| Inverse (phoneme ASR) | [learner-stt.md](learner-stt.md) |

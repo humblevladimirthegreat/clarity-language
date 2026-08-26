@@ -4,13 +4,9 @@ Statistics captures consonant and vowel distribution
 Conceptual metaphor (growth mindset) for failure 
 Single page application?
 Consider reserving two syllable words for special
-Confirm hyphenated phrases (using cite?)
-How hard is speech to text?
 redundancy mode - if choppy connection, maybe repeat words?
-consistently use role compound for words (teacher)
-remove left join possibility. If needed use revisers "everything except..."
+consistently use role compound for words (teacher derived from teach, not separate root)
 limit deployments to tagged releases
-if a page doesn't have a particular learning band, state so with an empty section
 doc pages should have table of contents
 completely separate out intermediate/advanced into their own pages
 move design notes (especially undefined/reserved forms) to meta page
@@ -76,4 +72,5 @@ long term:
 https://main.d2xds94zsgwptg.amplifyapp.com
 -local llm systematically review entire lexicon
 -vocab flashcard generator/system — [docs/proposals/vocab-flashcards.md](docs/proposals/vocab-flashcards.md)
+-speech to text (phoneme ASR, no Agelan corpus) — [docs/proposals/learner-stt.md](docs/proposals/learner-stt.md)
 - unused potential onset clusters (not part of the language; moved from phonology.md Design notes): *gw*, *vw*, *xw*, *bl* (should not mean left-aligned *b*)
