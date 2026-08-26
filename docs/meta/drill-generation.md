@@ -241,7 +241,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 6 | `reference-suffix.md` | Advanced | skip | ending tables owned by other pages | pointer inventory |
 | 7 | `pronouns.md` | Intermediate | **exists** | English approximations of **-r**; `/x/`…`-r` thread resume vs `/h/` aboutness; **`ana`** vs name join vs name…**-sh** | |
 | 7 | `pronouns.md` | Advanced | **exists** | Cross-role recast (one or two PoS flips, not the whole grid) | 4–6 items |
-| 7 | `plurality.md` | Intermediate | **exists** | Associate-set resolution; verb event-sets; collective `/ɡ/`…**-sh**; vocative **-sh** | |
+| 7 | `plurality.md` | Intermediate | **exists** | Associate-set resolution; verb collective doing; collective `/ɡ/`…**-sh**; vocative **-sh** | |
 | 7 | `plurality.md` | Advanced | skip | unused / summary | |
 | 8 | `predication.md` | Intermediate | **exists** | Classification packaging; **SAME** endings / soft identity | |
 | 8 | `predication.md` | Advanced | skip | boundaries | |

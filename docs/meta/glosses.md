@@ -119,7 +119,7 @@ Only when it is **not** already baked into the English sense-root:
 
 | Keep in gloss | Why |
 |---------------|-----|
-| `-sh` | Associative / collective / address-set — not a sense picker |
+| `-sh` | Associative / collective ascription / collective doing / address-set — not a sense picker |
 | `(←…)` binding for **-r** | Resume is not a lexicon sense; see below |
 | Rare teaching callouts | If you must contrast two same-sense forms that differ only by ending, prefer distinct English labels (`and.open` / `and`) over re-attaching `-m` / `-l` |
 

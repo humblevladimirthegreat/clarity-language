@@ -204,17 +204,27 @@ Mark when the wrong reading would matter: co-agency → **`ana`** or a join; “
 
 **Address-set resolution:** prefer everyone in this turn’s vocative cluster, plus anyone still held as addressee by context.
 
-### Verbs (`/v/`)
+### Verbs (`/v/`) — collective
+<a id="verbs-v"></a>
+<a id="collective-doing"></a>
 
-**-sh** marks an **event-set as discourse referent** — a set of doings you introduce, name, or resume — not subject–verb agreement, and not mere repetition count. A plural subject alone does **not** force **-sh** on the verb.
+On `/v/`, **-sh** marks **collective doing**: the event is **one shared act**, not several parallel doings. A plural subject alone does not force **-sh**. Noun **-sh** grows **who** the subject is; verb **-sh** marks **how** the doing is structured. Same pile story as [collective ascription](#collective-ascription) on `/ɡ/`.
 
-**Contrast with `/h/`:** *three times* / *multiple times* / habitual *always* are clause framing ([numbers](numbers.md) under `/h/`, or **`hual`**). Verb **-sh** is only when the **verb’s own referent** is a set of doings.
+| Shape | Reading |
+|-------|---------|
+| subject set + singular `/v/` | underspecified / each (*they walk* — together or separately, or don’t care) |
+| subject set + `/v/`…**-sh** | **collective** (*they walk as one outing*) |
+| named person + `/v/`…**-sh** | that person’s doing is **joint** — unnamed others share the act, off the subject |
+| group-kind singular (*the team*) + `/v/`…**-sh** | the group acts **as one unit** |
 
-* **-lsh** / **-msh** — first mention of several instances as one event-set ("they **held a series of** meetings").
-* **-nsh** — a **named series** of doings under one title or habit-name (*Azawan’s morning walks* held as the series) — contrast singular **-n** (*perform* **[Hamlet]** once).
-* **-rsh** — resume the prior actions and related. "He did **that (and related actions)**". 
+| Example | Gloss |
+|---------|-------|
+| `zazawansh vegul` | *Azawan and associates sing* (together or each, or don’t care) |
+| `zazawansh vegulsh` | *they sing as one outing* |
+| `zazawan vegulsh` | *Azawan sings jointly* (not a solo) |
+| `zahanan vawulsh` | *the team walks as one unit* |
 
-**Not verb -sh:** plural *people* cooking once → plural on the **noun**, singular verb. *Knocked several times* as a count → **`h+3`** / **`h+`**, singular verb (unless the bout is itself the discourse set).
+Count (*three times*) and habit (*always*) stay clause framing: [numbers](numbers.md) under `/h/`, or **`hual`**. **-rsh** on `/v/` resumes a prior **collective** doing (*still as one shared act*).
 
 
 ### Adjectives (`/ɡ/`) — collective
@@ -284,16 +294,16 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zumogonsh vurunul.`
 :::
 
-**5.** *Azawan sings as a set of performances.*
+**5.** *Azawan sings jointly (not a solo).*
 
 ::: details Show answer
 `zazawan vegulsh.`
 :::
 
-**6.** *Azawan and associates sing.* (one outing — not an event-set)
+**6.** *Azawan and associates sing as one outing.*
 
 ::: details Show answer
-`zazawansh vegul.`
+`zazawansh vegulsh.`
 :::
 
 **7.** *Hey, students!*
@@ -331,13 +341,13 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **4.** `zazawan vegulsh.`
 
 ::: details Show answer
-*Azawan sings as a set of performances.* / *There is a set of Azawan’s singings.*
+*Azawan sings jointly.* / *Azawan sings (not a solo).*
 :::
 
-**5.** `zazawansh vegul.`
+**5.** `zazawansh vegulsh.`
 
 ::: details Show answer
-*Azawan and associates sing.*
+*Azawan and associates sing as one outing.*
 :::
 
 **6.** `jezedulsh.`
@@ -379,17 +389,17 @@ Revisers (**al** / **am** / …) and join fences take ending only, no **-sh**. P
 | Role | **-sh** means… |
 |------|----------------|
 | `/z/` `/d/` `/b/` | Associative group in that noun slot; person-role exceptions in [person-role **-sh**](#person-role-sh) |
-| `/v/` | Event-set as discourse referent (not agreement; not mere *N times*) |
+| `/v/` | **Collective** doing (one shared act) |
 | `/ɡ/` | **Collective** ascription (property of the set as a unit) |
 | `/j/` vocative | Address this group (not *everyone* — that is **`…ual`**) |
 | other | *(not used)* |
 
 | Reference + **-sh** | Means… |
 |---------------------|--------|
-| **-lsh** | First mention, literal, associative group (or collective `/ɡ/`) |
-| **-msh** | First mention, metaphorical, associative group (or collective `/ɡ/`) |
-| **-nsh** | Named / titled group (or rare named collective `/ɡ/`) |
-| **-rsh** | Resume: prior referent **and associates** (or prior collective `/ɡ/`) |
+| **-lsh** | First mention, literal, associative group (or collective `/ɡ/` / `/v/`) |
+| **-msh** | First mention, metaphorical, associative group (or collective `/ɡ/` / `/v/`) |
+| **-nsh** | Named / titled group (or rare named collective `/ɡ/` / `/v/`) |
+| **-rsh** | Resume: prior referent **and associates** (or prior collective `/ɡ/` / `/v/`) |
 
 ### Quantity, generics, and habit (reminder)
 

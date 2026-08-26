@@ -12,7 +12,7 @@ Content words that **name a join move** — *include*, *choose*, *without* — r
 
 Name the **coordination move you perform** on an object — *include*, *choose*, *exclude*, … — as a closed `/v/` verb.
 
-**Shape:** join vowel + **-n** under `/v/` (`van`, `von`, …). One `/d/` object (singular or group). Group objects use ordinary noun **-sh** (`d-…lsh`); verb **-sh** is only for an event-set referent ([plurality](plurality.md)).
+**Shape:** join vowel + **-n** under `/v/` (`van`, `von`, …). One `/d/` object (singular or group). Group objects use ordinary noun **-sh** (`d-…lsh`); verb **-sh** is [collective doing](plurality.md#collective-doing).
 
 **Mnemonic:** vowel = which join move; **-n** = that move as a titled doing ([reference-suffix](reference-suffix.md#proper-name--n) verb sense).
 
