@@ -138,6 +138,7 @@ Later path numbers **may** recycle both siblings (e.g. coordination Beginner may
 Not required for a first dialogue corpus. Recycle them only on that track, or when **Needs:** / **Sibling OK** says so.
 
 - `numbers.md` Intermediate / Advanced
+- `numbers-applied.md` (Intermediate; depends on `numbers.md`)
 - `numeric-derivation.md` (Advanced only)
 
 ## Skip
@@ -254,7 +255,8 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 11 | `restrictors.md` | Advanced | skip | undefined reserved cells | |
 | 12 | `spans.md` | Intermediate | **exists** | Spoken open shape; TYPE; EDGE; endings; nesting; **`^ … ^`** adjunct islands | |
 | 12 | `spans.md` | Advanced | **exists** | Close forms (`xuxul` / editorial / proper / close-all) | 4–6 items |
-| 13 | `numbers.md` | Intermediate | **exists** | PoS on numbers; markers; endings; digitless; overlays `/v/` `/h/` `/j/` `/x/` as on the band; **one of** measure / range / percent / time if you can keep the item to that decision | **Optional track.** Do not dump the whole Intermediate. 6–8 items |
+| 13 | `numbers.md` | Intermediate | **exists** | PoS on numbers; markers; endings; digitless; overlays `/v/` `/h/` `/j/` `/x/` as on the band; **one of** measure / range / percent / time if you can keep the item to that decision (those topics live in **`numbers-applied.md`**) | **Optional track.** Do not dump the whole Intermediate. 6–8 items |
+| 13 | `numbers-applied.md` | Intermediate | **exists** | Digit-string labels; clock / calendar time; percent vs points; measure phrases; ranges — as taught on the band | Optional track. One topic per item. 4–8 items |
 | 13 | `numbers.md` | Advanced | **exists** | Digitless exponents / hyperbole / zero×exp **as used in the band’s teach examples** — not unassigned TODO cells | Optional track. 4–6 items |
 | 13 | `comparatives.md` | Intermediate | **exists** | Full comparative arity; distributive **`a`** + SHARED `/ɡ/`; measured differentials | Measured items **Sibling OK:** numbers Intermediate **measure phrases** only |
 | 13 | `comparatives.md` | Advanced | **exists** | Judgment benchmarks (`zonugon`, `zaheman`, **`zumogoxrawon`** Mine vs performance **`zumogon`**, …) | **`umogo`** allowed on Mine/performance items |
@@ -303,7 +305,7 @@ First-taught checkpoint for forms agents leak most often. If this checkpoint’s
 | Motive **`xe`** (values) | `values.md` Intermediate |
 | Evidentiality / NOTIONAL | `commentary.md` Intermediate |
 | Viewpoint laterals | `roles.md` Intermediate |
-| Measure phrases / ranges / percent | `numbers.md` Intermediate |
+| Measure phrases / ranges / percent | `numbers-applied.md` Intermediate |
 | Join-act **`van`** / join-relation **`gan`** | `join-extras.md` Intermediate |
 | **PLAN** / **PREDICT** / **DECISION** | `plan-decision.md` Intermediate |
 | Emotion compose; **CAUSE** **`erage`**; numbered alternatives | `special-vocabulary.md` Intermediate |

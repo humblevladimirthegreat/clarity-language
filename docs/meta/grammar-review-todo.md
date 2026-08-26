@@ -14,13 +14,11 @@ Open review items moved out of the learner-facing pages under `docs/grammar/` (g
 | `plurality.md` | Consider removing the Advanced learning band |
 | `roles.md` | Think of ways to remove the temptation to use bare spatial left/right; may require rethinking the whole viewpoint-lateral feature |
 | `spans.md` | Consider changing the slash escape to just opaque |
-| `numbers.md` | Introduce pronunciation and labels in Beginner; move the numeric short form to Intermediate |
 
 ## Structure / ownership
 
 | Page | Item |
 |------|------|
-| `numbers.md` | Consider moving measurements, time, date into a new file |
 | `plan-decision.md` | Consider whether plan/predict should be Beginner level |
 | `special-vocabulary.md` | Is the CAUSE section needed here, or should it move into `causation.md`? |
 

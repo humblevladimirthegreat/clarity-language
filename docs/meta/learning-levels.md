@@ -57,7 +57,7 @@ Numbers Intermediate / Advanced and [numeric-derivation.md](../grammar/numeric-d
 
 ### Intermediate then Advanced
 
-15. Every peer’s **[Intermediate](../grammar/core.md#intermediate)** section (same dependency order as above is fine). Skip pages with no Intermediate (vowel-series). Numbers Intermediate and leftover join / plan / overlay pages belong here.
+15. Every peer’s **[Intermediate](../grammar/core.md#intermediate)** section (same dependency order as above is fine). Skip pages with no Intermediate (vowel-series). Numbers Intermediate, [numbers-applied.md](../grammar/numbers-applied.md#intermediate), and leftover join / plan / overlay pages belong here.
 16. Every peer’s **Advanced** section. Numbers Advanced and [numeric-derivation.md](../grammar/numeric-derivation.md) stay **optional**.
 
 Learner-facing reading order: site sidebar (**Suggested reading order**); banding notes: [introduction.md § How to learn](../grammar/introduction.md#how-to-learn).
