@@ -9,7 +9,6 @@ Open review items moved out of the learner-facing pages under `docs/grammar/` (g
 | `commentary.md` | Replace the **-n** COMMENT hold (“named loop”) with the usual proper reading |
 | `commentary.md` | Remove the **-n** distinction on NOTIONAL hold endings |
 | `coordination.md` | ~~Come up with new readings for `zel`, `zem`, `zuem`, `zuel`~~ **done**: bare **e** = no favorite (`zel` / `zem` *I'm easy*); bare **ue** = no least / no veto (`zuel` / `zuem` *I don't mind*) |
-| `coordination.md` | Remove the two-beat frame echo feature from docs and parser |
 | `plurality.md` | Consider removing **-sh** on verbs; examples are hard to come by, so it may not be needed |
 | `plurality.md` | Consider removing the Advanced learning band |
 | `roles.md` | Think of ways to remove the temptation to use bare spatial left/right; may require rethinking the whole viewpoint-lateral feature |

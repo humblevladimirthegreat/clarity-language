@@ -105,7 +105,7 @@ Adapter: [`src/parse/tokens.ts`](../../src/parse/tokens.ts) / [`src/parse/tokeni
 Owns:
 
 - Utterance framing ([core.md](../grammar/core.md) — `/j/` turns, omissible default assertoric, `/x/` continue)
-- Right-close joins at phrase / VP / clause level; [frame echo](../grammar/coordination.md#frame-echo) as two sequential closes (no illegal left fence)
+- Right-close joins at phrase / VP / clause level (illegal left fence)
 - Span open…close nesting; adjunct islands **`^ … ^`**
 - Complex `/ɡ|h/` + `/b/`; floating `/h/` as adjuncts
 - Matrix-final **`odo`** + contiguous dependent

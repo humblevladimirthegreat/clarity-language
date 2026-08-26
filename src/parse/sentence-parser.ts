@@ -971,15 +971,22 @@ function islandHasBinder(island: IslandUnit): boolean {
   return walk(island.units);
 }
 
+function validateLeadingJoinFence<T extends { join?: LexWord }>(
+  parts: T[],
+  isEmpty: (part: T) => boolean,
+): void {
+  if (parts.length < 2) return;
+  const first = parts[0]!;
+  if (isEmpty(first) && first.join) {
+    throw new SentenceParseError("Illegal left fence: join before conjuncts");
+  }
+}
+
 function validateNpFences(coord: NpCoord): void {
   const { parts } = coord;
   if (parts.length === 0) return;
 
-  const first = parts[0]!;
-  const last = parts[parts.length - 1]!;
-  if (first.items.length === 0 && first.join && last.items.length > 0 && !last.join && parts.length > 1) {
-    throw new SentenceParseError("Illegal left fence: join before conjuncts without a sealing right-close");
-  }
+  validateLeadingJoinFence(parts, (part) => part.items.length === 0);
 
   for (let i = 0; i < parts.length - 1; i++) {
     const part = parts[i]!;
@@ -988,6 +995,14 @@ function validateNpFences(coord: NpCoord): void {
       throw new SentenceParseError("Illegal infix join: conjuncts must stack before a right-close");
     }
   }
+}
+
+function validateVpFences(coord: VpCoord): void {
+  validateLeadingJoinFence(coord.parts, (part) => part.items.length === 0);
+}
+
+function validateClauseCoordFences(coord: ClauseCoord): void {
+  validateLeadingJoinFence(coord.parts, (part) => part.clauses.length === 0);
 }
 
 function validateUnits(units: Unit[]): void {
@@ -1005,6 +1020,9 @@ function validateUnits(units: Unit[]): void {
         }
       }
     }
+    if (unit.kind === "vp") {
+      validateVpFences(unit.coord);
+    }
     if (unit.kind === "island") {
       if (!islandHasBinder(unit.island)) {
         throw new SentenceParseError("Illegal binderless scope island");
@@ -1015,6 +1033,7 @@ function validateUnits(units: Unit[]): void {
       for (const clause of unit.span.content) validateUnits(clause.units);
     }
     if (unit.kind === "clauseCoord") {
+      validateClauseCoordFences(unit.coord);
       for (const part of unit.coord.parts) {
         for (const clause of part.clauses) validateUnits(clause.units);
       }

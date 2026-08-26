@@ -577,32 +577,6 @@ gloss: `z-dog` · `z-cat` · `zam` · `g-ownership` · `b-grace`
 *Azawan's (dog and cat).*
 ```
 
-### Frame echo (two-beat)
-<a id="frame-echo"></a>
-<a id="frame-echo-two-beat"></a>
-
-When the join frame should be clear **before** the conjuncts (*everything but…*, *all of these…*), use **two beats**: announce with a **bare** join, then list conjuncts under a **second** right-close with the **same** spelling.
-
-| Beat | Shape | Role |
-|------|-------|------|
-| 1 — announce | bare `P-JOIN` (optional SHARED domain) | sets the frame |
-| 2 — seal | `PHRASE… P-JOIN` | exclusions or members under that frame |
-
-```
-`zual` · `zonunol zugugel zual`
-
-*everything — (but) onion and cucumber.*
-```
-
-```
-`zal` · `zegerel zodamol zal`
-
-*the lot — greens and tomato.*
-```
-
-Prefer a single right-close when early frame is unnecessary. Frame echo is **style**, not a second grammar.
-
-
 ### Fence nesting
 <a id="fence-nesting"></a>
 <a id="opener-r-coordination"></a>
@@ -679,7 +653,7 @@ VP `/v/`…**-n** spellings are [join-act verbs](join-extras.md#join-act-verbs).
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills on this Intermediate band. Try each item before opening **Show answer**. Sample the decisions this band adds: invert **`ua`**, universals vs *everything but*, SHARED after the join, islands, nesting, frame echo, and clause **`xan`**.
+Short drills on this Intermediate band. Try each item before opening **Show answer**. Sample the decisions this band adds: invert **`ua`**, universals vs *everything but*, SHARED after the join, islands, nesting, and clause **`xan`**.
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `ogodo` *dog* · `agada` *cat* · `odeda` *tea* · `ogeve` *coffee* · `udura` *water* · `onuda` *challenging* · `onuno` *onion* · `uguge` *cucumber* · `abeba` *apple* · `ohewo` *wash* · `awu` *walk* · `urunu` *run* · `ezele` *sleep*
 
@@ -759,10 +733,10 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan and nothing*
 :::
 
-**5.** `zual` · `zonunol zugugel zual`
+**5.** `zonunol zugugel zual.`
 
 ::: details Show answer
-*everything — (but) onion and cucumber*
+*everything but onion and cucumber*
 :::
 
 **6.** `vohewo vabebal vam dabebal.`

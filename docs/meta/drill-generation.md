@@ -245,7 +245,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 7 | `plurality.md` | Advanced | skip | unused / summary | |
 | 8 | `predication.md` | Intermediate | **exists** | Classification packaging; **SAME** endings / soft identity | |
 | 8 | `predication.md` | Advanced | skip | boundaries | |
-| 9 | `coordination.md` | Intermediate | **exists** | Full focus/bare; rank joins as *the* stack if not already fluent; invert **`ua`/`uo`/`ue`**; universals/domains; SHARED after join; `^` islands; frame echo; fence nesting; clause soft **-n** (`xan`); VP/clause forms | Sample **decisions**, not every H3. 6–8 items |
+| 9 | `coordination.md` | Intermediate | **exists** | Full focus/bare; rank joins as *the* stack if not already fluent; invert **`ua`/`uo`/`ue`**; universals/domains; SHARED after join; `^` islands; fence nesting; clause soft **-n** (`xan`); VP/clause forms | Sample **decisions**, not every H3. 6–8 items |
 | 9 | `coordination.md` | Advanced | **exists** | Named phrase **-n**; one rare-arity or reserved contrast from the band | 4–6 items |
 | 10 | `questions.md` | Intermediate | **exists** | Fuller polar inventory; confirming a negative; fill-ask arity; circumstance **`har`**; yes/no with focus/bare; fill-ask answers | |
 | 10 | `questions.md` | Advanced | **exists** | Polar contrasts; focus/bare inventory under question | 4–6 items |

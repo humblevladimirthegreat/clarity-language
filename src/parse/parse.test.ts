@@ -93,14 +93,9 @@ describe("parse — coordination.md", () => {
     assert.equal(unit.coord.parts[0]!.join?.raw, "zam");
   });
 
-  it("parses frame echo zual zonunol zugugel zual", () => {
-    const result = parseText("zual zonunol zugugel zual.");
-    const unit = result.utterances[0]!.bodies[0]!.clause.units[0]!;
-    assert.equal(unit.kind, "np");
-    if (unit.kind !== "np") return;
-    assert.equal(unit.coord.parts.length, 2);
-    assert.equal(unit.coord.parts[0]!.items.length, 0);
-    assert.equal(unit.coord.parts[0]!.join?.raw, "zual");
+  it("rejects frame echo zual zonunol zugugel zual", () => {
+    const tokens = tokenizeUtterance("zual zonunol zugugel zual.", tables);
+    assert.throws(() => parseSentenceTokens(tokens), SentenceParseError);
   });
 
   it("parses join scope island", () => {
