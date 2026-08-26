@@ -430,7 +430,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 - In-clause chains are **parallel on A**, not nested `A REV (B REV C)`.
 - Discourse cue is **REV** before force, omitted-default body, non-initial `/x/` conjunct, or `/x/` linker — not mismatched slots mid-clause.
 
-### Reserved forms
+### Prefix-less particles only
 
 Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** are **only** these revisers (in-clause or discourse by placement). They are **not** [citation forms](core.md#citation-forms). Prefixed + ending forms of the same vowels (`zal`, `zam`, `val`, …) remain [joins](coordination.md#join-series-ending-shared) only. Whole-word **a** / **e** / **o** / **u** are not reviser forms and not legal words. Longer prefix-less **root + ending** outside a sentence (`godol`, `umogon`, …) — including as a lone word or inside a [mention span](spans.md#writing) — is citation, not revision.
 

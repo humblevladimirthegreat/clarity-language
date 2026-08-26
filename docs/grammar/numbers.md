@@ -508,7 +508,7 @@ Endings still apply (**-m** fuzzy *about three more!* / *about three!*, **-n** c
 
 **Nested agenda (digitful exp):** under `/x/`, [ordinal generation](#ordinal-generation) = **outline depth** relative to the focused agenda item — **`x#3e2`** = *3rd sub-sub-point under the focus*; **`x#e-1`** = *parent-layer item(s)*; **`x#e0`** = *current-layer item(s)* (assert this outline level). Flat talks stay **`x#N`** / **`x#-N`** / landmarks.
 
-Other `/x/` no-mantissa digitless-exp forms (**`x+e`**, **`x-e`**, …) stay **undefined** — except notional **`x-e-`** ([digitless exponents](#imaginary)). Mantissa + digitless-exp discourse indices: **`x#1e`** *umpteenth point:* / **`x#1e-`** *umpteenth-first point:* ([hyperbole](#hyperbole-gazillion)) — not end-relative (use **`x#-N`**) and not the start/last landmarks.
+Mantissa + digitless-exp discourse indices: **`x#1e`** *umpteenth point:* / **`x#1e-`** *umpteenth-first point:* ([hyperbole](#hyperbole-gazillion)) — not end-relative (use **`x#-N`**) and not the start/last landmarks. Notional **`x-e-`** is defined under [digitless exponents](#imaginary).
 
 **Independence framing:** **`#`** = unmarked inventory or steps (from the start); **`#-`** = end-relative inventory; **`+`** = corroborating; **`-`** = independent (new line of support). Do not use **`+`** / **`-`** for for/against or open vs scratch a bullet — independence is the point. Ordinary *firstly / secondly* without that framing is **`x#N`**. *Starting with* without a numeric step count is **`x#e-`**; *Finally* without a numeric step count is **`x#e`** (or end-framed **`x#-1`**). For/against and both-sides checks stay in ordinary wording or claim-level evidentiality, not on the number marker.
 
@@ -587,7 +587,7 @@ Speech is **`reu`** + digits + ending (e.g. `g#-2` → *greudul*). Digraph **`eu
 | **`x#-1`** | *1st-from-end point:* / *Starting with the last one:* (counting twin of **`x#e`** *Finally:*) |
 | **`x#-2`** | *2nd-from-end point:* / *penultimate item:* |
 
-Digitless-exp and hyperbole on **`#-`** stay **undefined**. Combine with [digitful generation](#ordinal-generation) when needed: **`g#-3e2`** = 3rd from the end **in generation +2**.
+Combine with [digitful generation](#ordinal-generation) when needed: **`g#-3e2`** = 3rd from the end **in generation +2**.
 
 
 ### Ordinal generation — digitful exponent on **`#`** / **`#-`**
@@ -981,7 +981,7 @@ A digit group may use an exponent marker (**`ba`** or **`bu`**) with **no** expo
 
 **Writing:** **`e`** = speech **`ba`**; **`e-`** = speech **`bu`**. Digitless means no power digits after that mark: `g+e`, `g+1e`, `g+0e`, `g+e-`, `g+1e-`. Bare / assert **`e0`** writes power **`0`**: `g+e0`, `g+3e0` (not digitless).
 
-**Shape limits:** one such group only in the word; do not combine digitless exp with real exp digits, percent closers, or further groups. Marker identity still applies. Digitless exp on **`ro`** / **`_`** is **undefined** on free number words. Derivation compounds may use digitless **`_`** as [infinite / landmark labels](numeric-derivation.md#infinite-labels) (`ROOTx_e`, `ROOTx_e-`, `ROOTx_1e`, …).
+**Shape limits:** one such group only in the word; do not combine digitless exp with real exp digits, percent closers, or further groups. Marker identity still applies. Derivation compounds may use digitless **`_`** as [infinite / landmark labels](numeric-derivation.md#infinite-labels) (`ROOTx_e`, `ROOTx_e-`, `ROOTx_1e`, …).
 
 #### Special values — no mantissa
 
@@ -1055,7 +1055,7 @@ No-mantissa digitless-exp under `/v/` and `/h/` inherit special-value identity (
 | **`h#e-`** | *for the first time* (onset framing — contrast numbered **`h#1`**) |
 | **`h~#e-`** | *for a near-first time* |
 
-**`ro`** under `/v/` `/h/` stays **undefined**. Soft/named/resume endings (**`~`** / **`@`** / **`=`**) apply as on other specials.
+Soft/named/resume endings (**`~`** / **`@`** / **`=`**) apply as on other specials.
 
 ##### Overlay `/j/`
 
@@ -1072,11 +1072,9 @@ No-mantissa digitless-exp under `/j/` (interjection cheers):
 | **`j-e-`** | *As if!* / *Imagine!* / *In theory!* (notional cheer) |
 | **`j~-e-`** | soft *as if!* / hedged imagine-cheer |
 
-Other `/j/` no-mantissa digitless-exp forms (`j-e`, `j+e-`, `j_…`, …) stay **undefined**.
-
 ##### Overlay `/x/`
 
-Under `/x/`, **last-place** **`x#e`** (and **`x~#e`** / **`x@#e`** / **`x=#e`**) = discourse *Finally* / last point, and **start-place** **`x#e-`** (and **`x~#e-`** / **`x@#e-`** / **`x=#e-`**) = discourse *Starting with:* / beginning — see [Number as discourse marker](#number-as-discourse-marker-by-marker). End-relative discourse points use **`x#-N`**. **Notional discourse:** **`x-e-`** = *imagine that:* / notional agenda point (side-track; not corroborating **`x+`** or independent **`x-`**); soft **`x~-e-`**; named **`x@-e-`**; resume **`x=-e-`**. **`x+e`** / **`x-e`** (and other `/x/` no-mantissa digitless-exp forms beyond start/last/notional) stay **undefined**. Digitless-exp on end-relative marker **`#-`** / **`reu`** stays **undefined**.
+Under `/x/`, **last-place** **`x#e`** (and **`x~#e`** / **`x@#e`** / **`x=#e`**) = discourse *Finally* / last point, and **start-place** **`x#e-`** (and **`x~#e-`** / **`x@#e-`** / **`x=#e-`**) = discourse *Starting with:* / beginning — see [Number as discourse marker](#number-as-discourse-marker-by-marker). End-relative discourse points use **`x#-N`**. **Notional discourse:** **`x-e-`** = *imagine that:* / notional agenda point (side-track; not corroborating **`x+`** or independent **`x-`**); soft **`x~-e-`**; named **`x@-e-`**; resume **`x=-e-`**.
 
 #### Zero × exponent
 <a id="zero-exponent"></a>
@@ -1136,11 +1134,11 @@ Ones-band / assert-`e0` overlays are ordinary bare OoM / **`Ne0`** (**`v+e0`**, 
 | **`j-0e`** | *Residue stands!* / *Won’t totally wipe!* |
 | **`j-0e-1`** | *Deci-residue stands!* |
 
-**`j+e0`** = ones-band cheer (ordinary bare OoM). Other `/j/` zero-exp forms beyond the table above are **undefined**.
+**`j+e0`** = ones-band cheer (ordinary bare OoM).
 
 ##### Overlay `/x/`
 
-Zero×exp under `/x/` is **undefined**. Discourse nesting uses [generation](#ordinal-generation) (**`x#e0`** = current-layer assert; **`x#3e2`** = nested depth).
+Discourse nesting uses [generation](#ordinal-generation) (**`x#e0`** = current-layer assert; **`x#3e2`** = nested depth).
 
 ##### Ordinal rank annihilated (`#0e`)
 <a id="rank-annihilated"></a>
@@ -1155,7 +1153,7 @@ Mantissa **`0`** + digitless **`ba`** under forward ordinal **`re` / `#`**. **No
 | **`h#0e`** | *for a disqualified / struck turn* |
 | **`j#0e`** | *Disqualified!* / *Rank wiped!* |
 
-Soft **-m** hedges (*near-disqualified*, …). Ordinal zero×digitless under `/x/` is **undefined**. Free twin of derivation **`ROOTx#0e`** — [numeric-derivation.md](numeric-derivation.md#rank-annihilated-morph).
+Soft **-m** hedges (*near-disqualified*, …). Free twin of derivation **`ROOTx#0e`** — [numeric-derivation.md](numeric-derivation.md#rank-annihilated-morph).
 
 ##### Free vs derived
 
@@ -1200,8 +1198,6 @@ Mantissa = how many joke-units of **late** (**`ba`**) or **early** (**`bu`**) ra
 | **`g~#1e-`** | *about the gazillionth-first* |
 
 Contrast: **`g#e`** = last place; **`g~#e`** = near last; **`g#e-`** = start landmark; **`g#1`** = numbered *1st*; **`g#-2`** = penultimate ([from the end](#from-the-end)).
-
-Digit-string **`ro`** / **`_`** + mantissa + digitless exp stays **undefined**. Digitless-exp hyperbole on **`#-`** / **`reu`** stays **undefined**.
 
 **Endings** on hyperbolic forms:
 

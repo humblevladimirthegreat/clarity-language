@@ -21,7 +21,7 @@ PoS + {a|u|o} + x + ROOT + {-l|-m|-n|-r}
 
 | Piece | Role |
 |-------|------|
-| **PoS** | Prefer `/z/` `/d/` `/b/` (entity participant). `/ɡ/` optional as classifying property; `/v/` `/h/` `/w/` undefined |
+| **PoS** | Prefer `/z/` `/d/` `/b/` (entity participant). `/ɡ/` optional as classifying property |
 | **ROLE** | Single vowel **`a`** / **`u`** / **`o`** (not a content root) |
 | **`x`** | Ordinary [compound joiner](phonology.md#phonotactics) |
 | **ROOT** | Event stem (**`a`/`u`**) or relation stem (**`o`**) — `V(CV)+` |
@@ -416,11 +416,6 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 ::: details Show answer
 *The house on my left.*
 :::
-
-## Advanced
-<a id="advanced"></a>
-
-This page has no advanced section. Proceed to the next page.
 
 ## See also
 

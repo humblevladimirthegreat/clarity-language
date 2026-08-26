@@ -9,23 +9,6 @@ consistently use role compound for words (teacher derived from teach, not separa
 limit deployments to tagged releases
 completely separate out intermediate/advanced into their own pages
 
-## Unassigned number / derivation readings
-
-Stem shapes in the number / numeric-derivation anatomy that still need readings (not in the grammar docs until assigned):
-
-**Free numbers**
-- **`…0e0`** — mantissa **`0`** + named exp **`0`** (`g+0e0`, `v+0e0`, `h+0e0`, `j+0e0`, ordinal `#0e0`, overlays, …)
-- other free **`±0eN`** / **`±0e-N`** for **`N≠1`** (and positive **`…0eN`**) — only **`±0e-1`** is assigned
-- digit-string **`_`** zero-exp free forms
-- further `/j/` / `/x/` zero-exp cells left blank (`x+0e`, `x±0e-1`, `x#0e`, …) beyond defined overlays
-
-**Numeric derivation**
-- **`ROOTx+e0`** (kind twin of free ones-band **`g+e0`**)
-- **`ROOTx+0e0`** (kind twin of free **`…0e0`**)
-- **`ROOTx+Ne0`** (kind twin of free scale-assert **`Ne0`**)
-- ordinal morph **`ROOTx#0e0`** / free ordinal **`#0e0`**
-- scale-specific **`ROOTx±0eN`** for **`N≠1`** (only **`±0e-1`** assigned)
-
 ## Evidentiality / tense
 
 - Dedicated observation vs imagination **tense** (stacks with evidentiality channels; does not replace them)
@@ -69,3 +52,5 @@ setback responses:
 long term:
 https://main.d2xds94zsgwptg.amplifyapp.com
 -local llm systematically review entire lexicon
+-vocab flashcard generator/system — [docs/proposals/vocab-flashcards.md](docs/proposals/vocab-flashcards.md)
+-speech to text (phoneme ASR, no Agelan corpus) — [docs/proposals/learner-stt.md](docs/proposals/learner-stt.md)

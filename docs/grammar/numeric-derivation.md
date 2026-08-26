@@ -80,7 +80,7 @@ Stem shape **`ru` + `bu` + exponent digit `N`** (writing **`-e-N`**; bare-OoM an
 | **`ROOTx-e-`** | general quasi (N unnamed) |
 | **`g-e-2`** | free real −10⁻² (bare OoM) — not quasi-dual |
 
-**`ROOTx-e-0`** is undefined — use **`ROOTx-0`** (anti-null) or **`ROOTx-0e-`** (micro-residue). **`ROOTx-e-3`…`-e-9`** stay out of this morph set — prefer bare **`ROOTx-e-`** or ordinary wording. Same PoS framing as bare quasi.
+**`ROOTx-e-0`** — use **`ROOTx-0`** (anti-null) or **`ROOTx-0e-`** (micro-residue). Same PoS framing as bare quasi.
 
 #### Scalar digit morphs (`+N` / `-N`)
 
@@ -188,7 +188,7 @@ Single-digit ordinals only. Inventory writing uses marker **`#`** (**`ROOTx#N`**
 #### Label / code sense (`_`)
 <a id="label-code-sense"></a>
 
-Marker **`_`** = ROOT identified by a **catalog / specimen / ID code**, not by count or rank. Digits (when present) are the **label payload** (*specimen #1*), not “first” and not “one-part.” Digitless exp under **`_`** is undefined on free number words ([numbers.md](numbers.md#digitless-exponents)); derivation opens it as **[catalog topology](#infinite-labels)** below.
+Marker **`_`** = ROOT identified by a **catalog / specimen / ID code**, not by count or rank. Digits (when present) are the **label payload** (*specimen #1*), not “first” and not “one-part.” Derivation opens digitless **`_`** as **[catalog topology](#infinite-labels)** below.
 
 | Shape | Reading | Example |
 |-------|---------|---------|

@@ -307,7 +307,7 @@ The vowel **after** `x` is **EDGE** — how far the open runs.
 | **o** | **Atomic** — exactly **one** following token | no | `d[egu]`, `d<sushi>` |
 | **u** | **Empty / redacted** — no interior; also **anaphor** **-r** | no | `d[]`, `d[=]` |
 
-**Anaphor `-r`** always uses EDGE **`u`** in the spoken template (`daxur`). Other EDGE + **-r** combinations are undefined.
+**Anaphor `-r`** always uses EDGE **`u`** in the spoken template (`daxur`).
 
 EDGE **`a`** / **`e`** / **`o`** take **-l** / **-m** / **-n**. EDGE **`u`** takes exact **-l** (`daxul`) or anaphor **-r** (`daxur`); paraphrase-empty and proper-empty are unused.
 

@@ -253,12 +253,12 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 11 | `revisers.md` | Intermediate | **exists** | Ending grids; parallel chains; discourse placements (before force, `/x/` continue/linker) | |
 | 11 | `revisers.md` | Advanced | skip | more examples / reserved | |
 | 11 | `restrictors.md` | Intermediate | **exists** | Defined core (full); conjuncts; next-clause *when* | |
-| 11 | `restrictors.md` | Advanced | skip | undefined reserved cells | |
+| 11 | `restrictors.md` | Advanced | — | no Advanced band | |
 | 12 | `spans.md` | Intermediate | **exists** | Spoken open shape; TYPE; EDGE; endings; nesting; **`^ … ^`** adjunct islands; mention of a handle **form** vs office **-n** | |
 | 12 | `spans.md` | Advanced | **exists** | Close forms (`xuxul` / editorial / proper / close-all) | 4–6 items |
 | 13 | `numbers.md` | Intermediate | **exists** | PoS on numbers; markers; endings; digitless; overlays `/v/` `/h/` `/j/` `/x/` as on the band; **one of** measure / range / percent / time if you can keep the item to that decision (those topics live in **`numbers-applied.md`**) | **Optional track.** Do not dump the whole Intermediate. 6–8 items |
 | 13 | `numbers-applied.md` | Intermediate | **exists** | Digit-string labels; clock / calendar time; percent vs points; measure phrases; ranges — as taught on the band | Optional track. One topic per item. 4–8 items |
-| 13 | `numbers.md` | Advanced | **exists** | Digitless exponents / hyperbole / zero×exp **as used in the band’s teach examples** — not unassigned TODO cells | Optional track. 4–6 items |
+| 13 | `numbers.md` | Advanced | **exists** | Digitless exponents / hyperbole / zero×exp **as used in the band’s teach examples** — not unassigned cells | Optional track. 4–6 items |
 | 13 | `comparatives.md` | Intermediate | **exists** | Full comparative arity; distributive **`a`** + SHARED `/ɡ/`; measured differentials | Measured items **Sibling OK:** numbers Intermediate **measure phrases** only |
 | 13 | `comparatives.md` | Advanced | **exists** | Judgment benchmarks (`zonugon`, `zaheman`, **`zumogoxrawon`** Mine vs performance **`zumogon`**, …) | **`umogo`** allowed on Mine/performance items |
 | 13 | `causation.md` | Intermediate | **exists** | Necessary (marked); unique path; clause poles **`orodo` / `eluve` / `urugu`**; **CAUSE** **`erage`** **-m**; preference vs law (values stack if values Beginner is recycle — it is) | |
@@ -266,17 +266,17 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 14 | `values.md` | Intermediate | **exists** | Motive **`xe`** + preference standing; which ending table; attachment sites | |
 | 14 | `values.md` | Advanced | **exists** | Combined matrices; one boundary trap | 4–6 items |
 | 14 | `ability.md` | Intermediate | **exists** | Hostless fallback **`egera`** (**ABIL**) | |
-| 14 | `ability.md` | Advanced | skip | design notes | |
+| 14 | `ability.md` | Advanced | — | no Advanced band | |
 | 14 | `commentary.md` | Intermediate | **exists** | Evidentiality channels; **NOTIONAL** **`edahe`** + hold map; COMMENT vs nearby jobs | |
-| 14 | `commentary.md` | Advanced | skip | design notes | |
+| 14 | `commentary.md` | Advanced | — | no Advanced band | |
 | 14 | `roles.md` | Intermediate | **exists** | Viewpoint laterals **`DIR x ANCHOR`**; bare arrow roots = compass; gravity **`avuza`/`ovazo`**; name/listener anchor | Prefer `…xazawan` over silent speaker default. **`ehado`/`umogo`** only when testing role-anchor. Include at least one bare cardinal and one gravity item |
-| 14 | `roles.md` | Advanced | skip | design notes | |
+| 14 | `roles.md` | Advanced | — | no Advanced band | |
 | 15 | `join-extras.md` | Intermediate | **exists** | Join-act verbs `van` / `von` / …; join-relations `gan` / `han` / … (unary `/b/`) | No Beginner slot. Recycle = all Beginner + earlier Intermediate (path before 15), except optional numbers unless needed |
 | 15 | `plan-decision.md` | Intermediate | **exists** | **DECISION** **`ehege`** changeability; evidentiality stacked on **PREDICT**; PLAN + DECISION stack | Recycle Beginner PLAN / PREDICT. Stack evidentiality on PREDICT only as the band shows. Join-act **`von`** only if already on this band |
-| 15 | `plan-decision.md` | Advanced | skip | design notes | |
+| 15 | `plan-decision.md` | Advanced | — | no Advanced band | |
 | 15 | `special-vocabulary.md` | Intermediate | **exists** | Emotion compose (ACT + LOCUS + a value); numbered alternatives `ubezu`/`egoge`/`ogalo` + `g#N` | Overlay *inventory* is not a drill. **Needs** values Beginner (recycle). Not universality (Advanced) |
 | 15 | `special-vocabulary.md` | Advanced | **exists** | Universality warrant (`ewono` / `ululu` / …) as on the band | 4–6 items |
-| 16 | `numeric-derivation.md` | Advanced | **exists** | `ROOT x NUM` as the band teaches (essence / `+N` / `#N` / quasi / …) — only assigned readings | **Optional track.** No **`ROOTx+e0`** / unassigned TODO cells. 4–6 items |
+| 16 | `numeric-derivation.md` | Advanced | **exists** | `ROOT x NUM` as the band teaches (essence / `+N` / `#N` / quasi / …) — only assigned readings | **Optional track.** No unassigned cells from [unassigned-reserved.md](unassigned-reserved.md). 4–6 items |
 
 ## Leak index
 <a id="leak-index"></a>
@@ -331,7 +331,7 @@ For each spoiler token family:
 4. English *I* / *you* as dummy people → **fail** (unless this band teaches **`umogo`/`ehado`**).
 5. Most items test **this** band’s decision, not a prior quiz → else rewrite.
 6. Morph-gloss wall inside the spoiler → **fail**.
-7. Unassigned number/derivation cells from `TODO.md` → **fail**.
+7. Unassigned cells from [unassigned-reserved.md](unassigned-reserved.md) → **fail**.
 
 ## Related meta
 
@@ -341,3 +341,4 @@ For each spoiler token family:
 | [learning-levels.md](learning-levels.md) | Bands and cross-doc path |
 | [grammar-docs.md](grammar-docs.md) | Learner prose, house cast |
 | [glosses.md](glosses.md) | Morph / free English (teaching lines, not spoilers) |
+| [unassigned-reserved.md](unassigned-reserved.md) | Unused-slot inventory — do not drill |

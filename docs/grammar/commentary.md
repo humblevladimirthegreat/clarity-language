@@ -415,11 +415,6 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *I wonder whether Azawan walks.*
 :::
 
-## Advanced (empty)
-<a id="advanced"></a>
-
-There is no advanced section. Proceed to the next page.
-
 ## See also
 
 - Need ascription (not commentary): [values.md](values.md)

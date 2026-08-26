@@ -798,7 +798,7 @@ On **phrase-level** joins under **`/z/` `/d/` `/b/` `/w/`** only, **-n** marks a
 ### Reserved forms
 <a id="phrase-reserved-forms"></a>
 
-Under `/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/`, the join series plus allowed endings are **only** these joins or [restrictors](restrictors.md) (under `/h/` `/w/`: core defined, other spellings reserved but undefined). **`/ɡ/`…**-n** and **`/h/`…**-n** are [join-relations](join-extras.md#join-relations). No three-vowel stacks.
+Under `/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/`, the join series plus allowed endings are **only** these joins or [restrictors](restrictors.md) (under `/h/` `/w/`: [defined core](restrictors.md#defined-core-full)). **`/ɡ/`…**-n** and **`/h/`…**-n** are [join-relations](join-extras.md#join-relations). No three-vowel stacks.
 
 Under `/v/`, join endings are **-l** / **-m** / **-r** only; parallel **-n** spellings are [join-act verbs](join-extras.md#join-act-verbs).
 

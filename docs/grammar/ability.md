@@ -325,11 +325,6 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Big — can’t right now* (capability framed on that property).
 :::
 
-## Advanced
-<a id="advanced"></a>
-
-There is no advanced section. Continue to next page.
-
 ## See also
 
 - Need unmet vs *can’t*: [values.md](values.md)

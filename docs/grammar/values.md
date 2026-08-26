@@ -500,15 +500,6 @@ Competence (`odolo`) and relatedness (`ogono`) shown for readability; same endin
 - Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)).
 - **Incapability** compounds onto the **activity/property host** (`veguxul`) or fallback **`egera`** — [ability](ability.md#ability) — not onto need compounds (`hodoloxul` remains unmet competence).
 
-### Design notes
-
-- **Emotion compose** reuses this ascription — [special-vocabulary.md § Emotion compose](special-vocabulary.md#emotion-compose).
-- **COMMENT** / mindfulness noting — [commentary.md § Comment](commentary.md#comment); closed **`uho`** + [hold endings](commentary.md#comment-hold); not contact-channel endings on **`xa`**.
-- **NOTIONAL** / as-if framing — [commentary.md § Notional](commentary.md#notional); closed **`edahe`** + same hold map; not free number notional forms.
-- **DECISION** / pick firmness — [plan-decision.md § Decision](plan-decision.md#decision); closed **`ehege`** + [changeability](plan-decision.md#decision-changeability); not unmet-need **`xu`**, not ability, not PLAN.
-- **PLAN** / intention map resolution — [plan-decision.md § Plan](plan-decision.md#plan-predict); closed **`owaro`** + [map resolution](plan-decision.md#plan-map-resolution) (sketch / itinerary / fork); **-n** ordinary proper; not DECISION, not PREDICT.
-- Whose-need / care direction on prescription, and forced listener / third-person possessives, stay optional later dimensions.
-
 ### Translation practice
 <a id="translation-practice-advanced"></a>
 
@@ -585,3 +576,4 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 - Applicability *when* (not a need stance): [restrictors.md](restrictors.md)
 - Ability **`xa` / `xe` / `xo` / `xu`**: [ability.md](ability.md)
 - COMMENT / NOTIONAL: [commentary.md](commentary.md)
+- DECISION / PLAN: [plan-decision.md](plan-decision.md)

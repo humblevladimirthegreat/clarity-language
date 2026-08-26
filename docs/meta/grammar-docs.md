@@ -12,10 +12,11 @@ Related meta:
 | [glosses.md](glosses.md) | Morph glosses and free English ([house-name glosses](glosses.md#house-cast)) |
 | [translation-exercises.md](translation-exercises.md) | Eng ↔ Agelan checkpoints (placement, principles including house-cast people, spoiler shape) |
 | [drill-generation.md](drill-generation.md) | Path allowlist and execute procedure (one file per agent) |
+| [unassigned-reserved.md](unassigned-reserved.md) | Unused-slot / unassigned-form inventory (editors only — not linked from grammar) |
 
 ## Dual role
 
-Each grammar page is both **source of truth** for its subsystem and **learner text**. Prefer teach-first structure over inventory-first dumps in **Beginner**. **Advanced may be inventory-first**; if Advanced dwarfs Beginner, split the file. Unassigned or rejected design stays in [TODO.md](../../TODO.md) — never in a grammar page appendix.
+Each grammar page is both **source of truth** for its subsystem and **learner text**. Prefer teach-first structure over inventory-first dumps in **Beginner**. **Advanced may be inventory-first**; if Advanced dwarfs Beginner, split the file. Unassigned or unused-slot inventory stays in [unassigned-reserved.md](unassigned-reserved.md); rejected or speculative features stay in [TODO.md](../../TODO.md) — never in a grammar page appendix.
 
 ## Present the current language only
 
@@ -43,7 +44,7 @@ Headings, leads, and asides must make sense to someone who never saw an earlier 
 | Apologies, changelog asides, “for historical reasons” | Meta about the doc | Current rule + example |
 | Scare-quotes or scare-emphasis on the “real” way | Implies a fake competing system | Neutral wording |
 
-**Test:** if you delete the phrase and a new learner loses no meaning, delete it. If the only audience for a sentence is a future editor, move it to `TODO.md`, a PR, or this meta page — not the grammar body.
+**Test:** if you delete the phrase and a new learner loses no meaning, delete it. If the only audience for a sentence is a future editor, move it to [unassigned-reserved.md](unassigned-reserved.md), `TODO.md`, a PR, or this meta page — not the grammar body.
 
 ## Contrastive negatives (“X, not Y”)
 
@@ -68,7 +69,7 @@ If a page has several such tables, give each its own mnemonic column; never summ
 
 **Omit** `## Advanced` (or `## Intermediate`) when the rubric’s third question is no: there is no new edge-case, stylistic, or rare inventory. Recap tables, unused-slot lists, “reminder” restatements of earlier bands, and Design-notes dumps do **not** earn a later band. Fold anything still needed into the last band that actually teaches, or drop it.
 
-Do **not** keep a heading whose only job is to say there is nothing here. Learners skip missing bands on the [cross-doc path](learning-levels.md#cross-doc-path). Material that did not make a band belongs in [TODO.md](../../TODO.md), not in a stub appendix on the page.
+Do **not** keep a heading whose only job is to say there is nothing here. Learners skip missing bands on the [cross-doc path](learning-levels.md#cross-doc-path). Material that did not make a band belongs in [unassigned-reserved.md](unassigned-reserved.md) or [TODO.md](../../TODO.md), not in a stub appendix on the page.
 
 ## Examples use the house cast
 <a id="house-cast"></a>
@@ -239,7 +240,8 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 | Goals / feature criteria | [why-agelan.md](../grammar/why-agelan.md) (psych); [introduction.md](../grammar/introduction.md) (grammar design) |
 | Core sentence grammar | [core.md](../grammar/core.md) |
 | IPA / pronunciation / phonotactics | [phonology.md](../grammar/phonology.md) (only page that may use IPA) |
-| Unassigned or rejected design | [TODO.md](../../TODO.md) |
+| Unassigned / unused-slot inventory | [unassigned-reserved.md](unassigned-reserved.md) |
+| Rejected or speculative features | [TODO.md](../../TODO.md) |
 | Short Eng ↔ Agelan checkpoint | End of a page band — [translation-exercises.md](translation-exercises.md); generate via [drill-generation.md](drill-generation.md) |
 | Multi-turn practice | [examples/](../examples/) (not linked from grammar pages) |
 | Editor pedagogy / migration notes | `docs/meta/` only — never from grammar pages |
