@@ -252,7 +252,7 @@ Clause-force `/j/` is not resumed with `-r` ([utterance markers](core.md#utteran
 | *thus* / *that way* | Adverb antecedent → `/h/` …`-r` |
 | *regarding that* (clause aboutness) | `/h/` *regarding* + `/b/` …`-r` |
 | *going back to subject X* (thread resume) | Any antecedent → `/x/` …`-r` |
-| *that* (prior cite / mention / aside) | [Span anaphor](spans.md#endings) → `daxur` / … |
+| *that* (prior cite / mention / aside) | [Span anaphor](spans.md#endings) → `daxur` / `hexur` / … |
 
 **Span anaphors** are closed [span-fence](spans.md) forms. They get translated as it or that. "He said *that*?!" "that (title)" "that (proverb)"
 

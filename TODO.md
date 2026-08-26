@@ -2,7 +2,6 @@
 Phonology english-to-agelan conversion prioritizes similar placements 
 Statistics captures consonant and vowel distribution 
 Conceptual metaphor (growth mindset) for failure 
-Ensure asides are allowed on any part of speech. Decide aka type parentheticals
 Single page application?
 Consider formalizing abbreviations (mentions)
 Consider reserving two syllable words for special

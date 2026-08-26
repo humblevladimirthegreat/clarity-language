@@ -23,7 +23,7 @@ Same split as number shorthand (`g+3` written, full CV spoken); the spoken shape
 |----------|-----------|
 | `[` … `]` | **cite** — attributed speech / cited wording (including title strings and proverbs cited as wording) |
 | `{` … `}` | **mention** — the word or form itself (*the word X*); with **-n**, *the saying / proverb / title X* as a named unit |
-| `(` … `)` | **aside** — parenthetical digression; still asserted |
+| `(` … `)` | **aside** — parenthetical digression on `/h/`; still asserted |
 | `<` … `>` | **opaque** — foreign, code, raw orthography |
 
 **PoS:** write the PoS letter immediately before any **`@`** / **`~`** marks and the opening bracket (`d[…]`, `z{…}`, `h(…)`, `d<…>`).
@@ -34,7 +34,7 @@ Same split as number shorthand (`g+3` written, full CV spoken); the spoken shape
 | **`~`** | **paraphrase** (**-m**) — `d~[…]` |
 | **`@`** | **proper** (**-n**) — `d@[…]` |
 
-Anaphor (**-r**): interior **`=`** (`d[=]`, `d{=}`, `d(=)`, `d<=>`).
+Anaphor (**-r**): interior **`=`** (`d[=]`, `d{=}`, `h(=)`, `d<=>`).
 
 ```
 `zehadon v[egu] d[jael]l.`
@@ -58,7 +58,7 @@ gloss: `j-ask` · `z-he` · `d-[=]` · `v-said`
 Use a span when:
 
 - citing someone’s words, a title string, or a proverb **as wording** (**cite**)
-- mid-sentence parenthetical digression (**aside** — prefer PoS `/h/`; must not use floating `/j/`)
+- mid-sentence parenthetical digression (**aside** — open **`h(…)`**; interior is ordinary Agelan, often a fragment)
 - talking about the word or form itself, or *the saying / title X* as a named unit (**mention**; prefer **`@`** / **-n** for the named-unit reading)
 - foreign, code, or other surface the parser must **not** read as Agelan (**opaque**)
 - referring back to a prior span (**anaphor** **-r** / `…[=]`)
@@ -81,7 +81,7 @@ The open’s PoS is the **outer-clause slot** of the **entire** span — not the
 | `/b/` | Host needs a `/b/` argument — *about “…”*, *called “…”* | `b{…}`, `b[=]` |
 | `/v/` | Span **is** the verb (phrase) — echo / report the act as wording | `v[oops]`, `v[=]` |
 | `/ɡ/` | Property **is** the spanned string — *so-called “ready”* | `g@[Draft]` |
-| `/h/` | Manner cite; **asides** prefer this so digressions float like other adverbs | `h(…)`, `h~(…)` |
+| `/h/` | **Asides** (digressions float like other adverbs); also manner cite | `h(…)`, `h~(…)`, `h(=)` |
 | `/j/` | Vocative / expressive edge with a spanned call | `j@[…]` |
 | `/x/` | Discourse-only citation (epigraph, freestanding span) | `x[…]` |
 
@@ -91,6 +91,32 @@ The open’s PoS is the **outer-clause slot** of the **entire** span — not the
 gloss: `j-command` · `z-listener` · `v-[sing]` · `d-speaker`
 
 *Don’t “sing” at me.*
+```
+
+### Asides
+<a id="asides"></a>
+
+An **aside** is a parenthetical comment packaged as an **adverb**. Write **`h(`** … **`)`**. The outer slot is `/h/`, so the whole fence sits anywhere an adverb may sit.
+
+The interior is ordinary Agelan. It does **not** have to be a full sentence:
+
+| Interior | Example | Reading |
+|----------|---------|---------|
+| Fragment (one word or a short stretch) | `zazawan vawul h(zuzem).` | *Azawan walks (happily).* |
+| Same-force clause body | `zazawan vawul h(zulonun vezelel).` | *Azawan walks (Ulonun sleeps).* |
+
+Interior words keep **their** PoS. The fence is the adverb. A one-word manner comment with nothing to package is a plain adverb: `zazawan vawul huzem.`
+
+The aside **keeps the outer speech act** (omissible statement `jal` stays omitted). Put a new question or command in its own turn, not inside `h(…)`.
+
+A *because* / *if* dependent is still **`odo`**, not an aside. A second name for the same person uses [identity](predication.md#identity) or classification, not `h(…)`.
+
+```
+`zazawan vawul h(zuzem).`
+
+gloss: `z-grace` · `v-walk` · `h-(happy)`
+
+*Azawan walks (happily).*
 ```
 
 ### Mentions, opaque, and loan words
@@ -104,7 +130,7 @@ gloss: `j-command` · `z-listener` · `v-[sing]` · `d-speaker`
 | **Title string / proverb as wording** | **cite** — `d[…]` / `d@[…]` |
 | ***The title X* / *the proverb X*** as named unit | **mention** **-n** — `d@{…}` |
 | **Nativized loan** | ordinary PoS + root + ending — no span |
-| **That (prior span) again** | span anaphor — `daxur` / `duxur` / … |
+| **That (prior span) again** | span anaphor — `daxur` / `hexur` / `duxur` / … |
 | **Name / word citation outside a clause** | prefix-less **root + ending** — [citation forms](core.md#citation-forms) (`umogon.`, `<Sam>n`) — not a span |
 
 **Trap:** `d<sushi>` is a span open + interior blob; `d<sushi>l` is one content word whose root is foreign. Do not put **-l** / **-m** / **-n** / **-r** after an opaque closer. Spans need a PoS because they fill a **clause** slot; freestanding citation drops the role letter instead.
@@ -114,7 +140,7 @@ gloss: `j-command` · `z-listener` · `v-[sing]` · `d-speaker`
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Prefer a one-token cite, mention, or opaque blob; nativize when the surface wording is not the point. House names for people unless the item is a loan name.
 
-**Roots used here:** `azawa` / `ulonu` / `ubuzu` · `ezabu` *tell* · `uwa` *write* · `egu` *sing* · `ejo` *see* · `awu` *walk* · `uze` *happy* (**-m**) · `ogodo` *dog* · `agada` *cat* · `ogobo` *book* · `ulebu` *blue* · `edage` *teacher*
+**Roots used here:** `azawa` / `ulonu` / `ubuzu` · `ezabu` *tell* · `uwa` *write* · `egu` *sing* · `ejo` *see* · `awu` *walk* · `ezele` *sleep* · `uze` *happy* (**-m**) · `ogodo` *dog* · `agada` *cat* · `ogobo` *book* · `ulebu` *blue* · `edage` *teacher*
 
 #### English → Agelan
 
@@ -166,6 +192,12 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zazawan vawul h(zuzem).`
 :::
 
+**9.** *Azawan walks (Ulonun sleeps).* (clause-body aside)
+
+::: details Show answer
+`zazawan vawul h(zulonun vezelel).`
+:::
+
 #### Agelan → English
 
 **1.** `zulonun d[=] vezabul.`
@@ -215,6 +247,13 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 ::: details Show answer
 *Sam* (name citation outside a clause — not a span)
 :::
+
+**9.** `zazawan vawul h(zulonun vezelel).`
+
+::: details Show answer
+*Azawan walks (Ulonun sleeps).*
+:::
+
 ## Intermediate
 <a id="intermediate"></a>
 
@@ -248,7 +287,7 @@ Only **a** / **e** / **o** / **u** on TYPE. No stacked vowels on TYPE.
 | TYPE | Role | Writing |
 |------|------|---------|
 | **a** | **cite** — cited wording; clausal interiors: outer speaker does **not** assert | `[` … `]` |
-| **e** | **aside** — digression; outer speaker **does** assert | `(` … `)` |
+| **e** | **aside** — `/h/` digression; outer speaker **does** assert; interior may be a fragment or a same-force clause body | `h(` … `)` |
 | **o** | **mention** — the word or form as object; with **-n**, named unit | `{` … `}` |
 | **u** | **opaque** — foreign / code / raw blob; parser **skips** interior | `<` … `>` |
 
@@ -278,11 +317,11 @@ EDGE **`a`** / **`e`** / **`o`** take **-l** / **-m** / **-n**. EDGE **`u`** tak
 | **-l** | **exact** — verbatim / precise surface | bare open (no `@` / `~`) |
 | **-m** | **paraphrase** — gist / non-verbatim rendering | **`~`** after PoS (`d~[…]`) |
 | **-n** | **proper** — titled / conventional designation of the **whole span** | **`@`** after PoS (`d@[…]`) |
-| **-r** | **anaphor** — pronoun for the **most recent span of this TYPE**; PoS = role **now** | `d[=]`, `z{=}`, … |
+| **-r** | **anaphor** — pronoun for the **most recent span of this TYPE**; PoS = role **now** | `d[=]`, `h(=)`, `z{=}`, … |
 
  Hedged proper (`@~`) is written **`d@[…]`** only (spoken as the **proper** open with uncertain tonality). **`@`** / **`~`** do not combine with anaphor **-r**.
 
-**-r** is ordinary [anaphora](pronouns.md). `daxur` = *that (cite)* as object — matching the most recent **cite** (TYPE **a**). The pronoun’s PoS need not match the antecedent open’s PoS (`zaxur` = that cite as subject). No interior; no close (EDGE **`u`**).
+**-r** is ordinary [anaphora](pronouns.md). `daxur` = *that (cite)* as object — matching the most recent **cite** (TYPE **a**). `hexur` / `h(=)` = *that (aside)*. The pronoun’s PoS need not match the antecedent open’s PoS (`zaxur` = that cite as subject). No interior; no close (EDGE **`u`**).
 
 ### Writing ↔ speech map (core)
 
@@ -292,7 +331,9 @@ EDGE **`a`** / **`e`** / **`o`** take **-l** / **-m** / **-n**. EDGE **`u`** tak
 | `d~[…]` | `daxam` … `xuxul` | paraphrased multi-token cite |
 | `d@[…]` | `daxan` … `xuxul` | proper multi-token cite; also spelling of hedged proper |
 | `d{…}` / `d~{…}` / `d@{…}` | `doxal` / `doxam` / `doxan` … `xuxul` | mention |
-| `d(…)` / `d~(…)` / `d@(…)` | `dexal` / `dexam` / `dexan` … `xuxul` | aside |
+| `h(…)` / `h~(…)` / `h@(…)` | `hexal` / `hexam` / `hexan` … `xuxul` | aside (open PoS is `/h/`) |
+| `h(zuzem)` | `hexol zuzem` | atomic aside |
+| `h(=)` | `hexur` | aside anaphor |
 | `d<…>` / `d~<…>` / `d@<…>` | `duxal` / `duxam` / `duxan` … `xuxul` | opaque |
 | `d[hi]` | `daxol hi` | atomic (EDGE **o**) |
 | `d@[Hamlet]` | `daxon Hamlet` | atomic proper cite |
@@ -411,13 +452,19 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zazawan d[ h(zuzem) hi ] vezabul.`
 :::
 
-**7.** *Azawan saw maybe the red dog.* (*maybe* targets that chunk)
+**7.** *Azawan walks (happily).* (spoken atomic aside)
+
+::: details Show answer
+`zazawan vawul hexol zuzem.`
+:::
+
+**8.** *Azawan saw maybe the red dog.* (*maybe* targets that chunk)
 
 ::: details Show answer
 `zazawan ^ h<maybe>l zedejel zogodol ^ vejol.`
 :::
 
-**8.** *Ubuzun and (just a cat) ran.*
+**9.** *Ubuzun and (just a cat) ran.*
 
 ::: details Show answer
 `zubuzun ^ zagadal zal ^ zam vurunul.`
@@ -472,6 +519,13 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 ::: details Show answer
 *Azawan and (just a dog) saw (it).*
 :::
+
+**9.** `zazawan vawul hexol zuzem.`
+
+::: details Show answer
+*Azawan walks (happily).*
+:::
+
 ## Advanced
 <a id="advanced"></a>
 
@@ -514,11 +568,11 @@ Prefer EDGE **`a`** + **`xuxur`** for cut-off cites; EDGE **`e`** auto-pop is **
 | TYPE | exact multi **-l** | paraphrase **-m** | proper **-n** | anaphor **-r** (EDGE **u**) |
 |------|--------------------|-------------------|---------------|------------------------------|
 | cite **a** | `…axal` | `…axam` | `…axan` | `…axur` |
-| aside **e** | `…exal` | `…exam` | `…exan` | `…exur` |
+| aside **e** | `hexal` | `hexam` | `hexan` | `hexur` |
 | mention **o** | `…oxal` | `…oxam` | `…oxan` | `…oxur` |
 | opaque **u** | `…uxal` | `…uxam` | `…uxan` | `…uxur` |
 
-Atomic (EDGE **o**): `…axol` / `…axom` / `…axon` (cite examples); same pattern on other TYPEs. Clause-scoped (EDGE **e**): `…axel` / `…axem` / `…axen`. Empty exact (EDGE **u**): `…axul` / `…exul` / `…oxul` / `…uxul`.
+Atomic (EDGE **o**): `…axol` / `…axom` / `…axon` (cite examples); aside atomic **`hexol`**. Clause-scoped (EDGE **e**): `…axel` / `…axem` / `…axen`. Empty exact (EDGE **u**): `…axul` / `hexul` / `…oxul` / `…uxul`. Aside **opens** use `/h/`; anaphor may recast the aside into another slot (`dexur`).
 
 #### Closes
 
@@ -651,5 +705,6 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 ## See also
 
 - Join scope islands: [coordination.md](coordination.md#join-scope-islands-rules)
+- Identity vs parenthetical comment: [predication.md](predication.md#identity)
 - Phrasal proper names (no span needed): [reference-suffix.md](reference-suffix.md#phrasal-proper-names)
 - Prefix-less citation outside a clause: [core.md § Outside a sentence](core.md#citation-forms)
