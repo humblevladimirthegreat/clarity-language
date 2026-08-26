@@ -238,8 +238,8 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 |------|------|------|--------|-------------------------|-------|
 | 3 | `core.md` | Intermediate | **exists** | **`jam`/`jom`/`jem`/`jum`**; **`gl-`**; adverb topic `/h/`+`/b/`; complex chaining; `/x/` linkers (`xamalal`, `xezabel`, …); nested **`odo`**; number-as-interjection pointer only if the band’s examples already show it | Do not require numbers Intermediate readings |
 | 3 | `core.md` | Advanced | skip | weak-pause cues | recognition |
-| 6 | `reference-suffix.md` | Intermediate | **exists** | **-n** on any PoS (titled verb/adjective/adverb); phrasal proper names `ROOTxROOT`+**-n** | Not value/ability/plan ending tables (Advanced pointers) |
-| 6 | `reference-suffix.md` | Advanced | skip | ending tables owned by other pages | pointer inventory |
+| 6 | `reference-suffix.md` | Intermediate | **exists** | **-n** on any PoS (titled verb/adjective/adverb); phrasal proper names `ROOTxROOT`+**-n**; office **handles** as first-mention **-n** | Not value/ability/plan ending tables |
+| 6 | `reference-suffix.md` | Advanced | **exists** | **Handle coinage** (VC harvest from title roots) | 4–6 items |
 | 7 | `pronouns.md` | Intermediate | **exists** | English approximations of **-r**; `/x/`…`-r` thread resume vs `/h/` aboutness; **`ana`** vs name join vs name…**-sh** | |
 | 7 | `pronouns.md` | Advanced | **exists** | Cross-role recast (one or two PoS flips, not the whole grid) | 4–6 items |
 | 7 | `plurality.md` | Intermediate | **exists** | Associate-set resolution; verb collective doing; collective `/ɡ/`…**-sh**; vocative **-sh** | |
@@ -254,7 +254,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 11 | `revisers.md` | Advanced | skip | more examples / reserved | |
 | 11 | `restrictors.md` | Intermediate | **exists** | Defined core (full); conjuncts; next-clause *when* | |
 | 11 | `restrictors.md` | Advanced | skip | undefined reserved cells | |
-| 12 | `spans.md` | Intermediate | **exists** | Spoken open shape; TYPE; EDGE; endings; nesting; **`^ … ^`** adjunct islands | |
+| 12 | `spans.md` | Intermediate | **exists** | Spoken open shape; TYPE; EDGE; endings; nesting; **`^ … ^`** adjunct islands; mention of a handle **form** vs office **-n** | |
 | 12 | `spans.md` | Advanced | **exists** | Close forms (`xuxul` / editorial / proper / close-all) | 4–6 items |
 | 13 | `numbers.md` | Intermediate | **exists** | PoS on numbers; markers; endings; digitless; overlays `/v/` `/h/` `/j/` `/x/` as on the band; **one of** measure / range / percent / time if you can keep the item to that decision (those topics live in **`numbers-applied.md`**) | **Optional track.** Do not dump the whole Intermediate. 6–8 items |
 | 13 | `numbers-applied.md` | Intermediate | **exists** | Digit-string labels; clock / calendar time; percent vs points; measure phrases; ranges — as taught on the band | Optional track. One topic per item. 4–8 items |

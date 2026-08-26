@@ -200,6 +200,36 @@ Named individuals, places, one-off objects, titled works: *Azawan*, *Paris*, *th
 
 Adjacent bare same-role words (`zozohun zalenan`) are two people in a [join](coordination.md). One **`x`-compound** is one resume target and one slot filler.
 
+#### Named handles
+<a id="named-handles"></a>
+
+A long official title (bureau, act, titled group) may also have a **handle**: one short root plus **-n**. The handle is an ordinary proper name. First mention may be the handle alone.
+
+| Form | Shape | Example | Job |
+|------|--------|---------|-----|
+| **Handle** | one root + **-n** | `zedulon` | default talk, including first mention |
+| **Long title** | phrasal proper (`ROOT x ROOT` … + **-n**) | `zedagexulun` | full legal / ceremonial name of the same office |
+
+```
+`zedulon vawul.`
+
+gloss: `z-Edulo` · `v-walk`
+
+*Edulo walks.* (office handle on first mention)
+```
+
+```
+`zedagexulun.`
+
+gloss: `z-teacher-x-courage`
+
+*Teacher-Courage* (full title of that office)
+```
+
+Resume the handle like any name. If its letter-pronoun (through the 2nd vowel) would pick the wrong antecedent, use the **full root** + **-r** (`zedulor`).
+
+The office as referent takes **-n** in a noun slot (`zedulon`). A [mention](spans.md#loans) packages the **form** (`z{edulo}n` = *the word Edulo*). Foreign letter-names stay compact loans or opaque spans (`z<FBI>n`). How institutions **coin** a handle from a long title is Advanced ([handle coinage](#handle-coinage)).
+
 #### Verbs (`/v/`)
 
 A **named action, rite, or event** — not a generic instance. English parallels: *perform* **[Hamlet]**, *run* **[the Boston Marathon]**, *observe* **[Ramadan]**. The verb root names the kind of doing; **-n** says you mean **that** titled occurrence.
@@ -237,7 +267,7 @@ Prefix-less [discourse revisers](revisers.md#discourse-revisers) keep reviser en
 
 #### Nativized loans and multipart names
 
-**Nativized loans** (adapted Agelan root + ordinary ending) use ordinary reference suffixes. Compact multipart person/place names: [phrasal proper names](#phrasal-proper-names).
+**Nativized loans** (adapted Agelan root + ordinary ending) use ordinary reference suffixes. Compact multipart person/place names: [phrasal proper names](#phrasal-proper-names). Office short names: [named handles](#named-handles).
 
 #### Summary by role letter
 
@@ -261,9 +291,9 @@ In [number words](numbers.md), the same four letters have **number-specific** me
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills on this Intermediate band. Try each item before opening **Show answer**. The point is **-n** as a title on any role letter, or one **`x`-compound** name.
+Short drills on this Intermediate band. Try each item before opening **Show answer**. The point is **-n** as a title on any role letter, one **`x`-compound** name, or an office **handle**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `ogobo` *book* · `ulebu` *blue* · `awu` *walk* · `urunu` *run* · `egu` *sing* · `ejo` *perception* (*see*) · `uwa` *write* · `ada` *haste* · `ozohu`×`alena` (name **Ozohuxalenan**) · `uzu`×`ogeve` (label **Sushi-Coffee**)
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `ogobo` *book* · `ulebu` *blue* · `awu` *walk* · `urunu` *run* · `egu` *sing* · `ejo` *perception* (*see*) · `uwa` *write* · `ada` *haste* · `ozohu`×`alena` (name **Ozohuxalenan**) · `uzu`×`ogeve` (label **Sushi-Coffee**) · `edage`×`ulonu` (title **Teacher-Courage**, handle **Edulo**)
 
 #### English → Agelan
 
@@ -313,6 +343,18 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 ::: details Show answer
 `zazawan glulebun dogobol vejol.`
+:::
+
+**9.** *Edulo walks.* (office handle, first mention)
+
+::: details Show answer
+`zedulon vawul.`
+:::
+
+**10.** *Azawan sees Teacher-Courage.* (that office’s full title)
+
+::: details Show answer
+`zazawan dedagexulun vejol.`
 :::
 
 #### Agelan → English
@@ -365,9 +407,95 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan sees the Blue book* (named style, adjective before the noun).
 :::
 
+**9.** `zedulon vawul.`
+
+::: details Show answer
+*Edulo walks.* (office handle)
+:::
+
+**10.** `zazawan dedagexulun vejol.`
+
+::: details Show answer
+*Azawan sees Teacher-Courage.* (full title)
+:::
+
+## Advanced
+<a id="advanced"></a>
+
+### Handle coinage
+<a id="handle-coinage"></a>
+
+Institutions mint a native handle from the long title’s **content roots** (skip joins, revisers, and number words). The result must be one legal `V(CV)+` root, then **-n** in use.
+
+| Step | Do |
+|------|----|
+| 1 | From each content root, take **first vowel + next consonant** (`edage` → `ed`, `obola` → `ob`, `ulonu` → `ul`) |
+| 2 | Concatenate those pieces **without** mid-word **`x`** |
+| 3 | If the string ends in a consonant, add the **last root’s 2nd vowel** (the same cut as a [letter pronoun](pronouns.md)) |
+| 4 | If that root already names something else, **lengthen** (include the next vowel of a distinctive root) |
+
+```
+`edage` × `ulonu` → `ed` + `ul` + `o` → `edulo` → `zedulon`
+```
+
+```
+`edage` × `obola` × `ulonu` → `ed` + `ob` + `ul` + `o` → `edobulo` → `zedobulon`
+```
+
+Hearers treat the handle as a **name**. Reconstructing the long title is optional literacy, not part of parsing. Foreign acronyms stay loans / opaque spans; they do not use this harvest.
+
+### Translation practice
+<a id="translation-practice-advanced"></a>
+
+Short drills on this Advanced band. Try each item before opening **Show answer**. Coin a handle from the title roots, or use that handle as a name.
+
+**Roots used here:** `edage` *teacher* · `ulonu` *courage* · `obola` *choice* · `azawa` · `awu` *walk* · `ejo` *see*
+
+#### English → Agelan
+
+**1.** Citation form of the handle for *teacher* × *courage*.
+
+::: details Show answer
+`edulon`
+:::
+
+**2.** *Edobulo walks.* (three-root harvest: teacher × choice × courage)
+
+::: details Show answer
+`zedobulon vawul.`
+:::
+
+**3.** *Azawan sees Edulo.*
+
+::: details Show answer
+`zazawan dedulon vejol.`
+:::
+
+#### Agelan → English
+
+**1.** `edulon`
+
+::: details Show answer
+*Edulo* (handle coined from *teacher* × *courage*, cited)
+:::
+
+**2.** `zedobulon vawul.`
+
+::: details Show answer
+*Edobulo walks.*
+:::
+
+**3.** `zazawan dedulon vejol.`
+
+::: details Show answer
+*Azawan sees Edulo.*
+:::
+
 ## See also
 
 - [pronouns.md](pronouns.md) — anaphoric **-r**; special **`umogo`** / **`ehado`** / **`ana`** / **`enu`** / **`odo`**
 - [plurality.md](plurality.md) — **-sh** after the ending
 - [core.md](core.md) — role letters and writing words
 - [core.md § Outside a sentence](core.md#citation-forms) — prefix-less citation (**-l** / **-m** / **-n** / **-r**)
+- [spans.md](spans.md#loans) — mention / opaque when the **form** or a foreign acronym is the point
+- [x-compounds.md](x-compounds.md#ordinary-compound-order) — long titles as ordinary compounds

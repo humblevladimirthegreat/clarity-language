@@ -68,7 +68,7 @@ gloss: `z-sushi-x-coffee-x-tea`
 
 <AgelanInspect text="zuzuzuxogevexadedan." />
 
-[Phrasal names](reference-suffix.md#phrasal-proper-names) use the same left-to-right order (given × family × further title). [Viewpoint laterals](roles.md#viewpoint-laterals) stay **two** roots (`DIR x ANCHOR`). Span, role, values / ability, and numeric families stay **one** mid-word **`x`**.
+[Phrasal names](reference-suffix.md#phrasal-proper-names) use the same left-to-right order (given × family × further title). An office’s **handle** is one root, not this compound ([named handles](reference-suffix.md#named-handles)). [Viewpoint laterals](roles.md#viewpoint-laterals) stay **two** roots (`DIR x ANCHOR`). Span, role, values / ability, and numeric families stay **one** mid-word **`x`**.
 
 ### Decision order
 
@@ -88,3 +88,4 @@ Stacked vowels on TYPE/EDGE/ROLE are **not** used: role ROLE is one of **`a`** /
 - Ability / values stance: [ability.md](ability.md) / [values.md](values.md)
 - Role compounds / laterals: [roles.md](roles.md)
 - Numeric derivation: [numeric-derivation.md](numeric-derivation.md)
+- Named handles vs long titles: [reference-suffix.md](reference-suffix.md#named-handles)

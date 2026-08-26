@@ -3,14 +3,10 @@ Phonology english-to-agelan conversion prioritizes similar placements
 Statistics captures consonant and vowel distribution 
 Conceptual metaphor (growth mindset) for failure 
 Single page application?
-Consider formalizing abbreviations (mentions)
 Consider reserving two syllable words for special
 Confirm hyphenated phrases (using cite?)
 How hard is speech to text?
 redundancy mode - if choppy connection, maybe repeat words?
-consider moving reference suffixes before core
-consider moving vowel series before coordination
-consider moving phonology before core
 consistently use role compound for words (teacher)
 remove left join possibility. If needed use revisers "everything except..."
 limit deployments to tagged releases

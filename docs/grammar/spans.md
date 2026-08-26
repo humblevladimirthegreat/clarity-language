@@ -291,6 +291,8 @@ Only **a** / **e** / **o** / **u** on TYPE. No stacked vowels on TYPE.
 | **o** | **mention** — the word or form as object; with **-n**, named unit | `{` … `}` |
 | **u** | **opaque** — foreign / code / raw blob; parser **skips** interior | `<` … `>` |
 
+A native office **handle** refers with ordinary **-n** (`zedulon`) — [named handles](reference-suffix.md#named-handles). Mention `{edulo}` is that **form**; opaque / compact loan is a **foreign** acronym’s surface (`z<FBI>n`).
+
 Scare / ironic *“so-called”* distance is not a separate TYPE; use ordinary lexicon attitude if needed.
 
 ### EDGE (extent)
@@ -412,7 +414,7 @@ gloss: `z-Sam` · `^` · `z-water` · `zal` · `^` · `zam` · `v-saw`
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Test spoken opens (TYPE / EDGE / ending), an explicit **`xuxul`** close, nesting, or a **`^ … ^`** island — not only Beginner brackets.
 
-**Roots used here:** `azawa` / `ulonu` / `ubuzu` · `ezabu` *tell* · `ejo` *see* · `urunu` *run* · `edeje` *red* · `ogodo` *dog* · `agada` *cat* · `ogobo` *book* · `ulebu` *blue* · `uze` *happy* (**-m**)
+**Roots used here:** `azawa` / `ulonu` / `ubuzu` · `ezabu` *tell* · `ejo` *see* · `urunu` *run* · `edeje` *red* · `ogodo` *dog* · `agada` *cat* · `ogobo` *book* · `ulebu` *blue* · `uze` *happy* (**-m**) · `edulo` (handle **Edulo**)
 
 #### English → Agelan
 
@@ -470,6 +472,12 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zubuzun ^ zagadal zal ^ zam vurunul.`
 :::
 
+**10.** *Azawan said the word “Edulo.”*
+
+::: details Show answer
+`zazawan d{edulo} vezabul.`
+:::
+
 #### Agelan → English
 
 **1.** `zazawan daxel hi.`
@@ -524,6 +532,12 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 ::: details Show answer
 *Azawan walks (happily).*
+:::
+
+**10.** `zazawan d{edulo} vezabul.`
+
+::: details Show answer
+*Azawan said the word “Edulo.”*
 :::
 
 ## Advanced
@@ -707,4 +721,5 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 - Join scope islands: [coordination.md](coordination.md#join-scope-islands-rules)
 - Identity vs parenthetical comment: [predication.md](predication.md#identity)
 - Phrasal proper names (no span needed): [reference-suffix.md](reference-suffix.md#phrasal-proper-names)
+- Native office handles: [reference-suffix.md](reference-suffix.md#named-handles)
 - Prefix-less citation outside a clause: [core.md § Outside a sentence](core.md#citation-forms)
