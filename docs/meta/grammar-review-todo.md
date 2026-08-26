@@ -4,8 +4,4 @@ Open review items moved out of the learner-facing pages under `docs/grammar/` (g
 
 ## Language-design decisions
 
-| Page | Item |
-|------|------|
-| `commentary.md` | Replace the **-n** COMMENT hold (“named loop”) with the usual proper reading |
-| `commentary.md` | Remove the **-n** distinction on NOTIONAL hold endings |
-
+Queue is empty.

@@ -433,7 +433,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 Length **2+** (no **-r**): **-l** = pick from this closed menu; **-m** = pick or name something else (for **o**, also *or none*); **u** = *none of* the listed; **ua** / **uo** = complement of the listed; **ue** = reverse-rank among the listed. With **-r**: [fill-ask arity](#fill-ask-r). Under `/h/` / `/w/`, only the [defined circumstance core](restrictors.md) applies.
 
-Mnemonic for all tables below: first vowel = series job — **`e`** orders (rank), **`a`** adds to the set, **`o`** picks one, **`u`** undoes / excludes. Ending refines it: **-l** exact, **-m** soft offer, **-n** stock/usual, **-r** fill-ask.
+Mnemonic for all tables below: first vowel = series job — **`e`** orders (rank), **`a`** adds to the set, **`o`** picks one, **`u`** undoes / excludes. Ending refines it: **-l** exact, **-m** soft offer, **-n** stock/usual (join-word **-n**, not a [name](reference-suffix.md#proper-name--n)), **-r** fill-ask.
 
 #### Rank — focus (under question)
 

@@ -43,7 +43,7 @@ Six closed needs. Senses are fixed; lexicon roots are published. Ordinary conten
 1. **PoS** — `/h/` or `/w/`.
 2. **Need root** — one of the six (`obola` / `odolo` / `ogono` / `azedo` / `uzehu` / `egege`).
 3. **Optional `x`-addition** — stance vowel **`a` / `e` / `o` / `u`**.
-4. **Ending** — on bare needs, ordinary [reference-suffix](reference-suffix.md); on compounds, the stance’s own table ([contact](#value-contact) / [preference](#value-preference) / [force](#value-force) / [changeability](#value-changeability)).
+4. **Ending** — on bare needs, ordinary [reference-suffix](reference-suffix.md). On compounds, **-l / -m / -r** follow the stance’s table ([contact](#value-contact) / [preference](#value-preference) / [force](#value-force) / [changeability](#value-changeability)); **-n** is ordinary [proper](reference-suffix.md#proper-name--n) (this word names a particular object — rare on `/h/` `/w/`).
 
 ### Stances
 <a id="value-stake"></a>
@@ -73,34 +73,34 @@ gloss: `h-pleasure`
 **Met (`xa`):** claim that the host serves the need. Ending = [contact channel](#value-contact).
 
 ```
-`zawerul wogonoxan.`
+`zawerul wogonoxal.`
 
-gloss: `z-gift` · `w-relatedness-met-social`
+gloss: `z-gift` · `w-relatedness-met-physical`
 
-*The gift serves relatedness (social channel).*
+*The gift serves relatedness (physical contact).*
 ```
 
 ### Contact channel (endings on met)
 <a id="value-contact"></a>
 <a id="value-savoring"></a>
 
-On **`xa`** compounds, **-l / -m / -n / -r** mark **how you contact** the (claimed) payoff — savoring / gratitude channel.
+On **`xa`** compounds, **-l / -m / -r** mark **how you contact** the (claimed) payoff — savoring / gratitude channel. **-n** is ordinary proper (a named object), not a fourth channel. Relatedness *between people* is the need **`ogono`**, not an ending.
 
 | Ending | Channel | Focus |
 |--------|---------|--------|
 | **-l** | **physical** | Sensory / ambient / embodied ease |
 | **-m** | **mental** | Cognitive integration, memory, self-directed gratitude |
-| **-n** | **social** | Relational connection, gifts, acknowledgment |
 | **-r** | **spiritual** | Big-picture step-back (wider frame — not theology) |
+| **-n** | **proper** | This value-word names a particular object |
 
-**Mnemonic:** **-l** immediate scene; **-m** mental; **-n** named persons; **-r** resume to a larger frame. No ranked “better” channel.
+**Mnemonic:** **-l** immediate scene; **-m** mental; **-r** resume to a larger frame. No ranked “better” channel.
 
 | Form | Contact |
 |------|---------|
 | `…xal` | **physical** |
 | `…xam` | **mental** |
-| `…xan` | **social** |
 | `…xar` | **spiritual** |
+| `…xan` | **proper** (rare) |
 
 ```
 `zugodal gohuzem bumogon wodoloxal.`
@@ -114,14 +114,14 @@ gloss: `z-neighborhood` · `g-home` · `b-speaker` · `w-competence-met-physical
 <a id="value-force"></a>
 <a id="value-ought"></a>
 
-**`xo`** = *should* / *ought* — act so the need is served or protected, whether or not anyone is acting from it now. Ending = **prescription force** (how strongly you claim the ought).
+**`xo`** = *should* / *ought* — act so the need is served or protected, whether or not anyone is acting from it now. **-l / -m / -r** = **prescription force** (how strongly you claim the ought). **-n** is ordinary proper, not a fourth force. A promise without a named vow is **bound** or **endorse**.
 
 | Ending | Force | You are saying |
 |--------|--------|----------------|
 | **-l** | **bound** | Non-negotiable in this frame (hardest — same **-l** hardness as firm force / closed joins) |
 | **-m** | **endorse** | I stand behind this should (soft default if unknown) |
-| **-n** | **commit** | Holds as promise, role, or agreed standard |
 | **-r** | **invite** | Worth considering here (lightest) |
+| **-n** | **proper** | This ought-word names a particular object |
 
 **Mnemonic:** **-l** locked / bound; **-r** light invite — matches language-wide **-l** hardness (`jal`, closed joins). Gloss **-l** as **bound in-frame**, not “morally mandatory forever.” Always pick an ending on **`xo`**; unknown → **-m**.
 
@@ -129,8 +129,8 @@ gloss: `z-neighborhood` · `g-home` · `b-speaker` · `w-competence-met-physical
 |------|--------|
 | `…xol` | **bound** |
 | `…xom` | **endorse** |
-| `…xon` | **commit** |
 | `…xor` | **invite** |
+| `…xon` | **proper** (rare) |
 
 ```
 `… hogonoxom.`
@@ -143,21 +143,21 @@ gloss: `h-relatedness-ought-endorse`
 ### Unmet (`xu`) — changeability
 <a id="value-changeability"></a>
 
-**`xu`** = host costs / subtracts from the need. Ending = **changeability** (temporariness / reversibility), with **-n** reserved for **proper**.
+**`xu`** = host costs / subtracts from the need. **-l / -m / -r** = **changeability** (temporariness / reversibility). **-n** is ordinary proper (a named object), not a titled-unmet flavor.
 
 | Ending | Job | Mnemonic |
 |--------|-----|----------|
 | **-l** | **irreversible** — fixed as far as you can tell | hard / locked (**-l**) |
 | **-m** | **modifiable** — effort or circumstance may change it (soft default if unknown) | open to change |
-| **-n** | **proper** — named / titled unmet frame | ordinary **n**ame |
 | **-r** | **temporary** — usually met; not this moment | light / this-moment only |
+| **-n** | **proper** — this unmet-word names a particular object | ordinary **n**ame |
 
 | Form | Reading |
 |------|---------|
 | `…xul` | **irreversible** |
 | `…xum` | **modifiable** |
-| `…xun` | **proper** |
 | `…xur` | **temporary** |
+| `…xun` | **proper** (rare) |
 
 ```
 `zazudol woboloxur.`
@@ -182,10 +182,10 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `hazedol.`
 :::
 
-**2.** *The gift serves relatedness (social channel).*
+**2.** *The gift serves relatedness (physical channel).*
 
 ::: details Show answer
-`zawerul wogonoxan.`
+`zawerul wogonoxal.`
 :::
 
 **3.** *The house serves competence (physical channel).*
@@ -232,10 +232,10 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Pleasure (as a topic).*
 :::
 
-**2.** `zawerul wogonoxan.`
+**2.** `zawerul wogonoxal.`
 
 ::: details Show answer
-*The gift serves relatedness (social channel).*
+*The gift serves relatedness (physical channel).*
 :::
 
 **3.** `zazudol woboloxur.`
@@ -280,23 +280,23 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 ### Motive (`xe`) — preference standing
 <a id="value-preference"></a>
 
-**`xe`** = descriptive reason for acting (*am doing for X*) — replaces English *have to* / *need to* when that is the real motive. Ending = **preference standing** (where the reason comes from).
+**`xe`** = descriptive reason for acting (*am doing for X*) — replaces English *have to* / *need to* when that is the real motive. **-l / -m / -r** = **preference standing** (where the reason comes from). **-n** is ordinary proper. Habit of the reason is **`hual`**, not an ending.
 
 | Ending | Standing | Focus |
 |--------|----------|--------|
 | **-l** | **circumstantial** | The situation pulls this motive |
 | **-m** | **internal** | Your own reason (also soft default if unknown) |
-| **-n** | **habitual** | Usually your motive in cases like this |
 | **-r** | **protective** | Motive as *protecting against* unmet (away-from), not approach |
+| **-n** | **proper** | This motive-word names a particular object |
 
-**Toward vs protective:** **-l / -m / -n** approach-framed; **-r** fear/guard framed. Always pick an ending on **`xe`**; unknown → **-m**.
+**Toward vs protective:** **-l / -m** approach-framed; **-r** fear/guard framed. Always pick an ending on **`xe`**; unknown → **-m**. *Usually my reason* → **`…xem`** + **`hual`**.
 
 | Form | Standing |
 |------|----------|
 | `…xel` | **circumstantial** |
 | `…xem` | **internal** |
-| `…xen` | **habitual** |
 | `…xer` | **protective** |
+| `…xen` | **proper** (rare) |
 
 ```
 `… hogonoxem.`
@@ -331,7 +331,7 @@ Same changeability table as unmet **`xu`** is reused on [DECISION](plan-decision
 | Motive | clause + `h…xe…` + standing | *I am … (for relatedness)* — `hogonoxe…` |
 | Topic-only | bare `h…` / `w…` need | `hazedol` |
 
-Prefer **-m** on **`xu` / `xe` / `xo`** when that table’s dimension is unclear. Multiple values = multiple `/h/` or `/w/` words (`hodoloxal hogonoxan`), not stacked `x`-additions on one need.
+Prefer **-m** on **`xu` / `xe` / `xo`** when that table’s dimension is unclear. Multiple values = multiple `/h/` or `/w/` words (`hodoloxal hogonoxal`), not stacked `x`-additions on one need.
 
 ### More examples
 
@@ -340,10 +340,10 @@ Prefer **-m** on **`xu` / `xe` / `xo`** when that table’s dimension is unclear
 | `… wuzuhuxam` | survival met; **mental** channel |
 | `… wazedoxar` | pleasure met; **spiritual** step-back |
 | `… hogonoxel` | motive relatedness; **circumstantial** |
-| `… hogonoxen` | motive relatedness; **habitual** |
+| `… hogonoxem` | motive relatedness; **internal** |
 | `… hogonoxer` | motive relatedness; **protective** |
 | `… hogonoxol` | should relatedness; **bound** |
-| `… hogonoxon` | should relatedness; **commit** |
+| `… hogonoxom` | should relatedness; **endorse** |
 | `… hogonoxor` | should relatedness; **invite** |
 | `… hogonoxul` | costs relatedness; **irreversible** |
 | `… hogonoxur` | costs relatedness; **temporary** |
@@ -354,7 +354,7 @@ Prefer **-m** on **`xu` / `xe` / `xo`** when that table’s dimension is unclear
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `ogobo` *book* · `ohuze` *house* · `awu` *walk* · `ezabu` *tell* · `egu` *sing* · `uwa` *write* · `ahura` *sit* · `aweru` *gift* · `azudo` *meeting* · `obola` *autonomy* · `odolo` *competence* · `ogono` *relatedness* · `azedo` *pleasure* · `uzehu` *survival*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `ogobo` *book* · `ohuze` *house* · `awu` *walk* · `ezabu` *tell* · `egu` *sing* · `uwa` *write* · `ahura` *sit* · `aweru` *gift* · `azudo` *meeting* · `obola` *autonomy* · `odolo` *competence* · `ogono` *relatedness* · `azedo` *pleasure* · `uzehu` *survival* · **`hual`** (*always*)
 
 #### English → Agelan
 
@@ -370,10 +370,10 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zulonun vawul hogonoxel.`
 :::
 
-**3.** *Ubuzun sings for relatedness (habitual motive).*
+**3.** *Ubuzun sings for relatedness (internal motive, as usual).*
 
 ::: details Show answer
-`zubuzun vegul hogonoxen.`
+`zubuzun vegul hogonoxem hual.`
 :::
 
 **4.** *Azawan sits for relatedness (protective motive).*
@@ -394,16 +394,16 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zohuzel gohuzem bazawan wodoloxal.`
 :::
 
-**7.** *The gift serves relatedness (social) — met contact, not motive.*
+**7.** *The gift serves relatedness (physical) — met contact, not motive.*
 
 ::: details Show answer
-`zawerul wogonoxan.`
+`zawerul wogonoxal.`
 :::
 
-**8.** *Ubuzun tells — relatedness ought to hold as a commitment.*
+**8.** *Ubuzun tells — relatedness ought to be served (endorse).*
 
 ::: details Show answer
-`zubuzun vezabul hogonoxon.`
+`zubuzun vezabul hogonoxom.`
 :::
 
 #### Agelan → English
@@ -420,10 +420,10 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Ulonun walks for relatedness (circumstantial motive).*
 :::
 
-**3.** `zubuzun vegul hogonoxen.`
+**3.** `zubuzun vegul hogonoxem hual.`
 
 ::: details Show answer
-*Ubuzun sings for relatedness (habitual motive).*
+*Ubuzun sings for relatedness (internal motive, as usual).*
 :::
 
 **4.** `zazawan vahural hogonoxer.`
@@ -465,35 +465,35 @@ Competence (`odolo`) and relatedness (`ogono`) shown for readability; same endin
 
 #### Met — contact channel
 
-| | **-l** physical | **-m** mental | **-n** social | **-r** spiritual |
-|--|-----------------|---------------|---------------|------------------|
-| **xa** met | `wodoloxal` | `wodoloxam` | `wodoloxan` | `wodoloxar` |
-| mnemonic | touches the body | happens in the head | happens between people | reaches beyond the self |
+| | **-l** physical | **-m** mental | **-r** spiritual | **-n** proper |
+|--|-----------------|---------------|------------------|---------------|
+| **xa** met | `wodoloxal` | `wodoloxam` | `wodoloxar` | `wodoloxan` |
+| mnemonic | touches the body | happens in the head | reaches beyond the self | names an object |
 
 #### Motive — preference standing
 
-| | **-l** circumstantial | **-m** internal | **-n** habitual | **-r** protective |
-|--|----------------------|-----------------|-----------------|-------------------|
-| **xe** motive | `hogonoxel` | `hogonoxem` | `hogonoxen` | `hogonoxer` |
-| mnemonic | the situation’s doing | from inside me | just how I am | it guards something |
+| | **-l** circumstantial | **-m** internal | **-r** protective | **-n** proper |
+|--|----------------------|-----------------|-------------------|---------------|
+| **xe** motive | `hogonoxel` | `hogonoxem` | `hogonoxer` | `hogonoxen` |
+| mnemonic | the situation’s doing | from inside me | it guards something | names an object |
 
 #### Prescription — force
 
-| | **-l** bound | **-m** endorse | **-n** commit | **-r** invite |
-|--|--------------|----------------|---------------|----------------|
-| **xo** ought | `hogonoxol` | `hogonoxom` | `hogonoxon` | `hogonoxor` |
-| mnemonic | nailed on | I cheer it | I promise it | held out to you |
+| | **-l** bound | **-m** endorse | **-r** invite | **-n** proper |
+|--|--------------|----------------|---------------|---------------|
+| **xo** ought | `hogonoxol` | `hogonoxom` | `hogonoxor` | `hogonoxon` |
+| mnemonic | nailed on | I cheer it | held out to you | names an object |
 
 #### Unmet — changeability
 
-| | **-l** irreversible | **-m** modifiable | **-n** proper | **-r** temporary |
-|--|---------------------|-------------------|---------------|------------------|
-| **xu** unmet | `hogonoxul` | `hogonoxum` | `hogonoxun` | `hogonoxur` |
-| mnemonic | fixed for good | could change | just how it is named | only right now |
+| | **-l** irreversible | **-m** modifiable | **-r** temporary | **-n** proper |
+|--|---------------------|-------------------|------------------|---------------|
+| **xu** unmet | `hogonoxul` | `hogonoxum` | `hogonoxur` | `hogonoxun` |
+| mnemonic | fixed for good | could change | only right now | names an object |
 
 ### Boundaries
 
-- Met / unmet / motive / prescription live on the **`x`-vowel**; contact / standing / force / changeability live on the **ending**.
+- Met / unmet / motive / prescription live on the **`x`-vowel**; contact / standing / force / changeability live on **-l / -m / -r**. **-n** on these compounds is ordinary proper.
 - Value polarity is not number markers `h+` / `h-`.
 - Ordinary **-l / -m** (literal / metaphorical) do not mean met / unmet on these compounds.
 - Value second halves are bare vowels **`a` / `e` / `o` / `u`** inside a compound — not prefix-less revisers (`al`, `ul`, …) and not restrictor joins (`hal`, …).
@@ -506,7 +506,7 @@ Competence (`odolo`) and relatedness (`ogono`) shown for readability; same endin
 - **COMMENT** / mindfulness noting — [commentary.md § Comment](commentary.md#comment); closed **`uho`** + [hold endings](commentary.md#comment-hold); not contact-channel endings on **`xa`**.
 - **NOTIONAL** / as-if framing — [commentary.md § Notional](commentary.md#notional); closed **`edahe`** + same hold map; not free number notional forms.
 - **DECISION** / pick firmness — [plan-decision.md § Decision](plan-decision.md#decision); closed **`ehege`** + [changeability](plan-decision.md#decision-changeability); not unmet-need **`xu`**, not ability, not PLAN.
-- **PLAN** / intention map resolution — [plan-decision.md § Plan](plan-decision.md#plan-predict); closed **`owaro`** + [map resolution](plan-decision.md#plan-map-resolution) (sketch / itinerary / fork / proper); not DECISION, not PREDICT.
+- **PLAN** / intention map resolution — [plan-decision.md § Plan](plan-decision.md#plan-predict); closed **`owaro`** + [map resolution](plan-decision.md#plan-map-resolution) (sketch / itinerary / fork); **-n** ordinary proper; not DECISION, not PREDICT.
 - Whose-need / care direction on prescription, and forced listener / third-person possessives, stay optional later dimensions.
 
 ### Translation practice
@@ -542,10 +542,10 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 `hazedol.`
 :::
 
-**5.** *Azawan is a teacher — relatedness unmet (proper named frame).*
+**5.** *Azawan is a teacher — relatedness unmet (modifiable).*
 
 ::: details Show answer
-`zazawan gedagel hogonoxun.`
+`zazawan gedagel hogonoxum.`
 :::
 
 #### Agelan → English
@@ -574,10 +574,10 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 *Pleasure (as a topic).*
 :::
 
-**5.** `wogonoxan.` `hogonoxen.` `hogonoxon.` `hogonoxun.`
+**5.** `wogonoxal.` `hogonoxem.` `hogonoxom.` `hogonoxum.`
 
 ::: details Show answer
-*Relatedness served (social channel). For relatedness out of habit. Relatedness ought to hold as a commitment. Relatedness unmet (named frame).*
+*Relatedness served (physical contact). For relatedness (internal motive). Relatedness ought (endorse). Relatedness unmet (modifiable).*
 :::
 
 ## See also

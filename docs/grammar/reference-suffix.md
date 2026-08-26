@@ -18,6 +18,8 @@ A bare **-l** / **-m** word always **introduces**. To point back, use **-r** (ho
 
 **Mnemonic:** endings answer *how does this root enter the talk?* — new literal, new figurative, named, or already on the table.
 
+**Exception (joins only):** on [join words](coordination.md) (phrase / VP / clause fences, plus [join-act](join-extras.md#join-act-verbs) / [join-relation](join-extras.md#join-relations) stems), **-n** is **not** a name. Everywhere else, **-n** is a proper object. Full join readings: [coordination.md](coordination.md) (Intermediate / Advanced).
+
 ```
 `zogodol gulebul.`
 
@@ -179,6 +181,8 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **-n** is available on **any** role letter. The letter says what job the word plays **now**; **-n** says you are invoking a **title, proper label, or conventionally unique name**, not introducing a fresh indefinite reading.
 
+**Only exception:** [join words](coordination.md) — fence joins, clause soft **-n**, and closed [join-act](join-extras.md#join-act-verbs) / [join-relation](join-extras.md#join-relations) stems. Those **-n** spellings are join packaging or join content, not names. No other table (values, PLAN, COMMENT, numbers, …) gets a second **-n** job.
+
 #### Nouns (`/z/`, `/d/`, `/b/`)
 
 Named individuals, places, one-off objects, titled works: *Azawan*, *Paris*, *the Odyssey*. Argument nouns under a complex adjective or adverb can be **-n** when that participant is a named entity (*book by* **[Rowling]**).
@@ -240,14 +244,14 @@ Prefix-less [discourse revisers](revisers.md#discourse-revisers) keep reviser en
 | Role | **-n** means… |
 |------|----------------|
 | `/z/` `/d/` `/b/` | This named entity (person, place, title, unique referent) |
-| `/v/` | This named event, rite, or titled action. Closed [join-act verbs](join-extras.md#join-act-verbs) (`van`, …) are defective **-n**-only forms. |
-| `/ɡ/` | This named style, tradition, brand, or category. Closed [join-relations](join-extras.md#join-relations) (`gan`, …) are defective **-n**-only complex adjectives. |
+| `/v/` | This named event, rite, or titled action. **Exception:** [join-act verbs](join-extras.md#join-act-verbs) (`van`, …) — join content, not a name. |
+| `/ɡ/` | This named style, tradition, brand, or category. **Exception:** [join-relations](join-extras.md#join-relations) (`gan`, …) — join content, not a name. |
 | `/w/` | (Rare) this named scale / grade / criterion on the preceding adjective |
-| `/h/` | This named standard, channel, or official circumstance. Closed join-relations (`han`, …) live here as defective **-n**-only complex adverbs. |
+| `/h/` | This named standard, channel, or official circumstance. **Exception:** join-relations (`han`, …) — join content, not a name. |
 | `/j/` vocative | Address this named person, place, or title |
 | `/j/` interjection | This named formula or conventional call |
 | `/j/` clause force | *(not used)* |
-| `/x/` | Titled discourse label (thread shift) on other roots; soft join packaging on clause joins — see [coordination.md](coordination.md) |
+| `/x/` | Titled discourse label (thread shift) on other roots. **Exception:** clause join **-n** = soft packaging (`xan`, …) — [coordination.md](coordination.md) |
 
 ### Number-word exception
 <a id="number-word-exception"></a>

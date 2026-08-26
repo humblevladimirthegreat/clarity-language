@@ -12,7 +12,7 @@ First-person *I think*, how you know a world-claim, and *as if* framing — clos
 
 Mark **first-person mental commentary** — the mind storying or labeling experience — with one closed mood root instead of separate *think* / *assume* / *imagine* / *wonder* moods.
 
-**Shape:** floating **`/h/`** mood **`uho`** 💭 *thought* → *commentary* (optional `/w/` only when COMMENT frames a preceding `/ɡ/` — rare). Prefer floating `/h/`. Ending = [hold](#comment-hold) (how tightly you take the balloon).
+**Shape:** floating **`/h/`** mood **`uho`** 💭 *thought* → *commentary* (optional `/w/` only when COMMENT frames a preceding `/ɡ/` — rare). Prefer floating `/h/`. **-l / -m / -r** = [hold](#comment-hold) (how tightly you take the balloon); **-n** ordinary proper.
 
 **Mnemonic:** a **thought balloon** floats a take over the scene. Bare contact = watching without narration. Ordinary content still available (`zuhol` *a thought*; `vuhol` *to think* as deliberate event).
 
@@ -40,14 +40,14 @@ Use COMMENT when the clause is doing **first-person cognitive commentary**. Cont
 <a id="comment-hold"></a>
 <a id="hold-endings"></a>
 
-On **`uho`**, **-l / -m / -n / -r** mark **how you hold** the commentary — flexible attention cues on the inflexibility host. NOTIONAL uses the same map ([Intermediate](#notional-hold)). Not contact channel, not changeability, not ordinary reference-suffix on this mood.
+On **`uho`**, **-l / -m / -r** mark **how you hold** the commentary. **-n** is ordinary [proper](reference-suffix.md#proper-name--n) (this COMMENT-word names a particular object), not a fourth hold. Habitual rumination is **`hual`** (and/or a named thought), not **`huhon`** as “the usual story.” NOTIONAL uses the same **-l / -m / -r** map ([Intermediate](#notional-hold)). Not contact channel, not changeability.
 
 | Ending | Form | Hold | Reading |
 |--------|------|------|---------|
 | **-m** | **`huhom`** | **soft** (default) | commentary noticed, held lightly |
 | **-l** | **`huhol`** | **fused** | commentary taken as the scene (*it is so because I think*) |
-| **-n** | **`huhon`** | **named loop** | titled / habitual rumination frame (*the usual story*) |
 | **-r** | **`huhur`** | **return** | same commentary *and* a cue to step back toward bare contact |
+| **-n** | **`huhon`** | **proper** | this word names a particular commentary-object |
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -76,10 +76,10 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zubuzun huhol vegul.`
 :::
 
-**4.** *The usual story: Azawan runs.* (named loop)
+**4.** *I think Azawan runs.* (light commentary)
 
 ::: details Show answer
-`zazawan huhon vurunul.`
+`zazawan huhom vurunul.`
 :::
 
 **5.** *I think Ulonun walks — and step back from that take.*
@@ -120,10 +120,10 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Ulonun sleeps — and that commentary is taken as the scene.*
 :::
 
-**3.** `zubuzun huhon vegul.`
+**3.** `zubuzun huhom vegul.`
 
 ::: details Show answer
-*The usual story: Ubuzun sings.*
+*I think Ubuzun sings.*
 :::
 
 **4.** `zazawan huhur vurunul.`
@@ -291,19 +291,19 @@ Use NOTIONAL when the clause is **framed as pretensive / for-the-sake-of-argumen
 |---------|---------|
 | `… hedahem zumogon vobohol.` | *as if I take the trophy* — soft notional frame |
 | `… hedaher …` | notional frame *and* step back toward contact |
-| `… hedahen …` | conventional thought-experiment frame |
+| `… hedahen …` | this NOTIONAL-word **names** a particular object |
 
 #### Hold endings (NOTIONAL)
 <a id="notional-hold"></a>
 
-On **`edahe`**, **-l / -m / -n / -r** mark **how you hold** the as-if frame — same flexibility map as [COMMENT hold](#comment-hold).
+On **`edahe`**, **-l / -m / -r** mark **how you hold** the as-if frame — same flexibility map as [COMMENT hold](#comment-hold). **-n** is ordinary proper, not a stock thought-experiment flavor.
 
 | Ending | Form | Hold | Reading |
 |--------|------|------|---------|
 | **-m** | **`hedahem`** | **soft** (default) | as-if noticed, held lightly |
 | **-l** | **`hedahel`** | **fused** | immersed in the imagined scene |
-| **-n** | **`hedahen`** | **named frame** | conventional thought-experiment / stock *as if* |
 | **-r** | **`hedaher`** | **return** | same as-if *and* a cue to step back toward bare contact |
+| **-n** | **`hedahen`** | **proper** | this word names a particular as-if object |
 
 When unsure, prefer **`hedahem`**.
 
@@ -385,10 +385,10 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *As if Ubuzun sings* — immersed in the imagined scene.
 :::
 
-**4.** `zazawan hedahen vurunul.`
+**4.** `zazawan hedahem vurunul.`
 
 ::: details Show answer
-*As if Azawan runs* — a conventional thought-experiment frame.
+*As if Azawan runs* — soft pretensive frame.
 :::
 
 **5.** `zulonun hedaher vuwal.`

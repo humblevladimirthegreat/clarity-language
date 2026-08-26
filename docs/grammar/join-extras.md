@@ -14,7 +14,7 @@ Name the **coordination move you perform** on an object — *include*, *choose*,
 
 **Shape:** join vowel + **-n** under `/v/` (`van`, `von`, …). One `/d/` object (singular or group). Group objects use ordinary noun **-sh** (`d-…lsh`); verb **-sh** is [collective doing](plurality.md#collective-doing).
 
-**Mnemonic:** vowel = which join move; **-n** = that move as a titled doing ([reference-suffix](reference-suffix.md#proper-name--n) verb sense).
+**Mnemonic:** vowel = which join move; **-n** = join content (not a [name](reference-suffix.md#proper-name--n)). Join-word **-n** is the **only** exception to ordinary proper **-n**.
 
 ```
 `zazawan dabebal van.`
@@ -59,7 +59,7 @@ Frame a host with the **same join-series move** toward one `/b/` argument — *i
 
 **Shape:** join vowel + **-n** under `/ɡ/` or `/h/` (`gan` / `han`, …). One `/b/` argument (singular or group). Group arguments use ordinary noun **-sh** (`b-…lsh`). Multi-member or empty domains: put a [phrase join](coordination.md) **inside** the `/b/` phrase (`gan bal bebanul bezedul`), or use a [nullary / bare](coordination.md#focus-phrase) `/b/` join as the sole argument (`gan bar` = *including something*; `guan bal` = *excluding nothing* / stripped frame).
 
-**Mnemonic:** same vowels as [join-act verbs](#join-act-verbs); **-n** = titled relation toward `/b/`. Contiguous unit: `g*n b-…` on a noun; `h*n b-…` floats as one complex adverb.
+**Mnemonic:** same vowels as [join-act verbs](#join-act-verbs); **-n** = join content toward `/b/` (not a [name](reference-suffix.md#proper-name--n) — same **only** exception as other join words). Contiguous unit: `g*n b-…` on a noun; `h*n b-…` floats as one complex adverb.
 
 ```
 `zubarol gan bebanul.`

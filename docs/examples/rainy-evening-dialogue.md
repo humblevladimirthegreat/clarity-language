@@ -224,11 +224,11 @@ strict: *(You A and you C,) choose play!*
 
 loose: *You two — pick something playful!*
 
-**C:** `jum vawul hodoloxon.`
+**C:** `jum vawul hodoloxom.`
 
 gloss: `j-prohibition` · `v-walking` · `h-competence-x-ought`
 
-strict: *Don’t walk — ought: competence (commit force).*
+strict: *Don’t walk — ought: competence (endorse).*
 
 loose: *Please don’t walk — stay able.*
 

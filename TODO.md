@@ -1,5 +1,4 @@
 # TODO
-I'm thinking of broadly removing all -n special forms and reserving it for the usual proper name. Are there any special -n forms that are worth keeping or reassigning?
 Phonology english-to-agelan conversion prioritizes similar placements 
 Confirm word compounding past two
 Statistics captures consonant and vowel distribution 
@@ -9,8 +8,6 @@ Voice generator shows IPA
 Ensure asides are allowed on any part of speech. Decide aka type parentheticals
 Single page application?
 Consider formalizing abbreviations (mentions)
-Span mnemonics 
-compound words stop using x, just raw concatenation
 Consider reserving two syllable words for special
 Confirm hyphenated phrases (using cite?)
 How hard is speech to text?
@@ -20,7 +17,6 @@ consider moving vowel series before coordination
 consider moving phonology before core
 consistently use role compound for words (teacher)
 remove left join possibility. If needed use revisers "everything except..."
-consider removing -n senses from values
 limit deployments to tagged releases
 if a page doesn't have a particular learning band, state so with an empty section
 doc pages should have table of contents

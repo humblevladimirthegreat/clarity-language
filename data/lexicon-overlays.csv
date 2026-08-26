@@ -29,8 +29,8 @@ owarom,h,🗺️,plan mood sketch map-resolution (direction-only intention),map 
 owarom,w,🗺️,plan mood sketch map-resolution (direction-only intention),map charts a route; sketch plan is intention without steps
 owarol,h,🗺️,plan mood itinerary map-resolution (steps on the map),map charts a route; itinerary plan fills in how
 owarol,w,🗺️,plan mood itinerary map-resolution (steps on the map),map charts a route; itinerary plan fills in how
-owaron,h,🗺️,plan mood proper (named plan / titled course),map charts a route; proper -n titles the plan
-owaron,w,🗺️,plan mood proper (named plan / titled course),map charts a route; proper -n titles the plan
+owaron,h,🗺️,plan mood proper (this plan-word names a particular object),map charts a route; -n is ordinary proper not a map grain
+owaron,w,🗺️,plan mood proper (this plan-word names a particular object),map charts a route; -n is ordinary proper not a map grain
 owaror,h,🗺️,plan mood fork map-resolution (contingency / backup path),map charts a route; fork plan is if-not-A-then-B
 owaror,w,🗺️,plan mood fork map-resolution (contingency / backup path),map charts a route; fork plan is if-not-A-then-B
 edelom,h,🔭,predict mood (forecast about what will happen),telescope shows what is far; forecast looks ahead at a distance
@@ -39,24 +39,24 @@ ehegel,h,✅,decision mood irreversible changeability (settled pick),checkmark c
 ehegel,w,✅,decision mood irreversible changeability (settled pick),checkmark confirms a pick; irreversible decision is settled as final
 ehegem,h,✅,decision mood modifiable changeability (open to revision),checkmark confirms a pick; modifiable decision stays open to change
 ehegem,w,✅,decision mood modifiable changeability (open to revision),checkmark confirms a pick; modifiable decision stays open to change
-ehegen,h,✅,decision mood proper (named decision frame),checkmark confirms a pick; proper -n titles the decision frame
-ehegen,w,✅,decision mood proper (named decision frame),checkmark confirms a pick; proper -n titles the decision frame
+ehegen,h,✅,decision mood proper (this decision-word names a particular object),checkmark confirms a pick; -n is ordinary proper not a firmness
+ehegen,w,✅,decision mood proper (this decision-word names a particular object),checkmark confirms a pick; -n is ordinary proper not a firmness
 eheger,h,✅,decision mood temporary changeability (pick for now),checkmark confirms a pick; temporary decision holds only this moment
 eheger,w,✅,decision mood temporary changeability (pick for now),checkmark confirms a pick; temporary decision holds only this moment
 uhom,h,💭,comment mood soft hold (mental commentary held lightly),thought balloon floats a take; soft commentary is noticed without fusion
 uhom,w,💭,comment mood soft hold (mental commentary held lightly),thought balloon floats a take; soft commentary is noticed without fusion
 uhol,h,💭,comment mood fused hold (commentary taken as the scene),thought balloon fills the frame; fused commentary is treated as the scene
 uhol,w,💭,comment mood fused hold (commentary taken as the scene),thought balloon fills the frame; fused commentary is treated as the scene
-uhon,h,💭,comment mood named-loop hold (titled rumination frame),thought balloon as a stock caption; named loop is the usual story
-uhon,w,💭,comment mood named-loop hold (titled rumination frame),thought balloon as a stock caption; named loop is the usual story
+uhon,h,💭,comment mood proper (this commentary-word names a particular object),thought balloon as a named caption; -n is ordinary proper not a hold
+uhon,w,💭,comment mood proper (this commentary-word names a particular object),thought balloon as a named caption; -n is ordinary proper not a hold
 uhur,h,💭,comment mood return hold (commentary plus step-back cue),thought balloon noted then set down; return cues step-back toward contact
 uhur,w,💭,comment mood return hold (commentary plus step-back cue),thought balloon noted then set down; return cues step-back toward contact
 edahem,h,🎭,notional mood soft hold (as-if framing held lightly),theater mask marks play; soft pretense is as-if without immersion
 edahem,w,🎭,notional mood soft hold (as-if framing held lightly),theater mask marks play; soft pretense is as-if without immersion
 edahel,h,🎭,notional mood fused hold (immersed in imagined scene),theater mask covers the face; fused pretense immerses in the scene
 edahel,w,🎭,notional mood fused hold (immersed in imagined scene),theater mask covers the face; fused pretense immerses in the scene
-edahen,h,🎭,notional mood named-frame hold (conventional thought-experiment),theater as stock stage setup; named frame is the usual as-if exercise
-edahen,w,🎭,notional mood named-frame hold (conventional thought-experiment),theater as stock stage setup; named frame is the usual as-if exercise
+edahen,h,🎭,notional mood proper (this as-if-word names a particular object),theater as a named setup; -n is ordinary proper not a hold
+edahen,w,🎭,notional mood proper (this as-if-word names a particular object),theater as a named setup; -n is ordinary proper not a hold
 edaher,h,🎭,notional mood return hold (as-if plus step-back cue),theater mask noted then lifted; return cues step-back toward contact
 edaher,w,🎭,notional mood return hold (as-if plus step-back cue),theater mask noted then lifted; return cues step-back toward contact
 ogenam,h,🌊,emotion HIGH activation (flood / surge),ocean wave surges; flood is high-arousal water motion

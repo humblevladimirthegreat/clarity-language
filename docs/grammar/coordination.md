@@ -17,6 +17,8 @@ You use joins when English would say *and*, *or*, *not*, *prefer A over B*, *som
 
 **Mnemonic:** the vowel tells you *what kind* of list (inventory, menu, rank, negation, complement); the ending tells you *how closed* the list is.
 
+Join words are the **only** place **-n** does not mean a [name](reference-suffix.md#proper-name--n). Beginner fences use **-l** / **-m** / **-r**; join **-n** (named list, clause soft `xan`, join-acts) comes later on this page.
+
 ### Set joins and rank joins
 
 **Set joins** group items as inventory or menu:
@@ -597,7 +599,7 @@ Same rule at phrase, VP, and clause level.
 <a id="soft-n-vp-clause"></a>
 <a id="ending-senses"></a>
 
-On **`/x/`** only, join **-n** is **soft packaging** — not phrase named **-n**. Narrative *and then* is **`xan`**.
+On **`/x/`** only, join **-n** is **soft packaging** — not a name, and not phrase named-list **-n**. This join-word **-n** (with phrase **-n** and join-acts / join-relations) is the **only** exception to [ordinary proper **-n**](reference-suffix.md#proper-name--n). Narrative *and then* is **`xan`**.
 
 | Form | Soft reading |
 |------|----------------|
@@ -774,7 +776,7 @@ One island per clause; no nesting of islands. Same-slot material outside an isla
 ### Named phrase **`-n`**
 <a id="named--conventional-ending-phrase-level-all-join-vowels"></a>
 
-On **phrase-level** joins under **`/z/` `/d/` `/b/` `/w/`** only, **-n** marks a **named / conventional list** — an established bundle (*the primary colors*, *stop–drop–roll*), not a freshly composed inventory.
+On **phrase-level** joins under **`/z/` `/d/` `/b/` `/w/`** only, **-n** marks a **named / conventional list** — an established bundle (*the primary colors*, *stop–drop–roll*), not a freshly composed inventory. This is join-word **-n**, not a person/place name — the **only** exception to [ordinary proper **-n**](reference-suffix.md#proper-name--n) (with clause soft **-n** and join-acts / join-relations).
 
 **…an** is **bare-only** on phrase fences under **`/z/` `/d/` `/b/` `/w/`** (no one-conjunct reading). Under `/ɡ/` `/h/`, **…an** / **…en** / other **-n** join-vowel spellings are [join-relations](join-extras.md#join-relations).
 

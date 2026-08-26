@@ -51,29 +51,29 @@ Use **PLAN** when the clause frames **intention**. Use **PREDICT** when it frame
 | *I plan to … / I mean to …* (direction) | **PLAN** sketch (`howarom`) |
 | *here's how I'll …* (steps filled in) | **PLAN** itinerary (`howarol`) |
 | *if that fails, I'll …* (backup path) | **PLAN** fork (`howaror`) |
-| *the roadmap / Plan B* (titled course) | **PLAN** proper (`howaron`) |
+| *the named plan X* (that object is the plan) | **PLAN** proper (`howaron`) — rare; ordinary [**-n**](reference-suffix.md#proper-name--n) |
 | *it will rain / I expect …* (world forecast) | **PREDICT** (`hedelom`) |
 
 | Agelan | Reading |
 |---------|---------|
 | `… howarom …` | intention; **sketch** (soft default) |
 | `… howarol …` | intention; **itinerary** |
-| `… howaron …` | intention; **proper** / named plan |
+| `… howaron …` | intention; this PLAN-word **names** a particular object |
 | `… howaror …` | intention; **fork** / contingency |
 | `… hedelom …` | **forecast** |
 
-#### Endings — map resolution (+ proper **-n**)
+#### Endings — map resolution
 <a id="plan-map-resolution"></a>
 <a id="plan-endings"></a>
 
-On **`owaro`**, **-l / -m / -n / -r** mark **how drawn the intention map is**.
+On **`owaro`**, **-l / -m / -r** mark **how drawn the intention map is**. **-n** is ordinary [proper](reference-suffix.md#proper-name--n) (this PLAN-word names a particular object — not a fourth map grain). *Plan B* as a backup *path* is **fork**; a plan that is actually named uses **-n**.
 
 | Ending | Form | Job | Reading | Mnemonic |
 |--------|------|-----|---------|----------|
 | **-m** | **`howarom`** | **sketch** (soft default) | direction only — *means to …* without steps | open sketch |
 | **-l** | **`howarol`** | **itinerary** | steps filled in — *how* is on the map | locked itinerary |
-| **-n** | **`howaron`** | **proper** | named / titled plan (*the roadmap*, *Plan B* as label) | named map |
 | **-r** | **`howaror`** | **fork** | contingency / backup path — *if not A, then B* | forked / other-path |
+| **-n** | **`howaron`** | **proper** | this word names a particular plan-object | ordinary **n**ame |
 
 When unsure, prefer **`howarom`**. Omit **PLAN** when you are not framing intention.
 
@@ -104,10 +104,10 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zubuzun howaror vawul.`
 :::
 
-**4.** *Azawan’s named plan is to write.*
+**4.** *Azawan means to write.* (direction only)
 
 ::: details Show answer
-`zazawan howaron vuwal.`
+`zazawan howarom vuwal.`
 :::
 
 **5.** *Forecast: it rains.*
@@ -148,10 +148,10 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Forecast: it rains.*
 :::
 
-**5.** `zazawan howaron veguul.`
+**5.** `zazawan howarom veguul.`
 
 ::: details Show answer
-*Azawan’s named plan is to sing.*
+*Azawan means to sing.* (sketch plan)
 :::
 
 **6.** `zulonun howarom vezelel.`
@@ -224,22 +224,22 @@ Use **DECISION** when the clause marks **pick firmness**. Intention map grain st
 |---------|---------|
 | `… hehegel …` | decided; **irreversible** / settled |
 | `… hehegem …` | decided; **open to change** (or unknown) |
-| `… hehegen …` | decided; **proper** / named decision frame |
+| `… hehegen …` | decided; this DECISION-word **names** a particular object |
 | `… heheger …` | decided **for now** (temporary) |
 | `zazawan howarol hehegel vawul` | itinerary **and** settled pick |
 | `… howarom …` | intention **sketch** — map grain, not firmness |
 
-#### Endings — changeability (+ proper **-n**)
+#### Endings — changeability
 <a id="decision-changeability"></a>
 
-On **`ehege`**, endings match unmet [changeability](values.md#value-changeability): **-l** irreversible, **-m** modifiable, **-n** proper, **-r** temporary.
+On **`ehege`**, **-l / -m / -r** match unmet [changeability](values.md#value-changeability): irreversible / modifiable / temporary. **-n** is ordinary proper (this DECISION-word names a particular object), not a fourth firmness.
 
 | Ending | Form | Job | Reading |
 |--------|------|-----|---------|
 | **-l** | **`hehegel`** | **irreversible** | settled / final as far as you can tell |
 | **-m** | **`hehegem`** | **modifiable** (soft default if unknown) | open to revision |
-| **-n** | **`hehegen`** | **proper** | named / titled decision frame |
 | **-r** | **`heheger`** | **temporary** | pick for this moment; usually revisable later |
+| **-n** | **`hehegen`** | **proper** | this word names a particular decision-object |
 
 Always pick an ending on **DECISION**; unknown → **-m**. Deferral stays ordinary packaging.
 
@@ -282,10 +282,10 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zazawan heheger vuwal.`
 :::
 
-**6.** *Ulonun’s named decision is to walk.*
+**6.** *Ulonun has decided to walk, and can still change that.*
 
 ::: details Show answer
-`zulonun hehegen vawul.`
+`zulonun hehegem vawul.`
 :::
 
 #### Agelan → English
@@ -314,10 +314,10 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Ubuzun has decided for now to walk.* (temporary pick)
 :::
 
-**5.** `zulonun hehegen vuwal.`
+**5.** `zulonun hehegem vuwal.`
 
 ::: details Show answer
-*Ulonun’s named decision is to write.*
+*Ulonun has decided to write — still open to revision.*
 :::
 
 **6.** `zazawan howarol hehegel vawul.`
