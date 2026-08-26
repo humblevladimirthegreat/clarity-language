@@ -261,6 +261,20 @@ Most useful with [phrase join](coordination.md): SHARED singular scale under **`
 
 Address a **group**: **-lsh** for kind-based group address (*hey, kids*); **-nsh** for a titled group (*Team Alpha*); **-rsh** to call a prior addressee **and associates**. Multi-addressee role without naming → **`jehadonsh`**. *Everyone* → bare **`…ual`**, not **-lsh**.
 
+### Where **-sh** is unused
+
+| Slot | **-sh**? |
+|------|----------|
+| `/w/` adjective extras | unused — degree/frame stay singular |
+| `/h/` adverbs | unused — habit is **`hual`**; repetition count is numbers under `/h/` |
+| `/j/` interjection / clause force | unused |
+| `/x/` (linkers, joins, span markers, revisers, named discourse glue) | unused — plurality stays on material inside phrases / spans |
+| number words | unused — quantity uses the number grammar ([numbers.md](numbers.md)) |
+
+Revisers (**al** / **am** / …) and join fences take ending only, no **-sh**. Plural material *inside* a non-opaque span marks **-sh** on its own words.
+
+Quantity `>1` is digitless **`g+`** (may co-occur with noun **-lsh**: `zagadalsh g+3`). Generics / *every K* use [coordination](coordination.md#universals-domains-generics) (`zual gagadal`, habitual **`hual`**). Inclusive *we* / address set: [pronouns](pronouns.md#clusivity). Do not use **-sh** for *all* / *every* / *in general* / *always* / *as a character trait*.
+
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
@@ -367,46 +381,6 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 ::: details Show answer
 *Hey, Azawan and associates!*
 :::
-
-## Advanced
-<a id="advanced"></a>
-
-
-### Where **-sh** is unused
-
-| Slot | **-sh**? |
-|------|----------|
-| `/w/` adjective extras | unused — degree/frame stay singular |
-| `/h/` adverbs | unused — habit is **`hual`**; repetition count is numbers under `/h/` |
-| `/j/` interjection / clause force | unused |
-| `/x/` (linkers, joins, span markers, revisers, named discourse glue) | unused — plurality stays on material inside phrases / spans |
-| number words | unused — quantity uses the number grammar ([numbers.md](numbers.md)) |
-
-Revisers (**al** / **am** / …) and join fences take ending only, no **-sh**. Plural material *inside* a non-opaque span marks **-sh** on its own words.
-
-### Summary tables
-
-| Role | **-sh** means… |
-|------|----------------|
-| `/z/` `/d/` `/b/` | Associative group in that noun slot; person-role exceptions in [person-role **-sh**](#person-role-sh) |
-| `/v/` | **Collective** doing (one shared act) |
-| `/ɡ/` | **Collective** ascription (property of the set as a unit) |
-| `/j/` vocative | Address this group (not *everyone* — that is **`…ual`**) |
-| other | *(not used)* |
-
-| Reference + **-sh** | Means… |
-|---------------------|--------|
-| **-lsh** | First mention, literal, associative group (or collective `/ɡ/` / `/v/`) |
-| **-msh** | First mention, metaphorical, associative group (or collective `/ɡ/` / `/v/`) |
-| **-nsh** | Named / titled group (or rare named collective `/ɡ/` / `/v/`) |
-| **-rsh** | Resume: prior referent **and associates** (or prior collective `/ɡ/` / `/v/`) |
-
-### Quantity, generics, and habit (reminder)
-
-- **Quantity `>1`:** digitless **`g+`** — may co-occur with noun **-lsh** when both are meant (`zagadalsh g+3`), but **`g+`** does not replace indefinite group introduction.
-- **Generics / *every K*:** [coordination](coordination.md#universals-domains-generics) — `zual gagadal`, habitual **`hual`**.
-- **Inclusive *we* / address set:** [pronouns](pronouns.md#clusivity).
-- Do **not** use **-sh** to mean *all* / *every* / *in general* / *always* / *as a character trait*.
 
 ## See also
 

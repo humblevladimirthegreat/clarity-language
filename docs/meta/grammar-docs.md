@@ -63,18 +63,12 @@ Do not append free-text `**Mnemonic:**` paragraphs after a table. Put mnemonics 
 
 If a page has several such tables, give each its own mnemonic column; never summarize the whole series once in prose and leave later tables bare.
 
-## Empty bands
+## Empty or pointless bands
+<a id="empty-bands"></a>
 
-An Advanced (or Intermediate) band with nothing to teach is written as one plain sentence, not filled with leftover inventory or a Design-notes dump:
+**Omit** `## Advanced` (or `## Intermediate`) when the rubric’s third question is no: there is no new edge-case, stylistic, or rare inventory. Recap tables, unused-slot lists, “reminder” restatements of earlier bands, and Design-notes dumps do **not** earn a later band. Fold anything still needed into the last band that actually teaches, or drop it.
 
-```markdown
-## Advanced
-<a id="advanced"></a>
-
-There is no advanced section for this page. Continue to the next page.
-```
-
-Material that did not make the band belongs in [TODO.md](../../TODO.md), not in a stub appendix on the page.
+Do **not** keep a heading whose only job is to say there is nothing here. Learners skip missing bands on the [cross-doc path](learning-levels.md#cross-doc-path). Material that did not make a band belongs in [TODO.md](../../TODO.md), not in a stub appendix on the page.
 
 ## Examples use the house cast
 <a id="house-cast"></a>
@@ -89,7 +83,7 @@ Prefer commas, colons, parentheses, or separate sentences over em dashes. An em 
 
 1. **Title + one-line job** — the English job this page teaches (learner-facing). Sibling links only for real near-misses — not “this page owns / does not own” fencing.
 2. **Needs** (optional) — **rare.** Use only when the page is late and the dependency is not obvious from the [cross-doc path](learning-levels.md#cross-doc-path) (e.g. causation → joins + **`odo`** from core Beginner; comparatives → rank joins). Label as `**Needs:**` with one short link line. Do **not** ritualize “core Beginner; reference-suffix Beginner” on every page.
-3. **`## Beginner` / `## Intermediate` / `## Advanced`** — per [learning-levels.md](learning-levels.md).
+3. **`## Beginner` / `## Intermediate` / `## Advanced`** — per [learning-levels.md](learning-levels.md). Include **Advanced** only when that page has rare inventory to teach ([empty or pointless bands](#empty-bands)).
 4. Inside each band: **concept → rule in one breath → 1–3 examples → (optional contrast) → full table if needed**.
 5. Optional **See also** at the end — a few precise near-misses only; no long link walls in the lead (and no lead preview of later peers — [teach now; don’t preview later](#teach-now-dont-preview-later)).
 
@@ -252,7 +246,7 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 
 ## Banding checklist
 
-Before tagging a section **Beginner**, ask the [three questions](learning-levels.md#rubric-three-questions). Prefer the earlier band when learners need the form to read ordinary examples. Dependency on another subsystem beats “feels hard.”
+Before tagging a section **Beginner**, ask the [three questions](learning-levels.md#rubric-three-questions). Prefer the earlier band when learners need the form to read ordinary examples. Dependency on another subsystem beats “feels hard.” Do not add Advanced for recap, unused-slot lists, or reminders — [empty or pointless bands](#empty-bands).
 
 ## Markdown hygiene
 

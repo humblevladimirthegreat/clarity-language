@@ -242,7 +242,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 7 | `pronouns.md` | Intermediate | **exists** | English approximations of **-r**; `/x/`…`-r` thread resume vs `/h/` aboutness; **`ana`** vs name join vs name…**-sh** | |
 | 7 | `pronouns.md` | Advanced | **exists** | Cross-role recast (one or two PoS flips, not the whole grid) | 4–6 items |
 | 7 | `plurality.md` | Intermediate | **exists** | Associate-set resolution; verb collective doing; collective `/ɡ/`…**-sh**; vocative **-sh** | |
-| 7 | `plurality.md` | Advanced | skip | unused / summary | |
+| 7 | `plurality.md` | Advanced | — | no Advanced band | |
 | 8 | `predication.md` | Intermediate | **exists** | Classification packaging; **SAME** endings / soft identity | |
 | 8 | `predication.md` | Advanced | skip | boundaries | |
 | 9 | `coordination.md` | Intermediate | **exists** | Full focus/bare; rank joins as *the* stack if not already fluent; invert **`ua`/`uo`/`ue`**; universals/domains; SHARED after join; `^` islands; fence nesting; clause soft **-n** (`xan`); VP/clause forms | Sample **decisions**, not every H3. 6–8 items |

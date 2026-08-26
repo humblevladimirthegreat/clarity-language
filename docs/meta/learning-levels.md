@@ -24,7 +24,7 @@ Ask in order. Prefer the **earlier** band when a concept sits on a boundary and 
 
 ## How to apply
 
-- Tag **sections** inside each grammar doc (`## Beginner`, `## Intermediate`, `## Advanced`), rather than splitting files by level.
+- Tag **sections** inside each grammar doc (`## Beginner`, `## Intermediate`, `## Advanced`), rather than splitting files by level. Omit a later band when it would only recap or list unused slots ([empty or pointless bands](grammar-docs.md#empty-bands)).
 - Do **not** score every morph. For each H2/H3, run the three questions, pick a band, move on.
 - When bands conflict, **dependency wins** over subjective difficulty.
 - Boundary cases needed early for reading examples → prefer the **earlier** band.
