@@ -24,18 +24,6 @@ Open review items moved out of the learner-facing pages under `docs/grammar/` (g
 | `plan-decision.md` | Consider whether plan/predict should be Beginner level |
 | `special-vocabulary.md` | Is the CAUSE section needed here, or should it move into `causation.md`? |
 
-## Content gaps (small)
-
-| Page | Item |
-|------|------|
-| `pronouns.md` | Give an example (special pronouns section) |
-| `pronouns.md` | Add a self-address example choosing some name |
-| `values.md` | Add a mnemonic column for which letter means what |
-| `vowel-series.md` | Explain stacks and how they relate to stacked **j** |
-| `why-agelan.md` | Choose a different opening example (the *I think* one) |
-| `why-agelan.md` | Separate the feature sections into short paragraphs with more natural wording |
-| `why-agelan.md` | Avoid giving exact Agelan forms in the feature overview; describe them and link to the grammar docs |
-
 ## Tooling / site
 
 | Page | Item |
@@ -44,4 +32,4 @@ Open review items moved out of the learner-facing pages under `docs/grammar/` (g
 
 ## Follow-ups from applied changes
 
-- **spans close flavors renamed** (`xuxur` truncated → editorial; `xuxun` reserved as proper close): the parser still uses the old names — update `SpanCloseFlavor` (`"truncated" | "sic"`) in `src/parse/types.ts` and regenerate `src/generated/word-parser.js` to match (`editorial`, `proper`).
+- ~~**spans close flavors renamed**~~ **done**: parser regenerated with `editorial` / `proper` (`SpanCloseFlavor` in `src/parse/types.ts`, `grammar/word.peggy`, `src/generated/word-parser.js`); typecheck and the full test suite pass.

@@ -468,24 +468,28 @@ Competence (`odolo`) and relatedness (`ogono`) shown for readability; same endin
 | | **-l** physical | **-m** mental | **-n** social | **-r** spiritual |
 |--|-----------------|---------------|---------------|------------------|
 | **xa** met | `wodoloxal` | `wodoloxam` | `wodoloxan` | `wodoloxar` |
+| mnemonic | touches the body | happens in the head | happens between people | reaches beyond the self |
 
 #### Motive — preference standing
 
 | | **-l** circumstantial | **-m** internal | **-n** habitual | **-r** protective |
 |--|----------------------|-----------------|-----------------|-------------------|
 | **xe** motive | `hogonoxel` | `hogonoxem` | `hogonoxen` | `hogonoxer` |
+| mnemonic | the situation’s doing | from inside me | just how I am | it guards something |
 
 #### Prescription — force
 
 | | **-l** bound | **-m** endorse | **-n** commit | **-r** invite |
 |--|--------------|----------------|---------------|----------------|
 | **xo** ought | `hogonoxol` | `hogonoxom` | `hogonoxon` | `hogonoxor` |
+| mnemonic | nailed on | I cheer it | I promise it | held out to you |
 
 #### Unmet — changeability
 
 | | **-l** irreversible | **-m** modifiable | **-n** proper | **-r** temporary |
 |--|---------------------|-------------------|---------------|------------------|
 | **xu** unmet | `hogonoxul` | `hogonoxum` | `hogonoxun` | `hogonoxur` |
+| mnemonic | fixed for good | could change | just how it is named | only right now |
 
 ### Boundaries
 

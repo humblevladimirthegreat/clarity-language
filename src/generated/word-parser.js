@@ -11,8 +11,8 @@
 
   function spanCloseFlavor(form) {
     if (form === "xuxul") return "complete";
-    if (form === "xuxur") return "truncated";
-    if (form === "xuxun") return "sic";
+    if (form === "xuxur") return "editorial";
+    if (form === "xuxun") return "proper";
     return "closeAll";
   }
 

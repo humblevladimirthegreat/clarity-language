@@ -51,7 +51,7 @@ export type NumberStem = {
 
 export type XFamily = "span" | "role" | "valueAbility" | "numeric" | "compound";
 
-export type SpanCloseFlavor = "complete" | "truncated" | "sic" | "closeAll";
+export type SpanCloseFlavor = "complete" | "editorial" | "proper" | "closeAll";
 
 export type WritingBracket = "[" | "{" | "(" | "<";
 

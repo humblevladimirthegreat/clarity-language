@@ -5,24 +5,30 @@
 ## Purpose
 <a id="purpose"></a>
 
-Agelan encodes psychological concepts and self-improvement techniques into vocabulary and grammar so that using the language nudges you toward better habits. For example, the word for *I think* can frame a clause as cognitive commentary without upgrading it to a world warrant — that split helps you notice when you are storying the scene rather than reporting how you know.
+Agelan encodes psychological concepts and self-improvement techniques into vocabulary and grammar so that using the language nudges you toward better habits. For example, a single word for *can’t* can say whether the block is only temporary, may still change, or will not — that split keeps a hard moment from hardening into a fixed identity about who you are.
 
 The design aims at three outcomes, in this order:
 
 ### Compassion
 <a id="compassion"></a>
 
-Support self-acceptance and acceptance of others, and make judgments visible when they arise. Examples: praise that names the need served, not vague *good*; compose *angry* / *anxious* as unmet need + activation + locus so the charge’s target stays audible; tag *can’t* as temporary, modifiable, or irreversible so a block is not a fixed identity.
+Support self-acceptance and acceptance of others, and make judgments visible when they arise.
+
+Praise can name the need a person’s work actually served instead of stopping at a vague *good*. A flash of anger or anxiety can be said as an unmet need plus its activation and where it sits, so the charge has an audible target rather than a blank label. And *can’t* comes in kinds: temporary, modifiable, or irreversible — a block never has to read as who someone is.
 
 ### Rationality
 <a id="rationality"></a>
 
-Surface common biases that make self-delusion easy. Examples: mark how you know a claim — memory, record, hearsay, pattern, inference, … — and keep *I think* as commentary, not a warrant; say whether a choice list is open or closed so two options are not smuggled as the only ones; keep habitual *always* as usual weather, not a law of nature; when the “must” is really an ought, stack values on the condition shape instead of upgrading a wish into natural law; name *whose left* so facing someone does not smuggle a shared frame.
+Surface common biases that make self-delusion easy.
+
+Claims can say how you know: memory, record, hearsay, pattern, inference. Choice lists can say whether they are open or closed, so two options cannot smuggle themselves in as the only ones. Habitual *always* stays weather-report rather than law of nature; when the “must” is really an ought, the sentence shows the value behind it instead of upgrading a wish into natural law; and left / right names whose facing counts, so instructing someone does not borrow their perspective unasked.
 
 ### Empowerment
 <a id="empowerment"></a>
 
-Support authentic choice by making reasons for action visible. Examples: name motive or prescription on a need instead of bare *should*; prefer numbered candidates over bare *the problem* / *the solution* / *the goal*, and reframe the same situation with paraphrase rather than a second digit; mark how revisable a pick is, and split what you mean to do from a forecast; name the judgment bar when ranking (*worse than Average* / *Mine* / …).
+Support authentic choice by making reasons for action visible.
+
+The motive or prescription behind an action can be named on the need it serves instead of collapsing into a bare *should*. Candidates can be numbered so *the problem* and *the solution* stay plural and revisable, and the same situation can be reworded rather than recounted as a second candidate. A decision can mark how revisable it is, a plan can stay separate from a forecast, and a ranking can name the bar it is measured against.
 
 
 **Why this order.** Rationality is hard without compassion first: lack of self-acceptance fuels motivated reasoning, so truth-seeking collapses into defense. Empowerment without rationality is foolish; without compassion it is antisocial; without both it is dangerous. So the stack is compassion → rationality → empowerment.
@@ -74,10 +80,10 @@ Agelan’s [values](values.md) name a closed inventory of **needs** (autonomy, c
 | Stance | Job |
 |--------|-----|
 | Topic (bare need) | Name the payoff without claiming met/unmet |
-| Met (`xa`) | This serves the need — endings mark **how you contact** the payoff (including gratitude / savoring) |
-| Motive (`xe`) | Acting *for* this need — endings mark where the reason stands |
-| Prescription (`xo`) | *Ought* to serve or protect this need — endings mark force (**-l** bound … **-r** invite) |
-| Unmet (`xu`) | Costs the need — endings mark how changeable that is |
+| Met | This serves the need — endings mark **how you contact** the payoff (including gratitude / savoring) |
+| Motive | Acting *for* this need — endings mark where the reason stands |
+| Prescription | *Ought* to serve or protect this need — endings mark force (bound … invite) |
+| Unmet | Costs the need — endings mark how changeable that is |
 
 Naming the need and your stance toward it helps you notice gratitude, motive, and oughts instead of collapsing them into vague *want* / *should* / *good*.
 
@@ -95,7 +101,7 @@ Composing emotion from need + activation + locus helps you ask for what would ac
 
 *I can’t* blurs temporary block, lasting incapability, and choice.
 
-[Ability](ability.md#ability) tags **can** / **can’t** on an activity or property with stance vowels — **`xa`** can; **`xe`** can’t right now; **`xo`** can’t but may change (speaker change unspecified); **`xu`** can’t as fixed — so a block is not a fixed identity. Endings stay ordinary literal / metaphorical / proper. Hostless *I can’t* uses a closed fallback root. *Won’t* stays ordinary refusal / choice packaging — not an ability vowel.
+[Ability](ability.md#ability) tags **can** / **can’t** on an activity or property with stance vowels — can; can’t right now; can’t but may change; can’t as fixed — so a block is not a fixed identity. Endings stay ordinary literal / metaphorical / proper. Hostless *I can’t* uses a closed fallback root. *Won’t* stays ordinary refusal / choice packaging — not an ability vowel.
 
 Tagging *can’t right now* vs *may yet* vs *impossible* helps you stop treating a temporary block as a fixed incapability; keep *won’t* off the ability morph so choice is not smuggled as can’t.
 
@@ -122,7 +128,7 @@ Splitting plan, prediction, and decision firmness helps you avoid treating a wis
 
 It is easy to present two options as if they were the only ones possible.
 
-[Joins](coordination.md) mark what kind of list you are building (inventory, exclusive choice, inclusive *and/or*, rank, …) and whether the listed items are the **only** ones in play (**closed `-l`**) or still open (**`-m`**). Soft or open forms leave room for unlisted alternatives.
+[Joins](coordination.md) mark what kind of list you are building (inventory, exclusive choice, inclusive *and/or*, rank, …) and whether the listed items are the **only** ones in play (**closed**) or still **open**. Soft or open forms leave room for unlisted alternatives.
 
 Saying whether a list is open or closed helps you notice False Dichotomies — and leaves room for options you have not named yet.
 
@@ -131,7 +137,7 @@ Saying whether a list is open or closed helps you notice False Dichotomies — a
 
 Everyday English *because* / *leads to* / *have to* blur sufficient vs necessary, world-reason vs speaker-grounds, and wish vs natural law.
 
-[Causation](causation.md) keeps those forks on existing joins and clause poles (`IF` / `IFF` / `BECAUSE`) — no single cause-arrow word. When the “rule” is really an ought (*hard work should earn promotion*), you stack [values](values.md) prescription or motive on the condition shape ([preference vs law](causation.md#preference-vs-law)) instead of upgrading a soft sufficient join into a fake law of nature.
+[Causation](causation.md) keeps those forks on existing joins and the *if* / *iff* / *because* clause poles — no single cause-arrow word. When the “rule” is really an ought (*hard work should earn promotion*), you stack [values](values.md) prescription or motive on the condition shape ([preference vs law](causation.md#preference-vs-law)) instead of upgrading a soft sufficient join into a fake law of nature.
 
 Keeping those forks apart helps you stop treating wishes and habits as if the world must obey them.
 
@@ -140,7 +146,7 @@ Keeping those forks apart helps you stop treating wishes and habits as if the wo
 
 Work talk often freezes on *the* problem / *the* solution, or ranks against an invisible yardstick.
 
-Prefer [numbered alternatives](special-vocabulary.md#numbered-alternatives) (`zubezul g#1`, `zegogel g#2`, …) so candidates stay plural and revisable. Reframe the same situation with paraphrase (**-m**, discourse revisers, or a paraphrase [span](spans.md)) rather than inventing a second digit. Scalar *worse than…* can name closed [judgment benchmarks](comparatives.md#judgment-benchmarks) (Average, Typical, Mine, …) so the bar you are using stays audible — including when the bar is only your own standard.
+Prefer [numbered alternatives](special-vocabulary.md#numbered-alternatives) so candidates stay plural and revisable. Reframe the same situation with softer wording, a discourse reviser, or a paraphrase [span](spans.md) rather than inventing a second digit. Scalar *worse than…* can name closed [judgment benchmarks](comparatives.md#judgment-benchmarks) (Average, Typical, Mine, …) so the bar you are using stays audible — including when the bar is only your own standard.
 
 Numbering candidates, paraphrasing, and naming the judgment bar help you keep choice and standards revisable instead of freezing on a single frame or a hidden bar.
 

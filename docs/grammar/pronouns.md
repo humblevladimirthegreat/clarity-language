@@ -42,11 +42,29 @@ Discourse-role forms (not letter/full-root **-r** from ordinary antecedents). Th
 | **Generic person** | **`enu`** | 👤 *silhouette* → *a person* | **-n** | `zenun` *someone* |
 | **Next clause** | **`odo`** | 🚪 *doorway* → *what follows* | **-l** | `bodol` / `dodol` — placeholder for the dependent that follows |
 
+```
+`zumogon vezebel dehadon.`
+
+gloss: `z-speaker` · `v-write` · `d-listener`
+
+*I write you.*
+```
+
 **Mnemonic:** mic / headphones / handshake name **roles in this utterance** (speech, writing, signing — any channel), not identity essence.
 
 **Endings.** Person roles default to **-n** (definite discourse roles). Soft **-m** hedges the role framing. **`odo`** defaults to **-l** (exact forward slot); soft **-m** hedges the subordination edge.
 
 **Prefer names.** When a proper name is available, use **-n** and/or its **-r** resume — including for self-address — rather than **`umogo`** / **`ehado`**. See [proper name](reference-suffix.md#proper-name--n). Usual named people in examples: **Azawan**, **Ulonun**, **Ubuzun** (`azawa` / `ulonu` / `ubuzu` + **-n**).
+
+Self-address works the same way: name yourself instead of reaching for the speaker role.
+
+```
+(Ulonun speaking) `zulonun vawul.`
+
+gloss: `z-Ulonun` · `v-walk`
+
+*I go.* — Ulonun names himself rather than saying *I*
+```
 
 
 ```
