@@ -51,13 +51,13 @@ Read **`docs/grammar/`** only, in band order. [why-agelan.md](../grammar/why-age
 11. [revisers.md](../grammar/revisers.md#beginner) · [restrictors.md](../grammar/restrictors.md#beginner)
 12. [spans.md](../grammar/spans.md#beginner)
 13. [numbers.md](../grammar/numbers.md#beginner) · [comparatives.md](../grammar/comparatives.md#beginner) · [causation.md](../grammar/causation.md#beginner)
-14. [values.md](../grammar/values.md#beginner) · [ability.md](../grammar/ability.md#beginner) · [commentary.md](../grammar/commentary.md#beginner) · [roles.md](../grammar/roles.md#beginner) · [x-compounds.md](../grammar/x-compounds.md#beginner)
+14. [values.md](../grammar/values.md#beginner) · [ability.md](../grammar/ability.md#beginner) · [commentary.md](../grammar/commentary.md#beginner) · [roles.md](../grammar/roles.md#beginner) · [x-compounds.md](../grammar/x-compounds.md#beginner) · [plan-decision.md](../grammar/plan-decision.md#beginner)
 
-Numbers Intermediate / Advanced and [numeric-derivation.md](../grammar/numeric-derivation.md) are **optional** — not required to finish a first dialogue corpus. [join-extras.md](../grammar/join-extras.md), [plan-decision.md](../grammar/plan-decision.md), and leftover [special-vocabulary.md](../grammar/special-vocabulary.md) start at Intermediate (no Beginner slot).
+Numbers Intermediate / Advanced and [numeric-derivation.md](../grammar/numeric-derivation.md) are **optional** — not required to finish a first dialogue corpus. [join-extras.md](../grammar/join-extras.md) and leftover [special-vocabulary.md](../grammar/special-vocabulary.md) start at Intermediate (no Beginner slot). [plan-decision.md](../grammar/plan-decision.md) **DECISION** is Intermediate; plan / predict is Beginner.
 
 ### Intermediate then Advanced
 
-15. Every peer’s **[Intermediate](../grammar/core.md#intermediate)** section (same dependency order as above is fine). Skip pages with no Intermediate (vowel-series). Numbers Intermediate, [numbers-applied.md](../grammar/numbers-applied.md#intermediate), and leftover join / plan / overlay pages belong here.
+15. Every peer’s **[Intermediate](../grammar/core.md#intermediate)** section (same dependency order as above is fine). Skip pages with no Intermediate (vowel-series). Numbers Intermediate, [numbers-applied.md](../grammar/numbers-applied.md#intermediate), leftover join / overlay pages, and [plan-decision.md](../grammar/plan-decision.md#intermediate) **DECISION** / forecast source belong here.
 16. Every peer’s **Advanced** section. Numbers Advanced and [numeric-derivation.md](../grammar/numeric-derivation.md) stay **optional**.
 
 Learner-facing reading order: site sidebar (**Suggested reading order**); banding notes: [introduction.md § How to learn](../grammar/introduction.md#how-to-learn).

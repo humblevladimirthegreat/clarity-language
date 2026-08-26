@@ -28,8 +28,8 @@ const readingOrder = [
   { text: 'Commentary', link: '/commentary' },
   { text: 'Roles', link: '/roles' },
   { text: 'x-compounds', link: '/x-compounds' },
-  { text: 'Join extras', link: '/join-extras' },
   { text: 'Plan / decision', link: '/plan-decision' },
+  { text: 'Join extras', link: '/join-extras' },
   { text: 'Special vocabulary', link: '/special-vocabulary' },
   { text: 'Numeric derivation', link: '/numeric-derivation' },
 ]

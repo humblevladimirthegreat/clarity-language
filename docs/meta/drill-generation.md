@@ -128,7 +128,7 @@ Path items joined with `·` are **co-located**, not ordered. Do **not** recycle 
 | 7 | `pronouns.md` · `plurality.md` |
 | 11 | `revisers.md` · `restrictors.md` |
 | 13 | `numbers.md` · `comparatives.md` · `causation.md` |
-| 14 | `values.md` · `ability.md` · `commentary.md` · `roles.md` · `x-compounds.md` |
+| 14 | `values.md` · `ability.md` · `commentary.md` · `roles.md` · `x-compounds.md` · `plan-decision.md` |
 
 Later path numbers **may** recycle both siblings (e.g. coordination Beginner may use pronouns **and** plurality Beginner).
 
@@ -227,6 +227,7 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 14 | `commentary.md` | **exists** | **COMMENT** **`uho`** + hold endings (**`huhom`** default); not a world warrant | Not evidentiality / NOTIONAL (Intermediate). Not **`jom`** (core Intermediate) unless you only recycle **`jol`** from core/questions Beginner |
 | 14 | `roles.md` | **exists** | Role compounds **`a`/`u`/`o` x ROOT`** (agent / patient / reltum); endings on the role word | Not viewpoint laterals (Intermediate). Not values/ability (vowel *right* of `x`). Not join-relations |
 | 14 | `x-compounds.md` | skip | — | map only |
+| 14 | `plan-decision.md` | **exists** | **PLAN** **`owaro`** map-resolution endings vs **PREDICT** **`edelo`** (bare) | Not **DECISION** (Intermediate). Not evidentiality stacked on PREDICT (Intermediate). Sibling COMMENT / values / ability unused unless the page contrast needs them |
 
 ### Intermediate then Advanced
 <a id="allowlist-later"></a>
@@ -271,7 +272,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 14 | `roles.md` | Intermediate | **exists** | Viewpoint laterals **`DIR x ANCHOR`**; name/listener anchor; bare spatial illegal | Prefer `…xazawan` over silent speaker default. **`ehado`/`umogo`** only when testing role-anchor |
 | 14 | `roles.md` | Advanced | skip | design notes | |
 | 15 | `join-extras.md` | Intermediate | **exists** | Join-act verbs `van` / `von` / …; join-relations `gan` / `han` / … (unary `/b/`) | No Beginner slot. Recycle = all Beginner + earlier Intermediate (path before 15), except optional numbers unless needed |
-| 15 | `plan-decision.md` | Intermediate | **exists** | **PLAN** **`owaro`** map-resolution endings vs **PREDICT** **`edelo`**; **DECISION** **`ehege`** changeability | Stack evidentiality on PREDICT only as the band shows |
+| 15 | `plan-decision.md` | Intermediate | **exists** | **DECISION** **`ehege`** changeability; evidentiality stacked on **PREDICT**; PLAN + DECISION stack | Recycle Beginner PLAN / PREDICT. Stack evidentiality on PREDICT only as the band shows. Join-act **`von`** only if already on this band |
 | 15 | `plan-decision.md` | Advanced | skip | design notes | |
 | 15 | `special-vocabulary.md` | Intermediate | **exists** | Emotion compose (ACT + LOCUS + a value); **CAUSE** **`erage`** **-m**; numbered alternatives `ubezu`/`egoge`/`ogalo` + `g#N` | Overlay *inventory* is not a drill. **Needs** values Beginner (recycle). Not universality (Advanced) |
 | 15 | `special-vocabulary.md` | Advanced | **exists** | Universality warrant (`ewono` / `ululu` / …) as on the band | 4–6 items |
@@ -307,7 +308,8 @@ First-taught checkpoint for forms agents leak most often. If this checkpoint’s
 | Viewpoint laterals | `roles.md` Intermediate |
 | Measure phrases / ranges / percent | `numbers-applied.md` Intermediate |
 | Join-act **`van`** / join-relation **`gan`** | `join-extras.md` Intermediate |
-| **PLAN** / **PREDICT** / **DECISION** | `plan-decision.md` Intermediate |
+| **PLAN** / **PREDICT** | `plan-decision.md` Beginner |
+| **DECISION** | `plan-decision.md` Intermediate |
 | Emotion compose; **CAUSE** **`erage`**; numbered alternatives | `special-vocabulary.md` Intermediate |
 | Judgment **Mine** **`zumogoxrawon`** | `comparatives.md` Advanced |
 | `ROOT x NUM` derivation | `numeric-derivation.md` Advanced |
