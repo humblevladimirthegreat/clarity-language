@@ -1,14 +1,14 @@
 # Phonology and phonotactics
 <a id="phonology"></a>
 
-How Agelan **sounds** and how syllables are built. Goals: easy to sing, spelling that shows pronunciation, and clear word boundaries (including inside compounds). This is the only grammar page that uses **IPA**. Grammar-design framing: [introduction.md](introduction.md#grammar-design). Fuller singability checklist: [Advanced](#singability-constraints).
+How Agalan **sounds** and how syllables are built. Goals: easy to sing, spelling that shows pronunciation, and clear word boundaries (including inside compounds). This is the only grammar page that uses **IPA**. Grammar-design framing: [introduction.md](introduction.md#grammar-design). Fuller singability checklist: [Advanced](#singability-constraints).
 
 ## Beginner
 <a id="beginner"></a>
 
 ### Why these sounds
 
-Agelan uses vowels that are not fully closed, so you can sing high and low without heavy vowel modification. Consonants prefer the **voiced** version so you can sustain a note across letters (voiceless stops the airflow briefly). You may still use unvoiced variants for style. Word shape keeps consonants at **onsets** and at the **word edge**, so held notes and quick singing do not fight mid-syllable stops — and the ending still marks where each word stops when rhythm eats pauses.
+Agalan uses vowels that are not fully closed, so you can sing high and low without heavy vowel modification. Consonants prefer the **voiced** version so you can sustain a note across letters (voiceless stops the airflow briefly). You may still use unvoiced variants for style. Word shape keeps consonants at **onsets** and at the **word edge**, so held notes and quick singing do not fight mid-syllable stops — and the ending still marks where each word stops when rhythm eats pauses.
 
 Singable vowels and clear edges — spelling shows the sound.
 
@@ -61,7 +61,7 @@ A content word has these parts, written as **one unbroken token**:
 
 Number words are a closed exception built on the PoS prefix plus an **r**-initial marker ([number-word exception](#number-word-exception)).
 
-**Writing:** write **role letter + root + ending** as one word (`zazawan`); native Agelan is **lowercase** only ([capitalization](core.md#capitalization)). Full orthography: [core.md § Orthography](core.md#orthography).
+**Writing:** write **role letter + root + ending** as one word (`zazawan`); native Agalan is **lowercase** only ([capitalization](core.md#capitalization)). Full orthography: [core.md § Orthography](core.md#orthography).
 
 **Roots** have form **V(CV)+** (vowel-initial; mid consonants are ordinary onsets). Compound roots are separated by mid-word **`x`**. A root does **not** end in a consonant — the only word-final consonants are the reference suffix (and optional plural **sh**). That keeps held notes on vowels inside the word.
 
@@ -105,7 +105,7 @@ Vowels are named by holding the vowel. Consonants take one CV syllable. Recite i
 | **n** | na (9) | **nu** | **a**↔**u** |
 | **z** | zo (0) | **ze** | **o**↔**e** |
 
-Three onsets are not digits. Their names follow the English letter-name, mapped onto Agelan vowels:
+Three onsets are not digits. Their names follow the English letter-name, mapped onto Agalan vowels:
 
 | Letter | Name | Mnemonic |
 |--------|------|----------|
@@ -121,9 +121,9 @@ Plural **-sh** is the [word-edge](#phonotactics) ending, not a letter name. Paus
 ### Singability constraints
 <a id="singability-constraints"></a>
 
-The Beginner rules above are the usable inventory. This checklist is the design filter behind them — what Agelan avoids so ordinary singing stays easy:
+The Beginner rules above are the usable inventory. This checklist is the design filter behind them — what Agalan avoids so ordinary singing stays easy:
 
-| Constraint | Why it helps | How Agelan keeps it |
+| Constraint | Why it helps | How Agalan keeps it |
 |------------|--------------|---------------------|
 | No fully closed vowels | Closed vowels shrink comfortable high range | Four mid-to-open vowels (/e̞ ʌ o ɑ/) |
 | No diphthongs | Glides force tract changes mid-note | Stacked letters = separate syllables (`juon` = *ju'on*) |
@@ -136,13 +136,13 @@ The Beginner rules above are the usable inventory. This checklist is the design 
 
 **Limited clusters (still legal):** left-bound **`gl-`**; number-word **`PoS+r`**; word-final **-lsh** / **-msh** / **-nsh** / **-rsh**. 
 
-**Try it:** sing a short Agelan line quickly at a high comfortable pitch, then compare a line that piles closed vowels, clusters, and mid-word stops:
+**Try it:** sing a short Agalan line quickly at a high comfortable pitch, then compare a line that piles closed vowels, clusters, and mid-word stops:
 
 `zazawan guzumum.`
 
 / za.za.wan ɡu.zu.mum /
 
-Versus (not Agelan — built to violate the constraints):
+Versus (not Agalan — built to violate the constraints):
 
 / seiɹ ˈʈʂuɹt tis ˈheb.ɡiɹn fuofts /
 

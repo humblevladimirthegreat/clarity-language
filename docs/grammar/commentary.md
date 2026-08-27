@@ -55,7 +55,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **Roots used here:** `azawa` / `ululo` / `uhubu` · `adaga` · `awala` · `elebe` · `uzune` · `urunu` · `eje` · `odoho`
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *I think Azawan walks.* (light commentary)
 
@@ -105,7 +105,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `jol zuhubun hodohom velebel.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zazawan hodohom vawalal.`
 
@@ -170,7 +170,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 | *hope / wish …* (intention) | motive (`xe`) and/or [**PLAN**](plan-decision.md#plan-predict) / soft force |
 | *believe …* | [evidentiality](#evidentiality) (`huvuvum`, `heraram`, …) |
 
-| Agelan | Reading |
+| Agalan | Reading |
 |---------|---------|
 | `zahal wolozoxur hogegal hagadel` | *I fear the get-together* — unmet competence; flood; room awash — no COMMENT |
 | `… howoram …` | *I hope to …* (intention) — sketch plan; no COMMENT |
@@ -199,7 +199,7 @@ First-person *I think* / rumination is [**COMMENT**](#comment) (`odoho`). *Belie
 
 Channel is a **root choice**, not `xa`/`xu` on the claim host. Stack with **PREDICT**, causation shapes, [universality](special-vocabulary.md#universality) **NATURAL**, other-minds content, ….
 
-| Agelan (schematic) | Reading |
+| Agalan (schematic) | Reading |
 |---------------------|---------|
 | `… huvuvum …` | *per memory / witnessed* (reconstructive) |
 | `… heregom …` | *on record / recorded* |
@@ -227,7 +227,7 @@ Ordinary content still available: `zuvuvul` *a memory*; `veregol` *to record*; `
 
 Idiom cue: *fish a boot* = retriedegu the wrong past (🥾 `abodo` *boot* stays free for the punchline).
 
-| English cue | Agelan |
+| English cue | Agalan |
 |-------------|---------|
 | *caused / predicted, inferred* | claim shape + **`hededem`** |
 | *caused / predicted from pattern*; *always by nature* + pattern | claim shape (+ **`hafafal`** if natural) + **`habawam`** |
@@ -286,7 +286,7 @@ Use NOTIONAL when the clause is **framed as pretensive / for-the-sake-of-argumen
 | notional **amount** / soft imaginary magnitude | free number forms (`grubul`, `grubum`, …) — [numbers.md](numbers.md#imaginary) |
 | quasi-*kind* (*quasi-friend*) | numeric derivation **`ROOTx-e-`** — [quasi](numeric-derivation.md#quasi) |
 
-| Agelan | Reading |
+| Agalan | Reading |
 |---------|---------|
 | `… hahadem zugobon vobohol.` | *as if I take the trophy* — soft notional frame |
 | `… hahader …` | notional frame *and* step back toward contact |
@@ -312,7 +312,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 **Roots used here:** `azawa` / `ululo` / `uhubu` · `adaga` · `awala` · `elebe` · `uzune` · `urunu` · `uwuru` · `odoho` · `uvuvu` · `erego` · `abawa` · `edede` · `erara` · `ehere` · `orolo` · `ahade`
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *I think Azawan walks.* (attitude — not how you know a world-claim)
 
@@ -362,7 +362,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `jom zuhubun hodohom velebel.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zazawan heherem vawalal.`
 

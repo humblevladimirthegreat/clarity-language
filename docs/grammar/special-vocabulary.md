@@ -18,7 +18,7 @@ Some published roots carry a **closed overlay reading** for a fixed PoS — the 
 
 When an opaque emotion word (*anxious*, *resentful*, *proud*, …) is doing **judgment or explahagetion** work, drop the emotion label and **compose** from pieces — value + activation + locus.
 
-| Piece | Agelan |
+| Piece | Agalan |
 |-------|---------|
 | Situation / judged host | ordinary NP / clause content |
 | Need + met / unmet (+ changeability) | ordinary [value](values.md) word on that host (`wolozoxur`, `wolozoxam`, …) |
@@ -57,7 +57,7 @@ Parallel INTERNAL / CIRCUM cues: *flood bottled* / *flow held* / *still in the v
 
 **Recipe:** neutral description + **one value ascription** + **one ACT** + **one LOCUS**.
 
-| Agelan | Reading |
+| Agalan | Reading |
 |---------|---------|
 | `zezebel wolozoxur hogegal hagadel` | *anxious about the dialogue* → dialogue costs competence (temporary); flood; room abawash (circumstantial) |
 | `zabawazal wonogoxum hogegal horurul` | *resentful about the division* → unmet relatedness; flood poured onto them |
@@ -92,7 +92,7 @@ Ordinary PoS still available (`zuzebul` *a puzzle piece*; `vagegol` *to unlock*;
 
 Prefer at least **`g#1`**; often name a second candidate. Soft **-m** on the number when the order is tentative.
 
-| English cue | Agelan |
+| English cue | Agalan |
 |-------------|---------|
 | `problem1` / `solution2` / `goal3` | `zuzebul g#1` / `zagegol g#2` / `zolalal g#3` |
 | *the problem* / *the solution* / *the goal* (ideation) | number candidates |
@@ -109,7 +109,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 **Roots used here:** `azawa` / `ululo` / `uhubu` · `olozo` *competence* · `onogo` *relatedness* · `ezebe` *dialogue* · `abawaza` *division* · `ebun` *draft* · `emome` *memo* · `ogega` HIGH · `ejelo` MED · `ozowo` LOW · `abobo` INTERNAL · `oruru` EXTERNAL · `agade` CIRCUM · `uzebu` *problem* · `agego` *solution* · `olala` *goal* · `ezehe` *tell*
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *Anxious about the dialogue* (competence at stake, temporary; flood; room abawash)
 
@@ -153,7 +153,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zazawan zagegol g#2 vezehel.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zebunem wolozoxam hejelol habobol.`
 
@@ -202,7 +202,7 @@ English *always* / *every* / *never* / *everyone* smuggle **how exceptionless** 
 
 **Three axes stay distinct:**
 
-| Axis | Agelan |
+| Axis | Agalan |
 |------|---------|
 | Domain (*who / when*) | `zual` / `hual` / SHARED kind — [universals](coordination.md#universals-domains-generics) |
 | Inventory softness | join **-l** / **-m** (`zual` vs `zuam`, `hual` vs `huam`) |
@@ -222,7 +222,7 @@ universal claims are **weather reports**. Default climate is usual weather — n
 
 Warrant is a **root choice**, not `xa`/`xu` on the quantifier host. Domain stays `zual` / `hual`; the mood **frames the claim**.
 
-| Agelan (schematic) | Reading |
+| Agalan (schematic) | Reading |
 |---------------------|---------|
 | `… hual … hewonol` | *always, usually* (default warrant) |
 | `… hual … habulul` | *always, as far as I’ve checked* (no counterexample comes to mind) |
@@ -231,7 +231,7 @@ Warrant is a **root choice**, not `xa`/`xu` on the quantifier host. Domain stays
 | `… hual … hebebel bahamal` | *always, under chess* |
 | `zuam gagadal … hewonol` | soft domain *every cat that comes to mind* + usual warrant |
 
-| English cue | Agelan |
+| English cue | Agalan |
 |-------------|---------|
 | *always / everyone / never, usually* | domain fence (`hual` / `zual` / `hal` / …) + **`hewonol`** |
 | *always / never, as far as I’ve checked* | domain fence + **`habulul`** |
@@ -259,7 +259,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 **Roots used here:** `azawa` / `ululo` / `uhubu` · `ewono` COMMON · `abulu` UNCOUNTERED · `idido` FORMAL · `afafa` NATURAL · `ebebe` RULE · `ahama` *chess* · `ezuda` *square* · `agada` *cat* · `adaga` *dog* · `abogo` *book* · `edege` *teacher* · `awala` *walk* · `uzune` *sing* · `elebe` *sleep* · `aju` *sit* · `eje` *see* · `urunu` *run* · `abawa` evidential *pattern*
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *Azawan always walks, usually.*
 
@@ -297,7 +297,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 `zuam gagadal hewonol.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zululon hual vurunul hewonol.`
 

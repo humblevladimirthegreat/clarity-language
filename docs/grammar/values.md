@@ -168,7 +168,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `edege` *teacher* · `abogo` *book* · `ohohu` *house* · `awala` *walk* · `ezehe` *tell* · `uzune` *sing* · `aweru` *gift* · `azudo` *meeting* · `alodo` *autonomy* · `olozo` *competence* · `onogo` *relatedness* · `awero` *pleasure* · `uhuhe` *survival* · `ega` *unspecified need*
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *Pleasure (as a topic).*
 
@@ -218,7 +218,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zuhubun vuzunel huzuhuxol.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `hawerol.`
 
@@ -327,7 +327,7 @@ Prefer **-m** on **`xu` / `xe` / `xo`** when that table’s dimension is unclear
 
 ### More examples
 
-| Agelan | Reading |
+| Agalan | Reading |
 |---------|---------|
 | `… wuzuhuxam` | survival met; **mental** channel |
 | `… waweroxar` | pleasure met; **spiritual** step-back |
@@ -348,7 +348,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `abogo` *book* · `ohohu` *house* · `awala` *walk* · `ezehe` *tell* · `uzune` *sing* · `uwuru` *write* · `aju` *sit* · `aweru` *gift* · `azudo` *meeting* · `alodo` *autonomy* · `olozo` *competence* · `onogo` *relatedness* · `awero` *pleasure* · `uhuhe` *survival* · **`hual`** (*always*)
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *Azawan tells for relatedness (internal reason).*
 
@@ -398,7 +398,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zuhubun vezehel honogoxom.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zazawan vezehel honogoxem.`
 
@@ -499,7 +499,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `ezehe` *tell* · `edege` *teacher* · `azudo` *meeting* · `olozo` *competence* · `onogo` *relatedness* · `awero` *pleasure*
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *Azawan tells — competence met (physical) and relatedness as internal motive.*
 
@@ -531,7 +531,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 `zazawan gedegel honogoxum.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zazawan vezehel holozoxal honogoxem.`
 

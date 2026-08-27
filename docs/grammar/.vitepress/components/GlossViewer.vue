@@ -25,13 +25,13 @@ const ipaPreview = computed(() => ipaFor(text.value))
 
 <template>
   <div class="viewer">
-    <label class="sr-only" for="gloss-input">Agelan text</label>
+    <label class="sr-only" for="gloss-input">Agalan text</label>
     <textarea
       id="gloss-input"
       v-model="text"
       rows="4"
       spellcheck="false"
-      placeholder="Paste Agelan…"
+      placeholder="Paste Agalan…"
       :disabled="status !== 'ready'"
     />
     <div class="speak-bar">
@@ -39,10 +39,10 @@ const ipaPreview = computed(() => ipaFor(text.value))
         type="button"
         class="btn"
         :disabled="status !== 'ready'"
-        aria-label="Speak Agelan"
+        aria-label="Speak Agalan"
         @click="speakText(text)"
       >
-        {{ busy ? 'Stop' : 'Speak Agelan' }}
+        {{ busy ? 'Stop' : 'Speak Agalan' }}
       </button>
       <div v-if="spokenPreview" class="spoken">
         <p class="preview">{{ spokenPreview }}</p>
@@ -68,7 +68,7 @@ const ipaPreview = computed(() => ipaFor(text.value))
       join, span fence, or <code>^</code> to inspect the construction. Pin or press Enter for the
       full breakdown beside the stream. Copy uses the romanized surface form (not English). Arrow
       keys walk words; <kbd>g</kbd> opens Why; <kbd>s</kbd> speaks the selection; <kbd>Esc</kbd>
-      closes the card. Speak Agelan expands number shorthand and span brackets; Show IPA
+      closes the card. Speak Agalan expands number shorthand and span brackets; Show IPA
       transcribes the spoken forms (not the writing shorthand). Foreign
       <code>&lt;&gt;</code> interiors and compact loans are still skipped.
     </p>

@@ -41,11 +41,11 @@ These are **content verbs**, not VP soft-packaging joins. Soft packaging (includ
 
 **Key contrasts** (English near-misses):
 
-| | Agelan | Gloss |
+| | Agalan | Gloss |
 |--|---------|--------|
 | refuse vs exclude | `zugobon demadel vun` vs `zugobon demadel vuan` | *I refuse meat* vs *I exclude meat* |
 | exclude vs anything but | `zugobon debanul vuan` vs `zugobon debanul vuon` | *I exclude nuts* vs *I bar nuts (anything else is fine)* |
-| one choice vs open picks | `zugobon dalenal von` vs `zugobon dalenal vaon` | *I choose that path (only)* vs *I pick that path (more may come)* |
+| one choice vs open picks | `zugobon dalanel von` vs `zugobon dalanel vaon` | *I choose that path (only)* vs *I pick that path (more may come)* |
 | prioritize vs try | `zugobon damugal ven` vs `zugobon damugal voen` | *I prioritize the fix* vs *I try the fix* |
 | *and then* (clauses) | `SENT₁ SENT₂ xan` | *SENT₁ and then SENT₂* — use clause soft **-n**, not `van` |
 
@@ -80,17 +80,17 @@ These are **not** phrase named-list joins and **not** [restrictors](restrictors.
 | **`guan` / `huan`** | *without / excluding* | *excluding* | `zubarol guan bebanul`; `… huan bebanul vuvazel` |
 | **`guon` / `huon`** | *open to anything but* (X barred; rest free) | *barring / anything but* | `zugolal guon bebanul`; `… huon bebanul vedonem` |
 | **`gen` / `hen`** | *prioritizing / headed by* | *prioritizing* | `zuzebul gen bugujul`; `… hen bugujul vamugal` |
-| **`gaen` / `haen`** | *on a par with* | *equating / tying* | `zalenal gaen badogal`; `… haen bagegolsh vezagel` |
-| **`goen` / `hoen`** | *for trying / trial of* | *trying* | `zalenal goen bamugal`; `… hoen bamugal vedabul` |
+| **`gaen` / `haen`** | *on a par with* | *equating / tying* | `zalanel gaen badogal`; `… haen bagegolsh vezagel` |
+| **`goen` / `hoen`** | *for trying / trial of* | *trying* | `zalanel goen bamugal`; `… hoen bamugal vedabul` |
 | **`guen` / `huen`** | *deprioritizing / trailing* | *deprioritizing* | `zugolal guen bodugul`; `… huen bodugul vemedel` |
 
 **Key contrasts:**
 
-| | Agelan | Gloss |
+| | Agalan | Gloss |
 |--|---------|--------|
 | refuse vs exclude | `bemadel gun` vs `bemadel guan` | *anti-meat* vs *without meat* |
 | exclude vs anything but | `bebanul guan` vs `bebanul guon` | *without nuts* vs *open to anything but nuts* |
-| sole vs open pick | `balenal gon` vs `balenal gaon` | *path-only* vs *path among options* |
+| sole vs open pick | `balanel gon` vs `balanel gaon` | *path-only* vs *path among options* |
 | prioritize vs try | `bamugal gen` vs `bamugal goen` | *fix-first* vs *try-the-fix* |
 | relation vs reviser | `zahadal gan bazawan` vs `zahadal al zazawan` | PP-like *team including Azawan* vs slot-repair *team, including Azawan* |
 | stock AP label | `g{primary colors}` / mention span | content *including* needs `/b/` (`gan b-…`) |
@@ -105,7 +105,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 **Roots used here:** `azawa` / `ululo` / `uhubu` (house names); `abele` *apple*; `adeda` *tea*; `ugabe` *topping*; `ule` *lie*; `ebanu` *nuts*; `ogove` *coffee*; `uguju` *bug*; `agego` *candidate*; `amuga` *fix*; `ubaro` *cake*; `ugola` *drink*; `ahada` *team*; `awala` *walk*.
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *Azawan includes an apple.*
 
@@ -149,7 +149,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zazawan dugabel vaon.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zululon dulel vun.`
 

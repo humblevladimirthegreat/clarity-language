@@ -1,7 +1,7 @@
 {
   "name": "clarity-language",
   "version": "0.1.0",
-  "description": "Agelan tooling — lexicon helpers and agent-facing docs",
+  "description": "Agalan tooling — lexicon helpers and agent-facing docs",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

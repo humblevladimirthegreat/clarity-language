@@ -3,7 +3,6 @@ Conceptual metaphor (growth mindset) for failure
 Consider reserving two syllable words for special
 consistently use role compound for words (teacher derived from teach, not separate root)
 limit deployments to tagged releases
-mention the number mnemonic system
 
 ## Evidentiality / tense
 
@@ -49,4 +48,4 @@ long term:
 https://main.d2xds94zsgwptg.amplifyapp.com
 -local llm systematically review entire lexicon
 -vocab flashcard generator/system — [docs/proposals/vocab-flashcards.md](docs/proposals/vocab-flashcards.md)
--speech to text (phoneme ASR, no Agelan corpus) — [docs/proposals/learner-stt.md](docs/proposals/learner-stt.md)
+-speech to text (phoneme ASR, no Agalan corpus) — [docs/proposals/learner-stt.md](docs/proposals/learner-stt.md)

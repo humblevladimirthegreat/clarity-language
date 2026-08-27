@@ -323,7 +323,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `olove` *love* · `eregu` *truth* · `aha` *friend* (kind, as on this band) · `bule` *duty* · `ezebe` *dialogue* · `omo` *effect* · `egabe` *edition* · `adoma` *specimen* · `eva` *fear* · `ezehu` *score* · `eje` *see* · `ezehe` *tell* · `uwuru` *write*
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *Azawan sees the essence of love.*
 
@@ -355,7 +355,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 `zululon vuwurul degabexrewol.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zazawan vejel zevaxrubal.`
 

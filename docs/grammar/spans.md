@@ -5,7 +5,7 @@ Package wording (cite / aside / mention / opaque) with a PoS, TYPE, EDGE, and en
 ## Beginner
 <a id="beginner"></a>
 
-English marks special wording with quotes, parentheses, and italics. Agelan does it with **span fences**: a PoS letter plus a bracket pair in writing (or open / close words in speech). The bracket shape tells you the **type** — cite, mention, aside, or opaque.
+English marks special wording with quotes, parentheses, and italics. Agalan does it with **span fences**: a PoS letter plus a bracket pair in writing (or open / close words in speech). The bracket shape tells you the **type** — cite, mention, aside, or opaque.
 
 ### Writing vs speech
 <a id="writing-vs-speech"></a>
@@ -58,9 +58,9 @@ gloss: `j-ask` · `z-he` · `d-[=]` · `v-said`
 Use a span when:
 
 - citing someone’s words, a title string, or a proverb **as wording** (**cite**)
-- mid-sentence parenthetical digression (**aside** — open **`h(…)`**; interior is ordinary Agelan, often a fragment)
+- mid-sentence parenthetical digression (**aside** — open **`h(…)`**; interior is ordinary Agalan, often a fragment)
 - talking about the word or form itself, or *the saying / title X* as a named unit (**mention**; prefer **`@`** / **-n** for the named-unit reading)
-- foreign, code, or other surface Agelan does **not** parse as native content (**opaque**)
+- foreign, code, or other surface Agalan does **not** parse as native content (**opaque**)
 - referring back to a prior span (**anaphor** **-r** / `…[=]`)
 
 | Reading | Use |
@@ -98,7 +98,7 @@ gloss: `j-command` · `z-listener` · `v-[sing]` · `d-speaker`
 
 An **aside** is a parenthetical comment packaged as an **adverb**. Write **`h(`** … **`)`**. The outer slot is `/h/`, so the whole fence sits anywhere an adverb may sit.
 
-The interior is ordinary Agelan. It does **not** have to be a full sentence:
+The interior is ordinary Agalan. It does **not** have to be a full sentence:
 
 | Interior | Example | Reading |
 |----------|---------|---------|
@@ -142,7 +142,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **Roots used here:** `azawa` / `ululo` / `uhubu` · `ezehe` *tell* · `uwuru` *write* · `uzune` *sing* · `eje` *see* · `awala` *walk* · `elebe` *sleep* · `uzumu` *happy* (**-m**) · `adaga` *dog* · `agada` *cat* · `abogo` *book* · `elulu` *blue* · `edege` *teacher*
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *Azawan said “hi.”*
 
@@ -198,7 +198,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zazawan vawalal h(zululon velebel).`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zululon d[=] vezehel.`
 
@@ -209,7 +209,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **2.** `zazawan d<sushi> vejel.`
 
 ::: details Show answer
-*Azawan saw sushi.* (opaque surface — not parsed as Agelan, and not a compact loan word)
+*Azawan saw sushi.* (opaque surface — not parsed as Agalan, and not a compact loan word)
 :::
 
 **3.** `zuhubun d{abogo} vezehel.`
@@ -287,7 +287,7 @@ Only **a** / **e** / **o** / **u** on TYPE. No stacked vowels on TYPE.
 | **a** | **cite** — cited wording; clausal interiors: outer speaker does **not** assert | `[` … `]` | **a** additive → cite |
 | **e** | **aside** — `/h/` digression; outer speaker **does** assert; interior may be a fragment or a same-force clause body | `h(` … `)` | **e** rank → aside |
 | **o** | **mention** — the word or form as object; with **-n**, named unit | `{` … `}` | **o** choice → mention |
-| **u** | **opaque** — foreign / code / raw blob; interior is not native Agelan | `<` … `>` | **u** negation → opaque |
+| **u** | **opaque** — foreign / code / raw blob; interior is not native Agalan | `<` … `>` | **u** negation → opaque |
 
 A native office **handle** refers with ordinary **-n** (`zedulon`) — [named handles](reference-suffix.md#named-handles). Mention `{edulo}` is that **form**; opaque / compact loan is a **foreign** acronym’s surface (`z<FBI>n`).
 
@@ -410,7 +410,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 **Roots used here:** `azawa` / `ululo` / `uhubu` · `ezehe` *tell* · `eje` *see* · `urunu` *run* · `arede` *red* · `adaga` *dog* · `agada` *cat* · `abogo` *book* · `elulu` *blue* · `uzumu` *happy* (**-m**) · `edulo` (handle **Edulo**)
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *Azawan said “hi.”* (spoken atomic cite)
 
@@ -472,7 +472,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zazawan d{edulo} vezehel.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zazawan daxel hi.`
 
@@ -624,7 +624,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 **Roots used here:** `azawa` / `ululo` / `uhubu` · `ezehe` *tell* · `uzumu` *happy* (**-m**)
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *Azawan said “hi…”* (the cite trails off)
 
@@ -650,7 +650,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 `zazawan d[ he typed d<]> then left ] vezehel.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zazawan d[hi#] vezehel.`
 

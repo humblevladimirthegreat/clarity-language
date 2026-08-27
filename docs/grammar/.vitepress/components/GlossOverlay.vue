@@ -464,7 +464,7 @@ onBeforeUnmount(() => {
   <div ref="overlayRef" class="overlay" tabindex="0" @keydown="onKey">
     <p
       class="stream"
-      aria-label="Agelan tokens"
+      aria-label="Agalan tokens"
       @pointerdown="onPointerDown"
       @pointermove="onPointerMove"
       @mouseup="onStreamMouseUp"

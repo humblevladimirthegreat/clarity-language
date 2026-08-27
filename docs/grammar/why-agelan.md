@@ -1,11 +1,12 @@
-# Why Agelan
+# Why Agalan
 <a id="why-agelan"></a>
+<a id="why-agalan"></a>
 <a id="design-methods"></a>
 
 ## Purpose
 <a id="purpose"></a>
 
-Agelan encodes psychological concepts and self-improvement techniques into vocabulary and grammar so that using the language nudges you toward better habits. For example, a single word for *can’t* can say whether the block is only temporary, may still change, or will not — that split keeps a hard moment from hardening into a fixed identity about who you are.
+Agalan encodes psychological concepts and self-improvement techniques into vocabulary and grammar so that using the language nudges you toward better habits. For example, a single word for *can’t* can say whether the block is only temporary, may still change, or will not — that split keeps a hard moment from hardening into a fixed identity about who you are.
 
 The design aims at three outcomes, in this order:
 
@@ -36,9 +37,9 @@ The motive or prescription behind an action can be named on the need it serves i
 ## Limits
 <a id="limits"></a>
 
-Agelan encodes psychological concepts and techniques, but it is **not therapy, counseling, or medical advice**, and it is not a substitute for professional care when you need it.
+Agalan encodes psychological concepts and techniques, but it is **not therapy, counseling, or medical advice**, and it is not a substitute for professional care when you need it.
 
-The design *aims* at compassion, rationality, and empowerment, and prefers research when it exists ([feature criteria](#criterion-for-features)). That is design intent — **not a claim** that speaking or studying Agelan has been shown to improve mental health or other outcomes.
+The design *aims* at compassion, rationality, and empowerment, and prefers research when it exists ([feature criteria](#criterion-for-features)). That is design intent — **not a claim** that speaking or studying Agalan has been shown to improve mental health or other outcomes.
 
 The language is currently in **beta**: grammar, lexicon, and these docs can change as the design settles.
 
@@ -47,7 +48,7 @@ The language is currently in **beta**: grammar, lexicon, and these docs can chan
 
 Unhelpful thoughts are often automatic — catastrophizing a small setback into “my life is ruined,” treating two options as the only ones, or labeling a feeling as *anger* without naming what need is unmet. Healthier framings exist, but they are hard to reach in the moment.
 
-Agelan puts those framings into ordinary words and optional morphology. When you speak or think in the language, the helpful distinction is already sitting in the sentence shape.
+Agalan puts those framings into ordinary words and optional morphology. When you speak or think in the language, the helpful distinction is already sitting in the sentence shape.
 
 ## Criterion for features
 <a id="criterion-for-features"></a>
@@ -75,7 +76,7 @@ How the aims show up in vocabulary and grammar — orientation only; learn the f
 
 English often collapses *I want*, *I need*, *I should*, and *this is good for me* — so gratitude, motive, and ought blur together.
 
-Agelan’s [values](values.md) name a closed inventory of **needs** (autonomy, competence, relatedness, pleasure, survival, or unspecified) and how you relate to them:
+Agalan’s [values](values.md) name a closed inventory of **needs** (autonomy, competence, relatedness, pleasure, survival, or unspecified) and how you relate to them:
 
 | Stance | Job |
 |--------|-----|
@@ -92,7 +93,7 @@ Naming the need and your stance toward it helps you notice gratitude, motive, an
 
 Opaque labels (*angry*, *anxious*, *proud*) hide which need is in play and what to ask for.
 
-Agelan [composes emotion](special-vocabulary.md#emotion-compose) from pieces: a [value](values.md) (often unmet or met) plus activation (flood / stir / …) plus locus (where it shows). Raw sensation without judgment can stay unlabeled; compose when the English emotion word would have done evaluative work.
+Agalan [composes emotion](special-vocabulary.md#emotion-compose) from pieces: a [value](values.md) (often unmet or met) plus activation (flood / stir / …) plus locus (where it shows). Raw sensation without judgment can stay unlabeled; compose when the English emotion word would have done evaluative work.
 
 Composing emotion from need + activation + locus helps you ask for what would actually help instead of stopping at the label.
 
@@ -119,7 +120,7 @@ Marking the channel (and separating *I think* from world-warrant) helps you catc
 
 English *will* smuggles plan and prediction together, and it is easy to talk as if the future were already known — a certain prediction that fuels anxiety or overconfidence — while a pick often sounds more locked than it is.
 
-Agelan splits them: [PLAN](plan-decision.md#plan-predict) for what you mean to do (endings = how drawn the intention map is — sketch / itinerary / fork); [PREDICT](plan-decision.md#plan-predict) for a forecast, usually stacked with [evidentiality](commentary.md#evidentiality) for *how* you forecast (pattern, inference, …) rather than bare certainty. [DECISION](plan-decision.md#decision) marks how revisable a pick is — same changeability map as unmet values (**-l / -m / -r**) — without replacing the choosing act or the plan’s map resolution.
+Agalan splits them: [PLAN](plan-decision.md#plan-predict) for what you mean to do (endings = how drawn the intention map is — sketch / itinerary / fork); [PREDICT](plan-decision.md#plan-predict) for a forecast, usually stacked with [evidentiality](commentary.md#evidentiality) for *how* you forecast (pattern, inference, …) rather than bare certainty. [DECISION](plan-decision.md#decision) marks how revisable a pick is — same changeability map as unmet values (**-l / -m / -r**) — without replacing the choosing act or the plan’s map resolution.
 
 Splitting plan, prediction, and decision firmness helps you avoid treating a wishful or “certain” forecast as settled fact (or as a commitment), and a revisable pick as locked foredegur.
 
@@ -176,18 +177,18 @@ This section addresses common criticisms regarding the use of language to influe
 ### Can a language change how you think?
 <a id="sapir-whorf-hypothesis"></a>
 
-Some don’t beliedegu it is possible for a language to influence the speaker’s thoughts (the weak Sapir-Whorf Hypothesis). I make no claims here about whether it happens for natural languages, but for Agelan specifically, I give the following argument:
+Some don’t beliedegu it is possible for a language to influence the speaker’s thoughts (the weak Sapir-Whorf Hypothesis). I make no claims here about whether it happens for natural languages, but for Agalan specifically, I give the following argument:
 
 1. The way a concept is framed (phrased) affects how people think about it (a well-established phenomenon in [psychology](https://en.wikipedia.org/wiki/Framing_effect_\(psychology\)) and the [social sciences generally](https://en.wikipedia.org/wiki/Framing_\(social_sciences\)))
-2. Agelan’s vocabulary and grammar ensures particular frames for certain concepts (using the design laid out on this page and in the linked grammar docs).
-3. Therefore, Agelan influences how speakers think.
+2. Agalan’s vocabulary and grammar ensures particular frames for certain concepts (using the design laid out on this page and in the linked grammar docs).
+3. Therefore, Agalan influences how speakers think.
 
 ### Ethical Considerations
 <a id="ethical-considerations"></a>
 
 Some are reminded of Newspeak from 1984, where a totalitarian government alters the language to influence the populace into being more compliant. What makes Newspeak unethical is that the language is forced upon an unwitting populace.
 
-For Agelan and similar languages, as long as using the language is voluntary, and the speaker knows how the language influences their thoughts (and the language delivers on those promises), then it is morally good. Learning the language is comparable to enrolling in a self-help course to influence their thought patterns — clearly ethical if it influences the person in the healthy way they desire.
+For Agalan and similar languages, as long as using the language is voluntary, and the speaker knows how the language influences their thoughts (and the language delivers on those promises), then it is morally good. Learning the language is comparable to enrolling in a self-help course to influence their thought patterns — clearly ethical if it influences the person in the healthy way they desire.
 
 It should also be noted that language influences but does not determine thought. Speakers that wish to think/communicate in a way discouraged by the language are still capable of doing so (though the sentences will likely be longer).
 
@@ -203,4 +204,4 @@ Even if the language does lose its potency over a century, having a positive imp
 ## Next
 <a id="next"></a>
 
-Continue with [introduction.md](introduction.md) for the name, grammar design, and how to learn these docs, then [core.md](core.md#beginner) for clause shape. Community updates: [Agelan on Reddit](https://www.reddit.com/r/ClarityLanguage).
+Continue with [introduction.md](introduction.md) for the name, grammar design, and how to learn these docs, then [core.md](core.md#beginner) for clause shape. Community updates: [Agalan on Reddit](https://www.reddit.com/r/ClarityLanguage).

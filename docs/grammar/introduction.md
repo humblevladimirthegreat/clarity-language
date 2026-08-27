@@ -1,13 +1,13 @@
-# Introduction to Agelan
+# Introduction to Agalan
 
-**Agelan** (`agela` + proper **-n**) translates to English *clarity*.
+**Agalan** (`agala` + proper **-n**) translates to English *clarity*.
 
 What the language is called, how these docs work, and what “good grammar design” means here. Psychological purpose and feature criteria: [why-agelan.md](why-agelan.md). Core clause grammar starts in [core.md](core.md).
 
 ## Purpose (short)
 <a id="purpose"></a>
 
-Agelan encodes psychological distinctions into vocabulary and grammar so ordinary speech can nudge **compassion → rationality → empowerment**.
+Agalan encodes psychological distinctions into vocabulary and grammar so ordinary speech can nudge **compassion → rationality → empowerment**.
 
 ## Grammar design
 <a id="grammar-design"></a>
@@ -17,7 +17,7 @@ Two supporting goals sit beside the psychology:
 - **Unambiguous but usable** — so tutoring and other tools can rely on the parse without making ordinary speech hard.
 - **Singable phonology** — syllable shape chosen to be easy to sing.
 
-Agelan keeps three kinds of clarity in ordinary speech:
+Agalan keeps three kinds of clarity in ordinary speech:
 
 **Syntactic.** In a clause, every content word begins with a letter that names its job (subject, object, verb, …), so role does not depend on guessing from English-style word class. Default order is Subject–Object–Verb, but free order is safe because that first letter is authoritative. Outside a sentence, the bare root with its final letter names the thing by itself.
 

@@ -1,19 +1,19 @@
 # Gloss guidelines
 
-How to write **glosses** in Agelan docs and examples. Design authority for morphology stays in the linked grammar pages; this page standardizes the **reading aid** only.
+How to write **glosses** in Agalan docs and examples. Design authority for morphology stays in the linked grammar pages; this page standardizes the **reading aid** only.
 
 ## Goals
 
-A gloss should answer: *what is each Agelan piece doing in the clause — in English labels?*
+A gloss should answer: *what is each Agalan piece doing in the clause — in English labels?*
 
 | Goal | Gloss does | Gloss does not |
 |------|------------|----------------|
-| Slot + sense | Show PoS letter and the **active English sense** | Quote Agelan phonology (`ugobo`, `uzumu`, …) |
+| Slot + sense | Show PoS letter and the **active English sense** | Quote Agalan phonology (`ugobo`, `uzumu`, …) |
 | Separate senses | Treat literal / metaphorical / proper / overlay as **different English roots** | Chain etymology (`microphone→speaker`) |
 | Endings | Drop **-l** / **-m** / **-n** when they only pick which sense-root applies | Repeat those endings after a sense that already encodes them |
-| Structure | Keep mid-word `x` pieces, **-sh**, and binding visible | Invent full English syntax for Agelan structure |
+| Structure | Keep mid-word `x` pieces, **-sh**, and binding visible | Invent full English syntax for Agalan structure |
 | Binding | Point **-r** (and span anaphors) at the antecedent when known | Collapse to English *he* / *she* / *it* |
-| Underspecification | Keep vague Agelan vague (`someone`, bare joins) | Sharpen into a specific English claim |
+| Underspecification | Keep vague Agalan vague (`someone`, bare joins) | Sharpen into a specific English claim |
 | Separation | Stay word-aligned | Replace the free English line |
 
 **Free English** (italic line / table “Gloss” in grammar pages) answers *what would you say naturally?* — idiomatic paraphrase, tone, and discourse flow. Do not merge free English into the morph gloss. Default free English is **loose** ([strict vs loose](#strict-vs-loose-free-english)).
@@ -23,7 +23,7 @@ A gloss should answer: *what is each Agelan piece doing in the clause — in Eng
 | Layer | Where | Form |
 |-------|--------|------|
 | **Morph gloss** | Dialogue turns, worked examples, teaching lines | Word-aligned pieces joined with ` · ` (below) |
-| **Free English (loose)** | Same places, under or beside the morph gloss — **default** when only one free line | Natural paraphrase (*…*); drop Agelan packaging English doesn’t mark |
+| **Free English (loose)** | Same places, under or beside the morph gloss — **default** when only one free line | Natural paraphrase (*…*); drop Agalan packaging English doesn’t mark |
 | **Free English (strict)** | Optional second free line (or alone when teaching packaging) | Keeps join packaging, value endings, evidential tags, cast letters, …; teaching dialogues may show **both** labeled `strict:` / `loose:` |
 | **Grammar-table gloss** | Inventory / contrast tables in grammar docs | Short free English (often *italic*); optional parenthetical notes — loose unless the row teaches packaging |
 | **Lexicon fields** | `lexicon-published.csv` / overlays | Literal / metaphorical / mnemonic / definition — **inputs** to morph glosses, not utterance glosses |
@@ -35,15 +35,15 @@ Grammar tables may keep a column named **Gloss** for free English. When a table 
 
 | Layer | Job |
 |-------|-----|
-| **Morph** | Keep Agelan structure (PoS, binding, join job, stance tags, …) |
+| **Morph** | Keep Agalan structure (PoS, binding, join job, stance tags, …) |
 | **Loose free** | Idiomatic English claim — default when a page shows one free line |
-| **Strict free** | Same claim with Agelan packaging spelled out in English — use alone for packaging lessons, or **with** loose in teaching dialogues (e.g. [rainy evening](../examples/rainy-evening-dialogue.md)) |
+| **Strict free** | Same claim with Agalan packaging spelled out in English — use alone for packaging lessons, or **with** loose in teaching dialogues (e.g. [rainy evening](../examples/rainy-evening-dialogue.md)) |
 
 **Loose** drops distinctions English doesn’t mark; morph already carries them. **Keep** in loose only what changes the English sentence (who / what / polarity / negation; force English can say; stance that changes the verb; comparative / causal / plan content when that is the point).
 
 ### Drop in loose
 
-| Agelan distinction | Loose free does |
+| Agalan distinction | Loose free does |
 |---------------------|-----------------|
 | Cast / letter anaphors (`zuzur` + “(A)”) | Ordinary *I / you / he / she / they*, or a **name** once known |
 | Role metalanguage (`speaker`, `listener`, `interlocutors`) | *I / you / we* |
@@ -64,9 +64,9 @@ Grammar tables may keep a column named **Gloss** for free English. When a table 
 - Stance that changes the verb (*can't* vs *ought not* vs unmet need as content)
 - Comparatives / equatives / causation / plan when they are the point of the turn
 
-### Example (same Agelan, three readings)
+### Example (same Agalan, three readings)
 
-Agelan: `jol duber dadedal dogovel dol von.`
+Agalan: `jol duber dadedal dogovel dol von.`
 
 ```
 gloss: `j-question` · `d-←Ubenaxuzonun` · `d-tea` · `d-coffee` · `d-or-exactly-one` · `v-choose`
@@ -77,9 +77,9 @@ gloss: `j-question` · `d-←Ubenaxuzonun` · `d-tea` · `d-coffee` · `d-or-exa
 
 ## Senses are separate roots
 
-Published strings share one phonological root, but **literal**, **metaphorical**, and **proper / overlay** readings are **different gloss roots**. Gloss only the English sense that is active. Do **not** write the Agelan letters, and do **not** write **-l** / **-m** / **-n** when that ending only selected this sense.
+Published strings share one phonological root, but **literal**, **metaphorical**, and **proper / overlay** readings are **different gloss roots**. Gloss only the English sense that is active. Do **not** write the Agalan letters, and do **not** write **-l** / **-m** / **-n** when that ending only selected this sense.
 
-| Agelan | Morph gloss | Not |
+| Agalan | Morph gloss | Not |
 |---------|-------------|-----|
 | `zugobol` | `z-microphone` | `z-ugobo(microphone)-l`, `z-microphone-l` |
 | `zugobom` | `z-speaker` | `z-ugobo(microphone→speaker)-m` |
@@ -90,9 +90,9 @@ Published strings share one phonological root, but **literal**, **metaphorical**
 | `huhunum` | `h-witnessed` | `h-uhunu(fishing→witnessed)-m` |
 | `gohohum` | `g-home` | `g-ohohu(house→home)-m` |
 
-Same English label for `zugobom` and `zugobon` is fine: both are the *speaker* sense-root; the written ending is recoverable from the Agelan line and from [reference-suffix.md](../grammar/reference-suffix.md). The gloss’s job is the **sense**, not a second orthography.
+Same English label for `zugobom` and `zugobon` is fine: both are the *speaker* sense-root; the written ending is recoverable from the Agalan line and from [reference-suffix.md](../grammar/reference-suffix.md). The gloss’s job is the **sense**, not a second orthography.
 
-**Closed overlays** ([sense-form](../grammar/special-vocabulary.md#sense-form)): gloss the overlay reading for that `(sense_form, pos)`, not the ordinary lexicon literal. Prefer short stable **English** labels (`witnessed`, `COMMENT`, `SAME`, `plan`, `DECISION`, …). The Agelan letters themselves follow the [published host root](parser-pipeline.md#closed-forms-follow-lexicon), except vowel-only join stems (`an` / `on` / …).
+**Closed overlays** ([sense-form](../grammar/special-vocabulary.md#sense-form)): gloss the overlay reading for that `(sense_form, pos)`, not the ordinary lexicon literal. Prefer short stable **English** labels (`witnessed`, `COMMENT`, `SAME`, `plan`, `DECISION`, …). The Agalan letters themselves follow the [published host root](parser-pipeline.md#closed-forms-follow-lexicon), except vowel-only join stems (`an` / `on` / …).
 
 **Special pronouns** ([pronouns.md](../grammar/pronouns.md)): `zugobon` / `zebonen` / `zahagen` / `zenenun` / `…orodo…` → `z-speaker` / `z-listener` / `z-interlocutors` / `z-someone` / `…-next-clause` — never emoji etymology.
 
@@ -105,13 +105,13 @@ Same English label for `zugobom` and `zugobon` is fine: both are the *speaker* s
 ```
 
 - **PoS** — single letter matching the written prefix (`j` `z` `d` `b` `v` `g` `w` `h` `x`). Left-bound adjectives: `gl-…`.
-- **english** — short English label for the **active** sense (hyphens OK inside a label: `next-clause`, `or-exactly-one`). **No** Agelan root letters.
+- **english** — short English label for the **active** sense (hyphens OK inside a label: `next-clause`, `or-exactly-one`). **No** Agalan root letters.
 - **`-x-`** — mid-word compound / stance / role / span hinge; each piece is English (or a stable TAG).
 - **-l / -m / -n** — **omit** when they only choose which sense-root is in play (the usual content-word case).
 - **-sh** — append `-sh` when the written word has associative / address-set / collective **-sh** (`z-speaker-sh`, `z-listener-sh`).
 - **Prefix-less** revisers: English only — `instead`, `rather`, `additionally` (no fake PoS).
 
-Separate words with ` · ` (space-middot-space). One morph gloss line per Agelan line (or per turn).
+Separate words with ` · ` (space-middot-space). One morph gloss line per Agalan line (or per turn).
 
 ### When an ending still appears in the gloss
 
@@ -150,7 +150,7 @@ Do not write `z-←microphone` for a speaker antecedent.
 
 Grammar examples use three single-root names ([grammar-docs.md](grammar-docs.md#house-cast)). Morph gloss is the published sense that formed the label; free English is the name, not the virtue word and not *I* / *you*. Resume uses that same sense (`z-←grace`). Do not write `z-Azawan`.
 
-| Agelan | Morph gloss | Free English | Resume |
+| Agalan | Morph gloss | Free English | Resume |
 |--------|-------------|--------------|--------|
 | `zazawan` | `z-grace` | *Azawan* | `zazar` → `z-←grace` |
 | `zululon` | `z-courage` | *Ululon* | `zulur` → `z-←courage` |
@@ -160,7 +160,7 @@ Grammar examples use three single-root names ([grammar-docs.md](grammar-docs.md#
 
 Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) — English only; drop sense-picking endings:
 
-| Family | Example Agelan | Morph gloss |
+| Family | Example Agalan | Morph gloss |
 |--------|-----------------|-------------|
 | Ordinary / name compound | `jubenaxuzonun` | `j-hospitality-x-optimism` |
 | Ordinary (three roots) | `zuzuzuxogovexadedan` | `z-sushi-x-coffee-x-tea` |
@@ -176,7 +176,7 @@ For **phrasal proper names**, gloss each root with the sense **chosen for the la
 
 Bake join / reviser **job** into the English label (including open vs closed when it matters). Do not re-attach sense-picking endings:
 
-| Agelan | Morph gloss |
+| Agalan | Morph gloss |
 |---------|-------------|
 | `zam` | `z-and.open` |
 | `zal` | `z-and` |
@@ -192,7 +192,7 @@ Bake join / reviser **job** into the English label (including open vs closed whe
 
 ### Single words
 
-| Agelan | Morph gloss | Free English (separate) |
+| Agalan | Morph gloss | Free English (separate) |
 |---------|-------------|-------------------------|
 | `jawel` | `j-greeting` | *Hello.* |
 | `jael` | `j-yes` | *Yes.* |
@@ -212,7 +212,7 @@ Bake join / reviser **job** into the English label (including open vs closed whe
 
 ### Dialogue turn (morph + loose free)
 
-Agelan: `jael zugobon zam zebonen zal guzumum.`
+Agalan: `jael zugobon zam zebonen zal guzumum.`
 
 ```
 gloss: `j-yes` · `z-speaker` · `z-and.open` · `z-listener` · `z-and` · `g-happy`
@@ -224,7 +224,7 @@ gloss: `j-yes` · `z-speaker` · `z-and.open` · `z-listener` · `z-and` · `g-h
 
 ### Metaphor vs overlay vs literal
 
-Agelan: `xezebal zuber huhunum zanunul.`
+Agalan: `xezebal zuber huhunum zanunul.`
 
 ```
 gloss: `x-howedegur` · `z-←Ubenaxuzonun` · `h-witnessed` · `z-rain`
@@ -236,7 +236,7 @@ gloss: `x-howedegur` · `z-←Ubenaxuzonun` · `h-witnessed` · `z-rain`
 
 ### Ability + value motive
 
-Agelan: `juel zugobon vawalaxel horodoloxem.`
+Agalan: `juel zugobon vawalaxel horodoloxem.`
 
 ```
 gloss: `j-no` · `z-speaker` · `v-walking-unable-temporary` · `h-competence-x-motive`
@@ -246,7 +246,7 @@ gloss: `j-no` · `z-speaker` · `v-walking-unable-temporary` · `h-competence-x-
 
 ### Numbered alternative + unmet pleasure
 
-Agelan: `x#e- zuzebul g#1 zugobonsh haweroxur.`
+Agalan: `x#e- zuzebul g#1 zugobonsh haweroxur.`
 
 ```
 gloss: `x-starting-with` · `z-problem` · `g-first` · `z-speaker-sh` · `h-pleasure-x-unmet`
@@ -256,7 +256,7 @@ gloss: `x-starting-with` · `z-problem` · `g-first` · `z-speaker-sh` · `h-ple
 
 ### Inclusive *we* (interlocutors)
 
-Agelan: `jael xamalal zahagen howoram vawalal vul.`
+Agalan: `jael xamalal zahagen howoram vawalal vul.`
 
 ```
 gloss: `j-yes` · `x-therefore` · `z-interlocutors` · `h-plan` · `v-walking` · `v-not`
@@ -284,17 +284,17 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 
 | Avoid | Why | Prefer |
 |-------|-----|--------|
-| `z-ugobo(speaker)-n` | Agelan letters + redundant ending | `z-speaker` |
+| `z-ugobo(speaker)-n` | Agalan letters + redundant ending | `z-speaker` |
 | `z-microphone-l` | Ending already chose the literal root | `z-microphone` |
 | `z-microphone→speaker` | Etymology chain | `z-speaker` |
 | Morph line that is only idiomatic English | Confuses layers | Morph + separate free line |
 | Loose free packed with cast letters / join footnotes / value endings | Duplicates morph; not “what you’d say” | Idiomatic claim; use **strict** free only for teaching |
-| English *he* / *she* inside morph for **-r** | Hides Agelan binding | `z-←Antecedent` |
+| English *he* / *she* inside morph for **-r** | Hides Agalan binding | `z-←Antecedent` |
 | New synonym every example for the same overlay | Unstable inventory | Fixed labels (`witnessed`, `COMMENT`, …) |
 
 ## Checklist
 
-1. English senses only — no Agelan root spellings.
+1. English senses only — no Agalan root spellings.
 2. No `→` etymology chains.
 3. No **-l** / **-m** / **-n** when they only selected the sense-root.
 4. Compounds / stance / role / span `x` pieces are segmented in English.

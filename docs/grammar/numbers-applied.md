@@ -38,7 +38,7 @@ In [preferred writing](numbers.md#writing-preferred-shorthand): **`%`** → spee
 
 #### What each closer is for
 
-| English habit | Agelan |
+| English habit | Agalan |
 |---------------|---------|
 | `25% of X` (portion) | whole NP + `/ɡ/` **`…jo`** — [denominator](#percent-denominators) |
 | `+2 percentage points` / `from 10% to 12%` point delta | **`ju`** (often as `/v/` **`ra`** / **`ru`**: increase/decrease by that point amount) |
@@ -153,7 +153,7 @@ Spelled **`…xrawol`** / **`…xrawon`** — [numeric derivation](numeric-deriv
 
 **Civil duration** (*hours*, *days*) uses continuum **`umedu`** 🕐 *time* as the measure host (`bumedul g+3` ≈ *three hours*) — not a second `+1` morph on `ameno`. SHARED range continua stay **`gumedul`** / **`gurelul`** / **`gezudal`** as the line needs ([ranges](#ranges)). Temperature continuum **`edohe`** 🌡️ *temperature* grades heat without naming kelvin.
 
-**Common derived (optional):** newton `ubunu` *force*; pascal `agala` *pressure*; joule `abedo` *energy*; watt `ubulu` *power*; hertz `urumu` *rhythm*; ohm `onuzu` *blockage*; coulomb `urohe` *charge*; radian `erola` *cycle* — same bare / `…x+1` habit.
+**Common derived (optional):** newton `ubunu` *force*; pascal `abama` *pressure*; joule `abedo` *energy*; watt `ubulu` *power*; hertz `urumu` *rhythm*; ohm `onuzu` *blockage*; coulomb `urohe` *charge*; radian `erola` *cycle* — same bare / `…x+1` habit.
 
 #### No metric prefixes
 <a id="no-metric-prefixes"></a>

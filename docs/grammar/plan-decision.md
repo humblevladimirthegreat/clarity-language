@@ -9,7 +9,7 @@ Intention vs forecast, and how revisable a pick is — closed `/h/` mood roots.
 ### Plan / predict
 <a id="plan-predict"></a>
 
-English *will* / *going to* mixes **intention** (what someone means to do) with **forecast** (what will happen). Agelan uses **two closed mood roots**.
+English *will* / *going to* mixes **intention** (what someone means to do) with **forecast** (what will happen). Agalan uses **two closed mood roots**.
 
 **Shape:** floating `/h/` **`owora`** 🗺️ *world-map* → *plan*, or **`elezo`** 🔭 *telescope* → *forecast*. Content verbs stay ordinary. Prefer floating `/h/` (optional `/w/` only when the mood frames a preceding `/ɡ/`).
 
@@ -53,7 +53,7 @@ Use **PLAN** when the clause frames **intention**. Use **PREDICT** when it frame
 | *if that fails, I'll …* (backup path) | **PLAN** fork (`howorar`) |
 | *it will rain / I expect …* (world forecast) | **PREDICT** (`helezom`) |
 
-| Agelan | Reading |
+| Agalan | Reading |
 |---------|---------|
 | `… howoram …` | intention; **sketch** (soft default) |
 | `… howoral …` | intention; **itinerary** |
@@ -81,7 +81,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `owora` · `elezo` · `awala` · `uwuru` · `uzune` · `urunu` · `elebe` · `anunu`
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *Azawan means to walk.* (direction only)
 
@@ -119,7 +119,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zuhubun howoram vuzunel.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zululon howoram vawalal.`
 
@@ -179,7 +179,7 @@ gloss: `h-PREDICT` · `h-PATTERN` · `v-rain`
 <a id="decision"></a>
 <a id="decision-mood"></a>
 
-Mark **how revisable a pick is** — temporary / open / settled — with one closed mood root. English *decide* / *I've decided* / *final decision* smuggles firmness; Agelan puts firmness on the ending (same map as unmet values).
+Mark **how revisable a pick is** — temporary / open / settled — with one closed mood root. English *decide* / *I've decided* / *final decision* smuggles firmness; Agalan puts firmness on the ending (same map as unmet values).
 
 **Shape:** floating `/h/` mood **`egege`** ✅ *check* → *decision* (optional `/w/` when scoped only to a preceding `/ɡ/`). Prefer floating `/h/`. Ending = [changeability](#decision-changeability).
 
@@ -217,7 +217,7 @@ Use **DECISION** when the clause marks **pick firmness**. Intention map grain st
 | *won’t decide* (refusal) | ordinary refuse / choice packaging |
 | *commitment / policy / indecision* (lexicon nouns) | ordinary **`enebe`** / **`emome`** / **`aweva`** |
 
-| Agelan | Reading |
+| Agalan | Reading |
 |---------|---------|
 | `… hegegel …` | decided; **irredegursible** / settled |
 | `… hegegem …` | decided; **open to change** (or unknown) |
@@ -245,7 +245,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `owora` · `elezo` · `egege` · `awala` · `uwuru` · `uzune` · `elebe` · `anunu` · `abawa` (*pattern*, evidential)
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *Ululon has decided to sing, and can still change that.*
 
@@ -283,7 +283,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zululon hegegem vawalal.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zazawan hegegem vuzunel.`
 

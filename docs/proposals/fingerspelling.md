@@ -6,7 +6,7 @@
 
 ## Motivation
 
-Agelan already has an unambiguous spoken spelling: one [letter name](../grammar/phonology.md#letter-names) per glyph, pauses between names. There is no documented way to spell a **single word** when the listener cannot hear (noise, distance, mouth occupied, remaining quiet).
+Agalan already has an unambiguous spoken spelling: one [letter name](../grammar/phonology.md#letter-names) per glyph, pauses between names. There is no documented way to spell a **single word** when the listener cannot hear (noise, distance, mouth occupied, remaining quiet).
 
 A primitive channel should:
 
@@ -15,7 +15,7 @@ A primitive channel should:
 - Spell the **same letters** as writing, in the same order as the spoken names.
 - Avoid inventing a second language of iconic word-signs.
 
-Swedish Sign Language (**STS**) fingerspelling is one-handed. Most of its Latin letters are holds; **J** is a still flat hand (unlike ASL). Chinese fingerspelling (**汉语手指字母方案**) gives a still, more glyph-like **Z**, and a still dedicated **SH** (Agelan has no *s+h* two-letter spelling for the plural edge).
+Swedish Sign Language (**STS**) fingerspelling is one-handed. Most of its Latin letters are holds; **J** is a still flat hand (unlike ASL). Chinese fingerspelling (**汉语手指字母方案**) gives a still, more glyph-like **Z**, and a still dedicated **SH** (Agalan has no *s+h* two-letter spelling for the plural edge).
 
 ## Goals
 
@@ -71,7 +71,7 @@ Same sequence as spoken spelling. Example citation `agada`:
 
 ***a ga a da a*** — five holds, pause (or slight drop) between them so **da** + **a** stay two signs.
 
-Content word: PoS letter, then root letters, then ending (**l / m / n / r**), then **sh** if plural. One sign per glyph (digraph **sh** is one sign). Foreign / opaque payloads stay letter-by-letter only when the interior is Latin-Agelan; other orthographies are out of scope (or stay unspelled).
+Content word: PoS letter, then root letters, then ending (**l / m / n / r**), then **sh** if plural. One sign per glyph (digraph **sh** is one sign). Foreign / opaque payloads stay letter-by-letter only when the interior is Latin-Agalan; other orthographies are out of scope (or stay unspelled).
 
 **Location (sketch):** STS habit is a small space near chin/cheek. Absorb with photos/video; consistency matters more than copying STS height exactly.
 
@@ -79,14 +79,14 @@ Content word: PoS letter, then root letters, then ending (**l / m / n / r**), th
 
 - **STS** supplies a one-hand Latin set whose **j** is already a hold, with more print-cursive iconicity than ASL, and no need to teach English-only letters.
 - **Chinese Z** is a hold that still suggests the **two bars** of printed **Z**; STS **Z** is a weak cursive pose and is marked *less common* even in Swedish.
-- **Chinese SH** is the rare **single-hold** *sh*-slot; DGS **SCH** is a wipe; two-beat **S+H** teaches the wrong analysis for Agelan **sh**.
+- **Chinese SH** is the rare **single-hold** *sh*-slot; DGS **SCH** is a wipe; two-beat **S+H** teaches the wrong analysis for Agalan **sh**.
 
 ASL transfer is **not** a goal. STS and ASL share some shapes on **different** letters (e.g. ASL **B C D R S** ≈ STS **D S L X G**). Charts must say **do not read this as ASL**.
 
 ## Open questions (absorb time)
 
 1. **STS X vs Chinese Z** — confirm the two holds stay distinct at conversation distance; if not, tweak orientation of one, not the letter assignment.
-2. **Chinese SH vs unused STS S** — SH is a two-finger relative of Chinese **S**; Agelan never uses **S**, so no in-inventory clash. Still check SH vs STS **E** / clawed letters in the subset.
+2. **Chinese SH vs unused STS S** — SH is a two-finger relative of Chinese **S**; Agalan never uses **S**, so no in-inventory clash. Still check SH vs STS **E** / clawed letters in the subset.
 3. **Form source of record** — link stills/video: [teckenspråkslexikon handalfabet](https://teckensprakslexikon.su.se/kategori/handalfabetet) for STS rows; PRC *汉语手指字母方案* (2019) for **Z** / **SH**. Do not redraw from memory.
 4. **Whether to name manual sh in speech** — optional later CV (must not collide with digit *…* or revisers). v1 can leave spoken recitation unchanged and only add the hold.
 5. **Numbers** — digit syllables are not this alphabet; number words still spell as letters (`g`, `+` writing is not a letter). Digit-hand overlap with **we/da/…** is a later pass if needed.

@@ -7,7 +7,7 @@ const dataDir = fileURLToPath(new URL('../../../data', import.meta.url))
 const srcDir = fileURLToPath(new URL('../../../src', import.meta.url))
 
 const readingOrder = [
-  { text: 'Why Agelan', link: '/' },
+  { text: 'Why Agalan', link: '/' },
   { text: 'Introduction', link: '/introduction' },
   { text: 'Core', link: '/core' },
   { text: 'Vowel series', link: '/vowel-series' },
@@ -36,9 +36,9 @@ const readingOrder = [
 ]
 
 export default defineConfig({
-  title: 'Agelan Grammar',
+  title: 'Agalan Grammar',
   description:
-    'Learner grammar for Agelan — compassion, rationality, and empowerment encoded in vocabulary and grammar.',
+    'Learner grammar for Agalan — compassion, rationality, and empowerment encoded in vocabulary and grammar.',
   base: '/grammar/',
   // Repo root `dist/grammar/` so Amplify can publish `dist/` and serve at /grammar/
   outDir: '../../dist/grammar',
@@ -62,7 +62,7 @@ export default defineConfig({
   },
   themeConfig: {
     nav: [
-      { text: 'Why Agelan', link: '/' },
+      { text: 'Why Agalan', link: '/' },
       { text: 'Introduction', link: '/introduction' },
       { text: 'Core', link: '/core' },
       { text: 'Lexicon', link: '/lexicon' },

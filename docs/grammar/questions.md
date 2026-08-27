@@ -1,6 +1,6 @@
 # Questions
 
-How to **ask** in Agelan: question force (**jol** / soft **jom**), yes/no vs fill-ask, multi-gap **fill-all**, and **polar stance** particles (**`jael`** / **`juel`** / …).
+How to **ask** in Agalan: question force (**jol** / soft **jom**), yes/no vs fill-ask, multi-gap **fill-all**, and **polar stance** particles (**`jael`** / **`juel`** / …).
 
 ## Beginner
 <a id="beginner"></a>
@@ -116,7 +116,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **Roots used here:** `azawa` / `ululo` / `uhubu` · `edege` · `adaga` · `awala` · `elebe` · `uzune` · `eje` · `uwuru` · `urunu`
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *Does Azawan walk?*
 
@@ -166,7 +166,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `jul vawalal.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `jol zuhubun vuzunel.`
 
@@ -310,7 +310,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 **Roots used here:** `azawa` / `ululo` / `uhubu` · `adaga` · `awala` · `urunu` · `elebe`
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *Didn’t Azawan run?* Then confirm: *true, Azawan didn’t.*
 
@@ -362,7 +362,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `juol.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `jol hor.`
 
@@ -514,7 +514,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 **Roots used here:** `azawa` / `ululo` / `uhubu` · `awala` · `urunu`
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *Is Azawan the only priority?*
 
@@ -546,7 +546,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 `jul vurunul.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `jael.` vs `jaol.`
 

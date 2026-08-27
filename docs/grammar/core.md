@@ -1,6 +1,6 @@
-# Agelan core grammar
+# Agalan core grammar
 
-How to read and write an Agelan **sentence**: word roles, word shape, default order, how a turn starts (`/j/` vs `/x/`), and dependent sentences with **`adoro`**.
+How to read and write an Agalan **sentence**: word roles, word shape, default order, how a turn starts (`/j/` vs `/x/`), and dependent sentences with **`adoro`**.
 
 ## Beginner
 <a id="beginner"></a>
@@ -24,7 +24,7 @@ Words end in a final letter that says how the root enters the talk — you will 
 ##### Capitalization
 <a id="capitalization"></a>
 
-Agelan writing is **unicase**: use **lowercase** for every native letter. Capital letters appear only when writing foreign words (you learn how to write foreign content later).
+Agalan writing is **unicase**: use **lowercase** for every native letter. Capital letters appear only when writing foreign words (you learn how to write foreign content later).
 
 #### Outside a sentence (citation)
 <a id="citation-forms"></a>
@@ -239,7 +239,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `edege` *teacher* · `uzudu` *student* · `adaga` *dog* · `agada` *cat* · `abogo` *book* · `ohohu` *house* · `elulu` *blue* · `arede` *red* · `ele` *size* · `uzumu` smile → *happy* (**-m**) · `awala` *walk* · `urunu` *run* · `elebe` *sleep* · `ezehe` *tell* · `uwuru` *write* · `uzune` *sing* · `eje` *perception* (*see*) · `aju` *sit* · `adaza` *haste* · `adoro` *next clause* · `urugu` *because* (**-m** on `/h/`)
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *Azawan is a teacher.*
 
@@ -307,7 +307,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zazawan guzumum hurugum badorol zululon vawalal.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zazawan gezedul.`
 
@@ -481,7 +481,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `uzudu` *student* · `adaga` *dog* · `agada` *cat* · `elulu` *blue* · `arede` *red* · `uzumu` smile → *happy* (**-m**) · `awala` *walk* · `urunu` *run* · `elebe` *sleep* · `eje` *perception* (*see*) · `uzune` *sing* · `aju` *sit* · `azebo` *loud volume* · `amala` *therefore* · `ezeba` *howedegur* / *although* · `ameno` *meanwhile* · `adoro` *next clause* · `urugu` *because* (**-m** on `/h/`)
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *Maybe Azawan walks.*
 
@@ -531,7 +531,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zazawan guzumum hurugum badorol zululon vawalal hurugum badorol zuhubun velebel.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `jam zuhubun velebel.`
 

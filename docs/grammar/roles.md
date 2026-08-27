@@ -57,7 +57,7 @@ gloss: `z-someone` · `d-me` · `v-conflict` · `z-conflict-agent-r` · `v-run`
 *Someone fought me. The fighter fled.*
 ```
 
-| Agelan | Gloss |
+| Agalan | Gloss |
 |---------|--------|
 | `zaxozowol` | *a fighter* (kind; no discourse edegunt required) |
 | `duxozowor` | *the one fought* (as object now) |
@@ -83,7 +83,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `agada` *cat* · `uzumu` smile → *happy* (**-m**) · `awala` *walk* · `urunu` *run* · `elebe` *sleep* · `uzune` *sing* · `eje` *see* · `uwuru` *write* · `aju` *sit* · `ozowo` *conflict* / *fight* · `onogo` *bond*
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *A fighter runs.*
 
@@ -133,7 +133,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zazawan gonogol bululon. zoxonogor vurunul.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zaxurunul vawalal.`
 
@@ -317,7 +317,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `ohohu` *house* · `agada` *cat* · `adaga` *dog* · `abogo` *book* · `awala` *walk* · `eweze` *west* / body *left* · `amala` *east* / body *right* · `ebule` *northwest* / *forward-left* · `avuza` *up* (gravity) · `erede` *tree* · `edone` *listener* · `ugobo` *speaker*
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *The house on Azawan’s left.*
 
@@ -367,7 +367,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zohohul gewezexugobon.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zohohul gamalaxazawan.`
 

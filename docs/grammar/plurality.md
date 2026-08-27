@@ -87,7 +87,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `agada` *cat* · `adaga` *dog* · `uzumu` smile → *happy* (**-m**) · `ele` *size* / *big* · `awala` *walk* · `aju` *sit* · `urunu` *run* · `elebe` *sleep* · `eje` *see* · `aha` inclusive *we* · `ugobo` speaker · `edone` listener
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *Azawan and associates walk.*
 
@@ -137,7 +137,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zazawan dadagalsh vejel.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zazawansh vawalal.`
 
@@ -282,7 +282,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `olebo` *file-box* · `uduru` *heavy* · `ahada` *team* · `umola` *vast* · `uzudu` *student* · `uzune` *sing* · `awala` *walk* · `urunu` *run* · `aha` inclusive *we* · `ugobo` speaker · `edone` listener
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *The file-boxes are heavy.* (members, or don’t care)
 
@@ -332,7 +332,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `jedonensh.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zulebolsh gudurumsh.`
 

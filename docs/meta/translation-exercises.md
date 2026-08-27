@@ -16,7 +16,7 @@ Per-feature teaching already has its practice: rule → mnemonic → 1–3 worke
 | **Inside each feature** | Worked examples only (house style) |
 | **End of a page band** (e.g. [core.md Beginner](../grammar/core.md#beginner) → [translation practice](../grammar/core.md#translation-practice)) | Short checkpoint for *that page’s* stack |
 | **End of whole Beginner / Intermediate / Advanced** (cross-doc) | Optional larger review — prefer [`examples/`](../examples/) or a dedicated practice page later; do **not** duplicate a full review on every grammar file |
-| **After a real trap** | At most 1–2 items *if* English pulls the wrong Agelan shape (e.g. *because* as a verb, a general *to be*, opaque `<>` when the page is not teaching loans) |
+| **After a real trap** | At most 1–2 items *if* English pulls the wrong Agalan shape (e.g. *because* as a verb, a general *to be*, opaque `<>` when the page is not teaching loans) |
 
 **When to add a band checkpoint:** if the learner can misuse the form in the *next* section’s examples, put drills at the **end of this band**. If the form is mostly recognition (a small closed table), the worked example is enough.
 
@@ -30,7 +30,7 @@ Per-feature teaching already has its practice: rule → mnemonic → 1–3 worke
 | Material | Place |
 |----------|--------|
 | Rule + worked example | Grammar section body |
-| Short Eng ↔ Agelan checkpoint | End of that page’s **Beginner** / **Intermediate** / **Advanced** band |
+| Short Eng ↔ Agalan checkpoint | End of that page’s **Beginner** / **Intermediate** / **Advanced** band |
 | Multi-turn dialogue practice | [`examples/`](../examples/) — not inside every grammar section; grammar pages do not link there |
 | Cross-doc “finish the whole ledegul” review | Optional later; not required on each peer page |
 
@@ -38,9 +38,9 @@ Per-feature teaching already has its practice: rule → mnemonic → 1–3 worke
 <a id="principles"></a>
 
 1. **One new stack per item** — recycle prior band material; do not introduce a root or construction the section has not taught.
-2. **Both directions** — English → Agelan (production) and Agelan → English (parsing). Production is harder; keep those items shorter / fewer if the set grows.
-3. **Pure Agelan in early checkpoints** — published roots and closed specials only; `PoS<…>ENDING` / opaque spans only when the page is teaching loans or spans.
-4. **Spoiler answers** — VitePress `::: details Show answer` (or a clear custom label). The answer is the Agelan sentence or **loose** free English — not a second grammar lecture. No morph-gloss wall inside the spoiler unless the drill is explicitly about packaging.
+2. **Both directions** — English → Agalan (production) and Agalan → English (parsing). Production is harder; keep those items shorter / fewer if the set grows.
+3. **Pure Agalan in early checkpoints** — published roots and closed specials only; `PoS<…>ENDING` / opaque spans only when the page is teaching loans or spans.
+4. **Spoiler answers** — VitePress `::: details Show answer` (or a clear custom label). The answer is the Agalan sentence or **loose** free English — not a second grammar lecture. No morph-gloss wall inside the spoiler unless the drill is explicitly about packaging.
 5. **Small sets** — about **6–12 items per direction** max per band checkpoint. Prefer a tiny reused root bank over lexicon tourism. List the roots used once above the drills.
 6. **Test the decision, not the dictionary** — good items force a choice the band taught (role letter, **-l** / **-m**, **`orodo` last**, omit recoverable **`jal`**, …).
 7. **Single sentences** — leave multi-turn scenes to [`examples/`](../examples/).
@@ -59,7 +59,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **Roots used here:** `…`
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *…*
 
@@ -67,7 +67,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `…`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `…`
 

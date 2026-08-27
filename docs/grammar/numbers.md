@@ -89,7 +89,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **Roots used here:** `azawa` / `ululo` / `uhubu` · `agada` *cat* · `adaga` *dog* · `abogo` *book* · `ohohu` *house* · `uzudu` *student* · `eje` *see* · `uwuru` *write*
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *Three cats.*
 
@@ -139,7 +139,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zululon vuwurul zabogol g#3.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zagadalsh g+3.`
 
@@ -819,7 +819,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 **Roots used here:** `azawa` / `ululo` / `uhubu` · `agada` *cat* · `abogo` *book* · `ohohu` *house* · `elulu` *blue* · `awala` *walk* · `elebe` *sleep* · `eje` *see*
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *Three (as the subject) is blue.*
 
@@ -869,7 +869,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zuhubun velebel h_15,30.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zagadalsh g~+3.`
 
@@ -1228,7 +1228,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 **Roots used here:** `azawa` / `ululo` / `uhubu` · `agada` *cat* · `abogo` *book* · `awala` *walk* · `uzune` *sing*
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *Cats — infinitely many.*
 
@@ -1266,7 +1266,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 `j+0e.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zagadalsh g+e.`
 

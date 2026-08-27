@@ -87,7 +87,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `awala` *walk* · `urunu` *run* · `uzune` *sing* · `elebe` *sleep* · `uzumu` smile → *happy* (**-m**) · `uruna` *rain* · `udunu` *night* · `adaza` *haste* · `azebo` *quiet*
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *Azawan walks only when raining.*
 
@@ -137,7 +137,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zazawan vawalal hanunul hual.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zazawan vawalal hanunul hal.`
 
@@ -262,7 +262,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `awala` *walk* · `urunu` *run* · `uzune` *sing* · `elebe` *sleep* · `uwuru` *write* · `uruna` *rain* · `ozowo` *snow* · `udunu` *night* · `ohohu` *house* · `amuba` *emergency* · `ogegau` *convenience* · `emama` *fix* · `amuga` *workaround* · `adoro` *next clause*
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *Azawan walks either when raining or at night, not both.*
 
@@ -312,7 +312,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zuhubun vuzunel hadorom zazawan vawalal badorol.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zazawan vawalal hanunul hudunul hol.`
 

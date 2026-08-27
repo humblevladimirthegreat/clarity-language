@@ -112,7 +112,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `adaga` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `ahada` *team* · `edege` *teacher* · `uzumu` smile → *happy* (**-m**) · `ele` *size* · `awala` *walk* · `elebe` *sleep*
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *Dogs, including a cat among others.*
 
@@ -162,7 +162,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `el zuhubun gedegel.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zadagalsh am zagadal.`
 
@@ -310,7 +310,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `adaga` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `ahada` *team* · `uzumu` smile → *happy* (**-m**) · `eru` *calm* · `awala` *walk* · `urunu` *run* · `amala` *therefore*
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *The team, including Azawan, except only Ululon.*
 
@@ -360,7 +360,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `dadedal om dogovel.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zahadal am zazawan ul zululon.`
 

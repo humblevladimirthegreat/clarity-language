@@ -8,14 +8,14 @@
 
 The published lexicon seeds roots with emoji mainly so a [speed-reading view](speed-reading-view.md) can show a pictograph per word. Emoji lock the mnemonic inventory to Unicode RGI scenes and are awkward to restyle.
 
-Switching to a dedicated icon pack lets each root map to a named glyph (`tabler:heart`, `icons8:shield`, …) while the **underlying Agelan spelling** remains the thing learners copy, search, and paste into docs.
+Switching to a dedicated icon pack lets each root map to a named glyph (`tabler:heart`, `icons8:shield`, …) while the **underlying Agalan spelling** remains the thing learners copy, search, and paste into docs.
 
-**Requirement:** when a learner selects a speed-read glyph and copies, the clipboard should contain the **romanized Agelan** (root or full word as shown), not a Private Use Area webfont codepoint or an emoji.
+**Requirement:** when a learner selects a speed-read glyph and copies, the clipboard should contain the **romanized Agalan** (root or full word as shown), not a Private Use Area webfont codepoint or an emoji.
 
 ## Goals
 
 1. Replace emoji-as-mandatory seed with an **icon id** (emoji may remain optional / transitional).
-2. Ensure **copy/paste yields romanized Agelan**.
+2. Ensure **copy/paste yields romanized Agalan**.
 3. Pick a primary icon pack suitable for “common things” mnemonics.
 4. Keep rendering workable in a web speed-reading view (SVG or font), with consistent sizing/color.
 
@@ -35,15 +35,15 @@ Switching to a dedicated icon pack lets each root map to a named glyph (`tabler:
 
 **Recommendation to decide later:** prototype both on a short lexicon sample (faces, tools, animals, abstract moods). Prefer **B** if speed-reading depends on pictorial recognition; prefer **A** if density, theming, and free/MIT matter more.
 
-Either pack needs a stable **icon id → Agelan root** map (new CSV column or sidecar), not reliance on Unicode codepoints.
+Either pack needs a stable **icon id → Agalan root** map (new CSV column or sidecar), not reliance on Unicode codepoints.
 
 ## Rendering + clipboard options
 
-Both options below put **romanized Agelan in the DOM** as the copyable string. They differ in how the icon is drawn.
+Both options below put **romanized Agalan in the DOM** as the copyable string. They differ in how the icon is drawn.
 
 ### Option 1 — Ligature webfont (romanization is the text)
 
-**Idea:** the text node is the Agelan spelling (e.g. `uze`). A custom (or subset) webfont maps that string to an icon glyph via OpenType **ligatures** (same pattern as classic Material Icons: `<span class="material-icons">home</span>`).
+**Idea:** the text node is the Agalan spelling (e.g. `uze`). A custom (or subset) webfont maps that string to an icon glyph via OpenType **ligatures** (same pattern as classic Material Icons: `<span class="material-icons">home</span>`).
 
 ```html
 <span class="agelan-icon">uze</span>
@@ -54,12 +54,12 @@ Both options below put **romanized Agelan in the DOM** as the copyable string. T
 | **Screen** | Ligature substitutes the letters for the pack glyph (or a PUA glyph keyed off the liga). |
 | **Copy** | Clipboard gets `uze` because that is the real character data. |
 | **Pros** | Single stream; selection/copy “just works”; screen readers can read the word if the font fails. |
-| **Cons** | Requires building/maintaining a **custom font** that ligates every used root (or word form) to a glyph from Tabler / Icons8. Stock Tabler/Icons8 webfonts do **not** know Agelan spellings. Multi-color Icons8 Color does not map cleanly to a single-color glyph font without flattening. Font subset must update when the lexicon map changes. |
+| **Cons** | Requires building/maintaining a **custom font** that ligates every used root (or word form) to a glyph from Tabler / Icons8. Stock Tabler/Icons8 webfonts do **not** know Agalan spellings. Multi-color Icons8 Color does not map cleanly to a single-color glyph font without flattening. Font subset must update when the lexicon map changes. |
 | **Fits pack** | Stronger fit for **Tabler outline** (monochrome). Weak fit for **Icons8 Color** unless glyphs are flattened to one ink. |
 
 ### Option 2 — Decorative icon + real text
 
-**Idea:** render the pack icon as decoration (inline SVG, `<img>`, or CSS `::before` with a pack webfont). Keep romanized Agelan as a real text node that remains the copy/selection target (visible, visually hidden, or shown on focus — product choice).
+**Idea:** render the pack icon as decoration (inline SVG, `<img>`, or CSS `::before` with a pack webfont). Keep romanized Agalan as a real text node that remains the copy/selection target (visible, visually hidden, or shown on focus — product choice).
 
 ```html
 <span class="word" data-root="uze" data-icon="tabler:mood-smile">
@@ -76,7 +76,7 @@ Both options below put **romanized Agelan in the DOM** as the copyable string. T
 | **Cons** | Need a clear copy story in “icons-only” mode (hidden text still selectable, or a `copy` edegunt that writes `data-root`). Slightly heavier DOM than a single text node. |
 | **Fits pack** | Fits **Tabler outline** and **Icons8 Color** equally. |
 
-Optional hardening for option 2: on `copy`, set clipboard text explicitly from `data-root` / full surface form so browsers that skip hidden text still paste Agelan.
+Optional hardening for option 2: on `copy`, set clipboard text explicitly from `data-root` / full surface form so browsers that skip hidden text still paste Agalan.
 
 ## Comparison (clipboard goal)
 

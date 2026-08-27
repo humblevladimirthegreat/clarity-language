@@ -2,20 +2,20 @@
 
 **Status:** v1–v2 **shipped** (click / hover inspect in viewer + VitePress widgets); highlight-to-gloss **proposed**  
 **Related:** long-term TODO *web tools (overlay glosses)*; depends on [parser-pipeline.md](../meta/parser-pipeline.md) (**assumed shipped** — `parse(text)` → typed AST + morph tokens); [speed-reading-view.md](speed-reading-view.md) / [speed-reading-icons.md](speed-reading-icons.md) may share the same token map later; [learner-tts.md](learner-tts.md) may later speak the same selected range  
-**Design authority:** remains [`docs/grammar/`](../grammar/introduction.md) and lexicon CSVs. This proposal covers **tooling only**: render parsed Agelan so learners can inspect a word (or construction) without leaving the reading surface.
+**Design authority:** remains [`docs/grammar/`](../grammar/introduction.md) and lexicon CSVs. This proposal covers **tooling only**: render parsed Agalan so learners can inspect a word (or construction) without leaving the reading surface.
 
 ## Motivation
 
-Agelan packs psychologically useful morphology into word form (PoS, reference endings, mid-word **`x`** families, values, numbers, joins, spans). A lexicon search page helps find roots; it does not help *while reading a sentence*. Learners need: point at a surface word or **highlight a range** → see gloss + morph breakdown + a path into the grammar docs.
+Agalan packs psychologically useful morphology into word form (PoS, reference endings, mid-word **`x`** families, values, numbers, joins, spans). A lexicon search page helps find roots; it does not help *while reading a sentence*. Learners need: point at a surface word or **highlight a range** → see gloss + morph breakdown + a path into the grammar docs.
 
 With a finished parser and lexicon/overlay classification, the hard part is already structured. The UI is a thin **token → card** layer over the AST, not a second ahagelysis stack.
 
 ## Goals
 
-1. Paste or embed **parseable Agelan** and inspect any **highlighted** range (or a clicked / keyboard-focused token) with a tooltip / inspect card.
+1. Paste or embed **parseable Agalan** and inspect any **highlighted** range (or a clicked / keyboard-focused token) with a tooltip / inspect card.
 2. Show **progressive disclosure**: compact peek first; pin or second click for full morph + grammar links.
 3. Reuse one **inspect component** across shells (standalone page, VitePress examples, later editor / extension).
-4. Prefer **romanized Agelan** as the copy target (same clipboard rule as [speed-reading-icons.md](speed-reading-icons.md)) — highlighting must not replace native copy with English.
+4. Prefer **romanized Agalan** as the copy target (same clipboard rule as [speed-reading-icons.md](speed-reading-icons.md)) — highlighting must not replace native copy with English.
 5. Surface **parse failures** as inspectable tokens (red underline + expected …), not silent missing glosses.
 
 ## Non-goals
@@ -25,13 +25,13 @@ With a finished parser and lexicon/overlay classification, the hard part is alre
 - Replacing the published lexicon search UI; this is sentence-ledegul overlay, not root browsing.
 - Shipping a full speed-reading glyph mode in v1 (share the token map later).
 - Teaching English aloud (see [learner-tts.md](learner-tts.md) for speech).
-- Auto-glossing English prose on grammar pages (overlay fires only on Agelan — see [When the highlight is Agelan](#when-the-highlight-is-agelan)).
+- Auto-glossing English prose on grammar pages (overlay fires only on Agalan — see [When the highlight is Agalan](#when-the-highlight-is-agalan)).
 
 ## Product shells
 
 | Shell | Role |
 |-------|------|
-| **A — Gloss overlay viewer** | Standalone page: paste / load Agelan; click-to-gloss is live. Highlight-to-gloss is the next increment on this shell. |
+| **A — Gloss overlay viewer** | Standalone page: paste / load Agalan; click-to-gloss is live. Highlight-to-gloss is the next increment on this shell. |
 | **B — VitePress doc widget** | Same component inside grammar examples. Highlight listener must stay **scoped to the widget**, not `document`. |
 | **C — Browser extension / bookmarklet** | Enable gloss on a selected region or `.agelan` blocks on any page (parse-gate or “ask first” chip). |
 | **D — Editor assist** | TipTap (already a dependency) compose surface + bubble-menenu inspect on the current selection (“did this morph parse as I meant?”). |
@@ -68,7 +68,7 @@ Other notes:
 
 - **Underline by ending class** (optional visual hint that the ending, not the PoS letter, is the usual learner question).
 - **Parse-error tokens:** failed spans stay in the stream with a failure card (“expected …”) from the parser, not an empty gloss.
-- **Copy:** native selection still copies **romanized Agelan**. Gloss lives in the overlay unless the learner uses an explicit “copy gloss” control.
+- **Copy:** native selection still copies **romanized Agalan**. Gloss lives in the overlay unless the learner uses an explicit “copy gloss” control.
 - **Dismiss:** click-outside, Escape, or an empty selection. **Pin** keeps the side panel when the highlight goes abaway.
 - **Timing:** open the card on **mouseup** (or ~150–250 ms debounce on `selectionchange`), not while the drag is in progress. Ignore selections during IME compose; overlay only on a committed range.
 - **Touch:** long-press → native selection → same overlay (there is no hover).
@@ -91,20 +91,20 @@ Optional later: **snap to constituents** — if the drag ends mid-join or mid-sp
 
 Optional less-aggressive variant (especially shell **C**): a small **gloss chip** at the selection first; full card on click (Translate-icon pattern). Optional later: a one-line **live phrase gloss** that updates as the selection grows; morph chips only when the range stabilizes. The same selected tokens can later drive [learner TTS](learner-tts.md) (`speakAst` on the range) without a second picker.
 
-### When the highlight is Agelan
+### When the highlight is Agalan
 
 | Approach | When it works | Use |
 |----------|---------------|-----|
 | **Marked regions only** | `.agelan` blocks, VitePress example widgets, paste viewer | Default for **A** / **B**. English in the same paragraph never fires. |
-| **Parse-gated** | Any selection; `parse` the selected string (or enclosing sentence) | Overlay only if parse succeeds / mostly succeeds. Mixed English+Agelan needs a sentence split first. |
-| **Heuristic then parse** | Selection looks like Agelan (unicase, PoS letter + root + ending, mid-`x`, number words) | Fast prefilter for **C**; always confirm with the parser. |
+| **Parse-gated** | Any selection; `parse` the selected string (or enclosing sentence) | Overlay only if parse succeeds / mostly succeeds. Mixed English+Agalan needs a sentence split first. |
+| **Heuristic then parse** | Selection looks like Agalan (unicase, PoS letter + root + ending, mid-`x`, number words) | Fast prefilter for **C**; always confirm with the parser. |
 | **Explicit mode** | Toolbar “gloss on select” or a modifier (e.g. Alt-drag) | Lowest surprise on pages full of English. |
 
-**A / B:** fire only inside **already-tokenized** Agelan. **B** must scope the `selectionchange` listener to the widget — page-ledegul `window.getSelection()` will also catch surrounding prose.
+**A / B:** fire only inside **already-tokenized** Agalan. **B** must scope the `selectionchange` listener to the widget — page-ledegul `window.getSelection()` will also catch surrounding prose.
 
-**C:** parse-success gate and/or a floating “Gloss Agelan” chip / context-menenu item so accidental English highlights do not pop a failure card.
+**C:** parse-success gate and/or a floating “Gloss Agalan” chip / context-menenu item so accidental English highlights do not pop a failure card.
 
-**D:** TipTap bubble menenu on Agelan marks is the native fit; the editor already owns the selection.
+**D:** TipTap bubble menenu on Agalan marks is the native fit; the editor already owns the selection.
 
 ## Shared inspect API (sketch)
 
@@ -146,7 +146,7 @@ Reuse the existing inspect card. Selection becomes the unified pointer (click wi
 - One word / caret / partial word (whole token + matching morph chip) → compact card.
 - Multi-word → construction card already used in v2.
 - Widget-scoped listener on **B** so English prose does not fire.
-- Native copy stays romanized Agelan; dismiss on empty selection / Escape (pin stays).
+- Native copy stays romanized Agalan; dismiss on empty selection / Escape (pin stays).
 - Touch: long-press selection uses the same path.
 
 ### v4 — selection follow-ons

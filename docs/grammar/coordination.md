@@ -7,7 +7,7 @@ Coordinate same-slot material (NPs, VPs, or clause bodies) with a **right-close 
 
 ### What you use joins for
 
-You use joins when English would say *and*, *or*, *not*, *prefer A over B*, *something*, or *everything but*. Agelan spells that job with a **PoS prefix** + **vowel root** (+ stacked vowel when needed) + **ending**.
+You use joins when English would say *and*, *or*, *not*, *prefer A over B*, *something*, or *everything but*. Agalan spells that job with a **PoS prefix** + **vowel root** (+ stacked vowel when needed) + **ending**.
 
 | Ledegul | Prefix | Example job |
 |-------|--------|-------------|
@@ -254,7 +254,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `adaga` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `abele` *apple* · `unune` *water* · `omonu` *challenging* · `ebere` *person* · `awala` *walk* · `urunu` *run* · `elebe` *sleep*
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *a dog and a cat*
 
@@ -304,7 +304,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zazawan vawalal zululon vurunul xam.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zadagal zagadal zam.`
 
@@ -501,7 +501,7 @@ No **u** on plain **u**, and no **u** on stacked **ao** / **ae** / **oe**. No **
 
 **Inclusive (`ao`)** — one or more may hold. **-m** on **ao** does **not** allow empty.
 
-**Negation distribution (not De Morgan):** negation over a join is **distributive** — it pushes into each conjunct and **keeps the same join vowel**. Agelan does **not** flip *and*↔*or* under negation.
+**Negation distribution (not De Morgan):** negation over a join is **distributive** — it pushes into each conjunct and **keeps the same join vowel**. Agalan does **not** flip *and*↔*or* under negation.
 
 ```
 `A B val vul.`
@@ -659,7 +659,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `adaga` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `unune` *water* · `omonu` *challenging* · `onuno` *onion* · `ugume` *cucumber* · `abele` *apple* · `ozowe` *wash* · `awala` *walk* · `urunu` *run* · `elebe` *sleep*
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *tea ≻ coffee ≻ water*
 
@@ -709,7 +709,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zadedal zogovel zol zununel zal.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zual gagadal.`
 
@@ -828,7 +828,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `adeda` *tea* · `ogove` *coffee* · `unune` *water* · `ebere` *person*
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *tea or coffee (the usual named menenu)*
 
@@ -860,7 +860,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 `zazawan zululon zur.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zan.`
 

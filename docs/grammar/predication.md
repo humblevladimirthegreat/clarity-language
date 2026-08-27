@@ -1,7 +1,7 @@
 # Predication (classification and identity)
 <a id="predication"></a>
 
-How Agelan says English *to be* for **kind / role** (*Azawan is a teacher*) and **identity** (*Clark is Superman*) — without a general *to-be* verb.
+How Agalan says English *to be* for **kind / role** (*Azawan is a teacher*) and **identity** (*Clark is Superman*) — without a general *to-be* verb.
 
 Why no copula: every job English gives *to be* already has its own shape here. Kind / role is subject + classifying adjective; identity is the closed **SAME** pattern ([below](#identity)); equal degree on a scale is the [equative](comparatives.md#equatives). A general *to-be* would blur those distinct jobs without adding a meaning of its own.
 
@@ -90,7 +90,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `edege` *teacher* · `uzudu` *student* · `adaga` *dog* · `agada` *cat* · `abogo` *book* · `elulu` *blue* · `uzumu` smile → *happy* (**-m**) · `omonu` *challenging* (**-m**) · `awala` *walk* · `elebe` *sleep* · `onunu` **SAME** · `odava` *Clark* · `uzuba` *Superman*
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *Azawan is challenging.*
 
@@ -140,7 +140,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zagadal gelulul.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zazawan gomonum.`
 
@@ -212,7 +212,7 @@ Values still stack on the classifying `/ɡ/` (`gedegel w-…xa…`) when the poi
 | **-n** | named / conventional identity frame (rare; titled equivalence) |
 | **-r** | resume a prior identity ascription |
 
-| Agelan | Reading |
+| Agalan | Reading |
 |---------|---------|
 | `zodavan gonunul buzuban` | *Clark is (the same as) Superman* |
 | `zodavan gonunum buzuban` | soft: *Clark is basically Superman* |
@@ -231,7 +231,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `edege` *teacher* · `uzudu` *student* · `onunu` **SAME** · `odava` *Clark* · `uzuba` *Superman* · `ebere` (band: *the person who…*) · `awala` *walk* · `elebe` *sleep*
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *Clark is Superman.*
 
@@ -275,7 +275,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zodavan gonunur buzuban.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zodavan gonunum buzuban.`
 

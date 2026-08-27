@@ -1,21 +1,21 @@
-# Proposal: learner STT (phoneme ASR, no Agelan speech corpus)
+# Proposal: learner STT (phoneme ASR, no Agalan speech corpus)
 
 **Status:** PROPOSED  
 **Related:** reverse of [learner-tts.md](learner-tts.md); long-term TODO *speech to text*; parser assumed shipped ([parser-pipeline.md](../meta/parser-pipeline.md))  
-**Design authority:** spoken forms stay in the grammar docs ([phonology.md](../grammar/phonology.md), [spans.md](../grammar/spans.md#writing-vs-speech), [numbers.md](../grammar/numbers.md#writing-preferred-shorthand), [core.md](../grammar/core.md#orthography)). This proposal covers **tooling only**: microphone audio → Agelan letters → optional preferred writing. It does **not** train an Agelan acoustic model.
+**Design authority:** spoken forms stay in the grammar docs ([phonology.md](../grammar/phonology.md), [spans.md](../grammar/spans.md#writing-vs-speech), [numbers.md](../grammar/numbers.md#writing-preferred-shorthand), [core.md](../grammar/core.md#orthography)). This proposal covers **tooling only**: microphone audio → Agalan letters → optional preferred writing. It does **not** train an Agalan acoustic model.
 
 ## Motivation
 
 Learners will want to **check pronunciation** (did this utterance match the example?) and later **dictate** drills. English-centric STT (unconstrained Whisper, Web Speech API) will invent English spelling and wrong phones (`j` as *jay*, `x` as *ks*, stacked vowels as diphthongs).
 
-Agelan is a small, regular sound system with spelling that shows the sound. The expensive part of ASR is **acoustics**; the Agelan-specific part is **mapping phones to letters and legal words**. Existing open-source **universal / multilingual phoneme recognizers** already do the first job. This proposal reuses those models unchanged and puts Agelan knowledge in a thin inverse of the TTS stack (`toPhonemes` run backwards, then `toSpeech` run backwards).
+Agalan is a small, regular sound system with spelling that shows the sound. The expensive part of ASR is **acoustics**; the Agalan-specific part is **mapping phones to letters and legal words**. Existing open-source **universal / multilingual phoneme recognizers** already do the first job. This proposal reuses those models unchanged and puts Agalan knowledge in a thin inverse of the TTS stack (`toPhonemes` run backwards, then `toSpeech` run backwards).
 
-**“Usable” here means:** careful, native-phonology speech from a learner mic becomes a speech-surface string (and, where documented, preferred writing). It does **not** mean English-Whisper quality, singing ASR, or a custom neural Agelan voice/listener.
+**“Usable” here means:** careful, native-phonology speech from a learner mic becomes a speech-surface string (and, where documented, preferred writing). It does **not** mean English-Whisper quality, singing ASR, or a custom neural Agalan voice/listener.
 
 ## Goals
 
-1. Transcribe **native Agelan speech** to the **spoken channel** (CV number words, spoken span opens/closes, ordinary `PoS+root+ending`).
-2. Reuse a **pretrained phoneme ASR** (no Agelan recordings, no fine-tune on eSpeak).
+1. Transcribe **native Agalan speech** to the **spoken channel** (CV number words, spoken span opens/closes, ordinary `PoS+root+ending`).
+2. Reuse a **pretrained phoneme ASR** (no Agalan recordings, no fine-tune on eSpeak).
 3. Map phones → letters with the **same table** as [phonology.md](../grammar/phonology.md) / [`src/tts/phonemes.ts`](../../src/tts/phonemes.ts), including collapse of unvoiced **style** allophones.
 4. Segment words using **phonotactics** (coda only at the word edge: **-l / -m / -n / -r**, optional **-sh**).
 5. Optionally **snap** tokens to published roots and closed lists; optionally **compress** spoken numbers/spans to preferred writing (inverse of TTS `toSpeech`).
@@ -23,10 +23,10 @@ Agelan is a small, regular sound system with spelling that shows the sound. The 
 
 ## Non-goals
 
-- Collecting or training on an Agelan speech corpus (including TTS-synthetic fine-tunes).
+- Collecting or training on an Agalan speech corpus (including TTS-synthetic fine-tunes).
 - Unconstrained Whisper / cloud dictation as the default engine.
 - Singing mode.
-- Guessing **opaque / foreign** interiors as Agelan (`d<sushi>`, `z<Sam>n`) — same policy as TTS: skip or mark, do not run native G2P.
+- Guessing **opaque / foreign** interiors as Agalan (`d<sushi>`, `z<Sam>n`) — same policy as TTS: skip or mark, do not run native G2P.
 - Inventing spoken or written forms not in the grammar docs.
 - Replacing the parser as design authority.
 
@@ -67,13 +67,13 @@ Microphone audio
 | Stage | Input | Output | Owns |
 |-------|--------|--------|------|
 | **Phoneme ASR** | Wav / mic | Phone sequence | Third-party model; thin adapter |
-| **`collapseAllophones`** | IPA | Agelan-target IPA | [phonology.md](../grammar/phonology.md) (no voice contrast) |
+| **`collapseAllophones`** | IPA | Agalan-target IPA | [phonology.md](../grammar/phonology.md) (no voice contrast) |
 | **`phonesToLetters`** | Target IPA | Letter stream (`e u o a` … `x`, word-final `sh`) | Inverse of [`phonemes.ts`](../../src/tts/phonemes.ts) |
 | **`segmentWords`** | Letter stream | Speech-surface tokens | [phonotactics](../grammar/phonology.md#phonotactics) |
 | **`snapLexicon`** | Tokens | Tokens (nearest legal word) | Lexicon CSV + closed lists |
 | **`toWriting`** | Speech tokens | Preferred writing | Inverse of TTS expansions |
 
-No lexicon lookup is required for **pronunciation** of native Agelan. Lexicon snap is a **recognizer language model**, not a new sound system.
+No lexicon lookup is required for **pronunciation** of native Agalan. Lexicon snap is a **recognizer language model**, not a new sound system.
 
 ## Phoneme engine (frozen)
 
@@ -87,7 +87,7 @@ Pick one default; keep the adapter swappable.
 
 **Default for v1 tooling: A or a small XLS-R phoneme CTC**, whichedegur is easier to run **offline from Node** (`npm` script) first. Browser WASM is a later phase (same split as eSpeak lazy-load). Do not default to full Whisper.
 
-The acoustic model’s phone set will not match Agelan IPA 1:1. The adapter owns a **model-phone → Agelan-target IPA** table (documented per engine). Fixtures test **requested** Agelan phones after collapse, not the vendor’s raw labels.
+The acoustic model’s phone set will not match Agalan IPA 1:1. The adapter owns a **model-phone → Agalan-target IPA** table (documented per engine). Fixtures test **requested** Agalan phones after collapse, not the vendor’s raw labels.
 
 ## Collapse and letter map
 
@@ -158,7 +158,7 @@ type ListenOptions = {
 };
 
 type ListenResult = {
-  phones: string;           // collapsed Agelan-target IPA
+  phones: string;           // collapsed Agalan-target IPA
   spoken: string[];         // speech-surface words
   writing?: string;         // optional preferred writing
   skipped: string[];        // unmapped / foreign / failed spans
@@ -168,13 +168,13 @@ function listenWav(path: string, opts?: ListenOptions): Promise<ListenResult>;
 function previewPhonesToLetters(ipa: string): string;
 ```
 
-CLI: `npm run listen -- clip.wav` prints phones, spoken tokens, and optional writing. Browser mic is a later phase (lazy model load, same pattern as Speak Agelan).
+CLI: `npm run listen -- clip.wav` prints phones, spoken tokens, and optional writing. Browser mic is a later phase (lazy model load, same pattern as Speak Agalan).
 
 ## UI integration (later)
 
 | Surface | Behavior |
 |---------|----------|
-| Gloss overlay | Optional **Listen** next to **Speak Agelan** — compare spoken preview to mic |
+| Gloss overlay | Optional **Listen** next to **Speak Agalan** — compare spoken preview to mic |
 | Drills | Accept spoken answer; score against expected speech surface |
 | Errors | Failed phones stay visible; do not silently drop |
 
@@ -185,10 +185,10 @@ Do not auto-start the mic on page load.
 1. **Inverse G2P fixtures** — IPA (after collapse) → letters (phonology table + compounds / plurals / hiatus).  
 2. **Round-trip with TTS** — `toPhonemes(word)` → `phonesToLetters` → same word for native speech-shaped tokens (no audio).  
 3. **Segmentation fixtures** — letter streams from grammar examples → word lists.  
-4. **Optional audio smoke** — if a phoneme engine is in CI, a handful of **English or multilingual** clips that happen to contain Agelan-like phone sequences; **not** a requirement to record Agelan.  
+4. **Optional audio smoke** — if a phoneme engine is in CI, a handful of **English or multilingual** clips that happen to contain Agalan-like phone sequences; **not** a requirement to record Agalan.  
 5. **Doc sync** — phonology or writing↔speech changes fail fixtures until STT maps update.
 
-Do **not** gate merge on WER against an Agelan speech set that does not exist.
+Do **not** gate merge on WER against an Agalan speech set that does not exist.
 
 ## Browser / bundle
 
@@ -205,7 +205,7 @@ Expect the phoneme model to dwarf the TS glue. Keep it off the critical docs ren
 
 | Risk | Mitigation |
 |------|------------|
-| Model phones ≠ Agelan IPA | Per-engine mapping table; fixtures on collapsed Agelan phones |
+| Model phones ≠ Agalan IPA | Per-engine mapping table; fixtures on collapsed Agalan phones |
 | Four vowels confused (`e`/`u`/`o`/`a`) | Lexicon snap; learner-facing “show phones” so the miss is visible |
 | **l** vs **r** | Same; do not add a new phoneme to “help ASR” |
 | Diphthong merge on hiatus | Adapter splits glides; syllabify matches TTS |
@@ -218,8 +218,8 @@ Expect the phoneme model to dwarf the TS glue. Keep it off the critical docs ren
 
 | Alternative | Why not default |
 |-------------|-----------------|
-| Fine-tune Whisper on eSpeak Agelan | Still training; learns TTS artifacts, not mouths |
-| Unconstrained Whisper + prompt “transcribe Agelan” | Invents English; no letter table |
+| Fine-tune Whisper on eSpeak Agalan | Still training; learns TTS artifacts, not mouths |
+| Unconstrained Whisper + prompt “transcribe Agalan” | Invents English; no letter table |
 | whisper.cpp + GBNF letter grammar | Cheap experiment later; acoustics still English-biased |
 | Vosk/Kaldi custom dict, English acoustics | Valid (option 2); more English-phone assumption; keep as fallback if phoneme engines fail in-browser |
 | PocketSphinx command grammar | Fine for a handful of drill phrases; not general dictation |
@@ -231,9 +231,9 @@ Expect the phoneme model to dwarf the TS glue. Keep it off the critical docs ren
 - [ ] Unvoiced style phones collapse to voiced letters per the table above.  
 - [ ] Native speech-shaped words round-trip `toPhonemes` → `phonesToLetters` without audio.  
 - [ ] `segmentWords` splits on legal endings (including **-sh** and citation forms).  
-- [ ] A frozen phoneme ASR can be invoked from a Node CLI; Agelan weights are not trained in this repo.  
+- [ ] A frozen phoneme ASR can be invoked from a Node CLI; Agalan weights are not trained in this repo.  
 - [ ] Opaque/foreign policy matches TTS (skip / mark).  
-- [ ] No Agelan speech corpus and no TTS-synthetic fine-tune required for the default path.
+- [ ] No Agalan speech corpus and no TTS-synthetic fine-tune required for the default path.
 
 ## Phased delivery
 

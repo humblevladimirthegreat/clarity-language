@@ -73,7 +73,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `edege` *teacher* · `adaga` *dog* · `agada` *cat* · `abogo` *book* · `elulu` *blue* · `uzumu` smile → *happy* (**-m**) · `awala` *walk* · `elebe` *sleep* · `uwuru` *write* · `aju` *sit*
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *A dog is blue.*
 
@@ -123,7 +123,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zuhubun dabogol vuwurul.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zadagal gelulul.`
 
@@ -194,11 +194,11 @@ Named individuals, places, one-off objects, titled works: *Azawan*, *Paris*, *th
 
 | Shape | Example | Reading |
 |-------|---------|---------|
-| **Nativized** multipart (Agelan roots + mid-word **`x`**) | `zozohuxalenan` | *Ozohuxalenan* (*wish*×*guidance* — one person) |
-| same under other slots | `dozohuxalenan`, `bozohuxalenan` | one named place / person as object or argument |
+| **Nativized** multipart (Agalan roots + mid-word **`x`**) | `zozohuxalanen` | *Ozohuxalanen* (*wish*×*guidance* — one person) |
+| same under other slots | `dozohuxalanen`, `bozohuxalanen` | one named place / person as object or argument |
 | **Sense / shop label** (two or more lexicon roots) | `zuzuzuxogoven`, `zuzuzuxogovexadedan` | *Sushi-Coffee*; *Sushi-Coffee-Tea* |
 
-Adjacent bare same-role words (`zozohun zalenan`) are two people in a [join](coordination.md). One **`x`-compound** is one resume target and one slot filler.
+Adjacent bare same-role words (`zozohun zalanen`) are two people in a [join](coordination.md). One **`x`-compound** is one resume target and one slot filler.
 
 #### Named handles
 <a id="named-handles"></a>
@@ -267,7 +267,7 @@ Prefix-less [discourse revisers](revisers.md#discourse-revisers) keep reviser en
 
 #### Nativized loans and multipart names
 
-**Nativized loans** (adapted Agelan root + ordinary ending) use ordinary reference suffixes. Compact multipart person/place names: [phrasal proper names](#phrasal-proper-names). Office short names: [named handles](#named-handles).
+**Nativized loans** (adapted Agalan root + ordinary ending) use ordinary reference suffixes. Compact multipart person/place names: [phrasal proper names](#phrasal-proper-names). Office short names: [named handles](#named-handles).
 
 #### Summary by role letter
 
@@ -292,20 +292,20 @@ In [number words](numbers.md), the same four letters have **number-specific** me
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. The point is **-n** as a title on any role letter, one **`x`-compound** name, or an office **handle**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `abogo` *book* · `elulu` *blue* · `awala` *walk* · `urunu` *run* · `uzune` *sing* · `eje` *perception* (*see*) · `uwuru` *write* · `adaza` *haste* · `ozohu`×`alena` (name **Ozohuxalenan**) · `uzu`×`ogove` (label **Sushi-Coffee**) · `edege`×`ululo` (title **Teacher-Courage**, handle **Edulo**)
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `abogo` *book* · `elulu` *blue* · `awala` *walk* · `urunu` *run* · `uzune` *sing* · `eje` *perception* (*see*) · `uwuru` *write* · `adaza` *haste* · `ozohu`×`alane` (name **Ozohuxalanen**) · `uzu`×`ogove` (label **Sushi-Coffee**) · `edege`×`ululo` (title **Teacher-Courage**, handle **Edulo**)
 
-#### English → Agelan
+#### English → Agalan
 
-**1.** *Ozohuxalenan walks.*
+**1.** *Ozohuxalanen walks.*
 
 ::: details Show answer
-`zozohuxalenan vawalal.`
+`zozohuxalanen vawalal.`
 :::
 
-**2.** *Azawan sees Ozohuxalenan* (the place).
+**2.** *Azawan sees Ozohuxalanen* (the place).
 
 ::: details Show answer
-`zazawan dozohuxalenan vejel.`
+`zazawan dozohuxalanen vejel.`
 :::
 
 **3.** *Sushi-Coffee writes.*
@@ -356,18 +356,18 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zazawan dedegexulun vejel.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
-**1.** `zozohuxalenan vawalal.`
+**1.** `zozohuxalanen vawalal.`
 
 ::: details Show answer
-*Ozohuxalenan walks.*
+*Ozohuxalanen walks.*
 :::
 
-**2.** `zazawan dozohuxalenan vejel.`
+**2.** `zazawan dozohuxalanen vejel.`
 
 ::: details Show answer
-*Azawan sees Ozohuxalenan* (the place).
+*Azawan sees Ozohuxalanen* (the place).
 :::
 
 **3.** `zuzuzuxogoven vuwurul.`
@@ -450,7 +450,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 **Roots used here:** `edege` *teacher* · `ululo` *courage* · `alodo` *choice* · `azawa` · `awala` *walk* · `eje` *see*
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** Citation form of the handle for *teacher* × *courage*.
 
@@ -470,7 +470,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 `zazawan dedulon vejel.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `edulon`
 

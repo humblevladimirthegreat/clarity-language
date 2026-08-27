@@ -6,14 +6,14 @@
 
 ## Motivation
 
-Learners can **look up** roots ([lexicon](../grammar/lexicon.md)) and edeguntually **inspect** sentences in context ([gloss-overlay-ui.md](gloss-overlay-ui.md)). They still lack a path to **retain** vocabulary: Agelan ↔ English mappings, literal vs metaphorical senses, and the closed overlay inventory.
+Learners can **look up** roots ([lexicon](../grammar/lexicon.md)) and edeguntually **inspect** sentences in context ([gloss-overlay-ui.md](gloss-overlay-ui.md)). They still lack a path to **retain** vocabulary: Agalan ↔ English mappings, literal vs metaphorical senses, and the closed overlay inventory.
 
-The data is already curated (`lexicon-published.csv`, `lexicon-overlays.csv`). Spaced repetition is a solved product problem (Anki and FSRS). The missing piece is a **thin generator** that emits Agelan-shaped note types from those CSVs — not a second dictionary, not a custom SRS engine, and not a fork of generic “AI vocab deck” tools that assume natural-language TTS and LLM enrichment.
+The data is already curated (`lexicon-published.csv`, `lexicon-overlays.csv`). Spaced repetition is a solved product problem (Anki and FSRS). The missing piece is a **thin generator** that emits Agalan-shaped note types from those CSVs — not a second dictionary, not a custom SRS engine, and not a fork of generic “AI vocab deck” tools that assume natural-language TTS and LLM enrichment.
 
 ## Goals
 
 1. Generate **importable study decks** from the published lexicon and overlay CSVs (regenerable; CSV stays canonical).
-2. Ship **Agelan-abaware note types**: literal vs metaphorical, emoji/mnemonic optional, overlays as their own deck — not a single “word / translation” template.
+2. Ship **Agalan-abaware note types**: literal vs metaphorical, emoji/mnemonic optional, overlays as their own deck — not a single “word / translation” template.
 3. Prefer **Anki** for long-term review (scheduling, mobile, offline).
 4. Support **curated subsets** (tag / band / theme) so learners are not dumped the full root list on day one.
 5. Keep generation **deterministic and gloss-locked** — no AI sense invention; optional English-side media only if explicitly added later.
@@ -22,7 +22,7 @@ The data is already curated (`lexicon-published.csv`, `lexicon-overlays.csv`). S
 ## Non-goals
 
 - Replacing lexicon search or becoming the primary root browser.
-- Training or shipping **Agelan TTS** on cards (see [learner-tts.md](learner-tts.md) when speech exists; flashcards do not depend on it).
+- Training or shipping **Agalan TTS** on cards (see [learner-tts.md](learner-tts.md) when speech exists; flashcards do not depend on it).
 - LLM sentence enrichment, DALL·E card art, or forking CSV→Anki SaaS/CLIs aimed at natural L2 pairs.
 - Implementing a full custom SRS product (scheduling, sync, mobile clients).
 - Inflected full-sentence production as the v1 unit of study (roots and overlays first; cloze / PoS+ending drills later).
@@ -56,7 +56,7 @@ Fields drawn from CSV (and tags derived at export time):
 | Field | Source | Role on card |
 |-------|--------|----------------|
 | `emoji` | published | Optional hint / mnemonic face |
-| `root` | `clarity` | Agelan stem (no PoS / ending) |
+| `root` | `clarity` | Agalan stem (no PoS / ending) |
 | `literal` | published | English literal sense |
 | `metaphorical` | published (may be empty) | Separate sense when present |
 | `mnemonic` | published | Optional redegual / soft hint |
@@ -69,7 +69,7 @@ Fields drawn from CSV (and tags derived at export time):
 
 | Template | Front | Back (redegual) | When |
 |----------|-------|---------------|------|
-| **Recognition** | Agelan `root` | literal (+ emoji); metaphorical if any | all published rows |
+| **Recognition** | Agalan `root` | literal (+ emoji); metaphorical if any | all published rows |
 | **Production** | English literal | `root` (+ emoji / mnemonic optional) | all published rows |
 | **Metaphor** | metaphorical gloss | `root` | only rows with metaphorical filled |
 | **Overlay** | `sense_form` + PoS (or definition prompt) | definition (+ mnemonic) | overlay CSV |
@@ -114,13 +114,13 @@ Exact beginner slices can follow [learning-levels.md](../meta/learning-levels.md
 
 - Preset allowlists aligned with learner bands / themes.
 - Optional in-docs **C** drill (same notes, `ts-fsrs`).
-- Optional English-only TTS on the English face (not Agelan speech).
+- Optional English-only TTS on the English face (not Agalan speech).
 
 ### v3
 
 - Inflected prompts (PoS + ending → surface form).
 - **D** cloze / translation-exercise decks.
-- Optional Agelan audio on the Agelan face once [learner-tts.md](learner-tts.md) ships.
+- Optional Agalan audio on the Agalan face once [learner-tts.md](learner-tts.md) ships.
 
 ## Interaction with other proposals
 
@@ -128,7 +128,7 @@ Exact beginner slices can follow [learning-levels.md](../meta/learning-levels.md
 |----------|----------------|
 | Lexicon search (shipped) | Discovery and filtering inspiration; flashcards are retention, not lookup |
 | [gloss-overlay-ui.md](gloss-overlay-ui.md) | Sentence inspect while reading; flashcards study isolated roots/overlays |
-| [learner-tts.md](learner-tts.md) | Optional later audio on Agelan face; not a v1 dependency |
+| [learner-tts.md](learner-tts.md) | Optional later audio on Agalan face; not a v1 dependency |
 | [parser-pipeline.md](../meta/parser-pipeline.md) | Needed for inflected / cloze decks (v3), not for root export |
 
 ## Out of scope for product debates

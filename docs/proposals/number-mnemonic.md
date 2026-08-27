@@ -8,7 +8,7 @@
 
 English memory systems (Major / Herigone) turn digits into consonants, then fill vowels to make picture-words. The map is many-to-one (`1` = *t* or *d*, `6` = *j/sh/ch/g*, …), so encode and decode fight each other.
 
-Agelan already assigns **one unique onset per digit**. The mnemonic should be that map, not a parallel code. A number becomes a **root consonant skeleton**; published short roots become the pictures.
+Agalan already assigns **one unique onset per digit**. The mnemonic should be that map, not a parallel code. A number becomes a **root consonant skeleton**; published short roots become the pictures.
 
 Usability depends on having **enough two- and three-syllable content roots** with the right skeletons. The published lexicon is not there yet as a peg bank (counts below).
 

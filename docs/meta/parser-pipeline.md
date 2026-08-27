@@ -34,7 +34,7 @@ Library-first multi-stage parser for CLI checks, fixtures that lock the grammar 
 ## Pipeline
 
 ```text
-Agelan text
+Agalan text
     │
     ▼
 ┌──────────────────────────────────────┐

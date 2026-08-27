@@ -1,6 +1,6 @@
 # Generate translation drills
 
-Executable editor policy: add end-of-band Eng ↔ Agelan checkpoints to learner grammar pages without using forms the learner has not been taught.
+Executable editor policy: add end-of-band Eng ↔ Agalan checkpoints to learner grammar pages without using forms the learner has not been taught.
 
 **How to invoke.** Point here and name a grammar file (or one band). No extra prompt is required:
 
@@ -95,7 +95,7 @@ Follow the [template](translation-exercises.md#template). Lead: *Short drills on
 | Intermediate, productive | **6–8** |
 | Advanced, or a thin generate row | **4–6** |
 
-Both directions. Spoilers = Agelan sentence or **loose** free English only — no morph-gloss lecture. Omit recoverable **`jal`**. House names in English prompts (*Azawan walks*). Close variants of **this band’s worked examples**; test the decision the band taught ([principles](translation-exercises.md#principles)).
+Both directions. Spoilers = Agalan sentence or **loose** free English only — no morph-gloss lecture. Omit recoverable **`jal`**. House names in English prompts (*Azawan walks*). Close variants of **this band’s worked examples**; test the decision the band taught ([principles](translation-exercises.md#principles)).
 
 ### 6. Self-check, then lint
 
@@ -153,7 +153,7 @@ No translation checkpoint (recognition, orientation, or no new productive stack)
 | `index.md` | Site include of why-agelan |
 | `lexicon.md` | Search UI, not syntax |
 | `vowel-series.md` | Mnemonic map, not a new morph |
-| `phonology.md` | Letter charts / singability — not Eng ↔ Agelan |
+| `phonology.md` | Letter charts / singability — not Eng ↔ Agalan |
 | `x-compounds.md` | Parser map of families taught on other pages |
 | Advanced bands whose only H3s are **Design notes**, **Constraints**, **Out of scope**, **Boundaries**, or pointer inventories | Nothing to produce; see allowlist **skip** |
 

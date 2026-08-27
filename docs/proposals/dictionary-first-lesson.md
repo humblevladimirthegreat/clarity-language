@@ -40,7 +40,7 @@ Published lexicon fields are **literal** and **metaphorical** (plus emoji / mnem
 | **-n** | **Proper** — named label | `azawan.` | *Azawan* (the name) |
 | **-r** | **Not a new dictionary introduction** — same referent already on the table | `adagar.` (after `adagal.`) | *that dog* / *the dog* (again) |
 
-Do not teach **-r** as “indefinite.” In this language, *a / some X* on a content word is **-l** (new literal). **-r** is [resume](../grammar/reference-suffix.md): the referent is already in play. English *indefinite* vs *definite* is a rough hint only; the Agelan cut is **introduce** (**-l** / **-m** / **-n**) vs **resume** (**-r**).
+Do not teach **-r** as “indefinite.” In this language, *a / some X* on a content word is **-l** (new literal). **-r** is [resume](../grammar/reference-suffix.md): the referent is already in play. English *indefinite* vs *definite* is a rough hint only; the Agalan cut is **introduce** (**-l** / **-m** / **-n**) vs **resume** (**-r**).
 
 **“Not pronouns yet”** means: same ending, same root spelled in full, no stem-prefix rule, no *he/she/it* lexemes, no `zazar` cut from `azawa`. After `adagal.`, write `adagar.` — still a citation or, once sentences start, `zadagar` with the role letter taught in the next beat. How resume **chooses** among sedegural matches stays on [pronouns.md](../grammar/pronouns.md).
 
@@ -79,7 +79,7 @@ Sidebar / [cross-doc path](../meta/learning-levels.md#cross-doc-path): move phon
 
 ## Drills (this lesson only)
 
-English → Agelan, citation only, then one prefixed line:
+English → Agalan, citation only, then one prefixed line:
 
 | Prompt | Answer |
 |--------|--------|

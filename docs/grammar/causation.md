@@ -7,12 +7,12 @@ How to say *A leads to B*, *A is enough for B*, and *B needs A* — using joins,
 ## Beginner
 <a id="beginner"></a>
 
-### Why Agelan splits the forms
+### Why Agalan splits the forms
 <a id="why-split"></a>
 
-English *cause* / *leads to* / *needs* collapses distinctions that drive common mistakes. Agelan keeps them **asymmetric**:
+English *cause* / *leads to* / *needs* collapses distinctions that drive common mistakes. Agalan keeps them **asymmetric**:
 
-| Trap | Agelan nudge |
+| Trap | Agalan nudge |
 |------|----------------|
 | Treating one cause as the **only** cause | Default = **open inclusive** (*would work* / *open to*; others may count) |
 | Confusing **sufficient** with **necessary** | Two **different** constructions — never one bare *cause* join |
@@ -67,7 +67,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `azel` *effort* · `uludu` *cloud* · `ozowo` *snow* · `adaga` *dog* · `agada` *cat* · `abogo` *book* · `ohohu` *house* · `awala` *walk* · `uzune` *sing* · `elebe` *sleep* · `adoro` *next clause* · `urugu` *because* (**-m** on `/h/`)
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *Effort would work (among other routes).*
 
@@ -117,7 +117,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zazawan vawalal hurugum badorol zululon velebel.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zazel zaom.`
 
@@ -180,7 +180,7 @@ Use exclusion / never — not a different gloss on `ao` / `aom`:
 | **`guan` / `huan`** | *without / excluding* the antecedent on the **effect** | series **`u`** (*undo*): take the antecedent abaway and the effect fails |
 | **`hal`** (restrictor) | *never* under the circumstance where the antecedent is absent | exact **-l**: the circumstance is closed off completely |
 
-| Agelan (schematic) | Reading |
+| Agalan (schematic) | Reading |
 |---------------------|---------|
 | `… huan buludul` on raining | *raining excluding / without clouds* |
 | rain clause + **`hal`** under no-clouds circumstance | *never rains when …* |
@@ -285,7 +285,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `edege` *teacher* · `azel` *effort* · `anunu` *rain* · `uludu` *cloud* · `adaga` *dog* · `abogo` *book* · `elade` *promotion* · `olozo` *competence* · `awala` *walk* · `uzune` *sing* · `elebe` *sleep* · `adoro` *next clause* · `adoro` *if* · `ezaze` *iff* · `urugu` *because* · `egega` CAUSE
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *Azawan walks without a dog.*
 
@@ -347,7 +347,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `haon beladel hegegam.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zanunul huan buludul.`
 
@@ -417,7 +417,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 English *because* / *if* blur whether the dependent is **asserted as a fact about the world**.
 
-Agelan separates that on the clause root:
+Agalan separates that on the clause root:
 
 | Root | Dependent | Matrix | Link |
 |------|-----------|--------|------|
@@ -446,7 +446,7 @@ gloss: `h-IF` · `b-next-clause` · `z-rain`
 #### Epistemic *because* (no twin root)
 <a id="epistemic-because"></a>
 
-English often uses *because* for **speaker grounds** (*I say P because Q* / *I think P, because…*) without asserting Q as a fact of the world that grounds the matrix. Agelan keeps **`BECAUSE`** for **world-reason** under the claim.
+English often uses *because* for **speaker grounds** (*I say P because Q* / *I think P, because…*) without asserting Q as a fact of the world that grounds the matrix. Agalan keeps **`BECAUSE`** for **world-reason** under the claim.
 
 | English bundle | Prefer |
 |----------------|--------|
@@ -471,10 +471,10 @@ Particular episode (*this delay was caused by…*) vs standing law (*clouds for 
 
 Causal “laws” show their warrant via evidentiality and universality — not via a stronger join. Mechanism highlight uses **`hegegam`**; exceptionlessness uses **`hafafal`**.
 
-### English → Agelan
+### English → Agalan
 <a id="english-cues"></a>
 
-| English cue | Agelan |
+| English cue | Agalan |
 |-------------|---------|
 | *caused by* + how you know | condition shape (sufficient / necessary) + evidential `/h/` |
 | *caused by* + mechanism focus | condition shape + **`hegegam`** ([CAUSE](#cause)) |
@@ -511,7 +511,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `anunu` *rain* · `uludu` *cloud* · `awala` *walk* · `elebe` *sleep* · `adoro` *next clause* · `adoro` *if* · `ezaze` *iff* · `urugu` *because* · `odoho` *commentary* (**`hodohom`**)
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *Azawan walks because it rains.* (rain is asserted)
 
@@ -543,7 +543,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 `zuludul zaom hual.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zazawan vawalal hurugum badorol zanunul.`
 

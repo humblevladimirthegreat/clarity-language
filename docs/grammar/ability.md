@@ -69,7 +69,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `adaga` *dog* · `uzune` *sing* · `awala` *walk* · `urunu` *run* · `uwuru` *write* · `eje` *see* · `elebe` *sleep* · `aju` *sit*
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *Azawan can sing.*
 
@@ -119,7 +119,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zadagal vejexal.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zazawan vuzunexal.`
 
@@ -220,7 +220,7 @@ gloss: `h-ABIL-unable-temporary`
 
 Stack when useful: e.g. can’t-sing plus unmet competence (`vuzunexol` + `holozoxum`). Bare **`hal`** (*never*) is applicability, not tagged incapability. Need-root **`xu`** stays unmet need, not ability. Unspecified need **`ega`** 🥚 (*potential*) is not **`ABIL`**.
 
-| Agelan (schematic) | Reading |
+| Agalan (schematic) | Reading |
 |---------------------|---------|
 | `vuzunexel` | can’t sing **right now** |
 | `vuzunexol` | can’t sing yet / may become able (or unknown) |
@@ -237,7 +237,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `ele` *size* / *big* · `uzune` *sing* · `egera` *cereal* → *capacity* (**ABIL**)
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *Can’t right now* (no single host / clause-wide).
 
@@ -281,7 +281,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zazawan hegeraxal.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `hegeraxel.`
 

@@ -1,6 +1,6 @@
 # Pronouns
 
-Once something is on the table, you point back with a **-r** form — Agelan has no separate “the X” article.
+Once something is on the table, you point back with a **-r** form — Agalan has no separate “the X” article.
 
 ## Beginner
 <a id="beginner"></a>
@@ -117,7 +117,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `adaga` *dog* · `adara` *dragon* · `abogo` *book* · `awala` *walk* · `aju` *sit* · `elebe` *sleep* · `urunu` *run* · `eje` *see* · `ezehe` *tell* · `edabu` *depart* · `ele` *size* / *big* · `ugobo` *speaker* · `edone` *listener* · `aha` *interlocutors* · `enenu` *generic person* · `adoro` *next clause*
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *Azawan walks. He sits.*
 
@@ -167,7 +167,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zugobon vezehel dazawan dadorol zululon vedabul.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zululon vawalal. zulur vajul.`
 
@@ -221,7 +221,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 ### How English approximates **-r**
 
-Agelan has one resume mechanism; English does not. Approximate by crossing **what was mentioned** (antecedent role) with **what slot you need now** (pronoun role). The referent stays the same; only the English wording changes.
+Agalan has one resume mechanism; English does not. Approximate by crossing **what was mentioned** (antecedent role) with **what slot you need now** (pronoun role). The referent stays the same; only the English wording changes.
 
 **Pronoun `/x/` vs `/h/`:** `/x/`…`-r` is **discourse navigation** — *going back to subject X* / *returning to that thread* (removing it does not change the following claim). Clause **aboutness** (*regarding X*) stays `/h/` + `/b/` X — [adverbs](core.md#adverbs-h) / [discourse markers](core.md#discourse-markers-x).
 
@@ -244,7 +244,7 @@ Clause-force `/j/` is not resumed with `-r` ([utterance markers](core.md#utteran
 
 #### Quick English cheat sheet
 
-| You want English… | Typical Agelan shape |
+| You want English… | Typical Agalan shape |
 |-------------------|------------------------|
 | *he / she / it / they* (entity again) | Noun antecedent → `/z/` `/d/` or `/b/` …`-r` |
 | *do so* / *do that* | Verb antecedent → `/v/` …`-r` |
@@ -290,7 +290,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `awala` *walk* · `urunu` *run* · `elebe` *sleep* · `aju` *sit* · `eje` *see* · `uzumu` smile → *happy* (**-m**) · `adaza` *haste* · `aha` *interlocutors* · `ugobo` *speaker* · `edone` *listener*
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *Azawan walks. Ululon does so.*
 
@@ -340,7 +340,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zazawansh vawalal.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zululon vurunul. zazawan vurunur.`
 
@@ -396,7 +396,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 ### Cross-role inventory
 <a id="cross-role-inventory"></a>
 
-Each subsection is an **antecedent** role; table rows are the **pronoun** role. Reading aid only — Agelan still has one **-r** mechanism.
+Each subsection is an **antecedent** role; table rows are the **pronoun** role. Reading aid only — Agalan still has one **-r** mechanism.
 
 #### Antecedent was a noun (`/z/`, `/d/`, or `/b/`)
 
@@ -472,7 +472,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `adaga` *dog* · `awala` *walk* · `urunu` *run* · `aju` *sit* · `elebe` *sleep* · `ele` *size* / *big* · `uzumu` smile → *happy* (**-m**) · `adaza` *haste*
 
-#### English → Agelan
+#### English → Agalan
 
 **1.** *Azawan sits. Ululon does that with him.*
 
@@ -504,7 +504,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 `zazawan guzumum. zululon vuzumur.`
 :::
 
-#### Agelan → English
+#### Agalan → English
 
 **1.** `zazawan vawalal. gazar gelel.`
 
