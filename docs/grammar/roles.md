@@ -191,7 +191,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 <a id="spatial-laterals"></a>
 <a id="my-left-your-left"></a>
 
-Bare arrow-rose words are **compass** points (north-up map). Body-relative *left* / *right* / *araread* / *back* use the same roots with an explicit **viewpoint**: whose facing counts as that map’s north.
+Bare arrow-rose words are **compass** points (north-up map). Body-relative *left* / *right* / *ahead* / *back* use the same roots with an explicit **viewpoint**: whose facing counts as that map’s north.
 
 **Shape:** ordinary [compound](x-compounds.md) — direction root left of mid-word **`x`**, viewpoint root right of **`x`**, then an ordinary [reference ending](reference-suffix.md):
 
@@ -237,7 +237,7 @@ gloss: `j-command` · `z-listener` · `v-walk` · `h-west-listener`
 
 | Root | Image | Bare spatial | `DIR × ANCHOR` (facing = north) |
 |------|-------|--------------|----------------------------------|
-| **`ububu`** | ⬆️ | north | araread |
+| **`ububu`** | ⬆️ | north | ahead |
 | **`owono`** | ⬇️ | south | back |
 | **`amala`** | ➡️ | east | right |
 | **`eweze`** | ⬅️ | west | left |
@@ -248,7 +248,7 @@ gloss: `j-command` · `z-listener` · `v-walk` · `h-west-listener`
 
 Indoor headings may follow a local map (building north). Prefer a name or listener frame when you mean someone’s body rose (`…xazawan`, `…xedonen`).
 
-Published **metaphors** of the same roots stay bare (`amala` → *progress* / discourse **`xamalal`**; `eweze` → *return*; `odewo` → *retreat*). Generic heading **`ogamo`** stays *compass* / *direction*. Path *forward* / *back* **`ovaro`** / **`agaja`** stay those roots; facing-relative araread / back on this rose is **`ububu` / `owono` × ANCHOR**.
+Published **metaphors** of the same roots stay bare (`amala` → *progress* / discourse **`xamalal`**; `eweze` → *return*; `odewo` → *retreat*). Generic heading **`ogamo`** stays *compass* / *direction*. Path *forward* / *back* **`ovaro`** / **`agaja`** stay those roots; facing-relative ahead / back on this rose is **`ububu` / `owono` × ANCHOR**.
 
 #### Gravity (`avuza` / `ovazo`)
 

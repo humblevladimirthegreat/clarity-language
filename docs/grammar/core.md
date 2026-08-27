@@ -411,7 +411,7 @@ gloss: `g-blue` · `z-dog`
 *a blue dog*
 ```
 
-mid-word **l** = **lean left** — look araread to the next host. Only `/ɡ/` takes this **l**.
+mid-word **l** = **lean left** — look ahead to the next host. Only `/ɡ/` takes this **l**.
 
 The package is the same as after-the-noun order: plain `/ɡ/`, or complex `/ɡ/` + `/b/`, plus any following `/w/` stack. `/b/` and `/w/` still follow that `/ɡ/` (`glelulul wazebol zodogol` = *a loud-volume blue dog*). Before-the-noun order is optional style (meter, focus, comfort from your first language).
 

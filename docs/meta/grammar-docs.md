@@ -231,7 +231,7 @@ In each section, mention **only what that section is teaching**. Do not name, te
 |------|----------------|
 | One peer link when the learner **already** met the form, or when resolving a **real near-miss** they will invent *now* | “You’ll later learn…”, “full treatment in…”, and ownership fences (“this page owns / does not own X”) |
 | Rare **Needs:** when the dependency is not obvious from the path | Ritual prereq walls and long **See also** lists in the lead |
-| Same-page deferrals (“X is Intermediate ([…])”) | Peek-araread to a **later peer’s** Intermediate / Advanced in Beginner prose |
+| Same-page deferrals (“X is Intermediate ([…])”) | Peek-ahead to a **later peer’s** Intermediate / Advanced in Beginner prose |
 | Optional short **See also** at the **end** (a few precise near-misses) | Link walls that restate the sidebar path or dump every related peer |
 
 **Test:** if the sentence’s only job is to name a topic the path has not reached yet, delete it. If it resolves a trap the learner will hit *now*, one link is enough — do not restate the other doc.

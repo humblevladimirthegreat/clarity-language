@@ -84,14 +84,14 @@ function isGlHead(token: IToken): boolean {
   return token.tokenType === G && (token.payload as LexWord).gl === true;
 }
 
-function isNpSlotLookararead(la1: IToken, la2: IToken, slot: NpSlot): boolean {
+function isNpSlotLookahead(la1: IToken, la2: IToken, slot: NpSlot): boolean {
   if (npSlot(la1) === slot) return true;
   return isGlHead(la1) && npSlot(la2) === slot;
 }
 
 class AgelanSentenceParser extends CstParser {
   constructor() {
-    super(allTokens, { recoveryEnabled: false, maxLookararead: 3 });
+    super(allTokens, { recoveryEnabled: false, maxLookahead: 3 });
     this.performSelfAnalysis();
   }
 
@@ -199,15 +199,15 @@ class AgelanSentenceParser extends CstParser {
       { GATE: () => this.LA(1).tokenType === IslandEdge, ALT: () => this.SUBRULE(this.islandUnit) },
       { GATE: () => this.LA(1).tokenType === SpanOpen, ALT: () => this.SUBRULE(this.spanUnit) },
       {
-        GATE: () => isNpSlotLookararead(this.LA(1), this.LA(2), "z"),
+        GATE: () => isNpSlotLookahead(this.LA(1), this.LA(2), "z"),
         ALT: () => this.SUBRULE(this.zCoord),
       },
       {
-        GATE: () => isNpSlotLookararead(this.LA(1), this.LA(2), "d"),
+        GATE: () => isNpSlotLookahead(this.LA(1), this.LA(2), "d"),
         ALT: () => this.SUBRULE(this.dCoord),
       },
       {
-        GATE: () => isNpSlotLookararead(this.LA(1), this.LA(2), "b"),
+        GATE: () => isNpSlotLookahead(this.LA(1), this.LA(2), "b"),
         ALT: () => this.SUBRULE(this.bCoord),
       },
       {
@@ -247,7 +247,7 @@ class AgelanSentenceParser extends CstParser {
 
   public zCoord = this.RULE("zCoord", () => {
     this.AT_LEAST_ONE({
-      GATE: () => isNpSlotLookararead(this.LA(1), this.LA(2), "z"),
+      GATE: () => isNpSlotLookahead(this.LA(1), this.LA(2), "z"),
       DEF: () => {
         this.SUBRULE(this.zCoordPart);
       },
@@ -256,7 +256,7 @@ class AgelanSentenceParser extends CstParser {
 
   public dCoord = this.RULE("dCoord", () => {
     this.AT_LEAST_ONE({
-      GATE: () => isNpSlotLookararead(this.LA(1), this.LA(2), "d"),
+      GATE: () => isNpSlotLookahead(this.LA(1), this.LA(2), "d"),
       DEF: () => {
         this.SUBRULE(this.dCoordPart);
       },
@@ -265,7 +265,7 @@ class AgelanSentenceParser extends CstParser {
 
   public bCoord = this.RULE("bCoord", () => {
     this.AT_LEAST_ONE({
-      GATE: () => isNpSlotLookararead(this.LA(1), this.LA(2), "b"),
+      GATE: () => isNpSlotLookahead(this.LA(1), this.LA(2), "b"),
       DEF: () => {
         this.SUBRULE(this.bCoordPart);
       },
@@ -283,7 +283,7 @@ class AgelanSentenceParser extends CstParser {
       {
         ALT: () => {
           this.AT_LEAST_ONE({
-            GATE: () => isNpSlotLookararead(this.LA(1), this.LA(2), "z") && this.LA(1).tokenType !== JoinZ,
+            GATE: () => isNpSlotLookahead(this.LA(1), this.LA(2), "z") && this.LA(1).tokenType !== JoinZ,
             DEF: () => {
               this.SUBRULE(this.npConjunct);
             },
@@ -310,7 +310,7 @@ class AgelanSentenceParser extends CstParser {
       {
         ALT: () => {
           this.AT_LEAST_ONE({
-            GATE: () => isNpSlotLookararead(this.LA(1), this.LA(2), "d") && this.LA(1).tokenType !== JoinD,
+            GATE: () => isNpSlotLookahead(this.LA(1), this.LA(2), "d") && this.LA(1).tokenType !== JoinD,
             DEF: () => {
               this.SUBRULE(this.npConjunct);
             },
@@ -337,7 +337,7 @@ class AgelanSentenceParser extends CstParser {
       {
         ALT: () => {
           this.AT_LEAST_ONE({
-            GATE: () => isNpSlotLookararead(this.LA(1), this.LA(2), "b") && this.LA(1).tokenType !== JoinB,
+            GATE: () => isNpSlotLookahead(this.LA(1), this.LA(2), "b") && this.LA(1).tokenType !== JoinB,
             DEF: () => {
               this.SUBRULE(this.npConjunct);
             },
