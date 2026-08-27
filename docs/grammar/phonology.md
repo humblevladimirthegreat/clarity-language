@@ -10,7 +10,7 @@ How Agelan **sounds** and how syllables are built. Goals: easy to sing, spelling
 
 Agelan uses vowels that are not fully closed, so you can sing high and low without heavy vowel modification. Consonants prefer the **voiced** version so you can sustain a note across letters (voiceless stops the airflow briefly). You may still use unvoiced variants for style. Word shape keeps consonants at **onsets** and at the **word edge**, so held notes and quick singing do not fight mid-syllable stops — and the ending still marks where each word stops when rhythm eats pauses.
 
-singable vowels + clear edges — spelling shows the sound.
+Singable vowels and clear edges — spelling shows the sound.
 
 ### Vowels
 
@@ -31,12 +31,12 @@ There is no phonemic voiced / unvoiced contrast; voiced is preferred so the voca
 
 | Letter | IPA | English cue | Unvoiced variant | Example |
 |--------|-----|-------------|------------------|---------|
-| **h** | /ɦ/ | *araread* | /h/ — *hat* | `huan` /ɦu.ɑn/ |
+| **h** | /ɦ/ | *ahead* | /h/ — *hat* | `huan` /ɦu.ɑn/ |
 | **w** | /w/ | *we* | | `wul` /wul/ |
 | **g** | /ɡ/ | *go* | /k/ — *kite* | `gedegel` |
 | **d** | /d/ | *do* | /t/ — *toe* | `daxal` |
 | **j** | /j/ | *yes* (Germanic *j* as in *ja*) | | `jael` /ja.el/ |
-| **b** | /b/ | *be* | /p/ — *pay* | `borodol` |
+| **b** | /b/ | *be* | /p/ — *pay* | `bodol` |
 | **z** | /z/ | *zoo* | /s/ — *sea* | `zazawan` |
 | **m** | /m/ | *me* | | `zemogol` |
 | **n** | /n/ | *no* | | `na` /na/ |
@@ -78,6 +78,42 @@ Number words are a closed exception built on the PoS prefix plus an **r**-initia
 
 After a PoS prefix, a following **r** (start of the number marker) may form a cluster that ordinary content words never use (e.g. `/ɡ/`+`r`, `/z/`+`r`, `/v/`+`r`, `/h/`+`r`, `/j/`+`r`, `/x/`+`r`) — content roots are **vowel-initial**, so **`r` as a root onset** only appears **after a vowel** inside the root (`uru`), never immediately after the PoS letter. That **`PoS+r`** cluster is legal **only** in [number words](numbers.md). Number-marker **V** is usually a single vowel (`ra` / `ru` / `re` / `ro`); end-relative ordinals use digraph **`eu`** (`reu…`, writing **`#-`**) — stacked vowels as elsewhere, not join **`ue`**. Number stems are a closed formal grammar and must not be assigned as ordinary lexicon roots. Ordinary vs number-specific endings: [reference-suffix.md](reference-suffix.md#number-word-exception).
 
+### Letter names
+<a id="letter-names"></a>
+<a id="letter-names-and-digits"></a>
+
+Vowels are named by holding the vowel. Consonants take one CV syllable. Recite in [table](#beginner) order; pause between names when spelling.
+
+***e, u, o, a, hu, we, ga, da, ja, be, ze, me, nu, vu, lo, ro, xe***
+
+```
+`agada` → ***a ga a da a***
+```
+
+[Digit syllables](numbers.md#digits) keep mixed vowels for distinctiveness. Letter names that share an onset with a digit use the **series opposite** vowel: **`a`↔`u`**, **`o`↔`e`**.
+
+| Onset | Digit syllable | Letter name | Mnemonic |
+|-------|----------------|-------------|----------|
+| **w** | wo (1) | **we** | **o**↔**e** |
+| **d** | du (2) | **da** | **u**↔**a** |
+| **r** | re (3) | **ro** | **e**↔**o** |
+| **m** | mo (4) | **me** | **o**↔**e** |
+| **v** | va (5) | **vu** | **a**↔**u** |
+| **g** | gu (6) | **ga** | **u**↔**a** |
+| **l** | le (7) | **lo** | **e**↔**o** |
+| **h** | ha (8) | **hu** | **a**↔**u** |
+| **n** | na (9) | **nu** | **a**↔**u** |
+| **z** | zo (0) | **ze** | **o**↔**e** |
+
+Three onsets are not digits. Their names follow the English letter-name, mapped onto Agelan vowels:
+
+| Letter | Name | Mnemonic |
+|--------|------|----------|
+| **j** | **ja** | cue *ja* |
+| **b** | **be** | *bee* |
+| **x** | **xe** | *eks* |
+
+Plural **-sh** is the [word-edge](#phonotactics) ending, not a letter name. Pause between names so **`da`** + **`a`** stay two syllables. In a clause, package the glyph as a [mention](spans.md) (`d{z}` — interior spoken ***ze***). Unmarked **a** / **e** / **o** / **u** as names are not [revisers](revisers.md) (`al` / `el` / …).
 
 ## Advanced
 <a id="advanced"></a>
@@ -110,10 +146,11 @@ Versus (not Agelan — built to violate the constraints):
 
 / seiɹ ˈʈʂuɹt tis ˈheb.ɡiɹn fuofts /
 
-The first should stay easier to sustain edegun when the second is only a little harder to speak.
+The first should stay easier to sustain even when the second is only a little harder to speak.
 
 ## See also
 
 - Writing words / orthography: [core.md](core.md#orthography)
-- Numbers (PoS+`r` exception): [numbers.md](numbers.md)
+- Numbers (PoS+`r` exception and [digit syllables](numbers.md#digits)): [numbers.md](numbers.md)
+- Mention spans (letter as form in a clause): [spans.md](spans.md)
 - Mid-word **`x`**: [x-compounds.md](x-compounds.md)
