@@ -66,10 +66,7 @@ export const CLARITY_CONSONANTS = [
   "r",
 ] as const;
 
-type Tracks = {
-  remappedVowels: string[];
-  remappedConsonants: string[];
-};
+const VOWEL_SET = new Set<string>(CLARITY_VOWELS);
 
 function normalizeInput(input: string): string {
   const expanded = input
@@ -80,21 +77,6 @@ function normalizeInput(input: string): string {
     throw new Error("Input must contain at least one letter");
   }
   return letters;
-}
-
-function splitTracks(letters: string): { vowels: string[]; consonants: string[] } {
-  const vowels: string[] = [];
-  const consonants: string[] = [];
-
-  for (const letter of letters) {
-    if (VOWEL_LETTERS.has(letter)) {
-      vowels.push(letter);
-    } else {
-      consonants.push(letter);
-    }
-  }
-
-  return { vowels, consonants };
 }
 
 function remapVowel(letter: string): string {
@@ -113,54 +95,233 @@ function remapConsonant(letter: string): string {
   return mapped;
 }
 
-function atWithWrap<T>(items: T[], index: number): T {
-  return items[index % items.length]!;
+function isVowel(ch: string): boolean {
+  return VOWEL_SET.has(ch);
 }
 
-function getTracks(letters: string, reverse = false): Tracks {
-  let { vowels, consonants } = splitTracks(letters);
-  if (reverse) {
-    vowels = [...vowels].reverse();
-    consonants = [...consonants].reverse();
+/** Map English letters left to right; collapse runs of the same Agelan letter. */
+export function mappedSourceLetters(input: string): string[] {
+  const letters = normalizeInput(input);
+  const out: string[] = [];
+  for (const letter of letters) {
+    const mapped = VOWEL_LETTERS.has(letter) ? remapVowel(letter) : remapConsonant(letter);
+    if (out[out.length - 1] === mapped) {
+      continue;
+    }
+    out.push(mapped);
   }
-
-  return {
-    remappedVowels: vowels.length === 0 ? ["a"] : vowels.map(remapVowel),
-    remappedConsonants: consonants.length === 0 ? ["j"] : consonants.map(remapConsonant),
-  };
+  return out;
 }
 
-function buildWord(
-  tracks: Tracks,
-  syllables: number,
-  vowelStart: number,
-  consonantStart: number,
+function nearestMatch(
+  tokens: string[],
+  insertAt: number,
+  pred: (ch: string) => boolean,
+  fallback: string,
 ): string {
-  const { remappedVowels, remappedConsonants } = tracks;
-  let root = atWithWrap(remappedVowels, vowelStart);
+  let best: string | null = null;
+  let bestScore = Infinity;
+  for (let j = 0; j < tokens.length; j++) {
+    const ch = tokens[j]!;
+    if (!pred(ch)) {
+      continue;
+    }
+    const dist = j >= insertAt ? j - insertAt : insertAt - j;
+    const score = dist + (j >= insertAt ? -0.5 : 0);
+    if (score < bestScore) {
+      bestScore = score;
+      best = ch;
+    }
+  }
+  return best ?? fallback;
+}
 
-  for (let i = 1; i < syllables; i++) {
-    root += atWithWrap(remappedConsonants, consonantStart + i - 1);
-    root += atWithWrap(remappedVowels, vowelStart + i);
+type Repair = {
+  word: string;
+  fillerAt: boolean[];
+};
+
+function repair(tokens: string[]): Repair {
+  if (tokens.length === 0) {
+    return { word: "", fillerAt: [] };
   }
 
+  const parts: string[] = [];
+  const fillerAt: boolean[] = [];
+
+  const append = (ch: string, filler: boolean): void => {
+    parts.push(ch);
+    fillerAt.push(filler);
+  };
+
+  for (let i = 0; i < tokens.length; i++) {
+    const ch = tokens[i]!;
+    if (parts.length === 0) {
+      if (!isVowel(ch)) {
+        append(nearestMatch(tokens, i, isVowel, "a"), true);
+      }
+      append(ch, false);
+      continue;
+    }
+    const last = parts[parts.length - 1]!;
+    if (isVowel(last) === isVowel(ch)) {
+      if (isVowel(ch)) {
+        append(nearestMatch(tokens, i, (c) => !isVowel(c), "j"), true);
+      } else {
+        append(nearestMatch(tokens, i, isVowel, "a"), true);
+      }
+    }
+    append(ch, false);
+  }
+
+  if (!isVowel(parts[parts.length - 1]!)) {
+    append(nearestMatch(tokens, tokens.length, isVowel, "a"), true);
+  }
+
+  return { word: parts.join(""), fillerAt };
+}
+
+function firstVowel(tokens: string[]): string {
+  return tokens.find(isVowel) ?? nearestMatch(tokens, 0, isVowel, "a");
+}
+
+function fitTokens(tokens: string[], maxLetters: number): string {
+  if (maxLetters < 1) {
+    return "";
+  }
+  if (maxLetters === 1) {
+    return firstVowel(tokens);
+  }
+
+  let kept = [...tokens];
+  while (kept.length > 0) {
+    const word = repair(kept).word;
+    if (word.length <= maxLetters) {
+      return word;
+    }
+    kept.pop();
+  }
+  return firstVowel(tokens);
+}
+
+function padToSyllables(word: string, tokens: string[], syllables: number): string {
+  let root = word;
+  const v = firstVowel(tokens);
+  const c = tokens.find((ch) => !isVowel(ch)) ?? "j";
+  while (clarityRootSyllables(root) < syllables && root.length + 2 <= MAX_ROOT_LENGTH) {
+    root += c + v;
+  }
   return root;
 }
 
-function collectTrackOffsetCandidates(tracks: Tracks, syllables: number): string[] {
+function tokenSubsequences(tokens: string[]): string[][] {
+  const n = tokens.length;
+  if (n === 0) {
+    return [];
+  }
+  if (n > 16) {
+    const out: string[][] = [];
+    for (let len = n; len >= 1; len--) {
+      out.push(tokens.slice(0, len));
+    }
+    for (let i = 0; i < n; i++) {
+      out.push(tokens.filter((_, j) => j !== i));
+    }
+    return out;
+  }
+
+  const out: string[][] = [];
+  const total = 1 << n;
+  for (let mask = 1; mask < total; mask++) {
+    const sub: string[] = [];
+    for (let i = 0; i < n; i++) {
+      if (mask & (1 << i)) {
+        sub.push(tokens[i]!);
+      }
+    }
+    out.push(sub);
+  }
+  return out;
+}
+
+function subsequenceKey(tokens: string[], source: string[]): string {
+  let i = 0;
+  const indices: number[] = [];
+  for (const ch of tokens) {
+    while (i < source.length && source[i] !== ch) {
+      i++;
+    }
+    indices.push(i < source.length ? i : source.length);
+    i++;
+  }
+  return `${tokens.length}:${indices.join(",")}`;
+}
+
+function collectOrderPreservingCandidates(tokens: string[]): string[] {
   const seen = new Set<string>();
   const out: string[] = [];
+  const push = (word: string): void => {
+    if (!isClarityRootShape(word) || word.length > MAX_ROOT_LENGTH || seen.has(word)) {
+      return;
+    }
+    seen.add(word);
+    out.push(word);
+  };
 
-  for (let sum = 0; sum <= 20; sum++) {
-    for (let vowelStart = 0; vowelStart <= sum; vowelStart++) {
-      for (let consonantStart = 0; consonantStart <= sum - vowelStart; consonantStart++) {
-        const word = buildWord(tracks, syllables, vowelStart, consonantStart);
-        if (word.length > MAX_ROOT_LENGTH || seen.has(word)) {
-          continue;
-        }
-        seen.add(word);
-        out.push(word);
+  push(fitTokens(tokens, MAX_ROOT_LENGTH));
+  push(fitTokens(tokens, 3));
+  push(fitTokens(tokens, 1));
+
+  const scored: Array<{ word: string; kept: number; length: number; key: string }> = [];
+  for (const sub of tokenSubsequences(tokens)) {
+    const word = repair(sub).word;
+    if (!isClarityRootShape(word) || word.length > MAX_ROOT_LENGTH) {
+      continue;
+    }
+    scored.push({
+      word,
+      kept: sub.length,
+      length: word.length,
+      key: subsequenceKey(sub, tokens),
+    });
+  }
+  scored.sort((a, b) => b.kept - a.kept || a.length - b.length || a.key.localeCompare(b.key));
+  for (const item of scored) {
+    push(item.word);
+  }
+
+  return out;
+}
+
+function collectFillerVariants(tokens: string[]): string[] {
+  const seen = new Set<string>();
+  const out: string[] = [];
+  const { word, fillerAt } = repair(tokens);
+  const push = (next: string): void => {
+    if (!isClarityRootShape(next) || next.length > MAX_ROOT_LENGTH || seen.has(next)) {
+      return;
+    }
+    seen.add(next);
+    out.push(next);
+  };
+  push(word);
+
+  const sourceConsonants = [...new Set(tokens.filter((ch) => !isVowel(ch)))];
+  if (!sourceConsonants.includes("j")) {
+    sourceConsonants.push("j");
+  }
+
+  for (let i = 0; i < fillerAt.length; i++) {
+    if (!fillerAt[i]) {
+      continue;
+    }
+    const current = word[i]!;
+    const alphabet = isVowel(current) ? CLARITY_VOWELS : sourceConsonants;
+    for (const ch of alphabet) {
+      if (ch === current) {
+        continue;
       }
+      push(word.slice(0, i) + ch + word.slice(i + 1));
     }
   }
 
@@ -180,16 +341,14 @@ function collectHyphenSegmentCandidates(input: string): string[] {
 
   const seen = new Set<string>();
   const out: string[] = [];
-
   for (const segment of segments) {
-    let letters: string;
+    let tokens: string[];
     try {
-      letters = normalizeInput(segment);
+      tokens = mappedSourceLetters(segment);
     } catch {
       continue;
     }
-
-    for (const word of collectTrackOffsetCandidates(getTracks(letters), 2)) {
+    for (const word of collectOrderPreservingCandidates(tokens)) {
       if (seen.has(word)) {
         continue;
       }
@@ -197,29 +356,6 @@ function collectHyphenSegmentCandidates(input: string): string[] {
       out.push(word);
     }
   }
-
-  return out;
-}
-
-function collectFillerCandidates(tracks: Tracks): string[] {
-  const fillerConsonants = [...new Set([...tracks.remappedConsonants, "j"])];
-  const fillerTracks: Tracks = {
-    remappedVowels: tracks.remappedVowels,
-    remappedConsonants: fillerConsonants,
-  };
-  const seen = new Set<string>();
-  const out: string[] = [];
-
-  for (const syllables of [2, 3]) {
-    for (const word of collectTrackOffsetCandidates(fillerTracks, syllables)) {
-      if (seen.has(word)) {
-        continue;
-      }
-      seen.add(word);
-      out.push(word);
-    }
-  }
-
   return out;
 }
 
@@ -256,12 +392,11 @@ function collectHashFallbackCandidates(input: string): string[] {
 }
 
 function* clarityRootCandidates(input: string): Generator<string> {
-  const letters = normalizeInput(input);
-  const forwardTracks = getTracks(letters);
+  const tokens = mappedSourceLetters(input);
   const seen = new Set<string>();
 
   const push = (word: string): string | null => {
-    if (word.length > MAX_ROOT_LENGTH || seen.has(word)) {
+    if (!isClarityRootShape(word) || word.length > MAX_ROOT_LENGTH || seen.has(word)) {
       return null;
     }
     seen.add(word);
@@ -277,18 +412,10 @@ function* clarityRootCandidates(input: string): Generator<string> {
     }
   };
 
-  const defaultWord = buildWord(forwardTracks, 2, 0, 0);
-  const pushedDefault = push(defaultWord);
-  if (pushedDefault) {
-    yield pushedDefault;
-  }
-
-  yield* yieldWords(collectTrackOffsetCandidates(forwardTracks, 2));
+  yield* yieldWords(collectOrderPreservingCandidates(tokens));
+  yield* yieldWords(collectFillerVariants(tokens));
   yield* yieldWords(collectHyphenSegmentCandidates(input));
-  yield* yieldWords(collectTrackOffsetCandidates(getTracks(letters, true), 2));
-  yield* yieldWords(collectTrackOffsetCandidates(forwardTracks, 3));
-  yield* yieldWords(collectFillerCandidates(forwardTracks));
-  yield* yieldWords(collectTrackOffsetCandidates(getTracks(letters, true), 3));
+  yield* yieldWords(collectOrderPreservingCandidates([...tokens].reverse()));
   yield* yieldWords(collectHashFallbackCandidates(input));
 }
 
@@ -354,21 +481,22 @@ export function allClarityRoots(syllables: number): string[] {
 
 /**
  * Convert an alphabetical string into an Agelan-compatible root of form V(CV)+.
- * Vowel and consonant tracks are zipped with wraparound to fill the requested syllable count.
+ * Source letters stay in English order; fillers only repair V(CV)+ shape.
  */
 export function toClarityWord(input: string, syllables: number): string {
   if (syllables < 1) {
     throw new Error("Syllable count must be at least 1");
   }
 
-  const letters = normalizeInput(input);
-  return buildWord(getTracks(letters), syllables, 0, 0);
+  const tokens = mappedSourceLetters(input);
+  const maxLetters = Math.min(MAX_ROOT_LENGTH, syllables * 2 - 1);
+  const fitted = fitTokens(tokens, maxLetters);
+  return padToSyllables(fitted, tokens, Math.min(syllables, 3));
 }
 
 /**
  * Assign a unique Agelan root using tiered collision resolution.
- * Tries 2-syllable track variants first, then hyphen segments, reverse tracks,
- * a single 3-syllable expansion (5 letters max), filler consonants, and hash fallback.
+ * Order-preserving fits first, then filler variants, hyphen segments, reverse, hash.
  */
 export function toUniqueClarityWord(input: string, usedRoots: Set<string>): string {
   for (const candidate of clarityRootCandidates(input)) {

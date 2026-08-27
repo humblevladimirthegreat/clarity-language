@@ -67,19 +67,20 @@ describe("searchLexicon", () => {
     assert.ok(literals.includes("nervous-laugh"));
   });
 
-  it('finds metaphorical "happy" on smile / uze', () => {
+  it('finds metaphorical "happy" on smile', () => {
     const results = searchLexicon(index, rows, "happy", { limit: 20, overlays, overlayIndex });
-    const hit = results.find((r) => r.clarity === "uze");
-    assert.ok(hit, "expected smile/uze among happy results");
-    assert.equal(hit.literal, "smile");
+    const hit = results.find((r) => r.literal === "smile");
+    assert.ok(hit, "expected smile among happy results");
     assert.ok(hit.matchFields.includes("metaphorical"));
   });
 
-  it('finds clarity root "uze"', () => {
-    const results = searchLexicon(index, rows, "uze", { limit: 10, overlays, overlayIndex });
-    assert.ok(results.some((r) => r.clarity === "uze"));
+  it("finds a published row by its clarity root", () => {
+    const smile = rows.find((r) => r.literal === "smile");
+    assert.ok(smile);
+    const results = searchLexicon(index, rows, smile.clarity, { limit: 10, overlays, overlayIndex });
+    assert.ok(results.some((r) => r.clarity === smile.clarity));
     const top = results[0];
-    assert.equal(top?.clarity, "uze");
+    assert.equal(top?.clarity, smile.clarity);
     assert.ok(top?.matchFields.includes("clarity"));
   });
 

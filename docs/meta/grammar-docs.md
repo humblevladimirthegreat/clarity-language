@@ -16,7 +16,7 @@ Related meta:
 
 ## Dual role
 
-Each grammar page is both **source of truth** for its subsystem and **learner text**. Prefer teach-first structure over inventory-first dumps in **Beginner**. **Advanced may be inventory-first**; if Advanced dwarfs Beginner, split the file. Unassigned or unused-slot inventory stays in [unassigned-reserved.md](unassigned-reserved.md); rejected or speculative features stay in [TODO.md](../../TODO.md) — never in a grammar page appendix.
+Each grammar page is both **source of truth** for its subsystem and **learner text**. Prefer teach-first structure over inventory-first dumps in **Beginner**. **Advanced may be inventory-first**; if Advanced dwarfs Beginner, split the file. Unassigned or unused-slot inventory stays in [unassigned-reserved.md](unassigned-reserved.md); rejected or speculative features stay in [TODO.md](../../TODO.md) — never in a grammar page appendix. Grammar pages teach **assigned readings only**. Do not ship a form as “reserved,” “not used,” or “or reserved,” and do not keep a **Reserved forms** heading whose job is to fence unused phonotactics. *This spelling already has job X* (e.g. a time-code host) is a positive rule — say the job, not “reserved.” If the learner must not build a shape, omit it; if they might invent it *now*, one positive near-miss sentence is enough — never a leftover-slot inventory.
 
 ## Present the current language only
 
@@ -43,6 +43,10 @@ Headings, leads, and asides must make sense to someone who never saw an earlier 
 | “Foreign roots are banned except…” as a lecture | Sounds like a policy fight | Show the loan / span pattern once, with an example |
 | Apologies, changelog asides, “for historical reasons” | Meta about the doc | Current rule + example |
 | Scare-quotes or scare-emphasis on the “real” way | Implies a fake competing system | Neutral wording |
+| “House rules,” “metalanguage / inventory tables,” “parsers accept both” | Maintainer dialect; audience is tooling | Learner writing/speech preference in ordinary words |
+| Titles or leads that name **parser families**, “the parser must…,” “parser cue” | Tooling is not the reader | How a *reader* tells the shapes apart |
+| “Defined core” vs leftover cells; “or reserved” | Advertises unused inventory | Teach the forms that have readings; leave holes off the page |
+| “**…0e0** is not used,” “proper close (reserved)” as a taught row | Unused-slot dump on a public page | Assigned close / number only; holes stay in [unassigned-reserved.md](unassigned-reserved.md) |
 
 **Test:** if you delete the phrase and a new learner loses no meaning, delete it. If the only audience for a sentence is a future editor, move it to [unassigned-reserved.md](unassigned-reserved.md), `TODO.md`, a PR, or this meta page — not the grammar body.
 
@@ -54,13 +58,14 @@ Default to stating only the allowed form. A contrastive negative spends the lear
 |-------|---------|
 | Boilerplate disclaimers: “X is a **root choice**, not `xa`/`xu` polarity”, “plural **-sh** stays unused on `/h/` `/w/`”, “there is no dedicated root”, “not a fourth vowel/role/join”, “**Not won’t:** …” | Delete. State what the form does instead |
 | **Trap tables** (“Not this (real traps)”, “Traps worth one look”, “Keep these for other jobs”) | Delete from body. If two forms are genuinely confusable *at this band*, cover it with one sentence plus an example of each — see below |
+| Inline **`Trap:`** / **“Trap:”** labels before a contrast | Same smell as trap tables; the label is editor hygiene | Fold the contrast into the paragraph or table row without the label |
 | “Do not confuse X with Y” | Delete unless the learner will actually produce the wrong form while reading this section |
 
 **When a contrast earns its place** (all three must hold): the learner can plausibly build the wrong form *now*; both forms appear with a real example; and the contrast fits in one or two sentences inside the relevant table row or paragraph. Otherwise cut it.
 
 ## Mnemonics live in tables
 
-Do not append free-text `**Mnemonic:**` paragraphs after a table. Put mnemonics in a dedicated column of that table so each row carries its own memory hook. For tables whose rows come from the [vowel series](../grammar/vowel-series.md), the mnemonic column shows how **`a`** / **`o`** / **`e`** / **`u`** maps to that row’s meaning. Metaphor emoji may serve as the visual hook, consistent with published-root conventions.
+Do not append free-text `**Mnemonic:**` paragraphs after a table (that leftover is editor layout, not a learner cue). Put mnemonics in a dedicated column of that table so each row carries its own memory hook. For tables whose rows come from the [vowel series](../grammar/vowel-series.md), the mnemonic column shows how **`a`** / **`o`** / **`e`** / **`u`** maps to that row’s meaning. Metaphor emoji may serve as the visual hook, consistent with published-root conventions.
 
 If a page has several such tables, give each its own mnemonic column; never summarize the whole series once in prose and leave later tables bare.
 
@@ -70,6 +75,8 @@ If a page has several such tables, give each its own mnemonic column; never summ
 **Omit** `## Advanced` (or `## Intermediate`) when the rubric’s third question is no: there is no new edge-case, stylistic, or rare inventory. Recap tables, unused-slot lists, “reminder” restatements of earlier bands, and Design-notes dumps do **not** earn a later band. Fold anything still needed into the last band that actually teaches, or drop it.
 
 Do **not** keep a heading whose only job is to say there is nothing here. Learners skip missing bands on the [cross-doc path](learning-levels.md#cross-doc-path). Material that did not make a band belongs in [unassigned-reserved.md](unassigned-reserved.md) or [TODO.md](../../TODO.md), not in a stub appendix on the page.
+
+**Bounce notes are empty bands.** Do not open a page with `## Beginner` (or a pre-band lead) that only says “nothing here / come back when you are ready for Intermediate / this page is Advanced.” Omit the unused band heading. A page that starts at Intermediate or Advanced is fine; the sidebar path already skips missing bands. Do not duplicate the same recap (“house rules,” writing-style bullets) in a later band just to fill Advanced.
 
 ## Examples use the house cast
 <a id="house-cast"></a>
@@ -120,10 +127,11 @@ One short cue is enough (table column, parenthetical, or a line under the rule).
 ## Voice and length
 
 - Address the learner in second person (“use **-r** when…”, “prefer names when…”). That *you* is English pedagogy — not Agelan **`ehado`**.
+- Teaching bands do not use maintainer *we* (“we now write…”) or author *I*. Author *I* is allowed only on signed non-teaching prose in this folder (acknowledgments; the purpose / limits essay), not on rule pages.
 - One idea per H2/H3; the first paragraph should be roughly one short explanation (same bar as the [easy-to-use feature criterion](../grammar/why-agelan.md#criterion-for-features)).
 - Prefer short paragraphs plus a table over a wall of prose.
 - Bold sparingly; put Agelan forms in backticks (`jal`, **-r**, `/ɡ/`).
-- Always call the language **Agelan**.
+- Always call the language **Agelan**. Community / project URLs that still use a legacy host path are fine when they are the real link; do not “fix” them in learner prose.
 
 ## Plain language (no assumed linguistics)
 
@@ -240,7 +248,8 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 | Goals / feature criteria | [why-agelan.md](../grammar/why-agelan.md) (psych); [introduction.md](../grammar/introduction.md) (grammar design) |
 | Core sentence grammar | [core.md](../grammar/core.md) |
 | IPA / pronunciation / phonotactics | [phonology.md](../grammar/phonology.md) (only page that may use IPA) |
-| Unassigned / unused-slot inventory | [unassigned-reserved.md](unassigned-reserved.md) |
+| Unassigned / unused-slot inventory | [unassigned-reserved.md](unassigned-reserved.md) — **never** a grammar-page row, drill, or “reserved” gloss |
+| Parser / CLI / site implementation notes | Code and `docs/meta/` — not titles, leads, or “house rules” on grammar pages |
 | Rejected or speculative features | [TODO.md](../../TODO.md) |
 | Short Eng ↔ Agelan checkpoint | End of a page band — [translation-exercises.md](translation-exercises.md); generate via [drill-generation.md](drill-generation.md) |
 | Multi-turn practice | [examples/](../examples/) (not linked from grammar pages) |
@@ -248,7 +257,7 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 
 ## Banding checklist
 
-Before tagging a section **Beginner**, ask the [three questions](learning-levels.md#rubric-three-questions). Prefer the earlier band when learners need the form to read ordinary examples. Dependency on another subsystem beats “feels hard.” Do not add Advanced for recap, unused-slot lists, or reminders — [empty or pointless bands](#empty-bands).
+Before tagging a section **Beginner**, ask the [three questions](learning-levels.md#rubric-three-questions). Prefer the earlier band when learners need the form to read ordinary examples. Dependency on another subsystem beats “feels hard.” Do not add Advanced for recap, unused-slot lists, bounce notes, or reminders — [empty or pointless bands](#empty-bands).
 
 ## Markdown hygiene
 

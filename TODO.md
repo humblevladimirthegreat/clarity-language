@@ -2,12 +2,10 @@
 Phonology english-to-agelan conversion prioritizes similar placements 
 Statistics captures consonant and vowel distribution 
 Conceptual metaphor (growth mindset) for failure 
-Single page application?
 Consider reserving two syllable words for special
 redundancy mode - if choppy connection, maybe repeat words?
 consistently use role compound for words (teacher derived from teach, not separate root)
 limit deployments to tagged releases
-completely separate out intermediate/advanced into their own pages
 
 ## Evidentiality / tense
 

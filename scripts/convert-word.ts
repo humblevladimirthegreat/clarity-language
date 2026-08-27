@@ -58,7 +58,7 @@ Examples:
 function main(): void {
   const options = parseArgs(process.argv.slice(2));
   const root = options.unique
-    ? toUniqueClarityWord(options.input)
+    ? toUniqueClarityWord(options.input, new Set())
     : toClarityWord(options.input, options.syllables);
   console.log(root);
 }

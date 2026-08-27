@@ -89,7 +89,14 @@ describe("classify", () => {
   });
 
   it("ordinary compound glosses both roots", () => {
-    const word = expectReading("zuzuzuxogeven", "ordinary");
+    const sushi = tables.published.get(
+      [...tables.published.values()].find((r) => r.literal === "sushi")?.clarity ?? "",
+    );
+    const coffee = tables.published.get(
+      [...tables.published.values()].find((r) => r.literal === "coffee")?.clarity ?? "",
+    );
+    assert.ok(sushi && coffee);
+    const word = expectReading(`z${sushi.clarity}x${coffee.clarity}n`, "ordinary");
     assert.equal(word.family.kind, "x");
     if (word.family.kind !== "x") return;
     assert.equal(word.family.xFamily, "compound");
