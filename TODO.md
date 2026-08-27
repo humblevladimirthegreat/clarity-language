@@ -45,5 +45,3 @@ setback responses:
 long term:
 https://main.d2xds94zsgwptg.amplifyapp.com
 -local llm systematically review entire lexicon
--vocab flashcard generator/system — [docs/proposals/vocab-flashcards.md](docs/proposals/vocab-flashcards.md)
--speech to text (phoneme ASR, no Agalan corpus) — [docs/proposals/learner-stt.md](docs/proposals/learner-stt.md)
