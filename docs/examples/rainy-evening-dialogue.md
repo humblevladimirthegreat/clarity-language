@@ -8,7 +8,7 @@ Each turn has: **Agelan** · **gloss** (PoS + English sense; see **[glosses.md](
 
 | Role | Name | Roots | Letter anaphor |
 |------|------|-------|----------------|
-| A | **Uzuzuxogeven** | `uzuzu`×`ogeve` (*sushi*×*coffee*) | `zuzur` / `duzur` / `juzur` … |
+| A | **Uzuzuxogoven** | `uzuzu`×`ogove` (*sushi*×*coffee*) | `zuzur` / `duzur` / `juzur` … |
 | B | **Ubenaxuzonun** | `ubena`×`uzone` (*hospitality*×*optimism*) | `zuber` / `duber` / `juber` … |
 | C | **Amedaxogonon** | `ameda`×`ogono` (*fellowship*×*bond*) | `zamer` / `damer` / `jamer` … |
 
@@ -24,23 +24,23 @@ strict: *Ubenaxuzonun! Hello.*
 
 loose: *Ubenaxuzonun! Hello.*
 
-**B:** `jamedaxogonon juzuzuxogeven jaol jawel.`
+**B:** `jamedaxogonon juzuzuxogoven jaol jawel.`
 
 gloss: `j-fellowship-x-bond` · `j-sushi-x-coffee` · `j-uptake` · `j-greeting`
 
-strict: *Amedaxogonon, Uzuzuxogeven! Sure — hello.*
+strict: *Amedaxogonon, Uzuzuxogoven! Sure — hello.*
 
-loose: *Amedaxogonon, Uzuzuxogeven! Sure — hello.*
+loose: *Amedaxogonon, Uzuzuxogoven! Sure — hello.*
 
-**C:** `jael zamer zam zuzur zam zuber zal guzem.`
+**C:** `jael zamer zam zuzur zam zuber zal guzumum.`
 
-gloss: `j-yes` · `z-←Amedaxogonon` · `z-and.open` · `z-←Uzuzuxogeven` · `z-and.open` · `z-←Ubenaxuzonun` · `z-and` · `g-happy`
+gloss: `j-yes` · `z-←Amedaxogonon` · `z-and.open` · `z-←Uzuzuxogoven` · `z-and.open` · `z-←Ubenaxuzonun` · `z-and` · `g-happy`
 
 strict: *Yes — I (C) and you (A) and you (B) are happy.*
 
 loose: *Yes — I'm happy, and you two are too.*
 
-**A:** `jol duber dadedal dogevel dol von.`
+**A:** `jol duber dadedal dogovel dol von.`
 
 gloss: `j-question` · `d-←Ubenaxuzonun` · `d-tea` · `d-coffee` · `d-or-exactly-one` · `v-choose`
 
@@ -48,7 +48,7 @@ strict: *Do you (B) choose tea or coffee — exactly one?*
 
 loose: *Do you want tea or coffee?*
 
-**B:** `jaol zuber dadedal ol dogevel von.`
+**B:** `jaol zuber dadedal ol dogovel von.`
 
 gloss: `j-uptake` · `z-←Ubenaxuzonun` · `d-tea` · `instead` · `d-coffee` · `v-choose`
 
@@ -56,7 +56,7 @@ strict: *Sure — I (B) choose tea instead of coffee.*
 
 loose: *Sure — I'll take tea instead of coffee.*
 
-**C:** `xonuzul zamer dogevel von.`
+**C:** `xonuzul zamer dogovel von.`
 
 gloss: `x-but` · `z-←Amedaxogonon` · `d-coffee` · `v-choose`
 
@@ -64,7 +64,7 @@ strict: *But I (C) choose coffee.*
 
 loose: *But I'm going with coffee.*
 
-**A:** `xezabel zuber huhunum zarunal.`
+**A:** `xezabel zuber huhunum zanunul.`
 
 gloss: `x-however` · `z-←Ubenaxuzonun` · `h-witnessed` · `z-rain`
 
@@ -72,7 +72,7 @@ strict: *However — that one (B), per memory — it rains.*
 
 loose: *Still — it's raining, as I remember.*
 
-**B:** `jael xamalal zanan howarom vawul vul.`
+**B:** `jael xamalal zanan howarom vawalal vul.`
 
 gloss: `j-yes` · `x-therefore` · `z-interlocutors` · `h-plan` · `v-walking` · `v-not`
 
@@ -80,7 +80,7 @@ strict: *Yes — therefore we (A and B and C as interlocutors) plan not to walk.
 
 loose: *Yes — so we're planning not to walk.*
 
-**C:** `jom huhom zar vawul.`
+**C:** `jom huhom zar vawalal.`
 
 gloss: `j-question` · `h-COMMENT` · `z-who` · `v-walking`
 
@@ -88,17 +88,17 @@ strict: *I wonder — who walks?*
 
 loose: *I wonder — who walks?*
 
-**A:** `juel zuzur vawuxel hodoloxem.`
+**A:** `juel zuzur vawalaxel hodoloxem.`
 
-gloss: `j-no` · `z-←Uzuzuxogeven` · `v-walking-unable-temporary` · `h-competence-x-motive`
+gloss: `j-no` · `z-←Uzuzuxogoven` · `v-walking-unable-temporary` · `h-competence-x-motive`
 
 strict: *No — I (A) can't walk right now — for competence (motive, soft standing).*
 
 loose: *No — I can't walk right now.*
 
-**B:** `el zuzur hegeraxel vawul.`
+**B:** `el zuzur hegeraxel vawalal.`
 
-gloss: `in-other-words` · `z-←Uzuzuxogeven` · `h-ABIL-unable-temporary` · `v-walking`
+gloss: `in-other-words` · `z-←Uzuzuxogoven` · `h-ABIL-unable-temporary` · `v-walking`
 
 strict: *In other words, that one (A) lacks the capacity to walk.*
 
@@ -120,7 +120,7 @@ strict: *Point 2: solution #2. Please, you (B), cook bread and tea.*
 
 loose: *Second — a solution: please cook some bread and tea.*
 
-**B:** `jaol howarom xan zuber dogobo von.`
+**B:** `jaol howarom xan zuber dabogo von.`
 
 gloss: `j-uptake` · `h-plan` · `x-and-then` · `z-←Ubenaxuzonun` · `d-book` · `v-choose`
 
@@ -144,7 +144,7 @@ strict: *At night. (aside: fatigue.)*
 
 loose: *At night. (We're tired.)*
 
-**B:** `zuber zamer zel guzem.`
+**B:** `zuber zamer zel guzumum.`
 
 gloss: `z-←Ubenaxuzonun` · `z-←Amedaxogonon` · `z-rank/more` · `g-happy`
 
@@ -152,7 +152,7 @@ strict: *I (B) am happier than you (C).*
 
 loose: *I'm happier than you.*
 
-**C:** `juol zamer zuber zael guzem.`
+**C:** `juol zamer zuber zael guzumum.`
 
 gloss: `j-not-that` · `z-←Amedaxogonon` · `z-←Ubenaxuzonun` · `z-as…as` · `g-happy`
 
@@ -176,7 +176,7 @@ strict: *Soft yes — I (C) am a cook (soft assert).*
 
 loose: *Yeah… I'd say I'm a cook.*
 
-**B:** `herarem zenun dohuzem varural.`
+**B:** `herarem zenun dohohum varural.`
 
 gloss: `h-hearsay` · `z-someone` · `d-home` · `v-arrival`
 
@@ -218,13 +218,13 @@ loose: *Yes.*
 
 **B:** `jel zuzur zamer zal dabolo von.`
 
-gloss: `j-imperative` · `z-←Uzuzuxogeven` · `z-←Amedaxogonon` · `z-and` · `d-play` · `v-choose`
+gloss: `j-imperative` · `z-←Uzuzuxogoven` · `z-←Amedaxogonon` · `z-and` · `d-play` · `v-choose`
 
 strict: *(You A and you C,) choose play!*
 
 loose: *You two — pick something playful!*
 
-**C:** `jum vawul hodoloxom.`
+**C:** `jum vawalal hodoloxom.`
 
 gloss: `j-prohibition` · `v-walking` · `h-competence-x-ought`
 
@@ -232,9 +232,9 @@ strict: *Don’t walk — ought: competence (endorse).*
 
 loose: *Please don’t walk — stay able.*
 
-**A:** `jem zuzur zuber zamer zal dohuzem vazudal horodom bodol zarunal.`
+**A:** `jem zuzur zuber zamer zal dohohum vazudal horodom bodol zanunul.`
 
-gloss: `j-request` · `z-←Uzuzuxogeven` · `z-←Ubenaxuzonun` · `z-←Amedaxogonon` · `z-and` · `d-home` · `v-standing` · `h-if` · `b-next-clause` · `z-rain`
+gloss: `j-request` · `z-←Uzuzuxogoven` · `z-←Ubenaxuzonun` · `z-←Amedaxogonon` · `z-and` · `d-home` · `v-standing` · `h-if` · `b-next-clause` · `z-rain`
 
 strict: *Please, let’s (A and B and C) stay standing at home if it rains.*
 
@@ -242,13 +242,13 @@ loose: *Please, let's stay home if it rains.*
 
 **B:** `x#e zogalol g#3. zuzur zuber zamer zal hazedoxal hojum habobom.`
 
-gloss: `x-finally` · `z-goal` · `g-third` · `z-←Uzuzuxogeven` · `z-←Ubenaxuzonun` · `z-←Amedaxogonon` · `z-and` · `h-pleasure-x-met` · `h-flow` · `h-INTERNAL`
+gloss: `x-finally` · `z-goal` · `g-third` · `z-←Uzuzuxogoven` · `z-←Ubenaxuzonun` · `z-←Amedaxogonon` · `z-and` · `h-pleasure-x-met` · `h-flow` · `h-INTERNAL`
 
 strict: *Finally: goal #3. We (A and B and C) — pleasure met, medium activation, internal locus.*
 
 loose: *Finally, a third goal: we're actually enjoying this.*
 
-**C:** `hewonol harunal hual zenun vawul zul.`
+**C:** `hewonol hanunul hual zenun vawalal zul.`
 
 gloss: `h-COMMON` · `h-rain` · `h-always` · `z-someone` · `v-walking` · `z-not`
 
@@ -256,9 +256,9 @@ strict: *Usually, when it rains, a person never walks.*
 
 loose: *Usually, when it rains, nobody walks.*
 
-**A:** `xamalal zuzur vezebel dodol zuber guzem.`
+**A:** `xamalal zuzur vezebel dodol zuber guzumum.`
 
-gloss: `x-therefore` · `z-←Uzuzuxogeven` · `v-dialogue` · `d-next-clause` · `z-←Ubenaxuzonun` · `g-happy`
+gloss: `x-therefore` · `z-←Uzuzuxogoven` · `v-dialogue` · `d-next-clause` · `z-←Ubenaxuzonun` · `g-happy`
 
 strict: *Therefore I (A) say that that one (B) is happy.*
 
@@ -272,9 +272,9 @@ strict: *Sure — that speaker (agent of speech) is the same as me (B).*
 
 loose: *Sure — that speaker is me.*
 
-**C:** `jalum zuzur zam zuber zam zamer zal gohuzem.`
+**C:** `jalum zuzur zam zuber zam zamer zal gohohum.`
 
-gloss: `j-amusement` · `z-←Uzuzuxogeven` · `z-and.open` · `z-←Ubenaxuzonun` · `z-and.open` · `z-←Amedaxogonon` · `z-and` · `g-home`
+gloss: `j-amusement` · `z-←Uzuzuxogoven` · `z-and.open` · `z-←Ubenaxuzonun` · `z-and.open` · `z-←Amedaxogonon` · `z-and` · `g-home`
 
 strict: *Ha — that one (A) and that one (B) and that one (C) are home (belonging).*
 
@@ -287,16 +287,16 @@ loose: *Ha — we're home.*
 | Form | Active sense(s) |
 |------|-----------------|
 | `awe` | greeting |
-| `adeda` / `ogeve` | tea / coffee |
+| `adeda` / `ogove` | tea / coffee |
 | `erade` | bread |
 | `ogojo` | cook |
-| `awu` | walking |
-| `aruna` | rain |
-| `ohuze` | house; *home* (metaphorical) |
+| `awala` | walking |
+| `anunu` | rain |
+| `ohohu` | house; *home* (metaphorical) |
 | `udunu` | night |
 | `uderu` | tired; *fatigue* (metaphorical) |
-| `uze` | smile; *happy* (metaphorical) |
-| `ogobo` | book |
+| `uzumu` | smile; *happy* (metaphorical) |
+| `abogo` | book |
 | `abolo` | play |
 | `azuda` | standing |
 | `ezebe` | speech; *dialogue* (metaphorical) |

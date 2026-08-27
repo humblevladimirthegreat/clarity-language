@@ -20,8 +20,8 @@ function parseText(text: string) {
 }
 
 describe("parse — core.md beginner", () => {
-  it("parses zazawan vawul.", () => {
-    const result = parseText("zazawan vawul.");
+  it("parses zazawan vawalal.", () => {
+    const result = parseText("zazawan vawalal.");
     assert.equal(result.utterances.length, 1);
     const body = result.utterances[0]!.bodies[0]!;
     assert.equal(body.clause.units.length, 2);
@@ -29,60 +29,60 @@ describe("parse — core.md beginner", () => {
     assert.equal(body.clause.units[1]!.kind, "vp");
   });
 
-  it("parses zogodol gulebul. as zero-copula predicate", () => {
-    const result = parseText("zogodol gulebul.");
+  it("parses zadagal gelulul. as zero-copula predicate", () => {
+    const result = parseText("zadagal gelulul.");
     const units = result.utterances[0]!.bodies[0]!.clause.units;
     assert.equal(units.length, 2);
     assert.equal(units[0]!.kind, "np");
     assert.equal(units[1]!.kind, "predicate");
   });
 
-  it("parses zazawan gedagel. as subject + predicate adjective", () => {
-    const result = parseText("zazawan gedagel.");
+  it("parses zazawan gedegel. as subject + predicate adjective", () => {
+    const result = parseText("zazawan gedegel.");
     const units = result.utterances[0]!.bodies[0]!.clause.units;
     assert.equal(units.length, 2);
     assert.equal(units[1]!.kind, "predicate");
   });
 
   it("omits jal when recoverable", () => {
-    const result = parseText("zazawan vawul.");
+    const result = parseText("zazawan vawalal.");
     assert.equal(result.utterances[0]!.left.force, undefined);
     assert.equal(result.utterances[0]!.left.impliedForce, "jal");
   });
 
   it("parses jol question", () => {
-    const result = parseText("jol zumogon vawul.");
+    const result = parseText("jol zumogon vawalal.");
     assert.ok(result.utterances[0]!.left.force);
     assert.equal(result.utterances[0]!.left.force!.raw, "jol");
   });
 
   it("parses confirm tag as second utterance", () => {
-    const result = parseText("zazawan vawul. jael.");
+    const result = parseText("zazawan vawalal. jael.");
     assert.equal(result.utterances.length, 2);
     assert.equal(result.utterances[1]!.left.polars[0]?.raw, "jael");
   });
 
   it("parses jam soft statement", () => {
-    const result = parseText("jam zazawan vawul.");
+    const result = parseText("jam zazawan vawalal.");
     assert.equal(result.utterances[0]!.left.force?.raw, "jam");
   });
 
   it("parses jel command with bang", () => {
-    const result = parseText("jel vegul!");
+    const result = parseText("jel vuzunel!");
     assert.equal(result.utterances[0]!.left.force?.raw, "jel");
     assert.equal(result.utterances[0]!.bodies[0]!.punct, "bang");
   });
 
   it("parses polar plus body", () => {
-    const result = parseText("jael zumogon vawul.");
+    const result = parseText("jael zumogon vawalal.");
     assert.equal(result.utterances[0]!.left.polars[0]?.raw, "jael");
     assert.equal(result.utterances[0]!.bodies[0]!.clause.units.length, 2);
   });
 });
 
 describe("parse — coordination.md", () => {
-  it("parses zogodol zagadal zam.", () => {
-    const result = parseText("zogodol zagadal zam.");
+  it("parses zadagal zagadal zam.", () => {
+    const result = parseText("zadagal zagadal zam.");
     const unit = result.utterances[0]!.bodies[0]!.clause.units[0]!;
     assert.equal(unit.kind, "np");
     if (unit.kind !== "np") return;
@@ -93,13 +93,13 @@ describe("parse — coordination.md", () => {
     assert.equal(unit.coord.parts[0]!.join?.raw, "zam");
   });
 
-  it("rejects frame echo zual zonunol zugugel zual", () => {
-    const tokens = tokenizeUtterance("zual zonunol zugugel zual.", tables);
+  it("rejects frame echo zual zonunol zugumel zual", () => {
+    const tokens = tokenizeUtterance("zual zonunol zugumel zual.", tables);
     assert.throws(() => parseSentenceTokens(tokens), SentenceParseError);
   });
 
   it("parses join scope island", () => {
-    const result = parseText("zazawan ^ zudural zal ^ zam.");
+    const result = parseText("zazawan ^ zununel zal ^ zam.");
     const unit = result.utterances[0]!.bodies[0]!.clause.units[0]!;
     assert.equal(unit.kind, "np");
     if (unit.kind !== "np") return;
@@ -111,7 +111,7 @@ describe("parse — coordination.md", () => {
   });
 
   it("parses nested left-associative VP joins", () => {
-    const result = parseText("vawul vezelel vol vurunul val.");
+    const result = parseText("vawalal velebel vol vurunul val.");
     const unit = result.utterances[0]!.bodies[0]!.clause.units[0]!;
     assert.equal(unit.kind, "vp");
     if (unit.kind !== "vp") return;
@@ -125,7 +125,7 @@ describe("parse — coordination.md", () => {
 
 describe("parse — odo dependents", () => {
   it("parses hurugum bodol dependent", () => {
-    const result = parseText("zazawan guzem hurugum bodol zulonun vawul.");
+    const result = parseText("zazawan guzumum hurugum bodol zululon vawalal.");
     const clause = result.utterances[0]!.bodies[0]!.clause;
     assert.ok(clause.dependent);
     assert.equal(clause.dependent!.odo.raw, "bodol");
@@ -133,7 +133,7 @@ describe("parse — odo dependents", () => {
   });
 
   it("parses content dodol with matrix verb after odo", () => {
-    const result = parseText("zazawan dulonun dodol vezabul zogodol vurunul.");
+    const result = parseText("zazawan dululon dodol vezehel zadagal vurunul.");
     const clause = result.utterances[0]!.bodies[0]!.clause;
     assert.ok(clause.dependent);
     assert.equal(clause.units.some((u) => u.kind === "vp"), true);
@@ -143,7 +143,7 @@ describe("parse — odo dependents", () => {
 
 describe("parse — spans", () => {
   it("parses daxal … xuxul span", () => {
-    const result = parseText("daxal zogodol xuxul vawul.");
+    const result = parseText("daxal zadagal xuxul vawalal.");
     const spanUnit = result.utterances[0]!.bodies[0]!.clause.units.find((u) => u.kind === "span");
     assert.ok(spanUnit);
     if (spanUnit?.kind !== "span") return;
@@ -153,8 +153,8 @@ describe("parse — spans", () => {
 });
 
 describe("parse — SVO slots", () => {
-  it("parses zar dumogon vozowel as subject, object, verb (roles.md)", () => {
-    const result = parseText("zar dumogon vozowel.");
+  it("parses zar dumogon vozowol as subject, object, verb (roles.md)", () => {
+    const result = parseText("zar dumogon vozowol.");
     const units = result.utterances[0]!.bodies[0]!.clause.units;
     assert.equal(units.length, 3);
     assert.equal(units[0]!.kind, "np");
@@ -172,26 +172,26 @@ describe("parse — SVO slots", () => {
 });
 
 describe("parse — illegal fences", () => {
-  it("rejects left fence zam zogodol zagadal", () => {
-    const tokens = tokenizeUtterance("zam zogodol zagadal.", tables);
+  it("rejects left fence zam zadagal zagadal", () => {
+    const tokens = tokenizeUtterance("zam zadagal zagadal.", tables);
     assert.throws(() => parseSentenceTokens(tokens), SentenceParseError);
   });
 
   it("rejects infix A zam B zal C", () => {
-    const tokens = tokenizeUtterance("zogodol zam zagadal zal zogodol.", tables);
+    const tokens = tokenizeUtterance("zadagal zam zagadal zal zadagal.", tables);
     assert.throws(() => parseSentenceTokens(tokens), SentenceParseError);
   });
 });
 
 describe("parse — stage 4 resolve", () => {
   it("attaches resolve to parse(text)", () => {
-    const result = parseText("zulonun vawul. zulor vahural.");
+    const result = parseText("zululon vawalal. zulur vajul.");
     assert.ok(result.resolve);
-    assert.equal(result.resolve.anaphors[0]?.antecedent?.raw, "zulonun");
+    assert.equal(result.resolve.anaphors[0]?.antecedent?.raw, "zululon");
   });
 
-  it("marks jol zar vawul. as fill-ask", () => {
-    const result = parseText("jol zar vawul.");
+  it("marks jol zar vawalal. as fill-ask", () => {
+    const result = parseText("jol zar vawalal.");
     assert.equal(result.resolve?.asks[0]?.kind, "fillAsk");
   });
 });

@@ -11,7 +11,7 @@ You use joins when English would say *and*, *or*, *not*, *prefer A over B*, *som
 
 | Level | Prefix | Example job |
 |-------|--------|-------------|
-| Phrase | `/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/` | *Azawan and Ulonun*, *big and red* |
+| Phrase | `/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/` | *Azawan and Ululon*, *big and red* |
 | VP | `/v/` | *ate and drank* |
 | Clause | `/x/` | *It rained and then we left* |
 
@@ -65,7 +65,7 @@ PHRASE PHRASE ( PHRASE )* P-JOIN ( SHARED )*
 **Mnemonic:** the join **closes** the list on the right — like a closing bracket.
 
 ```
-`zogodol zagadal zam.`
+`zadagal zagadal zam.`
 
 gloss: `z-dog` · `z-cat` · `zam`
 
@@ -73,7 +73,7 @@ gloss: `z-dog` · `z-cat` · `zam`
 ```
 
 ```
-`dabebal vabebal dudural vudural vam.`
+`dabelel vabelel dununel vununel vam.`
 
 gloss: `d-apple` · `v-tempt` · `d-water` · `v-drink` · `vam`
 
@@ -81,11 +81,11 @@ gloss: `d-apple` · `v-tempt` · `d-water` · `v-drink` · `vam`
 ```
 
 ```
-`zazawan zulonun xam.`
+`zazawan zululon xam.`
 
-gloss: `z-Azawan` · `z-Ulonun` · `xam`
+gloss: `z-Azawan` · `z-Ululon` · `xam`
 
-*Azawan and Ulonun.*
+*Azawan and Ululon.*
 ```
 
 ### Arity: list, focus, and bare
@@ -123,7 +123,7 @@ On plain **o** only, **-m** also marks **empty-allowed** (*or none* / *or skip*)
 <a id="empty-allowed-om"></a>
 
 ```
-`zogevel zom.`
+`zogovel zom.`
 
 gloss: `z-coffee` · `zom`
 
@@ -131,7 +131,7 @@ gloss: `z-coffee` · `zom`
 ```
 
 ```
-`zadedal zogevel zol.`
+`zadedal zogovel zol.`
 
 gloss: `z-tea` · `z-coffee` · `zol`
 
@@ -175,7 +175,7 @@ Plain **u** means the listed conjuncts **fail**.
 | bare | `zul` / `zum` / `zun` | *no* |
 
 ```
-`gonudam gul.`
+`gomonum gul.`
 
 gloss: `g-challenging` · `gul`
 
@@ -183,7 +183,7 @@ gloss: `g-challenging` · `gul`
 ```
 
 ```
-`zadedal zogevel zul.`
+`zadedal zogovel zul.`
 
 gloss: `z-tea` · `z-coffee` · `zul`
 
@@ -217,7 +217,7 @@ gloss: `zar`
 ```
 
 ```
-`zeborel zar.`
+`zeberel zar.`
 
 gloss: `z-person` · `zar`
 
@@ -225,7 +225,7 @@ gloss: `z-person` · `zar`
 ```
 
 ```
-`zadedal zogevel zar.`
+`zadedal zogovel zar.`
 
 gloss: `z-tea` · `z-coffee` · `zar`
 
@@ -252,26 +252,26 @@ The join prefix **must match** every conjunct head. Under `/ɡ/` `/h/`, joins ar
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. The join sits **after** the conjuncts; pick the vowel (set vs rank, including **`u`**) and the ending (**-l** / **-m** / **-r**), including focus and bare starter forms.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `ogodo` *dog* · `agada` *cat* · `odeda` *tea* · `ogeve` *coffee* · `abeba` *apple* · `udura` *water* · `onuda` *challenging* · `ebore` *person* · `awu` *walk* · `urunu` *run* · `ezele` *sleep*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `adaga` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `abele` *apple* · `unune` *water* · `omonu` *challenging* · `ebere` *person* · `awala` *walk* · `urunu` *run* · `elebe` *sleep*
 
 #### English → Agelan
 
 **1.** *a dog and a cat*
 
 ::: details Show answer
-`zogodol zagadal zam.`
+`zadagal zagadal zam.`
 :::
 
 **2.** *tea or coffee — pick exactly one*
 
 ::: details Show answer
-`zadedal zogevel zol.`
+`zadedal zogovel zol.`
 :::
 
 **3.** *coffee, or skip*
 
 ::: details Show answer
-`zogevel zom.`
+`zogovel zom.`
 :::
 
 **4.** *just Azawan*
@@ -283,13 +283,13 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **5.** *not challenging*
 
 ::: details Show answer
-`gonudam gul.`
+`gomonum gul.`
 :::
 
 **6.** *none of tea or coffee*
 
 ::: details Show answer
-`zadedal zogevel zul.`
+`zadedal zogovel zul.`
 :::
 
 **7.** *something* / *someone*
@@ -298,21 +298,21 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zar.`
 :::
 
-**8.** *Azawan walks and Ulonun runs.*
+**8.** *Azawan walks and Ululon runs.*
 
 ::: details Show answer
-`zazawan vawul zulonun vurunul xam.`
+`zazawan vawalal zululon vurunul xam.`
 :::
 
 #### Agelan → English
 
-**1.** `zogodol zagadal zam.`
+**1.** `zadagal zagadal zam.`
 
 ::: details Show answer
 *a dog and a cat*
 :::
 
-**2.** `zadedal zogevel zol.`
+**2.** `zadedal zogovel zol.`
 
 ::: details Show answer
 *tea or coffee — pick exactly one*
@@ -330,13 +330,13 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *everything* / *everyone*
 :::
 
-**5.** `zeborel zar.`
+**5.** `zeberel zar.`
 
 ::: details Show answer
 *some (unknown) person*
 :::
 
-**6.** `zadedal zogevel zar.`
+**6.** `zadedal zogovel zar.`
 
 ::: details Show answer
 *some one among tea and coffee*
@@ -348,7 +348,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *only Azawan matters* / *Azawan first*
 :::
 
-**8.** `dabebal vabebal dudural vudural vam.`
+**8.** `dabelel vabelel dununel vununel vam.`
 
 ::: details Show answer
 *ate an apple and drank water*
@@ -461,11 +461,11 @@ Under [question](questions.md#interrogative-force) force: yes/no, offer, emptine
 The four rank vowels (**`e`** / **`ae`** / **`oe`** / **`ue`**) and their directions are introduced in [Beginner](#set-joins-and-rank-joins). Two Intermediate refinements: multi **`ae`** + SHARED scale is the [equative](comparatives.md#equatives) (*as ADJ as*), and bare **`oe`** + SHARED scale is the empty superlative (*no biggest comes to mind*).
 
 ```
-`zazawan zulonun zael gonudam.`
+`zazawan zululon zael gomonum.`
 
 gloss: `z-grace` · `z-courage` · `zael` · `g-challenging`
 
-*Azawan is as challenging as Ulonun.*
+*Azawan is as challenging as Ululon.*
 ```
 
 Fence chains keep ranking from **spoken conjunct order** before the right-close join.
@@ -484,7 +484,7 @@ Leading **u** on **a** / **o** / **e** flips the base join — **not** plain **u
 Domain for **ua** / **uo** comes from context or SHARED `/ɡ/` as kind — [universals, domains, and generics](#universals-domains-generics). **-m** on invert forms does **not** imply empty-allowed; only **`…om`** carries *or none*.
 
 ```
-`zadedal zogevel zual.`
+`zadedal zogovel zual.`
 
 gloss: `z-tea` · `z-coffee` · `zual`
 
@@ -564,7 +564,7 @@ Modifiers **immediately after** a phrase-level join scope over the **whole coord
 Local modifiers stay **inside** each conjunct (after that conjunct's head, or `gl-` before the head). Do not put further matching-role conjunct heads after `P-JOIN` / `SHARED`.
 
 ```
-`zogodol zagadal zal gonudam.`
+`zadagal zagadal zal gomonum.`
 
 gloss: `z-dog` · `z-cat` · `zal` · `g-challenging`
 
@@ -572,7 +572,7 @@ gloss: `z-dog` · `z-cat` · `zal` · `g-challenging`
 ```
 
 ```
-`zogodol zagadal zam gogobul bazawan.`
+`zadagal zagadal zam gogobul bazawan.`
 
 gloss: `z-dog` · `z-cat` · `zam` · `g-ownership` · `b-grace`
 
@@ -630,7 +630,7 @@ VP `/v/`…**-n** spellings are [join-act verbs](join-extras.md#join-act-verbs).
 | **oe** | `voel` / `xoel` | `voem` / `xoem` | `xoen` soft | — |
 | **ue** | `vuel` / `xuel` | `vuem` / `xuem` | `xuen` soft | — |
 
-**VP-level** — each conjunct is a verb plus its own object material. When every conjunct is a bare verb, a `/d/` **immediately after** the join (SHARED) scopes over all verbs: `vohewo vabebal vam dabebal` → *washed and ate an apple*.
+**VP-level** — each conjunct is a verb plus its own object material. When every conjunct is a bare verb, a `/d/` **immediately after** the join (SHARED) scopes over all verbs: `vozowe vabelel vam dabelel` → *washed and ate an apple*.
 
 **`/h/` scope relative to VP fence:**
 
@@ -657,20 +657,20 @@ VP `/v/`…**-n** spellings are [join-act verbs](join-extras.md#join-act-verbs).
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Sample the decisions this band adds: invert **`ua`**, universals vs *everything but*, SHARED after the join, islands, nesting, and clause **`xan`**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `ogodo` *dog* · `agada` *cat* · `odeda` *tea* · `ogeve` *coffee* · `udura` *water* · `onuda` *challenging* · `onuno` *onion* · `uguge` *cucumber* · `abeba` *apple* · `ohewo` *wash* · `awu` *walk* · `urunu` *run* · `ezele` *sleep*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `adaga` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `unune` *water* · `omonu` *challenging* · `onuno` *onion* · `ugume` *cucumber* · `abele` *apple* · `ozowe` *wash* · `awala` *walk* · `urunu` *run* · `elebe` *sleep*
 
 #### English → Agelan
 
 **1.** *tea ≻ coffee ≻ water*
 
 ::: details Show answer
-`zadedal zogevel zudural zel.`
+`zadedal zogovel zununel zel.`
 :::
 
 **2.** *everything but tea and coffee*
 
 ::: details Show answer
-`zadedal zogevel zual.`
+`zadedal zogovel zual.`
 :::
 
 **3.** *every cat*
@@ -682,19 +682,19 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **4.** *(challenging dog) and (challenging cat)*
 
 ::: details Show answer
-`zogodol zagadal zal gonudam.`
+`zadagal zagadal zal gomonum.`
 :::
 
 **5.** *Azawan and (just water)*
 
 ::: details Show answer
-`zazawan ^ zudural zal ^ zam.`
+`zazawan ^ zununel zal ^ zam.`
 :::
 
-**6.** *Azawan walks and then Ulonun runs.*
+**6.** *Azawan walks and then Ululon runs.*
 
 ::: details Show answer
-`zazawan vawul zulonun vurunul xan.`
+`zazawan vawalal zululon vurunul xan.`
 :::
 
 **7.** *at least Azawan*
@@ -706,7 +706,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **8.** *(tea or coffee) and water*
 
 ::: details Show answer
-`zadedal zogevel zol zudural zal.`
+`zadedal zogovel zol zununel zal.`
 :::
 
 #### Agelan → English
@@ -723,7 +723,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *everything but the cat*
 :::
 
-**3.** `zadedal zogevel zudural zel.`
+**3.** `zadedal zogovel zununel zel.`
 
 ::: details Show answer
 *tea ≻ coffee ≻ water*
@@ -735,22 +735,22 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan and nothing*
 :::
 
-**5.** `zonunol zugugel zual.`
+**5.** `zonunol zugumel zual.`
 
 ::: details Show answer
 *everything but onion and cucumber*
 :::
 
-**6.** `vohewo vabebal vam dabebal.`
+**6.** `vozowe vabelel vam dabelel.`
 
 ::: details Show answer
 *washed and ate an apple*
 :::
 
-**7.** `zazawan vawul zulonun vurunul xol zubuzun vezelel xal.`
+**7.** `zazawan vawalal zululon vurunul xol zuhubun velebel xal.`
 
 ::: details Show answer
-*(Azawan walks or Ulonun runs) and Ubuzun sleeps.*
+*(Azawan walks or Ululon runs) and Uhubun sleeps.*
 :::
 
 ## Advanced
@@ -766,9 +766,9 @@ When other same-slot material sits nearby, wrap the sub-stretch and its join **i
 
 | Shape | Reading |
 |-------|---------|
-| `zazawan ^ zudural zal ^ zam` | *Azawan and (just water)* |
+| `zazawan ^ zununel zal ^ zam` | *Azawan and (just water)* |
 | `zazawan ^ zal ^ zam` | *Azawan and nothing* |
-| `^ zudural zal ^` | *just water* alone in the slot |
+| `^ zununel zal ^` | *just water* alone in the slot |
 | `^ hadazol z<A> z<B> zam ^` | *maybe (A and B)* |
 
 One island per clause; no nesting of islands. Same-slot material outside an island with no outer join tying it in is illegal.
@@ -787,7 +787,7 @@ On **phrase-level** joins under **`/z/` `/d/` `/b/` `/w/`** only, **-n** marks a
 - **…ar** / **…or** / **…er** / **…ur** at all arities — see [unspecified-member **-r**](#unspecified-member-r-phrase).
 - **…aen** bare = *it's a draw*; **…en** bare = *no favorite* (stock); **…an** bare = *null* / *void*.
 - **…ual** bare = *everything*; **…uol** bare = *anything (goes)*.
-- Content-word `-l`: `zeborel` = ordinary indefinite (*a person*). `zeborel zar` = explicitly non-identified (*some person, unknown who*).
+- Content-word `-l`: `zeberel` = ordinary indefinite (*a person*). `zeberel zar` = explicitly non-identified (*some person, unknown who*).
 - `A B C zor` = any of them is fine (**no** order). `A B C zer` = pick by ranking.
 - `A B zar` = some one **among** A and B. `A B zur` = some one **other than** A and B. `A B zual` = *everything but* A and B.
 - Revision **`ul`** / **`um`**: *except* a named right-hand side — [revisers.md](revisers.md). Prefixed **`zur`**: unspecified *something else*, not an *except*-reviser.
@@ -819,21 +819,21 @@ Phonotactics for reserved join roots: [phonology.md](phonology.md#phonotactics).
 - **No** prefix-less joins. Prefixed joins always have PoS prefix + ending. Prefix-less **al** / **am** / … are revisers only. Whole-word **a** / **e** / **o** / **u** (no ending) are illegal.
 - Floating `/h/` inside an NP/AP/`/b/` join is **transparent** — it does not end the list. VP-chain `/h/` scope differs — see [VP-level](#vp-level-coordination).
 - Clause-level: no gapping across conjuncts; subordination (*because* / *if*) stays `/h/` + `/b/` [next-clause pronoun](pronouns.md#special-pronouns).
-- Sibling manner stacking on `/h/` `/w/` uses **juxtaposition**, not a fence (`hadal hemudel`).
+- Sibling manner stacking on `/h/` `/w/` uses **juxtaposition**, not a fence (`hadazal hemudel`).
 
 ### Translation practice
 <a id="translation-practice-advanced"></a>
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. Phrase **-n** is a **named / conventional** list (not clause soft **-n**); one item also tests a rare-arity contrast (**`zor`** vs **`zer`**, **`zur`**, or bare **`zan`**).
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `odeda` *tea* · `ogeve` *coffee* · `udura` *water* · `ebore` *person*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `adeda` *tea* · `ogove` *coffee* · `unune` *water* · `ebere` *person*
 
 #### English → Agelan
 
 **1.** *tea or coffee (the usual named menu)*
 
 ::: details Show answer
-`zadedal zogevel zon.`
+`zadedal zogovel zon.`
 :::
 
 **2.** *null* / *void*
@@ -845,19 +845,19 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 **3.** *any of tea, coffee, or water is fine (no order)*
 
 ::: details Show answer
-`zadedal zogevel zudural zor.`
+`zadedal zogovel zununel zor.`
 :::
 
 **4.** *pick tea, coffee, or water by ranking*
 
 ::: details Show answer
-`zadedal zogevel zudural zer.`
+`zadedal zogovel zununel zer.`
 :::
 
-**5.** *someone other than Azawan and Ulonun*
+**5.** *someone other than Azawan and Ululon*
 
 ::: details Show answer
-`zazawan zulonun zur.`
+`zazawan zululon zur.`
 :::
 
 #### Agelan → English
@@ -868,7 +868,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 *null* / *void*
 :::
 
-**2.** `zadedal zogevel zon.`
+**2.** `zadedal zogovel zon.`
 
 ::: details Show answer
 *tea or coffee (the usual named menu)*
@@ -880,16 +880,16 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 *it's a draw* (stock)
 :::
 
-**4.** `zadedal zogevel zudural zer.`
+**4.** `zadedal zogovel zununel zer.`
 
 ::: details Show answer
 *pick tea, coffee, or water by ranking*
 :::
 
-**5.** `zazawan zulonun zur.`
+**5.** `zazawan zululon zur.`
 
 ::: details Show answer
-*someone other than Azawan and Ulonun*
+*someone other than Azawan and Ululon*
 :::
 
 ## See also

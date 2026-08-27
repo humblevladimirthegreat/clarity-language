@@ -21,7 +21,7 @@ English *will* / *going to* mixes **intention** (what someone means to do) with 
 Ordinary content stays available (`zowarol` *a map*; `vowarol` *to plan*).
 
 ```
-`zazawan howarom vawul.`
+`zazawan howarom vawalal.`
 
 gloss: `z-grace-proper` · `h-PLAN-sketch` · `v-walk`
 
@@ -29,15 +29,15 @@ gloss: `z-grace-proper` · `h-PLAN-sketch` · `v-walk`
 ```
 
 ```
-`zulonun howarol vawul.`
+`zululon howarol vawalal.`
 
 gloss: `z-courage-proper` · `h-PLAN-itinerary` · `v-walk`
 
-*Ulonun’s itinerary is to walk.* (steps on the map)
+*Ululon’s itinerary is to walk.* (steps on the map)
 ```
 
 ```
-`hedelom varunal.`
+`hedelom vanunul.`
 
 gloss: `h-PREDICT` · `v-rain`
 
@@ -82,82 +82,82 @@ When unsure, prefer **`howarom`**. Omit **PLAN** when you are not framing intent
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Pick **PLAN** (`owaro` + map-resolution ending) or **PREDICT** (`edelo`) — not a generic English *will*.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `owaro` · `edelo` · `awu` · `uwa` · `egu` · `urunu` · `ezele` · `aruna`
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `owaro` · `edelo` · `awala` · `uwuru` · `uzune` · `urunu` · `elebe` · `anunu`
 
 #### English → Agelan
 
 **1.** *Azawan means to walk.* (direction only)
 
 ::: details Show answer
-`zazawan howarom vawul.`
+`zazawan howarom vawalal.`
 :::
 
-**2.** *Ulonun has the steps on the map: walk.*
+**2.** *Ululon has the steps on the map: walk.*
 
 ::: details Show answer
-`zulonun howarol vawul.`
+`zululon howarol vawalal.`
 :::
 
-**3.** *If that path fails, Ubuzun will walk.* (backup course)
+**3.** *If that path fails, Uhubun will walk.* (backup course)
 
 ::: details Show answer
-`zubuzun howaror vawul.`
+`zuhubun howaror vawalal.`
 :::
 
 **4.** *Azawan means to write.* (direction only)
 
 ::: details Show answer
-`zazawan howarom vuwal.`
+`zazawan howarom vuwurul.`
 :::
 
 **5.** *Forecast: it rains.*
 
 ::: details Show answer
-`hedelom varunal.`
+`hedelom vanunul.`
 :::
 
-**6.** *Ubuzun means to sing.* (direction only)
+**6.** *Uhubun means to sing.* (direction only)
 
 ::: details Show answer
-`zubuzun howarom veguul.`
+`zuhubun howarom vuzunel.`
 :::
 
 #### Agelan → English
 
-**1.** `zulonun howarom vawul.`
+**1.** `zululon howarom vawalal.`
 
 ::: details Show answer
-*Ulonun means to walk.* (sketch plan)
+*Ululon means to walk.* (sketch plan)
 :::
 
-**2.** `zazawan howarol vuwal.`
+**2.** `zazawan howarol vuwurul.`
 
 ::: details Show answer
 *Azawan’s itinerary is to write.*
 :::
 
-**3.** `zubuzun howaror vurunun.`
+**3.** `zuhubun howaror vurunun.`
 
 ::: details Show answer
-*If that path fails, Ubuzun will run.* (fork plan)
+*If that path fails, Uhubun will run.* (fork plan)
 :::
 
-**4.** `hedelom varunal.`
+**4.** `hedelom vanunul.`
 
 ::: details Show answer
 *Forecast: it rains.*
 :::
 
-**5.** `zazawan howarom veguul.`
+**5.** `zazawan howarom vuzunel.`
 
 ::: details Show answer
 *Azawan means to sing.* (sketch plan)
 :::
 
-**6.** `zulonun howarom vezelel.`
+**6.** `zululon howarom velebel.`
 
 ::: details Show answer
-*Ulonun means to sleep.* (sketch plan)
+*Ululon means to sleep.* (sketch plan)
 :::
 
 ## Intermediate
@@ -169,7 +169,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 Stack ordinary [evidentiality](commentary.md#evidentiality) with **PREDICT** when you mark **how** you forecast (pattern, inference, …), not bare certainty.
 
 ```
-`hedelom hawam varunal.`
+`hedelom hawam vanunul.`
 
 gloss: `h-PREDICT` · `h-PATTERN` · `v-rain`
 
@@ -193,19 +193,19 @@ Mark **how revisable a pick is** — temporary / open / settled — with one clo
 Ordinary content still available (`zehegel` *a checkmark*; `vehegel` *to check / tick`).
 
 ```
-`zulonun hehegem veguul.`
+`zululon hehegem vuzunel.`
 
 gloss: `z-courage-proper` · `h-DECISION-modifiable` · `v-sing`
 
-*Ulonun has decided to sing — still open to revision.* (default)
+*Ululon has decided to sing — still open to revision.* (default)
 ```
 
 ```
-`zubuzun hehegel vezelel.`
+`zuhubun hehegel velebel.`
 
 gloss: `z-beauty-proper` · `h-DECISION-irreversible` · `v-sleep`
 
-*Ubuzun has decided for good to sleep.*
+*Uhubun has decided for good to sleep.*
 ```
 
 Use **DECISION** when the clause marks **pick firmness**. Intention map grain stays [**PLAN**](#plan-predict). The choosing act is [join-act **`von`**](join-extras.md#join-act-verbs) (*chooses as the one*). Autonomy-as-need is [**`obola`**](values.md#need-inventory). *Can’t decide yet* on an activity is [ability](ability.md#ability) (`…xe…` / `…xo…` / …).
@@ -226,7 +226,7 @@ Use **DECISION** when the clause marks **pick firmness**. Intention map grain st
 | `… hehegem …` | decided; **open to change** (or unknown) |
 | `… hehegen …` | decided; this DECISION-word **names** a particular object |
 | `… heheger …` | decided **for now** (temporary) |
-| `zazawan howarol hehegel vawul` | itinerary **and** settled pick |
+| `zazawan howarol hehegel vawalal` | itinerary **and** settled pick |
 | `… howarom …` | intention **sketch** — map grain, not firmness |
 
 #### Endings — changeability
@@ -248,79 +248,79 @@ Always pick an ending on **DECISION**; unknown → **-m**. Deferral stays ordina
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Pick **DECISION** (`ehege` + changeability), stack evidentiality on **PREDICT**, or stack **PLAN** with **DECISION**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `owaro` · `edelo` · `ehege` · `awu` · `uwa` · `egu` · `ezele` · `aruna` · `awa` (*pattern*, evidential)
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `owaro` · `edelo` · `ehege` · `awala` · `uwuru` · `uzune` · `elebe` · `anunu` · `awa` (*pattern*, evidential)
 
 #### English → Agelan
 
-**1.** *Ulonun has decided to sing, and can still change that.*
+**1.** *Ululon has decided to sing, and can still change that.*
 
 ::: details Show answer
-`zulonun hehegem veguul.`
+`zululon hehegem vuzunel.`
 :::
 
-**2.** *Ubuzun has decided for good to sleep.*
+**2.** *Uhubun has decided for good to sleep.*
 
 ::: details Show answer
-`zubuzun hehegel vezelel.`
+`zuhubun hehegel velebel.`
 :::
 
 **3.** *From the usual pattern, it will rain.*
 
 ::: details Show answer
-`hedelom hawam varunal.`
+`hedelom hawam vanunul.`
 :::
 
 **4.** *Azawan has the itinerary, and the pick is settled: walk.*
 
 ::: details Show answer
-`zazawan howarol hehegel vawul.`
+`zazawan howarol hehegel vawalal.`
 :::
 
 **5.** *Azawan has decided for now to write.*
 
 ::: details Show answer
-`zazawan heheger vuwal.`
+`zazawan heheger vuwurul.`
 :::
 
-**6.** *Ulonun has decided to walk, and can still change that.*
+**6.** *Ululon has decided to walk, and can still change that.*
 
 ::: details Show answer
-`zulonun hehegem vawul.`
+`zululon hehegem vawalal.`
 :::
 
 #### Agelan → English
 
-**1.** `zazawan hehegem veguul.`
+**1.** `zazawan hehegem vuzunel.`
 
 ::: details Show answer
 *Azawan has decided to sing — still open to revision.*
 :::
 
-**2.** `zulonun hehegel vezelel.`
+**2.** `zululon hehegel velebel.`
 
 ::: details Show answer
-*Ulonun has decided for good to sleep.*
+*Ululon has decided for good to sleep.*
 :::
 
-**3.** `hedelom hawam varunal.`
+**3.** `hedelom hawam vanunul.`
 
 ::: details Show answer
 *Forecast from pattern: it rains.*
 :::
 
-**4.** `zubuzun heheger vawul.`
+**4.** `zuhubun heheger vawalal.`
 
 ::: details Show answer
-*Ubuzun has decided for now to walk.* (temporary pick)
+*Uhubun has decided for now to walk.* (temporary pick)
 :::
 
-**5.** `zulonun hehegem vuwal.`
+**5.** `zululon hehegem vuwurul.`
 
 ::: details Show answer
-*Ulonun has decided to write — still open to revision.*
+*Ululon has decided to write — still open to revision.*
 :::
 
-**6.** `zazawan howarol hehegel vawul.`
+**6.** `zazawan howarol hehegel vawalal.`
 
 ::: details Show answer
 *Azawan’s itinerary is to walk, and the pick is settled.*

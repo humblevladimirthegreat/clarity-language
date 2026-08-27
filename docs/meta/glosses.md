@@ -8,7 +8,7 @@ A gloss should answer: *what is each Agelan piece doing in the clause — in Eng
 
 | Goal | Gloss does | Gloss does not |
 |------|------------|----------------|
-| Slot + sense | Show PoS letter and the **active English sense** | Quote Agelan phonology (`umogo`, `uze`, …) |
+| Slot + sense | Show PoS letter and the **active English sense** | Quote Agelan phonology (`umogo`, `uzumu`, …) |
 | Separate senses | Treat literal / metaphorical / proper / overlay as **different English roots** | Chain etymology (`microphone→speaker`) |
 | Endings | Drop **-l** / **-m** / **-n** when they only pick which sense-root applies | Repeat those endings after a sense that already encodes them |
 | Structure | Keep mid-word `x` pieces, **-sh**, and binding visible | Invent full English syntax for Agelan structure |
@@ -66,7 +66,7 @@ Grammar tables may keep a column named **Gloss** for free English. When a table 
 
 ### Example (same Agelan, three readings)
 
-Agelan: `jol duber dadedal dogevel dol von.`
+Agelan: `jol duber dadedal dogovel dol von.`
 
 ```
 gloss: `j-question` · `d-←Ubenaxuzonun` · `d-tea` · `d-coffee` · `d-or-exactly-one` · `v-choose`
@@ -84,11 +84,11 @@ Published strings share one phonological root, but **literal**, **metaphorical**
 | `zumogol` | `z-microphone` | `z-umogo(microphone)-l`, `z-microphone-l` |
 | `zumogom` | `z-speaker` | `z-umogo(microphone→speaker)-m` |
 | `zumogon` | `z-speaker` | `z-umogo(speaker)-n`, `z-speaker-n` |
-| `guzel` | `g-smile` | `g-uze(smile)-l` |
-| `guzem` | `g-happy` | `g-uze(smile→happy)-m`, `g-happy-m` |
+| `guzumul` | `g-smile` | `g-uzumu(smile)-l` |
+| `guzumum` | `g-happy` | `g-uzumu(smile→happy)-m`, `g-happy-m` |
 | `huhunul` | `h-fishing` | `h-uhunu(fishing)-l` |
 | `huhunum` | `h-witnessed` | `h-uhunu(fishing→witnessed)-m` |
-| `gohuzem` | `g-home` | `g-ohuze(house→home)-m` |
+| `gohohum` | `g-home` | `g-ohohu(house→home)-m` |
 
 Same English label for `zumogom` and `zumogon` is fine: both are the *speaker* sense-root; the written ending is recoverable from the Agelan line and from [reference-suffix.md](../grammar/reference-suffix.md). The gloss’s job is the **sense**, not a second orthography.
 
@@ -153,8 +153,8 @@ Grammar examples use three single-root names ([grammar-docs.md](grammar-docs.md#
 | Agelan | Morph gloss | Free English | Resume |
 |--------|-------------|--------------|--------|
 | `zazawan` | `z-grace` | *Azawan* | `zazar` → `z-←grace` |
-| `zulonun` | `z-courage` | *Ulonun* | `zulor` → `z-←courage` |
-| `zubuzun` | `z-beauty` | *Ubuzun* | `zubur` → `z-←beauty` |
+| `zululon` | `z-courage` | *Ululon* | `zulur` → `z-←courage` |
+| `zuhubun` | `z-beauty` | *Uhubun* | `zuhur` → `z-←beauty` |
 
 ### Mid-word `x` families
 
@@ -163,8 +163,8 @@ Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) —
 | Family | Example Agelan | Morph gloss |
 |--------|-----------------|-------------|
 | Ordinary / name compound | `jubenaxuzonun` | `j-hospitality-x-optimism` |
-| Ordinary (three roots) | `zuzuzuxogevexadedan` | `z-sushi-x-coffee-x-tea` |
-| Ability / values stance | `vawuxel` | `v-walking-unable-temporary` |
+| Ordinary (three roots) | `zuzuzuxogovexadedan` | `z-sushi-x-coffee-x-tea` |
+| Ability / values stance | `vawalaxel` | `v-walking-unable-temporary` |
 | Values stance on need | `hodoloxem` | `h-competence-x-motive` |
 | Role compound | `zaxezeber` | `z-agent-x-dialogue` |
 | Span open / close | `hexal` … `xuxul` | `h-aside-x-multi` · … · `x-span-close` |
@@ -204,7 +204,7 @@ Bake join / reviser **job** into the English label (including open vs closed whe
 | `zanan` | `z-interlocutors` | *we* (speaker ∪ address set) |
 | `zumogonsh` | `z-speaker-sh` | *I and associates* |
 | `zehadonsh` | `z-listener-sh` | *you-all* (address set) |
-| `guzem` | `g-happy` | *happy* |
+| `guzumum` | `g-happy` | *happy* |
 | `huhunum` | `h-witnessed` | *per memory* |
 | `howarom` | `h-plan-sketch` | *as a sketch plan* |
 | `gogunol` | `g-SAME` | *identical to* (identity host) |
@@ -212,7 +212,7 @@ Bake join / reviser **job** into the English label (including open vs closed whe
 
 ### Dialogue turn (morph + loose free)
 
-Agelan: `jael zumogon zam zehadon zal guzem.`
+Agelan: `jael zumogon zam zehadon zal guzumum.`
 
 ```
 gloss: `j-yes` · `z-speaker` · `z-and.open` · `z-listener` · `z-and` · `g-happy`
@@ -220,11 +220,11 @@ gloss: `j-yes` · `z-speaker` · `z-and.open` · `z-listener` · `z-and` · `g-h
 *Yes — you and I are happy.*
 ```
 
-(Prefer **`zanan guzem`** when the point is interlocutor *we*, not an explicit two-name census.)
+(Prefer **`zanan guzumum`** when the point is interlocutor *we*, not an explicit two-name census.)
 
 ### Metaphor vs overlay vs literal
 
-Agelan: `xezabel zuber huhunum zarunal.`
+Agelan: `xezabel zuber huhunum zanunul.`
 
 ```
 gloss: `x-however` · `z-←Ubenaxuzonun` · `h-witnessed` · `z-rain`
@@ -236,7 +236,7 @@ gloss: `x-however` · `z-←Ubenaxuzonun` · `h-witnessed` · `z-rain`
 
 ### Ability + value motive
 
-Agelan: `juel zumogon vawuxel hodoloxem.`
+Agelan: `juel zumogon vawalaxel hodoloxem.`
 
 ```
 gloss: `j-no` · `z-speaker` · `v-walking-unable-temporary` · `h-competence-x-motive`
@@ -256,7 +256,7 @@ gloss: `x-starting-with` · `z-problem` · `g-first` · `z-speaker-sh` · `h-ple
 
 ### Inclusive *we* (interlocutors)
 
-Agelan: `jael xamalal zanan howarom vawul vul.`
+Agelan: `jael xamalal zanan howarom vawalal vul.`
 
 ```
 gloss: `j-yes` · `x-therefore` · `z-interlocutors` · `h-plan` · `v-walking` · `v-not`

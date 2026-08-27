@@ -162,36 +162,36 @@ Do **not** skip productive syntax pages (core, coordination, questions, values, 
 ## Shared root bank
 <a id="root-bank"></a>
 
-Default people: [house cast](grammar-docs.md#house-cast) — `zazawan` / `zulonun` / `zubuzun` (`azawa` / `ulonu` / `ubuzu` + **-n**). Morph: `z-grace` / `z-courage` / `z-beauty`.
+Default people: [house cast](grammar-docs.md#house-cast) — `zazawan` / `zululon` / `zuhubun` (`azawa` / `ululo` / `uhubu` + **-n**). Morph: `z-grace` / `z-courage` / `z-beauty`.
 
 Reuse this bank unless the band already taught a different published root. Do not mine the lexicon for variety.
 
 | Root | Sense in drills |
 |------|-----------------|
-| `azawa` / `ulonu` / `ubuzu` | names **Azawan** / **Ulonun** / **Ubuzun** |
-| `edage` | *teacher* |
-| `uzedu` | *student* |
-| `ogodo` | *dog* |
+| `azawa` / `ululo` / `uhubu` | names **Azawan** / **Ululon** / **Uhubun** |
+| `edege` | *teacher* |
+| `uzudu` | *student* |
+| `adaga` | *dog* |
 | `agada` | *cat* |
-| `ogobo` | *book* |
-| `ohuze` | *house* |
-| `ulebu` | *blue* |
-| `edeje` | *red* |
-| `eleba` | *size* / *big* |
-| `uze` | smile → *happy* (**-m**) |
-| `awu` | *walk* |
+| `abogo` | *book* |
+| `ohohu` | *house* |
+| `elulu` | *blue* |
+| `arede` | *red* |
+| `ele` | *size* / *big* |
+| `uzumu` | smile → *happy* (**-m**) |
+| `awala` | *walk* |
 | `urunu` | *run* |
-| `ezele` | *sleep* |
-| `ezabu` | *tell* |
-| `uwa` | *write* |
-| `egu` | *sing* |
-| `ejo` | *see* |
-| `ahura` | *sit* |
-| `ada` | *haste* |
+| `elebe` | *sleep* |
+| `ezehe` | *tell* |
+| `uwuru` | *write* |
+| `uzune` | *sing* |
+| `eje` | *see* |
+| `aju` | *sit* |
+| `adaza` | *haste* |
 | `odo` | *next clause* |
 | `urugu` | *because* (**-m** on `/h/`) |
 
-A page may add roots that **already appear in that band’s worked examples** (e.g. `abeba` *apple*, `odeda` *tea*, `ogeve` *coffee*, `onuda` *challenging*, `oguno` **SAME**). List them under **Roots used here**.
+A page may add roots that **already appear in that band’s worked examples** (e.g. `abele` *apple*, `adeda` *tea*, `ogove` *coffee*, `omonu` *challenging*, `oguno` **SAME**). List them under **Roots used here**.
 
 ## Allowlist
 <a id="allowlist"></a>
@@ -213,7 +213,7 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 6 | `reference-suffix.md` | **exists** | Choose **-l** vs **-m** vs **-n** vs **-r** on a content word; named person vs kind; citation prefix-less **…n** | Pointers to **-sh** / **`gl-`** / full **-r** algorithm: do **not** make those the item. One two-sentence resume item is enough if it matches the page example |
 | 7 | `pronouns.md` | **exists** | Letter vs full-root **-r**; specials **`umogo` / `ehado` / `ana` / `enu`** (when the *role* is the point); **`odo`** recap; clusivity **`ana`** vs speaker **-sh** | **-sh** on specials / names for clusivity only. Default people still house names; specials only when testing specials |
 | 7 | `plurality.md` | **exists** | Associative **-sh** (`-lsh` / `-nsh` / `-rsh`); not agreement; person-role **-sh** (address set vs name…**-sh**) | **`ana`** as the *not this* for inclusive *we*. **`umogo`/`ehado`** only on person-role items |
-| 8 | `predication.md` | **exists** | Zero-copula property; classification `z… g…` vs role *noun* `zedagel`; identity **`gogunol` + `/b/`** | No general *to-be* `/v/`. Prefer house names + **SAME**; page-example roots (`odava` / `uzuba`) OK if already on the band |
+| 8 | `predication.md` | **exists** | Zero-copula property; classification `z… g…` vs role *noun* `zedegel`; identity **`gogunol` + `/b/`** | No general *to-be* `/v/`. Prefer house names + **SAME**; page-example roots (`odava` / `uzuba`) OK if already on the band |
 | 9 | `coordination.md` | **exists** | Right-close fence; set vs rank vowels; **-l** vs **-m**; list / focus / bare starter forms; negation **`u`**; unspecified **-r** as *something* (not fill-ask) | No revisers, no restrictor `/h/` join readings, no comparatives SHARED scale as the point (that is comparatives) |
 | 10 | `questions.md` | **exists** | **`jol`/`jom`** yes/no vs fill-ask (join **-r**); fill-all; polar **`jael` / `juel` / `jaol`** vs **`jul`** vs join **`zul`** | **`jom`** is taught here as soft *ask* — allowed on this page even though full force twins are core Intermediate. Circumstance *when?* **`har`** is Intermediate on this page — do not use |
 | 11 | `revisers.md` | **exists** | Prefix-less **`al`/`am`/`ol`/`ul`** (and **e** / **n** as on the band); in-clause `A REV B`; discourse **`al`** *additionally* before a body | Not a join (`zam` vs `am`). Not **`x#e-` / `x#e`** (numbers discourse) |

@@ -19,12 +19,12 @@ Under **`/h/`** and **`/w/`**, these forms mark **applicability circumstances**:
 
 | Pattern | Reading |
 |---------|---------|
-| `hadal hazebo` | *quickly and quietly* — co-applying adverbs; **no** join |
-| `harunal hal` | *only when raining* — closed restrictor |
+| `hadazal hazebo` | *quickly and quietly* — co-applying adverbs; **no** join |
+| `hanunul hal` | *only when raining* — closed restrictor |
 | `hal` (bare) | *never* |
 
 ```
-`zumogon vawul harunal hal.`
+`zumogon vawalal hanunul hal.`
 
 gloss: `z-speaker` · `v-go` · `h-rain` · `hal`
 
@@ -32,7 +32,7 @@ gloss: `z-speaker` · `v-go` · `h-rain` · `hal`
 ```
 
 ```
-`zumogon vawul hal.`
+`zumogon vawalal hal.`
 
 gloss: `z-speaker` · `v-go` · `hal`
 
@@ -52,7 +52,7 @@ gloss: `z-speaker` · `v-go` · `hal`
 `/w/` matches with host = the adjective property (`wal` = *never* for that property; `wual` = *always* for that property).
 
 ```
-`guzem wal.`
+`guzumum wal.`
 
 gloss: `g-happy` · `w-al`
 
@@ -69,7 +69,7 @@ Each conjunct is a simple `/h/` or `/w/` content word (or a complex unit the lex
 | **`hual` / `huam`** | *always except when…* |
 
 ```
-`harunal hudunul ham.`
+`hanunul hudunul ham.`
 
 gloss: `h-rain` · `h-night` · `ham`
 
@@ -85,103 +85,103 @@ Same fence rules as other phrase slots: right close only, SHARED immediately aft
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Restrictors mark **when the host applies** — not co-manner *and*. Bare **`hal`** / **`hual`** are *never* / *always*; with a conjunct they are *only when…* / *always except when…*.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `awu` *walk* · `urunu` *run* · `egu` *sing* · `ezele` *sleep* · `uze` smile → *happy* (**-m**) · `uruna` *rain* · `udunu` *night* · `ada` *haste* · `azebo` *quiet*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `awala` *walk* · `urunu` *run* · `uzune` *sing* · `elebe` *sleep* · `uzumu` smile → *happy* (**-m**) · `uruna` *rain* · `udunu` *night* · `adaza` *haste* · `azebo` *quiet*
 
 #### English → Agelan
 
 **1.** *Azawan walks only when raining.*
 
 ::: details Show answer
-`zazawan vawul harunal hal.`
+`zazawan vawalal hanunul hal.`
 :::
 
-**2.** *Ulonun never walks.*
+**2.** *Ululon never walks.*
 
 ::: details Show answer
-`zulonun vawul hal.`
+`zululon vawalal hal.`
 :::
 
-**3.** *Ubuzun always sings.*
+**3.** *Uhubun always sings.*
 
 ::: details Show answer
-`zubuzun vegul hual.`
+`zuhubun vuzunel hual.`
 :::
 
 **4.** *Azawan is never happy.*
 
 ::: details Show answer
-`zazawan guzem wal.`
+`zazawan guzumum wal.`
 :::
 
-**5.** *Ulonun runs sometime.*
+**5.** *Ululon runs sometime.*
 
 ::: details Show answer
-`zulonun vurunul har.`
+`zululon vurunul har.`
 :::
 
 **6.** *Azawan sleeps when raining and at night, among other times.*
 
 ::: details Show answer
-`zazawan vezelel harunal hudunul ham.`
+`zazawan velebel hanunul hudunul ham.`
 :::
 
-**7.** *Ubuzun walks anytime.*
+**7.** *Uhubun walks anytime.*
 
 ::: details Show answer
-`zubuzun vawul hor.`
+`zuhubun vawalal hor.`
 :::
 
 **8.** *Azawan always walks except when raining.*
 
 ::: details Show answer
-`zazawan vawul harunal hual.`
+`zazawan vawalal hanunul hual.`
 :::
 
 #### Agelan → English
 
-**1.** `zazawan vawul harunal hal.`
+**1.** `zazawan vawalal hanunul hal.`
 
 ::: details Show answer
 *Azawan walks only when raining.*
 :::
 
-**2.** `zulonun vawul hal.`
+**2.** `zululon vawalal hal.`
 
 ::: details Show answer
-*Ulonun never walks.*
+*Ululon never walks.*
 :::
 
-**3.** `zubuzun vegul hual.`
+**3.** `zuhubun vuzunel hual.`
 
 ::: details Show answer
-*Ubuzun always sings.*
+*Uhubun always sings.*
 :::
 
-**4.** `zazawan guzem wual.`
+**4.** `zazawan guzumum wual.`
 
 ::: details Show answer
 *Azawan is always happy.*
 :::
 
-**5.** `zulonun vawul hor.`
+**5.** `zululon vawalal hor.`
 
 ::: details Show answer
-*Ulonun walks anytime.*
+*Ululon walks anytime.*
 :::
 
-**6.** `zubuzun vawul hur.`
+**6.** `zuhubun vawalal hur.`
 
 ::: details Show answer
-*Ubuzun walks sometime else.*
+*Uhubun walks sometime else.*
 :::
 
-**7.** `zazawan vawul hadal hazebo.`
+**7.** `zazawan vawalal hadazal hazebo.`
 
 ::: details Show answer
 *Azawan walks quickly and quietly.*
 :::
 
-**8.** `zazawan vezelel harunal hudunul ham.`
+**8.** `zazawan velebel hanunul hudunul ham.`
 
 ::: details Show answer
 *Azawan sleeps when raining and at night, among other times.*
@@ -228,18 +228,18 @@ Statement readings below; under **question** force → [questions.md](questions.
 
 ### More examples
 
-- `harunal hudunul hol` → *either when raining or at night (not both)*; `… hom` → *… or never*
-- `harunal hozonol haol` → *when raining and/or when snowing*
-- `harunal hul` → *not when raining*; `harunal hudunul hum` → *not when raining or at night, for one*
-- `harunal hual` → *always except when raining*
-- `harunal huol` → *anytime except when raining*
+- `hanunul hudunul hol` → *either when raining or at night (not both)*; `… hom` → *… or never*
+- `hanunul hozonol haol` → *when raining and/or when snowing*
+- `hanunul hul` → *not when raining*; `hanunul hudunul hum` → *not when raining or at night, for one*
+- `hanunul hual` → *always except when raining*
+- `hanunul huol` → *anytime except when raining*
 - `hamubam hogenum hel` → *preferably in emergency ≻ for convenience*
-- `harunal hozonol hael` → *as often when raining as when snowing*
+- `hanunul hozonol hael` → *as often when raining as when snowing*
 - `hael` → *equally often* / *tied frequency frame* (bare)
 - `bemamal bamugal hoel` → *if (when) fix, else if workaround…*
-- `harunal hozonol har` → *sometime among rain or snow*
-- Complex conjunct: `hohuzel hal` → *only at home*
-- `/w/` core: `hevem wal` → *only when alleged*; `war` → *sometime* (under some framing); juxtaposition `guzem wube wenazel` → *very* and *recent* (not a restrictor fence)
+- `hanunul hozonol har` → *sometime among rain or snow*
+- Complex conjunct: `hohohul hal` → *only at home*
+- `/w/` core: `hevem wal` → *only when alleged*; `war` → *sometime* (under some framing); juxtaposition `guzumum wube wenazel` → *very* and *recent* (not a restrictor fence)
 
 ### Conjuncts and next-clause *when*
 
@@ -259,106 +259,106 @@ Necessity-style *never without…* uses **`hal`** (and join-relation **`huan`**)
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Use the **defined core** (exclusive / inclusive / *not when* / ranked occasions / unspecified-member with conjuncts). Next-clause *when* / *if* stays `/h/` + `/b/` **`odo`**, not a circumstance fence of sentences.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `awu` *walk* · `urunu` *run* · `egu` *sing* · `ezele` *sleep* · `uwa` *write* · `uruna` *rain* · `ozono` *snow* · `udunu` *night* · `ohuze` *house* · `amuba` *emergency* · `ogenau` *convenience* · `emama` *fix* · `amuga` *workaround* · `odo` *next clause*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `awala` *walk* · `urunu` *run* · `uzune` *sing* · `elebe` *sleep* · `uwuru` *write* · `uruna` *rain* · `ozono` *snow* · `udunu` *night* · `ohohu` *house* · `amuba` *emergency* · `ogenau` *convenience* · `emama` *fix* · `amuga` *workaround* · `odo` *next clause*
 
 #### English → Agelan
 
 **1.** *Azawan walks either when raining or at night, not both.*
 
 ::: details Show answer
-`zazawan vawul harunal hudunul hol.`
+`zazawan vawalal hanunul hudunul hol.`
 :::
 
-**2.** *Ulonun sleeps when raining and/or when snowing.*
+**2.** *Ululon sleeps when raining and/or when snowing.*
 
 ::: details Show answer
-`zulonun vezelel harunal hozonol haol.`
+`zululon velebel hanunul hozonol haol.`
 :::
 
-**3.** *Ubuzun does not walk when raining.*
+**3.** *Uhubun does not walk when raining.*
 
 ::: details Show answer
-`zubuzun vawul harunal hul.`
+`zuhubun vawalal hanunul hul.`
 :::
 
 **4.** *Azawan walks anytime except when raining.*
 
 ::: details Show answer
-`zazawan vawul harunal huol.`
+`zazawan vawalal hanunul huol.`
 :::
 
 **5.** *Azawan walks preferably in an emergency rather than for convenience.*
 
 ::: details Show answer
-`zazawan vawul hamubam hogenum hel.`
+`zazawan vawalal hamubam hogenum hel.`
 :::
 
-**6.** *Ulonun runs as often when raining as when snowing.*
+**6.** *Ululon runs as often when raining as when snowing.*
 
 ::: details Show answer
-`zulonun vurunul harunal hozonol hael.`
+`zululon vurunul hanunul hozonol hael.`
 :::
 
 **7.** *Azawan writes if a fix, else if a workaround.*
 
 ::: details Show answer
-`zazawan vuwal bemamal bamugal hoel.`
+`zazawan vuwurul bemamal bamugal hoel.`
 :::
 
-**8.** *Ubuzun sings if Azawan walks.*
+**8.** *Uhubun sings if Azawan walks.*
 
 ::: details Show answer
-`zubuzun vegul horodom zazawan vawul bodol.`
+`zuhubun vuzunel horodom zazawan vawalal bodol.`
 :::
 
 #### Agelan → English
 
-**1.** `zazawan vawul harunal hudunul hol.`
+**1.** `zazawan vawalal hanunul hudunul hol.`
 
 ::: details Show answer
 *Azawan walks either when raining or at night, not both.*
 :::
 
-**2.** `zulonun vezelel harunal hudunul hom.`
+**2.** `zululon velebel hanunul hudunul hom.`
 
 ::: details Show answer
-*Ulonun sleeps either when raining or at night, or never.*
+*Ululon sleeps either when raining or at night, or never.*
 :::
 
-**3.** `zubuzun vawul harunal hul.`
+**3.** `zuhubun vawalal hanunul hul.`
 
 ::: details Show answer
-*Ubuzun does not walk when raining.*
+*Uhubun does not walk when raining.*
 :::
 
-**4.** `zazawan vawul harunal huol.`
+**4.** `zazawan vawalal hanunul huol.`
 
 ::: details Show answer
 *Azawan walks anytime except when raining.*
 :::
 
-**5.** `zazawan vezelel hohuzel hal.`
+**5.** `zazawan velebel hohohul hal.`
 
 ::: details Show answer
 *Azawan sleeps only at home.*
 :::
 
-**6.** `zulonun vawul harunal hozonol har.`
+**6.** `zululon vawalal hanunul hozonol har.`
 
 ::: details Show answer
-*Ulonun walks sometime among rain or snow.*
+*Ululon walks sometime among rain or snow.*
 :::
 
-**7.** `zazawan vawul hael.`
+**7.** `zazawan vawalal hael.`
 
 ::: details Show answer
 *Azawan walks equally often.*
 :::
 
-**8.** `zubuzun vegul horodom zazawan vawul bodol.`
+**8.** `zuhubun vuzunel horodom zazawan vawalal bodol.`
 
 ::: details Show answer
-*Ubuzun sings if Azawan walks.*
+*Uhubun sings if Azawan walks.*
 :::
 
 ## See also

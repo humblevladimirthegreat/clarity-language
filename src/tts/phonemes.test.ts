@@ -37,14 +37,14 @@ describe("toPhonemeWord", () => {
     assert.equal(word.ipa, "zʌ.mo.ɡo.ʒɹɑ.won");
   });
 
-  it("keeps gl- as an onset cluster (glulebul)", () => {
-    const word = toPhonemeWord("glulebul");
-    assert.equal(word.ipa, "ɡlʌ.le̞.bʌl");
+  it("keeps gl- as an onset cluster (glelulul)", () => {
+    const word = toPhonemeWord("glelulul");
+    assert.equal(word.ipa, "ɡle̞.lʌ.lʌl");
   });
 
   it("matches the phonology try-it line", () => {
     assert.equal(toPhonemeWord("zazawan").ipa, "zɑ.zɑ.wɑn");
-    assert.equal(toPhonemeWord("guzem").ipa, "ɡʌ.ze̞m");
+    assert.equal(toPhonemeWord("guzumum").ipa, "ɡʌ.zʌ.mʌm");
   });
 });
 

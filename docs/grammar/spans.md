@@ -37,7 +37,7 @@ Same split as number shorthand (`g+3` written, full CV spoken); the spoken shape
 Anaphor (**-r**): interior **`=`** (`d[=]`, `d{=}`, `h(=)`, `d<=>`).
 
 ```
-`zehadon v[egu] d[jael]l.`
+`zehadon v[uzune] d[jael]l.`
 
 gloss: `z-listener` · `v-[sing]` · `d-[yes]`
 
@@ -86,7 +86,7 @@ The open’s PoS is the **outer-clause slot** of the **entire** span — not the
 | `/x/` | Discourse-only citation (epigraph, freestanding span) | `x[…]` |
 
 ```
-`jul zehadon v[egu] dumogol.`
+`jul zehadon v[uzune] dumogol.`
 
 gloss: `j-command` · `z-listener` · `v-[sing]` · `d-speaker`
 
@@ -102,17 +102,17 @@ The interior is ordinary Agelan. It does **not** have to be a full sentence:
 
 | Interior | Example | Reading |
 |----------|---------|---------|
-| Fragment (one word or a short stretch) | `zazawan vawul h(zuzem).` | *Azawan walks (happily).* |
-| Same-force clause body | `zazawan vawul h(zulonun vezelel).` | *Azawan walks (Ulonun sleeps).* |
+| Fragment (one word or a short stretch) | `zazawan vawalal h(zuzumum).` | *Azawan walks (happily).* |
+| Same-force clause body | `zazawan vawalal h(zululon velebel).` | *Azawan walks (Ululon sleeps).* |
 
-Interior words keep **their** PoS. The fence is the adverb. A one-word manner comment with nothing to package is a plain adverb: `zazawan vawul huzem.`
+Interior words keep **their** PoS. The fence is the adverb. A one-word manner comment with nothing to package is a plain adverb: `zazawan vawalal huzumum.`
 
 The aside **keeps the outer speech act** (omissible statement `jal` stays omitted). Put a new question or command in its own turn, not inside `h(…)`.
 
 A *because* / *if* dependent is still **`odo`**, not an aside. A second name for the same person uses [identity](predication.md#identity) or classification, not `h(…)`.
 
 ```
-`zazawan vawul h(zuzem).`
+`zazawan vawalal h(zuzumum).`
 
 gloss: `z-grace` · `v-walk` · `h-(happy)`
 
@@ -140,103 +140,103 @@ gloss: `z-grace` · `v-walk` · `h-(happy)`
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Prefer a one-token cite, mention, or opaque blob; nativize when the surface wording is not the point. House names for people unless the item is a loan name.
 
-**Roots used here:** `azawa` / `ulonu` / `ubuzu` · `ezabu` *tell* · `uwa` *write* · `egu` *sing* · `ejo` *see* · `awu` *walk* · `ezele` *sleep* · `uze` *happy* (**-m**) · `ogodo` *dog* · `agada` *cat* · `ogobo` *book* · `ulebu` *blue* · `edage` *teacher*
+**Roots used here:** `azawa` / `ululo` / `uhubu` · `ezehe` *tell* · `uwuru` *write* · `uzune` *sing* · `eje` *see* · `awala` *walk* · `elebe` *sleep* · `uzumu` *happy* (**-m**) · `adaga` *dog* · `agada` *cat* · `abogo` *book* · `elulu` *blue* · `edege` *teacher*
 
 #### English → Agelan
 
 **1.** *Azawan said “hi.”*
 
 ::: details Show answer
-`zazawan d[hi] vezabul.`
+`zazawan d[hi] vezehel.`
 :::
 
 **2.** *Azawan said that.* (resume the prior cite)
 
 ::: details Show answer
-`zazawan d[=] vezabul.`
+`zazawan d[=] vezehel.`
 :::
 
-**3.** *Ulonun wrote something like “hi.”*
+**3.** *Ululon wrote something like “hi.”*
 
 ::: details Show answer
-`zulonun d~[hi] vuwal.`
+`zululon d~[hi] vuwurul.`
 :::
 
-**4.** *Ubuzun sang “Hamlet.”* (title as wording)
+**4.** *Uhubun sang “Hamlet.”* (title as wording)
 
 ::: details Show answer
-`zubuzun d@[Hamlet] vegul.`
+`zuhubun d@[Hamlet] vuzunel.`
 :::
 
 **5.** *Azawan saw sushi.* (ordinary compact loan, not an opaque blob)
 
 ::: details Show answer
-`zazawan d<sushi>l vejol.`
+`zazawan d<sushi>l vejel.`
 :::
 
 **6.** *The word “dog” is blue.* (the form itself is the subject)
 
 ::: details Show answer
-`z{ogodo} gulebun.`
+`z{adaga} gelulun.`
 :::
 
-**7.** *Don’t “oops,” Ulonun.*
+**7.** *Don’t “oops,” Ululon.*
 
 ::: details Show answer
-`jul zulonun v[oops].`
+`jul zululon v[oops].`
 :::
 
 **8.** *Azawan walks (happily).* (parenthetical aside)
 
 ::: details Show answer
-`zazawan vawul h(zuzem).`
+`zazawan vawalal h(zuzumum).`
 :::
 
-**9.** *Azawan walks (Ulonun sleeps).* (clause-body aside)
+**9.** *Azawan walks (Ululon sleeps).* (clause-body aside)
 
 ::: details Show answer
-`zazawan vawul h(zulonun vezelel).`
+`zazawan vawalal h(zululon velebel).`
 :::
 
 #### Agelan → English
 
-**1.** `zulonun d[=] vezabul.`
+**1.** `zululon d[=] vezehel.`
 
 ::: details Show answer
-*Ulonun said that.*
+*Ululon said that.*
 :::
 
-**2.** `zazawan d<sushi> vejol.`
+**2.** `zazawan d<sushi> vejel.`
 
 ::: details Show answer
 *Azawan saw sushi.* (opaque surface — not parsed as Agelan, and not a compact loan word)
 :::
 
-**3.** `zubuzun d{ogobo} vezabul.`
+**3.** `zuhubun d{abogo} vezehel.`
 
 ::: details Show answer
-*Ubuzun said the word “book.”*
+*Uhubun said the word “book.”*
 :::
 
-**4.** `zulonun d@{Hamlet} vuwal.`
+**4.** `zululon d@{Hamlet} vuwurul.`
 
 ::: details Show answer
-*Ulonun wrote the title Hamlet (as a named unit).*
+*Ululon wrote the title Hamlet (as a named unit).*
 :::
 
-**5.** `jol zazawan d[=] vezabul.`
+**5.** `jol zazawan d[=] vezehel.`
 
 ::: details Show answer
 *Azawan said that?!*
 :::
 
-**6.** `z{agada} gedagel.`
+**6.** `z{agada} gedegel.`
 
 ::: details Show answer
 *The word “cat” is a teacher.*
 :::
 
-**7.** `z<Sam>n d[hi] vezabul.`
+**7.** `z<Sam>n d[hi] vezehel.`
 
 ::: details Show answer
 *Sam said “hi.”*
@@ -248,10 +248,10 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Sam* (name citation outside a clause — not a span)
 :::
 
-**9.** `zazawan vawul h(zulonun vezelel).`
+**9.** `zazawan vawalal h(zululon velebel).`
 
 ::: details Show answer
-*Azawan walks (Ulonun sleeps).*
+*Azawan walks (Ululon sleeps).*
 :::
 
 ## Intermediate
@@ -304,7 +304,7 @@ The vowel **after** `x` is **EDGE** — how far the open runs.
 |------|-----|--------------|-----------------|
 | **a** | **Multi-token open** — push a stack frame until explicit close (default) | yes | `d[…]` … `]` |
 | **e** | **Clause-scoped** — auto-pop before the next clause-force `/j/` or clause-level `/x/` join (**complete**) | no (auto) | `d[…` run to clause end |
-| **o** | **Atomic** — exactly **one** following token | no | `d[egu]`, `d<sushi>` |
+| **o** | **Atomic** — exactly **one** following token | no | `d[uzune]`, `d<sushi>` |
 | **u** | **Empty / redacted** — no interior; also **anaphor** **-r** | no | `d[]`, `d[=]` |
 
 **Anaphor `-r`** always uses EDGE **`u`** in the spoken template (`daxur`).
@@ -334,7 +334,7 @@ EDGE **`a`** / **`e`** / **`o`** take **-l** / **-m** / **-n**. EDGE **`u`** tak
 | `d@[…]` | `daxan` … `xuxul` | proper multi-token cite; also spelling of hedged proper |
 | `d{…}` / `d~{…}` / `d@{…}` | `doxal` / `doxam` / `doxan` … `xuxul` | mention |
 | `h(…)` / `h~(…)` / `h@(…)` | `hexal` / `hexam` / `hexan` … `xuxul` | aside (open PoS is `/h/`) |
-| `h(zuzem)` | `hexol zuzem` | atomic aside |
+| `h(zuzumum)` | `hexol zuzumum` | atomic aside |
 | `h(=)` | `hexur` | aside anaphor |
 | `d<…>` / `d~<…>` / `d@<…>` | `duxal` / `duxam` / `duxan` … `xuxul` | opaque |
 | `d[hi]` | `daxol hi` | atomic (EDGE **o**) |
@@ -361,7 +361,7 @@ Examples: `d[ h(…) ]`, `d[ z{…} ]`, `d~[ d<…> ]`. **`@`** / **`~`** apply 
 **Mnemonic:** edges = parentheses; binder = function.
 
 ```
-`^ h<maybe>l zedejel zogodol ^ v<saw>l.`
+`^ h<maybe>l zaredel zadagal ^ v<saw>l.`
 
 gloss: `^` · `h-maybe` · `z-red` · `z-dog` · `^` · `v-saw`
 
@@ -374,7 +374,7 @@ gloss: `^` · `h-maybe` · `z-red` · `z-dog` · `^` · `v-saw`
 - **One island per clause.** Do not nest islands.
 - Empty `^^` is illegal.
 - **Binder required:** at least one scope-taking `/h/` and/or a [join](coordination.md#join-scope-islands-rules) particle **inside**. Binderless `^ … ^` is illegal.
-- Prefer spaces inside: `^ h<maybe>l zedejel zogodol ^`.
+- Prefer spaces inside: `^ h<maybe>l zaredel zadagal ^`.
 
 | Binder | Job inside the island |
 |--------|------------------------|
@@ -400,7 +400,7 @@ gloss: `z-Sam` · `^` · `z-water` · `zal` · `^` · `zam` · `v-saw`
 
 **Speech / prosody:** brief reset into the island, one tight intonation phrase, boundary on the last island stress. In singing: an ordinary phrase bow — not quote voice, not quiet aside voice.
 
-**Trap:** `jal h<maybe>l ^ zedejel zogodol ^ …` is illegal — island has no inside binder. Put the `/h/` inside.
+**Trap:** `jal h<maybe>l ^ zaredel zadagal ^ …` is illegal — island has no inside binder. Put the `/h/` inside.
 
 | Need | Use instead |
 |------|-------------|
@@ -414,68 +414,68 @@ gloss: `z-Sam` · `^` · `z-water` · `zal` · `^` · `zam` · `v-saw`
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Test spoken opens (TYPE / EDGE / ending), an explicit **`xuxul`** close, nesting, or a **`^ … ^`** island — not only Beginner brackets.
 
-**Roots used here:** `azawa` / `ulonu` / `ubuzu` · `ezabu` *tell* · `ejo` *see* · `urunu` *run* · `edeje` *red* · `ogodo` *dog* · `agada` *cat* · `ogobo` *book* · `ulebu` *blue* · `uze` *happy* (**-m**) · `edulo` (handle **Edulo**)
+**Roots used here:** `azawa` / `ululo` / `uhubu` · `ezehe` *tell* · `eje` *see* · `urunu` *run* · `arede` *red* · `adaga` *dog* · `agada` *cat* · `abogo` *book* · `elulu` *blue* · `uzumu` *happy* (**-m**) · `edulo` (handle **Edulo**)
 
 #### English → Agelan
 
 **1.** *Azawan said “hi.”* (spoken atomic cite)
 
 ::: details Show answer
-`zazawan daxol hi vezabul.`
+`zazawan daxol hi vezehel.`
 :::
 
-**2.** *Ulonun said “hi Azawan.”* (spoken multi-token cite)
+**2.** *Ululon said “hi Azawan.”* (spoken multi-token cite)
 
 ::: details Show answer
-`zulonun daxal hi zazawan xuxul vezabul.`
+`zululon daxal hi zazawan xuxul vezehel.`
 :::
 
-**3.** *Ubuzun said that.* (spoken cite anaphor)
+**3.** *Uhubun said that.* (spoken cite anaphor)
 
 ::: details Show answer
-`zubuzun daxur vezabul.`
+`zuhubun daxur vezehel.`
 :::
 
 **4.** *Azawan said \[redacted\].*
 
 ::: details Show answer
-`zazawan daxul vezabul.`
+`zazawan daxul vezehel.`
 :::
 
 **5.** *Azawan saw sushi.* (spoken atomic opaque)
 
 ::: details Show answer
-`zazawan duxol sushi vejol.`
+`zazawan duxol sushi vejel.`
 :::
 
 **6.** *Azawan said “hi” (happily).* (cite nesting an aside)
 
 ::: details Show answer
-`zazawan d[ h(zuzem) hi ] vezabul.`
+`zazawan d[ h(zuzumum) hi ] vezehel.`
 :::
 
 **7.** *Azawan walks (happily).* (spoken atomic aside)
 
 ::: details Show answer
-`zazawan vawul hexol zuzem.`
+`zazawan vawalal hexol zuzumum.`
 :::
 
 **8.** *Azawan saw maybe the red dog.* (*maybe* targets that chunk)
 
 ::: details Show answer
-`zazawan ^ h<maybe>l zedejel zogodol ^ vejol.`
+`zazawan ^ h<maybe>l zaredel zadagal ^ vejel.`
 :::
 
-**9.** *Ubuzun and (just a cat) ran.*
+**9.** *Uhubun and (just a cat) ran.*
 
 ::: details Show answer
-`zubuzun ^ zagadal zal ^ zam vurunul.`
+`zuhubun ^ zagadal zal ^ zam vurunul.`
 :::
 
 **10.** *Azawan said the word “Edulo.”*
 
 ::: details Show answer
-`zazawan d{edulo} vezabul.`
+`zazawan d{edulo} vezehel.`
 :::
 
 #### Agelan → English
@@ -486,55 +486,55 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan said “hi.”* (clause-scoped cite — no explicit close)
 :::
 
-**2.** `zulonun daxam hi zazawan xuxul vezabul.`
+**2.** `zululon daxam hi zazawan xuxul vezehel.`
 
 ::: details Show answer
-*Ulonun said something like “hi Azawan.”*
+*Ululon said something like “hi Azawan.”*
 :::
 
-**3.** `zaxur gulebun.`
+**3.** `zaxur gelulun.`
 
 ::: details Show answer
 *That (cite) is blue.* (anaphor as subject)
 :::
 
-**4.** `zubuzun daxon Hamlet vegul.`
+**4.** `zuhubun daxon Hamlet vuzunel.`
 
 ::: details Show answer
-*Ubuzun sang “Hamlet.”* (spoken atomic proper cite)
+*Uhubun sang “Hamlet.”* (spoken atomic proper cite)
 :::
 
-**5.** `zulonun doxom ogobo vezabul.`
+**5.** `zululon doxom abogo vezehel.`
 
 ::: details Show answer
-*Ulonun said the word “book” (as a gist / paraphrase).*
+*Ululon said the word “book” (as a gist / paraphrase).*
 :::
 
-**6.** `zazawan d[ z{ogobo} ] vezabul.`
+**6.** `zazawan d[ z{abogo} ] vezehel.`
 
 ::: details Show answer
 *Azawan said the word “book” (cite wrapping a mention).*
 :::
 
-**7.** `zulonun ^ h<maybe>l zedejel zagadal ^ vejol.`
+**7.** `zululon ^ h<maybe>l zaredel zagadal ^ vejel.`
 
 ::: details Show answer
-*Ulonun saw maybe the red cat.*
+*Ululon saw maybe the red cat.*
 :::
 
-**8.** `zazawan ^ zogodol zal ^ zam vejol.`
+**8.** `zazawan ^ zadagal zal ^ zam vejel.`
 
 ::: details Show answer
 *Azawan and (just a dog) saw (it).*
 :::
 
-**9.** `zazawan vawul hexol zuzem.`
+**9.** `zazawan vawalal hexol zuzumum.`
 
 ::: details Show answer
 *Azawan walks (happily).*
 :::
 
-**10.** `zazawan d{edulo} vezabul.`
+**10.** `zazawan d{edulo} vezehel.`
 
 ::: details Show answer
 *Azawan said the word “Edulo.”*
@@ -636,82 +636,82 @@ While scanning a span interior, bare `|` / `#` / hyphen are ordinary content unl
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. Test how the span **closes** (complete / editorial / proper / close-all), or literal fence material as **opaque** content.
 
-**Roots used here:** `azawa` / `ulonu` / `ubuzu` · `ezabu` *tell* · `uze` *happy* (**-m**)
+**Roots used here:** `azawa` / `ululo` / `uhubu` · `ezehe` *tell* · `uzumu` *happy* (**-m**)
 
 #### English → Agelan
 
 **1.** *Azawan said “hi…”* (the cite trails off)
 
 ::: details Show answer
-`zazawan daxal hi xuxur vezabul.`
+`zazawan daxal hi xuxur vezehel.`
 :::
 
-**2.** *Ulonun said “hi”* (keep the wording as written, defects and all — editorial close)
+**2.** *Ululon said “hi”* (keep the wording as written, defects and all — editorial close)
 
 ::: details Show answer
-`zulonun daxal hi xuxur vezabul.`
+`zululon daxal hi xuxur vezehel.`
 :::
 
-**3.** *Ubuzun said “hi” (happily)* — then pop every open span at once.
+**3.** *Uhubun said “hi” (happily)* — then pop every open span at once.
 
 ::: details Show answer
-`zubuzun daxal hi hexol zuzem xuxum vezabul.`
+`zuhubun daxal hi hexol zuzumum xuxum vezehel.`
 :::
 
 **4.** *Azawan said “hi…”* — trail off the inner cite, then pop all remaining opens. (writing)
 
 ::: details Show answer
-`zazawan d[hi-|] vezabul.`
+`zazawan d[hi-|] vezehel.`
 :::
 
-**5.** *Ulonun cited “hi” as a titled wording*, then pop all remaining opens. (writing)
+**5.** *Ululon cited “hi” as a titled wording*, then pop all remaining opens. (writing)
 
 ::: details Show answer
-`zulonun d[hi#|] vezabul.`
+`zululon d[hi#|] vezehel.`
 :::
 
 **6.** *Azawan said “he typed ] then left.”*
 
 ::: details Show answer
-`zazawan d[ he typed d<]> then left ] vezabul.`
+`zazawan d[ he typed d<]> then left ] vezehel.`
 :::
 
 #### Agelan → English
 
-**1.** `zazawan d[hi-] vezabul.`
+**1.** `zazawan d[hi-] vezehel.`
 
 ::: details Show answer
 *Azawan said “hi…”* (editorial cite — wording trails off)
 :::
 
-**2.** `zulonun daxal hi xuxun vezabul.`
+**2.** `zululon daxal hi xuxun vezehel.`
 
 ::: details Show answer
-*Ulonun said “hi”.* (proper close — reserved for spans held as titled units)
+*Ululon said “hi”.* (proper close — reserved for spans held as titled units)
 :::
 
-**3.** `zubuzun daxal hi xuxul vezabul.`
+**3.** `zuhubun daxal hi xuxul vezehel.`
 
 ::: details Show answer
-*Ubuzun said “hi.”* (complete close of one span)
+*Uhubun said “hi.”* (complete close of one span)
 :::
 
-**4.** `zazawan daxal hi xuxur xuxum vezabul.`
+**4.** `zazawan daxal hi xuxur xuxum vezehel.`
 
 ::: details Show answer
 *Azawan said “hi…”* (editorial innermost, then pop all)
 :::
 
-**5.** `zulonun daxal duxol xuxul xuxul vezabul.`
+**5.** `zululon daxal duxol xuxul xuxul vezehel.`
 
 ::: details Show answer
-*Ulonun said the word “xuxul” (as opaque content inside a cite).*
+*Ululon said the word “xuxul” (as opaque content inside a cite).*
 :::
 
-**6.** `zulonun duxal code > 1 xuxul vezabul.`
+**6.** `zululon duxal code > 1 xuxul vezehel.`
 
 ::: details Show answer
-*Ulonun said “code > 1.”* (opaque blob; spoken close — writing `<>` would take the first `>` as closer)
+*Ululon said “code > 1.”* (opaque blob; spoken close — writing `<>` would take the first `>` as closer)
 :::
 
 <a id="xl<spa>n-markers"></a>

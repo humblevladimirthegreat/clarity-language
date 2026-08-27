@@ -39,18 +39,18 @@ Vowel echo only — not reviser or join readings. Mid-word **`x`** map: [x-compo
 
 | Ending | Reading |
 |--------|---------|
-| **-l** | Indefinite / kind — *a fighter*, *fighters as a type* (`zaxozowel`) |
+| **-l** | Indefinite / kind — *a fighter*, *fighters as a type* (`zaxozowol`) |
 | **-m** | Soft / hedged role |
 | **-n** | Titled / epithet role label (rare) |
 | **-r** | Definite — participant of the **most recent matching** event (**`a`/`u`**) or relation (**`o`**) for that ROOT |
 
 **-r** resolution: match ROOT to the most recent verb, event noun, or relation word with that stem (including a ROOT half inside a prior role compound). ROLE picks that frame’s agent, patient, or `/b/` pole — including when the participant was only introduced as [unspecified-member](coordination.md#unspecified-member-r-phrase) **`zar`** / **`dar`** / ….
 
-Bare event noun stays the event: `zozowel` / `zozower` = *an / that fight*, not a participant. Cross-PoS content **-r** from a verb still resumes the [event](pronouns.md), not the agent — use **`ax`/`ux`** for participants.
+Bare event noun stays the event: `zozowol` / `zozowor` = *an / that fight*, not a participant. Cross-PoS content **-r** from a verb still resumes the [event](pronouns.md), not the agent — use **`ax`/`ux`** for participants.
 
 ```
-`zar dumogon vozowel.`
-`zaxozower vurunul.`
+`zar dumogon vozowol.`
+`zaxozowor vurunul.`
 
 gloss: `z-someone` · `d-me` · `v-conflict` · `z-conflict-agent-r` · `v-run`
 
@@ -59,10 +59,10 @@ gloss: `z-someone` · `d-me` · `v-conflict` · `z-conflict-agent-r` · `v-run`
 
 | Agelan | Gloss |
 |---------|--------|
-| `zaxozowel` | *a fighter* (kind; no discourse event required) |
-| `duxozower` | *the one fought* (as object now) |
+| `zaxozowol` | *a fighter* (kind; no discourse event required) |
+| `duxozowor` | *the one fought* (as object now) |
 | `zoxogonor` | *that bond-argument* (reltum of salient `…ogonol b-…`) |
-| `zozower` | *that fight* (event — not agent) |
+| `zozowor` | *that fight* (event — not agent) |
 
 **Key contrasts:**
 
@@ -71,7 +71,7 @@ gloss: `z-someone` · `d-me` · `v-conflict` · `z-conflict-agent-r` · `v-run`
 | Role compound | Participant derived from event/relation root |
 | Content **-r** on event | The event / doing itself ([pronouns](pronouns.md)) |
 | **`zar`** / **`dar`** | Unspecified member introduce; prefer role **-r** once the event is named |
-| Ability `vozowexul` | Can’t fight (fixed) — **ROOT x vowel**, not ROLE vowel left of `x` |
+| Ability `vozowoxul` | Can’t fight (fixed) — **ROOT x vowel**, not ROLE vowel left of `x` |
 | Span `daxal` / `duxal` | Quote / opaque open — **vowel x vowel**, not ROLE x root |
 
 ROLE is **`a`/`u`/`o`** only; wrong ROOT type for a ROLE is illegal. Plural **-sh** on noun-slot role compounds follows ordinary [plurality](plurality.md) for that PoS.
@@ -81,103 +81,103 @@ ROLE is **`a`/`u`/`o`** only; wrong ROOT type for a ROLE is illegal. Plural **-s
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `agada` *cat* · `uze` smile → *happy* (**-m**) · `awu` *walk* · `urunu` *run* · `ezele` *sleep* · `egu` *sing* · `ejo` *see* · `uwa` *write* · `ahura` *sit* · `ozowe` *conflict* / *fight* · `ogono` *bond*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `agada` *cat* · `uzumu` smile → *happy* (**-m**) · `awala` *walk* · `urunu` *run* · `elebe` *sleep* · `uzune` *sing* · `eje` *see* · `uwuru` *write* · `aju` *sit* · `ozowo` *conflict* / *fight* · `ogono` *bond*
 
 #### English → Agelan
 
 **1.** *A fighter runs.*
 
 ::: details Show answer
-`zaxozowel vurunul.`
+`zaxozowol vurunul.`
 :::
 
 **2.** *Azawan walks. The walker sleeps.*
 
 ::: details Show answer
-`zazawan vawul. zaxawur vezelel.`
+`zazawan vawalal. zaxawalar velebel.`
 :::
 
-**3.** *Ulonun sings. The singer sits.*
+**3.** *Ululon sings. The singer sits.*
 
 ::: details Show answer
-`zulonun vegul. zaxegur vahural.`
+`zululon vuzunel. zaxuzuner vajul.`
 :::
 
 **4.** *Azawan sees a cat. The one seen runs.*
 
 ::: details Show answer
-`zazawan dagadal vejol. zuxejor vurunul.`
+`zazawan dagadal vejel. zuxejer vurunul.`
 :::
 
 **5.** *A writer is happy.*
 
 ::: details Show answer
-`zaxuwal guzem.`
+`zaxuwurul guzumum.`
 :::
 
 **6.** *Azawan is a fighter, in a manner of speaking.*
 
 ::: details Show answer
-`zazawan zaxozowem.`
+`zazawan zaxozowom.`
 :::
 
 **7.** *Azawan sees a fight.*
 
 ::: details Show answer
-`zazawan dozowel vejol.`
+`zazawan dozowol vejel.`
 :::
 
-**8.** *Azawan is bound to Ulonun. That bond-argument runs.*
+**8.** *Azawan is bound to Ululon. That bond-argument runs.*
 
 ::: details Show answer
-`zazawan gogonol bulonun. zoxogonor vurunul.`
+`zazawan gogonol bululon. zoxogonor vurunul.`
 :::
 
 #### Agelan → English
 
-**1.** `zaxurunul vawul.`
+**1.** `zaxurunul vawalal.`
 
 ::: details Show answer
 *A runner walks.*
 :::
 
-**2.** `zulonun vegul. zaxegur vezelel.`
+**2.** `zululon vuzunel. zaxuzuner velebel.`
 
 ::: details Show answer
-*Ulonun sings. The singer sleeps.*
+*Ululon sings. The singer sleeps.*
 :::
 
-**3.** `zazawan dagadal vejol. zuxejor vahural.`
+**3.** `zazawan dagadal vejel. zuxejer vajul.`
 
 ::: details Show answer
 *Azawan sees a cat. The one seen sits.*
 :::
 
-**4.** `zaxawul guzem.`
+**4.** `zaxawalal guzumum.`
 
 ::: details Show answer
 *A walker is happy.*
 :::
 
-**5.** `zazawan vozowel. zaxozower vurunul.`
+**5.** `zazawan vozowol. zaxozowor vurunul.`
 
 ::: details Show answer
 *Azawan fought. The fighter ran.*
 :::
 
-**6.** `zubuzun dulonun vozowel. duxozower vawul.`
+**6.** `zuhubun dululon vozowol. duxozowor vawalal.`
 
 ::: details Show answer
-*Ubuzun fought Ulonun. The one fought walks.*
+*Uhubun fought Ululon. The one fought walks.*
 :::
 
-**7.** `zazawan dozowel vejol.`
+**7.** `zazawan dozowol vejel.`
 
 ::: details Show answer
 *Azawan sees a fight.*
 :::
 
-**8.** `zazawan zaxozowem.`
+**8.** `zazawan zaxozowom.`
 
 ::: details Show answer
 *Azawan is a fighter, in a manner of speaking.*
@@ -210,7 +210,7 @@ PoS + DIR + x + ANCHOR + {-l|-m|-n|-r}
 Parser family stays **ordinary** `DIR x ANCHOR` ([x-compounds.md](x-compounds.md)): two roots; direction is the kind, viewpoint narrows it.
 
 ```
-`jel vawul hevedel.`
+`jel vawalal hewezel.`
 
 gloss: `j-command` · `v-walk` · `h-west`
 
@@ -218,7 +218,7 @@ gloss: `j-command` · `v-walk` · `h-west`
 ```
 
 ```
-`jel vawul hevedexazawan.`
+`jel vawalal hewezexazawan.`
 
 gloss: `j-command` · `v-walk` · `h-west-Azawan`
 
@@ -226,7 +226,7 @@ gloss: `j-command` · `v-walk` · `h-west-Azawan`
 ```
 
 ```
-`jel zehadon vawul hevedexehadon.`
+`jel zehadon vawalal hewezexehadon.`
 
 gloss: `j-command` · `z-listener` · `v-walk` · `h-west-listener`
 
@@ -240,7 +240,7 @@ gloss: `j-command` · `z-listener` · `v-walk` · `h-west-listener`
 | **`ububu`** | ⬆️ | north | ahead |
 | **`owono`** | ⬇️ | south | back |
 | **`amala`** | ➡️ | east | right |
-| **`evede`** | ⬅️ | west | left |
+| **`eweze`** | ⬅️ | west | left |
 | **`uduju`** | ↗️ | northeast | forward-right |
 | **`ebule`** | ↖️ | northwest | forward-left |
 | **`oduwo`** | ↘️ | southeast | back-right |
@@ -248,7 +248,7 @@ gloss: `j-command` · `z-listener` · `v-walk` · `h-west-listener`
 
 Indoor headings may follow a local map (building north). Prefer a name or listener frame when you mean someone’s body rose (`…xazawan`, `…xehadon`).
 
-Published **metaphors** of the same roots stay bare (`amala` → *progress* / discourse **`xamalal`**; `evede` → *return*; `odewo` → *retreat*). Generic heading **`ogamo`** stays *compass* / *direction*. Path *forward* / *back* **`ovaro`** / **`agaja`** stay those roots; facing-relative ahead / back on this rose is **`ububu` / `owono` × ANCHOR**.
+Published **metaphors** of the same roots stay bare (`amala` → *progress* / discourse **`xamalal`**; `eweze` → *return*; `odewo` → *retreat*). Generic heading **`ogamo`** stays *compass* / *direction*. Path *forward* / *back* **`ovaro`** / **`agaja`** stay those roots; facing-relative ahead / back on this rose is **`ububu` / `owono` × ANCHOR**.
 
 #### Gravity (`avuza` / `ovazo`)
 
@@ -261,7 +261,7 @@ Skyward / toward the pull is a **shared** frame, not a face:
 | **`ubodu`** | ↕️ | the vertical axis | — |
 
 ```
-`jel vawul havuzal.`
+`jel vawalal havuzal.`
 
 gloss: `j-command` · `v-walk` · `h-up`
 
@@ -280,11 +280,11 @@ gloss: `j-up`
 
 | Pattern | Job | Example |
 |---------|-----|---------|
-| Bare DIR | compass / gravity | `gevedel` *west*; `gavuzal` *up* |
-| **`DIR x ANCHOR`** | that point on **ANCHOR’s** facing rose | `gevedexehadon` *listener-left* |
-| **complex `/ɡ/` + `/b/`** | region on a side **of a landmark** | `gevedexazawan beredel` *on Azawan’s-left of the tree* |
+| Bare DIR | compass / gravity | `gewezel` *west*; `gavuzal` *up* |
+| **`DIR x ANCHOR`** | that point on **ANCHOR’s** facing rose | `gewezexehadon` *listener-left* |
+| **complex `/ɡ/` + `/b/`** | region on a side **of a landmark** | `gewezexazawan beredel` *on Azawan’s-left of the tree* |
 
-The **`/b/`** argument is the landmark, not the viewpoint. Put the facing being after **`x`**; put the tree / door / wall in `/b/` when you need both. Bare compass + `/b/` is a region on that heading of the landmark (`gevedel beredel` *west of the tree*).
+The **`/b/`** argument is the landmark, not the viewpoint. Put the facing being after **`x`**; put the tree / door / wall in `/b/` when you need both. Bare compass + `/b/` is a region on that heading of the landmark (`gewezel beredel` *west of the tree*).
 
 #### Endings and resume
 
@@ -299,15 +299,15 @@ The **`/b/`** argument is the landmark, not the viewpoint. Put the facing being 
 
 | Form | Reading |
 |------|---------|
-| `gevedel` | *west* (shared map) |
-| `gevedexazawan` | *Azawan’s left* |
-| `gevedexehadon` | *your left* (listener facing) |
-| `gevedexumogon` | *my left* (speaker facing) |
-| `gevedexanan` | *our left* (shared facing) |
+| `gewezel` | *west* (shared map) |
+| `gewezexazawan` | *Azawan’s left* |
+| `gewezexehadon` | *your left* (listener facing) |
+| `gewezexumogon` | *my left* (speaker facing) |
+| `gewezexanan` | *our left* (shared facing) |
 | `gavuzal` / `havuzal` | gravity *up* |
 | `xamalal` | discourse *therefore* — *progress*, not east and not body-right |
-| Role `zaxozower` | participant — ROLE vowel left of **`x`**, not DIR |
-| Ability `veguxul` | stance vowel right of **`x`**, not a person root |
+| Role `zaxozowor` | participant — ROLE vowel left of **`x`**, not DIR |
+| Ability `vuzunexul` | stance vowel right of **`x`**, not a person root |
 
 
 ### Translation practice
@@ -315,103 +315,103 @@ The **`/b/`** argument is the landmark, not the viewpoint. Put the facing being 
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `ohuze` *house* · `agada` *cat* · `ogodo` *dog* · `ogobo` *book* · `awu` *walk* · `evede` *west* / body *left* · `amala` *east* / body *right* · `ebule` *northwest* / *forward-left* · `avuza` *up* (gravity) · `erede` *tree* · `ehado` *listener* · `umogo` *speaker*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `ohohu` *house* · `agada` *cat* · `adaga` *dog* · `abogo` *book* · `awala` *walk* · `eweze` *west* / body *left* · `amala` *east* / body *right* · `ebule` *northwest* / *forward-left* · `avuza` *up* (gravity) · `erede` *tree* · `ehado` *listener* · `umogo` *speaker*
 
 #### English → Agelan
 
 **1.** *The house on Azawan’s left.*
 
 ::: details Show answer
-`zohuzel gevedexazawan.`
+`zohohul gewezexazawan.`
 :::
 
-**2.** *The cat on Ulonun’s right.*
+**2.** *The cat on Ululon’s right.*
 
 ::: details Show answer
-`zagadal gamalaxulonun.`
+`zagadal gamalaxululon.`
 :::
 
 **3.** *Walk west.*
 
 ::: details Show answer
-`jel vawul hevedel.`
+`jel vawalal hewezel.`
 :::
 
 **4.** *Walk up.*
 
 ::: details Show answer
-`jel vawul havuzal.`
+`jel vawalal havuzal.`
 :::
 
-**5.** *The dog on Ubuzun’s forward-left.*
+**5.** *The dog on Uhubun’s forward-left.*
 
 ::: details Show answer
-`zogodol gebulexubuzun.`
+`zadagal gebulexuhubun.`
 :::
 
 **6.** *The book is on Azawan’s left of the tree.*
 
 ::: details Show answer
-`zogobol gevedexazawan beredel.`
+`zabogol gewezexazawan beredel.`
 :::
 
 **7.** *You, walk left — your left.*
 
 ::: details Show answer
-`jel zehadon vawul hevedexehadon.`
+`jel zehadon vawalal hewezexehadon.`
 :::
 
 **8.** *The house on my left.*
 
 ::: details Show answer
-`zohuzel gevedexumogon.`
+`zohohul gewezexumogon.`
 :::
 
 #### Agelan → English
 
-**1.** `zohuzel gamalaxazawan.`
+**1.** `zohohul gamalaxazawan.`
 
 ::: details Show answer
 *The house on Azawan’s right.*
 :::
 
-**2.** `zagadal gevedexulonun.`
+**2.** `zagadal gewezexululon.`
 
 ::: details Show answer
-*The cat on Ulonun’s left.*
+*The cat on Ululon’s left.*
 :::
 
-**3.** `jel vawul hevedel.`
+**3.** `jel vawalal hewezel.`
 
 ::: details Show answer
 *Walk west.*
 :::
 
-**4.** `jel vawul havuzal.`
+**4.** `jel vawalal havuzal.`
 
 ::: details Show answer
 *Walk up.*
 :::
 
-**5.** `zohuzel gevedel.`
+**5.** `zohohul gewezel.`
 
 ::: details Show answer
 *The house on the west.*
 :::
 
-**6.** `zogobol gevedexulonun beredel.`
+**6.** `zabogol gewezexululon beredel.`
 
 ::: details Show answer
-*The book is on Ulonun’s left of the tree.*
+*The book is on Ululon’s left of the tree.*
 :::
 
-**7.** `jel zehadon vawul hamalaxehadon.`
+**7.** `jel zehadon vawalal hamalaxehadon.`
 
 ::: details Show answer
 *You, walk right — your right.*
 :::
 
-**8.** `zohuzel gevedexumogon.`
+**8.** `zohohul gewezexumogon.`
 
 ::: details Show answer
 *The house on my left.*

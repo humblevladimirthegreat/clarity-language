@@ -5,7 +5,7 @@ import { useClassifyTables } from '../composables/useClassifyTables'
 import { useAgelanSpeak } from '../composables/useAgelanSpeak'
 import GlossOverlay from './GlossOverlay.vue'
 
-const SAMPLE = 'zazawan vawul.'
+const SAMPLE = 'zazawan vawalal.'
 
 const text = ref(SAMPLE)
 

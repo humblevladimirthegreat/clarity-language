@@ -111,7 +111,7 @@ Digits are optional when these roots name a topic outside ideation (*the problem
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Compose emotion (one value + ACT + LOCUS), or number ideation candidates (`g#N`) — not overlay-inventory lookup, and not universality warrant.
 
-**Roots used here:** `azawa` / `ulonu` / `ubuzu` · `odolo` *competence* · `ogono` *relatedness* · `ezebe` *dialogue* · `awaza` *division* · `ebun` *draft* · `emome` *memo* · `ogena` HIGH · `oju` MED · `ozono` LOW · `abobo` INTERNAL · `oburo` EXTERNAL · `agena` CIRCUM · `ubezu` *problem* · `egoge` *solution* · `ogalo` *goal* · `ezabu` *tell*
+**Roots used here:** `azawa` / `ululo` / `uhubu` · `odolo` *competence* · `ogono` *relatedness* · `ezebe` *dialogue* · `awaza` *division* · `ebun` *draft* · `emome` *memo* · `ogena` HIGH · `oju` MED · `ozono` LOW · `abobo` INTERNAL · `oburo` EXTERNAL · `agena` CIRCUM · `ubezu` *problem* · `egoge` *solution* · `ogalo` *goal* · `ezehe` *tell*
 
 #### English → Agelan
 
@@ -154,7 +154,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **7.** *Azawan names solution 2.*
 
 ::: details Show answer
-`zazawan zegogel g#2 vezabul.`
+`zazawan zegogel g#2 vezehel.`
 :::
 
 #### Agelan → English
@@ -189,10 +189,10 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Solution 2* (tentative rank).
 :::
 
-**6.** `zubuzun zubezul g#1 vezabul.`
+**6.** `zuhubun zubezul g#1 vezehel.`
 
 ::: details Show answer
-*Ubuzun names problem 1.*
+*Uhubun names problem 1.*
 :::
 
 ## Advanced
@@ -261,20 +261,20 @@ Prefer floating `/h/`; **RULE** is complex `/h/` + `/b/` scope when the frame is
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. Pair a domain fence (`hual` / `zual` / `zuam`) with an exceptionlessness warrant — not mechanism **`heragem`**, and not domain softness standing in for a warrant.
 
-**Roots used here:** `azawa` / `ulonu` / `ubuzu` · `ewono` COMMON · `ululu` UNCOUNTERED · `idido` FORMAL · `afafa` NATURAL · `ebebe` RULE · `ahaze` *chess* · `ezuda` *square* · `agada` *cat* · `ogodo` *dog* · `ogobo` *book* · `edage` *teacher* · `awu` *walk* · `egu` *sing* · `ezele` *sleep* · `ahura` *sit* · `ejo` *see* · `urunu` *run* · `awa` evidential *pattern*
+**Roots used here:** `azawa` / `ululo` / `uhubu` · `ewono` COMMON · `ululu` UNCOUNTERED · `idido` FORMAL · `afafa` NATURAL · `ebebe` RULE · `ahaze` *chess* · `ezuda` *square* · `agada` *cat* · `adaga` *dog* · `abogo` *book* · `edege` *teacher* · `awala` *walk* · `uzune` *sing* · `elebe` *sleep* · `aju` *sit* · `eje` *see* · `urunu` *run* · `awa` evidential *pattern*
 
 #### English → Agelan
 
 **1.** *Azawan always walks, usually.*
 
 ::: details Show answer
-`zazawan hual vawul hewonol.`
+`zazawan hual vawalal hewonol.`
 :::
 
-**2.** *Ulonun always sleeps, as far as checked.*
+**2.** *Ululon always sleeps, as far as checked.*
 
 ::: details Show answer
-`zulonun hual vezelel hululul.`
+`zululon hual velebel hululul.`
 :::
 
 **3.** *Every square, by definition.*
@@ -283,16 +283,16 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 `zual gezudal hididol.`
 :::
 
-**4.** *Ubuzun always sits, by natural necessity* (plus a trail of cases).
+**4.** *Uhubun always sits, by natural necessity* (plus a trail of cases).
 
 ::: details Show answer
-`zubuzun hual vahural hafafal hawam.`
+`zuhubun hual vajul hafafal hawam.`
 :::
 
 **5.** *Azawan always sings, under chess.*
 
 ::: details Show answer
-`zazawan hual vegul hebebel behazel.`
+`zazawan hual vuzunel hebebel behazel.`
 :::
 
 **6.** *Every cat that comes to mind, usually.*
@@ -303,37 +303,37 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 #### Agelan → English
 
-**1.** `zulonun hual vurunul hewonol.`
+**1.** `zululon hual vurunul hewonol.`
 
 ::: details Show answer
-*Ulonun always runs, usually.*
+*Ululon always runs, usually.*
 :::
 
-**2.** `zazawan hual vejol hululul.`
+**2.** `zazawan hual vejel hululul.`
 
 ::: details Show answer
 *Azawan always sees, as far as checked.*
 :::
 
-**3.** `zual gedagel hididol.`
+**3.** `zual gedegel hididol.`
 
 ::: details Show answer
 *Every teacher, by definition.*
 :::
 
-**4.** `zogodol hual vezelel hafafal hawam.`
+**4.** `zadagal hual velebel hafafal hawam.`
 
 ::: details Show answer
 *The dog always sleeps, by natural necessity* (plus a trail of cases).
 :::
 
-**5.** `zubuzun hual vawul hebebel behazel.`
+**5.** `zuhubun hual vawalal hebebel behazel.`
 
 ::: details Show answer
-*Ubuzun always walks, under chess.*
+*Uhubun always walks, under chess.*
 :::
 
-**6.** `zuam gogobol hewonol.`
+**6.** `zuam gabogol hewonol.`
 
 ::: details Show answer
 *Every book that comes to mind, usually.*

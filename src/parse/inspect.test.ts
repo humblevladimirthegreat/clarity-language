@@ -15,7 +15,7 @@ const tables = createClassifyTables(
 
 describe("inspectText", () => {
   it("tokenizes zazawan with PoS, named ending, and published gloss", () => {
-    const result = inspectText("zazawan vawul.", tables);
+    const result = inspectText("zazawan vawalal.", tables);
     const first = result.tokens[0];
     assert.equal(first?.kind, "word");
     if (first?.kind !== "word") return;
@@ -51,26 +51,26 @@ describe("inspectText", () => {
   });
 
   it("keeps a Peggy failure as an error token beside valid words", () => {
-    const result = inspectText("zazawan zolex1l vawul.", tables);
+    const result = inspectText("zazawan zolovex1l vawalal.", tables);
     const kinds = result.tokens.map((token) => token.kind);
     assert.deepEqual(kinds, ["word", "error", "word", "punct"]);
     const err = result.tokens[1];
     assert.equal(err?.kind, "error");
     if (err?.kind !== "error") return;
-    assert.equal(err.raw, "zolex1l");
+    assert.equal(err.raw, "zolovex1l");
     assert.ok(err.error.message.length > 0);
     assert.equal(result.sentenceWarning, undefined);
   });
 
   it("surfaces a sentence warning when words parse but the clause does not", () => {
-    const result = inspectText("zazawan vawul xuxul.", tables);
+    const result = inspectText("zazawan vawalal xuxul.", tables);
     assert.ok(result.tokens.some((token) => token.kind === "word"));
     assert.ok(result.sentenceWarning);
     assert.equal(result.constructions.length, 0);
   });
 
   it("groups a right-close join as a construction", () => {
-    const result = inspectText("zogodol zagadal zam.", tables);
+    const result = inspectText("zadagal zagadal zam.", tables);
     const zam = result.tokens.find((token) => token.kind === "word" && token.raw === "zam");
     assert.equal(zam?.kind, "word");
     if (zam?.kind !== "word") return;
@@ -78,13 +78,13 @@ describe("inspectText", () => {
     const join = result.constructions.find((group) => group.kind === "join");
     assert.ok(join);
     const raws = join!.tokenIndices.map((i) => result.tokens[i]!.raw);
-    assert.deepEqual(raws, ["zogodol", "zagadal", "zam"]);
+    assert.deepEqual(raws, ["zadagal", "zagadal", "zam"]);
     const zamIdx = result.tokens.findIndex((token) => token.raw === "zam");
     assert.ok(join!.triggerIndices.includes(zamIdx));
   });
 
   it("pairs span open and close as Related", () => {
-    const result = inspectText("daxal zogodol xuxul vawul.", tables);
+    const result = inspectText("daxal zadagal xuxul vawalal.", tables);
     const span = result.constructions.find((group) => group.kind === "span");
     assert.ok(span);
     const open = result.tokens.find((token) => token.kind === "word" && token.raw === "daxal");
@@ -96,13 +96,13 @@ describe("inspectText", () => {
   });
 
   it("links -r to its antecedent", () => {
-    const result = inspectText("zulonun vawul. zulor vahural.", tables);
-    const pronoun = result.tokens.find((token) => token.kind === "word" && token.raw === "zulor");
+    const result = inspectText("zululon vawalal. zulur vajul.", tables);
+    const pronoun = result.tokens.find((token) => token.kind === "word" && token.raw === "zulur");
     assert.equal(pronoun?.kind, "word");
     if (pronoun?.kind !== "word") return;
     const ant = pronoun.related?.find((rel) => rel.label === "antecedent");
-    assert.equal(ant?.raw, "zulonun");
-    assert.equal(result.tokens[ant!.tokenIndex]?.raw, "zulonun");
+    assert.equal(ant?.raw, "zululon");
+    assert.equal(result.tokens[ant!.tokenIndex]?.raw, "zululon");
   });
 
   it("Why distinguishes values from role compounds", () => {
@@ -112,7 +112,7 @@ describe("inspectText", () => {
     assert.equal(value.why?.line, "values, not role");
     assert.equal(value.why?.href, "values.html");
 
-    const role = inspectText("zaxozowel", tables).tokens[0];
+    const role = inspectText("zaxozowol", tables).tokens[0];
     assert.equal(role?.kind, "word");
     if (role?.kind !== "word") return;
     assert.equal(role.why?.line, "role compound");

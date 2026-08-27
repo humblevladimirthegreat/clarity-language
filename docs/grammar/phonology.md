@@ -33,14 +33,14 @@ There is no phonemic voiced / unvoiced contrast; voiced is preferred so the voca
 |--------|-----|-------------|------------------|---------|
 | **h** | /ɦ/ | *ahead* | /h/ — *hat* | `huan` /ɦu.ɑn/ |
 | **w** | /w/ | *we* | | `wul` /wul/ |
-| **g** | /ɡ/ | *go* | /k/ — *kite* | `gedagel` |
+| **g** | /ɡ/ | *go* | /k/ — *kite* | `gedegel` |
 | **d** | /d/ | *do* | /t/ — *toe* | `daxal` |
 | **j** | /j/ | *yes* (Germanic *j* as in *ja*) | | `jael` /ja.el/ |
 | **b** | /b/ | *be* | /p/ — *pay* | `bodol` |
 | **z** | /z/ | *zoo* | /s/ — *sea* | `zazawan` |
 | **m** | /m/ | *me* | | `zemogol` |
 | **n** | /n/ | *no* | | `na` /na/ |
-| **v** | /v/ | *vie* | /f/ — *fee* | `veguxel` |
+| **v** | /v/ | *vie* | /f/ — *fee* | `vuzunexel` |
 | **l** | /l/ | *lie* | | `zel` /zel/ |
 | **r** | /ɹ/ | *red* | | `reu` /ɹeu/ |
 | **x** | /ʒ/ | *vision* (the *si*) | /ʃ/ — *shy* | `xuxul` |
@@ -102,9 +102,9 @@ The Beginner rules above are the usable inventory. This checklist is the design 
 
 **Try it:** sing a short Agelan line quickly at a high comfortable pitch, then compare a line that piles closed vowels, clusters, and mid-word stops:
 
-`zazawan guzem.`
+`zazawan guzumum.`
 
-/ za.za.wan ɡu.zem /
+/ za.za.wan ɡu.zu.mum /
 
 Versus (not Agelan — built to violate the constraints):
 

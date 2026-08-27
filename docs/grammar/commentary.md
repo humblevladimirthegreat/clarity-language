@@ -54,26 +54,26 @@ On **`uho`**, **-l / -m / -r** mark **how you hold** the commentary. **-n** is o
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` / `ulonu` / `ubuzu` · `ogodo` · `awu` · `ezele` · `egu` · `urunu` · `ejo` · `uho`
+**Roots used here:** `azawa` / `ululo` / `uhubu` · `adaga` · `awala` · `elebe` · `uzune` · `urunu` · `eje` · `uho`
 
 #### English → Agelan
 
 **1.** *I think Azawan walks.* (light commentary)
 
 ::: details Show answer
-`zazawan huhom vawul.`
+`zazawan huhom vawalal.`
 :::
 
-**2.** *I think Ulonun sleeps.*
+**2.** *I think Ululon sleeps.*
 
 ::: details Show answer
-`zulonun huhom vezelel.`
+`zululon huhom velebel.`
 :::
 
-**3.** *Ubuzun sings — and that take is the scene.* (fused hold)
+**3.** *Uhubun sings — and that take is the scene.* (fused hold)
 
 ::: details Show answer
-`zubuzun huhol vegul.`
+`zuhubun huhol vuzunel.`
 :::
 
 **4.** *I think Azawan runs.* (light commentary)
@@ -82,10 +82,10 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zazawan huhom vurunul.`
 :::
 
-**5.** *I think Ulonun walks — and step back from that take.*
+**5.** *I think Ululon walks — and step back from that take.*
 
 ::: details Show answer
-`zulonun huhur vawul.`
+`zululon huhur vawalal.`
 :::
 
 **6.** *Azawan thinks.* (deliberate event, not a commentary frame)
@@ -97,33 +97,33 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **7.** *I think Azawan sees a dog.*
 
 ::: details Show answer
-`zazawan huhom vejol dogodol.`
+`zazawan huhom vejel dadagal.`
 :::
 
-**8.** *Does Ubuzun sleep?* (yes/no; light commentary over the ask)
+**8.** *Does Uhubun sleep?* (yes/no; light commentary over the ask)
 
 ::: details Show answer
-`jol zubuzun huhom vezelel.`
+`jol zuhubun huhom velebel.`
 :::
 
 #### Agelan → English
 
-**1.** `zazawan huhom vawul.`
+**1.** `zazawan huhom vawalal.`
 
 ::: details Show answer
 *I think Azawan walks.*
 :::
 
-**2.** `zulonun huhol vezelel.`
+**2.** `zululon huhol velebel.`
 
 ::: details Show answer
-*Ulonun sleeps — and that commentary is taken as the scene.*
+*Ululon sleeps — and that commentary is taken as the scene.*
 :::
 
-**3.** `zubuzun huhom vegul.`
+**3.** `zuhubun huhom vuzunel.`
 
 ::: details Show answer
-*I think Ubuzun sings.*
+*I think Uhubun sings.*
 :::
 
 **4.** `zazawan huhur vurunul.`
@@ -132,28 +132,28 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *I think Azawan runs — and step back from that take.*
 :::
 
-**5.** `zulonun vuhol.`
+**5.** `zululon vuhol.`
 
 ::: details Show answer
-*Ulonun thinks.* (an event of thinking, not COMMENT)
+*Ululon thinks.* (an event of thinking, not COMMENT)
 :::
 
-**6.** `jol zazawan huhom vawul.`
+**6.** `jol zazawan huhom vawalal.`
 
 ::: details Show answer
 *Does Azawan walk?* (asked with light commentary)
 :::
 
-**7.** `zazawan huhom vejol dogodol.`
+**7.** `zazawan huhom vejel dadagal.`
 
 ::: details Show answer
 *I think Azawan sees a dog.*
 :::
 
-**8.** `zubuzun huhom vegul.`
+**8.** `zuhubun huhom vuzunel.`
 
 ::: details Show answer
-*I think Ubuzun sings.*
+*I think Uhubun sings.*
 :::
 
 ## Intermediate
@@ -209,7 +209,7 @@ Channel is a **root choice**, not `xa`/`xu` on the claim host. Stack with **PRED
 | `… herarem …` | *told / hearsay* |
 | `… hahem …` | *felt / gut-known* |
 | `… horolom …` | *per the tale / story* |
-| `hedelom hawam … varunal` | *forecast from pattern: it rains* |
+| `hedelom hawam … vanunul` | *forecast from pattern: it rains* |
 | `… haon b-…` + `hevem` | *sufficient-cause claim, inferred* |
 
 #### Memory / record (past framing)
@@ -313,76 +313,76 @@ When unsure, prefer **`hedahem`**.
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` / `ulonu` / `ubuzu` · `ogodo` · `awu` · `ezele` · `egu` · `urunu` · `uwa` · `uho` · `uhunu` · `eroge` · `awa` · `eve` · `erare` · `ahe` · `orolo` · `edahe`
+**Roots used here:** `azawa` / `ululo` / `uhubu` · `adaga` · `awala` · `elebe` · `uzune` · `urunu` · `uwuru` · `uho` · `uhunu` · `eroge` · `awa` · `eve` · `erare` · `ahe` · `orolo` · `edahe`
 
 #### English → Agelan
 
 **1.** *I think Azawan walks.* (attitude — not how you know a world-claim)
 
 ::: details Show answer
-`zazawan huhom vawul.`
+`zazawan huhom vawalal.`
 :::
 
 **2.** *Azawan walks — from memory / witnessed.*
 
 ::: details Show answer
-`zazawan huhunum vawul.`
+`zazawan huhunum vawalal.`
 :::
 
-**3.** *Ulonun sleeps — on record.*
+**3.** *Ululon sleeps — on record.*
 
 ::: details Show answer
-`zulonun herogem vezelel.`
+`zululon herogem velebel.`
 :::
 
-**4.** *Ubuzun runs — from the pattern of cases.*
+**4.** *Uhubun runs — from the pattern of cases.*
 
 ::: details Show answer
-`zubuzun hawam vurunul.`
+`zuhubun hawam vurunul.`
 :::
 
 **5.** *Azawan sings — inferred from clues.*
 
 ::: details Show answer
-`zazawan hevem vegul.`
+`zazawan hevem vuzunel.`
 :::
 
-**6.** *Ulonun writes — so they say.* (hearsay)
+**6.** *Ululon writes — so they say.* (hearsay)
 
 ::: details Show answer
-`zulonun herarem vuwal.`
+`zululon herarem vuwurul.`
 :::
 
 **7.** *As if Azawan walks.* (soft pretensive frame)
 
 ::: details Show answer
-`zazawan hedahem vawul.`
+`zazawan hedahem vawalal.`
 :::
 
-**8.** *I wonder whether Ubuzun sleeps.* (commentary + soft ask)
+**8.** *I wonder whether Uhubun sleeps.* (commentary + soft ask)
 
 ::: details Show answer
-`jom zubuzun huhom vezelel.`
+`jom zuhubun huhom velebel.`
 :::
 
 #### Agelan → English
 
-**1.** `zazawan hahem vawul.`
+**1.** `zazawan hahem vawalal.`
 
 ::: details Show answer
 *Azawan walks — felt / gut-known.*
 :::
 
-**2.** `zulonun horolom vezelel.`
+**2.** `zululon horolom velebel.`
 
 ::: details Show answer
-*Ulonun sleeps — per the tale.*
+*Ululon sleeps — per the tale.*
 :::
 
-**3.** `zubuzun hedahel vegul.`
+**3.** `zuhubun hedahel vuzunel.`
 
 ::: details Show answer
-*As if Ubuzun sings* — immersed in the imagined scene.
+*As if Uhubun sings* — immersed in the imagined scene.
 :::
 
 **4.** `zazawan hedahem vurunul.`
@@ -391,25 +391,25 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *As if Azawan runs* — soft pretensive frame.
 :::
 
-**5.** `zulonun hedaher vuwal.`
+**5.** `zululon hedaher vuwurul.`
 
 ::: details Show answer
-*As if Ulonun writes* — and step back toward contact.
+*As if Ululon writes* — and step back toward contact.
 :::
 
-**6.** `zazawan herogem vejol dogodol.`
+**6.** `zazawan herogem vejel dadagal.`
 
 ::: details Show answer
 *Azawan sees a dog — on record.*
 :::
 
-**7.** `zulonun huhunum vezelel.`
+**7.** `zululon huhunum velebel.`
 
 ::: details Show answer
-*Ulonun sleeps — from memory / witnessed.*
+*Ululon sleeps — from memory / witnessed.*
 :::
 
-**8.** `jom zazawan huhom vawul.`
+**8.** `jom zazawan huhom vawalal.`
 
 ::: details Show answer
 *I wonder whether Azawan walks.*

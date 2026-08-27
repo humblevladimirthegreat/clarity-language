@@ -19,19 +19,19 @@ describe("parseWord — content / gl- / citation", () => {
     assert.deepEqual(word.family, { kind: "content", roots: ["umogo"] });
   });
 
-  it("parses glulebul as left-bound /ɡ/ (core.md gl-)", () => {
-    const word = parseOk("glulebul");
+  it("parses glelulul as left-bound /ɡ/ (core.md gl-)", () => {
+    const word = parseOk("glelulul");
     assert.equal(word.pos, "g");
     assert.equal(word.gl, true);
     assert.equal(word.ending, "l");
-    assert.deepEqual(word.family, { kind: "content", roots: ["ulebu"] });
+    assert.deepEqual(word.family, { kind: "content", roots: ["elulu"] });
   });
 
-  it("parses prefix-less citation uzem (core.md citation-forms)", () => {
-    const word = parseOk("uzem");
+  it("parses prefix-less citation uzumum (core.md citation-forms)", () => {
+    const word = parseOk("uzumum");
     assert.equal(word.pos, undefined);
     assert.equal(word.ending, "m");
-    assert.deepEqual(word.family, { kind: "content", roots: ["uze"] });
+    assert.deepEqual(word.family, { kind: "content", roots: ["uzumu"] });
   });
 });
 
@@ -156,14 +156,14 @@ describe("parseWord — spans and writing atoms", () => {
 });
 
 describe("parseWord — x families, revisers, joins, foreign", () => {
-  it("parses veguxel as valueAbility (ability.md; classify splits need-set later)", () => {
-    const word = parseOk("veguxel");
+  it("parses vuzunexel as valueAbility (ability.md; classify splits need-set later)", () => {
+    const word = parseOk("vuzunexel");
     assert.equal(word.pos, "v");
     assert.equal(word.ending, "l");
     assert.deepEqual(word.family, {
       kind: "x",
       xFamily: "valueAbility",
-      leftRoots: ["egu"],
+      leftRoots: ["uzune"],
       stanceVowel: "e",
     });
   });
@@ -187,14 +187,14 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     assert.deepEqual(opaque.family, { kind: "foreign", payload: "sushi", opaque: true });
   });
 
-  it("parses zolexrabal as numeric derivation +e (numeric-derivation.md)", () => {
-    const word = parseOk("zolexrabal");
+  it("parses zolovexrabal as numeric derivation +e (numeric-derivation.md)", () => {
+    const word = parseOk("zolovexrabal");
     assert.equal(word.pos, "z");
     assert.equal(word.ending, "l");
     assert.deepEqual(word.family, {
       kind: "x",
       xFamily: "numeric",
-      leftRoots: ["ole"],
+      leftRoots: ["olove"],
       numberStem: { marker: "+", groups: [], digitlessExp: "e" },
     });
   });
@@ -206,23 +206,23 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     assert.deepEqual(word.family, { kind: "joinMarker", series: "a" });
   });
 
-  it("parses ordinary compound zuzuzuxogeven (x-compounds.md)", () => {
-    const word = parseOk("zuzuzuxogeven");
+  it("parses ordinary compound zuzuzuxogoven (x-compounds.md)", () => {
+    const word = parseOk("zuzuzuxogoven");
     assert.deepEqual(word.family, {
       kind: "x",
       xFamily: "compound",
       leftRoots: ["uzuzu"],
-      rightRoots: ["ogeve"],
+      rightRoots: ["ogove"],
     });
   });
 
-  it("parses three-root ordinary compound zuzuzuxogevexadedan (x-compounds.md)", () => {
-    const word = parseOk("zuzuzuxogevexadedan");
+  it("parses three-root ordinary compound zuzuzuxogovexadedan (x-compounds.md)", () => {
+    const word = parseOk("zuzuzuxogovexadedan");
     assert.deepEqual(word.family, {
       kind: "x",
       xFamily: "compound",
       leftRoots: ["uzuzu"],
-      rightRoots: ["ogeve", "adeda"],
+      rightRoots: ["ogove", "adeda"],
     });
   });
 });
@@ -233,10 +233,10 @@ describe("parseWord — illegal shapes", () => {
   });
 
   it("rejects ROOTx1 with no number marker (numeric-derivation.md)", () => {
-    assert.throws(() => parseWord("zolex1l"), WordParseError);
+    assert.throws(() => parseWord("zolovex1l"), WordParseError);
   });
 
   it("rejects reserved e x ROOT role (x-compounds.md / roles.md)", () => {
-    assert.throws(() => parseWord("zexogodol"), WordParseError);
+    assert.throws(() => parseWord("zexadagal"), WordParseError);
   });
 });

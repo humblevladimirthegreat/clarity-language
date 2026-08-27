@@ -103,7 +103,7 @@ On **`xa`** compounds, **-l / -m / -r** mark **how you contact** the (claimed) p
 | `…xan` | **proper** (rare) |
 
 ```
-`zugodal gohuzem bumogon wodoloxal.`
+`zugodal gohohum bumogon wodoloxal.`
 
 gloss: `z-neighborhood` · `g-home` · `b-speaker` · `w-competence-met-physical`
 
@@ -172,7 +172,7 @@ gloss: `z-meeting` · `w-autonomy-unmet-temporary`
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `edage` *teacher* · `ogobo` *book* · `ohuze` *house* · `awu` *walk* · `ezabu` *tell* · `egu` *sing* · `aweru` *gift* · `azudo` *meeting* · `obola` *autonomy* · `odolo` *competence* · `ogono` *relatedness* · `azedo` *pleasure* · `uzehu` *survival* · `egege` *unspecified need*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `edege` *teacher* · `abogo` *book* · `ohohu` *house* · `awala` *walk* · `ezehe` *tell* · `uzune` *sing* · `aweru` *gift* · `azudo` *meeting* · `obola` *autonomy* · `odolo` *competence* · `ogono` *relatedness* · `azedo` *pleasure* · `uzehu` *survival* · `egege` *unspecified need*
 
 #### English → Agelan
 
@@ -191,7 +191,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **3.** *The house serves competence (physical channel).*
 
 ::: details Show answer
-`zohuzel wodoloxal.`
+`zohohul wodoloxal.`
 :::
 
 **4.** *The meeting costs autonomy right now (temporary).*
@@ -203,7 +203,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **5.** *Azawan tells — relatedness ought to be served (endorse).*
 
 ::: details Show answer
-`zazawan vezabul hogonoxom.`
+`zazawan vezehel hogonoxom.`
 :::
 
 **6.** *Unspecified need (as a topic).*
@@ -215,13 +215,13 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **7.** *The book serves competence (mental channel).*
 
 ::: details Show answer
-`zogobol wodoloxam.`
+`zabogol wodoloxam.`
 :::
 
-**8.** *Ubuzun sings — survival ought to be protected (bound).*
+**8.** *Uhubun sings — survival ought to be protected (bound).*
 
 ::: details Show answer
-`zubuzun vegul huzuhuxol.`
+`zuhubun vuzunel huzuhuxol.`
 :::
 
 #### Agelan → English
@@ -244,7 +244,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *The meeting costs autonomy right now (temporary).*
 :::
 
-**4.** `zogobol wodoloxam.`
+**4.** `zabogol wodoloxam.`
 
 ::: details Show answer
 *The book serves competence (mental channel).*
@@ -256,19 +256,19 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Unspecified need (as a topic).*
 :::
 
-**6.** `zulonun vezabul hogonoxor.`
+**6.** `zululon vezehel hogonoxor.`
 
 ::: details Show answer
-*Ulonun tells — relatedness ought to be served (invite).*
+*Ululon tells — relatedness ought to be served (invite).*
 :::
 
-**7.** `zohuzel wuzuhuxal.`
+**7.** `zohohul wuzuhuxal.`
 
 ::: details Show answer
 *The house serves survival (physical channel).*
 :::
 
-**8.** `zedagel wodoloxum.`
+**8.** `zedegel wodoloxum.`
 
 ::: details Show answer
 *The teacher costs competence (modifiable).*
@@ -354,44 +354,44 @@ Prefer **-m** on **`xu` / `xe` / `xo`** when that table’s dimension is unclear
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `ogobo` *book* · `ohuze` *house* · `awu` *walk* · `ezabu` *tell* · `egu` *sing* · `uwa` *write* · `ahura` *sit* · `aweru` *gift* · `azudo` *meeting* · `obola` *autonomy* · `odolo` *competence* · `ogono` *relatedness* · `azedo` *pleasure* · `uzehu` *survival* · **`hual`** (*always*)
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `abogo` *book* · `ohohu` *house* · `awala` *walk* · `ezehe` *tell* · `uzune` *sing* · `uwuru` *write* · `aju` *sit* · `aweru` *gift* · `azudo` *meeting* · `obola` *autonomy* · `odolo` *competence* · `ogono` *relatedness* · `azedo` *pleasure* · `uzehu` *survival* · **`hual`** (*always*)
 
 #### English → Agelan
 
 **1.** *Azawan tells for relatedness (internal reason).*
 
 ::: details Show answer
-`zazawan vezabul hogonoxem.`
+`zazawan vezehel hogonoxem.`
 :::
 
-**2.** *Ulonun walks for relatedness (the situation pulls it).*
+**2.** *Ululon walks for relatedness (the situation pulls it).*
 
 ::: details Show answer
-`zulonun vawul hogonoxel.`
+`zululon vawalal hogonoxel.`
 :::
 
-**3.** *Ubuzun sings for relatedness (internal motive, as usual).*
+**3.** *Uhubun sings for relatedness (internal motive, as usual).*
 
 ::: details Show answer
-`zubuzun vegul hogonoxem hual.`
+`zuhubun vuzunel hogonoxem hual.`
 :::
 
 **4.** *Azawan sits for relatedness (protective motive).*
 
 ::: details Show answer
-`zazawan vahural hogonoxer.`
+`zazawan vajul hogonoxer.`
 :::
 
-**5.** *Ulonun writes for competence (internal reason).*
+**5.** *Ululon writes for competence (internal reason).*
 
 ::: details Show answer
-`zulonun vuwal hodoloxem.`
+`zululon vuwurul hodoloxem.`
 :::
 
 **6.** *Azawan’s house serves competence (physical channel).*
 
 ::: details Show answer
-`zohuzel gohuzem bazawan wodoloxal.`
+`zohohul gohohum bazawan wodoloxal.`
 :::
 
 **7.** *The gift serves relatedness (physical) — met contact, not motive.*
@@ -400,45 +400,45 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zawerul wogonoxal.`
 :::
 
-**8.** *Ubuzun tells — relatedness ought to be served (endorse).*
+**8.** *Uhubun tells — relatedness ought to be served (endorse).*
 
 ::: details Show answer
-`zubuzun vezabul hogonoxom.`
+`zuhubun vezehel hogonoxom.`
 :::
 
 #### Agelan → English
 
-**1.** `zazawan vezabul hogonoxem.`
+**1.** `zazawan vezehel hogonoxem.`
 
 ::: details Show answer
 *Azawan tells for relatedness (internal reason).*
 :::
 
-**2.** `zulonun vawul hogonoxel.`
+**2.** `zululon vawalal hogonoxel.`
 
 ::: details Show answer
-*Ulonun walks for relatedness (circumstantial motive).*
+*Ululon walks for relatedness (circumstantial motive).*
 :::
 
-**3.** `zubuzun vegul hogonoxem hual.`
+**3.** `zuhubun vuzunel hogonoxem hual.`
 
 ::: details Show answer
-*Ubuzun sings for relatedness (internal motive, as usual).*
+*Uhubun sings for relatedness (internal motive, as usual).*
 :::
 
-**4.** `zazawan vahural hogonoxer.`
+**4.** `zazawan vajul hogonoxer.`
 
 ::: details Show answer
 *Azawan sits for relatedness (protective motive).*
 :::
 
-**5.** `zulonun vuwal hodoloxem.`
+**5.** `zululon vuwurul hodoloxem.`
 
 ::: details Show answer
-*Ulonun writes for competence (internal reason).*
+*Ululon writes for competence (internal reason).*
 :::
 
-**6.** `zohuzel gohuzem bazawan wodoloxal.`
+**6.** `zohohul gohohum bazawan wodoloxal.`
 
 ::: details Show answer
 *Azawan’s house serves competence (physical channel).*
@@ -498,27 +498,27 @@ Competence (`odolo`) and relatedness (`ogono`) shown for readability; same endin
 - Ordinary **-l / -m** (literal / metaphorical) do not mean met / unmet on these compounds.
 - Value second halves are bare vowels **`a` / `e` / `o` / `u`** inside a compound — not prefix-less revisers (`al`, `ul`, …) and not restrictor joins (`hal`, …).
 - Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)).
-- **Incapability** compounds onto the **activity/property host** (`veguxul`) or fallback **`egera`** — [ability](ability.md#ability) — not onto need compounds (`hodoloxul` remains unmet competence).
+- **Incapability** compounds onto the **activity/property host** (`vuzunexul`) or fallback **`egera`** — [ability](ability.md#ability) — not onto need compounds (`hodoloxul` remains unmet competence).
 
 ### Translation practice
 <a id="translation-practice-advanced"></a>
 
 Short drills on this Advanced band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ezabu` *tell* · `edage` *teacher* · `azudo` *meeting* · `odolo` *competence* · `ogono` *relatedness* · `azedo` *pleasure*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `ezehe` *tell* · `edege` *teacher* · `azudo` *meeting* · `odolo` *competence* · `ogono` *relatedness* · `azedo` *pleasure*
 
 #### English → Agelan
 
 **1.** *Azawan tells — competence met (physical) and relatedness as internal motive.*
 
 ::: details Show answer
-`zazawan vezabul hodoloxal hogonoxem.`
+`zazawan vezehel hodoloxal hogonoxem.`
 :::
 
-**2.** *Ulonun tells — relatedness ought (bound) and relatedness as circumstantial motive.*
+**2.** *Ululon tells — relatedness ought (bound) and relatedness as circumstantial motive.*
 
 ::: details Show answer
-`zulonun vezabul hogonoxol hogonoxel.`
+`zululon vezehel hogonoxol hogonoxel.`
 :::
 
 **3.** *The meeting costs competence for good (unmet need, irreversible — not “can’t”).*
@@ -536,21 +536,21 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 **5.** *Azawan is a teacher — relatedness unmet (modifiable).*
 
 ::: details Show answer
-`zazawan gedagel hogonoxum.`
+`zazawan gedegel hogonoxum.`
 :::
 
 #### Agelan → English
 
-**1.** `zazawan vezabul hodoloxal hogonoxem.`
+**1.** `zazawan vezehel hodoloxal hogonoxem.`
 
 ::: details Show answer
 *Azawan tells — competence is met (physical contact) and relatedness is the internal motive.*
 :::
 
-**2.** `zulonun vezabul hogonoxol hogonoxel.`
+**2.** `zululon vezehel hogonoxol hogonoxel.`
 
 ::: details Show answer
-*Ulonun tells — relatedness is bound as an ought, and relatedness is the circumstantial motive.*
+*Ululon tells — relatedness is bound as an ought, and relatedness is the circumstantial motive.*
 :::
 
 **3.** `zazudol wodoloxul.`

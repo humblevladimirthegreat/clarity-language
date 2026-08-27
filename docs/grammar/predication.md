@@ -17,11 +17,11 @@ Content `/v/` is for events and actions — not a light *be* between two nouns.
 
 | Shape | Reading |
 |-------|---------|
-| `zazawan gonudam` | *Azawan is challenging* (property) |
+| `zazawan gomonum` | *Azawan is challenging* (property) |
 | `zodavan gogunol buzuban` | *Clark is (identical to) Superman* — [identity](#identity) |
 
 ```
-`zazawan gonudam.`
+`zazawan gomonum.`
 
 gloss: `z-grace` · `g-challenging`
 
@@ -38,18 +38,18 @@ gloss: `z-grace` · `g-challenging`
 
 | Pattern | Example | Reading |
 |---------|---------|---------|
-| Kind / role as `/ɡ/` | `zazawan gedagel` | *Azawan is a teacher* |
-| Named category / titled role | `zazawan gedagen` | *Azawan is Teacher* (proper designation) — [**-n** on `/ɡ/`](reference-suffix.md) |
+| Kind / role as `/ɡ/` | `zazawan gedegel` | *Azawan is a teacher* |
+| Named category / titled role | `zazawan gedegen` | *Azawan is Teacher* (proper designation) — [**-n** on `/ɡ/`](reference-suffix.md) |
 
 ```
-`zazawan gedagel.`
+`zazawan gedegel.`
 
 gloss: `z-grace` · `g-teacher`
 
 *Azawan is a teacher.*
 ```
 
-**Role noun vs role adjective:** when you **refer** to a person-as-role, use a noun slot (`zedagel`). When you **ascribe** the role to a named or resumed host, use an adjective on that host (`zazawan gedagel`).
+**Role noun vs role adjective:** when you **refer** to a person-as-role, use a noun slot (`zedegel`). When you **ascribe** the role to a named or resumed host, use an adjective on that host (`zazawan gedegel`).
 
 ### Identity (**SAME**)
 <a id="identity"></a>
@@ -88,38 +88,38 @@ gloss: `z-odava` · `g-SAME` · `b-uzuba`
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Property and kind sit on `/ɡ/`; identity uses **`gogunol`** plus `/b/` — not a *to-be* verb.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `edage` *teacher* · `uzedu` *student* · `ogodo` *dog* · `agada` *cat* · `ogobo` *book* · `ulebu` *blue* · `uze` smile → *happy* (**-m**) · `onuda` *challenging* (**-m**) · `awu` *walk* · `ezele` *sleep* · `oguno` **SAME** · `odava` *Clark* · `uzuba` *Superman*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `edege` *teacher* · `uzudu` *student* · `adaga` *dog* · `agada` *cat* · `abogo` *book* · `elulu` *blue* · `uzumu` smile → *happy* (**-m**) · `omonu` *challenging* (**-m**) · `awala` *walk* · `elebe` *sleep* · `oguno` **SAME** · `odava` *Clark* · `uzuba` *Superman*
 
 #### English → Agelan
 
 **1.** *Azawan is challenging.*
 
 ::: details Show answer
-`zazawan gonudam.`
+`zazawan gomonum.`
 :::
 
 **2.** *Azawan is a teacher.*
 
 ::: details Show answer
-`zazawan gedagel.`
+`zazawan gedegel.`
 :::
 
-**3.** *Ulonun is a student.*
+**3.** *Ululon is a student.*
 
 ::: details Show answer
-`zulonun gezedul.`
+`zululon gezedul.`
 :::
 
 **4.** *The teacher walks.*
 
 ::: details Show answer
-`zedagel vawul.`
+`zedegel vawalal.`
 :::
 
 **5.** *Azawan is Teacher.*
 
 ::: details Show answer
-`zazawan gedagen.`
+`zazawan gedegen.`
 :::
 
 **6.** *Clark is Superman.*
@@ -128,39 +128,39 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zodavan gogunol buzuban.`
 :::
 
-**7.** *Ubuzun is happy.*
+**7.** *Uhubun is happy.*
 
 ::: details Show answer
-`zubuzun guzem.`
+`zuhubun guzumum.`
 :::
 
 **8.** *The cat is blue.*
 
 ::: details Show answer
-`zagadal gulebul.`
+`zagadal gelulul.`
 :::
 
 #### Agelan → English
 
-**1.** `zazawan gonudam.`
+**1.** `zazawan gomonum.`
 
 ::: details Show answer
 *Azawan is challenging.*
 :::
 
-**2.** `zulonun gedagel.`
+**2.** `zululon gedegel.`
 
 ::: details Show answer
-*Ulonun is a teacher.*
+*Ululon is a teacher.*
 :::
 
-**3.** `zedagel vezelel.`
+**3.** `zedegel velebel.`
 
 ::: details Show answer
 *The teacher sleeps.*
 :::
 
-**4.** `zazawan gedagen.`
+**4.** `zazawan gedegen.`
 
 ::: details Show answer
 *Azawan is Teacher.*
@@ -178,16 +178,16 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Superman is Clark.*
 :::
 
-**7.** `zogodol gonudam.`
+**7.** `zadagal gomonum.`
 
 ::: details Show answer
 *The dog is challenging.*
 :::
 
-**8.** `zubuzun gezedul.`
+**8.** `zuhubun gezedul.`
 
 ::: details Show answer
-*Ubuzun is a student.*
+*Uhubun is a student.*
 :::
 
 ## Intermediate
@@ -197,11 +197,11 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 | Pattern | Example | Reading |
 |---------|---------|---------|
-| Soft / hedged class | plain classifying clause (`zazawan gedagel`) with a `/w/` hedge stacked on the classifying `/ɡ/` | *Azawan is something of a teacher* / *a teacher, sort of* |
-| Characterizing / habitual | `zazawan gedagel hual` | *Azawan is the teaching type* — [**hual**](restrictors.md) |
-| Negation | `zazawan gul gedagel` | *Azawan is not a teacher* — [negation **u**](coordination.md#negation-u) |
+| Soft / hedged class | plain classifying clause (`zazawan gedegel`) with a `/w/` hedge stacked on the classifying `/ɡ/` | *Azawan is something of a teacher* / *a teacher, sort of* |
+| Characterizing / habitual | `zazawan gedegel hual` | *Azawan is the teaching type* — [**hual**](restrictors.md) |
+| Negation | `zazawan gul gedegel` | *Azawan is not a teacher* — [negation **u**](coordination.md#negation-u) |
 
-Values still stack on the classifying `/ɡ/` (`gedagel w-…xa…`) when the point is gratitude, judgment, or other need framing of that role — [values.md](values.md).
+Values still stack on the classifying `/ɡ/` (`gedegel w-…xa…`) when the point is gratitude, judgment, or other need framing of that role — [values.md](values.md).
 
 **Trap:** co-reference of two labels → [identity](#identity). Equal degree on a scale → [equative](comparatives.md#equatives). Membership in a listed inventory without ascription → ordinary joins (`zar` / `zam` / …). Kind as a property of a domain (`zual gagadal` = *every cat*) is invert **ua** / **uo** SHARED — not this page’s single-host ascription.
 
@@ -220,7 +220,7 @@ Values still stack on the classifying `/ɡ/` (`gedagel w-…xa…`) when the poi
 | `zodavan gogunom buzuban` | soft: *Clark is basically Superman* |
 | `zodavan gul gogunol buzuban` | *Clark is not (identical to) Superman* |
 | `zodavan gogunol wedahem buzuban` | *Clark is allegedly Superman* |
-| `zeborel gogunol buzuban` | NP-internal: *the person who is Superman* |
+| `zeberel gogunol buzuban` | NP-internal: *the person who is Superman* |
 
 Ordinary content still available (`zogunol` *a coin*; `gogunol` as *token*-like when not in the identity frame). The special reading wins under closed **`goguno…` + `/b/`** used as the property.
 
@@ -231,7 +231,7 @@ Comparative claims as clause content use the same no-*be*-verb shape with a rank
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Classification packaging and **SAME** endings (**-l** / **-m** / **-n** / **-r**) are the point.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `edage` *teacher* · `uzedu` *student* · `oguno` **SAME** · `odava` *Clark* · `uzuba` *Superman* · `ebore` (band: *the person who…*) · `awu` *walk* · `ezele` *sleep*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `edege` *teacher* · `uzudu` *student* · `oguno` **SAME** · `odava` *Clark* · `uzuba` *Superman* · `ebere` (band: *the person who…*) · `awala` *walk* · `elebe` *sleep*
 
 #### English → Agelan
 
@@ -256,19 +256,19 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **4.** *The person who is Superman walks.*
 
 ::: details Show answer
-`zeborel gogunol buzuban vawul.`
+`zeberel gogunol buzuban vawalal.`
 :::
 
 **5.** *The teacher is Azawan.*
 
 ::: details Show answer
-`zedagel gogunol bazawan.`
+`zedegel gogunol bazawan.`
 :::
 
 **6.** *Azawan is a teacher.*
 
 ::: details Show answer
-`zazawan gedagel.`
+`zazawan gedegel.`
 :::
 
 **7.** *Clark is the same (as already ascribed) as Superman.*
@@ -291,13 +291,13 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Clark is Superman.*
 :::
 
-**3.** `zeborel gogunol buzuban vezelel.`
+**3.** `zeberel gogunol buzuban velebel.`
 
 ::: details Show answer
 *The person who is Superman sleeps.*
 :::
 
-**4.** `zedagel gogunol bazawan.`
+**4.** `zedegel gogunol bazawan.`
 
 ::: details Show answer
 *The teacher is Azawan.*
@@ -309,10 +309,10 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Clark is Superman (titled identity).*
 :::
 
-**6.** `zulonun gedagel.`
+**6.** `zululon gedegel.`
 
 ::: details Show answer
-*Ulonun is a teacher.*
+*Ululon is a teacher.*
 :::
 
 **7.** `zodavan gogunor buzuban.`

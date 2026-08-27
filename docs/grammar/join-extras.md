@@ -17,7 +17,7 @@ Name the **coordination move you perform** on an object — *include*, *choose*,
 **Mnemonic:** vowel = which join move; **-n** = join content (not a [name](reference-suffix.md#proper-name--n)). Join-word **-n** is the **only** exception to ordinary proper **-n**.
 
 ```
-`zazawan dabebal van.`
+`zazawan dabelel van.`
 
 gloss: `z-grace` · `d-apple` · `v-includes`
 
@@ -28,12 +28,12 @@ These are **content verbs**, not VP soft-packaging joins. Soft packaging (includ
 
 | Form | Gloss | Example |
 |------|--------|---------|
-| **`van`** | *includes / adds* | `zazawan dabebal van` — *Azawan includes/adds an apple* |
+| **`van`** | *includes / adds* | `zazawan dabelel van` — *Azawan includes/adds an apple* |
 | **`von`** | *chooses (as the one choice)* | `zazawan dadedal von` — *Azawan chooses tea (as the one choice)* |
 | **`vaon`** | *picks (with potentially more picks coming)* | `zazawan dugabel vaon` — *Azawan picks a topping (more picks may follow)* |
 | **`vun`** | *denies / refuses* | `zazawan dulel vun` — *Azawan denies/refuses the lie* |
 | **`vuan`** | *excludes* | `zazawan debanul vuan` — *Azawan excludes nuts* |
-| **`vuon`** | *bars (anything but)* | `zazawan dogevel vuon` — *Azawan bars coffee (anything else is fine)* |
+| **`vuon`** | *bars (anything but)* | `zazawan dogovel vuon` — *Azawan bars coffee (anything else is fine)* |
 | **`ven`** | *prioritizes* | `zazawan dugujul ven` — *Azawan prioritizes the bug* |
 | **`vaen`** | *equates / ties* | `zazawan degogelsh vaen` — *Azawan equates the candidates* |
 | **`voen`** | *tries* | `zazawan damugal voen` — *Azawan tries the fix* |
@@ -73,7 +73,7 @@ These are **not** phrase named-list joins and **not** [restrictors](restrictors.
 
 | Form | `/ɡ/` (*N … b-X*) | `/h/` (*event … b-X*) | Example |
 |------|-------------------|------------------------|---------|
-| **`gan` / `han`** | *including / with* | *with / including* | `zubarol gan bebanul`; `zazawan han bulonun vawul` |
+| **`gan` / `han`** | *including / with* | *with / including* | `zubarol gan bebanul`; `zazawan han bululon vawalal` |
 | **`gon` / `hon`** | *exclusive for* (X is N’s sole pick) | *exclusively for / as the one* | `zugolal gon badedal`; `… hon badedal vebonem` |
 | **`gaon` / `haon`** | *open to* (X admitted; more may follow) | *among options* | `zubazul gaon bugabel`; `… haon bugabel vebonem` |
 | **`gun` / `hun`** | *against / anti-* (refuses X) | *refusing* | `zobulel gun bulel`; `… hun vemedel` |
@@ -94,7 +94,7 @@ These are **not** phrase named-list joins and **not** [restrictors](restrictors.
 | prioritize vs try | `bamugal gen` vs `bamugal goen` | *fix-first* vs *try-the-fix* |
 | relation vs reviser | `zahanal gan bazawan` vs `zahanal al zazawan` | PP-like *team including Azawan* vs slot-repair *team, including Azawan* |
 | stock AP label | `g{primary colors}` / mention span | content *including* needs `/b/` (`gan b-…`) |
-| open vs without (causal) | `haon bazem` vs `huan bogulol` | sufficient hit vs necessary-style exclusion — [causation](causation.md) |
+| open vs without (causal) | `haon bazem` vs `huan buludul` | sufficient hit vs necessary-style exclusion — [causation](causation.md) |
 
 Unary `/b/` only — restore list/empty arity on the **argument**, not by stacking bare `g*n` / `h*n` as fences. Only the **-n** exponent is content under `/ɡ/` / `/h/` for these roots.
 
@@ -103,14 +103,14 @@ Unary `/b/` only — restore list/empty arity on the **argument**, not by stacki
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Name a **join-act** (`van` / `von` / …) when someone *does* the move to an object; name a **join-relation** (`gan` / `han` / … plus one `/b/`) when a host is framed *including* / *without* / *prioritizing* something.
 
-**Roots used here:** `azawa` / `ulonu` / `ubuzu` (house names); `abeba` *apple*; `adeda` *tea*; `ugabe` *topping*; `ule` *lie*; `ebanu` *nuts*; `ogeve` *coffee*; `uguju` *bug*; `egoge` *candidate*; `amuga` *fix*; `ubaro` *cake*; `ugola` *drink*; `ahana` *team*; `awu` *walk*.
+**Roots used here:** `azawa` / `ululo` / `uhubu` (house names); `abele` *apple*; `adeda` *tea*; `ugabe` *topping*; `ule` *lie*; `ebanu` *nuts*; `ogove` *coffee*; `uguju` *bug*; `egoge` *candidate*; `amuga` *fix*; `ubaro` *cake*; `ugola` *drink*; `ahana` *team*; `awala` *walk*.
 
 #### English → Agelan
 
 **1.** *Azawan includes an apple.*
 
 ::: details Show answer
-`zazawan dabebal van.`
+`zazawan dabelel van.`
 :::
 
 **2.** *Cake including nuts.*
@@ -119,16 +119,16 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zubarol gan bebanul.`
 :::
 
-**3.** *Ulonun chooses tea (as the one choice).*
+**3.** *Ululon chooses tea (as the one choice).*
 
 ::: details Show answer
-`zulonun dadedal von.`
+`zululon dadedal von.`
 :::
 
-**4.** *Azawan walks with Ulonun.*
+**4.** *Azawan walks with Ululon.*
 
 ::: details Show answer
-`zazawan han bulonun vawul.`
+`zazawan han bululon vawalal.`
 :::
 
 **5.** *Azawan excludes nuts.*
@@ -151,13 +151,13 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 #### Agelan → English
 
-**1.** `zulonun dulel vun.`
+**1.** `zululon dulel vun.`
 
 ::: details Show answer
-*Ulonun refuses / denies the lie.*
+*Ululon refuses / denies the lie.*
 :::
 
-**2.** `zazawan dogevel vuon.`
+**2.** `zazawan dogovel vuon.`
 
 ::: details Show answer
 *Azawan bars coffee (anything else is fine).*

@@ -27,7 +27,7 @@ PoS + ROOT + x + NUM + {-l|-m|-n|-r}
 | **NUM** | Number stem **without PoS and without its own ending** — same marker / digits / digitless-exp body as [numbers.md](numbers.md); inventory tables use [shorthand](numbers.md#writing-preferred-shorthand) (`+e`, `_12`, `+1e`, …); running-text / citation examples prefer spelled CV (`raba`, `ro…`, `rawoba`, …) — [writing style](numbers.md#writing-style-numeric-vs-spelled) |
 | **Ending** | Ordinary [reference-suffix](reference-suffix.md) on the **whole derived stem** (host ROOT) — **not** [number endings](numbers.md#number-endings) |
 
-**Writing style:** free numbers stay shorthand by default; derived words prefer **spelled CV** so the compound looks like an ordinary word (`zolexrabal`, not `zolex+el`). Shape columns below keep shorthand as schematic (`ROOTx+e`); example cells use spelled forms. Avoid hybridizing shorthand `NUM` + host letter ending.
+**Writing style:** free numbers stay shorthand by default; derived words prefer **spelled CV** so the compound looks like an ordinary word (`zolovexrabal`, not `zolovex+el`). Shape columns below keep shorthand as schematic (`ROOTx+e`); example cells use spelled forms. Avoid hybridizing shorthand `NUM` + host letter ending.
 
 **Ending rule:** because **-l / -m / -n / -r** attaches to the compound (the ROOT), there is **no** number soft / named / resume on `NUM`. Approximate, proper-designation, and resume use ordinary reference endings on the derived word, or free number words / ordinary syntax outside this family.
 
@@ -35,11 +35,11 @@ PoS + ROOT + x + NUM + {-l|-m|-n|-r}
 
 | Shape | Reading | Example |
 |-------|---------|---------|
-| **`ROOTx+e`** | **essence / absolute / pure type** of ROOT | `zolexrabal` — *essence of love* |
+| **`ROOTx+e`** | **essence / absolute / pure type** of ROOT | `zolovexrabal` — *essence of love* |
 | **`ROOTx+e-`** | **grain / seed / infinitesimal** of ROOT | `zereguxrabul` — *grain of truth* |
 | **`ROOTx-e`** | **void of / absolute anti-ROOT** | `zevaxrubal` — *void of fear* |
 | **`ROOTx-e-`** | **quasi-ROOT** — has the shape of ROOT without full real-axis status (English **`quasi-`**); **`ROOTx-e-1`** / **`ROOTx-e-2`** = [quasi-N](#quasi-n) | `zanaxrubul` — *quasi-friend*; `zanaxrubudul` — *quasi-pair* |
-| **`ROOTx#e-`** | **origin / prototype / onset-form** of ROOT | `zolexrebul` — *love in its beginning form* |
+| **`ROOTx#e-`** | **origin / prototype / onset-form** of ROOT | `zolovexrebul` — *love in its beginning form* |
 | **`ROOTx#e`** | **telos / culmination / final form** of ROOT | `zoroloxrebal` — *story’s final form* |
 | **`ROOTx+`** | **poly- / multi-ROOT** (unspecified >1) | `zurujuxram` — *multi-faith* |
 | **`ROOTx-`** | **de- / un- / deficit-ROOT** | `voroloxrul` — *to de-tale* |
@@ -193,7 +193,7 @@ Marker **`_`** = ROOT identified by a **catalog / specimen / ID code**, not by c
 | Shape | Reading | Example |
 |-------|---------|---------|
 | **`ROOTx_`** | ROOT as something that **bears a code** (taggable unit; code unnamed) | `zadomaxrol` — *a coded specimen* / *a specimen-as-ID* |
-| **`ROOTx_N`** | **specimen / item #N** — the code is part of the kind | `zadomaxrowol` — *specimen #1*; `zohuzexrowodul` — *room-12* as a coded kind; `bululuxrowodul` — *B-12*-style kind |
+| **`ROOTx_N`** | **specimen / item #N** — the code is part of the kind | `zadomaxrowol` — *specimen #1*; `zohohuxrowodul` — *room-12* as a coded kind; `bululuxrowodul` — *B-12*-style kind |
 
 ##### Infinite / landmark labels (`_e` / `_e-` / `_1e`)
 <a id="infinite-labels"></a>
@@ -234,7 +234,7 @@ Digitless **`_`** = **metaphysics of the catalog**, not magnitude. Label ∞ mea
 | `zedugexrobal` | open-ended / ∞-catalogued ticket (kind) |
 | `zedugexrobul` | unassigned ticket slot (kind) |
 
-Prefer ordinary syntax when the number is only an argument of an ordinary noun: `zohuzel g_12` = *the room numbered 12*. Use **`ROOTx_N`** when the code is part of the **concept** (specimen ID, SKU, protocol code). Discourse item cites stay free **`x_…`**; dial/input stays free **`v_…`**.
+Prefer ordinary syntax when the number is only an argument of an ordinary noun: `zohohul g_12` = *the room numbered 12*. Use **`ROOTx_N`** when the code is part of the **concept** (specimen ID, SKU, protocol code). Discourse item cites stay free **`x_…`**; dial/input stays free **`v_…`**.
 
 **Rule of thumb:** digitless **`+`/`-`/`#`** on ROOT = *metaphysics of the kind*; digitless **`_`** = *metaphysics of the catalog*.
 
@@ -310,10 +310,10 @@ Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`zanaxre
 | `hazexruzom` | *with irreducible effort* (anti-null adverb) |
 | `jezehuxruzol` | *Won’t zero!* / *Residue stands!* (anti-null interjection) |
 | `j+0el` | *Annihilate!* (free) |
-| `zohuzel g_12` | room numbered 12 (ordinary) |
-| `zohuzexrowodul` | room-12 as coded kind |
-| Ability `veguxul` | can’t sing (fixed) — stance vowel, not NUM |
-| Role `zaxozower` | the fighter — ROLE left of `x` |
+| `zohohul g_12` | room numbered 12 (ordinary) |
+| `zohohuxrowodul` | room-12 as coded kind |
+| Ability `vuzunexul` | can’t sing (fixed) — stance vowel, not NUM |
+| Role `zaxozowor` | the fighter — ROLE left of `x` |
 | Stance `…xe…` | motive (needs) / temporary *can’t* (ability) — not essence |
 
 `NUM` has **no** PoS and **no** number ending; the compound’s ending is ordinary reference-suffix on ROOT. Digit morphs are single-digit **`+N` / `-N`** (scalar) or **`#N`** (ordinal); markers supply the pronounceable vowel (**`ra`** / **`ru`** / **`re`**). Free end-relative **`reu`** / **`#-`** is not a derivation morph. Digitless **`+`/`-`/`#`** = kind metaphysics; digitless **`_`** = catalog metaphysics ([infinite labels](#infinite-labels)); zero×exp morphs = [zero-exponent derivation](#zero-exponent-derivation) (including **`±0e-1`** / **`#0e`**). Plural **-sh** on noun-slot numeric derivatives follows ordinary [plurality](plurality.md) for that PoS.
@@ -323,70 +323,70 @@ Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`zanaxre
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. `ROOT x NUM` names a **kind property** (essence, grain, quasi, part-count, order-kind, catalog code, total-null) — spelled CV plus the **host** ending, not a free count or rank in a clause slot.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `ole` *love* · `eregu` *truth* · `ana` *friend* (kind, as on this band) · `bule` *duty* · `ezebe` *dialogue* · `omo` *effect* · `egabe` *edition* · `adoma` *specimen* · `eva` *fear* · `ezehu` *score* · `ejo` *see* · `ezabu` *tell* · `uwa` *write*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `olove` *love* · `eregu` *truth* · `ana` *friend* (kind, as on this band) · `bule` *duty* · `ezebe` *dialogue* · `omo` *effect* · `egabe` *edition* · `adoma` *specimen* · `eva` *fear* · `ezehu` *score* · `eje` *see* · `ezehe` *tell* · `uwuru` *write*
 
 #### English → Agelan
 
 **1.** *Azawan sees the essence of love.*
 
 ::: details Show answer
-`zazawan vejol zolexrabal.`
+`zazawan vejel zolovexrabal.`
 :::
 
-**2.** *Ulonun tells a grain of truth.*
+**2.** *Ululon tells a grain of truth.*
 
 ::: details Show answer
-`zulonun vezabul zereguxrabul.`
+`zululon vezehel zereguxrabul.`
 :::
 
-**3.** *Ubuzun is a quasi-friend.*
+**3.** *Uhubun is a quasi-friend.*
 
 ::: details Show answer
-`zubuzun ganaxrubul.`
+`zuhubun ganaxrubul.`
 :::
 
 **4.** *Azawan sees mutual duty.*
 
 ::: details Show answer
-`zazawan vejol gobulexradul.`
+`zazawan vejel gobulexradul.`
 :::
 
-**5.** *Ulonun writes a first-edition.*
+**5.** *Ululon writes a first-edition.*
 
 ::: details Show answer
-`zulonun vuwal degabexrewol.`
+`zululon vuwurul degabexrewol.`
 :::
 
 #### Agelan → English
 
-**1.** `zazawan vejol zevaxrubal.`
+**1.** `zazawan vejel zevaxrubal.`
 
 ::: details Show answer
 *Azawan sees a void of fear.*
 :::
 
-**2.** `zulonun vezabul zezebexrarel.`
+**2.** `zululon vezehel zezebexrarel.`
 
 ::: details Show answer
-*Ulonun tells a three-part dialogue.*
+*Ululon tells a three-part dialogue.*
 :::
 
-**3.** `zubuzun vejol gomoxredul.`
+**3.** `zuhubun vejel gomoxredul.`
 
 ::: details Show answer
-*Ubuzun sees a secondary effect.*
+*Uhubun sees a secondary effect.*
 :::
 
-**4.** `zazawan vejol zadomaxrowol.`
+**4.** `zazawan vejel zadomaxrowol.`
 
 ::: details Show answer
 *Azawan sees specimen #1.*
 :::
 
-**5.** `zulonun vezehuxrazobal.`
+**5.** `zululon vezehuxrazobal.`
 
 ::: details Show answer
-*Ulonun annihilates the score.*
+*Ululon annihilates the score.*
 :::
 
 ## See also

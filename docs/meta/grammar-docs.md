@@ -81,7 +81,7 @@ Do **not** keep a heading whose only job is to say there is nothing here. Learne
 ## Examples use the house cast
 <a id="house-cast"></a>
 
-Example sentences name their people with the [house cast](glosses.md#house-cast): **`zazawan`** / **`zulonun`** / **`zubuzun`** (three single-root names). Do not cast abstract roots as participants (`jal zazawan gedagel`, not “grace is more challenging than courage”). Keep abstract roots for the form being taught.
+Example sentences name their people with the [house cast](glosses.md#house-cast): **`zazawan`** / **`zululon`** / **`zuhubun`** (three single-root names). Do not cast abstract roots as participants (`jal zazawan gedegel`, not “grace is more challenging than courage”). Keep abstract roots for the form being taught.
 
 ## Punctuation
 
@@ -168,15 +168,15 @@ When an example needs a **person**, use these nativized names (published root + 
 | Agelan | English | Root |
 |--------|---------|------|
 | `zazawan` | *Azawan* | `azawa` *grace* |
-| `zulonun` | *Ulonun* | `ulonu` *courage* |
-| `zubuzun` | *Ubuzun* | `ubuzu` *beauty* |
+| `zululon` | *Ululon* | `ululo` *courage* |
+| `zuhubun` | *Uhubun* | `uhubu` *beauty* |
 
 **`umogo` / `ehado`** only when that page is teaching those specials, the point is the **discourse role** (name unavailable, address set, clusivity), or a closed construction is keyed to speaker/listener (*Mine* **`zumogoxrawon`**, viewpoint *my left* when the anchor is the role). Inclusive *we* stays **`ana`**; nonspecific *someone* stays **`enu`**. Foreign `PoS<…>n` names only when teaching loans or spans. Checkpoints: [translation-exercises.md](translation-exercises.md#principles). Morph / resume: [glosses.md](glosses.md#house-cast).
 
 Default example block:
 
 ```
-`zazawan gedagel.`
+`zazawan gedegel.`
 
 gloss: `z-grace` · `g-teacher`
 

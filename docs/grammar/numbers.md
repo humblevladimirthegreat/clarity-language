@@ -28,7 +28,7 @@ gloss: `z-cat-sh` · `g-+3`
 `g#2` = *the second* on the preceding noun.
 
 ```
-`zogobol g#2.`
+`zabogol g#2.`
 
 gloss: `z-book` · `g-#2`
 
@@ -87,7 +87,7 @@ Overlays, writing marks, and exponents are Intermediate / Advanced — **optiona
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Count with `g+N`, rank with `g#N`, and use digitless **`g+`** with **-sh** on the noun for *more than one*.
 
-**Roots used here:** `azawa` / `ulonu` / `ubuzu` · `agada` *cat* · `ogodo` *dog* · `ogobo` *book* · `ohuze` *house* · `uzedu` *student* · `ejo` *see* · `uwa` *write*
+**Roots used here:** `azawa` / `ululo` / `uhubu` · `agada` *cat* · `adaga` *dog* · `abogo` *book* · `ohohu` *house* · `uzudu` *student* · `eje` *see* · `uwuru` *write*
 
 #### English → Agelan
 
@@ -100,7 +100,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **2.** *The second book.*
 
 ::: details Show answer
-`zogobol g#2.`
+`zabogol g#2.`
 :::
 
 **3.** *Cats — more than one.*
@@ -112,31 +112,31 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **4.** *Two dogs.*
 
 ::: details Show answer
-`zogodolsh g+2.`
+`zadagalsh g+2.`
 :::
 
 **5.** *The first house.*
 
 ::: details Show answer
-`zohuzel g#1.`
+`zohohul g#1.`
 :::
 
 **6.** *Azawan sees three books.*
 
 ::: details Show answer
-`zazawan vejol zogobolsh g+3.`
+`zazawan vejel zabogolsh g+3.`
 :::
 
 **7.** *More than one student.*
 
 ::: details Show answer
-`zuzedulsh g+.`
+`zuzudulsh g+.`
 :::
 
-**8.** *Ulonun writes the third book.*
+**8.** *Ululon writes the third book.*
 
 ::: details Show answer
-`zulonun vuwal zogobol g#3.`
+`zululon vuwurul zabogol g#3.`
 :::
 
 #### Agelan → English
@@ -147,7 +147,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Three cats.*
 :::
 
-**2.** `zogobol g#2.`
+**2.** `zabogol g#2.`
 
 ::: details Show answer
 *The second book.*
@@ -159,34 +159,34 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Cats — more than one.*
 :::
 
-**4.** `zohuzelsh g+2.`
+**4.** `zohohulsh g+2.`
 
 ::: details Show answer
 *Two houses.*
 :::
 
-**5.** `zuzedul g#1.`
+**5.** `zuzudul g#1.`
 
 ::: details Show answer
 *The first student.*
 :::
 
-**6.** `zubuzun vejol zagadalsh g+.`
+**6.** `zuhubun vejel zagadalsh g+.`
 
 ::: details Show answer
-*Ubuzun sees more than one cat.*
+*Uhubun sees more than one cat.*
 :::
 
-**7.** `zazawan vejol zogodolsh g+3.`
+**7.** `zazawan vejel zadagalsh g+3.`
 
 ::: details Show answer
 *Azawan sees three dogs.*
 :::
 
-**8.** `zulonun vuwal zogobol g#1.`
+**8.** `zululon vuwurul zabogol g#1.`
 
 ::: details Show answer
-*Ulonun writes the first book.*
+*Ululon writes the first book.*
 :::
 
 ## Intermediate
@@ -646,7 +646,7 @@ Both writings name the **same word**. Choose the surface by **job**: quantity/ma
 | Job | Prefer | Why |
 |-----|--------|-----|
 | Free number in a clause slot | **shorthand** | `g+3`, `x#2`, `d_…` — numeral as numeral |
-| [Numeric derivation](numeric-derivation.md#numeric-derivation) / kind morph | **spelled CV** | `zolexrabal`, not `zolex+el` |
+| [Numeric derivation](numeric-derivation.md#numeric-derivation) / kind morph | **spelled CV** | `zolovexrabal`, not `zolovex+el` |
 | Metalanguage / inventory tables | **shorthand** | patterns like `ROOTx+e` stay scannable |
 
 **Prefer shorthand** for counts, measures, ranks, ranges, thresholds (`zagadalsh g+3`, `z+3 z+5 zel`); digit-strings / times / codes (`d_555,123,4567`, `h_15:30`); scientific / engineering register (`g+5.2e-4`, `g+0e-1`, `g+e3`); compact agenda markers (`x#1`, `x#3e2`); and docs that teach the numeral system.
@@ -817,14 +817,14 @@ In a sentence, the PoS attaches to that single number word (see [Parts of speech
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Prefer shorthand (`g~+3`, `g#-2`, `h_15,30`). Sample PoS, endings, digitless overlays, and **one** time reading — not the whole inventory.
 
-**Roots used here:** `azawa` / `ulonu` / `ubuzu` · `agada` *cat* · `ogobo` *book* · `ohuze` *house* · `ulebu` *blue* · `awu` *walk* · `ezele` *sleep* · `ejo` *see*
+**Roots used here:** `azawa` / `ululo` / `uhubu` · `agada` *cat* · `abogo` *book* · `ohohu` *house* · `elulu` *blue* · `awala` *walk* · `elebe` *sleep* · `eje` *see*
 
 #### English → Agelan
 
 **1.** *Three (as the subject) is blue.*
 
 ::: details Show answer
-`z+3 gulebun.`
+`z+3 gelulun.`
 :::
 
 **2.** *About three cats.*
@@ -836,13 +836,13 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **3.** *Azawan sees −3.*
 
 ::: details Show answer
-`zazawan vejol d-3.`
+`zazawan vejel d-3.`
 :::
 
-**4.** *Ulonun walks three times.*
+**4.** *Ululon walks three times.*
 
 ::: details Show answer
-`zulonun vawul h+3.`
+`zululon vawalal h+3.`
 :::
 
 **5.** *Three more!*
@@ -860,13 +860,13 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **7.** *The penultimate book.*
 
 ::: details Show answer
-`zogobol g#-2.`
+`zabogol g#-2.`
 :::
 
-**8.** *Ubuzun sleeps at 15:30.*
+**8.** *Uhubun sleeps at 15:30.*
 
 ::: details Show answer
-`zubuzun vezelel h_15,30.`
+`zuhubun velebel h_15,30.`
 :::
 
 #### Agelan → English
@@ -877,16 +877,16 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *About three cats.*
 :::
 
-**2.** `z+3 gulebun.`
+**2.** `z+3 gelulun.`
 
 ::: details Show answer
 *Three is blue.*
 :::
 
-**3.** `zulonun vawul h+.`
+**3.** `zululon vawalal h+.`
 
 ::: details Show answer
-*Ulonun walks multiple times.*
+*Ululon walks multiple times.*
 :::
 
 **4.** `j#1.`
@@ -895,25 +895,25 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *First!*
 :::
 
-**5.** `x#2 zulonun vawul.`
+**5.** `x#2 zululon vawalal.`
 
 ::: details Show answer
-*Point 2: Ulonun walks.*
+*Point 2: Ululon walks.*
 :::
 
-**6.** `zogobol g#-2.`
+**6.** `zabogol g#-2.`
 
 ::: details Show answer
 *The penultimate book.*
 :::
 
-**7.** `zubuzun vezelel h_15,30.`
+**7.** `zuhubun velebel h_15,30.`
 
 ::: details Show answer
-*Ubuzun sleeps at 15:30.*
+*Uhubun sleeps at 15:30.*
 :::
 
-**8.** `zazawan vejol d=_.`
+**8.** `zazawan vejel d=_.`
 
 ::: details Show answer
 *Azawan sees that code again.*
@@ -951,7 +951,7 @@ Both writings name the **same word**. Choose the surface by **job**: quantity/ma
 | Job | Prefer | Why |
 |-----|--------|-----|
 | Free number in a clause slot | **shorthand** | `g+3`, `x#2`, `d_…` — numeral as numeral |
-| [Numeric derivation](numeric-derivation.md#numeric-derivation) / kind morph | **spelled CV** | `zolexrabal`, not `zolex+el` |
+| [Numeric derivation](numeric-derivation.md#numeric-derivation) / kind morph | **spelled CV** | `zolovexrabal`, not `zolovex+el` |
 | Metalanguage / inventory tables | **shorthand** | patterns like `ROOTx+e` stay scannable |
 
 **Prefer shorthand** for counts, measures, ranks, ranges, thresholds (`zagadalsh g+3`, `z+3 z+5 zel`); digit-strings / times / codes (`d_555,123,4567`, `h_15:30`); scientific / engineering register (`g+5.2e-4`, `g+0e-1`, `g+e3`); compact agenda markers (`x#1`, `x#3e2`); and docs that teach the numeral system.
@@ -1231,7 +1231,7 @@ Examples: `g+e` → +∞; `g~+e` → arbitrarily large but finite; `g+1e` → *o
 
 ### Numeric derivation (compounds)
 
-PoS-less number stems may follow mid-word **`x`** on an ordinary content root (`ROOTx+e`, `ROOTx_12`, `ROOTx_e`, `ROOTx+1e`, …). That family is **derivation** (essence, coded subtype, [infinite labels](numeric-derivation.md#infinite-labels), hyperbole-ROOT, …), documented in **[numeric-derivation.md](numeric-derivation.md#numeric-derivation)**; parser cue in **[x-compounds.md](x-compounds.md)**. Running-text examples prefer spelled CV (`zolexrabal`) — [writing style](#writing-style-numeric-vs-spelled). Free number words on this page stay clause-slot counts, ranks, labels, overlays, and discourse items.
+PoS-less number stems may follow mid-word **`x`** on an ordinary content root (`ROOTx+e`, `ROOTx_12`, `ROOTx_e`, `ROOTx+1e`, …). That family is **derivation** (essence, coded subtype, [infinite labels](numeric-derivation.md#infinite-labels), hyperbole-ROOT, …), documented in **[numeric-derivation.md](numeric-derivation.md#numeric-derivation)**; parser cue in **[x-compounds.md](x-compounds.md)**. Running-text examples prefer spelled CV (`zolovexrabal`) — [writing style](#writing-style-numeric-vs-spelled). Free number words on this page stay clause-slot counts, ranks, labels, overlays, and discourse items.
 
 
 ### Stress (pronunciation guide)
@@ -1250,7 +1250,7 @@ Structural prosody, not lexical stress — ordinary spelling carries no stress (
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. Digitless exponents, hyperbole, and zero×exp as in the teach tables — shorthand (`g+e`, `g+1e`, `x#e`).
 
-**Roots used here:** `azawa` / `ulonu` / `ubuzu` · `agada` *cat* · `ogobo` *book* · `awu` *walk* · `egu` *sing*
+**Roots used here:** `azawa` / `ululo` / `uhubu` · `agada` *cat* · `abogo` *book* · `awala` *walk* · `uzune` *sing*
 
 #### English → Agelan
 
@@ -1263,13 +1263,13 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 **2.** *One gazillion books.*
 
 ::: details Show answer
-`zogobolsh g+1e.`
+`zabogolsh g+1e.`
 :::
 
 **3.** *Finally: Azawan walks.*
 
 ::: details Show answer
-`x#e zazawan vawul.`
+`x#e zazawan vawalal.`
 :::
 
 **4.** *To infinity!*
@@ -1278,10 +1278,10 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 `j+e.`
 :::
 
-**5.** *Starting with: Ubuzun sings.*
+**5.** *Starting with: Uhubun sings.*
 
 ::: details Show answer
-`x#e- zubuzun vegul.`
+`x#e- zuhubun vuzunel.`
 :::
 
 **6.** *Annihilate!*
@@ -1304,19 +1304,19 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 *Finally!*
 :::
 
-**3.** `x#e- zulonun vawul.`
+**3.** `x#e- zululon vawalal.`
 
 ::: details Show answer
-*Starting with: Ulonun walks.*
+*Starting with: Ululon walks.*
 :::
 
-**4.** `zogobol g#1e.`
+**4.** `zabogol g#1e.`
 
 ::: details Show answer
 *The gazillionth / umpteenth book.*
 :::
 
-**5.** `zazawan vawul h#1e.`
+**5.** `zazawan vawalal h#1e.`
 
 ::: details Show answer
 *Azawan walks for the gazillionth time.*

@@ -58,7 +58,7 @@ The **whole** / reference class is **not** inside the number word — no denom c
 |-------|--------|
 | `zagadalsh g+25%` | *25% of the cats* |
 | `deduzelsh g+95%` | *95% of the tests* (object) |
-| `beborelsh g+5%` under a host relation | *5% of the people* as `/b/` |
+| `beberelsh g+5%` under a host relation | *5% of the people* as `/b/` |
 
 The noun names the reference class; **`jo`** grades how much of that class. Same endings on the percent word (**-m** ≈ *about 25% of …*).
 
@@ -171,9 +171,9 @@ Same habit for every SI-style prefix: scale the number, not the unit stem.
 
 **Measured differentials** (*two meters taller*) put that measure NP as the **single `/b/`** on the SHARED scale adjective of a [comparative](comparatives.md#measured-differentials):
 
-`zazawan zulonun zel gonudam burelul g+2` → *Azawan is two meters more challenging than Ulonun*
+`zazawan zululon zel gomonum burelul g+2` → *Azawan is two meters more challenging than Ululon*
 
-Vague degree stays `/w/` on the scale (`zel wogenal gonudam …`) — no unit. Duration and other clause measures use the same unit+amount habit in whatever slot the relation needs.
+Vague degree stays `/w/` on the scale (`zel wogenal gomonum …`) — no unit. Duration and other clause measures use the same unit+amount habit in whatever slot the relation needs.
 
 **Not this pattern:** percentage closers (**`jo`** / **`ju`**); bare multiplicative `/h/` factors (`h+1.5`); stacking `b+2 burelul` as two arguments of one adjective; Latin letter abbreviations as Agelan orthography.
 
@@ -209,7 +209,7 @@ The fence PoS matches the slot (`zal` / `dal` / `gal` / `bal` / …). Mixed iden
 
 **Arity escape:** three or more number conjuncts under **`a`** stay an ordinary discrete inventory (`zal z+1 z+3 z+7` = *1, 3, and 7*), even with SHARED. Focus **`zal z+3`** stays *just 3*, not a ray. Focus **ranked** with a number is a [threshold](#numeric-thresholds), not ordinary *only X matters*.
 
-**Contrast with comparatives:** `zazawan zulonun zel gonudam` = *Azawan is more challenging than Ulonun* (SHARED **scale**, non-number conjuncts). `z+3 z+5 zel gumedul` = *from 3 to 5 on time* (SHARED **continuum**, number endpoints). Bare `z+3 z+5 zel` = prefer 3 over 5.
+**Contrast with comparatives:** `zazawan zululon zel gomonum` = *Azawan is more challenging than Ululon* (SHARED **scale**, non-number conjuncts). `z+3 z+5 zel gumedul` = *from 3 to 5 on time* (SHARED **continuum**, number endpoints). Bare `z+3 z+5 zel` = prefer 3 over 5.
 
 #### Thresholds (focus ranked)
 <a id="numeric-thresholds"></a>

@@ -12,14 +12,14 @@ How to **disambiguate mid-word `x`**. Mid-word **`x`** is only the [compound joi
 Inside a word, **`x`** glues roots into **one** content word. Start with **two** roots. Write it as one token; the ending applies to the whole compound.
 
 ```
-`zuzuzuxogeven.`
+`zuzuzuxogoven.`
 
 gloss: `z-sushi-x-coffee`
 
 *Sushi-Coffee* (one label)
 ```
 
-<AgelanInspect text="zuzuzuxogeven." />
+<AgelanInspect text="zuzuzuxogoven." />
 
 Mid-word **`x`** is glue; word-initial **`x`** is the discourse PoS.
 
@@ -39,7 +39,7 @@ After the PoS prefix, look at what sits **left** and **right** of the first mid-
 | **`VOWEL x ROOT…`** + ending | **[Role compound](roles.md#role-compounds)** | ROLE **`a`** / **`u`** / **`o`** then event or relation root |
 | **`ROOT… x VOWEL`** + ending | **[Values](values.md)** or **[ability](ability.md#ability)** | Need root + **`a`/`e`/`o`/`u`** → values; other root + **`xa`/`xe`/`xo`/`xu`** → ability |
 | **`ROOT… x NUM…`** + ending | **[Numeric derivation](numeric-derivation.md#numeric-derivation)** | Right half matches [number](numbers.md) stem grammar **without** its own ending (marker **`+`/`-`/`#`/`_`**, digitless exp including label **`_e`/`_e-`**, hyperbole, [zero × exp](numbers.md#zero-exponent) **`+0e`/`±0e-1`/`#0e`**, label digits, scalar digit morph **`+N`/`-N`**, or ordinal digit morph **`#N`** — not free end-relative **`#-`** / generation / **`Ne0`** assert morphs; no **`ROOTx+e0`/`+0e0`**) |
-| **`ROOT x ROOT`** (+ more **`x ROOT`**) + ending | **Ordinary compound** | Lexicon sense-compounds; [phrasal proper names](reference-suffix.md#phrasal-proper-names) (`zozohuxalenan`); [viewpoint laterals](roles.md#viewpoint-laterals) (`gevedexehadon` *your left*; bare `gevedel` *west*). Extra **`x ROOT`** pieces are ordinary roots only — [order](#ordinary-compound-order) |
+| **`ROOT x ROOT`** (+ more **`x ROOT`**) + ending | **Ordinary compound** | Lexicon sense-compounds; [phrasal proper names](reference-suffix.md#phrasal-proper-names) (`zozohuxalenan`); [viewpoint laterals](roles.md#viewpoint-laterals) (`gewezexehadon` *your left*; bare `gewezel` *west*). Extra **`x ROOT`** pieces are ordinary roots only — [order](#ordinary-compound-order) |
 
 No open content root is a **bare single vowel**, so a single vowel **left** of `x` is never an ordinary host root. Spans are the only family with a **single vowel right** of `x` (EDGE); role compounds put a full **`V(CV)+`** root there. Numeric **`NUM`** is a PoS-less number stem — [numeric derivation](numeric-derivation.md#numeric-derivation). Running-text / citation examples prefer spelled CV (`…xraba…`); inventory tables may keep shorthand — [writing style](numbers.md#writing-style-numeric-vs-spelled).
 
@@ -49,24 +49,24 @@ No open content root is a **bare single vowel**, so a single vowel **left** of `
 The **first** content root is the **kind**. Each later root **narrows** it (field, topic, further label). The list is **flat**: `KIND x FIELD`, then `KIND x FIELD x FURTHER`. One ending on the whole word.
 
 ```
-`golexurul.`
+`golovexurul.`
 
 gloss: `g-love-x-crush`
 
 *love in the crush sense*
 ```
 
-<AgelanInspect text="golexurul." />
+<AgelanInspect text="golovexurul." />
 
 ```
-`zuzuzuxogevexadedan.`
+`zuzuzuxogovexadedan.`
 
 gloss: `z-sushi-x-coffee-x-tea`
 
 *Sushi-Coffee-Tea* (one named label)
 ```
 
-<AgelanInspect text="zuzuzuxogevexadedan." />
+<AgelanInspect text="zuzuzuxogovexadedan." />
 
 [Phrasal names](reference-suffix.md#phrasal-proper-names) use the same left-to-right order (given × family × further title). An office’s **handle** is one root, not this compound ([named handles](reference-suffix.md#named-handles)). [Viewpoint laterals](roles.md#viewpoint-laterals) stay **two** roots (`DIR x ANCHOR`). Span, role, values / ability, and numeric families stay **one** mid-word **`x`**.
 

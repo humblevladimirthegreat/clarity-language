@@ -22,7 +22,7 @@ function tokens(text: string) {
 
 describe("sentence-parser synthetic", () => {
   it("parses a lone subject-verb from classified words plus period", () => {
-    const words = ["zazawan", "vawul"].map((w) => classify(parseWord(w), tables));
+    const words = ["zazawan", "vawalal"].map((w) => classify(parseWord(w), tables));
     const stream = [...tokensFromLexWords(words), punctToken("period")];
     const result = parseSentenceTokens(stream);
     assert.equal(result.utterances[0]!.bodies[0]!.clause.units.length, 2);
@@ -35,6 +35,6 @@ describe("sentence-parser synthetic", () => {
   });
 
   it("rejects leftover tokens after a complete clause", () => {
-    assert.throws(() => parseSentenceTokens(tokens("zazawan vawul xuxul.")), SentenceParseError);
+    assert.throws(() => parseSentenceTokens(tokens("zazawan vawalal xuxul.")), SentenceParseError);
   });
 });

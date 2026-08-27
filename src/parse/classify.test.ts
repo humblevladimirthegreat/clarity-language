@@ -65,7 +65,7 @@ describe("classify", () => {
   });
 
   it("ability on non-need host compound", () => {
-    expectReading("veguxel", "ability");
+    expectReading("vuzunexel", "ability");
   });
 
   it("value on need host compounds and bare need topic", () => {

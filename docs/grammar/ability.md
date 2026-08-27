@@ -40,14 +40,14 @@ PoS + HOST + x + {a|e|o|u} + {-l|-m|-n|-r}
 
 | Form | Reading |
 |------|---------|
-| `veguxal` / `geguxal` | can sing (literal host) |
-| `veguxam` | can sing (metaphorical host sense) |
-| `veguxel` | can’t sing **right now** |
-| `veguxol` | can’t sing yet / may become able (or unknown grain) |
-| `veguxul` | can’t sing — fixed / impossible as far as you can tell |
+| `vuzunexal` / `guzunexal` | can sing (literal host) |
+| `vuzunexam` | can sing (metaphorical host sense) |
+| `vuzunexel` | can’t sing **right now** |
+| `vuzunexol` | can’t sing yet / may become able (or unknown grain) |
+| `vuzunexul` | can’t sing — fixed / impossible as far as you can tell |
 
 ```
-`veguxel.`
+`vuzunexel.`
 
 gloss: `v-express-unable-temporary`
 
@@ -55,7 +55,7 @@ gloss: `v-express-unable-temporary`
 ```
 
 ```
-`veguxol.`
+`vuzunexol.`
 
 gloss: `v-express-unable-modifiable`
 
@@ -67,26 +67,26 @@ gloss: `v-express-unable-modifiable`
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Tag **can** / **can’t** on a non-need host; ordinary verbs are not refusal.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `ogodo` *dog* · `egu` *sing* · `awu` *walk* · `urunu` *run* · `uwa` *write* · `ejo` *see* · `ezele` *sleep* · `ahura` *sit*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `adaga` *dog* · `uzune` *sing* · `awala` *walk* · `urunu` *run* · `uwuru` *write* · `eje` *see* · `elebe` *sleep* · `aju` *sit*
 
 #### English → Agelan
 
 **1.** *Azawan can sing.*
 
 ::: details Show answer
-`zazawan veguxal.`
+`zazawan vuzunexal.`
 :::
 
-**2.** *Ulonun can’t sing right now.*
+**2.** *Ululon can’t sing right now.*
 
 ::: details Show answer
-`zulonun veguxel.`
+`zululon vuzunexel.`
 :::
 
-**3.** *Ubuzun can’t walk yet (that may change).*
+**3.** *Uhubun can’t walk yet (that may change).*
 
 ::: details Show answer
-`zubuzun vawuxol.`
+`zuhubun vawalaxol.`
 :::
 
 **4.** *Azawan can’t run — it’s fixed.*
@@ -95,48 +95,48 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zazawan vurunuxul.`
 :::
 
-**5.** *Ulonun can write.*
+**5.** *Ululon can write.*
 
 ::: details Show answer
-`zulonun vuwaxal.`
+`zululon vuwuruxal.`
 :::
 
 **6.** *Azawan sings.* (ordinary event — not a can / can’t tag)
 
 ::: details Show answer
-`zazawan vegul.`
+`zazawan vuzunel.`
 :::
 
-**7.** *Ubuzun can’t sleep right now.*
+**7.** *Uhubun can’t sleep right now.*
 
 ::: details Show answer
-`zubuzun vezelexel.`
+`zuhubun velebexel.`
 :::
 
 **8.** *The dog can see.*
 
 ::: details Show answer
-`zogodol vejoxal.`
+`zadagal vejexal.`
 :::
 
 #### Agelan → English
 
-**1.** `zazawan veguxal.`
+**1.** `zazawan vuzunexal.`
 
 ::: details Show answer
 *Azawan can sing.*
 :::
 
-**2.** `zulonun veguxel.`
+**2.** `zululon vuzunexel.`
 
 ::: details Show answer
-*Ulonun can’t sing right now.*
+*Ululon can’t sing right now.*
 :::
 
-**3.** `zubuzun vawuxol.`
+**3.** `zuhubun vawalaxol.`
 
 ::: details Show answer
-*Ubuzun can’t walk (may become able, or the grain is unspecified).*
+*Uhubun can’t walk (may become able, or the grain is unspecified).*
 :::
 
 **4.** `zazawan vurunuxul.`
@@ -145,25 +145,25 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Azawan can’t run (fixed / impossible as far as you can tell).*
 :::
 
-**5.** `zazawan vegul.`
+**5.** `zazawan vuzunel.`
 
 ::: details Show answer
 *Azawan sings.* (not tagged can or can’t)
 :::
 
-**6.** `zulonun vuwaxam.`
+**6.** `zululon vuwuruxam.`
 
 ::: details Show answer
-*Ulonun can write (metaphorical host sense).*
+*Ululon can write (metaphorical host sense).*
 :::
 
-**7.** `zubuzun vahuraxol.`
+**7.** `zuhubun vajuxol.`
 
 ::: details Show answer
-*Ubuzun can’t sit yet (may become able, or the grain is unspecified).*
+*Uhubun can’t sit yet (may become able, or the grain is unspecified).*
 :::
 
-**8.** `geguxal.`
+**8.** `guzunexal.`
 
 ::: details Show answer
 *Can sing (as a property).*
@@ -218,15 +218,15 @@ gloss: `h-ABIL-unable-temporary`
 | Need unmet + changeability | need **`xu…`** — [values](values.md) (`hodoloxul` ≠ “can’t competence”) |
 | When / never / sometime the host applies | [restrictors](restrictors.md) (`hal`, `har`, …) |
 
-Stack when useful: e.g. can’t-sing plus unmet competence (`veguxol` + `hodoloxum`). Bare **`hal`** (*never*) is applicability, not tagged incapability. Need-root **`xu`** stays unmet need, not ability. Unspecified need **`egege`** 🥚 (*potential*) is not **`ABIL`**.
+Stack when useful: e.g. can’t-sing plus unmet competence (`vuzunexol` + `hodoloxum`). Bare **`hal`** (*never*) is applicability, not tagged incapability. Need-root **`xu`** stays unmet need, not ability. Unspecified need **`egege`** 🥚 (*potential*) is not **`ABIL`**.
 
 | Agelan (schematic) | Reading |
 |---------------------|---------|
-| `veguxel` | can’t sing **right now** |
-| `veguxol` | can’t sing yet / may become able (or unknown) |
-| `veguxul` | can’t sing (fixed / impossible as far as you can tell) |
+| `vuzunexel` | can’t sing **right now** |
+| `vuzunexol` | can’t sing yet / may become able (or unknown) |
+| `vuzunexul` | can’t sing (fixed / impossible as far as you can tell) |
 | `golodoxal` | can lead (literal) |
-| `veguxol hodoloxum` | can’t sing (modifiable) **and** unmet competence |
+| `vuzunexol hodoloxum` | can’t sing (modifiable) **and** unmet competence |
 | `… hegeraxel` | can’t **right now** (no single host / clause-wide) |
 | `hegeral` | ability (**topic** only) |
 
@@ -235,7 +235,7 @@ Stack when useful: e.g. can’t-sing plus unmet competence (`veguxol` + `hodolox
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Prefer a host when one activity root fits; use **`egera`** when there is no single host.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `ubuzu` *beauty* (name **Ubuzun**) · `eleba` *size* / *big* · `egu` *sing* · `egera` *cereal* → *capacity* (**ABIL**)
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `ele` *size* / *big* · `uzune` *sing* · `egera` *cereal* → *capacity* (**ABIL**)
 
 #### English → Agelan
 
@@ -248,7 +248,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **2.** *Azawan can’t sing right now.*
 
 ::: details Show answer
-`zazawan veguxel.`
+`zazawan vuzunexel.`
 :::
 
 **3.** *Azawan can’t right now* (clause-wide; no single activity root).
@@ -289,7 +289,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Can’t right now (no single host / clause-wide).*
 :::
 
-**2.** `zazawan veguxel.`
+**2.** `zazawan vuzunexel.`
 
 ::: details Show answer
 *Azawan can’t sing right now.*
@@ -307,10 +307,10 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Can’t (fixed; clause-wide / no single host).*
 :::
 
-**5.** `zulonun hegeraxol.`
+**5.** `zululon hegeraxol.`
 
 ::: details Show answer
-*Ulonun can’t (may change, or the grain is unspecified; no single host).*
+*Ululon can’t (may change, or the grain is unspecified; no single host).*
 :::
 
 **6.** `zegeral.`
@@ -319,7 +319,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Cereal / a capacity* (ordinary word — no ability stance).
 :::
 
-**7.** `gelebal wegeraxel.`
+**7.** `gelel wegeraxel.`
 
 ::: details Show answer
 *Big — can’t right now* (capability framed on that property).

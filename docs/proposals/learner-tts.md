@@ -182,7 +182,7 @@ function previewSpeech(text: string): SpeechPlan; // for tests / “show spoken 
 function previewPhonemes(text: string): PhonemePlan;
 ```
 
-CLI: `npm run speak -- "zumogon guzem."` prints speech surface + phonemes and optionally writes a `.wav` via the same WASM path (Node binding or headless play stub).
+CLI: `npm run speak -- "zumogon guzumum."` prints speech surface + phonemes and optionally writes a `.wav` via the same WASM path (Node binding or headless play stub).
 
 ## UI integration
 

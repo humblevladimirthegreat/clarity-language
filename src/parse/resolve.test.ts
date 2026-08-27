@@ -26,59 +26,59 @@ function resolveOf(text: string) {
 
 describe("letterPrefix (pronouns.md)", () => {
   it("cuts through the 2nd vowel", () => {
-    assert.equal(letterPrefix("ulonu"), "ulo");
-    assert.equal(letterPrefix("ogodo"), "ogo");
-    assert.equal(letterPrefix("ogobo"), "ogo");
+    assert.equal(letterPrefix("ululo"), "ulu");
+    assert.equal(letterPrefix("adaga"), "ada");
+    assert.equal(letterPrefix("abogo"), "abo");
     assert.equal(letterPrefix("azawa"), "aza");
-    assert.equal(letterPrefix("awu"), "awu");
+    assert.equal(letterPrefix("awala"), "awa");
   });
 });
 
 describe("resolve — content anaphors (pronouns.md)", () => {
-  it("binds zulor to ulonu by letter prefix", () => {
-    const { anaphors } = resolveOf("zulonun vawul. zulor vahural.");
+  it("binds zulur to ululo by letter prefix", () => {
+    const { anaphors } = resolveOf("zululon vawalal. zulur vajul.");
     assert.equal(anaphors.length, 1);
     assert.equal(anaphors[0]!.kind, "content");
     assert.equal(anaphors[0]!.match, "letter");
-    assert.equal(anaphors[0]!.pronoun.raw, "zulor");
-    assert.equal(anaphors[0]!.antecedent?.raw, "zulonun");
+    assert.equal(anaphors[0]!.pronoun.raw, "zulur");
+    assert.equal(anaphors[0]!.antecedent?.raw, "zululon");
   });
 
-  it("binds zogor to the most recent ogo… stem (book, not dog)", () => {
-    const { anaphors } = resolveOf("zogodol vezelel. zogobol gelebal. zogor vawul.");
+  it("binds zadar to the most recent ada… stem (dragon, not dog)", () => {
+    const { anaphors } = resolveOf("zadagal velebel. zadaral gelel. zadar vawalal.");
     assert.equal(anaphors[0]!.match, "letter");
-    assert.equal(anaphors[0]!.pronoun.raw, "zogor");
-    assert.equal(anaphors[0]!.antecedent?.raw, "zogobol");
+    assert.equal(anaphors[0]!.pronoun.raw, "zadar");
+    assert.equal(anaphors[0]!.antecedent?.raw, "zadaral");
   });
 
-  it("binds full-root zogodor to the dog, skipping the book", () => {
-    const { anaphors } = resolveOf("zogodol vezelel. zogobol gelebal. zogodor vawul.");
+  it("binds full-root zadagar to the dog, skipping the book", () => {
+    const { anaphors } = resolveOf("zadagal velebel. zabogol gelel. zadagar vawalal.");
     assert.equal(anaphors[0]!.match, "fullRoot");
-    assert.equal(anaphors[0]!.pronoun.raw, "zogodor");
-    assert.equal(anaphors[0]!.antecedent?.raw, "zogodol");
+    assert.equal(anaphors[0]!.pronoun.raw, "zadagar");
+    assert.equal(anaphors[0]!.antecedent?.raw, "zadagal");
   });
 
   it("binds zazawar to azawa by full root", () => {
-    const { anaphors } = resolveOf("zazawan vawul. zazawar vahural.");
+    const { anaphors } = resolveOf("zazawan vawalal. zazawar vajul.");
     assert.equal(anaphors[0]!.match, "fullRoot");
     assert.equal(anaphors[0]!.antecedent?.raw, "zazawan");
   });
 
-  it("binds vawur to the prior verb (pronouns.md intermediate)", () => {
-    const { anaphors } = resolveOf("zazawan vawul. zulonun vawur.");
-    assert.equal(anaphors[0]!.pronoun.raw, "vawur");
+  it("binds vawalar to the prior verb (pronouns.md intermediate)", () => {
+    const { anaphors } = resolveOf("zazawan vawalal. zululon vawalar.");
+    assert.equal(anaphors[0]!.pronoun.raw, "vawalar");
     assert.equal(anaphors[0]!.match, "fullRoot");
-    assert.equal(anaphors[0]!.antecedent?.raw, "vawul");
+    assert.equal(anaphors[0]!.antecedent?.raw, "vawalal");
   });
 
-  it("leaves dangling zulor unresolved", () => {
-    const { anaphors } = resolveOf("zulor vawul.");
-    assert.equal(anaphors[0]!.pronoun.raw, "zulor");
+  it("leaves dangling zulur unresolved", () => {
+    const { anaphors } = resolveOf("zulur vawalal.");
+    assert.equal(anaphors[0]!.pronoun.raw, "zulur");
     assert.equal(anaphors[0]!.antecedent, undefined);
   });
 
   it("does not bind statement zar as a content anaphor", () => {
-    const { anaphors, asks } = resolveOf("zar vawul.");
+    const { anaphors, asks } = resolveOf("zar vawalal.");
     assert.equal(anaphors.length, 0);
     assert.equal(asks[0]!.kind, "none");
   });
@@ -94,7 +94,7 @@ describe("resolve — content anaphors (pronouns.md)", () => {
 
 describe("resolve — span and number anaphors", () => {
   it("binds writing d[=] to the most recent cite (spans.md)", () => {
-    const { anaphors } = resolveOf("d[hi] vawul. d[=] vahural.");
+    const { anaphors } = resolveOf("d[hi] vawalal. d[=] vajul.");
     const span = anaphors.find((a) => a.kind === "span");
     assert.ok(span);
     assert.equal(span!.typeVowel, "a");
@@ -103,7 +103,7 @@ describe("resolve — span and number anaphors", () => {
   });
 
   it("binds g=+ to the prior scalar (numbers.md)", () => {
-    const { anaphors } = resolveOf("z+3 vawul. z=+ vahural.");
+    const { anaphors } = resolveOf("z+3 vawalal. z=+ vajul.");
     const num = anaphors.find((a) => a.kind === "number");
     assert.ok(num);
     assert.equal(num!.pronoun.raw, "z=+");
@@ -112,32 +112,32 @@ describe("resolve — span and number anaphors", () => {
 });
 
 describe("resolve — role anaphors (roles.md)", () => {
-  it("binds zaxozower to the prior conflict verb", () => {
-    const { anaphors } = resolveOf("zar dumogon vozowel. zaxozower vurunul.");
+  it("binds zaxozowor to the prior conflict verb", () => {
+    const { anaphors } = resolveOf("zar dumogon vozowol. zaxozowor vurunul.");
     const role = anaphors.find((a) => a.kind === "role");
     assert.ok(role);
-    assert.equal(role!.pronoun.raw, "zaxozower");
+    assert.equal(role!.pronoun.raw, "zaxozowor");
     assert.equal(role!.roleVowel, "a");
-    assert.equal(role!.antecedent?.raw, "vozowel");
+    assert.equal(role!.antecedent?.raw, "vozowol");
   });
 });
 
 describe("resolve — yes/no vs fill-ask (questions.md)", () => {
-  it("classifies jol zumogon vawul. as yes/no", () => {
-    const { asks } = resolveOf("jol zumogon vawul.");
+  it("classifies jol zumogon vawalal. as yes/no", () => {
+    const { asks } = resolveOf("jol zumogon vawalal.");
     assert.equal(asks[0]!.kind, "yesNo");
     assert.equal(asks[0]!.gaps.length, 0);
   });
 
-  it("classifies jol zar vawul. as fill-ask", () => {
-    const { asks, anaphors } = resolveOf("jol zar vawul.");
+  it("classifies jol zar vawalal. as fill-ask", () => {
+    const { asks, anaphors } = resolveOf("jol zar vawalal.");
     assert.equal(asks[0]!.kind, "fillAsk");
     assert.equal(asks[0]!.gaps.map((g) => g.raw).join(" "), "zar");
     assert.equal(anaphors.length, 0);
   });
 
   it("orders fill-all gaps zar … dar", () => {
-    const { asks } = resolveOf("jol zar vejol dar.");
+    const { asks } = resolveOf("jol zar vejel dar.");
     assert.equal(asks[0]!.kind, "fillAsk");
     assert.deepEqual(
       asks[0]!.gaps.map((g) => g.raw),
@@ -145,28 +145,28 @@ describe("resolve — yes/no vs fill-ask (questions.md)", () => {
     );
   });
 
-  it("classifies jom zar vawul. as fill-ask", () => {
-    const { asks } = resolveOf("jom zar vawul.");
+  it("classifies jom zar vawalal. as fill-ask", () => {
+    const { asks } = resolveOf("jom zar vawalal.");
     assert.equal(asks[0]!.kind, "fillAsk");
   });
 });
 
 describe("resolve — SHARED /ɡ/ (comparatives.md / numbers.md)", () => {
   it("reads rank + SHARED scale as scale", () => {
-    const { shared } = resolveOf("zazawan zulonun zel gonudam.");
+    const { shared } = resolveOf("zazawan zululon zel gomonum.");
     assert.equal(shared.length, 1);
     assert.equal(shared[0]!.role, "scale");
     assert.equal(shared[0]!.join.raw, "zel");
-    assert.equal(shared[0]!.shared.word.raw, "gonudam");
+    assert.equal(shared[0]!.shared.word.raw, "gomonum");
   });
 
   it("reads set a + SHARED as distribute", () => {
-    const { shared } = resolveOf("zogodol zagadal zal gonudam.");
+    const { shared } = resolveOf("zadagal zagadal zal gomonum.");
     assert.equal(shared[0]!.role, "distribute");
   });
 
   it("reads ae + SHARED as equative", () => {
-    const { shared } = resolveOf("zazawan zulonun zael gonudam.");
+    const { shared } = resolveOf("zazawan zululon zael gomonum.");
     assert.equal(shared[0]!.role, "equative");
   });
 

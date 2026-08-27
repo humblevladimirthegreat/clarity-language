@@ -97,7 +97,7 @@ Optional hardening for option 2: on `copy`, set clipboard text explicitly from `
 
 ## Open questions
 
-- Copy surface: bare **root** (`uze`) vs full **word** with PoS/ending (`guzem`)?
+- Copy surface: bare **root** (`uzumu`) vs full **word** with PoS/ending (`guzumum`)?
 - Icons-only mode: is hidden romanization always in the accessibility tree?
 - License: Icons8 Color embedding limits for an offline/static lexicon bundle vs CDN/API.
 - One icon per root, or separate icons for literal vs metaphorical sense?

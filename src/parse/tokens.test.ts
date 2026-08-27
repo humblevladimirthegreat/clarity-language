@@ -30,8 +30,8 @@ function lex(text: string) {
 
 describe("segmentUtterance", () => {
   it("peels trailing period from a word", () => {
-    assert.deepEqual(segmentUtterance("gulebul."), [
-      { kind: "word", text: "gulebul" },
+    assert.deepEqual(segmentUtterance("gelulul."), [
+      { kind: "word", text: "gelulul" },
       { kind: "punct", punct: "period" },
     ]);
   });
@@ -69,8 +69,8 @@ describe("classifyToTokenType", () => {
 });
 
 describe("tokenizeUtterance", () => {
-  it("tokenizes gulebul. with period", () => {
-    const tokens = tokenizeUtterance("gulebul.", tables);
+  it("tokenizes gelulul. with period", () => {
+    const tokens = tokenizeUtterance("gelulul.", tables);
     assert.equal(tokens.length, 2);
     assert.equal(tokens[1]!.image, ".");
   });

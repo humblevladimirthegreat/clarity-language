@@ -22,7 +22,7 @@ There is **no** separate interrogative pronoun. Unbound *who* / *what* / *where*
 Under question, join **-r** always means fill-ask — not “did something happen?” For emptiness yes/no, prefer bare emptiness forms (`zal` / `xal` → *Nothing?* / *Nothing happened?*) or an ordinary indefinite (`-l` / `-m`).
 
 ```
-`jol zazawan vawul.`
+`jol zazawan vawalal.`
 
 gloss: `j-ask` · `z-Azawan` · `v-go`
 
@@ -30,7 +30,7 @@ gloss: `j-ask` · `z-Azawan` · `v-go`
 ```
 
 ```
-`jol zar vawul.`
+`jol zar vawalal.`
 
 gloss: `j-ask` · `z-who` · `v-go`
 
@@ -66,7 +66,7 @@ Every join **-r** under question is a **gap**. The answer is expected to **fill 
 | `zar` … `har` | *Who … when?* |
 | `var` … `zar` | *Do what … who?* |
 
-**Single gap + real *something* elsewhere:** use an ordinary indefinite (`-l` / `-m`), not a second join **-r** (`zar` + `dabebal` → *Who ate an apple?*; `zar` + `dar` → *Who ate what?*).
+**Single gap + real *something* elsewhere:** use an ordinary indefinite (`-l` / `-m`), not a second join **-r** (`zar` + `dabelel` → *Who ate an apple?*; `zar` + `dar` → *Who ate what?*).
 
 ### Polar stance (workhorses)
 <a id="answers"></a>
@@ -92,7 +92,7 @@ Each stack means exactly what its parts combine to say: first vowel picks accept
 ```
 
 ```
-`zumogon vawul. jael.`
+`zumogon vawalal. jael.`
 
 gloss: `z-speaker` · `v-go` · `j-yes`
 
@@ -114,44 +114,44 @@ A fill answer **need not** keep **-r** — bare content, focus **-l** / **-m** /
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` / `ulonu` / `ubuzu` · `edage` · `ogodo` · `awu` · `ezele` · `egu` · `ejo` · `uwa` · `urunu`
+**Roots used here:** `azawa` / `ululo` / `uhubu` · `edege` · `adaga` · `awala` · `elebe` · `uzune` · `eje` · `uwuru` · `urunu`
 
 #### English → Agelan
 
 **1.** *Does Azawan walk?*
 
 ::: details Show answer
-`jol zazawan vawul.`
+`jol zazawan vawalal.`
 :::
 
 **2.** *Who walks?*
 
 ::: details Show answer
-`jol zar vawul.`
+`jol zar vawalal.`
 :::
 
-**3.** *Does Ulonun sleep?* (gentle / wondering)
+**3.** *Does Ululon sleep?* (gentle / wondering)
 
 ::: details Show answer
-`jom zulonun vezelel.`
+`jom zululon velebel.`
 :::
 
 **4.** *Who sees what?*
 
 ::: details Show answer
-`jol zar vejol dar.`
+`jol zar vejel dar.`
 :::
 
 **5.** *Who sees a dog?* (one gap; the dog is real, not a second blank)
 
 ::: details Show answer
-`jol zar vejol dogodol.`
+`jol zar vejel dadagal.`
 :::
 
 **6.** *Azawan walks. Yes.* (confirm as a second turn)
 
 ::: details Show answer
-`zazawan vawul. jael.`
+`zazawan vawalal. jael.`
 :::
 
 **7.** *No.* / *False.* (polar, not “don’t”)
@@ -163,27 +163,27 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **8.** *Don’t walk.*
 
 ::: details Show answer
-`jul vawul.`
+`jul vawalal.`
 :::
 
 #### Agelan → English
 
-**1.** `jol zubuzun vegul.`
+**1.** `jol zuhubun vuzunel.`
 
 ::: details Show answer
-*Does Ubuzun sing?*
+*Does Uhubun sing?*
 :::
 
-**2.** `jom zar vuwal.`
+**2.** `jom zar vuwurul.`
 
 ::: details Show answer
 *Who writes?* (soft ask)
 :::
 
-**3.** `jol zulonun gedagel.`
+**3.** `jol zululon gedegel.`
 
 ::: details Show answer
-*Is Ulonun a teacher?*
+*Is Ululon a teacher?*
 :::
 
 **4.** `jaol.`
@@ -192,7 +192,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Sure.* / *I’ll take that.*
 :::
 
-**5.** `jol zal vawul.`
+**5.** `jol zal vawalal.`
 
 ::: details Show answer
 *Does nobody walk?* / *Nothing walks?*
@@ -204,16 +204,16 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Don’t run.*
 :::
 
-**7.** `jol zur vezelel.`
+**7.** `jol zur velebel.`
 
 ::: details Show answer
 *Who else sleeps?*
 :::
 
-**8.** `zubuzun vawul. jael.`
+**8.** `zuhubun vawalal. jael.`
 
 ::: details Show answer
-*Ubuzun walks. Yes.*
+*Uhubun walks. Yes.*
 :::
 
 ## Intermediate
@@ -241,7 +241,7 @@ The **-l** ending holds the stance exactly; **-m** is the soft twin of each row:
 **Shapes:**
 
 - **Bare turn** — `jael.` / `juel.`
-- **Stance + body** — `jael zumogon vawul.` (*yes — I go*)
+- **Stance + body** — `jael zumogon vawalal.` (*yes — I go*)
 - **Confirm tag** — second bare turn after `.` ([left-edge rules](core.md#left-edge-order-and-sentence-boundaries))
 - **Monologue self-turn** — `juel` before correction; `jaol` before next step; `jael` after locking a point
 
@@ -308,7 +308,7 @@ A fill may be a bare content word, focus **-l** / **-m** / **-n**, or a longer l
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` / `ulonu` / `ubuzu` · `ogodo` · `awu` · `urunu` · `ezele`
+**Roots used here:** `azawa` / `ululo` / `uhubu` · `adaga` · `awala` · `urunu` · `elebe`
 
 #### English → Agelan
 
@@ -319,29 +319,29 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `jael.`
 :::
 
-**2.** *Didn’t Ulonun sleep?* Then reject that: *false — Ulonun did sleep.*
+**2.** *Didn’t Ululon sleep?* Then reject that: *false — Ululon did sleep.*
 
 ::: details Show answer
-`jol zulonun vul vezelel.`
+`jol zululon vul velebel.`
 `juel.`
 :::
 
-**3.** *When does Ubuzun walk?*
+**3.** *When does Uhubun walk?*
 
 ::: details Show answer
-`jol zubuzun vawul har.`
+`jol zuhubun vawalal har.`
 :::
 
 **4.** *Which dog?* (one unknown)
 
 ::: details Show answer
-`jol dogodol zar.`
+`jol dadagal zar.`
 :::
 
-**5.** *Which of Azawan and Ulonun?*
+**5.** *Which of Azawan and Ululon?*
 
 ::: details Show answer
-`jol zazawan zulonun zar.`
+`jol zazawan zululon zar.`
 :::
 
 **6.** *Just Azawan?* (confirm the singleton)
@@ -350,10 +350,10 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `jol zazawan zal.`
 :::
 
-**7.** *How about Ubuzun?* (offer)
+**7.** *How about Uhubun?* (offer)
 
 ::: details Show answer
-`jol zubuzun zam.`
+`jol zuhubun zam.`
 :::
 
 **8.** *Not that.* (reject this option, not a truth-flip)
@@ -421,9 +421,9 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 |-----------------|------|---------|
 | **`jael`** / **`jaol`** | stance match vs option uptake — not interchangeable | `jael.` *yes/true* vs `jaol.` *sure* |
 | **`juel`** / **`juol`** | truth flip vs reject-this option | `juel.` *no/false* vs `juol.` *not that one* |
-| Body **`xul`** / **`vul`** / **`zul`** | deny *inside* the proposition ([negation](coordination.md#negation-u)) | `zazawan xul vawul.` *Azawan doesn’t walk* |
+| Body **`xul`** / **`vul`** / **`zul`** | deny *inside* the proposition ([negation](coordination.md#negation-u)) | `zazawan xul vawalal.` *Azawan doesn’t walk* |
 | **`jul`** / **`jum`** | **prohibition** force (*don't…*), not polar *no* | `jul vurunul.` *Don’t run.* |
-| Values **`xu`** / **`xo`** | unmet need / prescription — not true/false | `veguxul.` *can’t sing* |
+| Values **`xu`** / **`xo`** | unmet need / prescription — not true/false | `vuzunexul.` *can’t sing* |
 | Clause **`xael`** | tie *between* claims — not *yes* | `… xael …` *and so / likewise* |
 
 **`jual`** / **`juam`** — absolute *no* / hard refusal of the whole frame (rare). Prefer **`juel`** / **`juol`** for ordinary answers; prefer **`xul`** when denying inside the clause.
@@ -512,7 +512,7 @@ Mnemonic for all tables below: first vowel = series job — **`e`** orders (rank
 
 Short drills on this Advanced band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` / `ulonu` / `ubuzu` · `awu` · `urunu`
+**Roots used here:** `azawa` / `ululo` / `uhubu` · `awala` · `urunu`
 
 #### English → Agelan
 
@@ -522,16 +522,16 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 `jol zazawan zel.`
 :::
 
-**2.** *Prefer Ulonun?* / *Ulonun first?* (rank offer)
+**2.** *Prefer Ululon?* / *Ululon first?* (rank offer)
 
 ::: details Show answer
-`jol zulonun zem.`
+`jol zululon zem.`
 :::
 
-**3.** *Has to be Ulonun?*
+**3.** *Has to be Ululon?*
 
 ::: details Show answer
-`jol zulonun zol.`
+`jol zululon zol.`
 :::
 
 **4.** *Tie?* (bare rank)
@@ -560,10 +560,10 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 *`juel`* = *no / false* (truth flip). *`juol`* = *not that* (reject this option).
 :::
 
-**3.** `jol zazawan zulonun zual.`
+**3.** `jol zazawan zululon zual.`
 
 ::: details Show answer
-*Everything but Azawan and Ulonun?*
+*Everything but Azawan and Ululon?*
 :::
 
 **4.** `jol zoel.`
@@ -572,7 +572,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 *Do nothing?* / *Skip it?*
 :::
 
-**5.** `jum vawul.`
+**5.** `jum vawalal.`
 
 ::: details Show answer
 *Don’t walk.* (soft prohibition — not polar *no*)

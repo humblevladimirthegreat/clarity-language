@@ -70,7 +70,7 @@ Agelan text
 ParseResult  (utterances + resolve)
 ```
 
-Public entry: `parse(text)` in [`src/parse/index.ts`](../../src/parse/index.ts). CLI: `npm run parse -- 'zazawan vawul.'`
+Public entry: `parse(text)` in [`src/parse/index.ts`](../../src/parse/index.ts). CLI: `npm run parse -- 'zazawan vawalal.'`
 
 ### Stage 1 — Peggy (characters → `MorphWord`)
 

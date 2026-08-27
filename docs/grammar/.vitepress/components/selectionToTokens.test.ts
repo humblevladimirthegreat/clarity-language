@@ -19,7 +19,7 @@ function fixture(): { window: Window; root: HTMLElement; english: HTMLElement } 
     <p class="stream">
       <span class="tok" ${TOKEN_INDEX_ATTR}="0">zazawan</span>
       <span class="tok punct" ${TOKEN_INDEX_ATTR}="1"> </span>
-      <span class="tok" ${TOKEN_INDEX_ATTR}="2">vawul</span>
+      <span class="tok" ${TOKEN_INDEX_ATTR}="2">vawalal</span>
       <span class="tok punct" ${TOKEN_INDEX_ATTR}="3">.</span>
     </p>
   `

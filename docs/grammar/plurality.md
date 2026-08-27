@@ -18,7 +18,7 @@ Without **-sh**, the word picks **one** referent. With **-sh**, the default cont
 **Mnemonic:** **-sh** = **s**et with the anchor — *Azawan-sh* ≈ *Azawan and associates*.
 
 ```
-`zazawansh vawul.`
+`zazawansh vawalal.`
 
 gloss: `z-grace-sh` · `v-walk`
 
@@ -26,7 +26,7 @@ gloss: `z-grace-sh` · `v-walk`
 ```
 
 ```
-`zazawarsh vahural.`
+`zazawarsh vajul.`
 
 gloss: `z-←grace-sh` · `v-sit`
 
@@ -85,20 +85,20 @@ Special pronouns keep **-sh** available, but the default is **not** uniform asso
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `agada` *cat* · `ogodo` *dog* · `uze` smile → *happy* (**-m**) · `eleba` *size* / *big* · `awu` *walk* · `ahura` *sit* · `urunu` *run* · `ezele` *sleep* · `ejo` *see* · `ana` inclusive *we* · `umogo` speaker · `ehado` listener
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `agada` *cat* · `adaga` *dog* · `uzumu` smile → *happy* (**-m**) · `ele` *size* / *big* · `awala` *walk* · `aju` *sit* · `urunu` *run* · `elebe` *sleep* · `eje` *see* · `ana` inclusive *we* · `umogo` speaker · `ehado` listener
 
 #### English → Agelan
 
 **1.** *Azawan and associates walk.*
 
 ::: details Show answer
-`zazawansh vawul.`
+`zazawansh vawalal.`
 :::
 
 **2.** *Some cats sit.*
 
 ::: details Show answer
-`zagadalsh vahural.`
+`zagadalsh vajul.`
 :::
 
 **3.** *They (that one and associates) run.*
@@ -110,81 +110,81 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **4.** *We (you and I) walk.*
 
 ::: details Show answer
-`zanan vawul.`
+`zanan vawalal.`
 :::
 
 **5.** *Speaker and associates (not you) sit.*
 
 ::: details Show answer
-`zumogonsh vahural.`
+`zumogonsh vajul.`
 :::
 
 **6.** *You all (the addressees) walk.*
 
 ::: details Show answer
-`zehadonsh vawul.`
+`zehadonsh vawalal.`
 :::
 
-**7.** *You (Ulonun) and your associates sit.*
+**7.** *You (Ululon) and your associates sit.*
 
 ::: details Show answer
-`zulonunsh vahural.`
+`zululonsh vajul.`
 :::
 
 **8.** *Azawan sees some dogs.*
 
 ::: details Show answer
-`zazawan dogodolsh vejol.`
+`zazawan dadagalsh vejel.`
 :::
 
 #### Agelan → English
 
-**1.** `zazawansh vawul.`
+**1.** `zazawansh vawalal.`
 
 ::: details Show answer
 *Azawan and associates walk.*
 :::
 
-**2.** `zagadalsh vahural.`
+**2.** `zagadalsh vajul.`
 
 ::: details Show answer
 *Some cats sit.* / *A group of cats sit.*
 :::
 
-**3.** `zazawarsh vahural.`
+**3.** `zazawarsh vajul.`
 
 ::: details Show answer
 *They (that one and associates) sit.*
 :::
 
-**4.** `zanan vezelel.`
+**4.** `zanan velebel.`
 
 ::: details Show answer
 *We (including you) sleep.*
 :::
 
-**5.** `zehadonsh vahural.`
+**5.** `zehadonsh vajul.`
 
 ::: details Show answer
 *You all (the addressees) sit.*
 :::
 
-**6.** `zumogonsh vawul.`
+**6.** `zumogonsh vawalal.`
 
 ::: details Show answer
 *Speaker and associates (not you) walk.*
 :::
 
-**7.** `zogodolsh gelebal.`
+**7.** `zadagalsh gelel.`
 
 ::: details Show answer
 *Some dogs are big.*
 :::
 
-**8.** `jol zulonunsh guzem.`
+**8.** `jol zululonsh guzumum.`
 
 ::: details Show answer
-*Are Ulonun and associates happy?*
+*Are Ululon and associates happy?*
 :::
 
 ## Intermediate
@@ -219,10 +219,10 @@ On `/v/`, **-sh** marks **collective doing**: the event is **one shared act**, n
 
 | Example | Gloss |
 |---------|-------|
-| `zazawansh vegul` | *Azawan and associates sing* (together or each, or don’t care) |
-| `zazawansh vegulsh` | *they sing as one outing* |
-| `zazawan vegulsh` | *Azawan sings jointly* (not a solo) |
-| `zahanan vawulsh` | *the team walks as one unit* |
+| `zazawansh vuzunel` | *Azawan and associates sing* (together or each, or don’t care) |
+| `zazawansh vuzunelsh` | *they sing as one outing* |
+| `zazawan vuzunelsh` | *Azawan sings jointly* (not a solo) |
+| `zahanan vawalalsh` | *the team walks as one unit* |
 
 Count (*three times*) and habit (*always*) stay clause framing: [numbers](numbers.md) under `/h/`, or **`hual`**. **-rsh** on `/v/` resumes a prior **collective** doing (*still as one shared act*).
 
@@ -255,7 +255,7 @@ Most useful with [phrase join](coordination.md): SHARED singular scale under **`
 
 **Scale / continuum `/ɡ/`** in [comparatives](comparatives.md) and [ranges](numbers.md#ranges) stays **singular** — one line. Do not pluralize SHARED scale or continuum adjectives.
 
-**Not adjective -sh:** *red books* → plural on the **noun**, singular `/ɡ/` *red*. Character trait → singular `/ɡ/` + **`hual`**. *Both are challenging* → distributive SHARED **`… zal gonudam`**.
+**Not adjective -sh:** *red books* → plural on the **noun**, singular `/ɡ/` *red*. Character trait → singular `/ɡ/` + **`hual`**. *Both are challenging* → distributive SHARED **`… zal gomonum`**.
 
 ### Vocatives (`/j/`)
 
@@ -280,7 +280,7 @@ Quantity `>1` is digitless **`g+`** (may co-occur with noun **-lsh**: `zagadalsh
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ulonu` *courage* (name **Ulonun**) · `olebo` *file-box* · `uduru` *heavy* · `ahana` *team* · `umola` *vast* · `uzedu` *student* · `egu` *sing* · `awu` *walk* · `urunu` *run* · `ana` inclusive *we* · `umogo` speaker · `ehado` listener
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `olebo` *file-box* · `uduru` *heavy* · `ahana` *team* · `umola` *vast* · `uzudu` *student* · `uzune` *sing* · `awala` *walk* · `urunu` *run* · `ana` inclusive *we* · `umogo` speaker · `ehado` listener
 
 #### English → Agelan
 
@@ -311,13 +311,13 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **5.** *Azawan sings jointly (not a solo).*
 
 ::: details Show answer
-`zazawan vegulsh.`
+`zazawan vuzunelsh.`
 :::
 
 **6.** *Azawan and associates sing as one outing.*
 
 ::: details Show answer
-`zazawansh vegulsh.`
+`zazawansh vuzunelsh.`
 :::
 
 **7.** *Hey, students!*
@@ -352,13 +352,13 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *The team is vast.*
 :::
 
-**4.** `zazawan vegulsh.`
+**4.** `zazawan vuzunelsh.`
 
 ::: details Show answer
 *Azawan sings jointly.* / *Azawan sings (not a solo).*
 :::
 
-**5.** `zazawansh vegulsh.`
+**5.** `zazawansh vuzunelsh.`
 
 ::: details Show answer
 *Azawan and associates sing as one outing.*
