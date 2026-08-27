@@ -43,7 +43,7 @@ Six closed needs. Senses are fixed; lexicon roots are published. Ordinary conten
 1. **PoS** — `/h/` or `/w/`.
 2. **Need root** — one of the six (`alorodo` / `orodolo` / `ogono` / `awero` / `uhuhe` / `ega`).
 3. **Optional `x`-addition** — stance vowel **`a` / `e` / `o` / `u`**.
-4. **Ending** — on bare needs, ordinary [reference-suffix](reference-suffix.md). On compounds, **-l / -m / -r** follow the stance’s table ([contact](#value-contact) / [preference](#value-preference) / [force](#value-force) / [changeability](#value-changeability)); **-n** is ordinary [proper](reference-suffix.md#proper-name--n) (this word names a particular object — rare on `/h/` `/w/`).
+4. **Ending** — on bare needs, ordinary [reference-suffix](reference-suffix.md). On compounds, **-l / -m / -r** follow the stance’s table ([contact](#value-contact) / [preference](#value-preference) / [force](#value-force) / [changeability](#value-changeability)). **-n** stays ordinary [proper](reference-suffix.md#proper-name--n).
 
 ### Stances
 <a id="value-stake"></a>
@@ -84,14 +84,13 @@ gloss: `z-gift` · `w-relatedness-met-physical`
 <a id="value-contact"></a>
 <a id="value-savoring"></a>
 
-On **`xa`** compounds, **-l / -m / -r** mark **how you contact** the (claimed) payoff — savoring / gratitude channel. **-n** is ordinary proper (a named object), not a fourth channel. Relatedness *between people* is the need **`ogono`**, not an ending.
+On **`xa`** compounds, **-l / -m / -r** mark **how you contact** the (claimed) payoff — savoring / gratitude channel. **-n** stays ordinary [proper](reference-suffix.md#proper-name--n). Relatedness *between people* is the need **`ogono`**, not an ending.
 
 | Ending | Channel | Focus |
 |--------|---------|--------|
 | **-l** | **physical** | Sensory / ambient / embodied ease |
 | **-m** | **mental** | Cognitive integration, memory, self-directed gratitude |
 | **-r** | **spiritual** | Big-picture step-back (wider frame — not theology) |
-| **-n** | **proper** | This value-word names a particular object |
 
 **-l** immediate scene; **-m** mental; **-r** resume to a larger frame. No ranked “better” channel.
 
@@ -100,7 +99,6 @@ On **`xa`** compounds, **-l / -m / -r** mark **how you contact** the (claimed) p
 | `…xal` | **physical** |
 | `…xam` | **mental** |
 | `…xar` | **spiritual** |
-| `…xan` | **proper** (rare) |
 
 ```
 `zugodal gohohum bugobon worodoloxal.`
@@ -114,14 +112,13 @@ gloss: `z-neighborhood` · `g-home` · `b-speaker` · `w-competence-met-physical
 <a id="value-force"></a>
 <a id="value-ought"></a>
 
-**`xo`** = *should* / *ought* — act so the need is served or protected, whether or not anyone is acting from it now. **-l / -m / -r** = **prescription force** (how strongly you claim the ought). **-n** is ordinary proper, not a fourth force. A promise without a named vow is **bound** or **endorse**.
+**`xo`** = *should* / *ought* — act so the need is served or protected, whether or not anyone is acting from it now. **-l / -m / -r** = **prescription force** (how strongly you claim the ought). **-n** stays ordinary [proper](reference-suffix.md#proper-name--n). A promise without a named vow is **bound** or **endorse**.
 
 | Ending | Force | You are saying |
 |--------|--------|----------------|
 | **-l** | **bound** | Non-negotiable in this frame (hardest — same **-l** hardness as firm force / closed joins) |
 | **-m** | **endorse** | I stand behind this should (soft default if unknown) |
 | **-r** | **invite** | Worth considering here (lightest) |
-| **-n** | **proper** | This ought-word names a particular object |
 
 **-l** locked / bound; **-r** light invite — matches language-wide **-l** hardness (`jal`, closed joins). Gloss **-l** as **bound in-frame**, not “morally mandatory foredegur.” Always pick an ending on **`xo`**; unknown → **-m**.
 
@@ -130,7 +127,6 @@ gloss: `z-neighborhood` · `g-home` · `b-speaker` · `w-competence-met-physical
 | `…xol` | **bound** |
 | `…xom` | **endorse** |
 | `…xor` | **invite** |
-| `…xon` | **proper** (rare) |
 
 ```
 `… hogonoxom.`
@@ -143,21 +139,19 @@ gloss: `h-relatedness-ought-endorse`
 ### Unmet (`xu`) — changeability
 <a id="value-changeability"></a>
 
-**`xu`** = host costs / subtracts from the need. **-l / -m / -r** = **changeability** (temporariness / redegursibility). **-n** is ordinary proper (a named object), not a titled-unmet flavor.
+**`xu`** = host costs / subtracts from the need. **-l / -m / -r** = **changeability** (temporariness / redegursibility). **-n** stays ordinary [proper](reference-suffix.md#proper-name--n).
 
 | Ending | Job | Mnemonic |
 |--------|-----|----------|
 | **-l** | **irredegursible** — fixed as far as you can tell | hard / locked (**-l**) |
 | **-m** | **modifiable** — effort or circumstance may change it (soft default if unknown) | open to change |
 | **-r** | **temporary** — usually met; not this moment | light / this-moment only |
-| **-n** | **proper** — this unmet-word names a particular object | ordinary **n**ame |
 
 | Form | Reading |
 |------|---------|
 | `…xul` | **irredegursible** |
 | `…xum` | **modifiable** |
 | `…xur` | **temporary** |
-| `…xun` | **proper** (rare) |
 
 ```
 `zazudol woboloxur.`
@@ -280,14 +274,13 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 ### Motive (`xe`) — preference standing
 <a id="value-preference"></a>
 
-**`xe`** = descriptive reason for acting (*am doing for X*) — replaces English *have to* / *need to* when that is the real motive. **-l / -m / -r** = **preference standing** (where the reason comes from). **-n** is ordinary proper. Habit of the reason is **`hual`**, not an ending.
+**`xe`** = descriptive reason for acting (*am doing for X*) — replaces English *have to* / *need to* when that is the real motive. **-l / -m / -r** = **preference standing** (where the reason comes from). **-n** stays ordinary [proper](reference-suffix.md#proper-name--n). Habit of the reason is **`hual`**, not an ending.
 
 | Ending | Standing | Focus |
 |--------|----------|--------|
 | **-l** | **circumstantial** | The situation pulls this motive |
 | **-m** | **internal** | Your own reason (also soft default if unknown) |
 | **-r** | **protective** | Motive as *protecting against* unmet (abaway-from), not approach |
-| **-n** | **proper** | This motive-word names a particular object |
 
 **Toward vs protective:** **-l / -m** approach-framed; **-r** fear/guard framed. Always pick an ending on **`xe`**; unknown → **-m**. *Usually my reason* → **`…xem`** + **`hual`**.
 
@@ -296,7 +289,6 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 | `…xel` | **circumstantial** |
 | `…xem` | **internal** |
 | `…xer` | **protective** |
-| `…xen` | **proper** (rare) |
 
 ```
 `… hogonoxem.`
@@ -465,35 +457,35 @@ Competence (`orodolo`) and relatedness (`ogono`) shown for readability; same end
 
 #### Met — contact channel
 
-| | **-l** physical | **-m** mental | **-r** spiritual | **-n** proper |
-|--|-----------------|---------------|------------------|---------------|
-| **xa** met | `worodoloxal` | `worodoloxam` | `worodoloxar` | `worodoloxan` |
-| mnemonic | touches the body | happens in the head | reaches beyond the self | names an object |
+| | **-l** physical | **-m** mental | **-r** spiritual |
+|--|-----------------|---------------|------------------|
+| **xa** met | `worodoloxal` | `worodoloxam` | `worodoloxar` |
+| mnemonic | touches the body | happens in the head | reaches beyond the self |
 
 #### Motive — preference standing
 
-| | **-l** circumstantial | **-m** internal | **-r** protective | **-n** proper |
-|--|----------------------|-----------------|-------------------|---------------|
-| **xe** motive | `hogonoxel` | `hogonoxem` | `hogonoxer` | `hogonoxen` |
-| mnemonic | the situation’s doing | from inside me | it guards something | names an object |
+| | **-l** circumstantial | **-m** internal | **-r** protective |
+|--|----------------------|-----------------|-------------------|
+| **xe** motive | `hogonoxel` | `hogonoxem` | `hogonoxer` |
+| mnemonic | the situation’s doing | from inside me | it guards something |
 
 #### Prescription — force
 
-| | **-l** bound | **-m** endorse | **-r** invite | **-n** proper |
-|--|--------------|----------------|---------------|---------------|
-| **xo** ought | `hogonoxol` | `hogonoxom` | `hogonoxor` | `hogonoxon` |
-| mnemonic | nailed on | I cheer it | held out to you | names an object |
+| | **-l** bound | **-m** endorse | **-r** invite |
+|--|--------------|----------------|---------------|
+| **xo** ought | `hogonoxol` | `hogonoxom` | `hogonoxor` |
+| mnemonic | nailed on | I cheer it | held out to you |
 
 #### Unmet — changeability
 
-| | **-l** irredegursible | **-m** modifiable | **-r** temporary | **-n** proper |
-|--|---------------------|-------------------|------------------|---------------|
-| **xu** unmet | `hogonoxul` | `hogonoxum` | `hogonoxur` | `hogonoxun` |
-| mnemonic | fixed for good | could change | only right now | names an object |
+| | **-l** irredegursible | **-m** modifiable | **-r** temporary |
+|--|---------------------|-------------------|------------------|
+| **xu** unmet | `hogonoxul` | `hogonoxum` | `hogonoxur` |
+| mnemonic | fixed for good | could change | only right now |
 
 ### Boundaries
 
-- Met / unmet / motive / prescription live on the **`x`-vowel**; contact / standing / force / changeability live on **-l / -m / -r**. **-n** on these compounds is ordinary proper.
+- Met / unmet / motive / prescription live on the **`x`-vowel**; contact / standing / force / changeability live on **-l / -m / -r**. **-n** stays ordinary [proper](reference-suffix.md#proper-name--n).
 - Value polarity is not number markers `h+` / `h-`.
 - Ordinary **-l / -m** (literal / metaphorical) do not mean met / unmet on these compounds.
 - Value second halves are bare vowels **`a` / `e` / `o` / `u`** inside a compound — not prefix-less revisers (`al`, `ul`, …) and not restrictor joins (`hal`, …).

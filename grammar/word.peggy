@@ -7,7 +7,6 @@
   function spanCloseFlavor(form) {
     if (form === "xuxul") return "complete";
     if (form === "xuxur") return "editorial";
-    if (form === "xuxun") return "proper";
     return "closeAll";
   }
 
@@ -108,7 +107,7 @@ Word
 // ── Span closes (decision order step 1) ─────────────────────────────────────
 
 spanClose
-  = form:("xuxul" / "xuxur" / "xuxun" / "xuxum") {
+  = form:("xuxul" / "xuxur" / "xuxum") {
       return makeWord(form, {
         family: { kind: "spanClose", flavor: spanCloseFlavor(form) },
       });

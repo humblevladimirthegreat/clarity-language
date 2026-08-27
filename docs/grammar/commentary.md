@@ -12,7 +12,7 @@ First-person *I think*, how you know a world-claim, and *as if* framing — clos
 
 Mark **first-person mental commentary** — the mind storying or labeling experience — with one closed mood root instead of separate *think* / *assume* / *imagine* / *wonder* moods.
 
-**Shape:** floating **`/h/`** mood **`ogugu`** 💭 *thought* → *commentary* (optional `/w/` only when COMMENT frames a preceding `/ɡ/` — rare). Prefer floating `/h/`. **-l / -m / -r** = [hold](#comment-hold) (how tightly you take the balloon); **-n** ordinary proper.
+**Shape:** floating **`/h/`** mood **`ogugu`** 💭 *thought* → *commentary* (optional `/w/` only when COMMENT frames a preceding `/ɡ/` — rare). Prefer floating `/h/`. **-l / -m / -r** = [hold](#comment-hold) (how tightly you take the balloon).
 
 a **thought balloon** floats a take over the scene. Bare contact = watching without narration. Ordinary content still available (`zogugul` *a thought*; `vogugul` *to think* as deliberate edegunt).
 
@@ -40,14 +40,13 @@ Use COMMENT when the clause is doing **first-person cognitive commentary**. Cont
 <a id="comment-hold"></a>
 <a id="hold-endings"></a>
 
-On **`ogugu`**, **-l / -m / -r** mark **how you hold** the commentary. **-n** is ordinary [proper](reference-suffix.md#proper-name--n) (this COMMENT-word names a particular object), not a fourth hold. Habitual rumination is **`hual`** (and/or a named thought), not **`hogugun`** as “the usual story.” NOTIONAL uses the same **-l / -m / -r** map ([Intermediate](#notional-hold)). Not contact channel, not changeability.
+On **`ogugu`**, **-l / -m / -r** mark **how you hold** the commentary. **-n** stays ordinary [proper](reference-suffix.md#proper-name--n). Habitual rumination is **`hual`** (and/or a named thought). NOTIONAL uses the same **-l / -m / -r** map ([Intermediate](#notional-hold)). Not contact channel, not changeability.
 
 | Ending | Form | Hold | Reading |
 |--------|------|------|---------|
 | **-m** | **`hogugum`** | **soft** (default) | commentary noticed, held lightly |
 | **-l** | **`hogugul`** | **fused** | commentary taken as the scene (*it is so because I think*) |
 | **-r** | **`huhur`** | **return** | same commentary *and* a cue to step back toward bare contact |
-| **-n** | **`hogugun`** | **proper** | this word names a particular commentary-object |
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -291,19 +290,17 @@ Use NOTIONAL when the clause is **framed as pretensive / for-the-sake-of-argumen
 |---------|---------|
 | `… hahadem zugobon vobohol.` | *as if I take the trophy* — soft notional frame |
 | `… hahader …` | notional frame *and* step back toward contact |
-| `… hahaden …` | this NOTIONAL-word **names** a particular object |
 
 #### Hold endings (NOTIONAL)
 <a id="notional-hold"></a>
 
-On **`ahade`**, **-l / -m / -r** mark **how you hold** the as-if frame — same flexibility map as [COMMENT hold](#comment-hold). **-n** is ordinary proper, not a stock thought-experiment flavor.
+On **`ahade`**, **-l / -m / -r** mark **how you hold** the as-if frame — same flexibility map as [COMMENT hold](#comment-hold). **-n** stays ordinary [proper](reference-suffix.md#proper-name--n).
 
 | Ending | Form | Hold | Reading |
 |--------|------|------|---------|
 | **-m** | **`hahadem`** | **soft** (default) | as-if noticed, held lightly |
 | **-l** | **`hahadel`** | **fused** | immersed in the imagined scene |
 | **-r** | **`hahader`** | **return** | same as-if *and* a cue to step back toward bare contact |
-| **-n** | **`hahaden`** | **proper** | this word names a particular as-if object |
 
 When unsure, prefer **`hahadem`**.
 

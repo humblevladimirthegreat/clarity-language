@@ -51,14 +51,12 @@ Use **PLAN** when the clause frames **intention**. Use **PREDICT** when it frame
 | *I plan to … / I mean to …* (direction) | **PLAN** sketch (`howoram`) |
 | *here's how I'll …* (steps filled in) | **PLAN** itinerary (`howoral`) |
 | *if that fails, I'll …* (backup path) | **PLAN** fork (`howorar`) |
-| *the named plan X* (that object is the plan) | **PLAN** proper (`howoran`) — rare; ordinary [**-n**](reference-suffix.md#proper-name--n) |
 | *it will rain / I expect …* (world forecast) | **PREDICT** (`helegom`) |
 
 | Agelan | Reading |
 |---------|---------|
 | `… howoram …` | intention; **sketch** (soft default) |
 | `… howoral …` | intention; **itinerary** |
-| `… howoran …` | intention; this PLAN-word **names** a particular object |
 | `… howorar …` | intention; **fork** / contingency |
 | `… helegom …` | **forecast** |
 
@@ -66,14 +64,13 @@ Use **PLAN** when the clause frames **intention**. Use **PREDICT** when it frame
 <a id="plan-map-resolution"></a>
 <a id="plan-endings"></a>
 
-On **`owora`**, **-l / -m / -r** mark **how drawn the intention map is**. **-n** is ordinary [proper](reference-suffix.md#proper-name--n) (this PLAN-word names a particular object — not a fourth map grain). *Plan B* as a backup *path* is **fork**; a plan that is actually named uses **-n**.
+On **`owora`**, **-l / -m / -r** mark **how drawn the intention map is**. **-n** stays ordinary [proper](reference-suffix.md#proper-name--n). *Plan B* as a backup *path* is **fork**.
 
 | Ending | Form | Job | Reading | Mnemonic |
 |--------|------|-----|---------|----------|
 | **-m** | **`howoram`** | **sketch** (soft default) | direction only — *means to …* without steps | open sketch |
 | **-l** | **`howoral`** | **itinerary** | steps filled in — *how* is on the map | locked itinerary |
 | **-r** | **`howorar`** | **fork** | contingency / backup path — *if not A, then B* | forked / other-path |
-| **-n** | **`howoran`** | **proper** | this word names a particular plan-object | ordinary **n**ame |
 
 When unsure, prefer **`howoram`**. Omit **PLAN** when you are not framing intention.
 
@@ -224,7 +221,6 @@ Use **DECISION** when the clause marks **pick firmness**. Intention map grain st
 |---------|---------|
 | `… hegegel …` | decided; **irredegursible** / settled |
 | `… hegegem …` | decided; **open to change** (or unknown) |
-| `… hegegen …` | decided; this DECISION-word **names** a particular object |
 | `… hegeger …` | decided **for now** (temporary) |
 | `zazawan howoral hegegel vawalal` | itinerary **and** settled pick |
 | `… howoram …` | intention **sketch** — map grain, not firmness |
@@ -232,14 +228,13 @@ Use **DECISION** when the clause marks **pick firmness**. Intention map grain st
 #### Endings — changeability
 <a id="decision-changeability"></a>
 
-On **`egege`**, **-l / -m / -r** match unmet [changeability](values.md#value-changeability): irredegursible / modifiable / temporary. **-n** is ordinary proper (this DECISION-word names a particular object), not a fourth firmness.
+On **`egege`**, **-l / -m / -r** match unmet [changeability](values.md#value-changeability): irredegursible / modifiable / temporary. **-n** stays ordinary [proper](reference-suffix.md#proper-name--n).
 
 | Ending | Form | Job | Reading |
 |--------|------|-----|---------|
 | **-l** | **`hegegel`** | **irredegursible** | settled / final as far as you can tell |
 | **-m** | **`hegegem`** | **modifiable** (soft default if unknown) | open to revision |
 | **-r** | **`hegeger`** | **temporary** | pick for this moment; usually revisable later |
-| **-n** | **`hegegen`** | **proper** | this word names a particular decision-object |
 
 Always pick an ending on **DECISION**; unknown → **-m**. Deferral stays ordinary packaging.
 

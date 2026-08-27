@@ -542,9 +542,9 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 | Spoken | Job | Writing | Mnemonic |
 |--------|-----|---------|----------|
 | **`xuxul`** | pop **one** — **complete** | matching closer `]` / `}` / `)` / `>` | exact **-l**: the span closes whole |
-| **`xuxur`** | pop **one** — **editorial** (wording kept as written under an editorial mark: cut off, trail off, or defect noted) | `-]` / `-}` / `-)` / `->` (ASCII hyphen + closer) | resume **-r**: the wording stops short or carries a mark; resume may pick up |
+| **`xuxur`** | pop **one** — **editorial** (wording kept as written under an editorial mark: cut off, trail off, or defect noted) | `#]` / `#}` / `#)` / `#>` | resume **-r**: the wording stops short or carries a mark; resume may pick up |
 | **`xuxum`** | pop **all** open spans | optional close-all mark `\|` | soft **-m**: sweep everything lightly |
-| **`xuxur`** + **`xuxum`** | editorial innermost, then pop all | `-\|` | |
+| **`xuxur`** + **`xuxum`** | editorial innermost, then pop all | `#\|` | |
 
 ```text
 xuxul  =  x + u + x + u + l
@@ -552,14 +552,14 @@ xuxur  =  x + u + x + u + r
 xuxum  =  x + u + x + u + m
 ```
 
-Editorial spans **are committed** and enter anaphor history (`d[=]` / `daxur` may resume them). Combined `-\|` is writing-only shorthand for two spoken closes; bare `xuxur` never means pop-all by itself. Illegal: `\|-` / `\|#` (mark must precede close-all).
+Editorial spans **are committed** and enter anaphor history (`d[=]` / `daxur` may resume them). Combined `#\|` is writing-only shorthand for two spoken closes; bare `xuxur` never means pop-all by itself. Illegal: `\|#` (editorial mark must precede close-all).
 
 These forms are not clause joins (`xul` / `xum` = negation — different shape). They are not an empty cite under `/d/` (`daxul` = empty/redacted; `daxur` = that cite; `xuxul` = complete close; `xuxur` = editorial close).
 
 | Writing | Speech | Notes |
 |---------|--------|-------|
-| `d[…-]` | `daxal` … `xuxur` | editorial close |
-| `d[…-\|]` | `daxal` … `xuxur xuxum` | editorial + close-all |
+| `d[…#]` | `daxal` … `xuxur` | editorial close |
+| `d[…#\|]` | `daxal` … `xuxur xuxum` | editorial + close-all |
 
 Prefer EDGE **`a`** + **`xuxur`** for cut-off cites; EDGE **`e`** auto-pop is **complete**, not editorial.
 
@@ -584,13 +584,13 @@ Atomic (EDGE **o**): `…axol` / `…axom` / `…axon` (cite examples); aside at
 | `xuxul` | pop one — complete |
 | `xuxur` | pop one — editorial |
 | `xuxum` | pop all |
-| `xuxur xuxum` | editorial + pop all (writing `-\|`) |
+| `xuxur xuxum` | editorial + pop all (writing `#\|`) |
 
 ### Literal content (fence words / meta glyphs)
 <a id="literal-content"></a>
 <a id="escape"></a>
 
-When a span-marker word or a fence glyph (`[` / `]` / `{` / `}` / `(` / `)` / `<` / `>` / `=` / `|` / `#` / hyphen-before-closer / `^`) must appear **as content** — not ordinary nesting — wrap that token in **atomic opaque**. Writing and speech use the same vehicle. There is no backslash escape.
+When a span-marker word or a fence glyph (`[` / `]` / `{` / `}` / `(` / `)` / `<` / `>` / `=` / `|` / `#` / `^`) must appear **as content** — not ordinary nesting — wrap that token in **atomic opaque**. Writing and speech use the same vehicle. There is no backslash escape.
 
 The outer span’s wording is the opaque **interior** (the wrapper is packaging, not extra cited words).
 
@@ -598,7 +598,6 @@ The outer span’s wording is the opaque **interior** (the wrapper is packaging,
 d[ he typed d<]> then left ]
 d[ d<xuxul> ]
 d[ pipe d<|> here ]
-d[ score d<-> ]
 d[ item d<#> ]
 ```
 
@@ -608,7 +607,7 @@ Speech for a fence **word**:
 daxal duxol xuxul xuxul
 ```
 
-`d[ score d<-> ]` is a **complete** cite whose last content character is a hyphen. `d[ item d<#> ]` is a **complete** cite whose last content character is `#`.
+`d[ item d<#> ]` is a **complete** cite whose last content character is `#` (a bare `#]` would be editorial close). A hyphen before a closer is ordinary content, not a close mark.
 
 Writing opaque `d<…>` closes on the first `>`. If the blob **contains** `>`, do not use `<>`; write the spoken opaque (EDGE **a** + **`xuxul`**):
 
@@ -616,7 +615,7 @@ Writing opaque `d<…>` closes on the first `>`. If the blob **contains** `>`, d
 duxal code > 1 xuxul
 ```
 
-While scanning a span interior, bare `|` / `#` / hyphen are ordinary content unless they form a special-close digraph with the following closer or close-all. Number words still use `#` for ordinals — [numbers.md](numbers.md) — that is not a span closer.
+While scanning a span interior, `#` immediately before a closer or close-all is the editorial mark; `|` is close-all. Number words still use `#` for ordinals — [numbers.md](numbers.md) — that is not a span closer unless the `#` sits immediately before `]` / `}` / `)` / `>` / `|`.
 
 ### Translation practice
 <a id="translation-practice-advanced"></a>
@@ -653,7 +652,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 #### Agelan → English
 
-**1.** `zazawan d[hi-] vezehel.`
+**1.** `zazawan d[hi#] vezehel.`
 
 ::: details Show answer
 *Azawan said “hi…”* (editorial cite — wording trails off)

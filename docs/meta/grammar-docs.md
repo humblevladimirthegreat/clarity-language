@@ -46,7 +46,7 @@ Headings, leads, and asides must make sense to someone who never saw an earlier 
 | “House rules,” “metalanguage / inventory tables,” “parsers accept both” | Maintainer dialect; audience is tooling | Learner writing/speech preference in ordinary words |
 | Titles or leads that name **parser families**, “the parser must…,” “parser cue” | Tooling is not the reader | How a *reader* tells the shapes apart |
 | “Defined core” vs leftover cells; “or reserved” | Advertises unused inventory | Teach the forms that have readings; leave holes off the page |
-| “**…0e0** is not used,” “proper close (reserved)” as a taught row | Unused-slot dump on a public page | Assigned close / number only; holes stay in [unassigned-reserved.md](unassigned-reserved.md) |
+| “**…0e0** is not used” as a taught row | Unused-slot dump on a public page | Assigned close / number only; holes stay in [unassigned-reserved.md](unassigned-reserved.md) |
 
 **Test:** if you delete the phrase and a new learner loses no meaning, delete it. If the only audience for a sentence is a future editor, move it to [unassigned-reserved.md](unassigned-reserved.md), `TODO.md`, a PR, or this meta page — not the grammar body.
 

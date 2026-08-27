@@ -222,7 +222,7 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 13 | `numbers.md` | **exists** | `g+N` count; `g#N` ordinal; digitless **`g+`** (*more than one*) with **-sh** on the noun | No overlays, exponents, ranges, percent, measures (later). **-sh** from plurality is recycle |
 | 13 | `comparatives.md` | **exists** | Rank fence **`e`/`oe`/`ue`** + SHARED scale `/ɡ/`; focus superlative; equative **`ae`** | **Needs:** coordination Beginner rank joins. No measure phrases (Intermediate). No numbers Intermediate |
 | 13 | `causation.md` | **exists** | Sufficient = open inclusive (`…aom` / default pole habit); no cause-arrow word; outcome as host | **Needs:** coordination Beginner inclusive/exclusion + core **`orodo`**. Necessary / **`IF` vs `IFF`** are Intermediate — do not use |
-| 14 | `values.md` | **exists** | Six needs; `/h/` vs `/w/`; topic (bare); **`xa`** met + contact **-l / -m / -r**; **`xo`** prescription force; **`xu`** unmet changeability; **-n** ordinary proper | **Not** motive **`xe`** (Intermediate). Not ability (non-need + `x` vowel). Not COMMENT |
+| 14 | `values.md` | **exists** | Six needs; `/h/` vs `/w/`; topic (bare); **`xa`** met + contact **-l / -m / -r**; **`xo`** prescription force; **`xu`** unmet changeability | **Not** motive **`xe`** (Intermediate). Not ability (non-need + `x` vowel). Not COMMENT |
 | 14 | `ability.md` | **exists** | Host (non-need) + **`xa`/`xe`/`xo`/`xu`**; *can’t* grains vs *won’t* | Not values (need roots). Not role compounds (vowel *left* of `x`) |
 | 14 | `commentary.md` | **exists** | **COMMENT** **`ogugu`** + hold endings (**`hogugum`** default); not a world warrant | Not evidentiality / NOTIONAL (Intermediate). Not **`jom`** (core Intermediate) unless you only recycle **`jol`** from core/questions Beginner |
 | 14 | `roles.md` | **exists** | Role compounds **`a`/`u`/`o` x ROOT`** (agent / patient / reltum); endings on the role word | Not viewpoint laterals (Intermediate). Not values/ability (vowel *right* of `x`). Not join-relations |
@@ -255,7 +255,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 11 | `restrictors.md` | Intermediate | **exists** | Defined core (full); conjuncts; next-clause *when* | |
 | 11 | `restrictors.md` | Advanced | — | no Advanced band | |
 | 12 | `spans.md` | Intermediate | **exists** | Spoken open shape; TYPE; EDGE; endings; nesting; **`^ … ^`** adjunct islands; mention of a handle **form** vs office **-n** | |
-| 12 | `spans.md` | Advanced | **exists** | Close forms (`xuxul` / editorial / proper / close-all) | 4–6 items |
+| 12 | `spans.md` | Advanced | **exists** | Close forms (`xuxul` / editorial / close-all) | 4–6 items |
 | 13 | `numbers.md` | Intermediate | **exists** | PoS on numbers; markers; endings; digitless; overlays `/v/` `/h/` `/j/` `/x/` as on the band; **one of** measure / range / percent / time if you can keep the item to that decision (those topics live in **`numbers-applied.md`**) | **Optional track.** Do not dump the whole Intermediate. 6–8 items |
 | 13 | `numbers-applied.md` | Intermediate | **exists** | Digit-string labels; clock / calendar time; percent vs points; measure phrases; ranges — as taught on the band | Optional track. One topic per item. 4–8 items |
 | 13 | `numbers.md` | Advanced | **exists** | Digitless exponents / hyperbole / zero×exp **as used in the band’s teach examples** — not unassigned cells | Optional track. 4–6 items |

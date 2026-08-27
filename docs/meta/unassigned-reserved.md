@@ -111,7 +111,6 @@ Source: [roles.md](../grammar/roles.md), [x-compounds.md](../grammar/x-compounds
 
 Source: [spans.md](../grammar/spans.md)
 
-- **`xuxun`** proper / titled close (`#]` / `#}` / `#)` / `#>`; combined **`#|`** (proper innermost + close-all)
 - EDGE + **-r** combinations other than EDGE **`u`** (anaphor **-r** always uses EDGE **`u`** in the spoken template)
 
 ## Values — later dimensions
