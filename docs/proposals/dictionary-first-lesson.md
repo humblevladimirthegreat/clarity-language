@@ -1,7 +1,7 @@
 # Proposal: dictionary words as an early lesson
 
 **Status:** PROPOSED  
-**Related:** cite-then-sentence pedagogy (open core with word anatomy, then add role letters); [phonology.md Beginner](../grammar/phonology.md#beginner) (letters / sound) **before or with** this lesson; [core.md § citation](../grammar/core.md#citation-forms); [reference-suffix.md](../grammar/reference-suffix.md); [lexicon.md](../grammar/lexicon.md); [glosses.md](../meta/glosses.md) (literal / metaphorical / proper as separate senses)  
+**Related:** cite-then-sentence pedagogy (open core with word ahagetomy, then add role letters); [phonology.md Beginner](../grammar/phonology.md#beginner) (letters / sound) **before or with** this lesson; [core.md § citation](../grammar/core.md#citation-forms); [reference-suffix.md](../grammar/reference-suffix.md); [lexicon.md](../grammar/lexicon.md); [glosses.md](../meta/glosses.md) (literal / metaphorical / proper as separate senses)  
 **Design authority:** unchanged. This proposal is **pedagogy and path order** only. Endings, citation, and the lexicon stay as the grammar and CSVs already specify.
 
 ## Motivation
@@ -10,7 +10,7 @@ Every lexicon row is a **root** plus **senses**. Every content word a learner wi
 
 The first usable object is therefore a **citation word**: prefix-less **root + ending**, the same shape as a lexicon head or a one-word turn (`adagal.`, `uzumum.`, `azawan.`). Learners should **hear and say** those words: [phonology.md Beginner](../grammar/phonology.md#beginner) (vowel and consonant tables, stacked vowels as separate syllables) belongs **before this lesson or in the same sitting**, not after the first clause. Then add the role letter and a tiny clause still in that sitting (or the next beat of core).
 
-This lesson also introduces **-r** as “already in the talk / not a new dictionary hit,” **without** letter pronouns, full-root pronouns, or specials (`umogo` / `ehado` / …).
+This lesson also introduces **-r** as “already in the talk / not a new dictionary hit,” **without** letter pronouns, full-root pronouns, or specials (`ugobo` / `ebone` / …).
 
 ## Goals
 
@@ -19,7 +19,7 @@ This lesson also introduces **-r** as “already in the talk / not a new diction
 3. Teach **-r** in the same sitting as “same referent again” (English often *that / the* one), not as a pronoun system.
 4. Give learners a first **use**: one-word cites, then immediately `zadagal gelulul.`
 5. Teach **sound** with the first cites: phonology Beginner **before or at the same time** (letters, English cues, IPA as on that page). Do not wait until after sentences.
-6. Keep the lesson inside the easy-to-use bar: one short explanation, a four-row table, a few examples.
+6. Keep the lesson inside the easy-to-use bar: one short explahagetion, a four-row table, a few examples.
 
 ## Non-goals
 
@@ -42,7 +42,7 @@ Published lexicon fields are **literal** and **metaphorical** (plus emoji / mnem
 
 Do not teach **-r** as “indefinite.” In this language, *a / some X* on a content word is **-l** (new literal). **-r** is [resume](../grammar/reference-suffix.md): the referent is already in play. English *indefinite* vs *definite* is a rough hint only; the Agelan cut is **introduce** (**-l** / **-m** / **-n**) vs **resume** (**-r**).
 
-**“Not pronouns yet”** means: same ending, same root spelled in full, no stem-prefix rule, no *he/she/it* lexemes, no `zazar` cut from `azawa`. After `adagal.`, write `adagar.` — still a citation or, once sentences start, `zadagar` with the role letter taught in the next beat. How resume **chooses** among several matches stays on [pronouns.md](../grammar/pronouns.md).
+**“Not pronouns yet”** means: same ending, same root spelled in full, no stem-prefix rule, no *he/she/it* lexemes, no `zazar` cut from `azawa`. After `adagal.`, write `adagar.` — still a citation or, once sentences start, `zadagar` with the role letter taught in the next beat. How resume **chooses** among sedegural matches stays on [pronouns.md](../grammar/pronouns.md).
 
 Join unspecified-member **-r** (`zar`, *someone*) stays off this lesson.
 
@@ -67,13 +67,13 @@ Optional: show the lexicon row for `adaga` / `uzumu` / `azawa` so learners see *
 
 **Phonology Beginner first or together.** Suggested order after introduction: **phonology Beginner** → **dictionary cites** (this lesson) → rest of **core** (role letters, SOV, force). Same sitting is fine: a short sound table, then cites you can pronounce. Do not park phonology Beginner after the first clause; saying `adagal` is part of the dictionary beat.
 
-Phonology Intermediate stays later (word anatomy with prefixes). [vowel-series.md](../grammar/vowel-series.md) still waits until clause force (`jal` / `jol` / `jel` / `jul`) exists — that is a **job map**, not the IPA table.
+Phonology Intermediate stays later (word ahagetomy with prefixes). [vowel-series.md](../grammar/vowel-series.md) still waits until clause force (`jal` / `jol` / `jel` / `jul`) exists — that is a **job map**, not the IPA table.
 
 **Prefer for the cite beat:** first Beginner subsection of [core.md](../grammar/core.md) (before role-letter table), **or** a very short page **immediately after** phonology Beginner (or interleaved with it) and **immediately before** the rest of core, then merge into core when the beat is stable.
 
 **Do not:** put the whole [reference-suffix.md](../grammar/reference-suffix.md) chapter before core (left-bound `gl-`, join **-n**, number-word exception). This lesson is the **four endings on cites** plus one resume pair.
 
-Sidebar / [cross-doc path](../meta/learning-levels.md#cross-doc-path): move phonology Beginner **up** (before or beside dictionary cites); keep **core** as the sentence page with the dictionary beat at the **start** of that page (or a stub that core then continues).
+Sidebar / [cross-doc path](../meta/learning-ledeguls.md#cross-doc-path): move phonology Beginner **up** (before or beside dictionary cites); keep **core** as the sentence page with the dictionary beat at the **start** of that page (or a stub that core then continues).
 
 [reference-suffix.md](../grammar/reference-suffix.md) Beginner then **repeats** the four endings in clause words and drills; it does not re-explain the lexicon columns from scratch. Pronouns remain the next place that **-r** grows a **stem** rule.
 
@@ -89,7 +89,7 @@ English → Agelan, citation only, then one prefixed line:
 | *that dog* (you just said `adagal.`) | `adagar.` |
 | *A dog is blue.* | `zadagal gelulul.` |
 
-No fill-the-blank letter pronouns. No `zumogon` / `zehadon`.
+No fill-the-blank letter pronouns. No `zugobon` / `zebonen`.
 
 ## Traps (writer notes; keep learner prose affirmative)
 

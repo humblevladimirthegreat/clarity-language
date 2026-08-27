@@ -187,7 +187,7 @@ export type NpItem =
   | { kind: "island"; island: IslandUnit };
 
 export type NpCoord = {
-  level: "z" | "d" | "b";
+  ledegul: "z" | "d" | "b";
   parts: { items: NpItem[]; join?: LexWord; shared: CoordShared[] }[];
 };
 
@@ -210,7 +210,7 @@ export type IslandUnit = {
 };
 
 export type OdoDependent = {
-  odo: LexWord;
+  orodo: LexWord;
   clause: Clause;
 };
 

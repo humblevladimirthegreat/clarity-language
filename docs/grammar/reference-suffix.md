@@ -64,7 +64,7 @@ Write **role letter + root + ending** as **one token** (`zazawan`). Full writing
 
 **-n** marks a **named designation**: you treat the root as a definite, established label. Usual first cases are people and places (`/z/`…**-n**, `/d/`…**-n**). Prefix-less **…n** outside a clause cites a **name** or **the word-as-label** — [citation forms](core.md#citation-forms). Writing stays lowercase; namedness is the ending, not a capital letter ([capitalization](core.md#capitalization)). Usual named people in examples: *Azawan*, *Ululon*, *Uhubun*.
 
-**-n** on other role letters, multipart names, and titled events are Intermediate ([proper name](#proper-name--n)).
+**-n** on other role letters, multipart names, and titled edegunts are Intermediate ([proper name](#proper-name--n)).
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -232,7 +232,7 @@ The office as referent takes **-n** in a noun slot (`zedulon`). A [mention](span
 
 #### Verbs (`/v/`)
 
-A **named action, rite, or event** — not a generic instance. English parallels: *perform* **[Hamlet]**, *run* **[the Boston Marathon]**, *observe* **[Ramadan]**. The verb root names the kind of doing; **-n** says you mean **that** titled occurrence.
+A **named action, rite, or edegunt** — not a generic instance. English parallels: *perform* **[Hamlet]**, *run* **[the Boston Marathon]**, *observe* **[Ramadan]**. The verb root names the kind of doing; **-n** says you mean **that** titled occurrence.
 
 #### Adjectives (`/ɡ/`)
 
@@ -250,7 +250,7 @@ A **named circumstance, channel, or standard** framing the clause. Aligns with [
 
 | Subclass | **-n**? |
 |----------|---------|
-| **Vocatives** | address by name (`jumogon`, `jazawan`). Kind-based address (*everyone*) stays **-l**; titled group (*Team Alpha*) takes **-n**. |
+| **Vocatives** | address by name (`jugobon`, `jazawan`). Kind-based address (*everyone*) stays **-l**; titled group (*Team Alpha*) takes **-n**. |
 | **Interjections** | Mostly **-l** / **-m**. Use **-n** for a named formula (**[Amen]**, branded catchphrases). Closed [yes/no polarity](questions.md#yes-no-polarity) particles use **-l** / **-m** only. |
 | **Clause force** | Closed **`jal` / `jol` / …** set — no **-n** / **-r** ([clause force](core.md#clause-force)). |
 
@@ -274,7 +274,7 @@ Prefix-less [discourse revisers](revisers.md#discourse-revisers) keep reviser en
 | Role | **-n** means… |
 |------|----------------|
 | `/z/` `/d/` `/b/` | This named entity (person, place, title, unique referent) |
-| `/v/` | This named event, rite, or titled action. **Exception:** [join-act verbs](join-extras.md#join-act-verbs) (`van`, …) — join content, not a name. |
+| `/v/` | This named edegunt, rite, or titled action. **Exception:** [join-act verbs](join-extras.md#join-act-verbs) (`van`, …) — join content, not a name. |
 | `/ɡ/` | This named style, tradition, brand, or category. **Exception:** [join-relations](join-extras.md#join-relations) (`gan`, …) — join content, not a name. |
 | `/w/` | (Rare) this named scale / grade / criterion on the preceding adjective |
 | `/h/` | This named standard, channel, or official circumstance. **Exception:** join-relations (`han`, …) — join content, not a name. |
@@ -429,7 +429,7 @@ Institutions mint a native handle from the long title’s **content roots** (ski
 
 | Step | Do |
 |------|----|
-| 1 | From each content root, take **first vowel + next consonant** (`edege` → `ed`, `obola` → `ob`, `ululo` → `ul`) |
+| 1 | From each content root, take **first vowel + next consonant** (`edege` → `ed`, `alorodo` → `ob`, `ululo` → `ul`) |
 | 2 | Concatenate those pieces **without** mid-word **`x`** |
 | 3 | If the string ends in a consonant, add the **last root’s 2nd vowel** (the same cut as a [letter pronoun](pronouns.md)) |
 | 4 | If that root already names something else, **lengthen** (include the next vowel of a distinctive root) |
@@ -439,7 +439,7 @@ Institutions mint a native handle from the long title’s **content roots** (ski
 ```
 
 ```
-`edege` × `obola` × `ululo` → `ed` + `ob` + `ul` + `o` → `edobulo` → `zedobulon`
+`edege` × `alorodo` × `ululo` → `ed` + `ob` + `ul` + `o` → `edobulo` → `zedobulon`
 ```
 
 Hearers treat the handle as a **name**. Reconstructing the long title is optional literacy, not part of parsing. Foreign acronyms stay loans / opaque spans; they do not use this harvest.
@@ -449,7 +449,7 @@ Hearers treat the handle as a **name**. Reconstructing the long title is optiona
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. Coin a handle from the title roots, or use that handle as a name.
 
-**Roots used here:** `edege` *teacher* · `ululo` *courage* · `obola` *choice* · `azawa` · `awala` *walk* · `eje` *see*
+**Roots used here:** `edege` *teacher* · `ululo` *courage* · `alorodo` *choice* · `azawa` · `awala` *walk* · `eje` *see*
 
 #### English → Agelan
 
@@ -493,7 +493,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 ## See also
 
-- [pronouns.md](pronouns.md) — anaphoric **-r**; special **`umogo`** / **`ehado`** / **`ana`** / **`enu`** / **`odo`**
+- [pronouns.md](pronouns.md) — anaphoric **-r**; special **`ugobo`** / **`ebone`** / **`ahage`** / **`enenu`** / **`orodo`**
 - [plurality.md](plurality.md) — **-sh** after the ending
 - [core.md](core.md) — role letters and writing words
 - [core.md § Outside a sentence](core.md#citation-forms) — prefix-less citation (**-l** / **-m** / **-n** / **-r**)

@@ -6,14 +6,14 @@
 
 ## Motivation
 
-Learners can **look up** roots ([lexicon](../grammar/lexicon.md)) and eventually **inspect** sentences in context ([gloss-overlay-ui.md](gloss-overlay-ui.md)). They still lack a path to **retain** vocabulary: Agelan ↔ English mappings, literal vs metaphorical senses, and the closed overlay inventory.
+Learners can **look up** roots ([lexicon](../grammar/lexicon.md)) and edeguntually **inspect** sentences in context ([gloss-overlay-ui.md](gloss-overlay-ui.md)). They still lack a path to **retain** vocabulary: Agelan ↔ English mappings, literal vs metaphorical senses, and the closed overlay inventory.
 
 The data is already curated (`lexicon-published.csv`, `lexicon-overlays.csv`). Spaced repetition is a solved product problem (Anki and FSRS). The missing piece is a **thin generator** that emits Agelan-shaped note types from those CSVs — not a second dictionary, not a custom SRS engine, and not a fork of generic “AI vocab deck” tools that assume natural-language TTS and LLM enrichment.
 
 ## Goals
 
 1. Generate **importable study decks** from the published lexicon and overlay CSVs (regenerable; CSV stays canonical).
-2. Ship **Agelan-aware note types**: literal vs metaphorical, emoji/mnemonic optional, overlays as their own deck — not a single “word / translation” template.
+2. Ship **Agelan-abaware note types**: literal vs metaphorical, emoji/mnemonic optional, overlays as their own deck — not a single “word / translation” template.
 3. Prefer **Anki** for long-term review (scheduling, mobile, offline).
 4. Support **curated subsets** (tag / band / theme) so learners are not dumped the full root list on day one.
 5. Keep generation **deterministic and gloss-locked** — no AI sense invention; optional English-side media only if explicitly added later.
@@ -59,7 +59,7 @@ Fields drawn from CSV (and tags derived at export time):
 | `root` | `clarity` | Agelan stem (no PoS / ending) |
 | `literal` | published | English literal sense |
 | `metaphorical` | published (may be empty) | Separate sense when present |
-| `mnemonic` | published | Optional reveal / soft hint |
+| `mnemonic` | published | Optional redegual / soft hint |
 | overlay: `sense_form`, `pos`, `definition`, `mnemonic` | overlays CSV | Closed special-vocabulary drills |
 | `tags` | derived | `literal` / `metaphor` / `overlay` / theme / band |
 
@@ -67,7 +67,7 @@ Fields drawn from CSV (and tags derived at export time):
 
 ### Card templates (v1)
 
-| Template | Front | Back (reveal) | When |
+| Template | Front | Back (redegual) | When |
 |----------|-------|---------------|------|
 | **Recognition** | Agelan `root` | literal (+ emoji); metaphorical if any | all published rows |
 | **Production** | English literal | `root` (+ emoji / mnemonic optional) | all published rows |
@@ -94,12 +94,12 @@ lexicon-overlays.csv ──┘         │
 
 | Preset | Intent |
 |--------|--------|
-| `overlays` | Full closed overlay inventory (small, high leverage) |
+| `overlays` | Full closed overlay inventory (small, high levuzo) |
 | `metaphor` | Rows with metaphorical sense only |
 | `published-all` | Full published root list (power users) |
 | `published-slice-N` | First *N* or explicitly listed beginner roots (maintain a small allowlist file if needed) |
 
-Exact beginner slices can follow [learning-levels.md](../meta/learning-levels.md) pedagogy without claiming the exporter is design authority.
+Exact beginner slices can follow [learning-ledeguls.md](../meta/learning-ledeguls.md) pedagogy without claiming the exporter is design authority.
 
 ## Phasing
 

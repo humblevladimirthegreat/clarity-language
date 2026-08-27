@@ -1,6 +1,6 @@
-# Rainy evening — Pure Agelan dialogue
+# Rainy edeguning — Pure Agelan dialogue
 
-A short three-speaker scene (~30 turns) using **only published Agelan roots** (no foreign `<>` words). Names are nativized phrasal compounds (`ROOT x ROOT` … + **-n**). After a name is introduced, later turns resume it with a letter **-r** pronoun (`zuzur` / `zuber` / `zamer`, …), not the full name — **including for self and addressee** (prefer name pronouns over **`umogo`** / **`ehado`**). Inclusive *we* (interlocutors) uses **`ana`** (`zanan`) when membership is the talk-participants, not a name census.
+A short three-speaker scene (~30 turns) using **only published Agelan roots** (no foreign `<>` words). Names are nativized phrasal compounds (`ROOT x ROOT` … + **-n**). After a name is introduced, later turns resume it with a letter **-r** pronoun (`zuzur` / `zuber` / `zamer`, …), not the full name — **including for self and addressee** (prefer name pronouns over **`ugobo`** / **`ebone`**). Inclusive *we* (interlocutors) uses **`ahage`** (`zahagen`) when membership is the talk-participants, not a name census.
 
 Each turn has: **Agelan** · **gloss** (PoS + English sense; see **[glosses.md](../meta/glosses.md)**) · **strict** free English (packaging spelled out) · **loose** free English (idiomatic paraphrase — [strict vs loose](../meta/glosses.md#strict-vs-loose-free-english)).
 
@@ -12,7 +12,7 @@ Each turn has: **Agelan** · **gloss** (PoS + English sense; see **[glosses.md](
 | B | **Ubenaxuzonun** | `ubena`×`uzone` (*hospitality*×*optimism*) | `zuber` / `duber` / `juber` … |
 | C | **Amedaxogonon** | `ameda`×`ogono` (*fellowship*×*bond*) | `zamer` / `damer` / `jamer` … |
 
-**Features touched:** vocatives; polar stance; `jol` / `jom` / `jel` / `jem` / `jum`; omissible `jal`; name **-r** (self / addressee / third); special **`ana`** (inclusive *we*); generic **`enu`** / next-clause **`odo`**; phrase joins + revisers; restrictors; values; evidentiality; COMMENT; plan/predict; causation; comparatives/equatives; numbered alternatives; ability; role compound; SAME; plurality **-sh**; clause `xan`; linkers; `x#e-` / `x#e`; zero-copula; emotion compose; universality; aside span; join-act verbs.
+**Features touched:** vocatives; polar stance; `jol` / `jom` / `jel` / `jem` / `jum`; omissible `jal`; name **-r** (self / addressee / third); special **`ahage`** (inclusive *we*); generic **`enenu`** / next-clause **`orodo`**; phrase joins + revisers; restrictors; values; evidentiality; COMMENT; plan/predict; causation; comparatives/equatives; numbered alternatives; ability; role compound; SAME; plurality **-sh**; clause `xan`; linkers; `x#e-` / `x#e`; zero-copula; emotion compose; universality; aside span; join-act verbs.
 
 ---
 
@@ -64,15 +64,15 @@ strict: *But I (C) choose coffee.*
 
 loose: *But I'm going with coffee.*
 
-**A:** `xezabel zuber huhunum zanunul.`
+**A:** `xezebal zuber huhunum zanunul.`
 
-gloss: `x-however` · `z-←Ubenaxuzonun` · `h-witnessed` · `z-rain`
+gloss: `x-howedegur` · `z-←Ubenaxuzonun` · `h-witnessed` · `z-rain`
 
-strict: *However — that one (B), per memory — it rains.*
+strict: *Howedegur — that one (B), per memory — it rains.*
 
 loose: *Still — it's raining, as I remember.*
 
-**B:** `jael xamalal zanan howarom vawalal vul.`
+**B:** `jael xamalal zahagen howoram vawalal vul.`
 
 gloss: `j-yes` · `x-therefore` · `z-interlocutors` · `h-plan` · `v-walking` · `v-not`
 
@@ -80,7 +80,7 @@ strict: *Yes — therefore we (A and B and C as interlocutors) plan not to walk.
 
 loose: *Yes — so we're planning not to walk.*
 
-**C:** `jom huhom zar vawalal.`
+**C:** `jom hogugum zar vawalal.`
 
 gloss: `j-question` · `h-COMMENT` · `z-who` · `v-walking`
 
@@ -88,7 +88,7 @@ strict: *I wonder — who walks?*
 
 loose: *I wonder — who walks?*
 
-**A:** `juel zuzur vawalaxel hodoloxem.`
+**A:** `juel zuzur vawalaxel horodoloxem.`
 
 gloss: `j-no` · `z-←Uzuzuxogoven` · `v-walking-unable-temporary` · `h-competence-x-motive`
 
@@ -102,9 +102,9 @@ gloss: `in-other-words` · `z-←Uzuzuxogoven` · `h-ABIL-unable-temporary` · `
 
 strict: *In other words, that one (A) lacks the capacity to walk.*
 
-loose: *In other words, they can't manage walking.*
+loose: *In other words, they can't mahagege walking.*
 
-**C:** `x#e- zubezul g#1. zanan hazedoxur.`
+**C:** `x#e- zuzebul g#1. zahagen haweroxur.`
 
 gloss: `x-starting-with` · `z-problem` · `g-first` · `z-interlocutors` · `h-pleasure-x-unmet`
 
@@ -112,7 +112,7 @@ strict: *Starting with: problem #1. We (interlocutors) — pleasure unmet (tempo
 
 loose: *First problem: we're not enjoying this.*
 
-**A:** `x#2 zegogel g#2. jem juber derade dam dadedal vogojol.`
+**A:** `x#2 zagegol g#2. jem juber derade dam dadedal vogojol.`
 
 gloss: `x-point-2` · `z-solution` · `g-second` · `j-request` · `j-←Ubenaxuzonun` · `d-bread` · `d-and.open` · `d-tea` · `v-cook`
 
@@ -120,7 +120,7 @@ strict: *Point 2: solution #2. Please, you (B), cook bread and tea.*
 
 loose: *Second — a solution: please cook some bread and tea.*
 
-**B:** `jaol howarom xan zuber dabogo von.`
+**B:** `jaol howoram xan zuber dabogo von.`
 
 gloss: `j-uptake` · `h-plan` · `x-and-then` · `z-←Ubenaxuzonun` · `d-book` · `v-choose`
 
@@ -176,7 +176,7 @@ strict: *Soft yes — I (C) am a cook (soft assert).*
 
 loose: *Yeah… I'd say I'm a cook.*
 
-**B:** `herarem zenun dohohum varural.`
+**B:** `hejaram zenenun dohohum varural.`
 
 gloss: `h-hearsay` · `z-someone` · `d-home` · `v-arrival`
 
@@ -192,7 +192,7 @@ strict: *Who?*
 
 loose: *Who?*
 
-**B:** `zenur. el zaxezeber.`
+**B:** `zenenur. el zaxezeber.`
 
 gloss: `z-←someone` · `rather` · `z-agent-x-dialogue`
 
@@ -224,7 +224,7 @@ strict: *(You A and you C,) choose play!*
 
 loose: *You two — pick something playful!*
 
-**C:** `jum vawalal hodoloxom.`
+**C:** `jum vawalal horodoloxom.`
 
 gloss: `j-prohibition` · `v-walking` · `h-competence-x-ought`
 
@@ -232,7 +232,7 @@ strict: *Don’t walk — ought: competence (endorse).*
 
 loose: *Please don’t walk — stay able.*
 
-**A:** `jem zuzur zuber zamer zal dohohum vazudal horodom bodol zanunul.`
+**A:** `jem zuzur zuber zamer zal dohohum vazudal hodom borodol zanunul.`
 
 gloss: `j-request` · `z-←Uzuzuxogoven` · `z-←Ubenaxuzonun` · `z-←Amedaxogonon` · `z-and` · `d-home` · `v-standing` · `h-if` · `b-next-clause` · `z-rain`
 
@@ -240,7 +240,7 @@ strict: *Please, let’s (A and B and C) stay standing at home if it rains.*
 
 loose: *Please, let's stay home if it rains.*
 
-**B:** `x#e zogalol g#3. zuzur zuber zamer zal hazedoxal hojum habobom.`
+**B:** `x#e zolalal g#3. zuzur zuber zamer zal haweroxal hejelom habobom.`
 
 gloss: `x-finally` · `z-goal` · `g-third` · `z-←Uzuzuxogoven` · `z-←Ubenaxuzonun` · `z-←Amedaxogonon` · `z-and` · `h-pleasure-x-met` · `h-flow` · `h-INTERNAL`
 
@@ -248,7 +248,7 @@ strict: *Finally: goal #3. We (A and B and C) — pleasure met, medium activatio
 
 loose: *Finally, a third goal: we're actually enjoying this.*
 
-**C:** `hewonol hanunul hual zenun vawalal zul.`
+**C:** `hewonol hanunul hual zenenun vawalal zul.`
 
 gloss: `h-COMMON` · `h-rain` · `h-always` · `z-someone` · `v-walking` · `z-not`
 
@@ -256,7 +256,7 @@ strict: *Usually, when it rains, a person never walks.*
 
 loose: *Usually, when it rains, nobody walks.*
 
-**A:** `xamalal zuzur vezebel dodol zuber guzumum.`
+**A:** `xamalal zuzur vezebel dorodol zuber guzumum.`
 
 gloss: `x-therefore` · `z-←Uzuzuxogoven` · `v-dialogue` · `d-next-clause` · `z-←Ubenaxuzonun` · `g-happy`
 
@@ -264,7 +264,7 @@ strict: *Therefore I (A) say that that one (B) is happy.*
 
 loose: *So I'm saying you're happy.*
 
-**B:** `jaol zaxezeber gogunol buber.`
+**B:** `jaol zaxezeber gonunul buber.`
 
 gloss: `j-uptake` · `z-agent-x-dialogue` · `g-SAME` · `b-←Ubenaxuzonun`
 
@@ -300,8 +300,8 @@ loose: *Ha — we're home.*
 | `abolo` | play |
 | `azuda` | standing |
 | `ezebe` | speech; *dialogue* (metaphorical) |
-| `enu` | someone (generic person) |
-| `ana` | interlocutors (inclusive *we*) |
-| `odo` | next-clause |
+| `enenu` | someone (generic person) |
+| `ahage` | interlocutors (inclusive *we*) |
+| `orodo` | next-clause |
 | `alu` | laugh; *amusement* (metaphorical) |
-| `uhunu` / `erare` / `uho` | fishing / ear / thought; *witnessed* / *hearsay* / *COMMENT* (overlays) |
+| `uhunu` / `ejara` / `ogugu` | fishing / ear / thought; *witnessed* / *hearsay* / *COMMENT* (overlays) |

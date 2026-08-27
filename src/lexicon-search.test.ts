@@ -92,10 +92,10 @@ describe("searchLexicon", () => {
   });
 
   it("attaches benchmark overlays to published roots", () => {
-    const onugoIndex = rows.findIndex((r) => r.clarity === "onugo");
-    assert.ok(onugoIndex >= 0);
-    const rowOverlays = attached.get(onugoIndex) ?? [];
-    assert.ok(rowOverlays.some((o) => o.senseForm === "onugon" && o.pos === "z"));
+    const ojuIndex = rows.findIndex((r) => r.clarity === "oju");
+    assert.ok(ojuIndex >= 0);
+    const rowOverlays = attached.get(ojuIndex) ?? [];
+    assert.ok(rowOverlays.some((o) => o.senseForm === "ojun" && o.pos === "z"));
   });
 
   it("finds join-act overlay van without a published row", () => {
@@ -131,6 +131,6 @@ describe("searchLexicon", () => {
 
   it("finds overlay rows by definition text", () => {
     const results = searchLexicon(index, rows, "hearsay", { limit: 10, overlays, overlayIndex });
-    assert.ok(results.some((r) => r.overlays.some((o) => o.senseForm === "erarem")));
+    assert.ok(results.some((r) => r.overlays.some((o) => o.senseForm === "ejaram")));
   });
 });

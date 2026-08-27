@@ -56,9 +56,9 @@ Same stacking habit as on **e**: lead with **a** / **o** / **u** onto the atomic
 | **oe** | exclusive ranked | earlier ≻ later; pick / try one |
 | **`i`** | **equal** / tie | **no** order |
 | **`ai`** | all hold **and** equal | **no** order |
-| **`oi`** | pick one among equals | **no** order (menu of equivalents) |
+| **`oi`** | pick one among equals | **no** order (menenu of equivalents) |
 | **`ui`** | **unequal** | **no** order (or “not tied”) |
-| **ue** | rank reversal | later ≻ earlier |
+| **ue** | rank redegursal | later ≻ earlier |
 
 **Not sequence:** discourse *and then* / *therefore* between claims (other `/x/`); preference (**`e`**); scalar comparative (**`e`** + SHARED scale).
 
@@ -79,7 +79,7 @@ Migrate today’s **`…ae…`** tie/draw readings onto **`i`**; stacks get para
 | **`…ail`** | *X as equal peer* / *X among equals* (closed) | co-equal singleton — X in an equal inventory frame |
 | **`…aim`** | *X as an equal, for one* | open co-equal singleton |
 | **`…ain`** | *X among equals* (stock) | named co-equal singleton |
-| **`…oil`** | *has to be X (among equals)* / *X as the equal pick* | closed choicequal — forced pick from equivalent menu |
+| **`…oil`** | *has to be X (among equals)* / *X as the equal pick* | closed choicequal — forced pick from equivalent menenu |
 | **`…oim`** | *say, X (any equal will do)* / *X or skip among equals* | open / empty-allowed twin (**o**-style) |
 | **`…oin`** | *X as equal pick* (stock) | named choicequal singleton |
 | **`…uil`** | *unequal to X* / *not tied with X* | closed counter-equal singleton |
@@ -91,17 +91,17 @@ Migrate today’s **`…ae…`** tie/draw readings onto **`i`**; stacks get para
 | Form | Bare reading | Contrast |
 |------|----------------|----------|
 | **`…il`** | *it’s a draw* / *tie* / *equal ranking* | closed equal-rank outcome |
-| **`…im`** | *probably a tie* / *looks even* | open / speaker-side tie |
+| **`…im`** | *probably a tie* / *looks edegun* | open / speaker-side tie |
 | **`…in`** | *it’s a draw* (stock) | named tie label |
-| **`…ir`** (optional) | *whatever’s equal* / unspecified tied member | positive twin of empty tie |
+| **`…ir`** (optional) | *whatedegur’s equal* / unspecified tied member | positive twin of empty tie |
 | **`…ail`** | *equals* / *an equal set* (nothing listed) | closed empty co-equal inventory — “there is an equal peer-set” frame with no names |
 | **`…aim`** | *equals come to mind* / soft equal-set | open twin |
 | **`…ain`** | *peers* / stock equal-set label | named |
-| **`…oil`** | *no equal options* / *nothing equivalent to pick* | closed empty choicequal menu |
+| **`…oil`** | *no equal options* / *nothing equivalent to pick* | closed empty choicequal menenu |
 | **`…oim`** | *no equal pick from me* / skip OK | open / empty-allowed |
 | **`…oin`** | *no equivalent* (stock) | named |
 | **`…uil`** | *unequal* / *not a tie* | closed bare inequality |
-| **`…uim`** | *unequal from me* / soft “not even” | open |
+| **`…uim`** | *unequal from me* / soft “not edegun” | open |
 | **`…uin`** | *unequal* (stock) | named |
 
 SHARED scale under bare/focus **`i`**-series stays **non-equative** (equative needs 2+ comparees), matching today’s **`ae`** rule — except multi **`ui`** + scale = inequative.

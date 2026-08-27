@@ -15,7 +15,7 @@ Library-first multi-stage parser for CLI checks, fixtures that lock the grammar 
 
 ## Non-goals (still out)
 
-- Multi-document / conversation-level discourse (this pipeline resolves within one `parse(text)` call).
+- Multi-document / conversation-ledegul discourse (this pipeline resolves within one `parse(text)` call).
 - Checking fill-ask *answers* against prior gaps.
 - Treating the parser as a substitute for grammar docs.
 - In-house PEG combinator kits as the foundation.
@@ -25,11 +25,11 @@ Library-first multi-stage parser for CLI checks, fixtures that lock the grammar 
 | Layer | Library | Role |
 |-------|---------|------|
 | Word morph, number stems, writing forms | **[Peggy](https://peggyjs.org/)** | Ordered choice matches the [x-compounds decision order](../grammar/x-compounds.md#decision-order); generates JS + `.d.ts` at build time |
-| Sentence / joins / spans / `odo` / framing | **[Chevrotain](https://chevrotain.io/)** | Grammar as TS; CST → sentence AST; operates on **typed word tokens**, not raw characters |
+| Sentence / joins / spans / `orodo` / framing | **[Chevrotain](https://chevrotain.io/)** | Grammar as TS; CST → sentence AST; operates on **typed word tokens**, not raw characters |
 | Overlays and open roots | CSV → `Map` | [`lexicon-overlays.csv`](../../data/lexicon-overlays.csv), [`lexicon-published.csv`](../../data/lexicon-published.csv) — classification, not parsing |
 | Anaphor / question / SHARED resolve | [`src/parse/resolve.ts`](../../src/parse/resolve.ts) | Discourse over a finished AST |
 
-**Rejected for the foundation:** Parsimmon / Arcsecond / `typescript-parsec`; Ohm as default; Chevrotain alone for character-level morph; a single mega-grammar for all stages.
+**Rejected for the foundation:** Parsimmon / Arcsecond / `typescript-parsec`; Ohm as default; Chevrotain alone for character-ledegul morph; a single mega-grammar for all stages.
 
 ## Pipeline
 
@@ -56,7 +56,7 @@ Agelan text
 │  Chevrotain — SentenceParser         │
 │  /j/ turns, /x/ continue             │
 │  right-close joins, span stacks      │
-│  ^ islands, odo dependents           │
+│  ^ islands, orodo dependents           │
 └──────────────────────────────────────┘
     │  ParseResult.utterances
     ▼
@@ -98,6 +98,13 @@ Semantic actions build a discriminated `MorphWord` only. **No lexicon calls insi
 
 This is where join-act vs soft clause **-n**, mood vs manner, value vs ability, etc. become **readings** without re-parsing spelling.
 
+### Closed forms follow the lexicon
+<a id="closed-forms-follow-lexicon"></a>
+
+Hosted overlays (needs, evidentials, COMMENT, NOTIONAL, plan / DECISION, special pronouns, emotion ACT/LOCUS, clause poles, …) are **the published root** for that host (emoji / English literal) plus the overlay ending. They are not a second, frozen spelling invented beside the lexicon. If conversion reassigns *fishing*, witnessed **`huhunum`** moves with **`uhunu`**.
+
+**Exception:** join-act / join-relation sense-forms (`an` / `on` / `aon` / …) and other **vowel-series** morphology (join fences, restrictor cores) are keyed by **`a` / `o` / `e` / `u`**, not by a lexicon row — those spellings stay.
+
 ### Stage 3 — Chevrotain (typed tokens → sentence AST)
 
 Adapter: [`src/parse/tokens.ts`](../../src/parse/tokens.ts) / [`src/parse/tokenize.ts`](../../src/parse/tokenize.ts) maps `LexWord[]` plus peeled `.` `?` `!` `^` → Chevrotain `IToken[]` (no second character lexer). Grammar: [`src/parse/sentence-parser.ts`](../../src/parse/sentence-parser.ts).
@@ -108,7 +115,7 @@ Owns:
 - Right-close joins at phrase / VP / clause level (illegal left fence)
 - Span open…close nesting; adjunct islands **`^ … ^`**
 - Complex `/ɡ|h/` + `/b/`; floating `/h/` as adjuncts
-- Matrix-final **`odo`** + contiguous dependent
+- Matrix-final **`orodo`** + contiguous dependent
 
 Recovery is off. Illegal left fences, infix joins, and binderless islands throw `SentenceParseError`.
 
@@ -134,7 +141,7 @@ SHARED classification is **structural** (join vowel + whether conjuncts are numb
 | Allowed custom | Not allowed as “the parser” |
 |----------------|-----------------------------|
 | `classify` Map lookups + small PoS/ending branches | Recursive morph / number descent |
-| `LexWord` → `IToken` adapter | Character-level backtracking toolkit |
+| `LexWord` → `IToken` adapter | Character-ledegul backtracking toolkit |
 | Peggy / Chevrotain action bodies that build AST nodes | Parallel hand fence-stack that duplicates Chevrotain rules |
 | `resolve` walks over a finished AST | Re-parsing spelling to bind anaphors |
 | `parse(text)` orchestration + CLI | Silent recovery that invents structure absent from docs |
@@ -170,7 +177,7 @@ Canonical types: [`src/parse/types.ts`](../../src/parse/types.ts).
 
 - **`MorphWord`** — Stage 1: `pos`, `ending`, `plural`, `gl`, discriminated `family` (`content` / `number` / `x` / `spanClose` / `reviser` / `joinMarker` / `writingSpan` / `foreign`).
 - **`LexWord`** — Stage 2: `MorphWord` plus `reading`, optional `overlay` / `rootGloss`.
-- **Sentence AST** — `Utterance` → `BodyClause` → `Clause` (`units`, optional `odo` `dependent`). Units: NP/VP coords, predicate `/ɡ/`, `/h/`, spans, islands, clause coords, revisers.
+- **Sentence AST** — `Utterance` → `BodyClause` → `Clause` (`units`, optional `orodo` `dependent`). Units: NP/VP coords, predicate `/ɡ/`, `/h/`, spans, islands, clause coords, revisers.
 - **`ResolveInfo`** — `anaphors[]`, `asks[]` (`yesNo` / `fillAsk` / `none`), `shared[]` (`SharedRole`).
 
 ## Browser / bundle size
@@ -185,7 +192,7 @@ A production **parse** bundle is **not wired yet** (`build:lexicon-web` only bun
 
 - Peggy word grammar covers orthography, numbers (writing + speech), and [x-compounds](../grammar/x-compounds.md) decision order.
 - `classify` is table-driven from the two lexicon CSVs (plus the need-set for values).
-- Chevrotain sentence grammar covers framing, right-close joins, spans, islands, and **`odo`** dependents.
+- Chevrotain sentence grammar covers framing, right-close joins, spans, islands, and **`orodo`** dependents.
 - Public `parse(text)` returns a typed AST plus `resolve`; fixture tests drawn from `docs/grammar/`.
 - Peggy parser is pre-generated; `peggy` is a devDependency.
 - No ANTLR artifacts.
@@ -205,7 +212,7 @@ A production **parse** bundle is **not wired yet** (`build:lexicon-web` only bun
 | Peggy grammar drifts from docs | Fixtures quoted from grammar pages; fail CI on mismatch |
 | Chevrotain LL(k) vs PEG morph | Morph finished before clause stage; clause tokens are already disambiguated |
 | Overlay vs restrictor vs value same spelling | `classify` tables + PoS/ending; document any residual ambiguity as a language bug |
-| Resolve over-binds (join `-r`, value `-r`) | Explicit skip list; fixtures that `zar` / `hobolaxar` are not content anaphors |
+| Resolve over-binds (join `-r`, value `-r`) | Explicit skip list; fixtures that `zar` / `halorodoxar` are not content anaphors |
 | Accidental Peggy-compiler-in-bundle | Generate at build time; do not import `peggy` from `src/parse/` |
 
 ## Cross-links

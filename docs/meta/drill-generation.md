@@ -8,7 +8,7 @@ Executable editor policy: add end-of-band Eng ↔ Agelan checkpoints to learner 
 - *… for `docs/grammar/questions.md` Intermediate.*
 - *… for core Beginner* (already exists — skip unless asked to replace).
 
-This page owns **path allowlist**, **root bank**, and **generation procedure**. Drill *shape* (spoiler template, house names, item counts) stays in [translation-exercises.md](translation-exercises.md). Banding: [learning-levels.md](learning-levels.md#cross-doc-path). Example prose: [grammar-docs.md](grammar-docs.md). Grammar pages must **not** link here.
+This page owns **path allowlist**, **root bank**, and **generation procedure**. Drill *shape* (spoiler template, house names, item counts) stays in [translation-exercises.md](translation-exercises.md). Banding: [learning-ledeguls.md](learning-ledeguls.md#cross-doc-path). Example prose: [grammar-docs.md](grammar-docs.md). Grammar pages must **not** link here.
 
 ## Execute
 <a id="execute"></a>
@@ -23,7 +23,7 @@ Parse the user’s file/band from their message. Accept `coordination`, `coordin
 |--------|--------|
 | One grammar file, no band | Generate **every missing** checkpoint for that file (table below), **Beginner then Intermediate then Advanced** |
 | One file + one band | Generate **only** that band’s checkpoint |
-| Several files, “all pages”, or no file | **Do not start.** Reply with: process **one file per invocation**; list remaining [generate](#allowlist) files that still lack a checkpoint. Stop |
+| Sedegural files, “all pages”, or no file | **Do not start.** Reply with: process **one file per invocation**; list remaining [generate](#allowlist) files that still lack a checkpoint. Stop |
 | A [skip](#skip) file | Say it is skipped and why. Stop |
 
 Edit **only** `docs/grammar/<file>.md`. Do not edit this policy, other grammar pages, `AGENTS.md`, or other meta unless the user asked to change the policy.
@@ -71,9 +71,9 @@ If you cannot certify a token, drop the item. Do not guess from English.
 - Any form whose [first-taught](#leak-index) checkpoint is **later** than this one
 - Same-slot **sibling** Introduces ([slots](#slots))
 - Optional-track forms (numbers Intermediate / Advanced, numeric-derivation) unless this row is on that track or lists them
-- Dummy *I* / *you* (`zumogon` / `zehadon`) unless this page is teaching those specials
+- Dummy *I* / *you* (`zugobon` / `zebonen`) unless this page is teaching those specials
 - Foreign `PoS<…>ENDING` unless this band is teaching loans / spans
-- Intermediate / Advanced clause-force twins (`jam` / `jom` / `jem` / `jum`), **`gl-`**, sentence linkers, nested **`odo`**, unless recycle includes **core Intermediate**
+- Intermediate / Advanced clause-force twins (`jam` / `jom` / `jem` / `jum`), **`gl-`**, sentence linkers, nested **`orodo`**, unless recycle includes **core Intermediate**
 
 ### 5. Write the checkpoint
 
@@ -114,7 +114,7 @@ Drills depend on **what has been taught**, not on other files’ drill text. Par
 | **Intermediate** at path *N* | All **Beginner** Introduces on the beginner path (productive pages), **plus** **Intermediate** Introduces with a **smaller** path number, except siblings and [optional tracks](#optional) |
 | **Advanced** at path *N* | That Intermediate recycle, **plus** this file’s Intermediate Introduces, **plus** Advanced Introduces with a **smaller** path number, except siblings and optional tracks |
 
-**Needs:** lines on the grammar page always add those forms to Recycle (comparatives Beginner → coordination Beginner rank joins; causation Beginner → coordination Beginner + core **`odo`**).
+**Needs:** lines on the grammar page always add those forms to Recycle (comparatives Beginner → coordination Beginner rank joins; causation Beginner → coordination Beginner + core **`orodo`**).
 
 Honor [teach now; don’t preview later](grammar-docs.md#teach-now-dont-preview-later) inside Beginner: a Beginner checkpoint must not use that file’s Intermediate / Advanced, or a later peer’s Beginner.
 
@@ -188,15 +188,15 @@ Reuse this bank unless the band already taught a different published root. Do no
 | `eje` | *see* |
 | `aju` | *sit* |
 | `adaza` | *haste* |
-| `odo` | *next clause* |
+| `orodo` | *next clause* |
 | `urugu` | *because* (**-m** on `/h/`) |
 
-A page may add roots that **already appear in that band’s worked examples** (e.g. `abele` *apple*, `adeda` *tea*, `ogove` *coffee*, `omonu` *challenging*, `oguno` **SAME**). List them under **Roots used here**.
+A page may add roots that **already appear in that band’s worked examples** (e.g. `abele` *apple*, `adeda` *tea*, `ogove` *coffee*, `omonu` *challenging*, `onunu` **SAME**). List them under **Roots used here**.
 
 ## Allowlist
 <a id="allowlist"></a>
 
-Path numbers match [learning-levels.md](learning-levels.md#cross-doc-path). **Introduces** = what this checkpoint may *test*. Recycle is computed from path + slots, plus **Sibling OK**.
+Path numbers match [learning-ledeguls.md](learning-ledeguls.md#cross-doc-path). **Introduces** = what this checkpoint may *test*. Recycle is computed from path + slots, plus **Sibling OK**.
 
 Status: **exists** = do not overwrite; **generate** = add if missing; **skip** = no checkpoint.
 
@@ -207,40 +207,40 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 |------|------|--------|-------------------------|--------------------|
 | — | `why-agelan.md` | skip | — | orientation |
 | — | `introduction.md` | skip | — | orientation |
-| 3 | `core.md` | **exists** | PoS letters; SVO; `/ɡ/` after noun; `/w/`; `/h/`; complex `/ɡ|h/`+`/b/`; omit **`jal`**; **`jol` / `jel` / `jul`**; vocatives; **`jael`** as confirm tag; `/x/` continue vs `/j/` turn; **`odo` last**; adverbial subordinators (`hurugum` / `horodom` / `heluvem` / `hezabem` / `hegumum` / `hudemum` / `hagagam` / `hohuram` **`bodol`**); house names; **-l** / **-m** / **-n** as used in examples | Do not use **`gl-`**, **`jam`/`jom`/`jem`/`jum`**, nested **`odo`**, `/x/` linkers, letter **-r** mechanism, **-sh**, joins |
+| 3 | `core.md` | **exists** | PoS letters; SVO; `/ɡ/` after noun; `/w/`; `/h/`; complex `/ɡ|h/`+`/b/`; omit **`jal`**; **`jol` / `jel` / `jul`**; vocatives; **`jael`** as confirm tag; `/x/` continue vs `/j/` turn; **`orodo` last**; adverbial subordinators (`hurugum` / `hodom` / `hezazem` / `hezebam` / `hegemum` / `humerem` / `hagagam` / `horanem` **`borodol`**); house names; **-l** / **-m** / **-n** as used in examples | Do not use **`gl-`**, **`jam`/`jom`/`jem`/`jum`**, nested **`orodo`**, `/x/` linkers, letter **-r** mechanism, **-sh**, joins |
 | 4 | `vowel-series.md` | skip | — | mnemonic only |
 | 5 | `phonology.md` | skip | — | not translation |
 | 6 | `reference-suffix.md` | **exists** | Choose **-l** vs **-m** vs **-n** vs **-r** on a content word; named person vs kind; citation prefix-less **…n** | Pointers to **-sh** / **`gl-`** / full **-r** algorithm: do **not** make those the item. One two-sentence resume item is enough if it matches the page example |
-| 7 | `pronouns.md` | **exists** | Letter vs full-root **-r**; specials **`umogo` / `ehado` / `ana` / `enu`** (when the *role* is the point); **`odo`** recap; clusivity **`ana`** vs speaker **-sh** | **-sh** on specials / names for clusivity only. Default people still house names; specials only when testing specials |
-| 7 | `plurality.md` | **exists** | Associative **-sh** (`-lsh` / `-nsh` / `-rsh`); not agreement; person-role **-sh** (address set vs name…**-sh**) | **`ana`** as the *not this* for inclusive *we*. **`umogo`/`ehado`** only on person-role items |
-| 8 | `predication.md` | **exists** | Zero-copula property; classification `z… g…` vs role *noun* `zedegel`; identity **`gogunol` + `/b/`** | No general *to-be* `/v/`. Prefer house names + **SAME**; page-example roots (`odava` / `uzuba`) OK if already on the band |
+| 7 | `pronouns.md` | **exists** | Letter vs full-root **-r**; specials **`ugobo` / `ebone` / `ahage` / `enenu`** (when the *role* is the point); **`orodo`** recap; clusivity **`ahage`** vs speaker **-sh** | **-sh** on specials / names for clusivity only. Default people still house names; specials only when testing specials |
+| 7 | `plurality.md` | **exists** | Associative **-sh** (`-lsh` / `-nsh` / `-rsh`); not agreement; person-role **-sh** (address set vs name…**-sh**) | **`ahage`** as the *not this* for inclusive *we*. **`ugobo`/`ebone`** only on person-role items |
+| 8 | `predication.md` | **exists** | Zero-copula property; classification `z… g…` vs role *noun* `zedegel`; identity **`gonunul` + `/b/`** | No general *to-be* `/v/`. Prefer house names + **SAME**; page-example roots (`odava` / `uzuba`) OK if already on the band |
 | 9 | `coordination.md` | **exists** | Right-close fence; set vs rank vowels; **-l** vs **-m**; list / focus / bare starter forms; negation **`u`**; unspecified **-r** as *something* (not fill-ask) | No revisers, no restrictor `/h/` join readings, no comparatives SHARED scale as the point (that is comparatives) |
-| 10 | `questions.md` | **exists** | **`jol`/`jom`** yes/no vs fill-ask (join **-r**); fill-all; polar **`jael` / `juel` / `jaol`** vs **`jul`** vs join **`zul`** | **`jom`** is taught here as soft *ask* — allowed on this page even though full force twins are core Intermediate. Circumstance *when?* **`har`** is Intermediate on this page — do not use |
+| 10 | `questions.md` | **exists** | **`jol`/`jom`** yes/no vs fill-ask (join **-r**); fill-all; polar **`jael` / `juel` / `jaol`** vs **`jul`** vs join **`zul`** | **`jom`** is taught here as soft *ask* — allowed on this page edegun though full force twins are core Intermediate. Circumstance *when?* **`har`** is Intermediate on this page — do not use |
 | 11 | `revisers.md` | **exists** | Prefix-less **`al`/`am`/`ol`/`ul`** (and **e** / **n** as on the band); in-clause `A REV B`; discourse **`al`** *additionally* before a body | Not a join (`zam` vs `am`). Not **`x#e-` / `x#e`** (numbers discourse) |
 | 11 | `restrictors.md` | **exists** | **`hal`/`ham`/`hual`/`huam`/`har`/`hor`/`hur`** (and `/w/` twins); *only when* vs co-manner *and*; bare *never* / *always* | Not sibling revisers. Not coordination **`zam`** as circumstance |
 | 12 | `spans.md` | **exists** | Writing fences `[ ]` `{ }` `( )` `< >`; **`~`/`@`**; anaphor `d[=]`; PoS = outer slot; **aside** = `h(…)`; interior fragment or same-force clause; when a span is required vs nativized word | `<>` loans **allowed** (this band teaches them). Prefer atomic one-token cites |
 | 13 | `numbers.md` | **exists** | `g+N` count; `g#N` ordinal; digitless **`g+`** (*more than one*) with **-sh** on the noun | No overlays, exponents, ranges, percent, measures (later). **-sh** from plurality is recycle |
 | 13 | `comparatives.md` | **exists** | Rank fence **`e`/`oe`/`ue`** + SHARED scale `/ɡ/`; focus superlative; equative **`ae`** | **Needs:** coordination Beginner rank joins. No measure phrases (Intermediate). No numbers Intermediate |
-| 13 | `causation.md` | **exists** | Sufficient = open inclusive (`…aom` / default pole habit); no cause-arrow word; outcome as host | **Needs:** coordination Beginner inclusive/exclusion + core **`odo`**. Necessary / **`IF` vs `IFF`** are Intermediate — do not use |
+| 13 | `causation.md` | **exists** | Sufficient = open inclusive (`…aom` / default pole habit); no cause-arrow word; outcome as host | **Needs:** coordination Beginner inclusive/exclusion + core **`orodo`**. Necessary / **`IF` vs `IFF`** are Intermediate — do not use |
 | 14 | `values.md` | **exists** | Six needs; `/h/` vs `/w/`; topic (bare); **`xa`** met + contact **-l / -m / -r**; **`xo`** prescription force; **`xu`** unmet changeability; **-n** ordinary proper | **Not** motive **`xe`** (Intermediate). Not ability (non-need + `x` vowel). Not COMMENT |
 | 14 | `ability.md` | **exists** | Host (non-need) + **`xa`/`xe`/`xo`/`xu`**; *can’t* grains vs *won’t* | Not values (need roots). Not role compounds (vowel *left* of `x`) |
-| 14 | `commentary.md` | **exists** | **COMMENT** **`uho`** + hold endings (**`huhom`** default); not a world warrant | Not evidentiality / NOTIONAL (Intermediate). Not **`jom`** (core Intermediate) unless you only recycle **`jol`** from core/questions Beginner |
+| 14 | `commentary.md` | **exists** | **COMMENT** **`ogugu`** + hold endings (**`hogugum`** default); not a world warrant | Not evidentiality / NOTIONAL (Intermediate). Not **`jom`** (core Intermediate) unless you only recycle **`jol`** from core/questions Beginner |
 | 14 | `roles.md` | **exists** | Role compounds **`a`/`u`/`o` x ROOT`** (agent / patient / reltum); endings on the role word | Not viewpoint laterals (Intermediate). Not values/ability (vowel *right* of `x`). Not join-relations |
 | 14 | `x-compounds.md` | skip | — | map only |
-| 14 | `plan-decision.md` | **exists** | **PLAN** **`owaro`** map-resolution endings vs **PREDICT** **`edelo`** (bare) | Not **DECISION** (Intermediate). Not evidentiality stacked on PREDICT (Intermediate). Sibling COMMENT / values / ability unused unless the page contrast needs them |
+| 14 | `plan-decision.md` | **exists** | **PLAN** **`owora`** map-resolution endings vs **PREDICT** **`elego`** (bare) | Not **DECISION** (Intermediate). Not evidentiality stacked on PREDICT (Intermediate). Sibling COMMENT / values / ability unused unless the page contrast needs them |
 
 ### Intermediate then Advanced
 <a id="allowlist-later"></a>
 
-Read **all** Beginner first, then Intermediate in the same file order, then Advanced ([path](learning-levels.md#cross-doc-path)). Pages with **no Beginner** slot start here.
+Read **all** Beginner first, then Intermediate in the same file order, then Advanced ([path](learning-ledeguls.md#cross-doc-path)). Pages with **no Beginner** slot start here.
 
 | Path | File | Band | Status | Introduces (test these) | Notes |
 |------|------|------|--------|-------------------------|-------|
-| 3 | `core.md` | Intermediate | **exists** | **`jam`/`jom`/`jem`/`jum`**; **`gl-`**; adverb topic `/h/`+`/b/`; complex chaining; `/x/` linkers (`xamalal`, `xezabel`, …); nested **`odo`**; number-as-interjection pointer only if the band’s examples already show it | Do not require numbers Intermediate readings |
+| 3 | `core.md` | Intermediate | **exists** | **`jam`/`jom`/`jem`/`jum`**; **`gl-`**; adverb topic `/h/`+`/b/`; complex chaining; `/x/` linkers (`xamalal`, `xezebal`, …); nested **`orodo`**; number-as-interjection pointer only if the band’s examples already show it | Do not require numbers Intermediate readings |
 | 3 | `core.md` | Advanced | skip | weak-pause cues | recognition |
 | 6 | `reference-suffix.md` | Intermediate | **exists** | **-n** on any PoS (titled verb/adjective/adverb); phrasal proper names `ROOTxROOT`+**-n**; office **handles** as first-mention **-n** | Not value/ability/plan ending tables |
 | 6 | `reference-suffix.md` | Advanced | **exists** | **Handle coinage** (VC harvest from title roots) | 4–6 items |
-| 7 | `pronouns.md` | Intermediate | **exists** | English approximations of **-r**; `/x/`…`-r` thread resume vs `/h/` aboutness; **`ana`** vs name join vs name…**-sh** | |
+| 7 | `pronouns.md` | Intermediate | **exists** | English approximations of **-r**; `/x/`…`-r` thread resume vs `/h/` aboutness; **`ahage`** vs name join vs name…**-sh** | |
 | 7 | `pronouns.md` | Advanced | **exists** | Cross-role recast (one or two PoS flips, not the whole grid) | 4–6 items |
 | 7 | `plurality.md` | Intermediate | **exists** | Associate-set resolution; verb collective doing; collective `/ɡ/`…**-sh**; vocative **-sh** | |
 | 7 | `plurality.md` | Advanced | — | no Advanced band | |
@@ -260,22 +260,22 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 13 | `numbers-applied.md` | Intermediate | **exists** | Digit-string labels; clock / calendar time; percent vs points; measure phrases; ranges — as taught on the band | Optional track. One topic per item. 4–8 items |
 | 13 | `numbers.md` | Advanced | **exists** | Digitless exponents / hyperbole / zero×exp **as used in the band’s teach examples** — not unassigned cells | Optional track. 4–6 items |
 | 13 | `comparatives.md` | Intermediate | **exists** | Full comparative arity; distributive **`a`** + SHARED `/ɡ/`; measured differentials | Measured items **Sibling OK:** numbers Intermediate **measure phrases** only |
-| 13 | `comparatives.md` | Advanced | **exists** | Judgment benchmarks (`zonugon`, `zaheman`, **`zumogoxrawon`** Mine vs performance **`zumogon`**, …) | **`umogo`** allowed on Mine/performance items |
-| 13 | `causation.md` | Intermediate | **exists** | Necessary (marked); unique path; clause poles **`orodo` / `eluve` / `urugu`**; **CAUSE** **`erage`** **-m**; preference vs law (values stack if values Beginner is recycle — it is) | |
+| 13 | `comparatives.md` | Advanced | **exists** | Judgment benchmarks (`zojun`, `zahazen`, **`zugoboxrawon`** Mine vs performance **`zugobon`**, …) | **`ugobo`** allowed on Mine/performance items |
+| 13 | `causation.md` | Intermediate | **exists** | Necessary (marked); unique path; clause poles **`odo` / `ezaze` / `urugu`**; **CAUSE** **`uzo`** **-m**; preference vs law (values stack if values Beginner is recycle — it is) | |
 | 13 | `causation.md` | Advanced | **exists** | Factivity; evidential / mechanism / habit stacks as on the band | COMMENT/evidentiality are Beginner/Intermediate recycle by the time Advanced is read |
 | 14 | `values.md` | Intermediate | **exists** | Motive **`xe`** + preference standing; which ending table; attachment sites | |
 | 14 | `values.md` | Advanced | **exists** | Combined matrices; one boundary trap | 4–6 items |
 | 14 | `ability.md` | Intermediate | **exists** | Hostless fallback **`egera`** (**ABIL**) | |
 | 14 | `ability.md` | Advanced | — | no Advanced band | |
-| 14 | `commentary.md` | Intermediate | **exists** | Evidentiality channels; **NOTIONAL** **`edahe`** + hold map; COMMENT vs nearby jobs | |
+| 14 | `commentary.md` | Intermediate | **exists** | Evidentiality channels; **NOTIONAL** **`ahade`** + hold map; COMMENT vs nearby jobs | |
 | 14 | `commentary.md` | Advanced | — | no Advanced band | |
-| 14 | `roles.md` | Intermediate | **exists** | Viewpoint laterals **`DIR x ANCHOR`**; bare arrow roots = compass; gravity **`avuza`/`ovazo`**; name/listener anchor | Prefer `…xazawan` over silent speaker default. **`ehado`/`umogo`** only when testing role-anchor. Include at least one bare cardinal and one gravity item |
+| 14 | `roles.md` | Intermediate | **exists** | Viewpoint laterals **`DIR x ANCHOR`**; bare arrow roots = compass; gravity **`avuza`/`ovazo`**; name/listener anchor | Prefer `…xazawan` over silent speaker default. **`ebone`/`ugobo`** only when testing role-anchor. Include at least one bare cardinal and one gravity item |
 | 14 | `roles.md` | Advanced | — | no Advanced band | |
 | 15 | `join-extras.md` | Intermediate | **exists** | Join-act verbs `van` / `von` / …; join-relations `gan` / `han` / … (unary `/b/`) | No Beginner slot. Recycle = all Beginner + earlier Intermediate (path before 15), except optional numbers unless needed |
-| 15 | `plan-decision.md` | Intermediate | **exists** | **DECISION** **`ehege`** changeability; evidentiality stacked on **PREDICT**; PLAN + DECISION stack | Recycle Beginner PLAN / PREDICT. Stack evidentiality on PREDICT only as the band shows. Join-act **`von`** only if already on this band |
+| 15 | `plan-decision.md` | Intermediate | **exists** | **DECISION** **`egege`** changeability; evidentiality stacked on **PREDICT**; PLAN + DECISION stack | Recycle Beginner PLAN / PREDICT. Stack evidentiality on PREDICT only as the band shows. Join-act **`von`** only if already on this band |
 | 15 | `plan-decision.md` | Advanced | — | no Advanced band | |
-| 15 | `special-vocabulary.md` | Intermediate | **exists** | Emotion compose (ACT + LOCUS + a value); numbered alternatives `ubezu`/`egoge`/`ogalo` + `g#N` | Overlay *inventory* is not a drill. **Needs** values Beginner (recycle). Not universality (Advanced) |
-| 15 | `special-vocabulary.md` | Advanced | **exists** | Universality warrant (`ewono` / `ululu` / …) as on the band | 4–6 items |
+| 15 | `special-vocabulary.md` | Intermediate | **exists** | Emotion compose (ACT + LOCUS + a value); numbered alternatives `uzebu`/`agego`/`olala` + `g#N` | Overlay *inventory* is not a drill. **Needs** values Beginner (recycle). Not universality (Advanced) |
+| 15 | `special-vocabulary.md` | Advanced | **exists** | Universality warrant (`ewono` / `abulu` / …) as on the band | 4–6 items |
 | 16 | `numeric-derivation.md` | Advanced | **exists** | `ROOT x NUM` as the band teaches (essence / `+N` / `#N` / quasi / …) — only assigned readings | **Optional track.** No unassigned cells from [unassigned-reserved.md](unassigned-reserved.md). 4–6 items |
 
 ## Leak index
@@ -285,12 +285,12 @@ First-taught checkpoint for forms agents leak most often. If this checkpoint’s
 
 | Form | First taught |
 |------|----------------|
-| House names, SVO, omit **`jal`**, **`jol`/`jel`/`jul`**, **`odo`**, *because* **`hurugum bodol`** | `core.md` Beginner |
-| **`gl-`**, **`jam`/`jom`/`jem`/`jum`** as a *force* system, `/x/` linkers, nested **`odo`** | `core.md` Intermediate |
+| House names, SVO, omit **`jal`**, **`jol`/`jel`/`jul`**, **`orodo`**, *because* **`hurugum borodol`** | `core.md` Beginner |
+| **`gl-`**, **`jam`/`jom`/`jem`/`jum`** as a *force* system, `/x/` linkers, nested **`orodo`** | `core.md` Intermediate |
 | **-l** / **-m** / **-n** / **-r** as a *choice* | `reference-suffix.md` Beginner (core already *uses* them) |
-| Letter/full-root **-r** algorithm; **`umogo`/`ehado`/`ana`/`enu`** | `pronouns.md` Beginner |
+| Letter/full-root **-r** algorithm; **`ugobo`/`ebone`/`ahage`/`enenu`** | `pronouns.md` Beginner |
 | Associative **-sh** | `plurality.md` Beginner |
-| **SAME** `gogunol` | `predication.md` Beginner |
+| **SAME** `gonunul` | `predication.md` Beginner |
 | Phrase/VP/clause joins, **`zal`/`zam`/`zel`**, negation **`u`** | `coordination.md` Beginner |
 | Fill-ask join **-r** (`zar` / `var` / `xar`); polar **`juel`/`jaol`** as the *system* | `questions.md` Beginner |
 | Revisers **`al`/`ol`/`ul`** | `revisers.md` Beginner |
@@ -299,10 +299,10 @@ First-taught checkpoint for forms agents leak most often. If this checkpoint’s
 | `g+N` / `g#N` / `g+` | `numbers.md` Beginner |
 | SHARED scale comparatives | `comparatives.md` Beginner |
 | Sufficient open-inclusive causation | `causation.md` Beginner |
-| **CAUSE** **`erage`** / **`heragem`** | `causation.md` Intermediate |
+| **CAUSE** **`uzo`** / **`huzom`** | `causation.md` Intermediate |
 | Value **`xa`/`xo`/`xu`** on **need** roots | `values.md` Beginner |
 | Ability **`xa`/`xe`/`xo`/`xu`** on **non-need** hosts | `ability.md` Beginner |
-| **COMMENT** **`huhom`** | `commentary.md` Beginner |
+| **COMMENT** **`hogugum`** | `commentary.md` Beginner |
 | Role **`ax`/`ux`/`ox` ROOT** | `roles.md` Beginner |
 | Motive **`xe`** (values) | `values.md` Intermediate |
 | Evidentiality / NOTIONAL | `commentary.md` Intermediate |
@@ -312,7 +312,7 @@ First-taught checkpoint for forms agents leak most often. If this checkpoint’s
 | **PLAN** / **PREDICT** | `plan-decision.md` Beginner |
 | **DECISION** | `plan-decision.md` Intermediate |
 | Emotion compose; numbered alternatives | `special-vocabulary.md` Intermediate |
-| Judgment **Mine** **`zumogoxrawon`** | `comparatives.md` Advanced |
+| Judgment **Mine** **`zugoboxrawon`** | `comparatives.md` Advanced |
 | `ROOT x NUM` derivation | `numeric-derivation.md` Advanced |
 | Universality overlays | `special-vocabulary.md` Advanced |
 
@@ -328,7 +328,7 @@ For each spoiler token family:
 1. Find it in **Introduces**, **Recycle**, [root bank](#root-bank), or this band’s examples. Else **fail**.
 2. Check [leak index](#leak-index): first-taught later than this checkpoint → **fail**.
 3. Same-slot sibling novelty not in **Sibling OK** → **fail**.
-4. English *I* / *you* as dummy people → **fail** (unless this band teaches **`umogo`/`ehado`**).
+4. English *I* / *you* as dummy people → **fail** (unless this band teaches **`ugobo`/`ebone`**).
 5. Most items test **this** band’s decision, not a prior quiz → else rewrite.
 6. Morph-gloss wall inside the spoiler → **fail**.
 7. Unassigned cells from [unassigned-reserved.md](unassigned-reserved.md) → **fail**.
@@ -338,7 +338,7 @@ For each spoiler token family:
 | Page | Owns |
 |------|------|
 | [translation-exercises.md](translation-exercises.md) | Placement, principles, spoiler template |
-| [learning-levels.md](learning-levels.md) | Bands and cross-doc path |
+| [learning-ledeguls.md](learning-ledeguls.md) | Bands and cross-doc path |
 | [grammar-docs.md](grammar-docs.md) | Learner prose, house cast |
 | [glosses.md](glosses.md) | Morph / free English (teaching lines, not spoilers) |
 | [unassigned-reserved.md](unassigned-reserved.md) | Unused-slot inventory — do not drill |

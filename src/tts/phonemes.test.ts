@@ -31,10 +31,10 @@ describe("toPhonemeWord", () => {
     assert.equal(word.syllables.at(-1)?.espeak.endsWith("S"), true);
   });
 
-  it("treats mid-word x as /ʒ/ (zumogoxrawon)", () => {
-    const word = toPhonemeWord("zumogoxrawon");
+  it("treats mid-word x as /ʒ/ (zugoboxrawon)", () => {
+    const word = toPhonemeWord("zugoboxrawon");
     assert.ok(word.ipa.includes("ʒ"));
-    assert.equal(word.ipa, "zʌ.mo.ɡo.ʒɹɑ.won");
+    assert.equal(word.ipa, "zʌ.ɡo.bo.ʒɹɑ.won");
   });
 
   it("keeps gl- as an onset cluster (glelulul)", () => {

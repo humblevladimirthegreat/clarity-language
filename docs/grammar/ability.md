@@ -21,7 +21,7 @@ PoS + HOST + x + {a|e|o|u} + {-l|-m|-n|-r}
 
 | Piece | Role |
 |-------|------|
-| **PoS** | Prefer the host’s usual role — `/v/` (event), `/ɡ/` (property), etc. |
+| **PoS** | Prefer the host’s usual role — `/v/` (edegunt), `/ɡ/` (property), etc. |
 | **HOST** | Any **non-need** content root (*sing*, *lift*, *lead*, …) |
 | **Stance vowel** | [Ability stance](#ability-stance) — **`a`** can; **`e` / `o` / `u`** can’t grains |
 | **Ending** | Ordinary [reference-suffix](reference-suffix.md) on the **host** sense |
@@ -36,7 +36,7 @@ PoS + HOST + x + {a|e|o|u} + {-l|-m|-n|-r}
 | **`xa`** | **Capable** | can (solo / underspecified scaffold) |
 | **`xe`** | **Temporary can’t** | can’t **right now** (usually able) |
 | **`xo`** | **Modifiable can’t** | can’t, and that may change (also soft default if grain unknown) |
-| **`xu`** | **Irreversible can’t** | can’t — fixed / impossible as far as you can tell |
+| **`xu`** | **Irredegursible can’t** | can’t — fixed / impossible as far as you can tell |
 
 | Form | Reading |
 |------|---------|
@@ -101,7 +101,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zululon vuwuruxal.`
 :::
 
-**6.** *Azawan sings.* (ordinary event — not a can / can’t tag)
+**6.** *Azawan sings.* (ordinary edegunt — not a can / can’t tag)
 
 ::: details Show answer
 `zazawan vuzunel.`
@@ -183,7 +183,7 @@ When there is **no single host root** (complex VP, hostless *I can’t*, or abil
 
 | Prefix | Scope |
 |--------|--------|
-| `/h/` | clause-level capability claim (floats like other `/h/`) |
+| `/h/` | clause-ledegul capability claim (floats like other `/h/`) |
 | `/w/` | capability framed on the preceding `/ɡ/` |
 
 **Mnemonic:** a bowl holds **what it can** — hostless ability names that capacity without naming one activity root. Ordinary content still available (`zegeral` *cereal* / *a capacity*). Prefer **host + stance** whenever the activity fits one root ([Beginner ability](#ability)).
@@ -197,7 +197,7 @@ Bare `hegeral` / `wegeral` = ability **topic** only (ordinary [reference-suffix]
 | **`xa`** | **Capable** | can |
 | **`xe`** | **Temporary can’t** | can’t right now |
 | **`xo`** | **Modifiable can’t** | can’t; may change (speaker change unspecified) — soft default |
-| **`xu`** | **Irreversible can’t** | can’t; fixed as far as you can tell |
+| **`xu`** | **Irredegursible can’t** | can’t; fixed as far as you can tell |
 
 Endings on **`egera` + stance** are ordinary [reference-suffix](reference-suffix.md) (same as host-attached ability). Overlay mood reading usually prefers **-m** when the published sense is figurative; **-l** when you mean capacity in a literal *bowl / cereal* frame.
 
@@ -215,18 +215,18 @@ gloss: `h-ABIL-unable-temporary`
 |-------|--------|
 | Can’t / can **this** activity or property | **host + `xa` / `xe` / `xo` / `xu`** ([Beginner](#ability)) |
 | Clause-wide / hostless capability | **`hegeraxa…`** / **`hegeraxe…`** / **`hegeraxo…`** / **`hegeraxu…`** (same under `/w/`) |
-| Need unmet + changeability | need **`xu…`** — [values](values.md) (`hodoloxul` ≠ “can’t competence”) |
+| Need unmet + changeability | need **`xu…`** — [values](values.md) (`horodoloxul` ≠ “can’t competence”) |
 | When / never / sometime the host applies | [restrictors](restrictors.md) (`hal`, `har`, …) |
 
-Stack when useful: e.g. can’t-sing plus unmet competence (`vuzunexol` + `hodoloxum`). Bare **`hal`** (*never*) is applicability, not tagged incapability. Need-root **`xu`** stays unmet need, not ability. Unspecified need **`egege`** 🥚 (*potential*) is not **`ABIL`**.
+Stack when useful: e.g. can’t-sing plus unmet competence (`vuzunexol` + `horodoloxum`). Bare **`hal`** (*never*) is applicability, not tagged incapability. Need-root **`xu`** stays unmet need, not ability. Unspecified need **`ega`** 🥚 (*potential*) is not **`ABIL`**.
 
 | Agelan (schematic) | Reading |
 |---------------------|---------|
 | `vuzunexel` | can’t sing **right now** |
 | `vuzunexol` | can’t sing yet / may become able (or unknown) |
 | `vuzunexul` | can’t sing (fixed / impossible as far as you can tell) |
-| `golodoxal` | can lead (literal) |
-| `vuzunexol hodoloxum` | can’t sing (modifiable) **and** unmet competence |
+| `golorodoxal` | can lead (literal) |
+| `vuzunexol horodoloxum` | can’t sing (modifiable) **and** unmet competence |
 | `… hegeraxel` | can’t **right now** (no single host / clause-wide) |
 | `hegeral` | ability (**topic** only) |
 

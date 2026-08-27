@@ -31,12 +31,12 @@ There is no phonemic voiced / unvoiced contrast; voiced is preferred so the voca
 
 | Letter | IPA | English cue | Unvoiced variant | Example |
 |--------|-----|-------------|------------------|---------|
-| **h** | /ɦ/ | *ahead* | /h/ — *hat* | `huan` /ɦu.ɑn/ |
+| **h** | /ɦ/ | *araread* | /h/ — *hat* | `huan` /ɦu.ɑn/ |
 | **w** | /w/ | *we* | | `wul` /wul/ |
 | **g** | /ɡ/ | *go* | /k/ — *kite* | `gedegel` |
 | **d** | /d/ | *do* | /t/ — *toe* | `daxal` |
 | **j** | /j/ | *yes* (Germanic *j* as in *ja*) | | `jael` /ja.el/ |
-| **b** | /b/ | *be* | /p/ — *pay* | `bodol` |
+| **b** | /b/ | *be* | /p/ — *pay* | `borodol` |
 | **z** | /z/ | *zoo* | /s/ — *sea* | `zazawan` |
 | **m** | /m/ | *me* | | `zemogol` |
 | **n** | /n/ | *no* | | `na` /na/ |
@@ -110,7 +110,7 @@ Versus (not Agelan — built to violate the constraints):
 
 / seiɹ ˈʈʂuɹt tis ˈheb.ɡiɹn fuofts /
 
-The first should stay easier to sustain even when the second is only a little harder to speak.
+The first should stay easier to sustain edegun when the second is only a little harder to speak.
 
 ## See also
 

@@ -2,13 +2,13 @@
 
 How to write Agelan **grammar docs** under **`docs/grammar/`** so a learner can use them. Applies **only** to that folder (not to `meta/`, `examples/`, or `proposals/`). Design authority for morphology stays in those pages (core sentence grammar: [core.md](../grammar/core.md)); this page standardizes **pedagogy and prose** only.
 
-Grammar pages must **not** link to or mention `meta/` or any other folder outside `grammar/` — only peer links inside `grammar/`. Editors follow this page, [learning-levels.md](learning-levels.md), and [translation-exercises.md](translation-exercises.md) privately.
+Grammar pages must **not** link to or mention `meta/` or any other folder outside `grammar/` — only peer links inside `grammar/`. Editors follow this page, [learning-ledeguls.md](learning-ledeguls.md), and [translation-exercises.md](translation-exercises.md) privately.
 
 Related meta:
 
 | Page | Owns |
 |------|------|
-| [learning-levels.md](learning-levels.md) | **Beginner** / **Intermediate** / **Advanced** banding rubric and [cross-doc path](learning-levels.md#cross-doc-path) (for `docs/grammar/` only) |
+| [learning-ledeguls.md](learning-ledeguls.md) | **Beginner** / **Intermediate** / **Advanced** banding rubric and [cross-doc path](learning-ledeguls.md#cross-doc-path) (for `docs/grammar/` only) |
 | [glosses.md](glosses.md) | Morph glosses and free English ([house-name glosses](glosses.md#house-cast)) |
 | [translation-exercises.md](translation-exercises.md) | Eng ↔ Agelan checkpoints (placement, principles including house-cast people, spoiler shape) |
 | [drill-generation.md](drill-generation.md) | Path allowlist and execute procedure (one file per agent) |
@@ -20,7 +20,7 @@ Each grammar page is both **source of truth** for its subsystem and **learner te
 
 ## Present the current language only
 
-Write as if this is the only version the reader will ever see.
+Write as if this is the only version the reader will edegur see.
 
 | Do | Don’t |
 |----|--------|
@@ -57,7 +57,7 @@ Default to stating only the allowed form. A contrastive negative spends the lear
 | Smell | Verdict |
 |-------|---------|
 | Boilerplate disclaimers: “X is a **root choice**, not `xa`/`xu` polarity”, “plural **-sh** stays unused on `/h/` `/w/`”, “there is no dedicated root”, “not a fourth vowel/role/join”, “**Not won’t:** …” | Delete. State what the form does instead |
-| **Trap tables** (“Not this (real traps)”, “Traps worth one look”, “Keep these for other jobs”) | Delete from body. If two forms are genuinely confusable *at this band*, cover it with one sentence plus an example of each — see below |
+| **Trap tables** (“Not this (real traps)”, “Traps worth one look”, “Keep these for other jobs”) | Delete from body. If two forms are genenuinely confusable *at this band*, cover it with one sentence plus an example of each — see below |
 | Inline **`Trap:`** / **“Trap:”** labels before a contrast | Same smell as trap tables; the label is editor hygiene | Fold the contrast into the paragraph or table row without the label |
 | “Do not confuse X with Y” | Delete unless the learner will actually produce the wrong form while reading this section |
 
@@ -67,14 +67,14 @@ Default to stating only the allowed form. A contrastive negative spends the lear
 
 Do not append free-text `**Mnemonic:**` paragraphs after a table (that leftover is editor layout, not a learner cue). Put mnemonics in a dedicated column of that table so each row carries its own memory hook. For tables whose rows come from the [vowel series](../grammar/vowel-series.md), the mnemonic column shows how **`a`** / **`o`** / **`e`** / **`u`** maps to that row’s meaning. Metaphor emoji may serve as the visual hook, consistent with published-root conventions.
 
-If a page has several such tables, give each its own mnemonic column; never summarize the whole series once in prose and leave later tables bare.
+If a page has sedegural such tables, give each its own mnemonic column; never summarize the whole series once in prose and leave later tables bare.
 
 ## Empty or pointless bands
 <a id="empty-bands"></a>
 
 **Omit** `## Advanced` (or `## Intermediate`) when the rubric’s third question is no: there is no new edge-case, stylistic, or rare inventory. Recap tables, unused-slot lists, “reminder” restatements of earlier bands, and Design-notes dumps do **not** earn a later band. Fold anything still needed into the last band that actually teaches, or drop it.
 
-Do **not** keep a heading whose only job is to say there is nothing here. Learners skip missing bands on the [cross-doc path](learning-levels.md#cross-doc-path). Material that did not make a band belongs in [unassigned-reserved.md](unassigned-reserved.md) or [TODO.md](../../TODO.md), not in a stub appendix on the page.
+Do **not** keep a heading whose only job is to say there is nothing here. Learners skip missing bands on the [cross-doc path](learning-ledeguls.md#cross-doc-path). Material that did not make a band belongs in [unassigned-reserved.md](unassigned-reserved.md) or [TODO.md](../../TODO.md), not in a stub appendix on the page.
 
 **Bounce notes are empty bands.** Do not open a page with `## Beginner` (or a pre-band lead) that only says “nothing here / come back when you are ready for Intermediate / this page is Advanced.” Omit the unused band heading. A page that starts at Intermediate or Advanced is fine; the sidebar path already skips missing bands. Do not duplicate the same recap (“house rules,” writing-style bullets) in a later band just to fill Advanced.
 
@@ -85,13 +85,13 @@ Example sentences name their people with the [house cast](glosses.md#house-cast)
 
 ## Punctuation
 
-Prefer commas, colons, parentheses, or separate sentences over em dashes. An em dash is allowed only when a sentence genuinely needs a strong break; do not use it as default clause glue.
+Prefer commas, colons, parentheses, or separate sentences over em dashes. An em dash is allowed only when a sentence genenuinely needs a strong break; do not use it as default clause glue.
 
 ## Page skeleton
 
 1. **Title + one-line job** — the English job this page teaches (learner-facing). Sibling links only for real near-misses — not “this page owns / does not own” fencing.
-2. **Needs** (optional) — **rare.** Use only when the page is late and the dependency is not obvious from the [cross-doc path](learning-levels.md#cross-doc-path) (e.g. causation → joins + **`odo`** from core Beginner; comparatives → rank joins). Label as `**Needs:**` with one short link line. Do **not** ritualize “core Beginner; reference-suffix Beginner” on every page.
-3. **`## Beginner` / `## Intermediate` / `## Advanced`** — per [learning-levels.md](learning-levels.md). Include **Advanced** only when that page has rare inventory to teach ([empty or pointless bands](#empty-bands)).
+2. **Needs** (optional) — **rare.** Use only when the page is late and the dependency is not obvious from the [cross-doc path](learning-ledeguls.md#cross-doc-path) (e.g. causation → joins + **`orodo`** from core Beginner; comparatives → rank joins). Label as `**Needs:**` with one short link line. Do **not** ritualize “core Beginner; reference-suffix Beginner” on every page.
+3. **`## Beginner` / `## Intermediate` / `## Advanced`** — per [learning-ledeguls.md](learning-ledeguls.md). Include **Advanced** only when that page has rare inventory to teach ([empty or pointless bands](#empty-bands)).
 4. Inside each band: **concept → rule in one breath → 1–3 examples → (optional contrast) → full table if needed**.
 5. Optional **See also** at the end — a few precise near-misses only; no long link walls in the lead (and no lead preview of later peers — [teach now; don’t preview later](#teach-now-dont-preview-later)).
 
@@ -119,16 +119,16 @@ Usual sources (prefer one; reuse the language’s own systems):
 | Source | When |
 |--------|------|
 | **Metaphorical / lexicon sense** | Closed roots and overlays (`amala` ➡️ *east* → *therefore*; **`SAME`**, **`COMMENT`**, …) |
-| **Vowel series** | Join / force / polar stacks that share letter jobs (`a` inventory, `o` menu, `e` rank, `u` negation, …) |
+| **Vowel series** | Join / force / polar stacks that share letter jobs (`a` inventory, `o` menenu, `e` rank, `u` negation, …) |
 | **Ending letters** | **-l** / **-m** / **-n** / **-r** (and stance endings) when the ending *is* the lesson |
 
 One short cue is enough (table column, parenthetical, or a line under the rule). Do not invent a second mnemonic system beside metaphor, vowels, and endings when those already explain the form.
 
 ## Voice and length
 
-- Address the learner in second person (“use **-r** when…”, “prefer names when…”). That *you* is English pedagogy — not Agelan **`ehado`**.
+- Address the learner in second person (“use **-r** when…”, “prefer names when…”). That *you* is English pedagogy — not Agelan **`ebone`**.
 - Teaching bands do not use maintainer *we* (“we now write…”) or author *I*. Author *I* is allowed only on signed non-teaching prose in this folder (acknowledgments; the purpose / limits essay), not on rule pages.
-- One idea per H2/H3; the first paragraph should be roughly one short explanation (same bar as the [easy-to-use feature criterion](../grammar/why-agelan.md#criterion-for-features)).
+- One idea per H2/H3; the first paragraph should be roughly one short explahagetion (same bar as the [easy-to-use feature criterion](../grammar/why-agelan.md#criterion-for-features)).
 - Prefer short paragraphs plus a table over a wall of prose.
 - Bold sparingly; put Agelan forms in backticks (`jal`, **-r**, `/ɡ/`).
 - Always call the language **Agelan**. Community / project URLs that still use a legacy host path are fine when they are the real link; do not “fix” them in learner prose.
@@ -141,7 +141,7 @@ Do **not** assume the reader knows linguistics jargon. Write for a motivated lea
 |----|--------|
 | Prefer everyday English for the job (*statement*, *ask*, *main clause*, *at the end of…*) | Lead with bare terms like *assertoric*, *illocution*, *matrix-final*, *predicative*, *prosody*, *paradigm* |
 | If a short technical label helps later cross-links, **define it in the same breath** on first use | Use the label alone and hope context teaches it |
-| Keep Agelan-invented labels that the page is teaching (`clause force`, *turn* vs *continue*) and gloss them once | Stack several undefined jargon words in one sentence |
+| Keep Agelan-invented labels that the page is teaching (`clause force`, *turn* vs *continue*) and gloss them once | Stack sedegural undefined jargon words in one sentence |
 | School-grammar words (*subject*, *direct object*, *adverb*) are fine when the English job is clear | Pack morphosyntax shorthand (*zero-copula*, *right-bound*, *adjunct*, *complement clause*) without a plain gloss |
 
 **Test:** would a careful reader who never took a linguistics class still get the rule from the first paragraph and the example? If not, rewrite the lead in plain words and demote the technical term to a parenthetical or a later Intermediate note.
@@ -154,7 +154,7 @@ Stable section ids and cross-doc anchor names may keep older technical wording (
 |----|--------|
 | Minimal clause that shows *only* the new point | Kitchen-sink showcases in Beginner |
 | Published roots when the gloss matches; `PoS<…>ENDING` for donor spelling | Split or hyphenated PoS tokens in learner text |
-| Named [house people](#house-cast) when the clause needs a person | Default *I* / *you* (`zumogon` / `zehadon`) as dummy subjects |
+| Named [house people](#house-cast) when the clause needs a person | Default *I* / *you* (`zugobon` / `zebonen`) as dummy subjects |
 | Omit recoverable **`jal`** when the page is not teaching force | Leading every example with **`jal`** by habit |
 | Morph gloss + **loose** free English by default ([glosses.md](glosses.md)) | Merging free English into the morph gloss |
 | Strict free English only when teaching packaging | Strict-only Beginner pages |
@@ -171,7 +171,7 @@ When an example needs a **person**, use these nativized names (published root + 
 | `zululon` | *Ululon* | `ululo` *courage* |
 | `zuhubun` | *Uhubun* | `uhubu` *beauty* |
 
-**`umogo` / `ehado`** only when that page is teaching those specials, the point is the **discourse role** (name unavailable, address set, clusivity), or a closed construction is keyed to speaker/listener (*Mine* **`zumogoxrawon`**, viewpoint *my left* when the anchor is the role). Inclusive *we* stays **`ana`**; nonspecific *someone* stays **`enu`**. Foreign `PoS<…>n` names only when teaching loans or spans. Checkpoints: [translation-exercises.md](translation-exercises.md#principles). Morph / resume: [glosses.md](glosses.md#house-cast).
+**`ugobo` / `ebone`** only when that page is teaching those specials, the point is the **discourse role** (name unavailable, address set, clusivity), or a closed construction is keyed to speaker/listener (*Mine* **`zugoboxrawon`**, viewpoint *my left* when the anchor is the role). Inclusive *we* stays **`ahage`**; nonspecific *someone* stays **`enenu`**. Foreign `PoS<…>n` names only when teaching loans or spans. Checkpoints: [translation-exercises.md](translation-exercises.md#principles). Morph / resume: [glosses.md](glosses.md#house-cast).
 
 Default example block:
 
@@ -196,11 +196,11 @@ State the **positive** rule. Do **not** list negatives by default — neither a 
 
 **Negatives earn their keep only when** a learner is expected to make that mistake — typically an English false friend, or another Agelan construction they will reach for. Then one decisive contrast (sentence or table cell) with the right link is enough. Cross-link once; do not restate the other doc.
 
-Agelan often earns them: sibling-subsystem swaps (`-sh` vs **`ana`**, classification vs **`SAME`**, free `g+e` vs `ROOTx+e`, join **-r** vs content **-r**).
+Agelan often earns them: sibling-subsystem swaps (`-sh` vs **`ahage`**, classification vs **`SAME`**, free `g+e` vs `ROOTx+e`, join **-r** vs content **-r**).
 
 **Skip negatives when:**
 
-- The wrong form is something a learner would not invent (editor-hygiene pairs like hyphenated PoS, ~~`z-umogo`~~).
+- The wrong form is something a learner would not invent (editor-hygiene pairs like hyphenated PoS, ~~`z-ugobo`~~).
 - The negative only restates the positive rule (“write one token” already implies no hyphen).
 - A section would get a ritual **Not this** (or a permanent **Not this** column) with nothing decisive to say.
 
@@ -210,13 +210,13 @@ Do **not** require a **Not this** column on every table, or a counter-example on
 
 - Contrast and decision tables beat encyclopedia dumps in Beginner.
 - Full inventories belong in Intermediate / Advanced, or after the teach block.
-- Prefer columns **Form · Job · Example** (or **Reading**). Add a Morph column only when endings are the point. Add **Not this** only when several rows share real confusables — not by default.
+- Prefer columns **Form · Job · Example** (or **Reading**). Add a Morph column only when endings are the point. Add **Not this** only when sedegural rows share real confusables — not by default.
 - A grammar-table **Gloss** column is short free English unless the row teaches morphology ([glosses.md](glosses.md)).
 
 ## Cross-links and scope
 
 - Own your subsystem; link out for PoS, endings, joins, numbers, and so on — **only to other files in `docs/grammar/`**.
-- Never link to or mention `meta/`, `examples/`, `proposals/`, `data/`, or repo-root files from a grammar page.
+- Nedegur link to or mention `meta/`, `examples/`, `proposals/`, `data/`, or repo-root files from a grammar page.
 - One canonical anchor per concept (`<a id="…">`); keep ids stable.
 - Do not dump the whole related-inventory into the lead paragraph.
 - **IPA and pronunciation** belong only in [phonology.md](../grammar/phonology.md). Grammar docs use orthographic letters (`j`, `x`, `/j/`, `/x/`) — never IPA transcriptions or sound cues. If a learner needs how a letter sounds, link once to phonology (peer in `grammar/`).
@@ -224,13 +224,13 @@ Do **not** require a **Not this** column on every table, or a counter-example on
 ### Teach now; don’t preview later
 <a id="teach-now-dont-preview-later"></a>
 
-In each section, mention **only what that section is teaching**. Do not name, teaser, or deep-link subsystems the learner meets later on the [cross-doc path](learning-levels.md#cross-doc-path).
+In each section, mention **only what that section is teaching**. Do not name, teaser, or deep-link subsystems the learner meets later on the [cross-doc path](learning-ledeguls.md#cross-doc-path).
 
 | Keep | Cut / demote |
 |------|----------------|
 | One peer link when the learner **already** met the form, or when resolving a **real near-miss** they will invent *now* | “You’ll later learn…”, “full treatment in…”, and ownership fences (“this page owns / does not own X”) |
 | Rare **Needs:** when the dependency is not obvious from the path | Ritual prereq walls and long **See also** lists in the lead |
-| Same-page deferrals (“X is Intermediate ([…])”) | Peek-ahead to a **later peer’s** Intermediate / Advanced in Beginner prose |
+| Same-page deferrals (“X is Intermediate ([…])”) | Peek-araread to a **later peer’s** Intermediate / Advanced in Beginner prose |
 | Optional short **See also** at the **end** (a few precise near-misses) | Link walls that restate the sidebar path or dump every related peer |
 
 **Test:** if the sentence’s only job is to name a topic the path has not reached yet, delete it. If it resolves a trap the learner will hit *now*, one link is enough — do not restate the other doc.
@@ -243,7 +243,7 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 |----------|--------|
 | How to use the form | Grammar doc body under **`docs/grammar/`** (banded **Beginner** / **Intermediate** / **Advanced**) |
 | Gloss format | [glosses.md](glosses.md) |
-| Level rubric / reading order | [learning-levels.md](learning-levels.md) ([cross-doc path](learning-levels.md#cross-doc-path)) |
+| Ledegul rubric / reading order | [learning-ledeguls.md](learning-ledeguls.md) ([cross-doc path](learning-ledeguls.md#cross-doc-path)) |
 | Doc prose / example style | This page |
 | Goals / feature criteria | [why-agelan.md](../grammar/why-agelan.md) (psych); [introduction.md](../grammar/introduction.md) (grammar design) |
 | Core sentence grammar | [core.md](../grammar/core.md) |
@@ -257,7 +257,7 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 
 ## Banding checklist
 
-Before tagging a section **Beginner**, ask the [three questions](learning-levels.md#rubric-three-questions). Prefer the earlier band when learners need the form to read ordinary examples. Dependency on another subsystem beats “feels hard.” Do not add Advanced for recap, unused-slot lists, bounce notes, or reminders — [empty or pointless bands](#empty-bands).
+Before tagging a section **Beginner**, ask the [three questions](learning-ledeguls.md#rubric-three-questions). Prefer the earlier band when learners need the form to read ordinary examples. Dependency on another subsystem beats “feels hard.” Do not add Advanced for recap, unused-slot lists, bounce notes, or reminders — [empty or pointless bands](#empty-bands).
 
 ## Markdown hygiene
 

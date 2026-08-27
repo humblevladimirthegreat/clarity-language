@@ -12,12 +12,12 @@ First-person *I think*, how you know a world-claim, and *as if* framing — clos
 
 Mark **first-person mental commentary** — the mind storying or labeling experience — with one closed mood root instead of separate *think* / *assume* / *imagine* / *wonder* moods.
 
-**Shape:** floating **`/h/`** mood **`uho`** 💭 *thought* → *commentary* (optional `/w/` only when COMMENT frames a preceding `/ɡ/` — rare). Prefer floating `/h/`. **-l / -m / -r** = [hold](#comment-hold) (how tightly you take the balloon); **-n** ordinary proper.
+**Shape:** floating **`/h/`** mood **`ogugu`** 💭 *thought* → *commentary* (optional `/w/` only when COMMENT frames a preceding `/ɡ/` — rare). Prefer floating `/h/`. **-l / -m / -r** = [hold](#comment-hold) (how tightly you take the balloon); **-n** ordinary proper.
 
-**Mnemonic:** a **thought balloon** floats a take over the scene. Bare contact = watching without narration. Ordinary content still available (`zuhol` *a thought*; `vuhol` *to think* as deliberate event).
+**Mnemonic:** a **thought balloon** floats a take over the scene. Bare contact = watching without narration. Ordinary content still available (`zogugul` *a thought*; `vogugul` *to think* as deliberate edegunt).
 
 ```
-`… huhom …`
+`… hogugum …`
 
 gloss: `h-COMMENT-soft`
 
@@ -25,61 +25,61 @@ gloss: `h-COMMENT-soft`
 ```
 
 ```
-`… huhom … jom …`
+`… hogugum … jom …`
 
 gloss: `h-COMMENT-soft` · `j-soft-ask`
 
 *I wonder …* — soft commentary + soft ask
 ```
 
-Use COMMENT when the clause is doing **first-person cognitive commentary**. Content verbs stay ordinary (`vuhol` *to think* as a deliberate event); COMMENT **frames** the clause.
+Use COMMENT when the clause is doing **first-person cognitive commentary**. Content verbs stay ordinary (`vogugul` *to think* as a deliberate edegunt); COMMENT **frames** the clause.
 
-**Overlay:** same published root, special `/h/` reading — `huhom` is commentary; `zuhol` is *a thought*.
+**Overlay:** same published root, special `/h/` reading — `hogugum` is commentary; `zogugul` is *a thought*.
 
 #### Hold endings (COMMENT)
 <a id="comment-hold"></a>
 <a id="hold-endings"></a>
 
-On **`uho`**, **-l / -m / -r** mark **how you hold** the commentary. **-n** is ordinary [proper](reference-suffix.md#proper-name--n) (this COMMENT-word names a particular object), not a fourth hold. Habitual rumination is **`hual`** (and/or a named thought), not **`huhon`** as “the usual story.” NOTIONAL uses the same **-l / -m / -r** map ([Intermediate](#notional-hold)). Not contact channel, not changeability.
+On **`ogugu`**, **-l / -m / -r** mark **how you hold** the commentary. **-n** is ordinary [proper](reference-suffix.md#proper-name--n) (this COMMENT-word names a particular object), not a fourth hold. Habitual rumination is **`hual`** (and/or a named thought), not **`hogugun`** as “the usual story.” NOTIONAL uses the same **-l / -m / -r** map ([Intermediate](#notional-hold)). Not contact channel, not changeability.
 
 | Ending | Form | Hold | Reading |
 |--------|------|------|---------|
-| **-m** | **`huhom`** | **soft** (default) | commentary noticed, held lightly |
-| **-l** | **`huhol`** | **fused** | commentary taken as the scene (*it is so because I think*) |
+| **-m** | **`hogugum`** | **soft** (default) | commentary noticed, held lightly |
+| **-l** | **`hogugul`** | **fused** | commentary taken as the scene (*it is so because I think*) |
 | **-r** | **`huhur`** | **return** | same commentary *and* a cue to step back toward bare contact |
-| **-n** | **`huhon`** | **proper** | this word names a particular commentary-object |
+| **-n** | **`hogugun`** | **proper** | this word names a particular commentary-object |
 
 ### Translation practice
 <a id="translation-practice"></a>
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` · `adaga` · `awala` · `elebe` · `uzune` · `urunu` · `eje` · `uho`
+**Roots used here:** `azawa` / `ululo` / `uhubu` · `adaga` · `awala` · `elebe` · `uzune` · `urunu` · `eje` · `ogugu`
 
 #### English → Agelan
 
 **1.** *I think Azawan walks.* (light commentary)
 
 ::: details Show answer
-`zazawan huhom vawalal.`
+`zazawan hogugum vawalal.`
 :::
 
 **2.** *I think Ululon sleeps.*
 
 ::: details Show answer
-`zululon huhom velebel.`
+`zululon hogugum velebel.`
 :::
 
 **3.** *Uhubun sings — and that take is the scene.* (fused hold)
 
 ::: details Show answer
-`zuhubun huhol vuzunel.`
+`zuhubun hogugul vuzunel.`
 :::
 
 **4.** *I think Azawan runs.* (light commentary)
 
 ::: details Show answer
-`zazawan huhom vurunul.`
+`zazawan hogugum vurunul.`
 :::
 
 **5.** *I think Ululon walks — and step back from that take.*
@@ -88,39 +88,39 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zululon huhur vawalal.`
 :::
 
-**6.** *Azawan thinks.* (deliberate event, not a commentary frame)
+**6.** *Azawan thinks.* (deliberate edegunt, not a commentary frame)
 
 ::: details Show answer
-`zazawan vuhol.`
+`zazawan vogugul.`
 :::
 
 **7.** *I think Azawan sees a dog.*
 
 ::: details Show answer
-`zazawan huhom vejel dadagal.`
+`zazawan hogugum vejel dadagal.`
 :::
 
 **8.** *Does Uhubun sleep?* (yes/no; light commentary over the ask)
 
 ::: details Show answer
-`jol zuhubun huhom velebel.`
+`jol zuhubun hogugum velebel.`
 :::
 
 #### Agelan → English
 
-**1.** `zazawan huhom vawalal.`
+**1.** `zazawan hogugum vawalal.`
 
 ::: details Show answer
 *I think Azawan walks.*
 :::
 
-**2.** `zululon huhol velebel.`
+**2.** `zululon hogugul velebel.`
 
 ::: details Show answer
 *Ululon sleeps — and that commentary is taken as the scene.*
 :::
 
-**3.** `zuhubun huhom vuzunel.`
+**3.** `zuhubun hogugum vuzunel.`
 
 ::: details Show answer
 *I think Uhubun sings.*
@@ -132,25 +132,25 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *I think Azawan runs — and step back from that take.*
 :::
 
-**5.** `zululon vuhol.`
+**5.** `zululon vogugul.`
 
 ::: details Show answer
-*Ululon thinks.* (an event of thinking, not COMMENT)
+*Ululon thinks.* (an edegunt of thinking, not COMMENT)
 :::
 
-**6.** `jol zazawan huhom vawalal.`
+**6.** `jol zazawan hogugum vawalal.`
 
 ::: details Show answer
 *Does Azawan walk?* (asked with light commentary)
 :::
 
-**7.** `zazawan huhom vejel dadagal.`
+**7.** `zazawan hogugum vejel dadagal.`
 
 ::: details Show answer
 *I think Azawan sees a dog.*
 :::
 
-**8.** `zuhubun huhom vuzunel.`
+**8.** `zuhubun hogugum vuzunel.`
 
 ::: details Show answer
 *I think Uhubun sings.*
@@ -163,19 +163,19 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 | English bundle | Prefer |
 |----------------|--------|
-| *think / assume / suppose / imagine …* (attitude) | **COMMENT** (`huhom`); add evidentiality only if asserting a world-claim |
+| *think / assume / suppose / imagine …* (attitude) | **COMMENT** (`hogugum`); add evidentiality only if asserting a world-claim |
 | *wonder …* | **COMMENT** + soft question (**jom**) / ask |
-| *as if / imagine that:* (scene framing) | [**NOTIONAL**](#notional) (`hedahem`) |
+| *as if / imagine that:* (scene framing) | [**NOTIONAL**](#notional) (`hahadem`) |
 | *fear / worry / dread / regret …* | [emotion compose](special-vocabulary.md#emotion-compose): unmet [value](values.md) (`xu`) + **ACT** + **LOCUS** |
 | *hope / wish …* (feeling) | emotion compose (value + ACT + LOCUS) |
 | *hope / wish …* (intention) | motive (`xe`) and/or [**PLAN**](plan-decision.md#plan-predict) / soft force |
-| *believe …* | [evidentiality](#evidentiality) (`huhunum`, `herarem`, …) |
+| *believe …* | [evidentiality](#evidentiality) (`huhunum`, `hejaram`, …) |
 
 | Agelan | Reading |
 |---------|---------|
-| `zanal wodoloxur hogenal hagenal` | *I fear the get-together* — unmet competence; flood; room awash — no COMMENT |
-| `… howarom …` | *I hope to …* (intention) — sketch plan; no COMMENT |
-| `… huhol …` | commentary taken as the scene (fused) |
+| `zahagel worodoloxur hogegal hagadel` | *I fear the get-together* — unmet competence; flood; room awash — no COMMENT |
+| `… howoram …` | *I hope to …* (intention) — sketch plan; no COMMENT |
+| `… hogugul …` | commentary taken as the scene (fused) |
 | `… huhur …` | commentary named *and* stepped back from |
 
 ### Evidentiality
@@ -186,16 +186,16 @@ Mark **how you know** a world-claim — what happened, what caused what, what so
 
 **Mnemonic:** each root is a **channel** you got the claim through — memory catch, playback, trail of cases, detective work, listening, gut, tale.
 
-First-person *I think* / rumination is [**COMMENT**](#comment) (`uho`). *Believe* / other-minds *thinks* / causal warrant / forecast warrant use **this** inventory.
+First-person *I think* / rumination is [**COMMENT**](#comment) (`ogugu`). *Beliedegu* / other-minds *thinks* / causal warrant / forecast warrant use **this** inventory.
 
 | Mood | Lexicon root | Metaphor | Gloss |
 |------|--------------|----------|-------|
 | **WITNESSED** | **`uhunu`** | 🎣 *fishing* → *memory* | firsthand / reconstructive — you (think you) caught it yourself; may pull a **boot** |
-| **RECORDED** | **`eroge`** | ⏺️ *record* → *record* | documented / captured — playback of what was preserved |
-| **PATTERN** | **`awa`** | 🐾 *paw-prints* → *trail* → *pattern* | from regularity / similar cases left behind |
-| **INFERRED** | **`eve`** | 🕵️ *detective* → *investigation* → *inference* | reasoned from clues — not direct channel |
-| **TOLD** | **`erare`** | 👂 *ear* → *listening* → *hearsay* | reportative — under `/h/`, *listening* = hearsay |
-| **FELT** | **`ahe`** | ❤️ *heart* → *gut-felt* | proprioceptive / affective knowing — not [emotion compose](special-vocabulary.md#emotion-compose) |
+| **RECORDED** | **`egoro`** | ⏺️ *record* → *record* | documented / captured — playback of what was preserved |
+| **PATTERN** | **`abawa`** | 🐾 *paw-prints* → *trail* → *pattern* | from regularity / similar cases left behind |
+| **INFERRED** | **`edegu`** | 🕵️ *detective* → *investigation* → *inference* | reasoned from clues — not direct channel |
+| **TOLD** | **`ejara`** | 👂 *ear* → *listening* → *hearsay* | reportative — under `/h/`, *listening* = hearsay |
+| **FELT** | **`arare`** | ❤️ *heart* → *gut-felt* | proprioceptive / affective knowing — not [emotion compose](special-vocabulary.md#emotion-compose) |
 | **STORY** | **`orolo`** | 📜 *scroll* → *tale* | narrative / lore / anecdotal framing |
 
 Channel is a **root choice**, not `xa`/`xu` on the claim host. Stack with **PREDICT**, causation shapes, [universality](special-vocabulary.md#universality) **NATURAL**, other-minds content, ….
@@ -203,50 +203,50 @@ Channel is a **root choice**, not `xa`/`xu` on the claim host. Stack with **PRED
 | Agelan (schematic) | Reading |
 |---------------------|---------|
 | `… huhunum …` | *per memory / witnessed* (reconstructive) |
-| `… herogem …` | *on record / recorded* |
-| `… hawam …` | *from the pattern / trail of cases* |
-| `… hevem …` | *inferred / from investigation* |
-| `… herarem …` | *told / hearsay* |
-| `… hahem …` | *felt / gut-known* |
+| `… hegorom …` | *on record / recorded* |
+| `… habawam …` | *from the pattern / trail of cases* |
+| `… hedegum …` | *inferred / from investigation* |
+| `… hejaram …` | *told / hearsay* |
+| `… hararem …` | *felt / gut-known* |
 | `… horolom …` | *per the tale / story* |
-| `hedelom hawam … vanunul` | *forecast from pattern: it rains* |
-| `… haon b-…` + `hevem` | *sufficient-cause claim, inferred* |
+| `helegom habawam … vanunul` | *forecast from pattern: it rains* |
+| `… haon b-…` + `hedegum` | *sufficient-cause claim, inferred* |
 
 #### Memory / record (past framing)
 <a id="memory-record"></a>
 <a id="memory"></a>
 <a id="record-past"></a>
 
-**WITNESSED** (`uhunu`) and **RECORDED** (`eroge`) **are** the evidential roots — not a separate past-only mood pair. Past *I remember* / *according to…* / *on record* readings are the same channels applied to past claims.
+**WITNESSED** (`uhunu`) and **RECORDED** (`egoro`) **are** the evidential roots — not a separate past-only mood pair. Past *I remember* / *according to…* / *on record* readings are the same channels applied to past claims.
 
 | Framing | Evidential mood | Lexicon root | Metaphor cue |
 |---------|-----------------|--------------|--------------|
 | Reconstructive / recalled past | **WITNESSED** | **`uhunu`** | Casting into opaque water — fish or **boot** |
-| Documented / captured past | **RECORDED** | **`eroge`** | Preserving now for later playback |
+| Documented / captured past | **RECORDED** | **`egoro`** | Preserving now for later playback |
 
-Ordinary content still available: `zuhunul` *a memory*; `verogel` *to record*; `duhunuxruzol` *that memory that won’t blank* — [null / anti-null](numeric-derivation.md#null-anti-null). Same for the other channel roots (`zerarer` *that ear*, `zorolol` *a scroll*, …).
+Ordinary content still available: `zuhunul` *a memory*; `vegorol` *to record*; `duhunuxruzol` *that memory that won’t blank* — [null / anti-null](numeric-derivation.md#null-anti-null). Same for the other channel roots (`zejarar` *that ear*, `zorolol` *a scroll*, …).
 
-Idiom cue: *fish a boot* = retrieve the wrong past (🥾 `obodo` *boot* stays free for the punchline).
+Idiom cue: *fish a boot* = retriedegu the wrong past (🥾 `oborodo` *boot* stays free for the punchline).
 
 | English cue | Agelan |
 |-------------|---------|
-| *caused / predicted, inferred* | claim shape + **`hevem`** |
-| *caused / predicted from pattern*; *always by nature* + pattern | claim shape (+ **`hafafal`** if natural) + **`hawam`** |
-| *thinks / was told* (hearsay) | content + **`herarem`** |
-| *knew / felt* (gut channel) | content + **`hahem`** |
+| *caused / predicted, inferred* | claim shape + **`hedegum`** |
+| *caused / predicted from pattern*; *always by nature* + pattern | claim shape (+ **`hafafal`** if natural) + **`habawam`** |
+| *thinks / was told* (hearsay) | content + **`hejaram`** |
+| *knew / felt* (gut channel) | content + **`hararem`** |
 | memory-sourced claim | **`huhunum`** |
-| on-record claim | **`herogem`** |
+| on-record claim | **`hegorom`** |
 | story / lore channel | **`horolom`** |
 
 **Key contrasts:**
 
 | | Prefer |
 |--|--------|
-| COMMENT vs warrant | `huhom` = first-person commentary; evidential = how the **world-claim** is sourced |
-| NOTIONAL vs warrant | `hedahem` = as-if clause frame; evidential = how you know a real claim |
-| Felt vs emotion | **`ahe`** = channel of knowing; emotion = value + ACT + LOCUS |
-| Told vs listening-event | `/h/` **`erare`** = hearsay; *hear the door* = ordinary `/v/` |
-| Pattern vs COMMON | **`awa`** = evidential trail; **`ewono`** = exceptionlessness warrant ([universality](special-vocabulary.md#universality)) |
+| COMMENT vs warrant | `hogugum` = first-person commentary; evidential = how the **world-claim** is sourced |
+| NOTIONAL vs warrant | `hahadem` = as-if clause frame; evidential = how you know a real claim |
+| Felt vs emotion | **`arare`** = channel of knowing; emotion = value + ACT + LOCUS |
+| Told vs listening-edegunt | `/h/` **`ejara`** = hearsay; *hear the door* = ordinary `/v/` |
+| Pattern vs COMMON | **`abawa`** = evidential trail; **`ewono`** = exceptionlessness warrant ([universality](special-vocabulary.md#universality)) |
 | Witnessed vs Recorded | fishing retrieval vs playback archive |
 
 Prefer floating `/h/`; content PoS uses stay ordinary. One shared inventory for predict / cause / other-minds — not separate series.
@@ -257,12 +257,12 @@ Prefer floating `/h/`; content PoS uses stay ordinary. One shared inventory for 
 
 Mark a clause as **as-if / mind-only / off the real ledger** — pretensive scene framing — with one closed mood root. Do **not** use free number specials (`grubul`, `xrubul`, …) for this psychological job; those stay amount / discourse overlays in [numbers.md](numbers.md#imaginary).
 
-**Shape:** floating **`/h/`** mood **`edahe`** 🎭 *theater* → *pretense* (optional `/w/` when scoped only to a preceding `/ɡ/` — rare). Prefer floating `/h/`. Ending = [hold](#notional-hold) (same map as COMMENT).
+**Shape:** floating **`/h/`** mood **`ahade`** 🎭 *theater* → *pretense* (optional `/w/` when scoped only to a preceding `/ɡ/` — rare). Prefer floating `/h/`. Ending = [hold](#notional-hold) (same map as COMMENT).
 
-**Mnemonic:** a **stage mask** frames the scene as play — real tally stays offstage. Ordinary content still available (`zedahel` *a theater*; `vedahel` *to pretend*).
+**Mnemonic:** a **stage mask** frames the scene as play — real tally stays offstage. Ordinary content still available (`zahadel` *a theater*; `vahadel` *to pretend*).
 
 ```
-`… hedahem …`
+`… hahadem …`
 
 gloss: `h-NOTIONAL-soft`
 
@@ -270,7 +270,7 @@ gloss: `h-NOTIONAL-soft`
 ```
 
 ```
-`… hedahel …`
+`… hahadel …`
 
 gloss: `h-NOTIONAL-fused`
 
@@ -281,31 +281,31 @@ Use NOTIONAL when the clause is **framed as pretensive / for-the-sake-of-argumen
 
 | English bundle | Prefer |
 |----------------|--------|
-| *as if / for the sake of argument / pretend that …* | **NOTIONAL** (`hedahem`) |
-| *imagine that:* (side scene / agenda) | **NOTIONAL** (`hedahem`) |
-| *I imagine / I think …* (attitude) | [COMMENT](#comment) (`huhom`) |
+| *as if / for the sake of argument / pretend that …* | **NOTIONAL** (`hahadem`) |
+| *imagine that:* (side scene / agenda) | **NOTIONAL** (`hahadem`) |
+| *I imagine / I think …* (attitude) | [COMMENT](#comment) (`hogugum`) |
 | notional **amount** / soft imaginary magnitude | free number forms (`grubul`, `grubum`, …) — [numbers.md](numbers.md#imaginary) |
 | quasi-*kind* (*quasi-friend*) | numeric derivation **`ROOTx-e-`** — [quasi](numeric-derivation.md#quasi) |
 
 | Agelan | Reading |
 |---------|---------|
-| `… hedahem zumogon vobohol.` | *as if I take the trophy* — soft notional frame |
-| `… hedaher …` | notional frame *and* step back toward contact |
-| `… hedahen …` | this NOTIONAL-word **names** a particular object |
+| `… hahadem zugobon vobohol.` | *as if I take the trophy* — soft notional frame |
+| `… hahader …` | notional frame *and* step back toward contact |
+| `… hahaden …` | this NOTIONAL-word **names** a particular object |
 
 #### Hold endings (NOTIONAL)
 <a id="notional-hold"></a>
 
-On **`edahe`**, **-l / -m / -r** mark **how you hold** the as-if frame — same flexibility map as [COMMENT hold](#comment-hold). **-n** is ordinary proper, not a stock thought-experiment flavor.
+On **`ahade`**, **-l / -m / -r** mark **how you hold** the as-if frame — same flexibility map as [COMMENT hold](#comment-hold). **-n** is ordinary proper, not a stock thought-experiment flavor.
 
 | Ending | Form | Hold | Reading |
 |--------|------|------|---------|
-| **-m** | **`hedahem`** | **soft** (default) | as-if noticed, held lightly |
-| **-l** | **`hedahel`** | **fused** | immersed in the imagined scene |
-| **-r** | **`hedaher`** | **return** | same as-if *and* a cue to step back toward bare contact |
-| **-n** | **`hedahen`** | **proper** | this word names a particular as-if object |
+| **-m** | **`hahadem`** | **soft** (default) | as-if noticed, held lightly |
+| **-l** | **`hahadel`** | **fused** | immersed in the imagined scene |
+| **-r** | **`hahader`** | **return** | same as-if *and* a cue to step back toward bare contact |
+| **-n** | **`hahaden`** | **proper** | this word names a particular as-if object |
 
-When unsure, prefer **`hedahem`**.
+When unsure, prefer **`hahadem`**.
 
 
 ### Translation practice
@@ -313,14 +313,14 @@ When unsure, prefer **`hedahem`**.
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` · `adaga` · `awala` · `elebe` · `uzune` · `urunu` · `uwuru` · `uho` · `uhunu` · `eroge` · `awa` · `eve` · `erare` · `ahe` · `orolo` · `edahe`
+**Roots used here:** `azawa` / `ululo` / `uhubu` · `adaga` · `awala` · `elebe` · `uzune` · `urunu` · `uwuru` · `ogugu` · `uhunu` · `egoro` · `abawa` · `edegu` · `ejara` · `arare` · `orolo` · `ahade`
 
 #### English → Agelan
 
 **1.** *I think Azawan walks.* (attitude — not how you know a world-claim)
 
 ::: details Show answer
-`zazawan huhom vawalal.`
+`zazawan hogugum vawalal.`
 :::
 
 **2.** *Azawan walks — from memory / witnessed.*
@@ -332,42 +332,42 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **3.** *Ululon sleeps — on record.*
 
 ::: details Show answer
-`zululon herogem velebel.`
+`zululon hegorom velebel.`
 :::
 
 **4.** *Uhubun runs — from the pattern of cases.*
 
 ::: details Show answer
-`zuhubun hawam vurunul.`
+`zuhubun habawam vurunul.`
 :::
 
 **5.** *Azawan sings — inferred from clues.*
 
 ::: details Show answer
-`zazawan hevem vuzunel.`
+`zazawan hedegum vuzunel.`
 :::
 
 **6.** *Ululon writes — so they say.* (hearsay)
 
 ::: details Show answer
-`zululon herarem vuwurul.`
+`zululon hejaram vuwurul.`
 :::
 
 **7.** *As if Azawan walks.* (soft pretensive frame)
 
 ::: details Show answer
-`zazawan hedahem vawalal.`
+`zazawan hahadem vawalal.`
 :::
 
 **8.** *I wonder whether Uhubun sleeps.* (commentary + soft ask)
 
 ::: details Show answer
-`jom zuhubun huhom velebel.`
+`jom zuhubun hogugum velebel.`
 :::
 
 #### Agelan → English
 
-**1.** `zazawan hahem vawalal.`
+**1.** `zazawan hararem vawalal.`
 
 ::: details Show answer
 *Azawan walks — felt / gut-known.*
@@ -379,25 +379,25 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Ululon sleeps — per the tale.*
 :::
 
-**3.** `zuhubun hedahel vuzunel.`
+**3.** `zuhubun hahadel vuzunel.`
 
 ::: details Show answer
 *As if Uhubun sings* — immersed in the imagined scene.
 :::
 
-**4.** `zazawan hedahem vurunul.`
+**4.** `zazawan hahadem vurunul.`
 
 ::: details Show answer
 *As if Azawan runs* — soft pretensive frame.
 :::
 
-**5.** `zululon hedaher vuwurul.`
+**5.** `zululon hahader vuwurul.`
 
 ::: details Show answer
 *As if Ululon writes* — and step back toward contact.
 :::
 
-**6.** `zazawan herogem vejel dadagal.`
+**6.** `zazawan hegorom vejel dadagal.`
 
 ::: details Show answer
 *Azawan sees a dog — on record.*
@@ -409,7 +409,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Ululon sleeps — from memory / witnessed.*
 :::
 
-**8.** `jom zazawan huhom vawalal.`
+**8.** `jom zazawan hogugum vawalal.`
 
 ::: details Show answer
 *I wonder whether Azawan walks.*

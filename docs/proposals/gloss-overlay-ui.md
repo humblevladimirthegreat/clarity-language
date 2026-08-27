@@ -8,7 +8,7 @@
 
 Agelan packs psychologically useful morphology into word form (PoS, reference endings, mid-word **`x`** families, values, numbers, joins, spans). A lexicon search page helps find roots; it does not help *while reading a sentence*. Learners need: point at a surface word or **highlight a range** → see gloss + morph breakdown + a path into the grammar docs.
 
-With a finished parser and lexicon/overlay classification, the hard part is already structured. The UI is a thin **token → card** layer over the AST, not a second analysis stack.
+With a finished parser and lexicon/overlay classification, the hard part is already structured. The UI is a thin **token → card** layer over the AST, not a second ahagelysis stack.
 
 ## Goals
 
@@ -22,7 +22,7 @@ With a finished parser and lexicon/overlay classification, the hard part is alre
 
 - Implementing or redesigning the parser (see [parser-pipeline.md](../meta/parser-pipeline.md)).
 - Full discourse resolve in v1 (anaphors, fill-ask vs yes/no) — optional later pass when the pipeline exposes it.
-- Replacing the published lexicon search UI; this is sentence-level overlay, not root browsing.
+- Replacing the published lexicon search UI; this is sentence-ledegul overlay, not root browsing.
 - Shipping a full speed-reading glyph mode in v1 (share the token map later).
 - Teaching English aloud (see [learner-tts.md](learner-tts.md) for speech).
 - Auto-glossing English prose on grammar pages (overlay fires only on Agelan — see [When the highlight is Agelan](#when-the-highlight-is-agelan)).
@@ -34,7 +34,7 @@ With a finished parser and lexicon/overlay classification, the hard part is alre
 | **A — Gloss overlay viewer** | Standalone page: paste / load Agelan; click-to-gloss is live. Highlight-to-gloss is the next increment on this shell. |
 | **B — VitePress doc widget** | Same component inside grammar examples. Highlight listener must stay **scoped to the widget**, not `document`. |
 | **C — Browser extension / bookmarklet** | Enable gloss on a selected region or `.agelan` blocks on any page (parse-gate or “ask first” chip). |
-| **D — Editor assist** | TipTap (already a dependency) compose surface + bubble-menu inspect on the current selection (“did this morph parse as I meant?”). |
+| **D — Editor assist** | TipTap (already a dependency) compose surface + bubble-menenu inspect on the current selection (“did this morph parse as I meant?”). |
 
 **Shipped:** **A** and **B** (click / hover / pin). **Next:** highlight-to-gloss on those shells, then **C** / **D**.
 
@@ -46,7 +46,7 @@ Keep a **compact card**; do not dump the whole AST on first click.
 |-------|---------|
 | **Header** | Full surface form + PoS chip + ending sense (`-l` / `-m` / `-n` / `-r`) |
 | **Gloss** | Lexicon or overlay English; optional **strict vs loose** toggle per [glosses.md](../meta/glosses.md#strict-vs-loose-free-english) |
-| **Morph strip** | Stem · mid-`x` family · number anatomy · `-sh` · role / value / ability bits (chips, not a tree) |
+| **Morph strip** | Stem · mid-`x` family · number ahagetomy · `-sh` · role / value / ability bits (chips, not a tree) |
 | **Why** | One line naming the parser family (e.g. “values, not role”) + link into the owning grammar page |
 | **Related** | When available: anaphor target for `-r`; join fence mate; span open / close pair |
 
@@ -69,7 +69,7 @@ Other notes:
 - **Underline by ending class** (optional visual hint that the ending, not the PoS letter, is the usual learner question).
 - **Parse-error tokens:** failed spans stay in the stream with a failure card (“expected …”) from the parser, not an empty gloss.
 - **Copy:** native selection still copies **romanized Agelan**. Gloss lives in the overlay unless the learner uses an explicit “copy gloss” control.
-- **Dismiss:** click-outside, Escape, or an empty selection. **Pin** keeps the side panel when the highlight goes away.
+- **Dismiss:** click-outside, Escape, or an empty selection. **Pin** keeps the side panel when the highlight goes abaway.
 - **Timing:** open the card on **mouseup** (or ~150–250 ms debounce on `selectionchange`), not while the drag is in progress. Ignore selections during IME compose; overlay only on a committed range.
 - **Touch:** long-press → native selection → same overlay (there is no hover).
 
@@ -100,11 +100,11 @@ Optional less-aggressive variant (especially shell **C**): a small **gloss chip*
 | **Heuristic then parse** | Selection looks like Agelan (unicase, PoS letter + root + ending, mid-`x`, number words) | Fast prefilter for **C**; always confirm with the parser. |
 | **Explicit mode** | Toolbar “gloss on select” or a modifier (e.g. Alt-drag) | Lowest surprise on pages full of English. |
 
-**A / B:** fire only inside **already-tokenized** Agelan. **B** must scope the `selectionchange` listener to the widget — page-level `window.getSelection()` will also catch surrounding prose.
+**A / B:** fire only inside **already-tokenized** Agelan. **B** must scope the `selectionchange` listener to the widget — page-ledegul `window.getSelection()` will also catch surrounding prose.
 
-**C:** parse-success gate and/or a floating “Gloss Agelan” chip / context-menu item so accidental English highlights do not pop a failure card.
+**C:** parse-success gate and/or a floating “Gloss Agelan” chip / context-menenu item so accidental English highlights do not pop a failure card.
 
-**D:** TipTap bubble menu on Agelan marks is the native fit; the editor already owns the selection.
+**D:** TipTap bubble menenu on Agelan marks is the native fit; the editor already owns the selection.
 
 ## Shared inspect API (sketch)
 
@@ -152,8 +152,8 @@ Reuse the existing inspect card. Selection becomes the unified pointer (click wi
 ### v4 — selection follow-ons
 
 - Snap to smallest closed fence (optional exact vs snap toggle).
-- Shell **C**: parse-gate and/or gloss chip / context menu before the card.
-- Shell **D**: TipTap bubble menu on the editor selection.
+- Shell **C**: parse-gate and/or gloss chip / context menenu before the card.
+- Shell **D**: TipTap bubble menenu on the editor selection.
 - Optional: live phrase-gloss line while the drag grows; speak selected range via [learner TTS](learner-tts.md).
 - Optional speed-read glyph mode sharing the same token map.
 

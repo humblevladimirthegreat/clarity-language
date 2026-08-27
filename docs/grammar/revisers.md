@@ -73,7 +73,7 @@ gloss: `d-tea` · `ol` · `d-coffee`
 ```
 
 ```
-`zahanal ul zazawan.`
+`zahahagel ul zazawan.`
 
 gloss: `z-team` · `ul` · `z-grace`
 
@@ -96,21 +96,21 @@ Discourse revisers glue **this utterance** to **prior talk**. Prior talk = A; th
 Omit recoverable **`jal`** after the reviser when the body is a default statement.
 
 ```
-`al zumogon vawalal.`
+`al zugobon vawalal.`
 
 gloss: `al` · `z-speaker` · `v-walk`
 
 *Additionally, I go.*
 ```
 
-Adversative *but* / *however*, *therefore*, *meanwhile*, and standalone *next* stay other `/x/` roots ([core.md](core.md#discourse-markers-x)). Narrative *and then* between full sentences is clause **`xan`**, not this series.
+Adversative *but* / *howedegur*, *therefore*, *meanwhile*, and standalone *next* stay other `/x/` roots ([core.md](core.md#discourse-markers-x)). Narrative *and then* between full sentences is clause **`xan`**, not this series.
 
 ### Translation practice
 <a id="translation-practice"></a>
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `adaga` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `ahana` *team* · `edege` *teacher* · `uzumu` smile → *happy* (**-m**) · `ele` *size* · `awala` *walk* · `elebe` *sleep*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `adaga` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `ahahage` *team* · `edege` *teacher* · `uzumu` smile → *happy* (**-m**) · `ele` *size* · `awala` *walk* · `elebe` *sleep*
 
 #### English → Agelan
 
@@ -129,7 +129,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **3.** *The team except only Azawan.*
 
 ::: details Show answer
-`zahanal ul zazawan.`
+`zahahagel ul zazawan.`
 :::
 
 **4.** *Additionally, Azawan walks.*
@@ -176,7 +176,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Coffee fully replaces tea.*
 :::
 
-**3.** `zahanal ul zazawan.`
+**3.** `zahahagel ul zazawan.`
 
 ::: details Show answer
 *The team except only Azawan.*
@@ -259,7 +259,7 @@ Every `REVᵢ` applies **in parallel to the same A**, each with its own right-ha
 For nested English *including (B except C)*, put the inner revision **inside** one side.
 
 ```
-`zahanal am zazawan ul zululon.`
+`zahahagel am zazawan ul zululon.`
 
 gloss: `z-team` · `am` · `z-grace` · `ul` · `z-courage`
 
@@ -291,12 +291,12 @@ Four placements — same spellings, same vowel meanings:
 - **One REV** per discourse opener (no parallel discourse chains on one force). In-clause chains stay inside the body.
 - After an explicit force token, the same spellings are only in-clause revisers (or illegal if mixed-slot).
 
-On a **non-initial** conjunct under a [clause `/x/` fence](coordination.md#clause-level-coordination), **`REV`** sits immediately before that conjunct’s body: `A al B xam` → *A and additionally B*.
+On a **non-initial** conjunct under a [clause `/x/` fence](coordination.md#clause-ledegul-coordination), **`REV`** sits immediately before that conjunct’s body: `A al B xam` → *A and additionally B*.
 
-Before an **`/x/`** linker (*therefore*, *however*, …), **`REV`** scopes the linker+body stretch: `al xamalal …` → *Additionally, therefore …*. Prefer plain `al …` or plain `xamalal …` when one cue is enough.
+Before an **`/x/`** linker (*therefore*, *howedegur*, …), **`REV`** scopes the linker+body stretch: `al xamalal …` → *Additionally, therefore …*. Prefer plain `al …` or plain `xamalal …` when one cue is enough.
 
 ```
-`jazawan al zumogon vawalal.`
+`jazawan al zugobon vawalal.`
 
 gloss: `j-grace` · `al` · `z-speaker` · `v-walk`
 
@@ -308,14 +308,14 @@ gloss: `j-grace` · `al` · `z-speaker` · `v-walk`
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `adaga` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `ahana` *team* · `uzumu` smile → *happy* (**-m**) · `eru` *calm* · `awala` *walk* · `urunu` *run* · `amala` *therefore*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `adaga` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `ahahage` *team* · `uzumu` smile → *happy* (**-m**) · `eru` *calm* · `awala` *walk* · `urunu` *run* · `amala` *therefore*
 
 #### English → Agelan
 
 **1.** *The team, including Azawan, except only Ululon.*
 
 ::: details Show answer
-`zahanal am zazawan ul zululon.`
+`zahahagel am zazawan ul zululon.`
 :::
 
 **2.** *Azawan is happy — or rather, precisely calm.*
@@ -345,7 +345,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **6.** *The team, including Azawan and including Uhubun (both open).*
 
 ::: details Show answer
-`zahanal am zazawan am zuhubun.`
+`zahahagel am zazawan am zuhubun.`
 :::
 
 **7.** *Azawan walks and additionally Ululon runs.*
@@ -362,7 +362,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 #### Agelan → English
 
-**1.** `zahanal am zazawan ul zululon.`
+**1.** `zahahagel am zazawan ul zululon.`
 
 ::: details Show answer
 *The team, including Azawan, except only Ululon.*
@@ -392,7 +392,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Additionally, does Azawan walk?*
 :::
 
-**6.** `zahanal am zazawan am zuhubun.`
+**6.** `zahahagel am zazawan am zuhubun.`
 
 ::: details Show answer
 *The team, including Azawan and including Uhubun.*
@@ -404,7 +404,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan walks and additionally Ululon runs.*
 :::
 
-**8.** `zahanal an zazawan un zululon.`
+**8.** `zahahagel an zazawan un zululon.`
 
 ::: details Show answer
 *The named team, including Azawan, and except Ululon from that named frame.*
@@ -415,7 +415,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 ### More examples
 
-- `zodololsh al zamemal` — *tools, including only a hammer* (closed)
+- `zorodololsh al zamemal` — *tools, including only a hammer* (closed)
 - `zudebensh an zaredel` — *the primary colors, including red* (named frame)
 - `zudeben un zelulul` — *RGB except blue* (named conventional set)
 - `dadedal om dogovel` — *coffee as a replacement for tea* (open)
@@ -432,7 +432,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 ### Prefix-less particles only
 
-Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** are **only** these revisers (in-clause or discourse by placement). They are **not** [citation forms](core.md#citation-forms). Prefixed + ending forms of the same vowels (`zal`, `zam`, `val`, …) remain [joins](coordination.md#join-series-ending-shared) only. Whole-word **a** / **e** / **o** / **u** are not reviser forms and not legal words. Longer prefix-less **root + ending** outside a sentence (`adagal`, `umogon`, …) — including as a lone word or inside a [mention span](spans.md#writing) — is citation, not revision.
+Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** are **only** these revisers (in-clause or discourse by placement). They are **not** [citation forms](core.md#citation-forms). Prefixed + ending forms of the same vowels (`zal`, `zam`, `val`, …) remain [joins](coordination.md#join-series-ending-shared) only. Whole-word **a** / **e** / **o** / **u** are not reviser forms and not legal words. Longer prefix-less **root + ending** outside a sentence (`adagal`, `ugobon`, …) — including as a lone word or inside a [mention span](spans.md#writing) — is citation, not revision.
 
 ## See also
 

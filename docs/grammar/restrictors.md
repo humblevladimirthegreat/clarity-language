@@ -14,7 +14,7 @@ Under **`/h/`** and **`/w/`**, these forms mark **applicability circumstances**:
 
 | Prefix | Host | Floats? |
 |--------|------|---------|
-| `/h/` | the **clause** (verb-level claim) — or a VP chain when the restrictor sits before the VP stretch / in SHARED after a `/v/` join | yes (same free position as ordinary `/h/`) |
+| `/h/` | the **clause** (verb-ledegul claim) — or a VP chain when the restrictor sits before the VP stretch / in SHARED after a `/v/` join | yes (same free position as ordinary `/h/`) |
 | `/w/` | the **preceding `/ɡ/`** (the property) | no (stays on that adjective) |
 
 | Pattern | Reading |
@@ -24,7 +24,7 @@ Under **`/h/`** and **`/w/`**, these forms mark **applicability circumstances**:
 | `hal` (bare) | *never* |
 
 ```
-`zumogon vawalal hanunul hal.`
+`zugobon vawalal hanunul hal.`
 
 gloss: `z-speaker` · `v-go` · `h-rain` · `hal`
 
@@ -32,7 +32,7 @@ gloss: `z-speaker` · `v-go` · `h-rain` · `hal`
 ```
 
 ```
-`zumogon vawalal hal.`
+`zugobon vawalal hal.`
 
 gloss: `z-speaker` · `v-go` · `hal`
 
@@ -56,7 +56,7 @@ gloss: `z-speaker` · `v-go` · `hal`
 
 gloss: `g-happy` · `w-al`
 
-*Never happy* (for that property).
+*Nedegur happy* (for that property).
 ```
 
 ### With conjuncts (starter)
@@ -233,13 +233,13 @@ Statement readings below; under **question** force → [questions.md](questions.
 - `hanunul hul` → *not when raining*; `hanunul hudunul hum` → *not when raining or at night, for one*
 - `hanunul hual` → *always except when raining*
 - `hanunul huol` → *anytime except when raining*
-- `hamubam hogenum hel` → *preferably in emergency ≻ for convenience*
+- `hamubam hogenenum hel` → *preferably in emergency ≻ for convenience*
 - `hanunul hozonol hael` → *as often when raining as when snowing*
 - `hael` → *equally often* / *tied frequency frame* (bare)
 - `bemamal bamugal hoel` → *if (when) fix, else if workaround…*
 - `hanunul hozonol har` → *sometime among rain or snow*
 - Complex conjunct: `hohohul hal` → *only at home*
-- `/w/` core: `hevem wal` → *only when alleged*; `war` → *sometime* (under some framing); juxtaposition `guzumum wube wenazel` → *very* and *recent* (not a restrictor fence)
+- `/w/` core: `hedegum wal` → *only when alleged*; `war` → *sometime* (under some framing); juxtaposition `guzumum wube wenazel` → *very* and *recent* (not a restrictor fence)
 
 ### Conjuncts and next-clause *when*
 
@@ -257,9 +257,9 @@ Necessity-style *never without…* uses **`hal`** (and join-relation **`huan`**)
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills on this Intermediate band. Try each item before opening **Show answer**. Use the **defined core** (exclusive / inclusive / *not when* / ranked occasions / unspecified-member with conjuncts). Next-clause *when* / *if* stays `/h/` + `/b/` **`odo`**, not a circumstance fence of sentences.
+Short drills on this Intermediate band. Try each item before opening **Show answer**. Use the **defined core** (exclusive / inclusive / *not when* / ranked occasions / unspecified-member with conjuncts). Next-clause *when* / *if* stays `/h/` + `/b/` **`orodo`**, not a circumstance fence of sentences.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `awala` *walk* · `urunu` *run* · `uzune` *sing* · `elebe` *sleep* · `uwuru` *write* · `uruna` *rain* · `ozono` *snow* · `udunu` *night* · `ohohu` *house* · `amuba` *emergency* · `ogenau` *convenience* · `emama` *fix* · `amuga` *workaround* · `odo` *next clause*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `awala` *walk* · `urunu` *run* · `uzune` *sing* · `elebe` *sleep* · `uwuru` *write* · `uruna` *rain* · `ozono` *snow* · `udunu` *night* · `ohohu` *house* · `amuba` *emergency* · `ogegau` *convenience* · `emama` *fix* · `amuga` *workaround* · `orodo` *next clause*
 
 #### English → Agelan
 
@@ -290,7 +290,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **5.** *Azawan walks preferably in an emergency rather than for convenience.*
 
 ::: details Show answer
-`zazawan vawalal hamubam hogenum hel.`
+`zazawan vawalal hamubam hogenenum hel.`
 :::
 
 **6.** *Ululon runs as often when raining as when snowing.*
@@ -308,7 +308,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **8.** *Uhubun sings if Azawan walks.*
 
 ::: details Show answer
-`zuhubun vuzunel horodom zazawan vawalal bodol.`
+`zuhubun vuzunel hodom zazawan vawalal borodol.`
 :::
 
 #### Agelan → English
@@ -355,7 +355,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan walks equally often.*
 :::
 
-**8.** `zuhubun vuzunel horodom zazawan vawalal bodol.`
+**8.** `zuhubun vuzunel hodom zazawan vawalal borodol.`
 
 ::: details Show answer
 *Uhubun sings if Azawan walks.*

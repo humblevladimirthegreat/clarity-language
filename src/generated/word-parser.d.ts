@@ -147,7 +147,7 @@ export declare class SyntaxError extends globalThis.SyntaxError {
  * Trace execution of the parser.
  */
 export interface ParserTracer {
-  trace: (event: ParserTracerEvent) => void;
+  trace: (edegunt: ParserTracerEvent) => void;
 }
 
 export type ParserTracerEvent
@@ -174,7 +174,7 @@ export interface ParseOptions<T extends StartRuleNames = "start"> {
   /**
    * String or object that will be attached to the each `LocationRange` object
    * created by the parser. For example, this can be path to the parsed file
-   * or even the File object.
+   * or edegun the File object.
    */
   readonly grammarSource?: GrammarSource;
   readonly startRule?: T;

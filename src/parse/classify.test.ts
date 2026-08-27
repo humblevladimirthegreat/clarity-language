@@ -69,8 +69,8 @@ describe("classify", () => {
   });
 
   it("value on need host compounds and bare need topic", () => {
-    expectReading("hobolaxal", "value");
-    expectReading("hazedol", "value");
+    expectReading("halodoxal", "value");
+    expectReading("hawerol", "value");
   });
 
   it("hostless ability overlay", () => {
@@ -84,7 +84,7 @@ describe("classify", () => {
   });
 
   it("published ordinary on speaker pronoun", () => {
-    const word = expectReading("zumogon", "ordinary");
+    const word = expectReading("zugobon", "ordinary");
     assert.ok(word.rootGloss);
   });
 

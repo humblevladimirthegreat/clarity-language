@@ -13,12 +13,12 @@ Why no copula: every job English gives *to be* already has its own shape here. K
 
 Assert a property of a subject **without** a verb (`/v/`): subject + adjective (`/ɡ/`), plus any extra detail (`/w/`) or extra noun (`/b/`) on that adjective. Mood, tense, evidentiality, and values still attach with `/h/` (the clause) or `/w/` (on the property).
 
-Content `/v/` is for events and actions — not a light *be* between two nouns.
+Content `/v/` is for edegunts and actions — not a light *be* between two nouns.
 
 | Shape | Reading |
 |-------|---------|
 | `zazawan gomonum` | *Azawan is challenging* (property) |
-| `zodavan gogunol buzuban` | *Clark is (identical to) Superman* — [identity](#identity) |
+| `zodavan gonunul buzuban` | *Clark is (identical to) Superman* — [identity](#identity) |
 
 ```
 `zazawan gomonum.`
@@ -55,40 +55,40 @@ gloss: `z-grace` · `g-teacher`
 <a id="identity"></a>
 <a id="same"></a>
 
-**Identity** = two expressions pick **one** referent (*Clark is Superman*, *this is that*). Use the closed complex adjective **`SAME`** (`gogunom` + extra noun).
+**Identity** = two expressions pick **one** referent (*Clark is Superman*, *this is that*). Use the closed complex adjective **`SAME`** (`gonunum` + extra noun).
 
 | Concept | Gloss | Lexicon root |
 |---------|--------|--------------|
-| **SAME** | *identical-to* / *same-as* | **`oguno`** 🪙 *coin* → *same* |
+| **SAME** | *identical-to* / *same-as* | **`onunu`** 🪙 *coin* → *same* |
 
 **Mnemonic:** a **coin** has two faces and one substance — different labels are faces; co-reference is the one coin.
 
 ```
-`gogunom buzuban`
+`gonunum buzuban`
 ```
 
 | Piece | Role |
 |-------|------|
 | host NP | the expression treated as given / topic |
-| **`goguno`** | *identical-to* / *same-as* (closed relation) |
+| **`gonunu`** | *identical-to* / *same-as* (closed relation) |
 | extra noun (`/b/`) | the other label or description |
 
 ```
-`zodavan gogunol buzuban.`
+`zodavan gonunul buzuban.`
 
 gloss: `z-odava` · `g-SAME` · `b-uzuba`
 
 *Clark is Superman.*
 ```
 
-`oguno`+`/b/` stay **contiguous**, like other complex adjectives (`gogobul bazawan`).
+`onunu`+`/b/` stay **contiguous**, like other complex adjectives (`gogobul bazawan`).
 
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills on this Beginner band. Try each item before opening **Show answer**. Property and kind sit on `/ɡ/`; identity uses **`gogunol`** plus `/b/` — not a *to-be* verb.
+Short drills on this Beginner band. Try each item before opening **Show answer**. Property and kind sit on `/ɡ/`; identity uses **`gonunul`** plus `/b/` — not a *to-be* verb.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `edege` *teacher* · `uzudu` *student* · `adaga` *dog* · `agada` *cat* · `abogo` *book* · `elulu` *blue* · `uzumu` smile → *happy* (**-m**) · `omonu` *challenging* (**-m**) · `awala` *walk* · `elebe` *sleep* · `oguno` **SAME** · `odava` *Clark* · `uzuba` *Superman*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `edege` *teacher* · `uzudu` *student* · `adaga` *dog* · `agada` *cat* · `abogo` *book* · `elulu` *blue* · `uzumu` smile → *happy* (**-m**) · `omonu` *challenging* (**-m**) · `awala` *walk* · `elebe` *sleep* · `onunu` **SAME** · `odava` *Clark* · `uzuba` *Superman*
 
 #### English → Agelan
 
@@ -125,7 +125,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **6.** *Clark is Superman.*
 
 ::: details Show answer
-`zodavan gogunol buzuban.`
+`zodavan gonunul buzuban.`
 :::
 
 **7.** *Uhubun is happy.*
@@ -166,13 +166,13 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Azawan is Teacher.*
 :::
 
-**5.** `zodavan gogunol buzuban.`
+**5.** `zodavan gonunul buzuban.`
 
 ::: details Show answer
 *Clark is Superman.*
 :::
 
-**6.** `zuzuban gogunol bodavan.`
+**6.** `zuzuban gonunul bodavan.`
 
 ::: details Show answer
 *Superman is Clark.*
@@ -216,13 +216,13 @@ Values still stack on the classifying `/ɡ/` (`gedegel w-…xa…`) when the poi
 
 | Agelan | Reading |
 |---------|---------|
-| `zodavan gogunol buzuban` | *Clark is (the same as) Superman* |
-| `zodavan gogunom buzuban` | soft: *Clark is basically Superman* |
-| `zodavan gul gogunol buzuban` | *Clark is not (identical to) Superman* |
-| `zodavan gogunol wedahem buzuban` | *Clark is allegedly Superman* |
-| `zeberel gogunol buzuban` | NP-internal: *the person who is Superman* |
+| `zodavan gonunul buzuban` | *Clark is (the same as) Superman* |
+| `zodavan gonunum buzuban` | soft: *Clark is basically Superman* |
+| `zodavan gul gonunul buzuban` | *Clark is not (identical to) Superman* |
+| `zodavan gonunul wahadem buzuban` | *Clark is allegedly Superman* |
+| `zeberel gonunul buzuban` | NP-internal: *the person who is Superman* |
 
-Ordinary content still available (`zogunol` *a coin*; `gogunol` as *token*-like when not in the identity frame). The special reading wins under closed **`goguno…` + `/b/`** used as the property.
+Ordinary content still available (`zonunul` *a coin*; `gonunul` as *token*-like when not in the identity frame). The special reading wins under closed **`gonunu…` + `/b/`** used as the property.
 
 Comparative claims as clause content use the same no-*be*-verb shape with a ranked fence — [comparatives](comparatives.md).
 
@@ -231,38 +231,38 @@ Comparative claims as clause content use the same no-*be*-verb shape with a rank
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Classification packaging and **SAME** endings (**-l** / **-m** / **-n** / **-r**) are the point.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `edege` *teacher* · `uzudu` *student* · `oguno` **SAME** · `odava` *Clark* · `uzuba` *Superman* · `ebere` (band: *the person who…*) · `awala` *walk* · `elebe` *sleep*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `edege` *teacher* · `uzudu` *student* · `onunu` **SAME** · `odava` *Clark* · `uzuba` *Superman* · `ebere` (band: *the person who…*) · `awala` *walk* · `elebe` *sleep*
 
 #### English → Agelan
 
 **1.** *Clark is Superman.*
 
 ::: details Show answer
-`zodavan gogunol buzuban.`
+`zodavan gonunul buzuban.`
 :::
 
 **2.** *Clark is basically Superman.*
 
 ::: details Show answer
-`zodavan gogunom buzuban.`
+`zodavan gonunum buzuban.`
 :::
 
 **3.** *Clark is Superman (titled identity).*
 
 ::: details Show answer
-`zodavan gogunon buzuban.`
+`zodavan gonunun buzuban.`
 :::
 
 **4.** *The person who is Superman walks.*
 
 ::: details Show answer
-`zeberel gogunol buzuban vawalal.`
+`zeberel gonunul buzuban vawalal.`
 :::
 
 **5.** *The teacher is Azawan.*
 
 ::: details Show answer
-`zedegel gogunol bazawan.`
+`zedegel gonunul bazawan.`
 :::
 
 **6.** *Azawan is a teacher.*
@@ -274,36 +274,36 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **7.** *Clark is the same (as already ascribed) as Superman.*
 
 ::: details Show answer
-`zodavan gogunor buzuban.`
+`zodavan gonunur buzuban.`
 :::
 
 #### Agelan → English
 
-**1.** `zodavan gogunom buzuban.`
+**1.** `zodavan gonunum buzuban.`
 
 ::: details Show answer
 *Clark is basically Superman.*
 :::
 
-**2.** `zodavan gogunol buzuban.`
+**2.** `zodavan gonunul buzuban.`
 
 ::: details Show answer
 *Clark is Superman.*
 :::
 
-**3.** `zeberel gogunol buzuban velebel.`
+**3.** `zeberel gonunul buzuban velebel.`
 
 ::: details Show answer
 *The person who is Superman sleeps.*
 :::
 
-**4.** `zedegel gogunol bazawan.`
+**4.** `zedegel gonunul bazawan.`
 
 ::: details Show answer
 *The teacher is Azawan.*
 :::
 
-**5.** `zodavan gogunon buzuban.`
+**5.** `zodavan gonunun buzuban.`
 
 ::: details Show answer
 *Clark is Superman (titled identity).*
@@ -315,7 +315,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Ululon is a teacher.*
 :::
 
-**7.** `zodavan gogunor buzuban.`
+**7.** `zodavan gonunur buzuban.`
 
 ::: details Show answer
 *Clark is the same (as already ascribed) as Superman.*

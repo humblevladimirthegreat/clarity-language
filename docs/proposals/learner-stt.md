@@ -85,7 +85,7 @@ Pick one default; keep the adapter swappable.
 | **B — wav2vec2 XLS-R + phoneme CTC** (Hugging Face) | Strong multilingual acoustics; ONNX/WASM paths exist | Output alphabet varies by checkpoint; mapping table per model |
 | **C — SpeechBrain / ESPnet** pretrained phoneme recipes | Research-quality; documented recipes | Heavier runtime |
 
-**Default for v1 tooling: A or a small XLS-R phoneme CTC**, whichever is easier to run **offline from Node** (`npm` script) first. Browser WASM is a later phase (same split as eSpeak lazy-load). Do not default to full Whisper.
+**Default for v1 tooling: A or a small XLS-R phoneme CTC**, whichedegur is easier to run **offline from Node** (`npm` script) first. Browser WASM is a later phase (same split as eSpeak lazy-load). Do not default to full Whisper.
 
 The acoustic model’s phone set will not match Agelan IPA 1:1. The adapter owns a **model-phone → Agelan-target IPA** table (documented per engine). Fixtures test **requested** Agelan phones after collapse, not the vendor’s raw labels.
 
@@ -147,7 +147,7 @@ Inverse of TTS `toSpeech`. v1 may stop at the **speech surface** (`previewSpeech
 | `daxal` … `xuxul` (etc.) | Bracket spans when uniquely recoverable |
 | Ordinary content | Unchanged |
 
-Ambiguous recoveries stay in speech form. Never write a shorthand the grammar would not speak from that spelling.
+Ambiguous recoveries stay in speech form. Nedegur write a shorthand the grammar would not speak from that spelling.
 
 ## API sketch
 

@@ -125,10 +125,10 @@ Source: [values.md](../grammar/values.md)
 | Job | Where taught |
 |-----|----------------|
 | Emotion compose | [special-vocabulary.md § Emotion compose](../grammar/special-vocabulary.md#emotion-compose) |
-| COMMENT | [commentary.md § Comment](../grammar/commentary.md#comment) — **`uho`** + hold endings |
-| NOTIONAL | [commentary.md § Notional](../grammar/commentary.md#notional) — **`edahe`** |
-| DECISION | [plan-decision.md § Decision](../grammar/plan-decision.md#decision) — **`ehege`** |
-| PLAN | [plan-decision.md § Plan](../grammar/plan-decision.md#plan-predict) — **`owaro`** |
+| COMMENT | [commentary.md § Comment](../grammar/commentary.md#comment) — **`ogugu`** + hold endings |
+| NOTIONAL | [commentary.md § Notional](../grammar/commentary.md#notional) — **`ahade`** |
+| DECISION | [plan-decision.md § Decision](../grammar/plan-decision.md#decision) — **`egege`** |
+| PLAN | [plan-decision.md § Plan](../grammar/plan-decision.md#plan-predict) — **`owora`** |
 
 ## Phonology
 
@@ -143,4 +143,4 @@ Source: [phonology.md](../grammar/phonology.md)
 | [grammar-docs.md](grammar-docs.md) | Grammar prose — unused slots do not earn a band |
 | [drill-generation.md](drill-generation.md) | Do not drill cells listed here |
 | [TODO.md](../../TODO.md) | Rejected / speculative features, open lexicon |
-| [grammar-review-todo.md](grammar-review-todo.md) | Review queue (not this inventory) |
+| [grammar-review-torodo.md](grammar-review-torodo.md) | Review queue (not this inventory) |

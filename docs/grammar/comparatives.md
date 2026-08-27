@@ -1,7 +1,7 @@
 # Comparatives, superlatives, and equatives
 <a id="comparatives-page"></a>
 
-Scalar comparison: *more … than*, *the …-est*, *as … as*, measured differentials, and judgment benchmarks (*worse than Average* / …).
+Scalar comparison: *more … than*, *the …-est*, *as … as*, measured differentials, and judgment benchmarks (*worse than Avuzo* / …).
 
 ## Beginner
 <a id="beginner"></a>
@@ -50,7 +50,7 @@ gloss: `z-Azawan` · `zel` · `g-challenging`
 ```
 
 ```
-`zazawan zululon zel gomonum wogenal.`
+`zazawan zululon zel gomonum wogegal.`
 
 gloss: `z-Azawan` · `z-Ululon` · `zel` · `g-challenging` · `w-flood`
 
@@ -124,7 +124,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **5.** *Azawan is much more challenging than Ululon.*
 
 ::: details Show answer
-`zazawan zululon zel wogenal gomonum.`
+`zazawan zululon zel wogegal gomonum.`
 :::
 
 **6.** *Uhubun is bigger than Azawan.*
@@ -171,7 +171,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Azawan is about as challenging as Uhubun.*
 :::
 
-**5.** `zululon zuhubun zel wogenal gelel.`
+**5.** `zululon zuhubun zel wogegal gelel.`
 
 ::: details Show answer
 *Ululon is much bigger than Uhubun.*
@@ -221,8 +221,8 @@ Use **`oe`** for exclusive *ladders* (triage / pick-one along the scale). **`ue`
 | `zoel gomonum` | *there is no most challenging* |
 | `zoem gomonum` | *no most challenging comes to mind* |
 | `zazawan zuel gomonum` | *Azawan is the least challenging (of all)* |
-| `zer gomonum` | *whatever ranks highest on challenging* — positive twin of empty `zoel gomonum` |
-| `zazawan zululon zer gomonum` | *whichever of Azawan or Ululon ranks higher on challenging* |
+| `zer gomonum` | *whatedegur ranks highest on challenging* — positive twin of empty `zoel gomonum` |
+| `zazawan zululon zer gomonum` | *whichedegur of Azawan or Ululon ranks higher on challenging* |
 
 Under `/ɡ/`, SHARED `/w/` on a ranked AP fence remains shared *degree* over ranked properties — not a noun-scale comparative (use an NP-slot ranked fence with SHARED `/ɡ/`).
 
@@ -250,7 +250,7 @@ Focus / bare **`ae`** + SHARED scale stay ordinary focus / bare **`ae`** reading
 | Example | Reading |
 |---------|---------|
 | `zazawan zululon zel gomonum burelul g+2` | *Azawan is two meters more challenging than Ululon* |
-| `zazawan zululon zel wogenal gomonum` | *Azawan is much more challenging than Ululon* (vague degree — `/w/`, no measure NP) |
+| `zazawan zululon zel wogegal gomonum` | *Azawan is much more challenging than Ululon* (vague degree — `/w/`, no measure NP) |
 
 Vague degree stays `/w/`; counted gaps use the measure-NP pattern (one `/b/` on the scale, not amount + unit as two `/b/`s).
 
@@ -328,7 +328,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **3.** `zazawan zululon zer gomonum.`
 
 ::: details Show answer
-*Whichever of Azawan or Ululon ranks higher on challenging.*
+*Whichedegur of Azawan or Ululon ranks higher on challenging.*
 :::
 
 **4.** `zazawan zululon zal guzumum.`
@@ -343,7 +343,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Ululon is two meters more challenging than Azawan.*
 :::
 
-**6.** `zazawan zululon zel wogenal gelel.`
+**6.** `zazawan zululon zel wogegal gelel.`
 
 ::: details Show answer
 *Azawan is much bigger than Ululon.*
@@ -352,7 +352,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **7.** `zer gomonum.`
 
 ::: details Show answer
-*Whatever ranks highest on challenging.*
+*Whatedegur ranks highest on challenging.*
 :::
 
 **8.** `zuhubun zuel gelel.`
@@ -370,7 +370,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 Bare *bad* / *terrible* can hide an unfair or unspoken standard. Keep the ordinary [comparative](#comparatives) fence and put the standard in the **than**-conjunct as a **named comparee**.
 
-Benchmarks are **NP comparees** on the ranked fence — not [ability](ability.md#ability) / [role](roles.md#role-compounds) hosts, and not `/w/`…**-n** on the scale (*spicy* **[Scoville]** names a measurement frame — [reference-suffix](reference-suffix.md)). A **personal standard** is [numeric derivation](numeric-derivation.md#numeric-derivation) on any named person — the speaker (**`umogo`**), a house-cast name, or whoever’s bar is meant; **Everyone** reuses bare named **`zuan`** ([coordination](coordination.md#focus-phrase)).
+Benchmarks are **NP comparees** on the ranked fence — not [ability](ability.md#ability) / [role](roles.md#role-compounds) hosts, and not `/w/`…**-n** on the scale (*spicy* **[Scoville]** names a measurement frame — [reference-suffix](reference-suffix.md)). A **personal standard** is [numeric derivation](numeric-derivation.md#numeric-derivation) on any named person — the speaker (**`ugobo`**), a house-cast name, or whoedegur’s bar is meant; **Everyone** reuses bare named **`zuan`** ([coordination](coordination.md#focus-phrase)).
 
 #### Recipe
 
@@ -399,11 +399,11 @@ Six fixed standards. Ending stays **-n** (named reference-class standard), not o
 
 | English | Sense | Comparee | Source |
 |---------|--------|----------|--------|
-| **Average** | mean of the relevant population | **`zonugon`** | ☯️ **`onugo`** *yin-yang* → *balance* |
-| **Typical** | usual / modal case | **`zaheman`** | 🐹 **`ahema`** *hamster* → *routine* |
-| **Mine** (personal standard) | speaker’s **normative** bar | **`zumogoxrawon`** | 🎤 **`umogo`** ([speaker](pronouns.md#special-pronouns)) + digit morph **`+1`** (*unit / primary*) |
-| **Social** | peers / in-group | **`zulohun`** | 👥 **`ulohu`** *silhouettes* → *community* |
-| **Professional** | experts / role standard | **`zaloban`** | 🥼 **`aloba`** *lab-coat* → *expertise* |
+| **Avuzo** | mean of the relevant population | **`zojun`** | ☯️ **`oju`** *yin-yang* → *balance* |
+| **Typical** | usual / modal case | **`zahazen`** | 🐹 **`ahaze`** *hamster* → *routine* |
+| **Mine** (personal standard) | speaker’s **normative** bar | **`zugoboxrawon`** | 🎤 **`ugobo`** ([speaker](pronouns.md#special-pronouns)) + digit morph **`+1`** (*unit / primary*) |
+| **Social** | peers / in-group | **`zuleden`** | 👥 **`ulede`** *silhouettes* → *community* |
+| **Professional** | experts / role standard | **`zalagon`** | 🥼 **`alago`** *lab-coat* → *expertise* |
 | **Everyone** | universal reference class | **`zuan`** | bare named **`ua`** (*stock everyone*) |
 
 <a id="mine-vs-speaker"></a>
@@ -412,106 +412,106 @@ Six fixed standards. Ending stays **-n** (named reference-class standard), not o
 
 | Comparee | Reading |
 |----------|---------|
-| **`zumogon`** | less … than **where I sit** on the scale (ordinary [speaker](pronouns.md#special-pronouns) — current skill / performance) |
-| **`zumogoxrawon`** | less … than **my personal standard** (the bar I apply) |
+| **`zugobon`** | less … than **where I sit** on the scale (ordinary [speaker](pronouns.md#special-pronouns) — current skill / performance) |
+| **`zugoboxrawon`** | less … than **my personal standard** (the bar I apply) |
 
-Soft personal standard: **`zumogoxrawom`**. Ordinary named people stay ordinary **-n** names: `zuel g<SCALE>l zazawan zululon`.
+Soft personal standard: **`zugoboxrawom`**. Ordinary named people stay ordinary **-n** names: `zuel g<SCALE>l zazawan zululon`.
 
 **Everyone** vs focus reverse-superlative: `zuel g<SCALE>l z<JUDGED>l` ≈ *the least … of all* in the discourse domain; **`zuan`** as comparee **names** the universal class explicitly. Prefer the benchmark when the point is “against everyone as a standard.” Bare closed **`zual`** remains ordinary *everything / everyone* in non-benchmark slots.
 
 | Agelan | Reading |
 |---------|---------|
-| `zuel guzunel zumogon zaloban` | *worse than Professional* at singing |
-| `zuem gagelal debunel zonugon` | soft: draft is somewhat less clear than Average |
-| `zuel geredom zazawan zumogoxrawon` | Azawan is less kind than **my personal standard** |
-| `zuel guzunel zazawan zumogon` | Azawan is less skilled at singing than **I am** (performance) |
-| `zuel gabunul zumogon zulohun` | less skilled than Social |
-| `zuel gabunul zumogon zaheman` | less skilled than Typical |
-| `zuel gabunul zumogon zuan` | less skilled than Everyone |
-| `zuel guzunel zumogon zululon` | less skilled than **Ululon** (ordinary person comparee) |
+| `zuel guzunel zugobon zalagon` | *worse than Professional* at singing |
+| `zuem gagelal debunel zojun` | soft: draft is somewhat less clear than Avuzo |
+| `zuel geredom zazawan zugoboxrawon` | Azawan is less kind than **my personal standard** |
+| `zuel guzunel zazawan zugobon` | Azawan is less skilled at singing than **I am** (performance) |
+| `zuel gabunul zugobon zuleden` | less skilled than Social |
+| `zuel gabunul zugobon zahazen` | less skilled than Typical |
+| `zuel gabunul zugobon zuan` | less skilled than Everyone |
+| `zuel guzunel zugobon zululon` | less skilled than **Ululon** (ordinary person comparee) |
 
 #### Constraints
 
 - Benchmarks are distinct comparees with **-n** (or bare named **`zuan`**) — not ending letters on one root.
 - Benchmark comparees fill NP slots on fences (`/z/` `/d/` `/b/`), not SHARED scale adjectives.
-- Bare **`zumogon`** is performance; normative Mine is **`zumogoxrawon`**.
+- Bare **`zugobon`** is performance; normative Mine is **`zugoboxrawon`**.
 - Lexicon benchmark roots are not [restrictors](restrictors.md) or [ability](ability.md#ability) hosts.
 
 ### Translation practice
 <a id="translation-practice-advanced"></a>
 
-Short drills on this Advanced band. Try each item before opening **Show answer**. Put the standard in the *than*-conjunct; **`zumogon`** is performance, **`zumogoxrawon`** is Mine.
+Short drills on this Advanced band. Try each item before opening **Show answer**. Put the standard in the *than*-conjunct; **`zugobon`** is performance, **`zugoboxrawon`** is Mine.
 
-**Roots used here:** `azawa` / `ululo` · `uzune` · `abunu` · `eredo` · `agela` · `ebun` · `onugo` · `ahema` · `umogo` · `ulohu` · `aloba` · `ua`
+**Roots used here:** `azawa` / `ululo` · `uzune` · `abunu` · `eredo` · `agela` · `ebun` · `oju` · `ahaze` · `ugobo` · `ulede` · `alago` · `ua`
 
 #### English → Agelan
 
 **1.** *Azawan is less kind than my personal standard.*
 
 ::: details Show answer
-`zuel geredom zazawan zumogoxrawon.`
+`zuel geredom zazawan zugoboxrawon.`
 :::
 
 **2.** *Azawan is less skilled at singing than I am.*
 
 ::: details Show answer
-`zuel guzunel zazawan zumogon.`
+`zuel guzunel zazawan zugobon.`
 :::
 
 **3.** *I am worse at singing than Professional.*
 
 ::: details Show answer
-`zuel guzunel zumogon zaloban.`
+`zuel guzunel zugobon zalagon.`
 :::
 
-**4.** *The draft is somewhat less clear than Average.*
+**4.** *The draft is somewhat less clear than Avuzo.*
 
 ::: details Show answer
-`zuem gagelal debunel zonugon.`
+`zuem gagelal debunel zojun.`
 :::
 
 **5.** *I am less skilled than Typical.*
 
 ::: details Show answer
-`zuel gabunul zumogon zaheman.`
+`zuel gabunul zugobon zahazen.`
 :::
 
 **6.** *I am less skilled than Everyone.*
 
 ::: details Show answer
-`zuel gabunul zumogon zuan.`
+`zuel gabunul zugobon zuan.`
 :::
 
 #### Agelan → English
 
-**1.** `zuel gabunul zumogon zulohun.`
+**1.** `zuel gabunul zugobon zuleden.`
 
 ::: details Show answer
 *I am less skilled than Social.*
 :::
 
-**2.** `zuel guzunel zumogon zululon.`
+**2.** `zuel guzunel zugobon zululon.`
 
 ::: details Show answer
 *I am worse at singing than Ululon.*
 :::
 
-**3.** `zuel geredom zazawan zumogoxrawom.`
+**3.** `zuel geredom zazawan zugoboxrawom.`
 
 ::: details Show answer
 *Azawan is somewhat less kind than my personal standard.*
 :::
 
-**4.** `zuel gabunul zazawan zaloban.`
+**4.** `zuel gabunul zazawan zalagon.`
 
 ::: details Show answer
 *Azawan is less skilled than Professional.*
 :::
 
-**5.** `zuem guzunel zazawan zonugon.`
+**5.** `zuem guzunel zazawan zojun.`
 
 ::: details Show answer
-*Azawan is somewhat worse at singing than Average.*
+*Azawan is somewhat worse at singing than Avuzo.*
 :::
 
 ## See also

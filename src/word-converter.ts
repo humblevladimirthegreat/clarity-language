@@ -270,7 +270,6 @@ function collectOrderPreservingCandidates(tokens: string[]): string[] {
 
   push(fitTokens(tokens, MAX_ROOT_LENGTH));
   push(fitTokens(tokens, 3));
-  push(fitTokens(tokens, 1));
 
   const scored: Array<{ word: string; kept: number; length: number; key: string }> = [];
   for (const sub of tokenSubsequences(tokens)) {
@@ -403,8 +402,11 @@ function* clarityRootCandidates(input: string): Generator<string> {
     return word;
   };
 
-  const yieldWords = function* (words: string[]): Generator<string> {
+  const yieldWords = function* (words: string[], minLetters = 3): Generator<string> {
     for (const word of words) {
+      if (word.length < minLetters) {
+        continue;
+      }
       const pushed = push(word);
       if (pushed) {
         yield pushed;
@@ -417,6 +419,7 @@ function* clarityRootCandidates(input: string): Generator<string> {
   yield* yieldWords(collectHyphenSegmentCandidates(input));
   yield* yieldWords(collectOrderPreservingCandidates([...tokens].reverse()));
   yield* yieldWords(collectHashFallbackCandidates(input));
+  yield* yieldWords(collectOrderPreservingCandidates(tokens), 1);
 }
 
 /**

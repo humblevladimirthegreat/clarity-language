@@ -566,7 +566,7 @@ function walkClause(
 ) {
   for (const unit of clause.units) walkUnit(cursor, unit, constructions, sharedRoles, into);
   if (clause.dependent) {
-    pushIndex(into, takeRaw(cursor, clause.dependent.odo.raw));
+    pushIndex(into, takeRaw(cursor, clause.dependent.orodo.raw));
     walkClause(cursor, clause.dependent.clause, constructions, sharedRoles, into);
   }
 }

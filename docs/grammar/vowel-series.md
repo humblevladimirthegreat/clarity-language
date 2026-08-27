@@ -11,7 +11,7 @@ You already use them on clause force: **`jal`** statement, **`jol`** question, *
 | Vowel | Job (every table) | Force you know |
 |-------|-------------------|----------------|
 | **`a`** | add / include / inventory / hold | **`jal`** statement |
-| **`o`** | one-choice / menu / instead | **`jol`** question |
+| **`o`** | one-choice / menenu / instead | **`jol`** question |
 | **`e`** | rank / soft-correct / priority | **`jel`** command |
 | **`u`** | subtract / not / except | **`jul`** prohibition |
 

@@ -37,7 +37,7 @@ Same split as number shorthand (`g+3` written, full CV spoken); the spoken shape
 Anaphor (**-r**): interior **`=`** (`d[=]`, `d{=}`, `h(=)`, `d<=>`).
 
 ```
-`zehadon v[uzune] d[jael]l.`
+`zebonen v[uzune] d[jael]l.`
 
 gloss: `z-listener` · `v-[sing]` · `d-[yes]`
 
@@ -86,7 +86,7 @@ The open’s PoS is the **outer-clause slot** of the **entire** span — not the
 | `/x/` | Discourse-only citation (epigraph, freestanding span) | `x[…]` |
 
 ```
-`jul zehadon v[uzune] dumogol.`
+`jul zebonen v[uzune] dugobol.`
 
 gloss: `j-command` · `z-listener` · `v-[sing]` · `d-speaker`
 
@@ -109,7 +109,7 @@ Interior words keep **their** PoS. The fence is the adverb. A one-word manner co
 
 The aside **keeps the outer speech act** (omissible statement `jal` stays omitted). Put a new question or command in its own turn, not inside `h(…)`.
 
-A *because* / *if* dependent is still **`odo`**, not an aside. A second name for the same person uses [identity](predication.md#identity) or classification, not `h(…)`.
+A *because* / *if* dependent is still **`orodo`**, not an aside. A second name for the same person uses [identity](predication.md#identity) or classification, not `h(…)`.
 
 ```
 `zazawan vawalal h(zuzumum).`
@@ -131,7 +131,7 @@ gloss: `z-grace` · `v-walk` · `h-(happy)`
 | ***The title X* / *the proverb X*** as named unit | **mention** **-n** — `d@{…}` |
 | **Nativized loan** | ordinary PoS + root + ending — no span |
 | **That (prior span) again** | span anaphor — `daxur` / `hexur` / `duxur` / … |
-| **Name / word citation outside a clause** | prefix-less **root + ending** — [citation forms](core.md#citation-forms) (`umogon.`, `<Sam>n`) — not a span |
+| **Name / word citation outside a clause** | prefix-less **root + ending** — [citation forms](core.md#citation-forms) (`ugobon.`, `<Sam>n`) — not a span |
 
 **Trap:** `d<sushi>` is a span open + interior blob; `d<sushi>l` is one content word whose root is foreign. Do not put **-l** / **-m** / **-n** / **-r** after an opaque closer. Spans need a PoS because they fill a **clause** slot; freestanding citation drops the role letter instead.
 
@@ -303,7 +303,7 @@ The vowel **after** `x` is **EDGE** — how far the open runs.
 | EDGE | Job | Needs close? | Typical writing |
 |------|-----|--------------|-----------------|
 | **a** | **Multi-token open** — push a stack frame until explicit close (default) | yes | `d[…]` … `]` |
-| **e** | **Clause-scoped** — auto-pop before the next clause-force `/j/` or clause-level `/x/` join (**complete**) | no (auto) | `d[…` run to clause end |
+| **e** | **Clause-scoped** — auto-pop before the next clause-force `/j/` or clause-ledegul `/x/` join (**complete**) | no (auto) | `d[…` run to clause end |
 | **o** | **Atomic** — exactly **one** following token | no | `d[uzune]`, `d<sushi>` |
 | **u** | **Empty / redacted** — no interior; also **anaphor** **-r** | no | `d[]`, `d[=]` |
 

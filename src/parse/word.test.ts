@@ -9,14 +9,14 @@ function parseOk(input: string): MorphWord {
 }
 
 describe("parseWord — content / gl- / citation", () => {
-  it("parses zumogon as /z/ content umogo + -n (core.md orthography)", () => {
-    const word = parseOk("zumogon");
-    assert.equal(word.raw, "zumogon");
+  it("parses zugobon as /z/ content ugobo + -n (core.md orthography)", () => {
+    const word = parseOk("zugobon");
+    assert.equal(word.raw, "zugobon");
     assert.equal(word.pos, "z");
     assert.equal(word.ending, "n");
     assert.equal(word.gl, undefined);
     assert.equal(word.plural, undefined);
-    assert.deepEqual(word.family, { kind: "content", roots: ["umogo"] });
+    assert.deepEqual(word.family, { kind: "content", roots: ["ugobo"] });
   });
 
   it("parses glelulul as left-bound /ɡ/ (core.md gl-)", () => {

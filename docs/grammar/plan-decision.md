@@ -11,17 +11,17 @@ Intention vs forecast, and how revisable a pick is — closed `/h/` mood roots.
 
 English *will* / *going to* mixes **intention** (what someone means to do) with **forecast** (what will happen). Agelan uses **two closed mood roots**.
 
-**Shape:** floating `/h/` **`owaro`** 🗺️ *world-map* → *plan*, or **`edelo`** 🔭 *telescope* → *forecast*. Content verbs stay ordinary. Prefer floating `/h/` (optional `/w/` only when the mood frames a preceding `/ɡ/`).
+**Shape:** floating `/h/` **`owora`** 🗺️ *world-map* → *plan*, or **`elego`** 🔭 *telescope* → *forecast*. Content verbs stay ordinary. Prefer floating `/h/` (optional `/w/` only when the mood frames a preceding `/ɡ/`).
 
 | Claim | Form | Metaphor |
 |-------|------|----------|
-| Intention: what someone means to do | **`PLAN`** **`howaro…`** | a **map** charts a course you mean to take |
-| Forecast: what will happen | **`PREDICT`** **`hedelo…`** | a **telescope** looks ahead at a distance |
+| Intention: what someone means to do | **`PLAN`** **`howora…`** | a **map** charts a course you mean to take |
+| Forecast: what will happen | **`PREDICT`** **`helego…`** | a **telescope** looks araread at a distance |
 
-Ordinary content stays available (`zowarol` *a map*; `vowarol` *to plan*).
+Ordinary content stays available (`zoworal` *a map*; `voworal` *to plan*).
 
 ```
-`zazawan howarom vawalal.`
+`zazawan howoram vawalal.`
 
 gloss: `z-grace-proper` · `h-PLAN-sketch` · `v-walk`
 
@@ -29,7 +29,7 @@ gloss: `z-grace-proper` · `h-PLAN-sketch` · `v-walk`
 ```
 
 ```
-`zululon howarol vawalal.`
+`zululon howoral vawalal.`
 
 gloss: `z-courage-proper` · `h-PLAN-itinerary` · `v-walk`
 
@@ -37,7 +37,7 @@ gloss: `z-courage-proper` · `h-PLAN-itinerary` · `v-walk`
 ```
 
 ```
-`hedelom vanunul.`
+`helegom vanunul.`
 
 gloss: `h-PREDICT` · `v-rain`
 
@@ -48,113 +48,113 @@ Use **PLAN** when the clause frames **intention**. Use **PREDICT** when it frame
 
 | English bundle | Prefer |
 |----------------|--------|
-| *I plan to … / I mean to …* (direction) | **PLAN** sketch (`howarom`) |
-| *here's how I'll …* (steps filled in) | **PLAN** itinerary (`howarol`) |
-| *if that fails, I'll …* (backup path) | **PLAN** fork (`howaror`) |
-| *the named plan X* (that object is the plan) | **PLAN** proper (`howaron`) — rare; ordinary [**-n**](reference-suffix.md#proper-name--n) |
-| *it will rain / I expect …* (world forecast) | **PREDICT** (`hedelom`) |
+| *I plan to … / I mean to …* (direction) | **PLAN** sketch (`howoram`) |
+| *here's how I'll …* (steps filled in) | **PLAN** itinerary (`howoral`) |
+| *if that fails, I'll …* (backup path) | **PLAN** fork (`howorar`) |
+| *the named plan X* (that object is the plan) | **PLAN** proper (`howoran`) — rare; ordinary [**-n**](reference-suffix.md#proper-name--n) |
+| *it will rain / I expect …* (world forecast) | **PREDICT** (`helegom`) |
 
 | Agelan | Reading |
 |---------|---------|
-| `… howarom …` | intention; **sketch** (soft default) |
-| `… howarol …` | intention; **itinerary** |
-| `… howaron …` | intention; this PLAN-word **names** a particular object |
-| `… howaror …` | intention; **fork** / contingency |
-| `… hedelom …` | **forecast** |
+| `… howoram …` | intention; **sketch** (soft default) |
+| `… howoral …` | intention; **itinerary** |
+| `… howoran …` | intention; this PLAN-word **names** a particular object |
+| `… howorar …` | intention; **fork** / contingency |
+| `… helegom …` | **forecast** |
 
 #### Endings — map resolution
 <a id="plan-map-resolution"></a>
 <a id="plan-endings"></a>
 
-On **`owaro`**, **-l / -m / -r** mark **how drawn the intention map is**. **-n** is ordinary [proper](reference-suffix.md#proper-name--n) (this PLAN-word names a particular object — not a fourth map grain). *Plan B* as a backup *path* is **fork**; a plan that is actually named uses **-n**.
+On **`owora`**, **-l / -m / -r** mark **how drawn the intention map is**. **-n** is ordinary [proper](reference-suffix.md#proper-name--n) (this PLAN-word names a particular object — not a fourth map grain). *Plan B* as a backup *path* is **fork**; a plan that is actually named uses **-n**.
 
 | Ending | Form | Job | Reading | Mnemonic |
 |--------|------|-----|---------|----------|
-| **-m** | **`howarom`** | **sketch** (soft default) | direction only — *means to …* without steps | open sketch |
-| **-l** | **`howarol`** | **itinerary** | steps filled in — *how* is on the map | locked itinerary |
-| **-r** | **`howaror`** | **fork** | contingency / backup path — *if not A, then B* | forked / other-path |
-| **-n** | **`howaron`** | **proper** | this word names a particular plan-object | ordinary **n**ame |
+| **-m** | **`howoram`** | **sketch** (soft default) | direction only — *means to …* without steps | open sketch |
+| **-l** | **`howoral`** | **itinerary** | steps filled in — *how* is on the map | locked itinerary |
+| **-r** | **`howorar`** | **fork** | contingency / backup path — *if not A, then B* | forked / other-path |
+| **-n** | **`howoran`** | **proper** | this word names a particular plan-object | ordinary **n**ame |
 
-When unsure, prefer **`howarom`**. Omit **PLAN** when you are not framing intention.
+When unsure, prefer **`howoram`**. Omit **PLAN** when you are not framing intention.
 
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills on this Beginner band. Try each item before opening **Show answer**. Pick **PLAN** (`owaro` + map-resolution ending) or **PREDICT** (`edelo`) — not a generic English *will*.
+Short drills on this Beginner band. Try each item before opening **Show answer**. Pick **PLAN** (`owora` + map-resolution ending) or **PREDICT** (`elego`) — not a generic English *will*.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `owaro` · `edelo` · `awala` · `uwuru` · `uzune` · `urunu` · `elebe` · `anunu`
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `owora` · `elego` · `awala` · `uwuru` · `uzune` · `urunu` · `elebe` · `anunu`
 
 #### English → Agelan
 
 **1.** *Azawan means to walk.* (direction only)
 
 ::: details Show answer
-`zazawan howarom vawalal.`
+`zazawan howoram vawalal.`
 :::
 
 **2.** *Ululon has the steps on the map: walk.*
 
 ::: details Show answer
-`zululon howarol vawalal.`
+`zululon howoral vawalal.`
 :::
 
 **3.** *If that path fails, Uhubun will walk.* (backup course)
 
 ::: details Show answer
-`zuhubun howaror vawalal.`
+`zuhubun howorar vawalal.`
 :::
 
 **4.** *Azawan means to write.* (direction only)
 
 ::: details Show answer
-`zazawan howarom vuwurul.`
+`zazawan howoram vuwurul.`
 :::
 
 **5.** *Forecast: it rains.*
 
 ::: details Show answer
-`hedelom vanunul.`
+`helegom vanunul.`
 :::
 
 **6.** *Uhubun means to sing.* (direction only)
 
 ::: details Show answer
-`zuhubun howarom vuzunel.`
+`zuhubun howoram vuzunel.`
 :::
 
 #### Agelan → English
 
-**1.** `zululon howarom vawalal.`
+**1.** `zululon howoram vawalal.`
 
 ::: details Show answer
 *Ululon means to walk.* (sketch plan)
 :::
 
-**2.** `zazawan howarol vuwurul.`
+**2.** `zazawan howoral vuwurul.`
 
 ::: details Show answer
 *Azawan’s itinerary is to write.*
 :::
 
-**3.** `zuhubun howaror vurunun.`
+**3.** `zuhubun howorar vurunun.`
 
 ::: details Show answer
 *If that path fails, Uhubun will run.* (fork plan)
 :::
 
-**4.** `hedelom vanunul.`
+**4.** `helegom vanunul.`
 
 ::: details Show answer
 *Forecast: it rains.*
 :::
 
-**5.** `zazawan howarom vuzunel.`
+**5.** `zazawan howoram vuzunel.`
 
 ::: details Show answer
 *Azawan means to sing.* (sketch plan)
 :::
 
-**6.** `zululon howarom velebel.`
+**6.** `zululon howoram velebel.`
 
 ::: details Show answer
 *Ululon means to sleep.* (sketch plan)
@@ -169,14 +169,14 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 Stack ordinary [evidentiality](commentary.md#evidentiality) with **PREDICT** when you mark **how** you forecast (pattern, inference, …), not bare certainty.
 
 ```
-`hedelom hawam vanunul.`
+`helegom habawam vanunul.`
 
 gloss: `h-PREDICT` · `h-PATTERN` · `v-rain`
 
 *Forecast from pattern: it rains.*
 ```
 
-**PLAN** map resolution stays the Beginner table. Stack **DECISION** when you also mark pick firmness (`howarol … hehegel`).
+**PLAN** map resolution stays the Beginner table. Stack **DECISION** when you also mark pick firmness (`howoral … hegegel`).
 
 ### Decision (revisability)
 <a id="decision"></a>
@@ -184,16 +184,16 @@ gloss: `h-PREDICT` · `h-PATTERN` · `v-rain`
 
 Mark **how revisable a pick is** — temporary / open / settled — with one closed mood root. English *decide* / *I've decided* / *final decision* smuggles firmness; Agelan puts firmness on the ending (same map as unmet values).
 
-**Shape:** floating `/h/` mood **`ehege`** ✅ *check* → *decision* (optional `/w/` when scoped only to a preceding `/ɡ/`). Prefer floating `/h/`. Ending = [changeability](#decision-changeability).
+**Shape:** floating `/h/` mood **`egege`** ✅ *check* → *decision* (optional `/w/` when scoped only to a preceding `/ɡ/`). Prefer floating `/h/`. Ending = [changeability](#decision-changeability).
 
 | Form | Job | Mnemonic |
 |------|-----|----------|
-| **`hehege…`** | how revisable the pick is | a **checkmark** confirms a pick |
+| **`hegege…`** | how revisable the pick is | a **checkmark** confirms a pick |
 
-Ordinary content still available (`zehegel` *a checkmark*; `vehegel` *to check / tick`).
+Ordinary content still available (`zegegel` *a checkmark*; `vegegel` *to check / tick`).
 
 ```
-`zululon hehegem vuzunel.`
+`zululon hegegem vuzunel.`
 
 gloss: `z-courage-proper` · `h-DECISION-modifiable` · `v-sing`
 
@@ -201,126 +201,126 @@ gloss: `z-courage-proper` · `h-DECISION-modifiable` · `v-sing`
 ```
 
 ```
-`zuhubun hehegel velebel.`
+`zuhubun hegegel velebel.`
 
-gloss: `z-beauty-proper` · `h-DECISION-irreversible` · `v-sleep`
+gloss: `z-beauty-proper` · `h-DECISION-irredegursible` · `v-sleep`
 
 *Uhubun has decided for good to sleep.*
 ```
 
-Use **DECISION** when the clause marks **pick firmness**. Intention map grain stays [**PLAN**](#plan-predict). The choosing act is [join-act **`von`**](join-extras.md#join-act-verbs) (*chooses as the one*). Autonomy-as-need is [**`obola`**](values.md#need-inventory). *Can’t decide yet* on an activity is [ability](ability.md#ability) (`…xe…` / `…xo…` / …).
+Use **DECISION** when the clause marks **pick firmness**. Intention map grain stays [**PLAN**](#plan-predict). The choosing act is [join-act **`von`**](join-extras.md#join-act-verbs) (*chooses as the one*). Autonomy-as-need is [**`alorodo`**](values.md#need-inventory). *Can’t decide yet* on an activity is [ability](ability.md#ability) (`…xe…` / `…xo…` / …).
 
 | English bundle | Prefer |
 |----------------|--------|
-| *I've decided / that's my decision* (+ how locked) | **DECISION** (`hehegem`, …) |
+| *I've decided / that's my decision* (+ how locked) | **DECISION** (`hegegem`, …) |
 | *choose X (as the one)* | join-act **`von`** |
-| *I plan to …* (map grain) | **PLAN** (`howarom`, …) |
-| *choice / agency* (need) | value **`obola`** |
+| *I plan to …* (map grain) | **PLAN** (`howoram`, …) |
+| *choice / agency* (need) | value **`alorodo`** |
 | *can’t decide* (capacity) | host + ability **`xe` / `xo` / `xu`** (or **`xa`** if able) |
 | *won’t decide* (refusal) | ordinary refuse / choice packaging |
 | *commitment / policy / indecision* (lexicon nouns) | ordinary **`enebe`** / **`emome`** / **`aweva`** |
 
 | Agelan | Reading |
 |---------|---------|
-| `… hehegel …` | decided; **irreversible** / settled |
-| `… hehegem …` | decided; **open to change** (or unknown) |
-| `… hehegen …` | decided; this DECISION-word **names** a particular object |
-| `… heheger …` | decided **for now** (temporary) |
-| `zazawan howarol hehegel vawalal` | itinerary **and** settled pick |
-| `… howarom …` | intention **sketch** — map grain, not firmness |
+| `… hegegel …` | decided; **irredegursible** / settled |
+| `… hegegem …` | decided; **open to change** (or unknown) |
+| `… hegegen …` | decided; this DECISION-word **names** a particular object |
+| `… hegeger …` | decided **for now** (temporary) |
+| `zazawan howoral hegegel vawalal` | itinerary **and** settled pick |
+| `… howoram …` | intention **sketch** — map grain, not firmness |
 
 #### Endings — changeability
 <a id="decision-changeability"></a>
 
-On **`ehege`**, **-l / -m / -r** match unmet [changeability](values.md#value-changeability): irreversible / modifiable / temporary. **-n** is ordinary proper (this DECISION-word names a particular object), not a fourth firmness.
+On **`egege`**, **-l / -m / -r** match unmet [changeability](values.md#value-changeability): irredegursible / modifiable / temporary. **-n** is ordinary proper (this DECISION-word names a particular object), not a fourth firmness.
 
 | Ending | Form | Job | Reading |
 |--------|------|-----|---------|
-| **-l** | **`hehegel`** | **irreversible** | settled / final as far as you can tell |
-| **-m** | **`hehegem`** | **modifiable** (soft default if unknown) | open to revision |
-| **-r** | **`heheger`** | **temporary** | pick for this moment; usually revisable later |
-| **-n** | **`hehegen`** | **proper** | this word names a particular decision-object |
+| **-l** | **`hegegel`** | **irredegursible** | settled / final as far as you can tell |
+| **-m** | **`hegegem`** | **modifiable** (soft default if unknown) | open to revision |
+| **-r** | **`hegeger`** | **temporary** | pick for this moment; usually revisable later |
+| **-n** | **`hegegen`** | **proper** | this word names a particular decision-object |
 
 Always pick an ending on **DECISION**; unknown → **-m**. Deferral stays ordinary packaging.
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills on this Intermediate band. Try each item before opening **Show answer**. Pick **DECISION** (`ehege` + changeability), stack evidentiality on **PREDICT**, or stack **PLAN** with **DECISION**.
+Short drills on this Intermediate band. Try each item before opening **Show answer**. Pick **DECISION** (`egege` + changeability), stack evidentiality on **PREDICT**, or stack **PLAN** with **DECISION**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `owaro` · `edelo` · `ehege` · `awala` · `uwuru` · `uzune` · `elebe` · `anunu` · `awa` (*pattern*, evidential)
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `owora` · `elego` · `egege` · `awala` · `uwuru` · `uzune` · `elebe` · `anunu` · `abawa` (*pattern*, evidential)
 
 #### English → Agelan
 
 **1.** *Ululon has decided to sing, and can still change that.*
 
 ::: details Show answer
-`zululon hehegem vuzunel.`
+`zululon hegegem vuzunel.`
 :::
 
 **2.** *Uhubun has decided for good to sleep.*
 
 ::: details Show answer
-`zuhubun hehegel velebel.`
+`zuhubun hegegel velebel.`
 :::
 
 **3.** *From the usual pattern, it will rain.*
 
 ::: details Show answer
-`hedelom hawam vanunul.`
+`helegom habawam vanunul.`
 :::
 
 **4.** *Azawan has the itinerary, and the pick is settled: walk.*
 
 ::: details Show answer
-`zazawan howarol hehegel vawalal.`
+`zazawan howoral hegegel vawalal.`
 :::
 
 **5.** *Azawan has decided for now to write.*
 
 ::: details Show answer
-`zazawan heheger vuwurul.`
+`zazawan hegeger vuwurul.`
 :::
 
 **6.** *Ululon has decided to walk, and can still change that.*
 
 ::: details Show answer
-`zululon hehegem vawalal.`
+`zululon hegegem vawalal.`
 :::
 
 #### Agelan → English
 
-**1.** `zazawan hehegem vuzunel.`
+**1.** `zazawan hegegem vuzunel.`
 
 ::: details Show answer
 *Azawan has decided to sing — still open to revision.*
 :::
 
-**2.** `zululon hehegel velebel.`
+**2.** `zululon hegegel velebel.`
 
 ::: details Show answer
 *Ululon has decided for good to sleep.*
 :::
 
-**3.** `hedelom hawam vanunul.`
+**3.** `helegom habawam vanunul.`
 
 ::: details Show answer
 *Forecast from pattern: it rains.*
 :::
 
-**4.** `zuhubun heheger vawalal.`
+**4.** `zuhubun hegeger vawalal.`
 
 ::: details Show answer
 *Uhubun has decided for now to walk.* (temporary pick)
 :::
 
-**5.** `zululon hehegem vuwurul.`
+**5.** `zululon hegegem vuwurul.`
 
 ::: details Show answer
 *Ululon has decided to write — still open to revision.*
 :::
 
-**6.** `zazawan howarol hehegel vawalal.`
+**6.** `zazawan howoral hegegel vawalal.`
 
 ::: details Show answer
 *Azawan’s itinerary is to walk, and the pick is settled.*

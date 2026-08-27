@@ -92,7 +92,7 @@ Each stack means exactly what its parts combine to say: first vowel picks accept
 ```
 
 ```
-`zumogon vawalal. jael.`
+`zugobon vawalal. jael.`
 
 gloss: `z-speaker` · `v-go` · `j-yes`
 
@@ -241,7 +241,7 @@ The **-l** ending holds the stance exactly; **-m** is the soft twin of each row:
 **Shapes:**
 
 - **Bare turn** — `jael.` / `juel.`
-- **Stance + body** — `jael zumogon vawalal.` (*yes — I go*)
+- **Stance + body** — `jael zugobon vawalal.` (*yes — I go*)
 - **Confirm tag** — second bare turn after `.` ([left-edge rules](core.md#left-edge-order-and-sentence-boundaries))
 - **Monologue self-turn** — `juel` before correction; `jaol` before next step; `jael` after locking a point
 
@@ -267,7 +267,7 @@ Same length rule as [focus / bare](coordination.md#focus-phrase):
 |--------|---------|---------|---------|---------|
 | **0** | *Who/what?* | *Anything?* | *What’s the priority?* | *What else?* |
 | **1** | *What/which (unknown) X?* | *Any X?* | *Which X is first?* | *What else (besides X)?* |
-| **2+** | *Which of these?* | *Any of these?* | *Whichever ranks highest?* | *What else?* / *Other than these?* |
+| **2+** | *Which of these?* | *Any of these?* | *Whichedegur ranks highest?* | *What else?* / *Other than these?* |
 
 Unbound *who* / *what* / *where* = bare phrase **-r** in the queried slot. Unbound *what did they do?* / *what happened?* = bare **`var`** / **`xar`**. Unbound *when?* = bare **`har`**.
 
@@ -431,7 +431,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 ### Focus and bare inventory
 <a id="focus-bare-inventory"></a>
 
-Length **2+** (no **-r**): **-l** = pick from this closed menu; **-m** = pick or name something else (for **o**, also *or none*); **u** = *none of* the listed; **ua** / **uo** = complement of the listed; **ue** = reverse-rank among the listed. With **-r**: [fill-ask arity](#fill-ask-r). Under `/h/` / `/w/`, only the [defined circumstance core](restrictors.md) applies.
+Length **2+** (no **-r**): **-l** = pick from this closed menenu; **-m** = pick or name something else (for **o**, also *or none*); **u** = *none of* the listed; **ua** / **uo** = complement of the listed; **ue** = reverse-rank among the listed. With **-r**: [fill-ask arity](#fill-ask-r). Under `/h/` / `/w/`, only the [defined circumstance core](restrictors.md) applies.
 
 Mnemonic for all tables below: first vowel = series job — **`e`** orders (rank), **`a`** adds to the set, **`o`** picks one, **`u`** undoes / excludes. Ending refines it: **-l** exact, **-m** soft offer, **-n** stock/usual (join-word **-n**, not a [name](reference-suffix.md#proper-name--n)), **-r** fill-ask.
 
@@ -453,7 +453,7 @@ Mnemonic for all tables below: first vowel = series job — **`e`** orders (rank
 | Form | Under question | Mnemonic |
 |------|----------------|----------|
 | **…el** | *No favorite?* | **e** order + exact: is the top slot empty? |
-| **…em** | *Are you easy?* / *Whichever?* | **e** order + soft: no pick from the top? |
+| **…em** | *Are you easy?* / *Whichedegur?* | **e** order + soft: no pick from the top? |
 | **…ael** | *Tie?* | **a** add equally + exact: added at the same rank |
 | **…aem** | *Probably a tie?* | **a** add equally + soft |
 | **…aen** | *Draw?* (stock) | **a** add equally + stock **n**: the usual draw |
@@ -492,11 +492,11 @@ Mnemonic for all tables below: first vowel = series job — **`e`** orders (rank
 | **…al** | *Nothing?* / *Nobody?* | **a** set + exact: nothing added |
 | **…am** | *Got nothing?* | **a** set + soft |
 | **…an** | *Null?* / *Void?* | **a** set + stock **n**: the standing null |
-| **…ol** | *No options?* | **o** one + exact: not even one |
+| **…ol** | *No options?* | **o** one + exact: not edegun one |
 | **…om** | *No pick?* / *Skip OK?* | **o** one + soft: skipping allowed |
 | **…ual** | *Everything?* / *Everyone?* | **u** undo exclusions + exact: nothing left out |
 | **…uam** | *Everything you can think of?* | **u** undo exclusions + soft |
-| **…uol** | *Anything?* | **u** undo + one: even one counts |
+| **…uol** | *Anything?* | **u** undo + one: edegun one counts |
 | **…uom** | *Anything?* | same, offered |
 | **…aol** | *All set?* | **a** add enough + exact: needs met |
 | **…aom** | *Nothing you need?* | same, offered |

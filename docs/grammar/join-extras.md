@@ -35,7 +35,7 @@ These are **content verbs**, not VP soft-packaging joins. Soft packaging (includ
 | **`vuan`** | *excludes* | `zazawan debanul vuan` — *Azawan excludes nuts* |
 | **`vuon`** | *bars (anything but)* | `zazawan dogovel vuon` — *Azawan bars coffee (anything else is fine)* |
 | **`ven`** | *prioritizes* | `zazawan dugujul ven` — *Azawan prioritizes the bug* |
-| **`vaen`** | *equates / ties* | `zazawan degogelsh vaen` — *Azawan equates the candidates* |
+| **`vaen`** | *equates / ties* | `zazawan dagegolsh vaen` — *Azawan equates the candidates* |
 | **`voen`** | *tries* | `zazawan damugal voen` — *Azawan tries the fix* |
 | **`vuen`** | *deprioritizes* | `zazawan dodugul vuen` — *Azawan deprioritizes dessert* |
 
@@ -43,10 +43,10 @@ These are **content verbs**, not VP soft-packaging joins. Soft packaging (includ
 
 | | Agelan | Gloss |
 |--|---------|--------|
-| refuse vs exclude | `zumogon demadel vun` vs `zumogon demadel vuan` | *I refuse meat* vs *I exclude meat* |
-| exclude vs anything but | `zumogon debanul vuan` vs `zumogon debanul vuon` | *I exclude nuts* vs *I bar nuts (anything else is fine)* |
-| one choice vs open picks | `zumogon dalenal von` vs `zumogon dalenal vaon` | *I choose that path (only)* vs *I pick that path (more may come)* |
-| prioritize vs try | `zumogon damugal ven` vs `zumogon damugal voen` | *I prioritize the fix* vs *I try the fix* |
+| refuse vs exclude | `zugobon demadel vun` vs `zugobon demadel vuan` | *I refuse meat* vs *I exclude meat* |
+| exclude vs anything but | `zugobon debanul vuan` vs `zugobon debanul vuon` | *I exclude nuts* vs *I bar nuts (anything else is fine)* |
+| one choice vs open picks | `zugobon dalenal von` vs `zugobon dalenal vaon` | *I choose that path (only)* vs *I pick that path (more may come)* |
+| prioritize vs try | `zugobon damugal ven` vs `zugobon damugal voen` | *I prioritize the fix* vs *I try the fix* |
 | *and then* (clauses) | `SENT₁ SENT₂ xan` | *SENT₁ and then SENT₂* — use clause soft **-n**, not `van` |
 
 Boundaries: not revisers (`an` / `on` / …) and not phrase named-list **-n** (those stay on `/z/` `/d/` `/b/` `/w/`). Only the **-n** exponent is a content join-act; `-l` / `-m` / `-r` under `/v/` remain joins.
@@ -71,7 +71,7 @@ gloss: `z-birthday-cake` · `g-including` · `b-peanut`
 
 These are **not** phrase named-list joins and **not** [restrictors](restrictors.md). Stock AP bundles use [mention](spans.md) spans instead of list-style `A B gan` without `/b/`. Parallel `-l` / `-m` / `-r` under `/ɡ/` stay AP **joins**; under `/h/` they stay [restrictors](restrictors.md) (defined core) or reserved.
 
-| Form | `/ɡ/` (*N … b-X*) | `/h/` (*event … b-X*) | Example |
+| Form | `/ɡ/` (*N … b-X*) | `/h/` (*edegunt … b-X*) | Example |
 |------|-------------------|------------------------|---------|
 | **`gan` / `han`** | *including / with* | *with / including* | `zubarol gan bebanul`; `zazawan han bululon vawalal` |
 | **`gon` / `hon`** | *exclusive for* (X is N’s sole pick) | *exclusively for / as the one* | `zugolal gon badedal`; `… hon badedal vebonem` |
@@ -79,8 +79,8 @@ These are **not** phrase named-list joins and **not** [restrictors](restrictors.
 | **`gun` / `hun`** | *against / anti-* (refuses X) | *refusing* | `zobulel gun bulel`; `… hun vemedel` |
 | **`guan` / `huan`** | *without / excluding* | *excluding* | `zubarol guan bebanul`; `… huan bebanul vuvazel` |
 | **`guon` / `huon`** | *open to anything but* (X barred; rest free) | *barring / anything but* | `zugolal guon bebanul`; `… huon bebanul vebonem` |
-| **`gen` / `hen`** | *prioritizing / headed by* | *prioritizing* | `zubezul gen bugujul`; `… hen bugujul vamugal` |
-| **`gaen` / `haen`** | *on a par with* | *equating / tying* | `zalenal gaen badogal`; `… haen begogelsh vezagel` |
+| **`gen` / `hen`** | *prioritizing / headed by* | *prioritizing* | `zuzebul gen bugujul`; `… hen bugujul vamugal` |
+| **`gaen` / `haen`** | *on a par with* | *equating / tying* | `zalenal gaen badogal`; `… haen bagegolsh vezagel` |
 | **`goen` / `hoen`** | *for trying / trial of* | *trying* | `zalenal goen bamugal`; `… hoen bamugal vedabul` |
 | **`guen` / `huen`** | *deprioritizing / trailing* | *deprioritizing* | `zugolal guen bodugul`; `… huen bodugul vemedel` |
 
@@ -92,7 +92,7 @@ These are **not** phrase named-list joins and **not** [restrictors](restrictors.
 | exclude vs anything but | `bebanul guan` vs `bebanul guon` | *without nuts* vs *open to anything but nuts* |
 | sole vs open pick | `balenal gon` vs `balenal gaon` | *path-only* vs *path among options* |
 | prioritize vs try | `bamugal gen` vs `bamugal goen` | *fix-first* vs *try-the-fix* |
-| relation vs reviser | `zahanal gan bazawan` vs `zahanal al zazawan` | PP-like *team including Azawan* vs slot-repair *team, including Azawan* |
+| relation vs reviser | `zahahagel gan bazawan` vs `zahahagel al zazawan` | PP-like *team including Azawan* vs slot-repair *team, including Azawan* |
 | stock AP label | `g{primary colors}` / mention span | content *including* needs `/b/` (`gan b-…`) |
 | open vs without (causal) | `haon bazem` vs `huan buludul` | sufficient hit vs necessary-style exclusion — [causation](causation.md) |
 
@@ -103,7 +103,7 @@ Unary `/b/` only — restore list/empty arity on the **argument**, not by stacki
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Name a **join-act** (`van` / `von` / …) when someone *does* the move to an object; name a **join-relation** (`gan` / `han` / … plus one `/b/`) when a host is framed *including* / *without* / *prioritizing* something.
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` (house names); `abele` *apple*; `adeda` *tea*; `ugabe` *topping*; `ule` *lie*; `ebanu` *nuts*; `ogove` *coffee*; `uguju` *bug*; `egoge` *candidate*; `amuga` *fix*; `ubaro` *cake*; `ugola` *drink*; `ahana` *team*; `awala` *walk*.
+**Roots used here:** `azawa` / `ululo` / `uhubu` (house names); `abele` *apple*; `adeda` *tea*; `ugabe` *topping*; `ule` *lie*; `ebanu` *nuts*; `ogove` *coffee*; `uguju` *bug*; `agego` *candidate*; `amuga` *fix*; `ubaro` *cake*; `ugola` *drink*; `ahahage` *team*; `awala` *walk*.
 
 #### English → Agelan
 
@@ -175,7 +175,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan tries the fix.*
 :::
 
-**5.** `zahanal gan bazawan.`
+**5.** `zahahagel gan bazawan.`
 
 ::: details Show answer
 *A team including Azawan.*
@@ -187,7 +187,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan works the fix, prioritizing the bug.*
 :::
 
-**7.** `zazawan degogelsh vaen.`
+**7.** `zazawan dagegolsh vaen.`
 
 ::: details Show answer
 *Azawan equates the candidates.*

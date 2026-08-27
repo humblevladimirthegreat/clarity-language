@@ -101,7 +101,7 @@ const CONTENT_BY_POS = {
 function isOdoWord(word: MorphWord): boolean {
   const { family } = word;
   if (family.kind === "content" && family.roots.length === 1) {
-    return family.roots[0] === "odo";
+    return family.roots[0] === "orodo";
   }
   return false;
 }

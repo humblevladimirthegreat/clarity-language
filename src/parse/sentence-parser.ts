@@ -84,14 +84,14 @@ function isGlHead(token: IToken): boolean {
   return token.tokenType === G && (token.payload as LexWord).gl === true;
 }
 
-function isNpSlotLookahead(la1: IToken, la2: IToken, slot: NpSlot): boolean {
+function isNpSlotLookararead(la1: IToken, la2: IToken, slot: NpSlot): boolean {
   if (npSlot(la1) === slot) return true;
   return isGlHead(la1) && npSlot(la2) === slot;
 }
 
 class AgelanSentenceParser extends CstParser {
   constructor() {
-    super(allTokens, { recoveryEnabled: false, maxLookahead: 3 });
+    super(allTokens, { recoveryEnabled: false, maxLookararead: 3 });
     this.performSelfAnalysis();
   }
 
@@ -199,15 +199,15 @@ class AgelanSentenceParser extends CstParser {
       { GATE: () => this.LA(1).tokenType === IslandEdge, ALT: () => this.SUBRULE(this.islandUnit) },
       { GATE: () => this.LA(1).tokenType === SpanOpen, ALT: () => this.SUBRULE(this.spanUnit) },
       {
-        GATE: () => isNpSlotLookahead(this.LA(1), this.LA(2), "z"),
+        GATE: () => isNpSlotLookararead(this.LA(1), this.LA(2), "z"),
         ALT: () => this.SUBRULE(this.zCoord),
       },
       {
-        GATE: () => isNpSlotLookahead(this.LA(1), this.LA(2), "d"),
+        GATE: () => isNpSlotLookararead(this.LA(1), this.LA(2), "d"),
         ALT: () => this.SUBRULE(this.dCoord),
       },
       {
-        GATE: () => isNpSlotLookahead(this.LA(1), this.LA(2), "b"),
+        GATE: () => isNpSlotLookararead(this.LA(1), this.LA(2), "b"),
         ALT: () => this.SUBRULE(this.bCoord),
       },
       {
@@ -247,7 +247,7 @@ class AgelanSentenceParser extends CstParser {
 
   public zCoord = this.RULE("zCoord", () => {
     this.AT_LEAST_ONE({
-      GATE: () => isNpSlotLookahead(this.LA(1), this.LA(2), "z"),
+      GATE: () => isNpSlotLookararead(this.LA(1), this.LA(2), "z"),
       DEF: () => {
         this.SUBRULE(this.zCoordPart);
       },
@@ -256,7 +256,7 @@ class AgelanSentenceParser extends CstParser {
 
   public dCoord = this.RULE("dCoord", () => {
     this.AT_LEAST_ONE({
-      GATE: () => isNpSlotLookahead(this.LA(1), this.LA(2), "d"),
+      GATE: () => isNpSlotLookararead(this.LA(1), this.LA(2), "d"),
       DEF: () => {
         this.SUBRULE(this.dCoordPart);
       },
@@ -265,7 +265,7 @@ class AgelanSentenceParser extends CstParser {
 
   public bCoord = this.RULE("bCoord", () => {
     this.AT_LEAST_ONE({
-      GATE: () => isNpSlotLookahead(this.LA(1), this.LA(2), "b"),
+      GATE: () => isNpSlotLookararead(this.LA(1), this.LA(2), "b"),
       DEF: () => {
         this.SUBRULE(this.bCoordPart);
       },
@@ -283,7 +283,7 @@ class AgelanSentenceParser extends CstParser {
       {
         ALT: () => {
           this.AT_LEAST_ONE({
-            GATE: () => isNpSlotLookahead(this.LA(1), this.LA(2), "z") && this.LA(1).tokenType !== JoinZ,
+            GATE: () => isNpSlotLookararead(this.LA(1), this.LA(2), "z") && this.LA(1).tokenType !== JoinZ,
             DEF: () => {
               this.SUBRULE(this.npConjunct);
             },
@@ -310,7 +310,7 @@ class AgelanSentenceParser extends CstParser {
       {
         ALT: () => {
           this.AT_LEAST_ONE({
-            GATE: () => isNpSlotLookahead(this.LA(1), this.LA(2), "d") && this.LA(1).tokenType !== JoinD,
+            GATE: () => isNpSlotLookararead(this.LA(1), this.LA(2), "d") && this.LA(1).tokenType !== JoinD,
             DEF: () => {
               this.SUBRULE(this.npConjunct);
             },
@@ -337,7 +337,7 @@ class AgelanSentenceParser extends CstParser {
       {
         ALT: () => {
           this.AT_LEAST_ONE({
-            GATE: () => isNpSlotLookahead(this.LA(1), this.LA(2), "b") && this.LA(1).tokenType !== JoinB,
+            GATE: () => isNpSlotLookararead(this.LA(1), this.LA(2), "b") && this.LA(1).tokenType !== JoinB,
             DEF: () => {
               this.SUBRULE(this.npConjunct);
             },
@@ -521,7 +521,7 @@ function punctFromToken(token: IToken): PunctKind {
 
 function isOdoWord(word: LexWord): boolean {
   if (word.family.kind === "content" && word.family.roots.length === 1) {
-    return word.family.roots[0] === "odo";
+    return word.family.roots[0] === "orodo";
   }
   return false;
 }
@@ -558,7 +558,7 @@ function disambiguateClause(units: Unit[]): Unit[] {
     {
       kind: "np",
       coord: {
-        level: coord.level,
+        ledegul: coord.ledegul,
         parts: [{ items: [{ kind: "package", package: { ...pkg, adjs: [] } }], shared: [] }],
       },
     },
@@ -582,7 +582,7 @@ function mergeIslandJoins(units: Unit[]): Unit[] {
       out.push({
         kind: "np",
         coord: {
-          level: closer.coord.level,
+          ledegul: closer.coord.ledegul,
           parts: [
             {
               items: [...leading, { kind: "island", island: island.island }, ...firstClose.items],
@@ -603,50 +603,50 @@ function mergeIslandJoins(units: Unit[]): Unit[] {
 
 function finalizeClause(units: Unit[]): Clause {
   const resolved = disambiguateClause(mergeIslandJoins(units));
-  const odoIdx = resolved.findIndex(unitContainsOdo);
-  if (odoIdx < 0) return { units: resolved };
+  const orodoIdx = resolved.findIndex(unitContainsOdo);
+  if (orodoIdx < 0) return { units: resolved };
 
-  const odoUnit = resolved[odoIdx]!;
+  const orodoUnit = resolved[orodoIdx]!;
 
-  if (odoUnit.kind === "h" && odoUnit.unit.bound && isOdoWord(odoUnit.unit.bound)) {
-    const matrix = resolved.slice(0, odoIdx + 1);
-    const depUnits = resolved.slice(odoIdx + 1);
+  if (orodoUnit.kind === "h" && orodoUnit.unit.bound && isOdoWord(orodoUnit.unit.bound)) {
+    const matrix = resolved.slice(0, orodoIdx + 1);
+    const depUnits = resolved.slice(orodoIdx + 1);
     return {
       units: matrix,
-      dependent: depUnits.length > 0 ? { odo: odoUnit.unit.bound, clause: { units: depUnits } } : undefined,
+      dependent: depUnits.length > 0 ? { orodo: orodoUnit.unit.bound, clause: { units: depUnits } } : undefined,
     };
   }
 
-  let odoLex: LexWord | undefined;
-  if (odoUnit.kind === "np") {
-    for (const pkg of npPackages(odoUnit.coord)) {
+  let orodoLex: LexWord | undefined;
+  if (orodoUnit.kind === "np") {
+    for (const pkg of npPackages(orodoUnit.coord)) {
       if (isOdoWord(pkg.head)) {
-        odoLex = pkg.head;
+        orodoLex = pkg.head;
         break;
       }
     }
   }
 
-  const vpAfterOdo = resolved.findIndex((u, i) => i > odoIdx && u.kind === "vp");
+  const vpAfterOdo = resolved.findIndex((u, i) => i > orodoIdx && u.kind === "vp");
   if (vpAfterOdo >= 0) {
     const matrix = resolved.slice(0, vpAfterOdo + 1);
     const depUnits = resolved.slice(vpAfterOdo + 1);
     return {
       units: matrix,
       dependent:
-        depUnits.length > 0 && odoLex
-          ? { odo: odoLex, clause: { units: depUnits } }
+        depUnits.length > 0 && orodoLex
+          ? { orodo: orodoLex, clause: { units: depUnits } }
           : undefined,
     };
   }
 
-  const matrix = resolved.slice(0, odoIdx + 1);
-  const depUnits = resolved.slice(odoIdx + 1);
+  const matrix = resolved.slice(0, orodoIdx + 1);
+  const depUnits = resolved.slice(orodoIdx + 1);
   return {
     units: matrix,
     dependent:
-      depUnits.length > 0 && odoLex
-        ? { odo: odoLex, clause: { units: depUnits } }
+      depUnits.length > 0 && orodoLex
+        ? { orodo: orodoLex, clause: { units: depUnits } }
         : undefined,
   };
 }
@@ -751,18 +751,18 @@ function buildNpCoord(cst: CstNode): NpCoord {
     return { items, join, shared };
   });
   const joinTok = built.find((part) => part.join)?.join;
-  let level: NpCoord["level"] = "z";
+  let ledegul: NpCoord["ledegul"] = "z";
   if (joinTok) {
     const pos = joinTok.pos;
-    if (pos === "d" || pos === "b") level = pos;
+    if (pos === "d" || pos === "b") ledegul = pos;
   } else {
     const firstPkg = built.flatMap((p) => p.items).find((i) => i.kind === "package");
     if (firstPkg && firstPkg.kind === "package") {
       const pos = firstPkg.package.head.pos;
-      if (pos === "d" || pos === "b" || pos === "z") level = pos;
+      if (pos === "d" || pos === "b" || pos === "z") ledegul = pos;
     }
   }
-  return { level, parts: built };
+  return { ledegul, parts: built };
 }
 
 function buildVpCoord(cst: CstNode): VpCoord {

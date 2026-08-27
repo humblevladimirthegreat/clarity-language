@@ -14,7 +14,7 @@ Ordinary content under **`/h/`** (clause) and **`/w/`** (prior `/ɡ/`) is a **va
 
 | Prefix | Scope |
 |--------|--------|
-| `/h/` | the **clause** (motive, prescription, judgment of the event) — floats like other `/h/` |
+| `/h/` | the **clause** (motive, prescription, judgment of the edegunt) — floats like other `/h/` |
 | `/w/` | the **preceding `/ɡ/`** (property or possessive ascription) — stays on that adjective |
 
 **Shape cue:** **need root** + mid-word **`x`** + stance vowel + ending → value word on this page.
@@ -22,16 +22,16 @@ Ordinary content under **`/h/`** (clause) and **`/w/`** (prior `/ɡ/`) is a **va
 ### Need inventory
 <a id="need-inventory"></a>
 
-Six closed needs. Senses are fixed; lexicon roots are published. Ordinary content PoS stays available (`zobolal` *a ballot box*; `vuzehul` *to defend*); under `/h/` / `/w/` value morphology, the need reading wins.
+Six closed needs. Senses are fixed; lexicon roots are published. Ordinary content PoS stays available (`zalorodol` *a ballot box*; `vuhuhel` *to defend*); under `/h/` / `/w/` value morphology, the need reading wins.
 
 | Sense | Lexicon root | Metaphor | Gloss |
 |-------|--------------|----------|--------|
-| autonomy | **`obola`** | 🗳️ *ballot-box* → *choice* | choice, agency, self-direction |
-| competence | **`odolo`** | 🧰 *toolbox* → *readiness* | efficacy, skill, getting things to work |
+| autonomy | **`alorodo`** | 🗳️ *ballot-box* → *choice* | choice, agency, self-direction |
+| competence | **`orodolo`** | 🧰 *toolbox* → *readiness* | efficacy, skill, getting things to work |
 | relatedness | **`ogono`** | 🪢 *knot* → *bond* | connection, belonging, care |
-| pleasure | **`azedo`** | 🍓 *strawberry* → *sweetness* | enjoyment, comfort, aesthetic payoff |
-| survival | **`uzehu`** | 🛡️ *shield* → *defense* | safety, health, material sufficiency |
-| unspecified | **`egege`** | 🥚 *egg* → *potential* | need named without picking among the five |
+| pleasure | **`awero`** | 🍓 *strawberry* → *sweetness* | enjoyment, comfort, aesthetic payoff |
+| survival | **`uhuhe`** | 🛡️ *shield* → *defense* | safety, health, material sufficiency |
+| unspecified | **`ega`** | 🥚 *egg* → *potential* | need named without picking among the five |
 
 ### Word shape
 <a id="word-shape"></a>
@@ -41,7 +41,7 @@ Six closed needs. Senses are fixed; lexicon roots are published. Ordinary conten
 ```
 
 1. **PoS** — `/h/` or `/w/`.
-2. **Need root** — one of the six (`obola` / `odolo` / `ogono` / `azedo` / `uzehu` / `egege`).
+2. **Need root** — one of the six (`alorodo` / `orodolo` / `ogono` / `awero` / `uhuhe` / `ega`).
 3. **Optional `x`-addition** — stance vowel **`a` / `e` / `o` / `u`**.
 4. **Ending** — on bare needs, ordinary [reference-suffix](reference-suffix.md). On compounds, **-l / -m / -r** follow the stance’s table ([contact](#value-contact) / [preference](#value-preference) / [force](#value-force) / [changeability](#value-changeability)); **-n** is ordinary [proper](reference-suffix.md#proper-name--n) (this word names a particular object — rare on `/h/` `/w/`).
 
@@ -60,10 +60,10 @@ Five ways of relating to a need. Vowels loosely echo [revisers](revisers.md) / j
 
 **Beginner focus:** bare **topic**, **`xa`** (met), **`xo`** (ought), and **`xu`** (unmet). Motive **`xe`** is [Intermediate](#intermediate).
 
-**Bare need** (no `x`): topic only. Ending keeps ordinary reference-suffix senses (`hazedol` = pleasure topic).
+**Bare need** (no `x`): topic only. Ending keeps ordinary reference-suffix senses (`hawerol` = pleasure topic).
 
 ```
-`hazedol.`
+`hawerol.`
 
 gloss: `h-pleasure`
 
@@ -103,7 +103,7 @@ On **`xa`** compounds, **-l / -m / -r** mark **how you contact** the (claimed) p
 | `…xan` | **proper** (rare) |
 
 ```
-`zugodal gohohum bumogon wodoloxal.`
+`zugodal gohohum bugobon worodoloxal.`
 
 gloss: `z-neighborhood` · `g-home` · `b-speaker` · `w-competence-met-physical`
 
@@ -123,7 +123,7 @@ gloss: `z-neighborhood` · `g-home` · `b-speaker` · `w-competence-met-physical
 | **-r** | **invite** | Worth considering here (lightest) |
 | **-n** | **proper** | This ought-word names a particular object |
 
-**Mnemonic:** **-l** locked / bound; **-r** light invite — matches language-wide **-l** hardness (`jal`, closed joins). Gloss **-l** as **bound in-frame**, not “morally mandatory forever.” Always pick an ending on **`xo`**; unknown → **-m**.
+**Mnemonic:** **-l** locked / bound; **-r** light invite — matches language-wide **-l** hardness (`jal`, closed joins). Gloss **-l** as **bound in-frame**, not “morally mandatory foredegur.” Always pick an ending on **`xo`**; unknown → **-m**.
 
 | Form | Force |
 |------|--------|
@@ -143,18 +143,18 @@ gloss: `h-relatedness-ought-endorse`
 ### Unmet (`xu`) — changeability
 <a id="value-changeability"></a>
 
-**`xu`** = host costs / subtracts from the need. **-l / -m / -r** = **changeability** (temporariness / reversibility). **-n** is ordinary proper (a named object), not a titled-unmet flavor.
+**`xu`** = host costs / subtracts from the need. **-l / -m / -r** = **changeability** (temporariness / redegursibility). **-n** is ordinary proper (a named object), not a titled-unmet flavor.
 
 | Ending | Job | Mnemonic |
 |--------|-----|----------|
-| **-l** | **irreversible** — fixed as far as you can tell | hard / locked (**-l**) |
+| **-l** | **irredegursible** — fixed as far as you can tell | hard / locked (**-l**) |
 | **-m** | **modifiable** — effort or circumstance may change it (soft default if unknown) | open to change |
 | **-r** | **temporary** — usually met; not this moment | light / this-moment only |
 | **-n** | **proper** — this unmet-word names a particular object | ordinary **n**ame |
 
 | Form | Reading |
 |------|---------|
-| `…xul` | **irreversible** |
+| `…xul` | **irredegursible** |
 | `…xum` | **modifiable** |
 | `…xur` | **temporary** |
 | `…xun` | **proper** (rare) |
@@ -172,14 +172,14 @@ gloss: `z-meeting` · `w-autonomy-unmet-temporary`
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `edege` *teacher* · `abogo` *book* · `ohohu` *house* · `awala` *walk* · `ezehe` *tell* · `uzune` *sing* · `aweru` *gift* · `azudo` *meeting* · `obola` *autonomy* · `odolo` *competence* · `ogono` *relatedness* · `azedo` *pleasure* · `uzehu` *survival* · `egege` *unspecified need*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `edege` *teacher* · `abogo` *book* · `ohohu` *house* · `awala` *walk* · `ezehe` *tell* · `uzune` *sing* · `aweru` *gift* · `azudo` *meeting* · `alorodo` *autonomy* · `orodolo` *competence* · `ogono` *relatedness* · `awero` *pleasure* · `uhuhe` *survival* · `ega` *unspecified need*
 
 #### English → Agelan
 
 **1.** *Pleasure (as a topic).*
 
 ::: details Show answer
-`hazedol.`
+`hawerol.`
 :::
 
 **2.** *The gift serves relatedness (physical channel).*
@@ -191,7 +191,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **3.** *The house serves competence (physical channel).*
 
 ::: details Show answer
-`zohohul wodoloxal.`
+`zohohul worodoloxal.`
 :::
 
 **4.** *The meeting costs autonomy right now (temporary).*
@@ -209,13 +209,13 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **6.** *Unspecified need (as a topic).*
 
 ::: details Show answer
-`hegegel.`
+`hegal.`
 :::
 
 **7.** *The book serves competence (mental channel).*
 
 ::: details Show answer
-`zabogol wodoloxam.`
+`zabogol worodoloxam.`
 :::
 
 **8.** *Uhubun sings — survival ought to be protected (bound).*
@@ -226,7 +226,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 #### Agelan → English
 
-**1.** `hazedol.`
+**1.** `hawerol.`
 
 ::: details Show answer
 *Pleasure (as a topic).*
@@ -244,13 +244,13 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *The meeting costs autonomy right now (temporary).*
 :::
 
-**4.** `zabogol wodoloxam.`
+**4.** `zabogol worodoloxam.`
 
 ::: details Show answer
 *The book serves competence (mental channel).*
 :::
 
-**5.** `hegegel.`
+**5.** `hegal.`
 
 ::: details Show answer
 *Unspecified need (as a topic).*
@@ -268,7 +268,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *The house serves survival (physical channel).*
 :::
 
-**8.** `zedegel wodoloxum.`
+**8.** `zedegel worodoloxum.`
 
 ::: details Show answer
 *The teacher costs competence (modifiable).*
@@ -286,7 +286,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 |--------|----------|--------|
 | **-l** | **circumstantial** | The situation pulls this motive |
 | **-m** | **internal** | Your own reason (also soft default if unknown) |
-| **-r** | **protective** | Motive as *protecting against* unmet (away-from), not approach |
+| **-r** | **protective** | Motive as *protecting against* unmet (abaway-from), not approach |
 | **-n** | **proper** | This motive-word names a particular object |
 
 **Toward vs protective:** **-l / -m** approach-framed; **-r** fear/guard framed. Always pick an ending on **`xe`**; unknown → **-m**. *Usually my reason* → **`…xem`** + **`hual`**.
@@ -308,7 +308,7 @@ gloss: `h-relatedness-motive-internal`
 
 **Motive vs prescription:** **`xe`** = *am doing for X*; **`xo`** = *should serve/protect X*.
 
-Same changeability table as unmet **`xu`** is reused on [DECISION](plan-decision.md#decision) (**`ehege`**). [Ability](ability.md#ability) puts temporary / modifiable / irreversible *can’t* on stance vowels instead (**`xe` / `xo` / `xu`**) and keeps ordinary endings.
+Same changeability table as unmet **`xu`** is reused on [DECISION](plan-decision.md#decision) (**`egege`**). [Ability](ability.md#ability) puts temporary / modifiable / irredegursible *can’t* on stance vowels instead (**`xe` / `xo` / `xu`**) and keeps ordinary endings.
 
 ### Which ending table?
 
@@ -324,37 +324,37 @@ Same changeability table as unmet **`xu`** is reused on [DECISION](plan-decision
 
 | Site | Typical shape | English cue |
 |------|---------------|-------------|
-| Speaker-possessive / gratitude | host + `/ɡ/` possessive + `w…xa…` + channel | *my … (for competence)* — `wodoloxa…` |
+| Speaker-possessive / gratitude | host + `/ɡ/` possessive + `w…xa…` + channel | *my … (for competence)* — `worodoloxa…` |
 | Valence (praise) | neutral host + `w-` / `h-` **`xa`** + channel | *gift (serves relatedness)* — `wogonoxa…` |
 | Valence (criticism) | neutral host + **`xu`** + changeability | *meeting (costs autonomy)* — `woboloxu…` |
 | Prescription | clause + `h…xo…` + force | *should (for relatedness)* — `hogonoxo…` |
 | Motive | clause + `h…xe…` + standing | *I am … (for relatedness)* — `hogonoxe…` |
-| Topic-only | bare `h…` / `w…` need | `hazedol` |
+| Topic-only | bare `h…` / `w…` need | `hawerol` |
 
-Prefer **-m** on **`xu` / `xe` / `xo`** when that table’s dimension is unclear. Multiple values = multiple `/h/` or `/w/` words (`hodoloxal hogonoxal`), not stacked `x`-additions on one need.
+Prefer **-m** on **`xu` / `xe` / `xo`** when that table’s dimension is unclear. Multiple values = multiple `/h/` or `/w/` words (`horodoloxal hogonoxal`), not stacked `x`-additions on one need.
 
 ### More examples
 
 | Agelan | Reading |
 |---------|---------|
 | `… wuzuhuxam` | survival met; **mental** channel |
-| `… wazedoxar` | pleasure met; **spiritual** step-back |
+| `… waweroxar` | pleasure met; **spiritual** step-back |
 | `… hogonoxel` | motive relatedness; **circumstantial** |
 | `… hogonoxem` | motive relatedness; **internal** |
 | `… hogonoxer` | motive relatedness; **protective** |
 | `… hogonoxol` | should relatedness; **bound** |
 | `… hogonoxom` | should relatedness; **endorse** |
 | `… hogonoxor` | should relatedness; **invite** |
-| `… hogonoxul` | costs relatedness; **irreversible** |
+| `… hogonoxul` | costs relatedness; **irredegursible** |
 | `… hogonoxur` | costs relatedness; **temporary** |
-| `hegegel` | unspecified need (**topic** only) |
+| `hegal` | unspecified need (**topic** only) |
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `abogo` *book* · `ohohu` *house* · `awala` *walk* · `ezehe` *tell* · `uzune` *sing* · `uwuru` *write* · `aju` *sit* · `aweru` *gift* · `azudo` *meeting* · `obola` *autonomy* · `odolo` *competence* · `ogono` *relatedness* · `azedo` *pleasure* · `uzehu` *survival* · **`hual`** (*always*)
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `abogo` *book* · `ohohu` *house* · `awala` *walk* · `ezehe` *tell* · `uzune` *sing* · `uwuru` *write* · `aju` *sit* · `aweru` *gift* · `azudo` *meeting* · `alorodo` *autonomy* · `orodolo` *competence* · `ogono` *relatedness* · `awero` *pleasure* · `uhuhe` *survival* · **`hual`** (*always*)
 
 #### English → Agelan
 
@@ -385,13 +385,13 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **5.** *Ululon writes for competence (internal reason).*
 
 ::: details Show answer
-`zululon vuwurul hodoloxem.`
+`zululon vuwurul horodoloxem.`
 :::
 
 **6.** *Azawan’s house serves competence (physical channel).*
 
 ::: details Show answer
-`zohohul gohohum bazawan wodoloxal.`
+`zohohul gohohum bazawan worodoloxal.`
 :::
 
 **7.** *The gift serves relatedness (physical) — met contact, not motive.*
@@ -432,19 +432,19 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan sits for relatedness (protective motive).*
 :::
 
-**5.** `zululon vuwurul hodoloxem.`
+**5.** `zululon vuwurul horodoloxem.`
 
 ::: details Show answer
 *Ululon writes for competence (internal reason).*
 :::
 
-**6.** `zohohul gohohum bazawan wodoloxal.`
+**6.** `zohohul gohohum bazawan worodoloxal.`
 
 ::: details Show answer
 *Azawan’s house serves competence (physical channel).*
 :::
 
-**7.** `zawerul wazedoxar.`
+**7.** `zawerul waweroxar.`
 
 ::: details Show answer
 *The gift serves pleasure (spiritual channel).*
@@ -461,13 +461,13 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 ### Combined matrices
 
-Competence (`odolo`) and relatedness (`ogono`) shown for readability; same endings on every need root.
+Competence (`orodolo`) and relatedness (`ogono`) shown for readability; same endings on every need root.
 
 #### Met — contact channel
 
 | | **-l** physical | **-m** mental | **-r** spiritual | **-n** proper |
 |--|-----------------|---------------|------------------|---------------|
-| **xa** met | `wodoloxal` | `wodoloxam` | `wodoloxar` | `wodoloxan` |
+| **xa** met | `worodoloxal` | `worodoloxam` | `worodoloxar` | `worodoloxan` |
 | mnemonic | touches the body | happens in the head | reaches beyond the self | names an object |
 
 #### Motive — preference standing
@@ -486,7 +486,7 @@ Competence (`odolo`) and relatedness (`ogono`) shown for readability; same endin
 
 #### Unmet — changeability
 
-| | **-l** irreversible | **-m** modifiable | **-r** temporary | **-n** proper |
+| | **-l** irredegursible | **-m** modifiable | **-r** temporary | **-n** proper |
 |--|---------------------|-------------------|------------------|---------------|
 | **xu** unmet | `hogonoxul` | `hogonoxum` | `hogonoxur` | `hogonoxun` |
 | mnemonic | fixed for good | could change | only right now | names an object |
@@ -498,21 +498,21 @@ Competence (`odolo`) and relatedness (`ogono`) shown for readability; same endin
 - Ordinary **-l / -m** (literal / metaphorical) do not mean met / unmet on these compounds.
 - Value second halves are bare vowels **`a` / `e` / `o` / `u`** inside a compound — not prefix-less revisers (`al`, `ul`, …) and not restrictor joins (`hal`, …).
 - Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)).
-- **Incapability** compounds onto the **activity/property host** (`vuzunexul`) or fallback **`egera`** — [ability](ability.md#ability) — not onto need compounds (`hodoloxul` remains unmet competence).
+- **Incapability** compounds onto the **activity/property host** (`vuzunexul`) or fallback **`egera`** — [ability](ability.md#ability) — not onto need compounds (`horodoloxul` remains unmet competence).
 
 ### Translation practice
 <a id="translation-practice-advanced"></a>
 
 Short drills on this Advanced band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `ezehe` *tell* · `edege` *teacher* · `azudo` *meeting* · `odolo` *competence* · `ogono` *relatedness* · `azedo` *pleasure*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `ezehe` *tell* · `edege` *teacher* · `azudo` *meeting* · `orodolo` *competence* · `ogono` *relatedness* · `awero` *pleasure*
 
 #### English → Agelan
 
 **1.** *Azawan tells — competence met (physical) and relatedness as internal motive.*
 
 ::: details Show answer
-`zazawan vezehel hodoloxal hogonoxem.`
+`zazawan vezehel horodoloxal hogonoxem.`
 :::
 
 **2.** *Ululon tells — relatedness ought (bound) and relatedness as circumstantial motive.*
@@ -521,16 +521,16 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 `zululon vezehel hogonoxol hogonoxel.`
 :::
 
-**3.** *The meeting costs competence for good (unmet need, irreversible — not “can’t”).*
+**3.** *The meeting costs competence for good (unmet need, irredegursible — not “can’t”).*
 
 ::: details Show answer
-`zazudol wodoloxul.`
+`zazudol worodoloxul.`
 :::
 
 **4.** *Pleasure as a topic (ordinary ending — not met).*
 
 ::: details Show answer
-`hazedol.`
+`hawerol.`
 :::
 
 **5.** *Azawan is a teacher — relatedness unmet (modifiable).*
@@ -541,7 +541,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 #### Agelan → English
 
-**1.** `zazawan vezehel hodoloxal hogonoxem.`
+**1.** `zazawan vezehel horodoloxal hogonoxem.`
 
 ::: details Show answer
 *Azawan tells — competence is met (physical contact) and relatedness is the internal motive.*
@@ -553,13 +553,13 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 *Ululon tells — relatedness is bound as an ought, and relatedness is the circumstantial motive.*
 :::
 
-**3.** `zazudol wodoloxul.`
+**3.** `zazudol worodoloxul.`
 
 ::: details Show answer
-*The meeting costs competence (irreversible unmet need).*
+*The meeting costs competence (irredegursible unmet need).*
 :::
 
-**4.** `hazedol.`
+**4.** `hawerol.`
 
 ::: details Show answer
 *Pleasure (as a topic).*

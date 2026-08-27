@@ -8,17 +8,27 @@ import {
 
 import type { LexOverlay, LexReading, LexWord, MorphWord } from "./types.js";
 
-/** Six closed needs — [values.md § need inventory](docs/grammar/values.md#need-inventory). */
-export const NEED_ROOTS = new Set([
-  "obola",
-  "odolo",
-  "ogono",
-  "azedo",
-  "uzehu",
-  "egege",
-]);
+function needRootsFromOverlays(overlays: Iterable<OverlayRow>): Set<string> {
+  const roots = new Set<string>();
+  for (const overlay of overlays) {
+    if (overlay.definition.includes("need (")) {
+      roots.add(senseFormRoot(overlay.senseForm));
+    }
+  }
+  return roots;
+}
 
-const HOSTLESS_ABILITY_ROOT = "egera";
+function hostlessAbilityRootFromOverlays(overlays: Iterable<OverlayRow>): string | null {
+  for (const overlay of overlays) {
+    if (overlay.definition.includes("hostless ability")) {
+      return senseFormRoot(overlay.senseForm);
+    }
+  }
+  return null;
+}
+
+/** Six closed needs — filled from overlay definitions at table load. */
+export const NEED_ROOTS = new Set<string>();
 
 /** Defined restrictor core spellings under `/h/` / `/w/` (not `-n`). */
 const RESTRICTOR_CORE = new Set<string>([
@@ -51,6 +61,8 @@ const RESTRICTOR_CORE = new Set<string>([
 export type ClassifyTables = {
   overlays: Map<string, OverlayRow>;
   published: Map<string, PublishedRow>;
+  needRoots: Set<string>;
+  hostlessAbilityRoot: string | null;
 };
 
 function overlayKey(pos: string, senseForm: string): string {
@@ -81,7 +93,7 @@ function overlaySenseForm(word: MorphWord): string | null {
   return null;
 }
 
-function overlayReading(word: MorphWord, overlay: OverlayRow): LexReading {
+function overlayReading(word: MorphWord, overlay: OverlayRow, tables: ClassifyTables): LexReading {
   const { family, pos, ending } = word;
   const senseRoot = senseFormRoot(overlay.senseForm);
 
@@ -90,8 +102,8 @@ function overlayReading(word: MorphWord, overlay: OverlayRow): LexReading {
     if (pos === "g" || pos === "h") return "joinRelation";
   }
 
-  if (senseRoot === HOSTLESS_ABILITY_ROOT) return "ability";
-  if (NEED_ROOTS.has(senseRoot)) return "value";
+  if (tables.hostlessAbilityRoot && senseRoot === tables.hostlessAbilityRoot) return "ability";
+  if (tables.needRoots.has(senseRoot)) return "value";
 
   return "mood";
 }
@@ -116,7 +128,7 @@ const JOIN_SERIES_GLOSS: Record<string, string> = {
   e: "rank",
   ae: "equal rank",
   oe: "ranked exclusive or",
-  ue: "rank reversal",
+  ue: "rank redegursal",
 };
 
 const JOIN_ENDING_GLOSS: Record<string, string> = {
@@ -139,11 +151,11 @@ function isFenceJoin(word: MorphWord): boolean {
   return !isRestrictor(word);
 }
 
-function bareNeedTopic(word: MorphWord): boolean {
+function bareNeedTopic(word: MorphWord, tables: ClassifyTables): boolean {
   const { family, pos } = word;
   if (family.kind !== "content" || family.roots.length !== 1) return false;
   if (pos !== "h" && pos !== "w") return false;
-  return NEED_ROOTS.has(family.roots[0]!);
+  return tables.needRoots.has(family.roots[0]!);
 }
 
 function publishedRoots(word: MorphWord): string[] {
@@ -190,6 +202,20 @@ function publishedGlossForRoots(
   return { gloss, allFound };
 }
 
+function finishTables(
+  published: Map<string, PublishedRow>,
+  overlays: Map<string, OverlayRow>,
+): ClassifyTables {
+  const overlayList = [...overlays.values()];
+  const needRoots = needRootsFromOverlays(overlayList);
+  const hostlessAbilityRoot = hostlessAbilityRootFromOverlays(overlayList);
+  NEED_ROOTS.clear();
+  for (const root of needRoots) {
+    NEED_ROOTS.add(root);
+  }
+  return { overlays, published, needRoots, hostlessAbilityRoot };
+}
+
 export function createClassifyTables(
   publishedCsv: string,
   overlayCsv: string,
@@ -207,7 +233,7 @@ export function createClassifyTables(
     overlays.set(overlayKey(row.pos, row.senseForm), row);
   }
 
-  return { overlays, published };
+  return finishTables(published, overlays);
 }
 
 export function createClassifyTablesFromRows(
@@ -224,7 +250,7 @@ export function createClassifyTablesFromRows(
     overlays.set(overlayKey(row.pos, row.senseForm), row);
   }
 
-  return { overlays, published };
+  return finishTables(published, overlays);
 }
 
 export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
@@ -237,7 +263,7 @@ export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
       return {
         ...word,
         overlay: overlayFromRow(overlayRow),
-        reading: overlayReading(word, overlayRow),
+        reading: overlayReading(word, overlayRow, tables),
       };
     }
   }
@@ -251,7 +277,7 @@ export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
   if (family.kind === "x" && family.xFamily === "valueAbility") {
     const host = family.leftRoots[0];
     const reading: LexReading =
-      host && NEED_ROOTS.has(host) ? "value" : "ability";
+      host && tables.needRoots.has(host) ? "value" : "ability";
     return { ...word, reading };
   }
 
@@ -267,7 +293,7 @@ export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
     };
   }
 
-  if (bareNeedTopic(word)) {
+  if (bareNeedTopic(word, tables)) {
     return { ...word, reading: "value" };
   }
 

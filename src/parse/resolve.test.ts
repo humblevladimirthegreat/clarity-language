@@ -84,9 +84,9 @@ describe("resolve — content anaphors (pronouns.md)", () => {
   });
 
   it("does not bind value-channel -r as an anaphor", () => {
-    const { anaphors } = resolveOf("zazawan hobolaxar.");
+    const { anaphors } = resolveOf("zazawan halorodoxar.");
     assert.equal(
-      anaphors.filter((a) => a.pronoun.raw === "hobolaxar").length,
+      anaphors.filter((a) => a.pronoun.raw === "halorodoxar").length,
       0,
     );
   });
@@ -113,7 +113,7 @@ describe("resolve — span and number anaphors", () => {
 
 describe("resolve — role anaphors (roles.md)", () => {
   it("binds zaxozowor to the prior conflict verb", () => {
-    const { anaphors } = resolveOf("zar dumogon vozowol. zaxozowor vurunul.");
+    const { anaphors } = resolveOf("zar dugobon vozowol. zaxozowor vurunul.");
     const role = anaphors.find((a) => a.kind === "role");
     assert.ok(role);
     assert.equal(role!.pronoun.raw, "zaxozowor");
@@ -123,8 +123,8 @@ describe("resolve — role anaphors (roles.md)", () => {
 });
 
 describe("resolve — yes/no vs fill-ask (questions.md)", () => {
-  it("classifies jol zumogon vawalal. as yes/no", () => {
-    const { asks } = resolveOf("jol zumogon vawalal.");
+  it("classifies jol zugobon vawalal. as yes/no", () => {
+    const { asks } = resolveOf("jol zugobon vawalal.");
     assert.equal(asks[0]!.kind, "yesNo");
     assert.equal(asks[0]!.gaps.length, 0);
   });

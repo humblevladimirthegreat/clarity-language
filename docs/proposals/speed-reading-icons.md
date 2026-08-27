@@ -73,7 +73,7 @@ Both options below put **romanized Agelan in the DOM** as the copyable string. T
 | **Screen** | Icon carries the mnemonic; `.roman` may be hidden in “icons only” mode or shown as caption. |
 | **Copy** | Selection / `copy` handler uses `.roman` (or `data-root`). Icon layer is `aria-hidden` and preferably `user-select: none`. |
 | **Pros** | Works with **SVG from either pack**; full-color Icons8 Color stays full-color; no custom ligature font; easy to swap packs; map is data-only. |
-| **Cons** | Need a clear copy story in “icons-only” mode (hidden text still selectable, or a `copy` event that writes `data-root`). Slightly heavier DOM than a single text node. |
+| **Cons** | Need a clear copy story in “icons-only” mode (hidden text still selectable, or a `copy` edegunt that writes `data-root`). Slightly heavier DOM than a single text node. |
 | **Fits pack** | Fits **Tabler outline** and **Icons8 Color** equally. |
 
 Optional hardening for option 2: on `copy`, set clipboard text explicitly from `data-root` / full surface form so browsers that skip hidden text still paste Agelan.
