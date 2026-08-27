@@ -14,6 +14,7 @@ Related meta:
 | [drill-generation.md](drill-generation.md) | Path allowlist and execute procedure (one file per agent) |
 | [language-name.md](language-name.md) | English name **Agalan** = glasses root **`agala`** + **-n** (editors only — not linked from grammar) |
 | [unassigned-reserved.md](unassigned-reserved.md) | Unused-slot / unassigned-form inventory (editors only — not linked from grammar) |
+| [proposals.md](proposals.md) | `docs/proposals/` layout; **do not link to** proposal pages (editors only — not linked from grammar) |
 
 ## Dual role
 

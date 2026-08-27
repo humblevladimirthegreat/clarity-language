@@ -253,6 +253,20 @@ async function findBrokenLinks(file, anchorCache) {
       let targetFile = file;
       if (pathPart) {
         const target = resolve(dirname(file), pathPart);
+        const targetRel = relative(ROOT, target).replaceAll("\\", "/");
+        if (
+          targetRel === "docs/proposals" ||
+          targetRel.startsWith("docs/proposals/")
+        ) {
+          hits.push({
+            line: i + 1,
+            col: (m.index ?? 0) + 1,
+            url,
+            reason:
+              "do not link to proposal pages (see docs/meta/proposals.md)",
+          });
+          continue;
+        }
         if (!(await exists(target))) {
           hits.push({
             line: i + 1,

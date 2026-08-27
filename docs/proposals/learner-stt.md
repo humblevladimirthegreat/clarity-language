@@ -1,7 +1,7 @@
 # Proposal: learner STT (phoneme ASR, no Agalan speech corpus)
 
 **Status:** PROPOSED  
-**Related:** reverse of [learner-tts.md](learner-tts.md); long-term TODO *speech to text*; parser assumed shipped ([parser-pipeline.md](../meta/parser-pipeline.md))  
+**Related:** reverse of `learner-tts.md`; long-term TODO *speech to text*; parser assumed shipped ([parser-pipeline.md](../meta/parser-pipeline.md))  
 **Design authority:** spoken forms stay in the grammar docs ([phonology.md](../grammar/phonology.md), [spans.md](../grammar/spans.md#writing-vs-speech), [numbers.md](../grammar/numbers.md#writing-preferred-shorthand), [core.md](../grammar/core.md#orthography)). This proposal covers **tooling only**: microphone audio → Agalan letters → optional preferred writing. It does **not** train an Agalan acoustic model.
 
 ## Motivation
@@ -247,7 +247,7 @@ Expect the phoneme model to dwarf the TS glue. Keep it off the critical docs ren
 
 | Topic | Doc |
 |-------|-----|
-| Forward speech stack | [learner-tts.md](learner-tts.md) |
+| Forward speech stack | `learner-tts.md` |
 | Phonology / IPA | [phonology.md](../grammar/phonology.md) |
 | Writing vs speech (spans) | [spans.md](../grammar/spans.md#writing-vs-speech) |
 | Number shorthand vs speech | [numbers.md](../grammar/numbers.md#writing-preferred-shorthand) |

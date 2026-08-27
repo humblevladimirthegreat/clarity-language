@@ -1,12 +1,12 @@
 # Proposal: lexicon icons for speed-reading (copy → romanization)
 
 **Status:** PROPOSED  
-**Related:** [speed-reading-view.md](speed-reading-view.md) (emoji-era sketch), long-term TODO *speed reading display*  
+**Related:** `speed-reading-view.md` (emoji-era sketch), long-term TODO *speed reading display*  
 **Design authority:** lexicon roots stay in [`data/lexicon-published.csv`](../../data/lexicon-published.csv); grammar docs are unchanged. This proposal only covers **display glyphs** and **clipboard behavior**.
 
 ## Motivation
 
-The published lexicon seeds roots with emoji mainly so a [speed-reading view](speed-reading-view.md) can show a pictograph per word. Emoji lock the mnemonic inventory to Unicode RGI scenes and are awkward to restyle.
+The published lexicon seeds roots with emoji mainly so a speed-reading view (`speed-reading-view.md`) can show a pictograph per word. Emoji lock the mnemonic inventory to Unicode RGI scenes and are awkward to restyle.
 
 Switching to a dedicated icon pack lets each root map to a named glyph (`tabler:heart`, `icons8:shield`, …) while the **underlying Agalan spelling** remains the thing learners copy, search, and paste into docs.
 
@@ -90,7 +90,7 @@ Optional hardening for option 2: on `copy`, set clipboard text explicitly from `
 
 ## Suggested decision path
 
-1. Choose pack **A** or **B** from a short visual prototype in the speed-reading layout ([speed-reading-view.md](speed-reading-view.md)).
+1. Choose pack **A** or **B** from a short visual prototype in the speed-reading layout (`speed-reading-view.md`).
 2. Default implementation path: **Option 2** (decorative icon + romanization), unless Tabler-only and a ligature font is explicitly wanted for a minimal DOM.
 3. Add lexicon field(s), e.g. `icon` (`tabler:…` / `icons8:…`), keep `emoji` until migration is done.
 4. Speed-reading view reads `icon` first, falls back to `emoji`.
@@ -104,6 +104,6 @@ Optional hardening for option 2: on `copy`, set clipboard text explicitly from `
 
 ## See also
 
-- [speed-reading-view.md](speed-reading-view.md)
+- `speed-reading-view.md`
 - [lexicon.md](../grammar/lexicon.md)
 - Published seeds: [`data/lexicon-published.csv`](../../data/lexicon-published.csv)

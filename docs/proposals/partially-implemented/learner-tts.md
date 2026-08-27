@@ -1,8 +1,8 @@
 # Proposal: usable learner TTS (in-browser)
 
 **Status:** PHASE 3 DONE (framing cues); Phase 4 (loan islands) next  
-**Related:** long-term TODO *text to speech*; depends on [parser-pipeline.md](../meta/parser-pipeline.md) (**assumed shipped** — `parse(text)` → typed AST); inverse dictation (no Agalan speech training) is [learner-stt.md](learner-stt.md)  
-**Design authority:** spoken forms stay in the grammar docs ([phonology.md](../grammar/phonology.md), [spans.md](../grammar/spans.md#writing-vs-speech), [numbers.md](../grammar/numbers.md#writing-preferred-shorthand), [core.md](../grammar/core.md#orthography-and-prosody-periods)). This proposal covers **tooling only**: writing → speech surface → audio.
+**Related:** long-term TODO *text to speech*; depends on [parser-pipeline.md](../../meta/parser-pipeline.md) (**assumed shipped** — `parse(text)` → typed AST); inverse dictation (no Agalan speech training) is `learner-stt.md`  
+**Design authority:** spoken forms stay in the grammar docs ([phonology.md](../../grammar/phonology.md), [spans.md](../../grammar/spans.md#writing-vs-speech), [numbers.md](../../grammar/numbers.md#writing-preferred-shorthand), [core.md](../../grammar/core.md#orthography-and-prosody-periods)). This proposal covers **tooling only**: writing → speech surface → audio.
 
 ## Motivation
 
@@ -16,7 +16,7 @@ With a finished parser, most of the hard mapping is already structured in the AS
 
 1. Play **any parseable Agalan string** in the browser (docs examples, exercises, future UI).
 2. Expand **writing → speech** from the AST (spans, free-number shorthand, writing atoms) before synthesis.
-3. Map speech-surface letters to **IPA / phonemes** exactly as [phonology.md](../grammar/phonology.md) specifies (including syllable splits on stacked vowels and word-final **-sh**).
+3. Map speech-surface letters to **IPA / phonemes** exactly as [phonology.md](../../grammar/phonology.md) specifies (including syllable splits on stacked vowels and word-final **-sh**).
 4. Ship **offline-capable** synthesis (WASM or equivalent) so docs work without a cloud TTS API.
 5. Expose a small API (`speak(text)` / `speakAst(ast)`) shared by CLI smoke tests and web UI.
 6. Keep fixtures **doc-locked**: speech expansions and phoneme strings quoted from grammar pages.
@@ -59,9 +59,9 @@ Agalan text (writing or speech surface)
 
 | Stage | Input | Output | Owns |
 |-------|--------|--------|------|
-| **Parse** | Surface string | Typed AST | Existing library ([parser-pipeline.md](../meta/parser-pipeline.md)) |
+| **Parse** | Surface string | Typed AST | Existing library ([parser-pipeline.md](../../meta/parser-pipeline.md)) |
 | **`toSpeech`** | AST | Ordered **speech tokens** + boundary tags | Writing↔speech maps in spans / numbers / core |
-| **`toPhonemes`** | Speech tokens | Phoneme strings + syllable breaks | [phonology.md](../grammar/phonology.md) letter table only |
+| **`toPhonemes`** | Speech tokens | Phoneme strings + syllable breaks | [phonology.md](../../grammar/phonology.md) letter table only |
 | **`synthesize`** | Phoneme plan | Audio | Third-party engine + thin adapter |
 
 **No lexicon lookup is required for pronunciation** of native Agalan (spelling shows the sound). Lexicon may still annotate UI (“play this example”) but does not drive G2P.
@@ -74,13 +74,13 @@ Preferred writing is not always what is spoken. The AST already distinguishes wr
 
 | Writing | Spoken behavior | Doc |
 |---------|-----------------|-----|
-| Free-number shorthand (`g+3`, `g#-2`, `d_…`, `%`, …) | Full CV number word (marker `r`+V, spoken digits / specials, ending letter) | [numbers.md](../grammar/numbers.md#writing-preferred-shorthand) |
-| Span brackets (`d[…]`, `d@[Hamlet]`, `h(…)`, …) | Open word (`daxal` / `daxon` / …) + interior tokens + close when required | [spans.md](../grammar/spans.md#writing-vs-speech) |
+| Free-number shorthand (`g+3`, `g#-2`, `d_…`, `%`, …) | Full CV number word (marker `r`+V, spoken digits / specials, ending letter) | [numbers.md](../../grammar/numbers.md#writing-preferred-shorthand) |
+| Span brackets (`d[…]`, `d@[Hamlet]`, `h(…)`, …) | Open word (`daxal` / `daxon` / …) + interior tokens + close when required | [spans.md](../../grammar/spans.md#writing-vs-speech) |
 | Span anaphor / empty (`d[=]`, `d[]`) | Spoken open only (`daxur`, `daxul`) | same |
-| Orthographic-only commas in digit groups | **Omit** (not spoken) | [numbers.md](../grammar/numbers.md#writing-preferred-shorthand) |
-| Period / `?` / `!` | Boundary tags for pause + pitch hint | [core.md](../grammar/core.md#orthography-and-prosody-periods) |
+| Orthographic-only commas in digit groups | **Omit** (not spoken) | [numbers.md](../../grammar/numbers.md#writing-preferred-shorthand) |
+| Period / `?` / `!` | Boundary tags for pause + pitch hint | [core.md](../../grammar/core.md#orthography-and-prosody-periods) |
 | `/x/` continue vs new `/j/` turn | Boundary tags (dip vs reset) | same |
-| Adjunct-scope `^ … ^` | **No** open/close words; island boundary tags only | [spans.md](../grammar/spans.md#adjunct-scope-islands) |
+| Adjunct-scope `^ … ^` | **No** open/close words; island boundary tags only | [spans.md](../../grammar/spans.md#adjunct-scope-islands) |
 
 ### Already speech-shaped
 
@@ -109,7 +109,7 @@ TTS speaks **only what appears in the input string**, after documented writing�
 
 ## Grapheme → phoneme (`toPhonemes`)
 
-Single table from [phonology.md](../grammar/phonology.md); no English respelling stage.
+Single table from [phonology.md](../../grammar/phonology.md); no English respelling stage.
 
 | Orthography | IPA (engine input) | Notes |
 |-------------|--------------------|-------|
@@ -246,7 +246,7 @@ Expect the WASM voice pack to dwarf the TS glue; keep it out of the critical ren
 
 ## Phased delivery
 
-1. **Phoneme core** — native words only (already speech-shaped strings) + WASM play. **v1 surface:** [Gloss overlay](../grammar/gloss.md) (**Speak Agalan** / **Speak word**).  
+1. **Phoneme core** — native words only (already speech-shaped strings) + WASM play. **v1 surface:** [Gloss overlay](../../grammar/gloss.md) (**Speak Agalan** / **Speak word**).  
 2. **Normalizer** — numbers + spans + period/`?`/`!` pauses.  
 3. **Framing cues** — `/j/` vs `/x/`, soft **-m**, islands. **Done** (boundary tags + eSpeak mapping).  
 4. **Loan islands** — `speechSynthesis` (or skip) for `<>` payloads.  
@@ -256,10 +256,10 @@ Expect the WASM voice pack to dwarf the TS glue; keep it out of the critical ren
 
 | Topic | Doc |
 |-------|-----|
-| Parser dependency | [parser-pipeline.md](../meta/parser-pipeline.md) |
-| Phonology / IPA | [phonology.md](../grammar/phonology.md) |
-| Writing vs speech (spans) | [spans.md](../grammar/spans.md#writing-vs-speech) |
-| Number shorthand vs speech | [numbers.md](../grammar/numbers.md#writing-preferred-shorthand) |
-| Periods / force prosody | [core.md](../grammar/core.md#orthography-and-prosody-periods) |
-| Orthography | [core.md](../grammar/core.md#orthography) |
-| Inverse (phoneme ASR) | [learner-stt.md](learner-stt.md) |
+| Parser dependency | [parser-pipeline.md](../../meta/parser-pipeline.md) |
+| Phonology / IPA | [phonology.md](../../grammar/phonology.md) |
+| Writing vs speech (spans) | [spans.md](../../grammar/spans.md#writing-vs-speech) |
+| Number shorthand vs speech | [numbers.md](../../grammar/numbers.md#writing-preferred-shorthand) |
+| Periods / force prosody | [core.md](../../grammar/core.md#orthography-and-prosody-periods) |
+| Orthography | [core.md](../../grammar/core.md#orthography) |
+| Inverse (phoneme ASR) | `learner-stt.md` |
