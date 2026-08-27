@@ -4,13 +4,16 @@
  * Run: npm run convert-word -- fishing
  *      npm run convert-word -- --unique fishing
  *      npm run convert-word -- --lexicon
+ *
+ * --lexicon also writes tmp/lexicon-retie-map.json for npm run retie-docs.
  */
-import { readFileSync, writeFileSync } from "node:fs";
+import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { escapeCsvField, parseCsv } from "../src/csv.js";
 import { parseOverlayCsv } from "../src/lexicon-search.js";
+import { RETIE_MAP_RELATIVE_PATH, serializeRetieMap, type RetiePair } from "../src/retie/map.js";
 import {
   CLARITY_CONSONANTS,
   CLARITY_VOWELS,
@@ -90,6 +93,8 @@ function printUsage(): void {
   console.error(`Usage: npm run convert-word -- <english> [--unique] [--syllables N]
        npm run convert-word -- --lexicon
 
+--lexicon rewrites the published/overlay CSVs and dumps tmp/lexicon-retie-map.json.
+
 Examples:
   npm run convert-word -- fishing
   npm run convert-word -- --unique fishing
@@ -130,6 +135,7 @@ function convertLexicon(): void {
   const used = new Set<string>();
   const assigned: string[] = [];
   const oldToNewByEmoji = new Map<string, { oldRoot: string; newRoot: string }>();
+  const retiePairs: RetiePair[] = [];
   let skipped = 0;
   let failed = 0;
   let changed = 0;
@@ -150,6 +156,12 @@ function convertLexicon(): void {
       }
       if (neu !== previous) {
         changed += 1;
+        retiePairs.push({
+          emoji: (row.emoji ?? "").trim(),
+          literal,
+          oldRoot: previous,
+          newRoot: neu,
+        });
       }
     } catch (err) {
       failed += 1;
@@ -187,11 +199,17 @@ function convertLexicon(): void {
     ),
   );
 
+  const tmpDir = join(rootDir, "tmp");
+  mkdirSync(tmpDir, { recursive: true });
+  const retieMapPath = join(rootDir, RETIE_MAP_RELATIVE_PATH);
+  writeFileSync(retieMapPath, serializeRetieMap(retiePairs));
+
   const dist = letterDistribution(assigned);
   console.log(`assigned: ${assigned.length}`);
   console.log(`skipped: ${skipped}`);
   console.log(`failed: ${failed}`);
   console.log(`roots changed: ${changed}`);
+  console.log(`retie map: ${RETIE_MAP_RELATIVE_PATH}`);
   console.log("");
   console.log(`vowels (${dist.vowelTokens} tokens):`);
   for (const v of CLARITY_VOWELS) {

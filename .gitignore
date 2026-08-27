@@ -7,3 +7,4 @@ docs/grammar/.vitepress/dist
 .env
 .env.*
 !.env.example
+tmp/

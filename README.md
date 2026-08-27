@@ -21,6 +21,8 @@ Or open the repo in a [Dev Container](.devcontainer/devcontainer.json) (Node 22 
 | `npm run dev` | VitePress local preview of grammar docs (served under `/grammar/`) |
 | `npm run docs:build` | Build static grammar site to `dist/grammar/` (Amplify publishes `dist/`) |
 | `npm run docs:preview` | Preview the production docs build |
+| `npm run convert-word` | Convert English to an Agalan root; `--lexicon` rewrites the CSVs and dumps `tmp/lexicon-retie-map.json` |
+| `npm run retie-docs` | Dry-run retie of Agalan tokens in `docs/grammar/` from that map (`--write` to apply) |
 | `npm run lexicon-search` | Lexicon search CLI |
 | `npm run web` | Serve the standalone lexicon page (`web/`; also on the docs site at `/grammar/lexicon`) |
 
