@@ -43,10 +43,10 @@ These are **content verbs**, not VP soft-packaging joins. Soft packaging (includ
 
 | | Agalan | Gloss |
 |--|---------|--------|
-| refuse vs exclude | `zugobon demadel vun` vs `zugobon demadel vuan` | *I refuse meat* vs *I exclude meat* |
-| exclude vs anything but | `zugobon debanul vuan` vs `zugobon debanul vuon` | *I exclude nuts* vs *I bar nuts (anything else is fine)* |
-| one choice vs open picks | `zugobon dalanel von` vs `zugobon dalanel vaon` | *I choose that path (only)* vs *I pick that path (more may come)* |
-| prioritize vs try | `zugobon damugal ven` vs `zugobon damugal voen` | *I prioritize the fix* vs *I try the fix* |
+| refuse vs exclude | `zazawan demadel vun` vs `zazawan demadel vuan` | *Azawan refuses meat* vs *Azawan excludes meat* |
+| exclude vs anything but | `zazawan debanul vuan` vs `zazawan debanul vuon` | *Azawan excludes nuts* vs *Azawan bars nuts (anything else is fine)* |
+| one choice vs open picks | `zazawan dalanel von` vs `zazawan dalanel vaon` | *Azawan chooses that path (only)* vs *Azawan picks that path (more may come)* |
+| prioritize vs try | `zazawan damugal ven` vs `zazawan damugal voen` | *Azawan prioritizes the fix* vs *Azawan tries the fix* |
 | *and then* (clauses) | `SENT₁ SENT₂ xan` | *SENT₁ and then SENT₂* — use clause soft **-n**, not `van` |
 
 Boundaries: not revisers (`an` / `on` / …) and not phrase named-list **-n** (those stay on `/z/` `/d/` `/b/` `/w/`). Only the **-n** exponent is a content join-act; `-l` / `-m` / `-r` under `/v/` remain joins.

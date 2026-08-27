@@ -489,7 +489,6 @@ Competence (`olozo`) and relatedness (`onogo`) shown for readability; same endin
 - Value polarity is not number markers `h+` / `h-`.
 - Ordinary **-l / -m** (literal / metaphorical) do not mean met / unmet on these compounds.
 - Value second halves are bare vowels **`a` / `e` / `o` / `u`** inside a compound — not prefix-less revisers (`al`, `ul`, …) and not restrictor joins (`hal`, …).
-- Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)).
 - **Incapability** compounds onto the **activity/property host** (`vuzunuxul`) or fallback **`egera`** — [ability](ability.md#ability) — not onto need compounds (`holozoxul` remains unmet competence).
 
 ### Translation practice

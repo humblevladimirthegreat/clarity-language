@@ -197,7 +197,7 @@ First-person *I think* / rumination is [**COMMENT**](#comment) (`odoho`). *Belie
 | **FELT** | **`ehere`** | ❤️ *heart* → *gut-felt* | proprioceptive / affective knowing — not [emotion compose](special-vocabulary.md#emotion-compose) |
 | **STORY** | **`orolo`** | 📜 *scroll* → *tale* | narrative / lore / anecdotal framing |
 
-Channel is a **root choice**, not `xa`/`xu` on the claim host. Stack with **PREDICT**, causation shapes, [universality](special-vocabulary.md#universality) **NATURAL**, other-minds content, ….
+Pick an evidential **root** for how you know. Stack with **PREDICT**, causation shapes, [universality](special-vocabulary.md#universality) **NATURAL**, other-minds content, ….
 
 | Agalan (schematic) | Reading |
 |---------------------|---------|

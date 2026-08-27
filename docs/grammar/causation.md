@@ -10,15 +10,15 @@ How to say *A leads to B*, *A is enough for B*, and *B needs A* — using joins,
 ### Why Agalan splits the forms
 <a id="why-split"></a>
 
-English *cause* / *leads to* / *needs* collapses distinctions that drive common mistakes. Agalan keeps them **asymmetric**:
+English *cause* / *leads to* / *needs* collapses several jobs. Agalan keeps them **asymmetric**:
 
-| Trap | Agalan nudge |
-|------|----------------|
-| Treating one cause as the **only** cause | Default = **open inclusive** (*would work* / *open to*; others may count) |
-| Confusing **sufficient** with **necessary** | Two **different** constructions — never one bare *cause* join |
-| Hearing *if* as *if and only if* | Separate clause roots for one-way *if* vs both-ways *if and only if* ([Intermediate](#if-vs-iff)) |
+| Job | Form |
+|-----|------|
+| Everyday *would work* / *open to* | **Open inclusive** — others may still count |
+| Enough vs needs | **Two constructions** — sufficient vs necessary |
+| One-way *if* | Its own clause root (**`odo`**) |
 
-Condition type is carried by **which** join / relation / restrictor you use, plus host vs `/b/` / **`adoro`** poles. There is **no** new arrow morpheme.
+Condition type is carried by **which** join / relation / restrictor you use, plus host vs `/b/` / **`adoro`** poles.
 
 ### Pole habit
 <a id="pole-habit"></a>

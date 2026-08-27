@@ -92,11 +92,11 @@ Each stack means exactly what its parts combine to say: first vowel picks accept
 ```
 
 ```
-`zugobon vawalal. jael.`
+`zazawan vawalal. jael.`
 
-gloss: `z-speaker` · `v-go` · `j-yes`
+gloss: `z-grace` · `v-go` · `j-yes`
 
-*I go. Yes.* (confirm tag = **second bare turn** after `.`)
+*Azawan goes. Yes.* (confirm tag = **second bare turn** after `.`)
 ```
 
 These three jobs stay distinct:
@@ -241,7 +241,7 @@ The **-l** ending holds the stance exactly; **-m** is the soft twin of each row:
 **Shapes:**
 
 - **Bare turn** — `jael.` / `juel.`
-- **Stance + body** — `jael zugobon vawalal.` (*yes — I go*)
+- **Stance + body** — `jael zazawan vawalal.` (*yes — Azawan goes*)
 - **Confirm tag** — second bare turn after `.` ([left-edge rules](core.md#left-edge-order-and-sentence-boundaries))
 - **Monologue self-turn** — `juel` before correction; `jaol` before next step; `jael` after locking a point
 

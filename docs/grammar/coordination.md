@@ -501,7 +501,7 @@ No **u** on plain **u**, and no **u** on stacked **ao** / **ae** / **oe**. No **
 
 **Inclusive (`ao`)** — one or more may hold. **-m** on **ao** does **not** allow empty.
 
-**Negation distribution (not De Morgan):** negation over a join is **distributive** — it pushes into each conjunct and **keeps the same join vowel**. Agalan does **not** flip *and*↔*or* under negation.
+**Negation over a join:** the *not* applies to **each** conjunct and the join vowel **stays the same**. *Not (A and B)* is still an *and* of two denials; *not (A or B)* is still an *or* of two denials.
 
 ```
 `A B val vul.`
@@ -550,7 +550,7 @@ gloss: `zual` · `g-cat`
 <a id="scope-fence-p-coord"></a>
 <a id="scope-fence-p-join"></a>
 
-Modifiers **immediately after** a phrase-ledegul join scope over the **whole coordinated phrase** when they use ordinary right-bound `/ɡ/` / `/w/` morphology.
+Modifiers that sit **immediately after** a phrase-ledegul join describe the **whole list** (ordinary adjective `/ɡ/` or extra `/w/` after the join).
 
 | Join family | SHARED `/ɡ/` role |
 |-------------|-------------------|

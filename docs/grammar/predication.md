@@ -319,11 +319,6 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Clark is the same (as already ascribed) as Superman.*
 :::
 
-## Advanced
-<a id="advanced"></a>
-
-Nothing advanced for this subject. Continue to the next page.
-
 ## See also
 
 - Scalar *as ADJ as* / comparative property clauses: [comparatives.md](comparatives.md)

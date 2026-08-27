@@ -37,11 +37,11 @@ Same split as number shorthand (`g+3` written, full CV spoken); the spoken shape
 Anaphor (**-r**): interior **`=`** (`d[=]`, `d{=}`, `h(=)`, `d<=>`).
 
 ```
-`zedonen v[uzunu] d[jael]l.`
+`zazawan v[uzunu] d[jael]l.`
 
-gloss: `z-listener` · `v-[sing]` · `d-[yes]`
+gloss: `z-grace` · `v-[sing]` · `d-[yes]`
 
-*You “sing” a “yes.”*
+*Azawan “sings” a “yes.”*
 ```
 
 ```
@@ -86,11 +86,11 @@ The open’s PoS is the **outer-clause slot** of the **entire** span — not the
 | `/x/` | Discourse-only citation (epigraph, freestanding span) | `x[…]` |
 
 ```
-`jul zedonen v[uzunu] dugobol.`
+`jul zululon v[uzunu] dazawan.`
 
-gloss: `j-command` · `z-listener` · `v-[sing]` · `d-speaker`
+gloss: `j-command` · `z-courage` · `v-[sing]` · `d-grace`
 
-*Don’t “sing” at me.*
+*Ululon — don’t “sing” Azawan.*
 ```
 
 ### Asides
@@ -307,7 +307,7 @@ The vowel **after** `x` is **EDGE** — how far the open runs.
 
 **Anaphor `-r`** always uses EDGE **`u`** in the spoken template (`daxur`).
 
-EDGE **`a`** / **`e`** / **`o`** take **-l** / **-m** / **-n**. EDGE **`u`** takes exact **-l** (`daxul`) or anaphor **-r** (`daxur`). Other **`VOWEL x VOWEL`** silhouettes (including **`xuxun`**) are [ordinary compounds](x-compounds.md#families-by-shape), not span opens.
+EDGE **`a`** / **`e`** / **`o`** take **-l** / **-m** / **-n**. EDGE **`u`** takes exact **-l** (`daxul`) or anaphor **-r** (`daxur`).
 
 ### Endings on opens and span pronouns
 <a id="endings"></a>

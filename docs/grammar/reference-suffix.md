@@ -18,8 +18,6 @@ A bare **-l** / **-m** word always **introduces**. To point back, use **-r** (ho
 
 endings answer *how does this root enter the talk?* — new literal, new figurative, named, or already on the table.
 
-**Exception (joins only):** on [join words](coordination.md) (phrase / VP / clause fences, plus [join-act](join-extras.md#join-act-verbs) / [join-relation](join-extras.md#join-relations) stems), **-n** is **not** a name. Everywhere else, **-n** is a proper object. Full join readings: [coordination.md](coordination.md) (Intermediate / Advanced).
-
 ```
 `zodogol gelulul.`
 

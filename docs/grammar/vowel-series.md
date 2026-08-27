@@ -19,8 +19,6 @@ Why the same four fit clause force: opening with `/j/` starts a turn, and the vo
 
 **a** add, **o** one, **e** order, **u** undo — then read the prefix to pick the table.
 
-Later pages reuse these letters (joins, revisers, values, ability, roles). Same four jobs; different prefix.
-
 Stacked two-vowel forms combine two of the four jobs in one word: inclusive *and/or* is add-plus-one-choice (`ao`), *everything but* is undo-plus-add (`ua`), equal rank is add-in-order (`ae`). The same stacking shows up on `/j/` cheers — polar stances like `jael` (*true*) and `juel` (*false*) are exactly these combinations read as reactions.
 
 

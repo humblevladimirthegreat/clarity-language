@@ -261,19 +261,11 @@ Most useful with [phrase join](coordination.md): SHARED singular scale under **`
 
 Address a **group**: **-lsh** for kind-based group address (*hey, kids*); **-nsh** for a titled group (*Team Alpha*); **-rsh** to call a prior addressee **and associates**. Multi-addressee role without naming → **`jedonensh`**. *Everyone* → bare **`…ual`**, not **-lsh**.
 
-### Where **-sh** is unused
+### Where **-sh** sits
 
-| Slot | **-sh**? |
-|------|----------|
-| `/w/` adjective extras | unused — degree/frame stay singular |
-| `/h/` adverbs | unused — habit is **`hual`**; repetition count is numbers under `/h/` |
-| `/j/` interjection / clause force | unused |
-| `/x/` (linkers, joins, span markers, revisers, named discourse glue) | unused — plurality stays on material inside phrases / spans |
-| number words | unused — quantity uses the number grammar ([numbers.md](numbers.md)) |
+**-sh** marks group reference on **nouns** (`/z/` `/d/` `/b/`), **vocatives**, **person-role** specials (readings above), **collective doing** on `/v/`, and **collective ascription** on `/ɡ/` (SHARED scale / continuum adjectives stay singular). Habit is **`hual`**. Count is a [number](numbers.md) word (`zagadalsh g+3`). Plural material *inside* a non-opaque span marks **-sh** on those inner words.
 
-Revisers (**al** / **am** / …) and join fences take ending only, no **-sh**. Plural material *inside* a non-opaque span marks **-sh** on its own words.
-
-Quantity `>1` is digitless **`g+`** (may co-occur with noun **-lsh**: `zagadalsh g+3`). Generics / *every K* use [coordination](coordination.md#universals-domains-generics) (`zual gagadal`, habitual **`hual`**). Inclusive *we* / address set: [pronouns](pronouns.md#clusivity). Do not use **-sh** for *all* / *every* / *in general* / *always* / *as a character trait*.
+Quantity `>1` is digitless **`g+`** (may co-occur with noun **-lsh**). Generics / *every K* use [coordination](coordination.md#universals-domains-generics) (`zual gagadal`, habitual **`hual`**). Inclusive *we* / address set: [pronouns](pronouns.md#clusivity).
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>

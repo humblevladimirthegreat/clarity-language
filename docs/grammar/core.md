@@ -24,7 +24,7 @@ Words end in a final letter that says how the root enters the talk — you will 
 ##### Capitalization
 <a id="capitalization"></a>
 
-Agalan writing is **unicase**: use **lowercase** for every native letter. Capital letters appear only when writing foreign words (you learn how to write foreign content later).
+Agalan writing is **unicase**: use **lowercase** for every native letter. Capital letters appear only inside foreign or opaque payloads that keep another orthography’s casing.
 
 #### Outside a sentence (citation)
 <a id="citation-forms"></a>

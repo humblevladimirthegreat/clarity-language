@@ -9,7 +9,7 @@ Closed mood roots for emotion compose, numbered alternatives, universality warra
 ### Sense-form overlays
 <a id="sense-form"></a>
 
-Some published roots carry a **closed overlay reading** for a fixed PoS — the word **is** that special sense, without inventing a new root. The overlay **spells the published host** (plus ending). A new closed overlay always attaches to an existing lexicon row; it is not a frozen extra spelling, and it is not a new lexicon word. Example: **`uvuvum`** under `/h/` = evidential *memory / witnessed*; **`huvuvul`** = ordinary literal *in a fishing manner*.
+Some published roots carry a **closed overlay reading** for a fixed PoS — the word **is** that special sense. The overlay **spells the published host** (plus ending). Example: **`uvuvum`** under `/h/` = evidential *memory / witnessed*; **`huvuvul`** = ordinary literal *in a fishing manner*.
 
 **Shape:** sense-form + [reference ending](reference-suffix.md). Mood overlays usually take **-m** (figurative published sense / soft default); each overlay page notes when another ending applies. Join-act / join-relation stems are the vowel + **-n** only (`an` / `on` / …); written words are **`pos` + sense-form** (`van` / `gan` / `han`) — [join extras](join-extras.md).
 
@@ -220,7 +220,7 @@ universal claims are **weather reports**. Default climate is usual weather — n
 
 **Default:** when a universal / habitual claim needs a warrant and none of FORMAL / NATURAL / RULE / UNCOUNTERED fits, use **COMMON** (`hewonol`). FORMAL is definition/proof, not “socially preferred.”
 
-Warrant is a **root choice**, not `xa`/`xu` on the quantifier host. Domain stays `zual` / `hual`; the mood **frames the claim**.
+Warrant is a closed `/h/` mood root. Domain stays `zual` / `hual`; the mood **frames the claim**.
 
 | Agalan (schematic) | Reading |
 |---------------------|---------|

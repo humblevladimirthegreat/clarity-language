@@ -24,19 +24,19 @@ Under **`/h/`** and **`/w/`**, these forms mark **applicability circumstances**:
 | `hal` (bare) | *never* |
 
 ```
-`zugobon vawalal hanunul hal.`
+`zazawan vawalal hanunul hal.`
 
-gloss: `z-speaker` · `v-go` · `h-rain` · `hal`
+gloss: `z-grace` · `v-go` · `h-rain` · `hal`
 
-*I go only when raining.*
+*Azawan goes only when raining.*
 ```
 
 ```
-`zugobon vawalal hal.`
+`zazawan vawalal hal.`
 
-gloss: `z-speaker` · `v-go` · `hal`
+gloss: `z-grace` · `v-go` · `hal`
 
-*I never go.*
+*Azawan never goes.*
 ```
 
 ### The forms (beginner)

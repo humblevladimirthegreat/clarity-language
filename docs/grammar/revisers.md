@@ -96,11 +96,11 @@ Discourse revisers glue **this utterance** to **prior talk**. Prior talk = A; th
 Omit recoverable **`jal`** after the reviser when the body is a default statement.
 
 ```
-`al zugobon vawalal.`
+`al zazawan vawalal.`
 
-gloss: `al` · `z-speaker` · `v-walk`
+gloss: `al` · `z-grace` · `v-walk`
 
-*Additionally, I go.*
+*Additionally, Azawan goes.*
 ```
 
 Adversative *but* / *howedegur*, *therefore*, *meanwhile*, and standalone *next* stay other `/x/` roots ([core.md](core.md#discourse-markers-x)). Narrative *and then* between full sentences is clause **`xan`**, not this series.
@@ -296,11 +296,11 @@ On a **non-initial** conjunct under a [clause `/x/` fence](coordination.md#claus
 Before an **`/x/`** linker (*therefore*, *howedegur*, …), **`REV`** scopes the linker+body stretch: `al xamalal …` → *Additionally, therefore …*. Prefer plain `al …` or plain `xamalal …` when one cue is enough.
 
 ```
-`jazawan al zugobon vawalal.`
+`jazawan al zululon vawalal.`
 
-gloss: `j-grace` · `al` · `z-speaker` · `v-walk`
+gloss: `j-grace` · `al` · `z-courage` · `v-walk`
 
-*Azawan — additionally, I go.* (vocative, then discourse reviser)
+*Azawan — additionally, Ululon goes.* (vocative, then discourse reviser)
 ```
 
 ### Translation practice
