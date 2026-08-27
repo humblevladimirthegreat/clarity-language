@@ -1,6 +1,5 @@
 # TODO
 Consider reserving two syllable words for special
-consistently use role compound for words (teacher derived from teach, not separate root)
 limit deployments to tagged releases
 
 ## Evidentiality / tense

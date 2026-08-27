@@ -52,7 +52,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🥶,cold,ogolo,,
 🥴,woozy,owozo,intoxication,woozy shows intoxication
 🤯,mind-blown,umunu,,
-🤠,cowboy,ogowo,ruggedness,cowboy shows ruggedness
+🤠,ranch,arana,ruggedness,ranch work is rugged living
 🥳,party,abara,celebration,party means celebration
 🥸,disguise,uduzu,anonymity,disguise hides identity
 😎,cool,ogo,chill,cool means chill
@@ -81,7 +81,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 💀,skull,uzulu,death,skull means death
 ☠️,skull-crossbones,ulone,danger,skull warns danger
 💩,poop,obobo,vulgarity,poop is vulgarity
-🤡,clown,olowo,foolishness,clown shows foolishness
+🤡,jest,ejeze,foolishness,clowning is jest; foolishness is playing the fool
 👹,ogre,ogere,menace,ogre shows menace
 👺,goblin,ogobo,,
 👻,ghost,ogoho,spookiness,ghost means spookiness
@@ -106,8 +106,8 @@ emoji,literal,clarity,metaphorical,mnemonic
 💨,dash,adaza,haste,dash of wind moves fast; haste is moving quickly
 🕳️,hole,ohole,void,hole means void
 💬,speech,ezehe,dialogue,speech means dialogue
-👁️‍🗨️,witness,uwudu,witness,eye speech witnesses
-🗯️,rant,arana,outrage,rant shows outrage
+👁️‍🗨️,attest,adeze,witness,eye-in-speech attests; witness is seeing-and-saying
+🗯️,rant,ara,outrage,rant shows outrage
 💭,thought,odoho,commentary,thought balloon floats a take over the scene; commentary is mind storying instead of bare contact
 💤,sleep,elebe,rest,sleep means rest
 👋,wave,awave,greeting,wave is a greeting
@@ -160,35 +160,35 @@ emoji,literal,clarity,metaphorical,mnemonic
 👵,old-woman,oloma,,
 🙎,pout,obodo,sulking,pout is sulking
 💁,sass,azaza,sass,tipping hand shows sass
-🙋,raise-hand,ara,volunteering,raised hand volunteers
+🙋,raise-hand,azeha,volunteering,raised hand volunteers
 🧏,deaf,ede,,
 🙇,bow,obowo,,
 🤦,facepalm,avage,exasperation,facepalm shows exasperation
 🤷,shrug,azaha,,
-🧑‍⚕️,doctor,odogo,,
-🧑‍🎓,student,uzudu,learning,student seeks learning
-🧑‍🏫,teacher,edege,instruction,teacher gives instruction
-🧑‍⚖️,judge,ujudu,judgment,judge delivers judgment
-🧑‍🌾,farmer,avara,cultivation,farmer practices cultivation
-🧑‍🍳,cook,ogogo,nourishment,cook provides nourishment
-🧑‍🔧,mechanic,emege,repair,mechanic makes repair
-🧑‍🏭,factory-worker,avaga,production,factory worker drives production
-🧑‍💼,office-worker,ovuge,bureaucracy,office worker runs bureaucracy
-🧑‍🔬,scientist,uzunu,inquiry,scientist pursues inquiry
-🧑‍💻,technologist,egolo,innovation,technologist drives innovation
-🧑‍🎤,singer,uzune,expression,singer gives expression
-🧑‍🎨,artist,arudu,creativity,artist brings creativity
-🧑‍✈️,pilot,ubulo,navigation,pilot handles navigation
-🧑‍🚀,astronaut,azona,exploration,astronaut seeks exploration
-🧑‍🚒,firefighter,uvure,,
-👮,police,obolu,authority,police wield authority
-🕵️,detective,edede,investigation,detective conducts investigation
-💂,guard,uguga,protection,guard provides protection
-🥷,ninja,ununu,stealth,ninja moves with stealth
-👷,construction-worker,onugo,building,construction builds structures
-🫅,monarch,omona,sovereignty,monarch embodies sovereignty
-🤴,prince,ubune,nobility,prince embodies nobility
-👸,princess,urune,,
+🧑‍⚕️,heal,ehele,,
+🧑‍🎓,learn,elela,study,learning is study
+🧑‍🏫,teach,edege,instruction,teaching gives instruction
+🧑‍⚖️,judge,ujudu,judgment,judging yields judgment
+🧑‍🌾,farm,avara,cultivation,farming is cultivation
+🧑‍🍳,cook,ogogo,nourishment,cooking provides nourishment
+🧑‍🔧,repair,ereba,service,repair is keeping things in service
+🧑‍🏭,manufacture,amanu,production,manufacture drives production
+🧑‍💼,administrate,adumu,bureaucracy,office work runs bureaucracy
+🧑‍🔬,research,ereze,inquiry,research pursues inquiry
+🧑‍💻,program,oboga,innovation,programming drives innovation
+🧑‍🎤,sing,uzunu,expression,singing gives expression
+🧑‍🎨,craft,agara,creativity,crafting brings creativity
+🧑‍✈️,pilot,ubulo,navigation,piloting handles navigation
+🧑‍🚀,orbit,orubu,exploration,orbiting seeks exploration
+🧑‍🚒,firefight,uvure,,
+👮,police,obolu,authority,policing wields authority
+🕵️,investigate,uneve,investigation,investigating follows clues
+💂,guard,uguga,protection,guarding provides protection
+🥷,sneak,azana,stealth,sneaking moves with stealth
+👷,construct,ogonu,building,construction builds structures
+🫅,reign,ereru,sovereignty,reigning embodies sovereignty
+🤴,inherit,unehe,nobility,inheriting a title is nobility
+👸,court,ogogu,,
 👳,turban,uduru,,
 👲,skullcap,uzula,,
 🧕,headscarf,eheda,modesty,headscarf shows modesty
@@ -198,12 +198,12 @@ emoji,literal,clarity,metaphorical,mnemonic
 🤱,breastfeeding,ezedu,,
 🧑‍🍼,feeding-baby,evedu,nurturing,feeding baby is nurturing
 👼,angel,anele,,
-🎅,santa-claus,azana,,
+🎅,santa-claus,anagu,,
 🤶,mrs-claus,amara,companionship,mrs claus offers companionship
 🧑‍🎄,mx-claus,ama,,
-🦸,superhero,uzube,heroism,superhero shows heroism
-🦹,supervillain,uberu,villainy,villain embodies villainy
-🧙,mage,amage,magic,mage wields magic
+🦸,save,azave,heroism,saving shows heroism
+🦹,scheme,ezeme,villainy,scheming embodies villainy
+🧙,conjure,onure,magic,conjuring wields magic
 🧚,fairy,avavu,whimsy,fairy brings whimsy
 🧛,vampire,avama,parasitism,vampire practices parasitism
 🧜,merperson,emere,mystery,merperson holds mystery
@@ -220,7 +220,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🧍,standing,azanu,presence,stand shows presence
 🧎,kneeling,egene,submission,kneel shows submission
 🧑‍🦼,motorized-wheelchair,omodo,,
-🧑‍🦽,wheelchair-user,ewehe,independence,manual wheelchair shows independence
+🧑‍🦽,propel,obobe,independence,self-propelling a chair shows independence
 🏃,running,urunu,,
 🧑‍🩰,ballet,abale,,
 🕺,dancing,adana,,
@@ -238,7 +238,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🏋️,weightlifting,ewewu,exertion,weightlift demands exertion
 🚴,biking,ubu,,
 🚵,mountain-biking,omo,adventure,mountain bike is adventure
-🤸,cartwheel,agara,exuberance,cartwheel shows exuberance
+🤸,cartwheel,agade,exuberance,cartwheel shows exuberance
 🤼‍♂️,wrestling,ewere,,
 🤽,water-polo,awade,competition,water polo is competition
 🤾,handball,ahada,teamwork,handball needs teamwork
@@ -248,8 +248,8 @@ emoji,literal,clarity,metaphorical,mnemonic
 🛌,in-bed,unebe,,
 🧑‍🤝‍🧑,holding-hands,oholo,partnership,couple forms partnership
 💏,kiss,uguzu,intimacy,kiss shows intimacy
-💑,couple,ogogu,,
-🗣️,speaking-head,eguna,rhetoric,speaking head uses rhetoric
+💑,couple,ogobe,,
+🗣️,orate,orade,rhetoric,orating uses rhetoric
 👤,silhouette,ulode,,
 👥,silhouettes,ulude,community,busts form community
 🫂,hug,uhugu,comfort,hug gives comfort
@@ -259,7 +259,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🐒,monkey,omono,mimicry,monkey see monkey do
 🦍,gorilla,ogoru,dominance,800-pound gorilla dominates
 🦧,orangutan,orana,,
-🐕,dog,adaga,loyalty,a dog shows loyalty
+🐕,dog,odogo,loyalty,a dog shows loyalty
 🐺,wolf,owolo,predation,wolf at the door
 🦊,fox,ovozo,cunning,sly as a fox
 🦝,raccoon,arago,,
@@ -275,7 +275,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🦌,deer,edere,timidity,deer in headlights is timid
 🦬,bison,ubuzo,,
 🐃,water-buffalo,awa,drudgery,water buffalo pulls through drudgery
-🐄,cow,owo,docility,docile as a cow
+🐄,cow,ogowo,docility,docile as a cow
 🐖,pig,abaga,gluttony,pig out on gluttony
 🐗,boar,oboba,stubbornness,stubborn as a boar
 🐽,pig-nose,ugoze,nosiness,pig nose sniffs for gossip
@@ -314,7 +314,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🦅,eagle,egaga,vision,eagle eye sees far
 🦆,duck,udugu,,
 🦢,swan,azawa,grace,swan glides with grace
-🦉,owl,ala,quietude,owl hunts without sound; quietude is low-noise manner
+🦉,owl,owo,quietude,owl hunts without sound; quietude is low-noise manner
 🦤,dodo,ojo,obsolescence,dodo is dead and gone
 🪶,feather,eve,,
 🦩,flamingo,avala,flamboyance,flamingo stands out flamboyantly
@@ -338,15 +338,15 @@ emoji,literal,clarity,metaphorical,mnemonic
 🐟,fish,uvuhu,abundance,plenty of fish in the sea
 🦈,shark,azara,ruthlessness,shark is ruthless predator
 🐙,octopus,ogodo,reach,octopus reaches in every direction
-🐚,shell,ehele,,
+🐚,shell,azala,,
 🪸,coral,ogora,,
 🪼,jellyfish,ejelo,flow,jellyfish drifts with the current; flow is mid motion of water
 🦀,crab,araba,irritability,feeling crabby today
 🦞,lobster,olobo,luxury,lobster dinner is luxury
 🦐,shrimp,uzubu,insignificance,shrimp is small fry
-🦑,squid,ugudu,obscurity,squid ink clouds the truth
+🦑,squid,uzudu,obscurity,squid ink clouds the truth
 🦪,oyster,ozo,,
-🐌,snail,azala,slowness,slow as a snail
+🐌,snail,anala,slowness,slow as a snail
 🦋,butterfly,ubude,,
 🐛,bug,abugu,flaw,computer bug is a flaw
 🐜,ant,anada,diligence,ants work with diligence
@@ -386,7 +386,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🪹,empty-nest,emebe,emptiness,empty nest shows emptiness
 🪺,nest,eneze,nurture,nest nurtures young
 🍄,mushroom,umuzu,proliferation,mushrooms pop up overnight
-🪾,dead-tree,adade,decay,dead tree shows decay
+🪾,dead-tree,edede,decay,dead tree shows decay
 🍇,grape,agabe,envy,sour grapes is envy
 🍈,melon,emelo,,
 🍉,watermelon,adere,refreshment,watermelon cools with refreshment
@@ -394,7 +394,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🍋,lemon,elemo,defect,a lemon is a bad deal
 🍋‍🟩,lime,ulume,zest,lime adds zest and tang
 🍌,banana,anana,madness,go bananas with madness
-🍍,pineapple,unele,hospitality,pineapple welcomes with hospitality
+🍍,pineapple,ubune,hospitality,pineapple welcomes with hospitality
 🥭,mango,amano,exoticism,mango tastes of the exotic
 🍎,apple,abele,temptation,forbidden apple is temptation
 🍐,pear,eja,mishap,gone pear-shaped is mishap
@@ -405,7 +405,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🥝,kiwi,uguwu,oddity,fuzzy kiwi is an odd fruit
 🍅,tomato,odoma,controversy,tomato fruit or vegetable controversy
 🫒,olive,oluve,,
-🥥,coconut,ogonu,toughness,hard nut to crack is tough
+🥥,coconut,ogunu,toughness,hard nut to crack is tough
 🥑,avocado,avoga,premium,avocado toast is premium living
 🍆,eggplant,egebe,provocation,eggplant emoji provokes
 🥔,potato,oboda,,
@@ -435,7 +435,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🧀,cheese,eheze,,
 🍖,meat,emema,substance,meat of the matter is substance
 🍗,chicken-leg,ugene,,
-🥩,steak,ege,seriousness,steak dinner is serious business
+🥩,steak,adaga,seriousness,steak dinner is serious business
 🥓,bacon,abago,indulgence,bacon is guilty indulgence
 🍔,hamburger,amure,mainstream,burger is mainstream fare
 🍟,fries,uvuru,accessory,fries are a side accessory
@@ -446,8 +446,8 @@ emoji,literal,clarity,metaphorical,mnemonic
 🌯,burrito,urudo,encapsulation,burrito wraps it all up
 🫔,tamale,adama,,
 🧆,falafel,alave,alternative,falafel is a meat alternative
-🥚,egg,ega,potential,egg holds unrealized potential
-🍳,cooking,ogunu,,
+🥚,egg,ege,potential,egg holds unrealized potential
+🍳,cooking,ogugu,,
 🥘,paella,ababe,simmering,stew simmers with slow tension
 🍲,stew,edewe,,
 🫕,fondue,ovono,sharing,fondue is communal sharing
@@ -455,7 +455,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🥗,salad,alada,,
 🍿,popcorn,obogo,entertainment,popcorn at the show is entertainment
 🧈,butter,ude,flattery,butter someone up with flattery
-🧂,salt,adala,skepticism,take it with a grain of salt
+🧂,salt,ala,skepticism,take it with a grain of salt
 🥫,canned-food,agane,,
 🍱,bento,ebeno,order,bento box is neat order
 🍘,rice-cracker,ugega,,
@@ -496,7 +496,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🍸,cocktail,ogoda,blend,cocktail blends many flavors
 🍹,tropical-drink,obugu,escapism,tropical drink is vacation escapism
 🍺,beer,abere,,
-🥂,cheers,ereze,,
+🥂,cheers,ahara,,
 🥃,whiskey,uwuhu,fortitude,whiskey warms with fortitude
 🫗,pour,oruru,pour,pour directs liquid onto something; pour is other-directed charge
 🥤,soda,ozoda,,
@@ -506,16 +506,16 @@ emoji,literal,clarity,metaphorical,mnemonic
 🧊,ice,uje,,
 🥢,chopsticks,ogobu,,
 🍽️,plate,alade,service,plate is set for service
-🍴,cutlery,udero,provision,cutlery enables provision
+🍴,cutlery,ugudu,provision,cutlery enables provision
 🥄,spoon,ozobo,portion,spoon measures a portion
 🔪,knife,uguve,severity,knife cuts with severity
 🫙,jar,ajara,storage,jar stores what is kept
 🏺,amphora,amora,,
-🌐,globe,ogobe,connected,a globe links every place; connected means linked together
+🌐,globe,olobe,connected,a globe links every place; connected means linked together
 🗺️,world-map,owora,plan,a map charts a route; a plan charts a course
 🗾,japan-map,ajaba,regional,a map of one land; regional is that area's identity
 🧭,compass,ogomo,direction,a compass points the way; direction is where you're headed
-⛰️,mountain,omonu,challenge,mountains are hard to climb; a challenge is hard to face
+⛰️,mountain,omona,challenge,mountains are hard to climb; a challenge is hard to face
 🛘,landslide,alana,collapse,landslide is sudden collapse
 🌋,volcano,olano,eruption,a volcano bursts outward; eruption is bursting emotion
 🏕️,camping,agama,,
@@ -531,7 +531,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🪵,wood,owodo,raw,wood is unfinished material; raw is unprocessed state
 🛖,hut,uhudu,locality,hut sits in a small settlement; locality is the near neighborhood
 🏠,house,ohohu,home,a house is walls and roof; home is where you belong
-🏢,office,ovu,corporate,tall offices for business; corporate is organized commerce
+🏢,office,ovuge,corporate,tall offices for business; corporate is organized commerce
 🏤,post-office,ozovu,delivery,post office sends mail out; delivery is sending something through
 🏥,hospital,ohozo,,
 🏦,bank,anaba,security,bank keeps money safe; security is kept safe
@@ -540,7 +540,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🏪,convenience-store,ozore,convenience,corner store is always nearby; convenience is easy to reach
 🏫,school,ahala,,
 🏬,department-store,edeba,,
-🏭,factory,agoro,product,factory turns out goods; product is the made output
+🏭,factory,avaga,product,factory turns out goods; product is the made output
 🏰,castle,agaze,fortress,castle walls defend within; fortress is defended stronghold
 💒,wedding,ewedu,union,wedding chapel joins two people; union is joining together
 🗼,tokyo-tower,ogode,height,tokyo tower rises high; height is vertical extent
@@ -559,14 +559,14 @@ emoji,literal,clarity,metaphorical,mnemonic
 🌄,sunrise-mountains,ununa,dawn,sun rises over peaks; dawn is a new beginning
 🌅,sunrise,unuze,,
 🌆,dusk,elo,closure,dusk ends the day; closure is bringing something to an end
-🌇,sunset,uzuze,,
+🌇,sunset,uzune,,
 🌉,bridge-night,udenu,,
 ♨️,hot-springs,ohodu,rejuvenation,hot springs restore the body; rejuvenation restores energy
 🎠,carousel,aroze,,
 🛝,playground,abaru,play,playground invites play
 🎡,ferris-wheel,everu,perspective,ferris wheel rises for a wider view; perspective sees the bigger picture
 🎢,roller-coaster,orole,volatility,roller coaster rises and drops; volatility swings up and down
-💈,barber,abare,,
+💈,shave,ahave,,
 🎪,circus,uruzu,spectacle,circus tent promises a show; spectacle is a striking display
 🚆,train,udunu,momentum,train stays on its track; momentum keeps moving forward
 🚉,station,azado,hub,station connects many routes; hub is where paths meet
@@ -579,7 +579,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🚚,truck,urudu,haul,truck carries heavy freight; haul is carrying a heavy load
 🚜,tractor,adado,,
 🏍️,motorcycle,odore,,
-🦽,wheelchair,ewela,accessibility,wheelchair enables movement; accessibility is equal access
+🦽,wheelchair,ewehe,accessibility,wheelchair enables movement; accessibility is equal access
 🚲,bicycle,ubugo,,
 🛴,scooter,ozode,,
 🛹,skateboard,adebo,daring,skateboard rides the edge; daring is bold risk-taking
@@ -590,7 +590,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🛞,wheel,ewele,motion,wheel enables motion
 🚦,traffic-light,avugu,signal,traffic light tells go or stop; signal is a clear instruction
 🛑,stop,ozodo,halt,stop sign means do not proceed; halt is bringing movement to stop
-🚧,construction,onugu,blockage,construction blocks the road; blockage is something in the way
+🚧,construction,onugo,blockage,construction blocks the road; blockage is something in the way
 ⚓,anchor,anogo,grounding,anchor holds the ship steady; grounding is staying steady
 🛟,life-ring,uluve,rescue,life ring means rescue
 🛶,canoe,anone,,
@@ -630,7 +630,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🌨️,snow,ozowo,stillness,snow quiets the landscape; stillness is calm / slack water
 🌪️,tornado,orado,turmoil,tornado tears through order; turmoil is violent disorder
 🌫️,fog,avogo,confusion,fog blurs what is near; confusion blurs what is clear
-🌬️,wind,unudu,,
+🌬️,wind,uwudu,,
 🌀,cyclone,ogone,chaos,cyclone spins into chaos
 🌈,rainbow,arano,,
 ☂️,umbrella,umubu,,
@@ -655,7 +655,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🎀,ribbon,urubo,decoration,ribbon ties a gift prettily; decoration adorns an occasion
 🎁,wrapped-gift,awara,generosity,gift is given to another; generosity is giving freely
 🎗️,awareness,aware,,
-🎟️,admission-tickets,adumu,admission,ticket grants entry inside; admission is being let in
+🎟️,admission-tickets,aduge,admission,ticket grants entry inside; admission is being let in
 🎫,ticket,ugede,,
 🎖️,honor,onoro,honor,medal marks distinguished service; honor is earned respect
 🏆,trophy,odobo,score,trophy marks the final tally; score is the counted result
@@ -686,7 +686,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 ⛸️,skating,agadu,,
 🎣,fishing,uvuvu,memory,fishing pulls something up from opaque water; memory retrieves from the past (may be a boot)
 🤿,diving-mask,uduvu,,
-🎽,running-shirt,unuzu,,
+🎽,running-shirt,ununu,,
 🎿,skis,owoje,,
 🛷,sled,elede,thrill,sled speeds down the hill; thrill is exciting rush
 🥌,curling,urulu,,
@@ -710,7 +710,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🃏,joker,ojoge,,
 🀄,mahjong,amaha,,
 🎴,hanafuda,anavu,,
-🎭,theater,ahade,pretense,theater masks hide the actor; pretense is playing a role / as-if framing
+🎭,theater,adade,pretense,theater masks hide the actor; pretense is playing a role / as-if framing
 🖼️,framed-picture,amere,display,framed picture shows for viewing; display is shown for others
 🎨,palette,alede,,
 🧵,thread,adaha,,
@@ -720,7 +720,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🕶️,sunglasses,unaze,cool,sunglasses hide the eyes; cool is calm unbothered style
 🥽,goggles,ogele,,
 🥼,lab-coat,alaba,expertise,lab coat marks scientific work; expertise is specialized knowledge
-🦺,safety-vest,azave,,
+🦺,safety-vest,avedo,,
 👔,necktie,enege,,
 👕,t-shirt,ududu,casual,shirt is everyday wear; casual is relaxed informal
 👖,jeans,ejeja,,
@@ -742,7 +742,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 👝,clutch-bag,uguda,,
 🛍️,shopping-bag,obuna,,
 🎒,backpack,ababa,preparation,backpack holds what you need ahead; preparation is readying beforehand
-🩴,sandal,anala,,
+🩴,sandal,adala,,
 👞,mans-shoe,amane,,
 👟,sneaker,egage,activity,sneaker is built for movement; activity is active motion
 🥾,boot,abodo,,
@@ -759,7 +759,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🧢,billed-cap,uleda,,
 🪖,helmet,eheme,,
 ⛑️,rescue-helmet,ezuhe,,
-📿,prayer-bead,obore,,
+📿,prayer-bead,abare,,
 💄,lipstick,uluzu,appearance,lipstick colors the lips; appearance is how you present
 💍,ring,unuru,,
 💎,gemstone,egeme,value,gem is rare and precious; value is worth holding dear
@@ -775,7 +775,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🎵,music-note,uzugo,melody,note carries a musical line; melody is tuneful line
 🎶,music-notes,uzuge,,
 🎙️,studio-mic,udomu,,
-🎚️,slider,uluru,adjustment,slider fine-tunes the level; adjustment is fine tuning
+🎚️,slider,uzuze,adjustment,slider fine-tunes the level; adjustment is fine tuning
 🎛️,knobs,ogozo,control,knobs adjust the sound mix; control is directing settings
 🎤,microphone,ugobo,performance,mic carries a live voice; performance is presenting to others
 🎧,headphones,edone,immersion,headphones seal you in sound; immersion is deep involvement
@@ -783,7 +783,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🎷,saxophone,azazo,,
 🎺,trumpet,udube,,
 🪊,trombone,omone,fanfare,trombone blares fanfare
-🪗,accordion,ago,,
+🪗,accordion,agoro,,
 🎸,guitar,udara,rebellion,guitar drives raw loud sound; rebellion is breaking from norms
 🎹,musical-keyboard,uzubo,,
 🎻,violin,uvuvo,,
@@ -792,15 +792,15 @@ emoji,literal,clarity,metaphorical,mnemonic
 🪘,long-drum,olono,,
 🪇,maracas,amaga,,
 🪈,flute,uvulu,lightness,flute plays with lightness
-🪉,harp,ahara,harmony,harp strings make harmony
+🪉,harp,araha,harmony,harp strings make harmony
 📱,phone,one,connection,phone keeps connection
 📟,pager,agere,urgency,pager signals urgency
 📠,fax,avaza,transmission,fax sends transmission
 🔋,battery,adero,energy,battery stores energy
-🪫,low-battery,owade,depletion,low battery shows depletion
+🪫,low-battery,olowo,depletion,low battery shows depletion
 🔌,plug,obodu,power,plug draws power
 💻,laptop,alabo,productivity,laptop enables productivity
-🖨️,printer,urude,replication,printer makes replication
+🖨️,printer,urune,replication,printer makes replication
 ⌨️,keyboard,egego,input,keyboard is input
 🖱️,computer-mouse,omuze,,
 🖲️,trackball,adada,,
@@ -816,7 +816,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 📹,video-camera,udega,recording,camcorder tapes moving scenes; recording is preserving over time
 📼,videocassette,udege,,
 🔍,magnify,aguvo,scrutiny,magnifier enlarges small detail; scrutiny is close examination
-🕯️,candle,agade,awash,candle light fills the room; awash is charge in the surrounding field
+🕯️,candle,anede,awash,candle light fills the room; awash is charge in the surrounding field
 💡,lightbulb,uluhu,,
 🔦,flashlight,avazu,revelation,flashlight reveals what was dark; revelation is making known
 🏮,lantern,alane,guidance,lantern lights the path ahead; guidance is showing the way
@@ -829,7 +829,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 📄,page,aje,document,page is a document
 📰,newspaper,enewe,news,newspaper delivers news
 📑,bookmark-tab,ogaga,organization,bookmark tab organizes
-🔖,bookmark,oboga,reminder,bookmark marks a reminder
+🔖,bookmark,oboma,reminder,bookmark marks a reminder
 🏷️,label,alabe,classification,label gives classification
 🪙,coin,onunu,same,coin has two faces of one thing; same is two labels for one referent
 💰,money-bag,oneba,debt,money bag holds what is owed; debt is an unpaid balance
@@ -864,7 +864,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 📇,index-card,uneza,index,card index sorts for lookup; index is sorted reference
 📈,chart-up,ahadu,degree,chart rising marks more on the scale; degree is vague how-much
 📉,chart-down,agado,,
-📊,bar-chart,araha,analysis,bar chart compares quantities; analysis is examining data
+📊,bar-chart,arara,analysis,bar chart compares quantities; analysis is examining data
 📋,clipboard,ugubo,accountability,clipboard tracks tasks to do; accountability is answerable tracking
 📌,pushpin,ubuhu,highlight,pin marks an important spot; highlight is marking as important
 📎,paperclip,aberu,attachment,paperclip holds sheets together; attachment is joined addition
@@ -889,7 +889,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🪚,saw,ezawa,division,saw cuts material apart; division is splitting into parts
 🔧,wrench,ewene,workaround,wrench turns past a stuck bolt; workaround is an improvised bypass
 🪛,screwdriver,ewuve,assembly,screwdriver joins parts together; assembly is putting together
-🔩,nut-bolt,unudo,,
+🔩,nut-bolt,unudu,,
 ⚙️,gear,egega,mechanism,gear drives mechanism
 🗜️,clamp,abama,pressure,clamp squeezes with steady force; pressure is squeezing force
 ⚖️,scale,ale,justice,scales weigh both sides equally; justice is fair balance
@@ -899,7 +899,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 ⛓️,chains,agagu,bondage,chains bind and restrict movement; bondage is being held fast
 🪝,hook,ohogo,catch,hook snags and holds fast; catch is seizing and holding
 🧰,toolbox,olozo,readiness,toolbox holds gear for the job; readiness is prepared for task
-🧲,magnet,agene,attraction,magnet pulls metal toward it; attraction is pulling toward
+🧲,magnet,amage,attraction,magnet pulls metal toward it; attraction is pulling toward
 🪜,ladder,ade,advancement,ladder climbs step by step; advancement is rising by stages
 🪏,shovel,ozove,excavation,shovel digs excavation
 ⚗️,alembic,aleme,,
@@ -930,7 +930,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🪤,mousetrap,ozera,trap,mousetrap lures then snaps shut; trap is lure into confinement
 🪒,razor,arazo,,
 🧴,lotion,odudo,,
-🧷,safety-pin,avedo,fastening,safety pin holds fabric together; fastening is holding together
+🧷,safety-pin,avedu,fastening,safety pin holds fabric together; fastening is holding together
 🧹,broom,oromo,cleanup,broom sweeps dirt away; cleanup is clearing what clutters
 🧺,basket,azege,gathering,basket collects items together; gathering is bringing together
 🧻,paper-roll,ebero,necessity,toilet paper meets basic need; necessity is what must be had
@@ -951,7 +951,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🪧,placard,alala,protest,placard carries a public message; protest is public objection
 🪪,id-card,udaga,verification,id card verifies identity
 🏧,atm,adema,withdrawal,atm gives cash on demand; withdrawal is taking out stored value
-🚮,litter,urere,disposal,litter bin marks where trash goes; disposal is getting rid of
+🚮,litter,uluru,disposal,litter bin marks where trash goes; disposal is getting rid of
 🚰,drinking-water,unude,,
 ♿,accessible,agezu,,
 🚻,restroom,erezo,designation,restroom sign marks facility type; designation is marked category
@@ -968,7 +968,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🚷,no-pedestrian,onobe,,
 📵,no-phone,onobo,,
 🔞,no-minors,onomu,,
-☢️,radioactive,aduge,,
+☢️,radioactive,adugu,,
 ☣️,biohazard,ububo,,
 ⬆️,north,onoho,,
 ↗️,northeast,onore,,
@@ -1037,7 +1037,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 ⚧️,transgender,anene,,
 ✖️,multiply,ulubo,negation,multiply sign marks crossing out; negation is saying not so
 ➕,plus,alaza,addition,plus adds one thing to another; addition is joining more in
-➖,minus,umumu,subtraction,minus takes one thing away; subtraction is taking away from
+➖,minus,unuzu,subtraction,minus takes one thing away; subtraction is taking away from
 ➗,divide,uduve,,
 🟰,equals,eguga,,
 ♾️,infinity,ununo,endless,infinity loop never closes an end; endless is without limit
@@ -1050,9 +1050,9 @@ emoji,literal,clarity,metaphorical,mnemonic
 ⚕️,medical,eduga,,
 ♻️,recycling,egogu,reuse,recycle arrows loop material back; reuse is using again
 ⚜️,fleur-de-lis,evele,,
-🔱,trident,udene,,
+🔱,trident,urude,,
 📛,name-tag,aname,identification,name badge shows who you are; identification is naming who someone is
-🔰,beginner,egune,beginner,shoshin mark means new learner; beginner is just starting out
+🔰,begin,egunu,onset,shoshin mark means just starting; onset is the start of a skill
 ⭕,correct,ogore,inclusion,hollow circle marks round boundary; inclusion is being inside the boundary
 ✅,check,egege,decision,checkmark marks a confirmed pick; decision is a settled choice with revisability
 ❌,cross,awe,rejection,cross mark means no wrong; rejection is refused as wrong
@@ -1234,7 +1234,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🇰🇵,north-korea,orore,north-korean,north korea people are north-korean
 🇰🇷,south-korea,odora,korean,south korea people are korean
 🇰🇼,kuwait,uguwa,kuwaiti,kuwait people are kuwaiti
-🇰🇾,cayman-islands,amanu,caymanian,cayman islands people are caymanian
+🇰🇾,cayman-islands,amala,caymanian,cayman islands people are caymanian
 🇰🇿,kazakhstan,ovana,kazakh,kazakhstan people are kazakh
 🇱🇦,laos,ajo,laotian,laos people are laotian
 🇱🇧,lebanon,eleba,lebanese,lebanon people are lebanese
@@ -1263,8 +1263,8 @@ emoji,literal,clarity,metaphorical,mnemonic
 🇲🇶,martinique,arunu,martiniquan,martinique people are martiniquan
 🇲🇷,mauritania,aruda,mauritanian,mauritania people are mauritanian
 🇲🇸,montserrat,onera,montserratian,montserrat people are montserratian
-🇲🇹,malta,amala,maltese,malta people are maltese
-🇲🇺,mauritius,amadu,mauritian,mauritius people are mauritian
+🇲🇹,malta,ebu,maltese,malta people are maltese
+🇲🇺,mauritius,arudu,mauritian,mauritius people are mauritian
 🇲🇻,maldives,aluve,maldivian,maldives people are maldivian
 🇲🇼,malawi,alawu,malawian,malawi people are malawian
 🇲🇽,mexico,emezu,mexican,mexico people are mexican
@@ -1281,7 +1281,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🇳🇵,nepal,eneba,nepali,nepal people are nepali
 🇳🇷,nauru,aru,nauruan,nauru people are nauruan
 🇳🇺,niue,unune,niuean,niue people are niuean
-🇳🇿,new-zealand,ewala,new-zealander,new zealand people are new-zealander
+🇳🇿,new-zealand,ewela,new-zealander,new zealand people are new-zealander
 🇴🇲,oman,onana,omani,oman people are omani
 🇵🇦,panama,anama,panamanian,panama people are panamanian
 🇵🇪,peru,eberu,peruvian,peru people are peruvian
@@ -1296,9 +1296,9 @@ emoji,literal,clarity,metaphorical,mnemonic
 🇵🇸,palestinian-territories,alezu,palestinian,palestinian territories people are palestinian
 🇵🇹,portugal,oruga,portuguese,portugal people are portuguese
 🇵🇼,palau,abalu,palauan,palau people are palauan
-🇵🇾,paraguay,arara,paraguayan,paraguay people are paraguayan
+🇵🇾,paraguay,arogo,paraguayan,paraguay people are paraguayan
 🇶🇦,qatar,edo,qatari,qatar people are qatari
-🇷🇪,reunion,ereru,reunionese,reunion people are reunionese
+🇷🇪,reunion,erenu,reunionese,reunion people are reunionese
 🇷🇴,romania,oroma,romanian,romania people are romanian
 🇷🇸,serbia,ezeru,serbian,serbia people are serbian
 🇷🇺,russia,uruza,russian,russia people are russian
