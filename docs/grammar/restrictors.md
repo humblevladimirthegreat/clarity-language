@@ -230,17 +230,17 @@ Statement readings below; under **question** force → [questions.md](questions.
 ### More examples
 
 - `hanunul hudunul hol` → *either when raining or at night (not both)*; `… hom` → *… or never*
-- `hanunul hozonol haol` → *when raining and/or when snowing*
+- `hanunul hozowol haol` → *when raining and/or when snowing*
 - `hanunul hul` → *not when raining*; `hanunul hudunul hum` → *not when raining or at night, for one*
 - `hanunul hual` → *always except when raining*
 - `hanunul huol` → *anytime except when raining*
 - `hamubam hogenenum hel` → *preferably in emergency ≻ for convenience*
-- `hanunul hozonol hael` → *as often when raining as when snowing*
+- `hanunul hozowol hael` → *as often when raining as when snowing*
 - `hael` → *equally often* / *tied frequency frame* (bare)
 - `bemamal bamugal hoel` → *if (when) fix, else if workaround…*
-- `hanunul hozonol har` → *sometime among rain or snow*
+- `hanunul hozowol har` → *sometime among rain or snow*
 - Complex conjunct: `hohohul hal` → *only at home*
-- `/w/` core: `hedegum wal` → *only when alleged*; `war` → *sometime* (under some framing); juxtaposition `guzumum wube wenazel` → *very* and *recent* (not a restrictor fence)
+- `/w/` core: `hededem wal` → *only when alleged*; `war` → *sometime* (under some framing); juxtaposition `guzumum wube wenazel` → *very* and *recent* (not a restrictor fence)
 
 ### Conjuncts and next-clause *when*
 
@@ -258,9 +258,9 @@ Necessity-style *never without…* uses **`hal`** (and join-relation **`huan`**)
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills on this Intermediate band. Try each item before opening **Show answer**. Use the **circumstance inventory** (exclusive / inclusive / *not when* / ranked occasions / unspecified-member with conjuncts). Next-clause *when* / *if* stays `/h/` + `/b/` **`orodo`**, not a circumstance fence of sentences.
+Short drills on this Intermediate band. Try each item before opening **Show answer**. Use the **circumstance inventory** (exclusive / inclusive / *not when* / ranked occasions / unspecified-member with conjuncts). Next-clause *when* / *if* stays `/h/` + `/b/` **`adoro`**, not a circumstance fence of sentences.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `awala` *walk* · `urunu` *run* · `uzune` *sing* · `elebe` *sleep* · `uwuru` *write* · `uruna` *rain* · `ozono` *snow* · `udunu` *night* · `ohohu` *house* · `amuba` *emergency* · `ogegau` *convenience* · `emama` *fix* · `amuga` *workaround* · `orodo` *next clause*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `awala` *walk* · `urunu` *run* · `uzune` *sing* · `elebe` *sleep* · `uwuru` *write* · `uruna` *rain* · `ozowo` *snow* · `udunu` *night* · `ohohu` *house* · `amuba` *emergency* · `ogegau` *convenience* · `emama` *fix* · `amuga` *workaround* · `adoro` *next clause*
 
 #### English → Agelan
 
@@ -273,7 +273,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **2.** *Ululon sleeps when raining and/or when snowing.*
 
 ::: details Show answer
-`zululon velebel hanunul hozonol haol.`
+`zululon velebel hanunul hozowol haol.`
 :::
 
 **3.** *Uhubun does not walk when raining.*
@@ -297,7 +297,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **6.** *Ululon runs as often when raining as when snowing.*
 
 ::: details Show answer
-`zululon vurunul hanunul hozonol hael.`
+`zululon vurunul hanunul hozowol hael.`
 :::
 
 **7.** *Azawan writes if a fix, else if a workaround.*
@@ -309,7 +309,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **8.** *Uhubun sings if Azawan walks.*
 
 ::: details Show answer
-`zuhubun vuzunel hodom zazawan vawalal borodol.`
+`zuhubun vuzunel hadorom zazawan vawalal badorol.`
 :::
 
 #### Agelan → English
@@ -344,7 +344,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan sleeps only at home.*
 :::
 
-**6.** `zululon vawalal hanunul hozonol har.`
+**6.** `zululon vawalal hanunul hozowol har.`
 
 ::: details Show answer
 *Ululon walks sometime among rain or snow.*
@@ -356,7 +356,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan walks equally often.*
 :::
 
-**8.** `zuhubun vuzunel hodom zazawan vawalal borodol.`
+**8.** `zuhubun vuzunel hadorom zazawan vawalal badorol.`
 
 ::: details Show answer
 *Uhubun sings if Azawan walks.*

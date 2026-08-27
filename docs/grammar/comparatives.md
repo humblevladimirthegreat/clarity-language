@@ -400,10 +400,10 @@ Six fixed standards. Ending stays **-n** (named reference-class standard), not o
 | English | Sense | Comparee | Source |
 |---------|--------|----------|--------|
 | **Avuzo** | mean of the relevant population | **`zojun`** | ☯️ **`oju`** *yin-yang* → *balance* |
-| **Typical** | usual / modal case | **`zahazen`** | 🐹 **`ahaze`** *hamster* → *routine* |
+| **Typical** | usual / modal case | **`zahaman`** | 🐹 **`ahama`** *hamster* → *routine* |
 | **Mine** (personal standard) | speaker’s **normative** bar | **`zugoboxrawon`** | 🎤 **`ugobo`** ([speaker](pronouns.md#special-pronouns)) + digit morph **`+1`** (*unit / primary*) |
-| **Social** | peers / in-group | **`zuleden`** | 👥 **`ulede`** *silhouettes* → *community* |
-| **Professional** | experts / role standard | **`zalagon`** | 🥼 **`alago`** *lab-coat* → *expertise* |
+| **Social** | peers / in-group | **`zuluden`** | 👥 **`ulude`** *silhouettes* → *community* |
+| **Professional** | experts / role standard | **`zalaban`** | 🥼 **`alaba`** *lab-coat* → *expertise* |
 | **Everyone** | universal reference class | **`zuan`** | bare named **`ua`** (*stock everyone*) |
 
 <a id="mine-vs-speaker"></a>
@@ -421,12 +421,12 @@ Soft personal standard: **`zugoboxrawom`**. Ordinary named people stay ordinary 
 
 | Agelan | Reading |
 |---------|---------|
-| `zuel guzunel zugobon zalagon` | *worse than Professional* at singing |
+| `zuel guzunel zugobon zalaban` | *worse than Professional* at singing |
 | `zuem gagelal debunel zojun` | soft: draft is somewhat less clear than Avuzo |
 | `zuel geredom zazawan zugoboxrawon` | Azawan is less kind than **my personal standard** |
 | `zuel guzunel zazawan zugobon` | Azawan is less skilled at singing than **I am** (performance) |
-| `zuel gabunul zugobon zuleden` | less skilled than Social |
-| `zuel gabunul zugobon zahazen` | less skilled than Typical |
+| `zuel gabunul zugobon zuluden` | less skilled than Social |
+| `zuel gabunul zugobon zahaman` | less skilled than Typical |
 | `zuel gabunul zugobon zuan` | less skilled than Everyone |
 | `zuel guzunel zugobon zululon` | less skilled than **Ululon** (ordinary person comparee) |
 
@@ -442,7 +442,7 @@ Soft personal standard: **`zugoboxrawom`**. Ordinary named people stay ordinary 
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. Put the standard in the *than*-conjunct; **`zugobon`** is performance, **`zugoboxrawon`** is Mine.
 
-**Roots used here:** `azawa` / `ululo` · `uzune` · `abunu` · `eredo` · `agela` · `ebun` · `oju` · `ahaze` · `ugobo` · `ulede` · `alago` · `ua`
+**Roots used here:** `azawa` / `ululo` · `uzune` · `abunu` · `eredo` · `agela` · `ebun` · `oju` · `ahama` · `ugobo` · `ulude` · `alaba` · `ua`
 
 #### English → Agelan
 
@@ -461,7 +461,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 **3.** *I am worse at singing than Professional.*
 
 ::: details Show answer
-`zuel guzunel zugobon zalagon.`
+`zuel guzunel zugobon zalaban.`
 :::
 
 **4.** *The draft is somewhat less clear than Avuzo.*
@@ -473,7 +473,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 **5.** *I am less skilled than Typical.*
 
 ::: details Show answer
-`zuel gabunul zugobon zahazen.`
+`zuel gabunul zugobon zahaman.`
 :::
 
 **6.** *I am less skilled than Everyone.*
@@ -484,7 +484,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 #### Agelan → English
 
-**1.** `zuel gabunul zugobon zuleden.`
+**1.** `zuel gabunul zugobon zuluden.`
 
 ::: details Show answer
 *I am less skilled than Social.*
@@ -502,7 +502,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 *Azawan is somewhat less kind than my personal standard.*
 :::
 
-**4.** `zuel gabunul zazawan zalagon.`
+**4.** `zuel gabunul zazawan zalaban.`
 
 ::: details Show answer
 *Azawan is less skilled than Professional.*

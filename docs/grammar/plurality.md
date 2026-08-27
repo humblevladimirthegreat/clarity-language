@@ -54,7 +54,7 @@ gloss: `z-←grace-sh` · `v-sit`
 
 Bare **-l** / **-m** still always introduce; **-lsh** / **-msh** introduce a **group** indefinite. Resume of a group is **-rsh**.
 
-**-lsh** is not kind-generic (*cats in general*) and not inclusive *we* — inclusive *we* is **`ahage`**, not speaker **-sh** ([clusivity](pronouns.md#clusivity)).
+**-lsh** is not kind-generic (*cats in general*) and not inclusive *we* — inclusive *we* is **`aha`**, not speaker **-sh** ([clusivity](pronouns.md#clusivity)).
 
 ### Nouns (`/z/`, `/d/`, `/b/`)
 
@@ -74,18 +74,18 @@ Special pronouns keep **-sh** available, but the default is **not** uniform asso
 | Form | **-sh** reading |
 |------|-----------------|
 | **`ugobo…sh`** (`zugobonsh`, …) | speaker **and associates** (listener not assumed) |
-| **`ebone…sh`** (`zebonensh`, …) | **address set** — all current addressees; **not** “you and your family” |
-| **`ahage`** (`zahagen`, …) | already the interlocutor set — do **not** add **-sh** for ordinary inclusive *we* |
+| **`edone…sh`** (`zedonensh`, …) | **address set** — all current addressees; **not** “you and your family” |
+| **`aha`** (`zahan`, …) | already the interlocutor set — do **not** add **-sh** for ordinary inclusive *we* |
 | name / content **-r**…**-sh** | that person **and associates** |
 
-*You (singular) and your associates* → **name…**-sh**, not **`ebone…sh`**. Inclusive *we* → **`ahage`**, not **`ugobo…sh`**.
+*You (singular) and your associates* → **name…**-sh**, not **`edone…sh`**. Inclusive *we* → **`aha`**, not **`ugobo…sh`**.
 
 ### Translation practice
 <a id="translation-practice"></a>
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `agada` *cat* · `adaga` *dog* · `uzumu` smile → *happy* (**-m**) · `ele` *size* / *big* · `awala` *walk* · `aju` *sit* · `urunu` *run* · `elebe` *sleep* · `eje` *see* · `ahage` inclusive *we* · `ugobo` speaker · `ebone` listener
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `agada` *cat* · `adaga` *dog* · `uzumu` smile → *happy* (**-m**) · `ele` *size* / *big* · `awala` *walk* · `aju` *sit* · `urunu` *run* · `elebe` *sleep* · `eje` *see* · `aha` inclusive *we* · `ugobo` speaker · `edone` listener
 
 #### English → Agelan
 
@@ -110,7 +110,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **4.** *We (you and I) walk.*
 
 ::: details Show answer
-`zahagen vawalal.`
+`zahan vawalal.`
 :::
 
 **5.** *Speaker and associates (not you) sit.*
@@ -122,7 +122,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **6.** *You all (the addressees) walk.*
 
 ::: details Show answer
-`zebonensh vawalal.`
+`zedonensh vawalal.`
 :::
 
 **7.** *You (Ululon) and your associates sit.*
@@ -157,13 +157,13 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *They (that one and associates) sit.*
 :::
 
-**4.** `zahagen velebel.`
+**4.** `zahan velebel.`
 
 ::: details Show answer
 *We (including you) sleep.*
 :::
 
-**5.** `zebonensh vajul.`
+**5.** `zedonensh vajul.`
 
 ::: details Show answer
 *You all (the addressees) sit.*
@@ -195,12 +195,12 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 When membership matters and is not listed:
 
-1. **Explicit join / except wins** (`ul debonen` = associates minus the listener).
+1. **Explicit join / except wins** (`ul dedonen` = associates minus the listener).
 2. Else **recently named cohort** (family introduced, team title, …).
 3. Else **institutional frame** of the scene (this meeting, this household).
 4. Else **underspecified** — do not force the listener in or out.
 
-Mark when the wrong reading would matter: co-agency → **`ahage`** or a join; “not you” → speaker/name **-sh** or a join that omits the listener.
+Mark when the wrong reading would matter: co-agency → **`aha`** or a join; “not you” → speaker/name **-sh** or a join that omits the listener.
 
 **Address-set resolution:** prefer everyone in this turn’s vocative cluster, plus anyone still held as addressee by context.
 
@@ -245,8 +245,8 @@ Most useful with [phrase join](coordination.md): SHARED singular scale under **`
 
 | Example | Gloss |
 |---------|-------|
-| `zulebol zorodolol zal gudurum` | *the file-box and the toolbox are (each) heavy* |
-| `zulebol zorodolol zal gudurumsh` | *heavy together* — collective SHARED |
+| `zulebol zolozol zal gudurum` | *the file-box and the toolbox are (each) heavy* |
+| `zulebol zolozol zal gudurumsh` | *heavy together* — collective SHARED |
 | `zahahagelr gumolam` | *the team is vast* (group-ledegul size) |
 | `zulebolsh gudurum` | *the file-boxes are heavy* (members / plain) |
 | `zulebolsh gudurumsh` | *the file-boxes are heavy collectively* |
@@ -259,7 +259,7 @@ Most useful with [phrase join](coordination.md): SHARED singular scale under **`
 
 ### Vocatives (`/j/`)
 
-Address a **group**: **-lsh** for kind-based group address (*hey, kids*); **-nsh** for a titled group (*Team Alpha*); **-rsh** to call a prior addressee **and associates**. Multi-addressee role without naming → **`jebonensh`**. *Everyone* → bare **`…ual`**, not **-lsh**.
+Address a **group**: **-lsh** for kind-based group address (*hey, kids*); **-nsh** for a titled group (*Team Alpha*); **-rsh** to call a prior addressee **and associates**. Multi-addressee role without naming → **`jedonensh`**. *Everyone* → bare **`…ual`**, not **-lsh**.
 
 ### Where **-sh** is unused
 
@@ -280,7 +280,7 @@ Quantity `>1` is digitless **`g+`** (may co-occur with noun **-lsh**: `zagadalsh
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `olebo` *file-box* · `uduru` *heavy* · `ahahage` *team* · `umola` *vast* · `uzudu` *student* · `uzune` *sing* · `awala` *walk* · `urunu` *run* · `ahage` inclusive *we* · `ugobo` speaker · `ebone` listener
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `olebo` *file-box* · `uduru` *heavy* · `ahahage` *team* · `umola` *vast* · `uzudu` *student* · `uzune` *sing* · `awala` *walk* · `urunu` *run* · `aha` inclusive *we* · `ugobo` speaker · `edone` listener
 
 #### English → Agelan
 
@@ -299,7 +299,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **3.** *We (including you) run.*
 
 ::: details Show answer
-`zahagen vurunul.`
+`zahan vurunul.`
 :::
 
 **4.** *Speaker and associates run (listener not assumed).*
@@ -329,7 +329,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **8.** *Hey, you all (the addressees)!*
 
 ::: details Show answer
-`jebonensh.`
+`jedonensh.`
 :::
 
 #### Agelan → English
@@ -370,7 +370,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Hey, students!*
 :::
 
-**7.** `jebonensh.`
+**7.** `jedonensh.`
 
 ::: details Show answer
 *Hey, you all (the addressees)!*
@@ -384,5 +384,5 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 ## See also
 
-- Resume and **`ahage`** / address set: [pronouns.md](pronouns.md)
+- Resume and **`aha`** / address set: [pronouns.md](pronouns.md)
 - Endings before **-sh**: [reference-suffix.md](reference-suffix.md)

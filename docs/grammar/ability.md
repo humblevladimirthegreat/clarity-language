@@ -215,10 +215,10 @@ gloss: `h-ABIL-unable-temporary`
 |-------|--------|
 | Can’t / can **this** activity or property | **host + `xa` / `xe` / `xo` / `xu`** ([Beginner](#ability)) |
 | Clause-wide / hostless capability | **`hegeraxa…`** / **`hegeraxe…`** / **`hegeraxo…`** / **`hegeraxu…`** (same under `/w/`) |
-| Need unmet + changeability | need **`xu…`** — [values](values.md) (`horodoloxul` ≠ “can’t competence”) |
+| Need unmet + changeability | need **`xu…`** — [values](values.md) (`holozoxul` ≠ “can’t competence”) |
 | When / never / sometime the host applies | [restrictors](restrictors.md) (`hal`, `har`, …) |
 
-Stack when useful: e.g. can’t-sing plus unmet competence (`vuzunexol` + `horodoloxum`). Bare **`hal`** (*never*) is applicability, not tagged incapability. Need-root **`xu`** stays unmet need, not ability. Unspecified need **`ega`** 🥚 (*potential*) is not **`ABIL`**.
+Stack when useful: e.g. can’t-sing plus unmet competence (`vuzunexol` + `holozoxum`). Bare **`hal`** (*never*) is applicability, not tagged incapability. Need-root **`xu`** stays unmet need, not ability. Unspecified need **`ega`** 🥚 (*potential*) is not **`ABIL`**.
 
 | Agelan (schematic) | Reading |
 |---------------------|---------|
@@ -226,7 +226,7 @@ Stack when useful: e.g. can’t-sing plus unmet competence (`vuzunexol` + `horod
 | `vuzunexol` | can’t sing yet / may become able (or unknown) |
 | `vuzunexul` | can’t sing (fixed / impossible as far as you can tell) |
 | `golorodoxal` | can lead (literal) |
-| `vuzunexol horodoloxum` | can’t sing (modifiable) **and** unmet competence |
+| `vuzunexol holozoxum` | can’t sing (modifiable) **and** unmet competence |
 | `… hegeraxel` | can’t **right now** (no single host / clause-wide) |
 | `hegeral` | ability (**topic** only) |
 

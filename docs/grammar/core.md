@@ -1,6 +1,6 @@
 # Agelan core grammar
 
-How to read and write an Agelan **sentence**: word roles, word shape, default order, how a turn starts (`/j/` vs `/x/`), and dependent sentences with **`orodo`**.
+How to read and write an Agelan **sentence**: word roles, word shape, default order, how a turn starts (`/j/` vs `/x/`), and dependent sentences with **`adoro`**.
 
 ## Beginner
 <a id="beginner"></a>
@@ -122,7 +122,7 @@ It sits on that adjective: normally right after the `/ɡ/` (or after that `/ɡ/`
 
 Because `/h/` talks about the sentence’s verb, **you may place it anywhere in that sentence** — except a “next sentence” `/h/`+`/b/` unit, which must sit **last in the main sentence** ([Dependent clauses](#dependent-clauses)). `/h/` material stays inside its own sentence.
 
-**Sedegural adverbs at once** just sit next to each other: `hadazal hozonol` → *hastily and still/quietly*.
+**Sedegural adverbs at once** just sit next to each other: `hadazal hozowol` → *hastily and still/quietly*.
 
 ### Complex adjectives, complex adverbs, and extra nouns
 <a id="complex-adjectives-complex-adverbs-and-argument-nouns"></a>
@@ -132,7 +132,7 @@ A **complex** adjective or adverb needs an extra participant: the `/ɡ/` or `/h/
 | Shape | Job | Example | Mnemonic |
 |-------|-----|---------|----------|
 | `/ɡ/` + `/b/` | complex adjective | `gonunul buzuzul` (*same as…*) | **`onunu`** 🪙 *coin* → two faces, one substance |
-| `/h/` + `/b/` | complex adverb (*to*, *at*, *regarding*, *because* / *if* + **`orodo`**) | `hurugum borodo` (*because* + next sentence) | relation word + bound extra noun |
+| `/h/` + `/b/` | complex adverb (*to*, *at*, *regarding*, *because* / *if* + **`adoro`**) | `hurugum badoro` (*because* + next sentence) | relation word + bound extra noun |
 
 Keep the `/h/` + `/b/` pair **together with no gap**. Ordinary pairs may move as a unit; a pair whose `/b/` is the next-sentence pronoun must sit **[last in the main sentence](#dependent-clauses)**.
 
@@ -158,7 +158,7 @@ The start of a **new turn** is a `/j/` cluster in this order:
 - A period-ended statement body (writing `.`; speech falls at the end)
 - A *yes* / *no* particle is present (**`-l`** → statement **`jal`**; **`-m`** → soft statement **`jam`**)
 - A later piece under a clause `/x/` continue ([discourse markers](#discourse-markers-x))
-- A [dependent sentence](#dependent-clauses) under **`orodo`** with the **same** speech act as the main sentence (a different speech act still needs its own force word)
+- A [dependent sentence](#dependent-clauses) under **`adoro`** with the **same** speech act as the main sentence (a different speech act still needs its own force word)
 
 When force is written, it closes the opener. A new `/j/` turn starts a new utterance.
 
@@ -201,43 +201,43 @@ word-initial **x** = discourse role (**eXtend** the talk).
 ### Dependent clauses
 <a id="dependent-clauses"></a>
 
-A dependent sentence uses the special next-sentence pronoun **`orodo`**: in the main sentence it stands for “whatedegur follows right abaway.”
+A dependent sentence uses the special next-sentence pronoun **`adoro`**: in the main sentence it stands for “whatedegur follows right abaway.”
 
-**`orodo`** 🚪 *doorway* → *what follows* — the main sentence ends at the doorway; the dependent walks through.
+**`adoro`** 🚪 *doorway* → *what follows* — the main sentence ends at the doorway; the dependent walks through.
 
-**Placement:** put **`orodo` last** in its main-sentence slot, and put the dependent material **immediately after** it. Rearrange free word order so that holds. For *because* / *if* style, the whole `/h/` + `/b/` **`orodo`** unit sits last in the main sentence (**`orodo`** last). That final **`orodo`** is where the dependent begins.
+**Placement:** put **`adoro` last** in its main-sentence slot, and put the dependent material **immediately after** it. Rearrange free word order so that holds. For *because* / *if* style, the whole `/h/` + `/b/` **`adoro`** unit sits last in the main sentence (**`adoro`** last). That final **`adoro`** is where the dependent begins.
 
-The dependent is a **full sentence**. It may open with its own `/j/` cluster, or **keep** the main sentence’s speech act and omit `/j/` when that matches. The **boundary** is **`orodo`**. A different speech act (embedded ask, command, …) needs its own force word.
+The dependent is a **full sentence**. It may open with its own `/j/` cluster, or **keep** the main sentence’s speech act and omit `/j/` when that matches. The **boundary** is **`adoro`**. A different speech act (embedded ask, command, …) needs its own force word.
 
-**That-clause / content** — often a core object, with **`orodo` last** in the main sentence:
+**That-clause / content** — often a core object, with **`adoro` last** in the main sentence:
 
 ```
-`zazawan dululon vezehel dorodol.`
+`zazawan dululon vezehel dadorol.`
 
 gloss: `z-Azawan` · `d-Ululon` · `v-tell` · `d-next-clause`
 
 *Azawan tells Ululon that…* (dependent sentence follows immediately)
 ```
 
-**Because / if / …** = `/h/` relation + `/b/` **`orodo`** (together, last in the main sentence). Overlay ending is always **-m** (metaphorical sense).
+**Because / if / …** = `/h/` relation + `/b/` **`adoro`** (together, last in the main sentence). Overlay ending is always **-m** (metaphorical sense).
 
 | English | Form | Lexicon | Metaphor |
 |---------|------|---------|----------|
-| *because* | **`hurugum borodol`** | **`urugu`** | 🧱 *brick* → *foundation* |
-| *if* | **`hodom borodol`** | **`odo`** | 🚪 *door* → *opportunity* |
-| *if and only if* | **`hezazem borodol`** | **`ezaze`** | ↔️ *left-right* → *reciprocity* |
-| *although* / *edegun though* | **`hezebam borodol`** | **`ezeba`** | 🦓 *zebra* → *contrast* |
-| *while* (concurrent) | **`hegemum borodol`** | **`egemu`** | ♊ *gemini* → *duality* |
-| *until* | **`humerem borodol`** | **`umere`** | ⏲️ *timer* → *deadline* |
-| *before* | **`hagagam borodol`** | **`agaga`** | 🎒 *backpack* → *preparation* |
-| *after* | **`horanem borodol`** | **`orane`** | ⌛ *hourglass-done* → *recency* |
+| *because* | **`hurugum badorol`** | **`urugu`** | 🧱 *brick* → *foundation* |
+| *if* | **`hadorom badorol`** | **`adoro`** | 🚪 *door* → *opportunity* |
+| *if and only if* | **`hezazem badorol`** | **`ezaze`** | ↔️ *left-right* → *reciprocity* |
+| *although* / *edegun though* | **`hezebam badorol`** | **`ezeba`** | 🦓 *zebra* → *contrast* |
+| *while* (concurrent) | **`hegemum badorol`** | **`egemu`** | ♊ *gemini* → *duality* |
+| *until* | **`hudumem badorol`** | **`udume`** | ⏲️ *timer* → *deadline* |
+| *before* | **`hababam badorol`** | **`ababa`** | 🎒 *backpack* → *preparation* |
+| *after* | **`horanem badorol`** | **`orane`** | ⌛ *hourglass-done* → *recency* |
 
 ### Translation practice
 <a id="translation-practice"></a>
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Use **published roots** only — no opaque `<>` loans.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `edege` *teacher* · `uzudu` *student* · `adaga` *dog* · `agada` *cat* · `abogo` *book* · `ohohu` *house* · `elulu` *blue* · `arede` *red* · `ele` *size* · `uzumu` smile → *happy* (**-m**) · `awala` *walk* · `urunu` *run* · `elebe` *sleep* · `ezehe` *tell* · `uwuru` *write* · `uzune` *sing* · `eje` *perception* (*see*) · `aju` *sit* · `adaza` *haste* · `orodo` *next clause* · `urugu` *because* (**-m** on `/h/`)
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `edege` *teacher* · `uzudu` *student* · `adaga` *dog* · `agada` *cat* · `abogo` *book* · `ohohu` *house* · `elulu` *blue* · `arede` *red* · `ele` *size* · `uzumu` smile → *happy* (**-m**) · `awala` *walk* · `urunu` *run* · `elebe` *sleep* · `ezehe` *tell* · `uwuru` *write* · `uzune` *sing* · `eje` *perception* (*see*) · `aju` *sit* · `adaza` *haste* · `adoro` *next clause* · `urugu` *because* (**-m** on `/h/`)
 
 #### English → Agelan
 
@@ -298,13 +298,13 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **10.** *Azawan tells Ululon that the dog runs.*
 
 ::: details Show answer
-`zazawan dululon dorodol vezehel zadagal vurunul.`
+`zazawan dululon dadorol vezehel zadagal vurunul.`
 :::
 
 **11.** *Azawan is happy because Ululon walks.*
 
 ::: details Show answer
-`zazawan guzumum hurugum borodol zululon vawalal.`
+`zazawan guzumum hurugum badorol zululon vawalal.`
 :::
 
 #### Agelan → English
@@ -363,13 +363,13 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *A house is blue.* / *a blue house*
 :::
 
-**10.** `zazawan dululon dorodol vezehel zuhubun velebel.`
+**10.** `zazawan dululon dadorol vezehel zuhubun velebel.`
 
 ::: details Show answer
 *Azawan tells Ululon that Uhubun sleeps.*
 :::
 
-**11.** `zazawan vawalal hurugum borodol zululon velebel.`
+**11.** `zazawan vawalal hurugum badorol zululon velebel.`
 
 ::: details Show answer
 *Azawan walks because Ululon sleeps.*
@@ -462,12 +462,12 @@ One-way glue between sentences (ordinary ending; **-l** default closed):
 
 *therefore* moves forward from the prior claim; *howedegur* marks contrast; *meanwhile* is concurrent passage; *next* is the next frame; *but* blocks the expected continuation (harder push-back than *howedegur*). Ordinary content readings of those roots stay available under other role letters.
 
-**Not the same as clause poles:** discourse **`xezebal`** (*howedegur*) / **`xamenol`** (*meanwhile*) glue prior sentences; subordinating **`hezebam borodol`** (*although*) / **`hegemum borodol`** (*while*) attach a dependent under **`orodo`** — [dependent clauses](#dependent-clauses).
+**Not the same as clause poles:** discourse **`xezebal`** (*howedegur*) / **`xamenol`** (*meanwhile*) glue prior sentences; subordinating **`hezebam badorol`** (*although*) / **`hegemum badorol`** (*while*) attach a dependent under **`adoro`** — [dependent clauses](#dependent-clauses).
 
 ### Nested dependents
 <a id="nested-dependents"></a>
 
-Each clause may have at most one main-sentence-final **`orodo`**; a dependent may itself end in **`orodo`** (branching only to the right).
+Each clause may have at most one main-sentence-final **`adoro`**; a dependent may itself end in **`adoro`** (branching only to the right).
 
 ### Number as interjection
 <a id="number-as-interjection"></a>
@@ -479,7 +479,7 @@ A `/j/` **number** word is a call-out (*N more!*, score call, …), not clause f
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `uzudu` *student* · `adaga` *dog* · `agada` *cat* · `elulu` *blue* · `arede` *red* · `uzumu` smile → *happy* (**-m**) · `awala` *walk* · `urunu` *run* · `elebe` *sleep* · `eje` *perception* (*see*) · `uzune` *sing* · `aju` *sit* · `azebo` *loud volume* · `amala` *therefore* · `ezeba` *howedegur* / *although* · `ameno` *meanwhile* · `orodo` *next clause* · `urugu` *because* (**-m** on `/h/`)
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `uzudu` *student* · `adaga` *dog* · `agada` *cat* · `elulu` *blue* · `arede` *red* · `uzumu` smile → *happy* (**-m**) · `awala` *walk* · `urunu` *run* · `elebe` *sleep* · `eje` *perception* (*see*) · `uzune` *sing* · `aju` *sit* · `azebo` *loud volume* · `amala` *therefore* · `ezeba` *howedegur* / *although* · `ameno` *meanwhile* · `adoro` *next clause* · `urugu` *because* (**-m** on `/h/`)
 
 #### English → Agelan
 
@@ -528,7 +528,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **8.** *Azawan is happy because Ululon walks because Uhubun sleeps.*
 
 ::: details Show answer
-`zazawan guzumum hurugum borodol zululon vawalal hurugum borodol zuhubun velebel.`
+`zazawan guzumum hurugum badorol zululon vawalal hurugum badorol zuhubun velebel.`
 :::
 
 #### Agelan → English
@@ -575,7 +575,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan walks. Meanwhile Ululon sleeps.*
 :::
 
-**8.** `zazawan vawalal hurugum borodol zululon guzumum hezebam borodol zuhubun velebel.`
+**8.** `zazawan vawalal hurugum badorol zululon guzumum hezebam badorol zuhubun velebel.`
 
 ::: details Show answer
 *Azawan walks because Ululon is happy although Uhubun sleeps.*

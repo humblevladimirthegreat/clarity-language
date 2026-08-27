@@ -9,7 +9,7 @@ Closed mood roots for emotion compose, numbered alternatives, universality warra
 ### Sense-form overlays
 <a id="sense-form"></a>
 
-Some published roots carry a **closed overlay reading** for a fixed PoS — the word **is** that special sense, without inventing a new root. Example: **`uhunum`** under `/h/` = evidential *memory / witnessed*; **`huhunul`** = ordinary literal *in a fishing manner*.
+Some published roots carry a **closed overlay reading** for a fixed PoS — the word **is** that special sense, without inventing a new root. Example: **`uvuvum`** under `/h/` = evidential *memory / witnessed*; **`huvuvul`** = ordinary literal *in a fishing manner*.
 
 **Shape:** sense-form + [reference ending](reference-suffix.md). Mood overlays usually take **-m** (figurative published sense / soft default); each overlay page notes when another ending applies. Join-act / join-relation stems are the vowel + **-n** only (`an` / `on` / …); written words are **`pos` + sense-form** (`van` / `gan` / `han`) — [join extras](join-extras.md).
 
@@ -21,7 +21,7 @@ When an opaque emotion word (*anxious*, *resentful*, *proud*, …) is doing **ju
 | Piece | Agelan |
 |-------|---------|
 | Situation / judged host | ordinary NP / clause content |
-| Need + met / unmet (+ changeability) | ordinary [value](values.md) word on that host (`worodoloxur`, `worodoloxam`, …) |
+| Need + met / unmet (+ changeability) | ordinary [value](values.md) word on that host (`wolozoxur`, `wolozoxam`, …) |
 | Activation (arousal) | closed mood roots **HIGH** / **MED** / **LOW** under `/h/` (optional `/w/` on a preceding `/ɡ/`) |
 | Locus (where the charge is attributed) | closed mood roots **INTERNAL** / **EXTERNAL** / **CIRCUMSTANTIAL** under `/h/` (same `/w/` option) |
 
@@ -33,7 +33,7 @@ affect is **water**. **ACT** = tide dynamics (how much / how fast). **LOCUS** = 
 |------|--------------|----------|
 | **HIGH** | **`ogega`** 🌊 *ocean-wave* → *flood* | high arousal — water in flood / surge |
 | **MED** | **`ejelo`** 🪼 *jellyfish* → *flow* | mid arousal — drifts with the current |
-| **LOW** | **`ozono`** 🌨️ *snow* → *stillness* | low arousal — calm / slack water |
+| **LOW** | **`ozowo`** 🌨️ *snow* → *stillness* | low arousal — calm / slack water |
 
 #### Locus roots (LOCUS)
 
@@ -51,7 +51,7 @@ Ordinary content still available (`zogegal` *an ocean wave*; `vorurul` *to pour*
 |----------------|-------|---------|
 | **`ogega`** + **`oruru`** | *poured / surged onto them* | high other-directed charge |
 | **`ejelo`** + **`oruru`** | *flowing toward them* | mid other-directed charge |
-| **`ozono`** + **`oruru`** | *pooling at them* | low other-directed charge — settled water at their locus |
+| **`ozowo`** + **`oruru`** | *pooling at them* | low other-directed charge — settled water at their locus |
 
 Parallel INTERNAL / CIRCUM cues: *flood bottled* / *flow held* / *still in the vessel*; *room abawash* / *undercurrent in the air* / *slack shared water*. Keep CIRCUM as **shared / ambient field**, not a second vessel.
 
@@ -59,10 +59,10 @@ Parallel INTERNAL / CIRCUM cues: *flood bottled* / *flow held* / *still in the v
 
 | Agelan | Reading |
 |---------|---------|
-| `zezebel worodoloxur hogegal hagadel` | *anxious about the dialogue* → dialogue costs competence (temporary); flood; room abawash (circumstantial) |
-| `zabawazal wogonoxum hogegal horurul` | *resentful about the division* → unmet relatedness; flood poured onto them |
-| `zebunem worodoloxam hogegal habobol` | *proud of the draft* → met competence (mental channel); flood bottled (internal) |
-| `zemomel wogonoxum hozonol horurul` | *resentful about the memo* → unmet relatedness; stillness pooling at them |
+| `zezebel wolozoxur hogegal hagadel` | *anxious about the dialogue* → dialogue costs competence (temporary); flood; room abawash (circumstantial) |
+| `zabawazal wonogoxum hogegal horurul` | *resentful about the division* → unmet relatedness; flood poured onto them |
+| `zebunem wolozoxam hogegal habobol` | *proud of the draft* → met competence (mental channel); flood bottled (internal) |
+| `zemomel wonogoxum hozowol horurul` | *resentful about the memo* → unmet relatedness; stillness pooling at them |
 
 **Raw feeling:** contacting a sensation without judgment/explahagetion may leave it unlabeled. Full compose is for when an emotion word would have done evaluative work. Skip [COMMENT](commentary.md#comment) on affect clauses.
 
@@ -107,38 +107,38 @@ Digits are optional when these roots name a topic outside ideation (*the problem
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Compose emotion (one value + ACT + LOCUS), or number ideation candidates (`g#N`) — not overlay-inventory lookup, and not universality warrant.
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` · `orodolo` *competence* · `ogono` *relatedness* · `ezebe` *dialogue* · `abawaza` *division* · `ebun` *draft* · `emome` *memo* · `ogega` HIGH · `ejelo` MED · `ozono` LOW · `abobo` INTERNAL · `oruru` EXTERNAL · `agade` CIRCUM · `uzebu` *problem* · `agego` *solution* · `olala` *goal* · `ezehe` *tell*
+**Roots used here:** `azawa` / `ululo` / `uhubu` · `olozo` *competence* · `onogo` *relatedness* · `ezebe` *dialogue* · `abawaza` *division* · `ebun` *draft* · `emome` *memo* · `ogega` HIGH · `ejelo` MED · `ozowo` LOW · `abobo` INTERNAL · `oruru` EXTERNAL · `agade` CIRCUM · `uzebu` *problem* · `agego` *solution* · `olala` *goal* · `ezehe` *tell*
 
 #### English → Agelan
 
 **1.** *Anxious about the dialogue* (competence at stake, temporary; flood; room abawash)
 
 ::: details Show answer
-`zezebel worodoloxur hogegal hagadel.`
+`zezebel wolozoxur hogegal hagadel.`
 :::
 
 **2.** *Resentful about the division* (unmet relatedness; flood poured onto them)
 
 ::: details Show answer
-`zabawazal wogonoxum hogegal horurul.`
+`zabawazal wonogoxum hogegal horurul.`
 :::
 
 **3.** *Proud of the draft* (met competence, mental channel; flood bottled)
 
 ::: details Show answer
-`zebunem worodoloxam hogegal habobol.`
+`zebunem wolozoxam hogegal habobol.`
 :::
 
 **4.** *Resentful about the memo* (unmet relatedness; stillness pooling at them)
 
 ::: details Show answer
-`zemomel wogonoxum hozonol horurul.`
+`zemomel wonogoxum hozowol horurul.`
 :::
 
 **5.** *Resentful about the division* (unmet relatedness; mid arousal flowing toward them)
 
 ::: details Show answer
-`zabawazal wogonoxum hejelol horurul.`
+`zabawazal wonogoxum hejelol horurul.`
 :::
 
 **6.** *Problem 1.*
@@ -155,19 +155,19 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 #### Agelan → English
 
-**1.** `zebunem worodoloxam hejelol habobol.`
+**1.** `zebunem wolozoxam hejelol habobol.`
 
 ::: details Show answer
 *Proud of the draft* (met competence; mid arousal held inside).
 :::
 
-**2.** `zezebel worodoloxur hozonol hagadel.`
+**2.** `zezebel wolozoxur hozowol hagadel.`
 
 ::: details Show answer
 *Anxious about the dialogue* (competence at stake, temporary; stillness; slack shared water).
 :::
 
-**3.** `zemomel wogonoxum hogegal horurul.`
+**3.** `zemomel wonogoxum hogegal horurul.`
 
 ::: details Show answer
 *Resentful about the memo* (unmet relatedness; flood poured onto them).
@@ -216,7 +216,7 @@ universal claims are **weather reports**. Default climate is usual weather — n
 | **UNCOUNTERED** | **`abulu`** | 🌤️ *clear sky* → *uncountered* | no counterexample comes to mind — search, not proof |
 | **FORMAL** | **`idido`** | ⭐ *star chart* → *formal* | definition / math / proof — fixed constellation |
 | **NATURAL** | **`afafa`** | 🍎 *apple* → *natural* | natural necessity (unsupported objects fall); stack ordinary [evidential](commentary.md#evidentiality) `/h/` |
-| **RULE** | **`ebebe`** | ♟️ *board* → *rule-frame* | holds inside a named frame; take `/b/` scope (`hebebel behazel`) |
+| **RULE** | **`ebebe`** | ♟️ *board* → *rule-frame* | holds inside a named frame; take `/b/` scope (`hebebel bahamal`) |
 
 **Default:** when a universal / habitual claim needs a warrant and none of FORMAL / NATURAL / RULE / UNCOUNTERED fits, use **COMMON** (`hewonol`). FORMAL is definition/proof, not “socially preferred.”
 
@@ -228,7 +228,7 @@ Warrant is a **root choice**, not `xa`/`xu` on the quantifier host. Domain stays
 | `… hual … habulul` | *always, as far as I’ve checked* (no counterexample comes to mind) |
 | `zual gezudal … hididol` | *every square, by definition* |
 | `… hual … hafafal` + evidential `/h/` | *always, by natural necessity* (how you know stacked separately — e.g. `habawam`) |
-| `… hual … hebebel behazel` | *always, under chess* |
+| `… hual … hebebel bahamal` | *always, under chess* |
 | `zuam gagadal … hewonol` | soft domain *every cat that comes to mind* + usual warrant |
 
 | English cue | Agelan |
@@ -247,7 +247,7 @@ Warrant is a **root choice**, not `xa`/`xu` on the quantifier host. Domain stays
 | Soft list vs uncountered | `zuam` = open inventory; **`abulu`** = no counterexample found |
 | Formal vs natural | **`idido`** = definition/proof; **`afafa`** = nature’s force + evidential |
 | Pattern vs COMMON | [evidential](commentary.md#evidentiality) **`abawa`** = trail of cases; **`ewono`** = usual warrant |
-| Natural vs CAUSE | **`afafa`** for exceptionlessness; condition type stays [joins](causation.md); **CAUSE** mood **`uzo`** / **`huzom`** = [mechanism framing](causation.md#cause) |
+| Natural vs CAUSE | **`afafa`** for exceptionlessness; condition type stays [joins](causation.md); **CAUSE** mood **`egega`** / **`hegegam`** = [mechanism framing](causation.md#cause) |
 | Preference as law | values **`xo` / `xe`** — [causation](causation.md#preference-vs-law) |
 
 Prefer floating `/h/`; **RULE** is complex `/h/` + `/b/` scope when the frame is named. Domain / habitual morphology stays [coordination](coordination.md#universals-domains-generics) / [restrictors](restrictors.md); this section only warrants exceptionlessness.
@@ -255,9 +255,9 @@ Prefer floating `/h/`; **RULE** is complex `/h/` + `/b/` scope when the frame is
 ### Translation practice
 <a id="translation-practice-advanced"></a>
 
-Short drills on this Advanced band. Try each item before opening **Show answer**. Pair a domain fence (`hual` / `zual` / `zuam`) with an exceptionlessness warrant — not mechanism **`huzom`**, and not domain softness standing in for a warrant.
+Short drills on this Advanced band. Try each item before opening **Show answer**. Pair a domain fence (`hual` / `zual` / `zuam`) with an exceptionlessness warrant — not mechanism **`hegegam`**, and not domain softness standing in for a warrant.
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` · `ewono` COMMON · `abulu` UNCOUNTERED · `idido` FORMAL · `afafa` NATURAL · `ebebe` RULE · `ahaze` *chess* · `ezuda` *square* · `agada` *cat* · `adaga` *dog* · `abogo` *book* · `edege` *teacher* · `awala` *walk* · `uzune` *sing* · `elebe` *sleep* · `aju` *sit* · `eje` *see* · `urunu` *run* · `abawa` evidential *pattern*
+**Roots used here:** `azawa` / `ululo` / `uhubu` · `ewono` COMMON · `abulu` UNCOUNTERED · `idido` FORMAL · `afafa` NATURAL · `ebebe` RULE · `ahama` *chess* · `ezuda` *square* · `agada` *cat* · `adaga` *dog* · `abogo` *book* · `edege` *teacher* · `awala` *walk* · `uzune` *sing* · `elebe` *sleep* · `aju` *sit* · `eje` *see* · `urunu` *run* · `abawa` evidential *pattern*
 
 #### English → Agelan
 
@@ -288,7 +288,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 **5.** *Azawan always sings, under chess.*
 
 ::: details Show answer
-`zazawan hual vuzunel hebebel behazel.`
+`zazawan hual vuzunel hebebel bahamal.`
 :::
 
 **6.** *Every cat that comes to mind, usually.*
@@ -323,7 +323,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 *The dog always sleeps, by natural necessity* (plus a trail of cases).
 :::
 
-**5.** `zuhubun hual vawalal hebebel behazel.`
+**5.** `zuhubun hual vawalal hebebel bahamal.`
 
 ::: details Show answer
 *Uhubun always walks, under chess.*

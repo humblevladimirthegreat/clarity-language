@@ -11,12 +11,12 @@ Intention vs forecast, and how revisable a pick is — closed `/h/` mood roots.
 
 English *will* / *going to* mixes **intention** (what someone means to do) with **forecast** (what will happen). Agelan uses **two closed mood roots**.
 
-**Shape:** floating `/h/` **`owora`** 🗺️ *world-map* → *plan*, or **`elego`** 🔭 *telescope* → *forecast*. Content verbs stay ordinary. Prefer floating `/h/` (optional `/w/` only when the mood frames a preceding `/ɡ/`).
+**Shape:** floating `/h/` **`owora`** 🗺️ *world-map* → *plan*, or **`elezo`** 🔭 *telescope* → *forecast*. Content verbs stay ordinary. Prefer floating `/h/` (optional `/w/` only when the mood frames a preceding `/ɡ/`).
 
 | Claim | Form | Metaphor |
 |-------|------|----------|
 | Intention: what someone means to do | **`PLAN`** **`howora…`** | a **map** charts a course you mean to take |
-| Forecast: what will happen | **`PREDICT`** **`helego…`** | a **telescope** looks araread at a distance |
+| Forecast: what will happen | **`PREDICT`** **`helezo…`** | a **telescope** looks ahead at a distance |
 
 Ordinary content stays available (`zoworal` *a map*; `voworal` *to plan*).
 
@@ -37,7 +37,7 @@ gloss: `z-courage-proper` · `h-PLAN-itinerary` · `v-walk`
 ```
 
 ```
-`helegom vanunul.`
+`helezom vanunul.`
 
 gloss: `h-PREDICT` · `v-rain`
 
@@ -51,14 +51,14 @@ Use **PLAN** when the clause frames **intention**. Use **PREDICT** when it frame
 | *I plan to … / I mean to …* (direction) | **PLAN** sketch (`howoram`) |
 | *here's how I'll …* (steps filled in) | **PLAN** itinerary (`howoral`) |
 | *if that fails, I'll …* (backup path) | **PLAN** fork (`howorar`) |
-| *it will rain / I expect …* (world forecast) | **PREDICT** (`helegom`) |
+| *it will rain / I expect …* (world forecast) | **PREDICT** (`helezom`) |
 
 | Agelan | Reading |
 |---------|---------|
 | `… howoram …` | intention; **sketch** (soft default) |
 | `… howoral …` | intention; **itinerary** |
 | `… howorar …` | intention; **fork** / contingency |
-| `… helegom …` | **forecast** |
+| `… helezom …` | **forecast** |
 
 #### Endings — map resolution
 <a id="plan-map-resolution"></a>
@@ -77,9 +77,9 @@ When unsure, prefer **`howoram`**. Omit **PLAN** when you are not framing intent
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills on this Beginner band. Try each item before opening **Show answer**. Pick **PLAN** (`owora` + map-resolution ending) or **PREDICT** (`elego`) — not a generic English *will*.
+Short drills on this Beginner band. Try each item before opening **Show answer**. Pick **PLAN** (`owora` + map-resolution ending) or **PREDICT** (`elezo`) — not a generic English *will*.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `owora` · `elego` · `awala` · `uwuru` · `uzune` · `urunu` · `elebe` · `anunu`
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `owora` · `elezo` · `awala` · `uwuru` · `uzune` · `urunu` · `elebe` · `anunu`
 
 #### English → Agelan
 
@@ -110,7 +110,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **5.** *Forecast: it rains.*
 
 ::: details Show answer
-`helegom vanunul.`
+`helezom vanunul.`
 :::
 
 **6.** *Uhubun means to sing.* (direction only)
@@ -139,7 +139,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *If that path fails, Uhubun will run.* (fork plan)
 :::
 
-**4.** `helegom vanunul.`
+**4.** `helezom vanunul.`
 
 ::: details Show answer
 *Forecast: it rains.*
@@ -166,7 +166,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 Stack ordinary [evidentiality](commentary.md#evidentiality) with **PREDICT** when you mark **how** you forecast (pattern, inference, …), not bare certainty.
 
 ```
-`helegom habawam vanunul.`
+`helezom habawam vanunul.`
 
 gloss: `h-PREDICT` · `h-PATTERN` · `v-rain`
 
@@ -205,14 +205,14 @@ gloss: `z-beauty-proper` · `h-DECISION-irredegursible` · `v-sleep`
 *Uhubun has decided for good to sleep.*
 ```
 
-Use **DECISION** when the clause marks **pick firmness**. Intention map grain stays [**PLAN**](#plan-predict). The choosing act is [join-act **`von`**](join-extras.md#join-act-verbs) (*chooses as the one*). Autonomy-as-need is [**`alorodo`**](values.md#need-inventory). *Can’t decide yet* on an activity is [ability](ability.md#ability) (`…xe…` / `…xo…` / …).
+Use **DECISION** when the clause marks **pick firmness**. Intention map grain stays [**PLAN**](#plan-predict). The choosing act is [join-act **`von`**](join-extras.md#join-act-verbs) (*chooses as the one*). Autonomy-as-need is [**`alodo`**](values.md#need-inventory). *Can’t decide yet* on an activity is [ability](ability.md#ability) (`…xe…` / `…xo…` / …).
 
 | English bundle | Prefer |
 |----------------|--------|
 | *I've decided / that's my decision* (+ how locked) | **DECISION** (`hegegem`, …) |
 | *choose X (as the one)* | join-act **`von`** |
 | *I plan to …* (map grain) | **PLAN** (`howoram`, …) |
-| *choice / agency* (need) | value **`alorodo`** |
+| *choice / agency* (need) | value **`alodo`** |
 | *can’t decide* (capacity) | host + ability **`xe` / `xo` / `xu`** (or **`xa`** if able) |
 | *won’t decide* (refusal) | ordinary refuse / choice packaging |
 | *commitment / policy / indecision* (lexicon nouns) | ordinary **`enebe`** / **`emome`** / **`aweva`** |
@@ -243,7 +243,7 @@ Always pick an ending on **DECISION**; unknown → **-m**. Deferral stays ordina
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Pick **DECISION** (`egege` + changeability), stack evidentiality on **PREDICT**, or stack **PLAN** with **DECISION**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `owora` · `elego` · `egege` · `awala` · `uwuru` · `uzune` · `elebe` · `anunu` · `abawa` (*pattern*, evidential)
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `owora` · `elezo` · `egege` · `awala` · `uwuru` · `uzune` · `elebe` · `anunu` · `abawa` (*pattern*, evidential)
 
 #### English → Agelan
 
@@ -262,7 +262,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **3.** *From the usual pattern, it will rain.*
 
 ::: details Show answer
-`helegom habawam vanunul.`
+`helezom habawam vanunul.`
 :::
 
 **4.** *Azawan has the itinerary, and the pick is settled: walk.*
@@ -297,7 +297,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Ululon has decided for good to sleep.*
 :::
 
-**3.** `helegom habawam vanunul.`
+**3.** `helezom habawam vanunul.`
 
 ::: details Show answer
 *Forecast from pattern: it rains.*

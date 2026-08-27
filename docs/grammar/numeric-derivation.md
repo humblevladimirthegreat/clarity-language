@@ -36,7 +36,7 @@ PoS + ROOT + x + NUM + {-l|-m|-n|-r}
 | **`ROOTx+e`** | **essence / absolute / pure type** of ROOT | `zolovexrabal` — *essence of love* |
 | **`ROOTx+e-`** | **grain / seed / infinitesimal** of ROOT | `zereguxrabul` — *grain of truth* |
 | **`ROOTx-e`** | **void of / absolute anti-ROOT** | `zevaxrubal` — *void of fear* |
-| **`ROOTx-e-`** | **quasi-ROOT** — has the shape of ROOT without full real-axis status (English **`quasi-`**); **`ROOTx-e-1`** / **`ROOTx-e-2`** = [quasi-N](#quasi-n) | `zahagexrubul` — *quasi-friend*; `zahagexrubudul` — *quasi-pair* |
+| **`ROOTx-e-`** | **quasi-ROOT** — has the shape of ROOT without full real-axis status (English **`quasi-`**); **`ROOTx-e-1`** / **`ROOTx-e-2`** = [quasi-N](#quasi-n) | `zahaxrubul` — *quasi-friend*; `zahaxrubudul` — *quasi-pair* |
 | **`ROOTx#e-`** | **origin / prototype / onset-form** of ROOT | `zolovexrebul` — *love in its beginning form* |
 | **`ROOTx#e`** | **telos / culmination / final form** of ROOT | `zoroloxrebal` — *story’s final form* |
 | **`ROOTx+`** | **poly- / multi-ROOT** (unspecified >1) | `zurujuxram` — *multi-faith* |
@@ -52,12 +52,12 @@ PoS + ROOT + x + NUM + {-l|-m|-n|-r}
 
 | PoS | `…x-e-` | Examples |
 |-----|---------|----------|
-| **`/z/` `/d/` `/b/`** (noun) | a quasi-entity | `zahagexrubul` — *a quasi-friend*; `degebexrubul` — *a quasi-contract* |
-| **`/v/`** (verb) | to treat as quasi- / as-if that kind | `vahagexrubul` — *to quasi-befriend* / treat as friend-shaped |
+| **`/z/` `/d/` `/b/`** (noun) | a quasi-entity | `zahaxrubul` — *a quasi-friend*; `degebexrubul` — *a quasi-contract* |
+| **`/v/`** (verb) | to treat as quasi- / as-if that kind | `vahaxrubul` — *to quasi-befriend* / treat as friend-shaped |
 | **`/ɡ/`** (adjective) | *quasi-* (ascribed) | `goburuxrubul` — *quasi-official* |
 | **`/h/`** (adverb) | under quasi- framing | `hoburuxrubul` — *quasi-officially* |
 | **`/w/`** (adjunct) | host graded as quasi- | `gogenenul wegebexrubul` — *quasi-contractual* |
-| **`/j/`** (interjection) | *Quasi-!* / *As if that kind!* | `jahagexrubul` |
+| **`/j/`** (interjection) | *Quasi-!* / *As if that kind!* | `jahaxrubul` |
 
 **Free vs derived:** **`g-e-`** / **`v-e-`** / **`h-e-`** / **`j-e-`** / **`x-e-`** = hostless notional amount / overlay ([numbers.md § Imaginary](numbers.md#imaginary)); **`ROOTx-e-`** = quasi-*kind*.
 
@@ -68,7 +68,7 @@ Stem shape **`ru` + `bu` + exponent digit `N`** (writing **`-e-N`**; bare-OoM ah
 | Shape | Reading | Twin | Example |
 |-------|---------|------|---------|
 | **`ROOTx-e-1`** | **quasi-unit / as-if singleton** — unit-shaped without being a real one | **`ROOTx+1`** unit | `zegarexrubuwol` — *a quasi-single voice* / as-if primary voice |
-| **`ROOTx-e-2`** | **quasi-dual / imaginary duality** — pair/mutual *as if*, not real reciprocity | **`ROOTx+2`** dual/mutual | `gobulexrubudul` — *quasi-mutual duty*; `zahagexrubudul` — *quasi-pair / as-if partnership* |
+| **`ROOTx-e-2`** | **quasi-dual / imaginary duality** — pair/mutual *as if*, not real reciprocity | **`ROOTx+2`** dual/mutual | `gobulexrubudul` — *quasi-mutual duty*; `zahaxrubudul` — *quasi-pair / as-if partnership* |
 
 | Form | Job |
 |------|-----|
@@ -90,7 +90,7 @@ Single-digit scalars only. Tables use marker shorthand (**`+N`** / **`-N`**); ba
 | **`ROOTx+2`** | dual / mutual / reciprocal / pair | `gobulexradul` — *mutual duty* | non-reciprocal / one-sided / unpaired | `gobulexrudul` — *one-sided duty* |
 | **`ROOTx+3`** | triad / triplet / 3-part / ternary | `zezebexrarel` — *a three-part dialogue* | non-tripartite / collapsed-from-three | `zovuvexrurel` — *non-tripartite government* |
 | **`ROOTx+4`** | quad / 4-part / square / frame | `zezagexramol` — *a four-part / framed court* | unframed / out-of-box / unbound | `zuruxrumol` — *an unframed idea* |
-| **`ROOTx+5`** | hand / pentad / agency-set | `zorodoloxraval` — *a handy / five-fold toolkit* | handless / without practical grasp | `zoworaxruval` — *a plan without practical grasp* |
+| **`ROOTx+5`** | hand / pentad / agency-set | `zolozoxraval` — *a handy / five-fold toolkit* | handless / without practical grasp | `zoworaxruval` — *a plan without practical grasp* |
 | **`ROOTx+6`** | hex / 6-part / honeycomb / pack | `zadomaxragul` — *a hexagonal / six-pack cell* | unpacked / non-hex / broken pack | `zahahagexrugul` — *an unpacked team* |
 | **`ROOTx+7`** | heptad / week-cycle / complete series | `zazegaxralem` — *a sedegun-fold / week-cycle ritual* | incomplete series / broken cycle | `zazegaxrulem` — *a broken-cycle ritual* |
 | **`ROOTx+8`** | octet / 8-part / doubled-quad | `zonuzuxrahal` — *an octet / eight-part block* | non-octet / incomplete eight | `zonuzuxruhal` — *a non-octet block* |
@@ -104,7 +104,7 @@ Single-digit scalars only. Tables use marker shorthand (**`+N`** / **`-N`**); ba
 
 | PoS | `…x+0` | `…x-0` | Examples |
 |-----|--------|--------|----------|
-| **`/z/` `/d/` `/b/`** (noun) | emptied / wiped instance | entity that won’t zero / stubborn residue | `zebenexrazol` — *a wiped debt*; `zebenexruzol` — *a debt that won’t zero*; `duhunuxruzol` — *that memory that won’t blank*; `bezehuxruzol` — non-null residue as argument |
+| **`/z/` `/d/` `/b/`** (noun) | emptied / wiped instance | entity that won’t zero / stubborn residue | `zebenexrazol` — *a wiped debt*; `zebenexruzol` — *a debt that won’t zero*; `duvuvuxruzol` — *that memory that won’t blank*; `bezehuxruzol` — non-null residue as argument |
 | **`/v/`** (verb) | act of nulling / resetting | act that refuses null / keeps residual | `vezehuxrazol` — *to null the score*; `vezehuxruzol` — *to anti-null / refuse to zero the score*; `vujuxrazol` — *to extinguish pain*; `vujuxruzol` — *to leave pain unextinguishable* |
 | **`/ɡ/`** (adjective) | null / reset (ascribed) | non-emptyable / residual (ascribed) | `gezehuxrazol` — *null / reset*; `gezehuxruzol` — *won’t-null / residual*; `gorexruzom` — *hope that won’t go to zero* (vs `gorexrubam` *void of hope*) |
 | **`/h/`** (adverb) | clause framed as reset / zeroed | clause framed as irreducible residue | `hazexrazom` — *with effort zeroed*; `hazexruzom` — *with irreducible effort* / *despite any zeroing* |
@@ -124,7 +124,7 @@ Same ahagetomy as free [zero × exponent](numbers.md#zero-exponent); on ROOT = *
 | **`ROOTx+0e-`** | **sterile / null grain** of ROOT | `zorexrazobum` — *sterile hope*; `zereguxrazobul` — *truth with no seed* |
 | **`ROOTx+0e-1`** | **engineering null at OoM −1** of ROOT — kind wiped at scale 10⁻¹ | `zuzebuxrabuwojazol` — *deci-null error*; `vezehuxrabuwojazol` — *null the score at deci scale* |
 | **`ROOTx-0e`** | **absolute residue** of ROOT | `zebenexruzobal` — *debt as absolute residue*; `vujuxruzobal` — *leave pain as absolute residue* |
-| **`ROOTx-0e-`** | **micro-residue** of ROOT | `zuhunuxruzobul` — *memory as micro-residue* |
+| **`ROOTx-0e-`** | **micro-residue** of ROOT | `zuvuvuxruzobul` — *memory as micro-residue* |
 | **`ROOTx-0e-1`** | **engineering residue at OoM −1** of ROOT | `zebenexrubuwojazol` — *debt as deci-scale residue* |
 
 **Emptiness chain (kinds):** **`ROOTx-e`** (void of kind) ≠ **`ROOTx+0`** (resettable null) ≠ **`ROOTx+0e`** (total null) ≠ **`ROOTx+0e-`** (sterile grain) ≠ **`ROOTx+0e-1`** (engineering null at 10⁻¹). Free bare **`g+e0`** / **`Ne0`** are [ones-band / OoM-0 assert](numbers.md#bare-oom-bands) on free numbers — not kind morphs here.
@@ -248,7 +248,7 @@ Mantissa + digitless exp = **comic / rhetorical intensification**, same spirit a
 | **`ROOTx_1e`** | *gazillion-coded ROOT* (comic SKU sprawl) | `zavoxrowobal` — *a gazillion-SKU product* |
 | **`ROOTx_1e-`** | *gazillionth-of-a-code ROOT* (vanishing ID) | `zereguxrowobul` — *a vanishingly coded clue* |
 
-Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`zahagexrewobal`** = *an umpteenth get-together* (noun kind).
+Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`zahaxrewobal`** = *an umpteenth get-together* (noun kind).
 
 #### Numeric contrasts (edge inventory)
 
@@ -259,9 +259,9 @@ Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`zahagex
 | `zebalexrawobam` | **gazillion-mess** (rhetoric) |
 | `zebalemsh g+1e` | **one gazillion messes** (hyperbolic count) |
 | `zereguxrabul` | *grain of truth* |
-| `zahagexrubul` | *quasi-friend* (quasi-ROOT) |
+| `zahaxrubul` | *quasi-friend* (quasi-ROOT) |
 | `zegarexrubuwol` | *quasi-single / as-if primary voice* |
-| `zahagexrubudul` | *quasi-pair / imaginary duality* |
+| `zahaxrubudul` | *quasi-pair / imaginary duality* |
 | `gobulexrubudul` | *quasi-mutual duty* |
 | `gobulexradul` | *mutual duty* (real dual) |
 | `gobulexrudul` | *one-sided duty* (privative) |
@@ -321,7 +321,7 @@ Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`zahagex
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. `ROOT x NUM` names a **kind property** (essence, grain, quasi, part-count, order-kind, catalog code, total-null) — spelled CV plus the **host** ending, not a free count or rank in a clause slot.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `olove` *love* · `eregu` *truth* · `ahage` *friend* (kind, as on this band) · `bule` *duty* · `ezebe` *dialogue* · `omo` *effect* · `egabe` *edition* · `adoma` *specimen* · `eva` *fear* · `ezehu` *score* · `eje` *see* · `ezehe` *tell* · `uwuru` *write*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `olove` *love* · `eregu` *truth* · `aha` *friend* (kind, as on this band) · `bule` *duty* · `ezebe` *dialogue* · `omo` *effect* · `egabe` *edition* · `adoma` *specimen* · `eva` *fear* · `ezehu` *score* · `eje` *see* · `ezehe` *tell* · `uwuru` *write*
 
 #### English → Agelan
 
@@ -340,7 +340,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 **3.** *Uhubun is a quasi-friend.*
 
 ::: details Show answer
-`zuhubun gahagexrubul.`
+`zuhubun gahaxrubul.`
 :::
 
 **4.** *Azawan sees mutual duty.*

@@ -37,13 +37,13 @@ Discourse-role forms (not letter/full-root **-r** from ordinary antecedents). Th
 | Role | Root | Image → sense | Default ending | Example |
 |------|------|---------------|----------------|---------|
 | **Speaker** | **`ugobo`** | 🎤 *microphone* → *producer-role* | **-n** | `zugobon` *I* |
-| **Listener** | **`ebone`** | 🎧 *headphones* → *addressee-role* | **-n** | `debonen` *you* |
-| **Interlocutors** | **`ahage`** | 🤝 *handshake* → *co-participants* | **-n** | `zahagen` *we* (speaker ∪ address set) |
+| **Listener** | **`edone`** | 🎧 *headphones* → *addressee-role* | **-n** | `dedonen` *you* |
+| **Interlocutors** | **`aha`** | 🤝 *handshake* → *co-participants* | **-n** | `zahan` *we* (speaker ∪ address set) |
 | **Generic person** | **`enenu`** | 👤 *silhouette* → *a person* | **-n** | `zenenun` *someone* |
-| **Next clause** | **`orodo`** | 🚪 *doorway* → *what follows* | **-l** | `borodol` / `dorodol` — placeholder for the dependent that follows |
+| **Next clause** | **`adoro`** | 🚪 *doorway* → *what follows* | **-l** | `badorol` / `dadorol` — placeholder for the dependent that follows |
 
 ```
-`zugobon vezebel debonen.`
+`zugobon vezebel dedonen.`
 
 gloss: `z-speaker` · `v-write` · `d-listener`
 
@@ -52,9 +52,9 @@ gloss: `z-speaker` · `v-write` · `d-listener`
 
 mic / headphones / handshake name **roles in this utterance** (speech, writing, signing — any channel), not identity essence.
 
-**Endings.** Person roles default to **-n** (definite discourse roles). Soft **-m** hedges the role framing. **`orodo`** defaults to **-l** (exact forward slot); soft **-m** hedges the subordination edge.
+**Endings.** Person roles default to **-n** (definite discourse roles). Soft **-m** hedges the role framing. **`adoro`** defaults to **-l** (exact forward slot); soft **-m** hedges the subordination edge.
 
-**Prefer names.** When a proper name is available, use **-n** and/or its **-r** resume — including for self-address — rather than **`ugobo`** / **`ebone`**. See [proper name](reference-suffix.md#proper-name--n). Usual named people in examples: **Azawan**, **Ululon**, **Uhubun** (`azawa` / `ululo` / `uhubu` + **-n**).
+**Prefer names.** When a proper name is available, use **-n** and/or its **-r** resume — including for self-address — rather than **`ugobo`** / **`edone`**. See [proper name](reference-suffix.md#proper-name--n). Usual named people in examples: **Azawan**, **Ululon**, **Uhubun** (`azawa` / `ululo` / `uhubu` + **-n**).
 
 Self-address works the same way: name yourself instead of reaching for the speaker role.
 
@@ -76,7 +76,7 @@ gloss: `z-speaker` · `v-walk`
 ```
 
 ```
-`zahagen vawalal.`
+`zahan vawalal.`
 
 gloss: `z-interlocutors` · `v-walk`
 
@@ -91,19 +91,19 @@ When names are unavailable:
 | Form | Reading |
 |------|---------|
 | `zugobonsh` | speaker **and associates** (listener **not** assumed) |
-| `zebonensh` | **address set** — all current addressees (no speaker) |
-| `zahagen` | **interlocutors** — speaker ∪ address set (inclusive *we*) |
+| `zedonensh` | **address set** — all current addressees (no speaker) |
+| `zahan` | **interlocutors** — speaker ∪ address set (inclusive *we*) |
 | name…**-sh** | that person **and associates** |
 | join list | exact membership census |
 
-Inclusive *we* is **`ahage`**, not speaker **-sh**. Plural listener is the [address set](plurality.md#person-role-sh) (`zebonensh`); *you and yours* uses a **name**…**-sh**.
+Inclusive *we* is **`aha`**, not speaker **-sh**. Plural listener is the [address set](plurality.md#person-role-sh) (`zedonensh`); *you and yours* uses a **name**…**-sh**.
 
 **`enenu`:** a nonspecific **individual** — not English impersonal *one*, not join **`zar`** / **`dar`**, and not a 3rd-person anaphor (use content **-r** once someone is introduced).
 
-**`orodo`:** placeholder for the material that **immediately follows** ([dependent clauses](core.md#dependent-clauses)). Put **`orodo` last** in its host slot; the dependent follows with no intervening host words. Same speech act as the main sentence → dependent may omit `/j/`; a different speech act needs its own force word.
+**`adoro`:** placeholder for the material that **immediately follows** ([dependent clauses](core.md#dependent-clauses)). Put **`adoro` last** in its host slot; the dependent follows with no intervening host words. Same speech act as the main sentence → dependent may omit `/j/`; a different speech act needs its own force word.
 
 ```
-`zugobon vezehel dazawan dorodol zululon vedabul.`
+`zugobon vezehel dazawan dadorol zululon vedabul.`
 
 gloss: `z-speaker` · `v-tell` · `d-grace` · `d-next-clause` · `z-courage` · `v-depart`
 
@@ -115,7 +115,7 @@ gloss: `z-speaker` · `v-tell` · `d-grace` · `d-next-clause` · `z-courage` ·
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `adaga` *dog* · `adara` *dragon* · `abogo` *book* · `awala` *walk* · `aju` *sit* · `elebe` *sleep* · `urunu` *run* · `eje` *see* · `ezehe` *tell* · `edabu` *depart* · `ele` *size* / *big* · `ugobo` *speaker* · `ebone` *listener* · `ahage` *interlocutors* · `enenu` *generic person* · `orodo` *next clause*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `adaga` *dog* · `adara` *dragon* · `abogo` *book* · `awala` *walk* · `aju` *sit* · `elebe` *sleep* · `urunu` *run* · `eje` *see* · `ezehe` *tell* · `edabu` *depart* · `ele` *size* / *big* · `ugobo` *speaker* · `edone` *listener* · `aha` *interlocutors* · `enenu` *generic person* · `adoro` *next clause*
 
 #### English → Agelan
 
@@ -140,7 +140,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **4.** *We (you and I) walk.*
 
 ::: details Show answer
-`zahagen vawalal.`
+`zahan vawalal.`
 :::
 
 **5.** *We (I and my people, not you) walk.*
@@ -152,7 +152,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **6.** *You all sit.*
 
 ::: details Show answer
-`zebonensh vajul.`
+`zedonensh vajul.`
 :::
 
 **7.** *Someone sleeps.*
@@ -164,7 +164,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **8.** *I told Azawan that Ululon left.*
 
 ::: details Show answer
-`zugobon vezehel dazawan dorodol zululon vedabul.`
+`zugobon vezehel dazawan dadorol zululon vedabul.`
 :::
 
 #### Agelan → English
@@ -181,13 +181,13 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *A dog sleeps. A dragon is big. The dragon walks.*
 :::
 
-**3.** `zazawan debonen vejel.`
+**3.** `zazawan dedonen vejel.`
 
 ::: details Show answer
 *Azawan sees you.*
 :::
 
-**4.** `zahagen velebel.`
+**4.** `zahan velebel.`
 
 ::: details Show answer
 *We (you and I) sleep.*
@@ -205,7 +205,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Someone walks.*
 :::
 
-**7.** `zazawan dululon dorodol vezehel zadagal vurunul.`
+**7.** `zazawan dululon dadorol vezehel zadagal vurunul.`
 
 ::: details Show answer
 *Azawan tells Ululon that the dog runs.*
@@ -275,20 +275,20 @@ Same referent, new role — English needs a longer paraphrase. Full PoS×PoS tab
 
 **Speaker / listener.** 1st / 2nd person only when a name is unavailable or undesired.
 
-**Interlocutors (`ahage`).** Inclusive *we* as a **discourse role** — not “my side,” not a titled team, and not an exact census (those use [associative **-sh**](plurality.md#associative) / joins). Soft **`zahagem`** hedges co-agency.
+**Interlocutors (`aha`).** Inclusive *we* as a **discourse role** — not “my side,” not a titled team, and not an exact census (those use [associative **-sh**](plurality.md#associative) / joins). Soft **`zaham`** hedges co-agency.
 
-**Address set.** Prefer: everyone named in this turn’s vocative cluster, plus anyone still held as addressee by context. One addressee → singular **`ebone`**; sedegural → **`ebone…sh`**. Inclusive co-agency (*shall we…*) → **`ahage`**, not speaker **-sh**.
+**Address set.** Prefer: everyone named in this turn’s vocative cluster, plus anyone still held as addressee by context. One addressee → singular **`edone`**; sedegural → **`edone…sh`**. Inclusive co-agency (*shall we…*) → **`aha`**, not speaker **-sh**.
 
-**Subordinators.** The full *because* / *if* / *although* / *while* / *until* / *before* / *after* table and **`orodo`** chaining live in [core.md § Dependent clauses](core.md#dependent-clauses).
+**Subordinators.** The full *because* / *if* / *although* / *while* / *until* / *before* / *after* table and **`adoro`** chaining live in [core.md § Dependent clauses](core.md#dependent-clauses).
 
-Prefer **`ahage`** over a speaker+listener join when the point is **co-participant role**; prefer name joins when membership identity is the point; prefer name…**-sh** for associative cohorts.
+Prefer **`aha`** over a speaker+listener join when the point is **co-participant role**; prefer name joins when membership identity is the point; prefer name…**-sh** for associative cohorts.
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `awala` *walk* · `urunu` *run* · `elebe` *sleep* · `aju` *sit* · `eje` *see* · `uzumu` smile → *happy* (**-m**) · `adaza` *haste* · `ahage` *interlocutors* · `ugobo` *speaker* · `ebone` *listener*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `awala` *walk* · `urunu` *run* · `elebe` *sleep* · `aju` *sit* · `eje` *see* · `uzumu` smile → *happy* (**-m**) · `adaza` *haste* · `aha` *interlocutors* · `ugobo` *speaker* · `edone` *listener*
 
 #### English → Agelan
 
@@ -325,7 +325,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **6.** *We (you and I) sit.*
 
 ::: details Show answer
-`zahagen vajul.`
+`zahan vajul.`
 :::
 
 **7.** *Azawan and Ululon walk.* (exact two people)
@@ -366,7 +366,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan walks in haste. Ululon runs that way.*
 :::
 
-**5.** `zahagen vawalal.`
+**5.** `zahan vawalal.`
 
 ::: details Show answer
 *We (you and I) walk.*
@@ -384,7 +384,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Ululon and associates walk.*
 :::
 
-**8.** `zebonensh vajul.`
+**8.** `zedonensh vajul.`
 
 ::: details Show answer
 *You all sit.*
@@ -538,4 +538,4 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 ## See also
 - [plurality.md](plurality.md) — **-sh**; address set vs associative
-- [core.md](core.md#dependent-clauses) — **`orodo`** placement
+- [core.md](core.md#dependent-clauses) — **`adoro`** placement

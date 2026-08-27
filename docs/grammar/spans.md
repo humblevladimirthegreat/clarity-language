@@ -37,7 +37,7 @@ Same split as number shorthand (`g+3` written, full CV spoken); the spoken shape
 Anaphor (**-r**): interior **`=`** (`d[=]`, `d{=}`, `h(=)`, `d<=>`).
 
 ```
-`zebonen v[uzune] d[jael]l.`
+`zedonen v[uzune] d[jael]l.`
 
 gloss: `z-listener` · `v-[sing]` · `d-[yes]`
 
@@ -86,7 +86,7 @@ The open’s PoS is the **outer-clause slot** of the **entire** span — not the
 | `/x/` | Discourse-only citation (epigraph, freestanding span) | `x[…]` |
 
 ```
-`jul zebonen v[uzune] dugobol.`
+`jul zedonen v[uzune] dugobol.`
 
 gloss: `j-command` · `z-listener` · `v-[sing]` · `d-speaker`
 
@@ -109,7 +109,7 @@ Interior words keep **their** PoS. The fence is the adverb. A one-word manner co
 
 The aside **keeps the outer speech act** (omissible statement `jal` stays omitted). Put a new question or command in its own turn, not inside `h(…)`.
 
-A *because* / *if* dependent is still **`orodo`**, not an aside. A second name for the same person uses [identity](predication.md#identity) or classification, not `h(…)`.
+A *because* / *if* dependent is still **`adoro`**, not an aside. A second name for the same person uses [identity](predication.md#identity) or classification, not `h(…)`.
 
 ```
 `zazawan vawalal h(zuzumum).`

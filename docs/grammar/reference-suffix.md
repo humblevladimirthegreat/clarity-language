@@ -428,7 +428,7 @@ Institutions mint a native handle from the long title’s **content roots** (ski
 
 | Step | Do |
 |------|----|
-| 1 | From each content root, take **first vowel + next consonant** (`edege` → `ed`, `alorodo` → `ob`, `ululo` → `ul`) |
+| 1 | From each content root, take **first vowel + next consonant** (`edege` → `ed`, `alodo` → `al`, `ululo` → `ul`) |
 | 2 | Concatenate those pieces **without** mid-word **`x`** |
 | 3 | If the string ends in a consonant, add the **last root’s 2nd vowel** (the same cut as a [letter pronoun](pronouns.md)) |
 | 4 | If that root already names something else, **lengthen** (include the next vowel of a distinctive root) |
@@ -438,7 +438,7 @@ Institutions mint a native handle from the long title’s **content roots** (ski
 ```
 
 ```
-`edege` × `alorodo` × `ululo` → `ed` + `ob` + `ul` + `o` → `edobulo` → `zedobulon`
+`edege` × `alodo` × `ululo` → `ed` + `al` + `ul` + `o` → `edalulo` → `zedalulon`
 ```
 
 Hearers treat the handle as a **name**. Reconstructing the long title is optional literacy, not part of parsing. Foreign acronyms stay loans / opaque spans; they do not use this harvest.
@@ -448,7 +448,7 @@ Hearers treat the handle as a **name**. Reconstructing the long title is optiona
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. Coin a handle from the title roots, or use that handle as a name.
 
-**Roots used here:** `edege` *teacher* · `ululo` *courage* · `alorodo` *choice* · `azawa` · `awala` *walk* · `eje` *see*
+**Roots used here:** `edege` *teacher* · `ululo` *courage* · `alodo` *choice* · `azawa` · `awala` *walk* · `eje` *see*
 
 #### English → Agelan
 
@@ -492,7 +492,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 ## See also
 
-- [pronouns.md](pronouns.md) — anaphoric **-r**; special **`ugobo`** / **`ebone`** / **`ahage`** / **`enenu`** / **`orodo`**
+- [pronouns.md](pronouns.md) — anaphoric **-r**; special **`ugobo`** / **`edone`** / **`aha`** / **`enenu`** / **`adoro`**
 - [plurality.md](plurality.md) — **-sh** after the ending
 - [core.md](core.md) — role letters and writing words
 - [core.md § Outside a sentence](core.md#citation-forms) — prefix-less citation (**-l** / **-m** / **-n** / **-r**)

@@ -18,7 +18,7 @@ English *cause* / *leads to* / *needs* collapses distinctions that drive common 
 | Confusing **sufficient** with **necessary** | Two **different** constructions — never one bare *cause* join |
 | Hearing *if* as *if and only if* | Separate clause roots for one-way *if* vs both-ways *if and only if* ([Intermediate](#if-vs-iff)) |
 
-Condition type is carried by **which** join / relation / restrictor you use, plus host vs `/b/` / **`orodo`** poles. There is **no** new arrow morpheme.
+Condition type is carried by **which** join / relation / restrictor you use, plus host vs `/b/` / **`adoro`** poles. There is **no** new arrow morpheme.
 
 ### Pole habit
 <a id="pole-habit"></a>
@@ -52,7 +52,7 @@ gloss: `z-effort` · `z-would-work`
 ```
 
 ```
-`zuludul zozonol zaom.`
+`zuludul zozowol zaom.`
 
 gloss: `z-cloud` · `z-snow` · `z-would-work`
 
@@ -63,9 +63,9 @@ the join’s first vowel is series **`a`** (*add*) — add the antecedent and th
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills on this Beginner band. Try each item before opening **Show answer**. Everyday *leads to* is open sufficient **`…aom`** (outcome as host); there is no cause-arrow word. Closed **`…aol`** is the stronger “this settles it” twin. Clause *because* stays **`hurugum borodol`**.
+Short drills on this Beginner band. Try each item before opening **Show answer**. Everyday *leads to* is open sufficient **`…aom`** (outcome as host); there is no cause-arrow word. Closed **`…aol`** is the stronger “this settles it” twin. Clause *because* stays **`hurugum badorol`**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `azel` *effort* · `uludu` *cloud* · `ozono` *snow* · `adaga` *dog* · `agada` *cat* · `abogo` *book* · `ohohu` *house* · `awala` *walk* · `uzune` *sing* · `elebe` *sleep* · `orodo` *next clause* · `urugu` *because* (**-m** on `/h/`)
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `azel` *effort* · `uludu` *cloud* · `ozowo` *snow* · `adaga` *dog* · `agada` *cat* · `abogo` *book* · `ohohu` *house* · `awala` *walk* · `uzune` *sing* · `elebe` *sleep* · `adoro` *next clause* · `urugu` *because* (**-m** on `/h/`)
 
 #### English → Agelan
 
@@ -84,7 +84,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **3.** *Clouds or snow would work.*
 
 ::: details Show answer
-`zuludul zozonol zaom.`
+`zuludul zozowol zaom.`
 :::
 
 **4.** *A dog would work.*
@@ -114,7 +114,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **8.** *Azawan walks because Ululon sleeps.*
 
 ::: details Show answer
-`zazawan vawalal hurugum borodol zululon velebel.`
+`zazawan vawalal hurugum badorol zululon velebel.`
 :::
 
 #### Agelan → English
@@ -125,7 +125,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Effort would work (among other routes).*
 :::
 
-**2.** `zuludul zozonol zaom.`
+**2.** `zuludul zozowol zaom.`
 
 ::: details Show answer
 *Clouds or snow would work.*
@@ -155,7 +155,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Uhubun’s singing would work.*
 :::
 
-**7.** `zazawan vawalal hurugum borodol zululon velebel.`
+**7.** `zazawan vawalal hurugum badorol zululon velebel.`
 
 ::: details Show answer
 *Azawan walks because Ululon sleeps.*
@@ -203,10 +203,10 @@ When the antecedent and/or consequent is a **full clause**, clause inclusive **`
 Prefer subordination:
 
 ```
-main sentence …  hodom / hezazem / hurugum  borodol   [dependent sentence]
+main sentence …  hadorom / hezazem / hurugum  badorol   [dependent sentence]
 ```
 
-**`orodo`** ([next-clause pronoun](pronouns.md#special-pronouns)) sits **last in the main sentence**; the dependent is a full sentence (own force word only if the speech act differs) — [dependent clauses](core.md#dependent-clauses). Open-sufficient vs necessary nudges then live on **which relation** you choose and on restrictors (`hal`, …).
+**`adoro`** ([next-clause pronoun](pronouns.md#special-pronouns)) sits **last in the main sentence**; the dependent is a full sentence (own force word only if the speech act differs) — [dependent clauses](core.md#dependent-clauses). Open-sufficient vs necessary nudges then live on **which relation** you choose and on restrictors (`hal`, …).
 
 ### `IF` vs `IFF` vs `BECAUSE`
 <a id="if-vs-iff"></a>
@@ -214,22 +214,22 @@ main sentence …  hodom / hezazem / hurugum  borodol   [dependent sentence]
 
 | Root | Lexicon | Metaphor | Reading | Parallel |
 |------|---------|----------|---------|----------|
-| **`IF`** (default) | **`odo`** | 🚪 *door* → *opportunity* | one-way: under dependent, claim matrix; dependent **not** asserted as fact; **not** “matrix only if dependent” | open sufficient (`…aom` / `haon`) |
+| **`IF`** (default) | **`adoro`** | 🚪 *door* → *opportunity* | one-way: under dependent, claim matrix; dependent **not** asserted as fact; **not** “matrix only if dependent” | open sufficient (`…aom` / `haon`) |
 | **`IFF`** (marked) | **`ezaze`** | ↔️ *left-right* → *reciprocity* | both ways: dependent and matrix stand or fall together | sufficient **and** necessary — not bare `IF` |
 | **`BECAUSE`** | **`urugu`** | 🧱 *brick* → *foundation* | asserted explahagetion — reason the matrix rests on | explahagetion (not bare conditional) |
 
-**Ending:** clause-pole overlays always take **-m** (metaphorical published sense) — **`hodom`** / **`hezazem`** / **`hurugum`**. Ordinary literal content on the same roots still uses ordinary endings (`zodol` *a door*; `zezazel` *reciprocity*; `zurugul` *a brick*).
+**Ending:** clause-pole overlays always take **-m** (metaphorical published sense) — **`hadorom`** / **`hezazem`** / **`hurugum`**. Ordinary literal content on the same roots still uses ordinary endings (`zadorol` *a door*; `zezazel` *reciprocity*; `zurugul` *a brick*).
 
-Bare **`IF`** (`hodom`) is one-way only.
+Bare **`IF`** (`hadorom`) is one-way only.
 
 | Poles | Prefer |
 |-------|--------|
 | NP–NP | phrase `…aom` / `haon` / `huan` ([Beginner](#np-poles)) |
-| Clause–clause conditional (one-way) | **`hodom borodol`** |
-| Clause–clause biconditional | **`hezazem borodol`** (marked) |
-| Clause–clause explahagetion | **`hurugum borodol`** |
+| Clause–clause conditional (one-way) | **`hadorom badorol`** |
+| Clause–clause biconditional | **`hezazem badorol`** (marked) |
+| Clause–clause explahagetion | **`hurugum badorol`** |
 | Clause–clause inclusive bundle | `xaom` / `xaol` as **coordination only** |
-| Mixed NP + clause | **`orodo`** under a relation, or span / nominalization in `/b/` / `/d/` — not bare `zaom` on a sentence |
+| Mixed NP + clause | **`adoro`** under a relation, or span / nominalization in `/b/` / `/d/` — not bare `zaom` on a sentence |
 
 ### Cause (mechanism framing)
 <a id="cause"></a>
@@ -237,10 +237,10 @@ Bare **`IF`** (`hodom`) is one-way only.
 
 Mark a clause as **mechanism-framed** — *how the gears engage* — with one closed mood root. Condition type (sufficient / necessary / *if* / *because*) stays on the joins and clause poles above; exceptionlessness stays on [universality](special-vocabulary.md#universality).
 
-**Shape:** floating **`/h/`** mood **`uzo`** ⚙️ *gear* → *mechanism* (optional `/w/` when scoped only to a preceding `/ɡ/` — rare). Prefer floating `/h/`. Ending = **-m** only (metaphorical overlay) — **`huzom`**. Ordinary content still available (`zuzol` *a gear*; `vuzol` *to mesh / engage*).
+**Shape:** floating **`/h/`** mood **`egega`** ⚙️ *gear* → *mechanism* (optional `/w/` when scoped only to a preceding `/ɡ/` — rare). Prefer floating `/h/`. Ending = **-m** only (metaphorical overlay) — **`hegegam`**. Ordinary content still available (`zegegal` *a gear*; `vegegal` *to mesh / engage*).
 
 ```
-`… haon beladel huzom.`
+`… haon beladel hegegam.`
 
 gloss: `h-open-to` · `b-effort` · `h-CAUSE`
 
@@ -251,16 +251,16 @@ Use **CAUSE** when the clause is doing **mechanism highlight**. Everyday *leads 
 
 | English bundle | Prefer | Mnemonic |
 |----------------|--------|----------|
-| *how it works / the mechanism is…* | **CAUSE** (`huzom`) on the claim | ⚙️ gear train |
+| *how it works / the mechanism is…* | **CAUSE** (`hegegam`) on the claim | ⚙️ gear train |
 | *X would work / is among routes* | open sufficient (`…aom` / `haon`) — no **CAUSE** required | add a route |
 | *always by nature* | [**NATURAL**](special-vocabulary.md#universality) (`hafafal`) + evidential `/h/` | 🍎 nature’s force |
-| *because / if* + clause | [clause poles](#if-vs-iff) (`hurugum` / `hodom`) | foundation / door |
+| *because / if* + clause | [clause poles](#if-vs-iff) (`hurugum` / `hadorom`) | foundation / door |
 | *I think … because…* (speaker grounds) | [COMMENT](commentary.md#comment) — [epistemic *because*](#epistemic-because) | 💭 speaker take |
 
 | Contrast | Prefer |
 |----------|--------|
-| Condition type vs mechanism | joins / **`orodo`** poles = type; **`uzo`** = mechanism frame |
-| NATURAL vs CAUSE | **`afafa`** = exceptionlessness warrant; **`uzo`** = gears / how |
+| Condition type vs mechanism | joins / **`adoro`** poles = type; **`egega`** = mechanism frame |
+| NATURAL vs CAUSE | **`afafa`** = exceptionlessness warrant; **`egega`** = gears / how |
 | Evidential vs CAUSE | channel of knowing vs mechanism highlight — stack when both matter |
 
 ### Preference vs law
@@ -276,14 +276,14 @@ A common shape: *hard work should earn a promotion* — the “rule” is a **wi
 
 Strength of feeling is values force / evidentiality — not upgrading `aom` → `ol` / `gon`.
 
-**Schematic:** `… haon beladel` on promotion + `horodoloxor` (soft invite force) ≈ *effort is among routes that ought to count for competence payoff* — not *effort is the sole causal law of promotion*.
+**Schematic:** `… haon beladel` on promotion + `holozoxor` (soft invite force) ≈ *effort is among routes that ought to count for competence payoff* — not *effort is the sole causal law of promotion*.
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills on this Intermediate band. Try each item before opening **Show answer**. Mark **necessary** with exclusion / **`hal`**, unique path with **`gon` / `hon` / `…ol`**, clause poles with **`hodom` / `hezazem` / `hurugum`**, and mechanism with **`huzom`**. An ought sits on values **`xo`**, not by upgrading **`aom`** to a sole-cause join.
+Short drills on this Intermediate band. Try each item before opening **Show answer**. Mark **necessary** with exclusion / **`hal`**, unique path with **`gon` / `hon` / `…ol`**, clause poles with **`hadorom` / `hezazem` / `hurugum`**, and mechanism with **`hegegam`**. An ought sits on values **`xo`**, not by upgrading **`aom`** to a sole-cause join.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `edege` *teacher* · `azel` *effort* · `anunu` *rain* · `uludu` *cloud* · `adaga` *dog* · `abogo` *book* · `elade` *promotion* · `orodolo` *competence* · `awala` *walk* · `uzune` *sing* · `elebe` *sleep* · `orodo` *next clause* · `odo` *if* · `ezaze` *iff* · `urugu` *because* · `uzo` CAUSE
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `edege` *teacher* · `azel` *effort* · `anunu` *rain* · `uludu` *cloud* · `adaga` *dog* · `abogo` *book* · `elade` *promotion* · `olozo` *competence* · `awala` *walk* · `uzune` *sing* · `elebe` *sleep* · `adoro` *next clause* · `adoro` *if* · `ezaze` *iff* · `urugu` *because* · `egega` CAUSE
 
 #### English → Agelan
 
@@ -308,25 +308,25 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **4.** *Azawan walks if Ululon sleeps.*
 
 ::: details Show answer
-`zazawan vawalal hodom borodol zululon velebel.`
+`zazawan vawalal hadorom badorol zululon velebel.`
 :::
 
 **5.** *Azawan walks if and only if Ululon sleeps.*
 
 ::: details Show answer
-`zazawan vawalal hezazem borodol zululon velebel.`
+`zazawan vawalal hezazem badorol zululon velebel.`
 :::
 
 **6.** *Azawan walks because Ululon sleeps.*
 
 ::: details Show answer
-`zazawan vawalal hurugum borodol zululon velebel.`
+`zazawan vawalal hurugum badorol zululon velebel.`
 :::
 
 **7.** *Effort would count toward promotion — as an ought, not the sole law.*
 
 ::: details Show answer
-`zazel haon beladel horodoloxor.`
+`zazel haon beladel holozoxor.`
 :::
 
 **8.** *It has to be a book.*
@@ -338,13 +338,13 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **9.** *Ululon walks — as mechanism.*
 
 ::: details Show answer
-`zululon vawalal huzom.`
+`zululon vawalal hegegam.`
 :::
 
 **10.** *Open to effort — as mechanism.*
 
 ::: details Show answer
-`haon beladel huzom.`
+`haon beladel hegegam.`
 :::
 
 #### Agelan → English
@@ -361,25 +361,25 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *It has to be the teacher.*
 :::
 
-**3.** `zazawan vawalal hodom borodol zululon velebel.`
+**3.** `zazawan vawalal hadorom badorol zululon velebel.`
 
 ::: details Show answer
 *Azawan walks if Ululon sleeps.*
 :::
 
-**4.** `zazawan vawalal hezazem borodol zululon velebel.`
+**4.** `zazawan vawalal hezazem badorol zululon velebel.`
 
 ::: details Show answer
 *Azawan walks if and only if Ululon sleeps.*
 :::
 
-**5.** `zazawan vawalal hurugum borodol zululon velebel.`
+**5.** `zazawan vawalal hurugum badorol zululon velebel.`
 
 ::: details Show answer
 *Azawan walks because Ululon sleeps.*
 :::
 
-**6.** `zazel haon beladel horodoloxor.`
+**6.** `zazel haon beladel holozoxor.`
 
 ::: details Show answer
 *Effort would count toward promotion — as an ought, not the sole law.*
@@ -397,13 +397,13 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan never walks.*
 :::
 
-**9.** `zazawan vuzunel huzom.`
+**9.** `zazawan vuzunel hegegam.`
 
 ::: details Show answer
 *Azawan sings — as mechanism.*
 :::
 
-**10.** `haon beladel huzom.`
+**10.** `haon beladel hegegam.`
 
 ::: details Show answer
 *Open to effort — as mechanism.*
@@ -421,14 +421,14 @@ Agelan separates that on the clause root:
 
 | Root | Dependent | Matrix | Link |
 |------|-----------|--------|------|
-| **`IF`** (`hodom`) 🚪 | **not** asserted as fact — hypothetical / opportunity door | claimed **under** the dependent | one-way open sufficient |
+| **`IF`** (`hadorom`) 🚪 | **not** asserted as fact — hypothetical / opportunity door | claimed **under** the dependent | one-way open sufficient |
 | **`IFF`** (`hezazem`) ↔️ | stands or falls **with** the matrix — not a free freestanding fact claim | stands or falls **with** the dependent | both directions |
 | **`BECAUSE`** (`hurugum`) 🧱 | **asserted** as the foundation the matrix rests on | asserted (or already in force) | explahagetion |
 
 🚪 opens onto a maybe, 🧱 is laid down as real, ↔️ welds both sides together.
 
 ```
-`… hurugum borodol zanunul.`
+`… hurugum badorol zanunul.`
 
 gloss: `h-BECAUSE` · `b-next-clause` · `z-rain`
 
@@ -436,7 +436,7 @@ gloss: `h-BECAUSE` · `b-next-clause` · `z-rain`
 ```
 
 ```
-`… hodom borodol zanunul.`
+`… hadorom badorol zanunul.`
 
 gloss: `h-IF` · `b-next-clause` · `z-rain`
 
@@ -450,18 +450,18 @@ English often uses *because* for **speaker grounds** (*I say P because Q* / *I t
 
 | English bundle | Prefer |
 |----------------|--------|
-| *P because Q* (Q grounds P in the world) | **`hurugum borodol`** (+ evidentiality / [**CAUSE**](#cause) when naming mechanism) |
-| *I think / say P because Q* (Q is my reason for the take) | [**COMMENT**](commentary.md#comment) on the matrix (`hogugum`, …); optional **`hurugum borodol`** only if Q is also asserted as world-foundation |
-| *P, since / given that Q* (Q already shared) | **`hurugum borodol`** (Q asserted); soft force / evidentiality if the warrant is tentative |
-| *P if Q* (Q not asserted) | **`hodom borodol`** — never stretch **`BECAUSE`** into a soft *if* |
+| *P because Q* (Q grounds P in the world) | **`hurugum badorol`** (+ evidentiality / [**CAUSE**](#cause) when naming mechanism) |
+| *I think / say P because Q* (Q is my reason for the take) | [**COMMENT**](commentary.md#comment) on the matrix (`hodohom`, …); optional **`hurugum badorol`** only if Q is also asserted as world-foundation |
+| *P, since / given that Q* (Q already shared) | **`hurugum badorol`** (Q asserted); soft force / evidentiality if the warrant is tentative |
+| *P if Q* (Q not asserted) | **`hadorom badorol`** — never stretch **`BECAUSE`** into a soft *if* |
 
 ### Stacks (evidentiality, mechanism, habit)
 <a id="stacks"></a>
 
 | Stack | Role | Mnemonic |
 |-------|------|----------|
-| Evidentiality `/h/` | *how you know* the link — [evidentiality](commentary.md#evidentiality) (**INFERRED** `edegu`, **PATTERN** `abawa`, …) | 🔍 the trail behind the claim |
-| **`CAUSE`** (`huzom`) | *mechanism framing* — [CAUSE mood](#cause); not condition type, not NATURAL | ⚙️ the gears inside |
+| Evidentiality `/h/` | *how you know* the link — [evidentiality](commentary.md#evidentiality) (**INFERRED** `edede`, **PATTERN** `abawa`, …) | 🔍 the trail behind the claim |
+| **`CAUSE`** (`hegegam`) | *mechanism framing* — [CAUSE mood](#cause); not condition type, not NATURAL | ⚙️ the gears inside |
 | **`hual` / `huam`** | habitual / characterizing pattern — [restrictors](restrictors.md) | 🔁 whenever, as a rule |
 | Universality | how exceptionless the claim is — [universality moods](special-vocabulary.md#universality) | 🌐 no exceptions anywhere |
 | Values `xo` / `xe` | ought or motive — [above](#preference-vs-law) | 🧭 the need it serves |
@@ -469,7 +469,7 @@ English often uses *because* for **speaker grounds** (*I say P because Q* / *I t
 
 Particular episode (*this delay was caused by…*) vs standing law (*clouds for rain*) share the same necessary/sufficient shapes; tense, **`hual`**, evidentiality, **`CAUSE`**, and universality warrant distinguish them.
 
-Causal “laws” show their warrant via evidentiality and universality — not via a stronger join. Mechanism highlight uses **`huzom`**; exceptionlessness uses **`hafafal`**.
+Causal “laws” show their warrant via evidentiality and universality — not via a stronger join. Mechanism highlight uses **`hegegam`**; exceptionlessness uses **`hafafal`**.
 
 ### English → Agelan
 <a id="english-cues"></a>
@@ -477,15 +477,15 @@ Causal “laws” show their warrant via evidentiality and universality — not 
 | English cue | Agelan |
 |-------------|---------|
 | *caused by* + how you know | condition shape (sufficient / necessary) + evidential `/h/` |
-| *caused by* + mechanism focus | condition shape + **`huzom`** ([CAUSE](#cause)) |
+| *caused by* + mechanism focus | condition shape + **`hegegam`** ([CAUSE](#cause)) |
 | *leads to* / *results in* (ordinary) | open sufficient (`…aom` / `haon`, …) |
 | *necessary for* / *without X, no Y* | `huan` / `guan` / `hal` |
 | *the only cause* / *has to be* | marked `gon` / `hon` / `…ol` |
 | *should* as universal causal law | sufficient shape + **`xo`** (name the need) |
 | *always* / *every* / *never* (exceptionlessness) | domain (`hual` / …) + [universality](special-vocabulary.md#universality) mood |
-| *because* / *if* + clause | **`hurugum borodol`** / **`hodom borodol`** |
-| *if and only if* / *iff* | **`hezazem borodol`** — not bare **`hodom`** |
-| *although* / *while* / *until* / *before* / *after* | same `/h/`+**`orodo`** shape — [core.md](core.md#dependent-clauses) |
+| *because* / *if* + clause | **`hurugum badorol`** / **`hadorom badorol`** |
+| *if and only if* / *iff* | **`hezazem badorol`** — not bare **`hadorom`** |
+| *although* / *while* / *until* / *before* / *after* | same `/h/`+**`adoro`** shape — [core.md](core.md#dependent-clauses) |
 | *I think P because Q* (speaker grounds) | COMMENT + optional **`hurugum`** — [above](#epistemic-because) |
 | *therefore* (discourse) | **`xamalal`** — [discourse markers](core.md#discourse-markers-x) |
 | *howedegur* / *meanwhile* (discourse) | **`xezebal`** / **`xamenol`** — not **`hezebam`** / **`hegemum`** |
@@ -494,47 +494,47 @@ Causal “laws” show their warrant via evidentiality and universality — not 
 <a id="constraints"></a>
 
 - Everyday causal claims default to **open sufficient**; necessity uses **exclusion / never**.
-- Clause conditionals use **`orodo`** subordination; **`xaom`** stays peer coordination.
-- Bare **`IF`** (`odo` / `hodom`) is one-way only; biconditional force requires marked **`IFF`** (`ezaze` / `hezazem`).
+- Clause conditionals use **`adoro`** subordination; **`xaom`** stays peer coordination.
+- Bare **`IF`** (`adoro` / `hadorom`) is one-way only; biconditional force requires marked **`IFF`** (`ezaze` / `hezazem`).
 - Clause-pole overlays stay **-m**; do not use literal **-l** for **`IF`** / **`IFF`** / **`BECAUSE`** (same **-m** rule for *although* / *while* / *until* / *before* / *after*).
 - Exclusive joins for causation are **marked** unique-path claims only.
 - Justification (desire, definition, source, pattern) is **values + evidentiality / universality**, not subject-of-verb.
-- **`CAUSE`** mood (**`uzo`** / **`huzom`**) marks mechanism framing — distinct from [NATURAL](special-vocabulary.md#universality) **`afafa`** and from condition-type joins.
-- Closed **`COND`** adjective is rejected; use joins + **`orodo`** poles.
+- **`CAUSE`** mood (**`egega`** / **`hegegam`**) marks mechanism framing — distinct from [NATURAL](special-vocabulary.md#universality) **`afafa`** and from condition-type joins.
+- Closed **`COND`** adjective is rejected; use joins + **`adoro`** poles.
 - Epistemic *because* stacks COMMENT — no twin clause root.
 - Discourse *howedegur* / *meanwhile* are `/x/` linkers — not subordinating **`hezebam`** / **`hegemum`**.
 
 ### Translation practice
 <a id="translation-practice-advanced"></a>
 
-Short drills on this Advanced band. Try each item before opening **Show answer**. **`hurugum`** asserts the dependent as a fact the matrix rests on; **`hodom`** does not; speaker-grounds stay **`hogugum`**. Habit uses **`hual`**.
+Short drills on this Advanced band. Try each item before opening **Show answer**. **`hurugum`** asserts the dependent as a fact the matrix rests on; **`hadorom`** does not; speaker-grounds stay **`hodohom`**. Habit uses **`hual`**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `anunu` *rain* · `uludu` *cloud* · `awala` *walk* · `elebe` *sleep* · `orodo` *next clause* · `odo` *if* · `ezaze` *iff* · `urugu` *because* · `ogugu` *commentary* (**`hogugum`**)
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `anunu` *rain* · `uludu` *cloud* · `awala` *walk* · `elebe` *sleep* · `adoro` *next clause* · `adoro` *if* · `ezaze` *iff* · `urugu` *because* · `odoho` *commentary* (**`hodohom`**)
 
 #### English → Agelan
 
 **1.** *Azawan walks because it rains.* (rain is asserted)
 
 ::: details Show answer
-`zazawan vawalal hurugum borodol zanunul.`
+`zazawan vawalal hurugum badorol zanunul.`
 :::
 
 **2.** *Azawan walks if it rains.* (rain is not asserted)
 
 ::: details Show answer
-`zazawan vawalal hodom borodol zanunul.`
+`zazawan vawalal hadorom badorol zanunul.`
 :::
 
 **3.** *Azawan walks if and only if it rains.*
 
 ::: details Show answer
-`zazawan vawalal hezazem borodol zanunul.`
+`zazawan vawalal hezazem badorol zanunul.`
 :::
 
 **4.** *Azawan walks — that’s a take.* (speaker-grounds, not a world-reason)
 
 ::: details Show answer
-`zazawan hogugum vawalal.`
+`zazawan hodohom vawalal.`
 :::
 
 **5.** *Clouds would work, as a standing pattern.*
@@ -545,25 +545,25 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 #### Agelan → English
 
-**1.** `zazawan vawalal hurugum borodol zanunul.`
+**1.** `zazawan vawalal hurugum badorol zanunul.`
 
 ::: details Show answer
 *Azawan walks because it rains.* (rain is asserted as the reason)
 :::
 
-**2.** `zazawan vawalal hodom borodol zanunul.`
+**2.** `zazawan vawalal hadorom badorol zanunul.`
 
 ::: details Show answer
 *Azawan walks if it rains.* (rain is not asserted)
 :::
 
-**3.** `zazawan vawalal hezazem borodol zanunul.`
+**3.** `zazawan vawalal hezazem badorol zanunul.`
 
 ::: details Show answer
 *Azawan walks if and only if it rains.*
 :::
 
-**4.** `zazawan hogugum vawalal hurugum borodol zululon velebel.`
+**4.** `zazawan hodohom vawalal hurugum badorol zululon velebel.`
 
 ::: details Show answer
 *Azawan walks, I’d note, because Ululon sleeps.* (take plus world-foundation)
@@ -580,5 +580,5 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 - Inclusive focus **`…aom` / `…aol`**: [coordination.md](coordination.md#focus-phrase)
 - Join-relations **`haon` / `huan` / `hon`**: [join-extras.md](join-extras.md#join-relations)
 - Restrictors **`hal` / `hual`**: [restrictors.md](restrictors.md)
-- Dependent clauses / **`orodo`**: [core.md](core.md#dependent-clauses)
+- Dependent clauses / **`adoro`**: [core.md](core.md#dependent-clauses)
 - Preference as law (values on the condition): [values.md](values.md)

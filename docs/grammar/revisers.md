@@ -415,7 +415,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 ### More examples
 
-- `zorodololsh al zamemal` — *tools, including only a hammer* (closed)
+- `zolozolsh al zamemal` — *tools, including only a hammer* (closed)
 - `zudebensh an zaredel` — *the primary colors, including red* (named frame)
 - `zudeben un zelulul` — *RGB except blue* (named conventional set)
 - `dadedal om dogovel` — *coffee as a replacement for tea* (open)
