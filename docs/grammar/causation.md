@@ -177,7 +177,7 @@ Use exclusion / never — not a different gloss on `ao` / `aom`:
 
 | Prefer | Gloss | Mnemonic |
 |--------|--------|----------|
-| **`guan` / `huan`** | *without / excluding* the antecedent on the **effect** | series **`u`** (*undo*): take the antecedent abaway and the effect fails |
+| **`guan` / `huan`** | *without / excluding* the antecedent on the **effect** | series **`u`** (*undo*): take the antecedent away and the effect fails |
 | **`hal`** (restrictor) | *never* under the circumstance where the antecedent is absent | exact **-l**: the circumstance is closed off completely |
 
 | Agalan (schematic) | Reading |
@@ -216,7 +216,7 @@ main sentence …  hadorom / hezazem / hurugum  badorol   [dependent sentence]
 |------|---------|----------|---------|----------|
 | **`IF`** (default) | **`adoro`** | 🚪 *door* → *opportunity* | one-way: under dependent, claim matrix; dependent **not** asserted as fact; **not** “matrix only if dependent” | open sufficient (`…aom` / `haon`) |
 | **`IFF`** (marked) | **`ezaze`** | ↔️ *left-right* → *reciprocity* | both ways: dependent and matrix stand or fall together | sufficient **and** necessary — not bare `IF` |
-| **`BECAUSE`** | **`urugu`** | 🧱 *brick* → *foundation* | asserted explahagetion — reason the matrix rests on | explahagetion (not bare conditional) |
+| **`BECAUSE`** | **`urugu`** | 🧱 *brick* → *foundation* | asserted explanation — reason the matrix rests on | explanation (not bare conditional) |
 
 **Ending:** clause-pole overlays always take **-m** (metaphorical published sense) — **`hadorom`** / **`hezazem`** / **`hurugum`**. Ordinary literal content on the same roots still uses ordinary endings (`zadorol` *a door*; `zezazel` *reciprocity*; `zurugul` *a brick*).
 
@@ -227,7 +227,7 @@ Bare **`IF`** (`hadorom`) is one-way only.
 | NP–NP | phrase `…aom` / `haon` / `huan` ([Beginner](#np-poles)) |
 | Clause–clause conditional (one-way) | **`hadorom badorol`** |
 | Clause–clause biconditional | **`hezazem badorol`** (marked) |
-| Clause–clause explahagetion | **`hurugum badorol`** |
+| Clause–clause explanation | **`hurugum badorol`** |
 | Clause–clause inclusive bundle | `xaom` / `xaol` as **coordination only** |
 | Mixed NP + clause | **`adoro`** under a relation, or span / nominalization in `/b/` / `/d/` — not bare `zaom` on a sentence |
 
@@ -423,7 +423,7 @@ Agalan separates that on the clause root:
 |------|-----------|--------|------|
 | **`IF`** (`hadorom`) 🚪 | **not** asserted as fact — hypothetical / opportunity door | claimed **under** the dependent | one-way open sufficient |
 | **`IFF`** (`hezazem`) ↔️ | stands or falls **with** the matrix — not a free freestanding fact claim | stands or falls **with** the dependent | both directions |
-| **`BECAUSE`** (`hurugum`) 🧱 | **asserted** as the foundation the matrix rests on | asserted (or already in force) | explahagetion |
+| **`BECAUSE`** (`hurugum`) 🧱 | **asserted** as the foundation the matrix rests on | asserted (or already in force) | explanation |
 
 🚪 opens onto a maybe, 🧱 is laid down as real, ↔️ welds both sides together.
 

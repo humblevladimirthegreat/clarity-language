@@ -8,7 +8,7 @@
 
 Agalan packs psychologically useful morphology into word form (PoS, reference endings, mid-word **`x`** families, values, numbers, joins, spans). A lexicon search page helps find roots; it does not help *while reading a sentence*. Learners need: point at a surface word or **highlight a range** → see gloss + morph breakdown + a path into the grammar docs.
 
-With a finished parser and lexicon/overlay classification, the hard part is already structured. The UI is a thin **token → card** layer over the AST, not a second ahagelysis stack.
+With a finished parser and lexicon/overlay classification, the hard part is already structured. The UI is a thin **token → card** layer over the AST, not a second analysis stack.
 
 ## Goals
 
@@ -46,7 +46,7 @@ Keep a **compact card**; do not dump the whole AST on first click.
 |-------|---------|
 | **Header** | Full surface form + PoS chip + ending sense (`-l` / `-m` / `-n` / `-r`) |
 | **Gloss** | Lexicon or overlay English; optional **strict vs loose** toggle per [glosses.md](../meta/glosses.md#strict-vs-loose-free-english) |
-| **Morph strip** | Stem · mid-`x` family · number ahagetomy · `-sh` · role / value / ability bits (chips, not a tree) |
+| **Morph strip** | Stem · mid-`x` family · number anatomy · `-sh` · role / value / ability bits (chips, not a tree) |
 | **Why** | One line naming the parser family (e.g. “values, not role”) + link into the owning grammar page |
 | **Related** | When available: anaphor target for `-r`; join fence mate; span open / close pair |
 
@@ -69,7 +69,7 @@ Other notes:
 - **Underline by ending class** (optional visual hint that the ending, not the PoS letter, is the usual learner question).
 - **Parse-error tokens:** failed spans stay in the stream with a failure card (“expected …”) from the parser, not an empty gloss.
 - **Copy:** native selection still copies **romanized Agalan**. Gloss lives in the overlay unless the learner uses an explicit “copy gloss” control.
-- **Dismiss:** click-outside, Escape, or an empty selection. **Pin** keeps the side panel when the highlight goes abaway.
+- **Dismiss:** click-outside, Escape, or an empty selection. **Pin** keeps the side panel when the highlight goes away.
 - **Timing:** open the card on **mouseup** (or ~150–250 ms debounce on `selectionchange`), not while the drag is in progress. Ignore selections during IME compose; overlay only on a committed range.
 - **Touch:** long-press → native selection → same overlay (there is no hover).
 

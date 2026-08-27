@@ -1,7 +1,7 @@
 # Proposal: dictionary words as an early lesson
 
 **Status:** PROPOSED  
-**Related:** cite-then-sentence pedagogy (open core with word ahagetomy, then add role letters); [phonology.md Beginner](../grammar/phonology.md#beginner) (letters / sound) **before or with** this lesson; [core.md § citation](../grammar/core.md#citation-forms); [reference-suffix.md](../grammar/reference-suffix.md); [lexicon.md](../grammar/lexicon.md); [glosses.md](../meta/glosses.md) (literal / metaphorical / proper as separate senses)  
+**Related:** cite-then-sentence pedagogy (open core with word anatomy, then add role letters); [phonology.md Beginner](../grammar/phonology.md#beginner) (letters / sound) **before or with** this lesson; [core.md § citation](../grammar/core.md#citation-forms); [reference-suffix.md](../grammar/reference-suffix.md); [lexicon.md](../grammar/lexicon.md); [glosses.md](../meta/glosses.md) (literal / metaphorical / proper as separate senses)  
 **Design authority:** unchanged. This proposal is **pedagogy and path order** only. Endings, citation, and the lexicon stay as the grammar and CSVs already specify.
 
 ## Motivation
@@ -19,7 +19,7 @@ This lesson also introduces **-r** as “already in the talk / not a new diction
 3. Teach **-r** in the same sitting as “same referent again” (English often *that / the* one), not as a pronoun system.
 4. Give learners a first **use**: one-word cites, then immediately `zodogol gelulul.`
 5. Teach **sound** with the first cites: phonology Beginner **before or at the same time** (letters, English cues, IPA as on that page). Do not wait until after sentences.
-6. Keep the lesson inside the easy-to-use bar: one short explahagetion, a four-row table, a few examples.
+6. Keep the lesson inside the easy-to-use bar: one short explanation, a four-row table, a few examples.
 
 ## Non-goals
 
@@ -67,7 +67,7 @@ Optional: show the lexicon row for `odogo` / `uzumu` / `azawa` so learners see *
 
 **Phonology Beginner first or together.** Suggested order after introduction: **phonology Beginner** → **dictionary cites** (this lesson) → rest of **core** (role letters, SOV, force). Same sitting is fine: a short sound table, then cites you can pronounce. Do not park phonology Beginner after the first clause; saying `odogol` is part of the dictionary beat.
 
-Phonology Intermediate stays later (word ahagetomy with prefixes). [vowel-series.md](../grammar/vowel-series.md) still waits until clause force (`jal` / `jol` / `jel` / `jul`) exists — that is a **job map**, not the IPA table.
+Phonology Intermediate stays later (word anatomy with prefixes). [vowel-series.md](../grammar/vowel-series.md) still waits until clause force (`jal` / `jol` / `jel` / `jul`) exists — that is a **job map**, not the IPA table.
 
 **Prefer for the cite beat:** first Beginner subsection of [core.md](../grammar/core.md) (before role-letter table), **or** a very short page **immediately after** phonology Beginner (or interleaved with it) and **immediately before** the rest of core, then merge into core when the beat is stable.
 

@@ -129,7 +129,7 @@ One short cue is enough (table column, parenthetical, or a line under the rule).
 
 - Address the learner in second person (“use **-r** when…”, “prefer names when…”). That *you* is English pedagogy — not Agalan **`ebone`**.
 - Teaching bands do not use maintainer *we* (“we now write…”) or author *I*. Author *I* is allowed only on signed non-teaching prose in this folder (acknowledgments; the purpose / limits essay), not on rule pages.
-- One idea per H2/H3; the first paragraph should be roughly one short explahagetion (same bar as the [easy-to-use feature criterion](../grammar/why-agelan.md#criterion-for-features)).
+- One idea per H2/H3; the first paragraph should be roughly one short explanation (same bar as the [easy-to-use feature criterion](../grammar/why-agelan.md#criterion-for-features)).
 - Prefer short paragraphs plus a table over a wall of prose.
 - Bold sparingly; put Agalan forms in backticks (`jal`, **-r**, `/ɡ/`).
 - Always call the language **Agalan**. Community / project URLs that still use a legacy host path are fine when they are the real link; do not “fix” them in learner prose.

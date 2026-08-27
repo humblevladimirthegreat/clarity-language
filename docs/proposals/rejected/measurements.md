@@ -7,7 +7,7 @@ I'm creating a standard scale for anthropomorphic measurements. Here's what I ha
 10cm ~ toilet paper roll height
 1m ~ kitchen counter height
 10m ~ single-unit transit bus
-100m = outdoor running track straightabaway
+100m = outdoor running track straightaway
 1km ~ golden gate bridge
 10km = 10k marathon
 100km = The Karman Line (the boundary of outer space)?

@@ -13,7 +13,7 @@ The data is already curated (`lexicon-published.csv`, `lexicon-overlays.csv`). S
 ## Goals
 
 1. Generate **importable study decks** from the published lexicon and overlay CSVs (regenerable; CSV stays canonical).
-2. Ship **Agalan-abaware note types**: literal vs metaphorical, emoji/mnemonic optional, overlays as their own deck — not a single “word / translation” template.
+2. Ship **Agalan-aware note types**: literal vs metaphorical, emoji/mnemonic optional, overlays as their own deck — not a single “word / translation” template.
 3. Prefer **Anki** for long-term review (scheduling, mobile, offline).
 4. Support **curated subsets** (tag / band / theme) so learners are not dumped the full root list on day one.
 5. Keep generation **deterministic and gloss-locked** — no AI sense invention; optional English-side media only if explicitly added later.

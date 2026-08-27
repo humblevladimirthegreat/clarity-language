@@ -11,7 +11,7 @@ Grammar pages must not link here or mention `meta/` — editors use this rubric 
 
 Ask in order. Prefer the **earlier** band when a concept sits on a boundary and learners need it to read ordinary examples.
 
-1. **Usable after one short explahagetion?**  
+1. **Usable after one short explanation?**  
    Can someone use it in ordinary dialogue after roughly one paragraph and a couple of examples (and at most a second of thought once practiced)?  
    If yes → **beginner** (or at least not advanced). Aligns with the language’s [easy-to-use feature criterion](../grammar/why-agelan.md#criterion-for-features).
 

@@ -102,7 +102,7 @@ gloss: `in-other-words` · `z-←Uzuzuxogoven` · `h-ABIL-unable-temporary` · `
 
 strict: *In other words, that one (A) lacks the capacity to walk.*
 
-loose: *In other words, they can't mahagege walking.*
+loose: *In other words, they can't manage walking.*
 
 **C:** `x#e- zuzebul g#1. zahagen haweroxur.`
 

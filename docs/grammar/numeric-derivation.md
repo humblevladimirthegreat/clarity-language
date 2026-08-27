@@ -63,7 +63,7 @@ PoS + ROOT + x + NUM + {-l|-m|-n|-r}
 
 ###### Quasi-N (`-e-1` / `-e-2`)
 
-Stem shape **`ru` + `bu` + exponent digit `N`** (writing **`-e-N`**; bare-OoM ahagetomy, no mantissa). On ROOT = **quasi-** + the same strong digit reading as **`+N`** — as-if N-structure without real-axis commitment. **Derivation only** — free **`g-e-1`** / **`g-e-2`** stay real bare OoM (−10⁻¹ / −10⁻²).
+Stem shape **`ru` + `bu` + exponent digit `N`** (writing **`-e-N`**; bare-OoM anatomy, no mantissa). On ROOT = **quasi-** + the same strong digit reading as **`+N`** — as-if N-structure without real-axis commitment. **Derivation only** — free **`g-e-1`** / **`g-e-2`** stay real bare OoM (−10⁻¹ / −10⁻²).
 
 | Shape | Reading | Twin | Example |
 |-------|---------|------|---------|
@@ -94,7 +94,7 @@ Single-digit scalars only. Tables use marker shorthand (**`+N`** / **`-N`**); ba
 | **`ROOTx+6`** | hex / 6-part / honeycomb / pack | `zadomaxragul` — *a hexagonal / six-pack cell* | unpacked / non-hex / broken pack | `zahadaxrugul` — *an unpacked team* |
 | **`ROOTx+7`** | heptad / week-cycle / complete series | `zazegaxralem` — *a seven-fold / week-cycle ritual* | incomplete series / broken cycle | `zazegaxrulem` — *a broken-cycle ritual* |
 | **`ROOTx+8`** | octet / 8-part / doubled-quad | `zonuzuxrahal` — *an octet / eight-part block* | non-octet / incomplete eight | `zonuzuxruhal` — *a non-octet block* |
-| **`ROOTx+9`** | ennead / near-full / almost-ten | `zuzugoxrahagel` — *a nine-part / near-full choir* | far-from-full / short-of-complete | `zuzugoxrunal` — *a far-from-full choir* |
+| **`ROOTx+9`** | ennead / near-full / almost-ten | `zuzugoxranal` — *a nine-part / near-full choir* | far-from-full / short-of-complete | `zuzugoxrunal` — *a far-from-full choir* |
 | **`ROOTx+0`** | null / reset / emptied | `vezehuxrazol` — *to zero-score / null the score* | **anti-null** / non-emptyable / insistent residue | `gezehuxruzol` — *a score that won’t null* / *stubborn residual score* |
 
 ##### Null / anti-null by PoS (`+0` / `-0`)
@@ -116,7 +116,7 @@ Single-digit scalars only. Tables use marker shorthand (**`+N`** / **`-N`**); ba
 <a id="total-null"></a>
 <a id="engineering-null-morph"></a>
 
-Same ahagetomy as free [zero × exponent](numbers.md#zero-exponent); on ROOT = **metaphysics of the kind**. Free **`v+0el`** = hostless *annihilate*; **`vezehuxrazobal`** = annihilate-*score* (kind). Soft / named / resume stay on the **host ending** (no number `~`/`@`/`=` on `NUM`).
+Same anatomy as free [zero × exponent](numbers.md#zero-exponent); on ROOT = **metaphysics of the kind**. Free **`v+0el`** = hostless *annihilate*; **`vezehuxrazobal`** = annihilate-*score* (kind). Soft / named / resume stay on the **host ending** (no number `~`/`@`/`=` on `NUM`).
 
 | Shape | Reading | Example |
 |-------|---------|---------|

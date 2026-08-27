@@ -16,7 +16,7 @@ Some published roots carry a **closed overlay reading** for a fixed PoS — the 
 ### Emotion compose
 <a id="emotion-compose"></a>
 
-When an opaque emotion word (*anxious*, *resentful*, *proud*, …) is doing **judgment or explahagetion** work, drop the emotion label and **compose** from pieces — value + activation + locus.
+When an opaque emotion word (*anxious*, *resentful*, *proud*, …) is doing **judgment or explanation** work, drop the emotion label and **compose** from pieces — value + activation + locus.
 
 | Piece | Agalan |
 |-------|---------|
@@ -41,7 +41,7 @@ affect is **water**. **ACT** = tide dynamics (how much / how fast). **LOCUS** = 
 |------|--------------|----------|
 | **INTERNAL** | **`abobo`** 🍼 *baby-bottle* → *bottle* | charge held inside the speaker (in-vessel) |
 | **EXTERNAL** | **`oruru`** 🫗 *pour* → *pour* | charge directed at / attributed to other people |
-| **CIRCUM** | **`agade`** 🕯️ *candle* → *abawash* | charge on the situation / ambient field — not owned by a person |
+| **CIRCUM** | **`agade`** 🕯️ *candle* → *awash* | charge on the situation / ambient field — not owned by a person |
 
 Ordinary content still available (`zogegal` *an ocean wave*; `vorurul` *to pour*; …). The special reading is the floating mood use, especially `/h/`.
 
@@ -53,18 +53,18 @@ Ordinary content still available (`zogegal` *an ocean wave*; `vorurul` *to pour*
 | **`ejelo`** + **`oruru`** | *flowing toward them* | mid other-directed charge |
 | **`ozowo`** + **`oruru`** | *pooling at them* | low other-directed charge — settled water at their locus |
 
-Parallel INTERNAL / CIRCUM cues: *flood bottled* / *flow held* / *still in the vessel*; *room abawash* / *undercurrent in the air* / *slack shared water*. Keep CIRCUM as **shared / ambient field**, not a second vessel.
+Parallel INTERNAL / CIRCUM cues: *flood bottled* / *flow held* / *still in the vessel*; *room awash* / *undercurrent in the air* / *slack shared water*. Keep CIRCUM as **shared / ambient field**, not a second vessel.
 
 **Recipe:** neutral description + **one value ascription** + **one ACT** + **one LOCUS**.
 
 | Agalan | Reading |
 |---------|---------|
-| `zezebel wolozoxur hogegal hagadel` | *anxious about the dialogue* → dialogue costs competence (temporary); flood; room abawash (circumstantial) |
+| `zezebel wolozoxur hogegal hagadel` | *anxious about the dialogue* → dialogue costs competence (temporary); flood; room awash (circumstantial) |
 | `zabawazal wonogoxum hogegal horurul` | *resentful about the division* → unmet relatedness; flood poured onto them |
 | `zebunem wolozoxam hogegal habobol` | *proud of the draft* → met competence (mental channel); flood bottled (internal) |
 | `zemomel wonogoxum hozowol horurul` | *resentful about the memo* → unmet relatedness; stillness pooling at them |
 
-**Raw feeling:** contacting a sensation without judgment/explahagetion may leave it unlabeled. Full compose is for when an emotion word would have done evaluative work. Skip [COMMENT](commentary.md#comment) on affect clauses.
+**Raw feeling:** contacting a sensation without judgment/explanation may leave it unlabeled. Full compose is for when an emotion word would have done evaluative work. Skip [COMMENT](commentary.md#comment) on affect clauses.
 
 ### Numbered alternatives (problem / solution / goal)
 <a id="numbered-alternatives"></a>
@@ -111,7 +111,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 #### English → Agalan
 
-**1.** *Anxious about the dialogue* (competence at stake, temporary; flood; room abawash)
+**1.** *Anxious about the dialogue* (competence at stake, temporary; flood; room awash)
 
 ::: details Show answer
 `zezebel wolozoxur hogegal hagadel.`

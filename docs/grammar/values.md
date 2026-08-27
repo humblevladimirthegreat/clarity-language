@@ -280,7 +280,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 |--------|----------|--------|
 | **-l** | **circumstantial** | The situation pulls this motive |
 | **-m** | **internal** | Your own reason (also soft default if unknown) |
-| **-r** | **protective** | Motive as *protecting against* unmet (abaway-from), not approach |
+| **-r** | **protective** | Motive as *protecting against* unmet (away-from), not approach |
 
 **Toward vs protective:** **-l / -m** approach-framed; **-r** fear/guard framed. Always pick an ending on **`xe`**; unknown → **-m**. *Usually my reason* → **`…xem`** + **`hual`**.
 

@@ -1,7 +1,7 @@
 # Numbers in use
 <a id="numbers-applied"></a>
 
-Applied uses of the number word: digit-string labels, clock and calendar time, measure phrases, ranges, percent, and percentage points. Word ahagetomy, markers, endings, exponents, overlays, and writing style live in **[numbers.md](numbers.md)** — read that first.
+Applied uses of the number word: digit-string labels, clock and calendar time, measure phrases, ranges, percent, and percentage points. Word anatomy, markers, endings, exponents, overlays, and writing style live in **[numbers.md](numbers.md)** — read that first.
 
 
 ## Intermediate
@@ -149,7 +149,7 @@ Spelled **`…xrawol`** / **`…xrawon`** — [numeric derivation](numeric-deriv
 | ampere | `ejelo` 🪼 *flow* | `bejelol` | `bejeloxrawon` |
 | kelvin | `ebebe` 🌶️ *heat* | `bebebel` | `bebeboxrawon` |
 | mole | `emade` 🍖 *substance* | `bemadel` | `bemadexrawon` |
-| candela | `agade` 🕯️ *abawash* | `bagadel` | `bagadexrawon` |
+| candela | `agade` 🕯️ *awash* | `bagadel` | `bagadexrawon` |
 
 **Civil duration** (*hours*, *days*) uses continuum **`umedu`** 🕐 *time* as the measure host (`bumedul g+3` ≈ *three hours*) — not a second `+1` morph on `ameno`. SHARED range continua stay **`gumedul`** / **`gurelul`** / **`gezudal`** as the line needs ([ranges](#ranges)). Temperature continuum **`edohe`** 🌡️ *temperature* grades heat without naming kelvin.
 
@@ -268,6 +268,6 @@ Examples: `z+3 z+5 zal gumedul` → *between times 3 and 5*; `zuguhul g+3 g+5 ga
 
 ## See also
 
-- Number-word ahagetomy (markers, endings, exponents): [numbers.md](numbers.md)
+- Number-word anatomy (markers, endings, exponents): [numbers.md](numbers.md)
 - Phrase fences behind ranges: [coordination.md](coordination.md)
 - Measured differentials on comparative scales: [comparatives.md](comparatives.md)

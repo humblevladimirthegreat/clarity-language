@@ -201,7 +201,7 @@ word-initial **x** = discourse role (**eXtend** the talk).
 ### Dependent clauses
 <a id="dependent-clauses"></a>
 
-A dependent sentence uses the special next-sentence pronoun **`adoro`**: in the main sentence it stands for “whatever follows right abaway.”
+A dependent sentence uses the special next-sentence pronoun **`adoro`**: in the main sentence it stands for “whatever follows right away.”
 
 **`adoro`** 🚪 *doorway* → *what follows* — the main sentence ends at the doorway; the dependent walks through.
 

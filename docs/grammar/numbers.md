@@ -775,9 +775,9 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 | room 12 (modifier) | `g_12` | *growodul* (`g` + `ro` + wo du) |
 | 139 | `g+139` | *graworenal* (`ra` + wo re na) |
 | 27e12 | `g+27e12` | *grabawodujadulel* (`ra` + ba wo du **ja** + du le) |
-| e9 (bare) | `g+e9` | *grabawal* (`ra` + ba na; **no** `ja`) |
+| e9 (bare) | `g+e9` | *grabanal* (`ra` + ba na; **no** `ja`) |
 | 50e-6 | `g+50e-6` | *grabugujavazol* (`ra` + bu gu **ja** + va zo) |
-| −1e9 −265e3 −4 | `g-1e9,265e3,4` | *grubahagejawobarejaduguvamol* — **`ru`**; groups: ba na **ja** wo · ba re **ja** du gu va · mo |
+| −1e9 −265e3 −4 | `g-1e9,265e3,4` | *grubanajawobarejaduguvamol* — **`ru`**; groups: ba na **ja** wo · ba re **ja** du gu va · mo |
 | $5860.04 → 5e3 + 860 + 4e-2 | `g+5e3,860,4e-2` | *grabarejavahaguzobudujamol* — ba re **ja** va · ha gu zo · bu du **ja** mo |
 | 2nd | `g#2` | *gredul*; title-like *the Second…* may take **-n** (`g@#2` / *gredun*) |
 | penultimate | `g#-2` | *greudul* |
@@ -1059,9 +1059,9 @@ Under `/x/`, **last-place** **`x#e`** (and **`x~#e`** / **`x@#e`** / **`x=#e`**)
 <a id="zero-exponential"></a>
 <a id="annihilate"></a>
 
-[numeric-derivation.md](numeric-derivation.md#zero-exponent-derivation) owns the derived **ROOT**-attached morphs (`ROOTx+0e`, …). This section owns the **free, hostless** number words — the same ahagetomy family used as standalone amounts / acts.
+[numeric-derivation.md](numeric-derivation.md#zero-exponent-derivation) owns the derived **ROOT**-attached morphs (`ROOTx+0e`, …). This section owns the **free, hostless** number words — the same anatomy family used as standalone amounts / acts.
 
-Forms that pair **mantissa `0`** with an exponent (digitless or the engineering **`e-1`** pair). Same ahagetomy family as [numeric derivation](numeric-derivation.md#zero-exponent-derivation); free words are **hostless** amounts / acts; derived words attach the morph to a ROOT.
+Forms that pair **mantissa `0`** with an exponent (digitless or the engineering **`e-1`** pair). Same anatomy family as [numeric derivation](numeric-derivation.md#zero-exponent-derivation); free words are **hostless** amounts / acts; derived words attach the morph to a ROOT.
 
 **Not** plain zero (`g+0`), **not** +∞ (`g+e`), **not** hyperbole (`g+1e`), **not** bare OoM (`g+e9`, **`g+e0`** ones band — [Bare OoM](#bare-oom-bands)). Soft / named / resume endings (**`~`** / **`@`** / **`=`**) apply as on other specials.
 

@@ -155,7 +155,7 @@ Numbering candidates, paraphrasing, and naming the judgment bar help you keep ch
 <a id="conceptual-metaphors"></a>
 <a id="metaphors-and-precise-vocabulary"></a>
 
-Abstract ideas are hard to hold; without a concrete picture, the psychologically useful reading of a word slips abaway in the moment.
+Abstract ideas are hard to hold; without a concrete picture, the psychologically useful reading of a word slips away in the moment.
 
 Published roots keep a **metaphorical** sense beside the literal one, so the abstract job rides on a familiar scene that already carries the caution. Examples:
 
@@ -167,7 +167,7 @@ Published roots keep a **metaphorical** sense beside the literal one, so the abs
 
 Related senses across fields still prefer an explicit kind-then-topic compound over unmarked polysemy ([grammar design](introduction.md#grammar-design)).
 
-Conceptual metaphors help you reach and remember the healthier frame by tying it to a concrete ahagelogy that already encodes the bias you are trying to catch.
+Conceptual metaphors help you reach and remember the healthier frame by tying it to a concrete analogy that already encodes the bias you are trying to catch.
 
 ## Criticisms
 <a id="criticisms"></a>
