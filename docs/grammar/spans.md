@@ -37,7 +37,7 @@ Same split as number shorthand (`g+3` written, full CV spoken); the spoken shape
 Anaphor (**-r**): interior **`=`** (`d[=]`, `d{=}`, `h(=)`, `d<=>`).
 
 ```
-`zedonen v[uzune] d[jael]l.`
+`zedonen v[uzunu] d[jael]l.`
 
 gloss: `z-listener` · `v-[sing]` · `d-[yes]`
 
@@ -86,7 +86,7 @@ The open’s PoS is the **outer-clause slot** of the **entire** span — not the
 | `/x/` | Discourse-only citation (epigraph, freestanding span) | `x[…]` |
 
 ```
-`jul zedonen v[uzune] dugobol.`
+`jul zedonen v[uzunu] dugobol.`
 
 gloss: `j-command` · `z-listener` · `v-[sing]` · `d-speaker`
 
@@ -140,7 +140,7 @@ gloss: `z-grace` · `v-walk` · `h-(happy)`
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Prefer a one-token cite, mention, or opaque blob; nativize when the surface wording is not the point. House names for people unless the item is a loan name.
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` · `ezehe` *tell* · `uwuru` *write* · `uzune` *sing* · `eje` *see* · `awala` *walk* · `elebe` *sleep* · `uzumu` *happy* (**-m**) · `adaga` *dog* · `agada` *cat* · `abogo` *book* · `elulu` *blue* · `edege` *teacher*
+**Roots used here:** `azawa` / `ululo` / `uhubu` · `ezehe` *tell* · `uwuru` *write* · `uzunu` *sing* · `eje` *see* · `awala` *walk* · `elebe` *sleep* · `uzumu` *happy* (**-m**) · `odogo` *dog* · `agada` *cat* · `abogo` *book* · `elulu` *blue* · `odogo` *dog*
 
 #### English → Agalan
 
@@ -165,7 +165,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **4.** *Uhubun sang “Hamlet.”* (title as wording)
 
 ::: details Show answer
-`zuhubun d@[Hamlet] vuzunel.`
+`zuhubun d@[Hamlet] vuzunul.`
 :::
 
 **5.** *Azawan saw sushi.* (ordinary compact loan, not an opaque blob)
@@ -177,7 +177,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **6.** *The word “dog” is blue.* (the form itself is the subject)
 
 ::: details Show answer
-`z{adaga} gelulun.`
+`z{odogo} gelulun.`
 :::
 
 **7.** *Don’t “oops,” Ululon.*
@@ -230,10 +230,10 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Azawan said that?!*
 :::
 
-**6.** `z{agada} gedegel.`
+**6.** `z{agada} godogol.`
 
 ::: details Show answer
-*The word “cat” is a teacher.*
+*The word “cat” is a dog.*
 :::
 
 **7.** `z<Sam>n d[hi] vezehel.`
@@ -289,7 +289,7 @@ Only **a** / **e** / **o** / **u** on TYPE. No stacked vowels on TYPE.
 | **o** | **mention** — the word or form as object; with **-n**, named unit | `{` … `}` | **o** choice → mention |
 | **u** | **opaque** — foreign / code / raw blob; interior is not native Agalan | `<` … `>` | **u** negation → opaque |
 
-A native office **handle** refers with ordinary **-n** (`zedulon`) — [named handles](reference-suffix.md#named-handles). Mention `{edulo}` is that **form**; opaque / compact loan is a **foreign** acronym’s surface (`z<FBI>n`).
+A native office **handle** refers with ordinary **-n** (`zabulon`) — [named handles](reference-suffix.md#named-handles). Mention `{abulo}` is that **form**; opaque / compact loan is a **foreign** acronym’s surface (`z<FBI>n`).
 
 Scare / ironic *“so-called”* distance is not a separate TYPE; use ordinary lexicon attitude if needed.
 
@@ -302,7 +302,7 @@ The vowel **after** `x` is **EDGE** — how far the open runs.
 |------|-----|--------------|-----------------|
 | **a** | **Multi-token open** — push a stack frame until explicit close (default) | yes | `d[…]` … `]` |
 | **e** | **Clause-scoped** — auto-pop before the next clause-force `/j/` or clause-ledegul `/x/` join (**complete**) | no (auto) | `d[…` run to clause end |
-| **o** | **Atomic** — exactly **one** following token | no | `d[uzune]`, `d<sushi>` |
+| **o** | **Atomic** — exactly **one** following token | no | `d[uzunu]`, `d<sushi>` |
 | **u** | **Empty / redacted** — no interior; also **anaphor** **-r** | no | `d[]`, `d[=]` |
 
 **Anaphor `-r`** always uses EDGE **`u`** in the spoken template (`daxur`).
@@ -357,7 +357,7 @@ Examples: `d[ h(…) ]`, `d[ z{…} ]`, `d~[ d<…> ]`. **`@`** / **`~`** apply 
 **Scope islands** mark a multi-word chunk so an **inside binder** can target that chunk. Writing **`^ … ^`**; speech is **prosody only** (no spoken open/close word). The edges carry **no meaning of their own** — like parentheses; the inside binder is the function.
 
 ```
-`^ h<maybe>l zaredel zadagal ^ v<saw>l.`
+`^ h<maybe>l zaredel zodogol ^ v<saw>l.`
 
 gloss: `^` · `h-maybe` · `z-red` · `z-dog` · `^` · `v-saw`
 
@@ -370,7 +370,7 @@ gloss: `^` · `h-maybe` · `z-red` · `z-dog` · `^` · `v-saw`
 - **One island per clause.** Do not nest islands.
 - Empty `^^` is illegal.
 - **Binder required:** at least one scope-taking `/h/` and/or a [join](coordination.md#join-scope-islands-rules) particle **inside**. Binderless `^ … ^` is illegal.
-- Prefer spaces inside: `^ h<maybe>l zaredel zadagal ^`.
+- Prefer spaces inside: `^ h<maybe>l zaredel zodogol ^`.
 
 | Binder | Job inside the island |
 |--------|------------------------|
@@ -408,7 +408,7 @@ gloss: `z-Sam` · `^` · `z-water` · `zal` · `^` · `zam` · `v-saw`
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Test spoken opens (TYPE / EDGE / ending), an explicit **`xuxul`** close, nesting, or a **`^ … ^`** island — not only Beginner brackets.
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` · `ezehe` *tell* · `eje` *see* · `urunu` *run* · `arede` *red* · `adaga` *dog* · `agada` *cat* · `abogo` *book* · `elulu` *blue* · `uzumu` *happy* (**-m**) · `edulo` (handle **Edulo**)
+**Roots used here:** `azawa` / `ululo` / `uhubu` · `ezehe` *tell* · `eje` *see* · `urunu` *run* · `arede` *red* · `odogo` *dog* · `agada` *cat* · `abogo` *book* · `elulu` *blue* · `uzumu` *happy* (**-m**) · `abulo` (handle **Abulo**)
 
 #### English → Agalan
 
@@ -457,7 +457,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **8.** *Azawan saw maybe the red dog.* (*maybe* targets that chunk)
 
 ::: details Show answer
-`zazawan ^ h<maybe>l zaredel zadagal ^ vejel.`
+`zazawan ^ h<maybe>l zaredel zodogol ^ vejel.`
 :::
 
 **9.** *Uhubun and (just a cat) ran.*
@@ -466,10 +466,10 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zuhubun ^ zagadal zal ^ zam vurunul.`
 :::
 
-**10.** *Azawan said the word “Edulo.”*
+**10.** *Azawan said the word “Abulo.”*
 
 ::: details Show answer
-`zazawan d{edulo} vezehel.`
+`zazawan d{abulo} vezehel.`
 :::
 
 #### Agalan → English
@@ -492,7 +492,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *That (cite) is blue.* (anaphor as subject)
 :::
 
-**4.** `zuhubun daxon Hamlet vuzunel.`
+**4.** `zuhubun daxon Hamlet vuzunul.`
 
 ::: details Show answer
 *Uhubun sang “Hamlet.”* (spoken atomic proper cite)
@@ -516,7 +516,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Ululon saw maybe the red cat.*
 :::
 
-**8.** `zazawan ^ zadagal zal ^ zam vejel.`
+**8.** `zazawan ^ zodogol zal ^ zam vejel.`
 
 ::: details Show answer
 *Azawan and (just a dog) saw (it).*
@@ -528,10 +528,10 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan walks (happily).*
 :::
 
-**10.** `zazawan d{edulo} vezehel.`
+**10.** `zazawan d{abulo} vezehel.`
 
 ::: details Show answer
-*Azawan said the word “Edulo.”*
+*Azawan said the word “Abulo.”*
 :::
 
 ## Advanced

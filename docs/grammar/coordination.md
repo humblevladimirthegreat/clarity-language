@@ -65,7 +65,7 @@ PHRASE PHRASE ( PHRASE )* P-JOIN ( SHARED )*
 the join **closes** the list on the right — like a closing bracket.
 
 ```
-`zadagal zagadal zam.`
+`zodogol zagadal zam.`
 
 gloss: `z-dog` · `z-cat` · `zam`
 
@@ -252,14 +252,14 @@ The join prefix **must match** every conjunct head. Under `/ɡ/` `/h/`, joins ar
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. The join sits **after** the conjuncts; pick the vowel (set vs rank, including **`u`**) and the ending (**-l** / **-m** / **-r**), including focus and bare starter forms.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `adaga` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `abele` *apple* · `unune` *water* · `omonu` *challenging* · `ebere` *person* · `awala` *walk* · `urunu` *run* · `elebe` *sleep*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `abele` *apple* · `unune` *water* · `omonu` *challenging* · `ebere` *person* · `awala` *walk* · `urunu` *run* · `elebe` *sleep*
 
 #### English → Agalan
 
 **1.** *a dog and a cat*
 
 ::: details Show answer
-`zadagal zagadal zam.`
+`zodogol zagadal zam.`
 :::
 
 **2.** *tea or coffee — pick exactly one*
@@ -306,7 +306,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 #### Agalan → English
 
-**1.** `zadagal zagadal zam.`
+**1.** `zodogol zagadal zam.`
 
 ::: details Show answer
 *a dog and a cat*
@@ -564,7 +564,7 @@ Modifiers **immediately after** a phrase-ledegul join scope over the **whole coo
 Local modifiers stay **inside** each conjunct (after that conjunct's head, or `gl-` before the head). Do not put further matching-role conjunct heads after `P-JOIN` / `SHARED`.
 
 ```
-`zadagal zagadal zal gomonum.`
+`zodogol zagadal zal gomonum.`
 
 gloss: `z-dog` · `z-cat` · `zal` · `g-challenging`
 
@@ -572,7 +572,7 @@ gloss: `z-dog` · `z-cat` · `zal` · `g-challenging`
 ```
 
 ```
-`zadagal zagadal zam gogobul bazawan.`
+`zodogol zagadal zam gogobul bazawan.`
 
 gloss: `z-dog` · `z-cat` · `zam` · `g-ownership` · `b-grace`
 
@@ -657,7 +657,7 @@ VP `/v/`…**-n** spellings are [join-act verbs](join-extras.md#join-act-verbs).
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Sample the decisions this band adds: invert **`ua`**, universals vs *everything but*, SHARED after the join, islands, nesting, and clause **`xan`**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `adaga` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `unune` *water* · `omonu` *challenging* · `onuno` *onion* · `ugume` *cucumber* · `abele` *apple* · `ozowe` *wash* · `awala` *walk* · `urunu` *run* · `elebe` *sleep*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `unune` *water* · `omonu` *challenging* · `onuno` *onion* · `ugume` *cucumber* · `abele` *apple* · `ozowe` *wash* · `awala` *walk* · `urunu` *run* · `elebe` *sleep*
 
 #### English → Agalan
 
@@ -682,7 +682,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **4.** *(challenging dog) and (challenging cat)*
 
 ::: details Show answer
-`zadagal zagadal zal gomonum.`
+`zodogol zagadal zal gomonum.`
 :::
 
 **5.** *Azawan and (just water)*

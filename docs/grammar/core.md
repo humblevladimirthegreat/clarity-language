@@ -32,7 +32,7 @@ Agalan writing is **unicase**: use **lowercase** for every native letter. Capita
 
 When you are **not** filling a clause slot — lexicon head, list, title line, or a freestanding non-clausal turn — you may write the **root** with **no** role letter:
 
-`adagal.` · `uzumum.` · `azawan.` · `ululon.`
+`odogol.` · `uzumum.` · `azawan.` · `ululon.`
 
 #### Role letters (parts of speech)
 <a id="part-of-speech-prefixes"></a>
@@ -77,15 +77,15 @@ To say someone *is* a kind or has a property, use subject + adjective — there 
 the property is an adjective **label** on the subject — no linking verb.
 
 ```
-`zeberel gedegel.`
+`zeberel godogol.`
 
-gloss: `z-person` · `g-teacher`
+gloss: `z-person` · `g-dog`
 
-*A person is a teacher.*
+*A person is a dog.*
 ```
 
 ```
-`zadagal gelulul.`
+`zodogol gelulul.`
 
 gloss: `z-dog` · `g-blue`
 
@@ -95,12 +95,12 @@ gloss: `z-dog` · `g-blue`
 ### Adjectives (`/ɡ/`)
 <a id="adjectives-ɡ"></a>
 
-`/ɡ/` marks adjectives (and noun-ledegul “related to…” phrases). Using an adjective as the property label, with no `/v/`, is how *is a teacher* / *is blue* work (above).
+`/ɡ/` marks adjectives (and noun-ledegul “related to…” phrases). Using an adjective as the property label, with no `/v/`, is how *is a dog* / *is blue* work (above).
 
 **Default (after the noun):** the adjective follows the word it describes.
 
 ```
-`zadagal gelulul.`
+`zodogol gelulul.`
 
 gloss: `z-dog` · `g-blue`
 
@@ -237,20 +237,20 @@ gloss: `z-Azawan` · `d-Ululon` · `v-tell` · `d-next-clause`
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Use **published roots** only — no opaque `<>` loans.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `edege` *teacher* · `uzudu` *student* · `adaga` *dog* · `agada` *cat* · `abogo` *book* · `ohohu` *house* · `elulu` *blue* · `arede` *red* · `ele` *size* · `uzumu` smile → *happy* (**-m**) · `awala` *walk* · `urunu` *run* · `elebe` *sleep* · `ezehe` *tell* · `uwuru` *write* · `uzune` *sing* · `eje` *perception* (*see*) · `aju` *sit* · `adaza` *haste* · `adoro` *next clause* · `urugu` *because* (**-m** on `/h/`)
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `abogo` *book* · `ohohu` *house* · `elulu` *blue* · `arede` *red* · `ele` *size* · `uzumu` smile → *happy* (**-m**) · `awala` *walk* · `urunu` *run* · `elebe` *sleep* · `ezehe` *tell* · `uwuru` *write* · `uzunu` *sing* · `eje` *perception* (*see*) · `aju` *sit* · `adaza` *haste* · `adoro` *next clause* · `urugu` *because* (**-m** on `/h/`)
 
 #### English → Agalan
 
-**1.** *Azawan is a teacher.*
+**1.** *Azawan is a dog.*
 
 ::: details Show answer
-`zazawan gedegel.`
+`zazawan godogol.`
 :::
 
 **2.** *A dog is blue.*
 
 ::: details Show answer
-`zadagal gelulul.`
+`zodogol gelulul.`
 :::
 
 **3.** *Azawan walks.*
@@ -289,16 +289,16 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `jul vurunul.`
 :::
 
-**9.** *Is Ululon a student?*
+**9.** *Is Ululon a cat?*
 
 ::: details Show answer
-`jol zululon gezedul.`
+`jol zululon gagadal.`
 :::
 
 **10.** *Azawan tells Ululon that the dog runs.*
 
 ::: details Show answer
-`zazawan dululon dadorol vezehel zadagal vurunul.`
+`zazawan dululon dadorol vezehel zodogol vurunul.`
 :::
 
 **11.** *Azawan is happy because Ululon walks.*
@@ -309,10 +309,10 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 #### Agalan → English
 
-**1.** `zazawan gezedul.`
+**1.** `zazawan gagadal.`
 
 ::: details Show answer
-*Azawan is a student.*
+*Azawan is a cat.*
 :::
 
 **2.** `zagadal garedel.`
@@ -327,7 +327,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Ululon runs.*
 :::
 
-**4.** `zadagal gelel.`
+**4.** `zodogol gelel.`
 
 ::: details Show answer
 *A dog is big.*
@@ -339,7 +339,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Azawan sits.*
 :::
 
-**6.** `jel vuzunel.`
+**6.** `jel vuzunul.`
 
 ::: details Show answer
 *Sing!*
@@ -404,7 +404,7 @@ same **vowel series** as joins — **a** inventory / holds, **o** menenu / pick,
 Insert **l** as the second letter (`/ɡ/` + **l** + root + ending). The adjective comes **before** the noun it describes and attaches to the **next** eligible noun.
 
 ```
-`glelulul zadagal.`
+`glelulul zodogol.`
 
 gloss: `g-blue` · `z-dog`
 
@@ -413,7 +413,7 @@ gloss: `g-blue` · `z-dog`
 
 mid-word **l** = **lean left** — look araread to the next host. Only `/ɡ/` takes this **l**.
 
-The package is the same as after-the-noun order: plain `/ɡ/`, or complex `/ɡ/` + `/b/`, plus any following `/w/` stack. `/b/` and `/w/` still follow that `/ɡ/` (`glelulul wazebol zadagal` = *a loud-volume blue dog*). Before-the-noun order is optional style (meter, focus, comfort from your first language).
+The package is the same as after-the-noun order: plain `/ɡ/`, or complex `/ɡ/` + `/b/`, plus any following `/w/` stack. `/b/` and `/w/` still follow that `/ɡ/` (`glelulul wazebol zodogol` = *a loud-volume blue dog*). Before-the-noun order is optional style (meter, focus, comfort from your first language).
 
 ### Adverb topic and free-order ties
 <a id="adverb-topic-and-free-order-ties"></a>
@@ -479,7 +479,7 @@ A `/j/` **number** word is a call-out (*N more!*, score call, …), not clause f
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `uzudu` *student* · `adaga` *dog* · `agada` *cat* · `elulu` *blue* · `arede` *red* · `uzumu` smile → *happy* (**-m**) · `awala` *walk* · `urunu` *run* · `elebe` *sleep* · `eje` *perception* (*see*) · `uzune` *sing* · `aju` *sit* · `azebo` *loud volume* · `amala` *therefore* · `ezeba` *howedegur* / *although* · `ameno` *meanwhile* · `adoro` *next clause* · `urugu` *because* (**-m** on `/h/`)
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `elulu` *blue* · `arede` *red* · `uzumu` smile → *happy* (**-m**) · `awala` *walk* · `urunu` *run* · `elebe` *sleep* · `eje` *perception* (*see*) · `uzunu` *sing* · `aju` *sit* · `azebo` *loud volume* · `amala` *therefore* · `ezeba` *howedegur* / *although* · `ameno` *meanwhile* · `adoro` *next clause* · `urugu` *because* (**-m** on `/h/`)
 
 #### English → Agalan
 
@@ -498,7 +498,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **3.** *Please sing.*
 
 ::: details Show answer
-`jem vuzunel!`
+`jem vuzunul!`
 :::
 
 **4.** *Please don’t run.*
@@ -510,13 +510,13 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **5.** *A blue dog walks.* (adjective before the noun)
 
 ::: details Show answer
-`glelulul zadagal vawalal.`
+`glelulul zodogol vawalal.`
 :::
 
 **6.** *Azawan sees a loud blue dog.* (adjective before the noun)
 
 ::: details Show answer
-`zazawan glelulul wazebol dadagal vejel.`
+`zazawan glelulul wazebol dodogol vejel.`
 :::
 
 **7.** *Azawan walks. Therefore Ululon runs.*
@@ -539,10 +539,10 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Maybe Uhubun sleeps.*
 :::
 
-**2.** `jom zazawan gezedul?`
+**2.** `jom zazawan gagadal?`
 
 ::: details Show answer
-*Is Azawan a student, perhaps?*
+*Is Azawan a cat, perhaps?*
 :::
 
 **3.** `jem vajul!`

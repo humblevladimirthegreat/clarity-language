@@ -21,7 +21,7 @@ endings answer *how does this root enter the talk?* — new literal, new figurat
 **Exception (joins only):** on [join words](coordination.md) (phrase / VP / clause fences, plus [join-act](join-extras.md#join-act-verbs) / [join-relation](join-extras.md#join-relations) stems), **-n** is **not** a name. Everywhere else, **-n** is a proper object. Full join readings: [coordination.md](coordination.md) (Intermediate / Advanced).
 
 ```
-`zadagal gelulul.`
+`zodogol gelulul.`
 
 gloss: `z-dog` · `g-blue`
 
@@ -54,7 +54,7 @@ Prefer a published root when the English meaning matches; use **-m** when the ma
 
 Write **role letter + root + ending** as **one token** (`zazawan`). Full writing rules: [core.md § Writing words](core.md#orthography).
 
-1. **Role letter** — job in the sentence ([core.md](core.md#part-of-speech-prefixes)). Outside a sentence, omit it for a [citation](core.md#citation-forms) (`adagal`, `azawan`) — **`/z/` is not implied**.
+1. **Role letter** — job in the sentence ([core.md](core.md#part-of-speech-prefixes)). Outside a sentence, omit it for a [citation](core.md#citation-forms) (`odogol`, `azawan`) — **`/z/` is not implied**.
 2. **Left-bound `l`** — optional; **adjectives only** (`/ɡ/` → **`gl-`**) when the adjective sits **before** its host ([left-bound adjectives](core.md#left-bound-adjectives)). Not the same as word-final **-l**.
 3. **Root(s)** — compounds join with mid-word **`x`** ([phonology.md](phonology.md#phonotactics)).
 4. **Reference suffix** — **-l**, **-m**, **-n**, or **-r**.
@@ -71,14 +71,14 @@ Write **role letter + root + ending** as **one token** (`zazawan`). Full writing
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Choose **-l** (new literal), **-m** (new metaphor), **-n** (named), or **-r** (resume). Citation items are prefix-less.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `edege` *teacher* · `adaga` *dog* · `agada` *cat* · `abogo` *book* · `elulu` *blue* · `uzumu` smile → *happy* (**-m**) · `awala` *walk* · `elebe` *sleep* · `uwuru` *write* · `aju` *sit*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `odogo` *dog* · `agada` *cat* · `abogo` *book* · `elulu` *blue* · `uzumu` smile → *happy* (**-m**) · `awala` *walk* · `elebe` *sleep* · `uwuru` *write* · `aju` *sit*
 
 #### English → Agalan
 
 **1.** *A dog is blue.*
 
 ::: details Show answer
-`zadagal gelulul.`
+`zodogol gelulul.`
 :::
 
 **2.** *Azawan walks.*
@@ -87,10 +87,10 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zazawan vawalal.`
 :::
 
-**3.** *A teacher walks.*
+**3.** *A dog walks.*
 
 ::: details Show answer
-`zedegel vawalal.`
+`zodogol vawalal.`
 :::
 
 **4.** *Ululon is happy.*
@@ -125,7 +125,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 #### Agalan → English
 
-**1.** `zadagal gelulul.`
+**1.** `zodogol gelulul.`
 
 ::: details Show answer
 *A dog is blue.*
@@ -137,10 +137,10 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Azawan walks.*
 :::
 
-**3.** `zedegel vawalal.`
+**3.** `zodogol vawalal.`
 
 ::: details Show answer
-*A teacher walks.*
+*A dog walks.*
 :::
 
 **4.** `zululon guzumum.`
@@ -161,7 +161,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Azawan* (name, cited)
 :::
 
-**7.** `adagal`
+**7.** `odogol`
 
 ::: details Show answer
 *dog* (literal kind, cited)
@@ -207,28 +207,28 @@ A long official title (bureau, act, titled group) may also have a **handle**: on
 
 | Form | Shape | Example | Job |
 |------|--------|---------|-----|
-| **Handle** | one root + **-n** | `zedulon` | default talk, including first mention |
-| **Long title** | phrasal proper (`ROOT x ROOT` … + **-n**) | `zedegexulun` | full legal / ceremonial name of the same office |
+| **Handle** | one root + **-n** | `zabulon` | default talk, including first mention |
+| **Long title** | phrasal proper (`ROOT x ROOT` … + **-n**) | `zabogexulun` | full legal / ceremonial name of the same office |
 
 ```
-`zedulon vawalal.`
+`zabulon vawalal.`
 
-gloss: `z-Edulo` · `v-walk`
+gloss: `z-Abulo` · `v-walk`
 
-*Edulo walks.* (office handle on first mention)
+*Abulo walks.* (office handle on first mention)
 ```
 
 ```
-`zedegexulun.`
+`zabogexulun.`
 
-gloss: `z-teacher-x-courage`
+gloss: `z-book-x-courage`
 
-*Teacher-Courage* (full title of that office)
+*Book-Courage* (full title of that office)
 ```
 
-Resume the handle like any name. If its letter-pronoun (through the 2nd vowel) would pick the wrong antecedent, use the **full root** + **-r** (`zedulur`).
+Resume the handle like any name. If its letter-pronoun (through the 2nd vowel) would pick the wrong antecedent, use the **full root** + **-r** (`zabulur`).
 
-The office as referent takes **-n** in a noun slot (`zedulon`). A [mention](spans.md#loans) packages the **form** (`z{edulo}n` = *the word Edulo*). Foreign letter-names stay compact loans or opaque spans (`z<FBI>n`). How institutions **coin** a handle from a long title is Advanced ([handle coinage](#handle-coinage)).
+The office as referent takes **-n** in a noun slot (`zabulon`). A [mention](spans.md#loans) packages the **form** (`z{abulo}n` = *the word Abulo*). Foreign letter-names stay compact loans or opaque spans (`z<FBI>n`). How institutions **coin** a handle from a long title is Advanced ([handle coinage](#handle-coinage)).
 
 #### Verbs (`/v/`)
 
@@ -292,7 +292,7 @@ In [number words](numbers.md), the same four letters have **number-specific** me
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. The point is **-n** as a title on any role letter, one **`x`-compound** name, or an office **handle**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `abogo` *book* · `elulu` *blue* · `awala` *walk* · `urunu` *run* · `uzune` *sing* · `eje` *perception* (*see*) · `uwuru` *write* · `adaza` *haste* · `ozohu`×`alane` (name **Ozohuxalanen**) · `uzu`×`ogove` (label **Sushi-Coffee**) · `edege`×`ululo` (title **Teacher-Courage**, handle **Edulo**)
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `abogo` *book* · `elulu` *blue* · `awala` *walk* · `urunu` *run* · `uzunu` *sing* · `eje` *perception* (*see*) · `uwuru` *write* · `adaza` *haste* · `ozohu`×`alane` (name **Ozohuxalanen**) · `uzu`×`ogove` (label **Sushi-Coffee**) · `abogo`×`ululo` (title **Book-Courage**, handle **Abulo**)
 
 #### English → Agalan
 
@@ -317,7 +317,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **4.** *Uhubun sings the Sing* (that titled performance).
 
 ::: details Show answer
-`zuhubun vuzunen.`
+`zuhubun vuzunun.`
 :::
 
 **5.** *Azawan runs the Run* (that titled race).
@@ -344,16 +344,16 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zazawan glelulun dabogol vejel.`
 :::
 
-**9.** *Edulo walks.* (office handle, first mention)
+**9.** *Abulo walks.* (office handle, first mention)
 
 ::: details Show answer
-`zedulon vawalal.`
+`zabulon vawalal.`
 :::
 
-**10.** *Azawan sees Teacher-Courage.* (that office’s full title)
+**10.** *Azawan sees Book-Courage.* (that office’s full title)
 
 ::: details Show answer
-`zazawan dedegexulun vejel.`
+`zazawan dabogexulun vejel.`
 :::
 
 #### Agalan → English
@@ -376,7 +376,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Sushi-Coffee writes.*
 :::
 
-**4.** `zuhubun vuzunen.`
+**4.** `zuhubun vuzunun.`
 
 ::: details Show answer
 *Uhubun sings the Sing* (that titled performance).
@@ -406,16 +406,16 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan sees the Blue book* (named style, adjective before the noun).
 :::
 
-**9.** `zedulon vawalal.`
+**9.** `zabulon vawalal.`
 
 ::: details Show answer
-*Edulo walks.* (office handle)
+*Abulo walks.* (office handle)
 :::
 
-**10.** `zazawan dedegexulun vejel.`
+**10.** `zazawan dabogexulun vejel.`
 
 ::: details Show answer
-*Azawan sees Teacher-Courage.* (full title)
+*Azawan sees Book-Courage.* (full title)
 :::
 
 ## Advanced
@@ -428,17 +428,17 @@ Institutions mint a native handle from the long title’s **content roots** (ski
 
 | Step | Do |
 |------|----|
-| 1 | From each content root, take **first vowel + next consonant** (`edege` → `ed`, `alodo` → `al`, `ululo` → `ul`) |
+| 1 | From each content root, take **first vowel + next consonant** (`abogo` → `ab`, `alodo` → `al`, `ululo` → `ul`) |
 | 2 | Concatenate those pieces **without** mid-word **`x`** |
 | 3 | If the string ends in a consonant, add the **last root’s 2nd vowel** (the same cut as a [letter pronoun](pronouns.md)) |
 | 4 | If that root already names something else, **lengthen** (include the next vowel of a distinctive root) |
 
 ```
-`edege` × `ululo` → `ed` + `ul` + `o` → `edulo` → `zedulon`
+`abogo` × `ululo` → `ab` + `ul` + `o` → `abulo` → `zabulon`
 ```
 
 ```
-`edege` × `alodo` × `ululo` → `ed` + `al` + `ul` + `o` → `edalulo` → `zedalulon`
+`abogo` × `alodo` × `ululo` → `ab` + `al` + `ul` + `o` → `abalulo` → `zabalulon`
 ```
 
 Hearers treat the handle as a **name**. Reconstructing the long title is optional literacy, not part of parsing. Foreign acronyms stay loans / opaque spans; they do not use this harvest.
@@ -448,46 +448,46 @@ Hearers treat the handle as a **name**. Reconstructing the long title is optiona
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. Coin a handle from the title roots, or use that handle as a name.
 
-**Roots used here:** `edege` *teacher* · `ululo` *courage* · `alodo` *choice* · `azawa` · `awala` *walk* · `eje` *see*
+**Roots used here:** `abogo` *book* · `ululo` *courage* · `alodo` *choice* · `azawa` · `awala` *walk* · `eje` *see*
 
 #### English → Agalan
 
-**1.** Citation form of the handle for *teacher* × *courage*.
+**1.** Citation form of the handle for *book* × *courage*.
 
 ::: details Show answer
-`edulon`
+`abulon`
 :::
 
-**2.** *Edobulo walks.* (three-root harvest: teacher × choice × courage)
+**2.** *Abalulo walks.* (three-root harvest: book × choice × courage)
 
 ::: details Show answer
 `zedobulon vawalal.`
 :::
 
-**3.** *Azawan sees Edulo.*
+**3.** *Azawan sees Abulo.*
 
 ::: details Show answer
-`zazawan dedulon vejel.`
+`zazawan dabulon vejel.`
 :::
 
 #### Agalan → English
 
-**1.** `edulon`
+**1.** `abulon`
 
 ::: details Show answer
-*Edulo* (handle coined from *teacher* × *courage*, cited)
+*Abulo* (handle coined from *book* × *courage*, cited)
 :::
 
 **2.** `zedobulon vawalal.`
 
 ::: details Show answer
-*Edobulo walks.*
+*Abalulo walks.*
 :::
 
-**3.** `zazawan dedulon vejel.`
+**3.** `zazawan dabulon vejel.`
 
 ::: details Show answer
-*Azawan sees Edulo.*
+*Azawan sees Abulo.*
 :::
 
 ## See also

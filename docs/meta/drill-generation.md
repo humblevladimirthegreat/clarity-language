@@ -169,9 +169,7 @@ Reuse this bank unless the band already taught a different published root. Do no
 | Root | Sense in drills |
 |------|-----------------|
 | `azawa` / `ululo` / `uhubu` | names **Azawan** / **Ululon** / **Uhubun** |
-| `edege` | *teacher* |
-| `uzudu` | *student* |
-| `adaga` | *dog* |
+| `odogo` | *dog* |
 | `agada` | *cat* |
 | `abogo` | *book* |
 | `ohohu` | *house* |
@@ -184,7 +182,7 @@ Reuse this bank unless the band already taught a different published root. Do no
 | `elebe` | *sleep* |
 | `ezehe` | *tell* |
 | `uwuru` | *write* |
-| `uzune` | *sing* |
+| `uzunu` | *sing* |
 | `eje` | *see* |
 | `aju` | *sit* |
 | `adaza` | *haste* |
@@ -213,7 +211,7 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 6 | `reference-suffix.md` | **exists** | Choose **-l** vs **-m** vs **-n** vs **-r** on a content word; named person vs kind; citation prefix-less **…n** | Pointers to **-sh** / **`gl-`** / full **-r** algorithm: do **not** make those the item. One two-sentence resume item is enough if it matches the page example |
 | 7 | `pronouns.md` | **exists** | Letter vs full-root **-r**; specials **`ugobo` / `ebone` / `ahage` / `enenu`** (when the *role* is the point); **`orodo`** recap; clusivity **`ahage`** vs speaker **-sh** | **-sh** on specials / names for clusivity only. Default people still house names; specials only when testing specials |
 | 7 | `plurality.md` | **exists** | Associative **-sh** (`-lsh` / `-nsh` / `-rsh`); not agreement; person-role **-sh** (address set vs name…**-sh**) | **`ahage`** as the *not this* for inclusive *we*. **`ugobo`/`ebone`** only on person-role items |
-| 8 | `predication.md` | **exists** | Zero-copula property; classification `z… g…` vs role *noun* `zedegel`; identity **`gonunul` + `/b/`** | No general *to-be* `/v/`. Prefer house names + **SAME**; page-example roots (`odava` / `uzuba`) OK if already on the band |
+| 8 | `predication.md` | **exists** | Zero-copula property; classification `z… g…` vs kind *noun* `zodogol`; identity **`gonunul` + `/b/`** | No general *to-be* `/v/`. Prefer house names + **SAME**; page-example roots (`odava` / `uzuba`) OK if already on the band |
 | 9 | `coordination.md` | **exists** | Right-close fence; set vs rank vowels; **-l** vs **-m**; list / focus / bare starter forms; negation **`u`**; unspecified **-r** as *something* (not fill-ask) | No revisers, no restrictor `/h/` join readings, no comparatives SHARED scale as the point (that is comparatives) |
 | 10 | `questions.md` | **exists** | **`jol`/`jom`** yes/no vs fill-ask (join **-r**); fill-all; polar **`jael` / `juel` / `jaol`** vs **`jul`** vs join **`zul`** | **`jom`** is taught here as soft *ask* — allowed on this page edegun though full force twins are core Intermediate. Circumstance *when?* **`har`** is Intermediate on this page — do not use |
 | 11 | `revisers.md` | **exists** | Prefix-less **`al`/`am`/`ol`/`ul`** (and **e** / **n** as on the band); in-clause `A REV B`; discourse **`al`** *additionally* before a body | Not a join (`zam` vs `am`). Not **`x#e-` / `x#e`** (numbers discourse) |

@@ -82,7 +82,7 @@ Do **not** keep a heading whose only job is to say there is nothing here. Learne
 ## Examples use the house cast
 <a id="house-cast"></a>
 
-Example sentences name their people with the [house cast](glosses.md#house-cast): **`zazawan`** / **`zululon`** / **`zuhubun`** (three single-root names). Do not cast abstract roots as participants (`jal zazawan gedegel`, not “grace is more challenging than courage”). Keep abstract roots for the form being taught.
+Example sentences name their people with the [house cast](glosses.md#house-cast): **`zazawan`** / **`zululon`** / **`zuhubun`** (three single-root names). Do not cast abstract roots as participants (`jal zazawan godogol`, not “grace is more challenging than courage”). Keep abstract roots for the form being taught.
 
 ## Punctuation
 
@@ -177,11 +177,11 @@ When an example needs a **person**, use these nativized names (published root + 
 Default example block:
 
 ```
-`zazawan gedegel.`
+`zazawan godogol.`
 
-gloss: `z-grace` · `g-teacher`
+gloss: `z-grace` · `g-dog`
 
-*Azawan is a teacher.*
+*Azawan is a dog.*
 ```
 
 Short Eng ↔ Agalan checkpoints: end of a page band only — [translation-exercises.md](translation-exercises.md). Multi-turn practice belongs under [examples/](../examples/), not inside every grammar section.

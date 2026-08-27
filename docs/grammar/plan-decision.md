@@ -79,7 +79,7 @@ When unsure, prefer **`howoram`**. Omit **PLAN** when you are not framing intent
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Pick **PLAN** (`owora` + map-resolution ending) or **PREDICT** (`elezo`) — not a generic English *will*.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `owora` · `elezo` · `awala` · `uwuru` · `uzune` · `urunu` · `elebe` · `anunu`
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `owora` · `elezo` · `awala` · `uwuru` · `uzunu` · `urunu` · `elebe` · `anunu`
 
 #### English → Agalan
 
@@ -116,7 +116,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **6.** *Uhubun means to sing.* (direction only)
 
 ::: details Show answer
-`zuhubun howoram vuzunel.`
+`zuhubun howoram vuzunul.`
 :::
 
 #### Agalan → English
@@ -145,7 +145,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Forecast: it rains.*
 :::
 
-**5.** `zazawan howoram vuzunel.`
+**5.** `zazawan howoram vuzunul.`
 
 ::: details Show answer
 *Azawan means to sing.* (sketch plan)
@@ -190,7 +190,7 @@ Mark **how revisable a pick is** — temporary / open / settled — with one clo
 Ordinary content still available (`zegegel` *a checkmark*; `vegegel` *to check / tick`).
 
 ```
-`zululon hegegem vuzunel.`
+`zululon hegegem vuzunul.`
 
 gloss: `z-courage-proper` · `h-DECISION-modifiable` · `v-sing`
 
@@ -243,14 +243,14 @@ Always pick an ending on **DECISION**; unknown → **-m**. Deferral stays ordina
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Pick **DECISION** (`egege` + changeability), stack evidentiality on **PREDICT**, or stack **PLAN** with **DECISION**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `owora` · `elezo` · `egege` · `awala` · `uwuru` · `uzune` · `elebe` · `anunu` · `abawa` (*pattern*, evidential)
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `owora` · `elezo` · `egege` · `awala` · `uwuru` · `uzunu` · `elebe` · `anunu` · `abawa` (*pattern*, evidential)
 
 #### English → Agalan
 
 **1.** *Ululon has decided to sing, and can still change that.*
 
 ::: details Show answer
-`zululon hegegem vuzunel.`
+`zululon hegegem vuzunul.`
 :::
 
 **2.** *Uhubun has decided for good to sleep.*
@@ -285,7 +285,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 #### Agalan → English
 
-**1.** `zazawan hegegem vuzunel.`
+**1.** `zazawan hegegem vuzunul.`
 
 ::: details Show answer
 *Azawan has decided to sing — still open to revision.*

@@ -33,14 +33,14 @@ There is no phonemic voiced / unvoiced contrast; voiced is preferred so the voca
 |--------|-----|-------------|------------------|---------|
 | **h** | /ɦ/ | *ahead* | /h/ — *hat* | `huan` /ɦu.ɑn/ |
 | **w** | /w/ | *we* | | `wul` /wul/ |
-| **g** | /ɡ/ | *go* | /k/ — *kite* | `gedegel` |
+| **g** | /ɡ/ | *go* | /k/ — *kite* | `godogol` |
 | **d** | /d/ | *do* | /t/ — *toe* | `daxal` |
 | **j** | /j/ | *yes* (Germanic *j* as in *ja*) | | `jael` /ja.el/ |
 | **b** | /b/ | *be* | /p/ — *pay* | `bodol` |
 | **z** | /z/ | *zoo* | /s/ — *sea* | `zazawan` |
 | **m** | /m/ | *me* | | `zemogol` |
 | **n** | /n/ | *no* | | `na` /na/ |
-| **v** | /v/ | *vie* | /f/ — *fee* | `vuzunexel` |
+| **v** | /v/ | *vie* | /f/ — *fee* | `vuzunuxel` |
 | **l** | /l/ | *lie* | | `zel` /zel/ |
 | **r** | /ɹ/ | *red* | | `reu` /ɹeu/ |
 | **x** | /ʒ/ | *vision* (the *si*) | /ʃ/ — *shy* | `xuxul` |

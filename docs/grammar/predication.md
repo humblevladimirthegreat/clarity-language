@@ -1,7 +1,7 @@
 # Predication (classification and identity)
 <a id="predication"></a>
 
-How Agalan says English *to be* for **kind / role** (*Azawan is a teacher*) and **identity** (*Clark is Superman*) — without a general *to-be* verb.
+How Agalan says English *to be* for **kind / role** (*Azawan is a dog*) and **identity** (*Clark is Superman*) — without a general *to-be* verb.
 
 Why no copula: every job English gives *to be* already has its own shape here. Kind / role is subject + classifying adjective; identity is the closed **SAME** pattern ([below](#identity)); equal degree on a scale is the [equative](comparatives.md#equatives). A general *to-be* would blur those distinct jobs without adding a meaning of its own.
 
@@ -38,18 +38,18 @@ property sits on `/ɡ/` like any adjective; there is no light *be* verb between 
 
 | Pattern | Example | Reading |
 |---------|---------|---------|
-| Kind / role as `/ɡ/` | `zazawan gedegel` | *Azawan is a teacher* |
-| Named category / titled role | `zazawan gedegen` | *Azawan is Teacher* (proper designation) — [**-n** on `/ɡ/`](reference-suffix.md) |
+| Kind / role as `/ɡ/` | `zazawan godogol` | *Azawan is a dog* |
+| Named category / titled role | `zazawan godogon` | *Azawan is Dog* (proper designation) — [**-n** on `/ɡ/`](reference-suffix.md) |
 
 ```
-`zazawan gedegel.`
+`zazawan godogol.`
 
-gloss: `z-grace` · `g-teacher`
+gloss: `z-grace` · `g-dog`
 
-*Azawan is a teacher.*
+*Azawan is a dog.*
 ```
 
-**Role noun vs role adjective:** when you **refer** to a person-as-role, use a noun slot (`zedegel`). When you **ascribe** the role to a named or resumed host, use an adjective on that host (`zazawan gedegel`).
+**Kind noun vs kind adjective:** when you **refer** to the kind as a participant, use a noun slot (`zodogol`). When you **ascribe** the kind to a named or resumed host, use an adjective on that host (`zazawan godogol`).
 
 ### Identity (**SAME**)
 <a id="identity"></a>
@@ -88,7 +88,7 @@ gloss: `z-odava` · `g-SAME` · `b-uzuba`
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Property and kind sit on `/ɡ/`; identity uses **`gonunul`** plus `/b/` — not a *to-be* verb.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `edege` *teacher* · `uzudu` *student* · `adaga` *dog* · `agada` *cat* · `abogo` *book* · `elulu` *blue* · `uzumu` smile → *happy* (**-m**) · `omonu` *challenging* (**-m**) · `awala` *walk* · `elebe` *sleep* · `onunu` **SAME** · `odava` *Clark* · `uzuba` *Superman*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `abogo` *book* · `elulu` *blue* · `uzumu` smile → *happy* (**-m**) · `omonu` *challenging* (**-m**) · `awala` *walk* · `elebe` *sleep* · `onunu` **SAME** · `odava` *Clark* · `uzuba` *Superman*
 
 #### English → Agalan
 
@@ -98,28 +98,28 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zazawan gomonum.`
 :::
 
-**2.** *Azawan is a teacher.*
+**2.** *Azawan is a dog.*
 
 ::: details Show answer
-`zazawan gedegel.`
+`zazawan godogol.`
 :::
 
-**3.** *Ululon is a student.*
+**3.** *Ululon is a cat.*
 
 ::: details Show answer
-`zululon gezedul.`
+`zululon gagadal.`
 :::
 
-**4.** *The teacher walks.*
+**4.** *A dog walks.*
 
 ::: details Show answer
-`zedegel vawalal.`
+`zodogol vawalal.`
 :::
 
-**5.** *Azawan is Teacher.*
+**5.** *Azawan is Dog.*
 
 ::: details Show answer
-`zazawan gedegen.`
+`zazawan godogon.`
 :::
 
 **6.** *Clark is Superman.*
@@ -148,22 +148,22 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Azawan is challenging.*
 :::
 
-**2.** `zululon gedegel.`
+**2.** `zululon godogol.`
 
 ::: details Show answer
-*Ululon is a teacher.*
+*Ululon is a dog.*
 :::
 
-**3.** `zedegel velebel.`
+**3.** `zodogol velebel.`
 
 ::: details Show answer
-*The teacher sleeps.*
+*A dog sleeps.*
 :::
 
-**4.** `zazawan gedegen.`
+**4.** `zazawan godogon.`
 
 ::: details Show answer
-*Azawan is Teacher.*
+*Azawan is Dog.*
 :::
 
 **5.** `zodavan gonunul buzuban.`
@@ -178,16 +178,16 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Superman is Clark.*
 :::
 
-**7.** `zadagal gomonum.`
+**7.** `zodogol gomonum.`
 
 ::: details Show answer
 *The dog is challenging.*
 :::
 
-**8.** `zuhubun gezedul.`
+**8.** `zuhubun gagadal.`
 
 ::: details Show answer
-*Uhubun is a student.*
+*Uhubun is a cat.*
 :::
 
 ## Intermediate
@@ -197,11 +197,11 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 | Pattern | Example | Reading |
 |---------|---------|---------|
-| Soft / hedged class | plain classifying clause (`zazawan gedegel`) with a `/w/` hedge stacked on the classifying `/ɡ/` | *Azawan is something of a teacher* / *a teacher, sort of* |
-| Characterizing / habitual | `zazawan gedegel hual` | *Azawan is the teaching type* — [**hual**](restrictors.md) |
-| Negation | `zazawan gul gedegel` | *Azawan is not a teacher* — [negation **u**](coordination.md#negation-u) |
+| Soft / hedged class | plain classifying clause (`zazawan godogol`) with a `/w/` hedge stacked on the classifying `/ɡ/` | *Azawan is something of a dog* / *a dog, sort of* |
+| Characterizing / habitual | `zazawan godogol hual` | *Azawan is the dog type* — [**hual**](restrictors.md) |
+| Negation | `zazawan gul godogol` | *Azawan is not a dog* — [negation **u**](coordination.md#negation-u) |
 
-Values still stack on the classifying `/ɡ/` (`gedegel w-…xa…`) when the point is gratitude, judgment, or other need framing of that role — [values.md](values.md).
+Values still stack on the classifying `/ɡ/` (`godogol w-…xa…`) when the point is gratitude, judgment, or other need framing of that kind — [values.md](values.md).
 
 ### **SAME** endings and soft identity
 
@@ -229,7 +229,7 @@ Comparative claims as clause content use the same no-*be*-verb shape with a rank
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Classification packaging and **SAME** endings (**-l** / **-m** / **-n** / **-r**) are the point.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `edege` *teacher* · `uzudu` *student* · `onunu` **SAME** · `odava` *Clark* · `uzuba` *Superman* · `ebere` (band: *the person who…*) · `awala` *walk* · `elebe` *sleep*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `onunu` **SAME** · `odava` *Clark* · `uzuba` *Superman* · `ebere` (band: *the person who…*) · `awala` *walk* · `elebe` *sleep*
 
 #### English → Agalan
 
@@ -257,16 +257,16 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zeberel gonunul buzuban vawalal.`
 :::
 
-**5.** *The teacher is Azawan.*
+**5.** *The dog is Azawan.*
 
 ::: details Show answer
-`zedegel gonunul bazawan.`
+`zodogol gonunul bazawan.`
 :::
 
-**6.** *Azawan is a teacher.*
+**6.** *Azawan is a dog.*
 
 ::: details Show answer
-`zazawan gedegel.`
+`zazawan godogol.`
 :::
 
 **7.** *Clark is the same (as already ascribed) as Superman.*
@@ -295,10 +295,10 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *The person who is Superman sleeps.*
 :::
 
-**4.** `zedegel gonunul bazawan.`
+**4.** `zodogol gonunul bazawan.`
 
 ::: details Show answer
-*The teacher is Azawan.*
+*The dog is Azawan.*
 :::
 
 **5.** `zodavan gonunun buzuban.`
@@ -307,10 +307,10 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Clark is Superman (titled identity).*
 :::
 
-**6.** `zululon gedegel.`
+**6.** `zululon godogol.`
 
 ::: details Show answer
-*Ululon is a teacher.*
+*Ululon is a dog.*
 :::
 
 **7.** `zodavan gonunur buzuban.`

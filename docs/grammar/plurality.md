@@ -85,7 +85,7 @@ Special pronouns keep **-sh** available, but the default is **not** uniform asso
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `agada` *cat* · `adaga` *dog* · `uzumu` smile → *happy* (**-m**) · `ele` *size* / *big* · `awala` *walk* · `aju` *sit* · `urunu` *run* · `elebe` *sleep* · `eje` *see* · `aha` inclusive *we* · `ugobo` speaker · `edone` listener
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `agada` *cat* · `odogo` *dog* · `uzumu` smile → *happy* (**-m**) · `ele` *size* / *big* · `awala` *walk* · `aju` *sit* · `urunu` *run* · `elebe` *sleep* · `eje` *see* · `aha` inclusive *we* · `ugobo` speaker · `edone` listener
 
 #### English → Agalan
 
@@ -134,7 +134,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **8.** *Azawan sees some dogs.*
 
 ::: details Show answer
-`zazawan dadagalsh vejel.`
+`zazawan dodogolsh vejel.`
 :::
 
 #### Agalan → English
@@ -175,7 +175,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Speaker and associates (not you) walk.*
 :::
 
-**7.** `zadagalsh gelel.`
+**7.** `zodogolsh gelel.`
 
 ::: details Show answer
 *Some dogs are big.*
@@ -219,9 +219,9 @@ On `/v/`, **-sh** marks **collective doing**: the edegunt is **one shared act**,
 
 | Example | Gloss |
 |---------|-------|
-| `zazawansh vuzunel` | *Azawan and associates sing* (together or each, or don’t care) |
-| `zazawansh vuzunelsh` | *they sing as one outing* |
-| `zazawan vuzunelsh` | *Azawan sings jointly* (not a solo) |
+| `zazawansh vuzunul` | *Azawan and associates sing* (together or each, or don’t care) |
+| `zazawansh vuzunulsh` | *they sing as one outing* |
+| `zazawan vuzunulsh` | *Azawan sings jointly* (not a solo) |
 | `zahadan vawalalsh` | *the team walks as one unit* |
 
 Count (*three times*) and habit (*always*) stay clause framing: [numbers](numbers.md) under `/h/`, or **`hual`**. **-rsh** on `/v/` resumes a prior **collective** doing (*still as one shared act*).
@@ -280,7 +280,7 @@ Quantity `>1` is digitless **`g+`** (may co-occur with noun **-lsh**: `zagadalsh
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `olebo` *file-box* · `uduru` *heavy* · `ahada` *team* · `umola` *vast* · `uzudu` *student* · `uzune` *sing* · `awala` *walk* · `urunu` *run* · `aha` inclusive *we* · `ugobo` speaker · `edone` listener
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `olebo` *file-box* · `uduru` *heavy* · `ahada` *team* · `umola` *vast* · `agada` *cat* · `uzunu` *sing* · `awala` *walk* · `urunu` *run* · `aha` inclusive *we* · `ugobo` speaker · `edone` listener
 
 #### English → Agalan
 
@@ -311,19 +311,19 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **5.** *Azawan sings jointly (not a solo).*
 
 ::: details Show answer
-`zazawan vuzunelsh.`
+`zazawan vuzunulsh.`
 :::
 
 **6.** *Azawan and associates sing as one outing.*
 
 ::: details Show answer
-`zazawansh vuzunelsh.`
+`zazawansh vuzunulsh.`
 :::
 
-**7.** *Hey, students!*
+**7.** *Hey, cats!*
 
 ::: details Show answer
-`jezedulsh.`
+`jagadalsh.`
 :::
 
 **8.** *Hey, you all (the addressees)!*
@@ -352,22 +352,22 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *The team is vast.*
 :::
 
-**4.** `zazawan vuzunelsh.`
+**4.** `zazawan vuzunulsh.`
 
 ::: details Show answer
 *Azawan sings jointly.* / *Azawan sings (not a solo).*
 :::
 
-**5.** `zazawansh vuzunelsh.`
+**5.** `zazawansh vuzunulsh.`
 
 ::: details Show answer
 *Azawan and associates sing as one outing.*
 :::
 
-**6.** `jezedulsh.`
+**6.** `jagadalsh.`
 
 ::: details Show answer
-*Hey, students!*
+*Hey, cats!*
 :::
 
 **7.** `jedonensh.`

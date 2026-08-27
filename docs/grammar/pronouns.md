@@ -115,7 +115,7 @@ gloss: `z-speaker` · `v-tell` · `d-grace` · `d-next-clause` · `z-courage` ·
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `adaga` *dog* · `adara` *dragon* · `abogo` *book* · `awala` *walk* · `aju` *sit* · `elebe` *sleep* · `urunu` *run* · `eje` *see* · `ezehe` *tell* · `edabu` *depart* · `ele` *size* / *big* · `ugobo` *speaker* · `edone` *listener* · `aha` *interlocutors* · `enenu` *generic person* · `adoro` *next clause*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `odogo` *dog* · `adara` *dragon* · `abogo` *book* · `awala` *walk* · `aju` *sit* · `elebe` *sleep* · `urunu` *run* · `eje` *see* · `ezehe` *tell* · `edabu` *depart* · `ele` *size* / *big* · `ugobo` *speaker* · `edone` *listener* · `aha` *interlocutors* · `enenu` *generic person* · `adoro` *next clause*
 
 #### English → Agalan
 
@@ -128,7 +128,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **2.** *A dog walks. A book is big. The dog sits.*
 
 ::: details Show answer
-`zadagal vawalal. zabogol gelel. zadagar vajul.`
+`zodogol vawalal. zabogol gelel. zodogor vajul.`
 :::
 
 **3.** *I walk.*
@@ -175,7 +175,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Ululon walks. He sits.*
 :::
 
-**2.** `zadagal velebel. zadaral gelel. zadar vawalal.`
+**2.** `zodogol velebel. zadaral gelel. zadar vawalal.`
 
 ::: details Show answer
 *A dog sleeps. A dragon is big. The dragon walks.*
@@ -205,7 +205,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Someone walks.*
 :::
 
-**7.** `zazawan dululon dadorol vezehel zadagal vurunul.`
+**7.** `zazawan dululon dadorol vezehel zodogol vurunul.`
 
 ::: details Show answer
 *Azawan tells Ululon that the dog runs.*
@@ -470,7 +470,7 @@ Each subsection is an **antecedent** role; table rows are the **pronoun** role. 
 
 Short drills on this Advanced band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `adaga` *dog* · `awala` *walk* · `urunu` *run* · `aju` *sit* · `elebe` *sleep* · `ele` *size* / *big* · `uzumu` smile → *happy* (**-m**) · `adaza` *haste*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `odogo` *dog* · `awala` *walk* · `urunu` *run* · `aju` *sit* · `elebe` *sleep* · `ele` *size* / *big* · `uzumu` smile → *happy* (**-m**) · `adaza` *haste*
 
 #### English → Agalan
 
@@ -483,7 +483,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 **2.** *A dog walks. That action is big.*
 
 ::: details Show answer
-`zadagal vawalal. zawalar gelel.`
+`zodogol vawalal. zawalar gelel.`
 :::
 
 **3.** *Azawan walks. By doing so, Ululon sits.*
@@ -530,7 +530,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 *Azawan walks in haste. That haste is big.*
 :::
 
-**5.** `zadagal vajul. zazawan vogor.`
+**5.** `zodogol vajul. zazawan vogor.`
 
 ::: details Show answer
 *A dog sits. Azawan does that with it.*

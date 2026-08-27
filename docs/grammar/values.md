@@ -166,7 +166,7 @@ gloss: `z-meeting` · `w-autonomy-unmet-temporary`
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `edege` *teacher* · `abogo` *book* · `ohohu` *house* · `awala` *walk* · `ezehe` *tell* · `uzune` *sing* · `aweru` *gift* · `azudo` *meeting* · `alodo` *autonomy* · `olozo` *competence* · `onogo` *relatedness* · `awero` *pleasure* · `uhuhe` *survival* · `ega` *unspecified need*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `abogo` *book* · `ohohu` *house* · `awala` *walk* · `ezehe` *tell* · `uzunu` *sing* · `aweru` *gift* · `azudo` *meeting* · `alodo` *autonomy* · `olozo` *competence* · `onogo` *relatedness* · `awero` *pleasure* · `uhuhe` *survival* · `ega` *unspecified need*
 
 #### English → Agalan
 
@@ -215,7 +215,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **8.** *Uhubun sings — survival ought to be protected (bound).*
 
 ::: details Show answer
-`zuhubun vuzunel huzuhuxol.`
+`zuhubun vuzunul huzuhuxol.`
 :::
 
 #### Agalan → English
@@ -262,10 +262,10 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *The house serves survival (physical channel).*
 :::
 
-**8.** `zedegel wolozoxum.`
+**8.** `zabogol wolozoxum.`
 
 ::: details Show answer
-*The teacher costs competence (modifiable).*
+*The book costs competence (modifiable).*
 :::
 
 ## Intermediate
@@ -346,7 +346,7 @@ Prefer **-m** on **`xu` / `xe` / `xo`** when that table’s dimension is unclear
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `abogo` *book* · `ohohu` *house* · `awala` *walk* · `ezehe` *tell* · `uzune` *sing* · `uwuru` *write* · `aju` *sit* · `aweru` *gift* · `azudo` *meeting* · `alodo` *autonomy* · `olozo` *competence* · `onogo` *relatedness* · `awero` *pleasure* · `uhuhe` *survival* · **`hual`** (*always*)
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `abogo` *book* · `ohohu` *house* · `awala` *walk* · `ezehe` *tell* · `uzunu` *sing* · `uwuru` *write* · `aju` *sit* · `aweru` *gift* · `azudo` *meeting* · `alodo` *autonomy* · `olozo` *competence* · `onogo` *relatedness* · `awero` *pleasure* · `uhuhe` *survival* · **`hual`** (*always*)
 
 #### English → Agalan
 
@@ -365,7 +365,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **3.** *Uhubun sings for relatedness (internal motive, as usual).*
 
 ::: details Show answer
-`zuhubun vuzunel honogoxem hual.`
+`zuhubun vuzunul honogoxem hual.`
 :::
 
 **4.** *Azawan sits for relatedness (protective motive).*
@@ -412,7 +412,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Ululon walks for relatedness (circumstantial motive).*
 :::
 
-**3.** `zuhubun vuzunel honogoxem hual.`
+**3.** `zuhubun vuzunul honogoxem hual.`
 
 ::: details Show answer
 *Uhubun sings for relatedness (internal motive, as usual).*
@@ -490,14 +490,14 @@ Competence (`olozo`) and relatedness (`onogo`) shown for readability; same endin
 - Ordinary **-l / -m** (literal / metaphorical) do not mean met / unmet on these compounds.
 - Value second halves are bare vowels **`a` / `e` / `o` / `u`** inside a compound — not prefix-less revisers (`al`, `ul`, …) and not restrictor joins (`hal`, …).
 - Plural **-sh** stays unused on `/h/` `/w/` ([plurality](plurality.md)).
-- **Incapability** compounds onto the **activity/property host** (`vuzunexul`) or fallback **`egera`** — [ability](ability.md#ability) — not onto need compounds (`holozoxul` remains unmet competence).
+- **Incapability** compounds onto the **activity/property host** (`vuzunuxul`) or fallback **`egera`** — [ability](ability.md#ability) — not onto need compounds (`holozoxul` remains unmet competence).
 
 ### Translation practice
 <a id="translation-practice-advanced"></a>
 
 Short drills on this Advanced band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `ezehe` *tell* · `edege` *teacher* · `azudo` *meeting* · `olozo` *competence* · `onogo` *relatedness* · `awero` *pleasure*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `ezehe` *tell* · `odogo` *dog* · `azudo` *meeting* · `olozo` *competence* · `onogo` *relatedness* · `awero` *pleasure*
 
 #### English → Agalan
 
@@ -525,10 +525,10 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 `hawerol.`
 :::
 
-**5.** *Azawan is a teacher — relatedness unmet (modifiable).*
+**5.** *Azawan is a dog — relatedness unmet (modifiable).*
 
 ::: details Show answer
-`zazawan gedegel honogoxum.`
+`zazawan godogol honogoxum.`
 :::
 
 #### Agalan → English

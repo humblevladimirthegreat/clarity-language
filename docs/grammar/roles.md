@@ -39,30 +39,30 @@ Vowel echo only — not reviser or join readings. Mid-word **`x`** map: [x-compo
 
 | Ending | Reading |
 |--------|---------|
-| **-l** | Indefinite / kind — *a fighter*, *fighters as a type* (`zaxozowol`) |
+| **-l** | Indefinite / kind — *a fighter*, *fighters as a type* (`zaxuvugul`) |
 | **-m** | Soft / hedged role |
 | **-n** | Titled / epithet role label (rare) |
 | **-r** | Definite — participant of the **most recent matching** edegunt (**`a`/`u`**) or relation (**`o`**) for that ROOT |
 
 **-r** resolution: match ROOT to the most recent verb, edegunt noun, or relation word with that stem (including a ROOT half inside a prior role compound). ROLE picks that frame’s agent, patient, or `/b/` pole — including when the participant was only introduced as [unspecified-member](coordination.md#unspecified-member-r-phrase) **`zar`** / **`dar`** / ….
 
-Bare edegunt noun stays the edegunt: `zozowol` / `zozowor` = *an / that fight*, not a participant. Cross-PoS content **-r** from a verb still resumes the [edegunt](pronouns.md), not the agent — use **`ax`/`ux`** for participants.
+Bare edegunt noun stays the edegunt: `zuvugul` / `zuvugur` = *an / that fight*, not a participant. Cross-PoS content **-r** from a verb still resumes the [edegunt](pronouns.md), not the agent — use **`ax`/`ux`** for participants.
 
 ```
-`zar dugobon vozowol.`
-`zaxozowor vurunul.`
+`zar dugobon vuvugul.`
+`zaxuvugur vurunul.`
 
-gloss: `z-someone` · `d-me` · `v-conflict` · `z-conflict-agent-r` · `v-run`
+gloss: `z-someone` · `d-me` · `v-fight` · `z-fight-agent-r` · `v-run`
 
 *Someone fought me. The fighter fled.*
 ```
 
 | Agalan | Gloss |
 |---------|--------|
-| `zaxozowol` | *a fighter* (kind; no discourse edegunt required) |
-| `duxozowor` | *the one fought* (as object now) |
+| `zaxuvugul` | *a fighter* (kind; no discourse edegunt required) |
+| `duxuvugur` | *the one fought* (as object now) |
 | `zoxonogor` | *that bond-argument* (reltum of salient `…onogol b-…`) |
-| `zozowor` | *that fight* (edegunt — not agent) |
+| `zuvugur` | *that fight* (edegunt — not agent) |
 
 **Key contrasts:**
 
@@ -71,7 +71,7 @@ gloss: `z-someone` · `d-me` · `v-conflict` · `z-conflict-agent-r` · `v-run`
 | Role compound | Participant derived from edegunt/relation root |
 | Content **-r** on edegunt | The edegunt / doing itself ([pronouns](pronouns.md)) |
 | **`zar`** / **`dar`** | Unspecified member introduce; prefer role **-r** once the edegunt is named |
-| Ability `vozowoxul` | Can’t fight (fixed) — **ROOT x vowel**, not ROLE vowel left of `x` |
+| Ability `vuvuguxul` | Can’t fight (fixed) — **ROOT x vowel**, not ROLE vowel left of `x` |
 | Span `daxal` / `duxal` | Quote / opaque open — **vowel x vowel**, not ROLE x root |
 
 ROLE is **`a`/`u`/`o`** only; wrong ROOT type for a ROLE is illegal. Plural **-sh** on noun-slot role compounds follows ordinary [plurality](plurality.md) for that PoS.
@@ -81,14 +81,14 @@ ROLE is **`a`/`u`/`o`** only; wrong ROOT type for a ROLE is illegal. Plural **-s
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `agada` *cat* · `uzumu` smile → *happy* (**-m**) · `awala` *walk* · `urunu` *run* · `elebe` *sleep* · `uzune` *sing* · `eje` *see* · `uwuru` *write* · `aju` *sit* · `ozowo` *conflict* / *fight* · `onogo` *bond*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `agada` *cat* · `uzumu` smile → *happy* (**-m**) · `awala` *walk* · `urunu` *run* · `elebe` *sleep* · `uzunu` *sing* · `eje` *see* · `uwuru` *write* · `aju` *sit* · `uvugu` *fight* · `onogo` *bond*
 
 #### English → Agalan
 
 **1.** *A fighter runs.*
 
 ::: details Show answer
-`zaxozowol vurunul.`
+`zaxuvugul vurunul.`
 :::
 
 **2.** *Azawan walks. The walker sleeps.*
@@ -100,7 +100,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **3.** *Ululon sings. The singer sits.*
 
 ::: details Show answer
-`zululon vuzunel. zaxuzuner vajul.`
+`zululon vuzunul. zaxuzunur vajul.`
 :::
 
 **4.** *Azawan sees a cat. The one seen runs.*
@@ -118,13 +118,13 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **6.** *Azawan is a fighter, in a manner of speaking.*
 
 ::: details Show answer
-`zazawan zaxozowom.`
+`zazawan zaxuvugum.`
 :::
 
 **7.** *Azawan sees a fight.*
 
 ::: details Show answer
-`zazawan dozowol vejel.`
+`zazawan duvugul vejel.`
 :::
 
 **8.** *Azawan is bound to Ululon. That bond-argument runs.*
@@ -141,7 +141,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *A runner walks.*
 :::
 
-**2.** `zululon vuzunel. zaxuzuner velebel.`
+**2.** `zululon vuzunul. zaxuzunur velebel.`
 
 ::: details Show answer
 *Ululon sings. The singer sleeps.*
@@ -159,25 +159,25 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *A walker is happy.*
 :::
 
-**5.** `zazawan vozowol. zaxozowor vurunul.`
+**5.** `zazawan vuvugul. zaxuvugur vurunul.`
 
 ::: details Show answer
 *Azawan fought. The fighter ran.*
 :::
 
-**6.** `zuhubun dululon vozowol. duxozowor vawalal.`
+**6.** `zuhubun dululon vuvugul. duxuvugur vawalal.`
 
 ::: details Show answer
 *Uhubun fought Ululon. The one fought walks.*
 :::
 
-**7.** `zazawan dozowol vejel.`
+**7.** `zazawan duvugul vejel.`
 
 ::: details Show answer
 *Azawan sees a fight.*
 :::
 
-**8.** `zazawan zaxozowom.`
+**8.** `zazawan zaxuvugum.`
 
 ::: details Show answer
 *Azawan is a fighter, in a manner of speaking.*
@@ -306,8 +306,8 @@ The **`/b/`** argument is the landmark, not the viewpoint. Put the facing being 
 | `gewezexahan` | *our left* (shared facing) |
 | `gavuzal` / `havuzal` | gravity *up* |
 | `xamalal` | discourse *therefore* — *progress*, not east and not body-right |
-| Role `zaxozowor` | participant — ROLE vowel left of **`x`**, not DIR |
-| Ability `vuzunexul` | stance vowel right of **`x`**, not a person root |
+| Role `zaxuvugur` | participant — ROLE vowel left of **`x`**, not DIR |
+| Ability `vuzunuxul` | stance vowel right of **`x`**, not a person root |
 
 
 ### Translation practice
@@ -315,7 +315,7 @@ The **`/b/`** argument is the landmark, not the viewpoint. Put the facing being 
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `ohohu` *house* · `agada` *cat* · `adaga` *dog* · `abogo` *book* · `awala` *walk* · `eweze` *west* / body *left* · `amala` *east* / body *right* · `ebule` *northwest* / *forward-left* · `avuza` *up* (gravity) · `erede` *tree* · `edone` *listener* · `ugobo` *speaker*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `ohohu` *house* · `agada` *cat* · `odogo` *dog* · `abogo` *book* · `awala` *walk* · `eweze` *west* / body *left* · `amala` *east* / body *right* · `ebule` *northwest* / *forward-left* · `avuza` *up* (gravity) · `erede` *tree* · `edone` *listener* · `ugobo` *speaker*
 
 #### English → Agalan
 
@@ -346,7 +346,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **5.** *The dog on Uhubun’s forward-left.*
 
 ::: details Show answer
-`zadagal gebulexuhubun.`
+`zodogol gebulexuhubun.`
 :::
 
 **6.** *The book is on Azawan’s left of the tree.*

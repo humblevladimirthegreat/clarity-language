@@ -57,7 +57,7 @@ A REV B
 - Allowed **inside** a conjunct as local repair — not as a substitute for the join (`zam` / `vam` / …).
 
 ```
-`zadagalsh am zagadal.`
+`zodogolsh am zagadal.`
 
 gloss: `z-dog-sh` · `am` · `z-cat`
 
@@ -110,14 +110,14 @@ Adversative *but* / *howedegur*, *therefore*, *meanwhile*, and standalone *next*
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `adaga` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `ahada` *team* · `edege` *teacher* · `uzumu` smile → *happy* (**-m**) · `ele` *size* · `awala` *walk* · `elebe` *sleep*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `ahada` *team* · `odogo` *dog* · `uzumu` smile → *happy* (**-m**) · `ele` *size* · `awala` *walk* · `elebe` *sleep*
 
 #### English → Agalan
 
 **1.** *Dogs, including a cat among others.*
 
 ::: details Show answer
-`zadagalsh am zagadal.`
+`zodogolsh am zagadal.`
 :::
 
 **2.** *Coffee fully replaces tea.*
@@ -141,7 +141,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **5.** *A dog and a cat.* (list join, not a reviser)
 
 ::: details Show answer
-`zadagal zagadal zam.`
+`zodogol zagadal zam.`
 :::
 
 **6.** *Azawan is happy — or rather, big.*
@@ -156,15 +156,15 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `ol zululon velebel.`
 :::
 
-**8.** *In other words, Uhubun is a teacher.*
+**8.** *In other words, Uhubun is a dog.*
 
 ::: details Show answer
-`el zuhubun gedegel.`
+`el zuhubun godogol.`
 :::
 
 #### Agalan → English
 
-**1.** `zadagalsh am zagadal.`
+**1.** `zodogolsh am zagadal.`
 
 ::: details Show answer
 *Dogs, including a cat among others.*
@@ -194,13 +194,13 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *In other words, Ululon is happy.*
 :::
 
-**6.** `zadagalsh al zagadal.`
+**6.** `zodogolsh al zagadal.`
 
 ::: details Show answer
 *Dogs, including only a cat.*
 :::
 
-**7.** `zadagal zagadal zam.`
+**7.** `zodogol zagadal zam.`
 
 ::: details Show answer
 *A dog and a cat.*
@@ -274,7 +274,7 @@ gloss: `g-happy` · `el` · `g-calm`
 *Content* as the precise reading (rather than *happy*).
 ```
 
-**Binding with joins:** a revision chain starting at A consumes following same-slot sides paired by **REV**, tighter than list absorb — so `zadagal ol zagadal zuhurul zam` = *(dog instead of cat) and bird*.
+**Binding with joins:** a revision chain starting at A consumes following same-slot sides paired by **REV**, tighter than list absorb — so `zodogol ol zagadal zuhurul zam` = *(dog instead of cat) and bird*.
 
 ### Discourse placements
 <a id="discourse-on-x-continue"></a>
@@ -308,7 +308,7 @@ gloss: `j-grace` · `al` · `z-speaker` · `v-walk`
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `adaga` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `ahada` *team* · `uzumu` smile → *happy* (**-m**) · `eru` *calm* · `awala` *walk* · `urunu` *run* · `amala` *therefore*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `ahada` *team* · `uzumu` smile → *happy* (**-m**) · `eru` *calm* · `awala` *walk* · `urunu` *run* · `amala` *therefore*
 
 #### English → Agalan
 
@@ -432,7 +432,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 ### Prefix-less particles only
 
-Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** are **only** these revisers (in-clause or discourse by placement). They are **not** [citation forms](core.md#citation-forms). Prefixed + ending forms of the same vowels (`zal`, `zam`, `val`, …) remain [joins](coordination.md#join-series-ending-shared) only. Whole-word **a** / **e** / **o** / **u** are not reviser forms and not legal words. Longer prefix-less **root + ending** outside a sentence (`adagal`, `ugobon`, …) — including as a lone word or inside a [mention span](spans.md#writing) — is citation, not revision.
+Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** are **only** these revisers (in-clause or discourse by placement). They are **not** [citation forms](core.md#citation-forms). Prefixed + ending forms of the same vowels (`zal`, `zam`, `val`, …) remain [joins](coordination.md#join-series-ending-shared) only. Whole-word **a** / **e** / **o** / **u** are not reviser forms and not legal words. Longer prefix-less **root + ending** outside a sentence (`odogol`, `ugobon`, …) — including as a lone word or inside a [mention span](spans.md#writing) — is citation, not revision.
 
 ## See also
 

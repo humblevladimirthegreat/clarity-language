@@ -257,7 +257,7 @@ Prefer floating `/h/`; **RULE** is complex `/h/` + `/b/` scope when the frame is
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. Pair a domain fence (`hual` / `zual` / `zuam`) with an exceptionlessness warrant — not mechanism **`hegegam`**, and not domain softness standing in for a warrant.
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` · `ewono` COMMON · `abulu` UNCOUNTERED · `idido` FORMAL · `afafa` NATURAL · `ebebe` RULE · `ahama` *chess* · `ezuda` *square* · `agada` *cat* · `adaga` *dog* · `abogo` *book* · `edege` *teacher* · `awala` *walk* · `uzune` *sing* · `elebe` *sleep* · `aju` *sit* · `eje` *see* · `urunu` *run* · `abawa` evidential *pattern*
+**Roots used here:** `azawa` / `ululo` / `uhubu` · `ewono` COMMON · `abulu` UNCOUNTERED · `idido` FORMAL · `afafa` NATURAL · `ebebe` RULE · `ahama` *chess* · `ezuda` *square* · `agada` *cat* · `odogo` *dog* · `abogo` *book* · `awala` *walk* · `uzunu` *sing* · `elebe` *sleep* · `aju` *sit* · `eje` *see* · `urunu` *run* · `abawa` evidential *pattern*
 
 #### English → Agalan
 
@@ -288,7 +288,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 **5.** *Azawan always sings, under chess.*
 
 ::: details Show answer
-`zazawan hual vuzunel hebebel bahamal.`
+`zazawan hual vuzunul hebebel bahamal.`
 :::
 
 **6.** *Every cat that comes to mind, usually.*
@@ -311,13 +311,13 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 *Azawan always sees, as far as checked.*
 :::
 
-**3.** `zual gedegel hididol.`
+**3.** `zual godogol hididol.`
 
 ::: details Show answer
-*Every teacher, by definition.*
+*Every dog, by definition.*
 :::
 
-**4.** `zadagal hual velebel hafafal habawam.`
+**4.** `zodogol hual velebel hafafal habawam.`
 
 ::: details Show answer
 *The dog always sleeps, by natural necessity* (plus a trail of cases).

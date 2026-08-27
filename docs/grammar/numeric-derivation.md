@@ -310,8 +310,8 @@ Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`zahaxre
 | `j+0el` | *Annihilate!* (free) |
 | `zohohul g_12` | room numbered 12 (ordinary) |
 | `zohohuxrowodul` | room-12 as coded kind |
-| Ability `vuzunexul` | can’t sing (fixed) — stance vowel, not NUM |
-| Role `zaxozowor` | the fighter — ROLE left of `x` |
+| Ability `vuzunuxul` | can’t sing (fixed) — stance vowel, not NUM |
+| Role `zaxuvugur` | the fighter — ROLE left of `x` |
 | Stance `…xe…` | motive (needs) / temporary *can’t* (ability) — not essence |
 
 `NUM` has **no** PoS and **no** number ending; the compound’s ending is ordinary reference-suffix on ROOT. Digit morphs are single-digit **`+N` / `-N`** (scalar) or **`#N`** (ordinal); markers supply the pronounceable vowel (**`ra`** / **`ru`** / **`re`**). Free end-relative **`reu`** / **`#-`** is not a derivation morph. Digitless **`+`/`-`/`#`** = kind metaphysics; digitless **`_`** = catalog metaphysics ([infinite labels](#infinite-labels)); zero×exp morphs = [zero-exponent derivation](#zero-exponent-derivation) (including **`±0e-1`** / **`#0e`**). Plural **-sh** on noun-slot numeric derivatives follows ordinary [plurality](plurality.md) for that PoS.

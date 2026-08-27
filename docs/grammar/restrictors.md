@@ -85,7 +85,7 @@ Same fence rules as other phrase slots: right close only, SHARED immediately aft
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Restrictors mark **when the host applies** — not co-manner *and*. Bare **`hal`** / **`hual`** are *never* / *always*; with a conjunct they are *only when…* / *always except when…*.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `awala` *walk* · `urunu` *run* · `uzune` *sing* · `elebe` *sleep* · `uzumu` smile → *happy* (**-m**) · `uruna` *rain* · `udunu` *night* · `adaza` *haste* · `azebo` *quiet*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `awala` *walk* · `urunu` *run* · `uzunu` *sing* · `elebe` *sleep* · `uzumu` smile → *happy* (**-m**) · `uruna` *rain* · `udunu` *night* · `adaza` *haste* · `azebo` *quiet*
 
 #### English → Agalan
 
@@ -104,7 +104,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **3.** *Uhubun always sings.*
 
 ::: details Show answer
-`zuhubun vuzunel hual.`
+`zuhubun vuzunul hual.`
 :::
 
 **4.** *Azawan is never happy.*
@@ -151,7 +151,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Ululon never walks.*
 :::
 
-**3.** `zuhubun vuzunel hual.`
+**3.** `zuhubun vuzunul hual.`
 
 ::: details Show answer
 *Uhubun always sings.*
@@ -260,7 +260,7 @@ Necessity-style *never without…* uses **`hal`** (and join-relation **`huan`**)
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Use the **circumstance inventory** (exclusive / inclusive / *not when* / ranked occasions / unspecified-member with conjuncts). Next-clause *when* / *if* stays `/h/` + `/b/` **`adoro`**, not a circumstance fence of sentences.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `awala` *walk* · `urunu` *run* · `uzune` *sing* · `elebe` *sleep* · `uwuru` *write* · `uruna` *rain* · `ozowo` *snow* · `udunu` *night* · `ohohu` *house* · `amuba` *emergency* · `ogegau` *convenience* · `emama` *fix* · `amuga` *workaround* · `adoro` *next clause*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `awala` *walk* · `urunu` *run* · `uzunu` *sing* · `elebe` *sleep* · `uwuru` *write* · `uruna` *rain* · `ozowo` *snow* · `udunu` *night* · `ohohu` *house* · `amuba` *emergency* · `ogegau` *convenience* · `emama` *fix* · `amuga` *workaround* · `adoro` *next clause*
 
 #### English → Agalan
 
@@ -309,7 +309,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **8.** *Uhubun sings if Azawan walks.*
 
 ::: details Show answer
-`zuhubun vuzunel hadorom zazawan vawalal badorol.`
+`zuhubun vuzunul hadorom zazawan vawalal badorol.`
 :::
 
 #### Agalan → English
@@ -356,7 +356,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan walks equally often.*
 :::
 
-**8.** `zuhubun vuzunel hadorom zazawan vawalal badorol.`
+**8.** `zuhubun vuzunul hadorom zazawan vawalal badorol.`
 
 ::: details Show answer
 *Uhubun sings if Azawan walks.*

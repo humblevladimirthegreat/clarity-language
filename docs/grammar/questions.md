@@ -114,7 +114,7 @@ A fill answer **need not** keep **-r** — bare content, focus **-l** / **-m** /
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` · `edege` · `adaga` · `awala` · `elebe` · `uzune` · `eje` · `uwuru` · `urunu`
+**Roots used here:** `azawa` / `ululo` / `uhubu` · `odogo` · `agada` · `awala` · `elebe` · `uzunu` · `eje` · `uwuru` · `urunu`
 
 #### English → Agalan
 
@@ -145,7 +145,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **5.** *Who sees a dog?* (one gap; the dog is real, not a second blank)
 
 ::: details Show answer
-`jol zar vejel dadagal.`
+`jol zar vejel dodogol.`
 :::
 
 **6.** *Azawan walks. Yes.* (confirm as a second turn)
@@ -168,7 +168,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 #### Agalan → English
 
-**1.** `jol zuhubun vuzunel.`
+**1.** `jol zuhubun vuzunul.`
 
 ::: details Show answer
 *Does Uhubun sing?*
@@ -180,10 +180,10 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Who writes?* (soft ask)
 :::
 
-**3.** `jol zululon gedegel.`
+**3.** `jol zululon godogol.`
 
 ::: details Show answer
-*Is Ululon a teacher?*
+*Is Ululon a dog?*
 :::
 
 **4.** `jaol.`
@@ -308,7 +308,7 @@ A fill may be a bare content word, focus **-l** / **-m** / **-n**, or a longer l
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` · `adaga` · `awala` · `urunu` · `elebe`
+**Roots used here:** `azawa` / `ululo` / `uhubu` · `odogo` · `awala` · `urunu` · `elebe`
 
 #### English → Agalan
 
@@ -335,7 +335,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **4.** *Which dog?* (one unknown)
 
 ::: details Show answer
-`jol dadagal zar.`
+`jol dodogol zar.`
 :::
 
 **5.** *Which of Azawan and Ululon?*
@@ -423,7 +423,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 | **`juel`** / **`juol`** | truth flip vs reject-this option | `juel.` *no/false* vs `juol.` *not that one* |
 | Body **`xul`** / **`vul`** / **`zul`** | deny *inside* the proposition ([negation](coordination.md#negation-u)) | `zazawan xul vawalal.` *Azawan doesn’t walk* |
 | **`jul`** / **`jum`** | **prohibition** force (*don't…*), not polar *no* | `jul vurunul.` *Don’t run.* |
-| Values **`xu`** / **`xo`** | unmet need / prescription — not true/false | `vuzunexul.` *can’t sing* |
+| Values **`xu`** / **`xo`** | unmet need / prescription — not true/false | `vuzunuxul.` *can’t sing* |
 | Clause **`xael`** | tie *between* claims — not *yes* | `… xael …` *and so / likewise* |
 
 **`jual`** / **`juam`** — absolute *no* / hard refusal of the whole frame (rare). Prefer **`juel`** / **`juol`** for ordinary answers; prefer **`xul`** when denying inside the clause.

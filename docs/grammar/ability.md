@@ -40,14 +40,14 @@ vowel = can / *can’t how*; ending = how the root enters the talk (**-l** liter
 
 | Form | Reading |
 |------|---------|
-| `vuzunexal` / `guzunexal` | can sing (literal host) |
-| `vuzunexam` | can sing (metaphorical host sense) |
-| `vuzunexel` | can’t sing **right now** |
-| `vuzunexol` | can’t sing yet / may become able (or unknown grain) |
-| `vuzunexul` | can’t sing — fixed / impossible as far as you can tell |
+| `vuzunuxal` / `guzunuxal` | can sing (literal host) |
+| `vuzunuxam` | can sing (metaphorical host sense) |
+| `vuzunuxel` | can’t sing **right now** |
+| `vuzunuxol` | can’t sing yet / may become able (or unknown grain) |
+| `vuzunuxul` | can’t sing — fixed / impossible as far as you can tell |
 
 ```
-`vuzunexel.`
+`vuzunuxel.`
 
 gloss: `v-express-unable-temporary`
 
@@ -55,7 +55,7 @@ gloss: `v-express-unable-temporary`
 ```
 
 ```
-`vuzunexol.`
+`vuzunuxol.`
 
 gloss: `v-express-unable-modifiable`
 
@@ -67,20 +67,20 @@ gloss: `v-express-unable-modifiable`
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Tag **can** / **can’t** on a non-need host; ordinary verbs are not refusal.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `adaga` *dog* · `uzune` *sing* · `awala` *walk* · `urunu` *run* · `uwuru` *write* · `eje` *see* · `elebe` *sleep* · `aju` *sit*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `uzunu` *sing* · `awala` *walk* · `urunu` *run* · `uwuru` *write* · `eje` *see* · `elebe` *sleep* · `aju` *sit*
 
 #### English → Agalan
 
 **1.** *Azawan can sing.*
 
 ::: details Show answer
-`zazawan vuzunexal.`
+`zazawan vuzunuxal.`
 :::
 
 **2.** *Ululon can’t sing right now.*
 
 ::: details Show answer
-`zululon vuzunexel.`
+`zululon vuzunuxel.`
 :::
 
 **3.** *Uhubun can’t walk yet (that may change).*
@@ -104,7 +104,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **6.** *Azawan sings.* (ordinary edegunt — not a can / can’t tag)
 
 ::: details Show answer
-`zazawan vuzunel.`
+`zazawan vuzunul.`
 :::
 
 **7.** *Uhubun can’t sleep right now.*
@@ -116,18 +116,18 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **8.** *The dog can see.*
 
 ::: details Show answer
-`zadagal vejexal.`
+`zodogol vejexal.`
 :::
 
 #### Agalan → English
 
-**1.** `zazawan vuzunexal.`
+**1.** `zazawan vuzunuxal.`
 
 ::: details Show answer
 *Azawan can sing.*
 :::
 
-**2.** `zululon vuzunexel.`
+**2.** `zululon vuzunuxel.`
 
 ::: details Show answer
 *Ululon can’t sing right now.*
@@ -145,7 +145,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Azawan can’t run (fixed / impossible as far as you can tell).*
 :::
 
-**5.** `zazawan vuzunel.`
+**5.** `zazawan vuzunul.`
 
 ::: details Show answer
 *Azawan sings.* (not tagged can or can’t)
@@ -163,7 +163,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Uhubun can’t sit yet (may become able, or the grain is unspecified).*
 :::
 
-**8.** `guzunexal.`
+**8.** `guzunuxal.`
 
 ::: details Show answer
 *Can sing (as a property).*
@@ -218,15 +218,15 @@ gloss: `h-ABIL-unable-temporary`
 | Need unmet + changeability | need **`xu…`** — [values](values.md) (`holozoxul` ≠ “can’t competence”) |
 | When / never / sometime the host applies | [restrictors](restrictors.md) (`hal`, `har`, …) |
 
-Stack when useful: e.g. can’t-sing plus unmet competence (`vuzunexol` + `holozoxum`). Bare **`hal`** (*never*) is applicability, not tagged incapability. Need-root **`xu`** stays unmet need, not ability. Unspecified need **`ega`** 🥚 (*potential*) is not **`ABIL`**.
+Stack when useful: e.g. can’t-sing plus unmet competence (`vuzunuxol` + `holozoxum`). Bare **`hal`** (*never*) is applicability, not tagged incapability. Need-root **`xu`** stays unmet need, not ability. Unspecified need **`ega`** 🥚 (*potential*) is not **`ABIL`**.
 
 | Agalan (schematic) | Reading |
 |---------------------|---------|
-| `vuzunexel` | can’t sing **right now** |
-| `vuzunexol` | can’t sing yet / may become able (or unknown) |
-| `vuzunexul` | can’t sing (fixed / impossible as far as you can tell) |
+| `vuzunuxel` | can’t sing **right now** |
+| `vuzunuxol` | can’t sing yet / may become able (or unknown) |
+| `vuzunuxul` | can’t sing (fixed / impossible as far as you can tell) |
 | `golorodoxal` | can lead (literal) |
-| `vuzunexol holozoxum` | can’t sing (modifiable) **and** unmet competence |
+| `vuzunuxol holozoxum` | can’t sing (modifiable) **and** unmet competence |
 | `… hegeraxel` | can’t **right now** (no single host / clause-wide) |
 | `hegeral` | ability (**topic** only) |
 
@@ -235,7 +235,7 @@ Stack when useful: e.g. can’t-sing plus unmet competence (`vuzunexol` + `holoz
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Prefer a host when one activity root fits; use **`egera`** when there is no single host.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `ele` *size* / *big* · `uzune` *sing* · `egera` *cereal* → *capacity* (**ABIL**)
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `ele` *size* / *big* · `uzunu` *sing* · `egera` *cereal* → *capacity* (**ABIL**)
 
 #### English → Agalan
 
@@ -248,7 +248,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **2.** *Azawan can’t sing right now.*
 
 ::: details Show answer
-`zazawan vuzunexel.`
+`zazawan vuzunuxel.`
 :::
 
 **3.** *Azawan can’t right now* (clause-wide; no single activity root).
@@ -289,7 +289,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Can’t right now (no single host / clause-wide).*
 :::
 
-**2.** `zazawan vuzunexel.`
+**2.** `zazawan vuzunuxel.`
 
 ::: details Show answer
 *Azawan can’t sing right now.*

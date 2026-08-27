@@ -8,7 +8,7 @@
 
 Every lexicon row is a **root** plus **senses**. Every content word a learner will write is **root + ending** (and, in a sentence, a role letter). Core currently opens with prefixed sentence words and defers the endings: “read the whole word as its plain meaning.” That hides the dictionary’s actual split.
 
-The first usable object is therefore a **citation word**: prefix-less **root + ending**, the same shape as a lexicon head or a one-word turn (`adagal.`, `uzumum.`, `azawan.`). Learners should **hear and say** those words: [phonology.md Beginner](../grammar/phonology.md#beginner) (vowel and consonant tables, stacked vowels as separate syllables) belongs **before this lesson or in the same sitting**, not after the first clause. Then add the role letter and a tiny clause still in that sitting (or the next beat of core).
+The first usable object is therefore a **citation word**: prefix-less **root + ending**, the same shape as a lexicon head or a one-word turn (`odogol.`, `uzumum.`, `azawan.`). Learners should **hear and say** those words: [phonology.md Beginner](../grammar/phonology.md#beginner) (vowel and consonant tables, stacked vowels as separate syllables) belongs **before this lesson or in the same sitting**, not after the first clause. Then add the role letter and a tiny clause still in that sitting (or the next beat of core).
 
 This lesson also introduces **-r** as “already in the talk / not a new dictionary hit,” **without** letter pronouns, full-root pronouns, or specials (`ugobo` / `ebone` / …).
 
@@ -17,7 +17,7 @@ This lesson also introduces **-r** as “already in the talk / not a new diction
 1. Teach **citation form** before (or as the first beat of) sentence grammar: no PoS letter; `/z/` is not implied.
 2. Tie the first three endings to how the **dictionary** separates senses: **literal**, **metaphor**, **proper**.
 3. Teach **-r** in the same sitting as “same referent again” (English often *that / the* one), not as a pronoun system.
-4. Give learners a first **use**: one-word cites, then immediately `zadagal gelulul.`
+4. Give learners a first **use**: one-word cites, then immediately `zodogol gelulul.`
 5. Teach **sound** with the first cites: phonology Beginner **before or at the same time** (letters, English cues, IPA as on that page). Do not wait until after sentences.
 6. Keep the lesson inside the easy-to-use bar: one short explahagetion, a four-row table, a few examples.
 
@@ -35,14 +35,14 @@ Published lexicon fields are **literal** and **metaphorical** (plus emoji / mnem
 
 | Ending | Dictionary job | Citation | English feel (loose) |
 |--------|----------------|----------|----------------------|
-| **-l** | **Literal** sense — new kind / instance | `adagal.` | *a dog* (first mention) |
+| **-l** | **Literal** sense — new kind / instance | `odogol.` | *a dog* (first mention) |
 | **-m** | **Metaphorical** sense — new | `uzumum.` | *happy* (published metaphor of *smile*) |
 | **-n** | **Proper** — named label | `azawan.` | *Azawan* (the name) |
-| **-r** | **Not a new dictionary introduction** — same referent already on the table | `adagar.` (after `adagal.`) | *that dog* / *the dog* (again) |
+| **-r** | **Not a new dictionary introduction** — same referent already on the table | `odogor.` (after `odogol.`) | *that dog* / *the dog* (again) |
 
 Do not teach **-r** as “indefinite.” In this language, *a / some X* on a content word is **-l** (new literal). **-r** is [resume](../grammar/reference-suffix.md): the referent is already in play. English *indefinite* vs *definite* is a rough hint only; the Agalan cut is **introduce** (**-l** / **-m** / **-n**) vs **resume** (**-r**).
 
-**“Not pronouns yet”** means: same ending, same root spelled in full, no stem-prefix rule, no *he/she/it* lexemes, no `zazar` cut from `azawa`. After `adagal.`, write `adagar.` — still a citation or, once sentences start, `zadagar` with the role letter taught in the next beat. How resume **chooses** among sedegural matches stays on [pronouns.md](../grammar/pronouns.md).
+**“Not pronouns yet”** means: same ending, same root spelled in full, no stem-prefix rule, no *he/she/it* lexemes, no `zazar` cut from `azawa`. After `odogol.`, write `odogor.` — still a citation or, once sentences start, `zodogor` with the role letter taught in the next beat. How resume **chooses** among sedegural matches stays on [pronouns.md](../grammar/pronouns.md).
 
 Join unspecified-member **-r** (`zar`, *someone*) stays off this lesson.
 
@@ -50,22 +50,22 @@ Join unspecified-member **-r** (`zar`, *someone*) stays off this lesson.
 
 Teach in this order ([grammar-docs teach order](../meta/grammar-docs.md#teach-in-this-order): job → shape → mnemonic → examples).
 
-1. **Sound (before or here).** Vowels and onsets from phonology Beginner so `adagal` / `uzumum` / `azawan` have one pronunciation path. This sitting needs the four vowel letters and the consonants that will be endings (**l** / **m** / **n** / **r**). Stacked vowels can wait.
+1. **Sound (before or here).** Vowels and onsets from phonology Beginner so `odogol` / `uzumum` / `azawan` have one pronunciation path. This sitting needs the four vowel letters and the consonants that will be endings (**l** / **m** / **n** / **r**). Stacked vowels can wait.
 2. **What you can do.** Name a thing from the dictionary without building a sentence. Point at one you just named.
 3. **Shape.** `root + ending`. No first role letter. Unicase. Lexicon search shows the root; you add the ending when you cite or speak.
 4. **Mnemonic (in the table).** **-l**iteral, **-m**etaphor, **-n**ame, **-r**esume.
 5. **Worked cites** (house-cast names; published roots):
-   - `adagal.` — literal *dog*
+   - `odogol.` — literal *dog*
    - `uzumum.` — metaphor *happy* (not literal *smile*)
    - `azawan.` · `ululon.` · `uhubun.` — proper
-   - `adagal.` then `adagar.` — introduce, then resume (full root, still prefix-less)
-6. **One trap, one sentence.** Prefix-less **`al` / `am` / …** are not citations (delay the reviser page). Then **add the role letter**: same words as `zadagal gelulul.` — the dictionary lesson does not replace core; it feeds it.
+   - `odogol.` then `odogor.` — introduce, then resume (full root, still prefix-less)
+6. **One trap, one sentence.** Prefix-less **`al` / `am` / …** are not citations (delay the reviser page). Then **add the role letter**: same words as `zodogol gelulul.` — the dictionary lesson does not replace core; it feeds it.
 
-Optional: show the lexicon row for `adaga` / `uzumu` / `azawa` so learners see **two English senses, one root**, and that **-l** vs **-m** picks the column.
+Optional: show the lexicon row for `odogo` / `uzumu` / `azawa` so learners see **two English senses, one root**, and that **-l** vs **-m** picks the column.
 
 ## Path
 
-**Phonology Beginner first or together.** Suggested order after introduction: **phonology Beginner** → **dictionary cites** (this lesson) → rest of **core** (role letters, SOV, force). Same sitting is fine: a short sound table, then cites you can pronounce. Do not park phonology Beginner after the first clause; saying `adagal` is part of the dictionary beat.
+**Phonology Beginner first or together.** Suggested order after introduction: **phonology Beginner** → **dictionary cites** (this lesson) → rest of **core** (role letters, SOV, force). Same sitting is fine: a short sound table, then cites you can pronounce. Do not park phonology Beginner after the first clause; saying `odogol` is part of the dictionary beat.
 
 Phonology Intermediate stays later (word ahagetomy with prefixes). [vowel-series.md](../grammar/vowel-series.md) still waits until clause force (`jal` / `jol` / `jel` / `jul`) exists — that is a **job map**, not the IPA table.
 
@@ -83,11 +83,11 @@ English → Agalan, citation only, then one prefixed line:
 
 | Prompt | Answer |
 |--------|--------|
-| *a dog* (new, literal) | `adagal.` |
+| *a dog* (new, literal) | `odogol.` |
 | *happy* (metaphor of smile) | `uzumum.` |
 | *Azawan* (name) | `azawan.` |
-| *that dog* (you just said `adagal.`) | `adagar.` |
-| *A dog is blue.* | `zadagal gelulul.` |
+| *that dog* (you just said `odogol.`) | `odogor.` |
+| *A dog is blue.* | `zodogol gelulul.` |
 
 No fill-the-blank letter pronouns. No `zugobon` / `zebonen`.
 

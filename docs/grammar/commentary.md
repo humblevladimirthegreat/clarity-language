@@ -53,7 +53,7 @@ On **`odoho`**, **-l / -m / -r** mark **how you hold** the commentary. **-n** st
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` · `adaga` · `awala` · `elebe` · `uzune` · `urunu` · `eje` · `odoho`
+**Roots used here:** `azawa` / `ululo` / `uhubu` · `odogo` · `awala` · `elebe` · `uzunu` · `urunu` · `eje` · `odoho`
 
 #### English → Agalan
 
@@ -72,7 +72,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **3.** *Uhubun sings — and that take is the scene.* (fused hold)
 
 ::: details Show answer
-`zuhubun hodohol vuzunel.`
+`zuhubun hodohol vuzunul.`
 :::
 
 **4.** *I think Azawan runs.* (light commentary)
@@ -96,7 +96,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **7.** *I think Azawan sees a dog.*
 
 ::: details Show answer
-`zazawan hodohom vejel dadagal.`
+`zazawan hodohom vejel dodogol.`
 :::
 
 **8.** *Does Uhubun sleep?* (yes/no; light commentary over the ask)
@@ -119,7 +119,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Ululon sleeps — and that commentary is taken as the scene.*
 :::
 
-**3.** `zuhubun hodohom vuzunel.`
+**3.** `zuhubun hodohom vuzunul.`
 
 ::: details Show answer
 *I think Uhubun sings.*
@@ -143,13 +143,13 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Does Azawan walk?* (asked with light commentary)
 :::
 
-**7.** `zazawan hodohom vejel dadagal.`
+**7.** `zazawan hodohom vejel dodogol.`
 
 ::: details Show answer
 *I think Azawan sees a dog.*
 :::
 
-**8.** `zuhubun hodohom vuzunel.`
+**8.** `zuhubun hodohom vuzunul.`
 
 ::: details Show answer
 *I think Uhubun sings.*
@@ -192,7 +192,7 @@ First-person *I think* / rumination is [**COMMENT**](#comment) (`odoho`). *Belie
 | **WITNESSED** | **`uvuvu`** | 🎣 *fishing* → *memory* | firsthand / reconstructive — you (think you) caught it yourself; may pull a **boot** |
 | **RECORDED** | **`erego`** | ⏺️ *record* → *record* | documented / captured — playback of what was preserved |
 | **PATTERN** | **`abawa`** | 🐾 *paw-prints* → *trail* → *pattern* | from regularity / similar cases left behind |
-| **INFERRED** | **`edede`** | 🕵️ *detective* → *investigation* → *inference* | reasoned from clues — not direct channel |
+| **INFERRED** | **`uneve`** | 🕵️ *investigate* → *investigation* → *inference* | reasoned from clues — not direct channel |
 | **TOLD** | **`erara`** | 👂 *ear* → *listening* → *hearsay* | reportative — under `/h/`, *listening* = hearsay |
 | **FELT** | **`ehere`** | ❤️ *heart* → *gut-felt* | proprioceptive / affective knowing — not [emotion compose](special-vocabulary.md#emotion-compose) |
 | **STORY** | **`orolo`** | 📜 *scroll* → *tale* | narrative / lore / anecdotal framing |
@@ -204,12 +204,12 @@ Channel is a **root choice**, not `xa`/`xu` on the claim host. Stack with **PRED
 | `… huvuvum …` | *per memory / witnessed* (reconstructive) |
 | `… heregom …` | *on record / recorded* |
 | `… habawam …` | *from the pattern / trail of cases* |
-| `… hededem …` | *inferred / from investigation* |
+| `… hunevem …` | *inferred / from investigation* |
 | `… heraram …` | *told / hearsay* |
 | `… heherem …` | *felt / gut-known* |
 | `… horolom …` | *per the tale / story* |
 | `helezom habawam … vanunul` | *forecast from pattern: it rains* |
-| `… haon b-…` + `hededem` | *sufficient-cause claim, inferred* |
+| `… haon b-…` + `hunevem` | *sufficient-cause claim, inferred* |
 
 #### Memory / record (past framing)
 <a id="memory-record"></a>
@@ -229,7 +229,7 @@ Idiom cue: *fish a boot* = retriedegu the wrong past (🥾 `abodo` *boot* stays 
 
 | English cue | Agalan |
 |-------------|---------|
-| *caused / predicted, inferred* | claim shape + **`hededem`** |
+| *caused / predicted, inferred* | claim shape + **`hunevem`** |
 | *caused / predicted from pattern*; *always by nature* + pattern | claim shape (+ **`hafafal`** if natural) + **`habawam`** |
 | *thinks / was told* (hearsay) | content + **`heraram`** |
 | *knew / felt* (gut channel) | content + **`heherem`** |
@@ -310,7 +310,7 @@ When unsure, prefer **`hahadem`**.
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` · `adaga` · `awala` · `elebe` · `uzune` · `urunu` · `uwuru` · `odoho` · `uvuvu` · `erego` · `abawa` · `edede` · `erara` · `ehere` · `orolo` · `ahade`
+**Roots used here:** `azawa` / `ululo` / `uhubu` · `odogo` · `awala` · `elebe` · `uzunu` · `urunu` · `uwuru` · `odoho` · `uvuvu` · `erego` · `abawa` · `uneve` · `erara` · `ehere` · `orolo` · `ahade`
 
 #### English → Agalan
 
@@ -341,7 +341,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **5.** *Azawan sings — inferred from clues.*
 
 ::: details Show answer
-`zazawan hededem vuzunel.`
+`zazawan hunevem vuzunul.`
 :::
 
 **6.** *Ululon writes — so they say.* (hearsay)
@@ -376,7 +376,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Ululon sleeps — per the tale.*
 :::
 
-**3.** `zuhubun hahadel vuzunel.`
+**3.** `zuhubun hahadel vuzunul.`
 
 ::: details Show answer
 *As if Uhubun sings* — immersed in the imagined scene.
@@ -394,7 +394,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *As if Ululon writes* — and step back toward contact.
 :::
 
-**6.** `zazawan heregom vejel dadagal.`
+**6.** `zazawan heregom vejel dodogol.`
 
 ::: details Show answer
 *Azawan sees a dog — on record.*

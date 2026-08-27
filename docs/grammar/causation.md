@@ -65,7 +65,7 @@ the join’s first vowel is series **`a`** (*add*) — add the antecedent and th
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Everyday *leads to* is open sufficient **`…aom`** (outcome as host); there is no cause-arrow word. Closed **`…aol`** is the stronger “this settles it” twin. Clause *because* stays **`hurugum badorol`**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `azel` *effort* · `uludu` *cloud* · `ozowo` *snow* · `adaga` *dog* · `agada` *cat* · `abogo` *book* · `ohohu` *house* · `awala` *walk* · `uzune` *sing* · `elebe` *sleep* · `adoro` *next clause* · `urugu` *because* (**-m** on `/h/`)
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `azel` *effort* · `uludu` *cloud* · `ozowo` *snow* · `odogo` *dog* · `agada` *cat* · `abogo` *book* · `ohohu` *house* · `awala` *walk* · `uzunu` *sing* · `elebe` *sleep* · `adoro` *next clause* · `urugu` *because* (**-m** on `/h/`)
 
 #### English → Agalan
 
@@ -90,13 +90,13 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **4.** *A dog would work.*
 
 ::: details Show answer
-`zadagal zaom.`
+`zodogol zaom.`
 :::
 
 **5.** *A dog or a cat would work.*
 
 ::: details Show answer
-`zadagal zagadal zaom.`
+`zodogol zagadal zaom.`
 :::
 
 **6.** *A book is enough.*
@@ -149,7 +149,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *A house would work.*
 :::
 
-**6.** `zuhubun vuzunel zaom.`
+**6.** `zuhubun vuzunul zaom.`
 
 ::: details Show answer
 *Uhubun’s singing would work.*
@@ -161,7 +161,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Azawan walks because Ululon sleeps.*
 :::
 
-**8.** `zadagal zagadal zaom.`
+**8.** `zodogol zagadal zaom.`
 
 ::: details Show answer
 *A dog or a cat would work.*
@@ -283,14 +283,14 @@ Strength of feeling is values force / evidentiality — not upgrading `aom` → 
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Mark **necessary** with exclusion / **`hal`**, unique path with **`gon` / `hon` / `…ol`**, clause poles with **`hadorom` / `hezazem` / `hurugum`**, and mechanism with **`hegegam`**. An ought sits on values **`xo`**, not by upgrading **`aom`** to a sole-cause join.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `edege` *teacher* · `azel` *effort* · `anunu` *rain* · `uludu` *cloud* · `adaga` *dog* · `abogo` *book* · `elade` *promotion* · `olozo` *competence* · `awala` *walk* · `uzune` *sing* · `elebe` *sleep* · `adoro` *next clause* · `adoro` *if* · `ezaze` *iff* · `urugu` *because* · `egega` CAUSE
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `azel` *effort* · `anunu` *rain* · `uludu` *cloud* · `odogo` *dog* · `abogo` *book* · `elade` *promotion* · `olozo` *competence* · `awala` *walk* · `uzunu` *sing* · `elebe` *sleep* · `adoro` *next clause* · `adoro` *if* · `ezaze` *iff* · `urugu` *because* · `egega` CAUSE
 
 #### English → Agalan
 
 **1.** *Azawan walks without a dog.*
 
 ::: details Show answer
-`zazawan vawalal huan badagal.`
+`zazawan vawalal huan bodogol.`
 :::
 
 **2.** *Azawan never walks.*
@@ -355,10 +355,10 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Raining without / excluding clouds.*
 :::
 
-**2.** `zedegel hon.`
+**2.** `zodogol hon.`
 
 ::: details Show answer
-*It has to be the teacher.*
+*It has to be the dog.*
 :::
 
 **3.** `zazawan vawalal hadorom badorol zululon velebel.`
@@ -385,7 +385,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Effort would count toward promotion — as an ought, not the sole law.*
 :::
 
-**7.** `zazawan guan badagal.`
+**7.** `zazawan guan bodogol.`
 
 ::: details Show answer
 *Azawan without a dog.*
@@ -397,7 +397,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan never walks.*
 :::
 
-**9.** `zazawan vuzunel hegegam.`
+**9.** `zazawan vuzunul hegegam.`
 
 ::: details Show answer
 *Azawan sings — as mechanism.*
@@ -460,7 +460,7 @@ English often uses *because* for **speaker grounds** (*I say P because Q* / *I t
 
 | Stack | Role | Mnemonic |
 |-------|------|----------|
-| Evidentiality `/h/` | *how you know* the link — [evidentiality](commentary.md#evidentiality) (**INFERRED** `edede`, **PATTERN** `abawa`, …) | 🔍 the trail behind the claim |
+| Evidentiality `/h/` | *how you know* the link — [evidentiality](commentary.md#evidentiality) (**INFERRED** `uneve`, **PATTERN** `abawa`, …) | 🔍 the trail behind the claim |
 | **`CAUSE`** (`hegegam`) | *mechanism framing* — [CAUSE mood](#cause); not condition type, not NATURAL | ⚙️ the gears inside |
 | **`hual` / `huam`** | habitual / characterizing pattern — [restrictors](restrictors.md) | 🔁 whenever, as a rule |
 | Universality | how exceptionless the claim is — [universality moods](special-vocabulary.md#universality) | 🌐 no exceptions anywhere |

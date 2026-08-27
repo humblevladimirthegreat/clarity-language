@@ -87,7 +87,7 @@ Overlays, writing marks, and exponents are Intermediate / Advanced — **optiona
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Count with `g+N`, rank with `g#N`, and use digitless **`g+`** with **-sh** on the noun for *more than one*.
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` · `agada` *cat* · `adaga` *dog* · `abogo` *book* · `ohohu` *house* · `uzudu` *student* · `eje` *see* · `uwuru` *write*
+**Roots used here:** `azawa` / `ululo` / `uhubu` · `agada` *cat* · `odogo` *dog* · `abogo` *book* · `ohohu` *house* · `agada` *cat* · `eje` *see* · `uwuru` *write*
 
 #### English → Agalan
 
@@ -112,7 +112,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **4.** *Two dogs.*
 
 ::: details Show answer
-`zadagalsh g+2.`
+`zodogolsh g+2.`
 :::
 
 **5.** *The first house.*
@@ -127,10 +127,10 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zazawan vejel zabogolsh g+3.`
 :::
 
-**7.** *More than one student.*
+**7.** *More than one cat.*
 
 ::: details Show answer
-`zuzudulsh g+.`
+`zagadalsh g+.`
 :::
 
 **8.** *Ululon writes the third book.*
@@ -165,10 +165,10 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Two houses.*
 :::
 
-**5.** `zuzudul g#1.`
+**5.** `zagadal g#1.`
 
 ::: details Show answer
-*The first student.*
+*The first cat.*
 :::
 
 **6.** `zuhubun vejel zagadalsh g+.`
@@ -177,7 +177,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Uhubun sees more than one cat.*
 :::
 
-**7.** `zazawan vejel zadagalsh g+3.`
+**7.** `zazawan vejel zodogolsh g+3.`
 
 ::: details Show answer
 *Azawan sees three dogs.*
@@ -1226,7 +1226,7 @@ Structural prosody, not lexical stress — ordinary spelling carries no stress (
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. Digitless exponents, hyperbole, and zero×exp as in the teach tables — shorthand (`g+e`, `g+1e`, `x#e`).
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` · `agada` *cat* · `abogo` *book* · `awala` *walk* · `uzune` *sing*
+**Roots used here:** `azawa` / `ululo` / `uhubu` · `agada` *cat* · `abogo` *book* · `awala` *walk* · `uzunu` *sing*
 
 #### English → Agalan
 
@@ -1257,7 +1257,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 **5.** *Starting with: Uhubun sings.*
 
 ::: details Show answer
-`x#e- zuhubun vuzunel.`
+`x#e- zuhubun vuzunul.`
 :::
 
 **6.** *Annihilate!*

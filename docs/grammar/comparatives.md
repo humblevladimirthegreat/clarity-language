@@ -237,7 +237,7 @@ SHARED singular scale under **`a`**: `zazawan zululon zal gomonum` = *Azawan and
 |---------|---------|
 | `zazawan zululon zal gomonum` | *Azawan and Ululon are challenging* (distributive — not equative) |
 | `zazawan zululon zuhubun zael gomonum` | *Azawan, Ululon, and Uhubun are equally challenging* |
-| `zadagal zagadal zael gomonum` | *the dog is as challenging as the cat* |
+| `zodogol zagadal zael gomonum` | *the dog is as challenging as the cat* |
 
 Focus / bare **`ae`** + SHARED scale stay ordinary focus / bare **`ae`** readings — equative needs **two or more** comparees. **`ae`** without SHARED scale = equal rank / tie among conjuncts — not a scalar equative. Scale adjectives in comparative / equative SHARED stay singular (no **-sh**).
 
@@ -421,14 +421,14 @@ Soft personal standard: **`zugoboxrawom`**. Ordinary named people stay ordinary 
 
 | Agalan | Reading |
 |---------|---------|
-| `zuel guzunel zugobon zalaban` | *worse than Professional* at singing |
+| `zuel guzunul zugobon zalaban` | *worse than Professional* at singing |
 | `zuem gagalal debunel zojun` | soft: draft is somewhat less clear than Avuzo |
 | `zuel geredom zazawan zugoboxrawon` | Azawan is less kind than **my personal standard** |
-| `zuel guzunel zazawan zugobon` | Azawan is less skilled at singing than **I am** (performance) |
+| `zuel guzunul zazawan zugobon` | Azawan is less skilled at singing than **I am** (performance) |
 | `zuel gabunul zugobon zuluden` | less skilled than Social |
 | `zuel gabunul zugobon zahaman` | less skilled than Typical |
 | `zuel gabunul zugobon zuan` | less skilled than Everyone |
-| `zuel guzunel zugobon zululon` | less skilled than **Ululon** (ordinary person comparee) |
+| `zuel guzunul zugobon zululon` | less skilled than **Ululon** (ordinary person comparee) |
 
 #### Constraints
 
@@ -442,7 +442,7 @@ Soft personal standard: **`zugoboxrawom`**. Ordinary named people stay ordinary 
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. Put the standard in the *than*-conjunct; **`zugobon`** is performance, **`zugoboxrawon`** is Mine.
 
-**Roots used here:** `azawa` / `ululo` · `uzune` · `abunu` · `eredo` · `agala` · `ebun` · `oju` · `ahama` · `ugobo` · `ulude` · `alaba` · `ua`
+**Roots used here:** `azawa` / `ululo` · `uzunu` · `abunu` · `eredo` · `agala` · `ebun` · `oju` · `ahama` · `ugobo` · `ulude` · `alaba` · `ua`
 
 #### English → Agalan
 
@@ -455,13 +455,13 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 **2.** *Azawan is less skilled at singing than I am.*
 
 ::: details Show answer
-`zuel guzunel zazawan zugobon.`
+`zuel guzunul zazawan zugobon.`
 :::
 
 **3.** *I am worse at singing than Professional.*
 
 ::: details Show answer
-`zuel guzunel zugobon zalaban.`
+`zuel guzunul zugobon zalaban.`
 :::
 
 **4.** *The draft is somewhat less clear than Avuzo.*
@@ -490,7 +490,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 *I am less skilled than Social.*
 :::
 
-**2.** `zuel guzunel zugobon zululon.`
+**2.** `zuel guzunul zugobon zululon.`
 
 ::: details Show answer
 *I am worse at singing than Ululon.*
@@ -508,7 +508,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 *Azawan is less skilled than Professional.*
 :::
 
-**5.** `zuem guzunel zazawan zojun.`
+**5.** `zuem guzunul zazawan zojun.`
 
 ::: details Show answer
 *Azawan is somewhat worse at singing than Avuzo.*
