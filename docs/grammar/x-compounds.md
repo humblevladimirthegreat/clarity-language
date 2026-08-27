@@ -35,13 +35,13 @@ After the PoS prefix, look at what sits **left** and **right** of the first mid-
 
 | Shape (after PoS) | Family | Details |
 |-------------------|--------|---------|
-| **`VOWEL x VOWEL`** + ending | **[Span fence](spans.md)** | TYPE **a** / **e** / **o** / **u** then EDGE **a** / **e** / **o** / **u**; exact **`xuxul`** / **`xuxur`** / **`xuxum`** = close |
+| **`VOWEL x VOWEL`** + ending | **[Span fence](spans.md)** when that cell is assigned; otherwise **ordinary compound** | Assigned opens: EDGE **`a`/`e`/`o`** + **-l / -m / -n**, EDGE **`u`** + **-l / -r**. Closes: **`xuxul`** / **`xuxur`** / **`xuxum`**. Leftover **`xuxun`** is `/x/` + **`u` × `u`** + proper **-n** (a [phrasal name](reference-suffix.md#phrasal-proper-names)), not a fence. |
 | **`VOWEL x ROOT…`** + ending | **[Role compound](roles.md#role-compounds)** | ROLE **`a`** / **`u`** / **`o`** then edegunt or relation root |
 | **`ROOT… x VOWEL`** + ending | **[Values](values.md)** or **[ability](ability.md#ability)** | Need root + **`a`/`e`/`o`/`u`** → values; other root + **`xa`/`xe`/`xo`/`xu`** → ability |
 | **`ROOT… x NUM…`** + ending | **[Numeric derivation](numeric-derivation.md#numeric-derivation)** | Right half matches [number](numbers.md) stem grammar **without** its own ending (marker **`+`/`-`/`#`/`_`**, digitless exp including label **`_e`/`_e-`**, hyperbole, [zero × exp](numbers.md#zero-exponent) **`+0e`/`±0e-1`/`#0e`**, label digits, scalar digit morph **`+N`/`-N`**, or ordinal digit morph **`#N`**) |
 | **`ROOT x ROOT`** (+ more **`x ROOT`**) + ending | **Ordinary compound** | Lexicon sense-compounds; [phrasal proper names](reference-suffix.md#phrasal-proper-names) (`zozohuxalenan`); [viewpoint laterals](roles.md#viewpoint-laterals) (`gewezexebonen` *your left*; bare `gewezel` *west*). Extra **`x ROOT`** pieces are ordinary roots only — [order](#ordinary-compound-order) |
 
-No open content root is a **bare single vowel**, so a single vowel **left** of `x` is never an ordinary host root. Spans are the only family with a **single vowel right** of `x` (EDGE); role compounds put a full **`V(CV)+`** root there. Numeric **`NUM`** is a PoS-less number stem — [numeric derivation](numeric-derivation.md#numeric-derivation). Running-text / citation examples prefer spelled CV (`…xraba…`); inventory tables may keep shorthand — [writing style](numbers.md#writing-style-numeric-vs-spelled).
+No open content root is a **bare single vowel**, so a single vowel **left** of `x` is never a values / ability / numeric **host**, and role compounds still put a full **`V(CV)+`** root after ROLE. Assigned span cells are the usual **`VOWEL x VOWEL`** family. Unassigned cells with that same silhouette (including **`xuxun`**) are ordinary compounds of those two vowels — [phrasal names](reference-suffix.md#phrasal-proper-names) when the ending is **-n**. Numeric **`NUM`** is a PoS-less number stem — [numeric derivation](numeric-derivation.md#numeric-derivation). Running-text / citation examples prefer spelled CV (`…xraba…`); inventory tables may keep shorthand — [writing style](numbers.md#writing-style-numeric-vs-spelled).
 
 ### Ordinary compound order
 <a id="ordinary-compound-order"></a>
@@ -73,7 +73,7 @@ gloss: `z-sushi-x-coffee-x-tea`
 ### Decision order
 
 1. Exact **`xuxul`** / **`xuxur`** / **`xuxum`** → span close.
-2. After PoS: one vowel + `x` + one vowel + ending → **span open** (or atomic / anaphor / empty / proper per [spans](spans.md)).
+2. After PoS: one vowel + `x` + one vowel + an **assigned** span ending → **span open** (or atomic / anaphor / empty per [spans](spans.md)). Unassigned silhouettes (such as **`xuxun`**) continue down this list.
 3. After PoS: one vowel **`a`/`u`/`o`** + `x` + longer root + ending → **role compound**.
 4. Longer material before `x`, then `x` + single stance vowel **`a`/`e`/`o`/`u`** + ending → **value** (need host) or **ability** (non-need host).
 5. Longer material before `x`, then `x` + material that matches **number stem** grammar (writing **`+`/`-`/`#`/`_`**, speech **`r`+V…**, including digit morph **`+N`/`-N`** / **`#N`**) + ending → **numeric derivation**.

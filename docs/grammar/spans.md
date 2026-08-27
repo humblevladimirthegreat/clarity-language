@@ -307,7 +307,7 @@ The vowel **after** `x` is **EDGE** — how far the open runs.
 
 **Anaphor `-r`** always uses EDGE **`u`** in the spoken template (`daxur`).
 
-EDGE **`a`** / **`e`** / **`o`** take **-l** / **-m** / **-n**. EDGE **`u`** takes exact **-l** (`daxul`) or anaphor **-r** (`daxur`).
+EDGE **`a`** / **`e`** / **`o`** take **-l** / **-m** / **-n**. EDGE **`u`** takes exact **-l** (`daxul`) or anaphor **-r** (`daxur`). Other **`VOWEL x VOWEL`** silhouettes (including **`xuxun`**) are [ordinary compounds](x-compounds.md#families-by-shape), not span opens.
 
 ### Endings on opens and span pronouns
 <a id="endings"></a>

@@ -1,5 +1,4 @@
 # TODO
-Phonology english-to-agelan conversion prioritizes similar placements 
 Statistics captures consonant and vowel distribution 
 Conceptual metaphor (growth mindset) for failure 
 Consider reserving two syllable words for special

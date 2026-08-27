@@ -114,16 +114,15 @@ describe("parseWord — spans and writing atoms", () => {
     assert.deepEqual(close.family, { kind: "spanClose", flavor: "complete" });
   });
 
-  it("parses xuxun as a span open, not a span close", () => {
+  it("parses xuxun as a /x/ compound proper name, not a span", () => {
     const word = parseOk("xuxun");
     assert.equal(word.pos, "x");
     assert.equal(word.ending, "n");
     assert.deepEqual(word.family, {
       kind: "x",
-      xFamily: "span",
-      leftRoots: [],
-      typeVowel: "u",
-      edgeVowel: "u",
+      xFamily: "compound",
+      leftRoots: ["u"],
+      rightRoots: ["u"],
     });
   });
 

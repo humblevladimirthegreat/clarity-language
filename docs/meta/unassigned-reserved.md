@@ -111,7 +111,7 @@ Source: [roles.md](../grammar/roles.md), [x-compounds.md](../grammar/x-compounds
 
 Source: [spans.md](../grammar/spans.md)
 
-- EDGE + **-r** combinations other than EDGE **`u`** (anaphor **-r** always uses EDGE **`u`** in the spoken template)
+- EDGE + **-r** combinations other than EDGE **`u`** (anaphor **-r** always uses EDGE **`u`** in the spoken template; other EDGE + **-r** silhouettes are ordinary compounds, not span opens)
 
 ## Values — later dimensions
 

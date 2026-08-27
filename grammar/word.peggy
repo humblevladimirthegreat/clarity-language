@@ -10,6 +10,11 @@
     return "closeAll";
   }
 
+  function spanOpenLegal(edgeV, ending) {
+    if (edgeV === "u") return ending === "l" || ending === "r";
+    return ending === "l" || ending === "m" || ending === "n";
+  }
+
   function makeWord(raw, fields) {
     const word = { raw, ...fields };
     if (word.gl === false) delete word.gl;
@@ -375,7 +380,9 @@ xWord
   / OrdinaryCompound
 
 SpanOpen
-  = typeV:[aeou] "x" edgeV:[aeou] ending:Ending plural:PluralSuffix? {
+  = typeV:[aeou] "x" edgeV:[aeou] ending:Ending plural:PluralSuffix?
+    &{ return spanOpenLegal(edgeV, ending); }
+    {
       return {
         ending,
         plural: !!plural,
@@ -426,6 +433,16 @@ NumericDerivation
 
 OrdinaryCompound
   = left:ContentRoot "x" right:ContentRoot rest:("x" r:ContentRoot { return r; })* ending:Ending plural:PluralSuffix? {
+      return {
+        ending,
+        plural: !!plural,
+        family: xFamily("compound", {
+          leftRoots: [left],
+          rightRoots: [right, ...rest],
+        }),
+      };
+    }
+  / left:[aeou] "x" right:[aeou] rest:("x" r:[aeou] { return r; })* ending:Ending plural:PluralSuffix? {
       return {
         ending,
         plural: !!plural,
