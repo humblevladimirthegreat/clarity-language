@@ -8,7 +8,7 @@ Executable editor policy: add end-of-band Eng ↔ Agelan checkpoints to learner 
 - *… for `docs/grammar/questions.md` Intermediate.*
 - *… for core Beginner* (already exists — skip unless asked to replace).
 
-This page owns **path allowlist**, **root bank**, and **generation procedure**. Drill *shape* (spoiler template, house names, item counts) stays in [translation-exercises.md](translation-exercises.md). Banding: [learning-ledeguls.md](learning-ledeguls.md#cross-doc-path). Example prose: [grammar-docs.md](grammar-docs.md). Grammar pages must **not** link here.
+This page owns **path allowlist**, **root bank**, and **generation procedure**. Drill *shape* (spoiler template, house names, item counts) stays in [translation-exercises.md](translation-exercises.md). Banding: [learning-levels.md](learning-levels.md#cross-doc-path). Example prose: [grammar-docs.md](grammar-docs.md). Grammar pages must **not** link here.
 
 ## Execute
 <a id="execute"></a>
@@ -196,7 +196,7 @@ A page may add roots that **already appear in that band’s worked examples** (e
 ## Allowlist
 <a id="allowlist"></a>
 
-Path numbers match [learning-ledeguls.md](learning-ledeguls.md#cross-doc-path). **Introduces** = what this checkpoint may *test*. Recycle is computed from path + slots, plus **Sibling OK**.
+Path numbers match [learning-levels.md](learning-levels.md#cross-doc-path). **Introduces** = what this checkpoint may *test*. Recycle is computed from path + slots, plus **Sibling OK**.
 
 Status: **exists** = do not overwrite; **generate** = add if missing; **skip** = no checkpoint.
 
@@ -232,7 +232,7 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 ### Intermediate then Advanced
 <a id="allowlist-later"></a>
 
-Read **all** Beginner first, then Intermediate in the same file order, then Advanced ([path](learning-ledeguls.md#cross-doc-path)). Pages with **no Beginner** slot start here.
+Read **all** Beginner first, then Intermediate in the same file order, then Advanced ([path](learning-levels.md#cross-doc-path)). Pages with **no Beginner** slot start here.
 
 | Path | File | Band | Status | Introduces (test these) | Notes |
 |------|------|------|--------|-------------------------|-------|
@@ -338,7 +338,7 @@ For each spoiler token family:
 | Page | Owns |
 |------|------|
 | [translation-exercises.md](translation-exercises.md) | Placement, principles, spoiler template |
-| [learning-ledeguls.md](learning-ledeguls.md) | Bands and cross-doc path |
+| [learning-levels.md](learning-levels.md) | Bands and cross-doc path |
 | [grammar-docs.md](grammar-docs.md) | Learner prose, house cast |
 | [glosses.md](glosses.md) | Morph / free English (teaching lines, not spoilers) |
 | [unassigned-reserved.md](unassigned-reserved.md) | Unused-slot inventory — do not drill |

@@ -15,7 +15,7 @@ You use joins when English would say *and*, *or*, *not*, *prefer A over B*, *som
 | VP | `/v/` | *ate and drank* |
 | Clause | `/x/` | *It rained and then we left* |
 
-**Mnemonic:** the vowel tells you *what kind* of list (inventory, menenu, rank, negation, complement); the ending tells you *how closed* the list is.
+the vowel tells you *what kind* of list (inventory, menenu, rank, negation, complement); the ending tells you *how closed* the list is.
 
 Join words are the **only** place **-n** does not mean a [name](reference-suffix.md#proper-name--n). Beginner fences use **-l** / **-m** / **-r**; join **-n** (named list, clause soft `xan`, join-acts) comes later on this page.
 
@@ -62,7 +62,7 @@ Put every conjunct **before** the join; put shared modifiers **immediately after
 PHRASE PHRASE ( PHRASE )* P-JOIN ( SHARED )*
 ```
 
-**Mnemonic:** the join **closes** the list on the right — like a closing bracket.
+the join **closes** the list on the right — like a closing bracket.
 
 ```
 `zadagal zagadal zam.`
@@ -190,7 +190,7 @@ gloss: `z-tea` · `z-coffee` · `zul`
 *none of tea or coffee.*
 ```
 
-**Mnemonic:** **u** = *under* the claim — what does **not** hold.
+**u** = *under* the claim — what does **not** hold.
 
 ### Unspecified member (**`-r`**)
 <a id="unspecified-member-r-phrase"></a>
@@ -232,7 +232,7 @@ gloss: `z-tea` · `z-coffee` · `zar`
 *some one among tea and coffee.*
 ```
 
-**Trap:** `A B zar` is a whole-fence join — not a mid-chain extender between `A zam B`.
+`A B zar` is a whole-fence join — not a mid-chain extender between `A zam B`.
 
 ### Phrase prefixes (quick map)
 
@@ -491,7 +491,7 @@ gloss: `z-tea` · `z-coffee` · `zual`
 *everything but tea and coffee.*
 ```
 
-**Trap:** `zagadal zual` = *everything but the cat*. For *every cat*, use SHARED kind: `zual gagadal`.
+`zagadal zual` = *everything but the cat*. For *every cat*, use SHARED kind: `zual gagadal`.
 
 No **u** on plain **u**, and no **u** on stacked **ao** / **ae** / **oe**. No **-r** on any stacked form.
 
@@ -795,16 +795,16 @@ On **phrase-ledegul** joins under **`/z/` `/d/` `/b/` `/w/`** only, **-n** marks
 - Nest if you need a rare mix (e.g. closed list but empty OK: `A B vol zol zal`).
 - Causal default on **`…aom`** → [causation.md](causation.md#sufficient).
 
-### Reserved forms
+### Allowed joins by PoS
 <a id="phrase-reserved-forms"></a>
 
-Under `/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/`, the join series plus allowed endings are **only** these joins or [restrictors](restrictors.md) (under `/h/` `/w/`: [defined core](restrictors.md#defined-core-full)). **`/ɡ/`…**-n** and **`/h/`…**-n** are [join-relations](join-extras.md#join-relations). No three-vowel stacks.
+Under `/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/`, the join series plus allowed endings are **only** these joins or [restrictors](restrictors.md) (under `/h/` `/w/`: [circumstance inventory](restrictors.md#defined-core-full)). **`/ɡ/`…**-n** and **`/h/`…**-n** are [join-relations](join-extras.md#join-relations). No three-vowel stacks.
 
 Under `/v/`, join endings are **-l** / **-m** / **-r** only; parallel **-n** spellings are [join-act verbs](join-extras.md#join-act-verbs).
 
 Under `/x/`, the join series plus allowed endings are **only** these clause joins. No stacked-vowel **-r**.
 
-Phonotactics for reserved join roots: [phonology.md](phonology.md#phonotactics).
+Join-root phonotactics: [phonology.md](phonology.md#phonotactics).
 
 ### Constraints
 

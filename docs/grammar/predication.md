@@ -28,7 +28,7 @@ gloss: `z-grace` · `g-challenging`
 *Azawan is challenging.*
 ```
 
-**Mnemonic:** property sits on `/ɡ/` like any adjective; there is no light *be* verb between two nouns for classification.
+property sits on `/ɡ/` like any adjective; there is no light *be* verb between two nouns for classification.
 
 ### Classification
 <a id="classification"></a>
@@ -61,7 +61,7 @@ gloss: `z-grace` · `g-teacher`
 |---------|--------|--------------|
 | **SAME** | *identical-to* / *same-as* | **`onunu`** 🪙 *coin* → *same* |
 
-**Mnemonic:** a **coin** has two faces and one substance — different labels are faces; co-reference is the one coin.
+a **coin** has two faces and one substance — different labels are faces; co-reference is the one coin.
 
 ```
 `gonunum buzuban`
@@ -202,8 +202,6 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 | Negation | `zazawan gul gedegel` | *Azawan is not a teacher* — [negation **u**](coordination.md#negation-u) |
 
 Values still stack on the classifying `/ɡ/` (`gedegel w-…xa…`) when the point is gratitude, judgment, or other need framing of that role — [values.md](values.md).
-
-**Trap:** co-reference of two labels → [identity](#identity). Equal degree on a scale → [equative](comparatives.md#equatives). Membership in a listed inventory without ascription → ordinary joins (`zar` / `zam` / …). Kind as a property of a domain (`zual gagadal` = *every cat*) is invert **ua** / **uo** SHARED — not this page’s single-host ascription.
 
 ### **SAME** endings and soft identity
 

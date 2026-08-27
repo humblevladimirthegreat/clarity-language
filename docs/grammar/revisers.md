@@ -20,7 +20,7 @@ Two placements, one form set:
 | **In-clause** | same-slot `A REV B` | slot repair — *including* / *rather* / *instead* / *except* |
 | **Discourse** | `REV` before force, omitted-default body, `/x/` continue, or `/x/` linker | claim-to-claim glue — *additionally* / *in other words* / *instead* / *except* |
 
-**Mnemonic:** vowels track the join series loosely — **a** additive, **e** soft rank, **o** exclusive swap, **u** subtract — but the job is **revision**, not a list join.
+vowels track the join series loosely — **a** additive, **e** soft rank, **o** exclusive swap, **u** subtract — but the job is **revision**, not a list join.
 
 ### Vowel meanings
 

@@ -14,7 +14,7 @@ Name the **coordination move you perform** on an object — *include*, *choose*,
 
 **Shape:** join vowel + **-n** under `/v/` (`van`, `von`, …). One `/d/` object (singular or group). Group objects use ordinary noun **-sh** (`d-…lsh`); verb **-sh** is [collective doing](plurality.md#collective-doing).
 
-**Mnemonic:** vowel = which join move; **-n** = join content (not a [name](reference-suffix.md#proper-name--n)). Join-word **-n** is the **only** exception to ordinary proper **-n**.
+vowel = which join move; **-n** = join content (not a [name](reference-suffix.md#proper-name--n)). Join-word **-n** is the **only** exception to ordinary proper **-n**.
 
 ```
 `zazawan dabelel van.`
@@ -59,7 +59,7 @@ Frame a host with the **same join-series move** toward one `/b/` argument — *i
 
 **Shape:** join vowel + **-n** under `/ɡ/` or `/h/` (`gan` / `han`, …). One `/b/` argument (singular or group). Group arguments use ordinary noun **-sh** (`b-…lsh`). Multi-member or empty domains: put a [phrase join](coordination.md) **inside** the `/b/` phrase (`gan bal bebanul bezedul`), or use a [nullary / bare](coordination.md#focus-phrase) `/b/` join as the sole argument (`gan bar` = *including something*; `guan bal` = *excluding nothing* / stripped frame).
 
-**Mnemonic:** same vowels as [join-act verbs](#join-act-verbs); **-n** = join content toward `/b/` (not a [name](reference-suffix.md#proper-name--n) — same **only** exception as other join words). Contiguous unit: `g*n b-…` on a noun; `h*n b-…` floats as one complex adverb.
+same vowels as [join-act verbs](#join-act-verbs); **-n** = join content toward `/b/` (not a [name](reference-suffix.md#proper-name--n) — same **only** exception as other join words). Contiguous unit: `g*n b-…` on a noun; `h*n b-…` floats as one complex adverb.
 
 ```
 `zubarol gan bebanul.`
@@ -69,7 +69,7 @@ gloss: `z-birthday-cake` · `g-including` · `b-peanut`
 *Cake including / with nuts.*
 ```
 
-These are **not** phrase named-list joins and **not** [restrictors](restrictors.md). Stock AP bundles use [mention](spans.md) spans instead of list-style `A B gan` without `/b/`. Parallel `-l` / `-m` / `-r` under `/ɡ/` stay AP **joins**; under `/h/` they stay [restrictors](restrictors.md) (defined core) or reserved.
+These are **not** phrase named-list joins and **not** [restrictors](restrictors.md). Stock AP bundles use [mention](spans.md) spans instead of list-style `A B gan` without `/b/`. Parallel `-l` / `-m` / `-r` under `/ɡ/` stay AP **joins**; under `/h/` they stay [restrictors](restrictors.md).
 
 | Form | `/ɡ/` (*N … b-X*) | `/h/` (*edegunt … b-X*) | Example |
 |------|-------------------|------------------------|---------|

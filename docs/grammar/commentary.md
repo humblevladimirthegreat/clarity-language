@@ -14,7 +14,7 @@ Mark **first-person mental commentary** — the mind storying or labeling experi
 
 **Shape:** floating **`/h/`** mood **`ogugu`** 💭 *thought* → *commentary* (optional `/w/` only when COMMENT frames a preceding `/ɡ/` — rare). Prefer floating `/h/`. **-l / -m / -r** = [hold](#comment-hold) (how tightly you take the balloon); **-n** ordinary proper.
 
-**Mnemonic:** a **thought balloon** floats a take over the scene. Bare contact = watching without narration. Ordinary content still available (`zogugul` *a thought*; `vogugul` *to think* as deliberate edegunt).
+a **thought balloon** floats a take over the scene. Bare contact = watching without narration. Ordinary content still available (`zogugul` *a thought*; `vogugul` *to think* as deliberate edegunt).
 
 ```
 `… hogugum …`
@@ -184,7 +184,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 Mark **how you know** a world-claim — what happened, what caused what, what someone else thinks, what will happen — with closed `/h/` mood roots (optional `/w/` when scoped only to a preceding `/ɡ/`).
 
-**Mnemonic:** each root is a **channel** you got the claim through — memory catch, playback, trail of cases, detective work, listening, gut, tale.
+each root is a **channel** you got the claim through — memory catch, playback, trail of cases, detective work, listening, gut, tale.
 
 First-person *I think* / rumination is [**COMMENT**](#comment) (`ogugu`). *Beliedegu* / other-minds *thinks* / causal warrant / forecast warrant use **this** inventory.
 
@@ -259,7 +259,7 @@ Mark a clause as **as-if / mind-only / off the real ledger** — pretensive scen
 
 **Shape:** floating **`/h/`** mood **`ahade`** 🎭 *theater* → *pretense* (optional `/w/` when scoped only to a preceding `/ɡ/` — rare). Prefer floating `/h/`. Ending = [hold](#notional-hold) (same map as COMMENT).
 
-**Mnemonic:** a **stage mask** frames the scene as play — real tally stays offstage. Ordinary content still available (`zahadel` *a theater*; `vahadel` *to pretend*).
+a **stage mask** frames the scene as play — real tally stays offstage. Ordinary content still available (`zahadel` *a theater*; `vahadel` *to pretend*).
 
 ```
 `… hahadem …`

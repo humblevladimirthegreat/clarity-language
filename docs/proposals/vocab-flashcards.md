@@ -99,7 +99,7 @@ lexicon-overlays.csv ──┘         │
 | `published-all` | Full published root list (power users) |
 | `published-slice-N` | First *N* or explicitly listed beginner roots (maintain a small allowlist file if needed) |
 
-Exact beginner slices can follow [learning-ledeguls.md](../meta/learning-ledeguls.md) pedagogy without claiming the exporter is design authority.
+Exact beginner slices can follow [learning-levels.md](../meta/learning-levels.md) pedagogy without claiming the exporter is design authority.
 
 ## Phasing
 

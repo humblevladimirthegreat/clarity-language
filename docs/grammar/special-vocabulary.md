@@ -3,10 +3,6 @@
 
 Closed mood roots for emotion compose, numbered alternatives, universality warrant, and the overlay inventory.
 
-## Beginner
-
-Nothing on this page is needed for beginners. Come back when you are ready for intermediate.
-
 ## Intermediate
 <a id="intermediate"></a>
 
@@ -29,7 +25,7 @@ When an opaque emotion word (*anxious*, *resentful*, *proud*, …) is doing **ju
 | Activation (arousal) | closed mood roots **HIGH** / **MED** / **LOW** under `/h/` (optional `/w/` on a preceding `/ɡ/`) |
 | Locus (where the charge is attributed) | closed mood roots **INTERNAL** / **EXTERNAL** / **CIRCUMSTANTIAL** under `/h/` (same `/w/` option) |
 
-**Mnemonic:** affect is **water**. **ACT** = tide dynamics (how much / how fast). **LOCUS** = vessel / transfer / ambient field (where water sits). Stack ACT + LOCUS as free `/h/` / `/w/` units.
+affect is **water**. **ACT** = tide dynamics (how much / how fast). **LOCUS** = vessel / transfer / ambient field (where water sits). Stack ACT + LOCUS as free `/h/` / `/w/` units.
 
 #### Activation roots (ACT)
 
@@ -212,7 +208,7 @@ English *always* / *every* / *never* / *everyone* smuggle **how exceptionless** 
 | Inventory softness | join **-l** / **-m** (`zual` vs `zuam`, `hual` vs `huam`) |
 | Exceptionlessness warrant | this section’s mood roots |
 
-**Mnemonic:** universal claims are **weather reports**. Default climate is usual weather — not a law. Stronger warrants name a different sky story.
+universal claims are **weather reports**. Default climate is usual weather — not a law. Stronger warrants name a different sky story.
 
 | Mood | Lexicon root | Metaphor | Gloss |
 |------|--------------|----------|-------|

@@ -2,7 +2,7 @@
 
 How to place and write **short translation drills** in learner grammar pages under **`docs/grammar/`**. Applies **only** to that folder (not to `meta/`, `examples/`, or `proposals/`). Design authority for morphology stays in the grammar pages; this page is pedagogy only.
 
-Grammar pages must **not** link here or mention `meta/` — editors follow this privately. Prose / example style: [grammar-docs.md](grammar-docs.md). Banding: [learning-ledeguls.md](learning-ledeguls.md). Glosses in worked examples (not in spoiler answers): [glosses.md](glosses.md). Generating missing checkpoints: [drill-generation.md](drill-generation.md).
+Grammar pages must **not** link here or mention `meta/` — editors follow this privately. Prose / example style: [grammar-docs.md](grammar-docs.md). Banding: [learning-levels.md](learning-levels.md). Glosses in worked examples (not in spoiler answers): [glosses.md](glosses.md). Generating missing checkpoints: [drill-generation.md](drill-generation.md).
 
 ## Default placement
 <a id="placement"></a>
@@ -83,6 +83,6 @@ Omit recoverable **`jal`** unless the drill is teaching force. Match orthography
 | Page | Owns |
 |------|------|
 | [grammar-docs.md](grammar-docs.md) | Learner prose, teach order, worked examples, [house cast](grammar-docs.md#house-cast) |
-| [learning-ledeguls.md](learning-ledeguls.md) | Beginner / Intermediate / Advanced bands and cross-doc path |
+| [learning-levels.md](learning-levels.md) | Beginner / Intermediate / Advanced bands and cross-doc path |
 | [glosses.md](glosses.md) | Morph gloss and free English (for teaching lines, not required in spoilers); [house-name glosses](glosses.md#house-cast) |
 | [drill-generation.md](drill-generation.md) | Path allowlist, root bank, and **execute** procedure (one file per agent) |

@@ -62,7 +62,7 @@ You may rearrange those core roles for style or to put something in **focus** (w
 
 **Turn** vs **continue:** a new **turn** opens with `/j/` (calling someone, *yes* / *no* words, written [statement / question / command](#clause-force-beginner)) — including turns you take with yourself. **Continuing under the same speech act** uses `/x/` ([discourse markers](#discourse-markers-x)): what follows **keeps** that speech act. Default statement force is **`jal`**, and you may **leave it out** when it is already clear ([Utterance markers](#utterance-markers-j)).
 
-**Mnemonic:** `/j/` = **jump** to a new speech act; `/x/` = **extend** under the same act.
+`/j/` = **jump** to a new speech act; `/x/` = **extend** under the same act.
 
 ### Nouns and verbs
 
@@ -74,7 +74,7 @@ You may rearrange those core roles for style or to put something in **focus** (w
 
 To say someone *is* a kind or has a property, use subject + adjective — there is **no** separate *to be* verb here.
 
-**Mnemonic:** the property is an adjective **label** on the subject — no linking verb.
+the property is an adjective **label** on the subject — no linking verb.
 
 ```
 `zeberel gedegel.`
@@ -113,7 +113,7 @@ gloss: `z-dog` · `g-blue`
 
 It sits on that adjective: normally right after the `/ɡ/` (or after that `/ɡ/`’s attached `/b/` if complex). Sedegural `/w/` words may sit in a row on one `/ɡ/` (`guzumum wazebol wazebel` = *happy, loudly, very loudly*). If the relation needs an extra noun, use complex `/ɡ/` + `/b/` instead.
 
-**Mnemonic:** `/w/` = **with** the adjective (narrow); `/h/` = the **whole** sentence. Same root, different first letter → different reach.
+`/w/` = **with** the adjective (narrow); `/h/` = the **whole** sentence. Same root, different first letter → different reach.
 
 ### Adverbs (`/h/`)
 <a id="adverbs-h"></a>
@@ -191,7 +191,7 @@ Closed `/j/` words such as **`jael`** (*yes* / *true*), **`juel`** (*no* / *fals
 
 `/x/` means **keep going under the same speech act**: continue a joined stretch that inherits the opener’s force, and **sentence linkers** (*howedegur*, *therefore*, …). Only the first turn (or a default statement body) sets the speech act.
 
-**Mnemonic:** word-initial **x** = discourse role (**eXtend** the talk).
+word-initial **x** = discourse role (**eXtend** the talk).
 
 | Job | Form family |
 |-----|-------------|
@@ -203,7 +203,7 @@ Closed `/j/` words such as **`jael`** (*yes* / *true*), **`juel`** (*no* / *fals
 
 A dependent sentence uses the special next-sentence pronoun **`orodo`**: in the main sentence it stands for “whatedegur follows right abaway.”
 
-**Mnemonic:** **`orodo`** 🚪 *doorway* → *what follows* — the main sentence ends at the doorway; the dependent walks through.
+**`orodo`** 🚪 *doorway* → *what follows* — the main sentence ends at the doorway; the dependent walks through.
 
 **Placement:** put **`orodo` last** in its main-sentence slot, and put the dependent material **immediately after** it. Rearrange free word order so that holds. For *because* / *if* style, the whole `/h/` + `/b/` **`orodo`** unit sits last in the main sentence (**`orodo`** last). That final **`orodo`** is where the dependent begins.
 
@@ -385,7 +385,7 @@ Prerequisite: Beginner [join vowel series](coordination.md#join-type-vowel-serie
 
 Every utterance has exactly one **clause force** (written `/j/` or implied **`jal`** / **`jam`**). Shape is **`j` + vowel + ending`**: the vowel picks the speech-act family; **-l** = firm / closed; **-m** = soft / open. Non-default forces are **written**; default statement **`jal`** may be omitted under the Beginner rules.
 
-**Mnemonic:** same **vowel series** as joins — **a** inventory / holds, **o** menenu / pick, **e** ranked priority, **u** negation — plus ending **-l** / **-m**.
+same **vowel series** as joins — **a** inventory / holds, **o** menenu / pick, **e** ranked priority, **u** negation — plus ending **-l** / **-m**.
 
 | Form | Force | Letter logic |
 |------|--------|----------------|
@@ -411,7 +411,7 @@ gloss: `g-blue` · `z-dog`
 *a blue dog*
 ```
 
-**Mnemonic:** mid-word **l** = **lean left** — look araread to the next host. Only `/ɡ/` takes this **l**.
+mid-word **l** = **lean left** — look araread to the next host. Only `/ɡ/` takes this **l**.
 
 The package is the same as after-the-noun order: plain `/ɡ/`, or complex `/ɡ/` + `/b/`, plus any following `/w/` stack. `/b/` and `/w/` still follow that `/ɡ/` (`glelulul wazebol zadagal` = *a loud-volume blue dog*). Before-the-noun order is optional style (meter, focus, comfort from your first language).
 

@@ -2,13 +2,13 @@
 
 How to write Agelan **grammar docs** under **`docs/grammar/`** so a learner can use them. Applies **only** to that folder (not to `meta/`, `examples/`, or `proposals/`). Design authority for morphology stays in those pages (core sentence grammar: [core.md](../grammar/core.md)); this page standardizes **pedagogy and prose** only.
 
-Grammar pages must **not** link to or mention `meta/` or any other folder outside `grammar/` — only peer links inside `grammar/`. Editors follow this page, [learning-ledeguls.md](learning-ledeguls.md), and [translation-exercises.md](translation-exercises.md) privately.
+Grammar pages must **not** link to or mention `meta/` or any other folder outside `grammar/` — only peer links inside `grammar/`. Editors follow this page, [learning-levels.md](learning-levels.md), and [translation-exercises.md](translation-exercises.md) privately.
 
 Related meta:
 
 | Page | Owns |
 |------|------|
-| [learning-ledeguls.md](learning-ledeguls.md) | **Beginner** / **Intermediate** / **Advanced** banding rubric and [cross-doc path](learning-ledeguls.md#cross-doc-path) (for `docs/grammar/` only) |
+| [learning-levels.md](learning-levels.md) | **Beginner** / **Intermediate** / **Advanced** banding rubric and [cross-doc path](learning-levels.md#cross-doc-path) (for `docs/grammar/` only) |
 | [glosses.md](glosses.md) | Morph glosses and free English ([house-name glosses](glosses.md#house-cast)) |
 | [translation-exercises.md](translation-exercises.md) | Eng ↔ Agelan checkpoints (placement, principles including house-cast people, spoiler shape) |
 | [drill-generation.md](drill-generation.md) | Path allowlist and execute procedure (one file per agent) |
@@ -74,7 +74,7 @@ If a page has sedegural such tables, give each its own mnemonic column; never su
 
 **Omit** `## Advanced` (or `## Intermediate`) when the rubric’s third question is no: there is no new edge-case, stylistic, or rare inventory. Recap tables, unused-slot lists, “reminder” restatements of earlier bands, and Design-notes dumps do **not** earn a later band. Fold anything still needed into the last band that actually teaches, or drop it.
 
-Do **not** keep a heading whose only job is to say there is nothing here. Learners skip missing bands on the [cross-doc path](learning-ledeguls.md#cross-doc-path). Material that did not make a band belongs in [unassigned-reserved.md](unassigned-reserved.md) or [TODO.md](../../TODO.md), not in a stub appendix on the page.
+Do **not** keep a heading whose only job is to say there is nothing here. Learners skip missing bands on the [cross-doc path](learning-levels.md#cross-doc-path). Material that did not make a band belongs in [unassigned-reserved.md](unassigned-reserved.md) or [TODO.md](../../TODO.md), not in a stub appendix on the page.
 
 **Bounce notes are empty bands.** Do not open a page with `## Beginner` (or a pre-band lead) that only says “nothing here / come back when you are ready for Intermediate / this page is Advanced.” Omit the unused band heading. A page that starts at Intermediate or Advanced is fine; the sidebar path already skips missing bands. Do not duplicate the same recap (“house rules,” writing-style bullets) in a later band just to fill Advanced.
 
@@ -90,8 +90,8 @@ Prefer commas, colons, parentheses, or separate sentences over em dashes. An em 
 ## Page skeleton
 
 1. **Title + one-line job** — the English job this page teaches (learner-facing). Sibling links only for real near-misses — not “this page owns / does not own” fencing.
-2. **Needs** (optional) — **rare.** Use only when the page is late and the dependency is not obvious from the [cross-doc path](learning-ledeguls.md#cross-doc-path) (e.g. causation → joins + **`orodo`** from core Beginner; comparatives → rank joins). Label as `**Needs:**` with one short link line. Do **not** ritualize “core Beginner; reference-suffix Beginner” on every page.
-3. **`## Beginner` / `## Intermediate` / `## Advanced`** — per [learning-ledeguls.md](learning-ledeguls.md). Include **Advanced** only when that page has rare inventory to teach ([empty or pointless bands](#empty-bands)).
+2. **Needs** (optional) — **rare.** Use only when the page is late and the dependency is not obvious from the [cross-doc path](learning-levels.md#cross-doc-path) (e.g. causation → joins + **`orodo`** from core Beginner; comparatives → rank joins). Label as `**Needs:**` with one short link line. Do **not** ritualize “core Beginner; reference-suffix Beginner” on every page.
+3. **`## Beginner` / `## Intermediate` / `## Advanced`** — per [learning-levels.md](learning-levels.md). Include **Advanced** only when that page has rare inventory to teach ([empty or pointless bands](#empty-bands)).
 4. Inside each band: **concept → rule in one breath → 1–3 examples → (optional contrast) → full table if needed**.
 5. Optional **See also** at the end — a few precise near-misses only; no long link walls in the lead (and no lead preview of later peers — [teach now; don’t preview later](#teach-now-dont-preview-later)).
 
@@ -224,7 +224,7 @@ Do **not** require a **Not this** column on every table, or a counter-example on
 ### Teach now; don’t preview later
 <a id="teach-now-dont-preview-later"></a>
 
-In each section, mention **only what that section is teaching**. Do not name, teaser, or deep-link subsystems the learner meets later on the [cross-doc path](learning-ledeguls.md#cross-doc-path).
+In each section, mention **only what that section is teaching**. Do not name, teaser, or deep-link subsystems the learner meets later on the [cross-doc path](learning-levels.md#cross-doc-path).
 
 | Keep | Cut / demote |
 |------|----------------|
@@ -243,7 +243,7 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 |----------|--------|
 | How to use the form | Grammar doc body under **`docs/grammar/`** (banded **Beginner** / **Intermediate** / **Advanced**) |
 | Gloss format | [glosses.md](glosses.md) |
-| Ledegul rubric / reading order | [learning-ledeguls.md](learning-ledeguls.md) ([cross-doc path](learning-ledeguls.md#cross-doc-path)) |
+| Ledegul rubric / reading order | [learning-levels.md](learning-levels.md) ([cross-doc path](learning-levels.md#cross-doc-path)) |
 | Doc prose / example style | This page |
 | Goals / feature criteria | [why-agelan.md](../grammar/why-agelan.md) (psych); [introduction.md](../grammar/introduction.md) (grammar design) |
 | Core sentence grammar | [core.md](../grammar/core.md) |
@@ -257,7 +257,7 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 
 ## Banding checklist
 
-Before tagging a section **Beginner**, ask the [three questions](learning-ledeguls.md#rubric-three-questions). Prefer the earlier band when learners need the form to read ordinary examples. Dependency on another subsystem beats “feels hard.” Do not add Advanced for recap, unused-slot lists, bounce notes, or reminders — [empty or pointless bands](#empty-bands).
+Before tagging a section **Beginner**, ask the [three questions](learning-levels.md#rubric-three-questions). Prefer the earlier band when learners need the form to read ordinary examples. Dependency on another subsystem beats “feels hard.” Do not add Advanced for recap, unused-slot lists, bounce notes, or reminders — [empty or pointless bands](#empty-bands).
 
 ## Markdown hygiene
 

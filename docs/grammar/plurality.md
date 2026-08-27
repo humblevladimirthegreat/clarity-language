@@ -15,7 +15,7 @@ Without **-sh**, the word picks **one** referent. With **-sh**, the default cont
 | `…l` / `…m` / `…n` / `…r` | singular (one referent / one introduction) |
 | `…lsh` / `…msh` / `…nsh` / `…rsh` | associative group (or collective ascription on `/ɡ/`) |
 
-**Mnemonic:** **-sh** = **s**et with the anchor — *Azawan-sh* ≈ *Azawan and associates*.
+**-sh** = **s**et with the anchor — *Azawan-sh* ≈ *Azawan and associates*.
 
 ```
 `zazawansh vawalal.`
@@ -54,7 +54,7 @@ gloss: `z-←grace-sh` · `v-sit`
 
 Bare **-l** / **-m** still always introduce; **-lsh** / **-msh** introduce a **group** indefinite. Resume of a group is **-rsh**.
 
-**Trap:** **-lsh** is not kind-generic (*cats in general*) and not inclusive *we* — inclusive *we* is **`ahage`**, not speaker **-sh** ([clusivity](pronouns.md#clusivity)).
+**-lsh** is not kind-generic (*cats in general*) and not inclusive *we* — inclusive *we* is **`ahage`**, not speaker **-sh** ([clusivity](pronouns.md#clusivity)).
 
 ### Nouns (`/z/`, `/d/`, `/b/`)
 
@@ -78,7 +78,7 @@ Special pronouns keep **-sh** available, but the default is **not** uniform asso
 | **`ahage`** (`zahagen`, …) | already the interlocutor set — do **not** add **-sh** for ordinary inclusive *we* |
 | name / content **-r**…**-sh** | that person **and associates** |
 
-**Trap:** *You (singular) and your associates* → **name…**-sh**, not **`ebone…sh`**. Inclusive *we* → **`ahage`**, not **`ugobo…sh`**.
+*You (singular) and your associates* → **name…**-sh**, not **`ebone…sh`**. Inclusive *we* → **`ahage`**, not **`ugobo…sh`**.
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -239,7 +239,7 @@ On `/ɡ/`, **-sh** marks **collective ascription**: the property holds of the **
 | host set + singular `/ɡ/` | distributive or underspecified (*the boxes are heavy* — each, or don’t care) |
 | host set + `/ɡ/`…**-sh** | **collective** (*heavy as a pile*; *vast as a team*) |
 
-**Mnemonic:** adjective **-sh** = the set **shares** the property as one pile — not “more red.”
+adjective **-sh** = the set **shares** the property as one pile — not “more red.”
 
 Most useful with [phrase join](coordination.md): SHARED singular scale under **`a`** is already **distributive**; SHARED **/ɡ/…-sh** is **collective**.
 

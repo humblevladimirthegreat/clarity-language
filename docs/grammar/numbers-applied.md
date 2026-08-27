@@ -87,7 +87,7 @@ Use marker **`ro`** (written **`_`**). Omit exponents. Prefer groups of three di
 
 Time uses the existing number grammar; there is **no** fifth marker vowel and **no** time closer parallel to **`jo`** / **`ju`**.
 
-**Bare `/h/` + `ro` (`hro…`) is reserved for temporal circumstance** (clock or calendar). Spoken `hro` already marks that reading; do not use bare `h_…` for channel, frequency, gate, room-as-where, or other non-time codes.
+**Bare `/h/` + `ro` (`hro…`)** marks **temporal circumstance** (clock or calendar). Spoken `hro` already marks that reading; do not use bare `h_…` for channel, frequency, gate, room-as-where, or other non-time codes.
 
 | Job | How |
 |-----|-----|
@@ -173,9 +173,7 @@ Same habit for every SI-style prefix: scale the number, not the unit stem.
 
 `zazawan zululon zel gomonum burelul g+2` → *Azawan is two meters more challenging than Ululon*
 
-Vague degree stays `/w/` on the scale (`zel wogegal gomonum …`) — no unit. Duration and other clause measures use the same unit+amount habit in whatedegur slot the relation needs.
-
-**Not this pattern:** percentage closers (**`jo`** / **`ju`**); bare multiplicative `/h/` factors (`h+1.5`); stacking `b+2 burelul` as two arguments of one adjective; Latin letter abbreviations as Agelan orthography.
+Vague degree stays `/w/` on the scale (`zel wogegal gomonum …`) — no unit. Duration and other clause measures use the same unit+amount habit in whatever slot the relation needs.
 
 
 ### Ranges

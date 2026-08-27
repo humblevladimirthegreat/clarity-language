@@ -111,6 +111,7 @@ Source: [roles.md](../grammar/roles.md), [x-compounds.md](../grammar/x-compounds
 
 Source: [spans.md](../grammar/spans.md)
 
+- **`xuxun`** proper / titled close (`#]` / `#}` / `#)` / `#>`; combined **`#|`** (proper innermost + close-all)
 - EDGE + **-r** combinations other than EDGE **`u`** (anaphor **-r** always uses EDGE **`u`** in the spoken template)
 
 ## Values — later dimensions
@@ -143,4 +144,3 @@ Source: [phonology.md](../grammar/phonology.md)
 | [grammar-docs.md](grammar-docs.md) | Grammar prose — unused slots do not earn a band |
 | [drill-generation.md](drill-generation.md) | Do not drill cells listed here |
 | [TODO.md](../../TODO.md) | Rejected / speculative features, open lexicon |
-| [grammar-review-torodo.md](grammar-review-torodo.md) | Review queue (not this inventory) |

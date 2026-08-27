@@ -10,7 +10,7 @@ How Agelan **sounds** and how syllables are built. Goals: easy to sing, spelling
 
 Agelan uses vowels that are not fully closed, so you can sing high and low without heavy vowel modification. Consonants prefer the **voiced** version so you can sustain a note across letters (voiceless stops the airflow briefly). You may still use unvoiced variants for style. Word shape keeps consonants at **onsets** and at the **word edge**, so held notes and quick singing do not fight mid-syllable stops — and the ending still marks where each word stops when rhythm eats pauses.
 
-**Mnemonic:** singable vowels + clear edges — spelling shows the sound.
+singable vowels + clear edges — spelling shows the sound.
 
 ### Vowels
 

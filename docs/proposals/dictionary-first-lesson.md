@@ -73,7 +73,7 @@ Phonology Intermediate stays later (word ahagetomy with prefixes). [vowel-series
 
 **Do not:** put the whole [reference-suffix.md](../grammar/reference-suffix.md) chapter before core (left-bound `gl-`, join **-n**, number-word exception). This lesson is the **four endings on cites** plus one resume pair.
 
-Sidebar / [cross-doc path](../meta/learning-ledeguls.md#cross-doc-path): move phonology Beginner **up** (before or beside dictionary cites); keep **core** as the sentence page with the dictionary beat at the **start** of that page (or a stub that core then continues).
+Sidebar / [cross-doc path](../meta/learning-levels.md#cross-doc-path): move phonology Beginner **up** (before or beside dictionary cites); keep **core** as the sentence page with the dictionary beat at the **start** of that page (or a stub that core then continues).
 
 [reference-suffix.md](../grammar/reference-suffix.md) Beginner then **repeats** the four endings in clause words and drills; it does not re-explain the lexicon columns from scratch. Pronouns remain the next place that **-r** grows a **stem** rule.
 

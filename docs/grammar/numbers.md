@@ -21,7 +21,7 @@ gloss: `z-cat-sh` · `g-+3`
 *Three cats.*
 ```
 
-**Mnemonic:** **`+`** = how many.
+**`+`** = how many.
 
 ### Ordinals (`g#N`)
 
@@ -35,7 +35,7 @@ gloss: `z-book` · `g-#2`
 *The second book.*
 ```
 
-**Mnemonic:** **`#`** = which place (rank from the start).
+**`#`** = which place (rank from the start).
 
 ### Saying it aloud
 <a id="digits"></a>
@@ -78,7 +78,7 @@ gloss: `z-cat-sh` · `g-+`
 *Cats — more than one.*
 ```
 
-**Mnemonic:** empty after **`+`** = plural amount, not “some unspecified member.”
+empty after **`+`** = plural amount, not “some unspecified member.”
 
 Overlays, writing marks, and exponents are Intermediate / Advanced — **optional** for a first dialogue corpus. Percent, ranges, measures, times, and labels are collected in [numbers-applied.md](numbers-applied.md).
 
@@ -318,7 +318,7 @@ Within each digit group, speech markers build ordinary magnitudes (and later spe
 ### Writing (preferred shorthand)
 <a id="writing-preferred-shorthand"></a>
 
-Speech always uses the full CV grammar above (marker as `r`+V; ending as **-l** / **-m** / **-n** / **-r**). For **free number words**, writing prefers shorthand for the ending, marker, and body. Which surface to use when (shorthand vs spelled CV) is [style](#writing-style-numeric-vs-spelled), not grammar — parsers accept both.
+Speech always uses the full CV grammar above (marker as `r`+V; ending as **-l** / **-m** / **-n** / **-r**). For **free number words**, writing prefers shorthand for the ending, marker, and body. Which surface to use when (shorthand vs spelled CV) is [style](#writing-style-numeric-vs-spelled), not grammar — speech is always full CV; either shorthand or spelled CV writing names the same word.
 
 ```
 [PoS] + [~|@|=]? + [marker] + [body?]
@@ -533,7 +533,7 @@ Contrasts:
 - `j+3` — *Three more!* (quantity addition)
 - `j-3` — *Three short!* / *Three fewer!* / *−3!* (deficit)
 
-Endings still apply (**-l** newly stated item, **-r** *as in (N) above* or digitless `x=#` / `x=#-` / `x=+` / … for *as in that item above* with same marker framing, **-n** titled / official item name, **-m** fuzzy *around item N*; on last-place **`x#e`** / **`x~#e`** / **`x@#e`** / **`x=#e`** and start-place **`x#e-`** / **`x~#e-`** / **`x@#e-`** / **`x=#e-`** as above). Percent / percentage-point closers are not used with `/x/` numbers.
+Endings still apply (**-l** newly stated item, **-r** *as in (N) above* or digitless `x=#` / `x=#-` / `x=+` / … for *as in that item above* with same marker framing, **-n** titled / official item name, **-m** fuzzy *around item N*; on last-place **`x#e`** / **`x~#e`** / **`x@#e`** / **`x=#e`** and start-place **`x#e-`** / **`x~#e-`** / **`x@#e-`** / **`x=#e-`** as above).
 
 
 ### Bare OoM decade bands
@@ -647,7 +647,7 @@ Both writings name the **same word**. Choose the surface by **job**: quantity/ma
 |-----|--------|-----|
 | Free number in a clause slot | **shorthand** | `g+3`, `x#2`, `d_…` — numeral as numeral |
 | [Numeric derivation](numeric-derivation.md#numeric-derivation) / kind morph | **spelled CV** | `zolovexrabal`, not `zolovex+el` |
-| Metalanguage / inventory tables | **shorthand** | patterns like `ROOTx+e` stay scannable |
+| Inventory tables in grammar docs | **shorthand** | patterns like `ROOTx+e` stay scannable |
 
 **Prefer shorthand** for counts, measures, ranks, ranges, thresholds (`zagadalsh g+3`, `z+3 z+5 zel`); digit-strings / times / codes (`d_555,123,4567`, `h_15:30`); scientific / engineering register (`g+5.2e-4`, `g+0e-1`, `g+e3`); compact agenda markers (`x#1`, `x#3e2`); and docs that teach the numeral system.
 
@@ -657,7 +657,7 @@ Both writings name the **same word**. Choose the surface by **job**: quantity/ma
 
 **Gray zone (either OK):** discourse *Finally* / *Starting with* (`x#e` / `x#e-` vs `xrebal` / `xrebual` — lean spelled in prose, shorthand in outlines); digitless plural (`g+` / `gral`); cheers (`j+e` / `jrabal`); soft free specials when hedging a discourse particle rather than a quantity.
 
-**House rules:** (1) free numeral → shorthand by default; (2) content-root derivation → spelled CV by default; (3) shorthand in derivation tables is schematic only; (4) never put number second-slot marks (`~`/`@`/`=`) on derived `NUM`; (5) parsers accept both.
+**Writing defaults:** (1) free numeral → shorthand by default; (2) content-root derivation → spelled CV by default; (3) shorthand in derivation tables is schematic only; (4) never put number second-slot marks (`~`/`@`/`=`) on derived `NUM`.
 
 ### Measure phrases and ranges
 <a id="measure-phrases"></a>
@@ -942,28 +942,6 @@ In **formal** writing and careful speech, treat **omitted exp as ones-place** (`
 
 **`Ne0`** is the normal assert form (any mantissa **`N≠0`**). Formal prose that never uses ambient still rarely needs **`e0`**; omit remains fine when ones-place is already clear.
 
-### Style (numeric vs spelled)
-<a id="writing-style-numeric-vs-spelled"></a>
-<a id="writing-style"></a>
-
-Both writings name the **same word**. Choose the surface by **job**: quantity/math vs ordinary lexicon.
-
-| Job | Prefer | Why |
-|-----|--------|-----|
-| Free number in a clause slot | **shorthand** | `g+3`, `x#2`, `d_…` — numeral as numeral |
-| [Numeric derivation](numeric-derivation.md#numeric-derivation) / kind morph | **spelled CV** | `zolovexrabal`, not `zolovex+el` |
-| Metalanguage / inventory tables | **shorthand** | patterns like `ROOTx+e` stay scannable |
-
-**Prefer shorthand** for counts, measures, ranks, ranges, thresholds (`zagadalsh g+3`, `z+3 z+5 zel`); digit-strings / times / codes (`d_555,123,4567`, `h_15:30`); scientific / engineering register (`g+5.2e-4`, `g+0e-1`, `g+e3`); compact agenda markers (`x#1`, `x#3e2`); and docs that teach the numeral system.
-
-**Prefer spelled CV** for anything after mid-word **`x`** on a content root (lexicon citation forms always spelled); lexicalized morphs treated as affixes (essence / void / quasi / poly / digit morphs / zero×exp on ROOT); literary, sung, or long prose where `+` `#` `_` and second-slot `~`/`@`/`=` break word rhythm; and pronunciation teaching.
-
-**Avoid** the hybrid that derivation invites: shorthand body + host letter ending (`…x+el`). Free numbers use second-slot marks or trailing letters consistently; derived words use ordinary reference endings on the host with a fully spelled `NUM`.
-
-**Gray zone (either OK):** discourse *Finally* / *Starting with* (`x#e` / `x#e-` vs `xrebal` / `xrebual` — lean spelled in prose, shorthand in outlines); digitless plural (`g+` / `gral`); cheers (`j+e` / `jrabal`); soft free specials when hedging a discourse particle rather than a quantity.
-
-**House rules:** (1) free numeral → shorthand by default; (2) content-root derivation → spelled CV by default; (3) shorthand in derivation tables is schematic only; (4) never put number second-slot marks (`~`/`@`/`=`) on derived `NUM`; (5) parsers accept both.
-
 ### Digitless exponents
 <a id="digitless-exponents"></a>
 <a id="extremum-digitless"></a>
@@ -1104,8 +1082,6 @@ Same under `/z/` `/d/` `/b/` (`z+0e` = absolute-zero as subject; `z+0e-1` = deci
 
 **Scalars only for `±0e-1`:** engineering scale-null is **`ra` / `ru`**. On ordinals, digitful exp is [generation](#ordinal-generation) (`g#0e-1` ≠ engineering; **`g#e0`** = current generation). Ordinal zero×digitless **`g#0e`** = [rank annihilated](#rank-annihilated) below.
 
-Mantissa **`0`** + named exp **`0`** (**`…0e0`**) is **not used**.
-
 ##### Overlay `/v/` and `/h/`
 
 | Form | Reading |
@@ -1166,7 +1142,7 @@ Soft **-m** hedges (*near-disqualified*, …). Free twin of derivation **`ROOTx#
 | **`g#0e`** | **`zazuduxrezobal`** | disqualified place vs disqualified-*kind* |
 | **`v+0l`** | **`vezehuxrazol`** | ordinary zeroing / null-reset — weaker than **`…+0e`** |
 
-Free **`g+e0`** / **`g+Ne0`** are bare OoM / scale assert, **not** derivation morphs. Engineering scale-null is **only** **`±0e-1`** (no other **`±0eN`**). Mantissa **`0`** + named **`e0`** is **not used**.
+Free **`g+e0`** / **`g+Ne0`** are bare OoM / scale assert on free numbers, not kind derivation morphs. Engineering scale-null is **`±0e-1`**.
 
 #### Hyperbole — mantissa + digitless exponent
 <a id="gazillion"></a>
@@ -1231,7 +1207,7 @@ Examples: `g+e` → +∞; `g~+e` → arbitrarily large but finite; `g+1e` → *o
 
 ### Numeric derivation (compounds)
 
-PoS-less number stems may follow mid-word **`x`** on an ordinary content root (`ROOTx+e`, `ROOTx_12`, `ROOTx_e`, `ROOTx+1e`, …). That family is **derivation** (essence, coded subtype, [infinite labels](numeric-derivation.md#infinite-labels), hyperbole-ROOT, …), documented in **[numeric-derivation.md](numeric-derivation.md#numeric-derivation)**; parser cue in **[x-compounds.md](x-compounds.md)**. Running-text examples prefer spelled CV (`zolovexrabal`) — [writing style](#writing-style-numeric-vs-spelled). Free number words on this page stay clause-slot counts, ranks, labels, overlays, and discourse items.
+PoS-less number stems may follow mid-word **`x`** on an ordinary content root (`ROOTx+e`, `ROOTx_12`, `ROOTx_e`, `ROOTx+1e`, …). That family is **derivation** (essence, coded subtype, [infinite labels](numeric-derivation.md#infinite-labels), hyperbole-ROOT, …), documented in **[numeric-derivation.md](numeric-derivation.md#numeric-derivation)**; family cues in **[x-compounds.md](x-compounds.md)**. Running-text examples prefer spelled CV (`zolovexrabal`) — [writing style](#writing-style-numeric-vs-spelled). Free number words on this page stay clause-slot counts, ranks, labels, overlays, and discourse items.
 
 
 ### Stress (pronunciation guide)

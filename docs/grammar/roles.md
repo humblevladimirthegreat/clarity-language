@@ -207,7 +207,7 @@ PoS + DIR + x + ANCHOR + {-l|-m|-n|-r}
 | **ANCHOR** | Whose facing = personal north — [special](pronouns.md#special-pronouns) **`ugobo`** / **`ebone`** / **`ahage`**, a name, or a content **-r** of a being that can face | glue the rose to a face |
 | **Ending** | Ordinary reference-suffix senses on the **whole** direction word | ending scopes the compound |
 
-Parser family stays **ordinary** `DIR x ANCHOR` ([x-compounds.md](x-compounds.md)): two roots; direction is the kind, viewpoint narrows it.
+Viewpoint laterals stay **ordinary** `DIR x ANCHOR` ([x-compounds.md](x-compounds.md)): two roots; direction is the kind, viewpoint narrows it.
 
 ```
 `jel vawalal hewezel.`

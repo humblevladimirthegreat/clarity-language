@@ -190,7 +190,8 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 ## Intermediate
 <a id="intermediate"></a>
 
-### Defined core (full)
+### Circumstance inventory (full)
+<a id="defined-core-full"></a>
 
 `/w/` matches `/h/` with host = the adjective (`wal` / `wam` / `wual` / `wuam` / `war` / `wor` / `wur` and the non-bare core below).
 
@@ -257,7 +258,7 @@ Necessity-style *never without…* uses **`hal`** (and join-relation **`huan`**)
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills on this Intermediate band. Try each item before opening **Show answer**. Use the **defined core** (exclusive / inclusive / *not when* / ranked occasions / unspecified-member with conjuncts). Next-clause *when* / *if* stays `/h/` + `/b/` **`orodo`**, not a circumstance fence of sentences.
+Short drills on this Intermediate band. Try each item before opening **Show answer**. Use the **circumstance inventory** (exclusive / inclusive / *not when* / ranked occasions / unspecified-member with conjuncts). Next-clause *when* / *if* stays `/h/` + `/b/` **`orodo`**, not a circumstance fence of sentences.
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `awala` *walk* · `urunu` *run* · `uzune` *sing* · `elebe` *sleep* · `uwuru` *write* · `uruna` *rain* · `ozono` *snow* · `udunu` *night* · `ohohu` *house* · `amuba` *emergency* · `ogegau` *convenience* · `emama` *fix* · `amuga` *workaround* · `orodo` *next clause*
 

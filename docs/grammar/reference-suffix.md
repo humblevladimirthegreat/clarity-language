@@ -16,7 +16,7 @@ Every content word ends with a **reference suffix** — one of four final letter
 
 A bare **-l** / **-m** word always **introduces**. To point back, use **-r** (how resume chooses its antecedent: [pronouns.md](pronouns.md)).
 
-**Mnemonic:** endings answer *how does this root enter the talk?* — new literal, new figurative, named, or already on the table.
+endings answer *how does this root enter the talk?* — new literal, new figurative, named, or already on the table.
 
 **Exception (joins only):** on [join words](coordination.md) (phrase / VP / clause fences, plus [join-act](join-extras.md#join-act-verbs) / [join-relation](join-extras.md#join-relations) stems), **-n** is **not** a name. Everywhere else, **-n** is a proper object. Full join readings: [coordination.md](coordination.md) (Intermediate / Advanced).
 
@@ -280,7 +280,6 @@ Prefix-less [discourse revisers](revisers.md#discourse-revisers) keep reviser en
 | `/h/` | This named standard, channel, or official circumstance. **Exception:** join-relations (`han`, …) — join content, not a name. |
 | `/j/` vocative | Address this named person, place, or title |
 | `/j/` interjection | This named formula or conventional call |
-| `/j/` clause force | *(not used)* |
 | `/x/` | Titled discourse label (thread shift) on other roots. **Exception:** clause join **-n** = soft packaging (`xan`, …) — [coordination.md](coordination.md) |
 
 ### Number-word exception

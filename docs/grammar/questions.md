@@ -274,7 +274,7 @@ Unbound *who* / *what* / *where* = bare phrase **-r** in the queried slot. Unbou
 ### Circumstance (*When?*)
 <a id="circumstance-when"></a>
 
-Under `/h/` / `/w/`, only the [defined core](restrictors.md) has circumstance readings:
+Under `/h/` / `/w/`, only the [circumstance inventory](restrictors.md#defined-core-full) has circumstance readings:
 
 | Form | Statement (bare) | Under question (bare) |
 |------|---------------------|--------------------------|

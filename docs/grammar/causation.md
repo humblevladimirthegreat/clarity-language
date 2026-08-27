@@ -58,7 +58,7 @@ gloss: `z-cloud` · `z-snow` · `z-would-work`
 
 *Clouds or snow would work (for that outcome).*
 ```
-**Mnemonic:** the join’s first vowel is series **`a`** (*add*) — add the antecedent and the outcome follows; closing with exact **-l** (`…aol`) narrows it to the one settled route.
+the join’s first vowel is series **`a`** (*add*) — add the antecedent and the outcome follows; closing with exact **-l** (`…aol`) narrows it to the one settled route.
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -425,7 +425,7 @@ Agelan separates that on the clause root:
 | **`IFF`** (`hezazem`) ↔️ | stands or falls **with** the matrix — not a free freestanding fact claim | stands or falls **with** the dependent | both directions |
 | **`BECAUSE`** (`hurugum`) 🧱 | **asserted** as the foundation the matrix rests on | asserted (or already in force) | explahagetion |
 
-Mnemonic: 🚪 opens onto a maybe, 🧱 is laid down as real, ↔️ welds both sides together.
+🚪 opens onto a maybe, 🧱 is laid down as real, ↔️ welds both sides together.
 
 ```
 `… hurugum borodol zanunul.`

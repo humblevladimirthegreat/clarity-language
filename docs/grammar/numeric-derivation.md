@@ -1,8 +1,6 @@
 # Numeric derivation
 <a id="numeric-derivation-page"></a>
 
-Derive **new senses from a content root** by compounding a PoS-less number stem after mid-word **`x`**. Free number words stay [numbers.md](numbers.md). This page is **Advanced**, come back when you are ready for that ledegul.
-
 ## Advanced
 <a id="advanced"></a>
 
@@ -84,7 +82,7 @@ Stem shape **`ru` + `bu` + exponent digit `N`** (writing **`-e-N`**; bare-OoM ah
 
 #### Scalar digit morphs (`+N` / `-N`)
 
-Single-digit scalars only. Inventory / metalanguage writing uses the marker (**`+N`** / **`-N`**); bare **`ROOTxN`** is illegal (no marker vowel to pronounce). Speech is marker + digit (`ra`+`wo` for `+1`, `ru`+`wo` for `-1`, …). Running-text examples prefer spelled CV (`…xrawol`, not `…x+1l`) — [writing style](numbers.md#writing-style-numeric-vs-spelled). Writing **`+0`…`+9`** uses the strong readings below; **`-N`** (including **`-0`**) is the **privative** of that reading (lacks / undoes / inverse of the `+N` structure).
+Single-digit scalars only. Tables use marker shorthand (**`+N`** / **`-N`**); bare **`ROOTxN`** is illegal (no marker vowel to pronounce). Speech is marker + digit (`ra`+`wo` for `+1`, `ru`+`wo` for `-1`, …). Running-text examples prefer spelled CV (`…xrawol`, not `…x+1l`) — [writing style](numbers.md#writing-style-numeric-vs-spelled). Writing **`+0`…`+9`** uses the strong readings below; **`-N`** (including **`-0`**) is the **privative** of that reading (lacks / undoes / inverse of the `+N` structure).
 
 | `+N` | Strong reading | Example | `-N` privative | Example |
 |------|----------------|---------|----------------|---------|
@@ -131,7 +129,7 @@ Same ahagetomy as free [zero × exponent](numbers.md#zero-exponent); on ROOT = *
 
 **Emptiness chain (kinds):** **`ROOTx-e`** (void of kind) ≠ **`ROOTx+0`** (resettable null) ≠ **`ROOTx+0e`** (total null) ≠ **`ROOTx+0e-`** (sterile grain) ≠ **`ROOTx+0e-1`** (engineering null at 10⁻¹). Free bare **`g+e0`** / **`Ne0`** are [ones-band / OoM-0 assert](numbers.md#bare-oom-bands) on free numbers — not kind morphs here.
 
-**`±0e-1` is scalar ahagetomy only** on free numbers; on ROOT the same stems are kind-scale wipe / residue. No other **`±0eN`** morphs. Free **`…0e0`** and derivation **`ROOTx+e0`** / **`ROOTx+0e0`** / **`ROOTx+Ne0`** are not used.
+**`±0e-1` is scalar anatomy only** on free numbers; on ROOT the same stems are kind-scale wipe / residue.
 
 ##### Zero-exp derivation by PoS
 
@@ -160,7 +158,7 @@ Free ordinal **`#e0`** = current generation — free-number only (no **`ROOTx#e0
 #### Ordinal digit morphs (`#N`)
 <a id="ordinal-digit-morphs"></a>
 
-Single-digit ordinals only. Inventory writing uses marker **`#`** (**`ROOTx#N`**); speech is **`re`** + digit; running-text examples prefer spelled CV (`…xrewol`, not `…x#1l`). **`ROOTx#N`** types ROOT as a **rank-N / Nth-order form** — place is part of the **kind**, not “the Nth token in a contextual series” (that stays free **`… g#N`**). Forward **`#N`** only — no end-relative morph (**`ROOTx#-2`** illegal; free **`g#-2`** covers penenultimate tokens) and no generation morph (**`ROOTx#3e2`** / **`ROOTx#e0`** illegal; free **`g#e0`** = current gen). No privative twin of `#N`; scalar **`-N`** already covers “lacks N-structure.” Landmarks stay digitless: **`#e-`** origin, **`#e`** telos; **`#0e`** = [rank annihilated](#rank-annihilated-morph); **`#N`** = intermediate ranked stage of the kind. Multi-digit `ROOTx#12` → prefer free `g#12` or label **`_`** if it’s an ID.
+Single-digit ordinals only. Tables use marker **`#`** (**`ROOTx#N`**); speech is **`re`** + digit; running-text examples prefer spelled CV (`…xrewol`, not `…x#1l`). **`ROOTx#N`** types ROOT as a **rank-N / Nth-order form** — place is part of the **kind**, not “the Nth token in a contextual series” (that stays free **`… g#N`**). Forward **`#N`** only. No privative twin of `#N`; scalar **`-N`** already covers “lacks N-structure.” Landmarks stay digitless: **`#e-`** origin, **`#e`** telos; **`#0e`** = [rank annihilated](#rank-annihilated-morph); **`#N`** = intermediate ranked stage of the kind. Multi-digit `ROOTx#12` → prefer free `g#12` or label **`_`** if it’s an ID.
 
 | `#N` | Strong reading | Example |
 |------|----------------|---------|

@@ -93,7 +93,7 @@ On **`xa`** compounds, **-l / -m / -r** mark **how you contact** the (claimed) p
 | **-r** | **spiritual** | Big-picture step-back (wider frame — not theology) |
 | **-n** | **proper** | This value-word names a particular object |
 
-**Mnemonic:** **-l** immediate scene; **-m** mental; **-r** resume to a larger frame. No ranked “better” channel.
+**-l** immediate scene; **-m** mental; **-r** resume to a larger frame. No ranked “better” channel.
 
 | Form | Contact |
 |------|---------|
@@ -123,7 +123,7 @@ gloss: `z-neighborhood` · `g-home` · `b-speaker` · `w-competence-met-physical
 | **-r** | **invite** | Worth considering here (lightest) |
 | **-n** | **proper** | This ought-word names a particular object |
 
-**Mnemonic:** **-l** locked / bound; **-r** light invite — matches language-wide **-l** hardness (`jal`, closed joins). Gloss **-l** as **bound in-frame**, not “morally mandatory foredegur.” Always pick an ending on **`xo`**; unknown → **-m**.
+**-l** locked / bound; **-r** light invite — matches language-wide **-l** hardness (`jal`, closed joins). Gloss **-l** as **bound in-frame**, not “morally mandatory foredegur.” Always pick an ending on **`xo`**; unknown → **-m**.
 
 | Form | Force |
 |------|--------|

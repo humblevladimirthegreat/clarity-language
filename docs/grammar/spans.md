@@ -60,7 +60,7 @@ Use a span when:
 - citing someone’s words, a title string, or a proverb **as wording** (**cite**)
 - mid-sentence parenthetical digression (**aside** — open **`h(…)`**; interior is ordinary Agelan, often a fragment)
 - talking about the word or form itself, or *the saying / title X* as a named unit (**mention**; prefer **`@`** / **-n** for the named-unit reading)
-- foreign, code, or other surface the parser must **not** read as Agelan (**opaque**)
+- foreign, code, or other surface Agelan does **not** parse as native content (**opaque**)
 - referring back to a prior span (**anaphor** **-r** / `…[=]`)
 
 | Reading | Use |
@@ -133,7 +133,7 @@ gloss: `z-grace` · `v-walk` · `h-(happy)`
 | **That (prior span) again** | span anaphor — `daxur` / `hexur` / `duxur` / … |
 | **Name / word citation outside a clause** | prefix-less **root + ending** — [citation forms](core.md#citation-forms) (`ugobon.`, `<Sam>n`) — not a span |
 
-**Trap:** `d<sushi>` is a span open + interior blob; `d<sushi>l` is one content word whose root is foreign. Do not put **-l** / **-m** / **-n** / **-r** after an opaque closer. Spans need a PoS because they fill a **clause** slot; freestanding citation drops the role letter instead.
+`d<sushi>` is a span open + interior blob; `d<sushi>l` is one content word whose root is foreign. Do not put **-l** / **-m** / **-n** / **-r** after an opaque closer. Spans need a PoS because they fill a **clause** slot; freestanding citation drops the role letter instead.
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -282,14 +282,12 @@ Example: **`daxal`** = `d` + `a` + `x` + `a` + `l` → open exact multi-token ci
 
 Only **a** / **e** / **o** / **u** on TYPE. No stacked vowels on TYPE.
 
-**Mnemonic:** vowels track the [join series](coordination.md#join-type-vowel-series) loosely — **a** additive → cite; **e** rank → aside; **o** choice → mention; **u** negation → opaque. The job is **span packaging**, not revision or set/rank join.
-
-| TYPE | Role | Writing |
-|------|------|---------|
-| **a** | **cite** — cited wording; clausal interiors: outer speaker does **not** assert | `[` … `]` |
-| **e** | **aside** — `/h/` digression; outer speaker **does** assert; interior may be a fragment or a same-force clause body | `h(` … `)` |
-| **o** | **mention** — the word or form as object; with **-n**, named unit | `{` … `}` |
-| **u** | **opaque** — foreign / code / raw blob; parser **skips** interior | `<` … `>` |
+| TYPE | Role | Writing | Mnemonic |
+|------|------|---------|----------|
+| **a** | **cite** — cited wording; clausal interiors: outer speaker does **not** assert | `[` … `]` | **a** additive → cite |
+| **e** | **aside** — `/h/` digression; outer speaker **does** assert; interior may be a fragment or a same-force clause body | `h(` … `)` | **e** rank → aside |
+| **o** | **mention** — the word or form as object; with **-n**, named unit | `{` … `}` | **o** choice → mention |
+| **u** | **opaque** — foreign / code / raw blob; interior is not native Agelan | `<` … `>` | **u** negation → opaque |
 
 A native office **handle** refers with ordinary **-n** (`zedulon`) — [named handles](reference-suffix.md#named-handles). Mention `{edulo}` is that **form**; opaque / compact loan is a **foreign** acronym’s surface (`z<FBI>n`).
 
@@ -309,7 +307,7 @@ The vowel **after** `x` is **EDGE** — how far the open runs.
 
 **Anaphor `-r`** always uses EDGE **`u`** in the spoken template (`daxur`).
 
-EDGE **`a`** / **`e`** / **`o`** take **-l** / **-m** / **-n**. EDGE **`u`** takes exact **-l** (`daxul`) or anaphor **-r** (`daxur`); paraphrase-empty and proper-empty are unused.
+EDGE **`a`** / **`e`** / **`o`** take **-l** / **-m** / **-n**. EDGE **`u`** takes exact **-l** (`daxul`) or anaphor **-r** (`daxur`).
 
 ### Endings on opens and span pronouns
 <a id="endings"></a>
@@ -343,7 +341,7 @@ EDGE **`a`** / **`e`** / **`o`** take **-l** / **-m** / **-n**. EDGE **`u`** tak
 | `d[]` | `daxul` | empty / redacted (EDGE **u**) |
 | `d[=]` | `daxur` | anaphor (EDGE **u**) |
 
-Close does not repeat PoS, TYPE, EDGE, or open fidelity. Explicit close for EDGE **a**: **`xuxul`** (complete) — Intermediate editorial/proper/close-all live in Advanced.
+Close does not repeat PoS, TYPE, EDGE, or open fidelity. Explicit close for EDGE **a**: **`xuxul`** (complete) — Intermediate editorial / close-all live in Advanced.
 
 ### Nesting
 <a id="nesting"></a>
@@ -356,9 +354,7 @@ Examples: `d[ h(…) ]`, `d[ z{…} ]`, `d~[ d<…> ]`. **`@`** / **`~`** apply 
 <a id="adjunct-scope-islands"></a>
 <a id="scope-islands"></a>
 
-**Scope islands** mark a multi-word chunk so an **inside binder** can target that chunk. Writing **`^ … ^`**; speech is **prosody only** (no spoken open/close word). The edges carry **no meaning of their own**.
-
-**Mnemonic:** edges = parentheses; binder = function.
+**Scope islands** mark a multi-word chunk so an **inside binder** can target that chunk. Writing **`^ … ^`**; speech is **prosody only** (no spoken open/close word). The edges carry **no meaning of their own** — like parentheses; the inside binder is the function.
 
 ```
 `^ h<maybe>l zaredel zadagal ^ v<saw>l.`
@@ -399,8 +395,6 @@ gloss: `z-Sam` · `^` · `z-water` · `zal` · `^` · `zam` · `v-saw`
 ```
 
 **Speech / prosody:** brief reset into the island, one tight intonation phrase, boundary on the last island stress. In singing: an ordinary phrase bow — not quote voice, not quiet aside voice.
-
-**Trap:** `jal h<maybe>l ^ zaredel zadagal ^ …` is illegal — island has no inside binder. Put the `/h/` inside.
 
 | Need | Use instead |
 |------|-------------|
@@ -543,36 +537,31 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 ## Advanced
 <a id="advanced"></a>
 
-### Close forms (complete / editorial / proper / close-all)
+### Close forms (complete / editorial / close-all)
 
 | Spoken | Job | Writing | Mnemonic |
 |--------|-----|---------|----------|
 | **`xuxul`** | pop **one** — **complete** | matching closer `]` / `}` / `)` / `>` | exact **-l**: the span closes whole |
 | **`xuxur`** | pop **one** — **editorial** (wording kept as written under an editorial mark: cut off, trail off, or defect noted) | `-]` / `-}` / `-)` / `->` (ASCII hyphen + closer) | resume **-r**: the wording stops short or carries a mark; resume may pick up |
-| **`xuxun`** | pop **one** — **proper / titled** close (reserved — matches the open’s proper **-n**) | `#]` / `#}` / `#)` / `#>` | named **-n**: closes a span held as a proper / titled unit |
 | **`xuxum`** | pop **all** open spans | optional close-all mark `\|` | soft **-m**: sweep everything lightly |
 | **`xuxur`** + **`xuxum`** | editorial innermost, then pop all | `-\|` | |
-| **`xuxun`** + **`xuxum`** | proper innermost, then pop all | `#\|` | |
 
 ```text
 xuxul  =  x + u + x + u + l
 xuxur  =  x + u + x + u + r
-xuxun  =  x + u + x + u + n
 xuxum  =  x + u + x + u + m
 ```
 
-Editorial and proper spans **are committed** and enter anaphor history (`d[=]` / `daxur` may resume them). Combined `-\|` / `#\|` are writing-only shorthand for two spoken closes; bare `xuxur` / `xuxun` never means pop-all by themselves. Illegal: `\|-` / `\|#` (mark must precede close-all).
+Editorial spans **are committed** and enter anaphor history (`d[=]` / `daxur` may resume them). Combined `-\|` is writing-only shorthand for two spoken closes; bare `xuxur` never means pop-all by itself. Illegal: `\|-` / `\|#` (mark must precede close-all).
 
 These forms are not clause joins (`xul` / `xum` = negation — different shape). They are not an empty cite under `/d/` (`daxul` = empty/redacted; `daxur` = that cite; `xuxul` = complete close; `xuxur` = editorial close).
 
 | Writing | Speech | Notes |
 |---------|--------|-------|
 | `d[…-]` | `daxal` … `xuxur` | editorial close |
-| `d[…#]` | `daxal` … `xuxun` | proper close (reserved) |
 | `d[…-\|]` | `daxal` … `xuxur xuxum` | editorial + close-all |
-| `d[…#\|]` | `daxal` … `xuxun xuxum` | proper + close-all |
 
-Prefer EDGE **`a`** + **`xuxur`** for cut-off cites; EDGE **`e`** auto-pop is **complete**, not editorial or proper.
+Prefer EDGE **`a`** + **`xuxur`** for cut-off cites; EDGE **`e`** auto-pop is **complete**, not editorial.
 
 ### Spoken inventory
 <a id="inventory"></a>
@@ -594,10 +583,8 @@ Atomic (EDGE **o**): `…axol` / `…axom` / `…axon` (cite examples); aside at
 |------|-----|
 | `xuxul` | pop one — complete |
 | `xuxur` | pop one — editorial |
-| `xuxun` | pop one — proper (reserved) |
 | `xuxum` | pop all |
 | `xuxur xuxum` | editorial + pop all (writing `-\|`) |
-| `xuxun xuxum` | proper + pop all (writing `#\|`) |
 
 ### Literal content (fence words / meta glyphs)
 <a id="literal-content"></a>
@@ -621,7 +608,7 @@ Speech for a fence **word**:
 daxal duxol xuxul xuxul
 ```
 
-`d[ score d<-> ]` is a **complete** cite whose last content character is a hyphen. `d[ item d<#> ]` is a **complete** cite whose last content character is `#` — not the special close `#]`.
+`d[ score d<-> ]` is a **complete** cite whose last content character is a hyphen. `d[ item d<#> ]` is a **complete** cite whose last content character is `#`.
 
 Writing opaque `d<…>` closes on the first `>`. If the blob **contains** `>`, do not use `<>`; write the spoken opaque (EDGE **a** + **`xuxul`**):
 
@@ -634,7 +621,7 @@ While scanning a span interior, bare `|` / `#` / hyphen are ordinary content unl
 ### Translation practice
 <a id="translation-practice-advanced"></a>
 
-Short drills on this Advanced band. Try each item before opening **Show answer**. Test how the span **closes** (complete / editorial / proper / close-all), or literal fence material as **opaque** content.
+Short drills on this Advanced band. Try each item before opening **Show answer**. Test how the span **closes** (complete / editorial / close-all), or literal fence material as **opaque** content.
 
 **Roots used here:** `azawa` / `ululo` / `uhubu` · `ezehe` *tell* · `uzumu` *happy* (**-m**)
 
@@ -658,19 +645,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 `zuhubun daxal hi hexol zuzumum xuxum vezehel.`
 :::
 
-**4.** *Azawan said “hi…”* — trail off the inner cite, then pop all remaining opens. (writing)
-
-::: details Show answer
-`zazawan d[hi-|] vezehel.`
-:::
-
-**5.** *Ululon cited “hi” as a titled wording*, then pop all remaining opens. (writing)
-
-::: details Show answer
-`zululon d[hi#|] vezehel.`
-:::
-
-**6.** *Azawan said “he typed ] then left.”*
+**4.** *Azawan said “he typed ] then left.”*
 
 ::: details Show answer
 `zazawan d[ he typed d<]> then left ] vezehel.`
@@ -684,31 +659,25 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 *Azawan said “hi…”* (editorial cite — wording trails off)
 :::
 
-**2.** `zululon daxal hi xuxun vezehel.`
-
-::: details Show answer
-*Ululon said “hi”.* (proper close — reserved for spans held as titled units)
-:::
-
-**3.** `zuhubun daxal hi xuxul vezehel.`
+**2.** `zuhubun daxal hi xuxul vezehel.`
 
 ::: details Show answer
 *Uhubun said “hi.”* (complete close of one span)
 :::
 
-**4.** `zazawan daxal hi xuxur xuxum vezehel.`
+**3.** `zazawan daxal hi xuxur xuxum vezehel.`
 
 ::: details Show answer
 *Azawan said “hi…”* (editorial innermost, then pop all)
 :::
 
-**5.** `zululon daxal duxol xuxul xuxul vezehel.`
+**4.** `zululon daxal duxol xuxul xuxul vezehel.`
 
 ::: details Show answer
 *Ululon said the word “xuxul” (as opaque content inside a cite).*
 :::
 
-**6.** `zululon duxal code > 1 xuxul vezehel.`
+**5.** `zululon duxal code > 1 xuxul vezehel.`
 
 ::: details Show answer
 *Ululon said “code > 1.”* (opaque blob; spoken close — writing `<>` would take the first `>` as closer)

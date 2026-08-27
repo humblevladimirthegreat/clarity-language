@@ -14,7 +14,7 @@ Two stem lengths:
 1. **Letter pronoun** — a **fixed prefix of that word’s root**, cut **up to and including the 2nd vowel** (roots are `V(CV)+`, so typically the opening `VCV`). Prefer this when it already picks the right antecedent.
 2. **Full-root pronoun** — the **entire root** + **-r**. Use this when the letter form’s most recent match is **not** what you mean.
 
-**Mnemonic:** **-r** = **r**esume. The listener always takes the **most recent matching** stem — your job is to make the intended one most recent (letter form, full root, or an adjective / ordinal to disambiguate).
+**-r** = **r**esume. The listener always takes the **most recent matching** stem — your job is to make the intended one most recent (letter form, full root, or an adjective / ordinal to disambiguate).
 
 There are no English-style 3rd-person pronoun lexemes (*he* / *she* / *it* / *they*) and no impersonal *one*.
 
@@ -50,7 +50,7 @@ gloss: `z-speaker` · `v-write` · `d-listener`
 *I write you.*
 ```
 
-**Mnemonic:** mic / headphones / handshake name **roles in this utterance** (speech, writing, signing — any channel), not identity essence.
+mic / headphones / handshake name **roles in this utterance** (speech, writing, signing — any channel), not identity essence.
 
 **Endings.** Person roles default to **-n** (definite discourse roles). Soft **-m** hedges the role framing. **`orodo`** defaults to **-l** (exact forward slot); soft **-m** hedges the subordination edge.
 
@@ -96,7 +96,7 @@ When names are unavailable:
 | name…**-sh** | that person **and associates** |
 | join list | exact membership census |
 
-**Trap:** inclusive *we* is **`ahage`**, not speaker **-sh**. Plural listener is the [address set](plurality.md#person-role-sh) (`zebonensh`); *you and yours* uses a **name**…**-sh**.
+Inclusive *we* is **`ahage`**, not speaker **-sh**. Plural listener is the [address set](plurality.md#person-role-sh) (`zebonensh`); *you and yours* uses a **name**…**-sh**.
 
 **`enenu`:** a nonspecific **individual** — not English impersonal *one*, not join **`zar`** / **`dar`**, and not a 3rd-person anaphor (use content **-r** once someone is introduced).
 

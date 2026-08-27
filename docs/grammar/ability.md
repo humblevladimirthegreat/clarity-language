@@ -26,7 +26,7 @@ PoS + HOST + x + {a|e|o|u} + {-l|-m|-n|-r}
 | **Stance vowel** | [Ability stance](#ability-stance) — **`a`** can; **`e` / `o` / `u`** can’t grains |
 | **Ending** | Ordinary [reference-suffix](reference-suffix.md) on the **host** sense |
 
-**Mnemonic:** vowel = can / *can’t how*; ending = how the root enters the talk (**-l** literal, **-m** metaphorical, …).
+vowel = can / *can’t how*; ending = how the root enters the talk (**-l** literal, **-m** metaphorical, …).
 
 #### Stance vowels
 <a id="ability-stance"></a>
@@ -186,7 +186,7 @@ When there is **no single host root** (complex VP, hostless *I can’t*, or abil
 | `/h/` | clause-ledegul capability claim (floats like other `/h/`) |
 | `/w/` | capability framed on the preceding `/ɡ/` |
 
-**Mnemonic:** a bowl holds **what it can** — hostless ability names that capacity without naming one activity root. Ordinary content still available (`zegeral` *cereal* / *a capacity*). Prefer **host + stance** whenever the activity fits one root ([Beginner ability](#ability)).
+a bowl holds **what it can** — hostless ability names that capacity without naming one activity root. Ordinary content still available (`zegeral` *cereal* / *a capacity*). Prefer **host + stance** whenever the activity fits one root ([Beginner ability](#ability)).
 
 Bare `hegeral` / `wegeral` = ability **topic** only (ordinary [reference-suffix](reference-suffix.md)).
 
