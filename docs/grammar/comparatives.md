@@ -221,8 +221,8 @@ Use **`oe`** for exclusive *ladders* (triage / pick-one along the scale). **`ue`
 | `zoel gomonum` | *there is no most challenging* |
 | `zoem gomonum` | *no most challenging comes to mind* |
 | `zazawan zuel gomonum` | *Azawan is the least challenging (of all)* |
-| `zer gomonum` | *whatedegur ranks highest on challenging* — positive twin of empty `zoel gomonum` |
-| `zazawan zululon zer gomonum` | *whichedegur of Azawan or Ululon ranks higher on challenging* |
+| `zer gomonum` | *whatever ranks highest on challenging* — positive twin of empty `zoel gomonum` |
+| `zazawan zululon zer gomonum` | *whichever of Azawan or Ululon ranks higher on challenging* |
 
 Under `/ɡ/`, SHARED `/w/` on a ranked AP fence remains shared *degree* over ranked properties — not a noun-scale comparative (use an NP-slot ranked fence with SHARED `/ɡ/`).
 
@@ -328,7 +328,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **3.** `zazawan zululon zer gomonum.`
 
 ::: details Show answer
-*Whichedegur of Azawan or Ululon ranks higher on challenging.*
+*Whichever of Azawan or Ululon ranks higher on challenging.*
 :::
 
 **4.** `zazawan zululon zal guzumum.`
@@ -352,7 +352,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **7.** `zer gomonum.`
 
 ::: details Show answer
-*Whatedegur ranks highest on challenging.*
+*Whatever ranks highest on challenging.*
 :::
 
 **8.** `zuhubun zuel gelel.`
@@ -370,7 +370,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 Bare *bad* / *terrible* can hide an unfair or unspoken standard. Keep the ordinary [comparative](#comparatives) fence and put the standard in the **than**-conjunct as a **named comparee**.
 
-Benchmarks are **NP comparees** on the ranked fence — not [ability](ability.md#ability) / [role](roles.md#role-compounds) hosts, and not `/w/`…**-n** on the scale (*spicy* **[Scoville]** names a measurement frame — [reference-suffix](reference-suffix.md)). A **personal standard** is [numeric derivation](numeric-derivation.md#numeric-derivation) on any named person — the speaker (**`ugobo`**), a house-cast name, or whoedegur’s bar is meant; **Everyone** reuses bare named **`zuan`** ([coordination](coordination.md#focus-phrase)).
+Benchmarks are **NP comparees** on the ranked fence — not [ability](ability.md#ability) / [role](roles.md#role-compounds) hosts, and not `/w/`…**-n** on the scale (*spicy* **[Scoville]** names a measurement frame — [reference-suffix](reference-suffix.md)). A **personal standard** is [numeric derivation](numeric-derivation.md#numeric-derivation) on any named person — the speaker (**`ugobo`**), a house-cast name, or whoever’s bar is meant; **Everyone** reuses bare named **`zuan`** ([coordination](coordination.md#focus-phrase)).
 
 #### Recipe
 

@@ -1,4 +1,4 @@
-# Rainy edeguning — Pure Agalan dialogue
+# Rainy evening — Pure Agalan dialogue
 
 A short three-speaker scene (~30 turns) using **only published Agalan roots** (no foreign `<>` words). Names are nativized phrasal compounds (`ROOT x ROOT` … + **-n**). After a name is introduced, later turns resume it with a letter **-r** pronoun (`zuzur` / `zuber` / `zamer`, …), not the full name — **including for self and addressee** (prefer name pronouns over **`ugobo`** / **`ebone`**). Inclusive *we* (interlocutors) uses **`ahage`** (`zahagen`) when membership is the talk-participants, not a name census.
 
@@ -66,9 +66,9 @@ loose: *But I'm going with coffee.*
 
 **A:** `xezebal zuber huhunum zanunul.`
 
-gloss: `x-howedegur` · `z-←Ubenaxuzonun` · `h-witnessed` · `z-rain`
+gloss: `x-however` · `z-←Ubenaxuzonun` · `h-witnessed` · `z-rain`
 
-strict: *Howedegur — that one (B), per memory — it rains.*
+strict: *However — that one (B), per memory — it rains.*
 
 loose: *Still — it's raining, as I remember.*
 

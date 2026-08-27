@@ -14,7 +14,7 @@ Under **`/h/`** and **`/w/`**, these forms mark **applicability circumstances**:
 
 | Prefix | Host | Floats? |
 |--------|------|---------|
-| `/h/` | the **clause** (verb-ledegul claim) — or a VP chain when the restrictor sits before the VP stretch / in SHARED after a `/v/` join | yes (same free position as ordinary `/h/`) |
+| `/h/` | the **clause** (verb-level claim) — or a VP chain when the restrictor sits before the VP stretch / in SHARED after a `/v/` join | yes (same free position as ordinary `/h/`) |
 | `/w/` | the **preceding `/ɡ/`** (the property) | no (stays on that adjective) |
 
 | Pattern | Reading |
@@ -56,7 +56,7 @@ gloss: `z-grace` · `v-go` · `hal`
 
 gloss: `g-happy` · `w-al`
 
-*Nedegur happy* (for that property).
+*Never happy* (for that property).
 ```
 
 ### With conjuncts (starter)

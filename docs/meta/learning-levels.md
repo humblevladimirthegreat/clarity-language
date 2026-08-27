@@ -1,6 +1,6 @@
-# Learning ledeguls (beginner / intermediate / advanced)
+# Learning levels (beginner / intermediate / advanced)
 
-Applies **only** to learner grammar pages under **`docs/grammar/`** (not to `meta/`, `examples/`, or `proposals/`). Those pages are organized so a learner can finish **all beginner** sections across the folder before **intermediate**, then **advanced**. Ledeguls are assigned with a **small fixed rubric**, applied **loosely** — enough consistency for a cross-doc path, not a score for every morph.
+Applies **only** to learner grammar pages under **`docs/grammar/`** (not to `meta/`, `examples/`, or `proposals/`). Those pages are organized so a learner can finish **all beginner** sections across the folder before **intermediate**, then **advanced**. Levels are assigned with a **small fixed rubric**, applied **loosely** — enough consistency for a cross-doc path, not a score for every morph.
 
 This page is pedagogy, not language design. Design authority stays in the `docs/grammar/` pages. Prose and example style for those pages: [grammar-docs.md](grammar-docs.md). Translation checkpoints at band ends: [translation-exercises.md](translation-exercises.md). Generating missing checkpoints: [drill-generation.md](drill-generation.md).
 
@@ -24,7 +24,7 @@ Ask in order. Prefer the **earlier** band when a concept sits on a boundary and 
 
 ## How to apply
 
-- Tag **sections** inside each grammar doc (`## Beginner`, `## Intermediate`, `## Advanced`), rather than splitting files by ledegul. Omit a later band when it would only recap or list unused slots ([empty or pointless bands](grammar-docs.md#empty-bands)).
+- Tag **sections** inside each grammar doc (`## Beginner`, `## Intermediate`, `## Advanced`), rather than splitting files by level. Omit a later band when it would only recap or list unused slots ([empty or pointless bands](grammar-docs.md#empty-bands)).
 - Do **not** score every morph. For each H2/H3, run the three questions, pick a band, move on.
 - When bands conflict, **dependency wins** over subjective difficulty.
 - Boundary cases needed early for reading examples → prefer the **earlier** band.

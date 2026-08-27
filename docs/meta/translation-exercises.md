@@ -32,7 +32,7 @@ Per-feature teaching already has its practice: rule → mnemonic → 1–3 worke
 | Rule + worked example | Grammar section body |
 | Short Eng ↔ Agalan checkpoint | End of that page’s **Beginner** / **Intermediate** / **Advanced** band |
 | Multi-turn dialogue practice | [`examples/`](../examples/) — not inside every grammar section; grammar pages do not link there |
-| Cross-doc “finish the whole ledegul” review | Optional later; not required on each peer page |
+| Cross-doc “finish the whole level” review | Optional later; not required on each peer page |
 
 ## Drill principles
 <a id="principles"></a>

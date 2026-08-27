@@ -25,7 +25,7 @@ Mantissa digits follow the [normal mantissa rules](numbers.md#exponents) (includ
 mantissa-digits ( je fraction-digits )? jo|ju
 ```
 
-- **Order:** integer digits, optional **`je`** + fractional digits, then **`jo`** or **`ju`**. Nedegur `… jo/ju … je …`.
+- **Order:** integer digits, optional **`je`** + fractional digits, then **`jo`** or **`ju`**. Never `… jo/ju … je …`.
 - **Scalars only:** **`re…jo/ju`** and **`ro…jo/ju`** are illegal.
 - **No exponent in the same group:** do not combine **`ba`** / **`bu`** with **`jo`** or **`ju`**. Use a plain scalar (`je` / `e-N`) for rates outside everyday percent talk.
 - **One closer per word:** at most one **`jo`** or **`ju`** group in the number word (not both; not repeated across groups).
@@ -205,7 +205,7 @@ The fence PoS matches the slot (`zal` / `dal` / `gal` / `bal` / …). Mixed iden
 | **`ae`** | `z+5 z+5 zael` / `z+3 z+5 zaem` | *equal to 5* / *approximately equal* — **not** a span (no continuum needed; continuum + **`ae`** + numbers is not a range reading) |
 | **`oe`** | — | **Not** ranges — exclusive ranked / bare empty superlative with scale |
 
-**Arity escape:** three or more number conjuncts under **`a`** stay an ordinary discrete inventory (`zal z+1 z+3 z+7` = *1, 3, and 7*), edegun with SHARED. Focus **`zal z+3`** stays *just 3*, not a ray. Focus **ranked** with a number is a [threshold](#numeric-thresholds), not ordinary *only X matters*.
+**Arity escape:** three or more number conjuncts under **`a`** stay an ordinary discrete inventory (`zal z+1 z+3 z+7` = *1, 3, and 7*), even with SHARED. Focus **`zal z+3`** stays *just 3*, not a ray. Focus **ranked** with a number is a [threshold](#numeric-thresholds), not ordinary *only X matters*.
 
 **Contrast with comparatives:** `zazawan zululon zel gomonum` = *Azawan is more challenging than Ululon* (SHARED **scale**, non-number conjuncts). `z+3 z+5 zel gumedul` = *from 3 to 5 on time* (SHARED **continuum**, number endpoints). Bare `z+3 z+5 zel` = prefer 3 over 5.
 
@@ -229,7 +229,7 @@ Same under `/d/` `/b/` `/ɡ/` (`gel g+5` = modifier *\<5*; `duel d+10` = object 
 
 **Inclusive bounds:** default is **strict** (`<` / `>`). For **≤ 5** / **≥ 5**, use a two-endpoint [span](#ranges) with the bound included — do **not** flip focus ranked to inclusive. Exclusive-high **`ul`** stays a two-side span tool (`z+3 ul z+5 zal gurelul`), not a focus threshold marker.
 
-**Unspecified in a threshold:** bare **`e`** + **-r** = unspecified member of the *\< X* ray — `zer z+5` → *some/whatedegur value \< 5* (under question → *which value \< 5?*). **`ue`** takes **no** **-r** (stacked forms never do — [coordination](coordination.md#unspecified-member-r-phrase)); there is no `zuer` threshold. For an unspecified value *\> 5*, use other wording (not a reverse **-r** fence).
+**Unspecified in a threshold:** bare **`e`** + **-r** = unspecified member of the *\< X* ray — `zer z+5` → *some/whatever value \< 5* (under question → *which value \< 5?*). **`ue`** takes **no** **-r** (stacked forms never do — [coordination](coordination.md#unspecified-member-r-phrase)); there is no `zuer` threshold. For an unspecified value *\> 5*, use other wording (not a reverse **-r** fence).
 
 Contrast: `z+3 z+5 zel gumedul` = *from 3 to 5 on time* (span); `z+3 z+5 zel` = *3 ≻ 5* (preference); `z+5 zel` = *\< 5* (focus threshold); `z+e` / `g+e` = +∞ ([digitless exponents](numbers.md#digitless-exponents)). `zazawan zel` (non-number) stays ordinary *only Azawan matters* / [superlative-with-scale](comparatives.md) — **focus number conjunct** triggers the threshold reading when the number is a bound (typically digitful).
 
@@ -256,14 +256,14 @@ Fence **-r** on a number-range shape (still with SHARED continuum) = an **unspec
 | `z+3 z+5 zar gurelul` | *some value in [3, 5]* |
 | `zar gurelul z+3 ul z+5` | *some value in [3, 5)* |
 | `zor gurelul z+3 z+5` | *any value in [3, 5]* (free-choice) |
-| `zer gurelul z+3 z+5` | *whatedegur-by-rank in [3, 5]* |
+| `zer gurelul z+3 z+5` | *whatever-by-rank in [3, 5]* |
 | `zur gurelul z+3 z+5` | *some value other than (in) [3, 5]* — other-than the span |
 
 Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which value in 3–5?*). Same under `/d/` `/b/` / `/ɡ/` as the slot needs (`g+3 g+5 gal gumedul` = modifier *times 3–5*; `d+10 ul d+20 dar gurelul` = object *some value in [10, 20)*).
 
 **Clock / date spans:** do **not** use bare circumstance-`hal` (that series is [applicability](restrictors.md)). Prefer SHARED continuum **`gumedul`** (or a host relation + `/b/`) with digit-string endpoints (`bal gumedul b_15,00 b_16,00`).
 
-Examples: `z+3 z+5 zal gumedul` → *between times 3 and 5*; `zuguhul g+3 g+5 gal gumedul` → *children times 3–5*; `z+3 ul z+5 zal gurelul` → *[3, 5)*; `z+10 z+20 zel gumedul` → *from time 10 to 20*; `z+3 z+5 zel` → *3 ≻ 5* (preference, not a span); `z+5 zel` → *\< 5*; `z+5 zuel` → *\> 5*; `g+e` → +∞; `g-e-` → notional / imaginary amount; `g+1e` → *one gazillion*; `g@+1e` → proper name *the Gazillion*; `g~+e` → arbitrarily large but finite; `g+e-` → arbitrarily small but finite; `g#e` → last place; `g~#e` → near last place; `g#e-` → start / beginning place; `g~#e-` → near first place; `g#1e` → *the gazillionth* / *umpteenth*; `g#1e-` → *the gazillionth-first*; `g#-2` → *2nd from the end* / *penenultimate*; `g#3e2` → *3rd of gen +2*; `h#1e` → *for the gazillionth time*; `h#-2` → *for the penenultimate time*; `x#e-` → *Starting with:*; `x#-1` → *Starting with the last one:*; `x-e-` → *imagine that:*; `v+e` → increase without bound; `v-e-` → treat as imaginary; `h+e` → unbounded multiplicity; `h-e-` → notionally / as if; `j+e` → *To infinity!*; `j#e` → *Finally!*; `j#-2` → *Penenultimate!*; `j-e-` → *As if!*; `z+5 z+5 zael` → *equally 5* / *5 equals 5*; `z+3 z+5 zaem` → *3 and 5 approximately equal*; `z+3 z+5 zar gurelul` → *some value in 3–5*; `z+3 z+5 zol` → *3 or 5* (discrete, not a range).
+Examples: `z+3 z+5 zal gumedul` → *between times 3 and 5*; `zuguhul g+3 g+5 gal gumedul` → *children times 3–5*; `z+3 ul z+5 zal gurelul` → *[3, 5)*; `z+10 z+20 zel gumedul` → *from time 10 to 20*; `z+3 z+5 zel` → *3 ≻ 5* (preference, not a span); `z+5 zel` → *\< 5*; `z+5 zuel` → *\> 5*; `g+e` → +∞; `g-e-` → notional / imaginary amount; `g+1e` → *one gazillion*; `g@+1e` → proper name *the Gazillion*; `g~+e` → arbitrarily large but finite; `g+e-` → arbitrarily small but finite; `g#e` → last place; `g~#e` → near last place; `g#e-` → start / beginning place; `g~#e-` → near first place; `g#1e` → *the gazillionth* / *umpteenth*; `g#1e-` → *the gazillionth-first*; `g#-2` → *2nd from the end* / *penultimate*; `g#3e2` → *3rd of gen +2*; `h#1e` → *for the gazillionth time*; `h#-2` → *for the penultimate time*; `x#e-` → *Starting with:*; `x#-1` → *Starting with the last one:*; `x-e-` → *imagine that:*; `v+e` → increase without bound; `v-e-` → treat as imaginary; `h+e` → unbounded multiplicity; `h-e-` → notionally / as if; `j+e` → *To infinity!*; `j#e` → *Finally!*; `j#-2` → *Penultimate!*; `j-e-` → *As if!*; `z+5 z+5 zael` → *equally 5* / *5 equals 5*; `z+3 z+5 zaem` → *3 and 5 approximately equal*; `z+3 z+5 zar gurelul` → *some value in 3–5*; `z+3 z+5 zol` → *3 or 5* (discrete, not a range).
 
 
 ## See also

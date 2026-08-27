@@ -21,7 +21,7 @@ PoS + HOST + x + {a|e|o|u} + {-l|-m|-n|-r}
 
 | Piece | Role |
 |-------|------|
-| **PoS** | Prefer the host’s usual role — `/v/` (edegunt), `/ɡ/` (property), etc. |
+| **PoS** | Prefer the host’s usual role — `/v/` (event), `/ɡ/` (property), etc. |
 | **HOST** | Any **non-need** content root (*sing*, *lift*, *lead*, …) |
 | **Stance vowel** | [Ability stance](#ability-stance) — **`a`** can; **`e` / `o` / `u`** can’t grains |
 | **Ending** | Ordinary [reference-suffix](reference-suffix.md) on the **host** sense |
@@ -36,7 +36,7 @@ vowel = can / *can’t how*; ending = how the root enters the talk (**-l** liter
 | **`xa`** | **Capable** | can (solo / underspecified scaffold) |
 | **`xe`** | **Temporary can’t** | can’t **right now** (usually able) |
 | **`xo`** | **Modifiable can’t** | can’t, and that may change (also soft default if grain unknown) |
-| **`xu`** | **Irredegursible can’t** | can’t — fixed / impossible as far as you can tell |
+| **`xu`** | **Irreversible can’t** | can’t — fixed / impossible as far as you can tell |
 
 | Form | Reading |
 |------|---------|
@@ -101,7 +101,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zululon vuwuruxal.`
 :::
 
-**6.** *Azawan sings.* (ordinary edegunt — not a can / can’t tag)
+**6.** *Azawan sings.* (ordinary event — not a can / can’t tag)
 
 ::: details Show answer
 `zazawan vuzunul.`
@@ -183,7 +183,7 @@ When there is **no single host root** (complex VP, hostless *I can’t*, or abil
 
 | Prefix | Scope |
 |--------|--------|
-| `/h/` | clause-ledegul capability claim (floats like other `/h/`) |
+| `/h/` | clause-level capability claim (floats like other `/h/`) |
 | `/w/` | capability framed on the preceding `/ɡ/` |
 
 a bowl holds **what it can** — hostless ability names that capacity without naming one activity root. Ordinary content still available (`zegeral` *cereal* / *a capacity*). Prefer **host + stance** whenever the activity fits one root ([Beginner ability](#ability)).
@@ -197,7 +197,7 @@ Bare `hegeral` / `wegeral` = ability **topic** only (ordinary [reference-suffix]
 | **`xa`** | **Capable** | can |
 | **`xe`** | **Temporary can’t** | can’t right now |
 | **`xo`** | **Modifiable can’t** | can’t; may change (speaker change unspecified) — soft default |
-| **`xu`** | **Irredegursible can’t** | can’t; fixed as far as you can tell |
+| **`xu`** | **Irreversible can’t** | can’t; fixed as far as you can tell |
 
 Endings on **`egera` + stance** are ordinary [reference-suffix](reference-suffix.md) (same as host-attached ability). Overlay mood reading usually prefers **-m** when the published sense is figurative; **-l** when you mean capacity in a literal *bowl / cereal* frame.
 

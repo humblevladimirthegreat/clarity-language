@@ -200,7 +200,7 @@ gloss: `z-courage-proper` · `h-DECISION-modifiable` · `v-sing`
 ```
 `zuhubun hegegel velebel.`
 
-gloss: `z-beauty-proper` · `h-DECISION-irredegursible` · `v-sleep`
+gloss: `z-beauty-proper` · `h-DECISION-irreversible` · `v-sleep`
 
 *Uhubun has decided for good to sleep.*
 ```
@@ -219,7 +219,7 @@ Use **DECISION** when the clause marks **pick firmness**. Intention map grain st
 
 | Agalan | Reading |
 |---------|---------|
-| `… hegegel …` | decided; **irredegursible** / settled |
+| `… hegegel …` | decided; **irreversible** / settled |
 | `… hegegem …` | decided; **open to change** (or unknown) |
 | `… hegeger …` | decided **for now** (temporary) |
 | `zazawan howoral hegegel vawalal` | itinerary **and** settled pick |
@@ -228,11 +228,11 @@ Use **DECISION** when the clause marks **pick firmness**. Intention map grain st
 #### Endings — changeability
 <a id="decision-changeability"></a>
 
-On **`egege`**, **-l / -m / -r** match unmet [changeability](values.md#value-changeability): irredegursible / modifiable / temporary. **-n** stays ordinary [proper](reference-suffix.md#proper-name--n).
+On **`egege`**, **-l / -m / -r** match unmet [changeability](values.md#value-changeability): irreversible / modifiable / temporary. **-n** stays ordinary [proper](reference-suffix.md#proper-name--n).
 
 | Ending | Form | Job | Reading |
 |--------|------|-----|---------|
-| **-l** | **`hegegel`** | **irredegursible** | settled / final as far as you can tell |
+| **-l** | **`hegegel`** | **irreversible** | settled / final as far as you can tell |
 | **-m** | **`hegegem`** | **modifiable** (soft default if unknown) | open to revision |
 | **-r** | **`hegeger`** | **temporary** | pick for this moment; usually revisable later |
 

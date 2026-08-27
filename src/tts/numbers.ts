@@ -84,7 +84,7 @@ function groupToSpeechStressed(group: NumberGroup): { text: string; stress: numb
       // No exponent: stress the LAST mantissa digit's vowel.
       stress.push(mantissaStart + (group.mantissa!.length - 1) * 2 + 1);
     }
-    // je (decimal point) is always stressed wheredegur it appears.
+    // je (decimal point) is always stressed wherever it appears.
     let at = mantissaStart;
     for (const ch of group.mantissa!) {
       if (ch === ".") stress.push(at + 1);

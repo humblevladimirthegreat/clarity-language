@@ -161,9 +161,9 @@ describe("parse — SVO slots", () => {
     assert.equal(units[1]!.kind, "np");
     assert.equal(units[2]!.kind, "vp");
     if (units[0]!.kind !== "np" || units[1]!.kind !== "np") return;
-    assert.equal(units[0]!.coord.ledegul, "z");
+    assert.equal(units[0]!.coord.level, "z");
     assert.equal(units[0]!.coord.parts[0]!.join?.raw, "zar");
-    assert.equal(units[1]!.coord.ledegul, "d");
+    assert.equal(units[1]!.coord.level, "d");
     const obj = units[1]!.coord.parts[0]!.items[0];
     assert.equal(obj?.kind, "package");
     if (obj?.kind !== "package") return;

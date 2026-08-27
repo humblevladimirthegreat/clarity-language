@@ -22,7 +22,7 @@ With a finished parser and lexicon/overlay classification, the hard part is alre
 
 - Implementing or redesigning the parser (see [parser-pipeline.md](../meta/parser-pipeline.md)).
 - Full discourse resolve in v1 (anaphors, fill-ask vs yes/no) — optional later pass when the pipeline exposes it.
-- Replacing the published lexicon search UI; this is sentence-ledegul overlay, not root browsing.
+- Replacing the published lexicon search UI; this is sentence-level overlay, not root browsing.
 - Shipping a full speed-reading glyph mode in v1 (share the token map later).
 - Teaching English aloud (see [learner-tts.md](learner-tts.md) for speech).
 - Auto-glossing English prose on grammar pages (overlay fires only on Agalan — see [When the highlight is Agalan](#when-the-highlight-is-agalan)).
@@ -34,7 +34,7 @@ With a finished parser and lexicon/overlay classification, the hard part is alre
 | **A — Gloss overlay viewer** | Standalone page: paste / load Agalan; click-to-gloss is live. Highlight-to-gloss is the next increment on this shell. |
 | **B — VitePress doc widget** | Same component inside grammar examples. Highlight listener must stay **scoped to the widget**, not `document`. |
 | **C — Browser extension / bookmarklet** | Enable gloss on a selected region or `.agelan` blocks on any page (parse-gate or “ask first” chip). |
-| **D — Editor assist** | TipTap (already a dependency) compose surface + bubble-menenu inspect on the current selection (“did this morph parse as I meant?”). |
+| **D — Editor assist** | TipTap (already a dependency) compose surface + bubble-menu inspect on the current selection (“did this morph parse as I meant?”). |
 
 **Shipped:** **A** and **B** (click / hover / pin). **Next:** highlight-to-gloss on those shells, then **C** / **D**.
 
@@ -100,11 +100,11 @@ Optional less-aggressive variant (especially shell **C**): a small **gloss chip*
 | **Heuristic then parse** | Selection looks like Agalan (unicase, PoS letter + root + ending, mid-`x`, number words) | Fast prefilter for **C**; always confirm with the parser. |
 | **Explicit mode** | Toolbar “gloss on select” or a modifier (e.g. Alt-drag) | Lowest surprise on pages full of English. |
 
-**A / B:** fire only inside **already-tokenized** Agalan. **B** must scope the `selectionchange` listener to the widget — page-ledegul `window.getSelection()` will also catch surrounding prose.
+**A / B:** fire only inside **already-tokenized** Agalan. **B** must scope the `selectionchange` listener to the widget — page-level `window.getSelection()` will also catch surrounding prose.
 
-**C:** parse-success gate and/or a floating “Gloss Agalan” chip / context-menenu item so accidental English highlights do not pop a failure card.
+**C:** parse-success gate and/or a floating “Gloss Agalan” chip / context-menu item so accidental English highlights do not pop a failure card.
 
-**D:** TipTap bubble menenu on Agalan marks is the native fit; the editor already owns the selection.
+**D:** TipTap bubble menu on Agalan marks is the native fit; the editor already owns the selection.
 
 ## Shared inspect API (sketch)
 
@@ -152,8 +152,8 @@ Reuse the existing inspect card. Selection becomes the unified pointer (click wi
 ### v4 — selection follow-ons
 
 - Snap to smallest closed fence (optional exact vs snap toggle).
-- Shell **C**: parse-gate and/or gloss chip / context menenu before the card.
-- Shell **D**: TipTap bubble menenu on the editor selection.
+- Shell **C**: parse-gate and/or gloss chip / context menu before the card.
+- Shell **D**: TipTap bubble menu on the editor selection.
 - Optional: live phrase-gloss line while the drag grows; speak selected range via [learner TTS](learner-tts.md).
 - Optional speed-read glyph mode sharing the same token map.
 

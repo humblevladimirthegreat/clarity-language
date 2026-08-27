@@ -36,7 +36,7 @@ After the PoS prefix, look at what sits **left** and **right** of the first mid-
 | Shape (after PoS) | Family | Details |
 |-------------------|--------|---------|
 | **`VOWEL x VOWEL`** + ending | **[Span fence](spans.md)** | Assigned opens: EDGE **`a`/`e`/`o`** + **-l / -m / -n**, EDGE **`u`** + **-l / -r**. Closes: **`xuxul`** / **`xuxur`** / **`xuxum`**. |
-| **`VOWEL x ROOT…`** + ending | **[Role compound](roles.md#role-compounds)** | ROLE **`a`** / **`u`** / **`o`** then edegunt or relation root |
+| **`VOWEL x ROOT…`** + ending | **[Role compound](roles.md#role-compounds)** | ROLE **`a`** / **`u`** / **`o`** then event or relation root |
 | **`ROOT… x VOWEL`** + ending | **[Values](values.md)** or **[ability](ability.md#ability)** | Need root + **`a`/`e`/`o`/`u`** → values; other root + **`xa`/`xe`/`xo`/`xu`** → ability |
 | **`ROOT… x NUM…`** + ending | **[Numeric derivation](numeric-derivation.md#numeric-derivation)** | Right half matches [number](numbers.md) stem grammar **without** its own ending (marker **`+`/`-`/`#`/`_`**, digitless exp including label **`_e`/`_e-`**, hyperbole, [zero × exp](numbers.md#zero-exponent) **`+0e`/`±0e-1`/`#0e`**, label digits, scalar digit morph **`+N`/`-N`**, or ordinal digit morph **`#N`**) |
 | **`ROOT x ROOT`** (+ more **`x ROOT`**) + ending | **Ordinary compound** | Lexicon sense-compounds; [phrasal proper names](reference-suffix.md#phrasal-proper-names) (`zozohuxalanen`); [viewpoint laterals](roles.md#viewpoint-laterals) (`gewezexedonen` *your left*; bare `gewezel` *west*). Extra **`x ROOT`** pieces are ordinary roots only — [order](#ordinary-compound-order) |

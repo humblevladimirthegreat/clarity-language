@@ -168,7 +168,7 @@ Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) —
 | Values stance on need | `horodoloxem` | `h-competence-x-motive` |
 | Role compound | `zaxezeber` | `z-agent-x-dialogue` |
 | Span open / close | `hexal` … `xuxul` | `h-aside-x-multi` · … · `x-span-close` |
-| Number / enenumeration | `x#e-` | `x-starting-with` |
+| Number / enumeration | `x#e-` | `x-starting-with` |
 
 For **phrasal proper names**, gloss each root with the sense **chosen for the label** (why those roots were picked). Proper **-n** is not written.
 
@@ -227,12 +227,12 @@ gloss: `j-yes` · `z-speaker` · `z-and.open` · `z-listener` · `z-and` · `g-h
 Agalan: `xezebal zuber huhunum zanunul.`
 
 ```
-gloss: `x-howedegur` · `z-←Ubenaxuzonun` · `h-witnessed` · `z-rain`
+gloss: `x-however` · `z-←Ubenaxuzonun` · `h-witnessed` · `z-rain`
 
 *Still — it’s raining, as I remember.*
 ```
 
-(Strict teaching line: *Howedegur — that one (B), per memory — it rains.*)
+(Strict teaching line: *However — that one (B), per memory — it rains.*)
 
 ### Ability + value motive
 

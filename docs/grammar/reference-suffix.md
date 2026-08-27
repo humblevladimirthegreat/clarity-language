@@ -62,7 +62,7 @@ Write **role letter + root + ending** as **one token** (`zazawan`). Full writing
 
 **-n** marks a **named designation**: you treat the root as a definite, established label. Usual first cases are people and places (`/z/`…**-n**, `/d/`…**-n**). Prefix-less **…n** outside a clause cites a **name** or **the word-as-label** — [citation forms](core.md#citation-forms). Writing stays lowercase; namedness is the ending, not a capital letter ([capitalization](core.md#capitalization)). Usual named people in examples: *Azawan*, *Ululon*, *Uhubun*.
 
-**-n** on other role letters, multipart names, and titled edegunts are Intermediate ([proper name](#proper-name--n)).
+**-n** on other role letters, multipart names, and titled events are Intermediate ([proper name](#proper-name--n)).
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -230,7 +230,7 @@ The office as referent takes **-n** in a noun slot (`zabulon`). A [mention](span
 
 #### Verbs (`/v/`)
 
-A **named action, rite, or edegunt** — not a generic instance. English parallels: *perform* **[Hamlet]**, *run* **[the Boston Marathon]**, *observe* **[Ramadan]**. The verb root names the kind of doing; **-n** says you mean **that** titled occurrence.
+A **named action, rite, or event** — not a generic instance. English parallels: *perform* **[Hamlet]**, *run* **[the Boston Marathon]**, *observe* **[Ramadan]**. The verb root names the kind of doing; **-n** says you mean **that** titled occurrence.
 
 #### Adjectives (`/ɡ/`)
 
@@ -272,7 +272,7 @@ Prefix-less [discourse revisers](revisers.md#discourse-revisers) keep reviser en
 | Role | **-n** means… |
 |------|----------------|
 | `/z/` `/d/` `/b/` | This named entity (person, place, title, unique referent) |
-| `/v/` | This named edegunt, rite, or titled action. **Exception:** [join-act verbs](join-extras.md#join-act-verbs) (`van`, …) — join content, not a name. |
+| `/v/` | This named event, rite, or titled action. **Exception:** [join-act verbs](join-extras.md#join-act-verbs) (`van`, …) — join content, not a name. |
 | `/ɡ/` | This named style, tradition, brand, or category. **Exception:** [join-relations](join-extras.md#join-relations) (`gan`, …) — join content, not a name. |
 | `/w/` | (Rare) this named scale / grade / criterion on the preceding adjective |
 | `/h/` | This named standard, channel, or official circumstance. **Exception:** join-relations (`han`, …) — join content, not a name. |

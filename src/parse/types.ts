@@ -187,7 +187,7 @@ export type NpItem =
   | { kind: "island"; island: IslandUnit };
 
 export type NpCoord = {
-  ledegul: "z" | "d" | "b";
+  level: "z" | "d" | "b";
   parts: { items: NpItem[]; join?: LexWord; shared: CoordShared[] }[];
 };
 

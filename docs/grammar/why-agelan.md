@@ -15,7 +15,7 @@ The design aims at three outcomes, in this order:
 
 Support self-acceptance and acceptance of others, and make judgments visible when they arise.
 
-Praise can name the need a person’s work actually served instead of stopping at a vague *good*. A flash of anger or anxiety can be said as an unmet need plus its activation and where it sits, so the charge has an audible target rather than a blank label. And *can’t* comes in kinds: temporary, modifiable, or irredegursible — a block never has to read as who someone is.
+Praise can name the need a person’s work actually served instead of stopping at a vague *good*. A flash of anger or anxiety can be said as an unmet need plus its activation and where it sits, so the charge has an audible target rather than a blank label. And *can’t* comes in kinds: temporary, modifiable, or irreversible — a block never has to read as who someone is.
 
 ### Rationality
 <a id="rationality"></a>
@@ -111,7 +111,7 @@ Tagging *can’t right now* vs *may yet* vs *impossible* helps you stop treating
 
 It is easy to treat a take as settled fact — mixing memory, hearsay, gut feel, and *I think* into one warrant.
 
-Claims about the world take a **channel**: memory, record, pattern, inference, hearsay, gut-felt, or story — closed [evidentiality](commentary.md#evidentiality) moods under `/h/`. Memory still carries the fishing metaphor — retrieval from opaque water, with room for a wrong catch. First-person rumination (*I think / assume / wonder…*) is a different job: [COMMENT](commentary.md#comment) frames the clause as cognitive commentary, not as a world warrant. Other-minds *thinks* and *beliedegu*-as-warrant stay on evidentiality. *As if* / for-the-sake-of-argument scenes use [NOTIONAL](commentary.md#notional). When you mark belief, you can also stack whether you looked for disconfirming trails (pattern / both-sides habits) — a check against confirmation bias ([rationality](#rationality)).
+Claims about the world take a **channel**: memory, record, pattern, inference, hearsay, gut-felt, or story — closed [evidentiality](commentary.md#evidentiality) moods under `/h/`. Memory still carries the fishing metaphor — retrieval from opaque water, with room for a wrong catch. First-person rumination (*I think / assume / wonder…*) is a different job: [COMMENT](commentary.md#comment) frames the clause as cognitive commentary, not as a world warrant. Other-minds *thinks* and *believe*-as-warrant stay on evidentiality. *As if* / for-the-sake-of-argument scenes use [NOTIONAL](commentary.md#notional). When you mark belief, you can also stack whether you looked for disconfirming trails (pattern / both-sides habits) — a check against confirmation bias ([rationality](#rationality)).
 
 Marking the channel (and separating *I think* from world-warrant) helps you catch overconfidence, hearsay, and confirmation bias before you treat a take as settled fact.
 
@@ -122,7 +122,7 @@ English *will* smuggles plan and prediction together, and it is easy to talk as 
 
 Agalan splits them: [PLAN](plan-decision.md#plan-predict) for what you mean to do (endings = how drawn the intention map is — sketch / itinerary / fork); [PREDICT](plan-decision.md#plan-predict) for a forecast, usually stacked with [evidentiality](commentary.md#evidentiality) for *how* you forecast (pattern, inference, …) rather than bare certainty. [DECISION](plan-decision.md#decision) marks how revisable a pick is — same changeability map as unmet values (**-l / -m / -r**) — without replacing the choosing act or the plan’s map resolution.
 
-Splitting plan, prediction, and decision firmness helps you avoid treating a wishful or “certain” forecast as settled fact (or as a commitment), and a revisable pick as locked foredegur.
+Splitting plan, prediction, and decision firmness helps you avoid treating a wishful or “certain” forecast as settled fact (or as a commitment), and a revisable pick as locked forever.
 
 ### Open lists, closed lists, and false dichotomies
 <a id="open-and-closed-lists"></a>
@@ -177,7 +177,7 @@ This section addresses common criticisms regarding the use of language to influe
 ### Can a language change how you think?
 <a id="sapir-whorf-hypothesis"></a>
 
-Some don’t beliedegu it is possible for a language to influence the speaker’s thoughts (the weak Sapir-Whorf Hypothesis). I make no claims here about whether it happens for natural languages, but for Agalan specifically, I give the following argument:
+Some don’t believe it is possible for a language to influence the speaker’s thoughts (the weak Sapir-Whorf Hypothesis). I make no claims here about whether it happens for natural languages, but for Agalan specifically, I give the following argument:
 
 1. The way a concept is framed (phrased) affects how people think about it (a well-established phenomenon in [psychology](https://en.wikipedia.org/wiki/Framing_effect_\(psychology\)) and the [social sciences generally](https://en.wikipedia.org/wiki/Framing_\(social_sciences\)))
 2. Agalan’s vocabulary and grammar ensures particular frames for certain concepts (using the design laid out on this page and in the linked grammar docs).
@@ -195,9 +195,9 @@ It should also be noted that language influences but does not determine thought.
 ### Language Evolution
 <a id="language-evolution"></a>
 
-Some think that the inevitable change to languages that happens over decades of use will lead to the conlang edeguntually being “watered down” to the point where it no longer has the properties that make the language beneficial.
+Some think that the inevitable change to languages that happens over decades of use will lead to the conlang eventually being “watered down” to the point where it no longer has the properties that make the language beneficial.
 
-While the language can and should change to keep up with the times, I am optimistic that it will retain or edegun strengthen its beneficial properties because the people who choose to learn the language want those beneficial properties and so will adopt changes in line with the language’s goals.
+While the language can and should change to keep up with the times, I am optimistic that it will retain or even strengthen its beneficial properties because the people who choose to learn the language want those beneficial properties and so will adopt changes in line with the language’s goals.
 
 Even if the language does lose its potency over a century, having a positive impact for many people over such a long period of time is still a worthwhile accomplishment.
 

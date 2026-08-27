@@ -13,7 +13,7 @@ Why no copula: every job English gives *to be* already has its own shape here. K
 
 Assert a property of a subject **without** a verb (`/v/`): subject + adjective (`/ɡ/`), plus any extra detail (`/w/`) or extra noun (`/b/`) on that adjective. Mood, tense, evidentiality, and values still attach with `/h/` (the clause) or `/w/` (on the property).
 
-Content `/v/` is for edegunts and actions — not a light *be* between two nouns.
+Content `/v/` is for events and actions — not a light *be* between two nouns.
 
 | Shape | Reading |
 |-------|---------|

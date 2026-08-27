@@ -15,7 +15,7 @@ Library-first multi-stage parser for CLI checks, fixtures that lock the grammar 
 
 ## Non-goals (still out)
 
-- Multi-document / conversation-ledegul discourse (this pipeline resolves within one `parse(text)` call).
+- Multi-document / conversation-level discourse (this pipeline resolves within one `parse(text)` call).
 - Checking fill-ask *answers* against prior gaps.
 - Treating the parser as a substitute for grammar docs.
 - In-house PEG combinator kits as the foundation.
@@ -29,7 +29,7 @@ Library-first multi-stage parser for CLI checks, fixtures that lock the grammar 
 | Overlays and open roots | CSV → `Map` | [`lexicon-overlays.csv`](../../data/lexicon-overlays.csv), [`lexicon-published.csv`](../../data/lexicon-published.csv) — classification, not parsing |
 | Anaphor / question / SHARED resolve | [`src/parse/resolve.ts`](../../src/parse/resolve.ts) | Discourse over a finished AST |
 
-**Rejected for the foundation:** Parsimmon / Arcsecond / `typescript-parsec`; Ohm as default; Chevrotain alone for character-ledegul morph; a single mega-grammar for all stages.
+**Rejected for the foundation:** Parsimmon / Arcsecond / `typescript-parsec`; Ohm as default; Chevrotain alone for character-level morph; a single mega-grammar for all stages.
 
 ## Pipeline
 
@@ -141,7 +141,7 @@ SHARED classification is **structural** (join vowel + whether conjuncts are numb
 | Allowed custom | Not allowed as “the parser” |
 |----------------|-----------------------------|
 | `classify` Map lookups + small PoS/ending branches | Recursive morph / number descent |
-| `LexWord` → `IToken` adapter | Character-ledegul backtracking toolkit |
+| `LexWord` → `IToken` adapter | Character-level backtracking toolkit |
 | Peggy / Chevrotain action bodies that build AST nodes | Parallel hand fence-stack that duplicates Chevrotain rules |
 | `resolve` walks over a finished AST | Re-parsing spelling to bind anaphors |
 | `parse(text)` orchestration + CLI | Silent recovery that invents structure absent from docs |

@@ -1,7 +1,7 @@
 # Roles and viewpoints
 <a id="roles"></a>
 
-Name edegunt participants (*fighter*, *the one fought*), compass sides, and **whose** left / right you mean.
+Name event participants (*fighter*, *the one fought*), compass sides, and **whose** left / right you mean.
 
 ## Beginner
 <a id="beginner"></a>
@@ -11,7 +11,7 @@ Name edegunt participants (*fighter*, *the one fought*), compass sides, and **wh
 <a id="participant-compounds"></a>
 <a id="agent-patient-reltum"></a>
 
-Name an **edegunt or relation participant** (*fighter*, *the one fought*, *that bond-argument*) without open lexicon role nouns.
+Name an **event or relation participant** (*fighter*, *the one fought*, *that bond-argument*) without open lexicon role nouns.
 
 **Shape:** ROLE vowel **left** of `x` — opposite order from [values](values.md) / [ability](ability.md#ability) (those put the stance vowel **right** of `x`):
 
@@ -29,8 +29,8 @@ PoS + {a|u|o} + x + ROOT + {-l|-m|-n|-r}
 
 | ROLE | Form | ROOT type | Referent | Mnemonic |
 |------|------|-----------|----------|----------|
-| **`a`** | `…axROOT…` | **edegunt** (verb / edegunt noun stem) | **agent** — doer / subject-like participant of that edegunt | **a** ≈ additive: adds a doer |
-| **`u`** | `…uxROOT…` | **edegunt** | **patient** — undergoer / object-like participant of that edegunt | **u** ≈ subtractive: undergoes it |
+| **`a`** | `…axROOT…` | **event** (verb / event noun stem) | **agent** — doer / subject-like participant of that event | **a** ≈ additive: adds a doer |
+| **`u`** | `…uxROOT…` | **event** | **patient** — undergoer / object-like participant of that event | **u** ≈ subtractive: undergoes it |
 | **`o`** | `…oxROOT…` | **relation** (complex `/ɡ/` / `/h/` / [join-relation](join-extras.md#join-relations) root, …) | **reltum** — the `/b/` argument pole of that relation | **o** ≈ oblique: the `/b/` pole |
 
 Vowel echo only — not reviser or join readings. Mid-word **`x`** map: [x-compounds.md](x-compounds.md).
@@ -42,11 +42,11 @@ Vowel echo only — not reviser or join readings. Mid-word **`x`** map: [x-compo
 | **-l** | Indefinite / kind — *a fighter*, *fighters as a type* (`zaxuvugul`) |
 | **-m** | Soft / hedged role |
 | **-n** | Titled / epithet role label (rare) |
-| **-r** | Definite — participant of the **most recent matching** edegunt (**`a`/`u`**) or relation (**`o`**) for that ROOT |
+| **-r** | Definite — participant of the **most recent matching** event (**`a`/`u`**) or relation (**`o`**) for that ROOT |
 
-**-r** resolution: match ROOT to the most recent verb, edegunt noun, or relation word with that stem (including a ROOT half inside a prior role compound). ROLE picks that frame’s agent, patient, or `/b/` pole — including when the participant was only introduced as [unspecified-member](coordination.md#unspecified-member-r-phrase) **`zar`** / **`dar`** / ….
+**-r** resolution: match ROOT to the most recent verb, event noun, or relation word with that stem (including a ROOT half inside a prior role compound). ROLE picks that frame’s agent, patient, or `/b/` pole — including when the participant was only introduced as [unspecified-member](coordination.md#unspecified-member-r-phrase) **`zar`** / **`dar`** / ….
 
-Bare edegunt noun stays the edegunt: `zuvugul` / `zuvugur` = *an / that fight*, not a participant. Cross-PoS content **-r** from a verb still resumes the [edegunt](pronouns.md), not the agent — use **`ax`/`ux`** for participants.
+Bare event noun stays the event: `zuvugul` / `zuvugur` = *an / that fight*, not a participant. Cross-PoS content **-r** from a verb still resumes the [event](pronouns.md), not the agent — use **`ax`/`ux`** for participants.
 
 ```
 `zar dugobon vuvugul.`
@@ -59,18 +59,18 @@ gloss: `z-someone` · `d-me` · `v-fight` · `z-fight-agent-r` · `v-run`
 
 | Agalan | Gloss |
 |---------|--------|
-| `zaxuvugul` | *a fighter* (kind; no discourse edegunt required) |
+| `zaxuvugul` | *a fighter* (kind; no discourse event required) |
 | `duxuvugur` | *the one fought* (as object now) |
 | `zoxonogor` | *that bond-argument* (reltum of salient `…onogol b-…`) |
-| `zuvugur` | *that fight* (edegunt — not agent) |
+| `zuvugur` | *that fight* (event — not agent) |
 
 **Key contrasts:**
 
 | | Use |
 |--|-----|
-| Role compound | Participant derived from edegunt/relation root |
-| Content **-r** on edegunt | The edegunt / doing itself ([pronouns](pronouns.md)) |
-| **`zar`** / **`dar`** | Unspecified member introduce; prefer role **-r** once the edegunt is named |
+| Role compound | Participant derived from event/relation root |
+| Content **-r** on event | The event / doing itself ([pronouns](pronouns.md)) |
+| **`zar`** / **`dar`** | Unspecified member introduce; prefer role **-r** once the event is named |
 | Ability `vuvuguxul` | Can’t fight (fixed) — **ROOT x vowel**, not ROLE vowel left of `x` |
 | Span `daxal` / `duxal` | Quote / opaque open — **vowel x vowel**, not ROLE x root |
 

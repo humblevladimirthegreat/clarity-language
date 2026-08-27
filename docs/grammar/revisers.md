@@ -103,7 +103,7 @@ gloss: `al` · `z-grace` · `v-walk`
 *Additionally, Azawan goes.*
 ```
 
-Adversative *but* / *howedegur*, *therefore*, *meanwhile*, and standalone *next* stay other `/x/` roots ([core.md](core.md#discourse-markers-x)). Narrative *and then* between full sentences is clause **`xan`**, not this series.
+Adversative *but* / *however*, *therefore*, *meanwhile*, and standalone *next* stay other `/x/` roots ([core.md](core.md#discourse-markers-x)). Narrative *and then* between full sentences is clause **`xan`**, not this series.
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -291,9 +291,9 @@ Four placements — same spellings, same vowel meanings:
 - **One REV** per discourse opener (no parallel discourse chains on one force). In-clause chains stay inside the body.
 - After an explicit force token, the same spellings are only in-clause revisers (or illegal if mixed-slot).
 
-On a **non-initial** conjunct under a [clause `/x/` fence](coordination.md#clause-ledegul-coordination), **`REV`** sits immediately before that conjunct’s body: `A al B xam` → *A and additionally B*.
+On a **non-initial** conjunct under a [clause `/x/` fence](coordination.md#clause-level-coordination), **`REV`** sits immediately before that conjunct’s body: `A al B xam` → *A and additionally B*.
 
-Before an **`/x/`** linker (*therefore*, *howedegur*, …), **`REV`** scopes the linker+body stretch: `al xamalal …` → *Additionally, therefore …*. Prefer plain `al …` or plain `xamalal …` when one cue is enough.
+Before an **`/x/`** linker (*therefore*, *however*, …), **`REV`** scopes the linker+body stretch: `al xamalal …` → *Additionally, therefore …*. Prefer plain `al …` or plain `xamalal …` when one cue is enough.
 
 ```
 `jazawan al zululon vawalal.`

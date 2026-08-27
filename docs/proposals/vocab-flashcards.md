@@ -6,7 +6,7 @@
 
 ## Motivation
 
-Learners can **look up** roots ([lexicon](../grammar/lexicon.md)) and edeguntually **inspect** sentences in context ([gloss-overlay-ui.md](gloss-overlay-ui.md)). They still lack a path to **retain** vocabulary: Agalan ↔ English mappings, literal vs metaphorical senses, and the closed overlay inventory.
+Learners can **look up** roots ([lexicon](../grammar/lexicon.md)) and eventually **inspect** sentences in context ([gloss-overlay-ui.md](gloss-overlay-ui.md)). They still lack a path to **retain** vocabulary: Agalan ↔ English mappings, literal vs metaphorical senses, and the closed overlay inventory.
 
 The data is already curated (`lexicon-published.csv`, `lexicon-overlays.csv`). Spaced repetition is a solved product problem (Anki and FSRS). The missing piece is a **thin generator** that emits Agalan-shaped note types from those CSVs — not a second dictionary, not a custom SRS engine, and not a fork of generic “AI vocab deck” tools that assume natural-language TTS and LLM enrichment.
 
@@ -59,7 +59,7 @@ Fields drawn from CSV (and tags derived at export time):
 | `root` | `clarity` | Agalan stem (no PoS / ending) |
 | `literal` | published | English literal sense |
 | `metaphorical` | published (may be empty) | Separate sense when present |
-| `mnemonic` | published | Optional redegual / soft hint |
+| `mnemonic` | published | Optional reveal / soft hint |
 | overlay: `sense_form`, `pos`, `definition`, `mnemonic` | overlays CSV | Closed special-vocabulary drills |
 | `tags` | derived | `literal` / `metaphor` / `overlay` / theme / band |
 
@@ -67,7 +67,7 @@ Fields drawn from CSV (and tags derived at export time):
 
 ### Card templates (v1)
 
-| Template | Front | Back (redegual) | When |
+| Template | Front | Back (reveal) | When |
 |----------|-------|---------------|------|
 | **Recognition** | Agalan `root` | literal (+ emoji); metaphorical if any | all published rows |
 | **Production** | English literal | `root` (+ emoji / mnemonic optional) | all published rows |

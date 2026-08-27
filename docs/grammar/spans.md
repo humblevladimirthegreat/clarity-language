@@ -301,7 +301,7 @@ The vowel **after** `x` is **EDGE** — how far the open runs.
 | EDGE | Job | Needs close? | Typical writing |
 |------|-----|--------------|-----------------|
 | **a** | **Multi-token open** — push a stack frame until explicit close (default) | yes | `d[…]` … `]` |
-| **e** | **Clause-scoped** — auto-pop before the next clause-force `/j/` or clause-ledegul `/x/` join (**complete**) | no (auto) | `d[…` run to clause end |
+| **e** | **Clause-scoped** — auto-pop before the next clause-force `/j/` or clause-level `/x/` join (**complete**) | no (auto) | `d[…` run to clause end |
 | **o** | **Atomic** — exactly **one** following token | no | `d[uzunu]`, `d<sushi>` |
 | **u** | **Empty / redacted** — no interior; also **anaphor** **-r** | no | `d[]`, `d[=]` |
 

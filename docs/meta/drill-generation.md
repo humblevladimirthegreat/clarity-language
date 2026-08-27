@@ -23,7 +23,7 @@ Parse the user’s file/band from their message. Accept `coordination`, `coordin
 |--------|--------|
 | One grammar file, no band | Generate **every missing** checkpoint for that file (table below), **Beginner then Intermediate then Advanced** |
 | One file + one band | Generate **only** that band’s checkpoint |
-| Sedegural files, “all pages”, or no file | **Do not start.** Reply with: process **one file per invocation**; list remaining [generate](#allowlist) files that still lack a checkpoint. Stop |
+| Several files, “all pages”, or no file | **Do not start.** Reply with: process **one file per invocation**; list remaining [generate](#allowlist) files that still lack a checkpoint. Stop |
 | A [skip](#skip) file | Say it is skipped and why. Stop |
 
 Edit **only** `docs/grammar/<file>.md`. Do not edit this policy, other grammar pages, `AGENTS.md`, or other meta unless the user asked to change the policy.
@@ -213,7 +213,7 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 7 | `plurality.md` | **exists** | Associative **-sh** (`-lsh` / `-nsh` / `-rsh`); not agreement; person-role **-sh** (address set vs name…**-sh**) | **`ahage`** as the *not this* for inclusive *we*. **`ugobo`/`ebone`** only on person-role items |
 | 8 | `predication.md` | **exists** | Zero-copula property; classification `z… g…` vs kind *noun* `zodogol`; identity **`gonunul` + `/b/`** | No general *to-be* `/v/`. Prefer house names + **SAME**; page-example roots (`odava` / `uzuba`) OK if already on the band |
 | 9 | `coordination.md` | **exists** | Right-close fence; set vs rank vowels; **-l** vs **-m**; list / focus / bare starter forms; negation **`u`**; unspecified **-r** as *something* (not fill-ask) | No revisers, no restrictor `/h/` join readings, no comparatives SHARED scale as the point (that is comparatives) |
-| 10 | `questions.md` | **exists** | **`jol`/`jom`** yes/no vs fill-ask (join **-r**); fill-all; polar **`jael` / `juel` / `jaol`** vs **`jul`** vs join **`zul`** | **`jom`** is taught here as soft *ask* — allowed on this page edegun though full force twins are core Intermediate. Circumstance *when?* **`har`** is Intermediate on this page — do not use |
+| 10 | `questions.md` | **exists** | **`jol`/`jom`** yes/no vs fill-ask (join **-r**); fill-all; polar **`jael` / `juel` / `jaol`** vs **`jul`** vs join **`zul`** | **`jom`** is taught here as soft *ask* — allowed on this page even though full force twins are core Intermediate. Circumstance *when?* **`har`** is Intermediate on this page — do not use |
 | 11 | `revisers.md` | **exists** | Prefix-less **`al`/`am`/`ol`/`ul`** (and **e** / **n** as on the band); in-clause `A REV B`; discourse **`al`** *additionally* before a body | Not a join (`zam` vs `am`). Not **`x#e-` / `x#e`** (numbers discourse) |
 | 11 | `restrictors.md` | **exists** | **`hal`/`ham`/`hual`/`huam`/`har`/`hor`/`hur`** (and `/w/` twins); *only when* vs co-manner *and*; bare *never* / *always* | Not sibling revisers. Not coordination **`zam`** as circumstance |
 | 12 | `spans.md` | **exists** | Writing fences `[ ]` `{ }` `( )` `< >`; **`~`/`@`**; anaphor `d[=]`; PoS = outer slot; **aside** = `h(…)`; interior fragment or same-force clause; when a span is required vs nativized word | `<>` loans **allowed** (this band teaches them). Prefer atomic one-token cites |

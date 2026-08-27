@@ -14,7 +14,7 @@ Ordinary content under **`/h/`** (clause) and **`/w/`** (prior `/ɡ/`) is a **va
 
 | Prefix | Scope |
 |--------|--------|
-| `/h/` | the **clause** (motive, prescription, judgment of the edegunt) — floats like other `/h/` |
+| `/h/` | the **clause** (motive, prescription, judgment of the event) — floats like other `/h/` |
 | `/w/` | the **preceding `/ɡ/`** (property or possessive ascription) — stays on that adjective |
 
 **Shape cue:** **need root** + mid-word **`x`** + stance vowel + ending → value word on this page.
@@ -120,7 +120,7 @@ gloss: `z-neighborhood` · `g-home` · `b-speaker` · `w-competence-met-physical
 | **-m** | **endorse** | I stand behind this should (soft default if unknown) |
 | **-r** | **invite** | Worth considering here (lightest) |
 
-**-l** locked / bound; **-r** light invite — matches language-wide **-l** hardness (`jal`, closed joins). Gloss **-l** as **bound in-frame**, not “morally mandatory foredegur.” Always pick an ending on **`xo`**; unknown → **-m**.
+**-l** locked / bound; **-r** light invite — matches language-wide **-l** hardness (`jal`, closed joins). Gloss **-l** as **bound in-frame**, not “morally mandatory forever.” Always pick an ending on **`xo`**; unknown → **-m**.
 
 | Form | Force |
 |------|--------|
@@ -139,17 +139,17 @@ gloss: `h-relatedness-ought-endorse`
 ### Unmet (`xu`) — changeability
 <a id="value-changeability"></a>
 
-**`xu`** = host costs / subtracts from the need. **-l / -m / -r** = **changeability** (temporariness / redegursibility). **-n** stays ordinary [proper](reference-suffix.md#proper-name--n).
+**`xu`** = host costs / subtracts from the need. **-l / -m / -r** = **changeability** (temporariness / reversibility). **-n** stays ordinary [proper](reference-suffix.md#proper-name--n).
 
 | Ending | Job | Mnemonic |
 |--------|-----|----------|
-| **-l** | **irredegursible** — fixed as far as you can tell | hard / locked (**-l**) |
+| **-l** | **irreversible** — fixed as far as you can tell | hard / locked (**-l**) |
 | **-m** | **modifiable** — effort or circumstance may change it (soft default if unknown) | open to change |
 | **-r** | **temporary** — usually met; not this moment | light / this-moment only |
 
 | Form | Reading |
 |------|---------|
-| `…xul` | **irredegursible** |
+| `…xul` | **irreversible** |
 | `…xum` | **modifiable** |
 | `…xur` | **temporary** |
 
@@ -300,7 +300,7 @@ gloss: `h-relatedness-motive-internal`
 
 **Motive vs prescription:** **`xe`** = *am doing for X*; **`xo`** = *should serve/protect X*.
 
-Same changeability table as unmet **`xu`** is reused on [DECISION](plan-decision.md#decision) (**`egege`**). [Ability](ability.md#ability) puts temporary / modifiable / irredegursible *can’t* on stance vowels instead (**`xe` / `xo` / `xu`**) and keeps ordinary endings.
+Same changeability table as unmet **`xu`** is reused on [DECISION](plan-decision.md#decision) (**`egege`**). [Ability](ability.md#ability) puts temporary / modifiable / irreversible *can’t* on stance vowels instead (**`xe` / `xo` / `xu`**) and keeps ordinary endings.
 
 ### Which ending table?
 
@@ -337,7 +337,7 @@ Prefer **-m** on **`xu` / `xe` / `xo`** when that table’s dimension is unclear
 | `… honogoxol` | should relatedness; **bound** |
 | `… honogoxom` | should relatedness; **endorse** |
 | `… honogoxor` | should relatedness; **invite** |
-| `… honogoxul` | costs relatedness; **irredegursible** |
+| `… honogoxul` | costs relatedness; **irreversible** |
 | `… honogoxur` | costs relatedness; **temporary** |
 | `hegal` | unspecified need (**topic** only) |
 
@@ -478,7 +478,7 @@ Competence (`olozo`) and relatedness (`onogo`) shown for readability; same endin
 
 #### Unmet — changeability
 
-| | **-l** irredegursible | **-m** modifiable | **-r** temporary |
+| | **-l** irreversible | **-m** modifiable | **-r** temporary |
 |--|---------------------|-------------------|------------------|
 | **xu** unmet | `honogoxul` | `honogoxum` | `honogoxur` |
 | mnemonic | fixed for good | could change | only right now |
@@ -512,7 +512,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 `zululon vezehel honogoxol honogoxel.`
 :::
 
-**3.** *The meeting costs competence for good (unmet need, irredegursible — not “can’t”).*
+**3.** *The meeting costs competence for good (unmet need, irreversible — not “can’t”).*
 
 ::: details Show answer
 `zazudol wolozoxul.`
@@ -547,7 +547,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 **3.** `zazudol wolozoxul.`
 
 ::: details Show answer
-*The meeting costs competence (irredegursible unmet need).*
+*The meeting costs competence (irreversible unmet need).*
 :::
 
 **4.** `hawerol.`

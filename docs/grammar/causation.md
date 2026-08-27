@@ -28,7 +28,7 @@ Condition type is carried by **which** join / relation / restrictor you use, plu
 | **Antecedent** | the putative cause / condition (effort, clouds, …) |
 | **Consequent** | the effect / outcome (promotion, rain, …) |
 
-**Default layout:** the outcome is the **host** (effect clause, outcome noun, or edegunt being framed); the condition sits in the **open-inclusive** slot (`…aom`, …).
+**Default layout:** the outcome is the **host** (effect clause, outcome noun, or event being framed); the condition sits in the **open-inclusive** slot (`…aom`, …).
 
 ### Sufficient (default everyday claim)
 <a id="sufficient"></a>
@@ -39,7 +39,7 @@ When both poles are **nouns / phrases**, reuse the inclusive family already in [
 | Prefer | Gloss | Job |
 |--------|--------|-----|
 | focus **`…aom`** (`zaom` / `daom` / …) | *at least X* / *X would work* | Open sufficient hit — others may count |
-| multi inclusive **`…ao…`** | sedegural jointly listed hits | Multiple sufficient routes |
+| multi inclusive **`…ao…`** | several jointly listed hits | Multiple sufficient routes |
 
 Closed **`…aol`** (*X is enough* / full inclusive story) is the **stronger** twin — use when this alone settles the inclusive frame, not as the casual default.
 
@@ -198,7 +198,7 @@ Everyday causation should feel **cheaper** as open sufficient than as exclusive 
 ### Clause poles (subordination)
 <a id="clause-poles"></a>
 
-When the antecedent and/or consequent is a **full clause**, clause inclusive **`xaom` / `xaol`** stay **peer coordination** of sentences ([clause-ledegul joins](coordination.md#clause-ledegul-coordination)) — not *SENT₁ is a sufficient condition for SENT₂*.
+When the antecedent and/or consequent is a **full clause**, clause inclusive **`xaom` / `xaol`** stay **peer coordination** of sentences ([clause-level joins](coordination.md#clause-level-coordination)) — not *SENT₁ is a sufficient condition for SENT₂*.
 
 Prefer subordination:
 
@@ -488,7 +488,7 @@ Causal “laws” show their warrant via evidentiality and universality — not 
 | *although* / *while* / *until* / *before* / *after* | same `/h/`+**`adoro`** shape — [core.md](core.md#dependent-clauses) |
 | *I think P because Q* (speaker grounds) | COMMENT + optional **`hurugum`** — [above](#epistemic-because) |
 | *therefore* (discourse) | **`xamalal`** — [discourse markers](core.md#discourse-markers-x) |
-| *howedegur* / *meanwhile* (discourse) | **`xezebal`** / **`xamenol`** — not **`hezebam`** / **`hegemum`** |
+| *however* / *meanwhile* (discourse) | **`xezebal`** / **`xamenol`** — not **`hezebam`** / **`hegemum`** |
 
 ### Constraints
 <a id="constraints"></a>
@@ -502,7 +502,7 @@ Causal “laws” show their warrant via evidentiality and universality — not 
 - **`CAUSE`** mood (**`egega`** / **`hegegam`**) marks mechanism framing — distinct from [NATURAL](special-vocabulary.md#universality) **`afafa`** and from condition-type joins.
 - Closed **`COND`** adjective is rejected; use joins + **`adoro`** poles.
 - Epistemic *because* stacks COMMENT — no twin clause root.
-- Discourse *howedegur* / *meanwhile* are `/x/` linkers — not subordinating **`hezebam`** / **`hegemum`**.
+- Discourse *however* / *meanwhile* are `/x/` linkers — not subordinating **`hezebam`** / **`hegemum`**.
 
 ### Translation practice
 <a id="translation-practice-advanced"></a>

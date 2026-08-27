@@ -95,7 +95,7 @@ gloss: `z-dog` · `g-blue`
 ### Adjectives (`/ɡ/`)
 <a id="adjectives-ɡ"></a>
 
-`/ɡ/` marks adjectives (and noun-ledegul “related to…” phrases). Using an adjective as the property label, with no `/v/`, is how *is a dog* / *is blue* work (above).
+`/ɡ/` marks adjectives (and noun-level “related to…” phrases). Using an adjective as the property label, with no `/v/`, is how *is a dog* / *is blue* work (above).
 
 **Default (after the noun):** the adjective follows the word it describes.
 
@@ -111,7 +111,7 @@ gloss: `z-dog` · `g-blue`
 
 `/w/` adds detail to the **previous adjective** (`/ɡ/` unit) — intensity, manner of the property, and similar.
 
-It sits on that adjective: normally right after the `/ɡ/` (or after that `/ɡ/`’s attached `/b/` if complex). Sedegural `/w/` words may sit in a row on one `/ɡ/` (`guzumum wazebol wazebel` = *happy, loudly, very loudly*). If the relation needs an extra noun, use complex `/ɡ/` + `/b/` instead.
+It sits on that adjective: normally right after the `/ɡ/` (or after that `/ɡ/`’s attached `/b/` if complex). Several `/w/` words may sit in a row on one `/ɡ/` (`guzumum wazebol wazebel` = *happy, loudly, very loudly*). If the relation needs an extra noun, use complex `/ɡ/` + `/b/` instead.
 
 `/w/` = **with** the adjective (narrow); `/h/` = the **whole** sentence. Same root, different first letter → different reach.
 
@@ -122,7 +122,7 @@ It sits on that adjective: normally right after the `/ɡ/` (or after that `/ɡ/`
 
 Because `/h/` talks about the sentence’s verb, **you may place it anywhere in that sentence** — except a “next sentence” `/h/`+`/b/` unit, which must sit **last in the main sentence** ([Dependent clauses](#dependent-clauses)). `/h/` material stays inside its own sentence.
 
-**Sedegural adverbs at once** just sit next to each other: `hadazal hozowol` → *hastily and still/quietly*.
+**Several adverbs at once** just sit next to each other: `hadazal hozowol` → *hastily and still/quietly*.
 
 ### Complex adjectives, complex adverbs, and extra nouns
 <a id="complex-adjectives-complex-adverbs-and-argument-nouns"></a>
@@ -189,19 +189,19 @@ Closed `/j/` words such as **`jael`** (*yes* / *true*), **`juel`** (*no* / *fals
 ### Discourse markers (`/x/`) — turn vs continue
 <a id="discourse-markers-x"></a>
 
-`/x/` means **keep going under the same speech act**: continue a joined stretch that inherits the opener’s force, and **sentence linkers** (*howedegur*, *therefore*, …). Only the first turn (or a default statement body) sets the speech act.
+`/x/` means **keep going under the same speech act**: continue a joined stretch that inherits the opener’s force, and **sentence linkers** (*however*, *therefore*, …). Only the first turn (or a default statement body) sets the speech act.
 
 word-initial **x** = discourse role (**eXtend** the talk).
 
 | Job | Form family |
 |-----|-------------|
-| Glue between sentences (*howedegur*, *therefore*, …) | `/x/` linkers (`xezebal`, `xamalal`, …) |
+| Glue between sentences (*however*, *therefore*, …) | `/x/` linkers (`xezebal`, `xamalal`, …) |
 | Source / strength (*apparently*, *allegedly*, …) | `/h/` or `/w/` mood |
 
 ### Dependent clauses
 <a id="dependent-clauses"></a>
 
-A dependent sentence uses the special next-sentence pronoun **`adoro`**: in the main sentence it stands for “whatedegur follows right abaway.”
+A dependent sentence uses the special next-sentence pronoun **`adoro`**: in the main sentence it stands for “whatever follows right abaway.”
 
 **`adoro`** 🚪 *doorway* → *what follows* — the main sentence ends at the doorway; the dependent walks through.
 
@@ -226,7 +226,7 @@ gloss: `z-Azawan` · `d-Ululon` · `v-tell` · `d-next-clause`
 | *because* | **`hurugum badorol`** | **`urugu`** | 🧱 *brick* → *foundation* |
 | *if* | **`hadorom badorol`** | **`adoro`** | 🚪 *door* → *opportunity* |
 | *if and only if* | **`hezazem badorol`** | **`ezaze`** | ↔️ *left-right* → *reciprocity* |
-| *although* / *edegun though* | **`hezebam badorol`** | **`ezeba`** | 🦓 *zebra* → *contrast* |
+| *although* / *even though* | **`hezebam badorol`** | **`ezeba`** | 🦓 *zebra* → *contrast* |
 | *while* (concurrent) | **`hegemum badorol`** | **`egemu`** | ♊ *gemini* → *duality* |
 | *until* | **`hudumem badorol`** | **`udume`** | ⏲️ *timer* → *deadline* |
 | *before* | **`hababam badorol`** | **`ababa`** | 🎒 *backpack* → *preparation* |
@@ -385,13 +385,13 @@ Prerequisite: Beginner [join vowel series](coordination.md#join-type-vowel-serie
 
 Every utterance has exactly one **clause force** (written `/j/` or implied **`jal`** / **`jam`**). Shape is **`j` + vowel + ending`**: the vowel picks the speech-act family; **-l** = firm / closed; **-m** = soft / open. Non-default forces are **written**; default statement **`jal`** may be omitted under the Beginner rules.
 
-same **vowel series** as joins — **a** inventory / holds, **o** menenu / pick, **e** ranked priority, **u** negation — plus ending **-l** / **-m**.
+same **vowel series** as joins — **a** inventory / holds, **o** menu / pick, **e** ranked priority, **u** negation — plus ending **-l** / **-m**.
 
 | Form | Force | Letter logic |
 |------|--------|----------------|
 | **jal** | **statement** — claim or description | **a** + **-l** stand behind |
 | **jam** | **soft statement** — tentative / provisional | **a** + **-m** open |
-| **jol** | **question** — yes/no and fill-in ask | **o** menenu + **-l** |
+| **jol** | **question** — yes/no and fill-in ask | **o** menu + **-l** |
 | **jom** | **soft question** — wonder, gentle ask, offer-like | **o** + **-m** |
 | **jel** | **command** — instruction | **e** rank + **-l** |
 | **jem** | **request** — soft directive (*please…*) | **e** + **-m** |
@@ -420,7 +420,7 @@ The package is the same as after-the-noun order: plain `/ɡ/`, or complex `/ɡ/`
 
 **Topic** (*as for X*, *regarding X*) is complex `/h/` + `/b/` naming the topic noun. Published **`ahaza`** *topic* is the dedicated host: `hahazal b<X>l` = *as for X*. Highlight focus by rearranging free word order (and ordinary *very*-type words if needed).
 
-There is no fixed order among sedegural `/h/` units. Each unit’s job comes from its dictionary role; spoken order is free. If two units share a role and need a ranking, left-to-right breaks the tie.
+There is no fixed order among several `/h/` units. Each unit’s job comes from its dictionary role; spoken order is free. If two units share a role and need a ranking, left-to-right breaks the tie.
 
 ### Complex chaining
 <a id="complex-chaining"></a>
@@ -439,7 +439,7 @@ Writing uses **periods** (and matching **`?`** / **`!`**) as **body** boundaries
 | `.` | Fall on last stress + short pause | Closes the prior **body**. Next stretch still defaults to **`jal`** unless a new `/j/` turn, marked force, or *yes* / *no* particle sets otherwise |
 | Next `/j/` turn (*yes* / *no*, call, marked force) | Pitch **reset** into the turn | New turn; firm **-l** / soft **-m** imply **`jal`** / **`jam`** |
 | Bare body or `REV BODY` after `.` | No full reset required | Implied **`jal`** (or **`jam`** only if a soft particle / written **`jam`** said so) |
-| `?` | Rise or high ledegul on last stress | Question (**`jol`** / **`jom`**) — force usually written |
+| `?` | Rise or high level on last stress | Question (**`jol`** / **`jom`**) — force usually written |
 | `!` | Sharp or clipped fall | Command / prohibition — force usually written |
 | Soft statement / soft *yes* / *no* **-m** | Lighter fall; boundary still clear | **`jam`** (implied or written) |
 | `/x/` continue (clause join) | Dip or short pause; **no** full pitch reset | Keep opener force; period after the **whole** joined stretch |
@@ -455,14 +455,14 @@ One-way glue between sentences (ordinary ending; **-l** default closed):
 | Linker | Lexicon root | Metaphor | Example |
 |--------|--------------|----------|---------|
 | *therefore* | **`amala`** | ➡️ *east* → *progress* | `xamalal` |
-| *howedegur* | **`ezeba`** | 🦓 *zebra* → *contrast* | `xezebal` |
+| *however* | **`ezeba`** | 🦓 *zebra* → *contrast* | `xezebal` |
 | *meanwhile* | **`ameno`** | 🕰️ *mantel-clock* → *passage* | `xamenol` |
 | *next* | **`uvulu`** | 🎞️ *film* → *sequence* | `xuvulul` |
 | *but* | **`onuzu`** | 🚧 *construction* → *blockage* | `xonuzul` |
 
-*therefore* moves forward from the prior claim; *howedegur* marks contrast; *meanwhile* is concurrent passage; *next* is the next frame; *but* blocks the expected continuation (harder push-back than *howedegur*). Ordinary content readings of those roots stay available under other role letters.
+*therefore* moves forward from the prior claim; *however* marks contrast; *meanwhile* is concurrent passage; *next* is the next frame; *but* blocks the expected continuation (harder push-back than *however*). Ordinary content readings of those roots stay available under other role letters.
 
-**Not the same as clause poles:** discourse **`xezebal`** (*howedegur*) / **`xamenol`** (*meanwhile*) glue prior sentences; subordinating **`hezebam badorol`** (*although*) / **`hegemum badorol`** (*while*) attach a dependent under **`adoro`** — [dependent clauses](#dependent-clauses).
+**Not the same as clause poles:** discourse **`xezebal`** (*however*) / **`xamenol`** (*meanwhile*) glue prior sentences; subordinating **`hezebam badorol`** (*although*) / **`hegemum badorol`** (*while*) attach a dependent under **`adoro`** — [dependent clauses](#dependent-clauses).
 
 ### Nested dependents
 <a id="nested-dependents"></a>
@@ -479,7 +479,7 @@ A `/j/` **number** word is a call-out (*N more!*, score call, …), not clause f
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `elulu` *blue* · `arede` *red* · `uzumu` smile → *happy* (**-m**) · `awala` *walk* · `urunu` *run* · `elebe` *sleep* · `eje` *perception* (*see*) · `uzunu` *sing* · `aju` *sit* · `azebo` *loud volume* · `amala` *therefore* · `ezeba` *howedegur* / *although* · `ameno` *meanwhile* · `adoro` *next clause* · `urugu` *because* (**-m** on `/h/`)
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `elulu` *blue* · `arede` *red* · `uzumu` smile → *happy* (**-m**) · `awala` *walk* · `urunu` *run* · `elebe` *sleep* · `eje` *perception* (*see*) · `uzunu` *sing* · `aju` *sit* · `azebo` *loud volume* · `amala` *therefore* · `ezeba` *however* / *although* · `ameno` *meanwhile* · `adoro` *next clause* · `urugu` *because* (**-m** on `/h/`)
 
 #### English → Agalan
 
@@ -566,7 +566,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **6.** `zululon vawalal. xezebal zazawan velebel.`
 
 ::: details Show answer
-*Ululon walks. Howedegur Azawan sleeps.*
+*Ululon walks. However Azawan sleeps.*
 :::
 
 **7.** `zazawan vawalal. xamenol zululon velebel.`

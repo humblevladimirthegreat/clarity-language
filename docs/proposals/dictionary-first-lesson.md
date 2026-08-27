@@ -42,7 +42,7 @@ Published lexicon fields are **literal** and **metaphorical** (plus emoji / mnem
 
 Do not teach **-r** as “indefinite.” In this language, *a / some X* on a content word is **-l** (new literal). **-r** is [resume](../grammar/reference-suffix.md): the referent is already in play. English *indefinite* vs *definite* is a rough hint only; the Agalan cut is **introduce** (**-l** / **-m** / **-n**) vs **resume** (**-r**).
 
-**“Not pronouns yet”** means: same ending, same root spelled in full, no stem-prefix rule, no *he/she/it* lexemes, no `zazar` cut from `azawa`. After `odogol.`, write `odogor.` — still a citation or, once sentences start, `zodogor` with the role letter taught in the next beat. How resume **chooses** among sedegural matches stays on [pronouns.md](../grammar/pronouns.md).
+**“Not pronouns yet”** means: same ending, same root spelled in full, no stem-prefix rule, no *he/she/it* lexemes, no `zazar` cut from `azawa`. After `odogol.`, write `odogor.` — still a citation or, once sentences start, `zodogor` with the role letter taught in the next beat. How resume **chooses** among several matches stays on [pronouns.md](../grammar/pronouns.md).
 
 Join unspecified-member **-r** (`zar`, *someone*) stays off this lesson.
 

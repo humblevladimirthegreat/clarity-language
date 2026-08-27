@@ -101,7 +101,7 @@ Ordinary content words (`zugobon`), revisers (`al`), join closes, spoken span op
 2. **Skip + short beep / pause** — mark unreadable foreign audio; show tooltip “foreign surface — not Agalan phonology.”  
 3. **Browser `speechSynthesis` island** — briefly switch to an English (or `lang`-tagged) voice for the payload only, then resume Agalan engine.
 
-**Recommendation:** default **(3)** when `speechSynthesis` has a matching voice; else **(2)**. Nedegur pretend opaque interiors are Agalan roots.
+**Recommendation:** default **(3)** when `speechSynthesis` has a matching voice; else **(2)**. Never pretend opaque interiors are Agalan roots.
 
 ### Write-only surface
 
@@ -133,7 +133,7 @@ Single table from [phonology.md](../grammar/phonology.md); no English respelling
 
 **Clusters still legal:** `gl-` (left-bound), `PoS+r` (numbers), finals `-lsh` / `-msh` / `-nsh` / `-rsh`.
 
-**Stress:** no lexical stress. Engine default: light edegun timing; optional final-lengthening before body-boundary pauses.
+**Stress:** no lexical stress. Engine default: light even timing; optional final-lengthening before body-boundary pauses.
 
 Unvoiced allophones are **not** requested in v1 (voiced preferred).
 
@@ -157,7 +157,7 @@ Coarse cues only — enough for learners to hear structure, not a full intonatio
 | Tag from `toSpeech` | Audio cue |
 |---------------------|-----------|
 | Body end `.` | Fall + medium pause |
-| `?` | Rise or high ledegul + pause |
+| `?` | Rise or high level + pause |
 | `!` | Clipped fall + pause |
 | Soft **-m** force / particle | Slightly shorter / lighter fall (if engine allows; else same as `.`) |
 | `/x/` continue | Short dip / pause; **no** full reset |
@@ -217,7 +217,7 @@ Expect the WASM voice pack to dwarf the TS glue; keep it out of the critical ren
 
 | Risk | Mitigation |
 |------|------------|
-| Engine IPA ≠ Agalan targets (`/e̞/`, `/ɹ/`, `/ɦ/`) | Document closest engine phones; prefer consistency over perfection; fixture the **requested** phones edegun if engine approximates |
+| Engine IPA ≠ Agalan targets (`/e̞/`, `/ɹ/`, `/ɦ/`) | Document closest engine phones; prefer consistency over perfection; fixture the **requested** phones even if engine approximates |
 | Writing↔speech drift from docs | Fixtures quoted from spans/numbers; no ad-hoc expansions |
 | Foreign interiors sound “Agalan” | Explicit loan policy; never run native G2P on opaque payloads |
 | Bundle too heavy for docs site | Lazy-load WASM; Play-button gate |

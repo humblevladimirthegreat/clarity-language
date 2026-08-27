@@ -558,7 +558,7 @@ function disambiguateClause(units: Unit[]): Unit[] {
     {
       kind: "np",
       coord: {
-        ledegul: coord.ledegul,
+        level: coord.level,
         parts: [{ items: [{ kind: "package", package: { ...pkg, adjs: [] } }], shared: [] }],
       },
     },
@@ -582,7 +582,7 @@ function mergeIslandJoins(units: Unit[]): Unit[] {
       out.push({
         kind: "np",
         coord: {
-          ledegul: closer.coord.ledegul,
+          level: closer.coord.level,
           parts: [
             {
               items: [...leading, { kind: "island", island: island.island }, ...firstClose.items],
@@ -751,18 +751,18 @@ function buildNpCoord(cst: CstNode): NpCoord {
     return { items, join, shared };
   });
   const joinTok = built.find((part) => part.join)?.join;
-  let ledegul: NpCoord["ledegul"] = "z";
+  let level: NpCoord["level"] = "z";
   if (joinTok) {
     const pos = joinTok.pos;
-    if (pos === "d" || pos === "b") ledegul = pos;
+    if (pos === "d" || pos === "b") level = pos;
   } else {
     const firstPkg = built.flatMap((p) => p.items).find((i) => i.kind === "package");
     if (firstPkg && firstPkg.kind === "package") {
       const pos = firstPkg.package.head.pos;
-      if (pos === "d" || pos === "b" || pos === "z") ledegul = pos;
+      if (pos === "d" || pos === "b" || pos === "z") level = pos;
     }
   }
-  return { ledegul, parts: built };
+  return { level, parts: built };
 }
 
 function buildVpCoord(cst: CstNode): VpCoord {

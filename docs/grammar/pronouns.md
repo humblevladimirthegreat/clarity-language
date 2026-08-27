@@ -267,7 +267,7 @@ Same referent, new role — English needs a longer paraphrase. Full PoS×PoS tab
 | noun | `/v/` | *do that (to/with it)* |
 | noun | `/ɡ/` | *that one’s* / *of that kind* |
 | noun | `/x/` | *going back to subject X* |
-| verb | noun | *that action / edegunt* — **not** the agent; use [role compounds](roles.md#role-compounds) for agent/patient |
+| verb | noun | *that action / event* — **not** the agent; use [role compounds](roles.md#role-compounds) for agent/patient |
 | verb | `/h/` | *by doing so* / *thereby* |
 | adjective | noun | *the … one* / *that quality* |
 
@@ -277,7 +277,7 @@ Same referent, new role — English needs a longer paraphrase. Full PoS×PoS tab
 
 **Interlocutors (`aha`).** Inclusive *we* as a **discourse role** — not “my side,” not a titled team, and not an exact census (those use [associative **-sh**](plurality.md#associative) / joins). Soft **`zaham`** hedges co-agency.
 
-**Address set.** Prefer: everyone named in this turn’s vocative cluster, plus anyone still held as addressee by context. One addressee → singular **`edone`**; sedegural → **`edone…sh`**. Inclusive co-agency (*shall we…*) → **`aha`**, not speaker **-sh**.
+**Address set.** Prefer: everyone named in this turn’s vocative cluster, plus anyone still held as addressee by context. One addressee → singular **`edone`**; several → **`edone…sh`**. Inclusive co-agency (*shall we…*) → **`aha`**, not speaker **-sh**.
 
 **Subordinators.** The full *because* / *if* / *although* / *while* / *until* / *before* / *after* table and **`adoro`** chaining live in [core.md § Dependent clauses](core.md#dependent-clauses).
 
@@ -414,13 +414,13 @@ Each subsection is an **antecedent** role; table rows are the **pronoun** role. 
 
 | Pronoun role | English approximation |
 |--------------|------------------------|
-| `/z/` `/d/` `/b/` | *that action / edegunt / doing* — **not** the agent/patient; use [role compounds](roles.md#role-compounds) |
+| `/z/` `/d/` `/b/` | *that action / event / doing* — **not** the agent/patient; use [role compounds](roles.md#role-compounds) |
 | `/v/` | *do so* / *do that* |
 | `/ɡ/` | *such* (done that way); property of having done that |
 | `/w/` | Frame on an adjective about that doing |
 | `/h/` | *by doing so* / *thereby* / *in that manner of acting* |
 | `/j/` | Vocative/interjection built on that named act (rare) |
-| `/x/` | *Going back to that (doing / edegunt)* |
+| `/x/` | *Going back to that (doing / event)* |
 
 #### Antecedent was an adjective (`/ɡ/`)
 
@@ -452,7 +452,7 @@ Each subsection is an **antecedent** role; table rows are the **pronoun** role. 
 | `/z/` `/d/` `/b/` | *that time / place / manner / reason / recipient-slot* (the adjunct as a noun) |
 | `/v/` | Act under that circumstance |
 | `/ɡ/` | Property *as of* that circumstance |
-| `/w/` | Adjective-ledegul echo of that frame |
+| `/w/` | Adjective-level echo of that frame |
 | `/h/` | *thus* / *so* / *then* / *that way* |
 | `/j/` | Rare |
 | `/x/` | *Going back to that (circumstance / framing)* |

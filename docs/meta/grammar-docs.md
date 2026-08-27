@@ -21,7 +21,7 @@ Each grammar page is both **source of truth** for its subsystem and **learner te
 
 ## Present the current language only
 
-Write as if this is the only version the reader will edegur see.
+Write as if this is the only version the reader will ever see.
 
 | Do | Don’t |
 |----|--------|
@@ -58,7 +58,7 @@ Default to stating only the allowed form. A contrastive negative spends the lear
 | Smell | Verdict |
 |-------|---------|
 | Boilerplate disclaimers: “X is a **root choice**, not `xa`/`xu` polarity”, “plural **-sh** stays unused on `/h/` `/w/`”, “there is no dedicated root”, “not a fourth vowel/role/join”, “**Not won’t:** …” | Delete. State what the form does instead |
-| **Trap tables** (“Not this (real traps)”, “Traps worth one look”, “Keep these for other jobs”) | Delete from body. If two forms are genenuinely confusable *at this band*, cover it with one sentence plus an example of each — see below |
+| **Trap tables** (“Not this (real traps)”, “Traps worth one look”, “Keep these for other jobs”) | Delete from body. If two forms are genuinely confusable *at this band*, cover it with one sentence plus an example of each — see below |
 | Inline **`Trap:`** / **“Trap:”** labels before a contrast | Same smell as trap tables; the label is editor hygiene | Fold the contrast into the paragraph or table row without the label |
 | “Do not confuse X with Y” | Delete unless the learner will actually produce the wrong form while reading this section |
 
@@ -68,7 +68,7 @@ Default to stating only the allowed form. A contrastive negative spends the lear
 
 Do not append free-text `**Mnemonic:**` paragraphs after a table (that leftover is editor layout, not a learner cue). Put mnemonics in a dedicated column of that table so each row carries its own memory hook. For tables whose rows come from the [vowel series](../grammar/vowel-series.md), the mnemonic column shows how **`a`** / **`o`** / **`e`** / **`u`** maps to that row’s meaning. Metaphor emoji may serve as the visual hook, consistent with published-root conventions.
 
-If a page has sedegural such tables, give each its own mnemonic column; never summarize the whole series once in prose and leave later tables bare.
+If a page has several such tables, give each its own mnemonic column; never summarize the whole series once in prose and leave later tables bare.
 
 ## Empty or pointless bands
 <a id="empty-bands"></a>
@@ -86,7 +86,7 @@ Example sentences name their people with the [house cast](glosses.md#house-cast)
 
 ## Punctuation
 
-Prefer commas, colons, parentheses, or separate sentences over em dashes. An em dash is allowed only when a sentence genenuinely needs a strong break; do not use it as default clause glue.
+Prefer commas, colons, parentheses, or separate sentences over em dashes. An em dash is allowed only when a sentence genuinely needs a strong break; do not use it as default clause glue.
 
 ## Page skeleton
 
@@ -120,7 +120,7 @@ Usual sources (prefer one; reuse the language’s own systems):
 | Source | When |
 |--------|------|
 | **Metaphorical / lexicon sense** | Closed roots and overlays (`amala` ➡️ *east* → *therefore*; **`SAME`**, **`COMMENT`**, …) |
-| **Vowel series** | Join / force / polar stacks that share letter jobs (`a` inventory, `o` menenu, `e` rank, `u` negation, …) |
+| **Vowel series** | Join / force / polar stacks that share letter jobs (`a` inventory, `o` menu, `e` rank, `u` negation, …) |
 | **Ending letters** | **-l** / **-m** / **-n** / **-r** (and stance endings) when the ending *is* the lesson |
 
 One short cue is enough (table column, parenthetical, or a line under the rule). Do not invent a second mnemonic system beside metaphor, vowels, and endings when those already explain the form.
@@ -142,7 +142,7 @@ Do **not** assume the reader knows linguistics jargon. Write for a motivated lea
 |----|--------|
 | Prefer everyday English for the job (*statement*, *ask*, *main clause*, *at the end of…*) | Lead with bare terms like *assertoric*, *illocution*, *matrix-final*, *predicative*, *prosody*, *paradigm* |
 | If a short technical label helps later cross-links, **define it in the same breath** on first use | Use the label alone and hope context teaches it |
-| Keep Agalan-invented labels that the page is teaching (`clause force`, *turn* vs *continue*) and gloss them once | Stack sedegural undefined jargon words in one sentence |
+| Keep Agalan-invented labels that the page is teaching (`clause force`, *turn* vs *continue*) and gloss them once | Stack several undefined jargon words in one sentence |
 | School-grammar words (*subject*, *direct object*, *adverb*) are fine when the English job is clear | Pack morphosyntax shorthand (*zero-copula*, *right-bound*, *adjunct*, *complement clause*) without a plain gloss |
 
 **Test:** would a careful reader who never took a linguistics class still get the rule from the first paragraph and the example? If not, rewrite the lead in plain words and demote the technical term to a parenthetical or a later Intermediate note.
@@ -211,13 +211,13 @@ Do **not** require a **Not this** column on every table, or a counter-example on
 
 - Contrast and decision tables beat encyclopedia dumps in Beginner.
 - Full inventories belong in Intermediate / Advanced, or after the teach block.
-- Prefer columns **Form · Job · Example** (or **Reading**). Add a Morph column only when endings are the point. Add **Not this** only when sedegural rows share real confusables — not by default.
+- Prefer columns **Form · Job · Example** (or **Reading**). Add a Morph column only when endings are the point. Add **Not this** only when several rows share real confusables — not by default.
 - A grammar-table **Gloss** column is short free English unless the row teaches morphology ([glosses.md](glosses.md)).
 
 ## Cross-links and scope
 
 - Own your subsystem; link out for PoS, endings, joins, numbers, and so on — **only to other files in `docs/grammar/`**.
-- Nedegur link to or mention `meta/`, `examples/`, `proposals/`, `data/`, or repo-root files from a grammar page.
+- Never link to or mention `meta/`, `examples/`, `proposals/`, `data/`, or repo-root files from a grammar page.
 - One canonical anchor per concept (`<a id="…">`); keep ids stable.
 - Do not dump the whole related-inventory into the lead paragraph.
 - **IPA and pronunciation** belong only in [phonology.md](../grammar/phonology.md). Grammar docs use orthographic letters (`j`, `x`, `/j/`, `/x/`) — never IPA transcriptions or sound cues. If a learner needs how a letter sounds, link once to phonology (peer in `grammar/`).
@@ -244,7 +244,7 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 |----------|--------|
 | How to use the form | Grammar doc body under **`docs/grammar/`** (banded **Beginner** / **Intermediate** / **Advanced**) |
 | Gloss format | [glosses.md](glosses.md) |
-| Ledegul rubric / reading order | [learning-levels.md](learning-levels.md) ([cross-doc path](learning-levels.md#cross-doc-path)) |
+| Level rubric / reading order | [learning-levels.md](learning-levels.md) ([cross-doc path](learning-levels.md#cross-doc-path)) |
 | Doc prose / example style | This page |
 | Goals / feature criteria | [why-agelan.md](../grammar/why-agelan.md) (psych); [introduction.md](../grammar/introduction.md) (grammar design) |
 | Core sentence grammar | [core.md](../grammar/core.md) |

@@ -128,7 +128,7 @@ const JOIN_SERIES_GLOSS: Record<string, string> = {
   e: "rank",
   ae: "equal rank",
   oe: "ranked exclusive or",
-  ue: "rank redegursal",
+  ue: "rank reversal",
 };
 
 const JOIN_ENDING_GLOSS: Record<string, string> = {

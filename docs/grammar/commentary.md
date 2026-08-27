@@ -14,7 +14,7 @@ Mark **first-person mental commentary** — the mind storying or labeling experi
 
 **Shape:** floating **`/h/`** mood **`odoho`** 💭 *thought* → *commentary* (optional `/w/` only when COMMENT frames a preceding `/ɡ/` — rare). Prefer floating `/h/`. **-l / -m / -r** = [hold](#comment-hold) (how tightly you take the balloon).
 
-a **thought balloon** floats a take over the scene. Bare contact = watching without narration. Ordinary content still available (`zodohol` *a thought*; `vodohol` *to think* as deliberate edegunt).
+a **thought balloon** floats a take over the scene. Bare contact = watching without narration. Ordinary content still available (`zodohol` *a thought*; `vodohol` *to think* as deliberate event).
 
 ```
 `… hodohom …`
@@ -32,7 +32,7 @@ gloss: `h-COMMENT-soft` · `j-soft-ask`
 *I wonder …* — soft commentary + soft ask
 ```
 
-Use COMMENT when the clause is doing **first-person cognitive commentary**. Content verbs stay ordinary (`vodohol` *to think* as a deliberate edegunt); COMMENT **frames** the clause.
+Use COMMENT when the clause is doing **first-person cognitive commentary**. Content verbs stay ordinary (`vodohol` *to think* as a deliberate event); COMMENT **frames** the clause.
 
 **Overlay:** same published root, special `/h/` reading — `hodohom` is commentary; `zodohol` is *a thought*.
 
@@ -87,7 +87,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zululon huhur vawalal.`
 :::
 
-**6.** *Azawan thinks.* (deliberate edegunt, not a commentary frame)
+**6.** *Azawan thinks.* (deliberate event, not a commentary frame)
 
 ::: details Show answer
 `zazawan vodohol.`
@@ -134,7 +134,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **5.** `zululon vodohol.`
 
 ::: details Show answer
-*Ululon thinks.* (an edegunt of thinking, not COMMENT)
+*Ululon thinks.* (an event of thinking, not COMMENT)
 :::
 
 **6.** `jol zazawan hodohom vawalal.`
@@ -185,7 +185,7 @@ Mark **how you know** a world-claim — what happened, what caused what, what so
 
 each root is a **channel** you got the claim through — memory catch, playback, trail of cases, detective work, listening, gut, tale.
 
-First-person *I think* / rumination is [**COMMENT**](#comment) (`odoho`). *Beliedegu* / other-minds *thinks* / causal warrant / forecast warrant use **this** inventory.
+First-person *I think* / rumination is [**COMMENT**](#comment) (`odoho`). *Believe* / other-minds *thinks* / causal warrant / forecast warrant use **this** inventory.
 
 | Mood | Lexicon root | Metaphor | Gloss |
 |------|--------------|----------|-------|
@@ -225,7 +225,7 @@ Pick an evidential **root** for how you know. Stack with **PREDICT**, causation 
 
 Ordinary content still available: `zuvuvul` *a memory*; `veregol` *to record*; `duvuvuxruzol` *that memory that won’t blank* — [null / anti-null](numeric-derivation.md#null-anti-null). Same for the other channel roots (`zerarar` *that ear*, `zorolol` *a scroll*, …).
 
-Idiom cue: *fish a boot* = retriedegu the wrong past (🥾 `abodo` *boot* stays free for the punchline).
+Idiom cue: *fish a boot* = retrieve the wrong past (🥾 `abodo` *boot* stays free for the punchline).
 
 | English cue | Agalan |
 |-------------|---------|
@@ -244,7 +244,7 @@ Idiom cue: *fish a boot* = retriedegu the wrong past (🥾 `abodo` *boot* stays 
 | COMMENT vs warrant | `hodohom` = first-person commentary; evidential = how the **world-claim** is sourced |
 | NOTIONAL vs warrant | `hahadem` = as-if clause frame; evidential = how you know a real claim |
 | Felt vs emotion | **`ehere`** = channel of knowing; emotion = value + ACT + LOCUS |
-| Told vs listening-edegunt | `/h/` **`erara`** = hearsay; *hear the door* = ordinary `/v/` |
+| Told vs listening-event | `/h/` **`erara`** = hearsay; *hear the door* = ordinary `/v/` |
 | Pattern vs COMMON | **`abawa`** = evidential trail; **`ewono`** = exceptionlessness warrant ([universality](special-vocabulary.md#universality)) |
 | Witnessed vs Recorded | fishing retrieval vs playback archive |
 

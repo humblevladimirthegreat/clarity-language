@@ -208,7 +208,7 @@ Mark when the wrong reading would matter: co-agency → **`aha`** or a join; “
 <a id="verbs-v"></a>
 <a id="collective-doing"></a>
 
-On `/v/`, **-sh** marks **collective doing**: the edegunt is **one shared act**, not sedegural parallel doings. A plural subject alone does not force **-sh**. Noun **-sh** grows **who** the subject is; verb **-sh** marks **how** the doing is structured. Same pile story as [collective ascription](#collective-ascription) on `/ɡ/`.
+On `/v/`, **-sh** marks **collective doing**: the event is **one shared act**, not several parallel doings. A plural subject alone does not force **-sh**. Noun **-sh** grows **who** the subject is; verb **-sh** marks **how** the doing is structured. Same pile story as [collective ascription](#collective-ascription) on `/ɡ/`.
 
 | Shape | Reading |
 |-------|---------|
@@ -232,7 +232,7 @@ Count (*three times*) and habit (*always*) stay clause framing: [numbers](number
 <a id="collective"></a>
 <a id="collective-ascription"></a>
 
-On `/ɡ/`, **-sh** marks **collective ascription**: the property holds of the **host set as one unit**, not of members sedegurally.
+On `/ɡ/`, **-sh** marks **collective ascription**: the property holds of the **host set as one unit**, not of members severally.
 
 | Shape | Reading |
 |-------|---------|
@@ -247,7 +247,7 @@ Most useful with [phrase join](coordination.md): SHARED singular scale under **`
 |---------|-------|
 | `zulebol zolozol zal gudurum` | *the file-box and the toolbox are (each) heavy* |
 | `zulebol zolozol zal gudurumsh` | *heavy together* — collective SHARED |
-| `zahadalr gumolam` | *the team is vast* (group-ledegul size) |
+| `zahadalr gumolam` | *the team is vast* (group-level size) |
 | `zulebolsh gudurum` | *the file-boxes are heavy* (members / plain) |
 | `zulebolsh gudurumsh` | *the file-boxes are heavy collectively* |
 
