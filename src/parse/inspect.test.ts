@@ -33,7 +33,11 @@ describe("inspectText", () => {
   });
 
   it("uses overlay definition for closed mood", () => {
-    const result = inspectText("huhunum", tables);
+    const witnessed = [...tables.overlays.values()].find(
+      (o) => o.pos === "h" && /witnessed evidential/i.test(o.definition),
+    );
+    assert.ok(witnessed);
+    const result = inspectText(`h${witnessed.senseForm}`, tables);
     const token = result.tokens[0];
     assert.equal(token?.kind, "word");
     if (token?.kind !== "word") return;

@@ -482,6 +482,48 @@ export function allClarityRoots(syllables: number): string[] {
   return out;
 }
 
+export type LetterDistribution = {
+  vowels: Record<(typeof CLARITY_VOWELS)[number], number>;
+  consonants: Record<(typeof CLARITY_CONSONANTS)[number], number>;
+  vowelTokens: number;
+  consonantTokens: number;
+  letters: number;
+  skipped: number;
+};
+
+/** Count inventory letters in V(CV)+ roots (every occurrence; skip malformed). */
+export function letterDistribution(roots: string[]): LetterDistribution {
+  const vowels = Object.fromEntries(CLARITY_VOWELS.map((v) => [v, 0])) as LetterDistribution["vowels"];
+  const consonants = Object.fromEntries(CLARITY_CONSONANTS.map((c) => [c, 0])) as LetterDistribution["consonants"];
+  let skipped = 0;
+
+  for (const root of roots) {
+    if (!isClarityRootShape(root)) {
+      skipped += 1;
+      continue;
+    }
+    for (let i = 0; i < root.length; i++) {
+      const ch = root[i]!;
+      if (i % 2 === 0) {
+        vowels[ch as (typeof CLARITY_VOWELS)[number]] += 1;
+      } else {
+        consonants[ch as (typeof CLARITY_CONSONANTS)[number]] += 1;
+      }
+    }
+  }
+
+  const vowelTokens = CLARITY_VOWELS.reduce((n, v) => n + vowels[v], 0);
+  const consonantTokens = CLARITY_CONSONANTS.reduce((n, c) => n + consonants[c], 0);
+  return {
+    vowels,
+    consonants,
+    vowelTokens,
+    consonantTokens,
+    letters: vowelTokens + consonantTokens,
+    skipped,
+  };
+}
+
 /**
  * Convert an alphabetical string into an Agelan-compatible root of form V(CV)+.
  * Source letters stay in English order; fillers only repair V(CV)+ shape.

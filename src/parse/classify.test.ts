@@ -29,14 +29,20 @@ function expectReading(text: string, reading: LexReading) {
 
 describe("classify", () => {
   it("overlay mood on published-shaped evidential", () => {
-    const word = expectReading("huhunum", "mood");
+    const sense = [...tables.overlays.values()].find(
+      (o) => o.pos === "h" && /witnessed evidential/i.test(o.definition),
+    );
+    assert.ok(sense);
+    const word = expectReading(`h${sense.senseForm}`, "mood");
     assert.ok(word.overlay);
-    assert.equal(word.overlay!.senseForm, "uhunum");
+    assert.equal(word.overlay!.senseForm, sense.senseForm);
     assert.match(word.overlay!.definition, /witnessed/i);
   });
 
   it("published ordinary on literal fishing manner", () => {
-    const word = expectReading("huhunul", "ordinary");
+    const fishing = [...tables.published.values()].find((r) => r.literal === "fishing");
+    assert.ok(fishing);
+    const word = expectReading(`h${fishing.clarity}l`, "ordinary");
     assert.ok(word.rootGloss?.literal);
     assert.equal(word.overlay, undefined);
   });

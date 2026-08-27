@@ -46,9 +46,8 @@ describe("overlay csv", () => {
   it("parses overlay rows with definition and mnemonic", () => {
     const overlays = parseOverlayCsv(readFileSync(overlayPath, "utf8"));
     assert.ok(overlays.length > 0);
-    const witnessed = overlays.find((row) => row.senseForm === "uhunum" && row.pos === "h");
+    const witnessed = overlays.find((row) => /witnessed evidential/i.test(row.definition) && row.pos === "h");
     assert.ok(witnessed);
-    assert.match(witnessed.definition, /witnessed/i);
     assert.ok(witnessed.mnemonic.length > 0);
   });
 });
@@ -84,11 +83,17 @@ describe("searchLexicon", () => {
     assert.ok(top?.matchFields.includes("clarity"));
   });
 
-  it("finds evidential sense_form uhunum and attaches overlays to fishing row", () => {
-    const results = searchLexicon(index, rows, "uhunum", { limit: 10, overlays, overlayIndex });
-    const hit = results.find((r) => r.clarity === "uhunu");
-    assert.ok(hit, "expected fishing/uhunu for uhunum query");
-    assert.ok(hit.overlays.some((o) => o.senseForm === "uhunum" && o.pos === "h"));
+  it("finds evidential sense_form and attaches overlays to fishing row", () => {
+    const fishing = rows.find((r) => r.literal === "fishing");
+    assert.ok(fishing);
+    const witnessed = overlays.find(
+      (row) => /witnessed evidential/i.test(row.definition) && row.pos === "h",
+    );
+    assert.ok(witnessed);
+    const results = searchLexicon(index, rows, witnessed.senseForm, { limit: 10, overlays, overlayIndex });
+    const hit = results.find((r) => r.clarity === fishing.clarity);
+    assert.ok(hit, `expected fishing/${fishing.clarity} for ${witnessed.senseForm} query`);
+    assert.ok(hit.overlays.some((o) => o.senseForm === witnessed.senseForm && o.pos === "h"));
   });
 
   it("attaches benchmark overlays to published roots", () => {
@@ -122,15 +127,22 @@ describe("searchLexicon", () => {
     assert.equal(gan.clarity, "an");
   });
 
-  it("finds evidential via spelled word huhunum", () => {
-    const results = searchLexicon(index, rows, "huhunum", { limit: 10, overlays, overlayIndex });
-    const hit = results.find((r) => r.clarity === "uhunu");
-    assert.ok(hit, "expected fishing/uhunu for huhunum query");
-    assert.ok(hit.overlays.some((o) => o.senseForm === "uhunum" && o.pos === "h"));
+  it("finds evidential via spelled overlay word", () => {
+    const fishing = rows.find((r) => r.literal === "fishing");
+    assert.ok(fishing);
+    const witnessed = overlays.find(
+      (row) => /witnessed evidential/i.test(row.definition) && row.pos === "h",
+    );
+    assert.ok(witnessed);
+    const spelled = `h${witnessed.senseForm}`;
+    const results = searchLexicon(index, rows, spelled, { limit: 10, overlays, overlayIndex });
+    const hit = results.find((r) => r.clarity === fishing.clarity);
+    assert.ok(hit, `expected fishing/${fishing.clarity} for ${spelled} query`);
+    assert.ok(hit.overlays.some((o) => o.senseForm === witnessed.senseForm && o.pos === "h"));
   });
 
   it("finds overlay rows by definition text", () => {
     const results = searchLexicon(index, rows, "hearsay", { limit: 10, overlays, overlayIndex });
-    assert.ok(results.some((r) => r.overlays.some((o) => o.senseForm === "ejaram")));
+    assert.ok(results.some((r) => r.overlays.some((o) => /hearsay/i.test(o.definition))));
   });
 });
