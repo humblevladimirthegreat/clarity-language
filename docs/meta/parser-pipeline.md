@@ -101,7 +101,7 @@ This is where join-act vs soft clause **-n**, mood vs manner, value vs ability, 
 ### Closed forms follow the lexicon
 <a id="closed-forms-follow-lexicon"></a>
 
-Hosted overlays (needs, evidentials, COMMENT, NOTIONAL, plan / DECISION, special pronouns, emotion ACT/LOCUS, clause poles, …) are **the published root** for that host (emoji / English literal) plus the overlay ending. They are not a second, frozen spelling invented beside the lexicon. If conversion reassigns *fishing*, witnessed **`huhunum`** moves with **`uhunu`**.
+Hosted overlays (needs, evidentials, COMMENT, NOTIONAL, plan / DECISION, special pronouns, emotion ACT/LOCUS, clause poles, …) are **the published root** for that host (emoji / English literal) plus the overlay ending. When you **add** a closed overlay, pick an existing published row and spell that root (plus ending / mid-word **`x`** morph). Do **not** freeze a private spelling, and do **not** coin a new lexicon word just to host the overlay. If conversion reassigns *fishing*, witnessed **`huvuvum`** moves with **`uvuvu`**.
 
 **Exception:** join-act / join-relation sense-forms (`an` / `on` / `aon` / …) and other **vowel-series** morphology (join fences, restrictor cores) are keyed by **`a` / `o` / `e` / `u`**, not by a lexicon row — those spellings stay.
 

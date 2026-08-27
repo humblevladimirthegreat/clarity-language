@@ -225,7 +225,7 @@ Channel is a **root choice**, not `xa`/`xu` on the claim host. Stack with **PRED
 
 Ordinary content still available: `zuvuvul` *a memory*; `veregol` *to record*; `duvuvuxruzol` *that memory that won’t blank* — [null / anti-null](numeric-derivation.md#null-anti-null). Same for the other channel roots (`zerarar` *that ear*, `zorolol` *a scroll*, …).
 
-Idiom cue: *fish a boot* = retriedegu the wrong past (🥾 `oborodo` *boot* stays free for the punchline).
+Idiom cue: *fish a boot* = retriedegu the wrong past (🥾 `abodo` *boot* stays free for the punchline).
 
 | English cue | Agelan |
 |-------------|---------|

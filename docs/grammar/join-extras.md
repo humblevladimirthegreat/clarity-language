@@ -74,11 +74,11 @@ These are **not** phrase named-list joins and **not** [restrictors](restrictors.
 | Form | `/ɡ/` (*N … b-X*) | `/h/` (*edegunt … b-X*) | Example |
 |------|-------------------|------------------------|---------|
 | **`gan` / `han`** | *including / with* | *with / including* | `zubarol gan bebanul`; `zazawan han bululon vawalal` |
-| **`gon` / `hon`** | *exclusive for* (X is N’s sole pick) | *exclusively for / as the one* | `zugolal gon badedal`; `… hon badedal vebonem` |
-| **`gaon` / `haon`** | *open to* (X admitted; more may follow) | *among options* | `zubazul gaon bugabel`; `… haon bugabel vebonem` |
+| **`gon` / `hon`** | *exclusive for* (X is N’s sole pick) | *exclusively for / as the one* | `zugolal gon badedal`; `… hon badedal vedonem` |
+| **`gaon` / `haon`** | *open to* (X admitted; more may follow) | *among options* | `zubazul gaon bugabel`; `… haon bugabel vedonem` |
 | **`gun` / `hun`** | *against / anti-* (refuses X) | *refusing* | `zobulel gun bulel`; `… hun vemedel` |
 | **`guan` / `huan`** | *without / excluding* | *excluding* | `zubarol guan bebanul`; `… huan bebanul vuvazel` |
-| **`guon` / `huon`** | *open to anything but* (X barred; rest free) | *barring / anything but* | `zugolal guon bebanul`; `… huon bebanul vebonem` |
+| **`guon` / `huon`** | *open to anything but* (X barred; rest free) | *barring / anything but* | `zugolal guon bebanul`; `… huon bebanul vedonem` |
 | **`gen` / `hen`** | *prioritizing / headed by* | *prioritizing* | `zuzebul gen bugujul`; `… hen bugujul vamugal` |
 | **`gaen` / `haen`** | *on a par with* | *equating / tying* | `zalenal gaen badogal`; `… haen bagegolsh vezagel` |
 | **`goen` / `hoen`** | *for trying / trial of* | *trying* | `zalenal goen bamugal`; `… hoen bamugal vedabul` |
@@ -92,7 +92,7 @@ These are **not** phrase named-list joins and **not** [restrictors](restrictors.
 | exclude vs anything but | `bebanul guan` vs `bebanul guon` | *without nuts* vs *open to anything but nuts* |
 | sole vs open pick | `balenal gon` vs `balenal gaon` | *path-only* vs *path among options* |
 | prioritize vs try | `bamugal gen` vs `bamugal goen` | *fix-first* vs *try-the-fix* |
-| relation vs reviser | `zahahagel gan bazawan` vs `zahahagel al zazawan` | PP-like *team including Azawan* vs slot-repair *team, including Azawan* |
+| relation vs reviser | `zahadal gan bazawan` vs `zahadal al zazawan` | PP-like *team including Azawan* vs slot-repair *team, including Azawan* |
 | stock AP label | `g{primary colors}` / mention span | content *including* needs `/b/` (`gan b-…`) |
 | open vs without (causal) | `haon bazem` vs `huan buludul` | sufficient hit vs necessary-style exclusion — [causation](causation.md) |
 
@@ -103,7 +103,7 @@ Unary `/b/` only — restore list/empty arity on the **argument**, not by stacki
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Name a **join-act** (`van` / `von` / …) when someone *does* the move to an object; name a **join-relation** (`gan` / `han` / … plus one `/b/`) when a host is framed *including* / *without* / *prioritizing* something.
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` (house names); `abele` *apple*; `adeda` *tea*; `ugabe` *topping*; `ule` *lie*; `ebanu` *nuts*; `ogove` *coffee*; `uguju` *bug*; `agego` *candidate*; `amuga` *fix*; `ubaro` *cake*; `ugola` *drink*; `ahahage` *team*; `awala` *walk*.
+**Roots used here:** `azawa` / `ululo` / `uhubu` (house names); `abele` *apple*; `adeda` *tea*; `ugabe` *topping*; `ule` *lie*; `ebanu` *nuts*; `ogove` *coffee*; `uguju` *bug*; `agego` *candidate*; `amuga` *fix*; `ubaro` *cake*; `ugola` *drink*; `ahada` *team*; `awala` *walk*.
 
 #### English → Agelan
 
@@ -175,7 +175,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan tries the fix.*
 :::
 
-**5.** `zahahagel gan bazawan.`
+**5.** `zahadal gan bazawan.`
 
 ::: details Show answer
 *A team including Azawan.*

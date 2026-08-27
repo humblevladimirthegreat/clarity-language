@@ -73,7 +73,7 @@ gloss: `d-tea` · `ol` · `d-coffee`
 ```
 
 ```
-`zahahagel ul zazawan.`
+`zahadal ul zazawan.`
 
 gloss: `z-team` · `ul` · `z-grace`
 
@@ -110,7 +110,7 @@ Adversative *but* / *howedegur*, *therefore*, *meanwhile*, and standalone *next*
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `adaga` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `ahahage` *team* · `edege` *teacher* · `uzumu` smile → *happy* (**-m**) · `ele` *size* · `awala` *walk* · `elebe` *sleep*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `adaga` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `ahada` *team* · `edege` *teacher* · `uzumu` smile → *happy* (**-m**) · `ele` *size* · `awala` *walk* · `elebe` *sleep*
 
 #### English → Agelan
 
@@ -129,7 +129,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **3.** *The team except only Azawan.*
 
 ::: details Show answer
-`zahahagel ul zazawan.`
+`zahadal ul zazawan.`
 :::
 
 **4.** *Additionally, Azawan walks.*
@@ -176,7 +176,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Coffee fully replaces tea.*
 :::
 
-**3.** `zahahagel ul zazawan.`
+**3.** `zahadal ul zazawan.`
 
 ::: details Show answer
 *The team except only Azawan.*
@@ -259,7 +259,7 @@ Every `REVᵢ` applies **in parallel to the same A**, each with its own right-ha
 For nested English *including (B except C)*, put the inner revision **inside** one side.
 
 ```
-`zahahagel am zazawan ul zululon.`
+`zahadal am zazawan ul zululon.`
 
 gloss: `z-team` · `am` · `z-grace` · `ul` · `z-courage`
 
@@ -308,14 +308,14 @@ gloss: `j-grace` · `al` · `z-speaker` · `v-walk`
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `adaga` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `ahahage` *team* · `uzumu` smile → *happy* (**-m**) · `eru` *calm* · `awala` *walk* · `urunu` *run* · `amala` *therefore*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `adaga` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `ahada` *team* · `uzumu` smile → *happy* (**-m**) · `eru` *calm* · `awala` *walk* · `urunu` *run* · `amala` *therefore*
 
 #### English → Agelan
 
 **1.** *The team, including Azawan, except only Ululon.*
 
 ::: details Show answer
-`zahahagel am zazawan ul zululon.`
+`zahadal am zazawan ul zululon.`
 :::
 
 **2.** *Azawan is happy — or rather, precisely calm.*
@@ -345,7 +345,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **6.** *The team, including Azawan and including Uhubun (both open).*
 
 ::: details Show answer
-`zahahagel am zazawan am zuhubun.`
+`zahadal am zazawan am zuhubun.`
 :::
 
 **7.** *Azawan walks and additionally Ululon runs.*
@@ -362,7 +362,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 #### Agelan → English
 
-**1.** `zahahagel am zazawan ul zululon.`
+**1.** `zahadal am zazawan ul zululon.`
 
 ::: details Show answer
 *The team, including Azawan, except only Ululon.*
@@ -392,7 +392,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Additionally, does Azawan walk?*
 :::
 
-**6.** `zahahagel am zazawan am zuhubun.`
+**6.** `zahadal am zazawan am zuhubun.`
 
 ::: details Show answer
 *The team, including Azawan and including Uhubun.*
@@ -404,7 +404,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan walks and additionally Ululon runs.*
 :::
 
-**8.** `zahahagel an zazawan un zululon.`
+**8.** `zahadal an zazawan un zululon.`
 
 ::: details Show answer
 *The named team, including Azawan, and except Ululon from that named frame.*

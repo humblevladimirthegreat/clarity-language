@@ -153,7 +153,7 @@ Stable section ids and cross-doc anchor names may keep older technical wording (
 | Do | Don’t |
 |----|--------|
 | Minimal clause that shows *only* the new point | Kitchen-sink showcases in Beginner |
-| Published roots when the gloss matches; `PoS<…>ENDING` for donor spelling | Split or hyphenated PoS tokens in learner text |
+| Published roots when the gloss matches; `PoS<…>ENDING` for donor spelling | Invented “lexicon-shaped” stems, a closed overlay with its own frozen spelling, or split/hyphenated PoS tokens in learner text |
 | Named [house people](#house-cast) when the clause needs a person | Default *I* / *you* (`zugobon` / `zebonen`) as dummy subjects |
 | Omit recoverable **`jal`** when the page is not teaching force | Leading every example with **`jal`** by habit |
 | Morph gloss + **loose** free English by default ([glosses.md](glosses.md)) | Merging free English into the morph gloss |

@@ -222,7 +222,7 @@ On `/v/`, **-sh** marks **collective doing**: the edegunt is **one shared act**,
 | `zazawansh vuzunel` | *Azawan and associates sing* (together or each, or don’t care) |
 | `zazawansh vuzunelsh` | *they sing as one outing* |
 | `zazawan vuzunelsh` | *Azawan sings jointly* (not a solo) |
-| `zahahagen vawalalsh` | *the team walks as one unit* |
+| `zahadan vawalalsh` | *the team walks as one unit* |
 
 Count (*three times*) and habit (*always*) stay clause framing: [numbers](numbers.md) under `/h/`, or **`hual`**. **-rsh** on `/v/` resumes a prior **collective** doing (*still as one shared act*).
 
@@ -247,7 +247,7 @@ Most useful with [phrase join](coordination.md): SHARED singular scale under **`
 |---------|-------|
 | `zulebol zolozol zal gudurum` | *the file-box and the toolbox are (each) heavy* |
 | `zulebol zolozol zal gudurumsh` | *heavy together* — collective SHARED |
-| `zahahagelr gumolam` | *the team is vast* (group-ledegul size) |
+| `zahadalr gumolam` | *the team is vast* (group-ledegul size) |
 | `zulebolsh gudurum` | *the file-boxes are heavy* (members / plain) |
 | `zulebolsh gudurumsh` | *the file-boxes are heavy collectively* |
 
@@ -280,7 +280,7 @@ Quantity `>1` is digitless **`g+`** (may co-occur with noun **-lsh**: `zagadalsh
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `olebo` *file-box* · `uduru` *heavy* · `ahahage` *team* · `umola` *vast* · `uzudu` *student* · `uzune` *sing* · `awala` *walk* · `urunu` *run* · `aha` inclusive *we* · `ugobo` speaker · `edone` listener
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `olebo` *file-box* · `uduru` *heavy* · `ahada` *team* · `umola` *vast* · `uzudu` *student* · `uzune` *sing* · `awala` *walk* · `urunu` *run* · `aha` inclusive *we* · `ugobo` speaker · `edone` listener
 
 #### English → Agelan
 
@@ -346,7 +346,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *The file-boxes are heavy.* (members / plain)
 :::
 
-**3.** `zahahagel gumolam.`
+**3.** `zahadal gumolam.`
 
 ::: details Show answer
 *The team is vast.*

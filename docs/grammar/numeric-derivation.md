@@ -91,7 +91,7 @@ Single-digit scalars only. Tables use marker shorthand (**`+N`** / **`-N`**); ba
 | **`ROOTx+3`** | triad / triplet / 3-part / ternary | `zezebexrarel` — *a three-part dialogue* | non-tripartite / collapsed-from-three | `zovuvexrurel` — *non-tripartite government* |
 | **`ROOTx+4`** | quad / 4-part / square / frame | `zezagexramol` — *a four-part / framed court* | unframed / out-of-box / unbound | `zuruxrumol` — *an unframed idea* |
 | **`ROOTx+5`** | hand / pentad / agency-set | `zolozoxraval` — *a handy / five-fold toolkit* | handless / without practical grasp | `zoworaxruval` — *a plan without practical grasp* |
-| **`ROOTx+6`** | hex / 6-part / honeycomb / pack | `zadomaxragul` — *a hexagonal / six-pack cell* | unpacked / non-hex / broken pack | `zahahagexrugul` — *an unpacked team* |
+| **`ROOTx+6`** | hex / 6-part / honeycomb / pack | `zadomaxragul` — *a hexagonal / six-pack cell* | unpacked / non-hex / broken pack | `zahadaxrugul` — *an unpacked team* |
 | **`ROOTx+7`** | heptad / week-cycle / complete series | `zazegaxralem` — *a sedegun-fold / week-cycle ritual* | incomplete series / broken cycle | `zazegaxrulem` — *a broken-cycle ritual* |
 | **`ROOTx+8`** | octet / 8-part / doubled-quad | `zonuzuxrahal` — *an octet / eight-part block* | non-octet / incomplete eight | `zonuzuxruhal` — *a non-octet block* |
 | **`ROOTx+9`** | ennead / near-full / almost-ten | `zuzugoxrahagel` — *a nine-part / near-full choir* | far-from-full / short-of-complete | `zuzugoxrunal` — *a far-from-full choir* |
