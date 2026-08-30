@@ -11,10 +11,12 @@ import { parseWord } from "./word.js";
 const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const publishedPath = join(rootDir, "data", "lexicon-published.csv");
 const overlayPath = join(rootDir, "data", "lexicon-overlays.csv");
+const compoundsPath = join(rootDir, "data", "lexicon-compounds.csv");
 
 const tables = createClassifyTables(
   readFileSync(publishedPath, "utf8"),
   readFileSync(overlayPath, "utf8"),
+  readFileSync(compoundsPath, "utf8"),
 );
 
 function classifyText(text: string) {
@@ -92,6 +94,20 @@ describe("classify", () => {
   it("published ordinary on speaker pronoun", () => {
     const word = expectReading("zugobon", "ordinary");
     assert.ok(word.rootGloss);
+  });
+
+  it("lexical compound lemma glosses as one kind", () => {
+    const word = expectReading("zohohulabedel", "ordinary");
+    assert.equal(word.family.kind, "content");
+    assert.equal(word.lexicalCompound, true);
+    assert.equal(word.rootGloss?.literal, "bedroom");
+    assert.equal(word.rootGloss?.metaphorical, "sanctum");
+  });
+
+  it("lexical compound beats accidental published substring match", () => {
+    const word = expectReading("zeberelonogon", "ordinary");
+    assert.equal(word.lexicalCompound, true);
+    assert.equal(word.rootGloss?.literal, "friend");
   });
 
   it("ordinary compound glosses both roots", () => {

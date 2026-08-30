@@ -24,6 +24,7 @@
     "metaphor-assign": "tsx scripts/phase5-metaphor-assign.ts",
     "metaphor-assign-test": "tsx scripts/lib/metaphor-assign-data.test.ts && tsx scripts/lib/llm-client.test.ts",
     "lexicon-search": "tsx scripts/lexicon-search.ts",
+    "check-compounds": "tsx scripts/check-compound-uniqueness.ts",
     "unused-roots": "tsx scripts/unused-roots.ts",
     "build:lexicon-web": "esbuild src/lexicon-search.ts --bundle --format=esm --outfile=web/lib/lexicon-search.js --platform=browser",
     "test": "tsx --test src/*.test.ts src/**/*.test.ts docs/grammar/.vitepress/components/*.test.ts",

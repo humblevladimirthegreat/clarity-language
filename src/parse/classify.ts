@@ -1,4 +1,8 @@
 import {
+  parseCompoundCsv,
+  type CompoundRow,
+} from "../lexicon-compounds.js";
+import {
   type OverlayRow,
   type PublishedRow,
   parseOverlayCsv,
@@ -61,6 +65,7 @@ const RESTRICTOR_CORE = new Set<string>([
 export type ClassifyTables = {
   overlays: Map<string, OverlayRow>;
   published: Map<string, PublishedRow>;
+  compounds: Map<string, CompoundRow>;
   needRoots: Set<string>;
   hostlessAbilityRoot: string | null;
 };
@@ -202,9 +207,25 @@ function publishedGlossForRoots(
   return { gloss, allFound };
 }
 
+function compoundLemmaGloss(row: CompoundRow): { literal?: string; metaphorical?: string } {
+  const gloss: { literal?: string; metaphorical?: string } = {};
+  if (row.literal) gloss.literal = row.literal;
+  if (row.metaphorical) gloss.metaphorical = row.metaphorical;
+  return gloss;
+}
+
+function compoundsFromRows(rows: CompoundRow[]): Map<string, CompoundRow> {
+  const compounds = new Map<string, CompoundRow>();
+  for (const row of rows) {
+    if (row.stem) compounds.set(row.stem, row);
+  }
+  return compounds;
+}
+
 function finishTables(
   published: Map<string, PublishedRow>,
   overlays: Map<string, OverlayRow>,
+  compounds: Map<string, CompoundRow>,
 ): ClassifyTables {
   const overlayList = [...overlays.values()];
   const needRoots = needRootsFromOverlays(overlayList);
@@ -213,15 +234,17 @@ function finishTables(
   for (const root of needRoots) {
     NEED_ROOTS.add(root);
   }
-  return { overlays, published, needRoots, hostlessAbilityRoot };
+  return { overlays, published, compounds, needRoots, hostlessAbilityRoot };
 }
 
 export function createClassifyTables(
   publishedCsv: string,
   overlayCsv: string,
+  compoundCsv = "",
 ): ClassifyTables {
   const publishedRows = parsePublishedCsv(publishedCsv);
   const overlayRows = parseOverlayCsv(overlayCsv);
+  const compoundRows = compoundCsv.trim() ? parseCompoundCsv(compoundCsv) : [];
 
   const published = new Map<string, PublishedRow>();
   for (const row of publishedRows) {
@@ -233,12 +256,13 @@ export function createClassifyTables(
     overlays.set(overlayKey(row.pos, row.senseForm), row);
   }
 
-  return finishTables(published, overlays);
+  return finishTables(published, overlays, compoundsFromRows(compoundRows));
 }
 
 export function createClassifyTablesFromRows(
   publishedRows: PublishedRow[],
   overlayRows: OverlayRow[],
+  compoundRows: CompoundRow[] = [],
 ): ClassifyTables {
   const published = new Map<string, PublishedRow>();
   for (const row of publishedRows) {
@@ -250,7 +274,7 @@ export function createClassifyTablesFromRows(
     overlays.set(overlayKey(row.pos, row.senseForm), row);
   }
 
-  return finishTables(published, overlays);
+  return finishTables(published, overlays, compoundsFromRows(compoundRows));
 }
 
 export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
@@ -295,6 +319,18 @@ export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
 
   if (bareNeedTopic(word, tables)) {
     return { ...word, reading: "value" };
+  }
+
+  if (family.kind === "content" && family.roots.length === 1) {
+    const compoundRow = tables.compounds.get(family.roots[0]!);
+    if (compoundRow) {
+      return {
+        ...word,
+        rootGloss: compoundLemmaGloss(compoundRow),
+        reading: "ordinary",
+        lexicalCompound: true,
+      };
+    }
   }
 
   const roots = publishedRoots(word);

@@ -134,6 +134,8 @@ export type LexWord = MorphWord & {
   overlay?: LexOverlay;
   rootGloss?: RootGloss;
   reading: LexReading;
+  /** Lexicon-only x-less compound lemma from lexicon-compounds.csv. */
+  lexicalCompound?: boolean;
 };
 
 // ── Stage 3 sentence AST ────────────────────────────────────────────────────

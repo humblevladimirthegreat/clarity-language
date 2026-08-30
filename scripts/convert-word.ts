@@ -12,6 +12,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { escapeCsvField, parseCsv } from "../src/csv.js";
+import { parseCompoundCsv } from "../src/lexicon-compounds.js";
 import { parseOverlayCsv } from "../src/lexicon-search.js";
 import { RETIE_MAP_RELATIVE_PATH, serializeRetieMap, type RetiePair } from "../src/retie/map.js";
 import {
@@ -25,6 +26,7 @@ import {
 const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..");
 const publishedPath = join(rootDir, "data", "lexicon-published.csv");
 const overlayPath = join(rootDir, "data", "lexicon-overlays.csv");
+const compoundsPath = join(rootDir, "data", "lexicon-compounds.csv");
 
 /** Join-series overlays stay vowel-series; they are not hosted on a published root. */
 const JOIN_SENSE_FORMS = new Set([
@@ -133,6 +135,9 @@ function convertLexicon(): void {
   const { headers, rows } = parseCsv(readFileSync(publishedPath, "utf8"));
   const overlays = parseOverlayCsv(readFileSync(overlayPath, "utf8"));
   const used = new Set<string>();
+  for (const row of parseCompoundCsv(readFileSync(compoundsPath, "utf8"))) {
+    if (row.stem) used.add(row.stem);
+  }
   const assigned: string[] = [];
   const oldToNewByEmoji = new Map<string, { oldRoot: string; newRoot: string }>();
   const retiePairs: RetiePair[] = [];

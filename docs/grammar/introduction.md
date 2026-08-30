@@ -23,7 +23,7 @@ Agalan keeps three kinds of clarity in ordinary speech:
 
 **Referential.** Pronouns are built from a fixed prefix of **any** prior word’s root (through the 2nd vowel) and resolve to the **most recently mentioned matching** antecedent, plus a small set of special discourse-role pronouns. There are no vague English-style *it* / *they* pronouns.
 
-**Semantic.** Each dictionary sense is one entry. Related senses across fields use an explicit compound: kind first, then the topic field after mid-word **`x`** (`golovexurul` *love in the crush sense*), rather than unmarked polysemy. Further roots after more **`x`** keep narrowing the same word.
+**Semantic.** Each dictionary sense is one entry. Related senses across fields use an explicit compound: kind first, then the topic field after mid-word **`x`** (`golovexurul` *love in the crush sense*), rather than unmarked polysemy. Further roots after more **`x`** keep narrowing the same word. A conventional kind the community treats as one entry may also be a **lexical compound** — one closed root in the dictionary (`zohohulabedel` *bedroom*) — not a productive **`x`** assembly.
 
 **What stays vague on purpose.** Derivations need not show that *food* and *cook* are related. Precision that would make the language hard to use is out of scope.
 

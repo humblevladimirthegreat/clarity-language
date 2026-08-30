@@ -1,6 +1,7 @@
 # TODO
 Consider reserving two syllable words for special
 limit deployments to tagged releases
+rename viewpoint laterals
 
 ## Evidentiality / tense
 

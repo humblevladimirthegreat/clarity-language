@@ -10,8 +10,10 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import {
+  createCompoundIndex,
   createLexiconIndex,
   createOverlayIndex,
+  parseCompoundCsv,
   parseOverlayCsv,
   parsePublishedCsv,
   searchLexicon,
@@ -21,6 +23,7 @@ import {
 const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..");
 const publishedPath = join(rootDir, "data", "lexicon-published.csv");
 const overlayPath = join(rootDir, "data", "lexicon-overlays.csv");
+const compoundsPath = join(rootDir, "data", "lexicon-compounds.csv");
 
 type CliOptions = {
   query: string;
@@ -83,7 +86,7 @@ function formatTable(results: LexiconSearchResult[]): void {
   const headers = ["emoji", "literal", "clarity", "metaphorical", "overlays", "score"];
   const rows = results.map((r) => [
     r.emoji || "—",
-    r.literal || (r.overlayOnly ? "(overlay)" : "—"),
+    r.literal || (r.overlayOnly ? "(overlay)" : r.compoundOnly ? "(compound)" : "—"),
     r.clarity,
     r.metaphorical || "—",
     formatOverlayList(r),
@@ -108,12 +111,16 @@ function main(): void {
   const options = parseArgs(process.argv.slice(2));
   const rows = parsePublishedCsv(readFileSync(publishedPath, "utf8"));
   const overlays = parseOverlayCsv(readFileSync(overlayPath, "utf8"));
+  const compoundRows = parseCompoundCsv(readFileSync(compoundsPath, "utf8"));
   const index = createLexiconIndex(rows);
   const overlayIndex = createOverlayIndex(overlays);
+  const compoundIndex = createCompoundIndex(compoundRows);
   const results = searchLexicon(index, rows, options.query, {
     limit: options.limit,
     overlays,
     overlayIndex,
+    compoundRows,
+    compoundIndex,
   });
 
   if (options.json) {

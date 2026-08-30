@@ -71,7 +71,7 @@ Number words are a closed exception built on the PoS prefix plus an **r**-initia
 
 **No clash with endings / numbers:** mid-root **l** / **r** are always followed by a vowel inside the root, so they are not mistaken for a final suffix. Ordinary content after a PoS letter begins with a **vowel**, so **`PoS+r…`** stays [number-only](#number-word-exception).
 
-**Compounds:** mid-word **`x`** separates roots. Mid-word **`x`** is only the compound joiner (never part of a root); word-initial **`x`** is the discourse-marker prefix. Family map: [x-compounds.md](x-compounds.md).
+**Compounds:** productive assemblies use mid-word **`x`** between roots. Mid-word **`x`** is only the compound joiner (never part of a root); word-initial **`x`** is the discourse-marker prefix. A **lexical compound** may look like one long simple root (`ohohulabede` *bedroom*) — closed in the dictionary, not assembled with **`x`** in speech. Family map: [x-compounds.md](x-compounds.md).
 
 ### Number-word exception
 <a id="number-word-exception"></a>

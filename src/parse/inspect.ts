@@ -285,6 +285,9 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
   if (family.kind === "x" && family.xFamily === "numeric") {
     return { line: "numeric derivation", href: "numeric-derivation.html#numeric-derivation" };
   }
+  if (word.lexicalCompound) {
+    return { line: "lexical compound", href: "x-compounds.html#lexical-compounds" };
+  }
   if (family.kind === "x" && family.xFamily === "compound") {
     return { line: "ordinary compound", href: "x-compounds.html#families-by-shape" };
   }

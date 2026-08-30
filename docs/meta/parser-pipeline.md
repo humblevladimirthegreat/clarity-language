@@ -26,7 +26,7 @@ Library-first multi-stage parser for CLI checks, fixtures that lock the grammar 
 |-------|---------|------|
 | Word morph, number stems, writing forms | **[Peggy](https://peggyjs.org/)** | Ordered choice matches the [x-compounds decision order](../grammar/x-compounds.md#decision-order); generates JS + `.d.ts` at build time |
 | Sentence / joins / spans / `orodo` / framing | **[Chevrotain](https://chevrotain.io/)** | Grammar as TS; CST → sentence AST; operates on **typed word tokens**, not raw characters |
-| Overlays and open roots | CSV → `Map` | [`lexicon-overlays.csv`](../../data/lexicon-overlays.csv), [`lexicon-published.csv`](../../data/lexicon-published.csv) — classification, not parsing |
+| Overlays and open roots | CSV → `Map` | [`lexicon-overlays.csv`](../../data/lexicon-overlays.csv), [`lexicon-published.csv`](../../data/lexicon-published.csv), [`lexicon-compounds.csv`](../../data/lexicon-compounds.csv) — classification, not parsing |
 | Anaphor / question / SHARED resolve | [`src/parse/resolve.ts`](../../src/parse/resolve.ts) | Discourse over a finished AST |
 
 **Rejected for the foundation:** Parsimmon / Arcsecond / `typescript-parsec`; Ohm as default; Chevrotain alone for character-level morph; a single mega-grammar for all stages.
@@ -48,7 +48,8 @@ Agalan text
 ┌──────────────────────────────────────┐
 │  classify() — Maps only              │
 │  overlay (sense_form, pos)           │
-│  published roots / need-set          │
+│  published roots / compound lemmas   │
+│  need-set                            │
 └──────────────────────────────────────┘
     │  LexWord[]  →  Chevrotain IToken[]
     ▼

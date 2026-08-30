@@ -196,7 +196,7 @@ Named individuals, places, one-off objects, titled works: *Azawan*, *Paris*, *th
 | same under other slots | `dozohuxalanen`, `bozohuxalanen` | one named place / person as object or argument |
 | **Sense / shop label** (two or more lexicon roots) | `zuzuzuxogoven`, `zuzuzuxogovexadedan` | *Sushi-Coffee*; *Sushi-Coffee-Tea* |
 
-Adjacent bare same-role words (`zozohun zalanen`) are two people in a [join](coordination.md). One **`x`-compound** is one resume target and one slot filler.
+Adjacent bare same-role words (`zozohun zalanen`) are two people in a [join](coordination.md). One **`x`-compound** is one resume target and one slot filler. A **lexical compound** is also one slot-filler — one stem, not **`x`** (`zohohulabedel` *bedroom*).
 
 #### Named handles
 <a id="named-handles"></a>

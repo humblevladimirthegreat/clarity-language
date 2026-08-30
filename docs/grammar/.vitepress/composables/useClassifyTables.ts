@@ -1,6 +1,7 @@
 import { onMounted, ref, shallowRef, type ShallowRef } from 'vue'
 import publishedCsv from '@data/lexicon-published.csv?raw'
 import overlayCsv from '@data/lexicon-overlays.csv?raw'
+import compoundCsv from '@data/lexicon-compounds.csv?raw'
 import { createClassifyTables, type ClassifyTables } from '@parse-browser'
 
 const tables: ShallowRef<ClassifyTables | null> = shallowRef(null)
@@ -16,7 +17,7 @@ export function useClassifyTables() {
     }
     started = true
     try {
-      tables.value = createClassifyTables(publishedCsv, overlayCsv)
+      tables.value = createClassifyTables(publishedCsv, overlayCsv, compoundCsv)
       status.value = 'ready'
     } catch (err) {
       status.value = 'error'

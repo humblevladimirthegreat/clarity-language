@@ -32,6 +32,7 @@ function loadDefaultTables(): ClassifyTables {
   defaultTables = createClassifyTables(
     readFileSync(join(rootDir, "data", "lexicon-published.csv"), "utf8"),
     readFileSync(join(rootDir, "data", "lexicon-overlays.csv"), "utf8"),
+    readFileSync(join(rootDir, "data", "lexicon-compounds.csv"), "utf8"),
   );
   return defaultTables;
 }

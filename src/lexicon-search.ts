@@ -1,6 +1,7 @@
 import MiniSearch from "minisearch";
 
 import { parseCsv } from "./csv.js";
+import type { CompoundRow } from "./lexicon-compounds.js";
 
 export type PublishedRow = {
   emoji: string;
@@ -23,11 +24,22 @@ export type LexiconSearchResult = PublishedRow & {
   matchFields: string[];
   overlays: OverlayRow[];
   overlayOnly?: boolean;
+  compoundOnly?: boolean;
 };
 
 type IndexedDoc = PublishedRow & {
   id: number;
   literalTokens: string;
+};
+
+type CompoundIndexedDoc = {
+  id: number;
+  emoji: string;
+  stem: string;
+  literal: string;
+  literalTokens: string;
+  metaphorical: string;
+  mnemonic: string;
 };
 
 type OverlayIndexedDoc = {
@@ -40,6 +52,8 @@ type OverlayIndexedDoc = {
   mnemonic: string;
 };
 
+export { parseCompoundCsv, type CompoundRow } from "./lexicon-compounds.js";
+
 const PUBLISHED_HEADERS = ["emoji", "literal", "clarity", "metaphorical", "mnemonic"] as const;
 const OVERLAY_HEADERS = ["sense_form", "pos", "emoji", "definition", "mnemonic"] as const;
 
@@ -47,12 +61,21 @@ const OVERLAY_HEADERS = ["sense_form", "pos", "emoji", "definition", "mnemonic"]
 const POS_PREFIXES = new Set(["z", "d", "b", "g", "v", "w", "h", "j", "x"]);
 
 const SEARCH_FIELDS = ["literal", "literalTokens", "clarity", "metaphorical", "mnemonic"] as const;
+const COMPOUND_SEARCH_FIELDS = ["literal", "literalTokens", "stem", "metaphorical", "mnemonic"] as const;
 const OVERLAY_SEARCH_FIELDS = ["senseForm", "root", "pos", "definition", "mnemonic"] as const;
 
 const FIELD_BOOSTS: Record<(typeof SEARCH_FIELDS)[number], number> = {
   literal: 2,
   metaphorical: 2,
   clarity: 1.5,
+  literalTokens: 1.5,
+  mnemonic: 1,
+};
+
+const COMPOUND_FIELD_BOOSTS: Record<(typeof COMPOUND_SEARCH_FIELDS)[number], number> = {
+  literal: 2,
+  metaphorical: 2,
+  stem: 1.5,
   literalTokens: 1.5,
   mnemonic: 1,
 };
@@ -67,6 +90,12 @@ const OVERLAY_FIELD_BOOSTS: Record<(typeof OVERLAY_SEARCH_FIELDS)[number], numbe
 
 const SEARCH_OPTIONS = {
   boost: FIELD_BOOSTS,
+  fuzzy: 0.2,
+  prefix: true,
+};
+
+const COMPOUND_SEARCH_OPTIONS = {
+  boost: COMPOUND_FIELD_BOOSTS,
   fuzzy: 0.2,
   prefix: true,
 };
@@ -89,6 +118,7 @@ const MATCH_FIELD_LABELS: Record<string, string> = {
   senseForm: "sense_form",
   root: "sense_form",
   pos: "pos",
+  stem: "stem",
   definition: "definition",
 };
 
@@ -226,6 +256,27 @@ export function attachOverlays(rows: PublishedRow[], overlays: OverlayRow[]): Ma
   });
 
   return attached;
+}
+
+export function createCompoundIndex(rows: CompoundRow[]): MiniSearch<CompoundIndexedDoc> {
+  const docs: CompoundIndexedDoc[] = rows.map((row, id) => ({
+    id,
+    emoji: row.emoji,
+    stem: row.stem.toLowerCase(),
+    literal: row.literal.toLowerCase(),
+    literalTokens: tokenizeLiteral(row.literal),
+    metaphorical: row.metaphorical.toLowerCase(),
+    mnemonic: row.mnemonic.toLowerCase(),
+  }));
+
+  const index = new MiniSearch<CompoundIndexedDoc>({
+    fields: [...COMPOUND_SEARCH_FIELDS],
+    storeFields: ["emoji", "stem", "literal", "metaphorical", "mnemonic"],
+    searchOptions: COMPOUND_SEARCH_OPTIONS,
+  });
+
+  index.addAll(docs);
+  return index;
 }
 
 export function createLexiconIndex(rows: PublishedRow[]): MiniSearch<IndexedDoc> {
@@ -385,16 +436,67 @@ function overlayOnlyResult(overlay: OverlayRow, score: number, matchFields: stri
   };
 }
 
+function exactCompoundBoost(row: CompoundRow, query: string): { boost: number; fields: string[] } {
+  const q = query.toLowerCase();
+  let boost = 0;
+  const fields: string[] = [];
+
+  if (row.literal.toLowerCase() === q) {
+    boost += 100;
+    fields.push("literal");
+  }
+  if (row.stem.toLowerCase() === q) {
+    boost += 100;
+    fields.push("stem");
+  }
+  if (row.metaphorical.toLowerCase() === q) {
+    boost += 100;
+    fields.push("metaphorical");
+  }
+  if (row.mnemonic.toLowerCase() === q) {
+    boost += 50;
+    fields.push("mnemonic");
+  }
+
+  return { boost, fields };
+}
+
+function compoundResultFromRow(
+  row: CompoundRow,
+  score: number,
+  matchFields: string[],
+): LexiconSearchResult {
+  return {
+    emoji: row.emoji,
+    literal: row.literal,
+    clarity: row.stem,
+    metaphorical: row.metaphorical,
+    mnemonic: row.mnemonic,
+    score,
+    matchFields,
+    overlays: [],
+    compoundOnly: true,
+  };
+}
+
 export function searchLexicon(
   index: MiniSearch<IndexedDoc>,
   rows: PublishedRow[],
   query: string,
-  opts?: { limit?: number; overlays?: OverlayRow[]; overlayIndex?: MiniSearch<OverlayIndexedDoc> },
+  opts?: {
+    limit?: number;
+    overlays?: OverlayRow[];
+    overlayIndex?: MiniSearch<OverlayIndexedDoc>;
+    compoundRows?: CompoundRow[];
+    compoundIndex?: MiniSearch<CompoundIndexedDoc>;
+  },
 ): LexiconSearchResult[] {
   const trimmed = query.trim();
   const limit = opts?.limit;
   const overlays = opts?.overlays ?? [];
   const overlayIndex = opts?.overlayIndex;
+  const compoundRows = opts?.compoundRows ?? [];
+  const compoundIndex = opts?.compoundIndex;
   const attached = attachOverlays(rows, overlays);
 
   if (!trimmed) {
@@ -412,6 +514,7 @@ export function searchLexicon(
 
   const publishedKey = (id: number) => `p:${id}`;
   const overlayKey = (senseForm: string, pos: string) => `o:${senseForm}:${pos}`;
+  const compoundKey = (stem: string) => `c:${stem}`;
 
   for (const hit of index.search(trimmed, SEARCH_OPTIONS)) {
     const id = hit.id as number;
@@ -456,6 +559,38 @@ export function searchLexicon(
         merged.set(publishedKey(id), overlayResultFromPublished(row, attached.get(id) ?? [], exact.boost, exact.fields));
       }
     });
+  }
+
+  if (compoundIndex && compoundRows.length > 0) {
+    for (const hit of compoundIndex.search(trimmed, COMPOUND_SEARCH_OPTIONS)) {
+      const row = compoundRows[hit.id as number]!;
+      const exact = exactCompoundBoost(row, trimmed);
+      const key = compoundKey(row.stem);
+      merged.set(
+        key,
+        compoundResultFromRow(
+          row,
+          hit.score + exact.boost,
+          [...new Set([...normalizeMatchFields(hit.match), ...exact.fields])].sort(),
+        ),
+      );
+    }
+
+    for (const row of compoundRows) {
+      const exact = exactCompoundBoost(row, trimmed);
+      if (exact.boost > 0) {
+        const key = compoundKey(row.stem);
+        const existing = merged.get(key);
+        merged.set(
+          key,
+          compoundResultFromRow(
+            row,
+            Math.max(existing?.score ?? 0, exact.boost),
+            [...new Set([...(existing?.matchFields ?? []), ...exact.fields])].sort(),
+          ),
+        );
+      }
+    }
   }
 
   if (overlayIndex) {

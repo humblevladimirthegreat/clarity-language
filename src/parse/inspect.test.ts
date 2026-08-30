@@ -11,6 +11,7 @@ const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const tables = createClassifyTables(
   readFileSync(join(rootDir, "data", "lexicon-published.csv"), "utf8"),
   readFileSync(join(rootDir, "data", "lexicon-overlays.csv"), "utf8"),
+  readFileSync(join(rootDir, "data", "lexicon-compounds.csv"), "utf8"),
 );
 
 describe("inspectText", () => {
@@ -107,6 +108,15 @@ describe("inspectText", () => {
     const ant = pronoun.related?.find((rel) => rel.label === "antecedent");
     assert.equal(ant?.raw, "zululon");
     assert.equal(result.tokens[ant!.tokenIndex]?.raw, "zululon");
+  });
+
+  it("Why links lexical compound lemmas", () => {
+    const token = inspectText("zohohulabedel", tables).tokens[0];
+    assert.equal(token?.kind, "word");
+    if (token?.kind !== "word") return;
+    assert.equal(token.why?.line, "lexical compound");
+    assert.equal(token.why?.href, "x-compounds.html#lexical-compounds");
+    assert.match(token.gloss, /bedroom/i);
   });
 
   it("Why distinguishes values from role compounds", () => {

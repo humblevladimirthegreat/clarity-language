@@ -23,6 +23,8 @@ gloss: `z-sushi-x-coffee`
 
 Mid-word **`x`** is glue; word-initial **`x`** is the discourse PoS.
 
+A conventional kind that already has its own published root stays that word (`zunowel` *sunflower*) — not a homemade sun×flower assembly.
+
 Other shapes (span fences, role compounds, values / ability, numbers) and compounds with more than two roots are Intermediate ([families by shape](#families-by-shape)).
 
 ## Intermediate
@@ -39,7 +41,7 @@ After the PoS prefix, look at what sits **left** and **right** of the first mid-
 | **`VOWEL x ROOT…`** + ending | **[Role compound](roles.md#role-compounds)** | ROLE **`a`** / **`u`** / **`o`** then event or relation root |
 | **`ROOT… x VOWEL`** + ending | **[Values](values.md)** or **[ability](ability.md#ability)** | Need root + **`a`/`e`/`o`/`u`** → values; other root + **`xa`/`xe`/`xo`/`xu`** → ability |
 | **`ROOT… x NUM…`** + ending | **[Numeric derivation](numeric-derivation.md#numeric-derivation)** | Right half matches [number](numbers.md) stem grammar **without** its own ending (marker **`+`/`-`/`#`/`_`**, digitless exp including label **`_e`/`_e-`**, hyperbole, [zero × exp](numbers.md#zero-exponent) **`+0e`/`±0e-1`/`#0e`**, label digits, scalar digit morph **`+N`/`-N`**, or ordinal digit morph **`#N`**) |
-| **`ROOT x ROOT`** (+ more **`x ROOT`**) + ending | **Ordinary compound** | Lexicon sense-compounds; [phrasal proper names](reference-suffix.md#phrasal-proper-names) (`zozohuxalanen`); [viewpoint laterals](roles.md#viewpoint-laterals) (`gewezexedonen` *your left*; bare `gewezel` *west*). Extra **`x ROOT`** pieces are ordinary roots only — [order](#ordinary-compound-order) |
+| **`ROOT x ROOT`** (+ more **`x ROOT`**) + ending | **Ordinary compound** | Productive sense / name assembly; [phrasal proper names](reference-suffix.md#phrasal-proper-names) (`zozohuxalanen`); [viewpoint laterals](roles.md#viewpoint-laterals) (`gewezexedonen` *your left*; bare `gewezel` *west*). Extra **`x ROOT`** pieces are ordinary roots only — [order](#ordinary-compound-order) |
 
 No open content root is a **bare single vowel**, so a single vowel **left** of `x` is never a values / ability / numeric **host**, and role compounds still put a full **`V(CV)+`** root after ROLE. Assigned span cells are the usual **`VOWEL x VOWEL`** family. Numeric **`NUM`** is a PoS-less number stem — [numeric derivation](numeric-derivation.md#numeric-derivation). Running-text / citation examples prefer spelled CV (`…xraba…`); inventory tables may keep shorthand — [writing style](numbers.md#writing-style-numeric-vs-spelled).
 
@@ -80,6 +82,143 @@ gloss: `z-sushi-x-coffee-x-tea`
 6. Longer material on **both** sides of the first `x`, with optional further **`x` + content root** pieces → ordinary compound (sense / name).
 
 Role ROLE is one of **`a`** / **`u`** / **`o`** only; span TYPE/EDGE stay single vowels.
+
+### Productive **`x`** vs one word vs two words
+<a id="compound-vs-separate"></a>
+
+Three packages — pick **one** job; do not spell the same intent two ways.
+
+| Package | When | Example |
+|---------|------|---------|
+| **Two words** | Two slot-fillers, or another subsystem already owns the relation | `zodogol zagadal` *a dog and a cat*; `zodogol gelulul` *a blue dog* (property = `/ɡ/`, not noun×noun) |
+| **`x` compound** | One referent, still hear KIND then FIELD — live label, sense-narrowing, multipart name | `golovexurul` *love in the crush sense*; `zuzuzuxogoven` *Sushi-Coffee* |
+| **Lexical kind** | One conventional kind the lexicon already closed — hear one root, not assembly | `zohohulabedel` *bedroom*; `zunowel` *sunflower* ([lexical compounds](#lexical-compounds)) |
+
+**Slot test (first).** How many things fill the slot? That many words. `zozohun zalanen` = two people; `zozohuxalanen` = one person.
+
+**Construction menu.** Property on a host → `/ɡ/` (or `/w/`). List → [join](coordination.md). Participant → [role compound](roles.md#role-compounds). Count / unit → [number](numbers.md). Stance / ability / numeric derivation → those **`x`** families. Only when none of those apply and you still want KIND×FIELD in one slot → productive **`x`**.
+
+**One packaging per job.** A shop mashup stays **`x`** even when frequent. A fossil kind is a lexicon lemma, not a silent **`x`** drop.
+
+### Translation practice
+<a id="translation-practice"></a>
+
+Short drills on this Intermediate band. Try each item before opening **Show answer**. The point is **`x`** assembly vs two words vs a lexical kind.
+
+**Roots used here:** `olove` *love* · `aga` *crush* · `uzu` *sushi* · `ogove` *coffee* · `adeda` *tea* · `ohohu` *house* · `abede` *bed* · `ebere` *person* · `onogo` *bond* · `odogo` *dog* · `agada` *cat* · `unowe` *sunflower* (lexical kind)
+
+#### English → Agalan
+
+**1.** *love in the crush sense* (one word, still hear the field)
+
+::: details Show answer
+`golovexurul.`
+:::
+
+**2.** *a dog and a cat*
+
+::: details Show answer
+`zodogol zagadal zam.`
+:::
+
+**3.** *Sushi-Coffee* (one shop label)
+
+::: details Show answer
+`zuzuzuxogoven.`
+:::
+
+**4.** *a bedroom* (lexical kind)
+
+::: details Show answer
+`zohohulabedel.`
+:::
+
+#### Agalan → English
+
+**5.** `zeberelonogon.`
+
+::: details Show answer
+*a friend* (lexical kind)
+:::
+
+**6.** `zunowel.`
+
+::: details Show answer
+*a sunflower* (lexical kind — not sun×flower tonight)
+:::
+
+## Advanced
+<a id="advanced"></a>
+
+### Lexical compounds (x-less kinds)
+<a id="lexical-compounds"></a>
+
+Some conventional kinds are **one root** in the lexicon: the seam between two published roots is spelled with the **first member’s reference letter** (`l` / `m` / `n` / `r`), with **no** mid-word **`x`**. Speakers do not coin these ad hoc — only the published compound list may add them.
+
+**Shape:** `LEFT` + **join** + `RIGHT` = **stem**; then PoS + stem + **ending** on the whole word (same as any content word).
+
+```
+`zohohulabedel.`
+
+gloss: `z-bedroom`
+
+*a bedroom.*
+```
+
+<AgelanInspect text="zohohulabedel." />
+
+The join letter records how the **left** root entered the closed kind (usually **-l** literal). The word’s final **-l** / **-m** / **-n** / **-r** is ordinary reference on the **whole** lemma.
+
+| Stem | Parts | Kind |
+|------|--------|------|
+| `ohohulabede` | house **-l** bed | bedroom |
+| `eberelonogo` | person **-l** bond | friend |
+| `abogolahala` | book **-l** school | textbook |
+
+Productive **`x`** is the default when you are still assembling (`golovexurul`, shop mashups, multipart names). Lexical closure is for kinds hearers should treat as **one entry** — like English *bedroom*, not *bed-room* tonight.
+
+**Lexicon rules (summary).** Stem must not equal another published simple root. Among published roots, the stem must factor as exactly one `LEFT + join + RIGHT` pair. Members are content roots only — not join vowels or reviser shapes.
+
+### Translation practice
+<a id="translation-practice-advanced"></a>
+
+Try each item before opening **Show answer**. Pick productive **`x`**, a lexical kind, or two words.
+
+**1.** *a friend* (lexical kind)
+
+::: details Show answer
+`zeberelonogon.`
+:::
+
+**2.** *love in the crush sense* (still hear the field)
+
+::: details Show answer
+`golovexurul.`
+:::
+
+**3.** *a textbook* (lexical kind)
+
+::: details Show answer
+`zabogolahalal.`
+:::
+
+**4.** *Ozohu and guidance as two roots* (two people / two labels — not one person)
+
+::: details Show answer
+`zozohun zalanen.` (two slot-fillers — contrast `zozohuxalanen` one person)
+:::
+
+**5.** *Sushi-Coffee* (live shop label)
+
+::: details Show answer
+`zuzuzuxogoven.`
+:::
+
+**6.** *a firehouse* (lexical kind)
+
+::: details Show answer
+`zohohulurel.`
+:::
 
 ## See also
 

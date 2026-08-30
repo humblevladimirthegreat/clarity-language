@@ -224,7 +224,7 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 14 | `ability.md` | **exists** | Host (non-need) + **`xa`/`xe`/`xo`/`xu`**; *can’t* grains vs *won’t* | Not values (need roots). Not role compounds (vowel *left* of `x`) |
 | 14 | `commentary.md` | **exists** | **COMMENT** **`ogugu`** + hold endings (**`hogugum`** default); not a world warrant | Not evidentiality / NOTIONAL (Intermediate). Not **`jom`** (core Intermediate) unless you only recycle **`jol`** from core/questions Beginner |
 | 14 | `roles.md` | **exists** | Role compounds **`a`/`u`/`o` x ROOT`** (agent / patient / reltum); endings on the role word | Not viewpoint laterals (Intermediate). Not values/ability (vowel *right* of `x`). Not join-relations |
-| 14 | `x-compounds.md` | skip | — | map only |
+| 14 | `x-compounds.md` | **exists** | Productive **`x`** vs two words vs lexical kind; recognize `ohohulabede` / `eberelonogo` lemmas | Not parser-family inventory as drills; not coining new x-less forms |
 | 14 | `plan-decision.md` | **exists** | **PLAN** **`owora`** map-resolution endings vs **PREDICT** **`elego`** (bare) | Not **DECISION** (Intermediate). Not evidentiality stacked on PREDICT (Intermediate). Sibling COMMENT / values / ability unused unless the page contrast needs them |
 
 ### Intermediate then Advanced
