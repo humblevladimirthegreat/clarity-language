@@ -71,7 +71,7 @@ English *both A and B* still uses this one closer on the right (`A B zam`), not 
 | **a** | additive | *and* (inventory) | **a** add |
 | **o** | choice | exclusive *or* | **o** one (pick one) |
 | **ao** | cochoice | inclusive *and/or* (one or more) | add + one |
-| **u** | negation | *not* / *none of* / bare *no* | **u** undo |
+| **u** | negation | *not* / *none of* / standalone *no* | **u** undo |
 | **ua** | counteradditive | *everything but* | undo + add |
 | **uo** | counterchoice | *anything but* | undo + one |
 
@@ -90,15 +90,15 @@ English *both A and B* still uses this one closer on the right (`A B zam`), not 
 
 Stacked vowels glue in writing (`zaol`, `zual`, `zoel`, …). Spoken order is first vowel, then next, then ending.
 
-### Arity: list, focus, and bare
+### Arity: list, single-item, and standalone
 
-**Arity** is how many items sit before the join. Most joins need **two or more**. A smaller set also works at **focus** (one item) or **bare** (zero items).
+**Arity** is how many items sit before the join. Most joins need **two or more**. A smaller set also works at **single-item** (one item) or **standalone** (zero items).
 
 | Arity | Shape | Job |
 |-------|-------|-----|
 | **List** (2+) | `A B P-JOIN` | ordinary coordination |
-| **Focus** (1) | `A P-JOIN` | exhaustivity on that one item (*just X*, *not X*, *X first*, …) |
-| **Bare** (0) | `P-JOIN` | emptiness or open frame in that join (*nothing*, *no*, *everything*, …) |
+| **Single-item** (1) | `A P-JOIN` | exhaustivity on that one item (*just X*, *not X*, *X first*, …) |
+| **Standalone** (0) | `P-JOIN` | emptiness or open frame in that join (*nothing*, *no*, *everything*, …) |
 
 <a id="focus-phrase"></a>
 <a id="unary-phrase"></a>
@@ -106,8 +106,11 @@ Stacked vowels glue in writing (`zaol`, `zual`, `zoel`, …). Spoken order is fi
 <a id="nullary-phrase"></a>
 <a id="focus-ranked"></a>
 <a id="unary-ranked"></a>
+<a id="single-item-phrase"></a>
+<a id="standalone-phrase"></a>
+<a id="single-item-ranked"></a>
 
-The join alone (bare), or the join plus one item (focus), can fill the slot when the form is in the starter table below. All other joins stay at list arity.
+The join alone (standalone), or the join plus one item (single-item), can fill the slot when the form is in the starter table below. All other joins stay at list arity.
 
 ### Closure endings **`-l`** and **`-m`**
 
@@ -140,28 +143,28 @@ gloss: `z-tea` · `z-coffee` · `zol`
 *tea or coffee (pick exactly one).*
 ```
 
-### Starter forms (focus and bare)
+### Starter forms (single-item and standalone)
 
-These are the joins you meet first. Each row is **bare** (0 items) or **focus** (1 item). List arity uses the same vowel + ending after two or more items.
+These are the joins you meet first. Each row is **standalone** (0 items) or **single-item** (1 item). List arity uses the same vowel + ending after two or more items.
 
 | Form | Arity | Reading |
 |------|-------|---------|
-| `zal` / `zam` | bare | *nothing* / *nobody* · *nothing comes to mind* |
-| `zol` / `zom` | bare | *no options* · *no pick* / *skipping is fine* |
-| `zul` / `zum` / `zun` | bare | *no* (closed · open · named stock label) |
-| `zual` / `zuam` | bare | *everything* / *everyone* · soft universal |
-| `zuol` / `zuom` | bare | *anything (goes)* · open free choice |
-| `zal` + NP | focus | *just X* / *only X* |
-| `zam` + NP | focus | *X, for one* / *X, say* |
-| `zol` + NP | focus | *has to be X* |
-| `zom` + NP | focus | *say, X* / *X, or skip* |
-| `zul` / `zum` / `zun` + NP | focus | *not X* |
-| `zual` + NP | focus | *everything but X* |
-| `zuol` + NP | focus | *anything but X* |
-| `zel` / `zem` | bare | *no favorite* · *whichever* |
-| `zel` / `zem` + NP | focus | *only X matters* / *X first* |
-| `zoel` / `zoem` + NP | focus | *only try X* / *try X first* |
-| `zael` / `zaem` | bare | *it's a draw* / *tie* · *probably a tie* |
+| `zal` / `zam` | standalone | *nothing* / *nobody* · *nothing comes to mind* |
+| `zol` / `zom` | standalone | *no options* · *no pick* / *skipping is fine* |
+| `zul` / `zum` / `zun` | standalone | *no* (closed · open · named stock label) |
+| `zual` / `zuam` | standalone | *everything* / *everyone* · soft universal |
+| `zuol` / `zuom` | standalone | *anything (goes)* · open free choice |
+| `zal` + NP | single-item | *just X* / *only X* |
+| `zam` + NP | single-item | *X, for one* / *X, say* |
+| `zol` + NP | single-item | *has to be X* |
+| `zom` + NP | single-item | *say, X* / *X, or skip* |
+| `zul` / `zum` / `zun` + NP | single-item | *not X* |
+| `zual` + NP | single-item | *everything but X* |
+| `zuol` + NP | single-item | *anything but X* |
+| `zel` / `zem` | standalone | *no favorite* · *whichever* |
+| `zel` / `zem` + NP | single-item | *only X matters* / *X first* |
+| `zoel` / `zoem` + NP | single-item | *only try X* / *try X first* |
+| `zael` / `zaem` | standalone | *it's a draw* / *tie* · *probably a tie* |
 
 Same pattern under `/d/` `/b/` (`dal`, `dam`, …), `/v/` (`val`, `vam`, `vul`, …), and `/x/` (`xal`, `xam`, `xul`, …).
 
@@ -175,8 +178,8 @@ Plain **u** means the listed items **fail**.
 | Arity | Shape | Reading |
 |-------|-------|---------|
 | list | `A B zul` | *none of A or B* |
-| focus | `zazawan zul` | *not Azawan* |
-| bare | `zul` / `zum` / `zun` | *no* |
+| single-item | `zazawan zul` | *not Azawan* |
+| standalone | `zul` / `zum` / `zun` | *no* |
 
 ```
 `gomonum gul.`
@@ -254,7 +257,7 @@ The join prefix **must match** every item head. Under `/ɡ/` `/h/`, joins use **
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills on this Beginner band. Try each item before opening **Show answer**. The join sits **after** the items; pick the vowel (set vs rank, including **`u`**) and the ending (**-l** / **-m** / **-r**), including focus and bare starter forms.
+Short drills on this Beginner band. Try each item before opening **Show answer**. The join sits **after** the items; pick the vowel (set vs rank, including **`u`**) and the ending (**-l** / **-m** / **-r**), including single-item and standalone starter forms.
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `abele` *apple* · `unune` *water* · `omonu` *challenging* · `ebere` *person* · `awala` *walk* · `urunu` *run* · `elebe` *sleep*
 
@@ -361,15 +364,15 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 ## Intermediate
 <a id="intermediate"></a>
 
-### Full focus and bare inventories
+### Full single-item and standalone inventories
 
-The starter table above covers common cases. Below are the full phrase-level focus and bare readings. Verb-phrase and clause use the same arity pattern with `/v/` and `/x/` prefixes ([VP / clause forms](#vp-clause-forms)).
+The starter table above covers common cases. Below are the full phrase-level single-item and standalone readings. Verb-phrase and clause use the same arity pattern with `/v/` and `/x/` prefixes ([VP / clause forms](#vp-clause-forms)).
 
-**Rank — focus**
+**Rank — single-item**
 
 Apply these readings when there is only one item in the list.
 
-| Form | Focus reading |
+| Form | Single-item reading |
 |------|---------------|
 | **…el** (`zel` / …) | *only X matters* / *X, period*; + SHARED scale → superlative — [comparatives.md](comparatives.md) |
 | **…em** (`zem` / …) | *X first* / *mainly X*; + SHARED scale → open superlative |
@@ -383,11 +386,11 @@ Apply these readings when there is only one item in the list.
 | **…en** (`zen` / …) | *X first* (stock) / *X, as usual* — named unspecified ranking |
 | **…er** (`zer` / …) | *preferably some X* / *X as a priority* |
 
-**Rank — bare**
+**Rank — standalone**
 
-Apply these readings when the join stands by itself (empty list). Bare **e** answers *who first / what's your favorite* with **no descending ranking** (no favorite). Bare **ue** answers *who last / what do you not want* with **no ascending ranking** (no least, no veto). Closed **-l** is a fact about the set; open **-m** is a shrug.
+Apply these readings when the join stands by itself (empty list). Standalone **e** answers *who first / what's your favorite* with **no descending ranking** (no favorite). Standalone **ue** answers *who last / what do you not want* with **no ascending ranking** (no least, no veto). Closed **-l** is a fact about the set; open **-m** is a shrug.
 
-| Form | Bare reading |
+| Form | Standalone reading |
 |------|--------------|
 | **…el** (`zel` / …) | *no favorite* / *nobody's first*; + SHARED scale → unspecified who's top |
 | **…em** (`zem` / …) | *whichever* (not picking who goes first) |
@@ -403,11 +406,11 @@ Apply these readings when the join stands by itself (empty list). Bare **e** ans
 | **…er** (`zer` / …) | *whatever's most important* |
 
 
-**Set — focus**
+**Set — single-item**
 
 Apply these readings when there is only one item in the list.
 
-| Form | Focus reading |
+| Form | Single-item reading |
 |------|---------------|
 | **…al** (`zal` / …) | *just X* / *only X* |
 | **…am** (`zam` / …) | *X, for one* / *X, say* |
@@ -428,15 +431,15 @@ Apply these readings when there is only one item in the list.
 
 **…un** is the stock denial: the conventional, formulaic *not X* (a set phrase rather than a computed exclusion). Use **…ul** / **…um** for ordinary denials; **…un** only where the denial itself is the fixed expression.
 
-**Set — bare**
+**Set — standalone**
 
 Apply these readings when the join stands by itself (empty list).
 
-| Form | Bare reading |
+| Form | Standalone reading |
 |------|--------------|
 | **…al** (`zal` / …) | *nothing* / *nobody* |
 | **…am** (`zam` / …) | *nothing comes to mind* |
-| **…an** (`zan` / …) | *null* / *void* (bare-only under `/z/` `/d/` `/b/` `/w/`) |
+| **…an** (`zan` / …) | *null* / *void* (standalone-only under `/z/` `/d/` `/b/` `/w/`) |
 | **…ol** (`zol` / …) | *no options* / *we're stuck* |
 | **…om** (`zom` / …) | *no pick* / *skipping is fine* |
 | **…ual** (`zual` / …) | *everything* / *everyone* |
@@ -453,16 +456,16 @@ Apply these readings when the join stands by itself (empty list).
 | **…or** (`zor` / …) | *anything* / *anyone* |
 | **…ur** (`zur` / …) | *something else* / *someone else* |
 
-Focus/bare is also allowed on verb-phrase **…ul** / **…um** and clause **…ul** / **…um** / **…un** among joins. **`vun`** is a [join-act verb](join-extras.md#join-act-verbs).
+Single-item/standalone is also allowed on verb-phrase **…ul** / **…um** and clause **…ul** / **…um** / **…un** among joins. **`vun`** is a [join-act verb](join-extras.md#join-act-verbs).
 
-Under [question](questions.md#interrogative-force): yes/no, offer, emptiness check, and fill-ask — [questions.md](questions.md#yes-no-unary-nullary).
+Under [question](questions.md#interrogative-force): yes/no, offer, emptiness check, and fill-ask — [questions.md](questions.md#yes-no-single-item-standalone).
 
 ### Rank joins
 <a id="ranked-conjunction-e"></a>
 <a id="rank-joins"></a>
 <a id="priority-ranking-e"></a>
 
-The four rank vowels (**`e`** / **`ae`** / **`oe`** / **`ue`**) and their directions are introduced in [Beginner](#set-joins-and-rank-joins). Two Intermediate refinements: multi **`ae`** + SHARED scale is the [equative](comparatives.md#equatives) (*as ADJ as*), and bare **`oe`** + SHARED scale is the empty superlative (*no biggest comes to mind*).
+The four rank vowels (**`e`** / **`ae`** / **`oe`** / **`ue`**) and their directions are introduced in [Beginner](#set-joins-and-rank-joins). Two Intermediate refinements: multi **`ae`** + SHARED scale is the [equative](comparatives.md#equatives) (*as ADJ as*), and standalone **`oe`** + SHARED scale is the empty superlative (*no biggest comes to mind*).
 
 ```
 `zazawan zululon zael gomonum.`
@@ -526,11 +529,11 @@ Mark kind / domain with ordinary **SHARED `/ɡ/`**. Items under **ua** / **uo** 
 
 | Shape | Reading |
 |-------|---------|
-| bare `zual` | *everything* / *everyone* |
+| standalone `zual` | *everything* / *everyone* |
 | `zual` + SHARED `/ɡ/` | *every K* (`zual gagadal` = *every cat*) |
 | `zuam` + SHARED `/ɡ/` | soft universal of K |
 | `zual` + SHARED `/ɡ/` + items | *every K but* exclusions |
-| focus `zual X` (no SHARED) | *everything but X* (English *every X* uses SHARED kind instead) |
+| single-item `zual X` (no SHARED) | *everything but X* (English *every X* uses SHARED kind instead) |
 | bare `hual` | *always* (habitual frame) — [restrictors.md](restrictors.md) |
 
 **Generics** use these fences. Plural **-sh** is a different job ([plurality.md](plurality.md)):
@@ -778,15 +781,15 @@ One island per clause. Same-slot material outside an island needs an outer join 
 
 On **phrase-level** joins under **`/z/` `/d/` `/b/` `/w/`** only, **-n** marks a **named / conventional list**: an established bundle (*the primary colors*, *stop–drop–roll*), not a freshly composed inventory. This is join-word **-n**, not a person/place name. It shares the **only** exception to [ordinary proper **-n**](reference-suffix.md#proper-name--n) with clause soft **-n** and join-acts / join-relations.
 
-**…an** is **bare-only** on phrase fences under **`/z/` `/d/` `/b/` `/w/`** (no one-item reading). Under `/ɡ/` `/h/`, **…an** / **…en** / other **-n** join-vowel spellings are [join-relations](join-extras.md#join-relations).
+**…an** is **standalone-only** on phrase fences under **`/z/` `/d/` `/b/` `/w/`** (no one-item reading). Under `/ɡ/` `/h/`, **…an** / **…en** / other **-n** join-vowel spellings are [join-relations](join-extras.md#join-relations).
 
 ### Rare arities and edge readings
 
-- Focus / bare phrase forms listed in Intermediate are the defined set; all other phrase joins need two or more items.
-- **…ul** / **…um** / **…un** are defined at **all** arities where still joins (bare *no*; focus *not X*; multi *none of*).
+- Single-item / standalone phrase forms listed in Intermediate are the defined set; all other phrase joins need two or more items.
+- **…ul** / **…um** / **…un** are defined at **all** arities where still joins (standalone *no*; single-item *not X*; multi *none of*).
 - **…ar** / **…or** / **…er** / **…ur** at all arities — see [unspecified-member **-r**](#unspecified-member-r-phrase).
-- **…aen** bare = *it's a draw*; **…en** bare = *no favorite* (stock); **…an** bare = *null* / *void*.
-- **…ual** bare = *everything*; **…uol** bare = *anything (goes)*.
+- **…aen** standalone = *it's a draw*; **…en** standalone = *no favorite* (stock); **…an** standalone = *null* / *void*.
+- **…ual** standalone = *everything*; **…uol** standalone = *anything (goes)*.
 - Content-word `-l`: `zeberel` = ordinary indefinite (*a person*). `zeberel zar` = explicitly non-identified (*some person, unknown who*).
 - `A B C zor` = any of them is fine (equal standing). `A B C zer` = pick by ranking.
 - `A B zar` = some one **among** A and B. `A B zur` = some one **other than** A and B. `A B zual` = *everything but* A and B.
@@ -823,7 +826,7 @@ Join-root phonotactics: [phonology.md](phonology.md#phonotactics).
 ### Translation practice
 <a id="translation-practice-advanced"></a>
 
-Short drills on this Advanced band. Try each item before opening **Show answer**. Phrase **-n** is a **named / conventional** list (clause soft **-n** is Intermediate); one item also tests a rare-arity contrast (**`zor`** vs **`zer`**, **`zur`**, or bare **`zan`**).
+Short drills on this Advanced band. Try each item before opening **Show answer**. Phrase **-n** is a **named / conventional** list (clause soft **-n** is Intermediate); one item also tests a rare-arity contrast (**`zor`** vs **`zer`**, **`zur`**, or standalone **`zan`**).
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `adeda` *tea* · `ogove` *coffee* · `unune` *water* · `ebere` *person*
 
@@ -895,5 +898,5 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 - Prefix-less revision (*including* / *rather*): [revisers.md](revisers.md)
 - Applicability *when* under `/h/` `/w/`: [restrictors.md](restrictors.md)
-- Fill-ask and yes/no on focus/bare joins: [questions.md](questions.md)
+- Fill-ask and yes/no on single-item/standalone joins: [questions.md](questions.md)
 - Join-act verbs / join-relations: [join-extras.md](join-extras.md)

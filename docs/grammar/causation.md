@@ -21,7 +21,7 @@ The first vowel is series **`a`** (*add*): add that route, and the outcome can f
 
 | Prefer | Job | Mnemonic |
 |--------|-----|----------|
-| focus **`…aom`** (`zaom` / `daom` / …) | *at least X* / *X would work* | **`a`** add a route |
+| single-item **`…aom`** (`zaom` / `daom` / …) | *at least X* / *X would work* | **`a`** add a route |
 | multi inclusive **`…ao…`** | several jointly listed hits | **`a`** add several routes |
 
 ```
@@ -577,7 +577,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 ## See also
 
-- Inclusive focus **`…aom` / `…aol`**: [coordination.md](coordination.md#focus-phrase)
+- Inclusive single-item **`…aom` / `…aol`**: [coordination.md](coordination.md#single-item-phrase)
 - Join-relations **`haon` / `huan` / `hon`**: [join-extras.md](join-extras.md#join-relations)
 - Restrictors **`hal` / `hual`**: [restrictors.md](restrictors.md)
 - Dependent clauses / **`adoro`**: [core.md](core.md#dependent-clauses)

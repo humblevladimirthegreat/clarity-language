@@ -51,7 +51,7 @@ English *refuse* vs *leave out*: `zazawan demadel vun` (*Azawan refuses meat*) v
 
 Use a **join-relation** when a host is **framed** by the same join-series move toward one `/b/` argument: *including nuts*, *without meat*, *prioritizing the bug*.
 
-**Shape:** `/ɡ/` or `/h/` + join vowel + **-n** (`gan` / `han`, …). One `/b/` argument (one thing or a group). Put ordinary noun **-sh** on that argument when the group is associative. For several members or an empty domain, put a [phrase join](coordination.md) **inside** the `/b/` phrase (`gan bal bebanul bezedul`), or use a [bare](coordination.md#focus-phrase) `/b/` join as the only argument (`gan bar` = *including something*; `guan bal` = *excluding nothing* / stripped frame).
+**Shape:** `/ɡ/` or `/h/` + join vowel + **-n** (`gan` / `han`, …). One `/b/` argument (one thing or a group). Put ordinary noun **-sh** on that argument when the group is associative. For several members or an empty domain, put a [phrase join](coordination.md) **inside** the `/b/` phrase (`gan bal bebanul bezedul`), or use a [standalone](coordination.md#standalone-phrase) `/b/` join as the only argument (`gan bar` = *including something*; `guan bal` = *excluding nothing* / stripped frame).
 
 Same vowels as [join-act verbs](#join-act-verbs); **-n** is join content toward `/b/` (same **only** exception as other join words). Keep the relation and its `/b/` together: `gan` + `/b/` on a noun; `han` + `/b/` as one adverb.
 

@@ -85,7 +85,7 @@ gloss: `z-grace` · `z-courage` · `zaem` · `g-bright`
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills on this Beginner band. Try each item before opening **Show answer**. Rank fence plus shared scale `/ɡ/` is the comparison; focus `zel` is the superlative; `zael` / `zaem` are equative.
+Short drills on this Beginner band. Try each item before opening **Show answer**. Rank fence plus shared scale `/ɡ/` is the comparison; single-item `zel` is the superlative; `zael` / `zaem` are equative.
 
 **Roots used here:** `azawa` / `ululo` / `uhubu` · `omonu` · `urubu` · `ogene` · `ele` · `uzumu`
 
@@ -195,7 +195,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 ### Full comparative arity
 <a id="comparative-arity"></a>
 
-You already close with **`e`**. The same shared-scale pattern works with exclusive rank **`oe`**, reverse rank **`ue`**, and with **zero** names (bare) or **one** name (focus).
+You already close with **`e`**. The same shared-scale pattern works with exclusive rank **`oe`**, reverse rank **`ue`**, and with **zero** names (standalone) or **one** name (single-item).
 
 Mnemonic: **`o`** is one-of / exclusive; **`u`** undoes the order (*less … than*).
 
@@ -206,9 +206,9 @@ A rank join with **no** shared scale `/ɡ/` is ordinary preference ranking (who 
 | Pattern | Reading | Mnemonic |
 |---------|---------|----------|
 | **Multi (2+)** + shared scale under **`e` / `oe` / `ue`** | Comparative ladder: earlier above later (`e` / `oe`); later above earlier under **`ue`** | **`e`** order; **`oe`** exclusive order; **`u`** undo |
-| **Focus (1)** + shared scale under **`e` / `ue`** | Superlative / *the least …* under **`ue`** | one name = the extreme |
-| **Bare (0)** + shared scale under **`e`** | Unspecified ranking (*unspecified who’s biggest*); open **-m** = soft / speaker-side | empty list, still ordered |
-| **Bare (0)** + shared scale under **`oe`** | Empty superlative (*there is no biggest*); open **-m** = no biggest comes to mind | exclusive + empty = none wins |
+| **Single-item (1)** + shared scale under **`e` / `ue`** | Superlative / *the least …* under **`ue`** | one name = the extreme |
+| **Standalone (0)** + shared scale under **`e`** | Unspecified ranking (*unspecified who’s biggest*); open **-m** = soft / speaker-side | empty list, still ordered |
+| **Standalone (0)** + shared scale under **`oe`** | Empty superlative (*there is no biggest*); open **-m** = no biggest comes to mind | exclusive + empty = none wins |
 
 | Example | Reading |
 |---------|---------|
@@ -236,7 +236,7 @@ Mnemonic: **`a`** adds. `zal` says each conjunct gets the adjective; `zael` says
 
 Collective *ADJ as a unit* uses shared `/ɡ/`…**-sh** under **`a`**: [plurality](plurality.md#collective-ascription). Keep the scale adjective singular in comparative and equative shared slots.
 
-Equative **`ae`** needs **two or more** comparees. Focus or bare **`ae`** plus a shared scale keeps the ordinary focus / bare **`ae`** readings. **`ae`** with no shared scale is equal rank / a tie among the names.
+Equative **`ae`** needs **two or more** comparees. Single-item or standalone **`ae`** plus a shared scale keeps the ordinary single-item / standalone **`ae`** readings. **`ae`** with no shared scale is equal rank / a tie among the names.
 
 | Example | Reading |
 |---------|---------|
@@ -260,7 +260,7 @@ Counted gaps use that one `/b/` on the scale. Vague *much* / *slightly* stays sh
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills on this Intermediate band. Try each item before opening **Show answer**. Test arity (`oe` / `ue` / bare / `zer`), distributive **`a`**, and counted measure gaps versus vague `/w/`.
+Short drills on this Intermediate band. Try each item before opening **Show answer**. Test arity (`oe` / `ue` / standalone / `zer`), distributive **`a`**, and counted measure gaps versus vague `/w/`.
 
 **Roots used here:** `azawa` / `ululo` / `uhubu` · `omonu` · `ogene` · `ele` · `urelu` · `uzumu`
 
@@ -373,7 +373,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 Bare *bad* / *terrible* can hide an unfair or unspoken standard. Keep the ordinary [comparative](#comparatives) fence and put the standard in the **than**-slot as a **named comparee**.
 
-A personal bar on any named person uses [numeric derivation](numeric-derivation.md#numeric-derivation) (digit morph **`+1`**). **Everyone** as a named class reuses bare named **`zuan`** ([coordination](coordination.md#focus-phrase)).
+A personal bar on any named person uses [numeric derivation](numeric-derivation.md#numeric-derivation) (digit morph **`+1`**). **Everyone** as a named class reuses bare named **`zuan`** ([coordination](coordination.md#standalone-phrase)).
 
 #### Recipe
 
@@ -413,7 +413,7 @@ Six fixed standards. Ending stays **-n** (named reference-class standard).
 
 **Mine vs speaker performance:** **`zugobon`** is where the speaker sits on the scale (current skill). **`zugoboxrawon`** is the bar the speaker applies. Soft personal standard: **`zugoboxrawom`**. Ordinary named people stay ordinary **-n** names: `zuel g<SCALE>l zazawan zululon`.
 
-**Everyone** vs focus reverse-superlative: `zuel g<SCALE>l z<JUDGED>l` is *the least … of all* in the group in play. **`zuan`** as comparee **names** the universal class. Prefer the benchmark when the point is “against everyone as a standard.” Bare closed **`zual`** is ordinary *everything / everyone* in other slots.
+**Everyone** vs single-item reverse-superlative: `zuel g<SCALE>l z<JUDGED>l` is *the least … of all* in the group in play. **`zuan`** as comparee **names** the universal class. Prefer the benchmark when the point is “against everyone as a standard.” Standalone closed **`zual`** is ordinary *everything / everyone* in other slots.
 
 | Agalan | Reading |
 |---------|---------|
@@ -505,6 +505,6 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 ## See also
 
-- Fence shape, focus / bare, shared modifiers: [coordination.md](coordination.md)
+- Fence shape, single-item / standalone, shared modifiers: [coordination.md](coordination.md)
 - Kind and identity (*is a dog*, *is Superman*): [predication.md](predication.md)
 - Measure NPs: [numbers-applied.md](numbers-applied.md#measure-phrases)

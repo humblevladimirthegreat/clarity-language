@@ -125,11 +125,11 @@ Without the SHARED continuum, two number conjuncts are **ordinary coordination**
 
 Menu joins **`o`** / **`ao`** stay discrete (*3 or 5* / *3 and/or 5*). Equative **`ae`** with numbers is *equal* / *approximately equal* (`z+5 z+5 zael` / `z+3 z+5 zaem`); it is not a span. Exclusive ranked **`oe`** stays superlative / empty-superlative with a scale.
 
-Three or more number conjuncts under **`a`** stay an ordinary list (`zal z+1 z+3 z+7` = *1, 3, and 7*), even with SHARED. Focus **`zal z+3`** stays *just 3*, not a ray. Focus **ranked** with a number is a [threshold](#numeric-thresholds).
+Three or more number conjuncts under **`a`** stay an ordinary list (`zal z+1 z+3 z+7` = *1, 3, and 7*), even with SHARED. Single-item **`zal z+3`** stays *just 3*, not a ray. Single-item **ranked** with a number is a [threshold](#numeric-thresholds).
 
 **Comparatives vs spans:** `zazawan zululon zel gomonum` = *Azawan is more challenging than Ululon* (SHARED **scale**, people as conjuncts). `z+3 z+5 zel gumedul` = *from 3 to 5 on time* (SHARED **continuum**, number endpoints). Bare `z+3 z+5 zel` = prefer 3 over 5.
 
-#### Thresholds (focus ranked)
+#### Thresholds (single-item ranked)
 <a id="numeric-thresholds"></a>
 <a id="greater-less-than"></a>
 
@@ -145,13 +145,13 @@ When the **only** member of a [rank join](coordination.md#ranked-conjunction-e) 
 | **`zaen z+5`** | named/conventional **equal-to-5** band / tie label | phrase **-n** on **ae** |
 | **`zuen z+5`** | named/conventional floor band | phrase **-n** reverse |
 
-Same under `/d/` `/b/` `/ɡ/` (`gel g+5` = modifier *\<5*; `duel d+10` = object *\>10*). **`ae`** / **`oe`** focus with a number stay ordinary ranked focus / triage. Boolean focus (**`zal`** / **`zol`** / …) is ordinary *just this value*. Focus **`zel z+`** (zero-group) is ordinary focus on plural/unspecified amount; +∞ is **`z+e`** / **`g+e`**.
+Same under `/d/` `/b/` `/ɡ/` (`gel g+5` = modifier *\<5*; `duel d+10` = object *\>10*). **`ae`** / **`oe`** single-item with a number stay ordinary ranked single-item / triage. Boolean single-item (**`zal`** / **`zol`** / …) is ordinary *just this value*. Single-item **`zel z+`** (zero-group) is ordinary single-item on plural/unspecified amount; +∞ is **`z+e`** / **`g+e`**.
 
 **Inclusive bounds:** default is **strict** (`<` / `>`). For **≤ 5** / **≥ 5**, use a two-endpoint [span](#ranges) with the bound included. Exclusive-high **`ul`** stays a two-side span tool (`z+3 ul z+5 zal gurelul`).
 
-**Unspecified in a threshold:** bare **`e`** + **-r** = unspecified member of the *\< X* ray (`zer z+5` → *some/whatever value \< 5*; under question → *which value \< 5?*). **`ue`** takes no **-r** (stacked forms never do: [coordination](coordination.md#unspecified-member-r-phrase)). For an unspecified value *\> 5*, use other wording.
+**Unspecified in a threshold:** standalone **`e`** + **-r** = unspecified member of the *\< X* ray (`zer z+5` → *some/whatever value \< 5*; under question → *which value \< 5?*). **`ue`** takes no **-r** (stacked forms never do: [coordination](coordination.md#unspecified-member-r-phrase)). For an unspecified value *\> 5*, use other wording.
 
-`z+3 z+5 zel gumedul` = *from 3 to 5 on time* (span); `z+3 z+5 zel` = *3 ≻ 5* (preference); `z+5 zel` = *\< 5* (focus threshold). `zazawan zel` (a person, not a number) stays ordinary *only Azawan matters* / [superlative-with-scale](comparatives.md). A **focus number conjunct** triggers the threshold reading when the number is a bound (typically digitful).
+`z+3 z+5 zel gumedul` = *from 3 to 5 on time* (span); `z+3 z+5 zel` = *3 ≻ 5* (preference); `z+5 zel` = *\< 5* (single-item threshold). `zazawan zel` (a person, not a number) stays ordinary *only Azawan matters* / [superlative-with-scale](comparatives.md). A **single-item number conjunct** triggers the threshold reading when the number is a bound (typically digitful).
 
 #### Half-open (exclude the high end only)
 

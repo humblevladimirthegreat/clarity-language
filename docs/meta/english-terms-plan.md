@@ -140,7 +140,7 @@ After the arity rename, remaining *focus* is word-order **prominence**, the valu
 | [grammar-docs.md](grammar-docs.md) examples that cite old labels | Parser / code identifiers |
 | [english-terms.md](english-terms.md) after the last content phase | House-cast names; leftover special-pronoun spellings in editor dialect |
 
-**Anchors:** keep old HTML ids as silent aliases (`clause-force`, `focus-phrase`, `bare-phrase`, `unary-phrase`, `nullary-phrase`, `interrogative-force`, `zero-copula`, `participant-compounds`, `content-questions`, `yes-no-focus-bare`, `focus-bare-inventory`, `adverb-topic-and-free-order-ties`). Add new ids beside them. Visible link text and new in-repo links use the new names. Do not write “used to be called…” in learner prose ([grammar-docs.md](grammar-docs.md#present-the-current-language-only)).
+**Anchors:** through Phases 1–6, keep old HTML ids as silent aliases (`clause-force`, `focus-phrase`, `bare-phrase`, `unary-phrase`, `nullary-phrase`, `interrogative-force`, `zero-copula`, `participant-compounds`, `content-questions`, `yes-no-focus-bare`, `focus-bare-inventory`, `adverb-topic-and-free-order-ties`). Add new ids beside them. Visible link text and new in-repo links use the new names. Phase 7 drops aliases that nothing in-repo still points at. Do not write “used to be called…” in learner prose ([grammar-docs.md](grammar-docs.md#present-the-current-language-only)).
 
 **After each phase:** `npm run lint:md`. Do **not** run `retie-docs` (this is English metalanguage, not Agalan tokens).
 
@@ -242,7 +242,11 @@ Optional in this phase: value “bare need” → always **topic** in values.md,
 
 Rewrite [english-terms.md](english-terms.md) from an as-used collate into a **keep-list**: one row per locked name, *Near* only for true other-jobs, clash table only for leftovers that Phase 6 did not kill. Change the lead: this page is now the standardized metalanguage, not a recommendation to rename.
 
-Sync [grammar-docs.md](grammar-docs.md) (everyday-English examples still saying `clause force`; “omit recoverable `jal` when the page is not teaching force”). Sync [drill-generation.md](drill-generation.md) allowlist rows. Sync `AGENTS.md` construction table if any Phase 5–6 names remain. Do **not** bulk-fix leftover special-pronoun spellings in editor dialect (out of scope).
+Sync [grammar-docs.md](grammar-docs.md) (everyday-English examples still saying `clause force`; “omit recoverable `jal` when the page is not teaching speech act”). Sync [drill-generation.md](drill-generation.md) allowlist rows. Sync `AGENTS.md` construction table if any Phase 5–6 names remain.
+
+**Drop unused HTML aliases:** grep the old fragments listed under **Anchors**. If no in-repo link still uses that id, remove the silent alias and leave only the new id. Keep an alias that still has an in-repo hit (fix the link instead, then drop). Do not keep aliases “for old bookmarks” once the repo is clean.
+
+**Out of scope:** do not retie leftover special-pronoun **Agalan spellings** in editor files (collate / `AGENTS.md` still showing older roots such as `aha` / `edone` instead of current **`ahage`** / **`ebone`**). That is lexicon hygiene, not this English-name pass. House-cast vs **`ugobo`** / **`ebone`** pedagogy is already [grammar-docs.md](grammar-docs.md#house-cast) / drill policy.
 
 ## Per-phase checklist
 
@@ -256,7 +260,7 @@ Sync [grammar-docs.md](grammar-docs.md) (everyday-English examples still saying 
 | Phase | Status |
 |-------|--------|
 | 1 Speech act | done |
-| 2 Join arity | not started |
+| 2 Join arity | done |
 | 3 Span / range / overlay | not started |
 | 4 Turn, vocative, polar, resume | not started |
 | 5 Alias sweep | not started |

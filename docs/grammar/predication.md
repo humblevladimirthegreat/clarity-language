@@ -310,4 +310,4 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 - Scalar *as ADJ as* / comparative property clauses: [comparatives.md](comparatives.md)
 - Complex `/ɡ/`+`/b/`: [core.md](core.md)
-- Negation / focus packaging on properties: [coordination.md](coordination.md#negation-u)
+- Negation / single-item packaging on properties: [coordination.md](coordination.md#negation-u)

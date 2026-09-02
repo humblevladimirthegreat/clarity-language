@@ -42,7 +42,7 @@ Under question, join **-r** always means fill-ask. For emptiness yes/no, use bar
 
 Under **jol** / **jom**, prefixed **-r** on **a** / **o** / **e** / **u** asks to name the unspecified member. The vowel is the same series job as elsewhere: **a** add, **o** one, **e** order, **u** undo.
 
-| Vowel | Under question (bare) | Examples | Mnemonic |
+| Vowel | Under question (standalone) | Examples | Mnemonic |
 |-------|------------------------|----------|----------|
 | **a** | *Who/what?* / *What (did they) do?* / *What happened?* | `zar` · `var` · `xar` | **a** add: name a member |
 | **o** | *What (anything)?* / *Anything?* | `zor` · `vor` · `xor` | **o** one: name any one |
@@ -106,7 +106,7 @@ These three jobs are distinct:
 | Polar stance | **`jael`** / **`juel`** / **`jaol`** | *true* vs *false* vs *I’ll take that* |
 | Denial inside the clause | **`zul`** / **`vul`** / **`xul`** | *not X* / *no* as a join |
 
-A fill answer **need not** keep **-r**. Bare content, focus **-l** / **-m** / **-n**, or a longer list is fine ([fill-ask answers](#fill-ask-answers)).
+A fill answer **need not** keep **-r**. Bare content, single-item **-l** / **-m** / **-n**, or a longer list is fine ([fill-ask answers](#fill-ask-answers)).
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -262,7 +262,7 @@ When clarity matters, restate: `jael vul vurunul` vs `juel vurunul`. Offer parti
 
 ### Fill-ask arity
 
-Same length rule as [focus / bare](coordination.md#focus-phrase):
+Same length rule as [single-item / standalone](coordination.md#single-item-phrase):
 
 | Length | **…ar** | **…or** | **…er** | **…ur** |
 |--------|---------|---------|---------|---------|
@@ -283,26 +283,27 @@ Under `/h/` / `/w/`, circumstance readings are these forms ([restrictors](restri
 | **`hor`** / **`wor`** | *anytime* | *Anytime?* |
 | **`hur`** / **`wur`** | *sometime else* | *When else?* |
 
-### Yes/no with focus / bare (pattern)
+### Yes/no with single-item / standalone
 <a id="yes-no-focus-bare"></a>
 <a id="yes-no-unary-nullary"></a>
+<a id="yes-no-single-item-standalone"></a>
 <a id="under-question"></a>
 
-Under question, focus and bare join endings ask for confirmation or offer.
+Under question, single-item and standalone join endings ask for confirmation or offer.
 
-- Focus **-l** / **-n**: confirm the singleton (*Just X?*, *Has to be X?*).
-- Focus **-m**: **offer** that singleton (*How about X?*, *Want X?*).
-- Focus **…ul** / **…um** / **…un**: confirm / offer denial (*Not X?*).
-- Bare **-l**: colloquial emptiness check (*Nothing?*, *Do nothing?*).
-- Bare **-m**: open emptiness / soft gap (*Got nothing?*). Fill-ask uses **…ar** / **…or** / **…er** / **…ur**.
-- Bare / focus / multi **…ar** / **…or** / **…er** / **…ur**: [fill-ask](#fill-ask-r).
+- Single-item **-l** / **-n**: confirm the singleton (*Just X?*, *Has to be X?*).
+- Single-item **-m**: **offer** that singleton (*How about X?*, *Want X?*).
+- Single-item **…ul** / **…um** / **…un**: confirm / offer denial (*Not X?*).
+- Standalone **-l**: colloquial emptiness check (*Nothing?*, *Do nothing?*).
+- Standalone **-m**: open emptiness / soft gap (*Got nothing?*). Fill-ask uses **…ar** / **…or** / **…er** / **…ur**.
+- Standalone / single-item / multi **…ar** / **…or** / **…er** / **…ur**: [fill-ask](#fill-ask-r).
 
-Worked rank / set inventories are Advanced ([focus and bare inventory](#focus-bare-inventory)).
+Worked rank / set inventories are Advanced ([single-item and standalone inventory](#single-item-standalone-inventory)).
 
 ### Fill-ask answers
 <a id="fill-ask-answers"></a>
 
-A fill may be a bare content word, focus **-l** / **-m** / **-n**, or a longer list. Multi-gap answers follow spoken **-r** order ([fill-all](#fill-all)).
+A fill may be a bare content word, single-item **-l** / **-m** / **-n**, or a longer list. Multi-gap answers follow spoken **-r** order ([fill-all](#fill-all)).
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -416,14 +417,15 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 ## Advanced
 <a id="advanced"></a>
 
-### Focus and bare inventory
+### Single-item and standalone inventory
 <a id="focus-bare-inventory"></a>
+<a id="single-item-standalone-inventory"></a>
 
 Length **2+** (no **-r**): **-l** = pick from this closed menu; **-m** = pick or name something else (for **o**, also *or none*); **u** = *none of* the listed; **ua** / **uo** = complement of the listed; **ue** = reverse-rank among the listed. With **-r**: [fill-ask arity](#fill-ask-r). Under `/h/` / `/w/`, circumstance uses [restrictors](restrictors.md) (the set above).
 
 Join-word **-n** here is stock/usual (not [proper-name **-n**](reference-suffix.md#proper-name--n)).
 
-#### Rank: focus (under question)
+#### Rank: single-item (under question)
 
 | Form | Under question | Mnemonic |
 |------|----------------|----------|
@@ -436,7 +438,7 @@ Join-word **-n** here is stock/usual (not [proper-name **-n**](reference-suffix.
 | **…en** | *X first, as usual?* | **e** order + stock **n**: usual first place |
 | **…er** | *Which X is first?* (fill-ask) | **e** order + fill **r**: name the rank |
 
-#### Rank: bare (under question)
+#### Rank: standalone (under question)
 
 | Form | Under question | Mnemonic |
 |------|----------------|----------|
@@ -452,7 +454,7 @@ Join-word **-n** here is stock/usual (not [proper-name **-n**](reference-suffix.
 | **…en** | *No favorite?* (stock) | **e** order + stock **n**: usual empty top |
 | **…er** | *What’s the priority?* (fill-ask) | **e** order + fill **r**: name the priority |
 
-#### Set: focus (under question)
+#### Set: single-item (under question)
 
 | Form | Under question | Mnemonic |
 |------|----------------|----------|
@@ -473,7 +475,7 @@ Join-word **-n** here is stock/usual (not [proper-name **-n**](reference-suffix.
 | **…un** | *Not X, as usual?* | **u** undo + stock **n** |
 | **…ur** | *What else (besides X)?* (fill-ask) | **u** undo + fill: name what remains |
 
-#### Set: bare (under question)
+#### Set: standalone (under question)
 
 | Form | Under question | Mnemonic |
 |------|----------------|----------|
@@ -522,7 +524,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 `jol zululon zol.`
 :::
 
-**4.** *Tie?* (bare rank)
+**4.** *Tie?* (standalone rank)
 
 ::: details Show answer
 `jol zael.`
@@ -569,5 +571,5 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 ## See also
 
 - [core.md](core.md#utterance-markers-j): turn vs continue; speech act
-- [coordination.md](coordination.md): join fences; statement readings of **-r** / focus / bare
+- [coordination.md](coordination.md): join fences; statement readings of **-r** / single-item / standalone
 - [pronouns.md](pronouns.md): content anaphor **-r** (fill-ask is join **-r**)
