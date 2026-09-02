@@ -67,6 +67,7 @@ export default defineConfig({
       { text: 'Core', link: '/core' },
       { text: 'Lexicon', link: '/lexicon' },
       { text: 'Gloss', link: '/gloss' },
+      { text: 'Glossary', link: '/glossary' },
     ],
     sidebar: [
       {
@@ -78,6 +79,7 @@ export default defineConfig({
         items: [
           { text: 'Lexicon', link: '/lexicon' },
           { text: 'Gloss', link: '/gloss' },
+          { text: 'Glossary', link: '/glossary' },
         ],
       },
     ],

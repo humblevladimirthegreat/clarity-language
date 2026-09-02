@@ -14,8 +14,9 @@ Related meta:
 | [drill-generation.md](drill-generation.md) | Path allowlist and execute procedure (one file per agent) |
 | [language-name.md](language-name.md) | English name **Agalan** = glasses root **`agala`** + **-n** (editors only — not linked from grammar) |
 | [unassigned-reserved.md](unassigned-reserved.md) | Unused-slot / unassigned-form inventory (editors only — not linked from grammar) |
-| [english-terms.md](english-terms.md) | Locked English names for grammatical features (editors only — not linked from grammar) |
 | [proposals.md](proposals.md) | `docs/proposals/` layout; **do not link to** proposal pages (editors only — not linked from grammar) |
+
+Learner English names for constructions live on [glossary.md](../grammar/glossary.md) (Tools). Teaching pages use those names in place; they do **not** link to glossary entries (How to learn may point at the page).
 
 ## Dual role
 
