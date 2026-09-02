@@ -1,7 +1,7 @@
 # Comparatives, superlatives, and equatives
 <a id="comparatives-page"></a>
 
-Scalar comparison: *more … than*, *the …-est*, *as … as*, measured differentials, and judgment benchmarks (*worse than Avuzo* / …).
+Scalar comparison: *more … than*, *the …-est*, *as … as*, measured differentials, and judgment benchmarks (*worse than Average* / …).
 
 ## Beginner
 <a id="beginner"></a>
@@ -399,7 +399,7 @@ Six fixed standards. Ending stays **-n** (named reference-class standard), not o
 
 | English | Sense | Comparee | Source |
 |---------|--------|----------|--------|
-| **Avuzo** | mean of the relevant population | **`zojun`** | ☯️ **`oju`** *yin-yang* → *balance* |
+| **Average** | mean of the relevant population | **`zojun`** | ☯️ **`oju`** *yin-yang* → *balance* |
 | **Typical** | usual / modal case | **`zahaman`** | 🐹 **`ahama`** *hamster* → *routine* |
 | **Mine** (personal standard) | speaker’s **normative** bar | **`zugoboxrawon`** | 🎤 **`ugobo`** ([speaker](pronouns.md#special-pronouns)) + digit morph **`+1`** (*unit / primary*) |
 | **Social** | peers / in-group | **`zuluden`** | 👥 **`ulude`** *silhouettes* → *community* |
@@ -422,7 +422,7 @@ Soft personal standard: **`zugoboxrawom`**. Ordinary named people stay ordinary 
 | Agalan | Reading |
 |---------|---------|
 | `zuel guzunul zugobon zalaban` | *worse than Professional* at singing |
-| `zuem gagalal debunel zojun` | soft: draft is somewhat less clear than Avuzo |
+| `zuem gagalal debunel zojun` | soft: draft is somewhat less clear than Average |
 | `zuel geredom zazawan zugoboxrawon` | Azawan is less kind than **my personal standard** |
 | `zuel guzunul zazawan zugobon` | Azawan is less skilled at singing than **I am** (performance) |
 | `zuel gabunul zugobon zuluden` | less skilled than Social |
@@ -464,7 +464,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 `zuel guzunul zugobon zalaban.`
 :::
 
-**4.** *The draft is somewhat less clear than Avuzo.*
+**4.** *The draft is somewhat less clear than Average.*
 
 ::: details Show answer
 `zuem gagalal debunel zojun.`
@@ -511,7 +511,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 **5.** `zuem guzunul zazawan zojun.`
 
 ::: details Show answer
-*Azawan is somewhat worse at singing than Avuzo.*
+*Azawan is somewhat worse at singing than Average.*
 :::
 
 ## See also

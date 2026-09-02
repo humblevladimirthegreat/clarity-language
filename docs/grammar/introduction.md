@@ -2,9 +2,9 @@
 
 **Agalan** (`agala` + proper **-n**) translates to English *clarity*.
 
-What the language is called, how these docs work, and what “good grammar design” means here. Psychological purpose and feature criteria: [why-agelan.md](why-agelan.md). Core clause grammar starts in [core.md](core.md).
+How these docs work, and what “good grammar design” means for this language.
 
-## Purpose (short)
+## Purpose
 <a id="purpose"></a>
 
 Agalan encodes psychological distinctions into vocabulary and grammar so ordinary speech can nudge **compassion → rationality → empowerment**.
@@ -14,18 +14,31 @@ Agalan encodes psychological distinctions into vocabulary and grammar so ordinar
 
 Two supporting goals sit beside the psychology:
 
-- **Unambiguous but usable** — so tutoring and other tools can rely on the parse without making ordinary speech hard.
+- **Unambiguous but usable** — so automatic tools can understand the language without making ordinary speech hard.
 - **Singable phonology** — syllable shape chosen to be easy to sing.
 
-Agalan keeps three kinds of clarity in ordinary speech:
+Agalan keeps three kinds of clarity in ordinary speech.
 
-**Syntactic.** In a clause, every content word begins with a letter that names its job (subject, object, verb, …), so role does not depend on guessing from English-style word class. Default order is Subject–Object–Verb, but free order is safe because that first letter is authoritative. Outside a sentence, the bare root with its final letter names the thing by itself.
+### Syntactic
+<a id="syntactic"></a>
 
-**Referential.** Pronouns are built from a fixed prefix of **any** prior word’s root (through the 2nd vowel) and resolve to the **most recently mentioned matching** antecedent, plus a small set of special discourse-role pronouns. There are no vague English-style *it* / *they* pronouns.
+In a clause, every content word begins with a letter that names its job (subject, object, verb, …), so role does not depend on guessing from English-style word class. Default order is Subject–Object–Verb, but free order is safe because that first letter is authoritative.
 
-**Semantic.** Each dictionary sense is one entry. Related senses across fields use an explicit compound: kind first, then the topic field after mid-word **`x`** (`golovexurul` *love in the crush sense*), rather than unmarked polysemy. Further roots after more **`x`** keep narrowing the same word. A conventional kind the community treats as one entry may also be a **lexical compound** — one closed root in the dictionary (`zohohulabedel` *bedroom*) — not a productive **`x`** assembly.
+`zazawan godogol.`
 
-**What stays vague on purpose.** Derivations need not show that *food* and *cook* are related. Precision that would make the language hard to use is out of scope.
+*Azawan is a dog.* The first letter on each word is the job: `z-` who the sentence is about, `g-` a kind or property.
+
+Outside a sentence, the bare root with its final letter names the thing by itself.
+
+### Referential
+<a id="referential"></a>
+
+Pronouns copy a short start of an earlier word’s root (through the second vowel) and point to the **most recently mentioned matching** word. A few specials cover speaker, listener, and similar roles. There are no vague English-style *it* / *they* where you have to guess which of the many possible things it refers to.
+
+### Semantic
+<a id="semantic"></a>
+
+Each dictionary sense is one entry. Related senses across fields use an explicit compound: kind first, then the topic after mid-word **`x`** (`golovexurul` *love in the crush sense*).
 
 ## How to learn from these docs
 <a id="how-to-learn"></a>
@@ -33,6 +46,8 @@ Agalan keeps three kinds of clarity in ordinary speech:
 Grammar pages use **Beginner** / **Intermediate** / **Advanced** sections so you can finish all Beginner material across this folder before Intermediate, then Advanced.
 
 Follow the **Suggested reading order** in the site sidebar (same sequence on every page). Read each page’s Beginner section in that order, then every peer’s Intermediate, then Advanced.
+
+Continue with [core.md](core.md#beginner) for clause shape.
 
 ## Acknowledgments
 <a id="acknowledgments"></a>
