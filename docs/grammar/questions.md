@@ -6,7 +6,7 @@ How to **ask** in Agalan: under question (**jol** / soft **jom**), yes/no vs fil
 <a id="beginner"></a>
 
 ### Question (**jol** / **jom**)
-<a id="interrogative-force"></a>
+<a id="question"></a>
 
 Put **jol** at the left edge to ask. Soft **jom** is the same job, gentler. One marker covers yes/no *and* *who* / *what* / *when?* / *what happened?*. The body shape tells which kind of ask it is.
 
@@ -47,7 +47,7 @@ Under **jol** / **jom**, prefixed **-r** on **a** / **o** / **e** / **u** asks t
 | **e** | *What’s the priority?* | `zer` · `ver` · `xer` | **e** order: name the rank |
 | **u** | *What else?* / *Who else?* | `zur` · `vur` · `xur` | **u** undo: name what remains |
 
-*When?* uses bare **`har`** (and kin) in Intermediate ([When?](#circumstance-when)).
+*When?* uses bare **`har`** (and kin) in Intermediate ([When?](#when)).
 
 Content-word resume **-r** points back at a named thing; fill-ask is only join **-r** (`zar` / `var` / `xar` / …). See [pronouns](pronouns.md).
 
@@ -270,7 +270,6 @@ Unbound *who* / *what* / *where* = bare phrase **-r** in the queried slot. Unbou
 
 ### When?
 <a id="when"></a>
-<a id="circumstance-when"></a>
 
 Under `/h/` / `/w/`, **occasion** readings are these forms ([restrictors](restrictors.md#defined-core-full)):
 
@@ -281,8 +280,6 @@ Under `/h/` / `/w/`, **occasion** readings are these forms ([restrictors](restri
 | **`hur`** / **`wur`** | *sometime else* | *When else?* |
 
 ### Yes/no with single-item / standalone
-<a id="yes-no-focus-bare"></a>
-<a id="yes-no-unary-nullary"></a>
 <a id="yes-no-single-item-standalone"></a>
 <a id="under-question"></a>
 
@@ -415,7 +412,6 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 <a id="advanced"></a>
 
 ### Single-item and standalone inventory
-<a id="focus-bare-inventory"></a>
 <a id="single-item-standalone-inventory"></a>
 
 Length **2+** (no **-r**): **-l** = pick from this closed menu; **-m** = pick or name something else (for **o**, also *or none*); **u** = *none of* the listed; **ua** / **uo** = complement of the listed; **ue** = reverse-rank among the listed. With **-r**: [fill-ask arity](#fill-ask-r). Under `/h/` / `/w/`, occasions use [restrictors](restrictors.md) (the set above).

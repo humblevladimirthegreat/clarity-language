@@ -340,7 +340,6 @@ Typed span fences nest freely. Each multi-token open pushes; **`xuxul`** pops th
 Examples: `d[ h(…) ]`, `d[ z{…} ]`, `d~[ d<…> ]`. **`@`** / **`~`** apply only to the immediately following open.
 
 ### Scope islands
-<a id="adjunct-scope-islands"></a>
 <a id="scope-islands"></a>
 
 **Scope islands** mark a multi-word chunk so an **inside binder** can target that chunk. Writing **`^ … ^`**. In speech you only hear a pause and one tight phrase: there is no spoken open or close word. The edges are only grouping marks, like parentheses; the inside binder is the function.
@@ -358,13 +357,13 @@ gloss: `z-grace` · `^` · `h-maybe` · `z-red` · `z-dog` · `^` · `v-see`
 - No role letter on the edges (typed fences like `d[…]` already have one).
 - **One island per clause.** Islands do not nest.
 - Empty `^^` has no reading.
-- **Binder required:** at least one scope-taking `/h/` and/or a [join](coordination.md#join-scope-islands-rules) particle **inside**.
+- **Binder required:** at least one scope-taking `/h/` and/or a [join](coordination.md#scope-islands-join) particle **inside**.
 - Prefer spaces inside: `^ h<maybe>l zaredel zodogol ^`.
 
 | Binder | Job inside the island |
 |--------|------------------------|
 | Scope-taking **`/h/`** | frames that **chunk** (prefer first in the island) |
-| Prefixed **join** | lookback-absorbs **only** matching-role material **inside** — [scope islands](coordination.md#join-scope-islands-rules) |
+| Prefixed **join** | lookback-absorbs **only** matching-role material **inside** — [scope islands](coordination.md#scope-islands-join) |
 
 `/h/` and a join may share one island (`^ h<maybe>l zazawan zululon zam ^`). **`/w/`** still only frames the previous `/ɡ/`.
 
@@ -675,7 +674,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 ## See also
 
-- Scope islands: [coordination.md](coordination.md#join-scope-islands-rules)
+- Scope islands: [coordination.md](coordination.md#scope-islands-join)
 - Identity vs parenthetical comment: [predication.md](predication.md#identity)
 - Phrasal proper names: [reference-suffix.md](reference-suffix.md#phrasal-proper-names)
 - Native office handles: [reference-suffix.md](reference-suffix.md#named-handles)

@@ -17,7 +17,7 @@ You use joins when English would say *and*, *or*, *not*, *prefer A over B*, *som
 
 The vowel tells you *what kind* of list (inventory, menu, rank, negation, complement). The ending tells you *how closed* the list is. **a** add, **o** one, **e** order, **u** undo (same jobs as elsewhere).
 
-Join words are the **only** place **-n** does not mean a [name](reference-suffix.md#proper-name--n). Beginner fences use **-l** / **-m** / **-r**. Join **-n** (phrase **named list**, clause **sequence** `xan`, join-acts) is [Intermediate](#soft-n-clause) and [Advanced](#named--conventional-ending-phrase-level-all-join-vowels) on this page.
+Join words are the **only** place **-n** does not mean a [name](reference-suffix.md#proper-name--n). Beginner fences use **-l** / **-m** / **-r**. Join **-n** (phrase **named list**, clause **sequence** `xan`, join-acts) is [Intermediate](#sequence) and [Advanced](#named--conventional-ending-phrase-level-all-join-vowels) on this page.
 
 ### Right-close fence (flat lists)
 <a id="phrase-level-coordination"></a>
@@ -100,12 +100,6 @@ Stacked vowels glue in writing (`zaol`, `zual`, `zoel`, …). Spoken order is fi
 | **Single-item** (1) | `A P-JOIN` | exhaustivity on that one item (*just X*, *not X*, *X first*, …) |
 | **Standalone** (0) | `P-JOIN` | emptiness or open frame in that join (*nothing*, *no*, *everything*, …) |
 
-<a id="focus-phrase"></a>
-<a id="unary-phrase"></a>
-<a id="bare-phrase"></a>
-<a id="nullary-phrase"></a>
-<a id="focus-ranked"></a>
-<a id="unary-ranked"></a>
 <a id="single-item-phrase"></a>
 <a id="standalone-phrase"></a>
 <a id="single-item-ranked"></a>
@@ -458,7 +452,7 @@ Apply these readings when the join stands by itself (empty list).
 
 Single-item/standalone is also allowed on verb-phrase **…ul** / **…um** and clause **…ul** / **…um** / **…un** among joins. **`vun`** is a [join-act verb](join-extras.md#join-act-verbs).
 
-Under [question](questions.md#interrogative-force): yes/no, offer, emptiness check, and fill-ask — [questions.md](questions.md#yes-no-single-item-standalone).
+Under [question](questions.md#question): yes/no, offer, emptiness check, and fill-ask — [questions.md](questions.md#yes-no-single-item-standalone).
 
 ### Rank joins
 <a id="ranked-conjunction-e"></a>
@@ -560,7 +554,7 @@ Modifiers that sit **immediately after** a phrase-level join describe the **whol
 | Join family | SHARED `/ɡ/` role |
 |-------------|-------------------|
 | **a** | distributive property (*both ADJ*) or bundle description |
-| **a** + `/ɡ/`…**-sh** | [collective](plurality.md#collective-ascription) (*ADJ together*) |
+| **a** + `/ɡ/`…**-sh** | [collective](plurality.md#adjectives-g) (*ADJ together*) |
 | **ae** + gradable `/ɡ/` | [equative](comparatives.md#equatives) scale |
 | **e** / **oe** / **ue** on NP | [comparison scale](comparatives.md) |
 | **ua** / **uo** | kind / domain for universals |
@@ -602,9 +596,6 @@ Same rule at phrase, verb-phrase, and clause level.
 ### Sequence (`-n`, clause only)
 <a id="sequence"></a>
 <a id="clause-sequence"></a>
-<a id="soft-n-clause"></a>
-<a id="soft-n-vp-clause"></a>
-<a id="ending-senses"></a>
 
 On **`/x/`** only, join **-n** is **sequence**. This join-word **-n** (with phrase **-n** and join-acts / join-relations) is the **only** exception to [ordinary named **-n**](reference-suffix.md#proper-name--n). Narrative *and then* is **`xan`**.
 
@@ -764,10 +755,9 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 <a id="advanced"></a>
 
 ### Scope islands
-<a id="join-scope-islands"></a>
-<a id="join-scope-islands-rules"></a>
+<a id="scope-islands-join"></a>
 
-When other same-slot material sits nearby, wrap the sub-stretch and its join **inside** a [scope island](spans.md#adjunct-scope-islands) **`^ … ^`**. The join stands **inside** the island and absorbs only matching-role material there.
+When other same-slot material sits nearby, wrap the sub-stretch and its join **inside** a [scope island](spans.md#scope-islands) **`^ … ^`**. The join stands **inside** the island and absorbs only matching-role material there.
 
 | Shape | Reading |
 |-------|---------|
@@ -779,6 +769,7 @@ When other same-slot material sits nearby, wrap the sub-stretch and its join **i
 One island per clause. Same-slot material outside an island needs an outer join tying it in.
 
 ### Named phrase **`-n`**
+<a id="named-list"></a>
 <a id="named--conventional-ending-phrase-level-all-join-vowels"></a>
 
 On **phrase-level** joins under **`/z/` `/d/` `/b/` `/w/`** only, **-n** marks a **named list**: an established bundle (*the primary colors*, *stop–drop–roll*), not a freshly composed inventory. This is join-word **-n**, not a person/place name. It shares the **only** exception to [ordinary named **-n**](reference-suffix.md#proper-name--n) with clause **sequence** and join-acts / join-relations.

@@ -44,7 +44,7 @@ Per-feature teaching already has its practice: rule → mnemonic → 1–3 worke
 5. **Small sets** — about **6–12 items per direction** max per band checkpoint. Prefer a tiny reused root bank over lexicon tourism. List the roots used once above the drills.
 6. **Test the decision, not the dictionary** — good items force a choice the band taught (role letter, **-l** / **-m**, **`orodo` last**, omit recoverable **`jal`**, …).
 7. **Single sentences** — leave multi-turn scenes to [`examples/`](../examples/).
-8. **People are names** — default people use the [house cast](grammar-docs.md#house-cast) (`zazawan`, `zululon`, `zuhubun`) or a name already on the page, not **`ugobo`** / **`ebone`**. English items use those names (*Azawan walks*). Speaker/listener specials only when the item is teaching those roots, or when the point is the discourse role (name unavailable, address set, clusivity). Inclusive *we* stays **`ahage`**. Do not introduce foreign `PoS<…>n` names in early checkpoints.
+8. **People are names** — default people use the [house cast](grammar-docs.md#house-cast) (`zazawan`, `zululon`, `zuhubun`) or a name already on the page, not **`ugobo`** / **`edone`**. English items use those names (*Azawan walks*). Speaker/listener specials only when the item is teaching those roots, or when the point is the discourse role (name unavailable, address set, clusivity). Inclusive *we* stays **`aha`**. Do not introduce foreign `PoS<…>n` names in early checkpoints.
 
 ## Shape (template)
 <a id="template"></a>
@@ -76,7 +76,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 :::
 ```
 
-Omit recoverable **`jal`** unless the drill is teaching force. Match orthography and sense endings to the grammar page ([core.md § Orthography](../grammar/core.md#orthography)). English items that need a person use house names (*Azawan walks*), not *I* / *you*.
+Omit recoverable **`jal`** unless the drill is teaching speech act. Match orthography and sense endings to the grammar page ([core.md § Orthography](../grammar/core.md#orthography)). English items that need a person use house names (*Azawan walks*), not *I* / *you*.
 
 ## Related meta
 

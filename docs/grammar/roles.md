@@ -8,7 +8,6 @@ Name event participants (*fighter*, *the one fought*), compass sides, and **whos
 
 ### Role compounds (`a` / `u` / `o` × root)
 <a id="role-compounds"></a>
-<a id="participant-compounds"></a>
 <a id="agent-patient-reltum"></a>
 
 Name an **event or relation participant** from the event or relation stem: *a fighter*, *the one fought*, *that other party of a bond*.

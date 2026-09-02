@@ -2,13 +2,13 @@
 
 Editor plan to lock learner-facing English names in `docs/grammar/`. **Not** learner text. Grammar pages must **not** link here.
 
-Companion to the as-used collate: [english-terms.md](english-terms.md). Until a phase lands, that collate is still the inventory of *current* strings. This file is the **pick** pass.
+Companion to the keep-list: [english-terms.md](english-terms.md). That page is the standardized metalanguage. This file is the **pick** pass (historical after Phase 7).
 
 **Do not implement until a phase is started on purpose.** One phase per change-set. No `replace_all` on homonyms (`bare`, `focus`, `overlay`, `span`, `topic`, `host`, `notional`, `force`).
 
 ## Why not one pass
 
-A single sweep would mix three different operations (alias merge, homonym split, leftover drop) across ~20 grammar files. The high-collision strings cannot be globally replaced: **bare**, **focus**, **overlay**, **span**, **topic**, **force**, and **empty** each name more than one job. Drill *prompts* (English to translate) stay untouched; drill *instructions* and headings do not. Do not keep superseded Agalan spellings or “used to be called…” in learner prose ([present the current language only](grammar-docs.md#present-the-current-language-only)). Old HTML fragments stay until Phase 7.
+A single sweep would mix three different operations (alias merge, homonym split, leftover drop) across ~20 grammar files. The high-collision strings cannot be globally replaced: **bare**, **focus**, **overlay**, **span**, **topic**, **force**, and **empty** each name more than one job. Drill *prompts* (English to translate) stay untouched; drill *instructions* and headings do not. Do not keep superseded Agalan spellings or “used to be called…” in learner prose ([present the current language only](grammar-docs.md#present-the-current-language-only)). Old HTML fragments were dropped in Phase 7.
 
 Parser / TypeScript identifiers are out of this plan (`src/retie` `bare` is unrelated). Morphology does not change. SMALLCAPS tags, join-vowel English names (additive / cochoice / …), and span TYPE / EDGE letter names stay.
 
@@ -138,7 +138,7 @@ After the arity rename, remaining *focus* is word-order **prominence**, the valu
 | `AGENTS.md` construction blurbs that use the old names | `docs/proposals/` and `rejected/` |
 | [drill-generation.md](drill-generation.md) metalanguage | `docs/grammar/public/tts/` |
 | [grammar-docs.md](grammar-docs.md) examples that cite old labels | Parser / code identifiers |
-| [english-terms.md](english-terms.md) after the last content phase | House-cast names (do not turn dummy people into **`ugobo`** / **`edone`**) |
+| [english-terms.md](english-terms.md) (keep-list after Phase 7) | House-cast names (do not turn dummy people into **`ugobo`** / **`edone`**) |
 
 **Anchors:** add the new id (current English name) beside the old fragment through Phases 1–6 (`clause-force`, `focus-phrase`, `bare-phrase`, `unary-phrase`, `nullary-phrase`, `interrogative-force`, `zero-copula`, `participant-compounds`, `content-questions`, `yes-no-focus-bare`, `focus-bare-inventory`, `adverb-topic-and-free-order-ties`, `yes-no-polarity`, …). Visible link text uses the new names. **Phase 7** rewrites in-repo links to the new ids and deletes the silent aliases. Do not write “used to be called…” in learner prose ([grammar-docs.md](grammar-docs.md#present-the-current-language-only)).
 
@@ -265,4 +265,4 @@ Sync [grammar-docs.md](grammar-docs.md) (everyday-English examples still saying 
 | 4 Turn, vocative, polar, resume | done |
 | 5 Alias sweep | done |
 | 6 Remaining splits | done |
-| 7 Editor surfaces | not started |
+| 7 Editor surfaces | done |

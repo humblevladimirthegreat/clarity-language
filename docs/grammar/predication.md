@@ -7,7 +7,7 @@ How Agalan says English *is* for **kind / role** (*Azawan is a dog*) and **ident
 <a id="beginner"></a>
 
 ### Classification (property)
-<a id="zero-copula"></a>
+<a id="classification-property"></a>
 
 Put a property on the subject with an adjective (`/ɡ/`): name (or other noun) plus the describing word. English *is* in *Azawan is challenging* is already in that pair. Extra detail (`/w/`) or an extra noun (`/b/`) hangs on the adjective. Clause-level extras (`/h/`) still mark the whole statement.
 
@@ -25,7 +25,6 @@ gloss: `z-grace` · `g-challenging`
 
 ### Classification
 <a id="classification"></a>
-<a id="kind-ascription"></a>
 
 **Classification** is saying someone or something **is that kind** (role, category). Use the same adjective pattern: the kind sits on `/ɡ/` on the classified noun.
 

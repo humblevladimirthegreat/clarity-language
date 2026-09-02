@@ -48,7 +48,7 @@ gloss: `z-grace` · `z-courage` · `zel` · `g-challenging` · `w-flood`
 *Azawan is much more challenging than Ululon.*
 ```
 
-You assert the ranking the same way as a plain adjective ([classification](predication.md#zero-copula)). The same fence works under `/d/` or `/b/` when the ranked group fills that slot.
+You assert the ranking the same way as a plain adjective ([classification](predication.md#classification)). The same fence works under `/d/` or `/b/` when the ranked group fills that slot.
 
 ### Equatives (`ae` + shared scale)
 <a id="equatives"></a>
@@ -234,7 +234,7 @@ Use set join **`a`** plus a shared singular scale when you mean *both are ADJ* (
 
 Mnemonic: **`a`** adds. `zal` says each conjunct gets the adjective; `zael` says they sit at the same height.
 
-Collective *ADJ as a unit* uses shared `/ɡ/`…**-sh** under **`a`**: [plurality](plurality.md#collective-ascription). Keep the scale adjective singular in comparative and equative shared slots.
+Collective *ADJ as a unit* uses shared `/ɡ/`…**-sh** under **`a`**: [plurality](plurality.md#adjectives-g). Keep the scale adjective singular in comparative and equative shared slots.
 
 Equative **`ae`** needs **two or more** comparees. Single-item or standalone **`ae`** plus a shared scale keeps the ordinary single-item / standalone **`ae`** readings. **`ae`** with no shared scale is equal rank / a tie among the names.
 

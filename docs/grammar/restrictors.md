@@ -1,6 +1,4 @@
 # Restrictors (`/h/` / `/w/`)
-<a id="circumstance-restriction-h-w"></a>
-<a id="circumstance-h-w"></a>
 <a id="restrictors"></a>
 
 Same vowel-and-ending shapes as joins, used under `/h/` or `/w/` to say **when** the host applies: *only when…*, *never*, *always*, *sometime*.
@@ -92,7 +90,7 @@ gloss: `h-rain` · `h-night` · `ham`
 *When raining and at night, among other possible cases.*
 ```
 
-Asking *when?* with these forms (bare **`har`**, and the rest of the *-r* set): [questions.md](questions.md#circumstance-when).
+Asking *when?* with these forms (bare **`har`**, and the rest of the *-r* set): [questions.md](questions.md#when).
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -250,7 +248,7 @@ Closed **`hel`** ranks **when** it matters. **`hal`** still means *only when* th
 
 #### Unspecified-member (`-r`)
 
-Statement readings below. Under question: [questions.md](questions.md#circumstance-when).
+Statement readings below. Under question: [questions.md](questions.md#when).
 
 | Form | With occasion(s) | Bare | Mnemonic |
 |------|------------------|------|----------|
@@ -390,4 +388,4 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 ## See also
 
 - Phrase lists (right-close fence): [coordination.md](coordination.md)
-- *When?* under question: [questions.md](questions.md#circumstance-when)
+- *When?* under question: [questions.md](questions.md#when)

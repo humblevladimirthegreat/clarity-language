@@ -202,7 +202,7 @@ Speech always uses one full CV word. You already know role letter + marker + dig
 
 1. **PoS:** same prefix inventory as elsewhere; [roles for number words](#parts-of-speech-on-numbers) below.
 2. **Number marker:** consonant **r** plus a vowel **V** (see [Marker vowel](#marker-vowel-referential-identity)). **V** is usually a single vowel; end-relative ordinals use digraph **`eu`**. The PoS+`r` cluster is a [number-only letter-cluster exception](phonology.md#phonotactics).
-3. **Zero or more digit groups:** each group is an optional exponent and optional mantissa digits (at least one of the two **when the group is present**, except a [digitless exponent](#digitless-exponents) group is **`ba`/`bu` alone**). Digits sit next to each other with no **x**. Sign, when it applies, is once for the whole word ([Sign](#sign)). **No groups** = [digitless](#zero-digit-groups) of that marker identity, or [digitless **-r** resume](#number-endings).
+3. **Zero or more digit groups:** each group is an optional exponent and optional mantissa digits (at least one of the two **when the group is present**, except a [digitless exponent](#digitless-exponents) group is **`ba`/`bu` alone**). Digits sit next to each other with no **x**. Sign, when it applies, is once for the whole word ([Sign](#sign)). **No groups** = [digitless](#digitless) of that marker identity, or [digitless **-r** resume](#number-endings).
 4. **Ending:** `-l` / `-m` / `-n` / `-r` with [number-specific meanings](#number-endings).
 
 **Writing** for free number words uses a [preferred shorthand](#writing-preferred-shorthand) for the marker and body (`g+3`, `g+`, `g#-2`). Speech is always the full CV form.
@@ -212,7 +212,7 @@ Speech always uses one full CV word. You already know role letter + marker + dig
 ### Parts of speech on numbers
 <a id="parts-of-speech-on-numbers"></a>
 
-The number word takes whichever role letter the slot needs. Referential prefixes (`/ɡ/`, `/z/`, `/d/`, `/b/`) use the marker as-is; the role letter only chooses the slot. Number as verb / adverb / interjection / discourse is [below](#number-overlays).
+The number word takes whichever role letter the slot needs. Referential prefixes (`/ɡ/`, `/z/`, `/d/`, `/b/`) use the marker as-is; the role letter only chooses the slot. Number as verb / adverb / interjection / discourse is [below](#number-as-roles).
 
 | Prefix | Role with a number |
 |--------|--------------------|
@@ -266,7 +266,7 @@ Number endings have [their own jobs](#number-endings) (exact / about / conventio
 **-r** may be **digitless**: marker + **-r** alone resumes the prior value of that identity without restating digits (`g=+` = *that (scalar) amount again*; `d=_` = *that code again*; `g=#` = *that rank again*). Digits + **-r** still fine when you want to name which prior item (`x=#2` = *as in (2) above*). Match the marker to the resumed identity (`g=+` for a prior scalar). **`=`** stands alone: no stack with **`~`** / **`@`**.
 
 ### Digitless
-<a id="zero-digit-groups"></a>
+<a id="digitless"></a>
 <a id="digitless-numbers"></a>
 <a id="bare-marker"></a>
 
@@ -315,7 +315,7 @@ Within each digit group, speech markers build ordinary magnitudes (Advanced spec
 - Ordinary magnitudes usually omit exponent **`0`**: write `g+3`. Named **`e0`** / ambient magnitude: [Ambient magnitude](#ambient-magnitude).
 - Default **order of magnitude** uses **engineering notation**: exponents are usually multiples of **3** (e.g. `27e6`).
 - **Decimal point:** say **`je`** after the digit(s) left of the point; digits after **`je`** are the fractional part.
-- Write the **base unit** plus exponent or exact count on the amount ([measure phrases](#no-metric-prefixes)).
+- Write the **base unit** plus exponent or exact count on the amount ([measure phrases](numbers-applied.md#no-metric-prefixes)).
 
 ### Writing (preferred shorthand)
 <a id="writing-preferred-shorthand"></a>
@@ -387,7 +387,6 @@ Prefer shorthand in free slots. Speech is always the full CV form.
 Full inventory tables: [examples](#examples).
 
 ### Number as verb / adverb / interjection / discourse
-<a id="number-overlays"></a>
 <a id="number-as-roles"></a>
 
 `/v/` `/h/` `/j/` `/x/` keep marker identity but add a role-specific reading. Referential prefixes (`/ɡ/` `/z/` `/d/` `/b/`) use the marker as-is — [marker vowel](#marker-vowel-referential-identity).
@@ -407,7 +406,7 @@ Full inventory tables: [examples](#examples).
 
 To set a quantity to an absolute value, use an ordinary verb plus the number as argument or adverb. Multiply and divide stay ordinary verbs plus the number as `/h/` (**`h+N`** / **`h-N`**). With [percentage points](#percent-and-percentage-points) (**`ju`**), **`ra`** / **`ru`** as verbs mean increase/decrease by that point amount.
 
-Endings still apply (**-m** ≈ *about* that amount/code/rank, **-r** resume — including [digitless](#zero-digit-groups) `v=+` / `v=_`, etc.).
+Endings still apply (**-m** ≈ *about* that amount/code/rank, **-r** resume — including [digitless](#digitless) `v=+` / `v=_`, etc.).
 
 #### Number as adverb (by marker)
 <a id="number-as-adverb-by-marker"></a>
@@ -508,7 +507,7 @@ Same under `/z/` `/d/` `/b/`. Soft **`g~+e3`** ≈ *about in the thousands band*
 | **`g~#-2`** | *about 2nd from the end* |
 | **`g@#-2`** | conventional / titled *penultimate* (etc.) |
 | **`g=#-2`** | resume that prior end-relative place |
-| **`g#-`** | unspecified end-relative rank ([zero groups](#zero-digit-groups)) |
+| **`g#-`** | unspecified end-relative rank ([zero groups](#digitless)) |
 
 `g#2` = numbered *2nd* (from the start); `g#-2` = *2nd from the end*; `g#e` = last as landmark; `g#e-` = start landmark (no mantissa). *Hyperbole* is [gazillion](#hyperbole-gazillion); *generation* is [ordinal generation](#ordinal-generation).
 
@@ -598,22 +597,7 @@ Write free numbers with second-slot marks or trailing letters consistently. Deri
 
 ### Measure phrases and ranges
 <a id="measure-phrases"></a>
-<a id="units"></a>
-<a id="unit-amount"></a>
-<a id="si-units"></a>
-<a id="measure-hosts"></a>
-<a id="bare-vs-unit-morph"></a>
-<a id="unit-short-form"></a>
-<a id="stock-measure-hosts"></a>
-<a id="no-metric-prefixes"></a>
-<a id="metric-prefixes"></a>
 <a id="ranges"></a>
-<a id="number-ranges"></a>
-<a id="numeric-ranges"></a>
-<a id="from-to"></a>
-<a id="shared-continuum"></a>
-<a id="numeric-thresholds"></a>
-<a id="greater-less-than"></a>
 
 Measure phrases and numeric ranges: **[numbers-applied.md](numbers-applied.md)**.
 
@@ -628,7 +612,7 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 
 | Value | Preferred writing | Speech sketch |
 |-------|-------------------|---------------|
-| plural / more than one | `g+` | *gral* (`g` + `ra` + `l` — [digitless](#zero-digit-groups)) |
+| plural / more than one | `g+` | *gral* (`g` + `ra` + `l` — [digitless](#digitless)) |
 | about several (`>1`) | `g~+` | *gram* |
 | +∞ | `g+e` | *grabal* (`g` + `ra` + `ba` + `l` — [digitless exp](#digitless-exponents)) |
 | arbitrarily large but finite | `g~+e` | *grabam* |
@@ -863,7 +847,6 @@ Digitless exponents, zero×exp, hyperbole, and related specials.
 
 ### Ambient magnitude (casual)
 <a id="ambient-magnitude"></a>
-<a id="ambient-scale"></a>
 
 In **careful** writing and speech, treat **omitted exp as ones-place** (`g+3` = 3). Prefer an explicit exponent rather than a discourse-default decade.
 
@@ -920,7 +903,6 @@ A digit group may use an exponent marker (**`ba`** or **`bu`**) with **no** expo
 Same under `/z/` `/d/` `/b/` (`z+e` = +∞ as subject; `d#e-` = start-place as object; `b+e-` = *of an arbitrarily small but finite amount*; `z-e-` = imaginary amount as subject). Contrast **`g#1`** = numbered *first* / *1st*; **`g#e-`** = beginning/onset landmark.
 
 <a id="imaginary"></a>
-<a id="notional-amount"></a>
 
 **Imaginary (`g-e-`):** negative marker (**`ru`**) + digitless negative exponent (**`bu`∅), no mantissa. Completes the scalar special grid. Reading is **metaphorical**: a magnitude named *as if* it counted, without entering the real tally.
 

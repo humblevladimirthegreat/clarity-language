@@ -79,7 +79,6 @@ gloss: `z-gift` · `w-relatedness-met-physical`
 
 ### Contact channel (endings on met)
 <a id="value-contact"></a>
-<a id="value-savoring"></a>
 
 On **`xa`** compounds, **-l / -m / -r** mark **how you contact** the claimed payoff (contact channel). **-n** stays ordinary [proper](reference-suffix.md#proper-name--n). Relatedness *between people* is the need **`onogo`**.
 
@@ -101,7 +100,6 @@ gloss: `z-house` · `g-home` · `b-grace` · `w-competence-met-physical`
 
 ### Prescription (`xo`): force
 <a id="value-force"></a>
-<a id="value-ought"></a>
 
 **`xo`** means *should* / *ought*: act so the need is served or protected, whether or not anyone is acting from it now. **-l / -m / -r** mark **prescription force** (how strongly you claim the ought). **-n** stays ordinary [proper](reference-suffix.md#proper-name--n). A promise without a named vow is **bound** or **endorse**. Always pick an ending; if the force is unknown, use **-m**. Gloss bound **-l** as **bound in this frame**.
 

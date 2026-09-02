@@ -8,8 +8,6 @@ Attach a [number](numbers.md) stem after mid-word **`x`** to derive a **new kind
 
 ### Numeric derivation (`ROOT` × number stem)
 <a id="numeric-derivation"></a>
-<a id="number-compounds"></a>
-<a id="numeric-morphs"></a>
 
 **Shape:**
 
@@ -84,7 +82,7 @@ Single-digit scalars only. Tables use marker shorthand (**`+N`** / **`-N`**). Sp
 
 | `+N` | Strong reading | Example | `-N` privative | Example |
 |------|----------------|---------|----------------|---------|
-| **`ROOTx+1`** | unit / primary / singleton | `zegarexrawol`: *a single / primary voice*; **`zugoboxrawon`**: [personal standard](comparatives.md#mine-vs-speaker) (normative Mine; host = [speaker](pronouns.md#special-pronouns) **`ugobo`**); titled SI units on dimension roots (`bureluxrawon` *meter*: [measure phrases](numbers-applied.md#bare-vs-unit-morph); bare unit is the short form) | non-unitary / indistinct / not-a-one | `zegarexruwol`: *an indistinct / non-singular voice* |
+| **`ROOTx+1`** | unit / primary / singleton | `zegarexrawol`: *a single / primary voice*; **`zugoboxrawon`**: [personal standard](comparatives.md#mine-vs-speaker) (normative Mine; host = [speaker](pronouns.md#special-pronouns) **`ugobo`**); titled SI units on dimension roots (`bureluxrawon` *meter*: [measure phrases](numbers-applied.md#unit-short-form); bare unit is the short form) | non-unitary / indistinct / not-a-one | `zegarexruwol`: *an indistinct / non-singular voice* |
 | **`ROOTx+2`** | dual / mutual / reciprocal / pair | `gobulexradul`: *mutual duty* | non-reciprocal / one-sided / unpaired | `gobulexrudul`: *one-sided duty* |
 | **`ROOTx+3`** | triad / triplet / 3-part / ternary | `zezebexrarel`: *a three-part dialogue* | non-tripartite / collapsed-from-three | `zovuvexrurel`: *non-tripartite government* |
 | **`ROOTx+4`** | quad / 4-part / square / frame | `zezagexramol`: *a four-part / framed court* | unframed / out-of-box / unbound | `zuruxrumol`: *an unframed idea* |

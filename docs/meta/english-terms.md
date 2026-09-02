@@ -1,73 +1,71 @@
-# English grammar terms (collate)
+# English grammar terms (keep-list)
 
-Editor inventory of **English names** the learner grammar uses for constructions, slots, and closed moods. **Not** learner text. Grammar pages must **not** link here.
+Editor inventory of **locked English names** for constructions, slots, and closed moods in the learner grammar. **Not** learner text. Grammar pages must **not** link here.
 
-**Source:** `docs/grammar/` only (site chrome `index.md` / `lexicon.md` / `gloss.md` / TTS notes omitted unless they name a construction). **Not** `docs/meta/`, `AGENTS.md`, or proposals.
+This page is the standardized metalanguage after [english-terms-plan.md](english-terms-plan.md). It is **not** a recommendation to rename. Locked names live in that plan; this page restates them for grep and drafting.
 
-**Job of this pass:** collate strings **as currently used**. Do **not** treat this page as a recommendation to rename anything. The pick / rename sequence is [english-terms-plan.md](english-terms-plan.md) (not started).
+**Source of names:** the plan’s Locked names / Combine / Split tables, mapped onto current `docs/grammar/` homes.
 
 ## How to read
 
 | Column | Meaning |
 |--------|---------|
-| **As used** | Short gloss of the current docs, not a cleaned definition |
-| **Where** | Primary teaching page (plus a second page when the same string is a different job) |
-| **Near** | Other English strings that currently name the same or an overlapping job |
+| **Job** | What the term names |
+| **Where** | Primary teaching page |
+| **Near** | A *different* remaining job of a similar English string (omit when none) |
 
-Each **distinct English string** that names a grammatical job gets a row or a heading. Ordinary gloss words (*dog*, *because* as English to translate) are out. Agalan forms stay in backticks as *exponents*, not as glossary keys.
-
-Inconsistency is recorded, not repaired. Example: **span** is both a typed fence (`d[…]`) and a numeric *from–to* range.
+Ordinary gloss words and translation-practice item English are out. Agalan forms stay in backticks as exponents, not glossary keys.
 
 ## Closed labels (SMALLCAPS and series names)
 
-These are taught as inventory tags, often SMALLCAPS in tables.
+These stay as inventory tags. The plan does not rename them.
 
-### Mood / overlay tags
+### Mood tags
 
-| Label | As used | Where |
-|-------|---------|--------|
-| **ABIL** | Hostless *can* / *can’t* fallback root **`egera`** | [ability.md](../grammar/ability.md#ability-fallback) |
-| **ACT** | Emotion-compose arousal piece (HIGH / MED / LOW) | [special-vocabulary.md](../grammar/special-vocabulary.md#emotion-compose) |
-| **BECAUSE** | Clause-pole overlay **`urugu`** (*because*) | [causation.md](../grammar/causation.md#if-vs-iff) |
-| **CAUSE** | Mechanism-framing mood **`egega`** (`hegegam`) | [causation.md](../grammar/causation.md#cause) |
+| Label | Job | Where |
+|-------|-----|--------|
+| **ABIL** | Hostless *can* / *can’t* fallback **`egera`** | [ability.md](../grammar/ability.md#ability-fallback) |
+| **ACT** | Emotion-compose arousal (HIGH / MED / LOW) | [special-vocabulary.md](../grammar/special-vocabulary.md#emotion-compose) |
+| **BECAUSE** | Clause-pole **`urugu`** (*because*) | [causation.md](../grammar/causation.md#if-vs-iff) |
+| **CAUSE** | Mechanism-framing mood **`egega`** | [causation.md](../grammar/causation.md#cause) |
 | **CIRCUM** | Emotion locus: charge on the situation | [special-vocabulary.md](../grammar/special-vocabulary.md#emotion-compose) |
 | **COMMENT** | First-person commentary mood **`odoho`** | [commentary.md](../grammar/commentary.md#comment) |
-| **COMMON** | Universality warrant: usual, exceptions expected | [special-vocabulary.md](../grammar/special-vocabulary.md#universality) |
+| **COMMON** | Universality: usual, exceptions expected | [special-vocabulary.md](../grammar/special-vocabulary.md#universality) |
 | **DECISION** | Pick-firmness mood **`egege`** | [plan-decision.md](../grammar/plan-decision.md#decision) |
 | **EXTERNAL** | Emotion locus: charge at other people | [special-vocabulary.md](../grammar/special-vocabulary.md#emotion-compose) |
 | **FELT** | Evidential: gut / body knowing | [commentary.md](../grammar/commentary.md#evidentiality) |
 | **FORMAL** | Universality: definition / math / proof | [special-vocabulary.md](../grammar/special-vocabulary.md#universality) |
 | **HIGH** / **MED** / **LOW** | Emotion ACT roots | [special-vocabulary.md](../grammar/special-vocabulary.md#emotion-compose) |
-| **IF** | Clause-pole overlay **`adoro`** (one-way *if*) | [causation.md](../grammar/causation.md#if-vs-iff) |
-| **IFF** | Clause-pole overlay **`ezaze`** (*if and only if*) | [causation.md](../grammar/causation.md#if-vs-iff) |
+| **IF** | Clause-pole **`adoro`** (one-way *if*) | [causation.md](../grammar/causation.md#if-vs-iff) |
+| **IFF** | Clause-pole **`ezaze`** | [causation.md](../grammar/causation.md#if-vs-iff) |
 | **INFERRED** | Evidential: reasoned from clues | [commentary.md](../grammar/commentary.md#evidentiality) |
 | **INTERNAL** | Emotion locus: charge held inside | [special-vocabulary.md](../grammar/special-vocabulary.md#emotion-compose) |
-| **LOCUS** | Emotion-compose where-the-charge-sits piece | [special-vocabulary.md](../grammar/special-vocabulary.md#emotion-compose) |
+| **LOCUS** | Emotion-compose where the charge sits | [special-vocabulary.md](../grammar/special-vocabulary.md#emotion-compose) |
 | **NATURAL** | Universality: natural necessity | [special-vocabulary.md](../grammar/special-vocabulary.md#universality) |
-| **NOTIONAL** | As-if / pretense mood **`ahade`**; also number *imaginary* overlay | [commentary.md](../grammar/commentary.md#notional); [numbers.md](../grammar/numbers.md#imaginary) |
-| **PATTERN** | Evidential: from regularity / similar cases | [commentary.md](../grammar/commentary.md#evidentiality) |
+| **NOTIONAL** | As-if / pretense mood **`ahade`** | [commentary.md](../grammar/commentary.md#notional) |
+| **PATTERN** | Evidential: from regularity | [commentary.md](../grammar/commentary.md#evidentiality) |
 | **PLAN** | Intention-framing mood **`owora`** | [plan-decision.md](../grammar/plan-decision.md#plan-predict) |
 | **PREDICT** | Forecast-framing mood **`elezo`** | [plan-decision.md](../grammar/plan-decision.md#plan-predict) |
 | **RECORDED** | Evidential: documented / playback | [commentary.md](../grammar/commentary.md#evidentiality) |
 | **RULE** | Universality: holds inside a named frame | [special-vocabulary.md](../grammar/special-vocabulary.md#universality) |
 | **SAME** | Identity copula **`onunu`** | [predication.md](../grammar/predication.md#identity) |
-| **STORY** | Evidential: narrative / lore framing | [commentary.md](../grammar/commentary.md#evidentiality) |
+| **STORY** | Evidential: narrative / lore | [commentary.md](../grammar/commentary.md#evidentiality) |
 | **TOLD** | Evidential: hearsay | [commentary.md](../grammar/commentary.md#evidentiality) |
 | **UNCOUNTERED** | Universality: no counterexample comes to mind | [special-vocabulary.md](../grammar/special-vocabulary.md#universality) |
-| **WITNESSED** | Evidential: firsthand / reconstructive memory | [commentary.md](../grammar/commentary.md#evidentiality) |
+| **WITNESSED** | Evidential: firsthand | [commentary.md](../grammar/commentary.md#evidentiality) |
 
-**Near:** *mood*, *overlay*, *sense-form*, *warrant*, *hold*, *map resolution*, *changeability*.
+**Near:** *mood* (closed `/h/` only). Free-number **imaginary** and derivation **quasi** are not **NOTIONAL**.
 
 ### Join-vowel English names
 
-Taught as the **name** column on set / rank joins ([coordination.md](../grammar/coordination.md#set-joins-and-rank-joins)):
+Taught as the **name** column on set / rank joins ([coordination.md](../grammar/coordination.md)):
 
-| Name | Vowel | English job (as used) |
-|------|-------|------------------------|
+| Name | Vowel | Job |
+|------|-------|-----|
 | additive | **a** | *and* (inventory) |
 | choice | **o** | exclusive *or* |
 | cochoice | **ao** | inclusive *and/or* |
-| negation | **u** | *not* / *none of* / bare *no* |
+| negation | **u** | *not* / *none of* / standalone *no* |
 | counteradditive | **ua** | *everything but* |
 | counterchoice | **uo** | *anything but* |
 | rank | **e** | earlier outranks later |
@@ -75,11 +73,9 @@ Taught as the **name** column on set / rank joins ([coordination.md](../grammar/
 | choicerank | **oe** | exclusive ranked menu |
 | counterrank | **ue** | rank reversal |
 
-**Near:** *set join*, *rank join*, *invert*, *vowel series*.
-
 ### Span TYPE / EDGE letters
 
-From [spans.md](../grammar/spans.md#shape): **TYPE** **a** cite / **e** aside / **o** mention / **u** opaque; **EDGE** **a** multi / **e** clause-scoped / **o** atomic / **u** empty (exact empty `…axul` / anaphor `…axur`).
+From [spans.md](../grammar/spans.md#shape): **TYPE** **a** cite / **e** aside / **o** mention / **u** opaque; **EDGE** **a** multi / **e** clause-scoped / **o** atomic / **u** empty (exact empty `…axul` / resume `…axur`).
 
 ### Number marker identities
 
@@ -87,791 +83,561 @@ From [numbers.md](../grammar/numbers.md#marker-vowel-referential-identity): **sc
 
 ---
 
-## A–Z
+## Clash leftovers
+
+Same English still names more than one job on purpose. Do not globally replace these.
+
+| String | Keep for | Other job |
+|--------|----------|-----------|
+| **bare** | no extra piece: compass with no viewpoint; **bare turn**; **bare OoM**; bare host / `hal` | not join arity (that is **standalone**) |
+| **empty** | span EDGE **u**; **empty-allowed** (`…om`) | not arity 0 |
+| **overlay** | sense-form PoS reading | number as verb / adverb / interjection / discourse; metaphorical **-m** |
+| **span** | typed cite / aside / mention / opaque fences | numeric **range**; clock/date **range** |
+| **topic** | value need with no `x` | **as-for** (`ahaza`) |
+| **host** | ability / values / numeric-derivation base of `x` | measure **unit**; classified noun |
+| **notional** | mood **NOTIONAL** | number **imaginary**; derivation **quasi** |
+| **mood** | closed psychological `/h/` | ordinary manner `/h/` = **adverb** |
+| **open** / **closed** | list / restrictor / speech-act **-m** / **-l** | span **span open**; SAME open **-m** |
+| **force** | values **prescription force** | not speech act |
+| **stance** | always *value stance* / *ability stance* / **polar stance** | |
+| **scale** | comparative **SHARED scale** | number **order of magnitude** / **ambient magnitude** |
+| **resume** | content / span / number **-r** | join / restrictor **-r** = **unspecified member** |
+| **-n** | content **named** | phrase **named list**; clause **sequence**; number **conventional** |
+| **universal** / **every** | join *every K* / **generic** | mood **universality** |
+
+Intentional reuse: **-l / -m** *closed / open* (and *firm / soft* on speech act); **changeability** on `xu` / DECISION / *can’t*; **vowel series**.
+
+---
+
+## Dropped keys (do not revive)
+
+*clause force*, *force word*, *question force*, *interrogative force*, *focus* (arity), *bare* (arity), *unary*, *nullary*, *empty* (arity 0), *argument noun*, *participant compound*, *zero-copula*, *property pattern*, *kind ascription*, *content question*, *gap*, *multi-gap*, *polar question*, *yes/no polarity*, *reaction word*, *jump*, *extend*, *utterance framing*, *discourse marker* (as `/x/` name), *call* (as left-edge slot), *letter pronoun*, *full-root pronoun*, *anaphor* (default), *handle coinage*, *next-clause pronoun*, *subordination*, *adjunct-scope island*, *join scope island*, *associate set*, *collective doing/ascription* (as keys), *when-frame*, *applicability*, *circumstance*, *discourse glue*, *word ending*, *first letter*, *PoS prefix*, *coordination* (learner word), *shared modifier*, *mechanism* (umbrella), *open inclusive*, *warrant*, *exceptionlessness*, *thought balloon*, *commentary*, *savoring* (term), *measure host*, *unit morph*, *stock measure host*, *zero-digit-group*, *compact foreign content word*, *speech-role*, *job map*, *ideation*, *number compound*, *numeric morph*, *x-less kind*, *lexical kind*, *compound joiner*, *ambient scale*, *soft identity*, *soft -n*, *doorway* (except one mnemonic), *packaging* (glossary key).
+
+Mnemonics once: *doorway*, *jump*, *thought balloon*, *savoring*. *How you know* stays purpose language on `why-agelan.md`; the grammar term is **evidentiality**.
+
+---
+
+## A–Z (locked names)
+
+### Ability / incapability
+
+**Job:** Hosted *can* / *can’t* (`xa`/`xe`/`xo`/`xu`) and hostless **ABIL**.  
+**Where:** [ability.md](../grammar/ability.md)
+
+### Act word
+
+**Job:** Written `/j/` word (`jal` / `jol` / `jel` / `jul` and soft **-m**).  
+**Where:** [core.md](../grammar/core.md#speech-act)  
+**Near:** *speech act* (the setting); polar *stance* particles are not act words
 
 ### Address set
 
-**As used:** Listener special plus **-sh**: all current addressees (no speaker).  
-**Where:** [plurality.md](../grammar/plurality.md#person-role-sh), [pronouns.md](../grammar/pronouns.md#clusivity)  
-**Near:** *clusivity*, *person-role **-sh***, *interlocutors*
+**Job:** Listener special plus **-sh**: current addressees (no speaker).  
+**Where:** [plurality.md](../grammar/plurality.md#person-role-sh)
 
 ### Adjective extra (`/w/`)
 
-**As used:** Detail on the **previous adjective** (`/ɡ/`), not on the whole clause.  
+**Job:** Detail on the previous adjective, not the whole clause.  
 **Where:** [core.md](../grammar/core.md)  
-**Near:** *restrictor* (same prefix, different job), *values* (default `/w/` reading on needs)
+**Near:** *restrictor*, *values* (default `/w/` on needs)
 
-### Adjunct-scope island
+### Adverb
 
-**As used:** Writing `^ … ^` so an inside `/h/` and/or join binds that chunk; speech is pause + tight phrase, no open/close words. Same section is also titled **scope islands**.  
-**Where:** [spans.md](../grammar/spans.md#adjunct-scope-islands)  
-**Near:** *scope island*, *join scope island* (join lookback limited to the island)
+**Job:** Ordinary manner `/h/`.  
+**Where:** [core.md](../grammar/core.md#adverbs-h)  
+**Near:** *mood* (closed psychological `/h/` only)
 
-### Agent / patient / reltum
+### Ambient magnitude
 
-**As used:** Role-compound ROLE vowels: doer **`a`**, undergoer **`u`**, `/b/` party of a relation **`o`** (**reltum**).  
-**Where:** [roles.md](../grammar/roles.md#role-compounds)  
-**Near:** *role compound*, *participant compound*
-
-### Ambient scale
-
-**As used:** Casual number claim that the order of magnitude is 0 (`Ne0` and kin).  
-**Where:** [numbers.md](../grammar/numbers.md#ambient-scale)
-
-### Anaphor / resume / letter pronoun / full-root pronoun
-
-**As used:** **-r** points at a prior matching stem. **Resume** is the usual learner word; **anaphor** appears for content **-r**, span `[=]`, and number `=`. **Letter pronoun** = prefix through the second vowel; **full-root pronoun** = whole root + **-r**.  
-**Where:** [pronouns.md](../grammar/pronouns.md), [reference-suffix.md](../grammar/reference-suffix.md), [spans.md](../grammar/spans.md)  
-**Near:** *antecedent*, *cross-role recast*, *span anaphor*, *unspecified member* (join **-r**, not content resume)
+**Job:** Casual claim that omitted exponent inherits a discourse OoM; **`Ne0`** asserts OoM 0.  
+**Where:** [numbers.md](../grammar/numbers.md#ambient-magnitude)
 
 ### Antecedent
 
-**As used:** The word a **-r** form points back to.  
+**Job:** The word a **-r** form points back to.  
 **Where:** [pronouns.md](../grammar/pronouns.md)
 
-### Applicability / when-frame / occasion
+### Arity (list / single-item / standalone)
 
-**As used:** Restrictors say **when the host applies**; listed pieces before the restrictor are **occasions**.  
-**Where:** [restrictors.md](../grammar/restrictors.md)  
-**Near:** *restrictor*, *circumstance*
+**Job:** How many items sit before a join: **list** (2+), **single-item** (1), **standalone** (0).  
+**Where:** [coordination.md](../grammar/coordination.md#single-item-phrase)
 
-### Argument noun / extra noun (`/b/`)
+### As-for
 
-**As used:** Noun bolted onto a complex `/ɡ/` or `/h/`. Core also says **extra noun**; numbers say **argument noun**.  
-**Where:** [core.md](../grammar/core.md#complex-adjectives-complex-adverbs-and-argument-nouns)  
-**Near:** *complex adjective*, *complex adverb*
-
-### Arity (list / focus / bare)
-
-**As used:** How many items sit before a join: **list** (2+), **focus** (1), **bare** (0). Anchors also use **unary** / **nullary**.  
-**Where:** [coordination.md](../grammar/coordination.md)  
-**Near:** *unary*, *nullary*, *exhaustivity*
+**Job:** Complex `/h/` + `/b/` (`ahaza`) *as for X*.  
+**Where:** [core.md](../grammar/core.md#as-for)  
+**Near:** values **topic**
 
 ### Aside
 
-**As used:** Span type: parenthetical on `/h/` (`h(…)`). Interior may be a fragment or same-force clause body.  
-**Where:** [spans.md](../grammar/spans.md#asides)  
-**Near:** *span fence*, *TYPE e*
+**Job:** Span TYPE **e** (`h(…)`).  
+**Where:** [spans.md](../grammar/spans.md#asides)
 
-### Associative / associative group / associate set
+### Associative
 
-**As used:** **-sh** = named **anchor plus associates**, not English generic plural.  
-**Where:** [plurality.md](../grammar/plurality.md#associative)  
-**Near:** *person-role **-sh***, *collective*, *group reference*
+**Job:** **-sh** = named **anchor plus associates**.  
+**Where:** [plurality.md](../grammar/plurality.md#associative)
 
 ### Atomic (span EDGE)
 
-**As used:** Span open that does not nest-push (EDGE **o**).  
+**Job:** Span open that does not nest-push (EDGE **o**).  
 **Where:** [spans.md](../grammar/spans.md#edge)
 
-### Bare (join) vs bare (need) vs bare (arrow)
+### Bare OoM
 
-**As used:** (1) Join with **zero** items. (2) Value **topic**: need with no `x` stance. (3) Compass: arrow root **without** a viewpoint anchor.  
-**Where:** [coordination.md](../grammar/coordination.md); [values.md](../grammar/values.md); [roles.md](../grammar/roles.md#viewpoint-laterals)
-
-### Bare OoM / decade band
-
-**As used:** Digitless exponent naming a magnitude band (`g+e0` ones, `g+e3` thousands).  
+**Job:** Digitless exponent naming a magnitude band (`g+e0`, `g+e3`).  
 **Where:** [numbers.md](../grammar/numbers.md#bare-oom-bands)
 
 ### Binder
 
-**As used:** Inside a scope island: a scope-taking `/h/` and/or a join that lookback-absorbs only interior material.  
-**Where:** [spans.md](../grammar/spans.md#adjunct-scope-islands)
+**Job:** Inside a scope island: scope-taking `/h/` and/or a join.  
+**Where:** [spans.md](../grammar/spans.md#scope-islands)
 
 ### Body (utterance)
 
-**As used:** The clause content after the left-edge `/j/` cluster; periods close a **body**.  
-**Where:** [core.md](../grammar/core.md#left-edge-order-and-sentence-boundaries)  
-**Near:** *turn*, *utterance*, *clause force*
+**Job:** Clause content after the left-edge `/j/` cluster.  
+**Where:** [core.md](../grammar/core.md#left-edge-order-and-sentence-boundaries)
 
 ### Bound / endorse / invite
 
-**As used:** Prescription-force endings on value **`xo`**.  
-**Where:** [values.md](../grammar/values.md#value-force)  
-**Near:** *prescription*, *ought*
-
-### Call / vocative
-
-**As used:** Left-edge `/j/` addressing (`jazawan`); vocative also used for `/j/` **-sh**.  
-**Where:** [core.md](../grammar/core.md#turn-j), [plurality.md](../grammar/plurality.md)
-
-### Capable / temporary can’t / modifiable can’t / irreversible can’t
-
-**As used:** Ability stance vowels **`xa` / `xe` / `xo` / `xu`**.  
-**Where:** [ability.md](../grammar/ability.md#ability-stance)  
-**Near:** *stance*, *incapability*, *changeability* (values **`xu`** reuses the last two grains)
+**Job:** Prescription-force endings on value **`xo`**.  
+**Where:** [values.md](../grammar/values.md#value-force)
 
 ### Changeability
 
-**As used:** Endings on unmet values **`xu`** and on **DECISION**; ability **`xo`/`xu`** are the same grains under *can’t*.  
-**Where:** [values.md](../grammar/values.md#value-changeability), [plan-decision.md](../grammar/plan-decision.md#decision-changeability), [ability.md](../grammar/ability.md)
+**Job:** Endings on unmet **`xu`**, **DECISION**, and ability *can’t*.  
+**Where:** [values.md](../grammar/values.md#value-changeability), [plan-decision.md](../grammar/plan-decision.md#decision)
 
 ### Citation / prefix-less citation
 
-**As used:** Root + ending with **no** role letter, outside a sentence slot.  
-**Where:** [core.md](../grammar/core.md#citation-forms)  
-**Near:** *orthography*
+**Job:** Root + ending with no role letter, outside a sentence.  
+**Where:** [core.md](../grammar/core.md#citation-forms)
 
-### Cite / mention / opaque / paraphrase / exact / proper (spans)
+### Classification
 
-**As used:** Span **types** (cite / mention / aside / opaque) and **fidelity** endings or `@` / `~` marks.  
-**Where:** [spans.md](../grammar/spans.md)  
-**Near:** *loan*, *foreign root* (`PoS<…>ENDING`)
+**Job:** Kind / role as predicative `/ɡ/` (no *to-be* verb).  
+**Where:** [predication.md](../grammar/predication.md#classification)  
+**Near:** *identity* (**SAME**); *equative*
 
-### Classification / kind ascription / property pattern / zero-copula
+### Clause pole / NP pole
 
-**As used:** English *is a kind / is ADJ* as subject + `/ɡ/`, no *to-be* verb. **Zero-copula** is an anchor, not the usual heading.  
-**Where:** [predication.md](../grammar/predication.md)  
-**Near:** *identity* (**SAME**), *equative* (scalar *as ADJ as*)
-
-### Clause force / speech act / interrogative force / question force
-
-**As used:** The one setting per utterance: statement / question / command / prohibition (firm **-l** / soft **-m**). Questions page also says **question force** / **interrogative force**.  
-**Where:** [core.md](../grammar/core.md#clause-force), [questions.md](../grammar/questions.md#interrogative-force), [vowel-series.md](../grammar/vowel-series.md)  
-**Near:** *turn*, *utterance marker*
-
-### Clause pole / NP pole / pole habit
-
-**As used:** Condition vs outcome as **NPs** (joins / restrictors) vs **full sentences** after **`adoro`**.  
-**Where:** [causation.md](../grammar/causation.md)  
-**Near:** *dependent clause*, *subordination*, *IF* / *IFF* / *BECAUSE*
-
-### Closed / open (list, restrictor, reviser, force)
-
-**As used:** **-l** locked / exhaustive / firm; **-m** other items may exist / soft. Reused across joins, restrictors, revisers, clause force, polar stance.  
-**Where:** [coordination.md](../grammar/coordination.md), [core.md](../grammar/core.md#clause-force)  
-**Near:** *empty-allowed* (**o** + **-m** only)
+**Job:** Condition vs outcome as NPs vs full sentences after **`adoro`**. Keep **clause pole** on causation.  
+**Where:** [causation.md](../grammar/causation.md)
 
 ### Clusivity
 
-**As used:** Who counts as *we* / *you* when names are unavailable (speaker+associates vs address set vs **`aha`**).  
+**Job:** Who counts as *we* / *you* when names are unavailable.  
 **Where:** [pronouns.md](../grammar/pronouns.md#clusivity)
 
-### Collective doing / collective ascription / collective
+### Collective
 
-**As used:** **-sh** on `/v/` = acting as a unit; on SHARED `/ɡ/` = property of the group as a unit (vs distributive singular SHARED).  
-**Where:** [plurality.md](../grammar/plurality.md#collective-doing)  
-**Near:** *associative*, *distributive*
+**Job:** **-sh** on `/v/` (one shared act) vs on `/ɡ/` (property of the group as a unit). Distinguish in the sentence.  
+**Where:** [plurality.md](../grammar/plurality.md#verbs-v), [plurality.md](../grammar/plurality.md#adjectives-g)
 
-### Command / request / prohibition / soft prohibition
+### Command / request / prohibition
 
-**As used:** Clause-force **`jel` / `jem` / `jul` / `jum`**.  
-**Where:** [core.md](../grammar/core.md#clause-force)
+**Job:** Speech act **`jel` / `jem` / `jul` / `jum`**.  
+**Where:** [core.md](../grammar/core.md#speech-act)
 
-### Comparative / superlative / equative / measured differential / judgment benchmark
+### Comparative / superlative / equative
 
-**As used:** Rank join + SHARED **scale** `/ɡ/`; focus = superlative; **`ae`** = *as ADJ as*; measure `/b/` on the scale = gap size; Advanced *worse than…* bars.  
-**Where:** [comparatives.md](../grammar/comparatives.md)  
-**Near:** *SHARED*, *rank join*, *threshold* (numeric, not people)
+**Job:** Rank join + SHARED **scale**; single-item = superlative; **`ae`** = equative.  
+**Where:** [comparatives.md](../grammar/comparatives.md)
 
-### Compass / viewpoint / landmark / gravity / arrow rose
+### Complex adjective / complex adverb
 
-**As used:** Bare arrow roots = map north; **DIR × ANCHOR** = body-relative; gravity pair **`avuza` / `ovazo`**.  
-**Where:** [roles.md](../grammar/roles.md#viewpoint-laterals)  
-**Near:** *ordinary compound* (same `x` shape as DIR × ANCHOR)
-
-### Complex adjective / complex adverb / complex chaining
-
-**As used:** `/ɡ/` or `/h/` plus immediately following `/b/`; chaining: further `/ɡ/` describes the extra noun.  
-**Where:** [core.md](../grammar/core.md)
-
-### Compound joiner / mid-word `x` / ordinary compound / lexical compound / x-less kind
-
-**As used:** Mid-word **`x`** glues pieces; **ordinary compound** = KIND × FIELD roots; **lexical compound** = closed stem with left member’s **l/m/n/r** and **no** `x`.  
-**Where:** [x-compounds.md](../grammar/x-compounds.md), [phonology.md](../grammar/phonology.md#phonotactics)  
-**Near:** *role compound*, *numeric derivation*, *phrasal proper name*
+**Job:** `/ɡ/` or `/h/` plus immediately following `/b/`.  
+**Where:** [core.md](../grammar/core.md#extra-nouns)
 
 ### Confirming a negative
 
-**As used:** Polar / yes-no patterns that confirm a denied body.  
+**Job:** Polar patterns that confirm a denied body.  
 **Where:** [questions.md](../grammar/questions.md#confirming-a-negative)
 
-### Contact channel / savoring
+### Contact / contact channel
 
-**As used:** Met-value **`xa`** endings: physical / mental / spiritual contact with the payoff.  
+**Job:** Met-value **`xa`** endings (physical / mental / spiritual).  
 **Where:** [values.md](../grammar/values.md#value-contact)
 
-### Content question
+### Continue (`/x/`)
 
-**As used:** Anchor alias for fill-ask.  
-**Where:** [questions.md](../grammar/questions.md#fill-ask-r)  
-**Near:** *fill-ask*
-
-### Continue / discourse marker (`/x/`) / extend
-
-**As used:** Keep the opener’s speech act; clause joins and **sentence linkers**. Word-initial **x** ≠ mid-word **`x`**.  
+**Job:** Same-speech-act forward motion.  
 **Where:** [core.md](../grammar/core.md#continue-x)  
-**Near:** *turn*, *sentence linker*, *discourse reviser*
+**Near:** *sentence linker* (therefore / however subclass)
 
-### Count / ordinal / digit-string / overlay (numbers)
+### Conventional (number **-n**)
 
-**As used:** Marker identities plus `/v/` `/h/` `/j/` `/x/` **overlay roles** (increase, multiple times, interjection, discourse *Starting with* / *Finally*, …).  
-**Where:** [numbers.md](../grammar/numbers.md)  
-**Near:** *marker vowel*, *mantissa*, *exponent*
+**Job:** Number ending **-n**.  
+**Where:** [numbers.md](../grammar/numbers.md#number-endings)  
+**Near:** content **named**; join **named list** / **sequence**
 
 ### Cross-role recast
 
-**As used:** Resume with a **different** PoS letter than the antecedent.  
+**Job:** Resume with a different PoS letter than the antecedent.  
 **Where:** [pronouns.md](../grammar/pronouns.md)
 
-### Default sentence order / free order / focus (word order)
+### Dependent clause / **`adoro`**
 
-**As used:** SOV default; rearrange to put something in **focus** (the point heard). This **focus** is not join **focus arity**.  
-**Where:** [core.md](../grammar/core.md)  
-**Near:** *left-bound adjective*, *weak-pause left cue*
+**Job:** Full sentence after **`adoro`** (last in the host slot).  
+**Where:** [core.md](../grammar/core.md#dependent-clauses)
 
-### Dependent clause / next-clause pronoun / doorway
+### Digitless
 
-**As used:** Full sentence after **`adoro`** (last in the host slot).  
-**Where:** [core.md](../grammar/core.md#dependent-clauses), [pronouns.md](../grammar/pronouns.md#special-pronouns)  
-**Near:** *clause pole*, *nested dependents*
+**Job:** Number word with marker and ending but no digit groups.  
+**Where:** [numbers.md](../grammar/numbers.md#digitless)
 
-### Digitless / zero-digit-group / unspecified magnitude
+### Digitless exponent / imaginary / zero × exponent
 
-**As used:** Number word with marker and ending but no digit groups (`g+` *more than one*, etc.).  
-**Where:** [numbers.md](../grammar/numbers.md#zero-digit-groups)
-
-### Digitless exponent / hyperbole / gazillion / infinity / notional amount / imaginary / zero × exponent / annihilate / rank annihilated
-
-**As used:** Advanced free-number special values (`+e`, `+1e`, `-e-`, `+0e`, `#0e`, …).  
-**Where:** [numbers.md](../grammar/numbers.md#digitless-exponents)  
-**Near:** *numeric derivation* (same bodies on a ROOT)
-
-### Direct object / subject / verb
-
-**As used:** Role-letter jobs `/d/` `/z/` `/v/`.  
-**Where:** [core.md](../grammar/core.md#part-of-speech-prefixes)
-
-### Discourse reviser / discourse glue / in-clause reviser / revision chain / REV
-
-**As used:** Prefix-less **`al` / `am` / …**: repair same-role **A REV B**, or front the utterance to prior talk.  
-**Where:** [revisers.md](../grammar/revisers.md)  
-**Near:** *sentence linker* (`/x/` content roots, not prefix-less)
+**Job:** Advanced free-number specials (`+e`, `-e-`, `+0e`, …). **Imaginary** = free `-e-`.  
+**Where:** [numbers.md](../grammar/numbers.md#digitless-exponents), [numbers.md](../grammar/numbers.md#imaginary)  
+**Near:** *quasi* (derivation); **NOTIONAL** (mood)
 
 ### Distributive
 
-**As used:** Set join **`a`** + singular SHARED scale = *both/each are ADJ* (not ranking, not collective **-sh**).  
-**Where:** [comparatives.md](../grammar/comparatives.md#distributive-both), [plurality.md](../grammar/plurality.md)
+**Job:** Set **`a`** + singular SHARED = *both/each are ADJ*.  
+**Where:** [comparatives.md](../grammar/comparatives.md#distributive-both)
 
-### Domain / generic / universal (*every K*)
+### Domain / generic / *every K*
 
-**As used:** SHARED kind `/ɡ/` plus invert / bare joins (*every cat* ≠ **-sh**).  
+**Job:** SHARED kind plus invert / standalone joins.  
 **Where:** [coordination.md](../grammar/coordination.md#universals-domains-generics)  
-**Near:** *universality* (warrant mood — different job)
-
-### EDGE / TYPE / ENDing (spans)
-
-**As used:** Spoken span-open anatomy `{PoS}{TYPE}x{EDGE}{ENDING}`.  
-**Where:** [spans.md](../grammar/spans.md#shape)
+**Near:** *universality* (mood)
 
 ### Empty-allowed
 
-**As used:** Plain **o** + **-m**: *or none* / *or skip*.  
+**Job:** Plain **o** + **-m**: *or none*.  
 **Where:** [coordination.md](../grammar/coordination.md#empty-allowed-om)
 
-### Ending / reference suffix / word ending
+### Ending / reference suffix
 
-**As used:** Final **-l / -m / -n / -r** (plus optional **-sh**). On joins, numbers, values, moods the **same letters** have other tables.  
-**Where:** [reference-suffix.md](../grammar/reference-suffix.md)  
-**Near:** *closure ending*, *hold ending*, *map resolution*, *number ending*
+**Job:** Final **-l / -m / -n / -r** (plus optional **-sh**). **Reference suffix** only for the content-word table.  
+**Where:** [reference-suffix.md](../grammar/reference-suffix.md)
 
 ### Epistemic *because*
 
-**As used:** Reason for the **take** (COMMENT), not world-foundation **BECAUSE**.  
+**Job:** Reason for the take (COMMENT), not world **BECAUSE**.  
 **Where:** [causation.md](../grammar/causation.md#epistemic-because)
 
-### Essence / grain / void / quasi / origin / telos / poly- / privative / quasi-N
+### Equative
 
-**As used:** Digitless numeric-derivation morphs on ROOT.  
-**Where:** [numeric-derivation.md](../grammar/numeric-derivation.md)
+**Job:** **`ae`** SHARED scale = *as ADJ as*.  
+**Where:** [comparatives.md](../grammar/comparatives.md#equatives)
 
-### Evidentiality / how you know
+### Evidentiality
 
-**As used:** Closed `/h/` roots (WITNESSED … STORY). Why-agelan also says *how you know*.  
-**Where:** [commentary.md](../grammar/commentary.md#evidentiality), [why-agelan.md](../grammar/why-agelan.md#how-you-know)
+**Job:** Closed `/h/` how-you-know roots.  
+**Where:** [commentary.md](../grammar/commentary.md#evidentiality)
 
-### Exclusivity / invert / distribution (negation)
+### Extra noun (`/b/`)
 
-**As used:** Join **`ua` / `uo` / `ue`** stacks; negation **distributes** (not De Morgan).  
-**Where:** [coordination.md](../grammar/coordination.md)
+**Job:** Noun bolted onto a complex `/ɡ/` or `/h/`.  
+**Where:** [core.md](../grammar/core.md#extra-nouns)
 
 ### Factivity
 
-**As used:** Whether **IF** vs **BECAUSE** treats the dependent as asserted.  
+**Job:** Whether **IF** vs **BECAUSE** treats the dependent as asserted.  
 **Where:** [causation.md](../grammar/causation.md#factivity)
 
-### Fence / right-close fence / phrase fence / left fence
+### Fill-ask / fill-all
 
-**As used:** Join items then closer on the **right**; **left fence** is illegal. **Phrase fence** also used for numeric ranges.  
-**Where:** [coordination.md](../grammar/coordination.md)  
-**Near:** *span fence* (typed brackets — different machinery)
+**Job:** Under question, join **-r** is a blank; several **-r** = fill all.  
+**Where:** [questions.md](../grammar/questions.md#fill-ask-r)
 
-### Fill-ask / fill-all / fill-ask arity / gap / multi-gap
+### Firm / soft
 
-**As used:** Under **jol** / **jom**, join **-r** is a blank to name; several **-r** = fill **all**, in spoken order.  
-**Where:** [questions.md](../grammar/questions.md)  
-**Near:** *content question*, *unspecified member*, *yes/no*
-
-### Floating `/h/`
-
-**As used:** Mood / value / evidential as a clause adverb (optional `/w/` only on a preceding `/ɡ/`).  
-**Where:** [plan-decision.md](../grammar/plan-decision.md), [commentary.md](../grammar/commentary.md), [values.md](../grammar/values.md)
-
-### Focus (join) vs focus (word order) vs Focus column (value tables)
-
-**As used:** Join **one item**; core **what you want heard**; values tables use **Focus** for contact-channel notes.  
-**Where:** [coordination.md](../grammar/coordination.md#focus-phrase), [core.md](../grammar/core.md), [values.md](../grammar/values.md)
+**Job:** Speech-act ending **-l** vs **-m**.  
+**Where:** [core.md](../grammar/core.md#speech-act)
 
 ### Forecast source
 
-**As used:** Stack evidentiality on **PREDICT**.  
+**Job:** Evidentiality stacked on **PREDICT**.  
 **Where:** [plan-decision.md](../grammar/plan-decision.md#predict-evidentiality)
 
-### Foreign / loan / compact foreign content word
+### Full-root resume / short resume
 
-**As used:** Opaque span vs `PoS<…>ENDING`.  
-**Where:** [spans.md](../grammar/spans.md#loans), [core.md](../grammar/core.md#capitalization)
+**Job:** Whole root + **-r** vs prefix through the second vowel.  
+**Where:** [pronouns.md](../grammar/pronouns.md)
 
-### Generation (ordinal)
+### Hold
 
-**As used:** Digitful exponent on **`#`**: which cohort the rank is in (`g#3e2`). **`g#e0`** current generation.  
-**Where:** [numbers.md](../grammar/numbers.md#ordinal-generation)
+**Job:** COMMENT / NOTIONAL tightness endings.  
+**Where:** [commentary.md](../grammar/commentary.md#comment)
 
-### Generic person
+### Host
 
-**As used:** Special **`enenu`**: nonspecific individual.  
-**Where:** [pronouns.md](../grammar/pronouns.md#special-pronouns)
-
-### Gloss
-
-**As used:** Learner interlinear (`z-Azawan`); site tool **Gloss overlay**.  
-**Where:** example blocks across grammar; [gloss.md](../grammar/gloss.md)
-
-### Handle / named handle / handle coinage / phrasal proper name
-
-**As used:** Short **-n** label for a long title vs KIND×FIELD **`x`** names.  
-**Where:** [reference-suffix.md](../grammar/reference-suffix.md#named-handles)
-
-### Hold (COMMENT / NOTIONAL)
-
-**As used:** **-l / -m / -r** tightness of the thought balloon / as-if (soft / fused / return).  
-**Where:** [commentary.md](../grammar/commentary.md#comment-hold)
-
-### Host (ability, values, measure)
-
-**As used:** The content root the `x`-stance or unit morph attaches to.  
-**Where:** [ability.md](../grammar/ability.md), [values.md](../grammar/values.md), [numbers-applied.md](../grammar/numbers-applied.md#measure-phrases)
+**Job:** Content root an `x`-stance or numeric derivation attaches to.  
+**Where:** [ability.md](../grammar/ability.md), [values.md](../grammar/values.md), [numeric-derivation.md](../grammar/numeric-derivation.md)  
+**Near:** measure **unit**
 
 ### Identity
 
-**As used:** Closed **SAME** + `/b/`: two labels for one referent.  
-**Where:** [predication.md](../grammar/predication.md#identity)  
-**Near:** *classification*, *equative*
-
-### Ideation / numbered alternatives
-
-**As used:** Number *problem / solution / goal* candidates with free ordinals.  
-**Where:** [special-vocabulary.md](../grammar/special-vocabulary.md#numbered-alternatives)
-
-### Incapability
-
-**As used:** Ability page job for *can’t* stances (and ABIL fallback).  
-**Where:** [ability.md](../grammar/ability.md#incapability)
-
-### Inclusive we / interlocutors / speaker / listener
-
-**As used:** Specials **`aha`**, **`ugobo`**, **`edone`**.  
-**Where:** [pronouns.md](../grammar/pronouns.md#special-pronouns)  
-**Near:** *clusivity*, *address set*
-
-### Interjection (number)
-
-**As used:** `/j/` overlay on a number word (`j+e` *To infinity!*). Core also: **number as interjection**.  
-**Where:** [numbers.md](../grammar/numbers.md#number-as-interjection-by-marker), [core.md](../grammar/core.md#number-as-interjection)
+**Job:** Closed **SAME** + `/b/`.  
+**Where:** [predication.md](../grammar/predication.md#identity)
 
 ### Invert
 
-**As used:** Join stacks **`ua` / `uo` / `ue`**.  
+**Job:** Join stacks **`ua` / `uo` / `ue`**.  
 **Where:** [coordination.md](../grammar/coordination.md#invert-u-stacks)
 
-### Island / join scope island
+### Join / conjunct
 
-**As used:** `^ … ^` plus join-inside lookback rules.  
-**Where:** [coordination.md](../grammar/coordination.md#join-scope-islands), [spans.md](../grammar/spans.md#adjunct-scope-islands)
-
-### Join / join word / coordination / conjunct
-
-**As used:** Right-close list closer; **conjunct** = listed item. Page title **Joins**.  
-**Where:** [coordination.md](../grammar/coordination.md)  
-**Near:** *join-act*, *join-relation*, *set join*, *rank join*
+**Job:** Right-close list closer; **conjunct** = listed item.  
+**Where:** [coordination.md](../grammar/coordination.md)
 
 ### Join-act verb / join-relation
 
-**As used:** Content `/v/` or `/ɡ/` `/h/` + join vowel + **-n** (*include*, *without*).  
+**Job:** Content `/v/` or `/ɡ/` `/h/` + join vowel + **-n**.  
 **Where:** [join-extras.md](../grammar/join-extras.md)
 
-### Kind (compound) / field
+### Judgment benchmark
 
-**As used:** First root of an ordinary `x` compound is the **kind**; later roots **narrow**.  
-**Where:** [x-compounds.md](../grammar/x-compounds.md#ordinary-compound-order), [introduction.md](../grammar/introduction.md#semantic)
+**Job:** Advanced *worse than…* bars.  
+**Where:** [comparatives.md](../grammar/comparatives.md#judgment-benchmarks)
 
-### Left-bound adjective / `gl-` / lean left
+### Left-bound adjective
 
-**As used:** `/ɡ/` with second letter **l**: adjective **before** the next noun.  
+**Job:** `/ɡ/` with second letter **l**: adjective before the next noun.  
 **Where:** [core.md](../grammar/core.md#left-bound-adjectives)
 
-### Left edge / left-edge cluster / opening a turn
+### Left edge
 
-**As used:** Optional calls, reaction words, then force, before the body.  
+**Job:** Vocative → polar stance → act word, then body.  
 **Where:** [core.md](../grammar/core.md#left-edge-order-and-sentence-boundaries)
 
-### Letter name
+### Literal / metaphorical / named / resume
 
-**As used:** Spoken names of letters / digits (phonology).  
-**Where:** [phonology.md](../grammar/phonology.md#letter-names)
-
-### Literal / metaphorical / named / proper
-
-**As used:** Reference-suffix jobs **-l / -m / -n**; also span `@` / `~` and number second-slot marks.  
+**Job:** Content endings **-l / -m / -n / -r**.  
 **Where:** [reference-suffix.md](../grammar/reference-suffix.md)
 
-### Map resolution (PLAN)
+### Loan / opaque span
 
-**As used:** PLAN endings: sketch / itinerary / fork.  
+**Job:** `PoS<…>ENDING` vs opaque fence with no ending after `>`.  
+**Where:** [spans.md](../grammar/spans.md#loans)
+
+### Map resolution
+
+**Job:** PLAN endings: sketch / itinerary / fork.  
 **Where:** [plan-decision.md](../grammar/plan-decision.md#plan-map-resolution)
 
-### Marker / marker vowel / number marker / sign
+### Measure phrase / unit
 
-**As used:** Spoken **r**+V that picks scalar / ordinal / label and (for scalars) sign.  
-**Where:** [numbers.md](../grammar/numbers.md#marker-vowel-referential-identity)
-
-### Measure phrase / measure host / unit morph / stock measure host / civil duration
-
-**As used:** Amount + host; bare host = short unit; **`ROOTx+1`** titled SI-style name.  
+**Job:** Amount + lexicon unit noun; titled **`ROOTx+1`**.  
 **Where:** [numbers-applied.md](../grammar/numbers-applied.md#measure-phrases)
-
-### Mechanism / unique path / sufficient / necessary
-
-**As used:** Causation jobs: *would work* vs *needs* vs CAUSE mood vs exclusive *has to be*.  
-**Where:** [causation.md](../grammar/causation.md)
 
 ### Met / unmet / motive / prescription / topic (values)
 
-**As used:** Value stances **`xa` / `xu` / `xe` / `xo`** / bare. Core **adverb topic** is a different *as for X* construction (`ahaza`).  
-**Where:** [values.md](../grammar/values.md), [core.md](../grammar/core.md#adverb-topic-and-free-order-ties)
+**Job:** Value stances **`xa` / `xu` / `xe` / `xo`** / topic (no `x`).  
+**Where:** [values.md](../grammar/values.md)  
+**Near:** **as-for**
 
-### Mindfulness noting / thought balloon / commentary
+### Named handle
 
-**As used:** COMMENT pedagogy.  
-**Where:** [commentary.md](../grammar/commentary.md#comment)
+**Job:** Short **-n** label for a long title.  
+**Where:** [reference-suffix.md](../grammar/reference-suffix.md#named-handles)
 
-### Need / need inventory / need root
+### Named list
 
-**As used:** Six closed psychological needs under `/h/` `/w/`.  
+**Job:** Phrase join **-n**.  
+**Where:** [coordination.md](../grammar/coordination.md#named-list)
+
+### Need inventory
+
+**Job:** Six closed psychological needs under `/h/` `/w/`.  
 **Where:** [values.md](../grammar/values.md#need-inventory)
 
-### Nesting (spans) / fence nesting (joins)
+### Number as verb / adverb / interjection / discourse
 
-**As used:** Typed spans nest; join fences nest by lookback; islands do **not** nest.  
-**Where:** [spans.md](../grammar/spans.md#nesting), [coordination.md](../grammar/coordination.md#fence-nesting)
+**Job:** Number word under `/v/` `/h/` `/j/` `/x/`.  
+**Where:** [numbers.md](../grammar/numbers.md#number-as-roles)
 
-### Number word / number stem / NUM / free number
+### Numbered alternatives
 
-**As used:** Slot-filling number vs ending-less stem after `x` in derivation.  
-**Where:** [numbers.md](../grammar/numbers.md), [numeric-derivation.md](../grammar/numeric-derivation.md)
+**Job:** Number problem / solution / goal candidates with free ordinals.  
+**Where:** [special-vocabulary.md](../grammar/special-vocabulary.md#numbered-alternatives)
 
-### Numeric derivation / number compound / numeric morph / label-code / infinite label
+### Numeric derivation / quasi
 
-**As used:** `ROOT x NUM` kind-building family.  
+**Job:** `ROOT x NUM`; **quasi** = `ROOTx-e-`.  
 **Where:** [numeric-derivation.md](../grammar/numeric-derivation.md)
+
+### Occasion
+
+**Job:** Listed pieces before a restrictor (when the host applies).  
+**Where:** [restrictors.md](../grammar/restrictors.md)
 
 ### Offer (question)
 
-**As used:** Focus **-m** under question: *How about X?*  
-**Where:** [questions.md](../grammar/questions.md#yes-no-focus-bare)
+**Job:** Single-item **-m** under question (*How about X?*).  
+**Where:** [questions.md](../grammar/questions.md#yes-no-single-item-standalone)
 
-### Open inclusive / cochoice (causation)
+### Ordinary compound / lexical compound
 
-**As used:** Sufficient *would work* on **`…aom`**.  
-**Where:** [causation.md](../grammar/causation.md#sufficient)
+**Job:** KIND × FIELD with mid-word **`x`**; closed stem with join letter and no `x`.  
+**Where:** [x-compounds.md](../grammar/x-compounds.md)
 
-### Ordinary compound vs two words vs lexical kind
+### Overlay / sense-form
 
-**As used:** Decision menu for one slot vs two slot-fillers vs a closed lemma.  
-**Where:** [x-compounds.md](../grammar/x-compounds.md#compound-vs-separate)
+**Job:** Special reading of a published root under a PoS.  
+**Where:** [special-vocabulary.md](../grammar/special-vocabulary.md#sense-form)
 
-### Orthography / unicase / capitalization / preferred shorthand / spelled CV / second-slot mark
+### Polar stance
 
-**As used:** Writing rules: lowercase native; number `g+3` vs speech *grarel*; `~` `@` `=` after PoS.  
-**Where:** [core.md](../grammar/core.md#orthography), [numbers.md](../grammar/numbers.md#writing-preferred-shorthand)
+**Job:** Closed `/j/` particles **`jael` / `juel` / …**.  
+**Where:** [questions.md](../grammar/questions.md#polar-stance)
 
-### Overlay / sense-form overlay / hosted overlay
+### Preference standing
 
-**As used:** Special reading of a **published** root under a PoS (`hogegal` HIGH vs `zogegal` *wave*). Numbers also **overlay** `/v/` `/h/` `/j/` `/x/` on the number word.  
-**Where:** [special-vocabulary.md](../grammar/special-vocabulary.md#sense-form), [numbers.md](../grammar/numbers.md#number-overlays), [lexicon.md](../grammar/lexicon.md)
-
-### Part of speech / role letter / first letter / PoS prefix
-
-**As used:** Word-initial job letter. Introduction **syntactic clarity**.  
-**Where:** [core.md](../grammar/core.md#part-of-speech-prefixes), [introduction.md](../grammar/introduction.md#syntactic)
-
-### Participant compound
-
-**As used:** Anchor alias for role compounds.  
-**Where:** [roles.md](../grammar/roles.md#participant-compounds)
-
-### Percent / percentage point / denominator (*of what*)
-
-**As used:** Applied number: portion closer plus whole-NP domain.  
-**Where:** [numbers-applied.md](../grammar/numbers-applied.md#percent-and-percentage-points)
-
-### Person-role **-sh**
-
-**As used:** **-sh** readings on specials (speaker’s set vs address set vs leave **-sh** off **`aha`**).  
-**Where:** [plurality.md](../grammar/plurality.md#person-role-sh)
-
-### Phonotactics / singability / syllable / letter cluster (numbers)
-
-**As used:** Word-shape and singing constraints; number PoS+`r` is a cluster exception.  
-**Where:** [phonology.md](../grammar/phonology.md)
-
-### Polar question / yes/no / polar stance / reaction word / yes/no polarity
-
-**As used:** Ask with **no** join **-r**; closed `/j/` particles **`jael` / `juel` / …**; confirm tags as a **second bare turn**.  
-**Where:** [questions.md](../grammar/questions.md#polar-stance), [core.md](../grammar/core.md#turn-j)
-
-### Preference standing (circumstantial / internal / protective)
-
-**As used:** Motive **`xe`** endings.  
+**Job:** Motive **`xe`** endings.  
 **Where:** [values.md](../grammar/values.md#value-preference)
 
-### Preference vs law
+### Prominence
 
-**As used:** Ought/motive stacked on a causal shape, not FORMAL/NATURAL universality.  
-**Where:** [causation.md](../grammar/causation.md#preference-vs-law)
+**Job:** Word-order highlighting (not join arity).  
+**Where:** [core.md](../grammar/core.md#as-for)
 
-### Published root / lexicon / mnemonic / literal English / metaphorical sense
+### Quasi
 
-**As used:** Emoji-seeded dictionary; pick **-l** vs **-m** by which sense matches.  
-**Where:** [lexicon.md](../grammar/lexicon.md), [core.md](../grammar/core.md#orthography), [why-agelan.md](../grammar/why-agelan.md#conceptual-metaphors)
+**Job:** Derivation `ROOTx-e-` (and quasi-N).  
+**Where:** [numeric-derivation.md](../grammar/numeric-derivation.md#quasi)
 
-### Range / numeric span / SHARED continuum / threshold / half-open / from–to
+### Range / clock/date range
 
-**As used:** Two number endpoints + SHARED **continuum** `/ɡ/`; one number + rank focus = **threshold**. Docs also call the range a **span**.  
-**Where:** [numbers-applied.md](../grammar/numbers-applied.md#ranges)  
-**Near:** *span fence* (quotes), *SHARED scale* (comparatives)
+**Job:** Numeric from–to; clock/date from–to.  
+**Where:** [numbers-applied.md](../grammar/numbers-applied.md#ranges), [numbers-applied.md](../grammar/numbers-applied.md#time)
 
-### Rank join / set join / SHARED / shared modifier / shared scale / shared continuum
+### Rank join / set join / SHARED
 
-**As used:** Material **after** the join closer; comparatives = SHARED **scale**; ranges = SHARED **continuum**. Often spelled **SHARED** in caps.  
-**Where:** [coordination.md](../grammar/coordination.md), [comparatives.md](../grammar/comparatives.md), [numbers-applied.md](../grammar/numbers-applied.md#shared-continuum)
+**Job:** Material after the join closer; **SHARED scale** vs **SHARED continuum**.  
+**Where:** [coordination.md](../grammar/coordination.md), [comparatives.md](../grammar/comparatives.md)
 
-### Referential (clarity) / most recently matching
+### Restrictor
 
-**As used:** Introduction design goal; pronoun lookup rule.  
-**Where:** [introduction.md](../grammar/introduction.md#referential), [pronouns.md](../grammar/pronouns.md)
+**Job:** Join-shaped `/h/` `/w/` *when the host applies*.  
+**Where:** [restrictors.md](../grammar/restrictors.md)
 
-### Restrictor / circumstance restriction
+### Resume
 
-**As used:** Join-shaped `/h/` `/w/` **when**-frames (`hal` *never*, `hual` *always*). Page also **circumstance**.  
-**Where:** [restrictors.md](../grammar/restrictors.md)  
-**Near:** *habit* (**`hual`** vs universality warrant)
+**Job:** Content / span / number **-r** pointing back.  
+**Where:** [pronouns.md](../grammar/pronouns.md), [spans.md](../grammar/spans.md), [numbers.md](../grammar/numbers.md#number-endings)
 
 ### Reviser
 
-**As used:** Prefix-less *including / rather / instead / except*.  
+**Job:** Prefix-less *including / rather / instead / except* (in-clause vs discourse by placement).  
 **Where:** [revisers.md](../grammar/revisers.md)
 
-### Role compound
+### Role compound / agent / patient / reltum
 
-**As used:** `a/u/o x ROOT`.  
+**Job:** `a/u/o x ROOT`.  
 **Where:** [roles.md](../grammar/roles.md#role-compounds)
 
-### Root
+### Role letter
 
-**As used:** Published stem without PoS or ending (`odogo`).  
-**Where:** throughout; [core.md](../grammar/core.md)
+**Job:** Word-initial job letter. Beginner heading may still say *parts of speech*.  
+**Where:** [core.md](../grammar/core.md#part-of-speech-prefixes)
 
-### Same-role resume
+### Scope island
 
-**As used:** **-r** keeping the antecedent’s slot letter.  
-**Where:** [pronouns.md](../grammar/pronouns.md)
-
-### Scalar (number) vs scalar (comparison)
-
-**As used:** Count/amount marker vs gradable comparative scale.  
-**Where:** [numbers.md](../grammar/numbers.md#marker-vowel-referential-identity), [comparatives.md](../grammar/comparatives.md)
-
-### Semantic (clarity)
-
-**As used:** One dictionary sense per entry; related senses use explicit `x`.  
-**Where:** [introduction.md](../grammar/introduction.md#semantic)
+**Job:** `^ … ^` with binder inside.  
+**Where:** [spans.md](../grammar/spans.md#scope-islands), [coordination.md](../grammar/coordination.md#scope-islands-join)
 
 ### Sentence linker
 
-**As used:** `/x/` *therefore / however / meanwhile* content words.  
-**Where:** [core.md](../grammar/core.md#sentence-linkers)  
-**Near:** *discourse reviser*, *continue*
+**Job:** `/x/` *therefore / however / meanwhile*.  
+**Where:** [core.md](../grammar/core.md#sentence-linkers)
 
-### SHARED (see rank join)
+### Sequence
 
-Repeated here because it is a **construction slot name**, not English *shared* in general.
+**Job:** Clause join **-n** (`xan` *and then*).  
+**Where:** [coordination.md](../grammar/coordination.md#sequence)
 
-### Soft **-n** (clause) / named list **-n** / join **-n** exception
+### SHARED scale / SHARED continuum
 
-**As used:** Join **-n** is **not** proper-name **-n**: clause sequence *and then* (`xan`); phrase named/conventional list; join-act **-n**.  
-**Where:** [coordination.md](../grammar/coordination.md#soft-n-clause), [join-extras.md](../grammar/join-extras.md), [reference-suffix.md](../grammar/reference-suffix.md)
+**Job:** After-join `/ɡ/`: comparatives vs ranges.  
+**Where:** [comparatives.md](../grammar/comparatives.md), [numbers-applied.md](../grammar/numbers-applied.md#ranges)
 
-### Soft identity
+### Span / span open
 
-**As used:** SAME ending **-m**.  
-**Where:** [predication.md](../grammar/predication.md)
+**Job:** Typed fences; spoken opening word.  
+**Where:** [spans.md](../grammar/spans.md)
 
-### Soft question / soft statement
+### Special pronoun
 
-**As used:** **`jom` / `jam`**.  
-**Where:** [core.md](../grammar/core.md#clause-force)
-
-### Span / span fence / typed fence / packaging
-
-**As used:** Cite/aside/mention/opaque brackets or spoken opens. **Packaging** appears in the spans lead.  
-**Where:** [spans.md](../grammar/spans.md)  
-**Near:** *range* (also called span)
-
-### Special pronoun / speech-role / discourse role (person)
-
-**As used:** **`ugobo` / `edone` / `aha` / `enenu` / `adoro`**.  
+**Job:** **`ugobo` / `edone` / `aha` / `enenu` / `adoro`**.  
 **Where:** [pronouns.md](../grammar/pronouns.md#special-pronouns)
 
-### Spoken group stress
+### Speech act
 
-**As used:** How digit groups are stressed in speech.  
-**Where:** [numbers.md](../grammar/numbers.md#stress)
-
-### Stance / stance vowel
-
-**As used:** Ability and values `x` + **a/e/o/u**; overlapping letters, **different tables**.  
-**Where:** [ability.md](../grammar/ability.md#ability-stance), [values.md](../grammar/values.md#value-stake)
-
-### Statement / claim
-
-**As used:** Default force **`jal`** (omissible).  
-**Where:** [core.md](../grammar/core.md#clause-force-beginner)
-
-### Subordination
-
-**As used:** Causation heading for clause poles; core says **dependent clauses**.  
-**Where:** [causation.md](../grammar/causation.md#clause-poles)  
-**Near:** *dependent clause*
+**Job:** Utterance setting: statement / question / command / prohibition.  
+**Where:** [core.md](../grammar/core.md#speech-act)  
+**Near:** *prescription force*; polar *stance*
 
 ### Sufficient / necessary / unique path
 
-See *mechanism*. Everyday *would work* vs marked *needs* vs *has to be*.
+**Job:** Causation jobs (not a fourth *mechanism* umbrella).  
+**Where:** [causation.md](../grammar/causation.md)
 
-### Syntactic (clarity)
+### Threshold
 
-**As used:** Role letter, not English word-class guesswork.  
-**Where:** [introduction.md](../grammar/introduction.md#syntactic)
+**Job:** Single-item rank with a number = bound on a line.  
+**Where:** [numbers-applied.md](../grammar/numbers-applied.md)
 
-### Time (digit-string) / clock-date span
+### Turn (`/j/`)
 
-**As used:** Applied numbers: `ro` times; range with **`gumedul`**.  
-**Where:** [numbers-applied.md](../grammar/numbers-applied.md#time)
-
-### Turn / utterance / utterance marker (`/j/`) / jump
-
-**As used:** New speech move (`/j/`) vs continue (`/x/`).  
+**Job:** New speech move.  
 **Where:** [core.md](../grammar/core.md#turn-j)
 
 ### Under question
 
-**As used:** Focus/bare join readings **when clause force is question**.  
+**Job:** Join readings when the speech act is question.  
 **Where:** [questions.md](../grammar/questions.md#under-question)
 
-### Unicase
+### Unspecified member
 
-**As used:** Native letters always lowercase; namedness is **-n**, not case.  
-**Where:** [core.md](../grammar/core.md#capitalization)
+**Job:** Join / restrictor **-r** (*something* / *sometime*); fill-ask under question.  
+**Where:** [coordination.md](../grammar/coordination.md#unspecified-member-r-phrase)
 
-### Unspecified member (join **-r**)
+### Universality
 
-**As used:** *Something / anything / sometime* in statement; fill-ask under question. **Not** content resume **-r**.  
-**Where:** [coordination.md](../grammar/coordination.md#unspecified-member-r-phrase), [questions.md](../grammar/questions.md#fill-ask-r), [restrictors.md](../grammar/restrictors.md)
+**Job:** Mood how-exceptionless (COMMON … RULE).  
+**Where:** [special-vocabulary.md](../grammar/special-vocabulary.md#universality)
 
-### Universality / warrant / exceptionlessness
+### Values
 
-**As used:** How exceptionless a claim is (COMMON … RULE). Distinct from join *every K*.  
-**Where:** [special-vocabulary.md](../grammar/special-vocabulary.md#universality)  
-**Near:** *domain*, *generic*, *habit* (`hual`)
-
-### Utterance framing
-
-**As used:** Editor/core cluster: `/j/` turn vs `/x/` continue vs omissible **`jal`**. The core page does not use this exact heading; it teaches the pieces.  
-**Where:** [core.md](../grammar/core.md#turn-j)
-
-### Values / value ascription
-
-**As used:** Need + optional stance on `/h/` `/w/`.  
+**Job:** Need + optional stance on `/h/` `/w/`.  
 **Where:** [values.md](../grammar/values.md)
 
-### Viewpoint laterals / DIR × ANCHOR
+### Viewpoint laterals
 
-**As used:** Body-relative arrows: whose facing is north.  
+**Job:** DIR × ANCHOR; whose facing is north.  
 **Where:** [roles.md](../grammar/roles.md#viewpoint-laterals)
 
-### Vowel series / job map / prefix picks the table
+### Vocative
 
-**As used:** **`a`** add, **`o`** one, **`e`** order, **`u`** undo — reused across force, joins, revisers, restrictors, values, ability, roles.  
+**Job:** Left-edge `/j/` addressing.  
+**Where:** [core.md](../grammar/core.md#turn-j)
+
+### Vowel series
+
+**Job:** **`a`** add / **`o`** one / **`e`** order / **`u`** undo; prefix picks the table.  
 **Where:** [vowel-series.md](../grammar/vowel-series.md)
 
 ### Weak-pause left cue
 
-**As used:** When singing/fast speech, prefer an audible left `/j/` cue rather than implied **`jal`**.  
+**Job:** Prefer an audible left `/j/` rather than implied **`jal`**.  
 **Where:** [core.md](../grammar/core.md#weak-pause-left-cues)
 
-### When? (circumstance question)
+### Yes/no
 
-**As used:** Fill-ask with restrictor **-r** (`har`, …).  
-**Where:** [questions.md](../grammar/questions.md#circumstance-when)
-
-### Yes/no with focus / bare
-
-**As used:** Confirm/offer readings of focus and bare joins under question.  
-**Where:** [questions.md](../grammar/questions.md#yes-no-focus-bare)
-
-### Zero-copula
-
-Anchor on [predication.md](../grammar/predication.md#zero-copula); learner heading is **property pattern**.
+**Job:** Question type with no join **-r**.  
+**Where:** [questions.md](../grammar/questions.md#question)  
+**Near:** **polar stance**
 
 ---
 
-## Known clashes (collate only)
+## Out of scope
 
-Strings that currently name **more than one job** (candidates for later consolidation):
-
-| String | Jobs in play |
-|--------|----------------|
-| **span** | Typed quote fence vs numeric *from–to* range |
-| **focus** | Join arity 1 vs word-order prominence vs table column |
-| **bare** | Join arity 0 vs value topic vs compass-without-anchor |
-| **overlay** | Sense-form PoS reading vs number `/v/` `/h/` `/j/` `/x/` vs metaphorical **-m** |
-| **topic** | Bare need vs adverb *as for X* (`ahaza`) |
-| **stance** | Ability `x` vowels vs value `x` vowels (same letters, different tables) |
-| **changeability** | Unmet values, DECISION, and *can’t* grains |
-| **anaphor / resume / -r** | Content pronoun vs join unspecified vs span `[=]` vs number `=` vs restrictor *sometime* |
-| **-n** | Proper name vs join named/soft vs conventional number vs span proper |
-| **SHARED** | After-join modifiers vs comparative scale vs range continuum |
-| **universal / every** | Join domain *every K* vs universality **warrant** |
-| **notional** | COMMENT-adjacent mood vs number imaginary overlay vs numeric-derivation quasi |
-| **host** | Ability/values `x` base vs measure-phrase unit noun |
-| **mood** | Closed `/h/` psychological roots vs ordinary manner `/h/` |
-| **scale** | Comparative SHARED `/ɡ/` vs ambient / OoM number scale |
-| **open / closed** | List completeness vs force firmness vs restrictor frame vs span fidelity (not used the same way) |
-
-## Out of scope this pass
-
-- English in **translation-practice** items (object language, not metalanguage)
-- House-cast person names (*Azawan*, …) as grammar terms
-- `docs/grammar/public/tts/` tooling copy
-- Editor dialect in `docs/meta/` and `AGENTS.md` (including leftover special-pronoun spellings there)
+- English in **translation-practice** items
+- House-cast person names
+- `docs/grammar/public/tts/`
+- Parser / TypeScript identifiers
+- `docs/proposals/`

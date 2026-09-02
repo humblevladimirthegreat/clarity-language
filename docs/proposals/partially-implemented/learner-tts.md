@@ -80,7 +80,7 @@ Preferred writing is not always what is spoken. The AST already distinguishes wr
 | Orthographic-only commas in digit groups | **Omit** (not spoken) | [numbers.md](../../grammar/numbers.md#writing-preferred-shorthand) |
 | Period / `?` / `!` | Boundary tags for pause + pitch hint | [core.md](../../grammar/core.md#orthography-and-prosody-periods) |
 | `/x/` continue vs new `/j/` turn | Boundary tags (dip vs reset) | same |
-| Adjunct-scope `^ … ^` | **No** open/close words; island boundary tags only | [spans.md](../../grammar/spans.md#adjunct-scope-islands) |
+| Adjunct-scope `^ … ^` | **No** open/close words; island boundary tags only | [spans.md](../../grammar/spans.md#scope-islands) |
 
 ### Already speech-shaped
 

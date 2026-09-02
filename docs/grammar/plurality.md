@@ -206,9 +206,8 @@ If the wrong reading would matter, mark it: co-agency with **`aha`** or a join; 
 
 ### Verbs (`/v/`) — collective
 <a id="verbs-v"></a>
-<a id="collective-doing"></a>
 
-On `/v/`, **-sh** marks **collective**: the event is **one shared act**. A plural subject alone leaves that open. Noun **-sh** grows **who** the subject is; verb **-sh** marks **how** the doing is structured. The same “one pile” idea appears as [collective](#collective-ascription) on `/ɡ/`.
+On `/v/`, **-sh** marks **collective**: the event is **one shared act**. A plural subject alone leaves that open. Noun **-sh** grows **who** the subject is; verb **-sh** marks **how** the doing is structured. The same “one pile” idea appears as [collective](#adjectives-g) on `/ɡ/`.
 
 | Shape | Reading |
 |-------|---------|
@@ -229,7 +228,6 @@ Count (*three times*) and habit (*always*) stay clause framing: [numbers](number
 ### Adjectives (`/ɡ/`) — collective
 <a id="adjectives-g"></a>
 <a id="collective"></a>
-<a id="collective-ascription"></a>
 
 On `/ɡ/`, **-sh** marks **collective**: the property holds of the **host set as one unit**.
 

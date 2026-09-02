@@ -8,11 +8,10 @@ Content words that **name a join move** (*include*, *choose*, *without*).
 
 ### Join-act verbs
 <a id="join-act-verbs"></a>
-<a id="verb-join-n"></a>
 
 Use a **join-act** when someone **performs** a coordination move on an object: *include*, *choose*, *exclude*, and the rest of this series.
 
-**Shape:** `/v/` + join vowel + **-n** (`van`, `von`, …). One `/d/` object (one thing or a group). Put ordinary noun **-sh** on the object when the group is associative; verb **-sh** is [collective](plurality.md#collective-doing).
+**Shape:** `/v/` + join vowel + **-n** (`van`, `von`, …). One `/d/` object (one thing or a group). Put ordinary noun **-sh** on the object when the group is associative; verb **-sh** is [collective](plurality.md#verbs-v).
 
 The vowel is the join move; **-n** is join content. That is the **only** place join-word **-n** is not a [proper name](reference-suffix.md#proper-name--n).
 
@@ -28,7 +27,7 @@ gloss: `z-grace` · `d-apple` · `v-includes`
 
 **Related form:** packaging a list uses [joins](coordination.md) (`zal` / `val` / `xal`, …).
 
-These are ordinary content verbs. Sequence of clauses (*and then*) uses clause **sequence** (`xan`, …) on [coordination.md](coordination.md#soft-n-clause). Point back at a join-act you already used with a short resume or a full paraphrase.
+These are ordinary content verbs. Sequence of clauses (*and then*) uses clause **sequence** (`xan`, …) on [coordination.md](coordination.md#sequence). Point back at a join-act you already used with a short resume or a full paraphrase.
 
 | Form | Job | Vowel cue | Example |
 |------|-----|-----------|---------|
@@ -47,7 +46,6 @@ English *refuse* vs *leave out*: `zazawan demadel vun` (*Azawan refuses meat*) v
 
 ### Join-relations
 <a id="join-relations"></a>
-<a id="join-relation-gh"></a>
 
 Use a **join-relation** when a host is **framed** by the same join-series move toward one `/b/` argument: *including nuts*, *without meat*, *prioritizing the bug*.
 

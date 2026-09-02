@@ -11,7 +11,7 @@ Put a number word on a **label**, a **clock or date**, a **unit amount**, a **fr
 
 Write a **code** (phone, room, channel, serial) with marker **`ro`** (written **`_`**). Leave exponents off. Prefer groups of three digits when digits are present.
 
-Ending is usually **-l** (exact label); **-n** for an official designation; **-r** to resume a prior code. Digitless `d=_` / `g=_` and [digitless](numbers.md#zero-digit-groups) `…_` mean *some code* / an unspecified label. Digit-strings take no plus or minus: see [Sign](numbers.md#sign).
+Ending is usually **-l** (exact label); **-n** for an official designation; **-r** to resume a prior code. Digitless `d=_` / `g=_` and [digitless](numbers.md#digitless) `…_` mean *some code* / an unspecified label. Digit-strings take no plus or minus: see [Sign](numbers.md#sign).
 
 Bare `/h/` + **`ro`** is [clock or calendar](#time) (`h_15,30`, `h_#22,7,2026`, digitless `h_`). For a non-time code as a when-frame, use a host relation + `/b/` (`/h/` *on* + `b_7` *channel 7*), or put `/ɡ/` on a noun.
 
@@ -30,14 +30,13 @@ Clock and calendar use the same number grammar as other digit-strings. **Bare `/
 
 A count of minutes on a clock face is still a digit-string (`h_15,30`), not a scalar packed as one integer. `h+3` is ×3 / *three times*; `h#3` is *for the third time*. Timezone, era, and calendar system are ordinary lexicon `/h/` beside the number word.
 
-Endings: **-l** exact; **-m** fuzzy (*around 15:30*); **-n** conventional schedule or date name; **-r** resume a prior clock or date (digitless `h=_` = *that time/date again*). Digitless `h_` is not restrictor **`har`** (*sometime*): see [digitless](numbers.md#zero-digit-groups).
+Endings: **-l** exact; **-m** fuzzy (*around 15:30*); **-n** conventional schedule or date name; **-r** resume a prior clock or date (digitless `h=_` = *that time/date again*). Digitless `h_` is not restrictor **`har`** (*sometime*): see [digitless](numbers.md#digitless).
 
 ### Measure phrases
 <a id="measure-phrases"></a>
 <a id="units"></a>
 <a id="unit-amount"></a>
 <a id="si-units"></a>
-<a id="measure-hosts"></a>
 
 A **measure** is a lexicon **unit** noun plus a scalar **amount** on that unit.
 
@@ -52,7 +51,6 @@ A **measure** is a lexicon **unit** noun plus a scalar **amount** on that unit.
 Same endings and fuzzy **-m** habits as other number words on the amount (`g~+2` ≈ *about two*). The **unit** is ordinary lexicon (reference suffixes as usual).
 
 #### Bare unit vs titled unit (`x+1`)
-<a id="bare-vs-unit-morph"></a>
 <a id="unit-short-form"></a>
 
 Measure phrases use **published metaphorical roots** (dimension / quantity metaphors). Speech uses those roots, not Latin-style abbreviations (`m`, `kg`, `s`, …).
@@ -68,7 +66,7 @@ Spelled **`…xrawol`** / **`…xrawon`**: [numeric derivation](numeric-derivati
 **Bare is enough** when the measure reading is clear (`bojorol g+70` ≈ *70 grams*). Use **`…x+1`** when the same root is also active as a quality or continuum (*how heavy*, *passage of time*, *heat*) and the unit reading must stay distinct: same habit as normative Mine **`zugoboxrawon`** vs performance **`zugobon`** ([comparatives](comparatives.md#judgment-benchmarks)).
 
 #### Stock units
-<a id="stock-measure-hosts"></a>
+<a id="stock-units"></a>
 
 | SI / everyday unit | Unit (metaphor) | Bare measure | Titled unit |
 |--------------------|-----------------|--------------|-------------|

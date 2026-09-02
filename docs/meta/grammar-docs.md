@@ -183,11 +183,11 @@ Do **not** assume the reader knows linguistics jargon. Write for a motivated lea
 | Prefer everyday English for the job (*statement*, *ask*, *main clause*, *at the end of…*) | Lead with bare terms like *assertoric*, *illocution*, *matrix-final*, *predicative*, *prosody*, *paradigm* |
 | If a short technical label helps later cross-links, **define it in the same breath** on first use | Use the label alone and hope context teaches it |
 | Keep Agalan-invented labels that the page is teaching (`speech act`, *turn* vs *continue*) and gloss them once | Stack several undefined jargon words in one sentence |
-| School-grammar words (*subject*, *direct object*, *adverb*) are fine when the English job is clear | Pack morphosyntax shorthand (*zero-copula*, *right-bound*, *adjunct*, *complement clause*) without a plain gloss |
+| School-grammar words (*subject*, *direct object*, *adverb*) are fine when the English job is clear | Pack morphosyntax shorthand (*classification* without *is a kind*, *right-bound*, *adjunct*, *complement clause*) without a plain gloss |
 
 **Test:** would a careful reader who never took a linguistics class still get the rule from the first paragraph and the example? If not, rewrite the lead in plain words and demote the technical term to a parenthetical or a later Intermediate note.
 
-Section ids should match the **current** ordinary name (`speech-act`). A silent extra id on the same heading is fine until an editor pass removes it; do not mention the old fragment in prose.
+Section ids should match the **current** ordinary name (`speech-act`). One canonical id per concept; do not keep silent aliases.
 
 ## Examples
 

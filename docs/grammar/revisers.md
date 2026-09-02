@@ -96,7 +96,6 @@ Every reviser takes **-l**, **-m**, or **-n**. When unsure between closed and op
 
 ### Discourse shape (starter)
 <a id="discourse-revisers"></a>
-<a id="discourse-glue"></a>
 
 A discourse reviser glues **this utterance** to **prior talk**. Prior talk is A; this move is B.
 

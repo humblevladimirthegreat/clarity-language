@@ -118,7 +118,6 @@ Because `/h/` talks about the sentence’s verb, **you may place it anywhere in 
 
 ### Complex adjectives, complex adverbs, and extra nouns
 <a id="extra-nouns"></a>
-<a id="complex-adjectives-complex-adverbs-and-argument-nouns"></a>
 
 A **complex** adjective or adverb needs an extra participant: the `/ɡ/` or `/h/` word plus an **extra noun** (`/b/`) right after it. The root names the relation; `/b/` only marks “noun of that word.”
 
@@ -159,7 +158,6 @@ When the act word is written, it closes the opener. A new `/j/` turn starts a ne
 Bare vocatives and exclamations with no sentence body use `/j/` without a written act word (a firm *yes* / *no* **-l** still implies statement **`jal`** when a body follows).
 
 #### Speech act
-<a id="clause-force-beginner"></a>
 <a id="speech-act-beginner"></a>
 
 Every utterance has exactly one **speech act**: the setting (statement, question, command, …). Default statement **`jal`** may be **left out** when recoverable (above). Other settings write a `/j/` act word **last** in the left-edge cluster, before the body.
@@ -367,7 +365,6 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 <a id="intermediate"></a>
 
 ### Speech act
-<a id="clause-force"></a>
 <a id="speech-act"></a>
 
 Every utterance has exactly one **speech act** (written `/j/` or implied **`jal`** / **`jam`**). Shape is **`j` + vowel + ending`**: the vowel picks the speech-act family; **-l** = firm / closed; **-m** = soft / open. Non-default speech acts are **written**; default statement **`jal`** may be omitted under the Beginner rules.
@@ -406,7 +403,6 @@ The package is the same as after-the-noun order: plain `/ɡ/`, or complex `/ɡ/`
 
 ### As-for and free-order ties
 <a id="as-for"></a>
-<a id="adverb-topic-and-free-order-ties"></a>
 
 **As-for** (*as for X*, *regarding X*) is complex `/h/` + `/b/` naming that noun. Published **`ahaza`** is the dedicated root: `hahazal bazawan` = *as for Azawan*. Highlight prominence by rearranging free word order (and ordinary *very*-type words if needed). Values **topic** (a need named with no `x`) is a different job: [values.md](values.md).
 
