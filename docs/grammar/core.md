@@ -208,7 +208,7 @@ gloss: `z-Azawan` · `d-Ululon` · `v-tell` · `d-next-clause`
 *Azawan tells Ululon that…* (dependent sentence follows immediately)
 ```
 
-**Because / if / …** = `/h/` relation + `/b/` **`adoro`** (together, last in the main sentence). Overlay ending is always **-m** (metaphorical sense).
+**Because / if / …** = `/h/` relation + `/b/` **`adoro`** (together, last in the main sentence). The metaphorical ending is always **-m**.
 
 | English | Form | Lexicon | Metaphor |
 |---------|------|---------|----------|

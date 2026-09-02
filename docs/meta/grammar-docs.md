@@ -23,16 +23,18 @@ Related meta:
 Each grammar page is both **source of truth** for its subsystem and **learner text**. Prefer teach-first structure over inventory-first dumps in **Beginner**. **Advanced may be inventory-first**; if Advanced dwarfs Beginner, split the file. Unassigned or unused-slot inventory stays in [unassigned-reserved.md](unassigned-reserved.md); rejected or speculative features stay in [TODO.md](../../TODO.md) — never in a grammar page appendix. Grammar pages teach **assigned readings only**. Do not ship a form as “reserved,” “not used,” or “or reserved,” and do not keep a **Reserved forms** heading whose job is to fence unused phonotactics. *This spelling already has job X* (e.g. a time-code host) is a positive rule — say the job, not “reserved.” If the learner must not build a shape, omit it; if they might invent it *now*, one [Compare with](#compare-with) sentence is enough — never a leftover-slot inventory.
 
 ## Present the current language only
+<a id="present-the-current-language-only"></a>
 
-Write as if this is the only version the reader will ever see.
+Write as if this is the only version of Agalan the reader will ever see. There is **no** backwards-compatibility duty in grammar docs: not for English labels, not for Agalan spellings, not for HTML ids.
 
 | Do | Don’t |
 |----|--------|
 | State the rule as it is now | Mention prior wordings, renamed labels, or “used to be called…” |
-| Use the current term once, clearly | Add redirects for superseded names |
-| Fix outdated prose in place | Leave “correction trails” that only make sense to editors |
+| Use the current term and the **current published spelling** | Keep a superseded root, hyphenated PoS, or dual spelling “so old links work” |
+| Put the section id on the **current** English name; retarget in-repo links in the same edit | Silent alias ids (`clause-force` next to `speech-act`) or redirects for old fragments |
+| Fix outdated prose in place | Leave “correction trails,” changelogs, or former-name parentheticals |
 
-The learner should never need the editing history of the docs.
+The learner should never need the editing history of the docs or of the lexicon.
 
 ## No process or corrective leftover
 
@@ -185,7 +187,7 @@ Do **not** assume the reader knows linguistics jargon. Write for a motivated lea
 
 **Test:** would a careful reader who never took a linguistics class still get the rule from the first paragraph and the example? If not, rewrite the lead in plain words and demote the technical term to a parenthetical or a later Intermediate note.
 
-Stable section ids and cross-doc anchor names may keep older technical wording (`matrix-final`, `clause-force`); the **prose the learner reads** still has to explain the idea in ordinary English.
+Section ids follow the **current** ordinary name (`speech-act`, not `clause-force`). If a heading’s English name changes, change the id and every in-repo link in the same edit.
 
 ## Examples
 

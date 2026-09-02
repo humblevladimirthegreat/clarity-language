@@ -104,7 +104,7 @@ Vague degree stays `/w/` on the scale (`zel wogegal gomonum …`) with no unit. 
 <a id="from-to"></a>
 <a id="shared-continuum"></a>
 
-A **span** is two number words inside a [phrase fence](coordination.md), plus a **SHARED continuum** `/ɡ/` naming the line (time, price, measure, …). That `/ɡ/` is the same SHARED slot [comparatives](comparatives.md) use, but here it names a **dimension / quantity continuum**, not an entity-ranking scale. Fence join vowels, endings, revision, and **-r** follow coordination; the continuum is what makes the fence a numeric span.
+A **range** is two number words inside a [phrase fence](coordination.md), plus a **SHARED continuum** `/ɡ/` naming the line (time, price, measure, …). That `/ɡ/` is the same SHARED slot [comparatives](comparatives.md) use, but here it names a **dimension / quantity continuum**, not an entity-ranking scale. Fence join vowels, endings, revision, and **-r** follow coordination; the continuum is what makes the fence a range.
 
 **All three together:**
 
@@ -123,17 +123,17 @@ Without the SHARED continuum, two number conjuncts are **ordinary coordination**
 | **`ue`** | `z+5 z+3 zuel gumedul` | directed reverse path on time (spoken order = path; here *from 5 to 3*) |
 | **`ua`** | `z+3 z+5 zual gumedul` | *outside 3–5* on time (complement on the line) |
 
-Menu joins **`o`** / **`ao`** stay discrete (*3 or 5* / *3 and/or 5*). Equative **`ae`** with numbers is *equal* / *approximately equal* (`z+5 z+5 zael` / `z+3 z+5 zaem`); it is not a span. Exclusive ranked **`oe`** stays superlative / empty-superlative with a scale.
+Menu joins **`o`** / **`ao`** stay discrete (*3 or 5* / *3 and/or 5*). Equative **`ae`** with numbers is *equal* / *approximately equal* (`z+5 z+5 zael` / `z+3 z+5 zaem`); it is not a range. Exclusive ranked **`oe`** stays superlative / empty-superlative with a scale.
 
 Three or more number conjuncts under **`a`** stay an ordinary list (`zal z+1 z+3 z+7` = *1, 3, and 7*), even with SHARED. Single-item **`zal z+3`** stays *just 3*, not a ray. Single-item **ranked** with a number is a [threshold](#numeric-thresholds).
 
-**Comparatives vs spans:** `zazawan zululon zel gomonum` = *Azawan is more challenging than Ululon* (SHARED **scale**, people as conjuncts). `z+3 z+5 zel gumedul` = *from 3 to 5 on time* (SHARED **continuum**, number endpoints). Bare `z+3 z+5 zel` = prefer 3 over 5.
+**Comparatives vs ranges:** `zazawan zululon zel gomonum` = *Azawan is more challenging than Ululon* (SHARED **scale**, people as conjuncts). `z+3 z+5 zel gumedul` = *from 3 to 5 on time* (SHARED **continuum**, number endpoints). Bare `z+3 z+5 zel` = prefer 3 over 5.
 
 #### Thresholds (single-item ranked)
 <a id="numeric-thresholds"></a>
 <a id="greater-less-than"></a>
 
-When the **only** member of a [rank join](coordination.md#ranked-conjunction-e) fence (**`e`** / **`ue`**, and their open / named twins) is a **compatible number word**, that number is an **extremum on the line**: a bound, not “only this value matters,” and not a two-endpoint [span](#ranges). SHARED continuum is **optional** on thresholds: absent = implicit / contextual numeric line; present = that named line (`z+5 zel gumedul` = *time \< 5*). Special values such as +∞ use [digitless exponents](numbers.md#digitless-exponents) inside the number word (`g+e`).
+When the **only** member of a [rank join](coordination.md#ranked-conjunction-e) fence (**`e`** / **`ue`**, and their open / named twins) is a **compatible number word**, that number is an **extremum on the line**: a bound, not “only this value matters,” and not a two-endpoint [range](#ranges). SHARED continuum is **optional** on thresholds: absent = implicit / contextual numeric line; present = that named line (`z+5 zel gumedul` = *time \< 5*). Special values such as +∞ use [digitless exponents](numbers.md#digitless-exponents) inside the number word (`g+e`).
 
 | Form | Reading | Mnemonic |
 |------|--------|----------|
@@ -147,11 +147,11 @@ When the **only** member of a [rank join](coordination.md#ranked-conjunction-e) 
 
 Same under `/d/` `/b/` `/ɡ/` (`gel g+5` = modifier *\<5*; `duel d+10` = object *\>10*). **`ae`** / **`oe`** single-item with a number stay ordinary ranked single-item / triage. Boolean single-item (**`zal`** / **`zol`** / …) is ordinary *just this value*. Single-item **`zel z+`** (zero-group) is ordinary single-item on plural/unspecified amount; +∞ is **`z+e`** / **`g+e`**.
 
-**Inclusive bounds:** default is **strict** (`<` / `>`). For **≤ 5** / **≥ 5**, use a two-endpoint [span](#ranges) with the bound included. Exclusive-high **`ul`** stays a two-side span tool (`z+3 ul z+5 zal gurelul`).
+**Inclusive bounds:** default is **strict** (`<` / `>`). For **≤ 5** / **≥ 5**, use a two-endpoint [range](#ranges) with the bound included. Exclusive-high **`ul`** stays a two-side range tool (`z+3 ul z+5 zal gurelul`).
 
 **Unspecified in a threshold:** standalone **`e`** + **-r** = unspecified member of the *\< X* ray (`zer z+5` → *some/whatever value \< 5*; under question → *which value \< 5?*). **`ue`** takes no **-r** (stacked forms never do: [coordination](coordination.md#unspecified-member-r-phrase)). For an unspecified value *\> 5*, use other wording.
 
-`z+3 z+5 zel gumedul` = *from 3 to 5 on time* (span); `z+3 z+5 zel` = *3 ≻ 5* (preference); `z+5 zel` = *\< 5* (single-item threshold). `zazawan zel` (a person, not a number) stays ordinary *only Azawan matters* / [superlative-with-scale](comparatives.md). A **single-item number conjunct** triggers the threshold reading when the number is a bound (typically digitful).
+`z+3 z+5 zel gumedul` = *from 3 to 5 on time* (range); `z+3 z+5 zel` = *3 ≻ 5* (preference); `z+5 zel` = *\< 5* (single-item threshold). `zazawan zel` (a person, not a number) stays ordinary *only Azawan matters* / [superlative-with-scale](comparatives.md). A **single-item number conjunct** triggers the threshold reading when the number is a bound (typically digitful).
 
 #### Half-open (exclude the high end only)
 
@@ -165,11 +165,11 @@ Same under `/d/` `/b/` `/ɡ/` (`gel g+5` = modifier *\<5*; `duel d+10` = object 
 
 The low endpoint stays inclusive. The exclusive high is **only** this in-range `ul` shape. Open **`um`** on the high end = soft / non-exhaustive exclusion of that bound (rare). Other revision vowels (**`al`** / **`el`** / **`ol`**) are not range-bound markers.
 
-Fence **-l** / **-m** / **-n** keep ordinary closed / open / named senses on the span (*exactly this band* / *around this band* / *the teens*-style label). Endpoint [number endings](numbers.md#number-endings) still apply (**-m** ≈ fuzzy that bound).
+Fence **-l** / **-m** / **-n** keep ordinary closed / open / named senses on the range (*exactly this band* / *around this band* / *the teens*-style label). Endpoint [number endings](numbers.md#number-endings) still apply (**-m** ≈ fuzzy that bound).
 
-#### Unspecified value in the span (**-r**)
+#### Unspecified value in the range (**-r**)
 
-Fence **-r** on a number-range shape (still with SHARED continuum) = an **unspecified member of the span** (not content-word anaphor **-r**, and not a discrete *something among two listed values*):
+Fence **-r** on a number-range shape (still with SHARED continuum) = an **unspecified member of the range** (not content-word anaphor **-r**, and not a discrete *something among two listed values*):
 
 | Form | Reading |
 |------|--------|
@@ -177,11 +177,11 @@ Fence **-r** on a number-range shape (still with SHARED continuum) = an **unspec
 | `zar gurelul z+3 ul z+5` | *some value in [3, 5)* |
 | `zor gurelul z+3 z+5` | *any value in [3, 5]* (free-choice) |
 | `zer gurelul z+3 z+5` | *whatever-by-rank in [3, 5]* |
-| `zur gurelul z+3 z+5` | *some value other than (in) [3, 5]* (other-than the span) |
+| `zur gurelul z+3 z+5` | *some value other than (in) [3, 5]* (other-than the range) |
 
 Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which value in 3–5?*). Same under `/d/` `/b/` / `/ɡ/` as the slot needs (`g+3 g+5 gal gumedul` = modifier *times 3–5*; `d+10 ul d+20 dar gurelul` = object *some value in [10, 20)*).
 
-**Clock / date spans:** prefer SHARED continuum **`gumedul`** (or a host relation + `/b/`) with digit-string endpoints (`bal gumedul b_15,00 b_16,00`). Circumstance **`hal`** is [applicability](restrictors.md), not a time-span fence.
+**Clock / date ranges:** prefer SHARED continuum **`gumedul`** (or a host relation + `/b/`) with digit-string endpoints (`bal gumedul b_15,00 b_16,00`). Circumstance **`hal`** is [applicability](restrictors.md), not a clock/date range fence.
 
 Examples: `z+3 z+5 zal gumedul` → *between times 3 and 5*; `zuguhul g+3 g+5 gal gumedul` → *children times 3–5*; `z+3 ul z+5 zal gurelul` → *[3, 5)*; `z+10 z+20 zel gumedul` → *from time 10 to 20*; `z+3 z+5 zel` → *3 ≻ 5* (preference); `z+5 zel` → *\< 5*; `z+5 zuel` → *\> 5*; `z+5 z+5 zael` → *equally 5*; `z+3 z+5 zaem` → *3 and 5 approximately equal*; `z+3 z+5 zar gurelul` → *some value in 3–5*; `z+3 z+5 zol` → *3 or 5* (discrete).
 
@@ -237,7 +237,7 @@ The noun names the reference class; **`jo`** grades how much of that class. Same
 
 When the whole is not the modified head, use a complex `/ɡ/` or `/h/` *of* / *out of* (lexicon relation) + `/b/` whole, with the percent elsewhere in the clause as needed. Numbers take no `/w/` and no open arguments.
 
-**`…ju`** point amounts, `from A% to B%` [spans](#ranges), factor change (`/h/` **`h+…`**), *top / bottom N%* rank bands, and *N% done* all take their “whole” from context or a separately named class: they do not need a portion-whole packed into the number word.
+**`…ju`** point amounts, `from A% to B%` [ranges](#ranges), factor change (`/h/` **`h+…`**), *top / bottom N%* rank bands, and *N% done* all take their “whole” from context or a separately named class: they do not need a portion-whole packed into the number word.
 
 A bare `/z/` (or other freestanding) **`…jo`** percent with no named whole is grammatical; prefer an explicit whole (*percent of what*). Bare **`…ju`** point amounts are fine when the percent-scale quantity being moved is already clear.
 

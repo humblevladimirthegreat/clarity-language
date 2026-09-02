@@ -218,7 +218,7 @@ main sentence …  hadorom / hezazem / hurugum  badorol   [dependent sentence]
 | **`IFF`** (marked) | **`ezaze`** | ↔️ *left-right* → *reciprocity* | both ways: dependent and main sentence stand or fall together | sufficient **and** necessary |
 | **`BECAUSE`** | **`urugu`** | 🧱 *brick* → *foundation* | asserted explanation: the reason the main sentence rests on | explanation |
 
-**Ending:** clause-pole overlays always take **-m** (metaphorical published sense): **`hadorom`** / **`hezazem`** / **`hurugum`**. Ordinary literal content on the same roots still uses ordinary endings (`zadorol` *a door*; `zezazel` *reciprocity*; `zurugul` *a brick*).
+**Ending:** clause poles always take **-m** (metaphorical published sense): **`hadorom`** / **`hezazem`** / **`hurugum`**. Ordinary literal content on the same roots still uses ordinary endings (`zadorol` *a door*; `zezazel` *reciprocity*; `zurugul` *a brick*).
 
 Bare **`IF`** (`hadorom`) is one-way only.
 
@@ -255,7 +255,7 @@ Open sufficient vs necessary uses the same joins and restrictors (`hal`, …) yo
 
 Mark a clause as **mechanism-framed** (*how the gears engage*) with one closed mood root.
 
-**Shape:** floating **`/h/`** mood **`egega`** ⚙️ *gear* → *mechanism* (optional `/w/` when scoped only to a preceding `/ɡ/`). Prefer floating `/h/`. Ending = **-m** only (metaphorical overlay): **`hegegam`**. Ordinary content still available (`zegegal` *a gear*; `vegegal` *to mesh / engage*).
+**Shape:** floating **`/h/`** mood **`egega`** ⚙️ *gear* → *mechanism* (optional `/w/` when scoped only to a preceding `/ɡ/`). Prefer floating `/h/`. Ending = **-m** only (metaphorical): **`hegegam`**. Ordinary content still available (`zegegal` *a gear*; `vegegal` *to mesh / engage*).
 
 ```
 `haon beladel hegegam.`
@@ -502,7 +502,7 @@ Show a causal “law” with evidentiality and universality. Mechanism highlight
 
 Discourse *however* / *meanwhile* are `/x/` linkers. Subordinating **`hezebam`** / **`hegemum`** stay *although* / *meanwhile-as-dependent*.
 
-Clause-pole overlays stay **-m** (`hadorom` / `hezazem` / `hurugum`, and the same **-m** on *although* / *while* / *until* / *before* / *after*).
+Clause poles stay **-m** (`hadorom` / `hezazem` / `hurugum`, and the same **-m** on *although* / *while* / *until* / *before* / *after*).
 
 ### Translation practice
 <a id="translation-practice-advanced"></a>

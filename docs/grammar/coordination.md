@@ -564,7 +564,7 @@ Modifiers that sit **immediately after** a phrase-level join describe the **whol
 | **ae** + gradable `/ɡ/` | [equative](comparatives.md#equatives) scale |
 | **e** / **oe** / **ue** on NP | [comparison scale](comparatives.md) |
 | **ua** / **uo** | kind / domain for universals |
-| **a** / **e** / **ue** / **ua** + two number endpoints | [numeric span](numbers.md#ranges) with continuum `/ɡ/` |
+| **a** / **e** / **ue** / **ua** + two number endpoints | [range](numbers-applied.md#ranges) with continuum `/ɡ/` |
 
 Local modifiers stay **inside** each item (after that item's head, or `gl-` before the head). Further matching-role heads belong *before* the join, not after `P-JOIN` / `SHARED`.
 

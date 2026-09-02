@@ -270,7 +270,7 @@ Use NOTIONAL when the clause is **framed as pretensive, for-the-sake-of-argument
 
 **For *I think / I imagine*, use:** [COMMENT](#comment).
 
-**Related form:** imaginary *amount* uses free number overlays in [numbers.md](numbers.md#imaginary).
+**Related form:** imaginary *amount* uses free number as verb / adverb / interjection / discourse in [numbers.md](numbers.md#imaginary).
 
 #### Hold endings (NOTIONAL)
 <a id="notional-hold"></a>

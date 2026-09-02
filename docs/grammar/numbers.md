@@ -190,11 +190,11 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 ## Intermediate
 <a id="intermediate"></a>
 
-Word shape, other prefixes, overlays, writing marks, and style.
+Word shape, other prefixes, number as verb / adverb / interjection / discourse, writing marks, and style.
 
 ### Word shape
 
-Speech always uses one full CV word. You already know PoS + marker + digits + ending. Intermediate fills in the other markers, exponents (the *order of magnitude* piece before the ordinary digits, called the **mantissa**), endings, and overlays.
+Speech always uses one full CV word. You already know PoS + marker + digits + ending. Intermediate fills in the other markers, exponents (the *order of magnitude* piece before the ordinary digits, called the **mantissa**), endings, and number as verb / adverb / interjection / discourse.
 
 ```
 [PoS] + r + V + ( [exponent?] [mantissa digits?] )* + [ending]
@@ -212,7 +212,7 @@ Speech always uses one full CV word. You already know PoS + marker + digits + en
 ### Parts of speech on numbers
 <a id="parts-of-speech-on-numbers"></a>
 
-The number word takes whichever PoS prefix the role needs. Referential prefixes (`/ɡ/`, `/z/`, `/d/`, `/b/`) use the marker as-is; PoS only chooses the slot. Verb / adverb / interjection / discourse overlays are [below](#number-overlays).
+The number word takes whichever PoS prefix the role needs. Referential prefixes (`/ɡ/`, `/z/`, `/d/`, `/b/`) use the marker as-is; PoS only chooses the slot. Number as verb / adverb / interjection / discourse is [below](#number-overlays).
 
 | Prefix | Role with a number |
 |--------|--------------------|
@@ -284,9 +284,9 @@ Noun [**-sh**](plurality.md) marks that a **referent is a group** (indefinite gr
 
 Phrase **`zar`** / **`zor`** / … pick an unspecified **member of an inventory**. Digitless number **-r** resumes a **prior numeric value**. Digitless number **-l** (etc.) introduces an unspecified magnitude of that marker.
 
-**Overlays** inherit the same emptiness (marker identity → role reading, payload unspecified):
+`/v/` `/h/` `/j/` `/x/` inherit the same emptiness (marker identity → role reading, payload unspecified):
 
-| Overlay | Digitless examples |
+| Prefix | Digitless examples |
 |---------|-------------------|
 | `/ɡ/` `/z/` `/d/` `/b/` | `g+` *plural / more than one* (on a noun); `z-` *some negative amount* (subj); `b#` *of some rank*; `b#-` *of some end-relative rank*; `d_` *some code* (obj) |
 | `/v/` | Unspecified amount under the verb sense: **`v+`** *increase*; **`v-`** *decrease*; **`v#`** *take / assign some rank*; **`v#-`** *take some end-relative place*; **`v_`** *enter / dial some code*. Soft: **`v~+`** *increase a bit*; **`v~-`** *decrease a bit* |
@@ -386,10 +386,11 @@ Prefer shorthand in free slots. Speech is always the full CV form.
 
 Full inventory tables: [examples](#examples).
 
-### Overlay roles (`/v/` `/h/` `/j/` `/x/`)
+### Number as verb / adverb / interjection / discourse
 <a id="number-overlays"></a>
+<a id="number-as-roles"></a>
 
-Overlay prefixes keep marker identity but add a role-specific reading. Referential prefixes (`/ɡ/` `/z/` `/d/` `/b/`) use the marker as-is — [marker vowel](#marker-vowel-referential-identity).
+`/v/` `/h/` `/j/` `/x/` keep marker identity but add a role-specific reading. Referential prefixes (`/ɡ/` `/z/` `/d/` `/b/`) use the marker as-is — [marker vowel](#marker-vowel-referential-identity).
 
 #### Number as verb (by marker)
 <a id="number-as-verb-by-marker"></a>
@@ -489,7 +490,7 @@ Endings still apply (**-l** newly stated item, **-r** *as in (N) above* or digit
 
 Same under `/z/` `/d/` `/b/`. Soft **`g~+e3`** ≈ *about in the thousands band*. Exact count inside a band uses a mantissa (`g+4e3` = 4000), not bare OoM.
 
-**Overlays** inherit the band as the verb/adverb magnitude: **`v+e3`** *increase by a thousands-band amount*; **`h+e0`** *× a ones-band factor*; **`j+e3`** *Thousands!* (band cheer).
+`/v/` `/h/` `/j/` inherit the band as the verb/adverb magnitude: **`v+e3`** *increase by a thousands-band amount*; **`h+e0`** *× a ones-band factor*; **`j+e3`** *Thousands!* (band cheer).
 
 
 ### From the end — end-relative ordinal marker **`#-`** / **`eu`**
@@ -511,7 +512,7 @@ Same under `/z/` `/d/` `/b/`. Soft **`g~+e3`** ≈ *about in the thousands band*
 
 `g#2` = numbered *2nd* (from the start); `g#-2` = *2nd from the end*; `g#e` = last as landmark; `g#e-` = start landmark (no mantissa). *Hyperbole* is [gazillion](#hyperbole-gazillion); *generation* is [ordinal generation](#ordinal-generation).
 
-**Overlays** inherit:
+`/v/` `/h/` `/j/` `/x/` inherit:
 
 | Form | Reading |
 |------|---------|
@@ -553,7 +554,7 @@ On forward **`#`** / **`re`** and end-relative **`#-`** / **`reu`**, a **digitfu
 
 Landmarks **`g#e`** / **`g#e-`** (no mantissa) are telos / origin of the axis. Hyperbole **`g#1e`** / **`g#1e-`** is [hyperbole](#hyperbole-gazillion). Rank wiped is [**`g#0e`**](#rank-annihilated). Grandparent-style generation uses **`g#e-2`** / **`g#1e-2`**. Engineering null is scalar **`g+0e-1`**.
 
-**Overlays:** `/x/` treats generation as **agenda nesting** (`x#3e2` = *3rd sub-sub-point under the focus*; **`x#e0`** = *current-layer item(s)* / assert this outline level). `/h/` / `/v/` / `/j/` inherit the same product (*for the 3rd time in gen +2*, *place 3rd in gen +2*, …) when the series is generation-structured; flat event counts stay **`h#N`**.
+**Number as discourse:** `/x/` treats generation as **agenda nesting** (`x#3e2` = *3rd sub-sub-point under the focus*; **`x#e0`** = *current-layer item(s)* / assert this outline level). `/h/` / `/v/` / `/j/` inherit the same product (*for the 3rd time in gen +2*, *place 3rd in gen +2*, …) when the series is generation-structured; flat event counts stay **`h#N`**.
 
 **Derivation:** free generation is series-relative. Kind morphs keep digitless **`ROOTx#e-`** / **`ROOTx#e`** as origin / telos of the **kind** ([numeric-derivation.md](numeric-derivation.md#ordinal-digit-morphs)).
 
@@ -751,7 +752,7 @@ In a sentence, the PoS attaches to that single number word (see [Parts of speech
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills on this Intermediate band. Try each item before opening **Show answer**. Prefer shorthand (`g~+3`, `g#-2`, `h_15,30`). Sample PoS, endings, digitless overlays, and **one** time reading — not the whole inventory.
+Short drills on this Intermediate band. Try each item before opening **Show answer**. Prefer shorthand (`g~+3`, `g#-2`, `h_15,30`). Sample PoS, endings, digitless number as verb / adverb / interjection / discourse, and **one** time reading — not the whole inventory.
 
 **Roots used here:** `azawa` / `ululo` / `uhubu` · `agada` *cat* · `abogo` *book* · `ohohu` *house* · `elulu` *blue* · `awala` *walk* · `elebe` *sleep* · `eje` *see*
 
@@ -922,7 +923,7 @@ Same under `/z/` `/d/` `/b/` (`z+e` = +∞ as subject; `d#e-` = start-place as o
 
 **Notional / imaginary (`g-e-`):** negative marker (**`ru`**) + digitless negative exponent (**`bu`∅), no mantissa. Completes the scalar special grid. Reading is **metaphorical**: a magnitude named *as if* it counted, without entering the real tally.
 
-**Psychological as-if** (clause framed as pretensive / mind-only, with flexibility hold endings) uses spelled mood **`ahade`** ([commentary.md § Notional](commentary.md#notional), e.g. `hahadem`). Free **`grubul`** / **`xrubul`** / **`hrubul`** / **`vrubul`** / **`jrubul`** stay amount, discourse *imagine that:*, manner *as if*, verb *notionalize*, and cheer overlays on the number grid.
+**Psychological as-if** (clause framed as pretensive / mind-only, with flexibility hold endings) uses spelled mood **`ahade`** ([commentary.md § Notional](commentary.md#notional), e.g. `hahadem`). Free **`grubul`** / **`xrubul`** / **`hrubul`** / **`vrubul`** / **`jrubul`** stay amount, discourse *imagine that:*, manner *as if*, verb *notionalize*, and cheer as interjection on the number grid.
 
 **Endings** (no-mantissa specials):
 
@@ -934,7 +935,7 @@ Same under `/z/` `/d/` `/b/` (`z+e` = +∞ as subject; `d#e-` = start-place as o
 | **-n** | Proper / conventional designation of that special (named ∞ symbol, official *last place* / *starting* title, conventional *imaginary* label, …) |
 | **-r** | Resume a prior special value of that marker+exp polarity (`g=+e` = *that +∞ again*; `g=+e-` = *that start/small again*; `g=-e-` = *that notional amount again*) |
 
-##### Overlay `/v/` and `/h/`
+##### Number as verb and adverb
 
 No-mantissa digitless-exp under `/v/` and `/h/` inherit special-value identity (∞ / last / start / micro) into the verb or adverb role. Soft **-m** parallels referential softs (*a lot but finite* / *near last* / …).
 
@@ -971,7 +972,7 @@ No-mantissa digitless-exp under `/v/` and `/h/` inherit special-value identity (
 
 Soft/named/resume endings (**`~`** / **`@`** / **`=`**) apply as on other specials.
 
-##### Overlay `/j/`
+##### Number as interjection
 
 No-mantissa digitless-exp under `/j/` (interjection cheers):
 
@@ -986,7 +987,7 @@ No-mantissa digitless-exp under `/j/` (interjection cheers):
 | **`j-e-`** | *As if!* / *Imagine!* / *In theory!* (notional cheer) |
 | **`j~-e-`** | soft *as if!* / hedged imagine-cheer |
 
-##### Overlay `/x/`
+##### Number as discourse
 
 Under `/x/`, **last-place** **`x#e`** (and **`x~#e`** / **`x@#e`** / **`x=#e`**) = discourse *Finally* / last point, and **start-place** **`x#e-`** (and **`x~#e-`** / **`x@#e-`** / **`x=#e-`**) = discourse *Starting with:* / beginning. See [Number as discourse marker](#number-as-discourse-marker-by-marker). End-relative discourse points use **`x#-N`**. **Notional discourse:** **`x-e-`** = *imagine that:* / notional agenda point (side-track). Soft **`x~-e-`**; named **`x@-e-`**; resume **`x=-e-`**. Corroborating stays **`x+`**; independent stays **`x-`**.
 
@@ -1016,7 +1017,7 @@ Same under `/z/` `/d/` `/b/` (`z+0e` = absolute-zero as subject; `z+0e-1` = deci
 
 **Scalars only for `±0e-1`:** engineering scale-null is **`ra` / `ru`**. On ordinals, digitful exp is [generation](#ordinal-generation) (`g#0e-1` ≠ engineering; **`g#e0`** = current generation). Ordinal zero×digitless **`g#0e`** = [rank annihilated](#rank-annihilated) below.
 
-##### Overlay `/v/` and `/h/`
+##### Number as verb and adverb
 
 | Form | Reading |
 |------|---------|
@@ -1032,9 +1033,9 @@ Same under `/z/` `/d/` `/b/` (`z+0e` = absolute-zero as subject; `z+0e-1` = deci
 | **`h-0e`** | with irreducible residual repetition |
 | **`h-0e-1`** | residual repetition **at OoM −1** |
 
-Ones-band / assert-`e0` overlays are ordinary bare OoM / **`Ne0`** (**`v+e0`**, **`h+3e0`**, …): [Bare OoM](#bare-oom-bands) / [Ambient](#ambient-scale). Soft **-m** hedges (*almost annihilate*, *almost deci-null*, …).
+Ones-band / assert-`e0` as verb / adverb / interjection / discourse are ordinary bare OoM / **`Ne0`** (**`v+e0`**, **`h+3e0`**, …): [Bare OoM](#bare-oom-bands) / [Ambient](#ambient-scale). Soft **-m** hedges (*almost annihilate*, *almost deci-null*, …).
 
-##### Overlay `/j/`
+##### Number as interjection
 
 | Form | Reading |
 |------|---------|
@@ -1046,7 +1047,7 @@ Ones-band / assert-`e0` overlays are ordinary bare OoM / **`Ne0`** (**`v+e0`**, 
 
 **`j+e0`** = ones-band cheer (ordinary bare OoM).
 
-##### Overlay `/x/`
+##### Number as discourse
 
 Discourse nesting uses [generation](#ordinal-generation) (**`x#e0`** = current-layer assert; **`x#3e2`** = nested depth).
 
@@ -1118,7 +1119,7 @@ Mantissa = how many joke-units of **late** (**`ba`**) or **early** (**`bu`**) ra
 | **-n** | **Proper noun / proper designation** — the hyperbolic numeral as a name (a building called *the Gazillion*, a title *One Gazillion*, *the Gazillionth*, …) | `g@+1e`; `g@#1e` |
 | **-r** | Resume that prior hyperbolic amount or place (mantissa may repeat or drop when clear: `g=+1e` / `g=+e`; `g=#1e` / `g=#e` if the prior was this hyperbole) | |
 
-**Overlays** (hyperbole) inherit freely:
+`/v/` `/h/` `/j/` `/x/` (hyperbole) inherit freely:
 
 | Form | Reading |
 |------|---------|
