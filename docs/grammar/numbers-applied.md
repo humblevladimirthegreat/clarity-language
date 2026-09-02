@@ -61,7 +61,7 @@ Measure hosts are **published metaphorical roots** (dimension / quantity metapho
 |----------|--------|---------|------|
 | **Short / default** | bare host + amount | `burelul g+2` | ordinary measure phrases: the scalar licenses the unit reading |
 | **Full / titled** | host + digit morph **`+1`** (*unit / primary*) | `bureluxrawon g+2` | you need *the named unit of that dimension* versus the ordinary metaphor (*measurement*, *heaviness*, …) |
-| **Resume** | letter pronoun or **-r** | `bur` / `bureluxrawor` | after the unit NP is on the table |
+| **Resume** | short resume or **-r** | `bur` / `bureluxrawor` | after the unit NP is on the table |
 
 Spelled **`…xrawol`** / **`…xrawon`**: [numeric derivation](numeric-derivation.md#numeric-derivation) (**`ROOTx+1`**). Prefer **-n** on the titled form when the unit is a conventional SI name; **-l** when naming a unit-instance without that title force. Soft **-m** hedges amount or unit, not a short name.
 
@@ -169,7 +169,7 @@ Fence **-l** / **-m** / **-n** keep ordinary closed / open / named senses on the
 
 #### Unspecified value in the range (**-r**)
 
-Fence **-r** on a number-range shape (still with SHARED continuum) = an **unspecified member of the range** (not content-word anaphor **-r**, and not a discrete *something among two listed values*):
+Fence **-r** on a number-range shape (still with SHARED continuum) = an **unspecified member of the range** (not content-word resume **-r**, and not a discrete *something among two listed values*):
 
 | Form | Reading |
 |------|--------|

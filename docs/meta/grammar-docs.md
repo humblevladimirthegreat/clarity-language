@@ -25,16 +25,16 @@ Each grammar page is both **source of truth** for its subsystem and **learner te
 ## Present the current language only
 <a id="present-the-current-language-only"></a>
 
-Write as if this is the only version of Agalan the reader will ever see. There is **no** backwards-compatibility duty in grammar docs: not for English labels, not for Agalan spellings, not for HTML ids.
+Write as if this is the only version of Agalan the reader will ever see. There is **no** backwards-compatibility duty in learner-facing prose: not for English labels, not for Agalan spellings.
 
 | Do | Don’t |
 |----|--------|
 | State the rule as it is now | Mention prior wordings, renamed labels, or “used to be called…” |
-| Use the current term and the **current published spelling** | Keep a superseded root, hyphenated PoS, or dual spelling “so old links work” |
-| Put the section id on the **current** English name; retarget in-repo links in the same edit | Silent alias ids (`clause-force` next to `speech-act`) or redirects for old fragments |
+| Use the current term and the **current published spelling** | Keep a superseded root, hyphenated PoS, or dual spelling |
+| Use the current term once, clearly | Add “formerly…” redirects in the prose |
 | Fix outdated prose in place | Leave “correction trails,” changelogs, or former-name parentheticals |
 
-The learner should never need the editing history of the docs or of the lexicon.
+The learner should never need the editing history of the docs or of the lexicon. Silent HTML fragment aliases (old `#…` still resolving) are invisible to readers; they are not a second name on the page.
 
 ## No process or corrective leftover
 
@@ -187,7 +187,7 @@ Do **not** assume the reader knows linguistics jargon. Write for a motivated lea
 
 **Test:** would a careful reader who never took a linguistics class still get the rule from the first paragraph and the example? If not, rewrite the lead in plain words and demote the technical term to a parenthetical or a later Intermediate note.
 
-Section ids follow the **current** ordinary name (`speech-act`, not `clause-force`). If a heading’s English name changes, change the id and every in-repo link in the same edit.
+Section ids should match the **current** ordinary name (`speech-act`). A silent extra id on the same heading is fine until an editor pass removes it; do not mention the old fragment in prose.
 
 ## Examples
 

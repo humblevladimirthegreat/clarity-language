@@ -94,7 +94,7 @@ gloss: `z-grace-proper` · `z-solution` · `g-ordinal-2` · `v-tell`
 *Azawan names solution 2.*
 ```
 
-Bare *the problem* as the only ideation frame is grammatical and stylistically weak: numbering marks **multiple candidates**. Reframing the **same** situation is different wording of one frame, not a second digit. Discourse *point N:* is free **`x#N`** ([discourse marker](numbers.md#number-as-discourse-marker-by-marker)), a continue, not a problem noun. Digits are optional when these roots name a topic outside ideation (*the problem of free will*).
+Bare *the problem* as the only ideation frame is grammatical and stylistically weak: numbering marks **multiple candidates**. Reframing the **same** situation is different wording of one frame, not a second digit. Discourse *point N:* is free **`x#N`** ([number as discourse](numbers.md#number-as-discourse-marker-by-marker)), a continue, not a problem noun. Digits are optional when these roots name a topic outside ideation (*the problem of free will*).
 
 ### Sense-form overlays
 <a id="sense-form"></a>

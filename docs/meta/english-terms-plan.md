@@ -8,7 +8,7 @@ Companion to the as-used collate: [english-terms.md](english-terms.md). Until a 
 
 ## Why not one pass
 
-A single sweep would mix three different operations (alias merge, homonym split, leftover drop) across ~20 grammar files. The high-collision strings cannot be globally replaced: **bare**, **focus**, **overlay**, **span**, **topic**, **force**, and **empty** each name more than one job. Drill *prompts* (English to translate) stay untouched; drill *instructions* and headings do not. Do not keep silent HTML ids or superseded Agalan spellings for old links ([present the current language only](grammar-docs.md#present-the-current-language-only)).
+A single sweep would mix three different operations (alias merge, homonym split, leftover drop) across ~20 grammar files. The high-collision strings cannot be globally replaced: **bare**, **focus**, **overlay**, **span**, **topic**, **force**, and **empty** each name more than one job. Drill *prompts* (English to translate) stay untouched; drill *instructions* and headings do not. Do not keep superseded Agalan spellings or “used to be called…” in learner prose ([present the current language only](grammar-docs.md#present-the-current-language-only)). Old HTML fragments stay until Phase 7.
 
 Parser / TypeScript identifiers are out of this plan (`src/retie` `bare` is unrelated). Morphology does not change. SMALLCAPS tags, join-vowel English names (additive / cochoice / …), and span TYPE / EDGE letter names stay.
 
@@ -140,7 +140,7 @@ After the arity rename, remaining *focus* is word-order **prominence**, the valu
 | [grammar-docs.md](grammar-docs.md) examples that cite old labels | Parser / code identifiers |
 | [english-terms.md](english-terms.md) after the last content phase | House-cast names (do not turn dummy people into **`ugobo`** / **`edone`**) |
 
-**Anchors:** new id = current English name. In the same phase, rewrite in-repo links and **delete** the old fragment. No silent aliases (`clause-force` beside `speech-act`). Do not write “used to be called…” in learner prose ([grammar-docs.md](grammar-docs.md#present-the-current-language-only)).
+**Anchors:** add the new id (current English name) beside the old fragment through Phases 1–6 (`clause-force`, `focus-phrase`, `bare-phrase`, `unary-phrase`, `nullary-phrase`, `interrogative-force`, `zero-copula`, `participant-compounds`, `content-questions`, `yes-no-focus-bare`, `focus-bare-inventory`, `adverb-topic-and-free-order-ties`, `yes-no-polarity`, …). Visible link text uses the new names. **Phase 7** rewrites in-repo links to the new ids and deletes the silent aliases. Do not write “used to be called…” in learner prose ([grammar-docs.md](grammar-docs.md#present-the-current-language-only)).
 
 **After each phase:** `npm run lint:md`. Do **not** run `retie-docs` (this is English metalanguage, not Agalan tokens).
 
@@ -150,11 +150,11 @@ After the arity rename, remaining *focus* is word-order **prominence**, the valu
 
 **Files:** `core.md`, `questions.md`, `vowel-series.md`, `spans.md`, `reference-suffix.md`, `numbers.md` (utterance-marker pointer), `revisers.md`, `causation.md`, `pronouns.md`, `coordination.md` (same-force / inherit opener), `AGENTS.md` (utterance framing blurb), `grammar-docs.md` (example that cites `clause force`), `drill-generation.md` (clause-force twins).
 
-**Do:** *clause force* → **speech act**; *force word* → **act word**; *question force* / *interrogative force* → *question* / *under question*; *same-force* → *same speech act*. Beginner heading **Speech act**. Id `speech-act` only (no leftover `clause-force`).
+**Do:** *clause force* → **speech act**; *force word* → **act word**; *question force* / *interrogative force* → *question* / *under question*; *same-force* → *same speech act*. Beginner heading **Speech act**. New id `speech-act` beside `clause-force`.
 
 **Don’t:** prescription force; *forced-choice*; polar stance; `/j/` mnemonic *jump* (that drop is Phase 4).
 
-**Done when:** no learner-visible *clause force* / *question force* / *force word* for this job; in-repo links use `#speech-act`.
+**Done when:** no learner-visible *clause force* / *question force* / *force word* for this job; `#clause-force` still resolves (drop in Phase 7).
 
 ## Phase 2 — Join arity (*single-item* / *standalone*)
 
@@ -162,7 +162,7 @@ Highest collision. Contextual edits only.
 
 **Files:** `coordination.md` (home), `questions.md`, `comparatives.md`, `causation.md` (inclusive single-item `…aom`), `join-extras.md` (standalone `/b/` join), `numbers-applied.md` (threshold as single-item rank), `predication.md` if it says *focus packaging*, `AGENTS.md` (arity **bare** / **focus** / **list**; focus/bare under question), `drill-generation.md`.
 
-**Do:** arity-1 *focus* → **single-item**; arity-0 *bare* → **standalone**. Headings: *Starter forms (single-item and standalone)*; *Yes/no with single-item / standalone*. Ids `single-item-phrase`, `standalone-phrase` only; rewrite links that still say `#focus-phrase` / `#bare-phrase`.
+**Do:** arity-1 *focus* → **single-item**; arity-0 *bare* → **standalone**. Headings: *Starter forms (single-item and standalone)*; *Yes/no with single-item / standalone*. New ids `single-item-phrase`, `standalone-phrase` beside the old ones.
 
 **Don’t:** *bare need*, *bare turn*, *bare OoM*, *bare host*, *bare `hal`*, *empty-allowed*, span *empty*, word-order *focus*, values **Focus** column, *focused agenda*.
 
@@ -182,7 +182,7 @@ Highest collision. Contextual edits only.
 
 **Vocative:** drop *call* as the slot name in the left-edge list; keep *calling someone* in ordinary English.
 
-**Polar:** **yes/no** for the question type; **polar stance** for `jael` / …. Drop *reaction word* as the left-edge slot (order: vocative → polar stance → act word). Drop *polar question*, *yes/no polarity* as extra keys. If the heading text changes, change the id (no leftover `#yes-no-polarity`).
+**Polar:** **yes/no** for the question type; **polar stance** for `jael` / …. Drop *reaction word* as the left-edge slot (order: vocative → polar stance → act word). Drop *polar question*, *yes/no polarity* as extra keys. Keep `#yes-no-polarity` as a silent id if the heading text changes (drop in Phase 7).
 
 **Resume:** default learner word **resume** on content, spans, and numbers. Join/restrictor **-r** = **unspecified member** only. Fill-ask stays fill-ask (that *is* unspecified member under question). *Letter pronoun* / *full-root pronoun* → **short resume** / **full-root resume**. Drop *anaphor* except a single linguist gloss if needed.
 
@@ -195,7 +195,7 @@ Mechanical, still contextual. Group by home page:
 | Cluster | Keep | Drop | Home |
 |---------|------|------|------|
 | `/b/` | extra noun | argument noun | `core.md`; one row in `numbers.md` |
-| Roles | role compound | participant compound (retarget `#participant-compounds`) | `roles.md`, `x-compounds.md` |
+| Roles | role compound | participant compound (anchor may stay until Phase 7) | `roles.md`, `x-compounds.md` |
 | Predication | classification / identity | zero-copula, property pattern, kind ascription | `predication.md`; comparatives link |
 | Compounds | ordinary compound, lexical compound | lexical kind, x-less kind, compound joiner | `x-compounds.md`, `phonology.md` |
 | Numbers on ROOT | numeric derivation | number compound, numeric morph | `numeric-derivation.md` |
@@ -220,9 +220,7 @@ Mechanical, still contextual. Group by home page:
 | Series | vowel series | job map | `vowel-series.md` |
 | Ideation | numbered alternatives | ideation | `special-vocabulary.md` |
 
-**Also in this phase — current spellings only.** In in-scope files (`docs/grammar/`, `AGENTS.md`, [english-terms.md](english-terms.md), [drill-generation.md](drill-generation.md), [grammar-docs.md](grammar-docs.md)), replace any **superseded Agalan spelling** with the published current root (same emoji / same job). Typical leftovers: special-pronoun citations that drifted from the lexicon (`ahage` / `ebone` vs current **`aha`** / **`edone`**). Do not leave the old spelling as an alias, parenthetical, or “also written…”. Do not mention that a spelling changed. House-cast dummy people stay names — that is not a spelling retie.
-
-**Also:** retarget remaining old HTML ids from Phases 1–4 (`clause-force`, `focus-phrase`, `bare-phrase`, `unary-phrase`, `nullary-phrase`, `interrogative-force`, `yes-no-polarity`, …) if those phases still left aliases.
+**Also in this phase — current spellings only.** In in-scope files (`docs/grammar/`, `AGENTS.md`, [english-terms.md](english-terms.md), [drill-generation.md](drill-generation.md), [grammar-docs.md](grammar-docs.md)), replace any **superseded Agalan spelling** with the published current root (same emoji / same job). Typical leftovers: special-pronoun citations that drifted from the lexicon (`ahage` / `ebone` vs current **`aha`** / **`edone`**). Do not leave the old spelling as an alias, parenthetical, or “also written…”. Do not mention that a spelling changed. House-cast dummy people stay names — that is not a spelling retie. HTML ids wait for Phase 7.
 
 ## Phase 6 — Remaining splits
 
@@ -231,7 +229,7 @@ Do these after Phases 2–3 so *focus* / *overlay* / *span* / *host* leftovers a
 | Split | Files |
 |-------|--------|
 | Word-order *focus* → **prominence**; values **Focus** column → **contact** | `core.md`, `values.md` |
-| Value *topic* vs `ahaza` **as-for** | `values.md`, `core.md` `#adverb-topic-and-free-order-ties` → id `as-for` only |
+| Value *topic* vs `ahaza` **as-for** | `values.md`, `core.md` `#adverb-topic-and-free-order-ties` (new id `as-for`; keep old id until Phase 7) |
 | **NOTIONAL** vs **imaginary** vs **quasi** | `commentary.md`, `numbers.md`, `numeric-derivation.md` |
 | *Host* only on `x`-attachment; measure **unit**; classification subject | `ability.md`, `values.md`, `numeric-derivation.md`, `numbers-applied.md`, `predication.md` |
 | *Ambient scale* → **ambient magnitude**; OoM not *scale* | `numbers.md` |
@@ -246,12 +244,14 @@ Optional in this phase: value “bare need” → always **topic** in values.md,
 
 Rewrite [english-terms.md](english-terms.md) from an as-used collate into a **keep-list**: one row per locked name, *Near* only for true other-jobs, clash table only for leftovers that Phase 6 did not kill. Change the lead: this page is now the standardized metalanguage, not a recommendation to rename.
 
-Sync [grammar-docs.md](grammar-docs.md) (everyday-English examples still saying `clause force`; “omit recoverable `jal` when the page is not teaching speech act”). Sync [drill-generation.md](drill-generation.md) allowlist rows. Sync `AGENTS.md` construction table if any Phase 5–6 names remain. Confirm no silent old HTML ids and no superseded spellings remain in in-scope files.
+Sync [grammar-docs.md](grammar-docs.md) (everyday-English examples still saying `clause force`; “omit recoverable `jal` when the page is not teaching speech act”). Sync [drill-generation.md](drill-generation.md) allowlist rows. Sync `AGENTS.md` construction table if any Phase 5–6 names remain.
+
+**Drop old HTML ids:** grep the silent fragments listed under **Anchors**. Rewrite remaining in-repo links to the new id, then delete the alias. Confirm no superseded Agalan spellings remain in in-scope files.
 
 ## Per-phase checklist
 
 1. Grep the **old** strings in `docs/grammar/` and confirm each hit is this phase’s job (or skip).
-2. Edit visible prose, headings, tables, See also. Set the section id to the **current** name; rewrite in-repo links; delete the old fragment.
+2. Edit visible prose, headings, tables, See also. Add the new section id; keep the old fragment until Phase 7.
 3. Update `AGENTS.md` / drill-generation / grammar-docs lines that name this construction.
 4. `npm run lint:md`.
 5. Grep again: no learner-visible old name for this job; kept homonyms still present on purpose.
@@ -262,7 +262,7 @@ Sync [grammar-docs.md](grammar-docs.md) (everyday-English examples still saying 
 | 1 Speech act | done |
 | 2 Join arity | done |
 | 3 Span / range / overlay | done |
-| 4 Turn, vocative, polar, resume | not started |
+| 4 Turn, vocative, polar, resume | done |
 | 5 Alias sweep | not started |
 | 6 Remaining splits | not started |
 | 7 Editor surfaces | not started |

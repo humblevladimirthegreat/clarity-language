@@ -43,7 +43,7 @@ To point back at a prior span (**-r**), put **`=`** inside the same brackets: `d
 
 gloss: `j-ask` · `z-courage` · `d-[=]` · `v-tell`
 
-*Ululon said that?!* (anaphor to a prior cite)
+*Ululon said that?!* (resume a prior cite)
 ```
 
 ### When spans are required
@@ -58,7 +58,7 @@ Use a span when you need one of these jobs:
 | Ordinary *the word X* / the form itself | **mention** `{…}` |
 | Mid-sentence parenthetical digression | **aside** (`h(…)`); interior is ordinary Agalan, often a fragment |
 | Foreign, code, or other surface that is not ordinary Agalan words | **opaque** |
-| Referring back to a prior span | **anaphor** **-r** / `…[=]` |
+| Referring back to a prior span | **resume** **-r** / `…[=]` |
 
 ### Part of speech (slot)
 <a id="pos"></a>
@@ -73,7 +73,7 @@ The open’s role letter is the **outer-clause slot of the entire span**. Ask: *
 | `/v/` | Span **is** the verb (phrase): echo / report the act as wording | `v[oops]`, `v[=]` |
 | `/ɡ/` | Property **is** the spanned string — *so-called “ready”* | `g@[Draft]` |
 | `/h/` | Asides (digressions float like other adverbs); also manner cite | `h(…)`, `h~(…)`, `h(=)` |
-| `/j/` | Vocative / expressive edge with a spanned call | `j@[…]` |
+| `/j/` | Vocative / expressive edge | `j@[…]` |
 | `/x/` | Discourse-only citation (epigraph, freestanding span) | `x[…]` |
 
 ```
@@ -121,7 +121,7 @@ gloss: `z-grace` · `v-walk` · `h-(happy)`
 | **Title string / proverb as wording** | **cite** — `d[…]` / `d@[…]` |
 | ***The title X* / *the proverb X*** as a named unit | **mention** **-n** — `d@{…}` |
 | **Nativized loan** | ordinary role letter + root + ending |
-| **That (prior span) again** | span anaphor — `daxur` / `hexur` / `duxur` / … |
+| **That (prior span) again** | span resume — `daxur` / `hexur` / `duxur` / … |
 | **Name / word citation outside a clause** | prefix-less **root + ending**: [citation forms](core.md#citation-forms) (`ugobon.`, `<Sam>n`) |
 
 `d<sushi>` is a span open plus an interior blob. `d<sushi>l` is one content word whose root is foreign. Opaque closers take no **-l** / **-m** / **-n** / **-r** after `>`. Spans need a role letter because they fill a **clause** slot; freestanding citation drops the role letter instead.
@@ -263,7 +263,7 @@ Span fences are **pronounceable**: every bracket has a spoken word shape.
 | **TYPE** | **a** cite · **e** aside · **o** mention · **u** opaque | span kind |
 | **`x`** | mid-word joiner | marks a span-fence form |
 | **EDGE** | **a** · **e** · **o** · **u** | extent: how far an open runs |
-| **ENDING** | **-l** exact · **-m** paraphrase · **-n** proper · **-r** anaphor | fidelity, titled designation, or span pronoun |
+| **ENDING** | **-l** exact · **-m** paraphrase · **-n** proper · **-r** resume | fidelity, titled designation, or span resume |
 
 Example: **`daxal`** = `d` + `a` + `x` + `a` + `l` → open exact multi-token cite as direct object (needs close).
 
@@ -292,11 +292,11 @@ The vowel **after** `x` is **EDGE**: how far the open runs.
 | **a** | **Multi-token open** — push a stack frame until explicit close (default) | yes | `d[…]` … `]` |
 | **e** | **Clause-scoped** — auto-pop before the next speech-act `/j/` or clause-level `/x/` join (**complete**) | no (auto) | `d[…` run to clause end |
 | **o** | **Atomic** — exactly **one** following token | no | `d[uzunu]`, `d<sushi>` |
-| **u** | **Empty / redacted** — no interior; also **anaphor** **-r** | no | `d[]`, `d[=]` |
+| **u** | **Empty / redacted** — no interior; also **resume** **-r** | no | `d[]`, `d[=]` |
 
 **Anaphor `-r`** always uses EDGE **`u`** in the spoken template (`daxur`).
 
-EDGE **`a`** / **`e`** / **`o`** take **-l** / **-m** / **-n**. EDGE **`u`** takes exact **-l** (`daxul`) or anaphor **-r** (`daxur`).
+EDGE **`a`** / **`e`** / **`o`** take **-l** / **-m** / **-n**. EDGE **`u`** takes exact **-l** (`daxul`) or resume **-r** (`daxur`).
 
 ### Endings on opens and span pronouns
 <a id="endings"></a>
@@ -306,11 +306,11 @@ EDGE **`a`** / **`e`** / **`o`** take **-l** / **-m** / **-n**. EDGE **`u`** tak
 | **-l** | **exact** — verbatim / precise surface | bare open (no `@` / `~`) |
 | **-m** | **paraphrase** — gist / non-verbatim rendering | **`~`** after the role letter (`d~[…]`) |
 | **-n** | **proper** — titled / conventional designation of the **whole span** | **`@`** after the role letter (`d@[…]`) |
-| **-r** | **anaphor** — pronoun for the **most recent span of this TYPE**; PoS = role **now** | `d[=]`, `h(=)`, `z{=}`, … |
+| **-r** | **resume** — the **most recent span of this TYPE**; PoS = role **now** | `d[=]`, `h(=)`, `z{=}`, … |
 
-Hedged proper (`@~`) is written **`d@[…]`** only (spoken as the **proper** open with uncertain tonality). **`@`** / **`~`** do not combine with anaphor **-r**.
+Hedged proper (`@~`) is written **`d@[…]`** only (spoken as the **proper** open with uncertain tonality). **`@`** / **`~`** do not combine with resume **-r**.
 
-**-r** is ordinary [anaphora](pronouns.md). `daxur` = *that (cite)* as object, matching the most recent **cite** (TYPE **a**). `hexur` / `h(=)` = *that (aside)*. The pronoun’s role letter need not match the antecedent open’s (`zaxur` = that cite as subject). No interior; no close (EDGE **`u`**).
+**-r** resumes a prior span ([pronouns.md](pronouns.md); linguists: anaphora). `daxur` = *that (cite)* as object, matching the most recent **cite** (TYPE **a**). `hexur` / `h(=)` = *that (aside)*. The resume’s role letter need not match the antecedent open’s (`zaxur` = that cite as subject). No interior; no close (EDGE **`u`**).
 
 ### Writing ↔ speech map (core)
 
@@ -322,20 +322,20 @@ Hedged proper (`@~`) is written **`d@[…]`** only (spoken as the **proper** ope
 | `d{…}` / `d~{…}` / `d@{…}` | `doxal` / `doxam` / `doxan` … `xuxul` | mention |
 | `h(…)` / `h~(…)` / `h@(…)` | `hexal` / `hexam` / `hexan` … `xuxul` | aside (open PoS is `/h/`) |
 | `h(zuzumum)` | `hexol zuzumum` | atomic aside |
-| `h(=)` | `hexur` | aside anaphor |
+| `h(=)` | `hexur` | aside resume |
 | `d<…>` / `d~<…>` / `d@<…>` | `duxal` / `duxam` / `duxan` … `xuxul` | opaque |
 | `d[hi]` | `daxol hi` | atomic (EDGE **o**) |
 | `d@[Hamlet]` | `daxon Hamlet` | atomic proper cite |
 | `d[…` … (to clause end) | `daxel` … | clause-scoped (EDGE **e**) |
 | `d[]` | `daxul` | empty / redacted (EDGE **u**) |
-| `d[=]` | `daxur` | anaphor (EDGE **u**) |
+| `d[=]` | `daxur` | resume (EDGE **u**) |
 
 Close does not repeat PoS, TYPE, EDGE, or open fidelity. Explicit close for EDGE **a**: **`xuxul`** (complete). Editorial / close-all live in Advanced.
 
 ### Nesting
 <a id="nesting"></a>
 
-Typed span fences nest freely. Each multi-token open pushes; **`xuxul`** pops the innermost (complete). Atomic and anaphor do not nest-push. **Scope islands** (`^ … ^`) are a single layer: use a typed span when you need nested packaging.
+Typed span fences nest freely. Each multi-token open pushes; **`xuxul`** pops the innermost (complete). Atomic and resume do not nest-push. **Scope islands** (`^ … ^`) are a single layer: use a typed span when you need nested packaging.
 
 Examples: `d[ h(…) ]`, `d[ z{…} ]`, `d~[ d<…> ]`. **`@`** / **`~`** apply only to the immediately following open.
 
@@ -413,7 +413,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zululon daxal hi zazawan xuxul vezehel.`
 :::
 
-**3.** *Uhubun said that.* (spoken cite anaphor)
+**3.** *Uhubun said that.* (spoken cite resume)
 
 ::: details Show answer
 `zuhubun daxur vezehel.`
@@ -478,7 +478,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **3.** `zaxur gelulun.`
 
 ::: details Show answer
-*That (cite) is blue.* (anaphor as subject)
+*That (cite) is blue.* (resume as subject)
 :::
 
 **4.** `zuhubun daxon Hamlet vuzunul.`
@@ -541,7 +541,7 @@ xuxur  =  x + u + x + u + r
 xuxum  =  x + u + x + u + m
 ```
 
-Editorial spans **are committed** and enter anaphor history (`d[=]` / `daxur` may resume them). Combined `#\|` is writing-only shorthand for two spoken closes; bare `xuxur` pops one (editorial). Write editorial first, then close-all: `#\|`.
+Editorial spans **are committed** and enter resume history (`d[=]` / `daxur` may resume them). Combined `#\|` is writing-only shorthand for two spoken closes; bare `xuxur` pops one (editorial). Write editorial first, then close-all: `#\|`.
 
 Clause joins that negate use a different shape (`xul` / `xum`). Empty or resumed **cite opens** use `/d/` (`daxul` empty/redacted; `daxur` that cite). Closes are **`xuxul`** / **`xuxur`**.
 
@@ -557,14 +557,14 @@ Prefer EDGE **`a`** + **`xuxur`** for cut-off cites. EDGE **`e`** auto-pop is **
 
 #### Opens and related (PoS shown as `…`; EDGE **a** unless noted)
 
-| TYPE | exact multi **-l** | paraphrase **-m** | proper **-n** | anaphor **-r** (EDGE **u**) |
+| TYPE | exact multi **-l** | paraphrase **-m** | proper **-n** | resume **-r** (EDGE **u**) |
 |------|--------------------|-------------------|---------------|------------------------------|
 | cite **a** | `…axal` | `…axam` | `…axan` | `…axur` |
 | aside **e** | `hexal` | `hexam` | `hexan` | `hexur` |
 | mention **o** | `…oxal` | `…oxam` | `…oxan` | `…oxur` |
 | opaque **u** | `…uxal` | `…uxam` | `…uxan` | `…uxur` |
 
-Atomic (EDGE **o**): `…axol` / `…axom` / `…axon` (cite examples); aside atomic **`hexol`**. Clause-scoped (EDGE **e**): `…axel` / `…axem` / `…axen`. Empty exact (EDGE **u**): `…axul` / `hexul` / `…oxul` / `…uxul`. Aside **opens** use `/h/`; anaphor may recast the aside into another slot (`dexur`).
+Atomic (EDGE **o**): `…axol` / `…axom` / `…axon` (cite examples); aside atomic **`hexol`**. Clause-scoped (EDGE **e**): `…axel` / `…axem` / `…axen`. Empty exact (EDGE **u**): `…axul` / `hexul` / `…oxul` / `…uxul`. Aside **opens** use `/h/`; resume may recast the aside into another slot (`dexur`).
 
 #### Closes
 

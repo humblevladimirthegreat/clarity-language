@@ -1,13 +1,12 @@
 # Questions
 
-How to **ask** in Agalan: under question (**jol** / soft **jom**), yes/no vs fill-ask, multi-gap **fill-all**, and **polar stance** particles (**`jael`** / **`juel`** / …).
+How to **ask** in Agalan: under question (**jol** / soft **jom**), yes/no vs fill-ask, **fill-all**, and **polar stance** particles (**`jael`** / **`juel`** / …).
 
 ## Beginner
 <a id="beginner"></a>
 
 ### Question (**jol** / **jom**)
 <a id="interrogative-force"></a>
-<a id="polar-question"></a>
 
 Put **jol** at the left edge to ask. Soft **jom** is the same job, gentler. One marker covers yes/no *and* *who* / *what* / *when?* / *what happened?*. The body shape tells which kind of ask it is.
 
@@ -38,7 +37,6 @@ Under question, join **-r** always means fill-ask. For emptiness yes/no, use bar
 
 ### Fill-ask essentials
 <a id="fill-ask-r"></a>
-<a id="content-questions"></a>
 
 Under **jol** / **jom**, prefixed **-r** on **a** / **o** / **e** / **u** asks to name the unspecified member. The vowel is the same series job as elsewhere: **a** add, **o** one, **e** order, **u** undo.
 
@@ -51,13 +49,12 @@ Under **jol** / **jom**, prefixed **-r** on **a** / **o** / **e** / **u** asks t
 
 *When?* uses bare **`har`** (and kin) in Intermediate ([circumstance](#circumstance-when)).
 
-Content-word anaphor **-r** resumes a named thing; fill-ask is only join **-r** (`zar` / `var` / `xar` / …). See [pronouns](pronouns.md).
+Content-word resume **-r** points back at a named thing; fill-ask is only join **-r** (`zar` / `var` / `xar` / …). See [pronouns](pronouns.md).
 
-### Fill-all (multiple gaps)
+### Fill-all
 <a id="fill-all"></a>
-<a id="multi-gap"></a>
 
-Every join **-r** under question is a **gap**. The answer is expected to **fill all** of them. Spoken order of those **-r** fences is the expected fill order.
+Every join **-r** under question is a fill-ask blank. The answer is expected to **fill all** of them. Spoken order of those **-r** fences is the expected fill order.
 
 | Question shape | Ask |
 |----------------|------|
@@ -65,14 +62,13 @@ Every join **-r** under question is a **gap**. The answer is expected to **fill 
 | `zar` … `har` | *Who … when?* |
 | `var` … `zar` | *Do what … who?* |
 
-**Single gap + real *something* elsewhere:** use an ordinary indefinite (`-l` / `-m`) for the known thing, and join **-r** only for the blank (`zar` + `dabelel` → *Who ate an apple?*; `zar` + `dar` → *Who ate what?*).
+**One blank + real *something* elsewhere:** use an ordinary indefinite (`-l` / `-m`) for the known thing, and join **-r** only for the blank (`zar` + `dabelel` → *Who ate an apple?*; `zar` + `dar` → *Who ate what?*).
 
 ### Polar stance (workhorses)
+<a id="polar-stance"></a>
 <a id="answers"></a>
-<a id="yes-no-polarity"></a>
-<a id="yes-no-interjections"></a>
 
-Closed **`/j/`** particles are **reaction words**. Shape is **`j` + stacked join vowel + `-l` / `-m`**. They mark a **turn**: left-edge or a bare utterance. These forms take **-l** or **-m**.
+Closed **`/j/`** particles are **polar stance**. Shape is **`j` + stacked join vowel + `-l` / `-m`**. They mark a **turn**: left-edge or a bare utterance. These forms take **-l** or **-m**.
 
 **Implied speech act:** polar **-l** implies **`jal`**; **-m** implies **`jam`**. Prefer **`jael …`** over **`jael jal …`** when a body follows.
 
@@ -141,7 +137,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `jol zar vejel dar.`
 :::
 
-**5.** *Who sees a dog?* (one gap; the dog is real, not a second blank)
+**5.** *Who sees a dog?* (one blank; the dog is real, not a second blank)
 
 ::: details Show answer
 `jol zar vejel dodogol.`
@@ -295,7 +291,7 @@ Under question, single-item and standalone join endings ask for confirmation or 
 - Single-item **-m**: **offer** that singleton (*How about X?*, *Want X?*).
 - Single-item **…ul** / **…um** / **…un**: confirm / offer denial (*Not X?*).
 - Standalone **-l**: colloquial emptiness check (*Nothing?*, *Do nothing?*).
-- Standalone **-m**: open emptiness / soft gap (*Got nothing?*). Fill-ask uses **…ar** / **…or** / **…er** / **…ur**.
+- Standalone **-m**: open emptiness / soft emptiness (*Got nothing?*). Fill-ask uses **…ar** / **…or** / **…er** / **…ur**.
 - Standalone / single-item / multi **…ar** / **…or** / **…er** / **…ur**: [fill-ask](#fill-ask-r).
 
 Worked rank / set inventories are Advanced ([single-item and standalone inventory](#single-item-standalone-inventory)).
@@ -303,7 +299,7 @@ Worked rank / set inventories are Advanced ([single-item and standalone inventor
 ### Fill-ask answers
 <a id="fill-ask-answers"></a>
 
-A fill may be a bare content word, single-item **-l** / **-m** / **-n**, or a longer list. Multi-gap answers follow spoken **-r** order ([fill-all](#fill-all)).
+A fill may be a bare content word, single-item **-l** / **-m** / **-n**, or a longer list. Fill-all answers follow spoken **-r** order ([fill-all](#fill-all)).
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -570,6 +566,6 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 ## See also
 
-- [core.md](core.md#utterance-markers-j): turn vs continue; speech act
+- [core.md](core.md#turn-j): turn vs continue; speech act
 - [coordination.md](coordination.md): join fences; statement readings of **-r** / single-item / standalone
-- [pronouns.md](pronouns.md): content anaphor **-r** (fill-ask is join **-r**)
+- [pronouns.md](pronouns.md): content resume **-r** (fill-ask is join **-r**)

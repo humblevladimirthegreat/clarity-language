@@ -497,7 +497,7 @@ Show a causal “law” with evidentiality and universality. Mechanism highlight
 | *if and only if* / *iff* | **`hezazem badorol`** |
 | *although* / *while* / *until* / *before* / *after* | same `/h/`+**`adoro`** shape ([core.md](core.md#dependent-clauses)) |
 | *I think P because Q* (speaker grounds) | COMMENT + optional **`hurugum`** ([above](#epistemic-because)) |
-| *therefore* (discourse) | **`xamalal`** ([discourse markers](core.md#discourse-markers-x)) |
+| *therefore* (discourse) | **`xamalal`** ([continue](core.md#continue-x)) |
 | *however* / *meanwhile* (discourse) | **`xezebal`** / **`xamenol`** |
 
 Discourse *however* / *meanwhile* are `/x/` linkers. Subordinating **`hezebam`** / **`hegemum`** stay *although* / *meanwhile-as-dependent*.

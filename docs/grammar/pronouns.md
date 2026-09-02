@@ -13,10 +13,10 @@ It takes the usual first letter for the slot you need **now** (that letter need 
 
 Two stem lengths:
 
-1. **Letter pronoun:** a **fixed prefix of that word’s root**, cut **up to and including the 2nd vowel** (typically the opening `VCV`). Prefer this when it already picks the right antecedent.
-2. **Full-root pronoun:** the **entire root** + **-r**. Use this when the letter form’s most recent match is **not** what you mean.
+1. **Short resume:** a **fixed prefix of that word’s root**, cut **up to and including the 2nd vowel** (typically the opening `VCV`). Prefer this when it already picks the right antecedent.
+2. **Full-root resume:** the **entire root** + **-r**. Use this when the short form’s most recent match is **not** what you mean.
 
-**-r** = **r**esume. The listener always takes the **most recent matching** stem. Make the intended one most recent: letter form, full root, or an adjective / ordinal that singles it out.
+**-r** = **r**esume. The listener always takes the **most recent matching** stem. Make the intended one most recent: short form, full root, or an adjective / ordinal that singles it out.
 
 ```
 `zazawan vawalal. zazar vajul.`
@@ -217,7 +217,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 Agalan has one resume mechanism; English does not. Approximate by crossing **what was mentioned** (antecedent role) with **what slot you need now** (pronoun role). The referent stays the same; only the English wording changes.
 
-`/x/`…`-r` is **discourse navigation**: *going back to subject X* / *returning to that thread* (removing it does not change the following claim). **Not the same job as:** clause **aboutness** (*regarding X*) uses `/h/` + `/b/` X ([adverbs](core.md#adverbs-h) / [discourse markers](core.md#discourse-markers-x)).
+`/x/`…`-r` is **discourse navigation**: *going back to subject X* / *returning to that thread* (removing it does not change the following claim). **Not the same job as:** clause **aboutness** (*regarding X*) uses `/h/` + `/b/` X ([adverbs](core.md#adverbs-h) / [continue](core.md#continue-x)).
 
 #### Same-role resume
 
@@ -246,11 +246,11 @@ Resume content with `-r`.
 | *thus* / *that way* | Adverb antecedent → `/h/` …`-r` |
 | *regarding that* (clause aboutness) | `/h/` *regarding* + `/b/` …`-r` |
 | *going back to subject X* (thread resume) | Any antecedent → `/x/` …`-r` |
-| *that* (prior cite / mention / aside) | [Span anaphor](spans.md#endings) → `daxur` / `hexur` / … |
+| *that* (prior cite / mention / aside) | [Span resume](spans.md#endings) → `daxur` / `hexur` / … |
 
-**Span anaphors** are closed [span-fence](spans.md) forms. English often says *it* or *that*: "He said *that*?!" / "that (title)" / "that (proverb)".
+**Span resume** forms are closed [span-fence](spans.md) words. English often says *it* or *that*: "He said *that*?!" / "that (title)" / "that (proverb)".
 
-Content questions (*who* / *what* / …) use [unspecified-member **-r** under question](questions.md#fill-ask-r) (`zar` / `var` / `xar` / …).
+Fill-ask (*who* / *what* / …) uses [unspecified-member **-r** under question](questions.md#fill-ask-r) (`zar` / `var` / `xar` / …).
 
 ### Cross-role recast
 

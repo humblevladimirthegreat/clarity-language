@@ -46,8 +46,8 @@ When you are **not** filling a sentence slot (lexicon head, list, title line, or
 | `/ɡ/` | adjective (property or kind label) | **ɡ** = grade / property label |
 | `/w/` | extra detail on the previous adjective | **w** = with that adjective |
 | `/h/` | adverb (how / when / where / to whom, and similar) | **h** = how, when, where |
-| `/x/` | discourse marker (link sentences, continue under the same speech act) | **x** = e**x**tend the speech act |
-| `/j/` | utterance marker (start a turn: statement / question / command, call someone, *yes* / *no*, …) | **j** = jump to a new act |
+| `/x/` | continue (link sentences, keep the same speech act) | **x** = e**x**tend the speech act |
+| `/j/` | turn (start a turn: statement / question / command, calling someone, *yes* / *no*, …) | **j** = jump to a new act |
 
 English *to* / *for* (recipient) uses a complex adverb (`/h/` + `/b/`) plus that extra noun. The same pattern covers other “relation + who/what” meanings on the verb.
 
@@ -60,9 +60,7 @@ You may rearrange those core roles for style or to put something in **focus** (w
 - **Adjectives** (`/ɡ/`) go **after** what they describe by default ([Adjectives](#adjectives-ɡ)). Putting them before is Intermediate ([before the noun](#left-bound-adjectives)).
 - **Adverbs** (`/h/`) may sit anywhere in their sentence except a “next sentence” `/h/`+`/b/` unit, which must come **last in the main sentence** ([Adverbs](#adverbs-h); [Dependent clauses](#dependent-clauses)).
 
-**Turn** vs **continue:** a new **turn** opens with `/j/` (calling someone, *yes* / *no* words, written [statement / question / command](#speech-act-beginner)), including turns you take with yourself. **Continuing under the same speech act** uses `/x/` ([discourse markers](#discourse-markers-x)): what follows **keeps** that speech act. Default statement **`jal`** may be **left out** when it is already clear ([Utterance markers](#utterance-markers-j)).
-
-`/j/` = **jump** to a new speech act; `/x/` = **extend** under the same act.
+**Turn** vs **continue:** a new **turn** opens with `/j/` (calling someone, *yes* / *no* words, written [statement / question / command](#speech-act-beginner)), including turns you take with yourself. **Continuing under the same speech act** uses `/x/` ([continue](#continue-x)): what follows **keeps** that speech act. Default statement **`jal`** may be **left out** when it is already clear ([Turn](#turn-j)).
 
 ### Nouns and verbs
 
@@ -132,32 +130,32 @@ Keep the `/h/` + `/b/` pair **together with no gap**. Ordinary pairs may move as
 
 This pattern covers much of what other languages do with little words like *to*, *at*, *because*. Stacking more detail on the extra noun is Intermediate ([complex chaining](#complex-chaining)).
 
-### Utterance markers (`/j/`)
-<a id="utterance-markers-j"></a>
+### Turn (`/j/`)
+<a id="turn-j"></a>
 
-`/j/` starts a **turn**: a speech move toward someone else, or toward yourself when you talk alone. It frames what you are doing: **statement / question / command**, **calling someone**, and **short reaction words** (greetings, *yes* / *no*, and similar).
+`/j/` starts a **turn**: a speech move toward someone else, or toward yourself when you talk alone. It frames what you are doing: **statement / question / command**, **calling someone**, and **polar stance** (*yes* / *no*) plus greetings and similar expressives.
 
 #### Opening a turn (left edge)
 <a id="left-edge-order-and-sentence-boundaries"></a>
 
 The start of a **new turn** is a `/j/` cluster in this order:
 
-1. Optional **call**(s): who you address (`jazawan`, `jululon`, …)
-2. Optional **reaction / greeting word**(s): greetings, *yes* / *no* particles, other expressives
+1. Optional **vocative**(s): who you address (`jazawan`, `jululon`, …)
+2. Optional **polar stance** / greeting(s): *yes* / *no* particles, greetings, other expressives
 3. **Act word**, when written: **last** in the cluster, immediately before the sentence body
 
 **Default speech act is `jal` (statement).** Leave it out when that is already clear:
 
 - A period-ended statement body (writing `.`; speech falls at the end)
 - A *yes* / *no* particle is present (**`-l`** → statement **`jal`**; **`-m`** → soft statement **`jam`**)
-- A later piece under a clause `/x/` continue ([discourse markers](#discourse-markers-x))
+- A later piece under a clause `/x/` continue ([continue](#continue-x))
 - A [dependent sentence](#dependent-clauses) under **`adoro`** with the **same** speech act as the main sentence (a different speech act still needs its own act word)
 
 When the act word is written, it closes the opener. A new `/j/` turn starts a new utterance.
 
-**Calls and reaction words** sit in this left-edge cluster (or stand alone). A `/j/` after a finished body starts the **next** turn. A *…, yes?* style tag is a **second bare turn** after a period (`zazawan vawalal. jael.`).
+**Vocatives and polar stance** sit in this left-edge cluster (or stand alone). A `/j/` after a finished body starts the **next** turn. A *…, yes?* style tag is a **second bare turn** after a period (`zazawan vawalal. jael.`).
 
-Bare calls and exclamations with no sentence body use `/j/` without a written act word (a firm *yes* / *no* **-l** still implies statement **`jal`** when a body follows).
+Bare vocatives and exclamations with no sentence body use `/j/` without a written act word (a firm *yes* / *no* **-l** still implies statement **`jal`** when a body follows).
 
 #### Speech act
 <a id="clause-force-beginner"></a>
@@ -174,14 +172,14 @@ Forms you need for ordinary dialogue:
 | **jel** | command / instruction | **j**ump + **e** rank: do this |
 | **jul** | prohibition: *don’t…* | **j**ump + **u** undo: don’t do this |
 
-Closed `/j/` words such as **`jael`** (*yes* / *true*) and **`juel`** (*no* / *false*) are **reaction words**. They sit at the left edge or as a bare turn. Firm **-l** implies statement **`jal`**; soft **-m** implies soft statement **`jam`**. Prefer **`jael …`** over **`jael jal …`** when a body follows.
+Closed `/j/` words such as **`jael`** (*yes* / *true*) and **`juel`** (*no* / *false*) are **polar stance**. They sit at the left edge or as a bare turn. Firm **-l** implies statement **`jal`**; soft **-m** implies soft statement **`jam`**. Prefer **`jael …`** over **`jael jal …`** when a body follows.
 
-### Discourse markers (`/x/`) — turn vs continue
-<a id="discourse-markers-x"></a>
+### Continue (`/x/`)
+<a id="continue-x"></a>
 
 `/x/` means **keep going under the same speech act**: continue a joined stretch that inherits the opener’s speech act, and **sentence linkers** (*however*, *therefore*, …). Only the first turn (or a default statement body) sets the speech act.
 
-Word-initial **x** = discourse role (**eXtend** the talk).
+Word-initial **x** = continue (**eXtend** the talk).
 
 | Job | Form family | Mnemonic |
 |-----|-------------|----------|
@@ -425,12 +423,12 @@ Writing uses **periods** (and matching **`?`** / **`!`**) as **body** boundaries
 | Writing | Speech | Speech act | Mnemonic |
 |---------|--------|--------|----------|
 | `.` | Fall on last stress + short pause | Closes the prior **body**. Next stretch still defaults to **`jal`** unless a new `/j/` turn, a written act word, or *yes* / *no* particle sets otherwise | Period closes the **body** |
-| Next `/j/` turn (*yes* / *no*, call, written act word) | Pitch **reset** into the turn | New turn; firm **-l** / soft **-m** imply **`jal`** / **`jam`** | New `/j/` cluster = new turn |
+| Next `/j/` turn (*yes* / *no*, vocative, written act word) | Pitch **reset** into the turn | New turn; firm **-l** / soft **-m** imply **`jal`** / **`jam`** | New `/j/` cluster = new turn |
 | Bare body or reviser + body after `.` | No full reset required | Implied **`jal`** (or **`jam`** only if a soft particle / written **`jam`** said so) | Same statement unless marked |
 | `?` | Rise or high level on last stress | Question (**`jol`** / **`jom`**); act word usually written | Rise asks |
 | `!` | Sharp or clipped fall | Command / prohibition; act word usually written | Sharp fall directs |
 | Soft statement / soft *yes* / *no* **-m** | Lighter fall; boundary still clear | **`jam`** (implied or written) | **-m** = open / soft |
-| `/x/` continue (clause join) | Dip or short pause; **no** full pitch reset | Keep opener speech act; period after the **whole** joined stretch | **x** extends; no new jump |
+| `/x/` continue (clause join) | Dip or short pause; **no** full pitch reset | Keep opener speech act; period after the **whole** joined stretch | **x** extends; no new turn |
 | `/x/` linker after `.` (`xamalal …`) | Dip into the linker; no turn reset | Keep prior speech act; may start a new written sentence under that speech act | Linker stays in the same act |
 
 **-l** vs **-m** on the act word / *yes* / *no* carries **commitment** (stand behind vs soft / open).
@@ -575,4 +573,4 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 ### Weak-pause left cues
 <a id="weak-pause-left-cues"></a>
 
-When pauses are weak (singing, fast free order), prefer an audible left cue after silence: *yes* / *no*, a call, or a written act word, rather than a bare body that only implies **`jal`**. Writing still uses `.` for body edges.
+When pauses are weak (singing, fast free order), prefer an audible left cue after silence: *yes* / *no*, a vocative, or a written act word, rather than a bare body that only implies **`jal`**. Writing still uses `.` for body edges.

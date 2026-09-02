@@ -261,7 +261,7 @@ Number endings have [their own jobs](#number-endings) (exact / about / conventio
 | **-l** | Exact, newly stated (default) | *(none)* — `g+3`, `g+` |
 | **-m** | Approximate / non-literal (“about N”) | **`~`** after PoS — `g~+3`, `g~+` |
 | **-n** | Conventional / proper designation (titles, official labels, *the Second…*) | **`@`** after PoS — `g@#2`, `g@+1e` |
-| **-r** | Anaphoric resume of a previously stated number, code, or rank | **`=`** after PoS — `g=+`, `x=#2`, `d=_` |
+| **-r** | Resume of a previously stated number, code, or rank | **`=`** after PoS — `g=+`, `x=#2`, `d=_` |
 
 **-r** may be **digitless**: marker + **-r** alone resumes the prior value of that identity without restating digits (`g=+` = *that (scalar) amount again*; `d=_` = *that code again*; `g=#` = *that rank again*). Digits + **-r** still fine when you want to name which prior item (`x=#2` = *as in (2) above*). Match the marker to the resumed identity (`g=+` for a prior scalar). **`=`** stands alone: no stack with **`~`** / **`@`**.
 
@@ -335,7 +335,7 @@ Same glyphs and jobs as [span-fence marks](spans.md#writing) (**`~`** soft / **`
 | *(none)* | **-l** | exact (default) | `g+3`, `g+`, `x#2`, `d_555,123,4567` |
 | **`~`** | **-m** | approximate / soft | `g~+3`, `g~+`, `g~+27e6`, `g~#e` |
 | **`@`** | **-n** | conventional / proper | `g@#2`, `g@+1e`, `x@#e` |
-| **`=`** | **-r** | anaphoric resume | `g=+`, `d=_`, `x=#2`, `g=#1e` |
+| **`=`** | **-r** | resume | `g=+`, `d=_`, `x=#2`, `g=#1e` |
 
 Order when both **`@`** and **`~`** apply: **`@` then `~`**. Spell **`@`** only, with uncertain tonality (same hedge habit as spans). **`=`** stands alone. Full phonetic spelling with a trailing ending letter (e.g. *grarel*, *gram*) is the [style default](#writing-style-numeric-vs-spelled) for [numeric derivation](numeric-derivation.md#numeric-derivation). On free number words it is a pronunciation gloss, not preferred in running text.
 
@@ -429,7 +429,7 @@ Endings still apply (**-m** ≈ *about* that many times / that clock or date, **
 #### Number as interjection (by marker)
 <a id="number-as-interjection-by-marker"></a>
 
-`/j/` + number is an **interjection** (expressive call-out). Statement/ask speech act stays the closed set in the [utterance-marker section](core.md#speech-act). Number cheers sit in the left-edge `/j/` cluster (before the act word, when a clause follows) or as a bare utterance with no act word.
+`/j/` + number is an **interjection** (expressive call-out). Statement/ask speech act stays the closed set in the [speech-act section](core.md#speech-act). Number cheers sit in the left-edge `/j/` cluster (before the act word, when a clause follows) or as a bare utterance with no act word.
 
 | Marker | Writing | Interjection sense |
 |--------|---------|-------------------|

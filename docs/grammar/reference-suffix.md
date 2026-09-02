@@ -250,16 +250,16 @@ Rare. **-n** marks a **named scale, grade, or criterion** for reading the preced
 
 A **named circumstance, channel, or standard** framing the clause. Aligns with [number **-n**](numbers.md#number-endings). English parallels: *according to* **[GAAP]**, *in* **[Q3]** as the named quarter. Manner roots usually stay **-l** / **-m** unless the manner is itself a proper name.
 
-#### Utterance markers (`/j/`)
+#### Turn (`/j/`)
 
 | Subclass | **-n**? |
 |----------|---------|
 | **Vocatives** | address by name (`jazawan`). Kind-based address (*everyone*) stays **-l**; titled group (*Team Alpha*) takes **-n**. |
-| **Interjections** | Mostly **-l** / **-m**. Use **-n** for a named formula (**[Amen]**, branded catchphrases). Closed [yes/no polarity](questions.md#yes-no-polarity) particles use **-l** / **-m**. |
+| **Interjections** | Mostly **-l** / **-m**. Use **-n** for a named formula (**[Amen]**, branded catchphrases). Closed [polar stance](questions.md#polar-stance) particles use **-l** / **-m**. |
 | **Speech act** | Closed **`jal` / `jol` / …** set ([speech act](core.md#speech-act)). |
 
-#### Discourse markers (`/x/`): overview
-<a id="discourse-markers-x"></a>
+#### Continue (`/x/`): overview
+<a id="continue-x"></a>
 
 | Family | Ending job |
 |--------|------------|
@@ -434,7 +434,7 @@ Institutions mint a native handle from the long title’s **content roots** (ski
 |------|----|
 | 1 | From each content root, take **first vowel + next consonant** (`abogo` → `ab`, `alodo` → `al`, `ululo` → `ul`) |
 | 2 | Concatenate those pieces **without** mid-word **`x`** |
-| 3 | If the string ends in a consonant, add the **last root’s 2nd vowel** (the same cut as a [letter pronoun](pronouns.md)) |
+| 3 | If the string ends in a consonant, add the **last root’s 2nd vowel** (the same cut as a [short resume](pronouns.md)) |
 | 4 | If that root already names something else, **lengthen** (include the next vowel of a distinctive root) |
 
 ```
@@ -496,7 +496,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 ## See also
 
-- [pronouns.md](pronouns.md): anaphoric **-r**; special **`ugobo`** / **`edone`** / **`aha`** / **`enenu`** / **`adoro`**
+- [pronouns.md](pronouns.md): resume **-r**; special **`ugobo`** / **`edone`** / **`aha`** / **`enenu`** / **`adoro`**
 - [plurality.md](plurality.md): **-sh** after the ending
 - [core.md](core.md): role letters, writing words, [citation](core.md#citation-forms)
 - [spans.md](spans.md#loans): mention / opaque when the **form** or a foreign acronym is the point

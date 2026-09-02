@@ -77,7 +77,7 @@ gloss: `z-sushi-x-coffee-x-tea`
 Walk the list in this order:
 
 1. Exact **`xuxul`** / **`xuxur`** / **`xuxum`** → span close.
-2. After PoS: one vowel + `x` + one vowel + a span ending → **span open** (or atomic / anaphor / empty per [spans](spans.md)).
+2. After PoS: one vowel + `x` + one vowel + a span ending → **span open** (or atomic / resume / empty per [spans](spans.md)).
 3. After PoS: one vowel **`a`** / **`u`** / **`o`** + `x` + longer root + ending → **role compound**.
 4. Longer material before `x`, then `x` + single stance vowel **`a`** / **`e`** / **`o`** / **`u`** + ending → **value** (need host) or **ability** (non-need host).
 5. Longer material before `x`, then `x` + material that matches **number stem** grammar (writing **`+`** / **`-`** / **`#`** / **`_`**, speech **`r`+V…**, including digit morph **`+N`** / **`-N`** / **`#N`**) + ending → **numeric derivation**.
@@ -210,7 +210,7 @@ Try each item before opening **Show answer**. Recognize a lexical kind vs produc
 
 ## See also
 
-- Word-initial **`x`** discourse role: [core.md](core.md#discourse-markers-x)
+- Word-initial **`x`** continue: [core.md](core.md#continue-x)
 - Phonotactics of mid-word **`x`**: [phonology.md](phonology.md#phonotactics)
 - [ability.md](ability.md) / [values.md](values.md) / [roles.md](roles.md) / [numeric-derivation.md](numeric-derivation.md)
 - Named handles vs long titles: [reference-suffix.md](reference-suffix.md#named-handles)

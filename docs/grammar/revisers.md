@@ -117,7 +117,7 @@ gloss: `al` · `z-grace` · `v-walk`
 *Additionally, Azawan goes.*
 ```
 
-Adversative *but* / *however*, *therefore*, *meanwhile*, and standalone *next* use other `/x/` roots ([core.md](core.md#discourse-markers-x)). Narrative *and then* between full sentences is clause **`xan`**.
+Adversative *but* / *however*, *therefore*, *meanwhile*, and standalone *next* use other `/x/` roots ([core.md](core.md#continue-x)). Narrative *and then* between full sentences is clause **`xan`**.
 
 ### Translation practice
 <a id="translation-practice"></a>

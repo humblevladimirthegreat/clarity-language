@@ -194,7 +194,7 @@ From [numbers.md](../grammar/numbers.md#marker-vowel-referential-identity): **sc
 ### Call / vocative
 
 **As used:** Left-edge `/j/` addressing (`jazawan`); vocative also used for `/j/` **-sh**.  
-**Where:** [core.md](../grammar/core.md#utterance-markers-j), [plurality.md](../grammar/plurality.md)
+**Where:** [core.md](../grammar/core.md#turn-j), [plurality.md](../grammar/plurality.md)
 
 ### Capable / temporary can’t / modifiable can’t / irreversible can’t
 
@@ -295,13 +295,13 @@ From [numbers.md](../grammar/numbers.md#marker-vowel-referential-identity): **sc
 ### Content question
 
 **As used:** Anchor alias for fill-ask.  
-**Where:** [questions.md](../grammar/questions.md#content-questions)  
+**Where:** [questions.md](../grammar/questions.md#fill-ask-r)  
 **Near:** *fill-ask*
 
 ### Continue / discourse marker (`/x/`) / extend
 
 **As used:** Keep the opener’s speech act; clause joins and **sentence linkers**. Word-initial **x** ≠ mid-word **`x`**.  
-**Where:** [core.md](../grammar/core.md#discourse-markers-x)  
+**Where:** [core.md](../grammar/core.md#continue-x)  
 **Near:** *turn*, *sentence linker*, *discourse reviser*
 
 ### Count / ordinal / digit-string / overlay (numbers)
@@ -639,7 +639,7 @@ From [numbers.md](../grammar/numbers.md#marker-vowel-referential-identity): **sc
 ### Polar question / yes/no / polar stance / reaction word / yes/no polarity
 
 **As used:** Ask with **no** join **-r**; closed `/j/` particles **`jael` / `juel` / …**; confirm tags as a **second bare turn**.  
-**Where:** [questions.md](../grammar/questions.md), [core.md](../grammar/core.md#utterance-markers-j)
+**Where:** [questions.md](../grammar/questions.md#polar-stance), [core.md](../grammar/core.md#turn-j)
 
 ### Preference standing (circumstantial / internal / protective)
 
@@ -782,7 +782,7 @@ See *mechanism*. Everyday *would work* vs marked *needs* vs *has to be*.
 ### Turn / utterance / utterance marker (`/j/`) / jump
 
 **As used:** New speech move (`/j/`) vs continue (`/x/`).  
-**Where:** [core.md](../grammar/core.md#utterance-markers-j)
+**Where:** [core.md](../grammar/core.md#turn-j)
 
 ### Under question
 
@@ -808,7 +808,7 @@ See *mechanism*. Everyday *would work* vs marked *needs* vs *has to be*.
 ### Utterance framing
 
 **As used:** Editor/core cluster: `/j/` turn vs `/x/` continue vs omissible **`jal`**. The core page does not use this exact heading; it teaches the pieces.  
-**Where:** [core.md](../grammar/core.md#utterance-markers-j)
+**Where:** [core.md](../grammar/core.md#turn-j)
 
 ### Values / value ascription
 

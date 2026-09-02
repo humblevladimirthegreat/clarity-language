@@ -17,7 +17,7 @@ When capability **is** one content root (*sing*, *lift*, *lead*), write that roo
 PoS + HOST + x + {a|e|o|u} + {-l|-m|-n|-r}
 ```
 
-Use the host’s usual first letter (`/v/` for an event, `/ɡ/` for a property). The vowel says *can* or *how they can’t*; the ending is the host sense (**-l** literal, **-m** metaphorical, **-n** proper, **-r** anaphor).
+Use the host’s usual first letter (`/v/` for an event, `/ɡ/` for a property). The vowel says *can* or *how they can’t*; the ending is the host sense (**-l** literal, **-m** metaphorical, **-n** proper, **-r** resume).
 
 #### Stance vowels
 <a id="ability-stance"></a>

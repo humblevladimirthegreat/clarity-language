@@ -204,7 +204,7 @@ gloss: `z-tea` · `z-coffee` · `zul`
 <a id="unspecified-member-r-phrase-a--o"></a>
 <a id="something-anything-r"></a>
 
-**-r** on **a** / **o** / **e** / **u** marks an **unspecified member** of the join. Content words keep their own **-r** job (anaphor); this **-r** is the join’s “someone / something in this list.”
+**-r** on **a** / **o** / **e** / **u** marks an **unspecified member** of the join. Content words keep their own **-r** job (resume); this **-r** is the join’s “someone / something in this list.”
 
 | Vowel | Form | Reading |
 |-------|------|---------|
