@@ -45,7 +45,7 @@ Grammar tables may keep a column named **Gloss** for free English. When a table 
 
 | Agalan distinction | Loose free does |
 |---------------------|-----------------|
-| Cast / letter anaphors (`zuzur` + “(A)”) | Ordinary *I / you / he / she / they*, or a **name** once known |
+| Cast / short resumes (`zuzur` + “(A)”) | Ordinary *I / you / he / she / they*, or a **name** once known |
 | Role metalanguage (`speaker`, `listener`, `interlocutors`) | *I / you / we* |
 | Join packaging (open `zam` vs closed `zal`, exclusive `dol`, fence shape) | Plain *and / or*; no “exactly one”, no open-list footnotes |
 | Sense-picking **-l / -m / -n** | Never (already omitted from morph when they only pick sense) |
@@ -94,7 +94,7 @@ Same English label for `zugobom` and `zugobon` is fine: both are the *speaker* s
 
 **Closed overlays** ([sense-form](../grammar/special-vocabulary.md#sense-form)): gloss the overlay reading for that `(sense_form, pos)`, not the ordinary lexicon literal. Prefer short stable **English** labels (`witnessed`, `COMMENT`, `SAME`, `plan`, `DECISION`, …). The Agalan letters themselves follow the [published host root](parser-pipeline.md#closed-forms-follow-lexicon), except vowel-only join stems (`an` / `on` / …).
 
-**Special pronouns** ([pronouns.md](../grammar/pronouns.md)): `zugobon` / `zebonen` / `zahagen` / `zenenun` / `…orodo…` → `z-speaker` / `z-listener` / `z-interlocutors` / `z-someone` / `…-next-clause` — never emoji etymology.
+**Special pronouns** ([pronouns.md](../grammar/pronouns.md)): `zugobon` / `zedonen` / `zahan` / `zenenun` / `…orodo…` → `z-speaker` / `z-listener` / `z-interlocutors` / `z-someone` / `…-next-clause` — never emoji etymology.
 
 ## Morph gloss format
 
@@ -199,11 +199,11 @@ Bake join / reviser **job** into the English label (including open vs closed whe
 | `jol` | `j-question` | *(yes/no or fill-ask)* |
 | `zugobol` | `z-microphone` | *a microphone* |
 | `zugobon` | `z-speaker` | *I* / *the speaker* |
-| `zebonen` | `z-listener` | *you* / *the listener* |
+| `zedonen` | `z-listener` | *you* / *the listener* |
 | `zazawan` | `z-grace` | *Azawan* |
-| `zahagen` | `z-interlocutors` | *we* (speaker ∪ address set) |
+| `zahan` | `z-interlocutors` | *we* (speaker ∪ address set) |
 | `zugobonsh` | `z-speaker-sh` | *I and associates* |
-| `zebonensh` | `z-listener-sh` | *you-all* (address set) |
+| `zedonensh` | `z-listener-sh` | *you-all* (address set) |
 | `guzumum` | `g-happy` | *happy* |
 | `huhunum` | `h-witnessed` | *per memory* |
 | `howoram` | `h-plan-sketch` | *as a sketch plan* |
@@ -212,7 +212,7 @@ Bake join / reviser **job** into the English label (including open vs closed whe
 
 ### Dialogue turn (morph + loose free)
 
-Agalan: `jael zugobon zam zebonen zal guzumum.`
+Agalan: `jael zugobon zam zedonen zal guzumum.`
 
 ```
 gloss: `j-yes` · `z-speaker` · `z-and.open` · `z-listener` · `z-and` · `g-happy`
@@ -220,7 +220,7 @@ gloss: `j-yes` · `z-speaker` · `z-and.open` · `z-listener` · `z-and` · `g-h
 *Yes — you and I are happy.*
 ```
 
-(Prefer **`zahagen guzumum`** when the point is interlocutor *we*, not an explicit two-name census.)
+(Prefer **`zahan guzumum`** when the point is interlocutor *we*, not an explicit two-name census.)
 
 ### Metaphor vs overlay vs literal
 
@@ -256,7 +256,7 @@ gloss: `x-starting-with` · `z-problem` · `g-first` · `z-speaker-sh` · `h-ple
 
 ### Inclusive *we* (interlocutors)
 
-Agalan: `jael xamalal zahagen howoram vawalal vul.`
+Agalan: `jael xamalal zahan howoram vawalal vul.`
 
 ```
 gloss: `j-yes` · `x-therefore` · `z-interlocutors` · `h-plan` · `v-walking` · `v-not`

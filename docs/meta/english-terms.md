@@ -2,9 +2,7 @@
 
 Editor inventory of **locked English names** for constructions, slots, and closed moods in the learner grammar. **Not** learner text. Grammar pages must **not** link here.
 
-This page is the standardized metalanguage after [english-terms-plan.md](english-terms-plan.md). It is **not** a recommendation to rename. Locked names live in that plan; this page restates them for grep and drafting.
-
-**Source of names:** the plan’s Locked names / Combine / Split tables, mapped onto current `docs/grammar/` homes.
+This page is the standardized metalanguage for learner-facing English names. It is **not** a recommendation to rename. Use these names in `docs/grammar/` and editor blurbs.
 
 ## How to read
 

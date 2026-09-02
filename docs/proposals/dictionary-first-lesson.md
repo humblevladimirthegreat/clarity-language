@@ -10,7 +10,7 @@ Every lexicon row is a **root** plus **senses**. Every content word a learner wi
 
 The first usable object is therefore a **citation word**: prefix-less **root + ending**, the same shape as a lexicon head or a one-word turn (`odogol.`, `uzumum.`, `azawan.`). Learners should **hear and say** those words: [phonology.md Beginner](../grammar/phonology.md#beginner) (vowel and consonant tables, stacked vowels as separate syllables) belongs **before this lesson or in the same sitting**, not after the first clause. Then add the role letter and a tiny clause still in that sitting (or the next beat of core).
 
-This lesson also introduces **-r** as “already in the talk / not a new dictionary hit,” **without** letter pronouns, full-root pronouns, or specials (`ugobo` / `ebone` / …).
+This lesson also introduces **-r** as “already in the talk / not a new dictionary hit,” **without** short resumes, full-root resumes, or specials (`ugobo` / `edone` / …).
 
 ## Goals
 
@@ -67,7 +67,7 @@ Optional: show the lexicon row for `odogo` / `uzumu` / `azawa` so learners see *
 
 **Phonology Beginner first or together.** Suggested order after introduction: **phonology Beginner** → **dictionary cites** (this lesson) → rest of **core** (role letters, SOV, force). Same sitting is fine: a short sound table, then cites you can pronounce. Do not park phonology Beginner after the first clause; saying `odogol` is part of the dictionary beat.
 
-Phonology Intermediate stays later (word anatomy with prefixes). [vowel-series.md](../grammar/vowel-series.md) still waits until clause force (`jal` / `jol` / `jel` / `jul`) exists — that is a **job map**, not the IPA table.
+Phonology Intermediate stays later (word anatomy with prefixes). [vowel-series.md](../grammar/vowel-series.md) still waits until speech act (`jal` / `jol` / `jel` / `jul`) exists — that is a **vowel series**, not the IPA table.
 
 **Prefer for the cite beat:** first Beginner subsection of [core.md](../grammar/core.md) (before role-letter table), **or** a very short page **immediately after** phonology Beginner (or interleaved with it) and **immediately before** the rest of core, then merge into core when the beat is stable.
 
@@ -89,7 +89,7 @@ English → Agalan, citation only, then one prefixed line:
 | *that dog* (you just said `odogol.`) | `odogor.` |
 | *A dog is blue.* | `zodogol gelulul.` |
 
-No fill-the-blank letter pronouns. No `zugobon` / `zebonen`.
+No fill-the-blank short resumes. No `zugobon` / `zedonen`.
 
 ## Traps (writer notes; keep learner prose affirmative)
 

@@ -30,7 +30,7 @@ describe("parse — core.md beginner", () => {
     assert.equal(body.clause.units[1]!.kind, "vp");
   });
 
-  it("parses zadagal gelulul. as zero-copula predicate", () => {
+  it("parses zadagal gelulul. as classification predicate", () => {
     const result = parseText("zadagal gelulul.");
     const units = result.utterances[0]!.bodies[0]!.clause.units;
     assert.equal(units.length, 2);

@@ -1,18 +1,18 @@
 # Rainy evening — Pure Agalan dialogue
 
-A short three-speaker scene (~30 turns) using **only published Agalan roots** (no foreign `<>` words). Names are nativized phrasal compounds (`ROOT x ROOT` … + **-n**). After a name is introduced, later turns resume it with a letter **-r** pronoun (`zuzur` / `zuber` / `zamer`, …), not the full name — **including for self and addressee** (prefer name pronouns over **`ugobo`** / **`ebone`**). Inclusive *we* (interlocutors) uses **`ahage`** (`zahagen`) when membership is the talk-participants, not a name census.
+A short three-speaker scene (~30 turns) using **only published Agalan roots** (no foreign `<>` words). Names are nativized phrasal compounds (`ROOT x ROOT` … + **-n**). After a name is introduced, later turns resume it with a letter **-r** pronoun (`zuzur` / `zuber` / `zamer`, …), not the full name — **including for self and addressee** (prefer name pronouns over **`ugobo`** / **`edone`**). Inclusive *we* (interlocutors) uses **`aha`** (`zahan`) when membership is the talk-participants, not a name census.
 
 Each turn has: **Agalan** · **gloss** (PoS + English sense; see **[glosses.md](../meta/glosses.md)**) · **strict** free English (packaging spelled out) · **loose** free English (idiomatic paraphrase — [strict vs loose](../meta/glosses.md#strict-vs-loose-free-english)).
 
 **Cast**
 
-| Role | Name | Roots | Letter anaphor |
+| Role | Name | Roots | Short resume |
 |------|------|-------|----------------|
 | A | **Uzuzuxogoven** | `uzuzu`×`ogove` (*sushi*×*coffee*) | `zuzur` / `duzur` / `juzur` … |
 | B | **Ubenaxuzonun** | `ubena`×`uzone` (*hospitality*×*optimism*) | `zuber` / `duber` / `juber` … |
 | C | **Amedaxogonon** | `ameda`×`ogono` (*fellowship*×*bond*) | `zamer` / `damer` / `jamer` … |
 
-**Features touched:** vocatives; polar stance; `jol` / `jom` / `jel` / `jem` / `jum`; omissible `jal`; name **-r** (self / addressee / third); special **`ahage`** (inclusive *we*); generic **`enenu`** / next-clause **`orodo`**; phrase joins + revisers; restrictors; values; evidentiality; COMMENT; plan/predict; causation; comparatives/equatives; numbered alternatives; ability; role compound; SAME; plurality **-sh**; clause `xan`; linkers; `x#e-` / `x#e`; zero-copula; emotion compose; universality; aside span; join-act verbs.
+**Features touched:** vocatives; polar stance; `jol` / `jom` / `jel` / `jem` / `jum`; omissible `jal`; name **-r** (self / addressee / third); special **`aha`** (inclusive *we*); generic **`enenu`** / next-clause **`orodo`**; phrase joins + revisers; restrictors; values; evidentiality; COMMENT; plan/predict; causation; comparatives/equatives; numbered alternatives; ability; role compound; SAME; plurality **-sh**; clause `xan`; linkers; `x#e-` / `x#e`; classification; emotion compose; universality; aside span; join-act verbs.
 
 ---
 
@@ -72,7 +72,7 @@ strict: *However — that one (B), per memory — it rains.*
 
 loose: *Still — it's raining, as I remember.*
 
-**B:** `jael xamalal zahagen howoram vawalal vul.`
+**B:** `jael xamalal zahan howoram vawalal vul.`
 
 gloss: `j-yes` · `x-therefore` · `z-interlocutors` · `h-plan` · `v-walking` · `v-not`
 
@@ -104,7 +104,7 @@ strict: *In other words, that one (A) lacks the capacity to walk.*
 
 loose: *In other words, they can't manage walking.*
 
-**C:** `x#e- zuzebul g#1. zahagen haweroxur.`
+**C:** `x#e- zuzebul g#1. zahan haweroxur.`
 
 gloss: `x-starting-with` · `z-problem` · `g-first` · `z-interlocutors` · `h-pleasure-x-unmet`
 
@@ -301,7 +301,7 @@ loose: *Ha — we're home.*
 | `azuda` | standing |
 | `ezebe` | speech; *dialogue* (metaphorical) |
 | `enenu` | someone (generic person) |
-| `ahage` | interlocutors (inclusive *we*) |
+| `aha` | interlocutors (inclusive *we*) |
 | `orodo` | next-clause |
 | `alu` | laugh; *amusement* (metaphorical) |
 | `uhunu` / `ejara` / `ogugu` | fishing / ear / thought; *witnessed* / *hearsay* / *COMMENT* (overlays) |
