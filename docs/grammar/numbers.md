@@ -203,9 +203,11 @@ Speech always uses one full CV word. You already know PoS + marker + digits + en
 1. **PoS:** same prefix inventory as elsewhere; [roles for number words](#parts-of-speech-on-numbers) below.
 2. **Number marker:** consonant **r** plus a vowel **V** (see [Marker vowel](#marker-vowel-referential-identity)). **V** is usually a single vowel; end-relative ordinals use digraph **`eu`**. The PoS+`r` cluster is a [number-only letter-cluster exception](phonology.md#phonotactics).
 3. **Zero or more digit groups:** each group is an optional exponent and optional mantissa digits (at least one of the two **when the group is present**, except a [digitless exponent](#digitless-exponents) group is **`ba`/`bu` alone**). Digits sit next to each other with no **x**. Sign, when it applies, is once for the whole word ([Sign](#sign)). **No groups** = [unspecified magnitude](#zero-digit-groups) of that marker identity, or [digitless **-r** resume](#number-endings).
-4. **Ending:** `-l` / `-m` / `-n` / `-r` with [number-specific meanings](#number-endings). Group reference stays on ordinary nouns (**-sh**).
+4. **Ending:** `-l` / `-m` / `-n` / `-r` with [number-specific meanings](#number-endings).
 
 **Writing** for free number words uses a [preferred shorthand](#writing-preferred-shorthand) for the marker and body (`g+3`, `g+`, `g#-2`). Speech is always the full CV form.
+
+**Related form:** group reference uses ordinary nouns with [**-sh**](plurality.md).
 
 ### Parts of speech on numbers
 <a id="parts-of-speech-on-numbers"></a>
@@ -507,7 +509,7 @@ Same under `/z/` `/d/` `/b/`. Soft **`g~+e3`** ≈ *about in the thousands band*
 | **`g=#-2`** | resume that prior end-relative place |
 | **`g#-`** | unspecified end-relative rank ([zero groups](#zero-digit-groups)) |
 
-`g#2` = numbered *2nd* (from the start); `g#-2` = *2nd from the end*; `g#e` = last as landmark; `g#e-` = start landmark (no mantissa). Hyperbole and generation stay on those sections.
+`g#2` = numbered *2nd* (from the start); `g#-2` = *2nd from the end*; `g#e` = last as landmark; `g#e-` = start landmark (no mantissa). *Hyperbole* is [gazillion](#hyperbole-gazillion); *generation* is [ordinal generation](#ordinal-generation).
 
 **Overlays** inherit:
 
@@ -589,7 +591,9 @@ Write free numbers with second-slot marks or trailing letters consistently. Deri
 
 **Gray zone (either OK):** discourse *Finally* / *Starting with* (`x#e` / `x#e-` vs `xrebal` / `xrebual` — lean spelled in prose, shorthand in outlines); digitless plural (`g+` / `gral`); cheers (`j+e` / `jrabal`); soft free specials when hedging a discourse particle rather than a quantity.
 
-**Writing defaults:** (1) free numeral → shorthand by default; (2) content-root derivation → spelled CV by default; (3) shorthand in derivation tables is schematic only; (4) number second-slot marks (`~`/`@`/`=`) stay on free numbers, not on derived `NUM`.
+**Not the same job as:** derived `NUM` (no second-slot `~`/`@`/`=`). Free numbers take those marks.
+
+**Writing defaults:** (1) free numeral → shorthand by default; (2) content-root derivation → spelled CV by default; (3) shorthand in derivation tables is schematic only.
 
 ### Measure phrases and ranges
 <a id="measure-phrases"></a>

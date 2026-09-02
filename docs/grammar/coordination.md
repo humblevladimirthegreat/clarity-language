@@ -163,7 +163,9 @@ These are the joins you meet first. Each row is **bare** (0 items) or **focus** 
 | `zoel` / `zoem` + NP | focus | *only try X* / *try X first* |
 | `zael` / `zaem` | bare | *it's a draw* / *tie* · *probably a tie* |
 
-Same pattern under `/d/` `/b/` (`dal`, `dam`, …), `/v/` (`val`, `vam`, `vul`, …), and `/x/` (`xal`, `xam`, `xul`, …). Under `/ɡ/` `/h/` `/w/`, emptiness readings belong to [restrictors](restrictors.md) (circumstance), not to “nobody / nothing” as an entity.
+Same pattern under `/d/` `/b/` (`dal`, `dam`, …), `/v/` (`val`, `vam`, `vul`, …), and `/x/` (`xal`, `xam`, `xul`, …).
+
+**Compare with:** under `/ɡ/` `/h/` `/w/`, emptiness is circumstance on [restrictors](restrictors.md), not “nobody / nothing” as an entity.
 
 ### Negation (**`u`**)
 <a id="negation-u"></a>
@@ -483,7 +485,7 @@ Leading **u** on **a** / **o** / **e** flips the base join. Plain **u** (negatio
 | **uo** | *anything but* the listed (free choice outside) |
 | **ue** | rank reversal (*A after B after C*) |
 
-Those three stacks are the invert set. Domain for **ua** / **uo** comes from context or SHARED `/ɡ/` as kind — [universals, domains, and generics](#universals-domains-generics). Only **`…om`** carries *or none*; **-m** on invert forms does not add empty-allowed. **-r** stays on single-vowel **a** / **o** / **e** / **u**.
+Those three stacks are the invert set. Domain for **ua** / **uo** comes from context or SHARED `/ɡ/` as kind — [universals, domains, and generics](#universals-domains-generics). Only **`…om`** carries *or none*; **-m** on invert forms does not add empty-allowed. **-r** attaches only to single-vowel **a** / **o** / **e** / **u**.
 
 ```
 `zadedal zogovel zual.`

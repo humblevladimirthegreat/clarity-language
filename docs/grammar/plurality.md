@@ -250,7 +250,9 @@ Most useful with a [phrase join](coordination.md): SHARED singular scale under *
 | `zulebolsh gudurum` | *the file-boxes are heavy* (members / plain) |
 | `zulebolsh gudurumsh` | *the file-boxes are heavy collectively* |
 
-**-rsh** on `/ɡ/` resumes a prior **collective** ascription (*still collectively so*). Entity plurality stays on the noun.
+**-rsh** on `/ɡ/` resumes a prior **collective** ascription (*still collectively so*).
+
+**Related form:** entity plurality uses **-sh** on the noun.
 
 A **scale or continuum** adjective in [comparatives](comparatives.md) and [ranges](numbers-applied.md#ranges) stays **singular** (one line). Keep SHARED scale and continuum adjectives singular.
 

@@ -70,7 +70,7 @@ gloss: `z-sushi-x-coffee-x-tea`
 
 <AgelanInspect text="zuzuzuxogovexadedan." />
 
-[Phrasal names](reference-suffix.md#phrasal-proper-names) use the same left-to-right order (given × family × further title). An office’s **handle** is one root, not this compound ([named handles](reference-suffix.md#named-handles)). [Viewpoint laterals](roles.md#viewpoint-laterals) stay **two** roots (`DIR x ANCHOR`). Span, role, values / ability, and numeric jobs use **one** mid-word **`x`**.
+[Phrasal names](reference-suffix.md#phrasal-proper-names) use the same left-to-right order (given × family × further title). An office’s **handle** is one root, not this compound ([named handles](reference-suffix.md#named-handles)). [Viewpoint laterals](roles.md#viewpoint-laterals) are **two** roots (`DIR x ANCHOR`). Span, role, values / ability, and numeric jobs use **one** mid-word **`x`**.
 
 ### Decision order
 
@@ -92,7 +92,7 @@ Pick **one** package for the job.
 
 | Package | When | Example |
 |---------|------|---------|
-| **Two words** | Two slot-fillers, or another subsystem already owns the relation | `zodogol zagadal` *a dog and a cat*; `zodogol gelulul` *a blue dog* (property = `/ɡ/`) |
+| **Two words** | Two slot-fillers, or a relation that already has its own marking: join / adjective | `zodogol zagadal` *a dog and a cat*; `zodogol gelulul` *a blue dog* (property = `/ɡ/`) |
 | **`x` compound** | One referent; you still hear KIND then FIELD (live label, sense-narrowing, multipart name) | `golovexurul` *love in the crush sense*; `zuzuzuxogoven` *Sushi-Coffee* |
 | **Lexical kind** | One conventional kind already closed as a single lexicon entry | `zohohulabedel` *bedroom*; `zunowel` *sunflower* ([lexical compounds](#lexical-compounds)) |
 

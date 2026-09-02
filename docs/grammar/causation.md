@@ -208,10 +208,6 @@ main sentence …  hadorom / hezazem / hurugum  badorol   [dependent sentence]
 
 **`adoro`** ([next-clause pronoun](pronouns.md#special-pronouns)) sits **last in the main sentence**. The dependent is a full sentence (give it its own force word only if the speech act differs). See [dependent clauses](core.md#dependent-clauses).
 
-Clause inclusive **`xaom` / `xaol`** still **bundle** peer sentences ([clause-level joins](coordination.md#clause-level-coordination)). For *if* / *because*, use **`adoro`**.
-
-Open-sufficient vs necessary then live on **which relation** you choose, and on restrictors (`hal`, …).
-
 ### `IF` vs `IFF` vs `BECAUSE`
 <a id="if-vs-iff"></a>
 <a id="if-vs-because"></a>
@@ -251,11 +247,13 @@ gloss: `z-grace` · `v-walk` · `h-BECAUSE` · `b-next-clause` · `z-courage` ·
 | Clause–clause inclusive bundle | `xaom` / `xaol` as **coordination only** |
 | Mixed NP + clause | **`adoro`** under a relation, or a span / noun-form of the clause in `/b/` / `/d/` |
 
+Open sufficient vs necessary uses the same joins and restrictors (`hal`, …) you already have; pick the relation that matches the English job.
+
 ### Cause (mechanism framing)
 <a id="cause"></a>
 <a id="cause-mood"></a>
 
-Mark a clause as **mechanism-framed** (*how the gears engage*) with one closed mood root. Sufficient / necessary / *if* / *because* stay on the joins and clause poles above. Exceptionlessness stays on [universality](special-vocabulary.md#universality).
+Mark a clause as **mechanism-framed** (*how the gears engage*) with one closed mood root.
 
 **Shape:** floating **`/h/`** mood **`egega`** ⚙️ *gear* → *mechanism* (optional `/w/` when scoped only to a preceding `/ɡ/`). Prefer floating `/h/`. Ending = **-m** only (metaphorical overlay): **`hegegam`**. Ordinary content still available (`zegegal` *a gear*; `vegegal` *to mesh / engage*).
 
@@ -267,16 +265,13 @@ gloss: `h-open-to` · `b-effort` · `h-CAUSE`
 *Open to effort, as mechanism* (how the payoff gears turn)
 ```
 
-Use **CAUSE** when the clause is doing **mechanism highlight**. Everyday *would work* stays open sufficient without this mood.
+Use **CAUSE** when the clause is doing **mechanism highlight**.
 
-| English bundle | Prefer | Mnemonic |
-|----------------|--------|----------|
-| *how it works / the mechanism is…* | **CAUSE** (`hegegam`) on the claim | ⚙️ gear train |
-| *X would work / is among routes* | open sufficient (`…aom` / `haon`) | **`a`** add a route |
-| *always by nature* | [**NATURAL**](special-vocabulary.md#universality) (`hafafal`) + evidential `/h/` | 🍎 nature’s force |
-| *because / if* + clause | [clause poles](#if-vs-iff) (`hurugum` / `hadorom`) | 🧱 foundation / 🚪 door |
+**Compare with:** *would work* / among routes uses open sufficient (`…aom` / `haon`).
 
-Joins and **`adoro`** poles pick **condition type**. **`egega`** picks **mechanism frame**. **`afafa`** warrants exceptionlessness; evidential `/h/` is *how you know*. Stack when more than one of those jobs applies.
+**For *because / if*, use:** [clause poles](#if-vs-iff) (`hurugum` / `hadorom`).
+
+Stack **CAUSE** with a join, a clause pole, universality, or evidential `/h/` when more than one of those jobs applies.
 
 ### Preference vs law
 <a id="preference-vs-law"></a>

@@ -117,7 +117,7 @@ gloss: `al` · `z-grace` · `v-walk`
 *Additionally, Azawan goes.*
 ```
 
-Adversative *but* / *however*, *therefore*, *meanwhile*, and standalone *next* stay other `/x/` roots ([core.md](core.md#discourse-markers-x)). Narrative *and then* between full sentences is clause **`xan`**.
+Adversative *but* / *however*, *therefore*, *meanwhile*, and standalone *next* use other `/x/` roots ([core.md](core.md#discourse-markers-x)). Narrative *and then* between full sentences is clause **`xan`**.
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -341,7 +341,9 @@ gloss: `j-grace` · `al` · `z-courage` · `v-walk`
 *Azawan: additionally, Ululon goes.* (vocative, then discourse reviser)
 ```
 
-Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** are these revisers (in-clause or discourse by placement). Longer prefix-less **root + ending** outside a sentence (`odogol`) is [citation](core.md#citation-forms). Prefixed + ending forms of the same vowels (`zal`, `zam`, `val`, …) stay [joins](coordination.md#join-series-ending-shared).
+Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** are these revisers (in-clause or discourse by placement). Longer prefix-less **root + ending** outside a sentence (`odogol`) is [citation](core.md#citation-forms).
+
+**Related form:** prefixed `zal` / `zam` / `val` … package lists with [joins](coordination.md#join-series-ending-shared).
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>

@@ -32,7 +32,7 @@ gloss: `j-soft-ask` · `z-courage-proper` · `h-COMMENT-soft` · `v-sleep`
 *I wonder whether Ululon sleeps.* — soft commentary plus a soft ask
 ```
 
-Use COMMENT when the clause is doing **first-person cognitive commentary**. Content verbs stay ordinary (`vodohol` *to think* as a deliberate event); COMMENT **frames** the clause.
+Use COMMENT when the clause is doing **first-person cognitive commentary**. **Not the same job as:** `vodohol` *to think* as a deliberate event. COMMENT **frames** the clause.
 
 Same published root, special `/h/` reading: `hodohom` is commentary; `zodohol` is *a thought*.
 
@@ -40,7 +40,7 @@ Same published root, special `/h/` reading: `hodohom` is commentary; `zodohol` i
 <a id="comment-hold"></a>
 <a id="hold-endings"></a>
 
-On **`odoho`**, **-l / -m / -r** mark **how you hold** the commentary. **-n** stays ordinary [proper](reference-suffix.md#proper-name--n). Habitual rumination is **`hual`** (and/or a named thought).
+On **`odoho`**, **-l / -m / -r** mark **how you hold** the commentary. **-n** is ordinary [proper](reference-suffix.md#proper-name--n).
 
 | Ending | Form | Hold | Reading | Mnemonic |
 |--------|------|------|---------|----------|
@@ -184,8 +184,6 @@ Mark **how you know** a world-claim (what happened, what caused what, what someo
 
 Each root is a **channel** the claim came through: memory catch, playback, trail of cases, detective work, listening, gut, tale.
 
-First-person *I think* stays [COMMENT](#comment) (`odoho`). Use this inventory when you are sourcing a **world-claim**.
-
 ```
 `zazawan huvuvum vawalal.`
 
@@ -193,6 +191,8 @@ gloss: `z-grace-proper` · `h-WITNESSED` · `v-walk`
 
 *Azawan walks — from memory / witnessed.*
 ```
+
+**For *I think*, use:** [COMMENT](#comment) (`odoho`). This inventory is *how you know a world-claim*.
 
 | Mood | Form | Job | Mnemonic |
 |------|------|-----|----------|
@@ -226,9 +226,9 @@ gloss: `z-courage-proper` · `h-TOLD` · `v-write`
 
 Ordinary content stays available: `zuvuvul` *a memory*; `veregol` *to record*; `duvuvuxruzol` *that memory that won't blank*; `zerarar` *that ear*; `zorolol` *a scroll*.
 
-**Felt** (`ehere`) is a channel of *knowing*. A feeling like fear or hope is [emotion compose](special-vocabulary.md#emotion-compose) (value + ACT + LOCUS).
+**Felt** (`ehere`) is a channel of *knowing*. **Not the same job as:** a feeling like fear or hope uses [emotion compose](special-vocabulary.md#emotion-compose) (value + ACT + LOCUS).
 
-**Told** under `/h/` is hearsay. Hearing a door stays ordinary `/v/`.
+**Told** under `/h/` is hearsay. Hearing a door is ordinary `/v/`.
 
 #### Memory / record (past framing)
 <a id="memory-record"></a>
@@ -266,12 +266,16 @@ gloss: `z-beauty-proper` · `h-NOTIONAL-fused` · `v-sing`
 *As if Uhubun sings.* — immersed in the imagined scene
 ```
 
-Use NOTIONAL when the clause is **framed as pretensive, for-the-sake-of-argument, or mind-only**. First-person *I think / I imagine* attitude stays [COMMENT](#comment). Soft imaginary *amount* stays the free number overlays in [numbers.md](numbers.md#imaginary).
+Use NOTIONAL when the clause is **framed as pretensive, for-the-sake-of-argument, or mind-only**.
+
+**For *I think / I imagine*, use:** [COMMENT](#comment).
+
+**Related form:** imaginary *amount* uses free number overlays in [numbers.md](numbers.md#imaginary).
 
 #### Hold endings (NOTIONAL)
 <a id="notional-hold"></a>
 
-On **`ahade`**, **-l / -m / -r** mark **how you hold** the as-if frame (same map as [COMMENT hold](#comment-hold)). **-n** stays ordinary [proper](reference-suffix.md#proper-name--n).
+On **`ahade`**, **-l / -m / -r** mark **how you hold** the as-if frame (same map as [COMMENT hold](#comment-hold)). **-n** is ordinary [proper](reference-suffix.md#proper-name--n).
 
 | Ending | Form | Hold | Reading | Mnemonic |
 |--------|------|------|---------|----------|

@@ -217,7 +217,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 Agalan has one resume mechanism; English does not. Approximate by crossing **what was mentioned** (antecedent role) with **what slot you need now** (pronoun role). The referent stays the same; only the English wording changes.
 
-`/x/`…`-r` is **discourse navigation**: *going back to subject X* / *returning to that thread* (removing it does not change the following claim). Clause **aboutness** (*regarding X*) stays `/h/` + `/b/` X ([adverbs](core.md#adverbs-h) / [discourse markers](core.md#discourse-markers-x)).
+`/x/`…`-r` is **discourse navigation**: *going back to subject X* / *returning to that thread* (removing it does not change the following claim). **Not the same job as:** clause **aboutness** (*regarding X*) uses `/h/` + `/b/` X ([adverbs](core.md#adverbs-h) / [discourse markers](core.md#discourse-markers-x)).
 
 #### Same-role resume
 
@@ -234,7 +234,7 @@ Agalan has one resume mechanism; English does not. Approximate by crossing **wha
 | `/j/` interjection → `/j/` | repeating that exclamation |
 | `/x/` → `/x/` | *and so* / *likewise* / the same linker again |
 
-Resume content with `-r`. Clause-force `/j/` stays a force word ([utterance markers](core.md#utterance-markers-j)).
+Resume content with `-r`.
 
 #### Quick English cheat sheet
 

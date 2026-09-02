@@ -45,7 +45,7 @@ gloss: `z-grace` · `v-walk` · `h-haste` · `h-quiet`
 | Prefix | What it limits | Place |
 |--------|----------------|-------|
 | `/h/` | the **clause** (the verb claim) | floats like any adverb; after a verb join it can sit in the shared stretch |
-| `/w/` | the **previous adjective** | stays on that adjective |
+| `/w/` | the **previous adjective** | sits on that adjective |
 
 ### Bare forms
 

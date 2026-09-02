@@ -211,7 +211,7 @@ Universal claims are **weather reports**. Default climate is usual weather. Stro
 | **NATURAL** | **`afafa`** | natural necessity (unsupported objects fall); stack ordinary [evidential](commentary.md#evidentiality) `/h/` | 🍎 *apple* → *natural* |
 | **RULE** | **`ebebe`** | holds inside a named frame; take `/b/` scope (`hebebel bahamal`) | ♟️ *board* → *rule-frame* |
 
-When a universal or habitual claim needs a warrant, use **COMMON** (`hewonol`) unless FORMAL, NATURAL, RULE, or UNCOUNTERED is the sky you mean. **`idido`** is definition or proof, not “socially preferred.” **`abulu`** is “nothing contrary came to mind”; **`zuam`** is “this list is open.” A trail of cases is evidential **`abawa`**; **`ewono`** is the usual-weather warrant. Exceptionlessness of nature is **`afafa`**; condition type stays on [joins](causation.md), and mechanism framing is [CAUSE](causation.md#cause). Preference standing in as a law stays [values](values.md) **`xo` / `xe`** ([preference vs law](causation.md#preference-vs-law)).
+When a universal or habitual claim needs a warrant, use **COMMON** (`hewonol`) unless FORMAL, NATURAL, RULE, or UNCOUNTERED is the sky you mean. **`idido`** is definition or proof, not “socially preferred.” **`abulu`** is “nothing contrary came to mind”; **`zuam`** is “this list is open.” A trail of cases is evidential **`abawa`**; **`ewono`** is the usual-weather warrant. Exceptionlessness of nature is **`afafa`**.
 
 ```
 `zazawan hual vawalal hewonol.`
@@ -221,7 +221,9 @@ gloss: `z-grace-proper` · `h-habitual` · `v-walk` · `h-COMMON`
 *Azawan always walks, usually.*
 ```
 
-Prefer floating `/h/`. **RULE** is complex `/h/` + `/b/` when you name the frame. Domain and habitual morphology stay [coordination](coordination.md#universals-domains-generics) / [restrictors](restrictors.md); this section only warrants exceptionlessness.
+Prefer floating `/h/`. **RULE** is complex `/h/` + `/b/` when you name the frame. These moods mark **how exceptionless** the claim is.
+
+**Compare with:** *who / when* uses [universal fences](coordination.md#universals-domains-generics) (`zual` / `hual` / `zuam`) and [restrictors](restrictors.md) (`hual`). Soft **-m** on the fence (`zuam` / `huam`) is open inventory, not a warrant.
 
 | Agalan | Reading |
 |---------|---------|

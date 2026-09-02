@@ -204,15 +204,9 @@ gloss: `z-grace-proper` · `h-PLAN-itinerary` · `h-DECISION-irreversible` · `v
 *Azawan’s itinerary is to walk, and the pick is settled.*
 ```
 
-Use **DECISION** when the clause marks **pick firmness**. Intention map grain stays [**PLAN**](#plan-predict). The choosing act is [join-act **`von`**](join-extras.md#join-act-verbs) (*chooses as the one*). Autonomy as a need is [**`alodo`**](values.md#need-inventory). *Can’t decide yet* on an activity is [ability](ability.md#ability).
+Use **DECISION** when the clause marks **pick firmness**.
 
-| English bundle | Prefer |
-|----------------|--------|
-| *Ululon has decided* (plus how locked) | **DECISION** (`hegegem`, …) |
-| *choose X (as the one)* | join-act **`von`** |
-| *Azawan means to …* (map grain) | **PLAN** (`howoram`, …) |
-| *choice / agency* (need) | value **`alodo`** |
-| *can’t decide* (capacity) | host + ability **`xe` / `xo` / `xu`** (or **`xa`** if able) |
+**Not the same job as:** [PLAN](#plan-predict) (map grain).
 
 #### Endings — changeability
 <a id="decision-changeability"></a>

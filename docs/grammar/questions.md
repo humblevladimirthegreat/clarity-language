@@ -98,7 +98,7 @@ gloss: `z-grace` · `v-go` · `j-yes`
 *Azawan goes. Yes.* (confirm tag = **second bare turn** after `.`)
 ```
 
-These three jobs stay distinct:
+These three jobs are distinct:
 
 | System | Forms | Job |
 |--------|-------|-----|
@@ -294,7 +294,7 @@ Under question, focus and bare join endings ask for confirmation or offer.
 - Focus **-m**: **offer** that singleton (*How about X?*, *Want X?*).
 - Focus **…ul** / **…um** / **…un**: confirm / offer denial (*Not X?*).
 - Bare **-l**: colloquial emptiness check (*Nothing?*, *Do nothing?*).
-- Bare **-m**: open emptiness / soft gap (*Got nothing?*). Fill-ask stays **…ar** / **…or** / **…er** / **…ur**.
+- Bare **-m**: open emptiness / soft gap (*Got nothing?*). Fill-ask uses **…ar** / **…or** / **…er** / **…ur**.
 - Bare / focus / multi **…ar** / **…or** / **…er** / **…ur**: [fill-ask](#fill-ask-r).
 
 Worked rank / set inventories are Advanced ([focus and bare inventory](#focus-bare-inventory)).
@@ -419,7 +419,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 ### Focus and bare inventory
 <a id="focus-bare-inventory"></a>
 
-Length **2+** (no **-r**): **-l** = pick from this closed menu; **-m** = pick or name something else (for **o**, also *or none*); **u** = *none of* the listed; **ua** / **uo** = complement of the listed; **ue** = reverse-rank among the listed. With **-r**: [fill-ask arity](#fill-ask-r). Under `/h/` / `/w/`, circumstance readings stay the [restrictor](restrictors.md) set above.
+Length **2+** (no **-r**): **-l** = pick from this closed menu; **-m** = pick or name something else (for **o**, also *or none*); **u** = *none of* the listed; **ua** / **uo** = complement of the listed; **ue** = reverse-rank among the listed. With **-r**: [fill-ask arity](#fill-ask-r). Under `/h/` / `/w/`, circumstance uses [restrictors](restrictors.md) (the set above).
 
 Join-word **-n** here is stock/usual (not [proper-name **-n**](reference-suffix.md#proper-name--n)).
 

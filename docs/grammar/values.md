@@ -293,7 +293,7 @@ gloss: `z-grace` · `v-tell` · `h-relatedness-motive-internal`
 
 Prefer **-m** on **`xu` / `xe` / `xo`** when that table’s dimension is unclear. Several values are several `/h/` or `/w/` words (`holozoxal honogoxal`), not stacked `x`-additions on one need.
 
-On these compounds, **-l / -m / -r** are the stance tables above. Literal vs metaphorical host sense stays on the **host** word.
+On these compounds, **-l / -m / -r** are the stance tables above.
 
 ```
 `zazawan vezehel holozoxal honogoxem.`
@@ -302,6 +302,8 @@ gloss: `z-grace` · `v-tell` · `h-competence-met-physical` · `h-relatedness-mo
 
 *Azawan tells: competence is met (physical) and relatedness is the internal motive.*
 ```
+
+The **host** word carries literal vs metaphorical sense.
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>

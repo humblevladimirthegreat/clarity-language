@@ -59,27 +59,31 @@ Headings, leads, and asides must make sense to someone who never saw an earlier 
 
 When two constructions split a job, tell the learner **which form to use for which English job**. Do not say a reading **stays on** another section, page, or subsystem — that is fencing for writers (“don’t reassign this”), not a cue for readers.
 
-Mark a real sibling contrast so it is easy to scan. Use **one** of these four starters (bold, then a colon), then **use X for Y** and one peer link. Do not invent other labels (`Trap:`, *Near miss:*, “Do not confuse…”, “Not to be confused with…”).
+A contrast earns a place only when the learner would **use the wrong form for this English** while reading this section. Search, the sidebar, and **See also** already list related pages. Do **not** catalog siblings “in case they look them up.”
+
+Mark that one mix-up so it is easy to scan. Use **one** of these four starters (bold, then a colon), then **use X for Y** and one peer link. Do not invent other labels (`Trap:`, *Near miss:*, “Do not confuse…”, “Not to be confused with…”).
 
 | Starter | When |
 |---------|------|
-| **Compare with:** | Default. Invite a look at a sibling the learner already met, or will reach for *now*. |
+| **Compare with:** | Default. The sibling they already met, and would reach for *now* for this English. |
 | **For *X*, use:** | One English false friend. Put the English they typed in the *X* slot (*because / if*, *I think*). |
-| **Related form:** | Soft pointer when you are not stressing a split, only naming the neighbor. |
-| **Not the same job as:** | Clear split without calling the other form wrong. Same slot or similar shape, different English job. |
+| **Related form:** | Same test, softer tone: they would pick the neighbor, but you are not stressing a clash. |
+| **Not the same job as:** | Same slot or similar shape, different English job — they would treat them as interchangeable. |
 
 The body after the starter still teaches the split. Do not follow the label with a filename alone.
 
 | Prefer | Avoid |
 |--------|--------|
-| **Compare with:** *if* / *because* / sufficient / necessary use the joins and clause poles above. Exceptionlessness uses [universality](../grammar/special-vocabulary.md#universality). | Sufficient / necessary / *if* / *because* **stay on** the joins and clause poles above. Exceptionlessness **stays on** universality. |
+| **Compare with:** *if* / *because* use the joins and clause poles above. | Sufficient / necessary / *if* / *because* **stay on** the joins. Exceptionlessness **stays on** universality. |
 | **For *I think*, use:** [COMMENT](../grammar/commentary.md#comment) (`odoho`). This inventory is *how you know a world-claim*. | First-person *I think* **stays** COMMENT. |
 | **Related form:** packaging a list uses [joins](../grammar/coordination.md) (`zal` / `val` / `xal`, …). | Phrase, VP, and clause **joins stay on** coordination.md. |
 | **Not the same job as:** [PLAN](../grammar/plan-decision.md#plan-predict) (map grain). This mood marks **pick firmness**. | Intention map grain **stays PLAN**. |
 
-Place the labeled beat **after** the worked example for this form, not in the page lead. The lead says what **this** form does. One sibling per labeled beat. Three or more siblings: a **Form · Job** table instead of a stack of starters (do not also keep the labeled paragraph).
+Place the labeled beat **after** the worked example for this form, not in the page lead. The lead says what **this** form does. **At most two** labeled beats per teach block (two equally likely mix-ups). A third sibling is not a table — omit it; the learner can open that page.
 
-Same family as ownership fences (“this page owns / does not own X”) — [teach now; don’t preview later](#teach-now-dont-preview-later). A peer link is fine when the learner already met the other form or will invent the swap *now*.
+Do **not** add a **Form · Job** (or English-bundle) table whose rows are other subsystems. Those tables are related-form inventories. A **Form · Job** table is only for **this** form’s own cells (this mood’s endings, this join series, this page’s vowel map).
+
+Same family as ownership fences (“this page owns / does not own X”) — [teach now; don’t preview later](#teach-now-dont-preview-later).
 
 This page may still use *stay* in editor English (*inventory stays in unassigned-reserved.md*). Grammar-page prose should not.
 
@@ -90,11 +94,11 @@ Default to stating only the allowed form. A contrastive negative spends the lear
 | Smell | Verdict |
 |-------|---------|
 | Boilerplate disclaimers: “X is a **root choice**, not `xa`/`xu` polarity”, “plural **-sh** stays unused on `/h/` `/w/`”, “there is no dedicated root”, “not a fourth vowel/role/join”, “**Not won’t:** …” | Delete. State what the form does instead |
-| **Trap tables** (“Not this (real traps)”, “Traps worth one look”, “Keep these for other jobs”) | Delete from body. If two forms are genuinely confusable *at this band*, use a [Compare with](#compare-with) starter (or a Form · Job table) plus an example of each |
+| **Trap tables** (“Not this (real traps)”, “Traps worth one look”, “Keep these for other jobs”) and **related-form Form · Job** catalogs | Delete from body. If the learner would use the wrong form *now*, one [Compare with](#compare-with) starter plus an example of each — not a table of every peer |
 | Inline **`Trap:`** / **“Trap:”** / *Near miss:* | Punitive or editor hygiene. Use one of the four [starters](#compare-with) |
 | “Do not confuse X with Y” / “Not to be confused with…” | Quiz warning; does not teach the job split. Use **Compare with:** / **For *X*, use:** / **Related form:** / **Not the same job as:** |
 
-**When a contrast earns its place** (all three must hold): the learner can plausibly reach for the sibling *now*; both forms appear with a real example; and the contrast fits in one or two sentences (or one table) after this form’s example. Otherwise cut it.
+**When a contrast earns its place** (all three must hold): the learner can plausibly use the sibling for **this** English *now*; both forms appear with a real example; and the contrast fits in one or two labeled sentences after this form’s example. Otherwise cut it. Do not expand a mix-up into a related-forms table.
 
 ## Mnemonics live in tables
 
@@ -138,7 +142,7 @@ Front matter that orients (psychological purpose / limits / feature criteria / b
 | 2 | The Agalan shape (minimal pattern) |
 | 3 | A **mnemonic** so the form sticks (Beginner; below) |
 | 4 | Worked example(s) |
-| 5 | [Compare with](#compare-with) a sibling — **only when the learner will reach for it now** |
+| 5 | [Compare with](#compare-with) — **only the form they would use for this English** |
 | 6 | Inventory / edge cases |
 
 Do not open a section with a complete paradigm table. Tables come after the pattern is usable.
@@ -229,7 +233,7 @@ State the **positive** rule. Do **not** list negatives by default — neither a 
 
 **Negatives earn their keep only when** a learner is expected to make that mistake — typically an English false friend, or another Agalan construction they will reach for. Then one decisive contrast (sentence or table cell) with the right link is enough. Cross-link once; do not restate the other doc.
 
-Agalan often earns them: sibling-subsystem swaps (`-sh` vs **`ahage`**, classification vs **`SAME`**, free `g+e` vs `ROOTx+e`, join **-r** vs content **-r**). Label those with [Compare with](#compare-with) (or a Form · Job table), not *Trap* / *Near miss* / “do not confuse.”
+Agalan often earns them: sibling-subsystem swaps (`-sh` vs **`ahage`**, classification vs **`SAME`**, free `g+e` vs `ROOTx+e`, join **-r** vs content **-r**). Label those with [Compare with](#compare-with), not *Trap* / *Near miss* / “do not confuse,” and not a table of every neighbor.
 
 **Skip negatives when:**
 
@@ -241,9 +245,9 @@ Do **not** require a **Not this** column on every table, or a counter-example on
 
 ## Tables
 
-- Contrast and decision tables beat encyclopedia dumps in Beginner.
+- Contrast and decision tables beat encyclopedia dumps in Beginner. A decision table is **this** form’s own readings (endings, vowel series), not a list of other pages.
 - Full inventories belong in Intermediate / Advanced, or after the teach block.
-- Prefer columns **Form · Job · Example** (or **Reading**). Add a Morph column only when endings are the point. Add **Not this** only when several rows share real confusables — not by default.
+- Prefer columns **Form · Job · Example** (or **Reading**) for **this** form. Add a Morph column only when endings are the point. Add **Not this** only when several rows share real confusables — not by default. Do not add a **Form · Job** table of related subsystems.
 - A grammar-table **Gloss** column is short free English unless the row teaches morphology ([glosses.md](glosses.md)).
 
 ## Cross-links and scope

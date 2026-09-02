@@ -116,7 +116,7 @@ A stronger wipe is [total null](#zero-exponent-derivation) **`ROOTx+0e`** (free 
 <a id="total-null"></a>
 <a id="engineering-null-morph"></a>
 
-Same anatomy as free [zero × exponent](numbers.md#zero-exponent); on ROOT it is **wipe / residue of the kind**. Free **`v+0el`** is hostless *annihilate*; **`vezehuxrazobal`** is annihilate-*score* (kind). Soft / named / resume stay on the **host ending**.
+Same anatomy as free [zero × exponent](numbers.md#zero-exponent); on ROOT it is **wipe / residue of the kind**. Free **`v+0el`** is hostless *annihilate*; **`vezehuxrazobal`** is annihilate-*score* (kind).
 
 | Shape | Reading | Example |
 |-------|---------|---------|
@@ -126,6 +126,8 @@ Same anatomy as free [zero × exponent](numbers.md#zero-exponent); on ROOT it is
 | **`ROOTx-0e`** | **absolute residue** of ROOT | `zebenexruzobal`: *debt as absolute residue*; `vujuxruzobal`: *leave pain as absolute residue* |
 | **`ROOTx-0e-`** | **micro-residue** of ROOT | `zuvuvuxruzobul`: *memory as micro-residue* |
 | **`ROOTx-0e-1`** | **engineering residue at OoM −1** of ROOT | `zebenexrubuwojazol`: *debt as deci-scale residue* |
+
+The **host ending** marks soft / named / resume.
 
 **Emptiness chain (kinds):** **`ROOTx-e`** (void of kind), **`ROOTx+0`** (resettable null), **`ROOTx+0e`** (total null), **`ROOTx+0e-`** (sterile grain), **`ROOTx+0e-1`** (engineering null at 10⁻¹). Free bare **`g+e0`** / **`Ne0`** are [ones-band / OoM-0 assert](numbers.md#bare-oom-bands) on free numbers.
 

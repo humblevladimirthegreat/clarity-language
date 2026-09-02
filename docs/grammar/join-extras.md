@@ -1,7 +1,7 @@
 # Join extras
 <a id="join-extras"></a>
 
-Content words that **name a join move** (*include*, *choose*, *without*) rather than packaging a list. Phrase, VP, and clause **joins** stay on [coordination.md](coordination.md).
+Content words that **name a join move** (*include*, *choose*, *without*).
 
 ## Intermediate
 <a id="intermediate"></a>
@@ -26,7 +26,9 @@ gloss: `z-grace` · `d-apple` · `v-includes`
 *Azawan includes/adds an apple.*
 ```
 
-These are ordinary content verbs. Sequence of clauses (*and then*) uses clause soft **-n** (`xan`, …) on [coordination.md](coordination.md#soft-n-clause). Point back at a join-act you already used with a letter pronoun or a full paraphrase; `var` is the VP join *do something*.
+**Related form:** packaging a list uses [joins](coordination.md) (`zal` / `val` / `xal`, …).
+
+These are ordinary content verbs. Sequence of clauses (*and then*) uses clause soft **-n** (`xan`, …) on [coordination.md](coordination.md#soft-n-clause). Point back at a join-act you already used with a letter pronoun or a full paraphrase.
 
 | Form | Job | Vowel cue | Example |
 |------|-----|-----------|---------|
@@ -42,8 +44,6 @@ These are ordinary content verbs. Sequence of clauses (*and then*) uses clause s
 | **`vuen`** | *deprioritizes* | **ue** undo + order | `zazawan dodugul vuen`: *Azawan deprioritizes dessert* |
 
 English *refuse* vs *leave out*: `zazawan demadel vun` (*Azawan refuses meat*) vs `zazawan demadel vuan` (*Azawan excludes meat*). One locked choice vs an open pick: `zazawan dalanel von` vs `zazawan dalanel vaon`. Rank vs trial: `zazawan damugal ven` (*prioritizes the fix*) vs `zazawan damugal voen` (*tries the fix*). *And then* between sentences is `SENT₁ SENT₂ xan`, not `van`.
-
-`val` / `vam` / `var` (and the other join vowels with those endings) stay VP [joins](coordination.md). Prefix-less `an` / `on` / … stay [revisers](revisers.md). Named-list **-n** stays on `/z/` `/d/` `/b/` `/w/`.
 
 ### Join-relations
 <a id="join-relations"></a>
@@ -65,7 +65,11 @@ gloss: `z-birthday-cake` · `g-including` · `b-peanut`
 *Cake including / with nuts.*
 ```
 
-Content *including* needs that `/b/` (`gan b…`). A stock label uses a [mention](spans.md) span. `gal` / `gam` / `gar` stay adjective [joins](coordination.md); under `/h/`, `-l` / `-m` / `-r` stay [restrictors](restrictors.md).
+Content *including* needs that `/b/` (`gan b…`). A stock label uses a [mention](spans.md) span.
+
+**Not the same job as:** adjective [joins](coordination.md) (`gal` / `gam` / `gar`). Join-relations take **-n** toward one `/b/`.
+
+**Compare with:** applicability under `/h/` uses [restrictors](restrictors.md) (`hal`, `hual`, `har`, …).
 
 | Form | `/ɡ/` (*N … b-X*) | `/h/` (*event … b-X*) | Vowel cue | Example |
 |------|-------------------|------------------------|-----------|---------|
@@ -84,7 +88,7 @@ Content *including* needs that `/b/` (`gan b…`). A stock label uses a [mention
 
 English *including* as a slot repair is a [reviser](revisers.md): `zahadal gan bazawan` (*a team including Azawan*) vs `zahadal al zazawan` (*the team, including Azawan*).
 
-Keep list or empty arity on the **`/b/` argument**. Join-relations take **-n**; the other endings on `/ɡ/` / `/h/` keep the jobs in the paragraph above.
+Keep list or empty arity on the **`/b/` argument**. Join-relations take **-n**.
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
