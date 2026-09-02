@@ -65,7 +65,7 @@ How you relate to the need. Vowels follow the series: **`a`** add, **`e`** order
 | **`xo`** | **Prescription (ought)** | Agent or situation **ought to act** so this need is served or protected | **`o`** one: one ought |
 | **`xu`** | **Unmet / costs** | Host subtracts from this need | **`u`** undo: the need is taken down |
 
-**Bare need** (no `x`): topic only. The ending keeps ordinary reference-suffix senses (`hawerol` = pleasure topic).
+**Topic** (no `x`): the ending keeps ordinary reference-suffix senses (`hawerol` = pleasure as a topic).
 
 **Met (`xa`):** the host serves the need. The ending is the [contact channel](#value-contact).
 
@@ -83,7 +83,7 @@ gloss: `z-gift` · `w-relatedness-met-physical`
 
 On **`xa`** compounds, **-l / -m / -r** mark **how you contact** the claimed payoff (contact channel). **-n** stays ordinary [proper](reference-suffix.md#proper-name--n). Relatedness *between people* is the need **`onogo`**.
 
-| Form | Channel | Focus | Mnemonic |
+| Form | Channel | Contact | Mnemonic |
 |------|---------|-------|----------|
 | `…xal` | **physical** | Sensory / ambient / embodied ease | **-l** locked on the scene you can touch |
 | `…xam` | **mental** | Cognitive integration, memory, self-directed gratitude | **-m** open in the head |
@@ -255,7 +255,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **`xe`** is *doing for this need*; **`xo`** is *should serve or protect this need*.
 
-| Form | Standing | Focus | Mnemonic |
+| Form | Standing | Contact | Mnemonic |
 |------|----------|-------|----------|
 | `…xel` | **circumstantial** | The situation pulls this motive | **-l** locked to the scene; **`e`** order: this ranking of reasons |
 | `…xem` | **internal** | The agent’s own reason (also soft default if unknown) | **-m** open / from inside |

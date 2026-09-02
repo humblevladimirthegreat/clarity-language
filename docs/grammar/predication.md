@@ -27,7 +27,7 @@ gloss: `z-grace` · `g-challenging`
 <a id="classification"></a>
 <a id="kind-ascription"></a>
 
-**Classification** is saying someone or something **is that kind** (role, category). Use the same adjective pattern: the kind sits on `/ɡ/` on the host.
+**Classification** is saying someone or something **is that kind** (role, category). Use the same adjective pattern: the kind sits on `/ɡ/` on the classified noun.
 
 | Pattern | Example | Reading |
 |---------|---------|---------|
@@ -42,7 +42,7 @@ gloss: `z-grace` · `g-dog`
 *Azawan is a dog.*
 ```
 
-When you **talk about** the kind as a participant, use a noun (`zodogol` *a dog*). When you **say the host is that kind**, keep the kind on the adjective (`zazawan godogol`). Event and action meanings use a verb (`/v/`). English *be* between two nouns is this adjective pattern, not a verb.
+When you **talk about** the kind as a participant, use a noun (`zodogol` *a dog*). When you **say the subject is that kind**, keep the kind on the adjective (`zazawan godogol`). Event and action meanings use a verb (`/v/`). English *be* between two nouns is this adjective pattern, not a verb.
 
 ### Identity (**SAME**)
 <a id="identity"></a>
@@ -64,7 +64,7 @@ gloss: `z-odava` · `g-SAME` · `b-uzuba`
 
 | Piece | Role |
 |-------|------|
-| host noun | the expression treated as given / topic |
+| subject | the expression treated as given |
 | **`gonunu`** | *identical-to* / *same-as* |
 | extra noun (`/b/`) | the other label or description |
 
@@ -190,21 +190,21 @@ Once kind sits on `/ɡ/`, you can hedge it, mark it as a type, or deny it.
 | Characterizing / habitual | `zazawan godogol hual` | *Azawan is the dog type*; [**hual**](restrictors.md) |
 | Negation | `zazawan gul godogol` | *Azawan is not a dog*; [negation **u**](coordination.md#negation-u) |
 
-### **SAME** endings and soft identity
+### **SAME** endings
 
-The same identity pattern takes the usual endings. **-l** stands behind the match; **-m** is "same for our purposes"; **-n** is a titled frame; **-r** resumes a prior identity claim.
+The same identity pattern takes the usual endings. **-l** stands behind the match; **-m** is ordinary **open** SAME (*same for our purposes*); **-n** is a titled frame; **-r** resumes a prior identity claim.
 
 | Ending | Reading |
 |--------|---------|
 | **-l** | stand behind identity (closed) |
-| **-m** | soft / practical identity (*same for our purposes*) |
-| **-n** | named / conventional identity frame (rare; titled equivalence) |
+| **-m** | open SAME (*same for our purposes*) |
+| **-n** | named identity frame (rare; titled equivalence) |
 | **-r** | resume a prior identity claim |
 
 | Agalan | Reading |
 |---------|---------|
 | `zodavan gonunul buzuban` | *Clark is (the same as) Superman* |
-| `zodavan gonunum buzuban` | soft: *Clark is basically Superman* |
+| `zodavan gonunum buzuban` | open: *Clark is basically Superman* |
 | `zodavan gul gonunul buzuban` | *Clark is not (identical to) Superman* |
 | `zodavan gonunul wahadem buzuban` | *Clark is allegedly Superman* |
 | `zeberel gonunul buzuban` | inside a noun phrase: *the person who is Superman* |

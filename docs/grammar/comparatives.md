@@ -248,7 +248,7 @@ Equative **`ae`** needs **two or more** comparees. Single-item or standalone **`
 <a id="measured-differentials"></a>
 <a id="measure-gap"></a>
 
-*Two meters more challenging* is still a comparative (rank join + shared scale). Spell the gap as a **measure noun** (`/b/`) on the scale adjective: the **unit** is that `/b/` noun, and the **amount** is `/ɡ/` on the unit. See [measure phrases](numbers-applied.md#measure-phrases) (bare host `urelu` *measurement* = short meter; titled `ureluxrawon` when you need the full word).
+*Two meters more challenging* is still a comparative (rank join + shared scale). Spell the gap as a **measure noun** (`/b/`) on the scale adjective: the **unit** is that `/b/` noun, and the **amount** is `/ɡ/` on the unit. See [measure phrases](numbers-applied.md#measure-phrases) (bare unit `urelu` *measurement* = short meter; titled `ureluxrawon` when you need the full word).
 
 Counted gaps use that one `/b/` on the scale. Vague *much* / *slightly* stays shared `/w/`.
 

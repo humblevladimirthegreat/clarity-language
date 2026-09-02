@@ -55,7 +55,7 @@ English *to* / *for* (recipient) uses a complex adverb (`/h/` + `/b/`) plus that
 
 After you open a turn (or continue with `/x/` under the same speech act), the default order is **Subject – Direct Object – Verb**.
 
-You may rearrange those core roles for style or to put something in **focus** (what you want heard as the point).
+You may rearrange those core roles for style or to put something in **prominence** (what you want heard as the point).
 
 - **Adjectives** (`/ɡ/`) go **after** what they describe by default ([Adjectives](#adjectives-ɡ)). Putting them before is Intermediate ([before the noun](#left-bound-adjectives)).
 - **Adverbs** (`/h/`) may sit anywhere in their sentence except a “next sentence” `/h/`+`/b/` unit, which must come **last in the main sentence** ([Adverbs](#adverbs-h); [Dependent clauses](#dependent-clauses)).
@@ -110,7 +110,7 @@ It sits on that adjective: normally right after the `/ɡ/` (or after that `/ɡ/`
 ### Adverbs (`/h/`)
 <a id="adverbs-h"></a>
 
-`/h/` marks adverbs: how, when, where, *to* / *for*, mood / tense / “how you know,” and related closed kinds.
+`/h/` marks **adverbs**: how, when, where, *to* / *for*, tense, and related closed kinds. Closed psychological `/h/` (COMMENT, evidentiality, NOTIONAL, PLAN, …) is **mood**, taught on those pages.
 
 Because `/h/` talks about the sentence’s verb, **you may place it anywhere in that sentence**, except a “next sentence” `/h/`+`/b/` unit, which must sit **last in the main sentence** ([Dependent clauses](#dependent-clauses)). `/h/` material stays inside its own sentence.
 
@@ -402,12 +402,13 @@ gloss: `g-blue` · `z-dog`
 
 Mid-word **l** = **lean left**: look ahead to the next host. Only `/ɡ/` takes this **l**.
 
-The package is the same as after-the-noun order: plain `/ɡ/`, or complex `/ɡ/` + `/b/`, plus any following `/w/` stack. `/b/` and `/w/` still follow that `/ɡ/` (`glelulul wazebol zodogol` = *a loud-volume blue dog*). Before-the-noun order is optional style (meter, focus, comfort from your first language).
+The package is the same as after-the-noun order: plain `/ɡ/`, or complex `/ɡ/` + `/b/`, plus any following `/w/` stack. `/b/` and `/w/` still follow that `/ɡ/` (`glelulul wazebol zodogol` = *a loud-volume blue dog*). Before-the-noun order is optional style (meter, prominence, comfort from your first language).
 
-### Adverb topic and free-order ties
+### As-for and free-order ties
+<a id="as-for"></a>
 <a id="adverb-topic-and-free-order-ties"></a>
 
-**Topic** (*as for X*, *regarding X*) is complex `/h/` + `/b/` naming the topic noun. Published **`ahaza`** *topic* is the dedicated host: `hahazal bazawan` = *as for Azawan*. Highlight focus by rearranging free word order (and ordinary *very*-type words if needed).
+**As-for** (*as for X*, *regarding X*) is complex `/h/` + `/b/` naming that noun. Published **`ahaza`** is the dedicated root: `hahazal bazawan` = *as for Azawan*. Highlight prominence by rearranging free word order (and ordinary *very*-type words if needed). Values **topic** (a need named with no `x`) is a different job: [values.md](values.md).
 
 There is no fixed order among several `/h/` units. Each unit’s job comes from its dictionary role; spoken order is free. If two units share a role and need a ranking, left-to-right breaks the tie.
 

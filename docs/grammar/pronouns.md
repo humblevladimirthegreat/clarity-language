@@ -398,7 +398,7 @@ Each subsection is an **antecedent** role; table rows are the **pronoun** role. 
 | `/v/` | Treat that entity as the action: *do that (to/with it)* / *X it* |
 | `/ɡ/` | *that one’s* / *of that kind* / property tied to that entity |
 | `/w/` | Degree or frame scoped to a property of that entity |
-| `/h/` | Circumstance framed by that entity; clause aboutness is `/h/` + `/b/` …`-r` |
+| `/h/` | Occasion framed by that entity; clause aboutness is `/h/` + `/b/` …`-r` |
 | `/j/` vocative | Address that entity |
 | `/x/` | *Going back to subject X* (discourse resume; not clause aboutness) |
 
@@ -442,12 +442,12 @@ Each subsection is an **antecedent** role; table rows are the **pronoun** role. 
 | Pronoun role | English approximation |
 |--------------|------------------------|
 | `/z/` `/d/` `/b/` | *that time / place / manner / reason / recipient-slot* (the adjunct as a noun) |
-| `/v/` | Act under that circumstance |
-| `/ɡ/` | Property *as of* that circumstance |
+| `/v/` | Act under that occasion |
+| `/ɡ/` | Property *as of* that occasion |
 | `/w/` | Adjective-level echo of that frame |
 | `/h/` | *thus* / *so* / *then* / *that way* |
 | `/j/` | Rare |
-| `/x/` | *Going back to that (circumstance / framing)* |
+| `/x/` | *Going back to that (occasion / framing)* |
 
 #### Antecedent was `/j/` or `/x/`
 

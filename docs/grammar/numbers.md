@@ -219,7 +219,7 @@ The number word takes whichever role letter the slot needs. Referential prefixes
 | `/ɡ/` | **modifier** — the number describes the preceding noun (*three cats*, *the second page*, *room 12*). Goes after the noun, like other adjectives. |
 | `/z/` | **subject** — the numeric value, digit-string, or rank is the subject. |
 | `/d/` | **direct object** — the number is the object (common for digit-strings / codes being dialed, entered, stated). |
-| `/b/` | **extra noun** — the number fills the `/b/` slot of a complex adjective or adverb (*of size 12*, host *on* + channel/label, host *at* + time when a relation is named, …). Bare temporal circumstance (no host) uses `/h/` + **`ro`** ([Time](#time)). |
+| `/b/` | **extra noun** — the number fills the `/b/` slot of a complex adjective or adverb (*of size 12*, host *on* + channel/label, host *at* + time when a relation is named, …). Bare clock/date (no relation named) uses `/h/` + **`ro`** ([Time](#time)). |
 
 Degree and “aboutness” of a quantity use [number endings](#number-endings) (especially **-m** for approximate), not a `/w/` grader on the number.
 
@@ -260,7 +260,7 @@ Number endings have [their own jobs](#number-endings) (exact / about / conventio
 |--------|---------|-------------------|
 | **-l** | Exact, newly stated (default) | *(none)* — `g+3`, `g+` |
 | **-m** | Approximate / non-literal (“about N”) | **`~`** after PoS — `g~+3`, `g~+` |
-| **-n** | Conventional / proper designation (titles, official labels, *the Second…*) | **`@`** after PoS — `g@#2`, `g@+1e` |
+| **-n** | Conventional designation (titles, official labels, *the Second…*) | **`@`** after PoS — `g@#2`, `g@+1e` |
 | **-r** | Resume of a previously stated number, code, or rank | **`=`** after PoS — `g=+`, `x=#2`, `d=_` |
 
 **-r** may be **digitless**: marker + **-r** alone resumes the prior value of that identity without restating digits (`g=+` = *that (scalar) amount again*; `d=_` = *that code again*; `g=#` = *that rank again*). Digits + **-r** still fine when you want to name which prior item (`x=#2` = *as in (2) above*). Match the marker to the resumed identity (`g=+` for a prior scalar). **`=`** stands alone: no stack with **`~`** / **`@`**.
@@ -294,7 +294,7 @@ Phrase **`zar`** / **`zor`** / … pick an unspecified **member of an inventory*
 | `/j/` | **`j+`** *More!*; **`j-`** *Short!* / *down by some amount!*; **`j#`** *Nth!* (place cheer, rank unnamed); **`j#-`** *Nth-from-last!*; **`j_`** *…!* (unspecified score / code call). Soft: **`j~+`** *a bit more!* |
 | `/x/` | `x#` *some point:* (neutral, number unnamed); `x#-` *some end-relative point:*; `x+` / `x-` corroborating / independent item of unnamed index; `x_` *regarding some (unnamed) label* |
 
-Digitless time `h_` is a **number word** (unspecified clock/date under bare `hro`). Circumstance **`har`** (*sometime*) is the [restrictor](restrictors.md).
+Digitless time `h_` is a **number word** (unspecified clock/date under bare `hro`). Restrictor **`har`** (*sometime*) is the [restrictor](restrictors.md).
 
 ### Exponents
 
@@ -312,8 +312,8 @@ Within each digit group, speech markers build ordinary magnitudes (Advanced spec
 - The **exponent comes before** the group’s mantissa digits.
 - If a mantissa follows the exponent, say **`ja`** after the last exponent digit, then the mantissa. Example: `27e12` → `ba` + `wo` + `du` + `ja` + `du` + `le`.
 - **Bare order of magnitude** (exponent only, no mantissa): use `ba`/`bu` + exponent digits and omit **`ja`**. Example: *e9* → `ba` + `na`. Decade-band readings: [Bare OoM](#bare-oom-bands).
-- Ordinary magnitudes usually omit exponent **`0`**: write `g+3`. Named **`e0`** / ambient scale: [Ambient scale](#ambient-scale).
-- Default scale uses **engineering notation**: exponents are usually multiples of **3** (e.g. `27e6`).
+- Ordinary magnitudes usually omit exponent **`0`**: write `g+3`. Named **`e0`** / ambient magnitude: [Ambient magnitude](#ambient-magnitude).
+- Default **order of magnitude** uses **engineering notation**: exponents are usually multiples of **3** (e.g. `27e6`).
 - **Decimal point:** say **`je`** after the digit(s) left of the point; digits after **`je`** are the fractional part.
 - Write the **base unit** plus exponent or exact count on the amount ([measure phrases](#no-metric-prefixes)).
 
@@ -334,7 +334,7 @@ Same glyphs and jobs as [span-fence marks](spans.md#writing) (**`~`** soft / **`
 |------|---------------|-----|----------|
 | *(none)* | **-l** | exact (default) | `g+3`, `g+`, `x#2`, `d_555,123,4567` |
 | **`~`** | **-m** | approximate / soft | `g~+3`, `g~+`, `g~+27e6`, `g~#e` |
-| **`@`** | **-n** | conventional / proper | `g@#2`, `g@+1e`, `x@#e` |
+| **`@`** | **-n** | conventional | `g@#2`, `g@+1e`, `x@#e` |
 | **`=`** | **-r** | resume | `g=+`, `d=_`, `x=#2`, `g=#1e` |
 
 Order when both **`@`** and **`~`** apply: **`@` then `~`**. Spell **`@`** only, with uncertain tonality (same hedge habit as spans). **`=`** stands alone. Full phonetic spelling with a trailing ending letter (e.g. *grarel*, *gram*) is the [style default](#writing-style-numeric-vs-spelled) for [numeric derivation](numeric-derivation.md#numeric-derivation). On free number words it is a pronunciation gloss, not preferred in running text.
@@ -359,7 +359,7 @@ Place the identity symbol **immediately after** any ending mark (or after PoS wh
 | Digit syllables (`wo`…`zo`) | Arabic **`0`–`9`** |
 | `ba` / `bu` (+ `ja` when a mantissa follows) | **`e`** / **`e-`** (engineering, scientific, or [ordinal generation](#ordinal-generation)) |
 | `ba` / `bu` with **no** digits ([digitless exp](#digitless-exponents)) | **`e`** / **`e-`** with no power digits — specials `g+e`, `g+e-`; zero×digitless `g+0e`, `g+0e-`, `g#0e`; hyperbole `g+1e`, `g+1e-`, `g#1e`, `g#1e-` |
-| named exp **`0`** (bare OoM / assert) | **`e0`** — ones band `g+e0`; assert `g+3e0` / `g#e0` (omit still usual when ones/current is clear; [ambient](#ambient-scale)) |
+| named exp **`0`** (bare OoM / assert) | **`e0`** — ones band `g+e0`; assert `g+3e0` / `g#e0` (omit still usual when ones/current is clear; [ambient](#ambient-magnitude)) |
 | mantissa **`0`** + digitful **`e-1`** ([engineering null](#zero-exponent)) | **`0e-1`** — `g+0e-1` / `g-0e-1` only |
 | `je` | **`.`** |
 | `jo` | **`%`** |
@@ -464,7 +464,7 @@ Endings still apply (**-m** fuzzy *about three more!*, **-n** conventional call 
 
 **Nested agenda (digitful exp):** under `/x/`, [ordinal generation](#ordinal-generation) = **outline depth** relative to the focused agenda item — **`x#3e2`** = *3rd sub-sub-point under the focus*; **`x#e-1`** = *parent-layer item(s)*; **`x#e0`** = *current-layer item(s)* (assert this outline level). Flat talks stay **`x#N`** / **`x#-N`** / landmarks.
 
-Mantissa + digitless-exp discourse indices: **`x#1e`** *umpteenth point:* / **`x#1e-`** *umpteenth-first point:* ([hyperbole](#hyperbole-gazillion)). End-relative place stays **`x#-N`**. Notional **`x-e-`** is under [digitless exponents](#imaginary).
+Mantissa + digitless-exp discourse indices: **`x#1e`** *umpteenth point:* / **`x#1e-`** *umpteenth-first point:* ([hyperbole](#hyperbole-gazillion)). End-relative place stays **`x#-N`**. Imaginary **`x-e-`** is under [digitless exponents](#imaginary).
 
 **Independence framing:** **`#`** = unmarked inventory or steps (from the start); **`#-`** = end-relative inventory; **`+`** = corroborating; **`-`** = independent (new line of support). Ordinary *firstly / secondly* is **`x#N`**. *Starting with* without a numeric step count is **`x#e-`**; *Finally* without a numeric step count is **`x#e`** (or end-framed **`x#-1`**). For/against wording stays in ordinary wording or claim-level evidentiality.
 
@@ -537,7 +537,7 @@ On forward **`#`** / **`re`** and end-relative **`#-`** / **`reu`**, a **digitfu
 | **Digitful exp `eK` / `e-K`** | Generation **+K** (descendants / nested deeper) or **−K** (ancestors / enclosing layer) |
 | **Mantissa** | Which **slot** in that cohort (omit mantissa = bare OoM: the generation as a whole) |
 | **Exp omitted** | **Same generation** as the focus (`g#3` = 3rd peer) — formal default |
-| **Named `e0`** | **Assert current generation** (gen 0) — parallel to scalar [OoM-0 assert](#ambient-scale); usually redundant when omit already means current, but cancels casual “ambient generation” elision |
+| **Named `e0`** | **Assert current generation** (gen 0) — parallel to scalar [OoM-0 assert](#ambient-magnitude); usually redundant when omit already means current, but cancels casual “ambient generation” elision |
 
 | Form | Reading |
 |------|---------|
@@ -673,11 +673,11 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 | increase a lot but finite | `v~+e` | *vrabam* |
 | nudge up | `v+e-` | *vrabul* |
 | decrease without bound | `v-e` | *vrubal* |
-| treat as imaginary / notionalize | `v-e-` | *vrubul* |
-| soft notionalize | `v~-e-` | *vrubum* |
-| notional / imaginary amount | `g-e-` | *grubul* (`ru` + `bu` + `l`) |
-| soft notional | `g~-e-` | *grubum* |
-| notionally / as if | `h-e-` | *hrubul* |
+| treat as imaginary | `v-e-` | *vrubul* |
+| treat as imaginary (open) | `v~-e-` | *vrubum* |
+| imaginary amount | `g-e-` | *grubul* (`ru` + `bu` + `l`) |
+| imaginary amount (open) | `g~-e-` | *grubum* |
+| as if | `h-e-` | *hrubul* |
 | *As if!* / *Imagine!* | `j-e-` | *jrubul* |
 | *imagine that:* | `x-e-` | *xrubul* |
 | take last place | `v#e` | *vrebal* |
@@ -861,12 +861,13 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 Digitless exponents, zero×exp, hyperbole, and related specials.
 
-### Ambient scale (casual)
+### Ambient magnitude (casual)
+<a id="ambient-magnitude"></a>
 <a id="ambient-scale"></a>
 
 In **careful** writing and speech, treat **omitted exp as ones-place** (`g+3` = 3). Prefer an explicit exponent rather than a discourse-default decade.
 
-**Casually**, measure-heavy talk may establish an **ambient OoM** (often an engineering `e3` / `e6` / …) and skip repeating exponents, so bare mantissas are heard at that ambient scale.
+**Casually**, measure-heavy talk may establish an **ambient OoM** (often an engineering `e3` / `e6` / …) and skip repeating exponents, so bare mantissas are heard at that ambient magnitude.
 
 **Named `e0` asserts OoM 0** and cancels ambient inheritance:
 
@@ -913,27 +914,27 @@ A digit group may use an exponent marker (**`ba`** or **`bu`**) with **no** expo
 | **`g~#e`** | **`re`** + **`ba`∅** + **-m** | **near last place** |
 | **`g#e-`** | **`re`** + **`bu`∅** + **-l** | **start / beginning place** / origin landmark: first with emphasis on **onset** (*the starting one*, *at the beginning*). Numbered 1st stays `g#1`. Ultimate-ancestor pole |
 | **`g~#e-`** | **`re`** + **`bu`∅** + **-m** | **near first place** |
-| **`g-e-`** | **`ru`** + **`bu`∅** + **-l** | **notional / imaginary amount:** as-if magnitude off the real commitment ledger (metaphorical, not complex-number math) |
-| **`g~-e-`** | **`ru`** + **`bu`∅** + **-m** | **soft notional** — *sort of imaginary* / hedged as-if amount |
+| **`g-e-`** | **`ru`** + **`bu`∅** + **-l** | **imaginary amount:** as-if magnitude off the real commitment ledger (metaphorical, not complex-number math) |
+| **`g~-e-`** | **`ru`** + **`bu`∅** + **-m** | **open imaginary** — *sort of imaginary* / hedged as-if amount |
 
-Same under `/z/` `/d/` `/b/` (`z+e` = +∞ as subject; `d#e-` = start-place as object; `b+e-` = *of an arbitrarily small but finite amount*; `z-e-` = notional amount as subject). Contrast **`g#1`** = numbered *first* / *1st*; **`g#e-`** = beginning/onset landmark.
+Same under `/z/` `/d/` `/b/` (`z+e` = +∞ as subject; `d#e-` = start-place as object; `b+e-` = *of an arbitrarily small but finite amount*; `z-e-` = imaginary amount as subject). Contrast **`g#1`** = numbered *first* / *1st*; **`g#e-`** = beginning/onset landmark.
 
 <a id="imaginary"></a>
 <a id="notional-amount"></a>
 
-**Notional / imaginary (`g-e-`):** negative marker (**`ru`**) + digitless negative exponent (**`bu`∅), no mantissa. Completes the scalar special grid. Reading is **metaphorical**: a magnitude named *as if* it counted, without entering the real tally.
+**Imaginary (`g-e-`):** negative marker (**`ru`**) + digitless negative exponent (**`bu`∅), no mantissa. Completes the scalar special grid. Reading is **metaphorical**: a magnitude named *as if* it counted, without entering the real tally.
 
-**Psychological as-if** (clause framed as pretensive / mind-only, with flexibility hold endings) uses spelled mood **`ahade`** ([commentary.md § Notional](commentary.md#notional), e.g. `hahadem`). Free **`grubul`** / **`xrubul`** / **`hrubul`** / **`vrubul`** / **`jrubul`** stay amount, discourse *imagine that:*, manner *as if*, verb *notionalize*, and cheer as interjection on the number grid.
+**Psychological as-if** (clause framed as pretensive / mind-only, with flexibility hold endings) uses spelled mood **`ahade`** ([commentary.md § Notional](commentary.md#notional), e.g. `hahadem`). Free **`grubul`** / **`xrubul`** / **`hrubul`** / **`vrubul`** / **`jrubul`** stay amount, discourse *imagine that:*, manner *as if*, verb *treat as imaginary*, and cheer as interjection on the number grid.
 
 **Endings** (no-mantissa specials):
 
 | Ending | Sense |
 |--------|-------|
-| **-l** | Exact special value (default): +∞ / −∞ / last place / start place / arbitrarily small but finite / notional as in the form table |
+| **-l** | Exact special value (default): +∞ / −∞ / last place / start place / arbitrarily small but finite / imaginary as in the form table |
 | **-m** on **`ba`∅** (`…em`) | **Arbitrarily large but finite** on scalars (`g~+e` / `g~-e`); on ordinals (`g~#e`) = **near last place** |
-| **-m** on **`bu`∅** (`…e-m`) | Soft / approximate small on scalars (`g~+e-`); soft notional on **`ru`+`bu`∅** (`g~-e-`); on ordinals (`g~#e-`) = **near first place** |
-| **-n** | Proper / conventional designation of that special (named ∞ symbol, official *last place* / *starting* title, conventional *imaginary* label, …) |
-| **-r** | Resume a prior special value of that marker+exp polarity (`g=+e` = *that +∞ again*; `g=+e-` = *that start/small again*; `g=-e-` = *that notional amount again*) |
+| **-m** on **`bu`∅** (`…e-m`) | Soft / approximate small on scalars (`g~+e-`); open imaginary on **`ru`+`bu`∅** (`g~-e-`); on ordinals (`g~#e-`) = **near first place** |
+| **-n** | Conventional designation of that special (named ∞ symbol, official *last place* / *starting* title, conventional *imaginary* label, …) |
+| **-r** | Resume a prior special value of that marker+exp polarity (`g=+e` = *that +∞ again*; `g=+e-` = *that start/small again*; `g=-e-` = *that imaginary amount again*) |
 
 ##### Number as verb and adverb
 
@@ -948,14 +949,14 @@ No-mantissa digitless-exp under `/v/` and `/h/` inherit special-value identity (
 | **`v-e`** | **decrease without bound** |
 | **`v~-e`** | *decrease a lot but finite* |
 | **`v+e-`** | **nudge up** — increase by an arbitrarily small but finite amount |
-| **`v-e-`** | **treat as imaginary / notionalize:** frame the patient as make-believe / mind-only / not for the real tally |
-| **`v~-e-`** | *softly notionalize* / treat as *sort of* imaginary |
+| **`v-e-`** | **treat as imaginary:** frame the patient as make-believe / mind-only / not for the real tally |
+| **`v~-e-`** | treat as *sort of* imaginary |
 | **`h+e`** | **unbounded multiplicity** (× without bound / unboundedly many times) |
 | **`h~+e`** | *many times but finite* |
 | **`h+e-`** | **unbounded duplicity** (÷ without bound / into unboundedly many parts) |
 | **`h~+e-`** | *÷ a lot / into many parts, but finite* |
-| **`h-e-`** | **notionally / as if / for the sake of argument** — event under imag framing |
-| **`h~-e-`** | soft notional framing |
+| **`h-e-`** | **as if / for the sake of argument** — event under imaginary framing |
+| **`h~-e-`** | open imaginary framing |
 
 **Ordinals (`re`) — start/last landmarks:**
 
@@ -984,12 +985,12 @@ No-mantissa digitless-exp under `/j/` (interjection cheers):
 | **`j~#e`** | *Almost finally!* / soft coda cheer |
 | **`j#e-`** | *(finally, we're) starting!* (onset cheer). Discourse **`x#e-`** is *Starting with:* |
 | **`j~#e-`** | soft onset cheer |
-| **`j-e-`** | *As if!* / *Imagine!* / *In theory!* (notional cheer) |
+| **`j-e-`** | *As if!* / *Imagine!* / *In theory!* (imaginary cheer) |
 | **`j~-e-`** | soft *as if!* / hedged imagine-cheer |
 
 ##### Number as discourse
 
-Under `/x/`, **last-place** **`x#e`** (and **`x~#e`** / **`x@#e`** / **`x=#e`**) = discourse *Finally* / last point, and **start-place** **`x#e-`** (and **`x~#e-`** / **`x@#e-`** / **`x=#e-`**) = discourse *Starting with:* / beginning. See [Number as discourse marker](#number-as-discourse-marker-by-marker). End-relative discourse points use **`x#-N`**. **Notional discourse:** **`x-e-`** = *imagine that:* / notional agenda point (side-track). Soft **`x~-e-`**; named **`x@-e-`**; resume **`x=-e-`**. Corroborating stays **`x+`**; independent stays **`x-`**.
+Under `/x/`, **last-place** **`x#e`** (and **`x~#e`** / **`x@#e`** / **`x=#e`**) = discourse *Finally* / last point, and **start-place** **`x#e-`** (and **`x~#e-`** / **`x@#e-`** / **`x=#e-`**) = discourse *Starting with:* / beginning. See [Number as discourse marker](#number-as-discourse-marker-by-marker). End-relative discourse points use **`x#-N`**. **Imaginary discourse:** **`x-e-`** = *imagine that:* / imaginary agenda point (side-track). Soft **`x~-e-`**; named **`x@-e-`**; resume **`x=-e-`**. Corroborating stays **`x+`**; independent stays **`x-`**.
 
 #### Zero × exponent
 <a id="zero-exponent"></a>
@@ -1015,7 +1016,7 @@ Same under `/z/` `/d/` `/b/` (`z+0e` = absolute-zero as subject; `z+0e-1` = deci
 
 **Emptiness chain (amounts):** **`g-e`** (−∞ deficit), **`g+0`** (plain zero), **`g+0e`** (absolute zero), **`g+0e-`** (sterile micro-null), **`g+0e-1`** (engineering null at 10⁻¹). Bare **`g+e0`** is the [ones decade band](#bare-oom-bands) (1–9).
 
-**Scalars only for `±0e-1`:** engineering scale-null is **`ra` / `ru`**. On ordinals, digitful exp is [generation](#ordinal-generation) (`g#0e-1` ≠ engineering; **`g#e0`** = current generation). Ordinal zero×digitless **`g#0e`** = [rank annihilated](#rank-annihilated) below.
+**Scalars only for `±0e-1`:** engineering OoM-null is **`ra` / `ru`**. On ordinals, digitful exp is [generation](#ordinal-generation) (`g#0e-1` ≠ engineering; **`g#e0`** = current generation). Ordinal zero×digitless **`g#0e`** = [rank annihilated](#rank-annihilated) below.
 
 ##### Number as verb and adverb
 
@@ -1033,7 +1034,7 @@ Same under `/z/` `/d/` `/b/` (`z+0e` = absolute-zero as subject; `z+0e-1` = deci
 | **`h-0e`** | with irreducible residual repetition |
 | **`h-0e-1`** | residual repetition **at OoM −1** |
 
-Ones-band / assert-`e0` as verb / adverb / interjection / discourse are ordinary bare OoM / **`Ne0`** (**`v+e0`**, **`h+3e0`**, …): [Bare OoM](#bare-oom-bands) / [Ambient](#ambient-scale). Soft **-m** hedges (*almost annihilate*, *almost deci-null*, …).
+Ones-band / assert-`e0` as verb / adverb / interjection / discourse are ordinary bare OoM / **`Ne0`** (**`v+e0`**, **`h+3e0`**, …): [Bare OoM](#bare-oom-bands) / [Ambient](#ambient-magnitude). Soft **-m** hedges (*almost annihilate*, *almost deci-null*, …).
 
 ##### Number as interjection
 
@@ -1077,7 +1078,7 @@ Soft **-m** hedges (*near-disqualified*, …). Free twin of derivation **`ROOTx#
 | **`g#0e`** | **`zazuduxrezobal`** | disqualified place vs disqualified-*kind* |
 | **`v+0l`** | **`vezehuxrazol`** | ordinary zeroing / null-reset — weaker than **`…+0e`** |
 
-Free **`g+e0`** / **`g+Ne0`** are bare OoM / scale assert on free numbers, not kind derivation morphs. Engineering scale-null is **`±0e-1`**.
+Free **`g+e0`** / **`g+Ne0`** are bare OoM / OoM assert on free numbers, not kind derivation morphs. Engineering OoM-null is **`±0e-1`**.
 
 #### Hyperbole — mantissa + digitless exponent
 <a id="gazillion"></a>

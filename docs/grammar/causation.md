@@ -162,7 +162,7 @@ To say the outcome **needs** the condition, mark **exclusion** or **never**.
 | Prefer | Gloss | Mnemonic |
 |--------|--------|----------|
 | **`guan` / `huan`** | *without / excluding* the condition on the **effect** | series **`u`** (*undo*): take it away and the effect fails |
-| **`hal`** (restrictor) | *never*, under the circumstance where the condition is absent | exact **-l**: that circumstance is closed off |
+| **`hal`** (restrictor) | *never*, when the condition is absent | exact **-l**: that occasion is closed off |
 
 ```
 `zanunul huan buludul.`

@@ -179,7 +179,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **-n** is available on **any** role letter. The letter says what job the word plays **now**; **-n** says you are invoking a **title, proper label, or conventionally unique name**.
 
-[Join words](coordination.md) are the one place where **-n** is not a name: fence joins, clause soft **-n**, and closed [join-act](join-extras.md#join-act-verbs) / [join-relation](join-extras.md#join-relations) stems use **-n** as join packaging or join content.
+[Join words](coordination.md) are the one place where **-n** is not a name: fence joins, clause **sequence**, and closed [join-act](join-extras.md#join-act-verbs) / [join-relation](join-extras.md#join-relations) stems use **-n** as join packaging or join content.
 
 #### More of the token
 
@@ -248,7 +248,7 @@ Rare. **-n** marks a **named scale, grade, or criterion** for reading the preced
 
 #### Adverbs (`/h/`)
 
-A **named circumstance, channel, or standard** framing the clause. Aligns with [number **-n**](numbers.md#number-endings). English parallels: *according to* **[GAAP]**, *in* **[Q3]** as the named quarter. Manner roots usually stay **-l** / **-m** unless the manner is itself a proper name.
+A **named standard, channel, or official frame** for the clause. Aligns with [number **-n**](numbers.md#number-endings). English parallels: *according to* **[GAAP]**, *in* **[Q3]** as the named quarter. Manner roots usually stay **-l** / **-m** unless the manner is itself a proper name.
 
 #### Turn (`/j/`)
 
@@ -265,7 +265,7 @@ A **named circumstance, channel, or standard** framing the clause. Aligns with [
 |--------|------------|
 | **Linkers** (*but*, *therefore*, …) | Stay **-l** / **-m** |
 | **Named continue** (other `/x/` roots) | **-n** = titled agenda / section label: thread shift (*let’s now talk about X*) |
-| **Clause joins** | **-n** = soft packaging (*and then* **`xan`**, …): not phrase named-list **-n**; full table [coordination.md](coordination.md) |
+| **Clause joins** | **-n** = **sequence** (*and then* **`xan`**, …): not phrase named-list **-n**; full table [coordination.md](coordination.md) |
 
 Prefix-less [discourse revisers](revisers.md#discourse-revisers) keep reviser endings including named **-n**.
 
@@ -281,10 +281,10 @@ Prefix-less [discourse revisers](revisers.md#discourse-revisers) keep reviser en
 | `/v/` | This named event, rite, or titled action. [Join-act verbs](join-extras.md#join-act-verbs) (`van`, …) keep join content. |
 | `/ɡ/` | This named style, tradition, brand, or category. [Join-relations](join-extras.md#join-relations) (`gan`, …) keep join content. |
 | `/w/` | (Rare) this named scale / grade / criterion on the preceding adjective |
-| `/h/` | This named standard, channel, or official circumstance. Join-relations (`han`, …) keep join content. |
+| `/h/` | This named standard, channel, or official frame. Join-relations (`han`, …) keep join content. |
 | `/j/` vocative | Address this named person, place, or title |
 | `/j/` interjection | This named formula or conventional call |
-| `/x/` | Titled discourse label (thread shift) on other roots. Clause join **-n** = soft packaging (`xan`, …). See [coordination.md](coordination.md). |
+| `/x/` | Titled discourse label (thread shift) on other roots. Clause join **-n** = **sequence** (`xan`, …). See [coordination.md](coordination.md). |
 
 ### Number-word exception
 <a id="number-word-exception"></a>

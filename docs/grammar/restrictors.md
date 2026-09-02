@@ -250,7 +250,7 @@ Closed **`hel`** ranks **when** it matters. **`hal`** still means *only when* th
 
 #### Unspecified-member (`-r`)
 
-Statement readings below. Under **question** force: [questions.md](questions.md#circumstance-when).
+Statement readings below. Under question: [questions.md](questions.md#circumstance-when).
 
 | Form | With occasion(s) | Bare | Mnemonic |
 |------|------------------|------|----------|
@@ -278,7 +278,7 @@ Statement readings below. Under **question** force: [questions.md](questions.md#
 
 Each listed occasion is a **simple** `/h/` or `/w/` content word, or a **complex** unit (`/h/` plus `/b/`, or contiguous `/w/` material the lexicon allows).
 
-*When* / *if* as a **dependent sentence** stays ordinary complex `/h/` plus `/b/` [**`adoro`**](pronouns.md#special-pronouns) ([core.md](core.md#dependent-clauses)). Circumstance fences list **phrase** occasions.
+*When* / *if* as a **dependent sentence** stays ordinary complex `/h/` plus `/b/` [**`adoro`**](pronouns.md#special-pronouns) ([core.md](core.md#dependent-clauses)). Restrictor fences list **phrase** occasions.
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>

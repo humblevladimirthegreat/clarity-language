@@ -17,7 +17,7 @@ You use joins when English would say *and*, *or*, *not*, *prefer A over B*, *som
 
 The vowel tells you *what kind* of list (inventory, menu, rank, negation, complement). The ending tells you *how closed* the list is. **a** add, **o** one, **e** order, **u** undo (same jobs as elsewhere).
 
-Join words are the **only** place **-n** does not mean a [name](reference-suffix.md#proper-name--n). Beginner fences use **-l** / **-m** / **-r**. Join **-n** (named list, clause soft `xan`, join-acts) is [Intermediate](#soft-n-clause) and [Advanced](#named--conventional-ending-phrase-level-all-join-vowels) on this page.
+Join words are the **only** place **-n** does not mean a [name](reference-suffix.md#proper-name--n). Beginner fences use **-l** / **-m** / **-r**. Join **-n** (phrase **named list**, clause **sequence** `xan`, join-acts) is [Intermediate](#soft-n-clause) and [Advanced](#named--conventional-ending-phrase-level-all-join-vowels) on this page.
 
 ### Right-close fence (flat lists)
 <a id="phrase-level-coordination"></a>
@@ -168,7 +168,7 @@ These are the joins you meet first. Each row is **standalone** (0 items) or **si
 
 Same pattern under `/d/` `/b/` (`dal`, `dam`, …), `/v/` (`val`, `vam`, `vul`, …), and `/x/` (`xal`, `xam`, `xul`, …).
 
-**Compare with:** under `/ɡ/` `/h/` `/w/`, emptiness is circumstance on [restrictors](restrictors.md), not “nobody / nothing” as an entity.
+**Compare with:** under `/ɡ/` `/h/` `/w/`, emptiness is a [restrictor](restrictors.md), not “nobody / nothing” as an entity.
 
 ### Negation (**`u`**)
 <a id="negation-u"></a>
@@ -250,7 +250,7 @@ gloss: `z-tea` · `z-coffee` · `zar`
 | `/b/` | argument NP (of complex `/ɡ/` or `/h/`) |
 | `/ɡ/` | adjective phrase |
 | `/w/` | restrictor on preceding `/ɡ/` — [restrictors.md](restrictors.md) |
-| `/h/` | clause circumstance restrictor — [restrictors.md](restrictors.md) |
+| `/h/` | clause restrictor — [restrictors.md](restrictors.md) |
 
 The join prefix **must match** every item head. Under `/ɡ/` `/h/`, joins use **-l** / **-m** / **-r**.
 
@@ -599,14 +599,16 @@ Keep every join on the right of its items (`A vol B val C` would put a join in t
 
 Same rule at phrase, verb-phrase, and clause level.
 
-### Soft **`-n`** (clause only)
+### Sequence (`-n`, clause only)
+<a id="sequence"></a>
+<a id="clause-sequence"></a>
 <a id="soft-n-clause"></a>
 <a id="soft-n-vp-clause"></a>
 <a id="ending-senses"></a>
 
-On **`/x/`** only, join **-n** is **soft packaging**. This join-word **-n** (with phrase **-n** and join-acts / join-relations) is the **only** exception to [ordinary proper **-n**](reference-suffix.md#proper-name--n). Narrative *and then* is **`xan`**.
+On **`/x/`** only, join **-n** is **sequence**. This join-word **-n** (with phrase **-n** and join-acts / join-relations) is the **only** exception to [ordinary named **-n**](reference-suffix.md#proper-name--n). Narrative *and then* is **`xan`**.
 
-| Form | Soft reading |
+| Form | Sequence reading |
 |------|----------------|
 | `xan` | *and then…* |
 | `xon` | *or maybe…* — uncertain alternatives |
@@ -624,16 +626,16 @@ VP `/v/`…**-n** spellings are [join-act verbs](join-extras.md#join-act-verbs).
 
 | | **-l** | **-m** | **-n** | **-r** |
 |---|--------|--------|--------|--------|
-| **a** | `val` / `xal` | `vam` / `xam` | `xan` soft; **`van`** join-act | `var` / `xar` |
-| **o** | `vol` / `xol` | `vom` / `xom` | `xon` soft; **`von`** join-act | `vor` / `xor` |
-| **u** | `vul` / `xul` | `vum` / `xum` | `xun` soft; **`vun`** join-act | `vur` / `xur` |
-| **ao** | `vaol` / `xaol` | `vaom` / `xaom` | `xaon` soft | — |
-| **ua** | `vual` / `xual` | `vuam` / `xuam` | `xuan` soft | — |
-| **uo** | `vuol` / `xuol` | `vuom` / `xuom` | `xuon` soft | — |
-| **e** | `vel` / `xel` | `vem` / `xem` | `xen` soft; **`ven`** join-act | `ver` / `xer` |
-| **ae** | `vael` / `xael` | `vaem` / `xaem` | `xaen` soft | — |
-| **oe** | `voel` / `xoel` | `voem` / `xoem` | `xoen` soft | — |
-| **ue** | `vuel` / `xuel` | `vuem` / `xuem` | `xuen` soft | — |
+| **a** | `val` / `xal` | `vam` / `xam` | `xan` sequence; **`van`** join-act | `var` / `xar` |
+| **o** | `vol` / `xol` | `vom` / `xom` | `xon` sequence; **`von`** join-act | `vor` / `xor` |
+| **u** | `vul` / `xul` | `vum` / `xum` | `xun` sequence; **`vun`** join-act | `vur` / `xur` |
+| **ao** | `vaol` / `xaol` | `vaom` / `xaom` | `xaon` sequence | — |
+| **ua** | `vual` / `xual` | `vuam` / `xuam` | `xuan` sequence | — |
+| **uo** | `vuol` / `xuol` | `vuom` / `xuom` | `xuon` sequence | — |
+| **e** | `vel` / `xel` | `vem` / `xem` | `xen` sequence; **`ven`** join-act | `ver` / `xer` |
+| **ae** | `vael` / `xael` | `vaem` / `xaem` | `xaen` sequence | — |
+| **oe** | `voel` / `xoel` | `voem` / `xoem` | `xoen` sequence | — |
+| **ue** | `vuel` / `xuel` | `vuem` / `xuem` | `xuen` sequence | — |
 
 **Verb-phrase** — each item is a verb plus its own object material. When every item is a bare verb, a `/d/` **immediately after** the join (SHARED) scopes over all verbs: `vozowe vabelel vam dabelel` → *washed and ate an apple*.
 
@@ -779,7 +781,7 @@ One island per clause. Same-slot material outside an island needs an outer join 
 ### Named phrase **`-n`**
 <a id="named--conventional-ending-phrase-level-all-join-vowels"></a>
 
-On **phrase-level** joins under **`/z/` `/d/` `/b/` `/w/`** only, **-n** marks a **named / conventional list**: an established bundle (*the primary colors*, *stop–drop–roll*), not a freshly composed inventory. This is join-word **-n**, not a person/place name. It shares the **only** exception to [ordinary proper **-n**](reference-suffix.md#proper-name--n) with clause soft **-n** and join-acts / join-relations.
+On **phrase-level** joins under **`/z/` `/d/` `/b/` `/w/`** only, **-n** marks a **named list**: an established bundle (*the primary colors*, *stop–drop–roll*), not a freshly composed inventory. This is join-word **-n**, not a person/place name. It shares the **only** exception to [ordinary named **-n**](reference-suffix.md#proper-name--n) with clause **sequence** and join-acts / join-relations.
 
 **…an** is **standalone-only** on phrase fences under **`/z/` `/d/` `/b/` `/w/`** (no one-item reading). Under `/ɡ/` `/h/`, **…an** / **…en** / other **-n** join-vowel spellings are [join-relations](join-extras.md#join-relations).
 
@@ -801,11 +803,11 @@ On **phrase-level** joins under **`/z/` `/d/` `/b/` `/w/`** only, **-n** marks a
 ### Allowed joins by PoS
 <a id="phrase-reserved-forms"></a>
 
-Under `/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/`, the join series plus allowed endings are these joins or [restrictors](restrictors.md) (under `/h/` `/w/`: [circumstance inventory](restrictors.md#defined-core-full)). **`/ɡ/`…**-n** and **`/h/`…**-n** are [join-relations](join-extras.md#join-relations). Join vowels stack at most two letters.
+Under `/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/`, the join series plus allowed endings are these joins or [restrictors](restrictors.md) (under `/h/` `/w/`: [restrictor inventory](restrictors.md#defined-core-full)). **`/ɡ/`…**-n** and **`/h/`…**-n** are [join-relations](join-extras.md#join-relations). Join vowels stack at most two letters.
 
 Under `/v/`, join endings are **-l** / **-m** / **-r**; parallel **-n** spellings are [join-act verbs](join-extras.md#join-act-verbs).
 
-Under `/x/`, the join series plus allowed endings are these clause joins. Stacked vowels take **-l** / **-m** / **-n** (soft), not **-r**.
+Under `/x/`, the join series plus allowed endings are these clause joins. Stacked vowels take **-l** / **-m** / **-n** (sequence), not **-r**.
 
 Join-root phonotactics: [phonology.md](phonology.md#phonotactics).
 
@@ -826,7 +828,7 @@ Join-root phonotactics: [phonology.md](phonology.md#phonotactics).
 ### Translation practice
 <a id="translation-practice-advanced"></a>
 
-Short drills on this Advanced band. Try each item before opening **Show answer**. Phrase **-n** is a **named / conventional** list (clause soft **-n** is Intermediate); one item also tests a rare-arity contrast (**`zor`** vs **`zer`**, **`zur`**, or standalone **`zan`**).
+Short drills on this Advanced band. Try each item before opening **Show answer**. Phrase **-n** is a **named list** (clause **sequence** is Intermediate); one item also tests a rare-arity contrast (**`zor`** vs **`zer`**, **`zur`**, or standalone **`zan`**).
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `adeda` *tea* · `ogove` *coffee* · `unune` *water* · `ebere` *person*
 

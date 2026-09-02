@@ -57,7 +57,7 @@ PoS + ROOT + x + NUM + {-l|-m|-n|-r}
 | **`/w/`** (adjunct) | host graded as quasi- | `gogenenul wegebexrubul`: *quasi-contractual* |
 | **`/j/`** (interjection) | *Quasi-!* / *As if that kind!* | `jahaxrubul` |
 
-Free **`g-e-`** / **`v-e-`** / **`h-e-`** / **`j-e-`** / **`x-e-`** are hostless notional amount / number as verb / adverb / interjection / discourse ([numbers.md § Imaginary](numbers.md#imaginary)). **`ROOTx-e-`** is quasi-*kind*.
+Free **`g-e-`** / **`v-e-`** / **`h-e-`** / **`j-e-`** / **`x-e-`** are hostless imaginary amount / number as verb / adverb / interjection / discourse ([numbers.md § Imaginary](numbers.md#imaginary)). **`ROOTx-e-`** is quasi-*kind*.
 
 ###### Quasi-N (`-e-1` / `-e-2`)
 

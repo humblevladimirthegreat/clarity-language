@@ -28,7 +28,7 @@ gloss: `z-grace` · `d-apple` · `v-includes`
 
 **Related form:** packaging a list uses [joins](coordination.md) (`zal` / `val` / `xal`, …).
 
-These are ordinary content verbs. Sequence of clauses (*and then*) uses clause soft **-n** (`xan`, …) on [coordination.md](coordination.md#soft-n-clause). Point back at a join-act you already used with a short resume or a full paraphrase.
+These are ordinary content verbs. Sequence of clauses (*and then*) uses clause **sequence** (`xan`, …) on [coordination.md](coordination.md#soft-n-clause). Point back at a join-act you already used with a short resume or a full paraphrase.
 
 | Form | Job | Vowel cue | Example |
 |------|-----|-----------|---------|

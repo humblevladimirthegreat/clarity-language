@@ -13,7 +13,7 @@ Write a **code** (phone, room, channel, serial) with marker **`ro`** (written **
 
 Ending is usually **-l** (exact label); **-n** for an official designation; **-r** to resume a prior code. Digitless `d=_` / `g=_` and [digitless](numbers.md#zero-digit-groups) `…_` mean *some code* / an unspecified label. Digit-strings take no plus or minus: see [Sign](numbers.md#sign).
 
-Bare `/h/` + **`ro`** is [clock or calendar circumstance](#time) (`h_15,30`, `h_#22,7,2026`, digitless `h_`). For a non-time code as circumstance, use a host relation + `/b/` (`/h/` *on* + `b_7` *channel 7*), or put `/ɡ/` on a noun.
+Bare `/h/` + **`ro`** is [clock or calendar](#time) (`h_15,30`, `h_#22,7,2026`, digitless `h_`). For a non-time code as a when-frame, use a host relation + `/b/` (`/h/` *on* + `b_7` *channel 7*), or put `/ɡ/` on a noun.
 
 ### Time
 <a id="time"></a>
@@ -25,12 +25,12 @@ Clock and calendar use the same number grammar as other digit-strings. **Bare `/
 | **Clock / schedule** | Digit-string **`ro`** as bare `/h/`. Default **24h**. Fields left to right; commas are writing only: hour, minute, optional seconds (`h_15,30`, `h_15,30,00`). Digitless `h_` = *at some (unspecified) clock time*. |
 | **Calendar date** | Digit-string **`ro`** with the **calendar-ordinal marker vowel `oe`** (spoken **`roe`**, written `h_#…`; same digraph pattern as `reu`). The marker makes the whole word a date, so fields read by position: **day, month, optional year** (`h_#22,7`, `h_#22,7,2026`; modifier `g_#22,7`). You do not guess which number is the month, so zero-padding is optional style. Write a year as **one digit group regardless of length** (`2026` is one group). Digitless `h_` likewise covers an unspecified date when context is calendric. An explicit *date* host + `/b/` is optional when you want to name the relation; bare `hro` already means time. |
 | **Duration** | Scalar **`ra`** / **`ru`** plus a lexicon **unit** in a [measure phrase](#measure-phrases): SI **`ameno`** (*second*) or civil **`umedu`** (*time* / hours). Same engineering-exponent habits as other measures when useful. |
-| **Deixis / tense** | Ordinary lexicon `/h/` (*yesterday*, *ago*, *until*, mood/evidential). Numbers appear only for a numeric payload (*3 days ago* = relation + scalar + unit). |
+| **Deixis / tense** | Ordinary lexicon `/h/` (*yesterday*, *ago*, *until*, evidentiality / closed **mood**). Numbers appear only for a numeric payload (*3 days ago* = relation + scalar + unit). |
 | **Non-time digit labels** | Host relation + `/b/` (`/h/` *on* + `b_101.1`), or `/ɡ/` on a noun (*channel* `g_7`). |
 
 A count of minutes on a clock face is still a digit-string (`h_15,30`), not a scalar packed as one integer. `h+3` is ×3 / *three times*; `h#3` is *for the third time*. Timezone, era, and calendar system are ordinary lexicon `/h/` beside the number word.
 
-Endings: **-l** exact; **-m** fuzzy (*around 15:30*); **-n** conventional schedule or date name; **-r** resume a prior clock or date (digitless `h=_` = *that time/date again*). Digitless `h_` is not circumstance **`har`** (*sometime*): see [digitless](numbers.md#zero-digit-groups).
+Endings: **-l** exact; **-m** fuzzy (*around 15:30*); **-n** conventional schedule or date name; **-r** resume a prior clock or date (digitless `h=_` = *that time/date again*). Digitless `h_` is not restrictor **`har`** (*sometime*): see [digitless](numbers.md#zero-digit-groups).
 
 ### Measure phrases
 <a id="measure-phrases"></a>
@@ -89,7 +89,7 @@ Spelled **`…xrawol`** / **`…xrawon`**: [numeric derivation](numeric-derivati
 <a id="no-metric-prefixes"></a>
 <a id="metric-prefixes"></a>
 
-Keep the **base** host. Put the power of ten on the **amount** (`e3` / `e-3` / an exact count): `burelul g+5400` or `burelul g+5.4e3`; `bojorol g+70e3`. There is no dictionary *kilo-* / *milli-* / *mega-* stem; you scale the number.
+Keep the **base** unit. Put the power of ten on the **amount** (`e3` / `e-3` / an exact count): `burelul g+5400` or `burelul g+5.4e3`; `bojorol g+70e3`. There is no dictionary *kilo-* / *milli-* / *mega-* stem; you scale the number.
 
 **Measured differentials** (*two meters taller*) put that measure NP as the **single `/b/`** on the SHARED scale adjective of a [comparative](comparatives.md#measured-differentials):
 
@@ -225,7 +225,7 @@ In [preferred writing](numbers.md#writing-preferred-shorthand): **`%`** → spee
 <a id="percent-denominators"></a>
 <a id="percent-of-what"></a>
 
-The **whole** / reference class is the **host noun**. The percent is an ordinary `/ɡ/` scalar on that noun, same slot as a count (`zagadalsh g+3` = *three cats*):
+The **whole** / reference class is the noun the percent grades. The percent is an ordinary `/ɡ/` scalar on that noun, same slot as a count (`zagadalsh g+3` = *three cats*):
 
 | Shape | Gloss |
 |-------|--------|

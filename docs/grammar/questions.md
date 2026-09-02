@@ -47,7 +47,7 @@ Under **jol** / **jom**, prefixed **-r** on **a** / **o** / **e** / **u** asks t
 | **e** | *What’s the priority?* | `zer` · `ver` · `xer` | **e** order: name the rank |
 | **u** | *What else?* / *Who else?* | `zur` · `vur` · `xur` | **u** undo: name what remains |
 
-*When?* uses bare **`har`** (and kin) in Intermediate ([circumstance](#circumstance-when)).
+*When?* uses bare **`har`** (and kin) in Intermediate ([When?](#circumstance-when)).
 
 Content-word resume **-r** points back at a named thing; fill-ask is only join **-r** (`zar` / `var` / `xar` / …). See [pronouns](pronouns.md).
 
@@ -268,10 +268,11 @@ Same length rule as [single-item / standalone](coordination.md#single-item-phras
 
 Unbound *who* / *what* / *where* = bare phrase **-r** in the queried slot. Unbound *what did they do?* / *what happened?* = bare **`var`** / **`xar`**. Unbound *when?* = bare **`har`**.
 
-### Circumstance (*When?*)
+### When?
+<a id="when"></a>
 <a id="circumstance-when"></a>
 
-Under `/h/` / `/w/`, circumstance readings are these forms ([restrictors](restrictors.md#defined-core-full)):
+Under `/h/` / `/w/`, **occasion** readings are these forms ([restrictors](restrictors.md#defined-core-full)):
 
 | Form | Statement (bare) | Under question (bare) |
 |------|---------------------|--------------------------|
@@ -417,7 +418,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 <a id="focus-bare-inventory"></a>
 <a id="single-item-standalone-inventory"></a>
 
-Length **2+** (no **-r**): **-l** = pick from this closed menu; **-m** = pick or name something else (for **o**, also *or none*); **u** = *none of* the listed; **ua** / **uo** = complement of the listed; **ue** = reverse-rank among the listed. With **-r**: [fill-ask arity](#fill-ask-r). Under `/h/` / `/w/`, circumstance uses [restrictors](restrictors.md) (the set above).
+Length **2+** (no **-r**): **-l** = pick from this closed menu; **-m** = pick or name something else (for **o**, also *or none*); **u** = *none of* the listed; **ua** / **uo** = complement of the listed; **ue** = reverse-rank among the listed. With **-r**: [fill-ask arity](#fill-ask-r). Under `/h/` / `/w/`, occasions use [restrictors](restrictors.md) (the set above).
 
 Join-word **-n** here is stock/usual (not [proper-name **-n**](reference-suffix.md#proper-name--n)).
 
