@@ -19,7 +19,7 @@ A **thought balloon** floats a take over the scene. Bare contact is watching wit
 ```
 `zazawan hodohom vawalal.`
 
-gloss: `z-grace-proper` · `h-COMMENT-soft` · `v-walk`
+gloss: `z-grace@` · `h-COMMENT-soft` · `v-walk`
 
 *I think Azawan walks.* — commentary held lightly (default)
 ```
@@ -27,7 +27,7 @@ gloss: `z-grace-proper` · `h-COMMENT-soft` · `v-walk`
 ```
 `jom zululon hodohom velebel.`
 
-gloss: `j-soft-ask` · `z-courage-proper` · `h-COMMENT-soft` · `v-sleep`
+gloss: `j-soft-ask` · `z-courage@` · `h-COMMENT-soft` · `v-sleep`
 
 *I wonder whether Ululon sleeps.* — soft commentary plus a soft ask
 ```
@@ -46,22 +46,22 @@ On **`odoho`**, **-l / -m / -r** mark **how you hold** the commentary. **-n** is
 |--------|------|------|---------|----------|
 | **-m** | **`hodohom`** | **soft** (default) | commentary noticed, held lightly | balloon loosely in hand |
 | **-l** | **`hodohol`** | **fused** | commentary taken as the scene (*it is so because I think*) | balloon fills the sky |
-| **-r** | **`huhur`** | **return** | same commentary *and* a cue to step back toward bare contact | let the balloon go |
+| **-r** | **`hodohor`** | **return** | same commentary *and* a cue to step back toward bare contact | let the balloon go |
 
 When unsure, prefer **`hodohom`**.
 
 ```
 `zuhubun hodohol vuzunul.`
 
-gloss: `z-beauty-proper` · `h-COMMENT-fused` · `v-sing`
+gloss: `z-beauty@` · `h-COMMENT-fused` · `v-sing`
 
 *Uhubun sings — and that take is the scene.*
 ```
 
 ```
-`zululon huhur vawalal.`
+`zululon hodohor vawalal.`
 
-gloss: `z-courage-proper` · `h-COMMENT-return` · `v-walk`
+gloss: `z-courage@` · `h-COMMENT-return` · `v-walk`
 
 *I think Ululon walks — and step back from that take.*
 ```
@@ -102,7 +102,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **5.** *I think Ululon walks — and step back from that take.*
 
 ::: details Show answer
-`zululon huhur vawalal.`
+`zululon hodohor vawalal.`
 :::
 
 **6.** *Azawan thinks.* (deliberate event, not a commentary frame)
@@ -143,7 +143,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *I think Uhubun sings.*
 :::
 
-**4.** `zazawan huhur vurunul.`
+**4.** `zazawan hodohor vurunul.`
 
 ::: details Show answer
 *I think Azawan runs — and step back from that take.*
@@ -187,7 +187,7 @@ Each root is a **channel** the claim came through: memory catch, playback, trail
 ```
 `zazawan huvuvum vawalal.`
 
-gloss: `z-grace-proper` · `h-WITNESSED` · `v-walk`
+gloss: `z-grace@` · `h-WITNESSED` · `v-walk`
 
 *Azawan walks — from memory / witnessed.*
 ```
@@ -209,7 +209,7 @@ Pick one evidential **root** for how you know.
 ```
 `zululon heregom velebel.`
 
-gloss: `z-courage-proper` · `h-RECORDED` · `v-sleep`
+gloss: `z-courage@` · `h-RECORDED` · `v-sleep`
 
 *Ululon sleeps — on record.*
 ```
@@ -217,7 +217,7 @@ gloss: `z-courage-proper` · `h-RECORDED` · `v-sleep`
 ```
 `zululon heraram vuwurul.`
 
-gloss: `z-courage-proper` · `h-TOLD` · `v-write`
+gloss: `z-courage@` · `h-TOLD` · `v-write`
 
 *Ululon writes — so they say.*
 ```
@@ -246,22 +246,22 @@ Ordinary content stays available: `zuvuvul` *a memory*; `veregol` *to record*; `
 
 Mark a clause as **as-if / mind-only / off the real ledger** (pretensive scene framing) with one closed mood root.
 
-**Shape:** floating `/h/` **`ahade`** 🎭 *theater* → *pretense*. Prefer floating `/h/` (optional `/w/` when the mood frames only a preceding `/ɡ/`). Ending = [hold](#notional-hold) (same map as COMMENT).
+**Shape:** floating `/h/` **`adade`** 🎭 *theater* → *pretense*. Prefer floating `/h/` (optional `/w/` when the mood frames only a preceding `/ɡ/`). Ending = [hold](#notional-hold) (same map as COMMENT).
 
-A **stage mask** frames the scene as play; the real tally stays offstage. Ordinary content stays available (`zahadel` *a theater*; `vahadel` *to pretend*).
+A **stage mask** frames the scene as play; the real tally stays offstage. Ordinary content stays available (`zadadel` *a theater*; `vadadem` *to pretend*).
 
 ```
-`zazawan hahadem vawalal.`
+`zazawan hadadem vawalal.`
 
-gloss: `z-grace-proper` · `h-NOTIONAL-soft` · `v-walk`
+gloss: `z-grace@` · `h-NOTIONAL-soft` · `v-walk`
 
 *As if Azawan walks.* — notional framing held lightly (default)
 ```
 
 ```
-`zuhubun hahadel vuzunul.`
+`zuhubun hadadel vuzunul.`
 
-gloss: `z-beauty-proper` · `h-NOTIONAL-fused` · `v-sing`
+gloss: `z-beauty@` · `h-NOTIONAL-fused` · `v-sing`
 
 *As if Uhubun sings.* — immersed in the imagined scene
 ```
@@ -275,20 +275,20 @@ Use NOTIONAL when the clause is **framed as pretensive, for-the-sake-of-argument
 #### Hold endings (NOTIONAL)
 <a id="notional-hold"></a>
 
-On **`ahade`**, **-l / -m / -r** mark **how you hold** the as-if frame (same map as [COMMENT hold](#comment-hold)). **-n** is ordinary [proper](reference-suffix.md#proper-name--n).
+On **`adade`**, **-l / -m / -r** mark **how you hold** the as-if frame (same map as [COMMENT hold](#comment-hold)). **-n** is ordinary [proper](reference-suffix.md#proper-name--n).
 
 | Ending | Form | Hold | Reading | Mnemonic |
 |--------|------|------|---------|----------|
-| **-m** | **`hahadem`** | **soft** (default) | as-if noticed, held lightly | mask at arm's length |
-| **-l** | **`hahadel`** | **fused** | immersed in the imagined scene | mask on |
-| **-r** | **`hahader`** | **return** | same as-if *and* a cue to step back toward bare contact | mask off |
+| **-m** | **`hadadem`** | **soft** (default) | as-if noticed, held lightly | mask at arm's length |
+| **-l** | **`hadadel`** | **fused** | immersed in the imagined scene | mask on |
+| **-r** | **`hadader`** | **return** | same as-if *and* a cue to step back toward bare contact | mask off |
 
-When unsure, prefer **`hahadem`**.
+When unsure, prefer **`hadadem`**.
 
 ```
-`zululon hahader vuwurul.`
+`zululon hadader vuwurul.`
 
-gloss: `z-courage-proper` · `h-NOTIONAL-return` · `v-write`
+gloss: `z-courage@` · `h-NOTIONAL-return` · `v-write`
 
 *As if Ululon writes — and step back toward contact.*
 ```
@@ -299,23 +299,23 @@ gloss: `z-courage-proper` · `h-NOTIONAL-return` · `v-write`
 |----------------|--------|
 | *think / assume / suppose / imagine …* (attitude) | **COMMENT** (`hodohom`) |
 | *wonder …* | **COMMENT** plus a soft question (**jom**) |
-| *as if / pretend that / imagine that:* (scene framing) | **NOTIONAL** (`hahadem`) |
+| *as if / pretend that / imagine that:* (scene framing) | **NOTIONAL** (`hadadem`) |
 | *believe …* / how you know a world-claim | evidentiality (`huvuvum`, `heraram`, …) |
 
 | Agalan | Reading |
 |---------|---------|
-| `zahal wolozoxur hogegal hagadel` | *Azawan fears the get-together* (unmet competence; flood; room awash) |
-| `zazawan hahadem vobohol.` | *as if Azawan takes the trophy* — soft notional frame |
+| `zazawan wolozoxur hogegal hanedel` | *Azawan is anxious* (unmet competence; flood; room awash) |
+| `zazawan hadadem vodobol.` | *as if Azawan takes the trophy* — soft notional frame |
 | `… hodohol …` | commentary taken as the scene (fused) |
-| `… huhur …` | commentary named *and* stepped back from |
-| `… hahader …` | notional frame *and* step back toward contact |
+| `… hodohor …` | commentary named *and* stepped back from |
+| `… hadader …` | notional frame *and* step back toward contact |
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` · `odogo` · `awala` · `elebe` · `uzunu` · `urunu` · `uwuru` · `odoho` · `uvuvu` · `erego` · `abawa` · `uneve` · `erara` · `ehere` · `orolo` · `ahade`
+**Roots used here:** `azawa` / `ululo` / `uhubu` · `odogo` · `awala` · `elebe` · `uzunu` · `urunu` · `uwuru` · `odoho` · `uvuvu` · `erego` · `abawa` · `uneve` · `erara` · `ehere` · `orolo` · `adade`
 
 #### English → Agalan
 
@@ -358,7 +358,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **7.** *As if Azawan walks.* (soft pretensive frame)
 
 ::: details Show answer
-`zazawan hahadem vawalal.`
+`zazawan hadadem vawalal.`
 :::
 
 **8.** *I wonder whether Uhubun sleeps.* (commentary + soft ask)
@@ -381,19 +381,19 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Ululon sleeps — per the tale.*
 :::
 
-**3.** `zuhubun hahadel vuzunul.`
+**3.** `zuhubun hadadel vuzunul.`
 
 ::: details Show answer
 *As if Uhubun sings* — immersed in the imagined scene.
 :::
 
-**4.** `zazawan hahadem vurunul.`
+**4.** `zazawan hadadem vurunul.`
 
 ::: details Show answer
 *As if Azawan runs* — soft pretensive frame.
 :::
 
-**5.** `zululon hahader vuwurul.`
+**5.** `zululon hadader vuwurul.`
 
 ::: details Show answer
 *As if Ululon writes* — and step back toward contact.

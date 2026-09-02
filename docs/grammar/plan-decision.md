@@ -25,7 +25,7 @@ Ordinary content stays available (`zoworal` *a map*; `voworal` *to plan*).
 ```
 `zazawan howoram vawalal.`
 
-gloss: `z-grace-proper` · `h-PLAN-sketch` · `v-walk`
+gloss: `z-grace@` · `h-PLAN-sketch` · `v-walk`
 
 *Azawan means to walk.* (direction only; default)
 ```
@@ -33,7 +33,7 @@ gloss: `z-grace-proper` · `h-PLAN-sketch` · `v-walk`
 ```
 `zululon howoral vawalal.`
 
-gloss: `z-courage-proper` · `h-PLAN-itinerary` · `v-walk`
+gloss: `z-courage@` · `h-PLAN-itinerary` · `v-walk`
 
 *Ululon’s itinerary is to walk.* (steps on the map)
 ```
@@ -128,7 +128,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Azawan’s itinerary is to write.*
 :::
 
-**3.** `zuhubun howorar vurunun.`
+**3.** `zuhubun howorar vurunul.`
 
 ::: details Show answer
 *If that path fails, Uhubun will run.* (fork plan)
@@ -183,7 +183,7 @@ Ordinary content still available (`zegegel` *a checkmark*; `vegegel` *to check /
 ```
 `zululon hegegem vuzunul.`
 
-gloss: `z-courage-proper` · `h-DECISION-modifiable` · `v-sing`
+gloss: `z-courage@` · `h-DECISION-modifiable` · `v-sing`
 
 *Ululon has decided to sing, still open to revision.* (default)
 ```
@@ -191,7 +191,7 @@ gloss: `z-courage-proper` · `h-DECISION-modifiable` · `v-sing`
 ```
 `zuhubun hegegel velebel.`
 
-gloss: `z-beauty-proper` · `h-DECISION-irreversible` · `v-sleep`
+gloss: `z-beauty@` · `h-DECISION-irreversible` · `v-sleep`
 
 *Uhubun has decided for good to sleep.*
 ```
@@ -199,7 +199,7 @@ gloss: `z-beauty-proper` · `h-DECISION-irreversible` · `v-sleep`
 ```
 `zazawan howoral hegegel vawalal.`
 
-gloss: `z-grace-proper` · `h-PLAN-itinerary` · `h-DECISION-irreversible` · `v-walk`
+gloss: `z-grace@` · `h-PLAN-itinerary` · `h-DECISION-irreversible` · `v-walk`
 
 *Azawan’s itinerary is to walk, and the pick is settled.*
 ```

@@ -24,12 +24,13 @@ PoS + {a|u|o} + x + ROOT + {-l|-m|-n|-r}
 `zazawan dululon vuvugul.`
 `zaxuvugur vurunul.`
 
-gloss: `z-grace` · `d-courage` · `v-fight` · `z-fight-agent-r` · `v-run`
+gloss: `z-grace@` · `d-courage@` · `v-fight`
+gloss: `z-←agent-x-fight` · `v-run`
 
 *Azawan fought Ululon. The fighter fled.*
 ```
 
-Prefer `/z/` `/d/` `/b/` when the word is a person or thing in the clause. `/ɡ/` is fine when the role is a describing property.
+Prefer `/z/` `/d/` `/b/` when the word is a person or thing in the clause. To say *Azawan is a fighter*, put the role on `/ɡ/` (`zazawan gaxuvugum`). The noun `zaxuvugul` is *a fighter* as a participant.
 
 | ROLE | Form | ROOT type | Referent | Mnemonic |
 |------|------|-----------|----------|----------|
@@ -41,7 +42,8 @@ Prefer `/z/` `/d/` `/b/` when the word is a person or thing in the clause. `/ɡ/
 `zazawan dagadal vejel.`
 `zuxejer vurunul.`
 
-gloss: `z-grace` · `d-cat` · `v-see` · `z-see-patient-r` · `v-run`
+gloss: `z-grace@` · `d-cat` · `v-see`
+gloss: `z-←patient-x-see` · `v-run`
 
 *Azawan sees a cat. The one seen runs.*
 ```
@@ -50,7 +52,8 @@ gloss: `z-grace` · `d-cat` · `v-see` · `z-see-patient-r` · `v-run`
 `zazawan gonogol bululon.`
 `zoxonogor vurunul.`
 
-gloss: `z-grace` · `g-bond` · `b-courage` · `z-bond-reltum-r` · `v-run`
+gloss: `z-grace@` · `g-bond` · `b-courage@`
+gloss: `z-←reltum-x-bond` · `v-run`
 
 *Azawan is bound to Ululon. That bond-argument runs.*
 ```
@@ -119,7 +122,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **6.** *Azawan is a fighter, in a manner of speaking.*
 
 ::: details Show answer
-`zazawan zaxuvugum.`
+`zazawan gaxuvugum.`
 :::
 
 **7.** *Azawan sees a fight.*
@@ -178,7 +181,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Azawan sees a fight.*
 :::
 
-**8.** `zazawan zaxuvugum.`
+**8.** `zazawan gaxuvugum.`
 
 ::: details Show answer
 *Azawan is a fighter, in a manner of speaking.*
@@ -213,7 +216,7 @@ gloss: `j-command` · `v-walk` · `h-west`
 ```
 `jel vawalal hewezexazawan.`
 
-gloss: `j-command` · `v-walk` · `h-west-Azawan`
+gloss: `j-command` · `v-walk` · `h-west-x-grace@`
 
 *Walk left (Azawan’s left).*
 ```
@@ -223,7 +226,7 @@ Speaker and listener anchors are the point when you mean *my left* / *your left*
 ```
 `jel zedonen vawalal hewezexedonen.`
 
-gloss: `j-command` · `z-listener` · `v-walk` · `h-west-listener`
+gloss: `j-command` · `z-listener` · `v-walk` · `h-west-x-listener`
 
 *You, walk left (your left).*
 ```
@@ -242,31 +245,31 @@ Role compounds put a **vowel** left of **`x`**. Viewpoint laterals put a **direc
 
 | Root | Image | Bare spatial | `DIR × ANCHOR` (facing = north) |
 |------|-------|--------------|----------------------------------|
-| **`ububu`** | ⬆️ | north | ahead |
-| **`owono`** | ⬇️ | south | back |
-| **`amala`** | ➡️ | east | right |
+| **`onoho`** | ⬆️ | north | ahead |
+| **`ohuhu`** | ⬇️ | south | back |
+| **`ezaza`** | ➡️ | east | right |
 | **`eweze`** | ⬅️ | west | left |
-| **`uduju`** | ↗️ | northeast | forward-right |
-| **`ebule`** | ↖️ | northwest | forward-left |
-| **`oduwo`** | ↘️ | southeast | back-right |
-| **`odewo`** | ↙️ | southwest | back-left |
+| **`onore`** | ↗️ | northeast | forward-right |
+| **`onohe`** | ↖️ | northwest | forward-left |
+| **`ozozu`** | ↘️ | southeast | back-right |
+| **`ozohe`** | ↙️ | southwest | back-left |
 
 Indoor headings may follow a local map (building north). Prefer a name or listener frame when you mean someone’s body rose (`…xazawan`, `…xedonen`).
 
-Published **metaphors** of the same roots stay bare (`amala` → *progress* / discourse **`xamalal`**; `eweze` → *return*; `odewo` → *retreat`). Generic heading **`ogamo`** stays *compass* / *direction*. Path *forward* / *back* **`ovaro`** / **`agaja`** stay those roots; facing-relative ahead / back on this rose is **`ububu` / `owono` × ANCHOR**.
+Published **metaphors** of the same roots stay bare (`ezaza` → *progress* / discourse **`xezazal`**; `eweze` → *return*; `ozohe` → *retreat*). Generic heading **`ogomo`** stays *compass* / *direction*. Facing-relative ahead / back is **`onoho` / `ohuhu` × ANCHOR**.
 
-#### Gravity (`avuza` / `ovazo`)
+#### Gravity (`uba` / `odowo`)
 
 Skyward / toward the pull is a **shared** frame, not a face:
 
 | Root | Image | Spatial job | Metaphor |
 |------|-------|-------------|----------|
-| **`avuza`** | ⏫ | up (gravity) | *rise* |
-| **`ovazo`** | ⏬ | down (gravity) | *fall* |
-| **`ubodu`** | ↕️ | the vertical axis | (axis only) |
+| **`uba`** | ⏫ | up (gravity) | *rise* |
+| **`odowo`** | ⏬ | down (gravity) | *fall* |
+| **`evere`** | ↕️ | the vertical axis | (axis only) |
 
 ```
-`jel vawalal havuzal.`
+`jel vawalal habal.`
 
 gloss: `j-command` · `v-walk` · `h-up`
 
@@ -274,7 +277,7 @@ gloss: `j-command` · `v-walk` · `h-up`
 ```
 
 ```
-`javuzal.`
+`jabal.`
 
 gloss: `j-up`
 
@@ -285,11 +288,11 @@ gloss: `j-up`
 
 | Pattern | Job | Example |
 |---------|-----|---------|
-| Bare DIR | compass / gravity | `gewezel` *west*; `gavuzal` *up* |
+| Bare DIR | compass / gravity | `gewezel` *west*; `gabal` *up* |
 | **`DIR x ANCHOR`** | that point on **ANCHOR’s** facing rose | `gewezexedonen` *listener-left* |
-| **complex `/ɡ/` + `/b/`** | region on a side **of a landmark** | `gewezexazawan beredel` *on Azawan’s-left of the tree* |
+| **complex `/ɡ/` + `/b/`** | region on a side **of a landmark** | `gewezexazawan berel` *on Azawan’s-left of the tree* |
 
-The **`/b/`** argument is the landmark, not the viewpoint. Put the facing being after **`x`**; put the tree / door / wall in `/b/` when you need both. Bare compass + `/b/` is a region on that heading of the landmark (`gewezel beredel` *west of the tree*).
+The **`/b/`** argument is the landmark, not the viewpoint. Put the facing being after **`x`**; put the tree / door / wall in `/b/` when you need both. Bare compass + `/b/` is a region on that heading of the landmark (`gewezel berel` *west of the tree*).
 
 #### Endings and resume
 
@@ -307,15 +310,15 @@ The **`/b/`** argument is the landmark, not the viewpoint. Put the facing being 
 | `gewezexedonen` | *your left* (listener facing) |
 | `gewezexugobon` | *my left* (speaker facing) |
 | `gewezexahan` | *our left* (shared facing) |
-| `gavuzal` / `havuzal` | gravity *up* |
-| `xamalal` | discourse *therefore* (*progress*) |
+| `gabal` / `habal` | gravity *up* |
+| `xezazal` | discourse *therefore* (*progress*) |
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `ohohu` *house* · `agada` *cat* · `odogo` *dog* · `abogo` *book* · `awala` *walk* · `eweze` *west* / body *left* · `amala` *east* / body *right* · `ebule` *northwest* / *forward-left* · `avuza` *up* (gravity) · `erede` *tree* · `edone` *listener* · `ugobo` *speaker*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `ohohu` *house* · `agada` *cat* · `odogo` *dog* · `abogo` *book* · `awala` *walk* · `eweze` *west* / body *left* · `ezaza` *east* / body *right* · `onohe` *northwest* / *forward-left* · `uba` *up* (gravity) · `ere` *tree* · `edone` *listener* · `ugobo` *speaker*
 
 #### English → Agalan
 
@@ -328,7 +331,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **2.** *The cat on Ululon’s right.*
 
 ::: details Show answer
-`zagadal gamalaxululon.`
+`zagadal gezazaxululon.`
 :::
 
 **3.** *Walk west.*
@@ -340,19 +343,19 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **4.** *Walk up.*
 
 ::: details Show answer
-`jel vawalal havuzal.`
+`jel vawalal habal.`
 :::
 
 **5.** *The dog on Uhubun’s forward-left.*
 
 ::: details Show answer
-`zodogol gebulexuhubun.`
+`zodogol gonohexuhubun.`
 :::
 
 **6.** *The book is on Azawan’s left of the tree.*
 
 ::: details Show answer
-`zabogol gewezexazawan beredel.`
+`zabogol gewezexazawan berel.`
 :::
 
 **7.** *You, walk left (your left).*
@@ -369,7 +372,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 #### Agalan → English
 
-**1.** `zohohul gamalaxazawan.`
+**1.** `zohohul gezazaxazawan.`
 
 ::: details Show answer
 *The house on Azawan’s right.*
@@ -387,7 +390,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Walk west.*
 :::
 
-**4.** `jel vawalal havuzal.`
+**4.** `jel vawalal habal.`
 
 ::: details Show answer
 *Walk up.*
@@ -399,13 +402,13 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *The house on the west.*
 :::
 
-**6.** `zabogol gewezexululon beredel.`
+**6.** `zabogol gewezexululon berel.`
 
 ::: details Show answer
 *The book is on Ululon’s left of the tree.*
 :::
 
-**7.** `jel zedonen vawalal hamalaxedonen.`
+**7.** `jel zedonen vawalal hezazaxedonen.`
 
 ::: details Show answer
 *You, walk right (your right).*

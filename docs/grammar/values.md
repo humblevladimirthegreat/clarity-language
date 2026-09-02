@@ -39,7 +39,7 @@ Six closed needs. The sense is fixed; the lexicon roots are published. The same 
 | relatedness | **`onogo`** | 🪢 *knot* → *bond* | connection, belonging, care |
 | pleasure | **`awero`** | 🍓 *strawberry* → *sweetness* | enjoyment, comfort, aesthetic payoff |
 | survival | **`uhuhe`** | 🛡️ *shield* → *defense* | safety, health, material sufficiency |
-| unspecified | **`ega`** | 🥚 *egg* → *potential* | need named without picking among the five |
+| unspecified | **`ege`** | 🥚 *egg* → *potential* | need named without picking among the five |
 
 ### Word shape
 <a id="word-shape"></a>
@@ -49,7 +49,7 @@ Six closed needs. The sense is fixed; the lexicon roots are published. The same 
 ```
 
 1. **PoS:** `/h/` or `/w/`.
-2. **Need root:** one of the six (`alodo` / `olozo` / `onogo` / `awero` / `uhuhe` / `ega`).
+2. **Need root:** one of the six (`alodo` / `olozo` / `onogo` / `awero` / `uhuhe` / `ege`).
 3. **Optional `x`-addition:** stance vowel **`a` / `e` / `o` / `u`**. Motive **`xe`** is [Intermediate](#intermediate).
 4. **Ending:** on a bare need, ordinary [reference-suffix](reference-suffix.md). On a compound, **-l / -m / -r** follow that stance’s table ([contact](#value-contact) / [preference](#value-preference) / [force](#value-force) / [changeability](#value-changeability)). **-n** stays ordinary [proper](reference-suffix.md#proper-name--n).
 
@@ -70,7 +70,7 @@ How you relate to the need. Vowels follow the series: **`a`** add, **`e`** order
 **Met (`xa`):** the host serves the need. The ending is the [contact channel](#value-contact).
 
 ```
-`zawerul wonogoxal.`
+`zawaral wonogoxal.`
 
 gloss: `z-gift` · `w-relatedness-met-physical`
 
@@ -93,7 +93,7 @@ Channels are different kinds of contact, not a ranked “better.”
 ```
 `zohohul gohohum bazawan wolozoxal.`
 
-gloss: `z-house` · `g-home` · `b-grace` · `w-competence-met-physical`
+gloss: `z-house` · `g-home` · `b-grace@` · `w-competence-met-physical`
 
 *Azawan’s house serves competence (physical contact: a felt place).*
 ```
@@ -112,7 +112,7 @@ gloss: `z-house` · `g-home` · `b-grace` · `w-competence-met-physical`
 ```
 `zazawan vezehel honogoxom.`
 
-gloss: `z-grace` · `v-tell` · `h-relatedness-ought-endorse`
+gloss: `z-grace@` · `v-tell` · `h-relatedness-ought-endorse`
 
 *Azawan tells: relatedness ought to be served (endorse).*
 ```
@@ -129,11 +129,11 @@ gloss: `z-grace` · `v-tell` · `h-relatedness-ought-endorse`
 | `…xur` | **temporary:** usually met; not this moment | **-r** light / this moment only |
 
 ```
-`zazudol woboloxur.`
+`zazegel walodoxur.`
 
-gloss: `z-meeting` · `w-autonomy-unmet-temporary`
+gloss: `z-gathering` · `w-autonomy-unmet-temporary`
 
-*The meeting costs autonomy right now (temporary).*
+*The gathering costs autonomy right now (temporary).*
 ```
 
 ### Translation practice
@@ -141,7 +141,7 @@ gloss: `z-meeting` · `w-autonomy-unmet-temporary`
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `abogo` *book* · `ohohu` *house* · `awala` *walk* · `ezehe` *tell* · `uzunu` *sing* · `aweru` *gift* · `azudo` *meeting* · `alodo` *autonomy* · `olozo` *competence* · `onogo` *relatedness* · `awero` *pleasure* · `uhuhe` *survival* · `ega` *unspecified need`
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `abogo` *book* · `ohohu` *house* · `awala` *walk* · `ezehe` *tell* · `uzunu` *sing* · `awara` *gift* · `azege` *gathering* · `alodo` *autonomy* · `olozo` *competence* · `onogo` *relatedness* · `awero` *pleasure* · `uhuhe` *survival* · `ege` *unspecified need*
 
 #### English → Agalan
 
@@ -154,7 +154,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **2.** *The gift serves relatedness (physical channel).*
 
 ::: details Show answer
-`zawerul wonogoxal.`
+`zawaral wonogoxal.`
 :::
 
 **3.** *The house serves competence (physical channel).*
@@ -163,10 +163,10 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zohohul wolozoxal.`
 :::
 
-**4.** *The meeting costs autonomy right now (temporary).*
+**4.** *The gathering costs autonomy right now (temporary).*
 
 ::: details Show answer
-`zazudol woboloxur.`
+`zazegel walodoxur.`
 :::
 
 **5.** *Azawan tells: relatedness ought to be served (endorse).*
@@ -178,7 +178,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **6.** *Unspecified need (as a topic).*
 
 ::: details Show answer
-`hegal.`
+`hegel.`
 :::
 
 **7.** *The book serves competence (mental channel).*
@@ -190,7 +190,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **8.** *Uhubun sings: survival ought to be protected (bound).*
 
 ::: details Show answer
-`zuhubun vuzunul huzuhuxol.`
+`zuhubun vuzunul huhuhexol.`
 :::
 
 #### Agalan → English
@@ -201,16 +201,16 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Pleasure (as a topic).*
 :::
 
-**2.** `zawerul wonogoxal.`
+**2.** `zawaral wonogoxal.`
 
 ::: details Show answer
 *The gift serves relatedness (physical channel).*
 :::
 
-**3.** `zazudol woboloxur.`
+**3.** `zazegel walodoxur.`
 
 ::: details Show answer
-*The meeting costs autonomy right now (temporary).*
+*The gathering costs autonomy right now (temporary).*
 :::
 
 **4.** `zabogol wolozoxam.`
@@ -219,7 +219,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *The book serves competence (mental channel).*
 :::
 
-**5.** `hegal.`
+**5.** `hegel.`
 
 ::: details Show answer
 *Unspecified need (as a topic).*
@@ -231,7 +231,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Ululon tells: relatedness ought to be served (invite).*
 :::
 
-**7.** `zohohul wuzuhuxal.`
+**7.** `zohohul wuhuhexal.`
 
 ::: details Show answer
 *The house serves survival (physical channel).*
@@ -264,7 +264,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 ```
 `zazawan vezehel honogoxem.`
 
-gloss: `z-grace` · `v-tell` · `h-relatedness-motive-internal`
+gloss: `z-grace@` · `v-tell` · `h-relatedness-motive-internal`
 
 *Azawan tells for relatedness (internal reason).*
 ```
@@ -284,7 +284,7 @@ gloss: `z-grace` · `v-tell` · `h-relatedness-motive-internal`
 |------|---------------|-------------|
 | Possessive / gratitude | host + `/ɡ/` possessive + `w…xa…` + channel | *Azawan’s house (for competence)*: `wolozoxa…` |
 | Praise | neutral host + `w-` / `h-` **`xa`** + channel | *gift (serves relatedness)*: `wonogoxa…` |
-| Criticism | neutral host + **`xu`** + changeability | *meeting (costs autonomy)*: `woboloxu…` |
+| Criticism | neutral host + **`xu`** + changeability | *gathering (costs autonomy)*: `walodoxu…` |
 | Prescription | clause + `h…xo…` + force | *should (for relatedness)*: `honogoxo…` |
 | Motive | clause + `h…xe…` + standing | *Azawan … (for relatedness)*: `honogoxe…` |
 | Topic-only | bare `h…` / `w…` need | `hawerol` |
@@ -296,7 +296,7 @@ On these compounds, **-l / -m / -r** are the stance tables above.
 ```
 `zazawan vezehel holozoxal honogoxem.`
 
-gloss: `z-grace` · `v-tell` · `h-competence-met-physical` · `h-relatedness-motive-internal`
+gloss: `z-grace@` · `v-tell` · `h-competence-met-physical` · `h-relatedness-motive-internal`
 
 *Azawan tells: competence is met (physical) and relatedness is the internal motive.*
 ```
@@ -308,7 +308,7 @@ The **host** word carries literal vs metaphorical sense.
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `abogo` *book* · `ohohu` *house* · `awala` *walk* · `ezehe` *tell* · `uzunu` *sing* · `uwuru` *write* · `aju` *sit* · `aweru` *gift* · `azudo` *meeting* · `alodo` *autonomy* · `olozo` *competence* · `onogo` *relatedness* · `awero` *pleasure* · `uhuhe` *survival* · **`hual`** (*always*) · `odogo` *dog*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `abogo` *book* · `ohohu` *house* · `awala` *walk* · `ezehe` *tell* · `uzunu` *sing* · `uwuru` *write* · `aju` *sit* · `awara` *gift* · `azege` *gathering* · `alodo` *autonomy* · `olozo` *competence* · `onogo` *relatedness* · `awero` *pleasure* · `uhuhe` *survival* · **`hual`** (*always*) · `odogo` *dog*
 
 #### English → Agalan
 
@@ -351,7 +351,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **7.** *The gift serves relatedness (physical).*
 
 ::: details Show answer
-`zawerul wonogoxal.`
+`zawaral wonogoxal.`
 :::
 
 **8.** *Uhubun tells: relatedness ought to be served (endorse).*
@@ -410,16 +410,16 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan’s house serves competence (physical channel).*
 :::
 
-**7.** `zawerul waweroxar.`
+**7.** `zawaral waweroxar.`
 
 ::: details Show answer
 *The gift serves pleasure (spiritual channel).*
 :::
 
-**8.** `zazudol woboloxum.`
+**8.** `zazegel walodoxum.`
 
 ::: details Show answer
-*The meeting costs autonomy (modifiable).*
+*The gathering costs autonomy (modifiable).*
 :::
 
 **9.** `zazawan godogol honogoxum.`

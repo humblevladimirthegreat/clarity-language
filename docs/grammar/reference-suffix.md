@@ -22,9 +22,9 @@ gloss: `z-dog` · `g-blue`
 ```
 `zazawan vawalal.`
 
-gloss: `z-grace` · `v-walk`
+gloss: `z-grace@` · `v-walk`
 
-*Azawan goes.* (named person)
+*Azawan walks.* (named person)
 ```
 
 ```
@@ -32,7 +32,7 @@ gloss: `z-grace` · `v-walk`
 
 gloss: `z-←grace` · `v-walk`
 
-*He/she/it goes.* (resume: same stem as the prior mention; see [pronouns](pronouns.md))
+*He/she/it walks.* (resume: same stem as the prior mention; see [pronouns](pronouns.md))
 ```
 
 Prefer a published root when the English meaning matches; use **-m** when the match is the published **metaphorical** sense.
@@ -198,11 +198,11 @@ Named individuals, places, one-off objects, titled works: *Azawan*, *Paris*, *th
 
 | Shape | Example | Reading |
 |-------|---------|---------|
-| **Nativized** multipart (Agalan roots + mid-word **`x`**) | `zozohuxalanen` | *Ozohuxalanen* (*wish*×*guidance*: one person) |
-| same under other slots | `dozohuxalanen`, `bozohuxalanen` | one named place / person as object or argument |
+| **Nativized** multipart (Agalan roots + mid-word **`x`**) | `zodunaxalanen` | *Odunaxalanen* (*wish*×*guidance*: one person) |
+| same under other slots | `dodunaxalanen`, `bodunaxalanen` | one named place / person as object or argument |
 | **Sense / shop label** (two or more lexicon roots) | `zuzuzuxogoven`, `zuzuzuxogovexadedan` | *Sushi-Coffee*; *Sushi-Coffee-Tea* |
 
-Adjacent bare same-role words (`zozohun zalanen`) are two people in a [join](coordination.md). One **`x`-compound** is one resume target and one slot filler. A **lexical compound** is also one slot-filler: one stem, not **`x`** (`zohohulabedel` *bedroom*).
+Adjacent bare same-role words (`zodunan zalanen`) are two people in a [join](coordination.md). One **`x`-compound** is one resume target and one slot filler. A **lexical compound** is also one slot-filler: one stem, not **`x`** (`zohohulabedel` *bedroom*).
 
 #### Named handles
 <a id="named-handles"></a>
@@ -212,20 +212,20 @@ A long official title (bureau, act, titled group) may also have a **handle**: on
 | Form | Shape | Example | Job |
 |------|--------|---------|-----|
 | **Handle** | one root + **-n** | `zabulon` | default talk, including first mention |
-| **Long title** | phrasal proper (`ROOT x ROOT` … + **-n**) | `zabogexulun` | full legal / ceremonial name of the same office |
+| **Long title** | phrasal proper (`ROOT x ROOT` … + **-n**) | `zabogoxululon` | full legal / ceremonial name of the same office |
 
 ```
 `zabulon vawalal.`
 
-gloss: `z-Abulo` · `v-walk`
+gloss: `z-book-x-courage@` · `v-walk`
 
 *Abulo walks.* (office handle on first mention)
 ```
 
 ```
-`zabogexulun.`
+`zabogoxululon.`
 
-gloss: `z-book-x-courage`
+gloss: `z-book-x-courage@`
 
 *Book-Courage* (full title of that office)
 ```
@@ -296,20 +296,20 @@ In [number words](numbers.md), the same four letters have **number-specific** me
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. The point is **-n** as a title on any role letter, one **`x`-compound** name, or an office **handle**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `abogo` *book* · `elulu` *blue* · `awala` *walk* · `urunu` *run* · `uzunu` *sing* · `eje` *perception* (*see*) · `uwuru` *write* · `adaza` *haste* · `ozohu`×`alane` (name **Ozohuxalanen**) · `uzu`×`ogove` (label **Sushi-Coffee**) · `abogo`×`ululo` (title **Book-Courage**, handle **Abulo**)
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `abogo` *book* · `elulu` *blue* · `awala` *walk* · `urunu` *run* · `uzunu` *sing* · `eje` *perception* (*see*) · `uwuru` *write* · `adaza` *haste* · `oduna`×`alane` (name **Odunaxalanen**) · `uzuzu`×`ogove` (label **Sushi-Coffee**) · `abogo`×`ululo` (title **Book-Courage**, handle **Abulo**)
 
 #### English → Agalan
 
-**1.** *Ozohuxalanen walks.*
+**1.** *Odunaxalanen walks.*
 
 ::: details Show answer
-`zozohuxalanen vawalal.`
+`zodunaxalanen vawalal.`
 :::
 
-**2.** *Azawan sees Ozohuxalanen* (the place).
+**2.** *Azawan sees Odunaxalanen* (the place).
 
 ::: details Show answer
-`zazawan dozohuxalanen vejel.`
+`zazawan dodunaxalanen vejel.`
 :::
 
 **3.** *Sushi-Coffee writes.*
@@ -333,7 +333,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **6.** *The book is Blue* (the named style).
 
 ::: details Show answer
-`dabogol gelulun.`
+`zabogol gelulun.`
 :::
 
 **7.** *Azawan walks in Haste* (the named standard).
@@ -357,21 +357,21 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **10.** *Azawan sees Book-Courage.* (that office’s full title)
 
 ::: details Show answer
-`zazawan dabogexulun vejel.`
+`zazawan dabogoxululon vejel.`
 :::
 
 #### Agalan → English
 
-**1.** `zozohuxalanen vawalal.`
+**1.** `zodunaxalanen vawalal.`
 
 ::: details Show answer
-*Ozohuxalanen walks.*
+*Odunaxalanen walks.*
 :::
 
-**2.** `zazawan dozohuxalanen vejel.`
+**2.** `zazawan dodunaxalanen vejel.`
 
 ::: details Show answer
-*Azawan sees Ozohuxalanen* (the place).
+*Azawan sees Odunaxalanen* (the place).
 :::
 
 **3.** `zuzuzuxogoven vuwurul.`
@@ -392,7 +392,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan runs the Run* (that titled race).
 :::
 
-**6.** `dabogol gelulun.`
+**6.** `zabogol gelulun.`
 
 ::: details Show answer
 *The book is Blue* (the named style).
@@ -416,7 +416,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Abulo walks.* (office handle)
 :::
 
-**10.** `zazawan dabogexulun vejel.`
+**10.** `zazawan dabogoxululon vejel.`
 
 ::: details Show answer
 *Azawan sees Book-Courage.* (full title)
@@ -452,7 +452,7 @@ Hearers treat the handle as a **name**. You do not need to unpack the long title
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. Coin a handle from the title roots, or use that handle as a name.
 
-**Roots used here:** `abogo` *book* · `ululo` *courage* · `alodo` *choice* · `azawa` · `awala` *walk* · `eje` *see*
+**Roots used here:** `abogo` *book* · `ululo` *courage* · `alodo` *choice* · `azawa` *grace* (name **Azawan**) · `awala` *walk* · `eje` *see*
 
 #### English → Agalan
 

@@ -18,7 +18,7 @@ Put a property on the subject with an adjective (`/ɡ/`): name (or other noun) p
 ```
 `zazawan gomonum.`
 
-gloss: `z-grace` · `g-challenging`
+gloss: `z-grace@` · `g-challenging`
 
 *Azawan is challenging.*
 ```
@@ -36,7 +36,7 @@ gloss: `z-grace` · `g-challenging`
 ```
 `zazawan godogol.`
 
-gloss: `z-grace` · `g-dog`
+gloss: `z-grace@` · `g-dog`
 
 *Azawan is a dog.*
 ```
@@ -54,11 +54,19 @@ When you **talk about** the kind as a participant, use a noun (`zodogol` *a dog*
 | **`onunu`** (`gonunu` + `/b/`) | *identical-to* / *same-as* | 🪙 *coin*: two faces, one substance (two labels, one referent) |
 
 ```
-`zodavan gonunul buzuban.`
+`z<Clark>n gonunul b<Superman>n.`
 
-gloss: `z-odava` · `g-SAME` · `b-uzuba`
+gloss: `z-Clark@` · `g-SAME` · `b-Superman@`
 
 *Clark is Superman.*
+```
+
+```
+`zodogol gonunul bazawan.`
+
+gloss: `z-dog` · `g-SAME` · `b-grace@`
+
+*The dog is Azawan.*
 ```
 
 | Piece | Role |
@@ -67,14 +75,14 @@ gloss: `z-odava` · `g-SAME` · `b-uzuba`
 | **`gonunu`** | *identical-to* / *same-as* |
 | extra noun (`/b/`) | the other label or description |
 
-`gonunu` and its extra noun stay **next to each other**, like other adjective-plus-extra-noun groups (`gogobul bazawan`).
+`gonunu` and its extra noun stay **next to each other**, like other adjective-plus-extra-noun groups (`goborul bazawan`).
 
 ### Translation practice
 <a id="translation-practice"></a>
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Property and kind sit on `/ɡ/`; identity uses **`gonunul`** plus `/b/`.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `abogo` *book* · `elulu` *blue* · `uzumu` smile → *happy* (**-m**) · `omonu` *challenging* (**-m**) · `awala` *walk* · `elebe` *sleep* · `onunu` **SAME** · `odava` *Clark* · `uzuba` *Superman*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `abogo` *book* · `elulu` *blue* · `uzumu` smile → *happy* (**-m**) · `omonu` *challenging* (**-m**) · `awala` *walk* · `elebe` *sleep* · `onunu` **SAME**
 
 #### English → Agalan
 
@@ -111,7 +119,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **6.** *Clark is Superman.*
 
 ::: details Show answer
-`zodavan gonunul buzuban.`
+`z<Clark>n gonunul b<Superman>n.`
 :::
 
 **7.** *Uhubun is happy.*
@@ -152,13 +160,13 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Azawan is Dog.*
 :::
 
-**5.** `zodavan gonunul buzuban.`
+**5.** `z<Clark>n gonunul b<Superman>n.`
 
 ::: details Show answer
 *Clark is Superman.*
 :::
 
-**6.** `zuzuban gonunul bodavan.`
+**6.** `z<Superman>n gonunul b<Clark>n.`
 
 ::: details Show answer
 *Superman is Clark.*
@@ -187,7 +195,7 @@ Once kind sits on `/ɡ/`, you can hedge it, mark it as a type, or deny it.
 |---------|---------|---------|
 | Soft / hedged class | plain classifying clause (`zazawan godogol`) with a `/w/` hedge stacked on the classifying `/ɡ/` | *Azawan is something of a dog* / *a dog, sort of* |
 | Characterizing / habitual | `zazawan godogol hual` | *Azawan is the dog type*; [**hual**](restrictors.md) |
-| Negation | `zazawan gul godogol` | *Azawan is not a dog*; [negation **u**](coordination.md#negation-u) |
+| Negation | `zazawan godogol gul` | *Azawan is not a dog*; [negation **u**](coordination.md#negation-u) |
 
 ### **SAME** endings
 
@@ -202,11 +210,11 @@ The same identity pattern takes the usual endings. **-l** stands behind the matc
 
 | Agalan | Reading |
 |---------|---------|
-| `zodavan gonunul buzuban` | *Clark is (the same as) Superman* |
-| `zodavan gonunum buzuban` | open: *Clark is basically Superman* |
-| `zodavan gul gonunul buzuban` | *Clark is not (identical to) Superman* |
-| `zodavan gonunul wahadem buzuban` | *Clark is allegedly Superman* |
-| `zeberel gonunul buzuban` | inside a noun phrase: *the person who is Superman* |
+| `z<Clark>n gonunul b<Superman>n` | *Clark is (the same as) Superman* |
+| `z<Clark>n gonunum b<Superman>n` | open: *Clark is basically Superman* |
+| `z<Clark>n gonunul b<Superman>n gul` | *Clark is not (identical to) Superman* |
+| `z<Clark>n heraram gonunul b<Superman>n` | *Clark is allegedly Superman* |
+| `zeberel gonunul b<Superman>n` | inside a noun phrase: *the person who is Superman* |
 
 The coin root is still available as ordinary *coin* (`zonunul`) or as a *token*-like adjective when it is not this identity frame. Closed **`gonunu…` + `/b/`** as the property is the identity reading.
 
@@ -215,32 +223,32 @@ The coin root is still available as ordinary *coin* (`zonunul`) or as a *token*-
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Classification packaging and **SAME** endings (**-l** / **-m** / **-n** / **-r**) are the point.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `onunu` **SAME** · `odava` *Clark* · `uzuba` *Superman* · `ebere` (band: *the person who…*) · `awala` *walk* · `elebe` *sleep*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `onunu` **SAME** · `erara` **TOLD** · `ebere` (band: *the person who…*) · `awala` *walk* · `elebe` *sleep*
 
 #### English → Agalan
 
 **1.** *Clark is Superman.*
 
 ::: details Show answer
-`zodavan gonunul buzuban.`
+`z<Clark>n gonunul b<Superman>n.`
 :::
 
 **2.** *Clark is basically Superman.*
 
 ::: details Show answer
-`zodavan gonunum buzuban.`
+`z<Clark>n gonunum b<Superman>n.`
 :::
 
 **3.** *Clark is Superman (titled identity).*
 
 ::: details Show answer
-`zodavan gonunun buzuban.`
+`z<Clark>n gonunun b<Superman>n.`
 :::
 
 **4.** *The person who is Superman walks.*
 
 ::: details Show answer
-`zeberel gonunul buzuban vawalal.`
+`zeberel gonunul b<Superman>n vawalal.`
 :::
 
 **5.** *The dog is Azawan.*
@@ -249,33 +257,33 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zodogol gonunul bazawan.`
 :::
 
-**6.** *Azawan is a dog.*
+**6.** *Azawan is not a dog.*
 
 ::: details Show answer
-`zazawan godogol.`
+`zazawan godogol gul.`
 :::
 
 **7.** *Clark is the same (as already ascribed) as Superman.*
 
 ::: details Show answer
-`zodavan gonunur buzuban.`
+`z<Clark>n gonunur b<Superman>n.`
 :::
 
 #### Agalan → English
 
-**1.** `zodavan gonunum buzuban.`
+**1.** `z<Clark>n gonunum b<Superman>n.`
 
 ::: details Show answer
 *Clark is basically Superman.*
 :::
 
-**2.** `zodavan gonunul buzuban.`
+**2.** `z<Clark>n gonunul b<Superman>n.`
 
 ::: details Show answer
 *Clark is Superman.*
 :::
 
-**3.** `zeberel gonunul buzuban velebel.`
+**3.** `zeberel gonunul b<Superman>n velebel.`
 
 ::: details Show answer
 *The person who is Superman sleeps.*
@@ -287,19 +295,19 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *The dog is Azawan.*
 :::
 
-**5.** `zodavan gonunun buzuban.`
+**5.** `z<Clark>n gonunun b<Superman>n.`
 
 ::: details Show answer
 *Clark is Superman (titled identity).*
 :::
 
-**6.** `zululon godogol.`
+**6.** `zululon godogol gul.`
 
 ::: details Show answer
-*Ululon is a dog.*
+*Ululon is not a dog.*
 :::
 
-**7.** `zodavan gonunur buzuban.`
+**7.** `z<Clark>n gonunur b<Superman>n.`
 
 ::: details Show answer
 *Clark is the same (as already ascribed) as Superman.*

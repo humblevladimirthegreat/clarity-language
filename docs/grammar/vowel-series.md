@@ -14,13 +14,13 @@ Opening with `/j/` starts a turn. The vowel says which move you make: add a stat
 
 `jal zazawan godogol.`
 
-gloss: `j-statement` · `z-Azawan` · `g-dog`
+gloss: `j-statement` · `z-grace@` · `g-dog`
 
 *Azawan is a dog.*
 
 `jol zazawan godogol.`
 
-gloss: `j-question` · `z-Azawan` · `g-dog`
+gloss: `j-question` · `z-grace@` · `g-dog`
 
 *Is Azawan a dog?*
 

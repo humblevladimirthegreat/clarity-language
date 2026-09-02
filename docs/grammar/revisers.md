@@ -34,7 +34,7 @@ Both sides sit in the **same role**: both subjects, both objects, both adjective
 ```
 `zodogolsh am zagadal.`
 
-gloss: `z-dog-sh` · `am` · `z-cat`
+gloss: `z-dog-sh` · `including.open` · `z-cat`
 
 *Dogs, including a cat among others.*
 ```
@@ -42,7 +42,7 @@ gloss: `z-dog-sh` · `am` · `z-cat`
 ```
 `dadedal ol dogovel.`
 
-gloss: `d-tea` · `ol` · `d-coffee`
+gloss: `d-tea` · `instead` · `d-coffee`
 
 *Coffee instead of tea.* (object role)
 ```
@@ -50,7 +50,7 @@ gloss: `d-tea` · `ol` · `d-coffee`
 ```
 `zahadal ul zazawan.`
 
-gloss: `z-team` · `ul` · `z-grace`
+gloss: `z-team` · `except` · `z-grace@`
 
 *The team except Azawan.*
 ```
@@ -60,7 +60,7 @@ A list join names members together. A reviser **repairs** one side you already n
 ```
 `zodogol zagadal zam.`
 
-gloss: `z-dog` · `z-cat` · `z-am`
+gloss: `z-dog` · `z-cat` · `z-and.open`
 
 *A dog and a cat.*
 ```
@@ -68,7 +68,7 @@ gloss: `z-dog` · `z-cat` · `z-am`
 ```
 `zodogolsh am zagadal.`
 
-gloss: `z-dog-sh` · `am` · `z-cat`
+gloss: `z-dog-sh` · `including.open` · `z-cat`
 
 *Dogs, including a cat among others.*
 ```
@@ -111,9 +111,9 @@ Skip recoverable **`jal`** after the reviser when the body is a default statemen
 ```
 `al zazawan vawalal.`
 
-gloss: `al` · `z-grace` · `v-walk`
+gloss: `additionally` · `z-grace@` · `v-walk`
 
-*Additionally, Azawan goes.*
+*Additionally, Azawan walks.*
 ```
 
 Adversative *but* / *however*, *therefore*, *meanwhile*, and standalone *next* use other `/x/` roots ([core.md](core.md#continue-x)). Narrative *and then* between full sentences is clause **`xan`**.
@@ -123,7 +123,7 @@ Adversative *but* / *however*, *therefore*, *meanwhile*, and standalone *next* u
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `ahada` *team* · `uzumu` smile → *happy* (**-m**) · `ele` *size* · `awala` *walk* · `elebe` *sleep*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `ahada` *team* · `uzumu` smile → *happy* (**-m**) · `ele` elephant → *size* / *big* (**-m**) · `awala` *walk* · `elebe` *sleep*
 
 #### English → Agalan
 
@@ -160,7 +160,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **6.** *Azawan is happy, or rather, big.*
 
 ::: details Show answer
-`zazawan guzumum el gelel.`
+`zazawan guzumum el gelem.`
 :::
 
 **7.** *Instead, Ululon sleeps.*
@@ -255,7 +255,7 @@ Prefix-less **`ul`** excepts a right-hand side. Prefixed **`zul`** is a [join](c
 ```
 `zahadal ul zazawan.`
 
-gloss: `z-team` · `ul` · `z-grace`
+gloss: `z-team` · `except` · `z-grace@`
 
 *The team except Azawan.*
 ```
@@ -263,7 +263,7 @@ gloss: `z-team` · `ul` · `z-grace`
 ```
 `zodogol zul.`
 
-gloss: `z-dog` · `z-ul`
+gloss: `z-dog` · `z-not`
 
 *No dog.*
 ```
@@ -288,27 +288,27 @@ Every `REVᵢ` applies **in parallel to the same A**, each with its own right-ha
 ```
 `zahadal am zazawan ul zululon.`
 
-gloss: `z-team` · `am` · `z-grace` · `ul` · `z-courage`
+gloss: `z-team` · `including.open` · `z-grace@` · `except` · `z-courage@`
 
 *The team, including Azawan, except only Ululon.*
 ```
 
 ```
-`guzumum el gerul.`
+`guzumum el gerelum.`
 
-gloss: `g-happy` · `el` · `g-calm`
+gloss: `g-happy` · `rather` · `g-calm`
 
-*Content* as the precise reading (rather than *happy*).
+*Calm as the precise reading (rather than happy).*
 ```
 
-A revision chain starting at A consumes following same-role sides paired by **REV**, tighter than a list join: `zodogol ol zagadal zuhurul zam` reads *(dog instead of cat) and bird*.
+A revision chain starting at A consumes following same-role sides paired by **REV**, tighter than a list join: `zodogol ol zagadal zubudul zam` reads *(dog instead of cat) and bird*.
 
 Same-role includes the **verb phrase**:
 
 ```
 `vurunul om vawalal.`
 
-gloss: `v-run` · `om` · `v-walk`
+gloss: `v-run` · `instead.open` · `v-walk`
 
 *Ran, with walk as a replacement.*
 ```
@@ -330,14 +330,14 @@ Same spellings, same vowel meanings, four places:
 
 On a **non-initial** conjunct under a [clause `/x/` fence](coordination.md#clause-level-coordination), **`REV`** sits immediately before that conjunct’s body: `A al B xam` → *A and additionally B*.
 
-Before an **`/x/`** linker (*therefore*, *however*, …), **`REV`** scopes the linker+body stretch: `al xamalal …` → *Additionally, therefore …*. Prefer plain `al …` or plain `xamalal …` when one cue is enough.
+Before an **`/x/`** linker (*therefore*, *however*, …), **`REV`** scopes the linker+body stretch: `al xezazal …` → *Additionally, therefore …*. Prefer plain `al …` or plain `xezazal …` when one cue is enough.
 
 ```
 `jazawan al zululon vawalal.`
 
-gloss: `j-grace` · `al` · `z-courage` · `v-walk`
+gloss: `j-grace@` · `additionally` · `z-courage@` · `v-walk`
 
-*Azawan: additionally, Ululon goes.* (vocative, then discourse reviser)
+*Azawan: additionally, Ululon walks.* (vocative, then discourse reviser)
 ```
 
 Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** are these revisers (in-clause or discourse by placement). Longer prefix-less **root + ending** outside a sentence (`odogol`) is [citation](core.md#citation-forms).
@@ -349,7 +349,7 @@ Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om*
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `ahada` *team* · `uzumu` smile → *happy* (**-m**) · `eru` *calm* · `awala` *walk* · `urunu` *run* · `amala` *therefore*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `ahada` *team* · `uzumu` smile → *happy* (**-m**) · `erelu` relief → *calm* (**-m**) · `awala` *walk* · `urunu` *run* · `ezaza` east → *progress* / *therefore*
 
 #### English → Agalan
 
@@ -362,7 +362,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **2.** *Azawan is happy, or rather, precisely calm.*
 
 ::: details Show answer
-`zazawan guzumum el gerul.`
+`zazawan guzumum el gerelum.`
 :::
 
 **3.** *Azawan: additionally, Ululon walks.*
@@ -374,7 +374,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **4.** *Additionally, therefore Azawan walks.*
 
 ::: details Show answer
-`al xamalal zazawan vawalal.`
+`al xezazal zazawan vawalal.`
 :::
 
 **5.** *Additionally, does Azawan walk?*
@@ -409,7 +409,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *The team, including Azawan, except only Ululon.*
 :::
 
-**2.** `zazawan guzumum el gerul.`
+**2.** `zazawan guzumum el gerelum.`
 
 ::: details Show answer
 *Azawan is happy, or rather, precisely calm.*
@@ -421,7 +421,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan: additionally, Ululon walks.*
 :::
 
-**4.** `al xamalal zululon vurunul.`
+**4.** `al xezazal zululon vurunul.`
 
 ::: details Show answer
 *Additionally, therefore Ululon runs.*
@@ -459,33 +459,33 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **-n** revisers mark a **titled or conventional** frame, not a new vowel job.
 
 ```
-`zudebensh an zaredel.`
+`zaredelsh an zelulul.`
 
-gloss: `z-primary-color-sh` · `an` · `z-red`
+gloss: `z-red-sh` · `including.named` · `z-blue`
 
-*The primary colors, including red.*
+*The reds (and associates), including blue in that named set.*
 ```
 
 ```
-`zudeben un zelulul.`
+`zaredelsh un zerenel.`
 
-gloss: `z-primary-color` · `un` · `z-blue`
+gloss: `z-red-sh` · `except.named` · `z-green`
 
-*RGB except blue.*
+*The reds (and associates) except green from that named frame.*
 ```
 
 ```
 `dadedal on dogovel.`
 
-gloss: `d-tea` · `on` · `d-coffee`
+gloss: `d-tea` · `instead.named` · `d-coffee`
 
 *The stock tea-to-coffee swap.*
 ```
 
 ```
-`zolozolsh al zamemal.`
+`zolozolsh al zahamel.`
 
-gloss: `z-tool-sh` · `al` · `z-hammer`
+gloss: `z-toolbox-sh` · `including` · `z-hammer`
 
 *Tools, including only a hammer.*
 ```
@@ -495,9 +495,9 @@ gloss: `z-tool-sh` · `al` · `z-hammer`
 Inside a [measure range](numbers-applied.md#ranges), prefix-less **`ul`** on the high endpoint reads *up to but not including*:
 
 ```
-`zal gurelul z+3 ul z+5.`
+`z+3 ul z+5 zal gurulel.`
 
-gloss: `z-al` · `g-length` · `z-+3` · `ul` · `z-+5`
+gloss: `z-three` · `except` · `z-five` · `z-and` · `g-measurement`
 
 *[3, 5)* on the length continuum.
 ```

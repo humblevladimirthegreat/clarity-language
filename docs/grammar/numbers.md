@@ -16,7 +16,7 @@ Count and rank with a **`/ɡ/`** number word after the noun. Write the short for
 ```
 `zagadalsh g+3.`
 
-gloss: `z-cat-sh` · `g-+3`
+gloss: `z-cat-sh` · `g-three`
 
 *Three cats.*
 ```
@@ -30,7 +30,7 @@ gloss: `z-cat-sh` · `g-+3`
 ```
 `zabogol g#2.`
 
-gloss: `z-book` · `g-#2`
+gloss: `z-book` · `g-second`
 
 *The second book.*
 ```
@@ -73,7 +73,7 @@ Digitless **`g+`** = the count is **more than one**, without naming N. Group-ref
 ```
 `zagadalsh g+.`
 
-gloss: `z-cat-sh` · `g-+`
+gloss: `z-cat-sh` · `g-more-than-one`
 
 *Cats — more than one.*
 ```
@@ -122,7 +122,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **6.** *Azawan sees three books.*
 
 ::: details Show answer
-`zazawan vejel zabogolsh g+3.`
+`zazawan dabogolsh g+3 vejel.`
 :::
 
 **7.** *More than one cat.*
@@ -134,7 +134,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **8.** *Ululon writes the third book.*
 
 ::: details Show answer
-`zululon vuwurul zabogol g#3.`
+`zululon dabogol g#3 vuwurul.`
 :::
 
 #### Agalan → English
@@ -169,19 +169,19 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *The first cat.*
 :::
 
-**6.** `zuhubun vejel zagadalsh g+.`
+**6.** `zuhubun dagadalsh g+ vejel.`
 
 ::: details Show answer
 *Uhubun sees more than one cat.*
 :::
 
-**7.** `zazawan vejel zodogolsh g+3.`
+**7.** `zazawan dodogolsh g+3 vejel.`
 
 ::: details Show answer
 *Azawan sees three dogs.*
 :::
 
-**8.** `zululon vuwurul zabogol g#1.`
+**8.** `zululon dabogol g#1 vuwurul.`
 
 ::: details Show answer
 *Ululon writes the first book.*
@@ -219,7 +219,7 @@ The number word takes whichever role letter the slot needs. Referential prefixes
 | `/ɡ/` | **modifier** — the number describes the preceding noun (*three cats*, *the second page*, *room 12*). Goes after the noun, like other adjectives. |
 | `/z/` | **subject** — the numeric value, digit-string, or rank is the subject. |
 | `/d/` | **direct object** — the number is the object (common for digit-strings / codes being dialed, entered, stated). |
-| `/b/` | **extra noun** — the number fills the `/b/` slot of a complex adjective or adverb (*of size 12*, host *on* + channel/label, host *at* + time when a relation is named, …). Bare clock/date (no relation named) uses `/h/` + **`ro`** ([Time](#time)). |
+| `/b/` | **extra noun** — the number fills the `/b/` slot of a complex adjective or adverb (*of size 12*, host *on* + channel/label, host *at* + time when a relation is named, …). Bare clock uses `/h/` + **`ro`**; bare date uses `/h/` + **`roe`** (written `h_#…`) ([Time](numbers-applied.md#time)). |
 
 Degree and “aboutness” of a quantity use [number endings](#number-endings) (especially **-m** for approximate), not a `/w/` grader on the number.
 
@@ -240,6 +240,8 @@ Digit-strings (`ro`…) usually take the argument role the clause needs (often `
 | **o** | `_` | **Digit-string** / label (phones, IDs, “read the digits”) | **`o`** one string | `d_555,123,4567`; `d_` *some code*; `g_12` *room 12*-style; `b_…` under a host relation |
 
 One word, one identity. In [preferred writing](#writing-preferred-shorthand), the marker is **`+`** / **`-`** / **`#`** / **`#-`** / **`_`**. Write end-relative as **`#-`** after PoS (or after an ending mark): `g#-2`. `g-#2` would look like scalar **`-`** then ordinal.
+
+Date writing is still digit-string **`_`**, with calendar-ordinal vowel **`oe`** (spoken **`roe`**, written `_#…`): `h_#22,7,2026` *on 22 July 2026*. Clock time stays **`ro`** / `h_15,30`. See [Time](numbers-applied.md#time). It is not a sixth marker identity.
 
 #### Sign
 <a id="sign"></a>
@@ -290,11 +292,11 @@ Phrase **`zar`** / **`zor`** / … pick an unspecified **member of an inventory*
 |---------|-------------------|
 | `/ɡ/` `/z/` `/d/` `/b/` | `g+` *plural / more than one* (on a noun); `z-` *some negative amount* (subj); `b#` *of some rank*; `b#-` *of some end-relative rank*; `d_` *some code* (obj) |
 | `/v/` | Unspecified amount under the verb sense: **`v+`** *increase*; **`v-`** *decrease*; **`v#`** *take / assign some rank*; **`v#-`** *take some end-relative place*; **`v_`** *enter / dial some code*. Soft: **`v~+`** *increase a bit*; **`v~-`** *decrease a bit* |
-| `/h/` | Unspecified amount under the adverb sense: **`h+`** *multiple times*; **`h-`** *÷ / into some number of parts*; **`h#`** *for some nth time*; **`h#-`** *for some nth-from-last time*; **`h_`** *at some clock or date* (bare-`hro` **time**). Soft: **`h~+`** *a few times*; **`h~-`** *÷ a bit* / *into a few parts* |
+| `/h/` | Unspecified amount under the adverb sense: **`h+`** *multiple times*; **`h-`** *÷ / into some number of parts*; **`h#`** *for some nth time*; **`h#-`** *for some nth-from-last time*; **`h_`** *at some clock or date* (bare **`hro`** unspecified when; a stated date uses **`hroe`** / `h_#…`). Soft: **`h~+`** *a few times*; **`h~-`** *÷ a bit* / *into a few parts* |
 | `/j/` | **`j+`** *More!*; **`j-`** *Short!* / *down by some amount!*; **`j#`** *Nth!* (place cheer, rank unnamed); **`j#-`** *Nth-from-last!*; **`j_`** *…!* (unspecified score / code call). Soft: **`j~+`** *a bit more!* |
 | `/x/` | `x#` *some point:* (neutral, number unnamed); `x#-` *some end-relative point:*; `x+` / `x-` corroborating / independent item of unnamed index; `x_` *regarding some (unnamed) label* |
 
-Digitless time `h_` is a **number word** (unspecified clock/date under bare `hro`). Restrictor **`har`** (*sometime*) is the [restrictor](restrictors.md).
+Digitless time `h_` is a **number word** (unspecified clock or date under bare `hro`). A date with fields uses **`roe`** / `h_#…` ([Time](numbers-applied.md#time)). Restrictor **`har`** (*sometime*) is the [restrictor](restrictors.md).
 
 ### Exponents
 
@@ -306,8 +308,8 @@ Within each digit group, speech markers build ordinary magnitudes (Advanced spec
 | **bu** | Negative exponent, followed by the exponent’s digits |
 | **ja** | After exponent digits when a **mantissa follows** (not a digit) |
 | **je** | **Decimal point** (not a digit) |
-| **jo** | **Percent** closer — [percent](#percent-and-percentage-points) |
-| **ju** | **Percentage-point** closer — [percent](#percent-and-percentage-points) |
+| **jo** | **Percent** closer — [percent](numbers-applied.md#percent-and-percentage-points) |
+| **ju** | **Percentage-point** closer — [percent](numbers-applied.md#percent-and-percentage-points) |
 
 - The **exponent comes before** the group’s mantissa digits.
 - If a mantissa follows the exponent, say **`ja`** after the last exponent digit, then the mantissa. Example: `27e12` → `ba` + `wo` + `du` + `ja` + `du` + `le`.
@@ -404,7 +406,7 @@ Full inventory tables: [examples](#examples).
 | **`reu`** | **Take / assign Nth-from-end place** — intransitive *place Nth from the end* / *come in penultimate* (etc.); transitive *put (object) Nth from the end*. |
 | **`ro`** | **Enter / dial / input that digit-string** — type the code, dial the phone number, key the ID. Object (if any) is the channel or device; the digits are in the verb. |
 
-To set a quantity to an absolute value, use an ordinary verb plus the number as argument or adverb. Multiply and divide stay ordinary verbs plus the number as `/h/` (**`h+N`** / **`h-N`**). With [percentage points](#percent-and-percentage-points) (**`ju`**), **`ra`** / **`ru`** as verbs mean increase/decrease by that point amount.
+To set a quantity to an absolute value, use an ordinary verb plus the number as argument or adverb. Multiply and divide stay ordinary verbs plus the number as `/h/` (**`h+N`** / **`h-N`**). With [percentage points](numbers-applied.md#percent-and-percentage-points) (**`ju`**), **`ra`** / **`ru`** as verbs mean increase/decrease by that point amount.
 
 Endings still apply (**-m** ≈ *about* that amount/code/rank, **-r** resume — including [digitless](#digitless) `v=+` / `v=_`, etc.).
 
@@ -419,11 +421,11 @@ Endings still apply (**-m** ≈ *about* that amount/code/rank, **-r** resume —
 | **`ru`** | `h-N` | **Inverse / partition** — *÷N*; *into N parts*; *1/N as often*; *every Nth* (alone, or with ordinary *divide*). |
 | **`re`** | `h#N` | **Nth occurrence of the event (from the start)** — *for the Nth time*; *on the Nth try* (clause-event ordinal, not discourse list independence). |
 | **`reu`** | `h#-N` | **Nth-from-last occurrence** — *for the Nth-from-last time*; *the penultimate time* (`h#-2`). |
-| **`ro`** | `h_…` | **Clock or calendar** — *at 15:30*; *on 2026-07-22*. Channel, frequency, and other codes use a host relation + `/b/` (or `/ɡ/` on a noun). See [Time](#time). |
+| **`ro`** | `h_…` | **Clock** — *at 15:30* (`h_15,30`). **Date** uses calendar-ordinal **`oe`** (written `h_#…`, spoken **`hroe`**): *on 22 July 2026*. Channel, frequency, and other codes use a host relation + `/b/` (or `/ɡ/` on a noun). See [Time](numbers-applied.md#time). |
 
 Worked examples: `h+3` *three times*; `h-3` *÷3 / into 3*; `h#3` *for the third time*; `h#-2` *for the penultimate time*; `h_15,30` *at 15:30*. Frequency codes sit on a host: `/h/` *on* + `b_101.1`.
 
-Endings still apply (**-m** ≈ *about* that many times / that clock or date, **-r** resume, including digitless `h=+` / `h=_`). Relative %-change factors use **`h+…`** (e.g. ×1.5). See [percent](#percent-and-percentage-points).
+Endings still apply (**-m** ≈ *about* that many times / that clock or date, **-r** resume, including digitless `h=+` / `h=_`). Relative %-change factors use **`h+…`** (e.g. ×1.5). See [percent](numbers-applied.md#percent-and-percentage-points).
 
 #### Number as interjection (by marker)
 <a id="number-as-interjection-by-marker"></a>
@@ -583,13 +585,13 @@ Both writings name the **same word**. Choose the surface by **job**: quantity/ma
 | [Numeric derivation](numeric-derivation.md#numeric-derivation) / kind morph | **spelled CV** | `zolovexrabal`, not `zolovex+el` |
 | Inventory tables in grammar docs | **shorthand** | patterns like `ROOTx+e` stay scannable |
 
-**Prefer shorthand** for counts, measures, ranks, ranges, thresholds (`zagadalsh g+3`, `z+3 z+5 zel`); digit-strings / times / codes (`d_555,123,4567`, `h_15:30`); scientific / engineering register (`g+5.2e-4`, `g+0e-1`, `g+e3`); compact agenda markers (`x#1`, `x#3e2`); and docs that teach the numeral system.
+**Prefer shorthand** for counts, measures, ranks, ranges, thresholds (`zagadalsh g+3`, `z+3 z+5 zel`); digit-strings / times / codes (`d_555,123,4567`, `h_15,30`); scientific / engineering register (`g+5.2e-4`, `g+0e-1`, `g+e3`); compact agenda markers (`x#1`, `x#3e2`); and docs that teach the numeral system.
 
 **Prefer spelled CV** for anything after mid-word **`x`** on a content root (lexicon citation forms always spelled); lexicalized morphs treated as affixes (essence / void / quasi / poly / digit morphs / zero×exp on ROOT); literary, sung, or long prose where `+` `#` `_` and second-slot `~`/`@`/`=` break word rhythm; and pronunciation teaching.
 
 Write free numbers with second-slot marks or trailing letters consistently. Derived words use ordinary reference endings on the host with a fully spelled `NUM`.
 
-**Gray zone (either OK):** discourse *Finally* / *Starting with* (`x#e` / `x#e-` vs `xrebal` / `xrebual` — lean spelled in prose, shorthand in outlines); digitless plural (`g+` / `gral`); cheers (`j+e` / `jrabal`); soft free specials when hedging a discourse particle rather than a quantity.
+**Gray zone (either OK):** discourse *Finally* / *Starting with* (`x#e` / `x#e-` vs `xrebal` / `xrebul` — lean spelled in prose, shorthand in outlines); digitless plural (`g+` / `gral`); cheers (`j+e` / `jrabal`); soft free specials when hedging a discourse particle rather than a quantity.
 
 **Not the same job as:** derived `NUM` (no second-slot `~`/`@`/`=`). Free numbers take those marks.
 
@@ -619,8 +621,8 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 | one gazillion (hyperbole) | `g+1e` | *grawobal* (`ra` + wo + `ba` + `l`) |
 | absolute zero (totalized null) | `g+0e` | *grazobal* (`ra` + zo + `ba` + `l` — [zero × exponent](#zero-exponent)) |
 | sterile / null-at-seed amount | `g+0e-` | *grazobul* (`ra` + zo + `bu` + `l`) |
-| engineering null at OoM −1 | `g+0e-1` | *grabuwojazool* (`ra` + `bu` wo **ja** zo + `l`) |
-| engineering residue at OoM −1 | `g-0e-1` | *grubuwojazool* (`ru` + `bu` wo **ja** zo + `l`) |
+| engineering null at OoM −1 | `g+0e-1` | *grabuwojazol* (`ra` + `bu` wo **ja** zo + `l`) |
+| engineering residue at OoM −1 | `g-0e-1` | *grubuwojazol* (`ru` + `bu` wo **ja** zo + `l`) |
 | rank annihilated / disqualified | `g#0e` | *grezobal* (`re` + zo + `ba` + `l`) |
 | ones band (1–9) | `g+e0` | *grabazol* (`ra` + `ba` + zo + `l` — [bare OoM](#bare-oom-bands)) |
 | three at asserted OoM 0 | `g+3e0` | *grabazojarel* (`ra` + `ba` + zo + `ja` + re + `l`) |
@@ -686,7 +688,7 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 | increase a bit | `v~+` | *vram* |
 | multiple times | `h+` | *hral* |
 | a few times | `h~+` | *hram* |
-| at some clock/date | `h_` | *hrol* — still bare `hro` = time; ≠ `har` |
+| at some clock/date | `h_` | *hrol* — unspecified when under bare `hro`; ≠ `har` |
 | More! | `j+` | *jral* |
 | 3 | `g+3` | *grarel* (`g` + `ra` + re + `l`) |
 | −3 | `g-3` | *grurel* (`g` + `ru` + re + `l`) |
@@ -706,7 +708,7 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 | phone 555-123-4567 | `d_555,123,4567` | *drovavavawoduremovagulel* (`d` + `ro` + va×3 · wo du re · mo va gu · le + `l`) |
 | scientific 5.2487083e-4 | `g+5.2487083e-4` | *grabumojavajedumohalezoharel* (`ra` + bu mo **ja** + va **je** + du mo ha · le zo ha · re) |
 | 25% | `g+25%` | *graduvajol* (`g` + `ra` + du va **jo** + `l`) |
-| 25% of the cats | `zagadalsh g+25%` | host whole + `/ɡ/` percent — [denominator](#percent-denominators) |
+| 25% of the cats | `zagadalsh g+25%` | host whole + `/ɡ/` percent — [denominator](numbers-applied.md#percent-denominators) |
 | about 3% | `g~+3%` | *grarejom* (`ra` + re **jo** + `m`) |
 | −12.5% | `g-12.5%` | *gruwodujevajol* (`ru` + wo du **je** va **jo**) |
 | 100% | `g+100%` | *grawozozojol* (`ra` + wo zo zo **jo**; normal mantissa digits) |
@@ -731,7 +733,7 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 | twenty-seven! (label) | `j_27` | *jrodulel* (`j` + `ro` + du le) |
 | First! (place cheer) | `j#1` | *jrewol* (`j` + `re` + wo) |
 
-In a sentence, the PoS attaches to that single number word (see [Parts of speech on numbers](#parts-of-speech-on-numbers); e.g. direct-object digit-string: `d_…`). Prefer naming the whole as the host of a `/ɡ/` **`jo`** percent ([denominator](#percent-denominators): `zagadalsh g+25%`).
+In a sentence, the PoS attaches to that single number word (see [Parts of speech on numbers](#parts-of-speech-on-numbers); e.g. direct-object digit-string: `d_…`). Prefer naming the whole as the host of a `/ɡ/` **`jo`** percent ([denominator](numbers-applied.md#percent-denominators): `zagadalsh g+25%`).
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -757,7 +759,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **3.** *Azawan sees −3.*
 
 ::: details Show answer
-`zazawan vejel d-3.`
+`zazawan d-3 vejel.`
 :::
 
 **4.** *Ululon walks three times.*
@@ -834,7 +836,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Uhubun sleeps at 15:30.*
 :::
 
-**8.** `zazawan vejel d=_.`
+**8.** `zazawan d=_ vejel.`
 
 ::: details Show answer
 *Azawan sees that code again.*
@@ -906,7 +908,7 @@ Same under `/z/` `/d/` `/b/` (`z+e` = +∞ as subject; `d#e-` = start-place as o
 
 **Imaginary (`g-e-`):** negative marker (**`ru`**) + digitless negative exponent (**`bu`∅), no mantissa. Completes the scalar special grid. Reading is **metaphorical**: a magnitude named *as if* it counted, without entering the real tally.
 
-**Psychological as-if** (clause framed as pretensive / mind-only, with flexibility hold endings) uses spelled mood **`ahade`** ([commentary.md § Notional](commentary.md#notional), e.g. `hahadem`). Free **`grubul`** / **`xrubul`** / **`hrubul`** / **`vrubul`** / **`jrubul`** stay amount, discourse *imagine that:*, manner *as if*, verb *treat as imaginary*, and cheer as interjection on the number grid.
+**Psychological as-if** (clause framed as pretensive / mind-only, with flexibility hold endings) uses spelled mood **`adade`** ([commentary.md § Notional](commentary.md#notional), e.g. `hadadem`). Free **`grubul`** / **`xrubul`** / **`hrubul`** / **`vrubul`** / **`jrubul`** stay amount, discourse *imagine that:*, manner *as if*, verb *treat as imaginary*, and cheer as interjection on the number grid.
 
 **Endings** (no-mantissa specials):
 
@@ -1053,12 +1055,12 @@ Soft **-m** hedges (*near-disqualified*, …). Free twin of derivation **`ROOTx#
 
 | Free | Derived (spelled) | Contrast |
 |------|---------|----------|
-| **`v+0el`** | **`vezehuxrazobal`** | hostless *annihilate* vs *annihilate-the-score* (kind) |
-| **`g+0e`** | **`zeguraxrazobal`** | absolute-zero amount vs total-null credit-kind |
-| **`g+0e-1`** | **`zeguraxrabuwojazol`** | deci-null amount vs kind nullified at OoM −1 |
-| **`g-0e-1`** | **`zeguraxrubuwojazol`** | deci-residue amount vs kind residue at OoM −1 |
+| **`v+0el`** | **`vodoboxrazobal`** | hostless *annihilate* vs *annihilate-the-score* (kind) |
+| **`g+0e`** | **`zedudaxrazobal`** | absolute-zero amount vs total-null credit-kind |
+| **`g+0e-1`** | **`zedudaxrabuwojazol`** | deci-null amount vs kind nullified at OoM −1 |
+| **`g-0e-1`** | **`zedudaxrubuwojazol`** | deci-residue amount vs kind residue at OoM −1 |
 | **`g#0e`** | **`zazuduxrezobal`** | disqualified place vs disqualified-*kind* |
-| **`v+0l`** | **`vezehuxrazol`** | ordinary zeroing / null-reset — weaker than **`…+0e`** |
+| **`v+0l`** | **`vodoboxrazol`** | ordinary zeroing / null-reset — weaker than **`…+0e`** |
 
 Free **`g+e0`** / **`g+Ne0`** are bare OoM / OoM assert on free numbers, not kind derivation morphs. Engineering OoM-null is **`±0e-1`**.
 

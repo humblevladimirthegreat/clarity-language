@@ -38,7 +38,7 @@ Pronouns copy a short start of an earlier word’s root (through the second vowe
 ### Semantic
 <a id="semantic"></a>
 
-Each dictionary sense is one entry. Related senses across fields use an explicit compound: kind first, then the topic after mid-word **`x`** (`golovexurul` *love in the crush sense*).
+Each dictionary sense is one entry. Related senses across fields use an explicit compound: kind first, then the topic after mid-word **`x`** (`golovexagal` *love in the crush sense*).
 
 ## How to learn from these docs
 <a id="how-to-learn"></a>

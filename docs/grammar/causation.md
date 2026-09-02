@@ -25,9 +25,9 @@ The first vowel is series **`a`** (*add*): add that route, and the outcome can f
 | multi inclusive **`…ao…`** | several jointly listed hits | **`a`** add several routes |
 
 ```
-`zazel zaom.`
+`zezewel zaom.`
 
-gloss: `z-effort` · `z-would-work`
+gloss: `z-effort` · `z-and/or.open`
 
 *Effort would work (among other routes).*
 ```
@@ -35,7 +35,7 @@ gloss: `z-effort` · `z-would-work`
 ```
 `zuludul zozowol zaom.`
 
-gloss: `z-cloud` · `z-snow` · `z-would-work`
+gloss: `z-cloud` · `z-snow` · `z-and/or.open`
 
 *Clouds or snow would work (for that outcome).*
 ```
@@ -49,14 +49,14 @@ When both poles are **nouns / phrases**, reuse the inclusive family in [coordina
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Everyday *would work* is open sufficient **`…aom`** (outcome as host). Closed **`…aol`** is the stronger “this settles it” twin.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `azel` *effort* · `uludu` *cloud* · `ozowo` *snow* · `odogo` *dog* · `agada` *cat* · `abogo` *book* · `ohohu` *house* · `awala` *walk* · `uzunu` *sing*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `ezewe` *effort* · `uludu` *cloud* · `ozowo` *snow* · `odogo` *dog* · `agada` *cat* · `abogo` *book* · `ohohu` *house* · `awala` *walk* · `uzunu` *sing*
 
 #### English → Agalan
 
 **1.** *Effort would work (among other routes).*
 
 ::: details Show answer
-`zazel zaom.`
+`zezewel zaom.`
 :::
 
 **2.** *Clouds would work.*
@@ -98,12 +98,12 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **8.** *Uhubun’s singing would work.*
 
 ::: details Show answer
-`zuhubun vuzunul zaom.`
+`zuhubun vuzunul vaom.`
 :::
 
 #### Agalan → English
 
-**1.** `zazel zaom.`
+**1.** `zezewel zaom.`
 
 ::: details Show answer
 *Effort would work (among other routes).*
@@ -133,7 +133,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *A house would work.*
 :::
 
-**6.** `zuhubun vuzunul zaom.`
+**6.** `zuhubun vuzunul vaom.`
 
 ::: details Show answer
 *Uhubun’s singing would work.*
@@ -175,7 +175,7 @@ gloss: `z-rain` · `h-without` · `b-cloud`
 ```
 `zazawan vawalal hal.`
 
-gloss: `z-grace` · `v-walk` · `h-never`
+gloss: `z-grace@` · `v-walk` · `h-never`
 
 *Azawan never walks.*
 ```
@@ -192,7 +192,7 @@ Everyday *would work* stays cheaper as open sufficient (`…aom`) than as exclus
 ```
 `zazawan gon.`
 
-gloss: `z-grace` · `g-has-to-be`
+gloss: `z-grace@` · `g-has-to-be`
 
 *It has to be Azawan.*
 ```
@@ -225,7 +225,7 @@ Bare **`IF`** (`hadorom`) is one-way only.
 ```
 `zazawan vawalal hadorom badorol zululon velebel.`
 
-gloss: `z-grace` · `v-walk` · `h-IF` · `b-next-clause` · `z-courage` · `v-sleep`
+gloss: `z-grace@` · `v-walk` · `h-if` · `b-next-clause` · `z-courage@` · `v-sleep`
 
 *Azawan walks if Ululon sleeps.*
 ```
@@ -233,7 +233,7 @@ gloss: `z-grace` · `v-walk` · `h-IF` · `b-next-clause` · `z-courage` · `v-s
 ```
 `zazawan vawalal hurugum badorol zululon velebel.`
 
-gloss: `z-grace` · `v-walk` · `h-BECAUSE` · `b-next-clause` · `z-courage` · `v-sleep`
+gloss: `z-grace@` · `v-walk` · `h-because` · `b-next-clause` · `z-courage@` · `v-sleep`
 
 *Azawan walks because Ululon sleeps.*
 ```
@@ -258,9 +258,9 @@ Mark a clause as **CAUSE-framed** (*how the gears engage*) with one closed mood 
 **Shape:** floating **`/h/`** mood **`egega`** ⚙️ *gear* → *CAUSE* (optional `/w/` when scoped only to a preceding `/ɡ/`). Prefer floating `/h/`. Ending = **-m** only (metaphorical): **`hegegam`**. Ordinary content still available (`zegegal` *a gear*; `vegegal` *to mesh / engage*).
 
 ```
-`haon beladel hegegam.`
+`haon bezewel hegegam.`
 
-gloss: `h-open-to` · `b-effort` · `h-CAUSE`
+gloss: `h-and/or` · `b-effort` · `h-CAUSE`
 
 *Open to effort (CAUSE)* (how the payoff gears turn)
 ```
@@ -276,24 +276,24 @@ Stack **CAUSE** with a join, a clause pole, universality, or evidential `/h/` wh
 ### Preference vs law
 <a id="preference-vs-law"></a>
 
-A common shape: *hard work should earn a promotion*. The “rule” is a **wish / ought**, not a formal or natural law.
+A common shape: *hard work should count*. The “rule” is a **wish / ought**, not a formal or natural law.
 
 | Layer | Role |
 |-------|------|
-| Condition shape | open sufficient (`haon` / `…aom`, …) if you still mean “effort would count toward promotion” |
+| Condition shape | open sufficient (`haon` / `…aom`, …) if you still mean “effort would count toward advancement” |
 | Ought / motive | **`xo`** (prescription) or **`xe`** (motive): [values](values.md) |
 | Warrant | evidentiality / [universality](special-vocabulary.md#universality) when asserting a world regularity |
 
 Keep the strength of feeling on values force / evidentiality. Exclusive **`ol` / `gon`** still means *sole path*, even when you feel strongly.
 
-**Schematic:** `… haon beladel` on promotion + `holozoxor` (soft invite force) ≈ *effort is among routes that ought to count for competence payoff*.
+**Schematic:** `… haon bezewel` on effort + `holozoxor` (soft invite force) ≈ *effort is among routes that ought to count for competence payoff*.
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Mark **necessary** with exclusion / **`hal`**, unique path with **`gon` / `hon` / `…ol`**, clause poles with **`hadorom` / `hezazem` / `hurugum`**, and **CAUSE** with **`hegegam`**. An ought sits on values **`xo`**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `azel` *effort* · `anunu` *rain* · `uludu` *cloud* · `abogo` *book* · `elade` *promotion* · `olozo` *competence* · `awala` *walk* · `uzunu` *sing* · `elebe` *sleep* · `adoro` *next clause* / *if* · `ezaze` *iff* · `urugu` *because* · `egega` CAUSE
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `ezewe` *effort* · `anunu` *rain* · `uludu` *cloud* · `abogo` *book* · `olozo` *competence* · `awala` *walk* · `uzunu` *sing* · `elebe` *sleep* · `adoro` *next clause* / *if* · `ezaze` *iff* · `urugu` *because* · `egega` CAUSE
 
 #### English → Agalan
 
@@ -333,10 +333,10 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zazawan vawalal hurugum badorol zululon velebel.`
 :::
 
-**7.** *Effort would count toward promotion (as an ought, not the sole law).*
+**7.** *Effort would count (as an ought, not the sole law).*
 
 ::: details Show answer
-`zazel haon beladel holozoxor.`
+`haon bezewel holozoxor.`
 :::
 
 **8.** *It has to be a book.*
@@ -354,7 +354,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **10.** *Open to effort (as mechanism).*
 
 ::: details Show answer
-`haon beladel hegegam.`
+`haon bezewel hegegam.`
 :::
 
 #### Agalan → English
@@ -389,10 +389,10 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan walks because Ululon sleeps.*
 :::
 
-**6.** `zazel haon beladel holozoxor.`
+**6.** `haon bezewel holozoxor.`
 
 ::: details Show answer
-*Effort would count toward promotion (as an ought, not the sole law).*
+*Effort would count (as an ought, not the sole law).*
 :::
 
 **7.** `zazawan guan bodogol.`
@@ -413,7 +413,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan sings (as mechanism).*
 :::
 
-**10.** `haon beladel hegegam.`
+**10.** `haon bezewel hegegam.`
 
 ::: details Show answer
 *Open to effort (as mechanism).*
@@ -440,7 +440,7 @@ Agalan separates that on the clause root:
 ```
 `zazawan vawalal hurugum badorol zanunul.`
 
-gloss: `h-BECAUSE` · `b-next-clause` · `z-rain`
+gloss: `z-grace@` · `v-walk` · `h-because` · `b-next-clause` · `z-rain`
 
 *Azawan walks because it rains.* Rain is asserted as the reason.
 ```
@@ -448,7 +448,7 @@ gloss: `h-BECAUSE` · `b-next-clause` · `z-rain`
 ```
 `zazawan vawalal hadorom badorol zanunul.`
 
-gloss: `h-IF` · `b-next-clause` · `z-rain`
+gloss: `z-grace@` · `v-walk` · `h-if` · `b-next-clause` · `z-rain`
 
 *Azawan walks if it rains.* Rain is not asserted; the main sentence is under that opportunity.
 ```
@@ -479,7 +479,7 @@ English often uses *because* for **speaker grounds** (*I say P because Q* / *I t
 
 A particular episode (*this delay was caused by…*) and a standing pattern (*clouds for rain*) share the same necessary/sufficient shapes. Tense, **`hual`**, evidentiality, **`CAUSE`**, and [universality](special-vocabulary.md#universality) distinguish them.
 
-Show a causal “law” with evidentiality and universality. **CAUSE** uses **`hegegam`**; NATURAL uses **`hafafal`**.
+Show a causal “law” with evidentiality and universality. **CAUSE** uses **`hegegam`**; NATURAL uses **`habelel`**.
 
 ### English → Agalan
 <a id="english-cues"></a>
@@ -497,8 +497,8 @@ Show a causal “law” with evidentiality and universality. **CAUSE** uses **`h
 | *if and only if* / *iff* | **`hezazem badorol`** |
 | *although* / *while* / *until* / *before* / *after* | same `/h/`+**`adoro`** shape ([core.md](core.md#dependent-clauses)) |
 | *I think P because Q* (speaker grounds) | COMMENT + optional **`hurugum`** ([above](#epistemic-because)) |
-| *therefore* (discourse) | **`xamalal`** ([continue](core.md#continue-x)) |
-| *however* / *meanwhile* (discourse) | **`xezebal`** / **`xamenol`** |
+| *therefore* (discourse) | **`xezazal`** ([continue](core.md#continue-x)) |
+| *however* / *meanwhile* (discourse) | **`xezebal`** / **`xanelol`** |
 
 Discourse *however* / *meanwhile* are `/x/` linkers. Subordinating **`hezebam`** / **`hegemum`** stay *although* / *meanwhile-as-dependent*.
 

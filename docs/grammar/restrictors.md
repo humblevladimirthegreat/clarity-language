@@ -13,7 +13,7 @@ A restrictor sits in the adverb slot (`/h/`) or on the previous adjective (`/w/`
 ```
 `zazawan vawalal hanunul hal.`
 
-gloss: `z-grace` · `v-walk` · `h-rain` · `hal`
+gloss: `z-grace@` · `v-walk` · `h-rain` · `h-only-when`
 
 *Azawan walks only when raining.*
 ```
@@ -23,7 +23,7 @@ Bare **`hal`** with no occasion listed is *never*:
 ```
 `zazawan vawalal hal.`
 
-gloss: `z-grace` · `v-walk` · `hal`
+gloss: `z-grace@` · `v-walk` · `h-never`
 
 *Azawan never walks.*
 ```
@@ -33,9 +33,9 @@ The vowels are the join series you already know (**a** inventory, **u** undo, **
 Two manner adverbs in a row still mean they apply together. That is ordinary stacking, not a restrictor:
 
 ```
-`zazawan vawalal hadazal hazebo.`
+`zazawan vawalal hadazam howom.`
 
-gloss: `z-grace` · `v-walk` · `h-haste` · `h-quiet`
+gloss: `z-grace@` · `v-walk` · `h-haste` · `h-quietude`
 
 *Azawan walks quickly and quietly.*
 ```
@@ -60,7 +60,7 @@ gloss: `z-grace` · `v-walk` · `h-haste` · `h-quiet`
 ```
 `guzumum wal.`
 
-gloss: `g-happy` · `wal`
+gloss: `g-happy` · `w-never`
 
 *Never happy* (that property never holds).
 ```
@@ -68,7 +68,7 @@ gloss: `g-happy` · `wal`
 ```
 `zuhubun vuzunul hual.`
 
-gloss: `z-beauty` · `v-sing` · `hual`
+gloss: `z-beauty@` · `v-sing` · `h-always`
 
 *Uhubun always sings.*
 ```
@@ -83,9 +83,9 @@ Put occasion words **before** the restrictor, then close on the right, same fenc
 | **`hual` / `huam`** | *always except when…* | **ua** always, minus these times |
 
 ```
-`hanunul hudunul ham.`
+`hanunul hunugul ham.`
 
-gloss: `h-rain` · `h-night` · `ham`
+gloss: `h-rain` · `h-night` · `h-when.open`
 
 *When raining and at night, among other possible cases.*
 ```
@@ -97,7 +97,7 @@ Asking *when?* with these forms (bare **`har`**, and the rest of the *-r* set): 
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Restrictors mark **when the host applies**. Bare **`hal`** / **`hual`** are *never* / *always*; with a listed occasion they are *only when…* / *always except when…*.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `awala` *walk* · `urunu` *run* · `uzunu` *sing* · `elebe` *sleep* · `uzumu` smile → *happy* (**-m**) · `uruna` *rain* · `udunu` *night* · `adaza` *haste* · `azebo` *quiet*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `awala` *walk* · `urunu` *run* · `uzunu` *sing* · `elebe` *sleep* · `uzumu` smile → *happy* (**-m**) · `anunu` *rain* · `unugu` *night* · `adaza` dash → *haste* (**-m**) · `owo` owl → *quietude* (**-m**)
 
 #### English → Agalan
 
@@ -134,7 +134,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **6.** *Azawan sleeps when raining and at night, among other times.*
 
 ::: details Show answer
-`zazawan velebel hanunul hudunul ham.`
+`zazawan velebel hanunul hunugul ham.`
 :::
 
 **7.** *Uhubun walks anytime.*
@@ -187,13 +187,13 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Uhubun walks sometime else.*
 :::
 
-**7.** `zazawan vawalal hadazal hazebo.`
+**7.** `zazawan vawalal hadazam howom.`
 
 ::: details Show answer
 *Azawan walks quickly and quietly.*
 :::
 
-**8.** `zazawan velebel hanunul hudunul ham.`
+**8.** `zazawan velebel hanunul hunugul ham.`
 
 ::: details Show answer
 *Azawan sleeps when raining and at night, among other times.*
@@ -203,14 +203,15 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 <a id="intermediate"></a>
 
 ### More occasions
+<a id="more-occasions"></a>
 <a id="defined-core-full"></a>
 
 The same vowels as joins now name **more kinds of occasion**. `/w/` matches `/h/` on the adjective (`wal` / `wam` / `wual` / `wuam` / `war` / `wor` / `wur`, and the rows below).
 
 ```
-`zazawan vawalal hanunul hudunul hol.`
+`zazawan vawalal hanunul hunugul hol.`
 
-gloss: `z-grace` · `v-walk` · `h-rain` · `h-night` · `hol`
+gloss: `z-grace@` · `v-walk` · `h-rain` · `h-night` · `h-either-when`
 
 *Azawan walks either when raining or at night (not both).*
 ```
@@ -218,7 +219,7 @@ gloss: `z-grace` · `v-walk` · `h-rain` · `h-night` · `hol`
 ```
 `zululon velebel hanunul hozowol haol.`
 
-gloss: `z-courage` · `v-sleep` · `h-rain` · `h-snow` · `haol`
+gloss: `z-courage@` · `v-sleep` · `h-rain` · `h-snow` · `h-when-or`
 
 *Ululon sleeps when raining and/or when snowing.*
 ```
@@ -259,18 +260,18 @@ Statement readings below. Under question: [questions.md](questions.md#when).
 
 ### More examples
 
-- `hanunul hudunul hol` → *either when raining or at night (not both)*; `… hom` → *… or never*
+- `hanunul hunugul hol` → *either when raining or at night (not both)*; `… hom` → *… or never*
 - `hanunul hozowol haol` → *when raining and/or when snowing*
-- `hanunul hul` → *not when raining*; `hanunul hudunul hum` → *not when raining or at night, for one*
+- `hanunul hul` → *not when raining*; `hanunul hunugul hum` → *not when raining or at night, for one*
 - `hanunul hual` → *always except when raining*
 - `hanunul huol` → *anytime except when raining*
-- `hamubam hogenenum hel` → *preferably in emergency ≻ for convenience*
+- `hamubum hozorem hel` → *preferably in emergency ≻ for convenience*
 - `hanunul hozowol hael` → *as often when raining as when snowing*
 - `hael` → *equally often* / *tied frequency frame* (bare)
-- `bemamal bamugal hoel` → *if (when) fix, else if workaround…*
+- `herebal hewenem hoel` → *if (when) repair, else if workaround…*
 - `hanunul hozowol har` → *sometime among rain or snow*
-- Complex occasion: `hohohul hal` → *only at home*
-- `/w/` core: `hededem wal` → *only when alleged*; `war` → *sometime* (under some framing); two adjective details in a row: `guzumum wube wenazel` → *very* and *recent*
+- Complex occasion: `hohohum hal` → *only at home*
+- `/w/` core: `guzumum wanunul wal` → *happy only when raining*; `war` → *sometime*; two adjective details in a row: `guzumum wadazam wowom` → *hastily* and *quietly*
 
 ### Occasions vs a dependent *when*
 
@@ -283,14 +284,14 @@ Each listed occasion is a **simple** `/h/` or `/w/` content word, or a **complex
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Use exclusive / inclusive / *not when* / ranked occasions / unspecified-member with listed occasions. Next-clause *when* / *if* stays `/h/` plus `/b/` **`adoro`**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `awala` *walk* · `urunu` *run* · `uzunu` *sing* · `elebe` *sleep* · `uwuru` *write* · `uruna` *rain* · `ozowo` *snow* · `udunu` *night* · `ohohu` *house* · `amuba` *emergency* · `ogegau` *convenience* · `emama` *fix* · `amuga` *workaround* · `adoro` *next clause*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `awala` *walk* · `urunu` *run* · `uzunu` *sing* · `elebe` *sleep* · `uwuru` *write* · `anunu` *rain* · `ozowo` *snow* · `unugu` *night* · `ohohu` house → *home* (**-m**) · `amubu` ambulance → *emergency* (**-m**) · `ozore` convenience-store → *convenience* (**-m**) · `ereba` *repair* · `ewene` wrench → *workaround* (**-m**) · `adoro` *next clause*
 
 #### English → Agalan
 
 **1.** *Azawan walks either when raining or at night, not both.*
 
 ::: details Show answer
-`zazawan vawalal hanunul hudunul hol.`
+`zazawan vawalal hanunul hunugul hol.`
 :::
 
 **2.** *Ululon sleeps when raining and/or when snowing.*
@@ -314,7 +315,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **5.** *Azawan walks preferably in an emergency rather than for convenience.*
 
 ::: details Show answer
-`zazawan vawalal hamubam hogenenum hel.`
+`zazawan vawalal hamubum hozorem hel.`
 :::
 
 **6.** *Ululon runs as often when raining as when snowing.*
@@ -326,7 +327,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **7.** *Azawan writes if a fix, else if a workaround.*
 
 ::: details Show answer
-`zazawan vuwurul bemamal bamugal hoel.`
+`zazawan vuwurul herebal hewenem hoel.`
 :::
 
 **8.** *Uhubun sings if Azawan walks.*
@@ -337,13 +338,13 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 #### Agalan → English
 
-**1.** `zazawan vawalal hanunul hudunul hol.`
+**1.** `zazawan vawalal hanunul hunugul hol.`
 
 ::: details Show answer
 *Azawan walks either when raining or at night, not both.*
 :::
 
-**2.** `zululon velebel hanunul hudunul hom.`
+**2.** `zululon velebel hanunul hunugul hom.`
 
 ::: details Show answer
 *Ululon sleeps either when raining or at night, or never.*
@@ -361,7 +362,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan walks anytime except when raining.*
 :::
 
-**5.** `zazawan velebel hohohul hal.`
+**5.** `zazawan velebel hohohum hal.`
 
 ::: details Show answer
 *Azawan sleeps only at home.*

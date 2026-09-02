@@ -16,7 +16,7 @@ Affect is **water**. **ACT** is tide dynamics (how much / how fast). **LOCUS** i
 **Recipe:** situation + **one value** + **one ACT** + **one LOCUS**.
 
 ```
-`zezebel wolozoxur hogegal hagadel.`
+`zezehel wolozoxur hogegal hanedel.`
 
 gloss: `z-dialogue` · `w-competence-unmet-temporary` · `h-HIGH` · `h-CIRCUM`
 
@@ -37,7 +37,7 @@ gloss: `z-dialogue` · `w-competence-unmet-temporary` · `h-HIGH` · `h-CIRCUM`
 |------|------|-----|----------|
 | **INTERNAL** | **`abobo`** | charge held inside | 🍼 *baby-bottle* → *bottle* (in-vessel) |
 | **EXTERNAL** | **`oruru`** | charge directed at other people | 🫗 *pour* → *pour* |
-| **CIRCUM** | **`agade`** | charge on the situation (shared / ambient field) | 🕯️ *candle* → *awash* |
+| **CIRCUM** | **`anede`** | charge on the situation (shared / ambient field) | 🕯️ *candle* → *awash* |
 
 The same roots stay ordinary content (`zogegal` *an ocean wave*; `vorurul` *to pour*). The special reading is the floating mood, especially `/h/`.
 
@@ -53,10 +53,10 @@ Parallel INTERNAL / CIRCUM cues: *flood bottled* / *flow held* / *still in the v
 
 | Agalan | Reading |
 |---------|---------|
-| `zezebel wolozoxur hogegal hagadel` | *anxious about the dialogue* (competence at stake, temporary; flood; room awash) |
-| `zabawazal wonogoxum hogegal horurul` | *resentful about the division* (unmet relatedness; flood poured onto them) |
-| `zebunem wolozoxam hogegal habobol` | *proud of the draft* (met competence, mental channel; flood bottled) |
-| `zemomel wonogoxum hozowol horurul` | *resentful about the memo* (unmet relatedness; stillness pooling at them) |
+| `zezehel wolozoxur hogegal hanedel` | *anxious about the dialogue* (competence at stake, temporary; flood; room awash) |
+| `zezawam wonogoxum hogegal horurul` | *resentful about the division* (unmet relatedness; flood poured onto them) |
+| `zebegum wolozoxam hogegal habobol` | *proud of the draft* (met competence, mental channel; flood bottled) |
+| `zememol wonogoxum hozowol horurul` | *resentful about the memo* (unmet relatedness; stillness pooling at them) |
 
 Raw feeling (contacting a sensation without judgment) may stay unlabeled. Full compose is for when an emotion word would have done evaluative work. [COMMENT](commentary.md#comment) frames a thought-take, not this water stack.
 
@@ -89,7 +89,7 @@ Prefer at least **`g#1`**; often name a second candidate. Soft **-m** on the num
 ```
 `zazawan zagegol g#2 vezehel.`
 
-gloss: `z-grace-proper` · `z-solution` · `g-ordinal-2` · `v-tell`
+gloss: `z-grace@` · `z-solution` · `g-second` · `v-tell`
 
 *Azawan names solution 2.*
 ```
@@ -108,38 +108,38 @@ Some published roots keep a **fixed special reading** under one part of speech. 
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Compose emotion (one value + ACT + LOCUS), or number alternative candidates (`g#N`).
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` · `olozo` *competence* · `onogo` *relatedness* · `ezebe` *dialogue* · `abawaza` *division* · `ebun` *draft* · `emome` *memo* · `ogega` HIGH · `ejelo` MED · `ozowo` LOW · `abobo` INTERNAL · `oruru` EXTERNAL · `agade` CIRCUM · `uzebu` *problem* · `agego` *solution* · `olala` *goal* · `ezehe` *tell*
+**Roots used here:** `azawa` / `ululo` / `uhubu` · `olozo` *competence* · `onogo` *relatedness* · `ezehe` *dialogue* / *tell* · `ezawa` *division* · `ebegu` *draft* · `ememo` *memo* · `ogega` HIGH · `ejelo` MED · `ozowo` LOW · `abobo` INTERNAL · `oruru` EXTERNAL · `anede` CIRCUM · `uzebu` *problem* · `agego` *solution* · `olala` *goal*
 
 #### English → Agalan
 
 **1.** *Anxious about the dialogue* (competence at stake, temporary; flood; room awash)
 
 ::: details Show answer
-`zezebel wolozoxur hogegal hagadel.`
+`zezehel wolozoxur hogegal hanedel.`
 :::
 
 **2.** *Resentful about the division* (unmet relatedness; flood poured onto them)
 
 ::: details Show answer
-`zabawazal wonogoxum hogegal horurul.`
+`zezawam wonogoxum hogegal horurul.`
 :::
 
 **3.** *Proud of the draft* (met competence, mental channel; flood bottled)
 
 ::: details Show answer
-`zebunem wolozoxam hogegal habobol.`
+`zebegum wolozoxam hogegal habobol.`
 :::
 
 **4.** *Resentful about the memo* (unmet relatedness; stillness pooling at them)
 
 ::: details Show answer
-`zemomel wonogoxum hozowol horurul.`
+`zememol wonogoxum hozowol horurul.`
 :::
 
 **5.** *Resentful about the division* (unmet relatedness; mid arousal flowing toward them)
 
 ::: details Show answer
-`zabawazal wonogoxum hejelol horurul.`
+`zezawam wonogoxum hejelol horurul.`
 :::
 
 **6.** *Problem 1.*
@@ -156,19 +156,19 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 #### Agalan → English
 
-**1.** `zebunem wolozoxam hejelol habobol.`
+**1.** `zebegum wolozoxam hejelol habobol.`
 
 ::: details Show answer
 *Proud of the draft* (met competence; mid arousal held inside).
 :::
 
-**2.** `zezebel wolozoxur hozowol hagadel.`
+**2.** `zezehel wolozoxur hozowol hanedel.`
 
 ::: details Show answer
 *Anxious about the dialogue* (competence at stake, temporary; stillness; slack shared water).
 :::
 
-**3.** `zemomel wonogoxum hogegal horurul.`
+**3.** `zememol wonogoxum hogegal horurul.`
 
 ::: details Show answer
 *Resentful about the memo* (unmet relatedness; flood poured onto them).
@@ -206,17 +206,17 @@ Universal claims are **weather reports**. Default climate is usual weather. Stro
 | Mood | Root | Job | Mnemonic |
 |------|------|-----|----------|
 | **COMMON** (default) | **`ewono`** | statistically / experientially usual; exceptions expected | ⛅ *weather* → *usual* |
-| **UNCOUNTERED** | **`abulu`** | no counterexample comes to mind (search) | 🌤️ *clear sky* → *uncountered* |
-| **FORMAL** | **`idido`** | definition / math / proof | ⭐ *star chart* → *formal* (fixed constellation) |
-| **NATURAL** | **`afafa`** | natural necessity (unsupported objects fall); stack ordinary [evidential](commentary.md#evidentiality) `/h/` | 🍎 *apple* → *natural* |
-| **RULE** | **`ebebe`** | holds inside a named frame; take `/b/` scope (`hebebel bahamal`) | ♟️ *board* → *rule-frame* |
+| **UNCOUNTERED** | **`abulu`** | no counterexample comes to mind (search) | 💊 *pill* → *uncountered* |
+| **FORMAL** | **`araza`** | definition / math / proof | ⭐ *star chart* → *formal* (fixed constellation) |
+| **NATURAL** | **`abele`** | natural necessity (unsupported objects fall); stack ordinary [evidential](commentary.md#evidentiality) `/h/` | 🍎 *apple* → *natural* |
+| **RULE** | **`ebebe`** | holds inside a named frame; take `/b/` scope (`hebebel begezel`) | 🌶️ *pepper* → *rule-frame* |
 
-When a universal or habitual claim needs a universality mood, use **COMMON** (`hewonol`) unless FORMAL, NATURAL, RULE, or UNCOUNTERED is the sky you mean. **`idido`** is definition or proof, not “socially preferred.” **`abulu`** is “nothing contrary came to mind”; **`zuam`** is “this list is open.” A trail of cases is evidential **`abawa`**; **`ewono`** is the usual-weather universality. NATURAL is **`afafa`**.
+When a universal or habitual claim needs a universality mood, use **COMMON** (`hewonol`) unless FORMAL, NATURAL, RULE, or UNCOUNTERED is the sky you mean. **`araza`** is definition or proof, not “socially preferred.” **`abulu`** is “nothing contrary came to mind”; **`zuam`** is “this list is open.” A trail of cases is evidential **`abawa`**; **`ewono`** is the usual-weather universality. NATURAL is **`abele`**.
 
 ```
 `zazawan hual vawalal hewonol.`
 
-gloss: `z-grace-proper` · `h-habitual` · `v-walk` · `h-COMMON`
+gloss: `z-grace@` · `h-always` · `v-walk` · `h-COMMON`
 
 *Azawan always walks, usually.*
 ```
@@ -229,17 +229,17 @@ Prefer floating `/h/`. **RULE** is complex `/h/` + `/b/` when you name the frame
 |---------|---------|
 | `… hual … hewonol` | *always, usually* (default universality) |
 | `… hual … habulul` | *always, as far as checked* |
-| `zual gezudal … hididol` | *every square, by definition* |
-| `… hual … hafafal` + evidential `/h/` | *always, by natural necessity* (how you know stacked separately, e.g. `habawam`) |
-| `… hual … hebebel bahamal` | *always, under chess* |
+| `zual gagurel … harazal` | *every square, by definition* |
+| `… hual … habelel` + evidential `/h/` | *always, by natural necessity* (how you know stacked separately, e.g. `habawam`) |
+| `… hual … hebebel begezel` | *always, under chess* |
 | `zuam gagadal … hewonol` | soft domain *every cat that comes to mind* + usual universality |
 
 | English cue | Agalan |
 |-------------|---------|
 | *always / everyone / never, usually* | domain fence (`hual` / `zual` / `hal` / …) + **`hewonol`** |
 | *always / never, as far as checked* | domain fence + **`habulul`** |
-| definitional *every* / *all* | domain fence + **`hididol`** |
-| *always by nature* (+ how you know) | domain fence + **`hafafal`** + evidential `/h/` (e.g. **`habawam`**) |
+| definitional *every* / *all* | domain fence + **`harazal`** |
+| *always by nature* (+ how you know) | domain fence + **`habelel`** + evidential `/h/` (e.g. **`habawam`**) |
 | *always under [frame]* (e.g. chess) | domain fence + **`hebebel b-…`** (scope NP) |
 
 ### Translation practice
@@ -247,7 +247,7 @@ Prefer floating `/h/`. **RULE** is complex `/h/` + `/b/` when you name the frame
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. Pair a domain fence (`hual` / `zual` / `zuam`) with a universality mood.
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` · `ewono` COMMON · `abulu` UNCOUNTERED · `idido` FORMAL · `afafa` NATURAL · `ebebe` RULE · `ahama` *chess* · `ezuda` *square* · `agada` *cat* · `odogo` *dog* · `abogo` *book* · `awala` *walk* · `uzunu` *sing* · `elebe` *sleep* · `aju` *sit* · `eje` *see* · `urunu` *run* · `abawa` evidential *pattern*
+**Roots used here:** `azawa` / `ululo` / `uhubu` · `ewono` COMMON · `abulu` UNCOUNTERED · `araza` FORMAL · `abele` NATURAL · `ebebe` RULE · `egeza` *pawn* · `agure` *square* · `agada` *cat* · `odogo` *dog* · `abogo` *book* · `awala` *walk* · `uzunu` *sing* · `elebe` *sleep* · `aju` *sit* · `eje` *see* · `urunu` *run* · `abawa` evidential *pattern*
 
 #### English → Agalan
 
@@ -266,19 +266,19 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 **3.** *Every square, by definition.*
 
 ::: details Show answer
-`zual gezudal hididol.`
+`zual gagurel harazal.`
 :::
 
 **4.** *Uhubun always sits, by natural necessity* (plus a trail of cases).
 
 ::: details Show answer
-`zuhubun hual vajul hafafal habawam.`
+`zuhubun hual vajul habelel habawam.`
 :::
 
 **5.** *Azawan always sings, under chess.*
 
 ::: details Show answer
-`zazawan hual vuzunul hebebel bahamal.`
+`zazawan hual vuzunul hebebel begezel.`
 :::
 
 **6.** *Every cat that comes to mind, usually.*
@@ -301,19 +301,19 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 *Azawan always sees, as far as checked.*
 :::
 
-**3.** `zual godogol hididol.`
+**3.** `zual godogol harazal.`
 
 ::: details Show answer
 *Every dog, by definition.*
 :::
 
-**4.** `zodogol hual velebel hafafal habawam.`
+**4.** `zodogol hual velebel habelel habawam.`
 
 ::: details Show answer
 *The dog always sleeps, by natural necessity* (plus a trail of cases).
 :::
 
-**5.** `zuhubun hual vawalal hebebel bahamal.`
+**5.** `zuhubun hual vawalal hebebel begezel.`
 
 ::: details Show answer
 *Uhubun always walks, under chess.*

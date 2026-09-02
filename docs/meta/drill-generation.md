@@ -225,7 +225,7 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 14 | `commentary.md` | **exists** | **COMMENT** **`odoho`** + hold endings (**`hodohom`** default); not a world claim | Not evidentiality / NOTIONAL (Intermediate). Not **`jom`** (core Intermediate) unless you only recycle **`jol`** from core/questions Beginner |
 | 14 | `roles.md` | **exists** | Role compounds **`a`/`u`/`o` x ROOT`** (agent / patient / reltum); endings on the role word | Not viewpoint laterals (Intermediate). Not values/ability (vowel *right* of `x`). Not join-relations |
 | 14 | `x-compounds.md` | **exists** | Productive **`x`** vs two words vs lexical compound; recognize `ohohulabede` / `eberelonogo` lemmas | Not parser-family inventory as drills; not coining new lexical compounds |
-| 14 | `plan-decision.md` | **exists** | **PLAN** **`owora`** map-resolution endings vs **PREDICT** **`elego`** (bare) | Not **DECISION** (Intermediate). Not evidentiality stacked on PREDICT (Intermediate). Sibling COMMENT / values / ability unused unless the page contrast needs them |
+| 14 | `plan-decision.md` | **exists** | **PLAN** **`owora`** map-resolution endings vs **PREDICT** **`elezo`** (bare) | Not **DECISION** (Intermediate). Not evidentiality stacked on PREDICT (Intermediate). Sibling COMMENT / values / ability unused unless the page contrast needs them |
 
 ### Intermediate then Advanced
 <a id="allowlist-later"></a>
@@ -234,7 +234,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 
 | Path | File | Band | Status | Introduces (test these) | Notes |
 |------|------|------|--------|-------------------------|-------|
-| 3 | `core.md` | Intermediate | **exists** | **`jam`/`jom`/`jem`/`jum`**; **`gl-`**; adverb topic `/h/`+`/b/`; complex chaining; `/x/` linkers (`xamalal`, `xezebal`, …); nested **`adoro`**; number-as-interjection pointer only if the band’s examples already show it | Do not require numbers Intermediate readings |
+| 3 | `core.md` | Intermediate | **exists** | **`jam`/`jom`/`jem`/`jum`**; **`gl-`**; adverb topic `/h/`+`/b/`; complex chaining; `/x/` linkers (`xezazal`, `xezebal`, …); nested **`adoro`**; number-as-interjection pointer only if the band’s examples already show it | Do not require numbers Intermediate readings |
 | 3 | `core.md` | Advanced | skip | weak-pause cues | recognition |
 | 6 | `reference-suffix.md` | Intermediate | **exists** | **-n** on any PoS (titled verb/adjective/adverb); phrasal proper names `ROOTxROOT`+**-n**; office **handles** as first-mention **-n** | Not value/ability/plan ending tables |
 | 6 | `reference-suffix.md` | Advanced | **exists** | **Named handle** (VC harvest from title roots) | 4–6 items |
@@ -265,9 +265,9 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 14 | `values.md` | Advanced | **exists** | Combined matrices; one boundary trap | 4–6 items |
 | 14 | `ability.md` | Intermediate | **exists** | Hostless fallback **`egera`** (**ABIL**) | |
 | 14 | `ability.md` | Advanced | — | no Advanced band | |
-| 14 | `commentary.md` | Intermediate | **exists** | Evidentiality channels; **NOTIONAL** **`ahade`** + hold map; COMMENT vs nearby jobs | |
+| 14 | `commentary.md` | Intermediate | **exists** | Evidentiality channels; **NOTIONAL** **`adade`** + hold map; COMMENT vs nearby jobs | |
 | 14 | `commentary.md` | Advanced | — | no Advanced band | |
-| 14 | `roles.md` | Intermediate | **exists** | Viewpoint laterals **`DIR x ANCHOR`**; bare arrow roots = compass; gravity **`avuza`/`ovazo`**; name/listener anchor | Prefer `…xazawan` over silent speaker default. **`edone`/`ugobo`** only when testing role-anchor. Include at least one bare cardinal and one gravity item |
+| 14 | `roles.md` | Intermediate | **exists** | Viewpoint laterals **`DIR x ANCHOR`**; bare arrow roots = compass; gravity **`uba`/`odowo`**; name/listener anchor | Prefer `…xazawan` over silent speaker default. **`edone`/`ugobo`** only when testing role-anchor. Include at least one bare cardinal and one gravity item |
 | 14 | `roles.md` | Advanced | — | no Advanced band | |
 | 15 | `join-extras.md` | Intermediate | **exists** | Join-act verbs `van` / `von` / …; join-relations `gan` / `han` / … (unary `/b/`) | No Beginner slot. Recycle = all Beginner + earlier Intermediate (path before 15), except optional numbers unless needed |
 | 15 | `plan-decision.md` | Intermediate | **exists** | **DECISION** **`egege`** changeability; evidentiality stacked on **PREDICT**; PLAN + DECISION stack | Recycle Beginner PLAN / PREDICT. Stack evidentiality on PREDICT only as the band shows. Join-act **`von`** only if already on this band |

@@ -32,7 +32,7 @@ Use the host’s usual role letter (`/v/` for an event, `/ɡ/` for a property). 
 ```
 `zazawan vuzunuxal.`
 
-gloss: `z-grace` · `v-express-able`
+gloss: `z-grace@` · `v-sing-able`
 
 *Azawan can sing.*
 ```
@@ -40,7 +40,7 @@ gloss: `z-grace` · `v-express-able`
 ```
 `zululon vuzunuxel.`
 
-gloss: `z-courage` · `v-express-unable-temporary`
+gloss: `z-courage@` · `v-sing-unable-temporary`
 
 *Ululon can’t sing right now.*
 ```
@@ -48,7 +48,7 @@ gloss: `z-courage` · `v-express-unable-temporary`
 ```
 `zuhubun vuzunuxol.`
 
-gloss: `z-beauty` · `v-express-unable-modifiable`
+gloss: `z-beauty@` · `v-sing-unable-modifiable`
 
 *Uhubun can’t sing yet (open to change; not claiming who will change it).*
 ```
@@ -56,7 +56,7 @@ gloss: `z-beauty` · `v-express-unable-modifiable`
 | Form | Reading |
 |------|---------|
 | `vuzunuxal` / `guzunuxal` | can sing (literal host) |
-| `vuzunuxam` | can sing (metaphorical host sense) |
+| `vuzunuxam` | can express (metaphorical host sense) |
 | `vuzunuxel` | can’t sing **right now** |
 | `vuzunuxol` | can’t sing yet / may become able (or unknown grain) |
 | `vuzunuxul` | can’t sing (fixed / impossible as far as you can tell) |
@@ -200,7 +200,7 @@ On **`egera` + stance**, use **-m** when you mean capacity as a metaphor; use **
 ```
 `zazawan hegeraxel.`
 
-gloss: `z-grace` · `h-ABIL-unable-temporary`
+gloss: `z-grace@` · `h-ABIL-unable-temporary`
 
 *Azawan can’t right now (no single host / clause-wide).*
 ```
@@ -304,7 +304,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Cereal / a capacity* (ordinary word: no ability stance).
 :::
 
-**7.** `gelel wegeraxel.`
+**7.** `gelem wegeraxel.`
 
 ::: details Show answer
 *Big: can’t right now* (capability framed on that property).

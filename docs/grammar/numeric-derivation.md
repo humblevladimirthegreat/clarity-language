@@ -30,12 +30,12 @@ PoS + ROOT + x + NUM + {-l|-m|-n|-r}
 | Shape | Reading | Example |
 |-------|---------|---------|
 | **`ROOTx+e`** | **essence / absolute / pure type** of ROOT | `zolovexrabal`: *essence of love* |
-| **`ROOTx+e-`** | **grain / seed / infinitesimal** of ROOT | `zereguxrabul`: *grain of truth* |
-| **`ROOTx-e`** | **void of / absolute anti-ROOT** | `zevaxrubal`: *void of fear* |
-| **`ROOTx-e-`** | **quasi-ROOT**: the shape of ROOT without full real-axis status (English **`quasi-`**); **`ROOTx-e-1`** / **`ROOTx-e-2`** = [quasi-N](#quasi-n) | `zahaxrubul`: *quasi-friend*; `zahaxrubudul`: *quasi-pair* |
+| **`ROOTx+e-`** | **grain / seed / infinitesimal** of ROOT | `zolovexrabul`: *grain of love* |
+| **`ROOTx-e`** | **void of / absolute anti-ROOT** | `zevevaxrubal`: *void of fear* |
+| **`ROOTx-e-`** | **quasi-ROOT**: the shape of ROOT without full real-axis status (English **`quasi-`**); **`ROOTx-e-1`** / **`ROOTx-e-2`** = [quasi-N](#quasi-n) | `zeberelonogoxrubul`: *quasi-friend*; `zezazexrubudul`: *quasi-pair* |
 | **`ROOTx#e-`** | **origin / prototype / onset-form** of ROOT | `zolovexrebul`: *love in its beginning form* |
 | **`ROOTx#e`** | **telos / culmination / final form** of ROOT | `zoroloxrebal`: *story’s final form* |
-| **`ROOTx+`** | **poly- / multi-ROOT** (unspecified >1) | `zurujuxram`: *multi-faith* |
+| **`ROOTx+`** | **poly- / multi-ROOT** (unspecified >1) | `zuhuruxram`: *multi-faith* |
 | **`ROOTx-`** | **de- / un- / deficit-ROOT** | `voroloxrul`: *to de-tale* |
 
 
@@ -48,12 +48,12 @@ PoS + ROOT + x + NUM + {-l|-m|-n|-r}
 
 | PoS | `…x-e-` | Examples |
 |-----|---------|----------|
-| **`/z/` `/d/` `/b/`** (noun) | a quasi-entity | `zahaxrubul`: *a quasi-friend*; `degebexrubul`: *a quasi-contract* |
-| **`/v/`** (verb) | to treat as quasi- / as-if that kind | `vahaxrubul`: *to quasi-befriend* / treat as friend-shaped |
-| **`/ɡ/`** (adjective) | *quasi-* (ascribed) | `goburuxrubul`: *quasi-official* |
-| **`/h/`** (adverb) | under quasi- framing | `hoburuxrubul`: *quasi-officially* |
-| **`/w/`** (adjunct) | host graded as quasi- | `gogenenul wegebexrubul`: *quasi-contractual* |
-| **`/j/`** (interjection) | *Quasi-!* / *As if that kind!* | `jahaxrubul` |
+| **`/z/` `/d/` `/b/`** (noun) | a quasi-entity | `zeberelonogoxrubul`: *a quasi-friend*; `debenexrubul`: *a quasi-commitment* |
+| **`/v/`** (verb) | to treat as quasi- / as-if that kind | `veberelonogoxrubul`: *to quasi-befriend* / treat as friend-shaped |
+| **`/ɡ/`** (adjective) | *quasi-* (ascribed) | `gezezaxrubul`: *quasi-official* |
+| **`/h/`** (adverb) | under quasi- framing | `hezezaxrubul`: *quasi-officially* |
+| **`/w/`** (adjunct) | host graded as quasi- | `gebenel webenexrubul`: *quasi-commitment* |
+| **`/j/`** (interjection) | *Quasi-!* / *As if that kind!* | `jeberelonogoxrubul` |
 
 Free **`g-e-`** / **`v-e-`** / **`h-e-`** / **`j-e-`** / **`x-e-`** are hostless imaginary amount / number as verb / adverb / interjection / discourse ([numbers.md § Imaginary](numbers.md#imaginary)). **`ROOTx-e-`** is quasi-*kind*.
 
@@ -63,8 +63,8 @@ Stem shape **`ru` + `bu` + exponent digit `N`** (writing **`-e-N`**: bare-OoM an
 
 | Shape | Reading | Twin | Example |
 |-------|---------|------|---------|
-| **`ROOTx-e-1`** | **quasi-unit / as-if singleton**: unit-shaped without being a real one | **`ROOTx+1`** unit | `zegarexrubuwol`: *a quasi-single voice* / as-if primary voice |
-| **`ROOTx-e-2`** | **quasi-dual / imaginary duality**: pair/mutual *as if*, not real reciprocity | **`ROOTx+2`** dual/mutual | `gobulexrubudul`: *quasi-mutual duty*; `zahaxrubudul`: *quasi-pair / as-if partnership* |
+| **`ROOTx-e-1`** | **quasi-unit / as-if singleton**: unit-shaped without being a real one | **`ROOTx+1`** unit | `zegeruxrubuwol`: *a quasi-single voice* / as-if primary voice |
+| **`ROOTx-e-2`** | **quasi-dual / imaginary duality**: pair/mutual *as if*, not real reciprocity | **`ROOTx+2`** dual/mutual | `gabenexrubudul`: *quasi-mutual commitment*; `zezazexrubudul`: *quasi-pair / as-if partnership* |
 
 | Form | Job |
 |------|-----|
@@ -82,16 +82,16 @@ Single-digit scalars only. Tables use marker shorthand (**`+N`** / **`-N`**). Sp
 
 | `+N` | Strong reading | Example | `-N` privative | Example |
 |------|----------------|---------|----------------|---------|
-| **`ROOTx+1`** | unit / primary / singleton | `zegarexrawol`: *a single / primary voice*; **`zugoboxrawon`**: [personal standard](comparatives.md#mine-vs-speaker) (normative Mine; host = [speaker](pronouns.md#special-pronouns) **`ugobo`**); titled SI units on dimension roots (`bureluxrawon` *meter*: [measure phrases](numbers-applied.md#unit-short-form); bare unit is the short form) | non-unitary / indistinct / not-a-one | `zegarexruwol`: *an indistinct / non-singular voice* |
-| **`ROOTx+2`** | dual / mutual / reciprocal / pair | `gobulexradul`: *mutual duty* | non-reciprocal / one-sided / unpaired | `gobulexrudul`: *one-sided duty* |
-| **`ROOTx+3`** | triad / triplet / 3-part / ternary | `zezebexrarel`: *a three-part dialogue* | non-tripartite / collapsed-from-three | `zovuvexrurel`: *non-tripartite government* |
-| **`ROOTx+4`** | quad / 4-part / square / frame | `zezagexramol`: *a four-part / framed court* | unframed / out-of-box / unbound | `zuruxrumol`: *an unframed idea* |
+| **`ROOTx+1`** | unit / primary / singleton | `zegeruxrawol`: *a single / primary voice*; **`zugoboxrawon`**: [personal standard](comparatives.md#mine-vs-speaker) (normative Mine; host = [speaker](pronouns.md#special-pronouns) **`ugobo`**); titled SI units on dimension roots (`burulexrawon` *meter*: [measure phrases](numbers-applied.md#unit-short-form); bare unit is the short form) | non-unitary / indistinct / not-a-one | `zegeruxruwol`: *an indistinct / non-singular voice* |
+| **`ROOTx+2`** | dual / mutual / reciprocal / pair | `gabenexradul`: *mutual commitment* | non-reciprocal / one-sided / unpaired | `gabenexrudul`: *one-sided commitment* |
+| **`ROOTx+3`** | triad / triplet / 3-part / ternary | `zezehexrarel`: *a three-part dialogue* | non-tripartite / collapsed-from-three | `zazuduxrurel`: *non-tripartite institution* |
+| **`ROOTx+4`** | quad / 4-part / square / frame | `zujuduxramol`: *a four-part / framed judgment* | unframed / out-of-box / unbound | `zemamuxrumol`: *an unframed message* |
 | **`ROOTx+5`** | hand / pentad / agency-set | `zolozoxraval`: *a handy / five-fold toolkit* | handless / without practical grasp | `zoworaxruval`: *a plan without practical grasp* |
-| **`ROOTx+6`** | hex / 6-part / honeycomb / pack | `zadomaxragul`: *a hexagonal / six-pack cell* | unpacked / non-hex / broken pack | `zahadaxrugul`: *an unpacked team* |
-| **`ROOTx+7`** | heptad / week-cycle / complete series | `zazegaxralem`: *a seven-fold / week-cycle ritual* | incomplete series / broken cycle | `zazegaxrulem`: *a broken-cycle ritual* |
-| **`ROOTx+8`** | octet / 8-part / doubled-quad | `zonuzuxrahal`: *an octet / eight-part block* | non-octet / incomplete eight | `zonuzuxruhal`: *a non-octet block* |
+| **`ROOTx+6`** | hex / 6-part / honeycomb / pack | `zavagaxragul`: *a hexagonal / six-pack product* | unpacked / non-hex / broken pack | `zahadaxrugul`: *an unpacked team* |
+| **`ROOTx+7`** | heptad / week-cycle / complete series | `zagexralem`: *a seven-fold / week-cycle ritual* | incomplete series / broken cycle | `zagexrulem`: *a broken-cycle ritual* |
+| **`ROOTx+8`** | octet / 8-part / doubled-quad | `zonugoxrahal`: *an octet / eight-part blockage* | non-octet / incomplete eight | `zonugoxruhal`: *a non-octet blockage* |
 | **`ROOTx+9`** | ennead / near-full / almost-ten | `zuzugoxranal`: *a nine-part / near-full choir* | far-from-full / short-of-complete | `zuzugoxrunal`: *a far-from-full choir* |
-| **`ROOTx+0`** | null / reset / emptied | `vezehuxrazol`: *to zero-score / null the score* | **anti-null** / non-emptyable / insistent residue | `gezehuxruzol`: *a score that won’t null* / *stubborn residual score* |
+| **`ROOTx+0`** | null / reset / emptied | `vodoboxrazol`: *to zero-score / null the score* | **anti-null** / non-emptyable / insistent residue | `godoboxruzol`: *a score that won’t null* / *stubborn residual score* |
 
 ##### Null / anti-null by PoS (`+0` / `-0`)
 <a id="null-anti-null"></a>
@@ -100,12 +100,12 @@ Single-digit scalars only. Tables use marker shorthand (**`+N`** / **`-N`**). Sp
 
 | PoS | `…x+0` | `…x-0` | Examples |
 |-----|--------|--------|----------|
-| **`/z/` `/d/` `/b/`** (noun) | emptied / wiped instance | entity that won’t zero / stubborn residue | `zebenexrazol`: *a wiped debt*; `zebenexruzol`: *a debt that won’t zero*; `duvuvuxruzol`: *that memory that won’t blank*; `bezehuxruzol`: non-null residue as argument |
-| **`/v/`** (verb) | act of nulling / resetting | act that refuses null / keeps residual | `vezehuxrazol`: *to null the score*; `vezehuxruzol`: *to anti-null / refuse to zero the score*; `vujuxrazol`: *to extinguish pain*; `vujuxruzol`: *to leave pain unextinguishable* |
-| **`/ɡ/`** (adjective) | null / reset (ascribed) | non-emptyable / residual (ascribed) | `gezehuxrazol`: *null / reset*; `gezehuxruzol`: *won’t-null / residual*; `gorexruzom`: *hope that won’t go to zero* (vs `gorexrubam` *void of hope*) |
-| **`/h/`** (adverb) | clause framed as reset / zeroed | clause framed as irreducible residue | `hazexrazom`: *with effort zeroed*; `hazexruzom`: *with irreducible effort* / *despite any zeroing* |
-| **`/w/`** (adjunct) | host `/ɡ/` graded toward null | host `/ɡ/` graded toward anti-null | `gebenezol wojuxrazol`: *debt (ascribed) zeroed*; `gebenezol wojuxruzol`: *debt whose balance is anti-null* |
-| **`/j/`** (interjection) | discourse *Zero it!* / *Null!* | discourse *Won’t zero!* / *Residue stands!* | `jezehuxrazol`; `jezehuxruzol` |
+| **`/z/` `/d/` `/b/`** (noun) | emptied / wiped instance | entity that won’t zero / stubborn residue | `zonebaxrazol`: *a wiped debt*; `zonebaxruzol`: *a debt that won’t zero*; `duvuvuxruzol`: *that memory that won’t blank*; `bodoboxruzol`: non-null residue as argument |
+| **`/v/`** (verb) | act of nulling / resetting | act that refuses null / keeps residual | `vodoboxrazol`: *to null the score*; `vodoboxruzol`: *to anti-null / refuse to zero the score*; `vezewexrazol`: *to zero effort*; `vezewexruzol`: *to leave effort unzeroable* |
+| **`/ɡ/`** (adjective) | null / reset (ascribed) | non-emptyable / residual (ascribed) | `godoboxrazol`: *null / reset*; `godoboxruzol`: *won’t-null / residual*; `gozedexruzom`: *hope that won’t go to zero* (vs `gozedexrubam` *void of hope*) |
+| **`/h/`** (adverb) | clause framed as reset / zeroed | clause framed as irreducible residue | `hezewexrazom`: *with effort zeroed*; `hezewexruzom`: *with irreducible effort* / *despite any zeroing* |
+| **`/w/`** (adjunct) | host `/ɡ/` graded toward null | host `/ɡ/` graded toward anti-null | `gonebal weonebaxrazol`: *debt (ascribed) zeroed*; `gonebal weonebaxruzol`: *debt whose balance is anti-null* |
+| **`/j/`** (interjection) | discourse *Zero it!* / *Null!* | discourse *Won’t zero!* / *Residue stands!* | `jodoboxrazol`; `jodoboxruzol` |
 
 A stronger wipe is [total null](#zero-exponent-derivation) **`ROOTx+0e`** (free **`v+0el`** *annihilate*).
 
@@ -114,16 +114,16 @@ A stronger wipe is [total null](#zero-exponent-derivation) **`ROOTx+0e`** (free 
 <a id="total-null"></a>
 <a id="engineering-null-morph"></a>
 
-Same anatomy as free [zero × exponent](numbers.md#zero-exponent); on ROOT it is **wipe / residue of the kind**. Free **`v+0el`** is hostless *annihilate*; **`vezehuxrazobal`** is annihilate-*score* (kind).
+Same anatomy as free [zero × exponent](numbers.md#zero-exponent); on ROOT it is **wipe / residue of the kind**. Free **`v+0el`** is hostless *annihilate*; **`vodoboxrazobal`** is annihilate-*score* (kind).
 
 | Shape | Reading | Example |
 |-------|---------|---------|
-| **`ROOTx+0e`** | **total null** / absolute wipe of the kind | `vezehuxrazobal`: *annihilate the score* (kind); `zebenexrazobal`: *a totally wiped debt-kind* |
-| **`ROOTx+0e-`** | **sterile / null grain** of ROOT | `zorexrazobum`: *sterile hope*; `zereguxrazobul`: *truth with no seed* |
-| **`ROOTx+0e-1`** | **engineering null at OoM −1** of ROOT: kind wiped at scale 10⁻¹ | `zuzebuxrabuwojazol`: *deci-null error*; `vezehuxrabuwojazol`: *null the score at deci scale* |
-| **`ROOTx-0e`** | **absolute residue** of ROOT | `zebenexruzobal`: *debt as absolute residue*; `vujuxruzobal`: *leave pain as absolute residue* |
+| **`ROOTx+0e`** | **total null** / absolute wipe of the kind | `vodoboxrazobal`: *annihilate the score* (kind); `zonebaxrazobal`: *a totally wiped debt-kind* |
+| **`ROOTx+0e-`** | **sterile / null grain** of ROOT | `zozedexrazobum`: *sterile hope*; `zereguxrazobul`: *registration with no seed* |
+| **`ROOTx+0e-1`** | **engineering null at OoM −1** of ROOT: kind wiped at scale 10⁻¹ | `zuzebuxrabuwojazol`: *deci-null problem*; `vodoboxrabuwojazol`: *null the score at deci scale* |
+| **`ROOTx-0e`** | **absolute residue** of ROOT | `zonebaxruzobal`: *debt as absolute residue*; `vezewexruzobal`: *leave effort as absolute residue* |
 | **`ROOTx-0e-`** | **micro-residue** of ROOT | `zuvuvuxruzobul`: *memory as micro-residue* |
-| **`ROOTx-0e-1`** | **engineering residue at OoM −1** of ROOT | `zebenexrubuwojazol`: *debt as deci-scale residue* |
+| **`ROOTx-0e-1`** | **engineering residue at OoM −1** of ROOT | `zonebaxrubuwojazol`: *debt as deci-scale residue* |
 
 The **host ending** marks soft / named / resume.
 
@@ -135,12 +135,12 @@ On free numbers, **`±0e-1`** is scalar anatomy; on ROOT the same stems are kind
 
 | PoS | `…x+0e` | Examples |
 |-----|---------|----------|
-| **`/z/` `/d/` `/b/`** | totally wiped / annihilated kind | `zebenexrazobal` |
-| **`/v/`** | annihilate that kind | `vezehuxrazobal` |
-| **`/ɡ/`** | ascribed total-null | `gorexrazobam` |
-| **`/h/`** | clause framed as total wipe | `hazexrazobam` |
-| **`/w/`** | host graded toward total null | `gebenezol wojuxrazobal` |
-| **`/j/`** | *Annihilate that kind!* | `jezehuxrazobal` |
+| **`/z/` `/d/` `/b/`** | totally wiped / annihilated kind | `zonebaxrazobal` |
+| **`/v/`** | annihilate that kind | `vodoboxrazobal` |
+| **`/ɡ/`** | ascribed total-null | `gozedexrazobam` |
+| **`/h/`** | clause framed as total wipe | `hezewexrazobam` |
+| **`/w/`** | host graded toward total null | `gonebal weonebaxrazobal` |
+| **`/j/`** | *Annihilate that kind!* | `jodoboxrazobal` |
 
 **`-0e` / `-0e-` / `±0e-1`** inherit the same PoS framing (absolute residue / micro-residue / engineering null·residue at OoM −1). Free twins: **`v+0el`** *annihilate*; **`g+0e`** absolute-zero amount; **`g+0e-1`** / **`g-0e-1`** engineering null / residue: [numbers.md § Zero × exponent](numbers.md#zero-exponent).
 
@@ -149,7 +149,7 @@ On free numbers, **`±0e-1`** is scalar anatomy; on ROOT the same stems are kind
 
 | Shape | Reading | Example |
 |-------|---------|---------|
-| **`ROOTx#0e`** | **rank-annihilated / disqualified form** of ROOT: place wiped as a kind property | `zolorodoxrezobal`: *a disqualified contestant (as type)*; `venonoxrezobal`: *to disqualify that entry-kind*. Free **`g#0e`** is *disqualified place in this series*. |
+| **`ROOTx#0e`** | **rank-annihilated / disqualified form** of ROOT: place wiped as a kind property | `zomonaxrezobal`: *a disqualified challenge (as type)*; `vomonaxrezobal`: *to disqualify that challenge-kind*. Free **`g#0e`** is *disqualified place in this series*. |
 
 **`#0e`** vs **`#0`:** annihilated place vs zeroth-order rung. **`#0e`** vs **`+0e`:** rank wipe vs kind total-null. Free **`#e0`** is [current generation](numbers.md#ordinal-generation). Same PoS framing as other ordinal morphs (`/z/` disqualified kind, `/v/` disqualify-as-kind, `/j/` *Disqualified!*, …).
 
@@ -160,11 +160,11 @@ Single-digit ordinals only. Tables use marker **`#`** (**`ROOTx#N`**); speech is
 
 | `#N` | Strong reading | Example |
 |------|----------------|---------|
-| **`ROOTx#1`** | first-class / premiere / first-order | `degabexrewol`: *a first-edition* (kind); `degabel g#1` *the first edition (in this stack)* |
-| **`ROOTx#2`** | secondary / second-order / backup | `gomoxredul`: *a secondary effect* |
-| **`ROOTx#3`** | tertiary / third-order | `zuzoxrerel`: *a third-order cause* |
-| **`ROOTx#4`** … **`#9`** | Nth-order / Nth-place form | `zahavaxreval`: *fifth-order harmonic* (as a kind) |
-| **`ROOTx#0`** | zeroth-order / pre-rank / unranked form | `zabaxrezol`: *a zeroth-order approximation* |
+| **`ROOTx#1`** | first-class / premiere / first-order | `debeguxrewol`: *a first-draft* (kind); `debegul g#1` *the first draft (in this stack)* |
+| **`ROOTx#2`** | secondary / second-order / backup | `gomoxredul`: *a secondary adventure* |
+| **`ROOTx#3`** | tertiary / third-order | `zuzebuxrerel`: *a third-order problem* |
+| **`ROOTx#4`** … **`#9`** | Nth-order / Nth-place form | `zarahaxreval`: *fifth-order harmony* (as a kind) |
+| **`ROOTx#0`** | zeroth-order / pre-rank / unranked form | `zababuxrezol`: *a zeroth-order calculation* |
 
 **`#1`** vs **`+1`:** premiere-place vs singleton/unit. **`#2`** vs **`+2`:** secondary vs dual/mutual. **`#0`** vs **`#0e`:** zeroth rung vs rank annihilated / disqualified.
 
@@ -172,12 +172,12 @@ Single-digit ordinals only. Tables use marker **`#`** (**`ROOTx#N`**); speech is
 
 | PoS | `…x#N` | Examples |
 |-----|--------|----------|
-| **`/z/` `/d/` `/b/`** (noun) | a rank-N kind | `zebunexredum`: *a second-draft (as type)*; `degabexrewol`: *a first-edition* |
-| **`/v/`** (verb) | treat as / assign that order (kind-act) | `volorodoxrewol`: *to first-class / premiere it* (free `v#1` *take 1st place*) |
+| **`/z/` `/d/` `/b/`** (noun) | a rank-N kind | `zebeguxredum`: *a second-draft (as type)*; `debeguxrewol`: *a first-draft* |
+| **`/v/`** (verb) | treat as / assign that order (kind-act) | `vomonaxrewol`: *to first-class / premiere a challenge* (free `v#1` *take 1st place*) |
 | **`/ɡ/`** (adjective) | *Nth-order* (ascribed) | `gomoxredul`: *secondary* |
-| **`/h/`** (adverb) | *at Nth-order framing* | `habaxrezol`: *zeroth-order* |
-| **`/w/`** (adjunct) | host `/ɡ/` graded as Nth-order | `guhuhel wezebexrerel`: *third-order (term)* |
-| **`/j/`** (interjection) | discourse call of that order-kind | `jegabexrewol`: *First-edition!* (kind cheer; free `j#1` *First!* place cheer) |
+| **`/h/`** (adverb) | *at Nth-order framing* | `hababuxrezol`: *zeroth-order* |
+| **`/w/`** (adjunct) | host `/ɡ/` graded as Nth-order | `gezehel wezehexrerel`: *third-order (dialogue)* |
+| **`/j/`** (interjection) | discourse call of that order-kind | `jebeguxrewol`: *First-draft!* (kind cheer; free `j#1` *First!* place cheer) |
 
 **`+N`** = *how many parts*; **`#N`** = *which order/place in a hierarchy*; **`_N`** = *which code*; free `g#N` = *which token in the current series*.
 
@@ -188,8 +188,8 @@ Marker **`_`** identifies ROOT by a **catalog / specimen / ID code**, not by cou
 
 | Shape | Reading | Example |
 |-------|---------|---------|
-| **`ROOTx_`** | ROOT as something that **bears a code** (taggable unit; code unnamed) | `zadomaxrol`: *a coded specimen* / *a specimen-as-ID* |
-| **`ROOTx_N`** | **specimen / item #N**: the code is part of the kind | `zadomaxrowol`: *specimen #1*; `zohohuxrowodul`: *room-12* as a coded kind; `babuluxrowodul`: *B-12*-style kind |
+| **`ROOTx_`** | ROOT as something that **bears a code** (taggable unit; code unnamed) | `zeduduxrol`: *a coded specimen* / *a specimen-as-ID* |
+| **`ROOTx_N`** | **specimen / item #N**: the code is part of the kind | `zeduduxrowol`: *specimen #1*; `zohohuxrowodul`: *room-12* as a coded kind; `bohohuxrowodul`: *room-12* as `/b/` |
 
 ##### Infinite / landmark labels (`_e` / `_e-` / `_1e`)
 <a id="infinite-labels"></a>
@@ -198,21 +198,21 @@ Digitless **`_`** is **catalog topology**, not magnitude. Label ∞ means *the n
 
 | Shape | Reading | Example |
 |-------|---------|---------|
-| **`ROOTx_e`** | **open / unbounded catalog**: ∞-tagged, open ID space, any code in an unbounded ledger | `zedugexrobal`: *open-ended ticket ID* / *∞-catalogued ticket* |
-| **`ROOTx_e-`** | **proto-label / unassigned slot**: pre-code, atomic empty tag | `zedugexrobul`: *unassigned ticket slot* |
-| **`ROOTx_1e`** | comic **gazillion-coded** / umpteen-SKU | `zavoxrowobal`: *a gazillion-SKU product* |
-| **`ROOTx_1e-`** | comic **gazillionth-of-a-code** / vanishing ID | `zereguxrowobul`: *a vanishingly coded clue* |
+| **`ROOTx_e`** | **open / unbounded catalog**: ∞-tagged, open ID space, any code in an unbounded ledger | `zugedexrobal`: *open-ended ticket ID* / *∞-catalogued ticket* |
+| **`ROOTx_e-`** | **proto-label / unassigned slot**: pre-code, atomic empty tag | `zugedexrobul`: *unassigned ticket slot* |
+| **`ROOTx_1e`** | comic **gazillion-coded** / umpteen-SKU | `zavagaxrowobal`: *a gazillion-SKU product* |
+| **`ROOTx_1e-`** | comic **gazillionth-of-a-code** / vanishing ID | `zereguxrowobul`: *a vanishingly coded registration* |
 
 ###### Infinite label by PoS
 
 | PoS | `…x_e` | `…x_e-` | Examples |
 |-----|--------|--------|----------|
-| **`/z/` `/d/` `/b/`** (noun) | open-catalog entity | pre-labeled / slot entity | `zedugexrobal`; `zedugexrobul` |
-| **`/v/`** (verb) | to ∞-tag / put on an open ledger | to reserve an empty code slot | `vedugexrobal`; `vedugexrobul` |
-| **`/ɡ/`** (adjective) | open-endedly coded | proto-coded / unassigned | `gedugexrobal`; `gedugexrobul` |
-| **`/h/`** (adverb) | under open-catalog framing | under pre-label framing | `hedugexrobal`; `hedugexrobul` |
-| **`/w/`** (adjunct) | host graded as open-catalog | host graded as proto-label | `zalebal walebaxrobal` |
-| **`/j/`** (interjection) | *Open catalog!* / *∞-tagged!* | *Unassigned!* / *Empty slot!* | `jedugexrobal`; `jedugexrobul` |
+| **`/z/` `/d/` `/b/`** (noun) | open-catalog entity | pre-labeled / slot entity | `zugedexrobal`; `zugedexrobul` |
+| **`/v/`** (verb) | to ∞-tag / put on an open ledger | to reserve an empty code slot | `vugedexrobal`; `vugedexrobul` |
+| **`/ɡ/`** (adjective) | open-endedly coded | proto-coded / unassigned | `gugedexrobal`; `gugedexrobul` |
+| **`/h/`** (adverb) | under open-catalog framing | under pre-label framing | `hugedexrobal`; `hugedexrobul` |
+| **`/w/`** (adjunct) | host graded as open-catalog | host graded as proto-label | `zugedel wugedexrobal` |
+| **`/j/`** (interjection) | *Open catalog!* / *∞-tagged!* | *Unassigned!* / *Empty slot!* | `jugedexrobal`; `jugedexrobul` |
 
 When the number is only an argument of an ordinary noun, prefer ordinary syntax: `zohohul g_12` = *the room numbered 12*. Use **`ROOTx_N`** when the code is part of the **concept** (specimen ID, SKU, protocol code). Discourse item cites stay free **`x_…`**; dial/input stays free **`v_…`**.
 
@@ -224,13 +224,13 @@ Mantissa + digitless exp is **comic / rhetorical intensification**, same spirit 
 
 | Shape | Reading | Example |
 |-------|---------|---------|
-| **`ROOTx+1e`** | *gazillion-ROOT* (comic huge) | `zebalexrawobam`: *a gazillion-mess* |
-| **`ROOTx+1e-`** | *gazillionth-ROOT* (comic tiny) | `zagemuxrawobum`: *a gazillionth-of-a-chance* |
-| **`ROOTx#1e`** | *umpteenth-ROOT* (comic late rank) | `zamugaxrewobal`: *an umpteenth try* (as a kind) |
-| **`ROOTx_1e`** | *gazillion-coded ROOT* (comic SKU sprawl) | `zavoxrowobal`: *a gazillion-SKU product* |
-| **`ROOTx_1e-`** | *gazillionth-of-a-code ROOT* (vanishing ID) | `zereguxrowobul`: *a vanishingly coded clue* |
+| **`ROOTx+1e`** | *gazillion-ROOT* (comic huge) | `zazazexrawobam`: *a gazillion-mess* |
+| **`ROOTx+1e-`** | *gazillionth-ROOT* (comic tiny) | `zameduxrawobum`: *a gazillionth-of-a-chance* |
+| **`ROOTx#1e`** | *umpteenth-ROOT* (comic late rank) | `zugumuxrewobal`: *an umpteenth attempt* (as a kind) |
+| **`ROOTx_1e`** | *gazillion-coded ROOT* (comic SKU sprawl) | `zavagaxrowobal`: *a gazillion-SKU product* |
+| **`ROOTx_1e-`** | *gazillionth-of-a-code ROOT* (vanishing ID) | `zereguxrowobul`: *a vanishingly coded registration* |
 
-Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`zahaxrewobal`** = *an umpteenth get-together* (noun kind).
+Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`zahaxrewobal`** = *an umpteenth co-participation* (noun kind).
 
 `NUM` has no part-of-speech letter and no number ending; the compound’s ending is ordinary reference-suffix on ROOT. Digit morphs are single-digit **`+N` / `-N`** (scalar) or **`#N`** (ordinal); markers supply the pronounceable vowel (**`ra`** / **`ru`** / **`re`**). Digitless **`+`/`-`/`#`** = kind readings; digitless **`_`** = catalog readings ([infinite labels](#infinite-labels)); zero×exp morphs = [zero-exponent derivation](#zero-exponent-derivation) (including **`±0e-1`** / **`#0e`**). Plural **-sh** on noun-slot numeric derivatives follows ordinary [plurality](plurality.md) for that PoS.
 
@@ -239,67 +239,67 @@ Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`zahaxre
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. `ROOT x NUM` names a **kind property** (essence, grain, quasi, part-count, order-kind, catalog code, total-null): spelled CV plus the **host** ending.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `olove` *love* · `eregu` *truth* · `aha` *friend* (kind, as on this band) · `bule` *duty* · `ezebe` *dialogue* · `omo` *effect* · `egabe` *edition* · `adoma` *specimen* · `eva` *fear* · `ezehu` *score* · `eje` *see* · `ezehe` *tell* · `uwuru` *write*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `olove` *love* · `eberelonogo` *friend* · `abene` *commitment* · `ezehe` *dialogue* · `omo` *adventure* · `ebegu` *draft* · `edudu` *specimen* · `eveva` *fear* · `odobo` *score* · `eje` *see* · `uwuru` *write*
 
 #### English → Agalan
 
 **1.** *Azawan sees the essence of love.*
 
 ::: details Show answer
-`zazawan vejel zolovexrabal.`
+`zazawan dolovexrabal vejel.`
 :::
 
-**2.** *Ululon tells a grain of truth.*
+**2.** *Ululon tells a grain of love.*
 
 ::: details Show answer
-`zululon vezehel zereguxrabul.`
+`zululon dolovexrabul vezehel.`
 :::
 
 **3.** *Uhubun is a quasi-friend.*
 
 ::: details Show answer
-`zuhubun gahaxrubul.`
+`zuhubun geberelonogoxrubul.`
 :::
 
-**4.** *Azawan sees mutual duty.*
+**4.** *Azawan sees mutual commitment.*
 
 ::: details Show answer
-`zazawan vejel gobulexradul.`
+`zazawan dabenexradul vejel.`
 :::
 
-**5.** *Ululon writes a first-edition.*
+**5.** *Ululon writes a first-draft.*
 
 ::: details Show answer
-`zululon vuwurul degabexrewol.`
+`zululon debeguxrewol vuwurul.`
 :::
 
 #### Agalan → English
 
-**1.** `zazawan vejel zevaxrubal.`
+**1.** `zazawan devevaxrubal vejel.`
 
 ::: details Show answer
 *Azawan sees a void of fear.*
 :::
 
-**2.** `zululon vezehel zezebexrarel.`
+**2.** `zululon dezehexrarel vezehel.`
 
 ::: details Show answer
 *Ululon tells a three-part dialogue.*
 :::
 
-**3.** `zuhubun vejel gomoxredul.`
+**3.** `zuhubun domoxredul vejel.`
 
 ::: details Show answer
-*Uhubun sees a secondary effect.*
+*Uhubun sees a secondary adventure.*
 :::
 
-**4.** `zazawan vejel zadomaxrowol.`
+**4.** `zazawan deduduxrowol vejel.`
 
 ::: details Show answer
 *Azawan sees specimen #1.*
 :::
 
-**5.** `zululon vezehuxrazobal.`
+**5.** `zululon vodoboxrazobal.`
 
 ::: details Show answer
 *Ululon annihilates the score.*

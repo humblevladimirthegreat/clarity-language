@@ -11,7 +11,7 @@ A gloss should answer: *what is each Agalan piece doing in the clause — in Eng
 | Slot + sense | Show PoS letter and the **active English sense** | Quote Agalan phonology (`ugobo`, `uzumu`, …) |
 | Separate senses | Treat literal / metaphorical / proper / overlay as **different English roots** | Chain etymology (`microphone→speaker`) |
 | Endings | Drop **-l** / **-m** / **-n** when they only pick which sense-root applies | Repeat those endings after a sense that already encodes them |
-| Structure | Keep mid-word `x` pieces, **-sh**, and binding visible | Invent full English syntax for Agalan structure |
+| Structure | Keep mid-word `x` pieces, named **`@`**, **-sh**, and binding visible | Invent full English syntax for Agalan structure |
 | Binding | Point **-r** (and span anaphors) at the antecedent when known | Collapse to English *he* / *she* / *it* |
 | Underspecification | Keep vague Agalan vague (`someone`, bare joins) | Sharpen into a specific English claim |
 | Separation | Stay word-aligned | Replace the free English line |
@@ -66,10 +66,10 @@ Grammar tables may keep a column named **Gloss** for free English. When a table 
 
 ### Example (same Agalan, three readings)
 
-Agalan: `jol duber dadedal dogovel dol von.`
+Agalan: `jol dubur dadedal dogovel dol von.`
 
 ```
-gloss: `j-question` · `d-←Ubenaxuzonun` · `d-tea` · `d-coffee` · `d-or-exactly-one` · `v-choose`
+gloss: `j-question` · `d-←Ubunexunowen` · `d-tea` · `d-coffee` · `d-or-exactly-one` · `v-choose`
 
 *Do you want tea or coffee?*                          ← loose (default)
 *Do you (B) choose tea or coffee — exactly one?*      ← strict (teaching exclusive *or*)
@@ -86,8 +86,8 @@ Published strings share one phonological root, but **literal**, **metaphorical**
 | `zugobon` | `z-speaker` | `z-ugobo(speaker)-n`, `z-speaker-n` |
 | `guzumul` | `g-smile` | `g-uzumu(smile)-l` |
 | `guzumum` | `g-happy` | `g-uzumu(smile→happy)-m`, `g-happy-m` |
-| `huhunul` | `h-fishing` | `h-uhunu(fishing)-l` |
-| `huhunum` | `h-witnessed` | `h-uhunu(fishing→witnessed)-m` |
+| `huvuvul` | `h-fishing` | `h-uvuvu(fishing)-l` |
+| `huvuvum` | `h-witnessed` | `h-uvuvu(fishing→witnessed)-m` |
 | `gohohum` | `g-home` | `g-ohohu(house→home)-m` |
 
 Same English label for `zugobom` and `zugobon` is fine: both are the *speaker* sense-root; the written ending is recoverable from the Agalan line and from [reference-suffix.md](../grammar/reference-suffix.md). The gloss’s job is the **sense**, not a second orthography.
@@ -101,14 +101,15 @@ Same English label for `zugobom` and `zugobon` is fine: both are the *speaker* s
 ### Word shape
 
 ```
-{PoS}-{english}(-x-{english|TAG})*[-sh]
+{PoS}-{english}(-x-{english|TAG})*[@][-sh]
 ```
 
 - **PoS** — single letter matching the written prefix (`j` `z` `d` `b` `v` `g` `w` `h` `x`). Left-bound adjectives: `gl-…`.
 - **english** — short English label for the **active** sense (hyphens OK inside a label: `next-clause`, `or-exactly-one`). **No** Agalan root letters.
 - **`-x-`** — mid-word compound / stance / role / span hinge; each piece is English (or a stable TAG).
-- **-l / -m / -n** — **omit** when they only choose which sense-root is in play (the usual content-word case).
-- **-sh** — append `-sh` when the written word has associative / address-set / collective **-sh** (`z-speaker-sh`, `z-listener-sh`).
+- **-l / -m / -n** — **omit** when they only choose which sense-root is in play (the usual content-word case). Named reference **-n** is **`@`**, not the letters `-n`.
+- **`@`** — append when **-n** is **named reference** (house-cast, coined handles, `PoS<…>n`, phrasal names). Do **not** add `@` when **-n** only selected a special or overlay sense (`zugobon` → `z-speaker`, `zahan` → `z-interlocutors`) or when join **-n** is a join ending (`van`, `xan`).
+- **-sh** — append `-sh` after `@` if both apply (`z-grace@-sh`). Use `-sh` when the written word has associative / address-set / collective **-sh** (`z-speaker-sh`, `z-listener-sh`).
 - **Prefix-less** revisers: English only — `instead`, `rather`, `additionally` (no fake PoS).
 
 Separate words with ` · ` (space-middot-space). One morph gloss line per Agalan line (or per turn).
@@ -119,18 +120,19 @@ Only when it is **not** already baked into the English sense-root:
 
 | Keep in gloss | Why |
 |---------------|-----|
+| `@` | Named reference **-n** — the sense (`grace`) is not the job; the job is *this is a name* |
 | `-sh` | Associative / collective ascription / collective doing / address-set — not a sense picker |
 | `(←…)` binding for **-r** | Resume is not a lexicon sense; see below |
 | Rare teaching callouts | If you must contrast two same-sense forms that differ only by ending, prefer distinct English labels (`and.open` / `and`) over re-attaching `-m` / `-l` |
 
-Do **not** write `-l` / `-m` / `-n` after a sense that already is the literal / metaphorical / proper / overlay root.
+Do **not** write `-l` / `-m` / `-n` after a sense that already is the literal / metaphorical / overlay root. Named **-n** uses **`@`**, not `-n` / `-proper`.
 
 ### Sense labels
 
 - Prefer lexicon / overlay wording when short (`tea`, `speaker`, `witnessed`).
 - Prefer **stable tags** for closed inventory (uppercase OK when the docs already use them): `COMMENT`, `DECISION`, `SAME`, `WITNESSED`, `ABIL`.
 - Do **not** use arrows (`→`) or etymology chains.
-- Do **not** put PoS names in the label (`noun`, `proper`).
+- Do **not** put PoS names in the label (`noun`, `proper`). Named reference is **`@`**, not the word *proper*.
 
 ### Anaphors (`-r`)
 
@@ -138,8 +140,8 @@ The binder **is** the gloss root. No trailing `-r` (resume is already marked by 
 
 | Case | Morph gloss |
 |------|-------------|
-| Letter / full-root resume with known name | `z-←Ubenaxuzonun` |
-| House-cast name (`zazawan`, …) | `z-←grace` / `z-←courage` / `z-←beauty` |
+| Letter / full-root resume with known name | `z-←Ubunexunowen` |
+| House-cast name (`zazawan`, …) | `z-←grace` / `z-←courage` / `z-←beauty` (resume is **-r**, so no `@`) |
 | Resume of a prior content word | `z-←someone` / `d-←tea` |
 | Fill-ask / unspecified member | `z-who` / `z-something` (as the docs require for that form) |
 
@@ -148,13 +150,13 @@ Do not write `z-←microphone` for a speaker antecedent.
 ### House-cast given names
 <a id="house-cast"></a>
 
-Grammar examples use three single-root names ([grammar-docs.md](grammar-docs.md#house-cast)). Morph gloss is the published sense that formed the label; free English is the name, not the virtue word and not *I* / *you*. Resume uses that same sense (`z-←grace`). Do not write `z-Azawan`.
+Grammar examples use three single-root names ([grammar-docs.md](grammar-docs.md#house-cast)). Morph gloss is the published sense that formed the label, plus **`@`** because **-n** is named reference; free English is the name, not the virtue word and not *I* / *you*. Resume uses that same sense (`z-←grace`) with no `@` (**-r** is not a name). Do not write `z-Azawan` or `z-grace-proper`.
 
 | Agalan | Morph gloss | Free English | Resume |
 |--------|-------------|--------------|--------|
-| `zazawan` | `z-grace` | *Azawan* | `zazar` → `z-←grace` |
-| `zululon` | `z-courage` | *Ululon* | `zulur` → `z-←courage` |
-| `zuhubun` | `z-beauty` | *Uhubun* | `zuhur` → `z-←beauty` |
+| `zazawan` | `z-grace@` | *Azawan* | `zazar` → `z-←grace` |
+| `zululon` | `z-courage@` | *Ululon* | `zulur` → `z-←courage` |
+| `zuhubun` | `z-beauty@` | *Uhubun* | `zuhur` → `z-←beauty` |
 
 ### Mid-word `x` families
 
@@ -162,15 +164,15 @@ Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) —
 
 | Family | Example Agalan | Morph gloss |
 |--------|-----------------|-------------|
-| Ordinary / name compound | `jubenaxuzonun` | `j-hospitality-x-optimism` |
-| Ordinary (three roots) | `zuzuzuxogovexadedan` | `z-sushi-x-coffee-x-tea` |
+| Ordinary / name compound | `jubunexunowen` | `j-hospitality-x-optimism@` |
+| Ordinary (three roots) | `zuzuzuxogovexadedan` | `z-sushi-x-coffee-x-tea@` |
 | Ability / values stance | `vawalaxel` | `v-walking-unable-temporary` |
-| Values stance on need | `horodoloxem` | `h-competence-x-motive` |
-| Role compound | `zaxezeber` | `z-agent-x-dialogue` |
+| Values stance on need | `holozoxem` | `h-competence-x-motive` |
+| Role compound | `zaxezeher` | `z-agent-x-dialogue` |
 | Span open / close | `hexal` … `xuxul` | `h-aside-x-multi` · … · `x-span-close` |
 | Number / enumeration | `x#e-` | `x-starting-with` |
 
-For **phrasal proper names**, gloss each root with the sense **chosen for the label** (why those roots were picked). Proper **-n** is not written.
+For **phrasal proper names**, gloss each root with the sense **chosen for the label** (why those roots were picked), then **`@`**. Do not put the Agalan clip in the english slot (`z-Abulo`). A harvested handle still glosses the title senses plus `@`.
 
 ### Underspecification and joins
 
@@ -180,13 +182,28 @@ Bake join / reviser **job** into the English label (including open vs closed whe
 |---------|-------------|
 | `zam` | `z-and.open` |
 | `zal` | `z-and` |
+| `vam` | `v-and.open` |
 | `dol` | `d-or-exactly-one` |
+| `zol` | `z-or-exactly-one` |
 | `zel` | `z-rank/more` |
 | `zael` | `z-as…as` |
+| `zaem` | `z-as…as.open` |
 | `zar` | `z-who` / `z-something` |
+| `zul` / `gul` | `z-not` / `g-not` |
+| `zual` | `z-everything-but` |
 | `xan` | `x-and-then` |
 | `ol` | `instead` |
+| `am` | `including.open` |
+| `al` | `additionally` (discourse) / `including` (in-clause closed) |
+| `el` | `rather` |
+| `ul` | `except` |
+| `hal` (listed) | `h-only-when` |
+| `hal` (bare) | `h-never` |
+| `hual` (bare) | `h-always` |
 | `von` | `v-choose` |
+| `g+3` | `g-three` |
+| `g#2` | `g-second` |
+| `g+` | `g-more-than-one` |
 
 ## Worked examples
 
@@ -194,18 +211,18 @@ Bake join / reviser **job** into the English label (including open vs closed whe
 
 | Agalan | Morph gloss | Free English (separate) |
 |---------|-------------|-------------------------|
-| `jawel` | `j-greeting` | *Hello.* |
+| `jawavel` | `j-greeting` | *Hello.* |
 | `jael` | `j-yes` | *Yes.* |
 | `jol` | `j-question` | *(yes/no or fill-ask)* |
 | `zugobol` | `z-microphone` | *a microphone* |
 | `zugobon` | `z-speaker` | *I* / *the speaker* |
 | `zedonen` | `z-listener` | *you* / *the listener* |
-| `zazawan` | `z-grace` | *Azawan* |
+| `zazawan` | `z-grace@` | *Azawan* |
 | `zahan` | `z-interlocutors` | *we* (speaker ∪ address set) |
 | `zugobonsh` | `z-speaker-sh` | *I and associates* |
 | `zedonensh` | `z-listener-sh` | *you-all* (address set) |
 | `guzumum` | `g-happy` | *happy* |
-| `huhunum` | `h-witnessed` | *per memory* |
+| `huvuvum` | `h-witnessed` | *per memory* |
 | `howoram` | `h-plan-sketch` | *as a sketch plan* |
 | `gonunul` | `g-SAME` | *identical to* (identity host) |
 | `von` | `v-choose` | *chooses (exactly one)* |
@@ -224,10 +241,10 @@ gloss: `j-yes` · `z-speaker` · `z-and.open` · `z-listener` · `z-and` · `g-h
 
 ### Metaphor vs overlay vs literal
 
-Agalan: `xezebal zuber huhunum zanunul.`
+Agalan: `xezebal zubur huvuvum zanunul.`
 
 ```
-gloss: `x-however` · `z-←Ubenaxuzonun` · `h-witnessed` · `z-rain`
+gloss: `x-however` · `z-←Ubunexunowen` · `h-witnessed` · `z-rain`
 
 *Still — it’s raining, as I remember.*
 ```
@@ -236,7 +253,7 @@ gloss: `x-however` · `z-←Ubenaxuzonun` · `h-witnessed` · `z-rain`
 
 ### Ability + value motive
 
-Agalan: `juel zugobon vawalaxel horodoloxem.`
+Agalan: `juel zugobon vawalaxel holozoxem.`
 
 ```
 gloss: `j-no` · `z-speaker` · `v-walking-unable-temporary` · `h-competence-x-motive`
@@ -256,7 +273,7 @@ gloss: `x-starting-with` · `z-problem` · `g-first` · `z-speaker-sh` · `h-ple
 
 ### Inclusive *we* (interlocutors)
 
-Agalan: `jael xamalal zahan howoram vawalal vul.`
+Agalan: `jael xezazal zahan howoram vawalal vul.`
 
 ```
 gloss: `j-yes` · `x-therefore` · `z-interlocutors` · `h-plan` · `v-walking` · `v-not`
@@ -285,6 +302,8 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 | Avoid | Why | Prefer |
 |-------|-----|--------|
 | `z-ugobo(speaker)-n` | Agalan letters + redundant ending | `z-speaker` |
+| `z-Azawan` / `z-grace-proper` | Name or the word *proper* in the english slot | `z-grace@` |
+| `zam` / `hal` / `am` as the whole morph | Agalan letters where the job belongs | `z-and.open` / `h-only-when` / `including.open` |
 | `z-microphone-l` | Ending already chose the literal root | `z-microphone` |
 | `z-microphone→speaker` | Etymology chain | `z-speaker` |
 | Morph line that is only idiomatic English | Confuses layers | Morph + separate free line |
@@ -296,9 +315,9 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 
 1. English senses only — no Agalan root spellings.
 2. No `→` etymology chains.
-3. No **-l** / **-m** / **-n** when they only selected the sense-root.
+3. No **-l** / **-m** / **-n** when they only selected the sense-root. Named **-n** is **`@`** (`z-grace@`), not `-n` or `-proper`.
 4. Compounds / stance / role / span `x` pieces are segmented in English.
-5. **-r** uses `←…` (no trailing `-r`); **-sh** stays as `-sh`. Resume is `z-←grace`, not `z-r`. Fill-ask is `z-who`, not `z-ar`.
+5. **-r** uses `←…` (no trailing `-r`); **-sh** stays as `-sh`; named **-n** stays as `@`. Resume is `z-←grace`, not `z-r`. Fill-ask is `z-who`, not `z-ar`.
 6. Free English is on its own line (or grammar-table Gloss column) — **loose** by default; **strict** only when teaching packaging.
 
 ## See also

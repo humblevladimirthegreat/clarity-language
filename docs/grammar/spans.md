@@ -23,9 +23,9 @@ Write the **role letter** immediately before any **`@`** / **`~`** marks and the
 | `<` … `>` | **opaque** — foreign, code, raw orthography | angle brackets: a **raw blob** |
 
 ```
-`zazawan v[uzunu] d[jael]l.`
+`zazawan v[uzunu] d[jael].`
 
-gloss: `z-grace` · `v-[sing]` · `d-[yes]`
+gloss: `z-grace@` · `v-sing` · `d-yes`
 
 *Azawan “sings” a “yes.”*
 ```
@@ -41,7 +41,7 @@ To point back at a prior span (**-r**), put **`=`** inside the same brackets: `d
 ```
 `jol zululon d[=] vezehel.`
 
-gloss: `j-ask` · `z-courage` · `d-[=]` · `v-tell`
+gloss: `j-question` · `z-courage@` · `d-←cite` · `v-tell`
 
 *Ululon said that?!* (resume a prior cite)
 ```
@@ -79,7 +79,7 @@ The open’s role letter is the **outer-clause slot of the entire span**. Ask: *
 ```
 `jul zululon v[uzunu] dazawan.`
 
-gloss: `j-command` · `z-courage` · `v-[sing]` · `d-grace`
+gloss: `j-prohibition` · `z-courage@` · `v-sing` · `d-grace@`
 
 *Ululon, don’t “sing” Azawan.*
 ```
@@ -93,7 +93,7 @@ The interior is ordinary Agalan. It may be a fragment or a same-speech-act claus
 
 | Interior | Example | Reading |
 |----------|---------|---------|
-| Fragment (one word or a short stretch) | `zazawan vawalal h(zuzumum).` | *Azawan walks (happily).* |
+| Fragment (one word or a short stretch) | `zazawan vawalal h(huzumum).` | *Azawan walks (happily).* |
 | Same-speech-act clause body | `zazawan vawalal h(zululon velebel).` | *Azawan walks (Ululon sleeps).* |
 
 Interior words keep **their** role letters. The fence is the adverb. A one-word manner comment with nothing to package is a plain adverb: `zazawan vawalal huzumum.`
@@ -103,9 +103,9 @@ The aside **keeps the outer speech act** (omissible statement `jal` stays omitte
 A *because* / *if* dependent is still **`adoro`**. A second name for the same person uses [identity](predication.md#identity) or classification.
 
 ```
-`zazawan vawalal h(zuzumum).`
+`zazawan vawalal h(huzumum).`
 
-gloss: `z-grace` · `v-walk` · `h-(happy)`
+gloss: `z-grace@` · `v-walk` · `h-happy`
 
 *Azawan walks (happily).*
 ```
@@ -131,7 +131,7 @@ gloss: `z-grace` · `v-walk` · `h-(happy)`
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Prefer a one-token cite, mention, or opaque blob; nativize when the surface wording is not the point. House names for people unless the item is a loan name.
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` · `ezehe` *tell* · `uwuru` *write* · `uzunu` *sing* · `eje` *see* · `awala` *walk* · `elebe` *sleep* · `uzumu` *happy* (**-m**) · `odogo` *dog* · `agada` *cat* · `abogo` *book* · `elulu` *blue*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `ezehe` *tell* · `uwuru` *write* · `uzunu` *sing* · `eje` *see* · `awala` *walk* · `elebe` *sleep* · `uzumu` *happy* (**-m**) · `odogo` *dog* · `agada` *cat* · `abogo` *book* · `elulu` *blue*
 
 #### English → Agalan
 
@@ -168,7 +168,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **6.** *The word “dog” is blue.* (the form itself is the subject)
 
 ::: details Show answer
-`z{odogo} gelulun.`
+`z{odogo} gelulul.`
 :::
 
 **7.** *Don’t “oops,” Ululon.*
@@ -180,7 +180,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **8.** *Azawan walks (happily).* (parenthetical aside)
 
 ::: details Show answer
-`zazawan vawalal h(zuzumum).`
+`zazawan vawalal h(huzumum).`
 :::
 
 **9.** *Azawan walks (Ululon sleeps).* (clause-body aside)
@@ -310,7 +310,7 @@ EDGE **`a`** / **`e`** / **`o`** take **-l** / **-m** / **-n**. EDGE **`u`** tak
 
 Hedged proper (`@~`) is written **`d@[…]`** only (spoken as the **proper** open with uncertain tonality). **`@`** / **`~`** do not combine with resume **-r**.
 
-**-r** resumes a prior span ([pronouns.md](pronouns.md); linguists: anaphora). `daxur` = *that (cite)* as object, matching the most recent **cite** (TYPE **a**). `hexur` / `h(=)` = *that (aside)*. The resume’s role letter need not match the antecedent open’s (`zaxur` = that cite as subject). No interior; no close (EDGE **`u`**).
+**-r** resumes a prior span ([pronouns.md](pronouns.md)). `daxur` = *that (cite)* as object, matching the most recent **cite** (TYPE **a**). `hexur` / `h(=)` = *that (aside)*. The resume’s role letter need not match the antecedent open’s (`zaxur` = that cite as subject). No interior; no close (EDGE **`u`**).
 
 ### Writing ↔ speech map (core)
 
@@ -321,7 +321,7 @@ Hedged proper (`@~`) is written **`d@[…]`** only (spoken as the **proper** ope
 | `d@[…]` | `daxan` … `xuxul` | proper multi-token cite; also spelling of hedged proper |
 | `d{…}` / `d~{…}` / `d@{…}` | `doxal` / `doxam` / `doxan` … `xuxul` | mention |
 | `h(…)` / `h~(…)` / `h@(…)` | `hexal` / `hexam` / `hexan` … `xuxul` | aside (open PoS is `/h/`) |
-| `h(zuzumum)` | `hexol zuzumum` | atomic aside |
+| `h(huzumum)` | `hexol huzumum` | atomic aside |
 | `h(=)` | `hexur` | aside resume |
 | `d<…>` / `d~<…>` / `d@<…>` | `duxal` / `duxam` / `duxan` … `xuxul` | opaque |
 | `d[hi]` | `daxol hi` | atomic (EDGE **o**) |
@@ -345,9 +345,9 @@ Examples: `d[ h(…) ]`, `d[ z{…} ]`, `d~[ d<…> ]`. **`@`** / **`~`** apply 
 **Scope islands** mark a multi-word chunk so an **inside binder** can target that chunk. Writing **`^ … ^`**. In speech you only hear a pause and one tight phrase: there is no spoken open or close word. The edges are only grouping marks, like parentheses; the inside binder is the function.
 
 ```
-`zazawan ^ h<maybe>l zaredel zodogol ^ vejel.`
+`zazawan ^ h<maybe>l zodogol garedel ^ vejel.`
 
-gloss: `z-grace` · `^` · `h-maybe` · `z-red` · `z-dog` · `^` · `v-see`
+gloss: `z-grace@` · `^` · `h-maybe` · `z-dog` · `g-red` · `^` · `v-see`
 
 *Azawan saw maybe the red dog* (*maybe* targets that chunk).
 ```
@@ -358,7 +358,7 @@ gloss: `z-grace` · `^` · `h-maybe` · `z-red` · `z-dog` · `^` · `v-see`
 - **One island per clause.** Islands do not nest.
 - Empty `^^` has no reading.
 - **Binder required:** at least one scope-taking `/h/` and/or a [join](coordination.md#scope-islands-join) particle **inside**.
-- Prefer spaces inside: `^ h<maybe>l zaredel zodogol ^`.
+- Prefer spaces inside: `^ h<maybe>l zodogol garedel ^`.
 
 | Binder | Job inside the island |
 |--------|------------------------|
@@ -377,7 +377,7 @@ gloss: `z-grace` · `^` · `h-maybe` · `z-red` · `z-dog` · `^` · `v-see`
 ```
 `zazawan ^ zululon zal ^ zam vejel.`
 
-gloss: `z-grace` · `^` · `z-courage` · `zal` · `^` · `zam` · `v-see`
+gloss: `z-grace@` · `^` · `z-courage@` · `z-and` · `^` · `z-and.open` · `v-see`
 
 *Azawan and (just Ululon) saw …*
 ```
@@ -396,7 +396,7 @@ gloss: `z-grace` · `^` · `z-courage` · `zal` · `^` · `zam` · `v-see`
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Test spoken opens (TYPE / EDGE / ending), an explicit **`xuxul`** close, nesting, or a **`^ … ^`** island: not only Beginner brackets.
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` · `ezehe` *tell* · `eje` *see* · `urunu` *run* · `arede` *red* · `odogo` *dog* · `agada` *cat* · `abogo` *book* · `elulu` *blue* · `uzumu` *happy* (**-m**) · `abulo` (handle **Abulo**)
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `ezehe` *tell* · `eje` *see* · `urunu` *run* · `arede` *red* · `odogo` *dog* · `agada` *cat* · `abogo` *book* · `elulu` *blue* · `uzumu` *happy* (**-m**) · `abogo`×`ululo` (handle **Abulo**)
 
 #### English → Agalan
 
@@ -433,19 +433,19 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **6.** *Azawan said “hi” (happily).* (cite nesting an aside)
 
 ::: details Show answer
-`zazawan d[ h(zuzumum) hi ] vezehel.`
+`zazawan d[ h(huzumum) hi ] vezehel.`
 :::
 
 **7.** *Azawan walks (happily).* (spoken atomic aside)
 
 ::: details Show answer
-`zazawan vawalal hexol zuzumum.`
+`zazawan vawalal hexol huzumum.`
 :::
 
 **8.** *Azawan saw maybe the red dog.* (*maybe* targets that chunk)
 
 ::: details Show answer
-`zazawan ^ h<maybe>l zaredel zodogol ^ vejel.`
+`zazawan ^ h<maybe>l zodogol garedel ^ vejel.`
 :::
 
 **9.** *Uhubun and (just a cat) ran.*
@@ -474,7 +474,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Ululon said something like “hi Azawan.”*
 :::
 
-**3.** `zaxur gelulun.`
+**3.** `zaxur gelulul.`
 
 ::: details Show answer
 *That (cite) is blue.* (resume as subject)
@@ -498,7 +498,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan said the word “book” (cite wrapping a mention).*
 :::
 
-**7.** `zululon ^ h<maybe>l zaredel zagadal ^ vejel.`
+**7.** `zululon ^ h<maybe>l zagadal garedel ^ vejel.`
 
 ::: details Show answer
 *Ululon saw maybe the red cat.*
@@ -510,7 +510,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan and (just a dog) saw (it).*
 :::
 
-**9.** `zazawan vawalal hexol zuzumum.`
+**9.** `zazawan vawalal hexol huzumum.`
 
 ::: details Show answer
 *Azawan walks (happily).*
@@ -610,7 +610,7 @@ While scanning a span interior, `#` immediately before a closer or close-all is 
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. Test how the span **closes** (complete / editorial / close-all), or literal fence material as **opaque** content.
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` · `ezehe` *tell* · `uzumu` *happy* (**-m**)
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `ezehe` *tell* · `uzumu` *happy* (**-m**)
 
 #### English → Agalan
 
@@ -629,7 +629,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 **3.** *Uhubun said “hi” (happily)*, then pop every open span at once.
 
 ::: details Show answer
-`zuhubun daxal hi hexol zuzumum xuxum vezehel.`
+`zuhubun daxal hi hexol huzumum xuxum vezehel.`
 :::
 
 **4.** *Azawan said “he typed ] then left.”*
@@ -669,8 +669,6 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 ::: details Show answer
 *Ululon said “code > 1.”* (opaque blob; spoken close, because writing `<>` would take the first `>` as closer)
 :::
-
-<a id="xl<spa>n-markers"></a>
 
 ## See also
 

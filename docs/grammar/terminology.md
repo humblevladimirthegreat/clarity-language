@@ -32,7 +32,7 @@ Closed psychological `/h/` (not ordinary [adverb](#adverb) `/h/`).
 | **INTERNAL** | Emotion locus: charge held inside | [Special vocabulary](special-vocabulary.md#emotion-compose) |
 | **LOCUS** | Emotion-compose where the charge sits | [Special vocabulary](special-vocabulary.md#emotion-compose) |
 | **NATURAL** | Universality: natural necessity | [Special vocabulary](special-vocabulary.md#universality) |
-| **NOTIONAL** | As-if / pretense mood **`ahade`** | [Commentary](commentary.md#notional) |
+| **NOTIONAL** | As-if / pretense mood **`adade`** | [Commentary](commentary.md#notional) |
 | **PATTERN** | Evidential: from regularity | [Commentary](commentary.md#evidentiality) |
 | **PLAN** | Intention-framing mood **`owora`** | [Plan / decision](plan-decision.md#plan-predict) |
 | **PREDICT** | Forecast-framing mood **`elezo`** | [Plan / decision](plan-decision.md#plan-predict) |

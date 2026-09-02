@@ -13,17 +13,17 @@ Put **jol** at the left edge to ask. Soft **jom** is the same job, gentler. One 
 ```
 `jol zazawan vawalal.`
 
-gloss: `j-ask` · `z-grace` · `v-go`
+gloss: `j-question` · `z-grace@` · `v-walk`
 
-*Does Azawan go?* (yes/no: no join **-r**)
+*Does Azawan walk?* (yes/no: no join **-r**)
 ```
 
 ```
 `jol zar vawalal.`
 
-gloss: `j-ask` · `z-who` · `v-go`
+gloss: `j-question` · `z-who` · `v-walk`
 
-*Who goes?* (fill-ask)
+*Who walks?* (fill-ask)
 ```
 
 | Body shape | Ask type |
@@ -89,9 +89,9 @@ Each stack means exactly what its parts combine to say: first vowel picks accept
 ```
 `zazawan vawalal. jael.`
 
-gloss: `z-grace` · `v-go` · `j-yes`
+gloss: `z-grace@` · `v-walk` · `j-yes`
 
-*Azawan goes. Yes.* (confirm tag = **second bare turn** after `.`)
+*Azawan walks. Yes.* (confirm tag = **second bare turn** after `.`)
 ```
 
 These three jobs are distinct:
@@ -109,7 +109,7 @@ A fill answer **need not** keep **-r**. Bare content, single-item **-l** / **-m*
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` · `odogo` · `agada` · `awala` · `elebe` · `uzunu` · `eje` · `uwuru` · `urunu`
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `awala` *walk* · `elebe` *sleep* · `uzunu` *sing* · `eje` *see* · `uwuru` *write* · `urunu` *run*
 
 #### English → Agalan
 
@@ -236,7 +236,7 @@ The **-l** ending holds the stance exactly; **-m** is the soft twin of each row:
 **Shapes:**
 
 - **Bare turn:** `jael.` / `juel.`
-- **Stance + body:** `jael zazawan vawalal.` (*yes, Azawan goes*)
+- **Stance + body:** `jael zazawan vawalal.` (*yes, Azawan walks*)
 - **Confirm tag:** second bare turn after `.` ([left-edge rules](core.md#left-edge-order-and-sentence-boundaries))
 - **Monologue self-turn:** `juel` before correction; `jaol` before next step; `jael` after locking a point
 
@@ -271,7 +271,7 @@ Unbound *who* / *what* / *where* = bare phrase **-r** in the queried slot. Unbou
 ### When?
 <a id="when"></a>
 
-Under `/h/` / `/w/`, **occasion** readings are these forms ([restrictors](restrictors.md#defined-core-full)):
+Under `/h/` / `/w/`, **occasion** readings are these forms ([restrictors](restrictors.md#more-occasions)):
 
 | Form | Statement (bare) | Under question (bare) |
 |------|---------------------|--------------------------|
@@ -304,7 +304,7 @@ A fill may be a bare content word, single-item **-l** / **-m** / **-n**, or a lo
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` · `odogo` · `awala` · `urunu` · `elebe`
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `awala` *walk* · `urunu` *run* · `elebe` *sleep*
 
 #### English → Agalan
 
@@ -495,7 +495,7 @@ Join-word **-n** here is stock/usual (not [proper-name **-n**](reference-suffix.
 
 Short drills on this Advanced band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` · `awala` · `urunu`
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `awala` *walk* · `urunu` *run*
 
 #### English → Agalan
 
@@ -534,13 +534,13 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 **1.** `jael.` vs `jaol.`
 
 ::: details Show answer
-*`jael`* = *yes / true* (match). *`jaol`* = *sure / I’ll take that* (uptake).
+*yes / true* (match). *sure / I’ll take that* (uptake).
 :::
 
 **2.** `juel.` vs `juol.`
 
 ::: details Show answer
-*`juel`* = *no / false* (truth flip). *`juol`* = *not that* (reject this option).
+*no / false* (truth flip). *not that* (reject this option).
 :::
 
 **3.** `jol zazawan zululon zual.`

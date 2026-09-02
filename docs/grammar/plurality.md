@@ -10,14 +10,14 @@ Optional **-sh** after the [reference suffix](reference-suffix.md) marks an **as
 
 Without **-sh**, the word picks **one** referent. With **-sh**, you name an **anchor plus nearby associates** (family, coworkers, unit, household, and so on). Who counts as an associate comes from the conversation and the situation.
 
-**-sh** = **s**et with the anchor. *Azawan-sh* reads as *Azawan and associates*.
+**-sh** = **s**et with the anchor. On a name it reads as *Azawan and associates*.
 
 ```
 `zazawansh vawalal.`
 
-gloss: `z-grace-sh` · `v-walk`
+gloss: `z-grace@-sh` · `v-walk`
 
-*Azawan and associates go.*
+*Azawan and associates walk.*
 ```
 
 ```
@@ -85,7 +85,7 @@ Special pronouns take **-sh**, with a reading that depends on the role:
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `agada` *cat* · `odogo` *dog* · `uzumu` smile → *happy* (**-m**) · `ele` *size* / *big* · `awala` *walk* · `aju` *sit* · `urunu` *run* · `elebe` *sleep* · `eje` *see* · `aha` inclusive *we* · `ugobo` speaker · `edone` listener
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `agada` *cat* · `odogo` *dog* · `uzumu` smile → *happy* (**-m**) · `ele` *size* / *big* (**-m**) · `awala` *walk* · `aju` *sit* · `urunu` *run* · `elebe` *sleep* · `eje` *see* · `aha` inclusive *we* · `ugobo` speaker · `edone` listener
 
 #### English → Agalan
 
@@ -175,7 +175,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Speaker and associates (not you) walk.*
 :::
 
-**7.** `zodogolsh gelel.`
+**7.** `zodogolsh gelem.`
 
 ::: details Show answer
 *Some dogs are big.*
@@ -221,7 +221,7 @@ On `/v/`, **-sh** marks **collective**: the event is **one shared act**. A plura
 | `zazawansh vuzunul` | *Azawan and associates sing* (together or each, or don’t care) |
 | `zazawansh vuzunulsh` | *they sing as one outing* |
 | `zazawan vuzunulsh` | *Azawan sings jointly* (not a solo) |
-| `zahadan vawalalsh` | *the team walks as one unit* |
+| `zahadal vawalalsh` | *the team walks as one unit* |
 
 Count (*three times*) and habit (*always*) stay clause framing: [numbers](numbers.md) under `/h/`, or **`hual`**. **-rsh** on `/v/` resumes a prior **collective** verb (*still as one shared act*).
 
@@ -242,11 +242,11 @@ Most useful with a [phrase join](coordination.md): SHARED singular scale under *
 
 | Example | Gloss |
 |---------|-------|
-| `zulebol zolozol zal gudurum` | *the file-box and the toolbox are (each) heavy* |
-| `zulebol zolozol zal gudurumsh` | *heavy together* (collective SHARED) |
-| `zahadalr gumolam` | *the team is vast* (group-level size) |
-| `zulebolsh gudurum` | *the file-boxes are heavy* (members / plain) |
-| `zulebolsh gudurumsh` | *the file-boxes are heavy collectively* |
+| `zulebol zolozol zal garagam` | *the file-box and the toolbox are (each) heavy* |
+| `zulebol zolozol zal garagamsh` | *heavy together* (collective SHARED) |
+| `zahadal gumum` | *the team is vast* (group-level size) |
+| `zulebolsh garagam` | *the file-boxes are heavy* (members / plain) |
+| `zulebolsh garagamsh` | *the file-boxes are heavy collectively* |
 
 **-rsh** on `/ɡ/` resumes a prior **collective** adjective (*still collectively so*).
 
@@ -271,20 +271,20 @@ Quantity `>1` is digitless **`g+`** (it may co-occur with noun **-lsh**). Generi
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `olebo` *file-box* · `uduru` *heavy* · `ahada` *team* · `umola` *vast* · `agada` *cat* · `uzunu` *sing* · `awala` *walk* · `urunu` *run* · `aha` inclusive *we* · `ugobo` speaker · `edone` listener
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `ulebo` *file-box* · `olozo` *toolbox* · `araga` *heaviness* (**-m**) · `ahada` *teamwork* · `umu` *vastness* (**-m**) · `agada` *cat* · `uzunu` *sing* · `awala` *walk* · `urunu` *run* · `aha` inclusive *we* · `ugobo` speaker · `edone` listener
 
 #### English → Agalan
 
 **1.** *The file-boxes are heavy.* (members, or don’t care)
 
 ::: details Show answer
-`zulebolsh gudurum.`
+`zulebolsh garagam.`
 :::
 
 **2.** *The file-boxes are heavy as a pile.*
 
 ::: details Show answer
-`zulebolsh gudurumsh.`
+`zulebolsh garagamsh.`
 :::
 
 **3.** *We (including you) run.*
@@ -325,19 +325,19 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 #### Agalan → English
 
-**1.** `zulebolsh gudurumsh.`
+**1.** `zulebolsh garagamsh.`
 
 ::: details Show answer
 *The file-boxes are heavy collectively.* / *heavy as a pile*
 :::
 
-**2.** `zulebolsh gudurum.`
+**2.** `zulebolsh garagam.`
 
 ::: details Show answer
 *The file-boxes are heavy.* (members / plain)
 :::
 
-**3.** `zahadal gumolam.`
+**3.** `zahadal gumum.`
 
 ::: details Show answer
 *The team is vast.*

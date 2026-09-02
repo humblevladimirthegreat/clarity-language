@@ -20,7 +20,7 @@ The vowel is the join move; **-n** is join content. That is the **only** place j
 ```
 `zazawan dabelel van.`
 
-gloss: `z-grace` · `d-apple` · `v-includes`
+gloss: `z-grace@` · `d-apple` · `v-includes`
 
 *Azawan includes/adds an apple.*
 ```
@@ -33,34 +33,34 @@ These are ordinary content verbs. Sequence of clauses (*and then*) uses clause *
 |------|-----|-----------|---------|
 | **`van`** | *includes / adds* | **a** add | `zazawan dabelel van`: *Azawan includes/adds an apple* |
 | **`von`** | *chooses (as the one choice)* | **o** one | `zazawan dadedal von`: *Azawan chooses tea (as the one choice)* |
-| **`vaon`** | *picks (more picks may follow)* | **ao** add + one | `zazawan dugabel vaon`: *Azawan picks a topping* |
-| **`vun`** | *denies / refuses* | **u** undo | `zazawan dulel vun`: *Azawan denies/refuses the lie* |
-| **`vuan`** | *excludes* | **ua** undo + add | `zazawan debanul vuan`: *Azawan excludes nuts* |
+| **`vaon`** | *picks (more picks may follow)* | **ao** add + one | `zazawan dubagem vaon`: *Azawan picks dessert* |
+| **`vun`** | *denies / refuses* | **u** undo | `zazawan dululel vun`: *Azawan denies/refuses the lie* |
+| **`vuan`** | *excludes* | **ua** undo + add | `zazawan dabanul vuan`: *Azawan excludes peanuts* |
 | **`vuon`** | *bars (anything but)* | **uo** undo + one | `zazawan dogovel vuon`: *Azawan bars coffee (anything else is fine)* |
-| **`ven`** | *prioritizes* | **e** order | `zazawan dugujul ven`: *Azawan prioritizes the bug* |
-| **`vaen`** | *equates / ties* | **ae** add in order | `zazawan dagegolsh vaen`: *Azawan equates the candidates* |
-| **`voen`** | *tries* | **oe** one + order | `zazawan damugal voen`: *Azawan tries the fix* |
-| **`vuen`** | *deprioritizes* | **ue** undo + order | `zazawan dodugul vuen`: *Azawan deprioritizes dessert* |
+| **`ven`** | *prioritizes* | **e** order | `zazawan dabugul ven`: *Azawan prioritizes the bug* |
+| **`vaen`** | *equates / ties* | **ae** add in order | `zazawan dululon duhubun dal vaen`: *Azawan equates Ululon and Uhubun* |
+| **`voen`** | *tries* | **oe** one + order | `zazawan dewenem voen`: *Azawan tries the workaround* |
+| **`vuen`** | *deprioritizes* | **ue** undo + order | `zazawan dubagem vuen`: *Azawan deprioritizes dessert* |
 
-English *refuse* vs *leave out*: `zazawan demadel vun` (*Azawan refuses meat*) vs `zazawan demadel vuan` (*Azawan excludes meat*). One locked choice vs an open pick: `zazawan dalanel von` vs `zazawan dalanel vaon`. Rank vs trial: `zazawan damugal ven` (*prioritizes the fix*) vs `zazawan damugal voen` (*tries the fix*). *And then* between sentences is `SENT₁ SENT₂ xan`, not `van`.
+English *refuse* vs *leave out*: `zazawan dememal vun` (*Azawan refuses meat*) vs `zazawan dememal vuan` (*Azawan excludes meat*). One locked choice vs an open pick: `zazawan dabanul von` vs `zazawan dabanul vaon`. Rank vs trial: `zazawan dewenem ven` (*prioritizes the workaround*) vs `zazawan dewenem voen` (*tries the workaround*). *And then* between sentences is `SENT₁ SENT₂ xan`, not `van`.
 
 ### Join-relations
 <a id="join-relations"></a>
 
-Use a **join-relation** when a host is **framed** by the same join-series move toward one `/b/` argument: *including nuts*, *without meat*, *prioritizing the bug*.
+Use a **join-relation** when a host is **framed** by the same join-series move toward one `/b/` argument: *including peanuts*, *without meat*, *prioritizing the bug*.
 
-**Shape:** `/ɡ/` or `/h/` + join vowel + **-n** (`gan` / `han`, …). One `/b/` argument (one thing or a group). Put ordinary noun **-sh** on that argument when the group is associative. For several members or an empty domain, put a [phrase join](coordination.md) **inside** the `/b/` phrase (`gan bal bebanul bezedul`), or use a [standalone](coordination.md#standalone-phrase) `/b/` join as the only argument (`gan bar` = *including something*; `guan bal` = *excluding nothing* / stripped frame).
+**Shape:** `/ɡ/` or `/h/` + join vowel + **-n** (`gan` / `han`, …). One `/b/` argument (one thing or a group). Put ordinary noun **-sh** on that argument when the group is associative. For several members or an empty domain, put a [phrase join](coordination.md) **inside** the `/b/` phrase (`gan babanul bubagem bal`), or use a [standalone](coordination.md#standalone-phrase) `/b/` join as the only argument (`gan bar` = *including something*; `guan bal` = *excluding nothing* / stripped frame).
 
 Same vowels as [join-act verbs](#join-act-verbs); **-n** is join content toward `/b/` (same **only** exception as other join words). Keep the relation and its `/b/` together: `gan` + `/b/` on a noun; `han` + `/b/` as one adverb.
 
 **Mnemonic:** the same vowel jobs as the join-act table.
 
 ```
-`zubarol gan bebanul.`
+`zuragel gan babanul.`
 
 gloss: `z-birthday-cake` · `g-including` · `b-peanut`
 
-*Cake including / with nuts.*
+*Cake including / with peanuts.*
 ```
 
 Content *including* needs that `/b/` (`gan b…`). A stock label uses a [mention](spans.md) span.
@@ -71,20 +71,20 @@ Content *including* needs that `/b/` (`gan b…`). A stock label uses a [mention
 
 | Form | `/ɡ/` (*N … b-X*) | `/h/` (*event … b-X*) | Vowel cue | Example |
 |------|-------------------|------------------------|-----------|---------|
-| **`gan` / `han`** | *including / with* | *with / including* | **a** add | `zubarol gan bebanul`; `zazawan han bululon vawalal` |
-| **`gon` / `hon`** | *exclusive for* (X is N’s sole pick) | *exclusively for / as the one* | **o** one | `zugolal gon badedal`; `… hon badedal vedonem` |
-| **`gaon` / `haon`** | *open to* (X admitted; more may follow) | *among options* | **ao** add + one | `zubazul gaon bugabel`; `… haon bugabel vedonem` |
-| **`gun` / `hun`** | *against / anti-* (refuses X) | *refusing* | **u** undo | `zobulel gun bulel`; `… hun vemedel` |
-| **`guan` / `huan`** | *without / excluding* | *excluding* | **ua** undo + add | `zubarol guan bebanul`; `… huan bebanul vuvazel` |
-| **`guon` / `huon`** | *open to anything but* (X barred; rest free) | *barring / anything but* | **uo** undo + one | `zugolal guon bebanul`; `… huon bebanul vedonem` |
-| **`gen` / `hen`** | *prioritizing / headed by* | *prioritizing* | **e** order | `zuzebul gen bugujul`; `… hen bugujul vamugal` |
-| **`gaen` / `haen`** | *on a par with* | *equating / tying* | **ae** add in order | `zalanel gaen badogal`; `… haen bagegolsh vezagel` |
-| **`goen` / `hoen`** | *for trying / trial of* | *trying* | **oe** one + order | `zalanel goen bamugal`; `… hoen bamugal vedonem` |
-| **`guen` / `huen`** | *deprioritizing / trailing* | *deprioritizing* | **ue** undo + order | `zugolal guen bodugul`; `… huen bodugul vemedel` |
+| **`gan` / `han`** | *including / with* | *with / including* | **a** add | `zuragel gan babanul`; `zazawan han bululon vawalal` |
+| **`gon` / `hon`** | *exclusive for* (X is N’s sole pick) | *exclusively for / as the one* | **o** one | `zahadam gon bazawan`; `… hon bazawan vawalal` |
+| **`gaon` / `haon`** | *open to* (X admitted; more may follow) | *among options* | **ao** add + one | `zuragel gaon babanul`; `… haon babanul vawalal` |
+| **`gun` / `hun`** | *against / anti-* (refuses X) | *refusing* | **u** undo | `zuragel gun babanul`; `… hun bememal` |
+| **`guan` / `huan`** | *without / excluding* | *excluding* | **ua** undo + add | `zuragel guan babanul`; `… huan babanul vawalal` |
+| **`guon` / `huon`** | *open to anything but* (X barred; rest free) | *barring / anything but* | **uo** undo + one | `zunudel guon babanul`; `… huon babanul vawalal` |
+| **`gen` / `hen`** | *prioritizing / headed by* | *prioritizing* | **e** order | `zuzebul gen babugul`; `… hen babugul vewenem` |
+| **`gaen` / `haen`** | *on a par with* | *equating / tying* | **ae** add in order | `zadedal gaen bogovel`; `… haen bululon vawalal` |
+| **`goen` / `hoen`** | *for trying / trial of* | *trying* | **oe** one + order | `zuzebul goen bewenem`; `… hoen bewenem vawalal` |
+| **`guen` / `huen`** | *deprioritizing / trailing* | *deprioritizing* | **ue** undo + order | `zuragel guen bubagem`; `… huen bubagem vawalal` |
 
-*Anti-* vs *without*: `bemadel gun` vs `bemadel guan`. *Without X* vs *anything but X*: `bebanul guan` vs `bebanul guon`. Sole pick vs among options: `balanel gon` vs `balanel gaon`. Fix-first vs try-the-fix: `bamugal gen` vs `bamugal goen`.
+*Anti-* vs *without*: `gun bememal` vs `guan bememal`. *Without X* vs *anything but X*: `guan babanul` vs `guon babanul`. Sole pick vs among options: `gon bazawan` vs `gaon bazawan`. Workaround-first vs try-the-workaround: `gen bewenem` vs `goen bewenem`.
 
-English *including* as a slot repair is a [reviser](revisers.md): `zahadal gan bazawan` (*a team including Azawan*) vs `zahadal al zazawan` (*the team, including Azawan*).
+English *including* as a slot repair is a [reviser](revisers.md): `zahadam gan bazawan` (*a team including Azawan*) vs `zahadam al zazawan` (*the team, including Azawan*).
 
 Keep list or empty arity on the **`/b/` argument**. Join-relations take **-n**.
 
@@ -93,7 +93,7 @@ Keep list or empty arity on the **`/b/` argument**. Join-relations take **-n**.
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Name a **join-act** (`van` / `von` / …) when someone *does* the move to an object; name a **join-relation** (`gan` / `han` / … plus one `/b/`) when a host is framed *including* / *without* / *prioritizing* something.
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` (house names); `abele` *apple*; `adeda` *tea*; `ugabe` *topping*; `ule` *lie*; `ebanu` *nuts*; `ogove` *coffee*; `uguju` *bug*; `agego` *candidate*; `amuga` *fix*; `ubaro` *cake*; `ugola` *drink*; `ahada` *team*; `awala` *walk*.
+**Roots used here:** `azawa` / `ululo` / `uhubu` (house names); `abele` *apple*; `adeda` *tea*; `ubage` *dessert*; `ulule` *lie*; `abanu` *peanut*; `ogove` *coffee*; `abugu` *bug*; `ewene` *workaround*; `urage` *birthday-cake*; `unude` *water*; `ahada` *team*; `awala` *walk*; `uzebu` *problem*; `emema` *meat*.
 
 #### English → Agalan
 
@@ -103,10 +103,10 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zazawan dabelel van.`
 :::
 
-**2.** *Cake including nuts.*
+**2.** *Cake including peanuts.*
 
 ::: details Show answer
-`zubarol gan bebanul.`
+`zuragel gan babanul.`
 :::
 
 **3.** *Ululon chooses tea (as the one choice).*
@@ -121,27 +121,27 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zazawan han bululon vawalal.`
 :::
 
-**5.** *Azawan excludes nuts.*
+**5.** *Azawan excludes peanuts.*
 
 ::: details Show answer
-`zazawan debanul vuan.`
+`zazawan dabanul vuan.`
 :::
 
-**6.** *Cake without nuts.*
+**6.** *Cake without peanuts.*
 
 ::: details Show answer
-`zubarol guan bebanul.`
+`zuragel guan babanul.`
 :::
 
-**7.** *Azawan picks a topping (more picks may follow).*
+**7.** *Azawan picks dessert (more picks may follow).*
 
 ::: details Show answer
-`zazawan dugabel vaon.`
+`zazawan dubagem vaon.`
 :::
 
 #### Agalan → English
 
-**1.** `zululon dulel vun.`
+**1.** `zululon dululel vun.`
 
 ::: details Show answer
 *Ululon refuses / denies the lie.*
@@ -153,34 +153,34 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan bars coffee (anything else is fine).*
 :::
 
-**3.** `zugolal gon badedal.`
+**3.** `zahadam gon bazawan.`
 
 ::: details Show answer
-*A drink exclusive for tea (tea is the sole pick).*
+*A team exclusive for Azawan (Azawan is the sole pick).*
 :::
 
-**4.** `zazawan damugal voen.`
+**4.** `zazawan dewenem voen.`
 
 ::: details Show answer
-*Azawan tries the fix.*
+*Azawan tries the workaround.*
 :::
 
-**5.** `zahadal gan bazawan.`
+**5.** `zahadam gan bazawan.`
 
 ::: details Show answer
 *A team including Azawan.*
 :::
 
-**6.** `zazawan hen bugujul vamugal.`
+**6.** `zazawan hen babugul vewenem.`
 
 ::: details Show answer
-*Azawan works the fix, prioritizing the bug.*
+*Azawan works the workaround, prioritizing the bug.*
 :::
 
-**7.** `zazawan dagegolsh vaen.`
+**7.** `zazawan dululon duhubun dal vaen.`
 
 ::: details Show answer
-*Azawan equates the candidates.*
+*Azawan equates Ululon and Uhubun.*
 :::
 
 ## See also

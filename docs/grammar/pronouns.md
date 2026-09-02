@@ -21,9 +21,9 @@ Two stem lengths:
 ```
 `zazawan vawalal. zazar vajul.`
 
-gloss: `z-grace` · `v-walk` · `z-←grace` · `v-sit`
+gloss: `z-grace@` · `v-walk` · `z-←grace` · `v-sit`
 
-*Azawan goes. He sits.* (resume from the name’s root prefix)
+*Azawan walks. He sits.* (resume from the name’s root prefix)
 ```
 
 Add **-sh** after **-r** for a **group** referent (anchor **and associates**): [plurality.md](plurality.md). `…r` = one; `…rsh` = that one and associates.
@@ -34,7 +34,7 @@ Add **-sh** after **-r** for a **group** referent (anchor **and associates**): [
 Some pronouns name **roles in this utterance** (speech, writing, signing: any channel). They take the usual role letter for the slot they fill.
 
 ```
-`zugobon vezebel dedonen.`
+`zugobon vuwurul dedonen.`
 
 gloss: `z-speaker` · `v-write` · `d-listener`
 
@@ -56,9 +56,9 @@ Person roles default to **-n** (definite specials). Soft **-m** hedges the role 
 ```
 (Ululon speaking) `zululon vawalal.`
 
-gloss: `z-Ululon` · `v-walk`
+gloss: `z-courage@` · `v-walk`
 
-*I go.* Ululon names himself rather than saying *I*.
+*I walk.* Ululon names himself rather than saying *I*.
 ```
 
 ```
@@ -66,7 +66,7 @@ gloss: `z-Ululon` · `v-walk`
 
 gloss: `z-speaker` · `v-walk`
 
-*I go.*
+*I walk.*
 ```
 
 ```
@@ -74,7 +74,7 @@ gloss: `z-speaker` · `v-walk`
 
 gloss: `z-interlocutors` · `v-walk`
 
-*We (you and I) go.*
+*We (you and I) walk.*
 ```
 
 **`enenu`** is a nonspecific **individual**. Once someone is on the table, resume them with content **-r**.
@@ -82,9 +82,9 @@ gloss: `z-interlocutors` · `v-walk`
 **`adoro`** is the placeholder for the material that **immediately follows** ([dependent clauses](core.md#dependent-clauses)). Put **`adoro` last** in its host slot; the dependent follows with no intervening host words. Same speech act as the main sentence: the dependent may omit `/j/`. A different speech act needs its own act word.
 
 ```
-`zugobon vezehel dazawan dadorol zululon vedabul.`
+`zugobon dazawan vezehel dadorol zululon vebarul.`
 
-gloss: `z-speaker` · `v-tell` · `d-grace` · `d-next-clause` · `z-courage` · `v-depart`
+gloss: `z-speaker` · `d-grace@` · `v-tell` · `d-next-clause` · `z-courage@` · `v-depart`
 
 *I told Azawan that Ululon left.*
 ```
@@ -108,20 +108,20 @@ Inclusive *we* is **`aha`**. Speaker **-sh** is “me and my people,” not “y
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `odogo` *dog* · `adara` *dragon* · `abogo` *book* · `awala` *walk* · `aju` *sit* · `elebe` *sleep* · `urunu` *run* · `eje` *see* · `ezehe` *tell* · `edabu` *depart* · `ele` *size* / *big* · `ugobo` *speaker* · `edone` *listener* · `aha` *interlocutors* · `enenu` *generic person* · `adoro` *next clause*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `odogo` *dog* · `adara` *dragon* · `abogo` *book* · `awala` *walk* · `aju` *sit* · `elebe` *sleep* · `urunu` *run* · `eje` *see* · `ezehe` *tell* · `ebaru` *depart* · `ele` *size* / *big* (**-m**) · `ugobo` *speaker* · `edone` *listener* · `aha` *interlocutors* · `enenu` *generic person* · `adoro` *next clause*
 
 #### English → Agalan
 
 **1.** *Azawan walks. He sits.*
 
 ::: details Show answer
-`zazawan vawalal. zazawar vajul.`
+`zazawan vawalal. zazar vajul.`
 :::
 
 **2.** *A dog walks. A book is big. The dog sits.*
 
 ::: details Show answer
-`zodogol vawalal. zabogol gelel. zodogor vajul.`
+`zodogol vawalal. zabogol gelem. zodogor vajul.`
 :::
 
 **3.** *I walk.*
@@ -157,7 +157,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **8.** *I told Azawan that Ululon left.*
 
 ::: details Show answer
-`zugobon vezehel dazawan dadorol zululon vedabul.`
+`zugobon dazawan vezehel dadorol zululon vebarul.`
 :::
 
 #### Agalan → English
@@ -168,7 +168,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Ululon walks. He sits.*
 :::
 
-**2.** `zodogol velebel. zadaral gelel. zadar vawalal.`
+**2.** `zodogol velebel. zadaral gelem. zadar vawalal.`
 
 ::: details Show answer
 *A dog sleeps. A dragon is big. The dragon walks.*
@@ -198,7 +198,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Someone walks.*
 :::
 
-**7.** `zazawan dululon dadorol vezehel zodogol vurunul.`
+**7.** `zazawan dululon vezehel dadorol zodogol vurunul.`
 
 ::: details Show answer
 *Azawan tells Ululon that the dog runs.*
@@ -280,7 +280,7 @@ Prefer **`aha`** when the point is **co-participant role**; prefer name joins wh
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `awala` *walk* · `urunu` *run* · `elebe` *sleep* · `aju` *sit* · `eje` *see* · `uzumu` smile → *happy* (**-m**) · `adaza` *haste* · `aha` *interlocutors* · `ugobo` *speaker* · `edone` *listener*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `awala` *walk* · `urunu` *run* · `elebe` *sleep* · `aju` *sit* · `eje` *see* · `uzumu` smile → *happy* (**-m**) · `adaza` *haste* (**-m**) · `aha` *interlocutors* · `ugobo` *speaker* · `edone` *listener*
 
 #### English → Agalan
 
@@ -311,7 +311,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **5.** *Azawan walks in haste. Ululon runs that way.*
 
 ::: details Show answer
-`zazawan hadazal vawalal. zululon har vurunul.`
+`zazawan hadazam vawalal. zululon hadar vurunul.`
 :::
 
 **6.** *We (you and I) sit.*
@@ -346,13 +346,13 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan sees Ululon. Uhubun sees him.*
 :::
 
-**3.** `xulor vajul.`
+**3.** `xulur vajul.`
 
 ::: details Show answer
 *Going back to Ululon, he sits.*
 :::
 
-**4.** `zazawan hadazal vawalal. zululon har vurunul.`
+**4.** `zazawan hadazam vawalal. zululon hadar vurunul.`
 
 ::: details Show answer
 *Azawan walks in haste. Ululon runs that way.*
@@ -462,7 +462,7 @@ Each subsection is an **antecedent** role; table rows are the **pronoun** role. 
 
 Short drills on this Advanced band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `odogo` *dog* · `awala` *walk* · `urunu` *run* · `aju` *sit* · `elebe` *sleep* · `ele` *size* / *big* · `uzumu` smile → *happy* (**-m**) · `adaza` *haste*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `odogo` *dog* · `awala` *walk* · `urunu` *run* · `aju` *sit* · `elebe` *sleep* · `ele` *size* / *big* (**-m**) · `uzumu` smile → *happy* (**-m**) · `adaza` *haste* (**-m**)
 
 #### English → Agalan
 
@@ -475,7 +475,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 **2.** *A dog walks. That action is big.*
 
 ::: details Show answer
-`zodogol vawalal. zawalar gelel.`
+`zodogol vawalal. zawalar gelem.`
 :::
 
 **3.** *Azawan walks. By doing so, Ululon sits.*
@@ -498,7 +498,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 #### Agalan → English
 
-**1.** `zazawan vawalal. gazar gelel.`
+**1.** `zazawan vawalal. gazar gelem.`
 
 ::: details Show answer
 *Azawan walks. That one's kind is big.*
@@ -516,13 +516,13 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 *Azawan is happy. Ululon does that.*
 :::
 
-**4.** `zazawan hadazal vawalal. zadazar gelel.`
+**4.** `zazawan hadazam vawalal. zadazar gelem.`
 
 ::: details Show answer
 *Azawan walks in haste. That haste is big.*
 :::
 
-**5.** `zodogol vajul. zazawan vogor.`
+**5.** `zodogol vajul. zazawan vodor.`
 
 ::: details Show answer
 *A dog sits. Azawan does that with it.*

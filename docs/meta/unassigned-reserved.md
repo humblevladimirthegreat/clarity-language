@@ -126,8 +126,8 @@ Source: [values.md](../grammar/values.md)
 | Job | Where taught |
 |-----|----------------|
 | Emotion compose | [special-vocabulary.md § Emotion compose](../grammar/special-vocabulary.md#emotion-compose) |
-| COMMENT | [commentary.md § Comment](../grammar/commentary.md#comment) — **`ogugu`** + hold endings |
-| NOTIONAL | [commentary.md § Notional](../grammar/commentary.md#notional) — **`ahade`** |
+| COMMENT | [commentary.md § Comment](../grammar/commentary.md#comment) — **`odoho`** + hold endings |
+| NOTIONAL | [commentary.md § Notional](../grammar/commentary.md#notional) — **`adade`** |
 | DECISION | [plan-decision.md § Decision](../grammar/plan-decision.md#decision) — **`egege`** |
 | PLAN | [plan-decision.md § Plan](../grammar/plan-decision.md#plan-predict) — **`owora`** |
 
