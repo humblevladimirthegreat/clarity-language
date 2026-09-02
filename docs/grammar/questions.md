@@ -1,11 +1,11 @@
 # Questions
 
-How to **ask** in Agalan: question force (**jol** / soft **jom**), yes/no vs fill-ask, multi-gap **fill-all**, and **polar stance** particles (**`jael`** / **`juel`** / …).
+How to **ask** in Agalan: under question (**jol** / soft **jom**), yes/no vs fill-ask, multi-gap **fill-all**, and **polar stance** particles (**`jael`** / **`juel`** / …).
 
 ## Beginner
 <a id="beginner"></a>
 
-### Question force (**jol** / **jom**)
+### Question (**jol** / **jom**)
 <a id="interrogative-force"></a>
 <a id="polar-question"></a>
 
@@ -74,7 +74,7 @@ Every join **-r** under question is a **gap**. The answer is expected to **fill 
 
 Closed **`/j/`** particles are **reaction words**. Shape is **`j` + stacked join vowel + `-l` / `-m`**. They mark a **turn**: left-edge or a bare utterance. These forms take **-l** or **-m**.
 
-**Implied force:** polar **-l** implies **`jal`**; **-m** implies **`jam`**. Prefer **`jael …`** over **`jael jal …`** when a body follows.
+**Implied speech act:** polar **-l** implies **`jal`**; **-m** implies **`jam`**. Prefer **`jael …`** over **`jael jal …`** when a body follows.
 
 | Form | Job | Mnemonic |
 |------|-----|----------|
@@ -102,7 +102,7 @@ These three jobs are distinct:
 
 | System | Forms | Job |
 |--------|-------|-----|
-| Clause force | **`jal`** / **`jul`** | statement vs *don’t…* |
+| Speech act | **`jal`** / **`jul`** | statement vs *don’t…* |
 | Polar stance | **`jael`** / **`juel`** / **`jaol`** | *true* vs *false* vs *I’ll take that* |
 | Denial inside the clause | **`zul`** / **`vul`** / **`xul`** | *not X* / *no* as a join |
 
@@ -244,7 +244,7 @@ The **-l** ending holds the stance exactly; **-m** is the soft twin of each row:
 - **Confirm tag:** second bare turn after `.` ([left-edge rules](core.md#left-edge-order-and-sentence-boundaries))
 - **Monologue self-turn:** `juel` before correction; `jaol` before next step; `jael` after locking a point
 
-Same-force continuation after a polar+body beat uses **`/x/`**. Use another polar particle only when you take a **new** stance turn.
+Continuation under the same speech act after a polar+body beat uses **`/x/`**. Use another polar particle only when you take a **new** stance turn.
 
 Ordinary answers use **`juel`** / **`juol`**. Use **`jual`** / **`juam`** for a hard refusal of the whole frame. Deny *inside* the clause with **`xul`** / **`vul`** / **`zul`**.
 
@@ -528,7 +528,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 `jol zael.`
 :::
 
-**5.** *Don’t run.* (prohibition force, not polar *no*)
+**5.** *Don’t run.* (prohibition, not polar *no*)
 
 ::: details Show answer
 `jul vurunul.`
@@ -568,6 +568,6 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 ## See also
 
-- [core.md](core.md#utterance-markers-j): turn vs continue; clause force
+- [core.md](core.md#utterance-markers-j): turn vs continue; speech act
 - [coordination.md](coordination.md): join fences; statement readings of **-r** / focus / bare
 - [pronouns.md](pronouns.md): content anaphor **-r** (fill-ask is join **-r**)

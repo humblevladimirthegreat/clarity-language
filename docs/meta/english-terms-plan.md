@@ -255,7 +255,7 @@ Sync [grammar-docs.md](grammar-docs.md) (everyday-English examples still saying 
 
 | Phase | Status |
 |-------|--------|
-| 1 Speech act | not started |
+| 1 Speech act | done |
 | 2 Join arity | not started |
 | 3 Span / range / overlay | not started |
 | 4 Turn, vocative, polar, resume | not started |

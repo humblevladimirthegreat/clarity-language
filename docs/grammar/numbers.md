@@ -428,7 +428,7 @@ Endings still apply (**-m** ≈ *about* that many times / that clock or date, **
 #### Number as interjection (by marker)
 <a id="number-as-interjection-by-marker"></a>
 
-`/j/` + number is an **interjection** (expressive call-out). Statement/ask force stays the closed set in the [utterance-marker section](core.md#clause-force). Number cheers sit in the left-edge `/j/` cluster (before force, when a clause follows) or as a bare utterance with no force.
+`/j/` + number is an **interjection** (expressive call-out). Statement/ask speech act stays the closed set in the [utterance-marker section](core.md#speech-act). Number cheers sit in the left-edge `/j/` cluster (before the act word, when a clause follows) or as a bare utterance with no act word.
 
 | Marker | Writing | Interjection sense |
 |--------|---------|-------------------|

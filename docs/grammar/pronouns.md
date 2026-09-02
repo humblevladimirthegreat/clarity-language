@@ -79,7 +79,7 @@ gloss: `z-interlocutors` · `v-walk`
 
 **`enenu`** is a nonspecific **individual**. Once someone is on the table, resume them with content **-r**.
 
-**`adoro`** is the placeholder for the material that **immediately follows** ([dependent clauses](core.md#dependent-clauses)). Put **`adoro` last** in its host slot; the dependent follows with no intervening host words. Same speech act as the main sentence: the dependent may omit `/j/`. A different speech act needs its own force word.
+**`adoro`** is the placeholder for the material that **immediately follows** ([dependent clauses](core.md#dependent-clauses)). Put **`adoro` last** in its host slot; the dependent follows with no intervening host words. Same speech act as the main sentence: the dependent may omit `/j/`. A different speech act needs its own act word.
 
 ```
 `zugobon vezehel dazawan dadorol zululon vedabul.`

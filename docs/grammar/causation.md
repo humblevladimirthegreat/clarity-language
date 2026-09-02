@@ -206,7 +206,7 @@ When the condition or outcome is a **full sentence**, prefer a dependent clause 
 main sentence …  hadorom / hezazem / hurugum  badorol   [dependent sentence]
 ```
 
-**`adoro`** ([next-clause pronoun](pronouns.md#special-pronouns)) sits **last in the main sentence**. The dependent is a full sentence (give it its own force word only if the speech act differs). See [dependent clauses](core.md#dependent-clauses).
+**`adoro`** ([next-clause pronoun](pronouns.md#special-pronouns)) sits **last in the main sentence**. The dependent is a full sentence (give it its own act word only if the speech act differs). See [dependent clauses](core.md#dependent-clauses).
 
 ### `IF` vs `IFF` vs `BECAUSE`
 <a id="if-vs-iff"></a>

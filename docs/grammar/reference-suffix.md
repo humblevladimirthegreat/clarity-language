@@ -256,7 +256,7 @@ A **named circumstance, channel, or standard** framing the clause. Aligns with [
 |----------|---------|
 | **Vocatives** | address by name (`jazawan`). Kind-based address (*everyone*) stays **-l**; titled group (*Team Alpha*) takes **-n**. |
 | **Interjections** | Mostly **-l** / **-m**. Use **-n** for a named formula (**[Amen]**, branded catchphrases). Closed [yes/no polarity](questions.md#yes-no-polarity) particles use **-l** / **-m**. |
-| **Clause force** | Closed **`jal` / `jol` / …** set ([clause force](core.md#clause-force)). |
+| **Speech act** | Closed **`jal` / `jol` / …** set ([speech act](core.md#speech-act)). |
 
 #### Discourse markers (`/x/`): overview
 <a id="discourse-markers-x"></a>

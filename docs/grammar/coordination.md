@@ -455,7 +455,7 @@ Apply these readings when the join stands by itself (empty list).
 
 Focus/bare is also allowed on verb-phrase **…ul** / **…um** and clause **…ul** / **…um** / **…un** among joins. **`vun`** is a [join-act verb](join-extras.md#join-act-verbs).
 
-Under [question](questions.md#interrogative-force) force: yes/no, offer, emptiness check, and fill-ask — [questions.md](questions.md#yes-no-unary-nullary).
+Under [question](questions.md#interrogative-force): yes/no, offer, emptiness check, and fill-ask — [questions.md](questions.md#yes-no-unary-nullary).
 
 ### Rank joins
 <a id="ranked-conjunction-e"></a>
@@ -640,7 +640,7 @@ VP `/v/`…**-n** spellings are [join-act verbs](join-extras.md#join-act-verbs).
 - `/h/` in SHARED after the join → shared over every item.
 - `/h/` inside an item → that verb phrase only.
 
-**Clause-level** — `/x/` is **same-force continuation**. Non-initial items **inherit** opener force and omit `/j/` (including recoverable **`jal`**). One speech act for the whole fence.
+**Clause-level** — `/x/` is **same-speech-act continuation**. Non-initial items **inherit** the opener speech act and omit `/j/` (including recoverable **`jal`**). One speech act for the whole fence.
 
 ```
 `A B C xan.`

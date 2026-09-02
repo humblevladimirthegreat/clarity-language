@@ -158,7 +158,7 @@ Usual sources (prefer one; reuse the language’s own systems):
 | Source | When |
 |--------|------|
 | **Metaphorical / lexicon sense** | Closed roots and overlays (`amala` ➡️ *east* → *therefore*; **`SAME`**, **`COMMENT`**, …) |
-| **Vowel series** | Join / force / polar stacks that share letter jobs (`a` inventory, `o` menu, `e` rank, `u` negation, …) |
+| **Vowel series** | Join / speech act / polar stacks that share letter jobs (`a` inventory, `o` menu, `e` rank, `u` negation, …) |
 | **Ending letters** | **-l** / **-m** / **-n** / **-r** (and stance endings) when the ending *is* the lesson |
 
 One short cue is enough (table column, parenthetical, or a line under the rule). Do not invent a second mnemonic system beside metaphor, vowels, and endings when those already explain the form.
@@ -180,7 +180,7 @@ Do **not** assume the reader knows linguistics jargon. Write for a motivated lea
 |----|--------|
 | Prefer everyday English for the job (*statement*, *ask*, *main clause*, *at the end of…*) | Lead with bare terms like *assertoric*, *illocution*, *matrix-final*, *predicative*, *prosody*, *paradigm* |
 | If a short technical label helps later cross-links, **define it in the same breath** on first use | Use the label alone and hope context teaches it |
-| Keep Agalan-invented labels that the page is teaching (`clause force`, *turn* vs *continue*) and gloss them once | Stack several undefined jargon words in one sentence |
+| Keep Agalan-invented labels that the page is teaching (`speech act`, *turn* vs *continue*) and gloss them once | Stack several undefined jargon words in one sentence |
 | School-grammar words (*subject*, *direct object*, *adverb*) are fine when the English job is clear | Pack morphosyntax shorthand (*zero-copula*, *right-bound*, *adjunct*, *complement clause*) without a plain gloss |
 
 **Test:** would a careful reader who never took a linguistics class still get the rule from the first paragraph and the example? If not, rewrite the lead in plain words and demote the technical term to a parenthetical or a later Intermediate note.
@@ -194,7 +194,7 @@ Stable section ids and cross-doc anchor names may keep older technical wording (
 | Minimal clause that shows *only* the new point | Kitchen-sink showcases in Beginner |
 | Published roots when the gloss matches; `PoS<…>ENDING` for donor spelling | Invented “lexicon-shaped” stems, a closed overlay with its own frozen spelling, or split/hyphenated PoS tokens in learner text |
 | Named [house people](#house-cast) when the clause needs a person | Default *I* / *you* (`zugobon` / `zebonen`) as dummy subjects |
-| Omit recoverable **`jal`** when the page is not teaching force | Leading every example with **`jal`** by habit |
+| Omit recoverable **`jal`** when the page is not teaching the speech act | Leading every example with **`jal`** by habit |
 | Morph gloss + **loose** free English by default ([glosses.md](glosses.md)) | Merging free English into the morph gloss |
 | Strict free English only when teaching packaging | Strict-only Beginner pages |
 | A negative / **Not this** only for an **expected** learner mistake | Listing “no X” or a counter-example column by habit |

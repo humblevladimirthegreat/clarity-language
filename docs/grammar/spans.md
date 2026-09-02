@@ -89,12 +89,12 @@ gloss: `j-command` · `z-courage` · `v-[sing]` · `d-grace`
 
 An **aside** is a parenthetical comment packaged as an **adverb**. Write **`h(`** … **`)`**. The outer slot is `/h/`, so the whole fence sits anywhere an adverb may sit.
 
-The interior is ordinary Agalan. It may be a fragment or a same-force clause body:
+The interior is ordinary Agalan. It may be a fragment or a same-speech-act clause body:
 
 | Interior | Example | Reading |
 |----------|---------|---------|
 | Fragment (one word or a short stretch) | `zazawan vawalal h(zuzumum).` | *Azawan walks (happily).* |
-| Same-force clause body | `zazawan vawalal h(zululon velebel).` | *Azawan walks (Ululon sleeps).* |
+| Same-speech-act clause body | `zazawan vawalal h(zululon velebel).` | *Azawan walks (Ululon sleeps).* |
 
 Interior words keep **their** role letters. The fence is the adverb. A one-word manner comment with nothing to package is a plain adverb: `zazawan vawalal huzumum.`
 
@@ -276,7 +276,7 @@ TYPE uses **a** / **e** / **o** / **u**.
 | TYPE | Role | Writing | Mnemonic |
 |------|------|---------|----------|
 | **a** | **cite** — cited wording; clausal interiors: outer speaker does **not** assert | `[` … `]` | **a** add → cite |
-| **e** | **aside** — `/h/` digression; outer speaker **does** assert; interior may be a fragment or a same-force clause body | `h(` … `)` | **e** order → aside |
+| **e** | **aside** — `/h/` digression; outer speaker **does** assert; interior may be a fragment or a same-speech-act clause body | `h(` … `)` | **e** order → aside |
 | **o** | **mention** — the word or form as object; with **-n**, named unit | `{` … `}` | **o** one → mention |
 | **u** | **opaque** — foreign / code / raw blob; interior is not native Agalan | `<` … `>` | **u** undo → opaque |
 
@@ -290,7 +290,7 @@ The vowel **after** `x` is **EDGE**: how far the open runs.
 | EDGE | Job | Needs close? | Typical writing |
 |------|-----|--------------|-----------------|
 | **a** | **Multi-token open** — push a stack frame until explicit close (default) | yes | `d[…]` … `]` |
-| **e** | **Clause-scoped** — auto-pop before the next clause-force `/j/` or clause-level `/x/` join (**complete**) | no (auto) | `d[…` run to clause end |
+| **e** | **Clause-scoped** — auto-pop before the next speech-act `/j/` or clause-level `/x/` join (**complete**) | no (auto) | `d[…` run to clause end |
 | **o** | **Atomic** — exactly **one** following token | no | `d[uzunu]`, `d<sushi>` |
 | **u** | **Empty / redacted** — no interior; also **anaphor** **-r** | no | `d[]`, `d[=]` |
 
@@ -388,7 +388,7 @@ gloss: `z-grace` · `^` · `z-courage` · `zal` · `^` · `zam` · `v-see`
 | Need | Use |
 |------|-----|
 | Nested packaging / wording fidelity / opaque | typed [span fences](#writing) |
-| Whole-clause soft assert | **`jam`** — [clause force](core.md#clause-force) |
+| Whole-clause soft assert | **`jam`** — [speech act](core.md#speech-act) |
 | Single-adjective frame | `/w/` on that `/ɡ/` |
 | Join over only part of a same-slot stretch | put that join **inside** `^ … ^` |
 

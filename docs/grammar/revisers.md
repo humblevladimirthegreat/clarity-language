@@ -321,8 +321,8 @@ Same spellings, same vowel meanings, four places:
 
 | Placement | Shape | Speech act |
 |-----------|-------|------------|
-| Before a written turn marker | `(vocative)* (interjection)* REV force BODY` | The written **`jal`** / **`jol`** / … |
-| Before a default-statement body | `REV BODY` | Implied **`jal`** / **`jam`** ([core.md](core.md#clause-force)) |
+| Before a written turn marker | `(vocative)* (interjection)* REV act-word BODY` | The written **`jal`** / **`jol`** / … |
+| Before a default-statement body | `REV BODY` | Implied **`jal`** / **`jam`** ([core.md](core.md#speech-act)) |
 | Non-initial clause under `/x/` | `… REV BODY … JOIN` | Same as the opener |
 | Before an `/x/` linker | `REV LINKER BODY` | Same as prior talk |
 

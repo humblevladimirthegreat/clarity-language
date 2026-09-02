@@ -6,7 +6,7 @@ Four vowels keep the **same jobs** across tables. The **prefix** tells you which
 ## Beginner
 <a id="beginner"></a>
 
-You already use them on clause force: **`jal`** statement, **`jol`** question, **`jel`** command, **`jul`** *don’t*.
+You already use them on the speech act: **`jal`** statement, **`jol`** question, **`jel`** command, **`jul`** *don’t*.
 
 **`a`** add, **`o`** one, **`e`** order, **`u`** undo. Read the prefix to pick the table; the vowel is the move.
 
@@ -24,7 +24,7 @@ gloss: `j-question` · `z-Azawan` · `g-dog`
 
 *Is Azawan a dog?*
 
-| Vowel | Job (every table) | Mnemonic | Force you know |
+| Vowel | Job (every table) | Mnemonic | Speech act you know |
 |-------|-------------------|----------|----------------|
 | **`a`** | add / include / inventory / hold | add | **`jal`** statement |
 | **`o`** | one-choice / menu / instead | one | **`jol`** question |
@@ -33,4 +33,4 @@ gloss: `j-question` · `z-Azawan` · `g-dog`
 
 ## See also
 
-- Clause force: [core.md](core.md#clause-force-beginner)
+- Speech act: [core.md](core.md#speech-act-beginner)
