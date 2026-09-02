@@ -280,7 +280,7 @@ TYPE uses **a** / **e** / **o** / **u**.
 | **o** | **mention** — the word or form as object; with **-n**, named unit | `{` … `}` | **o** one → mention |
 | **u** | **opaque** — foreign / code / raw blob; interior is not native Agalan | `<` … `>` | **u** undo → opaque |
 
-A native office **handle** refers with ordinary **-n** (`zabulon`): [named handles](reference-suffix.md#named-handles). Mention `{abulo}` is that **form**; opaque / loan is a **foreign** acronym’s surface (`z<FBI>n`).
+A native office **handle** refers with ordinary **-n** (`zabogon`): [named handles](reference-suffix.md#named-handles). Mention `{abogo}` is that **form**; opaque / loan is a **foreign** acronym’s surface (`z<FBI>n`).
 
 ### EDGE (extent)
 <a id="edge"></a>
@@ -396,7 +396,7 @@ gloss: `z-grace@` · `^` · `z-courage@` · `z-and` · `^` · `z-and.open` · `v
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Test spoken opens (TYPE / EDGE / ending), an explicit **`xuxul`** close, nesting, or a **`^ … ^`** island: not only Beginner brackets.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `ezehe` *tell* · `eje` *see* · `urunu` *run* · `arede` *red* · `odogo` *dog* · `agada` *cat* · `abogo` *book* · `elulu` *blue* · `uzumu` *happy* (**-m**) · `abogo`×`ululo` (handle **Abulo**)
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `ezehe` *tell* · `eje` *see* · `urunu` *run* · `arede` *red* · `odogo` *dog* · `agada` *cat* · `abogo` *book* (name **Abogon**) · `elulu` *blue* · `uzumu` *happy* (**-m**)
 
 #### English → Agalan
 
@@ -454,10 +454,10 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zuhubun ^ zagadal zal ^ zam vurunul.`
 :::
 
-**10.** *Azawan said the word “Abulo.”*
+**10.** *Azawan said the word “Abogon.”*
 
 ::: details Show answer
-`zazawan d{abulo} vezehel.`
+`zazawan d{abogo} vezehel.`
 :::
 
 #### Agalan → English
@@ -516,10 +516,10 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan walks (happily).*
 :::
 
-**10.** `zazawan d{abulo} vezehel.`
+**10.** `zazawan d{abogo} vezehel.`
 
 ::: details Show answer
-*Azawan said the word “Abulo.”*
+*Azawan said the word “Abogon.”*
 :::
 
 ## Advanced

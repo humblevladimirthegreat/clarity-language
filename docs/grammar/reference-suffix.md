@@ -207,19 +207,19 @@ Adjacent bare same-role words (`zodunan zalanen`) are two people in a [join](coo
 #### Named handles
 <a id="named-handles"></a>
 
-A long official title (bureau, act, titled group) may also have a **handle**: one short root plus **-n**. The handle is an ordinary proper name. First mention may be the handle alone.
+A long official title (bureau, act, titled group) may also have a **handle**: one published root plus **-n**, the same as any proper name. First mention may be the handle alone.
 
 | Form | Shape | Example | Job |
 |------|--------|---------|-----|
-| **Handle** | one root + **-n** | `zabulon` | default talk, including first mention |
+| **Handle** | one root + **-n** | `zabogon` | default talk, including first mention |
 | **Long title** | phrasal proper (`ROOT x ROOT` … + **-n**) | `zabogoxululon` | full legal / ceremonial name of the same office |
 
 ```
-`zabulon vawalal.`
+`zabogon vawalal.`
 
-gloss: `z-book-x-courage@` · `v-walk`
+gloss: `z-book@` · `v-walk`
 
-*Abulo walks.* (office handle on first mention)
+*Abogon walks.* (office handle on first mention)
 ```
 
 ```
@@ -230,9 +230,9 @@ gloss: `z-book-x-courage@`
 *Book-Courage* (full title of that office)
 ```
 
-Resume the handle like any name. If its letter-pronoun (through the 2nd vowel) would pick the wrong antecedent, use the **full root** + **-r** (`zabulur`).
+Resume the handle like any name. If its letter-pronoun (through the 2nd vowel) would pick the wrong antecedent, use the **full root** + **-r** (`zabogor`).
 
-The office as referent takes **-n** in a noun slot (`zabulon`). A [mention](spans.md#loans) packages the **form** (`z{abulo}` = *the word Abulo*). Foreign letter-names stay loans or opaque spans (`z<FBI>n`). How institutions **coin** a handle from a long title is Advanced ([named handle](#named-handle-coinage)).
+The office as referent takes **-n** in a noun slot (`zabogon`). A [mention](spans.md#loans) packages the **form** (`z{abogo}` = *the word Abogon*). Foreign letter-names stay loans or opaque spans (`z<FBI>n`).
 
 #### Verbs (`/v/`)
 
@@ -296,7 +296,7 @@ In [number words](numbers.md), the same four letters have **number-specific** me
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. The point is **-n** as a title on any role letter, one **`x`-compound** name, or an office **handle**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `abogo` *book* · `elulu` *blue* · `awala` *walk* · `urunu` *run* · `uzunu` *sing* · `eje` *perception* (*see*) · `uwuru` *write* · `adaza` *haste* · `oduna`×`alane` (name **Odunaxalanen**) · `uzuzu`×`ogove` (label **Sushi-Coffee**) · `abogo`×`ululo` (title **Book-Courage**, handle **Abulo**)
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `abogo` *book* (name **Abogon**) · `elulu` *blue* · `awala` *walk* · `urunu` *run* · `uzunu` *sing* · `eje` *perception* (*see*) · `uwuru` *write* · `adaza` *haste* · `oduna`×`alane` (name **Odunaxalanen**) · `uzuzu`×`ogove` (label **Sushi-Coffee**) · `abogo`×`ululo` (title **Book-Courage**)
 
 #### English → Agalan
 
@@ -348,10 +348,10 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zazawan glelulun dabogol vejel.`
 :::
 
-**9.** *Abulo walks.* (office handle, first mention)
+**9.** *Abogon walks.* (office handle, first mention)
 
 ::: details Show answer
-`zabulon vawalal.`
+`zabogon vawalal.`
 :::
 
 **10.** *Azawan sees Book-Courage.* (that office’s full title)
@@ -410,88 +410,16 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan sees the Blue book* (named style, adjective before the noun).
 :::
 
-**9.** `zabulon vawalal.`
+**9.** `zabogon vawalal.`
 
 ::: details Show answer
-*Abulo walks.* (office handle)
+*Abogon walks.* (office handle)
 :::
 
 **10.** `zazawan dabogoxululon vejel.`
 
 ::: details Show answer
 *Azawan sees Book-Courage.* (full title)
-:::
-
-## Advanced
-<a id="advanced"></a>
-
-### Named handle (from a long title)
-<a id="named-handle-coinage"></a>
-
-Institutions mint a native handle from the long title’s **content roots** (skip joins, revisers, and number words). The result must be one legal `V(CV)+` root, then **-n** in use.
-
-| Step | Do |
-|------|----|
-| 1 | From each content root, take **first vowel + next consonant** (`abogo` → `ab`, `alodo` → `al`, `ululo` → `ul`) |
-| 2 | Concatenate those pieces **without** mid-word **`x`** |
-| 3 | If the string ends in a consonant, add the **last root’s 2nd vowel** (the same cut as a [short resume](pronouns.md)) |
-| 4 | If that root already names something else, **lengthen** (include the next vowel of a distinctive root) |
-
-```
-`abogo` × `ululo` → `ab` + `ul` + `o` → `abulo` → `zabulon`
-```
-
-```
-`abogo` × `alodo` × `ululo` → `ab` + `al` + `ul` + `o` → `abalulo` → `zabalulon`
-```
-
-Hearers treat the handle as a **name**. You do not need to unpack the long title while listening. Foreign acronyms stay loans / opaque spans; they do not use this harvest.
-
-### Translation practice
-<a id="translation-practice-advanced"></a>
-
-Short drills on this Advanced band. Try each item before opening **Show answer**. Coin a handle from the title roots, or use that handle as a name.
-
-**Roots used here:** `abogo` *book* · `ululo` *courage* · `alodo` *choice* · `azawa` *grace* (name **Azawan**) · `awala` *walk* · `eje` *see*
-
-#### English → Agalan
-
-**1.** Citation form of the handle for *book* × *courage*.
-
-::: details Show answer
-`abulon`
-:::
-
-**2.** *Abalulo walks.* (three-root harvest: book × choice × courage)
-
-::: details Show answer
-`zabalulon vawalal.`
-:::
-
-**3.** *Azawan sees Abulo.*
-
-::: details Show answer
-`zazawan dabulon vejel.`
-:::
-
-#### Agalan → English
-
-**1.** `abulon`
-
-::: details Show answer
-*Abulo* (handle coined from *book* × *courage*, cited)
-:::
-
-**2.** `zabalulon vawalal.`
-
-::: details Show answer
-*Abalulo walks.*
-:::
-
-**3.** `zazawan dabulon vejel.`
-
-::: details Show answer
-*Azawan sees Abulo.*
 :::
 
 ## See also

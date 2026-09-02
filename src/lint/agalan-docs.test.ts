@@ -68,6 +68,7 @@ describe("lintAgalanToken", () => {
       { clarity: "azawa", literal: "dog" },
       { clarity: "uzumu", literal: "happy" },
       { clarity: "egera", literal: "ability" },
+      { clarity: "ululo", literal: "courage" },
     ],
   });
 
@@ -104,7 +105,11 @@ describe("lintAgalanToken", () => {
     assert.equal(word?.kind, "unknown-root");
     const bare = lintAgalanToken("ububu", tables);
     assert.equal(bare?.kind, "unknown-root");
-    assert.equal(lintAgalanToken("zububun", tables), null);
+    const named = lintAgalanToken("zububun", tables);
+    assert.equal(named?.kind, "unknown-root");
+    assert.equal(lintAgalanToken("zazawaxululon", tables), null);
+    const title = lintAgalanToken("zazawaxububun", tables);
+    assert.equal(title?.kind, "unknown-root");
   });
 });
 

@@ -108,7 +108,7 @@ Same English label for `zugobom` and `zugobon` is fine: both are the *speaker* s
 - **english** — short English label for the **active** sense (hyphens OK inside a label: `next-clause`, `or-exactly-one`). **No** Agalan root letters.
 - **`-x-`** — mid-word compound / stance / role / span hinge; each piece is English (or a stable TAG).
 - **-l / -m / -n** — **omit** when they only choose which sense-root is in play (the usual content-word case). Named reference **-n** is **`@`**, not the letters `-n`.
-- **`@`** — append when **-n** is **named reference** (house-cast, coined handles, `PoS<…>n`, phrasal names). Do **not** add `@` when **-n** only selected a special or overlay sense (`zugobon` → `z-speaker`, `zahan` → `z-interlocutors`) or when join **-n** is a join ending (`van`, `xan`).
+- **`@`** — append when **-n** is **named reference** (house-cast, office handles, `PoS<…>n`, phrasal names). Do **not** add `@` when **-n** only selected a special or overlay sense (`zugobon` → `z-speaker`, `zahan` → `z-interlocutors`) or when join **-n** is a join ending (`van`, `xan`).
 - **-sh** — append `-sh` after `@` if both apply (`z-grace@-sh`). Use `-sh` when the written word has associative / address-set / collective **-sh** (`z-speaker-sh`, `z-listener-sh`).
 - **Prefix-less** revisers: English only — `instead`, `rather`, `additionally` (no fake PoS).
 
@@ -172,7 +172,7 @@ Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) —
 | Span open / close | `hexal` … `xuxul` | `h-aside-x-multi` · … · `x-span-close` |
 | Number / enumeration | `x#e-` | `x-starting-with` |
 
-For **phrasal proper names**, gloss each root with the sense **chosen for the label** (why those roots were picked), then **`@`**. Do not put the Agalan clip in the english slot (`z-Abulo`). A harvested handle still glosses the title senses plus `@`.
+For **phrasal proper names**, gloss each root with the sense **chosen for the label** (why those roots were picked), then **`@`**. Do not put the Agalan clip in the english slot (`z-Azawan`).
 
 ### Underspecification and joins
 

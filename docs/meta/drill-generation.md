@@ -237,7 +237,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 3 | `core.md` | Intermediate | **exists** | **`jam`/`jom`/`jem`/`jum`**; **`gl-`**; adverb topic `/h/`+`/b/`; complex chaining; `/x/` linkers (`xezazal`, `xezebal`, …); nested **`adoro`**; number-as-interjection pointer only if the band’s examples already show it | Do not require numbers Intermediate readings |
 | 3 | `core.md` | Advanced | skip | weak-pause cues | recognition |
 | 6 | `reference-suffix.md` | Intermediate | **exists** | **-n** on any PoS (titled verb/adjective/adverb); phrasal proper names `ROOTxROOT`+**-n**; office **handles** as first-mention **-n** | Not value/ability/plan ending tables |
-| 6 | `reference-suffix.md` | Advanced | **exists** | **Named handle** (VC harvest from title roots) | 4–6 items |
+| 6 | `reference-suffix.md` | Advanced | skip | — | no Advanced band |
 | 7 | `pronouns.md` | Intermediate | **exists** | English approximations of **-r**; `/x/`…`-r` thread resume vs `/h/` aboutness; **`aha`** vs name join vs name…**-sh** | |
 | 7 | `pronouns.md` | Advanced | **exists** | Cross-role recast (one or two PoS flips, not the whole grid) | 4–6 items |
 | 7 | `plurality.md` | Intermediate | **exists** | Associate resolution; verb collective; collective `/ɡ/`…**-sh**; vocative **-sh** | |

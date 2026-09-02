@@ -169,13 +169,6 @@ function lexiconRoots(word: MorphWord): string[] {
 }
 
 function unknownLexiconRoots(word: MorphWord, known: ReadonlySet<string>): string[] {
-  // Coined proper names (**-n**) are allowed off-lexicon (named handles).
-  if (word.ending === "n" && word.family.kind === "content") {
-    return [];
-  }
-  if (word.ending === "n" && word.family.kind === "x" && word.family.xFamily === "compound") {
-    return [];
-  }
   return lexiconRoots(word).filter((root) => root.length >= 3 && !known.has(root));
 }
 
