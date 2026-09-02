@@ -43,7 +43,7 @@ Each dictionary sense is one entry. Related senses across fields use an explicit
 ## How to learn from these docs
 <a id="how-to-learn"></a>
 
-Grammar pages use **Beginner** / **Intermediate** / **Advanced** sections so you can finish all Beginner material across this folder before Intermediate, then Advanced.
+Grammar pages use **Beginner** / **Intermediate** / **Advanced** sections so you can finish all Beginner material across this folder before Intermediate, then Advanced. Not every page has every difficulty section, so skip that page if it doesn't have the difficulty you are currently on.
 
 Follow the **Suggested reading order** in the site sidebar (same sequence on every page). Read each page’s Beginner section in that order, then every peer’s Intermediate, then Advanced.
 
