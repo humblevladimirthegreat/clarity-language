@@ -1,4 +1,4 @@
-# Glossary
+# Terminology
 
 English names these grammar pages use. Each entry is a short gloss plus a link to the teaching section. The teaching page is the source of truth for how the form works.
 

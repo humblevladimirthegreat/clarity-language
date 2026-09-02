@@ -47,7 +47,7 @@ Grammar pages use **Beginner** / **Intermediate** / **Advanced** sections so you
 
 Follow the **Suggested reading order** in the site sidebar (same sequence on every page). Read each page’s Beginner section in that order, then every peer’s Intermediate, then Advanced.
 
-The sidebar **Tools** list includes a [Glossary](glossary.md) of the English names these pages use for grammar (with a short gloss and a link to the teaching section), plus Lexicon and Gloss for roots and interlinear.
+The sidebar **Tools** list includes [Terminology](terminology.md) for the English names these pages use for grammar (with a short gloss and a link to the teaching section), plus Lexicon and Gloss for roots and interlinear.
 
 Continue with [core.md](core.md#beginner) for clause shape.
 

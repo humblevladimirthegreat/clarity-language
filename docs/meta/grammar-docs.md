@@ -16,7 +16,7 @@ Related meta:
 | [unassigned-reserved.md](unassigned-reserved.md) | Unused-slot / unassigned-form inventory (editors only — not linked from grammar) |
 | [proposals.md](proposals.md) | `docs/proposals/` layout; **do not link to** proposal pages (editors only — not linked from grammar) |
 
-Learner English names for constructions live on [glossary.md](../grammar/glossary.md) (Tools). Teaching pages use those names in place; they do **not** link to glossary entries (How to learn may point at the page).
+Learner English names for constructions live on [terminology.md](../grammar/terminology.md) (Tools). Teaching pages use those names in place; they do **not** link to terminology entries (How to learn may point at the page).
 
 ## Dual role
 
