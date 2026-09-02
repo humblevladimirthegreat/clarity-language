@@ -81,11 +81,16 @@ function rewriteWhitespaceTokens(
   });
 }
 
-function scanMarkdown(
+/**
+ * Walk Markdown, rewriting fenced / inline code via `transformCode` and
+ * everything else (including comments and link targets) via `transformProse`.
+ * Link labels are walked with the same pair so nested backticks still count.
+ */
+function transformMarkdown(
   input: string,
-  map: ReadonlyMap<string, string>,
   baseIndex: number,
-  changes: RetieChange[],
+  transformCode: (text: string, index: number) => string,
+  transformProse: (text: string, index: number) => string,
 ): string {
   let out = "";
   let i = 0;
@@ -112,12 +117,12 @@ function scanMarkdown(
       const closeAt = input.indexOf(`\n${fence}`, openLineEnd);
       if (closeAt < 0) {
         out += input.slice(i, openLineEnd + 1);
-        out += rewriteWhitespaceTokens(input.slice(openLineEnd + 1), map, baseIndex + openLineEnd + 1, changes);
+        out += transformCode(input.slice(openLineEnd + 1), baseIndex + openLineEnd + 1);
         i = input.length;
         continue;
       }
       out += input.slice(i, openLineEnd + 1);
-      out += rewriteWhitespaceTokens(input.slice(openLineEnd + 1, closeAt), map, baseIndex + openLineEnd + 1, changes);
+      out += transformCode(input.slice(openLineEnd + 1, closeAt), baseIndex + openLineEnd + 1);
       const closeEnd = closeAt + 1 + fence.length;
       out += input.slice(closeAt, closeEnd);
       i = closeEnd;
@@ -132,7 +137,7 @@ function scanMarkdown(
         continue;
       }
       out += "`";
-      out += rewriteWhitespaceTokens(input.slice(i + 1, close), map, baseIndex + i + 1, changes);
+      out += transformCode(input.slice(i + 1, close), baseIndex + i + 1);
       out += "`";
       i = close + 1;
       continue;
@@ -146,7 +151,12 @@ function scanMarkdown(
           out += "!";
         }
         out += "[";
-        out += scanMarkdown(parsed.label, map, baseIndex + parsed.labelIndex, changes);
+        out += transformMarkdown(
+          parsed.label,
+          baseIndex + parsed.labelIndex,
+          transformCode,
+          transformProse,
+        );
         out += parsed.afterLabel;
         i = parsed.end;
         continue;
@@ -154,11 +164,46 @@ function scanMarkdown(
     }
 
     const next = nextMarkup(input, i);
-    out += rewriteWhitespaceTokens(input.slice(i, next), map, baseIndex + i, changes);
+    out += transformProse(input.slice(i, next), baseIndex + i);
     i = next;
   }
 
   return out;
+}
+
+function scanMarkdown(
+  input: string,
+  map: ReadonlyMap<string, string>,
+  baseIndex: number,
+  changes: RetieChange[],
+): string {
+  const rewrite = (text: string, index: number) =>
+    rewriteWhitespaceTokens(text, map, index, changes);
+  return transformMarkdown(input, baseIndex, rewrite, rewrite);
+}
+
+export type MarkdownCodeToken = {
+  chunk: string;
+  index: number;
+};
+
+/** Whitespace tokens inside inline backticks and fenced code (not prose, comments, or URLs). */
+export function forEachMarkdownCodeToken(
+  input: string,
+  visit: (token: MarkdownCodeToken) => void,
+): void {
+  transformMarkdown(
+    input,
+    0,
+    (text, index) => {
+      text.replace(/[^\s]+/g, (chunk, offset: number) => {
+        visit({ chunk, index: index + offset });
+        return chunk;
+      });
+      return text;
+    },
+    (text) => text,
+  );
 }
 
 function parseInlineLink(

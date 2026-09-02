@@ -101,6 +101,10 @@ WS = [ \t\n\r]+
 
 EOF = !.
 
+WordEnd = &(WS / EOF)
+
+NumberBodyEnd = &(Ending / WS / EOF)
+
 Word
   = spanClose
   / writingSpan
@@ -153,10 +157,10 @@ BracketedPayload
 // ── Free number words (writing + speech) ────────────────────────────────────
 
 freeNumber
-  = pos:Pos mark:WritingEndingMark? stem:WritingNumberStem {
+  = pos:Pos mark:WritingEndingMark? stem:WritingNumberStem ending:Ending? {
       return makeWord(text(), {
         pos,
-        ending: endingFromWritingMark(mark, "l"),
+        ending: endingFromWritingMark(mark, ending || "l"),
         family: numberFamily(stem, mark || undefined),
       });
     }
@@ -189,11 +193,13 @@ WritingMarker
   = "#-" / "#" / "+" / "-" / "_"
 
 WritingNumberBody
-  = digitless:WritingDigitlessExp {
+  = digitless:WritingDigitlessExp NumberBodyEnd {
       return { groups: [], digitlessExp: digitless };
     }
-  / head:WritingDigitGroup tail:("," g:WritingDigitGroup { return g; })* {
-      return { groups: [head, ...tail] };
+  / head:WritingDigitGroup tail:("," g:WritingDigitGroup { return g; })* digitless:WritingDigitlessExp? NumberBodyEnd {
+      const out = { groups: [head, ...tail] };
+      if (digitless) out.digitlessExp = digitless;
+      return out;
     }
 
 WritingDigitGroup
@@ -245,7 +251,9 @@ WritingDigitlessExp
   / "0e" { return "0e"; }
   / "1e-" { return "1e-"; }
   / "1e" { return "1e"; }
+  / "e-" digits:Digit+ { return "e-" + digits.join(""); }
   / "e-" { return "e-"; }
+  / "e" digits:Digit+ { return "e" + digits.join(""); }
   / "e" { return "e"; }
 
 Digit = [0-9]
@@ -334,7 +342,7 @@ PoslessNumberStem
 // ── Revisers (prefix-less; ending required; no -r / -sh) ─────────────────────
 
 reviser
-  = form:ReviserForm {
+  = form:ReviserForm WordEnd {
       return makeWord(form, {
         ending: form.charAt(1),
         family: { kind: "reviser", form },
@@ -382,6 +390,7 @@ xWord
 SpanOpen
   = typeV:[aeou] "x" edgeV:[aeou] ending:Ending plural:PluralSuffix?
     &{ return spanOpenLegal(edgeV, ending); }
+    WordEnd
     {
       return {
         ending,
@@ -395,7 +404,7 @@ SpanOpen
     }
 
 RoleCompound
-  = roleV:("a" / "u" / "o") "x" root:ContentRoot ending:Ending plural:PluralSuffix? {
+  = roleV:("a" / "u" / "o") "x" root:ContentRoot ending:Ending plural:PluralSuffix? WordEnd {
       return {
         ending,
         plural: !!plural,
@@ -408,7 +417,7 @@ RoleCompound
     }
 
 ValueAbilityCompound
-  = host:ContentRoot "x" stanceV:[aeou] ending:Ending plural:PluralSuffix? {
+  = host:ContentRoot "x" stanceV:[aeou] ending:Ending plural:PluralSuffix? WordEnd {
       return {
         ending,
         plural: !!plural,
@@ -420,7 +429,7 @@ ValueAbilityCompound
     }
 
 NumericDerivation
-  = host:ContentRoot "x" stem:PoslessNumberStem ending:Ending plural:PluralSuffix? {
+  = host:ContentRoot "x" stem:PoslessNumberStem ending:Ending plural:PluralSuffix? WordEnd {
       return {
         ending,
         plural: !!plural,
@@ -432,7 +441,7 @@ NumericDerivation
     }
 
 OrdinaryCompound
-  = left:ContentRoot "x" right:ContentRoot rest:("x" r:ContentRoot { return r; })* ending:Ending plural:PluralSuffix? {
+  = left:ContentRoot "x" right:ContentRoot rest:("x" r:ContentRoot { return r; })* ending:Ending plural:PluralSuffix? WordEnd {
       return {
         ending,
         plural: !!plural,
@@ -442,7 +451,7 @@ OrdinaryCompound
         }),
       };
     }
-  / left:[aeou] "x" right:[aeou] rest:("x" r:[aeou] { return r; })* ending:Ending plural:PluralSuffix? {
+  / left:[aeou] "x" right:[aeou] rest:("x" r:[aeou] { return r; })* ending:Ending plural:PluralSuffix? WordEnd {
       return {
         ending,
         plural: !!plural,
@@ -459,7 +468,7 @@ ForeignPayload
 // ── Join markers ────────────────────────────────────────────────────────────
 
 joinMarker
-  = series:JoinSeries ending:Ending {
+  = series:JoinSeries ending:Ending WordEnd {
       return {
         ending,
         family: { kind: "joinMarker", series },

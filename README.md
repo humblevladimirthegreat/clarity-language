@@ -17,7 +17,8 @@ Or open the repo in a [Dev Container](.devcontainer/devcontainer.json) (Node 22 
 | `npm run generate:word` | Generate the Stage-1 Peggy word parser from `grammar/word.peggy` |
 | `npm run build` | Regenerate the word parser, then compile TypeScript to `dist/` |
 | `npm run typecheck` | Typecheck without emit |
-| `npm run lint:md` | Check Markdown emphasis balance and internal links under `docs/` |
+| `npm run lint:md` | Check Markdown emphasis balance, internal links, and Agalan words under `docs/grammar/` |
+| `npm run lint:agalan` | Check only Agalan words in `docs/grammar/` code spans (also run by `lint:md`) |
 | `npm run dev` | VitePress local preview of grammar docs (served under `/grammar/`) |
 | `npm run docs:build` | Build static grammar site to `dist/grammar/` (Amplify publishes `dist/`) |
 | `npm run docs:preview` | Preview the production docs build |

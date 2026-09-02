@@ -239,7 +239,7 @@ Digit-strings (`ro`…) usually take the argument role the clause needs (often `
 | **eu** | `#-` | **End-relative ordinal:** rank **from the end** of the same cohort | order from the far edge | `g#-2` *2nd from the end* / *penultimate*; `g#-1` ≡ last place end-framed ([from the end](#from-the-end)); `g#-` *some end-relative rank* |
 | **o** | `_` | **Digit-string** / label (phones, IDs, “read the digits”) | **`o`** one string | `d_555,123,4567`; `d_` *some code*; `g_12` *room 12*-style; `b_…` under a host relation |
 
-One word, one identity. In [preferred writing](#writing-preferred-shorthand), the marker is **`+`** / **`-`** / **`#`** / **`#-`** / **`_`**. Write end-relative as **`#-`** after PoS (or after an ending mark): `g#-2`. `g-#2` would look like scalar **`-`** then ordinal.
+One word, one identity. In [preferred writing](#writing-preferred-shorthand), the marker is **`+`** / **`-`** / **`#`** / **`#-`** / **`_`**. Write end-relative as **`#-`** after PoS (or after an ending mark): `g#-2`. Writing the minus *before* the hash (`g-` then `#2`) would look like scalar **`-`** then ordinal.
 
 Date writing is still digit-string **`_`**, with calendar-ordinal vowel **`oe`** (spoken **`roe`**, written `_#…`): `h_#22,7,2026` *on 22 July 2026*. Clock time stays **`ro`** / `h_15,30`. See [Time](numbers-applied.md#time). It is not a sixth marker identity.
 

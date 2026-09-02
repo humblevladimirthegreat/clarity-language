@@ -42,7 +42,7 @@ Voiced and unvoiced are not different letters. Prefer voiced so the vocal cords 
 | **j** | /j/ | *yes* (Germanic *j* as in *ja*) | | `jael` /ja.el/ |
 | **b** | /b/ | *be* | /p/, *pay* | `bodol` |
 | **z** | /z/ | *zoo* | /s/, *sea* | `zazawan` |
-| **m** | /m/ | *me* | | `zemogol` |
+| **m** | /m/ | *me* | | `humudel` |
 | **n** | /n/ | *no* | | `na` /na/ |
 | **v** | /v/ | *vie* | /f/, *fee* | `vuzunuxel` |
 | **l** | /l/ | *lie* | | `zel` /zel/ |
@@ -69,7 +69,7 @@ Number words are a closed exception: role letter plus an **r**-initial marker ([
 
 **Roots** have form **V(CV)+**: they start with a vowel, and each later consonant starts a new syllable. Compound roots are separated by mid-word **`x`**. The only consonants at the end of a word are the reference suffix (and optional plural **sh**). That keeps held notes on vowels inside the word.
 
-**Clear syllables:** a content root almost always starts with a vowel. Ending and beginning consonants are chosen so you can hear which syllable a consonant belongs to (`vaban` = *va'ban*; `zalul` is prefix **z**, root **alu**, ending **-l**: the **l** in the root starts `lu`, and the last **l** is the ending). A syllable ends with a consonant only at the **end of the word**. Spelling therefore has one pronunciation path. The writing system does not mark stress; musical rhythm may place emphasis.
+**Clear syllables:** a content root almost always starts with a vowel. Ending and beginning consonants are chosen so you can hear which syllable a consonant belongs to (`vaban` = *va'ban*; `zelulul` is prefix **z**, root **elulu**, ending **-l**: the **l** in the root starts `lu`, and the last **l** is the ending). A syllable ends with a consonant only at the **end of the word**. Spelling therefore has one pronunciation path. The writing system does not mark stress; musical rhythm may place emphasis.
 
 **Word edges:** all **content** words end with a reference suffix (**-l** / **-m** / **-n** / **-r**), optionally followed by plural **-sh** (/ʃ/). Allowed word-final clusters: **-lsh**, **-msh**, **-nsh**, **-rsh**. Digraph **sh** is this plural marker (word-final, after a reference suffix). Those endings are the audible stop when song compresses pauses.
 

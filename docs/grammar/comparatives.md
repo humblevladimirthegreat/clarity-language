@@ -19,7 +19,7 @@ Use this shape when English would say *A is more ADJ than B* or *A is the most A
 Mnemonic: join vowel **`e`** is **order**. The shared `/ɡ/` is the scale you order them on.
 
 ```
-`zazawan zululon zel gomonum.`
+`zazawan zululon zel gomonam.`
 
 gloss: `z-grace@` · `z-courage@` · `z-rank/more` · `g-challenging`
 
@@ -29,7 +29,7 @@ gloss: `z-grace@` · `z-courage@` · `z-rank/more` · `g-challenging`
 Two or more names before `zel` is a **ladder**: earlier ranks above later (*more … than*). One name before `zel` is a **superlative** for the group in play (*the …-est*).
 
 ```
-`zazawan zel gomonum.`
+`zazawan zel gomonam.`
 
 gloss: `z-grace@` · `z-rank/more` · `g-challenging`
 
@@ -41,7 +41,7 @@ Ordinary *than* uses **`e`**. Both people may still sit high on the scale; the j
 Put *much* / *slightly* as a shared detail (`/w/`) on that same scale adjective.
 
 ```
-`zazawan zululon zel gomonum wogegal.`
+`zazawan zululon zel gomonam wogegal.`
 
 gloss: `z-grace@` · `z-courage@` · `z-rank/more` · `g-challenging` · `w-flood`
 
@@ -62,7 +62,7 @@ Mnemonic: **`ae`** is **add + order**: they share a rank on the scale.
 Closed **-l** (`zael`) stands behind sameness on the scale. Open **-m** (`zaem`) is soft, *about as … as*. Three or more names means all are equal on that scale.
 
 ```
-`zazawan zululon zael gomonum.`
+`zazawan zululon zael gomonam.`
 
 gloss: `z-grace@` · `z-courage@` · `z-as…as` · `g-challenging`
 
@@ -87,26 +87,26 @@ gloss: `z-grace@` · `z-courage@` · `z-as…as.open` · `g-bright`
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Rank fence plus shared scale `/ɡ/` is the comparison; single-item `zel` is the superlative; `zael` / `zaem` are equative.
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` · `omonu` · `udubu` · `ele` · `uzumu`
+**Roots used here:** `azawa` / `ululo` / `uhubu` · `omona` · `udubu` · `ele` · `uzumu`
 
 #### English → Agalan
 
 **1.** *Azawan is more challenging than Ululon.*
 
 ::: details Show answer
-`zazawan zululon zel gomonum.`
+`zazawan zululon zel gomonam.`
 :::
 
 **2.** *Azawan is the most challenging.*
 
 ::: details Show answer
-`zazawan zel gomonum.`
+`zazawan zel gomonam.`
 :::
 
 **3.** *Azawan is as challenging as Ululon.*
 
 ::: details Show answer
-`zazawan zululon zael gomonum.`
+`zazawan zululon zael gomonam.`
 :::
 
 **4.** *Azawan is about as bright as Ululon.*
@@ -118,7 +118,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **5.** *Azawan is much more challenging than Ululon.*
 
 ::: details Show answer
-`zazawan zululon zel gomonum wogegal.`
+`zazawan zululon zel gomonam wogegal.`
 :::
 
 **6.** *Uhubun is bigger than Azawan.*
@@ -141,7 +141,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 #### Agalan → English
 
-**1.** `zululon zazawan zel gomonum.`
+**1.** `zululon zazawan zel gomonam.`
 
 ::: details Show answer
 *Ululon is more challenging than Azawan.*
@@ -159,7 +159,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Uhubun is as big as Ululon.*
 :::
 
-**4.** `zazawan zuhubun zaem gomonum.`
+**4.** `zazawan zuhubun zaem gomonam.`
 
 ::: details Show answer
 *Azawan is about as challenging as Uhubun.*
@@ -212,16 +212,16 @@ A rank join with **no** shared scale `/ɡ/` is ordinary preference ranking (who 
 
 | Example | Reading |
 |---------|---------|
-| `zazawan zululon zuhubun zem gomonum` | *Azawan ≻ Ululon ≻ Uhubun on challenge* (open) |
-| `zazawan zululon zoel gomonum` | *Azawan is more challenging than Ululon* (exclusive ranked ladder) |
-| `zazawan zululon zuel gomonum` | *Azawan is less challenging than Ululon* |
-| `zel gomonum` | *unspecified who’s most challenging* / *no favorite on challenge* |
-| `zuel gomonum` | *unspecified who’s least challenging* / *no least-favorite on challenge* |
-| `zoel gomonum` | *there is no most challenging* |
-| `zoem gomonum` | *no most challenging comes to mind* |
-| `zazawan zuel gomonum` | *Azawan is the least challenging (of all)* |
-| `zer gomonum` | *whatever ranks highest on challenging* (resume of the top rank) |
-| `zazawan zululon zer gomonum` | *whichever of Azawan or Ululon ranks higher on challenging* |
+| `zazawan zululon zuhubun zem gomonam` | *Azawan ≻ Ululon ≻ Uhubun on challenge* (open) |
+| `zazawan zululon zoel gomonam` | *Azawan is more challenging than Ululon* (exclusive ranked ladder) |
+| `zazawan zululon zuel gomonam` | *Azawan is less challenging than Ululon* |
+| `zel gomonam` | *unspecified who’s most challenging* / *no favorite on challenge* |
+| `zuel gomonam` | *unspecified who’s least challenging* / *no least-favorite on challenge* |
+| `zoel gomonam` | *there is no most challenging* |
+| `zoem gomonam` | *no most challenging comes to mind* |
+| `zazawan zuel gomonam` | *Azawan is the least challenging (of all)* |
+| `zer gomonam` | *whatever ranks highest on challenging* (resume of the top rank) |
+| `zazawan zululon zer gomonam` | *whichever of Azawan or Ululon ranks higher on challenging* |
 
 Shared `/w/` on a ranked adjective list is shared *degree* over those properties. For *more ADJ than* on people or things, keep the rank fence on `/z/` `/d/` `/b/` and put the scale on shared `/ɡ/`.
 
@@ -240,95 +240,95 @@ Equative **`ae`** needs **two or more** comparees. Single-item or standalone **`
 
 | Example | Reading |
 |---------|---------|
-| `zazawan zululon zal gomonum` | *Azawan and Ululon are challenging* (each is; they need not be equal) |
-| `zazawan zululon zuhubun zael gomonum` | *Azawan, Ululon, and Uhubun are equally challenging* |
-| `zodogol zagadal zael gomonum` | *the dog is as challenging as the cat* |
+| `zazawan zululon zal gomonam` | *Azawan and Ululon are challenging* (each is; they need not be equal) |
+| `zazawan zululon zuhubun zael gomonam` | *Azawan, Ululon, and Uhubun are equally challenging* |
+| `zodogol zagadal zael gomonam` | *the dog is as challenging as the cat* |
 
 ### Measured differentials
 <a id="measured-differentials"></a>
 <a id="measure-gap"></a>
 
-*Two meters more challenging* is still a comparative (rank join + shared scale). Spell the gap as a **measure noun** (`/b/`) on the scale adjective: the **unit** is that `/b/` noun, and the **amount** is `/ɡ/` on the unit. See [measure phrases](numbers-applied.md#measure-phrases) (bare unit `urule` *measurement* = short meter; titled `urulexrawon` when you need the full word).
+*Two meters more challenging* is still a comparative (rank join + shared scale). Spell the gap as a **measure noun** (`/b/`) on the scale adjective: the **unit** is that `/b/` noun, and the **amount** is `/ɡ/` on the unit. See [measure phrases](numbers-applied.md#measure-phrases) (bare unit `urule` *measurement* = short meter; titled `burulexrawon` when you need the full word).
 
 Counted gaps use that one `/b/` on the scale. Vague *much* / *slightly* stays shared `/w/`.
 
 | Example | Reading |
 |---------|---------|
-| `zazawan zululon zel gomonum burulel g+2` | *Azawan is two meters more challenging than Ululon* |
-| `zazawan zululon zel gomonum wogegal` | *Azawan is much more challenging than Ululon* (vague degree) |
+| `zazawan zululon zel gomonam burulel g+2` | *Azawan is two meters more challenging than Ululon* |
+| `zazawan zululon zel gomonam wogegal` | *Azawan is much more challenging than Ululon* (vague degree) |
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Test arity (`oe` / `ue` / standalone / `zer`), distributive **`a`**, and counted measure gaps versus vague `/w/`.
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` · `omonu` · `ele` · `urule` · `uzumu`
+**Roots used here:** `azawa` / `ululo` / `uhubu` · `omona` · `ele` · `urule` · `uzumu`
 
 #### English → Agalan
 
 **1.** *Azawan is less challenging than Ululon.*
 
 ::: details Show answer
-`zazawan zululon zuel gomonum.`
+`zazawan zululon zuel gomonam.`
 :::
 
 **2.** *Azawan is the least challenging.*
 
 ::: details Show answer
-`zazawan zuel gomonum.`
+`zazawan zuel gomonam.`
 :::
 
 **3.** *There is no most challenging.*
 
 ::: details Show answer
-`zoel gomonum.`
+`zoel gomonam.`
 :::
 
 **4.** *Azawan and Ululon are challenging.*
 
 ::: details Show answer
-`zazawan zululon zal gomonum.`
+`zazawan zululon zal gomonam.`
 :::
 
 **5.** *Azawan is two meters more challenging than Ululon.*
 
 ::: details Show answer
-`zazawan zululon zel gomonum burulel g+2.`
+`zazawan zululon zel gomonam burulel g+2.`
 :::
 
 **6.** *Azawan is more challenging than Ululon* (exclusive ladder).
 
 ::: details Show answer
-`zazawan zululon zoel gomonum.`
+`zazawan zululon zoel gomonam.`
 :::
 
 **7.** *Unspecified who's most challenging.*
 
 ::: details Show answer
-`zel gomonum.`
+`zel gomonam.`
 :::
 
 **8.** *Azawan, Ululon, and Uhubun are challenging.*
 
 ::: details Show answer
-`zazawan zululon zuhubun zal gomonum.`
+`zazawan zululon zuhubun zal gomonam.`
 :::
 
 #### Agalan → English
 
-**1.** `zazawan zululon zuhubun zem gomonum.`
+**1.** `zazawan zululon zuhubun zem gomonam.`
 
 ::: details Show answer
 *Azawan is more challenging than Ululon, who is more challenging than Uhubun.*
 :::
 
-**2.** `zoem gomonum.`
+**2.** `zoem gomonam.`
 
 ::: details Show answer
 *No most challenging comes to mind.*
 :::
 
-**3.** `zazawan zululon zer gomonum.`
+**3.** `zazawan zululon zer gomonam.`
 
 ::: details Show answer
 *Whichever of Azawan or Ululon ranks higher on challenging.*
@@ -340,7 +340,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan and Ululon are happy.*
 :::
 
-**5.** `zululon zazawan zel gomonum burulel g+2.`
+**5.** `zululon zazawan zel gomonam burulel g+2.`
 
 ::: details Show answer
 *Ululon is two meters more challenging than Azawan.*
@@ -352,7 +352,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan is much bigger than Ululon.*
 :::
 
-**7.** `zer gomonum.`
+**7.** `zer gomonam.`
 
 ::: details Show answer
 *Whatever ranks highest on challenging.*
@@ -421,9 +421,9 @@ Six fixed standards. Ending stays **-n** (named reference-class standard).
 | `zebegum zojun zuem gagalam` | soft: draft is somewhat less clear than Average |
 | `zazawan zugoboxrawon zuel guzumum` | Azawan is less happy than **my personal standard** |
 | `zazawan zugobon zuel guzunul` | Azawan is less skilled at singing than **I am** (performance) |
-| `zugobon zuluden zuel gomonum` | less challenging than Social |
-| `zugobon zahaman zuel gomonum` | less challenging than Typical |
-| `zugobon zuan zuel gomonum` | less challenging than Everyone |
+| `zugobon zuluden zuel gomonam` | less challenging than Social |
+| `zugobon zahaman zuel gomonam` | less challenging than Typical |
+| `zugobon zuan zuel gomonam` | less challenging than Everyone |
 | `zugobon zululon zuel guzunul` | less skilled at singing than **Ululon** (ordinary person comparee) |
 
 ### Translation practice
@@ -431,7 +431,7 @@ Six fixed standards. Ending stays **-n** (named reference-class standard).
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. Put the standard in the *than*-conjunct; **`zugobon`** is performance, **`zugoboxrawon`** is Mine.
 
-**Roots used here:** `azawa` / `ululo` · `uzunu` · `uzumu` · `omonu` · `agala` · `ebegu` · `oju` · `ahama` · `ugobo` · `ulude` · `alaba` · `ua`
+**Roots used here:** `azawa` / `ululo` · `uzunu` · `uzumu` · `omona` · `agala` · `ebegu` · `oju` · `ahama` · `ugobo` · `ulude` · `alaba` · `ua`
 
 #### English → Agalan
 
@@ -462,18 +462,18 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 **5.** *I am less challenging than Typical.*
 
 ::: details Show answer
-`zugobon zahaman zuel gomonum.`
+`zugobon zahaman zuel gomonam.`
 :::
 
 **6.** *I am less challenging than Everyone.*
 
 ::: details Show answer
-`zugobon zuan zuel gomonum.`
+`zugobon zuan zuel gomonam.`
 :::
 
 #### Agalan → English
 
-**1.** `zugobon zuluden zuel gomonum.`
+**1.** `zugobon zuluden zuel gomonam.`
 
 ::: details Show answer
 *I am less challenging than Social.*
@@ -491,7 +491,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 *Azawan is somewhat less happy than my personal standard.*
 :::
 
-**4.** `zazawan zalaban zuel gomonum.`
+**4.** `zazawan zalaban zuel gomonam.`
 
 ::: details Show answer
 *Azawan is less challenging than Professional.*

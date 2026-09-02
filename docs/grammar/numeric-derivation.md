@@ -104,7 +104,7 @@ Single-digit scalars only. Tables use marker shorthand (**`+N`** / **`-N`**). Sp
 | **`/v/`** (verb) | act of nulling / resetting | act that refuses null / keeps residual | `vodoboxrazol`: *to null the score*; `vodoboxruzol`: *to anti-null / refuse to zero the score*; `vezewexrazol`: *to zero effort*; `vezewexruzol`: *to leave effort unzeroable* |
 | **`/ɡ/`** (adjective) | null / reset (ascribed) | non-emptyable / residual (ascribed) | `godoboxrazol`: *null / reset*; `godoboxruzol`: *won’t-null / residual*; `gozedexruzom`: *hope that won’t go to zero* (vs `gozedexrubam` *void of hope*) |
 | **`/h/`** (adverb) | clause framed as reset / zeroed | clause framed as irreducible residue | `hezewexrazom`: *with effort zeroed*; `hezewexruzom`: *with irreducible effort* / *despite any zeroing* |
-| **`/w/`** (adjunct) | host `/ɡ/` graded toward null | host `/ɡ/` graded toward anti-null | `gonebal weonebaxrazol`: *debt (ascribed) zeroed*; `gonebal weonebaxruzol`: *debt whose balance is anti-null* |
+| **`/w/`** (adjunct) | host `/ɡ/` graded toward null | host `/ɡ/` graded toward anti-null | `gonebal wonebaxrazol`: *debt (ascribed) zeroed*; `gonebal wonebaxruzol`: *debt whose balance is anti-null* |
 | **`/j/`** (interjection) | discourse *Zero it!* / *Null!* | discourse *Won’t zero!* / *Residue stands!* | `jodoboxrazol`; `jodoboxruzol` |
 
 A stronger wipe is [total null](#zero-exponent-derivation) **`ROOTx+0e`** (free **`v+0el`** *annihilate*).
@@ -139,7 +139,7 @@ On free numbers, **`±0e-1`** is scalar anatomy; on ROOT the same stems are kind
 | **`/v/`** | annihilate that kind | `vodoboxrazobal` |
 | **`/ɡ/`** | ascribed total-null | `gozedexrazobam` |
 | **`/h/`** | clause framed as total wipe | `hezewexrazobam` |
-| **`/w/`** | host graded toward total null | `gonebal weonebaxrazobal` |
+| **`/w/`** | host graded toward total null | `gonebal wonebaxrazobal` |
 | **`/j/`** | *Annihilate that kind!* | `jodoboxrazobal` |
 
 **`-0e` / `-0e-` / `±0e-1`** inherit the same PoS framing (absolute residue / micro-residue / engineering null·residue at OoM −1). Free twins: **`v+0el`** *annihilate*; **`g+0e`** absolute-zero amount; **`g+0e-1`** / **`g-0e-1`** engineering null / residue: [numbers.md § Zero × exponent](numbers.md#zero-exponent).

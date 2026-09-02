@@ -176,7 +176,7 @@ Plain **u** means the listed items **fail**.
 | standalone | `zul` / `zum` / `zun` | *no* |
 
 ```
-`gomonum gul.`
+`gomonam gul.`
 
 gloss: `g-challenging` · `g-not`
 
@@ -253,7 +253,7 @@ The join prefix **must match** every item head. Under `/ɡ/` `/h/`, joins use **
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. The join sits **after** the items; pick the vowel (set vs rank, including **`u`**) and the ending (**-l** / **-m** / **-r**), including single-item and standalone starter forms.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `unude` *water* · `omonu` *challenging* · `ebere` *person* · `awala` *walk* · `urunu` *run* · `elebe` *sleep*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `unude` *water* · `omona` *challenging* · `ebere` *person* · `awala` *walk* · `urunu` *run* · `elebe` *sleep*
 
 #### English → Agalan
 
@@ -284,7 +284,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **5.** *not challenging*
 
 ::: details Show answer
-`gomonum gul.`
+`gomonam gul.`
 :::
 
 **6.** *none of tea or coffee*
@@ -462,7 +462,7 @@ Under [question](questions.md#question): yes/no, offer, emptiness check, and fil
 The four rank vowels (**`e`** / **`ae`** / **`oe`** / **`ue`**) and their directions are introduced in [Beginner](#set-joins-and-rank-joins). Two Intermediate refinements: multi **`ae`** + SHARED scale is the [equative](comparatives.md#equatives) (*as ADJ as*), and standalone **`oe`** + SHARED scale is the empty superlative (*no biggest comes to mind*).
 
 ```
-`zazawan zululon zael gomonum.`
+`zazawan zululon zael gomonam.`
 
 gloss: `z-grace@` · `z-courage@` · `z-as…as` · `g-challenging`
 
@@ -563,7 +563,7 @@ Modifiers that sit **immediately after** a phrase-level join describe the **whol
 Local modifiers stay **inside** each item (after that item's head, or `gl-` before the head). Further matching-role heads belong *before* the join, not after `P-JOIN` / `SHARED`.
 
 ```
-`zodogol zagadal zal gomonum.`
+`zodogol zagadal zal gomonam.`
 
 gloss: `z-dog` · `z-cat` · `z-and` · `g-challenging`
 
@@ -655,7 +655,7 @@ VP `/v/`…**-n** spellings are [join-act verbs](join-extras.md#join-act-verbs).
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Sample the decisions this band adds: invert **`ua`**, universals vs *everything but*, SHARED after the join, islands, nesting, and clause **`xan`**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `unude` *water* · `omonu` *challenging* · `onuno` *onion* · `ugume` *cucumber* · `abele` *apple* · `eje` *see* · `awala` *walk* · `urunu` *run* · `elebe` *sleep*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `unude` *water* · `omona` *challenging* · `onuno` *onion* · `ugume` *cucumber* · `abele` *apple* · `eje` *see* · `awala` *walk* · `urunu` *run* · `elebe` *sleep*
 
 #### English → Agalan
 
@@ -680,7 +680,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **4.** *(challenging dog) and (challenging cat)*
 
 ::: details Show answer
-`zodogol zagadal zal gomonum.`
+`zodogol zagadal zal gomonam.`
 :::
 
 **5.** *Azawan and (just water)*
@@ -764,7 +764,7 @@ When other same-slot material sits nearby, wrap the sub-stretch and its join **i
 | `zazawan ^ zunudel zal ^ zam` | *Azawan and (just water)* |
 | `zazawan ^ zal ^ zam` | *Azawan and nothing* |
 | `^ zunudel zal ^` | *just water* alone in the slot |
-| `^ hadazol z<A> z<B> zam ^` | *maybe (A and B)* |
+| `^ z<A> z<B> zam ^` | *A and B (island)* |
 
 One island per clause. Same-slot material outside an island needs an outer join tying it in.
 
@@ -814,7 +814,7 @@ Join-root phonotactics: [phonology.md](phonology.md#phonotactics).
 - Prefixed joins always have a role letter + ending. Prefix-less **al** / **am** / … are revisers. Whole-word **a** / **e** / **o** / **u** (no ending) are not words.
 - Floating `/h/` inside an NP/AP/`/b/` join does not end the list. Verb-chain `/h/` scope differs — see [verb-phrase](#vp-level-coordination).
 - Clause-level: each item is a full clause body; *because* / *if* stay `/h/` + `/b/` [**`adoro`**](pronouns.md#special-pronouns).
-- Sibling manner stacking on `/h/` `/w/` uses **juxtaposition** (`hadazal hemudel`).
+- Sibling manner stacking on `/h/` `/w/` uses **juxtaposition** (`hadazal howol`).
 
 ### Translation practice
 <a id="translation-practice-advanced"></a>

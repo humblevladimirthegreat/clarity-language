@@ -232,7 +232,7 @@ gloss: `z-book-x-courage@`
 
 Resume the handle like any name. If its letter-pronoun (through the 2nd vowel) would pick the wrong antecedent, use the **full root** + **-r** (`zabulur`).
 
-The office as referent takes **-n** in a noun slot (`zabulon`). A [mention](spans.md#loans) packages the **form** (`z{abulo}n` = *the word Abulo*). Foreign letter-names stay loans or opaque spans (`z<FBI>n`). How institutions **coin** a handle from a long title is Advanced ([named handle](#named-handle-coinage)).
+The office as referent takes **-n** in a noun slot (`zabulon`). A [mention](spans.md#loans) packages the **form** (`z{abulo}` = *the word Abulo*). Foreign letter-names stay loans or opaque spans (`z<FBI>n`). How institutions **coin** a handle from a long title is Advanced ([named handle](#named-handle-coinage)).
 
 #### Verbs (`/v/`)
 

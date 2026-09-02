@@ -91,9 +91,9 @@ Keep the **base** unit. Put the power of ten on the **amount** (`e3` / `e-3` / a
 
 **Measured differentials** (*two meters taller*) put that measure NP as the **single `/b/`** on the SHARED scale adjective of a [comparative](comparatives.md#measured-differentials):
 
-`zazawan zululon zel gomonum burulel g+2` → *Azawan is two meters more challenging than Ululon*
+`zazawan zululon zel gomonam burulel g+2` → *Azawan is two meters more challenging than Ululon*
 
-Vague degree stays `/w/` on the scale (`zel wogegal gomonum …`) with no unit. Duration and other clause measures use the same unit+amount habit in whatever slot the relation needs.
+Vague degree stays `/w/` on the scale (`zel wogegal gomonam …`) with no unit. Duration and other clause measures use the same unit+amount habit in whatever slot the relation needs.
 
 ### Ranges
 <a id="ranges"></a>
@@ -125,7 +125,7 @@ Menu joins **`o`** / **`ao`** stay discrete (*3 or 5* / *3 and/or 5*). Equative 
 
 Three or more number conjuncts under **`a`** stay an ordinary list (`zal z+1 z+3 z+7` = *1, 3, and 7*), even with SHARED. Single-item **`zal z+3`** stays *just 3*, not a ray. Single-item **ranked** with a number is a [threshold](#numeric-thresholds).
 
-**Comparatives vs ranges:** `zazawan zululon zel gomonum` = *Azawan is more challenging than Ululon* (SHARED **scale**, people as conjuncts). `z+3 z+5 zel gumel` = *from 3 to 5 on time* (SHARED **continuum**, number endpoints). Bare `z+3 z+5 zel` = prefer 3 over 5.
+**Comparatives vs ranges:** `zazawan zululon zel gomonam` = *Azawan is more challenging than Ululon* (SHARED **scale**, people as conjuncts). `z+3 z+5 zel gumel` = *from 3 to 5 on time* (SHARED **continuum**, number endpoints). Bare `z+3 z+5 zel` = prefer 3 over 5.
 
 #### Thresholds (single-item ranked)
 <a id="numeric-thresholds"></a>

@@ -94,6 +94,27 @@ describe("parseWord — numbers (writing + speech)", () => {
       ]);
     }
   });
+
+  it("parses bare OoM g+e0 and explicit-ending v+0el (numbers.md)", () => {
+    const ones = parseOk("g+e0");
+    assert.equal(ones.ending, "l");
+    if (ones.family.kind === "number") {
+      assert.deepEqual(ones.family.stem, { marker: "+", groups: [], digitlessExp: "e0" });
+    }
+
+    const wipe = parseOk("v+0el");
+    assert.equal(wipe.ending, "l");
+    if (wipe.family.kind === "number") {
+      assert.deepEqual(wipe.family.stem, { marker: "+", groups: [], digitlessExp: "0e" });
+    }
+
+    const sci = parseOk("g+1e9");
+    if (sci.family.kind === "number") {
+      assert.deepEqual(sci.family.stem.groups, [
+        { mantissa: "1", exponentSign: "ba", exponentDigits: "9" },
+      ]);
+    }
+  });
 });
 
 describe("parseWord — spans and writing atoms", () => {
@@ -185,6 +206,25 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     assert.equal(parseOk("al").ending, "l");
     assert.deepEqual(parseOk("om").family, { kind: "reviser", form: "om" });
     assert.equal(parseOk("om").ending, "m");
+  });
+
+  it("parses citation ululon (reviser prefix is not a word by itself)", () => {
+    const word = parseOk("ululon");
+    assert.equal(word.pos, undefined);
+    assert.equal(word.ending, "n");
+    assert.deepEqual(word.family, { kind: "content", roots: ["ululo"] });
+  });
+
+  it("parses ordinary x-compound zazawaxululon (x-compounds.md)", () => {
+    const word = parseOk("zazawaxululon");
+    assert.equal(word.pos, "z");
+    assert.equal(word.ending, "n");
+    assert.deepEqual(word.family, {
+      kind: "x",
+      xFamily: "compound",
+      leftRoots: ["azawa"],
+      rightRoots: ["ululo"],
+    });
   });
 
   it("parses z<Sam>n compact foreign and d<sushi> opaque (core.md / spans.md)", () => {

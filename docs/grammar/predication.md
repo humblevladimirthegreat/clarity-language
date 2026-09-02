@@ -13,10 +13,10 @@ Put a property on the subject with an adjective (`/ɡ/`): name (or other noun) p
 
 | Form | Job | Example | Mnemonic |
 |------|-----|---------|----------|
-| subject + `/ɡ/` | property (*is ADJ*) | `zazawan gomonum` *Azawan is challenging* | the adjective does the *is* job |
+| subject + `/ɡ/` | property (*is ADJ*) | `zazawan gomonam` *Azawan is challenging* | the adjective does the *is* job |
 
 ```
-`zazawan gomonum.`
+`zazawan gomonam.`
 
 gloss: `z-grace@` · `g-challenging`
 
@@ -82,14 +82,14 @@ gloss: `z-dog` · `g-SAME` · `b-grace@`
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Property and kind sit on `/ɡ/`; identity uses **`gonunul`** plus `/b/`.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `abogo` *book* · `elulu` *blue* · `uzumu` smile → *happy* (**-m**) · `omonu` *challenging* (**-m**) · `awala` *walk* · `elebe` *sleep* · `onunu` **SAME**
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `abogo` *book* · `elulu` *blue* · `uzumu` smile → *happy* (**-m**) · `omona` *challenging* (**-m**) · `awala` *walk* · `elebe` *sleep* · `onunu` **SAME**
 
 #### English → Agalan
 
 **1.** *Azawan is challenging.*
 
 ::: details Show answer
-`zazawan gomonum.`
+`zazawan gomonam.`
 :::
 
 **2.** *Azawan is a dog.*
@@ -136,7 +136,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 #### Agalan → English
 
-**1.** `zazawan gomonum.`
+**1.** `zazawan gomonam.`
 
 ::: details Show answer
 *Azawan is challenging.*
@@ -172,7 +172,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Superman is Clark.*
 :::
 
-**7.** `zodogol gomonum.`
+**7.** `zodogol gomonam.`
 
 ::: details Show answer
 *The dog is challenging.*

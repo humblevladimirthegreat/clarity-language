@@ -254,7 +254,7 @@ Most useful with a [phrase join](coordination.md): SHARED singular scale under *
 
 A **scale or continuum** adjective in [comparatives](comparatives.md) and [ranges](numbers-applied.md#ranges) stays **singular** (one line). Keep SHARED scale and continuum adjectives singular.
 
-Color and trait stay singular on `/ɡ/` while the **noun** takes **-sh** (*red books*: plural noun, singular *red*). Character trait uses singular `/ɡ/` + **`hual`**. *Both are challenging* uses distributive SHARED **`… zal gomonum`**.
+Color and trait stay singular on `/ɡ/` while the **noun** takes **-sh** (*red books*: plural noun, singular *red*). Character trait uses singular `/ɡ/` + **`hual`**. *Both are challenging* uses distributive SHARED **`… zal gomonam`**.
 
 ### Vocatives (`/j/`)
 
