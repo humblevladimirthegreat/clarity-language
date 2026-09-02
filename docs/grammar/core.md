@@ -7,7 +7,7 @@ How to read and write an Agalan **sentence**: word roles, word shape, default or
 
 ### Parts of speech
 
-Each content word starts with a **first letter** that marks its job in the sentence. The root stays the same when the job changes — only that first letter changes.
+Each content word starts with a **first letter** that marks its job in the sentence. The root stays the same when the job changes. Only that first letter changes.
 
 #### Writing words
 <a id="orthography"></a>
@@ -19,18 +19,18 @@ Write **role letter + root + ending** as one word:
 
 Prefer a published root when the English meaning matches (`dabelel` for *apple*). Use **-m** when the match is the published **metaphorical** sense (`guzumum` for *happy*).
 
-Words end in a final letter that says how the root enters the talk — you will meet those letters in [reference-suffix.md](reference-suffix.md). For now, read the whole word as its plain meaning.
+The last letter of the word says how the root enters the talk ([reference-suffix.md](reference-suffix.md)). For now, read the whole word as its plain meaning.
 
 ##### Capitalization
 <a id="capitalization"></a>
 
-Agalan writing is **unicase**: use **lowercase** for every native letter. Capital letters appear only inside foreign or opaque payloads that keep another orthography’s casing.
+Agalan writing is **unicase**: use **lowercase** for every native letter. Capital letters appear only inside quoted foreign spelling that keeps another writing system’s casing.
 
 #### Outside a sentence (citation)
 <a id="citation-forms"></a>
 <a id="prefix-less-citation"></a>
 
-When you are **not** filling a clause slot — lexicon head, list, title line, or a freestanding non-clausal turn — you may write the **root** with **no** role letter:
+When you are **not** filling a sentence slot (lexicon head, list, title line, or a freestanding line with no clause), you may write the **root** with **no** role letter:
 
 `odogol.` · `uzumum.` · `azawan.` · `ululon.`
 
@@ -46,10 +46,10 @@ When you are **not** filling a clause slot — lexicon head, list, title line, o
 | `/ɡ/` | adjective (property or kind label) | **ɡ** = grade / property label |
 | `/w/` | extra detail on the previous adjective | **w** = with that adjective |
 | `/h/` | adverb (how / when / where / to whom, and similar) | **h** = how, when, where |
-| `/x/` | discourse marker (link sentences, continue under the same speech act) | **x** = extend the speech act |
+| `/x/` | discourse marker (link sentences, continue under the same speech act) | **x** = e**x**tend the speech act |
 | `/j/` | utterance marker (start a turn: statement / question / command, call someone, *yes* / *no*, …) | **j** = jump to a new act |
 
-English *to* / *for* (recipient) uses a complex adverb (`/h/` + `/b/`) plus that extra noun — the same pattern as other “relation + who/what” meanings on the verb.
+English *to* / *for* (recipient) uses a complex adverb (`/h/` + `/b/`) plus that extra noun. The same pattern covers other “relation + who/what” meanings on the verb.
 
 ### Default sentence order
 
@@ -60,28 +60,22 @@ You may rearrange those core roles for style or to put something in **focus** (w
 - **Adjectives** (`/ɡ/`) go **after** what they describe by default ([Adjectives](#adjectives-ɡ)). Putting them before is Intermediate ([before the noun](#left-bound-adjectives)).
 - **Adverbs** (`/h/`) may sit anywhere in their sentence except a “next sentence” `/h/`+`/b/` unit, which must come **last in the main sentence** ([Adverbs](#adverbs-h); [Dependent clauses](#dependent-clauses)).
 
-**Turn** vs **continue:** a new **turn** opens with `/j/` (calling someone, *yes* / *no* words, written [statement / question / command](#clause-force-beginner)) — including turns you take with yourself. **Continuing under the same speech act** uses `/x/` ([discourse markers](#discourse-markers-x)): what follows **keeps** that speech act. Default statement force is **`jal`**, and you may **leave it out** when it is already clear ([Utterance markers](#utterance-markers-j)).
+**Turn** vs **continue:** a new **turn** opens with `/j/` (calling someone, *yes* / *no* words, written [statement / question / command](#clause-force-beginner)), including turns you take with yourself. **Continuing under the same speech act** uses `/x/` ([discourse markers](#discourse-markers-x)): what follows **keeps** that speech act. Default statement force is **`jal`**, and you may **leave it out** when it is already clear ([Utterance markers](#utterance-markers-j)).
 
 `/j/` = **jump** to a new speech act; `/x/` = **extend** under the same act.
 
 ### Nouns and verbs
 
-| Slot | Job |
-|------|-----|
-| `/z/` | subject — who or what acts |
-| `/d/` | direct object — who or what is acted on |
-| `/v/` | verb — the action |
+Use `/z/` for who acts, `/d/` for who is acted on, and `/v/` for the action.
 
-To say someone *is* a kind or has a property, use subject + adjective — there is **no** separate *to be* verb here.
-
-the property is an adjective **label** on the subject — no linking verb.
+To say someone *is* a kind or has a property, put the property on the subject as an adjective **label**. There is no separate *to be* verb for this job.
 
 ```
-`zeberel godogol.`
+`zazawan godogol.`
 
-gloss: `z-person` · `g-dog`
+gloss: `z-Azawan` · `g-dog`
 
-*A person is a dog.*
+*Azawan is a dog.*
 ```
 
 ```
@@ -95,7 +89,7 @@ gloss: `z-dog` · `g-blue`
 ### Adjectives (`/ɡ/`)
 <a id="adjectives-ɡ"></a>
 
-`/ɡ/` marks adjectives (and noun-level “related to…” phrases). Using an adjective as the property label, with no `/v/`, is how *is a dog* / *is blue* work (above).
+`/ɡ/` marks adjectives (and “related to…” phrases on a noun). Using an adjective as the property label, with no `/v/`, is how *is a dog* / *is blue* work (above).
 
 **Default (after the noun):** the adjective follows the word it describes.
 
@@ -109,18 +103,18 @@ gloss: `z-dog` · `g-blue`
 
 ### Adjective extras (`/w/`)
 
-`/w/` adds detail to the **previous adjective** (`/ɡ/` unit) — intensity, manner of the property, and similar.
+`/w/` adds detail to the **previous adjective** (`/ɡ/` unit): intensity, manner of the property, and similar.
 
 It sits on that adjective: normally right after the `/ɡ/` (or after that `/ɡ/`’s attached `/b/` if complex). Several `/w/` words may sit in a row on one `/ɡ/` (`guzumum wazebol wazebel` = *happy, loudly, very loudly*). If the relation needs an extra noun, use complex `/ɡ/` + `/b/` instead.
 
-`/w/` = **with** the adjective (narrow); `/h/` = the **whole** sentence. Same root, different first letter → different reach.
+`/w/` = **with** the adjective (narrow); `/h/` = the **whole** sentence. Same root, different first letter, different reach.
 
 ### Adverbs (`/h/`)
 <a id="adverbs-h"></a>
 
-`/h/` marks adverbs: how, when, where, *to* / *for*, mood / tense / “how I know,” and related closed kinds.
+`/h/` marks adverbs: how, when, where, *to* / *for*, mood / tense / “how you know,” and related closed kinds.
 
-Because `/h/` talks about the sentence’s verb, **you may place it anywhere in that sentence** — except a “next sentence” `/h/`+`/b/` unit, which must sit **last in the main sentence** ([Dependent clauses](#dependent-clauses)). `/h/` material stays inside its own sentence.
+Because `/h/` talks about the sentence’s verb, **you may place it anywhere in that sentence**, except a “next sentence” `/h/`+`/b/` unit, which must sit **last in the main sentence** ([Dependent clauses](#dependent-clauses)). `/h/` material stays inside its own sentence.
 
 **Several adverbs at once** just sit next to each other: `hadazal hozowol` → *hastily and still/quietly*.
 
@@ -141,17 +135,16 @@ This pattern covers much of what other languages do with little words like *to*,
 ### Utterance markers (`/j/`)
 <a id="utterance-markers-j"></a>
 
-`/j/` starts a **turn** — a speech move toward someone else, or toward yourself when you talk alone. It frames what you are doing: **statement / question / command**, **calling someone**, and **short reaction words** (greetings, *yes* / *no*, and similar).
+`/j/` starts a **turn**: a speech move toward someone else, or toward yourself when you talk alone. It frames what you are doing: **statement / question / command**, **calling someone**, and **short reaction words** (greetings, *yes* / *no*, and similar).
 
 #### Opening a turn (left edge)
 <a id="left-edge-order-and-sentence-boundaries"></a>
 
 The start of a **new turn** is a `/j/` cluster in this order:
 
-1. Optional **call**(s) — who you address (`jazawan`, `jululon`, …)
-2. Optional **reaction / greeting word**(s) — greetings, *yes* / *no* particles, other expressives
-3. Optional **reviser** — prefix-less **`al` / `am` / …** right before force or before a body that defaults to a statement ([revisers.md](revisers.md))
-4. **Clause force** — when written; **last** in the cluster, immediately before the sentence body
+1. Optional **call**(s): who you address (`jazawan`, `jululon`, …)
+2. Optional **reaction / greeting word**(s): greetings, *yes* / *no* particles, other expressives
+3. **Clause force**, when written: **last** in the cluster, immediately before the sentence body
 
 **Default force is `jal` (statement).** Leave it out when that is already clear:
 
@@ -169,47 +162,42 @@ Bare calls and exclamations with no sentence body use `/j/` without a written fo
 #### Clause force (Beginner)
 <a id="clause-force-beginner"></a>
 
-Every utterance has exactly one **clause force** — the speech-act setting (statement, question, command, …). Default statement **`jal`** may be **left out** when recoverable (above). Other settings write a `/j/` force word **last** in the left-edge cluster, before the body.
+Every utterance has exactly one **clause force**: the speech-act setting (statement, question, command, …). Default statement **`jal`** may be **left out** when recoverable (above). Other settings write a `/j/` force word **last** in the left-edge cluster, before the body.
 
 Forms you need for ordinary dialogue:
 
-| Form | Job |
-|------|-----|
-| **jal** | statement (often omitted) |
-| **jol** | question — yes/no and “fill in the blank” ask ([questions.md](questions.md)) |
-| **jel** | command / instruction |
-| **jul** | prohibition — *don’t…* |
+| Form | Job | Mnemonic |
+|------|-----|----------|
+| **jal** | statement (often omitted) | **j**ump + **a** hold: stand behind the claim |
+| **jol** | question: yes/no and “fill in the blank” ask | **j**ump + **o** menu: pick an answer |
+| **jel** | command / instruction | **j**ump + **e** rank: do this |
+| **jul** | prohibition: *don’t…* | **j**ump + **u** undo: don’t do this |
 
-#### *Yes* / *no* particles (pointer)
-
-Closed `/j/` words such as **`jael`** (*yes* / *true*), **`juel`** (*no* / *false*), **`jaol`** (*sure*), and soft **-m** twins are **reaction words** — left-edge or bare turn, not clause force. Full list: [questions.md § Polar stance](questions.md#yes-no-polarity).
-
-**Mnemonic tip:** firm **-l** implies statement **`jal`**; soft **-m** implies soft statement **`jam`**. Prefer **`jael …`** over **`jael jal …`** when a body follows.
+Closed `/j/` words such as **`jael`** (*yes* / *true*) and **`juel`** (*no* / *false*) are **reaction words**. They sit at the left edge or as a bare turn. Firm **-l** implies statement **`jal`**; soft **-m** implies soft statement **`jam`**. Prefer **`jael …`** over **`jael jal …`** when a body follows.
 
 ### Discourse markers (`/x/`) — turn vs continue
 <a id="discourse-markers-x"></a>
 
 `/x/` means **keep going under the same speech act**: continue a joined stretch that inherits the opener’s force, and **sentence linkers** (*however*, *therefore*, …). Only the first turn (or a default statement body) sets the speech act.
 
-word-initial **x** = discourse role (**eXtend** the talk).
+Word-initial **x** = discourse role (**eXtend** the talk).
 
-| Job | Form family |
-|-----|-------------|
-| Glue between sentences (*however*, *therefore*, …) | `/x/` linkers (`xezebal`, `xamalal`, …) |
-| Source / strength (*apparently*, *allegedly*, …) | `/h/` or `/w/` mood |
+| Job | Form family | Mnemonic |
+|-----|-------------|----------|
+| Glue between sentences (*however*, *therefore*, …) | `/x/` linkers (`xezebal`, `xamalal`, …) | **x** keeps the same speech act while the next sentence starts |
 
 ### Dependent clauses
 <a id="dependent-clauses"></a>
 
 A dependent sentence uses the special next-sentence pronoun **`adoro`**: in the main sentence it stands for “whatever follows right away.”
 
-**`adoro`** 🚪 *doorway* → *what follows* — the main sentence ends at the doorway; the dependent walks through.
+**`adoro`** 🚪 *doorway* → *what follows*. The main sentence ends at the doorway; the dependent walks through.
 
 **Placement:** put **`adoro` last** in its main-sentence slot, and put the dependent material **immediately after** it. Rearrange free word order so that holds. For *because* / *if* style, the whole `/h/` + `/b/` **`adoro`** unit sits last in the main sentence (**`adoro`** last). That final **`adoro`** is where the dependent begins.
 
 The dependent is a **full sentence**. It may open with its own `/j/` cluster, or **keep** the main sentence’s speech act and omit `/j/` when that matches. The **boundary** is **`adoro`**. A different speech act (embedded ask, command, …) needs its own force word.
 
-**That-clause / content** — often a core object, with **`adoro` last** in the main sentence:
+**That-clause / content** is often a core object, with **`adoro` last** in the main sentence:
 
 ```
 `zazawan dululon vezehel dadorol.`
@@ -235,7 +223,7 @@ gloss: `z-Azawan` · `d-Ululon` · `v-tell` · `d-next-clause`
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills on this Beginner band. Try each item before opening **Show answer**. Use **published roots** only — no opaque `<>` loans.
+Short drills on this Beginner band. Try each item before opening **Show answer**. Use **published roots** only.
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `abogo` *book* · `ohohu` *house* · `elulu` *blue* · `arede` *red* · `ele` *size* · `uzumu` smile → *happy* (**-m**) · `awala` *walk* · `urunu` *run* · `elebe` *sleep* · `ezehe` *tell* · `uwuru` *write* · `uzunu` *sing* · `eje` *perception* (*see*) · `aju` *sit* · `adaza` *haste* · `adoro` *next clause* · `urugu` *because* (**-m** on `/h/`)
 
@@ -381,22 +369,22 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 ### Clause force
 <a id="clause-force"></a>
 
-Prerequisite: Beginner [join vowel series](coordination.md#join-type-vowel-series) (**a** / **o** / **e** / **u**).
-
 Every utterance has exactly one **clause force** (written `/j/` or implied **`jal`** / **`jam`**). Shape is **`j` + vowel + ending`**: the vowel picks the speech-act family; **-l** = firm / closed; **-m** = soft / open. Non-default forces are **written**; default statement **`jal`** may be omitted under the Beginner rules.
 
-same **vowel series** as joins — **a** inventory / holds, **o** menu / pick, **e** ranked priority, **u** negation — plus ending **-l** / **-m**.
+The vowels match the [vowel-series](vowel-series.md) jobs: **a** add / hold, **o** one / menu, **e** order / rank, **u** undo.
 
-| Form | Force | Letter logic |
-|------|--------|----------------|
-| **jal** | **statement** — claim or description | **a** + **-l** stand behind |
-| **jam** | **soft statement** — tentative / provisional | **a** + **-m** open |
-| **jol** | **question** — yes/no and fill-in ask | **o** menu + **-l** |
-| **jom** | **soft question** — wonder, gentle ask, offer-like | **o** + **-m** |
-| **jel** | **command** — instruction | **e** rank + **-l** |
-| **jem** | **request** — soft directive (*please…*) | **e** + **-m** |
-| **jul** | **prohibition** — *don’t…* (firm) | **u** negation + **-l** |
-| **jum** | **soft prohibition** — *please don’t…* / *I’d rather you not…* | **u** + **-m** |
+| Form | Force | Mnemonic |
+|------|--------|----------|
+| **jal** | **statement**: claim or description | **a** + **-l** stand behind |
+| **jam** | **soft statement**: tentative / provisional | **a** + **-m** open |
+| **jol** | **question**: yes/no and fill-in ask | **o** menu + **-l** |
+| **jom** | **soft question**: wonder, gentle ask, offer-like | **o** + **-m** |
+| **jel** | **command**: instruction | **e** rank + **-l** |
+| **jem** | **request**: soft directive (*please…*) | **e** + **-m** |
+| **jul** | **prohibition**: *don’t…* (firm) | **u** undo + **-l** |
+| **jum** | **soft prohibition**: *please don’t…* / *I’d rather you not…* | **u** + **-m** |
+
+Prefix-less revisers (**`al`** / **`am`** / …) may sit in the left-edge cluster **right before** force, or before a body that defaults to a statement. Full table: [revisers.md](revisers.md).
 
 ### Adjectives before the noun (`gl-`)
 <a id="left-bound-adjectives"></a>
@@ -411,14 +399,14 @@ gloss: `g-blue` · `z-dog`
 *a blue dog*
 ```
 
-mid-word **l** = **lean left** — look ahead to the next host. Only `/ɡ/` takes this **l**.
+Mid-word **l** = **lean left**: look ahead to the next host. Only `/ɡ/` takes this **l**.
 
 The package is the same as after-the-noun order: plain `/ɡ/`, or complex `/ɡ/` + `/b/`, plus any following `/w/` stack. `/b/` and `/w/` still follow that `/ɡ/` (`glelulul wazebol zodogol` = *a loud-volume blue dog*). Before-the-noun order is optional style (meter, focus, comfort from your first language).
 
 ### Adverb topic and free-order ties
 <a id="adverb-topic-and-free-order-ties"></a>
 
-**Topic** (*as for X*, *regarding X*) is complex `/h/` + `/b/` naming the topic noun. Published **`ahaza`** *topic* is the dedicated host: `hahazal b<X>l` = *as for X*. Highlight focus by rearranging free word order (and ordinary *very*-type words if needed).
+**Topic** (*as for X*, *regarding X*) is complex `/h/` + `/b/` naming the topic noun. Published **`ahaza`** *topic* is the dedicated host: `hahazal bazawan` = *as for Azawan*. Highlight focus by rearranging free word order (and ordinary *very*-type words if needed).
 
 There is no fixed order among several `/h/` units. Each unit’s job comes from its dictionary role; spoken order is free. If two units share a role and need a ranking, left-to-right breaks the tie.
 
@@ -427,25 +415,23 @@ There is no fixed order among several `/h/` units. Each unit’s job comes from 
 
 After a complex adjective or adverb, a further plain `/ɡ/` describes the **extra noun**, not the original host. `/w/` after a `/ɡ/` (+ optional `/b/`) grades that adjective. You can chain complex units onto those extra nouns; two complex adjectives on the same host noun need another sentence. Multiple `/h/` units on one verb are fine (each plain `/h/` or together `/h/`+`/b/` counts as one).
 
-Bare [arrow-rose](roles.md#viewpoint-laterals) direction is a compass point (`gewezel` = *west*); body-relative *left* / *right* glue the same root to a facing being (`gewezexazawan beredel` = *on Azawan’s-left of the tree*). Gravity *up* / *down* uses **`avuza` / `ovazo`**. Discourse **`xamalal`** (*therefore*) stays the *progress* linker — not east and not body-right.
-
 ### Writing and speech rhythm (periods)
 <a id="orthography-and-prosody-periods"></a>
 
 Writing uses **periods** (and matching **`?`** / **`!`**) as **body** boundaries. Speech matches:
 
-| Writing | Speech | Force |
-|---------|--------|--------|
-| `.` | Fall on last stress + short pause | Closes the prior **body**. Next stretch still defaults to **`jal`** unless a new `/j/` turn, marked force, or *yes* / *no* particle sets otherwise |
-| Next `/j/` turn (*yes* / *no*, call, marked force) | Pitch **reset** into the turn | New turn; firm **-l** / soft **-m** imply **`jal`** / **`jam`** |
-| Bare body or `REV BODY` after `.` | No full reset required | Implied **`jal`** (or **`jam`** only if a soft particle / written **`jam`** said so) |
-| `?` | Rise or high level on last stress | Question (**`jol`** / **`jom`**) — force usually written |
-| `!` | Sharp or clipped fall | Command / prohibition — force usually written |
-| Soft statement / soft *yes* / *no* **-m** | Lighter fall; boundary still clear | **`jam`** (implied or written) |
-| `/x/` continue (clause join) | Dip or short pause; **no** full pitch reset | Keep opener force; period after the **whole** joined stretch |
-| `/x/` linker after `.` (`xamalal …`) | Dip into the linker; no turn reset | Keep prior speech act; may start a new written sentence under that force |
+| Writing | Speech | Force | Mnemonic |
+|---------|--------|--------|----------|
+| `.` | Fall on last stress + short pause | Closes the prior **body**. Next stretch still defaults to **`jal`** unless a new `/j/` turn, marked force, or *yes* / *no* particle sets otherwise | Period closes the **body** |
+| Next `/j/` turn (*yes* / *no*, call, marked force) | Pitch **reset** into the turn | New turn; firm **-l** / soft **-m** imply **`jal`** / **`jam`** | New `/j/` cluster = new turn |
+| Bare body or reviser + body after `.` | No full reset required | Implied **`jal`** (or **`jam`** only if a soft particle / written **`jam`** said so) | Same statement unless marked |
+| `?` | Rise or high level on last stress | Question (**`jol`** / **`jom`**); force usually written | Rise asks |
+| `!` | Sharp or clipped fall | Command / prohibition; force usually written | Sharp fall directs |
+| Soft statement / soft *yes* / *no* **-m** | Lighter fall; boundary still clear | **`jam`** (implied or written) | **-m** = open / soft |
+| `/x/` continue (clause join) | Dip or short pause; **no** full pitch reset | Keep opener force; period after the **whole** joined stretch | **x** extends; no new jump |
+| `/x/` linker after `.` (`xamalal …`) | Dip into the linker; no turn reset | Keep prior speech act; may start a new written sentence under that force | Linker stays in the same act |
 
-**Mnemonic (endings):** period closes the **body**; **-l** vs **-m** on force / *yes* / *no* carries **commitment** (stand behind vs soft / open). A new `/j/` cluster starts a new turn.
+**-l** vs **-m** on force / *yes* / *no* carries **commitment** (stand behind vs soft / open).
 
 ### Sentence linkers
 <a id="sentence-linkers"></a>
@@ -462,7 +448,7 @@ One-way glue between sentences (ordinary ending; **-l** default closed):
 
 *therefore* moves forward from the prior claim; *however* marks contrast; *meanwhile* is concurrent passage; *next* is the next frame; *but* blocks the expected continuation (harder push-back than *however*). Ordinary content readings of those roots stay available under other role letters.
 
-**Not the same as clause poles:** discourse **`xezebal`** (*however*) / **`xamenol`** (*meanwhile*) glue prior sentences; subordinating **`hezebam badorol`** (*although*) / **`hegemum badorol`** (*while*) attach a dependent under **`adoro`** — [dependent clauses](#dependent-clauses).
+Discourse **`xezebal`** (*however*) / **`xamenol`** (*meanwhile*) glue a **prior** sentence to the next one. Subordinating **`hezebam badorol`** (*although*) / **`hegemum badorol`** (*while*) attach a **dependent** under **`adoro`** ([dependent clauses](#dependent-clauses)).
 
 ### Nested dependents
 <a id="nested-dependents"></a>
@@ -472,7 +458,7 @@ Each clause may have at most one main-sentence-final **`adoro`**; a dependent ma
 ### Number as interjection
 <a id="number-as-interjection"></a>
 
-A `/j/` **number** word is a call-out (*N more!*, score call, …), not clause force. It may sit in the left-edge cluster before force, or stand alone as a bare turn. Readings by marker: [numbers.md](numbers.md#number-as-interjection-by-marker).
+A `/j/` **number** word is a call-out (*N more!*, score call, …). It may sit in the left-edge cluster before force, or stand alone as a bare turn. Readings by marker: [numbers.md](numbers.md#number-as-interjection-by-marker).
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -587,4 +573,4 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 ### Weak-pause left cues
 <a id="weak-pause-left-cues"></a>
 
-When pauses are weak (singing, fast free order), prefer an audible left cue after silence — *yes* / *no*, a call, or a written force word — rather than a bare body that only implies **`jal`**. Writing still uses `.` for body edges.
+When pauses are weak (singing, fast free order), prefer an audible left cue after silence: *yes* / *no*, a call, or a written force word, rather than a bare body that only implies **`jal`**. Writing still uses `.` for body edges.

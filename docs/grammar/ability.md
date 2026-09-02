@@ -6,37 +6,52 @@ Tag **can** / **can’t** on an activity or property. Stance lives on the vowel;
 ## Beginner
 <a id="beginner"></a>
 
-### Ability (primary: host + `xa` / `xe` / `xo` / `xu`)
+### Ability (host + `xa` / `xe` / `xo` / `xu`)
 <a id="ability"></a>
 <a id="incapability"></a>
 <a id="ability-changeability"></a>
 
-Tag **can** / **can’t** on an activity or property root. The stance **vowel** carries capability polarity and *can’t* grain; the **ending** stays ordinary [reference-suffix](reference-suffix.md) so literal / metaphorical / proper / anaphor stay audible on the host.
-
-**Shape** (when the capability **is** a single content root) — same mid-word **`x`** joiner as [values](values.md#word-shape):
+When capability **is** one content root (*sing*, *lift*, *lead*), write that root, then mid-word **`x`**, then a stance vowel, then an ordinary ending:
 
 ```
 PoS + HOST + x + {a|e|o|u} + {-l|-m|-n|-r}
 ```
 
-| Piece | Role |
-|-------|------|
-| **PoS** | Prefer the host’s usual role — `/v/` (event), `/ɡ/` (property), etc. |
-| **HOST** | Any **non-need** content root (*sing*, *lift*, *lead*, …) |
-| **Stance vowel** | [Ability stance](#ability-stance) — **`a`** can; **`e` / `o` / `u`** can’t grains |
-| **Ending** | Ordinary [reference-suffix](reference-suffix.md) on the **host** sense |
-
-vowel = can / *can’t how*; ending = how the root enters the talk (**-l** literal, **-m** metaphorical, …).
+Use the host’s usual first letter (`/v/` for an event, `/ɡ/` for a property). The vowel says *can* or *how they can’t*; the ending is the host sense (**-l** literal, **-m** metaphorical, **-n** proper, **-r** anaphor).
 
 #### Stance vowels
 <a id="ability-stance"></a>
 
-| Form | Stance | Reading |
-|------|--------|---------|
-| **`xa`** | **Capable** | can (solo / underspecified scaffold) |
-| **`xe`** | **Temporary can’t** | can’t **right now** (usually able) |
-| **`xo`** | **Modifiable can’t** | can’t, and that may change (also soft default if grain unknown) |
-| **`xu`** | **Irreversible can’t** | can’t — fixed / impossible as far as you can tell |
+| Form | Stance | Reading | Mnemonic |
+|------|--------|---------|----------|
+| **`xa`** | **Capable** | can (solo / underspecified scaffold) | **`a`** add: capability is in |
+| **`xe`** | **Temporary can’t** | can’t **right now** (usually able) | **`e`** order: this moment’s ranking |
+| **`xo`** | **Modifiable can’t** | can’t, and that may change (also soft default if grain unknown) | **`o`** one: one open *can’t* |
+| **`xu`** | **Irreversible can’t** | can’t (fixed / impossible as far as you can tell) | **`u`** undo: capability taken off |
+
+```
+`zazawan vuzunuxal.`
+
+gloss: `z-grace` · `v-express-able`
+
+*Azawan can sing.*
+```
+
+```
+`zululon vuzunuxel.`
+
+gloss: `z-courage` · `v-express-unable-temporary`
+
+*Ululon can’t sing right now.*
+```
+
+```
+`zuhubun vuzunuxol.`
+
+gloss: `z-beauty` · `v-express-unable-modifiable`
+
+*Uhubun can’t sing yet (open to change; not claiming who will change it).*
+```
 
 | Form | Reading |
 |------|---------|
@@ -44,28 +59,12 @@ vowel = can / *can’t how*; ending = how the root enters the talk (**-l** liter
 | `vuzunuxam` | can sing (metaphorical host sense) |
 | `vuzunuxel` | can’t sing **right now** |
 | `vuzunuxol` | can’t sing yet / may become able (or unknown grain) |
-| `vuzunuxul` | can’t sing — fixed / impossible as far as you can tell |
-
-```
-`vuzunuxel.`
-
-gloss: `v-express-unable-temporary`
-
-*Can’t sing right now.*
-```
-
-```
-`vuzunuxol.`
-
-gloss: `v-express-unable-modifiable`
-
-*Can’t sing (open to change — not claiming who will change it).*
-```
+| `vuzunuxul` | can’t sing (fixed / impossible as far as you can tell) |
 
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills on this Beginner band. Try each item before opening **Show answer**. Tag **can** / **can’t** on a non-need host; ordinary verbs are not refusal.
+Short drills on this Beginner band. Try each item before opening **Show answer**. Tag **can** / **can’t** on an activity or property host; one item is a plain event with no can / can’t tag.
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `uzunu` *sing* · `awala` *walk* · `urunu` *run* · `uwuru` *write* · `eje` *see* · `elebe` *sleep* · `aju` *sit*
 
@@ -89,7 +88,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zuhubun vawalaxol.`
 :::
 
-**4.** *Azawan can’t run — it’s fixed.*
+**4.** *Azawan can’t run (it’s fixed).*
 
 ::: details Show answer
 `zazawan vurunuxul.`
@@ -101,7 +100,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zululon vuwuruxal.`
 :::
 
-**6.** *Azawan sings.* (ordinary event — not a can / can’t tag)
+**6.** *Azawan sings.* (ordinary event, no can / can’t tag)
 
 ::: details Show answer
 `zazawan vuzunul.`
@@ -148,7 +147,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **5.** `zazawan vuzunul.`
 
 ::: details Show answer
-*Azawan sings.* (not tagged can or can’t)
+*Azawan sings.* (no can / can’t tag)
 :::
 
 **6.** `zululon vuwuruxam.`
@@ -175,60 +174,46 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 ### Ability fallback (`egera`)
 <a id="ability-fallback"></a>
 
-When there is **no single host root** (complex VP, hostless *I can’t*, or ability as a floating adverb), use closed **`ABIL`** = lexicon **`egera`** 🥣 *cereal* → *capacity*:
+When there is **no single host root** (a multi-root activity, a hostless *can’t*, or a clause-wide tag), use **`egera`** 🥣 *cereal* → *capacity* (**ABIL**):
 
 ```
 [h|w] + egera + x + {a|e|o|u} + {-l|-m|-n|-r}
 ```
 
-| Prefix | Scope |
-|--------|--------|
-| `/h/` | clause-level capability claim (floats like other `/h/`) |
-| `/w/` | capability framed on the preceding `/ɡ/` |
+| Prefix | Scope | Mnemonic |
+|--------|--------|----------|
+| `/h/` | clause-level capability (with other `/h/` words) | a bowl for the whole clause |
+| `/w/` | capability on the preceding `/ɡ/` | a bowl for that property |
 
-a bowl holds **what it can** — hostless ability names that capacity without naming one activity root. Ordinary content still available (`zegeral` *cereal* / *a capacity*). Prefer **host + stance** whenever the activity fits one root ([Beginner ability](#ability)).
+Stance vowels match [Beginner](#ability-stance). Prefer **host + stance** whenever the activity fits one root. Bare `hegeral` / `wegeral` names ability as a **topic** only (ordinary [reference-suffix](reference-suffix.md)). Ordinary `zegeral` still means *cereal* / *a capacity*.
 
-Bare `hegeral` / `wegeral` = ability **topic** only (ordinary [reference-suffix](reference-suffix.md)).
+On **`egera` + stance**, use **-m** when you mean capacity as a metaphor; use **-l** when you mean a literal bowl / cereal frame.
 
-| Form | Stance | Gloss |
-|------|--------|--------|
-| bare host (no `x`) | ordinary word | no ability claim |
-| bare **`egera`** (no `x`) | **Topic** | Ability named only |
-| **`xa`** | **Capable** | can |
-| **`xe`** | **Temporary can’t** | can’t right now |
-| **`xo`** | **Modifiable can’t** | can’t; may change (speaker change unspecified) — soft default |
-| **`xu`** | **Irreversible can’t** | can’t; fixed as far as you can tell |
-
-Endings on **`egera` + stance** are ordinary [reference-suffix](reference-suffix.md) (same as host-attached ability). Overlay mood reading usually prefers **-m** when the published sense is figurative; **-l** when you mean capacity in a literal *bowl / cereal* frame.
+| Form | Stance | Reading | Mnemonic |
+|------|--------|---------|----------|
+| bare **`egera`** (no `x`) | **Topic** | Ability named only | no stance vowel: just the bowl |
+| **`xa`** | **Capable** | can | **`a`** add |
+| **`xe`** | **Temporary can’t** | can’t right now | **`e`** order |
+| **`xo`** | **Modifiable can’t** | can’t; may change (or unknown grain) | **`o`** one open *can’t* |
+| **`xu`** | **Irreversible can’t** | can’t; fixed as far as you can tell | **`u`** undo |
 
 ```
-`hegeraxel.`
+`zazawan hegeraxel.`
 
-gloss: `h-ABIL-unable-temporary`
+gloss: `z-grace` · `h-ABIL-unable-temporary`
 
-*Can’t right now (no single host / clause-wide).*
+*Azawan can’t right now (no single host / clause-wide).*
 ```
 
-#### Ability vs values vs restrictors
+Need **`xu`** on a need root is unmet need ([values](values.md)), not a competence *can’t*. Applicability *when* / *never* is [restrictors](restrictors.md) (`hal`, `har`, …). You can stack both: `vuzunuxol holozoxum` is modifiable can’t-sing **and** unmet competence.
 
-| Claim | Prefer |
-|-------|--------|
-| Can’t / can **this** activity or property | **host + `xa` / `xe` / `xo` / `xu`** ([Beginner](#ability)) |
-| Clause-wide / hostless capability | **`hegeraxa…`** / **`hegeraxe…`** / **`hegeraxo…`** / **`hegeraxu…`** (same under `/w/`) |
-| Need unmet + changeability | need **`xu…`** — [values](values.md) (`holozoxul` ≠ “can’t competence”) |
-| When / never / sometime the host applies | [restrictors](restrictors.md) (`hal`, `har`, …) |
-
-Stack when useful: e.g. can’t-sing plus unmet competence (`vuzunuxol` + `holozoxum`). Bare **`hal`** (*never*) is applicability, not tagged incapability. Need-root **`xu`** stays unmet need, not ability. Unspecified need **`ega`** 🥚 (*potential*) is not **`ABIL`**.
-
-| Agalan (schematic) | Reading |
-|---------------------|---------|
-| `vuzunuxel` | can’t sing **right now** |
-| `vuzunuxol` | can’t sing yet / may become able (or unknown) |
-| `vuzunuxul` | can’t sing (fixed / impossible as far as you can tell) |
-| `golorodoxal` | can lead (literal) |
-| `vuzunuxol holozoxum` | can’t sing (modifiable) **and** unmet competence |
-| `… hegeraxel` | can’t **right now** (no single host / clause-wide) |
-| `hegeral` | ability (**topic** only) |
+| Form | Job | Example |
+|------|-----|---------|
+| host + stance | can / can’t this activity | `zazawan vuzunuxel` *Azawan can’t sing right now* |
+| **`hegera` + stance** | clause-wide / hostless capability | `zuhubun hegeraxol` *Uhubun can’t (may change)* |
+| **`hegeral`** | ability as topic | `hegeral` |
+| need **`xu`** | unmet need | `holozoxum` (competence) |
+| restrictor | when the host applies | `hal` *never* |
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -257,19 +242,19 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zazawan hegeraxel.`
 :::
 
-**4.** *Can’t — that may change* (clause-wide; grain unspecified).
+**4.** *Can’t (that may change)* (clause-wide; grain unspecified).
 
 ::: details Show answer
 `hegeraxol.`
 :::
 
-**5.** *Can’t — fixed* (clause-wide).
+**5.** *Can’t (fixed)* (clause-wide).
 
 ::: details Show answer
 `hegeraxul.`
 :::
 
-**6.** *Ability* (topic only — no can / can’t stance).
+**6.** *Ability* (topic only: no can / can’t stance).
 
 ::: details Show answer
 `hegeral.`
@@ -316,17 +301,16 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **6.** `zegeral.`
 
 ::: details Show answer
-*Cereal / a capacity* (ordinary word — no ability stance).
+*Cereal / a capacity* (ordinary word: no ability stance).
 :::
 
 **7.** `gelel wegeraxel.`
 
 ::: details Show answer
-*Big — can’t right now* (capability framed on that property).
+*Big: can’t right now* (capability framed on that property).
 :::
 
 ## See also
 
 - Need unmet vs *can’t*: [values.md](values.md)
 - Applicability *when* / *never*: [restrictors.md](restrictors.md)
-- Mid-word **`x`** families: [x-compounds.md](x-compounds.md)

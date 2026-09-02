@@ -1,16 +1,18 @@
 # Phonology and phonotactics
 <a id="phonology"></a>
 
-How Agalan **sounds** and how syllables are built. Goals: easy to sing, spelling that shows pronunciation, and clear word boundaries (including inside compounds). This is the only grammar page that uses **IPA**. Grammar-design framing: [introduction.md](introduction.md#grammar-design). Fuller singability checklist: [Advanced](#singability-constraints).
+How Agalan **sounds**, and how you build syllables so spelling matches speech. The design favors easy singing and clear word edges (including inside compounds).
 
 ## Beginner
 <a id="beginner"></a>
 
 ### Why these sounds
 
-Agalan uses vowels that are not fully closed, so you can sing high and low without heavy vowel modification. Consonants prefer the **voiced** version so you can sustain a note across letters (voiceless stops the airflow briefly). You may still use unvoiced variants for style. Word shape keeps consonants at **onsets** and at the **word edge**, so held notes and quick singing do not fight mid-syllable stops — and the ending still marks where each word stops when rhythm eats pauses.
+Agalan vowels stay relatively open, so you can sing high and low without reshaping them much. Consonants prefer the **voiced** version (vocal cords buzzing) so you can hold a note across letters; a voiceless stop cuts the air for a moment. You may still use unvoiced variants for style.
 
-Singable vowels and clear edges — spelling shows the sound.
+Word shape puts consonants at the **start of a syllable** and at the **end of the word**, so a held note is not cut by a stop in the middle of a syllable. The ending still marks where each word stops when rhythm eats pauses.
+
+Singable vowels and clear edges: spelling shows the sound.
 
 ### Vowels
 
@@ -20,30 +22,32 @@ Cue words are Standard American English:
 |--------|-----|-------------|
 | **e** | /e̞/ | *bet* |
 | **u** | /ʌ/ | *but* |
-| **o** | /o/ | *boat* (no glide — like Spanish *no*) |
+| **o** | /o/ | *boat* (no glide, like Spanish *no*) |
 | **a** | /ɑ/ | *father* |
 
-These four sit in a mid-to-open range that stays singable at the top of an untrained range. Stacked vowels are separate syllables — not a glide: `juon` = *ju'on*. Hold each vowel; do not slide them into a diphthong.
+These four sit in a mid-to-open range that stays singable at the top of an untrained range. Two vowel letters in a row are two syllables. Hold each vowel; do not slide them into one sound.
 
-### Consonants (syllable onsets)
+`juon` = *ju'on* (/ju.on/).
 
-There is no phonemic voiced / unvoiced contrast; voiced is preferred so the vocal cords can stay engaged through the letter. Unvoiced variants are fine for style.
+### Consonants (start of a syllable)
+
+Voiced and unvoiced are not different letters. Prefer voiced so the vocal cords stay engaged; unvoiced is fine for style.
 
 | Letter | IPA | English cue | Unvoiced variant | Example |
 |--------|-----|-------------|------------------|---------|
-| **h** | /ɦ/ | *ahead* | /h/ — *hat* | `huan` /ɦu.ɑn/ |
+| **h** | /ɦ/ | *ahead* | /h/, *hat* | `huan` /ɦu.ɑn/ |
 | **w** | /w/ | *we* | | `wul` /wul/ |
-| **g** | /ɡ/ | *go* | /k/ — *kite* | `godogol` |
-| **d** | /d/ | *do* | /t/ — *toe* | `daxal` |
+| **g** | /ɡ/ | *go* | /k/, *kite* | `godogol` |
+| **d** | /d/ | *do* | /t/, *toe* | `daxal` |
 | **j** | /j/ | *yes* (Germanic *j* as in *ja*) | | `jael` /ja.el/ |
-| **b** | /b/ | *be* | /p/ — *pay* | `bodol` |
-| **z** | /z/ | *zoo* | /s/ — *sea* | `zazawan` |
+| **b** | /b/ | *be* | /p/, *pay* | `bodol` |
+| **z** | /z/ | *zoo* | /s/, *sea* | `zazawan` |
 | **m** | /m/ | *me* | | `zemogol` |
 | **n** | /n/ | *no* | | `na` /na/ |
-| **v** | /v/ | *vie* | /f/ — *fee* | `vuzunuxel` |
+| **v** | /v/ | *vie* | /f/, *fee* | `vuzunuxel` |
 | **l** | /l/ | *lie* | | `zel` /zel/ |
 | **r** | /ɹ/ | *red* | | `reu` /ɹeu/ |
-| **x** | /ʒ/ | *vision* (the *si*) | /ʃ/ — *shy* | `xuxul` |
+| **x** | /ʒ/ | *vision* (the *si*) | /ʃ/, *shy* | `xuxul` |
 
 ## Intermediate
 <a id="intermediate"></a>
@@ -54,29 +58,29 @@ There is no phonemic voiced / unvoiced contrast; voiced is preferred so the voca
 A content word has these parts, written as **one unbroken token**:
 
 1. Part-of-speech prefix
-2. Optional mid-word **l** after `/ɡ/` only — **left-bound** adjectives (`gl-`)
-3. The root(s) — more than one if compounded
+2. Optional mid-word **l** after `/ɡ/` only: **`gl-`**, when the adjective hangs on the word to its left
+3. The root(s); more than one if compounded
 4. The [reference suffix](reference-suffix.md) (**-l**, **-m**, **-n**, or **-r**)
-5. Optional plural **-sh** after the reference suffix — [plurality.md](plurality.md)
+5. Optional plural **-sh** after the reference suffix ([plurality.md](plurality.md))
 
-Number words are a closed exception built on the PoS prefix plus an **r**-initial marker ([number-word exception](#number-word-exception)).
+Number words are a closed exception: PoS prefix plus an **r**-initial marker ([number-word exception](#number-word-exception)).
 
-**Writing:** write **role letter + root + ending** as one word (`zazawan`); native Agalan is **lowercase** only ([capitalization](core.md#capitalization)). Full orthography: [core.md § Orthography](core.md#orthography).
+**Writing:** write **role letter + root + ending** as one word (`zazawan`). Native Agalan is **lowercase** only ([capitalization](core.md#capitalization)). Full orthography: [core.md § Orthography](core.md#orthography).
 
-**Roots** have form **V(CV)+** (vowel-initial; mid consonants are ordinary onsets). Compound roots are separated by mid-word **`x`**. A root does **not** end in a consonant — the only word-final consonants are the reference suffix (and optional plural **sh**). That keeps held notes on vowels inside the word.
+**Roots** have form **V(CV)+**: they start with a vowel, and each later consonant starts a new syllable. Compound roots are separated by mid-word **`x`**. The only consonants at the end of a word are the reference suffix (and optional plural **sh**). That keeps held notes on vowels inside the word.
 
-**Clear syllables:** a content root almost always starts with a vowel. Ending and beginning consonants are chosen so you never confuse which syllable a consonant belongs to (`vaban` = *va'ban*, not *vab'an*; `zalul` = *z-alu-l* — mid **l** onset in the root, final **-l** the ending) — syllables do not end with a consonant except at the **end of the word**. Spelling therefore has one pronunciation path; lexical stress is not part of the system (musical rhythm may place emphasis).
+**Clear syllables:** a content root almost always starts with a vowel. Ending and beginning consonants are chosen so you can hear which syllable a consonant belongs to (`vaban` = *va'ban*; `zalul` is prefix **z**, root **alu**, ending **-l**: the **l** in the root starts `lu`, and the last **l** is the ending). A syllable ends with a consonant only at the **end of the word**. Spelling therefore has one pronunciation path. The writing system does not mark stress; musical rhythm may place emphasis.
 
-**Word edges:** all **content** words end with a reference suffix (**-l** / **-m** / **-n** / **-r**), optionally followed by plural **-sh** (/ʃ/). Allowed word-final clusters: **-lsh**, **-msh**, **-nsh**, **-rsh**. Digraph **sh** is only this plural marker (word-final, after a reference suffix) — not an ordinary root consonant. Those endings are the audible stop when song compresses pauses. 
+**Word edges:** all **content** words end with a reference suffix (**-l** / **-m** / **-n** / **-r**), optionally followed by plural **-sh** (/ʃ/). Allowed word-final clusters: **-lsh**, **-msh**, **-nsh**, **-rsh**. Digraph **sh** is this plural marker (word-final, after a reference suffix). Those endings are the audible stop when song compresses pauses.
 
-**No clash with endings / numbers:** mid-root **l** / **r** are always followed by a vowel inside the root, so they are not mistaken for a final suffix. Ordinary content after a PoS letter begins with a **vowel**, so **`PoS+r…`** stays [number-only](#number-word-exception).
+**Mid `l` and `r` stay clear:** inside a root, **l** / **r** are always followed by a vowel, so they read as the start of a syllable rather than as a suffix. Ordinary content after a PoS letter begins with a **vowel**, so **`PoS+r…`** is [number-only](#number-word-exception).
 
-**Compounds:** productive assemblies use mid-word **`x`** between roots. Mid-word **`x`** is only the compound joiner (never part of a root); word-initial **`x`** is the discourse-marker prefix. A **lexical compound** may look like one long simple root (`ohohulabede` *bedroom*) — closed in the dictionary, not assembled with **`x`** in speech. Family map: [x-compounds.md](x-compounds.md).
+**Compounds:** productive assemblies use mid-word **`x`** between roots. Mid-word **`x`** joins roots. Word-initial **`x`** is the discourse-marker prefix. A **lexical compound** may look like one long simple root (`ohohulabede` *bedroom*): it is a dictionary stem, assembled without **`x`** in speech.
 
 ### Number-word exception
 <a id="number-word-exception"></a>
 
-After a PoS prefix, a following **r** (start of the number marker) may form a cluster that ordinary content words never use (e.g. `/ɡ/`+`r`, `/z/`+`r`, `/v/`+`r`, `/h/`+`r`, `/j/`+`r`, `/x/`+`r`) — content roots are **vowel-initial**, so **`r` as a root onset** only appears **after a vowel** inside the root (`uru`), never immediately after the PoS letter. That **`PoS+r`** cluster is legal **only** in [number words](numbers.md). Number-marker **V** is usually a single vowel (`ra` / `ru` / `re` / `ro`); end-relative ordinals use digraph **`eu`** (`reu…`, writing **`#-`**) — stacked vowels as elsewhere, not join **`ue`**. Number stems are a closed formal grammar and must not be assigned as ordinary lexicon roots. Ordinary vs number-specific endings: [reference-suffix.md](reference-suffix.md#number-word-exception).
+After a PoS prefix, a following **r** (start of the number marker) may form a cluster that ordinary content words never use (for example `/ɡ/`+`r`, `/z/`+`r`, `/v/`+`r`, `/h/`+`r`, `/j/`+`r`, `/x/`+`r`). Content roots are **vowel-initial**, so **`r` starting a root syllable** only appears **after a vowel** inside the root (`uru`). The **`PoS+r`** cluster is legal **only** in [number words](numbers.md). Number-marker **V** is usually a single vowel (`ra` / `ru` / `re` / `ro`); end-relative ordinals use digraph **`eu`** (`reu…`, writing **`#-`**), stacked vowels like `juon`. Treat number stems as number grammar. Ordinary vs number-specific endings: [reference-suffix.md](reference-suffix.md#number-word-exception).
 
 ### Letter names
 <a id="letter-names"></a>
@@ -90,10 +94,10 @@ Vowels are named by holding the vowel. Consonants take one CV syllable. Recite i
 `agada` → ***a ga a da a***
 ```
 
-[Digit syllables](numbers.md#digits) keep mixed vowels for distinctiveness. Letter names that share an onset with a digit use the **series opposite** vowel: **`a`↔`u`**, **`o`↔`e`**.
+[Digit syllables](numbers.md#digits) keep mixed vowels for distinctiveness. Letter names that share a starting consonant with a digit use the **series opposite** vowel: **`a`↔`u`**, **`o`↔`e`**.
 
-| Onset | Digit syllable | Letter name | Mnemonic |
-|-------|----------------|-------------|----------|
+| Letter | Digit syllable | Letter name | Mnemonic |
+|--------|----------------|-------------|----------|
 | **w** | wo (1) | **we** | **o**↔**e** |
 | **d** | du (2) | **da** | **u**↔**a** |
 | **r** | re (3) | **ro** | **e**↔**o** |
@@ -105,7 +109,7 @@ Vowels are named by holding the vowel. Consonants take one CV syllable. Recite i
 | **n** | na (9) | **nu** | **a**↔**u** |
 | **z** | zo (0) | **ze** | **o**↔**e** |
 
-Three onsets are not digits. Their names follow the English letter-name, mapped onto Agalan vowels:
+Three letters are not digits. Their names follow the English letter-name, mapped onto Agalan vowels:
 
 | Letter | Name | Mnemonic |
 |--------|------|----------|
@@ -113,7 +117,7 @@ Three onsets are not digits. Their names follow the English letter-name, mapped 
 | **b** | **be** | *bee* |
 | **x** | **xe** | *eks* |
 
-Plural **-sh** is the [word-edge](#phonotactics) ending, not a letter name. Pause between names so **`da`** + **`a`** stay two syllables. In a clause, package the glyph as a [mention](spans.md) (`d{z}` — interior spoken ***ze***). Unmarked **a** / **e** / **o** / **u** as names are not [revisers](revisers.md) (`al` / `el` / …).
+Plural **-sh** is the [word-edge](#phonotactics) ending. Pause between names so **`da`** + **`a`** stay two syllables. In a clause, package the glyph as a [mention](spans.md) (`d{z}`: interior spoken ***ze***).
 
 ## Advanced
 <a id="advanced"></a>
@@ -121,20 +125,20 @@ Plural **-sh** is the [word-edge](#phonotactics) ending, not a letter name. Paus
 ### Singability constraints
 <a id="singability-constraints"></a>
 
-The Beginner rules above are the usable inventory. This checklist is the design filter behind them — what Agalan avoids so ordinary singing stays easy:
+These choices keep ordinary singing easy:
 
 | Constraint | Why it helps | How Agalan keeps it |
 |------------|--------------|---------------------|
-| No fully closed vowels | Closed vowels shrink comfortable high range | Four mid-to-open vowels (/e̞ ʌ o ɑ/) |
-| No diphthongs | Glides force tract changes mid-note | Stacked letters = separate syllables (`juon` = *ju'on*) |
-| Few consonant clusters | Clusters are harder to pronounce quickly | Ordinary shape is onset + vowel; limited exceptions below |
-| No voice contrast | Voiceless stops cut the note; singers often voice them anyway | Voiced preferred; unvoiced allowed as style only |
-| No mid-word coda | Ending a syllable on a consonant breaks a held note | Roots are **V(CV)+**; coda only at the **word edge** |
+| Mid-to-open vowels | Closed vowels shrink comfortable high range | Four mid-to-open vowels (/e̞ ʌ o ɑ/) |
+| One vowel per letter | A slide from one vowel to another forces tract changes mid-note | Stacked letters = separate syllables (`juon` = *ju'on*) |
+| Few consonant clusters | Clusters are harder to pronounce quickly | Ordinary shape is start-of-syllable consonant + vowel; limited exceptions below |
+| Voiced preferred | Voiceless stops cut the note; singers often voice them anyway | Voiced preferred; unvoiced allowed as style only |
+| No mid-word syllable-final consonant | Ending a syllable on a consonant breaks a held note | Roots are **V(CV)+**; a final consonant only at the **word edge** |
 | No lexical stress | Music already places emphasis | Rhythm may stress a beat; spelling does not encode stress |
-| Spelling = pronunciation | Singer need not memorize special readings | One path from letters to sound |
+| Spelling = pronunciation | You need not memorize special readings | One path from letters to sound |
 | Audible word edges | Song often removes speech pauses | Content words end in **-l** / **-m** / **-n** / **-r** (optional **-sh**) |
 
-**Limited clusters (still legal):** left-bound **`gl-`**; number-word **`PoS+r`**; word-final **-lsh** / **-msh** / **-nsh** / **-rsh**. 
+**Limited clusters (still legal):** left-hanging **`gl-`**; number-word **`PoS+r`**; word-final **-lsh** / **-msh** / **-nsh** / **-rsh**.
 
 **Try it:** sing a short Agalan line quickly at a high comfortable pitch, then compare a line that piles closed vowels, clusters, and mid-word stops:
 
@@ -142,7 +146,7 @@ The Beginner rules above are the usable inventory. This checklist is the design 
 
 / za.za.wan ɡu.zu.mum /
 
-Versus (not Agalan — built to violate the constraints):
+Made-up contrast (built to violate the constraints):
 
 / seiɹ ˈʈʂuɹt tis ˈheb.ɡiɹn fuofts /
 

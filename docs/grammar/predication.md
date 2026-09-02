@@ -1,24 +1,19 @@
 # Predication (classification and identity)
 <a id="predication"></a>
 
-How Agalan says English *to be* for **kind / role** (*Azawan is a dog*) and **identity** (*Clark is Superman*) — without a general *to-be* verb.
-
-Why no copula: every job English gives *to be* already has its own shape here. Kind / role is subject + classifying adjective; identity is the closed **SAME** pattern ([below](#identity)); equal degree on a scale is the [equative](comparatives.md#equatives). A general *to-be* would blur those distinct jobs without adding a meaning of its own.
+How Agalan says English *is* for **kind / role** (*Azawan is a dog*) and **identity** (*Clark is Superman*).
 
 ## Beginner
 <a id="beginner"></a>
 
-### Property pattern (no *to-be* verb)
+### Property pattern
 <a id="zero-copula"></a>
 
-Assert a property of a subject **without** a verb (`/v/`): subject + adjective (`/ɡ/`), plus any extra detail (`/w/`) or extra noun (`/b/`) on that adjective. Mood, tense, evidentiality, and values still attach with `/h/` (the clause) or `/w/` (on the property).
+Put a property on the subject with an adjective (`/ɡ/`): name (or other noun) plus the describing word. English *is* in *Azawan is challenging* is already in that pair. Extra detail (`/w/`) or an extra noun (`/b/`) hangs on the adjective. Clause-level extras (`/h/`) still mark the whole statement.
 
-Content `/v/` is for events and actions — not a light *be* between two nouns.
-
-| Shape | Reading |
-|-------|---------|
-| `zazawan gomonum` | *Azawan is challenging* (property) |
-| `zodavan gonunul buzuban` | *Clark is (identical to) Superman* — [identity](#identity) |
+| Form | Job | Example | Mnemonic |
+|------|-----|---------|----------|
+| subject + `/ɡ/` | property (*is ADJ*) | `zazawan gomonum` *Azawan is challenging* | the adjective does the *is* job |
 
 ```
 `zazawan gomonum.`
@@ -28,18 +23,16 @@ gloss: `z-grace` · `g-challenging`
 *Azawan is challenging.*
 ```
 
-property sits on `/ɡ/` like any adjective; there is no light *be* verb between two nouns for classification.
-
 ### Classification
 <a id="classification"></a>
 <a id="kind-ascription"></a>
 
-**Classification** = kind / role / category ascription. Treat the kind as an ordinary **adjective** on the host — the same way absolute scalars work.
+**Classification** is saying someone or something **is that kind** (role, category). Use the same adjective pattern: the kind sits on `/ɡ/` on the host.
 
 | Pattern | Example | Reading |
 |---------|---------|---------|
 | Kind / role as `/ɡ/` | `zazawan godogol` | *Azawan is a dog* |
-| Named category / titled role | `zazawan godogon` | *Azawan is Dog* (proper designation) — [**-n** on `/ɡ/`](reference-suffix.md) |
+| Named category / titled role | `zazawan godogon` | *Azawan is Dog* (proper designation); [**-n** on `/ɡ/`](reference-suffix.md) |
 
 ```
 `zazawan godogol.`
@@ -49,29 +42,17 @@ gloss: `z-grace` · `g-dog`
 *Azawan is a dog.*
 ```
 
-**Kind noun vs kind adjective:** when you **refer** to the kind as a participant, use a noun slot (`zodogol`). When you **ascribe** the kind to a named or resumed host, use an adjective on that host (`zazawan godogol`).
+When you **talk about** the kind as a participant, use a noun (`zodogol` *a dog*). When you **say the host is that kind**, keep the kind on the adjective (`zazawan godogol`). Event and action meanings use a verb (`/v/`). English *be* between two nouns is this adjective pattern, not a verb.
 
 ### Identity (**SAME**)
 <a id="identity"></a>
 <a id="same"></a>
 
-**Identity** = two expressions pick **one** referent (*Clark is Superman*, *this is that*). Use the closed complex adjective **`SAME`** (`gonunum` + extra noun).
+**Identity** is two expressions for **one** person or thing (*Clark is Superman*, *this is that*). Use the closed adjective **`SAME`**: `gonunu` plus an extra noun (`/b/`).
 
-| Concept | Gloss | Lexicon root |
-|---------|--------|--------------|
-| **SAME** | *identical-to* / *same-as* | **`onunu`** 🪙 *coin* → *same* |
-
-a **coin** has two faces and one substance — different labels are faces; co-reference is the one coin.
-
-```
-`gonunum buzuban`
-```
-
-| Piece | Role |
-|-------|------|
-| host NP | the expression treated as given / topic |
-| **`gonunu`** | *identical-to* / *same-as* (closed relation) |
-| extra noun (`/b/`) | the other label or description |
+| Form | Job | Mnemonic |
+|------|-----|----------|
+| **`onunu`** (`gonunu` + `/b/`) | *identical-to* / *same-as* | 🪙 *coin*: two faces, one substance (two labels, one referent) |
 
 ```
 `zodavan gonunul buzuban.`
@@ -81,12 +62,18 @@ gloss: `z-odava` · `g-SAME` · `b-uzuba`
 *Clark is Superman.*
 ```
 
-`onunu`+`/b/` stay **contiguous**, like other complex adjectives (`gogobul bazawan`).
+| Piece | Role |
+|-------|------|
+| host noun | the expression treated as given / topic |
+| **`gonunu`** | *identical-to* / *same-as* |
+| extra noun (`/b/`) | the other label or description |
+
+`gonunu` and its extra noun stay **next to each other**, like other adjective-plus-extra-noun groups (`gogobul bazawan`).
 
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills on this Beginner band. Try each item before opening **Show answer**. Property and kind sit on `/ɡ/`; identity uses **`gonunul`** plus `/b/` — not a *to-be* verb.
+Short drills on this Beginner band. Try each item before opening **Show answer**. Property and kind sit on `/ɡ/`; identity uses **`gonunul`** plus `/b/`.
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `abogo` *book* · `elulu` *blue* · `uzumu` smile → *happy* (**-m**) · `omonu` *challenging* (**-m**) · `awala` *walk* · `elebe` *sleep* · `onunu` **SAME** · `odava` *Clark* · `uzuba` *Superman*
 
@@ -195,22 +182,24 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 ### Classification packaging
 
+Once kind sits on `/ɡ/`, you can hedge it, mark it as a type, or deny it.
+
 | Pattern | Example | Reading |
 |---------|---------|---------|
 | Soft / hedged class | plain classifying clause (`zazawan godogol`) with a `/w/` hedge stacked on the classifying `/ɡ/` | *Azawan is something of a dog* / *a dog, sort of* |
-| Characterizing / habitual | `zazawan godogol hual` | *Azawan is the dog type* — [**hual**](restrictors.md) |
-| Negation | `zazawan gul godogol` | *Azawan is not a dog* — [negation **u**](coordination.md#negation-u) |
-
-Values still stack on the classifying `/ɡ/` (`godogol w-…xa…`) when the point is gratitude, judgment, or other need framing of that kind — [values.md](values.md).
+| Characterizing / habitual | `zazawan godogol hual` | *Azawan is the dog type*; [**hual**](restrictors.md) |
+| Negation | `zazawan gul godogol` | *Azawan is not a dog*; [negation **u**](coordination.md#negation-u) |
 
 ### **SAME** endings and soft identity
+
+The same identity pattern takes the usual endings. **-l** stands behind the match; **-m** is "same for our purposes"; **-n** is a titled frame; **-r** resumes a prior identity claim.
 
 | Ending | Reading |
 |--------|---------|
 | **-l** | stand behind identity (closed) |
 | **-m** | soft / practical identity (*same for our purposes*) |
 | **-n** | named / conventional identity frame (rare; titled equivalence) |
-| **-r** | resume a prior identity ascription |
+| **-r** | resume a prior identity claim |
 
 | Agalan | Reading |
 |---------|---------|
@@ -218,11 +207,9 @@ Values still stack on the classifying `/ɡ/` (`godogol w-…xa…`) when the poi
 | `zodavan gonunum buzuban` | soft: *Clark is basically Superman* |
 | `zodavan gul gonunul buzuban` | *Clark is not (identical to) Superman* |
 | `zodavan gonunul wahadem buzuban` | *Clark is allegedly Superman* |
-| `zeberel gonunul buzuban` | NP-internal: *the person who is Superman* |
+| `zeberel gonunul buzuban` | inside a noun phrase: *the person who is Superman* |
 
-Ordinary content still available (`zonunul` *a coin*; `gonunul` as *token*-like when not in the identity frame). The special reading wins under closed **`gonunu…` + `/b/`** used as the property.
-
-Comparative claims as clause content use the same no-*be*-verb shape with a ranked fence — [comparatives](comparatives.md).
+The coin root is still available as ordinary *coin* (`zonunul`) or as a *token*-like adjective when it is not this identity frame. Closed **`gonunu…` + `/b/`** as the property is the identity reading.
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>

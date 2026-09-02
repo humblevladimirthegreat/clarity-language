@@ -1,6 +1,6 @@
 # Plurality
 
-Optional **-sh** after the [reference suffix](reference-suffix.md) marks an **associative group** — *anchor and associates*.
+Optional **-sh** after the [reference suffix](reference-suffix.md) marks an **associative group**: the named person or thing **plus associates**.
 
 ## Beginner
 <a id="beginner"></a>
@@ -8,14 +8,9 @@ Optional **-sh** after the [reference suffix](reference-suffix.md) marks an **as
 ### Core sense
 <a id="associative"></a>
 
-Without **-sh**, the word picks **one** referent. With **-sh**, the default content reading is **associative**: the **anchor plus a contextually salient associate set** (family, coworkers, unit, household, …). Exact who counts as an associate is determined by discourse and situation.
+Without **-sh**, the word picks **one** referent. With **-sh**, you name an **anchor plus a nearby associate set** (family, coworkers, unit, household, and so on). Who counts as an associate comes from the conversation and the situation.
 
-| Ending | Reading |
-|--------|---------|
-| `…l` / `…m` / `…n` / `…r` | singular (one referent / one introduction) |
-| `…lsh` / `…msh` / `…nsh` / `…rsh` | associative group (or collective ascription on `/ɡ/`) |
-
-**-sh** = **s**et with the anchor — *Azawan-sh* ≈ *Azawan and associates*.
+**-sh** = **s**et with the anchor. *Azawan-sh* reads as *Azawan and associates*.
 
 ```
 `zazawansh vawalal.`
@@ -33,52 +28,57 @@ gloss: `z-←grace-sh` · `v-sit`
 *They (that one and associates) sit.*
 ```
 
+| Ending | Reading |
+|--------|---------|
+| `…l` / `…m` / `…n` / `…r` | singular (one referent / one introduction) |
+| `…lsh` / `…msh` / `…nsh` / `…rsh` | associative group |
+
 ### Word shape
 
 ```
 [role letter] + root (+ x + root ...) + ending + (optional -sh)
 ```
 
-**-sh** sits **after** the reference suffix only. Allowed finals: **-lsh**, **-msh**, **-nsh**, **-rsh** ([phonology.md](phonology.md#phonotactics)).
+**-sh** sits **after** the reference suffix only. The allowed finals are **-lsh**, **-msh**, **-nsh**, and **-rsh** ([phonology.md](phonology.md#phonotactics)).
 
 ### By ending
 
-**-sh** keeps the ending’s discourse job and only adds group reference (or collective ascription on `/ɡ/`).
+**-sh** keeps the ending’s discourse job and only adds group reference.
 
 | Form | Discourse job |
 |------|-----------------|
 | **-lsh** | Indefinite **associative group**, literal (*some cats* as a set) |
 | **-msh** | Indefinite **associative group**, metaphorical |
 | **-nsh** | **Named / titled group** (*the Beatles*, *Team Alpha*, *the Alps*) |
-| **-rsh** | Definite **associative** resume — prior referent **and associates**, or resume of a prior group |
+| **-rsh** | Definite **associative** resume: prior referent **and associates**, or resume of a prior group |
 
 Bare **-l** / **-m** still always introduce; **-lsh** / **-msh** introduce a **group** indefinite. Resume of a group is **-rsh**.
 
-**-lsh** is not kind-generic (*cats in general*) and not inclusive *we* — inclusive *we* is **`aha`**, not speaker **-sh** ([clusivity](pronouns.md#clusivity)).
+English plural *cats* can mean *cats in general*. Agalan **-lsh** is a **set in this situation**. Inclusive *we* is **`aha`**, not speaker **-sh** ([clusivity](pronouns.md#clusivity)).
 
 ### Nouns (`/z/`, `/d/`, `/b/`)
 
-Natural home for **-sh**. The argument’s referent is an associative set: *some cats*, *Azawan and associates*.
+On a noun, **-sh** makes the argument an associative set: *some cats*, *Azawan and associates*.
 
 * **-lsh** / **-msh** — first mention of a discourse group of that kind.
 * **-nsh** — a named plural / titled group.
 * **-rsh** — prior noun **and associates**.
 
-*Every cat* and bare quantity-without-a-set are different jobs — not **-lsh**.
+*Every cat* and a count with no set use other constructions (joins and number words), not **-lsh**.
 
 ### Person-role **-sh**
 <a id="person-role-sh"></a>
 
-Special pronouns keep **-sh** available, but the default is **not** uniform associative:
+Special pronouns take **-sh**, with a reading that depends on the role:
 
-| Form | **-sh** reading |
-|------|-----------------|
-| **`ugobo…sh`** (`zugobonsh`, …) | speaker **and associates** (listener not assumed) |
-| **`edone…sh`** (`zedonensh`, …) | **address set** — all current addressees; **not** “you and your family” |
-| **`aha`** (`zahan`, …) | already the interlocutor set — do **not** add **-sh** for ordinary inclusive *we* |
-| name / content **-r**…**-sh** | that person **and associates** |
+| Form | **-sh** reading | Mnemonic |
+|------|-----------------|----------|
+| **`ugobo…sh`** (`zugobonsh`, …) | speaker **and associates** (listener not assumed) | speaker’s set |
+| **`edone…sh`** (`zedonensh`, …) | **address set**: all current addressees | everyone you are talking to |
+| **`aha`** (`zahan`, …) | already the interlocutor set | handshake *we*; leave **-sh** off for ordinary inclusive *we* |
+| name / content **-r**…**-sh** | that person **and associates** | same as noun **-sh** |
 
-*You (singular) and your associates* → **name…**-sh**, not **`edone…sh`**. Inclusive *we* → **`aha`**, not **`ugobo…sh`**.
+*You (singular) and your associates* is **name…**-sh** (`zululonsh`), not **`edone…sh`**. Inclusive *we* is **`aha`**, not **`ugobo…sh`**.
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -198,9 +198,9 @@ When membership matters and is not listed:
 1. **Explicit join / except wins** (`ul dedonen` = associates minus the listener).
 2. Else **recently named cohort** (family introduced, team title, …).
 3. Else **institutional frame** of the scene (this meeting, this household).
-4. Else **underspecified** — do not force the listener in or out.
+4. Else leave membership **open**: the listener may or may not be in the set.
 
-Mark when the wrong reading would matter: co-agency → **`aha`** or a join; “not you” → speaker/name **-sh** or a join that omits the listener.
+If the wrong reading would matter, mark it: co-agency with **`aha`** or a join; “not you” with speaker/name **-sh** or a join that omits the listener.
 
 **Address-set resolution:** prefer everyone in this turn’s vocative cluster, plus anyone still held as addressee by context.
 
@@ -208,13 +208,13 @@ Mark when the wrong reading would matter: co-agency → **`aha`** or a join; “
 <a id="verbs-v"></a>
 <a id="collective-doing"></a>
 
-On `/v/`, **-sh** marks **collective doing**: the event is **one shared act**, not several parallel doings. A plural subject alone does not force **-sh**. Noun **-sh** grows **who** the subject is; verb **-sh** marks **how** the doing is structured. Same pile story as [collective ascription](#collective-ascription) on `/ɡ/`.
+On `/v/`, **-sh** marks **collective doing**: the event is **one shared act**. A plural subject alone leaves that open. Noun **-sh** grows **who** the subject is; verb **-sh** marks **how** the doing is structured. The same “one pile” idea appears as [collective ascription](#collective-ascription) on `/ɡ/`.
 
 | Shape | Reading |
 |-------|---------|
-| subject set + singular `/v/` | underspecified / each (*they walk* — together or separately, or don’t care) |
+| subject set + singular `/v/` | together, separately, or don’t care (*they walk*) |
 | subject set + `/v/`…**-sh** | **collective** (*they walk as one outing*) |
-| named person + `/v/`…**-sh** | that person’s doing is **joint** — unnamed others share the act, off the subject |
+| named person + `/v/`…**-sh** | that person’s doing is **joint**: unnamed others share the act, off the subject |
 | group-kind singular (*the team*) + `/v/`…**-sh** | the group acts **as one unit** |
 
 | Example | Gloss |
@@ -226,46 +226,45 @@ On `/v/`, **-sh** marks **collective doing**: the event is **one shared act**, n
 
 Count (*three times*) and habit (*always*) stay clause framing: [numbers](numbers.md) under `/h/`, or **`hual`**. **-rsh** on `/v/` resumes a prior **collective** doing (*still as one shared act*).
 
-
 ### Adjectives (`/ɡ/`) — collective
 <a id="adjectives-g"></a>
 <a id="collective"></a>
 <a id="collective-ascription"></a>
 
-On `/ɡ/`, **-sh** marks **collective ascription**: the property holds of the **host set as one unit**, not of members severally.
+On `/ɡ/`, **-sh** marks **collective ascription**: the property holds of the **host set as one unit**.
+
+Adjective **-sh** = the set **shares** the property as one pile. It does not mean “more red.”
 
 | Shape | Reading |
 |-------|---------|
-| host set + singular `/ɡ/` | distributive or underspecified (*the boxes are heavy* — each, or don’t care) |
+| host set + singular `/ɡ/` | each member, or don’t care (*the boxes are heavy*) |
 | host set + `/ɡ/`…**-sh** | **collective** (*heavy as a pile*; *vast as a team*) |
 
-adjective **-sh** = the set **shares** the property as one pile — not “more red.”
-
-Most useful with [phrase join](coordination.md): SHARED singular scale under **`a`** is already **distributive**; SHARED **/ɡ/…-sh** is **collective**.
+Most useful with a [phrase join](coordination.md): SHARED singular scale under **`a`** is already **distributive** (each member); SHARED **/ɡ/…-sh** is **collective**.
 
 | Example | Gloss |
 |---------|-------|
 | `zulebol zolozol zal gudurum` | *the file-box and the toolbox are (each) heavy* |
-| `zulebol zolozol zal gudurumsh` | *heavy together* — collective SHARED |
+| `zulebol zolozol zal gudurumsh` | *heavy together* (collective SHARED) |
 | `zahadalr gumolam` | *the team is vast* (group-level size) |
 | `zulebolsh gudurum` | *the file-boxes are heavy* (members / plain) |
 | `zulebolsh gudurumsh` | *the file-boxes are heavy collectively* |
 
-**-rsh** on `/ɡ/` resumes a prior **collective** ascription (*still collectively so*), not “those red ones” (entity plurality stays on the noun).
+**-rsh** on `/ɡ/` resumes a prior **collective** ascription (*still collectively so*). Entity plurality stays on the noun.
 
-**Scale / continuum `/ɡ/`** in [comparatives](comparatives.md) and [ranges](numbers.md#ranges) stays **singular** — one line. Do not pluralize SHARED scale or continuum adjectives.
+A **scale or continuum** adjective in [comparatives](comparatives.md) and [ranges](numbers-applied.md#ranges) stays **singular** (one line). Keep SHARED scale and continuum adjectives singular.
 
-**Not adjective -sh:** *red books* → plural on the **noun**, singular `/ɡ/` *red*. Character trait → singular `/ɡ/` + **`hual`**. *Both are challenging* → distributive SHARED **`… zal gomonum`**.
+Color and trait stay singular on `/ɡ/` while the **noun** takes **-sh** (*red books*: plural noun, singular *red*). Character trait uses singular `/ɡ/` + **`hual`**. *Both are challenging* uses distributive SHARED **`… zal gomonum`**.
 
 ### Vocatives (`/j/`)
 
-Address a **group**: **-lsh** for kind-based group address (*hey, kids*); **-nsh** for a titled group (*Team Alpha*); **-rsh** to call a prior addressee **and associates**. Multi-addressee role without naming → **`jedonensh`**. *Everyone* → bare **`…ual`**, not **-lsh**.
+Address a **group**: **-lsh** for kind-based group address (*hey, kids*); **-nsh** for a titled group (*Team Alpha*); **-rsh** to call a prior addressee **and associates**. Multi-addressee role without naming is **`jedonensh`**. *Everyone* uses bare **`…ual`**.
 
 ### Where **-sh** sits
 
 **-sh** marks group reference on **nouns** (`/z/` `/d/` `/b/`), **vocatives**, **person-role** specials (readings above), **collective doing** on `/v/`, and **collective ascription** on `/ɡ/` (SHARED scale / continuum adjectives stay singular). Habit is **`hual`**. Count is a [number](numbers.md) word (`zagadalsh g+3`). Plural material *inside* a non-opaque span marks **-sh** on those inner words.
 
-Quantity `>1` is digitless **`g+`** (may co-occur with noun **-lsh**). Generics / *every K* use [coordination](coordination.md#universals-domains-generics) (`zual gagadal`, habitual **`hual`**). Inclusive *we* / address set: [pronouns](pronouns.md#clusivity).
+Quantity `>1` is digitless **`g+`** (it may co-occur with noun **-lsh**). Generics / *every K* use [coordination](coordination.md#universals-domains-generics) (`zual gagadal`, habitual **`hual`**). Inclusive *we* / address set: [pronouns](pronouns.md#clusivity).
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>

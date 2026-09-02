@@ -7,7 +7,7 @@ Count and rank with number words. A whole numeric value is **one word**, even wh
 ## Beginner
 <a id="beginner"></a>
 
-Count and rank with a **`/ɡ/`** number word after the noun. Write the short form (`g+3`, `g#2`) and say the full spoken word — [Saying it aloud](#digits) gives the whole recipe on this band.
+Count and rank with a **`/ɡ/`** number word after the noun. Write the short form (`g+3`, `g#2`) and say the full spoken word. [Saying it aloud](#digits) gives the whole recipe on this band.
 
 ### Counts (`g+N`)
 
@@ -42,10 +42,10 @@ gloss: `z-book` · `g-#2`
 
 A spoken number word is **PoS sound + marker syllable + digit syllables + ending**. On this band you need two marker syllables:
 
-| Marker | Spoken | Written |
-|--------|--------|---------|
-| count | **ra** | `+` |
-| rank | **re** | `#` |
+| Marker | Spoken | Written | Mnemonic |
+|--------|--------|---------|----------|
+| count | **ra** | `+` | **`a`** add: how many |
+| rank | **re** | `#` | **`e`** order: which place |
 
 Digits are spoken as remapped CV syllables (current vowels; preferred voiced consonants):
 
@@ -64,11 +64,11 @@ The default ending is exact **-l**, spoken as its own final syllable. Assemble l
 - `g+20` → g + ra + du zo → *graduzol* (*twenty*)
 - digitless `g+` → g + ra + l → *gral* (*more than one*)
 
-Negative scalars (**ru**), label strings (**ro**), end-relative ranks (**reu**), exponent words, and stress rules come later ([Word shape](#word-shape), [Stress](#stress-pronunciation-guide)) — everything here works with just **ra** / **re** plus the digit table above.
+Everything on this band uses **ra** / **re** plus the digit table above. More marker syllables are Intermediate.
 
 ### More than one (`g+`)
 
-Digitless **`g+`** = the count is **more than one**, without naming N. Noun group-reference still uses [**-sh**](plurality.md) — quantity vs group are different jobs and may co-occur (`zagadalsh g+`).
+Digitless **`g+`** = the count is **more than one**, without naming N. Group-reference on the noun still uses [**-sh**](plurality.md). Quantity and group are different jobs and may co-occur (`zagadalsh g+`).
 
 ```
 `zagadalsh g+.`
@@ -78,16 +78,14 @@ gloss: `z-cat-sh` · `g-+`
 *Cats — more than one.*
 ```
 
-empty after **`+`** = plural amount, not “some unspecified member.”
-
-Overlays, writing marks, and exponents are Intermediate / Advanced — **optional** for a first dialogue corpus. Percent, ranges, measures, times, and labels are collected in [numbers-applied.md](numbers-applied.md).
+Empty after **`+`** is a plural amount. English *some cats* (an unnamed member) is a different job: use the noun ending, not this number word.
 
 ### Translation practice
 <a id="translation-practice"></a>
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Count with `g+N`, rank with `g#N`, and use digitless **`g+`** with **-sh** on the noun for *more than one*.
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` · `agada` *cat* · `odogo` *dog* · `abogo` *book* · `ohohu` *house* · `agada` *cat* · `eje` *see* · `uwuru` *write*
+**Roots used here:** `azawa` / `ululo` / `uhubu` · `agada` *cat* · `odogo` *dog* · `abogo` *book* · `ohohu` *house* · `eje` *see* · `uwuru` *write*
 
 #### English → Agalan
 
@@ -192,20 +190,22 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 ## Intermediate
 <a id="intermediate"></a>
 
-Word shape, other prefixes, overlays, writing marks, and style. Percent, ranges, measures, times, and labels are in [numbers-applied.md](numbers-applied.md#intermediate).
+Word shape, other prefixes, overlays, writing marks, and style.
 
 ### Word shape
+
+Speech always uses one full CV word. You already know PoS + marker + digits + ending. Intermediate fills in the other markers, exponents (the *order of magnitude* piece before the ordinary digits, called the **mantissa**), endings, and overlays.
 
 ```
 [PoS] + r + V + ( [exponent?] [mantissa digits?] )* + [ending]
 ```
 
-1. **PoS** — same prefix inventory as elsewhere; [roles for number words](#parts-of-speech-on-numbers) below.
-2. **Number marker** — consonant **r** plus a vowel **V** (see [Marker vowel](#marker-vowel-referential-identity)). **V** is usually a single vowel; end-relative ordinals use digraph **`eu`**. The PoS+`r` cluster is a [number-only phonotactic exception](phonology.md#phonotactics).
-3. **Zero or more digit groups** — each group is an optional exponent and optional mantissa digits (at least one of the two **when the group is present**, except a [digitless exponent](#digitless-exponents) group is **`ba`/`bu` alone**). Digits compound with **no** **x** separator. There is **no per-group polarity**; sign (when it applies) is once for the whole word — see [Sign](#sign). **No groups** = [unspecified magnitude](#zero-digit-groups) of that marker identity (or [digitless **-r** anaphora](#number-endings)).
-4. **Ending** — `-l` / `-m` / `-n` / `-r` with [number-specific meanings](#number-endings). Number words **do not** take plural **-sh** — group reference stays on ordinary nouns.
+1. **PoS:** same prefix inventory as elsewhere; [roles for number words](#parts-of-speech-on-numbers) below.
+2. **Number marker:** consonant **r** plus a vowel **V** (see [Marker vowel](#marker-vowel-referential-identity)). **V** is usually a single vowel; end-relative ordinals use digraph **`eu`**. The PoS+`r` cluster is a [number-only letter-cluster exception](phonology.md#phonotactics).
+3. **Zero or more digit groups:** each group is an optional exponent and optional mantissa digits (at least one of the two **when the group is present**, except a [digitless exponent](#digitless-exponents) group is **`ba`/`bu` alone**). Digits sit next to each other with no **x**. Sign, when it applies, is once for the whole word ([Sign](#sign)). **No groups** = [unspecified magnitude](#zero-digit-groups) of that marker identity, or [digitless **-r** resume](#number-endings).
+4. **Ending:** `-l` / `-m` / `-n` / `-r` with [number-specific meanings](#number-endings). Group reference stays on ordinary nouns (**-sh**).
 
-**Writing** for free number words uses a [preferred shorthand](#writing-preferred-shorthand) for the marker and body (`g+3`, not *grarel*; digitless `g+`, not *gral*; end-relative `g#-2`, not *greudul*); speech is always the full CV form.
+**Writing** for free number words uses a [preferred shorthand](#writing-preferred-shorthand) for the marker and body (`g+3`, `g+`, `g#-2`). Speech is always the full CV form.
 
 ### Parts of speech on numbers
 <a id="parts-of-speech-on-numbers"></a>
@@ -219,7 +219,7 @@ The number word takes whichever PoS prefix the role needs. Referential prefixes 
 | `/d/` | **direct object** — the number is the object (common for digit-strings / codes being dialed, entered, stated). |
 | `/b/` | **argument noun** — the number fills the `/b/` slot of a complex adjective or adverb (*of size 12*, host *on* + channel/label, host *at* + time when a relation is named, …). Bare temporal circumstance (no host) uses `/h/` + **`ro`** ([Time](#time)). |
 
-**`/w/` (adjective adjunct):** numbers do not take `/w/`, and a `/ɡ/` number is not a host for `/w/` grading or framing. Degree and “aboutness” of a quantity use [number endings](#number-endings) (especially **-m** for approximate).
+Degree and “aboutness” of a quantity use [number endings](#number-endings) (especially **-m** for approximate), not a `/w/` grader on the number.
 
 
 Digit-strings (`ro`…) usually take the argument role the clause needs (often `/d/`). Ordinals that modify a noun use `/ɡ/`; an ordinal used as a standalone rank uses `/z/`, `/d/`, or `/b/` as appropriate.
@@ -227,17 +227,17 @@ Digit-strings (`ro`…) usually take the argument role the clause needs (often `
 ### Marker vowel (referential identity)
 <a id="marker-vowel-referential-identity"></a>
 
-**V** encodes the number’s **referential identity** — scalar vs ordinal vs digit-string. For **scalars**, **V** also carries the **sign of the whole number** (`a` positive, `u` negative). Forward ordinal **`e`** aligns with [rank join **e**](coordination.md#ranked-conjunction-e) (*rank*); end-relative ordinal **`eu`** is a **separate marker**.
+**V** encodes what kind of number this is: **count/amount** (scalar), **rank** (ordinal), or **digit-string** (label). For **scalars**, **V** also carries the **sign of the whole number** (`a` positive, `u` negative). Forward ordinal **`e`** aligns with [rank join **e**](coordination.md#ranked-conjunction-e) (*rank*). End-relative ordinal **`eu`** is a **separate marker**.
 
-| V | Writing | Referent | Examples |
-|---|---------|----------|----------|
-| **a** | `+` | Positive **scalar** (count or measure amount) | `g+3` *three cats*; `g+` *plural / more than one*; `z+3` *three* (subj); `b+12` *of size 12* |
-| **u** | `-` | Negative **scalar** | `d-3` *−3* (obj); `z-` *some negative amount*; `g-2` signed measure on a noun |
-| **e** | `#` | **Ordinal** / rank **from the start** (same-generation cohort when [exp omitted](#ordinal-generation); see also [digitful generation](#ordinal-generation)) | `g#2` *the second page*; `g#` *some rank*; `z#2` *second* (rank as subject) |
-| **eu** | `#-` | **End-relative ordinal** — rank **from the end** of the same cohort | `g#-2` *2nd from the end* / *penultimate*; `g#-1` ≡ last place end-framed ([from the end](#from-the-end)); `g#-` *some end-relative rank* |
-| **o** | `_` | **Digit-string** / label (phones, IDs, “read the digits”) | `d_555,123,4567`; `d_` *some code*; `g_12` *room 12*-style; `b_…` under a host relation |
+| V | Writing | Referent | Mnemonic | Examples |
+|---|---------|----------|----------|----------|
+| **a** | `+` | Positive **scalar** (count or measure amount) | **`a`** add | `g+3` *three cats*; `g+` *plural / more than one*; `z+3` *three* (subj); `b+12` *of size 12* |
+| **u** | `-` | Negative **scalar** | **`u`** undo | `d-3` *−3* (obj); `z-` *some negative amount*; `g-2` signed measure on a noun |
+| **e** | `#` | **Ordinal** / rank **from the start** (same-generation cohort when [exp omitted](#ordinal-generation); see also [digitful generation](#ordinal-generation)) | **`e`** order | `g#2` *the second page*; `g#` *some rank*; `z#2` *second* (rank as subject) |
+| **eu** | `#-` | **End-relative ordinal:** rank **from the end** of the same cohort | order from the far edge | `g#-2` *2nd from the end* / *penultimate*; `g#-1` ≡ last place end-framed ([from the end](#from-the-end)); `g#-` *some end-relative rank* |
+| **o** | `_` | **Digit-string** / label (phones, IDs, “read the digits”) | **`o`** one string | `d_555,123,4567`; `d_` *some code*; `g_12` *room 12*-style; `b_…` under a host relation |
 
-Do not combine conflicting identity types on one word (e.g. do not use `re` and `ro` for the same token). In [preferred writing](#writing-preferred-shorthand), the marker is **`+`** / **`-`** / **`#`** / **`#-`** / **`_`** (not written `r`+V). Write end-relative as **`#-`** after PoS (or after an ending mark): `g#-2`, never `g-#2` (that looks like scalar **`-`** then ordinal).
+One word, one identity. In [preferred writing](#writing-preferred-shorthand), the marker is **`+`** / **`-`** / **`#`** / **`#-`** / **`_`**. Write end-relative as **`#-`** after PoS (or after an ending mark): `g#-2`. `g-#2` would look like scalar **`-`** then ordinal.
 
 #### Sign
 <a id="sign"></a>
@@ -247,12 +247,12 @@ Do not combine conflicting identity types on one word (e.g. do not use `re` and 
 | **Scalar** (`a` / `u`, written `+` / `-`) | Sign **is** **V**. Multi-group scalars share one sign for the whole word (e.g. −1 000 265 004 is one **`ru`** word). |
 | **Forward ordinal** (`e`, written `#`) | Direction *from the start* |
 | **End-relative ordinal** (`eu`, written `#-`) | Direction *from the end*. Digits are the count-back index (`#-1` = last, end-framed). |
-| **Digit-string** (`o`, written `_`) | **Unsigned only.** Do **not** write `_-…`. |
+| **Digit-string** (`o`, written `_`) | Unsigned. Labels have no minus sign after **`_`**. |
 
 ### Number endings
 <a id="number-endings"></a>
 
-Ordinary [reference suffix](reference-suffix.md) senses do **not** apply inside number words. Speech keeps the ending letter; [preferred writing](#writing-preferred-shorthand) uses a **second-slot mark** after PoS (same glyphs as [span fences](spans.md)).
+Number endings have [their own jobs](#number-endings) (exact / about / conventional / resume). Speech keeps the ending letter; [preferred writing](#writing-preferred-shorthand) uses a **second-slot mark** after PoS (same glyphs as [span fences](spans.md)).
 
 | Ending | Meaning | Preferred writing |
 |--------|---------|-------------------|
@@ -261,26 +261,26 @@ Ordinary [reference suffix](reference-suffix.md) senses do **not** apply inside 
 | **-n** | Conventional / proper designation (titles, official labels, *the Second…*) | **`@`** after PoS — `g@#2`, `g@+1e` |
 | **-r** | Anaphoric resume of a previously stated number, code, or rank | **`=`** after PoS — `g=+`, `x=#2`, `d=_` |
 
-**-r** may be **digitless**: marker + **-r** alone resumes the prior value of that identity without restating digits (`g=+` = *that (scalar) amount again*; `d=_` = *that code again*; `g=#` = *that rank again*). Digits + **-r** still fine when you want to name which prior item (`x=#2` = *as in (2) above*). Marker must match the resumed identity (do not resume a scalar with `g=#`). **`=`** does **not** combine with **`~`** / **`@`**.
+**-r** may be **digitless**: marker + **-r** alone resumes the prior value of that identity without restating digits (`g=+` = *that (scalar) amount again*; `d=_` = *that code again*; `g=#` = *that rank again*). Digits + **-r** still fine when you want to name which prior item (`x=#2` = *as in (2) above*). Match the marker to the resumed identity (`g=+` for a prior scalar). **`=`** stands alone: no stack with **`~`** / **`@`**.
 
 ### Zero digit groups
 <a id="zero-digit-groups"></a>
 <a id="digitless-numbers"></a>
 <a id="bare-marker"></a>
 
-A number word may omit every digit group: **PoS + marker + ending** only. The marker still fixes referential identity. With **-l** / **-m** / **-n**, the magnitude (or label/rank payload) is **unspecified** as in the table below. With **-r**, the word is [digitless anaphora](#number-endings) only — resume a prior value of that identity.
+A number word may omit every digit group: **PoS + marker + ending** only. The marker still fixes what kind of number this is. With **-l** / **-m** / **-n**, the magnitude (or label/rank payload) is **unspecified** as in the table below. With **-r**, the word is [digitless resume](#number-endings) only: a prior value of that identity.
 
 | Marker | Writing | Digitless sense | Partition / notes |
 |--------|---------|-----------------|-------------------|
-| **`ra`** | `…+` (etc.) | Unspecified **positive scalar**, specialized to **plural count / amount `>1`** | Complements `…+0` (zero), `…+1` (one), `…+N` (exact N≥2). Not “any non-negative,” not “≥0.” |
+| **`ra`** | `…+` (etc.) | Unspecified **positive scalar**, specialized to **plural count / amount `>1`** | Complements `…+0` (zero), `…+1` (one), `…+N` (exact N≥2). |
 | **`ru`** | `…-` | Unspecified **negative scalar** (*some negative amount*; deficit of unnamed size) | Exact negatives stay `…-N`. |
 | **`re`** | `…#` | Unspecified **rank from the start** (*some nth* / *some place*) | Exact ranks stay `…#N`. |
 | **`reu`** | `…#-` | Unspecified **end-relative rank** (*some nth from the end*) | Exact end-relative ranks stay `…#-N`. |
 | **`ro`** | `…_` | Unspecified **digit-string / label** (*some code*; *a label*) | Exact labels stay `…_…`. |
 
-**Vs noun plural `-sh`:** `-sh` marks that a **referent is a group** ([plurality.md](plurality.md)) — indefinite group introduction stays **-lsh** / **-msh**, not digitless. Digitless **`ra`** marks that a **count/amount is `>1`** without naming N. They are different jobs (quantity vs group-reference) and may co-occur (`zagadalsh g+3`). Do **not** treat `g+` as a replacement for noun **-lsh**, nor as plural morphology on verbs, circumstance, or number words themselves.
+Noun [**-sh**](plurality.md) marks that a **referent is a group** (indefinite group introduction stays **-lsh** / **-msh**). Digitless **`ra`** marks that a **count/amount is `>1`** without naming N. They may co-occur (`zagadalsh g+3`).
 
-**Vs fence `-r`:** phrase **`zar`** / **`zor`** / … pick an unspecified **member of an inventory**. Digitless number **-r** resumes a **prior numeric value**. Digitless number **-l** (etc.) introduces an unspecified magnitude of that marker — not inventory membership.
+Phrase **`zar`** / **`zor`** / … pick an unspecified **member of an inventory**. Digitless number **-r** resumes a **prior numeric value**. Digitless number **-l** (etc.) introduces an unspecified magnitude of that marker.
 
 **Overlays** inherit the same emptiness (marker identity → role reading, payload unspecified):
 
@@ -288,15 +288,15 @@ A number word may omit every digit group: **PoS + marker + ending** only. The ma
 |---------|-------------------|
 | `/ɡ/` `/z/` `/d/` `/b/` | `g+` *plural / more than one* (on a noun); `z-` *some negative amount* (subj); `b#` *of some rank*; `b#-` *of some end-relative rank*; `d_` *some code* (obj) |
 | `/v/` | Unspecified amount under the verb sense: **`v+`** *increase*; **`v-`** *decrease*; **`v#`** *take / assign some rank*; **`v#-`** *take some end-relative place*; **`v_`** *enter / dial some code*. Soft: **`v~+`** *increase a bit*; **`v~-`** *decrease a bit* |
-| `/h/` | Unspecified amount under the adverb sense: **`h+`** *multiple times*; **`h-`** *÷ / into some number of parts*; **`h#`** *for some nth time*; **`h#-`** *for some nth-from-last time*; **`h_`** *at some clock or date* (still bare-`hro` **time** only — not channel codes). Soft: **`h~+`** *a few times*; **`h~-`** *÷ a bit* / *into a few parts* |
+| `/h/` | Unspecified amount under the adverb sense: **`h+`** *multiple times*; **`h-`** *÷ / into some number of parts*; **`h#`** *for some nth time*; **`h#-`** *for some nth-from-last time*; **`h_`** *at some clock or date* (bare-`hro` **time**). Soft: **`h~+`** *a few times*; **`h~-`** *÷ a bit* / *into a few parts* |
 | `/j/` | **`j+`** *More!*; **`j-`** *Short!* / *down by some amount!*; **`j#`** *Nth!* (place cheer, rank unnamed); **`j#-`** *Nth-from-last!*; **`j_`** *…!* (unspecified score / code call). Soft: **`j~+`** *a bit more!* |
 | `/x/` | `x#` *some point:* (neutral, number unnamed); `x#-` *some end-relative point:*; `x+` / `x-` corroborating / independent item of unnamed index; `x_` *regarding some (unnamed) label* |
 
-**`h_` vs `har`:** digitless time `h_` is still a **number word** (unspecified clock/date reading under bare `hro`). Circumstance **`har`** (*sometime*) is the [restrictor](restrictors.md), not a numeral — do not swap them.
+Digitless time `h_` is a **number word** (unspecified clock/date under bare `hro`). Circumstance **`har`** (*sometime*) is the [restrictor](restrictors.md).
 
 ### Exponents
 
-Within each digit group, speech markers build ordinary magnitudes (and later specials):
+Within each digit group, speech markers build ordinary magnitudes (Advanced specials use the same markers with empty exponent digits):
 
 | Marker | Role |
 |--------|------|
@@ -309,16 +309,16 @@ Within each digit group, speech markers build ordinary magnitudes (and later spe
 
 - The **exponent comes before** the group’s mantissa digits.
 - If a mantissa follows the exponent, say **`ja`** after the last exponent digit, then the mantissa. Example: `27e12` → `ba` + `wo` + `du` + `ja` + `du` + `le`.
-- **Bare order of magnitude** (exponent only, no mantissa): use `ba`/`bu` + exponent digits and **omit** **`ja`**. Example: *e9* → `ba` + `na`. Decade-band readings: [Bare OoM](#bare-oom-bands).
-- Ordinary magnitudes usually **omit** exponent **`0`** — `g+3`, not `*g+3e0`. Named **`e0`** / ambient scale: [Ambient scale](#ambient-scale).
-- Default scale uses **engineering notation**: exponents are usually multiples of **3** (e.g. `27e6`, not `2.7e7`).
+- **Bare order of magnitude** (exponent only, no mantissa): use `ba`/`bu` + exponent digits and omit **`ja`**. Example: *e9* → `ba` + `na`. Decade-band readings: [Bare OoM](#bare-oom-bands).
+- Ordinary magnitudes usually omit exponent **`0`**: write `g+3`. Named **`e0`** / ambient scale: [Ambient scale](#ambient-scale).
+- Default scale uses **engineering notation**: exponents are usually multiples of **3** (e.g. `27e6`).
 - **Decimal point:** say **`je`** after the digit(s) left of the point; digits after **`je`** are the fractional part.
-- **No metric prefixes** in the lexicon — base unit + exponent / exact count on the amount ([measure phrases](#no-metric-prefixes)).
+- Write the **base unit** plus exponent or exact count on the amount ([measure phrases](#no-metric-prefixes)).
 
 ### Writing (preferred shorthand)
 <a id="writing-preferred-shorthand"></a>
 
-Speech always uses the full CV grammar above (marker as `r`+V; ending as **-l** / **-m** / **-n** / **-r**). For **free number words**, writing prefers shorthand for the ending, marker, and body. Which surface to use when (shorthand vs spelled CV) is [style](#writing-style-numeric-vs-spelled), not grammar — speech is always full CV; either shorthand or spelled CV writing names the same word.
+Speech always uses the full CV grammar above (marker as `r`+V; ending as **-l** / **-m** / **-n** / **-r**). For **free number words**, writing prefers shorthand for the ending, marker, and body. Which surface to use when (shorthand vs spelled CV) is [style](#writing-style-numeric-vs-spelled). Speech is always full CV; either writing names the same word.
 
 ```
 [PoS] + [~|@|=]? + [marker] + [body?]
@@ -326,7 +326,7 @@ Speech always uses the full CV grammar above (marker as `r`+V; ending as **-l** 
 
 #### Ending marks (second slot, after PoS)
 
-Same glyphs and jobs as [span-fence marks](spans.md#writing) (**`~`** soft / **`@`** proper); anaphor uses **`=`** (keyboard-friendly; spans use interior **`=`** — `d[=]`).
+Same glyphs and jobs as [span-fence marks](spans.md#writing) (**`~`** soft / **`@`** proper). Resume uses **`=`** (spans use interior **`=`**: `d[=]`).
 
 | Mark | Speech ending | Job | Examples |
 |------|---------------|-----|----------|
@@ -335,7 +335,7 @@ Same glyphs and jobs as [span-fence marks](spans.md#writing) (**`~`** soft / **`
 | **`@`** | **-n** | conventional / proper | `g@#2`, `g@+1e`, `x@#e` |
 | **`=`** | **-r** | anaphoric resume | `g=+`, `d=_`, `x=#2`, `g=#1e` |
 
-Order when both **`@`** and **`~`** apply: **`@` then `~`**. **Do not write** the stack with both glyphs — spell **`@`** only, with uncertain tonality (same hedge habit as spans). **`=`** does **not** combine with **`~`** / **`@`**. Full phonetic spelling with a trailing ending letter (e.g. *grarel*, *gram*) is the [style default](#writing-style-numeric-vs-spelled) for [numeric derivation](numeric-derivation.md#numeric-derivation); on free number words it is fine as a pronunciation gloss, not preferred in running text.
+Order when both **`@`** and **`~`** apply: **`@` then `~`**. Spell **`@`** only, with uncertain tonality (same hedge habit as spans). **`=`** stands alone. Full phonetic spelling with a trailing ending letter (e.g. *grarel*, *gram*) is the [style default](#writing-style-numeric-vs-spelled) for [numeric derivation](numeric-derivation.md#numeric-derivation). On free number words it is a pronunciation gloss, not preferred in running text.
 
 #### Marker (not written as `r`+V)
 
@@ -347,7 +347,7 @@ Order when both **`@`** and **`~`** apply: **`@` then `~`**. **Do not write** th
 | **`#-`** | `reu` | End-relative ordinal (from the end) |
 | **`_`** | `ro` | Digit-string |
 
-Place the identity symbol **immediately after** any ending mark (or after PoS when exact), **before the body** (or alone when the body is empty): `g+3`, `g~+3`, `g=+`, `d_555,123,4567`, `d=_`, `g@#2`, `g#-2`, `g~#-2`. Marker **`#-`** is one identity (two glyphs); do **not** write `g-#2`. After bare **`_`**, do **not** write a following **`-`** (labels stay unsigned) — see [Sign](#sign).
+Place the identity symbol **immediately after** any ending mark (or after PoS when exact), **before the body** (or alone when the body is empty): `g+3`, `g~+3`, `g=+`, `d_555,123,4567`, `d=_`, `g@#2`, `g#-2`, `g~#-2`. Marker **`#-`** is one identity (two glyphs). After bare **`_`**, labels stay unsigned ([Sign](#sign)).
 
 #### Body
 
@@ -402,7 +402,7 @@ Overlay prefixes keep marker identity but add a role-specific reading. Referenti
 | **`reu`** | **Take / assign Nth-from-end place** — intransitive *place Nth from the end* / *come in penultimate* (etc.); transitive *put (object) Nth from the end*. |
 | **`ro`** | **Enter / dial / input that digit-string** — type the code, dial the phone number, key the ID. Object (if any) is the channel or device; the digits are in the verb. |
 
-“Set to N” (bring a quantity to an absolute value) is not a number-verb sense — use an ordinary verb plus the number as argument or adverb. Multiply/divide likewise stay ordinary verbs plus the number as `/h/` (**`h+N`** / **`h-N`**). With [percentage points](#percent-and-percentage-points) (**`ju`**), **`ra`** / **`ru`** as verbs mean increase/decrease by that point amount (not a relative %-change factor).
+To set a quantity to an absolute value, use an ordinary verb plus the number as argument or adverb. Multiply and divide stay ordinary verbs plus the number as `/h/` (**`h+N`** / **`h-N`**). With [percentage points](#percent-and-percentage-points) (**`ju`**), **`ra`** / **`ru`** as verbs mean increase/decrease by that point amount.
 
 Endings still apply (**-m** ≈ *about* that amount/code/rank, **-r** resume — including [digitless](#zero-digit-groups) `v=+` / `v=_`, etc.).
 
@@ -417,40 +417,16 @@ Endings still apply (**-m** ≈ *about* that amount/code/rank, **-r** resume —
 | **`ru`** | `h-N` | **Inverse / partition** — *÷N*; *into N parts*; *1/N as often*; *every Nth* (alone, or with ordinary *divide*). |
 | **`re`** | `h#N` | **Nth occurrence of the event (from the start)** — *for the Nth time*; *on the Nth try* (clause-event ordinal, not discourse list independence). |
 | **`reu`** | `h#-N` | **Nth-from-last occurrence** — *for the Nth-from-last time*; *the penultimate time* (`h#-2`). |
-| **`ro`** | `h_…` | **Temporal circumstance only** — *at 15:30*; *on 2026-07-22* (clock or calendar digit reading). **Not** channel, frequency, gate, or other non-time codes — those use a host relation + `/b/` (or `/ɡ/` on a noun). See [Time](#time). |
+| **`ro`** | `h_…` | **Clock or calendar** — *at 15:30*; *on 2026-07-22*. Channel, frequency, and other codes use a host relation + `/b/` (or `/ɡ/` on a noun). See [Time](#time). |
 
-Contrasts:
+Worked examples: `h+3` *three times*; `h-3` *÷3 / into 3*; `h#3` *for the third time*; `h#-2` *for the penultimate time*; `h_15,30` *at 15:30*. Frequency codes sit on a host: `/h/` *on* + `b_101.1`.
 
-- `h+3` — *three times* / ×3
-- `h-3` — ÷3 / every third / into 3
-- `h+` — *multiple times* (unspecified)
-- `h#e` — *for the last time*
-- `h#e-` — *for the first time* (onset landmark; contrast numbered `h#1`)
-- `h#-2` — *for the penultimate time* ([from the end](#from-the-end))
-- `h_15,30` — *at 15:30* (bare `hro` = time; [Time](#time))
-- `h_#22,7,2026` — *on July 22, 2026* (bare `hro` date; `#` tags the day)
-- `/h/` *on* + `b_101.1` — *on 101.1* (non-time code; not bare `h_…`)
-- `h#3` — *for the third time*
-- `h#1e` — *for the gazillionth time* ([hyperbole](#hyperbole-gazillion))
-- `j#3` — *Third!* (place cheer)
-- `j#-2` — *Penultimate!*
-- `j#e` — *Finally!* ([digitless exp](#digitless-exponents))
-- `j+e` — *To infinity!*
-- `x#3` — *point 3:* (neutral discourse item)
-- `x#-2` — *2nd-from-end point:*
-- `g#3` — *the third* (modifies a noun)
-- `g#-2` — *the penultimate* (modifies a noun)
-- `v+3` — *add 3* (verb)
-- `v+` — *increase* (unspecified amount)
-- `v#e` — *take last place*
-- `v#-2` — *take / come in 2nd from the end*
-
-Endings still apply (**-m** ≈ *about* that many times / that clock or date, **-r** resume — including digitless `h=+` / `h=_`). Relative %-change factors use **`h+…`** (e.g. ×1.5), not **`jo`** / **`ju`** alone — see [percent](#percent-and-percentage-points).
+Endings still apply (**-m** ≈ *about* that many times / that clock or date, **-r** resume, including digitless `h=+` / `h=_`). Relative %-change factors use **`h+…`** (e.g. ×1.5). See [percent](#percent-and-percentage-points).
 
 #### Number as interjection (by marker)
 <a id="number-as-interjection-by-marker"></a>
 
-`/j/` + number is an **interjection** (expressive call-out), not clause force. Clause force stays the closed non-numeric set in the [utterance-marker section](core.md#clause-force). Number interjections appear only in the left-edge `/j/` cluster (before force, when a clause follows) or as a bare utterance with no force.
+`/j/` + number is an **interjection** (expressive call-out). Statement/ask force stays the closed set in the [utterance-marker section](core.md#clause-force). Number cheers sit in the left-edge `/j/` cluster (before force, when a clause follows) or as a bare utterance with no force.
 
 | Marker | Writing | Interjection sense |
 |--------|---------|-------------------|
@@ -460,39 +436,16 @@ Endings still apply (**-m** ≈ *about* that many times / that clock or date, **
 | **`reu`** | `j#-N` | **End-relative place cheer** — *Penultimate!*; *Last!* end-framed (`j#-1`). |
 | **`ro`** | `j_…` | **Digit-label / magnitude call-out** — *Three!*; *B-12!*; *five-five-five!*; score, bingo, code, or ID as a bare reading of the digits (not “N more”). |
 
-**Label vs addition:** bare English *Three!* / *Twelve!* as naming a score, ball, or count → **`j_`**. *Three more!* (increment the tally) → **`j+`**. Bingo / room codes / phone fragments → **`j_`**.
+English *Three!* naming a score or count is **`j_`**. *Three more!* (increment the tally) is **`j+`**.
 
-Contrasts:
+Worked examples: `j_3` *Three!*; `j+3` *Three more!*; `j-3` *Three short!*; `j#1` *First!*; `j#-2` *Penultimate!*.
 
-- `j_3` — *Three!* (label / score / count reading)
-- `j+3` — *Three more!* (quantity addition)
-- `j-3` — *Three short!* / *Three fewer!* / *−3!* (deficit)
-- `j_27` — *Twenty-seven!* as label call
-- `j#1` — *First!* (place cheer)
-- `j#-2` — *Penultimate!* / *Second from last!* ([from the end](#from-the-end))
-- `j#e` — *Finally!* (coda cheer — [digitless exp](#digitless-exponents); contrast **`x#e`** *Finally:*)
-- `j#e-` — *(finally, we're) starting!* (onset cheer; contrast **`x#e-`** *Starting with:*)
-- `j+e` — *To infinity!*
-- `j#1e` — *Gazillionth!* (comic late place cheer — [hyperbole](#hyperbole-gazillion))
-- `j#1e-` — *Gazillionth-first!* (comic early place cheer)
-- `x#1` — *point 1:* (neutral discourse item)
-- `x#-1` — *1st-from-end point:* / *Starting with the last one:*
-- `h#1` — *for the first time* (numbered)
-- `h#e-` — *for the first time* (onset landmark)
-- `h#e` — *for the last time*
-- `h#1e` — *for the gazillionth time*
-- `h#-2` — *for the penultimate time*
-- `v#1` — *take / assign 1st* (verb)
-- `v#e` — *take last place*
-- `v#e-` — *take starting place*
-- `v#-2` — *take 2nd from the end*
-
-Endings still apply (**-m** fuzzy *about three more!* / *about three!*, **-n** conventional call name, **-r** resume a prior shout’s value — digitless `j=+` / `j=_` allowed).
+Endings still apply (**-m** fuzzy *about three more!*, **-n** conventional call name, **-r** resume a prior shout’s value, including digitless `j=+` / `j=_`).
 
 #### Number as discourse marker (by marker)
 <a id="number-as-discourse-marker-by-marker"></a>
 
-`/x/` + number is discourse glue for numbered list items and label cites. Marker vowel encodes **independence framing** of the list item (or cite-as-label for **`ro`**), except **`reu`** / **`#-`**, which marks **end-relative** place in the list (not independence). It does **not** occupy a main-clause argument or adjunct slot (contrast `/ɡ/` *the second page*, `/h/` *three times* / *for the Nth time*, `/j/` interjection shouts).
+`/x/` + number is discourse glue for numbered list items and label cites. Marker vowel encodes **independence framing** of the list item (or cite-as-label for **`ro`**). **`reu`** / **`#-`** marks **end-relative** place in the list. These sit outside the main-clause argument slots (`/ɡ/` *the second page*, `/h/` *three times*, `/j/` cheers).
 
 | Marker | Writing | Discourse sense |
 |--------|---------|-----------------|
@@ -502,52 +455,33 @@ Endings still apply (**-m** fuzzy *about three more!* / *about three!*, **-n** c
 | **`ru`** | `x-N` | **Independent item N** — a new line of support or consideration (*independent N:*, *distinct N:*). Would still matter if other listed items were gone. |
 | **`ro`** | `x_…` | **Cite a discourse label** — agenda item, section code, slide, ticket id (digits as label, not independence framing) (*regarding item 12; under 3.2*). |
 
-**Last point / *Finally*:** digitless-exp last-place under `/x/` + **`re`** is defined — **`x#e`** = *Finally:* / *last point:* (committed coda item). Soft **`x~#e`** = near-final / soft wrap-up point; named **`x@#e`** = ritual / titled *Finally*; **`x=#e`** resumes that last-point marker. End-framed twin: **`x#-1`**. This is **not** discourse reviser **`al`** (*additionally* — [revisers.md](revisers.md#discourse-revisers)).
+**Last point / *Finally*:** **`x#e`** = *Finally:* / *last point:* (committed coda item). Soft **`x~#e`** = near-final; named **`x@#e`** = ritual / titled *Finally*; **`x=#e`** resumes that last-point marker. End-framed twin: **`x#-1`**. Extra items still use discourse reviser **`al`** (*additionally*: [revisers.md](revisers.md#discourse-revisers)).
 
-**Starting point / *Starting with*:** digitless-exp start-place under `/x/` + **`re`** — **`x#e-`** = *Starting with:* / *to begin:* (committed opening item; beginning/onset framing, **not** English *firstly*). Soft **`x~#e-`** = near-start / soft lead-in; named **`x@#e-`** = ritual / titled *Starting with*; **`x=#e-`** resumes that start-point marker. Ordinary numbered *firstly* stays **`x#1`**.
+**Starting point / *Starting with*:** **`x#e-`** = *Starting with:* / *to begin:* (committed opening item; beginning/onset framing). Soft **`x~#e-`** = near-start; named **`x@#e-`** = ritual / titled *Starting with*; **`x=#e-`** resumes that start-point marker. Numbered *firstly* stays **`x#1`**.
 
 **Nested agenda (digitful exp):** under `/x/`, [ordinal generation](#ordinal-generation) = **outline depth** relative to the focused agenda item — **`x#3e2`** = *3rd sub-sub-point under the focus*; **`x#e-1`** = *parent-layer item(s)*; **`x#e0`** = *current-layer item(s)* (assert this outline level). Flat talks stay **`x#N`** / **`x#-N`** / landmarks.
 
-Mantissa + digitless-exp discourse indices: **`x#1e`** *umpteenth point:* / **`x#1e-`** *umpteenth-first point:* ([hyperbole](#hyperbole-gazillion)) — not end-relative (use **`x#-N`**) and not the start/last landmarks. Notional **`x-e-`** is defined under [digitless exponents](#imaginary).
+Mantissa + digitless-exp discourse indices: **`x#1e`** *umpteenth point:* / **`x#1e-`** *umpteenth-first point:* ([hyperbole](#hyperbole-gazillion)). End-relative place stays **`x#-N`**. Notional **`x-e-`** is under [digitless exponents](#imaginary).
 
-**Independence framing:** **`#`** = unmarked inventory or steps (from the start); **`#-`** = end-relative inventory; **`+`** = corroborating; **`-`** = independent (new line of support). Do not use **`+`** / **`-`** for for/against or open vs scratch a bullet — independence is the point. Ordinary *firstly / secondly* without that framing is **`x#N`**. *Starting with* without a numeric step count is **`x#e-`**; *Finally* without a numeric step count is **`x#e`** (or end-framed **`x#-1`**). For/against and both-sides checks stay in ordinary wording or claim-level evidentiality, not on the number marker.
+**Independence framing:** **`#`** = unmarked inventory or steps (from the start); **`#-`** = end-relative inventory; **`+`** = corroborating; **`-`** = independent (new line of support). Ordinary *firstly / secondly* is **`x#N`**. *Starting with* without a numeric step count is **`x#e-`**; *Finally* without a numeric step count is **`x#e`** (or end-framed **`x#-1`**). For/against wording stays in ordinary wording or claim-level evidentiality.
 
-Contrasts:
+Worked examples: `x#2` *point 2:*; `x#-2` *penultimate item:*; `x+2` *corroborating 2:*; `x-2` *independent 2:* (distinct from **`x#-2`**); `x#e` *Finally:*.
 
-- `g#2` — *the second* (modifies a noun)
-- `g#-2` — *the penultimate* (modifies a noun)
-- `x#2` — *point 2:* (neutral discourse item)
-- `x#-2` — *2nd-from-end point:* / *penultimate item:*
-- `x#-1` — *1st-from-end point:* / *Starting with the last one:* (≡ **`x#e`** end-framed)
-- `x#e-` — *Starting with:* / *to begin:* (digitless start-place under `/x/`)
-- `x#e` — *Finally:* / *last point:* (digitless last-place under `/x/`)
-- `x#3e2` — *3rd nested point at depth +2:* ([ordinal generation](#ordinal-generation))
-- `j#e-` — *(finally, we're) starting!* (onset cheer)
-- `j#e` — *Finally!* (coda cheer)
-- `j+e` — *To infinity!*
-- `x+2` — *corroborating 2:*
-- `x-2` — *independent 2:* (≠ **`x#-2`**)
-- `h#2` — *for the second time* (event ordinal adverb)
-- `j#2` — *Second!* (place cheer)
-- `j_3` — *Three!* (label / score reading)
-- `j+3` — *Three more!* (quantity addition)
-- `j-3` — *Three short!* / *Three fewer!* / *−3!* (deficit)
-
-Endings still apply (**-l** newly stated item, **-r** *as in (N) above* or digitless `x=#` / `x=#-` / `x=+` / … for *as in that item above* with same marker framing, **-n** titled / official item name, **-m** fuzzy *around item N*; on last-place **`x#e`** / **`x~#e`** / **`x@#e`** / **`x=#e`** and start-place **`x#e-`** / **`x~#e-`** / **`x@#e-`** / **`x=#e-`** as above).
+Endings still apply (**-l** newly stated item, **-r** *as in (N) above* or digitless `x=#` / `x=#-` / `x=+` / …, **-n** titled item name, **-m** fuzzy *around item N*; on last-place **`x#e`** / **`x~#e`** / **`x@#e`** / **`x=#e`** and start-place **`x#e-`** / **`x~#e-`** / **`x@#e-`** / **`x=#e-`** as above).
 
 
 ### Bare OoM decade bands
 <a id="bare-oom-bands"></a>
 <a id="bare-oom"></a>
 
-**Bare** order of magnitude (exponent digits, **no mantissa**) names the **half-open decade band** `[10ᴷ, 10ᴷ⁺¹)`, not “K and every larger engineering step.”
+**Bare** order of magnitude (exponent digits, **no mantissa**) names the **half-open decade band** `[10ᴷ, 10ᴷ⁺¹)`: that one decade, not every larger engineering step.
 
 | Form | Band | Gloss |
 |------|------|--------|
 | **`g+e0`** | `[10⁰, 10¹)` = **1–9** | *ones* (some amount in the ones place) |
 | **`g+e1`** | `[10¹, 10²)` = **10–99** | *tens* |
 | **`g+e2`** | `[10², 10³)` = **100–999** | *hundreds* |
-| **`g+e3`** | `[10³, 10⁴)` = **1000–9999** | *thousands* — **not** tens/hundreds of thousands (`e4` / `e5`) |
+| **`g+e3`** | `[10³, 10⁴)` = **1000–9999** | *thousands* (`e4` / `e5` are tens/hundreds of thousands) |
 | **`g+e6`** | `[10⁶, 10⁷)` | *millions* band only |
 | **`g-e3`** | `(−10⁴, −10³]` polarity with **`ru`** | negative thousands band |
 
@@ -561,9 +495,7 @@ Same under `/z/` `/d/` `/b/`. Soft **`g~+e3`** ≈ *about in the thousands band*
 <a id="nth-from-the-end"></a>
 <a id="negative-ordinal"></a>
 
-**End-relative place** uses marker **`eu`** (writing **`#-`**), not mantissa + digitless **`bu`** on forward **`#`**. Count back from last place within the **same generation / cohort** (exp omitted). Exact (or soft) end-relative ordinal; **not** hyperbole and **not** the no-mantissa start landmark **`g#e-`**.
-
-Speech is **`reu`** + digits + ending (e.g. `g#-2` → *greudul*). Digraph **`eu`** avoids colliding with rank-join **`ue`**.
+**End-relative place** uses marker **`eu`** (writing **`#-`**). Count back from last place within the **same generation / cohort** (exp omitted). Speech is **`reu`** + digits + ending (e.g. `g#-2` → *greudul*). Digraph **`eu`** keeps this marker distinct from rank-join **`ue`**.
 
 | Form | Reading |
 |------|---------|
@@ -575,7 +507,7 @@ Speech is **`reu`** + digits + ending (e.g. `g#-2` → *greudul*). Digraph **`eu
 | **`g=#-2`** | resume that prior end-relative place |
 | **`g#-`** | unspecified end-relative rank ([zero groups](#zero-digit-groups)) |
 
-**Contrast:** **`g#2`** = numbered *2nd* (from the start); **`g#-2`** = *2nd from the end*; **`g#e`** = last as landmark; **`g~#e`** = near last (no count); **`g#e-`** / **`g~#e-`** = start / near first (no mantissa); **`g#2e-`** = early hyperbole (not penultimate); **`g#2e-1`** = 2nd of gen −1 ([generation](#ordinal-generation)).
+`g#2` = numbered *2nd* (from the start); `g#-2` = *2nd from the end*; `g#e` = last as landmark; `g#e-` = start landmark (no mantissa). Hyperbole and generation stay on those sections.
 
 **Overlays** inherit:
 
@@ -617,11 +549,11 @@ On forward **`#`** / **`re`** and end-relative **`#-`** / **`reu`**, a **digitfu
 | **`g#e-1`** | generation −1 / parent layer (member unspecified) |
 | **`g#1e-1`** | 1st of generation −1 (often *the parent* when the cohort is singleton-framed) |
 
-**Not** this cell: digitless **`g#e`** / **`g#e-`** = telos / origin **landmarks** (extremes of the axis); digitless mantissa forms **`g#1e`** / **`g#1e-`** = [hyperbole](#hyperbole-gazillion); digitless **`g#0e`** = [rank annihilated](#rank-annihilated) (not generation). Do **not** read **`g#2e-`** as *grandparent* — use **`g#e-2`** / **`g#1e-2`**. Do **not** read **`g#0e-1`** as engineering null — that is scalar **`g+0e-1`**.
+Landmarks **`g#e`** / **`g#e-`** (no mantissa) are telos / origin of the axis. Hyperbole **`g#1e`** / **`g#1e-`** is [hyperbole](#hyperbole-gazillion). Rank wiped is [**`g#0e`**](#rank-annihilated). Grandparent-style generation uses **`g#e-2`** / **`g#1e-2`**. Engineering null is scalar **`g+0e-1`**.
 
 **Overlays:** `/x/` treats generation as **agenda nesting** (`x#3e2` = *3rd sub-sub-point under the focus*; **`x#e0`** = *current-layer item(s)* / assert this outline level). `/h/` / `/v/` / `/j/` inherit the same product (*for the 3rd time in gen +2*, *place 3rd in gen +2*, …) when the series is generation-structured; flat event counts stay **`h#N`**.
 
-**Derivation:** free generation is series-relative; kind morphs keep digitless **`ROOTx#e-`** / **`ROOTx#e`** as origin / telos of the **kind** — no productive free-style **`ROOTx#-N`** or **`ROOTx#NeK`** in this pass ([numeric-derivation.md](numeric-derivation.md#ordinal-digit-morphs)).
+**Derivation:** free generation is series-relative. Kind morphs keep digitless **`ROOTx#e-`** / **`ROOTx#e`** as origin / telos of the **kind** ([numeric-derivation.md](numeric-derivation.md#ordinal-digit-morphs)).
 
 
 ### Percent, digit-strings, time
@@ -630,7 +562,7 @@ On forward **`#`** / **`re`** and end-relative **`#-`** / **`reu`**, a **digitfu
 <a id="percent-of-what"></a>
 <a id="time"></a>
 
-Percent / percentage points, digit-string labels, and clock / calendar time have moved to **[numbers-applied.md](numbers-applied.md)**:
+Percent / percentage points, digit-string labels, and clock / calendar time: **[numbers-applied.md](numbers-applied.md)**.
 
 - [Percent and percentage points](numbers-applied.md#percent-and-percentage-points)
 - [Digit-strings](numbers-applied.md#digit-strings)
@@ -653,11 +585,11 @@ Both writings name the **same word**. Choose the surface by **job**: quantity/ma
 
 **Prefer spelled CV** for anything after mid-word **`x`** on a content root (lexicon citation forms always spelled); lexicalized morphs treated as affixes (essence / void / quasi / poly / digit morphs / zero×exp on ROOT); literary, sung, or long prose where `+` `#` `_` and second-slot `~`/`@`/`=` break word rhythm; and pronunciation teaching.
 
-**Avoid** the hybrid that derivation invites: shorthand body + host letter ending (`…x+el`). Free numbers use second-slot marks or trailing letters consistently; derived words use ordinary reference endings on the host with a fully spelled `NUM`.
+Write free numbers with second-slot marks or trailing letters consistently. Derived words use ordinary reference endings on the host with a fully spelled `NUM`.
 
 **Gray zone (either OK):** discourse *Finally* / *Starting with* (`x#e` / `x#e-` vs `xrebal` / `xrebual` — lean spelled in prose, shorthand in outlines); digitless plural (`g+` / `gral`); cheers (`j+e` / `jrabal`); soft free specials when hedging a discourse particle rather than a quantity.
 
-**Writing defaults:** (1) free numeral → shorthand by default; (2) content-root derivation → spelled CV by default; (3) shorthand in derivation tables is schematic only; (4) never put number second-slot marks (`~`/`@`/`=`) on derived `NUM`.
+**Writing defaults:** (1) free numeral → shorthand by default; (2) content-root derivation → spelled CV by default; (3) shorthand in derivation tables is schematic only; (4) number second-slot marks (`~`/`@`/`=`) stay on free numbers, not on derived `NUM`.
 
 ### Measure phrases and ranges
 <a id="measure-phrases"></a>
@@ -678,7 +610,7 @@ Both writings name the **same word**. Choose the surface by **job**: quantity/ma
 <a id="numeric-thresholds"></a>
 <a id="greater-less-than"></a>
 
-Measure phrases and numeric ranges have moved to **[numbers-applied.md](numbers-applied.md)**:
+Measure phrases and numeric ranges: **[numbers-applied.md](numbers-applied.md)**.
 
 - [Measure phrases](numbers-applied.md#measure-phrases)
 - [Ranges](numbers-applied.md#ranges)
@@ -927,9 +859,9 @@ Digitless exponents, zero×exp, hyperbole, and related specials.
 ### Ambient scale (casual)
 <a id="ambient-scale"></a>
 
-In **formal** writing and careful speech, treat **omitted exp as ones-place** (`g+3` = 3). **Do not** rely on a discourse-default decade.
+In **careful** writing and speech, treat **omitted exp as ones-place** (`g+3` = 3). Prefer an explicit exponent rather than a discourse-default decade.
 
-**Casually**, measure-heavy talk may establish an **ambient OoM** (often an engineering `e3` / `e6` / …) and elide repeating exponents — bare mantissas then heard at that ambient scale. That habit is **discouraged** in the reference standard but expected in informal use.
+**Casually**, measure-heavy talk may establish an **ambient OoM** (often an engineering `e3` / `e6` / …) and skip repeating exponents, so bare mantissas are heard at that ambient scale.
 
 **Named `e0` asserts OoM 0** and cancels ambient inheritance:
 
@@ -953,13 +885,13 @@ A digit group may use an exponent marker (**`ba`** or **`bu`**) with **no** expo
 
 | Shape | Reading |
 |-------|---------|
-| **`ba`/`bu` alone** (no mantissa) | **Special value** — +∞ / −∞ / last place / start place / … (tables below) |
-| **Mantissa `≠0` + `ba`/`bu`∅** | **Hyperbole** on scalars (*N gazillion* / *N gazillionth*); on ordinals **both** polarities (*umpteenth* late / *umpteenth-first* early) — see [hyperbole](#hyperbole-gazillion). End-relative place is marker **`#-`**, not mantissa+`bu` |
-| **Mantissa `0` + `ba`/`bu`∅** | **[Zero × digitless exp](#zero-exponent)** — total null / sterile / residue specials — **not** hyperbole |
+| **`ba`/`bu` alone** (no mantissa) | **Special value:** +∞ / −∞ / last place / start place / … (tables below) |
+| **Mantissa `≠0` + `ba`/`bu`∅** | **Hyperbole** on scalars (*N gazillion* / *N gazillionth*); on ordinals **both** polarities (*umpteenth* late / *umpteenth-first* early). See [hyperbole](#hyperbole-gazillion). End-relative place is marker **`#-`**. |
+| **Mantissa `0` + `ba`/`bu`∅** | **[Zero × digitless exp](#zero-exponent):** total null / sterile / residue specials |
 
 **Writing:** **`e`** = speech **`ba`**; **`e-`** = speech **`bu`**. Digitless means no power digits after that mark: `g+e`, `g+1e`, `g+0e`, `g+e-`, `g+1e-`. Bare / assert **`e0`** writes power **`0`**: `g+e0`, `g+3e0` (not digitless).
 
-**Shape limits:** one such group only in the word; do not combine digitless exp with real exp digits, percent closers, or further groups. Marker identity still applies. Derivation compounds may use digitless **`_`** as [infinite / landmark labels](numeric-derivation.md#infinite-labels) (`ROOTx_e`, `ROOTx_e-`, `ROOTx_1e`, …).
+**Shape limits:** one such group only in the word. Digitless exp sits alone (no extra real exp digits, percent closers, or further groups in the same word). Marker identity still applies. Derivation compounds may use digitless **`_`** as [infinite / landmark labels](numeric-derivation.md#infinite-labels) (`ROOTx_e`, `ROOTx_e-`, `ROOTx_1e`, …).
 
 #### Special values — no mantissa
 
@@ -974,9 +906,9 @@ A digit group may use an exponent marker (**`ba`** or **`bu`**) with **no** expo
 | **`g~-e`** | **`ru`** + **`ba`∅** + **-m** | **arbitrarily large but finite** (negative / deficit); against a bound: *arbitrarily close but still short* — *(almost)* |
 | **`g#e`** | **`re`** + **`ba`∅** + **-l** | **last place** / telos landmark (ultimate-descendant pole of the [generation](#ordinal-generation) axis) |
 | **`g~#e`** | **`re`** + **`ba`∅** + **-m** | **near last place** |
-| **`g#e-`** | **`re`** + **`bu`∅** + **-l** | **start / beginning place** / origin landmark — first with emphasis on **onset** (*the starting one*, *at the beginning*), not mere numbered 1st (`g#1`); ultimate-ancestor pole |
+| **`g#e-`** | **`re`** + **`bu`∅** + **-l** | **start / beginning place** / origin landmark: first with emphasis on **onset** (*the starting one*, *at the beginning*). Numbered 1st stays `g#1`. Ultimate-ancestor pole |
 | **`g~#e-`** | **`re`** + **`bu`∅** + **-m** | **near first place** |
-| **`g-e-`** | **`ru`** + **`bu`∅** + **-l** | **notional / imaginary amount** — as-if magnitude off the real commitment ledger (metaphorical; not ℂ math notation) |
+| **`g-e-`** | **`ru`** + **`bu`∅** + **-l** | **notional / imaginary amount:** as-if magnitude off the real commitment ledger (metaphorical, not complex-number math) |
 | **`g~-e-`** | **`ru`** + **`bu`∅** + **-m** | **soft notional** — *sort of imaginary* / hedged as-if amount |
 
 Same under `/z/` `/d/` `/b/` (`z+e` = +∞ as subject; `d#e-` = start-place as object; `b+e-` = *of an arbitrarily small but finite amount*; `z-e-` = notional amount as subject). Contrast **`g#1`** = numbered *first* / *1st*; **`g#e-`** = beginning/onset landmark.
@@ -984,9 +916,9 @@ Same under `/z/` `/d/` `/b/` (`z+e` = +∞ as subject; `d#e-` = start-place as o
 <a id="imaginary"></a>
 <a id="notional-amount"></a>
 
-**Notional / imaginary (`g-e-`):** negative marker (**`ru`**) + digitless negative exponent (**`bu`∅), no mantissa — completes the scalar special grid. Reading is **metaphorical**: a magnitude named *as if* it counted, without entering the real tally.
+**Notional / imaginary (`g-e-`):** negative marker (**`ru`**) + digitless negative exponent (**`bu`∅), no mantissa. Completes the scalar special grid. Reading is **metaphorical**: a magnitude named *as if* it counted, without entering the real tally.
 
-**Psychological as-if** (clause framed as pretensive / mind-only, with flexibility hold endings) uses spelled mood **`ahade`** — [commentary.md § Notional](commentary.md#notional) (`hahadem`, …) — not these free number forms. Free **`grubul`** / **`xrubul`** / **`hrubul`** / **`vrubul`** / **`jrubul`** stay amount, discourse *imagine that:*, manner *as if*, verb *notionalize*, and cheer overlays on the number grid.
+**Psychological as-if** (clause framed as pretensive / mind-only, with flexibility hold endings) uses spelled mood **`ahade`** ([commentary.md § Notional](commentary.md#notional), e.g. `hahadem`). Free **`grubul`** / **`xrubul`** / **`hrubul`** / **`vrubul`** / **`jrubul`** stay amount, discourse *imagine that:*, manner *as if*, verb *notionalize*, and cheer overlays on the number grid.
 
 **Endings** (no-mantissa specials):
 
@@ -1011,7 +943,7 @@ No-mantissa digitless-exp under `/v/` and `/h/` inherit special-value identity (
 | **`v-e`** | **decrease without bound** |
 | **`v~-e`** | *decrease a lot but finite* |
 | **`v+e-`** | **nudge up** — increase by an arbitrarily small but finite amount |
-| **`v-e-`** | **treat as imaginary / notionalize** — frame the patient as make-believe / mind-only / not for the real tally (not “nudge down”) |
+| **`v-e-`** | **treat as imaginary / notionalize:** frame the patient as make-believe / mind-only / not for the real tally |
 | **`v~-e-`** | *softly notionalize* / treat as *sort of* imaginary |
 | **`h+e`** | **unbounded multiplicity** (× without bound / unboundedly many times) |
 | **`h~+e`** | *many times but finite* |
@@ -1030,7 +962,7 @@ No-mantissa digitless-exp under `/v/` and `/h/` inherit special-value identity (
 | **`v~#e-`** | *take / come in near first place* |
 | **`h#e`** | *for the last time* |
 | **`h~#e`** | *for a near-last time* |
-| **`h#e-`** | *for the first time* (onset framing — contrast numbered **`h#1`**) |
+| **`h#e-`** | *for the first time* (onset framing). Numbered **`h#1`** stays a counted first. |
 | **`h~#e-`** | *for a near-first time* |
 
 Soft/named/resume endings (**`~`** / **`@`** / **`=`**) apply as on other specials.
@@ -1043,27 +975,25 @@ No-mantissa digitless-exp under `/j/` (interjection cheers):
 |------|---------|
 | **`j+e`** | *To infinity!* |
 | **`j~+e`** | *To a huge (but finite) amount!* |
-| **`j#e`** | *Finally!* (place/coda cheer — contrast discourse **`x#e`** *Finally:*) |
+| **`j#e`** | *Finally!* (place/coda cheer). Discourse **`x#e`** is *Finally:* |
 | **`j~#e`** | *Almost finally!* / soft coda cheer |
-| **`j#e-`** | *(finally, we're) starting!* (onset cheer — contrast discourse **`x#e-`** *Starting with:*) |
+| **`j#e-`** | *(finally, we're) starting!* (onset cheer). Discourse **`x#e-`** is *Starting with:* |
 | **`j~#e-`** | soft onset cheer |
 | **`j-e-`** | *As if!* / *Imagine!* / *In theory!* (notional cheer) |
 | **`j~-e-`** | soft *as if!* / hedged imagine-cheer |
 
 ##### Overlay `/x/`
 
-Under `/x/`, **last-place** **`x#e`** (and **`x~#e`** / **`x@#e`** / **`x=#e`**) = discourse *Finally* / last point, and **start-place** **`x#e-`** (and **`x~#e-`** / **`x@#e-`** / **`x=#e-`**) = discourse *Starting with:* / beginning — see [Number as discourse marker](#number-as-discourse-marker-by-marker). End-relative discourse points use **`x#-N`**. **Notional discourse:** **`x-e-`** = *imagine that:* / notional agenda point (side-track; not corroborating **`x+`** or independent **`x-`**); soft **`x~-e-`**; named **`x@-e-`**; resume **`x=-e-`**.
+Under `/x/`, **last-place** **`x#e`** (and **`x~#e`** / **`x@#e`** / **`x=#e`**) = discourse *Finally* / last point, and **start-place** **`x#e-`** (and **`x~#e-`** / **`x@#e-`** / **`x=#e-`**) = discourse *Starting with:* / beginning. See [Number as discourse marker](#number-as-discourse-marker-by-marker). End-relative discourse points use **`x#-N`**. **Notional discourse:** **`x-e-`** = *imagine that:* / notional agenda point (side-track). Soft **`x~-e-`**; named **`x@-e-`**; resume **`x=-e-`**. Corroborating stays **`x+`**; independent stays **`x-`**.
 
 #### Zero × exponent
 <a id="zero-exponent"></a>
 <a id="zero-exponential"></a>
 <a id="annihilate"></a>
 
-[numeric-derivation.md](numeric-derivation.md#zero-exponent-derivation) owns the derived **ROOT**-attached morphs (`ROOTx+0e`, …). This section owns the **free, hostless** number words — the same anatomy family used as standalone amounts / acts.
+Kind morphs on a **ROOT** are in [numeric-derivation.md](numeric-derivation.md#zero-exponent-derivation) (`ROOTx+0e`, …). This section is the **free, hostless** number words: the same anatomy as standalone amounts / acts.
 
-Forms that pair **mantissa `0`** with an exponent (digitless or the engineering **`e-1`** pair). Same anatomy family as [numeric derivation](numeric-derivation.md#zero-exponent-derivation); free words are **hostless** amounts / acts; derived words attach the morph to a ROOT.
-
-**Not** plain zero (`g+0`), **not** +∞ (`g+e`), **not** hyperbole (`g+1e`), **not** bare OoM (`g+e9`, **`g+e0`** ones band — [Bare OoM](#bare-oom-bands)). Soft / named / resume endings (**`~`** / **`@`** / **`=`**) apply as on other specials.
+Forms that pair **mantissa `0`** with an exponent (digitless or the engineering **`e-1`** pair). Soft / named / resume endings (**`~`** / **`@`** / **`=`**) apply as on other specials.
 
 ##### Referential (`/ɡ/` `/z/` `/d/` `/b/`)
 
@@ -1073,12 +1003,12 @@ Forms that pair **mantissa `0`** with an exponent (digitless or the engineering 
 | **`g+0e-`** | mantissa **`0`** + digitless **`bu`** | **sterile / null-at-seed** amount — emptiness at grain scale |
 | **`g-0e`** | **`ru`** + mantissa **`0`** + digitless **`ba`** | **absolute residue** quantity — amount that will not totally wipe |
 | **`g-0e-`** | **`ru`** + mantissa **`0`** + digitless **`bu`** | **micro-residue** amount |
-| **`g+0e-1`** | mantissa **`0`** + digitful **`bu`** + exp **`1`** | **engineering null at OoM −1** — amount wiped at scale 10⁻¹ (deci-null); **not** sterile digitless **`g+0e-`**, **not** bare OoM **`g+e-1`** |
+| **`g+0e-1`** | mantissa **`0`** + digitful **`bu`** + exp **`1`** | **engineering null at OoM −1:** amount wiped at scale 10⁻¹ (deci-null). Sterile digitless is **`g+0e-`**. Bare OoM is **`g+e-1`**. |
 | **`g-0e-1`** | **`ru`** + mantissa **`0`** + digitful **`bu`** + exp **`1`** | **engineering residue at OoM −1** — irreducible leftover at that scale |
 
 Same under `/z/` `/d/` `/b/` (`z+0e` = absolute-zero as subject; `z+0e-1` = deci-null as subject).
 
-**Emptiness chain (amounts):** **`g-e`** (−∞ deficit) ≠ **`g+0`** (plain zero) ≠ **`g+0e`** (absolute zero) ≠ **`g+0e-`** (sterile micro-null) ≠ **`g+0e-1`** (engineering null at 10⁻¹). Bare **`g+e0`** is the [ones decade band](#bare-oom-bands) (1–9), not emptiness and not a former “identity element.”
+**Emptiness chain (amounts):** **`g-e`** (−∞ deficit), **`g+0`** (plain zero), **`g+0e`** (absolute zero), **`g+0e-`** (sterile micro-null), **`g+0e-1`** (engineering null at 10⁻¹). Bare **`g+e0`** is the [ones decade band](#bare-oom-bands) (1–9).
 
 **Scalars only for `±0e-1`:** engineering scale-null is **`ra` / `ru`**. On ordinals, digitful exp is [generation](#ordinal-generation) (`g#0e-1` ≠ engineering; **`g#e0`** = current generation). Ordinal zero×digitless **`g#0e`** = [rank annihilated](#rank-annihilated) below.
 
@@ -1092,13 +1022,13 @@ Same under `/z/` `/d/` `/b/` (`z+0e` = absolute-zero as subject; `z+0e-1` = deci
 | **`v-0e`** | **leave irreducible residue** / refuse total wipe |
 | **`v-0e-`** | leave **micro-residue** |
 | **`v-0e-1`** | leave **residue at OoM −1** |
-| **`h+0e`** | **zero times (totally)** / annihilate repetition — **not** restrictor **`hal`** (*never* as applicability) |
+| **`h+0e`** | **zero times (totally)** / annihilate repetition. Applicability *never* is restrictor **`hal`**. |
 | **`h+0e-`** | sterile / grain-null multiplicity framing |
 | **`h+0e-1`** | zero-times framing **at OoM −1** |
 | **`h-0e`** | with irreducible residual repetition |
 | **`h-0e-1`** | residual repetition **at OoM −1** |
 
-Ones-band / assert-`e0` overlays are ordinary bare OoM / **`Ne0`** (**`v+e0`**, **`h+3e0`**, …) — [Bare OoM](#bare-oom-bands) / [Ambient](#ambient-scale) — **not** this zero×exp table. Soft **-m** hedges (*almost annihilate*, *almost deci-null*, …).
+Ones-band / assert-`e0` overlays are ordinary bare OoM / **`Ne0`** (**`v+e0`**, **`h+3e0`**, …): [Bare OoM](#bare-oom-bands) / [Ambient](#ambient-scale). Soft **-m** hedges (*almost annihilate*, *almost deci-null*, …).
 
 ##### Overlay `/j/`
 
@@ -1119,7 +1049,7 @@ Discourse nesting uses [generation](#ordinal-generation) (**`x#e0`** = current-l
 ##### Ordinal rank annihilated (`#0e`)
 <a id="rank-annihilated"></a>
 
-Mantissa **`0`** + digitless **`ba`** under forward ordinal **`re` / `#`**. **Not** zeroth-order **`#0`** (still a rung), **not** origin **`#e-`**, **not** generation **`#e0`** / **`#0e-1`** (digitful), **not** scalar **`+0e`**.
+Mantissa **`0`** + digitless **`ba`** under forward ordinal **`re` / `#`**. Numbered zeroth stays **`#0`** (still a rung). Origin landmark is **`#e-`**. Current generation is **`#e0`**. Scalar absolute zero is **`+0e`**.
 
 | Form | Reading |
 |------|---------|
@@ -1147,7 +1077,7 @@ Free **`g+e0`** / **`g+Ne0`** are bare OoM / scale assert on free numbers, not k
 #### Hyperbole — mantissa + digitless exponent
 <a id="gazillion"></a>
 
-**Mantissa digits `≠0`** (ordinary count) plus digitless **`ba`** / **`bu`** = a **hyperbolic** magnitude on **scalars** (comic huge / tiny) and on **ordinals** (comic late / early place). Mantissa **`0`** + digitless is [zero × exponent](#zero-exponent), **not** hyperbole. Not a real power of ten, not [ordinal generation](#ordinal-generation) (that needs **digitful** exp), and not a no-mantissa special (+∞ / last place / …). End-relative place is marker **`#-`**, not mantissa+`bu`.
+**Mantissa digits `≠0`** (ordinary count) plus digitless **`ba`** / **`bu`** = a **hyperbolic** magnitude on **scalars** (comic huge / tiny) and on **ordinals** (comic late / early place). Mantissa **`0`** + digitless is [zero × exponent](#zero-exponent). Real powers of ten keep digitful exponents (`g+1e9`). Generation needs **digitful** exp ([ordinal generation](#ordinal-generation)). End-relative place is marker **`#-`**.
 
 ##### Scalar (`ra` / `ru`)
 
@@ -1162,7 +1092,7 @@ Same under other referential PoS for scalars.
 
 ##### Ordinal umpteenth / umpteenth-first (`re` + **`ba`∅** / **`bu`∅**)
 
-Mantissa = how many joke-units of **late** (**`ba`**) or **early** (**`bu`**) rank. Still **finite** place hyperbole — not landmarks **`g#e`** / **`g#e-`**.
+Mantissa = how many joke-units of **late** (**`ba`**) or **early** (**`bu`**) rank. Still **finite** place hyperbole. Landmarks stay **`g#e`** / **`g#e-`**.
 
 | Form | Reading |
 |------|---------|
@@ -1173,7 +1103,7 @@ Mantissa = how many joke-units of **late** (**`ba`**) or **early** (**`bu`**) ra
 | **`g#3e-`** | *the three-gazillionth-first* |
 | **`g~#1e-`** | *about the gazillionth-first* |
 
-Contrast: **`g#e`** = last place; **`g~#e`** = near last; **`g#e-`** = start landmark; **`g#1`** = numbered *1st*; **`g#-2`** = penultimate ([from the end](#from-the-end)).
+`g#e` is last place; `g#e-` is the start landmark; `g#1` is numbered *1st*; `g#-2` is penultimate ([from the end](#from-the-end)).
 
 **Endings** on hyperbolic forms:
 
@@ -1200,23 +1130,21 @@ Contrast: **`g#e`** = last place; **`g~#e`** = near last; **`g#e-`** = start lan
 | **`x#1e`** | *umpteenth point:* / joke late agenda item |
 | **`x#1e-`** | *umpteenth-first point:* / joke early agenda item |
 
-**Not hyperbole:** `g+e` (no mantissa) = +∞; `g#e` / `g#e-` (no mantissa) = last / start place; mantissa **`0`** + digitless (`g+0e` / `g+0e-`) = [zero × exponent](#zero-exponent); bare / assert **`e0`** (`g+e0` / `g+3e0`) = [ones band](#bare-oom-bands) / [OoM-0 assert](#ambient-scale); end-relative **`g#-N`** = [from the end](#from-the-end); digitful ordinal exp = [generation](#ordinal-generation) (**`g#e0`** = current gen); `g+e9` (digitful exp) = bare OoM; `g+1e9` = 1×10⁹ (real engineering). Do not mix digitless exp with **`je`** / **`jo`** / **`ju`** in the same group.
-
-
-Examples: `g+e` → +∞; `g~+e` → arbitrarily large but finite; `g+1e` → *one gazillion*; `g~+1e` → *about a gazillion*; `g@+1e` → proper name *One Gazillion* / *the Gazillion*; `g+1e-` → *one gazillionth*; `g+e-` → arbitrarily small but finite; `g-e` → −∞; `g-e-` → notional / imaginary amount; `g~-e-` → soft notional; `g#e` → last place; `g~#e` → near last place; `g#e-` → start / beginning place; `g~#e-` → near first place; `g#1e` → *the gazillionth* / *umpteenth*; `g#1e-` → *the gazillionth-first*; `g#-2` → *2nd from the end* / *penultimate*; `g#-1` → *1st from the end* / *Starting with the last one*; `g#3e2` → *3rd of gen +2*; `g#e0` → current generation cohort; `g#3e0` → *3rd of current gen (asserted)*; `g#e-2` → *gen −2 cohort*; `g+0e` → absolute zero; `g+0e-` → sterile / null-at-seed amount; `g+0e-1` → engineering null at OoM −1; `g-0e-1` → engineering residue at OoM −1; `g#0e` → rank annihilated / disqualified; `g+e0` → ones band (1–9); `g+3e0` → *three at OoM 0*; `g+e3` → thousands band (1000–9999); `v+0e` → *annihilate*; `j+0e` → *Annihilate!*; `j#0e` → *Disqualified!*; `h#1e` → *for the gazillionth time*; `h#-2` → *for the penultimate time*; `x#e-` → *Starting with:*; `x#e` → *Finally:* / last discourse point; `x#e0` → *current-layer point(s):*; `x#-1` → *Starting with the last one:*; `x#-2` → *penultimate point:*; `x#3e2` → *3rd nested point at depth +2:*; `x-e-` → *imagine that:*; `v+e` → increase without bound; `v~+e` → increase a lot but finite; `v+e-` → nudge up; `v-e-` → treat as imaginary / notionalize; `h+e` → unbounded multiplicity; `h-e-` → notionally / as if; `h#e` → *for the last time*; `h#e-` → *for the first time* (onset); `v#e` → *take last place*; `v#e-` → *take starting place*; `v#-2` → *take 2nd from the end*; `j+e` → *To infinity!*; `j#e` → *Finally!*; `j#e-` → *(finally, we're) starting!*; `j#-2` → *Penultimate!*; `j-e-` → *As if!* / *Imagine!*; `h+1e` → *a gazillion times*; `g+e9` → bare OoM e9 band; `g+` → plural `>1`.
+Digitless **`e`/`e-`** stays in its own group (no **`je`** / **`jo`** / **`ju`** stacked in that group).
 
 ### Numeric derivation (compounds)
 
-PoS-less number stems may follow mid-word **`x`** on an ordinary content root (`ROOTx+e`, `ROOTx_12`, `ROOTx_e`, `ROOTx+1e`, …). That family is **derivation** (essence, coded subtype, [infinite labels](numeric-derivation.md#infinite-labels), hyperbole-ROOT, …), documented in **[numeric-derivation.md](numeric-derivation.md#numeric-derivation)**; family cues in **[x-compounds.md](x-compounds.md)**. Running-text examples prefer spelled CV (`zolovexrabal`) — [writing style](#writing-style-numeric-vs-spelled). Free number words on this page stay clause-slot counts, ranks, labels, overlays, and discourse items.
+PoS-less number stems may follow mid-word **`x`** on an ordinary content root (`ROOTx+e`, `ROOTx_12`, `ROOTx_e`, `ROOTx+1e`, …). That family is **derivation** (essence, coded subtype, [infinite labels](numeric-derivation.md#infinite-labels), hyperbole-ROOT, …): **[numeric-derivation.md](numeric-derivation.md#numeric-derivation)**; family cues in **[x-compounds.md](x-compounds.md)**. Running-text examples prefer spelled CV (`zolovexrabal`). See [writing style](#writing-style-numeric-vs-spelled).
 
+### Spoken group stress
+<a id="stress-pronunciation-guide"></a>
+<a id="stress"></a>
 
-### Stress (pronunciation guide)
-
-Structural prosody, not lexical stress — ordinary spelling carries no stress ([phonology](phonology.md#phonotactics)). On number words, stress marks number-internal structure:
+Ordinary spelling carries no stress mark ([phonology](phonology.md#phonotactics)). On number words, stress shows internal structure:
 
 - Digitless numbers (marker + ending only): stress the **marker** syllable (`ra` / `ru` / `re` / `reu` / `ro`). For **`reu`**, stress the first vowel of the digraph (`e`).
-- Each **digit group** stresses its **last digit**: the last **exponent** digit when the group has an exponent — even when a mantissa follows; otherwise the last **mantissa** digit. A group with no digits at all (bare **`ba`** / **`bu`**) stresses the marker itself.
-- That group-final stress doubles as the **spoken group boundary**: a stressed digit followed by another digit opens a new group. This keeps multi-group values unambiguous in speech even though the written commas are silent (`g+5e3,860,4e-2`).
+- Each **digit group** stresses its **last digit**: the last **exponent** digit when the group has an exponent, even when a mantissa follows; otherwise the last **mantissa** digit. A group with no digits at all (bare **`ba`** / **`bu`**) stresses the marker itself.
+- That group-final stress is also the **spoken group boundary**: a stressed digit followed by another digit opens a new group. This keeps multi-group values unambiguous in speech even though the written commas are silent (`g+5e3,860,4e-2`).
 - Digit-string groups follow the same rule: last digit of each group.
 - **`je`** (decimal point): always stressed when present.
 - **`jo`** / **`ju`** (percent / percentage points): always stressed when present.

@@ -1,22 +1,22 @@
 # Pronouns
 
-Once something is on the table, you point back with a **-r** form — Agalan has no separate “the X” article.
+Once something is on the table, you point back with a **-r** form.
 
 ## Beginner
 <a id="beginner"></a>
 
 ### Resume with **-r**
 
-A pronoun can point at **any prior word** (noun, verb, adjective, … — not only subjects). It takes the usual role letter for the slot you need **now** (that letter need not match the antecedent’s original role) and ends in **-r**.
+A pronoun can point at **any prior word** (noun, verb, adjective, and so on). English often treats pronouns as stand-ins for people in subject position; Agalan **-r** can resume whatever you just mentioned.
+
+It takes the usual first letter for the slot you need **now** (that letter need not match the word you are pointing back to) and ends in **-r**. Call the word you point back to the **antecedent**.
 
 Two stem lengths:
 
-1. **Letter pronoun** — a **fixed prefix of that word’s root**, cut **up to and including the 2nd vowel** (roots are `V(CV)+`, so typically the opening `VCV`). Prefer this when it already picks the right antecedent.
-2. **Full-root pronoun** — the **entire root** + **-r**. Use this when the letter form’s most recent match is **not** what you mean.
+1. **Letter pronoun:** a **fixed prefix of that word’s root**, cut **up to and including the 2nd vowel** (typically the opening `VCV`). Prefer this when it already picks the right antecedent.
+2. **Full-root pronoun:** the **entire root** + **-r**. Use this when the letter form’s most recent match is **not** what you mean.
 
-**-r** = **r**esume. The listener always takes the **most recent matching** stem — your job is to make the intended one most recent (letter form, full root, or an adjective / ordinal to disambiguate).
-
-There are no English-style 3rd-person pronoun lexemes (*he* / *she* / *it* / *they*) and no impersonal *one*.
+**-r** = **r**esume. The listener always takes the **most recent matching** stem. Make the intended one most recent: letter form, full root, or an adjective / ordinal that singles it out.
 
 ```
 `zazawan vawalal. zazar vajul.`
@@ -26,21 +26,12 @@ gloss: `z-grace` · `v-walk` · `z-←grace` · `v-sit`
 *Azawan goes. He sits.* (resume from the name’s root prefix)
 ```
 
-Add **-sh** after **-r** for a **group** referent (anchor **and associates**) — [plurality.md](plurality.md). Example: `…r` = one; `…rsh` = that one and associates.
-
+Add **-sh** after **-r** for a **group** referent (anchor **and associates**): [plurality.md](plurality.md). `…r` = one; `…rsh` = that one and associates.
 
 ### Special pronouns
 <a id="special-pronouns"></a>
 
-Discourse-role forms (not letter/full-root **-r** from ordinary antecedents). They take the usual role letter for the slot they fill.
-
-| Role | Root | Image → sense | Default ending | Example |
-|------|------|---------------|----------------|---------|
-| **Speaker** | **`ugobo`** | 🎤 *microphone* → *producer-role* | **-n** | `zugobon` *I* |
-| **Listener** | **`edone`** | 🎧 *headphones* → *addressee-role* | **-n** | `dedonen` *you* |
-| **Interlocutors** | **`aha`** | 🤝 *handshake* → *co-participants* | **-n** | `zahan` *we* (speaker ∪ address set) |
-| **Generic person** | **`enenu`** | 👤 *silhouette* → *a person* | **-n** | `zenenun` *someone* |
-| **Next clause** | **`adoro`** | 🚪 *doorway* → *what follows* | **-l** | `badorol` / `dadorol` — placeholder for the dependent that follows |
+Some pronouns name **roles in this utterance** (speech, writing, signing: any channel). They take the usual first letter for the slot they fill.
 
 ```
 `zugobon vezebel dedonen.`
@@ -50,22 +41,25 @@ gloss: `z-speaker` · `v-write` · `d-listener`
 *I write you.*
 ```
 
-mic / headphones / handshake name **roles in this utterance** (speech, writing, signing — any channel), not identity essence.
+| Role | Root | Mnemonic | Default ending | Example |
+|------|------|----------|----------------|---------|
+| **Speaker** | **`ugobo`** | 🎤 *microphone* → *producer-role* | **-n** | `zugobon` *I* |
+| **Listener** | **`edone`** | 🎧 *headphones* → *addressee-role* | **-n** | `dedonen` *you* |
+| **Interlocutors** | **`aha`** | 🤝 *handshake* → *co-participants* | **-n** | `zahan` *we* (speaker ∪ address set) |
+| **Generic person** | **`enenu`** | 👤 *silhouette* → *a person* | **-n** | `zenenun` *someone* |
+| **Next clause** | **`adoro`** | 🚪 *doorway* → *what follows* | **-l** | `badorol` / `dadorol`: placeholder for the dependent that follows |
 
-**Endings.** Person roles default to **-n** (definite discourse roles). Soft **-m** hedges the role framing. **`adoro`** defaults to **-l** (exact forward slot); soft **-m** hedges the subordination edge.
+Person roles default to **-n** (definite discourse roles). Soft **-m** hedges the role framing. **`adoro`** defaults to **-l** (exact forward slot); soft **-m** hedges the subordination edge.
 
-**Prefer names.** When a proper name is available, use **-n** and/or its **-r** resume — including for self-address — rather than **`ugobo`** / **`edone`**. See [proper name](reference-suffix.md#proper-name--n). Usual named people in examples: **Azawan**, **Ululon**, **Uhubun** (`azawa` / `ululo` / `uhubu` + **-n**).
-
-Self-address works the same way: name yourself instead of reaching for the speaker role.
+**Prefer names.** When a proper name is available, use **-n** and/or its **-r** resume, including for self-address, rather than **`ugobo`** / **`edone`**. See [proper name](reference-suffix.md#proper-name--n).
 
 ```
 (Ululon speaking) `zululon vawalal.`
 
 gloss: `z-Ululon` · `v-walk`
 
-*I go.* — Ululon names himself rather than saying *I*
+*I go.* Ululon names himself rather than saying *I*.
 ```
-
 
 ```
 `zugobon vawalal.`
@@ -83,24 +77,9 @@ gloss: `z-interlocutors` · `v-walk`
 *We (you and I) go.*
 ```
 
-### Clusivity
-<a id="clusivity"></a>
+**`enenu`** is a nonspecific **individual**. Once someone is on the table, resume them with content **-r**.
 
-When names are unavailable:
-
-| Form | Reading |
-|------|---------|
-| `zugobonsh` | speaker **and associates** (listener **not** assumed) |
-| `zedonensh` | **address set** — all current addressees (no speaker) |
-| `zahan` | **interlocutors** — speaker ∪ address set (inclusive *we*) |
-| name…**-sh** | that person **and associates** |
-| join list | exact membership census |
-
-Inclusive *we* is **`aha`**, not speaker **-sh**. Plural listener is the [address set](plurality.md#person-role-sh) (`zedonensh`); *you and yours* uses a **name**…**-sh**.
-
-**`enenu`:** a nonspecific **individual** — not English impersonal *one*, not join **`zar`** / **`dar`**, and not a 3rd-person anaphor (use content **-r** once someone is introduced).
-
-**`adoro`:** placeholder for the material that **immediately follows** ([dependent clauses](core.md#dependent-clauses)). Put **`adoro` last** in its host slot; the dependent follows with no intervening host words. Same speech act as the main sentence → dependent may omit `/j/`; a different speech act needs its own force word.
+**`adoro`** is the placeholder for the material that **immediately follows** ([dependent clauses](core.md#dependent-clauses)). Put **`adoro` last** in its host slot; the dependent follows with no intervening host words. Same speech act as the main sentence: the dependent may omit `/j/`. A different speech act needs its own force word.
 
 ```
 `zugobon vezehel dazawan dadorol zululon vedabul.`
@@ -109,6 +88,20 @@ gloss: `z-speaker` · `v-tell` · `d-grace` · `d-next-clause` · `z-courage` ·
 
 *I told Azawan that Ululon left.*
 ```
+
+### Clusivity
+<a id="clusivity"></a>
+
+**Clusivity** is who counts as *we* or *you* when names are unavailable.
+
+| Form | Job | Example |
+|------|-----|---------|
+| `zugobonsh` | speaker **and associates** (listener not assumed) | `zugobonsh vawalal.` *We (I and my people) walk.* |
+| `zedonensh` | **address set**: all current addressees (no speaker) | `zedonensh vajul.` *You all sit.* |
+| `zahan` | **interlocutors**: speaker ∪ address set (inclusive *we*) | `zahan vawalal.` *We (you and I) walk.* |
+| name…**-sh** | that person **and associates** | `zazawansh vawalal.` *Azawan and associates walk.* |
+
+Inclusive *we* is **`aha`**. Speaker **-sh** is “me and my people,” not “you and I.” Plural listener is the [address set](plurality.md#person-role-sh) (`zedonensh`); *you and yours* uses a **name**…**-sh**.
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -217,13 +210,14 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Do I sit?*
 :::
 
+## Intermediate
 <a id="intermediate"></a>
 
 ### How English approximates **-r**
 
 Agalan has one resume mechanism; English does not. Approximate by crossing **what was mentioned** (antecedent role) with **what slot you need now** (pronoun role). The referent stays the same; only the English wording changes.
 
-**Pronoun `/x/` vs `/h/`:** `/x/`…`-r` is **discourse navigation** — *going back to subject X* / *returning to that thread* (removing it does not change the following claim). Clause **aboutness** (*regarding X*) stays `/h/` + `/b/` X — [adverbs](core.md#adverbs-h) / [discourse markers](core.md#discourse-markers-x).
+`/x/`…`-r` is **discourse navigation**: *going back to subject X* / *returning to that thread* (removing it does not change the following claim). Clause **aboutness** (*regarding X*) stays `/h/` + `/b/` X ([adverbs](core.md#adverbs-h) / [discourse markers](core.md#discourse-markers-x)).
 
 #### Same-role resume
 
@@ -240,7 +234,7 @@ Agalan has one resume mechanism; English does not. Approximate by crossing **wha
 | `/j/` interjection → `/j/` | repeating that exclamation |
 | `/x/` → `/x/` | *and so* / *likewise* / the same linker again |
 
-Clause-force `/j/` is not resumed with `-r` ([utterance markers](core.md#utterance-markers-j)).
+Resume content with `-r`. Clause-force `/j/` stays a force word ([utterance markers](core.md#utterance-markers-j)).
 
 #### Quick English cheat sheet
 
@@ -254,34 +248,32 @@ Clause-force `/j/` is not resumed with `-r` ([utterance markers](core.md#utteran
 | *going back to subject X* (thread resume) | Any antecedent → `/x/` …`-r` |
 | *that* (prior cite / mention / aside) | [Span anaphor](spans.md#endings) → `daxur` / `hexur` / … |
 
-**Span anaphors** are closed [span-fence](spans.md) forms. They get translated as it or that. "He said *that*?!" "that (title)" "that (proverb)"
+**Span anaphors** are closed [span-fence](spans.md) forms. English often says *it* or *that*: "He said *that*?!" / "that (title)" / "that (proverb)".
 
 Content questions (*who* / *what* / …) use [unspecified-member **-r** under question](questions.md#fill-ask-r) (`zar` / `var` / `xar` / …).
 
-### Cross-role recast (sketch)
+### Cross-role recast
 
-Same referent, new role — English needs a longer paraphrase. Full PoS×PoS tables are Advanced ([cross-role inventory](#cross-role-inventory)).
+Same referent, new role: English needs a longer paraphrase. Full first-letter × first-letter tables are Advanced ([cross-role inventory](#cross-role-inventory)).
 
 | Antecedent was… | Pronoun as… | English sketch |
 |-----------------|-------------|----------------|
 | noun | `/v/` | *do that (to/with it)* |
 | noun | `/ɡ/` | *that one’s* / *of that kind* |
 | noun | `/x/` | *going back to subject X* |
-| verb | noun | *that action / event* — **not** the agent; use [role compounds](roles.md#role-compounds) for agent/patient |
+| verb | noun | *that action / event* (the doing, not the doer; [role compounds](roles.md#role-compounds) name agent/patient) |
 | verb | `/h/` | *by doing so* / *thereby* |
 | adjective | noun | *the … one* / *that quality* |
 
-### Specials — further notes
+### Specials: further notes
 
-**Speaker / listener.** 1st / 2nd person only when a name is unavailable or undesired.
+**Speaker / listener.** Use 1st / 2nd person when a name is unavailable or undesired.
 
-**Interlocutors (`aha`).** Inclusive *we* as a **discourse role** — not “my side,” not a titled team, and not an exact census (those use [associative **-sh**](plurality.md#associative) / joins). Soft **`zaham`** hedges co-agency.
+**Interlocutors (`aha`).** Inclusive *we* as a **discourse role**. Associative “my side” and exact membership lists use [associative **-sh**](plurality.md#associative) / joins. Soft **`zaham`** hedges co-agency.
 
-**Address set.** Prefer: everyone named in this turn’s vocative cluster, plus anyone still held as addressee by context. One addressee → singular **`edone`**; several → **`edone…sh`**. Inclusive co-agency (*shall we…*) → **`aha`**, not speaker **-sh**.
+**Address set.** Everyone named in this turn’s vocative cluster, plus anyone still held as addressee by context. One addressee → singular **`edone`**; several → **`edone…sh`**. Inclusive co-agency (*shall we…*) → **`aha`**.
 
-**Subordinators.** The full *because* / *if* / *although* / *while* / *until* / *before* / *after* table and **`adoro`** chaining live in [core.md § Dependent clauses](core.md#dependent-clauses).
-
-Prefer **`aha`** over a speaker+listener join when the point is **co-participant role**; prefer name joins when membership identity is the point; prefer name…**-sh** for associative cohorts.
+Prefer **`aha`** when the point is **co-participant role**; prefer name joins when membership identity is the point; prefer name…**-sh** for associative cohorts.
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -396,7 +388,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 ### Cross-role inventory
 <a id="cross-role-inventory"></a>
 
-Each subsection is an **antecedent** role; table rows are the **pronoun** role. Reading aid only — Agalan still has one **-r** mechanism.
+Each subsection is an **antecedent** role; table rows are the **pronoun** role. Reading aid only: Agalan still has one **-r** mechanism.
 
 #### Antecedent was a noun (`/z/`, `/d/`, or `/b/`)
 
@@ -414,7 +406,7 @@ Each subsection is an **antecedent** role; table rows are the **pronoun** role. 
 
 | Pronoun role | English approximation |
 |--------------|------------------------|
-| `/z/` `/d/` `/b/` | *that action / event / doing* — **not** the agent/patient; use [role compounds](roles.md#role-compounds) |
+| `/z/` `/d/` `/b/` | *that action / event / doing* (not the agent/patient; use [role compounds](roles.md#role-compounds)) |
 | `/v/` | *do so* / *do that* |
 | `/ɡ/` | *such* (done that way); property of having done that |
 | `/w/` | Frame on an adjective about that doing |
@@ -463,7 +455,7 @@ Each subsection is an **antecedent** role; table rows are the **pronoun** role. 
 |--------------|------------------------|
 | Same class (`/j/` or `/x/`) | Repeat that vocative, interjection, or linker |
 | `/x/` from a content antecedent | *Going back to subject X* |
-| Noun / verb / adjective / adverb | Recast the *named formula or discourse label* as an ordinary referent — common for `-n` titles |
+| Noun / verb / adjective / adverb | Recast the *named formula or discourse label* as an ordinary referent (common for `-n` titles) |
 
 ### Translation practice
 <a id="translation-practice-advanced"></a>
@@ -537,5 +529,5 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 :::
 
 ## See also
-- [plurality.md](plurality.md) — **-sh**; address set vs associative
-- [core.md](core.md#dependent-clauses) — **`adoro`** placement
+- [plurality.md](plurality.md): **-sh**; address set vs associative
+- [core.md](core.md#dependent-clauses): **`adoro`** placement

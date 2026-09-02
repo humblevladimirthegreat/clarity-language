@@ -3,70 +3,86 @@
 <a id="circumstance-h-w"></a>
 <a id="restrictors"></a>
 
-Join-series spellings under `/h/` or `/w/` that limit **when** the host applies — *only when…*, *never*, *always*, *sometime*.
+Same vowel-and-ending shapes as joins, used under `/h/` or `/w/` to say **when** the host applies: *only when…*, *never*, *always*, *sometime*.
 
 ## Beginner
 <a id="beginner"></a>
 
-### Applicability, not sibling *and*
+### When the host applies
 
-Under **`/h/`** and **`/w/`**, these forms mark **applicability circumstances**: when / under which cases the **host** holds — not co-manner *and*.
-
-| Prefix | Host | Floats? |
-|--------|------|---------|
-| `/h/` | the **clause** (verb-level claim) — or a VP chain when the restrictor sits before the VP stretch / in SHARED after a `/v/` join | yes (same free position as ordinary `/h/`) |
-| `/w/` | the **preceding `/ɡ/`** (the property) | no (stays on that adjective) |
-
-| Pattern | Reading |
-|---------|---------|
-| `hadazal hazebo` | *quickly and quietly* — co-applying adverbs; **no** join |
-| `hanunul hal` | *only when raining* — closed restrictor |
-| `hal` (bare) | *never* |
+A restrictor sits in the adverb slot (`/h/`) or on the previous adjective (`/w/`). It names **occasions**: the times or cases in which the clause (or that property) counts.
 
 ```
 `zazawan vawalal hanunul hal.`
 
-gloss: `z-grace` · `v-go` · `h-rain` · `hal`
+gloss: `z-grace` · `v-walk` · `h-rain` · `hal`
 
-*Azawan goes only when raining.*
+*Azawan walks only when raining.*
 ```
+
+Bare **`hal`** with no occasion listed is *never*:
 
 ```
 `zazawan vawalal hal.`
 
-gloss: `z-grace` · `v-go` · `hal`
+gloss: `z-grace` · `v-walk` · `hal`
 
-*Azawan never goes.*
+*Azawan never walks.*
 ```
 
-### The forms (beginner)
+The vowels are the join series you already know (**a** inventory, **u** undo, **o** one-choice), read as a **when-frame** for the host. Ending **-l** closes the frame; **-m** leaves it open.
 
-| Form | Bare reading |
-|------|----------------|
-| **`hal` / `ham`** | ***never*** / *never as far as I know* |
-| **`hual` / `huam`** | ***always*** / *always as far as I know* |
-| **`har`** | *sometime* |
-| **`hor`** | *anytime* |
-| **`hur`** | *sometime else* |
+Two manner adverbs in a row still mean they apply together. That is ordinary stacking, not a restrictor:
 
-`/w/` matches with host = the adjective property (`wal` = *never* for that property; `wual` = *always* for that property).
+```
+`zazawan vawalal hadazal hazebo.`
+
+gloss: `z-grace` · `v-walk` · `h-haste` · `h-quiet`
+
+*Azawan walks quickly and quietly.*
+```
+
+| Prefix | What it limits | Place |
+|--------|----------------|-------|
+| `/h/` | the **clause** (the verb claim) | floats like any adverb; after a verb join it can sit in the shared stretch |
+| `/w/` | the **previous adjective** | stays on that adjective |
+
+### Bare forms
+
+| Form | Reading | Mnemonic |
+|------|---------|----------|
+| **`hal` / `ham`** | ***never*** / *never, as far as you can tell* | **a** inventory empty + **-l** closed / **-m** open |
+| **`hual` / `huam`** | ***always*** / *always, as far as you can tell* | **ua** everything-but-empty + **-l** / **-m** |
+| **`har`** | *sometime* | **-r** unspecified member |
+| **`hor`** | *anytime* | **o** one-choice, unspecified |
+| **`hur`** | *sometime else* | **u** other-than, unspecified |
+
+`/w/` uses the same vowels on the adjective: `wal` *never* (for that property), `wual` *always* (for that property).
 
 ```
 `guzumum wal.`
 
-gloss: `g-happy` · `w-al`
+gloss: `g-happy` · `wal`
 
-*Never happy* (for that property).
+*Never happy* (that property never holds).
 ```
 
-### With conjuncts (starter)
+```
+`zuhubun vuzunul hual.`
 
-Each conjunct is a simple `/h/` or `/w/` content word (or a complex unit the lexicon allows). Matching role prefix on every conjunct head and on the join.
+gloss: `z-beauty` · `v-sing` · `hual`
 
-| Form | With conjunct(s) |
-|------|------------------|
-| **`hal` / `ham`** | *only when…* (closed) / *when…, among other occasions* (open) |
-| **`hual` / `huam`** | *always except when…* |
+*Uhubun always sings.*
+```
+
+### Listed occasions
+
+Put occasion words **before** the restrictor, then close on the right, same fence as other phrase lists. Shared extra detail sits immediately after the restrictor: [coordination.md](coordination.md). Each listed piece is a simple `/h/` or `/w/` content word (or a complex unit the lexicon allows), with the same role letter on every piece and on the restrictor.
+
+| Form | With occasion(s) | Mnemonic |
+|------|------------------|----------|
+| **`hal` / `ham`** | *only when…* (closed) / *when…, among other occasions* (open) | **a** inventory of times |
+| **`hual` / `huam`** | *always except when…* | **ua** always, minus these times |
 
 ```
 `hanunul hudunul ham.`
@@ -76,14 +92,12 @@ gloss: `h-rain` · `h-night` · `ham`
 *When raining and at night, among other possible cases.*
 ```
 
-Same fence rules as other phrase slots: right close only, SHARED immediately after the join — [coordination.md](coordination.md).
-
-*When?* under question force (bare **`har`**, …): [questions.md](questions.md#circumstance-when).
+Asking *when?* with these forms (bare **`har`**, and the rest of the *-r* set): [questions.md](questions.md#circumstance-when).
 
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills on this Beginner band. Try each item before opening **Show answer**. Restrictors mark **when the host applies** — not co-manner *and*. Bare **`hal`** / **`hual`** are *never* / *always*; with a conjunct they are *only when…* / *always except when…*.
+Short drills on this Beginner band. Try each item before opening **Show answer**. Restrictors mark **when the host applies**. Bare **`hal`** / **`hual`** are *never* / *always*; with a listed occasion they are *only when…* / *always except when…*.
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `awala` *walk* · `urunu` *run* · `uzunu` *sing* · `elebe` *sleep* · `uzumu` smile → *happy* (**-m**) · `uruna` *rain* · `udunu` *night* · `adaza` *haste* · `azebo` *quiet*
 
@@ -190,42 +204,60 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 ## Intermediate
 <a id="intermediate"></a>
 
-### Circumstance inventory (full)
+### More when-frames
 <a id="defined-core-full"></a>
 
-`/w/` matches `/h/` with host = the adjective (`wal` / `wam` / `wual` / `wuam` / `war` / `wor` / `wur` and the non-bare core below).
+The same vowels as joins now name **more kinds of occasion**. `/w/` matches `/h/` on the adjective (`wal` / `wam` / `wual` / `wuam` / `war` / `wor` / `wur`, and the rows below).
+
+```
+`zazawan vawalal hanunul hudunul hol.`
+
+gloss: `z-grace` · `v-walk` · `h-rain` · `h-night` · `hol`
+
+*Azawan walks either when raining or at night (not both).*
+```
+
+```
+`zululon velebel hanunul hozowol haol.`
+
+gloss: `z-courage` · `v-sleep` · `h-rain` · `h-snow` · `haol`
+
+*Ululon sleeps when raining and/or when snowing.*
+```
+
+One restrictor chain fills one floating `/h/` unit, or one `/w/` stack slot on its host.
 
 #### Set / invert / inclusive
 
-| Form | With conjunct(s) | Bare |
-|------|------------------|------|
-| **`hal` / `ham`** | *only when…* (closed) / *when…, among other occasions* (open) | ***never*** / *never that I can think of* |
-| **`hol` / `hom`** | *either when A or when B (not both)* — exclusive trigger; **`hom`** also allows *or never* | |
-| **`haol` / `haom`** | *when A and/or when B* — any of these occasions suffices | |
-| **`hul` / `hum`** | *not when…* / *not when…, for one* | |
-| **`hual` / `huam`** | *always except when…* | ***always*** / *always from me* |
-| **`huol` / `huom`** | *anytime except when…* | |
+| Form | With occasion(s) | Bare | Mnemonic |
+|------|------------------|------|----------|
+| **`hal` / `ham`** | *only when…* (closed) / *when…, among other occasions* (open) | ***never*** / *never that you can think of* | **a** inventory |
+| **`hol` / `hom`** | *either when A or when B (not both)*; **`hom`** also allows *or never* | | **o** one-choice |
+| **`haol` / `haom`** | *when A and/or when B* (any of these occasions suffices) | | **ao** add + choice |
+| **`hul` / `hum`** | *not when…* / *not when…, for one* | | **u** undo |
+| **`hual` / `huam`** | *always except when…* | ***always*** / *always, as far as you can tell* | **ua** undo + add |
+| **`huol` / `huom`** | *anytime except when…* | | **uo** undo + choice |
 
-#### Ranked (with conjuncts only)
+#### Ranked (with listed occasions)
 
-| Form | Reading |
-|------|---------|
-| **`hel` / `hem`** | *preferably when A ≻ when B…* (closed / open priority of occasions) |
-| **`hael` / `haem`** | *as often as* / *equally when A and when B* — tied occasion frequency |
-| **`hoel` / `hoem`** | *if A, else if B…* — fallback occasions (exclusive contingency) |
+Closed **`hel`** ranks **when** it matters. **`hal`** still means *only when* these times, with no priority among them.
 
-Closed **`hel`** ranks **when** it matters — distinct from **`hal`** (*only when* these, no priority claim).
+| Form | Reading | Mnemonic |
+|------|---------|----------|
+| **`hel` / `hem`** | *preferably when A ≻ when B…* (closed / open priority of occasions) | **e** order |
+| **`hael` / `haem`** | *as often as* / *equally when A and when B* | **ae** add in order |
+| **`hoel` / `hoem`** | *if A, else if B…* (fallback occasions) | **oe** choice in order |
 
 #### Unspecified-member (`-r`)
 
-Statement readings below; under **question** force → [questions.md](questions.md#circumstance-when).
+Statement readings below. Under **question** force: [questions.md](questions.md#circumstance-when).
 
-| Form | With conjunct(s) | Bare |
-|------|------------------|---------|
-| **`har`** | *sometime among these* | *sometime* |
-| **`hor`** | *anytime among these* | *anytime* |
-| **`hur`** | *sometime other than these* | *sometime else* |
-| **`hael`** | *as often as among these* / *equally when these* | *equally often* / *tied frequency frame* |
+| Form | With occasion(s) | Bare | Mnemonic |
+|------|------------------|------|----------|
+| **`har`** | *sometime among these* | *sometime* | **-r** some member |
+| **`hor`** | *anytime among these* | *anytime* | **o** + **-r** |
+| **`hur`** | *sometime other than these* | *sometime else* | **u** + **-r** |
+| **`hael`** | *as often as among these* / *equally when these* | *equally often* / *tied frequency frame* | **ae** even with **-l** |
 
 ### More examples
 
@@ -239,26 +271,19 @@ Statement readings below; under **question** force → [questions.md](questions.
 - `hael` → *equally often* / *tied frequency frame* (bare)
 - `bemamal bamugal hoel` → *if (when) fix, else if workaround…*
 - `hanunul hozowol har` → *sometime among rain or snow*
-- Complex conjunct: `hohohul hal` → *only at home*
-- `/w/` core: `hededem wal` → *only when alleged*; `war` → *sometime* (under some framing); juxtaposition `guzumum wube wenazel` → *very* and *recent* (not a restrictor fence)
+- Complex occasion: `hohohul hal` → *only at home*
+- `/w/` core: `hededem wal` → *only when alleged*; `war` → *sometime* (under some framing); two adjective details in a row: `guzumum wube wenazel` → *very* and *recent*
 
-### Conjuncts and next-clause *when*
+### Occasions vs a next-clause *when*
 
-Each conjunct is a **simple** `/h/` or `/w/` content word, or a **complex** unit (`/h/`+`/b/` / contiguous `/w/` material the lexicon allows).
+Each listed occasion is a **simple** `/h/` or `/w/` content word, or a **complex** unit (`/h/` plus `/b/`, or contiguous `/w/` material the lexicon allows).
 
-Next-clause *when* / *if* subordination stays ordinary complex `/h/` + `/b/` [next-clause pronoun](pronouns.md#special-pronouns) ([core.md](core.md#dependent-clauses)). Circumstance fences list **phrase** circumstances, not dependent sentences.
-
-Necessity-style *never without…* uses **`hal`** (and join-relation **`huan`**) — [causation.md](causation.md#necessary). Ability / incapability are not restrictors — [ability.md](ability.md#ability). **`/h/`…**-n** forms (`han`, `hon`, …) are [join-relations](join-extras.md#join-relations), not restrictors.
-
-### Constraints
-
-- **One restrictor chain** occupies one `/h/` floating unit or one `/w/` stack position on its host.
-- Sibling manner / degree *and* uses juxtaposition, not a restrictor fence.
+*When* / *if* as a **dependent sentence** stays ordinary complex `/h/` plus `/b/` [next-clause pronoun](pronouns.md#special-pronouns) ([core.md](core.md#dependent-clauses)). Circumstance fences list **phrase** occasions.
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills on this Intermediate band. Try each item before opening **Show answer**. Use the **circumstance inventory** (exclusive / inclusive / *not when* / ranked occasions / unspecified-member with conjuncts). Next-clause *when* / *if* stays `/h/` + `/b/` **`adoro`**, not a circumstance fence of sentences.
+Short drills on this Intermediate band. Try each item before opening **Show answer**. Use exclusive / inclusive / *not when* / ranked occasions / unspecified-member with listed occasions. Next-clause *when* / *if* stays `/h/` plus `/b/` **`adoro`**.
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `awala` *walk* · `urunu` *run* · `uzunu` *sing* · `elebe` *sleep* · `uwuru` *write* · `uruna` *rain* · `ozowo` *snow* · `udunu` *night* · `ohohu` *house* · `amuba` *emergency* · `ogegau` *convenience* · `emama` *fix* · `amuga` *workaround* · `adoro` *next clause*
 
@@ -364,5 +389,5 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 ## See also
 
-- Sibling *and* joins (not applicability): [coordination.md](coordination.md)
+- Phrase lists (right-close fence): [coordination.md](coordination.md)
 - *When?* under question: [questions.md](questions.md#circumstance-when)

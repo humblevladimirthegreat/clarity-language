@@ -1,49 +1,26 @@
-# Revisers (**a** / **e** / **o** / **u** + ending)
+# Revisers (*including* / *rather* / *instead* / *except*)
 <a id="in-clause-revision-bare-a--e--o--u"></a>
 <a id="bare-revision"></a>
 <a id="in-clause-revision"></a>
 <a id="revisers"></a>
 
-Prefix-less vowel + **-l** / **-m** / **-n** forms that **revise** a slot or glue this sentence to prior talk: *including* / *rather* / *instead* / *except* (in-clause) and *additionally* / *in other words* / *instead* / *except* (discourse).
+Prefix-less vowel + **-l** / **-m** / **-n** words that **revise** a role in the sentence, or glue this sentence to prior talk.
 
 ## Beginner
 <a id="beginner"></a>
 
-### What a reviser is
+### Repair a role, or glue to prior talk
 
-An ending is **required**: unmarked **a** / **e** / **o** / **u** are not legal words. Revisers do not take **-r**, and they are not a list join.
+Use a reviser when you want to **tweak** what you just named (in the same sentence), or to **attach** this sentence to what was already said.
 
-Two placements, one form set:
+Two placements, same spellings:
 
-| Placement | Cue | Job |
-|-----------|-----|-----|
-| **In-clause** | same-slot `A REV B` | slot repair — *including* / *rather* / *instead* / *except* |
-| **Discourse** | `REV` before force, omitted-default body, `/x/` continue, or `/x/` linker | claim-to-claim glue — *additionally* / *in other words* / *instead* / *except* |
+| Placement | Pattern | English job |
+|-----------|---------|-------------|
+| **In-clause** | `A REV B` in the same role | *including* / *rather* / *instead* / *except* |
+| **Discourse** | `REV` at the front of this sentence | *additionally* / *in other words* / *instead* / *except* |
 
-vowels track the join series loosely — **a** additive, **e** soft rank, **o** exclusive swap, **u** subtract — but the job is **revision**, not a list join.
-
-### Vowel meanings
-
-| Vowel | In-clause `A REV B` | Discourse |
-|-------|---------------------|-----------|
-| **a** | *including* — A, including B | ***additionally*** — a further point |
-| **e** | *rather* — A, or rather B (soft correction) | ***in other words*** / *rather* — rephrase or soft-correct prior |
-| **o** | *instead* — not A, but B | ***instead*** — this sentence replaces the prior claim |
-| **u** | *except* / *but not* — A except B | ***except*** — exception to the prior frame (not adversative *but*) |
-
-*Starting with* / *Finally* are **not** discourse **`a`** — use `/x/` **`x#e-`** / **`x#e`** ([numbers.md](numbers.md#number-as-discourse-marker-by-marker)).
-
-### Endings (starter)
-
-Every reviser takes **-l**, **-m**, or **-n**.
-
-| Ending | Forms | Job |
-|--------|-------|-----|
-| **-l** | `al` / `el` / `ol` / `ul` | closed — right-hand side (or this discourse move) is exhaustive / committed |
-| **-m** | `am` / `em` / `om` / `um` | open — non-exhaustive / soft |
-| **-n** | `an` / `en` / `on` / `un` | named / conventional frame (same mnemonic as proper **-n**) |
-
-When unsure between closed and open, prefer **-m**. No **-r**. **-n** here is named/conventional — **not** clause soft **-n** (*and then* **`xan`**).
+The vowel is the [vowel-series](vowel-series.md) job map: **`a`** add, **`e`** order (soft rank), **`o`** one (swap), **`u`** undo.
 
 ### In-clause shape
 <a id="in-clause-shape"></a>
@@ -52,9 +29,7 @@ When unsure between closed and open, prefer **-m**. No **-r**. **-n** here is na
 A REV B
 ```
 
-- **Same clause**, **same slot** — both sides are subjects, or both objects, or both `/ɡ/`, and so on. Mixed slots are illegal (`z-… ol d-…`).
-- The first side is **A**; each **REV** introduces the next right-hand side.
-- Allowed **inside** a conjunct as local repair — not as a substitute for the join (`zam` / `vam` / …).
+Both sides sit in the **same role**: both subjects, both objects, both adjectives, and so on. The first side is **A**; each reviser introduces the next right-hand side.
 
 ```
 `zodogolsh am zagadal.`
@@ -69,7 +44,7 @@ gloss: `z-dog-sh` · `am` · `z-cat`
 
 gloss: `d-tea` · `ol` · `d-coffee`
 
-*Coffee instead of tea.* (object slot)
+*Coffee instead of tea.* (object role)
 ```
 
 ```
@@ -80,20 +55,59 @@ gloss: `z-team` · `ul` · `z-grace`
 *The team except Azawan.*
 ```
 
+A list join names members together. A reviser **repairs** one side you already named:
+
+```
+`zodogol zagadal zam.`
+
+gloss: `z-dog` · `z-cat` · `z-am`
+
+*A dog and a cat.*
+```
+
+```
+`zodogolsh am zagadal.`
+
+gloss: `z-dog-sh` · `am` · `z-cat`
+
+*Dogs, including a cat among others.*
+```
+
+### Vowel meanings
+
+| Vowel | Mnemonic | In-clause `A REV B` | Discourse |
+|-------|----------|---------------------|-----------|
+| **a** | add | *including*: A, including B | *additionally*: a further point |
+| **e** | order (soft rank) | *rather*: A, or rather B | *in other words* / *rather*: rephrase or soft-correct prior |
+| **o** | one (swap) | *instead*: B in place of A | *instead*: this sentence replaces the prior claim |
+| **u** | undo | *except* / *but not*: A except B | *except*: exception to the prior frame |
+
+### Endings (starter)
+
+Every reviser takes **-l**, **-m**, or **-n**. When unsure between closed and open, prefer **-m**.
+
+| Ending | Forms | Job | Mnemonic |
+|--------|-------|-----|----------|
+| **-l** | `al` / `el` / `ol` / `ul` | closed: the right-hand side (or this discourse move) is exhaustive / committed | same closed **-l** as elsewhere |
+| **-m** | `am` / `em` / `om` / `um` | open: non-exhaustive / soft | same open **-m** as elsewhere |
+| **-n** | `an` / `en` / `on` / `un` | named / conventional frame | same named **-n** as elsewhere |
+
+**-n** here names a conventional frame (a titled *Additionally*, a stock swap). Clause *and then* is still **`xan`**.
+
 ### Discourse shape (starter)
 <a id="discourse-revisers"></a>
 <a id="discourse-glue"></a>
 
-Discourse revisers glue **this utterance** to **prior talk**. Prior talk = A; this move = B.
+A discourse reviser glues **this utterance** to **prior talk**. Prior talk is A; this move is B.
 
 | Form | Reading |
 |------|---------|
 | `al …` / `al jal …` | *Additionally, …* (committed) |
 | `el …` | *In other words, …* |
 | `ol …` | *Instead, …* |
-| `ul …` | *Except, …* (sole exception to prior frame) |
+| `ul …` | *Except, …* (sole exception to the prior frame) |
 
-Omit recoverable **`jal`** after the reviser when the body is a default statement.
+Skip recoverable **`jal`** after the reviser when the body is a default statement.
 
 ```
 `al zazawan vawalal.`
@@ -103,14 +117,14 @@ gloss: `al` · `z-grace` · `v-walk`
 *Additionally, Azawan goes.*
 ```
 
-Adversative *but* / *however*, *therefore*, *meanwhile*, and standalone *next* stay other `/x/` roots ([core.md](core.md#discourse-markers-x)). Narrative *and then* between full sentences is clause **`xan`**, not this series.
+Adversative *but* / *however*, *therefore*, *meanwhile*, and standalone *next* stay other `/x/` roots ([core.md](core.md#discourse-markers-x)). Narrative *and then* between full sentences is clause **`xan`**.
 
 ### Translation practice
 <a id="translation-practice"></a>
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `ahada` *team* · `odogo` *dog* · `uzumu` smile → *happy* (**-m**) · `ele` *size* · `awala` *walk* · `elebe` *sleep*
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `ahada` *team* · `uzumu` smile → *happy* (**-m**) · `ele` *size* · `awala` *walk* · `elebe` *sleep*
 
 #### English → Agalan
 
@@ -138,13 +152,13 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `al zazawan vawalal.`
 :::
 
-**5.** *A dog and a cat.* (list join, not a reviser)
+**5.** *A dog and a cat.* (list join)
 
 ::: details Show answer
 `zodogol zagadal zam.`
 :::
 
-**6.** *Azawan is happy — or rather, big.*
+**6.** *Azawan is happy, or rather, big.*
 
 ::: details Show answer
 `zazawan guzumum el gelel.`
@@ -223,21 +237,37 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 | | **-l** | **-m** | **-n** |
 |--|--------|--------|--------|
-| **a** (*including*) | `al` — including only B | `am` — including B among others | `an` — including B in a named/conventional A |
-| **e** (*rather*) | `el` — B is the precise reading | `em` — B is a better wording | `en` — conventional / formulaic rephrase |
-| **o** (*instead*) | `ol` — B fully replaces A | `om` — B is a replacement (not sworn unique) | `on` — stock / conventional swap |
-| **u** (*except*) | `ul` — except only B | `um` — except B (and maybe more) | `un` — except B from a named/conventional A |
+| **a** (*including*; add) | `al`: including only B | `am`: including B among others | `an`: including B in a named/conventional A |
+| **e** (*rather*; order) | `el`: B is the precise reading | `em`: B is a better wording | `en`: conventional / formulaic rephrase |
+| **o** (*instead*; one) | `ol`: B fully replaces A | `om`: B is a replacement (not sworn unique) | `on`: stock / conventional swap |
+| **u** (*except*; undo) | `ul`: except only B | `um`: except B (and maybe more) | `un`: except B from a named/conventional A |
 
 #### Discourse
 
 | | **-l** | **-m** | **-n** |
 |--|--------|--------|--------|
-| **a** (*additionally*) | `al` — committed further point | `am` — soft / among further points | `an` — stock / titled *Additionally* |
-| **e** (*in other words*) | `el` — precise rephrase of prior | `em` — softer rewording | `en` — stock paraphrase segue |
-| **o** (*instead*) | `ol` — this claim fully replaces prior | `om` — a replacement claim | `on` — stock *Instead,* |
-| **u** (*except*) | `ul` — sole exception to prior frame | `um` — exception (maybe among others) | `un` — named / conventional exception frame |
+| **a** (*additionally*; add) | `al`: committed further point | `am`: soft / among further points | `an`: stock / titled *Additionally* |
+| **e** (*in other words*; order) | `el`: precise rephrase of prior | `em`: softer rewording | `en`: stock paraphrase segue |
+| **o** (*instead*; one) | `ol`: this claim fully replaces prior | `om`: a replacement claim | `on`: stock *Instead,* |
+| **u** (*except*; undo) | `ul`: sole exception to prior frame | `um`: exception (maybe among others) | `un`: named / conventional exception frame |
 
-Prefixed **`zul` / `zum`** (*not X* / bare *no*) and **`zual` / `zuol`** (*everything but* / *anything but* a fence list) are **not** reviser **`ul` / `um`**.
+Prefix-less **`ul`** excepts a right-hand side. Prefixed **`zul`** is a [join](coordination.md#join-series-ending-shared) (*not X* / bare *no*):
+
+```
+`zahadal ul zazawan.`
+
+gloss: `z-team` · `ul` · `z-grace`
+
+*The team except Azawan.*
+```
+
+```
+`zodogol zul.`
+
+gloss: `z-dog` · `z-ul`
+
+*No dog.*
+```
 
 ### Parallel chains
 <a id="revision-chains-parallel-on-a"></a>
@@ -246,17 +276,15 @@ Prefixed **`zul` / `zum`** (*not X* / bare *no*) and **`zual` / `zuol`** (*every
 A REV₁ B REV₂ C ( REVᵢ SIDE )*
 ```
 
-Every `REVᵢ` applies **in parallel to the same A**, each with its own right-hand side — not nested *including (B except C)*. Vowels and endings may **mix**.
+Every `REVᵢ` applies **in parallel to the same A**, each with its own right-hand side. Vowels and endings may **mix**. English *including (B except C)* nests inside one side.
 
 | Chain | Reading |
 |-------|---------|
 | `A am B am C` | A including B and including C (both open) |
 | `A al B al C` | A including only B and only C |
-| `A am B ul C` | A including B (open), **and** except only C (closed) |
-| `A ul B om C` | A except only B, **and** C as a replacement for A |
-| `A an B un C` | named A including B, **and** except C from that named frame |
-
-For nested English *including (B except C)*, put the inner revision **inside** one side.
+| `A am B ul C` | A including B (open), and except only C (closed) |
+| `A ul B om C` | A except only B, and C as a replacement for A |
+| `A an B un C` | named A including B, and except C from that named frame |
 
 ```
 `zahadal am zazawan ul zululon.`
@@ -274,22 +302,32 @@ gloss: `g-happy` · `el` · `g-calm`
 *Content* as the precise reading (rather than *happy*).
 ```
 
-**Binding with joins:** a revision chain starting at A consumes following same-slot sides paired by **REV**, tighter than list absorb — so `zodogol ol zagadal zuhurul zam` = *(dog instead of cat) and bird*.
+A revision chain starting at A consumes following same-role sides paired by **REV**, tighter than a list join: `zodogol ol zagadal zuhurul zam` reads *(dog instead of cat) and bird*.
+
+Same-role includes the **verb phrase**:
+
+```
+`vurunul om vawalal.`
+
+gloss: `v-run` · `om` · `v-walk`
+
+*Ran, with walk as a replacement.*
+```
 
 ### Discourse placements
 <a id="discourse-on-x-continue"></a>
 
-Four placements — same spellings, same vowel meanings:
+Same spellings, same vowel meanings, four places:
 
-| Placement | Shape | Force |
-|-----------|-------|--------|
-| Before written force | `(vocative)* (interjection)* REV force BODY` | Force explicit |
-| Before omitted-default body | `REV BODY` | Implied **`jal`** / **`jam`** ([core.md](core.md#clause-force)) |
-| Non-initial clause `/x/` conjunct | `… REV BODY … JOIN` | Inherit the opener’s speech act |
-| Before `/x/` linker | `REV LINKER BODY` | Inherit the prior speech act |
+| Placement | Shape | Speech act |
+|-----------|-------|------------|
+| Before a written turn marker | `(vocative)* (interjection)* REV force BODY` | The written **`jal`** / **`jol`** / … |
+| Before a default-statement body | `REV BODY` | Implied **`jal`** / **`jam`** ([core.md](core.md#clause-force)) |
+| Non-initial clause under `/x/` | `… REV BODY … JOIN` | Same as the opener |
+| Before an `/x/` linker | `REV LINKER BODY` | Same as prior talk |
 
-- **One REV** per discourse opener (no parallel discourse chains on one force). In-clause chains stay inside the body.
-- After an explicit force token, the same spellings are only in-clause revisers (or illegal if mixed-slot).
+- **One REV** per discourse opener (no parallel discourse chains on one turn marker). In-clause chains stay inside the body.
+- After an explicit turn marker, the same spellings are only in-clause revisers.
 
 On a **non-initial** conjunct under a [clause `/x/` fence](coordination.md#clause-level-coordination), **`REV`** sits immediately before that conjunct’s body: `A al B xam` → *A and additionally B*.
 
@@ -300,8 +338,10 @@ Before an **`/x/`** linker (*therefore*, *however*, …), **`REV`** scopes the l
 
 gloss: `j-grace` · `al` · `z-courage` · `v-walk`
 
-*Azawan — additionally, Ululon goes.* (vocative, then discourse reviser)
+*Azawan: additionally, Ululon goes.* (vocative, then discourse reviser)
 ```
+
+Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** are these revisers (in-clause or discourse by placement). Longer prefix-less **root + ending** outside a sentence (`odogol`) is [citation](core.md#citation-forms). Prefixed + ending forms of the same vowels (`zal`, `zam`, `val`, …) stay [joins](coordination.md#join-series-ending-shared).
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -318,13 +358,13 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zahadal am zazawan ul zululon.`
 :::
 
-**2.** *Azawan is happy — or rather, precisely calm.*
+**2.** *Azawan is happy, or rather, precisely calm.*
 
 ::: details Show answer
 `zazawan guzumum el gerul.`
 :::
 
-**3.** *Azawan — additionally, Ululon walks.*
+**3.** *Azawan: additionally, Ululon walks.*
 
 ::: details Show answer
 `jazawan al zululon vawalal.`
@@ -371,13 +411,13 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **2.** `zazawan guzumum el gerul.`
 
 ::: details Show answer
-*Azawan is happy — or rather, precisely calm.*
+*Azawan is happy, or rather, precisely calm.*
 :::
 
 **3.** `jazawan al zululon vawalal.`
 
 ::: details Show answer
-*Azawan — additionally, Ululon walks.*
+*Azawan: additionally, Ululon walks.*
 :::
 
 **4.** `al xamalal zululon vurunul.`
@@ -413,28 +453,55 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 ## Advanced
 <a id="advanced"></a>
 
-### More examples
+### Named frames and stock swaps
 
-- `zolozolsh al zamemal` — *tools, including only a hammer* (closed)
-- `zudebensh an zaredel` — *the primary colors, including red* (named frame)
-- `zudeben un zelulul` — *RGB except blue* (named conventional set)
-- `dadedal om dogovel` — *coffee as a replacement for tea* (open)
-- `dadedal on dogovel` — *the stock tea→coffee swap* (named)
-- `vurunul om vawalal` — *ran, with walk as a replacement* (VP slot)
-- `zal gurelul z+3 ul z+5` — *[3, 5)* — [number range](numbers.md#ranges) exclusive high (SHARED continuum), not inventory *3 except 5*
+**-n** revisers mark a **titled or conventional** frame, not a new vowel job.
 
-### Constraints
+```
+`zudebensh an zaredel.`
 
-- Not a list join — use prefixed coordination for *and* / *or* / negation / *and/or* / rank join.
-- Ending **-l**, **-m**, or **-n** required; no **-r** / plural **-sh** on the particle; no bare **a** / **e** / **o** / **u**.
-- In-clause chains are **parallel on A**, not nested `A REV (B REV C)`.
-- Discourse cue is **REV** before force, omitted-default body, non-initial `/x/` conjunct, or `/x/` linker — not mismatched slots mid-clause.
+gloss: `z-primary-color-sh` · `an` · `z-red`
 
-### Prefix-less particles only
+*The primary colors, including red.*
+```
 
-Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** are **only** these revisers (in-clause or discourse by placement). They are **not** [citation forms](core.md#citation-forms). Prefixed + ending forms of the same vowels (`zal`, `zam`, `val`, …) remain [joins](coordination.md#join-series-ending-shared) only. Whole-word **a** / **e** / **o** / **u** are not reviser forms and not legal words. Longer prefix-less **root + ending** outside a sentence (`odogol`, `ugobon`, …) — including as a lone word or inside a [mention span](spans.md#writing) — is citation, not revision.
+```
+`zudeben un zelulul.`
+
+gloss: `z-primary-color` · `un` · `z-blue`
+
+*RGB except blue.*
+```
+
+```
+`dadedal on dogovel.`
+
+gloss: `d-tea` · `on` · `d-coffee`
+
+*The stock tea-to-coffee swap.*
+```
+
+```
+`zolozolsh al zamemal.`
+
+gloss: `z-tool-sh` · `al` · `z-hammer`
+
+*Tools, including only a hammer.*
+```
+
+### Exclusive high on a number range
+
+Inside a [measure range](numbers-applied.md#ranges), prefix-less **`ul`** on the high endpoint reads *up to but not including*:
+
+```
+`zal gurelul z+3 ul z+5.`
+
+gloss: `z-al` · `g-length` · `z-+3` · `ul` · `z-+5`
+
+*[3, 5)* on the length continuum.
+```
 
 ## See also
 
 - List joins (*and* / *or*): [coordination.md](coordination.md)
-- Prefix-less citation (not revisers): [core.md § Outside a sentence](core.md#citation-forms)
+- Prefix-less citation: [core.md § Outside a sentence](core.md#citation-forms)

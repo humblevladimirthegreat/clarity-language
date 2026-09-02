@@ -18,7 +18,7 @@ Related meta:
 
 ## Dual role
 
-Each grammar page is both **source of truth** for its subsystem and **learner text**. Prefer teach-first structure over inventory-first dumps in **Beginner**. **Advanced may be inventory-first**; if Advanced dwarfs Beginner, split the file. Unassigned or unused-slot inventory stays in [unassigned-reserved.md](unassigned-reserved.md); rejected or speculative features stay in [TODO.md](../../TODO.md) — never in a grammar page appendix. Grammar pages teach **assigned readings only**. Do not ship a form as “reserved,” “not used,” or “or reserved,” and do not keep a **Reserved forms** heading whose job is to fence unused phonotactics. *This spelling already has job X* (e.g. a time-code host) is a positive rule — say the job, not “reserved.” If the learner must not build a shape, omit it; if they might invent it *now*, one positive near-miss sentence is enough — never a leftover-slot inventory.
+Each grammar page is both **source of truth** for its subsystem and **learner text**. Prefer teach-first structure over inventory-first dumps in **Beginner**. **Advanced may be inventory-first**; if Advanced dwarfs Beginner, split the file. Unassigned or unused-slot inventory stays in [unassigned-reserved.md](unassigned-reserved.md); rejected or speculative features stay in [TODO.md](../../TODO.md) — never in a grammar page appendix. Grammar pages teach **assigned readings only**. Do not ship a form as “reserved,” “not used,” or “or reserved,” and do not keep a **Reserved forms** heading whose job is to fence unused phonotactics. *This spelling already has job X* (e.g. a time-code host) is a positive rule — say the job, not “reserved.” If the learner must not build a shape, omit it; if they might invent it *now*, one [Compare with](#compare-with) sentence is enough — never a leftover-slot inventory.
 
 ## Present the current language only
 
@@ -49,8 +49,39 @@ Headings, leads, and asides must make sense to someone who never saw an earlier 
 | Titles or leads that name **parser families**, “the parser must…,” “parser cue” | Tooling is not the reader | How a *reader* tells the shapes apart |
 | “Defined core” vs leftover cells; “or reserved” | Advertises unused inventory | Teach the forms that have readings; leave holes off the page |
 | “**…0e0** is not used” as a taught row | Unused-slot dump on a public page | Assigned close / number only; holes stay in [unassigned-reserved.md](unassigned-reserved.md) |
+| “X **stays on** Y” / “the job stays on that page / those joins” | Editor reminder that a reading was not moved; sounds like process, not teaching | [Which tool, not which owner](#which-tool-not-which-owner) |
 
 **Test:** if you delete the phrase and a new learner loses no meaning, delete it. If the only audience for a sentence is a future editor, move it to [unassigned-reserved.md](unassigned-reserved.md), `TODO.md`, a PR, or this meta page — not the grammar body.
+
+### Which tool, not which owner
+<a id="which-tool-not-which-owner"></a>
+<a id="compare-with"></a>
+
+When two constructions split a job, tell the learner **which form to use for which English job**. Do not say a reading **stays on** another section, page, or subsystem — that is fencing for writers (“don’t reassign this”), not a cue for readers.
+
+Mark a real sibling contrast so it is easy to scan. Use **one** of these four starters (bold, then a colon), then **use X for Y** and one peer link. Do not invent other labels (`Trap:`, *Near miss:*, “Do not confuse…”, “Not to be confused with…”).
+
+| Starter | When |
+|---------|------|
+| **Compare with:** | Default. Invite a look at a sibling the learner already met, or will reach for *now*. |
+| **For *X*, use:** | One English false friend. Put the English they typed in the *X* slot (*because / if*, *I think*). |
+| **Related form:** | Soft pointer when you are not stressing a split, only naming the neighbor. |
+| **Not the same job as:** | Clear split without calling the other form wrong. Same slot or similar shape, different English job. |
+
+The body after the starter still teaches the split. Do not follow the label with a filename alone.
+
+| Prefer | Avoid |
+|--------|--------|
+| **Compare with:** *if* / *because* / sufficient / necessary use the joins and clause poles above. Exceptionlessness uses [universality](../grammar/special-vocabulary.md#universality). | Sufficient / necessary / *if* / *because* **stay on** the joins and clause poles above. Exceptionlessness **stays on** universality. |
+| **For *I think*, use:** [COMMENT](../grammar/commentary.md#comment) (`odoho`). This inventory is *how you know a world-claim*. | First-person *I think* **stays** COMMENT. |
+| **Related form:** packaging a list uses [joins](../grammar/coordination.md) (`zal` / `val` / `xal`, …). | Phrase, VP, and clause **joins stay on** coordination.md. |
+| **Not the same job as:** [PLAN](../grammar/plan-decision.md#plan-predict) (map grain). This mood marks **pick firmness**. | Intention map grain **stays PLAN**. |
+
+Place the labeled beat **after** the worked example for this form, not in the page lead. The lead says what **this** form does. One sibling per labeled beat. Three or more siblings: a **Form · Job** table instead of a stack of starters (do not also keep the labeled paragraph).
+
+Same family as ownership fences (“this page owns / does not own X”) — [teach now; don’t preview later](#teach-now-dont-preview-later). A peer link is fine when the learner already met the other form or will invent the swap *now*.
+
+This page may still use *stay* in editor English (*inventory stays in unassigned-reserved.md*). Grammar-page prose should not.
 
 ## Contrastive negatives (“X, not Y”)
 
@@ -59,11 +90,11 @@ Default to stating only the allowed form. A contrastive negative spends the lear
 | Smell | Verdict |
 |-------|---------|
 | Boilerplate disclaimers: “X is a **root choice**, not `xa`/`xu` polarity”, “plural **-sh** stays unused on `/h/` `/w/`”, “there is no dedicated root”, “not a fourth vowel/role/join”, “**Not won’t:** …” | Delete. State what the form does instead |
-| **Trap tables** (“Not this (real traps)”, “Traps worth one look”, “Keep these for other jobs”) | Delete from body. If two forms are genuinely confusable *at this band*, cover it with one sentence plus an example of each — see below |
-| Inline **`Trap:`** / **“Trap:”** labels before a contrast | Same smell as trap tables; the label is editor hygiene | Fold the contrast into the paragraph or table row without the label |
-| “Do not confuse X with Y” | Delete unless the learner will actually produce the wrong form while reading this section |
+| **Trap tables** (“Not this (real traps)”, “Traps worth one look”, “Keep these for other jobs”) | Delete from body. If two forms are genuinely confusable *at this band*, use a [Compare with](#compare-with) starter (or a Form · Job table) plus an example of each |
+| Inline **`Trap:`** / **“Trap:”** / *Near miss:* | Punitive or editor hygiene. Use one of the four [starters](#compare-with) |
+| “Do not confuse X with Y” / “Not to be confused with…” | Quiz warning; does not teach the job split. Use **Compare with:** / **For *X*, use:** / **Related form:** / **Not the same job as:** |
 
-**When a contrast earns its place** (all three must hold): the learner can plausibly build the wrong form *now*; both forms appear with a real example; and the contrast fits in one or two sentences inside the relevant table row or paragraph. Otherwise cut it.
+**When a contrast earns its place** (all three must hold): the learner can plausibly reach for the sibling *now*; both forms appear with a real example; and the contrast fits in one or two sentences (or one table) after this form’s example. Otherwise cut it.
 
 ## Mnemonics live in tables
 
@@ -91,11 +122,11 @@ Prefer commas, colons, parentheses, or separate sentences over em dashes. An em 
 
 ## Page skeleton
 
-1. **Title + one-line job** — the English job this page teaches (learner-facing). Sibling links only for real near-misses — not “this page owns / does not own” fencing.
+1. **Title + one-line job** — the English job this page teaches (learner-facing). Sibling links only when the learner will reach for that form *now* — [Compare with](#compare-with), not “this page owns / does not own” fencing.
 2. **Needs** (optional) — **rare.** Use only when the page is late and the dependency is not obvious from the [cross-doc path](learning-levels.md#cross-doc-path) (e.g. causation → joins + **`orodo`** from core Beginner; comparatives → rank joins). Label as `**Needs:**` with one short link line. Do **not** ritualize “core Beginner; reference-suffix Beginner” on every page.
 3. **`## Beginner` / `## Intermediate` / `## Advanced`** — per [learning-levels.md](learning-levels.md). Include **Advanced** only when that page has rare inventory to teach ([empty or pointless bands](#empty-bands)).
 4. Inside each band: **concept → rule in one breath → 1–3 examples → (optional contrast) → full table if needed**.
-5. Optional **See also** at the end — a few precise near-misses only; no long link walls in the lead (and no lead preview of later peers — [teach now; don’t preview later](#teach-now-dont-preview-later)).
+5. Optional **See also** at the end — a few precise related forms only; no long link walls in the lead (and no lead preview of later peers — [teach now; don’t preview later](#teach-now-dont-preview-later)).
 
 Front matter that orients (psychological purpose / limits / feature criteria / benefit tour — [why-agelan.md](../grammar/why-agelan.md); grammar design / how to learn — [introduction.md](../grammar/introduction.md)) is not a learning band. Reading order lives in the path / sidebar — not repeated as Prerequisites.
 
@@ -107,7 +138,7 @@ Front matter that orients (psychological purpose / limits / feature criteria / b
 | 2 | The Agalan shape (minimal pattern) |
 | 3 | A **mnemonic** so the form sticks (Beginner; below) |
 | 4 | Worked example(s) |
-| 5 | Contrast with near-misses — **only when there is a real trap** (below) |
+| 5 | [Compare with](#compare-with) a sibling — **only when the learner will reach for it now** |
 | 6 | Inventory / edge cases |
 
 Do not open a section with a complete paradigm table. Tables come after the pattern is usable.
@@ -198,7 +229,7 @@ State the **positive** rule. Do **not** list negatives by default — neither a 
 
 **Negatives earn their keep only when** a learner is expected to make that mistake — typically an English false friend, or another Agalan construction they will reach for. Then one decisive contrast (sentence or table cell) with the right link is enough. Cross-link once; do not restate the other doc.
 
-Agalan often earns them: sibling-subsystem swaps (`-sh` vs **`ahage`**, classification vs **`SAME`**, free `g+e` vs `ROOTx+e`, join **-r** vs content **-r**).
+Agalan often earns them: sibling-subsystem swaps (`-sh` vs **`ahage`**, classification vs **`SAME`**, free `g+e` vs `ROOTx+e`, join **-r** vs content **-r**). Label those with [Compare with](#compare-with) (or a Form · Job table), not *Trap* / *Near miss* / “do not confuse.”
 
 **Skip negatives when:**
 
@@ -206,7 +237,7 @@ Agalan often earns them: sibling-subsystem swaps (`-sh` vs **`ahage`**, classifi
 - The negative only restates the positive rule (“write one token” already implies no hyphen).
 - A section would get a ritual **Not this** (or a permanent **Not this** column) with nothing decisive to say.
 
-Do **not** require a **Not this** column on every table, or a counter-example on every form. A strong positive example is enough when there is no near-miss.
+Do **not** require a **Not this** column on every table, or a counter-example on every form. A strong positive example is enough when there is no sibling to compare.
 
 ## Tables
 
@@ -230,10 +261,10 @@ In each section, mention **only what that section is teaching**. Do not name, te
 
 | Keep | Cut / demote |
 |------|----------------|
-| One peer link when the learner **already** met the form, or when resolving a **real near-miss** they will invent *now* | “You’ll later learn…”, “full treatment in…”, and ownership fences (“this page owns / does not own X”) |
+| One peer link when the learner **already** met the form, or when a sibling they will reach for *now* needs a [Compare with](#compare-with) beat | “You’ll later learn…”, “full treatment in…”, ownership fences (“this page owns / does not own X”), and “X **stays on** Y” ([which tool, not which owner](#which-tool-not-which-owner)) |
 | Rare **Needs:** when the dependency is not obvious from the path | Ritual prereq walls and long **See also** lists in the lead |
 | Same-page deferrals (“X is Intermediate ([…])”) | Peek-ahead to a **later peer’s** Intermediate / Advanced in Beginner prose |
-| Optional short **See also** at the **end** (a few precise near-misses) | Link walls that restate the sidebar path or dump every related peer |
+| Optional short **See also** at the **end** (a few precise related forms) | Link walls that restate the sidebar path or dump every related peer |
 
 **Test:** if the sentence’s only job is to name a topic the path has not reached yet, delete it. If it resolves a trap the learner will hit *now*, one link is enough — do not restate the other doc.
 

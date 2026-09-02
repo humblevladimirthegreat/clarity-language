@@ -9,24 +9,14 @@ How to **ask** in Agalan: question force (**jol** / soft **jom**), yes/no vs fil
 <a id="interrogative-force"></a>
 <a id="polar-question"></a>
 
-**jol** (and soft **jom**) cover **all** asking — yes/no **and** content (*who* / *what* / *when?* / *what happened?*).
-
-| Body shape | Ask type |
-|------------|----------|
-| **No** join **-r** | **Yes/no** |
-| One or more join **-r** | **Fill-ask** (name the unspecified member(s)) |
-
-
-There is **no** separate interrogative pronoun. Unbound *who* / *what* / *where* / *when?* / *what happened?* use [unspecified-member **-r**](coordination.md#unspecified-member-r-phrase) in the queried slot.
-
-Under question, join **-r** always means fill-ask — not “did something happen?” For emptiness yes/no, prefer bare emptiness forms (`zal` / `xal` → *Nothing?* / *Nothing happened?*) or an ordinary indefinite (`-l` / `-m`).
+Put **jol** at the left edge to ask. Soft **jom** is the same job, gentler. One marker covers yes/no *and* *who* / *what* / *when?* / *what happened?*. The body shape tells which kind of ask it is.
 
 ```
 `jol zazawan vawalal.`
 
-gloss: `j-ask` · `z-Azawan` · `v-go`
+gloss: `j-ask` · `z-grace` · `v-go`
 
-*Does Azawan go?* (yes/no — no join **-r**)
+*Does Azawan go?* (yes/no: no join **-r**)
 ```
 
 ```
@@ -37,22 +27,31 @@ gloss: `j-ask` · `z-who` · `v-go`
 *Who goes?* (fill-ask)
 ```
 
+| Body shape | Ask type |
+|------------|----------|
+| **No** join **-r** | **Yes/no** |
+| One or more join **-r** | **Fill-ask** (name the unspecified member(s)) |
+
+Unspecified *who* / *what* / *where* / *when?* / *what happened?* use [unspecified-member **-r**](coordination.md#unspecified-member-r-phrase) in the queried slot (`zar`, `var`, `xar`, …).
+
+Under question, join **-r** always means fill-ask. For emptiness yes/no, use bare emptiness forms (`zal` / `xal` → *Nothing?* / *Nothing happened?*) or an ordinary indefinite (`-l` / `-m`).
+
 ### Fill-ask essentials
 <a id="fill-ask-r"></a>
 <a id="content-questions"></a>
 
-Under **jol** / **jom**, prefixed **-r** on **a** / **o** / **e** / **u** asks to name the unspecified member.
+Under **jol** / **jom**, prefixed **-r** on **a** / **o** / **e** / **u** asks to name the unspecified member. The vowel is the same series job as elsewhere: **a** add, **o** one, **e** order, **u** undo.
 
-| Vowel | Under question (bare) | Examples |
-|-------|------------------------|----------|
-| **a** | *Who/what?* / *What (did they) do?* / *What happened?* | `zar` · `var` · `xar` |
-| **o** | *What (anything)?* / *Anything?* | `zor` · `vor` · `xor` |
-| **e** | *What’s the priority?* | `zer` · `ver` · `xer` |
-| **u** | *What else?* / *Who else?* | `zur` · `vur` · `xur` |
+| Vowel | Under question (bare) | Examples | Mnemonic |
+|-------|------------------------|----------|----------|
+| **a** | *Who/what?* / *What (did they) do?* / *What happened?* | `zar` · `var` · `xar` | **a** add: name a member |
+| **o** | *What (anything)?* / *Anything?* | `zor` · `vor` · `xor` | **o** one: name any one |
+| **e** | *What’s the priority?* | `zer` · `ver` · `xer` | **e** order: name the rank |
+| **u** | *What else?* / *Who else?* | `zur` · `vur` · `xur` | **u** undo: name what remains |
 
-**When?** bare **`har`** (etc.) — [circumstance](#circumstance-when).
+*When?* uses bare **`har`** (and kin) in Intermediate ([circumstance](#circumstance-when)).
 
-Content-word anaphor **-r** is not a fill gap — only join **-r** (`zar` / `var` / `xar` / …).
+Content-word anaphor **-r** resumes a named thing; fill-ask is only join **-r** (`zar` / `var` / `xar` / …). See [pronouns](pronouns.md).
 
 ### Fill-all (multiple gaps)
 <a id="fill-all"></a>
@@ -66,14 +65,14 @@ Every join **-r** under question is a **gap**. The answer is expected to **fill 
 | `zar` … `har` | *Who … when?* |
 | `var` … `zar` | *Do what … who?* |
 
-**Single gap + real *something* elsewhere:** use an ordinary indefinite (`-l` / `-m`), not a second join **-r** (`zar` + `dabelel` → *Who ate an apple?*; `zar` + `dar` → *Who ate what?*).
+**Single gap + real *something* elsewhere:** use an ordinary indefinite (`-l` / `-m`) for the known thing, and join **-r** only for the blank (`zar` + `dabelel` → *Who ate an apple?*; `zar` + `dar` → *Who ate what?*).
 
 ### Polar stance (workhorses)
 <a id="answers"></a>
 <a id="yes-no-polarity"></a>
 <a id="yes-no-interjections"></a>
 
-Closed **`/j/`** particles — **reaction words**, not clause force. Shape is **`j` + stacked join vowel + `-l` / `-m`**. They mark a **turn** — left-edge or bare utterance. No **-n** / **-r** on these forms.
+Closed **`/j/`** particles are **reaction words**. Shape is **`j` + stacked join vowel + `-l` / `-m`**. They mark a **turn**: left-edge or a bare utterance. These forms take **-l** or **-m**.
 
 **Implied force:** polar **-l** implies **`jal`**; **-m** implies **`jam`**. Prefer **`jael …`** over **`jael jal …`** when a body follows.
 
@@ -107,7 +106,7 @@ These three jobs stay distinct:
 | Polar stance | **`jael`** / **`juel`** / **`jaol`** | *true* vs *false* vs *I’ll take that* |
 | Denial inside the clause | **`zul`** / **`vul`** / **`xul`** | *not X* / *no* as a join |
 
-A fill answer **need not** keep **-r** — bare content, focus **-l** / **-m** / **-n**, or a longer list is fine ([fill-ask answers](#fill-ask-answers)).
+A fill answer **need not** keep **-r**. Bare content, focus **-l** / **-m** / **-n**, or a longer list is fine ([fill-ask answers](#fill-ask-answers)).
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -219,9 +218,9 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 ## Intermediate
 <a id="intermediate"></a>
 
-Recall the [vowel series](vowel-series.md): **`a`** *add* / **`o`** *one* / **`e`** *order* / **`u`** *undo*. In polar stances the **first vowel** picks the family — **`a`** accepts, **`u`** undoes — and the second refines it: **`e`** judges true/false order, **`o`** takes up an option.
+Recall the [vowel series](vowel-series.md): **`a`** *add* / **`o`** *one* / **`e`** *order* / **`u`** *undo*. In polar stances the **first vowel** picks the family (**`a`** accepts, **`u`** undoes) and the second refines it: **`e`** judges true/false order, **`o`** takes up an option.
 
-### Polar stance — fuller inventory
+### Polar stance: fuller inventory
 
 | Stack | Job | Mnemonic |
 |-------|-----|----------|
@@ -240,24 +239,26 @@ The **-l** ending holds the stance exactly; **-m** is the soft twin of each row:
 
 **Shapes:**
 
-- **Bare turn** — `jael.` / `juel.`
-- **Stance + body** — `jael zazawan vawalal.` (*yes — Azawan goes*)
-- **Confirm tag** — second bare turn after `.` ([left-edge rules](core.md#left-edge-order-and-sentence-boundaries))
-- **Monologue self-turn** — `juel` before correction; `jaol` before next step; `jael` after locking a point
+- **Bare turn:** `jael.` / `juel.`
+- **Stance + body:** `jael zazawan vawalal.` (*yes, Azawan goes*)
+- **Confirm tag:** second bare turn after `.` ([left-edge rules](core.md#left-edge-order-and-sentence-boundaries))
+- **Monologue self-turn:** `juel` before correction; `jaol` before next step; `jael` after locking a point
 
-Same-force continuation after a polar+body beat uses **`/x/`**, not another polar unless taking a **new** stance turn.
+Same-force continuation after a polar+body beat uses **`/x/`**. Use another polar particle only when you take a **new** stance turn.
+
+Ordinary answers use **`juel`** / **`juol`**. Use **`jual`** / **`juam`** for a hard refusal of the whole frame. Deny *inside* the clause with **`xul`** / **`vul`** / **`zul`**.
 
 ### Confirming a negative
 <a id="confirming-a-negative"></a>
 
-**`jael`** / **`juel`** answer whether the **proposition under question** matches reality — including when that proposition is already negated. After a negative ask, **`jael`** confirms the denial; **`juel`** rejects it (the positive holds).
+**`jael`** / **`juel`** answer whether the **claim under question** matches reality, including when that claim is already negated. After a negative ask, **`jael`** confirms the denial; **`juel`** rejects it (the positive holds).
 
 | Ask | Answer | Means |
 |-----|--------|-------|
 | `jol … vul vurunul` (*Didn’t run?*) | **`jael`** | *true, they didn’t* |
-| same | **`juel`** | *false — they did run* |
+| same | **`juel`** | *false: they did run* |
 
-When clarity matters, restate: `jael vul vurunul` vs `juel vurunul`. Offer particles (**`jaol`** / **`juol`**, …) answer *take this?*, not truth-match.
+When clarity matters, restate: `jael vul vurunul` vs `juel vurunul`. Offer particles (**`jaol`** / **`juol`**, …) answer *take this?*
 
 ### Fill-ask arity
 
@@ -274,7 +275,7 @@ Unbound *who* / *what* / *where* = bare phrase **-r** in the queried slot. Unbou
 ### Circumstance (*When?*)
 <a id="circumstance-when"></a>
 
-Under `/h/` / `/w/`, only the [circumstance inventory](restrictors.md#defined-core-full) has circumstance readings:
+Under `/h/` / `/w/`, circumstance readings are these forms ([restrictors](restrictors.md#defined-core-full)):
 
 | Form | Statement (bare) | Under question (bare) |
 |------|---------------------|--------------------------|
@@ -289,12 +290,12 @@ Under `/h/` / `/w/`, only the [circumstance inventory](restrictors.md#defined-co
 
 Under question, focus and bare join endings ask for confirmation or offer.
 
-- Focus **-l** / **-n** — confirm the singleton (*Just X?*, *Has to be X?*).
-- Focus **-m** — **offer** that singleton (*How about X?*, *Want X?*).
-- Focus **…ul** / **…um** / **…un** — confirm / offer denial (*Not X?*).
-- Bare **-l** — colloquial emptiness check (*Nothing?*, *Do nothing?*).
-- Bare **-m** — open emptiness / soft gap (*Got nothing?*) — **not** the primary fill-ask.
-- Bare / focus / multi **…ar** / **…or** / **…er** / **…ur** — [fill-ask](#fill-ask-r).
+- Focus **-l** / **-n**: confirm the singleton (*Just X?*, *Has to be X?*).
+- Focus **-m**: **offer** that singleton (*How about X?*, *Want X?*).
+- Focus **…ul** / **…um** / **…un**: confirm / offer denial (*Not X?*).
+- Bare **-l**: colloquial emptiness check (*Nothing?*, *Do nothing?*).
+- Bare **-m**: open emptiness / soft gap (*Got nothing?*). Fill-ask stays **…ar** / **…or** / **…er** / **…ur**.
+- Bare / focus / multi **…ar** / **…or** / **…er** / **…ur**: [fill-ask](#fill-ask-r).
 
 Worked rank / set inventories are Advanced ([focus and bare inventory](#focus-bare-inventory)).
 
@@ -319,7 +320,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `jael.`
 :::
 
-**2.** *Didn’t Ululon sleep?* Then reject that: *false — Ululon did sleep.*
+**2.** *Didn’t Ululon sleep?* Then reject that: *false: Ululon did sleep.*
 
 ::: details Show answer
 `jol zululon vul velebel.`
@@ -373,13 +374,13 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **2.** `jael vul vurunul.`
 
 ::: details Show answer
-*True — (they) didn’t run.*
+*True: (they) didn’t run.*
 :::
 
 **3.** `juel vurunul.`
 
 ::: details Show answer
-*False — (they) did run.*
+*False: (they) did run.*
 :::
 
 **4.** `jol var.`
@@ -409,33 +410,20 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **8.** `zazawan.`
 
 ::: details Show answer
-*Azawan.* (a fill-ask answer — no leftover **-r**)
+*Azawan.* (a fill-ask answer: no leftover **-r**)
 :::
 
 ## Advanced
 <a id="advanced"></a>
 
-### Polar contrasts
-
-| Particle / form | Role | Example |
-|-----------------|------|---------|
-| **`jael`** / **`jaol`** | stance match vs option uptake — not interchangeable | `jael.` *yes/true* vs `jaol.` *sure* |
-| **`juel`** / **`juol`** | truth flip vs reject-this option | `juel.` *no/false* vs `juol.` *not that one* |
-| Body **`xul`** / **`vul`** / **`zul`** | deny *inside* the proposition ([negation](coordination.md#negation-u)) | `zazawan xul vawalal.` *Azawan doesn’t walk* |
-| **`jul`** / **`jum`** | **prohibition** force (*don't…*), not polar *no* | `jul vurunul.` *Don’t run.* |
-| Values **`xu`** / **`xo`** | unmet need / prescription — not true/false | `vuzunuxul.` *can’t sing* |
-| Clause **`xael`** | tie *between* claims — not *yes* | `… xael …` *and so / likewise* |
-
-**`jual`** / **`juam`** — absolute *no* / hard refusal of the whole frame (rare). Prefer **`juel`** / **`juol`** for ordinary answers; prefer **`xul`** when denying inside the clause.
-
 ### Focus and bare inventory
 <a id="focus-bare-inventory"></a>
 
-Length **2+** (no **-r**): **-l** = pick from this closed menu; **-m** = pick or name something else (for **o**, also *or none*); **u** = *none of* the listed; **ua** / **uo** = complement of the listed; **ue** = reverse-rank among the listed. With **-r**: [fill-ask arity](#fill-ask-r). Under `/h/` / `/w/`, only the [defined circumstance core](restrictors.md) applies.
+Length **2+** (no **-r**): **-l** = pick from this closed menu; **-m** = pick or name something else (for **o**, also *or none*); **u** = *none of* the listed; **ua** / **uo** = complement of the listed; **ue** = reverse-rank among the listed. With **-r**: [fill-ask arity](#fill-ask-r). Under `/h/` / `/w/`, circumstance readings stay the [restrictor](restrictors.md) set above.
 
-Mnemonic for all tables below: first vowel = series job — **`e`** orders (rank), **`a`** adds to the set, **`o`** picks one, **`u`** undoes / excludes. Ending refines it: **-l** exact, **-m** soft offer, **-n** stock/usual (join-word **-n**, not a [name](reference-suffix.md#proper-name--n)), **-r** fill-ask.
+Join-word **-n** here is stock/usual (not [proper-name **-n**](reference-suffix.md#proper-name--n)).
 
-#### Rank — focus (under question)
+#### Rank: focus (under question)
 
 | Form | Under question | Mnemonic |
 |------|----------------|----------|
@@ -448,12 +436,12 @@ Mnemonic for all tables below: first vowel = series job — **`e`** orders (rank
 | **…en** | *X first, as usual?* | **e** order + stock **n**: usual first place |
 | **…er** | *Which X is first?* (fill-ask) | **e** order + fill **r**: name the rank |
 
-#### Rank — bare (under question)
+#### Rank: bare (under question)
 
 | Form | Under question | Mnemonic |
 |------|----------------|----------|
 | **…el** | *No favorite?* | **e** order + exact: is the top slot empty? |
-| **…em** | *Are you easy?* / *Whichever?* | **e** order + soft: no pick from the top? |
+| **…em** | *Easy-going?* / *Whichever?* | **e** order + soft: no pick from the top? |
 | **…ael** | *Tie?* | **a** add equally + exact: added at the same rank |
 | **…aem** | *Probably a tie?* | **a** add equally + soft |
 | **…aen** | *Draw?* (stock) | **a** add equally + stock **n**: the usual draw |
@@ -464,7 +452,7 @@ Mnemonic for all tables below: first vowel = series job — **`e`** orders (rank
 | **…en** | *No favorite?* (stock) | **e** order + stock **n**: usual empty top |
 | **…er** | *What’s the priority?* (fill-ask) | **e** order + fill **r**: name the priority |
 
-#### Set — focus (under question)
+#### Set: focus (under question)
 
 | Form | Under question | Mnemonic |
 |------|----------------|----------|
@@ -485,7 +473,7 @@ Mnemonic for all tables below: first vowel = series job — **`e`** orders (rank
 | **…un** | *Not X, as usual?* | **u** undo + stock **n** |
 | **…ur** | *What else (besides X)?* (fill-ask) | **u** undo + fill: name what remains |
 
-#### Set — bare (under question)
+#### Set: bare (under question)
 
 | Form | Under question | Mnemonic |
 |------|----------------|----------|
@@ -501,7 +489,7 @@ Mnemonic for all tables below: first vowel = series job — **`e`** orders (rank
 | **…aol** | *All set?* | **a** add enough + exact: needs met |
 | **…aom** | *Nothing you need?* | same, offered |
 | **…ul** | *No?* | **u** undo + exact |
-| **…um** | *No from you?* | **u** undo + soft |
+| **…um** | *Soft no?* | **u** undo + soft |
 | **…un** | *No?* (stock) | **u** undo + stock **n** |
 | **…ar** | *Who/what?* (fill-ask) | **a** set + fill: name a member |
 | **…or** | *Anything?* (fill-ask) | **o** one + fill: name any one |
@@ -551,7 +539,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 **1.** `jael.` vs `jaol.`
 
 ::: details Show answer
-*`jael`* = *yes / true* (match). *`jaol`* = *sure / I’ll take that* (uptake). Not interchangeable.
+*`jael`* = *yes / true* (match). *`jaol`* = *sure / I’ll take that* (uptake).
 :::
 
 **2.** `juel.` vs `juol.`
@@ -575,11 +563,11 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 **5.** `jum vawalal.`
 
 ::: details Show answer
-*Don’t walk.* (soft prohibition — not polar *no*)
+*Don’t walk.* (soft prohibition)
 :::
 
 ## See also
 
-- [core.md](core.md#utterance-markers-j) — turn vs continue; clause force
-- [coordination.md](coordination.md) — join fences; statement readings of **-r** / focus / bare
-- [pronouns.md](pronouns.md) — content anaphor **-r** (not fill-ask)
+- [core.md](core.md#utterance-markers-j): turn vs continue; clause force
+- [coordination.md](coordination.md): join fences; statement readings of **-r** / focus / bare
+- [pronouns.md](pronouns.md): content anaphor **-r** (fill-ask is join **-r**)

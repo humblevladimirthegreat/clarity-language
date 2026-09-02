@@ -11,70 +11,72 @@ Name event participants (*fighter*, *the one fought*), compass sides, and **whos
 <a id="participant-compounds"></a>
 <a id="agent-patient-reltum"></a>
 
-Name an **event or relation participant** (*fighter*, *the one fought*, *that bond-argument*) without open lexicon role nouns.
+Name an **event or relation participant** from the event or relation stem: *a fighter*, *the one fought*, *that other party of a bond*.
 
-**Shape:** ROLE vowel **left** of `x` — opposite order from [values](values.md) / [ability](ability.md#ability) (those put the stance vowel **right** of `x`):
+Write a role vowel, then mid-word **`x`**, then the stem, then an ordinary [reference ending](reference-suffix.md):
 
 ```
 PoS + {a|u|o} + x + ROOT + {-l|-m|-n|-r}
 ```
 
-| Piece | Role |
-|-------|------|
-| **PoS** | Prefer `/z/` `/d/` `/b/` (entity participant). `/ɡ/` optional as classifying property |
-| **ROLE** | Single vowel **`a`** / **`u`** / **`o`** (not a content root) |
-| **`x`** | Ordinary [compound joiner](phonology.md#phonotactics) |
-| **ROOT** | Event stem (**`a`/`u`**) or relation stem (**`o`**) — `V(CV)+` |
-| **Ending** | Ordinary [reference-suffix](reference-suffix.md) senses — not value/ability ending tables |
+**Mnemonic:** the [vowel-series](vowel-series.md) jobs on the left of **`x`**: **`a`** adds a doer, **`u`** takes the undergoer, **`o`** picks the other party of a relation (the `/b/` slot: the **reltum**).
+
+```
+`zazawan dululon vuvugul.`
+`zaxuvugur vurunul.`
+
+gloss: `z-grace` · `d-courage` · `v-fight` · `z-fight-agent-r` · `v-run`
+
+*Azawan fought Ululon. The fighter fled.*
+```
+
+Prefer `/z/` `/d/` `/b/` when the word is a person or thing in the clause. `/ɡ/` is fine when the role is a describing property.
 
 | ROLE | Form | ROOT type | Referent | Mnemonic |
 |------|------|-----------|----------|----------|
-| **`a`** | `…axROOT…` | **event** (verb / event noun stem) | **agent** — doer / subject-like participant of that event | **a** ≈ additive: adds a doer |
-| **`u`** | `…uxROOT…` | **event** | **patient** — undergoer / object-like participant of that event | **u** ≈ subtractive: undergoes it |
-| **`o`** | `…oxROOT…` | **relation** (complex `/ɡ/` / `/h/` / [join-relation](join-extras.md#join-relations) root, …) | **reltum** — the `/b/` argument pole of that relation | **o** ≈ oblique: the `/b/` pole |
+| **`a`** | `…axROOT…` | **event** (verb / event-noun stem) | **agent**: the doer of that event | **a** add: a doer |
+| **`u`** | `…uxROOT…` | **event** | **patient**: the undergoer of that event | **u** undo: undergoes it |
+| **`o`** | `…oxROOT…` | **relation** (describing / manner stem) | **reltum**: the `/b/` party of that relation | **o** one: that other pole |
 
-Vowel echo only — not reviser or join readings. Mid-word **`x`** map: [x-compounds.md](x-compounds.md).
+```
+`zazawan dagadal vejel.`
+`zuxejer vurunul.`
+
+gloss: `z-grace` · `d-cat` · `v-see` · `z-see-patient-r` · `v-run`
+
+*Azawan sees a cat. The one seen runs.*
+```
+
+```
+`zazawan gonogol bululon.`
+`zoxonogor vurunul.`
+
+gloss: `z-grace` · `g-bond` · `b-courage` · `z-bond-reltum-r` · `v-run`
+
+*Azawan is bound to Ululon. That bond-argument runs.*
+```
 
 #### Endings
 
 | Ending | Reading |
 |--------|---------|
-| **-l** | Indefinite / kind — *a fighter*, *fighters as a type* (`zaxuvugul`) |
+| **-l** | Indefinite / kind: *a fighter*, *fighters as a type* (`zaxuvugul`) |
 | **-m** | Soft / hedged role |
 | **-n** | Titled / epithet role label (rare) |
-| **-r** | Definite — participant of the **most recent matching** event (**`a`/`u`**) or relation (**`o`**) for that ROOT |
+| **-r** | Definite: participant of the **most recent matching** event (**`a`/`u`**) or relation (**`o`**) for that ROOT |
 
-**-r** resolution: match ROOT to the most recent verb, event noun, or relation word with that stem (including a ROOT half inside a prior role compound). ROLE picks that frame’s agent, patient, or `/b/` pole — including when the participant was only introduced as [unspecified-member](coordination.md#unspecified-member-r-phrase) **`zar`** / **`dar`** / ….
+**-r** matches ROOT to the most recent verb, event noun, or relation word with that stem (including a ROOT half inside a prior role compound). ROLE then picks that frame’s agent, patient, or `/b/` party. That still works when the participant first showed up as unspecified-member **`zar`** / **`dar`** / … ([coordination](coordination.md#unspecified-member-r-phrase)).
 
-Bare event noun stays the event: `zuvugul` / `zuvugur` = *an / that fight*, not a participant. Cross-PoS content **-r** from a verb still resumes the [event](pronouns.md), not the agent — use **`ax`/`ux`** for participants.
-
-```
-`zar dugobon vuvugul.`
-`zaxuvugur vurunul.`
-
-gloss: `z-someone` · `d-me` · `v-fight` · `z-fight-agent-r` · `v-run`
-
-*Someone fought me. The fighter fled.*
-```
+A bare event noun is still the event: `zuvugul` / `zuvugur` = *an / that fight*. Content **-r** on a verb resumes the [event](pronouns.md); use **`ax`/`ux`** when you mean the people.
 
 | Agalan | Gloss |
 |---------|--------|
 | `zaxuvugul` | *a fighter* (kind; no discourse event required) |
 | `duxuvugur` | *the one fought* (as object now) |
-| `zoxonogor` | *that bond-argument* (reltum of salient `…onogol b-…`) |
-| `zuvugur` | *that fight* (event — not agent) |
+| `zoxonogor` | *that bond-argument* (reltum of a salient `…onogol b-…`) |
+| `zuvugur` | *that fight* (the event) |
 
-**Key contrasts:**
-
-| | Use |
-|--|-----|
-| Role compound | Participant derived from event/relation root |
-| Content **-r** on event | The event / doing itself ([pronouns](pronouns.md)) |
-| **`zar`** / **`dar`** | Unspecified member introduce; prefer role **-r** once the event is named |
-| Ability `vuvuguxul` | Can’t fight (fixed) — **ROOT x vowel**, not ROLE vowel left of `x` |
-| Span `daxal` / `duxal` | Quote / opaque open — **vowel x vowel**, not ROLE x root |
-
-ROLE is **`a`/`u`/`o`** only; wrong ROOT type for a ROLE is illegal. Plural **-sh** on noun-slot role compounds follows ordinary [plurality](plurality.md) for that PoS.
+Can / can’t on a host puts the stance vowel **right** of **`x`** (`vuvuguxal` *can fight*). A participant puts the role vowel **left** of **`x`** (`zaxuvugul` *a fighter*). See [ability](ability.md).
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -193,21 +195,13 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 Bare arrow-rose words are **compass** points (north-up map). Body-relative *left* / *right* / *ahead* / *back* use the same roots with an explicit **viewpoint**: whose facing counts as that map’s north.
 
-**Shape:** ordinary [compound](x-compounds.md) — direction root left of mid-word **`x`**, viewpoint root right of **`x`**, then an ordinary [reference ending](reference-suffix.md):
+**Shape:** direction root left of mid-word **`x`**, viewpoint root right of **`x`**, then an ordinary [reference ending](reference-suffix.md):
 
 ```
 PoS + DIR + x + ANCHOR + {-l|-m|-n|-r}
 ```
 
-| Piece | Role | Mnemonic |
-|-------|------|----------|
-| **PoS** | Slot as usual (`/ɡ/` property, `/h/` path / manner, `/z/` `/d/` `/b/` side-region, …) | same slots as other content |
-| **DIR** | An arrow-rose root (table below) | map point, or that point on a face |
-| **`x`** | Ordinary [compound joiner](phonology.md#phonotactics) | **`x`** = *whose eyes* |
-| **ANCHOR** | Whose facing = personal north — [special](pronouns.md#special-pronouns) **`ugobo`** / **`edone`** / **`aha`**, a name, or a content **-r** of a being that can face | glue the rose to a face |
-| **Ending** | Ordinary reference-suffix senses on the **whole** direction word | ending scopes the compound |
-
-Viewpoint laterals stay **ordinary** `DIR x ANCHOR` ([x-compounds.md](x-compounds.md)): two roots; direction is the kind, viewpoint narrows it.
+**Mnemonic:** **`x`** glues the rose to a face: the left-hand root is the map point; the right-hand root is whose facing is north.
 
 ```
 `jel vawalal hewezel.`
@@ -222,16 +216,28 @@ gloss: `j-command` · `v-walk` · `h-west`
 
 gloss: `j-command` · `v-walk` · `h-west-Azawan`
 
-*Walk left — Azawan’s left.*
+*Walk left (Azawan’s left).*
 ```
+
+Speaker and listener anchors are the point when you mean *my left* / *your left*:
 
 ```
 `jel zedonen vawalal hewezexedonen.`
 
 gloss: `j-command` · `z-listener` · `v-walk` · `h-west-listener`
 
-*You, walk left — your left.*
+*You, walk left (your left).*
 ```
+
+| Piece | Role | Mnemonic |
+|-------|------|----------|
+| **PoS** | Slot as usual (`/ɡ/` property, `/h/` path / manner, `/z/` `/d/` `/b/` side-region) | same slots as other content |
+| **DIR** | An arrow-rose root (table below) | map point, or that point on a face |
+| **`x`** | Compound joiner ([phonology](phonology.md#phonotactics)) | **`x`** = *whose eyes* |
+| **ANCHOR** | Whose facing = personal north: [special](pronouns.md#special-pronouns) **`ugobo`** / **`edone`** / **`aha`**, a name, or a content **-r** of a being that can face | glue the rose to a face |
+| **Ending** | Ordinary reference-suffix senses on the **whole** direction word | ending scopes the compound |
+
+Role compounds put a **vowel** left of **`x`**. Viewpoint laterals put a **direction root** left of **`x`** and a person (or facing being) on the right.
 
 #### Arrow rose (compass vs face)
 
@@ -248,7 +254,7 @@ gloss: `j-command` · `z-listener` · `v-walk` · `h-west-listener`
 
 Indoor headings may follow a local map (building north). Prefer a name or listener frame when you mean someone’s body rose (`…xazawan`, `…xedonen`).
 
-Published **metaphors** of the same roots stay bare (`amala` → *progress* / discourse **`xamalal`**; `eweze` → *return*; `odewo` → *retreat*). Generic heading **`ogamo`** stays *compass* / *direction*. Path *forward* / *back* **`ovaro`** / **`agaja`** stay those roots; facing-relative ahead / back on this rose is **`ububu` / `owono` × ANCHOR**.
+Published **metaphors** of the same roots stay bare (`amala` → *progress* / discourse **`xamalal`**; `eweze` → *return*; `odewo` → *retreat`). Generic heading **`ogamo`** stays *compass* / *direction*. Path *forward* / *back* **`ovaro`** / **`agaja`** stay those roots; facing-relative ahead / back on this rose is **`ububu` / `owono` × ANCHOR**.
 
 #### Gravity (`avuza` / `ovazo`)
 
@@ -258,7 +264,7 @@ Skyward / toward the pull is a **shared** frame, not a face:
 |------|-------|-------------|----------|
 | **`avuza`** | ⏫ | up (gravity) | *rise* |
 | **`ovazo`** | ⏬ | down (gravity) | *fall* |
-| **`ubodu`** | ↕️ | the vertical axis | — |
+| **`ubodu`** | ↕️ | the vertical axis | (axis only) |
 
 ```
 `jel vawalal havuzal.`
@@ -293,9 +299,7 @@ The **`/b/`** argument is the landmark, not the viewpoint. Put the facing being 
 | **-l** | indefinite / kind side-region or unmarked path |
 | **-m** | soft / hedged frame |
 | **-n** | proper name |
-| **-r** | resume the most recent matching **`DIR x …`** compound (same DIR stem), or the DIR half when that is the latest match — ordinary [pronoun](pronouns.md) rules |
-
-**Key contrasts:**
+| **-r** | resume the most recent matching **`DIR x …`** compound (same DIR stem), or the DIR half when that is the latest match: ordinary [pronoun](pronouns.md) rules |
 
 | Form | Reading |
 |------|---------|
@@ -305,10 +309,7 @@ The **`/b/`** argument is the landmark, not the viewpoint. Put the facing being 
 | `gewezexugobon` | *my left* (speaker facing) |
 | `gewezexahan` | *our left* (shared facing) |
 | `gavuzal` / `havuzal` | gravity *up* |
-| `xamalal` | discourse *therefore* — *progress*, not east and not body-right |
-| Role `zaxuvugur` | participant — ROLE vowel left of **`x`**, not DIR |
-| Ability `vuzunuxul` | stance vowel right of **`x`**, not a person root |
-
+| `xamalal` | discourse *therefore* (*progress*) |
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -355,7 +356,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zabogol gewezexazawan beredel.`
 :::
 
-**7.** *You, walk left — your left.*
+**7.** *You, walk left (your left).*
 
 ::: details Show answer
 `jel zedonen vawalal hewezexedonen.`
@@ -408,7 +409,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **7.** `jel zedonen vawalal hamalaxedonen.`
 
 ::: details Show answer
-*You, walk right — your right.*
+*You, walk right (your right).*
 :::
 
 **8.** `zohohul gewezexugobon.`
@@ -422,3 +423,4 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 - Event resume vs participant: [pronouns.md](pronouns.md)
 - Mid-word **`x`** families: [x-compounds.md](x-compounds.md)
 - Join-relations as relation roots: [join-extras.md](join-extras.md#join-relations)
+- Can / can’t (vowel right of **`x`**): [ability.md](ability.md)

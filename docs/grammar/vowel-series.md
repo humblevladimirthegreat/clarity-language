@@ -1,26 +1,35 @@
 # Vowel series (`a` / `o` / `e` / `u`)
 <a id="vowel-series"></a>
 
-Four vowels keep the **same jobs** across tables. The **prefix** (or no prefix) tells you which table you are in.
+Four vowels keep the **same jobs** across tables. The **prefix** tells you which table you are in.
 
 ## Beginner
 <a id="beginner"></a>
 
 You already use them on clause force: **`jal`** statement, **`jol`** question, **`jel`** command, **`jul`** *don’t*.
 
-| Vowel | Job (every table) | Force you know |
-|-------|-------------------|----------------|
-| **`a`** | add / include / inventory / hold | **`jal`** statement |
-| **`o`** | one-choice / menu / instead | **`jol`** question |
-| **`e`** | rank / soft-correct / priority | **`jel`** command |
-| **`u`** | subtract / not / except | **`jul`** prohibition |
+**`a`** add, **`o`** one, **`e`** order, **`u`** undo. Read the prefix to pick the table; the vowel is the move.
 
-Why the same four fit clause force: opening with `/j/` starts a turn, and the vowel says which move you make with it — add a statement (**a**), put one option on the table (a question, **o**), set the order of action (a command, **e**), or undo the whole frame (prohibition, **u**).
+Opening with `/j/` starts a turn. The vowel says which move you make: add a statement (**`a`**), put one option on the table (**`o`**), set the order of action (**`e`**), or undo the whole frame (**`u`**).
 
-**a** add, **o** one, **e** order, **u** undo — then read the prefix to pick the table.
+`jal zazawan godogol.`
 
-Stacked two-vowel forms combine two of the four jobs in one word: inclusive *and/or* is add-plus-one-choice (`ao`), *everything but* is undo-plus-add (`ua`), equal rank is add-in-order (`ae`). The same stacking shows up on `/j/` cheers — polar stances like `jael` (*true*) and `juel` (*false*) are exactly these combinations read as reactions.
+gloss: `j-statement` · `z-Azawan` · `g-dog`
 
+*Azawan is a dog.*
+
+`jol zazawan godogol.`
+
+gloss: `j-question` · `z-Azawan` · `g-dog`
+
+*Is Azawan a dog?*
+
+| Vowel | Job (every table) | Mnemonic | Force you know |
+|-------|-------------------|----------|----------------|
+| **`a`** | add / include / inventory / hold | add | **`jal`** statement |
+| **`o`** | one-choice / menu / instead | one | **`jol`** question |
+| **`e`** | rank / soft-correct / priority | order | **`jel`** command |
+| **`u`** | subtract / not / except | undo | **`jul`** prohibition |
 
 ## See also
 
