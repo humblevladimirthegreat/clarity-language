@@ -4,7 +4,14 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { describe, it } from "node:test";
 
-import { classify, createClassifyTables } from "./classify.js";
+import {
+  classify,
+  createClassifyTables,
+  createClassifyTablesFromRows,
+  knownLexiconRoots,
+  lexiconContentRoots,
+  unknownLexiconContentRoots,
+} from "./classify.js";
 import type { LexReading } from "./types.js";
 import { parseWord } from "./word.js";
 
@@ -129,5 +136,18 @@ describe("classify", () => {
     const word = expectReading("al", "ordinary");
     assert.equal(word.family.kind, "reviser");
     assert.equal(word.overlay, undefined);
+  });
+});
+
+describe("lexiconContentRoots", () => {
+  it("collects content and compound hosts; skips spans, numbers, foreign", () => {
+    const emptyKnown = knownLexiconRoots(createClassifyTablesFromRows([], []));
+    assert.deepEqual(lexiconContentRoots(parseWord("zazawan")), ["azawa"]);
+    assert.deepEqual(unknownLexiconContentRoots(parseWord("zazawan"), emptyKnown), ["azawa"]);
+    assert.deepEqual(lexiconContentRoots(parseWord("daxal")), []);
+    assert.deepEqual(lexiconContentRoots(parseWord("g+3")), []);
+    assert.deepEqual(lexiconContentRoots(parseWord("d<sushi>")), []);
+    assert.deepEqual(lexiconContentRoots(parseWord("jal")), []);
+    assert.equal(unknownLexiconContentRoots(parseWord("zazawan"), knownLexiconRoots(tables)).length, 0);
   });
 });

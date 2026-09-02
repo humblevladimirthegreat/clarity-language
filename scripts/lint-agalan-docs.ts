@@ -10,19 +10,11 @@ import { dirname, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { lintAgalanMarkdown } from "../src/lint/agalan-docs.js";
-import { createClassifyTables } from "../src/parse/classify.js";
+import { loadDefaultTables } from "../src/parse/index.js";
 import { lineNumberAt } from "../src/retie/tokens.js";
 
 const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..");
 const grammarDir = join(rootDir, "docs", "grammar");
-
-function loadTables() {
-  return createClassifyTables(
-    readFileSync(join(rootDir, "data", "lexicon-published.csv"), "utf8"),
-    readFileSync(join(rootDir, "data", "lexicon-overlays.csv"), "utf8"),
-    readFileSync(join(rootDir, "data", "lexicon-compounds.csv"), "utf8"),
-  );
-}
 
 function listGrammarMarkdown(dir: string): string[] {
   const out: string[] = [];
@@ -65,7 +57,7 @@ Checks backticked and fenced Agalan words under docs/grammar/.`);
 
 function main(): void {
   const files = resolveTargets(process.argv.slice(2));
-  const tables = loadTables();
+  const tables = loadDefaultTables();
   let count = 0;
 
   for (const file of files) {

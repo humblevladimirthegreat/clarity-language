@@ -1,6 +1,4 @@
-import { senseFormRoot } from "../lexicon-search.js";
-import { classify, type ClassifyTables } from "../parse/classify.js";
-import type { MorphWord } from "../parse/types.js";
+import { knownLexiconRoots, unknownLexiconContentRoots, type ClassifyTables } from "../parse/classify.js";
 import { parseWord, WordParseError } from "../parse/word.js";
 import { forEachMarkdownCodeToken } from "../retie/tokens.js";
 import { isClarityRootShape } from "../word-converter.js";
@@ -129,53 +127,10 @@ export function isAgalanLintCandidate(core: string): boolean {
   return true;
 }
 
-export function knownRootSet(tables: ClassifyTables): Set<string> {
-  const known = new Set<string>(tables.published.keys());
-  for (const stem of tables.compounds.keys()) {
-    known.add(stem);
-  }
-  for (const row of tables.overlays.values()) {
-    known.add(senseFormRoot(row.senseForm));
-  }
-  return known;
-}
-
-function lexiconRoots(word: MorphWord): string[] {
-  const { family } = word;
-  switch (family.kind) {
-    case "reviser":
-    case "joinMarker":
-    case "spanClose":
-    case "writingSpan":
-    case "foreign":
-    case "number":
-      return [];
-    case "x":
-      if (family.xFamily === "span" || family.xFamily === "numeric") {
-        return [];
-      }
-      if (family.xFamily === "role" && family.rightRoots?.length) {
-        return family.rightRoots;
-      }
-      if (family.xFamily === "compound") {
-        return [...family.leftRoots, ...(family.rightRoots ?? [])];
-      }
-      return family.leftRoots;
-    case "content":
-      return family.roots;
-    default:
-      return [];
-  }
-}
-
-function unknownLexiconRoots(word: MorphWord, known: ReadonlySet<string>): string[] {
-  return lexiconRoots(word).filter((root) => root.length >= 3 && !known.has(root));
-}
-
 export function lintAgalanToken(
   core: string,
   tables: ClassifyTables,
-  known: ReadonlySet<string> = knownRootSet(tables),
+  known: ReadonlySet<string> = knownLexiconRoots(tables),
 ): { kind: AgalanLintKind; detail: string } | null {
   if (!isAgalanLintCandidate(core)) {
     return null;
@@ -196,7 +151,7 @@ export function lintAgalanToken(
     return null;
   }
 
-  let word: MorphWord;
+  let word;
   try {
     word = parseWord(core);
   } catch (error) {
@@ -207,8 +162,7 @@ export function lintAgalanToken(
     return { kind: "parse", detail };
   }
 
-  const classified = classify(word, tables);
-  const missing = unknownLexiconRoots(classified, known);
+  const missing = unknownLexiconContentRoots(word, known);
   if (missing.length > 0) {
     return { kind: "unknown-root", detail: `not in the lexicon: ${missing.join(", ")}` };
   }
@@ -216,7 +170,7 @@ export function lintAgalanToken(
 }
 
 export function lintAgalanMarkdown(text: string, tables: ClassifyTables): AgalanLintIssue[] {
-  const known = knownRootSet(tables);
+  const known = knownLexiconRoots(tables);
   const issues: AgalanLintIssue[] = [];
 
   forEachMarkdownCodeToken(text, ({ chunk, index }) => {

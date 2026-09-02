@@ -6,7 +6,16 @@ import { createClassifyTables, type ClassifyTables } from "./classify.js";
 import { parseWithTables } from "./parse-core.js";
 import type { ParseResult } from "./types.js";
 
-export { classify, classifyAll, createClassifyTables, joinFenceGloss, NEED_ROOTS } from "./classify.js";
+export {
+  classify,
+  classifyAll,
+  createClassifyTables,
+  joinFenceGloss,
+  knownLexiconRoots,
+  lexiconContentRoots,
+  NEED_ROOTS,
+  unknownLexiconContentRoots,
+} from "./classify.js";
 export { parseSentenceTokens, SentenceParseError } from "./sentence-parser.js";
 export { letterPrefix, numberMarkerIdentity, resolve } from "./resolve.js";
 export { classifyToTokenType } from "./tokens.js";
@@ -26,7 +35,7 @@ export type * from "./types.js";
 
 let defaultTables: ClassifyTables | null = null;
 
-function loadDefaultTables(): ClassifyTables {
+export function loadDefaultTables(): ClassifyTables {
   if (defaultTables) return defaultTables;
   const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
   defaultTables = createClassifyTables(

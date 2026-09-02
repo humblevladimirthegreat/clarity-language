@@ -163,12 +163,19 @@ function bareNeedTopic(word: MorphWord, tables: ClassifyTables): boolean {
   return tables.needRoots.has(family.roots[0]!);
 }
 
-function publishedRoots(word: MorphWord): string[] {
+/**
+ * Open roots that belong in the published / compound / overlay inventories.
+ * Closed families (joins, spans, numbers, foreign payloads) contribute none.
+ */
+export function lexiconContentRoots(word: MorphWord): string[] {
   const { family } = word;
   switch (family.kind) {
     case "content":
       return family.roots;
     case "x":
+      if (family.xFamily === "span" || family.xFamily === "numeric") {
+        return [];
+      }
       if (family.xFamily === "role" && family.rightRoots?.length) {
         return family.rightRoots;
       }
@@ -179,6 +186,26 @@ function publishedRoots(word: MorphWord): string[] {
     default:
       return [];
   }
+}
+
+/** Published lemmas, lexical-compound stems, and overlay host roots. */
+export function knownLexiconRoots(tables: ClassifyTables): Set<string> {
+  const known = new Set<string>(tables.published.keys());
+  for (const stem of tables.compounds.keys()) {
+    known.add(stem);
+  }
+  for (const row of tables.overlays.values()) {
+    known.add(senseFormRoot(row.senseForm));
+  }
+  return known;
+}
+
+/** Content hosts of length ≥ 3 missing from `known`. */
+export function unknownLexiconContentRoots(
+  word: MorphWord,
+  known: ReadonlySet<string>,
+): string[] {
+  return lexiconContentRoots(word).filter((root) => root.length >= 3 && !known.has(root));
 }
 
 function publishedGlossForRoots(
@@ -333,7 +360,7 @@ export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
     }
   }
 
-  const roots = publishedRoots(word);
+  const roots = lexiconContentRoots(word);
   const published = publishedGlossForRoots(tables, roots);
   if (published) {
     return {
