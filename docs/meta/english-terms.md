@@ -4,7 +4,7 @@ Editor inventory of **English names** the learner grammar uses for constructions
 
 **Source:** `docs/grammar/` only (site chrome `index.md` / `lexicon.md` / `gloss.md` / TTS notes omitted unless they name a construction). **Not** `docs/meta/`, `AGENTS.md`, or proposals.
 
-**Job of this pass:** collate strings **as currently used**. Later we pick which labels to keep. Do **not** treat this page as a recommendation to rename anything.
+**Job of this pass:** collate strings **as currently used**. Do **not** treat this page as a recommendation to rename anything. The pick / rename sequence is [english-terms-plan.md](english-terms-plan.md) (not started).
 
 ## How to read
 
