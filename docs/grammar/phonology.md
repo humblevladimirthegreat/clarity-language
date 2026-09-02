@@ -57,13 +57,13 @@ Voiced and unvoiced are not different letters. Prefer voiced so the vocal cords 
 
 A content word has these parts, written as **one unbroken token**:
 
-1. Part-of-speech prefix
+1. Role letter
 2. Optional mid-word **l** after `/ɡ/` only: **`gl-`**, when the adjective hangs on the word to its left
 3. The root(s); more than one if compounded
 4. The [reference suffix](reference-suffix.md) (**-l**, **-m**, **-n**, or **-r**)
 5. Optional plural **-sh** after the reference suffix ([plurality.md](plurality.md))
 
-Number words are a closed exception: PoS prefix plus an **r**-initial marker ([number-word exception](#number-word-exception)).
+Number words are a closed exception: role letter plus an **r**-initial marker ([number-word exception](#number-word-exception)).
 
 **Writing:** write **role letter + root + ending** as one word (`zazawan`). Native Agalan is **lowercase** only ([capitalization](core.md#capitalization)). Full orthography: [core.md § Orthography](core.md#orthography).
 
@@ -80,7 +80,7 @@ Number words are a closed exception: PoS prefix plus an **r**-initial marker ([n
 ### Number-word exception
 <a id="number-word-exception"></a>
 
-After a PoS prefix, a following **r** (start of the number marker) may form a cluster that ordinary content words never use (for example `/ɡ/`+`r`, `/z/`+`r`, `/v/`+`r`, `/h/`+`r`, `/j/`+`r`, `/x/`+`r`). Content roots are **vowel-initial**, so **`r` starting a root syllable** only appears **after a vowel** inside the root (`uru`). The **`PoS+r`** cluster is legal **only** in [number words](numbers.md). Number-marker **V** is usually a single vowel (`ra` / `ru` / `re` / `ro`); end-relative ordinals use digraph **`eu`** (`reu…`, writing **`#-`**), stacked vowels like `juon`. Treat number stems as number grammar. Ordinary vs number-specific endings: [reference-suffix.md](reference-suffix.md#number-word-exception).
+After a role letter, a following **r** (start of the number marker) may form a cluster that ordinary content words never use (for example `/ɡ/`+`r`, `/z/`+`r`, `/v/`+`r`, `/h/`+`r`, `/j/`+`r`, `/x/`+`r`). Content roots are **vowel-initial**, so **`r` starting a root syllable** only appears **after a vowel** inside the root (`uru`). The **role-letter+`r`** cluster is legal **only** in [number words](numbers.md). Number-marker **V** is usually a single vowel (`ra` / `ru` / `re` / `ro`); end-relative ordinals use digraph **`eu`** (`reu…`, writing **`#-`**), stacked vowels like `juon`. Treat number stems as number grammar. Ordinary vs number-specific endings: [reference-suffix.md](reference-suffix.md#number-word-exception).
 
 ### Letter names
 <a id="letter-names"></a>

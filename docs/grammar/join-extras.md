@@ -12,7 +12,7 @@ Content words that **name a join move** (*include*, *choose*, *without*).
 
 Use a **join-act** when someone **performs** a coordination move on an object: *include*, *choose*, *exclude*, and the rest of this series.
 
-**Shape:** `/v/` + join vowel + **-n** (`van`, `von`, …). One `/d/` object (one thing or a group). Put ordinary noun **-sh** on the object when the group is associative; verb **-sh** is [collective doing](plurality.md#collective-doing).
+**Shape:** `/v/` + join vowel + **-n** (`van`, `von`, …). One `/d/` object (one thing or a group). Put ordinary noun **-sh** on the object when the group is associative; verb **-sh** is [collective](plurality.md#collective-doing).
 
 The vowel is the join move; **-n** is join content. That is the **only** place join-word **-n** is not a [proper name](reference-suffix.md#proper-name--n).
 
@@ -69,7 +69,7 @@ Content *including* needs that `/b/` (`gan b…`). A stock label uses a [mention
 
 **Not the same job as:** adjective [joins](coordination.md) (`gal` / `gam` / `gar`). Join-relations take **-n** toward one `/b/`.
 
-**Compare with:** applicability under `/h/` uses [restrictors](restrictors.md) (`hal`, `hual`, `har`, …).
+**Compare with:** under `/h/` use [restrictors](restrictors.md) (`hal`, `hual`, `har`, …).
 
 | Form | `/ɡ/` (*N … b-X*) | `/h/` (*event … b-X*) | Vowel cue | Example |
 |------|-------------------|------------------------|-----------|---------|

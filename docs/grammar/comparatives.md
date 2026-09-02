@@ -48,7 +48,7 @@ gloss: `z-grace` · `z-courage` · `zel` · `g-challenging` · `w-flood`
 *Azawan is much more challenging than Ululon.*
 ```
 
-You assert the ranking the same way as a plain adjective ([property pattern](predication.md#zero-copula)). The same fence works under `/d/` or `/b/` when the ranked group fills that slot.
+You assert the ranking the same way as a plain adjective ([classification](predication.md#zero-copula)). The same fence works under `/d/` or `/b/` when the ranked group fills that slot.
 
 ### Equatives (`ae` + shared scale)
 <a id="equatives"></a>
@@ -505,6 +505,6 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 ## See also
 
-- Fence shape, single-item / standalone, shared modifiers: [coordination.md](coordination.md)
+- Fence shape, single-item / standalone, SHARED scale / continuum: [coordination.md](coordination.md)
 - Kind and identity (*is a dog*, *is Superman*): [predication.md](predication.md)
 - Measure NPs: [numbers-applied.md](numbers-applied.md#measure-phrases)

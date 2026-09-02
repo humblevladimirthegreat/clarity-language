@@ -131,7 +131,7 @@ Prefer commas, colons, parentheses, or separate sentences over em dashes. An em 
 ## Page skeleton
 
 1. **Title + one-line job** — the English job this page teaches (learner-facing). Sibling links only when the learner will reach for that form *now* — [Compare with](#compare-with), not “this page owns / does not own” fencing.
-2. **Needs** (optional) — **rare.** Use only when the page is late and the dependency is not obvious from the [cross-doc path](learning-levels.md#cross-doc-path) (e.g. causation → joins + **`orodo`** from core Beginner; comparatives → rank joins). Label as `**Needs:**` with one short link line. Do **not** ritualize “core Beginner; reference-suffix Beginner” on every page.
+2. **Needs** (optional) — **rare.** Use only when the page is late and the dependency is not obvious from the [cross-doc path](learning-levels.md#cross-doc-path) (e.g. causation → joins + **`adoro`** from core Beginner; comparatives → rank joins). Label as `**Needs:**` with one short link line. Do **not** ritualize “core Beginner; reference-suffix Beginner” on every page.
 3. **`## Beginner` / `## Intermediate` / `## Advanced`** — per [learning-levels.md](learning-levels.md). Include **Advanced** only when that page has rare inventory to teach ([empty or pointless bands](#empty-bands)).
 4. Inside each band: **concept → rule in one breath → 1–3 examples → (optional contrast) → full table if needed**.
 5. Optional **See also** at the end — a few precise related forms only; no long link walls in the lead (and no lead preview of later peers — [teach now; don’t preview later](#teach-now-dont-preview-later)).
@@ -167,7 +167,7 @@ One short cue is enough (table column, parenthetical, or a line under the rule).
 
 ## Voice and length
 
-- Address the learner in second person (“use **-r** when…”, “prefer names when…”). That *you* is English pedagogy — not Agalan **`ebone`**.
+- Address the learner in second person (“use **-r** when…”, “prefer names when…”). That *you* is English pedagogy — not Agalan **`edone`**.
 - Teaching bands do not use maintainer *we* (“we now write…”) or author *I*. Author *I* is allowed only on signed non-teaching prose in this folder (acknowledgments; the purpose / limits essay), not on rule pages.
 - One idea per H2/H3; the first paragraph should be roughly one short explanation (same bar as the [easy-to-use feature criterion](../grammar/why-agelan.md#criterion-for-features)).
 - Prefer short paragraphs plus a table over a wall of prose.
@@ -195,7 +195,7 @@ Section ids should match the **current** ordinary name (`speech-act`). A silent 
 |----|--------|
 | Minimal clause that shows *only* the new point | Kitchen-sink showcases in Beginner |
 | Published roots when the gloss matches; `PoS<…>ENDING` for donor spelling | Invented “lexicon-shaped” stems, a closed overlay with its own frozen spelling, or split/hyphenated PoS tokens in learner text |
-| Named [house people](#house-cast) when the clause needs a person | Default *I* / *you* (`zugobon` / `zebonen`) as dummy subjects |
+| Named [house people](#house-cast) when the clause needs a person | Default *I* / *you* (`zugobon` / `zedonen`) as dummy subjects |
 | Omit recoverable **`jal`** when the page is not teaching the speech act | Leading every example with **`jal`** by habit |
 | Morph gloss + **loose** free English by default ([glosses.md](glosses.md)) | Merging free English into the morph gloss |
 | Strict free English only when teaching packaging | Strict-only Beginner pages |
@@ -212,7 +212,7 @@ When an example needs a **person**, use these nativized names (published root + 
 | `zululon` | *Ululon* | `ululo` *courage* |
 | `zuhubun` | *Uhubun* | `uhubu` *beauty* |
 
-**`ugobo` / `ebone`** only when that page is teaching those specials, the point is the **discourse role** (name unavailable, address set, clusivity), or a closed construction is keyed to speaker/listener (*Mine* **`zugoboxrawon`**, viewpoint *my left* when the anchor is the role). Inclusive *we* stays **`ahage`**; nonspecific *someone* stays **`enenu`**. Foreign `PoS<…>n` names only when teaching loans or spans. Checkpoints: [translation-exercises.md](translation-exercises.md#principles). Morph / resume: [glosses.md](glosses.md#house-cast).
+**`ugobo` / `edone`** only when that page is teaching those specials, the point is the **discourse role** (name unavailable, address set, clusivity), or a closed construction is keyed to speaker/listener (*Mine* **`zugoboxrawon`**, viewpoint *my left* when the anchor is the role). Inclusive *we* stays **`aha`**; nonspecific *someone* stays **`enenu`**. Foreign `PoS<…>n` names only when teaching loans or spans. Checkpoints: [translation-exercises.md](translation-exercises.md#principles). Morph / resume: [glosses.md](glosses.md#house-cast).
 
 Default example block:
 
@@ -237,7 +237,7 @@ State the **positive** rule. Do **not** list negatives by default — neither a 
 
 **Negatives earn their keep only when** a learner is expected to make that mistake — typically an English false friend, or another Agalan construction they will reach for. Then one decisive contrast (sentence or table cell) with the right link is enough. Cross-link once; do not restate the other doc.
 
-Agalan often earns them: sibling-subsystem swaps (`-sh` vs **`ahage`**, classification vs **`SAME`**, free `g+e` vs `ROOTx+e`, join **-r** vs content **-r**). Label those with [Compare with](#compare-with), not *Trap* / *Near miss* / “do not confuse,” and not a table of every neighbor.
+Agalan often earns them: sibling-subsystem swaps (`-sh` vs **`aha`**, classification vs **`SAME`**, free `g+e` vs `ROOTx+e`, join **-r** vs content **-r**). Label those with [Compare with](#compare-with), not *Trap* / *Near miss* / “do not confuse,” and not a table of every neighbor.
 
 **Skip negatives when:**
 

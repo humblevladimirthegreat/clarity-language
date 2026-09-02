@@ -232,7 +232,7 @@ gloss: `z-book-x-courage`
 
 Resume the handle like any name. If its letter-pronoun (through the 2nd vowel) would pick the wrong antecedent, use the **full root** + **-r** (`zabulur`).
 
-The office as referent takes **-n** in a noun slot (`zabulon`). A [mention](spans.md#loans) packages the **form** (`z{abulo}n` = *the word Abulo*). Foreign letter-names stay compact loans or opaque spans (`z<FBI>n`). How institutions **coin** a handle from a long title is Advanced ([handle coinage](#handle-coinage)).
+The office as referent takes **-n** in a noun slot (`zabulon`). A [mention](spans.md#loans) packages the **form** (`z{abulo}n` = *the word Abulo*). Foreign letter-names stay loans or opaque spans (`z<FBI>n`). How institutions **coin** a handle from a long title is Advanced ([named handle](#handle-coinage)).
 
 #### Verbs (`/v/`)
 
@@ -264,7 +264,7 @@ A **named circumstance, channel, or standard** framing the clause. Aligns with [
 | Family | Ending job |
 |--------|------------|
 | **Linkers** (*but*, *therefore*, …) | Stay **-l** / **-m** |
-| **Named discourse glue** (other `/x/` roots) | **-n** = titled agenda / section label: thread shift (*let’s now talk about X*) |
+| **Named continue** (other `/x/` roots) | **-n** = titled agenda / section label: thread shift (*let’s now talk about X*) |
 | **Clause joins** | **-n** = soft packaging (*and then* **`xan`**, …): not phrase named-list **-n**; full table [coordination.md](coordination.md) |
 
 Prefix-less [discourse revisers](revisers.md#discourse-revisers) keep reviser endings including named **-n**.
@@ -425,7 +425,8 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 ## Advanced
 <a id="advanced"></a>
 
-### Handle coinage
+### Named handle (from a long title)
+<a id="named-handle-coinage"></a>
 <a id="handle-coinage"></a>
 
 Institutions mint a native handle from the long title’s **content roots** (skip joins, revisers, and number words). The result must be one legal `V(CV)+` root, then **-n** in use.

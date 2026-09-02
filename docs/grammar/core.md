@@ -7,7 +7,7 @@ How to read and write an Agalan **sentence**: word roles, word shape, default or
 
 ### Parts of speech
 
-Each content word starts with a **first letter** that marks its job in the sentence. The root stays the same when the job changes. Only that first letter changes.
+Each content word starts with a **role letter** that marks its job in the sentence. The root stays the same when the job changes. Only that role letter changes.
 
 #### Writing words
 <a id="orthography"></a>
@@ -37,7 +37,7 @@ When you are **not** filling a sentence slot (lexicon head, list, title line, or
 #### Role letters (parts of speech)
 <a id="part-of-speech-prefixes"></a>
 
-| First letter | Job | Mnemonic |
+| Role letter | Job | Mnemonic |
 |--------------|-----|----------|
 | `/z/` | subject (who or what the sentence is about as actor) | **z** = the star of the sentence |
 | `/d/` | direct object (who or what is acted on) | **d** = done to |
@@ -105,7 +105,7 @@ gloss: `z-dog` · `g-blue`
 
 It sits on that adjective: normally right after the `/ɡ/` (or after that `/ɡ/`’s attached `/b/` if complex). Several `/w/` words may sit in a row on one `/ɡ/` (`guzumum wazebol wazebel` = *happy, loudly, very loudly*). If the relation needs an extra noun, use complex `/ɡ/` + `/b/` instead.
 
-`/w/` = **with** the adjective (narrow); `/h/` = the **whole** sentence. Same root, different first letter, different reach.
+`/w/` = **with** the adjective (narrow); `/h/` = the **whole** sentence. Same root, different role letter, different reach.
 
 ### Adverbs (`/h/`)
 <a id="adverbs-h"></a>
@@ -117,6 +117,7 @@ Because `/h/` talks about the sentence’s verb, **you may place it anywhere in 
 **Several adverbs at once** just sit next to each other: `hadazal hozowol` → *hastily and still/quietly*.
 
 ### Complex adjectives, complex adverbs, and extra nouns
+<a id="extra-nouns"></a>
 <a id="complex-adjectives-complex-adverbs-and-argument-nouns"></a>
 
 A **complex** adjective or adverb needs an extra participant: the `/ɡ/` or `/h/` word plus an **extra noun** (`/b/`) right after it. The root names the relation; `/b/` only marks “noun of that word.”

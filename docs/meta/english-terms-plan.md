@@ -263,6 +263,6 @@ Sync [grammar-docs.md](grammar-docs.md) (everyday-English examples still saying 
 | 2 Join arity | done |
 | 3 Span / range / overlay | done |
 | 4 Turn, vocative, polar, resume | done |
-| 5 Alias sweep | not started |
+| 5 Alias sweep | done |
 | 6 Remaining splits | not started |
 | 7 Editor surfaces | not started |

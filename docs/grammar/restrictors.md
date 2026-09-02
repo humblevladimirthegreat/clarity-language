@@ -30,7 +30,7 @@ gloss: `z-grace` · `v-walk` · `hal`
 *Azawan never walks.*
 ```
 
-The vowels are the join series you already know (**a** inventory, **u** undo, **o** one-choice), read as a **when-frame** for the host. Ending **-l** closes the frame; **-m** leaves it open.
+The vowels are the join series you already know (**a** inventory, **u** undo, **o** one-choice), read as a **restrictor** for the host. Ending **-l** closes the frame; **-m** leaves it open.
 
 Two manner adverbs in a row still mean they apply together. That is ordinary stacking, not a restrictor:
 
@@ -204,7 +204,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 ## Intermediate
 <a id="intermediate"></a>
 
-### More when-frames
+### More occasions
 <a id="defined-core-full"></a>
 
 The same vowels as joins now name **more kinds of occasion**. `/w/` matches `/h/` on the adjective (`wal` / `wam` / `wual` / `wuam` / `war` / `wor` / `wur`, and the rows below).
@@ -274,11 +274,11 @@ Statement readings below. Under **question** force: [questions.md](questions.md#
 - Complex occasion: `hohohul hal` → *only at home*
 - `/w/` core: `hededem wal` → *only when alleged*; `war` → *sometime* (under some framing); two adjective details in a row: `guzumum wube wenazel` → *very* and *recent*
 
-### Occasions vs a next-clause *when*
+### Occasions vs a dependent *when*
 
 Each listed occasion is a **simple** `/h/` or `/w/` content word, or a **complex** unit (`/h/` plus `/b/`, or contiguous `/w/` material the lexicon allows).
 
-*When* / *if* as a **dependent sentence** stays ordinary complex `/h/` plus `/b/` [next-clause pronoun](pronouns.md#special-pronouns) ([core.md](core.md#dependent-clauses)). Circumstance fences list **phrase** occasions.
+*When* / *if* as a **dependent sentence** stays ordinary complex `/h/` plus `/b/` [**`adoro`**](pronouns.md#special-pronouns) ([core.md](core.md#dependent-clauses)). Circumstance fences list **phrase** occasions.
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>

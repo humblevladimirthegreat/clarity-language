@@ -194,7 +194,7 @@ Word shape, other prefixes, number as verb / adverb / interjection / discourse, 
 
 ### Word shape
 
-Speech always uses one full CV word. You already know PoS + marker + digits + ending. Intermediate fills in the other markers, exponents (the *order of magnitude* piece before the ordinary digits, called the **mantissa**), endings, and number as verb / adverb / interjection / discourse.
+Speech always uses one full CV word. You already know role letter + marker + digits + ending. Intermediate fills in the other markers, exponents (the *order of magnitude* piece before the ordinary digits, called the **mantissa**), endings, and number as verb / adverb / interjection / discourse.
 
 ```
 [PoS] + r + V + ( [exponent?] [mantissa digits?] )* + [ending]
@@ -202,7 +202,7 @@ Speech always uses one full CV word. You already know PoS + marker + digits + en
 
 1. **PoS:** same prefix inventory as elsewhere; [roles for number words](#parts-of-speech-on-numbers) below.
 2. **Number marker:** consonant **r** plus a vowel **V** (see [Marker vowel](#marker-vowel-referential-identity)). **V** is usually a single vowel; end-relative ordinals use digraph **`eu`**. The PoS+`r` cluster is a [number-only letter-cluster exception](phonology.md#phonotactics).
-3. **Zero or more digit groups:** each group is an optional exponent and optional mantissa digits (at least one of the two **when the group is present**, except a [digitless exponent](#digitless-exponents) group is **`ba`/`bu` alone**). Digits sit next to each other with no **x**. Sign, when it applies, is once for the whole word ([Sign](#sign)). **No groups** = [unspecified magnitude](#zero-digit-groups) of that marker identity, or [digitless **-r** resume](#number-endings).
+3. **Zero or more digit groups:** each group is an optional exponent and optional mantissa digits (at least one of the two **when the group is present**, except a [digitless exponent](#digitless-exponents) group is **`ba`/`bu` alone**). Digits sit next to each other with no **x**. Sign, when it applies, is once for the whole word ([Sign](#sign)). **No groups** = [digitless](#zero-digit-groups) of that marker identity, or [digitless **-r** resume](#number-endings).
 4. **Ending:** `-l` / `-m` / `-n` / `-r` with [number-specific meanings](#number-endings).
 
 **Writing** for free number words uses a [preferred shorthand](#writing-preferred-shorthand) for the marker and body (`g+3`, `g+`, `g#-2`). Speech is always the full CV form.
@@ -212,14 +212,14 @@ Speech always uses one full CV word. You already know PoS + marker + digits + en
 ### Parts of speech on numbers
 <a id="parts-of-speech-on-numbers"></a>
 
-The number word takes whichever PoS prefix the role needs. Referential prefixes (`/ɡ/`, `/z/`, `/d/`, `/b/`) use the marker as-is; PoS only chooses the slot. Number as verb / adverb / interjection / discourse is [below](#number-overlays).
+The number word takes whichever role letter the slot needs. Referential prefixes (`/ɡ/`, `/z/`, `/d/`, `/b/`) use the marker as-is; the role letter only chooses the slot. Number as verb / adverb / interjection / discourse is [below](#number-overlays).
 
 | Prefix | Role with a number |
 |--------|--------------------|
 | `/ɡ/` | **modifier** — the number describes the preceding noun (*three cats*, *the second page*, *room 12*). Goes after the noun, like other adjectives. |
 | `/z/` | **subject** — the numeric value, digit-string, or rank is the subject. |
 | `/d/` | **direct object** — the number is the object (common for digit-strings / codes being dialed, entered, stated). |
-| `/b/` | **argument noun** — the number fills the `/b/` slot of a complex adjective or adverb (*of size 12*, host *on* + channel/label, host *at* + time when a relation is named, …). Bare temporal circumstance (no host) uses `/h/` + **`ro`** ([Time](#time)). |
+| `/b/` | **extra noun** — the number fills the `/b/` slot of a complex adjective or adverb (*of size 12*, host *on* + channel/label, host *at* + time when a relation is named, …). Bare temporal circumstance (no host) uses `/h/` + **`ro`** ([Time](#time)). |
 
 Degree and “aboutness” of a quantity use [number endings](#number-endings) (especially **-m** for approximate), not a `/w/` grader on the number.
 
@@ -265,12 +265,12 @@ Number endings have [their own jobs](#number-endings) (exact / about / conventio
 
 **-r** may be **digitless**: marker + **-r** alone resumes the prior value of that identity without restating digits (`g=+` = *that (scalar) amount again*; `d=_` = *that code again*; `g=#` = *that rank again*). Digits + **-r** still fine when you want to name which prior item (`x=#2` = *as in (2) above*). Match the marker to the resumed identity (`g=+` for a prior scalar). **`=`** stands alone: no stack with **`~`** / **`@`**.
 
-### Zero digit groups
+### Digitless
 <a id="zero-digit-groups"></a>
 <a id="digitless-numbers"></a>
 <a id="bare-marker"></a>
 
-A number word may omit every digit group: **PoS + marker + ending** only. The marker still fixes what kind of number this is. With **-l** / **-m** / **-n**, the magnitude (or label/rank payload) is **unspecified** as in the table below. With **-r**, the word is [digitless resume](#number-endings) only: a prior value of that identity.
+A number word may omit every digit group: **role letter + marker + ending** only. The marker still fixes what kind of number this is. With **-l** / **-m** / **-n**, the magnitude (or label/rank payload) is **unspecified** as in the table below. With **-r**, the word is [digitless resume](#number-endings) only: a prior value of that identity.
 
 | Marker | Writing | Digitless sense | Partition / notes |
 |--------|---------|-----------------|-------------------|
@@ -282,7 +282,7 @@ A number word may omit every digit group: **PoS + marker + ending** only. The ma
 
 Noun [**-sh**](plurality.md) marks that a **referent is a group** (indefinite group introduction stays **-lsh** / **-msh**). Digitless **`ra`** marks that a **count/amount is `>1`** without naming N. They may co-occur (`zagadalsh g+3`).
 
-Phrase **`zar`** / **`zor`** / … pick an unspecified **member of an inventory**. Digitless number **-r** resumes a **prior numeric value**. Digitless number **-l** (etc.) introduces an unspecified magnitude of that marker.
+Phrase **`zar`** / **`zor`** / … pick an unspecified **member of an inventory**. Digitless number **-r** resumes a **prior numeric value**. Digitless number **-l** (etc.) introduces a digitless amount of that marker.
 
 `/v/` `/h/` `/j/` `/x/` inherit the same emptiness (marker identity → role reading, payload unspecified):
 
@@ -448,7 +448,7 @@ Endings still apply (**-m** fuzzy *about three more!*, **-n** conventional call 
 #### Number as discourse marker (by marker)
 <a id="number-as-discourse-marker-by-marker"></a>
 
-`/x/` + number is discourse glue for numbered list items and label cites. Marker vowel encodes **independence framing** of the list item (or cite-as-label for **`ro`**). **`reu`** / **`#-`** marks **end-relative** place in the list. These sit outside the main-clause argument slots (`/ɡ/` *the second page*, `/h/` *three times*, `/j/` cheers).
+`/x/` + number is a continue for numbered list items and label cites. Marker vowel encodes **independence framing** of the list item (or cite-as-label for **`ro`**). **`reu`** / **`#-`** marks **end-relative** place in the list. These sit outside the main-clause argument slots (`/ɡ/` *the second page*, `/h/` *three times*, `/j/` cheers).
 
 | Marker | Writing | Discourse sense |
 |--------|---------|-----------------|

@@ -21,7 +21,7 @@ PoS + ROOT + x + NUM + {-l|-m|-n|-r}
 |-------|------|
 | **PoS** | Ordinary slot for the derived word |
 | **ROOT** | Open content host (`V(CV)+`) |
-| **`x`** | Ordinary [compound joiner](phonology.md#phonotactics) |
+| **`x`** | Ordinary [compound](phonology.md#phonotactics) seam |
 | **NUM** | Number stem **without a part-of-speech letter and without its own ending**: same marker / digits / digitless-exp body as [numbers.md](numbers.md). Inventory tables use [shorthand](numbers.md#writing-preferred-shorthand) (`+e`, `_12`, `+1e`, …). Running-text and citation examples prefer spelled CV (`raba`, `ro…`, `rawoba`, …): [writing style](numbers.md#writing-style-numeric-vs-spelled) |
 | **Ending** | Ordinary [reference-suffix](reference-suffix.md) on the **whole derived stem** (the host ROOT). Approximate, proper-designation, and resume use those host endings, or a free number word / ordinary syntax outside this family. |
 
@@ -84,7 +84,7 @@ Single-digit scalars only. Tables use marker shorthand (**`+N`** / **`-N`**). Sp
 
 | `+N` | Strong reading | Example | `-N` privative | Example |
 |------|----------------|---------|----------------|---------|
-| **`ROOTx+1`** | unit / primary / singleton | `zegarexrawol`: *a single / primary voice*; **`zugoboxrawon`**: [personal standard](comparatives.md#mine-vs-speaker) (normative Mine; host = [speaker](pronouns.md#special-pronouns) **`ugobo`**); titled SI measure units on dimension hosts (`bureluxrawon` *meter*: [measure phrases](numbers.md#bare-vs-unit-morph); bare host is the short form) | non-unitary / indistinct / not-a-one | `zegarexruwol`: *an indistinct / non-singular voice* |
+| **`ROOTx+1`** | unit / primary / singleton | `zegarexrawol`: *a single / primary voice*; **`zugoboxrawon`**: [personal standard](comparatives.md#mine-vs-speaker) (normative Mine; host = [speaker](pronouns.md#special-pronouns) **`ugobo`**); titled SI units on dimension roots (`bureluxrawon` *meter*: [measure phrases](numbers-applied.md#bare-vs-unit-morph); bare unit is the short form) | non-unitary / indistinct / not-a-one | `zegarexruwol`: *an indistinct / non-singular voice* |
 | **`ROOTx+2`** | dual / mutual / reciprocal / pair | `gobulexradul`: *mutual duty* | non-reciprocal / one-sided / unpaired | `gobulexrudul`: *one-sided duty* |
 | **`ROOTx+3`** | triad / triplet / 3-part / ternary | `zezebexrarel`: *a three-part dialogue* | non-tripartite / collapsed-from-three | `zovuvexrurel`: *non-tripartite government* |
 | **`ROOTx+4`** | quad / 4-part / square / frame | `zezagexramol`: *a four-part / framed court* | unframed / out-of-box / unbound | `zuruxrumol`: *an unframed idea* |

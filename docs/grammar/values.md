@@ -81,7 +81,7 @@ gloss: `z-gift` · `w-relatedness-met-physical`
 <a id="value-contact"></a>
 <a id="value-savoring"></a>
 
-On **`xa`** compounds, **-l / -m / -r** mark **how you contact** the claimed payoff (savoring / gratitude channel). **-n** stays ordinary [proper](reference-suffix.md#proper-name--n). Relatedness *between people* is the need **`onogo`**.
+On **`xa`** compounds, **-l / -m / -r** mark **how you contact** the claimed payoff (contact channel). **-n** stays ordinary [proper](reference-suffix.md#proper-name--n). Relatedness *between people* is the need **`onogo`**.
 
 | Form | Channel | Focus | Mnemonic |
 |------|---------|-------|----------|

@@ -30,7 +30,7 @@ Clock and calendar use the same number grammar as other digit-strings. **Bare `/
 
 A count of minutes on a clock face is still a digit-string (`h_15,30`), not a scalar packed as one integer. `h+3` is ×3 / *three times*; `h#3` is *for the third time*. Timezone, era, and calendar system are ordinary lexicon `/h/` beside the number word.
 
-Endings: **-l** exact; **-m** fuzzy (*around 15:30*); **-n** conventional schedule or date name; **-r** resume a prior clock or date (digitless `h=_` = *that time/date again*). Digitless `h_` is not circumstance **`har`** (*sometime*): see [zero digit groups](numbers.md#zero-digit-groups).
+Endings: **-l** exact; **-m** fuzzy (*around 15:30*); **-n** conventional schedule or date name; **-r** resume a prior clock or date (digitless `h=_` = *that time/date again*). Digitless `h_` is not circumstance **`har`** (*sometime*): see [digitless](numbers.md#zero-digit-groups).
 
 ### Measure phrases
 <a id="measure-phrases"></a>
@@ -51,26 +51,26 @@ A **measure** is a lexicon **unit** noun plus a scalar **amount** on that unit.
 
 Same endings and fuzzy **-m** habits as other number words on the amount (`g~+2` ≈ *about two*). The **unit** is ordinary lexicon (reference suffixes as usual).
 
-#### Bare host vs unit morph (`x+1`)
+#### Bare unit vs titled unit (`x+1`)
 <a id="bare-vs-unit-morph"></a>
 <a id="unit-short-form"></a>
 
-Measure hosts are **published metaphorical roots** (dimension / quantity metaphors). Speech uses those roots, not Latin-style abbreviations (`m`, `kg`, `s`, …).
+Measure phrases use **published metaphorical roots** (dimension / quantity metaphors). Speech uses those roots, not Latin-style abbreviations (`m`, `kg`, `s`, …).
 
 | Register | Shape | Example | When |
 |----------|--------|---------|------|
-| **Short / default** | bare host + amount | `burelul g+2` | ordinary measure phrases: the scalar licenses the unit reading |
-| **Full / titled** | host + digit morph **`+1`** (*unit / primary*) | `bureluxrawon g+2` | you need *the named unit of that dimension* versus the ordinary metaphor (*measurement*, *heaviness*, …) |
+| **Short / default** | bare unit + amount | `burelul g+2` | ordinary measure phrases: the scalar licenses the unit reading |
+| **Full / titled** | unit + digit morph **`+1`** (*unit / primary*) | `bureluxrawon g+2` | you need *the named unit of that dimension* versus the ordinary metaphor (*measurement*, *heaviness*, …) |
 | **Resume** | short resume or **-r** | `bur` / `bureluxrawor` | after the unit NP is on the table |
 
 Spelled **`…xrawol`** / **`…xrawon`**: [numeric derivation](numeric-derivation.md#numeric-derivation) (**`ROOTx+1`**). Prefer **-n** on the titled form when the unit is a conventional SI name; **-l** when naming a unit-instance without that title force. Soft **-m** hedges amount or unit, not a short name.
 
 **Bare is enough** when the measure reading is clear (`bojorol g+70` ≈ *70 grams*). Use **`…x+1`** when the same root is also active as a quality or continuum (*how heavy*, *passage of time*, *heat*) and the unit reading must stay distinct: same habit as normative Mine **`zugoboxrawon`** vs performance **`zugobon`** ([comparatives](comparatives.md#judgment-benchmarks)).
 
-#### Stock measure hosts
+#### Stock units
 <a id="stock-measure-hosts"></a>
 
-| SI / everyday unit | Host (metaphor) | Bare measure | Titled unit |
+| SI / everyday unit | Unit (metaphor) | Bare measure | Titled unit |
 |--------------------|-----------------|--------------|-------------|
 | meter | `urelu` 📏 *measurement* | `burelul` | `bureluxrawon` |
 | gram | `ojoro` 🪨 *heaviness* | `bojorol` | `bojoroxrawon` |
@@ -81,7 +81,7 @@ Spelled **`…xrawol`** / **`…xrawon`**: [numeric derivation](numeric-derivati
 | mole | `emade` 🍖 *substance* | `bemadel` | `bemadexrawon` |
 | candela | `agade` 🕯️ *awash* | `bagadel` | `bagadexrawon` |
 
-**Civil duration** (*hours*, *days*) uses continuum **`umedu`** 🕐 *time* as the measure host (`bumedul g+3` ≈ *three hours*). SHARED range continua stay **`gumedul`** / **`gurelul`** / **`gezudal`** as the line needs ([ranges](#ranges)). Temperature continuum **`edohe`** 🌡️ *temperature* grades heat without naming kelvin.
+**Civil duration** (*hours*, *days*) uses continuum **`umedu`** 🕐 *time* as the unit (`bumedul g+3` ≈ *three hours*). SHARED range continua stay **`gumedul`** / **`gurelul`** / **`gezudal`** as the line needs ([ranges](#ranges)). Temperature continuum **`edohe`** 🌡️ *temperature* grades heat without naming kelvin.
 
 **Common derived (optional):** newton `ubunu` *force*; pascal `abama` *pressure*; joule `abedo` *energy*; watt `ubulu` *power*; hertz `urumu` *rhythm*; ohm `onuzu` *blockage*; coulomb `urohe` *charge*; radian `erola` *cycle*. Same bare / `…x+1` habit.
 
@@ -181,7 +181,7 @@ Fence **-r** on a number-range shape (still with SHARED continuum) = an **unspec
 
 Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which value in 3–5?*). Same under `/d/` `/b/` / `/ɡ/` as the slot needs (`g+3 g+5 gal gumedul` = modifier *times 3–5*; `d+10 ul d+20 dar gurelul` = object *some value in [10, 20)*).
 
-**Clock / date ranges:** prefer SHARED continuum **`gumedul`** (or a host relation + `/b/`) with digit-string endpoints (`bal gumedul b_15,00 b_16,00`). Circumstance **`hal`** is [applicability](restrictors.md), not a clock/date range fence.
+**Clock / date ranges:** prefer SHARED continuum **`gumedul`** (or a host relation + `/b/`) with digit-string endpoints (`bal gumedul b_15,00 b_16,00`). Circumstance **`hal`** is a [restrictor](restrictors.md), not a clock/date range fence.
 
 Examples: `z+3 z+5 zal gumedul` → *between times 3 and 5*; `zuguhul g+3 g+5 gal gumedul` → *children times 3–5*; `z+3 ul z+5 zal gurelul` → *[3, 5)*; `z+10 z+20 zel gumedul` → *from time 10 to 20*; `z+3 z+5 zel` → *3 ≻ 5* (preference); `z+5 zel` → *\< 5*; `z+5 zuel` → *\> 5*; `z+5 z+5 zael` → *equally 5*; `z+3 z+5 zaem` → *3 and 5 approximately equal*; `z+3 z+5 zar gurelul` → *some value in 3–5*; `z+3 z+5 zol` → *3 or 5* (discrete).
 

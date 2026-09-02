@@ -159,7 +159,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zuhubun d@[Hamlet] vuzunul.`
 :::
 
-**5.** *Azawan saw sushi.* (ordinary compact loan, not an opaque blob)
+**5.** *Azawan saw sushi.* (ordinary loan, not an opaque blob)
 
 ::: details Show answer
 `zazawan d<sushi>l vejel.`
@@ -200,7 +200,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **2.** `zazawan d<sushi> vejel.`
 
 ::: details Show answer
-*Azawan saw sushi.* (opaque surface: not ordinary Agalan words, and not a compact loan word)
+*Azawan saw sushi.* (opaque surface: not ordinary Agalan words, and not a loan word)
 :::
 
 **3.** `zuhubun d{abogo} vezehel.`
@@ -280,7 +280,7 @@ TYPE uses **a** / **e** / **o** / **u**.
 | **o** | **mention** — the word or form as object; with **-n**, named unit | `{` … `}` | **o** one → mention |
 | **u** | **opaque** — foreign / code / raw blob; interior is not native Agalan | `<` … `>` | **u** undo → opaque |
 
-A native office **handle** refers with ordinary **-n** (`zabulon`): [named handles](reference-suffix.md#named-handles). Mention `{abulo}` is that **form**; opaque / compact loan is a **foreign** acronym’s surface (`z<FBI>n`).
+A native office **handle** refers with ordinary **-n** (`zabulon`): [named handles](reference-suffix.md#named-handles). Mention `{abulo}` is that **form**; opaque / loan is a **foreign** acronym’s surface (`z<FBI>n`).
 
 ### EDGE (extent)
 <a id="edge"></a>
@@ -364,7 +364,7 @@ gloss: `z-grace` · `^` · `h-maybe` · `z-red` · `z-dog` · `^` · `v-see`
 | Binder | Job inside the island |
 |--------|------------------------|
 | Scope-taking **`/h/`** | frames that **chunk** (prefer first in the island) |
-| Prefixed **join** | lookback-absorbs **only** matching-role material **inside** — [join scope islands](coordination.md#join-scope-islands-rules) |
+| Prefixed **join** | lookback-absorbs **only** matching-role material **inside** — [scope islands](coordination.md#join-scope-islands-rules) |
 
 `/h/` and a join may share one island (`^ h<maybe>l zazawan zululon zam ^`). **`/w/`** still only frames the previous `/ɡ/`.
 
@@ -675,7 +675,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 ## See also
 
-- Join scope islands: [coordination.md](coordination.md#join-scope-islands-rules)
+- Scope islands: [coordination.md](coordination.md#join-scope-islands-rules)
 - Identity vs parenthetical comment: [predication.md](predication.md#identity)
 - Phrasal proper names: [reference-suffix.md](reference-suffix.md#phrasal-proper-names)
 - Native office handles: [reference-suffix.md](reference-suffix.md#named-handles)

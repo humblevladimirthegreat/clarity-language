@@ -22,11 +22,11 @@ Agalan keeps three kinds of clarity in ordinary speech.
 ### Syntactic
 <a id="syntactic"></a>
 
-In a clause, every content word begins with a letter that names its job (subject, object, verb, …), so role does not depend on guessing from English-style word class. Default order is Subject–Object–Verb, but free order is safe because that first letter is authoritative.
+In a clause, every content word begins with a letter that names its job (subject, object, verb, …), so role does not depend on guessing from English-style word class. Default order is Subject–Object–Verb, but free order is safe because that role letter is authoritative.
 
 `zazawan godogol.`
 
-*Azawan is a dog.* The first letter on each word is the job: `z-` who the sentence is about, `g-` a kind or property.
+*Azawan is a dog.* The role letter on each word is the job: `z-` who the sentence is about, `g-` a kind or property.
 
 Outside a sentence, the bare root with its final letter names the thing by itself.
 

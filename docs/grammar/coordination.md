@@ -1,13 +1,13 @@
 # Joins
 
-Coordinate same-slot material (noun phrases, verb phrases, or clause bodies) with a **right-close fence**: the items, then the join word, then optional shared modifiers.
+Join same-slot material (noun phrases, verb phrases, or clause bodies) with a **right-close fence**: the items, then the join, then optional SHARED scale / continuum material.
 
 ## Beginner
 <a id="beginner"></a>
 
 ### What you use joins for
 
-You use joins when English would say *and*, *or*, *not*, *prefer A over B*, *something*, or *everything but*. Agalan spells that job with a **PoS prefix** + **vowel root** (+ stacked vowel when needed) + **ending**.
+You use joins when English would say *and*, *or*, *not*, *prefer A over B*, *something*, or *everything but*. Agalan spells that job with a **role letter** + **vowel root** (+ stacked vowel when needed) + **ending**.
 
 | Level | Prefix | Example job |
 |-------|--------|-------------|
@@ -28,7 +28,7 @@ Join words are the **only** place **-n** does not mean a [name](reference-suffix
 <a id="left-fence"></a>
 <a id="right-close"></a>
 
-Put every item **before** the join. Put shared modifiers **immediately after** the join. Place items next to each other with no extra word between them.
+Put every item **before** the join. Put **SHARED** scale / continuum material **immediately after** the join. Place items next to each other with no extra word between them.
 
 ```
 PHRASE PHRASE ( PHRASE )* P-JOIN ( SHARED )*
@@ -538,7 +538,7 @@ Mark kind / domain with ordinary **SHARED `/ɡ/`**. Items under **ua** / **uo** 
 
 **Generics** use these fences. Plural **-sh** is a different job ([plurality.md](plurality.md)):
 
-- Strict / definitional → closed `zual` + SHARED kind + [FORMAL](special-vocabulary.md#universality) warrant when needed.
+- Strict / definitional → closed `zual` + SHARED kind + [FORMAL](special-vocabulary.md#universality) when needed.
 - Soft / epistemic → open `zuam` + SHARED kind.
 - Habitual characterizing → bare `hual` on the clause.
 - Free-choice disposition (*Any cat will do*) → `zor`.
@@ -761,7 +761,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 ## Advanced
 <a id="advanced"></a>
 
-### Join scope islands
+### Scope islands
 <a id="join-scope-islands"></a>
 <a id="join-scope-islands-rules"></a>
 
@@ -811,16 +811,16 @@ Join-root phonotactics: [phonology.md](phonology.md#phonotactics).
 
 ### Constraints
 
-- **One slot** per chain: a single subject, object, `/b/` argument, `/ɡ/` stack position, `/w/` restrictor unit, or `/h/` restrictor unit. Under `/h/` `/w/`, that slot is a restrictor (applicability), not sibling *and*.
+- **One slot** per chain: a single subject, object, `/b/` argument, `/ɡ/` stack position, `/w/` restrictor unit, or `/h/` restrictor unit. Under `/h/` `/w/`, that slot is a restrictor, not sibling *and*.
 - **Matching role prefix** on every item head and on the join.
 - **One right-close fence per flat list.** Nested joins: [fence nesting](#fence-nesting).
 - **Shared modifiers** only immediately after each `P-JOIN`; local modifiers stay after their own heads.
 - **Phrase -r** — only **…ar** / **…or** / **…er** / **…ur**.
 - Verb+object packages use the verb-phrase fence (`/v/`). Full sentences use `/x/`.
 - Same PoS on every item. In-clause *including* / *rather* / *instead* / *except* are [revisers](revisers.md). Cite / mention / aside use [span fences](spans.md). Numbered *first / second* discourse uses [numbers](numbers.md#number-as-discourse-marker-by-marker).
-- Prefixed joins always have PoS prefix + ending. Prefix-less **al** / **am** / … are revisers. Whole-word **a** / **e** / **o** / **u** (no ending) are not words.
+- Prefixed joins always have a role letter + ending. Prefix-less **al** / **am** / … are revisers. Whole-word **a** / **e** / **o** / **u** (no ending) are not words.
 - Floating `/h/` inside an NP/AP/`/b/` join does not end the list. Verb-chain `/h/` scope differs — see [verb-phrase](#vp-level-coordination).
-- Clause-level: each item is a full clause body; *because* / *if* stay `/h/` + `/b/` [next-clause pronoun](pronouns.md#special-pronouns).
+- Clause-level: each item is a full clause body; *because* / *if* stay `/h/` + `/b/` [**`adoro`**](pronouns.md#special-pronouns).
 - Sibling manner stacking on `/h/` `/w/` uses **juxtaposition** (`hadazal hemudel`).
 
 ### Translation practice

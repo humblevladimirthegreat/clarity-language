@@ -2,7 +2,7 @@
 <a id="x-compounds"></a>
 <a id="compound-parser"></a>
 
-How you tell, in an ordinary word, which **job** a mid-word **`x`** is doing. Inside a content word, **`x`** sits at the seam between pieces (the [compound joiner](phonology.md#phonotactics)). Word-initial **`x`** is the discourse-marker PoS, a different job.
+How you tell, in an ordinary word, which **job** a mid-word **`x`** is doing. Inside a content word, **`x`** sits at the seam between pieces (ordinary [compound](phonology.md#phonotactics)). Word-initial **`x`** is the continue PoS, a different job.
 
 ## Beginner
 <a id="beginner"></a>
@@ -105,9 +105,9 @@ A shop mashup stays **`x`** even when frequent. A fossil kind is a lexicon lemma
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills on this Intermediate band. Try each item before opening **Show answer**. The point is **`x`** assembly vs two words vs a lexical kind.
+Short drills on this Intermediate band. Try each item before opening **Show answer**. The point is **`x`** assembly vs two words vs a lexical compound.
 
-**Roots used here:** `olove` *love* · `aga` *crush* · `uzu` *sushi* · `ogove` *coffee* · `adeda` *tea* · `ohohu` *house* · `abede` *bed* · `ebere` *person* · `onogo` *bond* · `odogo` *dog* · `agada` *cat* · `unowe` *sunflower` (lexical kind) · `azawa` · `ululo`
+**Roots used here:** `olove` *love* · `aga` *crush* · `uzu` *sushi* · `ogove` *coffee* · `adeda` *tea* · `ohohu` *house* · `abede` *bed* · `ebere` *person* · `onogo` *bond* · `odogo` *dog* · `agada` *cat* · `unowe` *sunflower` (lexical compound) · `azawa` · `ululo`
 
 #### English → Agalan
 
@@ -129,7 +129,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zuzuzuxogoven.`
 :::
 
-**4.** *a bedroom* (lexical kind)
+**4.** *a bedroom* (lexical compound)
 
 ::: details Show answer
 `zohohulabedel.`
@@ -140,19 +140,19 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **5.** `zeberelonogon.`
 
 ::: details Show answer
-*a friend* (lexical kind)
+*a friend* (lexical compound)
 :::
 
 **6.** `zunowel.`
 
 ::: details Show answer
-*a sunflower* (lexical kind)
+*a sunflower* (lexical compound)
 :::
 
 ## Advanced
 <a id="advanced"></a>
 
-### Lexical compounds (x-less kinds)
+### Lexical compounds
 <a id="lexical-compounds"></a>
 
 Some conventional kinds are **one root** in the lexicon: the seam between two published roots is spelled with the **first member’s reference letter** (`l` / `m` / `n` / `r`), with no mid-word **`x`**. You do not coin these on the fly; you learn each closed kind.
@@ -182,15 +182,15 @@ Productive **`x`** is the default when you are still assembling (`golovexurul`, 
 ### Translation practice
 <a id="translation-practice-advanced"></a>
 
-Try each item before opening **Show answer**. Recognize a lexical kind vs productive **`x`**.
+Try each item before opening **Show answer**. Recognize a lexical compound vs productive **`x`**.
 
-**1.** *a friend* (lexical kind)
+**1.** *a friend* (lexical compound)
 
 ::: details Show answer
 `zeberelonogon.`
 :::
 
-**2.** *a textbook* (lexical kind)
+**2.** *a textbook* (lexical compound)
 
 ::: details Show answer
 `zabogolahalal.`
@@ -202,7 +202,7 @@ Try each item before opening **Show answer**. Recognize a lexical kind vs produc
 `zazawan zululon.`
 :::
 
-**4.** *a firehouse* (lexical kind)
+**4.** *a firehouse* (lexical compound)
 
 ::: details Show answer
 `zohohulurel.`

@@ -9,7 +9,7 @@ Once something is on the table, you point back with a **-r** form.
 
 A pronoun can point at **any prior word** (noun, verb, adjective, and so on). English often treats pronouns as stand-ins for people in subject position; Agalan **-r** can resume whatever you just mentioned.
 
-It takes the usual first letter for the slot you need **now** (that letter need not match the word you are pointing back to) and ends in **-r**. Call the word you point back to the **antecedent**.
+It takes the usual role letter for the slot you need **now** (that letter need not match the word you are pointing back to) and ends in **-r**. Call the word you point back to the **antecedent**.
 
 Two stem lengths:
 
@@ -31,7 +31,7 @@ Add **-sh** after **-r** for a **group** referent (anchor **and associates**): [
 ### Special pronouns
 <a id="special-pronouns"></a>
 
-Some pronouns name **roles in this utterance** (speech, writing, signing: any channel). They take the usual first letter for the slot they fill.
+Some pronouns name **roles in this utterance** (speech, writing, signing: any channel). They take the usual role letter for the slot they fill.
 
 ```
 `zugobon vezebel dedonen.`
@@ -49,7 +49,7 @@ gloss: `z-speaker` · `v-write` · `d-listener`
 | **Generic person** | **`enenu`** | 👤 *silhouette* → *a person* | **-n** | `zenenun` *someone* |
 | **Next clause** | **`adoro`** | 🚪 *doorway* → *what follows* | **-l** | `badorol` / `dadorol`: placeholder for the dependent that follows |
 
-Person roles default to **-n** (definite discourse roles). Soft **-m** hedges the role framing. **`adoro`** defaults to **-l** (exact forward slot); soft **-m** hedges the subordination edge.
+Person roles default to **-n** (definite specials). Soft **-m** hedges the role framing. **`adoro`** defaults to **-l** (exact forward slot); soft **-m** hedges the dependent edge.
 
 **Prefer names.** When a proper name is available, use **-n** and/or its **-r** resume, including for self-address, rather than **`ugobo`** / **`edone`**. See [proper name](reference-suffix.md#proper-name--n).
 

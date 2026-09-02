@@ -74,14 +74,14 @@ Puzzle, then key, then goal-net:
 | **solution** | **`agego`** | what unlocks it | 🔑 *key* |
 | **goal** | **`olala`** | net you aim at | 🥅 *goal* |
 
-The same roots stay ordinary content (`zuzebul` *a puzzle piece*; `vagegol` *to unlock`). The figurative jobs above are the ideation readings.
+The same roots stay ordinary content (`zuzebul` *a puzzle piece*; `vagegol` *to unlock`). The figurative jobs above are the numbered-alternative readings.
 
 **Recipe:** `zuzebul g#1` / `zagegol g#2` / `zolalal g#1`
 
 | Piece | Role |
 |-------|------|
 | **`uzebu` / `agego` / `olala`** | candidate kind (problem / solution / goal) |
-| free **`g#N`** | rank in **this** ideation series (*candidate N*) |
+| free **`g#N`** | rank in **this** numbered-alternative series (*candidate N*) |
 | soft **`g~#N`** | tentative ranking |
 
 Prefer at least **`g#1`**; often name a second candidate. Soft **-m** on the number when the order is tentative.
@@ -94,7 +94,7 @@ gloss: `z-grace-proper` · `z-solution` · `g-ordinal-2` · `v-tell`
 *Azawan names solution 2.*
 ```
 
-Bare *the problem* as the only ideation frame is grammatical and stylistically weak: numbering marks **multiple candidates**. Reframing the **same** situation is different wording of one frame, not a second digit. Discourse *point N:* is free **`x#N`** ([number as discourse](numbers.md#number-as-discourse-marker-by-marker)), a continue, not a problem noun. Digits are optional when these roots name a topic outside ideation (*the problem of free will*).
+Bare *the problem* as the only numbered-alternative frame is grammatical and stylistically weak: numbering marks **multiple candidates**. Reframing the **same** situation is different wording of one frame, not a second digit. Discourse *point N:* is free **`x#N`** ([number as discourse](numbers.md#number-as-discourse-marker-by-marker)), a continue, not a problem noun. Digits are optional when these roots name a topic outside numbered alternatives (*the problem of free will*).
 
 ### Sense-form overlays
 <a id="sense-form"></a>
@@ -106,7 +106,7 @@ Some published roots keep a **fixed special reading** under one part of speech. 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills on this Intermediate band. Try each item before opening **Show answer**. Compose emotion (one value + ACT + LOCUS), or number ideation candidates (`g#N`).
+Short drills on this Intermediate band. Try each item before opening **Show answer**. Compose emotion (one value + ACT + LOCUS), or number alternative candidates (`g#N`).
 
 **Roots used here:** `azawa` / `ululo` / `uhubu` · `olozo` *competence* · `onogo` *relatedness* · `ezebe` *dialogue* · `abawaza` *division* · `ebun` *draft* · `emome` *memo* · `ogega` HIGH · `ejelo` MED · `ozowo` LOW · `abobo` INTERNAL · `oruru` EXTERNAL · `agade` CIRCUM · `uzebu` *problem* · `agego` *solution* · `olala` *goal* · `ezehe` *tell*
 
@@ -199,9 +199,9 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 <a id="universality"></a>
 <a id="universality-mood"></a>
 
-English *always* / *every* / *never* / *everyone* smuggle **how exceptionless** the claim is. Keep **domain** (*who / when*) on the [universal fences](coordination.md#universals-domains-generics) (`zual` / `hual` / …). Put the **warrant** on closed `/h/` mood roots (optional `/w/` when scoped only to a preceding `/ɡ/`). Soft **-m** on the fence (`zuam` / `huam`) is open inventory, not a warrant.
+English *always* / *every* / *never* / *everyone* smuggle **how exceptionless** the claim is. Keep **domain** (*who / when*) on the [universal fences](coordination.md#universals-domains-generics) (`zual` / `hual` / …). Put the **universality mood** on closed `/h/` mood roots (optional `/w/` when scoped only to a preceding `/ɡ/`). Soft **-m** on the fence (`zuam` / `huam`) is open inventory, not universality.
 
-Universal claims are **weather reports**. Default climate is usual weather. Stronger warrants name a different sky story.
+Universal claims are **weather reports**. Default climate is usual weather. Stronger universality moods name a different sky story.
 
 | Mood | Root | Job | Mnemonic |
 |------|------|-----|----------|
@@ -211,7 +211,7 @@ Universal claims are **weather reports**. Default climate is usual weather. Stro
 | **NATURAL** | **`afafa`** | natural necessity (unsupported objects fall); stack ordinary [evidential](commentary.md#evidentiality) `/h/` | 🍎 *apple* → *natural* |
 | **RULE** | **`ebebe`** | holds inside a named frame; take `/b/` scope (`hebebel bahamal`) | ♟️ *board* → *rule-frame* |
 
-When a universal or habitual claim needs a warrant, use **COMMON** (`hewonol`) unless FORMAL, NATURAL, RULE, or UNCOUNTERED is the sky you mean. **`idido`** is definition or proof, not “socially preferred.” **`abulu`** is “nothing contrary came to mind”; **`zuam`** is “this list is open.” A trail of cases is evidential **`abawa`**; **`ewono`** is the usual-weather warrant. Exceptionlessness of nature is **`afafa`**.
+When a universal or habitual claim needs a universality mood, use **COMMON** (`hewonol`) unless FORMAL, NATURAL, RULE, or UNCOUNTERED is the sky you mean. **`idido`** is definition or proof, not “socially preferred.” **`abulu`** is “nothing contrary came to mind”; **`zuam`** is “this list is open.” A trail of cases is evidential **`abawa`**; **`ewono`** is the usual-weather universality. NATURAL is **`afafa`**.
 
 ```
 `zazawan hual vawalal hewonol.`
@@ -223,16 +223,16 @@ gloss: `z-grace-proper` · `h-habitual` · `v-walk` · `h-COMMON`
 
 Prefer floating `/h/`. **RULE** is complex `/h/` + `/b/` when you name the frame. These moods mark **how exceptionless** the claim is.
 
-**Compare with:** *who / when* uses [universal fences](coordination.md#universals-domains-generics) (`zual` / `hual` / `zuam`) and [restrictors](restrictors.md) (`hual`). Soft **-m** on the fence (`zuam` / `huam`) is open inventory, not a warrant.
+**Compare with:** *who / when* uses [universal fences](coordination.md#universals-domains-generics) (`zual` / `hual` / `zuam`) and [restrictors](restrictors.md) (`hual`). Soft **-m** on the fence (`zuam` / `huam`) is open inventory, not universality.
 
 | Agalan | Reading |
 |---------|---------|
-| `… hual … hewonol` | *always, usually* (default warrant) |
+| `… hual … hewonol` | *always, usually* (default universality) |
 | `… hual … habulul` | *always, as far as checked* |
 | `zual gezudal … hididol` | *every square, by definition* |
 | `… hual … hafafal` + evidential `/h/` | *always, by natural necessity* (how you know stacked separately, e.g. `habawam`) |
 | `… hual … hebebel bahamal` | *always, under chess* |
-| `zuam gagadal … hewonol` | soft domain *every cat that comes to mind* + usual warrant |
+| `zuam gagadal … hewonol` | soft domain *every cat that comes to mind* + usual universality |
 
 | English cue | Agalan |
 |-------------|---------|
@@ -245,7 +245,7 @@ Prefer floating `/h/`. **RULE** is complex `/h/` + `/b/` when you name the frame
 ### Translation practice
 <a id="translation-practice-advanced"></a>
 
-Short drills on this Advanced band. Try each item before opening **Show answer**. Pair a domain fence (`hual` / `zual` / `zuam`) with an exceptionlessness warrant.
+Short drills on this Advanced band. Try each item before opening **Show answer**. Pair a domain fence (`hual` / `zual` / `zuam`) with a universality mood.
 
 **Roots used here:** `azawa` / `ululo` / `uhubu` · `ewono` COMMON · `abulu` UNCOUNTERED · `idido` FORMAL · `afafa` NATURAL · `ebebe` RULE · `ahama` *chess* · `ezuda` *square* · `agada` *cat* · `odogo` *dog* · `abogo` *book* · `awala` *walk* · `uzunu` *sing* · `elebe` *sleep* · `aju` *sit* · `eje` *see* · `urunu` *run* · `abawa` evidential *pattern*
 

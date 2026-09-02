@@ -20,7 +20,7 @@ Two placements, same spellings:
 | **In-clause** | `A REV B` in the same role | *including* / *rather* / *instead* / *except* |
 | **Discourse** | `REV` at the front of this sentence | *additionally* / *in other words* / *instead* / *except* |
 
-The vowel is the [vowel-series](vowel-series.md) job map: **`a`** add, **`e`** order (soft rank), **`o`** one (swap), **`u`** undo.
+The vowel is the [vowel-series](vowel-series.md) jobs: **`a`** add, **`e`** order (soft rank), **`o`** one (swap), **`u`** undo.
 
 ### In-clause shape
 <a id="in-clause-shape"></a>

@@ -8,7 +8,7 @@ Optional **-sh** after the [reference suffix](reference-suffix.md) marks an **as
 ### Core sense
 <a id="associative"></a>
 
-Without **-sh**, the word picks **one** referent. With **-sh**, you name an **anchor plus a nearby associate set** (family, coworkers, unit, household, and so on). Who counts as an associate comes from the conversation and the situation.
+Without **-sh**, the word picks **one** referent. With **-sh**, you name an **anchor plus nearby associates** (family, coworkers, unit, household, and so on). Who counts as an associate comes from the conversation and the situation.
 
 **-sh** = **s**et with the anchor. *Azawan-sh* reads as *Azawan and associates*.
 
@@ -208,7 +208,7 @@ If the wrong reading would matter, mark it: co-agency with **`aha`** or a join; 
 <a id="verbs-v"></a>
 <a id="collective-doing"></a>
 
-On `/v/`, **-sh** marks **collective doing**: the event is **one shared act**. A plural subject alone leaves that open. Noun **-sh** grows **who** the subject is; verb **-sh** marks **how** the doing is structured. The same “one pile” idea appears as [collective ascription](#collective-ascription) on `/ɡ/`.
+On `/v/`, **-sh** marks **collective**: the event is **one shared act**. A plural subject alone leaves that open. Noun **-sh** grows **who** the subject is; verb **-sh** marks **how** the doing is structured. The same “one pile” idea appears as [collective](#collective-ascription) on `/ɡ/`.
 
 | Shape | Reading |
 |-------|---------|
@@ -224,14 +224,14 @@ On `/v/`, **-sh** marks **collective doing**: the event is **one shared act**. A
 | `zazawan vuzunulsh` | *Azawan sings jointly* (not a solo) |
 | `zahadan vawalalsh` | *the team walks as one unit* |
 
-Count (*three times*) and habit (*always*) stay clause framing: [numbers](numbers.md) under `/h/`, or **`hual`**. **-rsh** on `/v/` resumes a prior **collective** doing (*still as one shared act*).
+Count (*three times*) and habit (*always*) stay clause framing: [numbers](numbers.md) under `/h/`, or **`hual`**. **-rsh** on `/v/` resumes a prior **collective** verb (*still as one shared act*).
 
 ### Adjectives (`/ɡ/`) — collective
 <a id="adjectives-g"></a>
 <a id="collective"></a>
 <a id="collective-ascription"></a>
 
-On `/ɡ/`, **-sh** marks **collective ascription**: the property holds of the **host set as one unit**.
+On `/ɡ/`, **-sh** marks **collective**: the property holds of the **host set as one unit**.
 
 Adjective **-sh** = the set **shares** the property as one pile. It does not mean “more red.”
 
@@ -250,7 +250,7 @@ Most useful with a [phrase join](coordination.md): SHARED singular scale under *
 | `zulebolsh gudurum` | *the file-boxes are heavy* (members / plain) |
 | `zulebolsh gudurumsh` | *the file-boxes are heavy collectively* |
 
-**-rsh** on `/ɡ/` resumes a prior **collective** ascription (*still collectively so*).
+**-rsh** on `/ɡ/` resumes a prior **collective** adjective (*still collectively so*).
 
 **Related form:** entity plurality uses **-sh** on the noun.
 
@@ -264,7 +264,7 @@ Address a **group**: **-lsh** for kind-based group address (*hey, kids*); **-nsh
 
 ### Where **-sh** sits
 
-**-sh** marks group reference on **nouns** (`/z/` `/d/` `/b/`), **vocatives**, **person-role** specials (readings above), **collective doing** on `/v/`, and **collective ascription** on `/ɡ/` (SHARED scale / continuum adjectives stay singular). Habit is **`hual`**. Count is a [number](numbers.md) word (`zagadalsh g+3`). Plural material *inside* a non-opaque span marks **-sh** on those inner words.
+**-sh** marks group reference on **nouns** (`/z/` `/d/` `/b/`), **vocatives**, **person-role** specials (readings above), **collective** on `/v/`, and **collective** on `/ɡ/` (SHARED scale / continuum adjectives stay singular). Habit is **`hual`**. Count is a [number](numbers.md) word (`zagadalsh g+3`). Plural material *inside* a non-opaque span marks **-sh** on those inner words.
 
 Quantity `>1` is digitless **`g+`** (it may co-occur with noun **-lsh**). Generics / *every K* use [coordination](coordination.md#universals-domains-generics) (`zual gagadal`, habitual **`hual`**). Inclusive *we* / address set: [pronouns](pronouns.md#clusivity).
 

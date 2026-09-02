@@ -6,7 +6,7 @@ First-person *I think*, how you know a world-claim, and *as if* framing — clos
 ## Beginner
 <a id="beginner"></a>
 
-### Comment (mindfulness noting)
+### COMMENT
 <a id="comment"></a>
 <a id="mindfulness-noting"></a>
 
@@ -293,7 +293,7 @@ gloss: `z-courage-proper` · `h-NOTIONAL-return` · `v-write`
 *As if Ululon writes — and step back toward contact.*
 ```
 
-### COMMENT, warrant, and as-if
+### COMMENT, universality, and as-if
 
 | English bundle | Prefer |
 |----------------|--------|

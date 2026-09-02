@@ -15,7 +15,7 @@ How to say *A would work for B*, *B needs A*, and *if* / *because*.
 <a id="pole-habit"></a>
 <a id="why-split"></a>
 
-Put the **outcome** first (the host). Put what **would work** in the open-inclusive slot (`…aom`). Others may still count.
+Put the **outcome** first (the host). Put what **would work** in the open sufficient slot (`…aom`). Others may still count.
 
 The first vowel is series **`a`** (*add*): add that route, and the outcome can follow.
 
@@ -197,7 +197,7 @@ gloss: `z-grace` · `g-has-to-be`
 *It has to be Azawan.*
 ```
 
-### Clause poles (subordination)
+### Clause poles
 <a id="clause-poles"></a>
 
 When the condition or outcome is a **full sentence**, prefer a dependent clause after **`adoro`**:
@@ -206,7 +206,7 @@ When the condition or outcome is a **full sentence**, prefer a dependent clause 
 main sentence …  hadorom / hezazem / hurugum  badorol   [dependent sentence]
 ```
 
-**`adoro`** ([next-clause pronoun](pronouns.md#special-pronouns)) sits **last in the main sentence**. The dependent is a full sentence (give it its own act word only if the speech act differs). See [dependent clauses](core.md#dependent-clauses).
+**`adoro`** ([special pronoun](pronouns.md#special-pronouns)) sits **last in the main sentence**. The dependent is a full sentence (give it its own act word only if the speech act differs). See [dependent clauses](core.md#dependent-clauses).
 
 ### `IF` vs `IFF` vs `BECAUSE`
 <a id="if-vs-iff"></a>
@@ -249,23 +249,23 @@ gloss: `z-grace` · `v-walk` · `h-BECAUSE` · `b-next-clause` · `z-courage` ·
 
 Open sufficient vs necessary uses the same joins and restrictors (`hal`, …) you already have; pick the relation that matches the English job.
 
-### Cause (mechanism framing)
+### CAUSE
 <a id="cause"></a>
 <a id="cause-mood"></a>
 
-Mark a clause as **mechanism-framed** (*how the gears engage*) with one closed mood root.
+Mark a clause as **CAUSE-framed** (*how the gears engage*) with one closed mood root.
 
-**Shape:** floating **`/h/`** mood **`egega`** ⚙️ *gear* → *mechanism* (optional `/w/` when scoped only to a preceding `/ɡ/`). Prefer floating `/h/`. Ending = **-m** only (metaphorical): **`hegegam`**. Ordinary content still available (`zegegal` *a gear*; `vegegal` *to mesh / engage*).
+**Shape:** floating **`/h/`** mood **`egega`** ⚙️ *gear* → *CAUSE* (optional `/w/` when scoped only to a preceding `/ɡ/`). Prefer floating `/h/`. Ending = **-m** only (metaphorical): **`hegegam`**. Ordinary content still available (`zegegal` *a gear*; `vegegal` *to mesh / engage*).
 
 ```
 `haon beladel hegegam.`
 
 gloss: `h-open-to` · `b-effort` · `h-CAUSE`
 
-*Open to effort, as mechanism* (how the payoff gears turn)
+*Open to effort (CAUSE)* (how the payoff gears turn)
 ```
 
-Use **CAUSE** when the clause is doing **mechanism highlight**.
+Use **CAUSE** when the clause highlights how the gears engage.
 
 **Compare with:** *would work* / among routes uses open sufficient (`…aom` / `haon`).
 
@@ -291,7 +291,7 @@ Keep the strength of feeling on values force / evidentiality. Exclusive **`ol` /
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills on this Intermediate band. Try each item before opening **Show answer**. Mark **necessary** with exclusion / **`hal`**, unique path with **`gon` / `hon` / `…ol`**, clause poles with **`hadorom` / `hezazem` / `hurugum`**, and mechanism with **`hegegam`**. An ought sits on values **`xo`**.
+Short drills on this Intermediate band. Try each item before opening **Show answer**. Mark **necessary** with exclusion / **`hal`**, unique path with **`gon` / `hon` / `…ol`**, clause poles with **`hadorom` / `hezazem` / `hurugum`**, and **CAUSE** with **`hegegam`**. An ought sits on values **`xo`**.
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `azel` *effort* · `anunu` *rain* · `uludu` *cloud* · `abogo` *book* · `elade` *promotion* · `olozo` *competence* · `awala` *walk* · `uzunu` *sing* · `elebe` *sleep* · `adoro` *next clause* / *if* · `ezaze` *iff* · `urugu` *because* · `egega` CAUSE
 
@@ -460,26 +460,26 @@ English often uses *because* for **speaker grounds** (*I say P because Q* / *I t
 
 | English bundle | Prefer |
 |----------------|--------|
-| *P because Q* (Q grounds P in the world) | **`hurugum badorol`** (+ evidentiality / [**CAUSE**](#cause) when naming mechanism) |
+| *P because Q* (Q grounds P in the world) | **`hurugum badorol`** (+ evidentiality / [**CAUSE**](#cause) when naming CAUSE) |
 | *I think / say P because Q* (Q is my reason for the take) | [**COMMENT**](commentary.md#comment) on the main sentence (`hodohom`, …); add **`hurugum badorol`** only if Q is also asserted as world-foundation |
 | *P, since / given that Q* (Q already shared) | **`hurugum badorol`** (Q asserted); soft force / evidentiality if the warrant is tentative |
 | *P if Q* (Q not asserted) | **`hadorom badorol`** |
 
-### Stacks (evidentiality, mechanism, habit)
+### Stacks (evidentiality, CAUSE, habit)
 <a id="stacks"></a>
 
 | Stack | Role | Mnemonic |
 |-------|------|----------|
 | Evidentiality `/h/` | *how you know* the link ([evidentiality](commentary.md#evidentiality): **INFERRED** `uneve`, **PATTERN** `abawa`, …) | 🔍 the trail behind the claim |
-| **`CAUSE`** (`hegegam`) | *mechanism framing* ([CAUSE mood](#cause)) | ⚙️ the gears inside |
+| **`CAUSE`** (`hegegam`) | CAUSE mood ([CAUSE](#cause)) | ⚙️ the gears inside |
 | **`hual` / `huam`** | habitual / characterizing pattern ([restrictors](restrictors.md)) | 🔁 whenever, as a rule |
 | Universality | how exceptionless the claim is ([universality moods](special-vocabulary.md#universality)) | 🌐 no exceptions anywhere |
 | Values `xo` / `xe` | ought or motive ([above](#preference-vs-law)) | 🧭 the need it serves |
 | COMMENT | speaker-grounds / attitude ([epistemic *because*](#epistemic-because)) | 💭 what the speaker thinks |
 
-A particular episode (*this delay was caused by…*) and a standing pattern (*clouds for rain*) share the same necessary/sufficient shapes. Tense, **`hual`**, evidentiality, **`CAUSE`**, and universality warrant distinguish them.
+A particular episode (*this delay was caused by…*) and a standing pattern (*clouds for rain*) share the same necessary/sufficient shapes. Tense, **`hual`**, evidentiality, **`CAUSE`**, and [universality](special-vocabulary.md#universality) distinguish them.
 
-Show a causal “law” with evidentiality and universality. Mechanism highlight uses **`hegegam`**; exceptionlessness uses **`hafafal`**.
+Show a causal “law” with evidentiality and universality. **CAUSE** uses **`hegegam`**; NATURAL uses **`hafafal`**.
 
 ### English → Agalan
 <a id="english-cues"></a>
@@ -487,12 +487,12 @@ Show a causal “law” with evidentiality and universality. Mechanism highlight
 | English cue | Agalan |
 |-------------|---------|
 | *caused by* + how you know | condition shape (sufficient / necessary) + evidential `/h/` |
-| *caused by* + mechanism focus | condition shape + **`hegegam`** ([CAUSE](#cause)) |
+| *caused by* + CAUSE | condition shape + **`hegegam`** ([CAUSE](#cause)) |
 | *leads to* / *results in* (ordinary) | open sufficient (`…aom` / `haon`, …) |
 | *necessary for* / *without X, no Y* | `huan` / `guan` / `hal` |
 | *the only cause* / *has to be* | marked `gon` / `hon` / `…ol` |
 | *should* as universal causal law | sufficient shape + **`xo`** (name the need) |
-| *always* / *every* / *never* (exceptionlessness) | domain (`hual` / …) + [universality](special-vocabulary.md#universality) mood |
+| *always* / *every* / *never* (universality) | domain (`hual` / …) + [universality](special-vocabulary.md#universality) mood |
 | *because* / *if* + clause | **`hurugum badorol`** / **`hadorom badorol`** |
 | *if and only if* / *iff* | **`hezazem badorol`** |
 | *although* / *while* / *until* / *before* / *after* | same `/h/`+**`adoro`** shape ([core.md](core.md#dependent-clauses)) |
