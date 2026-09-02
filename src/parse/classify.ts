@@ -166,6 +166,7 @@ function bareNeedTopic(word: MorphWord, tables: ClassifyTables): boolean {
 /**
  * Open roots that belong in the published / compound / overlay inventories.
  * Closed families (joins, spans, numbers, foreign payloads) contribute none.
+ * Vowel-only ordinary compounds are series letters, not lexicon hosts.
  */
 export function lexiconContentRoots(word: MorphWord): string[] {
   const { family } = word;
@@ -180,7 +181,12 @@ export function lexiconContentRoots(word: MorphWord): string[] {
         return family.rightRoots;
       }
       if (family.xFamily === "compound") {
-        return [...family.leftRoots, ...(family.rightRoots ?? [])];
+        const hosts = [...family.leftRoots, ...(family.rightRoots ?? [])];
+        // Vowel-only ordinary compounds (`xuxun`) are series letters, not lemmas.
+        if (hosts.every((root) => root.length === 1)) {
+          return [];
+        }
+        return hosts;
       }
       return family.leftRoots;
     default:
@@ -200,12 +206,12 @@ export function knownLexiconRoots(tables: ClassifyTables): Set<string> {
   return known;
 }
 
-/** Content hosts of length ≥ 3 missing from `known`. */
+/** Content hosts missing from `known`. */
 export function unknownLexiconContentRoots(
   word: MorphWord,
   known: ReadonlySet<string>,
 ): string[] {
-  return lexiconContentRoots(word).filter((root) => root.length >= 3 && !known.has(root));
+  return lexiconContentRoots(word).filter((root) => !known.has(root));
 }
 
 function publishedGlossForRoots(

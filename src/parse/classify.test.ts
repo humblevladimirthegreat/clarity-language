@@ -148,6 +148,7 @@ describe("lexiconContentRoots", () => {
     assert.deepEqual(lexiconContentRoots(parseWord("g+3")), []);
     assert.deepEqual(lexiconContentRoots(parseWord("d<sushi>")), []);
     assert.deepEqual(lexiconContentRoots(parseWord("jal")), []);
+    assert.deepEqual(lexiconContentRoots(parseWord("xuxun")), []);
     assert.equal(unknownLexiconContentRoots(parseWord("zazawan"), knownLexiconRoots(tables)).length, 0);
   });
 });

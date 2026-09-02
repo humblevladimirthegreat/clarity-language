@@ -83,6 +83,7 @@ describe("lintAgalanToken", () => {
     assert.equal(lintAgalanToken("d[hi]", tables), null);
     assert.equal(lintAgalanToken("daxal", tables), null);
     assert.equal(lintAgalanToken("xuxul", tables), null);
+    assert.equal(lintAgalanToken("xuxun", tables), null);
     assert.equal(lintAgalanToken("hegera", tables), null);
   });
 
