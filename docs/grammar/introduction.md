@@ -67,3 +67,5 @@ I would like to thank ClearerThinking.org and their book The 12 Levers for being
 I would also like to thank the Conlangs community on Reddit for their wealth of resources, ideas, and support for conlangers everywhere.
 
 I also thank all the beta testers and reviewers for your feedback and questions.
+
+Speak uses KittenTTS (KittenML) in the browser via ONNX Runtime Web, with token mapping and voice-file loading adapted from kitten-tts-js. The grammar site is built with VitePress; parsing uses Chevrotain and Peggy.
