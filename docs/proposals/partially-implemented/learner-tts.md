@@ -246,7 +246,7 @@ Expect the WASM voice pack to dwarf the TS glue; keep it out of the critical ren
 
 ## Phased delivery
 
-1. **Phoneme core** — native words only (already speech-shaped strings) + WASM play. **v1 surface:** [Gloss overlay](../../grammar/gloss.md) (**Speak Agalan** / **Speak word**).  
+1. **Phoneme core** — native words only (already speech-shaped strings) + WASM play. **v1 surface:** [Inspect](../../grammar/inspect.md) (**Speak Agalan** / **Speak word**).  
 2. **Normalizer** — numbers + spans + period/`?`/`!` pauses.  
 3. **Framing cues** — `/j/` vs `/x/`, soft **-m**, islands. **Done** (boundary tags + eSpeak mapping).  
 4. **Loan islands** — `speechSynthesis` (or skip) for `<>` payloads.  

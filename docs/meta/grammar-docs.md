@@ -260,7 +260,7 @@ Do **not** require a **Not this** column on every table, or a counter-example on
 - Never link to or mention `meta/`, `examples/`, `proposals/`, `data/`, or repo-root files from a grammar page.
 - One canonical anchor per concept (`<a id="…">`); keep ids stable.
 - Do not dump the whole related-inventory into the lead paragraph.
-- **IPA and pronunciation** belong in [phonology.md](../grammar/phonology.md) (letter table, teaching cues) and on the [Gloss overlay](../grammar/gloss.md) tool (**Show IPA** transcribes the same spoken forms). Other grammar pages use orthographic letters (`j`, `x`, `/j/`, `/x/`) — never IPA transcriptions or sound cues in running examples. If a learner needs how a letter sounds, link once to phonology (peer in `grammar/`).
+- **IPA and pronunciation** belong in [phonology.md](../grammar/phonology.md) (letter table, teaching cues) and on the [Inspect](../grammar/inspect.md) tool (**Show IPA** transcribes the same spoken forms). Other grammar pages use orthographic letters (`j`, `x`, `/j/`, `/x/`) — never IPA transcriptions or sound cues in running examples. If a learner needs how a letter sounds, link once to phonology (peer in `grammar/`).
 
 ### Teach now; don’t preview later
 <a id="teach-now-dont-preview-later"></a>
@@ -288,7 +288,7 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 | Doc prose / example style | This page |
 | Goals / feature criteria | [why-agelan.md](../grammar/why-agelan.md) (psych); [introduction.md](../grammar/introduction.md) (grammar design) |
 | Core sentence grammar | [core.md](../grammar/core.md) |
-| IPA / pronunciation / phonotactics | [phonology.md](../grammar/phonology.md) (letter table); [gloss.md](../grammar/gloss.md) (**Show IPA** on spoken forms). Not in other grammar-page examples |
+| IPA / pronunciation / phonotactics | [phonology.md](../grammar/phonology.md) (letter table); [inspect.md](../grammar/inspect.md) (**Show IPA** on spoken forms). Not in other grammar-page examples |
 | Unassigned / unused-slot inventory | [unassigned-reserved.md](unassigned-reserved.md) — **never** a grammar-page row, drill, or “reserved” gloss |
 | Parser / CLI / site implementation notes | Code and `docs/meta/` — not titles, leads, or “house rules” on grammar pages |
 | Rejected or speculative features | [TODO.md](../../TODO.md) |

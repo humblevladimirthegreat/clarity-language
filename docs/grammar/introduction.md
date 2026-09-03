@@ -40,6 +40,14 @@ Pronouns copy a short start of an earlier word’s root (through the second vowe
 
 Each dictionary sense is one entry. Related senses across fields use an explicit compound: kind first, then the topic after mid-word **`x`** (`golovexagal` *love in the crush sense*).
 
+### Tools those goals make possible
+<a id="tools"></a>
+
+Role letters, closed endings, and spelling that tracks sound mean a program does not have to guess word class, vague reference, or pronunciation. These tools follow the written grammar; they do not define it. Speakers still get free order and a singable shape.
+
+- **[Inspect](inspect.md)** — paste a sentence and click or highlight a word to see its job, root sense, and how the clause hangs together.
+- **Text-to-speech** — on that same page, **Speak Agalan** plays the text. Letter-to-sound spelling plus a small syllable inventory make speech a mapping, not a guess. **Show IPA** transcribes the same spoken forms.
+
 ## How to learn from these docs
 <a id="how-to-learn"></a>
 
@@ -47,7 +55,7 @@ Grammar pages use **Beginner** / **Intermediate** / **Advanced** sections so you
 
 Follow the **Suggested reading order** in the site sidebar (same sequence on every page). Read each page’s Beginner section in that order, then every peer’s Intermediate, then Advanced.
 
-The sidebar **Tools** list includes [Terminology](terminology.md) for the English names these pages use for grammar (with a short gloss and a link to the teaching section), plus Lexicon and Gloss for roots and interlinear.
+The sidebar **Tools** list includes [Terminology](terminology.md) for the English names these pages use for grammar (with a short gloss and a link to the teaching section), plus Lexicon and [Inspect](inspect.md) for roots and interlinear.
 
 Continue with [core.md](core.md#beginner) for clause shape.
 

@@ -66,7 +66,7 @@ export default defineConfig({
       { text: 'Introduction', link: '/introduction' },
       { text: 'Core', link: '/core' },
       { text: 'Lexicon', link: '/lexicon' },
-      { text: 'Gloss', link: '/gloss' },
+      { text: 'Inspect', link: '/inspect' },
       { text: 'Terminology', link: '/terminology' },
     ],
     sidebar: [
@@ -78,7 +78,7 @@ export default defineConfig({
         text: 'Tools',
         items: [
           { text: 'Lexicon', link: '/lexicon' },
-          { text: 'Gloss', link: '/gloss' },
+          { text: 'Inspect', link: '/inspect' },
           { text: 'Terminology', link: '/terminology' },
         ],
       },
