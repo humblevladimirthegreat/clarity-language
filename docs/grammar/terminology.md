@@ -633,7 +633,7 @@ Utterance setting: statement / question / command / prohibition.
 
 ### Sufficient / necessary / unique path
 
-Causation jobs (not a fourth umbrella name).
+Necessary, sufficient, and unique-path readings.
 
 [Causation](causation.md)
 

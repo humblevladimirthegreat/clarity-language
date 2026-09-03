@@ -33,8 +33,35 @@ Write as if this is the only version of Agalan the reader will ever see. There i
 | Use the current term and the **current published spelling** | Keep a superseded root, hyphenated PoS, or dual spelling |
 | Use the current term once, clearly | Add “formerly…” redirects in the prose |
 | Fix outdated prose in place | Leave “correction trails,” changelogs, or former-name parentheticals |
+| State the current pattern only | Deny a withdrawn shape (“not a matching word on the left,” “not a mid-chain `A zam B`,” “not a sixth marker”) |
+| One current heading and one current `#id` | Keep an old heading as a silent `<a id="left-fence">` (or any retired slug) so old links still resolve |
 
-The learner should never need the editing history of the docs or of the lexicon. Silent HTML fragment aliases (old `#…` still resolving) are invisible to readers; they are not a second name on the page.
+The learner should never need the editing history of the docs or of the lexicon.
+
+### One current heading, one current id
+<a id="one-current-heading"></a>
+
+When you rename a section, **change the heading and the id to the current name**, then retarget every in-repo link. Do **not** keep the old heading text, and do **not** leave a silent `<a id="old-slug">` so former URLs still work. There is no fragment-compatibility duty.
+
+| Do | Don’t |
+|----|--------|
+| `### Right-close fence` plus `#right-close` (or the heading’s current slug) | Extra `<a id="left-fence">` under that heading |
+| Fix `coordination.md#left-fence` (and editor notes) to the live id | Stack retired slugs “in case something still points here” |
+
+**Test:** an unused `<a id="…">` whose name is a former heading is leftover. Delete it. One canonical id per concept, matching the **current** ordinary name (`speech-act`).
+
+### Omit denials of former constructions
+<a id="omit-former-construction-denials"></a>
+
+If a pairing, slot, or word order existed only in an earlier draft of the docs or the language, **omit any sentence whose job is to say it is gone**. A new learner never saw that version. Naming the absence teaches the old system.
+
+| Smell | Why it fails | Prefer |
+|-------|--------------|--------|
+| “on the right, not a matching word on the left”; “English *both A and B* still uses this one closer” | Only makes sense if they knew left fencing | Items, then the join (`A B zam`) |
+| “not a mid-chain extender”; warning `A zam B` / `A vol B val C` | Only if they knew infix joins | The legal nest: `A B vol C val` |
+| “still X; it is not a sixth marker / fourth umbrella / new vowel job” | Corrects a withdrawn proposal | Date is digit-string `_` + `oe`; **-n** names a titled frame |
+
+**Test:** would a reader who never saw a previous version invent that wrong shape from *this page* and from English? If the only reason to mention the hole is an old doc, delete the sentence. Keep a [Compare with](#compare-with) beat only when the live sibling (or an English false friend they would type *now*) is the mix-up.
 
 ## No process or corrective leftover
 
@@ -54,6 +81,7 @@ Headings, leads, and asides must make sense to someone who never saw an earlier 
 | “Defined core” vs leftover cells; “or reserved” | Advertises unused inventory | Teach the forms that have readings; leave holes off the page |
 | “**…0e0** is not used” as a taught row | Unused-slot dump on a public page | Assigned close / number only; holes stay in [unassigned-reserved.md](unassigned-reserved.md) |
 | “X **stays on** Y” / “the job stays on that page / those joins” | Editor reminder that a reading was not moved; sounds like process, not teaching | [Which tool, not which owner](#which-tool-not-which-owner) |
+| “not a matching word on the left” / “not a mid-chain…” / “not a sixth marker” | Corrects a retired design; the learner never met it | [Omit denials of former constructions](#omit-former-construction-denials) |
 
 **Test:** if you delete the phrase and a new learner loses no meaning, delete it. If the only audience for a sentence is a future editor, move it to [unassigned-reserved.md](unassigned-reserved.md), `TODO.md`, a PR, or this meta page — not the grammar body.
 
@@ -98,6 +126,7 @@ Default to stating only the allowed form. A contrastive negative spends the lear
 | Smell | Verdict |
 |-------|---------|
 | Boilerplate disclaimers: “X is a **root choice**, not `xa`/`xu` polarity”, “plural **-sh** stays unused on `/h/` `/w/`”, “there is no dedicated root”, “not a fourth vowel/role/join”, “**Not won’t:** …” | Delete. State what the form does instead |
+| Denials of a retired pairing or order: “not a matching word on the left”, “not a mid-chain extender”, “not a sixth marker identity” | Delete. The learner never saw that version — [omit denials of former constructions](#omit-former-construction-denials) |
 | **Trap tables** (“Not this (real traps)”, “Traps worth one look”, “Keep these for other jobs”) and **related-form Form · Job** catalogs | Delete from body. If the learner would use the wrong form *now*, one [Compare with](#compare-with) starter plus an example of each — not a table of every peer |
 | Inline **`Trap:`** / **“Trap:”** / *Near miss:* | Punitive or editor hygiene. Use one of the four [starters](#compare-with) |
 | “Do not confuse X with Y” / “Not to be confused with…” | Quiz warning; does not teach the job split. Use **Compare with:** / **For *X*, use:** / **Related form:** / **Not the same job as:** |
@@ -187,7 +216,7 @@ Do **not** assume the reader knows linguistics jargon. Write for a motivated lea
 
 **Test:** would a careful reader who never took a linguistics class still get the rule from the first paragraph and the example? If not, rewrite the lead in plain words and demote the technical term to a parenthetical or a later Intermediate note.
 
-Section ids should match the **current** ordinary name (`speech-act`). One canonical id per concept; do not keep silent aliases.
+Section ids: [one current heading, one current id](#one-current-heading).
 
 ## Examples
 
@@ -258,7 +287,7 @@ Do **not** require a **Not this** column on every table, or a counter-example on
 
 - Own your subsystem; link out for PoS, endings, joins, numbers, and so on — **only to other files in `docs/grammar/`**.
 - Never link to or mention `meta/`, `examples/`, `proposals/`, `data/`, or repo-root files from a grammar page.
-- One canonical anchor per concept (`<a id="…">`); keep ids stable.
+- One canonical anchor per concept (`<a id="…">`), matching the current heading. When a heading changes, retarget links; do not keep the old id — [one current heading, one current id](#one-current-heading).
 - Do not dump the whole related-inventory into the lead paragraph.
 - **IPA and pronunciation** belong in [phonology.md](../grammar/phonology.md) (letter table, teaching cues) and on the [Inspect](../grammar/inspect.md) tool (**Show IPA** transcribes the same spoken forms). Other grammar pages use orthographic letters (`j`, `x`, `/j/`, `/x/`) — never IPA transcriptions or sound cues in running examples. If a learner needs how a letter sounds, link once to phonology (peer in `grammar/`).
 

@@ -25,7 +25,6 @@ Join words are the **only** place **-n** does not mean a [name](reference-suffix
 <a id="ap-level-coordination"></a>
 <a id="vp-level-coordination"></a>
 <a id="clause-level-coordination"></a>
-<a id="left-fence"></a>
 <a id="right-close"></a>
 
 Put every item **before** the join. Put **SHARED** scale / continuum material **immediately after** the join. Place items next to each other with no extra word between them.
@@ -59,8 +58,6 @@ gloss: `z-grace@` · `z-courage@` · `z-and.open`
 
 *Azawan and Ululon.*
 ```
-
-English *both A and B* still uses this one closer on the right (`A B zam`), not a matching word on the left.
 
 ### Set joins and rank joins
 
@@ -233,7 +230,7 @@ gloss: `z-tea` · `z-coffee` · `z-something`
 *some one among tea and coffee.*
 ```
 
-`A B zar` is one right-close fence covering A and B. It is not a mid-chain extender of the shape `A zam B`.
+`A B zar` is one right-close fence covering A and B.
 
 ### Phrase prefixes (quick map)
 
@@ -580,7 +577,6 @@ gloss: `z-dog` · `z-cat` · `z-and.open` · `g-ownership` · `b-grace@`
 
 ### Fence nesting
 <a id="fence-nesting"></a>
-<a id="opener-r-coordination"></a>
 
 Flat coordination uses **one** right-close fence. **Nested** joins stack multiple right closes from the left: the first join closes the earlier items, then that bundle plus the next item takes the next join.
 
@@ -589,7 +585,7 @@ Flat coordination uses **one** right-close fence. **Nested** joins stack multipl
 | flat | `A B C vol` | *A or B or C* |
 | nested | `A B vol C val` | *(A or B) and C* |
 
-Keep every join on the right of its items (`A vol B val C` would put a join in the middle of a chain). Scope islands may wrap an inner join: `A ^ B C val ^ vol` → *A or (B and C)*.
+Each join sits after the items it closes. Scope islands may wrap an inner join: `A ^ B C val ^ vol` → *A or (B and C)*.
 
 Same rule at phrase, verb-phrase, and clause level.
 

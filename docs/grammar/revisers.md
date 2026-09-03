@@ -456,7 +456,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 ### Named frames and stock swaps
 
-**-n** revisers mark a **titled or conventional** frame, not a new vowel job.
+**-n** revisers mark a **titled or conventional** frame.
 
 ```
 `zaredelsh an zelulul.`

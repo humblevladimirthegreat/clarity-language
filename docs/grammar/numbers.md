@@ -241,7 +241,7 @@ Digit-strings (`ro`…) usually take the argument role the clause needs (often `
 
 One word, one identity. In [preferred writing](#writing-preferred-shorthand), the marker is **`+`** / **`-`** / **`#`** / **`#-`** / **`_`**. Write end-relative as **`#-`** after PoS (or after an ending mark): `g#-2`. Writing the minus *before* the hash (`g-` then `#2`) would look like scalar **`-`** then ordinal.
 
-Date writing is still digit-string **`_`**, with calendar-ordinal vowel **`oe`** (spoken **`roe`**, written `_#…`): `h_#22,7,2026` *on 22 July 2026*. Clock time stays **`ro`** / `h_15,30`. See [Time](numbers-applied.md#time). It is not a sixth marker identity.
+Date writing uses digit-string **`_`** with calendar-ordinal vowel **`oe`** (spoken **`roe`**, written `_#…`): `h_#22,7,2026` *on 22 July 2026*. Clock time uses **`ro`** / `h_15,30`. See [Time](numbers-applied.md#time).
 
 #### Sign
 <a id="sign"></a>
