@@ -16,18 +16,21 @@ describe("normalizeIpaForKitten", () => {
   });
 
   it("keeps Agalan inventory phones", () => {
-    assert.equal(normalizeIpaForKitten("zɑzɑwɑn"), "zɑzɑwɑn");
+    assert.equal(normalizeIpaForKitten("zɑːzɑːwɑn"), "zɑːzɑːwɑn");
     assert.equal(normalizeIpaForKitten("ʌɦɡɹʒʃ"), "ʌɦɡɹʒʃ");
   });
 
   it("keeps citation dots and Kitten stress at hiatus", () => {
     const word = toPhonemeWord("zazawan");
     assert.equal(word.ipa, "zɑ.zɑ.wɑn");
-    assert.equal(wordIpaPhones(word), "zɑzɑwɑn");
+    assert.equal(wordIpaPhones(word), "zɑːzɑːwɑn");
     const juon = toPhonemeWord("juon");
     assert.equal(juon.ipa, "jʌ.on");
-    assert.equal(wordIpaPhones(juon), "jʌˈon");
+    assert.equal(wordIpaPhones(juon), "jʌːˈon");
     assert.equal(normalizeIpaForKitten("jʌˈon"), "jʌˈon");
+    assert.equal(wordIpaPhones(toPhonemeWord("gomonum")), "ɡoːmoːnʌm");
+    assert.equal(wordIpaPhones(toPhonemeWord("guzumum")), "ɡʌːzʌːmʌm");
+    assert.equal(wordIpaPhones(toPhonemeWord("jal")), "jɑl");
   });
 });
 
@@ -44,6 +47,7 @@ describe("ipaToKittenIds", () => {
     const ids = ipaToKittenIds(wordIpaPhones(word));
     assert.ok(ids.includes(textToKittenIds("z")[0]!));
     assert.ok(ids.includes(textToKittenIds("ɑ")[0]!));
+    assert.ok(ids.includes(textToKittenIds("ː")[0]!));
     assert.ok(!ids.includes(textToKittenIds(".")[0]!));
   });
 

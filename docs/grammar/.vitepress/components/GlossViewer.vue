@@ -109,9 +109,8 @@ onBeforeUnmount(() => {
       join, span fence, or <code>^</code> to inspect the construction. Pin or press Enter for the
       full breakdown beside the stream. Copy uses the romanized surface form (not English). Arrow
       keys walk words; <kbd>g</kbd> opens Why; <kbd>s</kbd> speaks the selection; <kbd>Esc</kbd>
-      closes the card. Speak Agalan expands number shorthand and span brackets; Show IPA
-      transcribes the spoken forms (not the writing shorthand). Foreign
-      <code>&lt;&gt;</code> interiors and compact loans are still skipped.
+      closes the card. Speak Agalan expands number shorthand and span brackets. Foreign
+      <code>&lt;&gt;</code> interiors and compact loans are skipped.
     </p>
     <p v-if="status === 'error'" class="warn">Could not load lexicon. {{ errorMessage }}</p>
     <p v-else-if="deferredParseError" class="warn" role="status">{{ deferredParseError }}</p>

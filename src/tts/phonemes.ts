@@ -53,21 +53,36 @@ export function isNativeSurface(raw: string): boolean {
   return NATIVE_WORD.test(raw);
 }
 
+/** Lengthen this syllable's nucleus (`ː` after the vowel). */
+function kittenLengthNucleus(syl: Syllable, ipa: string): string {
+  const vowel = syl.phones.find((p) => p.vowel);
+  if (!vowel) return ipa;
+  const at = ipa.indexOf(vowel.ipa);
+  if (at === -1) return ipa;
+  const end = at + vowel.ipa.length;
+  if (ipa.startsWith("ː", end)) return ipa;
+  return `${ipa.slice(0, end)}ː${ipa.slice(end)}`;
+}
+
 /**
  * Concatenate syllable IPA for Kitten (no dots).
  * Hiatus (vowel–vowel) gets primary stress on the second nucleus so the model
  * does not diphthongize (unless that syllable is already stressed).
+ * Non-final vowels get `ː` so Kitten does not reduce them.
  */
 export function wordIpaPhones(word: PhonemeWord): string {
   let out = "";
   let prevEndedVowel = false;
-  for (const syl of word.syllables) {
+  const last = word.syllables.length - 1;
+  for (let i = 0; i < word.syllables.length; i++) {
+    const syl = word.syllables[i]!;
     const first = syl.phones[0];
-    if (prevEndedVowel && first?.vowel && !syl.ipa.startsWith("ˈ")) {
-      out += `ˈ${syl.ipa}`;
-    } else {
-      out += syl.ipa;
+    let piece = syl.ipa;
+    if (prevEndedVowel && first?.vowel && !piece.startsWith("ˈ")) {
+      piece = `ˈ${piece}`;
     }
+    if (i !== last) piece = kittenLengthNucleus(syl, piece);
+    out += piece;
     prevEndedVowel = syl.phones.at(-1)?.vowel ?? false;
   }
   return out;

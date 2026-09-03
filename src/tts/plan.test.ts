@@ -125,17 +125,17 @@ describe("previewPhonemes", () => {
       plan.words.map((w) => w.ipa),
       ["zɑ.zɑ.wɑn", "ɡʌ.zʌ.mʌm"],
     );
-    assert.equal(plan.ipaPhonemes, "zɑzɑwɑn ɡʌzʌmʌm.");
+    assert.equal(plan.ipaPhonemes, "zɑːzɑːwɑn ɡʌːzʌːmʌm.");
   });
 
   it("builds Kitten ids with word-spaced IPA phones", () => {
     const plan = previewPhonemes("zazawan vawalal.");
-    assert.equal(plan.ipaPhonemes, "zɑzɑwɑn vɑwɑlɑl.");
+    assert.equal(plan.ipaPhonemes, "zɑːzɑːwɑn vɑːwɑːlɑl.");
     assert.equal(plan.inputIds[0], 0);
     assert.equal(plan.inputIds.at(-2), KITTEN_END_MARKER_ID);
     assert.equal(plan.inputIds.at(-1), 0);
     const juon = previewPhonemes("juon");
-    assert.equal(juon.ipaPhonemes, "jʌˈon");
+    assert.equal(juon.ipaPhonemes, "jʌːˈon");
   });
 
   it("includes punctuation cue between phoneme spans", () => {
@@ -150,7 +150,7 @@ describe("previewPhonemes", () => {
 
   it("keeps word spaces inside islands without comma between words", () => {
     const plan = previewPhonemes("^ zazawan vawalal ^");
-    assert.match(plan.ipaPhonemes, /zɑzɑwɑn vɑwɑlɑl/);
+    assert.match(plan.ipaPhonemes, /zɑːzɑːwɑn vɑːwɑːlɑl/);
     assert.doesNotMatch(plan.ipaPhonemes, /wɑn, vɑ/);
   });
 });
