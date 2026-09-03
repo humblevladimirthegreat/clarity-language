@@ -13,7 +13,15 @@ const { tables, status, errorMessage } = useClassifyTables()
 
 const result = computed<InspectResult>(() => {
   if (!tables.value) return { tokens: [], constructions: [] }
-  return inspectText(props.text, tables.value)
+  try {
+    return inspectText(props.text, tables.value)
+  } catch (err) {
+    return {
+      tokens: [],
+      constructions: [],
+      sentenceWarning: err instanceof Error ? err.message : String(err),
+    }
+  }
 })
 </script>
 

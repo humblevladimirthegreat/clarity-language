@@ -117,8 +117,18 @@ function speechSegmentsFromText(text: string): SpeechSegment[] {
   function flushWords(): void {
     if (wordBatch.length === 0) return;
     const joined = wordBatch.join(" ");
-    const parsed = peggyParse(joined, { startRule: "words" }) as MorphWord[];
-    for (const word of parsed) out.push({ kind: "word", word });
+    try {
+      const parsed = peggyParse(joined, { startRule: "words" }) as MorphWord[];
+      for (const word of parsed) out.push({ kind: "word", word });
+    } catch {
+      for (const text of wordBatch) {
+        try {
+          out.push({ kind: "word", word: parseWord(text) });
+        } catch {
+          out.push({ kind: "error", raw: text });
+        }
+      }
+    }
     wordBatch = [];
   }
 

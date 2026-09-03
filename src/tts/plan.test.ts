@@ -109,6 +109,13 @@ describe("previewSpeech", () => {
     const plan = previewSpeech("zazawan vawalal. al zululon vawalal.");
     assert.equal(plan.tokens.some((t) => t.kind === "boundary" && t.tag === "jTurn"), false);
   });
+
+  it("skips unparsed tokens instead of throwing", () => {
+    const plan = previewSpeech("zazawan zl.");
+    assert.deepEqual(plan.spoken, ["zazawan"]);
+    assert.ok(plan.skipped.some((s) => s.raw === "zl" && s.reason === "error"));
+    assert.doesNotThrow(() => previewPhonemes("zl"));
+  });
 });
 
 describe("previewPhonemes", () => {

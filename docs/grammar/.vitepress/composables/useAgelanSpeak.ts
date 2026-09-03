@@ -20,12 +20,20 @@ async function waitForPaint(): Promise<void> {
 export function useAgelanSpeak() {
   function lineFor(text: string): string {
     if (!text.trim()) return ''
-    return previewLine(previewPhonemes(text))
+    try {
+      return previewLine(previewPhonemes(text))
+    } catch {
+      return ''
+    }
   }
 
   function ipaFor(text: string): string {
     if (!text.trim()) return ''
-    return ipaLine(previewPhonemes(text))
+    try {
+      return ipaLine(previewPhonemes(text))
+    } catch {
+      return ''
+    }
   }
 
   async function speakText(text: string): Promise<void> {

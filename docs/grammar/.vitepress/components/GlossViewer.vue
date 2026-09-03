@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onMounted, ref } from 'vue'
+import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { inspectText, type InspectResult } from '@parse-browser'
 import { useClassifyTables } from '../composables/useClassifyTables'
 import { useAgelanSpeak } from '../composables/useAgelanSpeak'
@@ -8,6 +8,7 @@ import GlossOverlay from './GlossOverlay.vue'
 import SpeakButton from './SpeakButton.vue'
 
 const SAMPLE = 'zazawan vawalal.'
+const ERROR_IDLE_MS = 1000
 
 const text = ref(SAMPLE)
 
@@ -15,19 +16,55 @@ const { tables, status, errorMessage } = useClassifyTables()
 const { error: speakError, lineFor, ipaFor } = useAgelanSpeak()
 
 const showIpa = ref(false)
+const deferredParseError = ref('')
+let parseErrorTimer = 0
+
+function emptyResult(): InspectResult {
+  return { tokens: [], constructions: [] }
+}
 
 const result = computed<InspectResult>(() => {
-  if (!tables.value) return { tokens: [], constructions: [] }
-  return inspectText(text.value, tables.value)
+  if (!tables.value) return emptyResult()
+  try {
+    return inspectText(text.value, tables.value)
+  } catch (err) {
+    return {
+      ...emptyResult(),
+      sentenceWarning: err instanceof Error ? err.message : String(err),
+    }
+  }
 })
 
 const spokenPreview = computed(() => lineFor(text.value))
 const ipaPreview = computed(() => ipaFor(text.value))
 
+function currentParseError(): string {
+  const warning = result.value.sentenceWarning
+  if (warning) return `Sentence parse: ${warning}`
+  const failed = result.value.tokens.find((token) => token.kind === 'error')
+  if (failed && failed.kind === 'error') return failed.error.message
+  return ''
+}
+
+function scheduleParseError() {
+  window.clearTimeout(parseErrorTimer)
+  deferredParseError.value = ''
+  parseErrorTimer = window.setTimeout(() => {
+    deferredParseError.value = currentParseError()
+  }, ERROR_IDLE_MS)
+}
+
+watch([text, result], scheduleParseError)
+
 onMounted(() => {
+  scheduleParseError()
   void warmupSpeak().catch(() => {
     /* prefetch failure surfaces on Speak click */
   })
+})
+
+onBeforeUnmount(() => {
+  window.clearTimeout(parseErrorTimer)
 })
 </script>
 
@@ -77,9 +114,7 @@ onMounted(() => {
       <code>&lt;&gt;</code> interiors and compact loans are still skipped.
     </p>
     <p v-if="status === 'error'" class="warn">Could not load lexicon. {{ errorMessage }}</p>
-    <p v-else-if="result.sentenceWarning" class="warn">
-      Sentence parse: {{ result.sentenceWarning }}
-    </p>
+    <p v-else-if="deferredParseError" class="warn" role="status">{{ deferredParseError }}</p>
     <GlossOverlay v-if="status === 'ready'" :result="result" />
   </div>
 </template>
