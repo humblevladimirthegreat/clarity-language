@@ -117,7 +117,7 @@ describe("previewPhonemes", () => {
       plan.words.map((w) => w.ipa),
       ["zɑ.zɑ.wɑn", "ɡʌ.zʌ.mʌm"],
     );
-    assert.equal(plan.engineText, "zah zah wahn, guh zuh muhm.");
+    assert.equal(plan.engineText, "zah zah wahn guh zuh muhm.");
   });
 
   it("keeps one engine token per syllable without caps, colons, or brackets", () => {

@@ -113,12 +113,15 @@ function playSamples(data: Float32Array): Promise<void> {
   })
 }
 
-function synthesize(engine: ESpeakNGHandle, phonemeText: string, rate: number): Promise<Float32Array> {
+/** eSpeak rate 80–450 (engine default 175). */
+const ESPEAK_RATE = 160
+
+function synthesize(engine: ESpeakNGHandle, phonemeText: string): Promise<Float32Array> {
   return new Promise((resolve, reject) => {
     const chunks: Float32Array[] = []
     let settled = false
     engine.set_voice('en')
-    engine.set_rate(rate)
+    engine.set_rate(ESPEAK_RATE)
     engine.synthesize(phonemeText, (samples) => {
       if (settled) return
       if (isAudioPayload(samples)) {
@@ -141,45 +144,39 @@ function synthesize(engine: ESpeakNGHandle, phonemeText: string, rate: number): 
   })
 }
 
-/** Map 0.5–2.0 playback rate to eSpeak 80–450 (default 1 → 160). */
-function espeakRate(rate: number | undefined): number {
-  const n = rate ?? 1
-  return Math.round(Math.min(450, Math.max(80, 160 * n)))
-}
-
 export function stopSpeaking(): void {
   playToken += 1
   stopCurrentSource()
 }
 
-export async function speakPlan(plan: PhonemePlan, opts?: { rate?: number }): Promise<void> {
+export async function speakPlan(plan: PhonemePlan): Promise<void> {
   if (plan.words.length === 0) {
     const skip = plan.skipped[0]
     const extra = skip ? skipLabel(skip.reason) : 'no native words'
     throw new Error(`Nothing to speak — ${extra}`)
   }
-  await speakEngineText(plan.engineText, opts)
+  await speakEngineText(plan.engineText)
 }
 
-export async function speakUtterance(utterance: EngineUtterance, opts?: { rate?: number }): Promise<void> {
+export async function speakUtterance(utterance: EngineUtterance): Promise<void> {
   if (utterance.words.length === 0 || !utterance.text.trim()) {
     throw new Error('Nothing to speak — no native words')
   }
-  await speakEngineText(utterance.text, opts)
+  await speakEngineText(utterance.text)
 }
 
-async function speakEngineText(text: string, opts?: { rate?: number }): Promise<void> {
+async function speakEngineText(text: string): Promise<void> {
   unlockAudio()
   const mine = ++playToken
   const engine = await getEngine()
   if (mine !== playToken) return
-  const samples = await synthesize(engine, text, espeakRate(opts?.rate))
+  const samples = await synthesize(engine, text)
   if (mine !== playToken) return
   await playSamples(samples)
 }
 
-export async function speak(text: string, opts?: { rate?: number }): Promise<void> {
-  await speakPlan(previewPhonemes(text), opts)
+export async function speak(text: string): Promise<void> {
+  await speakPlan(previewPhonemes(text))
 }
 
 export function previewLine(plan: PhonemePlan): string {

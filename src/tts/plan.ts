@@ -288,8 +288,7 @@ export function renderEngineText(parts: EnginePart[]): string {
 
   function flushWords(): void {
     if (wordRun.length === 0) return;
-    const sep = runInIsland ? " " : ", ";
-    chunks.push(wordRun.join(sep));
+    chunks.push(wordRun.join(" "));
     wordRun = [];
   }
 
