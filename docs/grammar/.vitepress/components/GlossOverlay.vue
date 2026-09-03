@@ -462,7 +462,14 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div ref="overlayRef" class="overlay" tabindex="0" @keydown="onKey">
+  <div
+    ref="overlayRef"
+    class="overlay"
+    role="region"
+    aria-label="Agalan gloss overlay"
+    tabindex="0"
+    @keydown="onKey"
+  >
     <p
       class="stream"
       aria-label="Agalan tokens"

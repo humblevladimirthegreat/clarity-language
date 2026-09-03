@@ -33,13 +33,13 @@ onMounted(() => {
 
 <template>
   <div class="viewer">
-    <label class="sr-only" for="gloss-input">Agalan text</label>
     <textarea
       id="gloss-input"
       v-model="text"
       rows="4"
       spellcheck="false"
       placeholder="Paste Agalan…"
+      aria-label="Agalan text"
       :disabled="status !== 'ready'"
     />
     <div class="speak-bar">
@@ -55,7 +55,7 @@ onMounted(() => {
           class="btn"
           :disabled="!ipaPreview"
           :aria-pressed="showIpa"
-          aria-label="Show IPA"
+          :aria-label="showIpa ? 'Hide IPA' : 'Show IPA'"
           @click="showIpa = !showIpa"
         >
           {{ showIpa ? 'Hide IPA' : 'Show IPA' }}
@@ -170,16 +170,5 @@ textarea:focus {
 .warn {
   color: var(--vp-c-danger-1);
   font-size: 0.9rem;
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
 }
 </style>

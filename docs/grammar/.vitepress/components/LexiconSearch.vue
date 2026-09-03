@@ -83,12 +83,12 @@ onUnmounted(() => {
 <template>
   <div class="lexicon-search">
     <div class="toolbar">
-      <label class="sr-only" for="lexicon-filter">Search lexicon</label>
       <input
         id="lexicon-filter"
         type="search"
         placeholder="Search literal, metaphor, clarity, mnemonic…"
         autocomplete="off"
+        aria-label="Search lexicon"
         :disabled="status !== 'ready'"
         @input="onInput"
       />
@@ -153,17 +153,6 @@ onUnmounted(() => {
   gap: 0.75rem 1rem;
   align-items: center;
   margin-bottom: 1rem;
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
 }
 
 input[type='search'] {
