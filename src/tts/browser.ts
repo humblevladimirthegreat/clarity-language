@@ -19,5 +19,5 @@ export type {
   SpeechToken,
 } from "./plan.js";
 export { numberStemToSpeech, numberStemToSpeechStressed, numberWordToSpeech, numberWordToSpeechStressed } from "./numbers.js";
-export { isNativeSurface, toPhonemeWord } from "./phonemes.js";
-export type { PhonemeWord, Syllable } from "./phonemes.js";
+export { engineSyllableTokens, isNativeSurface, toEngineWord, toPhonemeWord } from "./phonemes.js";
+export type { EngineSyllable, EngineUtterance, EngineWord, PhonemeWord, Syllable } from "./phonemes.js";

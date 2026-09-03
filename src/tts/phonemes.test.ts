@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
-import { isNativeSurface, toPhonemeWord } from "./phonemes.js";
+import { engineSyllableTokens, isNativeSurface, toPhonemeWord } from "./phonemes.js";
 
 describe("toPhonemeWord", () => {
   it("maps the phonology letter table", () => {
@@ -23,12 +23,16 @@ describe("toPhonemeWord", () => {
       ["jʌ", "on"],
     );
     assert.equal(word.ipa, "jʌ.on");
+    assert.deepEqual(
+      word.syllables.map((s) => s.engine),
+      ["yuh", "ohn"],
+    );
   });
 
   it("keeps word-final -sh as /ʃ/ (zazawansh)", () => {
     const word = toPhonemeWord("zazawansh");
     assert.equal(word.ipa, "zɑ.zɑ.wɑnʃ");
-    assert.equal(word.syllables.at(-1)?.espeak.endsWith("S"), true);
+    assert.equal(word.syllables.at(-1)?.engine.endsWith("sh"), true);
   });
 
   it("treats mid-word x as /ʒ/ (zugoboxrawon)", () => {
@@ -40,11 +44,27 @@ describe("toPhonemeWord", () => {
   it("keeps gl- as an onset cluster (glelulul)", () => {
     const word = toPhonemeWord("glelulul");
     assert.equal(word.ipa, "ɡle̞.lʌ.lʌl");
+    assert.deepEqual(
+      word.syllables.map((s) => s.engine),
+      ["gleh", "luh", "luhl"],
+    );
   });
 
   it("matches the phonology try-it line", () => {
     assert.equal(toPhonemeWord("zazawan").ipa, "zɑ.zɑ.wɑn");
     assert.equal(toPhonemeWord("guzumum").ipa, "ɡʌ.zʌ.mʌm");
+  });
+
+  it("emits one lowercase engine token per syllable (eSpeak word breaks, no audio)", () => {
+    const word = toPhonemeWord("zazawan");
+    assert.deepEqual(
+      word.syllables.map((s) => s.engine),
+      ["zah", "zah", "wahn"],
+    );
+    assert.equal(word.engine, "zah zah wahn");
+    assert.deepEqual(engineSyllableTokens(word.engine), word.syllables.map((s) => s.engine));
+    assert.equal(engineSyllableTokens(word.engine).length, word.syllables.length);
+    assert.match(word.engine, /^[a-z]+(?: [a-z]+)*$/);
   });
 });
 

@@ -30,5 +30,5 @@ export type {
   SpeechToken,
 } from "./tts/plan.js";
 export { numberStemToSpeech, numberStemToSpeechStressed, numberWordToSpeech, numberWordToSpeechStressed } from "./tts/numbers.js";
-export { isNativeSurface, toPhonemeWord } from "./tts/phonemes.js";
-export type { PhonemeWord, Syllable } from "./tts/phonemes.js";
+export { engineSyllableTokens, isNativeSurface, toEngineWord, toPhonemeWord } from "./tts/phonemes.js";
+export type { EngineSyllable, EngineUtterance, EngineWord, PhonemeWord, Syllable } from "./tts/phonemes.js";

@@ -15,7 +15,7 @@ if (speech.spoken.length === 0) {
 } else {
   console.log(`Spoken: ${speech.spoken.join(" ")}`);
   console.log(`IPA: ${phonemes.words.map((w) => w.ipa).join("  ")}`);
-  console.log(`eSpeak: ${phonemes.espeak}`);
+  console.log(`Engine: ${phonemes.engineText}`);
 }
 
 const notable = speech.skipped;

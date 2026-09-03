@@ -117,22 +117,31 @@ describe("previewPhonemes", () => {
       plan.words.map((w) => w.ipa),
       ["zɑ.zɑ.wɑn", "ɡʌ.zʌ.mʌm"],
     );
-    assert.match(plan.espeak, /\[\[zA\.zA\.wAn _ gV\.zV\.mVm\]\]\./);
+    assert.equal(plan.engineText, "zah zah wahn, guh zuh muhm.");
+  });
+
+  it("keeps one engine token per syllable without caps, colons, or brackets", () => {
+    const plan = previewPhonemes("zazawan vawalal.");
+    const tokens = plan.utterance.words.flatMap((w) => w.syllables.map((s) => s.text));
+    assert.deepEqual(tokens, ["zah", "zah", "wahn", "vah", "wah", "lahl"]);
+    assert.equal(tokens.length, plan.words.reduce((n, w) => n + w.syllables.length, 0));
+    assert.doesNotMatch(plan.engineText, /[:_[\]A-Z]/);
+    assert.match(plan.engineText, /^[a-z .,!?]+$/);
   });
 
   it("includes punctuation cue between phoneme spans", () => {
     const plan = previewPhonemes("zazawan vawalal?");
-    assert.match(plan.espeak, /\]\]\?/);
+    assert.match(plan.engineText, /\?$/);
   });
 
   it("uses comma dip before discourse linker", () => {
     const plan = previewPhonemes("zazawan vawalal. xamalal zululon vurunul.");
-    assert.match(plan.espeak, /\]\]\.,/);
+    assert.match(plan.engineText, /\.,/);
   });
 
   it("uses tighter spacing inside islands", () => {
     const plan = previewPhonemes("^ zazawan vawalal ^");
-    assert.match(plan.espeak, /\[\[zA\.zA\.wAn vA\.wA\.lAl\]\]/);
-    assert.doesNotMatch(plan.espeak, /\[\[zA\.zA\.wAn _ vA\.wA\.lAl\]\]/);
+    assert.match(plan.engineText, /zah zah wahn vah wah lahl/);
+    assert.doesNotMatch(plan.engineText, /wahn, vah/);
   });
 });

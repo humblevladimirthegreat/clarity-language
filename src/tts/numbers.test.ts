@@ -143,12 +143,15 @@ describe("numberWordToSpeechStressed", () => {
     }
   });
 
-  it("emits eSpeak primary stress on the group-final syllable", async () => {
+  it("marks group-final stress in IPA, not in engine tokens", async () => {
     const { previewPhonemes } = await import("./plan.js");
     const plan = previewPhonemes("g+27e12.");
-    // ra ba wo DU ja du le + l — only the exponent's last digit is stressed.
-    assert.match(plan.espeak, /wo\.d'V\.jA\.dV\.lel/);
+    const word = plan.words[0]!;
+    const stressed = word.syllables.filter((s) => s.ipa.includes("ˈ"));
+    assert.equal(stressed.length, 1);
+    assert.doesNotMatch(word.engine, /[':]/);
     const multi = previewPhonemes("g+5e3,860,4e-2.");
-    assert.equal(multi.espeak, "[[grA.bA.r'e.jA.vA.hA.gV.z'o.bV.d'V.jA.mol]].");
+    assert.equal(multi.words[0]!.syllables.filter((s) => s.ipa.includes("ˈ")).length, 3);
+    assert.doesNotMatch(multi.engineText, /[:_[\]A-Z]/);
   });
 });

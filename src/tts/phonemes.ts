@@ -1,9 +1,10 @@
 /**
- * Grapheme → phoneme for native Agelan spelling.
- * IPA targets are from docs/grammar/phonology.md. eSpeak names are the
- * closest English-voice phones (approximation, not a claim of identity):
+ * Grapheme → phoneme for native Agalan spelling.
+ * IPA targets are from docs/grammar/phonology.md.
  *
- *   e̞→e  ʌ→V  o→o  ɑ→A  ɦ→h  ʒ→Z  ʃ→S  ɹ→r  ɡ→g
+ * Engine tokens are lowercase Latin respellings (one per syllable). This WASM
+ * eSpeak does not honor `[[phoneme]]` input, so Kirshenbaum / `A:` / CamelCase
+ * is spoken as English punctuation and letter names.
  */
 
 const VOWELS = new Set(["e", "u", "o", "a"]);
@@ -28,16 +29,20 @@ const LETTER_IPA: Record<string, string> = {
   x: "ʒ",
 };
 
-const LETTER_ESPEAK: Record<string, string> = {
-  e: "e",
-  u: "V",
-  o: "o",
-  a: "A",
+/** English-voice cue spellings so eSpeak reads a syllable as one word, not letters. */
+const VOWEL_ENGINE: Record<string, string> = {
+  a: "ah",
+  e: "eh",
+  u: "uh",
+  o: "oh",
+};
+
+const CONS_ENGINE: Record<string, string> = {
   h: "h",
   w: "w",
   g: "g",
   d: "d",
-  j: "j",
+  j: "y",
   b: "b",
   z: "z",
   m: "m",
@@ -45,13 +50,13 @@ const LETTER_ESPEAK: Record<string, string> = {
   v: "v",
   l: "l",
   r: "r",
-  x: "Z",
+  x: "zh",
+  sh: "sh",
 };
 
 export type Phone = {
   letter: string;
   ipa: string;
-  espeak: string;
   vowel: boolean;
   /** Char index of this phone's source letter in the raw word. */
   index: number;
@@ -60,14 +65,32 @@ export type Phone = {
 export type Syllable = {
   phones: Phone[];
   ipa: string;
-  espeak: string;
+  /** One lowercase token; eSpeak treats spaces as word (syllable) breaks. */
+  engine: string;
 };
 
 export type PhonemeWord = {
   raw: string;
   syllables: Syllable[];
   ipa: string;
-  espeak: string;
+  /** Syllable engine tokens joined with spaces. */
+  engine: string;
+};
+
+export type EngineSyllable = {
+  text: string;
+  ipa: string;
+};
+
+export type EngineWord = {
+  raw: string;
+  syllables: EngineSyllable[];
+};
+
+export type EngineUtterance = {
+  words: EngineWord[];
+  /** Flattened string sent to eSpeak (syllable tokens + punctuation). */
+  text: string;
 };
 
 const NATIVE_WORD = /^[aegouhwdjbzmnvlrx]+(?:sh)?$/;
@@ -76,21 +99,29 @@ export function isNativeSurface(raw: string): boolean {
   return NATIVE_WORD.test(raw);
 }
 
+export function engineTokenFromPhones(phones: Phone[]): string {
+  let out = "";
+  for (const phone of phones) {
+    if (phone.vowel) out += VOWEL_ENGINE[phone.letter] ?? "ah";
+    else out += CONS_ENGINE[phone.letter] ?? phone.letter;
+  }
+  return out;
+}
+
 function phonesOf(raw: string): Phone[] {
   const phones: Phone[] = [];
   let i = 0;
   while (i < raw.length) {
     if (i === raw.length - 2 && raw.endsWith("sh")) {
-      phones.push({ letter: "sh", ipa: "ʃ", espeak: "S", vowel: false, index: i });
+      phones.push({ letter: "sh", ipa: "ʃ", vowel: false, index: i });
       break;
     }
     const letter = raw[i]!;
     const ipa = LETTER_IPA[letter];
-    const espeak = LETTER_ESPEAK[letter];
-    if (!ipa || !espeak) {
+    if (!ipa) {
       throw new Error(`No phoneme for letter ${letter} in ${raw}`);
     }
-    phones.push({ letter, ipa, espeak, vowel: VOWELS.has(letter), index: i });
+    phones.push({ letter, ipa, vowel: VOWELS.has(letter), index: i });
     i += 1;
   }
   return phones;
@@ -109,8 +140,7 @@ export function syllabify(phones: Phone[]): Syllable[] {
       if (last) {
         last.phones.push(...leftover);
         last.ipa = last.phones.map((p) => p.ipa).join("");
-        last.espeak = last.phones.map((p) => p.espeak).join("");
-        // NOTE: caller re-maps via syllableFrom for stress; keep raw merge here.
+        last.engine = engineTokenFromPhones(last.phones);
       } else {
         syllables.push(syllableFrom(leftover));
       }
@@ -125,9 +155,8 @@ export function syllabify(phones: Phone[]): Syllable[] {
 }
 
 function syllableFrom(phones: Phone[], stress: ReadonlySet<number> = new Set()): Syllable {
-  const espeak = phones.map((p) => (p.vowel && stress.has(p.index) ? `'${p.espeak}` : p.espeak)).join("");
   const ipa = phones.map((p) => (p.vowel && stress.has(p.index) ? `ˈ${p.ipa}` : p.ipa)).join("");
-  return { phones, ipa, espeak };
+  return { phones, ipa, engine: engineTokenFromPhones(phones) };
 }
 
 export function toPhonemeWord(
@@ -140,6 +169,18 @@ export function toPhonemeWord(
     raw,
     syllables,
     ipa: syllables.map((s) => s.ipa).join("."),
-    espeak: syllables.map((s) => s.espeak).join("."),
+    engine: syllables.map((s) => s.engine).join(" "),
   };
+}
+
+export function toEngineWord(word: PhonemeWord): EngineWord {
+  return {
+    raw: word.raw,
+    syllables: word.syllables.map((s) => ({ text: s.engine, ipa: s.ipa })),
+  };
+}
+
+/** eSpeak word tokens in engine text (letters only). Matches one token per syllable. */
+export function engineSyllableTokens(text: string): string[] {
+  return text.split(/[^a-z]+/).filter(Boolean);
 }

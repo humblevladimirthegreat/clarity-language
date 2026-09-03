@@ -2,7 +2,14 @@ import { parse as peggyParse } from "../generated/word-parser.js";
 import { segmentUtterance, type TokenizeSegment } from "../parse/tokenize.js";
 import type { MorphWord, PunctKind } from "../parse/types.js";
 import { parseWord } from "../parse/word.js";
-import { isNativeSurface, toPhonemeWord, type PhonemeWord } from "./phonemes.js";
+import {
+  isNativeSurface,
+  toEngineWord,
+  toPhonemeWord,
+  type EngineUtterance,
+  type EngineWord,
+  type PhonemeWord,
+} from "./phonemes.js";
 import { numberWordToSpeechStressed } from "./numbers.js";
 import { expandOpaqueSpan, expandWritingSpan } from "./spans.js";
 
@@ -32,7 +39,9 @@ export type SpeechPlan = {
 export type PhonemePlan = {
   words: PhonemeWord[];
   skipped: { raw: string; reason: SkipReason }[];
-  espeak: string;
+  utterance: EngineUtterance;
+  /** Flattened eSpeak input: one lowercase token per syllable. */
+  engineText: string;
 };
 
 type FramingRole = "force" | "polar" | "vocative" | "linker" | "clauseJoin" | "reviser" | "ordinary";
@@ -217,20 +226,20 @@ export function previewSpeech(text: string): SpeechPlan {
   return buildPlan(toSpeechText(text));
 }
 
-function boundaryToEspeak(tag: BoundaryTag): string {
+function boundaryToEngine(tag: BoundaryTag): string {
   switch (tag) {
     case "qmark":
       return "?";
     case "bang":
       return "!";
     case "softM":
-      return ";";
+      return ",";
     case "xContinue":
     case "islandEnter":
     case "islandExit":
       return ",";
     case "jTurn":
-      return "_:200";
+      return "...";
     default:
       return ".";
   }
@@ -238,65 +247,68 @@ function boundaryToEspeak(tag: BoundaryTag): string {
 
 export function toPhonemes(plan: SpeechPlan): PhonemePlan {
   const words: PhonemeWord[] = [];
-  const parts: EspeakPart[] = [];
+  const engineWords: EngineWord[] = [];
+  const parts: EnginePart[] = [];
   let islandDepth = 0;
 
   for (const token of plan.tokens) {
     if (token.kind === "word") {
       const phoneme = toPhonemeWord(token.raw, token.stress);
+      const engineWord = toEngineWord(phoneme);
       words.push(phoneme);
-      parts.push({ espeak: phoneme.espeak, inIsland: islandDepth > 0 });
+      engineWords.push(engineWord);
+      parts.push({ word: engineWord, inIsland: islandDepth > 0 });
       continue;
     }
 
     if (token.kind === "boundary") {
       if (token.tag === "islandEnter") islandDepth++;
       else if (token.tag === "islandExit") islandDepth = Math.max(0, islandDepth - 1);
-      parts.push({ espeak: boundaryToEspeak(token.tag), inIsland: false, boundary: true });
+      parts.push({ punct: boundaryToEngine(token.tag) });
     }
   }
 
-  const espeak = wrapEspeakParts(parts);
-
+  const engineText = renderEngineText(parts);
   return {
     words,
     skipped: plan.skipped,
-    espeak,
+    utterance: { words: engineWords, text: engineText },
+    engineText,
   };
 }
 
-type EspeakPart = { espeak: string; inIsland: boolean; boundary?: boolean };
+type EnginePart = { word: EngineWord; inIsland: boolean; punct?: undefined } | { punct: string; word?: undefined };
 
-/** Join phoneme spans and punctuation for eSpeak clause intonation. */
-function wrapEspeakParts(parts: EspeakPart[]): string {
+/** Join syllable tokens; spaces are eSpeak word breaks (one syllable each). */
+export function renderEngineText(parts: EnginePart[]): string {
   if (parts.length === 0) return "";
   const chunks: string[] = [];
-  let phonemeRun: string[] = [];
+  let wordRun: string[] = [];
   let runInIsland = false;
 
-  function flushPhonemes(): void {
-    if (phonemeRun.length === 0) return;
-    const sep = runInIsland ? " " : " _ ";
-    chunks.push(`[[${phonemeRun.join(sep)}]]`);
-    phonemeRun = [];
+  function flushWords(): void {
+    if (wordRun.length === 0) return;
+    const sep = runInIsland ? " " : ", ";
+    chunks.push(wordRun.join(sep));
+    wordRun = [];
   }
 
   for (const part of parts) {
-    if (part.boundary) {
-      flushPhonemes();
-      chunks.push(part.espeak);
+    if (part.punct !== undefined) {
+      flushWords();
+      chunks.push(part.punct);
       continue;
     }
 
-    if (phonemeRun.length > 0 && part.inIsland !== runInIsland) {
-      flushPhonemes();
+    if (wordRun.length > 0 && part.inIsland !== runInIsland) {
+      flushWords();
     }
 
     runInIsland = part.inIsland;
-    phonemeRun.push(part.espeak);
+    wordRun.push(part.word.syllables.map((s) => s.text).join(" "));
   }
 
-  flushPhonemes();
+  flushWords();
   return chunks.join("");
 }
 
@@ -305,13 +317,13 @@ export function previewPhonemes(text: string): PhonemePlan {
 }
 
 function boundaryRaw(tag: BoundaryTag): string {
-  return boundaryToEspeak(tag);
+  return boundaryToEngine(tag);
 }
 
 export function skipLabel(reason: SkipReason): string {
   switch (reason) {
     case "foreign":
-      return "foreign surface — not Agelan phonology";
+      return "foreign surface — not Agalan phonology";
     case "writing":
       return "writing-only span";
     case "shorthand":

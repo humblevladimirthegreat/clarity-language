@@ -1,4 +1,4 @@
-import { previewPhonemes, skipLabel, type PhonemePlan } from '@tts-browser'
+import { previewPhonemes, skipLabel, type EngineUtterance, type PhonemePlan } from '@tts-browser'
 import {
   ESPEAK_SAMPLE_RATE,
   concatMono,
@@ -158,11 +158,22 @@ export async function speakPlan(plan: PhonemePlan, opts?: { rate?: number }): Pr
     const extra = skip ? skipLabel(skip.reason) : 'no native words'
     throw new Error(`Nothing to speak — ${extra}`)
   }
+  await speakEngineText(plan.engineText, opts)
+}
+
+export async function speakUtterance(utterance: EngineUtterance, opts?: { rate?: number }): Promise<void> {
+  if (utterance.words.length === 0 || !utterance.text.trim()) {
+    throw new Error('Nothing to speak — no native words')
+  }
+  await speakEngineText(utterance.text, opts)
+}
+
+async function speakEngineText(text: string, opts?: { rate?: number }): Promise<void> {
   unlockAudio()
   const mine = ++playToken
   const engine = await getEngine()
   if (mine !== playToken) return
-  const samples = await synthesize(engine, plan.espeak, espeakRate(opts?.rate))
+  const samples = await synthesize(engine, text, espeakRate(opts?.rate))
   if (mine !== playToken) return
   await playSamples(samples)
 }
