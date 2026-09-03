@@ -53,9 +53,24 @@ export function isNativeSurface(raw: string): boolean {
   return NATIVE_WORD.test(raw);
 }
 
-/** Concatenate syllable IPA without dots — one Kitten word token. */
+/**
+ * Concatenate syllable IPA for Kitten (no dots).
+ * Hiatus (vowel–vowel) gets primary stress on the second nucleus so the model
+ * does not diphthongize (unless that syllable is already stressed).
+ */
 export function wordIpaPhones(word: PhonemeWord): string {
-  return word.syllables.map((s) => s.ipa).join("");
+  let out = "";
+  let prevEndedVowel = false;
+  for (const syl of word.syllables) {
+    const first = syl.phones[0];
+    if (prevEndedVowel && first?.vowel && !syl.ipa.startsWith("ˈ")) {
+      out += `ˈ${syl.ipa}`;
+    } else {
+      out += syl.ipa;
+    }
+    prevEndedVowel = syl.phones.at(-1)?.vowel ?? false;
+  }
+  return out;
 }
 
 function phonesOf(raw: string): Phone[] {

@@ -38,7 +38,7 @@ export type SpeechPlan = {
 export type PhonemePlan = {
   words: PhonemeWord[];
   skipped: { raw: string; reason: SkipReason }[];
-  /** Word-spaced IPA phoneme stream for Kitten (no syllable dots). */
+  /** Word-spaced IPA phoneme stream for Kitten (no syllable dots; hiatus = ˈ on 2nd vowel). */
   ipaPhonemes: string;
   /** Kitten TextCleaner token ids ([0, …ids, 10, 0]). */
   inputIds: number[];

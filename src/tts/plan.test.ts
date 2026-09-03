@@ -127,9 +127,8 @@ describe("previewPhonemes", () => {
     assert.equal(plan.inputIds[0], 0);
     assert.equal(plan.inputIds.at(-2), KITTEN_END_MARKER_ID);
     assert.equal(plan.inputIds.at(-1), 0);
-    for (const word of plan.words) {
-      assert.ok(!word.syllables.map((s) => s.ipa).join("").includes("."));
-    }
+    const juon = previewPhonemes("juon");
+    assert.equal(juon.ipaPhonemes, "jʌˈon");
   });
 
   it("includes punctuation cue between phoneme spans", () => {

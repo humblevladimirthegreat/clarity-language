@@ -7,7 +7,7 @@ import {
   normalizeIpaForKitten,
   textToKittenIds,
 } from "./kitten-ids.js";
-import { isNativeSurface, toPhonemeWord } from "./phonemes.js";
+import { isNativeSurface, toPhonemeWord, wordIpaPhones } from "./phonemes.js";
 
 describe("normalizeIpaForKitten", () => {
   it("maps e̞ to ASCII e", () => {
@@ -20,10 +20,14 @@ describe("normalizeIpaForKitten", () => {
     assert.equal(normalizeIpaForKitten("ʌɦɡɹʒʃ"), "ʌɦɡɹʒʃ");
   });
 
-  it("does not treat syllable dots as phone separators in word IPA", () => {
+  it("keeps citation dots and Kitten stress at hiatus", () => {
     const word = toPhonemeWord("zazawan");
     assert.equal(word.ipa, "zɑ.zɑ.wɑn");
-    assert.equal(word.syllables.map((s) => s.ipa).join(""), "zɑzɑwɑn");
+    assert.equal(wordIpaPhones(word), "zɑzɑwɑn");
+    const juon = toPhonemeWord("juon");
+    assert.equal(juon.ipa, "jʌ.on");
+    assert.equal(wordIpaPhones(juon), "jʌˈon");
+    assert.equal(normalizeIpaForKitten("jʌˈon"), "jʌˈon");
   });
 });
 
@@ -37,10 +41,15 @@ describe("ipaToKittenIds", () => {
 
   it("maps zazawan phones without syllable dots", () => {
     const word = toPhonemeWord("zazawan");
-    const ids = ipaToKittenIds(word.syllables.map((s) => s.ipa).join(""));
+    const ids = ipaToKittenIds(wordIpaPhones(word));
     assert.ok(ids.includes(textToKittenIds("z")[0]!));
     assert.ok(ids.includes(textToKittenIds("ɑ")[0]!));
     assert.ok(!ids.includes(textToKittenIds(".")[0]!));
+  });
+
+  it("maps hiatus stress into Kitten ids", () => {
+    const ids = ipaToKittenIds(wordIpaPhones(toPhonemeWord("juon")));
+    assert.ok(ids.includes(textToKittenIds("ˈ")[0]!));
   });
 });
 
