@@ -5,13 +5,14 @@ import { useClassifyTables } from '../composables/useClassifyTables'
 import { useAgelanSpeak } from '../composables/useAgelanSpeak'
 import { warmupSpeak } from '../lib/speak-engine'
 import GlossOverlay from './GlossOverlay.vue'
+import SpeakButton from './SpeakButton.vue'
 
 const SAMPLE = 'zazawan vawalal.'
 
 const text = ref(SAMPLE)
 
 const { tables, status, errorMessage } = useClassifyTables()
-const { busy, error: speakError, lineFor, ipaFor, speakText } = useAgelanSpeak()
+const { error: speakError, lineFor, ipaFor } = useAgelanSpeak()
 
 const showIpa = ref(false)
 
@@ -42,15 +43,11 @@ onMounted(() => {
       :disabled="status !== 'ready'"
     />
     <div class="speak-bar">
-      <button
-        type="button"
-        class="btn"
+      <SpeakButton
+        :text="text"
+        label="Speak Agalan"
         :disabled="status !== 'ready'"
-        aria-label="Speak Agalan"
-        @click="speakText(text)"
-      >
-        {{ busy ? 'Stop' : 'Speak Agalan' }}
-      </button>
+      />
       <div v-if="spokenPreview" class="spoken">
         <p class="preview">{{ spokenPreview }}</p>
         <button

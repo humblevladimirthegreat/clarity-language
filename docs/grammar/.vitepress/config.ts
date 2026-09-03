@@ -59,6 +59,9 @@ export default defineConfig({
     optimizeDeps: {
       exclude: ['onnxruntime-web'],
     },
+    worker: {
+      format: 'es',
+    },
     server: {
       fs: {
         allow: [repoRoot],

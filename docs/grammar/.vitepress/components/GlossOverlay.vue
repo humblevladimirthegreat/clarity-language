@@ -10,6 +10,7 @@ import {
   normalizeTokenRange,
   selectionToTokenRange,
 } from './selectionToTokens'
+import SpeakButton from './SpeakButton.vue'
 import { useAgelanSpeak } from '../composables/useAgelanSpeak'
 
 const props = defineProps<{
@@ -17,7 +18,7 @@ const props = defineProps<{
   initialPinned?: boolean
 }>()
 
-const { busy, speakText } = useAgelanSpeak()
+const { speakText } = useAgelanSpeak()
 
 const overlayRef = ref<HTMLElement | null>(null)
 const popoverRef = ref<HTMLElement | null>(null)
@@ -507,9 +508,7 @@ onBeforeUnmount(() => {
         @jump="jump"
       />
       <div class="actions pin-actions">
-        <button type="button" class="btn" :disabled="!copyText()" @click="speakSelection">
-          {{ busy ? 'Stop' : 'Speak word' }}
-        </button>
+        <SpeakButton :text="copyText()" label="Speak word" :disabled="!copyText()" />
         <button type="button" class="btn" @click="copyRaw">
           {{ copied ? 'Copied' : 'Copy romanized' }}
         </button>
@@ -548,9 +547,7 @@ onBeforeUnmount(() => {
         />
         <div class="actions">
           <button type="button" class="btn" @click="select(selected, true)">Pin</button>
-          <button type="button" class="btn" :disabled="!copyText()" @click="speakSelection">
-            {{ busy ? 'Stop' : 'Speak word' }}
-          </button>
+          <SpeakButton :text="copyText()" label="Speak word" :disabled="!copyText()" />
           <button type="button" class="btn" :disabled="!copyText()" @click="copyRaw">
             {{ copied ? 'Copied' : 'Copy romanized' }}
           </button>

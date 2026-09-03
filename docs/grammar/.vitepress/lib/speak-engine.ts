@@ -1,54 +1,25 @@
 import { previewPhonemes, skipLabel, type PhonemePlan } from '@tts-browser'
-import {
-  concatMono,
-  KITTEN_AUDIO_TRIM,
-  KITTEN_SAMPLE_RATE,
-  trimAudio,
-} from './speak-audio.js'
-import { loadNpz } from './npz-loader.js'
-
-type OrtTensor = {
-  data: Float32Array | BigInt64Array
-}
-
-type OrtSession = {
-  run(feeds: Record<string, OrtTensor>): Promise<Record<string, OrtTensor>>
-}
-
-type OrtModule = {
-  InferenceSession: {
-    create(model: ArrayBuffer, options?: Record<string, unknown>): Promise<OrtSession>
-  }
-  Tensor: new (
-    type: string,
-    data: BigInt64Array | Float32Array,
-    dims: readonly number[],
-  ) => OrtTensor
-  env: {
-    wasm: {
-      wasmPaths?: string
-      numThreads: number
-      simd: boolean
-    }
-  }
-}
+import { KITTEN_SAMPLE_RATE } from './speak-audio.js'
+import type {
+  SpeakWorkerRequest,
+  SpeakWorkerResponse,
+} from './speak-worker-protocol.js'
 
 const SAMPLE_RATE = KITTEN_SAMPLE_RATE
-const VOICE_KEY = 'expr-voice-2-f'
-const STYLE_ROW = 0
-const SPEED = 1
 
-let enginePromise: Promise<KittenEngine> | null = null
+let worker: Worker | null = null
+let workerReady: Promise<void> | null = null
 let audioCtx: AudioContext | null = null
 let currentSource: AudioBufferSourceNode | null = null
 let playToken = 0
 
-type KittenEngine = {
-  session: OrtSession
-  ort: OrtModule
-  style: Float32Array
-  styleDim: number
+type Waiter = {
+  resolve: () => void
+  reject: (err: Error) => void
+  onBeforePlay?: () => void
 }
+
+const waiters = new Map<number, Waiter>()
 
 function assetUrl(name: string): string {
   const base = import.meta.env.BASE_URL
@@ -59,56 +30,107 @@ function ortWasmBase(): string {
   return `${import.meta.env.BASE_URL}tts/ort/`
 }
 
-async function loadOrt(): Promise<OrtModule> {
-  const ort = (await import('onnxruntime-web/wasm')) as unknown as OrtModule
-  ort.env.wasm.wasmPaths = ortWasmBase()
-  ort.env.wasm.numThreads = 1
-  ort.env.wasm.simd = true
-  return ort
+function postToWorker(message: SpeakWorkerRequest): void {
+  worker?.postMessage(message)
 }
 
-async function getEngine(): Promise<KittenEngine> {
-  if (!enginePromise) {
-    enginePromise = (async () => {
-      const ort = await loadOrt()
-      const [onnxBuf, npzBuf] = await Promise.all([
-        fetch(assetUrl('kitten_tts_nano_v0_8.onnx')).then((r) => {
-          if (!r.ok) throw new Error('Could not load KittenTTS model')
-          return r.arrayBuffer()
-        }),
-        fetch(assetUrl('voices.npz')).then((r) => {
-          if (!r.ok) throw new Error('Could not load KittenTTS voices')
-          return r.arrayBuffer()
-        }),
-      ])
+function settleWaiter(id: number | undefined, err?: Error): void {
+  if (id === undefined) {
+    for (const waiter of waiters.values()) {
+      if (err) waiter.reject(err)
+      else waiter.resolve()
+    }
+    waiters.clear()
+    return
+  }
+  const waiter = waiters.get(id)
+  if (!waiter) return
+  waiters.delete(id)
+  if (err) waiter.reject(err)
+  else waiter.resolve()
+}
 
-      const session = await ort.InferenceSession.create(onnxBuf, {
-        executionProviders: ['wasm'],
+function handleWorkerMessage(event: MessageEvent<SpeakWorkerResponse>): void {
+  const msg = event.data
+  if (msg.type === 'ready') return
+  if (msg.type === 'error') {
+    settleWaiter(msg.id, new Error(msg.message))
+    return
+  }
+  if (msg.type !== 'audio') return
+  const waiter = waiters.get(msg.id)
+  if (!waiter) return
+  if (msg.id !== playToken) {
+    waiters.delete(msg.id)
+    waiter.resolve()
+    return
+  }
+  waiter.onBeforePlay?.()
+  void playSamples(msg.samples, msg.id).then(
+    () => {
+      if (waiters.get(msg.id) !== waiter) return
+      waiters.delete(msg.id)
+      waiter.resolve()
+    },
+    (err: Error) => {
+      if (waiters.get(msg.id) !== waiter) return
+      waiters.delete(msg.id)
+      waiter.reject(err)
+    },
+  )
+}
+
+function getWorker(): Promise<void> {
+  if (!workerReady) {
+    workerReady = new Promise<void>((resolve, reject) => {
+      const next = new Worker(new URL('./speak-worker.ts', import.meta.url), {
+        type: 'module',
       })
-
-      const voices = loadNpz(npzBuf)
-      const voice = voices[VOICE_KEY]
-      if (!voice) {
-        throw new Error(`Voice ${VOICE_KEY} missing from voices.npz`)
+      worker = next
+      next.onmessage = (event: MessageEvent<SpeakWorkerResponse>) => {
+        if (event.data.type === 'ready') {
+          next.onmessage = handleWorkerMessage
+          next.onerror = () => {
+            worker = null
+            workerReady = null
+            settleWaiter(undefined, new Error('KittenTTS worker failed'))
+            next.terminate()
+          }
+          resolve()
+          return
+        }
+        if (event.data.type === 'error') {
+          worker = null
+          workerReady = null
+          next.terminate()
+          reject(new Error(event.data.message))
+          return
+        }
+        handleWorkerMessage(event)
       }
-
-      const styleDim = voice.shape.at(-1) ?? voice.shape[0] ?? 256
-      const numStyles = voice.shape.length >= 2 ? voice.shape[0]! : 1
-      const row = Math.min(STYLE_ROW, numStyles - 1)
-      const style = voice.data.slice(row * styleDim, (row + 1) * styleDim)
-
-      return { session, ort, style, styleDim }
-    })().catch((error) => {
-      enginePromise = null
+      next.onerror = () => {
+        worker = null
+        workerReady = null
+        next.terminate()
+        reject(new Error('KittenTTS worker failed'))
+      }
+      postToWorker({
+        type: 'init',
+        wasmPaths: ortWasmBase(),
+        onnxUrl: assetUrl('kitten_tts_nano_v0_8.onnx'),
+        voicesUrl: assetUrl('voices.npz'),
+      })
+    }).catch((error) => {
+      workerReady = null
       throw error
     })
   }
-  return enginePromise
+  return workerReady
 }
 
 /** Prefetch ONNX Runtime and the nano model (Inspect page mount). */
-export function warmupSpeak(): Promise<KittenEngine> {
-  return getEngine()
+export function warmupSpeak(): Promise<void> {
+  return getWorker()
 }
 
 function unlockAudio(): AudioContext {
@@ -127,8 +149,9 @@ function stopCurrentSource(): void {
   currentSource = null
 }
 
-function playSamples(data: Float32Array): Promise<void> {
+function playSamples(data: Float32Array, token: number): Promise<void> {
   stopCurrentSource()
+  if (token !== playToken) return Promise.resolve()
   const ctx = unlockAudio()
   if (data.length === 0) throw new Error('KittenTTS returned empty audio')
   const buffer = ctx.createBuffer(1, data.length, SAMPLE_RATE)
@@ -143,45 +166,37 @@ function playSamples(data: Float32Array): Promise<void> {
       resolve()
     }
     void ctx.resume().then(() => {
+      if (token !== playToken) {
+        try {
+          source.disconnect()
+        } catch {
+          /* already stopped */
+        }
+        if (currentSource === source) currentSource = null
+        resolve()
+        return
+      }
       source.start()
     }, reject)
   })
 }
 
-async function synthesizeChunk(
-  engine: KittenEngine,
-  inputIds: number[],
-): Promise<Float32Array> {
-  const { session, ort, style, styleDim } = engine
-  const results = await session.run({
-    input_ids: new ort.Tensor(
-      'int64',
-      BigInt64Array.from(inputIds.map(BigInt)),
-      [1, inputIds.length],
-    ),
-    style: new ort.Tensor('float32', style, [1, styleDim]),
-    speed: new ort.Tensor('float32', new Float32Array([SPEED]), [1]),
-  })
-  const key = Object.keys(results)[0]!
-  const audioData = results[key]!.data as Float32Array
-  return trimAudio(audioData, KITTEN_AUDIO_TRIM)
-}
-
-async function synthesizePlan(engine: KittenEngine, plan: PhonemePlan): Promise<Float32Array> {
-  const chunks = plan.inputIdChunks.length > 0 ? plan.inputIdChunks : [plan.inputIds]
-  const parts: Float32Array[] = []
-  for (const ids of chunks) {
-    parts.push(await synthesizeChunk(engine, ids))
-  }
-  return concatMono(parts)
-}
-
 export function stopSpeaking(): void {
   playToken += 1
   stopCurrentSource()
+  postToWorker({ type: 'cancel' })
+  settleWaiter(undefined)
 }
 
-export async function speakPlan(plan: PhonemePlan): Promise<void> {
+export type SpeakPlanOptions = {
+  /** Called after synthesis finishes and before playback starts. */
+  onBeforePlay?: () => void
+}
+
+export async function speakPlan(
+  plan: PhonemePlan,
+  options?: SpeakPlanOptions,
+): Promise<void> {
   if (plan.words.length === 0) {
     const skip = plan.skipped[0]
     const extra = skip ? skipLabel(skip.reason) : 'no native words'
@@ -189,11 +204,21 @@ export async function speakPlan(plan: PhonemePlan): Promise<void> {
   }
   unlockAudio()
   const mine = ++playToken
-  const engine = await getEngine()
+  await getWorker()
   if (mine !== playToken) return
-  const samples = await synthesizePlan(engine, plan)
-  if (mine !== playToken) return
-  await playSamples(samples)
+  const chunks = plan.inputIdChunks.length > 0 ? plan.inputIdChunks : [plan.inputIds]
+  await new Promise<void>((resolve, reject) => {
+    if (mine !== playToken) {
+      resolve()
+      return
+    }
+    waiters.set(mine, {
+      resolve,
+      reject,
+      onBeforePlay: options?.onBeforePlay,
+    })
+    postToWorker({ type: 'run', id: mine, chunks })
+  })
 }
 
 export async function speak(text: string): Promise<void> {
