@@ -135,7 +135,7 @@ describe("previewPhonemes", () => {
     assert.equal(plan.inputIds.at(-2), KITTEN_END_MARKER_ID);
     assert.equal(plan.inputIds.at(-1), 0);
     const juon = previewPhonemes("juon");
-    assert.equal(juon.ipaPhonemes, "jʌːˈon");
+    assert.equal(juon.ipaPhonemes, "jʌːon");
   });
 
   it("includes punctuation cue between phoneme spans", () => {

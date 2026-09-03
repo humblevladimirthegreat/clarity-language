@@ -66,24 +66,14 @@ function kittenLengthNucleus(syl: Syllable, ipa: string): string {
 
 /**
  * Concatenate syllable IPA for Kitten (no dots).
- * Hiatus (vowel–vowel) gets primary stress on the second nucleus so the model
- * does not diphthongize (unless that syllable is already stressed).
  * Non-final vowels get `ː` so Kitten does not reduce them.
  */
 export function wordIpaPhones(word: PhonemeWord): string {
   let out = "";
-  let prevEndedVowel = false;
   const last = word.syllables.length - 1;
   for (let i = 0; i < word.syllables.length; i++) {
     const syl = word.syllables[i]!;
-    const first = syl.phones[0];
-    let piece = syl.ipa;
-    if (prevEndedVowel && first?.vowel && !piece.startsWith("ˈ")) {
-      piece = `ˈ${piece}`;
-    }
-    if (i !== last) piece = kittenLengthNucleus(syl, piece);
-    out += piece;
-    prevEndedVowel = syl.phones.at(-1)?.vowel ?? false;
+    out += i !== last ? kittenLengthNucleus(syl, syl.ipa) : syl.ipa;
   }
   return out;
 }

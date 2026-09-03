@@ -20,14 +20,13 @@ describe("normalizeIpaForKitten", () => {
     assert.equal(normalizeIpaForKitten("ʌɦɡɹʒʃ"), "ʌɦɡɹʒʃ");
   });
 
-  it("keeps citation dots and Kitten stress at hiatus", () => {
+  it("keeps citation dots and lengthens non-final vowels for Kitten", () => {
     const word = toPhonemeWord("zazawan");
     assert.equal(word.ipa, "zɑ.zɑ.wɑn");
     assert.equal(wordIpaPhones(word), "zɑːzɑːwɑn");
     const juon = toPhonemeWord("juon");
     assert.equal(juon.ipa, "jʌ.on");
-    assert.equal(wordIpaPhones(juon), "jʌːˈon");
-    assert.equal(normalizeIpaForKitten("jʌˈon"), "jʌˈon");
+    assert.equal(wordIpaPhones(juon), "jʌːon");
     assert.equal(wordIpaPhones(toPhonemeWord("gomonum")), "ɡoːmoːnʌm");
     assert.equal(wordIpaPhones(toPhonemeWord("guzumum")), "ɡʌːzʌːmʌm");
     assert.equal(wordIpaPhones(toPhonemeWord("jal")), "jɑl");
@@ -51,9 +50,10 @@ describe("ipaToKittenIds", () => {
     assert.ok(!ids.includes(textToKittenIds(".")[0]!));
   });
 
-  it("maps hiatus stress into Kitten ids", () => {
+  it("does not inject hiatus stress on stacked vowels", () => {
     const ids = ipaToKittenIds(wordIpaPhones(toPhonemeWord("juon")));
-    assert.ok(ids.includes(textToKittenIds("ˈ")[0]!));
+    assert.ok(ids.includes(textToKittenIds("ː")[0]!));
+    assert.ok(!ids.includes(textToKittenIds("ˈ")[0]!));
   });
 });
 
