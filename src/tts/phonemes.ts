@@ -2,9 +2,7 @@
  * Grapheme → phoneme for native Agalan spelling.
  * IPA targets are from docs/grammar/phonology.md.
  *
- * Engine tokens are lowercase Latin respellings (one per syllable). This WASM
- * eSpeak does not honor `[[phoneme]]` input, so Kirshenbaum / `A:` / CamelCase
- * is spoken as English punctuation and letter names.
+ * Browser Speak maps this IPA to KittenTTS input_ids (see kitten-ids.ts).
  */
 
 const VOWELS = new Set(["e", "u", "o", "a"]);
@@ -29,31 +27,6 @@ const LETTER_IPA: Record<string, string> = {
   x: "ʒ",
 };
 
-/** English-voice cue spellings so eSpeak reads a syllable as one word, not letters. */
-const VOWEL_ENGINE: Record<string, string> = {
-  a: "ah",
-  e: "eh",
-  u: "uh",
-  o: "oh",
-};
-
-const CONS_ENGINE: Record<string, string> = {
-  h: "h",
-  w: "w",
-  g: "g",
-  d: "d",
-  j: "y",
-  b: "b",
-  z: "z",
-  m: "m",
-  n: "n",
-  v: "v",
-  l: "l",
-  r: "r",
-  x: "zh",
-  sh: "sh",
-};
-
 export type Phone = {
   letter: string;
   ipa: string;
@@ -65,32 +38,13 @@ export type Phone = {
 export type Syllable = {
   phones: Phone[];
   ipa: string;
-  /** One lowercase token; eSpeak treats spaces as word (syllable) breaks. */
-  engine: string;
 };
 
 export type PhonemeWord = {
   raw: string;
   syllables: Syllable[];
+  /** Syllable IPA joined with dots (display / citation). */
   ipa: string;
-  /** Syllable engine tokens joined with spaces. */
-  engine: string;
-};
-
-export type EngineSyllable = {
-  text: string;
-  ipa: string;
-};
-
-export type EngineWord = {
-  raw: string;
-  syllables: EngineSyllable[];
-};
-
-export type EngineUtterance = {
-  words: EngineWord[];
-  /** Flattened string sent to eSpeak (syllable tokens + punctuation). */
-  text: string;
 };
 
 const NATIVE_WORD = /^[aegouhwdjbzmnvlrx]+(?:sh)?$/;
@@ -99,13 +53,9 @@ export function isNativeSurface(raw: string): boolean {
   return NATIVE_WORD.test(raw);
 }
 
-export function engineTokenFromPhones(phones: Phone[]): string {
-  let out = "";
-  for (const phone of phones) {
-    if (phone.vowel) out += VOWEL_ENGINE[phone.letter] ?? "ah";
-    else out += CONS_ENGINE[phone.letter] ?? phone.letter;
-  }
-  return out;
+/** Concatenate syllable IPA without dots — one Kitten word token. */
+export function wordIpaPhones(word: PhonemeWord): string {
+  return word.syllables.map((s) => s.ipa).join("");
 }
 
 function phonesOf(raw: string): Phone[] {
@@ -140,7 +90,6 @@ export function syllabify(phones: Phone[]): Syllable[] {
       if (last) {
         last.phones.push(...leftover);
         last.ipa = last.phones.map((p) => p.ipa).join("");
-        last.engine = engineTokenFromPhones(last.phones);
       } else {
         syllables.push(syllableFrom(leftover));
       }
@@ -156,7 +105,7 @@ export function syllabify(phones: Phone[]): Syllable[] {
 
 function syllableFrom(phones: Phone[], stress: ReadonlySet<number> = new Set()): Syllable {
   const ipa = phones.map((p) => (p.vowel && stress.has(p.index) ? `ˈ${p.ipa}` : p.ipa)).join("");
-  return { phones, ipa, engine: engineTokenFromPhones(phones) };
+  return { phones, ipa };
 }
 
 export function toPhonemeWord(
@@ -169,18 +118,5 @@ export function toPhonemeWord(
     raw,
     syllables,
     ipa: syllables.map((s) => s.ipa).join("."),
-    engine: syllables.map((s) => s.engine).join(" "),
   };
-}
-
-export function toEngineWord(word: PhonemeWord): EngineWord {
-  return {
-    raw: word.raw,
-    syllables: word.syllables.map((s) => ({ text: s.engine, ipa: s.ipa })),
-  };
-}
-
-/** eSpeak word tokens in engine text (letters only). Matches one token per syllable. */
-export function engineSyllableTokens(text: string): string[] {
-  return text.split(/[^a-z]+/).filter(Boolean);
 }

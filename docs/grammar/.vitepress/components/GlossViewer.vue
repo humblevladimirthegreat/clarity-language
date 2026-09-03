@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 import { inspectText, type InspectResult } from '@parse-browser'
 import { useClassifyTables } from '../composables/useClassifyTables'
 import { useAgelanSpeak } from '../composables/useAgelanSpeak'
+import { warmupSpeak } from '../lib/speak-engine'
 import GlossOverlay from './GlossOverlay.vue'
 
 const SAMPLE = 'zazawan vawalal.'
@@ -21,6 +22,12 @@ const result = computed<InspectResult>(() => {
 
 const spokenPreview = computed(() => lineFor(text.value))
 const ipaPreview = computed(() => ipaFor(text.value))
+
+onMounted(() => {
+  void warmupSpeak().catch(() => {
+    /* prefetch failure surfaces on Speak click */
+  })
+})
 </script>
 
 <template>

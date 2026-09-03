@@ -2,6 +2,8 @@ node_modules/
 dist/
 docs/grammar/.vitepress/cache
 docs/grammar/.vitepress/dist
+docs/grammar/public/tts/kitten_tts_nano_v0_8.onnx
+docs/grammar/public/tts/voices.npz
 .DS_Store
 *.log
 .env

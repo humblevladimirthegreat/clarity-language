@@ -30,5 +30,11 @@ export type {
   SpeechToken,
 } from "./tts/plan.js";
 export { numberStemToSpeech, numberStemToSpeechStressed, numberWordToSpeech, numberWordToSpeechStressed } from "./tts/numbers.js";
-export { engineSyllableTokens, isNativeSurface, toEngineWord, toPhonemeWord } from "./tts/phonemes.js";
-export type { EngineSyllable, EngineUtterance, EngineWord, PhonemeWord, Syllable } from "./tts/phonemes.js";
+export {
+  ipaPhonemesToKittenIdChunks,
+  ipaToKittenIds,
+  KittenTextCleaner,
+  normalizeIpaForKitten,
+} from "./tts/kitten-ids.js";
+export { isNativeSurface, toPhonemeWord, wordIpaPhones } from "./tts/phonemes.js";
+export type { PhonemeWord, Syllable } from "./tts/phonemes.js";

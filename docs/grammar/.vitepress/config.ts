@@ -1,6 +1,7 @@
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vitepress'
 import { injectInArticleToc } from './lib/inject-in-article-toc'
+import { ortWasmPlugin } from './lib/ort-wasm-plugin'
 
 const repoRoot = fileURLToPath(new URL('../../..', import.meta.url))
 const dataDir = fileURLToPath(new URL('../../../data', import.meta.url))
@@ -46,6 +47,7 @@ export default defineConfig({
   cleanUrls: false,
   ignoreDeadLinks: false,
   vite: {
+    plugins: [ortWasmPlugin(repoRoot, '/grammar/')],
     resolve: {
       alias: {
         '@data': dataDir,
@@ -53,6 +55,9 @@ export default defineConfig({
         '@parse-browser': `${srcDir}/parse/browser.ts`,
         '@tts-browser': `${srcDir}/tts/browser.ts`,
       },
+    },
+    optimizeDeps: {
+      exclude: ['onnxruntime-web'],
     },
     server: {
       fs: {

@@ -2,12 +2,11 @@ import { parse as peggyParse } from "../generated/word-parser.js";
 import { segmentUtterance, type TokenizeSegment } from "../parse/tokenize.js";
 import type { MorphWord, PunctKind } from "../parse/types.js";
 import { parseWord } from "../parse/word.js";
+import { ipaPhonemesToKittenIdChunks, ipaToKittenIds } from "./kitten-ids.js";
 import {
   isNativeSurface,
-  toEngineWord,
   toPhonemeWord,
-  type EngineUtterance,
-  type EngineWord,
+  wordIpaPhones,
   type PhonemeWord,
 } from "./phonemes.js";
 import { numberWordToSpeechStressed } from "./numbers.js";
@@ -39,9 +38,12 @@ export type SpeechPlan = {
 export type PhonemePlan = {
   words: PhonemeWord[];
   skipped: { raw: string; reason: SkipReason }[];
-  utterance: EngineUtterance;
-  /** Flattened eSpeak input: one lowercase token per syllable. */
-  engineText: string;
+  /** Word-spaced IPA phoneme stream for Kitten (no syllable dots). */
+  ipaPhonemes: string;
+  /** Kitten TextCleaner token ids ([0, …ids, 10, 0]). */
+  inputIds: number[];
+  /** Id chunks when the utterance exceeds Kitten's length cap. */
+  inputIdChunks: number[][];
 };
 
 type FramingRole = "force" | "polar" | "vocative" | "linker" | "clauseJoin" | "reviser" | "ordinary";
@@ -226,7 +228,7 @@ export function previewSpeech(text: string): SpeechPlan {
   return buildPlan(toSpeechText(text));
 }
 
-function boundaryToEngine(tag: BoundaryTag): string {
+function boundaryToPhoneme(tag: BoundaryTag): string {
   switch (tag) {
     case "qmark":
       return "?";
@@ -247,40 +249,39 @@ function boundaryToEngine(tag: BoundaryTag): string {
 
 export function toPhonemes(plan: SpeechPlan): PhonemePlan {
   const words: PhonemeWord[] = [];
-  const engineWords: EngineWord[] = [];
-  const parts: EnginePart[] = [];
+  const parts: IpaPart[] = [];
   let islandDepth = 0;
 
   for (const token of plan.tokens) {
     if (token.kind === "word") {
       const phoneme = toPhonemeWord(token.raw, token.stress);
-      const engineWord = toEngineWord(phoneme);
       words.push(phoneme);
-      engineWords.push(engineWord);
-      parts.push({ word: engineWord, inIsland: islandDepth > 0 });
+      parts.push({ word: phoneme, inIsland: islandDepth > 0 });
       continue;
     }
 
     if (token.kind === "boundary") {
       if (token.tag === "islandEnter") islandDepth++;
       else if (token.tag === "islandExit") islandDepth = Math.max(0, islandDepth - 1);
-      parts.push({ punct: boundaryToEngine(token.tag) });
+      parts.push({ punct: boundaryToPhoneme(token.tag) });
     }
   }
 
-  const engineText = renderEngineText(parts);
+  const ipaPhonemes = renderIpaPhonemes(parts);
+  const inputIdChunks = ipaPhonemesToKittenIdChunks(ipaPhonemes);
   return {
     words,
     skipped: plan.skipped,
-    utterance: { words: engineWords, text: engineText },
-    engineText,
+    ipaPhonemes,
+    inputIds: ipaToKittenIds(ipaPhonemes),
+    inputIdChunks,
   };
 }
 
-type EnginePart = { word: EngineWord; inIsland: boolean; punct?: undefined } | { punct: string; word?: undefined };
+type IpaPart = { word: PhonemeWord; inIsland: boolean; punct?: undefined } | { punct: string; word?: undefined };
 
-/** Join syllable tokens; spaces are eSpeak word breaks (one syllable each). */
-export function renderEngineText(parts: EnginePart[]): string {
+/** Join word IPA with spaces; punctuation appended without extra spaces. */
+export function renderIpaPhonemes(parts: IpaPart[]): string {
   if (parts.length === 0) return "";
   const chunks: string[] = [];
   let wordRun: string[] = [];
@@ -304,7 +305,7 @@ export function renderEngineText(parts: EnginePart[]): string {
     }
 
     runInIsland = part.inIsland;
-    wordRun.push(part.word.syllables.map((s) => s.text).join(" "));
+    wordRun.push(wordIpaPhones(part.word));
   }
 
   flushWords();
@@ -316,7 +317,7 @@ export function previewPhonemes(text: string): PhonemePlan {
 }
 
 function boundaryRaw(tag: BoundaryTag): string {
-  return boundaryToEngine(tag);
+  return boundaryToPhoneme(tag);
 }
 
 export function skipLabel(reason: SkipReason): string {

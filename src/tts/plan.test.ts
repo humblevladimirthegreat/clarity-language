@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
+import { KITTEN_END_MARKER_ID } from "./kitten-ids.js";
 import { previewPhonemes, previewSpeech } from "./plan.js";
 
 function boundaryTags(plan: ReturnType<typeof previewSpeech>): string[] {
@@ -117,31 +118,33 @@ describe("previewPhonemes", () => {
       plan.words.map((w) => w.ipa),
       ["zɑ.zɑ.wɑn", "ɡʌ.zʌ.mʌm"],
     );
-    assert.equal(plan.engineText, "zah zah wahn guh zuh muhm.");
+    assert.equal(plan.ipaPhonemes, "zɑzɑwɑn ɡʌzʌmʌm.");
   });
 
-  it("keeps one engine token per syllable without caps, colons, or brackets", () => {
+  it("builds Kitten ids with word-spaced IPA phones", () => {
     const plan = previewPhonemes("zazawan vawalal.");
-    const tokens = plan.utterance.words.flatMap((w) => w.syllables.map((s) => s.text));
-    assert.deepEqual(tokens, ["zah", "zah", "wahn", "vah", "wah", "lahl"]);
-    assert.equal(tokens.length, plan.words.reduce((n, w) => n + w.syllables.length, 0));
-    assert.doesNotMatch(plan.engineText, /[:_[\]A-Z]/);
-    assert.match(plan.engineText, /^[a-z .,!?]+$/);
+    assert.equal(plan.ipaPhonemes, "zɑzɑwɑn vɑwɑlɑl.");
+    assert.equal(plan.inputIds[0], 0);
+    assert.equal(plan.inputIds.at(-2), KITTEN_END_MARKER_ID);
+    assert.equal(plan.inputIds.at(-1), 0);
+    for (const word of plan.words) {
+      assert.ok(!word.syllables.map((s) => s.ipa).join("").includes("."));
+    }
   });
 
   it("includes punctuation cue between phoneme spans", () => {
     const plan = previewPhonemes("zazawan vawalal?");
-    assert.match(plan.engineText, /\?$/);
+    assert.match(plan.ipaPhonemes, /\?$/);
   });
 
   it("uses comma dip before discourse linker", () => {
     const plan = previewPhonemes("zazawan vawalal. xamalal zululon vurunul.");
-    assert.match(plan.engineText, /\.,/);
+    assert.match(plan.ipaPhonemes, /\.,/);
   });
 
-  it("uses tighter spacing inside islands", () => {
+  it("keeps word spaces inside islands without comma between words", () => {
     const plan = previewPhonemes("^ zazawan vawalal ^");
-    assert.match(plan.engineText, /zah zah wahn vah wah lahl/);
-    assert.doesNotMatch(plan.engineText, /wahn, vah/);
+    assert.match(plan.ipaPhonemes, /zɑzɑwɑn vɑwɑlɑl/);
+    assert.doesNotMatch(plan.ipaPhonemes, /wɑn, vɑ/);
   });
 });

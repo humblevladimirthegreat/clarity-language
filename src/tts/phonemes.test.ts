@@ -1,7 +1,48 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
-import { engineSyllableTokens, isNativeSurface, toPhonemeWord } from "./phonemes.js";
+import {
+  ipaToKittenIds,
+  KITTEN_END_MARKER_ID,
+  normalizeIpaForKitten,
+  textToKittenIds,
+} from "./kitten-ids.js";
+import { isNativeSurface, toPhonemeWord } from "./phonemes.js";
+
+describe("normalizeIpaForKitten", () => {
+  it("maps e̞ to ASCII e", () => {
+    assert.equal(normalizeIpaForKitten("e̞"), "e");
+    assert.equal(normalizeIpaForKitten("ɡle̞"), "ɡle");
+  });
+
+  it("keeps Agalan inventory phones", () => {
+    assert.equal(normalizeIpaForKitten("zɑzɑwɑn"), "zɑzɑwɑn");
+    assert.equal(normalizeIpaForKitten("ʌɦɡɹʒʃ"), "ʌɦɡɹʒʃ");
+  });
+
+  it("does not treat syllable dots as phone separators in word IPA", () => {
+    const word = toPhonemeWord("zazawan");
+    assert.equal(word.ipa, "zɑ.zɑ.wɑn");
+    assert.equal(word.syllables.map((s) => s.ipa).join(""), "zɑzɑwɑn");
+  });
+});
+
+describe("ipaToKittenIds", () => {
+  it("wraps with start pad, end marker, and end pad", () => {
+    const ids = ipaToKittenIds("zɑzɑwɑn");
+    assert.equal(ids[0], 0);
+    assert.equal(ids.at(-2), KITTEN_END_MARKER_ID);
+    assert.equal(ids.at(-1), 0);
+  });
+
+  it("maps zazawan phones without syllable dots", () => {
+    const word = toPhonemeWord("zazawan");
+    const ids = ipaToKittenIds(word.syllables.map((s) => s.ipa).join(""));
+    assert.ok(ids.includes(textToKittenIds("z")[0]!));
+    assert.ok(ids.includes(textToKittenIds("ɑ")[0]!));
+    assert.ok(!ids.includes(textToKittenIds(".")[0]!));
+  });
+});
 
 describe("toPhonemeWord", () => {
   it("maps the phonology letter table", () => {
@@ -23,16 +64,12 @@ describe("toPhonemeWord", () => {
       ["jʌ", "on"],
     );
     assert.equal(word.ipa, "jʌ.on");
-    assert.deepEqual(
-      word.syllables.map((s) => s.engine),
-      ["yuh", "ohn"],
-    );
   });
 
   it("keeps word-final -sh as /ʃ/ (zazawansh)", () => {
     const word = toPhonemeWord("zazawansh");
     assert.equal(word.ipa, "zɑ.zɑ.wɑnʃ");
-    assert.equal(word.syllables.at(-1)?.engine.endsWith("sh"), true);
+    assert.equal(word.syllables.at(-1)?.ipa.endsWith("ʃ"), true);
   });
 
   it("treats mid-word x as /ʒ/ (zugoboxrawon)", () => {
@@ -44,27 +81,11 @@ describe("toPhonemeWord", () => {
   it("keeps gl- as an onset cluster (glelulul)", () => {
     const word = toPhonemeWord("glelulul");
     assert.equal(word.ipa, "ɡle̞.lʌ.lʌl");
-    assert.deepEqual(
-      word.syllables.map((s) => s.engine),
-      ["gleh", "luh", "luhl"],
-    );
   });
 
   it("matches the phonology try-it line", () => {
     assert.equal(toPhonemeWord("zazawan").ipa, "zɑ.zɑ.wɑn");
     assert.equal(toPhonemeWord("guzumum").ipa, "ɡʌ.zʌ.mʌm");
-  });
-
-  it("emits one lowercase engine token per syllable (eSpeak word breaks, no audio)", () => {
-    const word = toPhonemeWord("zazawan");
-    assert.deepEqual(
-      word.syllables.map((s) => s.engine),
-      ["zah", "zah", "wahn"],
-    );
-    assert.equal(word.engine, "zah zah wahn");
-    assert.deepEqual(engineSyllableTokens(word.engine), word.syllables.map((s) => s.engine));
-    assert.equal(engineSyllableTokens(word.engine).length, word.syllables.length);
-    assert.match(word.engine, /^[a-z]+(?: [a-z]+)*$/);
   });
 });
 

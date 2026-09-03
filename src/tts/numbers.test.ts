@@ -143,15 +143,16 @@ describe("numberWordToSpeechStressed", () => {
     }
   });
 
-  it("marks group-final stress in IPA, not in engine tokens", async () => {
+  it("marks group-final stress in IPA as a Kitten symbol", async () => {
     const { previewPhonemes } = await import("./plan.js");
+    const { textToKittenIds } = await import("./kitten-ids.js");
     const plan = previewPhonemes("g+27e12.");
     const word = plan.words[0]!;
     const stressed = word.syllables.filter((s) => s.ipa.includes("ˈ"));
     assert.equal(stressed.length, 1);
-    assert.doesNotMatch(word.engine, /[':]/);
+    assert.ok(textToKittenIds("ˈ").length > 0);
     const multi = previewPhonemes("g+5e3,860,4e-2.");
     assert.equal(multi.words[0]!.syllables.filter((s) => s.ipa.includes("ˈ")).length, 3);
-    assert.doesNotMatch(multi.engineText, /[:_[\]A-Z]/);
+    assert.ok(multi.ipaPhonemes.includes("ˈ"));
   });
 });

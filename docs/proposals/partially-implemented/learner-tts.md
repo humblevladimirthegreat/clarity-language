@@ -208,7 +208,7 @@ Accessibility: Play button has an accessible name (“Speak Agalan”); do not a
 |-------|-------|-------|
 | Parser (already planned) | Yes | Shared with gloss / speed-reading tools |
 | `toSpeech` + `toPhonemes` | Yes | Small pure TS |
-| eSpeak-NG WASM + voice data | Lazy | Dominates TTS weight; load on first Play |
+| eSpeak-NG WASM + voice data | **Replaced** | Shipped engine is KittenTTS nano ONNX (IPA `input_ids` in); lazy-load removed — **Inspect** prefetches on mount |
 | `speechSynthesis` | Optional | Loan islands only; no extra bytes |
 
 Expect the WASM voice pack to dwarf the TS glue; keep it out of the critical render path.

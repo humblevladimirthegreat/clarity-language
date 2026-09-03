@@ -3,7 +3,7 @@ import { previewPhonemes, previewSpeech, skipLabel } from "./plan.js";
 
 const text = process.argv.slice(2).join(" ").trim();
 if (!text) {
-  console.error('Usage: npm run speak -- \'<Agelan text>\'');
+  console.error('Usage: npm run speak -- \'<Agalan text>\'');
   process.exit(1);
 }
 
@@ -15,7 +15,8 @@ if (speech.spoken.length === 0) {
 } else {
   console.log(`Spoken: ${speech.spoken.join(" ")}`);
   console.log(`IPA: ${phonemes.words.map((w) => w.ipa).join("  ")}`);
-  console.log(`Engine: ${phonemes.engineText}`);
+  console.log(`Kitten IPA: ${phonemes.ipaPhonemes}`);
+  console.log(`Ids: ${phonemes.inputIds.join(",")}`);
 }
 
 const notable = speech.skipped;
