@@ -1,6 +1,13 @@
 import { previewPhonemes, skipLabel, type PhonemePlan } from '@tts-browser'
+import {
+  ESPEAK_SAMPLE_RATE,
+  concatMono,
+  decodeSamples,
+  isAudioPayload,
+} from './speak-audio.js'
 
 type ESpeakNGHandle = {
+  worker?: Worker
   set_rate: (value: number) => void
   set_pitch: (value: number) => void
   set_voice: (voice: string) => void
@@ -12,7 +19,7 @@ type ESpeakNGHandle = {
 
 type ESpeakNGCtor = new (workerPath: string, ready: () => void) => ESpeakNGHandle
 
-const SAMPLE_RATE = 22050
+const SAMPLE_RATE = ESPEAK_SAMPLE_RATE
 
 let enginePromise: Promise<ESpeakNGHandle> | null = null
 let audioCtx: AudioContext | null = null
@@ -50,6 +57,11 @@ async function getEngine(): Promise<ESpeakNGHandle> {
           settled = true
           resolve(tts)
         })
+        tts.worker?.addEventListener('error', () => {
+          if (settled) return
+          settled = true
+          reject(new Error('eSpeak-NG worker failed to load'))
+        })
         window.setTimeout(() => {
           if (settled) return
           settled = true
@@ -64,61 +76,62 @@ async function getEngine(): Promise<ESpeakNGHandle> {
   return enginePromise
 }
 
-function decodeSamples(samples: ArrayBuffer | ArrayLike<number>): Float32Array {
-  if (samples instanceof ArrayBuffer) {
-    const stereo = new Float32Array(samples)
-    const mono = new Float32Array(Math.floor(stereo.length / 2))
-    for (let i = 0; i < mono.length; i++) mono[i] = stereo[i * 2] ?? 0
-    return mono
-  }
-  const out = new Float32Array(samples.length)
-  let max = 0
-  for (let i = 0; i < samples.length; i++) {
-    const value = samples[i] ?? 0
-    if (Math.abs(value) > max) max = Math.abs(value)
-  }
-  const scale = max > 1.5 ? 1 / 32768 : 1
-  for (let i = 0; i < samples.length; i++) out[i] = (samples[i] ?? 0) * scale
-  return out
+function unlockAudio(): AudioContext {
+  const ctx = audioCtx ?? new AudioContext({ sampleRate: SAMPLE_RATE })
+  audioCtx = ctx
+  void ctx.resume()
+  return ctx
 }
 
-function playSamples(samples: ArrayBuffer | ArrayLike<number>): Promise<void> {
-  stopSpeaking()
-  const ctx = audioCtx ?? new AudioContext()
-  audioCtx = ctx
-  const data = decodeSamples(samples)
-  if (data.length === 0) return Promise.resolve()
+function stopCurrentSource(): void {
+  try {
+    currentSource?.stop()
+  } catch {
+    /* already stopped */
+  }
+  currentSource = null
+}
+
+function playSamples(data: Float32Array): Promise<void> {
+  stopCurrentSource()
+  const ctx = unlockAudio()
+  if (data.length === 0) throw new Error('eSpeak-NG returned empty audio')
   const buffer = ctx.createBuffer(1, data.length, SAMPLE_RATE)
   buffer.copyToChannel(data, 0)
   const source = ctx.createBufferSource()
   currentSource = source
   source.buffer = buffer
   source.connect(ctx.destination)
-  return new Promise((resolve) => {
+  return new Promise((resolve, reject) => {
     source.onended = () => {
       if (currentSource === source) currentSource = null
       resolve()
     }
-    void ctx.resume()
-    source.start()
+    void ctx.resume().then(() => {
+      source.start()
+    }, reject)
   })
 }
 
-function isAudioPayload(value: unknown): value is ArrayBuffer | ArrayLike<number> {
-  if (value instanceof ArrayBuffer) return value.byteLength > 0
-  if (ArrayBuffer.isView(value)) return value.byteLength > 0
-  return Boolean(value && typeof value === 'object' && 'length' in value && (value as ArrayLike<number>).length > 16)
-}
-
-function synthesize(engine: ESpeakNGHandle, phonemeText: string, rate: number): Promise<ArrayBuffer | ArrayLike<number>> {
+function synthesize(engine: ESpeakNGHandle, phonemeText: string, rate: number): Promise<Float32Array> {
   return new Promise((resolve, reject) => {
+    const chunks: Float32Array[] = []
     let settled = false
     engine.set_voice('en')
     engine.set_rate(rate)
     engine.synthesize(phonemeText, (samples) => {
-      if (settled || !isAudioPayload(samples)) return
+      if (settled) return
+      if (isAudioPayload(samples)) {
+        chunks.push(decodeSamples(samples))
+        return
+      }
+      if (samples != null) return
       settled = true
-      resolve(samples)
+      if (chunks.length === 0) {
+        reject(new Error('eSpeak-NG returned empty audio'))
+        return
+      }
+      resolve(concatMono(chunks))
     })
     window.setTimeout(() => {
       if (settled) return
@@ -136,12 +149,7 @@ function espeakRate(rate: number | undefined): number {
 
 export function stopSpeaking(): void {
   playToken += 1
-  try {
-    currentSource?.stop()
-  } catch {
-    /* already stopped */
-  }
-  currentSource = null
+  stopCurrentSource()
 }
 
 export async function speakPlan(plan: PhonemePlan, opts?: { rate?: number }): Promise<void> {
@@ -150,6 +158,7 @@ export async function speakPlan(plan: PhonemePlan, opts?: { rate?: number }): Pr
     const extra = skip ? skipLabel(skip.reason) : 'no native words'
     throw new Error(`Nothing to speak — ${extra}`)
   }
+  unlockAudio()
   const mine = ++playToken
   const engine = await getEngine()
   if (mine !== playToken) return

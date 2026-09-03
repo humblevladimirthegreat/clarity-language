@@ -1,5 +1,6 @@
 import type { RectLike } from './popoverPlacement.js'
 import { unionRect } from './popoverPlacement.js'
+import { TOKEN_INDEX_ATTR, selectionToTokenRange } from './selectionToTokens.js'
 
 export function tokenElement(root: Element, index: number): Element | null {
   return root.querySelector(`[${TOKEN_INDEX_ATTR}="${index}"]`)
