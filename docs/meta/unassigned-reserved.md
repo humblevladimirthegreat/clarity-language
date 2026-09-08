@@ -141,6 +141,6 @@ Source: [phonology.md](../grammar/phonology.md)
 
 | Page | Role |
 |------|------|
-| [grammar-docs.md](grammar-docs.md) | Grammar prose — unused slots do not earn a band |
+| [grammar-docs.md](grammar-docs.md) | Grammar prose — unused slots do not earn a stage |
 | [drill-generation.md](drill-generation.md) | Do not drill cells listed here |
 | [TODO.md](../../TODO.md) | Rejected / speculative features, open lexicon |

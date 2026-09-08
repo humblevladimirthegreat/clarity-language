@@ -1,14 +1,14 @@
 # Generate translation drills
 
-Executable editor policy: add end-of-band Eng ↔ Agalan checkpoints to learner grammar pages without using forms the learner has not been taught.
+Executable editor policy: add end-of-stage Eng ↔ Agalan checkpoints to learner grammar pages without using forms the learner has not been taught.
 
-**How to invoke.** Point here and name a grammar file (or one band). No extra prompt is required:
+**How to invoke.** Point here and name a grammar file (or one stage). No extra prompt is required:
 
 - *Execute [drill-generation.md](drill-generation.md) to generate the drills for `coordination.md`.*
 - *… for `docs/grammar/questions.md` Intermediate.*
 - *… for core Beginner* (already exists — skip unless asked to replace).
 
-This page owns **path allowlist**, **root bank**, and **generation procedure**. Drill *shape* (spoiler template, house names, item counts) stays in [translation-exercises.md](translation-exercises.md). Banding: [learning-levels.md](learning-levels.md#cross-doc-path). Example prose: [grammar-docs.md](grammar-docs.md). Grammar pages must **not** link here.
+This page owns **path allowlist**, **root bank**, and **generation procedure**. Drill *shape* (spoiler template, house names, item counts) stays in [translation-exercises.md](translation-exercises.md). Stages: [learning-levels.md](learning-levels.md#cross-doc-path). Example prose: [grammar-docs.md](grammar-docs.md). Grammar pages must **not** link here.
 
 ## Execute
 <a id="execute"></a>
@@ -17,12 +17,12 @@ Run these steps in order. Stop if a step says stop.
 
 ### 1. Resolve the target
 
-Parse the user’s file/band from their message. Accept `coordination`, `coordination.md`, `docs/grammar/coordination.md`. Optional band word: **Beginner** / **Intermediate** / **Advanced**.
+Parse the user’s file/stage from their message. Accept `coordination`, `coordination.md`, `docs/grammar/coordination.md`. Optional stage word: **Beginner** / **Intermediate** / **Advanced**.
 
 | Target | Action |
 |--------|--------|
-| One grammar file, no band | Generate **every missing** checkpoint for that file (table below), **Beginner then Intermediate then Advanced** |
-| One file + one band | Generate **only** that band’s checkpoint |
+| One grammar file, no stage | Generate **every missing** checkpoint for that file (table below), **Beginner then Intermediate then Advanced** |
+| One file + one stage | Generate **only** that stage’s checkpoint |
 | Several files, “all pages”, or no file | **Do not start.** Reply with: process **one file per invocation**; list remaining [generate](#allowlist) files that still lack a checkpoint. Stop |
 | A [skip](#skip) file | Say it is skipped and why. Stop |
 
@@ -36,9 +36,9 @@ Find the row(s) in the [allowlist](#allowlist).
 
 | Status | Action |
 |--------|--------|
-| **skip** | Do not add a checkpoint. Continue to the next band if the target was the whole file |
+| **skip** | Do not add a checkpoint. Continue to the next stage if the target was the whole file |
 | **exists** | Leave it unless the user said **replace**. Continue |
-| **generate** | Add the checkpoint if the heading is missing. If `### Translation practice` already sits at the end of that band, treat as **exists** |
+| **generate** | Add the checkpoint if the heading is missing. If `### Translation practice` already sits at the end of that stage, treat as **exists** |
 
 ### 3. What you may read
 
@@ -48,12 +48,12 @@ Find the row(s) in the [allowlist](#allowlist).
 - [translation-exercises.md](translation-exercises.md) (principles + template)
 - [grammar-docs.md](grammar-docs.md#house-cast) (house people)
 - [glosses.md](glosses.md#house-cast) (name glosses — not needed inside spoilers)
-- **This band only** of the target file (`## Beginner` *or* `## Intermediate` *or* `## Advanced`) plus the page title / **Needs:** line
-- Worked examples **inside that band** (they are the gold corpus)
+- **This stage only** of the target file (`## Beginner` *or* `## Intermediate` *or* `## Advanced`) plus the page title / **Needs:** line
+- Worked examples **inside that stage** (they are the gold corpus)
 
-**Do not open** later path files, later bands of this file, `data/lexicon-published.csv` for tourism, or `docs/examples/` for item ideas.
+**Do not open** later path files, later stages of this file, `data/lexicon-published.csv` for tourism, or `docs/examples/` for item ideas.
 
-If this band’s own examples leak a later form (e.g. COMMENT + **`jom`** before core Intermediate), **do not copy the leak**. Use a legal recycle form instead.
+If this stage’s own examples leak a later form (e.g. COMMENT + **`jom`** before core Intermediate), **do not copy the leak**. Use a legal recycle form instead.
 
 ### 4. Recycle vs introduce
 
@@ -61,7 +61,7 @@ Every word in every spoiler must be one of:
 
 1. This row’s **Introduces** (most items must *test* these)
 2. This row’s **Recycle** set ([how recycle is computed](#recycle))
-3. A root from the [shared bank](#root-bank) **or** a root that already appears in this band’s worked examples
+3. A root from the [shared bank](#root-bank) **or** a root that already appears in this stage’s worked examples
 4. Closed punctuation / speech act already in recycle (`jol`, omitted **`jal`**, `.`)
 
 If you cannot certify a token, drop the item. Do not guess from English.
@@ -72,12 +72,12 @@ If you cannot certify a token, drop the item. Do not guess from English.
 - Same-slot **sibling** Introduces ([slots](#slots))
 - Optional-track forms (numbers Intermediate / Advanced, numeric-derivation) unless this row is on that track or lists them
 - Dummy *I* / *you* (`zugobon` / `zedonen`) unless this page is teaching those specials
-- Foreign `PoS<…>ENDING` unless this band is teaching loans / spans
+- Foreign `PoS<…>ENDING` unless this stage is teaching loans / spans
 - Intermediate / Advanced speech-act twins (`jam` / `jom` / `jem` / `jum`), **`gl-`**, sentence linkers, nested **`adoro`**, unless recycle includes **core Intermediate**
 
 ### 5. Write the checkpoint
 
-Place **`### Translation practice`** at the **end of the band**, immediately before the next `## Intermediate` / `## Advanced` / `## See also` / end of file. Do not insert after every H3. Do not add a second checkpoint in the same band unless the allowlist row says **split**.
+Place **`### Translation practice`** at the **end of the stage**, immediately before the next `## Intermediate` / `## Advanced` / `## See also` / end of file. Do not insert after every H3. Do not add a second checkpoint in the same stage unless the allowlist row says **split**.
 
 Anchors:
 
@@ -87,7 +87,7 @@ Anchors:
 | Intermediate | `<a id="translation-practice-intermediate"></a>` |
 | Advanced | `<a id="translation-practice-advanced"></a>` |
 
-Follow the [template](translation-exercises.md#template). Lead: *Short drills on this Beginner/Intermediate/Advanced band. Try each item before opening **Show answer**.* List **Roots used here** once (shared bank subset + this band’s extra roots).
+Follow the [template](translation-exercises.md#template). Lead: *Short drills for Beginner/Intermediate/Advanced. Try each item before opening **Show answer**.* List **Roots used here** once (shared bank subset + this stage’s extra roots).
 
 | Band kind | Items per direction |
 |-----------|---------------------|
@@ -95,7 +95,7 @@ Follow the [template](translation-exercises.md#template). Lead: *Short drills on
 | Intermediate, productive | **6–8** |
 | Advanced, or a thin generate row | **4–6** |
 
-Both directions. Spoilers = Agalan sentence or **loose** free English only — no morph-gloss lecture. Omit recoverable **`jal`**. House names in English prompts (*Azawan walks*). Close variants of **this band’s worked examples**; test the decision the band taught ([principles](translation-exercises.md#principles)).
+Both directions. Spoilers = Agalan sentence or **loose** free English only — no morph-gloss lecture. Omit recoverable **`jal`**. House names in English prompts (*Azawan walks*). Close variants of **this stage’s worked examples**; test the decision this stage taught ([principles](translation-exercises.md#principles)).
 
 ### 6. Self-check, then lint
 
@@ -148,14 +148,14 @@ No translation checkpoint (recognition, orientation, or no new productive stack)
 
 | File | Why |
 |------|-----|
-| `why-agelan.md` | Orientation, not a learning band |
+| `why-agelan.md` | Orientation, not a learning stage |
 | `introduction.md` | Orientation |
 | `index.md` | Site include of why-agelan |
 | `lexicon.md` | Search UI, not syntax |
 | `vowel-series.md` | Mnemonic map, not a new morph |
 | `phonology.md` | Letter charts / singability — not Eng ↔ Agalan |
 | `x-compounds.md` | Parser map of families taught on other pages |
-| Advanced bands whose only H3s are **Design notes**, **Constraints**, **Out of scope**, **Boundaries**, or pointer inventories | Nothing to produce; see allowlist **skip** |
+| Advanced stages whose only H3s are **Design notes**, **Constraints**, **Out of scope**, **Boundaries**, or pointer inventories | Nothing to produce; see allowlist **skip** |
 
 Do **not** skip productive syntax pages (core, coordination, questions, values, …). Thin **Advanced** on an otherwise productive page is skip; that page’s Beginner / Intermediate still generate.
 
@@ -164,7 +164,7 @@ Do **not** skip productive syntax pages (core, coordination, questions, values, 
 
 Default people: [house cast](grammar-docs.md#house-cast) — `zazawan` / `zululon` / `zuhubun` (`azawa` / `ululo` / `uhubu` + **-n**). Morph: `z-grace` / `z-courage` / `z-beauty`.
 
-Reuse this bank unless the band already taught a different published root. Do not mine the lexicon for variety.
+Reuse this bank unless this stage already taught a different published root. Do not mine the lexicon for variety.
 
 | Root | Sense in drills |
 |------|-----------------|
@@ -189,7 +189,7 @@ Reuse this bank unless the band already taught a different published root. Do no
 | `adoro` | *next clause* |
 | `urugu` | *because* (**-m** on `/h/`) |
 
-A page may add roots that **already appear in that band’s worked examples** (e.g. `abele` *apple*, `adeda` *tea*, `ogove` *coffee*, `omonu` *challenging*, `onunu` **SAME**). List them under **Roots used here**.
+A page may add roots that **already appear in that stage’s worked examples** (e.g. `abele` *apple*, `adeda` *tea*, `ogove` *coffee*, `omonu` *challenging*, `onunu` **SAME**). List them under **Roots used here**.
 
 ## Allowlist
 <a id="allowlist"></a>
@@ -211,12 +211,12 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 6 | `reference-suffix.md` | **exists** | Choose **-l** vs **-m** vs **-n** vs **-r** on a content word; named person vs kind; citation prefix-less **…n** | Pointers to **-sh** / **`gl-`** / full **-r** algorithm: do **not** make those the item. One two-sentence resume item is enough if it matches the page example |
 | 7 | `pronouns.md` | **exists** | Letter vs full-root **-r**; specials **`ugobo` / `edone` / `aha` / `enenu`** (when the *role* is the point); **`adoro`** recap; clusivity **`aha`** vs speaker **-sh** | **-sh** on specials / names for clusivity only. Default people still house names; specials only when testing specials |
 | 7 | `plurality.md` | **exists** | Associative **-sh** (`-lsh` / `-nsh` / `-rsh`); not agreement; person-role **-sh** (address set vs name…**-sh**) | **`aha`** as the *not this* for inclusive *we*. **`ugobo`/`edone`** only on person-role items |
-| 8 | `predication.md` | **exists** | Classification `z… g…` vs kind *noun* `zodogol`; identity **`gonunul` + `/b/`** | No general *to-be* `/v/`. Prefer house names + **SAME**; page-example roots (`odava` / `uzuba`) OK if already on the band |
+| 8 | `predication.md` | **exists** | Classification `z… g…` vs kind *noun* `zodogol`; identity **`gonunul` + `/b/`** | No general *to-be* `/v/`. Prefer house names + **SAME**; page-example roots (`odava` / `uzuba`) OK if already taught in this stage |
 | 9 | `coordination.md` | **exists** | Right-close fence; set vs rank vowels; **-l** vs **-m**; list / single-item / standalone starter forms; negation **`u`**; unspecified **-r** as *something* (not fill-ask) | No revisers, no restrictor `/h/` join readings, no comparatives SHARED scale as the point (that is comparatives) |
 | 10 | `questions.md` | **exists** | **`jol`/`jom`** yes/no vs fill-ask (join **-r**); fill-all; polar **`jael` / `juel` / `jaol`** vs **`jul`** vs join **`zul`** | **`jom`** is taught here as soft *ask* — allowed on this page even though full speech-act twins are core Intermediate. Circumstance *when?* **`har`** is Intermediate on this page — do not use |
-| 11 | `revisers.md` | **exists** | Prefix-less **`al`/`am`/`ol`/`ul`** (and **e** / **n** as on the band); in-clause `A REV B`; discourse **`al`** *additionally* before a body | Not a join (`zam` vs `am`). Not **`x#e-` / `x#e`** (numbers discourse) |
+| 11 | `revisers.md` | **exists** | Prefix-less **`al`/`am`/`ol`/`ul`** (and **e** / **n** as taught in this stage); in-clause `A REV B`; discourse **`al`** *additionally* before a body | Not a join (`zam` vs `am`). Not **`x#e-` / `x#e`** (numbers discourse) |
 | 11 | `restrictors.md` | **exists** | **`hal`/`ham`/`hual`/`huam`/`har`/`hor`/`hur`** (and `/w/` twins); *only when* vs co-manner *and*; bare *never* / *always* | Not sibling revisers. Not coordination **`zam`** as a restrictor |
-| 12 | `spans.md` | **exists** | Writing fences `[ ]` `{ }` `( )` `< >`; **`~`/`@`**; resume `d[=]`; PoS = outer slot; **aside** = `h(…)`; interior fragment or same-speech-act clause; when a span is required vs nativized word | `<>` loans **allowed** (this band teaches them). Prefer atomic one-token cites |
+| 12 | `spans.md` | **exists** | Writing fences `[ ]` `{ }` `( )` `< >`; **`~`/`@`**; resume `d[=]`; PoS = outer slot; **aside** = `h(…)`; interior fragment or same-speech-act clause; when a span is required vs nativized word | `<>` loans **allowed** (this stage teaches them). Prefer atomic one-token cites |
 | 13 | `numbers.md` | **exists** | `g+N` count; `g#N` ordinal; digitless **`g+`** (*more than one*) with **-sh** on the noun | No `/v/` `/h/` `/j/` `/x/` number uses, exponents, ranges, percent, measures (later). **-sh** from plurality is recycle |
 | 13 | `comparatives.md` | **exists** | Rank fence **`e`/`oe`/`ue`** + SHARED scale `/ɡ/`; single-item superlative; equative **`ae`** | **Needs:** coordination Beginner rank joins. No measure phrases (Intermediate). No numbers Intermediate |
 | 13 | `causation.md` | **exists** | Sufficient = open sufficient (`…aom` / default pole habit); no cause-arrow word; outcome as host | **Needs:** coordination Beginner inclusive/exclusion + core **`adoro`**. Necessary / **`IF` vs `IFF`** are Intermediate — do not use |
@@ -234,52 +234,52 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 
 | Path | File | Band | Status | Introduces (test these) | Notes |
 |------|------|------|--------|-------------------------|-------|
-| 3 | `core.md` | Intermediate | **exists** | **`jam`/`jom`/`jem`/`jum`**; **`gl-`**; adverb topic `/h/`+`/b/`; complex chaining; `/x/` linkers (`xezazal`, `xezebal`, …); nested **`adoro`**; number-as-interjection pointer only if the band’s examples already show it | Do not require numbers Intermediate readings |
+| 3 | `core.md` | Intermediate | **exists** | **`jam`/`jom`/`jem`/`jum`**; **`gl-`**; adverb topic `/h/`+`/b/`; complex chaining; `/x/` linkers (`xezazal`, `xezebal`, …); nested **`adoro`**; number-as-interjection pointer only if the stage’s examples already show it | Do not require numbers Intermediate readings |
 | 3 | `core.md` | Advanced | skip | weak-pause cues | recognition |
 | 6 | `reference-suffix.md` | Intermediate | **exists** | **-n** on any PoS (titled verb/adjective/adverb); phrasal proper names `ROOTxROOT`+**-n**; office **handles** as first-mention **-n** | Not value/ability/plan ending tables |
-| 6 | `reference-suffix.md` | Advanced | skip | — | no Advanced band |
+| 6 | `reference-suffix.md` | Advanced | skip | — | no Advanced stage |
 | 7 | `pronouns.md` | Intermediate | **exists** | English approximations of **-r**; `/x/`…`-r` thread resume vs `/h/` aboutness; **`aha`** vs name join vs name…**-sh** | |
 | 7 | `pronouns.md` | Advanced | **exists** | Cross-role recast (one or two PoS flips, not the whole grid) | 4–6 items |
 | 7 | `plurality.md` | Intermediate | **exists** | Associate resolution; verb collective; collective `/ɡ/`…**-sh**; vocative **-sh** | |
-| 7 | `plurality.md` | Advanced | — | no Advanced band | |
+| 7 | `plurality.md` | Advanced | — | no Advanced stage | |
 | 8 | `predication.md` | Intermediate | **exists** | Classification packaging; **SAME** endings / open **-m** | |
 | 8 | `predication.md` | Advanced | skip | boundaries | |
 | 9 | `coordination.md` | Intermediate | **exists** | Full single-item/standalone; rank joins as *the* stack if not already fluent; invert **`ua`/`uo`/`ue`**; universals/domains; SHARED after join; `^` islands; fence nesting; clause **sequence** (`xan`); VP/clause forms | Sample **decisions**, not every H3. 6–8 items |
-| 9 | `coordination.md` | Advanced | **exists** | Named phrase **-n**; one rare-arity or reserved contrast from the band | 4–6 items |
+| 9 | `coordination.md` | Advanced | **exists** | Named phrase **-n**; one rare-arity or reserved contrast from this stage | 4–6 items |
 | 10 | `questions.md` | Intermediate | **exists** | Fuller polar inventory; confirming a negative; fill-ask arity; occasion **`har`**; yes/no with single-item/standalone; fill-ask answers | |
 | 10 | `questions.md` | Advanced | **exists** | Polar contrasts; single-item/standalone inventory under question | 4–6 items |
 | 11 | `revisers.md` | Intermediate | **exists** | Ending grids; parallel chains; discourse placements (before the act word, `/x/` continue/linker) | |
 | 11 | `revisers.md` | Advanced | skip | more examples / reserved | |
 | 11 | `restrictors.md` | Intermediate | **exists** | Defined core (full); conjuncts; dependent *when* | |
-| 11 | `restrictors.md` | Advanced | — | no Advanced band | |
+| 11 | `restrictors.md` | Advanced | — | no Advanced stage | |
 | 12 | `spans.md` | Intermediate | **exists** | Spoken open shape; TYPE; EDGE; endings; nesting; **`^ … ^`** scope islands; mention of a handle **form** vs office **-n** | |
 | 12 | `spans.md` | Advanced | **exists** | Close forms (`xuxul` / editorial / close-all) | 4–6 items |
-| 13 | `numbers.md` | Intermediate | **exists** | PoS on numbers; markers; endings; digitless; number as verb / adverb / interjection / discourse as on the band; **one of** measure / range / percent / time if you can keep the item to that decision (those topics live in **`numbers-applied.md`**) | **Optional track.** Do not dump the whole Intermediate. 6–8 items |
-| 13 | `numbers-applied.md` | Intermediate | **exists** | Digit-string labels; clock / calendar time; percent vs points; measure phrases; ranges — as taught on the band | Optional track. One topic per item. 4–8 items |
-| 13 | `numbers.md` | Advanced | **exists** | Digitless exponents / hyperbole / zero×exp **as used in the band’s teach examples** — not unassigned cells | Optional track. 4–6 items |
+| 13 | `numbers.md` | Intermediate | **exists** | PoS on numbers; markers; endings; digitless; number as verb / adverb / interjection / discourse as taught in this stage; **one of** measure / range / percent / time if you can keep the item to that decision (those topics live in **`numbers-applied.md`**) | **Optional track.** Do not dump the whole Intermediate. 6–8 items |
+| 13 | `numbers-applied.md` | Intermediate | **exists** | Digit-string labels; clock / calendar time; percent vs points; measure phrases; ranges — as taught in this stage | Optional track. One topic per item. 4–8 items |
+| 13 | `numbers.md` | Advanced | **exists** | Digitless exponents / hyperbole / zero×exp **as used in the stage’s teach examples** — not unassigned cells | Optional track. 4–6 items |
 | 13 | `comparatives.md` | Intermediate | **exists** | Full comparative arity; distributive **`a`** + SHARED `/ɡ/`; measured differentials | Measured items **Sibling OK:** numbers Intermediate **measure phrases** only |
 | 13 | `comparatives.md` | Advanced | **exists** | Judgment benchmarks (`zojun`, `zahazen`, **`zugoboxrawon`** Mine vs performance **`zugobon`**, …) | **`ugobo`** allowed on Mine/performance items |
 | 13 | `causation.md` | Intermediate | **exists** | Necessary (marked); unique path; clause poles **`adoro` / `ezaze` / `urugu`**; **CAUSE** **`egega`** **-m**; preference vs law (values stack if values Beginner is recycle — it is) | |
-| 13 | `causation.md` | Advanced | **exists** | Factivity; evidential / CAUSE / habit stacks as on the band | COMMENT/evidentiality are Beginner/Intermediate recycle by the time Advanced is read |
+| 13 | `causation.md` | Advanced | **exists** | Factivity; evidential / CAUSE / habit stacks as taught in this stage | COMMENT/evidentiality are Beginner/Intermediate recycle by the time Advanced is read |
 | 14 | `values.md` | Intermediate | **exists** | Motive **`xe`** + preference standing; which ending table; attachment sites | |
 | 14 | `values.md` | Advanced | **exists** | Combined matrices; one boundary trap | 4–6 items |
 | 14 | `ability.md` | Intermediate | **exists** | Hostless fallback **`egera`** (**ABIL**) | |
-| 14 | `ability.md` | Advanced | — | no Advanced band | |
+| 14 | `ability.md` | Advanced | — | no Advanced stage | |
 | 14 | `commentary.md` | Intermediate | **exists** | Evidentiality channels; **NOTIONAL** **`adade`** + hold map; COMMENT vs nearby jobs | |
-| 14 | `commentary.md` | Advanced | — | no Advanced band | |
+| 14 | `commentary.md` | Advanced | — | no Advanced stage | |
 | 14 | `roles.md` | Intermediate | **exists** | Viewpoint laterals **`DIR x ANCHOR`**; bare arrow roots = compass; gravity **`uba`/`odowo`**; name/listener anchor | Prefer `…xazawan` over silent speaker default. **`edone`/`ugobo`** only when testing role-anchor. Include at least one bare cardinal and one gravity item |
-| 14 | `roles.md` | Advanced | — | no Advanced band | |
+| 14 | `roles.md` | Advanced | — | no Advanced stage | |
 | 15 | `join-extras.md` | Intermediate | **exists** | Join-act verbs `van` / `von` / …; join-relations `gan` / `han` / … (unary `/b/`) | No Beginner slot. Recycle = all Beginner + earlier Intermediate (path before 15), except optional numbers unless needed |
-| 15 | `plan-decision.md` | Intermediate | **exists** | **DECISION** **`egege`** changeability; evidentiality stacked on **PREDICT**; PLAN + DECISION stack | Recycle Beginner PLAN / PREDICT. Stack evidentiality on PREDICT only as the band shows. Join-act **`von`** only if already on this band |
-| 15 | `plan-decision.md` | Advanced | — | no Advanced band | |
+| 15 | `plan-decision.md` | Intermediate | **exists** | **DECISION** **`egege`** changeability; evidentiality stacked on **PREDICT**; PLAN + DECISION stack | Recycle Beginner PLAN / PREDICT. Stack evidentiality on PREDICT only as this stage shows. Join-act **`von`** only if already taught in this stage |
+| 15 | `plan-decision.md` | Advanced | — | no Advanced stage | |
 | 15 | `special-vocabulary.md` | Intermediate | **exists** | Emotion compose (ACT + LOCUS + a value); numbered alternatives `uzebu`/`agego`/`olala` + `g#N` | Overlay *inventory* is not a drill. **Needs** values Beginner (recycle). Not universality (Advanced) |
-| 15 | `special-vocabulary.md` | Advanced | **exists** | Universality (`ewono` / `abulu` / …) as on the band | 4–6 items |
-| 16 | `numeric-derivation.md` | Advanced | **exists** | `ROOT x NUM` as the band teaches (essence / `+N` / `#N` / quasi / …) — only assigned readings | **Optional track.** No unassigned cells from [unassigned-reserved.md](unassigned-reserved.md). 4–6 items |
+| 15 | `special-vocabulary.md` | Advanced | **exists** | Universality (`ewono` / `abulu` / …) as taught in this stage | 4–6 items |
+| 16 | `numeric-derivation.md` | Advanced | **exists** | `ROOT x NUM` as the stage teaches (essence / `+N` / `#N` / quasi / …) — only assigned readings | **Optional track.** No unassigned cells from [unassigned-reserved.md](unassigned-reserved.md). 4–6 items |
 
 ## Leak index
 <a id="leak-index"></a>
 
-First-taught checkpoint for forms agents leak most often. If this checkpoint’s path/band is **earlier**, the form is illegal.
+First-taught checkpoint for forms agents leak most often. If this checkpoint’s path/stage is **earlier**, the form is illegal.
 
 | Form | First taught |
 |------|----------------|
@@ -323,11 +323,11 @@ Use this after generating, or when asked only to review a file’s drills.
 
 For each spoiler token family:
 
-1. Find it in **Introduces**, **Recycle**, [root bank](#root-bank), or this band’s examples. Else **fail**.
+1. Find it in **Introduces**, **Recycle**, [root bank](#root-bank), or this stage’s examples. Else **fail**.
 2. Check [leak index](#leak-index): first-taught later than this checkpoint → **fail**.
 3. Same-slot sibling novelty not in **Sibling OK** → **fail**.
-4. English *I* / *you* as dummy people → **fail** (unless this band teaches **`ugobo`/`edone`**).
-5. Most items test **this** band’s decision, not a prior quiz → else rewrite.
+4. English *I* / *you* as dummy people → **fail** (unless this stage teaches **`ugobo`/`edone`**).
+5. Most items test **this** stage’s decision, not a prior quiz → else rewrite.
 6. Morph-gloss wall inside the spoiler → **fail**.
 7. Unassigned cells from [unassigned-reserved.md](unassigned-reserved.md) → **fail**.
 

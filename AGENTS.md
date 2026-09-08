@@ -16,7 +16,7 @@ This repo is TypeScript tooling around the language docs and lexicon. A web UI m
 | `docs/grammar/vowel-series.md` | Four-vowel **vowel series** (**`a`** add / **`o`** one / **`e`** order / **`u`** undo); the prefix picks the table. Pedagogy orientation, not a new morph. |
 | `docs/meta/learning-levels.md` | Rubric for tagging grammar docs **beginner** / **intermediate** / **advanced** and the [cross-doc Beginner path](docs/meta/learning-levels.md#cross-doc-path) (pedagogy, not design authority). |
 | `docs/meta/grammar-docs.md` | Style for learner-facing grammar prose under `docs/grammar/` only (page skeleton, teach order, no process leftover, [house-cast people](docs/meta/grammar-docs.md#house-cast) not default *I* / *you* — pedagogy, not design authority). |
-| `docs/meta/translation-exercises.md` | Eng ↔ Agalan translation checkpoints (end-of-band placement, drill principles including house-cast people not **`ugobo`** / **`edone`** unless teaching those specials, spoiler template — pedagogy, not design authority). |
+| `docs/meta/translation-exercises.md` | Eng ↔ Agalan translation checkpoints (end-of-stage placement, drill principles including house-cast people not **`ugobo`** / **`edone`** unless teaching those specials, spoiler template — pedagogy, not design authority). |
 | `docs/meta/drill-generation.md` | **Execute** policy to add those checkpoints: path allowlist (no untaught forms), shared root bank, one grammar file per agent — [execute](docs/meta/drill-generation.md#execute). |
 | `docs/meta/language-name.md` | English name **Agalan** tracks the glasses root **`agala`** (editors only). |
 | `docs/meta/unassigned-reserved.md` | Unused-slot / unassigned-form inventory (editors only — not linked from grammar pages). |

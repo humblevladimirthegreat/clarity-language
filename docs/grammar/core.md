@@ -1,72 +1,42 @@
 # Agalan core grammar
 
-How to read and write an Agalan **sentence**: word roles, word shape, default order, how a turn starts (`/j/` vs `/x/`), and dependent sentences with **`adoro`**.
+How to read and write an Agalan **sentence**: who does what, word shape, default order, how a speech move starts (`/j/` vs `/x/`), and a next sentence after **`adoro`**.
 
 ## Beginner
 <a id="beginner"></a>
 
-### Parts of speech
+### Who acts, who is acted on, the action
 
-Each content word starts with a **role letter** that marks its job in the sentence. The root stays the same when the job changes. Only that role letter changes.
+Each content word starts with a **role letter**: one letter that marks the word’s job in the sentence. The rest of the word is the **root** (the meaning) plus an **ending**. The root stays the same when the job changes; only the role letter changes.
 
-#### Writing words
-<a id="orthography"></a>
-<a id="writing-words"></a>
+Use `/z/` for who acts (the **subject**; **z** = the star of the sentence), `/d/` for who is acted on (the **direct object**; **d** = done to), and `/v/` for the action (the **verb**; **v** = the verb).
 
-Write **role letter + root + ending** as one word:
+Write **role letter + root + ending** as one word (`zazawan`). For now, read the whole word as its plain meaning.
 
-`zazawan` · `dululon` · `glelulul`
+Default order is **Subject – Direct Object – Verb**. You may rearrange those three for style or to put something in **prominence** (what you want heard as the point). A period ends the statement.
 
-Prefer a published root when the English meaning matches (`dabelel` for *apple*). Use **-m** when the match is the published **metaphorical** sense (`guzumum` for *happy*).
+```
+`zazawan vawalal.`
 
-The last letter of the word says how the root enters the talk ([reference-suffix.md](reference-suffix.md)). For now, read the whole word as its plain meaning.
+gloss: `z-grace@` · `v-walk`
 
-##### Capitalization
-<a id="capitalization"></a>
+*Azawan walks.*
+```
 
-Agalan writing is **unicase**: use **lowercase** for every native letter. Capital letters appear only inside quoted foreign spelling that keeps another writing system’s casing.
+```
+`zazawan dagadal vejel.`
 
-#### Outside a sentence (citation)
-<a id="citation-forms"></a>
-<a id="prefix-less-citation"></a>
+gloss: `z-grace@` · `d-cat` · `v-see`
 
-When you are **not** filling a sentence slot (lexicon head, list, title line, or a freestanding line with no clause), you may write the **root** with **no** role letter:
+*Azawan sees a cat.*
+```
 
-`odogol.` · `uzumum.` · `azawan.` · `ululon.`
+### Adjectives (`/ɡ/`)
+<a id="adjectives-ɡ"></a>
 
-#### Role letters (parts of speech)
-<a id="part-of-speech-prefixes"></a>
+`/ɡ/` marks an **adjective**: a property or kind label (**ɡ** = grade / property). It follows the word it describes.
 
-| Role letter | Job | Mnemonic |
-|--------------|-----|----------|
-| `/z/` | subject (who or what the sentence is about as actor) | **z** = the star of the sentence |
-| `/d/` | direct object (who or what is acted on) | **d** = done to |
-| `/b/` | extra noun tied to a complex adjective or adverb | **b** = bolted-on extra |
-| `/v/` | verb (the action) | **v** = the verb itself |
-| `/ɡ/` | adjective (property or kind label) | **ɡ** = grade / property label |
-| `/w/` | extra detail on the previous adjective | **w** = with that adjective |
-| `/h/` | adverb (how / when / where / to whom, and similar) | **h** = how, when, where |
-| `/x/` | continue (link sentences, keep the same speech act) | **x** = e**x**tend the speech act |
-| `/j/` | turn (start a turn: statement / question / command, calling someone, *yes* / *no*, …) | **j** = jump to a new act |
-
-English *to* / *for* (recipient) uses a complex adverb (`/h/` + `/b/`) plus that extra noun. The same pattern covers other “relation + who/what” meanings on the verb.
-
-### Default sentence order
-
-After you open a turn (or continue with `/x/` under the same speech act), the default order is **Subject – Direct Object – Verb**.
-
-You may rearrange those core roles for style or to put something in **prominence** (what you want heard as the point).
-
-- **Adjectives** (`/ɡ/`) go **after** what they describe by default ([Adjectives](#adjectives-ɡ)). Putting them before is Intermediate ([before the noun](#left-bound-adjectives)).
-- **Adverbs** (`/h/`) may sit anywhere in their sentence except a “next sentence” `/h/`+`/b/` unit, which must come **last in the main sentence** ([Adverbs](#adverbs-h); [Dependent clauses](#dependent-clauses)).
-
-**Turn** vs **continue:** a new **turn** opens with `/j/` (calling someone, *yes* / *no* words, written [statement / question / command](#speech-act-beginner)), including turns you take with yourself. **Continuing under the same speech act** uses `/x/` ([continue](#continue-x)): what follows **keeps** that speech act. Default statement **`jal`** may be **left out** when it is already clear ([Turn](#turn-j)).
-
-### Nouns and verbs
-
-Use `/z/` for who acts, `/d/` for who is acted on, and `/v/` for the action.
-
-To say someone *is* a kind or has a property, put the property on the subject as an adjective **label**. There is no separate *to be* verb for this job.
+To say someone *is* a kind or *has* a property, put that adjective on the subject. There is no separate *to be* verb for this job.
 
 ```
 `zazawan godogol.`
@@ -84,85 +54,55 @@ gloss: `z-dog` · `g-blue`
 *A dog is blue.*
 ```
 
-### Adjectives (`/ɡ/`)
-<a id="adjectives-ɡ"></a>
+The same string is also the noun plus its adjective: `zodogol gelulul` is both the full sentence *A dog is blue* and the phrase *a blue dog*.
 
-`/ɡ/` marks adjectives (and “related to…” phrases on a noun). Using an adjective as the property label, with no `/v/`, is how *is a dog* / *is blue* work (above).
-
-**Default (after the noun):** the adjective follows the word it describes.
-
-```
-`zodogol gelulul.`
-
-gloss: `z-dog` · `g-blue`
-
-*a blue dog*
-```
-
-### Adjective extras (`/w/`)
-
-`/w/` adds detail to the **previous adjective** (`/ɡ/` unit): intensity, manner of the property, and similar.
-
-It sits on that adjective: normally right after the `/ɡ/` (or after that `/ɡ/`’s attached `/b/` if complex). Several `/w/` words may sit in a row on one `/ɡ/` (`guzumum wegelom` = *happy, loudly*). If the relation needs an extra noun, use complex `/ɡ/` + `/b/` instead.
-
-`/w/` = **with** the adjective (narrow); `/h/` = the **whole** sentence. Same root, different role letter, different reach.
+Extra detail on that adjective (how intense, in what manner) uses `/w/` right after the `/ɡ/` word (**w** = with that adjective).
 
 ### Adverbs (`/h/`)
 <a id="adverbs-h"></a>
 
-`/h/` marks **adverbs**: how, when, where, *to* / *for*, tense, and related closed kinds. Closed psychological `/h/` (COMMENT, evidentiality, NOTIONAL, PLAN, …) is **mood**, taught on those pages.
+`/h/` marks an **adverb**: how, when, or where (**h** = how / when / where). Because it talks about the verb, **you may place it anywhere in that sentence**. It stays inside its own sentence.
 
-Because `/h/` talks about the sentence’s verb, **you may place it anywhere in that sentence**, except a “next sentence” `/h/`+`/b/` unit, which must sit **last in the main sentence** ([Dependent clauses](#dependent-clauses)). `/h/` material stays inside its own sentence.
+Several adverbs just sit next to each other: `hadazam howom` → *hastily and quietly*.
 
-**Several adverbs at once** just sit next to each other: `hadazam howom` → *hastily and quietly*.
+```
+`zazawan hadazam vawalal.`
 
-### Complex adjectives, complex adverbs, and extra nouns
-<a id="extra-nouns"></a>
+gloss: `z-grace@` · `h-haste~` · `v-walk`
 
-A **complex** adjective or adverb needs an extra participant: the `/ɡ/` or `/h/` word plus an **extra noun** (`/b/`) right after it. The root names the relation; `/b/` only marks “noun of that word.”
+*Azawan walks hastily.*
+```
 
-| Shape | Job | Example | Mnemonic |
-|-------|-----|---------|----------|
-| `/ɡ/` + `/b/` | complex adjective | `gonunul bazawan` (*same as Azawan*) | **`onunu`** 🪙 *coin* → two faces, one substance |
-| `/h/` + `/b/` | complex adverb (*to*, *at*, *regarding*, *because* / *if* + **`adoro`**) | `hurugum badorol` (*because* + next sentence) | relation word + bound extra noun |
-
-Keep the `/h/` + `/b/` pair **together with no gap**. Ordinary pairs may move as a unit; a pair whose `/b/` is the next-sentence pronoun must sit **[last in the main sentence](#dependent-clauses)**.
-
-This pattern covers much of what other languages do with little words like *to*, *at*, *because*. Stacking more detail on the extra noun is Intermediate ([complex chaining](#complex-chaining)).
-
-### Turn (`/j/`)
+### Turn (`/j/`): start a new speech move
 <a id="turn-j"></a>
 
-`/j/` starts a **turn**: a speech move toward someone else, or toward yourself when you talk alone. It frames what you are doing: **statement / question / command**, **calling someone**, and **polar stance** (*yes* / *no*) plus greetings and similar expressives.
+A **turn** is one speech move: what you are doing in the talk (a statement, a question, a command), including when you talk only to yourself. `/j/` starts a new turn (**j** = jump to a new act).
 
-#### Opening a turn (left edge)
+#### Opening a turn
 <a id="left-edge-order-and-sentence-boundaries"></a>
 
-The start of a **new turn** is a `/j/` cluster in this order:
+At the **start** of a new turn, write `/j/` words in this order, then the sentence body:
 
-1. Optional **vocative**(s): who you address (`jazawan`, `jululon`, …)
-2. Optional **polar stance** / greeting(s): *yes* / *no* particles, greetings, other expressives
-3. **Act word**, when written: **last** in the cluster, immediately before the sentence body
+1. Who you address, if you name them (`jazawan`, `jululon`, …)
+2. *Yes* / *no* or a greeting, if you use one
+3. The **act word**, when you write it: last, immediately before the body
 
-**Default speech act is `jal` (statement).** Leave it out when that is already clear:
+A `/j/` after a finished body starts the **next** turn. Calling someone’s name with no body uses `/j/` and no act word.
 
-- A period-ended statement body (writing `.`; speech falls at the end)
-- A *yes* / *no* particle is present (**`-l`** → statement **`jal`**; **`-m`** → soft statement **`jam`**)
-- A later piece under a clause `/x/` continue ([continue](#continue-x))
-- A [dependent sentence](#dependent-clauses) under **`adoro`** with the **same** speech act as the main sentence (a different speech act still needs its own act word)
-
-When the act word is written, it closes the opener. A new `/j/` turn starts a new utterance.
-
-**Vocatives and polar stance** sit in this left-edge cluster (or stand alone). A `/j/` after a finished body starts the **next** turn. A *…, yes?* style tag is a **second bare turn** after a period (`zazawan vawalal. jael.`).
-
-Bare vocatives and exclamations with no sentence body use `/j/` without a written act word (a firm *yes* / *no* **-l** still implies statement **`jal`** when a body follows).
-
-#### Speech act
+#### Speech act (`/j/`): statement, question, command
 <a id="speech-act-beginner"></a>
 
-Every utterance has exactly one **speech act**: the setting (statement, question, command, …). Default statement **`jal`** may be **left out** when recoverable (above). Other settings write a `/j/` act word **last** in the left-edge cluster, before the body.
+A **speech act** is the setting of that turn: statement, question, command, and similar. Each turn has exactly one. Default statement is **`jal`**. **Leave `jal` out** when a period already marks a statement.
 
-Forms you need for ordinary dialogue:
+Other settings write a `/j/` act word last among the opening `/j/` words, before the body:
+
+```
+`jel vawalal.`
+
+gloss: `j-command` · `v-walk`
+
+*Walk!*
+```
 
 | Form | Job | Mnemonic |
 |------|-----|----------|
@@ -171,41 +111,55 @@ Forms you need for ordinary dialogue:
 | **jel** | command / instruction | **j**ump + **e** rank: do this |
 | **jul** | prohibition: *don’t…* | **j**ump + **u** undo: don’t do this |
 
-Closed `/j/` words such as **`jael`** (*yes* / *true*) and **`juel`** (*no* / *false*) are **polar stance**. They sit at the left edge or as a bare turn. Firm **-l** implies statement **`jal`**; soft **-m** implies soft statement **`jam`**. Prefer **`jael …`** over **`jael jal …`** when a body follows.
+**`jael`** (*yes* / *true*) and **`juel`** (*no* / *false*) are *yes* / *no* words. They sit at the start of the turn, or stand alone. Prefer **`jael …`** over **`jael jal …`** when a body follows. A *…, yes?* tag is a **second turn** after a period: `zazawan vawalal. jael.`
 
-### Continue (`/x/`)
-<a id="continue-x"></a>
+### Extra nouns (`/b/`)
+<a id="extra-nouns"></a>
 
-`/x/` means **keep going under the same speech act**: continue a joined stretch that inherits the opener’s speech act, and **sentence linkers** (*however*, *therefore*, …). Only the first turn (or a default statement body) sets the speech act.
+When an adjective or adverb names a **relation** that needs another person or thing, put that extra noun in `/b/` (**b** = bolted-on extra) right after the `/ɡ/` or `/h/` word. The root names the relation; `/b/` only marks “noun of that word.”
 
-Word-initial **x** = continue (**eXtend** the talk).
+```
+`gonunul bazawan`
 
-| Job | Form family | Mnemonic |
-|-----|-------------|----------|
-| Glue between sentences (*however*, *therefore*, …) | `/x/` linkers (`xezebal`, `xezazal`, …) | **x** keeps the same speech act while the next sentence starts |
+gloss: `g-same` · `b-grace@`
+
+*same as Azawan*
+```
+
+**`onunu`** 🪙 *coin* → two faces, one substance. Keep an `/h/` + `/b/` pair **together with no gap**. Ordinary pairs may move as a unit. English *to* / *for* (who receives something) uses that `/h/` + `/b/` shape too.
 
 ### Dependent clauses
 <a id="dependent-clauses"></a>
 
-A dependent sentence uses the special next-sentence pronoun **`adoro`**: in the main sentence it stands for “whatever follows right away.”
+A **dependent clause** is a full sentence that fills a slot in the sentence before it. Agalan uses the next-sentence pronoun **`adoro`**: in the main sentence it stands for “whatever follows right away.”
 
 **`adoro`** 🚪 *doorway* → *what follows*. The main sentence ends at the doorway; the dependent walks through.
 
-**Placement:** put **`adoro` last** in its main-sentence slot, and put the dependent material **immediately after** it. Rearrange free word order so that holds. For *because* / *if* style, the whole `/h/` + `/b/` **`adoro`** unit sits last in the main sentence (**`adoro`** last). That final **`adoro`** is where the dependent begins.
+Put **`adoro` last** in its main-sentence slot, and put the dependent **immediately after** it. Rearrange free word order so that holds.
 
-The dependent is a **full sentence**. It may open with its own `/j/` cluster, or **keep** the main sentence’s speech act and omit `/j/` when that matches. The **boundary** is **`adoro`**. A different speech act (embedded ask, command, …) needs its own act word.
+The dependent may open with its own `/j/` words, or **keep** the main sentence’s setting and omit `/j/` when that matches. The **boundary** is **`adoro`**. A different setting (an embedded ask, a command, …) needs its own act word.
 
-**That-clause / content** is often a core object, with **`adoro` last** in the main sentence:
+*That…* content is often a direct object, with **`adoro` last** in the main sentence:
 
 ```
-`zazawan dululon vezehel dadorol.`
+`zazawan dululon vezehel dadorol zodogol vurunul.`
 
-gloss: `z-grace@` · `d-courage@` · `v-tell` · `d-next-clause`
+gloss: `z-grace@` · `d-courage@` · `v-tell` · `d-next-clause` · `z-dog` · `v-run`
 
-*Azawan tells Ululon that…* (dependent sentence follows immediately)
+*Azawan tells Ululon that the dog runs.*
 ```
 
-**Because / if / …** = `/h/` relation + `/b/` **`adoro`** (together, last in the main sentence). The metaphorical ending is always **-m**.
+*Because* / *if* and similar use `/h/` + `/b/` **`adoro`**. Keep that pair together, **last in the main sentence** (**`adoro`** last). The metaphorical ending on the `/h/` word is always **-m**.
+
+```
+`zazawan guzumum hurugum badorol zululon vawalal.`
+
+gloss: `z-grace@` · `g-happy~` · `h-because~` · `b-next-clause` · `z-courage@` · `v-walk`
+
+*Azawan is happy because Ululon walks.*
+```
+
+You can also say:
 
 | English | Form | Lexicon | Metaphor |
 |---------|------|---------|----------|
@@ -213,17 +167,66 @@ gloss: `z-grace@` · `d-courage@` · `v-tell` · `d-next-clause`
 | *if* | **`hadorom badorol`** | **`adoro`** | 🚪 *door* → *opportunity* |
 | *if and only if* | **`hezazem badorol`** | **`ezaze`** | ↔️ *left-right* → *reciprocity* |
 | *although* / *even though* | **`hezebam badorol`** | **`ezeba`** | 🦓 *zebra* → *contrast* |
-| *while* (concurrent) | **`hegemum badorol`** | **`egemu`** | ♊ *gemini* → *duality* |
+| *while* (at the same time) | **`hegemum badorol`** | **`egemu`** | ♊ *gemini* → *duality* |
 | *until* | **`hudumem badorol`** | **`udume`** | ⏲️ *timer* → *deadline* |
 | *before* | **`hababam badorol`** | **`ababa`** | 🎒 *backpack* → *preparation* |
 | *after* | **`horanem badorol`** | **`orane`** | ⌛ *hourglass-done* → *recency* |
 
+### Continue (`/x/`): keep the same speech move
+<a id="continue-x"></a>
+
+To **continue** is to keep going under the **same** setting: the next stretch is still a statement if the turn was a statement (still a question if it was a question, and so on). `/x/` marks that (**x** = e**x**tend the talk). Only the first turn (or a default statement body) sets the setting. Leave **`jal`** out on the continued stretch.
+
+Glue between sentences (*therefore*, *however*, …) is an `/x/` **linker**:
+
+```
+`zazawan vawalal. xezazal zululon vurunul.`
+
+gloss: `z-grace@` · `v-walk` · `x-therefore` · `z-courage@` · `v-run`
+
+*Azawan walks. Therefore Ululon runs.*
+```
+
+### Writing
+<a id="orthography"></a>
+<a id="writing-words"></a>
+<a id="part-of-speech-prefixes"></a>
+
+Prefer a published root when the English meaning matches (`dabelel` for *apple*). Use **-m** when the match is the published **metaphorical** sense (`guzumum` for *happy*). The last letter is the ending; keep using **-l** / **-m** / **-n** as the examples show.
+
+##### Capitalization
+<a id="capitalization"></a>
+
+Agalan writing is **unicase**: use **lowercase** for every native letter. Capital letters appear only inside quoted foreign spelling that keeps another writing system’s casing.
+
+##### Outside a sentence (citation)
+<a id="citation-forms"></a>
+<a id="prefix-less-citation"></a>
+
+A **citation** is a root written **outside** a sentence slot (lexicon head, list, title, or a freestanding line with no clause). You may omit the role letter:
+
+`odogol.` · `uzumum.` · `azawan.` · `ululon.`
+
+Role letters taught so far:
+
+| Role letter | Job | Mnemonic |
+|--------------|-----|----------|
+| `/z/` | subject (who acts) | **z** = the star of the sentence |
+| `/d/` | direct object (who is acted on) | **d** = done to |
+| `/b/` | extra noun after a relation word | **b** = bolted-on extra |
+| `/v/` | verb (the action) | **v** = the verb itself |
+| `/ɡ/` | adjective (property or kind) | **ɡ** = grade / property |
+| `/w/` | extra detail on the previous adjective | **w** = with that adjective |
+| `/h/` | adverb (how / when / where) | **h** = how, when, where |
+| `/x/` | continue (keep the same setting) | **x** = e**x**tend the talk |
+| `/j/` | turn (start a new speech move) | **j** = jump to a new act |
+
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills on this Beginner band. Try each item before opening **Show answer**. Use **published roots** only.
+Short drills for Beginner. Try each item before opening **Show answer**. Use **published roots** only.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `abogo` *book* · `ohohu` *house* · `elulu` *blue* · `arede` *red* · `ele` elephant → *size* / *big* (**-m**) · `uzumu` smile → *happy* (**-m**) · `awala` *walk* · `urunu` *run* · `elebe` *sleep* · `ezehe` *tell* · `uwuru` *write* · `uzunu` *sing* · `eje` *perception* (*see*) · `aju` *sit* · `adaza` dash → *haste* (**-m**) · `owo` owl → *quietude* (**-m**) · `adoro` *next clause* · `urugu` *because* (**-m** on `/h/`)
+**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `abogo` *book* · `ohohu` *house* · `elulu` *blue* · `arede` *red* · `ele` elephant → *size* / *big* (**-m**) · `uzumu` smile → *happy* (**-m**) · `awala` *walk* · `urunu` *run* · `elebe` *sleep* · `ezehe` *tell* · `uwuru` *write* · `uzunu` *sing* · `eje` *perception* (*see*) · `aju` *sit* · `adaza` dash → *haste* (**-m**) · `owo` owl → *quietude* (**-m**) · `adoro` *next clause* · `urugu` *because* (**-m** on `/h/`) · `ezaza` east → *therefore*
 
 #### English → Agalan
 
@@ -293,6 +296,12 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zazawan guzumum hurugum badorol zululon vawalal.`
 :::
 
+**12.** *Azawan walks. Therefore Ululon runs.*
+
+::: details Show answer
+`zazawan vawalal. xezazal zululon vurunul.`
+:::
+
 #### Agalan → English
 
 **1.** `zazawan gagadal.`
@@ -359,6 +368,12 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 ::: details Show answer
 *Azawan walks because Ululon sleeps.*
+:::
+
+**12.** `zazawan vawalal. xezazal zululon vurunul.`
+
+::: details Show answer
+*Azawan walks. Therefore Ululon runs.*
 :::
 
 ## Intermediate
@@ -461,7 +476,7 @@ A `/j/` **number** word is a call-out (*N more!*, score call, …). It may sit i
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills on this Intermediate band. Try each item before opening **Show answer**.
+Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `elulu` *blue* · `arede` *red* · `uzumu` smile → *happy* (**-m**) · `awala` *walk* · `urunu` *run* · `elebe` *sleep* · `eje` *perception* (*see*) · `uzunu` *sing* · `aju` *sit* · `egelo` speaker-low → *volume* (**-m**) · `oza` hash → *topic* · `ezaza` east → *progress* / *therefore* · `ezeba` *however* / *although* · `anelo` mantel-clock → *passage* / *meanwhile* · `adoro` *next clause* · `urugu` *because* (**-m** on `/h/`)
 

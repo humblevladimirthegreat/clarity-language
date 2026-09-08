@@ -2,14 +2,14 @@
 
 Applies **only** to learner grammar pages under **`docs/grammar/`** (not to `meta/`, `examples/`, or `proposals/`). Those pages are organized so a learner can finish **all beginner** sections across the folder before **intermediate**, then **advanced**. Levels are assigned with a **small fixed rubric**, applied **loosely** — enough consistency for a cross-doc path, not a score for every morph.
 
-This page is pedagogy, not language design. Design authority stays in the `docs/grammar/` pages. Prose and example style for those pages: [grammar-docs.md](grammar-docs.md). Translation checkpoints at band ends: [translation-exercises.md](translation-exercises.md). Generating missing checkpoints: [drill-generation.md](drill-generation.md).
+This page is pedagogy, not language design. Design authority stays in the `docs/grammar/` pages. Prose and example style for those pages: [grammar-docs.md](grammar-docs.md). Translation checkpoints at stage ends: [translation-exercises.md](translation-exercises.md). Generating missing checkpoints: [drill-generation.md](drill-generation.md).
 
 Grammar pages must not link here or mention `meta/` — editors use this rubric privately.
 
 ## Rubric (three questions)
 <a id="rubric-three-questions"></a>
 
-Ask in order. Prefer the **earlier** band when a concept sits on a boundary and learners need it to read ordinary examples.
+Ask in order. Prefer the **earlier** stage when a concept sits on a boundary and learners need it to read ordinary examples.
 
 1. **Usable after one short explanation?**  
    Can someone use it in ordinary dialogue after roughly one paragraph and a couple of examples (and at most a second of thought once practiced)?  
@@ -24,21 +24,21 @@ Ask in order. Prefer the **earlier** band when a concept sits on a boundary and 
 
 ## How to apply
 
-- Tag **sections** inside each grammar doc (`## Beginner`, `## Intermediate`, `## Advanced`), rather than splitting files by level. Omit a later band when it would only recap or list unused slots ([empty or pointless bands](grammar-docs.md#empty-bands)).
-- Do **not** score every morph. For each H2/H3, run the three questions, pick a band, move on.
-- When bands conflict, **dependency wins** over subjective difficulty.
-- Boundary cases needed early for reading examples → prefer the **earlier** band.
+- Tag **sections** inside each grammar doc (`## Beginner`, `## Intermediate`, `## Advanced`), rather than splitting files by level. Omit a later stage when it would only recap or list unused slots ([empty or pointless stages](grammar-docs.md#empty-stages)).
+- Do **not** score every morph. For each H2/H3, run the three questions, pick a stage, move on.
+- When stages conflict, **dependency wins** over subjective difficulty.
+- Boundary cases needed early for reading examples → prefer the **earlier** stage.
 - Grammar prose: [teach now; don’t preview later](grammar-docs.md#teach-now-dont-preview-later) — no teaser links to peers the path has not reached yet.
 - A thin Beginner that only says “see Intermediate” does **not** earn a Beginner slot. Give one usable pattern, or drop the page from the Beginner path.
 
 ## Cross-doc path
 <a id="cross-doc-path"></a>
 
-Read **`docs/grammar/`** only, in band order. [why-agelan.md](../grammar/why-agelan.md) and [introduction.md](../grammar/introduction.md) are orientation (not bands).
+Read **`docs/grammar/`** only, in stage order. [why-agelan.md](../grammar/why-agelan.md) and [introduction.md](../grammar/introduction.md) are orientation (not stages).
 
 ### Beginner
 
-1. [why-agelan.md](../grammar/why-agelan.md) — psychological purpose, limits, feature criteria, benefit tour (not a learning band)
+1. [why-agelan.md](../grammar/why-agelan.md) — psychological purpose, limits, feature criteria, benefit tour (not a learning stage)
 2. [introduction.md](../grammar/introduction.md) — name, grammar design, how to learn
 3. [core.md Beginner](../grammar/core.md#beginner)
 4. [vowel-series.md](../grammar/vowel-series.md#beginner) (one-screen map; not a new morph)
@@ -60,4 +60,4 @@ Numbers Intermediate / Advanced and [numeric-derivation.md](../grammar/numeric-d
 15. Every peer’s **[Intermediate](../grammar/core.md#intermediate)** section (same dependency order as above is fine). Skip pages with no Intermediate (vowel-series). Numbers Intermediate, [numbers-applied.md](../grammar/numbers-applied.md#intermediate), leftover join / overlay pages, and [plan-decision.md](../grammar/plan-decision.md#intermediate) **DECISION** / forecast source belong here.
 16. Every peer’s **Advanced** section. Numbers Advanced and [numeric-derivation.md](../grammar/numeric-derivation.md) stay **optional**.
 
-Learner-facing reading order: site sidebar (**Suggested reading order**); banding notes: [introduction.md § How to learn](../grammar/introduction.md#how-to-learn).
+Learner-facing reading order: site sidebar (**Suggested reading order**); stage notes: [introduction.md § How to learn](../grammar/introduction.md#how-to-learn).
