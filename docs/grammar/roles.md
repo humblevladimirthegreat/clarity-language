@@ -1,4 +1,4 @@
-# Roles and viewpoints
+# Role compounds
 <a id="roles"></a>
 
 When English would name a person from an event (*a fighter* from *fight*, *the one fought*), Agalan builds that name from the event’s stem. Write a person or thing letter, then **`a`**, **`u`**, or **`o`**, then mid-word **`x`**, then the stem, then an ordinary [reference ending](reference-suffix.md). **`a`** is the doer, **`u`** is the one the event happens to, and **`o`** is the other party of a relation. **Mnemonic:** [vowel-series](vowel-series.md) **`a`** add / **`u`** undo / **`o`** one.
@@ -232,6 +232,8 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 ## Intermediate
 <a id="intermediate"></a>
+
+This stage is **whose** left / right / ahead you mean (compass vs body-relative).
 
 ### Viewpoint laterals (`DIR` × anchor)
 <a id="viewpoint-laterals"></a>

@@ -103,26 +103,9 @@ gloss: `z-speaker` · `d-grace@` · `v-tell` · `d-next-clause` · `z-courage@` 
 ### Clusivity
 <a id="clusivity"></a>
 
-English *we* and *you* do not say whether the listener is in the group. **Clusivity** is that split: who counts as *we* or *you* when you are using conversation-role words instead of names. Add **-sh** after the usual ending on **`ugobo`** or **`edone`** to grow an associative group from that role; inclusive *you and I* stays the separate root **`aha`**. That lets you choose *I and my people*, *you all*, or *you and I* without guessing from English *we*.
+English *we* and *you* do not say whether the listener is in the group. That split is **clusivity**. Inclusive *you and I* on this page is already **`aha`**.
 
-```
-`zugobonsh vawalal.`
-
-gloss: `z-speaker-sh` · `v-walk`
-
-*We (I and my people) walk.*
-```
-
-| Form | Job | Example |
-|------|-----|---------|
-| `zugobonsh` | speaker **and associates** (listener not assumed) | `zugobonsh vawalal.` *We (I and my people) walk.* |
-| `zedonensh` | **address set**: all current addressees (no speaker) | `zedonensh vajul.` *You all sit.* |
-| `zahan` | **interlocutors**: speaker and addressees (inclusive *we*) | `zahan vawalal.` *We (you and I) walk.* |
-| name…**-sh** | that person **and associates** | `zazawansh vawalal.` *Azawan and associates walk.* |
-
-**Compare with:** inclusive *we* uses **`aha`** (`zahan`). Speaker **-sh** is *I and my people*, not *you and I*.
-
-**Not the same job as:** [address set](plurality.md#person-role-sh) **`edone…sh`** (`zedonensh`) is *you all* (addressees only). *You and yours* uses a **name**…**-sh**.
+**For *I and my people* / *you all* / *Azawan and associates*, use:** associative **-sh** on [plurality](plurality.md#person-role-sh) (same path slot). Do not guess those readings from English *we* or from **`aha`**.
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -178,16 +161,16 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zahan vawalal.`
 :::
 
-**5.** *We (I and my people, not you) walk.*
+**5.** *You walk.*
 
 ::: details Show answer
-`zugobonsh vawalal.`
+`zedonen vawalal.`
 :::
 
-**6.** *You all sit.*
+**6.** *Azawan sees me.*
 
 ::: details Show answer
-`zedonensh vajul.`
+`zazawan dugobon vejel.`
 :::
 
 **7.** *Someone sleeps.*
@@ -228,10 +211,10 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *We (you and I) sleep.*
 :::
 
-**5.** `zazawansh vawalal.`
+**5.** `zedonen vurunul.`
 
 ::: details Show answer
-*Azawan and associates walk.*
+*You run.*
 :::
 
 **6.** `zenenun vawalal.`

@@ -206,8 +206,6 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **-n** is available on **any** role letter. The letter says what job the word plays **now**; **-n** says you are invoking a **title, proper label, or conventionally unique name**.
 
-[Join words](coordination.md) are the one place where **-n** is not a name: fence joins, clause **sequence**, and closed [join-act](join-extras.md#join-act-verbs) / [join-relation](join-extras.md#join-relations) stems use **-n** as join packaging or join content.
-
 #### More of the token
 
 Adjectives may take an extra **left-bound `l`** after the role letter (`/ɡ/` → **`gl-`**) when the adjective sits **before** its host ([left-bound adjectives](core.md#left-bound-adjectives)). That `l` is part of the role spelling, not the reference suffix.
@@ -260,6 +258,8 @@ gloss: `z-book-x-courage@`
 Resume the handle like any name. If its letter-pronoun (through the 2nd vowel) would pick the wrong antecedent, use the **full root** + **-r** (`zabogor`).
 
 The office as referent takes **-n** in a noun slot (`zabogon`). A [mention](spans.md#loans) packages the **form** (`z{abogo}` = *the word Abogon*). Foreign letter-names stay loans or opaque spans (`z<FBI>n`).
+
+**Compare with:** [join words](coordination.md) are the one place where **-n** is not a name. Fence joins, clause **sequence**, and closed [join-act](join-extras.md#join-act-verbs) / [join-relation](join-extras.md#join-relations) stems use **-n** as join packaging or join content.
 
 #### Verbs (`/v/`)
 

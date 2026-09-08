@@ -121,7 +121,7 @@ gloss: `z-grace@` · `v-sleep` · `h-rain` · `h-night` · `h-when.open`
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills on this Beginner band. Try each item before opening **Show answer**. Restrictors mark **when the host applies**. Bare **`hal`** / **`hual`** are *never* / *always*; with a listed occasion they are *only when…* / *always except when…*.
+Short drills on this Beginner band. Try each item before opening **Show answer**. Restrictors mark **when the claim counts**. Bare **`hal`** / **`hual`** are *never* / *always*; with a listed occasion they are *only when…* / *always except when…*.
 
 **Roots used here:**
 

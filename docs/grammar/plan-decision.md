@@ -164,6 +164,8 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 ## Intermediate
 <a id="intermediate"></a>
 
+This stage is a **revisable pick** (**DECISION**), plus forecast source on **PREDICT**.
+
 ### Forecast source
 <a id="predict-evidentiality"></a>
 

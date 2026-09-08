@@ -12,7 +12,7 @@ Use these short words when you want to tweak something you just named: add a mem
 ### Including (`am` / `al`)
 <a id="in-clause-shape"></a>
 
-You already named something (A), and you want English *including B* in that same slot. Put a reviser between two phrases that play the **same clause role** (both subjects, both objects, both adjectives, …): `A REV B`. That repairs A in place; it does not package A and B as a pair. Vowel **`a`** is the add hook: open **-m** (`am`) means B is among others you could still add; closed **-l** (`al`) means B is the only add-in you stand behind.
+You already named something (A), and you want English *including B* in that same slot. Put a reviser between two phrases that play the **same clause role** (both subjects, both objects, both adjectives, …): `A REV B`. That repairs A in place; it does not package A and B as a pair. Everyday *including* uses **`am`**. How complete B is (**-m** vs **-l**) is the next section.
 
 ```
 A REV B

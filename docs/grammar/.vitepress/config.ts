@@ -28,7 +28,7 @@ const readingOrder = [
   { text: 'Values', link: '/values' },
   { text: 'Ability', link: '/ability' },
   { text: 'Commentary', link: '/commentary' },
-  { text: 'Roles', link: '/roles' },
+  { text: 'Role compounds', link: '/roles' },
   { text: 'x-compounds', link: '/x-compounds' },
   { text: 'Plan / decision', link: '/plan-decision' },
   { text: 'Join extras', link: '/join-extras' },

@@ -1,10 +1,8 @@
-# Causation (necessary / sufficient)
+# Causation
 <a id="causation"></a>
 <a id="necessary-sufficient"></a>
 
-English mixes three jobs that all feel like cause.
-
-*Would work* names a **route** toward an **outcome**: effort toward getting the job done, clouds toward rain. Other routes may still exist. *Needs* names a condition the outcome cannot do without (*without X, no Y*). Clause *if* / *because* attach a **full sentence** as the condition or the reason, not a noun or a verb phrase.
+*Would work* names a **route** toward an **outcome**: effort toward getting the job done, clouds toward rain. Other routes may still exist.
 
 **Needs:** [Joins](coordination.md) and [dependent clauses](core.md#dependent-clauses) (**`adoro`**).
 
@@ -191,6 +189,8 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 ## Intermediate
 <a id="intermediate"></a>
+
+*Needs* / *without* (*the outcome cannot do without this*), unique path, and clause *if* / *because* / *iff* are this stage.
 
 ### Necessary (marked)
 <a id="necessary"></a>
