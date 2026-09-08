@@ -1,7 +1,7 @@
 # Predication (classification and identity)
 <a id="predication"></a>
 
-How Agalan says English *is* for **kind / role** (*Azawan is a dog*) and **identity** (*Clark is Superman*).
+English *is* does two jobs that look alike. You can say someone **is a kind or role** (*Azawan is a dog*): they belong in that category. You can also say two names pick out **the same one** (*Clark is Superman*): one person under two labels, not a category. Agalan uses a different word pattern for each.
 
 ## Beginner
 <a id="beginner"></a>
@@ -9,9 +9,7 @@ How Agalan says English *is* for **kind / role** (*Azawan is a dog*) and **ident
 ### Property (*is ADJ*)
 <a id="classification-property"></a>
 
-To say someone *is ADJ* (a quality), put that adjective (`/ɡ/`) right after the name. English *is* in *Azawan is challenging* is already that pair.
-
-Mnemonic: the adjective does the *is* job.
+When you say someone *is* a quality (*Azawan is challenging*), that quality is an **adjective**. Write it with `/ɡ/` and put it right after the name. You do not add a separate *is* verb; the name plus the `/ɡ/` word already make the sentence. The `/ɡ/` word is the piece English would put after *is*.
 
 ```
 `zazawan gomonam.`
@@ -24,9 +22,9 @@ gloss: `z-grace@` · `g-challenging`
 ### Kind / role
 <a id="classification"></a>
 
-**Classification** is saying someone or something **is that kind** (a role or category). Use the same adjective pattern: the kind sits on `/ɡ/` after the classified noun.
+When you say someone **is that kind of thing** or **has that role** (*a dog*), you are putting them in a category, not naming a quality. Use the same pattern as a quality: the kind sits on `/ɡ/` right after the noun you are classifying. English *is* is already in that pair.
 
-Mnemonic: same `/ɡ/` slot as a quality.
+This use is **classification**. Same `/ɡ/` place as a quality; the kind word is what English would put after *is a*.
 
 ```
 `zazawan godogol.`
@@ -38,13 +36,15 @@ gloss: `z-grace@` · `g-dog`
 
 A titled name of that kind uses **-n** on the adjective ([reference suffix](reference-suffix.md)): `zazawan godogon` *Azawan is Dog*.
 
-When the kind is who acts, use a noun plus a verb: `zodogol vawalal` *A dog walks*. When you say the subject **is** that kind, keep the kind on `/ɡ/`.
+**Compare with:** *A dog walks* uses a noun plus a verb (`zodogol vawalal`). When the subject **is** that kind, keep the kind on `/ɡ/`.
 
 ### Identity (**SAME**)
 <a id="identity"></a>
 <a id="same"></a>
 
-**Identity** is two labels for **one** person or thing (*Clark is Superman*). Use the closed adjective **`SAME`**: `gonunul` plus an extra noun (`/b/`) for the other label.
+When two names pick out **the same person or thing** (*Clark is Superman*), you are not putting Clark in a kind. You are saying the two labels match: they are one individual.
+
+Write a special adjective `gonunul` after the first name, then an extra noun (`/b/`) for the other label. Keep `gonunul` and that `/b/` word **next to each other**. That pair is **identity**. The adjective’s English name is **`SAME`**; its root is **`onunu`**.
 
 Mnemonic: **`onunu`** 🪙 *coin*: two faces, one substance.
 
@@ -64,9 +64,7 @@ gloss: `z-dog` · `g-SAME` · `b-grace@`
 *The dog is Azawan.*
 ```
 
-Keep `gonunul` and that `/b/` word **next to each other**.
-
-**Compare with:** *Azawan is a dog* uses [kind / role](#classification) (`godogol`). Use **`SAME`** for two labels for one person.
+**Compare with:** *Azawan is a dog* uses [kind / role](#classification) (`godogol`). Use **`SAME`** when two labels name one person.
 
 ### Translation practice
 <a id="translation-practice"></a>

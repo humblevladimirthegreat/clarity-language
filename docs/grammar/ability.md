@@ -1,7 +1,7 @@
 # Ability
 <a id="ability-page"></a>
 
-Tag **can** / **can’t** on an activity or property. Ordinary [reference-suffix](reference-suffix.md) endings apply.
+English *can* and *can't* usually sit on the same verb (*can sing*, *can't sing*). Agalan writes that tag on the activity or property word itself (the **host**). After the root, write mid-word **`x`**, then a vowel for *can* or *how they can't*, then the same [ending](reference-suffix.md) the host would have had without the tag.
 
 ## Beginner
 <a id="beginner"></a>
@@ -9,9 +9,7 @@ Tag **can** / **can’t** on an activity or property. Ordinary [reference-suffix
 ### Can (`xa`)
 <a id="ability"></a>
 
-When *can* tags **one** activity or property root (*sing*, *walk*, *see*), write that host, then mid-word **`x`**, then **`a`**, then the host’s ordinary ending.
-
-**Shape:** PoS + HOST + **`x`** + **`a`** + ending. Use the host’s usual role letter (`/v/` for an event, `/ɡ/` for a property). **Mnemonic:** **`a`** add: capability is in.
+To say someone **can** do one named activity (*sing*, *walk*) or **can** have one named property (*see*), keep that word as the host. After its root, insert **`x`** and **`a`**, then the host’s ordinary ending. The first letter stays the usual role letter (`/v/` for an event, `/ɡ/` for a property), so you tag *can* without a separate helping verb. Leave the host ordinary when you are not tagging can or can’t. (Mnemonic: **`a`** add — capability is in.)
 
 ```
 `zazawan vuzunuxal.`
@@ -21,9 +19,9 @@ gloss: `z-grace@` · `v-sing-able`
 *Azawan can sing.*
 ```
 
-The same host as a property uses `/ɡ/`: `zazawan guzunuxal` (*Azawan is able to sing*, as a property). Leave the host ordinary when you are not tagging can / can’t (`zazawan vuzunul` *Azawan sings*).
+The same host as a property uses `/ɡ/`: `zazawan guzunuxal` (*Azawan is able to sing*, as a property). Ordinary event, no tag: `zazawan vuzunul` (*Azawan sings*).
 
-The ending is the **host** sense (**-l** literal, **-m** metaphorical, **-n** proper, **-r** resume), not a second ability grain:
+The ending is still the **host** sense (**-l** literal, **-m** metaphorical, **-n** proper, **-r** resume). It does not change *can* into a different kind of *can*:
 
 ```
 `zululon vuwuruxam.`
@@ -38,14 +36,7 @@ gloss: `z-courage@` · `v-write-able-metaphor`
 <a id="ability-changeability"></a>
 <a id="ability-stance"></a>
 
-The vowel after **`x`** says *can* or **how they can’t**. **Mnemonic:** vowel series on that slot (**`a`** add / **`e`** order / **`o`** one / **`u`** undo).
-
-| Form | Stance | Reading | Mnemonic |
-|------|--------|---------|----------|
-| **`xa`** | **Capable** | can | **`a`** add: capability is in |
-| **`xe`** | **Temporary can’t** | can’t **right now** (usually able) | **`e`** order: this moment’s ranking |
-| **`xo`** | **Modifiable can’t** | can’t, and that may change (soft default if the grain is unknown) | **`o`** one: one open *can’t* |
-| **`xu`** | **Irreversible can’t** | can’t (fixed / impossible as far as you can tell) | **`u`** undo: capability taken off |
+English *can't* does not say whether the inability is for this moment, still changeable, or as fixed as you can tell. After **`x`**, pick **`e`**, **`o`**, or **`u`** for that difference (**stance**); **`a`** remains *can*. The rest of the word is the same host-plus-ending shape as *can*. (Mnemonic: the [vowel series](vowel-series.md) on that slot — **`a`** add / **`e`** order / **`o`** one / **`u`** undo.)
 
 ```
 `zululon vuzunuxel.`
@@ -54,6 +45,13 @@ gloss: `z-courage@` · `v-sing-unable-temporary`
 
 *Ululon can’t sing right now.*
 ```
+
+| Form | Stance | Reading | Mnemonic |
+|------|--------|---------|----------|
+| **`xa`** | **Capable** | can | **`a`** add: capability is in |
+| **`xe`** | **Temporary can’t** | can’t **right now** (usually able) | **`e`** order: this moment’s ranking |
+| **`xo`** | **Modifiable can’t** | can’t, and that may change (soft default if the grain is unknown) | **`o`** one: one open *can’t* |
+| **`xu`** | **Irreversible can’t** | can’t (fixed / impossible as far as you can tell) | **`u`** undo: capability taken off |
 
 ```
 `zuhubun vuzunuxol.`

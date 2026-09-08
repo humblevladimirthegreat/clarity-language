@@ -1,14 +1,14 @@
 # Vowel series (`a` / `o` / `e` / `u`)
 <a id="vowel-series"></a>
 
-Four vowels keep the **same jobs** across tables. The **prefix** tells you which table you are in.
+Reuse four vowel meanings when a small closed set of words shares a first letter and differs only in the next vowel. The first letter says which set you are in. This page maps those vowels on speech-act words you already know.
 
 ## Beginner
 <a id="beginner"></a>
 
-A **vowel series** is the same four vowel jobs reused whenever a prefix starts a small closed table. The prefix picks the table; the vowel is the move.
+A **vowel series** is that reuse: the same four vowels carry the same four meanings whenever a prefix (the first letter) starts a small closed set. You already do this on the [speech act](core.md#speech-act-beginner): **`jal`** is a statement, **`jol`** is a question, **`jel`** is a command, **`jul`** is a prohibition.
 
-You already use them on the [speech act](core.md#speech-act-beginner): **`a`** add a statement, **`o`** put one option on the table, **`e`** set the order of action, **`u`** undo the frame.
+Once you know those four vowels, a later closed set is easier because **`a`** / **`o`** / **`e`** / **`u`** keep the same meanings. Memory hook: **`a`** *add*, **`o`** *one*, **`e`** *order*, **`u`** *undo*.
 
 ```
 `jal zazawan godogol.`

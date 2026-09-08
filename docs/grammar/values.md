@@ -2,7 +2,9 @@
 <a id="values"></a>
 <a id="value-ascription"></a>
 
-How to name a **need** and how you stand toward it (topic, met, ought, unmet).
+A **need** is a psychological payoff you can name (autonomy, competence, relatedness, pleasure, survival, or an unspecified need). A **stance** is how you stand toward that need: name it as a topic, say a thing serves it, say it ought to be served or protected, or say a thing costs it.
+
+Write the need under `/h/` when you talk about the clause, or under `/w/` when you talk about the thing you just named.
 
 ## Beginner
 <a id="beginner"></a>
@@ -10,7 +12,7 @@ How to name a **need** and how you stand toward it (topic, met, ought, unmet).
 ### Name a need
 <a id="default-reading-of-h-and-w"></a>
 
-Put role letter `/h/` in front of a **need root** when you want to talk about a psychological need. With no mid-word **`x`**, you only **name** the need (topic). The ending is ordinary [reference-suffix](reference-suffix.md) (*this need*, a metaphor, a name, a resume).
+When you want to mention a psychological need as a **topic** (just bring it up), put role letter `/h/` in front of a **need root**, then an ordinary [reference-suffix](reference-suffix.md) ending (*this need*, a metaphor, a name, a resume). There is no mid-word **`x`**: you are only naming the need.
 
 ```
 `hawerol.`
@@ -25,7 +27,7 @@ gloss: `h-pleasure`
 ### Need inventory
 <a id="need-inventory"></a>
 
-Six needs. Pick one root; the need sense is the one in the table.
+Six published roots cover the needs you can name. Pick one row; under `/h/` as a topic, that root means the need in the Sense column.
 
 | Sense | Root | Mnemonic | English range |
 |-------|------|----------|---------------|
@@ -48,7 +50,7 @@ gloss: `h-need`
 
 ### Met (`xa`): serves the need
 
-To say the thing you named **pays off** this need, add mid-word **`x`** plus **`a`** (**`a`** add: the payoff is in). Use `/w/` on that thing (the gift, the house, the book). The ending is the **contact channel**: how you contact the payoff.
+When you want to say that a named thing **serves** this need (pays it off), write that thing as a noun, then a `/w/` word: need root, mid-word **`x`**, **`a`**, then an ending. That `/w/` word is about the thing you just named. The ending says how you contact the payoff.
 
 ```
 `zawaral wonogoxal.`
@@ -63,7 +65,7 @@ gloss: `z-gift` · `w-relatedness-met-physical`
 ### Contact channel (endings on met)
 <a id="value-contact"></a>
 
-On **`xa`**, **-l / -m / -r** mark **how you contact** the claimed payoff. Channels are different kinds of contact, not a ranked “better.” Relatedness *between people* is the need **`onogo`**.
+On a *serves* word, **-l / -m / -r** are the **contact channel**: body and the scene you can sense, thinking or memory, or a big-picture step-back. Those are kinds of contact, not a ranking. Relatedness *between people* is still the need **`onogo`**.
 
 | Form | Channel | Job | Mnemonic |
 |------|---------|-----|----------|
@@ -90,11 +92,13 @@ gloss: `z-book` · `w-competence-met-mental`
 ### Prescription (`xo`): ought
 <a id="value-force"></a>
 
-**`xo`** means *should* / *ought*: act so the need is served or protected. **`o`** one: one ought. Use `/h/` on the clause. **-l / -m / -r** mark **prescription force** (how strongly you claim the ought). If you do not know the force, use **-m**. Bound **-l** is **bound in this frame**.
+When you want to say a need **ought** to be served or protected (English *should*), put `/h/` on the clause and write the need with mid-word **`x`**, then **`o`**, then an ending.
+
+That ending is **prescription force**: how strongly you claim the ought. If you do not know the force, use **-m**. Bound **-l** means the ought is non-negotiable in this conversation or rule-set.
 
 | Form | Force | You are saying | Mnemonic |
 |------|-------|----------------|----------|
-| `…xol` | **bound** | Non-negotiable in this frame | **-l** locked |
+| `…xol` | **bound** | Non-negotiable in this conversation or rule-set | **-l** locked |
 | `…xom` | **endorse** | You stand behind this should (soft default if unknown) | **-m** open backing |
 | `…xor` | **invite** | Worth considering here | **-r** light resume: held out |
 
@@ -117,7 +121,9 @@ gloss: `z-beauty@` · `v-sing` · `h-survival-ought-bound`
 ### Unmet (`xu`): costs
 <a id="value-changeability"></a>
 
-**`xu`** means the thing **subtracts from** the need. **`u`** undo: the need is taken down. **-l / -m / -r** mark **changeability** (how lasting the cost is). If you do not know the grain, use **-m**.
+When you want to say a named thing **costs** this need (subtracts from it), write that thing as a noun, then a `/w/` word: need root, mid-word **`x`**, **`u`**, then an ending.
+
+That ending is **changeability**: how lasting the cost is. If you do not know, use **-m**.
 
 | Form | Job | Mnemonic |
 |------|-----|----------|
@@ -145,7 +151,9 @@ gloss: `z-book` · `w-competence-unmet-modifiable`
 <a id="word-shape"></a>
 <a id="value-stake"></a>
 
-Role letter `/h/` or `/w/`, then a need root, then an ending. `/h/` talks about the **clause**; `/w/` talks about the **thing you just named**. To take a stance, put mid-word **`x`** and a vowel before the ending. Bare (no **`x`**) stays topic, with ordinary [reference-suffix](reference-suffix.md) endings. On a stance compound, **-l / -m / -r** follow that stance’s table; **-n** is ordinary [proper](reference-suffix.md#proper-name--n).
+A values word is role letter `/h/` or `/w/`, then a need root, then an ending. `/h/` talks about the **clause**; `/w/` talks about the **thing you just named**.
+
+Topic (no **`x`**) keeps ordinary [reference-suffix](reference-suffix.md) endings. To take a stance, put mid-word **`x`** and a vowel before the ending; then **-l / -m / -r** follow that stance’s table. **-n** is ordinary [proper](reference-suffix.md#proper-name--n).
 
 | Form | Stance | Job | Mnemonic |
 |------|--------|-----|----------|

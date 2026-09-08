@@ -41,7 +41,7 @@ Per-feature teaching already has its practice: rule → mnemonic → 1–3 worke
 2. **Both directions** — English → Agalan (production) and Agalan → English (parsing). Production is harder; keep those items shorter / fewer if the set grows.
 3. **Pure Agalan in early checkpoints** — published roots and closed specials only; `PoS<…>ENDING` / opaque spans only when the page is teaching loans or spans.
 4. **Spoiler answers** — VitePress `::: details Show answer` (or a clear custom label). The answer is the Agalan sentence or **loose** free English — not a second grammar lecture. No morph-gloss wall inside the spoiler unless the drill is explicitly about packaging.
-5. **Small sets** — about **6–12 items per direction** max per stage checkpoint. Prefer a tiny reused root bank over lexicon tourism. List the roots used once above the drills.
+5. **Small sets** — about **6–12 items per direction** max per stage checkpoint. Prefer a tiny reused root bank over lexicon tourism. Put that bank in a two-column table once above the drills (never a mid-dot prose list).
 6. **Test the decision, not the dictionary** — good items force a choice this stage taught (role letter, **-l** / **-m**, **`orodo` last**, omit recoverable **`jal`**, …).
 7. **Single sentences** — leave multi-turn scenes to [`examples/`](../examples/).
 8. **People are names** — default people use the [house cast](grammar-docs.md#house-cast) (`zazawan`, `zululon`, `zuhubun`) or a name already on the page, not **`ugobo`** / **`edone`**. English items use those names (*Azawan walks*). Speaker/listener specials only when the item is teaching those roots, or when the point is the discourse role (name unavailable, address set, clusivity). Inclusive *we* stays **`aha`**. Do not introduce foreign `PoS<…>n` names in early checkpoints.
@@ -57,7 +57,11 @@ Use a stable heading and anchor at the **end** of the stage (before the next `##
 
 Short drills for Beginner. Try each item before opening **Show answer**. …
 
-**Roots used here:** `…`
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *…* | `…` |
 
 #### English → Agalan
 
@@ -77,6 +81,8 @@ Short drills for Beginner. Try each item before opening **Show answer**. …
 ```
 
 Omit recoverable **`jal`** unless the drill is teaching speech act. Match orthography and sense endings to the grammar page ([core.md § Orthography](../grammar/core.md#orthography)). English items that need a person use house names (*Azawan walks*), not *I* / *you*.
+
+**Vocab table:** every checkpoint uses the same two columns, **English** then **Agalan**, even when the bank is short. One root per row (split house names `azawa` / `ululo` / `uhubu`). English is the learner gloss for this drill (*dog*, *happy*); keep **-m**, name, and metaphor notes in that cell (`*size* / *big* (**-m**)`, `*grace* (name **Azawan**)`). Agalan is citation form in backticks (`odogo`, `uzumu`). Do not pack several pairs into one row.
 
 ## Related meta
 

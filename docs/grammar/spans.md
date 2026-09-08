@@ -1,17 +1,17 @@
 # Spans
 
-Package special wording (quotes, asides, mentions, loans) with a role letter and a fence. Writing uses brackets.
+When you set wording apart from the rest of the sentence (a quote, a parenthetical, a loan surface), Agalan packages that chunk in a **span fence**. In writing you put a role letter, then a pair of brackets around the interior. That first letter is the chunk’s role in the outer sentence (subject, object, verb, or adverb).
 
 ## Beginner
 <a id="beginner"></a>
 
-English uses quotes, parentheses, and italics for special wording. Agalan uses a **span fence**: a role letter plus a bracket pair. The letter is the span’s job in the outer sentence; the brackets package the interior.
+Start with a quote of what someone said.
 
 ### Cite (`[…]`)
 <a id="writing"></a>
 <a id="writing-vs-speech"></a>
 
-A **cite** packages wording you are quoting: what someone said, a title string, or a proverb **as wording**. Write the role letter, then square brackets. Square brackets are the quote marks.
+A **cite** holds wording you are quoting: what someone said, a title string, or a proverb **as wording**. Write the role letter, then square brackets around the quoted text. (Mnemonic: square brackets are the quote marks.)
 
 Start with one quoted token as the object of *said*:
 
@@ -23,15 +23,17 @@ gloss: `z-grace@` · `d-hi` · `v-tell`
 *Azawan said “hi.”*
 ```
 
-The whole `d[hi]` fills `/d/` (who or what is acted on). Interior tokens keep their own letters when they are Agalan words.
+The whole `d[hi]` is the direct object (who or what is acted on). If the interior is Agalan words, those inner words still start with their own role letters.
 
 ### Exact, paraphrase, proper
 <a id="when-required"></a>
 
-Marks sit **after** the role letter, before the opening bracket.
+You can mark how faithful the quote is. Put the mark **after** the role letter, before the opening bracket.
 
-| Mark | Job | Example | Mnemonic |
-|------|-----|---------|----------|
+Verbatim wording is **exact**: no extra mark (`d[hi]`). That is the same as ending **-l**, omitted in writing. When you mean the gist, not the exact words, write **`~`** (`d~[hi]`), the same as **-m**. When the chunk is a titled designation of that wording, write **`@`** (`d@[Hamlet]`), the same as **-n**.
+
+| Mark | Reading | Example | Mnemonic |
+|------|---------|---------|----------|
 | *(none)* | **exact** (**-l**) | `d[hi]` | bare: the wording as written |
 | **`~`** | **paraphrase** (**-m**) | `d~[hi]` | **~** soft: gist, not verbatim |
 | **`@`** | **proper** (**-n**) | `d@[Hamlet]` | **@** name: a titled designation of that wording |
@@ -54,7 +56,7 @@ gloss: `z-beauty@` · `d-@Hamlet` · `v-sing`
 
 ### Resume (`[=]`)
 
-To point back at a prior span, put **`=`** inside the same brackets: `d[=]`. The ending is **-r**. The role letter is the slot **now**.
+To point back at a prior span without repeating its interior, put **`=`** inside the same brackets: `d[=]`. That form uses resume **-r**. The letter on the resume is the role this pointer plays in *this* sentence (here still the object of *said*).
 
 ```
 `jol zululon d[=] vezehel.`
@@ -66,7 +68,7 @@ gloss: `j-question` · `z-courage@` · `d-←cite` · `v-tell`
 
 ### Mention (`{…}`)
 
-A **mention** packages the **word or form itself** (*the word “dog”*), not a quote of speech. Curly braces hold the form as an object.
+A **mention** holds the **word or form itself** (*the word “dog”*), not a quote of speech. Write the role letter, then curly braces around that form.
 
 ```
 `z{odogo} gelulul.`
@@ -83,7 +85,7 @@ With **`@`** / **-n**, mention is *the title X* / *the proverb X* as a **named u
 ### Opaque and loan words
 <a id="loans"></a>
 
-**Opaque** packages a foreign, code, or raw surface that is not ordinary Agalan words. Angle brackets are a raw blob. Write no ending after `>`:
+**Opaque** holds a foreign, code, or raw surface that is not ordinary Agalan words. Write the role letter, then angle brackets around that blob. Write no ending after `>`:
 
 ```
 `zazawan d<sushi> vejel.`
@@ -101,12 +103,12 @@ A **compact foreign content word** takes an ending after `>`: `d<sushi>l`, `z<Sa
 
 When a published Agalan root already matches, write the ordinary word (`dagadal`, not a fence).
 
-Outside a clause, a name or word uses prefix-less **root + ending**: [citation forms](core.md#citation-forms) (`<Sam>n`). Spans keep a role letter because they fill a sentence slot.
+Outside a clause, a name or word uses prefix-less **root + ending**: [citation forms](core.md#citation-forms) (`<Sam>n`). A span still takes a role letter, because it fills a sentence slot.
 
 ### Asides (`h(…)`)
 <a id="asides"></a>
 
-An **aside** is a parenthetical comment packaged as an **adverb**. Write **`h(`** … **`)`**. Round parentheses are a side comment. The fence sits anywhere an adverb may sit.
+An **aside** is a parenthetical comment. Package it as an **adverb**: write **`h(`** … **`)`**. Round parentheses mark the side comment. The fence may sit anywhere an adverb may sit.
 
 The interior is ordinary Agalan: a fragment, or a clause body that keeps the **same speech act** as the outer sentence (the same statement, question, or command).
 
@@ -135,7 +137,7 @@ A one-word manner with nothing to package is a plain adverb: `zazawan vawalal hu
 ### Outer slot
 <a id="pos"></a>
 
-The open’s role letter is the **outer slot of the entire span**. Ask: in the outer sentence, what job does this chunk fill? A cite can be the **verb** when you echo the act as wording:
+The letter on the open is the role of the **entire span** in the outer sentence. Ask what that chunk is doing out there: object of *said*, subject of *is blue*, and so on. A cite can be the **verb** when you echo the act as wording:
 
 ```
 `jul zululon v[oops].`
@@ -152,7 +154,7 @@ gloss: `j-prohibition` · `z-courage@` · `v-oops`
 | `/v/` | verb — echo the act as wording | `v[oops]` |
 | `/h/` | adverb — asides | `h(…)` |
 
-Interior words keep **their** role letters.
+If the interior is Agalan words, those inner words still start with **their** role letters.
 
 ### Translation practice
 <a id="translation-practice"></a>

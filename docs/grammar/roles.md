@@ -1,7 +1,7 @@
 # Roles and viewpoints
 <a id="roles"></a>
 
-Name who plays which part in an event from that event’s stem (*a fighter*, *the one fought*).
+When English would name a person from an event (*a fighter* from *fight*, *the one fought*), Agalan builds that name from the event’s stem. Write a person or thing letter, then **`a`**, **`u`**, or **`o`**, then mid-word **`x`**, then the stem, then an ordinary [reference ending](reference-suffix.md). **`a`** is the doer, **`u`** is the one the event happens to, and **`o`** is the other party of a relation. **Mnemonic:** [vowel-series](vowel-series.md) **`a`** add / **`u`** undo / **`o`** one.
 
 ## Beginner
 <a id="beginner"></a>
@@ -10,7 +10,7 @@ Name who plays which part in an event from that event’s stem (*a fighter*, *th
 <a id="role-compounds"></a>
 <a id="agent-patient-reltum"></a>
 
-Name **who does** an event from that event’s stem (*a fighter* from *fight*). Write a person or thing letter, then **`a`**, then mid-word **`x`**, then the event root, then an ordinary [reference ending](reference-suffix.md). That whole word is a **role compound**.
+English *a fighter* names who does the fighting, from the same idea as *fight*. Write a person or thing letter (`/z/` `/d/` `/b/`), then **`a`**, then mid-word **`x`**, then the event root, then an ordinary [reference ending](reference-suffix.md). The result is one content word (a **role compound**) that you can use as a participant.
 
 **Mnemonic:** [vowel-series](vowel-series.md) **`a`** *add*: add a doer.
 
@@ -22,13 +22,13 @@ gloss: `z-←agent-x-fight` · `v-run`
 *A fighter runs.*
 ```
 
-**-l** names a kind. You do not need a prior fight in the talk; `zaxuvugul` is *a fighter* as a participant (`/z/` `/d/` `/b/`).
+With **-l**, `zaxuvugul` is *a fighter* as a kind of person. You do not need a prior fight in the talk.
 
 **Compare with:** *can fight* puts the stance vowel **right** of **`x`** ([ability](ability.md): `vuvuguxal`). A fighter puts the role vowel **left** of **`x`**.
 
 ### That doer (`-r`)
 
-After you have named the event, **-r** points at **that** doer of the most recent matching stem.
+Once the talk already has a matching event (*walks*), **-r** on the same stem means **that** doer (*the walker*), not a new kind.
 
 ```
 `zazawan vawalal.`
@@ -42,7 +42,7 @@ gloss: `z-←agent-x-walk` · `v-sleep`
 
 ### The undergoer (`u`)
 
-**`u`** names who **undergoes** the event: *the one seen*, *the one fought*.
+English *the one seen* or *the one fought* names the person the event happens to. Use the same compound shape as the doer, but write **`u`** in the vowel slot.
 
 **Mnemonic:** **`u`** *undo*: the one it happens to.
 
@@ -58,7 +58,7 @@ gloss: `z-←patient-x-see` · `v-run`
 
 ### The other party (`o`)
 
-Some words are **relations** (who is bound to whom), not events. The extra noun (`/b/`) is the other party of that relation. A role compound with **`o`** names that party: the **reltum**.
+Some stems name a **relation** (who is bound to whom), not an action. The extra person of that relation sits in `/b/`. To name that person from the relation stem (*the other party of the bond*), write **`o`** in the vowel slot. That named party is the **reltum**.
 
 **Mnemonic:** **`o`** *one*: that other pole.
 
@@ -78,11 +78,11 @@ gloss: `z-←reltum-x-bond` · `v-run`
 | **`u`** | `…uxROOT…` | event | **patient**: the undergoer | **u** undo |
 | **`o`** | `…oxROOT…` | relation | **reltum**: the `/b/` party | **o** one |
 
-**-r** matches the root to the latest verb, event noun, or relation with that stem (including a root already inside a role compound). Then **`a`** / **`u`** / **`o`** picks doer, undergoer, or other party.
+**-r** looks back to the latest verb, event noun, or relation with that stem (including a stem already inside a role compound). The vowel still picks which part you mean: doer, undergoer, or other party.
 
 ### The event itself
 
-A bare event noun is still the **event**: `duvugul` *a fight*. Use **`ax`** / **`ux`** when you mean the people.
+If you put the event stem on a thing letter with no role vowel (`duvugul`), you name the fight itself. Use **`ax`** or **`ux`** when you mean a person who fights or is fought.
 
 ```
 `zazawan duvugul vejel.`
@@ -96,7 +96,7 @@ gloss: `z-grace@` · `d-fight` · `v-see`
 
 ### Saying someone is a fighter
 
-To **classify** (*Azawan is a fighter*), put the same role stem on `/ɡ/`, as in [classification](predication.md#classification). **-m** hedges the role.
+To say someone **is a kind** (*Azawan is a fighter*), put the same role stem on `/ɡ/`, as in [classification](predication.md#classification). **-m** hedges the role.
 
 ```
 `zazawan gaxuvugum.`

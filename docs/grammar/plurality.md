@@ -1,6 +1,6 @@
 # Plurality
 
-Optional **-sh** after the [reference suffix](reference-suffix.md) marks an **associative group**: the named person or thing **plus associates**.
+English *they* and *the Smiths* often mean a named person plus people around them, not a counted list. Agalan marks that **associative group** with optional **-sh** after the [reference suffix](reference-suffix.md) (the last letter that says how the root enters the talk: **-l**, **-m**, **-n**, or **-r**). You still name one **anchor**; **-sh** adds the associates the situation supplies, so you do not have to list every member.
 
 ## Beginner
 <a id="beginner"></a>
@@ -8,9 +8,7 @@ Optional **-sh** after the [reference suffix](reference-suffix.md) marks an **as
 ### Associative group (`-sh`)
 <a id="associative"></a>
 
-Without **-sh**, the word picks **one** person or thing. With **-sh**, you name an **anchor plus nearby associates** (family, coworkers, unit, household, and so on). Who counts as an associate comes from the conversation and the situation.
-
-**-sh** = **s**et with the anchor. On a name it reads as *Azawan and associates*.
+Without **-sh**, the word picks **one** person or thing. With **-sh** after the ending, you name an **anchor plus nearby associates** (family, coworkers, unit, household, and so on). Who counts as an associate comes from the conversation and the situation; on a name it reads as *Azawan and associates*. Mnemonic: **-sh** = **s**et with the anchor.
 
 ```
 `zazawansh vawalal.`
@@ -20,7 +18,7 @@ gloss: `z-grace@-sh` · `v-walk`
 *Azawan and associates walk.*
 ```
 
-**-nsh** is a **named or titled group** (*Azawan and associates*, *Team Alpha*).
+When the group itself has a name or title (*Azawan and associates*, *Team Alpha*), keep **-n** and add **-sh**: **-nsh**.
 
 To point back to that group (or to a prior person **and** their associates), add **-sh** after resume **-r**:
 
@@ -62,9 +60,7 @@ gloss: `z-grace@` · `d-dog-sh` · `v-see`
 ### Person-role **-sh**
 <a id="person-role-sh"></a>
 
-On speaker / listener words, **-sh** has a reading that depends on the role.
-
-The **address set** is everyone you are talking to right now (all current addressees, no speaker).
+English *we* and *you all* do not say whether the listener is in the speaker’s group. On the speaker and listener roots, **-sh** still adds associates, but the reading follows the conversation role: speaker plus that person’s people, or everyone you are talking to. The **address set** is everyone you are talking to right now (all current addressees, no speaker). Inclusive *you and I* stays **`aha`**, with no **-sh**.
 
 ```
 `zedonensh vawalal.`
@@ -111,7 +107,7 @@ gloss: `z-interlocutors` · `v-walk`
 
 ### Writing
 
-**-sh** sits **after** the [reference suffix](reference-suffix.md) only. The allowed finals are **-lsh**, **-msh**, **-nsh**, and **-rsh** ([phonology.md](phonology.md#phonotactics)).
+Attach **-sh** only **after** the [reference suffix](reference-suffix.md), never before it or in place of it. The allowed word endings are therefore **-lsh**, **-msh**, **-nsh**, and **-rsh** ([phonology.md](phonology.md#phonotactics)).
 
 ```
 [role letter] + root + ending + (optional -sh)

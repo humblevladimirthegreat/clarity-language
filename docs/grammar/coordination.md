@@ -1,13 +1,19 @@
 # Joins
 
-Join same-slot material (noun phrases, verb phrases, or clause bodies) with a **right-close fence**: the items, then the join.
+When English would pack several things that play the same role into one slot (*a dog and a cat*, *walks and runs*), Agalan writes those items in a row and then one join word after them. That last word is how you know the list has ended. Call that pattern a **right-close fence**: items, then the join. The join starts with the same role letter as the items (`z` for people and things, `v` for verbs, `x` for whole clauses).
+
+Sometimes you only care that the items belong together, with no ranking among them (*and*, *or*, *not*). Call that a **set**. Sometimes you care which item comes first (*X first*, *A before B*). Call that a **rank**.
 
 ## Beginner
 <a id="beginner"></a>
 
 ### And-lists (`a`)
 
-When English would say *and*, write every item, then a join. The join’s **role letter** matches the items. Vowel **a** is **add** (an inventory). Ending **-m** leaves the list open (*among others*); **-l** means these are the only items in play. When unsure, prefer **-m**.
+When English would say *and*, write every item, then the join. Use vowel **a** on that join: you are adding the items as a group. (Mnemonic: **a** add.)
+
+The join’s first letter matches the items: `zam` after two `z-` nouns, `vam` after two `v-` verbs.
+
+Ending **-m** means other members may exist that you did not name (*among others*). Ending **-l** means these are the only items in play. When unsure, prefer **-m**.
 
 ```
 `zodogol zagadal zam.`
@@ -39,9 +45,10 @@ gloss: `v-walk` · `v-run` · `v-and.open`
 <a id="clause-level-coordination"></a>
 <a id="join-series-ending-shared"></a>
 
-The join sits **after** the items and **closes** the list, like a closing bracket. Same-slot words sit in a row; one join finishes them.
+Write the items first, then the join. Readers treat everything up to that join as one role in the clause, filled by several members. One join finishes the row.
 
-Two clause bodies use `/x/` the same way: each body’s words, then `xam`.
+
+Two full clauses use the same order: first clause’s words, second clause’s words, then a join that starts with `x` (`xam`).
 
 ```
 `zazawan vawalal zululon vurunul xam.`
@@ -54,7 +61,7 @@ gloss: `z-grace@` · `v-walk` · `z-courage@` · `v-run` · `x-and.open`
 ### Choice (`o`)
 <a id="empty-allowed-om"></a>
 
-Vowel **o** is **one**: pick one from the menu. Closed **-l** (`zol`) is a forced pick. Open **-m** (`zom`) also allows skip (*or none*).
+When English would offer a menu and ask for *exactly one*, or allow *or skip*, use vowel **o**. (Mnemonic: **o** one.) Closed **-l** (`zol`) means pick exactly one of the listed items. Open **-m** (`zom`) means pick one, or skip.
 
 ```
 `zadedal zogovel zol.`
@@ -76,13 +83,13 @@ gloss: `z-coffee` · `z-or.open`
 <a id="single-item-phrase"></a>
 <a id="standalone-phrase"></a>
 
-**Arity** is how many items sit before the join: a **list** (two or more), **single-item** (one), or **standalone** (the join alone).
+The join still comes last when there is only one item, or none. How many items sit before it is the **arity**:
 
 | Arity | Shape | Job |
 |-------|-------|-----|
-| **List** (2+) | `A B zam` | ordinary *and* / *or* / *not* |
-| **Single-item** (1) | `A zal` | that one item is the whole story (*just X*, *not X*, *X first*) |
-| **Standalone** (0) | `zual` | the empty or open frame (*everything*, *no*, *nothing comes to mind*) |
+| **List** (2+) | `A B zam` | ordinary *and* / *or* |
+| **Single-item** (1) | `A zal` | that one item is the whole story (*just X*) |
+| **Standalone** (0) | `zam` | the join alone (*nothing comes to mind*) |
 
 ```
 `zazawan zal.`
@@ -95,7 +102,7 @@ gloss: `z-grace@` · `z-and-exactly`
 ### Negation (`u`)
 <a id="negation-u"></a>
 
-Vowel **u** is **undo**: the listed items fail.
+When English would deny the listed items, use vowel **u**. (Mnemonic: **u** undo.) One item before `zul` is *not X*. Several items before `zul` is *none of these*. The join alone (`zul` / `zum`) is *no*.
 
 ```
 `gomonam gul.`
@@ -121,11 +128,9 @@ gloss: `z-tea` · `z-coffee` · `z-not`
 *none of tea or coffee.*
 ```
 
-Standalone `zul` / `zum` is *no*.
-
 ### Everything (`ua`)
 
-Stacked **u** + **a** is undo-then-add: standalone `zual` is *everything* / *everyone*. One item before it is *everything but* that item. Write stacked vowels as one word (`zual`); say first vowel, then next, then the ending.
+When English would say *everything* / *everyone*, stack **u** then **a** on a standalone join (`zual`). One item before that join is *everything but* that item. Write the stacked vowels as one word (`zual`); say first vowel, then next, then the ending. (Mnemonic: undo, then add.)
 
 ```
 `zual.`
@@ -138,7 +143,9 @@ gloss: `z-everything`
 ### Rank (`e`)
 <a id="set-joins-and-rank-joins"></a>
 
-Vowel **e** is **order**: earlier items outrank later ones. One item before `zel` means *only X matters* / *X first*.
+The *and* / *or* / *not* joins above are **set** joins: the items share a slot as a group, and writing one before the other does not rank them. A **rank** join is the other English job: you care which item comes first (priority, favorite, *A before B*).
+
+Write the items in that order, then a join with vowel **e**. (Mnemonic: **e** order.) The earlier item outranks the later. One item before `zel` means *only X matters* / *X first*.
 
 ```
 `zazawan zel.`
@@ -151,7 +158,7 @@ gloss: `z-grace@` · `z-rank`
 ### Unspecified member (`-r`)
 <a id="unspecified-member-r-phrase"></a>
 
-**-r** on a join marks an **unspecified member** of that list (*someone* / *something* in it). It sits on single-vowel **a** / **o** / **e** / **u** only.
+You can name a list without saying which member you mean (*someone* / *something* in it). Put ending **-r** on the join for that unspecified member. Use **-r** on single-vowel **a** / **o** / **e** / **u** only.
 
 | Vowel | Form | Reading |
 |-------|------|---------|
@@ -184,7 +191,7 @@ gloss: `z-tea` · `z-coffee` · `z-something`
 *some one among tea and coffee.*
 ```
 
-`A B zar` is one fence covering A and B.
+Write A and B, then `zar`: the join still ends both items, and **-r** means some member of that pair (you are not saying which).
 
 **Compare with:** on a content word, **-r** [resumes](reference-suffix.md) the last match. On a join, **-r** is an unspecified member.
 
@@ -205,11 +212,11 @@ gloss: `z-tea` · `z-coffee` · `z-something`
 | **-m** | open: other items may exist (*among others*) | *maybe more* |
 | **-r** | unspecified member of the join | *someone in the list* |
 
-The same vowels and endings work under `/d/` `/b/` (`dal`, `dam`, …), `/v/` (`val`, `vam`, …), `/ɡ/` (`gal`, `gul`, …), and `/x/` (`xal`, `xam`, …). Match the join’s role letter to the items.
+The same vowels and endings work under `/d/` `/b/` (`dal`, `dam`, …), `/v/` (`val`, `vam`, …), `/ɡ/` (`gal`, `gul`, …), and `/x/` (`xal`, `xam`, …). Match the join’s first letter to the items.
 
 ### Starter forms
 
-List arity uses the same vowel + ending after two or more items. These rows are the **standalone** and **single-item** readings you need first.
+Two or more items still take the same vowel and ending as the lists above. The table below is the readings when the join stands alone, or when only one item sits before it.
 
 | Form | Arity | Reading |
 |------|-------|---------|

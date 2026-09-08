@@ -1,6 +1,8 @@
 # Questions
 
-How to **ask**: put the sentence under question, fill a blank, or answer with a *yes* / *no* / *sure* stance.
+This page is how you **ask**, and how you answer *yes* or *no*.
+
+A **question** is a sentence that wants a reply, not a statement of fact. You can ask for *yes* or *no*, or you can leave a blank for *who* / *what* (a **fill-ask**). After a *yes* / *no* question, you can answer with a short *yes* / *no* / *sure* word (**polar stance**).
 
 ## Beginner
 <a id="beginner"></a>
@@ -8,9 +10,13 @@ How to **ask**: put the sentence under question, fill a blank, or answer with a 
 ### Ask (`jol` / `jom`)
 <a id="question"></a>
 
-**`jol`** puts the sentence **under question**: you are asking, not stating. Soft **`jom`** is the same job, gentler (wondering). Write it at the **start of the turn** (the new speech move), then the sentence body. Mnemonic: **o** is the menu; you want an answer picked.
+A **question** is a sentence that wants a reply rather than asserting a fact. Mark that setting with an act word at the start of a new speech move (a **turn**): write **`jol`**, then the rest of the sentence (the **body**: subject, verb, and so on).
 
-A body with **no** join **-r** is a **yes/no** ask.
+Soft **`jom`** is the same question setting, said more gently (wondering rather than pressing).
+
+When every person and action in the clause is already named, the expected reply is *yes* or *no*.
+
+Mnemonic: **o** is the menu; you want an answer picked.
 
 ```
 `jol zazawan vawalal.`
@@ -28,7 +34,7 @@ gloss: `j-question~` · `z-courage@` · `v-sleep`
 *Does Ululon sleep?* (gentle)
 ```
 
-Bare emptiness is still yes/no: `zal` / `xal` → *Does nobody…?* / *Did nothing happen?*
+If the subject is *nobody* (`zal`) or the clause is *nothing happened* (`xal`), you are still asking *yes* or *no*, not *who*.
 
 ```
 `jol zal vawalal.`
@@ -41,7 +47,9 @@ gloss: `j-question` · `z-none` · `v-walk`
 ### Fill-ask
 <a id="fill-ask-r"></a>
 
-A **fill-ask** is an ask that wants a name in a blank, not *yes* or *no*. Under **`jol`** / **`jom`**, join **-r** is that blank: *who* / *what* / *do what?* / *what happened?* Use [unspecified-member **-r**](coordination.md#unspecified-member-r-phrase) in the slot you want filled (`zar`, `var`, `xar`, …).
+Sometimes you do not want *yes* or *no*. You want the other person to **name** someone or something: *who?*, *what?*, *do what?*, *what happened?* That kind of question is a **fill-ask**.
+
+Keep **`jol`** or **`jom`** at the start. In the slot you want filled, use a join word that ends in **-r** (`zar`, `var`, `xar`, …). That **-r** is the blank ([unspecified-member **-r**](coordination.md#unspecified-member-r-phrase)).
 
 ```
 `jol zar vawalal.`
@@ -51,7 +59,7 @@ gloss: `j-question` · `z-who` · `v-walk`
 *Who walks?*
 ```
 
-Mnemonic: **-r** on the join = “name this member.” **a** add names *who/what*; **u** undo names *who/what else*.
+Mnemonic: **-r** on that join word means “name this member.” Vowel **a** (*add*) asks *who/what*; vowel **u** (*undo*) asks *who/what else*.
 
 | Vowel | Ask | Examples | Mnemonic |
 |-------|-----|----------|----------|
@@ -66,12 +74,12 @@ gloss: `j-question` · `z-who-else` · `v-sleep`
 *Who else sleeps?*
 ```
 
-**Compare with:** pointing back at someone already named uses content resume **-r** ([pronouns](pronouns.md)). Fill-ask is only **join** **-r**.
+**Compare with:** pointing back at someone already named uses content resume **-r** ([pronouns](pronouns.md)). Fill-ask uses only **join** **-r**.
 
 ### Fill-all
 <a id="fill-all"></a>
 
-Every join **-r** under question is a fill-ask blank. The answer is expected to **fill all** of them, in spoken order.
+If more than one slot has join **-r** in the same question, each of those **-r** words is a blank. The answer is expected to **fill all** of them, in the order you said them.
 
 ```
 `jol zar vejel dar.`
@@ -81,7 +89,7 @@ gloss: `j-question` · `z-who` · `v-see` · `d-what`
 *Who sees what?*
 ```
 
-For **one** blank and a **known** thing elsewhere, keep the known thing ordinary (`-l` / `-m`) and put join **-r** only on the blank.
+If only one slot is unknown, put join **-r** only there. Write the known thing as an ordinary word (`-l` / `-m`).
 
 ```
 `jol zar vejel dodogol.`
@@ -95,7 +103,17 @@ gloss: `j-question` · `z-who` · `v-see` · `d-dog`
 <a id="polar-stance"></a>
 <a id="answers"></a>
 
-**Polar stance** is a *yes* / *no* / *I’ll take that* word. It starts a turn, or stands alone. Shape is **`j`** plus two vowels plus **-l** (exact) or **-m** (soft). Prefer **`jael …`** over **`jael jal …`** when a body follows.
+After a *yes* / *no* question, you often answer with a short word that means *yes*, *no*, or *I’ll take that*. That answer is a **polar stance**. It can stand alone as a whole turn, or it can sit at the start of a turn before a sentence body.
+
+Write **`j`**, then two vowels, then **-l** (firm) or **-m** (softer).
+
+**`jael`** means *yes* / *true*: the claim matches. Soft twin: **`jaem`**.
+
+**`juel`** means *no* / *false*: the claim does not match. Soft twin: **`juem`**.
+
+**`jaol`** means *sure* / *I’ll take that*: you take up the offer. Soft twin: **`jaom`**.
+
+When a sentence body follows *yes*, write **`jael`** then the body. You do not also write the statement word **`jal`**.
 
 | Form | Job | Mnemonic |
 |------|-----|----------|
@@ -109,7 +127,7 @@ gloss: `j-question` · `z-who` · `v-see` · `d-dog`
 *Yes.* / *True.* / *Got it.*
 ```
 
-A *…, yes?* tag is a **second** turn after a period:
+A *…, yes?* confirm tag is its own next turn: finish the statement with a period, then write **`jael.`**
 
 ```
 `zazawan vawalal. jael.`
@@ -119,7 +137,7 @@ gloss: `z-grace@` · `v-walk` · `j-yes`
 *Azawan walks. Yes.*
 ```
 
-**Compare with:** *Don’t walk* uses **`jul`**. **`juel`** answers *is it true?*
+**Compare with:** a command *Don’t walk* uses **`jul`**. **`juel`** answers whether a claim is true.
 
 **Not the same job as:** *not X* inside the clause (`zul` / `vul` / `xul`).
 

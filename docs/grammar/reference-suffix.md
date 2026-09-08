@@ -1,6 +1,6 @@
 # Reference suffix
 
-Every content word ends with a **reference suffix**: a final letter that says how the root enters the talk. You add that letter (and the role letter) when you use the word.
+A content word’s last letter tells the listener how to take this meaning: a new thing, a name, or something already mentioned, and whether the sense is everyday or figurative. That last letter is the **reference suffix**. You add it, together with the role letter at the start, when you use the root in a sentence.
 
 ## Beginner
 <a id="beginner"></a>
@@ -8,7 +8,7 @@ Every content word ends with a **reference suffix**: a final letter that says ho
 ### First mention, literal (`-l`)
 <a id="literal-l"></a>
 
-The last letter of a content word says **how this root enters the talk**. Start with **-l**: you are **introducing** the thing in its **literal** sense (*a / some X*). Mnemonic: **-l** = **l**iteral.
+When you mention a kind of thing for the first time, in its everyday meaning (English *a* / *some X*), end the word with **-l**. The listener treats it as a new, ordinary instance of that kind. Mnemonic: **-l** = **l**iteral.
 
 ```
 `zodogol gelulul.`
@@ -21,7 +21,7 @@ gloss: `z-dog` · `g-blue`
 ### First mention, metaphor (`-m`)
 <a id="metaphor-m"></a>
 
-Use **-m** when you introduce a root in its published **metaphorical** sense. Mnemonic: **-m** = **m**etaphor.
+Sometimes the meaning you want is the published **metaphor** for that root, not the everyday picture (smile → *happy*). When you introduce that sense for the first time, end the word with **-m**. Mnemonic: **-m** = **m**etaphor.
 
 ```
 `zululon guzumum.`
@@ -36,7 +36,7 @@ gloss: `z-courage@` · `g-happy~`
 ### Named (`-n`)
 <a id="named-n-beginner"></a>
 
-Use **-n** when the root is a **name**: a definite, established label. First cases are people and places. Mnemonic: **-n** = **n**ame.
+When the word is a **name** (this person or this place, not a kind of thing), end it with **-n**. First cases are people and places. Mnemonic: **-n** = **n**ame.
 
 ```
 `zazawan vawalal.`
@@ -49,7 +49,7 @@ gloss: `z-grace@` · `v-walk`
 ### Resume (`-r`)
 <a id="resume-r-beginner"></a>
 
-Once something is already in the talk, point back with the same root and **-r**. Mnemonic: **-r** = **r**esume.
+After something is already in the conversation, you can point back to it instead of introducing it again. Use the same root and end it with **-r**. Mnemonic: **-r** = **r**esume.
 
 ```
 `zazawan vawalal. zazawar velebel.`
@@ -63,6 +63,8 @@ gloss: `z-grace@` · `v-walk` · `z-←grace` · `v-sleep`
 
 ### The four endings
 
+The four last letters, and what each does in English, in the order you just used them:
+
 | Ending | Job | Mnemonic |
 |--------|-----|----------|
 | **-l** | First mention, **literal** (*a / some X*) | **l**iteral |
@@ -72,7 +74,7 @@ gloss: `z-grace@` · `v-walk` · `z-←grace` · `v-sleep`
 
 ### Writing
 
-Write **role letter + root + ending** as one word (`zazawan`). Outside a sentence you may omit the role letter: that is a [citation](core.md#citation-forms) (`odogol`, `azawan`). Full writing rules: [core.md § Writing words](core.md#orthography).
+Spell **role letter + root + ending** as one word (`zazawan`). When you write the root outside a sentence (a list, a heading, a dictionary line), you may leave off the role letter: that is a [citation](core.md#citation-forms) (`odogol`, `azawan`). Full writing rules: [core.md § Writing words](core.md#orthography).
 
 ### Translation practice
 <a id="translation-practice"></a>

@@ -1,14 +1,16 @@
 # Phonology and phonotactics
 <a id="phonology"></a>
 
-How Agalan **sounds**, and how you build syllables so spelling matches speech.
+How to **sound out** Agalan: each letter has one reading, and word edges tell you where a content word stops. Cue words below are Standard American English.
 
 ## Beginner
 <a id="beginner"></a>
 
-Letters map to sound in one path. Cue words are Standard American English.
+Read each letter the same way every time. A **syllable** is one beat with one vowel. Spell so those beats match what you say: consonants start a beat; the last consonant of a content word is where the word ends.
 
 ### Vowels
+
+Agalan has four vowel letters. Hold each one as its own beat.
 
 | Letter | IPA | English cue (mnemonic) |
 |--------|-----|------------------------|
@@ -17,11 +19,13 @@ Letters map to sound in one path. Cue words are Standard American English.
 | **o** | /o/ | *boat* (no glide, like Spanish *no*) |
 | **a** | /ɑ/ | *father* |
 
-Hold each vowel. Two vowel letters in a row are two syllables: `jael` = *ja'el* (/ja.el/).
+Two vowel letters in a row are two syllables: `jael` = *ja'el* (/ja.el/).
 
 ### Consonants
 
-A consonant starts a **syllable** (a beat with one vowel). Prefer the **voiced** version (vocal cords buzzing) so you can hold a note; a voiceless stop cuts the air. Unvoiced is fine for style: they are not different letters.
+A consonant starts a syllable. Prefer the **voiced** version (vocal cords buzzing) so you can hold a sung note.
+
+A voiceless stop cuts the air. You may still use the unvoiced sound as style; voiced and unvoiced are not different letters.
 
 | Letter | IPA | English cue (mnemonic) | Unvoiced variant | Example |
 |--------|-----|------------------------|------------------|---------|
@@ -41,7 +45,7 @@ A consonant starts a **syllable** (a beat with one vowel). Prefer the **voiced**
 
 ### Word edges
 
-A content word ends with **-l** / **-m** / **-n** / **-r**. That last consonant is where the word stops when song eats pauses. Inside the word, consonants start syllables; they do not close a syllable in the middle.
+A content word ends with **-l** / **-m** / **-n** / **-r**. That last consonant is the audible end of the word (useful when singing leaves no pause between words). Inside the word, consonants start syllables; they do not close a syllable in the middle.
 
 `zazawan` = *za-za-wan*. `godogol` = *go-do-gol*.
 

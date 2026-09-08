@@ -4,7 +4,7 @@
 <a id="in-clause-revision"></a>
 <a id="revisers"></a>
 
-Prefix-less vowel + ending words that **revise** a role in the sentence, or glue this sentence to prior talk.
+Use these short words when you want to tweak something you just named: add a member, offer a better wording, swap one thing for another, or subtract an exception. They have **no role letter** (no `z` / `v` / `g` / …): just a vowel plus an ending (`am`, `el`, `ol`, `ul`, …). In one sentence they sit between two phrases that play the same clause role.
 
 ## Beginner
 <a id="beginner"></a>
@@ -12,13 +12,11 @@ Prefix-less vowel + ending words that **revise** a role in the sentence, or glue
 ### Including (`am` / `al`)
 <a id="in-clause-shape"></a>
 
-To **tweak** something you just named in the same sentence, put a reviser between two phrases in the **same role** (both subjects, both objects, both adjectives, …):
+You already named something (A), and you want English *including B* in that same slot. Put a reviser between two phrases that play the **same clause role** (both subjects, both objects, both adjectives, …): `A REV B`. That repairs A in place; it does not package A and B as a pair. Vowel **`a`** is the add hook: open **-m** (`am`) means B is among others you could still add; closed **-l** (`al`) means B is the only add-in you stand behind.
 
 ```
 A REV B
 ```
-
-Start with **`a`** *add*: *A, including B*. Open **-m** means B is among others; closed **-l** means B is the only add-in you stand behind.
 
 ```
 `zodogolsh am zagadal.`
@@ -32,7 +30,7 @@ gloss: `z-dog-sh` · `including.open` · `z-cat`
 
 ### Rather, instead, except
 
-Same `A REV B` shape. The [vowel](vowel-series.md) is the repair: **`e`** order (soft-correct), **`o`** one (swap), **`u`** undo (subtract).
+The same `A REV B` shape also covers *or rather*, *instead*, and *except*. Keep both sides in the same clause role, and change the [vowel](vowel-series.md) to pick the repair. You keep A's slot and change how B relates to it. Recall hooks: **`e`** order (soft-correct), **`o`** one (swap), **`u`** undo (subtract).
 
 ```
 `zazawan guzumum el gelem.`
@@ -67,12 +65,12 @@ gloss: `z-team` · `except` · `z-grace@`
 
 ### Closed and open endings
 
-Every reviser takes **-l** or **-m**. When unsure, prefer **-m**.
+For every reviser you also choose how complete the right-hand side is. **-l** means B is the whole story you stand behind; **-m** means B is one of several you could still name. When you are unsure, prefer **-m**.
 
 | Ending | Forms | Job | Mnemonic |
 |--------|-------|-----|----------|
-| **-l** | `al` / `el` / `ol` / `ul` | closed: B (or this discourse move) is exhaustive / committed | locked |
-| **-m** | `am` / `em` / `om` / `um` | open: non-exhaustive / soft | maybe more |
+| **-l** | `al` / `el` / `ol` / `ul` | B is the only one you stand behind | locked |
+| **-m** | `am` / `em` / `om` / `um` | B among others | maybe more |
 
 ```
 `zodogolsh al zagadal.`
@@ -85,7 +83,7 @@ gloss: `z-dog-sh` · `including` · `z-cat`
 ### Glue this sentence to prior talk
 <a id="discourse-revisers"></a>
 
-The **same spellings** can sit at the **front** of this sentence. Prior talk is A; this sentence is B.
+Sometimes the thing you want to tweak is not a phrase inside this sentence, but **how this sentence attaches** to what you already said (the *glue*, or sentence-to-sentence connective). Put the same spellings at the **front** of this sentence: prior talk plays A's role, and this whole sentence is B. You get *Additionally*, *In other words*, *Instead*, or *Except* without a list join and without a continue-linker. Vowels keep the same add / order / one / undo hooks as in the table.
 
 | Form | Reading | Mnemonic |
 |------|---------|----------|
@@ -118,7 +116,7 @@ gloss: `in.other.words` · `z-beauty@` · `g-dog`
 *In other words, Uhubun is a dog.*
 ```
 
-**Compare with:** *and then* between full sentences is clause **`xan`**. *However* / *therefore* use [continue](core.md#continue-x) linkers (`x…`). A discourse reviser only **repairs** how this sentence attaches to what you already said.
+**Compare with:** *and then* between full sentences is clause **`xan`**. *However* / *therefore* use [continue](core.md#continue-x) linkers (`x…`). A fronted reviser only changes how this sentence attaches to what you already said.
 
 ### Translation practice
 <a id="translation-practice"></a>

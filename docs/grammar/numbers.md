@@ -1,7 +1,9 @@
 # Numbers
 <a id="numbers"></a>
 
-Count and rank with number words. A whole numeric value is **one word**.
+Use a number word when English would say **how many** of something (*three cats*) or **which place** something has in a series (*the second book*). Write that whole count or rank as **one word**.
+
+After the first letter (the role), a **marker** tells count versus rank. Digits and an ending come next. On the page you often write a short mark (`+` for how many, `#` for which place); when you speak, you still say one full word of syllables.
 
 
 ## Beginner
@@ -9,7 +11,7 @@ Count and rank with number words. A whole numeric value is **one word**.
 
 ### Counts (`g+N`)
 
-Put a **`/ɡ/`** number word after the noun, same slot as other adjectives. **`g+3`** is *three*.
+To say **how many** of a thing there are, put a number word after the noun, in the same place as other adjectives (`/ɡ/`). The word starts with **`g`**, then the count marker (written **`+`**), then the digit: **`g+3`** is *three*.
 
 Mnemonic: written **`+`** is vowel **`a`** (add): how many.
 
@@ -31,7 +33,7 @@ gloss: `z-grace@` · `d-book-sh` · `g-three` · `v-see`
 
 ### Ordinals (`g#N`)
 
-**`g#2`** is *the second* on the preceding noun.
+To say **which place** a thing has in a series (*the first*, *the second*, …), put a rank number after the noun, in the same adjective place. **`g#2`** is *the second*. Written **`#`** is the rank marker; the digit follows.
 
 Mnemonic: written **`#`** is vowel **`e`** (order): which place, counting from the start.
 
@@ -53,11 +55,11 @@ gloss: `z-courage@` · `d-book` · `g-third` · `v-write`
 
 ### More than one (`g+`)
 
-Leave the digits off after **`+`**: **`g+`** means the count is **more than one**, without naming N.
+You can say the count is **more than one** without naming how many. Keep the count marker and leave the digits off: **`g+`**.
 
 Mnemonic: **`a`** still adds; you add a plural amount and stop.
 
-Group-reference on the noun still uses [**-sh**](plurality.md). Quantity and group are different jobs and may sit together (`zagadalsh g+`).
+Naming the group (*cats* as a set) uses [**-sh**](plurality.md) on the noun. Saying the amount is a different tool. Both may sit on the same noun (`zagadalsh g+`).
 
 ```
 `zagadalsh g+.`
@@ -67,12 +69,12 @@ gloss: `z-cat-sh` · `g-more-than-one`
 *Cats — more than one.*
 ```
 
-**Compare with:** English *some cats* (a set in this situation, no count) uses the noun plus [**-sh**](plurality.md). Use **`g+`** when the point is that the amount is more than one.
+**Compare with:** English *some cats* (a set in this situation, no count) uses the noun plus [**-sh**](plurality.md). Use **`g+`** when you mean the amount is more than one.
 
 ### Saying it aloud
 <a id="digits"></a>
 
-Write the short form (`g+3`, `g#2`, `g+`). Speech is one full word: **role-letter sound + marker syllable + digit syllables + ending**.
+On the page, write the short form (`g+3`, `g#2`, `g+`). Spoken, that is still **one word**: the role-letter sound, then a **marker syllable**, then a syllable for each digit, then the ending.
 
 Two marker syllables cover count and rank:
 
@@ -91,7 +93,7 @@ Digits are spoken as these syllables:
 | 4 | mo | 9 | na |
 | 5 | va | 0 | zo |
 
-The default ending is exact **-l**, spoken as its own last syllable. Assemble left to right:
+The word ends with exact **-l**, spoken as its own last syllable. Build the spoken form left to right:
 
 - `g+3` → **g** + **ra** + re → ***grarel*** (*three*)
 - `g#2` → g + **re** + du → ***gredul*** (*the second*)

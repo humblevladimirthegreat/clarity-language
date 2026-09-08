@@ -1,14 +1,14 @@
 # Restrictors (`/h/` / `/w/`)
 <a id="restrictors"></a>
 
-Same vowel-and-ending shapes as joins, used under `/h/` or `/w/` to say **when** the host applies: *only when…*, *never*, *always*.
+Use these words when you want to say **when** a claim counts: *only when raining*, *never*, *always*. They take the adverb letter **`h`** plus the same vowels and endings you already use on [joins](coordination.md) (`hal`, `hual`, `ham`, …). Time or case words sit **before** the restrictor; together they limit the verb claim instead of adding another manner.
 
 ## Beginner
 <a id="beginner"></a>
 
 ### Only when / never (`hal`)
 
-A restrictor in the adverb slot (`/h/`) names **occasions**: the times or cases in which the verb claim counts. Put occasion words **before** the restrictor (same right-close fence as a list). Closed **-l** locks the frame.
+A restrictor names the **occasions** (times or cases) in which the verb claim is true. Put those occasion words immediately **before** the restrictor, in the adverb slot (`/h/`); the restrictor sits last and closes the row from the right, the way a join closes a list. Closed **-l** means this is the full set of times you stand behind. Vowel **`a`** is the inventory-of-times hook.
 
 ```
 `zazawan vawalal hanunul hal.`
@@ -18,7 +18,7 @@ gloss: `z-grace@` · `v-walk` · `h-rain` · `h-only-when`
 *Azawan walks only when raining.*
 ```
 
-With **no** occasion listed, empty **`a`** inventory is *never*:
+With **no** occasion listed, the inventory is empty, so the claim never counts: bare **`hal`** is *never*. Same hook: empty **`a`** inventory plus closed **-l**.
 
 ```
 `zululon vawalal hal.`
@@ -28,9 +28,7 @@ gloss: `z-courage@` · `v-walk` · `h-never`
 *Ululon never walks.*
 ```
 
-Mnemonic: **a** add / inventory of times; empty inventory + closed **-l** → *never*.
-
-**Compare with:** two manner adverbs in a row still apply **together** (*quickly and quietly*). That is ordinary stacking, not a restrictor, and not sibling *and*:
+**Compare with:** two manner adverbs in a row with no restrictor still both apply (*quickly and quietly*). English *and* there just stacks descriptions on the same walk; it does not pick *when* the walk counts. A restrictor answers **when the verb claim counts**. Packaging members as one list still uses a [join](coordination.md).
 
 ```
 `zazawan vawalal hadazam howom.`
@@ -40,11 +38,9 @@ gloss: `z-grace@` · `v-walk` · `h-haste` · `h-quietude`
 *Azawan walks quickly and quietly.*
 ```
 
-A restrictor answers **when the host counts**. A join packages members in one slot.
-
 ### Always (`hual`)
 
-**`ua`** is *everything but empty*: bare **`hual`** is *always*. With listed occasions it is *always except when…*. Open **-m** softens (*as far as you can tell*).
+To say the verb claim counts at every time, or at every time except some listed ones, use **`hual`** (open **`huam`** if you want a hedge: *as far as you can tell*). Bare **`hual`** is *always*; with occasion words before it, those times are the exceptions (*always except when…*). Recall hook: **`ua`** is undo plus add (every time, minus any times you listed).
 
 ```
 `zuhubun vuzunul hual.`
@@ -64,7 +60,7 @@ gloss: `z-grace@` · `v-walk` · `h-rain` · `h-always-except`
 
 ### Sometime / anytime / sometime else
 
-Unspecified-member **-r** names an occasion without listing it.
+You can name *sometime*, *anytime*, or *sometime else* without listing a content word such as *rain*. Use ending **-r** on the restrictor (`har` / `hor` / `hur`): **-r** names some member of the time inventory without spelling that member. Nothing is required before it.
 
 | Form | Reading | Mnemonic |
 |------|---------|----------|
@@ -90,7 +86,7 @@ gloss: `z-beauty@` · `v-walk` · `h-anytime`
 
 ### On the previous adjective (`/w/`)
 
-Same vowels on `/w/` limit the **previous adjective**, not the whole clause.
+Sometimes you want to limit the **adjective you just wrote** (*never happy*), not the whole verb claim. Use the same vowels with letter **`w`** (`wal`). `/h/` still limits the clause; `/w/` only looks back at that adjective.
 
 ```
 `zazawan guzumum wal.`
@@ -107,7 +103,7 @@ gloss: `z-grace@` · `g-happy` · `w-never`
 
 ### Listed occasions (open)
 
-Open **-m** leaves other occasions possible. Each listed piece is a simple `/h/` (or `/w/`) content word, with the same role letter on every piece and on the restrictor.
+Open **-m** leaves other occasions possible: *when raining, among other times*, not *only when*. Each listed piece is a simple adverb (or `/w/` adjective-limiter) content word; every piece and the restrictor share the same role letter. Bare open **`ham`** hedges *never* (*never, as far as you can tell*). Vowel hooks stay **`a`** inventory and **`ua`** always-minus-these.
 
 | Form | With occasion(s) | Bare | Mnemonic |
 |------|------------------|------|----------|

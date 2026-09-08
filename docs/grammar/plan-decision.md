@@ -1,7 +1,7 @@
 # Plan, predict, and decision
 <a id="plan-decision"></a>
 
-Mark a clause as **intention** or a **forecast** with a closed `/h/` mood root.
+English *will* and *going to* can mean **intention** (the course someone means to take) or a **forecast** (what you think will happen in the world). Agalan splits those into two closed mood words: special `/h/` words that frame the whole clause rather than naming a need. Put the mood word first (floating `/h/`), then write an ordinary content verb.
 
 ## Beginner
 <a id="beginner"></a>
@@ -9,11 +9,7 @@ Mark a clause as **intention** or a **forecast** with a closed `/h/` mood root.
 ### Plan
 <a id="plan-predict"></a>
 
-Mark **intention** (what someone means to do) with the closed mood root **`owora`** 🗺️ *world-map* → *plan* (**PLAN**). English *will* / *going to* can mean this *or* a world forecast; use PLAN only for the course someone means to take.
-
-**Shape:** a floating `/h/` word that frames the clause: **`howora`** + an ending, then an ordinary content verb. Prefer floating `/h/`. Use `/w/` only when the mood frames a preceding `/ɡ/` adjective.
-
-A **map** charts a course you mean to take. Ordinary content stays available (`zoworal` *a map*; `voworal` *to plan*).
+To say what someone **means to do**, use the closed mood root **`owora`**. Spell it as floating `/h/`: **`howora`** plus an ending, then the ordinary content verb (*walk*, *write*). That lets you mark intention without borrowing English *will*, which can also be a forecast. Prefer floating `/h/`; use `/w/` only when the mood frames a preceding `/ɡ/` adjective. (Mnemonic: 🗺️ *world-map* → *plan* (**PLAN**). A map charts a course you mean to take.)
 
 ```
 `zazawan howoram vawalal.`
@@ -23,19 +19,19 @@ gloss: `z-grace@` · `h-PLAN-sketch` · `v-walk`
 *Azawan means to walk.* (direction only; default)
 ```
 
-When unsure how detailed the course is, prefer **`howoram`**. Leave PLAN off when you are not framing intention.
+Ordinary content stays available (`zoworal` *a map*; `voworal` *to plan*). Leave PLAN off when you are not framing intention.
 
 #### Endings — map resolution
 <a id="plan-map-resolution"></a>
 <a id="plan-endings"></a>
 
-On **`owora`**, **-l / -m / -r** mark **how drawn the intention map is**. **-n** stays ordinary [proper](reference-suffix.md#proper-name--n). A backup path is **fork**.
+On **`owora`**, **-l / -m / -r** say **how fully drawn** the intention is: direction only, steps filled in, or a backup path if the first course fails. **-n** is ordinary [proper](reference-suffix.md#proper-name--n). When you are unsure how detailed the course is, prefer **`howoram`**.
 
 | Ending | Form | Job | Reading | Mnemonic |
 |--------|------|-----|---------|----------|
 | **-m** | **`howoram`** | **sketch** (soft default) | direction only: *means to …* without steps | open sketch |
 | **-l** | **`howoral`** | **itinerary** | steps filled in: *how* is on the map | locked itinerary |
-| **-r** | **`howorar`** | **fork** | contingency / backup path: *if not A, then B* | forked / other-path |
+| **-r** | **`howorar`** | **fork** | backup path: *if not A, then B* | forked / other-path |
 
 ```
 `zululon howoral vawalal.`
@@ -53,14 +49,10 @@ gloss: `z-beauty@` · `h-PLAN-fork` · `v-walk`
 *If that path fails, Uhubun will walk.* (backup course)
 ```
 
-**Not the same job as:** [DECISION](#decision) (pick firmness). PLAN says how drawn the map is, not how locked the pick is.
-
 ### Predict
 <a id="predict"></a>
 
-Mark a **world forecast** (what will happen) with **`elezo`** 🔭 *telescope* → *forecast* (**PREDICT**). A **telescope** looks ahead at a distance.
-
-**Shape:** floating `/h/` **`helezo…`**, then an ordinary content verb. Prefer **`helezom`**.
+To say **what will happen** in the world (rain, a result), not what someone means to do, use the closed mood root **`elezo`**. Spell it as floating `/h/`: **`helezo`** plus an ending, then an ordinary content verb. Prefer **`helezom`** when you are not adding more. (Mnemonic: 🔭 *telescope* → *forecast* (**PREDICT**). A telescope looks ahead at a distance.)
 
 ```
 `helezom vanunul.`

@@ -2,14 +2,18 @@
 <a id="x-compounds"></a>
 <a id="compound-parser"></a>
 
-How you tell, in an ordinary word, which **job** a mid-word **`x`** is doing.
+How to read **`x`** inside one content word: the two pieces around that letter, and the word’s ending, tell you what the whole word is doing.
 
 ## Beginner
 <a id="beginner"></a>
 
 ### Families at the seam
 
-Mid-word **`x`** is the **seam** inside one content word (mnemonic: a plus between two pieces). The ending belongs to the whole word. After the role letter, what sits left and right of the first **`x`** tells you which job you already know.
+When two published roots sit in **one** content word, write **`x`** between them (the **seam**).
+
+After the [role letter](core.md#beginner) (the first letter of the word: subject, verb, and so on), look at what sits left and right of the first **`x`**. The [ending](reference-suffix.md) (**-l** / **-m** / **-n** / **-r**) belongs to the whole word, not to the left piece alone.
+
+Memory hook: treat **`x`** like a plus sign between two pieces.
 
 ```
 `zuzuzuxogoven.`
@@ -21,8 +25,10 @@ gloss: `z-sushi-x-coffee@`
 
 <AgelanInspect text="zuzuzuxogoven." />
 
-| You see (after PoS) | Job | Example |
-|---------------------|-----|---------|
+That shape is an **ordinary compound**: a full root, **`x`**, another full root. The left root is the kind; the right root narrows it (field or further label). One name, one ending.
+
+| You see (after the role letter) | Reading | Example |
+|--------------------------------|---------|---------|
 | Full root, **`x`**, full root | Ordinary compound: one label, kind then field | `zuzuzuxogoven` |
 | **`a`** / **`u`** / **`o`**, **`x`**, then a root | [Role compound](roles.md#role-compounds) | `zaxuvugul` *a fighter* |
 | A root, **`x`**, then **`a`** / **`e`** / **`o`** / **`u`** | [Values](values.md) or [ability](ability.md#ability) | `vuzunuxel` |

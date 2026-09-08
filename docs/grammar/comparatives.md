@@ -1,7 +1,7 @@
 # Comparatives, superlatives, and equatives
 <a id="comparatives-page"></a>
 
-How Agalan says *more … than*, *the …-est*, and *as … as* on a scale adjective.
+English splits three nearby jobs on a quality like *challenging*. *More … than* and *the most* put people in **order** on that quality. *As … as* says they sit at the **same height**. *Both are challenging* only says **each has** the quality; it does not say who ranks higher or whether they match.
 
 **Needs:** rank and equality joins from [coordination](coordination.md).
 
@@ -13,9 +13,9 @@ How Agalan says *more … than*, *the …-est*, and *as … as* on a scale adjec
 <a id="comparatives"></a>
 <a id="comparative-shared-scale"></a>
 
-Use this shape when English would say *A is more ADJ than B*. Name the two people, close with a **rank join** (the join that puts items in order): **`e`**, written `zel`. Then give the **scale**: the shared adjective (`/ɡ/`) they are ordered on.
+When English would say *Azawan is more challenging than Ululon*, you put two people in order on one quality. Write both names, then the **rank join** **`zel`** (vowel **`e`**), then the adjective they share (`/ɡ/`). The first name sits higher on that quality than the second. Both may still sit high; the join only says who ranks higher.
 
-Mnemonic: join vowel **`e`** is **order**. The shared `/ɡ/` is the scale you order them on.
+Mnemonic: join vowel **`e`** is **order**. The shared `/ɡ/` is the quality you order them on.
 
 ```
 `zazawan zululon zel gomonam.`
@@ -25,12 +25,18 @@ gloss: `z-grace@` · `z-courage@` · `z-rank/more` · `g-challenging`
 *Azawan is more challenging than Ululon.*
 ```
 
-The earlier name ranks above the later. Both people may still sit high on the scale; the join only says who ranks higher.
+```
+`zuhubun zazawan zel gelem.`
+
+gloss: `z-beauty@` · `z-grace@` · `z-rank/more` · `g-big`
+
+*Uhubun is bigger than Azawan.*
+```
 
 ### Superlatives (`zel` + one name)
 <a id="superlatives"></a>
 
-One name before `zel` is a **superlative**: that person is *the most ADJ* of the group in play.
+When English would say *the most challenging*, you are still ranking, but you name only the winner. One name before `zel`, then the same shared adjective, means that person ranks highest in the group you have in mind.
 
 ```
 `zazawan zel gomonam.`
@@ -40,10 +46,18 @@ gloss: `z-grace@` · `z-rank/more` · `g-challenging`
 *Azawan is the most challenging (of all).*
 ```
 
+```
+`zuhubun zel guzumum.`
+
+gloss: `z-beauty@` · `z-rank/more` · `g-happy`
+
+*Uhubun is the happiest (of all).*
+```
+
 ### Degree (*much* / *slightly*)
 <a id="degree"></a>
 
-Hang *much* / *slightly* as extra detail (`/w/`) on that same scale adjective.
+English *much more* / *slightly more* adds **how large the gap is**, without giving a number. Write that extra detail as `/w/` after the same shared adjective.
 
 ```
 `zazawan zululon zel gomonam wogegal.`
@@ -58,11 +72,9 @@ gloss: `z-grace@` · `z-courage@` · `z-rank/more` · `g-challenging` · `w-floo
 <a id="equative"></a>
 <a id="as-as"></a>
 
-Use this shape when English would say *A is as ADJ as B*. Close with equality join **`ae`**, then the same kind of shared scale `/ɡ/`.
+When English would say *as challenging as*, you are not picking a winner. You are saying two people sit at the **same height** on the quality. Write both names, then equality join **`zael`** (vowel **`ae`**), then the same kind of shared adjective (`/ɡ/`). Closed **-l** (`zael`) is a firm match. Open **-m** (`zaem`) is *about as … as*.
 
-Mnemonic: **`ae`** is **add + order**: they share a rank on the scale.
-
-Closed **-l** (`zael`) is a firm *as … as*. Open **-m** (`zaem`) is *about as … as*.
+Mnemonic: **`ae`** is **add + order**: they share a rank on the quality.
 
 ```
 `zazawan zululon zael gomonam.`
@@ -72,7 +84,17 @@ gloss: `z-grace@` · `z-courage@` · `z-as…as` · `g-challenging`
 *Azawan is as challenging as Ululon.*
 ```
 
-**Compare with:** English *is ADJ* with no *as … as* is [classification](predication.md#classification): `zazawan gomonam` *Azawan is challenging*. Use **`ae`** when two people share a height on the scale.
+```
+`zululon zuhubun zael guzumum.`
+
+gloss: `z-courage@` · `z-beauty@` · `z-as…as` · `g-happy`
+
+*Ululon is as happy as Uhubun.*
+```
+
+**Compare with:** English *is ADJ* with no *as … as* is [classification](predication.md#classification): `zazawan gomonam` *Azawan is challenging*. Use **`ae`** when two people share a height on the quality.
+
+**Compare with:** English *both are challenging* is an *and*-list plus a shared adjective (`zazawan zululon zal gomonam`): each has the quality. That is not a ranking and not a matching height. Use **`ae`** only for *as … as*.
 
 ```
 `zazawan zululon zaem gudubul.`
@@ -82,10 +104,10 @@ gloss: `z-grace@` · `z-courage@` · `z-as…as.open` · `g-bright`
 *Azawan is about as bright as Ululon.*
 ```
 
-| Join + shared scale `/ɡ/` | Job | Mnemonic |
-|---------------------------|-----|----------|
-| Rank **`e`** (`zel`) | *more … than* / *the …-est* | **`e`** order along the scale |
-| Equality **`ae`** (`zael` / `zaem`) | *as … as* / *about as … as* | **`ae`** equal rank on the scale |
+| Join + shared adjective `/ɡ/` | English job | Mnemonic |
+|-------------------------------|-------------|----------|
+| Rank **`e`** (`zel`) | *more … than* / *the …-est* | **`e`** order along the quality |
+| Equality **`ae`** (`zael` / `zaem`) | *as … as* / *about as … as* | **`ae`** equal rank on the quality |
 
 ### Translation practice
 <a id="translation-practice"></a>

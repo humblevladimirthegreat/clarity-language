@@ -2,7 +2,9 @@
 <a id="causation"></a>
 <a id="necessary-sufficient"></a>
 
-How to say *A would work for B*, *B needs A*, and clause *if* / *because*.
+English mixes three jobs that all feel like cause.
+
+*Would work* names a **route** toward an **outcome**: effort toward getting the job done, clouds toward rain. Other routes may still exist. *Needs* names a condition the outcome cannot do without (*without X, no Y*). Clause *if* / *because* attach a **full sentence** as the condition or the reason, not a noun or a verb phrase.
 
 **Needs:** [Joins](coordination.md) and [dependent clauses](core.md#dependent-clauses) (**`adoro`**).
 
@@ -13,9 +15,9 @@ How to say *A would work for B*, *B needs A*, and clause *if* / *because*.
 <a id="sufficient"></a>
 <a id="np-poles"></a>
 
-Put the **outcome** first. Put what **would work** after it with open inclusive **`…aom`**. Other routes may still count.
+When you mean *this would work*, write the outcome first (what you are trying to get). After it, write the route (what would get you there), then an open *and/or* join **`…aom`**. The join’s role letter matches the route (`zaom` after a noun, `vaom` after a verb). Open **-m** means this is at least one route; other routes may still work.
 
-Mnemonic: vowel **`a`** is **add**. You add a route, and the outcome can follow.
+Vowel **`a`** is **add**: you add a route, and the outcome can follow.
 
 ```
 `zezewel zaom.`
@@ -25,7 +27,7 @@ gloss: `z-effort` · `z-and/or.open`
 *Effort would work (among other routes).*
 ```
 
-Two (or more) items before **`…aom`** are jointly listed hits: *clouds or snow would work*.
+Two or more routes before **`…aom`** are listed together: any of them would work.
 
 ```
 `zuludul zozowol zaom.`
@@ -45,7 +47,7 @@ gloss: `z-beauty@` · `v-sing` · `v-and/or.open`
 *Uhubun’s singing would work.*
 ```
 
-Closed **`…aol`** (*X is enough*) is the stronger twin: this route alone settles the frame. Everyday *would work* uses **`…aom`**.
+Closed **`…aol`** (*X is enough*) is the stronger twin: this route alone is enough; you are not leaving room for other routes. Everyday *would work* uses **`…aom`**.
 
 ```
 `zabogol zaol.`
@@ -55,13 +57,15 @@ gloss: `z-book` · `z-and/or`
 *A book is enough.*
 ```
 
+**For *if* / *because*, use:** a [dependent clause](core.md#dependent-clauses) with **`hadorom` / `hurugum`** + **`badorol`**. The condition or reason is a full sentence, not a noun or verb before **`…aom`**.
+
+**Compare with:** *needs* / *without* (*the outcome cannot do without this*) is not **`…aom`**. Use an exclusion join or a *never* restrictor.
+
 | Form | Job | Mnemonic |
 |------|-----|----------|
 | **`…aom`** (`zaom` / `vaom` / …) | *at least X* / *X would work* | **`a`** add a route |
-| **`…ao…`** (two or more items) | several jointly listed hits | **`a`** add several routes |
-| **`…aol`** | *X is enough* (this route settles it) | **`a`** add, **-l** locked |
-
-**For *if* / *because*, use:** a [dependent clause](core.md#dependent-clauses) with **`hadorom` / `hurugum`** + **`badorol`**.
+| **`…ao…`** (two or more items) | several routes; any would work | **`a`** add several routes |
+| **`…aol`** | *X is enough* (this route alone) | **`a`** add, **-l** locked |
 
 ### Translation practice
 <a id="translation-practice"></a>

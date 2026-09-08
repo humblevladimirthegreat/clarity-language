@@ -1,7 +1,7 @@
 # Commentary and evidentiality
 <a id="commentary"></a>
 
-First-person *I think* as a take over the scene.
+To say *I think*, you add your take on what is happening (not a report that someone is thinking). This page also covers *how you know* a claim, and *as if* the scene is play. This first stage is *I think*.
 
 ## Beginner
 <a id="beginner"></a>
@@ -9,11 +9,11 @@ First-person *I think* as a take over the scene.
 ### COMMENT
 <a id="comment"></a>
 
-Mark **first-person mental commentary**: English *I think* as a take over the scene.
+When English would use *I think* over the whole sentence, Agalan keeps the ordinary content verb (*walks*, *sleeps*) and adds a framing `/h/` word. That word is **`odoho`**. Put it in the clause as **floating `/h/`**: it comments on the whole clause, not on a need. Start with **`hodohom`**: you notice the take and hold it lightly.
 
-**Shape:** an `/h/` word that frames the clause (**floating `/h/`**): **`odoho`** 💭 *thought* → *commentary*. Content verbs stay ordinary. Start with **`hodohom`**: you notice the take and hold it lightly.
+The walking or sleeping is still the event. Without the `/h/` word you are just reporting the scene. The same root can still be ordinary content (`zodohol` *a thought*; `vodohol` *to think* as a deliberate event).
 
-A **thought balloon** floats a take over the scene. Bare contact is watching without narration. Ordinary content stays available (`zodohol` *a thought*; `vodohol` *to think* as a deliberate event).
+**Mnemonic:** **`odoho`** is 💭 *thought* → commentary (a thought balloon over the scene).
 
 ```
 `zazawan hodohom vawalal.`
@@ -23,7 +23,9 @@ gloss: `z-grace@` · `h-COMMENT-soft` · `v-walk`
 *I think Azawan walks.* — commentary held lightly (default)
 ```
 
-COMMENT **frames** the clause. The same frame can sit on an ask:
+**Not the same job as:** `vodohol` *to think* as a deliberate event (`zazawan vodohol.` *Azawan thinks.*).
+
+The same `/h/` word can sit on a yes/no ask:
 
 ```
 `jol zuhubun hodohom velebel.`
@@ -33,12 +35,10 @@ gloss: `j-yes` · `z-beauty@` · `h-COMMENT-soft` · `v-sleep`
 *Does Uhubun sleep?* — asked with light commentary
 ```
 
-**Not the same job as:** `vodohol` *to think* as a deliberate event (`zazawan vodohol.` *Azawan thinks.*).
-
 ### Hold endings (COMMENT)
 <a id="comment-hold"></a>
 
-On **`odoho`**, **-l / -m / -r** mark **how tightly you hold** the balloon. **-n** is ordinary [proper](reference-suffix.md#proper-name--n).
+On **`odoho`**, **-l / -m / -r** say how committed you are to that *I think*. **-m** is the default: you notice the take and hold it lightly. **-l** treats the take as what the scene is (*it is so because I think*). **-r** names the same take and steps you back toward reporting without commentary. **-n** is ordinary [proper](reference-suffix.md#proper-name--n).
 
 | Ending | Form | Hold | Reading | Mnemonic |
 |--------|------|------|---------|----------|

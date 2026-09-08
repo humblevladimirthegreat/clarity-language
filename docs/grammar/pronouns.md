@@ -1,15 +1,13 @@
 # Pronouns
 
-Once something is on the table, you point back with a **-r** form.
+English *he*, *she*, *it*, and *they* point back to someone or something already named. Agalan does that with **-r** on a content word: you keep the role letter for this sentence’s slot (subject, object, and so on), then enough of the earlier word’s root to pick the right person or thing. That lets you skip repeating the full name while the listener still knows who you mean.
 
 ## Beginner
 <a id="beginner"></a>
 
 ### Resume with **-r**
 
-Once a person or thing is already in the talk, point back with **-r**. **-r** = **r**esume.
-
-The **antecedent** is the word you point back to. The resume word takes the role letter for the slot you need **now**, then a **prefix of that word’s root**, then **-r**. The listener takes the **most recent** word whose stem matches.
+After you have already named a person or thing, the next sentence can point back instead of repeating the full word. The word you point back to is the **antecedent**. The new word takes the role letter for the slot you need **now** (subject, object, and so on), then a **prefix of that word’s root**, then **-r**. The listener takes the **most recent** word whose stem matches that prefix. Mnemonic: **-r** = **r**esume.
 
 **Short resume:** cut the root **up to and including its 2nd vowel**. Prefer this when it already picks the right antecedent.
 
@@ -34,7 +32,7 @@ gloss: `z-dog` · `v-walk` · `z-book` · `g-size~` · `z-←dog` · `v-sit`
 ### Special pronouns
 <a id="special-pronouns"></a>
 
-Some words name **roles in this talk**: who is speaking, who is addressed, and a few other fixed jobs. They take the usual role letter for the slot they fill. Person roles default to **-n**.
+Most of the time you name people with a proper name (`zazawan`, `zululon`) and resume with **-r**. A few closed roots instead name **roles in this conversation**: who is speaking, who is being spoken to, you-and-I together, a nonspecific *someone*, or a slot that stands for the next sentence. They take the usual role letter for the slot they fill in the clause (subject, object, and so on). Person roles default to **-n**.
 
 When a proper name is available, prefer that name (and its **-r** resume), including for talking about yourself: [proper name](reference-suffix.md#proper-name--n).
 
@@ -46,7 +44,7 @@ gloss: `z-courage@` · `v-walk`
 *I walk.* Ululon names himself rather than saying *I*.
 ```
 
-Use **`ugobo`** (*speaker*) and **`edone`** (*listener*) when the point is the role, not a name.
+Use **`ugobo`** (*speaker*) and **`edone`** (*listener*) when what matters is the conversation role, not a name. Mnemonic: 🎤 *microphone* → speaker; 🎧 *headphones* → listener.
 
 ```
 `zugobon vuwurul dedonen.`
@@ -64,7 +62,7 @@ gloss: `z-speaker` · `v-walk`
 *I walk.*
 ```
 
-Inclusive *we* (you and I) uses **`aha`**: **interlocutors**, the speaker and the people being addressed, together. 🤝 *handshake* → *co-participants*.
+English *we* can mean “you and I” or “I and my people, not you.” Inclusive *we* (you and I) uses **`aha`**: the speaker and the people being addressed, together (**interlocutors**). Mnemonic: 🤝 *handshake* → co-participants.
 
 ```
 `zahan vawalal.`
@@ -74,7 +72,7 @@ gloss: `z-interlocutors` · `v-walk`
 *We (you and I) walk.*
 ```
 
-**`enenu`** is a nonspecific **individual** (*someone*). Once that person is on the table, resume them with content **-r**.
+**`enenu`** names a nonspecific **individual** (*someone*), not a particular person you have already named. Once that person is in the talk, resume them with content **-r**. Mnemonic: 👤 *silhouette* → a person.
 
 ```
 `zenenun velebel.`
@@ -84,7 +82,7 @@ gloss: `z-someone` · `v-sleep`
 *Someone sleeps.*
 ```
 
-**`adoro`** is the placeholder for the material that **immediately follows** ([dependent clauses](core.md#dependent-clauses)). 🚪 *doorway* → *what follows*. Put **`adoro` last** in its host slot; the dependent follows with no intervening host words. Default ending is **-l**.
+When a sentence needs a whole following sentence as its object (English *that Ululon left*), **`adoro`** is the placeholder in the first sentence for that following material ([dependent clauses](core.md#dependent-clauses)). Put **`adoro` last** in its host slot; the dependent sentence follows with no extra host words in between. Default ending is **-l**. Mnemonic: 🚪 *doorway* → what follows.
 
 ```
 `zugobon dazawan vezehel dadorol zululon vebarul.`
@@ -105,7 +103,7 @@ gloss: `z-speaker` · `d-grace@` · `v-tell` · `d-next-clause` · `z-courage@` 
 ### Clusivity
 <a id="clusivity"></a>
 
-**Clusivity** is who counts as *we* or *you* when names are unavailable.
+English *we* and *you* do not say whether the listener is in the group. **Clusivity** is that split: who counts as *we* or *you* when you are using conversation-role words instead of names. Add **-sh** after the usual ending on **`ugobo`** or **`edone`** to grow an associative group from that role; inclusive *you and I* stays the separate root **`aha`**. That lets you choose *I and my people*, *you all*, or *you and I* without guessing from English *we*.
 
 ```
 `zugobonsh vawalal.`
