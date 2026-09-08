@@ -105,7 +105,19 @@ The word ends with exact **-l**, spoken as its own last syllable. Build the spok
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Count with `g+N`, rank with `g#N`, and use digitless **`g+`** with **-sh** on the noun for *more than one*.
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` · `agada` *cat* · `odogo` *dog* · `abogo` *book* · `ohohu` *house* · `eje` *see* · `uwuru` *write*
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *cat* | `agada` |
+| *dog* | `odogo` |
+| *book* | `abogo` |
+| *house* | `ohohu` |
+| *see* | `eje` |
+| *write* | `uwuru` |
 
 #### English → Agalan
 
@@ -760,7 +772,20 @@ In a sentence, the PoS attaches to that single number word (see [Parts of speech
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Prefer shorthand (`g~+3`, `g#-2`, `h_15,30`). Sample PoS, endings, digitless number as verb / adverb / interjection / discourse, and **one** time reading — not the whole inventory.
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` · `agada` *cat* · `abogo` *book* · `ohohu` *house* · `elulu` *blue* · `awala` *walk* · `elebe` *sleep* · `eje` *see*
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *cat* | `agada` |
+| *book* | `abogo` |
+| *house* | `ohohu` |
+| *blue* | `elulu` |
+| *walk* | `awala` |
+| *sleep* | `elebe` |
+| *see* | `eje` |
 
 #### English → Agalan
 
@@ -1164,7 +1189,17 @@ Ordinary spelling carries no stress mark ([phonology](phonology.md#phonotactics)
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. Digitless exponents, hyperbole, and zero×exp as in the teach tables — shorthand (`g+e`, `g+1e`, `x#e`).
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` · `agada` *cat* · `abogo` *book* · `awala` *walk* · `uzunu` *sing*
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *cat* | `agada` |
+| *book* | `abogo` |
+| *walk* | `awala` |
+| *sing* | `uzunu` |
 
 #### English → Agalan
 

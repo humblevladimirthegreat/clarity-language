@@ -123,7 +123,22 @@ gloss: `in.other.words` · `z-beauty@` · `g-dog`
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `ahada` *team* · `uzumu` smile → *happy* (**-m**) · `ele` elephant → *size* / *big* (**-m**) · `awala` *walk* · `elebe` *sleep*
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *dog* | `odogo` |
+| *cat* | `agada` |
+| *tea* | `adeda` |
+| *coffee* | `ogove` |
+| *team* | `ahada` |
+| smile → *happy* (**-m**) | `uzumu` |
+| elephant → *size* / *big* (**-m**) | `ele` |
+| *walk* | `awala` |
+| *sleep* | `elebe` |
 
 #### English → Agalan
 
@@ -349,7 +364,23 @@ Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om*
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `ahada` *team* · `uzumu` smile → *happy* (**-m**) · `erelu` relief → *calm* (**-m**) · `awala` *walk* · `urunu` *run* · `ezaza` east → *progress* / *therefore*
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *dog* | `odogo` |
+| *cat* | `agada` |
+| *tea* | `adeda` |
+| *coffee* | `ogove` |
+| *team* | `ahada` |
+| smile → *happy* (**-m**) | `uzumu` |
+| relief → *calm* (**-m**) | `erelu` |
+| *walk* | `awala` |
+| *run* | `urunu` |
+| east → *progress* / *therefore* | `ezaza` |
 
 #### English → Agalan
 

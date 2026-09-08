@@ -118,7 +118,24 @@ A shop mashup stays **`x`** even when frequent. A fossil kind is a lexicon lemma
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. The point is **`x`** assembly vs two words vs a lexical compound.
 
-**Roots used here:** `olove` *love* · `aga` *crush* · `uzuzu` *sushi* · `ogove` *coffee* · `adeda` *tea* · `ohohu` *house* · `abede` *bed* · `ebere` *person* · `onogo` *bond* · `odogo` *dog* · `agada` *cat* · `unowe` *sunflower* (lexical compound) · `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**)
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *love* | `olove` |
+| *crush* | `aga` |
+| *sushi* | `uzuzu` |
+| *coffee* | `ogove` |
+| *tea* | `adeda` |
+| *house* | `ohohu` |
+| *bed* | `abede` |
+| *person* | `ebere` |
+| *bond* | `onogo` |
+| *dog* | `odogo` |
+| *cat* | `agada` |
+| *sunflower* (lexical compound) | `unowe` |
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
 
 #### English → Agalan
 

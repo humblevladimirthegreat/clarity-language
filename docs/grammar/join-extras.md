@@ -93,7 +93,27 @@ Keep list or empty arity on the **`/b/` argument**. Join-relations take **-n**.
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Name a **join-act** (`van` / `von` / …) when someone *does* the move to an object; name a **join-relation** (`gan` / `han` / … plus one `/b/`) when a host is framed *including* / *without* / *prioritizing* something.
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` (house names); `abele` *apple*; `adeda` *tea*; `ubage` *dessert*; `ulule` *lie*; `abanu` *peanut*; `ogove` *coffee*; `abugu` *bug*; `ewene` *workaround*; `urage` *birthday-cake*; `unude` *water*; `ahada` *team*; `awala` *walk*; `uzebu` *problem*; `emema` *meat*.
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *apple* | `abele` |
+| *tea* | `adeda` |
+| *dessert* | `ubage` |
+| *lie* | `ulule` |
+| *peanut* | `abanu` |
+| *coffee* | `ogove` |
+| *bug* | `abugu` |
+| *workaround* | `ewene` |
+| *birthday-cake* | `urage` |
+| *water* | `unude` |
+| *team* | `ahada` |
+| *walk* | `awala` |
+| *problem* | `uzebu` |
+| *meat* | `emema` |
 
 #### English → Agalan
 

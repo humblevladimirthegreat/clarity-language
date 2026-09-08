@@ -114,7 +114,17 @@ gloss: `z-grace@` · `z-courage@` · `z-as…as.open` · `g-bright`
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Rank fence plus shared scale `/ɡ/` is the comparison; single-item `zel` is the superlative; `zael` / `zaem` are equative.
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` · `omona` · `udubu` · `ele` · `uzumu`
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *challenging* | `omona` |
+| *bright* | `udubu` |
+| *size* / *big* | `ele` |
+| smile → *happy* (**-m**) | `uzumu` |
 
 #### English → Agalan
 
@@ -289,7 +299,17 @@ Counted gaps use that one `/b/` on the scale. Vague *much* / *slightly* stays sh
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Test arity (`oe` / `ue` / standalone / `zer`), distributive **`a`**, and counted measure gaps versus vague `/w/`.
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` · `omona` · `ele` · `urule` · `uzumu`
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *challenging* | `omona` |
+| *size* / *big* | `ele` |
+| *measurement* | `urule` |
+| smile → *happy* (**-m**) | `uzumu` |
 
 #### English → Agalan
 
@@ -458,7 +478,23 @@ Six fixed standards. Ending stays **-n** (named reference-class standard).
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. Put the standard in the *than*-conjunct; **`zugobon`** is performance, **`zugoboxrawon`** is Mine.
 
-**Roots used here:** `azawa` / `ululo` · `uzunu` · `uzumu` · `omona` · `agala` · `ebegu` · `oju` · `ahama` · `ugobo` · `ulude` · `alaba` · `ua`
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *sing* | `uzunu` |
+| smile → *happy* (**-m**) | `uzumu` |
+| *challenging* | `omona` |
+| *clarity* | `agala` |
+| *draft* | `ebegu` |
+| *balance* | `oju` |
+| hamster → *routine* | `ahama` |
+| *speaker* | `ugobo` |
+| *community* | `ulude` |
+| *expertise* | `alaba` |
+| *everyone* | `ua` |
 
 #### English → Agalan
 

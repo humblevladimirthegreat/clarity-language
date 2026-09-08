@@ -108,7 +108,28 @@ Some published roots keep a **fixed special reading** under one part of speech. 
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Compose emotion (one value + ACT + LOCUS), or number alternative candidates (`g#N`).
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` · `olozo` *competence* · `onogo` *relatedness* · `ezehe` *dialogue* / *tell* · `ezawa` *division* · `ebegu` *draft* · `ememo` *memo* · `ogega` HIGH · `ejelo` MED · `ozowo` LOW · `abobo` INTERNAL · `oruru` EXTERNAL · `anede` CIRCUM · `uzebu` *problem* · `agego` *solution* · `olala` *goal*
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *competence* | `olozo` |
+| *relatedness* | `onogo` |
+| *dialogue* / *tell* | `ezehe` |
+| *division* | `ezawa` |
+| *draft* | `ebegu` |
+| *memo* | `ememo` |
+| HIGH | `ogega` |
+| MED | `ejelo` |
+| LOW | `ozowo` |
+| INTERNAL | `abobo` |
+| EXTERNAL | `oruru` |
+| CIRCUM | `anede` |
+| *problem* | `uzebu` |
+| *solution* | `agego` |
+| *goal* | `olala` |
 
 #### English → Agalan
 
@@ -247,7 +268,30 @@ Prefer floating `/h/`. **RULE** is complex `/h/` + `/b/` when you name the frame
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. Pair a domain fence (`hual` / `zual` / `zuam`) with a universality mood.
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` · `ewono` COMMON · `abulu` UNCOUNTERED · `araza` FORMAL · `abele` NATURAL · `ebebe` RULE · `egeza` *pawn* · `agure` *square* · `agada` *cat* · `odogo` *dog* · `abogo` *book* · `awala` *walk* · `uzunu` *sing* · `elebe` *sleep* · `aju` *sit* · `eje` *see* · `urunu` *run* · `abawa` evidential *pattern*
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| COMMON | `ewono` |
+| UNCOUNTERED | `abulu` |
+| FORMAL | `araza` |
+| NATURAL | `abele` |
+| RULE | `ebebe` |
+| *pawn* | `egeza` |
+| *square* | `agure` |
+| *cat* | `agada` |
+| *dog* | `odogo` |
+| *book* | `abogo` |
+| *walk* | `awala` |
+| *sing* | `uzunu` |
+| *sleep* | `elebe` |
+| *sit* | `aju` |
+| *see* | `eje` |
+| *run* | `urunu` |
+| evidential *pattern* | `abawa` |
 
 #### English → Agalan
 

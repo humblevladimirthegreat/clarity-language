@@ -123,7 +123,22 @@ gloss: `z-grace@` · `v-sleep` · `h-rain` · `h-night` · `h-when.open`
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Restrictors mark **when the host applies**. Bare **`hal`** / **`hual`** are *never* / *always*; with a listed occasion they are *only when…* / *always except when…*.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `awala` *walk* · `urunu` *run* · `uzunu` *sing* · `elebe` *sleep* · `uzumu` smile → *happy* (**-m**) · `anunu` *rain* · `unugu` *night* · `adaza` dash → *haste* (**-m**) · `owo` owl → *quietude* (**-m**)
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *walk* | `awala` |
+| *run* | `urunu` |
+| *sing* | `uzunu` |
+| *sleep* | `elebe` |
+| smile → *happy* (**-m**) | `uzumu` |
+| *rain* | `anunu` |
+| *night* | `unugu` |
+| dash → *haste* (**-m**) | `adaza` |
+| owl → *quietude* (**-m**) | `owo` |
 
 #### English → Agalan
 
@@ -310,7 +325,27 @@ Each listed occasion is a **simple** `/h/` or `/w/` content word, or a **complex
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Use exclusive / inclusive / *not when* / ranked occasions / unspecified-member with listed occasions. Next-clause *when* / *if* stays `/h/` plus `/b/` **`adoro`**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `awala` *walk* · `urunu` *run* · `uzunu` *sing* · `elebe` *sleep* · `uwuru` *write* · `anunu` *rain* · `ozowo` *snow* · `unugu` *night* · `ohohu` house → *home* (**-m**) · `amubu` ambulance → *emergency* (**-m**) · `ozore` convenience-store → *convenience* (**-m**) · `ereba` *repair* · `ewene` wrench → *workaround* (**-m**) · `adoro` *next clause*
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *walk* | `awala` |
+| *run* | `urunu` |
+| *sing* | `uzunu` |
+| *sleep* | `elebe` |
+| *write* | `uwuru` |
+| *rain* | `anunu` |
+| *snow* | `ozowo` |
+| *night* | `unugu` |
+| house → *home* (**-m**) | `ohohu` |
+| ambulance → *emergency* (**-m**) | `amubu` |
+| convenience-store → *convenience* (**-m**) | `ozore` |
+| *repair* | `ereba` |
+| wrench → *workaround* (**-m**) | `ewene` |
+| *next clause* | `adoro` |
 
 #### English → Agalan
 

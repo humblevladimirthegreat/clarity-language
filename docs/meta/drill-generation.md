@@ -87,7 +87,7 @@ Anchors:
 | Intermediate | `<a id="translation-practice-intermediate"></a>` |
 | Advanced | `<a id="translation-practice-advanced"></a>` |
 
-Follow the [template](translation-exercises.md#template). Lead: *Short drills for Beginner/Intermediate/Advanced. Try each item before opening **Show answer**.* List **Roots used here** once (shared bank subset + this stage’s extra roots).
+Follow the [template](translation-exercises.md#template). Lead: *Short drills for Beginner/Intermediate/Advanced. Try each item before opening **Show answer**.* Put **Roots used here** once as the English / Agalan table (shared bank subset + this stage’s extra roots).
 
 | Band kind | Items per direction |
 |-----------|---------------------|
@@ -189,7 +189,7 @@ Reuse this bank unless this stage already taught a different published root. Do 
 | `adoro` | *next clause* |
 | `urugu` | *because* (**-m** on `/h/`) |
 
-A page may add roots that **already appear in that stage’s worked examples** (e.g. `abele` *apple*, `adeda` *tea*, `ogove` *coffee*, `omonu` *challenging*, `onunu` **SAME**). List them under **Roots used here**.
+A page may add roots that **already appear in that stage’s worked examples** (e.g. `abele` *apple*, `adeda` *tea*, `ogove` *coffee*, `omonu` *challenging*, `onunu` **SAME**). Put them in the **Roots used here** table.
 
 ## Allowlist
 <a id="allowlist"></a>

@@ -72,7 +72,22 @@ gloss: `z-book` · `z-and/or`
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Everyday *would work* is open sufficient **`…aom`** (outcome as host). Closed **`…aol`** is the stronger “this settles it” twin.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `ezewe` *effort* · `uludu` *cloud* · `ozowo` *snow* · `odogo` *dog* · `agada` *cat* · `abogo` *book* · `ohohu` *house* · `awala` *walk* · `uzunu` *sing*
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *effort* | `ezewe` |
+| *cloud* | `uludu` |
+| *snow* | `ozowo` |
+| *dog* | `odogo` |
+| *cat* | `agada` |
+| *book* | `abogo` |
+| *house* | `ohohu` |
+| *walk* | `awala` |
+| *sing* | `uzunu` |
 
 #### English → Agalan
 
@@ -316,7 +331,26 @@ Keep the strength of feeling on values force / evidentiality. Exclusive **`ol` /
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Mark **necessary** with exclusion / **`hal`**, unique path with **`gon` / `hon` / `…ol`**, clause poles with **`hadorom` / `hezazem` / `hurugum`**, and **CAUSE** with **`hegegam`**. An ought sits on values **`xo`**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `ezewe` *effort* · `anunu` *rain* · `uludu` *cloud* · `abogo` *book* · `olozo` *competence* · `awala` *walk* · `uzunu` *sing* · `elebe` *sleep* · `adoro` *next clause* / *if* · `ezaze` *iff* · `urugu` *because* · `egega` CAUSE
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *dog* | `odogo` |
+| *effort* | `ezewe` |
+| *rain* | `anunu` |
+| *cloud* | `uludu` |
+| *book* | `abogo` |
+| *competence* | `olozo` |
+| *walk* | `awala` |
+| *sing* | `uzunu` |
+| *sleep* | `elebe` |
+| *next clause* / *if* | `adoro` |
+| *iff* | `ezaze` |
+| *because* | `urugu` |
+| CAUSE | `egega` |
 
 #### English → Agalan
 
@@ -532,7 +566,20 @@ Clause poles stay **-m** (`hadorom` / `hezazem` / `hurugum`, and the same **-m**
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. **`hurugum`** asserts the dependent as a fact the main sentence rests on; **`hadorom`** does not; speaker-grounds stay **`hodohom`**. Habit uses **`hual`**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `anunu` *rain* · `uludu` *cloud* · `awala` *walk* · `elebe` *sleep* · `adoro` *next clause* / *if* · `ezaze` *iff* · `urugu` *because* · `odoho` *commentary* (**`hodohom`**)
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *rain* | `anunu` |
+| *cloud* | `uludu` |
+| *walk* | `awala` |
+| *sleep* | `elebe` |
+| *next clause* / *if* | `adoro` |
+| *iff* | `ezaze` |
+| *because* | `urugu` |
+| *commentary* (**`hodohom`**) | `odoho` |
 
 #### English → Agalan
 

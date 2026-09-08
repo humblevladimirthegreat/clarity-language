@@ -238,7 +238,23 @@ Two or more items still take the same vowel and ending as the lists above. The t
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. The join sits **after** the items; pick the vowel (set vs rank, including **`u`**) and the ending (**-l** / **-m** / **-r**), including single-item and standalone starter forms.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `unude` *water* · `omona` *challenging* · `ebere` *person* · `awala` *walk* · `urunu` *run* · `elebe` *sleep*
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *dog* | `odogo` |
+| *cat* | `agada` |
+| *tea* | `adeda` |
+| *coffee* | `ogove` |
+| *water* | `unude` |
+| *challenging* | `omona` |
+| *person* | `ebere` |
+| *walk* | `awala` |
+| *run* | `urunu` |
+| *sleep* | `elebe` |
 
 #### English → Agalan
 
@@ -639,7 +655,26 @@ VP `/v/`…**-n** spellings are [join-act verbs](join-extras.md#join-act-verbs).
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Sample the decisions this band adds: invert **`ua`**, universals vs *everything but*, SHARED after the join, islands, nesting, and clause **`xan`**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `adeda` *tea* · `ogove` *coffee* · `unude` *water* · `omona` *challenging* · `onuno` *onion* · `ugume` *cucumber* · `abele` *apple* · `eje` *see* · `awala` *walk* · `urunu` *run* · `elebe` *sleep*
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *dog* | `odogo` |
+| *cat* | `agada` |
+| *tea* | `adeda` |
+| *coffee* | `ogove` |
+| *water* | `unude` |
+| *challenging* | `omona` |
+| *onion* | `onuno` |
+| *cucumber* | `ugume` |
+| *apple* | `abele` |
+| *see* | `eje` |
+| *walk* | `awala` |
+| *run* | `urunu` |
+| *sleep* | `elebe` |
 
 #### English → Agalan
 
@@ -805,7 +840,16 @@ Join-root phonotactics: [phonology.md](phonology.md#phonotactics).
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. Phrase **-n** is a **named list** (clause **sequence** is Intermediate); one item also tests a rare-arity contrast (**`zor`** vs **`zer`**, **`zur`**, or standalone **`zan`**).
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `adeda` *tea* · `ogove` *coffee* · `unude` *water* · `ebere` *person*
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *tea* | `adeda` |
+| *coffee* | `ogove` |
+| *water* | `unude` |
+| *person* | `ebere` |
 
 #### English → Agalan
 

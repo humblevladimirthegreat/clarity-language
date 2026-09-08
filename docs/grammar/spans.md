@@ -161,7 +161,24 @@ If the interior is Agalan words, those inner words still start with **their** ro
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Prefer a one-token cite, mention, or opaque blob; nativize when the surface wording is not the point. House names for people unless the item is a loan name.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `ezehe` *tell* · `uwuru` *write* · `uzunu` *sing* · `eje` *see* · `awala` *walk* · `elebe` *sleep* · `uzumu` *happy* (**-m**) · `odogo` *dog* · `agada` *cat* · `abogo` *book* · `elulu` *blue*
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *tell* | `ezehe` |
+| *write* | `uwuru` |
+| *sing* | `uzunu` |
+| *see* | `eje` |
+| *walk* | `awala` |
+| *sleep* | `elebe` |
+| *happy* (**-m**) | `uzumu` |
+| *dog* | `odogo` |
+| *cat* | `agada` |
+| *book* | `abogo` |
+| *blue* | `elulu` |
 
 #### English → Agalan
 
@@ -426,7 +443,22 @@ gloss: `z-grace@` · `^` · `z-courage@` · `z-and` · `^` · `z-and.open` · `v
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Test spoken opens (TYPE / EDGE / ending), an explicit **`xuxul`** close, nesting, or a **`^ … ^`** island: not only Beginner brackets.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `ezehe` *tell* · `eje` *see* · `urunu` *run* · `arede` *red* · `odogo` *dog* · `agada` *cat* · `abogo` *book* (name **Abogon**) · `elulu` *blue* · `uzumu` *happy* (**-m**)
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *tell* | `ezehe` |
+| *see* | `eje` |
+| *run* | `urunu` |
+| *red* | `arede` |
+| *dog* | `odogo` |
+| *cat* | `agada` |
+| *book* (name **Abogon**) | `abogo` |
+| *blue* | `elulu` |
+| *happy* (**-m**) | `uzumu` |
 
 #### English → Agalan
 
@@ -640,7 +672,15 @@ While scanning a span interior, `#` immediately before a closer or close-all is 
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. Test how the span **closes** (complete / editorial / close-all), or literal fence material as **opaque** content.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `ezehe` *tell* · `uzumu` *happy* (**-m**)
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *tell* | `ezehe` |
+| *happy* (**-m**) | `uzumu` |
 
 #### English → Agalan
 

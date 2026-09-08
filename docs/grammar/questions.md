@@ -146,7 +146,21 @@ gloss: `z-grace@` · `v-walk` · `j-yes`
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `awala` *walk* · `elebe` *sleep* · `uzunu` *sing* · `eje` *see* · `uwuru` *write* · `urunu` *run*
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *dog* | `odogo` |
+| *cat* | `agada` |
+| *walk* | `awala` |
+| *sleep* | `elebe` |
+| *sing* | `uzunu` |
+| *see* | `eje` |
+| *write* | `uwuru` |
+| *run* | `urunu` |
 
 #### English → Agalan
 
@@ -341,7 +355,17 @@ A fill may be a bare content word, single-item **-l** / **-m** / **-n**, or a lo
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `awala` *walk* · `urunu` *run* · `elebe` *sleep*
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *dog* | `odogo` |
+| *walk* | `awala` |
+| *run* | `urunu` |
+| *sleep* | `elebe` |
 
 #### English → Agalan
 
@@ -532,7 +556,15 @@ Join-word **-n** here is stock/usual (not [proper-name **-n**](reference-suffix.
 
 Short drills on this Advanced band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `awala` *walk* · `urunu` *run*
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *walk* | `awala` |
+| *run* | `urunu` |
 
 #### English → Agalan
 

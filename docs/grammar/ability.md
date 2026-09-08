@@ -76,7 +76,21 @@ gloss: `z-grace@` · `v-run-unable-irreversible`
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Tag **can** / **can’t** on an activity or property host; one item is a plain event with no can / can’t tag.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `uzunu` *sing* · `awala` *walk* · `urunu` *run* · `uwuru` *write* · `eje` *see* · `elebe` *sleep* · `aju` *sit*
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *dog* | `odogo` |
+| *sing* | `uzunu` |
+| *walk* | `awala` |
+| *run* | `urunu` |
+| *write* | `uwuru` |
+| *see* | `eje` |
+| *sleep* | `elebe` |
+| *sit* | `aju` |
 
 #### English → Agalan
 
@@ -230,7 +244,16 @@ Need **`xu`** on a need root is unmet need ([values](values.md)), not a competen
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Prefer a host when one activity root fits; use **`egera`** when there is no single host.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `ele` *size* / *big* · `uzunu` *sing* · `egera` *cereal* → *capacity* (**ABIL**)
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *size* / *big* | `ele` |
+| *sing* | `uzunu` |
+| *cereal* → *capacity* (**ABIL**) | `egera` |
 
 #### English → Agalan
 

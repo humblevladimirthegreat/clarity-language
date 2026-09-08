@@ -239,7 +239,24 @@ Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`zahaxre
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. `ROOT x NUM` names a **kind property** (essence, grain, quasi, part-count, order-kind, catalog code, total-null): spelled CV plus the **host** ending.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `olove` *love* · `eberelonogo` *friend* · `abene` *commitment* · `ezehe` *dialogue* · `omo` *adventure* · `ebegu` *draft* · `edudu` *specimen* · `eveva` *fear* · `odobo` *score* · `eje` *see* · `uwuru` *write*
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *love* | `olove` |
+| *friend* | `eberelonogo` |
+| *commitment* | `abene` |
+| *dialogue* | `ezehe` |
+| *adventure* | `omo` |
+| *draft* | `ebegu` |
+| *specimen* | `edudu` |
+| *fear* | `eveva` |
+| *score* | `odobo` |
+| *see* | `eje` |
+| *write* | `uwuru` |
 
 #### English → Agalan
 

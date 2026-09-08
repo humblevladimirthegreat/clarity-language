@@ -118,7 +118,24 @@ Attach **-sh** only **after** the [reference suffix](reference-suffix.md), never
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `agada` *cat* · `odogo` *dog* · `uzumu` smile → *happy* (**-m**) · `ele` *size* / *big* (**-m**) · `awala` *walk* · `aju` *sit* · `urunu` *run* · `elebe` *sleep* · `eje` *see* · `aha` inclusive *we* · `ugobo` speaker · `edone` listener
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *cat* | `agada` |
+| *dog* | `odogo` |
+| smile → *happy* (**-m**) | `uzumu` |
+| *size* / *big* (**-m**) | `ele` |
+| *walk* | `awala` |
+| *sit* | `aju` |
+| *run* | `urunu` |
+| *sleep* | `elebe` |
+| *see* | `eje` |
+| inclusive *we* | `aha` |
+| speaker | `ugobo` |
+| listener | `edone` |
 
 #### English → Agalan
 
@@ -304,7 +321,24 @@ Quantity `>1` is digitless **`g+`** (it may co-occur with noun **-lsh**). Generi
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `ulebo` *file-box* · `olozo` *toolbox* · `araga` *heaviness* (**-m**) · `ahada` *teamwork* · `umu` *vastness* (**-m**) · `agada` *cat* · `uzunu` *sing* · `awala` *walk* · `urunu` *run* · `aha` inclusive *we* · `ugobo` speaker · `edone` listener
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *file-box* | `ulebo` |
+| *toolbox* | `olozo` |
+| *heaviness* (**-m**) | `araga` |
+| *teamwork* | `ahada` |
+| *vastness* (**-m**) | `umu` |
+| *cat* | `agada` |
+| *sing* | `uzunu` |
+| *walk* | `awala` |
+| *run* | `urunu` |
+| inclusive *we* | `aha` |
+| speaker | `ugobo` |
+| listener | `edone` |
 
 #### English → Agalan
 

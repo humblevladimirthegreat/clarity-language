@@ -167,7 +167,27 @@ Topic (no **`x`**) keeps ordinary [reference-suffix](reference-suffix.md) ending
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `abogo` *book* · `ohohu` *house* · `awala` *walk* · `ezehe` *tell* · `uzunu` *sing* · `awara` *gift* · `azege` *gathering* · `alodo` *autonomy* · `olozo` *competence* · `onogo` *relatedness* · `awero` *pleasure* · `uhuhe` *survival* · `ege` *unspecified need*
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *dog* | `odogo` |
+| *book* | `abogo` |
+| *house* | `ohohu` |
+| *walk* | `awala` |
+| *tell* | `ezehe` |
+| *sing* | `uzunu` |
+| *gift* | `awara` |
+| *gathering* | `azege` |
+| *autonomy* | `alodo` |
+| *competence* | `olozo` |
+| *relatedness* | `onogo` |
+| *pleasure* | `awero` |
+| *survival* | `uhuhe` |
+| *unspecified need* | `ege` |
 
 #### English → Agalan
 
@@ -334,7 +354,29 @@ The **host** word carries literal vs metaphorical sense.
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `abogo` *book* · `ohohu` *house* · `awala` *walk* · `ezehe` *tell* · `uzunu` *sing* · `uwuru` *write* · `aju` *sit* · `awara` *gift* · `azege` *gathering* · `alodo` *autonomy* · `olozo` *competence* · `onogo` *relatedness* · `awero` *pleasure* · `uhuhe` *survival* · **`hual`** (*always*) · `odogo` *dog*
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *book* | `abogo` |
+| *house* | `ohohu` |
+| *walk* | `awala` |
+| *tell* | `ezehe` |
+| *sing* | `uzunu` |
+| *write* | `uwuru` |
+| *sit* | `aju` |
+| *gift* | `awara` |
+| *gathering* | `azege` |
+| *autonomy* | `alodo` |
+| *competence* | `olozo` |
+| *relatedness* | `onogo` |
+| *pleasure* | `awero` |
+| *survival* | `uhuhe` |
+| *always* | `hual` |
+| *dog* | `odogo` |
 
 #### English → Agalan
 

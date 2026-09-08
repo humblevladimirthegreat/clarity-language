@@ -69,7 +69,20 @@ gloss: `z-courage@` · `h-COMMENT-return` · `v-walk`
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` · `odogo` · `awala` · `elebe` · `uzunu` · `urunu` · `eje` · `odoho`
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *dog* | `odogo` |
+| *walk* | `awala` |
+| *sleep* | `elebe` |
+| *sing* | `uzunu` |
+| *run* | `urunu` |
+| *see* | `eje` |
+| *commentary* | `odoho` |
 
 #### English → Agalan
 
@@ -313,7 +326,28 @@ gloss: `z-courage@` · `h-NOTIONAL-return` · `v-write`
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` / `ululo` / `uhubu` · `odogo` · `awala` · `elebe` · `uzunu` · `urunu` · `uwuru` · `odoho` · `uvuvu` · `erego` · `abawa` · `uneve` · `erara` · `ehere` · `orolo` · `adade`
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *dog* | `odogo` |
+| *walk* | `awala` |
+| *sleep* | `elebe` |
+| *sing* | `uzunu` |
+| *run* | `urunu` |
+| *write* | `uwuru` |
+| *commentary* | `odoho` |
+| **WITNESSED** | `uvuvu` |
+| **RECORDED** | `erego` |
+| evidential *pattern* | `abawa` |
+| **INFERRED** | `uneve` |
+| **TOLD** | `erara` |
+| **FELT** | `ehere` |
+| **STORY** | `orolo` |
+| **NOTIONAL** | `adade` |
 
 #### English → Agalan
 

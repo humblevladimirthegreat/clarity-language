@@ -233,7 +233,34 @@ Role letters on this page:
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `abogo` *book* · `ohohu` *house* · `elulu` *blue* · `arede` *red* · `ele` elephant → *size* / *big* (**-m**) · `uzumu` smile → *happy* (**-m**) · `awala` *walk* · `urunu` *run* · `elebe` *sleep* · `ezehe` *tell* · `uwuru` *write* · `uzunu` *sing* · `eje` *perception* (*see*) · `aju` *sit* · `adaza` dash → *haste* (**-m**) · `owo` owl → *quietude* (**-m**) · `adoro` *next clause* · `urugu` *because* (**-m** on `/h/`) · `ezaza` east → *therefore*
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *dog* | `odogo` |
+| *cat* | `agada` |
+| *book* | `abogo` |
+| *house* | `ohohu` |
+| *blue* | `elulu` |
+| *red* | `arede` |
+| elephant → *size* / *big* (**-m**) | `ele` |
+| smile → *happy* (**-m**) | `uzumu` |
+| *walk* | `awala` |
+| *run* | `urunu` |
+| *sleep* | `elebe` |
+| *tell* | `ezehe` |
+| *write* | `uwuru` |
+| *sing* | `uzunu` |
+| *perception* (*see*) | `eje` |
+| *sit* | `aju` |
+| dash → *haste* (**-m**) | `adaza` |
+| owl → *quietude* (**-m**) | `owo` |
+| *next clause* | `adoro` |
+| *because* (**-m** on `/h/`) | `urugu` |
+| east → *therefore* | `ezaza` |
 
 #### English → Agalan
 
@@ -485,7 +512,31 @@ A `/j/` **number** word is a call-out (*N more!*, score call, …). It may sit i
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `elulu` *blue* · `arede` *red* · `uzumu` smile → *happy* (**-m**) · `awala` *walk* · `urunu` *run* · `elebe` *sleep* · `eje` *perception* (*see*) · `uzunu` *sing* · `aju` *sit* · `egelo` speaker-low → *volume* (**-m**) · `oza` hash → *topic* · `ezaza` east → *progress* / *therefore* · `ezeba` *however* / *although* · `anelo` mantel-clock → *passage* / *meanwhile* · `adoro` *next clause* · `urugu` *because* (**-m** on `/h/`)
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *dog* | `odogo` |
+| *cat* | `agada` |
+| *blue* | `elulu` |
+| *red* | `arede` |
+| smile → *happy* (**-m**) | `uzumu` |
+| *walk* | `awala` |
+| *run* | `urunu` |
+| *sleep* | `elebe` |
+| *perception* (*see*) | `eje` |
+| *sing* | `uzunu` |
+| *sit* | `aju` |
+| speaker-low → *volume* (**-m**) | `egelo` |
+| hash → *topic* | `oza` |
+| east → *progress* / *therefore* | `ezaza` |
+| *however* / *although* | `ezeba` |
+| mantel-clock → *passage* / *meanwhile* | `anelo` |
+| *next clause* | `adoro` |
+| *because* (**-m** on `/h/`) | `urugu` |
 
 #### English → Agalan
 

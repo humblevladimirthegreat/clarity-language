@@ -129,7 +129,28 @@ gloss: `z-speaker-sh` · `v-walk`
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `odogo` *dog* · `adara` *dragon* · `abogo` *book* · `awala` *walk* · `aju` *sit* · `elebe` *sleep* · `urunu` *run* · `eje` *see* · `ezehe` *tell* · `ebaru` *depart* · `ele` *size* / *big* (**-m**) · `ugobo` *speaker* · `edone` *listener* · `aha` *interlocutors* · `enenu` *generic person* · `adoro` *next clause*
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *dog* | `odogo` |
+| *dragon* | `adara` |
+| *book* | `abogo` |
+| *walk* | `awala` |
+| *sit* | `aju` |
+| *sleep* | `elebe` |
+| *run* | `urunu` |
+| *see* | `eje` |
+| *tell* | `ezehe` |
+| *depart* | `ebaru` |
+| *size* / *big* (**-m**) | `ele` |
+| *speaker* | `ugobo` |
+| *listener* | `edone` |
+| *interlocutors* | `aha` |
+| *generic person* | `enenu` |
+| *next clause* | `adoro` |
 
 #### English → Agalan
 
@@ -301,7 +322,23 @@ Prefer **`aha`** when the point is **co-participant role**; prefer name joins wh
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `awala` *walk* · `urunu` *run* · `elebe` *sleep* · `aju` *sit* · `eje` *see* · `uzumu` smile → *happy* (**-m**) · `adaza` *haste* (**-m**) · `aha` *interlocutors* · `ugobo` *speaker* · `edone` *listener*
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *walk* | `awala` |
+| *run* | `urunu` |
+| *sleep* | `elebe` |
+| *sit* | `aju` |
+| *see* | `eje` |
+| smile → *happy* (**-m**) | `uzumu` |
+| *haste* (**-m**) | `adaza` |
+| *interlocutors* | `aha` |
+| *speaker* | `ugobo` |
+| *listener* | `edone` |
 
 #### English → Agalan
 
@@ -483,7 +520,20 @@ Each subsection is an **antecedent** role; table rows are the **pronoun** role. 
 
 Short drills on this Advanced band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `odogo` *dog* · `awala` *walk* · `urunu` *run* · `aju` *sit* · `elebe` *sleep* · `ele` *size* / *big* (**-m**) · `uzumu` smile → *happy* (**-m**) · `adaza` *haste* (**-m**)
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *dog* | `odogo` |
+| *walk* | `awala` |
+| *run* | `urunu` |
+| *sit* | `aju` |
+| *sleep* | `elebe` |
+| *size* / *big* (**-m**) | `ele` |
+| smile → *happy* (**-m**) | `uzumu` |
+| *haste* (**-m**) | `adaza` |
 
 #### English → Agalan
 

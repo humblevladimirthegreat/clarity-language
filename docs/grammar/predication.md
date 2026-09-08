@@ -71,7 +71,22 @@ gloss: `z-dog` · `g-SAME` · `b-grace@`
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Property and kind sit on `/ɡ/`; identity uses **`gonunul`** plus `/b/`.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `abogo` *book* · `elulu` *blue* · `uzumu` smile → *happy* (**-m**) · `omona` *challenging* (**-m**) · `awala` *walk* · `elebe` *sleep* · `onunu` **SAME**
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *dog* | `odogo` |
+| *cat* | `agada` |
+| *book* | `abogo` |
+| *blue* | `elulu` |
+| smile → *happy* (**-m**) | `uzumu` |
+| *challenging* (**-m**) | `omona` |
+| *walk* | `awala` |
+| *sleep* | `elebe` |
+| **SAME** | `onunu` |
 
 #### English → Agalan
 
@@ -212,7 +227,20 @@ The coin root is still available as ordinary *coin* (`zonunul`) or as a *token*-
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Classification packaging and **SAME** endings (**-l** / **-m** / **-n** / **-r**) are the point.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `onunu` **SAME** · `erara` **TOLD** · `ebere` (band: *the person who…*) · `awala` *walk* · `elebe` *sleep*
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *dog* | `odogo` |
+| *cat* | `agada` |
+| **SAME** | `onunu` |
+| **TOLD** | `erara` |
+| (band: *the person who…*) | `ebere` |
+| *walk* | `awala` |
+| *sleep* | `elebe` |
 
 #### English → Agalan
 

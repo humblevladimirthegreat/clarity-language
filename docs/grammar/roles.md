@@ -111,7 +111,24 @@ gloss: `z-grace@` · `g-←agent-x-fight`
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `agada` *cat* · `uzumu` smile → *happy* (**-m**) · `awala` *walk* · `urunu` *run* · `elebe` *sleep* · `uzunu` *sing* · `eje` *see* · `uwuru` *write* · `aju` *sit* · `uvugu` *fight* · `onogo` *bond*
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *cat* | `agada` |
+| smile → *happy* (**-m**) | `uzumu` |
+| *walk* | `awala` |
+| *run* | `urunu` |
+| *sleep* | `elebe` |
+| *sing* | `uzunu` |
+| *see* | `eje` |
+| *write* | `uwuru` |
+| *sit* | `aju` |
+| *fight* | `uvugu` |
+| *bond* | `onogo` |
 
 #### English → Agalan
 
@@ -344,7 +361,25 @@ The **`/b/`** argument is the landmark, not the viewpoint. Put the facing being 
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `ohohu` *house* · `agada` *cat* · `odogo` *dog* · `abogo` *book* · `awala` *walk* · `eweze` *west* / body *left* · `ezaza` *east* / body *right* · `onohe` *northwest* / *forward-left* · `uba` *up* (gravity) · `ere` *tree* · `edone` *listener* · `ugobo` *speaker*
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *house* | `ohohu` |
+| *cat* | `agada` |
+| *dog* | `odogo` |
+| *book* | `abogo` |
+| *walk* | `awala` |
+| *west* / body *left* | `eweze` |
+| *east* / body *right* | `ezaza` |
+| *northwest* / *forward-left* | `onohe` |
+| *up* (gravity) | `uba` |
+| *tree* | `ere` |
+| *listener* | `edone` |
+| *speaker* | `ugobo` |
 
 #### English → Agalan
 

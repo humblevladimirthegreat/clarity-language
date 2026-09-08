@@ -69,7 +69,21 @@ gloss: `h-PREDICT` · `v-rain`
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Pick **PLAN** (`owora` + map-resolution ending) or **PREDICT** (`elezo`). English *will* is not one Agalan form.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `owora` · `elezo` · `awala` · `uwuru` · `uzunu` · `urunu` · `elebe` · `anunu`
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| **PLAN** | `owora` |
+| **PREDICT** | `elezo` |
+| *walk* | `awala` |
+| *write* | `uwuru` |
+| *sing* | `uzunu` |
+| *run* | `urunu` |
+| *sleep* | `elebe` |
+| *rain* | `anunu` |
 
 #### English → Agalan
 
@@ -221,7 +235,22 @@ Always pick an ending on **DECISION**. If you do not know how locked the pick is
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Pick **DECISION** (`egege` + changeability), stack evidentiality on **PREDICT**, or stack **PLAN** with **DECISION**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `owora` · `elezo` · `egege` · `awala` · `uwuru` · `uzunu` · `elebe` · `anunu` · `abawa` (*pattern*, evidential)
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| **PLAN** | `owora` |
+| **PREDICT** | `elezo` |
+| **DECISION** | `egege` |
+| *walk* | `awala` |
+| *write* | `uwuru` |
+| *sing* | `uzunu` |
+| *sleep* | `elebe` |
+| *rain* | `anunu` |
+| (*pattern*, evidential) | `abawa` |
 
 #### English → Agalan
 

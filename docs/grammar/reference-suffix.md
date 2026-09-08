@@ -81,7 +81,22 @@ Spell **role letter + root + ending** as one word (`zazawan`). When you write th
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Choose **-l** (new literal), **-m** (new metaphor), **-n** (named), or **-r** (resume). Citation items are prefix-less.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `abogo` *book* · `elulu` *blue* · `uzumu` smile → *happy* (**-m**) · `awala` *walk* · `elebe` *sleep* · `uwuru` *write* · `aju` *sit*
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *dog* | `odogo` |
+| *cat* | `agada` |
+| *book* | `abogo` |
+| *blue* | `elulu` |
+| smile → *happy* (**-m**) | `uzumu` |
+| *walk* | `awala` |
+| *sleep* | `elebe` |
+| *write* | `uwuru` |
+| *sit* | `aju` |
 
 #### English → Agalan
 
@@ -308,7 +323,24 @@ In [number words](numbers.md), the same four letters have **number-specific** me
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. The point is **-n** as a title on any role letter, one **`x`-compound** name, or an office **handle**.
 
-**Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `abogo` *book* (name **Abogon**) · `elulu` *blue* · `awala` *walk* · `urunu` *run* · `uzunu` *sing* · `eje` *perception* (*see*) · `uwuru` *write* · `adaza` *haste* · `oduna`×`alane` (name **Odunaxalanen**) · `uzuzu`×`ogove` (label **Sushi-Coffee**) · `abogo`×`ululo` (title **Book-Courage**)
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *grace* (name **Azawan**) | `azawa` |
+| *courage* (name **Ululon**) | `ululo` |
+| *beauty* (name **Uhubun**) | `uhubu` |
+| *book* (name **Abogon**) | `abogo` |
+| *blue* | `elulu` |
+| *walk* | `awala` |
+| *run* | `urunu` |
+| *sing* | `uzunu` |
+| *perception* (*see*) | `eje` |
+| *write* | `uwuru` |
+| *haste* | `adaza` |
+| (name **Odunaxalanen**) | `oduna`×`alane` |
+| (label **Sushi-Coffee**) | `uzuzu`×`ogove` |
+| (title **Book-Courage**) | `abogo`×`ululo` |
 
 #### English → Agalan
 
