@@ -163,12 +163,13 @@ Prefer commas, colons, parentheses, or separate sentences over em dashes. An em 
 1. **Title + one-line job** — the English job this page teaches (learner-facing). Sibling links only when the learner will reach for that form *now* — [Compare with](#compare-with), not “this page owns / does not own” fencing.
 2. **Needs** (optional) — **rare.** Use only when the page is late and the dependency is not obvious from the [cross-doc path](learning-levels.md#cross-doc-path) (e.g. causation → joins + **`adoro`** from core Beginner; comparatives → rank joins). Label as `**Needs:**` with one short link line. Do **not** ritualize “core Beginner; reference-suffix Beginner” on every page.
 3. **`## Beginner` / `## Intermediate` / `## Advanced`** — per [learning-levels.md](learning-levels.md). Include **Advanced** only when that page has rare inventory to teach ([empty or pointless stages](#empty-stages)).
-4. Inside each stage: **concept → rule in one breath → 1–3 examples → (optional contrast) → full table if needed**. Inside **Beginner**, H3 order is **dependency order for building a clause** ([Beginner stage shape](#beginner-stage-shape)), not inventory order (not “all letters, then all syntax”). Writing / citation notes are last in that stage.
+4. Inside each stage: **concept → English job → Agalan shape → one consequence → 1–3 examples → (optional contrast) → full table if needed**. Mnemonic in the same block or in the table, not as the lead. Inside **Beginner**, H3 order is **dependency order for building a clause** ([Beginner stage shape](#beginner-stage-shape)), not inventory order (not “all letters, then all syntax”). Writing / citation notes are last in that stage. [Explain before you slogan](#explain-before-you-slogan).
 5. Optional **See also** at the end — a few precise related forms only; no long link walls in the lead (and no lead preview of later peers — [teach now; don’t preview later](#teach-now-dont-preview-later)).
 
 Front matter that orients (psychological purpose / limits / feature criteria / benefit tour — [why-agelan.md](../grammar/why-agelan.md); grammar design / how to learn — [introduction.md](../grammar/introduction.md)) is not a learning stage. Reading order lives in the path / sidebar — not repeated as Prerequisites.
 
 ## Teach in this order
+<a id="teach-in-this-order"></a>
 
 | Order | Content |
 |-------|---------|
@@ -215,16 +216,61 @@ Usual sources (prefer one; reuse the language’s own systems):
 | **Vowel series** | Join / speech act / polar stacks that share letter jobs (`a` inventory, `o` menu, `e` rank, `u` negation, …) |
 | **Ending letters** | **-l** / **-m** / **-n** / **-r** (and stance endings) when the ending *is* the lesson |
 
-One short cue is enough (table column, parenthetical, or a line under the rule). Do not invent a second mnemonic system beside metaphor, vowels, and endings when those already explain the form.
+One short cue is enough (table column, parenthetical, or a line under the rule). Do not invent a second mnemonic system beside metaphor, vowels, and endings when those already explain the form. **Do not use the mnemonic as the definition:** teach the English job and the Agalan shape first; the pun or emoji is a recall hook after that ([explain before you slogan](#explain-before-you-slogan)).
 
 ## Voice and length
 
 - Address the learner in second person (“use **-r** when…”, “prefer names when…”). That *you* is English pedagogy — not Agalan **`edone`**.
 - Teaching stages do not use maintainer *we* (“we now write…”) or author *I*. Author *I* is allowed only on signed non-teaching prose in this folder (acknowledgments; the purpose / limits essay), not on rule pages.
-- One idea per H2/H3; the first paragraph should be roughly one short explanation (same bar as the [easy-to-use feature criterion](../grammar/why-agelan.md#criterion-for-features)).
+- One idea per H2/H3. The first paragraph should be one **complete** explanation: English job, Agalan shape, and what that lets the learner do ([explain before you slogan](#explain-before-you-slogan)). That is the same bar as the [easy-to-use feature criterion](../grammar/why-agelan.md#criterion-for-features) (roughly one paragraph plus a couple of examples), not a one-sentence aphorism.
 - Prefer short paragraphs plus a table over a wall of prose.
 - Bold sparingly; put Agalan forms in backticks (`jal`, **-r**, `/ɡ/`).
 - Always call the language **Agalan**. Community / project URLs that still use a legacy host path are fine when they are the real link; do not “fix” them in learner prose.
+
+## Explain before you slogan
+<a id="explain-before-you-slogan"></a>
+
+Brevity means **no filler**, not **maximum claims per clause**. A Beginner lead may take **two to four short sentences** before the first example. One sentence is allowed only when job, shape, and consequence are already obvious from the previous H3.
+
+**Teach in this order inside the lead** (same as [Teach in this order](#teach-in-this-order), enforced inside the first paragraph):
+
+1. **English job** — what the learner is trying to say, in school-grammar English.
+2. **Agalan shape** — which letter, ending, or slot does that job, and where it sits.
+3. **Consequence** — what they may now do that English does not (reordering, omitting a word, attaching a clause).
+4. **Mnemonic last** — letter puns and emoji metaphors are **hooks after the rule**, never the definition.
+
+Do not merge (1)–(3) into a copula slogan (*X is Y*) or a packed imperative (*do A so that B*) until those three pieces have been said in ordinary English.
+
+| Smell | Why it fails | Prefer |
+|-------|--------------|--------|
+| Copula slogan: “the role letter is the job” | Equates a letter with an abstract label; never says *what you read off the letter* | “The first letter of the word tells you its role (subject, verb, …). Change only that letter when the same meaning plays a different role.” |
+| Packed prominence: “Put first what you want heard as the point” | “Point” is undefined; also smuggles free word order | First: roles stay on the letters, so order is free. Then: the leftmost content word is what you highlight (what the sentence is “about,” or the new information). |
+| Mnemonic as definition: “**d** = done to” in the rule sentence | The pun is memorable only after “acted on” is taught | Teach *direct object = who or what is acted on*, then “(mnemonic: **d** = done to).” |
+| Label = explanation: “The **boundary** is **`adoro`**.” | Names the form without saying what a boundary *does* | “The main sentence stops after **`adoro`**; the next full sentence is the content that **`adoro`** stands for.” |
+| Omission as slogan: “**Leave `jal` out** when a period already marks a statement” | Assumes they know why `jal` exists | “A period already means ‘this is a statement,’ so you do not also write the statement word **`jal`**.” |
+
+**Test (slogan test):** cover the example block. Could a careful adult who has never opened this repo restate the rule in their own words from the lead alone? If they would have to guess what “job,” “point,” “setting,” or “body” means, unpack those words in the lead. A mnemonic in parentheses does not count as unpacking.
+
+**Test (one new move):** the sentence that introduces a *new* choice (reorder, omit, attach) should not also introduce a new metaphor or a new technical noun. Split it.
+
+Do **not** pad with throat-clearing (“In this section we will…”, “It is important to note…”). Extra sentences must add **mechanism or consequence**, not warmth.
+
+Tables may stay telegraphic (Form · Job · Mnemonic). Running prose may not.
+
+### House shorthand needs a first-use gloss
+<a id="house-shorthand"></a>
+
+[Plain language](#plain-language-no-assumed-linguistics) already requires glossing invented labels (*turn*, *role letter*, *speech act*). The same rule applies to **house shorthand that looks like ordinary English**. If the heading or table column uses the short word, the first teaching sentence must still say it in longer English once.
+
+| Short word | Unpack on first use as |
+|------------|------------------------|
+| **job** | role in the clause (subject, verb, …) |
+| **point** / **prominence** | what comes first for emphasis (what the sentence is “about,” or the new information) |
+| **setting** | statement vs question vs command |
+| **body** | the clause after any opening `/j/` words |
+| **glue** / **linker** | sentence-to-sentence connective |
+
+Intermediate / Advanced inventories may stay denser once Beginner has unpacked the terms.
 
 ## Plain language (no assumed linguistics)
 <a id="plain-language-no-assumed-linguistics"></a>
@@ -235,7 +281,7 @@ Do **not** assume the reader knows linguistics jargon. Write for a motivated lea
 |----|--------|
 | Prefer everyday English for the job (*statement*, *ask*, *main clause*, *at the end of…*) | Lead with bare terms like *assertoric*, *illocution*, *matrix-final*, *predicative*, *prosody*, *paradigm* |
 | If a short technical label helps later cross-links, **define it in the same breath** on first use | Use the label alone and hope context teaches it |
-| **Define invented or uncommon labels before using them** (*turn*, *continue*, *speech act*, *polar stance*, *role letter*, *citation*): everyday English in the **same sentence as first use** | Use the label in an earlier section or as a bare heading, then gloss later; rely on [terminology.md](../grammar/terminology.md) as the first definition |
+| **Define invented or uncommon labels before using them** (*turn*, *continue*, *speech act*, *polar stance*, *role letter*, *citation*): everyday English in the **same sentence as first use**. Same for [house shorthand](#house-shorthand) (*job*, *point*, *setting*, *body*, *linker*) | Use the label in an earlier section or as a bare heading, then gloss later; rely on [terminology.md](../grammar/terminology.md) as the first definition |
 | A heading may use that label only **after** the gloss, or the heading itself carries the gloss (*Turn (`/j/`): start a new speech move*) | Stack several undefined jargon words in one sentence (*recoverable*, *utterance*, *left-edge cluster* without a plain paraphrase) |
 | School-grammar words (*subject*, *direct object*, *adverb*) are fine when the English job is clear | Pack morphosyntax shorthand (*classification* without *is a kind*, *right-bound*, *adjunct*, *complement clause*) without a plain gloss |
 
@@ -356,7 +402,7 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 
 Before tagging a section **Beginner**, ask the [three questions](learning-levels.md#rubric-three-questions). Prefer the earlier stage when learners need the form to read ordinary examples. Dependency on another subsystem beats “feels hard.” Do not add Advanced for recap, unused-slot lists, bounce notes, or reminders — [empty or pointless stages](#empty-stages).
 
-Before shipping a **Beginner** stage, also check [Beginner stage shape](#beginner-stage-shape) and [plain language](#plain-language-no-assumed-linguistics): invented terms defined on first use; first H3 is a usable clause, not a table; no Intermediate teasers; drills cover the H3s (or the H3 is one-sentence setup for a drill).
+Before shipping a **Beginner** stage, also check [Beginner stage shape](#beginner-stage-shape), [plain language](#plain-language-no-assumed-linguistics), and [explain before you slogan](#explain-before-you-slogan): invented terms and house shorthand defined on first use; lead unpacks job, shape, and consequence (slogan test); first H3 is a usable clause, not a table; no Intermediate teasers; drills cover the H3s (or the H3 is one-sentence setup for a drill).
 
 ## Markdown hygiene
 

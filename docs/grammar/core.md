@@ -7,11 +7,11 @@ How to read and write an Agalan **sentence**: who does what, word shape, default
 
 ### Who acts and the action
 
-A **role letter** is the first letter of a content word: it marks that word’s job in the sentence. After it come the **root** (the meaning) and an **ending**. The root stays the same when the job changes; only the role letter changes.
+A content word starts with a **role letter**: that first letter says what the word is doing in the sentence (who acts, the action, and so on). After the letter come the **root** (the meaning) and an **ending**. The root stays the same when the word plays a different role; only the first letter changes.
 
-Use `/z/` for who acts (the **subject**; **z** = the star of the sentence) and `/v/` for the action (the **verb**; **v** = the verb). Write **role letter + root + ending** as one word (`zazawan`). Read the whole word as its plain meaning for now.
+`/z/` marks the **subject** (who acts). `/v/` marks the **verb** (the action). Write **role letter + root + ending** as one word (`zazawan`). For now, read each whole word as its plain English meaning.
 
-A period ends the statement. Default order is **Subject – Verb**.
+A period ends the statement. The usual order is **Subject – Verb**.
 
 ```
 `zazawan vawalal.`
@@ -23,7 +23,9 @@ gloss: `z-grace@` · `v-walk`
 
 ### Direct object (`/d/`)
 
-Use `/d/` for who or what is acted on (**d** = done to). Default order is **Subject – Direct Object – Verb**. You may move those three; the role letter is the job. Put first what you want heard as the point.
+`/d/` marks the **direct object**: who or what is acted on.
+
+The usual order is **Subject – Direct Object – Verb**. Because the first letter already says each word’s role, you may move those three without changing who did what. Put first the piece you want to highlight: the person or thing the sentence is “about,” or the new information. English often does that with stress; Agalan can do it with order.
 
 ```
 `zazawan dagadal vejel.`
@@ -36,7 +38,9 @@ gloss: `z-grace@` · `d-cat` · `v-see`
 ### Adjectives (`/ɡ/`)
 <a id="adjectives-ɡ"></a>
 
-`/ɡ/` marks an **adjective**: a property or kind (**ɡ** = grade / property). It follows the word it describes. English *is* in *Azawan is a dog* is already in that pair.
+When you name a **property or kind** (*blue*, *a dog*), put that word in `/ɡ/` (an **adjective**). It follows the word it describes.
+
+English *is* in *Azawan is a dog* is already in that pair: you do not write a separate “to be” verb.
 
 ```
 `zazawan godogol.`
@@ -56,12 +60,12 @@ gloss: `z-dog` · `g-blue`
 
 The same string is also the noun plus its adjective: `zodogol gelulul` is both the full sentence *A dog is blue* and the phrase *a blue dog*.
 
-Extra detail on that adjective (how intense, in what manner) uses `/w/` right after the `/ɡ/` word (**w** = with that adjective).
+After an adjective, you can add how intense it is or in what manner. That extra detail uses `/w/` immediately after the `/ɡ/` word.
 
 ### Adverbs (`/h/`)
 <a id="adverbs-h"></a>
 
-`/h/` marks an **adverb**: how, when, or where (**h** = how / when / where). You may place it anywhere in that sentence; it stays inside its own sentence. Several adverbs sit next to each other (`hadazam howom` *hastily and quietly*).
+When you say **how, when, or where** an action happens, use `/h/` (an **adverb**). You may place it anywhere in that sentence; it still belongs to that sentence, not the next one. Several adverbs can sit next to each other (`hadazam howom` *hastily and quietly*).
 
 ```
 `zazawan hadazam vawalal.`
@@ -74,7 +78,7 @@ gloss: `z-grace@` · `h-haste~` · `v-walk`
 ### Extra nouns (`/b/`)
 <a id="extra-nouns"></a>
 
-When an adjective or adverb names a **relation** that needs another person or thing, put that extra noun in `/b/` (**b** = bolted-on extra) right after the `/ɡ/` or `/h/` word. The root names the relation; `/b/` marks “noun of that word.” Keep an `/h/` + `/b/` pair **together with no gap**. English *to* / *for* (who receives something) uses that `/h/` + `/b/` shape too.
+Some adjectives and adverbs name a **relation** that needs another person or thing (*same as …*, *because of …*). Put that extra noun in `/b/` right after the `/ɡ/` or `/h/` word. The root on the `/ɡ/` or `/h/` word names the relation; `/b/` marks the noun that completes it. Keep an `/h/` + `/b/` pair **together with no gap**. English *to* / *for* (who receives something) uses that `/h/` + `/b/` shape too.
 
 ```
 `gonunul bazawan`
@@ -89,24 +93,26 @@ gloss: `g-same` · `b-grace@`
 ### Turn (`/j/`): start a new speech move
 <a id="turn-j"></a>
 
-A **turn** is one speech move: what you are doing in the talk (a statement, a question, a command), including when you talk only to yourself. `/j/` starts a new turn (**j** = jump to a new act).
+When you start a new speech move (a statement, a question, a command, including talking only to yourself), that move is a **turn**. `/j/` starts a new turn.
 
 <a id="left-edge-order-and-sentence-boundaries"></a>
 
-At the **start** of a new turn, write `/j/` words in this order, then the sentence body:
+At the **start** of a new turn, write `/j/` words in this order, then the rest of the sentence (the **body**: subject, object, verb, and so on):
 
 1. Who you address, if you name them (`jazawan`, `jululon`, …)
 2. *Yes* / *no* or a greeting, if you use one
-3. The **act word**, when you write it: last, immediately before the body
+3. The **act word** (the word that says statement, question, or command), when you write it: last, immediately before the body
 
-A `/j/` after a finished body starts the **next** turn. Calling someone’s name with no body uses `/j/` and no act word.
+A `/j/` after a finished body starts the **next** turn. Calling someone’s name with no following clause uses `/j/` and no act word.
 
 ### Speech act: statement, question, command
 <a id="speech-act-beginner"></a>
 
-A **speech act** is the setting of that turn: statement, question, command, and similar. Each turn has exactly one. Default statement is **`jal`**. **Leave `jal` out** when a period already marks a statement (as in the examples above).
+Each turn has exactly one **speech act**: whether you are stating, asking, commanding, and similar. That is the **setting** of the turn.
 
-Other settings write a `/j/` act word last among the opening `/j/` words, before the body:
+The default statement word is **`jal`**. A period already means “this is a statement,” so you do not also write **`jal`** (as in the examples above).
+
+When the setting is not that default statement, write a `/j/` act word last among the opening `/j/` words, immediately before the body:
 
 ```
 `jel vawalal.`
@@ -123,18 +129,20 @@ gloss: `j-command` · `v-walk`
 | **jel** | command / instruction | **j**ump + **e** rank: do this |
 | **jul** | prohibition: *don’t…* | **j**ump + **u** undo: don’t do this |
 
-**`jael`** (*yes* / *true*) and **`juel`** (*no* / *false*) sit at the start of the turn, or stand alone. Prefer **`jael …`** over **`jael jal …`** when a body follows. A *…, yes?* tag is a **second turn** after a period: `zazawan vawalal. jael.`
+**`jael`** (*yes* / *true*) and **`juel`** (*no* / *false*) sit at the start of the turn, or stand alone. When a clause follows *yes*, prefer **`jael …`** over **`jael jal …`**. A *…, yes?* tag is a **second turn** after a period: `zazawan vawalal. jael.`
 
 ### Dependent clauses
 <a id="dependent-clauses"></a>
 
-A **dependent clause** is a full sentence that fills a slot in the sentence before it. The next-sentence pronoun **`adoro`** stands in the main sentence for “whatever follows right away.”
+Sometimes a full sentence fills a slot in the sentence before it (*Azawan tells Ululon **that the dog runs***). That inner sentence is a **dependent clause**.
+
+In the main sentence, the pronoun **`adoro`** stands for “whatever sentence follows right away.”
 
 **`adoro`** 🚪 *doorway* → *what follows*. The main sentence ends at the doorway; the dependent walks through.
 
-Put **`adoro` last** in its main-sentence slot, and put the dependent **immediately after** it. Move free word order so that holds.
+Put **`adoro` last** in its slot in the main sentence, and put the dependent **immediately after** it. Rearrange free word order so **`adoro`** stays last in that slot.
 
-The dependent may open with its own `/j/` words, or **keep** the main sentence’s setting and omit `/j/` when that matches. The **boundary** is **`adoro`**. A different setting (an embedded ask, a command) needs its own act word.
+The dependent may open with its own `/j/` words, or keep the main sentence’s setting (statement, question, command) and omit `/j/` when that matches. The main sentence stops after **`adoro`**; the next full sentence is the content that **`adoro`** stands for. If the dependent is a question or a command instead of a statement, write its own act word.
 
 *That…* content is often a direct object, with **`adoro` last** in the main sentence:
 
@@ -172,9 +180,11 @@ You can also say:
 ### Continue (`/x/`): keep the same speech move
 <a id="continue-x"></a>
 
-To **continue** is to keep going under the **same** setting: the next stretch is still a statement if the turn was a statement (still a question if it was a question, and so on). `/x/` marks that (**x** = e**x**tend the talk). Only the first turn (or a default statement body) sets the setting. Leave **`jal`** out on the continued stretch.
+After a statement, question, or command, you may keep going **without** starting a new speech move: the next stretch is still a statement if you were stating (still a question if you were asking, and so on). That is to **continue**. `/x/` marks it.
 
-Glue between sentences (*therefore*, *however*, …) is an `/x/` **linker**:
+Only the first turn (or a default statement body) chooses the setting. Do not write **`jal`** on the continued stretch: the setting is already chosen.
+
+A word that glues two sentences (*therefore*, *however*, …) is an `/x/` **linker**:
 
 ```
 `zazawan vawalal. xezazal zululon vurunul.`
@@ -221,7 +231,7 @@ Role letters on this page:
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills for Beginner. Try each item before opening **Show answer**. Use **published roots** only.
+Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Roots used here:** `azawa` *grace* (name **Azawan**) · `ululo` *courage* (name **Ululon**) · `uhubu` *beauty* (name **Uhubun**) · `odogo` *dog* · `agada` *cat* · `abogo` *book* · `ohohu` *house* · `elulu` *blue* · `arede` *red* · `ele` elephant → *size* / *big* (**-m**) · `uzumu` smile → *happy* (**-m**) · `awala` *walk* · `urunu` *run* · `elebe` *sleep* · `ezehe` *tell* · `uwuru` *write* · `uzunu` *sing* · `eje` *perception* (*see*) · `aju` *sit* · `adaza` dash → *haste* (**-m**) · `owo` owl → *quietude* (**-m**) · `adoro` *next clause* · `urugu` *because* (**-m** on `/h/`) · `ezaza` east → *therefore*
 
