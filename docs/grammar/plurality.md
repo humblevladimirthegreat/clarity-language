@@ -8,7 +8,7 @@ English *they* and *the Smiths* often mean a named person plus people around the
 ### Associative group (`-sh`)
 <a id="associative"></a>
 
-Without **-sh**, the word picks **one** person or thing. With **-sh** after the ending, you name an **anchor plus nearby associates** (family, coworkers, unit, household, and so on). Who counts as an associate comes from the conversation and the situation; on a name it reads as *Azawan and associates*. Mnemonic: **-sh** = **s**et with the anchor.
+Without **-sh**, the word picks **one** person or thing. With **-sh** after the ending, you name an **anchor plus nearby associates** (family, coworkers, unit, household, and so on). Who counts as an associate comes from the conversation and the situation; on a name it reads as *Azawan and associates*. (cue: **-sh** ≈ set with the named anchor)
 
 ```
 `zazawansh vawalal.`
@@ -50,12 +50,12 @@ gloss: `z-grace@` · `d-dog-sh` · `v-see`
 
 **Compare with:** English *cats* can mean a kind in general. **-lsh** is a **set in this situation**.
 
-| Form | Job |
-|------|-----|
-| **-lsh** | Indefinite **associative group**, literal (*some cats* as a set here) |
-| **-msh** | Indefinite **associative group**, metaphorical |
-| **-nsh** | **Named / titled group** |
-| **-rsh** | Resume: prior referent **and associates**, or a prior group |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **-lsh** | indefinite associative group, literal | *some cats* (a set in this situation) | **-l** exact + **-sh** ≈ set with the named kind |
+| **-msh** | indefinite associative group, metaphorical | same grouping on a **-m** root | **-m** metaphorical + **-sh** ≈ set |
+| **-nsh** | named / titled group | *Team Alpha*; *Azawan and associates* as a title | **-n** proper + **-sh** ≈ set |
+| **-rsh** | resume prior referent and associates, or a prior group | *they* (that one and associates) | **-r** ≈ resume + **-sh** ≈ set |
 
 ### Person-role **-sh**
 <a id="person-role-sh"></a>
@@ -94,12 +94,12 @@ gloss: `z-interlocutors` · `v-walk`
 *We (you and I) walk.*
 ```
 
-| Form | **-sh** reading | Mnemonic |
-|------|-----------------|----------|
-| **`ugobo…sh`** (`zugobonsh`, …) | speaker **and associates** (listener not assumed) | speaker’s set |
-| **`edone…sh`** (`zedonensh`, …) | **address set**: all current addressees | everyone you are talking to |
-| **`aha`** (`zahan`, …) | already the interlocutor set | handshake *we* |
-| name / content **-r**…**-sh** | that person **and associates** | same as noun **-sh** |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`ugobo…sh`** (`zugobonsh`, …) | speaker plus that person’s people (listener not assumed) | *I and my people* (not you) | **-sh** ≈ set around the speaker, not the handshake *we* |
+| **`edone…sh`** (`zedonensh`, …) | all current addressees | *you all* | **-sh** ≈ set of everyone receiving this talk |
+| **`aha`** (`zahan`, …) | already the interlocutor set (no **-sh**) | *we* (you and I) | 🤝 *handshake*: sharing the floor together |
+| name / content **-r**…**-sh** | that person plus associates | *X and associates* | same **-sh** as on a noun |
 
 **Compare with:** inclusive *we* uses **`aha`** (`zahan`), not **`ugobo…sh`**.
 
@@ -120,22 +120,22 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *cat* | `agada` |
-| *dog* | `odogo` |
-| smile → *happy* (**-m**) | `uzumu` |
-| *size* / *big* (**-m**) | `ele` |
-| *walk* | `awala` |
-| *sit* | `aju` |
-| *run* | `urunu` |
-| *sleep* | `elebe` |
-| *see* | `eje` |
-| inclusive *we* | `aha` |
-| speaker | `ugobo` |
-| listener | `edone` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *cat* | `agada` | |
+| *dog* | `odogo` | |
+| *happy* (**-m**) | `uzumu` | from *smile*: the face of *happy* |
+| *big* (**-m**) | `ele` | from *elephant*: the huge animal |
+| *walk* | `awala` | |
+| *sit* | `aju` | |
+| *run* | `urunu` | |
+| *sleep* | `elebe` | |
+| *see* | `eje` | |
+| inclusive *we* | `aha` | 🤝 *handshake*: sharing the floor together |
+| speaker | `ugobo` | 🎤 *microphone*: the live voice of the person talking |
+| listener | `edone` | 🎧 *headphones*: the one receiving the sound |
 
 #### English → Agalan
 
@@ -259,15 +259,15 @@ If the wrong reading would matter, mark it: co-agency with **`aha`** or a join; 
 
 On `/v/`, **-sh** marks **collective**: the event is **one shared act**. A plural subject alone leaves that open. Noun **-sh** grows **who** the subject is; verb **-sh** marks **how** the doing is structured. The same “one pile” idea appears as [collective](#adjectives-g) on `/ɡ/`.
 
-| Shape | Reading |
-|-------|---------|
-| subject set + singular `/v/` | together, separately, or don’t care (*they walk*) |
-| subject set + `/v/`…**-sh** | **collective** (*they walk as one outing*) |
-| named person + `/v/`…**-sh** | that person’s doing is **joint**: unnamed others share the act, off the subject |
-| group-kind singular (*the team*) + `/v/`…**-sh** | the group acts **as one unit** |
+| Agalan | Use | English |
+|--------|-----|---------|
+| subject set + singular `/v/` | how they act is left open | *they walk* (together, separately, or don’t care) |
+| subject set + `/v/`…**-sh** | collective: one shared act | *they walk as one outing* |
+| named person + `/v/`…**-sh** | joint doing; unnamed others share the act | *Azawan sings jointly* (not a solo) |
+| group-kind singular (*the team*) + `/v/`…**-sh** | the group acts as one unit | *the team walks as one unit* |
 
-| Example | Gloss |
-|---------|-------|
+| Agalan | English |
+|--------|---------|
 | `zazawansh vuzunul` | *Azawan and associates sing* (together or each, or don’t care) |
 | `zazawansh vuzunulsh` | *they sing as one outing* |
 | `zazawan vuzunulsh` | *Azawan sings jointly* (not a solo) |
@@ -281,17 +281,17 @@ Count (*three times*) and habit (*always*) stay clause framing: [numbers](number
 
 On `/ɡ/`, **-sh** marks **collective**: the property holds of the **host set as one unit**.
 
-Adjective **-sh** = the set **shares** the property as one pile. It does not mean “more red.”
+Adjective **-sh** marks that the set **shares** the property as one pile. It does not mean “more red.”
 
-| Shape | Reading |
-|-------|---------|
-| host set + singular `/ɡ/` | each member, or don’t care (*the boxes are heavy*) |
-| host set + `/ɡ/`…**-sh** | **collective** (*heavy as a pile*; *vast as a team*) |
+| Agalan | Use | English |
+|--------|-----|---------|
+| host set + singular `/ɡ/` | each member, or don’t care | *the boxes are heavy* |
+| host set + `/ɡ/`…**-sh** | collective: the set as one pile | *heavy as a pile*; *vast as a team* |
 
 Most useful with a [phrase join](coordination.md): SHARED singular scale under **`a`** is already **distributive** (each member); SHARED **/ɡ/…-sh** is **collective**.
 
-| Example | Gloss |
-|---------|-------|
+| Agalan | English |
+|--------|---------|
 | `zulebol zolozol zal garagam` | *the file-box and the toolbox are (each) heavy* |
 | `zulebol zolozol zal garagamsh` | *heavy together* (collective SHARED) |
 | `zahadal gumum` | *the team is vast* (group-level size) |
@@ -323,22 +323,22 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *file-box* | `ulebo` |
-| *toolbox* | `olozo` |
-| *heaviness* (**-m**) | `araga` |
-| *teamwork* | `ahada` |
-| *vastness* (**-m**) | `umu` |
-| *cat* | `agada` |
-| *sing* | `uzunu` |
-| *walk* | `awala` |
-| *run* | `urunu` |
-| inclusive *we* | `aha` |
-| speaker | `ugobo` |
-| listener | `edone` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *file-box* | `ulebo` | |
+| *toolbox* | `olozo` | |
+| *heaviness* (**-m**) | `araga` | from *rock*: hard to lift |
+| *teamwork* | `ahada` | |
+| *vastness* (**-m**) | `umu` | from *milky way*: how huge the sky looks |
+| *cat* | `agada` | |
+| *sing* | `uzunu` | |
+| *walk* | `awala` | |
+| *run* | `urunu` | |
+| inclusive *we* | `aha` | 🤝 *handshake*: sharing the floor together |
+| speaker | `ugobo` | 🎤 *microphone*: the live voice of the person talking |
+| listener | `edone` | 🎧 *headphones*: the one receiving the sound |
 
 #### English → Agalan
 

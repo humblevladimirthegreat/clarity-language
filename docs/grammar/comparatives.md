@@ -13,9 +13,7 @@ English splits three nearby jobs on a quality like *challenging*. *More … than
 <a id="comparatives"></a>
 <a id="comparative-shared-scale"></a>
 
-When English would say *Azawan is more challenging than Ululon*, you put two people in order on one quality. Write both names, then the **rank join** **`zel`** (vowel **`e`**), then the adjective they share (`/ɡ/`). The first name sits higher on that quality than the second. Both may still sit high; the join only says who ranks higher.
-
-Mnemonic: join vowel **`e`** is **order**. The shared `/ɡ/` is the quality you order them on.
+When English would say *Azawan is more challenging than Ululon*, you put two people in order on one quality. Write both names, then the **rank join** **`zel`** (vowel **`e`**), then the adjective they share (`/ɡ/`). The first name sits higher on that quality than the second. Both may still sit high; the join only says who ranks higher. (cue: **`e`** ≈ order — the shared `/ɡ/` is the ladder)
 
 ```
 `zazawan zululon zel gomonam.`
@@ -72,9 +70,7 @@ gloss: `z-grace@` · `z-courage@` · `z-rank/more` · `g-challenging` · `w-floo
 <a id="equative"></a>
 <a id="as-as"></a>
 
-When English would say *as challenging as*, you are not picking a winner. You are saying two people sit at the **same height** on the quality. Write both names, then equality join **`zael`** (vowel **`ae`**), then the same kind of shared adjective (`/ɡ/`). Closed **-l** (`zael`) is a firm match. Open **-m** (`zaem`) is *about as … as*.
-
-Mnemonic: **`ae`** is **add + order**: they share a rank on the quality.
+When English would say *as challenging as*, you are not picking a winner. You are saying two people sit at the **same height** on the quality. Write both names, then equality join **`zael`** (vowel **`ae`**), then the same kind of shared adjective (`/ɡ/`). Closed **-l** (`zael`) is a firm match. Open **-m** (`zaem`) is *about as … as*. (cue: **`ae`** ≈ add + order — they share a rank)
 
 ```
 `zazawan zululon zael gomonam.`
@@ -104,10 +100,10 @@ gloss: `z-grace@` · `z-courage@` · `z-as…as.open` · `g-bright`
 *Azawan is about as bright as Ululon.*
 ```
 
-| Join + shared adjective `/ɡ/` | English job | Mnemonic |
-|-------------------------------|-------------|----------|
-| Rank **`e`** (`zel`) | *more … than* / *the …-est* | **`e`** order along the quality |
-| Equality **`ae`** (`zael` / `zaem`) | *as … as* / *about as … as* | **`ae`** equal rank on the quality |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| Rank **`e`** (`zel`) | rank on a shared quality | *more … than* / *the …-est* | **`e`** ≈ order |
+| Equality **`ae`** (`zael` / `zaem`) | same height on the quality | *as … as* / *about as … as* | **`ae`** ≈ add + order (they share a rank) |
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -116,15 +112,15 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *beauty* (name **Uhubun**) | `uhubu` |
-| *challenging* | `omona` |
-| *bright* | `udubu` |
-| *size* / *big* | `ele` |
-| smile → *happy* (**-m**) | `uzumu` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *beauty* (name **Uhubun**) | `uhubu` | |
+| *challenging* | `omona` | from *mountain*: hard to climb |
+| *bright* | `udubu` | |
+| *size* / *big* | `ele` | from *elephant*: the huge animal |
+| *happy* (**-m**) | `uzumu` | from *smile*: the face of *happy* |
 
 #### English → Agalan
 
@@ -232,20 +228,16 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 ### Full comparative arity
 <a id="comparative-arity"></a>
 
-You already close with **`e`**. The same shared-scale pattern works with exclusive rank **`oe`**, reverse rank **`ue`**, and with **zero** names (standalone) or **one** name (single-item).
-
-Mnemonic: **`o`** is one-of / exclusive; **`u`** undoes the order (*less … than*).
-
-Use **`oe`** when the ladder is pick-one along the scale. Use **`ue`** (or reverse the name order under **`e`**) for *less … than*. **`ae`** stays *as … as*.
+You already close with **`e`**. The same shared-scale pattern works with exclusive rank **`oe`**, reverse rank **`ue`**, and with **zero** names (standalone) or **one** name (single-item). Use **`oe`** when the ladder is pick-one along the scale. Use **`ue`** (or reverse the name order under **`e`**) for *less … than*. **`ae`** stays *as … as*. (cue: **`o`** ≈ one / exclusive; **`u`** ≈ undo — *less … than*)
 
 A rank join with **no** shared scale `/ɡ/` is ordinary preference ranking (who comes first as an alternative). Add the shared adjective when you mean *more ADJ than*.
 
-| Pattern | Reading | Mnemonic |
-|---------|---------|----------|
-| **Multi (2+)** + shared scale under **`e` / `oe` / `ue`** | Comparative ladder: earlier above later (`e` / `oe`); later above earlier under **`ue`** | **`e`** order; **`oe`** exclusive order; **`u`** undo |
-| **Single-item (1)** + shared scale under **`e` / `ue`** | Superlative / *the least …* under **`ue`** | one name = the extreme |
-| **Standalone (0)** + shared scale under **`e`** | Unspecified ranking (*unspecified who’s biggest*); open **-m** = soft / speaker-side | empty list, still ordered |
-| **Standalone (0)** + shared scale under **`oe`** | Empty superlative (*there is no biggest*); open **-m** = no biggest comes to mind | exclusive + empty = none wins |
+| Agalan | Use | English | Cue |
+|---------|-----|---------|-----|
+| **Multi (2+)** + shared scale under **`e` / `oe` / `ue`** | comparative ladder | earlier above later (`e` / `oe`); later above earlier under **`ue`** | **`e`** ≈ order; **`oe`** exclusive order; **`u`** ≈ undo |
+| **Single-item (1)** + shared scale under **`e` / `ue`** | superlative | *the …-est* / *the least …* under **`ue`** | **`o`** ≈ one: one name is the extreme |
+| **Standalone (0)** + shared scale under **`e`** | unspecified ranking | *unspecified who’s biggest*; open **-m** = soft / speaker-side | empty list, still ordered |
+| **Standalone (0)** + shared scale under **`oe`** | empty superlative | *there is no biggest*; open **-m** = no biggest comes to mind | exclusive + empty = none wins |
 
 | Example | Reading |
 |---------|---------|
@@ -267,9 +259,7 @@ When a later verb needs one comparee as its subject, keep that subject ordinary 
 ### Distributive *both are ADJ*
 <a id="distributive-both"></a>
 
-Use set join **`a`** plus a shared singular scale when you mean *both are ADJ* (each has the property). That is inventory, not a ranking and not *as … as*.
-
-Mnemonic: **`a`** adds. `zal` says each conjunct gets the adjective; `zael` says they sit at the same height.
+Use set join **`a`** plus a shared singular scale when you mean *both are ADJ* (each has the property). That is inventory, not a ranking and not *as … as*. (cue: **`a`** ≈ add — `zal` gives the adjective to each; `zael` is the same height)
 
 Collective *ADJ as a unit* uses shared `/ɡ/`…**-sh** under **`a`**: [plurality](plurality.md#adjectives-g). Keep the scale adjective singular in comparative and equative shared slots.
 
@@ -301,15 +291,15 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *beauty* (name **Uhubun**) | `uhubu` |
-| *challenging* | `omona` |
-| *size* / *big* | `ele` |
-| *measurement* | `urule` |
-| smile → *happy* (**-m**) | `uzumu` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *beauty* (name **Uhubun**) | `uhubu` | |
+| *challenging* | `omona` | from *mountain*: hard to climb |
+| *size* / *big* | `ele` | from *elephant*: the huge animal |
+| *measurement* | `urule` | from *ruler*: a measured length |
+| *happy* (**-m**) | `uzumu` | from *smile*: the face of *happy* |
 
 #### English → Agalan
 
@@ -430,12 +420,12 @@ Prefer reverse ranked **`ue`** on a **positive / neutral** scale:
 z<JUDGED>l z<BENCHMARK>n zuel g<SCALE>l
 ```
 
-| Piece | Role | Mnemonic |
-|-------|------|----------|
-| **`ue`** (`zuel` / `zuem` / …) | *less … than* (judged below the benchmark) | **`u`** undoes rank |
-| SHARED **`g<SCALE>`** | gradable property (*challenging*, *clear*, *happy*, …) | the scale you judge on |
-| first conjunct | who / what is judged | |
-| second conjunct | **benchmark** + **-n** (named standard; **`zuan`** is already bare named **`ua`**) | **-n** names the bar |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`ue`** (`zuel` / `zuem` / …) | reverse rank | *less … than* (judged below the benchmark) | **`u`** ≈ undo |
+| SHARED **`g<SCALE>`** | shared scale | *challenging*, *clear*, *happy*, … | |
+| first conjunct | who is judged | the comparee | |
+| second conjunct | named standard | the **benchmark** (**-n**; **`zuan`** is already bare named **`ua`**) | **-n** names the bar |
 
 Closed **-l** stands behind the ranking. Open **-m** (`zuem`) is soft *somewhat worse than…*. Use exclusive **`oe`** when the ladder is triage. Forward **`e`** is fine when the scale is already cost- or harm-oriented; for English-style *worse than*, prefer **`ue` + positive scale**.
 
@@ -447,14 +437,14 @@ Put the benchmark in an NP slot on the fence (`/z/` `/d/` `/b/`), with **-n** (o
 
 Six fixed standards. Ending stays **-n** (named reference-class standard).
 
-| English | Sense | Comparee | Mnemonic |
-|---------|--------|----------|----------|
-| **Average** | mean of the relevant population | **`zojun`** | ☯️ **`oju`** *yin-yang* → *balance* |
-| **Typical** | usual / modal case | **`zahaman`** | 🐹 **`ahama`** *hamster* → *routine* |
-| **Mine** (personal standard) | speaker’s **normative** bar | **`zugoboxrawon`** | 🎤 **`ugobo`** ([speaker](pronouns.md#special-pronouns)) + digit morph **`+1`** (*unit / primary*) |
-| **Social** | peers / in-group | **`zuluden`** | 👥 **`ulude`** *silhouettes* → *community* |
-| **Professional** | experts / role standard | **`zalaban`** | 🥼 **`alaba`** *lab-coat* → *expertise* |
-| **Everyone** | universal reference class | **`zuan`** | bare named **`ua`** (*stock everyone*) |
+| Agalan | Use | English | Cue |
+|---------|-----|---------|-----|
+| **`zojun`** | named Average bar | *Average* (mean of the relevant population; *balance*) | ☯️ *yin-yang*: opposing halves, so a middle bar |
+| **`zahaman`** | named Typical bar | *Typical* (usual / modal case; *routine*) | 🐹 *hamster*: the usual wheel |
+| **`zugoboxrawon`** | speaker’s **normative** bar | *Mine* | 🎤 *microphone* + **`+1`**: the speaker’s primary bar ([speaker](pronouns.md#special-pronouns)) |
+| **`zuluden`** | named peer bar | *Social* (in-group; *community*) | 👥 *silhouettes*: people together |
+| **`zalaban`** | named expert bar | *Professional* (role standard; *expertise*) | 🥼 *lab-coat*: specialized work |
+| **`zuan`** | named universal class | *Everyone* | bare named **`ua`** |
 
 <a id="mine-vs-speaker"></a>
 
@@ -480,21 +470,21 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *sing* | `uzunu` |
-| smile → *happy* (**-m**) | `uzumu` |
-| *challenging* | `omona` |
-| *clarity* | `agala` |
-| *draft* | `ebegu` |
-| *balance* | `oju` |
-| hamster → *routine* | `ahama` |
-| *speaker* | `ugobo` |
-| *community* | `ulude` |
-| *expertise* | `alaba` |
-| *everyone* | `ua` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *sing* | `uzunu` | |
+| *happy* (**-m**) | `uzumu` | from *smile*: the face of *happy* |
+| *challenging* | `omona` | from *mountain*: hard to climb |
+| *clarity* | `agala` | |
+| *draft* | `ebegu` | |
+| *balance* | `oju` | ☯️ *yin-yang*: opposing halves |
+| *routine* (**-m**) | `ahama` | 🐹 *hamster*: on a wheel of *routine* |
+| *speaker* | `ugobo` | 🎤 *microphone*: a live voice |
+| *community* | `ulude` | 👥 *silhouettes*: people together |
+| *expertise* | `alaba` | 🥼 *lab-coat*: specialized work |
+| *everyone* | `ua` | |
 
 #### English → Agalan
 

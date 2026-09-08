@@ -7,7 +7,7 @@ English *he*, *she*, *it*, and *they* point back to someone or something already
 
 ### Resume with **-r**
 
-After you have already named a person or thing, the next sentence can point back instead of repeating the full word. The word you point back to is the **antecedent**. The new word takes the role letter for the slot you need **now** (subject, object, and so on), then a **prefix of that word’s root**, then **-r**. The listener takes the **most recent** word whose stem matches that prefix. Mnemonic: **-r** = **r**esume.
+After you have already named a person or thing, the next sentence can point back instead of repeating the full word. The word you point back to is the **antecedent**. The new word takes the role letter for the slot you need **now** (subject, object, and so on), then a **prefix of that word’s root**, then **-r**. The listener takes the **most recent** word whose stem matches that prefix. (cue: **-r** ≈ resume (pick up the earlier word))
 
 **Short resume:** cut the root **up to and including its 2nd vowel**. Prefer this when it already picks the right antecedent.
 
@@ -44,7 +44,7 @@ gloss: `z-courage@` · `v-walk`
 *I walk.* Ululon names himself rather than saying *I*.
 ```
 
-Use **`ugobo`** (*speaker*) and **`edone`** (*listener*) when what matters is the conversation role, not a name. Mnemonic: 🎤 *microphone* → speaker; 🎧 *headphones* → listener.
+Use **`ugobo`** (*speaker*) and **`edone`** (*listener*) when what matters is the conversation role, not a name.
 
 ```
 `zugobon vuwurul dedonen.`
@@ -62,7 +62,7 @@ gloss: `z-speaker` · `v-walk`
 *I walk.*
 ```
 
-English *we* can mean “you and I” or “I and my people, not you.” Inclusive *we* (you and I) uses **`aha`**: the speaker and the people being addressed, together (**interlocutors**). Mnemonic: 🤝 *handshake* → co-participants.
+English *we* can mean “you and I” or “I and my people, not you.” Inclusive *we* (you and I) uses **`aha`**: the speaker and the people being addressed, together (**interlocutors**).
 
 ```
 `zahan vawalal.`
@@ -72,7 +72,7 @@ gloss: `z-interlocutors` · `v-walk`
 *We (you and I) walk.*
 ```
 
-**`enenu`** names a nonspecific **individual** (*someone*), not a particular person you have already named. Once that person is in the talk, resume them with content **-r**. Mnemonic: 👤 *silhouette* → a person.
+**`enenu`** names a nonspecific **individual** (*someone*), not a particular person you have already named. Once that person is in the talk, resume them with content **-r**.
 
 ```
 `zenenun velebel.`
@@ -82,7 +82,7 @@ gloss: `z-someone` · `v-sleep`
 *Someone sleeps.*
 ```
 
-When a sentence needs a whole following sentence as its object (English *that Ululon left*), **`adoro`** is the placeholder in the first sentence for that following material ([dependent clauses](core.md#dependent-clauses)). Put **`adoro` last** in its host slot; the dependent sentence follows with no extra host words in between. Default ending is **-l**. Mnemonic: 🚪 *doorway* → what follows.
+When a sentence needs a whole following sentence as its object (English *that Ululon left*), **`adoro`** is the placeholder in the first sentence for that following material ([dependent clauses](core.md#dependent-clauses)). Put **`adoro` last** in its host slot; the dependent sentence follows with no extra host words in between. Default ending is **-l**. (cue: 🚪 *doorway*: the next sentence walks through)
 
 ```
 `zugobon dazawan vezehel dadorol zululon vebarul.`
@@ -92,13 +92,13 @@ gloss: `z-speaker` · `d-grace@` · `v-tell` · `d-next-clause` · `z-courage@` 
 *I told Azawan that Ululon left.*
 ```
 
-| Role | Root | Mnemonic | Default ending | Example |
-|------|------|----------|----------------|---------|
-| **Speaker** | **`ugobo`** | 🎤 *microphone* → *producer-role* | **-n** | `zugobon` *I* |
-| **Listener** | **`edone`** | 🎧 *headphones* → *addressee-role* | **-n** | `dedonen` *you* |
-| **Interlocutors** | **`aha`** | 🤝 *handshake* → *co-participants* | **-n** | `zahan` *we* (you and I) |
-| **Generic person** | **`enenu`** | 👤 *silhouette* → *a person* | **-n** | `zenenun` *someone* |
-| **Next clause** | **`adoro`** | 🚪 *doorway* → *what follows* | **-l** | `dadorol` / `badorol` |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`ugobo`** (`zugobon`, default **-n**) | speaker in this conversation | *I* | 🎤 *microphone*: the live voice of the person talking |
+| **`edone`** (`dedonen` / `zedonen`, default **-n**) | listener in this conversation | *you* | 🎧 *headphones*: the one receiving the sound |
+| **`aha`** (`zahan`, default **-n**) | speaker and addressees together | *we* (you and I) | 🤝 *handshake*: sharing the floor together |
+| **`enenu`** (`zenenun`, default **-n**) | nonspecific individual | *someone* | 😐 *neutral*: not a particular person |
+| **`adoro`** (`dadorol` / `badorol`, default **-l**) | placeholder for the following sentence | *that* (next clause) | 🚪 *doorway*: the next sentence walks through |
 
 ### Clusivity
 <a id="clusivity"></a>
@@ -114,26 +114,26 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *dog* | `odogo` |
-| *dragon* | `adara` |
-| *book* | `abogo` |
-| *walk* | `awala` |
-| *sit* | `aju` |
-| *sleep* | `elebe` |
-| *run* | `urunu` |
-| *see* | `eje` |
-| *tell* | `ezehe` |
-| *depart* | `ebaru` |
-| *size* / *big* (**-m**) | `ele` |
-| *speaker* | `ugobo` |
-| *listener* | `edone` |
-| *interlocutors* | `aha` |
-| *generic person* | `enenu` |
-| *next clause* | `adoro` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *dog* | `odogo` | |
+| *dragon* | `adara` | |
+| *book* | `abogo` | |
+| *walk* | `awala` | |
+| *sit* | `aju` | |
+| *sleep* | `elebe` | |
+| *run* | `urunu` | |
+| *see* | `eje` | |
+| *tell* | `ezehe` | |
+| *depart* | `ebaru` | |
+| *big* (**-m**) | `ele` | from *elephant*: the huge animal |
+| *speaker* | `ugobo` | 🎤 *microphone*: the live voice of the person talking |
+| *listener* | `edone` | 🎧 *headphones*: the one receiving the sound |
+| *interlocutors* | `aha` | 🤝 *handshake*: sharing the floor together |
+| *someone* | `enenu` | 😐 *neutral*: not a particular person |
+| *next clause* | `adoro` | 🚪 *doorway*: the next sentence walks through |
 
 #### English → Agalan
 
@@ -246,32 +246,32 @@ Agalan has one resume mechanism; English does not. Approximate by crossing **wha
 
 #### Same-role resume
 
-| Antecedent → pronoun | English approximation |
-|----------------------|------------------------|
-| `/z/` → `/z/` | *he / she / it / they* (subject); *that one* |
-| `/d/` → `/d/` | *him / her / it / them* (object); *that one* |
-| `/b/` → `/b/` | *him / her / it / them* as the relation’s argument |
-| `/v/` → `/v/` | *do so* / *do that* |
-| `/ɡ/` → `/ɡ/` | *such* / *that* / *so* (same property) |
-| `/w/` → `/w/` | *that* degree / frame again |
-| `/h/` → `/h/` | *thus* / *so* / *that way* / *then* |
-| `/j/` vocative → `/j/` | calling the same addressee again |
-| `/j/` interjection → `/j/` | repeating that exclamation |
-| `/x/` → `/x/` | *and so* / *likewise* / the same linker again |
+| Agalan | English |
+|--------|---------|
+| `/z/` … `-r` after `/z/` | *he / she / it / they* (subject); *that one* |
+| `/d/` … `-r` after `/d/` | *him / her / it / them* (object); *that one* |
+| `/b/` … `-r` after `/b/` | *him / her / it / them* as the relation’s argument |
+| `/v/` … `-r` after `/v/` | *do so* / *do that* |
+| `/ɡ/` … `-r` after `/ɡ/` | *such* / *that* / *so* (same property) |
+| `/w/` … `-r` after `/w/` | *that* degree / frame again |
+| `/h/` … `-r` after `/h/` | *thus* / *so* / *that way* / *then* |
+| `/j/` vocative … `-r` | calling the same addressee again |
+| `/j/` interjection … `-r` | repeating that exclamation |
+| `/x/` … `-r` after `/x/` | *and so* / *likewise* / the same linker again |
 
 Resume content with `-r`.
 
 #### Quick English cheat sheet
 
-| You want English… | Typical Agalan shape |
-|-------------------|------------------------|
-| *he / she / it / they* (entity again) | Noun antecedent → `/z/` `/d/` or `/b/` …`-r` |
-| *do so* / *do that* | Verb antecedent → `/v/` …`-r` |
-| *such* / *that kind* | Adjective antecedent → `/ɡ/` …`-r` |
-| *thus* / *that way* | Adverb antecedent → `/h/` …`-r` |
+| English | Agalan |
+|---------|--------|
+| *he / she / it / they* (entity again) | noun antecedent, then `/z/` `/d/` or `/b/` …`-r` |
+| *do so* / *do that* | verb antecedent, then `/v/` …`-r` |
+| *such* / *that kind* | adjective antecedent, then `/ɡ/` …`-r` |
+| *thus* / *that way* | adverb antecedent, then `/h/` …`-r` |
 | *regarding that* (clause aboutness) | `/h/` *regarding* + `/b/` …`-r` |
-| *going back to subject X* (thread resume) | Any antecedent → `/x/` …`-r` |
-| *that* (prior cite / mention / aside) | [Span resume](spans.md#endings) → `daxur` / `hexur` / … |
+| *going back to subject X* (thread resume) | any antecedent, then `/x/` …`-r` |
+| *that* (prior cite / mention / aside) | [span resume](spans.md#endings) `daxur` / `hexur` / … |
 
 **Span resume** forms are closed [span-fence](spans.md) words. English often says *it* or *that*: "He said *that*?!" / "that (title)" / "that (proverb)".
 
@@ -281,14 +281,14 @@ Fill-ask (*who* / *what* / …) uses [unspecified-member **-r** under question](
 
 Same referent, new role: English needs a longer paraphrase. Full first-letter × first-letter tables are Advanced ([cross-role inventory](#cross-role-inventory)).
 
-| Antecedent was… | Pronoun as… | English sketch |
-|-----------------|-------------|----------------|
-| noun | `/v/` | *do that (to/with it)* |
-| noun | `/ɡ/` | *that one’s* / *of that kind* |
-| noun | `/x/` | *going back to subject X* |
-| verb | noun | *that action / event* (the doing, not the doer; [role compounds](roles.md#role-compounds) name agent/patient) |
-| verb | `/h/` | *by doing so* / *thereby* |
-| adjective | noun | *the … one* / *that quality* |
+| Agalan | Use | English |
+|--------|-----|---------|
+| noun antecedent, `/v/` … `-r` | recast as action | *do that (to/with it)* |
+| noun antecedent, `/ɡ/` … `-r` | recast as property | *that one’s* / *of that kind* |
+| noun antecedent, `/x/` … `-r` | discourse thread resume | *going back to subject X* |
+| verb antecedent, noun … `-r` | recast as event | *that action / event* (the doing, not the doer; [role compounds](roles.md#role-compounds) name agent/patient) |
+| verb antecedent, `/h/` … `-r` | recast as manner | *by doing so* / *thereby* |
+| adjective antecedent, noun … `-r` | recast as entity | *the … one* / *that quality* |
 
 ### Specials: further notes
 
@@ -307,21 +307,21 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *beauty* (name **Uhubun**) | `uhubu` |
-| *walk* | `awala` |
-| *run* | `urunu` |
-| *sleep* | `elebe` |
-| *sit* | `aju` |
-| *see* | `eje` |
-| smile → *happy* (**-m**) | `uzumu` |
-| *haste* (**-m**) | `adaza` |
-| *interlocutors* | `aha` |
-| *speaker* | `ugobo` |
-| *listener* | `edone` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *beauty* (name **Uhubun**) | `uhubu` | |
+| *walk* | `awala` | |
+| *run* | `urunu` | |
+| *sleep* | `elebe` | |
+| *sit* | `aju` | |
+| *see* | `eje` | |
+| *happy* (**-m**) | `uzumu` | from *smile*: the face of *happy* |
+| *haste* (**-m**) | `adaza` | from *dash*: a burst of speed |
+| *interlocutors* | `aha` | 🤝 *handshake*: sharing the floor together |
+| *speaker* | `ugobo` | 🎤 *microphone*: the live voice of the person talking |
+| *listener* | `edone` | 🎧 *headphones*: the one receiving the sound |
 
 #### English → Agalan
 
@@ -433,70 +433,70 @@ Each subsection is an **antecedent** role; table rows are the **pronoun** role. 
 
 #### Antecedent was a noun (`/z/`, `/d/`, or `/b/`)
 
-| Pronoun role | English approximation |
-|--------------|------------------------|
-| `/z/` `/d/` `/b/` | Ordinary 3rd-person or *that (one)*; `/b/` follows the host relation |
-| `/v/` | Treat that entity as the action: *do that (to/with it)* / *X it* |
-| `/ɡ/` | *that one’s* / *of that kind* / property tied to that entity |
-| `/w/` | Degree or frame scoped to a property of that entity |
-| `/h/` | Occasion framed by that entity; clause aboutness is `/h/` + `/b/` …`-r` |
-| `/j/` vocative | Address that entity |
-| `/x/` | *Going back to subject X* (discourse resume; not clause aboutness) |
+| Agalan | Use | English |
+|--------|-----|---------|
+| `/z/` `/d/` `/b/` … `-r` | ordinary 3rd-person slot | *he / she / it / they*; *that (one)* (`/b/` still follows the host relation) |
+| `/v/` … `-r` | treat that entity as the action | *do that (to/with it)* / *X it* |
+| `/ɡ/` … `-r` | property tied to that entity | *that one’s* / *of that kind* |
+| `/w/` … `-r` | degree or frame on a property of that entity | *that* degree / frame |
+| `/h/` … `-r` | occasion framed by that entity | clause aboutness is `/h/` + `/b/` …`-r` |
+| `/j/` vocative … `-r` | address that entity | vocative |
+| `/x/` … `-r` | discourse resume (not clause aboutness) | *Going back to subject X* |
 
 #### Antecedent was a verb (`/v/`)
 
-| Pronoun role | English approximation |
-|--------------|------------------------|
-| `/z/` `/d/` `/b/` | *that action / event / doing* (not the agent/patient; use [role compounds](roles.md#role-compounds)) |
-| `/v/` | *do so* / *do that* |
-| `/ɡ/` | *such* (done that way); property of having done that |
-| `/w/` | Frame on an adjective about that doing |
-| `/h/` | *by doing so* / *thereby* / *in that manner of acting* |
-| `/j/` | Vocative/interjection built on that named act (rare) |
-| `/x/` | *Going back to that (doing / event)* |
+| Agalan | Use | English |
+|--------|-----|---------|
+| `/z/` `/d/` `/b/` … `-r` | the doing as a noun | *that action / event / doing* (not the agent/patient; use [role compounds](roles.md#role-compounds)) |
+| `/v/` … `-r` | same action again | *do so* / *do that* |
+| `/ɡ/` … `-r` | property of having done that | *such* (done that way) |
+| `/w/` … `-r` | frame on an adjective about that doing | that frame |
+| `/h/` … `-r` | manner of acting | *by doing so* / *thereby* / *in that manner of acting* |
+| `/j/` … `-r` | vocative/interjection on that named act | rare |
+| `/x/` … `-r` | discourse resume of the doing | *Going back to that (doing / event)* |
 
 #### Antecedent was an adjective (`/ɡ/`)
 
-| Pronoun role | English approximation |
-|--------------|------------------------|
-| `/z/` `/d/` `/b/` | *the … one*; *that quality*; *those who are …* |
-| `/v/` | *be/do that* (act characterized by the property) |
-| `/ɡ/` | *such* / *that* (same property) |
-| `/w/` | *that* degree of the property |
-| `/h/` | *in that way* / *so* (manner from the property) |
-| `/j/` | Rare; named category used as call |
-| `/x/` | *Going back to that (property / category)* |
+| Agalan | Use | English |
+|--------|-----|---------|
+| `/z/` `/d/` `/b/` … `-r` | the property as an entity | *the … one*; *that quality*; *those who are …* |
+| `/v/` … `-r` | act characterized by the property | *be/do that* |
+| `/ɡ/` … `-r` | same property again | *such* / *that* |
+| `/w/` … `-r` | degree of the property | *that* degree |
+| `/h/` … `-r` | manner from the property | *in that way* / *so* |
+| `/j/` … `-r` | named category as a call | rare |
+| `/x/` … `-r` | discourse resume of the property | *Going back to that (property / category)* |
 
 #### Antecedent was an adjective extra (`/w/`)
 
-| Pronoun role | English approximation |
-|--------------|------------------------|
-| `/z/` `/d/` `/b/` | *that degree / scale / criterion* (as a thing) |
-| `/ɡ/` | Host property under *that* frame again |
-| `/w/` | Same adjunct again |
-| `/v/` `/h/` | Act or clause framed by that degree/criterion |
-| `/j/` | Rare |
-| `/x/` | *Going back to that (scale / criterion)* |
+| Agalan | Use | English |
+|--------|-----|---------|
+| `/z/` `/d/` `/b/` … `-r` | the degree / scale / criterion as a thing | *that degree / scale / criterion* |
+| `/ɡ/` … `-r` | host property under that frame again | that property |
+| `/w/` … `-r` | same adjunct again | same adjunct |
+| `/v/` `/h/` … `-r` | act or clause framed by that degree/criterion | framed doing / occasion |
+| `/j/` … `-r` | vocative on that frame | rare |
+| `/x/` … `-r` | discourse resume of the scale | *Going back to that (scale / criterion)* |
 
 #### Antecedent was an adverb (`/h/`)
 
-| Pronoun role | English approximation |
-|--------------|------------------------|
-| `/z/` `/d/` `/b/` | *that time / place / manner / reason / recipient-slot* (the adjunct as a noun) |
-| `/v/` | Act under that occasion |
-| `/ɡ/` | Property *as of* that occasion |
-| `/w/` | Adjective-level echo of that frame |
-| `/h/` | *thus* / *so* / *then* / *that way* |
-| `/j/` | Rare |
-| `/x/` | *Going back to that (occasion / framing)* |
+| Agalan | Use | English |
+|--------|-----|---------|
+| `/z/` `/d/` `/b/` … `-r` | the adjunct as a noun | *that time / place / manner / reason / recipient-slot* |
+| `/v/` … `-r` | act under that occasion | that doing |
+| `/ɡ/` … `-r` | property as of that occasion | that property |
+| `/w/` … `-r` | adjective-level echo of that frame | that frame |
+| `/h/` … `-r` | same adverb again | *thus* / *so* / *then* / *that way* |
+| `/j/` … `-r` | vocative on that occasion | rare |
+| `/x/` … `-r` | discourse resume of the framing | *Going back to that (occasion / framing)* |
 
 #### Antecedent was `/j/` or `/x/`
 
-| Pronoun role | English approximation |
-|--------------|------------------------|
-| Same class (`/j/` or `/x/`) | Repeat that vocative, interjection, or linker |
-| `/x/` from a content antecedent | *Going back to subject X* |
-| Noun / verb / adjective / adverb | Recast the *named formula or discourse label* as an ordinary referent (common for `-n` titles) |
+| Agalan | Use | English |
+|--------|-----|---------|
+| same class (`/j/` or `/x/`) … `-r` | repeat that vocative, interjection, or linker | same call or glue again |
+| `/x/` … `-r` from a content antecedent | discourse thread resume | *Going back to subject X* |
+| noun / verb / adjective / adverb … `-r` | recast the named formula or discourse label | ordinary referent (common for `-n` titles) |
 
 ### Translation practice
 <a id="translation-practice-advanced"></a>
@@ -505,18 +505,18 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *dog* | `odogo` |
-| *walk* | `awala` |
-| *run* | `urunu` |
-| *sit* | `aju` |
-| *sleep* | `elebe` |
-| *size* / *big* (**-m**) | `ele` |
-| smile → *happy* (**-m**) | `uzumu` |
-| *haste* (**-m**) | `adaza` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *dog* | `odogo` | |
+| *walk* | `awala` | |
+| *run* | `urunu` | |
+| *sit* | `aju` | |
+| *sleep* | `elebe` | |
+| *big* (**-m**) | `ele` | from *elephant*: the huge animal |
+| *happy* (**-m**) | `uzumu` | from *smile*: the face of *happy* |
+| *haste* (**-m**) | `adaza` | from *dash*: a burst of speed |
 
 #### English → Agalan
 

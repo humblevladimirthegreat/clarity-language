@@ -8,7 +8,7 @@ A content word’s last letter tells the listener how to take this meaning: a ne
 ### First mention, literal (`-l`)
 <a id="literal-l"></a>
 
-When you mention a kind of thing for the first time, in its everyday meaning (English *a* / *some X*), end the word with **-l**. The listener treats it as a new, ordinary instance of that kind. Mnemonic: **-l** = **l**iteral.
+When you mention a kind of thing for the first time, in its everyday meaning (English *a* / *some X*), end the word with **-l**. The listener treats it as a new, ordinary instance of that kind. (cue: **l** ≈ literal)
 
 ```
 `zodogol gelulul.`
@@ -21,7 +21,7 @@ gloss: `z-dog` · `g-blue`
 ### First mention, metaphor (`-m`)
 <a id="metaphor-m"></a>
 
-Sometimes the meaning you want is the published **metaphor** for that root, not the everyday picture (smile → *happy*). When you introduce that sense for the first time, end the word with **-m**. Mnemonic: **-m** = **m**etaphor.
+Sometimes the meaning you want is the published **metaphor** for that root, not the everyday picture. When you introduce that sense for the first time, end the word with **-m**. (cue: **m** ≈ metaphor)
 
 ```
 `zululon guzumum.`
@@ -31,12 +31,12 @@ gloss: `z-courage@` · `g-happy~`
 *Ululon is happy.*
 ```
 
-**Compare with:** a literal first mention uses **-l** (`gelulul` *blue*). *Happy* here matches the metaphor of `uzumu` (*smile* → *happy*), so the adjective is **-m**.
+**Compare with:** a literal first mention uses **-l** (`gelulul` *blue*). *Happy* here is the published metaphor of `uzumu`, so the adjective is **-m**. (cue: from *smile*: the face of *happy*)
 
 ### Named (`-n`)
 <a id="named-n-beginner"></a>
 
-When the word is a **name** (this person or this place, not a kind of thing), end it with **-n**. First cases are people and places. Mnemonic: **-n** = **n**ame.
+When the word is a **name** (this person or this place, not a kind of thing), end it with **-n**. First cases are people and places. (cue: **n** ≈ name)
 
 ```
 `zazawan vawalal.`
@@ -49,7 +49,7 @@ gloss: `z-grace@` · `v-walk`
 ### Resume (`-r`)
 <a id="resume-r-beginner"></a>
 
-After something is already in the conversation, you can point back to it instead of introducing it again. Use the same root and end it with **-r**. Mnemonic: **-r** = **r**esume.
+After something is already in the conversation, you can point back to it instead of introducing it again. Use the same root and end it with **-r**. (cue: **r** ≈ resume)
 
 ```
 `zazawan vawalal. zazawar velebel.`
@@ -65,12 +65,12 @@ gloss: `z-grace@` · `v-walk` · `z-←grace` · `v-sleep`
 
 The four last letters, and what each does in English, in the order you just used them:
 
-| Ending | Job | Mnemonic |
-|--------|-----|----------|
-| **-l** | First mention, **literal** (*a / some X*) | **l**iteral |
-| **-m** | First mention, **metaphor** | **m**etaphor |
-| **-n** | **Name** (definite label) | **n**ame |
-| **-r** | **Resume** what is already in the talk | **r**esume |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **-l** | first mention, everyday kind | *a / some X* | **l** ≈ literal |
+| **-m** | first mention, published metaphor | the metaphorical sense | **m** ≈ metaphor |
+| **-n** | this person or place as a name | a definite name | **n** ≈ name |
+| **-r** | point back to what is already in the talk | resume that same referent | **r** ≈ resume |
 
 ### Writing
 
@@ -81,22 +81,22 @@ Spell **role letter + root + ending** as one word (`zazawan`). When you write th
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Choose **-l** (new literal), **-m** (new metaphor), **-n** (named), or **-r** (resume). Citation items are prefix-less.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Cue** is optional memory, not the answer):
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *beauty* (name **Uhubun**) | `uhubu` |
-| *dog* | `odogo` |
-| *cat* | `agada` |
-| *book* | `abogo` |
-| *blue* | `elulu` |
-| smile → *happy* (**-m**) | `uzumu` |
-| *walk* | `awala` |
-| *sleep* | `elebe` |
-| *write* | `uwuru` |
-| *sit* | `aju` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *beauty* (name **Uhubun**) | `uhubu` | |
+| *dog* | `odogo` | |
+| *cat* | `agada` | |
+| *book* | `abogo` | |
+| *blue* | `elulu` | |
+| *happy* (**-m**) | `uzumu` | from *smile*: the face of *happy* |
+| *walk* | `awala` | |
+| *sleep* | `elebe` | |
+| *write* | `uwuru` | |
+| *sit* | `aju` | |
 
 #### English → Agalan
 
@@ -221,11 +221,11 @@ Named individuals, places, one-off objects, titled works: *Azawan*, *Paris*, *th
 
 **Multipart proper names** (given + family, compact multi-token place names, and similar **one-referent** labels) are **one content word** when short enough to stay handy. Roots join left to right ([ordinary compound order](x-compounds.md#ordinary-compound-order)): first root is the kind or given name; later roots narrow or continue the title.
 
-| Shape | Example | Reading |
-|-------|---------|---------|
-| **Nativized** multipart (Agalan roots + mid-word **`x`**) | `zodunaxalanen` | *Odunaxalanen* (*wish*×*guidance*: one person) |
-| same under other slots | `dodunaxalanen`, `bodunaxalanen` | one named place / person as object or argument |
-| **Sense / shop label** (two or more lexicon roots) | `zuzuzuxogoven`, `zuzuzuxogovexadedan` | *Sushi-Coffee*; *Sushi-Coffee-Tea* |
+| Agalan | Use | English |
+|--------|-----|---------|
+| `zodunaxalanen` | nativized multipart (roots + mid-word **`x`**) | *Odunaxalanen* (*wish*×*guidance*: one person) |
+| `dodunaxalanen`, `bodunaxalanen` | same under other slots | one named place / person as object or argument |
+| `zuzuzuxogoven`, `zuzuzuxogovexadedan` | sense / shop label (two or more lexicon roots) | *Sushi-Coffee*; *Sushi-Coffee-Tea* |
 
 Adjacent bare same-role words (`zodunan zalanen`) are two people in a [join](coordination.md). One **`x`-compound** is one resume target and one slot filler. A **lexical compound** is also one slot-filler: one stem, not **`x`** (`zohohulabedel` *bedroom*).
 
@@ -234,10 +234,10 @@ Adjacent bare same-role words (`zodunan zalanen`) are two people in a [join](coo
 
 A long official title (bureau, act, titled group) may also have a **handle**: one published root plus **-n**, the same as any proper name. First mention may be the handle alone.
 
-| Form | Shape | Example | Job |
-|------|--------|---------|-----|
-| **Handle** | one root + **-n** | `zabogon` | default talk, including first mention |
-| **Long title** | phrasal proper (`ROOT x ROOT` … + **-n**) | `zabogoxululon` | full legal / ceremonial name of the same office |
+| Agalan | Use | English |
+|--------|-----|---------|
+| `zabogon` | handle: one root + **-n** | default talk, including first mention |
+| `zabogoxululon` | long title: phrasal proper (`ROOT x ROOT` … + **-n**) | full legal / ceremonial name of the same office |
 
 ```
 `zabogon vawalal.`
@@ -323,24 +323,24 @@ In [number words](numbers.md), the same four letters have **number-specific** me
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. The point is **-n** as a title on any role letter, one **`x`-compound** name, or an office **handle**.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Cue** is optional memory, not the answer):
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *beauty* (name **Uhubun**) | `uhubu` |
-| *book* (name **Abogon**) | `abogo` |
-| *blue* | `elulu` |
-| *walk* | `awala` |
-| *run* | `urunu` |
-| *sing* | `uzunu` |
-| *perception* (*see*) | `eje` |
-| *write* | `uwuru` |
-| *haste* | `adaza` |
-| (name **Odunaxalanen**) | `oduna`×`alane` |
-| (label **Sushi-Coffee**) | `uzuzu`×`ogove` |
-| (title **Book-Courage**) | `abogo`×`ululo` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *beauty* (name **Uhubun**) | `uhubu` | |
+| *book* (name **Abogon**) | `abogo` | |
+| *blue* | `elulu` | |
+| *walk* | `awala` | |
+| *run* | `urunu` | |
+| *sing* | `uzunu` | |
+| *see* | `eje` | from *perception*: the sense you see with |
+| *write* | `uwuru` | |
+| *haste* | `adaza` | |
+| (name **Odunaxalanen**) | `oduna`×`alane` | |
+| (label **Sushi-Coffee**) | `uzuzu`×`ogove` | |
+| (title **Book-Courage**) | `abogo`×`ululo` | |
 
 #### English → Agalan
 

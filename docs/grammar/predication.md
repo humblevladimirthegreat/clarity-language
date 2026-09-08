@@ -44,9 +44,7 @@ A titled name of that kind uses **-n** on the adjective ([reference suffix](refe
 
 When two names pick out **the same person or thing** (*Clark is Superman*), you are not putting Clark in a kind. You are saying the two labels match: they are one individual.
 
-Write a special adjective `gonunul` after the first name, then an extra noun (`/b/`) for the other label. Keep `gonunul` and that `/b/` word **next to each other**. That pair is **identity**. The adjective’s English name is **`SAME`**; its root is **`onunu`**.
-
-Mnemonic: **`onunu`** 🪙 *coin*: two faces, one substance.
+Write a special adjective `gonunul` after the first name, then an extra noun (`/b/`) for the other label. Keep `gonunul` and that `/b/` word **next to each other**. That pair is **identity**. The adjective’s English name is **`SAME`**; its root is **`onunu`**. (cue: 🪙 *coin*: two faces, one substance)
 
 ```
 `z<Clark>n gonunul b<Superman>n.`
@@ -73,20 +71,20 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *beauty* (name **Uhubun**) | `uhubu` |
-| *dog* | `odogo` |
-| *cat* | `agada` |
-| *book* | `abogo` |
-| *blue* | `elulu` |
-| smile → *happy* (**-m**) | `uzumu` |
-| *challenging* (**-m**) | `omona` |
-| *walk* | `awala` |
-| *sleep* | `elebe` |
-| **SAME** | `onunu` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *beauty* (name **Uhubun**) | `uhubu` | |
+| *dog* | `odogo` | |
+| *cat* | `agada` | |
+| *book* | `abogo` | |
+| *blue* | `elulu` | |
+| *happy* (**-m**) | `uzumu` | from *smile*: the face of *happy* |
+| *challenging* (**-m**) | `omona` | from *mountain*: hard to climb |
+| *walk* | `awala` | |
+| *sleep* | `elebe` | |
+| **SAME** | `onunu` | 🪙 *coin*: two faces, one substance |
 
 #### English → Agalan
 
@@ -195,24 +193,24 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 Once kind sits on `/ɡ/`, you can hedge it, mark it as a type, or deny it.
 
-| Pattern | Example | Reading |
-|---------|---------|---------|
-| Soft / hedged class | plain classifying clause (`zazawan godogol`) with a `/w/` hedge stacked on the classifying `/ɡ/` | *Azawan is something of a dog* / *a dog, sort of* |
-| Characterizing / habitual | `zazawan godogol hual` | *Azawan is the dog type*; [**hual**](restrictors.md) |
-| Negation | `zazawan godogol gul` | *Azawan is not a dog*; [negation **u**](coordination.md#negation-u) |
+| Agalan | Use | English |
+|--------|-----|---------|
+| classifying `/ɡ/` plus a `/w/` hedge | soft / hedged class | *Azawan is something of a dog* / *a dog, sort of* |
+| `zazawan godogol hual` | characterizing / habitual | *Azawan is the dog type*; [**hual**](restrictors.md) |
+| `zazawan godogol gul` | negation | *Azawan is not a dog*; [negation **u**](coordination.md#negation-u) |
 
 ### **SAME** endings
 
 The same identity pattern takes the usual endings. **-l** stands behind the match; **-m** is ordinary **open** SAME (*same for our purposes*); **-n** is a titled frame; **-r** resumes a prior identity claim.
 
-| Ending | Reading |
-|--------|---------|
-| **-l** | stand behind identity (closed) |
-| **-m** | open SAME (*same for our purposes*) |
-| **-n** | named identity frame (rare; titled equivalence) |
-| **-r** | resume a prior identity claim |
+| Agalan | Use | English |
+|--------|-----|---------|
+| **-l** | stand behind identity (closed) | *is* (the same as) |
+| **-m** | open SAME | *same for our purposes* |
+| **-n** | named identity frame | titled equivalence (rare) |
+| **-r** | resume a prior identity claim | *the same (as already ascribed)* |
 
-| Agalan | Reading |
+| Agalan | English |
 |---------|---------|
 | `z<Clark>n gonunul b<Superman>n` | *Clark is (the same as) Superman* |
 | `z<Clark>n gonunum b<Superman>n` | open: *Clark is basically Superman* |
@@ -229,18 +227,18 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *beauty* (name **Uhubun**) | `uhubu` |
-| *dog* | `odogo` |
-| *cat* | `agada` |
-| **SAME** | `onunu` |
-| **TOLD** | `erara` |
-| (band: *the person who…*) | `ebere` |
-| *walk* | `awala` |
-| *sleep* | `elebe` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *beauty* (name **Uhubun**) | `uhubu` | |
+| *dog* | `odogo` | |
+| *cat* | `agada` | |
+| **SAME** | `onunu` | 🪙 *coin*: two faces, one substance |
+| **TOLD** | `erara` | |
+| (band: *the person who…*) | `ebere` | |
+| *walk* | `awala` | |
+| *sleep* | `elebe` | |
 
 #### English → Agalan
 

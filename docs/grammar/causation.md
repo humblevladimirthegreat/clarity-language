@@ -13,9 +13,7 @@
 <a id="sufficient"></a>
 <a id="np-poles"></a>
 
-When you mean *this would work*, write the outcome first (what you are trying to get). After it, write the route (what would get you there), then an open *and/or* join **`…aom`**. The join’s role letter matches the route (`zaom` after a noun, `vaom` after a verb). Open **-m** means this is at least one route; other routes may still work.
-
-Vowel **`a`** is **add**: you add a route, and the outcome can follow.
+When you mean *this would work*, write the outcome first (what you are trying to get). After it, write the route (what would get you there), then an open *and/or* join **`…aom`**. The join’s role letter matches the route (`zaom` after a noun, `vaom` after a verb). Open **-m** means this is at least one route; other routes may still work. (cue: **`a`** ≈ add — you add a route, and the outcome can follow)
 
 ```
 `zezewel zaom.`
@@ -59,11 +57,11 @@ gloss: `z-book` · `z-and/or`
 
 **Compare with:** *needs* / *without* (*the outcome cannot do without this*) is not **`…aom`**. Use an exclusion join or a *never* restrictor.
 
-| Form | Job | Mnemonic |
-|------|-----|----------|
-| **`…aom`** (`zaom` / `vaom` / …) | *at least X* / *X would work* | **`a`** add a route |
-| **`…ao…`** (two or more items) | several routes; any would work | **`a`** add several routes |
-| **`…aol`** | *X is enough* (this route alone) | **`a`** add, **-l** locked |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`…aom`** (`zaom` / `vaom` / …) | open sufficient | *at least X* / *X would work* | **`a`** ≈ add (a route) |
+| **`…ao…`** (two or more items) | several routes | any would work | **`a`** ≈ add (several routes) |
+| **`…aol`** | closed sufficient | *X is enough* (this route alone) | **`a`** ≈ add + **-l** stand behind |
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -72,20 +70,20 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *beauty* (name **Uhubun**) | `uhubu` |
-| *effort* | `ezewe` |
-| *cloud* | `uludu` |
-| *snow* | `ozowo` |
-| *dog* | `odogo` |
-| *cat* | `agada` |
-| *book* | `abogo` |
-| *house* | `ohohu` |
-| *walk* | `awala` |
-| *sing* | `uzunu` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *beauty* (name **Uhubun**) | `uhubu` | |
+| *effort* | `ezewe` | |
+| *cloud* | `uludu` | |
+| *snow* | `ozowo` | |
+| *dog* | `odogo` | |
+| *cat* | `agada` | |
+| *book* | `abogo` | |
+| *house* | `ohohu` | |
+| *walk* | `awala` | |
+| *sing* | `uzunu` | |
 
 #### English → Agalan
 
@@ -197,10 +195,10 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 To say the outcome **needs** the condition, mark **exclusion** or **never**.
 
-| Prefer | Gloss | Mnemonic |
-|--------|--------|----------|
-| **`guan` / `huan`** | *without / excluding* the condition on the **effect** | series **`u`** (*undo*): take it away and the effect fails |
-| **`hal`** (restrictor) | *never*, when the condition is absent | exact **-l**: that occasion is closed off |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`guan` / `huan`** | exclusion on the **effect** | *without / excluding* | **`u`** ≈ undo (take it away and the effect fails) |
+| **`hal`** (restrictor) | never, when the condition is absent | *never* | **-l** exact: that occasion is closed off |
 
 ```
 `zanunul huan buludul.`
@@ -250,11 +248,11 @@ main sentence …  hadorom / hezazem / hurugum  badorol   [dependent sentence]
 <a id="if-vs-iff"></a>
 <a id="if-vs-because"></a>
 
-| Root | Lexicon | Metaphor | Reading | Parallel |
-|------|---------|----------|---------|----------|
-| **`IF`** (default) | **`adoro`** | 🚪 *door* → *opportunity* | one-way: under the dependent, claim the main sentence; the dependent is not asserted as fact | open sufficient (`…aom` / `haon`) |
-| **`IFF`** (marked) | **`ezaze`** | ↔️ *left-right* → *reciprocity* | both ways: dependent and main sentence stand or fall together | sufficient **and** necessary |
-| **`BECAUSE`** | **`urugu`** | 🧱 *brick* → *foundation* | asserted explanation: the reason the main sentence rests on | explanation |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`hadorom badorol`** (**`adoro`**) | one-way condition (open sufficient; dependent not asserted) | *if* | 🚪 *doorway*: walk through only if it opens |
+| **`hezazem badorol`** (**`ezaze`**) | both-ways (sufficient **and** necessary) | *if and only if* | ↔️ *left-right*: each side only with the other |
+| **`hurugum badorol`** (**`urugu`**) | asserted explanation | *because* | 🧱 *brick*: the cause is what the result sits on |
 
 **Ending:** clause poles always take **-m** (metaphorical published sense): **`hadorom`** / **`hezazem`** / **`hurugum`**. Ordinary literal content on the same roots still uses ordinary endings (`zadorol` *a door*; `zezazel` *reciprocity*; `zurugul` *a brick*).
 
@@ -293,7 +291,7 @@ Open sufficient vs necessary uses the same joins and restrictors (`hal`, …) yo
 
 Mark a clause as **CAUSE-framed** (*how the gears engage*) with one closed mood root.
 
-**Shape:** floating **`/h/`** mood **`egega`** ⚙️ *gear* → *CAUSE* (optional `/w/` when scoped only to a preceding `/ɡ/`). Prefer floating `/h/`. Ending = **-m** only (metaphorical): **`hegegam`**. Ordinary content still available (`zegegal` *a gear*; `vegegal` *to mesh / engage*).
+**Shape:** floating **`/h/`** mood **`egega`**. Prefer floating `/h/` (optional `/w/` when scoped only to a preceding `/ɡ/`). Ending = **-m** only (metaphorical): **`hegegam`**. Ordinary content still available (`zegegal` *a gear*; `vegegal` *to mesh / engage*). (cue: ⚙️ *gear*: how the mechanism engages)
 
 ```
 `haon bezewel hegegam.`
@@ -333,24 +331,24 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *beauty* (name **Uhubun**) | `uhubu` |
-| *dog* | `odogo` |
-| *effort* | `ezewe` |
-| *rain* | `anunu` |
-| *cloud* | `uludu` |
-| *book* | `abogo` |
-| *competence* | `olozo` |
-| *walk* | `awala` |
-| *sing* | `uzunu` |
-| *sleep* | `elebe` |
-| *next clause* / *if* | `adoro` |
-| *iff* | `ezaze` |
-| *because* | `urugu` |
-| CAUSE | `egega` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *beauty* (name **Uhubun**) | `uhubu` | |
+| *dog* | `odogo` | |
+| *effort* | `ezewe` | |
+| *rain* | `anunu` | |
+| *cloud* | `uludu` | |
+| *book* | `abogo` | |
+| *competence* | `olozo` | |
+| *walk* | `awala` | |
+| *sing* | `uzunu` | |
+| *sleep* | `elebe` | |
+| *next clause* / *if* (**-m** on `/h/`) | `adoro` | 🚪 *doorway*: walk through only if it opens |
+| *iff* (**-m**) | `ezaze` | ↔️ *left-right*: each side only with the other |
+| *because* (**-m**) | `urugu` | 🧱 *brick*: the cause is what the result sits on |
+| *CAUSE* (**-m**) | `egega` | ⚙️ *gear*: how the mechanism engages |
 
 #### English → Agalan
 
@@ -486,13 +484,11 @@ English *because* / *if* blur whether the dependent is **asserted as a fact abou
 
 Agalan separates that on the clause root:
 
-| Root | Dependent | Main sentence | Link |
-|------|-----------|---------------|------|
-| **`IF`** (`hadorom`) 🚪 | hypothetical / opportunity door | claimed **under** the dependent | one-way open sufficient |
-| **`IFF`** (`hezazem`) ↔️ | stands or falls **with** the main sentence | stands or falls **with** the dependent | both directions |
-| **`BECAUSE`** (`hurugum`) 🧱 | **asserted** as the foundation the main sentence rests on | asserted (or already in force) | explanation |
-
-🚪 opens onto a maybe, 🧱 is laid down as real, ↔️ welds both sides together.
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`hadorom`** | dependent not asserted; main claimed **under** it | *if* | 🚪 *doorway*: walk through only if it opens |
+| **`hezazem`** | both sides stand or fall together | *if and only if* | ↔️ *left-right*: each side only with the other |
+| **`hurugum`** | dependent **asserted** as the reason the main sentence rests on | *because* | 🧱 *brick*: the cause is what the result sits on |
 
 ```
 `zazawan vawalal hurugum badorol zanunul.`
@@ -525,14 +521,14 @@ English often uses *because* for **speaker grounds** (*I say P because Q* / *I t
 ### Stacks (evidentiality, CAUSE, habit)
 <a id="stacks"></a>
 
-| Stack | Role | Mnemonic |
-|-------|------|----------|
-| Evidentiality `/h/` | *how you know* the link ([evidentiality](commentary.md#evidentiality): **INFERRED** `uneve`, **PATTERN** `abawa`, …) | 🔍 the trail behind the claim |
-| **`CAUSE`** (`hegegam`) | CAUSE mood ([CAUSE](#cause)) | ⚙️ the gears inside |
-| **`hual` / `huam`** | habitual / characterizing pattern ([restrictors](restrictors.md)) | 🔁 whenever, as a rule |
-| Universality | how exceptionless the claim is ([universality moods](special-vocabulary.md#universality)) | 🌐 no exceptions anywhere |
-| Values `xo` / `xe` | ought or motive ([above](#preference-vs-law)) | 🧭 the need it serves |
-| COMMENT | speaker-grounds / attitude ([epistemic *because*](#epistemic-because)) | 💭 what the speaker thinks |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| evidential `/h/` | *how you know* the link ([evidentiality](commentary.md#evidentiality): **INFERRED** `uneve`, **PATTERN** `abawa`, …) | *I infer / it is a pattern that…* | 🔍 the trail behind the claim |
+| **`hegegam`** | CAUSE mood ([CAUSE](#cause)) | *as mechanism* | ⚙️ *gear*: how the mechanism engages |
+| **`hual` / `huam`** | habitual / characterizing ([restrictors](restrictors.md)) | *whenever*, as a rule | |
+| universality mood | how exceptionless the claim is ([universality](special-vocabulary.md#universality)) | *always* / *every* / *never* | |
+| values `xo` / `xe` | ought or motive ([above](#preference-vs-law)) | *should* / *so that* | |
+| COMMENT | speaker-grounds / attitude ([epistemic *because*](#epistemic-because)) | *I think / I’d note* | |
 
 A particular episode (*this delay was caused by…*) and a standing pattern (*clouds for rain*) share the same necessary/sufficient shapes. Tense, **`hual`**, evidentiality, **`CAUSE`**, and [universality](special-vocabulary.md#universality) distinguish them.
 
@@ -541,8 +537,8 @@ Show a causal “law” with evidentiality and universality. **CAUSE** uses **`h
 ### English → Agalan
 <a id="english-cues"></a>
 
-| English cue | Agalan |
-|-------------|---------|
+| English | Agalan |
+|---------|---------|
 | *caused by* + how you know | condition shape (sufficient / necessary) + evidential `/h/` |
 | *caused by* + CAUSE | condition shape + **`hegegam`** ([CAUSE](#cause)) |
 | *leads to* / *results in* (ordinary) | open sufficient (`…aom` / `haon`, …) |
@@ -568,18 +564,18 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *rain* | `anunu` |
-| *cloud* | `uludu` |
-| *walk* | `awala` |
-| *sleep* | `elebe` |
-| *next clause* / *if* | `adoro` |
-| *iff* | `ezaze` |
-| *because* | `urugu` |
-| *commentary* (**`hodohom`**) | `odoho` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *rain* | `anunu` | |
+| *cloud* | `uludu` | |
+| *walk* | `awala` | |
+| *sleep* | `elebe` | |
+| *next clause* / *if* (**-m** on `/h/`) | `adoro` | 🚪 *doorway*: walk through only if it opens |
+| *iff* (**-m**) | `ezaze` | ↔️ *left-right*: each side only with the other |
+| *because* (**-m**) | `urugu` | 🧱 *brick*: the cause is what the result sits on |
+| *commentary* (**`hodohom`**) | `odoho` | |
 
 #### English → Agalan
 

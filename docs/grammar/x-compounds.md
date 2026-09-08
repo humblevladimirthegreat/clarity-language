@@ -11,9 +11,7 @@ How to read **`x`** inside one content word: the two pieces around that letter, 
 
 When two published roots sit in **one** content word, write **`x`** between them (the **seam**).
 
-After the [role letter](core.md#beginner) (the first letter of the word: subject, verb, and so on), look at what sits left and right of the first **`x`**. The [ending](reference-suffix.md) (**-l** / **-m** / **-n** / **-r**) belongs to the whole word, not to the left piece alone.
-
-Memory hook: treat **`x`** like a plus sign between two pieces.
+After the [role letter](core.md#beginner) (the first letter of the word: subject, verb, and so on), look at what sits left and right of the first **`x`**. The [ending](reference-suffix.md) (**-l** / **-m** / **-n** / **-r**) belongs to the whole word, not to the left piece alone. (cue: **x** ≈ plus: two pieces make one word)
 
 ```
 `zuzuzuxogoven.`
@@ -27,11 +25,11 @@ gloss: `z-sushi-x-coffee@`
 
 That shape is an **ordinary compound**: a full root, **`x`**, another full root. The left root is the kind; the right root narrows it (field or further label). One name, one ending.
 
-| You see (after the role letter) | Reading | Example |
-|--------------------------------|---------|---------|
-| Full root, **`x`**, full root | Ordinary compound: one label, kind then field | `zuzuzuxogoven` |
-| **`a`** / **`u`** / **`o`**, **`x`**, then a root | [Role compound](roles.md#role-compounds) | `zaxuvugul` *a fighter* |
-| A root, **`x`**, then **`a`** / **`e`** / **`o`** / **`u`** | [Values](values.md) or [ability](ability.md#ability) | `vuzunuxel` |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| full root **`x`** full root | ordinary compound: one label, kind then field | `zuzuzuxogoven` | **x** ≈ plus |
+| **`a`** / **`u`** / **`o`** **`x`** root | [role compound](roles.md#role-compounds) | `zaxuvugul` *a fighter* | **a** agent / **u** patient / **o** relatum |
+| root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | [values](values.md) or [ability](ability.md#ability) | `vuzunuxel` | stance vowel on the host |
 
 **Compare with:** two people in one slot are two words (`zazawan zululon`), not one seam.
 
@@ -45,13 +43,13 @@ That shape is an **ordinary compound**: a full root, **`x`**, another full root.
 
 You already know several jobs that use mid-word **`x`**. After the PoS letter, look at what sits **left** and **right** of the **first** **`x`**.
 
-| You see (after PoS) | Job | Example |
-|---------------------|-----|---------|
-| One vowel, **`x`**, one vowel, then a span ending | [Span fence](spans.md) open or close | `daxal` … `xuxul` |
-| One vowel **`a`** / **`u`** / **`o`**, **`x`**, then a longer root | [Role compound](roles.md#role-compounds) | `zaxuvugul` *a fighter* |
-| Longer root, **`x`**, then one stance vowel **`a`** / **`e`** / **`o`** / **`u`** | [Values](values.md) (need host) or [ability](ability.md#ability) (other host) | `vuzunuxel` |
-| Longer root, **`x`**, then a [number](numbers.md) stem (no ending of its own) | [Numeric derivation](numeric-derivation.md#numeric-derivation) | `…x+1…` / speech `…xraba…` |
-| Full roots on **both** sides, optional further **`x`** + root | Ordinary compound | `zuzuzuxogoven`; `gewezexazawan` *Azawan’s left* ([viewpoint laterals](roles.md#viewpoint-laterals)); `zodunaxalanen` ([phrasal proper names](reference-suffix.md#phrasal-proper-names)) |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| one vowel **`x`** one vowel, then a span ending | [span fence](spans.md) open or close | `daxal` … `xuxul` | |
+| **`a`** / **`u`** / **`o`** **`x`** a longer root | [role compound](roles.md#role-compounds) | `zaxuvugul` *a fighter* | **a** agent / **u** patient / **o** relatum |
+| longer root **`x`** stance vowel **`a`** / **`e`** / **`o`** / **`u`** | [values](values.md) (need host) or [ability](ability.md#ability) (other host) | `vuzunuxel` | stance vowel on the host |
+| longer root **`x`** a [number](numbers.md) stem (no ending of its own) | [numeric derivation](numeric-derivation.md#numeric-derivation) | `…x+1…` / speech `…xraba…` | |
+| full roots on **both** sides, optional further **`x`** + root | ordinary compound | `zuzuzuxogoven`; `gewezexazawan` *Azawan’s left* ([viewpoint laterals](roles.md#viewpoint-laterals)); `zodunaxalanen` ([phrasal proper names](reference-suffix.md#phrasal-proper-names)) | **x** ≈ plus |
 
 A content root is never a **bare single vowel**, so a lone vowel **left** of **`x`** is a span open or a role vowel, not a values / ability / numeric **host**. Role compounds still put a full root (`V(CV)+`) after the role vowel. Span opens are the usual **vowel `x` vowel** shape. Numeric right halves follow number-stem grammar (markers **`+`** / **`-`** / **`#`** / **`_`**, digitless exponents including labels **`_e`** / **`_e-`**, hyperbole, [zero × exp](numbers.md#zero-exponent) **`+0e`** / **`±0e-1`** / **`#0e`**, label digits, scalar **`+N`** / **`-N`**, ordinal **`#N`**). Running-text examples prefer spelled CV (`…xraba…`); see [writing style](numbers.md#writing-style-numeric-vs-spelled).
 
@@ -101,11 +99,11 @@ Role vowels are only **`a`** / **`u`** / **`o`**. Span type and edge letters sta
 
 Pick **one** package for the job.
 
-| Package | When | Example |
-|---------|------|---------|
-| **Two words** | Two slot-fillers, or a relation that already has its own marking: join / adjective | `zodogol zagadal zam` *a dog and a cat*; `zodogol gelulul` *a blue dog* (property = `/ɡ/`) |
-| **`x` compound** | One referent; you still hear KIND then FIELD (live label, sense-narrowing, multipart name) | `golovexagal` *love in the crush sense*; `zuzuzuxogoven` *Sushi-Coffee* |
-| **Lexical kind** | One conventional kind already closed as a single lexicon entry | `zohohulabedel` *bedroom*; `zunowel` *sunflower* ([lexical compounds](#lexical-compounds)) |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| two words | two slot-fillers, or a relation that already has its own marking: join / adjective | `zodogol zagadal zam` *a dog and a cat*; `zodogol gelulul` *a blue dog* (property = `/ɡ/`) | |
+| **`x` compound** | one referent; you still hear KIND then FIELD (live label, sense-narrowing, multipart name) | `golovexagal` *love in the crush sense*; `zuzuzuxogoven` *Sushi-Coffee* | **x** ≈ plus |
+| lexical kind | one conventional kind already closed as a single lexicon entry | `zohohulabedel` *bedroom*; `zunowel` *sunflower* ([lexical compounds](#lexical-compounds)) | join letter instead of **x** |
 
 **Slot test (first).** How many things fill the slot? That many words. `zazawan zululon` is two people; `zazawaxululon` is one person.
 
@@ -118,24 +116,24 @@ A shop mashup stays **`x`** even when frequent. A fossil kind is a lexicon lemma
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. The point is **`x`** assembly vs two words vs a lexical compound.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Cue** is optional memory, not the answer):
 
-| English | Agalan |
-|---------|--------|
-| *love* | `olove` |
-| *crush* | `aga` |
-| *sushi* | `uzuzu` |
-| *coffee* | `ogove` |
-| *tea* | `adeda` |
-| *house* | `ohohu` |
-| *bed* | `abede` |
-| *person* | `ebere` |
-| *bond* | `onogo` |
-| *dog* | `odogo` |
-| *cat* | `agada` |
-| *sunflower* (lexical compound) | `unowe` |
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *love* | `olove` | |
+| *crush* | `aga` | |
+| *sushi* | `uzuzu` | |
+| *coffee* | `ogove` | |
+| *tea* | `adeda` | |
+| *house* | `ohohu` | |
+| *bed* | `abede` | |
+| *person* | `ebere` | |
+| *bond* | `onogo` | 🪢 *knot*: two ends held together |
+| *dog* | `odogo` | |
+| *cat* | `agada` | |
+| *sunflower* (lexical compound) | `unowe` | |
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
 
 #### English → Agalan
 
@@ -199,11 +197,11 @@ gloss: `z-bedroom`
 
 The join letter records how the **left** root entered the closed kind (usually **-l** literal). The word’s final **-l** / **-m** / **-n** / **-r** is ordinary reference on the **whole** lemma.
 
-| Stem | Parts | Kind |
-|------|--------|------|
-| `ohohulabede` | house **-l** bed | bedroom |
-| `eberelonogo` | person **-l** bond | friend |
-| `abogolahala` | book **-l** school | textbook |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| `ohohulabede` | house **-l** bed | bedroom | |
+| `eberelonogo` | person **-l** bond | friend | |
+| `abogolahala` | book **-l** school | textbook | |
 
 Productive **`x`** is the default when you are still assembling (`golovexagal`, shop mashups, multipart names). Lexical closure is for kinds hearers should treat as **one entry**, like English *bedroom*.
 

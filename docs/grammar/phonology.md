@@ -12,8 +12,8 @@ Read each letter the same way every time. A **syllable** is one beat with one vo
 
 Agalan has four vowel letters. Hold each one as its own beat.
 
-| Letter | IPA | English cue (mnemonic) |
-|--------|-----|------------------------|
+| Agalan | IPA | Cue |
+|--------|-----|-----|
 | **e** | /e̞/ | *bet* |
 | **u** | /ʌ/ | *but* |
 | **o** | /o/ | *boat* (no glide, like Spanish *no*) |
@@ -27,8 +27,8 @@ A consonant starts a syllable. Prefer the **voiced** version (vocal cords buzzin
 
 A voiceless stop cuts the air. You may still use the unvoiced sound as style; voiced and unvoiced are not different letters.
 
-| Letter | IPA | English cue (mnemonic) | Unvoiced variant | Example |
-|--------|-----|------------------------|------------------|---------|
+| Agalan | IPA | Cue | Unvoiced variant | Example |
+|--------|-----|-----|------------------|---------|
 | **h** | /ɦ/ | *ahead* | /h/, *hat* | `hadazam` |
 | **w** | /w/ | *we* | | `howom` |
 | **g** | /ɡ/ | *go* | /k/, *kite* | `godogol` |
@@ -96,26 +96,26 @@ Vowels are named by holding the vowel. Consonants take one CV syllable. Recite i
 
 [Digit syllables](numbers.md#digits) keep mixed vowels for distinctiveness. Letter names that share a starting consonant with a digit use the **series opposite** vowel: **`a`↔`u`**, **`o`↔`e`**.
 
-| Letter | Digit syllable | Letter name | Mnemonic |
-|--------|----------------|-------------|----------|
-| **w** | wo (1) | **we** | **o**↔**e** |
-| **d** | du (2) | **da** | **u**↔**a** |
-| **r** | re (3) | **ro** | **e**↔**o** |
-| **m** | mo (4) | **me** | **o**↔**e** |
-| **v** | va (5) | **vu** | **a**↔**u** |
-| **g** | gu (6) | **ga** | **u**↔**a** |
-| **l** | le (7) | **lo** | **e**↔**o** |
-| **h** | ha (8) | **hu** | **a**↔**u** |
-| **n** | na (9) | **nu** | **a**↔**u** |
-| **z** | zo (0) | **ze** | **o**↔**e** |
+| Agalan | Digit syllable | Use | Cue |
+|--------|----------------|-----|-----|
+| **w** | wo (1) | name **we** | **o** ↔ **e** |
+| **d** | du (2) | name **da** | **u** ↔ **a** |
+| **r** | re (3) | name **ro** | **e** ↔ **o** |
+| **m** | mo (4) | name **me** | **o** ↔ **e** |
+| **v** | va (5) | name **vu** | **a** ↔ **u** |
+| **g** | gu (6) | name **ga** | **u** ↔ **a** |
+| **l** | le (7) | name **lo** | **e** ↔ **o** |
+| **h** | ha (8) | name **hu** | **a** ↔ **u** |
+| **n** | na (9) | name **nu** | **a** ↔ **u** |
+| **z** | zo (0) | name **ze** | **o** ↔ **e** |
 
 Three letters are not digits. Their names follow the English letter-name, mapped onto Agalan vowels:
 
-| Letter | Name | Mnemonic |
-|--------|------|----------|
-| **j** | **ja** | cue *ja* |
-| **b** | **be** | *bee* |
-| **x** | **xe** | *eks* |
+| Agalan | Use | Cue |
+|--------|-----|-----|
+| **j** | name **ja** | ≈ English *jay*, vowel **a** |
+| **b** | name **be** | ≈ English *bee* |
+| **x** | name **xe** | ≈ English *eks* |
 
 Plural **-sh** is the [word-edge](#phonotactics) ending. Pause between names so **`da`** + **`a`** stay two syllables. In a clause, package the glyph as a [mention](spans.md) (`d{z}`: interior spoken ***ze***).
 

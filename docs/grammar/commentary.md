@@ -11,9 +11,7 @@ To say *I think*, you add your take on what is happening (not a report that some
 
 When English would use *I think* over the whole sentence, Agalan keeps the ordinary content verb (*walks*, *sleeps*) and adds a framing `/h/` word. That word is **`odoho`**. Put it in the clause as **floating `/h/`**: it comments on the whole clause, not on a need. Start with **`hodohom`**: you notice the take and hold it lightly.
 
-The walking or sleeping is still the event. Without the `/h/` word you are just reporting the scene. The same root can still be ordinary content (`zodohol` *a thought*; `vodohol` *to think* as a deliberate event).
-
-**Mnemonic:** **`odoho`** is 💭 *thought* → commentary (a thought balloon over the scene).
+The walking or sleeping is still the event. Without the `/h/` word you are just reporting the scene. The same root can still be ordinary content (`zodohol` *a thought*; `vodohol` *to think* as a deliberate event). (cue: 💭 *thought*: a balloon over the scene)
 
 ```
 `zazawan hodohom vawalal.`
@@ -40,11 +38,11 @@ gloss: `j-yes` · `z-beauty@` · `h-COMMENT-soft` · `v-sleep`
 
 On **`odoho`**, **-l / -m / -r** say how committed you are to that *I think*. **-m** is the default: you notice the take and hold it lightly. **-l** treats the take as what the scene is (*it is so because I think*). **-r** names the same take and steps you back toward reporting without commentary. **-n** is ordinary [proper](reference-suffix.md#proper-name--n).
 
-| Ending | Form | Hold | Reading | Mnemonic |
-|--------|------|------|---------|----------|
-| **-m** | **`hodohom`** | **soft** (default) | commentary noticed, held lightly | balloon loosely in hand |
-| **-l** | **`hodohol`** | **fused** | commentary taken as the scene (*it is so because I think*) | balloon fills the sky |
-| **-r** | **`hodohor`** | **return** | same commentary *and* a cue to step back toward bare contact | let the balloon go |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`hodohom`** | comments on the clause, held lightly (default) | *I think* (soft) | 💭 *thought*: balloon loosely in hand |
+| **`hodohol`** | treats the take as what the scene is | *it is so because I think* | 💭 *thought*: balloon fills the sky |
+| **`hodohor`** | names the same take and steps back toward reporting | *I think — and step back* | 💭 *thought*: let the balloon go |
 
 When unsure, prefer **`hodohom`**.
 
@@ -71,18 +69,18 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *beauty* (name **Uhubun**) | `uhubu` |
-| *dog* | `odogo` |
-| *walk* | `awala` |
-| *sleep* | `elebe` |
-| *sing* | `uzunu` |
-| *run* | `urunu` |
-| *see* | `eje` |
-| *commentary* | `odoho` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *beauty* (name **Uhubun**) | `uhubu` | |
+| *dog* | `odogo` | |
+| *walk* | `awala` | |
+| *sleep* | `elebe` | |
+| *sing* | `uzunu` | |
+| *run* | `urunu` | |
+| *see* | `eje` | from *perception*: the sense you see with |
+| *commentary* | `odoho` | 💭 *thought*: a balloon over the scene |
 
 #### English → Agalan
 
@@ -205,15 +203,15 @@ gloss: `z-grace@` · `h-WITNESSED` · `v-walk`
 
 **For *I think*, use:** [COMMENT](#comment) (`odoho`). This inventory is *how you know a world-claim*.
 
-| Mood | Form | Job | Mnemonic |
-|------|------|-----|----------|
-| **WITNESSED** | **`huvuvum`** | firsthand / reconstructive: you (think you) caught it yourself | 🎣 *fishing* → *memory* (may pull a **boot**) |
-| **RECORDED** | **`heregom`** | documented / captured: playback of what was preserved | ⏺️ *record* |
-| **PATTERN** | **`habawam`** | from regularity / similar cases left behind | 🐾 *paw-prints* → *trail* |
-| **INFERRED** | **`hunevem`** | reasoned from clues | 🕵️ *investigate* |
-| **TOLD** | **`heraram`** | someone said so (hearsay) | 👂 *ear* → *listening* |
-| **FELT** | **`heherem`** | gut / body knowing | ❤️ *heart* → *gut-felt* |
-| **STORY** | **`horolom`** | narrative / lore / anecdotal framing | 📜 *scroll* → *tale* |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`huvuvum`** | firsthand / reconstructive channel | *from memory* / *witnessed* | 🎣 *fishing*: you pull something back, maybe a boot |
+| **`heregom`** | documented / captured channel | *on record* / *playback* | ⏺️ *record*: what was saved plays back |
+| **`habawam`** | regularity / similar cases | *from the pattern* | 🐾 *paw-prints*: cases left behind |
+| **`hunevem`** | reasoned from clues | *inferred* | 🕵️ *investigate*: you work the clues |
+| **`heraram`** | someone said so | *so they say* / hearsay | 👂 *ear*: you heard it told |
+| **`heherem`** | gut / body knowing | *felt* | ❤️ *heart*: knowing in the body |
+| **`horolom`** | narrative / lore / anecdotal framing | *per the tale* | 📜 *scroll*: a story you tell |
 
 Pick one evidential **root** for how you know.
 
@@ -246,10 +244,10 @@ Ordinary content stays available: `zuvuvul` *a memory*; `veregol` *to record*; `
 <a id="memory"></a>
 <a id="record-past"></a>
 
-| Framing | Form | Mnemonic |
-|---------|------|----------|
-| Reconstructive / recalled past | **`huvuvum`** | fishing retrieval |
-| Documented / captured past | **`heregom`** | playback archive |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`huvuvum`** | reconstructive / recalled past | *I remember* / *from memory* | 🎣 *fishing*: retrieval from the water |
+| **`heregom`** | documented / captured past | *on record* / *according to…* | ⏺️ *record*: playback archive |
 
 ### Notional (as-if framing)
 <a id="notional"></a>
@@ -257,7 +255,7 @@ Ordinary content stays available: `zuvuvul` *a memory*; `veregol` *to record*; `
 
 Mark a clause as **as-if / mind-only / off the real ledger** (pretensive scene framing) with one closed mood root.
 
-**Shape:** floating `/h/` **`adade`** 🎭 *theater* → *pretense*. Prefer floating `/h/` (optional `/w/` when the mood frames only a preceding `/ɡ/`). Ending = [hold](#notional-hold) (same map as COMMENT).
+**Shape:** floating `/h/` **`adade`**. Prefer floating `/h/` (optional `/w/` when the mood frames only a preceding `/ɡ/`). Ending = [hold](#notional-hold) (same map as COMMENT). (cue: 🎭 *theater*: a stage mask; the real tally stays offstage)
 
 A **stage mask** frames the scene as play; the real tally stays offstage. Ordinary content stays available (`zadadel` *a theater*; `vadadem` *to pretend*).
 
@@ -288,11 +286,11 @@ Use NOTIONAL when the clause is **framed as pretensive, for-the-sake-of-argument
 
 On **`adade`**, **-l / -m / -r** mark **how you hold** the as-if frame (same map as [COMMENT hold](#comment-hold)). **-n** is ordinary [proper](reference-suffix.md#proper-name--n).
 
-| Ending | Form | Hold | Reading | Mnemonic |
-|--------|------|------|---------|----------|
-| **-m** | **`hadadem`** | **soft** (default) | as-if noticed, held lightly | mask at arm's length |
-| **-l** | **`hadadel`** | **fused** | immersed in the imagined scene | mask on |
-| **-r** | **`hadader`** | **return** | same as-if *and* a cue to step back toward bare contact | mask off |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`hadadem`** | as-if noticed, held lightly (default) | *as if* (soft) | 🎭 *theater*: mask at arm’s length |
+| **`hadadel`** | immersed in the imagined scene | *as if* (fused) | 🎭 *theater*: mask on |
+| **`hadader`** | same as-if and a step back toward bare contact | *as if — and step back* | 🎭 *theater*: mask off |
 
 When unsure, prefer **`hadadem`**.
 
@@ -306,14 +304,14 @@ gloss: `z-courage@` · `h-NOTIONAL-return` · `v-write`
 
 ### COMMENT, universality, and as-if
 
-| English bundle | Prefer |
-|----------------|--------|
+| English | Agalan |
+|---------|--------|
 | *think / assume / suppose / imagine …* (attitude) | **COMMENT** (`hodohom`) |
 | *wonder …* | **COMMENT** plus a soft question (**jom**) |
 | *as if / pretend that / imagine that:* (scene framing) | **NOTIONAL** (`hadadem`) |
 | *believe …* / how you know a world-claim | evidentiality (`huvuvum`, `heraram`, …) |
 
-| Agalan | Reading |
+| Agalan | English |
 |---------|---------|
 | `zazawan wolozoxur hogegal hanedel` | *Azawan is anxious* (unmet competence; flood; room awash) |
 | `zazawan hadadem vodobol.` | *as if Azawan takes the trophy* — soft notional frame |
@@ -328,26 +326,26 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *beauty* (name **Uhubun**) | `uhubu` |
-| *dog* | `odogo` |
-| *walk* | `awala` |
-| *sleep* | `elebe` |
-| *sing* | `uzunu` |
-| *run* | `urunu` |
-| *write* | `uwuru` |
-| *commentary* | `odoho` |
-| **WITNESSED** | `uvuvu` |
-| **RECORDED** | `erego` |
-| evidential *pattern* | `abawa` |
-| **INFERRED** | `uneve` |
-| **TOLD** | `erara` |
-| **FELT** | `ehere` |
-| **STORY** | `orolo` |
-| **NOTIONAL** | `adade` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *beauty* (name **Uhubun**) | `uhubu` | |
+| *dog* | `odogo` | |
+| *walk* | `awala` | |
+| *sleep* | `elebe` | |
+| *sing* | `uzunu` | |
+| *run* | `urunu` | |
+| *write* | `uwuru` | |
+| *commentary* | `odoho` | 💭 *thought*: a balloon over the scene |
+| *witnessed* / *from memory* | `uvuvu` | 🎣 *fishing*: you pull something back |
+| *on record* | `erego` | ⏺️ *record*: playback of what was saved |
+| *from the pattern* | `abawa` | 🐾 *paw-prints*: cases left behind |
+| *inferred* | `uneve` | 🕵️ *investigate*: you work the clues |
+| *so they say* | `erara` | 👂 *ear*: you heard it told |
+| *felt* | `ehere` | ❤️ *heart*: knowing in the body |
+| *per the tale* | `orolo` | 📜 *scroll*: a story you tell |
+| *as if* (**NOTIONAL**) | `adade` | 🎭 *theater*: a stage mask |
 
 #### English → Agalan
 

@@ -30,7 +30,7 @@ gloss: `z-dog-sh` · `including.open` · `z-cat`
 
 ### Rather, instead, except
 
-The same `A REV B` shape also covers *or rather*, *instead*, and *except*. Keep both sides in the same clause role, and change the [vowel](vowel-series.md) to pick the repair. You keep A's slot and change how B relates to it. Recall hooks: **`e`** order (soft-correct), **`o`** one (swap), **`u`** undo (subtract).
+The same `A REV B` shape also covers *or rather*, *instead*, and *except*. Keep both sides in the same clause role, and change the [vowel](vowel-series.md) to pick the repair. You keep A's slot and change how B relates to it. (cue: **e** ≈ order, **o** ≈ one, **u** ≈ undo.)
 
 ```
 `zazawan guzumum el gelem.`
@@ -56,21 +56,21 @@ gloss: `z-team` · `except` · `z-grace@`
 *The team except Azawan.*
 ```
 
-| Vowel | Mnemonic | In-clause `A REV B` |
-|-------|----------|---------------------|
-| **a** | add | *including*: A, including B |
-| **e** | order | *rather*: A, or rather B |
-| **o** | one (swap) | *instead*: B in place of A |
-| **u** | undo | *except*: A except B |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **a** | add a member in the same slot | *including*: A, including B | **a** ≈ add |
+| **e** | offer a better wording | *rather*: A, or rather B | **e** ≈ order |
+| **o** | swap the item | *instead*: B in place of A | **o** ≈ one |
+| **u** | subtract an exception | *except*: A except B | **u** ≈ undo |
 
 ### Closed and open endings
 
 For every reviser you also choose how complete the right-hand side is. **-l** means B is the whole story you stand behind; **-m** means B is one of several you could still name. When you are unsure, prefer **-m**.
 
-| Ending | Forms | Job | Mnemonic |
-|--------|-------|-----|----------|
-| **-l** | `al` / `el` / `ol` / `ul` | B is the only one you stand behind | locked |
-| **-m** | `am` / `em` / `om` / `um` | B among others | maybe more |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **-l** (`al` / `el` / `ol` / `ul`) | B is the only one you stand behind | closed | **l** ≈ locked |
+| **-m** (`am` / `em` / `om` / `um`) | B among others | open | **m** ≈ maybe more |
 
 ```
 `zodogolsh al zagadal.`
@@ -83,14 +83,14 @@ gloss: `z-dog-sh` · `including` · `z-cat`
 ### Glue this sentence to prior talk
 <a id="discourse-revisers"></a>
 
-Sometimes the thing you want to tweak is not a phrase inside this sentence, but **how this sentence attaches** to what you already said (the *glue*, or sentence-to-sentence connective). Put the same spellings at the **front** of this sentence: prior talk plays A's role, and this whole sentence is B. You get *Additionally*, *In other words*, *Instead*, or *Except* without a list join and without a continue-linker. Vowels keep the same add / order / one / undo hooks as in the table.
+Sometimes the thing you want to tweak is not a phrase inside this sentence, but **how this sentence attaches** to what you already said (the *glue*, or sentence-to-sentence connective). Put the same spellings at the **front** of this sentence: prior talk plays A's role, and this whole sentence is B. You get *Additionally*, *In other words*, *Instead*, or *Except* without a list join and without a continue-linker. (cue: same **a** / **o** / **e** / **u** map as in-clause.)
 
-| Form | Reading | Mnemonic |
-|------|---------|----------|
-| `al …` | *Additionally, …* | **a** add a further point |
-| `el …` | *In other words, …* | **e** order: rephrase prior |
-| `ol …` | *Instead, …* | **o** one: this claim replaces prior |
-| `ul …` | *Except, …* | **u** undo: exception to the prior frame |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| `al …` | further committed point | *Additionally, …* | **a** ≈ add |
+| `el …` | rephrase prior | *In other words, …* | **e** ≈ order |
+| `ol …` | this claim replaces prior | *Instead, …* | **o** ≈ one |
+| `ul …` | exception to the prior frame | *Except, …* | **u** ≈ undo |
 
 ```
 `al zazawan vawalal.`
@@ -125,20 +125,20 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *beauty* (name **Uhubun**) | `uhubu` |
-| *dog* | `odogo` |
-| *cat* | `agada` |
-| *tea* | `adeda` |
-| *coffee* | `ogove` |
-| *team* | `ahada` |
-| smile → *happy* (**-m**) | `uzumu` |
-| elephant → *size* / *big* (**-m**) | `ele` |
-| *walk* | `awala` |
-| *sleep* | `elebe` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *beauty* (name **Uhubun**) | `uhubu` | |
+| *dog* | `odogo` | |
+| *cat* | `agada` | |
+| *tea* | `adeda` | |
+| *coffee* | `ogove` | |
+| *team* | `ahada` | |
+| *happy* (**-m**) | `uzumu` | from *smile*: the face of *happy* |
+| *big* (**-m**) | `ele` | from *elephant*: the huge animal |
+| *walk* | `awala` | |
+| *sleep* | `elebe` | |
 
 #### English → Agalan
 
@@ -251,19 +251,19 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 | | **-l** | **-m** | **-n** |
 |--|--------|--------|--------|
-| **a** (*including*; add) | `al`: including only B | `am`: including B among others | `an`: including B in a named/conventional A |
-| **e** (*rather*; order) | `el`: B is the precise reading | `em`: B is a better wording | `en`: conventional / formulaic rephrase |
-| **o** (*instead*; one) | `ol`: B fully replaces A | `om`: B is a replacement (not sworn unique) | `on`: stock / conventional swap |
-| **u** (*except*; undo) | `ul`: except only B | `um`: except B (and maybe more) | `un`: except B from a named/conventional A |
+| **a** (*including*) | `al`: including only B | `am`: including B among others | `an`: including B in a named/conventional A |
+| **e** (*rather*) | `el`: B is the precise reading | `em`: B is a better wording | `en`: conventional / formulaic rephrase |
+| **o** (*instead*) | `ol`: B fully replaces A | `om`: B is a replacement (not sworn unique) | `on`: stock / conventional swap |
+| **u** (*except*) | `ul`: except only B | `um`: except B (and maybe more) | `un`: except B from a named/conventional A |
 
 #### Discourse
 
 | | **-l** | **-m** | **-n** |
 |--|--------|--------|--------|
-| **a** (*additionally*; add) | `al`: committed further point | `am`: soft / among further points | `an`: stock / titled *Additionally* |
-| **e** (*in other words*; order) | `el`: precise rephrase of prior | `em`: softer rewording | `en`: stock paraphrase segue |
-| **o** (*instead*; one) | `ol`: this claim fully replaces prior | `om`: a replacement claim | `on`: stock *Instead,* |
-| **u** (*except*; undo) | `ul`: sole exception to prior frame | `um`: exception (maybe among others) | `un`: named / conventional exception frame |
+| **a** (*additionally*) | `al`: committed further point | `am`: soft / among further points | `an`: stock / titled *Additionally* |
+| **e** (*in other words*) | `el`: precise rephrase of prior | `em`: softer rewording | `en`: stock paraphrase segue |
+| **o** (*instead*) | `ol`: this claim fully replaces prior | `om`: a replacement claim | `on`: stock *Instead,* |
+| **u** (*except*) | `ul`: sole exception to prior frame | `um`: exception (maybe among others) | `un`: named / conventional exception frame |
 
 Prefix-less **`ul`** excepts a right-hand side. Prefixed **`zul`** is a [join](coordination.md#join-series-ending-shared) (*not X* / bare *no*):
 
@@ -292,7 +292,7 @@ A REV₁ B REV₂ C ( REVᵢ SIDE )*
 
 Every `REVᵢ` applies **in parallel to the same A**, each with its own right-hand side. Vowels and endings may **mix**. English *including (B except C)* nests inside one side.
 
-| Chain | Reading |
+| Chain | English |
 |-------|---------|
 | `A am B am C` | A including B and including C (both open) |
 | `A al B al C` | A including only B and only C |
@@ -333,8 +333,8 @@ gloss: `v-run` · `instead.open` · `v-walk`
 
 Same spellings, same vowel meanings, four places:
 
-| Placement | Shape | Speech act |
-|-----------|-------|------------|
+| Placement | Agalan | Use |
+|-----------|--------|-----|
 | Before a written turn marker | `(vocative)* (interjection)* REV act-word BODY` | The written **`jal`** / **`jol`** / … |
 | Before a default-statement body | `REV BODY` | Implied **`jal`** / **`jam`** ([core.md](core.md#speech-act)) |
 | Non-initial clause under `/x/` | `… REV BODY … JOIN` | Same as the opener |
@@ -366,21 +366,21 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *beauty* (name **Uhubun**) | `uhubu` |
-| *dog* | `odogo` |
-| *cat* | `agada` |
-| *tea* | `adeda` |
-| *coffee* | `ogove` |
-| *team* | `ahada` |
-| smile → *happy* (**-m**) | `uzumu` |
-| relief → *calm* (**-m**) | `erelu` |
-| *walk* | `awala` |
-| *run* | `urunu` |
-| east → *progress* / *therefore* | `ezaza` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *beauty* (name **Uhubun**) | `uhubu` | |
+| *dog* | `odogo` | |
+| *cat* | `agada` | |
+| *tea* | `adeda` | |
+| *coffee* | `ogove` | |
+| *team* | `ahada` | |
+| *happy* (**-m**) | `uzumu` | from *smile*: the face of *happy* |
+| *calm* (**-m**) | `erelu` | from *relief*: the ease after tension |
+| *walk* | `awala` | |
+| *run* | `urunu` | |
+| *therefore* | `ezaza` | ➡️ *east*: the sun’s path, so the talk moves on |
 
 #### English → Agalan
 

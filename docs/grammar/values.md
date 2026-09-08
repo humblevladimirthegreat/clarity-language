@@ -27,16 +27,16 @@ gloss: `h-pleasure`
 ### Need inventory
 <a id="need-inventory"></a>
 
-Six published roots cover the needs you can name. Pick one row; under `/h/` as a topic, that root means the need in the Sense column.
+Six published roots cover the needs you can name. Pick one row; under `/h/` as a topic, that root means the need in the English column.
 
-| Sense | Root | Mnemonic | English range |
-|-------|------|----------|---------------|
-| autonomy | **`alodo`** | 🗳️ *ballot-box* → *choice* | choice, agency, self-direction |
-| competence | **`olozo`** | 🧰 *toolbox* → *readiness* | efficacy, skill, getting things to work |
-| relatedness | **`onogo`** | 🪢 *knot* → *bond* | connection, belonging, care |
-| pleasure | **`awero`** | 🍓 *strawberry* → *sweetness* | enjoyment, comfort, aesthetic payoff |
-| survival | **`uhuhe`** | 🛡️ *shield* → *defense* | safety, health, material sufficiency |
-| unspecified | **`ege`** | 🥚 *egg* → *potential* | a need, without picking among the five |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`alodo`** | names the autonomy need | *autonomy* (choice, agency, self-direction) | 🗳️ *ballot-box*: voting is choosing for yourself |
+| **`olozo`** | names the competence need | *competence* (efficacy, skill, getting things to work) | 🧰 *toolbox*: the kit that gets things working |
+| **`onogo`** | names the relatedness need | *relatedness* (connection, belonging, care) | 🪢 *knot*: ties people together |
+| **`awero`** | names the pleasure need | *pleasure* (enjoyment, comfort, aesthetic payoff) | 🍓 *strawberry*: sweetness you enjoy |
+| **`uhuhe`** | names the survival need | *survival* (safety, health, material sufficiency) | 🛡️ *shield*: what keeps you safe |
+| **`ege`** | names a need without picking among the five | *unspecified need* | 🥚 *egg*: not yet a specific kind |
 
 ```
 `hegel.`
@@ -67,11 +67,11 @@ gloss: `z-gift` · `w-relatedness-met-physical`
 
 On a *serves* word, **-l / -m / -r** are the **contact channel**: body and the scene you can sense, thinking or memory, or a big-picture step-back. Those are kinds of contact, not a ranking. Relatedness *between people* is still the need **`onogo`**.
 
-| Form | Channel | Job | Mnemonic |
-|------|---------|-----|----------|
-| `…xal` | **physical** | Sensory / ambient / embodied ease | **-l** locked on the scene you can touch |
-| `…xam` | **mental** | In the head: thinking, memory, gratitude you take in | **-m** open in the head |
-| `…xar` | **spiritual** | Big-picture step-back (wider frame) | **-r** resume to a larger frame |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| `…xal` | contact via body and the scene you can sense | *physical* | **-l** ≈ locked (on the scene you can touch) |
+| `…xam` | contact via thinking, memory, gratitude you take in | *mental* | **-m** ≈ open (in the head) |
+| `…xar` | contact via a big-picture step-back | *spiritual* | **-r** ≈ resume (to a larger frame) |
 
 ```
 `zohohul wolozoxal.`
@@ -96,11 +96,11 @@ When you want to say a need **ought** to be served or protected (English *should
 
 That ending is **prescription force**: how strongly you claim the ought. If you do not know the force, use **-m**. Bound **-l** means the ought is non-negotiable in this conversation or rule-set.
 
-| Form | Force | You are saying | Mnemonic |
-|------|-------|----------------|----------|
-| `…xol` | **bound** | Non-negotiable in this conversation or rule-set | **-l** locked |
-| `…xom` | **endorse** | You stand behind this should (soft default if unknown) | **-m** open backing |
-| `…xor` | **invite** | Worth considering here | **-r** light resume: held out |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| `…xol` | the ought is non-negotiable in this conversation or rule-set | *bound* | **-l** ≈ locked |
+| `…xom` | you stand behind this should (soft default if unknown) | *endorse* | **-m** ≈ open backing |
+| `…xor` | worth considering here | *invite* | **-r** ≈ light resume (held out) |
 
 ```
 `zazawan vezehel honogoxom.`
@@ -125,11 +125,11 @@ When you want to say a named thing **costs** this need (subtracts from it), writ
 
 That ending is **changeability**: how lasting the cost is. If you do not know, use **-m**.
 
-| Form | Job | Mnemonic |
-|------|-----|----------|
-| `…xul` | **irreversible:** fixed as far as you can tell | **-l** hard / locked |
-| `…xum` | **modifiable:** effort or circumstance may change it (soft default if unknown) | **-m** open to change |
-| `…xur` | **temporary:** usually met; not this moment | **-r** light / this moment only |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| `…xul` | the cost is fixed as far as you can tell | *irreversible* | **-l** ≈ locked |
+| `…xum` | effort or circumstance may change the cost (soft default if unknown) | *modifiable* | **-m** ≈ open to change |
+| `…xur` | usually met; not this moment | *temporary* | **-r** ≈ light (this moment only) |
 
 ```
 `zazegel walodoxur.`
@@ -155,12 +155,12 @@ A values word is role letter `/h/` or `/w/`, then a need root, then an ending. `
 
 Topic (no **`x`**) keeps ordinary [reference-suffix](reference-suffix.md) endings. To take a stance, put mid-word **`x`** and a vowel before the ending; then **-l / -m / -r** follow that stance’s table. **-n** is ordinary [proper](reference-suffix.md#proper-name--n).
 
-| Form | Stance | Job | Mnemonic |
-|------|--------|-----|----------|
-| bare (no `x`) | **Topic** | Need named only | no vowel: name it |
-| **`xa`** | **Met / serves** | The thing pays off this need | **`a`** add: the payoff is in |
-| **`xo`** | **Prescription (ought)** | Ought to act so this need is served or protected | **`o`** one: one ought |
-| **`xu`** | **Unmet / costs** | The thing subtracts from this need | **`u`** undo: the need is taken down |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| bare (no `x`) | names the need only | *topic* | no vowel: just the name |
+| **`xa`** | the named thing pays off this need | *serves* / *met* | **a** ≈ add (the payoff is in) |
+| **`xo`** | ought to act so this need is served or protected | *should* | **o** ≈ one (one ought) |
+| **`xu`** | the named thing subtracts from this need | *costs* / *unmet* | **u** ≈ undo (the need is taken down) |
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -169,25 +169,25 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *beauty* (name **Uhubun**) | `uhubu` |
-| *dog* | `odogo` |
-| *book* | `abogo` |
-| *house* | `ohohu` |
-| *walk* | `awala` |
-| *tell* | `ezehe` |
-| *sing* | `uzunu` |
-| *gift* | `awara` |
-| *gathering* | `azege` |
-| *autonomy* | `alodo` |
-| *competence* | `olozo` |
-| *relatedness* | `onogo` |
-| *pleasure* | `awero` |
-| *survival* | `uhuhe` |
-| *unspecified need* | `ege` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *beauty* (name **Uhubun**) | `uhubu` | |
+| *dog* | `odogo` | |
+| *book* | `abogo` | |
+| *house* | `ohohu` | |
+| *walk* | `awala` | |
+| *tell* | `ezehe` | |
+| *sing* | `uzunu` | |
+| *gift* | `awara` | |
+| *gathering* | `azege` | |
+| *autonomy* | `alodo` | 🗳️ *ballot-box*: voting is choosing for yourself |
+| *competence* | `olozo` | 🧰 *toolbox*: the kit that gets things working |
+| *relatedness* | `onogo` | 🪢 *knot*: ties people together |
+| *pleasure* | `awero` | 🍓 *strawberry*: sweetness you enjoy |
+| *survival* | `uhuhe` | 🛡️ *shield*: what keeps you safe |
+| *unspecified need* | `ege` | 🥚 *egg*: not yet a specific kind |
 
 #### English → Agalan
 
@@ -299,11 +299,11 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **`xe`** is *doing for this need*; **`xo`** is *should serve or protect this need*.
 
-| Form | Standing | Contact | Mnemonic |
-|------|----------|-------|----------|
-| `…xel` | **circumstantial** | The situation pulls this motive | **-l** locked to the scene; **`e`** order: this ranking of reasons |
-| `…xem` | **internal** | The agent’s own reason (also soft default if unknown) | **-m** open / from inside |
-| `…xer` | **protective** | Motive as *protecting against* unmet (away-from) | **-r** resume away from a cost |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| `…xel` | the situation pulls this motive | *circumstantial* | **-l** ≈ locked to the scene; **e** ≈ order (this ranking of reasons) |
+| `…xem` | the agent’s own reason (soft default if unknown) | *internal* | **-m** ≈ open / from inside |
+| `…xer` | motive as protecting against unmet (away-from) | *protective* | **-r** ≈ resume away from a cost |
 
 **-l** and **-m** are approach-framed; **-r** is guard-framed.
 
@@ -317,23 +317,23 @@ gloss: `z-grace@` · `v-tell` · `h-relatedness-motive-internal`
 
 ### Which ending table?
 
-| Stance | Ending table | Mnemonic (vowel) |
-|--------|----------------|------------------|
-| **`xa`** met | [contact channel](#value-contact) | **`a`** add |
-| **`xe`** motive | [preference standing](#value-preference) | **`e`** order |
-| **`xo`** ought | [prescription force](#value-force) | **`o`** one |
-| **`xu`** unmet | [changeability](#value-changeability) | **`u`** undo |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`xa`** | [contact channel](#value-contact) endings | *serves* / *met* | **a** ≈ add |
+| **`xe`** | [preference standing](#value-preference) endings | *doing for this need* | **e** ≈ order |
+| **`xo`** | [prescription force](#value-force) endings | *should* | **o** ≈ one |
+| **`xu`** | [changeability](#value-changeability) endings | *costs* / *unmet* | **u** ≈ undo |
 
 ### Attachment sites
 
-| Site | Typical shape | English cue |
-|------|---------------|-------------|
-| Possessive / gratitude | host + `/ɡ/` possessive + `w…xa…` + channel | *Azawan’s house (for competence)*: `wolozoxa…` |
-| Praise | neutral host + `w-` / `h-` **`xa`** + channel | *gift (serves relatedness)*: `wonogoxa…` |
-| Criticism | neutral host + **`xu`** + changeability | *gathering (costs autonomy)*: `walodoxu…` |
-| Prescription | clause + `h…xo…` + force | *should (for relatedness)*: `honogoxo…` |
-| Motive | clause + `h…xe…` + standing | *Azawan … (for relatedness)*: `honogoxe…` |
-| Topic-only | bare `h…` / `w…` need | `hawerol` |
+| Agalan | Use | English |
+|--------|-----|---------|
+| `w…xa…` after a possessive `/ɡ/` | gratitude / possession framed as serving | *Azawan’s house (for competence)* (`wolozoxa…`) |
+| `w-` / `h-` **`xa`** on a neutral host | praise: the host serves the need | *gift (serves relatedness)* (`wonogoxa…`) |
+| **`xu`** on a neutral host | criticism: the host costs the need | *gathering (costs autonomy)* (`walodoxu…`) |
+| `h…xo…` on the clause | prescription | *should (for relatedness)* (`honogoxo…`) |
+| `h…xe…` on the clause | motive | *Azawan … (for relatedness)* (`honogoxe…`) |
+| bare `h…` / `w…` need | topic only | `hawerol` |
 
 Prefer **-m** on **`xu` / `xe` / `xo`** when that table’s dimension is unclear. Several values are several `/h/` or `/w/` words (`holozoxal honogoxal`), not stacked `x`-additions on one need.
 
@@ -356,27 +356,27 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *beauty* (name **Uhubun**) | `uhubu` |
-| *book* | `abogo` |
-| *house* | `ohohu` |
-| *walk* | `awala` |
-| *tell* | `ezehe` |
-| *sing* | `uzunu` |
-| *write* | `uwuru` |
-| *sit* | `aju` |
-| *gift* | `awara` |
-| *gathering* | `azege` |
-| *autonomy* | `alodo` |
-| *competence* | `olozo` |
-| *relatedness* | `onogo` |
-| *pleasure* | `awero` |
-| *survival* | `uhuhe` |
-| *always* | `hual` |
-| *dog* | `odogo` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *beauty* (name **Uhubun**) | `uhubu` | |
+| *book* | `abogo` | |
+| *house* | `ohohu` | |
+| *walk* | `awala` | |
+| *tell* | `ezehe` | |
+| *sing* | `uzunu` | |
+| *write* | `uwuru` | |
+| *sit* | `aju` | |
+| *gift* | `awara` | |
+| *gathering* | `azege` | |
+| *autonomy* | `alodo` | 🗳️ *ballot-box*: voting is choosing for yourself |
+| *competence* | `olozo` | 🧰 *toolbox*: the kit that gets things working |
+| *relatedness* | `onogo` | 🪢 *knot*: ties people together |
+| *pleasure* | `awero` | 🍓 *strawberry*: sweetness you enjoy |
+| *survival* | `uhuhe` | 🛡️ *shield*: what keeps you safe |
+| *always* | `hual` | |
+| *dog* | `odogo` | |
 
 #### English → Agalan
 

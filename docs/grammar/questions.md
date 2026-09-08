@@ -14,9 +14,7 @@ A **question** is a sentence that wants a reply rather than asserting a fact. Ma
 
 Soft **`jom`** is the same question setting, said more gently (wondering rather than pressing).
 
-When every person and action in the clause is already named, the expected reply is *yes* or *no*.
-
-Mnemonic: **o** is the menu; you want an answer picked.
+When every person and action in the clause is already named, the expected reply is *yes* or *no*. (cue: **o** ≈ one: a menu you pick from.)
 
 ```
 `jol zazawan vawalal.`
@@ -49,7 +47,7 @@ gloss: `j-question` · `z-none` · `v-walk`
 
 Sometimes you do not want *yes* or *no*. You want the other person to **name** someone or something: *who?*, *what?*, *do what?*, *what happened?* That kind of question is a **fill-ask**.
 
-Keep **`jol`** or **`jom`** at the start. In the slot you want filled, use a join word that ends in **-r** (`zar`, `var`, `xar`, …). That **-r** is the blank ([unspecified-member **-r**](coordination.md#unspecified-member-r-phrase)).
+Keep **`jol`** or **`jom`** at the start. In the slot you want filled, use a join word that ends in **-r** (`zar`, `var`, `xar`, …). That **-r** is the blank ([unspecified-member **-r**](coordination.md#unspecified-member-r-phrase)). (cue: **-r** names this member; **a** ≈ add for *who/what*, **u** ≈ undo for *who/what else*.)
 
 ```
 `jol zar vawalal.`
@@ -59,12 +57,10 @@ gloss: `j-question` · `z-who` · `v-walk`
 *Who walks?*
 ```
 
-Mnemonic: **-r** on that join word means “name this member.” Vowel **a** (*add*) asks *who/what*; vowel **u** (*undo*) asks *who/what else*.
-
-| Vowel | Ask | Examples | Mnemonic |
-|-------|-----|----------|----------|
-| **a** | *Who/what?* / *What happened?* | `zar` · `var` · `xar` | **a** add: name a member |
-| **u** | *Who else?* / *What else?* | `zur` · `vur` · `xur` | **u** undo: name what remains |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **a** (`zar` · `var` · `xar`) | fill the add-inventory | *Who/what?* / *What happened?* | **a** ≈ add |
+| **u** (`zur` · `vur` · `xur`) | fill what remains | *Who else?* / *What else?* | **u** ≈ undo |
 
 ```
 `jol zur velebel.`
@@ -115,11 +111,11 @@ Write **`j`**, then two vowels, then **-l** (firm) or **-m** (softer).
 
 When a sentence body follows *yes*, write **`jael`** then the body. You do not also write the statement word **`jal`**.
 
-| Form | Job | Mnemonic |
-|------|-----|----------|
-| **`jael`** / soft **`jaem`** | *yes* / *true* | **ae** = match |
-| **`juel`** / soft **`juem`** | *no* / *false* | **ue** = flip |
-| **`jaol`** / soft **`jaom`** | *sure* / *I’ll take that* | **ao** = option |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`jael`** / soft **`jaem`** | match / receipt of a claim | *yes* / *true* | **a** ≈ add + **e** ≈ order (the claim lines up) |
+| **`juel`** / soft **`juem`** | mismatch | *no* / *false* | **u** ≈ undo + **e** ≈ order (the claim does not line up) |
+| **`jaol`** / soft **`jaom`** | take up an offered option | *sure* / *I’ll take that* | **a** ≈ add + **o** ≈ one |
 
 ```
 `jael.`
@@ -148,19 +144,19 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *beauty* (name **Uhubun**) | `uhubu` |
-| *dog* | `odogo` |
-| *cat* | `agada` |
-| *walk* | `awala` |
-| *sleep* | `elebe` |
-| *sing* | `uzunu` |
-| *see* | `eje` |
-| *write* | `uwuru` |
-| *run* | `urunu` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *beauty* (name **Uhubun**) | `uhubu` | |
+| *dog* | `odogo` | |
+| *cat* | `agada` | |
+| *walk* | `awala` | |
+| *sleep* | `elebe` | |
+| *sing* | `uzunu` | |
+| *see* | `eje` | from *perception*: the sense you see with |
+| *write* | `uwuru` | |
+| *run* | `urunu` | |
 
 #### English → Agalan
 
@@ -269,13 +265,13 @@ Recall the [vowel series](vowel-series.md): **`a`** *add* / **`o`** *one* / **`e
 
 ### Polar stance: fuller inventory
 
-| Stack | Job | Mnemonic |
-|-------|-----|----------|
-| **`ae`** (`jael` / `jaem`) | match / receipt / *true* | **a** accept + **e** judged in order → *true* |
-| **`ao`** (`jaol` / `jaom`) | option uptake / *sure* | **a** accept + **o** take the offered one |
-| **`ue`** (`juel` / `juem`) | flip / mismatch / *false* | **u** undo + **e** judged out of order → *false* |
-| **`uo`** (`juol` / `juom`) | reject-this option (*not that*) | **u** undo + **o** put that one back |
-| **`ua`** (`jual` / `juam`) | reject whole frame (*Hell No!*) | **u** undo all the way down |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`ae`** (`jael` / `jaem`) | match / receipt | *true* | **a** ≈ add + **e** ≈ order (judged in line) |
+| **`ao`** (`jaol` / `jaom`) | option uptake | *sure* | **a** ≈ add + **o** ≈ one |
+| **`ue`** (`juel` / `juem`) | flip / mismatch | *false* | **u** ≈ undo + **e** ≈ order (judged out of line) |
+| **`uo`** (`juol` / `juom`) | reject this option | *not that* | **u** ≈ undo + **o** ≈ one |
+| **`ua`** (`jual` / `juam`) | reject the whole frame | *Hell No!* | **u** ≈ undo all the way down |
 
 The **-l** ending holds the stance exactly; **-m** is the soft twin of each row:
 
@@ -300,10 +296,10 @@ Ordinary answers use **`juel`** / **`juol`**. Use **`jual`** / **`juam`** for a 
 
 **`jael`** / **`juel`** answer whether the **claim under question** matches reality, including when that claim is already negated. After a negative ask, **`jael`** confirms the denial; **`juel`** rejects it (the positive holds).
 
-| Ask | Answer | Means |
-|-----|--------|-------|
-| `jol … vul vurunul` (*Didn’t run?*) | **`jael`** | *true, they didn’t* |
-| same | **`juel`** | *false: they did run* |
+| Agalan | English |
+|--------|---------|
+| `jol … vul vurunul` (*Didn’t run?*) + **`jael`** | *true, they didn’t* |
+| same + **`juel`** | *false: they did run* |
 
 When clarity matters, restate: `jael vul vurunul` vs `juel vurunul`. Offer particles (**`jaol`** / **`juol`**, …) answer *take this?*
 
@@ -324,8 +320,8 @@ Unbound *who* / *what* / *where* = bare phrase **-r** in the queried slot. Unbou
 
 Under `/h/` / `/w/`, **occasion** readings are these forms ([restrictors](restrictors.md#more-occasions)):
 
-| Form | Statement (bare) | Under question (bare) |
-|------|---------------------|--------------------------|
+| Agalan | English (statement, bare) | English (under question, bare) |
+|--------|---------------------------|--------------------------------|
 | **`har`** / **`war`** | *sometime* | *When?* / *In what case?* |
 | **`hor`** / **`wor`** | *anytime* | *Anytime?* |
 | **`hur`** / **`wur`** | *sometime else* | *When else?* |
@@ -357,15 +353,15 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *beauty* (name **Uhubun**) | `uhubu` |
-| *dog* | `odogo` |
-| *walk* | `awala` |
-| *run* | `urunu` |
-| *sleep* | `elebe` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *beauty* (name **Uhubun**) | `uhubu` | |
+| *dog* | `odogo` | |
+| *walk* | `awala` | |
+| *run* | `urunu` | |
+| *sleep* | `elebe` | |
 
 #### English → Agalan
 
@@ -481,75 +477,75 @@ Join-word **-n** here is stock/usual (not [proper-name **-n**](reference-suffix.
 
 #### Rank: single-item (under question)
 
-| Form | Under question | Mnemonic |
-|------|----------------|----------|
-| **…em** | *Is X the top priority?* / *Prefer X?* (offer) | **e** order + soft **m**: offering the top slot |
-| **…el** | *Is X the only priority?* | **e** order + exact **l**: exactly top |
-| **…oem** | *Try X first?* (offer) | **o** one + **e** order + soft: start with this one? |
-| **…oel** | *Only try X?* | **o** one + **e** order + exact: only this first step |
-| **…uem** | *X last?* (offer) | **u** undo the order + soft: put it last? |
-| **…uel** | *X last only?* | **u** undo the order + exact: last and nothing else |
-| **…en** | *X first, as usual?* | **e** order + stock **n**: usual first place |
-| **…er** | *Which X is first?* (fill-ask) | **e** order + fill **r**: name the rank |
+| Agalan | English | Cue |
+|--------|---------|-----|
+| **…em** | *Is X the top priority?* / *Prefer X?* (offer) | **e** ≈ order + soft **m**: offering the top slot |
+| **…el** | *Is X the only priority?* | **e** ≈ order + exact **l**: exactly top |
+| **…oem** | *Try X first?* (offer) | **o** ≈ one + **e** ≈ order + soft: start with this one? |
+| **…oel** | *Only try X?* | **o** ≈ one + **e** ≈ order + exact: only this first step |
+| **…uem** | *X last?* (offer) | **u** ≈ undo the order + soft: put it last? |
+| **…uel** | *X last only?* | **u** ≈ undo the order + exact: last and nothing else |
+| **…en** | *X first, as usual?* | **e** ≈ order + stock **n**: usual first place |
+| **…er** | *Which X is first?* (fill-ask) | **e** ≈ order + fill **r**: name the rank |
 
 #### Rank: standalone (under question)
 
-| Form | Under question | Mnemonic |
-|------|----------------|----------|
-| **…el** | *No favorite?* | **e** order + exact: is the top slot empty? |
-| **…em** | *Easy-going?* / *Whichever?* | **e** order + soft: no pick from the top? |
-| **…ael** | *Tie?* | **a** add equally + exact: added at the same rank |
-| **…aem** | *Probably a tie?* | **a** add equally + soft |
-| **…aen** | *Draw?* (stock) | **a** add equally + stock **n**: the usual draw |
-| **…oem** | *Not sure where to start?* | **o** one + soft: no single starting pick yet |
-| **…oel** | *Do nothing?* / *Skip it?* | **o** one + exact: zero steps chosen |
-| **…uem** | *Don't mind?* / *No objection?* | **u** undo ascending + soft: no veto? |
-| **…uel** | *No least-favorite?* / *No one last?* | **u** undo ascending + exact: is the bottom slot empty? |
-| **…en** | *No favorite?* (stock) | **e** order + stock **n**: usual empty top |
-| **…er** | *What’s the priority?* (fill-ask) | **e** order + fill **r**: name the priority |
+| Agalan | English | Cue |
+|--------|---------|-----|
+| **…el** | *No favorite?* | **e** ≈ order + exact: is the top slot empty? |
+| **…em** | *Easy-going?* / *Whichever?* | **e** ≈ order + soft: no pick from the top? |
+| **…ael** | *Tie?* | **a** ≈ add equally + exact: added at the same rank |
+| **…aem** | *Probably a tie?* | **a** ≈ add equally + soft |
+| **…aen** | *Draw?* (stock) | **a** ≈ add equally + stock **n**: the usual draw |
+| **…oem** | *Not sure where to start?* | **o** ≈ one + soft: no single starting pick yet |
+| **…oel** | *Do nothing?* / *Skip it?* | **o** ≈ one + exact: zero steps chosen |
+| **…uem** | *Don't mind?* / *No objection?* | **u** ≈ undo ascending + soft: no veto? |
+| **…uel** | *No least-favorite?* / *No one last?* | **u** ≈ undo ascending + exact: is the bottom slot empty? |
+| **…en** | *No favorite?* (stock) | **e** ≈ order + stock **n**: usual empty top |
+| **…er** | *What’s the priority?* (fill-ask) | **e** ≈ order + fill **r**: name the priority |
 
 #### Set: single-item (under question)
 
-| Form | Under question | Mnemonic |
-|------|----------------|----------|
-| **…al** | *Just X?* / *Only X?* | **a** add exactly one item, exact **l** |
-| **…am** | *How about X?* / *Want X?* (offer) | **a** add + soft: offering to add X |
-| **…ol** | *Has to be X?* | **o** one + exact: that single one, no other |
-| **…om** | *How about X?* / *X, or skip?* (offer; empty-allowed) | **o** one + soft: this one or none |
-| **…ual** | *Everything but X?* | **u** undo + exact: remove exactly X |
-| **…uam** | *Everything but X (at least)?* (offer) | **u** undo + soft: remove at least X |
-| **…uol** | *Anything but X?* | **u** undo + one: any single replacement except X |
+| Agalan | English | Cue |
+|--------|---------|-----|
+| **…al** | *Just X?* / *Only X?* | **a** ≈ add exactly one item, exact **l** |
+| **…am** | *How about X?* / *Want X?* (offer) | **a** ≈ add + soft: offering to add X |
+| **…ol** | *Has to be X?* | **o** ≈ one + exact: that single one, no other |
+| **…om** | *How about X?* / *X, or skip?* (offer; empty-allowed) | **o** ≈ one + soft: this one or none |
+| **…ual** | *Everything but X?* | **u** ≈ undo + exact: remove exactly X |
+| **…uam** | *Everything but X (at least)?* (offer) | **u** ≈ undo + soft: remove at least X |
+| **…uol** | *Anything but X?* | **u** ≈ undo + one: any single replacement except X |
 | **…uom** | *Anything but X?* (offer) | same, offered softly |
-| **…aol** | *Is X enough?* | **a** add + **o** one + exact: adding X alone suffices |
+| **…aol** | *Is X enough?* | **a** ≈ add + **o** ≈ one + exact: adding X alone suffices |
 | **…aom** | *Would X do?* (offer) | same shape, offered |
-| **…ar** | *What/which (unknown) X?* (fill-ask) | **a** add + fill **r**: name what to add |
-| **…or** | *Any X?* (fill-ask) | **o** one + fill: name any one |
-| **…ul** | *Not X?* | **u** undo + exact |
-| **…um** | *Not X (at least)?* (offer) | **u** undo + soft |
-| **…un** | *Not X, as usual?* | **u** undo + stock **n** |
-| **…ur** | *What else (besides X)?* (fill-ask) | **u** undo + fill: name what remains |
+| **…ar** | *What/which (unknown) X?* (fill-ask) | **a** ≈ add + fill **r**: name what to add |
+| **…or** | *Any X?* (fill-ask) | **o** ≈ one + fill: name any one |
+| **…ul** | *Not X?* | **u** ≈ undo + exact |
+| **…um** | *Not X (at least)?* (offer) | **u** ≈ undo + soft |
+| **…un** | *Not X, as usual?* | **u** ≈ undo + stock **n** |
+| **…ur** | *What else (besides X)?* (fill-ask) | **u** ≈ undo + fill: name what remains |
 
 #### Set: standalone (under question)
 
-| Form | Under question | Mnemonic |
-|------|----------------|----------|
-| **…al** | *Nothing?* / *Nobody?* | **a** set + exact: nothing added |
-| **…am** | *Got nothing?* | **a** set + soft |
-| **…an** | *Null?* / *Void?* | **a** set + stock **n**: the standing null |
-| **…ol** | *No options?* | **o** one + exact: not even one |
-| **…om** | *No pick?* / *Skip OK?* | **o** one + soft: skipping allowed |
-| **…ual** | *Everything?* / *Everyone?* | **u** undo exclusions + exact: nothing left out |
-| **…uam** | *Everything you can think of?* | **u** undo exclusions + soft |
-| **…uol** | *Anything?* | **u** undo + one: even one counts |
+| Agalan | English | Cue |
+|--------|---------|-----|
+| **…al** | *Nothing?* / *Nobody?* | **a** ≈ add + exact: nothing added |
+| **…am** | *Got nothing?* | **a** ≈ add + soft |
+| **…an** | *Null?* / *Void?* | **a** ≈ add + stock **n**: the standing null |
+| **…ol** | *No options?* | **o** ≈ one + exact: not even one |
+| **…om** | *No pick?* / *Skip OK?* | **o** ≈ one + soft: skipping allowed |
+| **…ual** | *Everything?* / *Everyone?* | **u** ≈ undo exclusions + exact: nothing left out |
+| **…uam** | *Everything you can think of?* | **u** ≈ undo exclusions + soft |
+| **…uol** | *Anything?* | **u** ≈ undo + one: even one counts |
 | **…uom** | *Anything?* | same, offered |
-| **…aol** | *All set?* | **a** add enough + exact: needs met |
+| **…aol** | *All set?* | **a** ≈ add enough + exact: needs met |
 | **…aom** | *Nothing you need?* | same, offered |
-| **…ul** | *No?* | **u** undo + exact |
-| **…um** | *Soft no?* | **u** undo + soft |
-| **…un** | *No?* (stock) | **u** undo + stock **n** |
-| **…ar** | *Who/what?* (fill-ask) | **a** set + fill: name a member |
-| **…or** | *Anything?* (fill-ask) | **o** one + fill: name any one |
-| **…ur** | *What else?* (fill-ask) | **u** undo + fill: name what besides |
+| **…ul** | *No?* | **u** ≈ undo + exact |
+| **…um** | *Soft no?* | **u** ≈ undo + soft |
+| **…un** | *No?* (stock) | **u** ≈ undo + stock **n** |
+| **…ar** | *Who/what?* (fill-ask) | **a** ≈ add + fill: name a member |
+| **…or** | *Anything?* (fill-ask) | **o** ≈ one + fill: name any one |
+| **…ur** | *What else?* (fill-ask) | **u** ≈ undo + fill: name what besides |
 
 ### Translation practice
 <a id="translation-practice-advanced"></a>
@@ -558,13 +554,13 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *beauty* (name **Uhubun**) | `uhubu` |
-| *walk* | `awala` |
-| *run* | `urunu` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *beauty* (name **Uhubun**) | `uhubu` | |
+| *walk* | `awala` | |
+| *run* | `urunu` | |
 
 #### English → Agalan
 

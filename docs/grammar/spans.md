@@ -11,7 +11,7 @@ Start with a quote of what someone said.
 <a id="writing"></a>
 <a id="writing-vs-speech"></a>
 
-A **cite** holds wording you are quoting: what someone said, a title string, or a proverb **as wording**. Write the role letter, then square brackets around the quoted text. (Mnemonic: square brackets are the quote marks.)
+A **cite** holds wording you are quoting: what someone said, a title string, or a proverb **as wording**. Write the role letter, then square brackets around the quoted text. (cue: `[…]` like quote marks)
 
 Start with one quoted token as the object of *said*:
 
@@ -32,11 +32,11 @@ You can mark how faithful the quote is. Put the mark **after** the role letter, 
 
 Verbatim wording is **exact**: no extra mark (`d[hi]`). That is the same as ending **-l**, omitted in writing. When you mean the gist, not the exact words, write **`~`** (`d~[hi]`), the same as **-m**. When the chunk is a titled designation of that wording, write **`@`** (`d@[Hamlet]`), the same as **-n**.
 
-| Mark | Reading | Example | Mnemonic |
-|------|---------|---------|----------|
-| *(none)* | **exact** (**-l**) | `d[hi]` | bare: the wording as written |
-| **`~`** | **paraphrase** (**-m**) | `d~[hi]` | **~** soft: gist, not verbatim |
-| **`@`** | **proper** (**-n**) | `d@[Hamlet]` | **@** name: a titled designation of that wording |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| *(none)* | exact (**-l**) | verbatim wording | **-l** stand behind the words |
+| **`~`** | paraphrase (**-m**) | the gist, not the exact words | **~** / **-m** leaves the hold open |
+| **`@`** | proper (**-n**) | titled designation of that wording | **@** / **-n** names the chunk |
 
 ```
 `zululon d~[hi] vuwurul.`
@@ -147,12 +147,12 @@ gloss: `j-prohibition` · `z-courage@` · `v-oops`
 *Don’t “oops,” Ululon.*
 ```
 
-| Letter | When the span fills that slot | Example |
-|--------|-------------------------------|---------|
-| `/d/` | object — *said / wrote / saw “…”* | `d[hi]`, `d[=]`, `d<sushi>` |
-| `/z/` | subject — the wording or form **is** the subject | `z{odogo}` |
-| `/v/` | verb — echo the act as wording | `v[oops]` |
-| `/h/` | adverb — asides | `h(…)` |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| `/d/` | object | *said / wrote / saw “…”* (`d[hi]`, `d[=]`, `d<sushi>`) | **d** ≈ done to |
+| `/z/` | subject | the wording or form **is** the subject (`z{odogo}`) | **z** ≈ star (who it is about) |
+| `/v/` | verb | echo the act as wording (`v[oops]`) | **v** as in English *verb* |
+| `/h/` | adverb | asides (`h(…)`) | **h** starts *how* / *when* / *where* |
 
 If the interior is Agalan words, those inner words still start with **their** role letters.
 
@@ -163,22 +163,22 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *beauty* (name **Uhubun**) | `uhubu` |
-| *tell* | `ezehe` |
-| *write* | `uwuru` |
-| *sing* | `uzunu` |
-| *see* | `eje` |
-| *walk* | `awala` |
-| *sleep* | `elebe` |
-| *happy* (**-m**) | `uzumu` |
-| *dog* | `odogo` |
-| *cat* | `agada` |
-| *book* | `abogo` |
-| *blue* | `elulu` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *beauty* (name **Uhubun**) | `uhubu` | |
+| *tell* | `ezehe` | |
+| *write* | `uwuru` | |
+| *sing* | `uzunu` | |
+| *see* | `eje` | from *perception*: the sense you see with |
+| *walk* | `awala` | |
+| *sleep* | `elebe` | |
+| *happy* (**-m**) | `uzumu` | from *smile*: the face of *happy* |
+| *dog* | `odogo` | |
+| *cat* | `agada` | |
+| *book* | `abogo` | |
+| *blue* | `elulu` | |
 
 #### English → Agalan
 
@@ -320,12 +320,12 @@ Example: **`daxal`** = `d` + `a` + `x` + `a` + `l` → open exact multi-token ci
 
 TYPE uses **a** / **e** / **o** / **u**.
 
-| TYPE | Role | Writing | Mnemonic |
-|------|------|---------|----------|
-| **a** | **cite** — cited wording; clausal interiors: outer speaker does **not** assert | `[` … `]` | **a** add → cite |
-| **e** | **aside** — `/h/` digression; outer speaker **does** assert; interior may be a fragment or a same-speech-act clause body | `h(` … `)` | **e** order → aside |
-| **o** | **mention** — the word or form as object; with **-n**, named unit | `{` … `}` | **o** one → mention |
-| **u** | **opaque** — foreign / code / raw blob; interior is not native Agalan | `<` … `>` | **u** undo → opaque |
+| Agalan | Use | English | Cue |
+|--------|------|---------|-----|
+| **a** | **cite** (`[` … `]`); clausal interiors: outer speaker does **not** assert | quoted wording | **a** ≈ add (hold cited words) |
+| **e** | **aside** (`h(` … `)`); `/h/` digression; outer speaker **does** assert; interior may be a fragment or a same-speech-act clause body | parenthetical | **e** ≈ order (a side instruction) |
+| **o** | **mention** (`{` … `}`); with **-n**, named unit | the word or form itself | **o** ≈ one (the form as one object) |
+| **u** | **opaque** (`<` … `>`); interior is not native Agalan | foreign / code / raw blob | **u** ≈ undo (not native Agalan) |
 
 A native office **handle** refers with ordinary **-n** (`zabogon`): [named handles](reference-suffix.md#named-handles). Mention `{abogo}` is that **form**; opaque / loan is a **foreign** acronym’s surface (`z<FBI>n`).
 
@@ -334,12 +334,12 @@ A native office **handle** refers with ordinary **-n** (`zabogon`): [named handl
 
 The vowel **after** `x` is **EDGE**: how far the open runs.
 
-| EDGE | Job | Needs close? | Typical writing |
-|------|-----|--------------|-----------------|
-| **a** | **Multi-token open** — push a stack frame until explicit close (default) | yes | `d[…]` … `]` |
-| **e** | **Clause-scoped** — auto-pop before the next speech-act `/j/` or clause-level `/x/` join (**complete**) | no (auto) | `d[…` run to clause end |
-| **o** | **Atomic** — exactly **one** following token | no | `d[uzunu]`, `d<sushi>` |
-| **u** | **Empty / redacted** — no interior; also **resume** **-r** | no | `d[]`, `d[=]` |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **a** | **multi-token open** — push a stack frame until explicit close (default) | `d[…]` … `]` (needs close) | **a** ≈ add (push more tokens) |
+| **e** | **clause-scoped** — auto-pop before the next speech-act `/j/` or clause-level `/x/` join (**complete**) | `d[…` run to clause end (no close) | **e** ≈ order (this clause only) |
+| **o** | **atomic** — exactly **one** following token | `d[uzunu]`, `d<sushi>` | **o** ≈ one |
+| **u** | **empty / redacted** — no interior; also **resume** **-r** | `d[]`, `d[=]` | **u** ≈ undo (nothing inside) |
 
 **Anaphor `-r`** always uses EDGE **`u`** in the spoken template (`daxur`).
 
@@ -348,12 +348,12 @@ EDGE **`a`** / **`e`** / **`o`** take **-l** / **-m** / **-n**. EDGE **`u`** tak
 ### Endings on opens and span pronouns
 <a id="endings"></a>
 
-| Ending | Meaning | Preferred writing |
-|--------|---------|-------------------|
-| **-l** | **exact** — verbatim / precise surface | bare open (no `@` / `~`) |
-| **-m** | **paraphrase** — gist / non-verbatim rendering | **`~`** after the role letter (`d~[…]`) |
-| **-n** | **proper** — titled / conventional designation of the **whole span** | **`@`** after the role letter (`d@[…]`) |
-| **-r** | **resume** — the **most recent span of this TYPE**; PoS = role **now** | `d[=]`, `h(=)`, `z{=}`, … |
+| Agalan | Use | English | Cue |
+|--------|---------|---------|-----|
+| **-l** | **exact** — verbatim / precise surface | bare open (no `@` / `~`) | **-l** stand behind the wording |
+| **-m** | **paraphrase** — gist / non-verbatim rendering | **`~`** after the role letter (`d~[…]`) | **-m** leaves the hold open |
+| **-n** | **proper** — titled / conventional designation of the **whole span** | **`@`** after the role letter (`d@[…]`) | **-n** names the chunk |
+| **-r** | **resume** — the **most recent span of this TYPE**; PoS = role **now** | `d[=]`, `h(=)`, `z{=}`, … | **-r** points back |
 
 Hedged proper (`@~`) is written **`d@[…]`** only (spoken as the **proper** open with uncertain tonality). **`@`** / **`~`** do not combine with resume **-r**.
 
@@ -445,20 +445,20 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *beauty* (name **Uhubun**) | `uhubu` |
-| *tell* | `ezehe` |
-| *see* | `eje` |
-| *run* | `urunu` |
-| *red* | `arede` |
-| *dog* | `odogo` |
-| *cat* | `agada` |
-| *book* (name **Abogon**) | `abogo` |
-| *blue* | `elulu` |
-| *happy* (**-m**) | `uzumu` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *beauty* (name **Uhubun**) | `uhubu` | |
+| *tell* | `ezehe` | |
+| *see* | `eje` | from *perception*: the sense you see with |
+| *run* | `urunu` | |
+| *red* | `arede` | |
+| *dog* | `odogo` | |
+| *cat* | `agada` | |
+| *book* (name **Abogon**) | `abogo` | |
+| *blue* | `elulu` | |
+| *happy* (**-m**) | `uzumu` | from *smile*: the face of *happy* |
 
 #### English → Agalan
 
@@ -589,11 +589,11 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 ### Close forms (complete / editorial / close-all)
 
-| Spoken | Job | Writing | Mnemonic |
-|--------|-----|---------|----------|
-| **`xuxul`** | pop **one** — **complete** | matching closer `]` / `}` / `)` / `>` | exact **-l**: the span closes whole |
-| **`xuxur`** | pop **one** — **editorial** (wording kept as written under an editorial mark: cut off, trail off, or defect noted) | `#]` / `#}` / `#)` / `#>` | resume **-r**: the wording stops short or carries a mark; resume may pick up |
-| **`xuxum`** | pop **all** open spans | optional close-all mark `\|` | soft **-m**: sweep everything lightly |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`xuxul`** | pop **one** — **complete** | matching closer `]` / `}` / `)` / `>` | **-l** exact: the span closes whole |
+| **`xuxur`** | pop **one** — **editorial** (wording kept as written under an editorial mark: cut off, trail off, or defect noted) | `#]` / `#}` / `#)` / `#>` | **-r** resume: the wording stops short; resume may pick up |
+| **`xuxum`** | pop **all** open spans | optional close-all mark `\|` | **-m** soft: sweep everything |
 | **`xuxur`** + **`xuxum`** | editorial innermost, then pop all | `#\|` | |
 
 ```text
@@ -674,13 +674,13 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *beauty* (name **Uhubun**) | `uhubu` |
-| *tell* | `ezehe` |
-| *happy* (**-m**) | `uzumu` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *beauty* (name **Uhubun**) | `uhubu` | |
+| *tell* | `ezehe` | |
+| *happy* (**-m**) | `uzumu` | from *smile*: the face of *happy* |
 
 #### English → Agalan
 

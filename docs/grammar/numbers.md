@@ -11,9 +11,7 @@ After the first letter (the role), a **marker** tells count versus rank. Digits 
 
 ### Counts (`g+N`)
 
-To say **how many** of a thing there are, put a number word after the noun, in the same place as other adjectives (`/ɡ/`). The word starts with **`g`**, then the count marker (written **`+`**), then the digit: **`g+3`** is *three*.
-
-Mnemonic: written **`+`** is vowel **`a`** (add): how many.
+To say **how many** of a thing there are, put a number word after the noun, in the same place as other adjectives (`/ɡ/`). The word starts with **`g`**, then the count marker (written **`+`**), then the digit: **`g+3`** is *three*. (cue: **`+`** / **`a`** ≈ add — how many)
 
 ```
 `zagadalsh g+3.`
@@ -33,9 +31,7 @@ gloss: `z-grace@` · `d-book-sh` · `g-three` · `v-see`
 
 ### Ordinals (`g#N`)
 
-To say **which place** a thing has in a series (*the first*, *the second*, …), put a rank number after the noun, in the same adjective place. **`g#2`** is *the second*. Written **`#`** is the rank marker; the digit follows.
-
-Mnemonic: written **`#`** is vowel **`e`** (order): which place, counting from the start.
+To say **which place** a thing has in a series (*the first*, *the second*, …), put a rank number after the noun, in the same adjective place. **`g#2`** is *the second*. Written **`#`** is the rank marker; the digit follows. (cue: **`#`** / **`e`** ≈ order — which place, from the start)
 
 ```
 `zabogol g#2.`
@@ -55,9 +51,7 @@ gloss: `z-courage@` · `d-book` · `g-third` · `v-write`
 
 ### More than one (`g+`)
 
-You can say the count is **more than one** without naming how many. Keep the count marker and leave the digits off: **`g+`**.
-
-Mnemonic: **`a`** still adds; you add a plural amount and stop.
+You can say the count is **more than one** without naming how many. Keep the count marker and leave the digits off: **`g+`**. (cue: **`a`** ≈ add — a plural amount, then stop)
 
 Naming the group (*cats* as a set) uses [**-sh**](plurality.md) on the noun. Saying the amount is a different tool. Both may sit on the same noun (`zagadalsh g+`).
 
@@ -78,10 +72,10 @@ On the page, write the short form (`g+3`, `g#2`, `g+`). Spoken, that is still **
 
 Two marker syllables cover count and rank:
 
-| Marker | Spoken | Written | Mnemonic |
-|--------|--------|---------|----------|
-| count | **ra** | `+` | **`a`** add: how many |
-| rank | **re** | `#` | **`e`** order: which place |
+| Agalan | Use | English | Cue |
+|--------|--------|---------|-----|
+| **ra** (`+`) | count | *how many* | **`a`** ≈ add |
+| **re** (`#`) | rank | *which place* | **`e`** ≈ order |
 
 Digits are spoken as these syllables:
 
@@ -107,17 +101,17 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *beauty* (name **Uhubun**) | `uhubu` |
-| *cat* | `agada` |
-| *dog* | `odogo` |
-| *book* | `abogo` |
-| *house* | `ohohu` |
-| *see* | `eje` |
-| *write* | `uwuru` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *beauty* (name **Uhubun**) | `uhubu` | |
+| *cat* | `agada` | |
+| *dog* | `odogo` | |
+| *book* | `abogo` | |
+| *house* | `ohohu` | |
+| *see* | `eje` | from *perception*: the sense you see with |
+| *write* | `uwuru` | |
 
 #### English → Agalan
 
@@ -263,13 +257,13 @@ Digit-strings (`ro`…) usually take the argument role the clause needs (often `
 
 **V** encodes what kind of number this is: **count/amount** (scalar), **rank** (ordinal), or **digit-string** (label). For **scalars**, **V** also carries the **sign of the whole number** (`a` positive, `u` negative). Forward ordinal **`e`** aligns with [rank join **e**](coordination.md#ranked-conjunction-e) (*rank*). End-relative ordinal **`eu`** is a **separate marker**.
 
-| V | Writing | Referent | Mnemonic | Examples |
-|---|---------|----------|----------|----------|
-| **a** | `+` | Positive **scalar** (count or measure amount) | **`a`** add | `g+3` *three cats*; `g+` *plural / more than one*; `z+3` *three* (subj); `b+12` *of size 12* |
-| **u** | `-` | Negative **scalar** | **`u`** undo | `d-3` *−3* (obj); `z-` *some negative amount*; `g-2` signed measure on a noun |
-| **e** | `#` | **Ordinal** / rank **from the start** (same-generation cohort when [exp omitted](#ordinal-generation); see also [digitful generation](#ordinal-generation)) | **`e`** order | `g#2` *the second page*; `g#` *some rank*; `z#2` *second* (rank as subject) |
-| **eu** | `#-` | **End-relative ordinal:** rank **from the end** of the same cohort | order from the far edge | `g#-2` *2nd from the end* / *penultimate*; `g#-1` ≡ last place end-framed ([from the end](#from-the-end)); `g#-` *some end-relative rank* |
-| **o** | `_` | **Digit-string** / label (phones, IDs, “read the digits”) | **`o`** one string | `d_555,123,4567`; `d_` *some code*; `g_12` *room 12*-style; `b_…` under a host relation |
+| Agalan | Use | English | Cue |
+|---|---------|---------|-----|
+| **a** (`+`) | positive **scalar** (count or measure amount) | `g+3` *three cats*; `g+` *plural / more than one*; `z+3` *three* (subj); `b+12` *of size 12* | **`a`** ≈ add |
+| **u** (`-`) | negative **scalar** | `d-3` *−3* (obj); `z-` *some negative amount*; `g-2` signed measure on a noun | **`u`** ≈ undo |
+| **e** (`#`) | **ordinal** / rank **from the start** (same-generation cohort when [exp omitted](#ordinal-generation); see also [digitful generation](#ordinal-generation)) | `g#2` *the second page*; `g#` *some rank*; `z#2` *second* (rank as subject) | **`e`** ≈ order |
+| **eu** (`#-`) | **end-relative ordinal:** rank **from the end** of the same cohort | `g#-2` *2nd from the end* / *penultimate*; `g#-1` ≡ last place end-framed ([from the end](#from-the-end)); `g#-` *some end-relative rank* | **`e`** ≈ order + **`u`** ≈ undo (from the far edge) |
+| **o** (`_`) | **digit-string** / label (phones, IDs, “read the digits”) | `d_555,123,4567`; `d_` *some code*; `g_12` *room 12*-style; `b_…` under a host relation | **`o`** ≈ one (one string) |
 
 One word, one identity. In [preferred writing](#writing-preferred-shorthand), the marker is **`+`** / **`-`** / **`#`** / **`#-`** / **`_`**. Write end-relative as **`#-`** after PoS (or after an ending mark): `g#-2`. Writing the minus *before* the hash (`g-` then `#2`) would look like scalar **`-`** then ordinal.
 
@@ -290,12 +284,12 @@ Date writing uses digit-string **`_`** with calendar-ordinal vowel **`oe`** (spo
 
 Number endings have [their own jobs](#number-endings) (exact / about / conventional / resume). Speech keeps the ending letter; [preferred writing](#writing-preferred-shorthand) uses a **second-slot mark** after PoS (same glyphs as [span fences](spans.md)).
 
-| Ending | Meaning | Preferred writing |
-|--------|---------|-------------------|
-| **-l** | Exact, newly stated (default) | *(none)* — `g+3`, `g+` |
-| **-m** | Approximate / non-literal (“about N”) | **`~`** after PoS — `g~+3`, `g~+` |
-| **-n** | Conventional designation (titles, official labels, *the Second…*) | **`@`** after PoS — `g@#2`, `g@+1e` |
-| **-r** | Resume of a previously stated number, code, or rank | **`=`** after PoS — `g=+`, `x=#2`, `d=_` |
+| Agalan | Use | English | Cue |
+|--------|---------|---------|-----|
+| **-l** | exact, newly stated (default) | *(none)* — `g+3`, `g+` | **-l** stand behind the amount |
+| **-m** | approximate / non-literal (“about N”) | **`~`** after PoS — `g~+3`, `g~+` | **-m** leaves the hold open |
+| **-n** | conventional designation (titles, official labels, *the Second…*) | **`@`** after PoS — `g@#2`, `g@+1e` | **-n** names the number |
+| **-r** | resume of a previously stated number, code, or rank | **`=`** after PoS — `g=+`, `x=#2`, `d=_` | **-r** points back |
 
 **-r** may be **digitless**: marker + **-r** alone resumes the prior value of that identity without restating digits (`g=+` = *that (scalar) amount again*; `d=_` = *that code again*; `g=#` = *that rank again*). Digits + **-r** still fine when you want to name which prior item (`x=#2` = *as in (2) above*). Match the marker to the resumed identity (`g=+` for a prior scalar). **`=`** stands alone: no stack with **`~`** / **`@`**.
 
@@ -306,13 +300,13 @@ Number endings have [their own jobs](#number-endings) (exact / about / conventio
 
 A number word may omit every digit group: **role letter + marker + ending** only. The marker still fixes what kind of number this is. With **-l** / **-m** / **-n**, the magnitude (or label/rank payload) is **unspecified** as in the table below. With **-r**, the word is [digitless resume](#number-endings) only: a prior value of that identity.
 
-| Marker | Writing | Digitless sense | Partition / notes |
-|--------|---------|-----------------|-------------------|
-| **`ra`** | `…+` (etc.) | Unspecified **positive scalar**, specialized to **plural count / amount `>1`** | Complements `…+0` (zero), `…+1` (one), `…+N` (exact N≥2). |
-| **`ru`** | `…-` | Unspecified **negative scalar** (*some negative amount*; deficit of unnamed size) | Exact negatives stay `…-N`. |
-| **`re`** | `…#` | Unspecified **rank from the start** (*some nth* / *some place*) | Exact ranks stay `…#N`. |
-| **`reu`** | `…#-` | Unspecified **end-relative rank** (*some nth from the end*) | Exact end-relative ranks stay `…#-N`. |
-| **`ro`** | `…_` | Unspecified **digit-string / label** (*some code*; *a label*) | Exact labels stay `…_…`. |
+| Agalan | Use | English | Cue |
+|--------|---------|---------|-----|
+| **`ra`** (`…+`) | unspecified **positive scalar**, specialized to **plural count / amount `>1`** | complements `…+0` (zero), `…+1` (one), `…+N` (exact N≥2) | **`a`** ≈ add |
+| **`ru`** (`…-`) | unspecified **negative scalar** | *some negative amount*; deficit of unnamed size (exact negatives stay `…-N`) | **`u`** ≈ undo |
+| **`re`** (`…#`) | unspecified **rank from the start** | *some nth* / *some place* (exact ranks stay `…#N`) | **`e`** ≈ order |
+| **`reu`** (`…#-`) | unspecified **end-relative rank** | *some nth from the end* (exact stay `…#-N`) | **`e`** ≈ order + **`u`** ≈ undo |
+| **`ro`** (`…_`) | unspecified **digit-string / label** | *some code*; *a label* (exact labels stay `…_…`) | **`o`** ≈ one |
 
 Noun [**-sh**](plurality.md) marks that a **referent is a group** (indefinite group introduction stays **-lsh** / **-msh**). Digitless **`ra`** marks that a **count/amount is `>1`** without naming N. They may co-occur (`zagadalsh g+3`).
 
@@ -774,18 +768,18 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *beauty* (name **Uhubun**) | `uhubu` |
-| *cat* | `agada` |
-| *book* | `abogo` |
-| *house* | `ohohu` |
-| *blue* | `elulu` |
-| *walk* | `awala` |
-| *sleep* | `elebe` |
-| *see* | `eje` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *beauty* (name **Uhubun**) | `uhubu` | |
+| *cat* | `agada` | |
+| *book* | `abogo` | |
+| *house* | `ohohu` | |
+| *blue* | `elulu` | |
+| *walk* | `awala` | |
+| *sleep* | `elebe` | |
+| *see* | `eje` | from *perception*: the sense you see with |
 
 #### English → Agalan
 
@@ -1191,15 +1185,15 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *beauty* (name **Uhubun**) | `uhubu` |
-| *cat* | `agada` |
-| *book* | `abogo` |
-| *walk* | `awala` |
-| *sing* | `uzunu` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *beauty* (name **Uhubun**) | `uhubu` | |
+| *cat* | `agada` | |
+| *book* | `abogo` | |
+| *walk* | `awala` | |
+| *sing* | `uzunu` | |
 
 #### English → Agalan
 

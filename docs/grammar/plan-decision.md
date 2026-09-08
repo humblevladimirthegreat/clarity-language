@@ -9,7 +9,7 @@ English *will* and *going to* can mean **intention** (the course someone means t
 ### Plan
 <a id="plan-predict"></a>
 
-To say what someone **means to do**, use the closed mood root **`owora`**. Spell it as floating `/h/`: **`howora`** plus an ending, then the ordinary content verb (*walk*, *write*). That lets you mark intention without borrowing English *will*, which can also be a forecast. Prefer floating `/h/`; use `/w/` only when the mood frames a preceding `/ɡ/` adjective. (Mnemonic: 🗺️ *world-map* → *plan* (**PLAN**). A map charts a course you mean to take.)
+To say what someone **means to do**, use the closed mood root **`owora`**. Spell it as floating `/h/`: **`howora`** plus an ending, then the ordinary content verb (*walk*, *write*). That lets you mark intention without borrowing English *will*, which can also be a forecast. Prefer floating `/h/`; use `/w/` only when the mood frames a preceding `/ɡ/` adjective. (cue: 🗺️ *world-map*: a map charts a course you mean to take)
 
 ```
 `zazawan howoram vawalal.`
@@ -27,11 +27,11 @@ Ordinary content stays available (`zoworal` *a map*; `voworal` *to plan*). Leave
 
 On **`owora`**, **-l / -m / -r** say **how fully drawn** the intention is: direction only, steps filled in, or a backup path if the first course fails. **-n** is ordinary [proper](reference-suffix.md#proper-name--n). When you are unsure how detailed the course is, prefer **`howoram`**.
 
-| Ending | Form | Job | Reading | Mnemonic |
-|--------|------|-----|---------|----------|
-| **-m** | **`howoram`** | **sketch** (soft default) | direction only: *means to …* without steps | open sketch |
-| **-l** | **`howoral`** | **itinerary** | steps filled in: *how* is on the map | locked itinerary |
-| **-r** | **`howorar`** | **fork** | backup path: *if not A, then B* | forked / other-path |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`howoram`** | **sketch** (soft default) | direction only: *means to …* without steps | 🗺️ open sketch: the route is drawn, not the stops |
+| **`howoral`** | **itinerary** | steps filled in: *how* is on the map | 🗺️ locked itinerary: every stop is on the map |
+| **`howorar`** | **fork** | backup path: *if not A, then B* | 🗺️ fork: another path if the first fails |
 
 ```
 `zululon howoral vawalal.`
@@ -52,7 +52,7 @@ gloss: `z-beauty@` · `h-PLAN-fork` · `v-walk`
 ### Predict
 <a id="predict"></a>
 
-To say **what will happen** in the world (rain, a result), not what someone means to do, use the closed mood root **`elezo`**. Spell it as floating `/h/`: **`helezo`** plus an ending, then an ordinary content verb. Prefer **`helezom`** when you are not adding more. (Mnemonic: 🔭 *telescope* → *forecast* (**PREDICT**). A telescope looks ahead at a distance.)
+To say **what will happen** in the world (rain, a result), not what someone means to do, use the closed mood root **`elezo`**. Spell it as floating `/h/`: **`helezo`** plus an ending, then an ordinary content verb. Prefer **`helezom`** when you are not adding more. (cue: 🔭 *telescope*: looks ahead at a distance)
 
 ```
 `helezom vanunul.`
@@ -69,21 +69,21 @@ gloss: `h-PREDICT` · `v-rain`
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Pick **PLAN** (`owora` + map-resolution ending) or **PREDICT** (`elezo`). English *will* is not one Agalan form.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Cue** is optional memory, not the answer):
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *beauty* (name **Uhubun**) | `uhubu` |
-| **PLAN** | `owora` |
-| **PREDICT** | `elezo` |
-| *walk* | `awala` |
-| *write* | `uwuru` |
-| *sing* | `uzunu` |
-| *run* | `urunu` |
-| *sleep* | `elebe` |
-| *rain* | `anunu` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *beauty* (name **Uhubun**) | `uhubu` | |
+| **PLAN** | `owora` | 🗺️ *world-map*: a map charts a course you mean to take |
+| **PREDICT** | `elezo` | 🔭 *telescope*: looks ahead at a distance |
+| *walk* | `awala` | |
+| *write* | `uwuru` | |
+| *sing* | `uzunu` | |
+| *run* | `urunu` | |
+| *sleep* | `elebe` | |
+| *rain* | `anunu` | |
 
 #### English → Agalan
 
@@ -187,7 +187,7 @@ Stack **DECISION** after **PLAN** when you also mark pick firmness (`howoral …
 
 Mark **how revisable a pick is** (temporary, open, or settled) with one closed mood root. English *decide* / *I've decided* / *final decision* smuggles firmness into the verb; Agalan puts firmness on the ending (same map as unmet [changeability](values.md#value-changeability)).
 
-**Shape:** floating `/h/` mood **`egege`** ✅ *check* → *decision* (use `/w/` when scoped only to a preceding `/ɡ/`). Prefer floating `/h/`. Ending = [changeability](#decision-changeability). A **checkmark** confirms a pick.
+Spell it as floating `/h/`: **`hegege`** plus an ending, then an ordinary content verb (use `/w/` when the mood frames only a preceding `/ɡ/` adjective). Prefer floating `/h/`. The ending is [changeability](#decision-changeability). (cue: ✅ *check*: a checkmark confirms a pick)
 
 Ordinary content still available (`zegegel` *a checkmark*; `vegegel` *to check / tick*).
 
@@ -224,11 +224,11 @@ Use **DECISION** when the clause marks **pick firmness**.
 
 On **`egege`**, **-l / -m / -r** match unmet [changeability](values.md#value-changeability): irreversible / modifiable / temporary. **-n** stays ordinary [proper](reference-suffix.md#proper-name--n).
 
-| Ending | Form | Job | Reading | Mnemonic |
-|--------|------|-----|---------|----------|
-| **-l** | **`hegegel`** | **irreversible** | settled / final as far as you can tell | hard / locked (**-l**) |
-| **-m** | **`hegegem`** | **modifiable** (soft default if unknown) | open to revision | open to change |
-| **-r** | **`hegeger`** | **temporary** | pick for this moment; usually revisable later | light / this-moment only |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`hegegel`** | **irreversible** | settled / final as far as you can tell | **-l** hard / locked |
+| **`hegegem`** | **modifiable** (soft default if unknown) | open to revision | **-m** open to change |
+| **`hegeger`** | **temporary** | pick for this moment; usually revisable later | **-r** light / this-moment only |
 
 Always pick an ending on **DECISION**. If you do not know how locked the pick is, use **-m**. Deferral stays ordinary packaging.
 
@@ -237,22 +237,22 @@ Always pick an ending on **DECISION**. If you do not know how locked the pick is
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Pick **DECISION** (`egege` + changeability), stack evidentiality on **PREDICT**, or stack **PLAN** with **DECISION**.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Cue** is optional memory, not the answer):
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *beauty* (name **Uhubun**) | `uhubu` |
-| **PLAN** | `owora` |
-| **PREDICT** | `elezo` |
-| **DECISION** | `egege` |
-| *walk* | `awala` |
-| *write* | `uwuru` |
-| *sing* | `uzunu` |
-| *sleep* | `elebe` |
-| *rain* | `anunu` |
-| (*pattern*, evidential) | `abawa` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *beauty* (name **Uhubun**) | `uhubu` | |
+| **PLAN** | `owora` | 🗺️ *world-map*: a map charts a course you mean to take |
+| **PREDICT** | `elezo` | 🔭 *telescope*: looks ahead at a distance |
+| **DECISION** | `egege` | ✅ *check*: a checkmark confirms a pick |
+| *walk* | `awala` | |
+| *write* | `uwuru` | |
+| *sing* | `uzunu` | |
+| *sleep* | `elebe` | |
+| *rain* | `anunu` | |
+| (*pattern*, evidential) | `abawa` | 🐾 *paw-prints*: a trail of what usually happens |
 
 #### English → Agalan
 

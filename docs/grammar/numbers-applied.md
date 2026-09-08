@@ -42,11 +42,11 @@ A **measure** is a lexicon **unit** noun plus a scalar **amount** on that unit.
 
 **Shape:** unit as the head noun in the needed slot; amount as ordinary `/ɡ/` scalar on that unit:
 
-| Slot | Shape | Gloss |
-|------|--------|--------|
-| Argument of a complex `/ɡ/` / `/h/` | `burulel g+2` | *two meters* |
-| Subject / object / … | `zanelol g+3`, `daragal g+5` | *three seconds*, *five grams* |
-| Modifier on a noun | `gurulel g+2` on a host | rare; prefer unit as `/b/` or a freestanding NP |
+| Agalan | Use | English |
+|--------|-----|---------|
+| `burulel g+2` | argument of a complex `/ɡ/` / `/h/` | *two meters* |
+| `zanelol g+3`, `daragal g+5` | subject / object / … | *three seconds*, *five grams* |
+| `gurulel g+2` on a host | modifier on a noun | rare; prefer unit as `/b/` or a freestanding NP |
 
 Same endings and fuzzy **-m** habits as other number words on the amount (`g~+2` ≈ *about two*). The **unit** is ordinary lexicon (reference suffixes as usual).
 
@@ -55,11 +55,11 @@ Same endings and fuzzy **-m** habits as other number words on the amount (`g~+2`
 
 Measure phrases use **published metaphorical roots** (dimension / quantity metaphors). Speech uses those roots, not Latin-style abbreviations (`m`, `kg`, `s`, …).
 
-| Register | Shape | Example | When |
-|----------|--------|---------|------|
-| **Short / default** | bare unit + amount | `burulel g+2` | ordinary measure phrases: the scalar licenses the unit reading |
-| **Full / titled** | unit + digit morph **`+1`** (*unit / primary*) | `burulexrawon g+2` | you need *the named unit of that dimension* versus the ordinary metaphor (*measurement*, *heaviness*, …) |
-| **Resume** | short resume or **-r** | `bur` / `burulexrawor` | after the unit NP is on the table |
+| Agalan | Use | English |
+|--------|-----|---------|
+| `burulel g+2` | short / default: the scalar licenses the unit reading | ordinary measure |
+| `burulexrawon g+2` | titled **`+1`**: the named unit of that dimension vs the ordinary metaphor | *the meter* (not just *measurement*) |
+| `bur` / `burulexrawor` | resume after the unit NP is on the table | that unit again |
 
 Spelled **`…xrawol`** / **`…xrawon`**: [numeric derivation](numeric-derivation.md#numeric-derivation) (**`ROOTx+1`**). Prefer **-n** on the titled form when the unit is a conventional SI name; **-l** when naming a unit-instance without that title force. Soft **-m** hedges amount or unit, not a short name.
 
@@ -68,18 +68,18 @@ Spelled **`…xrawol`** / **`…xrawon`**: [numeric derivation](numeric-derivati
 #### Stock units
 <a id="stock-units"></a>
 
-| SI / everyday unit | Unit (metaphor) | Bare measure | Titled unit |
-|--------------------|-----------------|--------------|-------------|
-| meter | `urule` 📏 *measurement* | `burulel` | `burulexrawon` |
-| gram | `araga` 🪨 *heaviness* | `baragal` | `baragaxrawon` |
-| second | `anelo` 🕰️ *passage* | `banelol` | `baneloxrawon` |
-| liter | `ozobo` 🥄 *portion* | `bozobol` | `bozoboxrawon` |
-| ampere | `ejelo` 🪼 *flow* | `bejelol` | `bejeloxrawon` |
-| kelvin | `ebebe` 🌶️ *heat* | `bebebel` | `bebeboxrawon` |
-| mole | `emema` 🍖 *substance* | `bememal` | `bememaxrawon` |
-| candela | `anede` 🕯️ *awash* | `banedel` | `banedexrawon` |
+| SI / everyday unit | Agalan | Bare measure | Titled unit | Cue |
+|--------------------|--------|--------------|-------------|-----|
+| meter | `urule` | `burulel` | `burulexrawon` | 📏 *measurement*: a ruler tracks exact length |
+| gram | `araga` | `baragal` | `baragaxrawon` | 🪨 *heaviness*: rock is hard to lift |
+| second | `anelo` | `banelol` | `baneloxrawon` | 🕰️ *passage*: a mantel clock marks hours going by |
+| liter | `ozobo` | `bozobol` | `bozoboxrawon` | 🥄 *portion*: a spoon measures a portion |
+| ampere | `ejelo` | `bejelol` | `bejeloxrawon` | 🪼 *flow*: jellyfish drift with the current |
+| kelvin | `ebebe` | `bebebel` | `bebeboxrawon` | 🌶️ *heat*: hot pepper brings heat |
+| mole | `emema` | `bememal` | `bememaxrawon` | 🍖 *substance*: the meat of the matter |
+| candela | `anede` | `banedel` | `banedexrawon` | 🕯️ *awash*: candle light fills the room |
 
-**Civil duration** (*hours*, *days*) uses continuum **`ume`** 🕐 *time* as the unit (`bumel g+3` ≈ *three hours*). SHARED range continua stay **`gumel`** / **`gurulel`** as the line needs ([ranges](#ranges)). Temperature continuum **`edehe`** 🌡️ *temperature* grades heat without naming kelvin.
+**Civil duration** (*hours*, *days*) uses continuum **`ume`** as the unit (`bumel g+3` ≈ *three hours*). (cue: 🕐 *time*: a clock face marks the hour) SHARED range continua stay **`gumel`** / **`gurulel`** as the line needs ([ranges](#ranges)). Temperature continuum **`edehe`** grades heat without naming kelvin. (cue: 🌡️ *temperature*: a thermometer reads how hot or cold)
 
 **Common derived (optional):** newton `ubunu` *force*; pascal `abama` *pressure*; joule `adero` *energy*; watt `obodu` *power*; hertz `urumu` *rhythm*; ohm `onugo` *blockage*; coulomb `uruhu` *charge*; radian `erelo` *cycle*. Same bare / `…x+1` habit.
 
@@ -114,12 +114,12 @@ The fence PoS matches the slot (`zal` / `dal` / `gal` / `bal` / …).
 
 Without the SHARED continuum, two number conjuncts are **ordinary coordination**. Bare **`z+3 z+5 zel`** is *3 ≻ 5* (preference / rank), not *from 3 to 5*.
 
-| Join | Inclusive shape | Reading |
-|------|-----------------|--------|
-| **`a`** | `z+3 z+5 zal gumel` | *between 3 and 5* on time (unordered filled interval; both ends in) |
-| **`e`** | `z+3 z+5 zel gumel` | *from 3 to 5* on time (directed; first → second) |
-| **`ue`** | `z+5 z+3 zuel gumel` | directed reverse path on time (spoken order = path; here *from 5 to 3*) |
-| **`ua`** | `z+3 z+5 zual gumel` | *outside 3–5* on time (complement on the line) |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`a`** | unordered filled interval; both ends in | *between 3 and 5* (`z+3 z+5 zal gumel`) | **a** add |
+| **`e`** | directed path; first → second | *from 3 to 5* (`z+3 z+5 zel gumel`) | **e** order |
+| **`ue`** | directed reverse path (spoken order = path) | *from 5 to 3* (`z+5 z+3 zuel gumel`) | **u** undo + **e** order |
+| **`ua`** | complement on the line | *outside 3–5* (`z+3 z+5 zual gumel`) | **u** undo + **a** add |
 
 Menu joins **`o`** / **`ao`** stay discrete (*3 or 5* / *3 and/or 5*). Equative **`ae`** with numbers is *equal* / *approximately equal* (`z+5 z+5 zael` / `z+3 z+5 zaem`); it is not a range. Exclusive ranked **`oe`** stays superlative / empty-superlative with a scale.
 
@@ -133,15 +133,15 @@ Three or more number conjuncts under **`a`** stay an ordinary list (`zal z+1 z+3
 
 When the **only** member of a [rank join](coordination.md#ranked-conjunction-e) fence (**`e`** / **`ue`**, and their open / named twins) is a **compatible number word**, that number is an **extremum on the line**: a bound, not “only this value matters,” and not a two-endpoint [range](#ranges). SHARED continuum is **optional** on thresholds: absent = implicit / contextual numeric line; present = that named line (`z+5 zel gumel` = *time \< 5*). Special values such as +∞ use [digitless exponents](numbers.md#digitless-exponents) inside the number word (`g+e`).
 
-| Form | Reading | Mnemonic |
-|------|--------|----------|
-| **`z+5 zel`** | ***less than 5*** (`< 5`) | 5 is the **greatest** (ceiling); the ray is everything it outranks |
-| **`zem z+5`** | soft / approximate *less than ~5* | open twin |
-| **`z+5 zuel`** | ***greater than 5*** (`> 5`) | 5 is the **least** (floor); reverse-ranked extremum |
-| **`zuem z+5`** | soft / approximate *greater than ~5* | open reverse twin |
-| **`zen z+5`** | named/conventional **unspecified** extremum label (*under-fives*-style) | phrase **-n** on **e** |
-| **`zaen z+5`** | named/conventional **equal-to-5** band / tie label | phrase **-n** on **ae** |
-| **`zuen z+5`** | named/conventional floor band | phrase **-n** reverse |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`z+5 zel`** | strict less-than bound | *less than 5* (`< 5`) | 5 is the **greatest** (ceiling); the ray is everything it outranks |
+| **`zem z+5`** | open / approximate less-than | *less than ~5* | |
+| **`z+5 zuel`** | strict greater-than bound | *greater than 5* (`> 5`) | 5 is the **least** (floor); reverse-ranked extremum |
+| **`zuem z+5`** | open / approximate greater-than | *greater than ~5* | |
+| **`zen z+5`** | named unspecified extremum | *under-fives*-style label | phrase **-n** on **e** |
+| **`zaen z+5`** | named equal-to band | *equal-to-5* / tie label | phrase **-n** on **ae** |
+| **`zuen z+5`** | named floor band | conventional *greater-than* label | phrase **-n** reverse |
 
 Same under `/d/` `/b/` `/ɡ/` (`gel g+5` = modifier *\<5*; `duel d+10` = object *\>10*). **`ae`** / **`oe`** single-item with a number stay ordinary ranked single-item / triage. Boolean single-item (**`zal`** / **`zol`** / …) is ordinary *just this value*. Single-item **`zel z+`** (zero-group) is ordinary single-item on plural/unspecified amount; +∞ is **`z+e`** / **`g+e`**.
 
@@ -155,11 +155,11 @@ Same under `/d/` `/b/` `/ɡ/` (`gel g+5` = modifier *\<5*; `duel d+10` = object 
 
 [Revisers](revisers.md) **inside the range** mark an exclusive **upper** bound. Replace the second (high) conjunct with prefix-less **`ul`** + that number. SHARED continuum stays required:
 
-| Shape | Reading |
-|-------|--------|
-| `z+3 z+5 zal gurulel` | *[3, 5]*: inclusive both ends |
-| `z+3 ul z+5 zal gurulel` | *[3, 5)*: *3 up to but not including 5* |
-| `z+3 ul z+5 zel gurulel` | *from 3 up to but not including 5* |
+| Agalan | Use | English |
+|--------|-----|---------|
+| `z+3 z+5 zal gurulel` | inclusive both ends | *[3, 5]* |
+| `z+3 ul z+5 zal gurulel` | exclusive high | *[3, 5)*: *3 up to but not including 5* |
+| `z+3 ul z+5 zel gurulel` | directed exclusive high | *from 3 up to but not including 5* |
 
 The low endpoint stays inclusive. The exclusive high is **only** this in-range `ul` shape. Open **`um`** on the high end = soft / non-exhaustive exclusion of that bound (rare). Other revision vowels (**`al`** / **`el`** / **`ol`**) are not range-bound markers.
 
@@ -169,13 +169,13 @@ Fence **-l** / **-m** / **-n** keep ordinary closed / open / named senses on the
 
 Fence **-r** on a number-range shape (still with SHARED continuum) = an **unspecified member of the range** (not content-word resume **-r**, and not a discrete *something among two listed values*):
 
-| Form | Reading |
-|------|--------|
-| `z+3 z+5 zar gurulel` | *some value in [3, 5]* |
-| `zar gurulel z+3 ul z+5` | *some value in [3, 5)* |
-| `zor gurulel z+3 z+5` | *any value in [3, 5]* (free-choice) |
-| `zer gurulel z+3 z+5` | *whatever-by-rank in [3, 5]* |
-| `zur gurulel z+3 z+5` | *some value other than (in) [3, 5]* (other-than the range) |
+| Agalan | Use | English |
+|--------|-----|---------|
+| `z+3 z+5 zar gurulel` | unspecified member of the inclusive band | *some value in [3, 5]* |
+| `zar gurulel z+3 ul z+5` | unspecified member of the exclusive-high band | *some value in [3, 5)* |
+| `zor gurulel z+3 z+5` | free-choice | *any value in [3, 5]* |
+| `zer gurulel z+3 z+5` | whatever-by-rank | *whatever-by-rank in [3, 5]* |
+| `zur gurulel z+3 z+5` | other-than the range | *some value other than (in) [3, 5]* |
 
 Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which value in 3–5?*). Same under `/d/` `/b/` / `/ɡ/` as the slot needs (`g+3 g+5 gal gumel` = modifier *times 3–5*; `d+10 ul d+20 dar gurulel` = object *some value in [10, 20)*).
 
@@ -188,10 +188,10 @@ Examples: `z+3 z+5 zal gumel` → *between times 3 and 5*; `zuguhul g+3 g+5 gal 
 
 Talk about a **portion of a whole** (`25%`) or a **point-scale move** (`+2` percentage points) by closing a **count** number (`ra` / `ru`) with **`jo`** / **`ju`**, parallel to fraction closer **`je`**.
 
-| Closer | Sense | Digits you write | Magnitude |
-|--------|-------|------------------|-----------|
-| **`jo`** | **Percent** (portion of a whole) | Everyday percent figure (`25` in `25%`) | those digits ÷ 100 |
-| **`ju`** | **Percentage points** (point-scale amount or delta) | Point figure (`2` in `+2%*`) | those digits ÷ 100 |
+| Agalan | Use | English |
+|--------|-----|---------|
+| **`jo`** | percent (portion of a whole) | everyday percent figure (`25` in `25%`); those digits ÷ 100 |
+| **`ju`** | percentage points (point-scale amount or delta) | point figure (`2` in `+2%*`); those digits ÷ 100 |
 
 Digits follow the [normal digit rules](numbers.md#exponents) (including optional **`je`** inside the percent/point reading). Say the digits you mean (`100%` → `wo zo zo jo`).
 
@@ -211,8 +211,8 @@ In [preferred writing](numbers.md#writing-preferred-shorthand): **`%`** → spee
 
 #### What each closer is for
 
-| English habit | Agalan |
-|---------------|---------|
+| English | Agalan |
+|---------|--------|
 | `25% of X` (portion) | whole NP + `/ɡ/` **`…jo`** ([denominator](#percent-denominators)) |
 | `+2 percentage points` / `from 10% to 12%` point delta | **`ju`** (often as `/v/` **`ra`** / **`ru`**: increase/decrease by that point amount) |
 | `+50% relative to baseline` (factor change) | a multiplicative `/h/` factor (**`h+1.5`**, etc.) or ordinary *relative-to* wording |
@@ -225,11 +225,11 @@ In [preferred writing](numbers.md#writing-preferred-shorthand): **`%`** → spee
 
 The **whole** / reference class is the noun the percent grades. The percent is an ordinary `/ɡ/` scalar on that noun, same slot as a count (`zagadalsh g+3` = *three cats*):
 
-| Shape | Gloss |
-|-------|--------|
-| `zagadalsh g+25%` | *25% of the cats* |
-| `dezubelsh g+95%` | *95% of the tests* (object) |
-| `beberelsh g+5%` under a host relation | *5% of the people* as `/b/` |
+| Agalan | Use | English |
+|--------|-----|---------|
+| `zagadalsh g+25%` | percent grades the modified noun | *25% of the cats* |
+| `dezubelsh g+95%` | same, object slot | *95% of the tests* |
+| `beberelsh g+5%` under a host relation | same, `/b/` | *5% of the people* |
 
 The noun names the reference class; **`jo`** grades how much of that class. Same endings on the percent word (**-m** ≈ *about 25% of …*).
 

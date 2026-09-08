@@ -9,7 +9,7 @@ English *can* and *can't* usually sit on the same verb (*can sing*, *can't sing*
 ### Can (`xa`)
 <a id="ability"></a>
 
-To say someone **can** do one named activity (*sing*, *walk*) or **can** have one named property (*see*), keep that word as the host. After its root, insert **`x`** and **`a`**, then the host’s ordinary ending. The first letter stays the usual role letter (`/v/` for an event, `/ɡ/` for a property), so you tag *can* without a separate helping verb. Leave the host ordinary when you are not tagging can or can’t. (Mnemonic: **`a`** add — capability is in.)
+To say someone **can** do one named activity (*sing*, *walk*) or **can** have one named property (*see*), keep that word as the host. After its root, insert **`x`** and **`a`**, then the host’s ordinary ending. The first letter stays the usual role letter (`/v/` for an event, `/ɡ/` for a property), so you tag *can* without a separate helping verb. Leave the host ordinary when you are not tagging can or can’t. (cue: **a** ≈ add (capability is in))
 
 ```
 `zazawan vuzunuxal.`
@@ -36,7 +36,7 @@ gloss: `z-courage@` · `v-write-able-metaphor`
 <a id="ability-changeability"></a>
 <a id="ability-stance"></a>
 
-English *can't* does not say whether the inability is for this moment, still changeable, or as fixed as you can tell. After **`x`**, pick **`e`**, **`o`**, or **`u`** for that difference (**stance**); **`a`** remains *can*. The rest of the word is the same host-plus-ending shape as *can*. (Mnemonic: the [vowel series](vowel-series.md) on that slot — **`a`** add / **`e`** order / **`o`** one / **`u`** undo.)
+English *can't* does not say whether the inability is for this moment, still changeable, or as fixed as you can tell. After **`x`**, pick **`e`**, **`o`**, or **`u`** for that difference (**stance**); **`a`** remains *can*. The rest of the word is the same host-plus-ending shape as *can*.
 
 ```
 `zululon vuzunuxel.`
@@ -46,12 +46,12 @@ gloss: `z-courage@` · `v-sing-unable-temporary`
 *Ululon can’t sing right now.*
 ```
 
-| Form | Stance | Reading | Mnemonic |
-|------|--------|---------|----------|
-| **`xa`** | **Capable** | can | **`a`** add: capability is in |
-| **`xe`** | **Temporary can’t** | can’t **right now** (usually able) | **`e`** order: this moment’s ranking |
-| **`xo`** | **Modifiable can’t** | can’t, and that may change (soft default if the grain is unknown) | **`o`** one: one open *can’t* |
-| **`xu`** | **Irreversible can’t** | can’t (fixed / impossible as far as you can tell) | **`u`** undo: capability taken off |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`xa`** | tags the host as able | *can* | **a** ≈ add (capability is in) |
+| **`xe`** | tags can’t for this moment (usually able) | *can’t right now* | **e** ≈ order (this moment’s ranking) |
+| **`xo`** | tags can’t that may change (soft default if the grain is unknown) | *can’t (yet / open)* | **o** ≈ one (one open *can’t*) |
+| **`xu`** | tags can’t as fixed as you can tell | *can’t (fixed)* | **u** ≈ undo (capability taken off) |
 
 ```
 `zuhubun vuzunuxol.`
@@ -78,19 +78,19 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *beauty* (name **Uhubun**) | `uhubu` |
-| *dog* | `odogo` |
-| *sing* | `uzunu` |
-| *walk* | `awala` |
-| *run* | `urunu` |
-| *write* | `uwuru` |
-| *see* | `eje` |
-| *sleep* | `elebe` |
-| *sit* | `aju` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *beauty* (name **Uhubun**) | `uhubu` | |
+| *dog* | `odogo` | |
+| *sing* | `uzunu` | |
+| *walk* | `awala` | |
+| *run* | `urunu` | |
+| *write* | `uwuru` | |
+| *see* | `eje` | from *perception*: the sense you see with |
+| *sleep* | `elebe` | |
+| *sit* | `aju` | |
 
 #### English → Agalan
 
@@ -198,28 +198,28 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 ### Ability fallback (`egera`)
 <a id="ability-fallback"></a>
 
-When there is **no single host root** (a multi-root activity, a hostless *can’t*, or a clause-wide tag), use **`egera`** 🥣 *cereal* → *capacity* (**ABIL**):
+When there is **no single host root** (a multi-root activity, a hostless *can’t*, or a clause-wide tag), use **`egera`** (**ABIL**): a closed root that names capacity without an activity host.
 
 ```
 [h|w] + egera + x + {a|e|o|u} + {-l|-m|-n|-r}
 ```
 
-| Prefix | Scope | Mnemonic |
-|--------|--------|----------|
-| `/h/` | clause-level capability (with other `/h/` words) | a bowl for the whole clause |
-| `/w/` | capability on the preceding `/ɡ/` | a bowl for that property |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| `/h/` | capability over the clause (with other `/h/` words) | clause-wide *can* / *can’t* | 🥣 *cereal*: a bowl for the whole clause |
+| `/w/` | capability on the preceding `/ɡ/` | *can* / *can’t* that property | 🥣 *cereal*: a bowl for that property |
 
 Stance vowels match [Beginner](#ability-stance). Prefer **host + stance** whenever the activity fits one root. Bare `hegeral` / `wegeral` names ability as a **topic** only (ordinary [reference-suffix](reference-suffix.md)). Ordinary `zegeral` still means *cereal* / *a capacity*.
 
 On **`egera` + stance**, use **-m** when you mean capacity as a metaphor; use **-l** when you mean a literal bowl / cereal frame.
 
-| Form | Stance | Reading | Mnemonic |
-|------|--------|---------|----------|
-| bare **`egera`** (no `x`) | **Topic** | Ability named only | no stance vowel: just the bowl |
-| **`xa`** | **Capable** | can | **`a`** add |
-| **`xe`** | **Temporary can’t** | can’t right now | **`e`** order |
-| **`xo`** | **Modifiable can’t** | can’t; may change (or unknown grain) | **`o`** one open *can’t* |
-| **`xu`** | **Irreversible can’t** | can’t; fixed as far as you can tell | **`u`** undo |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| bare **`egera`** (no `x`) | names ability only | *ability* (topic) | no stance vowel: just the bowl |
+| **`xa`** | tags capable | *can* | **a** ≈ add |
+| **`xe`** | tags can’t for this moment | *can’t right now* | **e** ≈ order |
+| **`xo`** | tags can’t that may change (or unknown grain) | *can’t (yet / open)* | **o** ≈ one (one open *can’t*) |
+| **`xu`** | tags can’t as fixed as you can tell | *can’t (fixed)* | **u** ≈ undo |
 
 ```
 `zazawan hegeraxel.`
@@ -231,8 +231,8 @@ gloss: `z-grace@` · `h-ABIL-unable-temporary`
 
 Need **`xu`** on a need root is unmet need ([values](values.md)), not a competence *can’t*. Applicability *when* / *never* is [restrictors](restrictors.md) (`hal`, `har`, …). You can stack both: `vuzunuxol holozoxum` is modifiable can’t-sing **and** unmet competence.
 
-| Form | Job | Example |
-|------|-----|---------|
+| Agalan | Use | English |
+|--------|-----|---------|
 | host + stance | can / can’t this activity | `zazawan vuzunuxel` *Azawan can’t sing right now* |
 | **`hegera` + stance** | clause-wide / hostless capability | `zuhubun hegeraxol` *Uhubun can’t (may change)* |
 | **`hegeral`** | ability as topic | `hegeral` |
@@ -246,14 +246,14 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *beauty* (name **Uhubun**) | `uhubu` |
-| *size* / *big* | `ele` |
-| *sing* | `uzunu` |
-| *cereal* → *capacity* (**ABIL**) | `egera` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *beauty* (name **Uhubun**) | `uhubu` | |
+| *size* / *big* (**-m**) | `ele` | from *elephant*: the huge animal |
+| *sing* | `uzunu` | |
+| *capacity* (**ABIL**) | `egera` | 🥣 *cereal*: a bowl of what you can do |
 
 #### English → Agalan
 

@@ -9,7 +9,7 @@ Sometimes you only care that the items belong together, with no ranking among th
 
 ### And-lists (`a`)
 
-When English would say *and*, write every item, then the join. Use vowel **a** on that join: you are adding the items as a group. (Mnemonic: **a** add.)
+When English would say *and*, write every item, then the join. Use vowel **a** on that join: you are adding the items as a group. (cue: **a** ≈ add.)
 
 The join’s first letter matches the items: `zam` after two `z-` nouns, `vam` after two `v-` verbs.
 
@@ -61,7 +61,7 @@ gloss: `z-grace@` · `v-walk` · `z-courage@` · `v-run` · `x-and.open`
 ### Choice (`o`)
 <a id="empty-allowed-om"></a>
 
-When English would offer a menu and ask for *exactly one*, or allow *or skip*, use vowel **o**. (Mnemonic: **o** one.) Closed **-l** (`zol`) means pick exactly one of the listed items. Open **-m** (`zom`) means pick one, or skip.
+When English would offer a menu and ask for *exactly one*, or allow *or skip*, use vowel **o**. Closed **-l** (`zol`) means pick exactly one of the listed items. Open **-m** (`zom`) means pick one, or skip. (cue: **o** ≈ one.)
 
 ```
 `zadedal zogovel zol.`
@@ -85,11 +85,11 @@ gloss: `z-coffee` · `z-or.open`
 
 The join still comes last when there is only one item, or none. How many items sit before it is the **arity**:
 
-| Arity | Shape | Job |
-|-------|-------|-----|
-| **List** (2+) | `A B zam` | ordinary *and* / *or* |
-| **Single-item** (1) | `A zal` | that one item is the whole story (*just X*) |
-| **Standalone** (0) | `zam` | the join alone (*nothing comes to mind*) |
+| Arity | Agalan | Use | English |
+|-------|--------|-----|---------|
+| **List** (2+) | `A B zam` | close a multi-item set | ordinary *and* / *or* |
+| **Single-item** (1) | `A zal` | that one item is the whole story | *just X* |
+| **Standalone** (0) | `zam` | the join alone | *nothing comes to mind* |
 
 ```
 `zazawan zal.`
@@ -102,7 +102,7 @@ gloss: `z-grace@` · `z-and-exactly`
 ### Negation (`u`)
 <a id="negation-u"></a>
 
-When English would deny the listed items, use vowel **u**. (Mnemonic: **u** undo.) One item before `zul` is *not X*. Several items before `zul` is *none of these*. The join alone (`zul` / `zum`) is *no*.
+When English would deny the listed items, use vowel **u**. One item before `zul` is *not X*. Several items before `zul` is *none of these*. The join alone (`zul` / `zum`) is *no*. (cue: **u** ≈ undo.)
 
 ```
 `gomonam gul.`
@@ -130,7 +130,7 @@ gloss: `z-tea` · `z-coffee` · `z-not`
 
 ### Everything (`ua`)
 
-When English would say *everything* / *everyone*, stack **u** then **a** on a standalone join (`zual`). One item before that join is *everything but* that item. Write the stacked vowels as one word (`zual`); say first vowel, then next, then the ending. (Mnemonic: undo, then add.)
+When English would say *everything* / *everyone*, stack **u** then **a** on a standalone join (`zual`). One item before that join is *everything but* that item. Write the stacked vowels as one word (`zual`); say first vowel, then next, then the ending. (cue: **u** ≈ undo, then **a** ≈ add.)
 
 ```
 `zual.`
@@ -145,7 +145,7 @@ gloss: `z-everything`
 
 The *and* / *or* / *not* joins above are **set** joins: the items share a slot as a group, and writing one before the other does not rank them. A **rank** join is the other English job: you care which item comes first (priority, favorite, *A before B*).
 
-Write the items in that order, then a join with vowel **e**. (Mnemonic: **e** order.) The earlier item outranks the later. One item before `zel` means *only X matters* / *X first*.
+Write the items in that order, then a join with vowel **e**. The earlier item outranks the later. One item before `zel` means *only X matters* / *X first*. (cue: **e** ≈ order.)
 
 ```
 `zazawan zel.`
@@ -160,12 +160,12 @@ gloss: `z-grace@` · `z-rank`
 
 You can name a list without saying which member you mean (*someone* / *something* in it). Put ending **-r** on the join for that unspecified member. Use **-r** on single-vowel **a** / **o** / **e** / **u** only.
 
-| Vowel | Form | Reading |
-|-------|------|---------|
-| **a** | `zar` / `var` / `xar` | *something* / *do something* / *something happened* |
-| **o** | `zor` / `vor` / `xor` | *anything* / *do anything* |
-| **e** | `zer` / `ver` / `xer` | *whatever ranks highest* |
-| **u** | `zur` / `vur` / `xur` | *something else* / *someone else* |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| `zar` / `var` / `xar` | unspecified member of an add-set | *something* / *do something* / *something happened* | **a** ≈ add |
+| `zor` / `vor` / `xor` | unspecified member of a menu | *anything* / *do anything* | **o** ≈ one |
+| `zer` / `ver` / `xer` | unspecified member of a ranking | *whatever ranks highest* | **e** ≈ order |
+| `zur` / `vur` / `xur` | unspecified leftover | *something else* / *someone else* | **u** ≈ undo |
 
 ```
 `zar.`
@@ -198,19 +198,19 @@ Write A and B, then `zar`: the join still ends both items, and **-r** means some
 ### Vowels and endings (recap)
 <a id="join-type-vowel-series"></a>
 
-| Vowel | English job | Mnemonic |
-|-------|-------------|----------|
-| **a** | *and* (inventory) | **a** add |
-| **o** | exclusive *or* | **o** one |
-| **u** | *not* / *none of* / standalone *no* | **u** undo |
-| **ua** | standalone *everything*; one item → *everything but* | undo + add |
-| **e** | rank (*A before B*); one item → *only X matters* | **e** order |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **a** | inventory join | *and* | **a** ≈ add |
+| **o** | exclusive choice | exclusive *or* | **o** ≈ one |
+| **u** | deny the listed | *not* / *none of* / standalone *no* | **u** ≈ undo |
+| **ua** | universal; one listed item is the leftover | standalone *everything*; one item *everything but* | **u** ≈ undo, then **a** ≈ add |
+| **e** | rank among items | *A before B*; one item *only X matters* | **e** ≈ order |
 
-| Ending | Job | Mnemonic |
-|--------|-----|----------|
-| **-l** | closed: the listed items are the only ones in play | *locked list* |
-| **-m** | open: other items may exist (*among others*) | *maybe more* |
-| **-r** | unspecified member of the join | *someone in the list* |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **-l** | the listed items are the only ones in play | closed | **l** ≈ locked list |
+| **-m** | other items may exist | *among others* | **m** ≈ maybe more |
+| **-r** | unspecified member of the join | *someone* / *something* in the list | **r** ≈ member you have not named |
 
 The same vowels and endings work under `/d/` `/b/` (`dal`, `dam`, …), `/v/` (`val`, `vam`, …), `/ɡ/` (`gal`, `gul`, …), and `/x/` (`xal`, `xam`, …). Match the join’s first letter to the items.
 
@@ -218,8 +218,8 @@ The same vowels and endings work under `/d/` `/b/` (`dal`, `dam`, …), `/v/` (`
 
 Two or more items still take the same vowel and ending as the lists above. The table below is the readings when the join stands alone, or when only one item sits before it.
 
-| Form | Arity | Reading |
-|------|-------|---------|
+| Agalan | Use | English |
+|--------|-----|---------|
 | `zal` / `zam` | standalone | *nothing* / *nobody* · *nothing comes to mind* |
 | `zol` / `zom` | standalone | *no options* · *no pick* / *skipping is fine* |
 | `zul` / `zum` | standalone | *no* |
@@ -240,21 +240,21 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *beauty* (name **Uhubun**) | `uhubu` |
-| *dog* | `odogo` |
-| *cat* | `agada` |
-| *tea* | `adeda` |
-| *coffee* | `ogove` |
-| *water* | `unude` |
-| *challenging* | `omona` |
-| *person* | `ebere` |
-| *walk* | `awala` |
-| *run* | `urunu` |
-| *sleep* | `elebe` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *beauty* (name **Uhubun**) | `uhubu` | |
+| *dog* | `odogo` | |
+| *cat* | `agada` | |
+| *tea* | `adeda` | |
+| *coffee* | `ogove` | |
+| *water* | `unude` | |
+| *challenging* | `omona` | |
+| *person* | `ebere` | |
+| *walk* | `awala` | |
+| *run* | `urunu` | |
+| *sleep* | `elebe` | |
 
 #### English → Agalan
 
@@ -367,8 +367,8 @@ The starter table above covers common cases. Below are the full phrase-level sin
 
 Apply these readings when there is only one item in the list.
 
-| Form | Single-item reading |
-|------|---------------|
+| Agalan | English |
+|--------|---------|
 | **…el** (`zel` / …) | *only X matters* / *X, period*; + SHARED scale → superlative — [comparatives.md](comparatives.md) |
 | **…em** (`zem` / …) | *X first* / *mainly X*; + SHARED scale → open superlative |
 | **…ael** (`zael` / …) | *X tied for* / equal priority to X |
@@ -385,8 +385,8 @@ Apply these readings when there is only one item in the list.
 
 Apply these readings when the join stands by itself (empty list). Standalone **e** answers *who first / what's your favorite* with **no descending ranking** (no favorite). Standalone **ue** answers *who last / what do you not want* with **no ascending ranking** (no least, no veto). Closed **-l** is a fact about the set; open **-m** is a shrug.
 
-| Form | Standalone reading |
-|------|--------------|
+| Agalan | English |
+|--------|---------|
 | **…el** (`zel` / …) | *no favorite* / *nobody's first*; + SHARED scale → unspecified who's top |
 | **…em** (`zem` / …) | *whichever* (not picking who goes first) |
 | **…ael** (`zael` / …) | *it's a draw* / *tie* |
@@ -405,8 +405,8 @@ Apply these readings when the join stands by itself (empty list). Standalone **e
 
 Apply these readings when there is only one item in the list.
 
-| Form | Single-item reading |
-|------|---------------|
+| Agalan | English |
+|--------|---------|
 | **…al** (`zal` / …) | *just X* / *only X* |
 | **…am** (`zam` / …) | *X, for one* / *X, say* |
 | **…ol** (`zol` / …) | *has to be X* |
@@ -430,8 +430,8 @@ Apply these readings when there is only one item in the list.
 
 Apply these readings when the join stands by itself (empty list).
 
-| Form | Standalone reading |
-|------|--------------|
+| Agalan | English |
+|--------|---------|
 | **…al** (`zal` / …) | *nothing* / *nobody* |
 | **…am** (`zam` / …) | *nothing comes to mind* |
 | **…an** (`zan` / …) | *null* / *void* (standalone-only under `/z/` `/d/` `/b/` `/w/`) |
@@ -477,11 +477,11 @@ Fence chains keep ranking from **spoken item order** before the right-close join
 
 Leading **u** on **a** / **o** / **e** flips the base join. Plain **u** (negation) is a different row: *not / none of*.
 
-| Form | Reading |
-|------|---------|
-| **ua** | *everything but* the listed |
-| **uo** | *anything but* the listed (free choice outside) |
-| **ue** | rank reversal (*A after B after C*) |
+| Agalan | English | Cue |
+|--------|---------|-----|
+| **ua** | *everything but* the listed | **u** ≈ undo + **a** ≈ add |
+| **uo** | *anything but* the listed (free choice outside) | **u** ≈ undo + **o** ≈ one |
+| **ue** | rank reversal (*A after B after C*) | **u** ≈ undo + **e** ≈ order |
 
 Those three stacks are the invert set. Domain for **ua** / **uo** comes from context or SHARED `/ɡ/` as kind — [universals, domains, and generics](#universals-domains-generics). Only **`…om`** carries *or none*; **-m** on invert forms does not add empty-allowed. **-r** attaches only to single-vowel **a** / **o** / **e** / **u**.
 
@@ -522,8 +522,8 @@ gloss: `z-tea` · `z-coffee` · `z-everything-but`
 
 Mark kind / domain with ordinary **SHARED `/ɡ/`**. Items under **ua** / **uo** are **exclusions** from that domain.
 
-| Shape | Reading |
-|-------|---------|
+| Agalan | English |
+|--------|---------|
 | standalone `zual` | *everything* / *everyone* |
 | `zual` + SHARED `/ɡ/` | *every K* (`zual gagadal` = *every cat*) |
 | `zuam` + SHARED `/ɡ/` | soft universal of K |
@@ -584,8 +584,8 @@ gloss: `z-dog` · `z-cat` · `z-and.open` · `g-ownership` · `b-grace@`
 
 Flat coordination uses **one** right-close fence. **Nested** joins stack multiple right closes from the left: the first join closes the earlier items, then that bundle plus the next item takes the next join.
 
-| Pattern | Example | Reading |
-|---------|---------|---------|
+| Pattern | Agalan | English |
+|---------|--------|---------|
 | flat | `A B C vol` | *A or B or C* |
 | nested | `A B vol C val` | *(A or B) and C* |
 
@@ -599,8 +599,8 @@ Same rule at phrase, verb-phrase, and clause level.
 
 On **`/x/`** only, join **-n** is **sequence**. This join-word **-n** (with phrase **-n** and join-acts / join-relations) is the **only** exception to [ordinary named **-n**](reference-suffix.md#proper-name--n). Narrative *and then* is **`xan`**.
 
-| Form | Sequence reading |
-|------|----------------|
+| Agalan | English |
+|--------|---------|
 | `xan` | *and then…* |
 | `xon` | *or maybe…* — uncertain alternatives |
 | `xun` | soft *not* / *none of… as I recall…* |
@@ -657,24 +657,24 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *beauty* (name **Uhubun**) | `uhubu` |
-| *dog* | `odogo` |
-| *cat* | `agada` |
-| *tea* | `adeda` |
-| *coffee* | `ogove` |
-| *water* | `unude` |
-| *challenging* | `omona` |
-| *onion* | `onuno` |
-| *cucumber* | `ugume` |
-| *apple* | `abele` |
-| *see* | `eje` |
-| *walk* | `awala` |
-| *run* | `urunu` |
-| *sleep* | `elebe` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *beauty* (name **Uhubun**) | `uhubu` | |
+| *dog* | `odogo` | |
+| *cat* | `agada` | |
+| *tea* | `adeda` | |
+| *coffee* | `ogove` | |
+| *water* | `unude` | |
+| *challenging* | `omona` | |
+| *onion* | `onuno` | |
+| *cucumber* | `ugume` | |
+| *apple* | `abele` | |
+| *see* | `eje` | from *perception*: the sense you see with |
+| *walk* | `awala` | |
+| *run* | `urunu` | |
+| *sleep* | `elebe` | |
 
 #### English → Agalan
 
@@ -778,8 +778,8 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 When other same-slot material sits nearby, wrap the sub-stretch and its join **inside** a [scope island](spans.md#scope-islands) **`^ … ^`**. The join stands **inside** the island and absorbs only matching-role material there.
 
-| Shape | Reading |
-|-------|---------|
+| Agalan | English |
+|--------|---------|
 | `zazawan ^ zunudel zal ^ zam` | *Azawan and (just water)* |
 | `zazawan ^ zal ^ zam` | *Azawan and nothing* |
 | `^ zunudel zal ^` | *just water* alone in the slot |
@@ -842,14 +842,14 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *tea* | `adeda` |
-| *coffee* | `ogove` |
-| *water* | `unude` |
-| *person* | `ebere` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *tea* | `adeda` | |
+| *coffee* | `ogove` | |
+| *water* | `unude` | |
+| *person* | `ebere` | |
 
 #### English → Agalan
 

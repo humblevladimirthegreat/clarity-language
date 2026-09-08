@@ -8,7 +8,7 @@ Use these words when you want to say **when** a claim counts: *only when raining
 
 ### Only when / never (`hal`)
 
-A restrictor names the **occasions** (times or cases) in which the verb claim is true. Put those occasion words immediately **before** the restrictor, in the adverb slot (`/h/`); the restrictor sits last and closes the row from the right, the way a join closes a list. Closed **-l** means this is the full set of times you stand behind. Vowel **`a`** is the inventory-of-times hook.
+A restrictor names the **occasions** (times or cases) in which the verb claim is true. Put those occasion words immediately **before** the restrictor, in the adverb slot (`/h/`); the restrictor sits last and closes the row from the right, the way a join closes a list. Closed **-l** means this is the full set of times you stand behind. (cue: **a** ≈ add, an inventory of times.)
 
 ```
 `zazawan vawalal hanunul hal.`
@@ -18,7 +18,7 @@ gloss: `z-grace@` · `v-walk` · `h-rain` · `h-only-when`
 *Azawan walks only when raining.*
 ```
 
-With **no** occasion listed, the inventory is empty, so the claim never counts: bare **`hal`** is *never*. Same hook: empty **`a`** inventory plus closed **-l**.
+With **no** occasion listed, the inventory is empty, so the claim never counts: bare **`hal`** is *never*. (cue: empty **a** ≈ add inventory plus closed **-l**.)
 
 ```
 `zululon vawalal hal.`
@@ -40,7 +40,7 @@ gloss: `z-grace@` · `v-walk` · `h-haste` · `h-quietude`
 
 ### Always (`hual`)
 
-To say the verb claim counts at every time, or at every time except some listed ones, use **`hual`** (open **`huam`** if you want a hedge: *as far as you can tell*). Bare **`hual`** is *always*; with occasion words before it, those times are the exceptions (*always except when…*). Recall hook: **`ua`** is undo plus add (every time, minus any times you listed).
+To say the verb claim counts at every time, or at every time except some listed ones, use **`hual`** (open **`huam`** if you want a hedge: *as far as you can tell*). Bare **`hual`** is *always*; with occasion words before it, those times are the exceptions (*always except when…*). (cue: **u** ≈ undo then **a** ≈ add.)
 
 ```
 `zuhubun vuzunul hual.`
@@ -62,11 +62,11 @@ gloss: `z-grace@` · `v-walk` · `h-rain` · `h-always-except`
 
 You can name *sometime*, *anytime*, or *sometime else* without listing a content word such as *rain*. Use ending **-r** on the restrictor (`har` / `hor` / `hur`): **-r** names some member of the time inventory without spelling that member. Nothing is required before it.
 
-| Form | Reading | Mnemonic |
-|------|---------|----------|
-| **`har`** | *sometime* | **-r** some member of the time inventory |
-| **`hor`** | *anytime* | **o** one-choice, unspecified |
-| **`hur`** | *sometime else* | **u** other-than, unspecified |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`har`** | unspecified member of the time inventory | *sometime* | **-r** names a member |
+| **`hor`** | unspecified member of a one-choice time menu | *anytime* | **o** ≈ one |
+| **`hur`** | unspecified leftover time | *sometime else* | **u** ≈ undo |
 
 ```
 `zululon vurunul har.`
@@ -96,19 +96,19 @@ gloss: `z-grace@` · `g-happy` · `w-never`
 *Azawan is never happy.*
 ```
 
-| Prefix | What it limits |
-|--------|----------------|
-| `/h/` | the **clause** (the verb claim) |
-| `/w/` | the **previous adjective** |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| `/h/` | limits the clause | *when the verb claim counts* | **h** starts *how* / *when* / *where* |
+| `/w/` | limits the previous adjective | *never happy* (on that adjective) | **w** ≈ with (stuck to that adjective) |
 
 ### Listed occasions (open)
 
-Open **-m** leaves other occasions possible: *when raining, among other times*, not *only when*. Each listed piece is a simple adverb (or `/w/` adjective-limiter) content word; every piece and the restrictor share the same role letter. Bare open **`ham`** hedges *never* (*never, as far as you can tell*). Vowel hooks stay **`a`** inventory and **`ua`** always-minus-these.
+Open **-m** leaves other occasions possible: *when raining, among other times*, not *only when*. Each listed piece is a simple adverb (or `/w/` adjective-limiter) content word; every piece and the restrictor share the same role letter. Bare open **`ham`** hedges *never* (*never, as far as you can tell*). (cue: **a** ≈ add; **ua** ≈ undo then add.)
 
-| Form | With occasion(s) | Bare | Mnemonic |
-|------|------------------|------|----------|
-| **`hal` / `ham`** | *only when…* / *when…, among other occasions* | *never* / *never, as far as you can tell* | **a** inventory of times |
-| **`hual` / `huam`** | *always except when…* | *always* / *always, as far as you can tell* | **ua** always, minus these times |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`hal` / `ham`** | listed times; empty list is *never* | *only when…* / *when…, among other occasions* · bare *never* / *never, as far as you can tell* | **a** ≈ add |
+| **`hual` / `huam`** | every time minus listed exceptions | *always except when…* · bare *always* / *always, as far as you can tell* | **u** ≈ undo then **a** ≈ add |
 
 ```
 `zazawan velebel hanunul hunugul ham.`
@@ -125,20 +125,20 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *beauty* (name **Uhubun**) | `uhubu` |
-| *walk* | `awala` |
-| *run* | `urunu` |
-| *sing* | `uzunu` |
-| *sleep* | `elebe` |
-| smile → *happy* (**-m**) | `uzumu` |
-| *rain* | `anunu` |
-| *night* | `unugu` |
-| dash → *haste* (**-m**) | `adaza` |
-| owl → *quietude* (**-m**) | `owo` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *beauty* (name **Uhubun**) | `uhubu` | |
+| *walk* | `awala` | |
+| *run* | `urunu` | |
+| *sing* | `uzunu` | |
+| *sleep* | `elebe` | |
+| *happy* (**-m**) | `uzumu` | from *smile*: the face of *happy* |
+| *rain* | `anunu` | |
+| *night* | `unugu` | |
+| *haste* (**-m**) | `adaza` | from *dash*: a burst of speed |
+| *quietude* (**-m**) | `owo` | from *owl*: the quiet bird |
 
 #### English → Agalan
 
@@ -269,35 +269,35 @@ One restrictor chain fills one floating `/h/` unit, or one `/w/` stack slot on i
 
 #### Set / invert / inclusive
 
-| Form | With occasion(s) | Bare | Mnemonic |
-|------|------------------|------|----------|
-| **`hal` / `ham`** | *only when…* (closed) / *when…, among other occasions* (open) | ***never*** / *never that you can think of* | **a** inventory |
-| **`hol` / `hom`** | *either when A or when B (not both)*; **`hom`** also allows *or never* | | **o** one-choice |
-| **`haol` / `haom`** | *when A and/or when B* (any of these occasions suffices) | | **ao** add + choice |
-| **`hul` / `hum`** | *not when…* / *not when…, for one* | | **u** undo |
-| **`hual` / `huam`** | *always except when…* | ***always*** / *always, as far as you can tell* | **ua** undo + add |
-| **`huol` / `huom`** | *anytime except when…* | | **uo** undo + choice |
+| Agalan | English (with occasions) | English (bare) | Cue |
+|--------|--------------------------|----------------|-----|
+| **`hal` / `ham`** | *only when…* (closed) / *when…, among other occasions* (open) | ***never*** / *never that you can think of* | **a** ≈ add |
+| **`hol` / `hom`** | *either when A or when B (not both)*; **`hom`** also allows *or never* | | **o** ≈ one |
+| **`haol` / `haom`** | *when A and/or when B* (any of these occasions suffices) | | **a** ≈ add + **o** ≈ one |
+| **`hul` / `hum`** | *not when…* / *not when…, for one* | | **u** ≈ undo |
+| **`hual` / `huam`** | *always except when…* | ***always*** / *always, as far as you can tell* | **u** ≈ undo then **a** ≈ add |
+| **`huol` / `huom`** | *anytime except when…* | | **u** ≈ undo + **o** ≈ one |
 
 #### Ranked (with listed occasions)
 
 Closed **`hel`** ranks **when** it matters. **`hal`** still means *only when* these times, with no priority among them.
 
-| Form | Reading | Mnemonic |
-|------|---------|----------|
-| **`hel` / `hem`** | *preferably when A ≻ when B…* (closed / open priority of occasions) | **e** order |
-| **`hael` / `haem`** | *as often as* / *equally when A and when B* | **ae** add in order |
-| **`hoel` / `hoem`** | *if A, else if B…* (fallback occasions) | **oe** choice in order |
+| Agalan | English | Cue |
+|--------|---------|-----|
+| **`hel` / `hem`** | *preferably when A ≻ when B…* (closed / open priority of occasions) | **e** ≈ order |
+| **`hael` / `haem`** | *as often as* / *equally when A and when B* | **a** ≈ add + **e** ≈ order |
+| **`hoel` / `hoem`** | *if A, else if B…* (fallback occasions) | **o** ≈ one + **e** ≈ order |
 
 #### Unspecified-member (`-r`)
 
 Statement readings below. Under question: [questions.md](questions.md#when).
 
-| Form | With occasion(s) | Bare | Mnemonic |
-|------|------------------|------|----------|
+| Agalan | English (with occasions) | English (bare) | Cue |
+|--------|--------------------------|----------------|-----|
 | **`har`** | *sometime among these* | *sometime* | **-r** some member |
-| **`hor`** | *anytime among these* | *anytime* | **o** + **-r** |
-| **`hur`** | *sometime other than these* | *sometime else* | **u** + **-r** |
-| **`hael`** | *as often as among these* / *equally when these* | *equally often* / *tied frequency frame* | **ae** even with **-l** |
+| **`hor`** | *anytime among these* | *anytime* | **o** ≈ one + **-r** |
+| **`hur`** | *sometime other than these* | *sometime else* | **u** ≈ undo + **-r** |
+| **`hael`** | *as often as among these* / *equally when these* | *equally often* / *tied frequency frame* | **a** ≈ add + **e** ≈ order |
 
 ### More examples
 
@@ -327,25 +327,25 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *beauty* (name **Uhubun**) | `uhubu` |
-| *walk* | `awala` |
-| *run* | `urunu` |
-| *sing* | `uzunu` |
-| *sleep* | `elebe` |
-| *write* | `uwuru` |
-| *rain* | `anunu` |
-| *snow* | `ozowo` |
-| *night* | `unugu` |
-| house → *home* (**-m**) | `ohohu` |
-| ambulance → *emergency* (**-m**) | `amubu` |
-| convenience-store → *convenience* (**-m**) | `ozore` |
-| *repair* | `ereba` |
-| wrench → *workaround* (**-m**) | `ewene` |
-| *next clause* | `adoro` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *beauty* (name **Uhubun**) | `uhubu` | |
+| *walk* | `awala` | |
+| *run* | `urunu` | |
+| *sing* | `uzunu` | |
+| *sleep* | `elebe` | |
+| *write* | `uwuru` | |
+| *rain* | `anunu` | |
+| *snow* | `ozowo` | |
+| *night* | `unugu` | |
+| *home* (**-m**) | `ohohu` | from *house*: where you live |
+| *emergency* (**-m**) | `amubu` | from *ambulance*: urgent help |
+| *convenience* (**-m**) | `ozore` | from *convenience-store*: ready to hand |
+| *repair* | `ereba` | |
+| *workaround* (**-m**) | `ewene` | from *wrench*: a tool that still works |
+| *next clause* | `adoro` | 🚪 *doorway*: the next sentence walks through |
 
 #### English → Agalan
 
