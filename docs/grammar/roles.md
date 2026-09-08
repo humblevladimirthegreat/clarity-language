@@ -1,7 +1,7 @@
 # Roles and viewpoints
 <a id="roles"></a>
 
-Name event participants (*fighter*, *the one fought*), compass sides, and **whose** left / right you mean.
+Name who plays which part in an event from that event’s stem (*a fighter*, *the one fought*).
 
 ## Beginner
 <a id="beginner"></a>

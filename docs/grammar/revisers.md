@@ -4,7 +4,7 @@
 <a id="in-clause-revision"></a>
 <a id="revisers"></a>
 
-Prefix-less vowel + **-l** / **-m** / **-n** words that **revise** a role in the sentence, or glue this sentence to prior talk.
+Prefix-less vowel + ending words that **revise** a role in the sentence, or glue this sentence to prior talk.
 
 ## Beginner
 <a id="beginner"></a>

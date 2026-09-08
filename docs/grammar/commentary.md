@@ -1,7 +1,7 @@
 # Commentary and evidentiality
 <a id="commentary"></a>
 
-First-person *I think*, how you know a world-claim, and *as if* framing — closed `/h/` mood roots.
+First-person *I think* as a take over the scene.
 
 ## Beginner
 <a id="beginner"></a>

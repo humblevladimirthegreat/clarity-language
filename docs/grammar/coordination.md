@@ -1,6 +1,6 @@
 # Joins
 
-Join same-slot material (noun phrases, verb phrases, or clause bodies) with a **right-close fence**: the items, then the join, then optional SHARED scale / continuum material.
+Join same-slot material (noun phrases, verb phrases, or clause bodies) with a **right-close fence**: the items, then the join.
 
 ## Beginner
 <a id="beginner"></a>

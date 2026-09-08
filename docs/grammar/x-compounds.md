@@ -2,7 +2,7 @@
 <a id="x-compounds"></a>
 <a id="compound-parser"></a>
 
-How you tell, in an ordinary word, which **job** a mid-word **`x`** is doing. Inside a content word, **`x`** sits at the seam between pieces (ordinary [compound](phonology.md#phonotactics)). Word-initial **`x`** is the continue PoS, a different job.
+How you tell, in an ordinary word, which **job** a mid-word **`x`** is doing.
 
 ## Beginner
 <a id="beginner"></a>

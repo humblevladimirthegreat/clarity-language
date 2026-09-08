@@ -1,7 +1,7 @@
 # Restrictors (`/h/` / `/w/`)
 <a id="restrictors"></a>
 
-Same vowel-and-ending shapes as joins, used under `/h/` or `/w/` to say **when** the host applies: *only when…*, *never*, *always*, *sometime*.
+Same vowel-and-ending shapes as joins, used under `/h/` or `/w/` to say **when** the host applies: *only when…*, *never*, *always*.
 
 ## Beginner
 <a id="beginner"></a>

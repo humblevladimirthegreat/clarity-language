@@ -2,9 +2,9 @@
 <a id="causation"></a>
 <a id="necessary-sufficient"></a>
 
-How to say *A would work for B*, *B needs A*, and *if* / *because*.
+How to say *A would work for B*, *B needs A*, and clause *if* / *because*.
 
-**Needs:** [Joins](coordination.md) (inclusive and exclusion) and [dependent clauses](core.md#dependent-clauses) (**`adoro`**).
+**Needs:** [Joins](coordination.md) and [dependent clauses](core.md#dependent-clauses) (**`adoro`**).
 
 ## Beginner
 <a id="beginner"></a>
@@ -61,30 +61,7 @@ gloss: `z-book` · `z-and/or`
 | **`…ao…`** (two or more items) | several jointly listed hits | **`a`** add several routes |
 | **`…aol`** | *X is enough* (this route settles it) | **`a`** add, **-l** locked |
 
-### *If* / *because* (clause poles)
-<a id="clause-poles-beginner"></a>
-
-When English would say *if* or *because* between **two full sentences**, use the [dependent-clause](core.md#dependent-clauses) pair you already know: `/h/` + `/b/` **`adoro`**, last in the main sentence. The `/h/` word takes metaphorical **-m**.
-
-Mnemonic: 🚪 **`adoro`** is a **door** (*opportunity*) → *if*; 🧱 **`urugu`** is a **brick** (*foundation*) → *because*.
-
-```
-`zazawan vawalal hadorom badorol zululon velebel.`
-
-gloss: `z-grace@` · `v-walk` · `h-if` · `b-next-clause` · `z-courage@` · `v-sleep`
-
-*Azawan walks if Ululon sleeps.*
-```
-
-```
-`zazawan vawalal hurugum badorol zululon velebel.`
-
-gloss: `z-grace@` · `v-walk` · `h-because` · `b-next-clause` · `z-courage@` · `v-sleep`
-
-*Azawan walks because Ululon sleeps.*
-```
-
-**Compare with:** *would work* / among routes uses open inclusive **`…aom`** above. *If* / *because* use **`hadorom` / `hurugum`** + **`badorol`**.
+**For *if* / *because*, use:** a [dependent clause](core.md#dependent-clauses) with **`hadorom` / `hurugum`** + **`badorol`**.
 
 ### Translation practice
 <a id="translation-practice"></a>

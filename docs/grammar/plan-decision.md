@@ -1,7 +1,7 @@
 # Plan, predict, and decision
 <a id="plan-decision"></a>
 
-Say whether a clause is **intention**, a **forecast**, or a **revisable pick**, using closed `/h/` mood roots.
+Mark a clause as **intention** or a **forecast** with a closed `/h/` mood root.
 
 ## Beginner
 <a id="beginner"></a>

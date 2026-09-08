@@ -2,7 +2,7 @@
 <a id="values"></a>
 <a id="value-ascription"></a>
 
-How to name a **need** and how you relate to it: topic, met, unmet, motive, or prescription.
+How to name a **need** and how you stand toward it (topic, met, ought, unmet).
 
 ## Beginner
 <a id="beginner"></a>

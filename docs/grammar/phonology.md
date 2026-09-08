@@ -1,7 +1,7 @@
 # Phonology and phonotactics
 <a id="phonology"></a>
 
-How Agalan **sounds**, and how you build syllables so spelling matches speech. The design favors easy singing and clear word edges (including inside compounds).
+How Agalan **sounds**, and how you build syllables so spelling matches speech.
 
 ## Beginner
 <a id="beginner"></a>

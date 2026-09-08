@@ -1,6 +1,6 @@
 # Spans
 
-Package wording (cite / aside / mention / opaque) with a role letter, a span kind, how far the open runs, and an ending. Writing uses brackets; speech uses open / close words.
+Package special wording (quotes, asides, mentions, loans) with a role letter and a fence. Writing uses brackets.
 
 ## Beginner
 <a id="beginner"></a>

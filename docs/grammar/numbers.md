@@ -1,7 +1,7 @@
 # Numbers
 <a id="numbers"></a>
 
-Count and rank with number words. A whole numeric value is **one word**, even when it contains several digit groups (or none).
+Count and rank with number words. A whole numeric value is **one word**.
 
 
 ## Beginner

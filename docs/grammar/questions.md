@@ -1,6 +1,6 @@
 # Questions
 
-How to **ask** in Agalan: under question (**jol** / soft **jom**), yes/no vs fill-ask, **fill-all**, and **polar stance** particles (**`jael`** / **`juel`** / …).
+How to **ask**: put the sentence under question, fill a blank, or answer with a *yes* / *no* / *sure* stance.
 
 ## Beginner
 <a id="beginner"></a>

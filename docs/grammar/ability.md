@@ -1,7 +1,7 @@
 # Ability
 <a id="ability-page"></a>
 
-Tag **can** / **can’t** on an activity or property. The vowel marks stance. Ordinary [reference-suffix](reference-suffix.md) endings apply.
+Tag **can** / **can’t** on an activity or property. Ordinary [reference-suffix](reference-suffix.md) endings apply.
 
 ## Beginner
 <a id="beginner"></a>
