@@ -6,14 +6,12 @@ How Agalan says English *is* for **kind / role** (*Azawan is a dog*) and **ident
 ## Beginner
 <a id="beginner"></a>
 
-### Classification (property)
+### Property (*is ADJ*)
 <a id="classification-property"></a>
 
-Put a property on the subject with an adjective (`/ɡ/`): name (or other noun) plus the describing word. English *is* in *Azawan is challenging* is already in that pair. Extra detail (`/w/`) or an extra noun (`/b/`) hangs on the adjective. Clause-level extras (`/h/`) still mark the whole statement.
+To say someone *is ADJ* (a quality), put that adjective (`/ɡ/`) right after the name. English *is* in *Azawan is challenging* is already that pair.
 
-| Form | Job | Example | Mnemonic |
-|------|-----|---------|----------|
-| subject + `/ɡ/` | property (*is ADJ*) | `zazawan gomonam` *Azawan is challenging* | the adjective does the *is* job |
+Mnemonic: the adjective does the *is* job.
 
 ```
 `zazawan gomonam.`
@@ -23,15 +21,12 @@ gloss: `z-grace@` · `g-challenging`
 *Azawan is challenging.*
 ```
 
-### Classification
+### Kind / role
 <a id="classification"></a>
 
-**Classification** is saying someone or something **is that kind** (role, category). Use the same adjective pattern: the kind sits on `/ɡ/` on the classified noun.
+**Classification** is saying someone or something **is that kind** (a role or category). Use the same adjective pattern: the kind sits on `/ɡ/` after the classified noun.
 
-| Pattern | Example | Reading |
-|---------|---------|---------|
-| Kind / role as `/ɡ/` | `zazawan godogol` | *Azawan is a dog* |
-| Named category / titled role | `zazawan godogon` | *Azawan is Dog* (proper designation); [**-n** on `/ɡ/`](reference-suffix.md) |
+Mnemonic: same `/ɡ/` slot as a quality.
 
 ```
 `zazawan godogol.`
@@ -41,17 +36,17 @@ gloss: `z-grace@` · `g-dog`
 *Azawan is a dog.*
 ```
 
-When you **talk about** the kind as a participant, use a noun (`zodogol` *a dog*). When you **say the subject is that kind**, keep the kind on the adjective (`zazawan godogol`). Event and action meanings use a verb (`/v/`). English *be* between two nouns is this adjective pattern, not a verb.
+A titled name of that kind uses **-n** on the adjective ([reference suffix](reference-suffix.md)): `zazawan godogon` *Azawan is Dog*.
+
+When the kind is who acts, use a noun plus a verb: `zodogol vawalal` *A dog walks*. When you say the subject **is** that kind, keep the kind on `/ɡ/`.
 
 ### Identity (**SAME**)
 <a id="identity"></a>
 <a id="same"></a>
 
-**Identity** is two expressions for **one** person or thing (*Clark is Superman*, *this is that*). Use the closed adjective **`SAME`**: `gonunu` plus an extra noun (`/b/`).
+**Identity** is two labels for **one** person or thing (*Clark is Superman*). Use the closed adjective **`SAME`**: `gonunul` plus an extra noun (`/b/`) for the other label.
 
-| Form | Job | Mnemonic |
-|------|-----|----------|
-| **`onunu`** (`gonunu` + `/b/`) | *identical-to* / *same-as* | 🪙 *coin*: two faces, one substance (two labels, one referent) |
+Mnemonic: **`onunu`** 🪙 *coin*: two faces, one substance.
 
 ```
 `z<Clark>n gonunul b<Superman>n.`
@@ -69,13 +64,9 @@ gloss: `z-dog` · `g-SAME` · `b-grace@`
 *The dog is Azawan.*
 ```
 
-| Piece | Role |
-|-------|------|
-| subject | the expression treated as given |
-| **`gonunu`** | *identical-to* / *same-as* |
-| extra noun (`/b/`) | the other label or description |
+Keep `gonunul` and that `/b/` word **next to each other**.
 
-`gonunu` and its extra noun stay **next to each other**, like other adjective-plus-extra-noun groups (`goborul bazawan`).
+**Compare with:** *Azawan is a dog* uses [kind / role](#classification) (`godogol`). Use **`SAME`** for two labels for one person.
 
 ### Translation practice
 <a id="translation-practice"></a>

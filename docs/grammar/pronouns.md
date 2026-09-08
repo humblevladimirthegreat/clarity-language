@@ -7,16 +7,11 @@ Once something is on the table, you point back with a **-r** form.
 
 ### Resume with **-r**
 
-A pronoun can point at **any prior word** (noun, verb, adjective, and so on). English often treats pronouns as stand-ins for people in subject position; Agalan **-r** can resume whatever you just mentioned.
+Once a person or thing is already in the talk, point back with **-r**. **-r** = **r**esume.
 
-It takes the usual role letter for the slot you need **now** (that letter need not match the word you are pointing back to) and ends in **-r**. Call the word you point back to the **antecedent**.
+The **antecedent** is the word you point back to. The resume word takes the role letter for the slot you need **now**, then a **prefix of that word’s root**, then **-r**. The listener takes the **most recent** word whose stem matches.
 
-Two stem lengths:
-
-1. **Short resume:** a **fixed prefix of that word’s root**, cut **up to and including the 2nd vowel** (typically the opening `VCV`). Prefer this when it already picks the right antecedent.
-2. **Full-root resume:** the **entire root** + **-r**. Use this when the short form’s most recent match is **not** what you mean.
-
-**-r** = **r**esume. The listener always takes the **most recent matching** stem. Make the intended one most recent: short form, full root, or an adjective / ordinal that singles it out.
+**Short resume:** cut the root **up to and including its 2nd vowel**. Prefer this when it already picks the right antecedent.
 
 ```
 `zazawan vawalal. zazar vajul.`
@@ -26,32 +21,22 @@ gloss: `z-grace@` · `v-walk` · `z-←grace` · `v-sit`
 *Azawan walks. He sits.* (resume from the name’s root prefix)
 ```
 
-Add **-sh** after **-r** for a **group** referent (anchor **and associates**): [plurality.md](plurality.md). `…r` = one; `…rsh` = that one and associates.
+When that short stem would match the **wrong** recent word, use a **full-root resume**: the **entire root** + **-r**.
+
+```
+`zodogol vawalal. zabogol gelem. zodogor vajul.`
+
+gloss: `z-dog` · `v-walk` · `z-book` · `g-size~` · `z-←dog` · `v-sit`
+
+*A dog walks. A book is big. The dog sits.*
+```
 
 ### Special pronouns
 <a id="special-pronouns"></a>
 
-Some pronouns name **roles in this utterance** (speech, writing, signing: any channel). They take the usual role letter for the slot they fill.
+Some words name **roles in this talk**: who is speaking, who is addressed, and a few other fixed jobs. They take the usual role letter for the slot they fill. Person roles default to **-n**.
 
-```
-`zugobon vuwurul dedonen.`
-
-gloss: `z-speaker` · `v-write` · `d-listener`
-
-*I write you.*
-```
-
-| Role | Root | Mnemonic | Default ending | Example |
-|------|------|----------|----------------|---------|
-| **Speaker** | **`ugobo`** | 🎤 *microphone* → *producer-role* | **-n** | `zugobon` *I* |
-| **Listener** | **`edone`** | 🎧 *headphones* → *addressee-role* | **-n** | `dedonen` *you* |
-| **Interlocutors** | **`aha`** | 🤝 *handshake* → *co-participants* | **-n** | `zahan` *we* (speaker ∪ address set) |
-| **Generic person** | **`enenu`** | 👤 *silhouette* → *a person* | **-n** | `zenenun` *someone* |
-| **Next clause** | **`adoro`** | 🚪 *doorway* → *what follows* | **-l** | `badorol` / `dadorol`: placeholder for the dependent that follows |
-
-Person roles default to **-n** (definite specials). Soft **-m** hedges the role framing. **`adoro`** defaults to **-l** (exact forward slot); soft **-m** hedges the dependent edge.
-
-**Prefer names.** When a proper name is available, use **-n** and/or its **-r** resume, including for self-address, rather than **`ugobo`** / **`edone`**. See [proper name](reference-suffix.md#proper-name--n).
+When a proper name is available, prefer that name (and its **-r** resume), including for talking about yourself: [proper name](reference-suffix.md#proper-name--n).
 
 ```
 (Ululon speaking) `zululon vawalal.`
@@ -59,6 +44,16 @@ Person roles default to **-n** (definite specials). Soft **-m** hedges the role 
 gloss: `z-courage@` · `v-walk`
 
 *I walk.* Ululon names himself rather than saying *I*.
+```
+
+Use **`ugobo`** (*speaker*) and **`edone`** (*listener*) when the point is the role, not a name.
+
+```
+`zugobon vuwurul dedonen.`
+
+gloss: `z-speaker` · `v-write` · `d-listener`
+
+*I write you.*
 ```
 
 ```
@@ -69,6 +64,8 @@ gloss: `z-speaker` · `v-walk`
 *I walk.*
 ```
 
+Inclusive *we* (you and I) uses **`aha`**: **interlocutors**, the speaker and the people being addressed, together. 🤝 *handshake* → *co-participants*.
+
 ```
 `zahan vawalal.`
 
@@ -77,9 +74,17 @@ gloss: `z-interlocutors` · `v-walk`
 *We (you and I) walk.*
 ```
 
-**`enenu`** is a nonspecific **individual**. Once someone is on the table, resume them with content **-r**.
+**`enenu`** is a nonspecific **individual** (*someone*). Once that person is on the table, resume them with content **-r**.
 
-**`adoro`** is the placeholder for the material that **immediately follows** ([dependent clauses](core.md#dependent-clauses)). Put **`adoro` last** in its host slot; the dependent follows with no intervening host words. Same speech act as the main sentence: the dependent may omit `/j/`. A different speech act needs its own act word.
+```
+`zenenun velebel.`
+
+gloss: `z-someone` · `v-sleep`
+
+*Someone sleeps.*
+```
+
+**`adoro`** is the placeholder for the material that **immediately follows** ([dependent clauses](core.md#dependent-clauses)). 🚪 *doorway* → *what follows*. Put **`adoro` last** in its host slot; the dependent follows with no intervening host words. Default ending is **-l**.
 
 ```
 `zugobon dazawan vezehel dadorol zululon vebarul.`
@@ -89,19 +94,37 @@ gloss: `z-speaker` · `d-grace@` · `v-tell` · `d-next-clause` · `z-courage@` 
 *I told Azawan that Ululon left.*
 ```
 
+| Role | Root | Mnemonic | Default ending | Example |
+|------|------|----------|----------------|---------|
+| **Speaker** | **`ugobo`** | 🎤 *microphone* → *producer-role* | **-n** | `zugobon` *I* |
+| **Listener** | **`edone`** | 🎧 *headphones* → *addressee-role* | **-n** | `dedonen` *you* |
+| **Interlocutors** | **`aha`** | 🤝 *handshake* → *co-participants* | **-n** | `zahan` *we* (you and I) |
+| **Generic person** | **`enenu`** | 👤 *silhouette* → *a person* | **-n** | `zenenun` *someone* |
+| **Next clause** | **`adoro`** | 🚪 *doorway* → *what follows* | **-l** | `dadorol` / `badorol` |
+
 ### Clusivity
 <a id="clusivity"></a>
 
 **Clusivity** is who counts as *we* or *you* when names are unavailable.
 
+```
+`zugobonsh vawalal.`
+
+gloss: `z-speaker-sh` · `v-walk`
+
+*We (I and my people) walk.*
+```
+
 | Form | Job | Example |
 |------|-----|---------|
 | `zugobonsh` | speaker **and associates** (listener not assumed) | `zugobonsh vawalal.` *We (I and my people) walk.* |
 | `zedonensh` | **address set**: all current addressees (no speaker) | `zedonensh vajul.` *You all sit.* |
-| `zahan` | **interlocutors**: speaker ∪ address set (inclusive *we*) | `zahan vawalal.` *We (you and I) walk.* |
+| `zahan` | **interlocutors**: speaker and addressees (inclusive *we*) | `zahan vawalal.` *We (you and I) walk.* |
 | name…**-sh** | that person **and associates** | `zazawansh vawalal.` *Azawan and associates walk.* |
 
-Inclusive *we* is **`aha`**. Speaker **-sh** is “me and my people,” not “you and I.” Plural listener is the [address set](plurality.md#person-role-sh) (`zedonensh`); *you and yours* uses a **name**…**-sh**.
+**Compare with:** inclusive *we* uses **`aha`** (`zahan`). Speaker **-sh** is *I and my people*, not *you and I*.
+
+**Not the same job as:** [address set](plurality.md#person-role-sh) **`edone…sh`** (`zedonensh`) is *you all* (addressees only). *You and yours* uses a **name**…**-sh**.
 
 ### Translation practice
 <a id="translation-practice"></a>

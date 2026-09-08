@@ -6,37 +6,45 @@ Name event participants (*fighter*, *the one fought*), compass sides, and **whos
 ## Beginner
 <a id="beginner"></a>
 
-### Role compounds (`a` / `u` / `o` × root)
+### Role compounds: the doer (`a`)
 <a id="role-compounds"></a>
 <a id="agent-patient-reltum"></a>
 
-Name an **event or relation participant** from the event or relation stem: *a fighter*, *the one fought*, *that other party of a bond*.
+Name **who does** an event from that event’s stem (*a fighter* from *fight*). Write a person or thing letter, then **`a`**, then mid-word **`x`**, then the event root, then an ordinary [reference ending](reference-suffix.md). That whole word is a **role compound**.
 
-Write a role vowel, then mid-word **`x`**, then the stem, then an ordinary [reference ending](reference-suffix.md):
-
-```
-PoS + {a|u|o} + x + ROOT + {-l|-m|-n|-r}
-```
-
-**Mnemonic:** the [vowel-series](vowel-series.md) jobs on the left of **`x`**: **`a`** adds a doer, **`u`** takes the undergoer, **`o`** picks the other party of a relation (the `/b/` slot: the **reltum**).
+**Mnemonic:** [vowel-series](vowel-series.md) **`a`** *add*: add a doer.
 
 ```
-`zazawan dululon vuvugul.`
-`zaxuvugur vurunul.`
+`zaxuvugul vurunul.`
 
-gloss: `z-grace@` · `d-courage@` · `v-fight`
 gloss: `z-←agent-x-fight` · `v-run`
 
-*Azawan fought Ululon. The fighter fled.*
+*A fighter runs.*
 ```
 
-Prefer `/z/` `/d/` `/b/` when the word is a person or thing in the clause. To say *Azawan is a fighter*, put the role on `/ɡ/` (`zazawan gaxuvugum`). The noun `zaxuvugul` is *a fighter* as a participant.
+**-l** names a kind. You do not need a prior fight in the talk; `zaxuvugul` is *a fighter* as a participant (`/z/` `/d/` `/b/`).
 
-| ROLE | Form | ROOT type | Referent | Mnemonic |
-|------|------|-----------|----------|----------|
-| **`a`** | `…axROOT…` | **event** (verb / event-noun stem) | **agent**: the doer of that event | **a** add: a doer |
-| **`u`** | `…uxROOT…` | **event** | **patient**: the undergoer of that event | **u** undo: undergoes it |
-| **`o`** | `…oxROOT…` | **relation** (describing / manner stem) | **reltum**: the `/b/` party of that relation | **o** one: that other pole |
+**Compare with:** *can fight* puts the stance vowel **right** of **`x`** ([ability](ability.md): `vuvuguxal`). A fighter puts the role vowel **left** of **`x`**.
+
+### That doer (`-r`)
+
+After you have named the event, **-r** points at **that** doer of the most recent matching stem.
+
+```
+`zazawan vawalal.`
+`zaxawalar velebel.`
+
+gloss: `z-grace@` · `v-walk`
+gloss: `z-←agent-x-walk` · `v-sleep`
+
+*Azawan walks. The walker sleeps.*
+```
+
+### The undergoer (`u`)
+
+**`u`** names who **undergoes** the event: *the one seen*, *the one fought*.
+
+**Mnemonic:** **`u`** *undo*: the one it happens to.
 
 ```
 `zazawan dagadal vejel.`
@@ -48,6 +56,12 @@ gloss: `z-←patient-x-see` · `v-run`
 *Azawan sees a cat. The one seen runs.*
 ```
 
+### The other party (`o`)
+
+Some words are **relations** (who is bound to whom), not events. The extra noun (`/b/`) is the other party of that relation. A role compound with **`o`** names that party: the **reltum**.
+
+**Mnemonic:** **`o`** *one*: that other pole.
+
 ```
 `zazawan gonogol bululon.`
 `zoxonogor vurunul.`
@@ -55,30 +69,42 @@ gloss: `z-←patient-x-see` · `v-run`
 gloss: `z-grace@` · `g-bond` · `b-courage@`
 gloss: `z-←reltum-x-bond` · `v-run`
 
-*Azawan is bound to Ululon. That bond-argument runs.*
+*Azawan is bound to Ululon. That other party of the bond runs.*
 ```
 
-#### Endings
+| Vowel | Form | Stem | Who it names | Mnemonic |
+|-------|------|------|----------------|----------|
+| **`a`** | `…axROOT…` | event | **agent**: the doer | **a** add |
+| **`u`** | `…uxROOT…` | event | **patient**: the undergoer | **u** undo |
+| **`o`** | `…oxROOT…` | relation | **reltum**: the `/b/` party | **o** one |
 
-| Ending | Reading |
-|--------|---------|
-| **-l** | Indefinite / kind: *a fighter*, *fighters as a type* (`zaxuvugul`) |
-| **-m** | Soft / hedged role |
-| **-n** | Titled / epithet role label (rare) |
-| **-r** | Definite: participant of the **most recent matching** event (**`a`/`u`**) or relation (**`o`**) for that ROOT |
+**-r** matches the root to the latest verb, event noun, or relation with that stem (including a root already inside a role compound). Then **`a`** / **`u`** / **`o`** picks doer, undergoer, or other party.
 
-**-r** matches ROOT to the most recent verb, event noun, or relation word with that stem (including a ROOT half inside a prior role compound). ROLE then picks that frame’s agent, patient, or `/b/` party. That still works when the participant first showed up as unspecified-member **`zar`** / **`dar`** / … ([coordination](coordination.md#unspecified-member-r-phrase)).
+### The event itself
 
-A bare event noun is still the event: `zuvugul` / `zuvugur` = *an / that fight*. Content **-r** on a verb resumes the [event](pronouns.md); use **`ax`/`ux`** when you mean the people.
+A bare event noun is still the **event**: `duvugul` *a fight*. Use **`ax`** / **`ux`** when you mean the people.
 
-| Agalan | Gloss |
-|---------|--------|
-| `zaxuvugul` | *a fighter* (kind; no discourse event required) |
-| `duxuvugur` | *the one fought* (as object now) |
-| `zoxonogor` | *that bond-argument* (reltum of a salient `…onogol b-…`) |
-| `zuvugur` | *that fight* (the event) |
+```
+`zazawan duvugul vejel.`
 
-Can / can’t on a host puts the stance vowel **right** of **`x`** (`vuvuguxal` *can fight*). A participant puts the role vowel **left** of **`x`** (`zaxuvugul` *a fighter*). See [ability](ability.md).
+gloss: `z-grace@` · `d-fight` · `v-see`
+
+*Azawan sees a fight.*
+```
+
+**Related form:** a verb’s own **-r** resumes that [event](pronouns.md) (`vuvugur` *that fighting*). Role **`ax`** / **`ux`** names the people.
+
+### Saying someone is a fighter
+
+To **classify** (*Azawan is a fighter*), put the same role stem on `/ɡ/`, as in [classification](predication.md#classification). **-m** hedges the role.
+
+```
+`zazawan gaxuvugum.`
+
+gloss: `z-grace@` · `g-←agent-x-fight`
+
+*Azawan is a fighter, in a manner of speaking.*
+```
 
 ### Translation practice
 <a id="translation-practice"></a>

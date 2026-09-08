@@ -7,25 +7,29 @@ How you tell, in an ordinary word, which **job** a mid-word **`x`** is doing. In
 ## Beginner
 <a id="beginner"></a>
 
-### What mid-word `x` does
+### Families at the seam
 
-Glue two roots into **one** content word. Write **`x`** between them; the ending belongs to the whole word.
-
-Mnemonic: **`x`** is the seam, like a plus between two labels.
+Mid-word **`x`** is the **seam** inside one content word (mnemonic: a plus between two pieces). The ending belongs to the whole word. After the role letter, what sits left and right of the first **`x`** tells you which job you already know.
 
 ```
 `zuzuzuxogoven.`
 
 gloss: `z-sushi-x-coffee@`
 
-*Sushi-Coffee* (one label)
+*Sushi-Coffee* (one named label)
 ```
 
 <AgelanInspect text="zuzuzuxogoven." />
 
-If the lexicon already has a single kind for that meaning, use that word (`zunowel` *sunflower*).
+| You see (after PoS) | Job | Example |
+|---------------------|-----|---------|
+| Full root, **`x`**, full root | Ordinary compound: one label, kind then field | `zuzuzuxogoven` |
+| **`a`** / **`u`** / **`o`**, **`x`**, then a root | [Role compound](roles.md#role-compounds) | `zaxuvugul` *a fighter* |
+| A root, **`x`**, then **`a`** / **`e`** / **`o`** / **`u`** | [Values](values.md) or [ability](ability.md#ability) | `vuzunuxel` |
 
-Shapes with a **vowel** (not a full root) on one side of **`x`**, a **number** on the right, or **more than two** roots, are Intermediate ([left and right of `x`](#families-by-shape)).
+**Compare with:** two people in one slot are two words (`zazawan zululon`), not one seam.
+
+**Not the same job as:** a word that **starts** with **`x`** is [continue](core.md#continue-x), not this seam.
 
 ## Intermediate
 <a id="intermediate"></a>

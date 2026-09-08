@@ -5,102 +5,110 @@ Package wording (cite / aside / mention / opaque) with a role letter, a span kin
 ## Beginner
 <a id="beginner"></a>
 
-English marks special wording with quotes, parentheses, and italics. Agalan uses **span fences**: a role letter plus a bracket pair in writing (or open / close words in speech). The bracket shape tells you the **type**: cite, mention, aside, or opaque.
+English uses quotes, parentheses, and italics for special wording. Agalan uses a **span fence**: a role letter plus a bracket pair. The letter is the span’s job in the outer sentence; the brackets package the interior.
 
-Prefer brackets in ordinary text when a bracket form exists. Spoken open / close words are Intermediate ([spoken word shape](#shape)).
-
-### Writing fences
+### Cite (`[…]`)
 <a id="writing"></a>
 <a id="writing-vs-speech"></a>
 
-Write the **role letter** immediately before any **`@`** / **`~`** marks and the opening bracket (`d[…]`, `z{…}`, `h(…)`, `d<…>`). Marks sit **after** the role letter (`d@[…]`, `d~[…]`).
+A **cite** packages wording you are quoting: what someone said, a title string, or a proverb **as wording**. Write the role letter, then square brackets. Square brackets are the quote marks.
 
-| Brackets | Span type | Mnemonic |
-|----------|-----------|----------|
-| `[` … `]` | **cite** — attributed speech / cited wording (including title strings and proverbs cited as wording) | square quotes: you are **quoting** someone |
-| `{` … `}` | **mention** — the word or form itself (*the word X*); with **-n**, *the saying / proverb / title X* as a named unit | curly braces: you are **holding the form** as an object |
-| `(` … `)` | **aside** — parenthetical digression on `/h/`; still asserted | round parentheses: a **side comment** |
-| `<` … `>` | **opaque** — foreign, code, raw orthography | angle brackets: a **raw blob** |
+Start with one quoted token as the object of *said*:
 
 ```
-`zazawan v[uzunu] d[jael].`
+`zazawan d[hi] vezehel.`
 
-gloss: `z-grace@` · `v-sing` · `d-yes`
+gloss: `z-grace@` · `d-hi` · `v-tell`
 
-*Azawan “sings” a “yes.”*
+*Azawan said “hi.”*
 ```
 
-| Mark | Job |
-|------|-----|
-| *(none)* | **exact** (**-l**) |
-| **`~`** | **paraphrase** (**-m**) — `d~[…]` |
-| **`@`** | **proper** (**-n**) — `d@[…]` |
+The whole `d[hi]` fills `/d/` (who or what is acted on). Interior tokens keep their own letters when they are Agalan words.
 
-To point back at a prior span (**-r**), put **`=`** inside the same brackets: `d[=]`, `d{=}`, `h(=)`, `d<=>`.
+### Exact, paraphrase, proper
+<a id="when-required"></a>
+
+Marks sit **after** the role letter, before the opening bracket.
+
+| Mark | Job | Example | Mnemonic |
+|------|-----|---------|----------|
+| *(none)* | **exact** (**-l**) | `d[hi]` | bare: the wording as written |
+| **`~`** | **paraphrase** (**-m**) | `d~[hi]` | **~** soft: gist, not verbatim |
+| **`@`** | **proper** (**-n**) | `d@[Hamlet]` | **@** name: a titled designation of that wording |
+
+```
+`zululon d~[hi] vuwurul.`
+
+gloss: `z-courage@` · `d-~hi` · `v-write`
+
+*Ululon wrote something like “hi.”*
+```
+
+```
+`zuhubun d@[Hamlet] vuzunul.`
+
+gloss: `z-beauty@` · `d-@Hamlet` · `v-sing`
+
+*Uhubun sang “Hamlet.”*
+```
+
+### Resume (`[=]`)
+
+To point back at a prior span, put **`=`** inside the same brackets: `d[=]`. The ending is **-r**. The role letter is the slot **now**.
 
 ```
 `jol zululon d[=] vezehel.`
 
 gloss: `j-question` · `z-courage@` · `d-←cite` · `v-tell`
 
-*Ululon said that?!* (resume a prior cite)
+*Ululon said that?!*
 ```
 
-### When spans are required
-<a id="when-required"></a>
+### Mention (`{…}`)
 
-Use a span when you need one of these jobs:
-
-| Reading | Use |
-|---------|-----|
-| Someone’s words, a title string, or a proverb **as wording** | **cite** `[…]` |
-| *The title X* / *the proverb X* as a **named unit** | **mention** `{…}` with **`@`** / **-n** |
-| Ordinary *the word X* / the form itself | **mention** `{…}` |
-| Mid-sentence parenthetical digression | **aside** (`h(…)`); interior is ordinary Agalan, often a fragment |
-| Foreign, code, or other surface that is not ordinary Agalan words | **opaque** |
-| Referring back to a prior span | **resume** **-r** / `…[=]` |
-
-### Part of speech (slot)
-<a id="pos"></a>
-
-The open’s role letter is the **outer-clause slot of the entire span**. Ask: *in the outer sentence, what slot does this chunk fill?* Interior words keep their own role letters.
-
-| PoS | When | Writing sketch |
-|-----|------|----------------|
-| `/d/` | Default cite object — *said / wrote “…”* | `d[jael]`, `d[=]` |
-| `/z/` | The wording or title **is** the subject | `z@[Hamlet]`, `z[=]` |
-| `/b/` | Host needs a `/b/` argument — *about “…”*, *called “…”* | `b{…}`, `b[=]` |
-| `/v/` | Span **is** the verb (phrase): echo / report the act as wording | `v[oops]`, `v[=]` |
-| `/ɡ/` | Property **is** the spanned string — *so-called “ready”* | `g@[Draft]` |
-| `/h/` | Asides (digressions float like other adverbs); also manner cite | `h(…)`, `h~(…)`, `h(=)` |
-| `/j/` | Vocative / expressive edge | `j@[…]` |
-| `/x/` | Discourse-only citation (epigraph, freestanding span) | `x[…]` |
+A **mention** packages the **word or form itself** (*the word “dog”*), not a quote of speech. Curly braces hold the form as an object.
 
 ```
-`jul zululon v[uzunu] dazawan.`
+`z{odogo} gelulul.`
 
-gloss: `j-prohibition` · `z-courage@` · `v-sing` · `d-grace@`
+gloss: `z-{dog}` · `g-blue`
 
-*Ululon, don’t “sing” Azawan.*
+*The word “dog” is blue.*
 ```
 
-### Asides
+With **`@`** / **-n**, mention is *the title X* / *the proverb X* as a **named unit**: `d@{Hamlet}`.
+
+**Compare with:** quoting the title as wording uses cite (`d@[Hamlet]` *sang “Hamlet”*). Mention `d@{Hamlet}` is the titled unit, not the sung wording.
+
+### Opaque and loan words
+<a id="loans"></a>
+
+**Opaque** packages a foreign, code, or raw surface that is not ordinary Agalan words. Angle brackets are a raw blob. Write no ending after `>`:
+
+```
+`zazawan d<sushi> vejel.`
+
+gloss: `z-grace@` · `d-<sushi>` · `v-see`
+
+*Azawan saw sushi.* (opaque surface)
+```
+
+Keep the source’s **casing** inside `<>` when that writing system uses case (`d<NaCl>`, `d<iPhone>`): [capitalization](core.md#capitalization).
+
+A **compact foreign content word** takes an ending after `>`: `d<sushi>l`, `z<Sam>n`. Same casing rule inside. That is one ordinary word whose root is foreign, not a span.
+
+**Compare with:** use opaque `d<sushi>` when the foreign **surface** is the point. Use `d<sushi>l` when sushi is an ordinary object in the sentence.
+
+When a published Agalan root already matches, write the ordinary word (`dagadal`, not a fence).
+
+Outside a clause, a name or word uses prefix-less **root + ending**: [citation forms](core.md#citation-forms) (`<Sam>n`). Spans keep a role letter because they fill a sentence slot.
+
+### Asides (`h(…)`)
 <a id="asides"></a>
 
-An **aside** is a parenthetical comment packaged as an **adverb**. Write **`h(`** … **`)`**. The outer slot is `/h/`, so the whole fence sits anywhere an adverb may sit.
+An **aside** is a parenthetical comment packaged as an **adverb**. Write **`h(`** … **`)`**. Round parentheses are a side comment. The fence sits anywhere an adverb may sit.
 
-The interior is ordinary Agalan. It may be a fragment or a same-speech-act clause body:
-
-| Interior | Example | Reading |
-|----------|---------|---------|
-| Fragment (one word or a short stretch) | `zazawan vawalal h(huzumum).` | *Azawan walks (happily).* |
-| Same-speech-act clause body | `zazawan vawalal h(zululon velebel).` | *Azawan walks (Ululon sleeps).* |
-
-Interior words keep **their** role letters. The fence is the adverb. A one-word manner comment with nothing to package is a plain adverb: `zazawan vawalal huzumum.`
-
-The aside **keeps the outer speech act** (omissible statement `jal` stays omitted). Put a new question or command in its own turn.
-
-A *because* / *if* dependent is still **`adoro`**. A second name for the same person uses [identity](predication.md#identity) or classification.
+The interior is ordinary Agalan: a fragment, or a clause body that keeps the **same speech act** as the outer sentence (the same statement, question, or command).
 
 ```
 `zazawan vawalal h(huzumum).`
@@ -110,21 +118,41 @@ gloss: `z-grace@` · `v-walk` · `h-happy`
 *Azawan walks (happily).*
 ```
 
-### Mentions, opaque, and loan words
-<a id="loans"></a>
+```
+`zazawan vawalal h(zululon velebel).`
 
-| Need | Use |
-|------|-----|
-| **Raw foreign / code / surface that is not Agalan words** | **opaque** — `d<sushi>` (no ending after `>`); keep the source’s **casing** inside `<>` when that writing system uses case (`d<NaCl>`, `d<iPhone>`): [capitalization](core.md#capitalization) |
-| **Compact foreign content word** | `PoS<…>ENDING` — e.g. `d<sushi>l`, `z<Sam>n` (ordinary word); same casing rule inside `<>` |
-| **The word or form itself** | **mention** — `d{…}` |
-| **Title string / proverb as wording** | **cite** — `d[…]` / `d@[…]` |
-| ***The title X* / *the proverb X*** as a named unit | **mention** **-n** — `d@{…}` |
-| **Nativized loan** | ordinary role letter + root + ending |
-| **That (prior span) again** | span resume — `daxur` / `hexur` / `duxur` / … |
-| **Name / word citation outside a clause** | prefix-less **root + ending**: [citation forms](core.md#citation-forms) (`ugobon.`, `<Sam>n`) |
+gloss: `z-grace@` · `v-walk` · `h-` · `z-courage@` · `v-sleep`
 
-`d<sushi>` is a span open plus an interior blob. `d<sushi>l` is one content word whose root is foreign. Opaque closers take no **-l** / **-m** / **-n** / **-r** after `>`. Spans need a role letter because they fill a **clause** slot; freestanding citation drops the role letter instead.
+*Azawan walks (Ululon sleeps).*
+```
+
+A one-word manner with nothing to package is a plain adverb: `zazawan vawalal huzumum.`
+
+**For *because* / *if*, use:** [**`adoro`**](core.md#dependent-clauses) dependents, not an aside.
+
+**Compare with:** a second name for the same person uses [identity](predication.md#identity) (`gonunu` + `/b/`), not an aside.
+
+### Outer slot
+<a id="pos"></a>
+
+The open’s role letter is the **outer slot of the entire span**. Ask: in the outer sentence, what job does this chunk fill? A cite can be the **verb** when you echo the act as wording:
+
+```
+`jul zululon v[oops].`
+
+gloss: `j-prohibition` · `z-courage@` · `v-oops`
+
+*Don’t “oops,” Ululon.*
+```
+
+| Letter | When the span fills that slot | Example |
+|--------|-------------------------------|---------|
+| `/d/` | object — *said / wrote / saw “…”* | `d[hi]`, `d[=]`, `d<sushi>` |
+| `/z/` | subject — the wording or form **is** the subject | `z{odogo}` |
+| `/v/` | verb — echo the act as wording | `v[oops]` |
+| `/h/` | adverb — asides | `h(…)` |
+
+Interior words keep **their** role letters.
 
 ### Translation practice
 <a id="translation-practice"></a>

@@ -9,27 +9,16 @@ Prefix-less vowel + **-l** / **-m** / **-n** words that **revise** a role in the
 ## Beginner
 <a id="beginner"></a>
 
-### Repair a role, or glue to prior talk
-
-Use a reviser when you want to **tweak** what you just named (in the same sentence), or to **attach** this sentence to what was already said.
-
-Two placements, same spellings:
-
-| Placement | Pattern | English job |
-|-----------|---------|-------------|
-| **In-clause** | `A REV B` in the same role | *including* / *rather* / *instead* / *except* |
-| **Discourse** | `REV` at the front of this sentence | *additionally* / *in other words* / *instead* / *except* |
-
-The vowel is the [vowel-series](vowel-series.md) jobs: **`a`** add, **`e`** order (soft rank), **`o`** one (swap), **`u`** undo.
-
-### In-clause shape
+### Including (`am` / `al`)
 <a id="in-clause-shape"></a>
+
+To **tweak** something you just named in the same sentence, put a reviser between two phrases in the **same role** (both subjects, both objects, both adjectives, …):
 
 ```
 A REV B
 ```
 
-Both sides sit in the **same role**: both subjects, both objects, both adjectives, and so on. The first side is **A**; each reviser introduces the next right-hand side.
+Start with **`a`** *add*: *A, including B*. Open **-m** means B is among others; closed **-l** means B is the only add-in you stand behind.
 
 ```
 `zodogolsh am zagadal.`
@@ -39,12 +28,26 @@ gloss: `z-dog-sh` · `including.open` · `z-cat`
 *Dogs, including a cat among others.*
 ```
 
+**Compare with:** packaging two members as a list uses a [join](coordination.md) (`zodogol zagadal zam` *a dog and a cat*). A reviser **repairs** A; it does not name a pair.
+
+### Rather, instead, except
+
+Same `A REV B` shape. The [vowel](vowel-series.md) is the repair: **`e`** order (soft-correct), **`o`** one (swap), **`u`** undo (subtract).
+
+```
+`zazawan guzumum el gelem.`
+
+gloss: `z-grace@` · `g-happy` · `rather` · `g-big`
+
+*Azawan is happy, or rather, big.*
+```
+
 ```
 `dadedal ol dogovel.`
 
 gloss: `d-tea` · `instead` · `d-coffee`
 
-*Coffee instead of tea.* (object role)
+*Coffee instead of tea.*
 ```
 
 ```
@@ -55,58 +58,41 @@ gloss: `z-team` · `except` · `z-grace@`
 *The team except Azawan.*
 ```
 
-A list join names members together. A reviser **repairs** one side you already named:
+| Vowel | Mnemonic | In-clause `A REV B` |
+|-------|----------|---------------------|
+| **a** | add | *including*: A, including B |
+| **e** | order | *rather*: A, or rather B |
+| **o** | one (swap) | *instead*: B in place of A |
+| **u** | undo | *except*: A except B |
 
-```
-`zodogol zagadal zam.`
+### Closed and open endings
 
-gloss: `z-dog` · `z-cat` · `z-and.open`
-
-*A dog and a cat.*
-```
-
-```
-`zodogolsh am zagadal.`
-
-gloss: `z-dog-sh` · `including.open` · `z-cat`
-
-*Dogs, including a cat among others.*
-```
-
-### Vowel meanings
-
-| Vowel | Mnemonic | In-clause `A REV B` | Discourse |
-|-------|----------|---------------------|-----------|
-| **a** | add | *including*: A, including B | *additionally*: a further point |
-| **e** | order (soft rank) | *rather*: A, or rather B | *in other words* / *rather*: rephrase or soft-correct prior |
-| **o** | one (swap) | *instead*: B in place of A | *instead*: this sentence replaces the prior claim |
-| **u** | undo | *except* / *but not*: A except B | *except*: exception to the prior frame |
-
-### Endings (starter)
-
-Every reviser takes **-l**, **-m**, or **-n**. When unsure between closed and open, prefer **-m**.
+Every reviser takes **-l** or **-m**. When unsure, prefer **-m**.
 
 | Ending | Forms | Job | Mnemonic |
 |--------|-------|-----|----------|
-| **-l** | `al` / `el` / `ol` / `ul` | closed: the right-hand side (or this discourse move) is exhaustive / committed | same closed **-l** as elsewhere |
-| **-m** | `am` / `em` / `om` / `um` | open: non-exhaustive / soft | same open **-m** as elsewhere |
-| **-n** | `an` / `en` / `on` / `un` | named / conventional frame | same named **-n** as elsewhere |
+| **-l** | `al` / `el` / `ol` / `ul` | closed: B (or this discourse move) is exhaustive / committed | locked |
+| **-m** | `am` / `em` / `om` / `um` | open: non-exhaustive / soft | maybe more |
 
-**-n** here names a conventional frame (a titled *Additionally*, a stock swap). Clause *and then* is still **`xan`**.
+```
+`zodogolsh al zagadal.`
 
-### Discourse shape (starter)
+gloss: `z-dog-sh` · `including` · `z-cat`
+
+*Dogs, including only a cat.*
+```
+
+### Glue this sentence to prior talk
 <a id="discourse-revisers"></a>
 
-A discourse reviser glues **this utterance** to **prior talk**. Prior talk is A; this move is B.
+The **same spellings** can sit at the **front** of this sentence. Prior talk is A; this sentence is B.
 
-| Form | Reading |
-|------|---------|
-| `al …` / `al jal …` | *Additionally, …* (committed) |
-| `el …` | *In other words, …* |
-| `ol …` | *Instead, …* |
-| `ul …` | *Except, …* (sole exception to the prior frame) |
-
-Skip recoverable **`jal`** after the reviser when the body is a default statement.
+| Form | Reading | Mnemonic |
+|------|---------|----------|
+| `al …` | *Additionally, …* | **a** add a further point |
+| `el …` | *In other words, …* | **e** order: rephrase prior |
+| `ol …` | *Instead, …* | **o** one: this claim replaces prior |
+| `ul …` | *Except, …* | **u** undo: exception to the prior frame |
 
 ```
 `al zazawan vawalal.`
@@ -116,7 +102,23 @@ gloss: `additionally` · `z-grace@` · `v-walk`
 *Additionally, Azawan walks.*
 ```
 
-Adversative *but* / *however*, *therefore*, *meanwhile*, and standalone *next* use other `/x/` roots ([core.md](core.md#continue-x)). Narrative *and then* between full sentences is clause **`xan`**.
+```
+`ol zululon velebel.`
+
+gloss: `instead` · `z-courage@` · `v-sleep`
+
+*Instead, Ululon sleeps.*
+```
+
+```
+`el zuhubun godogol.`
+
+gloss: `in.other.words` · `z-beauty@` · `g-dog`
+
+*In other words, Uhubun is a dog.*
+```
+
+**Compare with:** *and then* between full sentences is clause **`xan`**. *However* / *therefore* use [continue](core.md#continue-x) linkers (`x…`). A discourse reviser only **repairs** how this sentence attaches to what you already said.
 
 ### Translation practice
 <a id="translation-practice"></a>

@@ -6,48 +6,44 @@ How Agalan **sounds**, and how you build syllables so spelling matches speech. T
 ## Beginner
 <a id="beginner"></a>
 
-### Why these sounds
-
-Agalan vowels stay relatively open, so you can sing high and low without reshaping them much. Consonants prefer the **voiced** version (vocal cords buzzing) so you can hold a note across letters; a voiceless stop cuts the air for a moment. You may still use unvoiced variants for style.
-
-Word shape puts consonants at the **start of a syllable** and at the **end of the word**, so a held note is not cut by a stop in the middle of a syllable. The ending still marks where each word stops when rhythm eats pauses.
-
-Singable vowels and clear edges: spelling shows the sound.
+Letters map to sound in one path. Cue words are Standard American English.
 
 ### Vowels
 
-Cue words are Standard American English:
-
-| Letter | IPA | English cue |
-|--------|-----|-------------|
+| Letter | IPA | English cue (mnemonic) |
+|--------|-----|------------------------|
 | **e** | /e̞/ | *bet* |
 | **u** | /ʌ/ | *but* |
 | **o** | /o/ | *boat* (no glide, like Spanish *no*) |
 | **a** | /ɑ/ | *father* |
 
-These four sit in a mid-to-open range that stays singable at the top of an untrained range. Two vowel letters in a row are two syllables. Hold each vowel; do not slide them into one sound.
+Hold each vowel. Two vowel letters in a row are two syllables: `jael` = *ja'el* (/ja.el/).
 
-`juon` = *ju'on* (/ju.on/).
+### Consonants
 
-### Consonants (start of a syllable)
+A consonant starts a **syllable** (a beat with one vowel). Prefer the **voiced** version (vocal cords buzzing) so you can hold a note; a voiceless stop cuts the air. Unvoiced is fine for style: they are not different letters.
 
-Voiced and unvoiced are not different letters. Prefer voiced so the vocal cords stay engaged; unvoiced is fine for style.
-
-| Letter | IPA | English cue | Unvoiced variant | Example |
-|--------|-----|-------------|------------------|---------|
-| **h** | /ɦ/ | *ahead* | /h/, *hat* | `huan` /ɦu.ɑn/ |
-| **w** | /w/ | *we* | | `wul` /wul/ |
+| Letter | IPA | English cue (mnemonic) | Unvoiced variant | Example |
+|--------|-----|------------------------|------------------|---------|
+| **h** | /ɦ/ | *ahead* | /h/, *hat* | `hadazam` |
+| **w** | /w/ | *we* | | `howom` |
 | **g** | /ɡ/ | *go* | /k/, *kite* | `godogol` |
-| **d** | /d/ | *do* | /t/, *toe* | `daxal` |
-| **j** | /j/ | *yes* (Germanic *j* as in *ja*) | | `jael` /ja.el/ |
-| **b** | /b/ | *be* | /p/, *pay* | `bodol` |
+| **d** | /d/ | *do* | /t/, *toe* | `dagadal` |
+| **j** | /j/ | *yes* (Germanic *j* as in *ja*) | | `jal` |
+| **b** | /b/ | *be* | /p/, *pay* | `badorol` |
 | **z** | /z/ | *zoo* | /s/, *sea* | `zazawan` |
-| **m** | /m/ | *me* | | `humudel` |
-| **n** | /n/ | *no* | | `na` /na/ |
-| **v** | /v/ | *vie* | /f/, *fee* | `vuzunuxel` |
-| **l** | /l/ | *lie* | | `zel` /zel/ |
-| **r** | /ɹ/ | *red* | | `reu` /ɹeu/ |
-| **x** | /ʒ/ | *vision* (the *si*) | /ʃ/, *shy* | `xuxul` |
+| **m** | /m/ | *me* | | `hadazam` |
+| **n** | /n/ | *no* | | `zazawan` |
+| **v** | /v/ | *vie* | /f/, *fee* | `vawalal` |
+| **l** | /l/ | *lie* | | `gelulul` |
+| **r** | /ɹ/ | *red* | | `vurunul` |
+| **x** | /ʒ/ | *vision* (the *si*) | /ʃ/, *shy* | `xezazal` |
+
+### Word edges
+
+A content word ends with **-l** / **-m** / **-n** / **-r**. That last consonant is where the word stops when song eats pauses. Inside the word, consonants start syllables; they do not close a syllable in the middle.
+
+`zazawan` = *za-za-wan*. `godogol` = *go-do-gol*.
 
 ## Intermediate
 <a id="intermediate"></a>

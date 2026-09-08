@@ -6,28 +6,12 @@ Tag **can** / **can’t** on an activity or property. The vowel marks stance. Or
 ## Beginner
 <a id="beginner"></a>
 
-### Ability (host + `xa` / `xe` / `xo` / `xu`)
+### Can (`xa`)
 <a id="ability"></a>
-<a id="incapability"></a>
-<a id="ability-changeability"></a>
 
-When capability **is** one content root (*sing*, *lift*, *lead*), write that root, then mid-word **`x`**, then a stance vowel, then an ordinary ending:
+When *can* tags **one** activity or property root (*sing*, *walk*, *see*), write that host, then mid-word **`x`**, then **`a`**, then the host’s ordinary ending.
 
-```
-PoS + HOST + x + {a|e|o|u} + {-l|-m|-n|-r}
-```
-
-Use the host’s usual role letter (`/v/` for an event, `/ɡ/` for a property). The vowel says *can* or *how they can’t*; the ending is the host sense (**-l** literal, **-m** metaphorical, **-n** proper, **-r** resume).
-
-#### Stance vowels
-<a id="ability-stance"></a>
-
-| Form | Stance | Reading | Mnemonic |
-|------|--------|---------|----------|
-| **`xa`** | **Capable** | can (solo / underspecified scaffold) | **`a`** add: capability is in |
-| **`xe`** | **Temporary can’t** | can’t **right now** (usually able) | **`e`** order: this moment’s ranking |
-| **`xo`** | **Modifiable can’t** | can’t, and that may change (also soft default if grain unknown) | **`o`** one: one open *can’t* |
-| **`xu`** | **Irreversible can’t** | can’t (fixed / impossible as far as you can tell) | **`u`** undo: capability taken off |
+**Shape:** PoS + HOST + **`x`** + **`a`** + ending. Use the host’s usual role letter (`/v/` for an event, `/ɡ/` for a property). **Mnemonic:** **`a`** add: capability is in.
 
 ```
 `zazawan vuzunuxal.`
@@ -36,6 +20,32 @@ gloss: `z-grace@` · `v-sing-able`
 
 *Azawan can sing.*
 ```
+
+The same host as a property uses `/ɡ/`: `zazawan guzunuxal` (*Azawan is able to sing*, as a property). Leave the host ordinary when you are not tagging can / can’t (`zazawan vuzunul` *Azawan sings*).
+
+The ending is the **host** sense (**-l** literal, **-m** metaphorical, **-n** proper, **-r** resume), not a second ability grain:
+
+```
+`zululon vuwuruxam.`
+
+gloss: `z-courage@` · `v-write-able-metaphor`
+
+*Ululon can write* (metaphorical host sense).
+```
+
+### Can’t (`xe` / `xo` / `xu`)
+<a id="incapability"></a>
+<a id="ability-changeability"></a>
+<a id="ability-stance"></a>
+
+The vowel after **`x`** says *can* or **how they can’t**. **Mnemonic:** vowel series on that slot (**`a`** add / **`e`** order / **`o`** one / **`u`** undo).
+
+| Form | Stance | Reading | Mnemonic |
+|------|--------|---------|----------|
+| **`xa`** | **Capable** | can | **`a`** add: capability is in |
+| **`xe`** | **Temporary can’t** | can’t **right now** (usually able) | **`e`** order: this moment’s ranking |
+| **`xo`** | **Modifiable can’t** | can’t, and that may change (soft default if the grain is unknown) | **`o`** one: one open *can’t* |
+| **`xu`** | **Irreversible can’t** | can’t (fixed / impossible as far as you can tell) | **`u`** undo: capability taken off |
 
 ```
 `zululon vuzunuxel.`
@@ -50,16 +60,18 @@ gloss: `z-courage@` · `v-sing-unable-temporary`
 
 gloss: `z-beauty@` · `v-sing-unable-modifiable`
 
-*Uhubun can’t sing yet (open to change; not claiming who will change it).*
+*Uhubun can’t sing yet (open to change).*
 ```
 
-| Form | Reading |
-|------|---------|
-| `vuzunuxal` / `guzunuxal` | can sing (literal host) |
-| `vuzunuxam` | can express (metaphorical host sense) |
-| `vuzunuxel` | can’t sing **right now** |
-| `vuzunuxol` | can’t sing yet / may become able (or unknown grain) |
-| `vuzunuxul` | can’t sing (fixed / impossible as far as you can tell) |
+```
+`zazawan vurunuxul.`
+
+gloss: `z-grace@` · `v-run-unable-irreversible`
+
+*Azawan can’t run (fixed / impossible as far as you can tell).*
+```
+
+**Compare with:** **`xa` / `xu`** on a [values](values.md) **need** root is met / unmet need (`holozoxum` *competence unmet*). On an activity or property host, **`xa` / `xu`** is can / can’t.
 
 ### Translation practice
 <a id="translation-practice"></a>

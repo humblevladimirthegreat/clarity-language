@@ -7,17 +7,10 @@ How to name a **need** and how you relate to it: topic, met, unmet, motive, or p
 ## Beginner
 <a id="beginner"></a>
 
-### Default reading of `/h/` and `/w/`
+### Name a need
 <a id="default-reading-of-h-and-w"></a>
 
-Use `/h/` or `/w/` plus a **need root** when you are talking about a psychological need, not when you are only adding time, place, manner, or degree.
-
-| Prefix | What it attaches to |
-|--------|---------------------|
-| `/h/` | the **clause** (motive, prescription, or judgment of the event) |
-| `/w/` | the **preceding `/ɡ/`** (a property or possessive on that adjective) |
-
-**Shape:** PoS + need root + optional mid-word **`x`** + stance vowel + ending.
+Put role letter `/h/` in front of a **need root** when you want to talk about a psychological need. With no mid-word **`x`**, you only **name** the need (topic). The ending is ordinary [reference-suffix](reference-suffix.md) (*this need*, a metaphor, a name, a resume).
 
 ```
 `hawerol.`
@@ -27,47 +20,35 @@ gloss: `h-pleasure`
 *Pleasure (as a topic).*
 ```
 
+**Compare with:** *when* / *always* / *never* on `/h/` is a [restrictor](restrictors.md). This page names a **need**.
+
 ### Need inventory
 <a id="need-inventory"></a>
 
-Six closed needs. The sense is fixed; the lexicon roots are published. The same roots still form ordinary nouns and verbs (`zalodol` *a ballot box*; `vuhuhel` *to defend*). Under `/h/` / `/w/` with value shape, the need reading wins.
+Six needs. Pick one root; the need sense is the one in the table.
 
-| Sense | Lexicon root | Metaphor | Gloss |
-|-------|--------------|----------|--------|
+| Sense | Root | Mnemonic | English range |
+|-------|------|----------|---------------|
 | autonomy | **`alodo`** | 🗳️ *ballot-box* → *choice* | choice, agency, self-direction |
 | competence | **`olozo`** | 🧰 *toolbox* → *readiness* | efficacy, skill, getting things to work |
 | relatedness | **`onogo`** | 🪢 *knot* → *bond* | connection, belonging, care |
 | pleasure | **`awero`** | 🍓 *strawberry* → *sweetness* | enjoyment, comfort, aesthetic payoff |
 | survival | **`uhuhe`** | 🛡️ *shield* → *defense* | safety, health, material sufficiency |
-| unspecified | **`ege`** | 🥚 *egg* → *potential* | need named without picking among the five |
-
-### Word shape
-<a id="word-shape"></a>
+| unspecified | **`ege`** | 🥚 *egg* → *potential* | a need, without picking among the five |
 
 ```
-[h|w] + need-root [ + x + {a|e|o|u} ] + {-l|-m|-n|-r}
+`hegel.`
+
+gloss: `h-need`
+
+*Unspecified need (as a topic).*
 ```
 
-1. **PoS:** `/h/` or `/w/`.
-2. **Need root:** one of the six (`alodo` / `olozo` / `onogo` / `awero` / `uhuhe` / `ege`).
-3. **Optional `x`-addition:** stance vowel **`a` / `e` / `o` / `u`**. Motive **`xe`** is [Intermediate](#intermediate).
-4. **Ending:** on a bare need, ordinary [reference-suffix](reference-suffix.md). On a compound, **-l / -m / -r** follow that stance’s table ([contact](#value-contact) / [preference](#value-preference) / [force](#value-force) / [changeability](#value-changeability)). **-n** stays ordinary [proper](reference-suffix.md#proper-name--n).
+**Compare with:** `zalodol` is a *ballot box*. Under `/h/` in this shape, **`alodo`** is the *autonomy* need.
 
-### Stances
-<a id="value-stake"></a>
+### Met (`xa`): serves the need
 
-How you relate to the need. Vowels follow the series: **`a`** add, **`e`** order, **`o`** one, **`u`** undo.
-
-| Form | Stance | Gloss | Mnemonic |
-|------|--------|-------|----------|
-| bare (no `x`) | **Topic** | Need named only | no vowel: name it, don’t take a stance |
-| **`xa`** | **Met / serves** | Host pays off this need | **`a`** add: the payoff is in |
-| **`xo`** | **Prescription (ought)** | Agent or situation **ought to act** so this need is served or protected | **`o`** one: one ought |
-| **`xu`** | **Unmet / costs** | Host subtracts from this need | **`u`** undo: the need is taken down |
-
-**Topic** (no `x`): the ending keeps ordinary reference-suffix senses (`hawerol` = pleasure as a topic).
-
-**Met (`xa`):** the host serves the need. The ending is the [contact channel](#value-contact).
+To say the thing you named **pays off** this need, add mid-word **`x`** plus **`a`** (**`a`** add: the payoff is in). Use `/w/` on that thing (the gift, the house, the book). The ending is the **contact channel**: how you contact the payoff.
 
 ```
 `zawaral wonogoxal.`
@@ -77,35 +58,43 @@ gloss: `z-gift` · `w-relatedness-met-physical`
 *The gift serves relatedness (physical contact).*
 ```
 
+**Not the same job as:** [ability](ability.md) (`vuzunuxal` *can sing*). There the left of **`x`** is an activity. Here it is a **need**, and **`xa`** means *serves this need*.
+
 ### Contact channel (endings on met)
 <a id="value-contact"></a>
 
-On **`xa`** compounds, **-l / -m / -r** mark **how you contact** the claimed payoff (contact channel). **-n** stays ordinary [proper](reference-suffix.md#proper-name--n). Relatedness *between people* is the need **`onogo`**.
+On **`xa`**, **-l / -m / -r** mark **how you contact** the claimed payoff. Channels are different kinds of contact, not a ranked “better.” Relatedness *between people* is the need **`onogo`**.
 
-| Form | Channel | Contact | Mnemonic |
-|------|---------|-------|----------|
+| Form | Channel | Job | Mnemonic |
+|------|---------|-----|----------|
 | `…xal` | **physical** | Sensory / ambient / embodied ease | **-l** locked on the scene you can touch |
-| `…xam` | **mental** | Cognitive integration, memory, self-directed gratitude | **-m** open in the head |
+| `…xam` | **mental** | In the head: thinking, memory, gratitude you take in | **-m** open in the head |
 | `…xar` | **spiritual** | Big-picture step-back (wider frame) | **-r** resume to a larger frame |
 
-Channels are different kinds of contact, not a ranked “better.”
-
 ```
-`zohohul gohohum bazawan wolozoxal.`
+`zohohul wolozoxal.`
 
-gloss: `z-house` · `g-home` · `b-grace@` · `w-competence-met-physical`
+gloss: `z-house` · `w-competence-met-physical`
 
-*Azawan’s house serves competence (physical contact: a felt place).*
+*The house serves competence (physical contact).*
 ```
 
-### Prescription (`xo`): force
+```
+`zabogol wolozoxam.`
+
+gloss: `z-book` · `w-competence-met-mental`
+
+*The book serves competence (mental contact).*
+```
+
+### Prescription (`xo`): ought
 <a id="value-force"></a>
 
-**`xo`** means *should* / *ought*: act so the need is served or protected, whether or not anyone is acting from it now. **-l / -m / -r** mark **prescription force** (how strongly you claim the ought). **-n** stays ordinary [proper](reference-suffix.md#proper-name--n). A promise without a named vow is **bound** or **endorse**. Always pick an ending; if the force is unknown, use **-m**. Gloss bound **-l** as **bound in this frame**.
+**`xo`** means *should* / *ought*: act so the need is served or protected. **`o`** one: one ought. Use `/h/` on the clause. **-l / -m / -r** mark **prescription force** (how strongly you claim the ought). If you do not know the force, use **-m**. Bound **-l** is **bound in this frame**.
 
 | Form | Force | You are saying | Mnemonic |
 |------|-------|----------------|----------|
-| `…xol` | **bound** | Non-negotiable in this frame | **-l** locked / same hardness as `jal` and closed joins |
+| `…xol` | **bound** | Non-negotiable in this frame | **-l** locked |
 | `…xom` | **endorse** | You stand behind this should (soft default if unknown) | **-m** open backing |
 | `…xor` | **invite** | Worth considering here | **-r** light resume: held out |
 
@@ -117,10 +106,18 @@ gloss: `z-grace@` · `v-tell` · `h-relatedness-ought-endorse`
 *Azawan tells: relatedness ought to be served (endorse).*
 ```
 
-### Unmet (`xu`): changeability
+```
+`zuhubun vuzunul huhuhexol.`
+
+gloss: `z-beauty@` · `v-sing` · `h-survival-ought-bound`
+
+*Uhubun sings: survival ought to be protected (bound).*
+```
+
+### Unmet (`xu`): costs
 <a id="value-changeability"></a>
 
-**`xu`** means the host costs / subtracts from the need. **-l / -m / -r** mark **changeability** (how lasting the cost is). **-n** stays ordinary [proper](reference-suffix.md#proper-name--n). If the grain is unknown, use **-m**.
+**`xu`** means the thing **subtracts from** the need. **`u`** undo: the need is taken down. **-l / -m / -r** mark **changeability** (how lasting the cost is). If you do not know the grain, use **-m**.
 
 | Form | Job | Mnemonic |
 |------|-----|----------|
@@ -135,6 +132,27 @@ gloss: `z-gathering` · `w-autonomy-unmet-temporary`
 
 *The gathering costs autonomy right now (temporary).*
 ```
+
+```
+`zabogol wolozoxum.`
+
+gloss: `z-book` · `w-competence-unmet-modifiable`
+
+*The book costs competence (modifiable).*
+```
+
+### Word shape
+<a id="word-shape"></a>
+<a id="value-stake"></a>
+
+Role letter `/h/` or `/w/`, then a need root, then an ending. `/h/` talks about the **clause**; `/w/` talks about the **thing you just named**. To take a stance, put mid-word **`x`** and a vowel before the ending. Bare (no **`x`**) stays topic, with ordinary [reference-suffix](reference-suffix.md) endings. On a stance compound, **-l / -m / -r** follow that stance’s table; **-n** is ordinary [proper](reference-suffix.md#proper-name--n).
+
+| Form | Stance | Job | Mnemonic |
+|------|--------|-----|----------|
+| bare (no `x`) | **Topic** | Need named only | no vowel: name it |
+| **`xa`** | **Met / serves** | The thing pays off this need | **`a`** add: the payoff is in |
+| **`xo`** | **Prescription (ought)** | Ought to act so this need is served or protected | **`o`** one: one ought |
+| **`xu`** | **Unmet / costs** | The thing subtracts from this need | **`u`** undo: the need is taken down |
 
 ### Translation practice
 <a id="translation-practice"></a>

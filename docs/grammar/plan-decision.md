@@ -6,21 +6,14 @@ Say whether a clause is **intention**, a **forecast**, or a **revisable pick**, 
 ## Beginner
 <a id="beginner"></a>
 
-### Plan / predict
+### Plan
 <a id="plan-predict"></a>
 
-English *will* and *going to* mix **intention** (what someone means to do) with **forecast** (what will happen). Agalan splits those jobs onto **two closed mood roots**.
+Mark **intention** (what someone means to do) with the closed mood root **`owora`** 🗺️ *world-map* → *plan* (**PLAN**). English *will* / *going to* can mean this *or* a world forecast; use PLAN only for the course someone means to take.
 
-**Shape:** an `/h/` word that frames the clause (**floating `/h/`**): **`owora`** 🗺️ *world-map* → *plan*, or **`elezo`** 🔭 *telescope* → *forecast*. Content verbs stay ordinary. Prefer floating `/h/`. Use `/w/` only when the mood frames a preceding `/ɡ/` adjective.
+**Shape:** a floating `/h/` word that frames the clause: **`howora`** + an ending, then an ordinary content verb. Prefer floating `/h/`. Use `/w/` only when the mood frames a preceding `/ɡ/` adjective.
 
-A **map** charts a course you mean to take. A **telescope** looks ahead at a distance.
-
-| Claim | Form | Mnemonic |
-|-------|------|----------|
-| Intention: what someone means to do | **`PLAN`** **`howora…`** | map of a course |
-| Forecast: what will happen | **`PREDICT`** **`helezo…`** | telescope looking ahead |
-
-Ordinary content stays available (`zoworal` *a map*; `voworal` *to plan*).
+A **map** charts a course you mean to take. Ordinary content stays available (`zoworal` *a map*; `voworal` *to plan*).
 
 ```
 `zazawan howoram vawalal.`
@@ -30,30 +23,7 @@ gloss: `z-grace@` · `h-PLAN-sketch` · `v-walk`
 *Azawan means to walk.* (direction only; default)
 ```
 
-```
-`zululon howoral vawalal.`
-
-gloss: `z-courage@` · `h-PLAN-itinerary` · `v-walk`
-
-*Ululon’s itinerary is to walk.* (steps on the map)
-```
-
-```
-`helezom vanunul.`
-
-gloss: `h-PREDICT` · `v-rain`
-
-*Forecast: it rains.*
-```
-
-Use **PLAN** when the clause frames **intention**. Use **PREDICT** when it frames a **world forecast**. How locked a pick is is [Intermediate](#decision).
-
-| English bundle | Prefer |
-|----------------|--------|
-| *Azawan means to …* (direction) | **PLAN** sketch (`howoram`) |
-| *here is how Ululon will …* (steps filled in) | **PLAN** itinerary (`howoral`) |
-| *if that fails, Uhubun will …* (backup path) | **PLAN** fork (`howorar`) |
-| *it will rain / expect rain* (world forecast) | **PREDICT** (`helezom`) |
+When unsure how detailed the course is, prefer **`howoram`**. Leave PLAN off when you are not framing intention.
 
 #### Endings — map resolution
 <a id="plan-map-resolution"></a>
@@ -67,7 +37,40 @@ On **`owora`**, **-l / -m / -r** mark **how drawn the intention map is**. **-n**
 | **-l** | **`howoral`** | **itinerary** | steps filled in: *how* is on the map | locked itinerary |
 | **-r** | **`howorar`** | **fork** | contingency / backup path: *if not A, then B* | forked / other-path |
 
-When unsure, prefer **`howoram`**. Leave **PLAN** off when you are not framing intention.
+```
+`zululon howoral vawalal.`
+
+gloss: `z-courage@` · `h-PLAN-itinerary` · `v-walk`
+
+*Ululon’s itinerary is to walk.* (steps on the map)
+```
+
+```
+`zuhubun howorar vawalal.`
+
+gloss: `z-beauty@` · `h-PLAN-fork` · `v-walk`
+
+*If that path fails, Uhubun will walk.* (backup course)
+```
+
+**Not the same job as:** [DECISION](#decision) (pick firmness). PLAN says how drawn the map is, not how locked the pick is.
+
+### Predict
+<a id="predict"></a>
+
+Mark a **world forecast** (what will happen) with **`elezo`** 🔭 *telescope* → *forecast* (**PREDICT**). A **telescope** looks ahead at a distance.
+
+**Shape:** floating `/h/` **`helezo…`**, then an ordinary content verb. Prefer **`helezom`**.
+
+```
+`helezom vanunul.`
+
+gloss: `h-PREDICT` · `v-rain`
+
+*Forecast: it rains.*
+```
+
+**Compare with:** English *will* as *means to …* uses [PLAN](#plan-predict) (`howoram` / `howoral` / `howorar`). PREDICT is the world forecast, not someone’s course.
 
 ### Translation practice
 <a id="translation-practice"></a>

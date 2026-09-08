@@ -6,9 +6,9 @@ Same vowel-and-ending shapes as joins, used under `/h/` or `/w/` to say **when**
 ## Beginner
 <a id="beginner"></a>
 
-### When the host applies
+### Only when / never (`hal`)
 
-A restrictor sits in the adverb slot (`/h/`) or on the previous adjective (`/w/`). It names **occasions**: the times or cases in which the clause (or that property) counts.
+A restrictor in the adverb slot (`/h/`) names **occasions**: the times or cases in which the verb claim counts. Put occasion words **before** the restrictor (same right-close fence as a list). Closed **-l** locks the frame.
 
 ```
 `zazawan vawalal hanunul hal.`
@@ -18,19 +18,19 @@ gloss: `z-grace@` · `v-walk` · `h-rain` · `h-only-when`
 *Azawan walks only when raining.*
 ```
 
-Bare **`hal`** with no occasion listed is *never*:
+With **no** occasion listed, empty **`a`** inventory is *never*:
 
 ```
-`zazawan vawalal hal.`
+`zululon vawalal hal.`
 
-gloss: `z-grace@` · `v-walk` · `h-never`
+gloss: `z-courage@` · `v-walk` · `h-never`
 
-*Azawan never walks.*
+*Ululon never walks.*
 ```
 
-The vowels are the join series you already know (**a** inventory, **u** undo, **o** one-choice), read as a **restrictor** for the host. Ending **-l** closes the frame; **-m** leaves it open.
+Mnemonic: **a** add / inventory of times; empty inventory + closed **-l** → *never*.
 
-Two manner adverbs in a row still mean they apply together. That is ordinary stacking, not a restrictor:
+**Compare with:** two manner adverbs in a row still apply **together** (*quickly and quietly*). That is ordinary stacking, not a restrictor, and not sibling *and*:
 
 ```
 `zazawan vawalal hadazam howom.`
@@ -40,30 +40,11 @@ gloss: `z-grace@` · `v-walk` · `h-haste` · `h-quietude`
 *Azawan walks quickly and quietly.*
 ```
 
-| Prefix | What it limits | Place |
-|--------|----------------|-------|
-| `/h/` | the **clause** (the verb claim) | floats like any adverb; after a verb join it can sit in the shared stretch |
-| `/w/` | the **previous adjective** | sits on that adjective |
+A restrictor answers **when the host counts**. A join packages members in one slot.
 
-### Bare forms
+### Always (`hual`)
 
-| Form | Reading | Mnemonic |
-|------|---------|----------|
-| **`hal` / `ham`** | ***never*** / *never, as far as you can tell* | **a** inventory empty + **-l** closed / **-m** open |
-| **`hual` / `huam`** | ***always*** / *always, as far as you can tell* | **ua** everything-but-empty + **-l** / **-m** |
-| **`har`** | *sometime* | **-r** unspecified member |
-| **`hor`** | *anytime* | **o** one-choice, unspecified |
-| **`hur`** | *sometime else* | **u** other-than, unspecified |
-
-`/w/` uses the same vowels on the adjective: `wal` *never* (for that property), `wual` *always* (for that property).
-
-```
-`guzumum wal.`
-
-gloss: `g-happy` · `w-never`
-
-*Never happy* (that property never holds).
-```
+**`ua`** is *everything but empty*: bare **`hual`** is *always*. With listed occasions it is *always except when…*. Open **-m** softens (*as far as you can tell*).
 
 ```
 `zuhubun vuzunul hual.`
@@ -73,24 +54,73 @@ gloss: `z-beauty@` · `v-sing` · `h-always`
 *Uhubun always sings.*
 ```
 
-### Listed occasions
-
-Put occasion words **before** the restrictor, then close on the right, same fence as other phrase lists. Shared extra detail sits immediately after the restrictor: [coordination.md](coordination.md). Each listed piece is a simple `/h/` or `/w/` content word (or a complex unit the lexicon allows), with the same role letter on every piece and on the restrictor.
-
-| Form | With occasion(s) | Mnemonic |
-|------|------------------|----------|
-| **`hal` / `ham`** | *only when…* (closed) / *when…, among other occasions* (open) | **a** inventory of times |
-| **`hual` / `huam`** | *always except when…* | **ua** always, minus these times |
-
 ```
-`hanunul hunugul ham.`
+`zazawan vawalal hanunul hual.`
 
-gloss: `h-rain` · `h-night` · `h-when.open`
+gloss: `z-grace@` · `v-walk` · `h-rain` · `h-always-except`
 
-*When raining and at night, among other possible cases.*
+*Azawan always walks except when raining.*
 ```
 
-Asking *when?* with these forms (bare **`har`**, and the rest of the *-r* set): [questions.md](questions.md#when).
+### Sometime / anytime / sometime else
+
+Unspecified-member **-r** names an occasion without listing it.
+
+| Form | Reading | Mnemonic |
+|------|---------|----------|
+| **`har`** | *sometime* | **-r** some member of the time inventory |
+| **`hor`** | *anytime* | **o** one-choice, unspecified |
+| **`hur`** | *sometime else* | **u** other-than, unspecified |
+
+```
+`zululon vurunul har.`
+
+gloss: `z-courage@` · `v-run` · `h-sometime`
+
+*Ululon runs sometime.*
+```
+
+```
+`zuhubun vawalal hor.`
+
+gloss: `z-beauty@` · `v-walk` · `h-anytime`
+
+*Uhubun walks anytime.*
+```
+
+### On the previous adjective (`/w/`)
+
+Same vowels on `/w/` limit the **previous adjective**, not the whole clause.
+
+```
+`zazawan guzumum wal.`
+
+gloss: `z-grace@` · `g-happy` · `w-never`
+
+*Azawan is never happy.*
+```
+
+| Prefix | What it limits |
+|--------|----------------|
+| `/h/` | the **clause** (the verb claim) |
+| `/w/` | the **previous adjective** |
+
+### Listed occasions (open)
+
+Open **-m** leaves other occasions possible. Each listed piece is a simple `/h/` (or `/w/`) content word, with the same role letter on every piece and on the restrictor.
+
+| Form | With occasion(s) | Bare | Mnemonic |
+|------|------------------|------|----------|
+| **`hal` / `ham`** | *only when…* / *when…, among other occasions* | *never* / *never, as far as you can tell* | **a** inventory of times |
+| **`hual` / `huam`** | *always except when…* | *always* / *always, as far as you can tell* | **ua** always, minus these times |
+
+```
+`zazawan velebel hanunul hunugul ham.`
+
+gloss: `z-grace@` · `v-sleep` · `h-rain` · `h-night` · `h-when.open`
+
+*Azawan sleeps when raining and at night, among other times.*
+```
 
 ### Translation practice
 <a id="translation-practice"></a>

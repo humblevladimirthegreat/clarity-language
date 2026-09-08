@@ -8,11 +8,10 @@ First-person *I think*, how you know a world-claim, and *as if* framing — clos
 
 ### COMMENT
 <a id="comment"></a>
-<a id="mindfulness-noting"></a>
 
-Mark **first-person mental commentary** (the mind storying or labeling experience) with one closed mood root.
+Mark **first-person mental commentary**: English *I think* as a take over the scene.
 
-**Shape:** floating `/h/` **`odoho`** 💭 *thought* → *commentary*. Prefer floating `/h/` (optional `/w/` only when COMMENT frames a preceding `/ɡ/`). **-l / -m / -r** = [hold](#comment-hold) (how tightly you take the balloon).
+**Shape:** an `/h/` word that frames the clause (**floating `/h/`**): **`odoho`** 💭 *thought* → *commentary*. Content verbs stay ordinary. Start with **`hodohom`**: you notice the take and hold it lightly.
 
 A **thought balloon** floats a take over the scene. Bare contact is watching without narration. Ordinary content stays available (`zodohol` *a thought*; `vodohol` *to think* as a deliberate event).
 
@@ -24,23 +23,22 @@ gloss: `z-grace@` · `h-COMMENT-soft` · `v-walk`
 *I think Azawan walks.* — commentary held lightly (default)
 ```
 
+COMMENT **frames** the clause. The same frame can sit on an ask:
+
 ```
-`jom zululon hodohom velebel.`
+`jol zuhubun hodohom velebel.`
 
-gloss: `j-soft-ask` · `z-courage@` · `h-COMMENT-soft` · `v-sleep`
+gloss: `j-yes` · `z-beauty@` · `h-COMMENT-soft` · `v-sleep`
 
-*I wonder whether Ululon sleeps.* — soft commentary plus a soft ask
+*Does Uhubun sleep?* — asked with light commentary
 ```
 
-Use COMMENT when the clause is doing **first-person cognitive commentary**. **Not the same job as:** `vodohol` *to think* as a deliberate event. COMMENT **frames** the clause.
+**Not the same job as:** `vodohol` *to think* as a deliberate event (`zazawan vodohol.` *Azawan thinks.*).
 
-Same published root, special `/h/` reading: `hodohom` is commentary; `zodohol` is *a thought*.
-
-#### Hold endings (COMMENT)
+### Hold endings (COMMENT)
 <a id="comment-hold"></a>
-<a id="hold-endings"></a>
 
-On **`odoho`**, **-l / -m / -r** mark **how you hold** the commentary. **-n** is ordinary [proper](reference-suffix.md#proper-name--n).
+On **`odoho`**, **-l / -m / -r** mark **how tightly you hold** the balloon. **-n** is ordinary [proper](reference-suffix.md#proper-name--n).
 
 | Ending | Form | Hold | Reading | Mnemonic |
 |--------|------|------|---------|----------|

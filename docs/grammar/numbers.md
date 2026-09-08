@@ -7,11 +7,11 @@ Count and rank with number words. A whole numeric value is **one word**, even wh
 ## Beginner
 <a id="beginner"></a>
 
-Count and rank with a **`/ɡ/`** number word after the noun. Write the short form (`g+3`, `g#2`) and say the full spoken word. [Saying it aloud](#digits) gives the whole recipe on this band.
-
 ### Counts (`g+N`)
 
-`g+3` = *three* on the preceding noun. Same slot as other adjectives.
+Put a **`/ɡ/`** number word after the noun, same slot as other adjectives. **`g+3`** is *three*.
+
+Mnemonic: written **`+`** is vowel **`a`** (add): how many.
 
 ```
 `zagadalsh g+3.`
@@ -21,11 +21,19 @@ gloss: `z-cat-sh` · `g-three`
 *Three cats.*
 ```
 
-**`+`** = how many.
+```
+`zazawan dabogolsh g+3 vejel.`
+
+gloss: `z-grace@` · `d-book-sh` · `g-three` · `v-see`
+
+*Azawan sees three books.*
+```
 
 ### Ordinals (`g#N`)
 
-`g#2` = *the second* on the preceding noun.
+**`g#2`** is *the second* on the preceding noun.
+
+Mnemonic: written **`#`** is vowel **`e`** (order): which place, counting from the start.
 
 ```
 `zabogol g#2.`
@@ -35,40 +43,21 @@ gloss: `z-book` · `g-second`
 *The second book.*
 ```
 
-**`#`** = which place (rank from the start).
+```
+`zululon dabogol g#3 vuwurul.`
 
-### Saying it aloud
-<a id="digits"></a>
+gloss: `z-courage@` · `d-book` · `g-third` · `v-write`
 
-A spoken number word is **PoS sound + marker syllable + digit syllables + ending**. On this band you need two marker syllables:
-
-| Marker | Spoken | Written | Mnemonic |
-|--------|--------|---------|----------|
-| count | **ra** | `+` | **`a`** add: how many |
-| rank | **re** | `#` | **`e`** order: which place |
-
-Digits are spoken as remapped CV syllables (current vowels; preferred voiced consonants):
-
-| Digit | Syllable | Digit | Syllable |
-|-------|----------|-------|----------|
-| 1 | wo | 6 | gu |
-| 2 | du | 7 | le |
-| 3 | re | 8 | ha |
-| 4 | mo | 9 | na |
-| 5 | va | 0 | zo |
-
-The default ending is exact **-l**, spoken as its own final syllable. Assemble left to right:
-
-- `g+3` → **g** + **ra** + re → ***grarel*** (*three*)
-- `g#2` → g + **re** + du → ***gredul*** (*the second*)
-- `g+20` → g + ra + du zo → *graduzol* (*twenty*)
-- digitless `g+` → g + ra + l → *gral* (*more than one*)
-
-Everything on this band uses **ra** / **re** plus the digit table above. More marker syllables are Intermediate.
+*Ululon writes the third book.*
+```
 
 ### More than one (`g+`)
 
-Digitless **`g+`** = the count is **more than one**, without naming N. Group-reference on the noun still uses [**-sh**](plurality.md). Quantity and group are different jobs and may co-occur (`zagadalsh g+`).
+Leave the digits off after **`+`**: **`g+`** means the count is **more than one**, without naming N.
+
+Mnemonic: **`a`** still adds; you add a plural amount and stop.
+
+Group-reference on the noun still uses [**-sh**](plurality.md). Quantity and group are different jobs and may sit together (`zagadalsh g+`).
 
 ```
 `zagadalsh g+.`
@@ -78,7 +67,36 @@ gloss: `z-cat-sh` · `g-more-than-one`
 *Cats — more than one.*
 ```
 
-Empty after **`+`** is a plural amount. English *some cats* (an unnamed member) is a different job: use the noun ending, not this number word.
+**Compare with:** English *some cats* (a set in this situation, no count) uses the noun plus [**-sh**](plurality.md). Use **`g+`** when the point is that the amount is more than one.
+
+### Saying it aloud
+<a id="digits"></a>
+
+Write the short form (`g+3`, `g#2`, `g+`). Speech is one full word: **role-letter sound + marker syllable + digit syllables + ending**.
+
+Two marker syllables cover count and rank:
+
+| Marker | Spoken | Written | Mnemonic |
+|--------|--------|---------|----------|
+| count | **ra** | `+` | **`a`** add: how many |
+| rank | **re** | `#` | **`e`** order: which place |
+
+Digits are spoken as these syllables:
+
+| Digit | Syllable | Digit | Syllable |
+|-------|----------|-------|----------|
+| 1 | wo | 6 | gu |
+| 2 | du | 7 | le |
+| 3 | re | 8 | ha |
+| 4 | mo | 9 | na |
+| 5 | va | 0 | zo |
+
+The default ending is exact **-l**, spoken as its own last syllable. Assemble left to right:
+
+- `g+3` → **g** + **ra** + re → ***grarel*** (*three*)
+- `g#2` → g + **re** + du → ***gredul*** (*the second*)
+- `g+20` → g + ra + du zo → *graduzol* (*twenty*)
+- `g+` → g + ra + l → *gral* (*more than one*)
 
 ### Translation practice
 <a id="translation-practice"></a>

@@ -5,64 +5,74 @@ Every content word ends with a **reference suffix**: a final letter that says ho
 ## Beginner
 <a id="beginner"></a>
 
-### The four endings
+### First mention, literal (`-l`)
+<a id="literal-l"></a>
 
-Use **role letter + root + ending** as one word (`zazawan`). The ending answers *how does this root enter the talk?* Mnemonics: **-l** literal, **-m** metaphor, **-n** name, **-r** resume.
-
-A bare **-l** / **-m** word always **introduces**. To point back, use **-r**. How resume chooses what it points to: [pronouns.md](pronouns.md).
+The last letter of a content word says **how this root enters the talk**. Start with **-l**: you are **introducing** the thing in its **literal** sense (*a / some X*). Mnemonic: **-l** = **l**iteral.
 
 ```
 `zodogol gelulul.`
 
 gloss: `z-dog` · `g-blue`
 
-*A dog is blue.* (first mention, literal)
+*A dog is blue.*
 ```
+
+### First mention, metaphor (`-m`)
+<a id="metaphor-m"></a>
+
+Use **-m** when you introduce a root in its published **metaphorical** sense. Mnemonic: **-m** = **m**etaphor.
+
+```
+`zululon guzumum.`
+
+gloss: `z-courage@` · `g-happy~`
+
+*Ululon is happy.*
+```
+
+**Compare with:** a literal first mention uses **-l** (`gelulul` *blue*). *Happy* here matches the metaphor of `uzumu` (*smile* → *happy*), so the adjective is **-m**.
+
+### Named (`-n`)
+<a id="named-n-beginner"></a>
+
+Use **-n** when the root is a **name**: a definite, established label. First cases are people and places. Mnemonic: **-n** = **n**ame.
 
 ```
 `zazawan vawalal.`
 
 gloss: `z-grace@` · `v-walk`
 
-*Azawan walks.* (named person)
+*Azawan walks.*
 ```
 
+### Resume (`-r`)
+<a id="resume-r-beginner"></a>
+
+Once something is already in the talk, point back with the same root and **-r**. Mnemonic: **-r** = **r**esume.
+
 ```
-`zazawar vawalal.`
+`zazawan vawalal. zazawar velebel.`
 
-gloss: `z-←grace` · `v-walk`
+gloss: `z-grace@` · `v-walk` · `z-←grace` · `v-sleep`
 
-*He/she/it walks.* (resume: same stem as the prior mention; see [pronouns](pronouns.md))
+*Azawan walks. He/she/it sleeps.*
 ```
 
-Prefer a published root when the English meaning matches; use **-m** when the match is the published **metaphorical** sense.
+**Compare with:** the first time you name Azawan, use **-n** (`zazawan`). The next sentence that means that same person uses **-r** (`zazawar`).
+
+### The four endings
 
 | Ending | Job | Mnemonic |
 |--------|-----|----------|
-| **-l** | First mention in the **literal** sense (*a / some X*) | **l**iteral |
-| **-m** | First mention in a **metaphorical** sense | **m**etaphor |
-| **-n** | **Named** / definite by label (*Azawan*, *Paris*) | **n**ame |
-| **-r** | **Resume** an already-introduced referent | **r**esume / **r**efer back |
+| **-l** | First mention, **literal** (*a / some X*) | **l**iteral |
+| **-m** | First mention, **metaphor** | **m**etaphor |
+| **-n** | **Name** (definite label) | **n**ame |
+| **-r** | **Resume** what is already in the talk | **r**esume |
 
-### Word shape
+### Writing
 
-```
-[role letter] + root + ending
-```
-
-Write that string as **one token** (`zazawan`). Full writing rules: [core.md § Writing words](core.md#orthography).
-
-1. **Role letter:** job in the sentence ([core.md](core.md#part-of-speech-prefixes)). Outside a sentence, omit it for a [citation](core.md#citation-forms) (`odogol`, `azawan`).
-2. **Root:** the published stem.
-3. **Reference suffix:** **-l**, **-m**, **-n**, or **-r**.
-
-Optional **plural `-sh`** comes after the ending ([plurality.md](plurality.md)).
-
-### Proper names on nouns (starter)
-
-**-n** marks a **named designation**: you treat the root as a definite, established label. Usual first cases are people and places (`/z/`…**-n**, `/d/`…**-n**). Prefix-less **…n** outside a clause cites a **name** or **the word-as-label** ([citation forms](core.md#citation-forms)). Writing stays lowercase; namedness is the ending ([capitalization](core.md#capitalization)). Usual named people in examples: *Azawan*, *Ululon*, *Uhubun*.
-
-**-n** on other role letters, multipart names, and titled events are Intermediate ([proper name](#proper-name--n)).
+Write **role letter + root + ending** as one word (`zazawan`). Outside a sentence you may omit the role letter: that is a [citation](core.md#citation-forms) (`odogol`, `azawan`). Full writing rules: [core.md § Writing words](core.md#orthography).
 
 ### Translation practice
 <a id="translation-practice"></a>

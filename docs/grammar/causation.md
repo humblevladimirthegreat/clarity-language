@@ -12,17 +12,10 @@ How to say *A would work for B*, *B needs A*, and *if* / *because*.
 ### Sufficient (*would work*)
 <a id="sufficient"></a>
 <a id="np-poles"></a>
-<a id="pole-habit"></a>
-<a id="why-split"></a>
 
-Put the **outcome** first (the host). Put what **would work** in the open sufficient slot (`…aom`). Others may still count.
+Put the **outcome** first. Put what **would work** after it with open inclusive **`…aom`**. Other routes may still count.
 
-The first vowel is series **`a`** (*add*): add that route, and the outcome can follow.
-
-| Prefer | Job | Mnemonic |
-|--------|-----|----------|
-| single-item **`…aom`** (`zaom` / `daom` / …) | *at least X* / *X would work* | **`a`** add a route |
-| multi inclusive **`…ao…`** | several jointly listed hits | **`a`** add several routes |
+Mnemonic: vowel **`a`** is **add**. You add a route, and the outcome can follow.
 
 ```
 `zezewel zaom.`
@@ -32,6 +25,8 @@ gloss: `z-effort` · `z-and/or.open`
 *Effort would work (among other routes).*
 ```
 
+Two (or more) items before **`…aom`** are jointly listed hits: *clouds or snow would work*.
+
 ```
 `zuludul zozowol zaom.`
 
@@ -40,9 +35,56 @@ gloss: `z-cloud` · `z-snow` · `z-and/or.open`
 *Clouds or snow would work (for that outcome).*
 ```
 
-Closed **`…aol`** (*X is enough*) is the stronger twin: this route alone settles the inclusive frame. Keep everyday *would work* on **`…aom`**.
+The same join sits on a verb when the route is an action:
 
-When both poles are **nouns / phrases**, reuse the inclusive family in [coordination](coordination.md).
+```
+`zuhubun vuzunul vaom.`
+
+gloss: `z-beauty@` · `v-sing` · `v-and/or.open`
+
+*Uhubun’s singing would work.*
+```
+
+Closed **`…aol`** (*X is enough*) is the stronger twin: this route alone settles the frame. Everyday *would work* uses **`…aom`**.
+
+```
+`zabogol zaol.`
+
+gloss: `z-book` · `z-and/or`
+
+*A book is enough.*
+```
+
+| Form | Job | Mnemonic |
+|------|-----|----------|
+| **`…aom`** (`zaom` / `vaom` / …) | *at least X* / *X would work* | **`a`** add a route |
+| **`…ao…`** (two or more items) | several jointly listed hits | **`a`** add several routes |
+| **`…aol`** | *X is enough* (this route settles it) | **`a`** add, **-l** locked |
+
+### *If* / *because* (clause poles)
+<a id="clause-poles-beginner"></a>
+
+When English would say *if* or *because* between **two full sentences**, use the [dependent-clause](core.md#dependent-clauses) pair you already know: `/h/` + `/b/` **`adoro`**, last in the main sentence. The `/h/` word takes metaphorical **-m**.
+
+Mnemonic: 🚪 **`adoro`** is a **door** (*opportunity*) → *if*; 🧱 **`urugu`** is a **brick** (*foundation*) → *because*.
+
+```
+`zazawan vawalal hadorom badorol zululon velebel.`
+
+gloss: `z-grace@` · `v-walk` · `h-if` · `b-next-clause` · `z-courage@` · `v-sleep`
+
+*Azawan walks if Ululon sleeps.*
+```
+
+```
+`zazawan vawalal hurugum badorol zululon velebel.`
+
+gloss: `z-grace@` · `v-walk` · `h-because` · `b-next-clause` · `z-courage@` · `v-sleep`
+
+*Azawan walks because Ululon sleeps.*
+```
+
+**Compare with:** *would work* / among routes uses open inclusive **`…aom`** above. *If* / *because* use **`hadorom` / `hurugum`** + **`badorol`**.
 
 ### Translation practice
 <a id="translation-practice"></a>

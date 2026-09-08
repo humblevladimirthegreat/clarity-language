@@ -5,10 +5,10 @@ Optional **-sh** after the [reference suffix](reference-suffix.md) marks an **as
 ## Beginner
 <a id="beginner"></a>
 
-### Core sense
+### Associative group (`-sh`)
 <a id="associative"></a>
 
-Without **-sh**, the word picks **one** referent. With **-sh**, you name an **anchor plus nearby associates** (family, coworkers, unit, household, and so on). Who counts as an associate comes from the conversation and the situation.
+Without **-sh**, the word picks **one** person or thing. With **-sh**, you name an **anchor plus nearby associates** (family, coworkers, unit, household, and so on). Who counts as an associate comes from the conversation and the situation.
 
 **-sh** = **s**et with the anchor. On a name it reads as *Azawan and associates*.
 
@@ -20,6 +20,10 @@ gloss: `z-grace@-sh` · `v-walk`
 *Azawan and associates walk.*
 ```
 
+**-nsh** is a **named or titled group** (*Azawan and associates*, *Team Alpha*).
+
+To point back to that group (or to a prior person **and** their associates), add **-sh** after resume **-r**:
+
 ```
 `zazawarsh vajul.`
 
@@ -28,57 +32,90 @@ gloss: `z-←grace-sh` · `v-sit`
 *They (that one and associates) sit.*
 ```
 
-| Ending | Reading |
-|--------|---------|
-| `…l` / `…m` / `…n` / `…r` | singular (one referent / one introduction) |
-| `…lsh` / `…msh` / `…nsh` / `…rsh` | associative group |
-
-### Word shape
+A first mention of a **kind as a group in this situation** uses **-lsh** (literal) or **-msh** (metaphorical). Bare **-l** / **-m** still introduce; **-lsh** / **-msh** introduce a **group**.
 
 ```
-[role letter] + root (+ x + root ...) + ending + (optional -sh)
+`zagadalsh vajul.`
+
+gloss: `z-cat-sh` · `v-sit`
+
+*Some cats sit.*
 ```
 
-**-sh** sits **after** the reference suffix only. The allowed finals are **-lsh**, **-msh**, **-nsh**, and **-rsh** ([phonology.md](phonology.md#phonotactics)).
+```
+`zazawan dodogolsh vejel.`
 
-### By ending
+gloss: `z-grace@` · `d-dog-sh` · `v-see`
 
-**-sh** keeps the ending’s discourse job and only adds group reference.
+*Azawan sees some dogs.*
+```
 
-| Form | Discourse job |
-|------|-----------------|
-| **-lsh** | Indefinite **associative group**, literal (*some cats* as a set) |
+**Compare with:** English *cats* can mean a kind in general. **-lsh** is a **set in this situation**.
+
+| Form | Job |
+|------|-----|
+| **-lsh** | Indefinite **associative group**, literal (*some cats* as a set here) |
 | **-msh** | Indefinite **associative group**, metaphorical |
-| **-nsh** | **Named / titled group** (*the Beatles*, *Team Alpha*, *the Alps*) |
-| **-rsh** | Definite **associative** resume: prior referent **and associates**, or resume of a prior group |
-
-Bare **-l** / **-m** still always introduce; **-lsh** / **-msh** introduce a **group** indefinite. Resume of a group is **-rsh**.
-
-English plural *cats* can mean *cats in general*. Agalan **-lsh** is a **set in this situation**. Inclusive *we* is **`aha`**, not speaker **-sh** ([clusivity](pronouns.md#clusivity)).
-
-### Nouns (`/z/`, `/d/`, `/b/`)
-
-On a noun, **-sh** makes the argument an associative set: *some cats*, *Azawan and associates*.
-
-* **-lsh** / **-msh** — first mention of a discourse group of that kind.
-* **-nsh** — a named plural / titled group.
-* **-rsh** — prior noun **and associates**.
-
-*Every cat* and a count with no set use other constructions (joins and number words), not **-lsh**.
+| **-nsh** | **Named / titled group** |
+| **-rsh** | Resume: prior referent **and associates**, or a prior group |
 
 ### Person-role **-sh**
 <a id="person-role-sh"></a>
 
-Special pronouns take **-sh**, with a reading that depends on the role:
+On speaker / listener words, **-sh** has a reading that depends on the role.
+
+The **address set** is everyone you are talking to right now (all current addressees, no speaker).
+
+```
+`zedonensh vawalal.`
+
+gloss: `z-listener-sh` · `v-walk`
+
+*You all (the addressees) walk.*
+```
+
+```
+`zugobonsh vajul.`
+
+gloss: `z-speaker-sh` · `v-sit`
+
+*Speaker and associates (not you) sit.*
+```
+
+```
+`zululonsh vajul.`
+
+gloss: `z-courage@-sh` · `v-sit`
+
+*You (Ululon) and your associates sit.*
+```
+
+```
+`zahan vawalal.`
+
+gloss: `z-interlocutors` · `v-walk`
+
+*We (you and I) walk.*
+```
 
 | Form | **-sh** reading | Mnemonic |
 |------|-----------------|----------|
 | **`ugobo…sh`** (`zugobonsh`, …) | speaker **and associates** (listener not assumed) | speaker’s set |
 | **`edone…sh`** (`zedonensh`, …) | **address set**: all current addressees | everyone you are talking to |
-| **`aha`** (`zahan`, …) | already the interlocutor set | handshake *we*; leave **-sh** off for ordinary inclusive *we* |
+| **`aha`** (`zahan`, …) | already the interlocutor set | handshake *we* |
 | name / content **-r**…**-sh** | that person **and associates** | same as noun **-sh** |
 
-*You (singular) and your associates* is **name…**-sh** (`zululonsh`), not **`edone…sh`**. Inclusive *we* is **`aha`**, not **`ugobo…sh`**.
+**Compare with:** inclusive *we* uses **`aha`** (`zahan`), not **`ugobo…sh`**.
+
+**Not the same job as:** *you and yours* uses a **name**…**-sh** (`zululonsh`). **`edone…sh`** is the [address set](#person-role-sh) only.
+
+### Writing
+
+**-sh** sits **after** the [reference suffix](reference-suffix.md) only. The allowed finals are **-lsh**, **-msh**, **-nsh**, and **-rsh** ([phonology.md](phonology.md#phonotactics)).
+
+```
+[role letter] + root + ending + (optional -sh)
+```
 
 ### Translation practice
 <a id="translation-practice"></a>

@@ -6,30 +6,40 @@ Four vowels keep the **same jobs** across tables. The **prefix** tells you which
 ## Beginner
 <a id="beginner"></a>
 
-You already use them on the speech act: **`jal`** statement, **`jol`** question, **`jel`** command, **`jul`** *don’t*.
+A **vowel series** is the same four vowel jobs reused whenever a prefix starts a small closed table. The prefix picks the table; the vowel is the move.
 
-**`a`** add, **`o`** one, **`e`** order, **`u`** undo. Read the prefix to pick the table; the vowel is the move.
+You already use them on the [speech act](core.md#speech-act-beginner): **`a`** add a statement, **`o`** put one option on the table, **`e`** set the order of action, **`u`** undo the frame.
 
-Opening with `/j/` starts a turn. The vowel says which move you make: add a statement (**`a`**), put one option on the table (**`o`**), set the order of action (**`e`**), or undo the whole frame (**`u`**).
-
+```
 `jal zazawan godogol.`
 
 gloss: `j-statement` · `z-grace@` · `g-dog`
 
 *Azawan is a dog.*
+```
 
+```
 `jol zazawan godogol.`
 
 gloss: `j-question` · `z-grace@` · `g-dog`
 
 *Is Azawan a dog?*
+```
 
-| Vowel | Job (every table) | Mnemonic | Speech act you know |
-|-------|-------------------|----------|----------------|
-| **`a`** | add / include / inventory / hold | add | **`jal`** statement |
-| **`o`** | one-choice / menu / instead | one | **`jol`** question |
-| **`e`** | rank / soft-correct / priority | order | **`jel`** command |
-| **`u`** | subtract / not / except | undo | **`jul`** prohibition |
+```
+`jel vawalal.`
+
+gloss: `j-command` · `v-walk`
+
+*Walk!*
+```
+
+| Vowel | Job | Mnemonic | Speech act you know |
+|-------|-----|----------|---------------------|
+| **`a`** | add | add | **`jal`** statement |
+| **`o`** | one | one | **`jol`** question |
+| **`e`** | order | order | **`jel`** command |
+| **`u`** | undo | undo | **`jul`** prohibition |
 
 ## See also
 

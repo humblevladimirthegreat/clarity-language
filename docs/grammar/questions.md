@@ -5,80 +5,103 @@ How to **ask** in Agalan: under question (**jol** / soft **jom**), yes/no vs fil
 ## Beginner
 <a id="beginner"></a>
 
-### Question (**jol** / **jom**)
+### Ask (`jol` / `jom`)
 <a id="question"></a>
 
-Put **jol** at the left edge to ask. Soft **jom** is the same job, gentler. One marker covers yes/no *and* *who* / *what* / *when?* / *what happened?*. The body shape tells which kind of ask it is.
+**`jol`** puts the sentence **under question**: you are asking, not stating. Soft **`jom`** is the same job, gentler (wondering). Write it at the **start of the turn** (the new speech move), then the sentence body. Mnemonic: **o** is the menu; you want an answer picked.
+
+A body with **no** join **-r** is a **yes/no** ask.
 
 ```
 `jol zazawan vawalal.`
 
 gloss: `j-question` · `z-grace@` · `v-walk`
 
-*Does Azawan walk?* (yes/no: no join **-r**)
+*Does Azawan walk?*
 ```
+
+```
+`jom zululon velebel.`
+
+gloss: `j-question~` · `z-courage@` · `v-sleep`
+
+*Does Ululon sleep?* (gentle)
+```
+
+Bare emptiness is still yes/no: `zal` / `xal` → *Does nobody…?* / *Did nothing happen?*
+
+```
+`jol zal vawalal.`
+
+gloss: `j-question` · `z-none` · `v-walk`
+
+*Does nobody walk?*
+```
+
+### Fill-ask
+<a id="fill-ask-r"></a>
+
+A **fill-ask** is an ask that wants a name in a blank, not *yes* or *no*. Under **`jol`** / **`jom`**, join **-r** is that blank: *who* / *what* / *do what?* / *what happened?* Use [unspecified-member **-r**](coordination.md#unspecified-member-r-phrase) in the slot you want filled (`zar`, `var`, `xar`, …).
 
 ```
 `jol zar vawalal.`
 
 gloss: `j-question` · `z-who` · `v-walk`
 
-*Who walks?* (fill-ask)
+*Who walks?*
 ```
 
-| Body shape | Ask type |
-|------------|----------|
-| **No** join **-r** | **Yes/no** |
-| One or more join **-r** | **Fill-ask** (name the unspecified member(s)) |
+Mnemonic: **-r** on the join = “name this member.” **a** add names *who/what*; **u** undo names *who/what else*.
 
-Unspecified *who* / *what* / *where* / *when?* / *what happened?* use [unspecified-member **-r**](coordination.md#unspecified-member-r-phrase) in the queried slot (`zar`, `var`, `xar`, …).
+| Vowel | Ask | Examples | Mnemonic |
+|-------|-----|----------|----------|
+| **a** | *Who/what?* / *What happened?* | `zar` · `var` · `xar` | **a** add: name a member |
+| **u** | *Who else?* / *What else?* | `zur` · `vur` · `xur` | **u** undo: name what remains |
 
-Under question, join **-r** always means fill-ask. For emptiness yes/no, use bare emptiness forms (`zal` / `xal` → *Nothing?* / *Nothing happened?*) or an ordinary indefinite (`-l` / `-m`).
+```
+`jol zur velebel.`
 
-### Fill-ask essentials
-<a id="fill-ask-r"></a>
+gloss: `j-question` · `z-who-else` · `v-sleep`
 
-Under **jol** / **jom**, prefixed **-r** on **a** / **o** / **e** / **u** asks to name the unspecified member. The vowel is the same series job as elsewhere: **a** add, **o** one, **e** order, **u** undo.
+*Who else sleeps?*
+```
 
-| Vowel | Under question (standalone) | Examples | Mnemonic |
-|-------|------------------------|----------|----------|
-| **a** | *Who/what?* / *What (did they) do?* / *What happened?* | `zar` · `var` · `xar` | **a** add: name a member |
-| **o** | *What (anything)?* / *Anything?* | `zor` · `vor` · `xor` | **o** one: name any one |
-| **e** | *What’s the priority?* | `zer` · `ver` · `xer` | **e** order: name the rank |
-| **u** | *What else?* / *Who else?* | `zur` · `vur` · `xur` | **u** undo: name what remains |
-
-*When?* uses bare **`har`** (and kin) in Intermediate ([When?](#when)).
-
-Content-word resume **-r** points back at a named thing; fill-ask is only join **-r** (`zar` / `var` / `xar` / …). See [pronouns](pronouns.md).
+**Compare with:** pointing back at someone already named uses content resume **-r** ([pronouns](pronouns.md)). Fill-ask is only **join** **-r**.
 
 ### Fill-all
 <a id="fill-all"></a>
 
-Every join **-r** under question is a fill-ask blank. The answer is expected to **fill all** of them. Spoken order of those **-r** fences is the expected fill order.
+Every join **-r** under question is a fill-ask blank. The answer is expected to **fill all** of them, in spoken order.
 
-| Question shape | Ask |
-|----------------|------|
-| `zar` … `dar` | *Who … what?* |
-| `zar` … `har` | *Who … when?* |
-| `var` … `zar` | *Do what … who?* |
+```
+`jol zar vejel dar.`
 
-**One blank + real *something* elsewhere:** use an ordinary indefinite (`-l` / `-m`) for the known thing, and join **-r** only for the blank (`zar` + `dabelel` → *Who ate an apple?*; `zar` + `dar` → *Who ate what?*).
+gloss: `j-question` · `z-who` · `v-see` · `d-what`
 
-### Polar stance (workhorses)
+*Who sees what?*
+```
+
+For **one** blank and a **known** thing elsewhere, keep the known thing ordinary (`-l` / `-m`) and put join **-r** only on the blank.
+
+```
+`jol zar vejel dodogol.`
+
+gloss: `j-question` · `z-who` · `v-see` · `d-dog`
+
+*Who sees a dog?*
+```
+
+### Polar stance (*yes* / *no* / *sure*)
 <a id="polar-stance"></a>
 <a id="answers"></a>
 
-Closed **`/j/`** particles are **polar stance**. Shape is **`j` + stacked join vowel + `-l` / `-m`**. They mark a **turn**: left-edge or a bare utterance. These forms take **-l** or **-m**.
-
-**Implied speech act:** polar **-l** implies **`jal`**; **-m** implies **`jam`**. Prefer **`jael …`** over **`jael jal …`** when a body follows.
+**Polar stance** is a *yes* / *no* / *I’ll take that* word. It starts a turn, or stands alone. Shape is **`j`** plus two vowels plus **-l** (exact) or **-m** (soft). Prefer **`jael …`** over **`jael jal …`** when a body follows.
 
 | Form | Job | Mnemonic |
 |------|-----|----------|
-| **jael** / soft **jaem** | confirmational *yes* / *true* | **ae** = match |
-| **juel** / soft **juem** | default *no* / *false* | **ue** = flip |
-| **jaol** / soft **jaom** | *sure* / *I'll take that* (offer uptake) | **ao** = option |
-
-Each stack means exactly what its parts combine to say: first vowel picks accept (**a**) vs undo (**u**); second picks judged order (**e**) vs offered option (**o**).
+| **`jael`** / soft **`jaem`** | *yes* / *true* | **ae** = match |
+| **`juel`** / soft **`juem`** | *no* / *false* | **ue** = flip |
+| **`jaol`** / soft **`jaom`** | *sure* / *I’ll take that* | **ao** = option |
 
 ```
 `jael.`
@@ -86,23 +109,19 @@ Each stack means exactly what its parts combine to say: first vowel picks accept
 *Yes.* / *True.* / *Got it.*
 ```
 
+A *…, yes?* tag is a **second** turn after a period:
+
 ```
 `zazawan vawalal. jael.`
 
 gloss: `z-grace@` · `v-walk` · `j-yes`
 
-*Azawan walks. Yes.* (confirm tag = **second bare turn** after `.`)
+*Azawan walks. Yes.*
 ```
 
-These three jobs are distinct:
+**Compare with:** *Don’t walk* uses **`jul`**. **`juel`** answers *is it true?*
 
-| System | Forms | Job |
-|--------|-------|-----|
-| Speech act | **`jal`** / **`jul`** | statement vs *don’t…* |
-| Polar stance | **`jael`** / **`juel`** / **`jaol`** | *true* vs *false* vs *I’ll take that* |
-| Denial inside the clause | **`zul`** / **`vul`** / **`xul`** | *not X* / *no* as a join |
-
-A fill answer **need not** keep **-r**. Bare content, single-item **-l** / **-m** / **-n**, or a longer list is fine ([fill-ask answers](#fill-ask-answers)).
+**Not the same job as:** *not X* inside the clause (`zul` / `vul` / `xul`).
 
 ### Translation practice
 <a id="translation-practice"></a>
