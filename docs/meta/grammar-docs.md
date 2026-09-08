@@ -113,7 +113,7 @@ The body after the starter still teaches the split. Do not follow the label with
 
 Place the labeled beat **after** the worked example for this form, not in the page lead. The lead says what **this** form does. **At most two** labeled beats per teach block (two equally likely mix-ups). A third sibling is not a table — omit it; the learner can open that page.
 
-Do **not** add a **Form · Job** (or English-bundle) table whose rows are other subsystems. Those tables are related-form inventories. A **Form · Job** table is only for **this** form’s own cells (this mood’s endings, this join series, this page’s vowel map).
+Do **not** add an **Agalan · Use** (or English-bundle) table whose rows are other subsystems. Those tables are related-form inventories. An **Agalan · Use** table is only for **this** form’s own cells (this mood’s endings, this join series, this page’s vowel map).
 
 Same family as ownership fences (“this page owns / does not own X”) — [teach now; don’t preview later](#teach-now-dont-preview-later).
 
@@ -127,17 +127,18 @@ Default to stating only the allowed form. A contrastive negative spends the lear
 |-------|---------|
 | Boilerplate disclaimers: “X is a **root choice**, not `xa`/`xu` polarity”, “plural **-sh** stays unused on `/h/` `/w/`”, “there is no dedicated root”, “not a fourth vowel/role/join”, “**Not won’t:** …” | Delete. State what the form does instead |
 | Denials of a retired pairing or order: “not a matching word on the left”, “not a mid-chain extender”, “not a sixth marker identity” | Delete. The learner never saw that version — [omit denials of former constructions](#omit-former-construction-denials) |
-| **Trap tables** (“Not this (real traps)”, “Traps worth one look”, “Keep these for other jobs”) and **related-form Form · Job** catalogs | Delete from body. If the learner would use the wrong form *now*, one [Compare with](#compare-with) starter plus an example of each — not a table of every peer |
+| **Trap tables** (“Not this (real traps)”, “Traps worth one look”, “Keep these for other jobs”) and **related-form Agalan · Use** catalogs | Delete from body. If the learner would use the wrong form *now*, one [Compare with](#compare-with) starter plus an example of each — not a table of every peer |
 | Inline **`Trap:`** / **“Trap:”** / *Near miss:* | Punitive or editor hygiene. Use one of the four [starters](#compare-with) |
 | “Do not confuse X with Y” / “Not to be confused with…” | Quiz warning; does not teach the job split. Use **Compare with:** / **For *X*, use:** / **Related form:** / **Not the same job as:** |
 
 **When a contrast earns its place** (all three must hold): the learner can plausibly use the sibling for **this** English *now*; both forms appear with a real example; and the contrast fits in one or two labeled sentences after this form’s example. Otherwise cut it. Do not expand a mix-up into a related-forms table.
 
-## Mnemonics live in tables
+## Cues live in tables
+<a id="cues-live-in-tables"></a>
 
-Do not append free-text `**Mnemonic:**` paragraphs after a table (that leftover is editor layout, not a learner cue). Put mnemonics in a dedicated column of that table so each row carries its own memory hook. For tables whose rows come from the [vowel series](../grammar/vowel-series.md), the mnemonic column shows how **`a`** / **`o`** / **`e`** / **`u`** maps to that row’s meaning. Metaphor emoji may serve as the visual hook, consistent with published-root conventions.
+Do not append free-text `**Cue:**` or `**Mnemonic:**` paragraphs after a table (that leftover is editor layout). Put each row’s memory aid in a **Cue** column. For tables whose rows come from the [vowel series](../grammar/vowel-series.md), **Cue** shows how **`a`** / **`o`** / **`e`** / **`u`** maps to that row. Metaphor emoji may serve as the visual cue, consistent with published-root conventions.
 
-If a page has several such tables, give each its own mnemonic column; never summarize the whole series once in prose and leave later tables bare.
+If a page has several such tables, give each its own **Cue** column; never summarize the whole series once in prose and leave later tables bare. Column names and what may sit in **Cue**: [Cues](#cues-columns).
 
 ## Empty or pointless stages
 <a id="empty-stages"></a>
@@ -163,7 +164,7 @@ Prefer commas, colons, parentheses, or separate sentences over em dashes. An em 
 1. **Title + one-line job** — the English job this page teaches (learner-facing). Sibling links only when the learner will reach for that form *now* — [Compare with](#compare-with), not “this page owns / does not own” fencing.
 2. **Needs** (optional) — **rare.** Use only when the page is late and the dependency is not obvious from the [cross-doc path](learning-levels.md#cross-doc-path) (e.g. causation → joins + **`adoro`** from core Beginner; comparatives → rank joins). Label as `**Needs:**` with one short link line. Do **not** ritualize “core Beginner; reference-suffix Beginner” on every page.
 3. **`## Beginner` / `## Intermediate` / `## Advanced`** — per [learning-levels.md](learning-levels.md). Include **Advanced** only when that page has rare inventory to teach ([empty or pointless stages](#empty-stages)).
-4. Inside each stage: **concept → English job → Agalan shape → one consequence → 1–3 examples → (optional contrast) → full table if needed**. Mnemonic in the same block or in the table, not as the lead. Inside **Beginner**, H3 order is **dependency order for building a clause** ([Beginner stage shape](#beginner-stage-shape)), not inventory order (not “all letters, then all syntax”). Writing / citation notes are last in that stage. [Explain before you slogan](#explain-before-you-slogan).
+4. Inside each stage: **concept → English job → Agalan shape → one consequence → 1–3 examples → (optional contrast) → full table if needed**. Cue in the same block or in the **Cue** column, not as the lead. Inside **Beginner**, H3 order is **dependency order for building a clause** ([Beginner stage shape](#beginner-stage-shape)), not inventory order (not “all letters, then all syntax”). Writing / citation notes are last in that stage. [Explain before you slogan](#explain-before-you-slogan).
 5. Optional **See also** at the end — a few precise related forms only; no long link walls in the lead (and no lead preview of later peers — [teach now; don’t preview later](#teach-now-dont-preview-later)).
 
 Front matter that orients (psychological purpose / limits / feature criteria / benefit tour — [why-agelan.md](../grammar/why-agelan.md); grammar design / how to learn — [introduction.md](../grammar/introduction.md)) is not a learning stage. Reading order lives in the path / sidebar — not repeated as Prerequisites.
@@ -175,7 +176,7 @@ Front matter that orients (psychological purpose / limits / feature criteria / b
 |-------|---------|
 | 1 | What you can *do* (English job) |
 | 2 | The Agalan shape (minimal pattern) |
-| 3 | A **mnemonic** so the form sticks (Beginner; below) |
+| 3 | A **cue** so the form sticks (Beginner; [cues](#cues-columns)) |
 | 4 | Worked example(s) |
 | 5 | [Compare with](#compare-with) — **only the form they would use for this English** |
 | 6 | Inventory / edge cases |
@@ -204,19 +205,67 @@ Do **not** open Beginner with:
 
 **Drills as a check.** After drafting Beginner, walk the [translation practice](translation-exercises.md): every taught H3 should appear in a drill, or get cut / demoted. Setup that only exists so a later drill parses (`/h/` + `/b/` before **`adoro`**) stays as the **minimum** needed for that drill.
 
-## Mnemonics
+## Cues
+<a id="cues-columns"></a>
+<a id="cues"></a>
 
-Every **Beginner** teaching gets a **mnemonic** — something that makes the form memorable, not only grammatical. Intermediate / Advanced inventories need not invent a cue per cell.
+Every **Beginner** teaching gets a **cue** — something that makes the form memorable, not only grammatical. Intermediate / Advanced inventories need not invent a cue per cell. Learner-facing name is **Cue**; editors may still say *mnemonic* on this meta page.
+
+Learner tables use these headers (omit a column when every cell would be empty or a duplicate of another column):
+
+| Column | Binding? | Content |
+|--------|----------|---------|
+| **Agalan** | yes | The spelling (word, letter, or pattern). |
+| **Use** | yes | What the form **does** in the clause (subject, command, continue). Not a pun. |
+| **English** | yes | English the learner may **say or produce** (sense or free English). Not a pun. |
+| **Cue** | no | Recall only: **why** the token maps. Cover this column: the rest must still be the language. ([rubric](#cue-rubric)) |
+
+**Use** and **Cue** must not be the same string. If they would be (`add` / *add*), unpack **Use** (*hold / inventory*) and keep the slogan in **Cue**.
+
+Do **not** use the heading **Mnemonic**. It reads like a second definition, and writers stuffed letter puns and real **-m** etymology into one cell.
+
+### Cue rubric
+<a id="cue-rubric"></a>
+
+A cue is a **bridge**: one reason the visible token (letter, vowel, emoji) maps to **Use** / **English**. It is not a caption of the token.
+
+| Test | Pass | Fail |
+|------|------|------|
+| **Cover** | Hide **Cue**. **Agalan** + **Use** / **English** still teach the language. | The pun is the only definition |
+| **Bridge** | Hide the emoji, the *literal*, and the letter being punned. What remains still says *why* the token maps to this row. | 🧱 *brick* — leftover is the picture’s name |
+| **Not a caption** | Cue ≠ Unicode/CLDR name, ≠ **Agalan** spelled in English, ≠ `from *smile*` with no why | *doorway*, *zebra*, *timer* alone |
+| **Not the answer** | Cue is not a synonym of **English** / **Use** | *because* restated as *cause* / *foundation* as a second gloss cell |
+| **One hop** | Token → **one** reason → the row | `brick → foundation → because` as three English labels |
+| **Short** | One clause after the token | A second slogan system |
+
+Scene shape: `{emoji} *{literal}*: {why that evokes this row}`. The *literal* is the lexicon **from**; the clause after the colon is the cue proper.
+
+Letter / series: `{letter} ≈ {sound or series slogan} ({why that maps})`. `**d** ≈ done to` passes because *done to* is a **sound** bridge to *acted on*, not a caption of `d`. `**v** ≈ verb` fails unless the leftover explains the coincidence (*the English word for the job*).
+
+`from *smile*` with no why fails the bridge test. Prefer `from *smile*: the face of *happy*`, or omit **Cue** when **-m** plus **English** is enough.
+
+### Two kinds of cue
+
+| Kind | What it is | Where it goes |
+|------|-----------|----------------|
+| Letter / series | Pun on the spelling (`**d** ≈ done to`, **`a`** *add*) plus why it maps | **Cue** only. Never **Use** or **English**. Linker is **`≈`** (“sounds like”), never `=` or `→`. |
+| Scene | Published emoji + literal that licenses **-m**, then why that scene evokes the sense | **English** = metaphorical sense (*happy*, *because*). **Cue** = `emoji *literal*: why` |
+
+A lexicon path is a real **-l** / **-m** choice; the *literal* English is still not what drills ask for. Write `*happy* (**-m**)` in **English** and `from *smile*: the face of *happy*` in **Cue** — never `smile → *happy*` as the only English.
+
+Inline after the rule sentence: `(cue: …)`. Worked examples stay Agalan / `gloss:` / *free English* — no cue line. Translation-practice answers are Agalan or loose English only; the root bank may add **Cue** beside **English · Agalan**.
+
+Do not invent a second cue system beside metaphor, vowels, and endings when those already explain the form. **Do not use the cue as the definition:** teach **Use** and the Agalan shape first ([explain before you slogan](#explain-before-you-slogan)).
+
+Do **not** paste a legend (“**Use** is the rule…”) on every grammar page. [How to learn](../grammar/introduction.md#how-to-learn) owns that explanation once.
 
 Usual sources (prefer one; reuse the language’s own systems):
 
 | Source | When |
 |--------|------|
-| **Metaphorical / lexicon sense** | Closed roots and overlays (`ezaza` ➡️ *east* → *therefore*; **`SAME`**, **`COMMENT`**, …) |
-| **Vowel series** | Join / speech act / polar stacks that share letter jobs (`a` inventory, `o` menu, `e` rank, `u` negation, …) |
+| **Metaphorical / lexicon sense** | Closed roots and overlays (**`SAME`**, **`COMMENT`**, ➡️ *east*: the sun’s path, so the talk moves on) |
+| **Vowel series** | Join / speech act / polar stacks that share letter jobs |
 | **Ending letters** | **-l** / **-m** / **-n** / **-r** (and stance endings) when the ending *is* the lesson |
-
-One short cue is enough (table column, parenthetical, or a line under the rule). Do not invent a second mnemonic system beside metaphor, vowels, and endings when those already explain the form. **Do not use the mnemonic as the definition:** teach the English job and the Agalan shape first; the pun or emoji is a recall hook after that ([explain before you slogan](#explain-before-you-slogan)).
 
 ## Voice and length
 
@@ -237,7 +286,7 @@ Brevity means **no filler**, not **maximum claims per clause**. A Beginner lead 
 1. **English job** — what the learner is trying to say, in school-grammar English.
 2. **Agalan shape** — which letter, ending, or slot does that job, and where it sits.
 3. **Consequence** — what they may now do that English does not (reordering, omitting a word, attaching a clause).
-4. **Mnemonic last** — letter puns and emoji metaphors are **hooks after the rule**, never the definition.
+4. **Cue last** — letter puns and emoji scenes are **after the rule**, never the definition.
 
 Do not merge (1)–(3) into a copula slogan (*X is Y*) or a packed imperative (*do A so that B*) until those three pieces have been said in ordinary English.
 
@@ -245,17 +294,17 @@ Do not merge (1)–(3) into a copula slogan (*X is Y*) or a packed imperative (*
 |-------|--------------|--------|
 | Copula slogan: “the role letter is the job” | Equates a letter with an abstract label; never says *what you read off the letter* | “The first letter of the word tells you its role (subject, verb, …). Change only that letter when the same meaning plays a different role.” |
 | Packed prominence: “Put first what you want heard as the point” | “Point” is undefined; also smuggles free word order | First: roles stay on the letters, so order is free. Then: the leftmost content word is what you highlight (what the sentence is “about,” or the new information). |
-| Mnemonic as definition: “**d** = done to” in the rule sentence | The pun is memorable only after “acted on” is taught | Teach *direct object = who or what is acted on*, then “(mnemonic: **d** = done to).” |
+| Cue as definition: “**d** = done to” in the rule sentence | The pun is memorable only after “acted on” is taught | Teach *direct object = who or what is acted on*, then `(cue: **d** ≈ done to)`. |
 | Label = explanation: “The **boundary** is **`adoro`**.” | Names the form without saying what a boundary *does* | “The main sentence stops after **`adoro`**; the next full sentence is the content that **`adoro`** stands for.” |
 | Omission as slogan: “**Leave `jal` out** when a period already marks a statement” | Assumes they know why `jal` exists | “A period already means ‘this is a statement,’ so you do not also write the statement word **`jal`**.” |
 
-**Test (slogan test):** cover the example block. Could a careful adult who has never opened this repo restate the rule in their own words from the lead alone? If they would have to guess what “job,” “point,” “setting,” or “body” means, unpack those words in the lead. A mnemonic in parentheses does not count as unpacking.
+**Test (slogan test):** cover the example block. Could a careful adult who has never opened this repo restate the rule in their own words from the lead alone? If they would have to guess what “job,” “point,” “setting,” or “body” means, unpack those words in the lead. A cue in parentheses does not count as unpacking.
 
 **Test (one new move):** the sentence that introduces a *new* choice (reorder, omit, attach) should not also introduce a new metaphor or a new technical noun. Split it.
 
 Do **not** pad with throat-clearing (“In this section we will…”, “It is important to note…”). Extra sentences must add **mechanism or consequence**, not warmth.
 
-Tables may stay telegraphic (Form · Job · Mnemonic). Running prose may not.
+Tables may stay telegraphic (**Agalan · Use · English · Cue**). Running prose may not.
 
 ### House shorthand needs a first-use gloss
 <a id="house-shorthand"></a>
@@ -264,7 +313,8 @@ Tables may stay telegraphic (Form · Job · Mnemonic). Running prose may not.
 
 | Short word | Unpack on first use as |
 |------------|------------------------|
-| **job** | role in the clause (subject, verb, …) |
+| **job** | role in the clause (subject, verb, …). Table header **Use** is the same idea; do not re-gloss the column name on every page ([How to learn](../grammar/introduction.md#cues)) |
+| **Cue** | memory aid; defined once in How to learn — not unpacked in each table |
 | **point** / **prominence** | what comes first for emphasis (what the sentence is “about,” or the new information) |
 | **setting** | statement vs question vs command |
 | **body** | the clause after any opening `/j/` words |
@@ -354,7 +404,7 @@ Do **not** require a **Not this** column on every table, or a counter-example on
 - Contrast and decision tables beat encyclopedia dumps in Beginner. A decision table is **this** form’s own readings (endings, vowel series), not a list of other pages.
 - Beginner may show a **partial** table (only letters / jobs taught so far). Completing the table is Intermediate, or a recap at the **end** of Beginner after those jobs have examples — not a dump at the top.
 - Full inventories belong in Intermediate / Advanced, or after the teach block.
-- Prefer columns **Form · Job · Example** (or **Reading**) for **this** form. Add a Morph column only when endings are the point. Add **Not this** only when several rows share real confusables — not by default. Do not add a **Form · Job** table of related subsystems.
+- Prefer columns **Agalan · Use · English · Cue** for **this** form ([cues](#cues-columns)). Add **Example** or a Morph column when endings are the point. Add **Not this** only when several rows share real confusables — not by default. Do not add an **Agalan · Use** table of related subsystems.
 - A grammar-table **Gloss** column is short free English unless the row teaches morphology ([glosses.md](glosses.md)).
 
 ## Cross-links and scope
@@ -387,8 +437,8 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 | How to use the form | Grammar doc body under **`docs/grammar/`** (tagged **Beginner** / **Intermediate** / **Advanced**) |
 | Gloss format | [glosses.md](glosses.md) |
 | Level rubric / reading order | [learning-levels.md](learning-levels.md) ([cross-doc path](learning-levels.md#cross-doc-path)) |
-| Doc prose / example style | This page |
-| Goals / feature criteria | [why-agelan.md](../grammar/why-agelan.md) (psych); [introduction.md](../grammar/introduction.md) (grammar design) |
+| Doc prose / example style | This page ([cues](#cues-columns) for table columns) |
+| Goals / feature criteria | [why-agelan.md](../grammar/why-agelan.md) (psych); [introduction.md](../grammar/introduction.md) (grammar design, [cue tables](../grammar/introduction.md#cues)) |
 | Core sentence grammar | [core.md](../grammar/core.md) |
 | IPA / pronunciation / phonotactics | [phonology.md](../grammar/phonology.md) (letter table); [inspect.md](../grammar/inspect.md) (**Show IPA** on spoken forms). Not in other grammar-page examples |
 | Unassigned / unused-slot inventory | [unassigned-reserved.md](unassigned-reserved.md) — **never** a grammar-page row, drill, or “reserved” gloss |
@@ -402,7 +452,7 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 
 Before tagging a section **Beginner**, ask the [three questions](learning-levels.md#rubric-three-questions). Prefer the earlier stage when learners need the form to read ordinary examples. Dependency on another subsystem beats “feels hard.” Do not add Advanced for recap, unused-slot lists, bounce notes, or reminders — [empty or pointless stages](#empty-stages).
 
-Before shipping a **Beginner** stage, also check [Beginner stage shape](#beginner-stage-shape), [plain language](#plain-language-no-assumed-linguistics), and [explain before you slogan](#explain-before-you-slogan): invented terms and house shorthand defined on first use; lead unpacks job, shape, and consequence (slogan test); first H3 is a usable clause, not a table; no Intermediate teasers; drills cover the H3s (or the H3 is one-sentence setup for a drill).
+Before shipping a **Beginner** stage, also check [Beginner stage shape](#beginner-stage-shape), [plain language](#plain-language-no-assumed-linguistics), [cues](#cues-columns) ([rubric](#cue-rubric)), and [explain before you slogan](#explain-before-you-slogan): invented terms and house shorthand defined on first use; lead unpacks job, shape, and consequence (slogan test); cue last, never as the definition, and never a caption of the emoji; first H3 is a usable clause, not a table; no Intermediate teasers; drills cover the H3s (or the H3 is one-sentence setup for a drill).
 
 ## Markdown hygiene
 

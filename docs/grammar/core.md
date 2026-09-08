@@ -65,7 +65,7 @@ After an adjective, you can add how intense it is or in what manner. That extra 
 ### Adverbs (`/h/`)
 <a id="adverbs-h"></a>
 
-When you say **how, when, or where** an action happens, use `/h/` (an **adverb**). You may place it anywhere in that sentence; it still belongs to that sentence, not the next one. Several adverbs can sit next to each other (`hadazam howom` *hastily and quietly*).
+When you say **how, when, or where** an action happens, use `/h/` (an **adverb**). You may place it anywhere in that sentence. Several adverbs can sit next to each other (`hadazam howom` *hastily and quietly*).
 
 ```
 `zazawan hadazam vawalal.`
@@ -78,7 +78,7 @@ gloss: `z-grace@` · `h-haste~` · `v-walk`
 ### Extra nouns (`/b/`)
 <a id="extra-nouns"></a>
 
-Some adjectives and adverbs name a **relation** that needs another person or thing (*same as …*, *because of …*). Put that extra noun in `/b/` right after the `/ɡ/` or `/h/` word. The root on the `/ɡ/` or `/h/` word names the relation; `/b/` marks the noun that completes it. Keep an `/h/` + `/b/` pair **together with no gap**. English *to* / *for* (who receives something) uses that `/h/` + `/b/` shape too.
+Some adjectives and adverbs name a **relation** that needs another person or thing (*same as …*, *because of …*). Put that extra noun in `/b/` right after the `/ɡ/` or `/h/` word. The root on the `/ɡ/` or `/h/` word names the relation; `/b/` marks the noun that completes it. English *to* / *for* (who receives something) uses that `/h/` + `/b/` shape too.
 
 ```
 `gonunul bazawan`
@@ -88,7 +88,7 @@ gloss: `g-same` · `b-grace@`
 *same as Azawan*
 ```
 
-**`onunu`** 🪙 *coin* → two faces, one substance.
+**`onunu`** means *same*. (cue: 🪙 *coin*: two faces, still one thing)
 
 ### Turn (`/j/`): start a new speech move
 <a id="turn-j"></a>
@@ -122,12 +122,12 @@ gloss: `j-command` · `v-walk`
 *Walk!*
 ```
 
-| Form | Job | Mnemonic |
-|------|-----|----------|
-| **jal** | statement (often omitted) | **j**ump + **a** hold: stand behind the claim |
-| **jol** | question: yes/no and “fill in the blank” ask | **j**ump + **o** menu: pick an answer |
-| **jel** | command / instruction | **j**ump + **e** rank: do this |
-| **jul** | prohibition: *don’t…* | **j**ump + **u** undo: don’t do this |
+| Agalan | Use | Cue |
+|--------|-----|-----|
+| **jal** | statement (often omitted) | **j** ≈ jump, **a** ≈ add (hold the claim) |
+| **jol** | question: yes/no and “fill in the blank” ask | **j** ≈ jump, **o** ≈ option (pick from a menu) |
+| **jel** | command / instruction | **j** ≈ jump, **e** ≈ order (do this) |
+| **jul** | prohibition: *don’t…* | **j** ≈ jump, **u** ≈ undo (take the action back) |
 
 **`jael`** (*yes* / *true*) and **`juel`** (*no* / *false*) sit at the start of the turn, or stand alone. When a clause follows *yes*, prefer **`jael …`** over **`jael jal …`**. A *…, yes?* tag is a **second turn** after a period: `zazawan vawalal. jael.`
 
@@ -136,9 +136,7 @@ gloss: `j-command` · `v-walk`
 
 Sometimes a full sentence fills a slot in the sentence before it (*Azawan tells Ululon **that the dog runs***). That inner sentence is a **dependent clause**.
 
-In the main sentence, the pronoun **`adoro`** stands for “whatever sentence follows right away.”
-
-**`adoro`** 🚪 *doorway* → *what follows*. The main sentence ends at the doorway; the dependent walks through.
+In the main sentence, the pronoun **`adoro`** stands for whatever sentence follows right away. (cue: 🚪 *doorway*: the next sentence walks through)
 
 Put **`adoro` last** in its slot in the main sentence, and put the dependent **immediately after** it. Rearrange free word order so **`adoro`** stays last in that slot.
 
@@ -166,16 +164,16 @@ gloss: `z-grace@` · `g-happy~` · `h-because~` · `b-next-clause` · `z-courage
 
 You can also say:
 
-| English | Form | Mnemonic |
-|---------|------|----------|
-| *because* | **`hurugum badorol`** | **`urugu`** 🧱 *brick* → *foundation* |
-| *if* | **`hadorom badorol`** | **`adoro`** 🚪 *door* → *opportunity* |
-| *if and only if* | **`hezazem badorol`** | **`ezaze`** ↔️ *left-right* → *reciprocity* |
-| *although* / *even though* | **`hezebam badorol`** | **`ezeba`** 🦓 *zebra* → *contrast* |
-| *while* (at the same time) | **`hegemum badorol`** | **`egemu`** ♊ *gemini* → *duality* |
-| *until* | **`hudumem badorol`** | **`udume`** ⏲️ *timer* → *deadline* |
-| *before* | **`hababam badorol`** | **`ababa`** 🎒 *backpack* → *preparation* |
-| *after* | **`horanem badorol`** | **`orane`** ⌛ *hourglass-done* → *recency* |
+| Agalan | English | Cue |
+|--------|---------|-----|
+| **`hurugum badorol`** | *because* | 🧱 *brick*: the cause is what the result sits on |
+| **`hadorom badorol`** | *if* | 🚪 *doorway*: walk through only if it opens |
+| **`hezazem badorol`** | *if and only if* | ↔️ *left-right*: each side only with the other |
+| **`hezebam badorol`** | *although* / *even though* | 🦓 *zebra*: two stripes, still one animal |
+| **`hegemum badorol`** | *while* (at the same time) | ♊ *gemini*: two things at once |
+| **`hudumem badorol`** | *until* | ⏲️ *timer*: stop when it rings |
+| **`hababam badorol`** | *before* | 🎒 *backpack*: packed first |
+| **`horanem badorol`** | *after* | ⌛ *hourglass*: sand already through |
 
 ### Continue (`/x/`): keep the same speech move
 <a id="continue-x"></a>
@@ -216,51 +214,51 @@ A **citation** is a root written **outside** a sentence slot (a list, a title, o
 
 Role letters on this page:
 
-| Role letter | Job | Mnemonic |
-|--------------|-----|----------|
-| `/z/` | subject (who acts) | **z** = the star of the sentence |
-| `/d/` | direct object (who is acted on) | **d** = done to |
-| `/b/` | extra noun after a relation word | **b** = bolted-on extra |
-| `/v/` | verb (the action) | **v** = the verb itself |
-| `/ɡ/` | adjective (property or kind) | **ɡ** = grade / property |
-| `/w/` | extra detail on the previous adjective | **w** = with that adjective |
-| `/h/` | adverb (how / when / where) | **h** = how, when, where |
-| `/x/` | continue (keep the same setting) | **x** = e**x**tend the talk |
-| `/j/` | turn (start a new speech move) | **j** = jump to a new act |
+| Agalan | Use | Cue |
+|--------|-----|-----|
+| `/z/` | subject (who acts) | **z** ≈ star (who the sentence is about) |
+| `/d/` | direct object (who is acted on) | **d** ≈ done to (sound of *acted on*) |
+| `/b/` | extra noun after a relation word | **b** ≈ bolted on (the extra piece) |
+| `/v/` | verb (the action) | **v** as in English *verb* |
+| `/ɡ/` | adjective (property or kind) | **ɡ** ≈ grade (a rating of the noun) |
+| `/w/` | extra detail on the previous adjective | **w** ≈ with (stuck to that adjective) |
+| `/h/` | adverb (how / when / where) | **h** starts *how* / *when* / *where* |
+| `/x/` | continue (keep the same setting) | **x** ≈ e**x**tend (same talk, not a new act) |
+| `/j/` | turn (start a new speech move) | **j** ≈ jump (a new act) |
 
 ### Translation practice
 <a id="translation-practice"></a>
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Cue** is optional memory, not the answer):
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *beauty* (name **Uhubun**) | `uhubu` |
-| *dog* | `odogo` |
-| *cat* | `agada` |
-| *book* | `abogo` |
-| *house* | `ohohu` |
-| *blue* | `elulu` |
-| *red* | `arede` |
-| elephant → *size* / *big* (**-m**) | `ele` |
-| smile → *happy* (**-m**) | `uzumu` |
-| *walk* | `awala` |
-| *run* | `urunu` |
-| *sleep* | `elebe` |
-| *tell* | `ezehe` |
-| *write* | `uwuru` |
-| *sing* | `uzunu` |
-| *perception* (*see*) | `eje` |
-| *sit* | `aju` |
-| dash → *haste* (**-m**) | `adaza` |
-| owl → *quietude* (**-m**) | `owo` |
-| *next clause* | `adoro` |
-| *because* (**-m** on `/h/`) | `urugu` |
-| east → *therefore* | `ezaza` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *beauty* (name **Uhubun**) | `uhubu` | |
+| *dog* | `odogo` | |
+| *cat* | `agada` | |
+| *book* | `abogo` | |
+| *house* | `ohohu` | |
+| *blue* | `elulu` | |
+| *red* | `arede` | |
+| *big* (**-m**) | `ele` | from *elephant*: the huge animal |
+| *happy* (**-m**) | `uzumu` | from *smile*: the face of *happy* |
+| *walk* | `awala` | |
+| *run* | `urunu` | |
+| *sleep* | `elebe` | |
+| *tell* | `ezehe` | |
+| *write* | `uwuru` | |
+| *sing* | `uzunu` | |
+| *see* | `eje` | from *perception*: the sense you see with |
+| *sit* | `aju` | |
+| *haste* (**-m**) | `adaza` | from *dash*: a burst of speed |
+| *quietude* (**-m**) | `owo` | from *owl*: the quiet bird |
+| *next clause* | `adoro` | 🚪 *doorway*: the next sentence walks through |
+| *because* (**-m** on `/h/`) | `urugu` | 🧱 *brick*: the cause is what the result sits on |
+| *therefore* | `ezaza` | from *east*: the sun’s path, so the talk moves on |
 
 #### English → Agalan
 
@@ -420,16 +418,16 @@ Every utterance has exactly one **speech act** (written `/j/` or implied **`jal`
 
 The vowels match the [vowel-series](vowel-series.md) jobs: **a** add / hold, **o** one / menu, **e** order / rank, **u** undo.
 
-| Form | Speech act | Mnemonic |
-|------|--------|----------|
-| **jal** | **statement**: claim or description | **a** + **-l** stand behind |
-| **jam** | **soft statement**: tentative / provisional | **a** + **-m** open |
-| **jol** | **question**: yes/no and fill-in ask | **o** menu + **-l** |
-| **jom** | **soft question**: wonder, gentle ask, offer-like | **o** + **-m** |
-| **jel** | **command**: instruction | **e** rank + **-l** |
-| **jem** | **request**: soft directive (*please…*) | **e** + **-m** |
-| **jul** | **prohibition**: *don’t…* (firm) | **u** undo + **-l** |
-| **jum** | **soft prohibition**: *please don’t…* / *I’d rather you not…* | **u** + **-m** |
+| Agalan | Use | Cue |
+|--------|-----|-----|
+| **jal** | **statement**: claim or description | **a** add + **-l**: stand behind |
+| **jam** | **soft statement**: tentative / provisional | **a** add + **-m**: hold, but leave it open |
+| **jol** | **question**: yes/no and fill-in ask | **o** one / menu + **-l**: pick an answer |
+| **jom** | **soft question**: wonder, gentle ask, offer-like | **o** menu + **-m**: ask without pinning |
+| **jel** | **command**: instruction | **e** order + **-l**: do this |
+| **jem** | **request**: soft directive (*please…*) | **e** order + **-m**: ask, don’t command |
+| **jul** | **prohibition**: *don’t…* (firm) | **u** undo + **-l**: take the action back |
+| **jum** | **soft prohibition**: *please don’t…* / *I’d rather you not…* | **u** undo + **-m**: prefer they don’t |
 
 Prefix-less revisers (**`al`** / **`am`** / …) may sit in the left-edge cluster **right before** the act word, or before a body that defaults to a statement. Full table: [revisers.md](revisers.md).
 
@@ -446,7 +444,7 @@ gloss: `gl-blue` · `z-dog`
 *a blue dog*
 ```
 
-Mid-word **l** = **lean left**: look ahead to the next host. Only `/ɡ/` takes this **l**.
+(cue: **l** ≈ lean left: look ahead to the host.) Only `/ɡ/` takes this **l**.
 
 The package is the same as after-the-noun order: plain `/ɡ/`, or complex `/ɡ/` + `/b/`, plus any following `/w/` stack. `/b/` and `/w/` still follow that `/ɡ/` (`glelulul wegelom zodogol` = *a loud-volume blue dog*). Before-the-noun order is optional style (meter, prominence, comfort from your first language).
 
@@ -467,16 +465,16 @@ After a complex adjective or adverb, a further plain `/ɡ/` describes the **extr
 
 Writing uses **periods** (and matching **`?`** / **`!`**) as **body** boundaries. Speech matches:
 
-| Writing | Speech | Speech act | Mnemonic |
-|---------|--------|--------|----------|
-| `.` | Fall on last stress + short pause | Closes the prior **body**. Next stretch still defaults to **`jal`** unless a new `/j/` turn, a written act word, or *yes* / *no* particle sets otherwise | Period closes the **body** |
-| Next `/j/` turn (*yes* / *no*, vocative, written act word) | Pitch **reset** into the turn | New turn; firm **-l** / soft **-m** imply **`jal`** / **`jam`** | New `/j/` cluster = new turn |
-| Bare body or reviser + body after `.` | No full reset required | Implied **`jal`** (or **`jam`** only if a soft particle / written **`jam`** said so) | Same statement unless marked |
-| `?` | Rise or high level on last stress | Question (**`jol`** / **`jom`**); act word usually written | Rise asks |
-| `!` | Sharp or clipped fall | Command / prohibition; act word usually written | Sharp fall directs |
-| Soft statement / soft *yes* / *no* **-m** | Lighter fall; boundary still clear | **`jam`** (implied or written) | **-m** = open / soft |
-| `/x/` continue (clause join) | Dip or short pause; **no** full pitch reset | Keep opener speech act; period after the **whole** joined stretch | **x** extends; no new turn |
-| `/x/` linker after `.` (`xezazal …`) | Dip into the linker; no turn reset | Keep prior speech act; may start a new written sentence under that speech act | Linker stays in the same act |
+| Writing | Speech | Use | Cue |
+|---------|--------|-----|-----|
+| `.` | Fall on last stress + short pause | Closes the prior **body**. Next stretch still defaults to **`jal`** unless a new `/j/` turn, a written act word, or *yes* / *no* particle sets otherwise | Fall = the claim is done |
+| Next `/j/` turn (*yes* / *no*, vocative, written act word) | Pitch **reset** into the turn | New turn; firm **-l** / soft **-m** imply **`jal`** / **`jam`** | Reset = jump to a new act |
+| Bare body or reviser + body after `.` | No full reset required | Implied **`jal`** (or **`jam`** only if a soft particle / written **`jam`** said so) | No jump, so same statement |
+| `?` | Rise or high level on last stress | Question (**`jol`** / **`jom`**); act word usually written | Rise = still waiting for an answer |
+| `!` | Sharp or clipped fall | Command / prohibition; act word usually written | Sharp fall = do this / don’t |
+| Soft statement / soft *yes* / *no* **-m** | Lighter fall; boundary still clear | **`jam`** (implied or written) | **-m** leaves the hold open |
+| `/x/` continue (clause join) | Dip or short pause; **no** full pitch reset | Keep opener speech act; period after the **whole** joined stretch | Dip extends; no jump |
+| `/x/` linker after `.` (`xezazal …`) | Dip into the linker; no turn reset | Keep prior speech act; may start a new written sentence under that speech act | Linker glues; still the same act |
 
 **-l** vs **-m** on the act word / *yes* / *no* carries **commitment** (stand behind vs soft / open).
 
@@ -485,13 +483,13 @@ Writing uses **periods** (and matching **`?`** / **`!`**) as **body** boundaries
 
 One-way glue between sentences (ordinary ending; **-l** default closed):
 
-| Linker | Lexicon root | Metaphor | Example |
-|--------|--------------|----------|---------|
-| *therefore* | **`ezaza`** | ➡️ *east* → *progress* | `xezazal` |
-| *however* | **`ezeba`** | 🦓 *zebra* → *contrast* | `xezebal` |
-| *meanwhile* | **`anelo`** | 🕰️ *mantel-clock* → *passage* | `xanelol` |
-| *next* | **`uvumu`** | 🎞️ *film* → *sequence* | `xuvumul` |
-| *but* | **`onugo`** | 🚧 *construction* → *blockage* | `xonugol` |
+| English | Agalan | Cue | Example |
+|---------|--------|-----|---------|
+| *therefore* | **`ezaza`** | ➡️ *east*: the sun’s path, so the talk moves on | `xezazal` |
+| *however* | **`ezeba`** | 🦓 *zebra*: two stripes, still one animal | `xezebal` |
+| *meanwhile* | **`anelo`** | 🕰️ *mantel-clock*: time passing beside the last claim | `xanelol` |
+| *next* | **`uvumu`** | 🎞️ *film*: the following frame | `xuvumul` |
+| *but* | **`onugo`** | 🚧 *construction*: the expected path is blocked | `xonugol` |
 
 *therefore* moves forward from the prior claim; *however* marks contrast; *meanwhile* is concurrent passage; *next* is the next frame; *but* blocks the expected continuation (harder push-back than *however*). Ordinary content readings of those roots stay available under other role letters.
 
@@ -512,31 +510,31 @@ A `/j/` **number** word is a call-out (*N more!*, score call, …). It may sit i
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Cue** is optional memory, not the answer):
 
-| English | Agalan |
-|---------|--------|
-| *grace* (name **Azawan**) | `azawa` |
-| *courage* (name **Ululon**) | `ululo` |
-| *beauty* (name **Uhubun**) | `uhubu` |
-| *dog* | `odogo` |
-| *cat* | `agada` |
-| *blue* | `elulu` |
-| *red* | `arede` |
-| smile → *happy* (**-m**) | `uzumu` |
-| *walk* | `awala` |
-| *run* | `urunu` |
-| *sleep* | `elebe` |
-| *perception* (*see*) | `eje` |
-| *sing* | `uzunu` |
-| *sit* | `aju` |
-| speaker-low → *volume* (**-m**) | `egelo` |
-| hash → *topic* | `oza` |
-| east → *progress* / *therefore* | `ezaza` |
-| *however* / *although* | `ezeba` |
-| mantel-clock → *passage* / *meanwhile* | `anelo` |
-| *next clause* | `adoro` |
-| *because* (**-m** on `/h/`) | `urugu` |
+| English | Agalan | Cue |
+|---------|--------|-----|
+| *grace* (name **Azawan**) | `azawa` | |
+| *courage* (name **Ululon**) | `ululo` | |
+| *beauty* (name **Uhubun**) | `uhubu` | |
+| *dog* | `odogo` | |
+| *cat* | `agada` | |
+| *blue* | `elulu` | |
+| *red* | `arede` | |
+| *happy* (**-m**) | `uzumu` | from *smile*: the face of *happy* |
+| *walk* | `awala` | |
+| *run* | `urunu` | |
+| *sleep* | `elebe` | |
+| *see* | `eje` | from *perception*: the sense you see with |
+| *sing* | `uzunu` | |
+| *sit* | `aju` | |
+| *volume* (**-m**) | `egelo` | from *speaker-low*: how loud |
+| *topic* | `oza` | from *hash*: a heading mark |
+| *therefore* | `ezaza` | from *east*: the sun’s path, so the talk moves on |
+| *however* / *although* | `ezeba` | 🦓 *zebra*: two stripes, still one animal |
+| *meanwhile* | `anelo` | from *mantel-clock*: time passing beside the last claim |
+| *next clause* | `adoro` | 🚪 *doorway*: the next sentence walks through |
+| *because* (**-m** on `/h/`) | `urugu` | 🧱 *brick*: the cause is what the result sits on |
 
 #### English → Agalan
 

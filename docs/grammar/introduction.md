@@ -57,6 +57,22 @@ Follow the **Suggested reading order** in the site sidebar (same sequence on eve
 
 The sidebar **Tools** list includes [Terminology](terminology.md) for the English names these pages use for grammar (with a short gloss and a link to the teaching section), plus Lexicon and [Inspect](inspect.md) for roots and interlinear.
 
+### Tables: Use, English, and Cue
+<a id="cues"></a>
+
+Inventory tables on grammar pages keep four kinds of cell apart so a memory aid is never the answer:
+
+| Column | What it is |
+|--------|------------|
+| **Agalan** | The word or letter you write. |
+| **Use** | What that form **does** (subject, question, *because* as a clause glue). This is the rule. |
+| **English** | What you would **say** — the sense to produce or understand. |
+| **Cue** | A hook that says **why** the letter, vowel, or picture maps to that row — not the emoji’s name. |
+
+**Cue** is optional on a test. Cover that column and you should still know the **Use** and the **English**. `≈` in a cue means “sounds like,” not “equals.” When a root’s published picture is an elephant and you need *big*, **English** is *big*; **Cue** is *from elephant: the huge animal*.
+
+That split speeds learning: you practice the real job once, then the cue (often the same four vowels, or one emoji scene) makes the next closed set cheaper to remember — without treating the pun as the grammar.
+
 Continue with [core.md](core.md#beginner) for clause shape.
 
 ## Acknowledgments
