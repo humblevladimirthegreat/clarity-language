@@ -34,6 +34,7 @@ On this page:
 | Examples / tables | [House cast](#house-cast), [Tables](#tables) |
 | Scope | [Cross-links](#cross-links-and-scope), [what belongs where](#what-belongs-where) |
 | Ship check | [Stage checklist](#stage-checklist) |
+| File format | [Markdown hygiene](#markdown-hygiene) (including [HTML comments](#html-comments)) |
 
 ## Present the current language only
 <a id="present-the-current-language-only"></a>
@@ -97,7 +98,7 @@ Headings, leads, and asides must make sense to someone who never saw an earlier 
 | “X **stays on** Y” / “the job stays on that page / those joins” | Editor reminder that a reading was not moved; sounds like process, not teaching | [Which tool, not which owner](#which-tool-not-which-owner) |
 | “not a matching word on the left” / “not a mid-chain…” / “not a sixth marker” | Corrects a retired design; the learner never met it | [Omit denials of former constructions](#omit-former-construction-denials) |
 
-**Test:** if you delete the phrase and a new learner loses no meaning, delete it. If the only audience for a sentence is a future editor, move it to [unassigned-reserved.md](unassigned-reserved.md), `TODO.md`, a PR, or this meta page — not the grammar body.
+**Test:** if you delete the phrase and a new learner loses no meaning, delete it. If the only audience for a sentence is a future editor, keep it out of the visible body: [unassigned-reserved.md](unassigned-reserved.md), `TODO.md`, a PR, this meta page, or an [HTML comment](#html-comments) next to a local exception — not learner-facing prose.
 
 ## Which tool, not which owner
 <a id="which-tool-not-which-owner"></a>
@@ -483,6 +484,7 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 | Short Eng ↔ Agalan checkpoint | End of a page stage — [translation-exercises.md](translation-exercises.md); generate via [drill-generation.md](drill-generation.md) |
 | Multi-turn practice | [examples/](../examples/) (not linked from grammar pages) |
 | Editor pedagogy / migration notes | `docs/meta/` only — never from grammar pages |
+| Why this file breaks a house style rule | [HTML comment](#html-comments) beside that spot (VitePress does not show it) |
 
 ## Stage checklist
 <a id="stage-checklist"></a>
@@ -494,5 +496,17 @@ Before shipping a **Beginner** stage, also check [Beginner stage shape](#beginne
 Before shipping **Intermediate** or **Advanced**, check [later-stage shape](#later-stage-shape): each H3 is a new job, a finished series, or rare Advanced; new-job leads unpack; inventory H3s are a pointer plus a table; hygiene and [Compare with](#compare-with) still hold; no Beginner teasers of this stage, and Intermediate does not teaser Advanced; drills cover new jobs, not every inventory row.
 
 ## Markdown hygiene
+<a id="markdown-hygiene"></a>
 
 After editing Markdown under `docs/` (or `AGENTS.md` / `TODO.md`), run **`npm run lint:md`**. It checks emphasis balance, slash-joined emphasis, internal links / anchors, and that Agalan words in `docs/grammar/` parse and use lexicon roots. Prefer spaces in slash-joined emphasis (`*a* / *b*`) over `*a*/*b*`. In bold headings or bullets, put forms in backticks only (`**Ranked (`e` / `ae`)**`), not nested bold inside bold.
+
+### HTML comments
+<a id="html-comments"></a>
+
+VitePress does not render HTML comments. Use them for **editor-only** notes that must sit next to the grammar text — typically **why this spot is an exception** to a rule on this page (house cast, omit-`jal`, Compare-with quota, and so on). The learner never sees them; `lint:md` and `retie-docs` skip comment bodies.
+
+```markdown
+<!-- Exception to house-cast: this block teaches speaker/listener specials, so `zugobon` is the point. -->
+```
+
+Do **not** use `<!--@include: …-->` for notes — that is a VitePress include. Do not put the same note in visible parentheses, scare-quotes, or “for editors:” asides ([no process leftover](#no-process-or-corrective-leftover)). Folder-wide editor pedagogy still lives on this meta page; comments are for the **local** why, not a second style guide.

@@ -10,14 +10,14 @@ Outside a sentence (a list, a heading, a dictionary line) you write **root + end
 ### First mention, literal (`-l`)
 <a id="literal-l"></a>
 
-When you mention a kind of thing for the first time, in its everyday meaning (English *a* / *some X*), end the citation with **-l**. The listener treats it as a new, ordinary instance of that kind. (cue: **l** ≈ literal)
+When you mention a kind of thing for the first time, in its everyday meaning, end the citation with **-l**. The listener treats it as a new, ordinary instance of that kind. English for the citation is the bare kind, with no article. (cue: **l** ≈ literal)
 
 ```
-`odogol`
+`azawal`
 
-gloss: `dog`
+gloss: `swan`
 
-*a dog*
+*swan*
 ```
 
 ### First mention, metaphor (`-m`)
@@ -26,14 +26,14 @@ gloss: `dog`
 Sometimes the meaning you want is the published **metaphor** for that root, not the everyday picture. When you introduce that sense for the first time, end the citation with **-m**. (cue: **m** ≈ metaphor)
 
 ```
-`uzumum`
+`azawam`
 
-gloss: `happy~`
+gloss: `grace~`
 
-*happy*
+*grace*
 ```
 
-**Compare with:** a literal first mention uses **-l** (`elulul` *blue*). *Happy* here is the published metaphor of `uzumu`, so the citation is **-m**. (cue: from *smile*: the face of *happy*)
+**Compare with:** the everyday picture of the same root uses **-l** (`azawal` *swan*). *Grace* is the published metaphor of `azawa`, so the citation is **-m**. (cue: from *swan*: the glide of *grace*)
 
 ### Named (`-n`)
 <a id="named-n-beginner"></a>
@@ -48,15 +48,17 @@ gloss: `grace@`
 *Azawan*
 ```
 
+**Compare with:** the same root as a kind is `azawal` *swan*; as the published metaphor, `azawam` *grace*. **-n** names the person.
+
 ### The three endings
 
-The last letters you just used:
+The last letters you just used, on the same root `azawa`:
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **-l** | first mention, everyday kind | *a / some X* | **l** ≈ literal |
-| **-m** | first mention, published metaphor | the metaphorical sense | **m** ≈ metaphor |
-| **-n** | this person or place as a name | a definite name | **n** ≈ name |
+| `azawal` | first mention, everyday kind | *swan* | **l** ≈ literal |
+| `azawam` | first mention, published metaphor | *grace* | **m** ≈ metaphor |
+| `azawan` | this person or place as a name | *Azawan* | **n** ≈ name |
 
 Pointing back with **-r** is [pronouns](pronouns.md).
 
@@ -64,51 +66,47 @@ Pointing back with **-r** is [pronouns](pronouns.md).
 <a id="citation-forms"></a>
 <a id="prefix-less-citation"></a>
 
-A citation is **lowercase** root + ending (`odogol`, `uzumum`, `azawan`). In a sentence you will add a first letter for the word’s job; that is [core](core.md#beginner).
+A citation is **lowercase** root + ending (`azawal`, `azawam`, `azawan`). English for a citation is the bare sense (*swan*, *grace*, *Azawan*), with no article. In a sentence you will add a first letter for the word’s job; that is [core](core.md#beginner).
 
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills on this Beginner band. Try each item before opening **Show answer**. Choose **-l** (new literal), **-m** (new metaphor), or **-n** (named). Every answer is a citation (no first-letter job mark).
+Short drills on this Beginner band. Try each item before opening **Show answer**. Choose **-l** (new literal), **-m** (new metaphor), or **-n** (named). Every answer is a citation (no first-letter job mark). For a name, the English prompt is the **sense** (*grace*), not the nativized spelling (*Azawan*).
 
 **Roots used here** (**English** is what you produce; **Cue** is optional memory, not the answer):
 
 | English | Agalan | Cue |
 |---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *dog* | `odogo` | |
+| *swan* | `azawa` | |
+| *grace* (**-m**) | `azawa` | from *swan*: the glide of *grace* |
+| *grace* (as a name) | `azawa` | |
+| *courage* (as a name) | `ululo` | |
+| *beauty* (as a name) | `uhubu` | |
 | *cat* | `agada` | |
-| *book* | `abogo` | |
 | *blue* | `elulu` | |
 | *happy* (**-m**) | `uzumu` | from *smile*: the face of *happy* |
-| *walk* | `awala` | |
-| *sleep* | `elebe` | |
-| *write* | `uwuru` | |
-| *sit* | `aju` | |
 
 #### English → Agalan
 
-**1.** *a dog* (citation)
+**1.** *swan* (citation)
 
 ::: details Show answer
-`odogol`
+`azawal`
 :::
 
-**2.** *Azawan* (name, citation)
+**2.** *grace*, as a name (citation)
 
 ::: details Show answer
 `azawan`
 :::
 
-**3.** *happy* (citation)
+**3.** *grace* (citation)
 
 ::: details Show answer
-`uzumum`
+`azawam`
 :::
 
-**4.** *Ululon* (name, citation)
+**4.** *courage*, as a name (citation)
 
 ::: details Show answer
 `ululon`
@@ -120,19 +118,19 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `elulul`
 :::
 
-**6.** *a cat* (citation)
+**6.** *cat* (citation)
 
 ::: details Show answer
 `agadal`
 :::
 
-**7.** *walk* (citation)
+**7.** *happy* (citation)
 
 ::: details Show answer
-`awalal`
+`uzumum`
 :::
 
-**8.** *Uhubun* (name, citation)
+**8.** *beauty*, as a name (citation)
 
 ::: details Show answer
 `uhubun`
@@ -140,52 +138,52 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 #### Agalan → English
 
-**1.** `odogol`
+**1.** `azawal`
 
 ::: details Show answer
-*a dog* (literal kind, cited)
+*swan*
 :::
 
 **2.** `azawan`
 
 ::: details Show answer
-*Azawan* (name, cited)
+*grace* (as a name)
 :::
 
-**3.** `uzumum`
+**3.** `azawam`
 
 ::: details Show answer
-*happy* (metaphor, cited)
+*grace*
 :::
 
 **4.** `ululon`
 
 ::: details Show answer
-*Ululon* (name, cited)
+*courage* (as a name)
 :::
 
 **5.** `elulul`
 
 ::: details Show answer
-*blue* (literal, cited)
+*blue*
 :::
 
 **6.** `agadal`
 
 ::: details Show answer
-*a cat* (literal kind, cited)
+*cat*
 :::
 
-**7.** `awalal`
+**7.** `uzumum`
 
 ::: details Show answer
-*walk* (cited)
+*happy*
 :::
 
 **8.** `uhubun`
 
 ::: details Show answer
-*Uhubun* (name, cited)
+*beauty* (as a name)
 :::
 
 ## Intermediate
