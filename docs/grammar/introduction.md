@@ -75,6 +75,17 @@ That split speeds learning: you practice the real job once, then the cue (often 
 
 Continue with [core.md](core.md#beginner) for clause shape.
 
+## License
+<a id="license"></a>
+
+These grammar pages, the lexicon, and the language materials are by **humblevladimirthegreat** and are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Software and tooling that accompany them are under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+
+Reuse of particular grammatical ideas, lexicon entries, or a derived language is allowed. If you publish a derived language, a fork of the grammar, or a substantial adaptation, mention **Agalan** in the introduction (or equivalent front matter) as the source or inspiration.
+
+Do not present a fork, variant, or other project as the official Agalan project or as a drop-in substitute for these docs. Calling an unchanged copy of this language Agalan is fine. Calling a substantially different language Agalan as if it were this project is not. The licenses do not grant trademark rights and do not allow implying endorsement by the licensor.
+
+Suggested attribution: *Agalan by humblevladimirthegreat, licensed under CC BY 4.0.*
+
 ## Acknowledgments
 <a id="acknowledgments"></a>
 
