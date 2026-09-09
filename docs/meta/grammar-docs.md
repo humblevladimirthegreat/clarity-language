@@ -426,7 +426,7 @@ Default example block:
 ```
 `zazawan godogol.`
 
-gloss: `z-grace@` · `g-dog`
+gloss: `z-Azawan` · `g-dog`
 
 *Azawan is a dog.*
 ```

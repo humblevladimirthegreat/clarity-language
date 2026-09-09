@@ -16,7 +16,7 @@ After the [role letter](core.md#beginner) (the first letter of the word: subject
 ```
 `zuzuzuxogoven.`
 
-gloss: `z-sushi-x-coffee@`
+gloss: `z-Sushi-Coffee`
 
 *Sushi-Coffee* (one named label)
 ```
@@ -71,7 +71,7 @@ gloss: `g-love-x-crush`
 ```
 `zuzuzuxogovexadedan.`
 
-gloss: `z-sushi-x-coffee-x-tea@`
+gloss: `z-Sushi-Coffee-Tea`
 
 *Sushi-Coffee-Tea* (one named label)
 ```

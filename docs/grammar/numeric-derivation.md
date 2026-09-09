@@ -62,7 +62,7 @@ English *quasi-* says something has the **shape or role** of a kind without coun
 ```
 `zuhubun geberelonogoxrubul.`
 
-gloss: `z-beauty@` · `g-friend-x--e-`
+gloss: `z-Uhubun` · `g-friend-x--e-`
 
 *Uhubun is a quasi-friend.*
 ```
@@ -104,7 +104,7 @@ English *a pair of…*, *three-part…*, *primary…* can name **how many parts 
 ```
 `zazawan dabenexradul vejel.`
 
-gloss: `z-grace@` · `d-commitment-x-+2` · `v-see`
+gloss: `z-Azawan` · `d-commitment-x-+2` · `v-see`
 
 *Azawan sees mutual commitment.*
 ```
@@ -192,7 +192,7 @@ English *first-draft*, *secondary adventure*, *third-order problem* can name **w
 ```
 `zululon debeguxrewol vuwurul.`
 
-gloss: `z-courage@` · `d-draft-x-#1` · `v-write`
+gloss: `z-Ululon` · `d-draft-x-#1` · `v-write`
 
 *Ululon writes a first-draft.*
 ```
@@ -228,7 +228,7 @@ English *specimen #1*, *room-12 as a coded kind* treats digits as a **catalog ID
 ```
 `zazawan deduduxrowol vejel.`
 
-gloss: `z-grace@` · `d-specimen-x-_1` · `v-see`
+gloss: `z-Azawan` · `d-specimen-x-_1` · `v-see`
 
 *Azawan sees specimen #1.*
 ```

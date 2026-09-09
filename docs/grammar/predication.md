@@ -14,7 +14,7 @@ When you say someone *is* a quality (*Azawan is challenging*), that quality is a
 ```
 `zazawan gomonam.`
 
-gloss: `z-grace@` · `g-challenging`
+gloss: `z-Azawan` · `g-challenging`
 
 *Azawan is challenging.*
 ```
@@ -29,7 +29,7 @@ This use is **classification**. Same `/ɡ/` place as a quality; the kind word is
 ```
 `zazawan godogol.`
 
-gloss: `z-grace@` · `g-dog`
+gloss: `z-Azawan` · `g-dog`
 
 *Azawan is a dog.*
 ```
@@ -49,7 +49,7 @@ Write a special adjective `gonunul` after the first name, then an extra noun (`/
 ```
 `z<Clark>n gonunul b<Superman>n.`
 
-gloss: `z-Clark@` · `g-SAME` · `b-Superman@`
+gloss: `z-Clark` · `g-SAME` · `b-Superman`
 
 *Clark is Superman.*
 ```
@@ -57,7 +57,7 @@ gloss: `z-Clark@` · `g-SAME` · `b-Superman@`
 ```
 `zodogol gonunul bazawan.`
 
-gloss: `z-dog` · `g-SAME` · `b-grace@`
+gloss: `z-dog` · `g-SAME` · `b-Azawan`
 
 *The dog is Azawan.*
 ```
@@ -196,7 +196,7 @@ You already put a kind on `/ɡ/` after the name (*Azawan is a dog*). The extra c
 ```
 `zazawan godogol gul.`
 
-gloss: `z-grace@` · `g-dog` · `g-not`
+gloss: `z-Azawan` · `g-dog` · `g-not`
 
 *Azawan is not a dog.*
 ```

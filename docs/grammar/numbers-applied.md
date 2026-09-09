@@ -15,7 +15,7 @@ English needs a **code**: a phone, room, channel, or serial, not a counted amoun
 ```
 `zazawan d_555,123,4567 vejel.`
 
-gloss: `z-grace@` · `d-_555,123,4567` · `v-see`
+gloss: `z-Azawan` · `d-_555,123,4567` · `v-see`
 
 *Azawan sees 555-123-4567.*
 ```
@@ -34,7 +34,7 @@ English names a **clock time** or a **calendar date**. Both reuse digit-string g
 ```
 `h_15,30 zazawan vawalal.`
 
-gloss: `h-_15,30` · `z-grace@` · `v-walk`
+gloss: `h-_15,30` · `z-Azawan` · `v-walk`
 
 *At 15:30 Azawan walks.*
 ```
@@ -64,7 +64,7 @@ English names **how much of a unit** (*two meters*, *three hours*). The unit is 
 ```
 `zazawan burulel g+2 vawalal.`
 
-gloss: `z-grace@` · `b-measurement` · `g-+2` · `v-walk`
+gloss: `z-Azawan` · `b-measurement` · `g-+2` · `v-walk`
 
 *Azawan walks two meters.*
 ```
@@ -110,7 +110,7 @@ Keep the **base** unit. Put the power of ten on the **amount** (`e3` / `e-3` / a
 ```
 `zazawan zululon zel gomonam burulel g+2.`
 
-gloss: `z-grace@` · `z-courage@` · `z-rank` · `g-challenging~` · `b-measurement` · `g-+2`
+gloss: `z-Azawan` · `z-Ululon` · `z-rank` · `g-challenging` · `b-measurement` · `g-+2`
 
 *Azawan is two meters more challenging than Ululon.*
 ```

@@ -24,7 +24,7 @@ gloss: `z-cat-x` · `g-three`
 ```
 `zazawan dabogolx g+3 vejel.`
 
-gloss: `z-grace@` · `d-book-x` · `g-three` · `v-see`
+gloss: `z-Azawan` · `d-book-x` · `g-three` · `v-see`
 
 *Azawan sees three books.*
 ```
@@ -44,7 +44,7 @@ gloss: `z-book` · `g-second`
 ```
 `zululon dabogol g#3 vuwurul.`
 
-gloss: `z-courage@` · `d-book` · `g-third` · `v-write`
+gloss: `z-Ululon` · `d-book` · `g-third` · `v-write`
 
 *Ululon writes the third book.*
 ```
@@ -423,7 +423,7 @@ You can use a number as the **action** (*add three*), as **how often** (*three t
 ```
 `zululon vawalal h+3.`
 
-gloss: `z-courage@` · `v-walk` · `h-three-times`
+gloss: `z-Ululon` · `v-walk` · `h-three-times`
 
 *Ululon walks three times.*
 ```

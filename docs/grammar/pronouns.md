@@ -16,7 +16,7 @@ After you have already named a person or thing, the next sentence can point back
 ```
 `zazawan vawalal. zazar vajul.`
 
-gloss: `z-grace@` · `v-walk` · `z-←grace` · `v-sit`
+gloss: `z-Azawan` · `v-walk` · `z-←Azawan` · `v-sit`
 
 *Azawan walks. He sits.* (resume from the name’s root prefix)
 ```
@@ -26,7 +26,7 @@ When that short stem would match the **wrong** recent word, use a **full-root re
 ```
 `zodogol vawalal. zabogol gelem. zodogor vajul.`
 
-gloss: `z-dog` · `v-walk` · `z-book` · `g-size~` · `z-←dog` · `v-sit`
+gloss: `z-dog` · `v-walk` · `z-book` · `g-size` · `z-←dog` · `v-sit`
 
 *A dog walks. A book is big. The dog sits.*
 ```
@@ -41,7 +41,7 @@ When a proper name is available, prefer that name (and its **-r** resume), inclu
 ```
 (Ululon speaking) `zululon vawalal.`
 
-gloss: `z-courage@` · `v-walk`
+gloss: `z-Ululon` · `v-walk`
 
 *I walk.* Ululon names himself rather than saying *I*.
 ```
@@ -89,7 +89,7 @@ When a sentence needs a whole following sentence as its object (English *that Ul
 ```
 `zugobon dazawan vezehel dadorol zululon vebarul.`
 
-gloss: `z-speaker` · `d-grace@` · `v-tell` · `d-next-clause` · `z-courage@` · `v-depart`
+gloss: `z-speaker` · `d-Azawan` · `v-tell` · `d-next-clause` · `z-Ululon` · `v-depart`
 
 *I told Azawan that Ululon left.*
 ```
@@ -266,7 +266,7 @@ English *going back to X* / *returning to that thread* names an earlier person o
 ```
 `zazawan vawalal. zululon vurunul. xazawar velebel.`
 
-gloss: `z-grace@` · `v-walk` · `z-courage@` · `v-run` · `x-←grace` · `v-sleep`
+gloss: `z-Azawan` · `v-walk` · `z-Ululon` · `v-run` · `x-←Azawan` · `v-sleep`
 
 *Azawan walks. Ululon runs. Going back to Azawan, he sleeps.*
 ```
@@ -280,7 +280,7 @@ Sometimes you still mean that person or thing, but you need a **different** slot
 ```
 `zazawan vajul. zululon vazar.`
 
-gloss: `z-grace@` · `v-sit` · `z-courage@` · `v-←grace`
+gloss: `z-Azawan` · `v-sit` · `z-Ululon` · `v-←Azawan`
 
 *Azawan sits. Ululon does that with him.*
 ```
@@ -441,7 +441,7 @@ Intermediate already recast one referent into a new slot. Each table is an **ant
 ```
 `zodogol vawalal. zawalar gelem.`
 
-gloss: `z-dog` · `v-walk` · `z-←walk` · `g-size~`
+gloss: `z-dog` · `v-walk` · `z-←walk` · `g-size`
 
 *A dog walks. That action is big.*
 ```

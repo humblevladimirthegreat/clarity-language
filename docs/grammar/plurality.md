@@ -13,7 +13,7 @@ Without **-x**, the word picks **one** person or thing. With **-x** after the en
 ```
 `zazawanx vawalal.`
 
-gloss: `z-grace@-x` · `v-walk`
+gloss: `z-Azawan-x` · `v-walk`
 
 *Azawan and associates walk.*
 ```
@@ -25,7 +25,7 @@ To point back to that group (or to a prior person **and** their associates), add
 ```
 `zazawarx vajul.`
 
-gloss: `z-←grace-x` · `v-sit`
+gloss: `z-←Azawan-x` · `v-sit`
 
 *They (that one and associates) sit.*
 ```
@@ -43,7 +43,7 @@ gloss: `z-cat-x` · `v-sit`
 ```
 `zazawan dodogolx vejel.`
 
-gloss: `z-grace@` · `d-dog-x` · `v-see`
+gloss: `z-Azawan` · `d-dog-x` · `v-see`
 
 *Azawan sees some dogs.*
 ```
@@ -81,7 +81,7 @@ gloss: `z-speaker-x` · `v-sit`
 ```
 `zululonx vajul.`
 
-gloss: `z-courage@-x` · `v-sit`
+gloss: `z-Ululon-x` · `v-sit`
 
 *You (Ululon) and your associates sit.*
 ```
@@ -248,7 +248,7 @@ English *Azawan and them* does not say who belongs. After an associative noun, m
 ```
 `zazawanx vawalal.`
 
-gloss: `z-grace@-x` · `v-walk`
+gloss: `z-Azawan-x` · `v-walk`
 
 *Azawan and associates walk.*
 ```
@@ -272,7 +272,7 @@ English *they walk* does not say whether it was one shared outing. Put **-x** on
 ```
 `zazawanx vuzunulx.`
 
-gloss: `z-grace@-x` · `v-sing-x`
+gloss: `z-Azawan-x` · `v-sing-x`
 
 *They (Azawan and associates) sing as one outing.*
 ```
@@ -304,7 +304,7 @@ English *the boxes are heavy* can mean each box or the pile. Put **-x** on the *
 ```
 `zulebolx garagamx.`
 
-gloss: `z-file-box-x` · `g-heaviness~-x`
+gloss: `z-file-box-x` · `g-heaviness-x`
 
 *The file-boxes are heavy as a pile.*
 ```

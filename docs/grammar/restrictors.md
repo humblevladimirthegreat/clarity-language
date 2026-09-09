@@ -13,7 +13,7 @@ A restrictor names the **occasions** (times or cases) in which the verb claim is
 ```
 `zazawan vawalal hanunul hal.`
 
-gloss: `z-grace@` · `v-walk` · `h-rain` · `h-only-when`
+gloss: `z-Azawan` · `v-walk` · `h-rain` · `h-only-when`
 
 *Azawan walks only when raining.*
 ```
@@ -23,7 +23,7 @@ With **no** occasion listed, the inventory is empty, so the claim never counts: 
 ```
 `zululon vawalal hal.`
 
-gloss: `z-courage@` · `v-walk` · `h-never`
+gloss: `z-Ululon` · `v-walk` · `h-never`
 
 *Ululon never walks.*
 ```
@@ -33,7 +33,7 @@ gloss: `z-courage@` · `v-walk` · `h-never`
 ```
 `zazawan vawalal hadazam howom.`
 
-gloss: `z-grace@` · `v-walk` · `h-haste` · `h-quietude`
+gloss: `z-Azawan` · `v-walk` · `h-haste` · `h-quietude`
 
 *Azawan walks quickly and quietly.*
 ```
@@ -45,7 +45,7 @@ To say the verb claim counts at every time, or at every time except some listed 
 ```
 `zuhubun vuzunul hual.`
 
-gloss: `z-beauty@` · `v-sing` · `h-always`
+gloss: `z-Uhubun` · `v-sing` · `h-always`
 
 *Uhubun always sings.*
 ```
@@ -53,7 +53,7 @@ gloss: `z-beauty@` · `v-sing` · `h-always`
 ```
 `zazawan vawalal hanunul hual.`
 
-gloss: `z-grace@` · `v-walk` · `h-rain` · `h-always-except`
+gloss: `z-Azawan` · `v-walk` · `h-rain` · `h-always-except`
 
 *Azawan always walks except when raining.*
 ```
@@ -71,7 +71,7 @@ You can name *sometime*, *anytime*, or *sometime else* without listing a content
 ```
 `zululon vurunul har.`
 
-gloss: `z-courage@` · `v-run` · `h-sometime`
+gloss: `z-Ululon` · `v-run` · `h-sometime`
 
 *Ululon runs sometime.*
 ```
@@ -79,7 +79,7 @@ gloss: `z-courage@` · `v-run` · `h-sometime`
 ```
 `zuhubun vawalal hor.`
 
-gloss: `z-beauty@` · `v-walk` · `h-anytime`
+gloss: `z-Uhubun` · `v-walk` · `h-anytime`
 
 *Uhubun walks anytime.*
 ```
@@ -91,7 +91,7 @@ Sometimes you want to limit the **adjective you just wrote** (*never happy*), no
 ```
 `zazawan guzumum wal.`
 
-gloss: `z-grace@` · `g-happy` · `w-never`
+gloss: `z-Azawan` · `g-happy` · `w-never`
 
 *Azawan is never happy.*
 ```
@@ -113,7 +113,7 @@ Open **-m** leaves other occasions possible: *when raining, among other times*, 
 ```
 `zazawan velebel hanunul hunugul ham.`
 
-gloss: `z-grace@` · `v-sleep` · `h-rain` · `h-night` · `h-when.open`
+gloss: `z-Azawan` · `v-sleep` · `h-rain` · `h-night` · `h-when.open`
 
 *Azawan sleeps when raining and at night, among other times.*
 ```
@@ -250,7 +250,7 @@ English *when* / *if* can name a **following sentence** (*if Azawan walks*). Wri
 ```
 `zuhubun vuzunul hadorom zazawan vawalal badorol.`
 
-gloss: `z-beauty@` · `v-sing` · `h-next-clause~` · `z-grace@` · `v-walk` · `b-next-clause`
+gloss: `z-Uhubun` · `v-sing` · `h-next-clause` · `z-Azawan` · `v-walk` · `b-next-clause`
 
 *Uhubun sings if Azawan walks.*
 ```
@@ -268,7 +268,7 @@ Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *som
 ```
 `zazawan vawalal hanunul hunugul hol.`
 
-gloss: `z-grace@` · `v-walk` · `h-rain` · `h-night` · `h-either-when`
+gloss: `z-Azawan` · `v-walk` · `h-rain` · `h-night` · `h-either-when`
 
 *Azawan walks either when raining or at night (not both).*
 ```
@@ -276,7 +276,7 @@ gloss: `z-grace@` · `v-walk` · `h-rain` · `h-night` · `h-either-when`
 ```
 `zululon velebel hanunul hozowol haol.`
 
-gloss: `z-courage@` · `v-sleep` · `h-rain` · `h-snow` · `h-when-or`
+gloss: `z-Ululon` · `v-sleep` · `h-rain` · `h-snow` · `h-when-or`
 
 *Ululon sleeps when raining and/or when snowing.*
 ```
@@ -305,7 +305,7 @@ Closed **`hel`** ranks **when** it matters. **`hal`** still means *only when* th
 ```
 `zazawan vawalal hamubum hozorem hel.`
 
-gloss: `z-grace@` · `v-walk` · `h-emergency~` · `h-convenience~` · `h-preferably-when`
+gloss: `z-Azawan` · `v-walk` · `h-emergency` · `h-convenience` · `h-preferably-when`
 
 *Azawan walks preferably in an emergency rather than for convenience.*
 ```
@@ -324,7 +324,7 @@ Statement readings below. Asking *when*: [questions.md](questions.md#when).
 ```
 `zazawan guzumum wanunul wal.`
 
-gloss: `z-grace@` · `g-happy~` · `w-rain` · `w-only-when`
+gloss: `z-Azawan` · `g-happy` · `w-rain` · `w-only-when`
 
 *Azawan is happy only when raining.*
 ```

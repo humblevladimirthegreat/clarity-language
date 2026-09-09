@@ -14,7 +14,7 @@ To say what someone **means to do**, use the closed mood root **`owora`**. Spell
 ```
 `zazawan howoram vawalal.`
 
-gloss: `z-grace@` · `h-PLAN-sketch` · `v-walk`
+gloss: `z-Azawan` · `h-PLAN-sketch` · `v-walk`
 
 *Azawan means to walk.* (direction only; default)
 ```
@@ -36,7 +36,7 @@ On **`owora`**, **-l / -m / -r** say **how fully drawn** the intention is: direc
 ```
 `zululon howoral vawalal.`
 
-gloss: `z-courage@` · `h-PLAN-itinerary` · `v-walk`
+gloss: `z-Ululon` · `h-PLAN-itinerary` · `v-walk`
 
 *Ululon’s itinerary is to walk.* (steps on the map)
 ```
@@ -44,7 +44,7 @@ gloss: `z-courage@` · `h-PLAN-itinerary` · `v-walk`
 ```
 `zuhubun howorar vawalal.`
 
-gloss: `z-beauty@` · `h-PLAN-fork` · `v-walk`
+gloss: `z-Uhubun` · `h-PLAN-fork` · `v-walk`
 
 *If that path fails, Uhubun will walk.* (backup course)
 ```
@@ -175,7 +175,7 @@ Ordinary content is still available (`zegegel` *a checkmark*; `vegegel` *to chec
 ```
 `zululon hegegem vuzunul.`
 
-gloss: `z-courage@` · `h-DECISION-modifiable` · `v-sing`
+gloss: `z-Ululon` · `h-DECISION-modifiable` · `v-sing`
 
 *Ululon has decided to sing, still open to revision.* (default)
 ```
@@ -198,7 +198,7 @@ You can stack this mood after [PLAN](#plan-predict) when the clause needs both m
 ```
 `zazawan howoral hegegel vawalal.`
 
-gloss: `z-grace@` · `h-PLAN-itinerary` · `h-DECISION-irreversible` · `v-walk`
+gloss: `z-Azawan` · `h-PLAN-itinerary` · `h-DECISION-irreversible` · `v-walk`
 
 *Azawan’s itinerary is to walk, and the pick is settled.*
 ```

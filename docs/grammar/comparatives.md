@@ -18,7 +18,7 @@ When English would say *Azawan is more challenging than Ululon*, you put two peo
 ```
 `zazawan zululon zel gomonam.`
 
-gloss: `z-grace@` · `z-courage@` · `z-rank/more` · `g-challenging`
+gloss: `z-Azawan` · `z-Ululon` · `z-rank/more` · `g-challenging`
 
 *Azawan is more challenging than Ululon.*
 ```
@@ -26,7 +26,7 @@ gloss: `z-grace@` · `z-courage@` · `z-rank/more` · `g-challenging`
 ```
 `zuhubun zazawan zel gelem.`
 
-gloss: `z-beauty@` · `z-grace@` · `z-rank/more` · `g-big`
+gloss: `z-Uhubun` · `z-Azawan` · `z-rank/more` · `g-big`
 
 *Uhubun is bigger than Azawan.*
 ```
@@ -39,7 +39,7 @@ When English would say *the most challenging*, you are still ranking, but you na
 ```
 `zazawan zel gomonam.`
 
-gloss: `z-grace@` · `z-rank/more` · `g-challenging`
+gloss: `z-Azawan` · `z-rank/more` · `g-challenging`
 
 *Azawan is the most challenging (of all).*
 ```
@@ -47,7 +47,7 @@ gloss: `z-grace@` · `z-rank/more` · `g-challenging`
 ```
 `zuhubun zel guzumum.`
 
-gloss: `z-beauty@` · `z-rank/more` · `g-happy`
+gloss: `z-Uhubun` · `z-rank/more` · `g-happy`
 
 *Uhubun is the happiest (of all).*
 ```
@@ -60,7 +60,7 @@ English *much more* / *slightly more* adds **how large the gap is**, without giv
 ```
 `zazawan zululon zel gomonam wogegal.`
 
-gloss: `z-grace@` · `z-courage@` · `z-rank/more` · `g-challenging` · `w-flood`
+gloss: `z-Azawan` · `z-Ululon` · `z-rank/more` · `g-challenging` · `w-flood`
 
 *Azawan is much more challenging than Ululon.*
 ```
@@ -75,7 +75,7 @@ When English would say *as challenging as*, you are not picking a winner. You ar
 ```
 `zazawan zululon zael gomonam.`
 
-gloss: `z-grace@` · `z-courage@` · `z-as…as` · `g-challenging`
+gloss: `z-Azawan` · `z-Ululon` · `z-as…as` · `g-challenging`
 
 *Azawan is as challenging as Ululon.*
 ```
@@ -83,7 +83,7 @@ gloss: `z-grace@` · `z-courage@` · `z-as…as` · `g-challenging`
 ```
 `zululon zuhubun zael guzumum.`
 
-gloss: `z-courage@` · `z-beauty@` · `z-as…as` · `g-happy`
+gloss: `z-Ululon` · `z-Uhubun` · `z-as…as` · `g-happy`
 
 *Ululon is as happy as Uhubun.*
 ```
@@ -95,7 +95,7 @@ gloss: `z-courage@` · `z-beauty@` · `z-as…as` · `g-happy`
 ```
 `zazawan zululon zaem gudubul.`
 
-gloss: `z-grace@` · `z-courage@` · `z-as…as.open` · `g-bright`
+gloss: `z-Azawan` · `z-Ululon` · `z-as…as.open` · `g-bright`
 
 *Azawan is about as bright as Ululon.*
 ```
@@ -262,7 +262,7 @@ English *both are challenging* (or *Azawan and Ululon are challenging*) says **e
 ```
 `zazawan zululon zal gomonam.`
 
-gloss: `z-grace@` · `z-courage@` · `z-and` · `g-challenging`
+gloss: `z-Azawan` · `z-Ululon` · `z-and` · `g-challenging`
 
 *Azawan and Ululon are challenging.*
 ```
@@ -287,7 +287,7 @@ English *two meters more challenging* still ranks two people on one quality, and
 ```
 `zazawan zululon zel gomonam burulel g+2.`
 
-gloss: `z-grace@` · `z-courage@` · `z-rank/more` · `g-challenging` · `b-measurement` · `g-+2`
+gloss: `z-Azawan` · `z-Ululon` · `z-rank/more` · `g-challenging` · `b-measurement` · `g-+2`
 
 *Azawan is two meters more challenging than Ululon.*
 ```
@@ -423,7 +423,7 @@ English *worse than Average* (or *Typical*, *Professional*, *my bar*) ranks some
 ```
 `zazawan zalaban zuel guzunul.`
 
-gloss: `z-grace@` · `z-expertise@` · `z-rank/less` · `g-sing`
+gloss: `z-Azawan` · `z-Professional` · `z-rank/less` · `g-sing`
 
 *Azawan is worse at singing than Professional.*
 ```

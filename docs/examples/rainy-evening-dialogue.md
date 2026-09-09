@@ -18,7 +18,7 @@ Each turn has: **Agalan** · **gloss** (PoS + English sense; see **[glosses.md](
 
 **A:** `jubunexunowen jawavel.`
 
-gloss: `j-hospitality-x-optimism@` · `j-greeting`
+gloss: `j-Ubunexunowen` · `j-greeting`
 
 strict: *Ubunexunowen! Hello.*
 
@@ -26,7 +26,7 @@ loose: *Ubunexunowen! Hello.*
 
 **B:** `jamadexonogon juzuzuxogoven jaol jawavel.`
 
-gloss: `j-fellowship-x-bond@` · `j-sushi-x-coffee@` · `j-uptake` · `j-greeting`
+gloss: `j-Amadexonogon` · `j-Uzuzuxogoven` · `j-uptake` · `j-greeting`
 
 strict: *Amadexonogon, Uzuzuxogoven! Sure — hello.*
 

@@ -38,7 +38,7 @@ The same join sits on a verb when the route is an action:
 ```
 `zuhubun vuzunul vaom.`
 
-gloss: `z-beauty@` · `v-sing` · `v-and/or.open`
+gloss: `z-Uhubun` · `v-sing` · `v-and/or.open`
 
 *Uhubun’s singing would work.*
 ```
@@ -204,7 +204,7 @@ gloss: `z-rain` · `h-without` · `b-cloud`
 ```
 `zazawan vawalal hal.`
 
-gloss: `z-grace@` · `v-walk` · `h-never`
+gloss: `z-Azawan` · `v-walk` · `h-never`
 
 *Azawan never walks.*
 ```
@@ -224,7 +224,7 @@ When you mean *it has to be X* (the sole pick), close an exclusive join: **`…o
 ```
 `zazawan gon.`
 
-gloss: `z-grace@` · `g-has-to-be`
+gloss: `z-Azawan` · `g-has-to-be`
 
 *It has to be Azawan.*
 ```
@@ -243,7 +243,7 @@ main sentence …  hadorom / hezazem / hurugum  badorol   [dependent sentence]
 ```
 `zazawan vawalal hadorom badorol zululon velebel.`
 
-gloss: `z-grace@` · `v-walk` · `h-if` · `b-next-clause` · `z-courage@` · `v-sleep`
+gloss: `z-Azawan` · `v-walk` · `h-if` · `b-next-clause` · `z-Ululon` · `v-sleep`
 
 *Azawan walks if Ululon sleeps.*
 ```
@@ -263,7 +263,7 @@ Beginner already pointed at *if* / *because* as dependents. Pick the `/h/` root 
 ```
 `zazawan vawalal hurugum badorol zululon velebel.`
 
-gloss: `z-grace@` · `v-walk` · `h-because` · `b-next-clause` · `z-courage@` · `v-sleep`
+gloss: `z-Azawan` · `v-walk` · `h-because` · `b-next-clause` · `z-Ululon` · `v-sleep`
 
 *Azawan walks because Ululon sleeps.*
 ```
@@ -476,7 +476,7 @@ English *because* and *if* can hide whether you **assert the dependent as a worl
 ```
 `zazawan vawalal hurugum badorol zanunul.`
 
-gloss: `z-grace@` · `v-walk` · `h-because` · `b-next-clause` · `z-rain`
+gloss: `z-Azawan` · `v-walk` · `h-because` · `b-next-clause` · `z-rain`
 
 *Azawan walks because it rains.* Rain is asserted as the reason.
 ```
@@ -484,7 +484,7 @@ gloss: `z-grace@` · `v-walk` · `h-because` · `b-next-clause` · `z-rain`
 ```
 `zazawan vawalal hadorom badorol zanunul.`
 
-gloss: `z-grace@` · `v-walk` · `h-if` · `b-next-clause` · `z-rain`
+gloss: `z-Azawan` · `v-walk` · `h-if` · `b-next-clause` · `z-rain`
 
 *Azawan walks if it rains.* Rain is not asserted; the main sentence is under that opportunity.
 ```
@@ -503,7 +503,7 @@ English often uses *because* for **speaker grounds** (*I think P because Q*) wit
 ```
 `zazawan hodohom vawalal.`
 
-gloss: `z-grace@` · `h-comment` · `v-walk`
+gloss: `z-Azawan` · `h-comment` · `v-walk`
 
 *Azawan walks (that’s a take).*
 ```

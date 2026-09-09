@@ -105,7 +105,7 @@ That ending is **prescription force**: how strongly you claim the ought. If you 
 ```
 `zazawan vezehel honogoxom.`
 
-gloss: `z-grace@` · `v-tell` · `h-relatedness-ought-endorse`
+gloss: `z-Azawan` · `v-tell` · `h-relatedness-ought-endorse`
 
 *Azawan tells: relatedness ought to be served (endorse).*
 ```
@@ -113,7 +113,7 @@ gloss: `z-grace@` · `v-tell` · `h-relatedness-ought-endorse`
 ```
 `zuhubun vuzunul huhuhexol.`
 
-gloss: `z-beauty@` · `v-sing` · `h-survival-ought-bound`
+gloss: `z-Uhubun` · `v-sing` · `h-survival-ought-bound`
 
 *Uhubun sings: survival ought to be protected (bound).*
 ```
@@ -300,7 +300,7 @@ English *have to* / *need to* / *doing this for…* often names a **motive**: wh
 ```
 `zazawan vezehel honogoxem.`
 
-gloss: `z-grace@` · `v-tell` · `h-relatedness-motive-internal`
+gloss: `z-Azawan` · `v-tell` · `h-relatedness-motive-internal`
 
 *Azawan tells for relatedness (internal reason).*
 ```
@@ -344,7 +344,7 @@ Prefer **-m** on **`xu` / `xe` / `xo`** when that table’s dimension is unclear
 ```
 `zazawan vezehel holozoxal honogoxem.`
 
-gloss: `z-grace@` · `v-tell` · `h-competence-met-physical` · `h-relatedness-motive-internal`
+gloss: `z-Azawan` · `v-tell` · `h-competence-met-physical` · `h-relatedness-motive-internal`
 
 *Azawan tells: competence is met (physical) and relatedness is the internal motive.*
 ```

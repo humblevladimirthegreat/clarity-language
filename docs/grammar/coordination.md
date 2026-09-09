@@ -26,7 +26,7 @@ gloss: `z-dog` · `z-cat` · `z-and.open`
 ```
 `zazawan zululon zam.`
 
-gloss: `z-grace@` · `z-courage@` · `z-and.open`
+gloss: `z-Azawan` · `z-Ululon` · `z-and.open`
 
 *Azawan and Ululon.*
 ```
@@ -53,7 +53,7 @@ Two full clauses use the same order: first clause’s words, second clause’s w
 ```
 `zazawan vawalal zululon vurunul xam.`
 
-gloss: `z-grace@` · `v-walk` · `z-courage@` · `v-run` · `x-and.open`
+gloss: `z-Azawan` · `v-walk` · `z-Ululon` · `v-run` · `x-and.open`
 
 *Azawan walks and Ululon runs.*
 ```
@@ -94,7 +94,7 @@ The join still comes last when there is only one item, or none. How many items s
 ```
 `zazawan zal.`
 
-gloss: `z-grace@` · `z-and-exactly`
+gloss: `z-Azawan` · `z-and-exactly`
 
 *just Azawan.*
 ```
@@ -115,7 +115,7 @@ gloss: `g-challenging` · `g-not`
 ```
 `zazawan zul.`
 
-gloss: `z-grace@` · `z-not`
+gloss: `z-Azawan` · `z-not`
 
 *not Azawan.*
 ```
@@ -150,7 +150,7 @@ Write the items in that order, then a join with vowel **e**. The earlier item ou
 ```
 `zazawan zel.`
 
-gloss: `z-grace@` · `z-rank`
+gloss: `z-Azawan` · `z-rank`
 
 *only Azawan matters* / *Azawan first.*
 ```
@@ -458,7 +458,7 @@ When English would say two people are *as ADJ as* each other, or that nobody is 
 ```
 `zazawan zululon zael gomonam.`
 
-gloss: `z-grace@` · `z-courage@` · `z-as…as` · `g-challenging`
+gloss: `z-Azawan` · `z-Ululon` · `z-as…as` · `g-challenging`
 
 *Azawan is as challenging as Ululon.*
 ```
@@ -552,7 +552,7 @@ gloss: `z-dog` · `z-cat` · `z-and` · `g-challenging`
 ```
 `zodogol zagadal zam goborul bazawan.`
 
-gloss: `z-dog` · `z-cat` · `z-and.open` · `g-ownership` · `b-grace@`
+gloss: `z-dog` · `z-cat` · `z-and.open` · `g-ownership` · `b-Azawan`
 
 *Azawan's (dog and cat).*
 ```

@@ -33,7 +33,7 @@ describe("isAgalanLintCandidate", () => {
     assert.equal(isAgalanLintCandidate("gl-"), false);
     assert.equal(isAgalanLintCandidate("e"), true);
     assert.equal(isAgalanLintCandidate("z-dog"), false);
-    assert.equal(isAgalanLintCandidate("z-grace@"), false);
+    assert.equal(isAgalanLintCandidate("z-Azawan"), false);
     assert.equal(isAgalanLintCandidate("ROOTx-e-"), false);
     assert.equal(isAgalanLintCandidate("…axul"), false);
     assert.equal(isAgalanLintCandidate("level"), false);

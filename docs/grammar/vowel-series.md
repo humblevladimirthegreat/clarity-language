@@ -13,7 +13,7 @@ Once you know those four vowels, a later closed set is easier because **`a`** / 
 ```
 `jal zazawan godogol.`
 
-gloss: `j-statement` · `z-grace@` · `g-dog`
+gloss: `j-statement` · `z-Azawan` · `g-dog`
 
 *Azawan is a dog.*
 ```
@@ -21,7 +21,7 @@ gloss: `j-statement` · `z-grace@` · `g-dog`
 ```
 `jol zazawan godogol.`
 
-gloss: `j-question` · `z-grace@` · `g-dog`
+gloss: `j-question` · `z-Azawan` · `g-dog`
 
 *Is Azawan a dog?*
 ```

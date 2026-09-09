@@ -16,7 +16,7 @@ The walking or sleeping is still the event. Without the `/h/` word you are just 
 ```
 `zazawan hodohom vawalal.`
 
-gloss: `z-grace@` · `h-COMMENT-soft` · `v-walk`
+gloss: `z-Azawan` · `h-COMMENT-soft` · `v-walk`
 
 *I think Azawan walks.* — commentary held lightly (default)
 ```
@@ -28,7 +28,7 @@ The same `/h/` word can sit on a yes/no ask:
 ```
 `jol zuhubun hodohom velebel.`
 
-gloss: `j-yes` · `z-beauty@` · `h-COMMENT-soft` · `v-sleep`
+gloss: `j-yes` · `z-Uhubun` · `h-COMMENT-soft` · `v-sleep`
 
 *Does Uhubun sleep?* — asked with light commentary
 ```
@@ -49,7 +49,7 @@ When unsure, prefer **`hodohom`**.
 ```
 `zuhubun hodohol vuzunul.`
 
-gloss: `z-beauty@` · `h-COMMENT-fused` · `v-sing`
+gloss: `z-Uhubun` · `h-COMMENT-fused` · `v-sing`
 
 *Uhubun sings — and that take is the scene.*
 ```
@@ -57,7 +57,7 @@ gloss: `z-beauty@` · `h-COMMENT-fused` · `v-sing`
 ```
 `zululon hodohor vawalal.`
 
-gloss: `z-courage@` · `h-COMMENT-return` · `v-walk`
+gloss: `z-Ululon` · `h-COMMENT-return` · `v-walk`
 
 *I think Ululon walks — and step back from that take.*
 ```
@@ -196,7 +196,7 @@ There is **no past / future letter** on the verb. Some channels already locate t
 ```
 `zazawan hadezem vawalal.`
 
-gloss: `z-grace@` · `h-LIVE` · `v-walk`
+gloss: `z-Azawan` · `h-LIVE` · `v-walk`
 
 *Azawan walks — live / from the scene.*
 ```
@@ -204,7 +204,7 @@ gloss: `z-grace@` · `h-LIVE` · `v-walk`
 ```
 `zazawan huvuvum vawalal.`
 
-gloss: `z-grace@` · `h-WITNESSED` · `v-walk`
+gloss: `z-Azawan` · `h-WITNESSED` · `v-walk`
 
 *Azawan walks — from memory (a past observation).*
 ```
@@ -227,7 +227,7 @@ Pick one evidential **root** for how you know.
 ```
 `zululon heregom velebel.`
 
-gloss: `z-courage@` · `h-RECORDED` · `v-sleep`
+gloss: `z-Ululon` · `h-RECORDED` · `v-sleep`
 
 *Ululon sleeps — on record.*
 ```
@@ -235,7 +235,7 @@ gloss: `z-courage@` · `h-RECORDED` · `v-sleep`
 ```
 `zululon heraram vuwurul.`
 
-gloss: `z-courage@` · `h-TOLD` · `v-write`
+gloss: `z-Ululon` · `h-TOLD` · `v-write`
 
 *Ululon writes — so they say.*
 ```
@@ -266,7 +266,7 @@ English sometimes frames the whole clause as play: *as if*, *for the sake of arg
 ```
 `zazawan hadadem vawalal.`
 
-gloss: `z-grace@` · `h-NOTIONAL-soft` · `v-walk`
+gloss: `z-Azawan` · `h-NOTIONAL-soft` · `v-walk`
 
 *As if Azawan walks.* — notional framing held lightly (default)
 ```
@@ -291,7 +291,7 @@ When unsure, prefer **`hadadem`**.
 ```
 `zuhubun hadadel vuzunul.`
 
-gloss: `z-beauty@` · `h-NOTIONAL-fused` · `v-sing`
+gloss: `z-Uhubun` · `h-NOTIONAL-fused` · `v-sing`
 
 *As if Uhubun sings.* — immersed in the imagined scene
 ```
@@ -299,7 +299,7 @@ gloss: `z-beauty@` · `h-NOTIONAL-fused` · `v-sing`
 ```
 `zululon hadader vuwurul.`
 
-gloss: `z-courage@` · `h-NOTIONAL-return` · `v-write`
+gloss: `z-Ululon` · `h-NOTIONAL-return` · `v-write`
 
 *As if Ululon writes — and step back toward contact.*
 ```
@@ -456,7 +456,7 @@ These `/h/` moods usually float over the whole clause. When the take, channel, o
 ```
 `zazawan gelulul wuvuvum vawalal.`
 
-gloss: `z-grace@` · `g-blue` · `w-WITNESSED` · `v-walk`
+gloss: `z-Azawan` · `g-blue` · `w-WITNESSED` · `v-walk`
 
 *Azawan walks — and that blue is from memory.*
 ```
@@ -464,7 +464,7 @@ gloss: `z-grace@` · `g-blue` · `w-WITNESSED` · `v-walk`
 ```
 `zazawan gelulul wadezem vawalal.`
 
-gloss: `z-grace@` · `g-blue` · `w-LIVE` · `v-walk`
+gloss: `z-Azawan` · `g-blue` · `w-LIVE` · `v-walk`
 
 *Azawan walks — and that blue is from the scene (live).*
 ```
@@ -488,7 +488,7 @@ The same published roots keep ordinary content under other role letters. The clo
 ```
 `zazawan zadadel vejel.`
 
-gloss: `z-grace@` · `z-theater` · `v-see`
+gloss: `z-Azawan` · `z-theater` · `v-see`
 
 *Azawan sees a theater.*
 ```
@@ -501,7 +501,7 @@ gloss: `z-grace@` · `z-theater` · `v-see`
 ```
 `zazawan huvuvum dabodol vejel.`
 
-gloss: `z-grace@` · `h-WITNESSED` · `d-boot` · `v-see`
+gloss: `z-Azawan` · `h-WITNESSED` · `d-boot` · `v-see`
 
 *Azawan sees a boot — from memory.*
 ```

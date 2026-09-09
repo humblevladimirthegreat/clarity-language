@@ -28,7 +28,7 @@ Sometimes the meaning you want is the published **metaphor** for that root, not 
 ```
 `azawam`
 
-gloss: `grace~`
+gloss: `grace`
 
 *grace*
 ```
@@ -43,7 +43,7 @@ When the word is a **name** (this person or this place, not a kind of thing), en
 ```
 `azawan`
 
-gloss: `grace@`
+gloss: `Azawan`
 
 *Azawan*
 ```
@@ -197,7 +197,7 @@ Beginner used **-n** for a person’s or place’s name. You can also mark a **t
 ```
 `zuhubun vuzunun.`
 
-gloss: `z-beauty@` · `v-sing@`
+gloss: `z-Uhubun` · `v-Sing`
 
 *Uhubun sings the Sing* (that titled performance).
 ```
@@ -226,7 +226,7 @@ English often writes a given name plus family as two words. In Agalan a short mu
 ```
 `zodunaxalanen vawalal.`
 
-gloss: `z-wish-x-guidance@` · `v-walk`
+gloss: `z-Odunaxalanen` · `v-walk`
 
 *Odunaxalanen walks.*
 ```
@@ -249,7 +249,7 @@ A long official title (bureau, act, titled group) may have a **handle**: one pub
 ```
 `zabogon vawalal.`
 
-gloss: `z-book@` · `v-walk`
+gloss: `z-Abogon` · `v-walk`
 
 *Abogon walks.* (office handle on first mention)
 ```
@@ -262,7 +262,7 @@ gloss: `z-book@` · `v-walk`
 ```
 `zabogoxululon.`
 
-gloss: `z-book-x-courage@`
+gloss: `z-Book-Courage`
 
 *Book-Courage* (full title of that office)
 ```

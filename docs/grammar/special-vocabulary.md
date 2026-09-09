@@ -60,7 +60,7 @@ When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*)
 ```
 `zazawan zagegol g#2 vezehel.`
 
-gloss: `z-grace@` · `z-solution` · `g-second` · `v-tell`
+gloss: `z-Azawan` · `z-solution` · `g-second` · `v-tell`
 
 *Azawan names solution 2.*
 ```
@@ -206,7 +206,7 @@ English *always* / *every* / *never* / *everyone* smuggle **how exceptionless** 
 ```
 `zazawan hual vawalal hewonol.`
 
-gloss: `z-grace@` · `h-always` · `v-walk` · `h-COMMON`
+gloss: `z-Azawan` · `h-always` · `v-walk` · `h-COMMON`
 
 *Azawan always walks, usually.*
 ```

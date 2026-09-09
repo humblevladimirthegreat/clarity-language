@@ -14,7 +14,7 @@ To say someone **can** do one named activity (*sing*, *walk*) or **can** have on
 ```
 `zazawan vuzunuxal.`
 
-gloss: `z-grace@` · `v-sing-able`
+gloss: `z-Azawan` · `v-sing-able`
 
 *Azawan can sing.*
 ```
@@ -26,7 +26,7 @@ The ending is still the **host** sense (**-l** literal, **-m** metaphorical, **-
 ```
 `zululon vuwuruxam.`
 
-gloss: `z-courage@` · `v-write-able-metaphor`
+gloss: `z-Ululon` · `v-write-able-metaphor`
 
 *Ululon can write* (metaphorical host sense).
 ```
@@ -41,7 +41,7 @@ English *can't* does not say whether the inability is for this moment, still cha
 ```
 `zululon vuzunuxel.`
 
-gloss: `z-courage@` · `v-sing-unable-temporary`
+gloss: `z-Ululon` · `v-sing-unable-temporary`
 
 *Ululon can’t sing right now.*
 ```
@@ -56,7 +56,7 @@ gloss: `z-courage@` · `v-sing-unable-temporary`
 ```
 `zuhubun vuzunuxol.`
 
-gloss: `z-beauty@` · `v-sing-unable-modifiable`
+gloss: `z-Uhubun` · `v-sing-unable-modifiable`
 
 *Uhubun can’t sing yet (open to change).*
 ```
@@ -64,7 +64,7 @@ gloss: `z-beauty@` · `v-sing-unable-modifiable`
 ```
 `zazawan vurunuxul.`
 
-gloss: `z-grace@` · `v-run-unable-irreversible`
+gloss: `z-Azawan` · `v-run-unable-irreversible`
 
 *Azawan can’t run (fixed / impossible as far as you can tell).*
 ```
@@ -203,7 +203,7 @@ Sometimes English *can* / *can’t* is not about one named activity or property:
 ```
 `zazawan hegeraxel.`
 
-gloss: `z-grace@` · `h-ABIL-unable-temporary`
+gloss: `z-Azawan` · `h-ABIL-unable-temporary`
 
 *Azawan can’t right now (no single host / clause-wide).*
 ```
@@ -211,7 +211,7 @@ gloss: `z-grace@` · `h-ABIL-unable-temporary`
 ```
 `zululon gelem wegeraxel.`
 
-gloss: `z-courage@` · `g-big~` · `w-ABIL-unable-temporary`
+gloss: `z-Ululon` · `g-big` · `w-ABIL-unable-temporary`
 
 *Ululon is big: can’t right now* (capability on that property).
 ```

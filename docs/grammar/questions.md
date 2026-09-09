@@ -19,7 +19,7 @@ When every person and action in the clause is already named, the expected reply 
 ```
 `jol zazawan vawalal.`
 
-gloss: `j-question` · `z-grace@` · `v-walk`
+gloss: `j-question` · `z-Azawan` · `v-walk`
 
 *Does Azawan walk?*
 ```
@@ -27,7 +27,7 @@ gloss: `j-question` · `z-grace@` · `v-walk`
 ```
 `jom zululon velebel.`
 
-gloss: `j-question~` · `z-courage@` · `v-sleep`
+gloss: `j-soft-question` · `z-Ululon` · `v-sleep`
 
 *Does Ululon sleep?* (gentle)
 ```
@@ -128,7 +128,7 @@ A *…, yes?* confirm tag is its own next turn: finish the statement with a peri
 ```
 `zazawan vawalal. jael.`
 
-gloss: `z-grace@` · `v-walk` · `j-yes`
+gloss: `z-Azawan` · `v-walk` · `j-yes`
 
 *Azawan walks. Yes.*
 ```
@@ -291,7 +291,7 @@ When the question already contains *not* (*Didn’t Azawan run?*), *yes* and *no
 `jol zazawan vul vurunul.`
 `jael.`
 
-gloss: `j-question` · `z-grace@` · `v-not` · `v-run` · `j-yes`
+gloss: `j-question` · `z-Azawan` · `v-not` · `v-run` · `j-yes`
 
 *Didn’t Azawan run? True, Azawan didn’t.*
 ```
@@ -325,7 +325,7 @@ To ask *when?* / *in what case?*, put an occasion word under `/h/` (or `/w/`) in
 ```
 `jol zuhubun vawalal har.`
 
-gloss: `j-question` · `z-beauty@` · `v-walk` · `h-when`
+gloss: `j-question` · `z-Uhubun` · `v-walk` · `h-when`
 
 *When does Uhubun walk?*
 ```
@@ -347,7 +347,7 @@ A *yes/no* question can put a join ending on a **named** item instead of a fill-
 ```
 `jol zazawan zal.`
 
-gloss: `j-question` · `z-grace@` · `z-just`
+gloss: `j-question` · `z-Azawan` · `z-just`
 
 *Just Azawan?*
 ```
@@ -355,7 +355,7 @@ gloss: `j-question` · `z-grace@` · `z-just`
 ```
 `jol zuhubun zam.`
 
-gloss: `j-question` · `z-beauty@` · `z-offer`
+gloss: `j-question` · `z-Uhubun` · `z-offer`
 
 *How about Uhubun?*
 ```
@@ -370,7 +370,7 @@ When someone asked *who* / *what*, answer by **naming the fill**. A bare content
 ```
 `zazawan.`
 
-gloss: `z-grace@`
+gloss: `z-Azawan`
 
 *Azawan.*
 ```
@@ -505,7 +505,7 @@ Under question, the rest of the single-item and standalone join map is confirm /
 ```
 `jol zazawan zel.`
 
-gloss: `j-question` · `z-grace@` · `z-rank`
+gloss: `j-question` · `z-Azawan` · `z-rank`
 
 *Is Azawan the only priority?*
 ```

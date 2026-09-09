@@ -35,7 +35,7 @@ The same `A REV B` shape also covers *or rather*, *instead*, and *except*. Keep 
 ```
 `zazawan guzumum el gelem.`
 
-gloss: `z-grace@` · `g-happy` · `rather` · `g-big`
+gloss: `z-Azawan` · `g-happy` · `rather` · `g-big`
 
 *Azawan is happy, or rather, big.*
 ```
@@ -51,7 +51,7 @@ gloss: `d-tea` · `instead` · `d-coffee`
 ```
 `zahadal ul zazawan.`
 
-gloss: `z-team` · `except` · `z-grace@`
+gloss: `z-team` · `except` · `z-Azawan`
 
 *The team except Azawan.*
 ```
@@ -95,7 +95,7 @@ Sometimes the thing you want to tweak is not a phrase inside this sentence, but 
 ```
 `al zazawan vawalal.`
 
-gloss: `additionally` · `z-grace@` · `v-walk`
+gloss: `additionally` · `z-Azawan` · `v-walk`
 
 *Additionally, Azawan walks.*
 ```
@@ -103,7 +103,7 @@ gloss: `additionally` · `z-grace@` · `v-walk`
 ```
 `ol zululon velebel.`
 
-gloss: `instead` · `z-courage@` · `v-sleep`
+gloss: `instead` · `z-Ululon` · `v-sleep`
 
 *Instead, Ululon sleeps.*
 ```
@@ -111,7 +111,7 @@ gloss: `instead` · `z-courage@` · `v-sleep`
 ```
 `el zuhubun godogol.`
 
-gloss: `in.other.words` · `z-beauty@` · `g-dog`
+gloss: `in.other.words` · `z-Uhubun` · `g-dog`
 
 *In other words, Uhubun is a dog.*
 ```
@@ -268,7 +268,7 @@ Beginner already used closed **-l** and open **-m** for how complete B is, or ho
 ```
 `zahadal ul zazawan.`
 
-gloss: `z-team` · `except` · `z-grace@`
+gloss: `z-team` · `except` · `z-Azawan`
 
 *The team except Azawan.*
 ```
@@ -291,7 +291,7 @@ You already repair one named A with a single `A REV B`. To stack several repairs
 ```
 `zahadal am zazawan ul zululon.`
 
-gloss: `z-team` · `including.open` · `z-grace@` · `except` · `z-courage@`
+gloss: `z-team` · `including.open` · `z-Azawan` · `except` · `z-Ululon`
 
 *The team, including Azawan, except only Ululon.*
 ```
@@ -335,7 +335,7 @@ On a non-initial conjunct under a [clause `/x/` fence](coordination.md#clause-le
 ```
 `jazawan al zululon vawalal.`
 
-gloss: `j-grace@` · `additionally` · `z-courage@` · `v-walk`
+gloss: `j-Azawan` · `additionally` · `z-Ululon` · `v-walk`
 
 *Azawan: additionally, Ululon walks.* (vocative, then discourse reviser)
 ```

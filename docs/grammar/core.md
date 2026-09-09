@@ -26,7 +26,7 @@ A name you already cite with **-n** (`azawan`) keeps **-n** in the sentence:
 ```
 `zazawan vawalal.`
 
-gloss: `z-grace@` · `v-walk`
+gloss: `z-Azawan` · `v-walk`
 
 *Azawan walks.*
 ```
@@ -63,7 +63,7 @@ gloss: `z-dog` · `g-blue`
 ```
 `zazawan godogol.`
 
-gloss: `z-grace@` · `g-dog`
+gloss: `z-Azawan` · `g-dog`
 
 *Azawan is a dog.*
 ```
@@ -78,7 +78,7 @@ After an adjective, you can add how intense it is or in what manner. That extra 
 ```
 `zodogol gelulul welem.`
 
-gloss: `z-dog` · `g-blue` · `w-size~`
+gloss: `z-dog` · `g-blue` · `w-size`
 
 *A dog is very blue.* / *a very blue dog*
 ```
@@ -91,7 +91,7 @@ When you say **how, when, or where** an action happens, use `/h/` (an **adverb**
 ```
 `zodogol hadazam vawalal.`
 
-gloss: `z-dog` · `h-haste~` · `v-walk`
+gloss: `z-dog` · `h-haste` · `v-walk`
 
 *A dog walks hastily.*
 ```
@@ -104,7 +104,7 @@ Some adjectives and adverbs name a **relation** that needs another person or thi
 ```
 `hogorem bohohul`
 
-gloss: `h-inclusion~` · `b-house`
+gloss: `h-inclusion` · `b-house`
 
 *inside a house*
 ```
@@ -112,7 +112,7 @@ gloss: `h-inclusion~` · `b-house`
 ```
 `zodogol velebel hogorem bohohul.`
 
-gloss: `z-dog` · `v-sleep` · `h-inclusion~` · `b-house`
+gloss: `z-dog` · `v-sleep` · `h-inclusion` · `b-house`
 
 *A dog sleeps inside a house.*
 ```
@@ -172,7 +172,7 @@ The dependent may open with its own `/j/` words, or keep the main sentence’s s
 ```
 `zazawan dululon vezehel dadorol zodogol vurunul.`
 
-gloss: `z-grace@` · `d-courage@` · `v-tell` · `d-next-clause` · `z-dog` · `v-run`
+gloss: `z-Azawan` · `d-Ululon` · `v-tell` · `d-next-clause` · `z-dog` · `v-run`
 
 *Azawan tells Ululon that the dog runs.*
 ```
@@ -182,7 +182,7 @@ gloss: `z-grace@` · `d-courage@` · `v-tell` · `d-next-clause` · `z-dog` · `
 ```
 `zazawan guzumum hurugum badorol zululon vawalal.`
 
-gloss: `z-grace@` · `g-happy~` · `h-because~` · `b-next-clause` · `z-courage@` · `v-walk`
+gloss: `z-Azawan` · `g-happy` · `h-because` · `b-next-clause` · `z-Ululon` · `v-walk`
 
 *Azawan is happy because Ululon walks.*
 ```
@@ -447,7 +447,7 @@ The act word is **`j` + vowel + ending**. The vowel is the family you know (**a*
 ```
 `jam zazawan vawalal.`
 
-gloss: `j-statement` · `z-grace@` · `v-walk`
+gloss: `j-statement` · `z-Azawan` · `v-walk`
 
 *Maybe Azawan walks.*
 ```
@@ -490,7 +490,7 @@ gloss: `gl-blue` · `z-dog`
 ```
 `hozal bazawan zululon vawalal.`
 
-gloss: `h-topic` · `b-grace@` · `z-courage@` · `v-walk`
+gloss: `h-topic` · `b-Azawan` · `z-Ululon` · `v-walk`
 
 *As for Azawan, Ululon walks.*
 ```
@@ -507,7 +507,7 @@ A complex adjective is `/ɡ/` plus `/b/` (*same as Azawan*). A further plain adj
 ```
 `zodogol gonunul bazawan gelulul.`
 
-gloss: `z-dog` · `g-same` · `b-grace@` · `g-blue`
+gloss: `z-dog` · `g-same` · `b-Azawan` · `g-blue`
 
 *a dog the same as blue Azawan*
 ```
@@ -557,7 +557,7 @@ Each clause has at most one **`adoro`** at the end of the main sentence. The sen
 ```
 `zazawan guzumum hurugum badorol zululon vawalal hurugum badorol zuhubun velebel.`
 
-gloss: `z-grace@` · `g-happy~` · `h-because~` · `b-next-clause` · `z-courage@` · `v-walk` · `h-because~` · `b-next-clause` · `z-beauty@` · `v-sleep`
+gloss: `z-Azawan` · `g-happy` · `h-because` · `b-next-clause` · `z-Ululon` · `v-walk` · `h-because` · `b-next-clause` · `z-Uhubun` · `v-sleep`
 
 *Azawan is happy because Ululon walks because Uhubun sleeps.*
 ```

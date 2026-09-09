@@ -162,7 +162,7 @@ Do **not** skip productive syntax pages (core, coordination, questions, values, 
 ## Shared root bank
 <a id="root-bank"></a>
 
-Default people: [house cast](grammar-docs.md#house-cast) — `zazawan` / `zululon` / `zuhubun` (`azawa` / `ululo` / `uhubu` + **-n**). Morph: `z-grace` / `z-courage` / `z-beauty`.
+Default people: [house cast](grammar-docs.md#house-cast) — `zazawan` / `zululon` / `zuhubun` (`azawa` / `ululo` / `uhubu` + **-n**). Morph: `z-Azawan` / `z-Ululon` / `z-Uhubun`.
 
 Reuse this bank unless this stage already taught a different published root. Do not mine the lexicon for variety.
 

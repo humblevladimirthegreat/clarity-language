@@ -18,7 +18,7 @@ Start with one quoted token as the object of *said*:
 ```
 `zazawan d[hi] vezehel.`
 
-gloss: `z-grace@` · `d-hi` · `v-tell`
+gloss: `z-Azawan` · `d-hi` · `v-tell`
 
 *Azawan said “hi.”*
 ```
@@ -41,7 +41,7 @@ Verbatim wording is **exact**: no extra mark (`d[hi]`). That is the same as endi
 ```
 `zululon d~[hi] vuwurul.`
 
-gloss: `z-courage@` · `d-~hi` · `v-write`
+gloss: `z-Ululon` · `d-hi` · `v-write`
 
 *Ululon wrote something like “hi.”*
 ```
@@ -49,7 +49,7 @@ gloss: `z-courage@` · `d-~hi` · `v-write`
 ```
 `zuhubun d@[Hamlet] vuzunul.`
 
-gloss: `z-beauty@` · `d-@Hamlet` · `v-sing`
+gloss: `z-Uhubun` · `d-Hamlet` · `v-sing`
 
 *Uhubun sang “Hamlet.”*
 ```
@@ -61,7 +61,7 @@ To point back at a prior span without repeating its interior, put **`=`** inside
 ```
 `jol zululon d[=] vezehel.`
 
-gloss: `j-question` · `z-courage@` · `d-←cite` · `v-tell`
+gloss: `j-question` · `z-Ululon` · `d-←cite` · `v-tell`
 
 *Ululon said that?!*
 ```
@@ -90,7 +90,7 @@ With **`@`** / **-n**, mention is *the title X* / *the proverb X* as a **named u
 ```
 `zazawan d<sushi> vejel.`
 
-gloss: `z-grace@` · `d-<sushi>` · `v-see`
+gloss: `z-Azawan` · `d-<sushi>` · `v-see`
 
 *Azawan saw sushi.* (opaque surface)
 ```
@@ -115,7 +115,7 @@ The interior is ordinary Agalan: a fragment, or a clause body that keeps the **s
 ```
 `zazawan vawalal h(huzumum).`
 
-gloss: `z-grace@` · `v-walk` · `h-happy`
+gloss: `z-Azawan` · `v-walk` · `h-happy`
 
 *Azawan walks (happily).*
 ```
@@ -123,7 +123,7 @@ gloss: `z-grace@` · `v-walk` · `h-happy`
 ```
 `zazawan vawalal h(zululon velebel).`
 
-gloss: `z-grace@` · `v-walk` · `h-` · `z-courage@` · `v-sleep`
+gloss: `z-Azawan` · `v-walk` · `h-` · `z-Ululon` · `v-sleep`
 
 *Azawan walks (Ululon sleeps).*
 ```
@@ -142,7 +142,7 @@ The letter on the open is the role of the **entire span** in the outer sentence.
 ```
 `jul zululon v[oops].`
 
-gloss: `j-prohibition` · `z-courage@` · `v-oops`
+gloss: `j-prohibition` · `z-Ululon` · `v-oops`
 
 *Don’t “oops,” Ululon.*
 ```
@@ -303,7 +303,7 @@ Beginner writing already packages a quote, mention, aside, or blob in brackets. 
 ```
 `zazawan daxol hi vezehel.`
 
-gloss: `z-grace@` · `d-cite.atomic` · `hi` · `v-tell`
+gloss: `z-Azawan` · `d-cite.atomic` · `hi` · `v-tell`
 
 *Azawan said “hi.”*
 ```
@@ -345,7 +345,7 @@ A pair of brackets can wrap one token or many, run to the end of the clause, or 
 ```
 `zululon daxal hi zazawan xuxul vezehel.`
 
-gloss: `z-courage@` · `d-cite.multi` · `hi` · `z-grace@` · `x-close` · `v-tell`
+gloss: `z-Ululon` · `d-cite.multi` · `hi` · `z-Azawan` · `x-close` · `v-tell`
 
 *Ululon said “hi Azawan.”*
 ```
@@ -407,7 +407,7 @@ When one packaged chunk sits inside another (a quote that contains a parenthetic
 ```
 `zazawan d[ h(huzumum) hi ] vezehel.`
 
-gloss: `z-grace@` · `d-cite` · `h-aside` · `h-happy~` · `hi` · `v-tell`
+gloss: `z-Azawan` · `d-cite` · `h-aside` · `h-happy` · `hi` · `v-tell`
 
 *Azawan said “hi” (happily).*
 ```
@@ -422,7 +422,7 @@ Sometimes *maybe* or a join should apply only to a multi-word chunk, not the who
 ```
 `zazawan ^ h<maybe>l zodogol garedel ^ vejel.`
 
-gloss: `z-grace@` · `^` · `h-maybe` · `z-dog` · `g-red` · `^` · `v-see`
+gloss: `z-Azawan` · `^` · `h-maybe` · `z-dog` · `g-red` · `^` · `v-see`
 
 *Azawan saw maybe the red dog* (*maybe* targets that chunk).
 ```
@@ -452,7 +452,7 @@ gloss: `z-grace@` · `^` · `h-maybe` · `z-dog` · `g-red` · `^` · `v-see`
 ```
 `zazawan ^ zululon zal ^ zam vejel.`
 
-gloss: `z-grace@` · `^` · `z-courage@` · `z-and` · `^` · `z-and.open` · `v-see`
+gloss: `z-Azawan` · `^` · `z-Ululon` · `z-and` · `^` · `z-and.open` · `v-see`
 
 *Azawan and (just Ululon) saw …*
 ```
@@ -615,7 +615,7 @@ You already close a multi-token span with **`xuxul`**, the spoken match for `]` 
 ```
 `zazawan daxal hi xuxur vezehel.`
 
-gloss: `z-grace@` · `d-cite.multi` · `hi` · `x-close.editorial` · `v-tell`
+gloss: `z-Azawan` · `d-cite.multi` · `hi` · `x-close.editorial` · `v-tell`
 
 *Azawan said “hi…”*
 ```

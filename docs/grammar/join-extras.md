@@ -14,7 +14,7 @@ When someone *does* a list move to a thing (*includes*, *chooses*, *leaves out*)
 ```
 `zazawan dabelel van.`
 
-gloss: `z-grace@` · `d-apple` · `v-includes`
+gloss: `z-Azawan` · `d-apple` · `v-includes`
 
 *Azawan includes/adds an apple.*
 ```

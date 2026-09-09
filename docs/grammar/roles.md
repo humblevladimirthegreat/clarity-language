@@ -32,7 +32,7 @@ Once the talk already has a matching event (*walks*), **-r** on the same stem me
 `zazawan vawalal.`
 `zaxawalar velebel.`
 
-gloss: `z-grace@` · `v-walk`
+gloss: `z-Azawan` · `v-walk`
 gloss: `z-←agent-x-walk` · `v-sleep`
 
 *Azawan walks. The walker sleeps.*
@@ -46,7 +46,7 @@ English *the one seen* or *the one fought* names the person the event happens to
 `zazawan dagadal vejel.`
 `zuxejer vurunul.`
 
-gloss: `z-grace@` · `d-cat` · `v-see`
+gloss: `z-Azawan` · `d-cat` · `v-see`
 gloss: `z-←patient-x-see` · `v-run`
 
 *Azawan sees a cat. The one seen runs.*
@@ -60,7 +60,7 @@ Some stems name a **relation** (who is bound to whom), not an action. The extra 
 `zazawan gonogol bululon.`
 `zoxonogor vurunul.`
 
-gloss: `z-grace@` · `g-bond` · `b-courage@`
+gloss: `z-Azawan` · `g-bond` · `b-Ululon`
 gloss: `z-←reltum-x-bond` · `v-run`
 
 *Azawan is bound to Ululon. That other party of the bond runs.*
@@ -81,7 +81,7 @@ If you put the event stem on a thing letter with no role vowel (`duvugul`), you 
 ```
 `zazawan duvugul vejel.`
 
-gloss: `z-grace@` · `d-fight` · `v-see`
+gloss: `z-Azawan` · `d-fight` · `v-see`
 
 *Azawan sees a fight.*
 ```
@@ -95,7 +95,7 @@ To say someone **is a kind** (*Azawan is a fighter*), put the same role stem on 
 ```
 `zazawan gaxuvugum.`
 
-gloss: `z-grace@` · `g-←agent-x-fight`
+gloss: `z-Azawan` · `g-←agent-x-fight`
 
 *Azawan is a fighter, in a manner of speaking.*
 ```
@@ -237,7 +237,7 @@ English *left* / *right* / *ahead* / *back* can mean a compass heading (*west*) 
 ```
 `jel vawalal hewezexazawan.`
 
-gloss: `j-command` · `v-walk` · `h-west-x-grace@`
+gloss: `j-command` · `v-walk` · `h-west-x-Azawan`
 
 *Walk left (Azawan’s left).*
 ```
@@ -322,7 +322,7 @@ English *on Azawan’s left of the tree* needs both a facing person and a landma
 ```
 `zabogol gewezexazawan berel.`
 
-gloss: `z-book` · `g-west-x-grace@` · `b-tree`
+gloss: `z-book` · `g-west-x-Azawan` · `b-tree`
 
 *The book is on Azawan’s left of the tree.*
 ```
@@ -490,7 +490,7 @@ When *east* / *west* / *southwest* name a move in the talk, not a map point, wri
 ```
 `zazawan vawalal. xezazal zululon vurunul.`
 
-gloss: `z-grace@` · `v-walk` · `x-east` · `z-courage@` · `v-run`
+gloss: `z-Azawan` · `v-walk` · `x-east` · `z-Ululon` · `v-run`
 
 *Azawan walks. Therefore Ululon runs.*
 ```
