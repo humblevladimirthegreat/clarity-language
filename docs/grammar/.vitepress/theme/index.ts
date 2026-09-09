@@ -4,6 +4,7 @@ import './custom.css'
 import LexiconSearch from '../components/LexiconSearch.vue'
 import GlossViewer from '../components/GlossViewer.vue'
 import AgelanInspect from '../components/AgelanInspect.vue'
+import IpaPlay from '../components/IpaPlay.vue'
 
 export default {
   extends: DefaultTheme,
@@ -11,5 +12,6 @@ export default {
     app.component('LexiconSearch', LexiconSearch)
     app.component('GlossViewer', GlossViewer)
     app.component('AgelanInspect', AgelanInspect)
+    app.component('IpaPlay', IpaPlay)
   },
 } satisfies Theme

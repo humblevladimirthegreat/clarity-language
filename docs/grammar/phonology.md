@@ -16,10 +16,12 @@ Agalan has four vowel letters. Hold each one as its own beat.
 
 | Agalan | IPA | Cue |
 |--------|-----|-----|
-| **e** | /e̞/ | *bet* |
-| **u** | /ʌ/ | *but* |
-| **o** | /o/ | *boat* (no glide, like Spanish *no*) |
-| **a** | /ɑ/ | *father* |
+| **e** | /e̞/ <IpaPlay file="Mid_front_unrounded_vowel.ogg" label="e" /> | *bet* |
+| **u** | /ʌ/ <IpaPlay file="Open-mid_back_unrounded_vowel.ogg" label="u" /> | *but* |
+| **o** | /o/ <IpaPlay file="Close-mid_back_rounded_vowel.ogg" label="o" /> | *boat* (no glide, like Spanish *no*) |
+| **a** | /ɑ/ <IpaPlay file="Open_back_unrounded_vowel.ogg" label="a" /> | *father* |
+
+Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) by [Denelson83](https://commons.wikimedia.org/wiki/User:Denelson83), except /e̞/ by [TFighterPilot](https://commons.wikimedia.org/wiki/File:Mid_front_unrounded_vowel.ogg).
 
 ### Consonants
 
@@ -27,23 +29,23 @@ A consonant starts a syllable. Prefer the **voiced** version (vocal cords buzzin
 
 A voiceless stop cuts the air. You may still use the unvoiced sound as style; voiced and unvoiced are not different letters.
 
-The **Example** column is a cited root plus its last letter (not a sentence). Hear the row’s consonant inside that word.
+| Agalan | IPA | Cue | Unvoiced variant |
+|--------|-----|-----|------------------|
+| **h** | /ɦ/ <IpaPlay file="Voiced_glottal_fricative.ogg" label="h" /> | *ahead* | /h/ <IpaPlay file="Voiceless_glottal_fricative.ogg" label="unvoiced h" />, *hat* |
+| **w** | /w/ <IpaPlay file="Voiced_labio-velar_approximant.ogg" label="w" /> | *we* | |
+| **g** | /ɡ/ <IpaPlay file="Voiced_velar_plosive.ogg" label="g" /> | *go* | /k/ <IpaPlay file="Voiceless_velar_plosive.ogg" label="unvoiced g" />, *kite* |
+| **d** | /d/ <IpaPlay file="Voiced_alveolar_plosive.ogg" label="d" /> | *do* | /t/ <IpaPlay file="Voiceless_alveolar_plosive.ogg" label="unvoiced d" />, *toe* |
+| **j** | /j/ <IpaPlay file="Palatal_approximant.ogg" label="j" /> | *yes* (Germanic *j* as in *ja*) | |
+| **b** | /b/ <IpaPlay file="Voiced_bilabial_plosive.ogg" label="b" /> | *be* | /p/ <IpaPlay file="Voiceless_bilabial_plosive.ogg" label="unvoiced b" />, *pay* |
+| **z** | /z/ <IpaPlay file="Voiced_alveolar_sibilant.ogg" label="z" /> | *zoo* | /s/ <IpaPlay file="Voiceless_alveolar_sibilant.ogg" label="unvoiced z" />, *sea* |
+| **m** | /m/ <IpaPlay file="Bilabial_nasal.ogg" label="m" /> | *me* | |
+| **n** | /n/ <IpaPlay file="Alveolar_nasal.ogg" label="n" /> | *no* | |
+| **v** | /v/ <IpaPlay file="Voiced_labiodental_fricative.ogg" label="v" /> | *vie* | /f/ <IpaPlay file="Voiceless_labiodental_fricative.ogg" label="unvoiced v" />, *fee* |
+| **l** | /l/ <IpaPlay file="Alveolar_lateral_approximant.ogg" label="l" /> | *lie* | |
+| **r** | /ɹ/ <IpaPlay file="Alveolar_approximant.ogg" label="r" /> | *red* | |
+| **x** | /ʒ/ <IpaPlay file="Voiced_palato-alveolar_sibilant.ogg" label="x" /> | *vision* (the *si*) | /ʃ/ <IpaPlay file="Voiceless_palato-alveolar_sibilant.ogg" label="unvoiced x" />, *shy* |
 
-| Agalan | IPA | Cue | Unvoiced variant | Example |
-|--------|-----|-----|------------------|---------|
-| **h** | /ɦ/ | *ahead* | /h/, *hat* | `adazam` |
-| **w** | /w/ | *we* | | `owom` |
-| **g** | /ɡ/ | *go* | /k/, *kite* | `odogol` |
-| **d** | /d/ | *do* | /t/, *toe* | `agadal` |
-| **j** | /j/ | *yes* (Germanic *j* as in *ja*) | | `ajul` |
-| **b** | /b/ | *be* | /p/, *pay* | `abogol` |
-| **z** | /z/ | *zoo* | /s/, *sea* | `azawan` |
-| **m** | /m/ | *me* | | `uzumum` |
-| **n** | /n/ | *no* | | `azawan` |
-| **v** | /v/ | *vie* | /f/, *fee* | `awalal` |
-| **l** | /l/ | *lie* | | `elulul` |
-| **r** | /ɹ/ | *red* | | `urunul` |
-| **x** | /ʒ/ | *vision* (the *si*) | /ʃ/, *shy* | `x` |
+Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) by [Peter Isotalo](https://commons.wikimedia.org/wiki/User:Peter_Isotalo), except /ɹ/ by [Erutuon](https://commons.wikimedia.org/wiki/File:Alveolar_approximant.ogg).
 
 ### Word edges
 
