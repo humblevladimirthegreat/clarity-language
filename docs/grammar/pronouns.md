@@ -240,65 +240,70 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 ### How English approximates **-r**
 
-Agalan has one resume mechanism; English does not. Approximate by crossing **what was mentioned** (antecedent role) with **what slot you need now** (pronoun role). The referent stays the same; only the English wording changes.
+Beginner already used content **-r** in the same slot as the earlier word (*he sits*). Keep that letter match; English wording follows the slot.
 
-`/x/`…`-r` is **discourse navigation**: *going back to subject X* / *returning to that thread* (removing it does not change the following claim). **Not the same job as:** clause **aboutness** (*regarding X*) uses `/h/` + `/b/` X ([adverbs](core.md#adverbs-h) / [continue](core.md#continue-x)).
+| Agalan | Use | English |
+|--------|-----|---------|
+| `/z/` … `-r` after `/z/` | same subject again | *he / she / it / they*; *that one* |
+| `/d/` … `-r` after `/d/` | same object again | *him / her / it / them*; *that one* |
+| `/b/` … `-r` after `/b/` | same extra-noun argument | *him / her / it / them* as the relation’s argument |
+| `/v/` … `-r` after `/v/` | same action again | *do so* / *do that* |
+| `/ɡ/` … `-r` after `/ɡ/` | same property again | *such* / *that* / *so* |
+| `/w/` … `-r` after `/w/` | same degree or frame | *that* degree / frame again |
+| `/h/` … `-r` after `/h/` | same adverb again | *thus* / *so* / *that way* / *then* |
+| `/j/` vocative … `-r` | same addressee again | calling that person again |
+| `/j/` interjection … `-r` | same exclamation again | repeating that call-out |
+| `/x/` … `-r` after `/x/` | same linker again | *and so* / *likewise* |
 
-#### Same-role resume
+**Compare with:** English *that* pointing at a quoted title, proverb, or aside uses [span resume](spans.md#endings) (`daxur` / `hexur` / …), not content **-r**.
 
-| Agalan | English |
-|--------|---------|
-| `/z/` … `-r` after `/z/` | *he / she / it / they* (subject); *that one* |
-| `/d/` … `-r` after `/d/` | *him / her / it / them* (object); *that one* |
-| `/b/` … `-r` after `/b/` | *him / her / it / them* as the relation’s argument |
-| `/v/` … `-r` after `/v/` | *do so* / *do that* |
-| `/ɡ/` … `-r` after `/ɡ/` | *such* / *that* / *so* (same property) |
-| `/w/` … `-r` after `/w/` | *that* degree / frame again |
-| `/h/` … `-r` after `/h/` | *thus* / *so* / *that way* / *then* |
-| `/j/` vocative … `-r` | calling the same addressee again |
-| `/j/` interjection … `-r` | repeating that exclamation |
-| `/x/` … `-r` after `/x/` | *and so* / *likewise* / the same linker again |
+### Going back to a thread
 
-Resume content with `-r`.
+English *going back to X* / *returning to that thread* names an earlier person or thing without making the next sentence *about* them. Use continue `/x/` plus the resume stem and **-r**. You can drop that word and the following claim is unchanged; it only points the listener at which earlier thread you mean.
 
-#### Quick English cheat sheet
+```
+`zazawan vawalal. zululon vurunul. xazawar velebel.`
 
-| English | Agalan |
-|---------|--------|
-| *he / she / it / they* (entity again) | noun antecedent, then `/z/` `/d/` or `/b/` …`-r` |
-| *do so* / *do that* | verb antecedent, then `/v/` …`-r` |
-| *such* / *that kind* | adjective antecedent, then `/ɡ/` …`-r` |
-| *thus* / *that way* | adverb antecedent, then `/h/` …`-r` |
-| *regarding that* (clause aboutness) | `/h/` *regarding* + `/b/` …`-r` |
-| *going back to subject X* (thread resume) | any antecedent, then `/x/` …`-r` |
-| *that* (prior cite / mention / aside) | [span resume](spans.md#endings) `daxur` / `hexur` / … |
+gloss: `z-grace@` · `v-walk` · `z-courage@` · `v-run` · `x-←grace` · `v-sleep`
 
-**Span resume** forms are closed [span-fence](spans.md) words. English often says *it* or *that*: "He said *that*?!" / "that (title)" / "that (proverb)".
+*Azawan walks. Ululon runs. Going back to Azawan, he sleeps.*
+```
 
-Fill-ask (*who* / *what* / …) uses [unspecified-member **-r** under question](questions.md#fill-ask-r) (`zar` / `var` / `xar` / …).
+**Not the same job as:** *regarding X* / *as for X* uses `/h/` + `/b/` X ([adverbs](core.md#adverbs-h)).
 
 ### Cross-role recast
 
-Same referent, new role: English needs a longer paraphrase. Full first-letter × first-letter tables are Advanced ([cross-role inventory](#cross-role-inventory)).
+Sometimes you still mean that person or thing, but you need a **different** slot: the doing, the kind, the manner. Change only the first letter; keep the resume stem and **-r**. English then uses a longer phrase (*do that with him*, *that one’s kind*) instead of *he* / *him*.
+
+```
+`zazawan vajul. zululon vazar.`
+
+gloss: `z-grace@` · `v-sit` · `z-courage@` · `v-←grace`
+
+*Azawan sits. Ululon does that with him.*
+```
 
 | Agalan | Use | English |
 |--------|-----|---------|
 | noun antecedent, `/v/` … `-r` | recast as action | *do that (to/with it)* |
 | noun antecedent, `/ɡ/` … `-r` | recast as property | *that one’s* / *of that kind* |
-| noun antecedent, `/x/` … `-r` | discourse thread resume | *going back to subject X* |
 | verb antecedent, noun … `-r` | recast as event | *that action / event* (the doing, not the doer; [role compounds](roles.md#role-compounds) name agent/patient) |
 | verb antecedent, `/h/` … `-r` | recast as manner | *by doing so* / *thereby* |
 | adjective antecedent, noun … `-r` | recast as entity | *the … one* / *that quality* |
 
 ### Specials: further notes
 
-**Speaker / listener.** Use 1st / 2nd person when a name is unavailable or undesired.
+When you address several people at once, English *you* does not say how many. The listener root **`edone`** plus associative **-sh** names everyone this turn addresses: the vocative cluster, plus anyone still held as addressee. One addressee stays singular **`edone`**; several take **`edone…sh`**. Inclusive *shall we* stays **`aha`**. Soft **`zaham`** hedges whether you really share the act.
 
-**Interlocutors (`aha`).** Inclusive *we* as a **discourse role**. Associative “my side” and exact membership lists use [associative **-sh**](plurality.md#associative) / joins. Soft **`zaham`** hedges co-agency.
+```
+`zedonensh vajul.`
 
-**Address set.** Everyone named in this turn’s vocative cluster, plus anyone still held as addressee by context. One addressee → singular **`edone`**; several → **`edone…sh`**. Inclusive co-agency (*shall we…*) → **`aha`**.
+gloss: `z-listener` · `v-sit`
 
-Prefer **`aha`** when the point is **co-participant role**; prefer name joins when membership identity is the point; prefer name…**-sh** for associative cohorts.
+*You all sit.*
+```
+
+**Compare with:** *you and I* is **`aha`**. *Azawan and associates* is name…**-sh** ([plurality](plurality.md#associative)).
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -429,7 +434,15 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 ### Cross-role inventory
 <a id="cross-role-inventory"></a>
 
-Each subsection is an **antecedent** role; table rows are the **pronoun** role. Reading aid only: Agalan still has one **-r** mechanism.
+Intermediate already recast one referent into a new slot. Each table is an **antecedent** role; rows are the **pronoun** role. The mechanism is still one **-r**.
+
+```
+`zodogol vawalal. zawalar gelem.`
+
+gloss: `z-dog` · `v-walk` · `z-←walk` · `g-size~`
+
+*A dog walks. That action is big.*
+```
 
 #### Antecedent was a noun (`/z/`, `/d/`, or `/b/`)
 
@@ -439,9 +452,9 @@ Each subsection is an **antecedent** role; table rows are the **pronoun** role. 
 | `/v/` … `-r` | treat that entity as the action | *do that (to/with it)* / *X it* |
 | `/ɡ/` … `-r` | property tied to that entity | *that one’s* / *of that kind* |
 | `/w/` … `-r` | degree or frame on a property of that entity | *that* degree / frame |
-| `/h/` … `-r` | occasion framed by that entity | clause aboutness is `/h/` + `/b/` …`-r` |
+| `/h/` … `-r` | occasion framed by that entity | *then* / *that way* (framed by that entity) |
 | `/j/` vocative … `-r` | address that entity | vocative |
-| `/x/` … `-r` | discourse resume (not clause aboutness) | *Going back to subject X* |
+| `/x/` … `-r` | discourse thread resume | *Going back to subject X* |
 
 #### Antecedent was a verb (`/v/`)
 

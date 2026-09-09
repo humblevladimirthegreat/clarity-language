@@ -227,30 +227,12 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 ## Intermediate
 <a id="intermediate"></a>
 
-This stage is **whose** left / right / ahead you mean (compass vs body-relative).
-
 ### Viewpoint laterals (`DIR` × anchor)
 <a id="viewpoint-laterals"></a>
 <a id="spatial-laterals"></a>
 <a id="my-left-your-left"></a>
 
-Bare arrow-rose words are **compass** points (north-up map). Body-relative *left* / *right* / *ahead* / *back* use the same roots with an explicit **viewpoint**: whose facing counts as that map’s north.
-
-**Shape:** direction root left of mid-word **`x`**, viewpoint root right of **`x`**, then an ordinary [reference ending](reference-suffix.md):
-
-```
-PoS + DIR + x + ANCHOR + {-l|-m|-n|-r}
-```
-
-The left-hand root is the map point; the right-hand root is whose facing counts as north. (cue: **x** glues the rose to a face)
-
-```
-`jel vawalal hewezel.`
-
-gloss: `j-command` · `v-walk` · `h-west`
-
-*Walk west.*
-```
+English *left* / *right* / *ahead* / *back* can mean a compass heading (*west*) or a side of someone’s body (*Azawan’s left*). For the body reading, write the same arrow root, then mid-word **`x`**, then whose facing counts as north (the **viewpoint**), then an ordinary [reference ending](reference-suffix.md). You can then say *walk left* without meaning *walk west*.
 
 ```
 `jel vawalal hewezexazawan.`
@@ -260,7 +242,17 @@ gloss: `j-command` · `v-walk` · `h-west-x-grace@`
 *Walk left (Azawan’s left).*
 ```
 
-Speaker and listener anchors are the point when you mean *my left* / *your left*:
+Bare arrow words are compass points on a north-up map:
+
+```
+`jel vawalal hewezel.`
+
+gloss: `j-command` · `v-walk` · `h-west`
+
+*Walk west.*
+```
+
+Speaker and listener roots are the facing person when you mean *my left* / *your left*:
 
 ```
 `jel zedonen vawalal hewezexedonen.`
@@ -273,14 +265,16 @@ gloss: `j-command` · `z-listener` · `v-walk` · `h-west-x-listener`
 | Agalan | Use | English |
 |--------|-----|---------|
 | PoS | slot as usual (`/ɡ/` property, `/h/` path / manner, `/z/` `/d/` `/b/` side-region) | same slots as other content |
-| DIR | an arrow-rose root (table below) | *north* / *ahead*, … |
+| DIR | an arrow-rose root | *north* / *ahead*, … |
 | **`x`** | joins DIR to whose facing is north | facing person after **`x`** |
 | ANCHOR | whose facing is personal north: [special](pronouns.md#special-pronouns) **`ugobo`** / **`edone`** / **`aha`**, a name, or a content **-r** of a being that can face | *Azawan’s left*, *your left* |
 | Ending | ordinary reference-suffix senses on the **whole** direction word | kind / hedge / name / resume |
 
-Role compounds put a **vowel** left of **`x`**. Viewpoint laterals put a **direction root** left of **`x`** and a person (or facing being) on the right.
+**Compare with:** naming a doer from an event puts a **vowel** left of **`x`** ([role compounds](#role-compounds): `zaxuvugul`). Viewpoint laterals put a **direction root** left of **`x`** and a facing person on the right.
 
-#### Arrow rose (compass vs face)
+### Arrow rose (compass vs face)
+
+The examples above already used *west* / body *left*. The rest of the rose is the same pattern: bare = compass; **`x`** + facing person = that point on their body map.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -295,17 +289,9 @@ Role compounds put a **vowel** left of **`x`**. Viewpoint laterals put a **direc
 
 Indoor headings may follow a local map (building north). Prefer a name or listener frame when you mean someone’s body rose (`…xazawan`, `…xedonen`).
 
-Published **metaphors** of the same roots stay bare (`ezaza` *progress* / discourse **`xezazal`**; `eweze` *return*; `ozohe` *retreat*). Generic heading **`ogomo`** stays *compass* / *direction*. Facing-relative ahead / back is **`onoho` / `ohuhu` × ANCHOR**.
+### Gravity (`uba` / `odowo`)
 
-#### Gravity (`uba` / `odowo`)
-
-Skyward / toward the pull is a **shared** frame, not a face:
-
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| **`uba`** | skyward, shared gravity frame | *up* / *rise* | ⏫ *double-up*: away from the pull |
-| **`odowo`** | toward the pull, shared gravity frame | *down* / *fall* | ⏬ *double-down*: toward the pull |
-| **`evere`** | the vertical axis | *up–down axis* | ↕️ *up-down*: the axis only |
+English *up* / *down* here follows the pull of gravity, not a face. Write **`uba`** (skyward) or **`odowo`** (toward the pull) as ordinary content words, with no **`x`** + facing person. Everyone shares that frame.
 
 ```
 `jel vawalal habal.`
@@ -323,7 +309,25 @@ gloss: `j-up`
 *Up!*
 ```
 
-#### Viewpoint vs landmark
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`uba`** | skyward, shared gravity frame | *up* / *rise* | ⏫ *double-up*: away from the pull |
+| **`odowo`** | toward the pull, shared gravity frame | *down* / *fall* | ⏬ *double-down*: toward the pull |
+| **`evere`** | the vertical axis | *up–down axis* | ↕️ *up-down*: the axis only |
+
+### Viewpoint vs landmark
+
+English *on Azawan’s left of the tree* needs both a facing person and a landmark. Put the facing person after **`x`**; put the tree, door, or wall in `/b/`. `/b/` is the landmark, not whose left.
+
+```
+`zabogol gewezexazawan berel.`
+
+gloss: `z-book` · `g-west-x-grace@` · `b-tree`
+
+*The book is on Azawan’s left of the tree.*
+```
+
+Bare compass + `/b/` is a region on that heading of the landmark (`gewezel berel` *west of the tree*).
 
 | Agalan | Use | English |
 |--------|-----|---------|
@@ -331,9 +335,9 @@ gloss: `j-up`
 | **`DIR x ANCHOR`** | that point on **ANCHOR’s** facing rose | `gewezexedonen` *listener-left* |
 | **complex `/ɡ/` + `/b/`** | region on a side **of a landmark** | `gewezexazawan berel` *on Azawan’s-left of the tree* |
 
-The **`/b/`** argument is the landmark, not the viewpoint. Put the facing being after **`x`**; put the tree / door / wall in `/b/` when you need both. Bare compass + `/b/` is a region on that heading of the landmark (`gewezel berel` *west of the tree*).
+### Endings and resume
 
-#### Endings and resume
+Direction words take the same four [reference endings](reference-suffix.md) as other content words, on the **whole** heading.
 
 | Agalan | Use | English |
 |--------|-----|---------|
@@ -350,7 +354,6 @@ The **`/b/`** argument is the landmark, not the viewpoint. Put the facing being 
 | `gewezexugobon` | *my left* (speaker facing) |
 | `gewezexahan` | *our left* (shared facing) |
 | `gabal` / `habal` | gravity *up* |
-| `xezazal` | discourse *therefore* (*progress*) |
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -476,6 +479,30 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 ::: details Show answer
 *The house on my left.*
 :::
+
+## Advanced
+<a id="advanced"></a>
+
+### Arrow roots as talk-moves
+
+When *east* / *west* / *southwest* name a move in the talk, not a map point, write the published root **bare** (no **`x`** + facing person). Generic heading is **`ogomo`** (*direction*). Facing-relative ahead / back still uses **`onoho` / `ohuhu` × ANCHOR**.
+
+```
+`zazawan vawalal. xezazal zululon vurunul.`
+
+gloss: `z-grace@` · `v-walk` · `x-east` · `z-courage@` · `v-run`
+
+*Azawan walks. Therefore Ululon runs.*
+```
+
+| Agalan | Use | English |
+|--------|-----|---------|
+| **`ezaza`** (bare) | talk moves on | *progress*; discourse **`xezazal`** *therefore* |
+| **`eweze`** (bare) | talk comes back | *return* |
+| **`ozohe`** (bare) | talk pulls back | *retreat* |
+| **`ogomo`** | heading in general | *compass* / *direction* |
+
+**For *therefore*, use:** the [linker](core.md#sentence-linkers) **`xezazal`**. Body *left* / *right* still needs **`DIR x ANCHOR`**.
 
 ## See also
 

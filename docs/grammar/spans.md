@@ -295,30 +295,38 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 ## Intermediate
 <a id="intermediate"></a>
 
-Span fences are **pronounceable**: every bracket has a spoken word shape.
-
 ### Spoken word shape
 <a id="shape"></a>
+
+Beginner writing already packages a quote, mention, aside, or blob in brackets. Speech still has to say which slot the chunk fills, what kind of span it is, how far the open runs, and how faithful the wording is. The open is one word: role letter, then TYPE vowel, then mid-word **`x`**, then EDGE vowel, then the ending. That word stands where writing had `d[` or `h(`; a multi-token open still needs a close word later.
+
+```
+`zazawan daxol hi vezehel.`
+
+gloss: `z-grace@` · `d-cite.atomic` · `hi` · `v-tell`
+
+*Azawan said “hi.”*
+```
 
 ```text
 {PoS}{TYPE}x{EDGE}{ENDING}
 ```
 
-| Piece | Values | Job |
+| Piece | Values | Use |
 |-------|--------|-----|
 | **PoS** | `z` `d` `b` `v` `g` `w` `h` `j` `x` | slot the whole span fills |
 | **TYPE** | **a** cite · **e** aside · **o** mention · **u** opaque | span kind |
 | **`x`** | mid-word joiner | marks a span-fence form |
-| **EDGE** | **a** · **e** · **o** · **u** | extent: how far an open runs |
+| **EDGE** | **a** · **e** · **o** · **u** | how far an open runs |
 | **ENDING** | **-l** exact · **-m** paraphrase · **-n** proper · **-r** resume | fidelity, titled designation, or span resume |
 
-Example: **`daxal`** = `d` + `a` + `x` + `a` + `l` → open exact multi-token cite as direct object (needs close).
+**`daxal`** is `d` + `a` + `x` + `a` + `l`: open an exact multi-token cite as direct object (needs close).
 
 ### TYPE (vowels)
 <a id="type"></a>
 <a id="vowels"></a>
 
-TYPE uses **a** / **e** / **o** / **u**.
+Beginner already used square, round, curly, and angle brackets for cite, aside, mention, and opaque. Speech puts that choice in the vowel **before** `x`.
 
 | Agalan | Use | English | Cue |
 |--------|------|---------|-----|
@@ -327,26 +335,36 @@ TYPE uses **a** / **e** / **o** / **u**.
 | **o** | **mention** (`{` … `}`); with **-n**, named unit | the word or form itself | **o** ≈ one (the form as one object) |
 | **u** | **opaque** (`<` … `>`); interior is not native Agalan | foreign / code / raw blob | **u** ≈ undo (not native Agalan) |
 
-A native office **handle** refers with ordinary **-n** (`zabogon`): [named handles](reference-suffix.md#named-handles). Mention `{abogo}` is that **form**; opaque / loan is a **foreign** acronym’s surface (`z<FBI>n`).
+**Compare with:** a native office name uses ordinary **-n** (`zabogon`) — [named handles](reference-suffix.md#named-handles). Mention `{abogo}` is that **form**; opaque / loan is a **foreign** acronym’s surface (`z<FBI>n`).
 
 ### EDGE (extent)
 <a id="edge"></a>
 
-The vowel **after** `x` is **EDGE**: how far the open runs.
+A pair of brackets can wrap one token or many, run to the end of the clause, or hold nothing. In speech, the vowel **after** `x` is **EDGE**: it says whether the open waits for an explicit close, ends at the next turn or clause join, takes exactly one following token, or has no interior.
+
+```
+`zululon daxal hi zazawan xuxul vezehel.`
+
+gloss: `z-courage@` · `d-cite.multi` · `hi` · `z-grace@` · `x-close` · `v-tell`
+
+*Ululon said “hi Azawan.”*
+```
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **a** | **multi-token open** — push a stack frame until explicit close (default) | `d[…]` … `]` (needs close) | **a** ≈ add (push more tokens) |
-| **e** | **clause-scoped** — auto-pop before the next speech-act `/j/` or clause-level `/x/` join (**complete**) | `d[…` run to clause end (no close) | **e** ≈ order (this clause only) |
+| **a** | **multi-token open** — stays open until an explicit close (default) | `d[…]` … `]` (needs close) | **a** ≈ add (push more tokens) |
+| **e** | **clause-scoped** — ends before the next speech-act `/j/` or clause-level `/x/` join | `d[…` run to clause end (no close) | **e** ≈ order (this clause only) |
 | **o** | **atomic** — exactly **one** following token | `d[uzunu]`, `d<sushi>` | **o** ≈ one |
 | **u** | **empty / redacted** — no interior; also **resume** **-r** | `d[]`, `d[=]` | **u** ≈ undo (nothing inside) |
 
-**Anaphor `-r`** always uses EDGE **`u`** in the spoken template (`daxur`).
+Resume **-r** always uses EDGE **`u`** (`daxur`).
 
 EDGE **`a`** / **`e`** / **`o`** take **-l** / **-m** / **-n**. EDGE **`u`** takes exact **-l** (`daxul`) or resume **-r** (`daxur`).
 
 ### Endings on opens and span pronouns
 <a id="endings"></a>
+
+Beginner already used a bare open, **`~`**, **`@`**, and **`[=]`**. Speech puts the same jobs on **-l** / **-m** / **-n** / **-r**.
 
 | Agalan | Use | English | Cue |
 |--------|---------|---------|-----|
@@ -355,15 +373,17 @@ EDGE **`a`** / **`e`** / **`o`** take **-l** / **-m** / **-n**. EDGE **`u`** tak
 | **-n** | **proper** — titled / conventional designation of the **whole span** | **`@`** after the role letter (`d@[…]`) | **-n** names the chunk |
 | **-r** | **resume** — the **most recent span of this TYPE**; PoS = role **now** | `d[=]`, `h(=)`, `z{=}`, … | **-r** points back |
 
-Hedged proper (`@~`) is written **`d@[…]`** only (spoken as the **proper** open with uncertain tonality). **`@`** / **`~`** do not combine with resume **-r**.
+Hedged proper (`@~`) is written **`d@[…]`** only (spoken as the **proper** open with uncertain tone). **`@`** / **`~`** do not combine with resume **-r**.
 
-**-r** resumes a prior span ([pronouns.md](pronouns.md)). `daxur` = *that (cite)* as object, matching the most recent **cite** (TYPE **a**). `hexur` / `h(=)` = *that (aside)*. The resume’s role letter need not match the antecedent open’s (`zaxur` = that cite as subject). No interior; no close (EDGE **`u`**).
+**-r** resumes a prior span ([pronouns.md](pronouns.md)). `daxur` is *that (cite)* as object, matching the most recent **cite** (TYPE **a**). `hexur` / `h(=)` is *that (aside)*. The resume’s role letter need not match the earlier open’s (`zaxur` = that cite as subject). No interior; no close (EDGE **`u`**).
 
-### Writing ↔ speech map (core)
+### Writing ↔ speech map
+
+Beginner brackets map to these spoken opens and closes.
 
 | Writing | Speech (object slot) | Notes |
 |---------|----------------------|-------|
-| `d[…]` | `daxal` … `xuxul` | exact multi-token cite (EDGE **a**); complete close |
+| `d[…]` | `daxal` … `xuxul` | exact multi-token cite (EDGE **a**); matching close |
 | `d~[…]` | `daxam` … `xuxul` | paraphrased multi-token cite |
 | `d@[…]` | `daxan` … `xuxul` | proper multi-token cite; also spelling of hedged proper |
 | `d{…}` / `d~{…}` / `d@{…}` | `doxal` / `doxam` / `doxan` … `xuxul` | mention |
@@ -377,19 +397,27 @@ Hedged proper (`@~`) is written **`d@[…]`** only (spoken as the **proper** ope
 | `d[]` | `daxul` | empty / redacted (EDGE **u**) |
 | `d[=]` | `daxur` | resume (EDGE **u**) |
 
-Close does not repeat PoS, TYPE, EDGE, or open fidelity. Explicit close for EDGE **a**: **`xuxul`** (complete). Editorial / close-all live in Advanced.
+The close does not repeat PoS, TYPE, EDGE, or open fidelity. Explicit close for EDGE **a** is **`xuxul`**.
 
 ### Nesting
 <a id="nesting"></a>
 
-Typed span fences nest freely. Each multi-token open pushes; **`xuxul`** pops the innermost (complete). Atomic and resume do not nest-push. **Scope islands** (`^ … ^`) are a single layer: use a typed span when you need nested packaging.
+When one packaged chunk sits inside another (a quote that contains a parenthetical, or a cite wrapping a mention), each typed fence nests. A multi-token open starts a layer; **`xuxul`** closes the innermost layer. Atomic opens and resumes do not start a new layer. **`@`** / **`~`** apply only to the immediately following open.
 
-Examples: `d[ h(…) ]`, `d[ z{…} ]`, `d~[ d<…> ]`. **`@`** / **`~`** apply only to the immediately following open.
+```
+`zazawan d[ h(huzumum) hi ] vezehel.`
+
+gloss: `z-grace@` · `d-cite` · `h-aside` · `h-happy~` · `hi` · `v-tell`
+
+*Azawan said “hi” (happily).*
+```
+
+The same nest works as `d[ z{…} ]` or `d~[ d<…> ]`.
 
 ### Scope islands
 <a id="scope-islands"></a>
 
-**Scope islands** mark a multi-word chunk so an **inside binder** can target that chunk. Writing **`^ … ^`**. In speech you only hear a pause and one tight phrase: there is no spoken open or close word. The edges are only grouping marks, like parentheses; the inside binder is the function.
+Sometimes *maybe* or a join should apply only to a multi-word chunk, not the whole clause. Writing marks that chunk with **`^ … ^`**. Speech has no open or close word for those edges: you hear a pause and one tight phrase. The binder **inside** does the work.
 
 ```
 `zazawan ^ h<maybe>l zodogol garedel ^ vejel.`
@@ -399,20 +427,20 @@ gloss: `z-grace@` · `^` · `h-maybe` · `z-dog` · `g-red` · `^` · `v-see`
 *Azawan saw maybe the red dog* (*maybe* targets that chunk).
 ```
 
-**Rules:**
+**Compare with:** quoting, asides, mentions, and opaque blobs use typed [span fences](#writing) (`d[…]`, `h(…)`). Islands only group so a binder inside can target that chunk.
 
-- No role letter on the edges (typed fences like `d[…]` already have one).
+- No role letter on the edges.
 - **One island per clause.** Islands do not nest.
 - Empty `^^` has no reading.
 - **Binder required:** at least one scope-taking `/h/` and/or a [join](coordination.md#scope-islands-join) particle **inside**.
 - Prefer spaces inside: `^ h<maybe>l zodogol garedel ^`.
 
-| Binder | Job inside the island |
+| Binder | Use inside the island |
 |--------|------------------------|
 | Scope-taking **`/h/`** | frames that **chunk** (prefer first in the island) |
-| Prefixed **join** | lookback-absorbs **only** matching-role material **inside** — [scope islands](coordination.md#scope-islands-join) |
+| Prefixed **join** | joins **only** matching-role material **inside** — [scope islands](coordination.md#scope-islands-join) |
 
-`/h/` and a join may share one island (`^ h<maybe>l zazawan zululon zam ^`). **`/w/`** still only frames the previous `/ɡ/`.
+`/h/` and a join may share one island (`^ h<maybe>l zazawan zululon zam ^`).
 
 | Placement | Reading |
 |-----------|---------|
@@ -430,13 +458,6 @@ gloss: `z-grace@` · `^` · `z-courage@` · `z-and` · `^` · `z-and.open` · `v
 ```
 
 **Speech:** brief reset into the island, one tight phrase, boundary on the last island stress. In singing, use an ordinary phrase bow.
-
-| Need | Use |
-|------|-----|
-| Nested packaging / wording fidelity / opaque | typed [span fences](#writing) |
-| Whole-clause soft assert | **`jam`** — [speech act](core.md#speech-act) |
-| Single-adjective frame | `/w/` on that `/ɡ/` |
-| Join over only part of a same-slot stretch | put that join **inside** `^ … ^` |
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -589,12 +610,22 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 ### Close forms (complete / editorial / close-all)
 
+You already close a multi-token span with **`xuxul`**, the spoken match for `]` / `}` / `)` / `>`. Two more close words: **`xuxur`** keeps the wording as written but marks that the span is cut off, trails off, or is defective; **`xuxum`** closes every still-open span at once.
+
+```
+`zazawan daxal hi xuxur vezehel.`
+
+gloss: `z-grace@` · `d-cite.multi` · `hi` · `x-close.editorial` · `v-tell`
+
+*Azawan said “hi…”*
+```
+
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`xuxul`** | pop **one** — **complete** | matching closer `]` / `}` / `)` / `>` | **-l** exact: the span closes whole |
-| **`xuxur`** | pop **one** — **editorial** (wording kept as written under an editorial mark: cut off, trail off, or defect noted) | `#]` / `#}` / `#)` / `#>` | **-r** resume: the wording stops short; resume may pick up |
-| **`xuxum`** | pop **all** open spans | optional close-all mark `\|` | **-m** soft: sweep everything |
-| **`xuxur`** + **`xuxum`** | editorial innermost, then pop all | `#\|` | |
+| **`xuxul`** | close **one** span, whole | matching closer `]` / `}` / `)` / `>` | **-l** exact: the span closes whole |
+| **`xuxur`** | close **one** — **editorial** (wording kept as written: cut off, trail off, or defect noted) | `#]` / `#}` / `#)` / `#>` | **-r** resume: the wording stops short; resume may pick up |
+| **`xuxum`** | close **all** open spans | optional close-all mark `\|` | **-m** soft: sweep everything |
+| **`xuxur`** + **`xuxum`** | editorial innermost, then close all | `#\|` | |
 
 ```text
 xuxul  =  x + u + x + u + l
@@ -602,21 +633,21 @@ xuxur  =  x + u + x + u + r
 xuxum  =  x + u + x + u + m
 ```
 
-Editorial spans **are committed** and enter resume history (`d[=]` / `daxur` may resume them). Combined `#\|` is writing-only shorthand for two spoken closes; bare `xuxur` pops one (editorial). Write editorial first, then close-all: `#\|`.
+An editorial span still counts as said: resume (`d[=]` / `daxur`) may point back to it. Combined `#\|` is two spoken closes in writing; write editorial first, then close-all. Bare `xuxur` closes one (editorial).
 
-Clause joins that negate use a different shape (`xul` / `xum`). Empty or resumed **cite opens** use `/d/` (`daxul` empty/redacted; `daxur` that cite). Closes are **`xuxul`** / **`xuxur`**.
+**Not the same job as:** a negating clause join (`xul` / `xum`). Empty or resumed **cite opens** are `/d/` (`daxul` redacted; `daxur` that cite). Closes are **`xuxul`** / **`xuxur`**.
 
 | Writing | Speech | Notes |
 |---------|--------|-------|
 | `d[…#]` | `daxal` … `xuxur` | editorial close |
 | `d[…#\|]` | `daxal` … `xuxur xuxum` | editorial + close-all |
 
-Prefer EDGE **`a`** + **`xuxur`** for cut-off cites. EDGE **`e`** auto-pop is **complete**.
+For a cut-off cite, use EDGE **`a`** + **`xuxur`**. EDGE **`e`** already ends at the clause with a whole close.
 
 ### Spoken inventory
 <a id="inventory"></a>
 
-#### Opens and related (PoS shown as `…`; EDGE **a** unless noted)
+The rest of the spoken open map (PoS shown as `…`; EDGE **a** unless noted).
 
 | TYPE | exact multi **-l** | paraphrase **-m** | proper **-n** | resume **-r** (EDGE **u**) |
 |------|--------------------|-------------------|---------------|------------------------------|
@@ -627,22 +658,18 @@ Prefer EDGE **`a`** + **`xuxur`** for cut-off cites. EDGE **`e`** auto-pop is **
 
 Atomic (EDGE **o**): `…axol` / `…axom` / `…axon` (cite examples); aside atomic **`hexol`**. Clause-scoped (EDGE **e**): `…axel` / `…axem` / `…axen`. Empty exact (EDGE **u**): `…axul` / `hexul` / `…oxul` / `…uxul`. Aside **opens** use `/h/`; resume may recast the aside into another slot (`dexur`).
 
-#### Closes
-
-| Form | Job |
+| Form | Use |
 |------|-----|
-| `xuxul` | pop one — complete |
-| `xuxur` | pop one — editorial |
-| `xuxum` | pop all |
-| `xuxur xuxum` | editorial + pop all (writing `#\|`) |
+| `xuxul` | close one — whole |
+| `xuxur` | close one — editorial |
+| `xuxum` | close all |
+| `xuxur xuxum` | editorial + close all (writing `#\|`) |
 
 ### Literal content (fence words / fence marks)
 <a id="literal-content"></a>
 <a id="escape"></a>
 
-When a span-marker word or a fence glyph (`[` / `]` / `{` / `}` / `(` / `)` / `<` / `>` / `=` / `|` / `#` / `^`) must appear **as content** (not ordinary nesting), wrap that token in **atomic opaque**. Writing and speech use the same vehicle.
-
-The outer span’s wording is the opaque **interior** (the wrapper is packaging, not extra cited words).
+When a span-marker word or a fence glyph (`[` / `]` / `{` / `}` / `(` / `)` / `<` / `>` / `=` / `|` / `#` / `^`) must appear **as content**, wrap that token in **atomic opaque**. Writing and speech use the same vehicle. The outer span’s wording is the opaque **interior** (the wrapper is packaging, not extra cited words).
 
 ```text
 d[ he typed d<]> then left ]
@@ -657,15 +684,15 @@ Speech for a fence **word**:
 daxal duxol xuxul xuxul
 ```
 
-`d[ item d<#> ]` is a **complete** cite whose last content character is `#` (a bare `#]` would be editorial close). A hyphen before a closer is ordinary content.
+`d[ item d<#> ]` is a whole cite whose last content character is `#` (a bare `#]` would be editorial close). A hyphen before a closer is ordinary content.
 
-Writing opaque `d<…>` closes on the first `>`. If the blob **contains** `>`, write the spoken opaque (EDGE **a** + **`xuxul`**):
+Writing opaque `d<…>` closes on the first `>`. If the blob **contains** `>`, use the spoken opaque (EDGE **a** + **`xuxul`**):
 
 ```text
 duxal code > 1 xuxul
 ```
 
-While scanning a span interior, `#` immediately before a closer or close-all is the editorial mark; `|` is close-all. Number words still use `#` for ordinals ([numbers.md](numbers.md)). That `#` is a span closer only when it sits immediately before `]` / `}` / `)` / `>` / `|`.
+**For *ordinals*, use:** [number words](numbers.md) with `#`. Inside a span, `#` is an editorial closer only when it sits immediately before `]` / `}` / `)` / `>` / `|`. `|` is close-all.
 
 ### Translation practice
 <a id="translation-practice-advanced"></a>

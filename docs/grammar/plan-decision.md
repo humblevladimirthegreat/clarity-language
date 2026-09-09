@@ -164,32 +164,13 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 ## Intermediate
 <a id="intermediate"></a>
 
-This stage is a **revisable pick** (**DECISION**), plus forecast source on **PREDICT**.
-
-### Forecast source
-<a id="predict-evidentiality"></a>
-
-Stack ordinary [evidentiality](commentary.md#evidentiality) with **PREDICT** when you mark **how** you forecast (pattern, inference, and so on).
-
-```
-`helezom habawam vanunul.`
-
-gloss: `h-PREDICT` · `h-PATTERN` · `v-rain`
-
-*Forecast from pattern: it rains.*
-```
-
-Stack **DECISION** after **PLAN** when you also mark pick firmness (`howoral … hegegel`).
-
 ### Decision (revisability)
 <a id="decision"></a>
 <a id="decision-mood"></a>
 
-Mark **how revisable a pick is** (temporary, open, or settled) with one closed mood root. English *decide* / *I've decided* / *final decision* smuggles firmness into the verb; Agalan puts firmness on the ending (same map as unmet [changeability](values.md#value-changeability)).
+English *decide* / *I've decided* / *final decision* folds **how locked the pick is** into the verb. Agalan uses one closed mood root instead: spell **`egege`** as floating `/h/` (**`hegege`** plus an ending), then an ordinary content verb. The ending is how revisable the pick is (still open, settled, or only for now), so you can keep the same content verb and change only that ending. Prefer floating `/h/`; use `/w/` only when the mood frames a preceding `/ɡ/` adjective. (cue: ✅ *check*: a checkmark confirms a pick)
 
-Spell it as floating `/h/`: **`hegege`** plus an ending, then an ordinary content verb (use `/w/` when the mood frames only a preceding `/ɡ/` adjective). Prefer floating `/h/`. The ending is [changeability](#decision-changeability). (cue: ✅ *check*: a checkmark confirms a pick)
-
-Ordinary content still available (`zegegel` *a checkmark*; `vegegel` *to check / tick*).
+Ordinary content is still available (`zegegel` *a checkmark*; `vegegel` *to check / tick*).
 
 ```
 `zululon hegegem vuzunul.`
@@ -199,13 +180,20 @@ gloss: `z-courage@` · `h-DECISION-modifiable` · `v-sing`
 *Ululon has decided to sing, still open to revision.* (default)
 ```
 
-```
-`zuhubun hegegel velebel.`
+**Not the same job as:** [PLAN](#plan-predict) (how fully drawn the course is). This mood marks how revisable the pick is.
 
-gloss: `z-beauty@` · `h-DECISION-irreversible` · `v-sleep`
+#### Endings — changeability
+<a id="decision-changeability"></a>
 
-*Uhubun has decided for good to sleep.*
-```
+On **`egege`**, **-l / -m / -r** match unmet [changeability](values.md#value-changeability): irreversible / modifiable / temporary. **-n** is ordinary [proper](reference-suffix.md#proper-name--n). If you do not know how locked the pick is, use **-m**.
+
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`hegegel`** | **irreversible** | settled / final as far as you can tell | **-l** hard / locked |
+| **`hegegem`** | **modifiable** (soft default if unknown) | open to revision | **-m** open to change |
+| **`hegeger`** | **temporary** | pick for this moment; usually revisable later | **-r** light / this-moment only |
+
+You can stack this mood after [PLAN](#plan-predict) when the clause needs both map grain and pick firmness:
 
 ```
 `zazawan howoral hegegel vawalal.`
@@ -215,22 +203,20 @@ gloss: `z-grace@` · `h-PLAN-itinerary` · `h-DECISION-irreversible` · `v-walk`
 *Azawan’s itinerary is to walk, and the pick is settled.*
 ```
 
-Use **DECISION** when the clause marks **pick firmness**.
+### Forecast source
+<a id="predict-evidentiality"></a>
 
-**Not the same job as:** [PLAN](#plan-predict) (map grain).
+When you mark **how** you forecast (a usual pattern, an inference, and so on), keep [PREDICT](#predict) and add an ordinary [evidentiality](commentary.md#evidentiality) `/h/` after it. The forecast mood still says what will happen in the world; the evidential says how you know.
 
-#### Endings — changeability
-<a id="decision-changeability"></a>
+```
+`helezom habawam vanunul.`
 
-On **`egege`**, **-l / -m / -r** match unmet [changeability](values.md#value-changeability): irreversible / modifiable / temporary. **-n** stays ordinary [proper](reference-suffix.md#proper-name--n).
+gloss: `h-PREDICT` · `h-PATTERN` · `v-rain`
 
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| **`hegegel`** | **irreversible** | settled / final as far as you can tell | **-l** hard / locked |
-| **`hegegem`** | **modifiable** (soft default if unknown) | open to revision | **-m** open to change |
-| **`hegeger`** | **temporary** | pick for this moment; usually revisable later | **-r** light / this-moment only |
+*Forecast from pattern: it rains.*
+```
 
-Always pick an ending on **DECISION**. If you do not know how locked the pick is, use **-m**. Deferral stays ordinary packaging.
+**Compare with:** a pattern claim about *now* uses [evidentiality](commentary.md#evidentiality) on the content verb alone. Add **PREDICT** when the claim is a world forecast.
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>

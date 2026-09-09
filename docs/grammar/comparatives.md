@@ -228,9 +228,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 ### Full comparative arity
 <a id="comparative-arity"></a>
 
-You already close with **`e`**. The same shared-scale pattern works with exclusive rank **`oe`**, reverse rank **`ue`**, and with **zero** names (standalone) or **one** name (single-item). Use **`oe`** when the ladder is pick-one along the scale. Use **`ue`** (or reverse the name order under **`e`**) for *less … than*. **`ae`** stays *as … as*. (cue: **`o`** ≈ one / exclusive; **`u`** ≈ undo — *less … than*)
-
-A rank join with **no** shared scale `/ɡ/` is ordinary preference ranking (who comes first as an alternative). Add the shared adjective when you mean *more ADJ than*.
+Beginner already used two names plus **`zel`** (*more … than*) and one name (*the …-est*). The same shared-scale pattern also uses exclusive rank **`oe`**, reverse rank **`ue`** (*less … than* / *the least*), and **zero** names.
 
 | Agalan | Use | English | Cue |
 |---------|-----|---------|-----|
@@ -252,22 +250,31 @@ A rank join with **no** shared scale `/ɡ/` is ordinary preference ranking (who 
 | `zer gomonam` | *whatever ranks highest on challenging* (resume of the top rank) |
 | `zazawan zululon zer gomonam` | *whichever of Azawan or Ululon ranks higher on challenging* |
 
-Shared `/w/` on a ranked adjective list is shared *degree* over those properties. For *more ADJ than* on people or things, keep the rank fence on `/z/` `/d/` `/b/` and put the scale on shared `/ɡ/`.
+**Compare with:** ranking names with no shared adjective is ordinary preference (who comes first as an alternative). Add the shared `/ɡ/` when you mean *more ADJ than*.
 
-When a later verb needs one comparee as its subject, keep that subject ordinary and put the comparative claim in another slot or sentence.
+Shared `/w/` on a ranked adjective list is shared *degree* over those properties. For *more ADJ than* on people or things, the rank fence sits on `/z/` `/d/` `/b/` and the scale sits on shared `/ɡ/`. When a later verb needs one comparee as its subject, that subject is ordinary; the comparative claim sits in another slot or sentence.
 
 ### Distributive *both are ADJ*
 <a id="distributive-both"></a>
 
-Use set join **`a`** plus a shared singular scale when you mean *both are ADJ* (each has the property). That is inventory, not a ranking and not *as … as*. (cue: **`a`** ≈ add — `zal` gives the adjective to each; `zael` is the same height)
+English *both are challenging* (or *Azawan and Ululon are challenging*) says **each** has the quality. It does not rank them and does not say they match in height. Write the names, then set join **`a`** (`zal`), then a shared singular adjective (`/ɡ/`). Each name gets that adjective.
 
-Collective *ADJ as a unit* uses shared `/ɡ/`…**-sh** under **`a`**: [plurality](plurality.md#adjectives-g). Keep the scale adjective singular in comparative and equative shared slots.
+```
+`zazawan zululon zal gomonam.`
 
-Equative **`ae`** needs **two or more** comparees. Single-item or standalone **`ae`** plus a shared scale keeps the ordinary single-item / standalone **`ae`** readings. **`ae`** with no shared scale is equal rank / a tie among the names.
+gloss: `z-grace@` · `z-courage@` · `z-and` · `g-challenging`
+
+*Azawan and Ululon are challenging.*
+```
+
+**Compare with:** *as challenging as* uses equality **`ae`** (`zael`). *More challenging than* uses rank **`e`**.
+
+**Related form:** *ADJ as a unit* uses shared `/ɡ/`…**-sh** under **`a`**: [plurality](plurality.md#adjectives-g). Shared comparative and equative adjectives are singular.
+
+Equality **`ae`** with a shared scale needs **two or more** names. **`ae`** with no shared scale is a tie among the names (equal rank).
 
 | Example | Reading |
 |---------|---------|
-| `zazawan zululon zal gomonam` | *Azawan and Ululon are challenging* (each is; they need not be equal) |
 | `zazawan zululon zuhubun zael gomonam` | *Azawan, Ululon, and Uhubun are equally challenging* |
 | `zodogol zagadal zael gomonam` | *the dog is as challenging as the cat* |
 
@@ -275,14 +282,17 @@ Equative **`ae`** needs **two or more** comparees. Single-item or standalone **`
 <a id="measured-differentials"></a>
 <a id="measure-gap"></a>
 
-*Two meters more challenging* is still a comparative (rank join + shared scale). Spell the gap as a **measure noun** (`/b/`) on the scale adjective: the **unit** is that `/b/` noun, and the **amount** is `/ɡ/` on the unit. See [measure phrases](numbers-applied.md#measure-phrases) (bare unit `urule` *measurement* = short meter; titled `burulexrawon` when you need the full word).
+English *two meters more challenging* still ranks two people on one quality, and it also names **how large the gap is**. Keep the rank join and the shared scale adjective. After that adjective, write a **measure noun** (`/b/`): that noun is the **unit**, and `/ɡ/` on the unit is the **amount**. Bare unit `urule` *measurement* is the short meter; titled `burulexrawon` is the full word ([measure phrases](numbers-applied.md#measure-phrases)).
 
-Counted gaps use that one `/b/` on the scale. Vague *much* / *slightly* stays shared `/w/`.
+```
+`zazawan zululon zel gomonam burulel g+2.`
 
-| Example | Reading |
-|---------|---------|
-| `zazawan zululon zel gomonam burulel g+2` | *Azawan is two meters more challenging than Ululon* |
-| `zazawan zululon zel gomonam wogegal` | *Azawan is much more challenging than Ululon* (vague degree) |
+gloss: `z-grace@` · `z-courage@` · `z-rank/more` · `g-challenging` · `b-measurement` · `g-+2`
+
+*Azawan is two meters more challenging than Ululon.*
+```
+
+**Related form:** vague *much* / *slightly* is shared `/w/` after the scale adjective (`wogegal`), not a counted `/b/`.
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -408,54 +418,39 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 <a id="judgment-benchmarks"></a>
 <a id="worse-than"></a>
 
-Bare *bad* / *terrible* can hide an unfair or unspoken standard. Keep the ordinary [comparative](#comparatives) fence and put the standard in the **than**-slot as a **named comparee**.
-
-A personal bar on any named person uses [numeric derivation](numeric-derivation.md#numeric-derivation) (digit morph **`+1`**). **Everyone** as a named class reuses bare named **`zuan`** ([coordination](coordination.md#standalone-phrase)).
-
-#### Recipe
-
-Prefer reverse ranked **`ue`** on a **positive / neutral** scale:
+English *worse than Average* (or *Typical*, *Professional*, *my bar*) ranks someone against a **named standard**, not against another person you already introduced. Use reverse rank **`ue`** on a positive or neutral scale: the judged name first, the named bar second (**-n**), then the shared adjective. The judged name sits **below** that bar.
 
 ```
-z<JUDGED>l z<BENCHMARK>n zuel g<SCALE>l
+`zazawan zalaban zuel guzunul.`
+
+gloss: `z-grace@` · `z-expertise@` · `z-rank/less` · `g-sing`
+
+*Azawan is worse at singing than Professional.*
 ```
 
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| **`ue`** (`zuel` / `zuem` / …) | reverse rank | *less … than* (judged below the benchmark) | **`u`** ≈ undo |
-| SHARED **`g<SCALE>`** | shared scale | *challenging*, *clear*, *happy*, … | |
-| first conjunct | who is judged | the comparee | |
-| second conjunct | named standard | the **benchmark** (**-n**; **`zuan`** is already bare named **`ua`**) | **-n** names the bar |
+Closed **-l** stands behind the ranking. Open **-m** (`zuem`) is soft *somewhat worse than…*. Exclusive **`oe`** is pick-one triage on the ladder. Prefer **`ue`** plus a positive scale for English-style *worse than*; forward **`e`** fits when the scale is already cost- or harm-oriented. The same fence works under `/d/` or `/b/` when the ranked group fills that slot.
 
-Closed **-l** stands behind the ranking. Open **-m** (`zuem`) is soft *somewhat worse than…*. Use exclusive **`oe`** when the ladder is triage. Forward **`e`** is fine when the scale is already cost- or harm-oriented; for English-style *worse than*, prefer **`ue` + positive scale**.
+A personal bar on a named person uses [numeric derivation](numeric-derivation.md#numeric-derivation) (digit morph **`+1`**). **`zuan`** names the class *Everyone* ([coordination](coordination.md#standalone-phrase)).
 
-The same fence works under `/d/` or `/b/` when the ranked group fills that slot.
-
-Put the benchmark in an NP slot on the fence (`/z/` `/d/` `/b/`), with **-n** (or bare named **`zuan`**).
-
-#### Closed benchmark comparees
-
-Six fixed standards. Ending stays **-n** (named reference-class standard).
-
-| Agalan | Use | English | Cue |
-|---------|-----|---------|-----|
-| **`zojun`** | named Average bar | *Average* (mean of the relevant population; *balance*) | ☯️ *yin-yang*: opposing halves, so a middle bar |
-| **`zahaman`** | named Typical bar | *Typical* (usual / modal case; *routine*) | 🐹 *hamster*: the usual wheel |
-| **`zugoboxrawon`** | speaker’s **normative** bar | *Mine* | 🎤 *microphone* + **`+1`**: the speaker’s primary bar ([speaker](pronouns.md#special-pronouns)) |
-| **`zuluden`** | named peer bar | *Social* (in-group; *community*) | 👥 *silhouettes*: people together |
-| **`zalaban`** | named expert bar | *Professional* (role standard; *expertise*) | 🥼 *lab-coat*: specialized work |
-| **`zuan`** | named universal class | *Everyone* | bare named **`ua`** |
+| Agalan | Use | English |
+|---------|-----|---------|
+| **`zojun`** | named Average bar | *Average* (mean of the relevant population) |
+| **`zahaman`** | named Typical bar | *Typical* (usual / modal case) |
+| **`zugoboxrawon`** | speaker’s **normative** bar | *Mine* |
+| **`zuluden`** | named peer bar | *Social* (in-group) |
+| **`zalaban`** | named expert bar | *Professional* (role standard) |
+| **`zuan`** | named universal class | *Everyone* |
 
 <a id="mine-vs-speaker"></a>
 
-**Mine vs speaker performance:** **`zugobon`** is where the speaker sits on the scale (current skill). **`zugoboxrawon`** is the bar the speaker applies. Soft personal standard: **`zugoboxrawom`**. Ordinary named people stay ordinary **-n** names: `zazawan zululon zuel g<SCALE>l`.
+**`zugobon`** is where the speaker sits on the scale (current skill). **`zugoboxrawon`** is the bar the speaker applies. Soft personal standard: **`zugoboxrawom`**. Ordinary people as bars are ordinary **-n** names (`zululon`).
 
-**Everyone** vs single-item reverse-superlative: `z<JUDGED>l zuel g<SCALE>l` is *the least … of all* in the group in play. **`zuan`** as comparee **names** the universal class. Prefer the benchmark when the point is “against everyone as a standard.” Standalone closed **`zual`** is ordinary *everything / everyone* in other slots.
+Single-item `zazawan zuel gomonam` is *the least challenging* in the group in play. **`zuan`** as the second name **names** the universal class as the bar. Standalone closed **`zual`** is ordinary *everything / everyone* in other slots.
 
 | Agalan | Reading |
 |---------|---------|
 | `zugobon zalaban zuel guzunul` | *worse than Professional* at singing |
-| `zebegum zojun zuem gagalam` | soft: draft is somewhat less clear than Average |
+| `zebegum zojun zuem gagalam` | soft: the draft is somewhat less clear than Average |
 | `zazawan zugoboxrawon zuel guzumum` | Azawan is less happy than **my personal standard** |
 | `zazawan zugobon zuel guzunul` | Azawan is less skilled at singing than **I am** (performance) |
 | `zugobon zuluden zuel gomonam` | less challenging than Social |

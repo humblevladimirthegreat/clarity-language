@@ -9,11 +9,7 @@ Compose opaque emotion labels from value plus arousal plus locus, number brainst
 ### Emotion compose
 <a id="emotion-compose"></a>
 
-When an opaque English emotion word (*anxious*, *resentful*, *proud*) is doing **judgment or explanation** work, compose the take from pieces instead of one emotion label: a [value](values.md) on the situation, plus how activated the charge is, plus where you put it.
-
-Affect is **water**. **ACT** is tide dynamics (how much / how fast). **LOCUS** is vessel, transfer, or ambient field (where the water sits). Stack ACT + LOCUS as free `/h/` units (optional `/w/` on a preceding `/ɡ/`).
-
-**Recipe:** situation + **one value** + **one ACT** + **one LOCUS**.
+When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgment or explanation** work, name three pieces instead of one opaque label: a [value](values.md) on the situation, how activated the charge is, and where you put it. Stack those as free `/h/` units (optional `/w/` on a preceding `/ɡ/`): situation + **one value** + **one ACT** + **one LOCUS**. You can then say the take without smuggling a single emotion word.
 
 ```
 `zezehel wolozoxur hogegal hanedel.`
@@ -23,33 +19,26 @@ gloss: `z-dialogue` · `w-competence-unmet-temporary` · `h-HIGH` · `h-CIRCUM`
 *Anxious about the dialogue:* competence at stake for now; flood; room awash.
 ```
 
-#### Activation roots (ACT)
+Affect is **water**. **ACT** is tide dynamics (how much / how fast). **LOCUS** is vessel, transfer, or ambient field (where the water sits).
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`ogega`** | HIGH arousal | *flood / surge* | 🌊 *ocean-wave*: water in surge |
 | **`ejelo`** | MED arousal | *flow / drift* | 🪼 *jellyfish*: drifts with the current |
 | **`ozowo`** | LOW arousal | *stillness / slack* | 🌨️ *snow*: the landscape goes quiet |
-
-#### Locus roots (LOCUS)
-
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
 | **`abobo`** | INTERNAL locus | *held inside* | 🍼 *baby-bottle*: liquid stays in the vessel |
 | **`oruru`** | EXTERNAL locus | *directed at other people* | 🫗 *pour*: liquid goes onto someone else |
 | **`anede`** | CIRCUM locus | *on the situation* (shared / ambient field) | 🕯️ *candle*: light fills the room |
 
-The same roots stay ordinary content (`zogegal` *an ocean wave*; `vorurul` *to pour*). The special reading is the floating mood, especially `/h/`.
+Under `/z/` or `/v/` the same spelling is the ordinary noun or verb (`zogegal` *an ocean wave*; `vorurul` *to pour*). The compose reading is the floating `/h/` (or `/w/`) mood.
 
-**EXTERNAL** is one root (`oruru`). Scale the transfer with ACT:
+**EXTERNAL** is one root (`oruru`). Scale the transfer with ACT. INTERNAL and CIRCUM combine the same way; CIRCUM is a shared field.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`ogega`** + **`oruru`** | HIGH × EXTERNAL | *poured / surged onto them* | 🌊 *ocean-wave* onto 🫗 *pour*: flood directed at them |
 | **`ejelo`** + **`oruru`** | MED × EXTERNAL | *flowing toward them* | 🪼 *jellyfish* toward 🫗 *pour*: drift aimed at them |
 | **`ozowo`** + **`oruru`** | LOW × EXTERNAL | *pooling at them* | 🌨️ *snow* at 🫗 *pour*: slack water settled at their locus |
-
-Parallel INTERNAL / CIRCUM cues: *flood bottled* / *flow held* / *still in the vessel*; *room awash* / *undercurrent in the air* / *slack shared water*. Keep CIRCUM as a **shared field**, not a second bottle.
 
 | Agalan | English |
 |---------|---------|
@@ -58,33 +47,15 @@ Parallel INTERNAL / CIRCUM cues: *flood bottled* / *flow held* / *still in the v
 | `zebegum wolozoxam hogegal habobol` | *proud of the draft* (met competence, mental channel; flood bottled) |
 | `zememol wonogoxum hozowol horurul` | *resentful about the memo* (unmet relatedness; stillness pooling at them) |
 
-Raw feeling (contacting a sensation without judgment) may stay unlabeled. Full compose is for when an emotion word would have done evaluative work. [COMMENT](commentary.md#comment) frames a thought-take, not this water stack.
+Raw feeling (contacting a sensation without judgment) may go unlabeled. Full compose is for when an emotion word would have done evaluative work.
+
+**Compare with:** a thought-take uses [COMMENT](commentary.md#comment) (`odoho`). This stack is value + activation + locus.
 
 ### Numbered alternatives (problem / solution / goal)
 <a id="numbered-alternatives"></a>
 <a id="ideation"></a>
 
-When you brainstorm, **number the candidates** (*problem 1*, *solution 2*, *goal 3*) so the first frame does not look unique. Use ordinary lexicon nouns plus a free [ordinal](numbers.md) (`g#N`).
-
-Puzzle, then key, then goal-net:
-
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| **`uzebu`** | numbered-alternative problem | *problem* (something to fit / solve) | 🧩 *puzzle-piece*: pieces must fit |
-| **`agego`** | numbered-alternative solution | *solution* (what unlocks it) | 🔑 *key*: opens what was locked |
-| **`olala`** | numbered-alternative goal | *goal* (net you aim at) | 🥅 *goal*: the net you shoot for |
-
-The same roots stay ordinary content (`zuzebul` *a puzzle piece*; `vagegol` *to unlock`). The figurative jobs above are the numbered-alternative readings.
-
-**Recipe:** `zuzebul g#1` / `zagegol g#2` / `zolalal g#1`
-
-| Agalan | Use | English |
-|--------|-----|---------|
-| **`uzebu` / `agego` / `olala`** | candidate kind | *problem* / *solution* / *goal* |
-| free **`g#N`** | rank in **this** numbered-alternative series | *candidate N* |
-| soft **`g~#N`** | tentative ranking | *maybe candidate N* |
-
-Prefer at least **`g#1`**; often name a second candidate. Soft **-m** on the number when the order is tentative.
+When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*) so the first frame does not look unique. Use ordinary lexicon nouns plus a free [ordinal](numbers.md) (`g#N`). Prefer at least **`g#1`**, and often name a second candidate, so ranking itself marks that more than one frame is in play.
 
 ```
 `zazawan zagegol g#2 vezehel.`
@@ -94,14 +65,24 @@ gloss: `z-grace@` · `z-solution` · `g-second` · `v-tell`
 *Azawan names solution 2.*
 ```
 
-Bare *the problem* as the only numbered-alternative frame is grammatical and stylistically weak: numbering marks **multiple candidates**. Reframing the **same** situation is different wording of one frame, not a second digit. Discourse *point N:* is free **`x#N`** ([number as discourse](numbers.md#number-as-discourse-marker-by-marker)), a continue, not a problem noun. Digits are optional when these roots name a topic outside numbered alternatives (*the problem of free will*).
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`uzebu`** | numbered-alternative problem | *problem* (something to fit / solve) | 🧩 *puzzle-piece*: pieces must fit |
+| **`agego`** | numbered-alternative solution | *solution* (what unlocks it) | 🔑 *key*: opens what was locked |
+| **`olala`** | numbered-alternative goal | *goal* (net you aim at) | 🥅 *goal*: the net you shoot for |
+| free **`g#N`** | rank in **this** numbered-alternative series | *candidate N* | `#` = ordinal place |
+| soft **`g~#N`** | tentative ranking | *maybe candidate N* | **-m** leaves the order open |
+
+**Recipe:** `zuzebul g#1` / `zagegol g#2` / `zolalal g#1`
+
+Under other role letters the same spelling is ordinary content (`zuzebul` *a puzzle piece*; `vagegol` *to unlock`). Digits are optional when these roots name a topic outside numbered alternatives (*the problem of free will*). Reframing the **same** situation is different wording of one frame, not a second digit.
+
+**Compare with:** discourse *point N:* uses free **`x#N`** ([number as discourse](numbers.md#number-as-discourse-marker-by-marker)), a continue. Numbered alternatives are problem / solution / goal nouns plus **`g#N`**.
 
 ### Sense-form overlays
 <a id="sense-form"></a>
 
-Some published roots keep a **fixed special reading** under one part of speech. Spell that same published root plus ending. The PoS chooses the overlay: **`hogegal`** is HIGH arousal; **`zogegal`** is *an ocean wave*.
-
-**Shape:** published root + [reference ending](reference-suffix.md). Emotion ACT / LOCUS in the examples above take **-l**.
+Emotion compose already used **`hogegal`** (HIGH arousal) next to **`zogegal`** (*an ocean wave*). Some published roots keep a **fixed special reading** under one part of speech: spell that published root plus [reference ending](reference-suffix.md); the PoS chooses the overlay. Emotion ACT / LOCUS in the examples above take **-l**.
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -220,19 +201,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 <a id="universality"></a>
 <a id="universality-mood"></a>
 
-English *always* / *every* / *never* / *everyone* smuggle **how exceptionless** the claim is. Keep **domain** (*who / when*) on the [universal fences](coordination.md#universals-domains-generics) (`zual` / `hual` / …). Put the **universality mood** on closed `/h/` mood roots (optional `/w/` when scoped only to a preceding `/ɡ/`). Soft **-m** on the fence (`zuam` / `huam`) is open inventory, not universality.
-
-Universal claims are **weather reports**. Default climate is usual weather. Stronger universality moods name a different sky story.
-
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| **`ewono`** | COMMON (default climate) | *usually* (exceptions expected) | ⛅ *weather*: usual sky still allows a shower |
-| **`abulu`** | UNCOUNTERED (search) | *as far as checked* (no counterexample comes to mind) | 💊 *pill*: you take it to treat an ailment; the search found none |
-| **`araza`** | FORMAL | *by definition* / math / proof | ⭐ *star*: a charted constellation does not wander |
-| **`abele`** | NATURAL | *by natural necessity* (unsupported objects fall); stack ordinary [evidential](commentary.md#evidentiality) `/h/` | 🍎 *apple*: it falls because the world works that way |
-| **`ebebe`** | RULE | *under a named frame* (`hebebel begezel`) | 🌶️ *pepper*: heat that applies in that dish |
-
-When a universal or habitual claim needs a universality mood, use **COMMON** (`hewonol`) unless FORMAL, NATURAL, RULE, or UNCOUNTERED is the sky you mean. **`araza`** is definition or proof, not “socially preferred.” **`abulu`** is “nothing contrary came to mind”; **`zuam`** is “this list is open.” A trail of cases is evidential **`abawa`**; **`ewono`** is the usual-weather universality. NATURAL is **`abele`**.
+English *always* / *every* / *never* / *everyone* smuggle **how exceptionless** the claim is. Keep *who / when* on the [universal fences](coordination.md#universals-domains-generics) (`zual` / `hual` / …). Write exceptionlessness as a closed `/h/` mood root (optional `/w/` on a preceding `/ɡ/`). You can then pair *always* with *usually*, *by definition*, and the rest without changing the domain fence.
 
 ```
 `zazawan hual vawalal hewonol.`
@@ -242,26 +211,28 @@ gloss: `z-grace@` · `h-always` · `v-walk` · `h-COMMON`
 *Azawan always walks, usually.*
 ```
 
-Prefer floating `/h/`. **RULE** is complex `/h/` + `/b/` when you name the frame. These moods mark **how exceptionless** the claim is.
+Universal claims are **weather reports**. Default climate is usual weather; the other moods name a different sky story. Prefer floating `/h/`. Use **COMMON** (`hewonol`) unless another row is the sky you mean. **RULE** is complex `/h/` + `/b/` when you name the frame.
 
-**Compare with:** *who / when* uses [universal fences](coordination.md#universals-domains-generics) (`zual` / `hual` / `zuam`) and [restrictors](restrictors.md) (`hual`). Soft **-m** on the fence (`zuam` / `huam`) is open inventory, not universality.
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`ewono`** | COMMON (default climate) | *usually* (exceptions expected) | ⛅ *weather*: usual sky still allows a shower |
+| **`abulu`** | UNCOUNTERED (search) | *as far as checked* (no counterexample comes to mind) | 💊 *pill*: you take it to treat an ailment; the search found none |
+| **`araza`** | FORMAL | *by definition* / math / proof | ⭐ *star*: a charted constellation does not wander |
+| **`abele`** | NATURAL | *by natural necessity* (unsupported objects fall) | 🍎 *apple*: it falls because the world works that way |
+| **`ebebe`** | RULE | *under a named frame* (`hebebel begezel`) | 🌶️ *pepper*: heat that applies in that dish |
 
-| Agalan | English |
-|---------|---------|
-| `… hual … hewonol` | *always, usually* (default universality) |
-| `… hual … habulul` | *always, as far as checked* |
-| `zual gagurel … harazal` | *every square, by definition* |
-| `… hual … habelel` + evidential `/h/` | *always, by natural necessity* (how you know stacked separately, e.g. `habawam`) |
-| `… hual … hebebel begezel` | *always, under chess* |
-| `zuam gagadal … hewonol` | soft domain *every cat that comes to mind* + usual universality |
+**Compare with:** *who / when* uses [universal fences](coordination.md#universals-domains-generics) (`zual` / `hual` / `zuam`) and [restrictors](restrictors.md) (`hual`). Soft **-m** on the fence (`zuam` / `huam`) is open inventory.
 
-| English | Agalan |
-|---------|---------|
-| *always / everyone / never, usually* | domain fence (`hual` / `zual` / `hal` / …) + **`hewonol`** |
-| *always / never, as far as checked* | domain fence + **`habulul`** |
-| definitional *every* / *all* | domain fence + **`harazal`** |
-| *always by nature* (+ how you know) | domain fence + **`habelel`** + evidential `/h/` (e.g. **`habawam`**) |
-| *always under [frame]* (e.g. chess) | domain fence + **`hebebel b-…`** (scope NP) |
+**For *I saw a pattern*, use:** [evidential](commentary.md#evidentiality) **`abawa`**. **`ewono`** is usual-weather universality; NATURAL **`abele`** stacks a separate evidential `/h/` for how you know.
+
+| Agalan | Use | English |
+|--------|-----|---------|
+| `… hual … hewonol` | default universality | *always, usually* |
+| `… hual … habulul` | search found no counterexample | *always, as far as checked* |
+| `zual gagurel … harazal` | definition / proof | *every square, by definition* |
+| `… hual … habelel` + evidential `/h/` | nature plus how you know | *always, by natural necessity* (e.g. `habawam`) |
+| `… hual … hebebel begezel` | named frame | *always, under chess* |
+| `zuam gagadal … hewonol` | open domain + usual universality | *every cat that comes to mind, usually* |
 
 ### Translation practice
 <a id="translation-practice-advanced"></a>

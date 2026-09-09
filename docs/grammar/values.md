@@ -295,17 +295,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 ### Motive (`xe`): preference standing
 <a id="value-preference"></a>
 
-**`xe`** is a descriptive reason for acting (*am doing for this need*). Use it when English *have to* / *need to* is really a motive. **-l / -m / -r** mark **preference standing** (where the reason comes from). **-n** stays ordinary [proper](reference-suffix.md#proper-name--n). Habit of the reason uses **`hual`**. Always pick an ending; if the standing is unknown, use **-m**. *Usually my reason* is **`…xem`** plus **`hual`**.
-
-**`xe`** is *doing for this need*; **`xo`** is *should serve or protect this need*.
-
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| `…xel` | the situation pulls this motive | *circumstantial* | **-l** ≈ locked to the scene; **e** ≈ order (this ranking of reasons) |
-| `…xem` | the agent’s own reason (soft default if unknown) | *internal* | **-m** ≈ open / from inside |
-| `…xer` | motive as protecting against unmet (away-from) | *protective* | **-r** ≈ resume away from a cost |
-
-**-l** and **-m** are approach-framed; **-r** is guard-framed.
+English *have to* / *need to* / *doing this for…* often names a **motive**: why the action is happening, as a description, not a *should*. Write `/h/` on the clause with the need root, mid-word **`x`**, **`e`**, then an ending. That ending is **preference standing**: whether the reason comes from the situation, from the agent, or from protecting against a cost. If you do not know the standing, use **-m**. **-n** is ordinary [proper](reference-suffix.md#proper-name--n). Habit of the reason uses **`hual`** (*usually my reason* is **`…xem`** plus **`hual`**).
 
 ```
 `zazawan vezehel honogoxem.`
@@ -315,7 +305,19 @@ gloss: `z-grace@` · `v-tell` · `h-relatedness-motive-internal`
 *Azawan tells for relatedness (internal reason).*
 ```
 
+**Not the same job as:** prescription **`xo`** (*should* serve or protect this need). **`xe`** describes *doing for this need*.
+
+**-l** and **-m** are approach-framed; **-r** is guard-framed.
+
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| `…xel` | the situation pulls this motive | *circumstantial* | **-l** ≈ locked to the scene; **e** ≈ order (this ranking of reasons) |
+| `…xem` | the agent’s own reason (soft default if unknown) | *internal* | **-m** ≈ open / from inside |
+| `…xer` | motive as protecting against unmet (away-from) | *protective* | **-r** ≈ resume away from a cost |
+
 ### Which ending table?
+
+Beginner already used *serves* / *should* / *costs*. Motive uses the same **`x` + vowel** slot; pick the ending table that matches that vowel.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -326,6 +328,8 @@ gloss: `z-grace@` · `v-tell` · `h-relatedness-motive-internal`
 
 ### Attachment sites
 
+Beginner already attached `/w/` after a noun and `/h/` on the clause. The rest of the map:
+
 | Agalan | Use | English |
 |--------|-----|---------|
 | `w…xa…` after a possessive `/ɡ/` | gratitude / possession framed as serving | *Azawan’s house (for competence)* (`wolozoxa…`) |
@@ -335,9 +339,7 @@ gloss: `z-grace@` · `v-tell` · `h-relatedness-motive-internal`
 | `h…xe…` on the clause | motive | *Azawan … (for relatedness)* (`honogoxe…`) |
 | bare `h…` / `w…` need | topic only | `hawerol` |
 
-Prefer **-m** on **`xu` / `xe` / `xo`** when that table’s dimension is unclear. Several values are several `/h/` or `/w/` words (`holozoxal honogoxal`), not stacked `x`-additions on one need.
-
-On these compounds, **-l / -m / -r** are the stance tables above.
+Prefer **-m** on **`xu` / `xe` / `xo`** when that table’s dimension is unclear. Several values are several `/h/` or `/w/` words (`holozoxal honogoxal`), not stacked `x`-additions on one need. The **host** word carries literal vs metaphorical sense.
 
 ```
 `zazawan vezehel holozoxal honogoxem.`
@@ -347,7 +349,6 @@ gloss: `z-grace@` · `v-tell` · `h-competence-met-physical` · `h-relatedness-m
 *Azawan tells: competence is met (physical) and relatedness is the internal motive.*
 ```
 
-The **host** word carries literal vs metaphorical sense.
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>

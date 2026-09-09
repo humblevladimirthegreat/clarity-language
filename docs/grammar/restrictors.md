@@ -243,11 +243,27 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 ## Intermediate
 <a id="intermediate"></a>
 
+### Occasions vs a dependent *when*
+
+English *when* / *if* can name a **following sentence** (*if Azawan walks*). Write that as an adverb plus extra noun: `/h/` plus `/b/` [**`adoro`**](pronouns.md#special-pronouns) ([dependent clauses](core.md#dependent-clauses)). The main sentence stops after **`adoro`**; the next sentence is the content. Restrictors still list **phrase** times or cases immediately before the restrictor. Use a restrictor when the occasions are words in the adverb slot; use **`adoro`** when the occasion is another full clause.
+
+```
+`zuhubun vuzunul hadorom zazawan vawalal badorol.`
+
+gloss: `z-beauty@` · `v-sing` · `h-next-clause~` · `z-grace@` · `v-walk` · `b-next-clause`
+
+*Uhubun sings if Azawan walks.*
+```
+
+Each listed restrictor occasion is a simple `/h/` or `/w/` content word, or a complex unit (`/h/` plus `/b/`, or contiguous `/w/` material).
+
+**Compare with:** *only when raining* is a restrictor list (`hanunul hal`). *If Azawan walks* is the next-clause pattern above.
+
 ### More occasions
 <a id="more-occasions"></a>
 <a id="defined-core-full"></a>
 
-The same vowels as joins now name **more kinds of occasion**. `/w/` matches `/h/` on the adjective (`wal` / `wam` / `wual` / `wuam` / `war` / `wor` / `wur`, and the rows below).
+Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *sometime* / *anytime* / *sometime else* (`har` / `hor` / `hur`). The rest of the same vowel map names exclusive, inclusive, *not when*, ranked, and leftover readings. `/w/` uses the same vowels on the previous adjective (`wal` / `wam` / `wual` / `wuam` / `war` / `wor` / `wur`, and the rows below). One restrictor chain is one `/h/` unit (or one `/w/` stack on its host).
 
 ```
 `zazawan vawalal hanunul hunugul hol.`
@@ -265,60 +281,53 @@ gloss: `z-courage@` · `v-sleep` · `h-rain` · `h-snow` · `h-when-or`
 *Ululon sleeps when raining and/or when snowing.*
 ```
 
-One restrictor chain fills one floating `/h/` unit, or one `/w/` stack slot on its host.
-
 #### Set / invert / inclusive
 
-| Agalan | English (with occasions) | English (bare) | Cue |
-|--------|--------------------------|----------------|-----|
-| **`hal` / `ham`** | *only when…* (closed) / *when…, among other occasions* (open) | ***never*** / *never that you can think of* | **a** ≈ add |
-| **`hol` / `hom`** | *either when A or when B (not both)*; **`hom`** also allows *or never* | | **o** ≈ one |
-| **`haol` / `haom`** | *when A and/or when B* (any of these occasions suffices) | | **a** ≈ add + **o** ≈ one |
-| **`hul` / `hum`** | *not when…* / *not when…, for one* | | **u** ≈ undo |
-| **`hual` / `huam`** | *always except when…* | ***always*** / *always, as far as you can tell* | **u** ≈ undo then **a** ≈ add |
-| **`huol` / `huom`** | *anytime except when…* | | **u** ≈ undo + **o** ≈ one |
+| Agalan | Use | English (with occasions) | English (bare) | Cue |
+|--------|-----|--------------------------|----------------|-----|
+| **`hal` / `ham`** | listed times; empty list is *never* | *only when…* (closed) / *when…, among other occasions* (open) | ***never*** / *never that you can think of* | **a** ≈ add |
+| **`hol` / `hom`** | one exclusive time menu | *either when A or when B (not both)*; **`hom`** also allows *or never* | | **o** ≈ one |
+| **`haol` / `haom`** | any of the listed times suffices | *when A and/or when B* | | **a** ≈ add + **o** ≈ one |
+| **`hul` / `hum`** | invert the listed times | *not when…* / *not when…, for one* | | **u** ≈ undo |
+| **`hual` / `huam`** | every time minus listed exceptions | *always except when…* | ***always*** / *always, as far as you can tell* | **u** ≈ undo then **a** ≈ add |
+| **`huol` / `huom`** | any leftover time minus listed exceptions | *anytime except when…* | | **u** ≈ undo + **o** ≈ one |
 
 #### Ranked (with listed occasions)
 
 Closed **`hel`** ranks **when** it matters. **`hal`** still means *only when* these times, with no priority among them.
 
-| Agalan | English | Cue |
-|--------|---------|-----|
-| **`hel` / `hem`** | *preferably when A ≻ when B…* (closed / open priority of occasions) | **e** ≈ order |
-| **`hael` / `haem`** | *as often as* / *equally when A and when B* | **a** ≈ add + **e** ≈ order |
-| **`hoel` / `hoem`** | *if A, else if B…* (fallback occasions) | **o** ≈ one + **e** ≈ order |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`hel` / `hem`** | priority among occasions | *preferably when A ≻ when B…* (closed / open) | **e** ≈ order |
+| **`hael` / `haem`** | equal frequency among occasions | *as often as* / *equally when A and when B* | **a** ≈ add + **e** ≈ order |
+| **`hoel` / `hoem`** | fallback occasions | *if A, else if B…* | **o** ≈ one + **e** ≈ order |
+
+```
+`zazawan vawalal hamubum hozorem hel.`
+
+gloss: `z-grace@` · `v-walk` · `h-emergency~` · `h-convenience~` · `h-preferably-when`
+
+*Azawan walks preferably in an emergency rather than for convenience.*
+```
 
 #### Unspecified-member (`-r`)
 
-Statement readings below. Under question: [questions.md](questions.md#when).
+Statement readings below. Asking *when*: [questions.md](questions.md#when).
 
-| Agalan | English (with occasions) | English (bare) | Cue |
-|--------|--------------------------|----------------|-----|
-| **`har`** | *sometime among these* | *sometime* | **-r** some member |
-| **`hor`** | *anytime among these* | *anytime* | **o** ≈ one + **-r** |
-| **`hur`** | *sometime other than these* | *sometime else* | **u** ≈ undo + **-r** |
-| **`hael`** | *as often as among these* / *equally when these* | *equally often* / *tied frequency frame* | **a** ≈ add + **e** ≈ order |
+| Agalan | Use | English (with occasions) | English (bare) | Cue |
+|--------|-----|--------------------------|----------------|-----|
+| **`har`** | unspecified member of the listed times | *sometime among these* | *sometime* | **-r** some member |
+| **`hor`** | unspecified member of a one-choice time menu | *anytime among these* | *anytime* | **o** ≈ one + **-r** |
+| **`hur`** | unspecified leftover time | *sometime other than these* | *sometime else* | **u** ≈ undo + **-r** |
+| **`hael`** | equal frequency frame | *as often as among these* / *equally when these* | *equally often* / *tied frequency frame* | **a** ≈ add + **e** ≈ order |
 
-### More examples
+```
+`zazawan guzumum wanunul wal.`
 
-- `hanunul hunugul hol` → *either when raining or at night (not both)*; `… hom` → *… or never*
-- `hanunul hozowol haol` → *when raining and/or when snowing*
-- `hanunul hul` → *not when raining*; `hanunul hunugul hum` → *not when raining or at night, for one*
-- `hanunul hual` → *always except when raining*
-- `hanunul huol` → *anytime except when raining*
-- `hamubum hozorem hel` → *preferably in emergency ≻ for convenience*
-- `hanunul hozowol hael` → *as often when raining as when snowing*
-- `hael` → *equally often* / *tied frequency frame* (bare)
-- `herebal hewenem hoel` → *if (when) repair, else if workaround…*
-- `hanunul hozowol har` → *sometime among rain or snow*
-- Complex occasion: `hohohum hal` → *only at home*
-- `/w/` core: `guzumum wanunul wal` → *happy only when raining*; `war` → *sometime*; two adjective details in a row: `guzumum wadazam wowom` → *hastily* and *quietly*
+gloss: `z-grace@` · `g-happy~` · `w-rain` · `w-only-when`
 
-### Occasions vs a dependent *when*
-
-Each listed occasion is a **simple** `/h/` or `/w/` content word, or a **complex** unit (`/h/` plus `/b/`, or contiguous `/w/` material the lexicon allows).
-
-*When* / *if* as a **dependent sentence** stays ordinary complex `/h/` plus `/b/` [**`adoro`**](pronouns.md#special-pronouns) ([core.md](core.md#dependent-clauses)). Restrictor fences list **phrase** occasions.
+*Azawan is happy only when raining.*
+```
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>

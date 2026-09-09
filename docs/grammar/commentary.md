@@ -189,9 +189,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 <a id="evidentiality"></a>
 <a id="evidential"></a>
 
-Mark **how you know** a world-claim (what happened, what caused what, what someone else thinks, what will happen) with a closed `/h/` mood root. Prefer floating `/h/` (optional `/w/` when the mood frames only a preceding `/ɡ/`).
-
-Each root is a **channel** the claim came through: memory catch, playback, trail of cases, detective work, listening, gut, tale.
+English often names *how you know* a claim about the world (what happened, what caused what, what someone else thinks, what will happen). Agalan keeps the ordinary content verb and adds a closed `/h/` mood word. That word is the **channel** the claim came through, so the same walk or sleep can sit under memory, a recording, a pattern of cases, clues, hearsay, a gut sense, or a tale.
 
 ```
 `zazawan huvuvum vawalal.`
@@ -205,7 +203,7 @@ gloss: `z-grace@` · `h-WITNESSED` · `v-walk`
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`huvuvum`** | firsthand / reconstructive channel | *from memory* / *witnessed* | 🎣 *fishing*: you pull something back, maybe a boot |
+| **`huvuvum`** | firsthand / reconstructive channel | *from memory* / *witnessed* | 🎣 *fishing*: you pull something back |
 | **`heregom`** | documented / captured channel | *on record* / *playback* | ⏺️ *record*: what was saved plays back |
 | **`habawam`** | regularity / similar cases | *from the pattern* | 🐾 *paw-prints*: cases left behind |
 | **`hunevem`** | reasoned from clues | *inferred* | 🕵️ *investigate*: you work the clues |
@@ -231,18 +229,14 @@ gloss: `z-courage@` · `h-TOLD` · `v-write`
 *Ululon writes — so they say.*
 ```
 
-**WITNESSED** (`uvuvu`) and **RECORDED** (`erego`) are the past-memory channels: *I remember* / *according to…* / *on record* are those same roots on past claims. Casting into opaque water can land a fish or a **boot** (🥾 `abodo` *boot* stays free for the punchline).
+**Not the same job as:** a feeling like fear or hope uses [emotion compose](special-vocabulary.md#emotion-compose) (value + ACT + LOCUS). **`heherem`** is a channel of *knowing*, not that stack. **`heraram`** is someone said so about the claim; hearing a door as an event is ordinary `/v/`.
 
-Ordinary content stays available: `zuvuvul` *a memory*; `veregol` *to record*; `duvuvuxruzol` *that memory that won't blank*; `zerarar` *that ear*; `zorolol` *a scroll*.
-
-**Felt** (`ehere`) is a channel of *knowing*. **Not the same job as:** a feeling like fear or hope uses [emotion compose](special-vocabulary.md#emotion-compose) (value + ACT + LOCUS).
-
-**Told** under `/h/` is hearsay. Hearing a door is ordinary `/v/`.
-
-#### Memory / record (past framing)
+### Memory / record (past framing)
 <a id="memory-record"></a>
 <a id="memory"></a>
 <a id="record-past"></a>
+
+The table above already used **`huvuvum`** and **`heregom`**. On a past claim those same roots read as *I remember* / *according to…*.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -253,11 +247,7 @@ Ordinary content stays available: `zuvuvul` *a memory*; `veregol` *to record*; `
 <a id="notional"></a>
 <a id="notional-mood"></a>
 
-Mark a clause as **as-if / mind-only / off the real ledger** (pretensive scene framing) with one closed mood root.
-
-**Shape:** floating `/h/` **`adade`**. Prefer floating `/h/` (optional `/w/` when the mood frames only a preceding `/ɡ/`). Ending = [hold](#notional-hold) (same map as COMMENT). (cue: 🎭 *theater*: a stage mask; the real tally stays offstage)
-
-A **stage mask** frames the scene as play; the real tally stays offstage. Ordinary content stays available (`zadadel` *a theater*; `vadadem` *to pretend*).
+English sometimes frames the whole clause as play: *as if*, *for the sake of argument*, *this is only in the mind*. Agalan keeps the ordinary verb and adds the closed `/h/` word **`adade`**. That word takes the scene off the real ledger, so you can tell a pretensive walk without turning *walk* into a special pretend-verb. (cue: 🎭 *theater*: a stage mask; the real tally stays offstage)
 
 ```
 `zazawan hadadem vawalal.`
@@ -267,24 +257,14 @@ gloss: `z-grace@` · `h-NOTIONAL-soft` · `v-walk`
 *As if Azawan walks.* — notional framing held lightly (default)
 ```
 
-```
-`zuhubun hadadel vuzunul.`
-
-gloss: `z-beauty@` · `h-NOTIONAL-fused` · `v-sing`
-
-*As if Uhubun sings.* — immersed in the imagined scene
-```
-
-Use NOTIONAL when the clause is **framed as pretensive, for-the-sake-of-argument, or mind-only**.
-
 **For *I think / I imagine*, use:** [COMMENT](#comment).
 
 **Related form:** imaginary *amount* uses free number as verb / adverb / interjection / discourse in [numbers.md](numbers.md#imaginary).
 
-#### Hold endings (NOTIONAL)
+### Hold endings (NOTIONAL)
 <a id="notional-hold"></a>
 
-On **`adade`**, **-l / -m / -r** mark **how you hold** the as-if frame (same map as [COMMENT hold](#comment-hold)). **-n** is ordinary [proper](reference-suffix.md#proper-name--n).
+Beginner already used **-l / -m / -r** hold on **`odoho`**. The same map sits on **`adade`**. **-n** is ordinary [proper](reference-suffix.md#proper-name--n).
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -295,29 +275,20 @@ On **`adade`**, **-l / -m / -r** mark **how you hold** the as-if frame (same map
 When unsure, prefer **`hadadem`**.
 
 ```
+`zuhubun hadadel vuzunul.`
+
+gloss: `z-beauty@` · `h-NOTIONAL-fused` · `v-sing`
+
+*As if Uhubun sings.* — immersed in the imagined scene
+```
+
+```
 `zululon hadader vuwurul.`
 
 gloss: `z-courage@` · `h-NOTIONAL-return` · `v-write`
 
 *As if Ululon writes — and step back toward contact.*
 ```
-
-### COMMENT, universality, and as-if
-
-| English | Agalan |
-|---------|--------|
-| *think / assume / suppose / imagine …* (attitude) | **COMMENT** (`hodohom`) |
-| *wonder …* | **COMMENT** plus a soft question (**jom**) |
-| *as if / pretend that / imagine that:* (scene framing) | **NOTIONAL** (`hadadem`) |
-| *believe …* / how you know a world-claim | evidentiality (`huvuvum`, `heraram`, …) |
-
-| Agalan | English |
-|---------|---------|
-| `zazawan wolozoxur hogegal hanedel` | *Azawan is anxious* (unmet competence; flood; room awash) |
-| `zazawan hadadem vodobol.` | *as if Azawan takes the trophy* — soft notional frame |
-| `… hodohol …` | commentary taken as the scene (fused) |
-| `… hodohor …` | commentary named *and* stepped back from |
-| `… hadader …` | notional frame *and* step back toward contact |
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -446,6 +417,57 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 ::: details Show answer
 *I wonder whether Azawan walks.*
 :::
+
+## Advanced
+<a id="advanced"></a>
+
+### Mood on one adjective
+<a id="mood-on-adjective"></a>
+
+These `/h/` moods usually float over the whole clause. When the take, channel, or as-if frame applies only to a preceding adjective (`/ɡ/`), write the same mood under `/w/` instead.
+
+```
+`zazawan gelulul wuvuvum vawalal.`
+
+gloss: `z-grace@` · `g-blue` · `w-WITNESSED` · `v-walk`
+
+*Azawan walks — and that blue is from memory.*
+```
+
+### Ordinary content readings
+<a id="content-readings"></a>
+
+The same published roots keep ordinary content under other role letters. The closed mood is the `/h/` (or `/w/`) frame, not a ban on the stem.
+
+| Agalan | Use | English |
+|--------|-----|---------|
+| `zuvuvul` | noun | *a memory* |
+| `veregol` | verb | *to record* |
+| `zerarar` | resume noun | *that ear* |
+| `zorolol` | noun | *a scroll* |
+| `zadadel` | noun | *a theater* |
+| `vadadem` | verb | *to pretend* |
+
+```
+`zazawan zadadel vejel.`
+
+gloss: `z-grace@` · `z-theater` · `v-see`
+
+*Azawan sees a theater.*
+```
+
+### Reconstructive catch
+<a id="reconstructive-catch"></a>
+
+**`uvuvu`** is reconstructive: you pull something back, and it may not be what you hoped. The punchline can be a **boot**. Ordinary **`abodo`** *boot* is still available as content.
+
+```
+`zazawan huvuvum dabodol vejel.`
+
+gloss: `z-grace@` · `h-WITNESSED` · `d-boot` · `v-see`
+
+*Azawan sees a boot — from memory.*
+```
 
 ## See also
 

@@ -188,17 +188,10 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 ## Intermediate
 <a id="intermediate"></a>
 
-*Needs* / *without* (*the outcome cannot do without this*), unique path, and clause *if* / *because* / *iff* are this stage.
-
 ### Necessary (marked)
 <a id="necessary"></a>
 
-To say the outcome **needs** the condition, mark **exclusion** or **never**.
-
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| **`guan` / `huan`** | exclusion on the **effect** | *without / excluding* | **`u`** ≈ undo (take it away and the effect fails) |
-| **`hal`** (restrictor) | never, when the condition is absent | *never* | **-l** exact: that occasion is closed off |
+When the outcome cannot do without something (*needs* / *without*), mark that condition as taken away or as never happening. Put exclusion on the effect (`guan` / `huan`), or a never restrictor (`hal`) on the verb. Take the condition away, and the outcome fails.
 
 ```
 `zanunul huan buludul.`
@@ -216,14 +209,17 @@ gloss: `z-grace@` · `v-walk` · `h-never`
 *Azawan never walks.*
 ```
 
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`guan` / `huan`** | exclusion on the effect | *without / excluding* | **`u`** ≈ undo (take it away and the effect fails) |
+| **`hal`** (restrictor) | never, when the condition is absent | *never* | **-l** exact: that occasion is closed off |
+
+**Compare with:** *would work* / among routes uses open sufficient (`…aom`).
+
 ### Marked unique path
 <a id="unique-path"></a>
 
-When you mean *it has to be X* / the **sole** pick, use exclusive **`…ol` / `gon` / `hon`**.
-
-Everyday *would work* stays cheaper as open sufficient (`…aom`) than as exclusive sole cause.
-
-**`…al` / `…el`** (*only X* / *only X matters*) mark inventory or priority on a list. They do not say the outcome *needs* that item.
+When you mean *it has to be X* (the sole pick), close an exclusive join: **`…ol`**, **`gon`**, or **`hon`**. That names one path and no other, not merely a route that would work.
 
 ```
 `zazawan gon.`
@@ -233,30 +229,16 @@ gloss: `z-grace@` · `g-has-to-be`
 *It has to be Azawan.*
 ```
 
+**Compare with:** *would work* uses open sufficient (`…aom`). **`…al` / `…el`** (*only X* / *only X matters*) mark inventory or priority on a list; they do not say the outcome needs that item.
+
 ### Clause poles
 <a id="clause-poles"></a>
 
-When the condition or outcome is a **full sentence**, prefer a dependent clause after **`adoro`**:
+When the condition or outcome is a **full sentence**, hang that sentence after **`adoro`**. Write the pole (`hadorom` / `hezazem` / `hurugum`), then **`badorol`**, then the dependent sentence. **`adoro`** ([special pronoun](pronouns.md#special-pronouns)) sits last in the main sentence; the next sentence is the content that word stands for. Give the dependent its own act word only if the speech act differs. See [dependent clauses](core.md#dependent-clauses).
 
 ```
 main sentence …  hadorom / hezazem / hurugum  badorol   [dependent sentence]
 ```
-
-**`adoro`** ([special pronoun](pronouns.md#special-pronouns)) sits **last in the main sentence**. The dependent is a full sentence (give it its own act word only if the speech act differs). See [dependent clauses](core.md#dependent-clauses).
-
-### `IF` vs `IFF` vs `BECAUSE`
-<a id="if-vs-iff"></a>
-<a id="if-vs-because"></a>
-
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| **`hadorom badorol`** (**`adoro`**) | one-way condition (open sufficient; dependent not asserted) | *if* | 🚪 *doorway*: walk through only if it opens |
-| **`hezazem badorol`** (**`ezaze`**) | both-ways (sufficient **and** necessary) | *if and only if* | ↔️ *left-right*: each side only with the other |
-| **`hurugum badorol`** (**`urugu`**) | asserted explanation | *because* | 🧱 *brick*: the cause is what the result sits on |
-
-**Ending:** clause poles always take **-m** (metaphorical published sense): **`hadorom`** / **`hezazem`** / **`hurugum`**. Ordinary literal content on the same roots still uses ordinary endings (`zadorol` *a door*; `zezazel` *reciprocity*; `zurugul` *a brick*).
-
-Bare **`IF`** (`hadorom`) is one-way only.
 
 ```
 `zazawan vawalal hadorom badorol zululon velebel.`
@@ -265,6 +247,18 @@ gloss: `z-grace@` · `v-walk` · `h-if` · `b-next-clause` · `z-courage@` · `v
 
 *Azawan walks if Ululon sleeps.*
 ```
+
+### `IF` vs `IFF` vs `BECAUSE`
+<a id="if-vs-iff"></a>
+<a id="if-vs-because"></a>
+
+Beginner already pointed at *if* / *because* as dependents. Pick the `/h/` root by the English job. Clause poles take **-m** (published metaphorical sense): **`hadorom`** / **`hezazem`** / **`hurugum`**. Ordinary content on the same roots still uses ordinary endings (`zadorol` *a door*; `zezazel` *reciprocity*; `zurugul` *a brick*).
+
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`hadorom badorol`** (**`adoro`**) | one-way condition (open sufficient; dependent not asserted) | *if* | 🚪 *doorway*: walk through only if it opens |
+| **`hezazem badorol`** (**`ezaze`**) | both-ways (sufficient **and** necessary) | *if and only if* | ↔️ *left-right*: each side only with the other |
+| **`hurugum badorol`** (**`urugu`**) | asserted explanation | *because* | 🧱 *brick*: the cause is what the result sits on |
 
 ```
 `zazawan vawalal hurugum badorol zululon velebel.`
@@ -278,20 +272,17 @@ gloss: `z-grace@` · `v-walk` · `h-because` · `b-next-clause` · `z-courage@` 
 |-------|--------|
 | NP–NP | phrase `…aom` / `haon` / `huan` ([Beginner](#np-poles)) |
 | Clause–clause conditional (one-way) | **`hadorom badorol`** |
-| Clause–clause both-ways | **`hezazem badorol`** (marked) |
+| Clause–clause both-ways | **`hezazem badorol`** |
 | Clause–clause explanation | **`hurugum badorol`** |
-| Clause–clause inclusive bundle | `xaom` / `xaol` as **coordination only** |
 | Mixed NP + clause | **`adoro`** under a relation, or a span / noun-form of the clause in `/b/` / `/d/` |
 
-Open sufficient vs necessary uses the same joins and restrictors (`hal`, …) you already have; pick the relation that matches the English job.
+**Related form:** packaging two full sentences as *and also* uses a clause [join](coordination.md) (`xaom` / `xaol`), not a pole root.
 
 ### CAUSE
 <a id="cause"></a>
 <a id="cause-mood"></a>
 
-Mark a clause as **CAUSE-framed** (*how the gears engage*) with one closed mood root.
-
-**Shape:** floating **`/h/`** mood **`egega`**. Prefer floating `/h/` (optional `/w/` when scoped only to a preceding `/ɡ/`). Ending = **-m** only (metaphorical): **`hegegam`**. Ordinary content still available (`zegegal` *a gear*; `vegegal` *to mesh / engage*). (cue: ⚙️ *gear*: how the mechanism engages)
+To highlight **how** a result comes about (the mechanism, not only that a route would work), add the closed mood **`egega`** as an `/h/` word. The ending is **-m**: **`hegegam`**. You can put that mood next to a join or a clause pole when both jobs apply. Ordinary content on the same root is still available (`zegegal` *a gear*; `vegegal` *to mesh / engage*). Optional `/w/` when the mood grades only a preceding adjective. (cue: ⚙️ *gear*: how the mechanism engages)
 
 ```
 `haon bezewel hegegam.`
@@ -301,28 +292,28 @@ gloss: `h-and/or` · `b-effort` · `h-CAUSE`
 *Open to effort (CAUSE)* (how the payoff gears turn)
 ```
 
-Use **CAUSE** when the clause highlights how the gears engage.
-
 **Compare with:** *would work* / among routes uses open sufficient (`…aom` / `haon`).
 
 **For *because / if*, use:** [clause poles](#if-vs-iff) (`hurugum` / `hadorom`).
 
-Stack **CAUSE** with a join, a clause pole, universality, or evidential `/h/` when more than one of those jobs applies.
-
 ### Preference vs law
 <a id="preference-vs-law"></a>
 
-A common shape: *hard work should count*. The “rule” is a **wish / ought**, not a formal or natural law.
+English *should* on a causal claim is often a wish or ought, not a formal or natural law. Keep the route as open sufficient (`haon` / `…aom`) and put the ought on [values](values.md): **`xo`** (prescription) or **`xe`** (motive). Feeling-strength lives on the values ending, not on exclusive **`gon`**.
 
-| Layer | Role |
-|-------|------|
-| Condition shape | open sufficient (`haon` / `…aom`, …) if you still mean “effort would count toward advancement” |
-| Ought / motive | **`xo`** (prescription) or **`xe`** (motive): [values](values.md) |
-| Warrant | evidentiality / [universality](special-vocabulary.md#universality) when asserting a world regularity |
+```
+`haon bezewel holozoxor.`
 
-Keep the strength of feeling on values force / evidentiality. Exclusive **`ol` / `gon`** still means *sole path*, even when you feel strongly.
+gloss: `h-and/or` · `b-effort` · `h-competence.prescription`
 
-**Schematic:** `… haon bezewel` on effort + `holozoxor` (soft invite force) ≈ *effort is among routes that ought to count for competence payoff*.
+*Effort would count (as an ought).*
+```
+
+| Agalan | Use | English |
+|--------|-----|---------|
+| `haon` / `…aom` | route still among others | *would count toward…* |
+| **`xo`** / **`xe`** | prescription / motive | *should* / *so that* |
+| **`ol` / `gon`** | sole path | *has to be* (even if you feel strongly) |
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -480,15 +471,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 ### Factivity (`IF` vs `BECAUSE`)
 <a id="factivity"></a>
 
-English *because* / *if* blur whether the dependent is **asserted as a fact about the world**.
-
-Agalan separates that on the clause root:
-
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| **`hadorom`** | dependent not asserted; main claimed **under** it | *if* | 🚪 *doorway*: walk through only if it opens |
-| **`hezazem`** | both sides stand or fall together | *if and only if* | ↔️ *left-right*: each side only with the other |
-| **`hurugum`** | dependent **asserted** as the reason the main sentence rests on | *because* | 🧱 *brick*: the cause is what the result sits on |
+English *because* and *if* can hide whether you **assert the dependent as a world fact**. Agalan puts that choice on the `/h/` root: **`hurugum`** asserts the dependent as the reason the main sentence rests on; **`hadorom`** does not assert it (the main sentence is under that opportunity). You can now say whether rain is a fact the walk rests on, or only a condition.
 
 ```
 `zazawan vawalal hurugum badorol zanunul.`
@@ -506,56 +489,54 @@ gloss: `z-grace@` · `v-walk` · `h-if` · `b-next-clause` · `z-rain`
 *Azawan walks if it rains.* Rain is not asserted; the main sentence is under that opportunity.
 ```
 
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`hadorom`** | dependent not asserted; main claimed under it | *if* | 🚪 *doorway*: walk through only if it opens |
+| **`hezazem`** | both sides stand or fall together | *if and only if* | ↔️ *left-right*: each side only with the other |
+| **`hurugum`** | dependent asserted as the reason | *because* | 🧱 *brick*: the cause is what the result sits on |
+
 #### Epistemic *because* (no twin root)
 <a id="epistemic-because"></a>
 
-English often uses *because* for **speaker grounds** (*I say P because Q* / *I think P, because…*) without asserting Q as a world-fact that grounds the main sentence. Agalan keeps **`BECAUSE`** for **world-reason** under the claim.
+English often uses *because* for **speaker grounds** (*I think P because Q*) without treating Q as a world-fact that grounds P. Put [COMMENT](commentary.md#comment) (`hodohom`, …) on the main sentence for the take. Add **`hurugum badorol`** only when Q is also asserted as a world-foundation.
 
-| English bundle | Prefer |
-|----------------|--------|
-| *P because Q* (Q grounds P in the world) | **`hurugum badorol`** (+ evidentiality / [**CAUSE**](#cause) when naming CAUSE) |
-| *I think / say P because Q* (Q is my reason for the take) | [**COMMENT**](commentary.md#comment) on the main sentence (`hodohom`, …); add **`hurugum badorol`** only if Q is also asserted as world-foundation |
-| *P, since / given that Q* (Q already shared) | **`hurugum badorol`** (Q asserted); soft force / evidentiality if the warrant is tentative |
-| *P if Q* (Q not asserted) | **`hadorom badorol`** |
+```
+`zazawan hodohom vawalal.`
+
+gloss: `z-grace@` · `h-comment` · `v-walk`
+
+*Azawan walks (that’s a take).*
+```
+
+**For *I think*, use:** [COMMENT](commentary.md#comment) (`odoho`). **`hurugum`** is world-reason under the claim.
+
+**Related form:** *P, since / given that Q* (Q already shared) still uses **`hurugum badorol`**; soften with evidential `/h/` if the warrant is tentative.
 
 ### Stacks (evidentiality, CAUSE, habit)
 <a id="stacks"></a>
 
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| evidential `/h/` | *how you know* the link ([evidentiality](commentary.md#evidentiality): **INFERRED** `uneve`, **PATTERN** `abawa`, …) | *I infer / it is a pattern that…* | 🔍 the trail behind the claim |
-| **`hegegam`** | CAUSE mood ([CAUSE](#cause)) | *as mechanism* | ⚙️ *gear*: how the mechanism engages |
-| **`hual` / `huam`** | habitual / characterizing ([restrictors](restrictors.md)) | *whenever*, as a rule | |
-| universality mood | how exceptionless the claim is ([universality](special-vocabulary.md#universality)) | *always* / *every* / *never* | |
-| values `xo` / `xe` | ought or motive ([above](#preference-vs-law)) | *should* / *so that* | |
-| COMMENT | speaker-grounds / attitude ([epistemic *because*](#epistemic-because)) | *I think / I’d note* | |
+A one-off episode and a standing pattern use the same sufficient / necessary shapes. Add extra `/h/` words for the extra jobs: evidential `/h/` for *how you know* ([evidentiality](commentary.md#evidentiality)), **`hual` / `huam`** for habit ([restrictors](restrictors.md)), **`hegegam`** for mechanism ([CAUSE](#cause)).
 
-A particular episode (*this delay was caused by…*) and a standing pattern (*clouds for rain*) share the same necessary/sufficient shapes. Tense, **`hual`**, evidentiality, **`CAUSE`**, and [universality](special-vocabulary.md#universality) distinguish them.
+```
+`zuludul zaom hual.`
 
-Show a causal “law” with evidentiality and universality. **CAUSE** uses **`hegegam`**; NATURAL uses **`habelel`**.
+gloss: `z-cloud` · `z-and/or.open` · `h-habitual`
+
+*Clouds would work, as a standing pattern.*
+```
+
+**Compare with:** *always* / *every* / *never* as exceptionlessness uses [universality](special-vocabulary.md#universality) (NATURAL **`habelel`**). **CAUSE** is **`hegegam`**.
 
 ### English → Agalan
 <a id="english-cues"></a>
 
+Time and discourse dependents use the same **`adoro`** hang as *if* / *because*. Discourse glue after a finished sentence is `/x/` continue, not a pole root.
+
 | English | Agalan |
 |---------|---------|
-| *caused by* + how you know | condition shape (sufficient / necessary) + evidential `/h/` |
-| *caused by* + CAUSE | condition shape + **`hegegam`** ([CAUSE](#cause)) |
-| *leads to* / *results in* (ordinary) | open sufficient (`…aom` / `haon`, …) |
-| *necessary for* / *without X, no Y* | `huan` / `guan` / `hal` |
-| *the only cause* / *has to be* | marked `gon` / `hon` / `…ol` |
-| *should* as universal causal law | sufficient shape + **`xo`** (name the need) |
-| *always* / *every* / *never* (universality) | domain (`hual` / …) + [universality](special-vocabulary.md#universality) mood |
-| *because* / *if* + clause | **`hurugum badorol`** / **`hadorom badorol`** |
-| *if and only if* / *iff* | **`hezazem badorol`** |
-| *although* / *while* / *until* / *before* / *after* | same `/h/`+**`adoro`** shape ([core.md](core.md#dependent-clauses)) |
-| *I think P because Q* (speaker grounds) | COMMENT + optional **`hurugum`** ([above](#epistemic-because)) |
+| *although* / *while* / *until* / *before* / *after* | same `/h/`+**`adoro`** shape, **-m** ([dependent clauses](core.md#dependent-clauses)): **`hezebam`** / **`hegemum`** / … |
 | *therefore* (discourse) | **`xezazal`** ([continue](core.md#continue-x)) |
 | *however* / *meanwhile* (discourse) | **`xezebal`** / **`xanelol`** |
-
-Discourse *however* / *meanwhile* are `/x/` linkers. Subordinating **`hezebam`** / **`hegemum`** stay *although* / *meanwhile-as-dependent*.
-
-Clause poles stay **-m** (`hadorom` / `hezazem` / `hurugum`, and the same **-m** on *although* / *while* / *until* / *before* / *after*).
 
 ### Translation practice
 <a id="translation-practice-advanced"></a>

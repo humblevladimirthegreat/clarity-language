@@ -361,106 +361,99 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 ### Full single-item and standalone inventories
 
-The starter table above covers common cases. Below are the full phrase-level single-item and standalone readings. Verb-phrase and clause use the same arity pattern with `/v/` and `/x/` prefixes ([VP / clause forms](#vp-clause-forms)).
+Beginner already used single-item *just X* and standalone *nothing* / *everything*. The tables below are the rest of those phrase-level readings. Same arity under `/v/` and `/x/`: [VP and clause forms](#vp-clause-forms).
 
 **Rank — single-item**
 
-Apply these readings when there is only one item in the list.
-
-| Agalan | English |
-|--------|---------|
-| **…el** (`zel` / …) | *only X matters* / *X, period*; + SHARED scale → superlative — [comparatives.md](comparatives.md) |
-| **…em** (`zem` / …) | *X first* / *mainly X*; + SHARED scale → open superlative |
-| **…ael** (`zael` / …) | *X tied for* / equal priority to X |
-| **…aem** (`zaem` / …) | *X about tied for* / soft equal priority |
-| **…aen** (`zaen` / …) | *X tied for* (stock / conventional draw label) |
-| **…oem** (`zoem` / …) | *start with X* / *try X first* |
-| **…oel** (`zoel` / …) | *only try X* / *X with no listed fallback* |
-| **…uel** (`zuel` / …) | *X last, period*; + SHARED scale → least |
-| **…uem** (`zuem` / …) | *X last* / mainly leave X for last |
-| **…en** (`zen` / …) | *X first* (stock) / *X, as usual* — named unspecified ranking |
-| **…er** (`zer` / …) | *preferably some X* / *X as a priority* |
+| Agalan | Use | English |
+|--------|-----|---------|
+| **…el** (`zel` / …) | closed rank of one | *only X matters* / *X, period*; + SHARED scale → superlative — [comparatives](comparatives.md) |
+| **…em** (`zem` / …) | open rank of one | *X first* / *mainly X*; + SHARED scale → open superlative |
+| **…ael** (`zael` / …) | closed tie of one | *X tied for* / equal priority to X |
+| **…aem** (`zaem` / …) | open tie of one | *X about tied for* / soft equal priority |
+| **…aen** (`zaen` / …) | stock tie of one | *X tied for* (stock / conventional draw label) |
+| **…oem** (`zoem` / …) | open exclusive start | *start with X* / *try X first* |
+| **…oel** (`zoel` / …) | closed exclusive start | *only try X* / *X with no listed fallback* |
+| **…uel** (`zuel` / …) | closed last place | *X last, period*; + SHARED scale → least |
+| **…uem** (`zuem` / …) | open last place | *X last* / mainly leave X for last |
+| **…en** (`zen` / …) | stock first | *X first* (stock) / *X, as usual* |
+| **…er** (`zer` / …) | unspecified ranked member | *preferably some X* / *X as a priority* |
 
 **Rank — standalone**
 
-Apply these readings when the join stands by itself (empty list). Standalone **e** answers *who first / what's your favorite* with **no descending ranking** (no favorite). Standalone **ue** answers *who last / what do you not want* with **no ascending ranking** (no least, no veto). Closed **-l** is a fact about the set; open **-m** is a shrug.
+Standalone **e** answers *who first* with no ranking (no favorite). Standalone **ue** answers *who last* with no ranking (no least, no veto). Closed **-l** is a fact about the set; open **-m** is a shrug.
 
-| Agalan | English |
-|--------|---------|
-| **…el** (`zel` / …) | *no favorite* / *nobody's first*; + SHARED scale → unspecified who's top |
-| **…em** (`zem` / …) | *whichever* (not picking who goes first) |
-| **…ael** (`zael` / …) | *it's a draw* / *tie* |
-| **…aem** (`zaem` / …) | *probably a tie* / *looks even* |
-| **…aen** (`zaen` / …) | *it's a draw* (stock) |
-| **…oem** (`zoem` / …) | *not sure where to start* |
-| **…oel** (`zoel` / …) | *do nothing* / *don't bother*; + SHARED scale → empty superlative |
-| **…oem** + SHARED scale | *no biggest comes to mind* |
-| **…uel** (`zuel` / …) | *no least-favorite* / *nobody's last*; + SHARED scale → unspecified who's bottom |
-| **…uem** (`zuem` / …) | *no objection* (not naming a veto) |
-| **…en** (`zen` / …) | *no favorite* (stock) |
-| **…er** (`zer` / …) | *whatever's most important* |
-
+| Agalan | Use | English |
+|--------|-----|---------|
+| **…el** (`zel` / …) | closed empty rank | *no favorite* / *nobody's first*; + SHARED scale → unspecified who's top |
+| **…em** (`zem` / …) | open empty rank | *whichever* (not picking who goes first) |
+| **…ael** (`zael` / …) | closed empty tie | *it's a draw* / *tie* |
+| **…aem** (`zaem` / …) | open empty tie | *probably a tie* / *looks even* |
+| **…aen** (`zaen` / …) | stock empty tie | *it's a draw* (stock) |
+| **…oem** (`zoem` / …) | open empty exclusive | *not sure where to start* |
+| **…oel** (`zoel` / …) | closed empty exclusive | *do nothing* / *don't bother*; + SHARED scale → empty superlative |
+| **…oem** + SHARED scale | open empty exclusive + scale | *no biggest comes to mind* |
+| **…uel** (`zuel` / …) | closed empty last | *no least-favorite* / *nobody's last*; + SHARED scale → unspecified who's bottom |
+| **…uem** (`zuem` / …) | open empty last | *no objection* (not naming a veto) |
+| **…en** (`zen` / …) | stock empty rank | *no favorite* (stock) |
+| **…er** (`zer` / …) | unspecified empty rank | *whatever's most important* |
 
 **Set — single-item**
 
-Apply these readings when there is only one item in the list.
+| Agalan | Use | English |
+|--------|-----|---------|
+| **…al** (`zal` / …) | closed add of one | *just X* / *only X* |
+| **…am** (`zam` / …) | open add of one | *X, for one* / *X, say* |
+| **…ol** (`zol` / …) | closed menu of one | *has to be X* |
+| **…om** (`zom` / …) | open menu of one | *say, X* / *X, or skip* |
+| **…ual** (`zual` / …) | closed invert-add of one | *everything but X* |
+| **…uam** (`zuam` / …) | open invert-add of one | *everything but X (among exclusions)* |
+| **…uol** (`zuol` / …) | closed invert-menu of one | *anything but X* |
+| **…uom** (`zuom` / …) | open invert-menu of one | *anything but X (open)* |
+| **…aol** (`zaol` / …) | closed inclusive of one | *X is enough* / *X'll do* |
+| **…aom** (`zaom` / …) | open inclusive of one | *at least X* / *X would work* |
+| **…ar** (`zar` / …) | unspecified add | *some (unknown) X* |
+| **…or** (`zor` / …) | unspecified menu | *any X* |
+| **…ul** (`zul` / …) | closed deny of one | *not X* |
+| **…um** (`zum` / …) | open deny of one | *not X (among other denials)* |
+| **…un** (`zun` / …) | stock denial of one | *not X* (stock / conventional) |
+| **…ur** (`zur` / …) | unspecified leftover | *something other than X* |
 
-| Agalan | English |
-|--------|---------|
-| **…al** (`zal` / …) | *just X* / *only X* |
-| **…am** (`zam` / …) | *X, for one* / *X, say* |
-| **…ol** (`zol` / …) | *has to be X* |
-| **…om** (`zom` / …) | *say, X* / *X, or skip* |
-| **…ual** (`zual` / …) | *everything but X* |
-| **…uam** (`zuam` / …) | *everything but X (among exclusions)* |
-| **…uol** (`zuol` / …) | *anything but X* |
-| **…uom** (`zuom` / …) | *anything but X (open)* |
-| **…aol** (`zaol` / …) | *X is enough* / *X'll do* |
-| **…aom** (`zaom` / …) | *at least X* / *X would work* |
-| **…ar** (`zar` / …) | *some (unknown) X* |
-| **…or** (`zor` / …) | *any X* |
-| **…ul** (`zul` / …) | *not X* |
-| **…um** (`zum` / …) | *not X (among other denials)* |
-| **…un** (`zun` / …) | *not X* (stock / conventional) |
-| **…ur** (`zur` / …) | *something other than X* |
-
-**…un** is the stock denial: the conventional, formulaic *not X* (a set phrase rather than a computed exclusion). Use **…ul** / **…um** for ordinary denials; **…un** only where the denial itself is the fixed expression.
+**…un** is the stock denial: a conventional *not X* (a set phrase). Ordinary denials use **…ul** / **…um**.
 
 **Set — standalone**
 
-Apply these readings when the join stands by itself (empty list).
+| Agalan | Use | English |
+|--------|-----|---------|
+| **…al** (`zal` / …) | closed empty add | *nothing* / *nobody* |
+| **…am** (`zam` / …) | open empty add | *nothing comes to mind* |
+| **…an** (`zan` / …) | named empty add | *null* / *void* (standalone-only under `/z/` `/d/` `/b/` `/w/`) |
+| **…ol** (`zol` / …) | closed empty menu | *no options* / *we're stuck* |
+| **…om** (`zom` / …) | open empty menu | *no pick* / *skipping is fine* |
+| **…ual** (`zual` / …) | closed empty invert-add | *everything* / *everyone* |
+| **…uam** (`zuam` / …) | open empty invert-add | *everything that comes to mind* |
+| **…uan** (`zuan` / …) | stock empty invert-add | *everyone* / *everything* (stock) |
+| **…uol** (`zuol` / …) | closed empty invert-menu | *anything (goes)* |
+| **…uom** (`zuom` / …) | open empty invert-menu | *anything offered* |
+| **…aol** (`zaol` / …) | closed empty inclusive | *all set* / *nothing more needed* |
+| **…aom** (`zaom` / …) | open empty inclusive | *nothing needed that comes to mind* |
+| **…ul** (`zul` / …) | closed empty deny | *no* |
+| **…um** (`zum` / …) | open empty deny | *a no from this speaker* |
+| **…un** (`zun` / …) | stock empty deny | *No* (stock) |
+| **…ar** (`zar` / …) | unspecified empty add | *something* / *someone* |
+| **…or** (`zor` / …) | unspecified empty menu | *anything* / *anyone* |
+| **…ur** (`zur` / …) | unspecified empty leftover | *something else* / *someone else* |
 
-| Agalan | English |
-|--------|---------|
-| **…al** (`zal` / …) | *nothing* / *nobody* |
-| **…am** (`zam` / …) | *nothing comes to mind* |
-| **…an** (`zan` / …) | *null* / *void* (standalone-only under `/z/` `/d/` `/b/` `/w/`) |
-| **…ol** (`zol` / …) | *no options* / *we're stuck* |
-| **…om** (`zom` / …) | *no pick* / *skipping is fine* |
-| **…ual** (`zual` / …) | *everything* / *everyone* |
-| **…uam** (`zuam` / …) | *everything that comes to mind* |
-| **…uan** (`zuan` / …) | *everyone* / *everything* (stock) |
-| **…uol** (`zuol` / …) | *anything (goes)* |
-| **…uom** (`zuom` / …) | *anything offered* |
-| **…aol** (`zaol` / …) | *all set* / *nothing more needed* |
-| **…aom** (`zaom` / …) | *nothing needed that comes to mind* |
-| **…ul** (`zul` / …) | *no* |
-| **…um** (`zum` / …) | *a no from this speaker* |
-| **…un** (`zun` / …) | *No* (stock) |
-| **…ar** (`zar` / …) | *something* / *someone* |
-| **…or** (`zor` / …) | *anything* / *anyone* |
-| **…ur** (`zur` / …) | *something else* / *someone else* |
-
-Single-item/standalone is also allowed on verb-phrase **…ul** / **…um** and clause **…ul** / **…um** / **…un** among joins. **`vun`** is a [join-act verb](join-extras.md#join-act-verbs).
-
-Under [question](questions.md#question): yes/no, offer, emptiness check, and fill-ask — [questions.md](questions.md#yes-no-single-item-standalone).
+**Related form:** lone **`vun`** is a [join-act verb](join-extras.md#join-act-verbs). Yes/no, offer, emptiness, and fill-ask on a lone join: [questions](questions.md#yes-no-single-item-standalone).
 
 ### Rank joins
 <a id="ranked-conjunction-e"></a>
 <a id="rank-joins"></a>
 <a id="priority-ranking-e"></a>
 
-The four rank vowels (**`e`** / **`ae`** / **`oe`** / **`ue`**) and their directions are introduced in [Beginner](#set-joins-and-rank-joins). Two Intermediate refinements: multi **`ae`** + SHARED scale is the [equative](comparatives.md#equatives) (*as ADJ as*), and standalone **`oe`** + SHARED scale is the empty superlative (*no biggest comes to mind*).
+When English would say two people are *as ADJ as* each other, or that nobody is the biggest, write a **rank** join and put the adjective immediately after it so it grades the whole list.
+
+**`ae`** is a tie: several names, then **`zael`** (or **`zaem`**), then the adjective. Standalone **`oe`** plus that adjective is *no biggest comes to mind*. Ranking still follows the spoken order of the names before the join.
 
 ```
 `zazawan zululon zael gomonam.`
@@ -470,20 +463,20 @@ gloss: `z-grace@` · `z-courage@` · `z-as…as` · `g-challenging`
 *Azawan is as challenging as Ululon.*
 ```
 
-Fence chains keep ranking from **spoken item order** before the right-close join.
+**Compare with:** *more / most* and *least* use **`e`** / **`oe`** / **`ue`** plus the same shared adjective — [comparatives](comparatives.md).
 
 ### Invert (**`ua`** / **`uo`** / **`ue`**)
 <a id="invert-u-stacks"></a>
 
-Leading **u** on **a** / **o** / **e** flips the base join. Plain **u** (negation) is a different row: *not / none of*.
+Beginner already used *everything but* (**`ua`**). Leading **u** on **o** and **e** completes that invert map.
 
-| Agalan | English | Cue |
-|--------|---------|-----|
-| **ua** | *everything but* the listed | **u** ≈ undo + **a** ≈ add |
-| **uo** | *anything but* the listed (free choice outside) | **u** ≈ undo + **o** ≈ one |
-| **ue** | rank reversal (*A after B after C*) | **u** ≈ undo + **e** ≈ order |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **ua** | invert add | *everything but* the listed | **u** ≈ undo + **a** ≈ add |
+| **uo** | invert menu | *anything but* the listed (free choice outside) | **u** ≈ undo + **o** ≈ one |
+| **ue** | invert rank | *A after B after C* (last first) | **u** ≈ undo + **e** ≈ order |
 
-Those three stacks are the invert set. Domain for **ua** / **uo** comes from context or SHARED `/ɡ/` as kind — [universals, domains, and generics](#universals-domains-generics). Only **`…om`** carries *or none*; **-m** on invert forms does not add empty-allowed. **-r** attaches only to single-vowel **a** / **o** / **e** / **u**.
+Kind / domain for **ua** / **uo** is context or SHARED `/ɡ/` — [universals, domains, and generics](#universals-domains-generics). Skip is only **`…om`**. **-r** still attaches only to single-vowel **a** / **o** / **e** / **u**.
 
 ```
 `zadedal zogovel zual.`
@@ -493,26 +486,24 @@ gloss: `z-tea` · `z-coffee` · `z-everything-but`
 *everything but tea and coffee.*
 ```
 
-`zagadal zual` = *everything but the cat*. For *every cat*, use SHARED kind: `zual gagadal`.
+**Compare with:** plain **`u`** is *not* / *none of* the listed, not an invert stack. *Every cat* uses SHARED kind after **`zual`**: `zual gagadal`.
 
 ### Exclusivity, negation, and distribution
 
-**Exclusive (`o`)** — at most one item. **-l** = exactly one (empty not allowed); **-m** = at most one (*or none*).
+When English would allow several listed items at once (*and/or*), stack **a** then **o** (**`ao`**). **`o`** alone is still at most one: closed **-l** is exactly one; open **-m** allows skip. On **`ao`**, even **-m** still needs at least one of the listed items.
 
-**Inclusive (`ao`)** — one or more may hold. **-m** on **ao** still requires at least one.
-
-**Negation over a join:** the *not* applies to **each** item and the join vowel **stays the same**. *Not (A and B)* is still an *and* of two denials; *not (A or B)* is still an *or* of two denials.
+When English would deny a whole join, *not* applies to **each** item and the join vowel **stays the same**. *Not (walk and run)* is still an *and* of two denials; *not (walk or run)* is still an *or* of two denials.
 
 ```
-`A B val vul.`
+`vawalal vurunul val vul.`
 
-*not (A and B)*: *not A, and not B.*
+*not (walk and run)*: *not walk, and not run.*
 ```
 
 ```
-`A B vol vul.`
+`vawalal vurunul vol vul.`
 
-*not (A or B)*: *not A, or not B.*
+*not (walk or run)*: *not walk, or not run.*
 ```
 
 ### Universals, domains, and generics
@@ -520,48 +511,35 @@ gloss: `z-tea` · `z-coffee` · `z-everything-but`
 <a id="generics"></a>
 <a id="every-k"></a>
 
-Mark kind / domain with ordinary **SHARED `/ɡ/`**. Items under **ua** / **uo** are **exclusions** from that domain.
+When English would say *every cat* rather than *everything but the cat*, write **`ua`** and put the kind as a shared adjective after the join (`zual gagadal`). Any nouns listed before that join are leftovers excluded from that kind. The same **`ua`** join covers both *every K* and *everything but X*.
 
-| Agalan | English |
-|--------|---------|
-| standalone `zual` | *everything* / *everyone* |
-| `zual` + SHARED `/ɡ/` | *every K* (`zual gagadal` = *every cat*) |
-| `zuam` + SHARED `/ɡ/` | soft universal of K |
-| `zual` + SHARED `/ɡ/` + items | *every K but* exclusions |
-| single-item `zual X` (no SHARED) | *everything but X* (English *every X* uses SHARED kind instead) |
-| bare `hual` | *always* (habitual frame) — [restrictors.md](restrictors.md) |
-
-**Generics** use these fences. Plural **-sh** is a different job ([plurality.md](plurality.md)):
-
-- Strict / definitional → closed `zual` + SHARED kind + [FORMAL](special-vocabulary.md#universality) when needed.
-- Soft / epistemic → open `zuam` + SHARED kind.
-- Habitual characterizing → bare `hual` on the clause.
-- Free-choice disposition (*Any cat will do*) → `zor`.
+| Agalan | Use | English |
+|--------|-------|---------|
+| standalone `zual` | empty invert-add | *everything* / *everyone* |
+| `zual` + SHARED `/ɡ/` | closed every-kind | *every K* (`zual gagadal` = *every cat*) |
+| `zuam` + SHARED `/ɡ/` | open every-kind | soft universal of K |
+| `zual` + SHARED `/ɡ/` + items | every-kind minus leftovers | *every K but* exclusions |
+| single-item `zual X` (no SHARED) | leftover only | *everything but X* |
 
 ```
 `zual gagadal.`
 
-gloss: `z-everything-but` · `g-cat`
+gloss: `z-everything` · `g-cat`
 
 *every cat.*
 ```
+
+Strict / definitional generics use closed `zual` plus kind (and [FORMAL](special-vocabulary.md#universality) when needed). Soft / epistemic generics use open `zuam` plus kind. Free-choice *any cat will do* uses `zor`.
+
+**For *always*, use:** bare habitual **`hual`** — [restrictors](restrictors.md).
+
+**Not the same job as:** plural **-sh** ([plurality](plurality.md)) names an anchor and associates, not *every K*.
 
 ### SHARED after the join
 <a id="scope-fence-p-coord"></a>
 <a id="scope-fence-p-join"></a>
 
-Modifiers that sit **immediately after** a phrase-level join describe the **whole list** (ordinary adjective `/ɡ/` or extra `/w/` after the join).
-
-| Join family | SHARED `/ɡ/` role |
-|-------------|-------------------|
-| **a** | distributive property (*both ADJ*) or bundle description |
-| **a** + `/ɡ/`…**-sh** | [collective](plurality.md#adjectives-g) (*ADJ together*) |
-| **ae** + gradable `/ɡ/` | [equative](comparatives.md#equatives) scale |
-| **e** / **oe** / **ue** on NP | [comparison scale](comparatives.md) |
-| **ua** / **uo** | kind / domain for universals |
-| **a** / **e** / **ue** / **ua** + two number endpoints | [range](numbers-applied.md#ranges) with continuum `/ɡ/` |
-
-Local modifiers stay **inside** each item (after that item's head, or `gl-` before the head). Further matching-role heads belong *before* the join, not after `P-JOIN` / `SHARED`.
+When an adjective or extra noun is meant for the **whole list** (*both challenging*, *Azawan's dog and cat*), write it **immediately after** the join. That material describes every member together. A modifier that belongs to one item only stays on that item (after its head, or `gl-` before it).
 
 ```
 `zodogol zagadal zal gomonam.`
@@ -579,41 +557,52 @@ gloss: `z-dog` · `z-cat` · `z-and.open` · `g-ownership` · `b-grace@`
 *Azawan's (dog and cat).*
 ```
 
+| Join family | Use of SHARED `/ɡ/` |
+|-------------|----------------------|
+| **a** | distributive property (*both ADJ*) or bundle description |
+| **a** + `/ɡ/`…**-sh** | [collective](plurality.md#adjectives-g) (*ADJ together*) |
+| **ae** + gradable `/ɡ/` | [equative](comparatives.md#equatives) scale |
+| **e** / **oe** / **ue** on NP | [comparison scale](comparatives.md) |
+| **ua** / **uo** | kind / domain for universals |
+| **a** / **e** / **ue** / **ua** + two number endpoints | [range](numbers-applied.md#ranges) with continuum `/ɡ/` |
+
+Further matching-role heads belong *before* the join.
+
 ### Fence nesting
 <a id="fence-nesting"></a>
 
-Flat coordination uses **one** right-close fence. **Nested** joins stack multiple right closes from the left: the first join closes the earlier items, then that bundle plus the next item takes the next join.
+When one list sits inside another (*(tea or coffee) and water*), write the inner items, then their join, then the outer item, then the outer join. Each join sits after only the stretch it closes. You nest by stacking right-close joins; a flat list still uses one join after every member.
 
 | Pattern | Agalan | English |
 |---------|--------|---------|
-| flat | `A B C vol` | *A or B or C* |
-| nested | `A B vol C val` | *(A or B) and C* |
+| flat | `zadedal zogovel zunudel zol` | *tea or coffee or water* |
+| nested | `zadedal zogovel zol zunudel zal` | *(tea or coffee) and water* |
 
-Each join sits after the items it closes. Scope islands may wrap an inner join: `A ^ B C val ^ vol` → *A or (B and C)*.
-
-Same rule at phrase, verb-phrase, and clause level.
+Same order at phrase, verb-phrase, and clause level.
 
 ### Sequence (`-n`, clause only)
 <a id="sequence"></a>
 <a id="clause-sequence"></a>
 
-On **`/x/`** only, join **-n** is **sequence**. This join-word **-n** (with phrase **-n** and join-acts / join-relations) is the **only** exception to [ordinary named **-n**](reference-suffix.md#proper-name--n). Narrative *and then* is **`xan`**.
+When English would walk through events in time (*and then*), put ending **-n** on a clause continue join (`/x/`). Narrative *and then* is **`xan`**. The clauses keep one speech act; this **-n** orders them rather than naming a person.
 
-| Agalan | English |
-|--------|---------|
-| `xan` | *and then…* |
-| `xon` | *or maybe…* — uncertain alternatives |
-| `xun` | soft *not* / *none of… as I recall…* |
-| `xaon` | *and/or maybe…* |
-| `xuan` / `xuon` | soft complement inventory / free choice |
-| `xen` / `xaen` / `xoen` / `xuen` | soft ranked / tie / exclusive / reversal |
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| `xan` | sequence add | *and then…* | **a** ≈ add |
+| `xon` | sequence menu | *or maybe…* | **o** ≈ one |
+| `xun` | sequence deny | soft *not* / *none of… as I recall…* | **u** ≈ undo |
+| `xaon` | sequence inclusive | *and/or maybe…* | **ao** ≈ add then one |
+| `xuan` / `xuon` | sequence invert | soft complement inventory / free choice | **ua** / **uo** |
+| `xen` / `xaen` / `xoen` / `xuen` | sequence rank | soft ranked / tie / exclusive / reversal | **e** / **ae** / **oe** / **ue** |
 
-VP `/v/`…**-n** spellings are [join-act verbs](join-extras.md#join-act-verbs). `/ɡ/` `/h/`…**-n** are [join-relations](join-extras.md#join-relations).
+**Related form:** the same letters under `/v/` are [join-act verbs](join-extras.md#join-act-verbs); under `/ɡ/` `/h/` they are [join-relations](join-extras.md#join-relations). Ordinary content **-n** still [names](reference-suffix.md#proper-name--n) a person or titled frame.
 
 ### VP and clause forms
 <a id="vp-clause-forms"></a>
 <a id="vowels--endings"></a>
 <a id="ending-senses-clause-joins"></a>
+
+Beginner already used `vam` and `xam`. The same vowels and endings under `/v/` and `/x/`:
 
 | | **-l** | **-m** | **-n** | **-r** |
 |---|--------|--------|--------|--------|
@@ -628,26 +617,22 @@ VP `/v/`…**-n** spellings are [join-act verbs](join-extras.md#join-act-verbs).
 | **oe** | `voel` / `xoel` | `voem` / `xoem` | `xoen` sequence | — |
 | **ue** | `vuel` / `xuel` | `vuem` / `xuem` | `xuen` sequence | — |
 
-**Verb-phrase** — each item is a verb plus its own object material. When every item is a bare verb, a `/d/` **immediately after** the join (SHARED) scopes over all verbs: `vejel vabelel vam dabelel` → *sees and tempts an apple*.
+Each verb-phrase item is a verb plus its own object material. When every item is a bare verb, a `/d/` immediately after the join is SHARED over all verbs: `vejel vabelel vam dabelel` → *sees and tempts an apple*.
 
-**`/h/` scope relative to the verb-phrase fence:**
+An adverb `/h/` before the verb-phrase stretch, or in SHARED after the join, covers every item. `/h/` inside an item covers that verb phrase only.
 
-- `/h/` **before** the verb-phrase stretch → applies to every item.
-- `/h/` in SHARED after the join → shared over every item.
-- `/h/` inside an item → that verb phrase only.
-
-**Clause-level** — `/x/` is **same-speech-act continuation**. Non-initial items **inherit** the opener speech act and omit `/j/` (including recoverable **`jal`**). One speech act for the whole fence.
+`/x/` keeps the **same speech act**. Later clauses inherit the opener and omit `/j/` (including recoverable **`jal`**).
 
 ```
-`A B C xan.`
+`zazawan vawalal zululon vurunul xan.`
 
-*A and then B and then C.*
+*Azawan walks and then Ululon runs.*
 ```
 
 ```
-`A B xol C xal.`
+`zazawan vawalal zululon vurunul xol zuhubun velebel xal.`
 
-*(A or B) and C.*
+*(Azawan walks or Ululon runs) and Uhubun sleeps.*
 ```
 
 ### Translation practice
@@ -776,64 +761,99 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 ### Scope islands
 <a id="scope-islands-join"></a>
 
-When other same-slot material sits nearby, wrap the sub-stretch and its join **inside** a [scope island](spans.md#scope-islands) **`^ … ^`**. The join stands **inside** the island and absorbs only matching-role material there.
+When same-role words sit next to a smaller list, wrap that stretch and its join in **`^ … ^`**. The join inside the island takes members only from between those marks. One island per clause; material outside needs its own outer join.
 
 | Agalan | English |
 |--------|---------|
 | `zazawan ^ zunudel zal ^ zam` | *Azawan and (just water)* |
 | `zazawan ^ zal ^ zam` | *Azawan and nothing* |
 | `^ zunudel zal ^` | *just water* alone in the slot |
-| `^ z<A> z<B> zam ^` | *A and B (island)* |
 
-One island per clause. Same-slot material outside an island needs an outer join tying it in.
+```
+`zazawan ^ zunudel zal ^ zam.`
+
+*Azawan and (just water).*
+```
+
 
 ### Named phrase **`-n`**
 <a id="named-list"></a>
 <a id="named--conventional-ending-phrase-level-all-join-vowels"></a>
 
-On **phrase-level** joins under **`/z/` `/d/` `/b/` `/w/`** only, **-n** marks a **named list**: an established bundle (*the primary colors*, *stop–drop–roll*), not a freshly composed inventory. This is join-word **-n**, not a person/place name. It shares the **only** exception to [ordinary named **-n**](reference-suffix.md#proper-name--n) with clause **sequence** and join-acts / join-relations.
+When a phrase list is an established bundle (*the usual menu*, *stop–drop–roll*), end the join with **-n** under `/z/` `/d/` `/b/` `/w/`. That **-n** names the package, not a person.
 
-**…an** is **standalone-only** on phrase fences under **`/z/` `/d/` `/b/` `/w/`** (no one-item reading). Under `/ɡ/` `/h/`, **…an** / **…en** / other **-n** join-vowel spellings are [join-relations](join-extras.md#join-relations).
+```
+`zadedal zogovel zon.`
+
+*tea or coffee (the usual named menu)*
+```
+
+**…an** is standalone-only on those phrase fences (*null* / *void*). Under `/ɡ/` `/h/`, the same letters are [join-relations](join-extras.md#join-relations).
+
+**Compare with:** clause **`xan`** is *and then*, not a named package.
+
 
 ### Rare arities and edge readings
 
-- Single-item / standalone phrase forms listed in Intermediate are the defined set; all other phrase joins need two or more items.
-- **…ul** / **…um** / **…un** are defined at **all** arities where still joins (standalone *no*; single-item *not X*; multi *none of*).
-- **…ar** / **…or** / **…er** / **…ur** at all arities — see [unspecified-member **-r**](#unspecified-member-r-phrase).
-- **…aen** standalone = *it's a draw*; **…en** standalone = *no favorite* (stock); **…an** standalone = *null* / *void*.
-- **…ual** standalone = *everything*; **…uol** standalone = *anything (goes)*.
-- Content-word `-l`: `zeberel` = ordinary indefinite (*a person*). `zeberel zar` = explicitly non-identified (*some person, unknown who*).
-- `A B C zor` = any of them is fine (equal standing). `A B C zer` = pick by ranking.
-- `A B zar` = some one **among** A and B. `A B zur` = some one **other than** A and B. `A B zual` = *everything but* A and B.
-- Revision **`ul`** / **`um`**: *except* a named right-hand side — [revisers.md](revisers.md). Prefixed **`zur`**: unspecified *something else*.
-- Rank **oe** marks exclusive realization along a ladder; preference vs contingency is read from context, not a different ending.
-- Nest if you need a rare mix (e.g. closed list but empty OK: `A B vol zol zal`).
-- Causal default on **`…aom`** → [causation.md](causation.md#sufficient).
+Most other phrase joins need two or more items. These edge readings keep a defined sense at every arity, or mix two joins by nesting.
+
+| Agalan | Use | English |
+|--------|-----|---------|
+| **…ul** / **…um** / **…un** | deny at every arity | standalone *no*; one item *not X*; multi *none of* |
+| **…ar** / **…or** / **…er** / **…ur** | unspecified member at every arity | [unspecified **-r**](#unspecified-member-r-phrase) |
+| **…aen** / **…en** / **…an** standalone | stock empty rank / named empty | *it's a draw*; *no favorite* (stock); *null* / *void* |
+| **…ual** / **…uol** standalone | empty invert | *everything*; *anything (goes)* |
+| `zeberel` vs `zeberel zar` | content **-l** vs join **-r** | *a person* vs *some person, unknown who* |
+| `A B C zor` vs `… zer` | menu vs rank unspecified | any of them is fine vs pick by ranking |
+| `A B zar` / `zur` / `zual` | among / leftover / invert | some one among; some one other than; *everything but* |
+| **`oe`** | exclusive step on a ladder | preference vs contingency from context |
+
+```
+`zadedal zogovel zunudel zor.`
+
+*any of tea, coffee, or water is fine (no order).*
+```
+
+**For *except*, use:** reviser **`ul`** / **`um`** — [revisers](revisers.md). Prefixed **`zur`** is unspecified *something else*. Nest when you need a rare mix (closed list but skip OK: `zadedal zogovel zol zal`). Sufficient *at least* **`…aom`**: [causation](causation.md#sufficient).
+
 
 ### Allowed joins by PoS
 <a id="phrase-reserved-forms"></a>
 
-Under `/z/` `/d/` `/b/` `/ɡ/` `/w/` `/h/`, the join series plus allowed endings are these joins or [restrictors](restrictors.md) (under `/h/` `/w/`: [restrictor inventory](restrictors.md#defined-core-full)). **`/ɡ/`…**-n** and **`/h/`…**-n** are [join-relations](join-extras.md#join-relations). Join vowels stack at most two letters.
+Join vowels stack at most two letters. Endings by role letter:
 
-Under `/v/`, join endings are **-l** / **-m** / **-r**; parallel **-n** spellings are [join-act verbs](join-extras.md#join-act-verbs).
+| Role | Join endings | Notes |
+|-------|----------------|-------|
+| `/z/` `/d/` `/b/` `/w/` | **-l** / **-m** / **-n** / **-r** ( **-r** only on **a** / **o** / **e** / **u**) | phrase lists; **-n** is a named package |
+| `/ɡ/` `/h/` | same series as restrictors allow | [restrictors](restrictors.md#defined-core-full); **-n** is a [join-relation](join-extras.md#join-relations) |
+| `/v/` | **-l** / **-m** / **-r** | parallel **-n** is a [join-act verb](join-extras.md#join-act-verbs) |
+| `/x/` | **-l** / **-m** / **-n** | stacked vowels take **-l** / **-m** / **-n**, not **-r** |
 
-Under `/x/`, the join series plus allowed endings are these clause joins. Stacked vowels take **-l** / **-m** / **-n** (sequence), not **-r**.
+Word shape: [phonology](phonology.md#phonotactics).
 
-Join-root phonotactics: [phonology.md](phonology.md#phonotactics).
 
 ### Constraints
 
-- **One slot** per chain: a single subject, object, `/b/` argument, `/ɡ/` stack position, `/w/` restrictor unit, or `/h/` restrictor unit. Under `/h/` `/w/`, that slot is a restrictor, not sibling *and*.
-- **Matching role prefix** on every item head and on the join.
-- **One right-close fence per flat list.** Nested joins: [fence nesting](#fence-nesting).
-- **Shared modifiers** only immediately after each `P-JOIN`; local modifiers stay after their own heads.
-- **Phrase -r** — only **…ar** / **…or** / **…er** / **…ur**.
-- Verb+object packages use the verb-phrase fence (`/v/`). Full sentences use `/x/`.
-- Same PoS on every item. In-clause *including* / *rather* / *instead* / *except* are [revisers](revisers.md). Cite / mention / aside use [span fences](spans.md). Numbered *first / second* discourse uses [numbers](numbers.md#number-as-discourse-marker-by-marker).
-- Prefixed joins always have a role letter + ending. Prefix-less **al** / **am** / … are revisers. Whole-word **a** / **e** / **o** / **u** (no ending) are not words.
-- Floating `/h/` inside an NP/AP/`/b/` join does not end the list. Verb-chain `/h/` scope differs — see [verb-phrase](#vp-level-coordination).
-- Clause-level: each item is a full clause body; *because* / *if* stay `/h/` + `/b/` [**`adoro`**](pronouns.md#special-pronouns).
-- Sibling manner stacking on `/h/` `/w/` uses **juxtaposition** (`hadazal howol`).
+These limits apply to every join.
+
+| Limit | Pattern |
+|-------|---------|
+| One slot per chain | one subject, object, `/b/` argument, `/ɡ/` stack, or `/w/` / `/h/` unit |
+| Matching role letter | every item head and the join share the first letter |
+| One right-close per flat list | nest as [fence nesting](#fence-nesting) |
+| Shared modifiers | only immediately after each join |
+| Phrase **-r** | only **…ar** / **…or** / **…er** / **…ur** |
+| Verb+object packages | verb-phrase `/v/`; full sentences use `/x/` |
+| Same role letter on every item | in-clause *including* / *rather* / *instead* / *except* are [revisers](revisers.md) |
+| Cite / mention / aside | [span fences](spans.md) |
+| Numbered *first / second* in talk | [numbers](numbers.md#number-as-discourse-marker-by-marker) |
+| Every join | role letter plus an ending |
+| Several manners on `/h/` `/w/` | juxtaposition (`hadazal howol`) |
+
+**Compare with:** prefix-less **`al`** / **`am`** / … are [revisers](revisers.md). Under `/h/` `/w/`, the unit is a [restrictor](restrictors.md), not sibling *and*.
+
+*Because* / *if* use `/h/` plus `/b/` [**`adoro`**](pronouns.md#special-pronouns). Floating `/h/` inside a noun, adjective, or `/b/` join does not end the list. Verb-chain `/h/` scope: [VP and clause forms](#vp-clause-forms). Each clause-level item is a full clause body.
+
 
 ### Translation practice
 <a id="translation-practice-advanced"></a>

@@ -198,28 +198,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 ### Ability fallback (`egera`)
 <a id="ability-fallback"></a>
 
-When there is **no single host root** (a multi-root activity, a hostless *can’t*, or a clause-wide tag), use **`egera`** (**ABIL**): a closed root that names capacity without an activity host.
-
-```
-[h|w] + egera + x + {a|e|o|u} + {-l|-m|-n|-r}
-```
-
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| `/h/` | capability over the clause (with other `/h/` words) | clause-wide *can* / *can’t* | 🥣 *cereal*: a bowl for the whole clause |
-| `/w/` | capability on the preceding `/ɡ/` | *can* / *can’t* that property | 🥣 *cereal*: a bowl for that property |
-
-Stance vowels match [Beginner](#ability-stance). Prefer **host + stance** whenever the activity fits one root. Bare `hegeral` / `wegeral` names ability as a **topic** only (ordinary [reference-suffix](reference-suffix.md)). Ordinary `zegeral` still means *cereal* / *a capacity*.
-
-On **`egera` + stance**, use **-m** when you mean capacity as a metaphor; use **-l** when you mean a literal bowl / cereal frame.
-
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| bare **`egera`** (no `x`) | names ability only | *ability* (topic) | no stance vowel: just the bowl |
-| **`xa`** | tags capable | *can* | **a** ≈ add |
-| **`xe`** | tags can’t for this moment | *can’t right now* | **e** ≈ order |
-| **`xo`** | tags can’t that may change (or unknown grain) | *can’t (yet / open)* | **o** ≈ one (one open *can’t*) |
-| **`xu`** | tags can’t as fixed as you can tell | *can’t (fixed)* | **u** ≈ undo |
+Sometimes English *can* / *can’t* is not about one named activity or property: a multi-root activity, a floating *can’t*, or a tag over the whole clause. Then there is no host root to insert **`x`** into. Spell that capacity with the closed root **`egera`** (**ABIL**): after **`egera`**, write the same **`x`**, stance vowel, and ending as on a host. Put the word on `/h/` for the clause, or on `/w/` for the adjective just before it. You can then tag *can* / *can’t* without naming the activity in that word. Prefer a host whenever one activity root fits.
 
 ```
 `zazawan hegeraxel.`
@@ -229,15 +208,33 @@ gloss: `z-grace@` · `h-ABIL-unable-temporary`
 *Azawan can’t right now (no single host / clause-wide).*
 ```
 
-Need **`xu`** on a need root is unmet need ([values](values.md)), not a competence *can’t*. Applicability *when* / *never* is [restrictors](restrictors.md) (`hal`, `har`, …). You can stack both: `vuzunuxol holozoxum` is modifiable can’t-sing **and** unmet competence.
+```
+`zululon gelem wegeraxel.`
 
-| Agalan | Use | English |
-|--------|-----|---------|
-| host + stance | can / can’t this activity | `zazawan vuzunuxel` *Azawan can’t sing right now* |
-| **`hegera` + stance** | clause-wide / hostless capability | `zuhubun hegeraxol` *Uhubun can’t (may change)* |
-| **`hegeral`** | ability as topic | `hegeral` |
-| need **`xu`** | unmet need | `holozoxum` (competence) |
-| restrictor | when the host applies | `hal` *never* |
+gloss: `z-courage@` · `g-big~` · `w-ABIL-unable-temporary`
+
+*Ululon is big: can’t right now* (capability on that property).
+```
+
+(cue: 🥣 *cereal*: a bowl that holds what you can do)
+
+Beginner already used the stance vowels on a host. On **`egera`** they are the same map. Bare **`egera`** (no **`x`**) names ability as a topic only (ordinary [reference-suffix](reference-suffix.md)). On **`egera` + stance**, **-m** is capacity as a metaphor; **-l** is a literal bowl / cereal frame.
+
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`hegera` + stance** | *can* / *can’t* over the clause | clause-wide / hostless | 🥣 *cereal*: bowl for the clause |
+| **`wegera` + stance** | *can* / *can’t* on the preceding `/ɡ/` | that property | 🥣 *cereal*: bowl for that property |
+| bare **`hegeral`** / **`wegeral`** (no `x`) | names ability only | *ability* (topic) | no stance vowel |
+| **`xa`** | tags capable | *can* | **a** ≈ add |
+| **`xe`** | tags can’t for this moment | *can’t right now* | **e** ≈ order |
+| **`xo`** | tags can’t that may change (or unknown grain) | *can’t (yet / open)* | **o** ≈ one (one open *can’t*) |
+| **`xu`** | tags can’t as fixed as you can tell | *can’t (fixed)* | **u** ≈ undo |
+
+Ordinary `zegeral` still means *cereal* / *a capacity* (content word, no stance).
+
+**Compare with:** **`xa` / `xu`** on a [values](values.md) **need** is met / unmet need (`holozoxum` *competence unmet*). On **`egera`**, those vowels are still can / can’t.
+
+**For *when* / *never*, use:** [restrictors](restrictors.md) (`hal`, `har`, …). You can stack a host tag with a need: `vuzunuxol holozoxum` is open *can’t sing* and unmet competence.
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>

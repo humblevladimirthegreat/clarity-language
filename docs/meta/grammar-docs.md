@@ -20,7 +20,7 @@ Learner English names for constructions live on [terminology.md](../grammar/term
 
 ## Dual role
 
-Each grammar page is both **source of truth** for its subsystem and **learner text**. Prefer teach-first structure over inventory-first dumps in **Beginner** ([Beginner stage shape](#beginner-stage-shape)). **Advanced may be inventory-first**; if Advanced dwarfs Beginner, split the file. Unassigned or unused-slot inventory stays in [unassigned-reserved.md](unassigned-reserved.md); rejected or speculative features stay in [TODO.md](../../TODO.md) — never in a grammar page appendix. Grammar pages teach **assigned readings only**. Do not ship a form as “reserved,” “not used,” or “or reserved,” and do not keep a **Reserved forms** heading whose job is to fence unused phonotactics. *This spelling already has job X* (e.g. a time-code host) is a positive rule — say the job, not “reserved.” If the learner must not build a shape, omit it; if they might invent it *now*, one [Compare with](#compare-with) sentence is enough — never a leftover-slot inventory.
+Each grammar page is both **source of truth** for its subsystem and **learner text**. Prefer teach-first structure over inventory-first dumps in **Beginner** ([Beginner stage shape](#beginner-stage-shape)). Later stages may complete a paradigm as a table ([Intermediate and Advanced stage shape](#later-stage-shape)); if Advanced dwarfs Beginner, split the file. Unassigned or unused-slot inventory stays in [unassigned-reserved.md](unassigned-reserved.md); rejected or speculative features stay in [TODO.md](../../TODO.md) — never in a grammar page appendix. Grammar pages teach **assigned readings only**. Do not ship a form as “reserved,” “not used,” or “or reserved,” and do not keep a **Reserved forms** heading whose job is to fence unused phonotactics. *This spelling already has job X* (e.g. a time-code host) is a positive rule — say the job, not “reserved.” If the learner must not build a shape, omit it; if they might invent it *now*, one [Compare with](#compare-with) sentence is enough — never a leftover-slot inventory.
 
 ## Present the current language only
 <a id="present-the-current-language-only"></a>
@@ -64,6 +64,7 @@ If a pairing, slot, or word order existed only in an earlier draft of the docs o
 **Test:** would a reader who never saw a previous version invent that wrong shape from *this page* and from English? If the only reason to mention the hole is an old doc, delete the sentence. Keep a [Compare with](#compare-with) beat only when the live sibling (or an English false friend they would type *now*) is the mix-up.
 
 ## No process or corrective leftover
+<a id="no-process-or-corrective-leftover"></a>
 
 Headings, leads, and asides must make sense to someone who never saw an earlier draft, agent note, or maintainer instruction.
 
@@ -164,7 +165,7 @@ Prefer commas, colons, parentheses, or separate sentences over em dashes. An em 
 1. **Title + one-line job** — the English job this page teaches (learner-facing). Sibling links only when the learner will reach for that form *now* — [Compare with](#compare-with), not “this page owns / does not own” fencing.
 2. **Needs** (optional) — **rare.** Use only when the page is late and the dependency is not obvious from the [cross-doc path](learning-levels.md#cross-doc-path) (e.g. causation → joins + **`adoro`** from core Beginner; comparatives → rank joins). Label as `**Needs:**` with one short link line. Do **not** ritualize “core Beginner; reference-suffix Beginner” on every page.
 3. **`## Beginner` / `## Intermediate` / `## Advanced`** — per [learning-levels.md](learning-levels.md). Include **Advanced** only when that page has rare inventory to teach ([empty or pointless stages](#empty-stages)).
-4. Inside each stage: **concept → English job → Agalan shape → one consequence → 1–3 examples → (optional contrast) → full table if needed**. Cue in the same block or in the **Cue** column, not as the lead. Inside **Beginner**, H3 order is **dependency order for building a clause** ([Beginner stage shape](#beginner-stage-shape)), not inventory order (not “all letters, then all syntax”). Writing / citation notes are last in that stage. [Explain before you slogan](#explain-before-you-slogan).
+4. Inside each stage: **concept → English job → Agalan shape → one consequence → 1–3 examples → (optional contrast) → full table if needed**. Cue in the same block or in the **Cue** column, not as the lead. Inside **Beginner**, H3 order is **dependency order for building a clause** ([Beginner stage shape](#beginner-stage-shape)), not inventory order (not “all letters, then all syntax”). Writing / citation notes are last in that stage. Later stages: [Intermediate and Advanced stage shape](#later-stage-shape). [Explain before you slogan](#explain-before-you-slogan).
 5. Optional **See also** at the end — a few precise related forms only; no long link walls in the lead (and no lead preview of later peers — [teach now; don’t preview later](#teach-now-dont-preview-later)).
 
 Front matter that orients (psychological purpose / limits / feature criteria / benefit tour — [why-agelan.md](../grammar/why-agelan.md); grammar design / how to learn — [introduction.md](../grammar/introduction.md)) is not a learning stage. Reading order lives in the path / sidebar — not repeated as Prerequisites.
@@ -181,7 +182,7 @@ Front matter that orients (psychological purpose / limits / feature criteria / b
 | 5 | [Compare with](#compare-with) — **only the form they would use for this English** |
 | 6 | Inventory / edge cases |
 
-Do not open a section with a complete paradigm table. Tables come after the pattern is usable.
+Do not open a **Beginner** section, or a later-stage H3 that teaches a **new English job**, with a complete paradigm table. Tables come after the pattern is usable. An H3 whose only job is to **finish a series already taught** may open with a short pointer and the table ([later-stage shape](#later-stage-shape)).
 
 ## Beginner stage shape
 <a id="beginner-stage-shape"></a>
@@ -204,6 +205,35 @@ Do **not** open Beginner with:
 **Inventory tables after one worked row.** A closed-form table with more than a few rows (subordinators, speech-act family, full PoS) follows **one** English job + example. Extra rows are “you can also say,” not equal first teaching.
 
 **Drills as a check.** After drafting Beginner, walk the [translation practice](translation-exercises.md): every taught H3 should appear in a drill, or get cut / demoted. Setup that only exists so a later drill parses (`/h/` + `/b/` before **`adoro`**) stays as the **minimum** needed for that drill.
+
+## Intermediate and Advanced stage shape
+<a id="later-stage-shape"></a>
+<a id="intermediate-stage-shape"></a>
+<a id="advanced-stage-shape"></a>
+
+Folder-wide hygiene still applies: [present the current language only](#present-the-current-language-only), [no process leftover](#no-process-or-corrective-leftover), [which tool, not which owner](#which-tool-not-which-owner), house cast, omit default **`jal`**, [empty stages](#empty-stages). A learner who opens Intermediate without rereading Beginner must not meet editor history, “stays on,” or denials of withdrawn constructions.
+
+Do **not** rerun [Beginner stage shape](#beginner-stage-shape) on later stages. Completing a paradigm as a table is the job of Intermediate; rare or stylistic inventory is the job of Advanced. Forcing “grow one cell at a time” there fights the dual role.
+
+**Kinds of later-stage H3.** Sort each heading, then write to that kind:
+
+| Kind | When | Shape |
+|------|------|--------|
+| **New English job** | A construction they could not say after Beginner (soft speech acts, adjective before the noun, nested **`adoro`**) | Same lead order as Beginner: English job → Agalan shape → consequence, then **one** worked example, then the table or [Compare with](#compare-with). Cue last, not as the definition. Per-cell cues are optional. |
+| **Finish the series** | The rest of a map they already use (full join single-item/standalone, remaining linkers, period/speech rhythm) | One short pointer (“Beginner already used *therefore*”) plus the inventory table. Do not unpack every row as its own H3. |
+| **Rare / stylistic Advanced** | Edge, meter, singing, uncommon variants | Inventory plus one example or one preference sentence. Skip per-cell cues. |
+
+| Apply | Do not apply |
+|-------|----------------|
+| Hygiene and [Compare with](#compare-with) starters | Smallest-clause-first page architecture |
+| [Explain before you slogan](#explain-before-you-slogan) on **new-job** leads | Mandatory cue per inventory cell |
+| [Plain language](#plain-language-no-assumed-linguistics) for **new** labels this stage introduces | Re-gloss house shorthand Beginner already unpacked (*job*, *point*, *setting*, *body*) |
+| **Cue** column on vowel / ending maps | Two-to-four-sentence hard length on every lead |
+| Intermediate must not teaser Advanced ([teach now](#teach-now-dont-preview-later)); naming a Beginner form by its taught name is fine | Kitchen-sink ban — later examples may stack subsystems |
+
+**Slogan test on new-job leads only.** Cover the example: could they restate the new choice? Inventory H3s need not pass that test; the table is the teaching.
+
+**Drills.** Intermediate checkpoints exist ([translation-exercises.md](translation-exercises.md)). They cover the **new jobs**, not every inventory row. A pointer-only H3 (number-as-interjection → [numbers.md](../grammar/numbers.md)) needs no drill on this page.
 
 ## Cues
 <a id="cues-columns"></a>
@@ -271,7 +301,7 @@ Usual sources (prefer one; reuse the language’s own systems):
 
 - Address the learner in second person (“use **-r** when…”, “prefer names when…”). That *you* is English pedagogy — not Agalan **`edone`**.
 - Teaching stages do not use maintainer *we* (“we now write…”) or author *I*. Author *I* is allowed only on signed non-teaching prose in this folder (acknowledgments; the purpose / limits essay), not on rule pages.
-- One idea per H2/H3. The first paragraph should be one **complete** explanation: English job, Agalan shape, and what that lets the learner do ([explain before you slogan](#explain-before-you-slogan)). That is the same bar as the [easy-to-use feature criterion](../grammar/why-agelan.md#criterion-for-features) (roughly one paragraph plus a couple of examples), not a one-sentence aphorism.
+- One idea per H2/H3. On a **new job**, the first paragraph should be one **complete** explanation: English job, Agalan shape, and what that lets the learner do ([explain before you slogan](#explain-before-you-slogan)). That is the same bar as the [easy-to-use feature criterion](../grammar/why-agelan.md#criterion-for-features) (roughly one paragraph plus a couple of examples), not a one-sentence aphorism. A later-stage H3 that only finishes a series may be a short pointer plus a table ([later-stage shape](#later-stage-shape)).
 - Prefer short paragraphs plus a table over a wall of prose.
 - Bold sparingly; put Agalan forms in backticks (`jal`, **-r**, `/ɡ/`).
 - Always call the language **Agalan**. Community / project URLs that still use a legacy host path are fine when they are the real link; do not “fix” them in learner prose.
@@ -279,7 +309,7 @@ Usual sources (prefer one; reuse the language’s own systems):
 ## Explain before you slogan
 <a id="explain-before-you-slogan"></a>
 
-Brevity means **no filler**, not **maximum claims per clause**. A Beginner lead may take **two to four short sentences** before the first example. One sentence is allowed only when job, shape, and consequence are already obvious from the previous H3.
+Brevity means **no filler**, not **maximum claims per clause**. A Beginner lead may take **two to four short sentences** before the first example. One sentence is allowed only when job, shape, and consequence are already obvious from the previous H3. Later-stage **new-job** leads use the same unpacking (no hard sentence count). Later-stage **finish-the-series** leads may be one pointer sentence before the table.
 
 **Teach in this order inside the lead** (same as [Teach in this order](#teach-in-this-order), enforced inside the first paragraph):
 
@@ -298,7 +328,7 @@ Do not merge (1)–(3) into a copula slogan (*X is Y*) or a packed imperative (*
 | Label = explanation: “The **boundary** is **`adoro`**.” | Names the form without saying what a boundary *does* | “The main sentence stops after **`adoro`**; the next full sentence is the content that **`adoro`** stands for.” |
 | Omission as slogan: “**Leave `jal` out** when a period already marks a statement” | Assumes they know why `jal` exists | “A period already means ‘this is a statement,’ so you do not also write the statement word **`jal`**.” |
 
-**Test (slogan test):** cover the example block. Could a careful adult who has never opened this repo restate the rule in their own words from the lead alone? If they would have to guess what “job,” “point,” “setting,” or “body” means, unpack those words in the lead. A cue in parentheses does not count as unpacking.
+**Test (slogan test):** cover the example block. Could a careful adult who has never opened this repo restate the rule in their own words from the lead alone? If they would have to guess what “job,” “point,” “setting,” or “body” means, unpack those words in the lead. A cue in parentheses does not count as unpacking. On Intermediate / Advanced **new-job** leads, they may already know Beginner terms; they must still get the **new** choice from the lead. Skip this test on finish-the-series tables.
 
 **Test (one new move):** the sentence that introduces a *new* choice (reorder, omit, attach) should not also introduce a new metaphor or a new technical noun. Split it.
 
@@ -320,7 +350,7 @@ Tables may stay telegraphic (**Agalan · Use · English · Cue**). Running prose
 | **body** | the clause after any opening `/j/` words |
 | **glue** / **linker** | sentence-to-sentence connective |
 
-Intermediate / Advanced inventories may stay denser once Beginner has unpacked the terms.
+Intermediate / Advanced **finish-the-series** inventories may stay denser once Beginner has unpacked the terms. A later-stage **new job** still glosses any **new** label on first use.
 
 ## Plain language (no assumed linguistics)
 <a id="plain-language-no-assumed-linguistics"></a>
@@ -428,7 +458,7 @@ In each section, mention **only what that section is teaching**. Do not name, te
 
 **Test:** if the sentence’s only job is to name a topic the path has not reached yet, delete it. If it resolves a trap the learner will hit *now*, one link is enough — do not restate the other doc.
 
-Pages stay dual-role (learner text + source of truth): Intermediate / Advanced inventories and precise end anchors are fine when the *lead and Beginner teach block* stay slim. If an Advanced inventory dwarfs the Beginner teach block, split the file.
+Pages stay dual-role (learner text + source of truth): Intermediate / Advanced inventories and precise end anchors are fine when the *lead and Beginner teach block* stay slim. Intermediate must not name Advanced as a teaser (“X is Advanced”); a later heading is enough. If an Advanced inventory dwarfs the Beginner teach block, split the file. Later-stage H3 shape: [Intermediate and Advanced](#later-stage-shape).
 
 ## What belongs where
 
@@ -437,7 +467,7 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 | How to use the form | Grammar doc body under **`docs/grammar/`** (tagged **Beginner** / **Intermediate** / **Advanced**) |
 | Gloss format | [glosses.md](glosses.md) |
 | Level rubric / reading order | [learning-levels.md](learning-levels.md) ([cross-doc path](learning-levels.md#cross-doc-path)) |
-| Doc prose / example style | This page ([cues](#cues-columns) for table columns) |
+| Doc prose / example style | This page ([Beginner stage shape](#beginner-stage-shape), [later-stage shape](#later-stage-shape), [cues](#cues-columns) for table columns) |
 | Goals / feature criteria | [why-agelan.md](../grammar/why-agelan.md) (psych); [introduction.md](../grammar/introduction.md) (grammar design, [cue tables](../grammar/introduction.md#cues)) |
 | Core sentence grammar | [core.md](../grammar/core.md) |
 | IPA / pronunciation / phonotactics | [phonology.md](../grammar/phonology.md) (letter table); [inspect.md](../grammar/inspect.md) (**Show IPA** on spoken forms). Not in other grammar-page examples |
@@ -453,6 +483,8 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 Before tagging a section **Beginner**, ask the [three questions](learning-levels.md#rubric-three-questions). Prefer the earlier stage when learners need the form to read ordinary examples. Dependency on another subsystem beats “feels hard.” Do not add Advanced for recap, unused-slot lists, bounce notes, or reminders — [empty or pointless stages](#empty-stages).
 
 Before shipping a **Beginner** stage, also check [Beginner stage shape](#beginner-stage-shape), [plain language](#plain-language-no-assumed-linguistics), [cues](#cues-columns) ([rubric](#cue-rubric)), and [explain before you slogan](#explain-before-you-slogan): invented terms and house shorthand defined on first use; lead unpacks job, shape, and consequence (slogan test); cue last, never as the definition, and never a caption of the emoji; first H3 is a usable clause, not a table; no Intermediate teasers; drills cover the H3s (or the H3 is one-sentence setup for a drill).
+
+Before shipping **Intermediate** or **Advanced**, check [later-stage shape](#later-stage-shape): each H3 is a new job, a finished series, or rare Advanced; new-job leads unpack; inventory H3s are a pointer plus a table; hygiene and [Compare with](#compare-with) still hold; no Beginner teasers of this stage, and Intermediate does not teaser Advanced; drills cover new jobs, not every inventory row.
 
 ## Markdown hygiene
 

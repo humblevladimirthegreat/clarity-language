@@ -28,7 +28,7 @@ Ask in order. Prefer the **earlier** stage when a concept sits on a boundary and
 - Do **not** score every morph. For each H2/H3, run the three questions, pick a stage, move on.
 - When stages conflict, **dependency wins** over subjective difficulty.
 - Boundary cases needed early for reading examples → prefer the **earlier** stage.
-- Grammar prose: [teach now; don’t preview later](grammar-docs.md#teach-now-dont-preview-later) — no teaser links to peers the path has not reached yet.
+- Grammar prose: [teach now; don’t preview later](grammar-docs.md#teach-now-dont-preview-later) — no teaser links to peers the path has not reached yet. Later-stage H3s: [Intermediate and Advanced stage shape](grammar-docs.md#later-stage-shape).
 - A thin Beginner that only says “see Intermediate” does **not** earn a Beginner slot. Give one usable pattern, or drop the page from the Beginner path.
 
 ## Cross-doc path

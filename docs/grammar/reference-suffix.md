@@ -204,40 +204,59 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 ### Proper name (`-n`)
 <a id="proper-name--n"></a>
 
-**-n** is available on **any** role letter. The letter says what job the word plays **now**; **-n** says you are invoking a **title, proper label, or conventionally unique name**.
+Beginner used **-n** for a person’s or place’s name. You can also mark a **title, proper label, or conventionally unique name** on any role letter: a named race as the verb, a named style as the adjective, a named standard as the adverb. The first letter still says the clause job; **-n** says you mean **that** titled instance, not a generic kind.
 
-#### More of the token
+```
+`zuhubun vuzunun.`
 
-Adjectives may take an extra **left-bound `l`** after the role letter (`/ɡ/` → **`gl-`**) when the adjective sits **before** its host ([left-bound adjectives](core.md#left-bound-adjectives)). That `l` is part of the role spelling, not the reference suffix.
+gloss: `z-beauty@` · `v-sing@`
 
-Compounds join roots with mid-word **`x`** ([phonology.md](phonology.md#phonotactics)).
+*Uhubun sings the Sing* (that titled performance).
+```
 
-#### Nouns (`/z/`, `/d/`, `/b/`)
+The rest of the role map (same **-n**):
 
-Named individuals, places, one-off objects, titled works: *Azawan*, *Paris*, *the Odyssey*. Argument nouns under a complex adjective or adverb can be **-n** when that participant is a named entity (*book by* **[Rowling]**).
+| Agalan | Use | English |
+|--------|-----|---------|
+| `/z/` `/d/` `/b/` + **-n** | this named entity | person, place, titled work, unique referent (*Azawan*, *Paris*, *the Odyssey*; *book by* **[Rowling]**) |
+| `/v/` + **-n** | this named event, rite, or titled action | *perform* **[Hamlet]**, *run* **[the Boston Marathon]**, *observe* **[Ramadan]** |
+| `/ɡ/` + **-n** | this named style, tradition, brand, or category | **[Art Deco]** furniture, **[Buddhist]** monastery, **[iOS]** app (*a buddhist text* is still **-l**) |
+| `/w/` + **-n** | named scale, grade, or criterion on the preceding adjective | *spicy* **[Scoville]**, *large* **[King-size]**; ranked *worse than…* comparees: [comparatives](comparatives.md#judgment-benchmarks) |
+| `/h/` + **-n** | named standard, channel, or official frame | *according to* **[GAAP]**, *in* **[Q3]** as the named quarter ([number **-n**](numbers.md#number-endings) on number words) |
+| `/j/` vocative + **-n** | address this named person, place, or title | `jazawan`; titled group (*Team Alpha*); kind-based *everyone* uses **-l** |
+| `/j/` interjection + **-n** | named formula or conventional call | **[Amen]**, branded catchphrases; polar *yes* / *no* uses **-l** / **-m** ([polar stance](questions.md#polar-stance)) |
 
-#### Phrasal proper names (mid-word `x`)
+An extra **`l`** after `/ɡ/` (`gl-`) is the before-the-noun spelling ([left-bound adjectives](core.md#left-bound-adjectives)), not a fifth reference suffix. Closed speech-act words (`jal` / `jol` / …) use their [act endings](core.md#speech-act). Manner and ordinary degree use **-l** / **-m** unless the manner or grade is itself a proper name.
+
+**Compare with:** [join words](coordination.md) use **-n** as join packaging or join content (fence joins, clause **sequence**, [join-act](join-extras.md#join-act-verbs) / [join-relation](join-extras.md#join-relations) stems). That is the one place **-n** is not a name.
+
+### Phrasal proper names (mid-word `x`)
 <a id="phrasal-proper-names"></a>
 
-**Multipart proper names** (given + family, compact multi-token place names, and similar **one-referent** labels) are **one content word** when short enough to stay handy. Roots join left to right ([ordinary compound order](x-compounds.md#ordinary-compound-order)): first root is the kind or given name; later roots narrow or continue the title.
+English often writes a given name plus family as two words. In Agalan a short multipart proper name (given + family, a compact place label, a shop name) is **one content word**: roots join left to right with mid-word **`x`** ([ordinary compound order](x-compounds.md#ordinary-compound-order)), and **-n** names the whole as one person or place. That one word fills one slot and is one resume target.
+
+```
+`zodunaxalanen vawalal.`
+
+gloss: `z-wish-x-guidance@` · `v-walk`
+
+*Odunaxalanen walks.*
+```
 
 | Agalan | Use | English |
 |--------|-----|---------|
 | `zodunaxalanen` | nativized multipart (roots + mid-word **`x`**) | *Odunaxalanen* (*wish*×*guidance*: one person) |
-| `dodunaxalanen`, `bodunaxalanen` | same under other slots | one named place / person as object or argument |
+| `dodunaxalanen`, `bodunaxalanen` | same name in other slots | one named place / person as object or argument |
 | `zuzuzuxogoven`, `zuzuzuxogovexadedan` | sense / shop label (two or more lexicon roots) | *Sushi-Coffee*; *Sushi-Coffee-Tea* |
 
-Adjacent bare same-role words (`zodunan zalanen`) are two people in a [join](coordination.md). One **`x`-compound** is one resume target and one slot filler. A **lexical compound** is also one slot-filler: one stem, not **`x`** (`zohohulabedel` *bedroom*).
+A nativized loan (adapted Agalan root + ordinary ending) uses the same four last letters as any content word. A **lexical compound** is also one slot-filler: one stem, not mid-word **`x`** (`zohohulabedel` *bedroom*).
 
-#### Named handles
+**Compare with:** adjacent bare same-role words (`zodunan zalanen`) are two people in a [join](coordination.md).
+
+### Named handles
 <a id="named-handles"></a>
 
-A long official title (bureau, act, titled group) may also have a **handle**: one published root plus **-n**, the same as any proper name. First mention may be the handle alone.
-
-| Agalan | Use | English |
-|--------|-----|---------|
-| `zabogon` | handle: one root + **-n** | default talk, including first mention |
-| `zabogoxululon` | long title: phrasal proper (`ROOT x ROOT` … + **-n**) | full legal / ceremonial name of the same office |
+A long official title (bureau, act, titled group) may have a **handle**: one published root plus **-n**, used like any proper name, including on first mention. The long form is the same office spelled as a phrasal proper (`ROOT x ROOT` … + **-n**).
 
 ```
 `zabogon vawalal.`
@@ -247,6 +266,11 @@ gloss: `z-book@` · `v-walk`
 *Abogon walks.* (office handle on first mention)
 ```
 
+| Agalan | Use | English |
+|--------|-----|---------|
+| `zabogon` | handle: one root + **-n** | default talk, including first mention |
+| `zabogoxululon` | long title: phrasal proper (`ROOT x ROOT` … + **-n**) | full legal / ceremonial name of the same office |
+
 ```
 `zabogoxululon.`
 
@@ -255,68 +279,27 @@ gloss: `z-book-x-courage@`
 *Book-Courage* (full title of that office)
 ```
 
-Resume the handle like any name. If its letter-pronoun (through the 2nd vowel) would pick the wrong antecedent, use the **full root** + **-r** (`zabogor`).
+Resume the handle like any name. If a short letter-pronoun (through the 2nd vowel) would pick the wrong earlier word, use the **full root** + **-r** (`zabogor`).
 
-The office as referent takes **-n** in a noun slot (`zabogon`). A [mention](spans.md#loans) packages the **form** (`z{abogo}` = *the word Abogon*). Foreign letter-names stay loans or opaque spans (`z<FBI>n`).
+**Compare with:** a [mention](spans.md#loans) packages the **form** (`z{abogo}` = *the word Abogon*). A foreign letter-name is a loan or opaque span (`z<FBI>n`).
 
-**Compare with:** [join words](coordination.md) are the one place where **-n** is not a name. Fence joins, clause **sequence**, and closed [join-act](join-extras.md#join-act-verbs) / [join-relation](join-extras.md#join-relations) stems use **-n** as join packaging or join content.
-
-#### Verbs (`/v/`)
-
-A **named action, rite, or event**: not a generic instance. English parallels: *perform* **[Hamlet]**, *run* **[the Boston Marathon]**, *observe* **[Ramadan]**. The verb root names the kind of doing; **-n** says you mean **that** titled occurrence.
-
-#### Adjectives (`/ɡ/`)
-
-A **named category, style, or affiliation** on the host, when the point is the proper designation. English parallels: **[Art Deco]** furniture, **[Buddhist]** monastery, **[iOS]** app. A first-mention kind uses **-l** (*a buddhist text*); **-n** when the tradition’s name is the frame.
-
-#### Adjective extras (`/w/`)
-
-Rare. **-n** marks a **named scale, grade, or criterion** for reading the preceding `/ɡ/`. English parallels: *spicy* **[Scoville]**, *large* **[King-size]**. Ordinary degree stays **-l** / **-m**. **Judgment benchmarks** (*worse than Professional*, …) are **-n** comparees on a ranked fence: [comparatives.md](comparatives.md#judgment-benchmarks).
-
-#### Adverbs (`/h/`)
-
-A **named standard, channel, or official frame** for the clause. Aligns with [number **-n**](numbers.md#number-endings). English parallels: *according to* **[GAAP]**, *in* **[Q3]** as the named quarter. Manner roots usually stay **-l** / **-m** unless the manner is itself a proper name.
-
-#### Turn (`/j/`)
-
-| Subclass | **-n**? |
-|----------|---------|
-| **Vocatives** | address by name (`jazawan`). Kind-based address (*everyone*) stays **-l**; titled group (*Team Alpha*) takes **-n**. |
-| **Interjections** | Mostly **-l** / **-m**. Use **-n** for a named formula (**[Amen]**, branded catchphrases). Closed [polar stance](questions.md#polar-stance) particles use **-l** / **-m**. |
-| **Speech act** | Closed **`jal` / `jol` / …** set ([speech act](core.md#speech-act)). |
-
-#### Continue (`/x/`): overview
+### Continue (`/x/`): overview
 <a id="continue-x"></a>
 
-| Family | Ending job |
-|--------|------------|
-| **Linkers** (*but*, *therefore*, …) | Stay **-l** / **-m** |
-| **Named continue** (other `/x/` roots) | **-n** = titled agenda / section label: thread shift (*let’s now talk about X*) |
-| **Clause joins** | **-n** = **sequence** (*and then* **`xan`**, …): not phrase named-list **-n**; full table [coordination.md](coordination.md) |
+Beginner already used **-n** as a name on content words. On `/x/`, the last letter follows the continue family:
 
-Prefix-less [discourse revisers](revisers.md#discourse-revisers) keep reviser endings including named **-n**.
+| Agalan | Use | English |
+|--------|-----|---------|
+| linker + **-l** / **-m** | glue one finished sentence to the next | *but*, *therefore*, … |
+| other `/x/` root + **-n** | titled agenda / section label | thread shift (*let’s now talk about X*) |
+| clause join + **-n** | **sequence** | *and then* **`xan`**, … ([coordination](coordination.md)) |
 
-#### Nativized loans and multipart names
-
-**Nativized loans** (adapted Agalan root + ordinary ending) use ordinary reference suffixes. Compact multipart person/place names: [phrasal proper names](#phrasal-proper-names). Office short names: [named handles](#named-handles).
-
-#### Summary by role letter
-
-| Role | **-n** means… |
-|------|----------------|
-| `/z/` `/d/` `/b/` | This named entity (person, place, title, unique referent) |
-| `/v/` | This named event, rite, or titled action. [Join-act verbs](join-extras.md#join-act-verbs) (`van`, …) keep join content. |
-| `/ɡ/` | This named style, tradition, brand, or category. [Join-relations](join-extras.md#join-relations) (`gan`, …) keep join content. |
-| `/w/` | (Rare) this named scale / grade / criterion on the preceding adjective |
-| `/h/` | This named standard, channel, or official frame. Join-relations (`han`, …) keep join content. |
-| `/j/` vocative | Address this named person, place, or title |
-| `/j/` interjection | This named formula or conventional call |
-| `/x/` | Titled discourse label (thread shift) on other roots. Clause join **-n** = **sequence** (`xan`, …). See [coordination.md](coordination.md). |
+Prefix-less [discourse revisers](revisers.md#discourse-revisers) use reviser endings, including named **-n**.
 
 ### Number-word exception
 <a id="number-word-exception"></a>
 
-In [number words](numbers.md), the same four letters have **number-specific** meanings instead of ordinary reference-suffix senses. After a role letter, the number marker **r** may also form clusters that are not otherwise allowed, and only in number words ([phonology.md](phonology.md#phonotactics)).
+Beginner already used the four last letters as reference. On [number words](numbers.md), those same letters have **number-specific** meanings. After a role letter, the number marker **r** may start a cluster that only number words use ([phonology.md](phonology.md#phonotactics)).
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>

@@ -261,9 +261,9 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 ## Intermediate
 <a id="intermediate"></a>
 
-Recall the [vowel series](vowel-series.md): **`a`** *add* / **`o`** *one* / **`e`** *order* / **`u`** *undo*. In polar stances the **first vowel** picks the family (**`a`** accepts, **`u`** undoes) and the second refines it: **`e`** judges true/false order, **`o`** takes up an option.
-
 ### Polar stance: fuller inventory
+
+Beginner already used *yes* / *true* (**`jael`**), *no* / *false* (**`juel`**), and *sure* (**`jaol`**). The rest of the map is **reject this option** and **refuse the whole frame**. First vowel is the family (**`a`** accept, **`u`** undo); second vowel is the grain (**`e`** true/false, **`o`** this option). **-l** holds the stance exactly; **-m** is the soft twin.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -273,39 +273,41 @@ Recall the [vowel series](vowel-series.md): **`a`** *add* / **`o`** *one* / **`e
 | **`uo`** (`juol` / `juom`) | reject this option | *not that* | **u** ≈ undo + **o** ≈ one |
 | **`ua`** (`jual` / `juam`) | reject the whole frame | *Hell No!* | **u** ≈ undo all the way down |
 
-The **-l** ending holds the stance exactly; **-m** is the soft twin of each row:
-
 | Ask flavor | Exact (**-l**) | Soft (**-m**) |
 |------------|----------------|----------------|
 | *Is it so?* / confirm the claim | **`jael`**, deny with **`juel`** | **`jaem`**, deny with **`juem`** |
 | *Want this?* / offer | **`jaol`**, reject-this with **`juol`**, hard refuse with **`jual`** | **`jaom`**, reject-this with **`juom`**, hard refuse with **`juam`** |
 
-**Shapes:**
+A stance word can stand alone (`jael.`), sit before a body (`jael zazawan vawalal.`), or come as a confirm tag in the next turn after `.`. After a stance-plus-body beat, keep going with **`/x/`**; write another polar word only when you take a new stance turn. In a solo run of thought, **`juel`** can mark a correction, **`jaol`** the next step, **`jael`** a point you lock.
 
-- **Bare turn:** `jael.` / `juel.`
-- **Stance + body:** `jael zazawan vawalal.` (*yes, Azawan walks*)
-- **Confirm tag:** second bare turn after `.` ([left-edge rules](core.md#left-edge-order-and-sentence-boundaries))
-- **Monologue self-turn:** `juel` before correction; `jaol` before next step; `jael` after locking a point
-
-Continuation under the same speech act after a polar+body beat uses **`/x/`**. Use another polar particle only when you take a **new** stance turn.
-
-Ordinary answers use **`juel`** / **`juol`**. Use **`jual`** / **`juam`** for a hard refusal of the whole frame. Deny *inside* the clause with **`xul`** / **`vul`** / **`zul`**.
+**Compare with:** *not* inside the clause uses **`zul`** / **`vul`** / **`xul`**. Polar **`juel`** / **`juol`** answer a *yes* / *no* or an offer.
 
 ### Confirming a negative
 <a id="confirming-a-negative"></a>
 
-**`jael`** / **`juel`** answer whether the **claim under question** matches reality, including when that claim is already negated. After a negative ask, **`jael`** confirms the denial; **`juel`** rejects it (the positive holds).
+When the question already contains *not* (*Didn’t Azawan run?*), *yes* and *no* still say whether **that claim** matches. **`jael`** confirms the denial (*true: they didn’t*). **`juel`** says the denial is false (*they did*). Restate the body after the stance word when you want the polarity said twice. Offer words (**`jaol`** / **`juol`**) still answer *take this?*, not true/false.
 
-| Agalan | English |
-|--------|---------|
-| `jol … vul vurunul` (*Didn’t run?*) + **`jael`** | *true, they didn’t* |
-| same + **`juel`** | *false: they did run* |
+```
+`jol zazawan vul vurunul.`
+`jael.`
 
-When clarity matters, restate: `jael vul vurunul` vs `juel vurunul`. Offer particles (**`jaol`** / **`juol`**, …) answer *take this?*
+gloss: `j-question` · `z-grace@` · `v-not` · `v-run` · `j-yes`
+
+*Didn’t Azawan run? True, Azawan didn’t.*
+```
+
+```
+`jael vul vurunul.`
+
+gloss: `j-yes` · `v-not` · `v-run`
+
+*True: (they) didn’t run.*
+```
 
 ### Fill-ask arity
+<a id="fill-ask-arity"></a>
 
-Same length rule as [single-item / standalone](coordination.md#single-item-phrase):
+Beginner already used *who/what* (**…ar**) and *what else* (**…ur**). Length of the join (nothing listed, one named item, or a list) plus **…or** / **…er** finish the same map as [single-item / standalone](coordination.md#single-item-phrase).
 
 | Length | **…ar** | **…or** | **…er** | **…ur** |
 |--------|---------|---------|---------|---------|
@@ -313,12 +315,20 @@ Same length rule as [single-item / standalone](coordination.md#single-item-phras
 | **1** | *What/which (unknown) X?* | *Any X?* | *Which X is first?* | *What else (besides X)?* |
 | **2+** | *Which of these?* | *Any of these?* | *Whichever ranks highest?* | *What else?* / *Other than these?* |
 
-Unbound *who* / *what* / *where* = bare phrase **-r** in the queried slot. Unbound *what did they do?* / *what happened?* = bare **`var`** / **`xar`**. Unbound *when?* = bare **`har`**.
+Bare **-r** in the queried slot is unbound *who* / *what* / *where*. Bare **`var`** / **`xar`** is *what did they do?* / *what happened?*. Bare **`har`** is *when?*.
 
 ### When?
 <a id="when"></a>
 
-Under `/h/` / `/w/`, **occasion** readings are these forms ([restrictors](restrictors.md#more-occasions)):
+To ask *when?* / *in what case?*, put an occasion word under `/h/` (or `/w/`) in the question. Bare **`har`** is the *when* blank. The same family also asks *anytime?* and *when else?*.
+
+```
+`jol zuhubun vawalal har.`
+
+gloss: `j-question` · `z-beauty@` · `v-walk` · `h-when`
+
+*When does Uhubun walk?*
+```
 
 | Agalan | English (statement, bare) | English (under question, bare) |
 |--------|---------------------------|--------------------------------|
@@ -326,25 +336,44 @@ Under `/h/` / `/w/`, **occasion** readings are these forms ([restrictors](restri
 | **`hor`** / **`wor`** | *anytime* | *Anytime?* |
 | **`hur`** / **`wur`** | *sometime else* | *When else?* |
 
+**Related form:** statement occasion readings live with [restrictors](restrictors.md#more-occasions).
+
 ### Yes/no with single-item / standalone
 <a id="yes-no-single-item-standalone"></a>
 <a id="under-question"></a>
 
-Under question, single-item and standalone join endings ask for confirmation or offer.
+A *yes/no* question can put a join ending on a **named** item instead of a fill-ask blank. Single-item **-l** (or usual **-n**) asks you to confirm that singleton (*Just Azawan?*, *Has to be Azawan?*). Single-item **-m** offers it (*How about Uhubun?*). **`…ul`** / **`…um`** / **`…un`** confirm or offer a denial (*Not Azawan?*). Standalone **-l** / **-m** check emptiness (*Nothing?*, *Got nothing?*). Fill-ask still uses **…ar** / **…or** / **…er** / **…ur**.
 
-- Single-item **-l** / **-n**: confirm the singleton (*Just X?*, *Has to be X?*).
-- Single-item **-m**: **offer** that singleton (*How about X?*, *Want X?*).
-- Single-item **…ul** / **…um** / **…un**: confirm / offer denial (*Not X?*).
-- Standalone **-l**: colloquial emptiness check (*Nothing?*, *Do nothing?*).
-- Standalone **-m**: open emptiness / soft emptiness (*Got nothing?*). Fill-ask uses **…ar** / **…or** / **…er** / **…ur**.
-- Standalone / single-item / multi **…ar** / **…or** / **…er** / **…ur**: [fill-ask](#fill-ask-r).
+```
+`jol zazawan zal.`
 
-Worked rank / set inventories are Advanced ([single-item and standalone inventory](#single-item-standalone-inventory)).
+gloss: `j-question` · `z-grace@` · `z-just`
+
+*Just Azawan?*
+```
+
+```
+`jol zuhubun zam.`
+
+gloss: `j-question` · `z-beauty@` · `z-offer`
+
+*How about Uhubun?*
+```
+
+**Compare with:** *who* / *which* still uses join **-r** ([fill-ask](#fill-ask-r)).
 
 ### Fill-ask answers
 <a id="fill-ask-answers"></a>
 
-A fill may be a bare content word, single-item **-l** / **-m** / **-n**, or a longer list. Fill-all answers follow spoken **-r** order ([fill-all](#fill-all)).
+When someone asked *who* / *what*, answer by **naming the fill**. A bare content word, a single-item join (**-l** / **-m** / **-n**), or a longer list all work. Leave no join **-r** in the answer; that **-r** was the blank. If they asked more than one blank, fill them in the same order as the **-r** words ([fill-all](#fill-all)).
+
+```
+`zazawan.`
+
+gloss: `z-grace@`
+
+*Azawan.*
+```
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -471,81 +500,91 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 ### Single-item and standalone inventory
 <a id="single-item-standalone-inventory"></a>
 
-Length **2+** (no **-r**): **-l** = pick from this closed menu; **-m** = pick or name something else (for **o**, also *or none*); **u** = *none of* the listed; **ua** / **uo** = complement of the listed; **ue** = reverse-rank among the listed. With **-r**: [fill-ask arity](#fill-ask-r). Under `/h/` / `/w/`, occasions use [restrictors](restrictors.md) (the set above).
+Under question, the rest of the single-item and standalone join map is confirm / offer (and fill-ask **-r**). On a list of two or more (no **-r**): **-l** picks from that closed menu; **-m** allows another name (and for **o**, *or none*); **u** is *none of* the listed; **ua** / **uo** is the complement of the listed; **ue** reverse-ranks among the listed. Join **-n** here is stock/usual.
 
-Join-word **-n** here is stock/usual (not [proper-name **-n**](reference-suffix.md#proper-name--n)).
+```
+`jol zazawan zel.`
+
+gloss: `j-question` · `z-grace@` · `z-rank`
+
+*Is Azawan the only priority?*
+```
+
+**Not the same job as:** proper-name **-n** ([reference suffix](reference-suffix.md#proper-name--n)).
+
+**Related form:** fill-ask length uses [join **-r**](#fill-ask-arity).
 
 #### Rank: single-item (under question)
 
-| Agalan | English | Cue |
-|--------|---------|-----|
-| **…em** | *Is X the top priority?* / *Prefer X?* (offer) | **e** ≈ order + soft **m**: offering the top slot |
-| **…el** | *Is X the only priority?* | **e** ≈ order + exact **l**: exactly top |
-| **…oem** | *Try X first?* (offer) | **o** ≈ one + **e** ≈ order + soft: start with this one? |
-| **…oel** | *Only try X?* | **o** ≈ one + **e** ≈ order + exact: only this first step |
-| **…uem** | *X last?* (offer) | **u** ≈ undo the order + soft: put it last? |
-| **…uel** | *X last only?* | **u** ≈ undo the order + exact: last and nothing else |
-| **…en** | *X first, as usual?* | **e** ≈ order + stock **n**: usual first place |
-| **…er** | *Which X is first?* (fill-ask) | **e** ≈ order + fill **r**: name the rank |
+| Agalan | English |
+|--------|---------|
+| **…em** | *Is X the top priority?* / *Prefer X?* (offer) |
+| **…el** | *Is X the only priority?* |
+| **…oem** | *Try X first?* (offer) |
+| **…oel** | *Only try X?* |
+| **…uem** | *X last?* (offer) |
+| **…uel** | *X last only?* |
+| **…en** | *X first, as usual?* |
+| **…er** | *Which X is first?* (fill-ask) |
 
 #### Rank: standalone (under question)
 
-| Agalan | English | Cue |
-|--------|---------|-----|
-| **…el** | *No favorite?* | **e** ≈ order + exact: is the top slot empty? |
-| **…em** | *Easy-going?* / *Whichever?* | **e** ≈ order + soft: no pick from the top? |
-| **…ael** | *Tie?* | **a** ≈ add equally + exact: added at the same rank |
-| **…aem** | *Probably a tie?* | **a** ≈ add equally + soft |
-| **…aen** | *Draw?* (stock) | **a** ≈ add equally + stock **n**: the usual draw |
-| **…oem** | *Not sure where to start?* | **o** ≈ one + soft: no single starting pick yet |
-| **…oel** | *Do nothing?* / *Skip it?* | **o** ≈ one + exact: zero steps chosen |
-| **…uem** | *Don't mind?* / *No objection?* | **u** ≈ undo ascending + soft: no veto? |
-| **…uel** | *No least-favorite?* / *No one last?* | **u** ≈ undo ascending + exact: is the bottom slot empty? |
-| **…en** | *No favorite?* (stock) | **e** ≈ order + stock **n**: usual empty top |
-| **…er** | *What’s the priority?* (fill-ask) | **e** ≈ order + fill **r**: name the priority |
+| Agalan | English |
+|--------|---------|
+| **…el** | *No favorite?* |
+| **…em** | *Easy-going?* / *Whichever?* |
+| **…ael** | *Tie?* |
+| **…aem** | *Probably a tie?* |
+| **…aen** | *Draw?* (stock) |
+| **…oem** | *Not sure where to start?* |
+| **…oel** | *Do nothing?* / *Skip it?* |
+| **…uem** | *Don't mind?* / *No objection?* |
+| **…uel** | *No least-favorite?* / *No one last?* |
+| **…en** | *No favorite?* (stock) |
+| **…er** | *What’s the priority?* (fill-ask) |
 
 #### Set: single-item (under question)
 
-| Agalan | English | Cue |
-|--------|---------|-----|
-| **…al** | *Just X?* / *Only X?* | **a** ≈ add exactly one item, exact **l** |
-| **…am** | *How about X?* / *Want X?* (offer) | **a** ≈ add + soft: offering to add X |
-| **…ol** | *Has to be X?* | **o** ≈ one + exact: that single one, no other |
-| **…om** | *How about X?* / *X, or skip?* (offer; empty-allowed) | **o** ≈ one + soft: this one or none |
-| **…ual** | *Everything but X?* | **u** ≈ undo + exact: remove exactly X |
-| **…uam** | *Everything but X (at least)?* (offer) | **u** ≈ undo + soft: remove at least X |
-| **…uol** | *Anything but X?* | **u** ≈ undo + one: any single replacement except X |
-| **…uom** | *Anything but X?* (offer) | same, offered softly |
-| **…aol** | *Is X enough?* | **a** ≈ add + **o** ≈ one + exact: adding X alone suffices |
-| **…aom** | *Would X do?* (offer) | same shape, offered |
-| **…ar** | *What/which (unknown) X?* (fill-ask) | **a** ≈ add + fill **r**: name what to add |
-| **…or** | *Any X?* (fill-ask) | **o** ≈ one + fill: name any one |
-| **…ul** | *Not X?* | **u** ≈ undo + exact |
-| **…um** | *Not X (at least)?* (offer) | **u** ≈ undo + soft |
-| **…un** | *Not X, as usual?* | **u** ≈ undo + stock **n** |
-| **…ur** | *What else (besides X)?* (fill-ask) | **u** ≈ undo + fill: name what remains |
+| Agalan | English |
+|--------|---------|
+| **…al** | *Just X?* / *Only X?* |
+| **…am** | *How about X?* / *Want X?* (offer) |
+| **…ol** | *Has to be X?* |
+| **…om** | *How about X?* / *X, or skip?* (offer; empty-allowed) |
+| **…ual** | *Everything but X?* |
+| **…uam** | *Everything but X (at least)?* (offer) |
+| **…uol** | *Anything but X?* |
+| **…uom** | *Anything but X?* (offer) |
+| **…aol** | *Is X enough?* |
+| **…aom** | *Would X do?* (offer) |
+| **…ar** | *What/which (unknown) X?* (fill-ask) |
+| **…or** | *Any X?* (fill-ask) |
+| **…ul** | *Not X?* |
+| **…um** | *Not X (at least)?* (offer) |
+| **…un** | *Not X, as usual?* |
+| **…ur** | *What else (besides X)?* (fill-ask) |
 
 #### Set: standalone (under question)
 
-| Agalan | English | Cue |
-|--------|---------|-----|
-| **…al** | *Nothing?* / *Nobody?* | **a** ≈ add + exact: nothing added |
-| **…am** | *Got nothing?* | **a** ≈ add + soft |
-| **…an** | *Null?* / *Void?* | **a** ≈ add + stock **n**: the standing null |
-| **…ol** | *No options?* | **o** ≈ one + exact: not even one |
-| **…om** | *No pick?* / *Skip OK?* | **o** ≈ one + soft: skipping allowed |
-| **…ual** | *Everything?* / *Everyone?* | **u** ≈ undo exclusions + exact: nothing left out |
-| **…uam** | *Everything you can think of?* | **u** ≈ undo exclusions + soft |
-| **…uol** | *Anything?* | **u** ≈ undo + one: even one counts |
-| **…uom** | *Anything?* | same, offered |
-| **…aol** | *All set?* | **a** ≈ add enough + exact: needs met |
-| **…aom** | *Nothing you need?* | same, offered |
-| **…ul** | *No?* | **u** ≈ undo + exact |
-| **…um** | *Soft no?* | **u** ≈ undo + soft |
-| **…un** | *No?* (stock) | **u** ≈ undo + stock **n** |
-| **…ar** | *Who/what?* (fill-ask) | **a** ≈ add + fill: name a member |
-| **…or** | *Anything?* (fill-ask) | **o** ≈ one + fill: name any one |
-| **…ur** | *What else?* (fill-ask) | **u** ≈ undo + fill: name what besides |
+| Agalan | English |
+|--------|---------|
+| **…al** | *Nothing?* / *Nobody?* |
+| **…am** | *Got nothing?* |
+| **…an** | *Null?* / *Void?* |
+| **…ol** | *No options?* |
+| **…om** | *No pick?* / *Skip OK?* |
+| **…ual** | *Everything?* / *Everyone?* |
+| **…uam** | *Everything you can think of?* |
+| **…uol** | *Anything?* |
+| **…uom** | *Anything?* (offer) |
+| **…aol** | *All set?* |
+| **…aom** | *Nothing you need?* |
+| **…ul** | *No?* |
+| **…um** | *Soft no?* |
+| **…un** | *No?* (stock) |
+| **…ar** | *Who/what?* (fill-ask) |
+| **…or** | *Anything?* (fill-ask) |
+| **…ur** | *What else?* (fill-ask) |
 
 ### Translation practice
 <a id="translation-practice-advanced"></a>

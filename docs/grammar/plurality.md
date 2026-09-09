@@ -243,21 +243,39 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 ### Associate-set resolution
 <a id="associate-resolution"></a>
 
-When membership matters and is not listed:
+English *Azawan and them* does not say who belongs. After an associative noun, membership is **open** unless you mark it. Write an explicit [join](coordination.md) (or *except*) when the list matters; otherwise the listener uses the recently named cohort, then the scene’s institution (this meeting, this household). That lets you leave the set vague when it does not matter, and pin it when it does.
 
-1. **Explicit join / except wins** (`ul dedonen` = associates minus the listener).
-2. Else **recently named cohort** (family introduced, team title, …).
-3. Else **institutional frame** of the scene (this meeting, this household).
-4. Else leave membership **open**: the listener may or may not be in the set.
+```
+`zazawansh vawalal.`
 
-If the wrong reading would matter, mark it: co-agency with **`aha`** or a join; “not you” with speaker/name **-sh** or a join that omits the listener.
+gloss: `z-grace@-sh` · `v-walk`
 
-**Address-set resolution:** prefer everyone in this turn’s vocative cluster, plus anyone still held as addressee by context.
+*Azawan and associates walk.*
+```
+
+If the wrong reading would matter, mark co-agency with **`aha`** or a join; mark “not you” with speaker or name **-sh**, or a join that omits the listener (`ul dedonen` = associates minus the listener).
+
+| Priority | Use | English |
+|----------|-----|---------|
+| Explicit join / except | listed members win | *Azawan and Ululon*; associates minus the listener |
+| Recently named cohort | family, team title already in the talk | that introduced group |
+| Institutional frame | this meeting, this household | the scene’s default group |
+| Open | no further cue | the listener may or may not be in the set |
+
+For the **address set**, take everyone in this turn’s vocative cluster, plus anyone still held as addressee by context.
 
 ### Verbs (`/v/`) — collective
 <a id="verbs-v"></a>
 
-On `/v/`, **-sh** marks **collective**: the event is **one shared act**. A plural subject alone leaves that open. Noun **-sh** grows **who** the subject is; verb **-sh** marks **how** the doing is structured. The same “one pile” idea appears as [collective](#adjectives-g) on `/ɡ/`.
+English *they walk* does not say whether it was one shared outing. Put **-sh** on the **verb** (after its ending) when the event is **one shared act**. A set subject with a singular verb leaves together vs separately open. Noun **-sh** still names **who**; verb **-sh** names **how** the doing is structured.
+
+```
+`zazawansh vuzunulsh.`
+
+gloss: `z-grace@-sh` · `v-sing-sh`
+
+*They (Azawan and associates) sing as one outing.*
+```
 
 | Agalan | Use | English |
 |--------|-----|---------|
@@ -273,22 +291,30 @@ On `/v/`, **-sh** marks **collective**: the event is **one shared act**. A plura
 | `zazawan vuzunulsh` | *Azawan sings jointly* (not a solo) |
 | `zahadal vawalalsh` | *the team walks as one unit* |
 
-Count (*three times*) and habit (*always*) stay clause framing: [numbers](numbers.md) under `/h/`, or **`hual`**. **-rsh** on `/v/` resumes a prior **collective** verb (*still as one shared act*).
+**-rsh** on `/v/` resumes a prior **collective** verb (*still as one shared act*).
+
+**Related form:** *three times* uses a [number](numbers.md) under `/h/`; *always* uses **`hual`**.
 
 ### Adjectives (`/ɡ/`) — collective
 <a id="adjectives-g"></a>
 <a id="collective"></a>
 
-On `/ɡ/`, **-sh** marks **collective**: the property holds of the **host set as one unit**.
+English *the boxes are heavy* can mean each box or the pile. Put **-sh** on the **adjective** (after its ending) when the property holds of the **host set as one unit**. A set host with a singular adjective leaves each-member vs one-pile open. That is not “more red.”
 
-Adjective **-sh** marks that the set **shares** the property as one pile. It does not mean “more red.”
+```
+`zulebolsh garagamsh.`
+
+gloss: `z-file-box-sh` · `g-heaviness~-sh`
+
+*The file-boxes are heavy as a pile.*
+```
 
 | Agalan | Use | English |
 |--------|-----|---------|
 | host set + singular `/ɡ/` | each member, or don’t care | *the boxes are heavy* |
 | host set + `/ɡ/`…**-sh** | collective: the set as one pile | *heavy as a pile*; *vast as a team* |
 
-Most useful with a [phrase join](coordination.md): SHARED singular scale under **`a`** is already **distributive** (each member); SHARED **/ɡ/…-sh** is **collective**.
+With a [phrase join](coordination.md), SHARED singular scale under **`a`** is already **each member**; SHARED `/ɡ/`…**-sh** is **collective**.
 
 | Agalan | English |
 |--------|---------|
@@ -300,21 +326,49 @@ Most useful with a [phrase join](coordination.md): SHARED singular scale under *
 
 **-rsh** on `/ɡ/` resumes a prior **collective** adjective (*still collectively so*).
 
-**Related form:** entity plurality uses **-sh** on the noun.
+For *red books*, put **-sh** on the **noun**; keep color and trait singular on `/ɡ/`. Character trait uses singular `/ɡ/` plus **`hual`**.
 
-A **scale or continuum** adjective in [comparatives](comparatives.md) and [ranges](numbers-applied.md#ranges) stays **singular** (one line). Keep SHARED scale and continuum adjectives singular.
+**Related form:** who is in the set uses **-sh** on the noun.
 
-Color and trait stay singular on `/ɡ/` while the **noun** takes **-sh** (*red books*: plural noun, singular *red*). Character trait uses singular `/ɡ/` + **`hual`**. *Both are challenging* uses distributive SHARED **`… zal gomonam`**.
+**Compare with:** a scale or continuum in [comparatives](comparatives.md) and [ranges](numbers-applied.md#ranges) is one line, so that adjective is singular.
 
 ### Vocatives (`/j/`)
 
-Address a **group**: **-lsh** for kind-based group address (*hey, kids*); **-nsh** for a titled group (*Team Alpha*); **-rsh** to call a prior addressee **and associates**. Multi-addressee role without naming is **`jedonensh`**. *Everyone* uses bare **`…ual`**.
+To call a group at the start of a turn, put **-sh** on the vocative (`/j/`) after its ending, the same way you mark associates on a noun. That names who you are talking to as an associative group.
+
+```
+`jagadalsh.`
+
+gloss: `j-cat-sh`
+
+*Hey, cats!*
+```
+
+| Agalan | Use | English |
+|--------|-----|---------|
+| **-lsh** | kind-based group address | *hey, kids* |
+| **-nsh** | titled group | *Team Alpha* |
+| **-rsh** | prior addressee and associates | *hey, you (that one) and associates* |
+| **`jedonensh`** | current addressees, no name | *hey, you all* |
+
+**For *everyone*, use:** [universals](coordination.md#universals-domains-generics) (`…ual`).
 
 ### Where **-sh** sits
 
-**-sh** marks group reference on **nouns** (`/z/` `/d/` `/b/`), **vocatives**, **person-role** specials (readings above), **collective** on `/v/`, and **collective** on `/ɡ/` (SHARED scale / continuum adjectives stay singular). Habit is **`hual`**. Count is a [number](numbers.md) word (`zagadalsh g+3`). Plural material *inside* a non-opaque span marks **-sh** on those inner words.
+Beginner already used **-sh** on nouns and person-role specials. The rest of the host map:
 
-Quantity `>1` is digitless **`g+`** (it may co-occur with noun **-lsh**). Generics / *every K* use [coordination](coordination.md#universals-domains-generics) (`zual gagadal`, habitual **`hual`**). Inclusive *we* / address set: [pronouns](pronouns.md#clusivity).
+| Host | Use | English |
+|------|-----|---------|
+| nouns `/z/` `/d/` `/b/` | associative group | *Azawan and associates*; *some dogs* |
+| vocatives `/j/` | group address | *hey, cats*; *Team Alpha* |
+| person-role specials | speaker’s people / address set | *I and my people*; *you all* |
+| `/v/`…**-sh** | collective event | one shared act |
+| `/ɡ/`…**-sh** | collective property | the set as one pile |
+| inner words of a non-opaque span | group reference inside the span | **-sh** on those inner words |
+
+**Related form:** quantity `>1` is digitless **`g+`** (`zagadalsh g+3` may use both).
+
+**For *every K*, use:** [universals](coordination.md#universals-domains-generics) (`zual gagadal`; habitual **`hual`**).
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>

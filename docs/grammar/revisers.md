@@ -245,7 +245,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 ### Ending grids
 
-**-l** / **-m** mark **closed** vs **open** completeness of the right-hand side (in-clause) or of this discourse move. **-n** marks a **named / conventional** frame.
+Beginner already used closed **-l** and open **-m** for how complete B is, or how this sentence attaches to prior talk. The rest of the map is named **-n** (a titled or conventional frame).
 
 #### In-clause
 
@@ -265,8 +265,6 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 | **o** (*instead*) | `ol`: this claim fully replaces prior | `om`: a replacement claim | `on`: stock *Instead,* |
 | **u** (*except*) | `ul`: sole exception to prior frame | `um`: exception (maybe among others) | `un`: named / conventional exception frame |
 
-Prefix-less **`ul`** excepts a right-hand side. Prefixed **`zul`** is a [join](coordination.md#join-series-ending-shared) (*not X* / bare *no*):
-
 ```
 `zahadal ul zazawan.`
 
@@ -274,6 +272,8 @@ gloss: `z-team` · `except` · `z-grace@`
 
 *The team except Azawan.*
 ```
+
+**Compare with:** *no dog* / *not X* uses a prefixed [join](coordination.md#join-series-ending-shared) (`zodogol zul`). Prefix-less **`ul`** excepts a right-hand side in the same slot.
 
 ```
 `zodogol zul.`
@@ -286,19 +286,7 @@ gloss: `z-dog` · `z-not`
 ### Parallel chains
 <a id="revision-chains-parallel-on-a"></a>
 
-```
-A REV₁ B REV₂ C ( REVᵢ SIDE )*
-```
-
-Every `REVᵢ` applies **in parallel to the same A**, each with its own right-hand side. Vowels and endings may **mix**. English *including (B except C)* nests inside one side.
-
-| Chain | English |
-|-------|---------|
-| `A am B am C` | A including B and including C (both open) |
-| `A al B al C` | A including only B and only C |
-| `A am B ul C` | A including B (open), and except only C (closed) |
-| `A ul B om C` | A except only B, and C as a replacement for A |
-| `A an B un C` | named A including B, and except C from that named frame |
+You already repair one named A with a single `A REV B`. To stack several repairs on that **same** A (including B and except C, or two includings), add more revisers after the first right-hand side: `A REV₁ B REV₂ C`. Each reviser still applies to A in parallel, with its own side; vowels and endings may mix. English *including (B except C)* would nest C under B instead.
 
 ```
 `zahadal am zazawan ul zululon.`
@@ -308,15 +296,13 @@ gloss: `z-team` · `including.open` · `z-grace@` · `except` · `z-courage@`
 *The team, including Azawan, except only Ululon.*
 ```
 
-```
-`guzumum el gerelum.`
-
-gloss: `g-happy` · `rather` · `g-calm`
-
-*Calm as the precise reading (rather than happy).*
-```
-
-A revision chain starting at A consumes following same-role sides paired by **REV**, tighter than a list join: `zodogol ol zagadal zubudul zam` reads *(dog instead of cat) and bird*.
+| Chain | English |
+|-------|---------|
+| `A am B am C` | A including B and including C (both open) |
+| `A al B al C` | A including only B and only C |
+| `A am B ul C` | A including B (open), and except only C (closed) |
+| `A ul B om C` | A except only B, and C as a replacement for A |
+| `A an B un C` | named A including B, and except C from that named frame |
 
 Same-role includes the **verb phrase**:
 
@@ -328,10 +314,12 @@ gloss: `v-run` · `instead.open` · `v-walk`
 *Ran, with walk as a replacement.*
 ```
 
+**Compare with:** packaging *(dog instead of cat) and bird* uses a [list join](coordination.md) after the revision chain (`zodogol ol zagadal zubudul zam`). The chain is tighter than the join: it eats following same-role sides paired by **REV**.
+
 ### Discourse placements
 <a id="discourse-on-x-continue"></a>
 
-Same spellings, same vowel meanings, four places:
+Beginner already used a reviser at the front of a default statement. Same spellings and vowel meanings, four places:
 
 | Placement | Agalan | Use |
 |-----------|--------|-----|
@@ -340,12 +328,9 @@ Same spellings, same vowel meanings, four places:
 | Non-initial clause under `/x/` | `… REV BODY … JOIN` | Same as the opener |
 | Before an `/x/` linker | `REV LINKER BODY` | Same as prior talk |
 
-- **One REV** per discourse opener (no parallel discourse chains on one turn marker). In-clause chains stay inside the body.
-- After an explicit turn marker, the same spellings are only in-clause revisers.
+One discourse reviser per opener (no parallel discourse chains on one turn marker). In-clause chains stay inside the body. After an explicit turn marker, the same spellings in the body are in-clause revisers.
 
-On a **non-initial** conjunct under a [clause `/x/` fence](coordination.md#clause-level-coordination), **`REV`** sits immediately before that conjunct’s body: `A al B xam` → *A and additionally B*.
-
-Before an **`/x/`** linker (*therefore*, *however*, …), **`REV`** scopes the linker+body stretch: `al xezazal …` → *Additionally, therefore …*. Prefer plain `al …` or plain `xezazal …` when one cue is enough.
+On a non-initial conjunct under a [clause `/x/` fence](coordination.md#clause-level-coordination), the reviser sits immediately before that conjunct’s body: `A al B xam` → *A and additionally B*. Before an **`/x/`** linker (*therefore*, *however*, …), it scopes the linker+body stretch: `al xezazal …` → *Additionally, therefore …*. Prefer plain `al …` or plain `xezazal …` when one cue is enough.
 
 ```
 `jazawan al zululon vawalal.`
@@ -355,9 +340,7 @@ gloss: `j-grace@` · `additionally` · `z-courage@` · `v-walk`
 *Azawan: additionally, Ululon walks.* (vocative, then discourse reviser)
 ```
 
-Prefix-less **al** / **am** / **an** / **el** / **em** / **en** / **ol** / **om** / **on** / **ul** / **um** / **un** are these revisers (in-clause or discourse by placement). Longer prefix-less **root + ending** outside a sentence (`odogol`) is [citation](core.md#citation-forms).
-
-**Related form:** prefixed `zal` / `zam` / `val` … package lists with [joins](coordination.md#join-series-ending-shared).
+**Related form:** packaging a list uses prefixed [joins](coordination.md#join-series-ending-shared) (`zal` / `zam` / `val` …). Longer prefix-less **root + ending** outside a sentence (`odogol`) is [citation](core.md#citation-forms).
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -487,7 +470,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 ### Named frames and stock swaps
 
-**-n** revisers mark a **titled or conventional** frame.
+Use **-n** when A is a labeled set or the swap is stock wording, not a one-off repair.
 
 ```
 `zaredelsh an zelulul.`
@@ -498,14 +481,6 @@ gloss: `z-red-sh` · `including.named` · `z-blue`
 ```
 
 ```
-`zaredelsh un zerenel.`
-
-gloss: `z-red-sh` · `except.named` · `z-green`
-
-*The reds (and associates) except green from that named frame.*
-```
-
-```
 `dadedal on dogovel.`
 
 gloss: `d-tea` · `instead.named` · `d-coffee`
@@ -513,17 +488,9 @@ gloss: `d-tea` · `instead.named` · `d-coffee`
 *The stock tea-to-coffee swap.*
 ```
 
-```
-`zolozolsh al zahamel.`
-
-gloss: `z-toolbox-sh` · `including` · `z-hammer`
-
-*Tools, including only a hammer.*
-```
-
 ### Exclusive high on a number range
 
-Inside a [measure range](numbers-applied.md#ranges), prefix-less **`ul`** on the high endpoint reads *up to but not including*:
+Inside a [measure range](numbers-applied.md#ranges), prefix-less **`ul`** on the high endpoint means *up to but not including* that number.
 
 ```
 `z+3 ul z+5 zal gurulel.`

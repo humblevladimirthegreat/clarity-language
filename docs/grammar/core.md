@@ -411,12 +411,22 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 ## Intermediate
 <a id="intermediate"></a>
 
-### Speech act
+### Speech act: firm and soft
 <a id="speech-act"></a>
 
-Every utterance has exactly one **speech act** (written `/j/` or implied **`jal`** / **`jam`**). Shape is **`j` + vowel + ending`**: the vowel picks the speech-act family; **-l** = firm / closed; **-m** = soft / open. Non-default speech acts are **written**; default statement **`jal`** may be omitted under the Beginner rules.
+You already write whether a turn is a statement, question, command, or prohibition. The extra choice here is **how firmly** you mean it.
 
-The vowels match the [vowel-series](vowel-series.md) jobs: **a** add / hold, **o** one / menu, **e** order / rank, **u** undo.
+The act word is **`j` + vowel + ending**. The vowel is the family you know (**a** statement, **o** question, **e** command, **u** prohibition). **-l** stands behind the act; **-m** leaves it open (soft / tentative). Write the act word when the setting is not a default statement. A period still lets you omit **`jal`**.
+
+```
+`jam zazawan vawalal.`
+
+gloss: `j-statement` · `z-grace@` · `v-walk`
+
+*Maybe Azawan walks.*
+```
+
+The vowels match the [vowel-series](vowel-series.md) map: **a** add / hold, **o** one / menu, **e** order / rank, **u** undo.
 
 | Agalan | Use | Cue |
 |--------|-----|-----|
@@ -429,12 +439,12 @@ The vowels match the [vowel-series](vowel-series.md) jobs: **a** add / hold, **o
 | **jul** | **prohibition**: *don’t…* (firm) | **u** undo + **-l**: take the action back |
 | **jum** | **soft prohibition**: *please don’t…* / *I’d rather you not…* | **u** undo + **-m**: prefer they don’t |
 
-Prefix-less revisers (**`al`** / **`am`** / …) may sit in the left-edge cluster **right before** the act word, or before a body that defaults to a statement. Full table: [revisers.md](revisers.md).
+A [reviser](revisers.md) (**`al`** / **`am`** / …) may sit among the opening `/j/` words, immediately before the act word, or before a body that defaults to a statement.
 
 ### Adjectives before the noun (`gl-`)
 <a id="left-bound-adjectives"></a>
 
-Insert **l** as the second letter (`/ɡ/` + **l** + root + ending). The adjective comes **before** the noun it describes and attaches to the **next** eligible noun.
+English often puts the adjective before the noun (*a blue dog*). Agalan can too: add **`l`** as the second letter (`/ɡ/` + **l** + root + ending). That adjective comes **before** the noun it describes and looks ahead to the next noun. (cue: **l** ≈ lean left: look ahead to the host.)
 
 ```
 `glelulul zodogol.`
@@ -444,26 +454,44 @@ gloss: `gl-blue` · `z-dog`
 *a blue dog*
 ```
 
-(cue: **l** ≈ lean left: look ahead to the host.) Only `/ɡ/` takes this **l**.
-
-The package is the same as after-the-noun order: plain `/ɡ/`, or complex `/ɡ/` + `/b/`, plus any following `/w/` stack. `/b/` and `/w/` still follow that `/ɡ/` (`glelulul wegelom zodogol` = *a loud-volume blue dog*). Before-the-noun order is optional style (meter, prominence, comfort from your first language).
+`/b/` and `/w/` still follow that adjective (`glelulul wegelom zodogol` = *a loud-volume blue dog*). Before-the-noun order is optional (meter, what you put first for emphasis, or comfort from your first language). This extra **`l`** is only on adjectives (`/ɡ/`).
 
 ### As-for and free-order ties
 <a id="as-for"></a>
 
-**As-for** (*as for X*, *regarding X*, *on the topic of X*) is complex `/h/` + `/b/` naming that noun. Published **`oza`** is the dedicated root: `hozal bazawan` = *as for Azawan* / *on the topic of Azawan*. Highlight prominence by rearranging free word order (and ordinary *very*-type words if needed). Values **topic** (a need named with no `x`) is a different job: [values.md](values.md).
+*As for X* / *regarding X* names who or what the clause is about. Use an adverb plus extra noun (`/h/` + `/b/`) with published **`oza`**: `hozal bazawan` is *as for Azawan*. You can still put first the piece you want to highlight.
 
-There is no fixed order among several `/h/` units. Each unit’s job comes from its dictionary role; spoken order is free. If two units share a role and need a ranking, left-to-right breaks the tie.
+```
+`hozal bazawan zululon vawalal.`
+
+gloss: `h-topic` · `b-grace@` · `z-courage@` · `v-walk`
+
+*As for Azawan, Ululon walks.*
+```
+
+**Not the same job as:** [values](values.md) **topic** (a need named with no `x`). *As for* points at a person or thing in the clause; values topic names a standing need.
+
+Several `/h/` units have no fixed order. Each unit’s role comes from its dictionary meaning. If two units share a role and you need a ranking, the leftmost one wins.
 
 ### Complex chaining
 <a id="complex-chaining"></a>
 
-After a complex adjective or adverb, a further plain `/ɡ/` describes the **extra noun**, not the original host. `/w/` after a `/ɡ/` (+ optional `/b/`) grades that adjective. You can chain complex units onto those extra nouns; two complex adjectives on the same host noun need another sentence. Multiple `/h/` units on one verb are fine (each plain `/h/` or together `/h/`+`/b/` counts as one).
+A complex adjective is `/ɡ/` plus `/b/` (*same as Azawan*). A further plain adjective after that pair describes the **extra noun**, not the first noun. `/w/` after an adjective still grades that adjective.
+
+```
+`zodogol gonunul bazawan gelulul.`
+
+gloss: `z-dog` · `g-same` · `b-grace@` · `g-blue`
+
+*a dog the same as blue Azawan*
+```
+
+You can chain more complex units onto those extra nouns. Two complex adjectives on the same first noun need another sentence. Several `/h/` units on one verb are fine (each plain `/h/`, or `/h/`+`/b/` together, counts as one).
 
 ### Writing and speech rhythm (periods)
 <a id="orthography-and-prosody-periods"></a>
 
-Writing uses **periods** (and matching **`?`** / **`!`**) as **body** boundaries. Speech matches:
+A **period** (and matching **`?`** / **`!`**) closes the sentence body in writing. Speech matches that edge with pitch and a short pause.
 
 | Writing | Speech | Use | Cue |
 |---------|--------|-----|-----|
@@ -476,12 +504,12 @@ Writing uses **periods** (and matching **`?`** / **`!`**) as **body** boundaries
 | `/x/` continue (clause join) | Dip or short pause; **no** full pitch reset | Keep opener speech act; period after the **whole** joined stretch | Dip extends; no jump |
 | `/x/` linker after `.` (`xezazal …`) | Dip into the linker; no turn reset | Keep prior speech act; may start a new written sentence under that speech act | Linker glues; still the same act |
 
-**-l** vs **-m** on the act word / *yes* / *no* carries **commitment** (stand behind vs soft / open).
+**-l** vs **-m** on the act word / *yes* / *no* is how firmly you stand behind it (closed vs soft / open).
 
 ### Sentence linkers
 <a id="sentence-linkers"></a>
 
-One-way glue between sentences (ordinary ending; **-l** default closed):
+These words glue one finished sentence to the next (one-way; default ending **-l** is closed). Beginner already used *therefore*.
 
 | English | Agalan | Cue | Example |
 |---------|--------|-----|---------|
@@ -491,19 +519,27 @@ One-way glue between sentences (ordinary ending; **-l** default closed):
 | *next* | **`uvumu`** | 🎞️ *film*: the following frame | `xuvumul` |
 | *but* | **`onugo`** | 🚧 *construction*: the expected path is blocked | `xonugol` |
 
-*therefore* moves forward from the prior claim; *however* marks contrast; *meanwhile* is concurrent passage; *next* is the next frame; *but* blocks the expected continuation (harder push-back than *however*). Ordinary content readings of those roots stay available under other role letters.
+*therefore* moves forward from the prior claim; *however* marks contrast; *meanwhile* is concurrent passage; *next* is the next frame; *but* blocks the expected continuation (harder push-back than *however*). Those same roots keep their ordinary content readings under other role letters.
 
-Discourse **`xezebal`** (*however*) / **`xanelol`** (*meanwhile*) glue a **prior** sentence to the next one. Subordinating **`hezebam badorol`** (*although*) / **`hegemum badorol`** (*while*) attach a **dependent** under **`adoro`** ([dependent clauses](#dependent-clauses)).
+**Compare with:** *although* / *while* attach a dependent after **`adoro`** (`hezebam badorol`, `hegemum badorol` — [dependent clauses](#dependent-clauses)). Discourse **`xezebal`** / **`xanelol`** glue a finished sentence to the next one.
 
 ### Nested dependents
 <a id="nested-dependents"></a>
 
-Each clause may have at most one main-sentence-final **`adoro`**; a dependent may itself end in **`adoro`** (branching only to the right).
+Each clause has at most one **`adoro`** at the end of the main sentence. The sentence after **`adoro`** may itself end in **`adoro`**, so a further sentence hangs to the **right**.
+
+```
+`zazawan guzumum hurugum badorol zululon vawalal hurugum badorol zuhubun velebel.`
+
+gloss: `z-grace@` · `g-happy~` · `h-because~` · `b-next-clause` · `z-courage@` · `v-walk` · `h-because~` · `b-next-clause` · `z-beauty@` · `v-sleep`
+
+*Azawan is happy because Ululon walks because Uhubun sleeps.*
+```
 
 ### Number as interjection
 <a id="number-as-interjection"></a>
 
-A `/j/` **number** word is a call-out (*N more!*, score call, …). It may sit in the left-edge cluster before the act word, or stand alone as a bare turn. Readings by marker: [numbers.md](numbers.md#number-as-interjection-by-marker).
+A number word in `/j/` is a call-out (*Three more!*, a score). It can sit with the other opening `/j/` words, before the act word, or stand alone as its own turn. Readings by marker: [numbers.md](numbers.md#number-as-interjection-by-marker).
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -642,4 +678,4 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 ### Weak-pause left cues
 <a id="weak-pause-left-cues"></a>
 
-When pauses are weak (singing, fast free order), prefer an audible left cue after silence: *yes* / *no*, a vocative, or a written act word, rather than a bare body that only implies **`jal`**. Writing still uses `.` for body edges.
+When you cannot hear a clear pause (singing, fast free order), prefer something audible at the start after silence: *yes* / *no*, a name you address, or a written act word. A bare body that only implies **`jal`** is easy to miss. Writing still uses `.` to mark body edges.

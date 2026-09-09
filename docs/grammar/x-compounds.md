@@ -41,22 +41,22 @@ That shape is an **ordinary compound**: a full root, **`x`**, another full root.
 ### Left and right of `x`
 <a id="families-by-shape"></a>
 
-You already know several jobs that use mid-word **`x`**. After the PoS letter, look at what sits **left** and **right** of the **first** **`x`**.
+Beginner already used ordinary compounds, role compounds, and values / ability on a host. After the role letter, the pieces **left** and **right** of the **first** **`x`** pick the rest of the map.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| one vowel **`x`** one vowel, then a span ending | [span fence](spans.md) open or close | `daxal` … `xuxul` | |
+| one vowel **`x`** one vowel, then a span ending | [span fence](spans.md) open or close | `daxal` … `xuxul` | vowel **x** vowel |
 | **`a`** / **`u`** / **`o`** **`x`** a longer root | [role compound](roles.md#role-compounds) | `zaxuvugul` *a fighter* | **a** agent / **u** patient / **o** relatum |
 | longer root **`x`** stance vowel **`a`** / **`e`** / **`o`** / **`u`** | [values](values.md) (need host) or [ability](ability.md#ability) (other host) | `vuzunuxel` | stance vowel on the host |
-| longer root **`x`** a [number](numbers.md) stem (no ending of its own) | [numeric derivation](numeric-derivation.md#numeric-derivation) | `…x+1…` / speech `…xraba…` | |
+| longer root **`x`** a [number](numbers.md) stem (no ending of its own) | [numeric derivation](numeric-derivation.md#numeric-derivation) | `…x+1…` / speech `…xraba…` | number stem on the right |
 | full roots on **both** sides, optional further **`x`** + root | ordinary compound | `zuzuzuxogoven`; `gewezexazawan` *Azawan’s left* ([viewpoint laterals](roles.md#viewpoint-laterals)); `zodunaxalanen` ([phrasal proper names](reference-suffix.md#phrasal-proper-names)) | **x** ≈ plus |
 
-A content root is never a **bare single vowel**, so a lone vowel **left** of **`x`** is a span open or a role vowel, not a values / ability / numeric **host**. Role compounds still put a full root (`V(CV)+`) after the role vowel. Span opens are the usual **vowel `x` vowel** shape. Numeric right halves follow number-stem grammar (markers **`+`** / **`-`** / **`#`** / **`_`**, digitless exponents including labels **`_e`** / **`_e-`**, hyperbole, [zero × exp](numbers.md#zero-exponent) **`+0e`** / **`±0e-1`** / **`#0e`**, label digits, scalar **`+N`** / **`-N`**, ordinal **`#N`**). Running-text examples prefer spelled CV (`…xraba…`); see [writing style](numbers.md#writing-style-numeric-vs-spelled).
+A published content root is longer than one vowel, so a lone vowel **left** of **`x`** is a span open or a role vowel. Role compounds still put a full root after that vowel. Numeric right halves follow number-stem grammar; running text prefers spelled CV (`…xraba…`). See [writing style](numbers.md#writing-style-numeric-vs-spelled).
 
 ### Ordinary compound order
 <a id="ordinary-compound-order"></a>
 
-The **first** content root is the **kind**. Each later root **narrows** it (field, topic, further label). The list is **flat**: `KIND x FIELD`, then `KIND x FIELD x FURTHER`. One ending on the whole word.
+When one label still shows a kind and then a field (or a further title), English often stacks those pieces in order (*love* in the *crush* sense; a shop name with a third piece). Agalan writes that as a **flat** list: the first content root is the kind; each later root after **`x`** narrows it. One ending sits on the whole word, so you can add another **`x`** + root without changing the first pieces.
 
 ```
 `golovexagal.`
@@ -78,18 +78,20 @@ gloss: `z-sushi-x-coffee-x-tea@`
 
 <AgelanInspect text="zuzuzuxogovexadedan." />
 
-[Phrasal names](reference-suffix.md#phrasal-proper-names) use the same left-to-right order (given × family × further title). An office’s **handle** is one root, not this compound ([named handles](reference-suffix.md#named-handles)). [Viewpoint laterals](roles.md#viewpoint-laterals) are **two** roots (`DIR x ANCHOR`). Span, role, values / ability, and numeric jobs use **one** mid-word **`x`**.
+[Phrasal names](reference-suffix.md#phrasal-proper-names) use the same left-to-right order (given, then family, then further title). [Viewpoint laterals](roles.md#viewpoint-laterals) are two roots (`DIR x ANCHOR`).
+
+**Compare with:** an office **handle** is one root ([named handles](reference-suffix.md#named-handles)), not this stack.
 
 ### Telling the families apart
 <a id="decision-order"></a>
 
-When you see mid-word **`x`**, both sides of that seam tell you which job it is:
+The table above is the full map. Read both sides of the first **`x`** in this order:
 
 - The whole word is **`xuxul`** / **`xuxur`** / **`xuxum`** → a **span** is closing.
-- After the role letter: one vowel, **`x`**, one vowel, then a span ending → a **span** is opening (or atomic / resume / empty — [spans](spans.md)).
+- After the role letter: one vowel, **`x`**, one vowel, then a span ending → a **span** is opening (atomic / resume / empty — [spans](spans.md)).
 - After the role letter: one vowel **`a`** / **`u`** / **`o`**, **`x`**, then a longer root → a **role compound** (who does / undergoes / relates).
 - A longer root, then **`x`**, then a single stance vowel **`a`** / **`e`** / **`o`** / **`u`** → **values** (on a need) or **ability** (on another host).
-- A longer root, then **`x`**, then a **number** stem (writing **`+`** / **`-`** / **`#`** / **`_`**, speech **`r`+V…**, including digit morph **`+N`** / **`-N`** / **`#N`**) → **numeric derivation**.
+- A longer root, then **`x`**, then a **number** stem (writing **`+`** / **`-`** / **`#`** / **`_`**; speech starts with **`r`**) → [numeric derivation](numeric-derivation.md#numeric-derivation).
 - Full roots on **both** sides of the first **`x`** (and maybe more **`x`** + root) → an ordinary compound (sense or name).
 
 Role vowels are only **`a`** / **`u`** / **`o`**. Span type and edge letters stay single vowels.
@@ -97,19 +99,19 @@ Role vowels are only **`a`** / **`u`** / **`o`**. Span type and edge letters sta
 ### One slot, one package
 <a id="compound-vs-separate"></a>
 
-Pick **one** package for the job.
+English sometimes puts two nouns in one slot (*a dog and a cat*) and sometimes one compound (*Sushi-Coffee*). Count how many things fill the slot: that many Agalan words. Two fillers stay two words; one referent that still shows kind then field is one **`x`** compound. A conventional kind already closed as a single lexicon entry is one word with no mid-word **`x`**.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | two words | two slot-fillers, or a relation that already has its own marking: join / adjective | `zodogol zagadal zam` *a dog and a cat*; `zodogol gelulul` *a blue dog* (property = `/ɡ/`) | |
 | **`x` compound** | one referent; you still hear KIND then FIELD (live label, sense-narrowing, multipart name) | `golovexagal` *love in the crush sense*; `zuzuzuxogoven` *Sushi-Coffee* | **x** ≈ plus |
-| lexical kind | one conventional kind already closed as a single lexicon entry | `zohohulabedel` *bedroom*; `zunowel` *sunflower* ([lexical compounds](#lexical-compounds)) | join letter instead of **x** |
+| lexical kind | one conventional kind already closed as a single lexicon entry | `zohohulabedel` *bedroom*; `zunowel` *sunflower* | join letter instead of **x** |
 
-**Slot test (first).** How many things fill the slot? That many words. `zazawan zululon` is two people; `zazawaxululon` is one person.
+`zazawan zululon` is two people; `zazawaxululon` is one person. A frequent shop mashup is still productive **`x`**; a fossil kind is one lexicon stem (hear one entry, not a dropped **`x`**).
 
-**Construction menu.** Property on a host → `/ɡ/` (or `/w/`). List → [join](coordination.md). Participant → [role compound](roles.md#role-compounds). Count / unit → [number](numbers.md). Stance / ability / numeric derivation → those **`x`** jobs. When none of those apply and you still want KIND×FIELD in one slot → productive **`x`**.
+**Compare with:** a property on a host uses `/ɡ/` (or `/w/`); a list uses a [join](coordination.md).
 
-A shop mashup stays **`x`** even when frequent. A fossil kind is a lexicon lemma (hear one root, not a dropped **`x`**).
+**Related form:** who does / undergoes / relates uses a [role compound](roles.md#role-compounds).
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -181,9 +183,9 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 ### Lexical compounds
 <a id="lexical-compounds"></a>
 
-Some conventional kinds are **one root** in the lexicon: the seam between two published roots is spelled with the **first member’s reference letter** (`l` / `m` / `n` / `r`), with no mid-word **`x`**. You do not coin these on the fly; you learn each closed kind.
+Some kinds English treats as one word (*bedroom*, *friend*) are one lexicon stem in Agalan, not a live **`x`**. The seam between the two published roots is the first member’s reference letter (**l** / **m** / **n** / **r**). You learn each closed kind; you do not build a new one by swapping that letter in for **`x`**.
 
-**Shape:** `LEFT` + join letter + `RIGHT` = **stem**; then PoS + stem + **ending** on the whole word (same as any content word).
+Write `LEFT` + that letter + `RIGHT` as the **stem**, then the role letter and ending on the whole word, as with any content word.
 
 ```
 `zohohulabedel.`
@@ -203,7 +205,7 @@ The join letter records how the **left** root entered the closed kind (usually *
 | `eberelonogo` | person **-l** bond | friend | |
 | `abogolahala` | book **-l** school | textbook | |
 
-Productive **`x`** is the default when you are still assembling (`golovexagal`, shop mashups, multipart names). Lexical closure is for kinds hearers should treat as **one entry**, like English *bedroom*.
+**Compare with:** still assembling a kind-then-field label uses productive **`x`** (`golovexagal`, shop mashups, multipart names). Lexical closure is for kinds hearers treat as one entry, like English *bedroom*.
 
 ### Translation practice
 <a id="translation-practice-advanced"></a>

@@ -9,11 +9,7 @@ Content words that **name a join move** (*include*, *choose*, *without*).
 ### Join-act verbs
 <a id="join-act-verbs"></a>
 
-Use a **join-act** when someone **performs** a coordination move on an object: *include*, *choose*, *exclude*, and the rest of this series.
-
-**Shape:** `/v/` + join vowel + **-n** (`van`, `von`, …). One `/d/` object (one thing or a group). Put ordinary noun **-sh** on the object when the group is associative; verb **-sh** is [collective](plurality.md#verbs-v).
-
-The vowel is the join move; **-n** is join content. That is the **only** place join-word **-n** is not a [proper name](reference-suffix.md#proper-name--n). Stacked vowels combine the same four jobs (**a** / **o** / **e** / **u**).
+When someone *does* a list move to a thing (*includes*, *chooses*, *leaves out*), write that move as a verb: first letter **`v`**, the same join vowel you already use on lists, and ending **-n** (`van`, `von`, …). The object is one `/d/` word (one thing or a group). You can now name the act itself instead of only packing a list. On these verbs, **-n** is join content, not a [proper name](reference-suffix.md#proper-name--n). Put ordinary noun **-sh** on the object when the group is associative; verb **-sh** is [collective](plurality.md#verbs-v).
 
 ```
 `zazawan dabelel van.`
@@ -25,7 +21,9 @@ gloss: `z-grace@` · `d-apple` · `v-includes`
 
 **Related form:** packaging a list uses [joins](coordination.md) (`zal` / `val` / `xal`, …).
 
-These are ordinary content verbs. Sequence of clauses (*and then*) uses clause **sequence** (`xan`, …) on [coordination.md](coordination.md#sequence). Point back at a join-act you already used with a short resume or a full paraphrase.
+**Compare with:** *and then* between sentences uses clause [sequence](coordination.md#sequence) (`xan`, …), not `van`.
+
+These are ordinary content verbs. Point back at a join-act you already used with a short resume or a full paraphrase. Stacked vowels combine the same four moves (**a** / **o** / **e** / **u**):
 
 | Agalan | Use | English | Cue | Example |
 |--------|-----|---------|-----|---------|
@@ -40,16 +38,12 @@ These are ordinary content verbs. Sequence of clauses (*and then*) uses clause *
 | **`voen`** | trial the object as a pick | *tries* | **oe** ≈ one + order (try this one) | `zazawan dewenem voen` |
 | **`vuen`** | rank the object lower | *deprioritizes* | **ue** ≈ undo + order (drop this rank) | `zazawan dubagem vuen` |
 
-English *refuse* vs *leave out*: `zazawan dememal vun` (*Azawan refuses meat*) vs `zazawan dememal vuan` (*Azawan excludes meat*). One locked choice vs an open pick: `zazawan dabanul von` vs `zazawan dabanul vaon`. Rank vs trial: `zazawan dewenem ven` (*prioritizes the workaround*) vs `zazawan dewenem voen` (*tries the workaround*). *And then* between sentences is `SENT₁ SENT₂ xan`, not `van`.
+English *refuse* vs *leave out*: `zazawan dememal vun` (*Azawan refuses meat*) vs `zazawan dememal vuan` (*Azawan excludes meat*). One locked choice vs an open pick: `zazawan dabanul von` vs `zazawan dabanul vaon`. Rank vs trial: `zazawan dewenem ven` (*prioritizes the workaround*) vs `zazawan dewenem voen` (*tries the workaround*).
 
 ### Join-relations
 <a id="join-relations"></a>
 
-Use a **join-relation** when a host is **framed** by the same join-series move toward one `/b/` argument: *including peanuts*, *without meat*, *prioritizing the bug*.
-
-**Shape:** `/ɡ/` or `/h/` + join vowel + **-n** (`gan` / `han`, …). One `/b/` argument (one thing or a group). Put ordinary noun **-sh** on that argument when the group is associative. For several members or an empty domain, put a [phrase join](coordination.md) **inside** the `/b/` phrase (`gan babanul bubagem bal`), or use a [standalone](coordination.md#standalone-phrase) `/b/` join as the only argument (`gan bar` = *including something*; `guan bal` = *excluding nothing* / stripped frame).
-
-Same vowels as [join-act verbs](#join-act-verbs); **-n** is join content toward `/b/` (same **only** exception as other join words). Keep the relation and its `/b/` together: `gan` + `/b/` on a noun; `han` + `/b/` as one adverb.
+When a noun or event is *framed* toward something (*cake with peanuts*, *walk without meat*, *work prioritizing the bug*), write the frame as an adjective or adverb: first letter **`g`** or **`h`**, the same join vowel as [join-act verbs](#join-act-verbs), and ending **-n** (`gan` / `han`, …), plus one `/b/` argument. Keep that pair together (`gan` + `/b/` on a noun; `han` + `/b/` as one adverb). You can now attach *including* / *without* / *prioritizing* to a host without building a new list. On these words too, **-n** is join content toward `/b/`. Put ordinary noun **-sh** on the argument when the group is associative.
 
 ```
 `zuragel gan babanul.`
@@ -63,7 +57,9 @@ Content *including* needs that `/b/` (`gan b…`). A stock label uses a [mention
 
 **Not the same job as:** adjective [joins](coordination.md) (`gal` / `gam` / `gar`). Join-relations take **-n** toward one `/b/`.
 
-**Compare with:** under `/h/` use [restrictors](restrictors.md) (`hal`, `hual`, `har`, …).
+**For *including* as an afterthought, use:** a [reviser](revisers.md) (`al`, …). `zahadam gan bazawan` is *a team including Azawan*; `zahadam al zazawan` is *the team, including Azawan*.
+
+For several members or an empty domain, put a [phrase join](coordination.md) **inside** the `/b/` phrase (`gan babanul bubagem bal`), or use a [standalone](coordination.md#standalone-phrase) `/b/` join as the only argument (`gan bar` = *including something*; `guan bal` = *excluding nothing* / stripped frame).
 
 | Agalan | Use | English | Cue | Example |
 |--------|-----|---------|-----|---------|
@@ -79,10 +75,6 @@ Content *including* needs that `/b/` (`gan b…`). A stock label uses a [mention
 | **`guen` / `huen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *deprioritizing / trailing*; `/h/` *deprioritizing* | **ue** ≈ undo + order (drop this rank) | `zuragel guen bubagem`; `… huen bubagem vawalal` |
 
 *Anti-* vs *without*: `gun bememal` vs `guan bememal`. *Without X* vs *anything but X*: `guan babanul` vs `guon babanul`. Sole pick vs among options: `gon bazawan` vs `gaon bazawan`. Workaround-first vs try-the-workaround: `gen bewenem` vs `goen bewenem`.
-
-English *including* as a slot repair is a [reviser](revisers.md): `zahadam gan bazawan` (*a team including Azawan*) vs `zahadam al zazawan` (*the team, including Azawan*).
-
-Keep list or empty arity on the **`/b/` argument**. Join-relations take **-n**.
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>

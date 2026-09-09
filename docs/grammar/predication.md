@@ -191,34 +191,46 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 ### Classification packaging
 
-Once kind sits on `/ɡ/`, you can hedge it, mark it as a type, or deny it.
+You already put a kind on `/ɡ/` after the name (*Azawan is a dog*). The extra choice here is how tightly that kind holds: hedge it, mark it as the usual type, or deny it. The kind word stays on `/ɡ/`; a following hedge `/w/`, characterizing **`hual`**, or negation **`gul`** packages that same pair.
+
+```
+`zazawan godogol gul.`
+
+gloss: `z-grace@` · `g-dog` · `g-not`
+
+*Azawan is not a dog.*
+```
 
 | Agalan | Use | English |
 |--------|-----|---------|
 | classifying `/ɡ/` plus a `/w/` hedge | soft / hedged class | *Azawan is something of a dog* / *a dog, sort of* |
-| `zazawan godogol hual` | characterizing / habitual | *Azawan is the dog type*; [**hual**](restrictors.md) |
-| `zazawan godogol gul` | negation | *Azawan is not a dog*; [negation **u**](coordination.md#negation-u) |
+| `zazawan godogol hual` | characterizing / habitual | *Azawan is the dog type* |
+| `zazawan godogol gul` | negation | *Azawan is not a dog* |
+
+**Related form:** *the dog type* / habitual class uses [**hual**](restrictors.md).
+
+**Related form:** *not a dog* uses [negation **u**](coordination.md#negation-u) (`gul`).
 
 ### **SAME** endings
 
-The same identity pattern takes the usual endings. **-l** stands behind the match; **-m** is ordinary **open** SAME (*same for our purposes*); **-n** is a titled frame; **-r** resumes a prior identity claim.
+Beginner already used closed **`gonunul`** (*is the same as*). The other endings on that same adjective finish the map.
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| **-l** | stand behind identity (closed) | *is* (the same as) |
-| **-m** | open SAME | *same for our purposes* |
-| **-n** | named identity frame | titled equivalence (rare) |
+| **-l** | stand behind the match (closed) | *is* (the same as) |
+| **-m** | leave the match open | *same for our purposes* / *basically* |
+| **-n** | titled identity frame | named equivalence |
 | **-r** | resume a prior identity claim | *the same (as already ascribed)* |
 
 | Agalan | English |
 |---------|---------|
 | `z<Clark>n gonunul b<Superman>n` | *Clark is (the same as) Superman* |
-| `z<Clark>n gonunum b<Superman>n` | open: *Clark is basically Superman* |
+| `z<Clark>n gonunum b<Superman>n` | *Clark is basically Superman* |
 | `z<Clark>n gonunul b<Superman>n gul` | *Clark is not (identical to) Superman* |
 | `z<Clark>n heraram gonunul b<Superman>n` | *Clark is allegedly Superman* |
 | `zeberel gonunul b<Superman>n` | inside a noun phrase: *the person who is Superman* |
 
-The coin root is still available as ordinary *coin* (`zonunul`) or as a *token*-like adjective when it is not this identity frame. Closed **`gonunu…` + `/b/`** as the property is the identity reading.
+**Compare with:** ordinary *coin* is `zonunul` (or a *token*-like adjective). Identity is **`gonunu…`** plus a following `/b/` label, kept next to each other.
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
