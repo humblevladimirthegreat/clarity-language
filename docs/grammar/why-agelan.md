@@ -64,7 +64,7 @@ Psychological features fit these criteria:
 
 * **Addresses a common problem.** Targets biases or friction that show up for most people. Rare edge cases do not justify heavy machinery.
 
-* **Easy to use.** Explainable in roughly one paragraph plus a couple of examples; usable in sentences with at most about one extra second of thought after practice. Same bar guides how grammar sections are written.
+* **Easy to use.** Explainable in roughly one paragraph plus a couple of examples; usable in sentences with at most about one extra second of thought after practice.
 
 * **Avoids shame.** No option should read as the socially “correct” default. Each choice has situations where it belongs.
 
@@ -106,18 +106,20 @@ Composing emotion from need + activation + locus helps you ask for what would ac
 
 *I can’t* blurs temporary block, lasting incapability, and choice.
 
-[Ability](ability.md#ability) tags **can** / **can’t** on an activity or property: can; can’t right now; can’t but may change; can’t as fixed. Ordinary *won’t* stays ordinary refusal, so a choice is not packaged as can’t.
+[Ability](ability.md#ability) tags **can** / **can’t** on an activity or property: can; can’t right now; can’t but may change; can’t as fixed. Ordinary *won’t* is choosing not to.
 
 Tagging *can’t right now* vs *may yet* vs *impossible* helps you stop treating a temporary block as a fixed incapability.
 
-### How you know — and *I think*
+### How you know, and *I think*
 <a id="how-you-know"></a>
 
 It is easy to treat a take as settled fact: mixing memory, hearsay, gut feel, and *I think* into one warrant.
 
-[Evidentiality](commentary.md#evidentiality) lets a claim about the world name **how you know**: live look, memory, record, pattern, inference, hearsay, gut-felt, or story. Memory (**WITNESSED**) is reconstructive; a live look (**LIVE**) is concurrent access — not a generic past/present tense. *I think / assume / wonder* is a different job: noting your own rumination, not a warrant about the world.
+[Evidentiality](commentary.md#evidentiality) lets a claim about the world name **how you know**: live look, memory, record, pattern, inference, hearsay, gut-felt, or story. Memory (**WITNESSED**) is pulling a scene back from earlier (you may mis-reel it). A live look (**LIVE**) is seeing it while it is still in view.
 
-Marking the channel (and separating *I think* from world-warrant) helps you catch overconfidence and hearsay before you treat a take as settled fact.
+Marking the channel helps you catch overconfidence and hearsay before you treat a take as settled fact.
+
+**For *I think*, use:** [COMMENT](commentary.md#comment) (`odoho`). That notes your own rumination. Evidentiality is how you know a world-claim.
 
 ### Intention, forecast, and firmness
 <a id="intention-forecast-and-firmness"></a>
@@ -127,6 +129,8 @@ English *will* smuggles plan and prediction together. It is easy to talk as if t
 Agalan splits them: [PLAN](plan-decision.md#plan-predict) for what you mean to do; [PREDICT](plan-decision.md#plan-predict) for a forecast; [DECISION](plan-decision.md#decision) for how revisable a pick is.
 
 Splitting plan, prediction, and decision firmness helps you avoid treating a wishful or “certain” forecast as settled fact (or as a commitment), and a revisable pick as locked forever.
+
+**Compare with:** English *will*. Use PLAN for intention, PREDICT for a forecast, and DECISION for how firm the pick is.
 
 ### Open lists, closed lists, and false dichotomies
 <a id="open-and-closed-lists"></a>
@@ -162,9 +166,9 @@ Abstract ideas are hard to hold; without a concrete picture, the psychologically
 
 Published roots keep a **metaphorical** sense beside the literal one, so the abstract job rides on a familiar scene that already carries the caution. Examples:
 
-* [Memory as fishing](commentary.md#evidentiality): cast into opaque water; you may pull a fish or a **boot** (retrieval is reconstructive).
-* [Live look as attesting](commentary.md#live-vs-memory): eye-in-speech while the scene is still in view; not the same as fishing a memory.
-* [Usual as weather](special-vocabulary.md#universality): a habitual *always* is a climate report; [uncountered](special-vocabulary.md#universality) is clear sky (*no counterexample comes to mind*), search rather than proof.
+* [Memory as fishing](commentary.md#evidentiality): cast into opaque water; you may pull a fish or a **boot** (the memory can be wrong).
+* [Live look as attesting](commentary.md#live-vs-memory): eye-in-speech while the scene is still in view.
+* [Usual as weather](special-vocabulary.md#universality): a habitual *always* is a climate report; [uncountered](special-vocabulary.md#universality) is clear sky (*no counterexample comes to mind*), a search, not a proof.
 * [*As if* as theater](commentary.md#notional): a stage mask frames play; the real tally stays **offstage**.
 * [Mechanism as gears](causation.md#cause): naming the gear train marks *how it meshes*.
 * [Affect as water](special-vocabulary.md#emotion-compose): tide (arousal) plus vessel / pour / ambient field (locus) instead of an opaque emotion label that hides the need.
@@ -192,12 +196,12 @@ Some are reminded of Newspeak from 1984, where a totalitarian government alters 
 
 For Agalan and similar languages, as long as using the language is voluntary, and the speaker knows how the language influences their thoughts (and the language delivers on those promises), then it is morally good. Learning the language is comparable to enrolling in a self-help course to influence their thought patterns: clearly ethical if it influences the person in the healthy way they desire.
 
-Language influences but does not determine thought. Speakers that wish to think/communicate in a way discouraged by the language are still capable of doing so (though the sentences will likely be longer).
+Language influences but does not determine thought. Speakers who wish to think or communicate in a way discouraged by the language are still capable of doing so (though the sentences will likely be longer).
 
 ### Language evolution
 <a id="language-evolution"></a>
 
-Some think that the inevitable change to languages that happens over decades of use will lead to the conlang eventually being “watered down” to the point where it no longer has the properties that make the language beneficial.
+Some think that the inevitable change to languages that happens over decades of use will lead to the constructed language eventually being “watered down” to the point where it no longer has the properties that make the language beneficial.
 
 While the language can and should change to keep up with the times, I am optimistic that it will retain or even strengthen its beneficial properties because the people who choose to learn the language want those beneficial properties and so will adopt changes in line with the language’s goals.
 

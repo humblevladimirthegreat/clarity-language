@@ -7,33 +7,35 @@ How these docs work, and what “good grammar design” means for this language.
 ## Purpose
 <a id="purpose"></a>
 
-Agalan encodes psychological distinctions into vocabulary and grammar so ordinary speech can nudge **compassion → rationality → empowerment**.
+Agalan encodes psychological distinctions into vocabulary and grammar so ordinary speech can nudge **compassion → rationality → empowerment**. Purpose, limits, and a tour of those aims: [Why Agalan](why-agelan.md).
 
 ## Grammar design
 <a id="grammar-design"></a>
 
 Two supporting goals sit beside the psychology:
 
-- **Unambiguous but usable** — so automatic tools can understand the language without making ordinary speech hard.
-- **Singable phonology** — syllable shape chosen to be easy to sing.
+- **Unambiguous but usable:** so automatic tools can understand the language without making ordinary speech hard.
+- **Singable phonology:** syllable shape chosen to be easy to sing.
 
 Agalan keeps three kinds of clarity in ordinary speech.
 
 ### Syntactic
 <a id="syntactic"></a>
 
-In a clause, every content word begins with a letter that names its job (subject, object, verb, …), so role does not depend on guessing from English-style word class. Default order is Subject–Object–Verb, but free order is safe because that role letter is authoritative.
+In a clause, every content word begins with a letter that names its role (subject, object, verb, …), so you do not have to guess from English-style word class. Default order is Subject–Object–Verb, but free order is safe because that first letter is what counts.
 
 `zazawan godogol.`
 
-*Azawan is a dog.* The role letter on each word is the job: `z-` who the sentence is about, `g-` a kind or property.
+gloss: `z-grace@` · `g-dog`
 
-Outside a sentence, the bare root with its final letter names the thing by itself.
+*Azawan is a dog.* The first letter of each word tells you the role: `z` who the sentence is about, `g` a kind or property.
 
 ### Referential
 <a id="referential"></a>
 
-Pronouns copy a short start of an earlier word’s root (through the second vowel) and point to the **most recently mentioned matching** word. A few specials cover speaker, listener, and similar roles. There are no vague English-style *it* / *they* where you have to guess which of the many possible things it refers to.
+Pronouns copy a short start of an earlier word’s root (through the second vowel) and point to the **most recently mentioned matching** word. A few specials cover speaker, listener, and similar roles.
+
+**Compare with:** English *it* / *they*. The copy points at one earlier match, so you are not guessing among many possible things.
 
 ### Semantic
 <a id="semantic"></a>
@@ -43,10 +45,10 @@ Each dictionary sense is one entry. Related senses across fields use an explicit
 ### Tools those goals make possible
 <a id="tools"></a>
 
-Role letters, closed endings, and spelling that tracks sound mean a program does not have to guess word class, vague reference, or pronunciation. These tools follow the written grammar; they do not define it. Speakers still get free order and a singable shape.
+Role letters, closed endings, and spelling that tracks sound mean a program can label word class, reference, and pronunciation from the writing. What you write is the language; Inspect only names the parts. Speakers still get free order and a singable shape.
 
-- **[Inspect](inspect.md)** — paste a sentence and click or highlight a word to see its job, root sense, and how the clause hangs together.
-- **Text-to-speech** — on that same page, **Speak Agalan** plays the text. Letter-to-sound spelling plus a small syllable inventory make speech a mapping, not a guess. **Show IPA** transcribes the same spoken forms.
+- **[Inspect](inspect.md):** paste a sentence and click or highlight a word to see its role, root sense, and how the clause hangs together.
+- **Text-to-speech:** on that same page, **Speak Agalan** plays the text. Letter-to-sound spelling plus a small syllable inventory make speech a mapping from the letters. **Show IPA** transcribes the same spoken forms.
 
 ## How to learn from these docs
 <a id="how-to-learn"></a>
@@ -66,12 +68,12 @@ Inventory tables on grammar pages keep four kinds of cell apart so a memory aid 
 |--------|------------|
 | **Agalan** | The word or letter you write. |
 | **Use** | What that form **does** (subject, question, *because* as a clause glue). This is the rule. |
-| **English** | What you would **say** — the sense to produce or understand. |
-| **Cue** | A hook that says **why** the letter, vowel, or picture maps to that row — not the emoji’s name. |
+| **English** | What you would **say**: the sense to produce or understand. |
+| **Cue** | A hook that says **why** the letter, vowel, or picture maps to that row. |
 
 **Cue** is optional on a test. Cover that column and you should still know the **Use** and the **English**. `≈` in a cue means “sounds like,” not “equals.” When a root’s published picture is an elephant and you need *big*, **English** is *big*; **Cue** is *from elephant: the huge animal*.
 
-That split speeds learning: you practice the real job once, then the cue (often the same four vowels, or one emoji scene) makes the next closed set cheaper to remember — without treating the pun as the grammar.
+That split speeds learning: you practice the real job once, then the cue (often the same four vowels, or one emoji scene) makes the next closed set cheaper to remember. The pun is a hook, not the grammar.
 
 Continue with [phonology.md](phonology.md#beginner) for letters and word edges, then [reference-suffix.md](reference-suffix.md#beginner) for citation endings, then [core.md](core.md#beginner) for clause shape.
 
@@ -95,4 +97,4 @@ I would also like to thank the Conlangs community on Reddit for their wealth of 
 
 I also thank all the beta testers and reviewers for your feedback and questions.
 
-Speak uses KittenTTS (KittenML) in the browser via ONNX Runtime Web, with token mapping and voice-file loading adapted from kitten-tts-js. The grammar site is built with VitePress; parsing uses Chevrotain and Peggy.
+Speak uses KittenTTS (KittenML) in the browser via ONNX Runtime Web, with token mapping and voice-file loading adapted from kitten-tts-js. The grammar site is built with VitePress.
