@@ -66,7 +66,7 @@ loose: *But I'm going with coffee.*
 
 **A:** `xezebal zubur huvuvum zanunul.`
 
-gloss: `x-however` · `z-←Ubunexunowen` · `h-witnessed` · `z-rain`
+gloss: `x-however` · `z-←Ubunexunowen` · `h-WITNESSED` · `z-rain`
 
 strict: *However — that one (B), per memory — it rains.*
 

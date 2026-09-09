@@ -11,8 +11,10 @@ uhuhem,h,🛡️,survival need (defense / safety),shield blocks blows; defense i
 uhuhem,w,🛡️,survival need (defense / safety),shield blocks blows; defense is safety and health
 egem,h,🥚,unspecified need (potential),egg holds unrealized life; potential names a need without picking which
 egem,w,🥚,unspecified need (potential),egg holds unrealized life; potential names a need without picking which
-uvuvum,h,🎣,witnessed evidential (per memory / reconstructive),fishing pulls from opaque water; memory retrieves the past (may be a boot)
-uvuvum,w,🎣,witnessed evidential (per memory / reconstructive),fishing pulls from opaque water; memory retrieves the past (may be a boot)
+uvuvum,h,🎣,witnessed evidential (per memory / reconstructive),fishing pulls from opaque water; memory retrieves a past observation (may be a boot)
+uvuvum,w,🎣,witnessed evidential (per memory / reconstructive),fishing pulls from opaque water; memory retrieves a past observation (may be a boot)
+adezem,h,👁️‍🗨️,live evidential (present observation / concurrent access),eye-in-speech attests while the scene is in view; live is seeing-and-saying now (not memory)
+adezem,w,👁️‍🗨️,live evidential (present observation / concurrent access),eye-in-speech attests while the scene is in view; live is seeing-and-saying now (not memory)
 eregom,h,⏺️,recorded evidential (on record / captured),record button preserves now; record is playback of what was kept
 eregom,w,⏺️,recorded evidential (on record / captured),record button preserves now; record is playback of what was kept
 abawam,h,🐾,pattern evidential (from trail of cases),paw prints mark a trail; trail is regularity left behind

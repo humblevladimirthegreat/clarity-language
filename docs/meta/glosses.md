@@ -87,7 +87,7 @@ Published strings share one phonological root, but **literal**, **metaphorical**
 | `guzumul` | `g-smile` | `g-uzumu(smile)-l` |
 | `guzumum` | `g-happy` | `g-uzumu(smile→happy)-m`, `g-happy-m` |
 | `huvuvul` | `h-fishing` | `h-uvuvu(fishing)-l` |
-| `huvuvum` | `h-witnessed` | `h-uvuvu(fishing→witnessed)-m` |
+| `huvuvum` | `h-WITNESSED` | `h-uvuvu(fishing→WITNESSED)-m` |
 | `gohohum` | `g-home` | `g-ohohu(house→home)-m` |
 
 Same English label for `zugobom` and `zugobon` is fine: both are the *speaker* sense-root; the written ending is recoverable from the Agalan line and from [reference-suffix.md](../grammar/reference-suffix.md). The gloss’s job is the **sense**, not a second orthography.
@@ -130,7 +130,7 @@ Do **not** write `-l` / `-m` / `-n` after a sense that already is the literal / 
 ### Sense labels
 
 - Prefer lexicon / overlay wording when short (`tea`, `speaker`, `witnessed`).
-- Prefer **stable tags** for closed inventory (uppercase OK when the docs already use them): `COMMENT`, `DECISION`, `SAME`, `WITNESSED`, `ABIL`.
+- Prefer **stable tags** for closed inventory (uppercase OK when the docs already use them): `COMMENT`, `DECISION`, `SAME`, `WITNESSED`, `LIVE`, `ABIL`.
 - Do **not** use arrows (`→`) or etymology chains.
 - Do **not** put PoS names in the label (`noun`, `proper`). Named reference is **`@`**, not the word *proper*.
 
@@ -222,7 +222,8 @@ Bake join / reviser **job** into the English label (including open vs closed whe
 | `zugobonsh` | `z-speaker-sh` | *I and associates* |
 | `zedonensh` | `z-listener-sh` | *you-all* (address set) |
 | `guzumum` | `g-happy` | *happy* |
-| `huvuvum` | `h-witnessed` | *per memory* |
+| `huvuvum` | `h-WITNESSED` | *per memory* |
+| `hadezem` | `h-LIVE` | *from the scene* |
 | `howoram` | `h-plan-sketch` | *as a sketch plan* |
 | `gonunul` | `g-SAME` | *identical to* (identity host) |
 | `von` | `v-choose` | *chooses (exactly one)* |
@@ -244,7 +245,7 @@ gloss: `j-yes` · `z-speaker` · `z-and.open` · `z-listener` · `z-and` · `g-h
 Agalan: `xezebal zubur huvuvum zanunul.`
 
 ```
-gloss: `x-however` · `z-←Ubunexunowen` · `h-witnessed` · `z-rain`
+gloss: `x-however` · `z-←Ubunexunowen` · `h-WITNESSED` · `z-rain`
 
 *Still — it’s raining, as I remember.*
 ```

@@ -6,7 +6,7 @@ rename viewpoint laterals
 
 ## Evidentiality / tense
 
-- Dedicated observation vs imagination **tense** (stacks with evidentiality channels; does not replace them)
+- Dedicated observation vs imagination **tense** (stacks with evidentiality channels; does not replace them). Live vs memory observation is **LIVE** (`adeze`) vs **WITNESSED** (`uvuvu`) — not a past/future slot.
 - Consider sense words for observation
 
 Dictionary entries (open lexicon / concepts — not the closed list above):

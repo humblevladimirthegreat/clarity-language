@@ -37,6 +37,17 @@ function expectReading(text: string, reading: LexReading) {
 }
 
 describe("classify", () => {
+  it("overlay mood on published-shaped live evidential", () => {
+    const sense = [...tables.overlays.values()].find(
+      (o) => o.pos === "h" && /live evidential/i.test(o.definition),
+    );
+    assert.ok(sense);
+    const word = expectReading(`h${sense.senseForm}`, "mood");
+    assert.ok(word.overlay);
+    assert.equal(word.overlay!.senseForm, sense.senseForm);
+    assert.match(word.overlay!.definition, /live/i);
+  });
+
   it("overlay mood on published-shaped evidential", () => {
     const sense = [...tables.overlays.values()].find(
       (o) => o.pos === "h" && /witnessed evidential/i.test(o.definition),

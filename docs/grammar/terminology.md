@@ -30,6 +30,7 @@ Closed psychological `/h/` (not ordinary [adverb](#adverb) `/h/`).
 | **IFF** | Clause-pole **`ezaze`** | [Causation](causation.md#if-vs-iff) |
 | **INFERRED** | Evidential: reasoned from clues | [Commentary](commentary.md#evidentiality) |
 | **INTERNAL** | Emotion locus: charge held inside | [Special vocabulary](special-vocabulary.md#emotion-compose) |
+| **LIVE** | Evidential: concurrent / in-view observation | [Commentary](commentary.md#live-vs-memory) |
 | **LOCUS** | Emotion-compose where the charge sits | [Special vocabulary](special-vocabulary.md#emotion-compose) |
 | **NATURAL** | Universality: natural necessity | [Special vocabulary](special-vocabulary.md#universality) |
 | **NOTIONAL** | As-if / pretense mood **`adade`** | [Commentary](commentary.md#notional) |
@@ -42,7 +43,7 @@ Closed psychological `/h/` (not ordinary [adverb](#adverb) `/h/`).
 | **STORY** | Evidential: narrative / lore | [Commentary](commentary.md#evidentiality) |
 | **TOLD** | Evidential: hearsay | [Commentary](commentary.md#evidentiality) |
 | **UNCOUNTERED** | Universality: no counterexample comes to mind | [Special vocabulary](special-vocabulary.md#universality) |
-| **WITNESSED** | Evidential: firsthand | [Commentary](commentary.md#evidentiality) |
+| **WITNESSED** | Evidential: firsthand memory (reconstructive) | [Commentary](commentary.md#live-vs-memory) |
 
 **Compare with:** [imaginary](#digitless-exponent) (free-number `-e-`) and [quasi](#quasi) (`ROOTx-e-`) are not **NOTIONAL**.
 

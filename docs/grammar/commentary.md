@@ -189,21 +189,32 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 <a id="evidentiality"></a>
 <a id="evidential"></a>
 
-English often names *how you know* a claim about the world (what happened, what caused what, what someone else thinks, what will happen). Agalan keeps the ordinary content verb and adds a closed `/h/` mood word. That word is the **channel** the claim came through, so the same walk or sleep can sit under memory, a recording, a pattern of cases, clues, hearsay, a gut sense, or a tale.
+English often names *how you know* a claim about the world (what happened, what caused what, what someone else thinks, what will happen). Agalan keeps the ordinary content verb and adds a closed `/h/` mood word. That word is the **channel** the claim came through, so the same walk or sleep can sit under a live look, memory, a recording, a pattern of cases, clues, hearsay, a gut sense, or a tale.
+
+There is **no past / future letter** on the verb. Some channels already locate the event because of how you know: **LIVE** is observation while the scene is still in view; **WITNESSED** is memory of an observation (retrieval); **RECORDED** is playback of a capture. [PREDICT](plan-decision.md#predict) / [PLAN](plan-decision.md#plan-predict) look ahead. Other evidentials do not move the event; add a when-frame ([*before* / *after* / *while*](core.md#dependent-clauses), a clock or date, recency) when inference or hearsay needs a different time than this stretch.
+
+```
+`zazawan hadezem vawalal.`
+
+gloss: `z-grace@` · `h-LIVE` · `v-walk`
+
+*Azawan walks — live / from the scene.*
+```
 
 ```
 `zazawan huvuvum vawalal.`
 
 gloss: `z-grace@` · `h-WITNESSED` · `v-walk`
 
-*Azawan walks — from memory / witnessed.*
+*Azawan walks — from memory (a past observation).*
 ```
 
 **For *I think*, use:** [COMMENT](#comment) (`odoho`). This inventory is *how you know a world-claim*.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`huvuvum`** | firsthand / reconstructive channel | *from memory* / *witnessed* | 🎣 *fishing*: you pull something back |
+| **`hadezem`** | firsthand / concurrent channel | *live* / *from the scene* | 👁️‍🗨️ *attest*: seeing-and-saying while it is in view |
+| **`huvuvum`** | firsthand / reconstructive channel | *from memory* (past observation) | 🎣 *fishing*: you pull something back |
 | **`heregom`** | documented / captured channel | *on record* / *playback* | ⏺️ *record*: what was saved plays back |
 | **`habawam`** | regularity / similar cases | *from the pattern* | 🐾 *paw-prints*: cases left behind |
 | **`hunevem`** | reasoned from clues | *inferred* | 🕵️ *investigate*: you work the clues |
@@ -229,18 +240,21 @@ gloss: `z-courage@` · `h-TOLD` · `v-write`
 *Ululon writes — so they say.*
 ```
 
-**Not the same job as:** a feeling like fear or hope uses [emotion compose](special-vocabulary.md#emotion-compose) (value + ACT + LOCUS). **`heherem`** is a channel of *knowing*, not that stack. **`heraram`** is someone said so about the claim; hearing a door as an event is ordinary `/v/`.
+**Not the same job as:** seeing as an event uses ordinary **`vejel`**. **`hadezem`** is the *how you know* channel (the walk is in view now), not the verb *see*. A feeling like fear or hope uses [emotion compose](special-vocabulary.md#emotion-compose) (value + ACT + LOCUS). **`heherem`** is a channel of *knowing*, not that stack. **`heraram`** is someone said so about the claim; hearing a door as an event is ordinary `/v/`.
 
-### Memory / record (past framing)
+### Live vs memory
+<a id="live-vs-memory"></a>
 <a id="memory-record"></a>
 <a id="memory"></a>
 <a id="record-past"></a>
+<a id="live"></a>
 
-The table above already used **`huvuvum`** and **`heregom`**. On a past claim those same roots read as *I remember* / *according to…*.
+**`hadezem`** is **present observation**: you still have access to the scene. **`huvuvum`** is **past memory of observation**: you pull the episode back, and it may not be what you hoped. Do not stack the two. English *I witnessed* for a remembered event is **`huvuvum`**, not **LIVE**.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`huvuvum`** | reconstructive / recalled past | *I remember* / *from memory* | 🎣 *fishing*: retrieval from the water |
+| **`hadezem`** | concurrent / in-view observation | *live* / *from the scene* | 👁️‍🗨️ *attest*: seeing-and-saying while it is in view |
+| **`huvuvum`** | reconstructive / recalled observation | *I remember* / *from memory* | 🎣 *fishing*: retrieval from the water |
 | **`heregom`** | documented / captured past | *on record* / *according to…* | ⏺️ *record*: playback archive |
 
 ### Notional (as-if framing)
@@ -309,7 +323,8 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 | *run* | `urunu` | |
 | *write* | `uwuru` | |
 | *commentary* | `odoho` | 💭 *thought*: a balloon over the scene |
-| *witnessed* / *from memory* | `uvuvu` | 🎣 *fishing*: you pull something back |
+| *live* / *from the scene* | `adeze` | 👁️‍🗨️ *attest*: seeing-and-saying while it is in view |
+| *from memory* (past observation) | `uvuvu` | 🎣 *fishing*: you pull something back |
 | *on record* | `erego` | ⏺️ *record*: playback of what was saved |
 | *from the pattern* | `abawa` | 🐾 *paw-prints*: cases left behind |
 | *inferred* | `uneve` | 🕵️ *investigate*: you work the clues |
@@ -326,43 +341,49 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zazawan hodohom vawalal.`
 :::
 
-**2.** *Azawan walks — from memory / witnessed.*
+**2.** *Azawan walks — from memory* (past observation).
 
 ::: details Show answer
 `zazawan huvuvum vawalal.`
 :::
 
-**3.** *Ululon sleeps — on record.*
+**3.** *Azawan walks — live / from the scene.* (present observation)
+
+::: details Show answer
+`zazawan hadezem vawalal.`
+:::
+
+**4.** *Ululon sleeps — on record.*
 
 ::: details Show answer
 `zululon heregom velebel.`
 :::
 
-**4.** *Uhubun runs — from the pattern of cases.*
+**5.** *Uhubun runs — from the pattern of cases.*
 
 ::: details Show answer
 `zuhubun habawam vurunul.`
 :::
 
-**5.** *Azawan sings — inferred from clues.*
+**6.** *Azawan sings — inferred from clues.*
 
 ::: details Show answer
 `zazawan hunevem vuzunul.`
 :::
 
-**6.** *Ululon writes — so they say.* (hearsay)
+**7.** *Ululon writes — so they say.* (hearsay)
 
 ::: details Show answer
 `zululon heraram vuwurul.`
 :::
 
-**7.** *As if Azawan walks.* (soft pretensive frame)
+**8.** *As if Azawan walks.* (soft pretensive frame)
 
 ::: details Show answer
 `zazawan hadadem vawalal.`
 :::
 
-**8.** *I wonder whether Uhubun sleeps.* (commentary + soft ask)
+**9.** *I wonder whether Uhubun sleeps.* (commentary + soft ask)
 
 ::: details Show answer
 `jom zuhubun hodohom velebel.`
@@ -409,10 +430,16 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **7.** `zululon huvuvum velebel.`
 
 ::: details Show answer
-*Ululon sleeps — from memory / witnessed.*
+*Ululon sleeps — from memory (a past observation).*
 :::
 
-**8.** `jom zazawan hodohom vawalal.`
+**8.** `zazawan hadezem vawalal.`
+
+::: details Show answer
+*Azawan walks — live / from the scene.*
+:::
+
+**9.** `jom zazawan hodohom vawalal.`
 
 ::: details Show answer
 *I wonder whether Azawan walks.*
@@ -434,6 +461,14 @@ gloss: `z-grace@` · `g-blue` · `w-WITNESSED` · `v-walk`
 *Azawan walks — and that blue is from memory.*
 ```
 
+```
+`zazawan gelulul wadezem vawalal.`
+
+gloss: `z-grace@` · `g-blue` · `w-LIVE` · `v-walk`
+
+*Azawan walks — and that blue is from the scene (live).*
+```
+
 ### Ordinary content readings
 <a id="content-readings"></a>
 
@@ -442,6 +477,8 @@ The same published roots keep ordinary content under other role letters. The clo
 | Agalan | Use | English |
 |--------|-----|---------|
 | `zuvuvul` | noun | *a memory* |
+| `zadezel` | noun | *an attestation* |
+| `vadezel` | verb | *to attest* |
 | `veregol` | verb | *to record* |
 | `zerarar` | resume noun | *that ear* |
 | `zorolol` | noun | *a scroll* |
@@ -474,3 +511,4 @@ gloss: `z-grace@` · `h-WITNESSED` · `d-boot` · `v-see`
 - Need ascription: [values.md](values.md)
 - Emotion compose: [special-vocabulary.md](special-vocabulary.md#emotion-compose)
 - Forecast stacked with a channel: [plan-decision.md](plan-decision.md#plan-predict)
+- Clock / date / when-frames: [numbers-applied.md](numbers-applied.md#time)

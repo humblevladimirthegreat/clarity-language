@@ -175,6 +175,8 @@ You can also say:
 | **`hababam badorol`** | *before* | 🎒 *backpack*: packed first |
 | **`horanem badorol`** | *after* | ⌛ *hourglass*: sand already through |
 
+The verb has no past or future letter. *Before* / *after* / *while* / *until* place this event relative to the next sentence.
+
 ### Continue (`/x/`): keep the same speech move
 <a id="continue-x"></a>
 

@@ -115,7 +115,7 @@ Tagging *can’t right now* vs *may yet* vs *impossible* helps you stop treating
 
 It is easy to treat a take as settled fact: mixing memory, hearsay, gut feel, and *I think* into one warrant.
 
-[Evidentiality](commentary.md#evidentiality) lets a claim about the world name **how you know**: memory, record, pattern, inference, hearsay, gut-felt, or story. *I think / assume / wonder* is a different job: noting your own rumination, not a warrant about the world.
+[Evidentiality](commentary.md#evidentiality) lets a claim about the world name **how you know**: live look, memory, record, pattern, inference, hearsay, gut-felt, or story. Memory (**WITNESSED**) is reconstructive; a live look (**LIVE**) is concurrent access — not a generic past/present tense. *I think / assume / wonder* is a different job: noting your own rumination, not a warrant about the world.
 
 Marking the channel (and separating *I think* from world-warrant) helps you catch overconfidence and hearsay before you treat a take as settled fact.
 
@@ -163,6 +163,7 @@ Abstract ideas are hard to hold; without a concrete picture, the psychologically
 Published roots keep a **metaphorical** sense beside the literal one, so the abstract job rides on a familiar scene that already carries the caution. Examples:
 
 * [Memory as fishing](commentary.md#evidentiality): cast into opaque water; you may pull a fish or a **boot** (retrieval is reconstructive).
+* [Live look as attesting](commentary.md#live-vs-memory): eye-in-speech while the scene is still in view; not the same as fishing a memory.
 * [Usual as weather](special-vocabulary.md#universality): a habitual *always* is a climate report; [uncountered](special-vocabulary.md#universality) is clear sky (*no counterexample comes to mind*), search rather than proof.
 * [*As if* as theater](commentary.md#notional): a stage mask frames play; the real tally stays **offstage**.
 * [Mechanism as gears](causation.md#cause): naming the gear train marks *how it meshes*.

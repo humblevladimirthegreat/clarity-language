@@ -216,7 +216,7 @@ gloss: `h-PREDICT` · `h-PATTERN` · `v-rain`
 *Forecast from pattern: it rains.*
 ```
 
-**Compare with:** a pattern claim about *now* uses [evidentiality](commentary.md#evidentiality) on the content verb alone. Add **PREDICT** when the claim is a world forecast.
+**Compare with:** a pattern or [LIVE](commentary.md#live-vs-memory) claim about *this stretch* uses [evidentiality](commentary.md#evidentiality) on the content verb alone (**`hadezem`** if you are observing it now; **`huvuvum`** if you remember observing it). Add **PREDICT** when the claim is a world forecast.
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>

@@ -45,7 +45,7 @@ Clock and date together:
 |-----|-----|
 | **Clock / schedule** | Digit-string **`ro`** as bare `/h/`. Default **24h**. Fields left to right; commas are writing only: hour, minute, optional seconds (`h_15,30`, `h_15,30,00`). Digitless `h_` = *at some (unspecified) clock time*. |
 | **Calendar date** | Digit-string **`_`** with **`oe`** (spoken **`roe`**, written `h_#…`; same digraph pattern as `reu`). Fields: **day, month, optional year** (`h_#22,7`, `h_#22,7,2026`; modifier `g_#22,7`). Zero-padding is optional. Write a year as **one digit group** (`2026` is one group). Digitless `h_` covers an unspecified date when context is calendric. An explicit *date* host + `/b/` is optional when you want to name the relation. |
-| **Deixis / tense** | Ordinary lexicon `/h/` (*yesterday*, *ago*, *until*, evidentiality / closed **mood**). A numeric payload (*3 days ago*) is relation + scalar + unit. |
+| **When-frame** | Ordinary lexicon `/h/` (*until*, *before*, recency), clock/date above, or a closed mood whose **job** locates time ([LIVE](commentary.md#live-vs-memory) / [WITNESSED](commentary.md#live-vs-memory) / [PREDICT](plan-decision.md#predict)). There is no past/future ending. A numeric payload (*3 days* on a unit) is relation + scalar + unit. |
 
 Endings: **-l** exact; **-m** fuzzy (*around 15:30*); **-n** conventional schedule or date name; **-r** resume a prior clock or date (digitless `h=_` = *that time/date again*). Timezone, era, and calendar system are ordinary lexicon `/h/` beside the number word.
 

@@ -83,6 +83,17 @@ describe("searchLexicon", () => {
     assert.ok(top?.matchFields.includes("clarity"));
   });
 
+  it("finds live evidential overlay on the attest row", () => {
+    const attest = rows.find((r) => r.literal === "attest");
+    assert.ok(attest);
+    const live = overlays.find((row) => /live evidential/i.test(row.definition) && row.pos === "h");
+    assert.ok(live);
+    const results = searchLexicon(index, rows, live.senseForm, { limit: 10, overlays, overlayIndex });
+    const hit = results.find((r) => r.clarity === attest.clarity);
+    assert.ok(hit, `expected attest/${attest.clarity} for ${live.senseForm} query`);
+    assert.ok(hit.overlays.some((o) => o.senseForm === live.senseForm && o.pos === "h"));
+  });
+
   it("finds evidential sense_form and attaches overlays to fishing row", () => {
     const fishing = rows.find((r) => r.literal === "fishing");
     assert.ok(fishing);
