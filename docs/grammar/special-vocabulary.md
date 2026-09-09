@@ -211,7 +211,7 @@ gloss: `z-grace@` · `h-always` · `v-walk` · `h-COMMON`
 *Azawan always walks, usually.*
 ```
 
-Universal claims are **weather reports**. Default climate is usual weather; the other moods name a different sky story. Prefer floating `/h/`. Use **COMMON** (`hewonol`) unless another row is the sky you mean. **RULE** is complex `/h/` + `/b/` when you name the frame.
+The default *always* is *usually* (exceptions expected), not *must happen that way*, and not an ought. (cue: usual weather, not a law of nature.) Prefer floating `/h/`. Use **COMMON** (`hewonol`) unless another row is the exceptionlessness you mean. **RULE** is complex `/h/` + `/b/` when you name the frame.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|

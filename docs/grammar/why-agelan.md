@@ -26,18 +26,16 @@ Claims can say how you know: memory, record, hearsay, pattern, inference.
 
 Choice lists can say whether they are open or closed, so two options cannot smuggle themselves in as the only ones.
 
-Habitual *always* stays a weather report rather than a law of nature. When the “must” is really an ought, the sentence shows the value behind it instead of upgrading a wish into natural law.
-
-The short direction word is a shared compass point, while body-relative left / right names whose facing counts, so instructing someone does not borrow their perspective unasked.
+Habitual *always* is the usual pattern (exceptions expected), not something that must happen, and not an ought. When the “must” is really an ought, the sentence shows the value behind it instead of treating a wish as necessity.
 
 ### Empowerment
 <a id="empowerment"></a>
 
 Support authentic choice by making reasons for action visible.
 
-The motive or prescription behind an action can be named on the need it serves instead of collapsing into a bare *should*. Candidates can be numbered so *the problem* and *the solution* stay plural and revisable, and the same situation can be reworded rather than recounted as a second candidate. A decision can mark how revisable it is, a plan can stay separate from a forecast, and a ranking can name the bar it is measured against.
+The motive or prescription behind an action can be named on the need it serves instead of conflating it into a bare *should*. Candidates can be numbered so *the problem* and *the solution* stay plural and revisable, and the same situation can be reworded rather than recounted as a second candidate. A decision can mark how revisable it is, a plan can stay separate from a forecast, and a ranking can name the bar it is measured against.
 
-**Why this order.** Rationality is hard without compassion first: lack of self-acceptance fuels motivated reasoning, so truth-seeking collapses into defense. Empowerment without rationality is foolish; without compassion it is antisocial; without both it is dangerous. So the stack is compassion → rationality → empowerment.
+**Why this order.** Rationality is hard without compassion first: lack of self-acceptance fuels motivated reasoning, so truth-seeking turns into defense. Empowerment without rationality is foolish; without compassion it is antisocial; without both it is dangerous. So the stack is compassion → rationality → empowerment.
 
 ## Limits
 <a id="limits"></a>
@@ -78,7 +76,7 @@ How the aims show up in vocabulary and grammar. Each section names an English jo
 ### Needs, gratitude, and oughts
 <a id="needs-gratitude-and-oughts"></a>
 
-English often collapses *I want*, *I need*, *I should*, and *this is good for me*, so gratitude, motive, and ought blur together.
+English often conflates *I want*, *I need*, *I should*, and *this is good for me*, so gratitude, motive, and ought blur together.
 
 Agalan’s [values](values.md) name a closed inventory of **needs** (autonomy, competence, relatedness, pleasure, survival, or unspecified) and how you relate to them:
 
@@ -90,7 +88,7 @@ Agalan’s [values](values.md) name a closed inventory of **needs** (autonomy, c
 | Prescription | *Ought* to serve or protect this need, including force (bound … invite) |
 | Unmet | Costs the need, including how changeable that is |
 
-Naming the need and your stance toward it helps you notice gratitude, motive, and oughts instead of collapsing them into vague *want* / *should* / *good*.
+Naming the need and your stance toward it helps you notice gratitude, motive, and oughts instead of conflating them into vague *want* / *should* / *good*.
 
 ### Emotions as composition
 <a id="emotions-as-composition"></a>

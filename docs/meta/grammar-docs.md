@@ -20,7 +20,20 @@ Learner English names for constructions live on [terminology.md](../grammar/term
 
 ## Dual role
 
-Each grammar page is both **source of truth** for its subsystem and **learner text**. Prefer teach-first structure over inventory-first dumps in **Beginner** ([Beginner stage shape](#beginner-stage-shape)). Later stages may complete a paradigm as a table ([Intermediate and Advanced stage shape](#later-stage-shape)); if Advanced dwarfs Beginner, split the file. Unassigned or unused-slot inventory stays in [unassigned-reserved.md](unassigned-reserved.md); rejected or speculative features stay in [TODO.md](../../TODO.md) — never in a grammar page appendix. Grammar pages teach **assigned readings only**. Do not ship a form as “reserved,” “not used,” or “or reserved,” and do not keep a **Reserved forms** heading whose job is to fence unused phonotactics. *This spelling already has job X* (e.g. a time-code host) is a positive rule — say the job, not “reserved.” If the learner must not build a shape, omit it; if they might invent it *now*, one [Compare with](#compare-with) sentence is enough — never a leftover-slot inventory.
+Each grammar page is both **source of truth** for its subsystem and **learner text**. Prefer teach-first structure over inventory-first dumps in **Beginner** ([Beginner stage shape](#beginner-stage-shape)). Later stages may complete a paradigm as a table ([later-stage shape](#later-stage-shape)); if Advanced dwarfs Beginner, split the file. Unassigned or unused-slot inventory stays in [unassigned-reserved.md](unassigned-reserved.md); rejected or speculative features stay in [TODO.md](../../TODO.md) — never in a grammar page appendix. Grammar pages teach **assigned readings only**. Do not ship a form as “reserved,” “not used,” or “or reserved,” and do not keep a **Reserved forms** heading whose job is to fence unused phonotactics. *This spelling already has job X* (e.g. a time-code host) is a positive rule — say the job, not “reserved.” If the learner must not build a shape, omit it; if they might invent it *now*, one [Compare with](#compare-with) sentence is enough — never a leftover-slot inventory.
+
+On this page:
+
+| Topic | Jump |
+|-------|------|
+| Current language / leftover | [Present the current language only](#present-the-current-language-only), [no process leftover](#no-process-or-corrective-leftover) |
+| Mix-ups and negatives | [Which tool, not which owner](#which-tool-not-which-owner) |
+| Page architecture | [Page skeleton](#page-skeleton), [Beginner](#beginner-stage-shape), [later stages](#later-stage-shape) |
+| Memory aids | [Cues](#cues-columns) |
+| Voice | [Explain before you slogan](#explain-before-you-slogan), [plain language](#plain-language-no-assumed-linguistics) |
+| Examples / tables | [House cast](#house-cast), [Tables](#tables) |
+| Scope | [Cross-links](#cross-links-and-scope), [what belongs where](#what-belongs-where) |
+| Ship check | [Stage checklist](#stage-checklist) |
 
 ## Present the current language only
 <a id="present-the-current-language-only"></a>
@@ -86,15 +99,24 @@ Headings, leads, and asides must make sense to someone who never saw an earlier 
 
 **Test:** if you delete the phrase and a new learner loses no meaning, delete it. If the only audience for a sentence is a future editor, move it to [unassigned-reserved.md](unassigned-reserved.md), `TODO.md`, a PR, or this meta page — not the grammar body.
 
-### Which tool, not which owner
+## Which tool, not which owner
 <a id="which-tool-not-which-owner"></a>
 <a id="compare-with"></a>
 
-When two constructions split a job, tell the learner **which form to use for which English job**. Do not say a reading **stays on** another section, page, or subsystem — that is fencing for writers (“don’t reassign this”), not a cue for readers.
+State the **positive** rule: which form to use for which English job. A “not Y” spends attention on a shape they are told not to build; most of those exist to correct a writer habit, not teach a reading.
 
-A contrast earns a place only when the learner would **use the wrong form for this English** while reading this section. Search, the sidebar, and **See also** already list related pages. Do **not** catalog siblings “in case they look them up.”
+Do not say a reading **stays on** another section, page, or subsystem — that is fencing for writers (“don’t reassign this”), not a cue for readers. Same family as ownership fences (“this page owns / does not own X”) — [teach now; don’t preview later](#teach-now-dont-preview-later). This meta page may still use *stay* in editor English (*inventory stays in unassigned-reserved.md*). Grammar-page prose should not.
 
-Mark that one mix-up so it is easy to scan. Use **one** of these four starters (bold, then a colon), then **use X for Y** and one peer link. Do not invent other labels (`Trap:`, *Near miss:*, “Do not confuse…”, “Not to be confused with…”).
+**A contrast earns a place only when all three hold:** the learner would use the wrong form for **this** English *now* (English false friend, or an Agalan sibling they already met — `-sh` vs **`aha`**, classification vs **`SAME`**, free `g+e` vs `ROOTx+e`, join **-r** vs content **-r**); both forms appear with a real example; and the beat fits in one or two labeled sentences after this form’s example. Search, the sidebar, and **See also** already list related pages. Do **not** catalog siblings “in case they look them up,” expand a mix-up into a related-forms table, or restate the other doc.
+
+**Skip the negative when:** they would not invent the wrong form (editor-hygiene pairs like hyphenated PoS, ~~`z-ugobo`~~); it only restates the positive (“write one token” already implies no hyphen); or a section would get a ritual **Not this** column with nothing decisive to say. A strong positive example is enough when there is no sibling to compare.
+
+| Prefer | Avoid (unless the trap is real) |
+|--------|----------------------------------|
+| Write **prefix + root + ending** as one token: `zazawan` | “…as one token — **no hyphen** after the PoS letter” |
+| Who you address sits at the start of the speech move, before the sentence body | “Vocatives **do not** appear mid-clause” *with no learner reason to try that yet* |
+
+Mark the one mix-up so it is easy to scan. Use **one** of these four starters (bold, then a colon), then **use X for Y** and one peer link. Do not invent other labels (`Trap:`, *Near miss:*, “Do not confuse…”, “Not to be confused with…”). The body after the starter still teaches the split. Do not follow the label with a filename alone.
 
 | Starter | When |
 |---------|------|
@@ -103,8 +125,6 @@ Mark that one mix-up so it is easy to scan. Use **one** of these four starters (
 | **Related form:** | Same test, softer tone: they would pick the neighbor, but you are not stressing a clash. |
 | **Not the same job as:** | Same slot or similar shape, different English job — they would treat them as interchangeable. |
 
-The body after the starter still teaches the split. Do not follow the label with a filename alone.
-
 | Prefer | Avoid |
 |--------|--------|
 | **Compare with:** *if* / *because* use the joins and clause poles above. | Sufficient / necessary / *if* / *because* **stay on** the joins. Exceptionlessness **stays on** universality. |
@@ -112,27 +132,16 @@ The body after the starter still teaches the split. Do not follow the label with
 | **Related form:** packaging a list uses [joins](../grammar/coordination.md) (`zal` / `val` / `xal`, …). | Phrase, VP, and clause **joins stay on** coordination.md. |
 | **Not the same job as:** [PLAN](../grammar/plan-decision.md#plan-predict) (map grain). This mood marks **pick firmness**. | Intention map grain **stays PLAN**. |
 
-Place the labeled beat **after** the worked example for this form, not in the page lead. The lead says what **this** form does. **At most two** labeled beats per teach block (two equally likely mix-ups). A third sibling is not a table — omit it; the learner can open that page.
+Place the labeled beat **after** the worked example for this form, not in the page lead. The lead says what **this** form does. **At most two** labeled beats per teach block. A third sibling is not a table — omit it; the learner can open that page.
 
-Do **not** add an **Agalan · Use** (or English-bundle) table whose rows are other subsystems. Those tables are related-form inventories. An **Agalan · Use** table is only for **this** form’s own cells (this mood’s endings, this join series, this page’s vowel map).
-
-Same family as ownership fences (“this page owns / does not own X”) — [teach now; don’t preview later](#teach-now-dont-preview-later).
-
-This page may still use *stay* in editor English (*inventory stays in unassigned-reserved.md*). Grammar-page prose should not.
-
-## Contrastive negatives (“X, not Y”)
-
-Default to stating only the allowed form. A contrastive negative spends the learner’s attention on a form they are told *not* to build; most of them exist to correct a writer habit, not teach a reading.
+Do **not** add an **Agalan · Use** (or English-bundle) table whose rows are other subsystems. An **Agalan · Use** table is only for **this** form’s own cells (this mood’s endings, this join series, this page’s vowel map). Add a **Not this** column only when several rows of *this* table share real confusables — never by default, never as a peer catalog.
 
 | Smell | Verdict |
 |-------|---------|
 | Boilerplate disclaimers: “X is a **root choice**, not `xa`/`xu` polarity”, “plural **-sh** stays unused on `/h/` `/w/`”, “there is no dedicated root”, “not a fourth vowel/role/join”, “**Not won’t:** …” | Delete. State what the form does instead |
 | Denials of a retired pairing or order: “not a matching word on the left”, “not a mid-chain extender”, “not a sixth marker identity” | Delete. The learner never saw that version — [omit denials of former constructions](#omit-former-construction-denials) |
-| **Trap tables** (“Not this (real traps)”, “Traps worth one look”, “Keep these for other jobs”) and **related-form Agalan · Use** catalogs | Delete from body. If the learner would use the wrong form *now*, one [Compare with](#compare-with) starter plus an example of each — not a table of every peer |
-| Inline **`Trap:`** / **“Trap:”** / *Near miss:* | Punitive or editor hygiene. Use one of the four [starters](#compare-with) |
-| “Do not confuse X with Y” / “Not to be confused with…” | Quiz warning; does not teach the job split. Use **Compare with:** / **For *X*, use:** / **Related form:** / **Not the same job as:** |
-
-**When a contrast earns its place** (all three must hold): the learner can plausibly use the sibling for **this** English *now*; both forms appear with a real example; and the contrast fits in one or two labeled sentences after this form’s example. Otherwise cut it. Do not expand a mix-up into a related-forms table.
+| **Trap tables** (“Not this (real traps)”, “Traps worth one look”, “Keep these for other jobs”) and **related-form Agalan · Use** catalogs | Delete from body. One starter plus an example of each form they would mix up *now* |
+| Inline **`Trap:`** / **“Trap:”** / *Near miss:* / “Do not confuse…” / “Not to be confused with…” | Punitive or quiz warning. Use one of the four starters |
 
 ## Cues live in tables
 <a id="cues-live-in-tables"></a>
@@ -151,16 +160,12 @@ Do **not** keep a heading whose only job is to say there is nothing here. Learne
 
 **Bounce notes are empty stages.** Do not open a page with `## Beginner` (or a lead before the first stage heading) that only says “nothing here / come back when you are ready for Intermediate / this page is Advanced.” Omit the unused stage heading. A page that starts at Intermediate or Advanced is fine; the sidebar path already skips missing stages. Do not duplicate the same recap (“house rules,” writing-style bullets) in a later stage just to fill Advanced.
 
-## Examples use the house cast
-<a id="house-cast"></a>
-
-Example sentences name their people with the [house cast](glosses.md#house-cast): **`zazawan`** / **`zululon`** / **`zuhubun`** (three single-root names). Do not cast abstract roots as participants (`jal zazawan godogol`, not “grace is more challenging than courage”). Keep abstract roots for the form being taught.
-
 ## Punctuation
 
 Prefer commas, colons, parentheses, or separate sentences over em dashes. An em dash is allowed only when a sentence genuinely needs a strong break; do not use it as default clause glue.
 
 ## Page skeleton
+<a id="page-skeleton"></a>
 
 1. **Title + one-line job** — the English job this page teaches (learner-facing). Sibling links only when the learner will reach for that form *now* — [Compare with](#compare-with), not “this page owns / does not own” fencing.
 2. **Needs** (optional) — **rare.** Use only when the page is late and the dependency is not obvious from the [cross-doc path](learning-levels.md#cross-doc-path) (e.g. causation → joins + **`adoro`** from core Beginner; comparatives → rank joins). Label as `**Needs:**` with one short link line. Do **not** ritualize “core Beginner; reference-suffix Beginner” on every page.
@@ -318,7 +323,7 @@ Brevity means **no filler**, not **maximum claims per clause**. A Beginner lead 
 1. **English job** — what the learner is trying to say, in school-grammar English.
 2. **Agalan shape** — which letter, ending, or slot does that job, and where it sits.
 3. **Consequence** — what they may now do that English does not (reordering, omitting a word, attaching a clause).
-4. **Cue last** — letter puns and emoji scenes are **after the rule**, never the definition.
+4. **Cue last** — letter puns, emoji scenes, and [English pictures](#unpack-english-pictures) are **after the rule**, never the definition.
 
 Do not merge (1)–(3) into a copula slogan (*X is Y*) or a packed imperative (*do A so that B*) until those three pieces have been said in ordinary English.
 
@@ -337,6 +342,23 @@ Do not merge (1)–(3) into a copula slogan (*X is Y*) or a packed imperative (*
 Do **not** pad with throat-clearing (“In this section we will…”, “It is important to note…”). Extra sentences must add **mechanism or consequence**, not warmth.
 
 Tables may stay telegraphic (**Agalan · Use · English · Cue**). Running prose may not.
+
+### Unpack English pictures
+<a id="unpack-english-pictures"></a>
+
+A picture in the teaching English (weather, law, climate, theater, gears) is a **cue**, not the rule. State the English job in school words first. Then the picture may follow, in the same breath or in **Cue**.
+
+Do **not** let the picture stand in for the contrast. Cover the image words: the leftover must still name both sides of the split.
+
+| Smell | Why it fails | Prefer |
+|-------|--------------|--------|
+| “Habitual *always* stays a weather report rather than a law of nature.” | *Weather report* / *law of nature* are undefined vehicles; *stays* is writer fencing | “Habitual *always* is the usual pattern (exceptions expected), not something that must happen, and not an ought.” Then, if useful: `(cue: usual weather, not a law of nature).` |
+| “Universal claims are **weather reports**.” as the first teaching sentence | Equates the mood with the picture before *usually* vs *by natural necessity* | Name COMMON vs NATURAL (or *usually* vs *must happen that way*) first; then the climate picture |
+| New picture in the same sentence as a new choice | [one new move](#explain-before-you-slogan) | Split: job, then picture |
+
+**Test (cover the picture):** delete the metaphor nouns. Could they still restate the split? If not, unpack first.
+
+Allowed: published-root scenes in **Cue**; [conceptual metaphors](../grammar/why-agelan.md#conceptual-metaphors) after the job is named; one short `(cue: …)` after the plain rule.
 
 ### House shorthand needs a first-use gloss
 <a id="house-shorthand"></a>
@@ -383,12 +405,12 @@ Section ids: [one current heading, one current id](#one-current-heading).
 | Omit default **`jal`** when the page is not teaching the speech act | Leading every example with **`jal`** by habit |
 | Morph gloss + **loose** free English by default ([glosses.md](glosses.md)) | Merging free English into the morph gloss |
 | Strict free English only when teaching packaging | Strict-only Beginner pages |
-| A negative / **Not this** only for an **expected** learner mistake | Listing “no X” or a counter-example column by habit |
+| A negative only when the mix-up is expected ([Compare with](#compare-with)) | Listing “no X” or a **Not this** column by habit |
 
 ### House people
 <a id="house-cast"></a>
 
-When an example needs a **person**, use these nativized names (published root + **-n**). Free English keeps *Azawan*, not *Grace* / *I* / *you*.
+When an example needs a **person**, use these nativized names (published root + **-n**). Free English keeps *Azawan*, not *Grace* / *I* / *you*. Do not cast abstract roots as participants (`jal zazawan godogol`, not “grace is more challenging than courage”). Keep abstract roots for the form being taught.
 
 | Agalan | English | Root |
 |--------|---------|------|
@@ -410,36 +432,17 @@ gloss: `z-grace@` · `g-dog`
 
 Short Eng ↔ Agalan checkpoints: end of a page stage only — [translation-exercises.md](translation-exercises.md). Multi-turn practice belongs under [examples/](../examples/), not inside every grammar section.
 
-## Contrasts and boundaries
-
-State the **positive** rule. Do **not** list negatives by default — neither a **Not this** column nor inline “no X / don’t Y / never Z.”
-
-| Prefer | Avoid (unless the trap is real) |
-|--------|----------------------------------|
-| Write **prefix + root + ending** as one token: `zazawan` | “…as one token — **no hyphen** after the PoS letter” |
-| Who you address sits at the start of the speech move, before the sentence body | “Vocatives **do not** appear mid-clause” *with no learner reason to try that yet* |
-
-**Negatives earn their keep only when** a learner is expected to make that mistake — typically an English false friend, or another Agalan construction they will reach for. Then one decisive contrast (sentence or table cell) with the right link is enough. Cross-link once; do not restate the other doc.
-
-Agalan often earns them: sibling-subsystem swaps (`-sh` vs **`aha`**, classification vs **`SAME`**, free `g+e` vs `ROOTx+e`, join **-r** vs content **-r**). Label those with [Compare with](#compare-with), not *Trap* / *Near miss* / “do not confuse,” and not a table of every neighbor.
-
-**Skip negatives when:**
-
-- The wrong form is something a learner would not invent (editor-hygiene pairs like hyphenated PoS, ~~`z-ugobo`~~).
-- The negative only restates the positive rule (“write one token” already implies no hyphen).
-- A section would get a ritual **Not this** (or a permanent **Not this** column) with nothing decisive to say.
-
-Do **not** require a **Not this** column on every table, or a counter-example on every form. A strong positive example is enough when there is no sibling to compare.
-
 ## Tables
+<a id="tables"></a>
 
 - Contrast and decision tables beat encyclopedia dumps in Beginner. A decision table is **this** form’s own readings (endings, vowel series), not a list of other pages.
 - Beginner may show a **partial** table (only letters / jobs taught so far). Completing the table is Intermediate, or a recap at the **end** of Beginner after those jobs have examples — not a dump at the top.
 - Full inventories belong in Intermediate / Advanced, or after the teach block.
-- Prefer columns **Agalan · Use · English · Cue** for **this** form ([cues](#cues-columns)). Add **Example** or a Morph column when endings are the point. Add **Not this** only when several rows share real confusables — not by default. Do not add an **Agalan · Use** table of related subsystems.
+- Prefer columns **Agalan · Use · English · Cue** for **this** form ([cues](#cues-columns)). Add **Example** or a Morph column when endings are the point. **Not this** / related-subsystem **Agalan · Use**: [Compare with](#compare-with).
 - A grammar-table **Gloss** column is short free English unless the row teaches morphology ([glosses.md](glosses.md)).
 
 ## Cross-links and scope
+<a id="cross-links-and-scope"></a>
 
 - Own your subsystem; link out for PoS, endings, joins, numbers, and so on — **only to other files in `docs/grammar/`**.
 - Never link to or mention `meta/`, `examples/`, `proposals/`, `data/`, or repo-root files from a grammar page.
@@ -463,13 +466,14 @@ In each section, mention **only what that section is teaching**. Do not name, te
 Pages stay dual-role (learner text + source of truth): Intermediate / Advanced inventories and precise end anchors are fine when the *lead and Beginner teach block* stay slim. Intermediate must not name Advanced as a teaser (“X is Advanced”); a later heading is enough. If an Advanced inventory dwarfs the Beginner teach block, split the file. Later-stage H3 shape: [Intermediate and Advanced](#later-stage-shape).
 
 ## What belongs where
+<a id="what-belongs-where"></a>
 
 | Material | Place |
 |----------|--------|
 | How to use the form | Grammar doc body under **`docs/grammar/`** (tagged **Beginner** / **Intermediate** / **Advanced**) |
 | Gloss format | [glosses.md](glosses.md) |
 | Level rubric / reading order | [learning-levels.md](learning-levels.md) ([cross-doc path](learning-levels.md#cross-doc-path)) |
-| Doc prose / example style | This page ([Beginner stage shape](#beginner-stage-shape), [later-stage shape](#later-stage-shape), [cues](#cues-columns) for table columns) |
+| Doc prose / example style | This page ([Beginner stage shape](#beginner-stage-shape), [later-stage shape](#later-stage-shape), [cues](#cues-columns), [Compare with](#compare-with)) |
 | Goals / feature criteria | [why-agelan.md](../grammar/why-agelan.md) (psych); [introduction.md](../grammar/introduction.md) (grammar design, [cue tables](../grammar/introduction.md#cues)) |
 | Core sentence grammar | [core.md](../grammar/core.md) |
 | IPA / pronunciation / phonotactics | [phonology.md](../grammar/phonology.md) (letter table); [inspect.md](../grammar/inspect.md) (**Show IPA** on spoken forms). Not in other grammar-page examples |
@@ -481,10 +485,11 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 | Editor pedagogy / migration notes | `docs/meta/` only — never from grammar pages |
 
 ## Stage checklist
+<a id="stage-checklist"></a>
 
 Before tagging a section **Beginner**, ask the [three questions](learning-levels.md#rubric-three-questions). Prefer the earlier stage when learners need the form to read ordinary examples. Dependency on another subsystem beats “feels hard.” Do not add Advanced for recap, unused-slot lists, bounce notes, or reminders — [empty or pointless stages](#empty-stages).
 
-Before shipping a **Beginner** stage, also check [Beginner stage shape](#beginner-stage-shape), [plain language](#plain-language-no-assumed-linguistics), [cues](#cues-columns) ([rubric](#cue-rubric)), and [explain before you slogan](#explain-before-you-slogan): invented terms and house shorthand defined on first use; lead unpacks job, shape, and consequence (slogan test); cue last, never as the definition, and never a caption of the emoji; first H3 is a usable form for that page (a clause on clause pages; letters or a citation on phonology / reference-suffix Beginner), not a leftover inventory table; no Intermediate teasers; drills cover the H3s (or the H3 is one-sentence setup for a drill).
+Before shipping a **Beginner** stage, also check [Beginner stage shape](#beginner-stage-shape), [plain language](#plain-language-no-assumed-linguistics), [cues](#cues-columns) ([rubric](#cue-rubric)), and [explain before you slogan](#explain-before-you-slogan): invented terms and house shorthand defined on first use; lead unpacks job, shape, and consequence (slogan test); [English pictures](#unpack-english-pictures) after the split, never as the split; cue last, never as the definition, and never a caption of the emoji; first H3 is a usable form for that page (a clause on clause pages; letters or a citation on phonology / reference-suffix Beginner), not a leftover inventory table; no Intermediate teasers; drills cover the H3s (or the H3 is one-sentence setup for a drill).
 
 Before shipping **Intermediate** or **Advanced**, check [later-stage shape](#later-stage-shape): each H3 is a new job, a finished series, or rare Advanced; new-job leads unpack; inventory H3s are a pointer plus a table; hygiene and [Compare with](#compare-with) still hold; no Beginner teasers of this stage, and Intermediate does not teaser Advanced; drills cover new jobs, not every inventory row.
 

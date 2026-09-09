@@ -24,12 +24,6 @@ Agalan keeps three kinds of clarity in ordinary speech.
 
 In a clause, every content word begins with a letter that names its role (subject, object, verb, …), so you do not have to guess from English-style word class. Default order is Subject–Object–Verb, but free order is safe because that first letter is what counts.
 
-`zazawan godogol.`
-
-gloss: `z-grace@` · `g-dog`
-
-*Azawan is a dog.* The first letter of each word tells you the role: `z` who the sentence is about, `g` a kind or property.
-
 ### Referential
 <a id="referential"></a>
 
@@ -55,25 +49,23 @@ Role letters, closed endings, and spelling that tracks sound mean a program can 
 
 Grammar pages use **Beginner** / **Intermediate** / **Advanced** sections so you can finish all Beginner material across this folder before Intermediate, then Advanced. Not every page has every difficulty section, so skip that page if it doesn't have the difficulty you are currently on.
 
-Follow the **Suggested reading order** in the site sidebar (same sequence on every page). Read each page’s Beginner section in that order, then every peer’s Intermediate, then Advanced.
+Follow the **Suggested reading order** in the site sidebar. Read each page’s Beginner section in that order, then go back to the beginning and read every pages' Intermediate, then same for Advanced.
 
 The sidebar **Tools** list includes [Terminology](terminology.md) for the English names these pages use for grammar (with a short gloss and a link to the teaching section), plus Lexicon and [Inspect](inspect.md) for roots and interlinear.
 
 ### Tables: Use, English, and Cue
 <a id="cues"></a>
 
-Inventory tables on grammar pages keep four kinds of cell apart so a memory aid is never the answer:
+Inventory tables on grammar pages use four kinds of cell:
 
 | Column | What it is |
 |--------|------------|
 | **Agalan** | The word or letter you write. |
 | **Use** | What that form **does** (subject, question, *because* as a clause glue). This is the rule. |
 | **English** | What you would **say**: the sense to produce or understand. |
-| **Cue** | A hook that says **why** the letter, vowel, or picture maps to that row. |
+| **Cue** | A hook that helps you **remember** the letter, vowel, or picture that maps to that row. |
 
-**Cue** is optional on a test. Cover that column and you should still know the **Use** and the **English**. `≈` in a cue means “sounds like,” not “equals.” When a root’s published picture is an elephant and you need *big*, **English** is *big*; **Cue** is *from elephant: the huge animal*.
-
-That split speeds learning: you practice the real job once, then the cue (often the same four vowels, or one emoji scene) makes the next closed set cheaper to remember. The pun is a hook, not the grammar.
+**Cue** is optional but helps with learning. `≈` in a cue means “sounds like.” 
 
 Continue with [phonology.md](phonology.md#beginner) for letters and word edges, then [reference-suffix.md](reference-suffix.md#beginner) for citation endings, then [core.md](core.md#beginner) for clause shape.
 
@@ -97,4 +89,4 @@ I would also like to thank the Conlangs community on Reddit for their wealth of 
 
 I also thank all the beta testers and reviewers for your feedback and questions.
 
-Speak uses KittenTTS (KittenML) in the browser via ONNX Runtime Web, with token mapping and voice-file loading adapted from kitten-tts-js. The grammar site is built with VitePress.
+Speak uses KittenTTS (KittenML) in the browser via ONNX Runtime Web, with token mapping and voice-file loading adapted from kitten-tts-js. The grammar site is built with VitePress; parsing uses Chevrotain and Peggy.
