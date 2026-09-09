@@ -9,7 +9,7 @@ Related meta:
 | Page | Owns |
 |------|------|
 | [learning-levels.md](learning-levels.md) | **Beginner** / **Intermediate** / **Advanced** stage rubric and [cross-doc path](learning-levels.md#cross-doc-path) (for `docs/grammar/` only) |
-| [glosses.md](glosses.md) | Morph glosses and free English ([house-name glosses](glosses.md#house-cast)) |
+| [glosses.md](glosses.md) | Morph glosses and free English ([example blocks](glosses.md#example-block); [house-name glosses](glosses.md#house-cast)) |
 | [translation-exercises.md](translation-exercises.md) | Eng ↔ Agalan checkpoints (placement, principles including house-cast people, spoiler shape) |
 | [drill-generation.md](drill-generation.md) | Path allowlist and execute procedure (one file per agent) |
 | [language-name.md](language-name.md) | English name **Agalan** = glasses root **`agala`** + **-n** (editors only — not linked from grammar) |
@@ -291,7 +291,7 @@ Letter / series: `{letter} ≈ {sound or series slogan} ({why that maps})`. `**d
 
 A lexicon path is a real **-l** / **-m** choice; the *literal* English is still not what drills ask for. Write `*happy* (**-m**)` in **English** and `from *smile*: the face of *happy*` in **Cue** — never `smile → *happy*` as the only English.
 
-Inline after the rule sentence: `(cue: …)`. Worked examples stay Agalan / `gloss:` / *free English* — no cue line. Translation-practice answers are Agalan or loose English only; the root bank may add **Cue** beside **English · Agalan**.
+Inline after the rule sentence: `(cue: …)`. Worked examples stay Agalan / morph / quoted free English ([example block](glosses.md#example-block)) — no cue line. Translation-practice answers are Agalan or loose English only; the root bank may add **Cue** beside **English · Agalan**.
 
 Do not invent a second cue system beside metaphor, vowels, and endings when those already explain the form. **Do not use the cue as the definition:** teach **Use** and the Agalan shape first ([explain before you slogan](#explain-before-you-slogan)).
 
@@ -421,15 +421,17 @@ When an example needs a **person**, use these nativized names (published root + 
 
 **`ugobo` / `edone`** only when that page is teaching those specials, the point is the **discourse role** (name unavailable, address set, clusivity), or a closed construction is keyed to speaker/listener (*Mine* **`zugoboxrawon`**, viewpoint *my left* when the anchor is the role). Inclusive *we* stays **`aha`**; nonspecific *someone* stays **`enenu`**. Foreign `PoS<…>n` names only when teaching loans or spans. Checkpoints: [translation-exercises.md](translation-exercises.md#principles). Morph / resume: [glosses.md](glosses.md#house-cast).
 
-Default example block:
+Default example block ([layout](glosses.md#example-block)):
 
+```markdown
+> `zazawan godogol.`
+>
+> z-Azawan | g-dog
+>
+> "Azawan is a dog."
 ```
-`zazawan godogol.`
 
-gloss: `z-Azawan` · `g-dog`
-
-*Azawan is a dog.*
-```
+Omit the morph line when it would copy the quoted English (`azawal` / `"swan"`). Keep it when it shows structure the quote does not (role letters, several words, an `x`-compound citation, …).
 
 Short Eng ↔ Agalan checkpoints: end of a page stage only — [translation-exercises.md](translation-exercises.md). Multi-turn practice belongs under [examples/](../examples/), not inside every grammar section.
 

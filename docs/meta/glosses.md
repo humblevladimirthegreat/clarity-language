@@ -16,19 +16,69 @@ A gloss should answer: *what is each Agalan piece doing in the clause — in Eng
 | Underspecification | Keep vague Agalan vague (`someone`, bare joins) | Sharpen into a specific English claim |
 | Separation | Stay word-aligned | Replace the free English line |
 
-**Free English** (italic line / table “Gloss” in grammar pages) answers *what would you say naturally?* — idiomatic paraphrase, tone, and discourse flow. Do not merge free English into the morph gloss. Default free English is **loose** ([strict vs loose](#strict-vs-loose-free-english)).
+**Free English** (quoted line / table “Gloss” in grammar pages) answers *what would you say naturally?* — idiomatic paraphrase, tone, and discourse flow. Do not merge free English into the morph gloss. Default free English is **loose** ([strict vs loose](#strict-vs-loose-free-english)).
 
 ## Layers
 
 | Layer | Where | Form |
 |-------|--------|------|
-| **Morph gloss** | Dialogue turns, worked examples, teaching lines | Word-aligned pieces joined with ` · ` (below) |
-| **Free English (loose)** | Same places, under or beside the morph gloss — **default** when only one free line | Natural paraphrase (*…*); drop Agalan packaging English doesn’t mark |
-| **Free English (strict)** | Optional second free line (or alone when teaching packaging) | Keeps join packaging, value endings, evidential tags, cast letters, …; teaching dialogues may show **both** labeled `strict:` / `loose:` |
-| **Grammar-table gloss** | Inventory / contrast tables in grammar docs | Short free English in **English** (often *italic*); optional parenthetical notes — loose unless the row teaches packaging. **Cue** is not a gloss ([cues](grammar-docs.md#cues-columns)). |
+| **Morph gloss** | Dialogue turns, clause / phrase examples, teaching lines | Word-aligned pieces joined with spaced ` | `; one roman line (below). **Omit** when that line would match the quoted English ([when to skip](#example-block)). |
+| **Free English (loose)** | Same places, under the morph gloss — **default** when only one free line | Natural paraphrase in `"double quotes"`; drop Agalan packaging English doesn’t mark |
+| **Free English (strict)** | Optional second quoted line (or alone when teaching packaging) | Keeps join packaging, value endings, evidential tags, cast letters, …; teaching dialogues may show **both** labeled `strict:` / `loose:` |
+| **Grammar-table gloss** | Inventory / contrast tables in grammar docs | Short free English in **English** (often *italic* in table cells); optional parenthetical notes — loose unless the row teaches packaging. **Cue** is not a gloss ([cues](grammar-docs.md#cues-columns)). |
 | **Lexicon fields** | `lexicon-published.csv` / overlays | Literal / metaphorical / mnemonic / definition — **inputs** to morph glosses, not utterance glosses. Literal English in a **Cue** cell is still not the morph gloss. |
 
 Grammar tables may keep a column named **Gloss** for free English. When a table needs morphology, use a **Morph** column or a separate morph line in the same format as dialogues.
+
+## Example block layout
+<a id="example-block"></a>
+
+Worked examples in grammar pages use a **blockquote**, not a code fence (so Markdown can render). **Backticks mark Agalan only.**
+
+**When the morph line earns its place** (PoS letters, several words, mid-word **`x`**, binding, …):
+
+```markdown
+> `zazawan godogol.`
+>
+> z-Azawan | g-dog
+>
+> "Azawan is a dog."
+```
+
+**When it would only repeat the quote**, omit it — typical of a simple [citation](../grammar/reference-suffix.md#citation-forms) whose sense *is* the English:
+
+```markdown
+> `azawal`
+>
+> "swan"
+```
+
+A **complex citation** still gets a gloss if the morph unpacks structure the quote does not. An `x`-compound name is one word in Agalan and one name in English; the gloss shows the pieces:
+
+```markdown
+> `odunaxalanen`
+>
+> wish-x-guidance
+>
+> "Odunaxalanen"
+```
+
+| Line | Markup | Why |
+|------|--------|-----|
+| Surface | `` `agelan.` `` | Copyable Agalan; the only code span |
+| Morph | `z-dog | v-walk` | English labels; roman (no italics, no per-token backticks); spaced ` | ` between **words** |
+| Free English | `"A dog walks."` | Straight double quotes. Teaching notes stay **after** the quotes: `"Uhubun sings the Sing"` (that titled performance). |
+
+Do **not** prefix the gloss with `gloss:`.
+
+**Skip the morph line** when it would be the same as the quoted English (same readable words, ignoring quotes). That is a redundancy test, not “citation vs sentence.” Simple `azawal` / `"swan"` omits; `zazawan vawalal.` keeps `z-Azawan | v-walk` because that is not `"Azawan walks."`. Keep the line whenever it shows something the quote hides: role letters, several words, mid-word **`x`** pieces, binding, join jobs.
+
+### Word separator
+<a id="gloss-separator"></a>
+
+Join morph **words** with **space + `|` + space** (`z-Azawan | v-walk`). Type it on a US keyboard (shift-backslash). Do **not** use middot (`·`): it is not on the keyboard and looks like a bullet.
+
+Do not use `/` (already means PoS in the docs, and reads as *or*), hyphen (already inside labels: `z-dog`, `next-clause`), or comma (already inside English). A spaced semicolon (` ; `) is a fine fallback if `|` is awkward in a table cell.
 
 ## Strict vs loose free English
 <a id="strict-vs-loose-free-english"></a>
@@ -66,14 +116,13 @@ Grammar tables may keep a column named **Gloss** for free English. When a table 
 
 ### Example (same Agalan, three readings)
 
-Agalan: `jol dubur dadedal dogovel dol von.`
-
-```
-gloss: `j-question` · `d-←Ubunexunowen` · `d-tea` · `d-coffee` · `d-or-exactly-one` · `v-choose`
-
-*Do you want tea or coffee?*                          ← loose (default)
-*Do you (B) choose tea or coffee — exactly one?*      ← strict (teaching exclusive *or*)
-```
+> `jol dubur dadedal dogovel dol von.`
+>
+> j-question | d-←Ubunexunowen | d-tea | d-coffee | d-or-exactly-one | v-choose
+>
+> "Do you want tea or coffee?" ← loose (default)
+>
+> "Do you (B) choose tea or coffee — exactly one?" ← strict (teaching exclusive *or*)
 
 ## Senses are separate roots
 
@@ -113,7 +162,7 @@ Same English label for `zugobom` and `zugobon` is fine: both are the *speaker* s
 - **Prefix-less** revisers: English only — `instead`, `rather`, `additionally` (no fake PoS).
 - **Specials / overlays / joins** — still the overlay or join job (`z-speaker`, `v-and`), never `@` because the word happens to end in **-n**.
 
-Separate words with ` · ` (space-middot-space). One morph gloss line per Agalan line (or per turn).
+Separate **words** with spaced `|` (`z-dog | v-walk`). One morph gloss line per Agalan line (or per turn). In an [example block](#example-block), leave that line **roman** (no italics, no backticks on pieces; tables may still put a morph cell in backticks). Mid-word **`x`** stays inside one piece (`wish-x-guidance`). See [word separator](#gloss-separator).
 
 ### When an ending still appears in the gloss
 
@@ -230,57 +279,47 @@ Bake join / reviser **job** into the English label (including open vs closed whe
 
 ### Dialogue turn (morph + loose free)
 
-Agalan: `jael zugobon zam zedonen zal guzumum.`
-
-```
-gloss: `j-yes` · `z-speaker` · `z-and.open` · `z-listener` · `z-and` · `g-happy`
-
-*Yes — you and I are happy.*
-```
+> `jael zugobon zam zedonen zal guzumum.`
+>
+> j-yes | z-speaker | z-and.open | z-listener | z-and | g-happy
+>
+> "Yes — you and I are happy."
 
 (Prefer **`zahan guzumum`** when the point is interlocutor *we*, not an explicit two-name census.)
 
 ### Metaphor vs overlay vs literal
 
-Agalan: `xezebal zubur huvuvum zanunul.`
-
-```
-gloss: `x-however` · `z-←Ubunexunowen` · `h-WITNESSED` · `z-rain`
-
-*Still — it’s raining, as I remember.*
-```
+> `xezebal zubur huvuvum zanunul.`
+>
+> x-however | z-←Ubunexunowen | h-WITNESSED | z-rain
+>
+> "Still — it's raining, as I remember."
 
 (Strict teaching line: *However — that one (B), per memory — it rains.*)
 
 ### Ability + value motive
 
-Agalan: `juel zugobon vawalaxel holozoxem.`
-
-```
-gloss: `j-no` · `z-speaker` · `v-walking-unable-temporary` · `h-competence-x-motive`
-
-*No — I can't walk right now.*
-```
+> `juel zugobon vawalaxel holozoxem.`
+>
+> j-no | z-speaker | v-walking-unable-temporary | h-competence-x-motive
+>
+> "No — I can't walk right now."
 
 ### Numbered alternative + unmet pleasure
 
-Agalan: `x#e- zuzebul g#1 zugobonx haweroxur.`
-
-```
-gloss: `x-starting-with` · `z-problem` · `g-first` · `z-speaker-x` · `h-pleasure-x-unmet`
-
-*First problem: we're not enjoying this.*
-```
+> `x#e- zuzebul g#1 zugobonx haweroxur.`
+>
+> x-starting-with | z-problem | g-first | z-speaker-x | h-pleasure-x-unmet
+>
+> "First problem: we're not enjoying this."
 
 ### Inclusive *we* (interlocutors)
 
-Agalan: `jael xezazal zahan howoram vawalal vul.`
-
-```
-gloss: `j-yes` · `x-therefore` · `z-interlocutors` · `h-plan` · `v-walking` · `v-not`
-
-*Yes — so we're planning not to walk.*
-```
+> `jael xezazal zahan howoram vawalal vul.`
+>
+> j-yes | x-therefore | z-interlocutors | h-plan | v-walking | v-not
+>
+> "Yes — so we're planning not to walk."
 
 ### Grammar-table gloss (free English only)
 
@@ -307,7 +346,9 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 | `zam` / `hal` / `am` as the whole morph | Agalan letters where the job belongs | `z-and.open` / `h-only-when` / `including.open` |
 | `z-microphone-l` | Ending already chose the literal root | `z-microphone` |
 | `z-microphone→speaker` | Etymology chain | `z-speaker` |
-| Morph line that is only idiomatic English | Confuses layers | Morph + separate free line |
+| Morph line that is only idiomatic English | Confuses layers | Morph + separate quoted free line |
+| Morph gloss that matches the quoted English | Redundant; the quote already is the sense | Omit that line ([example block](#example-block)). Keep it when it unpacks **`x`**, PoS, several words, … |
+| `gloss:` + per-token backticks inside a code fence | Markdown renders raw; Agalan and gloss look the same | Blockquote; backticks on Agalan only |
 | Loose free packed with cast letters / join footnotes / value endings | Duplicates morph; not “what you’d say” | Idiomatic claim; use **strict** free only for teaching |
 | English *he* / *she* inside morph for **-r** | Hides Agalan binding | `z-←Antecedent` |
 | New synonym every example for the same overlay | Unstable inventory | Fixed labels (`witnessed`, `COMMENT`, …) |
@@ -319,7 +360,7 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 3. No **-l** / **-m** / **-n**, and no **`@`** / **`~`**, when they only selected the sense-root. Named **-n** is the English name (`z-Azawan`), not `-n`, `@`, or `-proper`.
 4. Compounds / stance / role / span `x` pieces are segmented in English when teaching the hinge; a used **name** may be one English label.
 5. **-r** uses `←…` (no trailing `-r`); **-x** stays as `-x`. Resume of a house name is `z-←Azawan`, not `z-r` or `z-←Azawan`. Fill-ask is `z-who`, not `z-ar`.
-6. Free English is on its own line (or grammar-table Gloss column) — **loose** by default; **strict** only when teaching packaging.
+6. Free English is on its own **quoted** line (or grammar-table Gloss column) — **loose** by default; **strict** only when teaching packaging. Example blocks follow [example block layout](#example-block) (blockquote; skip a morph line that would copy the quote).
 
 ## See also
 

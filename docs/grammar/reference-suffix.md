@@ -12,26 +12,18 @@ Outside a sentence (a list, a heading, a dictionary line) you write **root + end
 
 When you mention a kind of thing for the first time, in its everyday meaning, end the citation with **-l**. The listener treats it as a new, ordinary instance of that kind. English for the citation is the bare kind, with no article. (cue: **l** ≈ literal)
 
-```
-`azawal`
-
-gloss: `swan`
-
-*swan*
-```
+> `azawal`
+>
+> "swan"
 
 ### First mention, metaphor (`-m`)
 <a id="metaphor-m"></a>
 
 Sometimes the meaning you want is the published **metaphor** for that root, not the everyday picture. When you introduce that sense for the first time, end the citation with **-m**. (cue: **m** ≈ metaphor)
 
-```
-`azawam`
-
-gloss: `grace`
-
-*grace*
-```
+> `azawam`
+>
+> "grace"
 
 **Compare with:** the everyday picture of the same root uses **-l** (`azawal` *swan*). *Grace* is the published metaphor of `azawa`, so the citation is **-m**. (cue: from *swan*: the glide of *grace*)
 
@@ -40,13 +32,9 @@ gloss: `grace`
 
 When the word is a **name** (this person or this place, not a kind of thing), end the citation with **-n**. First cases are people and places. (cue: **n** ≈ name)
 
-```
-`azawan`
-
-gloss: `Azawan`
-
-*Azawan*
-```
+> `azawan`
+>
+> "Azawan"
 
 **Compare with:** the same root as a kind is `azawal` *swan*; as the published metaphor, `azawam` *grace*. **-n** names the person.
 
@@ -194,13 +182,11 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 Beginner used **-n** for a person’s or place’s name. You can also mark a **title, proper label, or conventionally unique name** on any role letter: a named race as the verb, a named style as the adjective, a named standard as the adverb. The first letter still says the clause job; **-n** says you mean **that** titled instance, not a generic kind.
 
-```
-`zuhubun vuzunun.`
-
-gloss: `z-Uhubun` · `v-Sing`
-
-*Uhubun sings the Sing* (that titled performance).
-```
+> `zuhubun vuzunun.`
+>
+> z-Uhubun | v-Sing
+>
+> "Uhubun sings the Sing" (that titled performance).
 
 The rest of the role map (same **-n**):
 
@@ -223,13 +209,11 @@ An extra **`l`** after `/ɡ/` (`gl-`) is the before-the-noun spelling ([left-bou
 
 English often writes a given name plus family as two words. In Agalan a short multipart proper name (given + family, a compact place label, a shop name) is **one content word**: roots join left to right with mid-word **`x`** ([ordinary compound order](x-compounds.md#ordinary-compound-order)), and **-n** names the whole as one person or place. That one word fills one slot and is one resume target.
 
-```
-`zodunaxalanen vawalal.`
-
-gloss: `z-Odunaxalanen` · `v-walk`
-
-*Odunaxalanen walks.*
-```
+> `zodunaxalanen vawalal.`
+>
+> z-Odunaxalanen | v-walk
+>
+> "Odunaxalanen walks."
 
 | Agalan | Use | English |
 |--------|-----|---------|
@@ -246,26 +230,22 @@ A nativized loan (adapted Agalan root + ordinary ending) uses the same four last
 
 A long official title (bureau, act, titled group) may have a **handle**: one published root plus **-n**, used like any proper name, including on first mention. The long form is the same office spelled as a phrasal proper (`ROOT x ROOT` … + **-n**).
 
-```
-`zabogon vawalal.`
-
-gloss: `z-Abogon` · `v-walk`
-
-*Abogon walks.* (office handle on first mention)
-```
+> `zabogon vawalal.`
+>
+> z-Abogon | v-walk
+>
+> "Abogon walks." (office handle on first mention)
 
 | Agalan | Use | English |
 |--------|-----|---------|
 | `zabogon` | handle: one root + **-n** | default talk, including first mention |
 | `zabogoxululon` | long title: phrasal proper (`ROOT x ROOT` … + **-n**) | full legal / ceremonial name of the same office |
 
-```
-`zabogoxululon.`
-
-gloss: `z-Book-Courage`
-
-*Book-Courage* (full title of that office)
-```
+> `zabogoxululon.`
+>
+> z-Book-Courage
+>
+> "Book-Courage" (full title of that office)
 
 Resume the handle like any name. If a short letter-pronoun (through the 2nd vowel) would pick the wrong earlier word, use the **full root** + **-r** (`zabogor`).
 
