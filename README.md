@@ -28,3 +28,7 @@ Or open the repo in a [Dev Container](.devcontainer/devcontainer.json) (Node 22 
 | `npm run web` | Serve the standalone lexicon page (`web/`; also on the docs site at `/grammar/lexicon`) |
 
 Design authority is **`docs/grammar/why-agelan.md`** (psychological purpose / limits / feature criteria), **`docs/grammar/introduction.md`** (grammar design), **`docs/grammar/core.md`**, and the other pages under **`docs/grammar/`** — not obsolete parsers. Learner banding and reading order live in `docs/meta/` (editors only). The public grammar site is VitePress (`docs/grammar/.vitepress/`); Amplify uses [`amplify.yml`](amplify.yml) with site root **`/grammar/`**.
+
+## License
+
+Software and tooling are under the [Apache License 2.0](LICENSE). Grammar, pedagogy, and lexicon data are under [CC BY 4.0](LICENSE-DOCS). Path map, Agalan credit, and name rules are in [NOTICE](NOTICE).

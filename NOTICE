@@ -1,0 +1,51 @@
+Agalan
+Copyright 2020-2026 humblevladimirthegreat
+
+This repository uses two licenses. This NOTICE maps which files they cover and how to credit Agalan. It does not change the license texts in LICENSE (Apache License 2.0) or LICENSE-DOCS (Creative Commons Attribution 4.0 International).
+
+Licensed material
+-----------------
+
+Apache License 2.0 (see LICENSE) applies to software and machine-readable tooling, including:
+
+  src/
+  scripts/
+  grammar/
+  web/
+  docs/grammar/.vitepress/
+  eslint.config.js
+  tsconfig.json
+  package.json
+  package-lock.json
+  amplify.yml
+  index.html
+  .devcontainer/
+
+Creative Commons Attribution 4.0 International (see LICENSE-DOCS) applies to language design, pedagogy, and lexical data, including:
+
+  docs/          (except docs/grammar/.vitepress/)
+  data/
+  AGENTS.md
+  README.md
+  TODO.md
+
+If a path is not listed, treat source code, build config, and generated parser/tooling as Apache 2.0, and prose / CSV lexicon as CC BY 4.0.
+
+Third-party dependencies keep their own licenses (see package-lock.json).
+
+Names and origin
+----------------
+
+Reuse of particular grammatical ideas, lexicon entries, or a derived language is allowed under the licenses above.
+
+If you publish a derived language, a fork of the grammar, or a substantial adaptation of the Agalan materials, mention Agalan in the introduction (or equivalent front matter) as the source or inspiration.
+
+Do not present a fork, variant, or other project as the official Agalan project as a drop-in substitute for this repository. Calling an unchanged copy of this language Agalan is fine. Calling a substantially different language Agalan as if it were this project is not.
+
+Apache 2.0 does not grant trademark rights. CC BY 4.0 does not grant trademark rights and does not allow implying endorsement by the licensor. The name Agalan identifies this project and this language as published here.
+
+Suggested CC BY attribution
+---------------------------
+
+  Agalan by humblevladimirthegreat, licensed under CC BY 4.0.
+  https://creativecommons.org/licenses/by/4.0/
