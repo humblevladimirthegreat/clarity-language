@@ -208,7 +208,7 @@ export function chipsFor(word: LexWord): string[] {
   if (word.pos) chips.push(`/${word.pos}/`);
   if (word.ending) chips.push(`-${word.ending} ${endingSense(word.ending, word)}`);
   if (word.gl) chips.push("gl-");
-  if (word.plural) chips.push("-sh");
+  if (word.plural) chips.push("-x");
   chips.push(...familyChips(word.family));
   chips.push(word.reading);
   return chips;
@@ -224,7 +224,7 @@ export function morphDetails(word: LexWord): { label: string; value: string }[] 
     rows.push({ label: "ending", value: `-${word.ending} (${endingSense(word.ending, word)})` });
   }
   if (word.gl) rows.push({ label: "bound", value: "gl-" });
-  if (word.plural) rows.push({ label: "plural", value: "-sh associative" });
+  if (word.plural) rows.push({ label: "plural", value: "-x associative" });
   rows.push({ label: "family", value: word.family.kind });
 
   const family = word.family;

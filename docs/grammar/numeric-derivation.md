@@ -35,7 +35,7 @@ Shape columns keep shorthand as schematic (`ROOTx+e`); example cells use spelled
 
 **Compare with:** a free number word counts, ranks, or labels in a clause slot ([numbers.md](numbers.md)). This family names a property of the kind.
 
-Digit morphs are single-digit **`+N` / `-N`** (how many parts) or **`#N`** (which order). Markers supply the spoken vowel (**`ra`** / **`ru`** / **`re`**). Plural **-sh** on a noun-slot derivative follows ordinary [plurality](plurality.md) for that role.
+Digit morphs are single-digit **`+N` / `-N`** (how many parts) or **`#N`** (which order). Markers supply the spoken vowel (**`ra`** / **`ru`** / **`re`**). Plural **-x** on a noun-slot derivative follows ordinary [plurality](plurality.md) for that role.
 
 ### Limit / polarity / stage (digitless)
 

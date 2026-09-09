@@ -9,7 +9,7 @@ Content words that **name a join move** (*include*, *choose*, *without*).
 ### Join-act verbs
 <a id="join-act-verbs"></a>
 
-When someone *does* a list move to a thing (*includes*, *chooses*, *leaves out*), write that move as a verb: first letter **`v`**, the same join vowel you already use on lists, and ending **-n** (`van`, `von`, …). The object is one `/d/` word (one thing or a group). You can now name the act itself instead of only packing a list. On these verbs, **-n** is join content, not a [proper name](reference-suffix.md#proper-name--n). Put ordinary noun **-sh** on the object when the group is associative; verb **-sh** is [collective](plurality.md#verbs-v).
+When someone *does* a list move to a thing (*includes*, *chooses*, *leaves out*), write that move as a verb: first letter **`v`**, the same join vowel you already use on lists, and ending **-n** (`van`, `von`, …). The object is one `/d/` word (one thing or a group). You can now name the act itself instead of only packing a list. On these verbs, **-n** is join content, not a [proper name](reference-suffix.md#proper-name--n). Put ordinary noun **-x** on the object when the group is associative; verb **-x** is [collective](plurality.md#verbs-v).
 
 ```
 `zazawan dabelel van.`
@@ -43,7 +43,7 @@ English *refuse* vs *leave out*: `zazawan dememal vun` (*Azawan refuses meat*) v
 ### Join-relations
 <a id="join-relations"></a>
 
-When a noun or event is *framed* toward something (*cake with peanuts*, *walk without meat*, *work prioritizing the bug*), write the frame as an adjective or adverb: first letter **`g`** or **`h`**, the same join vowel as [join-act verbs](#join-act-verbs), and ending **-n** (`gan` / `han`, …), plus one `/b/` argument. Keep that pair together (`gan` + `/b/` on a noun; `han` + `/b/` as one adverb). You can now attach *including* / *without* / *prioritizing* to a host without building a new list. On these words too, **-n** is join content toward `/b/`. Put ordinary noun **-sh** on the argument when the group is associative.
+When a noun or event is *framed* toward something (*cake with peanuts*, *walk without meat*, *work prioritizing the bug*), write the frame as an adjective or adverb: first letter **`g`** or **`h`**, the same join vowel as [join-act verbs](#join-act-verbs), and ending **-n** (`gan` / `han`, …), plus one `/b/` argument. Keep that pair together (`gan` + `/b/` on a noun; `han` + `/b/` as one adverb). You can now attach *including* / *without* / *prioritizing* to a host without building a new list. On these words too, **-n** is join content toward `/b/`. Put ordinary noun **-x** on the argument when the group is associative.
 
 ```
 `zuragel gan babanul.`

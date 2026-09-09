@@ -39,7 +39,7 @@ Agalan text
     ▼
 ┌──────────────────────────────────────┐
 │  Peggy — grammar/word.peggy          │
-│  PoS / gl- / endings / -sh           │
+│  PoS / gl- / endings / -x            │
 │  <> foreign, writing atoms, numbers  │
 │  xFamily via alternation order       │
 └──────────────────────────────────────┘
@@ -79,7 +79,7 @@ Public entry: `parse(text)` in [`src/parse/index.ts`](../../src/parse/index.ts).
 
 Owns every **string-shaped** subsystem:
 
-- PoS prefix, left-bound **`gl-`**, reference ending, optional **-sh**
+- PoS prefix, left-bound **`gl-`**, reference ending, optional **-x**
 - Foreign `PoS<…>ENDING` / opaque `PoS<…>` (no phonology inside `<>`)
 - Free number words and writing shorthand ([numbers.md](../grammar/numbers.md))
 - Mid-word **`x`** families: rule alternation order = doc decision order (closes → span open → role → value/ability → numeric → ordinary compound)

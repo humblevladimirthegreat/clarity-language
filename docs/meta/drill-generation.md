@@ -207,18 +207,18 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | — | `why-agelan.md` | skip | — | orientation |
 | — | `introduction.md` | skip | — | orientation |
 | 3 | `phonology.md` | skip | — | not translation |
-| 4 | `reference-suffix.md` | **exists** | Choose **-l** vs **-m** vs **-n** on a **citation** (prefix-less); named person vs kind vs metaphor | No sentences. No **-r**. Pointers to **-sh** / **`gl-`**: do **not** make those the item |
-| 5 | `core.md` | **exists** | PoS letters; SVO; `/ɡ/` after noun; `/w/`; `/h/`; complex `/ɡ|h/`+`/b/`; omit **`jal`**; **`jol` / `jel` / `jul`**; **`jael`** as confirm tag; `/x/` continue vs `/j/` turn; **`adoro` last**; adverbial subordinators (`hurugum` / `hodom` / `hezazem` / `hezebam` / `hegemum` / `humerem` / `hagagam` / `horanem` **`badorol`**); house names; **-l** / **-m** / **-n** as used in examples; `/x/` linker may start the next written sentence after `.` | Do not use **`gl-`**, **`jam`/`jom`/`jem`/`jum`**, nested **`adoro`**, letter **-r** mechanism, **-sh**, joins. Vocatives are not this stage |
+| 4 | `reference-suffix.md` | **exists** | Choose **-l** vs **-m** vs **-n** on a **citation** (prefix-less); named person vs kind vs metaphor | No sentences. No **-r**. Pointers to **-x** / **`gl-`**: do **not** make those the item |
+| 5 | `core.md` | **exists** | PoS letters; SVO; `/ɡ/` after noun; `/w/`; `/h/`; complex `/ɡ|h/`+`/b/`; omit **`jal`**; **`jol` / `jel` / `jul`**; **`jael`** as confirm tag; `/x/` continue vs `/j/` turn; **`adoro` last**; adverbial subordinators (`hurugum` / `hodom` / `hezazem` / `hezebam` / `hegemum` / `humerem` / `hagagam` / `horanem` **`badorol`**); house names; **-l** / **-m** / **-n** as used in examples; `/x/` linker may start the next written sentence after `.` | Do not use **`gl-`**, **`jam`/`jom`/`jem`/`jum`**, nested **`adoro`**, letter **-r** mechanism, **-x**, joins. Vocatives are not this stage |
 | 6 | `vowel-series.md` | skip | — | mnemonic only |
-| 7 | `pronouns.md` | **exists** | Letter vs full-root **-r**; specials **`ugobo` / `edone` / `aha` / `enenu`** (when the *role* is the point); **`adoro`** recap; inclusive *we* **`aha`** | Do **not** test associative **-sh** here (plurality Beginner). Default people still house names; specials only when testing specials |
-| 7 | `plurality.md` | **exists** | Associative **-sh** (`-lsh` / `-nsh` / `-rsh`); not agreement; person-role **-sh** (address set vs name…**-sh**) | **`aha`** as the *not this* for inclusive *we*. **`ugobo`/`edone`** only on person-role items |
+| 7 | `pronouns.md` | **exists** | Letter vs full-root **-r**; specials **`ugobo` / `edone` / `aha` / `enenu`** (when the *role* is the point); **`adoro`** recap; inclusive *we* **`aha`** | Do **not** test associative **-x** here (plurality Beginner). Default people still house names; specials only when testing specials |
+| 7 | `plurality.md` | **exists** | Associative **-x** (`-lx` / `-nx` / `-rx`); not agreement; person-role **-x** (address set vs name…**-x**) | **`aha`** as the *not this* for inclusive *we*. **`ugobo`/`edone`** only on person-role items |
 | 8 | `predication.md` | **exists** | Classification `z… g…` vs kind *noun* `zodogol`; identity **`gonunul` + `/b/`** | No general *to-be* `/v/`. Prefer house names + **SAME**; page-example roots (`odava` / `uzuba`) OK if already taught in this stage |
 | 9 | `coordination.md` | **exists** | Right-close fence; set vs rank vowels; **-l** vs **-m**; list / single-item / standalone starter forms; negation **`u`**; unspecified **-r** as *something* (not fill-ask) | No revisers, no restrictor `/h/` join readings, no comparatives SHARED scale as the point (that is comparatives) |
 | 10 | `questions.md` | **exists** | **`jol`/`jom`** yes/no vs fill-ask (join **-r**); fill-all; polar **`jael` / `juel` / `jaol`** vs **`jul`** vs join **`zul`** | **`jom`** is taught here as soft *ask* — allowed on this page even though full speech-act twins are core Intermediate. Circumstance *when?* **`har`** is Intermediate on this page — do not use |
 | 11 | `revisers.md` | **exists** | Prefix-less **`al`/`am`/`ol`/`ul`** (and **e** / **n** as taught in this stage); in-clause `A REV B`; discourse **`al`** *additionally* before a body | Not a join (`zam` vs `am`). Not **`x#e-` / `x#e`** (numbers discourse) |
 | 11 | `restrictors.md` | **exists** | **`hal`/`ham`/`hual`/`huam`/`har`/`hor`/`hur`** (and `/w/` twins); *only when* vs co-manner *and*; bare *never* / *always* | Not sibling revisers. Not coordination **`zam`** as a restrictor |
 | 12 | `spans.md` | **exists** | Writing fences `[ ]` `{ }` `( )` `< >`; **`~`/`@`**; resume `d[=]`; PoS = outer slot; **aside** = `h(…)`; interior fragment or same-speech-act clause; when a span is required vs nativized word | `<>` loans **allowed** (this stage teaches them). Prefer atomic one-token cites |
-| 13 | `numbers.md` | **exists** | `g+N` count; `g#N` ordinal; digitless **`g+`** (*more than one*) with **-sh** on the noun | No `/v/` `/h/` `/j/` `/x/` number uses, exponents, ranges, percent, measures (later). **-sh** from plurality is recycle |
+| 13 | `numbers.md` | **exists** | `g+N` count; `g#N` ordinal; digitless **`g+`** (*more than one*) with **-x** on the noun | No `/v/` `/h/` `/j/` `/x/` number uses, exponents, ranges, percent, measures (later). **-x** from plurality is recycle |
 | 13 | `comparatives.md` | **exists** | Rank fence **`e`/`oe`/`ue`** + SHARED scale `/ɡ/`; single-item superlative; equative **`ae`** | **Needs:** coordination Beginner rank joins. No measure phrases (Intermediate). No numbers Intermediate |
 | 13 | `causation.md` | **exists** | Sufficient = open sufficient (`…aom` / default pole habit); no cause-arrow word; outcome as host | **Needs:** coordination Beginner inclusive/exclusion + core **`adoro`**. Necessary / **`IF` vs `IFF`** are Intermediate — do not use |
 | 14 | `values.md` | **exists** | Six needs; `/h/` vs `/w/`; topic (bare); **`xa`** met + contact **-l / -m / -r**; **`xo`** prescription force; **`xu`** unmet changeability | **Not** motive **`xe`** (Intermediate). Not ability (non-need + `x` vowel). Not COMMENT |
@@ -239,9 +239,9 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 5 | `core.md` | Advanced | skip | weak-pause cues | recognition |
 | 4 | `reference-suffix.md` | Intermediate | **exists** | **-n** on any PoS (titled verb/adjective/adverb); phrasal proper names `ROOTxROOT`+**-n**; office **handles** as first-mention **-n** | Not value/ability/plan ending tables |
 | 4 | `reference-suffix.md` | Advanced | skip | — | no Advanced stage |
-| 7 | `pronouns.md` | Intermediate | **exists** | English approximations of **-r**; `/x/`…`-r` thread resume vs `/h/` aboutness; **`aha`** vs name join vs name…**-sh** | |
+| 7 | `pronouns.md` | Intermediate | **exists** | English approximations of **-r**; `/x/`…`-r` thread resume vs `/h/` aboutness; **`aha`** vs name join vs name…**-x** | |
 | 7 | `pronouns.md` | Advanced | **exists** | Cross-role recast (one or two PoS flips, not the whole grid) | 4–6 items |
-| 7 | `plurality.md` | Intermediate | **exists** | Associate resolution; verb collective; collective `/ɡ/`…**-sh**; vocative **-sh** | |
+| 7 | `plurality.md` | Intermediate | **exists** | Associate resolution; verb collective; collective `/ɡ/`…**-x**; vocative **-x** | |
 | 7 | `plurality.md` | Advanced | — | no Advanced stage | |
 | 8 | `predication.md` | Intermediate | **exists** | Classification packaging; **SAME** endings / open **-m** | |
 | 8 | `predication.md` | Advanced | skip | boundaries | |
@@ -288,7 +288,7 @@ First-taught checkpoint for forms agents leak most often. If this checkpoint’s
 | **`gl-`**, **`jam`/`jom`/`jem`/`jum`** as a *speech-act* system, remaining `/x/` linkers, nested **`adoro`** | `core.md` Intermediate |
 | **-l** / **-m** / **-n** as a *choice* on a citation | `reference-suffix.md` Beginner |
 | Letter/full-root **-r** algorithm; **`ugobo`/`edone`/`aha`/`enenu`** | `pronouns.md` Beginner |
-| Associative **-sh** | `plurality.md` Beginner |
+| Associative **-x** | `plurality.md` Beginner |
 | **SAME** `gonunul` | `predication.md` Beginner |
 | Phrase/VP/clause joins, **`zal`/`zam`/`zel`**, negation **`u`** | `coordination.md` Beginner |
 | Fill-ask join **-r** (`zar` / `var` / `xar`); polar **`juel`/`jaol`** as the *system* | `questions.md` Beginner |

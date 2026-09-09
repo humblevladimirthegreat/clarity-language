@@ -80,7 +80,7 @@ type SingingPlan = {
 
 - **Onset consonants** (`/z/` in `za`): short; F0 may track the following vowel or stay unvoiced-noise-shaped; do not stretch to a whole beat.
 - **Nucleus:** holds the note. Hiatus (`juon` = `/ju.on/`) is **two** nuclei — two notes, or one note with two vowel qualities in sequence, never a diphthong slide unless the contour **draws** a glide (discouraged; fights phonology).
-- **Coda** (`/n/` in `wan`, `/ʃ/` in **-sh**): short at the end of the last note; word-edge still audible as in singability notes.
+- **Coda** (`/n/` in `wan`, `/ʒ/` in **-x**): short at the end of the last note; word-edge still audible as in singability notes.
 - **Rests:** SpeechPlan pauses and explicit contour gaps; not English isochrony.
 - **Legato:** no gap + voiced diphones. **Attack:** optional `#` or a short glottal if the editor marks a new note onset on a vowel-initial syllable.
 

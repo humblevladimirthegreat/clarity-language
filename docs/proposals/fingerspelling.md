@@ -1,8 +1,8 @@
-# Proposal: one-handed fingerspelling (STS subset + Chinese **z** / **sh**)
+# Proposal: one-handed fingerspelling (STS subset + Chinese **z**)
 
 **Status:** PROPOSED  
-**Related:** [phonology.md § letter names](../grammar/phonology.md#letter-names) (spoken spelling recitation); [phonology.md § phonotactics](../grammar/phonology.md#phonotactics) (word-final **-sh**); silent use when speech is not possible  
-**Design authority:** spoken grammar is unchanged. This is an optional **manual spelling channel** for existing letters (plus the edge digraph **sh**). It does not add lexicon, morphology, or a sign language.
+**Related:** [phonology.md § letter names](../grammar/phonology.md#letter-names) (spoken spelling recitation); [phonology.md § phonotactics](../grammar/phonology.md#phonotactics) (word-final **-x**); silent use when speech is not possible  
+**Design authority:** spoken grammar is unchanged. This is an optional **manual spelling channel** for existing letters. It does not add lexicon, morphology, or a sign language.
 
 ## Motivation
 
@@ -15,15 +15,15 @@ A primitive channel should:
 - Spell the **same letters** as writing, in the same order as the spoken names.
 - Avoid inventing a second language of iconic word-signs.
 
-Swedish Sign Language (**STS**) fingerspelling is one-handed. Most of its Latin letters are holds; **J** is a still flat hand (unlike ASL). Chinese fingerspelling (**汉语手指字母方案**) gives a still, more glyph-like **Z**, and a still dedicated **SH** (Agalan has no *s+h* two-letter spelling for the plural edge).
+Swedish Sign Language (**STS**) fingerspelling is one-handed. Most of its Latin letters are holds; **J** is a still flat hand (unlike ASL). Chinese fingerspelling (**汉语手指字母方案**) gives a still, more glyph-like **Z**. Associative plural is letter **x**, already in the written inventory — no extra hold.
 
 ## Goals
 
-1. Define a **closed 18-sign** inventory: the 17 written letters plus **sh**.
+1. Define a **closed 17-sign** inventory: the 17 written letters.
 2. Default each sign to a **one-hand hold** (orientation + handshape; no path).
 3. Take **a e o u b d g h j l m n r v w x** from **STS** (Stockholm [handalfabet](https://teckensprakslexikon.su.se/kategori/handalfabetet)).
-4. Take **z** and **sh** from **Chinese** (2019 *汉语手指字母方案* **Z** and **SH**).
-5. Spell in **letter-name order**; mark the **word edge** with a brief hold or drop after the last sign (same job as audible **-l / -m / -n / -r / -sh**).
+4. Take **z** from **Chinese** (2019 *汉语手指字母方案* **Z**).
+5. Spell in **letter-name order**; mark the **word edge** with a brief hold or drop after the last sign (same job as audible **-l / -m / -n / -r / -x**).
 6. Keep the channel **compositional spelling only** — no lexical STS/CSL signs.
 
 ## Non-goals
@@ -33,12 +33,12 @@ Swedish Sign Language (**STS**) fingerspelling is one-handed. Most of its Latin 
 - Cued speech / lipreading (fails when the mouth is not visible).
 - Teaching unused Latin letters (**c f i k p q s t y**) or Swedish **å ä ö**.
 - ASL / LSF as the native chart (false friends with STS; tracing **J** or **Z**).
-- Changing spoken letter names, phonology, or treating **sh** as a root consonant.
+- Changing spoken letter names or phonology.
 - Tactile (Lorm) or semaphore remaps in v1 (same inventory later if needed).
 
 ## Inventory
 
-Spoken names stay as in phonology. **sh** has no spoken letter name today (it is only the plural edge); the manual channel still gets **one hold** so `…nsh` is not two English letters.
+Spoken names stay as in phonology. Plural **-x** uses the **x** hold (`xe`).
 
 | Glyph | Spoken name | Manual source | Notes |
 |-------|-------------|---------------|--------|
@@ -58,12 +58,11 @@ Spoken names stay as in phonology. **sh** has no spoken letter name today (it is
 | **v** | *vu* | STS **V** | |
 | **l** | *lo* | STS **L** | |
 | **r** | *ro* | STS **R** | |
-| **x** | *xe* | STS **X** | Hold; check vs Chinese **Z** (open question) |
-| **sh** | *(no name; edge only)* | **Chinese SH** | Index + middle bent ~90° to palm, thumb up, ring + little tucked. Dedicated hold, **not** S then H, **not** print *sh*. Chinese **S** is unused here |
+| **x** | *xe* | STS **X** | Hold; check vs Chinese **Z** (open question). Plural **-x** is this same sign after the ending. |
 
 **Dropped STS letters:** **c f i k p q s t y å ä ö**. Dropping **y / å / ä / ö** also drops the STS letters that use **path movement**.
 
-**Dropped Chinese letters:** everything except **Z** and **SH** (do not import Chinese **H**, **S**, **ZH**, …).
+**Dropped Chinese letters:** everything except **Z** (do not import Chinese **H**, **S**, **SH**, **ZH**, …).
 
 ## How to spell a word
 
@@ -71,7 +70,7 @@ Same sequence as spoken spelling. Example citation `agada`:
 
 ***a ga a da a*** — five holds, pause (or slight drop) between them so **da** + **a** stay two signs.
 
-Content word: PoS letter, then root letters, then ending (**l / m / n / r**), then **sh** if plural. One sign per glyph (digraph **sh** is one sign). Foreign / opaque payloads stay letter-by-letter only when the interior is Latin-Agalan; other orthographies are out of scope (or stay unspelled).
+Content word: PoS letter, then root letters, then ending (**l / m / n / r**), then **x** if plural. One sign per letter. Foreign / opaque payloads stay letter-by-letter only when the interior is Latin-Agalan; other orthographies are out of scope (or stay unspelled).
 
 **Location (sketch):** STS habit is a small space near chin/cheek. Absorb with photos/video; consistency matters more than copying STS height exactly.
 
@@ -79,23 +78,20 @@ Content word: PoS letter, then root letters, then ending (**l / m / n / r**), th
 
 - **STS** supplies a one-hand Latin set whose **j** is already a hold, with more print-cursive iconicity than ASL, and no need to teach English-only letters.
 - **Chinese Z** is a hold that still suggests the **two bars** of printed **Z**; STS **Z** is a weak cursive pose and is marked *less common* even in Swedish.
-- **Chinese SH** is the rare **single-hold** *sh*-slot; DGS **SCH** is a wipe; two-beat **S+H** teaches the wrong analysis for Agalan **sh**.
 
 ASL transfer is **not** a goal. STS and ASL share some shapes on **different** letters (e.g. ASL **B C D R S** ≈ STS **D S L X G**). Charts must say **do not read this as ASL**.
 
 ## Open questions (absorb time)
 
 1. **STS X vs Chinese Z** — confirm the two holds stay distinct at conversation distance; if not, tweak orientation of one, not the letter assignment.
-2. **Chinese SH vs unused STS S** — SH is a two-finger relative of Chinese **S**; Agalan never uses **S**, so no in-inventory clash. Still check SH vs STS **E** / clawed letters in the subset.
-3. **Form source of record** — link stills/video: [teckenspråkslexikon handalfabet](https://teckensprakslexikon.su.se/kategori/handalfabetet) for STS rows; PRC *汉语手指字母方案* (2019) for **Z** / **SH**. Do not redraw from memory.
-4. **Whether to name manual sh in speech** — optional later CV (must not collide with digit *…* or revisers). v1 can leave spoken recitation unchanged and only add the hold.
-5. **Numbers** — digit syllables are not this alphabet; number words still spell as letters (`g`, `+` writing is not a letter). Digit-hand overlap with **we/da/…** is a later pass if needed.
-6. **Non-dominant / left-handed** — mirror; pick one convention in the chart.
+2. **Form source of record** — link stills/video: [teckenspråkslexikon handalfabet](https://teckensprakslexikon.su.se/kategori/handalfabetet) for STS rows; PRC *汉语手指字母方案* (2019) for **Z**. Do not redraw from memory.
+3. **Numbers** — digit syllables are not this alphabet; number words still spell as letters (`g`, `+` writing is not a letter). Digit-hand overlap with **we/da/…** is a later pass if needed.
+4. **Non-dominant / left-handed** — mirror; pick one convention in the chart.
 
 ## Absorb sketch
 
-Not a core-grammar morph. If accepted: a short **optional** section (likely [phonology.md](../grammar/phonology.md) Advanced, or a sibling `docs/grammar/` page linked from phonology) with the 18-sign chart, the two source citations, and “spelling = letter names.” Grammar pages stay free of proposal links until then.
+Not a core-grammar morph. If accepted: a short **optional** section (likely [phonology.md](../grammar/phonology.md) Advanced, or a sibling `docs/grammar/` page linked from phonology) with the 17-sign chart, the two source citations, and “spelling = letter names.” Grammar pages stay free of proposal links until then.
 
 ## Non-criteria
 
-Implementation effort (drawings, video, site widgets) is not a reason to reject the mix. Learner-facing tests: one-hand, holds only, 18 signs, no ASL tracing, **sh** is one sign.
+Implementation effort (drawings, video, site widgets) is not a reason to reject the mix. Learner-facing tests: one-hand, holds only, 17 signs, no ASL tracing, plural **-x** is the **x** sign.

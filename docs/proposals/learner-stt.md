@@ -17,7 +17,7 @@ Agalan is a small, regular sound system with spelling that shows the sound. The 
 1. Transcribe **native Agalan speech** to the **spoken channel** (CV number words, spoken span opens/closes, ordinary `PoS+root+ending`).
 2. Reuse a **pretrained phoneme ASR** (no Agalan recordings, no fine-tune on eSpeak).
 3. Map phones → letters with the **same table** as [phonology.md](../grammar/phonology.md) / [`src/tts/phonemes.ts`](../../src/tts/phonemes.ts), including collapse of unvoiced **style** allophones.
-4. Segment words using **phonotactics** (coda only at the word edge: **-l / -m / -n / -r**, optional **-sh**).
+4. Segment words using **phonotactics** (coda only at the word edge: **-l / -m / -n / -r**, optional **-x**).
 5. Optionally **snap** tokens to published roots and closed lists; optionally **compress** spoken numbers/spans to preferred writing (inverse of TTS `toSpeech`).
 6. Keep fixtures **doc-locked**: phone collapse, letter map, and writing↔speech maps quoted from grammar pages.
 
@@ -52,7 +52,7 @@ Microphone audio
 └──────────┬───────────────┘
            ▼
 ┌──────────────────────────┐
-│  segmentWords            │  legal coda / sh; hiatus = two syllables
+│  segmentWords            │  legal coda / x; hiatus = two syllables
 └──────────┬───────────────┘
            ▼
 ┌──────────────────────────┐
@@ -68,7 +68,7 @@ Microphone audio
 |-------|--------|--------|------|
 | **Phoneme ASR** | Wav / mic | Phone sequence | Third-party model; thin adapter |
 | **`collapseAllophones`** | IPA | Agalan-target IPA | [phonology.md](../grammar/phonology.md) (no voice contrast) |
-| **`phonesToLetters`** | Target IPA | Letter stream (`e u o a` … `x`, word-final `sh`) | Inverse of [`phonemes.ts`](../../src/tts/phonemes.ts) |
+| **`phonesToLetters`** | Target IPA | Letter stream (`e u o a` … `x`) | Inverse of [`phonemes.ts`](../../src/tts/phonemes.ts) |
 | **`segmentWords`** | Letter stream | Speech-surface tokens | [phonotactics](../grammar/phonology.md#phonotactics) |
 | **`snapLexicon`** | Tokens | Tokens (nearest legal word) | Lexicon CSV + closed lists |
 | **`toWriting`** | Speech tokens | Preferred writing | Inverse of TTS expansions |
@@ -100,7 +100,7 @@ Unvoiced variants are **style**, not letters. Before `phonesToLetters`:
 | [b] [p] | /b/ | **b** |
 | [z] [s] | /z/ | **z** |
 | [v] [f] | /v/ | **v** |
-| [ʒ] [ʃ] | /ʒ/ | **x** — **except** word-final plural **sh** /ʃ/ after **-l/-m/-n/-r** |
+| [ʒ] [ʃ] | /ʒ/ | **x** (unvoiced **x** as style; plural **-x** is the same letter) |
 | [ɦ] [h] | /ɦ/ | **h** |
 | [e] [e̞] [ɛ] | /e̞/ | **e** |
 | [ʌ] [ə] [ʊ] (model-dependent) | /ʌ/ | **u** (adapter documents the mapping) |
@@ -113,14 +113,12 @@ Unvoiced variants are **style**, not letters. Before `phonesToLetters`:
 
 **Hiatus:** two adjacent vowel phones → two letters, two syllables (`juon` not a diphthong). If the model emits a diphthong symbol, split it in the adapter.
 
-**`sh`:** only legal as the plural coda after a reference suffix. Mid-word [ʃ] collapses to **x** (/ʒ/), matching “unvoiced **x** as style.”
-
 ## Segmentation
 
 Walk the letter stream with the same syllabify rules as TTS (onset + vowel; leftover consonants attach as **word-final coda only**). Emit a word boundary when a legal ending is complete:
 
 - **-l / -m / -n / -r**
-- same plus **-sh** (`lsh` `msh` `nsh` `rsh`)
+- same plus **-x** (`lx` `mx` `nx` `rx`)
 
 Prefix-less [citation](../grammar/core.md#citation-forms) is legal (root + ending, no PoS). **`PoS+r`** is reserved for [number words](../grammar/phonology.md#number-word-exception). Revisers (`al`, `am`, …) stay prefix-less closed words.
 
@@ -130,7 +128,7 @@ If segmentation fails, return a **partial transcript** plus a skip/error span (d
 
 After segmentation, optionally replace each token with the nearest **legal** word:
 
-- Published roots with any PoS + ending + optional **sh**
+- Published roots with any PoS + ending + optional **x**
 - Closed lists already used in TTS (span opens/closes, revisers, join closes, spelled number CV)
 
 Distance is over letters after collapse (or over phones before letters). Prefer **exact match**; only snap when unique within a small edit radius so a real nonce root is not overwritten.
@@ -209,7 +207,7 @@ Expect the phoneme model to dwarf the TS glue. Keep it off the critical docs ren
 | Four vowels confused (`e`/`u`/`o`/`a`) | Lexicon snap; learner-facing “show phones” so the miss is visible |
 | **l** vs **r** | Same; do not add a new phoneme to “help ASR” |
 | Diphthong merge on hiatus | Adapter splits glides; syllabify matches TTS |
-| Word-final **sh** vs mid **x** | Segmentation owns **sh**; mid [ʃ] → **x** |
+| Unvoiced style vs letter | Collapse table; no extra plural phone |
 | Foreign interiors | Skip; never native G2P |
 | Quiet / sung / overlapping speech | Out of scope; same as TTS non-goals |
 | Treating eSpeak audio as training data | Explicitly forbidden; frozen public acoustics only |
@@ -227,10 +225,10 @@ Expect the phoneme model to dwarf the TS glue. Keep it off the critical docs ren
 
 ## Acceptance criteria
 
-- [ ] `phonesToLetters` inverts the phonology letter table; stacked vowels stay two letters; word-final **-sh** is `sh`.  
+- [ ] `phonesToLetters` inverts the phonology letter table; stacked vowels stay two letters; word-final **-x** is `x`.  
 - [ ] Unvoiced style phones collapse to voiced letters per the table above.  
 - [ ] Native speech-shaped words round-trip `toPhonemes` → `phonesToLetters` without audio.  
-- [ ] `segmentWords` splits on legal endings (including **-sh** and citation forms).  
+- [ ] `segmentWords` splits on legal endings (including **-x** and citation forms).  
 - [ ] A frozen phoneme ASR can be invoked from a Node CLI; Agalan weights are not trained in this repo.  
 - [ ] Opaque/foreign policy matches TTS (skip / mark).  
 - [ ] No Agalan speech corpus and no TTS-synthetic fine-tune required for the default path.

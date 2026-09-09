@@ -310,7 +310,6 @@ function peg$parse(input, options) {
   const peg$c54 = "ae";
   const peg$c55 = "ue";
   const peg$c56 = "<";
-  const peg$c57 = "sh";
 
   const peg$r0 = /^[ \t\n\r]/;
   const peg$r1 = /^[@~]/;
@@ -392,8 +391,7 @@ function peg$parse(input, options) {
   const peg$e65 = peg$literalExpectation("<", false);
   const peg$e66 = peg$classExpectation(["z", "d", "b", "v", "g", "w", "h", "x", "j"], false, false, false);
   const peg$e67 = peg$classExpectation(["l", "m", "n", "r"], false, false, false);
-  const peg$e68 = peg$literalExpectation("sh", false);
-  const peg$e69 = peg$classExpectation(["h", "w", "d", "j", "b", "g", "z", "m", "n", "v", "l", "r"], false, false, false);
+  const peg$e68 = peg$classExpectation(["h", "w", "d", "j", "b", "g", "z", "m", "n", "v", "l", "r"], false, false, false);
 
   function peg$f0(word) {    return word;  }
   function peg$f1(head, w) {    return w;  }
@@ -3855,12 +3853,12 @@ function peg$parse(input, options) {
     let s0, s1;
 
     s0 = peg$currPos;
-    if (input.substr(peg$currPos, 2) === peg$c57) {
-      s1 = peg$c57;
-      peg$currPos += 2;
+    if (input.charCodeAt(peg$currPos) === 120) {
+      s1 = peg$c49;
+      peg$currPos++;
     } else {
       s1 = peg$FAILED;
-      if (peg$silentFails === 0) { peg$fail(peg$e68); }
+      if (peg$silentFails === 0) { peg$fail(peg$e57); }
     }
     if (s1 !== peg$FAILED) {
       peg$savedPos = s0;
@@ -3970,7 +3968,7 @@ function peg$parse(input, options) {
       peg$currPos++;
     } else {
       s0 = peg$FAILED;
-      if (peg$silentFails === 0) { peg$fail(peg$e69); }
+      if (peg$silentFails === 0) { peg$fail(peg$e68); }
     }
 
     return s0;

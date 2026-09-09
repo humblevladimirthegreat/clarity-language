@@ -69,7 +69,7 @@ Beginner already used word edges: a content word ends in **-l** / **-m** / **-n*
 | Mid-word **`x`** | productive compound seam | joins two roots inside one word |
 | Dictionary stem (no **`x`**) | lexical compound | one long simple-looking root (`ohohulabede` *bedroom*) |
 | **-l** / **-m** / **-n** / **-r** | [reference suffix](reference-suffix.md) | audible end of the content word |
-| Optional **-sh** | [plural](plurality.md) after the suffix | word-final **-lsh** / **-msh** / **-nsh** / **-rsh** (`sh` = /ʃ/) |
+| Optional **-x** | [plural](plurality.md) after the suffix | word-final **-lx** / **-mx** / **-nx** / **-rx** (letter **x**) |
 
 A syllable ends with a consonant only at the **end of the word**. Inside a root, **l** and **r** are always followed by a vowel, so they start a syllable rather than sounding like a suffix (`zelulul`: prefix **z**, root **elulu**, ending **-l**). Spelling has one pronunciation path. Writing does not mark stress; musical rhythm may place emphasis.
 
@@ -81,9 +81,9 @@ A syllable ends with a consonant only at the **end of the word**. Inside a root,
 When English says *how many* or *which place*, Agalan writes a [number word](numbers.md). After the role letter, the spoken marker begins with **r**, so you get a cluster ordinary content never uses (`gr…`, `zr…`, `vr…`, `hr…`, `jr…`, `xr…`). You can hear “this is a number” from that cluster: content roots start with a vowel, so **r** as the start of a syllable after a role letter is the number marker (`ra` / `ru` / `re` / `ro`; end-relative rank uses **`eu`**, spoken `reu…` for written **`#-`**). Stacked vowels stay separate syllables (`juon` = *ju'on*).
 
 ```
-`zagadalsh grarel.`
+`zagadalx grarel.`
 
-gloss: `z-cat-sh` · `g-three`
+gloss: `z-cat-x` · `g-three`
 
 *Three cats.*
 ```
@@ -127,7 +127,7 @@ Three letters are not digits. Their names follow the English letter-name, mapped
 | **b** | name **be** | ≈ English *bee* |
 | **x** | name **xe** | ≈ English *eks* |
 
-Plural **-sh** is the [word-edge](#phonotactics) ending, not a letter you recite in this list. Pause between names so **`da`** + **`a`** stay two syllables. In a clause, package the glyph as a [mention](spans.md) (`d{z}`: interior spoken ***ze***).
+Pause between names so **`da`** + **`a`** stay two syllables. In a clause, package the glyph as a [mention](spans.md) (`d{z}`: interior spoken ***ze***).
 
 ## Advanced
 <a id="advanced"></a>
@@ -146,9 +146,9 @@ Ordinary singing stays easier because of these shape choices:
 | No mid-word syllable-final consonant | Ending a syllable on a consonant breaks a held note | Roots are **V(CV)+**; a final consonant only at the **word edge** |
 | No lexical stress | Music already places emphasis | Rhythm may stress a beat; spelling does not encode stress |
 | Spelling = pronunciation | You need not memorize special readings | One path from letters to sound |
-| Audible word edges | Song often removes speech pauses | Content words end in **-l** / **-m** / **-n** / **-r** (optional **-sh**) |
+| Audible word edges | Song often removes speech pauses | Content words end in **-l** / **-m** / **-n** / **-r** (optional **-x**) |
 
-Legal clusters: left-hanging **`gl-`**; number-word role letter + **r**; word-final **-lsh** / **-msh** / **-nsh** / **-rsh**.
+Legal clusters: left-hanging **`gl-`**; number-word role letter + **r**; word-final **-lx** / **-mx** / **-nx** / **-rx**.
 
 Sing a short Agalan line quickly at a high comfortable pitch:
 

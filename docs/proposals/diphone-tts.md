@@ -53,7 +53,7 @@ PhonemePlan (existing)
         AudioBuffer
 ```
 
-`toPhonemes` stays the [letter table](../grammar/phonology.md): **`e`** `/e̞/`, **`u`** `/ʌ/`, **`o`** `/o/`, **`a`** `/ɑ/`, **`h`** `/ɦ/`, **`r`** `/ɹ/`, **`x`** `/ʒ/`, word-final **`sh`** `/ʃ/`. The concatenator maps those IPA symbols onto **unit ids**, not onto English ARPAbet.
+`toPhonemes` stays the [letter table](../grammar/phonology.md): **`e`** `/e̞/`, **`u`** `/ʌ/`, **`o`** `/o/`, **`a`** `/ɑ/`, **`h`** `/ɦ/`, **`r`** `/ɹ/`, **`x`** `/ʒ/`. The concatenator maps those IPA symbols onto **unit ids**, not onto English ARPAbet.
 
 ## Diphone definition
 
@@ -71,16 +71,16 @@ Phone set for v1 (plus silence `#`):
 |------|-----|
 | Vowels | `/e̞/` `/ʌ/` `/o/` `/ɑ/` |
 | Onsets | `/ɦ/` `/w/` `/ɡ/` `/d/` `/j/` `/b/` `/z/` `/m/` `/n/` `/v/` `/l/` `/ɹ/` `/ʒ/` |
-| Extra coda | `/ʃ/` (plural **-sh** only) |
+| Extra coda | none (plural **-x** is letter **x** `/ʒ/` after the ending) |
 
 Do **not** ship unused C–C pairs. Generate the list from [phonotactics](../grammar/phonology.md#phonotactics) and [number-word exception](../grammar/phonology.md#number-word-exception):
 
 | Pattern | Diphones |
 |---------|----------|
-| Word edge | `#–C` (PoS), `#–V` if needed, coda/`ʃ`–`#` |
+| Word edge | `#–C` (PoS), `#–V` if needed, coda/`ʒ`–`#` |
 | Open syllables | every attested **C–V** and **V–C** (root `(CV)+` after the role letter) |
 | Hiatus | all **V–V** (stacked vowels are two syllables) |
-| Endings | **V–l/m/n/ɹ**; then **-lsh** etc. **l/m/n/ɹ–ʃ**, **ʃ–#** |
+| Endings | **V–l/m/n/ɹ**; then **-lx** etc. **l/m/n/ɹ–ʒ**, **ʒ–#** |
 | Number marker | documented **PoS–ɹ** then **ɹ–V** (`ra` / `ru` / `re` / `ro`, **`eu`** as `e–ʌ`) |
 | Adjective **gl-** | **`ɡ–l`** then **l–V** |
 
@@ -144,7 +144,7 @@ No IMS-Toucan in the docs path (Python, large, approximate phones).
 
 ## Acceptance criteria
 
-- [ ] Legal diphone list is generated from phonotactics + number **PoS–ɹ** + **gl-** + **-sh** clusters; tests fail if Speak requests an unlisted unit.
+- [ ] Legal diphone list is generated from phonotactics + number **PoS–ɹ** + **gl-** + **-x** clusters; tests fail if Speak requests an unlisted unit.
 - [ ] Native example words from [phonology.md](../grammar/phonology.md) play with **one vowel nucleus per letter**, no G2P `ː`.
 - [ ] Hiatus (`juon` = `/ju.on/`) is two syllables of comparable length.
 - [ ] Default Speak path does not load Kitten for native Agalan.
@@ -154,7 +154,7 @@ No IMS-Toucan in the docs path (Python, large, approximate phones).
 
 ## Phased delivery
 
-1. **Inventory + concatenator on silence/tones** — sequence builder + overlap-add with placeholder tones; fixtures for `zazawan`, `juon`, `zelulul`, a number word, `…sh`.
+1. **Inventory + concatenator on silence/tones** — sequence builder + overlap-add with placeholder tones; fixtures for `zazawan`, `juon`, `zelulul`, a number word, `…x`.
 2. **Record + label** the legal bank (voiced only).
 3. **Wire Speak** — swap Kitten; drop vowel-length hack; lazy-load sprite.
 4. **F0 / pause** — map existing SpeechPlan boundary tags onto a flat pitch plus falls.
@@ -165,7 +165,7 @@ No IMS-Toucan in the docs path (Python, large, approximate phones).
 | Topic | Doc |
 |-------|-----|
 | Letter IPA | [phonology.md](../grammar/phonology.md) |
-| Phonotactics / **-sh** / **gl-** / number **r** | [phonology.md](../grammar/phonology.md#phonotactics) |
+| Phonotactics / **-x** / **gl-** / number **r** | [phonology.md](../grammar/phonology.md#phonotactics) |
 | SpeechPlan / G2P | `src/tts/` (`phonemes.ts`, `plan.ts`); Kitten adapter is what this replaces |
 | Writing → speech | [spans.md](../grammar/spans.md#writing-vs-speech), [numbers.md](../grammar/numbers.md#writing-preferred-shorthand) |
 | Current Kitten fetch | [public/tts README](../grammar/public/tts/README.md) |

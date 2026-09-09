@@ -162,7 +162,7 @@ function posPrefix(word: MorphWord): string {
 
 function endingSuffix(word: MorphWord): string {
   let out = word.ending ?? "";
-  if (word.plural) out += "sh";
+  if (word.plural) out += "x";
   return out;
 }
 

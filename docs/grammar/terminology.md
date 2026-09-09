@@ -90,9 +90,9 @@ The written `/j/` word: **`jal` / `jol` / `jel` / `jul`** and soft **-m**.
 
 ### Address set
 
-Listener special plus **-sh**: the current addressees (no speaker).
+Listener special plus **-x**: the current addressees (no speaker).
 
-[Plurality](plurality.md#person-role-sh)
+[Plurality](plurality.md#person-role-x)
 
 ### Adjective extra (`/w/`)
 
@@ -144,7 +144,7 @@ Span TYPE **e** (`h(…)`).
 
 ### Associative
 
-**-sh** = named **anchor plus associates**.
+**-x** = named **anchor plus associates**.
 
 [Plurality](plurality.md#associative)
 
@@ -212,7 +212,7 @@ Who counts as *we* / *you* when names are unavailable.
 
 ### Collective
 
-**-sh** on `/v/` (one shared act) vs on `/ɡ/` (property of the group as a unit).
+**-x** on `/v/` (one shared act) vs on `/ɡ/` (property of the group as a unit).
 
 [Plurality](plurality.md#verbs-v), [plurality](plurality.md#adjectives-g)
 
@@ -310,7 +310,7 @@ Plain **o** + **-m**: *or none*.
 
 ### Ending / reference suffix
 
-Final **-l / -m / -n / -r** (plus optional **-sh**). **Reference suffix** names the content-word table.
+Final **-l / -m / -n / -r** (plus optional **-x**). **Reference suffix** names the content-word table.
 
 [Reference suffix](reference-suffix.md)
 

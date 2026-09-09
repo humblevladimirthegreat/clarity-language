@@ -14,6 +14,8 @@ export type RewriteMarkdownResult = {
   changes: RetieChange[];
 };
 
+export type CoreRewrite = (core: string) => string | null;
+
 /** Rewrite one orthographic word. Never substitutes inside a larger token. */
 export function retieCore(core: string, map: ReadonlyMap<string, string>): string | null {
   if (!core || map.size === 0) {
@@ -30,8 +32,8 @@ export function retieCore(core: string, map: ReadonlyMap<string, string>): strin
   }
 }
 
-const TRAILING_PUNCT = new Set([".", "?", "!", ",", ":", ";", ")", "]", "}", ">", '"', "'"]);
-const LEADING_PUNCT = new Set(["(", "[", "{", "<", '"', "'"]);
+const TRAILING_PUNCT = new Set([".", "?", "!", ",", ":", ";", ")", "]", "}", ">", '"', "'", "`"]);
+const LEADING_PUNCT = new Set(["(", "[", "{", "<", '"', "'", "`"]);
 
 export function peelChunk(chunk: string): { prefix: string; core: string; suffix: string } {
   let prefix = "";
@@ -63,7 +65,7 @@ export function peelChunk(chunk: string): { prefix: string; core: string; suffix
 
 function rewriteWhitespaceTokens(
   text: string,
-  map: ReadonlyMap<string, string>,
+  rewriteCore: CoreRewrite,
   baseIndex: number,
   changes: RetieChange[],
 ): string {
@@ -72,7 +74,7 @@ function rewriteWhitespaceTokens(
     if (!core) {
       return chunk;
     }
-    const next = retieCore(core, map);
+    const next = rewriteCore(core);
     if (next == null || next === core) {
       return chunk;
     }
@@ -173,12 +175,12 @@ function transformMarkdown(
 
 function scanMarkdown(
   input: string,
-  map: ReadonlyMap<string, string>,
+  rewriteCore: CoreRewrite,
   baseIndex: number,
   changes: RetieChange[],
 ): string {
   const rewrite = (text: string, index: number) =>
-    rewriteWhitespaceTokens(text, map, index, changes);
+    rewriteWhitespaceTokens(text, rewriteCore, index, changes);
   return transformMarkdown(input, baseIndex, rewrite, rewrite);
 }
 
@@ -246,10 +248,17 @@ function nextMarkup(input: string, from: number): number {
   return next === from ? from + 1 : next;
 }
 
-export function rewriteMarkdown(input: string, map: ReadonlyMap<string, string>): RewriteMarkdownResult {
+export function rewriteMarkdownCores(
+  input: string,
+  rewriteCore: CoreRewrite,
+): RewriteMarkdownResult {
   const changes: RetieChange[] = [];
-  const text = scanMarkdown(input, map, 0, changes);
+  const text = scanMarkdown(input, rewriteCore, 0, changes);
   return { text, changes };
+}
+
+export function rewriteMarkdown(input: string, map: ReadonlyMap<string, string>): RewriteMarkdownResult {
+  return rewriteMarkdownCores(input, (core) => retieCore(core, map));
 }
 
 export function lineNumberAt(text: string, index: number): number {

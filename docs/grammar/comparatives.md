@@ -269,7 +269,7 @@ gloss: `z-grace@` · `z-courage@` · `z-and` · `g-challenging`
 
 **Compare with:** *as challenging as* uses equality **`ae`** (`zael`). *More challenging than* uses rank **`e`**.
 
-**Related form:** *ADJ as a unit* uses shared `/ɡ/`…**-sh** under **`a`**: [plurality](plurality.md#adjectives-g). Shared comparative and equative adjectives are singular.
+**Related form:** *ADJ as a unit* uses shared `/ɡ/`…**-x** under **`a`**: [plurality](plurality.md#adjectives-g). Shared comparative and equative adjectives are singular.
 
 Equality **`ae`** with a shared scale needs **two or more** names. **`ae`** with no shared scale is a tie among the names (equal rank).
 

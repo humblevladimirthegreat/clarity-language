@@ -57,7 +57,7 @@ Vowels never encode a digit. Same skeleton + different vowels = **same number** 
 
 - All vowels
 - PoS prefix
-- Reference ending (**-l / -m / -n / -r**) and plural **-sh** (those letters *are* digit onsets; counting them would rewrite the number)
+- Reference ending (**-l / -m / -n / -r**) and plural **-x** (those letters *are* digit onsets; counting them would rewrite the number)
 - Mid-word **x** (compound glue)
 - The number-marker **r** + **ra / ru / re / ro / reu** — the mnemonic *replaces* the numeral word with content, it does not recite it
 
@@ -77,7 +77,7 @@ Citation `zagadal` (*cat*): prefix `z` and ending `-l` are silent; payload **g d
 
 **Image → number**
 
-1. Strip PoS, ending, **-sh**.
+1. Strip PoS, ending, **-x**.
 2. Split on **x**.
 3. Drop vowels and **j / b / x**.
 4. Read remaining onsets as digits.

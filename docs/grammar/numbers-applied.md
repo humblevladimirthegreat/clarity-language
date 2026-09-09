@@ -162,10 +162,10 @@ Clock / date ranges: SHARED continuum **`gumel`** (or a host relation + `/b/`) w
 ### Percent and percentage points
 <a id="percent-and-percentage-points"></a>
 
-English *25% of the cats* names a **portion of a whole**. Close a **count** (`ra` / `ru`) with **`jo`**. That closer is parallel to fraction closer **`je`**. The whole is the noun the percent grades, same `/ɡ/` slot as a count (`zagadalsh g+3` = *three cats*).
+English *25% of the cats* names a **portion of a whole**. Close a **count** (`ra` / `ru`) with **`jo`**. That closer is parallel to fraction closer **`je`**. The whole is the noun the percent grades, same `/ɡ/` slot as a count (`zagadalx g+3` = *three cats*).
 
 ```
-`zagadalsh g+25%.`
+`zagadalx g+25%.`
 
 gloss: `z-cat-assoc` · `g-+25jo`
 
@@ -189,9 +189,9 @@ In [preferred writing](numbers.md#writing-preferred-shorthand): **`%`** → spee
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| `zagadalsh g+25%` | percent grades the modified noun | *25% of the cats* |
-| `dezubelsh g+95%` | same, object slot | *95% of the tests* |
-| `beberelsh g+5%` under a host relation | same, `/b/` | *5% of the people* |
+| `zagadalx g+25%` | percent grades the modified noun | *25% of the cats* |
+| `dezubelx g+95%` | same, object slot | *95% of the tests* |
+| `beberelx g+5%` under a host relation | same, `/b/` | *5% of the people* |
 
 The noun names the reference class; **`jo`** grades how much of that class. Same endings on the percent word (**-m** ≈ *about 25% of …*).
 

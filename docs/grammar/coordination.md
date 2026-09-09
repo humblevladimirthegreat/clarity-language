@@ -533,7 +533,7 @@ Strict / definitional generics use closed `zual` plus kind (and [FORMAL](special
 
 **For *always*, use:** bare habitual **`hual`** — [restrictors](restrictors.md).
 
-**Not the same job as:** plural **-sh** ([plurality](plurality.md)) names an anchor and associates, not *every K*.
+**Not the same job as:** plural **-x** ([plurality](plurality.md)) names an anchor and associates, not *every K*.
 
 ### SHARED after the join
 <a id="scope-fence-p-coord"></a>
@@ -560,7 +560,7 @@ gloss: `z-dog` · `z-cat` · `z-and.open` · `g-ownership` · `b-grace@`
 | Join family | Use of SHARED `/ɡ/` |
 |-------------|----------------------|
 | **a** | distributive property (*both ADJ*) or bundle description |
-| **a** + `/ɡ/`…**-sh** | [collective](plurality.md#adjectives-g) (*ADJ together*) |
+| **a** + `/ɡ/`…**-x** | [collective](plurality.md#adjectives-g) (*ADJ together*) |
 | **ae** + gradable `/ɡ/` | [equative](comparatives.md#equatives) scale |
 | **e** / **oe** / **ue** on NP | [comparison scale](comparatives.md) |
 | **ua** / **uo** | kind / domain for universals |

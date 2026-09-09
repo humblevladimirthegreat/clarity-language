@@ -94,6 +94,10 @@ describe("rewriteMarkdown mixed English", () => {
     assert.equal(text, "see [badoro](adoro.md) please");
   });
 
+  it("peels wrapping backticks", () => {
+    assert.deepEqual(peelChunk("`zazawanx`"), { prefix: "`", core: "zazawanx", suffix: "`" });
+  });
+
   it("peels punctuation on hodom", () => {
     const map = mapOf(["odo", "adoro"]);
     assert.deepEqual(peelChunk("(hodom)."), { prefix: "(", core: "hodom", suffix: ")." });
@@ -116,6 +120,7 @@ describe("rebuild round-trip", () => {
     assert.equal(rewriteParsedWord(word, map), "zululon");
     assert.equal(rewriteParsedWord(parseWord("zuzuzuxogoven"), map), "zazazaxogoven");
     assert.equal(rewriteParsedWord(parseWord("zolovexrabal"), map), "zelevexrabal");
+    assert.equal(rewriteParsedWord(parseWord("zazawanx"), map), "zululonx");
   });
 });
 

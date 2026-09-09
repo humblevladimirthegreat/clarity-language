@@ -46,7 +46,7 @@ Keep a **compact card**; do not dump the whole AST on first click.
 |-------|---------|
 | **Header** | Full surface form + PoS chip + ending sense (`-l` / `-m` / `-n` / `-r`) |
 | **Gloss** | Lexicon or overlay English; optional **strict vs loose** toggle per [glosses.md](../../meta/glosses.md#strict-vs-loose-free-english) |
-| **Morph strip** | Stem · mid-`x` family · number anatomy · `-sh` · role / value / ability bits (chips, not a tree) |
+| **Morph strip** | Stem · mid-`x` family · number anatomy · `-x` · role / value / ability bits (chips, not a tree) |
 | **Why** | One line naming the parser family (e.g. “values, not role”) + link into the owning grammar page |
 | **Related** | When available: anaphor target for `-r`; join fence mate; span open / close pair |
 
@@ -81,7 +81,7 @@ On a stable selection, map the DOM range onto token ranges. Card content depends
 |-----------|------|
 | Caret / collapsed inside a word | Compact peek (gloss + PoS + ending). Do not steal the caret while dragging. |
 | One full word | Compact inspect (header + gloss + morph chips). |
-| Partial word (e.g. only `-sh` or a mid-`x` chunk) | Bind to the **whole token**; highlight the matching morph chip. No half-word gloss. |
+| Partial word (e.g. only `-x` or a mid-`x` chunk) | Bind to the **whole token**; highlight the matching morph chip. No half-word gloss. |
 | Multi-word | **Construction** card: join fence, span open/close, `^ … ^` island, or a loose phrase gloss (concatenated loose English) plus Why this parse. |
 | Range that includes a parse error | Keep the error token in the card (“expected …”). |
 

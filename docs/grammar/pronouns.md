@@ -107,7 +107,7 @@ gloss: `z-speaker` · `d-grace@` · `v-tell` · `d-next-clause` · `z-courage@` 
 
 English *we* and *you* do not say whether the listener is in the group. That split is **clusivity**. Inclusive *you and I* on this page is already **`aha`**.
 
-**For *I and my people* / *you all* / *Azawan and associates*, use:** associative **-sh** on [plurality](plurality.md#person-role-sh) (same path slot). Do not guess those readings from English *we* or from **`aha`**.
+**For *I and my people* / *you all* / *Azawan and associates*, use:** associative **-x** on [plurality](plurality.md#person-role-x) (same path slot). Do not guess those readings from English *we* or from **`aha`**.
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -295,17 +295,17 @@ gloss: `z-grace@` · `v-sit` · `z-courage@` · `v-←grace`
 
 ### Specials: further notes
 
-When you address several people at once, English *you* does not say how many. The listener root **`edone`** plus associative **-sh** names everyone this turn addresses: the vocative cluster, plus anyone still held as addressee. One addressee stays singular **`edone`**; several take **`edone…sh`**. Inclusive *shall we* stays **`aha`**. Soft **`zaham`** hedges whether you really share the act.
+When you address several people at once, English *you* does not say how many. The listener root **`edone`** plus associative **-x** names everyone this turn addresses: the vocative cluster, plus anyone still held as addressee. One addressee stays singular **`edone`**; several take **`edone…x`**. Inclusive *shall we* stays **`aha`**. Soft **`zaham`** hedges whether you really share the act.
 
 ```
-`zedonensh vajul.`
+`zedonenx vajul.`
 
 gloss: `z-listener` · `v-sit`
 
 *You all sit.*
 ```
 
-**Compare with:** *you and I* is **`aha`**. *Azawan and associates* is name…**-sh** ([plurality](plurality.md#associative)).
+**Compare with:** *you and I* is **`aha`**. *Azawan and associates* is name…**-x** ([plurality](plurality.md#associative)).
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -377,7 +377,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **8.** *Azawan and associates walk.*
 
 ::: details Show answer
-`zazawansh vawalal.`
+`zazawanx vawalal.`
 :::
 
 #### Agalan → English
@@ -418,13 +418,13 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan and Uhubun sleep.*
 :::
 
-**7.** `zululonsh vawalal.`
+**7.** `zululonx vawalal.`
 
 ::: details Show answer
 *Ululon and associates walk.*
 :::
 
-**8.** `zedonensh vajul.`
+**8.** `zedonenx vajul.`
 
 ::: details Show answer
 *You all sit.*
@@ -598,5 +598,5 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 :::
 
 ## See also
-- [plurality.md](plurality.md): **-sh**; address set vs associative
+- [plurality.md](plurality.md): **-x**; address set vs associative
 - [core.md](core.md#dependent-clauses): **`adoro`** placement

@@ -79,10 +79,10 @@ describe("toPhonemeWord", () => {
     assert.equal(word.ipa, "jʌ.on");
   });
 
-  it("keeps word-final -sh as /ʃ/ (zazawansh)", () => {
-    const word = toPhonemeWord("zazawansh");
-    assert.equal(word.ipa, "zɑ.zɑ.wɑnʃ");
-    assert.equal(word.syllables.at(-1)?.ipa.endsWith("ʃ"), true);
+  it("keeps word-final -x as letter x /ʒ/ (zazawanx)", () => {
+    const word = toPhonemeWord("zazawanx");
+    assert.equal(word.ipa, "zɑ.zɑ.wɑnʒ");
+    assert.equal(word.syllables.at(-1)?.ipa.endsWith("ʒ"), true);
   });
 
   it("treats mid-word x as /ʒ/ (zugoboxrawon)", () => {

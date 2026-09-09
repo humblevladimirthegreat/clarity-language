@@ -16,7 +16,7 @@ With a finished parser, most of the hard mapping is already structured in the AS
 
 1. Play **any parseable Agalan string** in the browser (docs examples, exercises, future UI).
 2. Expand **writing → speech** from the AST (spans, free-number shorthand, writing atoms) before synthesis.
-3. Map speech-surface letters to **IPA / phonemes** exactly as [phonology.md](../../grammar/phonology.md) specifies (including syllable splits on stacked vowels and word-final **-sh**).
+3. Map speech-surface letters to **IPA / phonemes** exactly as [phonology.md](../../grammar/phonology.md) specifies (including syllable splits on stacked vowels and word-final **-x**).
 4. Ship **offline-capable** synthesis (WASM or equivalent) so docs work without a cloud TTS API.
 5. Expose a small API (`speak(text)` / `speakAst(ast)`) shared by CLI smoke tests and web UI.
 6. Keep fixtures **doc-locked**: speech expansions and phoneme strings quoted from grammar pages.
@@ -126,12 +126,11 @@ Single table from [phonology.md](../../grammar/phonology.md); no English respell
 | **z** | /z/ | |
 | **m** **n** **v** **l** | /m/ /n/ /v/ /l/ | |
 | **r** | /ɹ/ | |
-| **x** | /ʒ/ | mid-word compound joiner and discourse `/x/` prefix — same phone |
-| **sh** | /ʃ/ | word-final plural only (after reference suffix) |
+| **x** | /ʒ/ | mid-word compound joiner, discourse `/x/` prefix, and plural **-x** — same phone |
 
-**Syllables:** split so each vowel is its own nucleus; stacked vowels are separate syllables (`juon` → `ju.ón`-style timing, not a diphthong). Onsets attach left-to-right per phonotactics. Word-final coda = reference suffix (+ optional **sh** only).
+**Syllables:** split so each vowel is its own nucleus; stacked vowels are separate syllables (`juon` → `ju.ón`-style timing, not a diphthong). Onsets attach left-to-right per phonotactics. Word-final coda = reference suffix (+ optional **x**).
 
-**Clusters still legal:** `gl-` (left-bound), `PoS+r` (numbers), finals `-lsh` / `-msh` / `-nsh` / `-rsh`.
+**Clusters still legal:** `gl-` (left-bound), `PoS+r` (numbers), finals `-lx` / `-mx` / `-nx` / `-rx`.
 
 **Stress:** no lexical stress. Engine default: light even timing; optional final-lengthening before body-boundary pauses.
 
@@ -237,10 +236,10 @@ Expect the WASM voice pack to dwarf the TS glue; keep it out of the critical ren
 ## Acceptance criteria
 
 - [x] `toSpeech` expands number shorthand and span writing forms to the spoken channel per grammar docs. (Phase 2)  
-- [x] `toPhonemes` matches the phonology letter table; stacked vowels are separate syllables; **-sh** is /ʃ/. (Phase 1)  
+- [x] `toPhonemes` matches the phonology letter table; stacked vowels are separate syllables; **-x** is /ʒ/. (Phase 1)  
 - [x] In-browser Play speaks a parseable example offline after first WASM load. (Phase 1 Gloss overlay)  
 - [x] Opaque/foreign interiors never use Agalan G2P; loan policy is documented and tested. (Phase 2 skips interiors; loan islands are Phase 4)  
-- [x] Fixtures cover at least: plain clause, plural **-sh**, compound mid-word **`x`**, free-number shorthand, multi-token cite with close, island boundaries, `?` / `/x/` continue. (Phase 3: island boundaries, `/x/` continue, soft **-m**, `/j/` turn)  
+- [x] Fixtures cover at least: plain clause, plural **-x**, compound mid-word **`x`**, free-number shorthand, multi-token cite with close, island boundaries, `?` / `/x/` continue. (Phase 3: island boundaries, `/x/` continue, soft **-m**, `/j/` turn)  
 - [x] `previewSpeech` available for pedagogy (“show what will be spoken”). (Phase 1 Gloss preview line + CLI)  
 - [x] No cloud TTS required for native Agalan audio.
 

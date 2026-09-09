@@ -24,7 +24,7 @@ This lesson also introduces **-r** as “already in the talk / not a new diction
 ## Non-goals
 
 - New morphology, new lexicon columns, or renaming **-r** to “indefinite” in the grammar (see [Ending table](#ending-table)).
-- Letter-pronoun cut (through 2nd vowel), full-root vs letter choice, special pronouns, **-sh**, join **-r**, revisers, overlays, foreign/`PoS<…>` spelling.
+- Letter-pronoun cut (through 2nd vowel), full-root vs letter choice, special pronouns, **-x**, join **-r**, revisers, overlays, foreign/`PoS<…>` spelling.
 - A standalone “vocabulary chapter” that delays the first clause for a whole page of isolates.
 - Phonology **Intermediate** (full word-shape with PoS, number-word `PoS+r`, compounds as a system) in this sitting — that still needs role letters and comes with or after core.
 - Changing CSV schema. Proper names are use of a root with **-n**, not a required extra published field.

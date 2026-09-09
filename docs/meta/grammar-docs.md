@@ -107,7 +107,7 @@ State the **positive** rule: which form to use for which English job. A “not Y
 
 Do not say a reading **stays on** another section, page, or subsystem — that is fencing for writers (“don’t reassign this”), not a cue for readers. Same family as ownership fences (“this page owns / does not own X”) — [teach now; don’t preview later](#teach-now-dont-preview-later). This meta page may still use *stay* in editor English (*inventory stays in unassigned-reserved.md*). Grammar-page prose should not.
 
-**A contrast earns a place only when all three hold:** the learner would use the wrong form for **this** English *now* (English false friend, or an Agalan sibling they already met — `-sh` vs **`aha`**, classification vs **`SAME`**, free `g+e` vs `ROOTx+e`, join **-r** vs content **-r**); both forms appear with a real example; and the beat fits in one or two labeled sentences after this form’s example. Search, the sidebar, and **See also** already list related pages. Do **not** catalog siblings “in case they look them up,” expand a mix-up into a related-forms table, or restate the other doc.
+**A contrast earns a place only when all three hold:** the learner would use the wrong form for **this** English *now* (English false friend, or an Agalan sibling they already met — `-x` vs **`aha`**, classification vs **`SAME`**, free `g+e` vs `ROOTx+e`, join **-r** vs content **-r**); both forms appear with a real example; and the beat fits in one or two labeled sentences after this form’s example. Search, the sidebar, and **See also** already list related pages. Do **not** catalog siblings “in case they look them up,” expand a mix-up into a related-forms table, or restate the other doc.
 
 **Skip the negative when:** they would not invent the wrong form (editor-hygiene pairs like hyphenated PoS, ~~`z-ugobo`~~); it only restates the positive (“write one token” already implies no hyphen); or a section would get a ritual **Not this** column with nothing decisive to say. A strong positive example is enough when there is no sibling to compare.
 
@@ -138,7 +138,7 @@ Do **not** add an **Agalan · Use** (or English-bundle) table whose rows are oth
 
 | Smell | Verdict |
 |-------|---------|
-| Boilerplate disclaimers: “X is a **root choice**, not `xa`/`xu` polarity”, “plural **-sh** stays unused on `/h/` `/w/`”, “there is no dedicated root”, “not a fourth vowel/role/join”, “**Not won’t:** …” | Delete. State what the form does instead |
+| Boilerplate disclaimers: “X is a **root choice**, not `xa`/`xu` polarity”, “plural **-x** stays unused on `/h/` `/w/`”, “there is no dedicated root”, “not a fourth vowel/role/join”, “**Not won’t:** …” | Delete. State what the form does instead |
 | Denials of a retired pairing or order: “not a matching word on the left”, “not a mid-chain extender”, “not a sixth marker identity” | Delete. The learner never saw that version — [omit denials of former constructions](#omit-former-construction-denials) |
 | **Trap tables** (“Not this (real traps)”, “Traps worth one look”, “Keep these for other jobs”) and **related-form Agalan · Use** catalogs | Delete from body. One starter plus an example of each form they would mix up *now* |
 | Inline **`Trap:`** / **“Trap:”** / *Near miss:* / “Do not confuse…” / “Not to be confused with…” | Punitive or quiz warning. Use one of the four starters |

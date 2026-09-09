@@ -14,17 +14,17 @@ After the first letter (the role), a **marker** tells count versus rank. Digits 
 To say **how many** of a thing there are, put a number word after the noun, in the same place as other adjectives (`/ɡ/`). The word starts with **`g`**, then the count marker (written **`+`**), then the digit: **`g+3`** is *three*. (cue: **`+`** / **`a`** ≈ add — how many)
 
 ```
-`zagadalsh g+3.`
+`zagadalx g+3.`
 
-gloss: `z-cat-sh` · `g-three`
+gloss: `z-cat-x` · `g-three`
 
 *Three cats.*
 ```
 
 ```
-`zazawan dabogolsh g+3 vejel.`
+`zazawan dabogolx g+3 vejel.`
 
-gloss: `z-grace@` · `d-book-sh` · `g-three` · `v-see`
+gloss: `z-grace@` · `d-book-x` · `g-three` · `v-see`
 
 *Azawan sees three books.*
 ```
@@ -53,17 +53,17 @@ gloss: `z-courage@` · `d-book` · `g-third` · `v-write`
 
 You can say the count is **more than one** without naming how many. Keep the count marker and leave the digits off: **`g+`**. (cue: **`a`** ≈ add — a plural amount, then stop)
 
-Naming the group (*cats* as a set) uses [**-sh**](plurality.md) on the noun. Saying the amount is a different tool. Both may sit on the same noun (`zagadalsh g+`).
+Naming the group (*cats* as a set) uses [**-x**](plurality.md) on the noun. Saying the amount is a different tool. Both may sit on the same noun (`zagadalx g+`).
 
 ```
-`zagadalsh g+.`
+`zagadalx g+.`
 
-gloss: `z-cat-sh` · `g-more-than-one`
+gloss: `z-cat-x` · `g-more-than-one`
 
 *Cats — more than one.*
 ```
 
-**Compare with:** English *some cats* (a set in this situation, no count) uses the noun plus [**-sh**](plurality.md). Use **`g+`** when you mean the amount is more than one.
+**Compare with:** English *some cats* (a set in this situation, no count) uses the noun plus [**-x**](plurality.md). Use **`g+`** when you mean the amount is more than one.
 
 ### Saying it aloud
 <a id="digits"></a>
@@ -97,7 +97,7 @@ The word ends with exact **-l**, spoken as its own last syllable. Build the spok
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills on this Beginner band. Try each item before opening **Show answer**. Count with `g+N`, rank with `g#N`, and use digitless **`g+`** with **-sh** on the noun for *more than one*.
+Short drills on this Beginner band. Try each item before opening **Show answer**. Count with `g+N`, rank with `g#N`, and use digitless **`g+`** with **-x** on the noun for *more than one*.
 
 **Roots used here:**
 
@@ -118,7 +118,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **1.** *Three cats.*
 
 ::: details Show answer
-`zagadalsh g+3.`
+`zagadalx g+3.`
 :::
 
 **2.** *The second book.*
@@ -130,13 +130,13 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **3.** *Cats — more than one.*
 
 ::: details Show answer
-`zagadalsh g+.`
+`zagadalx g+.`
 :::
 
 **4.** *Two dogs.*
 
 ::: details Show answer
-`zodogolsh g+2.`
+`zodogolx g+2.`
 :::
 
 **5.** *The first house.*
@@ -148,13 +148,13 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **6.** *Azawan sees three books.*
 
 ::: details Show answer
-`zazawan dabogolsh g+3 vejel.`
+`zazawan dabogolx g+3 vejel.`
 :::
 
 **7.** *More than one cat.*
 
 ::: details Show answer
-`zagadalsh g+.`
+`zagadalx g+.`
 :::
 
 **8.** *Ululon writes the third book.*
@@ -165,7 +165,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 #### Agalan → English
 
-**1.** `zagadalsh g+3.`
+**1.** `zagadalx g+3.`
 
 ::: details Show answer
 *Three cats.*
@@ -177,13 +177,13 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *The second book.*
 :::
 
-**3.** `zagadalsh g+.`
+**3.** `zagadalx g+.`
 
 ::: details Show answer
 *Cats — more than one.*
 :::
 
-**4.** `zohohulsh g+2.`
+**4.** `zohohulx g+2.`
 
 ::: details Show answer
 *Two houses.*
@@ -195,13 +195,13 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *The first cat.*
 :::
 
-**6.** `zuhubun dagadalsh g+ vejel.`
+**6.** `zuhubun dagadalx g+ vejel.`
 
 ::: details Show answer
 *Uhubun sees more than one cat.*
 :::
 
-**7.** `zazawan dodogolsh g+3 vejel.`
+**7.** `zazawan dodogolx g+3 vejel.`
 
 ::: details Show answer
 *Azawan sees three dogs.*
@@ -231,7 +231,7 @@ Beginner already used one spoken word: role letter, marker, digits, ending. The 
 
 Speech is always the full CV form. Writing for free number words prefers shorthand (`g+3`, `g+`, `g#-2`).
 
-**Related form:** naming a group of people or things uses [**-sh**](plurality.md) on an ordinary noun.
+**Related form:** naming a group of people or things uses [**-x**](plurality.md) on an ordinary noun.
 
 ### Parts of speech on numbers
 <a id="parts-of-speech-on-numbers"></a>
@@ -313,7 +313,7 @@ Beginner already used **`g+`** for *more than one*. Any marker may drop every di
 | **`reu`** (`…#-`) | unspecified **end-relative rank** | *some nth from the end*; exact ranks keep digits (`…#-N`) | **`e`** ≈ order + **`u`** ≈ undo |
 | **`ro`** (`…_`) | unspecified **digit-string / label** | *some code*; *a label*; exact labels keep digits (`…_…`) | **`o`** ≈ one |
 
-**Compare with:** noun [**-sh**](plurality.md) names a **group of referents**. Digitless **`ra`** names a **count/amount `>1`** without saying N. They may co-occur (`zagadalsh g+3`).
+**Compare with:** noun [**-x**](plurality.md) names a **group of referents**. Digitless **`ra`** names a **count/amount `>1`** without saying N. They may co-occur (`zagadalx g+3`).
 
 Phrase **`zar`** / **`zor`** / … pick an unspecified **member of an inventory**. Digitless number **-r** repeats a **prior numeric value**. Digitless number **-l** (and **-m** / **-n**) introduces an unspecified amount of that marker.
 
@@ -622,7 +622,7 @@ Both writings name the **same word**. Choose the surface by **job**: a numeral i
 | [Numeric derivation](numeric-derivation.md#numeric-derivation) / kind morph | **spelled CV** | `zolovexrabal`, not `zolovex+el` |
 | Inventory tables | **shorthand** | patterns like `ROOTx+e` are easy to scan |
 
-**Prefer shorthand** for counts, measures, ranks, ranges, thresholds (`zagadalsh g+3`, `z+3 z+5 zel`); digit-strings / times / codes (`d_555,123,4567`, `h_15,30`); scientific / engineering register (`g+5.2e-4`, `g+e3`); compact agenda markers (`x#1`, `x#3e2`); and pages that teach the numeral system.
+**Prefer shorthand** for counts, measures, ranks, ranges, thresholds (`zagadalx g+3`, `z+3 z+5 zel`); digit-strings / times / codes (`d_555,123,4567`, `h_15,30`); scientific / engineering register (`g+5.2e-4`, `g+e3`); compact agenda markers (`x#1`, `x#3e2`); and pages that teach the numeral system.
 
 **Prefer spelled CV** for anything after mid-word **`x`** on a content root (lexicon citation forms always spelled); kind morphs on a root; literary, sung, or long prose where `+` `#` `_` and second-slot `~`/`@`/`=` break word rhythm; and pronunciation teaching.
 
@@ -697,7 +697,7 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 | phone 555-123-4567 | `d_555,123,4567` | *drovavavawoduremovagulel* (`d` + `ro` + va×3 · wo du re · mo va gu · le + `l`) |
 | scientific 5.2487083e-4 | `g+5.2487083e-4` | *grabumojavajedumohalezoharel* (`ra` + bu mo **ja** + va **je** + du mo ha · le zo ha · re) |
 | 25% | `g+25%` | *graduvajol* (`g` + `ra` + du va **jo** + `l`) |
-| 25% of the cats | `zagadalsh g+25%` | host whole + `/ɡ/` percent — [denominator](numbers-applied.md#percent-denominators) |
+| 25% of the cats | `zagadalx g+25%` | host whole + `/ɡ/` percent — [denominator](numbers-applied.md#percent-denominators) |
 | about 3% | `g~+3%` | *grarejom* (`ra` + re **jo** + `m`) |
 | −12.5% | `g-12.5%` | *gruwodujevajol* (`ru` + wo du **je** va **jo**) |
 | 100% | `g+100%` | *grawozozojol* (`ra` + wo zo zo **jo**; normal mantissa digits) |
@@ -722,7 +722,7 @@ Preferred writing first; speech sketches show structure (exact **-l** unless not
 | twenty-seven! (label) | `j_27` | *jrodulel* (`j` + `ro` + du le) |
 | First! (place cheer) | `j#1` | *jrewol* (`j` + `re` + wo) |
 
-In a sentence, the PoS attaches to that single number word (see [Parts of speech on numbers](#parts-of-speech-on-numbers); e.g. direct-object digit-string: `d_…`). Prefer naming the whole as the host of a `/ɡ/` **`jo`** percent ([denominator](numbers-applied.md#percent-denominators): `zagadalsh g+25%`).
+In a sentence, the PoS attaches to that single number word (see [Parts of speech on numbers](#parts-of-speech-on-numbers); e.g. direct-object digit-string: `d_…`). Prefer naming the whole as the host of a `/ɡ/` **`jo`** percent ([denominator](numbers-applied.md#percent-denominators): `zagadalx g+25%`).
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -755,7 +755,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **2.** *About three cats.*
 
 ::: details Show answer
-`zagadalsh g~+3.`
+`zagadalx g~+3.`
 :::
 
 **3.** *Azawan sees −3.*
@@ -796,7 +796,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 #### Agalan → English
 
-**1.** `zagadalsh g~+3.`
+**1.** `zagadalx g~+3.`
 
 ::: details Show answer
 *About three cats.*
@@ -881,9 +881,9 @@ A digit group may use **`ba`** or **`bu`** with **no** exponent digits. That emp
 | **Mantissa `0` + `ba`/`bu`∅** | [zero × digitless exp](#zero-exponent) |
 
 ```
-`zagadalsh g+e.`
+`zagadalx g+e.`
 
-gloss: `z-cat-sh` · `g-+∞`
+gloss: `z-cat-x` · `g-+∞`
 
 *Cats — infinitely many.*
 ```
@@ -1169,13 +1169,13 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 **1.** *Cats — infinitely many.*
 
 ::: details Show answer
-`zagadalsh g+e.`
+`zagadalx g+e.`
 :::
 
 **2.** *One gazillion books.*
 
 ::: details Show answer
-`zabogolsh g+1e.`
+`zabogolx g+1e.`
 :::
 
 **3.** *Finally: Azawan walks.*
@@ -1204,7 +1204,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 #### Agalan → English
 
-**1.** `zagadalsh g+e.`
+**1.** `zagadalx g+e.`
 
 ::: details Show answer
 *Cats — infinitely many.* / *+∞ cats.*

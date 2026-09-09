@@ -11,7 +11,7 @@ A gloss should answer: *what is each Agalan piece doing in the clause — in Eng
 | Slot + sense | Show PoS letter and the **active English sense** | Quote Agalan phonology (`ugobo`, `uzumu`, …) |
 | Separate senses | Treat literal / metaphorical / proper / overlay as **different English roots** | Chain etymology (`microphone→speaker`) |
 | Endings | Drop **-l** / **-m** / **-n** when they only pick which sense-root applies | Repeat those endings after a sense that already encodes them |
-| Structure | Keep mid-word `x` pieces, named **`@`**, **-sh**, and binding visible | Invent full English syntax for Agalan structure |
+| Structure | Keep mid-word `x` pieces, named **`@`**, **-x**, and binding visible | Invent full English syntax for Agalan structure |
 | Binding | Point **-r** (and span anaphors) at the antecedent when known | Collapse to English *he* / *she* / *it* |
 | Underspecification | Keep vague Agalan vague (`someone`, bare joins) | Sharpen into a specific English claim |
 | Separation | Stay word-aligned | Replace the free English line |
@@ -54,7 +54,7 @@ Grammar tables may keep a column named **Gloss** for free English. When a table 
 | Evidential / universality **tags** | Fold in only if English wants it (*I hear…*, *usually*); else omit |
 | Span fence labels | Quotes / parentheses; no “Cite:” / “aside:” |
 | Role / SAME scaffolding | *the speaker* / *is* — not “agent of speech” / “identical to” |
-| Associative **-sh** spelled out | *you all* / *they* when English is enough |
+| Associative **-x** spelled out | *you all* / *they* when English is enough |
 | Numbered-alternative pedagogy | *First, …* / *Finally, …* is fine; drop “problem #1” metalabel unless teaching numbering |
 
 ### Keep in loose
@@ -101,7 +101,7 @@ Same English label for `zugobom` and `zugobon` is fine: both are the *speaker* s
 ### Word shape
 
 ```
-{PoS}-{english}(-x-{english|TAG})*[@][-sh]
+{PoS}-{english}(-x-{english|TAG})*[@][-x]
 ```
 
 - **PoS** — single letter matching the written prefix (`j` `z` `d` `b` `v` `g` `w` `h` `x`). Left-bound adjectives: `gl-…`.
@@ -109,7 +109,7 @@ Same English label for `zugobom` and `zugobon` is fine: both are the *speaker* s
 - **`-x-`** — mid-word compound / stance / role / span hinge; each piece is English (or a stable TAG).
 - **-l / -m / -n** — **omit** when they only choose which sense-root is in play (the usual content-word case). Named reference **-n** is **`@`**, not the letters `-n`.
 - **`@`** — append when **-n** is **named reference** (house-cast, office handles, `PoS<…>n`, phrasal names). Do **not** add `@` when **-n** only selected a special or overlay sense (`zugobon` → `z-speaker`, `zahan` → `z-interlocutors`) or when join **-n** is a join ending (`van`, `xan`).
-- **-sh** — append `-sh` after `@` if both apply (`z-grace@-sh`). Use `-sh` when the written word has associative / address-set / collective **-sh** (`z-speaker-sh`, `z-listener-sh`).
+- **-x** — append `-x` after `@` if both apply (`z-grace@-x`). Use `-x` when the written word has associative / address-set / collective **-x** (`z-speaker-x`, `z-listener-x`).
 - **Prefix-less** revisers: English only — `instead`, `rather`, `additionally` (no fake PoS).
 
 Separate words with ` · ` (space-middot-space). One morph gloss line per Agalan line (or per turn).
@@ -121,7 +121,7 @@ Only when it is **not** already baked into the English sense-root:
 | Keep in gloss | Why |
 |---------------|-----|
 | `@` | Named reference **-n** — the sense (`grace`) is not the job; the job is *this is a name* |
-| `-sh` | Associative / collective ascription / collective doing / address-set — not a sense picker |
+| `-x` | Associative / collective ascription / collective doing / address-set — not a sense picker |
 | `(←…)` binding for **-r** | Resume is not a lexicon sense; see below |
 | Rare teaching callouts | If you must contrast two same-sense forms that differ only by ending, prefer distinct English labels (`and.open` / `and`) over re-attaching `-m` / `-l` |
 
@@ -219,8 +219,8 @@ Bake join / reviser **job** into the English label (including open vs closed whe
 | `zedonen` | `z-listener` | *you* / *the listener* |
 | `zazawan` | `z-grace@` | *Azawan* |
 | `zahan` | `z-interlocutors` | *we* (speaker ∪ address set) |
-| `zugobonsh` | `z-speaker-sh` | *I and associates* |
-| `zedonensh` | `z-listener-sh` | *you-all* (address set) |
+| `zugobonx` | `z-speaker-x` | *I and associates* |
+| `zedonenx` | `z-listener-x` | *you-all* (address set) |
 | `guzumum` | `g-happy` | *happy* |
 | `huvuvum` | `h-WITNESSED` | *per memory* |
 | `hadezem` | `h-LIVE` | *from the scene* |
@@ -264,10 +264,10 @@ gloss: `j-no` · `z-speaker` · `v-walking-unable-temporary` · `h-competence-x-
 
 ### Numbered alternative + unmet pleasure
 
-Agalan: `x#e- zuzebul g#1 zugobonsh haweroxur.`
+Agalan: `x#e- zuzebul g#1 zugobonx haweroxur.`
 
 ```
-gloss: `x-starting-with` · `z-problem` · `g-first` · `z-speaker-sh` · `h-pleasure-x-unmet`
+gloss: `x-starting-with` · `z-problem` · `g-first` · `z-speaker-x` · `h-pleasure-x-unmet`
 
 *First problem: we're not enjoying this.*
 ```
@@ -318,7 +318,7 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 2. No `→` etymology chains.
 3. No **-l** / **-m** / **-n** when they only selected the sense-root. Named **-n** is **`@`** (`z-grace@`), not `-n` or `-proper`.
 4. Compounds / stance / role / span `x` pieces are segmented in English.
-5. **-r** uses `←…` (no trailing `-r`); **-sh** stays as `-sh`; named **-n** stays as `@`. Resume is `z-←grace`, not `z-r`. Fill-ask is `z-who`, not `z-ar`.
+5. **-r** uses `←…` (no trailing `-r`); **-x** stays as `-x`; named **-n** stays as `@`. Resume is `z-←grace`, not `z-r`. Fill-ask is `z-who`, not `z-ar`.
 6. Free English is on its own line (or grammar-table Gloss column) — **loose** by default; **strict** only when teaching packaging.
 
 ## See also

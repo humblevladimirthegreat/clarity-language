@@ -8,7 +8,7 @@ function posPrefix(word: MorphWord): string {
 }
 
 function endingAndPlural(word: MorphWord): string {
-  return `${word.ending ?? ""}${word.plural ? "sh" : ""}`;
+  return `${word.ending ?? ""}${word.plural ? "x" : ""}`;
 }
 
 function mapRoots(roots: string[], map: ReadonlyMap<string, string>): string[] {

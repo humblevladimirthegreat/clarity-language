@@ -19,6 +19,14 @@ describe("parseWord — content / gl- / citation", () => {
     assert.deepEqual(word.family, { kind: "content", roots: ["ugobo"] });
   });
 
+  it("parses associative plural -x after the ending (plurality.md)", () => {
+    const word = parseOk("zazawanx");
+    assert.equal(word.pos, "z");
+    assert.equal(word.ending, "n");
+    assert.equal(word.plural, true);
+    assert.deepEqual(word.family, { kind: "content", roots: ["azawa"] });
+  });
+
   it("parses glelulul as left-bound /ɡ/ (core.md gl-)", () => {
     const word = parseOk("glelulul");
     assert.equal(word.pos, "g");

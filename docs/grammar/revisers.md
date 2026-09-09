@@ -19,9 +19,9 @@ A REV B
 ```
 
 ```
-`zodogolsh am zagadal.`
+`zodogolx am zagadal.`
 
-gloss: `z-dog-sh` · `including.open` · `z-cat`
+gloss: `z-dog-x` · `including.open` · `z-cat`
 
 *Dogs, including a cat among others.*
 ```
@@ -73,9 +73,9 @@ For every reviser you also choose how complete the right-hand side is. **-l** me
 | **-m** (`am` / `em` / `om` / `um`) | B among others | open | **m** ≈ maybe more |
 
 ```
-`zodogolsh al zagadal.`
+`zodogolx al zagadal.`
 
-gloss: `z-dog-sh` · `including` · `z-cat`
+gloss: `z-dog-x` · `including` · `z-cat`
 
 *Dogs, including only a cat.*
 ```
@@ -145,7 +145,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **1.** *Dogs, including a cat among others.*
 
 ::: details Show answer
-`zodogolsh am zagadal.`
+`zodogolx am zagadal.`
 :::
 
 **2.** *Coffee fully replaces tea.*
@@ -192,7 +192,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 #### Agalan → English
 
-**1.** `zodogolsh am zagadal.`
+**1.** `zodogolx am zagadal.`
 
 ::: details Show answer
 *Dogs, including a cat among others.*
@@ -222,7 +222,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *In other words, Ululon is happy.*
 :::
 
-**6.** `zodogolsh al zagadal.`
+**6.** `zodogolx al zagadal.`
 
 ::: details Show answer
 *Dogs, including only a cat.*
@@ -473,9 +473,9 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 Use **-n** when A is a labeled set or the swap is stock wording, not a one-off repair.
 
 ```
-`zaredelsh an zelulul.`
+`zaredelx an zelulul.`
 
-gloss: `z-red-sh` · `including.named` · `z-blue`
+gloss: `z-red-x` · `including.named` · `z-blue`
 
 *The reds (and associates), including blue in that named set.*
 ```

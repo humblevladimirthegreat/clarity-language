@@ -339,7 +339,7 @@ PoslessNumberStem
       return stem;
     }
 
-// ── Revisers (prefix-less; ending required; no -r / -sh) ─────────────────────
+// ── Revisers (prefix-less; ending required; no -r / -x) ─────────────────────
 
 reviser
   = form:ReviserForm WordEnd {
@@ -520,7 +520,7 @@ Ending
   = [lmnr] { return text(); }
 
 PluralSuffix
-  = "sh" { return true; }
+  = "x" { return true; }
 
 ContentRoot
   = first:[aeou] rest:RootTail {

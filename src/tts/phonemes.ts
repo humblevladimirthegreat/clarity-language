@@ -47,7 +47,7 @@ export type PhonemeWord = {
   ipa: string;
 };
 
-const NATIVE_WORD = /^[aegouhwdjbzmnvlrx]+(?:sh)?$/;
+const NATIVE_WORD = /^[aegouhwdjbzmnvlrx]+$/;
 
 export function isNativeSurface(raw: string): boolean {
   return NATIVE_WORD.test(raw);
@@ -82,10 +82,6 @@ function phonesOf(raw: string): Phone[] {
   const phones: Phone[] = [];
   let i = 0;
   while (i < raw.length) {
-    if (i === raw.length - 2 && raw.endsWith("sh")) {
-      phones.push({ letter: "sh", ipa: "ʃ", vowel: false, index: i });
-      break;
-    }
     const letter = raw[i]!;
     const ipa = LETTER_IPA[letter];
     if (!ipa) {
