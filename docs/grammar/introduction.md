@@ -73,7 +73,7 @@ Inventory tables on grammar pages keep four kinds of cell apart so a memory aid 
 
 That split speeds learning: you practice the real job once, then the cue (often the same four vowels, or one emoji scene) makes the next closed set cheaper to remember — without treating the pun as the grammar.
 
-Continue with [core.md](core.md#beginner) for clause shape.
+Continue with [phonology.md](phonology.md#beginner) for letters and word edges, then [reference-suffix.md](reference-suffix.md#beginner) for citation endings, then [core.md](core.md#beginner) for clause shape.
 
 ## License
 <a id="license"></a>

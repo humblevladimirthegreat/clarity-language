@@ -10,10 +10,10 @@ const srcDir = fileURLToPath(new URL('../../../src', import.meta.url))
 const readingOrder = [
   { text: 'Why Agalan', link: '/' },
   { text: 'Introduction', link: '/introduction' },
-  { text: 'Core', link: '/core' },
-  { text: 'Vowel series', link: '/vowel-series' },
   { text: 'Phonology', link: '/phonology' },
   { text: 'Reference suffix', link: '/reference-suffix' },
+  { text: 'Core', link: '/core' },
+  { text: 'Vowel series', link: '/vowel-series' },
   { text: 'Pronouns', link: '/pronouns' },
   { text: 'Plurality', link: '/plurality' },
   { text: 'Predication', link: '/predication' },

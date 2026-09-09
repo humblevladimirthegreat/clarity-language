@@ -173,6 +173,7 @@ Reuse this bank unless this stage already taught a different published root. Do 
 | `agada` | *cat* |
 | `abogo` | *book* |
 | `ohohu` | *house* |
+| `ogore` | *inclusion* / *inside* (**-m**) |
 | `elulu` | *blue* |
 | `arede` | *red* |
 | `ele` | *size* / *big* |
@@ -205,10 +206,10 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 |------|------|--------|-------------------------|--------------------|
 | — | `why-agelan.md` | skip | — | orientation |
 | — | `introduction.md` | skip | — | orientation |
-| 3 | `core.md` | **exists** | PoS letters; SVO; `/ɡ/` after noun; `/w/`; `/h/`; complex `/ɡ|h/`+`/b/`; omit **`jal`**; **`jol` / `jel` / `jul`**; vocatives; **`jael`** as confirm tag; `/x/` continue vs `/j/` turn; **`adoro` last**; adverbial subordinators (`hurugum` / `hodom` / `hezazem` / `hezebam` / `hegemum` / `humerem` / `hagagam` / `horanem` **`badorol`**); house names; **-l** / **-m** / **-n** as used in examples | Do not use **`gl-`**, **`jam`/`jom`/`jem`/`jum`**, nested **`adoro`**, `/x/` linkers, letter **-r** mechanism, **-sh**, joins |
-| 4 | `vowel-series.md` | skip | — | mnemonic only |
-| 5 | `phonology.md` | skip | — | not translation |
-| 6 | `reference-suffix.md` | **exists** | Choose **-l** vs **-m** vs **-n** vs **-r** on a content word; named person vs kind; citation prefix-less **…n** | Pointers to **-sh** / **`gl-`** / full **-r** algorithm: do **not** make those the item. One two-sentence resume item is enough if it matches the page example |
+| 3 | `phonology.md` | skip | — | not translation |
+| 4 | `reference-suffix.md` | **exists** | Choose **-l** vs **-m** vs **-n** on a **citation** (prefix-less); named person vs kind vs metaphor | No sentences. No **-r**. Pointers to **-sh** / **`gl-`**: do **not** make those the item |
+| 5 | `core.md` | **exists** | PoS letters; SVO; `/ɡ/` after noun; `/w/`; `/h/`; complex `/ɡ|h/`+`/b/`; omit **`jal`**; **`jol` / `jel` / `jul`**; **`jael`** as confirm tag; `/x/` continue vs `/j/` turn; **`adoro` last**; adverbial subordinators (`hurugum` / `hodom` / `hezazem` / `hezebam` / `hegemum` / `humerem` / `hagagam` / `horanem` **`badorol`**); house names; **-l** / **-m** / **-n** as used in examples; `/x/` linker may start the next written sentence after `.` | Do not use **`gl-`**, **`jam`/`jom`/`jem`/`jum`**, nested **`adoro`**, letter **-r** mechanism, **-sh**, joins. Vocatives are not this stage |
+| 6 | `vowel-series.md` | skip | — | mnemonic only |
 | 7 | `pronouns.md` | **exists** | Letter vs full-root **-r**; specials **`ugobo` / `edone` / `aha` / `enenu`** (when the *role* is the point); **`adoro`** recap; inclusive *we* **`aha`** | Do **not** test associative **-sh** here (plurality Beginner). Default people still house names; specials only when testing specials |
 | 7 | `plurality.md` | **exists** | Associative **-sh** (`-lsh` / `-nsh` / `-rsh`); not agreement; person-role **-sh** (address set vs name…**-sh**) | **`aha`** as the *not this* for inclusive *we*. **`ugobo`/`edone`** only on person-role items |
 | 8 | `predication.md` | **exists** | Classification `z… g…` vs kind *noun* `zodogol`; identity **`gonunul` + `/b/`** | No general *to-be* `/v/`. Prefer house names + **SAME**; page-example roots (`odava` / `uzuba`) OK if already taught in this stage |
@@ -234,10 +235,10 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 
 | Path | File | Band | Status | Introduces (test these) | Notes |
 |------|------|------|--------|-------------------------|-------|
-| 3 | `core.md` | Intermediate | **exists** | **`jam`/`jom`/`jem`/`jum`**; **`gl-`**; adverb topic `/h/`+`/b/`; complex chaining; `/x/` linkers (`xezazal`, `xezebal`, …); nested **`adoro`**; number-as-interjection pointer only if the stage’s examples already show it | Do not require numbers Intermediate readings |
-| 3 | `core.md` | Advanced | skip | weak-pause cues | recognition |
-| 6 | `reference-suffix.md` | Intermediate | **exists** | **-n** on any PoS (titled verb/adjective/adverb); phrasal proper names `ROOTxROOT`+**-n**; office **handles** as first-mention **-n** | Not value/ability/plan ending tables |
-| 6 | `reference-suffix.md` | Advanced | skip | — | no Advanced stage |
+| 5 | `core.md` | Intermediate | **exists** | **`jam`/`jom`/`jem`/`jum`**; **`gl-`**; adverb topic `/h/`+`/b/`; complex chaining; `/x/` linkers (`xezazal`, `xezebal`, …); nested **`adoro`**; number-as-interjection pointer only if the stage’s examples already show it | Do not require numbers Intermediate readings |
+| 5 | `core.md` | Advanced | skip | weak-pause cues | recognition |
+| 4 | `reference-suffix.md` | Intermediate | **exists** | **-n** on any PoS (titled verb/adjective/adverb); phrasal proper names `ROOTxROOT`+**-n**; office **handles** as first-mention **-n** | Not value/ability/plan ending tables |
+| 4 | `reference-suffix.md` | Advanced | skip | — | no Advanced stage |
 | 7 | `pronouns.md` | Intermediate | **exists** | English approximations of **-r**; `/x/`…`-r` thread resume vs `/h/` aboutness; **`aha`** vs name join vs name…**-sh** | |
 | 7 | `pronouns.md` | Advanced | **exists** | Cross-role recast (one or two PoS flips, not the whole grid) | 4–6 items |
 | 7 | `plurality.md` | Intermediate | **exists** | Associate resolution; verb collective; collective `/ɡ/`…**-sh**; vocative **-sh** | |
@@ -283,9 +284,9 @@ First-taught checkpoint for forms agents leak most often. If this checkpoint’s
 
 | Form | First taught |
 |------|----------------|
-| House names, SVO, omit **`jal`**, **`jol`/`jel`/`jul`**, **`adoro`**, *because* **`hurugum badorol`** | `core.md` Beginner |
-| **`gl-`**, **`jam`/`jom`/`jem`/`jum`** as a *speech-act* system, `/x/` linkers, nested **`adoro`** | `core.md` Intermediate |
-| **-l** / **-m** / **-n** / **-r** as a *choice* | `reference-suffix.md` Beginner (core already *uses* them) |
+| House names, SVO, omit **`jal`**, **`jol`/`jel`/`jul`**, **`adoro`**, *because* **`hurugum badorol`**, `/x/` linker after `.` | `core.md` Beginner |
+| **`gl-`**, **`jam`/`jom`/`jem`/`jum`** as a *speech-act* system, remaining `/x/` linkers, nested **`adoro`** | `core.md` Intermediate |
+| **-l** / **-m** / **-n** as a *choice* on a citation | `reference-suffix.md` Beginner |
 | Letter/full-root **-r** algorithm; **`ugobo`/`edone`/`aha`/`enenu`** | `pronouns.md` Beginner |
 | Associative **-sh** | `plurality.md` Beginner |
 | **SAME** `gonunul` | `predication.md` Beginner |

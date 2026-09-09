@@ -206,4 +206,4 @@ Even if the language does lose its potency over a century, having a positive imp
 ## Next
 <a id="next"></a>
 
-Continue with [introduction.md](introduction.md) for the name, grammar design, and how to learn these docs, then [core.md](core.md#beginner) for clause shape. Community updates: [Agalan on Reddit](https://www.reddit.com/r/ClarityLanguage).
+Continue with [introduction.md](introduction.md) for the name, grammar design, and how to learn these docs, then [phonology.md](phonology.md#beginner) for letters, [reference-suffix.md](reference-suffix.md#beginner) for citation endings, and [core.md](core.md#beginner) for clause shape. Community updates: [Agalan on Reddit](https://www.reddit.com/r/ClarityLanguage).

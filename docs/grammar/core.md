@@ -5,13 +5,23 @@ How to read and write an Agalan **sentence**: who does what, word shape, default
 ## Beginner
 <a id="beginner"></a>
 
+You already write a [citation](reference-suffix.md): root + ending (`odogol`, `awalal`, `azawan`). In a **sentence**, put a **role letter** in front. That first letter says what the word is doing (who acts, the action, and so on). The root and ending stay the ones you already chose; only the first letter changes.
+
 ### Who acts and the action
 
-A content word starts with a **role letter**: that first letter says what the word is doing in the sentence (who acts, the action, and so on). After the letter come the **root** (the meaning) and an **ending**. The root stays the same when the word plays a different role; only the first letter changes.
-
-`/z/` marks the **subject** (who acts). `/v/` marks the **verb** (the action). Write **role letter + root + ending** as one word (`zazawan`). For now, read each whole word as its plain English meaning.
+`/z/` marks the **subject** (who acts). `/v/` marks the **verb** (the action). Write **role letter + root + ending** as one word (`zodogol` from the citation `odogol`).
 
 A period ends the statement. The usual order is **Subject – Verb**.
+
+```
+`zodogol vawalal.`
+
+gloss: `z-dog` · `v-walk`
+
+*A dog walks.*
+```
+
+A name you already cite with **-n** (`azawan`) keeps **-n** in the sentence:
 
 ```
 `zazawan vawalal.`
@@ -28,11 +38,11 @@ gloss: `z-grace@` · `v-walk`
 The usual order is **Subject – Direct Object – Verb**. Because the first letter already says each word’s role, you may move those three without changing who did what. Put first the piece you want to highlight: the person or thing the sentence is “about,” or the new information. English often does that with stress; Agalan can do it with order.
 
 ```
-`zazawan dagadal vejel.`
+`zodogol dagadal vejel.`
 
-gloss: `z-grace@` · `d-cat` · `v-see`
+gloss: `z-dog` · `d-cat` · `v-see`
 
-*Azawan sees a cat.*
+*A dog sees a cat.*
 ```
 
 ### Adjectives (`/ɡ/`)
@@ -40,15 +50,7 @@ gloss: `z-grace@` · `d-cat` · `v-see`
 
 When you name a **property or kind** (*blue*, *a dog*), put that word in `/ɡ/` (an **adjective**). It follows the word it describes.
 
-English *is* in *Azawan is a dog* is already in that pair: you do not write a separate “to be” verb.
-
-```
-`zazawan godogol.`
-
-gloss: `z-grace@` · `g-dog`
-
-*Azawan is a dog.*
-```
+English *is* in *A dog is blue* is already in that pair: you do not write a separate “to be” verb.
 
 ```
 `zodogol gelulul.`
@@ -58,9 +60,28 @@ gloss: `z-dog` · `g-blue`
 *A dog is blue.*
 ```
 
+```
+`zazawan godogol.`
+
+gloss: `z-grace@` · `g-dog`
+
+*Azawan is a dog.*
+```
+
 The same string is also the noun plus its adjective: `zodogol gelulul` is both the full sentence *A dog is blue* and the phrase *a blue dog*.
 
+### Extra detail on an adjective (`/w/`)
+<a id="adjective-detail-w"></a>
+
 After an adjective, you can add how intense it is or in what manner. That extra detail uses `/w/` immediately after the `/ɡ/` word.
+
+```
+`zodogol gelulul welem.`
+
+gloss: `z-dog` · `g-blue` · `w-size~`
+
+*A dog is very blue.* / *a very blue dog*
+```
 
 ### Adverbs (`/h/`)
 <a id="adverbs-h"></a>
@@ -68,27 +89,35 @@ After an adjective, you can add how intense it is or in what manner. That extra 
 When you say **how, when, or where** an action happens, use `/h/` (an **adverb**). You may place it anywhere in that sentence. Several adverbs can sit next to each other (`hadazam howom` *hastily and quietly*).
 
 ```
-`zazawan hadazam vawalal.`
+`zodogol hadazam vawalal.`
 
-gloss: `z-grace@` · `h-haste~` · `v-walk`
+gloss: `z-dog` · `h-haste~` · `v-walk`
 
-*Azawan walks hastily.*
+*A dog walks hastily.*
 ```
 
 ### Extra nouns (`/b/`)
 <a id="extra-nouns"></a>
 
-Some adjectives and adverbs name a **relation** that needs another person or thing (*same as …*, *because of …*). Put that extra noun in `/b/` right after the `/ɡ/` or `/h/` word. The root on the `/ɡ/` or `/h/` word names the relation; `/b/` marks the noun that completes it. English *to* / *for* (who receives something) uses that `/h/` + `/b/` shape too.
+Some adjectives and adverbs name a **relation** that needs another person or thing (*inside …*, *for …*). Put that extra noun in `/b/` right after the `/ɡ/` or `/h/` word. The root on the `/ɡ/` or `/h/` word names the relation; `/b/` marks the noun that completes it. English *to* / *for* (who receives something) uses that `/h/` + `/b/` shape too.
 
 ```
-`gonunul bazawan`
+`hogorem bohohul`
 
-gloss: `g-same` · `b-grace@`
+gloss: `h-inclusion~` · `b-house`
 
-*same as Azawan*
+*inside a house*
 ```
 
-**`onunu`** means *same*. (cue: 🪙 *coin*: two faces, still one thing)
+```
+`zodogol velebel hogorem bohohul.`
+
+gloss: `z-dog` · `v-sleep` · `h-inclusion~` · `b-house`
+
+*A dog sleeps inside a house.*
+```
+
+**`ogore`** here is the published metaphor *inclusion* / *inside*. (cue: ⭕ *hollow circle*: being inside the boundary)
 
 ### Turn (`/j/`): start a new speech move
 <a id="turn-j"></a>
@@ -97,13 +126,9 @@ When you start a new speech move (a statement, a question, a command, including 
 
 <a id="left-edge-order-and-sentence-boundaries"></a>
 
-At the **start** of a new turn, write `/j/` words in this order, then the rest of the sentence (the **body**: subject, object, verb, and so on):
+At the **start** of a new turn, write the **act word** (the word that says statement, question, or command) when you write it, immediately before the body (subject, object, verb, and so on). Other `/j/` words that can sit before that act word are taught with questions.
 
-1. Who you address, if you name them (`jazawan`, `jululon`, …)
-2. *Yes* / *no* or a greeting, if you use one
-3. The **act word** (the word that says statement, question, or command), when you write it: last, immediately before the body
-
-A `/j/` after a finished body starts the **next** turn. Calling someone’s name with no following clause uses `/j/` and no act word.
+A `/j/` after a finished body starts the **next** turn.
 
 ### Speech act: statement, question, command
 <a id="speech-act-beginner"></a>
@@ -112,7 +137,7 @@ Each turn has exactly one **speech act**: whether you are stating, asking, comma
 
 The default statement word is **`jal`**. A period already means “this is a statement,” so you do not also write **`jal`** (as in the examples above).
 
-When the setting is not that default statement, write a `/j/` act word last among the opening `/j/` words, immediately before the body:
+When the setting is not that default statement, write a `/j/` act word immediately before the body:
 
 ```
 `jel vawalal.`
@@ -129,7 +154,7 @@ gloss: `j-command` · `v-walk`
 | **jel** | command / instruction | **j** ≈ jump, **e** ≈ order (do this) |
 | **jul** | prohibition: *don’t…* | **j** ≈ jump, **u** ≈ undo (take the action back) |
 
-**`jael`** (*yes* / *true*) and **`juel`** (*no* / *false*) sit at the start of the turn, or stand alone. When a clause follows *yes*, prefer **`jael …`** over **`jael jal …`**. A *…, yes?* tag is a **second turn** after a period: `zazawan vawalal. jael.`
+**`jael`** (*yes* / *true*) and **`juel`** (*no* / *false*) sit at the start of the turn, or stand alone. Two vowel letters are two beats: **`jael`** = *ja'el*. When a clause follows *yes*, prefer **`jael …`** over **`jael jal …`**. A *…, yes?* tag is a **second turn** after a period: `zodogol vawalal. jael.`
 
 ### Dependent clauses
 <a id="dependent-clauses"></a>
@@ -184,14 +209,14 @@ After a statement, question, or command, you may keep going **without** starting
 
 Only the first turn (or a default statement body) chooses the setting. Do not write **`jal`** on the continued stretch: the setting is already chosen.
 
-A word that glues two sentences (*therefore*, *however*, …) is an `/x/` **linker**:
+A word that glues two sentences (*therefore*, *however*, …) is an `/x/` **linker**. A period may close the first body; the linker then **starts the next written sentence** under the same speech act:
 
 ```
-`zazawan vawalal. xezazal zululon vurunul.`
+`zodogol vawalal. xezazal zagadal vurunul.`
 
-gloss: `z-grace@` · `v-walk` · `x-therefore` · `z-courage@` · `v-run`
+gloss: `z-dog` · `v-walk` · `x-therefore` · `z-cat` · `v-run`
 
-*Azawan walks. Therefore Ululon runs.*
+*A dog walks. Therefore a cat runs.*
 ```
 
 **Compare with:** `/j/` starts a **new** speech move (a new statement, question, or command). `/x/` keeps the move you already started.
@@ -201,18 +226,16 @@ gloss: `z-grace@` · `v-walk` · `x-therefore` · `z-courage@` · `v-run`
 <a id="writing-words"></a>
 <a id="part-of-speech-prefixes"></a>
 
-Prefer a published root when the English meaning matches (`dabelel` for *apple*). Use **-m** when the match is the published **metaphorical** sense (`guzumum` for *happy*). The last letter is the ending; keep using **-l** / **-m** / **-n** as the examples show.
-
 <a id="capitalization"></a>
 
 Agalan writing is **unicase**: use **lowercase** for every native letter. Capital letters appear only inside quoted foreign spelling that keeps another writing system’s casing.
 
-A **citation** is a root written **outside** a sentence slot (a list, a title, or a freestanding line with no clause). You may omit the role letter:
+In a sentence the shape is **role letter + root + ending** (`zodogol`). Outside a sentence, omit the role letter: that is a [citation](reference-suffix.md#citation-forms).
 
 <a id="citation-forms"></a>
 <a id="prefix-less-citation"></a>
 
-`odogol.` · `uzumum.` · `azawan.` · `ululon.`
+`odogol` · `uzumum` · `azawan` · `ululon`
 
 Role letters on this page:
 
@@ -244,6 +267,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *cat* | `agada` | |
 | *book* | `abogo` | |
 | *house* | `ohohu` | |
+| *inside* / *inclusion* (**-m** on `/h/`) | `ogore` | from *hollow circle*: being inside the boundary |
 | *blue* | `elulu` | |
 | *red* | `arede` | |
 | *big* (**-m**) | `ele` | from *elephant*: the huge animal |
@@ -264,10 +288,10 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 #### English → Agalan
 
-**1.** *Azawan is a dog.*
+**1.** *A dog walks.*
 
 ::: details Show answer
-`zazawan godogol.`
+`zodogol vawalal.`
 :::
 
 **2.** *A dog is blue.*
@@ -282,10 +306,10 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 `zazawan vawalal.`
 :::
 
-**4.** *Azawan sees a cat.*
+**4.** *A dog sees a cat.*
 
 ::: details Show answer
-`zazawan dagadal vejel.`
+`zodogol dagadal vejel.`
 :::
 
 **5.** *Ululon is happy.*
@@ -294,10 +318,10 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 `zululon guzumum.`
 :::
 
-**6.** *Azawan writes a book.*
+**6.** *A dog is very blue.*
 
 ::: details Show answer
-`zazawan dabogol vuwurul.`
+`zodogol gelulul welem.`
 :::
 
 **7.** *Walk!*
@@ -330,10 +354,10 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 `zazawan guzumum hurugum badorol zululon vawalal.`
 :::
 
-**12.** *Azawan walks. Therefore Ululon runs.*
+**12.** *A dog walks. Therefore a cat runs.*
 
 ::: details Show answer
-`zazawan vawalal. xezazal zululon vurunul.`
+`zodogol vawalal. xezazal zagadal vurunul.`
 :::
 
 #### Agalan → English
@@ -380,10 +404,10 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 *Is Ululon happy?*
 :::
 
-**8.** `zazawan hadazam vawalal.`
+**8.** `zodogol velebel hogorem bohohul.`
 
 ::: details Show answer
-*Azawan walks hastily.* / *Azawan hurries on foot.*
+*A dog sleeps inside a house.*
 :::
 
 **9.** `zohohul gelulul.`
@@ -404,10 +428,10 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 *Azawan walks because Ululon sleeps.*
 :::
 
-**12.** `zazawan vawalal. xezazal zululon vurunul.`
+**12.** `zodogol vawalal. xezazal zagadal vurunul.`
 
 ::: details Show answer
-*Azawan walks. Therefore Ululon runs.*
+*A dog walks. Therefore a cat runs.*
 :::
 
 ## Intermediate

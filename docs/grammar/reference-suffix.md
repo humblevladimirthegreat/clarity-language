@@ -1,6 +1,8 @@
 # Reference suffix
 
-A content word’s last letter tells the listener how to take this meaning: a new thing, a name, or something already mentioned, and whether the sense is everyday or figurative. That last letter is the **reference suffix**. You add it, together with the role letter at the start, when you use the root in a sentence.
+A content word’s last letter tells the listener how to take this meaning: a new ordinary kind, a published metaphor, or a name. That last letter is the **reference suffix**.
+
+Outside a sentence (a list, a heading, a dictionary line) you write **root + ending** with no first-letter job mark. That spelling is a **citation**.
 
 ## Beginner
 <a id="beginner"></a>
@@ -8,78 +10,66 @@ A content word’s last letter tells the listener how to take this meaning: a ne
 ### First mention, literal (`-l`)
 <a id="literal-l"></a>
 
-When you mention a kind of thing for the first time, in its everyday meaning (English *a* / *some X*), end the word with **-l**. The listener treats it as a new, ordinary instance of that kind. (cue: **l** ≈ literal)
+When you mention a kind of thing for the first time, in its everyday meaning (English *a* / *some X*), end the citation with **-l**. The listener treats it as a new, ordinary instance of that kind. (cue: **l** ≈ literal)
 
 ```
-`zodogol gelulul.`
+`odogol`
 
-gloss: `z-dog` · `g-blue`
+gloss: `dog`
 
-*A dog is blue.*
+*a dog*
 ```
 
 ### First mention, metaphor (`-m`)
 <a id="metaphor-m"></a>
 
-Sometimes the meaning you want is the published **metaphor** for that root, not the everyday picture. When you introduce that sense for the first time, end the word with **-m**. (cue: **m** ≈ metaphor)
+Sometimes the meaning you want is the published **metaphor** for that root, not the everyday picture. When you introduce that sense for the first time, end the citation with **-m**. (cue: **m** ≈ metaphor)
 
 ```
-`zululon guzumum.`
+`uzumum`
 
-gloss: `z-courage@` · `g-happy~`
+gloss: `happy~`
 
-*Ululon is happy.*
+*happy*
 ```
 
-**Compare with:** a literal first mention uses **-l** (`gelulul` *blue*). *Happy* here is the published metaphor of `uzumu`, so the adjective is **-m**. (cue: from *smile*: the face of *happy*)
+**Compare with:** a literal first mention uses **-l** (`elulul` *blue*). *Happy* here is the published metaphor of `uzumu`, so the citation is **-m**. (cue: from *smile*: the face of *happy*)
 
 ### Named (`-n`)
 <a id="named-n-beginner"></a>
 
-When the word is a **name** (this person or this place, not a kind of thing), end it with **-n**. First cases are people and places. (cue: **n** ≈ name)
+When the word is a **name** (this person or this place, not a kind of thing), end the citation with **-n**. First cases are people and places. (cue: **n** ≈ name)
 
 ```
-`zazawan vawalal.`
+`azawan`
 
-gloss: `z-grace@` · `v-walk`
+gloss: `grace@`
 
-*Azawan walks.*
+*Azawan*
 ```
 
-### Resume (`-r`)
-<a id="resume-r-beginner"></a>
+### The three endings
 
-After something is already in the conversation, you can point back to it instead of introducing it again. Use the same root and end it with **-r**. (cue: **r** ≈ resume)
-
-```
-`zazawan vawalal. zazawar velebel.`
-
-gloss: `z-grace@` · `v-walk` · `z-←grace` · `v-sleep`
-
-*Azawan walks. He/she/it sleeps.*
-```
-
-**Compare with:** the first time you name Azawan, use **-n** (`zazawan`). The next sentence that means that same person uses **-r** (`zazawar`).
-
-### The four endings
-
-The four last letters, and what each does in English, in the order you just used them:
+The last letters you just used:
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **-l** | first mention, everyday kind | *a / some X* | **l** ≈ literal |
 | **-m** | first mention, published metaphor | the metaphorical sense | **m** ≈ metaphor |
 | **-n** | this person or place as a name | a definite name | **n** ≈ name |
-| **-r** | point back to what is already in the talk | resume that same referent | **r** ≈ resume |
+
+Pointing back with **-r** is [pronouns](pronouns.md).
 
 ### Writing
+<a id="citation-forms"></a>
+<a id="prefix-less-citation"></a>
 
-Spell **role letter + root + ending** as one word (`zazawan`). When you write the root outside a sentence (a list, a heading, a dictionary line), you may leave off the role letter: that is a [citation](core.md#citation-forms) (`odogol`, `azawan`). Full writing rules: [core.md § Writing words](core.md#orthography).
+A citation is **lowercase** root + ending (`odogol`, `uzumum`, `azawan`). In a sentence you will add a first letter for the word’s job; that is [core](core.md#beginner).
 
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills on this Beginner band. Try each item before opening **Show answer**. Choose **-l** (new literal), **-m** (new metaphor), **-n** (named), or **-r** (resume). Citation items are prefix-less.
+Short drills on this Beginner band. Try each item before opening **Show answer**. Choose **-l** (new literal), **-m** (new metaphor), or **-n** (named). Every answer is a citation (no first-letter job mark).
 
 **Roots used here** (**English** is what you produce; **Cue** is optional memory, not the answer):
 
@@ -100,102 +90,102 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 #### English → Agalan
 
-**1.** *A dog is blue.*
+**1.** *a dog* (citation)
 
 ::: details Show answer
-`zodogol gelulul.`
+`odogol`
 :::
 
-**2.** *Azawan walks.*
-
-::: details Show answer
-`zazawan vawalal.`
-:::
-
-**3.** *A dog walks.*
-
-::: details Show answer
-`zodogol vawalal.`
-:::
-
-**4.** *Ululon is happy.*
-
-::: details Show answer
-`zululon guzumum.`
-:::
-
-**5.** *Azawan walks. He/she/it sleeps.*
-
-::: details Show answer
-`zazawan vawalal. zazawar velebel.`
-:::
-
-**6.** *Citation form of the name Azawan.*
+**2.** *Azawan* (name, citation)
 
 ::: details Show answer
 `azawan`
 :::
 
-**7.** *A cat sits.*
+**3.** *happy* (citation)
 
 ::: details Show answer
-`zagadal vajul.`
+`uzumum`
 :::
 
-**8.** *Uhubun writes a book.*
+**4.** *Ululon* (name, citation)
 
 ::: details Show answer
-`zuhubun dabogol vuwurul.`
+`ululon`
+:::
+
+**5.** *blue* (citation)
+
+::: details Show answer
+`elulul`
+:::
+
+**6.** *a cat* (citation)
+
+::: details Show answer
+`agadal`
+:::
+
+**7.** *walk* (citation)
+
+::: details Show answer
+`awalal`
+:::
+
+**8.** *Uhubun* (name, citation)
+
+::: details Show answer
+`uhubun`
 :::
 
 #### Agalan → English
 
-**1.** `zodogol gelulul.`
+**1.** `odogol`
 
 ::: details Show answer
-*A dog is blue.*
+*a dog* (literal kind, cited)
 :::
 
-**2.** `zazawan vawalal.`
-
-::: details Show answer
-*Azawan walks.*
-:::
-
-**3.** `zodogol vawalal.`
-
-::: details Show answer
-*A dog walks.*
-:::
-
-**4.** `zululon guzumum.`
-
-::: details Show answer
-*Ululon is happy.*
-:::
-
-**5.** `zazawan vawalal. zazawar velebel.`
-
-::: details Show answer
-*Azawan walks. He/she/it sleeps.*
-:::
-
-**6.** `azawan`
+**2.** `azawan`
 
 ::: details Show answer
 *Azawan* (name, cited)
 :::
 
-**7.** `odogol`
+**3.** `uzumum`
 
 ::: details Show answer
-*dog* (literal kind, cited)
+*happy* (metaphor, cited)
 :::
 
-**8.** `zuhubun dabogol vuwurul.`
+**4.** `ululon`
 
 ::: details Show answer
-*Uhubun writes a book.*
+*Ululon* (name, cited)
+:::
+
+**5.** `elulul`
+
+::: details Show answer
+*blue* (literal, cited)
+:::
+
+**6.** `agadal`
+
+::: details Show answer
+*a cat* (literal kind, cited)
+:::
+
+**7.** `awalal`
+
+::: details Show answer
+*walk* (cited)
+:::
+
+**8.** `uhubun`
+
+::: details Show answer
+*Uhubun* (name, cited)
 :::
 
 ## Intermediate
@@ -286,7 +276,7 @@ Resume the handle like any name. If a short letter-pronoun (through the 2nd vowe
 ### Continue (`/x/`): overview
 <a id="continue-x"></a>
 
-Beginner already used **-n** as a name on content words. On `/x/`, the last letter follows the continue family:
+Beginner used **-n** as a name on cited roots and on content words. On `/x/`, the last letter follows the continue family:
 
 | Agalan | Use | English |
 |--------|-----|---------|
@@ -299,7 +289,7 @@ Prefix-less [discourse revisers](revisers.md#discourse-revisers) use reviser end
 ### Number-word exception
 <a id="number-word-exception"></a>
 
-Beginner already used the four last letters as reference. On [number words](numbers.md), those same letters have **number-specific** meanings. After a role letter, the number marker **r** may start a cluster that only number words use ([phonology.md](phonology.md#phonotactics)).
+Beginner used **-l** / **-m** / **-n** as reference on citations. On [number words](numbers.md), those same letters (and **-r**) have **number-specific** meanings. After a role letter, the number marker **r** may start a cluster that only number words use ([phonology.md](phonology.md#phonotactics)).
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -453,6 +443,6 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 - [pronouns.md](pronouns.md): resume **-r**; special **`ugobo`** / **`edone`** / **`aha`** / **`enenu`** / **`adoro`**
 - [plurality.md](plurality.md): **-sh** after the ending
-- [core.md](core.md): role letters, writing words, [citation](core.md#citation-forms)
+- [core.md](core.md): role letters; adding a first letter to a citation
 - [spans.md](spans.md#loans): mention / opaque when the **form** or a foreign acronym is the point
 - [x-compounds.md](x-compounds.md#ordinary-compound-order): long titles as ordinary compounds

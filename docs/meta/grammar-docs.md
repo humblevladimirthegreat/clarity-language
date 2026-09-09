@@ -165,7 +165,7 @@ Prefer commas, colons, parentheses, or separate sentences over em dashes. An em 
 1. **Title + one-line job** — the English job this page teaches (learner-facing). Sibling links only when the learner will reach for that form *now* — [Compare with](#compare-with), not “this page owns / does not own” fencing.
 2. **Needs** (optional) — **rare.** Use only when the page is late and the dependency is not obvious from the [cross-doc path](learning-levels.md#cross-doc-path) (e.g. causation → joins + **`adoro`** from core Beginner; comparatives → rank joins). Label as `**Needs:**` with one short link line. Do **not** ritualize “core Beginner; reference-suffix Beginner” on every page.
 3. **`## Beginner` / `## Intermediate` / `## Advanced`** — per [learning-levels.md](learning-levels.md). Include **Advanced** only when that page has rare inventory to teach ([empty or pointless stages](#empty-stages)).
-4. Inside each stage: **concept → English job → Agalan shape → one consequence → 1–3 examples → (optional contrast) → full table if needed**. Cue in the same block or in the **Cue** column, not as the lead. Inside **Beginner**, H3 order is **dependency order for building a clause** ([Beginner stage shape](#beginner-stage-shape)), not inventory order (not “all letters, then all syntax”). Writing / citation notes are last in that stage. Later stages: [Intermediate and Advanced stage shape](#later-stage-shape). [Explain before you slogan](#explain-before-you-slogan).
+4. Inside each stage: **concept → English job → Agalan shape → one consequence → 1–3 examples → (optional contrast) → full table if needed**. Cue in the same block or in the **Cue** column, not as the lead. Inside **Beginner**, H3 order is **dependency order for this page’s job** ([Beginner stage shape](#beginner-stage-shape)), not inventory order. On clause pages that is building a clause; citation notes are last (or already taught on [reference-suffix.md](../grammar/reference-suffix.md)). Later stages: [Intermediate and Advanced stage shape](#later-stage-shape). [Explain before you slogan](#explain-before-you-slogan).
 5. Optional **See also** at the end — a few precise related forms only; no long link walls in the lead (and no lead preview of later peers — [teach now; don’t preview later](#teach-now-dont-preview-later)).
 
 Front matter that orients (psychological purpose / limits / feature criteria / benefit tour — [why-agelan.md](../grammar/why-agelan.md); grammar design / how to learn — [introduction.md](../grammar/introduction.md)) is not a learning stage. Reading order lives in the path / sidebar — not repeated as Prerequisites.
@@ -188,15 +188,17 @@ Do not open a **Beginner** section, or a later-stage H3 that teaches a **new Eng
 <a id="beginner-stage-shape"></a>
 <a id="beginner-band-shape"></a>
 
-**Grow one job at a time.** A Beginner stage opens with the **smallest clause that does this page’s English job**. Each later H3 adds **one** job (or one letter) and a worked example.
+**Grow one job at a time.** A Beginner stage opens with the **smallest form that does this page’s English job**. For clause pages that is a working sentence. For [phonology.md](../grammar/phonology.md) that is letters and cited word edges. For [reference-suffix.md](../grammar/reference-suffix.md) Beginner that is prefix-less **citation** (root + ending), not a sentence.
+
+Each later H3 adds **one** job (or one letter) and a worked example.
 
 Do **not** open Beginner with:
 
-- a complete role / paradigm / letter table
-- writing-system notes (unicase, citation / prefix-less forms, “outside a sentence”)
+- a complete role / paradigm / letter table (except phonology’s sound charts)
+- writing-system notes (unicase, citation / prefix-less forms, “outside a sentence”) on a **clause** page before a working sentence
 - a form the stage’s **translation practice does not use**, unless that form is required to **parse** an example they do use (then **one sentence**, not its own H3)
 
-**Writing meta last (or elsewhere).** How letters look (lowercase, citation heads) comes **after** a working clause, or lives on [phonology.md](../grammar/phonology.md) / a short “Writing” note at the **end** of Beginner — never above the first sentence. Teach **one** “how a word is spelled” beat on [core.md](../grammar/core.md) Beginner after the first clause; other pages do not re-teach citation.
+**Writing meta last (or elsewhere).** How letters look (lowercase) may live on [phonology.md](../grammar/phonology.md). Citation (prefix-less root + ending) is taught on [reference-suffix.md](../grammar/reference-suffix.md) Beginner. [core.md](../grammar/core.md) Beginner adds the role letter to a citation they already write. Other pages do not re-teach citation.
 
 **Do not preview this page’s later H3s.** A section must not name *turn* / *continue* / omit-`jal` (or any later job on the same page) before that section exists. Either teach the opener first, or state the current pattern as a **bare statement body** (a period already marks a statement) until Turn is taught.
 
@@ -482,7 +484,7 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 
 Before tagging a section **Beginner**, ask the [three questions](learning-levels.md#rubric-three-questions). Prefer the earlier stage when learners need the form to read ordinary examples. Dependency on another subsystem beats “feels hard.” Do not add Advanced for recap, unused-slot lists, bounce notes, or reminders — [empty or pointless stages](#empty-stages).
 
-Before shipping a **Beginner** stage, also check [Beginner stage shape](#beginner-stage-shape), [plain language](#plain-language-no-assumed-linguistics), [cues](#cues-columns) ([rubric](#cue-rubric)), and [explain before you slogan](#explain-before-you-slogan): invented terms and house shorthand defined on first use; lead unpacks job, shape, and consequence (slogan test); cue last, never as the definition, and never a caption of the emoji; first H3 is a usable clause, not a table; no Intermediate teasers; drills cover the H3s (or the H3 is one-sentence setup for a drill).
+Before shipping a **Beginner** stage, also check [Beginner stage shape](#beginner-stage-shape), [plain language](#plain-language-no-assumed-linguistics), [cues](#cues-columns) ([rubric](#cue-rubric)), and [explain before you slogan](#explain-before-you-slogan): invented terms and house shorthand defined on first use; lead unpacks job, shape, and consequence (slogan test); cue last, never as the definition, and never a caption of the emoji; first H3 is a usable form for that page (a clause on clause pages; letters or a citation on phonology / reference-suffix Beginner), not a leftover inventory table; no Intermediate teasers; drills cover the H3s (or the H3 is one-sentence setup for a drill).
 
 Before shipping **Intermediate** or **Advanced**, check [later-stage shape](#later-stage-shape): each H3 is a new job, a finished series, or rare Advanced; new-job leads unpack; inventory H3s are a pointer plus a table; hygiene and [Compare with](#compare-with) still hold; no Beginner teasers of this stage, and Intermediate does not teaser Advanced; drills cover new jobs, not every inventory row.
 

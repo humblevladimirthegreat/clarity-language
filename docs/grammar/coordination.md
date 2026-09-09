@@ -193,7 +193,7 @@ gloss: `z-tea` · `z-coffee` · `z-something`
 
 Write A and B, then `zar`: the join still ends both items, and **-r** means some member of that pair (you are not saying which).
 
-**Compare with:** on a content word, **-r** [resumes](reference-suffix.md) the last match. On a join, **-r** is an unspecified member.
+**Compare with:** on a content word, **-r** [resumes](pronouns.md) the last match. On a join, **-r** is an unspecified member.
 
 ### Vowels and endings (recap)
 <a id="join-type-vowel-series"></a>

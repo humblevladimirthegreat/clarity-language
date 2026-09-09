@@ -188,7 +188,7 @@ Endings on unmet **`xu`**, **DECISION**, and ability *can’t*.
 
 Root + ending with no role letter, outside a sentence.
 
-[Core](core.md#citation-forms)
+[Reference suffix](reference-suffix.md#citation-forms)
 
 ### Classification
 

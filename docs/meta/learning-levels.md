@@ -40,10 +40,10 @@ Read **`docs/grammar/`** only, in stage order. [why-agelan.md](../grammar/why-ag
 
 1. [why-agelan.md](../grammar/why-agelan.md) — psychological purpose, limits, feature criteria, benefit tour (not a learning stage)
 2. [introduction.md](../grammar/introduction.md) — name, grammar design, how to learn
-3. [core.md Beginner](../grammar/core.md#beginner)
-4. [vowel-series.md](../grammar/vowel-series.md#beginner) (one-screen map; not a new morph)
-5. [phonology.md Beginner](../grammar/phonology.md#beginner) (letters / word edges; optional early)
-6. [reference-suffix.md Beginner](../grammar/reference-suffix.md#beginner)
+3. [phonology.md Beginner](../grammar/phonology.md#beginner) (letters / word edges)
+4. [reference-suffix.md Beginner](../grammar/reference-suffix.md#beginner) (citation **-l** / **-m** / **-n**)
+5. [core.md Beginner](../grammar/core.md#beginner)
+6. [vowel-series.md](../grammar/vowel-series.md#beginner) (one-screen map; not a new morph)
 7. [pronouns.md](../grammar/pronouns.md#beginner) · [plurality.md](../grammar/plurality.md#beginner)
 8. [predication.md](../grammar/predication.md#beginner)
 9. [coordination.md](../grammar/coordination.md#beginner)

@@ -8,6 +8,8 @@ How to **sound out** Agalan: each letter has one reading, and word edges tell yo
 
 Read each letter the same way every time. A **syllable** is one beat with one vowel. Spell so those beats match what you say: consonants start a beat; the last consonant of a content word is where the word ends.
 
+Write native Agalan in **lowercase**. Two vowel letters in a row are two syllables (say each vowel as its own beat).
+
 ### Vowels
 
 Agalan has four vowel letters. Hold each one as its own beat.
@@ -19,35 +21,35 @@ Agalan has four vowel letters. Hold each one as its own beat.
 | **o** | /o/ | *boat* (no glide, like Spanish *no*) |
 | **a** | /ɑ/ | *father* |
 
-Two vowel letters in a row are two syllables: `jael` = *ja'el* (/ja.el/).
-
 ### Consonants
 
 A consonant starts a syllable. Prefer the **voiced** version (vocal cords buzzing) so you can hold a sung note.
 
 A voiceless stop cuts the air. You may still use the unvoiced sound as style; voiced and unvoiced are not different letters.
 
+The **Example** column is a cited root plus its last letter (not a sentence). Hear the row’s consonant inside that word.
+
 | Agalan | IPA | Cue | Unvoiced variant | Example |
 |--------|-----|-----|------------------|---------|
-| **h** | /ɦ/ | *ahead* | /h/, *hat* | `hadazam` |
-| **w** | /w/ | *we* | | `howom` |
-| **g** | /ɡ/ | *go* | /k/, *kite* | `godogol` |
-| **d** | /d/ | *do* | /t/, *toe* | `dagadal` |
-| **j** | /j/ | *yes* (Germanic *j* as in *ja*) | | `jal` |
-| **b** | /b/ | *be* | /p/, *pay* | `badorol` |
-| **z** | /z/ | *zoo* | /s/, *sea* | `zazawan` |
-| **m** | /m/ | *me* | | `hadazam` |
-| **n** | /n/ | *no* | | `zazawan` |
-| **v** | /v/ | *vie* | /f/, *fee* | `vawalal` |
-| **l** | /l/ | *lie* | | `gelulul` |
-| **r** | /ɹ/ | *red* | | `vurunul` |
-| **x** | /ʒ/ | *vision* (the *si*) | /ʃ/, *shy* | `xezazal` |
+| **h** | /ɦ/ | *ahead* | /h/, *hat* | `adazam` |
+| **w** | /w/ | *we* | | `owom` |
+| **g** | /ɡ/ | *go* | /k/, *kite* | `odogol` |
+| **d** | /d/ | *do* | /t/, *toe* | `agadal` |
+| **j** | /j/ | *yes* (Germanic *j* as in *ja*) | | `ajul` |
+| **b** | /b/ | *be* | /p/, *pay* | `abogol` |
+| **z** | /z/ | *zoo* | /s/, *sea* | `azawan` |
+| **m** | /m/ | *me* | | `uzumum` |
+| **n** | /n/ | *no* | | `azawan` |
+| **v** | /v/ | *vie* | /f/, *fee* | `awalal` |
+| **l** | /l/ | *lie* | | `elulul` |
+| **r** | /ɹ/ | *red* | | `urunul` |
+| **x** | /ʒ/ | *vision* (the *si*) | /ʃ/, *shy* | `x` |
 
 ### Word edges
 
-A content word ends with **-l** / **-m** / **-n** / **-r**. That last consonant is the audible end of the word (useful when singing leaves no pause between words). Inside the word, consonants start syllables; they do not close a syllable in the middle.
+A content word ends with a last consonant **-l** / **-m** / **-n**, or **-r**. That last consonant is the audible end of the word (useful when singing leaves no pause between words). Inside the word, consonants start syllables; they do not close a syllable in the middle.
 
-`zazawan` = *za-za-wan*. `godogol` = *go-do-gol*.
+`azawan` = *a-za-wan*. `odogol` = *o-do-gol*.
 
 ## Intermediate
 <a id="intermediate"></a>
@@ -158,7 +160,8 @@ A line that piles closed vowels, clusters, and mid-word stops is harder to susta
 
 ## See also
 
-- Writing words / orthography: [core.md](core.md#orthography)
+- Citation (root + ending, no sentence): [reference-suffix.md](reference-suffix.md)
+- Role letters / writing in a clause: [core.md](core.md#orthography)
 - Numbers (PoS+`r` exception and [digit syllables](numbers.md#digits)): [numbers.md](numbers.md)
 - Mention spans (letter as form in a clause): [spans.md](spans.md)
 - Mid-word **`x`**: [x-compounds.md](x-compounds.md)

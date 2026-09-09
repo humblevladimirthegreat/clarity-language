@@ -1,11 +1,13 @@
 # Pronouns
 
-English *he*, *she*, *it*, and *they* point back to someone or something already named. Agalan does that with **-r** on a content word: you keep the role letter for this sentence’s slot (subject, object, and so on), then enough of the earlier word’s root to pick the right person or thing. That lets you skip repeating the full name while the listener still knows who you mean.
+English *he*, *she*, *it*, and *they* point back to someone or something already named. You already write **-l** / **-m** / **-n** on a [citation](reference-suffix.md) and on content words. The remaining last letter is **-r**: keep the role letter for this sentence’s slot (subject, object, and so on), then enough of the earlier word’s root to pick the right person or thing. That lets you skip repeating the full name while the listener still knows who you mean.
 
 ## Beginner
 <a id="beginner"></a>
 
 ### Resume with **-r**
+<a id="resume-r"></a>
+<a id="resume-r-beginner"></a>
 
 After you have already named a person or thing, the next sentence can point back instead of repeating the full word. The word you point back to is the **antecedent**. The new word takes the role letter for the slot you need **now** (subject, object, and so on), then a **prefix of that word’s root**, then **-r**. The listener takes the **most recent** word whose stem matches that prefix. (cue: **-r** ≈ resume (pick up the earlier word))
 
