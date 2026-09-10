@@ -10,43 +10,35 @@ English *they* and *the Smiths* often mean a named person plus people around the
 
 Without **-x**, the word picks **one** person or thing. With **-x** after the ending, you name an **anchor plus nearby associates** (family, coworkers, unit, household, and so on). Who counts as an associate comes from the conversation and the situation; on a name it reads as *Azawan and associates*. (cue: **-x** ≈ set with the named anchor)
 
-```
-`zazawanx vawalal.`
-
-gloss: `z-Azawan-x` · `v-walk`
-
-*Azawan and associates walk.*
-```
+> `zazawanx vawalal.`
+>
+> z-Azawan-x | v-walk
+>
+> "Azawan and associates walk."
 
 When the group itself has a name or title (*Azawan and associates*, *Team Alpha*), keep **-n** and add **-x**: **-nx**.
 
 To point back to that group (or to a prior person **and** their associates), add **-x** after resume **-r**:
 
-```
-`zazawarx vajul.`
-
-gloss: `z-←Azawan-x` · `v-sit`
-
-*They (that one and associates) sit.*
-```
+> `zazawarx vajul.`
+>
+> z-←Azawan-x | v-sit
+>
+> "They (that one and associates) sit."
 
 A first mention of a **kind as a group in this situation** uses **-lx** (literal) or **-mx** (metaphorical). Bare **-l** / **-m** still introduce; **-lx** / **-mx** introduce a **group**.
 
-```
-`zagadalx vajul.`
+> `zagadalx vajul.`
+>
+> z-cat-x | v-sit
+>
+> "Some cats sit."
 
-gloss: `z-cat-x` · `v-sit`
-
-*Some cats sit.*
-```
-
-```
-`zazawan dodogolx vejel.`
-
-gloss: `z-Azawan` · `d-dog-x` · `v-see`
-
-*Azawan sees some dogs.*
-```
+> `zazawan dodogolx vejel.`
+>
+> z-Azawan | d-dog-x | v-see
+>
+> "Azawan sees some dogs."
 
 **Compare with:** English *cats* can mean a kind in general. **-lx** is a **set in this situation**.
 
@@ -62,37 +54,29 @@ gloss: `z-Azawan` · `d-dog-x` · `v-see`
 
 English *we* and *you all* do not say whether the listener is in the speaker’s group. On the speaker and listener roots, **-x** still adds associates, but the reading follows the conversation role: speaker plus that person’s people, or everyone you are talking to. The **address set** is everyone you are talking to right now (all current addressees, no speaker). Inclusive *you and I* stays **`aha`**, with no **-x**.
 
-```
-`zedonenx vawalal.`
+> `zedonenx vawalal.`
+>
+> z-listener-x | v-walk
+>
+> "You all (the addressees) walk."
 
-gloss: `z-listener-x` · `v-walk`
+> `zugobonx vajul.`
+>
+> z-speaker-x | v-sit
+>
+> "Speaker and associates (not you) sit."
 
-*You all (the addressees) walk.*
-```
+> `zululonx vajul.`
+>
+> z-Ululon-x | v-sit
+>
+> "You (Ululon) and your associates sit."
 
-```
-`zugobonx vajul.`
-
-gloss: `z-speaker-x` · `v-sit`
-
-*Speaker and associates (not you) sit.*
-```
-
-```
-`zululonx vajul.`
-
-gloss: `z-Ululon-x` · `v-sit`
-
-*You (Ululon) and your associates sit.*
-```
-
-```
-`zahan vawalal.`
-
-gloss: `z-interlocutors` · `v-walk`
-
-*We (you and I) walk.*
-```
+> `zahan vawalal.`
+>
+> z-interlocutors | v-walk
+>
+> "We (you and I) walk."
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -245,13 +229,11 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 English *Azawan and them* does not say who belongs. After an associative noun, membership is **open** unless you mark it. Write an explicit [join](coordination.md) (or *except*) when the list matters; otherwise the listener uses the recently named cohort, then the scene’s institution (this meeting, this household). That lets you leave the set vague when it does not matter, and pin it when it does.
 
-```
-`zazawanx vawalal.`
-
-gloss: `z-Azawan-x` · `v-walk`
-
-*Azawan and associates walk.*
-```
+> `zazawanx vawalal.`
+>
+> z-Azawan-x | v-walk
+>
+> "Azawan and associates walk."
 
 If the wrong reading would matter, mark co-agency with **`aha`** or a join; mark “not you” with speaker or name **-x**, or a join that omits the listener (`ul dedonen` = associates minus the listener).
 
@@ -269,13 +251,11 @@ For the **address set**, take everyone in this turn’s vocative cluster, plus a
 
 English *they walk* does not say whether it was one shared outing. Put **-x** on the **verb** (after its ending) when the event is **one shared act**. A set subject with a singular verb leaves together vs separately open. Noun **-x** still names **who**; verb **-x** names **how** the doing is structured.
 
-```
-`zazawanx vuzunulx.`
-
-gloss: `z-Azawan-x` · `v-sing-x`
-
-*They (Azawan and associates) sing as one outing.*
-```
+> `zazawanx vuzunulx.`
+>
+> z-Azawan-x | v-sing-x
+>
+> "They (Azawan and associates) sing as one outing."
 
 | Agalan | Use | English |
 |--------|-----|---------|
@@ -301,13 +281,11 @@ gloss: `z-Azawan-x` · `v-sing-x`
 
 English *the boxes are heavy* can mean each box or the pile. Put **-x** on the **adjective** (after its ending) when the property holds of the **host set as one unit**. A set host with a singular adjective leaves each-member vs one-pile open. That is not “more red.”
 
-```
-`zulebolx garagamx.`
-
-gloss: `z-file-box-x` · `g-heaviness-x`
-
-*The file-boxes are heavy as a pile.*
-```
+> `zulebolx garagamx.`
+>
+> z-file-box-x | g-heaviness-x
+>
+> "The file-boxes are heavy as a pile."
 
 | Agalan | Use | English |
 |--------|-----|---------|
@@ -336,13 +314,11 @@ For *red books*, put **-x** on the **noun**; keep color and trait singular on `/
 
 To call a group at the start of a turn, put **-x** on the vocative (`/j/`) after its ending, the same way you mark associates on a noun. That names who you are talking to as an associative group.
 
-```
-`jagadalx.`
-
-gloss: `j-cat-x`
-
-*Hey, cats!*
-```
+> `jagadalx.`
+>
+> j-cat-x
+>
+> "Hey, cats!"
 
 | Agalan | Use | English |
 |--------|-----|---------|

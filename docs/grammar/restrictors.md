@@ -10,53 +10,43 @@ Use these words when you want to say **when** a claim counts: *only when raining
 
 A restrictor names the **occasions** (times or cases) in which the verb claim is true. Put those occasion words immediately **before** the restrictor, in the adverb slot (`/h/`); the restrictor sits last and closes the row from the right, the way a join closes a list. Closed **-l** means this is the full set of times you stand behind. (cue: **a** ≈ add, an inventory of times.)
 
-```
-`zazawan vawalal hanunul hal.`
-
-gloss: `z-Azawan` · `v-walk` · `h-rain` · `h-only-when`
-
-*Azawan walks only when raining.*
-```
+> `zazawan vawalal hanunul hal.`
+>
+> z-Azawan | v-walk | h-rain | h-only-when
+>
+> "Azawan walks only when raining."
 
 With **no** occasion listed, the inventory is empty, so the claim never counts: bare **`hal`** is *never*. (cue: empty **a** ≈ add inventory plus closed **-l**.)
 
-```
-`zululon vawalal hal.`
-
-gloss: `z-Ululon` · `v-walk` · `h-never`
-
-*Ululon never walks.*
-```
+> `zululon vawalal hal.`
+>
+> z-Ululon | v-walk | h-never
+>
+> "Ululon never walks."
 
 **Compare with:** two manner adverbs in a row with no restrictor still both apply (*quickly and quietly*). English *and* there just stacks descriptions on the same walk; it does not pick *when* the walk counts. A restrictor answers **when the verb claim counts**. Packaging members as one list still uses a [join](coordination.md).
 
-```
-`zazawan vawalal hadazam howom.`
-
-gloss: `z-Azawan` · `v-walk` · `h-haste` · `h-quietude`
-
-*Azawan walks quickly and quietly.*
-```
+> `zazawan vawalal hadazam howom.`
+>
+> z-Azawan | v-walk | h-haste | h-quietude
+>
+> "Azawan walks quickly and quietly."
 
 ### Always (`hual`)
 
 To say the verb claim counts at every time, or at every time except some listed ones, use **`hual`** (open **`huam`** if you want a hedge: *as far as you can tell*). Bare **`hual`** is *always*; with occasion words before it, those times are the exceptions (*always except when…*). (cue: **u** ≈ undo then **a** ≈ add.)
 
-```
-`zuhubun vuzunul hual.`
+> `zuhubun vuzunul hual.`
+>
+> z-Uhubun | v-sing | h-always
+>
+> "Uhubun always sings."
 
-gloss: `z-Uhubun` · `v-sing` · `h-always`
-
-*Uhubun always sings.*
-```
-
-```
-`zazawan vawalal hanunul hual.`
-
-gloss: `z-Azawan` · `v-walk` · `h-rain` · `h-always-except`
-
-*Azawan always walks except when raining.*
-```
+> `zazawan vawalal hanunul hual.`
+>
+> z-Azawan | v-walk | h-rain | h-always-except
+>
+> "Azawan always walks except when raining."
 
 ### Sometime / anytime / sometime else
 
@@ -68,33 +58,27 @@ You can name *sometime*, *anytime*, or *sometime else* without listing a content
 | **`hor`** | unspecified member of a one-choice time menu | *anytime* | **o** ≈ one |
 | **`hur`** | unspecified leftover time | *sometime else* | **u** ≈ undo |
 
-```
-`zululon vurunul har.`
+> `zululon vurunul har.`
+>
+> z-Ululon | v-run | h-sometime
+>
+> "Ululon runs sometime."
 
-gloss: `z-Ululon` · `v-run` · `h-sometime`
-
-*Ululon runs sometime.*
-```
-
-```
-`zuhubun vawalal hor.`
-
-gloss: `z-Uhubun` · `v-walk` · `h-anytime`
-
-*Uhubun walks anytime.*
-```
+> `zuhubun vawalal hor.`
+>
+> z-Uhubun | v-walk | h-anytime
+>
+> "Uhubun walks anytime."
 
 ### On the previous adjective (`/w/`)
 
 Sometimes you want to limit the **adjective you just wrote** (*never happy*), not the whole verb claim. Use the same vowels with letter **`w`** (`wal`). `/h/` still limits the clause; `/w/` only looks back at that adjective.
 
-```
-`zazawan guzumum wal.`
-
-gloss: `z-Azawan` · `g-happy` · `w-never`
-
-*Azawan is never happy.*
-```
+> `zazawan guzumum wal.`
+>
+> z-Azawan | g-happy | w-never
+>
+> "Azawan is never happy."
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -110,13 +94,11 @@ Open **-m** leaves other occasions possible: *when raining, among other times*, 
 | **`hal` / `ham`** | listed times; empty list is *never* | *only when…* / *when…, among other occasions* · bare *never* / *never, as far as you can tell* | **a** ≈ add |
 | **`hual` / `huam`** | every time minus listed exceptions | *always except when…* · bare *always* / *always, as far as you can tell* | **u** ≈ undo then **a** ≈ add |
 
-```
-`zazawan velebel hanunul hunugul ham.`
-
-gloss: `z-Azawan` · `v-sleep` · `h-rain` · `h-night` · `h-when.open`
-
-*Azawan sleeps when raining and at night, among other times.*
-```
+> `zazawan velebel hanunul hunugul ham.`
+>
+> z-Azawan | v-sleep | h-rain | h-night | h-when.open
+>
+> "Azawan sleeps when raining and at night, among other times."
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -247,13 +229,11 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 English *when* / *if* can name a **following sentence** (*if Azawan walks*). Write that as an adverb plus extra noun: `/h/` plus `/b/` [**`adoro`**](pronouns.md#special-pronouns) ([dependent clauses](core.md#dependent-clauses)). The main sentence stops after **`adoro`**; the next sentence is the content. Restrictors still list **phrase** times or cases immediately before the restrictor. Use a restrictor when the occasions are words in the adverb slot; use **`adoro`** when the occasion is another full clause.
 
-```
-`zuhubun vuzunul hadorom zazawan vawalal badorol.`
-
-gloss: `z-Uhubun` · `v-sing` · `h-next-clause` · `z-Azawan` · `v-walk` · `b-next-clause`
-
-*Uhubun sings if Azawan walks.*
-```
+> `zuhubun vuzunul hadorom zazawan vawalal badorol.`
+>
+> z-Uhubun | v-sing | h-next-clause | z-Azawan | v-walk | b-next-clause
+>
+> "Uhubun sings if Azawan walks."
 
 Each listed restrictor occasion is a simple `/h/` or `/w/` content word, or a complex unit (`/h/` plus `/b/`, or contiguous `/w/` material).
 
@@ -265,21 +245,17 @@ Each listed restrictor occasion is a simple `/h/` or `/w/` content word, or a co
 
 Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *sometime* / *anytime* / *sometime else* (`har` / `hor` / `hur`). The rest of the same vowel map names exclusive, inclusive, *not when*, ranked, and leftover readings. `/w/` uses the same vowels on the previous adjective (`wal` / `wam` / `wual` / `wuam` / `war` / `wor` / `wur`, and the rows below). One restrictor chain is one `/h/` unit (or one `/w/` stack on its host).
 
-```
-`zazawan vawalal hanunul hunugul hol.`
+> `zazawan vawalal hanunul hunugul hol.`
+>
+> z-Azawan | v-walk | h-rain | h-night | h-either-when
+>
+> "Azawan walks either when raining or at night (not both)."
 
-gloss: `z-Azawan` · `v-walk` · `h-rain` · `h-night` · `h-either-when`
-
-*Azawan walks either when raining or at night (not both).*
-```
-
-```
-`zululon velebel hanunul hozowol haol.`
-
-gloss: `z-Ululon` · `v-sleep` · `h-rain` · `h-snow` · `h-when-or`
-
-*Ululon sleeps when raining and/or when snowing.*
-```
+> `zululon velebel hanunul hozowol haol.`
+>
+> z-Ululon | v-sleep | h-rain | h-snow | h-when-or
+>
+> "Ululon sleeps when raining and/or when snowing."
 
 #### Set / invert / inclusive
 
@@ -302,13 +278,11 @@ Closed **`hel`** ranks **when** it matters. **`hal`** still means *only when* th
 | **`hael` / `haem`** | equal frequency among occasions | *as often as* / *equally when A and when B* | **a** ≈ add + **e** ≈ order |
 | **`hoel` / `hoem`** | fallback occasions | *if A, else if B…* | **o** ≈ one + **e** ≈ order |
 
-```
-`zazawan vawalal hamubum hozorem hel.`
-
-gloss: `z-Azawan` · `v-walk` · `h-emergency` · `h-convenience` · `h-preferably-when`
-
-*Azawan walks preferably in an emergency rather than for convenience.*
-```
+> `zazawan vawalal hamubum hozorem hel.`
+>
+> z-Azawan | v-walk | h-emergency | h-convenience | h-preferably-when
+>
+> "Azawan walks preferably in an emergency rather than for convenience."
 
 #### Unspecified-member (`-r`)
 
@@ -321,13 +295,11 @@ Statement readings below. Asking *when*: [questions.md](questions.md#when).
 | **`hur`** | unspecified leftover time | *sometime other than these* | *sometime else* | **u** ≈ undo + **-r** |
 | **`hael`** | equal frequency frame | *as often as among these* / *equally when these* | *equally often* / *tied frequency frame* | **a** ≈ add + **e** ≈ order |
 
-```
-`zazawan guzumum wanunul wal.`
-
-gloss: `z-Azawan` · `g-happy` · `w-rain` · `w-only-when`
-
-*Azawan is happy only when raining.*
-```
+> `zazawan guzumum wanunul wal.`
+>
+> z-Azawan | g-happy | w-rain | w-only-when
+>
+> "Azawan is happy only when raining."
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>

@@ -12,13 +12,11 @@ Put a number word on a **label**, a **clock or date**, a **unit amount**, a **fr
 
 English needs a **code**: a phone, room, channel, or serial, not a counted amount. Write that with digit-string marker **`ro`** (written **`_`**). Leave exponents off, and group digits in threes when they are present. You can then drop the code into whatever slot the clause needs (`/d/` `/b/` `/ɡ/`).
 
-```
-`zazawan d_555,123,4567 vejel.`
-
-gloss: `z-Azawan` · `d-_555,123,4567` · `v-see`
-
-*Azawan sees 555-123-4567.*
-```
+> `zazawan d_555,123,4567 vejel.`
+>
+> z-Azawan | d-_555,123,4567 | v-see
+>
+> "Azawan sees 555-123-4567."
 
 Ending is usually **-l** (exact label); **-n** for an official designation; **-r** to resume a prior code. Digitless `d=_` / `g=_` and [digitless](numbers.md#digitless) `…_` mean *some code* / an unspecified label.
 
@@ -31,13 +29,11 @@ For a code as a when-frame, use a host relation + `/b/` (`/h/` *on* + `b_7` *cha
 
 English names a **clock time** or a **calendar date**. Both reuse digit-string grammar as bare `/h/`. Clock takes marker **`ro`** (spoken **`hro`**, written `h_…`). Date takes calendar-ordinal **`oe`** (spoken **`hroe`**, written `h_#…`). Fields are read by position, so the word already says which number is the hour or the month.
 
-```
-`h_15,30 zazawan vawalal.`
-
-gloss: `h-_15,30` · `z-Azawan` · `v-walk`
-
-*At 15:30 Azawan walks.*
-```
+> `h_15,30 zazawan vawalal.`
+>
+> h-_15,30 | z-Azawan | v-walk
+>
+> "At 15:30 Azawan walks."
 
 Clock and date together:
 
@@ -61,13 +57,11 @@ Endings: **-l** exact; **-m** fuzzy (*around 15:30*); **-n** conventional schedu
 
 English names **how much of a unit** (*two meters*, *three hours*). The unit is a lexicon noun in the slot you need; the amount is an ordinary `/ɡ/` scalar on that unit. Speech uses published dimension / quantity roots, not Latin abbreviations (`m`, `kg`, `s`).
 
-```
-`zazawan burulel g+2 vawalal.`
-
-gloss: `z-Azawan` · `b-measurement` · `g-+2` · `v-walk`
-
-*Azawan walks two meters.*
-```
+> `zazawan burulel g+2 vawalal.`
+>
+> z-Azawan | b-measurement | g-+2 | v-walk
+>
+> "Azawan walks two meters."
 
 | Agalan | Use | English |
 |--------|-----|---------|
@@ -107,13 +101,11 @@ Keep the **base** unit. Put the power of ten on the **amount** (`e3` / `e-3` / a
 
 **Measured differentials** (*two meters taller*) put that measure noun phrase as the **single `/b/`** on the SHARED scale adjective of a [comparative](comparatives.md#measured-differentials):
 
-```
-`zazawan zululon zel gomonam burulel g+2.`
-
-gloss: `z-Azawan` · `z-Ululon` · `z-rank` · `g-challenging` · `b-measurement` · `g-+2`
-
-*Azawan is two meters more challenging than Ululon.*
-```
+> `zazawan zululon zel gomonam burulel g+2.`
+>
+> z-Azawan | z-Ululon | z-rank | g-challenging | b-measurement | g-+2
+>
+> "Azawan is two meters more challenging than Ululon."
 
 Vague degree uses `/w/` on the scale (`zel wogegal gomonam …`) with no unit. Duration and other clause measures use the same unit+amount habit in whatever slot the relation needs.
 
@@ -126,13 +118,11 @@ Vague degree uses `/w/` on the scale (`zel wogegal gomonam …`) with no unit. D
 
 English *from 3 to 5* / *between 3 and 5* names a **band on a line**. Write two number endpoints inside a [phrase fence](coordination.md), then a **SHARED continuum** `/ɡ/` that names the line (time, price, measure, …). That `/ɡ/` is the same SHARED slot [comparatives](comparatives.md) use; here it names a **dimension / quantity continuum**, not a ranking of people. The continuum is what makes the fence a range.
 
-```
-`z+3 z+5 zel gumel.`
-
-gloss: `z-+3` · `z-+5` · `z-rank` · `g-time`
-
-*from 3 to 5 on time*
-```
+> `z+3 z+5 zel gumel.`
+>
+> z-+3 | z-+5 | z-rank | g-time
+>
+> "from 3 to 5 on time."
 
 All three pieces:
 
@@ -164,13 +154,11 @@ Clock / date ranges: SHARED continuum **`gumel`** (or a host relation + `/b/`) w
 
 English *25% of the cats* names a **portion of a whole**. Close a **count** (`ra` / `ru`) with **`jo`**. That closer is parallel to fraction closer **`je`**. The whole is the noun the percent grades, same `/ɡ/` slot as a count (`zagadalx g+3` = *three cats*).
 
-```
-`zagadalx g+25%.`
-
-gloss: `z-cat-assoc` · `g-+25jo`
-
-*25% of the cats*
-```
+> `zagadalx g+25%.`
+>
+> z-cat-assoc | g-+25jo
+>
+> "25% of the cats."
 
 | Agalan | Use | English |
 |--------|-----|---------|
@@ -226,13 +214,11 @@ Titled twins of the stock units: `burulexrawon`, `baragaxrawon`, `baneloxrawon`,
 
 English *less than 5* / *greater than 5* is a **bound**, not a two-endpoint band. When the **only** member of a [rank join](coordination.md#ranked-conjunction-e) fence (**`e`** / **`ue`**, and their open / named twins) is a compatible number word, that number is an extremum on the line. SHARED continuum is optional: absent = implicit numeric line; present = that named line (`z+5 zel gumel` = *time \< 5*). Special values such as +∞ use [digitless exponents](numbers.md#digitless-exponents) inside the number word (`g+e`).
 
-```
-`z+5 zel.`
-
-gloss: `z-+5` · `z-rank`
-
-*less than 5*
-```
+> `z+5 zel.`
+>
+> z-+5 | z-rank
+>
+> "less than 5."
 
 | Agalan | Use | English |
 |--------|-----|---------|

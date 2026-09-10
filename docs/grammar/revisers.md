@@ -18,13 +18,11 @@ You already named something (A), and you want English *including B* in that same
 A REV B
 ```
 
-```
-`zodogolx am zagadal.`
-
-gloss: `z-dog-x` · `including.open` · `z-cat`
-
-*Dogs, including a cat among others.*
-```
+> `zodogolx am zagadal.`
+>
+> z-dog-x | including.open | z-cat
+>
+> "Dogs, including a cat among others."
 
 **Compare with:** packaging two members as a list uses a [join](coordination.md) (`zodogol zagadal zam` *a dog and a cat*). A reviser **repairs** A; it does not name a pair.
 
@@ -32,29 +30,23 @@ gloss: `z-dog-x` · `including.open` · `z-cat`
 
 The same `A REV B` shape also covers *or rather*, *instead*, and *except*. Keep both sides in the same clause role, and change the [vowel](vowel-series.md) to pick the repair. You keep A's slot and change how B relates to it. (cue: **e** ≈ order, **o** ≈ one, **u** ≈ undo.)
 
-```
-`zazawan guzumum el gelem.`
+> `zazawan guzumum el gelem.`
+>
+> z-Azawan | g-happy | rather | g-big
+>
+> "Azawan is happy, or rather, big."
 
-gloss: `z-Azawan` · `g-happy` · `rather` · `g-big`
+> `dadedal ol dogovel.`
+>
+> d-tea | instead | d-coffee
+>
+> "Coffee instead of tea."
 
-*Azawan is happy, or rather, big.*
-```
-
-```
-`dadedal ol dogovel.`
-
-gloss: `d-tea` · `instead` · `d-coffee`
-
-*Coffee instead of tea.*
-```
-
-```
-`zahadal ul zazawan.`
-
-gloss: `z-team` · `except` · `z-Azawan`
-
-*The team except Azawan.*
-```
+> `zahadal ul zazawan.`
+>
+> z-team | except | z-Azawan
+>
+> "The team except Azawan."
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -72,13 +64,11 @@ For every reviser you also choose how complete the right-hand side is. **-l** me
 | **-l** (`al` / `el` / `ol` / `ul`) | B is the only one you stand behind | closed | **l** ≈ locked |
 | **-m** (`am` / `em` / `om` / `um`) | B among others | open | **m** ≈ maybe more |
 
-```
-`zodogolx al zagadal.`
-
-gloss: `z-dog-x` · `including` · `z-cat`
-
-*Dogs, including only a cat.*
-```
+> `zodogolx al zagadal.`
+>
+> z-dog-x | including | z-cat
+>
+> "Dogs, including only a cat."
 
 ### Glue this sentence to prior talk
 <a id="discourse-revisers"></a>
@@ -92,29 +82,23 @@ Sometimes the thing you want to tweak is not a phrase inside this sentence, but 
 | `ol …` | this claim replaces prior | *Instead, …* | **o** ≈ one |
 | `ul …` | exception to the prior frame | *Except, …* | **u** ≈ undo |
 
-```
-`al zazawan vawalal.`
+> `al zazawan vawalal.`
+>
+> additionally | z-Azawan | v-walk
+>
+> "Additionally, Azawan walks."
 
-gloss: `additionally` · `z-Azawan` · `v-walk`
+> `ol zululon velebel.`
+>
+> instead | z-Ululon | v-sleep
+>
+> "Instead, Ululon sleeps."
 
-*Additionally, Azawan walks.*
-```
-
-```
-`ol zululon velebel.`
-
-gloss: `instead` · `z-Ululon` · `v-sleep`
-
-*Instead, Ululon sleeps.*
-```
-
-```
-`el zuhubun godogol.`
-
-gloss: `in.other.words` · `z-Uhubun` · `g-dog`
-
-*In other words, Uhubun is a dog.*
-```
+> `el zuhubun godogol.`
+>
+> in.other.words | z-Uhubun | g-dog
+>
+> "In other words, Uhubun is a dog."
 
 **Compare with:** *and then* between full sentences is clause **`xan`**. *However* / *therefore* use [continue](core.md#continue-x) linkers (`x…`). A fronted reviser only changes how this sentence attaches to what you already said.
 
@@ -265,36 +249,30 @@ Beginner already used closed **-l** and open **-m** for how complete B is, or ho
 | **o** (*instead*) | `ol`: this claim fully replaces prior | `om`: a replacement claim | `on`: stock *Instead,* |
 | **u** (*except*) | `ul`: sole exception to prior frame | `um`: exception (maybe among others) | `un`: named / conventional exception frame |
 
-```
-`zahadal ul zazawan.`
-
-gloss: `z-team` · `except` · `z-Azawan`
-
-*The team except Azawan.*
-```
+> `zahadal ul zazawan.`
+>
+> z-team | except | z-Azawan
+>
+> "The team except Azawan."
 
 **Compare with:** *no dog* / *not X* uses a prefixed [join](coordination.md#join-series-ending-shared) (`zodogol zul`). Prefix-less **`ul`** excepts a right-hand side in the same slot.
 
-```
-`zodogol zul.`
-
-gloss: `z-dog` · `z-not`
-
-*No dog.*
-```
+> `zodogol zul.`
+>
+> z-dog | z-not
+>
+> "No dog."
 
 ### Parallel chains
 <a id="revision-chains-parallel-on-a"></a>
 
 You already repair one named A with a single `A REV B`. To stack several repairs on that **same** A (including B and except C, or two includings), add more revisers after the first right-hand side: `A REV₁ B REV₂ C`. Each reviser still applies to A in parallel, with its own side; vowels and endings may mix. English *including (B except C)* would nest C under B instead.
 
-```
-`zahadal am zazawan ul zululon.`
-
-gloss: `z-team` · `including.open` · `z-Azawan` · `except` · `z-Ululon`
-
-*The team, including Azawan, except only Ululon.*
-```
+> `zahadal am zazawan ul zululon.`
+>
+> z-team | including.open | z-Azawan | except | z-Ululon
+>
+> "The team, including Azawan, except only Ululon."
 
 | Chain | English |
 |-------|---------|
@@ -306,13 +284,11 @@ gloss: `z-team` · `including.open` · `z-Azawan` · `except` · `z-Ululon`
 
 Same-role includes the **verb phrase**:
 
-```
-`vurunul om vawalal.`
-
-gloss: `v-run` · `instead.open` · `v-walk`
-
-*Ran, with walk as a replacement.*
-```
+> `vurunul om vawalal.`
+>
+> v-run | instead.open | v-walk
+>
+> "Ran, with walk as a replacement."
 
 **Compare with:** packaging *(dog instead of cat) and bird* uses a [list join](coordination.md) after the revision chain (`zodogol ol zagadal zubudul zam`). The chain is tighter than the join: it eats following same-role sides paired by **REV**.
 
@@ -332,13 +308,11 @@ One discourse reviser per opener (no parallel discourse chains on one turn marke
 
 On a non-initial conjunct under a [clause `/x/` fence](coordination.md#clause-level-coordination), the reviser sits immediately before that conjunct’s body: `A al B xam` → *A and additionally B*. Before an **`/x/`** linker (*therefore*, *however*, …), it scopes the linker+body stretch: `al xezazal …` → *Additionally, therefore …*. Prefer plain `al …` or plain `xezazal …` when one cue is enough.
 
-```
-`jazawan al zululon vawalal.`
-
-gloss: `j-Azawan` · `additionally` · `z-Ululon` · `v-walk`
-
-*Azawan: additionally, Ululon walks.* (vocative, then discourse reviser)
-```
+> `jazawan al zululon vawalal.`
+>
+> j-Azawan | additionally | z-Ululon | v-walk
+>
+> "Azawan: additionally, Ululon walks." (vocative, then discourse reviser)
 
 **Related form:** packaging a list uses prefixed [joins](coordination.md#join-series-ending-shared) (`zal` / `zam` / `val` …). Longer prefix-less **root + ending** outside a sentence (`odogol`) is [citation](core.md#citation-forms).
 
@@ -472,33 +446,27 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 Use **-n** when A is a labeled set or the swap is stock wording, not a one-off repair.
 
-```
-`zaredelx an zelulul.`
+> `zaredelx an zelulul.`
+>
+> z-red-x | including.named | z-blue
+>
+> "The reds (and associates), including blue in that named set."
 
-gloss: `z-red-x` · `including.named` · `z-blue`
-
-*The reds (and associates), including blue in that named set.*
-```
-
-```
-`dadedal on dogovel.`
-
-gloss: `d-tea` · `instead.named` · `d-coffee`
-
-*The stock tea-to-coffee swap.*
-```
+> `dadedal on dogovel.`
+>
+> d-tea | instead.named | d-coffee
+>
+> "The stock tea-to-coffee swap."
 
 ### Exclusive high on a number range
 
 Inside a [measure range](numbers-applied.md#ranges), prefix-less **`ul`** on the high endpoint means *up to but not including* that number.
 
-```
-`z+3 ul z+5 zal gurulel.`
-
-gloss: `z-three` · `except` · `z-five` · `z-and` · `g-measurement`
-
-*[3, 5)* on the length continuum.
-```
+> `z+3 ul z+5 zal gurulel.`
+>
+> z-three | except | z-five | z-and | g-measurement
+>
+> "[3, 5) on the length continuum."
 
 ## See also
 

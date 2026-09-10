@@ -13,25 +13,21 @@ When English would use *I think* over the whole sentence, Agalan keeps the ordin
 
 The walking or sleeping is still the event. Without the `/h/` word you are just reporting the scene. The same root can still be ordinary content (`zodohol` *a thought*; `vodohol` *to think* as a deliberate event). (cue: 💭 *thought*: a balloon over the scene)
 
-```
-`zazawan hodohom vawalal.`
-
-gloss: `z-Azawan` · `h-COMMENT-soft` · `v-walk`
-
-*I think Azawan walks.* — commentary held lightly (default)
-```
+> `zazawan hodohom vawalal.`
+>
+> z-Azawan | h-COMMENT-soft | v-walk
+>
+> "I think Azawan walks." — commentary held lightly (default)
 
 **Not the same job as:** `vodohol` *to think* as a deliberate event (`zazawan vodohol.` *Azawan thinks.*).
 
 The same `/h/` word can sit on a yes/no ask:
 
-```
-`jol zuhubun hodohom velebel.`
-
-gloss: `j-yes` · `z-Uhubun` · `h-COMMENT-soft` · `v-sleep`
-
-*Does Uhubun sleep?* — asked with light commentary
-```
+> `jol zuhubun hodohom velebel.`
+>
+> j-yes | z-Uhubun | h-COMMENT-soft | v-sleep
+>
+> "Does Uhubun sleep?" — asked with light commentary
 
 ### Hold endings (COMMENT)
 <a id="comment-hold"></a>
@@ -46,21 +42,17 @@ On **`odoho`**, **-l / -m / -r** say how committed you are to that *I think*. **
 
 When unsure, prefer **`hodohom`**.
 
-```
-`zuhubun hodohol vuzunul.`
+> `zuhubun hodohol vuzunul.`
+>
+> z-Uhubun | h-COMMENT-fused | v-sing
+>
+> "Uhubun sings — and that take is the scene."
 
-gloss: `z-Uhubun` · `h-COMMENT-fused` · `v-sing`
-
-*Uhubun sings — and that take is the scene.*
-```
-
-```
-`zululon hodohor vawalal.`
-
-gloss: `z-Ululon` · `h-COMMENT-return` · `v-walk`
-
-*I think Ululon walks — and step back from that take.*
-```
+> `zululon hodohor vawalal.`
+>
+> z-Ululon | h-COMMENT-return | v-walk
+>
+> "I think Ululon walks — and step back from that take."
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -193,21 +185,17 @@ English often names *how you know* a claim about the world (what happened, what 
 
 There is **no past / future letter** on the verb. Some channels already locate the event because of how you know: **LIVE** is observation while the scene is still in view; **WITNESSED** is memory of an observation (retrieval); **RECORDED** is playback of a capture. [PREDICT](plan-decision.md#predict) / [PLAN](plan-decision.md#plan-predict) look ahead. Other evidentials do not move the event; add a when-frame ([*before* / *after* / *while*](core.md#dependent-clauses), a clock or date, recency) when inference or hearsay needs a different time than this stretch.
 
-```
-`zazawan hadezem vawalal.`
+> `zazawan hadezem vawalal.`
+>
+> z-Azawan | h-LIVE | v-walk
+>
+> "Azawan walks — live / from the scene."
 
-gloss: `z-Azawan` · `h-LIVE` · `v-walk`
-
-*Azawan walks — live / from the scene.*
-```
-
-```
-`zazawan huvuvum vawalal.`
-
-gloss: `z-Azawan` · `h-WITNESSED` · `v-walk`
-
-*Azawan walks — from memory (a past observation).*
-```
+> `zazawan huvuvum vawalal.`
+>
+> z-Azawan | h-WITNESSED | v-walk
+>
+> "Azawan walks — from memory (a past observation)."
 
 **For *I think*, use:** [COMMENT](#comment) (`odoho`). This inventory is *how you know a world-claim*.
 
@@ -224,21 +212,17 @@ gloss: `z-Azawan` · `h-WITNESSED` · `v-walk`
 
 Pick one evidential **root** for how you know.
 
-```
-`zululon heregom velebel.`
+> `zululon heregom velebel.`
+>
+> z-Ululon | h-RECORDED | v-sleep
+>
+> "Ululon sleeps — on record."
 
-gloss: `z-Ululon` · `h-RECORDED` · `v-sleep`
-
-*Ululon sleeps — on record.*
-```
-
-```
-`zululon heraram vuwurul.`
-
-gloss: `z-Ululon` · `h-TOLD` · `v-write`
-
-*Ululon writes — so they say.*
-```
+> `zululon heraram vuwurul.`
+>
+> z-Ululon | h-TOLD | v-write
+>
+> "Ululon writes — so they say."
 
 **Not the same job as:** seeing as an event uses ordinary **`vejel`**. **`hadezem`** is the *how you know* channel (the walk is in view now), not the verb *see*. A feeling like fear or hope uses [emotion compose](special-vocabulary.md#emotion-compose) (value + ACT + LOCUS). **`heherem`** is a channel of *knowing*, not that stack. **`heraram`** is someone said so about the claim; hearing a door as an event is ordinary `/v/`.
 
@@ -263,13 +247,11 @@ gloss: `z-Ululon` · `h-TOLD` · `v-write`
 
 English sometimes frames the whole clause as play: *as if*, *for the sake of argument*, *this is only in the mind*. Agalan keeps the ordinary verb and adds the closed `/h/` word **`adade`**. That word takes the scene off the real ledger, so you can tell a pretensive walk without turning *walk* into a special pretend-verb. (cue: 🎭 *theater*: a stage mask; the real tally stays offstage)
 
-```
-`zazawan hadadem vawalal.`
-
-gloss: `z-Azawan` · `h-NOTIONAL-soft` · `v-walk`
-
-*As if Azawan walks.* — notional framing held lightly (default)
-```
+> `zazawan hadadem vawalal.`
+>
+> z-Azawan | h-NOTIONAL-soft | v-walk
+>
+> "As if Azawan walks." — notional framing held lightly (default)
 
 **For *I think / I imagine*, use:** [COMMENT](#comment).
 
@@ -288,21 +270,17 @@ Beginner already used **-l / -m / -r** hold on **`odoho`**. The same map sits on
 
 When unsure, prefer **`hadadem`**.
 
-```
-`zuhubun hadadel vuzunul.`
+> `zuhubun hadadel vuzunul.`
+>
+> z-Uhubun | h-NOTIONAL-fused | v-sing
+>
+> "As if Uhubun sings." — immersed in the imagined scene
 
-gloss: `z-Uhubun` · `h-NOTIONAL-fused` · `v-sing`
-
-*As if Uhubun sings.* — immersed in the imagined scene
-```
-
-```
-`zululon hadader vuwurul.`
-
-gloss: `z-Ululon` · `h-NOTIONAL-return` · `v-write`
-
-*As if Ululon writes — and step back toward contact.*
-```
+> `zululon hadader vuwurul.`
+>
+> z-Ululon | h-NOTIONAL-return | v-write
+>
+> "As if Ululon writes — and step back toward contact."
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -453,21 +431,17 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 These `/h/` moods usually float over the whole clause. When the take, channel, or as-if frame applies only to a preceding adjective (`/ɡ/`), write the same mood under `/w/` instead.
 
-```
-`zazawan gelulul wuvuvum vawalal.`
+> `zazawan gelulul wuvuvum vawalal.`
+>
+> z-Azawan | g-blue | w-WITNESSED | v-walk
+>
+> "Azawan walks — and that blue is from memory."
 
-gloss: `z-Azawan` · `g-blue` · `w-WITNESSED` · `v-walk`
-
-*Azawan walks — and that blue is from memory.*
-```
-
-```
-`zazawan gelulul wadezem vawalal.`
-
-gloss: `z-Azawan` · `g-blue` · `w-LIVE` · `v-walk`
-
-*Azawan walks — and that blue is from the scene (live).*
-```
+> `zazawan gelulul wadezem vawalal.`
+>
+> z-Azawan | g-blue | w-LIVE | v-walk
+>
+> "Azawan walks — and that blue is from the scene (live)."
 
 ### Ordinary content readings
 <a id="content-readings"></a>
@@ -485,26 +459,22 @@ The same published roots keep ordinary content under other role letters. The clo
 | `zadadel` | noun | *a theater* |
 | `vadadem` | verb | *to pretend* |
 
-```
-`zazawan zadadel vejel.`
-
-gloss: `z-Azawan` · `z-theater` · `v-see`
-
-*Azawan sees a theater.*
-```
+> `zazawan zadadel vejel.`
+>
+> z-Azawan | z-theater | v-see
+>
+> "Azawan sees a theater."
 
 ### Reconstructive catch
 <a id="reconstructive-catch"></a>
 
 **`uvuvu`** is reconstructive: you pull something back, and it may not be what you hoped. The punchline can be a **boot**. Ordinary **`abodo`** *boot* is still available as content.
 
-```
-`zazawan huvuvum dabodol vejel.`
-
-gloss: `z-Azawan` · `h-WITNESSED` · `d-boot` · `v-see`
-
-*Azawan sees a boot — from memory.*
-```
+> `zazawan huvuvum dabodol vejel.`
+>
+> z-Azawan | h-WITNESSED | d-boot | v-see
+>
+> "Azawan sees a boot — from memory."
 
 ## See also
 

@@ -11,13 +11,11 @@ English *will* and *going to* can mean **intention** (the course someone means t
 
 To say what someone **means to do**, use the closed mood root **`owora`**. Spell it as floating `/h/`: **`howora`** plus an ending, then the ordinary content verb (*walk*, *write*). That lets you mark intention without borrowing English *will*, which can also be a forecast. Prefer floating `/h/`; use `/w/` only when the mood frames a preceding `/ɡ/` adjective. (cue: 🗺️ *world-map*: a map charts a course you mean to take)
 
-```
-`zazawan howoram vawalal.`
-
-gloss: `z-Azawan` · `h-PLAN-sketch` · `v-walk`
-
-*Azawan means to walk.* (direction only; default)
-```
+> `zazawan howoram vawalal.`
+>
+> z-Azawan | h-PLAN-sketch | v-walk
+>
+> "Azawan means to walk." (direction only; default)
 
 Ordinary content stays available (`zoworal` *a map*; `voworal` *to plan*). Leave PLAN off when you are not framing intention.
 
@@ -33,34 +31,28 @@ On **`owora`**, **-l / -m / -r** say **how fully drawn** the intention is: direc
 | **`howoral`** | **itinerary** | steps filled in: *how* is on the map | 🗺️ locked itinerary: every stop is on the map |
 | **`howorar`** | **fork** | backup path: *if not A, then B* | 🗺️ fork: another path if the first fails |
 
-```
-`zululon howoral vawalal.`
+> `zululon howoral vawalal.`
+>
+> z-Ululon | h-PLAN-itinerary | v-walk
+>
+> "Ululon’s itinerary is to walk." (steps on the map)
 
-gloss: `z-Ululon` · `h-PLAN-itinerary` · `v-walk`
-
-*Ululon’s itinerary is to walk.* (steps on the map)
-```
-
-```
-`zuhubun howorar vawalal.`
-
-gloss: `z-Uhubun` · `h-PLAN-fork` · `v-walk`
-
-*If that path fails, Uhubun will walk.* (backup course)
-```
+> `zuhubun howorar vawalal.`
+>
+> z-Uhubun | h-PLAN-fork | v-walk
+>
+> "If that path fails, Uhubun will walk." (backup course)
 
 ### Predict
 <a id="predict"></a>
 
 To say **what will happen** in the world (rain, a result), not what someone means to do, use the closed mood root **`elezo`**. Spell it as floating `/h/`: **`helezo`** plus an ending, then an ordinary content verb. Prefer **`helezom`** when you are not adding more. (cue: 🔭 *telescope*: looks ahead at a distance)
 
-```
-`helezom vanunul.`
-
-gloss: `h-PREDICT` · `v-rain`
-
-*Forecast: it rains.*
-```
+> `helezom vanunul.`
+>
+> h-PREDICT | v-rain
+>
+> "Forecast: it rains."
 
 **Compare with:** English *will* as *means to …* uses [PLAN](#plan-predict) (`howoram` / `howoral` / `howorar`). PREDICT is the world forecast, not someone’s course.
 
@@ -172,13 +164,11 @@ English *decide* / *I've decided* / *final decision* folds **how locked the pick
 
 Ordinary content is still available (`zegegel` *a checkmark*; `vegegel` *to check / tick*).
 
-```
-`zululon hegegem vuzunul.`
-
-gloss: `z-Ululon` · `h-DECISION-modifiable` · `v-sing`
-
-*Ululon has decided to sing, still open to revision.* (default)
-```
+> `zululon hegegem vuzunul.`
+>
+> z-Ululon | h-DECISION-modifiable | v-sing
+>
+> "Ululon has decided to sing, still open to revision." (default)
 
 **Not the same job as:** [PLAN](#plan-predict) (how fully drawn the course is). This mood marks how revisable the pick is.
 
@@ -195,26 +185,22 @@ On **`egege`**, **-l / -m / -r** match unmet [changeability](values.md#value-cha
 
 You can stack this mood after [PLAN](#plan-predict) when the clause needs both map grain and pick firmness:
 
-```
-`zazawan howoral hegegel vawalal.`
-
-gloss: `z-Azawan` · `h-PLAN-itinerary` · `h-DECISION-irreversible` · `v-walk`
-
-*Azawan’s itinerary is to walk, and the pick is settled.*
-```
+> `zazawan howoral hegegel vawalal.`
+>
+> z-Azawan | h-PLAN-itinerary | h-DECISION-irreversible | v-walk
+>
+> "Azawan’s itinerary is to walk, and the pick is settled."
 
 ### Forecast source
 <a id="predict-evidentiality"></a>
 
 When you mark **how** you forecast (a usual pattern, an inference, and so on), keep [PREDICT](#predict) and add an ordinary [evidentiality](commentary.md#evidentiality) `/h/` after it. The forecast mood still says what will happen in the world; the evidential says how you know.
 
-```
-`helezom habawam vanunul.`
-
-gloss: `h-PREDICT` · `h-PATTERN` · `v-rain`
-
-*Forecast from pattern: it rains.*
-```
+> `helezom habawam vanunul.`
+>
+> h-PREDICT | h-PATTERN | v-rain
+>
+> "Forecast from pattern: it rains."
 
 **Compare with:** a pattern or [LIVE](commentary.md#live-vs-memory) claim about *this stretch* uses [evidentiality](commentary.md#evidentiality) on the content verb alone (**`hadezem`** if you are observing it now; **`huvuvum`** if you remember observing it). Add **PREDICT** when the claim is a world forecast.
 

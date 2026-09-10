@@ -11,13 +11,11 @@ Attach a [number](numbers.md) stem after mid-word **`x`** to derive a **new kind
 
 English often names a *kind of thing* with a number idea baked in (*essence of love*, *a three-part dialogue*, *specimen #1*). In Agalan you attach a number stem after mid-word **`x`** on a content root. That stem has no role letter and no ending of its own; the role letter and one [reference suffix](reference-suffix.md) belong to the **whole derived word**. You can then use that word in any ordinary slot: the number names a property of the kind, not a count in the clause.
 
-```
-`zolovexrabal.`
-
-gloss: `z-love-x-+e`
-
-*essence of love*
-```
+> `zolovexrabal.`
+>
+> z-love-x-+e
+>
+> "essence of love"
 
 ```
 PoS + ROOT + x + NUM + {-l|-m|-n|-r}
@@ -59,13 +57,11 @@ You already use digitless number stems for unbounded plus, minus, last place, an
 
 English *quasi-* says something has the **shape or role** of a kind without counting as the real thing (*quasi-friend*, *quasi-official*). Spell that as **`ROOTx-e-`**: the kind’s outline, not a full claim that it is that kind. Change only the role letter to use it as a noun, verb, adjective, and so on.
 
-```
-`zuhubun geberelonogoxrubul.`
-
-gloss: `z-Uhubun` · `g-friend-x--e-`
-
-*Uhubun is a quasi-friend.*
-```
+> `zuhubun geberelonogoxrubul.`
+>
+> z-Uhubun | g-friend-x--e-
+>
+> "Uhubun is a quasi-friend."
 
 | PoS | `…x-e-` | Examples |
 |-----|---------|----------|
@@ -101,13 +97,11 @@ For a zero-shaped quasi, use **`ROOTx-0`** (anti-null) or **`ROOTx-0e-`** (micro
 
 English *a pair of…*, *three-part…*, *primary…* can name **how many parts the kind has**, not how many tokens sit in the clause. Attach a single-digit plus stem after **`x`**. Tables use marker shorthand (**`+N`** / **`-N`**). Speech is marker + digit (`ra`+`wo` for `+1`, `ru`+`wo` for `-1`, …), so the marker vowel is part of the stem. Running-text examples prefer spelled CV (`…xrawol`). Writing **`+0`…`+9`** uses the strong readings below; **`-N`** (including **`-0`**) is the **privative** of that reading (lacks / undoes / inverse of the `+N` structure).
 
-```
-`zazawan dabenexradul vejel.`
-
-gloss: `z-Azawan` · `d-commitment-x-+2` · `v-see`
-
-*Azawan sees mutual commitment.*
-```
+> `zazawan dabenexradul vejel.`
+>
+> z-Azawan | d-commitment-x-+2 | v-see
+>
+> "Azawan sees mutual commitment."
 
 | Agalan | Use | English | `-N` | Privative English |
 |--------|-----|---------|------|-------------------|
@@ -189,13 +183,11 @@ On free numbers, **`±0e-1`** is scalar anatomy; on ROOT the same stems are kind
 
 English *first-draft*, *secondary adventure*, *third-order problem* can name **which rank the kind occupies**, not which token is Nth in a list. Attach a single-digit ordinal stem after **`x`**. Tables use marker **`#`** (**`ROOTx#N`**); speech is **`re`** + digit; running-text examples prefer spelled CV (`…xrewol`). Free **`… g#N`** still picks the Nth token in a contextual series. Scalar **`-N`** already covers “lacks N-structure.” Digitless landmarks are **`#e-`** origin and **`#e`** telos; **`#0e`** is [rank annihilated](#rank-annihilated-morph); **`#N`** is an intermediate ranked stage of the kind. For a multi-digit ID, prefer free `g#12` or label **`_`**.
 
-```
-`zululon debeguxrewol vuwurul.`
-
-gloss: `z-Ululon` · `d-draft-x-#1` · `v-write`
-
-*Ululon writes a first-draft.*
-```
+> `zululon debeguxrewol vuwurul.`
+>
+> z-Ululon | d-draft-x-#1 | v-write
+>
+> "Ululon writes a first-draft."
 
 | Agalan | Use | English |
 |--------|-----|---------|
@@ -225,13 +217,11 @@ gloss: `z-Ululon` · `d-draft-x-#1` · `v-write`
 
 English *specimen #1*, *room-12 as a coded kind* treats digits as a **catalog ID**, not a count or a rank. Marker **`_`** identifies ROOT by that code. Digits (when present) are the **label payload**. Digitless **`_`** opens [catalog topology](#infinite-labels) below.
 
-```
-`zazawan deduduxrowol vejel.`
-
-gloss: `z-Azawan` · `d-specimen-x-_1` · `v-see`
-
-*Azawan sees specimen #1.*
-```
+> `zazawan deduduxrowol vejel.`
+>
+> z-Azawan | d-specimen-x-_1 | v-see
+>
+> "Azawan sees specimen #1."
 
 | Agalan | Use | English |
 |--------|-----|---------|

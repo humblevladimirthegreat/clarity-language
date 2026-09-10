@@ -15,43 +15,35 @@
 
 When you mean *this would work*, write the outcome first (what you are trying to get). After it, write the route (what would get you there), then an open *and/or* join **`…aom`**. The join’s role letter matches the route (`zaom` after a noun, `vaom` after a verb). Open **-m** means this is at least one route; other routes may still work. (cue: **`a`** ≈ add — you add a route, and the outcome can follow)
 
-```
-`zezewel zaom.`
-
-gloss: `z-effort` · `z-and/or.open`
-
-*Effort would work (among other routes).*
-```
+> `zezewel zaom.`
+>
+> z-effort | z-and/or.open
+>
+> "Effort would work (among other routes)."
 
 Two or more routes before **`…aom`** are listed together: any of them would work.
 
-```
-`zuludul zozowol zaom.`
-
-gloss: `z-cloud` · `z-snow` · `z-and/or.open`
-
-*Clouds or snow would work (for that outcome).*
-```
+> `zuludul zozowol zaom.`
+>
+> z-cloud | z-snow | z-and/or.open
+>
+> "Clouds or snow would work (for that outcome)."
 
 The same join sits on a verb when the route is an action:
 
-```
-`zuhubun vuzunul vaom.`
-
-gloss: `z-Uhubun` · `v-sing` · `v-and/or.open`
-
-*Uhubun’s singing would work.*
-```
+> `zuhubun vuzunul vaom.`
+>
+> z-Uhubun | v-sing | v-and/or.open
+>
+> "Uhubun’s singing would work."
 
 Closed **`…aol`** (*X is enough*) is the stronger twin: this route alone is enough; you are not leaving room for other routes. Everyday *would work* uses **`…aom`**.
 
-```
-`zabogol zaol.`
-
-gloss: `z-book` · `z-and/or`
-
-*A book is enough.*
-```
+> `zabogol zaol.`
+>
+> z-book | z-and/or
+>
+> "A book is enough."
 
 **For *if* / *because*, use:** a [dependent clause](core.md#dependent-clauses) with **`hadorom` / `hurugum`** + **`badorol`**. The condition or reason is a full sentence, not a noun or verb before **`…aom`**.
 
@@ -193,21 +185,17 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 When the outcome cannot do without something (*needs* / *without*), mark that condition as taken away or as never happening. Put exclusion on the effect (`guan` / `huan`), or a never restrictor (`hal`) on the verb. Take the condition away, and the outcome fails.
 
-```
-`zanunul huan buludul.`
+> `zanunul huan buludul.`
+>
+> z-rain | h-without | b-cloud
+>
+> "Raining without / excluding clouds."
 
-gloss: `z-rain` · `h-without` · `b-cloud`
-
-*Raining without / excluding clouds.*
-```
-
-```
-`zazawan vawalal hal.`
-
-gloss: `z-Azawan` · `v-walk` · `h-never`
-
-*Azawan never walks.*
-```
+> `zazawan vawalal hal.`
+>
+> z-Azawan | v-walk | h-never
+>
+> "Azawan never walks."
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -221,13 +209,11 @@ gloss: `z-Azawan` · `v-walk` · `h-never`
 
 When you mean *it has to be X* (the sole pick), close an exclusive join: **`…ol`**, **`gon`**, or **`hon`**. That names one path and no other, not merely a route that would work.
 
-```
-`zazawan gon.`
-
-gloss: `z-Azawan` · `g-has-to-be`
-
-*It has to be Azawan.*
-```
+> `zazawan gon.`
+>
+> z-Azawan | g-has-to-be
+>
+> "It has to be Azawan."
 
 **Compare with:** *would work* uses open sufficient (`…aom`). **`…al` / `…el`** (*only X* / *only X matters*) mark inventory or priority on a list; they do not say the outcome needs that item.
 
@@ -240,13 +226,11 @@ When the condition or outcome is a **full sentence**, hang that sentence after *
 main sentence …  hadorom / hezazem / hurugum  badorol   [dependent sentence]
 ```
 
-```
-`zazawan vawalal hadorom badorol zululon velebel.`
-
-gloss: `z-Azawan` · `v-walk` · `h-if` · `b-next-clause` · `z-Ululon` · `v-sleep`
-
-*Azawan walks if Ululon sleeps.*
-```
+> `zazawan vawalal hadorom badorol zululon velebel.`
+>
+> z-Azawan | v-walk | h-if | b-next-clause | z-Ululon | v-sleep
+>
+> "Azawan walks if Ululon sleeps."
 
 ### `IF` vs `IFF` vs `BECAUSE`
 <a id="if-vs-iff"></a>
@@ -260,13 +244,11 @@ Beginner already pointed at *if* / *because* as dependents. Pick the `/h/` root 
 | **`hezazem badorol`** (**`ezaze`**) | both-ways (sufficient **and** necessary) | *if and only if* | ↔️ *left-right*: each side only with the other |
 | **`hurugum badorol`** (**`urugu`**) | asserted explanation | *because* | 🧱 *brick*: the cause is what the result sits on |
 
-```
-`zazawan vawalal hurugum badorol zululon velebel.`
-
-gloss: `z-Azawan` · `v-walk` · `h-because` · `b-next-clause` · `z-Ululon` · `v-sleep`
-
-*Azawan walks because Ululon sleeps.*
-```
+> `zazawan vawalal hurugum badorol zululon velebel.`
+>
+> z-Azawan | v-walk | h-because | b-next-clause | z-Ululon | v-sleep
+>
+> "Azawan walks because Ululon sleeps."
 
 | Poles | Prefer |
 |-------|--------|
@@ -284,13 +266,11 @@ gloss: `z-Azawan` · `v-walk` · `h-because` · `b-next-clause` · `z-Ululon` ·
 
 To highlight **how** a result comes about (the mechanism, not only that a route would work), add the closed mood **`egega`** as an `/h/` word. The ending is **-m**: **`hegegam`**. You can put that mood next to a join or a clause pole when both jobs apply. Ordinary content on the same root is still available (`zegegal` *a gear*; `vegegal` *to mesh / engage*). Optional `/w/` when the mood grades only a preceding adjective. (cue: ⚙️ *gear*: how the mechanism engages)
 
-```
-`haon bezewel hegegam.`
-
-gloss: `h-and/or` · `b-effort` · `h-CAUSE`
-
-*Open to effort (CAUSE)* (how the payoff gears turn)
-```
+> `haon bezewel hegegam.`
+>
+> h-and/or | b-effort | h-CAUSE
+>
+> "Open to effort (CAUSE)." (how the payoff gears turn)
 
 **Compare with:** *would work* / among routes uses open sufficient (`…aom` / `haon`).
 
@@ -301,13 +281,11 @@ gloss: `h-and/or` · `b-effort` · `h-CAUSE`
 
 English *should* on a causal claim is often a wish or ought, not a formal or natural law. Keep the route as open sufficient (`haon` / `…aom`) and put the ought on [values](values.md): **`xo`** (prescription) or **`xe`** (motive). Feeling-strength lives on the values ending, not on exclusive **`gon`**.
 
-```
-`haon bezewel holozoxor.`
-
-gloss: `h-and/or` · `b-effort` · `h-competence.prescription`
-
-*Effort would count (as an ought).*
-```
+> `haon bezewel holozoxor.`
+>
+> h-and/or | b-effort | h-competence.prescription
+>
+> "Effort would count (as an ought)."
 
 | Agalan | Use | English |
 |--------|-----|---------|
@@ -473,21 +451,17 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 English *because* and *if* can hide whether you **assert the dependent as a world fact**. Agalan puts that choice on the `/h/` root: **`hurugum`** asserts the dependent as the reason the main sentence rests on; **`hadorom`** does not assert it (the main sentence is under that opportunity). You can now say whether rain is a fact the walk rests on, or only a condition.
 
-```
-`zazawan vawalal hurugum badorol zanunul.`
+> `zazawan vawalal hurugum badorol zanunul.`
+>
+> z-Azawan | v-walk | h-because | b-next-clause | z-rain
+>
+> "Azawan walks because it rains." Rain is asserted as the reason.
 
-gloss: `z-Azawan` · `v-walk` · `h-because` · `b-next-clause` · `z-rain`
-
-*Azawan walks because it rains.* Rain is asserted as the reason.
-```
-
-```
-`zazawan vawalal hadorom badorol zanunul.`
-
-gloss: `z-Azawan` · `v-walk` · `h-if` · `b-next-clause` · `z-rain`
-
-*Azawan walks if it rains.* Rain is not asserted; the main sentence is under that opportunity.
-```
+> `zazawan vawalal hadorom badorol zanunul.`
+>
+> z-Azawan | v-walk | h-if | b-next-clause | z-rain
+>
+> "Azawan walks if it rains." Rain is not asserted; the main sentence is under that opportunity.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -500,13 +474,11 @@ gloss: `z-Azawan` · `v-walk` · `h-if` · `b-next-clause` · `z-rain`
 
 English often uses *because* for **speaker grounds** (*I think P because Q*) without treating Q as a world-fact that grounds P. Put [COMMENT](commentary.md#comment) (`hodohom`, …) on the main sentence for the take. Add **`hurugum badorol`** only when Q is also asserted as a world-foundation.
 
-```
-`zazawan hodohom vawalal.`
-
-gloss: `z-Azawan` · `h-comment` · `v-walk`
-
-*Azawan walks (that’s a take).*
-```
+> `zazawan hodohom vawalal.`
+>
+> z-Azawan | h-comment | v-walk
+>
+> "Azawan walks (that’s a take)."
 
 **For *I think*, use:** [COMMENT](commentary.md#comment) (`odoho`). **`hurugum`** is world-reason under the claim.
 
@@ -517,13 +489,11 @@ gloss: `z-Azawan` · `h-comment` · `v-walk`
 
 A one-off episode and a standing pattern use the same sufficient / necessary shapes. Add extra `/h/` words for the extra jobs: evidential `/h/` for *how you know* ([evidentiality](commentary.md#evidentiality)), **`hual` / `huam`** for habit ([restrictors](restrictors.md)), **`hegegam`** for mechanism ([CAUSE](#cause)).
 
-```
-`zuludul zaom hual.`
-
-gloss: `z-cloud` · `z-and/or.open` · `h-habitual`
-
-*Clouds would work, as a standing pattern.*
-```
+> `zuludul zaom hual.`
+>
+> z-cloud | z-and/or.open | h-habitual
+>
+> "Clouds would work, as a standing pattern."
 
 **Compare with:** *always* / *every* / *never* as exceptionlessness uses [universality](special-vocabulary.md#universality) (NATURAL **`habelel`**). **CAUSE** is **`hegegam`**.
 

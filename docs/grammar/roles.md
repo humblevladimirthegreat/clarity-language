@@ -12,13 +12,11 @@ When English would name a person from an event (*a fighter* from *fight*, *the o
 
 English *a fighter* names who does the fighting, from the same idea as *fight*. Write a person or thing letter (`/z/` `/d/` `/b/`), then **`a`**, then mid-word **`x`**, then the event root, then an ordinary [reference ending](reference-suffix.md). The result is one content word (a **role compound**) that you can use as a participant. (cue: **a** ≈ add (add a doer))
 
-```
-`zaxuvugul vurunul.`
-
-gloss: `z-←agent-x-fight` · `v-run`
-
-*A fighter runs.*
-```
+> `zaxuvugul vurunul.`
+>
+> z-←agent-x-fight | v-run
+>
+> "A fighter runs."
 
 With **-l**, `zaxuvugul` is *a fighter* as a kind of person. You do not need a prior fight in the talk.
 
@@ -28,43 +26,37 @@ With **-l**, `zaxuvugul` is *a fighter* as a kind of person. You do not need a p
 
 Once the talk already has a matching event (*walks*), **-r** on the same stem means **that** doer (*the walker*), not a new kind.
 
-```
-`zazawan vawalal.`
-`zaxawalar velebel.`
-
-gloss: `z-Azawan` · `v-walk`
-gloss: `z-←agent-x-walk` · `v-sleep`
-
-*Azawan walks. The walker sleeps.*
-```
+> `zazawan vawalal.`
+> `zaxawalar velebel.`
+>
+> z-Azawan | v-walk
+> z-←agent-x-walk | v-sleep
+>
+> "Azawan walks. The walker sleeps."
 
 ### The undergoer (`u`)
 
 English *the one seen* or *the one fought* names the person the event happens to. Use the same compound shape as the doer, but write **`u`** in the vowel slot. (cue: **u** ≈ undo (the one it happens to))
 
-```
-`zazawan dagadal vejel.`
-`zuxejer vurunul.`
-
-gloss: `z-Azawan` · `d-cat` · `v-see`
-gloss: `z-←patient-x-see` · `v-run`
-
-*Azawan sees a cat. The one seen runs.*
-```
+> `zazawan dagadal vejel.`
+> `zuxejer vurunul.`
+>
+> z-Azawan | d-cat | v-see
+> z-←patient-x-see | v-run
+>
+> "Azawan sees a cat. The one seen runs."
 
 ### The other party (`o`)
 
 Some stems name a **relation** (who is bound to whom), not an action. The extra person of that relation sits in `/b/`. To name that person from the relation stem (*the other party of the bond*), write **`o`** in the vowel slot. That named party is the **reltum**. (cue: **o** ≈ one (that other pole))
 
-```
-`zazawan gonogol bululon.`
-`zoxonogor vurunul.`
-
-gloss: `z-Azawan` · `g-bond` · `b-Ululon`
-gloss: `z-←reltum-x-bond` · `v-run`
-
-*Azawan is bound to Ululon. That other party of the bond runs.*
-```
+> `zazawan gonogol bululon.`
+> `zoxonogor vurunul.`
+>
+> z-Azawan | g-bond | b-Ululon
+> z-←reltum-x-bond | v-run
+>
+> "Azawan is bound to Ululon. That other party of the bond runs."
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -78,13 +70,11 @@ gloss: `z-←reltum-x-bond` · `v-run`
 
 If you put the event stem on a thing letter with no role vowel (`duvugul`), you name the fight itself. Use **`ax`** or **`ux`** when you mean a person who fights or is fought.
 
-```
-`zazawan duvugul vejel.`
-
-gloss: `z-Azawan` · `d-fight` · `v-see`
-
-*Azawan sees a fight.*
-```
+> `zazawan duvugul vejel.`
+>
+> z-Azawan | d-fight | v-see
+>
+> "Azawan sees a fight."
 
 **Related form:** a verb’s own **-r** resumes that [event](pronouns.md) (`vuvugur` *that fighting*). Role **`ax`** / **`ux`** names the people.
 
@@ -92,13 +82,11 @@ gloss: `z-Azawan` · `d-fight` · `v-see`
 
 To say someone **is a kind** (*Azawan is a fighter*), put the same role stem on `/ɡ/`, as in [classification](predication.md#classification). **-m** hedges the role.
 
-```
-`zazawan gaxuvugum.`
-
-gloss: `z-Azawan` · `g-←agent-x-fight`
-
-*Azawan is a fighter, in a manner of speaking.*
-```
+> `zazawan gaxuvugum.`
+>
+> z-Azawan | g-←agent-x-fight
+>
+> "Azawan is a fighter, in a manner of speaking."
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -234,33 +222,27 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 English *left* / *right* / *ahead* / *back* can mean a compass heading (*west*) or a side of someone’s body (*Azawan’s left*). For the body reading, write the same arrow root, then mid-word **`x`**, then whose facing counts as north (the **viewpoint**), then an ordinary [reference ending](reference-suffix.md). You can then say *walk left* without meaning *walk west*.
 
-```
-`jel vawalal hewezexazawan.`
-
-gloss: `j-command` · `v-walk` · `h-west-x-Azawan`
-
-*Walk left (Azawan’s left).*
-```
+> `jel vawalal hewezexazawan.`
+>
+> j-command | v-walk | h-west-x-Azawan
+>
+> "Walk left (Azawan’s left)."
 
 Bare arrow words are compass points on a north-up map:
 
-```
-`jel vawalal hewezel.`
-
-gloss: `j-command` · `v-walk` · `h-west`
-
-*Walk west.*
-```
+> `jel vawalal hewezel.`
+>
+> j-command | v-walk | h-west
+>
+> "Walk west."
 
 Speaker and listener roots are the facing person when you mean *my left* / *your left*:
 
-```
-`jel zedonen vawalal hewezexedonen.`
-
-gloss: `j-command` · `z-listener` · `v-walk` · `h-west-x-listener`
-
-*You, walk left (your left).*
-```
+> `jel zedonen vawalal hewezexedonen.`
+>
+> j-command | z-listener | v-walk | h-west-x-listener
+>
+> "You, walk left (your left)."
 
 | Agalan | Use | English |
 |--------|-----|---------|
@@ -293,21 +275,17 @@ Indoor headings may follow a local map (building north). Prefer a name or listen
 
 English *up* / *down* here follows the pull of gravity, not a face. Write **`uba`** (skyward) or **`odowo`** (toward the pull) as ordinary content words, with no **`x`** + facing person. Everyone shares that frame.
 
-```
-`jel vawalal habal.`
+> `jel vawalal habal.`
+>
+> j-command | v-walk | h-up
+>
+> "Walk up."
 
-gloss: `j-command` · `v-walk` · `h-up`
-
-*Walk up.*
-```
-
-```
-`jabal.`
-
-gloss: `j-up`
-
-*Up!*
-```
+> `jabal.`
+>
+> j-up
+>
+> "Up!"
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -319,13 +297,11 @@ gloss: `j-up`
 
 English *on Azawan’s left of the tree* needs both a facing person and a landmark. Put the facing person after **`x`**; put the tree, door, or wall in `/b/`. `/b/` is the landmark, not whose left.
 
-```
-`zabogol gewezexazawan berel.`
-
-gloss: `z-book` · `g-west-x-Azawan` · `b-tree`
-
-*The book is on Azawan’s left of the tree.*
-```
+> `zabogol gewezexazawan berel.`
+>
+> z-book | g-west-x-Azawan | b-tree
+>
+> "The book is on Azawan’s left of the tree."
 
 Bare compass + `/b/` is a region on that heading of the landmark (`gewezel berel` *west of the tree*).
 
@@ -487,13 +463,11 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 When *east* / *west* / *southwest* name a move in the talk, not a map point, write the published root **bare** (no **`x`** + facing person). Generic heading is **`ogomo`** (*direction*). Facing-relative ahead / back still uses **`onoho` / `ohuhu` × ANCHOR**.
 
-```
-`zazawan vawalal. xezazal zululon vurunul.`
-
-gloss: `z-Azawan` · `v-walk` · `x-east` · `z-Ululon` · `v-run`
-
-*Azawan walks. Therefore Ululon runs.*
-```
+> `zazawan vawalal. xezazal zululon vurunul.`
+>
+> z-Azawan | v-walk | x-east | z-Ululon | v-run
+>
+> "Azawan walks. Therefore Ululon runs."
 
 | Agalan | Use | English |
 |--------|-----|---------|

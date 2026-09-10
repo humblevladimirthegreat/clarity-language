@@ -15,29 +15,23 @@ The join’s first letter matches the items: `zam` after two `z-` nouns, `vam` a
 
 Ending **-m** means other members may exist that you did not name (*among others*). Ending **-l** means these are the only items in play. When unsure, prefer **-m**.
 
-```
-`zodogol zagadal zam.`
+> `zodogol zagadal zam.`
+>
+> z-dog | z-cat | z-and.open
+>
+> "a dog and a cat."
 
-gloss: `z-dog` · `z-cat` · `z-and.open`
+> `zazawan zululon zam.`
+>
+> z-Azawan | z-Ululon | z-and.open
+>
+> "Azawan and Ululon."
 
-*a dog and a cat.*
-```
-
-```
-`zazawan zululon zam.`
-
-gloss: `z-Azawan` · `z-Ululon` · `z-and.open`
-
-*Azawan and Ululon.*
-```
-
-```
-`vawalal vurunul vam.`
-
-gloss: `v-walk` · `v-run` · `v-and.open`
-
-*walks and runs.*
-```
+> `vawalal vurunul vam.`
+>
+> v-walk | v-run | v-and.open
+>
+> "walks and runs."
 
 ### Right-close fence
 <a id="right-close"></a>
@@ -50,34 +44,28 @@ Write the items first, then the join. Readers treat everything up to that join a
 
 Two full clauses use the same order: first clause’s words, second clause’s words, then a join that starts with `x` (`xam`).
 
-```
-`zazawan vawalal zululon vurunul xam.`
-
-gloss: `z-Azawan` · `v-walk` · `z-Ululon` · `v-run` · `x-and.open`
-
-*Azawan walks and Ululon runs.*
-```
+> `zazawan vawalal zululon vurunul xam.`
+>
+> z-Azawan | v-walk | z-Ululon | v-run | x-and.open
+>
+> "Azawan walks and Ululon runs."
 
 ### Choice (`o`)
 <a id="empty-allowed-om"></a>
 
 When English would offer a menu and ask for *exactly one*, or allow *or skip*, use vowel **o**. Closed **-l** (`zol`) means pick exactly one of the listed items. Open **-m** (`zom`) means pick one, or skip. (cue: **o** ≈ one.)
 
-```
-`zadedal zogovel zol.`
+> `zadedal zogovel zol.`
+>
+> z-tea | z-coffee | z-or-exactly-one
+>
+> "tea or coffee (pick exactly one)."
 
-gloss: `z-tea` · `z-coffee` · `z-or-exactly-one`
-
-*tea or coffee (pick exactly one).*
-```
-
-```
-`zogovel zom.`
-
-gloss: `z-coffee` · `z-or.open`
-
-*coffee, or skip.*
-```
+> `zogovel zom.`
+>
+> z-coffee | z-or.open
+>
+> "coffee, or skip."
 
 ### How many items
 <a id="single-item-phrase"></a>
@@ -91,54 +79,44 @@ The join still comes last when there is only one item, or none. How many items s
 | **Single-item** (1) | `A zal` | that one item is the whole story | *just X* |
 | **Standalone** (0) | `zam` | the join alone | *nothing comes to mind* |
 
-```
-`zazawan zal.`
-
-gloss: `z-Azawan` · `z-and-exactly`
-
-*just Azawan.*
-```
+> `zazawan zal.`
+>
+> z-Azawan | z-and-exactly
+>
+> "just Azawan."
 
 ### Negation (`u`)
 <a id="negation-u"></a>
 
 When English would deny the listed items, use vowel **u**. One item before `zul` is *not X*. Several items before `zul` is *none of these*. The join alone (`zul` / `zum`) is *no*. (cue: **u** ≈ undo.)
 
-```
-`gomonam gul.`
+> `gomonam gul.`
+>
+> g-challenging | g-not
+>
+> "not challenging."
 
-gloss: `g-challenging` · `g-not`
+> `zazawan zul.`
+>
+> z-Azawan | z-not
+>
+> "not Azawan."
 
-*not challenging.*
-```
-
-```
-`zazawan zul.`
-
-gloss: `z-Azawan` · `z-not`
-
-*not Azawan.*
-```
-
-```
-`zadedal zogovel zul.`
-
-gloss: `z-tea` · `z-coffee` · `z-not`
-
-*none of tea or coffee.*
-```
+> `zadedal zogovel zul.`
+>
+> z-tea | z-coffee | z-not
+>
+> "none of tea or coffee."
 
 ### Everything (`ua`)
 
 When English would say *everything* / *everyone*, stack **u** then **a** on a standalone join (`zual`). One item before that join is *everything but* that item. Write the stacked vowels as one word (`zual`); say first vowel, then next, then the ending. (cue: **u** ≈ undo, then **a** ≈ add.)
 
-```
-`zual.`
-
-gloss: `z-everything`
-
-*everything* / *everyone.*
-```
+> `zual.`
+>
+> z-everything
+>
+> "everything" / "everyone."
 
 ### Rank (`e`)
 <a id="set-joins-and-rank-joins"></a>
@@ -147,13 +125,11 @@ The *and* / *or* / *not* joins above are **set** joins: the items share a slot a
 
 Write the items in that order, then a join with vowel **e**. The earlier item outranks the later. One item before `zel` means *only X matters* / *X first*. (cue: **e** ≈ order.)
 
-```
-`zazawan zel.`
-
-gloss: `z-Azawan` · `z-rank`
-
-*only Azawan matters* / *Azawan first.*
-```
+> `zazawan zel.`
+>
+> z-Azawan | z-rank
+>
+> "only Azawan matters" / "Azawan first."
 
 ### Unspecified member (`-r`)
 <a id="unspecified-member-r-phrase"></a>
@@ -167,29 +143,23 @@ You can name a list without saying which member you mean (*someone* / *something
 | `zer` / `ver` / `xer` | unspecified member of a ranking | *whatever ranks highest* | **e** ≈ order |
 | `zur` / `vur` / `xur` | unspecified leftover | *something else* / *someone else* | **u** ≈ undo |
 
-```
-`zar.`
+> `zar.`
+>
+> z-something
+>
+> "something" / "someone."
 
-gloss: `z-something`
+> `zeberel zar.`
+>
+> z-person | z-something
+>
+> "some (unknown) person."
 
-*something* / *someone.*
-```
-
-```
-`zeberel zar.`
-
-gloss: `z-person` · `z-something`
-
-*some (unknown) person.*
-```
-
-```
-`zadedal zogovel zar.`
-
-gloss: `z-tea` · `z-coffee` · `z-something`
-
-*some one among tea and coffee.*
-```
+> `zadedal zogovel zar.`
+>
+> z-tea | z-coffee | z-something
+>
+> "some one among tea and coffee."
 
 Write A and B, then `zar`: the join still ends both items, and **-r** means some member of that pair (you are not saying which).
 
@@ -455,13 +425,11 @@ When English would say two people are *as ADJ as* each other, or that nobody is 
 
 **`ae`** is a tie: several names, then **`zael`** (or **`zaem`**), then the adjective. Standalone **`oe`** plus that adjective is *no biggest comes to mind*. Ranking still follows the spoken order of the names before the join.
 
-```
-`zazawan zululon zael gomonam.`
-
-gloss: `z-Azawan` · `z-Ululon` · `z-as…as` · `g-challenging`
-
-*Azawan is as challenging as Ululon.*
-```
+> `zazawan zululon zael gomonam.`
+>
+> z-Azawan | z-Ululon | z-as…as | g-challenging
+>
+> "Azawan is as challenging as Ululon."
 
 **Compare with:** *more / most* and *least* use **`e`** / **`oe`** / **`ue`** plus the same shared adjective — [comparatives](comparatives.md).
 
@@ -478,13 +446,11 @@ Beginner already used *everything but* (**`ua`**). Leading **u** on **o** and **
 
 Kind / domain for **ua** / **uo** is context or SHARED `/ɡ/` — [universals, domains, and generics](#universals-domains-generics). Skip is only **`…om`**. **-r** still attaches only to single-vowel **a** / **o** / **e** / **u**.
 
-```
-`zadedal zogovel zual.`
-
-gloss: `z-tea` · `z-coffee` · `z-everything-but`
-
-*everything but tea and coffee.*
-```
+> `zadedal zogovel zual.`
+>
+> z-tea | z-coffee | z-everything-but
+>
+> "everything but tea and coffee."
 
 **Compare with:** plain **`u`** is *not* / *none of* the listed, not an invert stack. *Every cat* uses SHARED kind after **`zual`**: `zual gagadal`.
 
@@ -494,17 +460,13 @@ When English would allow several listed items at once (*and/or*), stack **a** th
 
 When English would deny a whole join, *not* applies to **each** item and the join vowel **stays the same**. *Not (walk and run)* is still an *and* of two denials; *not (walk or run)* is still an *or* of two denials.
 
-```
-`vawalal vurunul val vul.`
+> `vawalal vurunul val vul.`
+>
+> "not (walk and run): not walk, and not run."
 
-*not (walk and run)*: *not walk, and not run.*
-```
-
-```
-`vawalal vurunul vol vul.`
-
-*not (walk or run)*: *not walk, or not run.*
-```
+> `vawalal vurunul vol vul.`
+>
+> "not (walk or run): not walk, or not run."
 
 ### Universals, domains, and generics
 <a id="universals-domains-generics"></a>
@@ -521,13 +483,11 @@ When English would say *every cat* rather than *everything but the cat*, write *
 | `zual` + SHARED `/ɡ/` + items | every-kind minus leftovers | *every K but* exclusions |
 | single-item `zual X` (no SHARED) | leftover only | *everything but X* |
 
-```
-`zual gagadal.`
-
-gloss: `z-everything` · `g-cat`
-
-*every cat.*
-```
+> `zual gagadal.`
+>
+> z-everything | g-cat
+>
+> "every cat."
 
 Strict / definitional generics use closed `zual` plus kind (and [FORMAL](special-vocabulary.md#universality) when needed). Soft / epistemic generics use open `zuam` plus kind. Free-choice *any cat will do* uses `zor`.
 
@@ -541,21 +501,17 @@ Strict / definitional generics use closed `zual` plus kind (and [FORMAL](special
 
 When an adjective or extra noun is meant for the **whole list** (*both challenging*, *Azawan's dog and cat*), write it **immediately after** the join. That material describes every member together. A modifier that belongs to one item only stays on that item (after its head, or `gl-` before it).
 
-```
-`zodogol zagadal zal gomonam.`
+> `zodogol zagadal zal gomonam.`
+>
+> z-dog | z-cat | z-and | g-challenging
+>
+> "(challenging dog) and (challenging cat)."
 
-gloss: `z-dog` · `z-cat` · `z-and` · `g-challenging`
-
-*(challenging dog) and (challenging cat).*
-```
-
-```
-`zodogol zagadal zam goborul bazawan.`
-
-gloss: `z-dog` · `z-cat` · `z-and.open` · `g-ownership` · `b-Azawan`
-
-*Azawan's (dog and cat).*
-```
+> `zodogol zagadal zam goborul bazawan.`
+>
+> z-dog | z-cat | z-and.open | g-ownership | b-Azawan
+>
+> "Azawan's (dog and cat)."
 
 | Join family | Use of SHARED `/ɡ/` |
 |-------------|----------------------|
@@ -623,17 +579,13 @@ An adverb `/h/` before the verb-phrase stretch, or in SHARED after the join, cov
 
 `/x/` keeps the **same speech act**. Later clauses inherit the opener and omit `/j/` (including recoverable **`jal`**).
 
-```
-`zazawan vawalal zululon vurunul xan.`
+> `zazawan vawalal zululon vurunul xan.`
+>
+> "Azawan walks and then Ululon runs."
 
-*Azawan walks and then Ululon runs.*
-```
-
-```
-`zazawan vawalal zululon vurunul xol zuhubun velebel xal.`
-
-*(Azawan walks or Ululon runs) and Uhubun sleeps.*
-```
+> `zazawan vawalal zululon vurunul xol zuhubun velebel xal.`
+>
+> "(Azawan walks or Ululon runs) and Uhubun sleeps."
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -769,11 +721,9 @@ When same-role words sit next to a smaller list, wrap that stretch and its join 
 | `zazawan ^ zal ^ zam` | *Azawan and nothing* |
 | `^ zunudel zal ^` | *just water* alone in the slot |
 
-```
-`zazawan ^ zunudel zal ^ zam.`
-
-*Azawan and (just water).*
-```
+> `zazawan ^ zunudel zal ^ zam.`
+>
+> "Azawan and (just water)."
 
 
 ### Named phrase **`-n`**
@@ -782,11 +732,9 @@ When same-role words sit next to a smaller list, wrap that stretch and its join 
 
 When a phrase list is an established bundle (*the usual menu*, *stop–drop–roll*), end the join with **-n** under `/z/` `/d/` `/b/` `/w/`. That **-n** names the package, not a person.
 
-```
-`zadedal zogovel zon.`
-
-*tea or coffee (the usual named menu)*
-```
+> `zadedal zogovel zon.`
+>
+> "tea or coffee (the usual named menu)"
 
 **…an** is standalone-only on those phrase fences (*null* / *void*). Under `/ɡ/` `/h/`, the same letters are [join-relations](join-extras.md#join-relations).
 
@@ -808,11 +756,9 @@ Most other phrase joins need two or more items. These edge readings keep a defin
 | `A B zar` / `zur` / `zual` | among / leftover / invert | some one among; some one other than; *everything but* |
 | **`oe`** | exclusive step on a ladder | preference vs contingency from context |
 
-```
-`zadedal zogovel zunudel zor.`
-
-*any of tea, coffee, or water is fine (no order).*
-```
+> `zadedal zogovel zunudel zor.`
+>
+> "any of tea, coffee, or water is fine (no order)."
 
 **For *except*, use:** reviser **`ul`** / **`um`** — [revisers](revisers.md). Prefixed **`zur`** is unspecified *something else*. Nest when you need a rare mix (closed list but skip OK: `zadedal zogovel zol zal`). Sufficient *at least* **`…aom`**: [causation](causation.md#sufficient).
 

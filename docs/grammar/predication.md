@@ -11,13 +11,11 @@ English *is* does two jobs that look alike. You can say someone **is a kind or r
 
 When you say someone *is* a quality (*Azawan is challenging*), that quality is an **adjective**. Write it with `/ɡ/` and put it right after the name. You do not add a separate *is* verb; the name plus the `/ɡ/` word already make the sentence. The `/ɡ/` word is the piece English would put after *is*.
 
-```
-`zazawan gomonam.`
-
-gloss: `z-Azawan` · `g-challenging`
-
-*Azawan is challenging.*
-```
+> `zazawan gomonam.`
+>
+> z-Azawan | g-challenging
+>
+> "Azawan is challenging."
 
 ### Kind / role
 <a id="classification"></a>
@@ -26,13 +24,11 @@ When you say someone **is that kind of thing** or **has that role** (*a dog*), y
 
 This use is **classification**. Same `/ɡ/` place as a quality; the kind word is what English would put after *is a*.
 
-```
-`zazawan godogol.`
-
-gloss: `z-Azawan` · `g-dog`
-
-*Azawan is a dog.*
-```
+> `zazawan godogol.`
+>
+> z-Azawan | g-dog
+>
+> "Azawan is a dog."
 
 A titled name of that kind uses **-n** on the adjective ([reference suffix](reference-suffix.md)): `zazawan godogon` *Azawan is Dog*.
 
@@ -46,21 +42,17 @@ When two names pick out **the same person or thing** (*Clark is Superman*), you 
 
 Write a special adjective `gonunul` after the first name, then an extra noun (`/b/`) for the other label. Keep `gonunul` and that `/b/` word **next to each other**. That pair is **identity**. The adjective’s English name is **`SAME`**; its root is **`onunu`**. (cue: 🪙 *coin*: two faces, one substance)
 
-```
-`z<Clark>n gonunul b<Superman>n.`
+> `z<Clark>n gonunul b<Superman>n.`
+>
+> z-Clark | g-SAME | b-Superman
+>
+> "Clark is Superman."
 
-gloss: `z-Clark` · `g-SAME` · `b-Superman`
-
-*Clark is Superman.*
-```
-
-```
-`zodogol gonunul bazawan.`
-
-gloss: `z-dog` · `g-SAME` · `b-Azawan`
-
-*The dog is Azawan.*
-```
+> `zodogol gonunul bazawan.`
+>
+> z-dog | g-SAME | b-Azawan
+>
+> "The dog is Azawan."
 
 **Compare with:** *Azawan is a dog* uses [kind / role](#classification) (`godogol`). Use **`SAME`** when two labels name one person.
 
@@ -193,13 +185,11 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 You already put a kind on `/ɡ/` after the name (*Azawan is a dog*). The extra choice here is how tightly that kind holds: hedge it, mark it as the usual type, or deny it. The kind word stays on `/ɡ/`; a following hedge `/w/`, characterizing **`hual`**, or negation **`gul`** packages that same pair.
 
-```
-`zazawan godogol gul.`
-
-gloss: `z-Azawan` · `g-dog` · `g-not`
-
-*Azawan is not a dog.*
-```
+> `zazawan godogol gul.`
+>
+> z-Azawan | g-dog | g-not
+>
+> "Azawan is not a dog."
 
 | Agalan | Use | English |
 |--------|-----|---------|

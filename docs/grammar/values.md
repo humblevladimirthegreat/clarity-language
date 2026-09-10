@@ -14,13 +14,11 @@ Write the need under `/h/` when you talk about the clause, or under `/w/` when y
 
 When you want to mention a psychological need as a **topic** (just bring it up), put role letter `/h/` in front of a **need root**, then an ordinary [reference-suffix](reference-suffix.md) ending (*this need*, a metaphor, a name, a resume). There is no mid-word **`x`**: you are only naming the need.
 
-```
-`hawerol.`
-
-gloss: `h-pleasure`
-
-*Pleasure (as a topic).*
-```
+> `hawerol.`
+>
+> h-pleasure
+>
+> "Pleasure (as a topic)."
 
 **Compare with:** *when* / *always* / *never* on `/h/` is a [restrictor](restrictors.md). This page names a **need**.
 
@@ -38,13 +36,11 @@ Six published roots cover the needs you can name. Pick one row; under `/h/` as a
 | **`uhuhe`** | names the survival need | *survival* (safety, health, material sufficiency) | 🛡️ *shield*: what keeps you safe |
 | **`ege`** | names a need without picking among the five | *unspecified need* | 🥚 *egg*: not yet a specific kind |
 
-```
-`hegel.`
-
-gloss: `h-need`
-
-*Unspecified need (as a topic).*
-```
+> `hegel.`
+>
+> h-need
+>
+> "Unspecified need (as a topic)."
 
 **Compare with:** `zalodol` is a *ballot box*. Under `/h/` in this shape, **`alodo`** is the *autonomy* need.
 
@@ -52,13 +48,11 @@ gloss: `h-need`
 
 When you want to say that a named thing **serves** this need (pays it off), write that thing as a noun, then a `/w/` word: need root, mid-word **`x`**, **`a`**, then an ending. That `/w/` word is about the thing you just named. The ending says how you contact the payoff.
 
-```
-`zawaral wonogoxal.`
-
-gloss: `z-gift` · `w-relatedness-met-physical`
-
-*The gift serves relatedness (physical contact).*
-```
+> `zawaral wonogoxal.`
+>
+> z-gift | w-relatedness-met-physical
+>
+> "The gift serves relatedness (physical contact)."
 
 **Not the same job as:** [ability](ability.md) (`vuzunuxal` *can sing*). There the left of **`x`** is an activity. Here it is a **need**, and **`xa`** means *serves this need*.
 
@@ -73,21 +67,17 @@ On a *serves* word, **-l / -m / -r** are the **contact channel**: body and the s
 | `…xam` | contact via thinking, memory, gratitude you take in | *mental* | **-m** ≈ open (in the head) |
 | `…xar` | contact via a big-picture step-back | *spiritual* | **-r** ≈ resume (to a larger frame) |
 
-```
-`zohohul wolozoxal.`
+> `zohohul wolozoxal.`
+>
+> z-house | w-competence-met-physical
+>
+> "The house serves competence (physical contact)."
 
-gloss: `z-house` · `w-competence-met-physical`
-
-*The house serves competence (physical contact).*
-```
-
-```
-`zabogol wolozoxam.`
-
-gloss: `z-book` · `w-competence-met-mental`
-
-*The book serves competence (mental contact).*
-```
+> `zabogol wolozoxam.`
+>
+> z-book | w-competence-met-mental
+>
+> "The book serves competence (mental contact)."
 
 ### Prescription (`xo`): ought
 <a id="value-force"></a>
@@ -102,21 +92,17 @@ That ending is **prescription force**: how strongly you claim the ought. If you 
 | `…xom` | you stand behind this should (soft default if unknown) | *endorse* | **-m** ≈ open backing |
 | `…xor` | worth considering here | *invite* | **-r** ≈ light resume (held out) |
 
-```
-`zazawan vezehel honogoxom.`
+> `zazawan vezehel honogoxom.`
+>
+> z-Azawan | v-tell | h-relatedness-ought-endorse
+>
+> "Azawan tells: relatedness ought to be served (endorse)."
 
-gloss: `z-Azawan` · `v-tell` · `h-relatedness-ought-endorse`
-
-*Azawan tells: relatedness ought to be served (endorse).*
-```
-
-```
-`zuhubun vuzunul huhuhexol.`
-
-gloss: `z-Uhubun` · `v-sing` · `h-survival-ought-bound`
-
-*Uhubun sings: survival ought to be protected (bound).*
-```
+> `zuhubun vuzunul huhuhexol.`
+>
+> z-Uhubun | v-sing | h-survival-ought-bound
+>
+> "Uhubun sings: survival ought to be protected (bound)."
 
 ### Unmet (`xu`): costs
 <a id="value-changeability"></a>
@@ -131,21 +117,17 @@ That ending is **changeability**: how lasting the cost is. If you do not know, u
 | `…xum` | effort or circumstance may change the cost (soft default if unknown) | *modifiable* | **-m** ≈ open to change |
 | `…xur` | usually met; not this moment | *temporary* | **-r** ≈ light (this moment only) |
 
-```
-`zazegel walodoxur.`
+> `zazegel walodoxur.`
+>
+> z-gathering | w-autonomy-unmet-temporary
+>
+> "The gathering costs autonomy right now (temporary)."
 
-gloss: `z-gathering` · `w-autonomy-unmet-temporary`
-
-*The gathering costs autonomy right now (temporary).*
-```
-
-```
-`zabogol wolozoxum.`
-
-gloss: `z-book` · `w-competence-unmet-modifiable`
-
-*The book costs competence (modifiable).*
-```
+> `zabogol wolozoxum.`
+>
+> z-book | w-competence-unmet-modifiable
+>
+> "The book costs competence (modifiable)."
 
 ### Word shape
 <a id="word-shape"></a>
@@ -297,13 +279,11 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 English *have to* / *need to* / *doing this for…* often names a **motive**: why the action is happening, as a description, not a *should*. Write `/h/` on the clause with the need root, mid-word **`x`**, **`e`**, then an ending. That ending is **preference standing**: whether the reason comes from the situation, from the agent, or from protecting against a cost. If you do not know the standing, use **-m**. **-n** is ordinary [proper](reference-suffix.md#proper-name--n). Habit of the reason uses **`hual`** (*usually my reason* is **`…xem`** plus **`hual`**).
 
-```
-`zazawan vezehel honogoxem.`
-
-gloss: `z-Azawan` · `v-tell` · `h-relatedness-motive-internal`
-
-*Azawan tells for relatedness (internal reason).*
-```
+> `zazawan vezehel honogoxem.`
+>
+> z-Azawan | v-tell | h-relatedness-motive-internal
+>
+> "Azawan tells for relatedness (internal reason)."
 
 **Not the same job as:** prescription **`xo`** (*should* serve or protect this need). **`xe`** describes *doing for this need*.
 
@@ -341,13 +321,11 @@ Beginner already attached `/w/` after a noun and `/h/` on the clause. The rest o
 
 Prefer **-m** on **`xu` / `xe` / `xo`** when that table’s dimension is unclear. Several values are several `/h/` or `/w/` words (`holozoxal honogoxal`), not stacked `x`-additions on one need. The **host** word carries literal vs metaphorical sense.
 
-```
-`zazawan vezehel holozoxal honogoxem.`
-
-gloss: `z-Azawan` · `v-tell` · `h-competence-met-physical` · `h-relatedness-motive-internal`
-
-*Azawan tells: competence is met (physical) and relatedness is the internal motive.*
-```
+> `zazawan vezehel holozoxal honogoxem.`
+>
+> z-Azawan | v-tell | h-competence-met-physical | h-relatedness-motive-internal
+>
+> "Azawan tells: competence is met (physical) and relatedness is the internal motive."
 
 
 ### Translation practice

@@ -80,13 +80,11 @@ A syllable ends with a consonant only at the **end of the word**. Inside a root,
 
 When English says *how many* or *which place*, Agalan writes a [number word](numbers.md). After the role letter, the spoken marker begins with **r**, so you get a cluster ordinary content never uses (`gr…`, `zr…`, `vr…`, `hr…`, `jr…`, `xr…`). You can hear “this is a number” from that cluster: content roots start with a vowel, so **r** as the start of a syllable after a role letter is the number marker (`ra` / `ru` / `re` / `ro`; end-relative rank uses **`eu`**, spoken `reu…` for written **`#-`**). Stacked vowels stay separate syllables (`juon` = *ju'on*).
 
-```
-`zagadalx grarel.`
-
-gloss: `z-cat-x` · `g-three`
-
-*Three cats.*
-```
+> `zagadalx grarel.`
+>
+> z-cat-x | g-three
+>
+> "Three cats."
 
 Spoken `g+3` is ***grarel*** (**g** + **ra** + digit **re** + **-l**). Inside a content root, **r** still appears only after a vowel (`uru`).
 

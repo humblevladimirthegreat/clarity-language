@@ -15,55 +15,45 @@ English splits three nearby jobs on a quality like *challenging*. *More … than
 
 When English would say *Azawan is more challenging than Ululon*, you put two people in order on one quality. Write both names, then the **rank join** **`zel`** (vowel **`e`**), then the adjective they share (`/ɡ/`). The first name sits higher on that quality than the second. Both may still sit high; the join only says who ranks higher. (cue: **`e`** ≈ order — the shared `/ɡ/` is the ladder)
 
-```
-`zazawan zululon zel gomonam.`
+> `zazawan zululon zel gomonam.`
+>
+> z-Azawan | z-Ululon | z-rank/more | g-challenging
+>
+> "Azawan is more challenging than Ululon."
 
-gloss: `z-Azawan` · `z-Ululon` · `z-rank/more` · `g-challenging`
-
-*Azawan is more challenging than Ululon.*
-```
-
-```
-`zuhubun zazawan zel gelem.`
-
-gloss: `z-Uhubun` · `z-Azawan` · `z-rank/more` · `g-big`
-
-*Uhubun is bigger than Azawan.*
-```
+> `zuhubun zazawan zel gelem.`
+>
+> z-Uhubun | z-Azawan | z-rank/more | g-big
+>
+> "Uhubun is bigger than Azawan."
 
 ### Superlatives (`zel` + one name)
 <a id="superlatives"></a>
 
 When English would say *the most challenging*, you are still ranking, but you name only the winner. One name before `zel`, then the same shared adjective, means that person ranks highest in the group you have in mind.
 
-```
-`zazawan zel gomonam.`
+> `zazawan zel gomonam.`
+>
+> z-Azawan | z-rank/more | g-challenging
+>
+> "Azawan is the most challenging (of all)."
 
-gloss: `z-Azawan` · `z-rank/more` · `g-challenging`
-
-*Azawan is the most challenging (of all).*
-```
-
-```
-`zuhubun zel guzumum.`
-
-gloss: `z-Uhubun` · `z-rank/more` · `g-happy`
-
-*Uhubun is the happiest (of all).*
-```
+> `zuhubun zel guzumum.`
+>
+> z-Uhubun | z-rank/more | g-happy
+>
+> "Uhubun is the happiest (of all)."
 
 ### Degree (*much* / *slightly*)
 <a id="degree"></a>
 
 English *much more* / *slightly more* adds **how large the gap is**, without giving a number. Write that extra detail as `/w/` after the same shared adjective.
 
-```
-`zazawan zululon zel gomonam wogegal.`
-
-gloss: `z-Azawan` · `z-Ululon` · `z-rank/more` · `g-challenging` · `w-flood`
-
-*Azawan is much more challenging than Ululon.*
-```
+> `zazawan zululon zel gomonam wogegal.`
+>
+> z-Azawan | z-Ululon | z-rank/more | g-challenging | w-flood
+>
+> "Azawan is much more challenging than Ululon."
 
 ### Equatives (`ae` + shared scale)
 <a id="equatives"></a>
@@ -72,33 +62,27 @@ gloss: `z-Azawan` · `z-Ululon` · `z-rank/more` · `g-challenging` · `w-flood`
 
 When English would say *as challenging as*, you are not picking a winner. You are saying two people sit at the **same height** on the quality. Write both names, then equality join **`zael`** (vowel **`ae`**), then the same kind of shared adjective (`/ɡ/`). Closed **-l** (`zael`) is a firm match. Open **-m** (`zaem`) is *about as … as*. (cue: **`ae`** ≈ add + order — they share a rank)
 
-```
-`zazawan zululon zael gomonam.`
+> `zazawan zululon zael gomonam.`
+>
+> z-Azawan | z-Ululon | z-as…as | g-challenging
+>
+> "Azawan is as challenging as Ululon."
 
-gloss: `z-Azawan` · `z-Ululon` · `z-as…as` · `g-challenging`
-
-*Azawan is as challenging as Ululon.*
-```
-
-```
-`zululon zuhubun zael guzumum.`
-
-gloss: `z-Ululon` · `z-Uhubun` · `z-as…as` · `g-happy`
-
-*Ululon is as happy as Uhubun.*
-```
+> `zululon zuhubun zael guzumum.`
+>
+> z-Ululon | z-Uhubun | z-as…as | g-happy
+>
+> "Ululon is as happy as Uhubun."
 
 **Compare with:** English *is ADJ* with no *as … as* is [classification](predication.md#classification): `zazawan gomonam` *Azawan is challenging*. Use **`ae`** when two people share a height on the quality.
 
 **Compare with:** English *both are challenging* is an *and*-list plus a shared adjective (`zazawan zululon zal gomonam`): each has the quality. That is not a ranking and not a matching height. Use **`ae`** only for *as … as*.
 
-```
-`zazawan zululon zaem gudubul.`
-
-gloss: `z-Azawan` · `z-Ululon` · `z-as…as.open` · `g-bright`
-
-*Azawan is about as bright as Ululon.*
-```
+> `zazawan zululon zaem gudubul.`
+>
+> z-Azawan | z-Ululon | z-as…as.open | g-bright
+>
+> "Azawan is about as bright as Ululon."
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -259,13 +243,11 @@ Shared `/w/` on a ranked adjective list is shared *degree* over those properties
 
 English *both are challenging* (or *Azawan and Ululon are challenging*) says **each** has the quality. It does not rank them and does not say they match in height. Write the names, then set join **`a`** (`zal`), then a shared singular adjective (`/ɡ/`). Each name gets that adjective.
 
-```
-`zazawan zululon zal gomonam.`
-
-gloss: `z-Azawan` · `z-Ululon` · `z-and` · `g-challenging`
-
-*Azawan and Ululon are challenging.*
-```
+> `zazawan zululon zal gomonam.`
+>
+> z-Azawan | z-Ululon | z-and | g-challenging
+>
+> "Azawan and Ululon are challenging."
 
 **Compare with:** *as challenging as* uses equality **`ae`** (`zael`). *More challenging than* uses rank **`e`**.
 
@@ -284,13 +266,11 @@ Equality **`ae`** with a shared scale needs **two or more** names. **`ae`** with
 
 English *two meters more challenging* still ranks two people on one quality, and it also names **how large the gap is**. Keep the rank join and the shared scale adjective. After that adjective, write a **measure noun** (`/b/`): that noun is the **unit**, and `/ɡ/` on the unit is the **amount**. Bare unit `urule` *measurement* is the short meter; titled `burulexrawon` is the full word ([measure phrases](numbers-applied.md#measure-phrases)).
 
-```
-`zazawan zululon zel gomonam burulel g+2.`
-
-gloss: `z-Azawan` · `z-Ululon` · `z-rank/more` · `g-challenging` · `b-measurement` · `g-+2`
-
-*Azawan is two meters more challenging than Ululon.*
-```
+> `zazawan zululon zel gomonam burulel g+2.`
+>
+> z-Azawan | z-Ululon | z-rank/more | g-challenging | b-measurement | g-+2
+>
+> "Azawan is two meters more challenging than Ululon."
 
 **Related form:** vague *much* / *slightly* is shared `/w/` after the scale adjective (`wogegal`), not a counted `/b/`.
 
@@ -420,13 +400,11 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 English *worse than Average* (or *Typical*, *Professional*, *my bar*) ranks someone against a **named standard**, not against another person you already introduced. Use reverse rank **`ue`** on a positive or neutral scale: the judged name first, the named bar second (**-n**), then the shared adjective. The judged name sits **below** that bar.
 
-```
-`zazawan zalaban zuel guzunul.`
-
-gloss: `z-Azawan` · `z-Professional` · `z-rank/less` · `g-sing`
-
-*Azawan is worse at singing than Professional.*
-```
+> `zazawan zalaban zuel guzunul.`
+>
+> z-Azawan | z-Professional | z-rank/less | g-sing
+>
+> "Azawan is worse at singing than Professional."
 
 Closed **-l** stands behind the ranking. Open **-m** (`zuem`) is soft *somewhat worse than…*. Exclusive **`oe`** is pick-one triage on the ladder. Prefer **`ue`** plus a positive scale for English-style *worse than*; forward **`e`** fits when the scale is already cost- or harm-oriented. The same fence works under `/d/` or `/b/` when the ranked group fills that slot.
 

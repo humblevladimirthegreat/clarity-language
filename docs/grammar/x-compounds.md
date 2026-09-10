@@ -13,13 +13,11 @@ When two published roots sit in **one** content word, write **`x`** between them
 
 After the [role letter](core.md#beginner) (the first letter of the word: subject, verb, and so on), look at what sits left and right of the first **`x`**. The [ending](reference-suffix.md) (**-l** / **-m** / **-n** / **-r**) belongs to the whole word, not to the left piece alone. (cue: **x** ≈ plus: two pieces make one word)
 
-```
-`zuzuzuxogoven.`
-
-gloss: `z-Sushi-Coffee`
-
-*Sushi-Coffee* (one named label)
-```
+> `zuzuzuxogoven.`
+>
+> z-Sushi-Coffee
+>
+> "Sushi-Coffee" (one named label)
 
 <AgelanInspect text="zuzuzuxogoven." />
 
@@ -58,23 +56,19 @@ A published content root is longer than one vowel, so a lone vowel **left** of *
 
 When one label still shows a kind and then a field (or a further title), English often stacks those pieces in order (*love* in the *crush* sense; a shop name with a third piece). Agalan writes that as a **flat** list: the first content root is the kind; each later root after **`x`** narrows it. One ending sits on the whole word, so you can add another **`x`** + root without changing the first pieces.
 
-```
-`golovexagal.`
-
-gloss: `g-love-x-crush`
-
-*love in the crush sense*
-```
+> `golovexagal.`
+>
+> g-love-x-crush
+>
+> "love in the crush sense"
 
 <AgelanInspect text="golovexagal." />
 
-```
-`zuzuzuxogovexadedan.`
-
-gloss: `z-Sushi-Coffee-Tea`
-
-*Sushi-Coffee-Tea* (one named label)
-```
+> `zuzuzuxogovexadedan.`
+>
+> z-Sushi-Coffee-Tea
+>
+> "Sushi-Coffee-Tea" (one named label)
 
 <AgelanInspect text="zuzuzuxogovexadedan." />
 
@@ -187,13 +181,11 @@ Some kinds English treats as one word (*bedroom*, *friend*) are one lexicon stem
 
 Write `LEFT` + that letter + `RIGHT` as the **stem**, then the role letter and ending on the whole word, as with any content word.
 
-```
-`zohohulabedel.`
-
-gloss: `z-bedroom`
-
-*a bedroom.*
-```
+> `zohohulabedel.`
+>
+> z-bedroom
+>
+> "a bedroom."
 
 <AgelanInspect text="zohohulabedel." />
 

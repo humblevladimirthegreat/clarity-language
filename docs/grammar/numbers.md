@@ -13,41 +13,33 @@ After the first letter (the role), a **marker** tells count versus rank. Digits 
 
 To say **how many** of a thing there are, put a number word after the noun, in the same place as other adjectives (`/ɡ/`). The word starts with **`g`**, then the count marker (written **`+`**), then the digit: **`g+3`** is *three*. (cue: **`+`** / **`a`** ≈ add — how many)
 
-```
-`zagadalx g+3.`
+> `zagadalx g+3.`
+>
+> z-cat-x | g-three
+>
+> "Three cats."
 
-gloss: `z-cat-x` · `g-three`
-
-*Three cats.*
-```
-
-```
-`zazawan dabogolx g+3 vejel.`
-
-gloss: `z-Azawan` · `d-book-x` · `g-three` · `v-see`
-
-*Azawan sees three books.*
-```
+> `zazawan dabogolx g+3 vejel.`
+>
+> z-Azawan | d-book-x | g-three | v-see
+>
+> "Azawan sees three books."
 
 ### Ordinals (`g#N`)
 
 To say **which place** a thing has in a series (*the first*, *the second*, …), put a rank number after the noun, in the same adjective place. **`g#2`** is *the second*. Written **`#`** is the rank marker; the digit follows. (cue: **`#`** / **`e`** ≈ order — which place, from the start)
 
-```
-`zabogol g#2.`
+> `zabogol g#2.`
+>
+> z-book | g-second
+>
+> "The second book."
 
-gloss: `z-book` · `g-second`
-
-*The second book.*
-```
-
-```
-`zululon dabogol g#3 vuwurul.`
-
-gloss: `z-Ululon` · `d-book` · `g-third` · `v-write`
-
-*Ululon writes the third book.*
-```
+> `zululon dabogol g#3 vuwurul.`
+>
+> z-Ululon | d-book | g-third | v-write
+>
+> "Ululon writes the third book."
 
 ### More than one (`g+`)
 
@@ -55,13 +47,11 @@ You can say the count is **more than one** without naming how many. Keep the cou
 
 Naming the group (*cats* as a set) uses [**-x**](plurality.md) on the noun. Saying the amount is a different tool. Both may sit on the same noun (`zagadalx g+`).
 
-```
-`zagadalx g+.`
-
-gloss: `z-cat-x` · `g-more-than-one`
-
-*Cats — more than one.*
-```
+> `zagadalx g+.`
+>
+> z-cat-x | g-more-than-one
+>
+> "Cats — more than one."
 
 **Compare with:** English *some cats* (a set in this situation, no count) uses the noun plus [**-x**](plurality.md). Use **`g+`** when you mean the amount is more than one.
 
@@ -240,13 +230,11 @@ Beginner put the number after a noun (*three cats*). You can also put the **numb
 
 Change only the first letter. The marker and digits stay the same; referential prefixes (`/ɡ/`, `/z/`, `/d/`, `/b/`) keep the marker’s identity.
 
-```
-`z+3 gelulun.`
-
-gloss: `z-three` · `g-blue`
-
-*Three is blue.*
-```
+> `z+3 gelulun.`
+>
+> z-three | g-blue
+>
+> "Three is blue."
 
 | Prefix | Use | English |
 |--------|-----|---------|
@@ -325,13 +313,11 @@ To write a large or tiny amount in one word (*27 million*, *5.2e-4*, *25%*), put
 
 Speech uses **`ba`** / **`bu`** for that exponent, then **`ja`** if mantissa digits follow. You can drop a separate *times ten to the…* phrase; the magnitude lives in the same number word.
 
-```
-`g+27e12`
-
-gloss: `g-27e12`
-
-*27 × 10¹²*
-```
+> `g+27e12`
+>
+> g-27e12
+>
+> "27 × 10¹²."
 
 | Marker | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -420,13 +406,11 @@ Prefer shorthand in free slots. Speech is always the full CV form.
 
 You can use a number as the **action** (*add three*), as **how often** (*three times*), as a **shout** (*Three more!*), or as a **list label** (*point 2:*). Put the same markers under `/v/`, `/h/`, `/j/`, or `/x/`. The first letter chooses that job; the marker still says count, rank, or code.
 
-```
-`zululon vawalal h+3.`
-
-gloss: `z-Ululon` · `v-walk` · `h-three-times`
-
-*Ululon walks three times.*
-```
+> `zululon vawalal h+3.`
+>
+> z-Ululon | v-walk | h-three-times
+>
+> "Ululon walks three times."
 
 Referential prefixes (`/ɡ/` `/z/` `/d/` `/b/`) keep the marker as a plain amount or rank — [marker vowel](#marker-vowel-referential-identity).
 
@@ -538,13 +522,11 @@ Same under `/z/` `/d/` `/b/`. Soft **`g~+e3`** ≈ *about in the thousands band*
 
 To count **from the last place** (*penultimate*, *starting with the last one*), use marker **`eu`** (writing **`#-`**). Count back within the **same generation / cohort** (exponent omitted). Speech is **`reu`** + digits + ending (e.g. `g#-2` → *greudul*). Digraph **`eu`** is a different marker from rank-join **`ue`**.
 
-```
-`zabogol g#-2.`
-
-gloss: `z-book` · `g-2nd-from-end`
-
-*The penultimate book.*
-```
+> `zabogol g#-2.`
+>
+> z-book | g-2nd-from-end
+>
+> "The penultimate book."
 
 | Form | Reading |
 |------|---------|
@@ -880,13 +862,11 @@ A digit group may use **`ba`** or **`bu`** with **no** exponent digits. That emp
 | **Mantissa `≠0` + `ba`/`bu`∅** | hyperbole (*N gazillion* / *umpteenth*) |
 | **Mantissa `0` + `ba`/`bu`∅** | [zero × digitless exp](#zero-exponent) |
 
-```
-`zagadalx g+e.`
-
-gloss: `z-cat-x` · `g-+∞`
-
-*Cats — infinitely many.*
-```
+> `zagadalx g+e.`
+>
+> z-cat-x | g-+∞
+>
+> "Cats — infinitely many."
 
 **Writing:** **`e`** = speech **`ba`**; **`e-`** = speech **`bu`**. Digitless means no power digits after that mark: `g+e`, `g+1e`, `g+0e`, `g+e-`, `g+1e-`. Bare / assert **`e0`** writes power **`0`**: `g+e0`, `g+3e0` (not digitless).
 

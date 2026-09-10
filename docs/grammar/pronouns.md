@@ -13,23 +13,19 @@ After you have already named a person or thing, the next sentence can point back
 
 **Short resume:** cut the root **up to and including its 2nd vowel**. Prefer this when it already picks the right antecedent.
 
-```
-`zazawan vawalal. zazar vajul.`
-
-gloss: `z-Azawan` · `v-walk` · `z-←Azawan` · `v-sit`
-
-*Azawan walks. He sits.* (resume from the name’s root prefix)
-```
+> `zazawan vawalal. zazar vajul.`
+>
+> z-Azawan | v-walk | z-←Azawan | v-sit
+>
+> "Azawan walks. He sits." (resume from the name’s root prefix)
 
 When that short stem would match the **wrong** recent word, use a **full-root resume**: the **entire root** + **-r**.
 
-```
-`zodogol vawalal. zabogol gelem. zodogor vajul.`
-
-gloss: `z-dog` · `v-walk` · `z-book` · `g-size` · `z-←dog` · `v-sit`
-
-*A dog walks. A book is big. The dog sits.*
-```
+> `zodogol vawalal. zabogol gelem. zodogor vajul.`
+>
+> z-dog | v-walk | z-book | g-size | z-←dog | v-sit
+>
+> "A dog walks. A book is big. The dog sits."
 
 ### Special pronouns
 <a id="special-pronouns"></a>
@@ -38,61 +34,51 @@ Most of the time you name people with a proper name (`zazawan`, `zululon`) and r
 
 When a proper name is available, prefer that name (and its **-r** resume), including for talking about yourself: [proper name](reference-suffix.md#proper-name--n).
 
-```
-(Ululon speaking) `zululon vawalal.`
+(Ululon speaking)
 
-gloss: `z-Ululon` · `v-walk`
-
-*I walk.* Ululon names himself rather than saying *I*.
-```
+> `zululon vawalal.`
+>
+> z-Ululon | v-walk
+>
+> "I walk." Ululon names himself rather than saying *I*.
 
 Use **`ugobo`** (*speaker*) and **`edone`** (*listener*) when what matters is the conversation role, not a name.
 
-```
-`zugobon vuwurul dedonen.`
+> `zugobon vuwurul dedonen.`
+>
+> z-speaker | v-write | d-listener
+>
+> "I write you."
 
-gloss: `z-speaker` · `v-write` · `d-listener`
-
-*I write you.*
-```
-
-```
-`zugobon vawalal.`
-
-gloss: `z-speaker` · `v-walk`
-
-*I walk.*
-```
+> `zugobon vawalal.`
+>
+> z-speaker | v-walk
+>
+> "I walk."
 
 English *we* can mean “you and I” or “I and my people, not you.” Inclusive *we* (you and I) uses **`aha`**: the speaker and the people being addressed, together (**interlocutors**).
 
-```
-`zahan vawalal.`
-
-gloss: `z-interlocutors` · `v-walk`
-
-*We (you and I) walk.*
-```
+> `zahan vawalal.`
+>
+> z-interlocutors | v-walk
+>
+> "We (you and I) walk."
 
 **`enenu`** names a nonspecific **individual** (*someone*), not a particular person you have already named. Once that person is in the talk, resume them with content **-r**.
 
-```
-`zenenun velebel.`
-
-gloss: `z-someone` · `v-sleep`
-
-*Someone sleeps.*
-```
+> `zenenun velebel.`
+>
+> z-someone | v-sleep
+>
+> "Someone sleeps."
 
 When a sentence needs a whole following sentence as its object (English *that Ululon left*), **`adoro`** is the placeholder in the first sentence for that following material ([dependent clauses](core.md#dependent-clauses)). Put **`adoro` last** in its host slot; the dependent sentence follows with no extra host words in between. Default ending is **-l**. (cue: 🚪 *doorway*: the next sentence walks through)
 
-```
-`zugobon dazawan vezehel dadorol zululon vebarul.`
-
-gloss: `z-speaker` · `d-Azawan` · `v-tell` · `d-next-clause` · `z-Ululon` · `v-depart`
-
-*I told Azawan that Ululon left.*
-```
+> `zugobon dazawan vezehel dadorol zululon vebarul.`
+>
+> z-speaker | d-Azawan | v-tell | d-next-clause | z-Ululon | v-depart
+>
+> "I told Azawan that Ululon left."
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -263,13 +249,11 @@ Beginner already used content **-r** in the same slot as the earlier word (*he s
 
 English *going back to X* / *returning to that thread* names an earlier person or thing without making the next sentence *about* them. Use continue `/x/` plus the resume stem and **-r**. You can drop that word and the following claim is unchanged; it only points the listener at which earlier thread you mean.
 
-```
-`zazawan vawalal. zululon vurunul. xazawar velebel.`
-
-gloss: `z-Azawan` · `v-walk` · `z-Ululon` · `v-run` · `x-←Azawan` · `v-sleep`
-
-*Azawan walks. Ululon runs. Going back to Azawan, he sleeps.*
-```
+> `zazawan vawalal. zululon vurunul. xazawar velebel.`
+>
+> z-Azawan | v-walk | z-Ululon | v-run | x-←Azawan | v-sleep
+>
+> "Azawan walks. Ululon runs. Going back to Azawan, he sleeps."
 
 **Not the same job as:** *regarding X* / *as for X* uses `/h/` + `/b/` X ([adverbs](core.md#adverbs-h)).
 
@@ -277,13 +261,11 @@ gloss: `z-Azawan` · `v-walk` · `z-Ululon` · `v-run` · `x-←Azawan` · `v-sl
 
 Sometimes you still mean that person or thing, but you need a **different** slot: the doing, the kind, the manner. Change only the first letter; keep the resume stem and **-r**. English then uses a longer phrase (*do that with him*, *that one’s kind*) instead of *he* / *him*.
 
-```
-`zazawan vajul. zululon vazar.`
-
-gloss: `z-Azawan` · `v-sit` · `z-Ululon` · `v-←Azawan`
-
-*Azawan sits. Ululon does that with him.*
-```
+> `zazawan vajul. zululon vazar.`
+>
+> z-Azawan | v-sit | z-Ululon | v-←Azawan
+>
+> "Azawan sits. Ululon does that with him."
 
 | Agalan | Use | English |
 |--------|-----|---------|
@@ -297,13 +279,11 @@ gloss: `z-Azawan` · `v-sit` · `z-Ululon` · `v-←Azawan`
 
 When you address several people at once, English *you* does not say how many. The listener root **`edone`** plus associative **-x** names everyone this turn addresses: the vocative cluster, plus anyone still held as addressee. One addressee stays singular **`edone`**; several take **`edone…x`**. Inclusive *shall we* stays **`aha`**. Soft **`zaham`** hedges whether you really share the act.
 
-```
-`zedonenx vajul.`
-
-gloss: `z-listener` · `v-sit`
-
-*You all sit.*
-```
+> `zedonenx vajul.`
+>
+> z-listener | v-sit
+>
+> "You all sit."
 
 **Compare with:** *you and I* is **`aha`**. *Azawan and associates* is name…**-x** ([plurality](plurality.md#associative)).
 
@@ -438,13 +418,11 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 Intermediate already recast one referent into a new slot. Each table is an **antecedent** role; rows are the **pronoun** role. The mechanism is still one **-r**.
 
-```
-`zodogol vawalal. zawalar gelem.`
-
-gloss: `z-dog` · `v-walk` · `z-←walk` · `g-size`
-
-*A dog walks. That action is big.*
-```
+> `zodogol vawalal. zawalar gelem.`
+>
+> z-dog | v-walk | z-←walk | g-size
+>
+> "A dog walks. That action is big."
 
 #### Antecedent was a noun (`/z/`, `/d/`, or `/b/`)
 

@@ -16,31 +16,25 @@ Soft **`jom`** is the same question setting, said more gently (wondering rather 
 
 When every person and action in the clause is already named, the expected reply is *yes* or *no*. (cue: **o** ≈ one: a menu you pick from.)
 
-```
-`jol zazawan vawalal.`
+> `jol zazawan vawalal.`
+>
+> j-question | z-Azawan | v-walk
+>
+> "Does Azawan walk?"
 
-gloss: `j-question` · `z-Azawan` · `v-walk`
-
-*Does Azawan walk?*
-```
-
-```
-`jom zululon velebel.`
-
-gloss: `j-soft-question` · `z-Ululon` · `v-sleep`
-
-*Does Ululon sleep?* (gentle)
-```
+> `jom zululon velebel.`
+>
+> j-soft-question | z-Ululon | v-sleep
+>
+> "Does Ululon sleep?" (gentle)
 
 If the subject is *nobody* (`zal`) or the clause is *nothing happened* (`xal`), you are still asking *yes* or *no*, not *who*.
 
-```
-`jol zal vawalal.`
-
-gloss: `j-question` · `z-none` · `v-walk`
-
-*Does nobody walk?*
-```
+> `jol zal vawalal.`
+>
+> j-question | z-none | v-walk
+>
+> "Does nobody walk?"
 
 ### Fill-ask
 <a id="fill-ask-r"></a>
@@ -49,26 +43,22 @@ Sometimes you do not want *yes* or *no*. You want the other person to **name** s
 
 Keep **`jol`** or **`jom`** at the start. In the slot you want filled, use a join word that ends in **-r** (`zar`, `var`, `xar`, …). That **-r** is the blank ([unspecified-member **-r**](coordination.md#unspecified-member-r-phrase)). (cue: **-r** names this member; **a** ≈ add for *who/what*, **u** ≈ undo for *who/what else*.)
 
-```
-`jol zar vawalal.`
-
-gloss: `j-question` · `z-who` · `v-walk`
-
-*Who walks?*
-```
+> `jol zar vawalal.`
+>
+> j-question | z-who | v-walk
+>
+> "Who walks?"
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **a** (`zar` · `var` · `xar`) | fill the add-inventory | *Who/what?* / *What happened?* | **a** ≈ add |
 | **u** (`zur` · `vur` · `xur`) | fill what remains | *Who else?* / *What else?* | **u** ≈ undo |
 
-```
-`jol zur velebel.`
-
-gloss: `j-question` · `z-who-else` · `v-sleep`
-
-*Who else sleeps?*
-```
+> `jol zur velebel.`
+>
+> j-question | z-who-else | v-sleep
+>
+> "Who else sleeps?"
 
 **Compare with:** pointing back at someone already named uses content resume **-r** ([pronouns](pronouns.md)). Fill-ask uses only **join** **-r**.
 
@@ -77,23 +67,19 @@ gloss: `j-question` · `z-who-else` · `v-sleep`
 
 If more than one slot has join **-r** in the same question, each of those **-r** words is a blank. The answer is expected to **fill all** of them, in the order you said them.
 
-```
-`jol zar vejel dar.`
-
-gloss: `j-question` · `z-who` · `v-see` · `d-what`
-
-*Who sees what?*
-```
+> `jol zar vejel dar.`
+>
+> j-question | z-who | v-see | d-what
+>
+> "Who sees what?"
 
 If only one slot is unknown, put join **-r** only there. Write the known thing as an ordinary word (`-l` / `-m`).
 
-```
-`jol zar vejel dodogol.`
-
-gloss: `j-question` · `z-who` · `v-see` · `d-dog`
-
-*Who sees a dog?*
-```
+> `jol zar vejel dodogol.`
+>
+> j-question | z-who | v-see | d-dog
+>
+> "Who sees a dog?"
 
 ### Polar stance (*yes* / *no* / *sure*)
 <a id="polar-stance"></a>
@@ -117,21 +103,17 @@ When a sentence body follows *yes*, write **`jael`** then the body. You do not a
 | **`juel`** / soft **`juem`** | mismatch | *no* / *false* | **u** ≈ undo + **e** ≈ order (the claim does not line up) |
 | **`jaol`** / soft **`jaom`** | take up an offered option | *sure* / *I’ll take that* | **a** ≈ add + **o** ≈ one |
 
-```
-`jael.`
-
-*Yes.* / *True.* / *Got it.*
-```
+> `jael.`
+>
+> "Yes." / "True." / "Got it."
 
 A *…, yes?* confirm tag is its own next turn: finish the statement with a period, then write **`jael.`**
 
-```
-`zazawan vawalal. jael.`
-
-gloss: `z-Azawan` · `v-walk` · `j-yes`
-
-*Azawan walks. Yes.*
-```
+> `zazawan vawalal. jael.`
+>
+> z-Azawan | v-walk | j-yes
+>
+> "Azawan walks. Yes."
 
 **Compare with:** a command *Don’t walk* uses **`jul`**. **`juel`** answers whether a claim is true.
 
@@ -287,22 +269,18 @@ A stance word can stand alone (`jael.`), sit before a body (`jael zazawan vawala
 
 When the question already contains *not* (*Didn’t Azawan run?*), *yes* and *no* still say whether **that claim** matches. **`jael`** confirms the denial (*true: they didn’t*). **`juel`** says the denial is false (*they did*). Restate the body after the stance word when you want the polarity said twice. Offer words (**`jaol`** / **`juol`**) still answer *take this?*, not true/false.
 
-```
-`jol zazawan vul vurunul.`
-`jael.`
+> `jol zazawan vul vurunul.`
+> `jael.`
+>
+> j-question | z-Azawan | v-not | v-run | j-yes
+>
+> "Didn’t Azawan run? True, Azawan didn’t."
 
-gloss: `j-question` · `z-Azawan` · `v-not` · `v-run` · `j-yes`
-
-*Didn’t Azawan run? True, Azawan didn’t.*
-```
-
-```
-`jael vul vurunul.`
-
-gloss: `j-yes` · `v-not` · `v-run`
-
-*True: (they) didn’t run.*
-```
+> `jael vul vurunul.`
+>
+> j-yes | v-not | v-run
+>
+> "True: (they) didn’t run."
 
 ### Fill-ask arity
 <a id="fill-ask-arity"></a>
@@ -322,13 +300,11 @@ Bare **-r** in the queried slot is unbound *who* / *what* / *where*. Bare **`var
 
 To ask *when?* / *in what case?*, put an occasion word under `/h/` (or `/w/`) in the question. Bare **`har`** is the *when* blank. The same family also asks *anytime?* and *when else?*.
 
-```
-`jol zuhubun vawalal har.`
-
-gloss: `j-question` · `z-Uhubun` · `v-walk` · `h-when`
-
-*When does Uhubun walk?*
-```
+> `jol zuhubun vawalal har.`
+>
+> j-question | z-Uhubun | v-walk | h-when
+>
+> "When does Uhubun walk?"
 
 | Agalan | English (statement, bare) | English (under question, bare) |
 |--------|---------------------------|--------------------------------|
@@ -344,21 +320,17 @@ gloss: `j-question` · `z-Uhubun` · `v-walk` · `h-when`
 
 A *yes/no* question can put a join ending on a **named** item instead of a fill-ask blank. Single-item **-l** (or usual **-n**) asks you to confirm that singleton (*Just Azawan?*, *Has to be Azawan?*). Single-item **-m** offers it (*How about Uhubun?*). **`…ul`** / **`…um`** / **`…un`** confirm or offer a denial (*Not Azawan?*). Standalone **-l** / **-m** check emptiness (*Nothing?*, *Got nothing?*). Fill-ask still uses **…ar** / **…or** / **…er** / **…ur**.
 
-```
-`jol zazawan zal.`
+> `jol zazawan zal.`
+>
+> j-question | z-Azawan | z-just
+>
+> "Just Azawan?"
 
-gloss: `j-question` · `z-Azawan` · `z-just`
-
-*Just Azawan?*
-```
-
-```
-`jol zuhubun zam.`
-
-gloss: `j-question` · `z-Uhubun` · `z-offer`
-
-*How about Uhubun?*
-```
+> `jol zuhubun zam.`
+>
+> j-question | z-Uhubun | z-offer
+>
+> "How about Uhubun?"
 
 **Compare with:** *who* / *which* still uses join **-r** ([fill-ask](#fill-ask-r)).
 
@@ -367,13 +339,11 @@ gloss: `j-question` · `z-Uhubun` · `z-offer`
 
 When someone asked *who* / *what*, answer by **naming the fill**. A bare content word, a single-item join (**-l** / **-m** / **-n**), or a longer list all work. Leave no join **-r** in the answer; that **-r** was the blank. If they asked more than one blank, fill them in the same order as the **-r** words ([fill-all](#fill-all)).
 
-```
-`zazawan.`
-
-gloss: `z-Azawan`
-
-*Azawan.*
-```
+> `zazawan.`
+>
+> z-Azawan
+>
+> "Azawan."
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -502,13 +472,11 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 Under question, the rest of the single-item and standalone join map is confirm / offer (and fill-ask **-r**). On a list of two or more (no **-r**): **-l** picks from that closed menu; **-m** allows another name (and for **o**, *or none*); **u** is *none of* the listed; **ua** / **uo** is the complement of the listed; **ue** reverse-ranks among the listed. Join **-n** here is stock/usual.
 
-```
-`jol zazawan zel.`
-
-gloss: `j-question` · `z-Azawan` · `z-rank`
-
-*Is Azawan the only priority?*
-```
+> `jol zazawan zel.`
+>
+> j-question | z-Azawan | z-rank
+>
+> "Is Azawan the only priority?"
 
 **Not the same job as:** proper-name **-n** ([reference suffix](reference-suffix.md#proper-name--n)).
 

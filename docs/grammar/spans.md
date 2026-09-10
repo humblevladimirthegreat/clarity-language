@@ -15,13 +15,11 @@ A **cite** holds wording you are quoting: what someone said, a title string, or 
 
 Start with one quoted token as the object of *said*:
 
-```
-`zazawan d[hi] vezehel.`
-
-gloss: `z-Azawan` · `d-hi` · `v-tell`
-
-*Azawan said “hi.”*
-```
+> `zazawan d[hi] vezehel.`
+>
+> z-Azawan | d-hi | v-tell
+>
+> "Azawan said “hi.”"
 
 The whole `d[hi]` is the direct object (who or what is acted on). If the interior is Agalan words, those inner words still start with their own role letters.
 
@@ -38,45 +36,37 @@ Verbatim wording is **exact**: no extra mark (`d[hi]`). That is the same as endi
 | **`~`** | paraphrase (**-m**) | the gist, not the exact words | **~** / **-m** leaves the hold open |
 | **`@`** | proper (**-n**) | titled designation of that wording | **@** / **-n** names the chunk |
 
-```
-`zululon d~[hi] vuwurul.`
+> `zululon d~[hi] vuwurul.`
+>
+> z-Ululon | d-hi | v-write
+>
+> "Ululon wrote something like “hi.”"
 
-gloss: `z-Ululon` · `d-hi` · `v-write`
-
-*Ululon wrote something like “hi.”*
-```
-
-```
-`zuhubun d@[Hamlet] vuzunul.`
-
-gloss: `z-Uhubun` · `d-Hamlet` · `v-sing`
-
-*Uhubun sang “Hamlet.”*
-```
+> `zuhubun d@[Hamlet] vuzunul.`
+>
+> z-Uhubun | d-Hamlet | v-sing
+>
+> "Uhubun sang “Hamlet.”"
 
 ### Resume (`[=]`)
 
 To point back at a prior span without repeating its interior, put **`=`** inside the same brackets: `d[=]`. That form uses resume **-r**. The letter on the resume is the role this pointer plays in *this* sentence (here still the object of *said*).
 
-```
-`jol zululon d[=] vezehel.`
-
-gloss: `j-question` · `z-Ululon` · `d-←cite` · `v-tell`
-
-*Ululon said that?!*
-```
+> `jol zululon d[=] vezehel.`
+>
+> j-question | z-Ululon | d-←cite | v-tell
+>
+> "Ululon said that?!"
 
 ### Mention (`{…}`)
 
 A **mention** holds the **word or form itself** (*the word “dog”*), not a quote of speech. Write the role letter, then curly braces around that form.
 
-```
-`z{odogo} gelulul.`
-
-gloss: `z-{dog}` · `g-blue`
-
-*The word “dog” is blue.*
-```
+> `z{odogo} gelulul.`
+>
+> z-{dog} | g-blue
+>
+> "The word “dog” is blue."
 
 With **`@`** / **-n**, mention is *the title X* / *the proverb X* as a **named unit**: `d@{Hamlet}`.
 
@@ -87,13 +77,11 @@ With **`@`** / **-n**, mention is *the title X* / *the proverb X* as a **named u
 
 **Opaque** holds a foreign, code, or raw surface that is not ordinary Agalan words. Write the role letter, then angle brackets around that blob. Write no ending after `>`:
 
-```
-`zazawan d<sushi> vejel.`
-
-gloss: `z-Azawan` · `d-<sushi>` · `v-see`
-
-*Azawan saw sushi.* (opaque surface)
-```
+> `zazawan d<sushi> vejel.`
+>
+> z-Azawan | d-<sushi> | v-see
+>
+> "Azawan saw sushi." (opaque surface)
 
 Keep the source’s **casing** inside `<>` when that writing system uses case (`d<NaCl>`, `d<iPhone>`): [capitalization](core.md#capitalization).
 
@@ -112,21 +100,17 @@ An **aside** is a parenthetical comment. Package it as an **adverb**: write **`h
 
 The interior is ordinary Agalan: a fragment, or a clause body that keeps the **same speech act** as the outer sentence (the same statement, question, or command).
 
-```
-`zazawan vawalal h(huzumum).`
+> `zazawan vawalal h(huzumum).`
+>
+> z-Azawan | v-walk | h-happy
+>
+> "Azawan walks (happily)."
 
-gloss: `z-Azawan` · `v-walk` · `h-happy`
-
-*Azawan walks (happily).*
-```
-
-```
-`zazawan vawalal h(zululon velebel).`
-
-gloss: `z-Azawan` · `v-walk` · `h-` · `z-Ululon` · `v-sleep`
-
-*Azawan walks (Ululon sleeps).*
-```
+> `zazawan vawalal h(zululon velebel).`
+>
+> z-Azawan | v-walk | h- | z-Ululon | v-sleep
+>
+> "Azawan walks (Ululon sleeps)."
 
 A one-word manner with nothing to package is a plain adverb: `zazawan vawalal huzumum.`
 
@@ -139,13 +123,11 @@ A one-word manner with nothing to package is a plain adverb: `zazawan vawalal hu
 
 The letter on the open is the role of the **entire span** in the outer sentence. Ask what that chunk is doing out there: object of *said*, subject of *is blue*, and so on. A cite can be the **verb** when you echo the act as wording:
 
-```
-`jul zululon v[oops].`
-
-gloss: `j-prohibition` · `z-Ululon` · `v-oops`
-
-*Don’t “oops,” Ululon.*
-```
+> `jul zululon v[oops].`
+>
+> j-prohibition | z-Ululon | v-oops
+>
+> "Don’t “oops,” Ululon."
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -300,13 +282,11 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 Beginner writing already packages a quote, mention, aside, or blob in brackets. Speech still has to say which slot the chunk fills, what kind of span it is, how far the open runs, and how faithful the wording is. The open is one word: role letter, then TYPE vowel, then mid-word **`x`**, then EDGE vowel, then the ending. That word stands where writing had `d[` or `h(`; a multi-token open still needs a close word later.
 
-```
-`zazawan daxol hi vezehel.`
-
-gloss: `z-Azawan` · `d-cite.atomic` · `hi` · `v-tell`
-
-*Azawan said “hi.”*
-```
+> `zazawan daxol hi vezehel.`
+>
+> z-Azawan | d-cite.atomic | hi | v-tell
+>
+> "Azawan said “hi.”"
 
 ```text
 {PoS}{TYPE}x{EDGE}{ENDING}
@@ -342,13 +322,11 @@ Beginner already used square, round, curly, and angle brackets for cite, aside, 
 
 A pair of brackets can wrap one token or many, run to the end of the clause, or hold nothing. In speech, the vowel **after** `x` is **EDGE**: it says whether the open waits for an explicit close, ends at the next turn or clause join, takes exactly one following token, or has no interior.
 
-```
-`zululon daxal hi zazawan xuxul vezehel.`
-
-gloss: `z-Ululon` · `d-cite.multi` · `hi` · `z-Azawan` · `x-close` · `v-tell`
-
-*Ululon said “hi Azawan.”*
-```
+> `zululon daxal hi zazawan xuxul vezehel.`
+>
+> z-Ululon | d-cite.multi | hi | z-Azawan | x-close | v-tell
+>
+> "Ululon said “hi Azawan.”"
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -404,13 +382,11 @@ The close does not repeat PoS, TYPE, EDGE, or open fidelity. Explicit close for 
 
 When one packaged chunk sits inside another (a quote that contains a parenthetical, or a cite wrapping a mention), each typed fence nests. A multi-token open starts a layer; **`xuxul`** closes the innermost layer. Atomic opens and resumes do not start a new layer. **`@`** / **`~`** apply only to the immediately following open.
 
-```
-`zazawan d[ h(huzumum) hi ] vezehel.`
-
-gloss: `z-Azawan` · `d-cite` · `h-aside` · `h-happy` · `hi` · `v-tell`
-
-*Azawan said “hi” (happily).*
-```
+> `zazawan d[ h(huzumum) hi ] vezehel.`
+>
+> z-Azawan | d-cite | h-aside | h-happy | hi | v-tell
+>
+> "Azawan said “hi” (happily)."
 
 The same nest works as `d[ z{…} ]` or `d~[ d<…> ]`.
 
@@ -419,13 +395,11 @@ The same nest works as `d[ z{…} ]` or `d~[ d<…> ]`.
 
 Sometimes *maybe* or a join should apply only to a multi-word chunk, not the whole clause. Writing marks that chunk with **`^ … ^`**. Speech has no open or close word for those edges: you hear a pause and one tight phrase. The binder **inside** does the work.
 
-```
-`zazawan ^ h<maybe>l zodogol garedel ^ vejel.`
-
-gloss: `z-Azawan` · `^` · `h-maybe` · `z-dog` · `g-red` · `^` · `v-see`
-
-*Azawan saw maybe the red dog* (*maybe* targets that chunk).
-```
+> `zazawan ^ h<maybe>l zodogol garedel ^ vejel.`
+>
+> z-Azawan | ^ | h-maybe | z-dog | g-red | ^ | v-see
+>
+> "Azawan saw maybe the red dog." (*maybe* targets that chunk).
 
 **Compare with:** quoting, asides, mentions, and opaque blobs use typed [span fences](#writing) (`d[…]`, `h(…)`). Islands only group so a binder inside can target that chunk.
 
@@ -449,13 +423,11 @@ gloss: `z-Azawan` · `^` · `h-maybe` · `z-dog` · `g-red` · `^` · `v-see`
 | Join **inside** | joins only interior conjuncts |
 | Join **outside** with island nearby | ordinary lookback (edges do not filter an outside join) |
 
-```
-`zazawan ^ zululon zal ^ zam vejel.`
-
-gloss: `z-Azawan` · `^` · `z-Ululon` · `z-and` · `^` · `z-and.open` · `v-see`
-
-*Azawan and (just Ululon) saw …*
-```
+> `zazawan ^ zululon zal ^ zam vejel.`
+>
+> z-Azawan | ^ | z-Ululon | z-and | ^ | z-and.open | v-see
+>
+> "Azawan and (just Ululon) saw …."
 
 **Speech:** brief reset into the island, one tight phrase, boundary on the last island stress. In singing, use an ordinary phrase bow.
 
@@ -612,13 +584,11 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 You already close a multi-token span with **`xuxul`**, the spoken match for `]` / `}` / `)` / `>`. Two more close words: **`xuxur`** keeps the wording as written but marks that the span is cut off, trails off, or is defective; **`xuxum`** closes every still-open span at once.
 
-```
-`zazawan daxal hi xuxur vezehel.`
-
-gloss: `z-Azawan` · `d-cite.multi` · `hi` · `x-close.editorial` · `v-tell`
-
-*Azawan said “hi…”*
-```
+> `zazawan daxal hi xuxur vezehel.`
+>
+> z-Azawan | d-cite.multi | hi | x-close.editorial | v-tell
+>
+> "Azawan said “hi…”"
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|

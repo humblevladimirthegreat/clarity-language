@@ -13,23 +13,19 @@ You already write a [citation](reference-suffix.md): root + ending (`odogol`, `a
 
 A period ends the statement. The usual order is **Subject – Verb**.
 
-```
-`zodogol vawalal.`
-
-gloss: `z-dog` · `v-walk`
-
-*A dog walks.*
-```
+> `zodogol vawalal.`
+>
+> z-dog | v-walk
+>
+> "A dog walks."
 
 A name you already cite with **-n** (`azawan`) keeps **-n** in the sentence:
 
-```
-`zazawan vawalal.`
-
-gloss: `z-Azawan` · `v-walk`
-
-*Azawan walks.*
-```
+> `zazawan vawalal.`
+>
+> z-Azawan | v-walk
+>
+> "Azawan walks."
 
 ### Direct object (`/d/`)
 
@@ -37,13 +33,11 @@ gloss: `z-Azawan` · `v-walk`
 
 The usual order is **Subject – Direct Object – Verb**. Because the first letter already says each word’s role, you may move those three without changing who did what. Put first the piece you want to highlight: the person or thing the sentence is “about,” or the new information. English often does that with stress; Agalan can do it with order.
 
-```
-`zodogol dagadal vejel.`
-
-gloss: `z-dog` · `d-cat` · `v-see`
-
-*A dog sees a cat.*
-```
+> `zodogol dagadal vejel.`
+>
+> z-dog | d-cat | v-see
+>
+> "A dog sees a cat."
 
 ### Adjectives (`/ɡ/`)
 <a id="adjectives-ɡ"></a>
@@ -52,21 +46,17 @@ When you name a **property or kind** (*blue*, *a dog*), put that word in `/ɡ/` 
 
 English *is* in *A dog is blue* is already in that pair: you do not write a separate “to be” verb.
 
-```
-`zodogol gelulul.`
+> `zodogol gelulul.`
+>
+> z-dog | g-blue
+>
+> "A dog is blue."
 
-gloss: `z-dog` · `g-blue`
-
-*A dog is blue.*
-```
-
-```
-`zazawan godogol.`
-
-gloss: `z-Azawan` · `g-dog`
-
-*Azawan is a dog.*
-```
+> `zazawan godogol.`
+>
+> z-Azawan | g-dog
+>
+> "Azawan is a dog."
 
 The same string is also the noun plus its adjective: `zodogol gelulul` is both the full sentence *A dog is blue* and the phrase *a blue dog*.
 
@@ -75,47 +65,39 @@ The same string is also the noun plus its adjective: `zodogol gelulul` is both t
 
 After an adjective, you can add how intense it is or in what manner. That extra detail uses `/w/` immediately after the `/ɡ/` word.
 
-```
-`zodogol gelulul welem.`
-
-gloss: `z-dog` · `g-blue` · `w-size`
-
-*A dog is very blue.* / *a very blue dog*
-```
+> `zodogol gelulul welem.`
+>
+> z-dog | g-blue | w-size
+>
+> "A dog is very blue." / "a very blue dog"
 
 ### Adverbs (`/h/`)
 <a id="adverbs-h"></a>
 
 When you say **how, when, or where** an action happens, use `/h/` (an **adverb**). You may place it anywhere in that sentence. Several adverbs can sit next to each other (`hadazam howom` *hastily and quietly*).
 
-```
-`zodogol hadazam vawalal.`
-
-gloss: `z-dog` · `h-haste` · `v-walk`
-
-*A dog walks hastily.*
-```
+> `zodogol hadazam vawalal.`
+>
+> z-dog | h-haste | v-walk
+>
+> "A dog walks hastily."
 
 ### Extra nouns (`/b/`)
 <a id="extra-nouns"></a>
 
 Some adjectives and adverbs name a **relation** that needs another person or thing (*inside …*, *for …*). Put that extra noun in `/b/` right after the `/ɡ/` or `/h/` word. The root on the `/ɡ/` or `/h/` word names the relation; `/b/` marks the noun that completes it. English *to* / *for* (who receives something) uses that `/h/` + `/b/` shape too.
 
-```
-`hogorem bohohul`
+> `hogorem bohohul`
+>
+> h-inclusion | b-house
+>
+> "inside a house"
 
-gloss: `h-inclusion` · `b-house`
-
-*inside a house*
-```
-
-```
-`zodogol velebel hogorem bohohul.`
-
-gloss: `z-dog` · `v-sleep` · `h-inclusion` · `b-house`
-
-*A dog sleeps inside a house.*
-```
+> `zodogol velebel hogorem bohohul.`
+>
+> z-dog | v-sleep | h-inclusion | b-house
+>
+> "A dog sleeps inside a house."
 
 **`ogore`** here is the published metaphor *inclusion* / *inside*. (cue: ⭕ *hollow circle*: being inside the boundary)
 
@@ -139,13 +121,11 @@ The default statement word is **`jal`**. A period already means “this is a sta
 
 When the setting is not that default statement, write a `/j/` act word immediately before the body:
 
-```
-`jel vawalal.`
-
-gloss: `j-command` · `v-walk`
-
-*Walk!*
-```
+> `jel vawalal.`
+>
+> j-command | v-walk
+>
+> "Walk!"
 
 | Agalan | Use | Cue |
 |--------|-----|-----|
@@ -169,23 +149,19 @@ The dependent may open with its own `/j/` words, or keep the main sentence’s s
 
 *That…* content is often a direct object, with **`adoro` last** in the main sentence:
 
-```
-`zazawan dululon vezehel dadorol zodogol vurunul.`
-
-gloss: `z-Azawan` · `d-Ululon` · `v-tell` · `d-next-clause` · `z-dog` · `v-run`
-
-*Azawan tells Ululon that the dog runs.*
-```
+> `zazawan dululon vezehel dadorol zodogol vurunul.`
+>
+> z-Azawan | d-Ululon | v-tell | d-next-clause | z-dog | v-run
+>
+> "Azawan tells Ululon that the dog runs."
 
 *Because* / *if* and similar use `/h/` + `/b/` **`adoro`**. Keep that pair together, **last in the main sentence** (**`adoro`** last). The metaphorical ending on the `/h/` word is always **-m**.
 
-```
-`zazawan guzumum hurugum badorol zululon vawalal.`
-
-gloss: `z-Azawan` · `g-happy` · `h-because` · `b-next-clause` · `z-Ululon` · `v-walk`
-
-*Azawan is happy because Ululon walks.*
-```
+> `zazawan guzumum hurugum badorol zululon vawalal.`
+>
+> z-Azawan | g-happy | h-because | b-next-clause | z-Ululon | v-walk
+>
+> "Azawan is happy because Ululon walks."
 
 You can also say:
 
@@ -211,13 +187,11 @@ Only the first turn (or a default statement body) chooses the setting. Do not wr
 
 A word that glues two sentences (*therefore*, *however*, …) is an `/x/` **linker**. A period may close the first body; the linker then **starts the next written sentence** under the same speech act:
 
-```
-`zodogol vawalal. xezazal zagadal vurunul.`
-
-gloss: `z-dog` · `v-walk` · `x-therefore` · `z-cat` · `v-run`
-
-*A dog walks. Therefore a cat runs.*
-```
+> `zodogol vawalal. xezazal zagadal vurunul.`
+>
+> z-dog | v-walk | x-therefore | z-cat | v-run
+>
+> "A dog walks. Therefore a cat runs."
 
 **Compare with:** `/j/` starts a **new** speech move (a new statement, question, or command). `/x/` keeps the move you already started.
 
@@ -444,13 +418,11 @@ You already write whether a turn is a statement, question, command, or prohibiti
 
 The act word is **`j` + vowel + ending**. The vowel is the family you know (**a** statement, **o** question, **e** command, **u** prohibition). **-l** stands behind the act; **-m** leaves it open (soft / tentative). Write the act word when the setting is not a default statement. A period still lets you omit **`jal`**.
 
-```
-`jam zazawan vawalal.`
-
-gloss: `j-statement` · `z-Azawan` · `v-walk`
-
-*Maybe Azawan walks.*
-```
+> `jam zazawan vawalal.`
+>
+> j-statement | z-Azawan | v-walk
+>
+> "Maybe Azawan walks."
 
 The vowels match the [vowel-series](vowel-series.md) map: **a** add / hold, **o** one / menu, **e** order / rank, **u** undo.
 
@@ -472,13 +444,11 @@ A [reviser](revisers.md) (**`al`** / **`am`** / …) may sit among the opening `
 
 English often puts the adjective before the noun (*a blue dog*). Agalan can too: add **`l`** as the second letter (`/ɡ/` + **l** + root + ending). That adjective comes **before** the noun it describes and looks ahead to the next noun. (cue: **l** ≈ lean left: look ahead to the host.)
 
-```
-`glelulul zodogol.`
-
-gloss: `gl-blue` · `z-dog`
-
-*a blue dog*
-```
+> `glelulul zodogol.`
+>
+> gl-blue | z-dog
+>
+> "a blue dog"
 
 `/b/` and `/w/` still follow that adjective (`glelulul wegelom zodogol` = *a loud-volume blue dog*). Before-the-noun order is optional (meter, what you put first for emphasis, or comfort from your first language). This extra **`l`** is only on adjectives (`/ɡ/`).
 
@@ -487,13 +457,11 @@ gloss: `gl-blue` · `z-dog`
 
 *As for X* / *regarding X* names who or what the clause is about. Use an adverb plus extra noun (`/h/` + `/b/`) with published **`oza`**: `hozal bazawan` is *as for Azawan*. You can still put first the piece you want to highlight.
 
-```
-`hozal bazawan zululon vawalal.`
-
-gloss: `h-topic` · `b-Azawan` · `z-Ululon` · `v-walk`
-
-*As for Azawan, Ululon walks.*
-```
+> `hozal bazawan zululon vawalal.`
+>
+> h-topic | b-Azawan | z-Ululon | v-walk
+>
+> "As for Azawan, Ululon walks."
 
 **Not the same job as:** [values](values.md) **topic** (a need named with no `x`). *As for* points at a person or thing in the clause; values topic names a standing need.
 
@@ -504,13 +472,11 @@ Several `/h/` units have no fixed order. Each unit’s role comes from its dicti
 
 A complex adjective is `/ɡ/` plus `/b/` (*same as Azawan*). A further plain adjective after that pair describes the **extra noun**, not the first noun. `/w/` after an adjective still grades that adjective.
 
-```
-`zodogol gonunul bazawan gelulul.`
-
-gloss: `z-dog` · `g-same` · `b-Azawan` · `g-blue`
-
-*a dog the same as blue Azawan*
-```
+> `zodogol gonunul bazawan gelulul.`
+>
+> z-dog | g-same | b-Azawan | g-blue
+>
+> "a dog the same as blue Azawan"
 
 You can chain more complex units onto those extra nouns. Two complex adjectives on the same first noun need another sentence. Several `/h/` units on one verb are fine (each plain `/h/`, or `/h/`+`/b/` together, counts as one).
 
@@ -554,13 +520,11 @@ These words glue one finished sentence to the next (one-way; default ending **-l
 
 Each clause has at most one **`adoro`** at the end of the main sentence. The sentence after **`adoro`** may itself end in **`adoro`**, so a further sentence hangs to the **right**.
 
-```
-`zazawan guzumum hurugum badorol zululon vawalal hurugum badorol zuhubun velebel.`
-
-gloss: `z-Azawan` · `g-happy` · `h-because` · `b-next-clause` · `z-Ululon` · `v-walk` · `h-because` · `b-next-clause` · `z-Uhubun` · `v-sleep`
-
-*Azawan is happy because Ululon walks because Uhubun sleeps.*
-```
+> `zazawan guzumum hurugum badorol zululon vawalal hurugum badorol zuhubun velebel.`
+>
+> z-Azawan | g-happy | h-because | b-next-clause | z-Ululon | v-walk | h-because | b-next-clause | z-Uhubun | v-sleep
+>
+> "Azawan is happy because Ululon walks because Uhubun sleeps."
 
 ### Number as interjection
 <a id="number-as-interjection"></a>

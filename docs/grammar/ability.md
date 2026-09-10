@@ -11,25 +11,21 @@ English *can* and *can't* usually sit on the same verb (*can sing*, *can't sing*
 
 To say someone **can** do one named activity (*sing*, *walk*) or **can** have one named property (*see*), keep that word as the host. After its root, insert **`x`** and **`a`**, then the host’s ordinary ending. The first letter stays the usual role letter (`/v/` for an event, `/ɡ/` for a property), so you tag *can* without a separate helping verb. Leave the host ordinary when you are not tagging can or can’t. (cue: **a** ≈ add (capability is in))
 
-```
-`zazawan vuzunuxal.`
-
-gloss: `z-Azawan` · `v-sing-able`
-
-*Azawan can sing.*
-```
+> `zazawan vuzunuxal.`
+>
+> z-Azawan | v-sing-able
+>
+> "Azawan can sing."
 
 The same host as a property uses `/ɡ/`: `zazawan guzunuxal` (*Azawan is able to sing*, as a property). Ordinary event, no tag: `zazawan vuzunul` (*Azawan sings*).
 
 The ending is still the **host** sense (**-l** literal, **-m** metaphorical, **-n** proper, **-r** resume). It does not change *can* into a different kind of *can*:
 
-```
-`zululon vuwuruxam.`
-
-gloss: `z-Ululon` · `v-write-able-metaphor`
-
-*Ululon can write* (metaphorical host sense).
-```
+> `zululon vuwuruxam.`
+>
+> z-Ululon | v-write-able-metaphor
+>
+> "Ululon can write." (metaphorical host sense).
 
 ### Can’t (`xe` / `xo` / `xu`)
 <a id="incapability"></a>
@@ -38,13 +34,11 @@ gloss: `z-Ululon` · `v-write-able-metaphor`
 
 English *can't* does not say whether the inability is for this moment, still changeable, or as fixed as you can tell. After **`x`**, pick **`e`**, **`o`**, or **`u`** for that difference (**stance**); **`a`** remains *can*. The rest of the word is the same host-plus-ending shape as *can*.
 
-```
-`zululon vuzunuxel.`
-
-gloss: `z-Ululon` · `v-sing-unable-temporary`
-
-*Ululon can’t sing right now.*
-```
+> `zululon vuzunuxel.`
+>
+> z-Ululon | v-sing-unable-temporary
+>
+> "Ululon can’t sing right now."
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -53,21 +47,17 @@ gloss: `z-Ululon` · `v-sing-unable-temporary`
 | **`xo`** | tags can’t that may change (soft default if the grain is unknown) | *can’t (yet / open)* | **o** ≈ one (one open *can’t*) |
 | **`xu`** | tags can’t as fixed as you can tell | *can’t (fixed)* | **u** ≈ undo (capability taken off) |
 
-```
-`zuhubun vuzunuxol.`
+> `zuhubun vuzunuxol.`
+>
+> z-Uhubun | v-sing-unable-modifiable
+>
+> "Uhubun can’t sing yet (open to change)."
 
-gloss: `z-Uhubun` · `v-sing-unable-modifiable`
-
-*Uhubun can’t sing yet (open to change).*
-```
-
-```
-`zazawan vurunuxul.`
-
-gloss: `z-Azawan` · `v-run-unable-irreversible`
-
-*Azawan can’t run (fixed / impossible as far as you can tell).*
-```
+> `zazawan vurunuxul.`
+>
+> z-Azawan | v-run-unable-irreversible
+>
+> "Azawan can’t run (fixed / impossible as far as you can tell)."
 
 **Compare with:** **`xa` / `xu`** on a [values](values.md) **need** root is met / unmet need (`holozoxum` *competence unmet*). On an activity or property host, **`xa` / `xu`** is can / can’t.
 
@@ -200,21 +190,17 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 Sometimes English *can* / *can’t* is not about one named activity or property: a multi-root activity, a floating *can’t*, or a tag over the whole clause. Then there is no host root to insert **`x`** into. Spell that capacity with the closed root **`egera`** (**ABIL**): after **`egera`**, write the same **`x`**, stance vowel, and ending as on a host. Put the word on `/h/` for the clause, or on `/w/` for the adjective just before it. You can then tag *can* / *can’t* without naming the activity in that word. Prefer a host whenever one activity root fits.
 
-```
-`zazawan hegeraxel.`
+> `zazawan hegeraxel.`
+>
+> z-Azawan | h-ABIL-unable-temporary
+>
+> "Azawan can’t right now (no single host / clause-wide)."
 
-gloss: `z-Azawan` · `h-ABIL-unable-temporary`
-
-*Azawan can’t right now (no single host / clause-wide).*
-```
-
-```
-`zululon gelem wegeraxel.`
-
-gloss: `z-Ululon` · `g-big` · `w-ABIL-unable-temporary`
-
-*Ululon is big: can’t right now* (capability on that property).
-```
+> `zululon gelem wegeraxel.`
+>
+> z-Ululon | g-big | w-ABIL-unable-temporary
+>
+> "Ululon is big: can’t right now." (capability on that property).
 
 (cue: 🥣 *cereal*: a bowl that holds what you can do)
 

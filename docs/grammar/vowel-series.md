@@ -10,29 +10,23 @@ A **vowel series** is that reuse: the same four vowels carry the same four meani
 
 Once you know those four vowels, a later closed set is easier because **`a`** / **`o`** / **`e`** / **`u`** keep the same meanings. (cue: **a** ≈ add, **o** ≈ one, **e** ≈ order, **u** ≈ undo)
 
-```
-`jal zazawan godogol.`
+> `jal zazawan godogol.`
+>
+> j-statement | z-Azawan | g-dog
+>
+> "Azawan is a dog."
 
-gloss: `j-statement` · `z-Azawan` · `g-dog`
+> `jol zazawan godogol.`
+>
+> j-question | z-Azawan | g-dog
+>
+> "Is Azawan a dog?"
 
-*Azawan is a dog.*
-```
-
-```
-`jol zazawan godogol.`
-
-gloss: `j-question` · `z-Azawan` · `g-dog`
-
-*Is Azawan a dog?*
-```
-
-```
-`jel vawalal.`
-
-gloss: `j-command` · `v-walk`
-
-*Walk!*
-```
+> `jel vawalal.`
+>
+> j-command | v-walk
+>
+> "Walk!"
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|

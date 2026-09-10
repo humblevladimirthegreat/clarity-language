@@ -11,13 +11,11 @@ Compose opaque emotion labels from value plus arousal plus locus, number brainst
 
 When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgment or explanation** work, name three pieces instead of one opaque label: a [value](values.md) on the situation, how activated the charge is, and where you put it. Stack those as free `/h/` units (optional `/w/` on a preceding `/ɡ/`): situation + **one value** + **one ACT** + **one LOCUS**. You can then say the take without smuggling a single emotion word.
 
-```
-`zezehel wolozoxur hogegal hanedel.`
-
-gloss: `z-dialogue` · `w-competence-unmet-temporary` · `h-HIGH` · `h-CIRCUM`
-
-*Anxious about the dialogue:* competence at stake for now; flood; room awash.
-```
+> `zezehel wolozoxur hogegal hanedel.`
+>
+> z-dialogue | w-competence-unmet-temporary | h-HIGH | h-CIRCUM
+>
+> "Anxious about the dialogue:" competence at stake for now; flood; room awash.
 
 Affect is **water**. **ACT** is tide dynamics (how much / how fast). **LOCUS** is vessel, transfer, or ambient field (where the water sits).
 
@@ -57,13 +55,11 @@ Raw feeling (contacting a sensation without judgment) may go unlabeled. Full com
 
 When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*) so the first frame does not look unique. Use ordinary lexicon nouns plus a free [ordinal](numbers.md) (`g#N`). Prefer at least **`g#1`**, and often name a second candidate, so ranking itself marks that more than one frame is in play.
 
-```
-`zazawan zagegol g#2 vezehel.`
-
-gloss: `z-Azawan` · `z-solution` · `g-second` · `v-tell`
-
-*Azawan names solution 2.*
-```
+> `zazawan zagegol g#2 vezehel.`
+>
+> z-Azawan | z-solution | g-second | v-tell
+>
+> "Azawan names solution 2."
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -203,13 +199,11 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 English *always* / *every* / *never* / *everyone* smuggle **how exceptionless** the claim is. Keep *who / when* on the [universal fences](coordination.md#universals-domains-generics) (`zual` / `hual` / …). Write exceptionlessness as a closed `/h/` mood root (optional `/w/` on a preceding `/ɡ/`). You can then pair *always* with *usually*, *by definition*, and the rest without changing the domain fence.
 
-```
-`zazawan hual vawalal hewonol.`
-
-gloss: `z-Azawan` · `h-always` · `v-walk` · `h-COMMON`
-
-*Azawan always walks, usually.*
-```
+> `zazawan hual vawalal hewonol.`
+>
+> z-Azawan | h-always | v-walk | h-COMMON
+>
+> "Azawan always walks, usually."
 
 The default *always* is *usually* (exceptions expected), not *must happen that way*, and not an ought. (cue: usual weather, not a law of nature.) Prefer floating `/h/`. Use **COMMON** (`hewonol`) unless another row is the exceptionlessness you mean. **RULE** is complex `/h/` + `/b/` when you name the frame.
 
