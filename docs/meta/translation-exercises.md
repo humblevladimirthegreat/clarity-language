@@ -41,7 +41,7 @@ Per-feature teaching already has its practice: rule → cue → 1–3 worked exa
 2. **Both directions** — English → Agalan (production) and Agalan → English (parsing). Production is harder; keep those items shorter / fewer if the set grows.
 3. **Pure Agalan in early checkpoints** — published roots and closed specials only; `PoS<…>ENDING` / opaque spans only when the page is teaching loans or spans.
 4. **Spoiler answers** — VitePress `::: details Show answer` (or a clear custom label). The answer is the Agalan sentence or **loose** free English — not a second grammar lecture. No morph-gloss wall inside the spoiler unless the drill is explicitly about packaging.
-5. **Small sets** — about **6–12 items per direction** max per stage checkpoint. Prefer a tiny reused root bank over lexicon tourism. Put that bank in an **English · Agalan** table once above the drills (add **Same root as** for the everyday **-l** citation when **English** is a metaphor, and **Cue** for why that picture maps — never as the English to produce; never a mid-dot prose list).
+5. **Small sets** — about **6–12 items per direction** max per stage checkpoint. Prefer a tiny reused root bank over lexicon tourism. Put that bank in an **English · Agalan** table once above the drills (add **Same root as** for the everyday **-l** citation when **English** is not the citation kind: metaphor, overlay, or a role-marked use of the same root; **Cue** is optional memory helper — never the English to produce; never a mid-dot prose list).
 6. **Test the decision, not the dictionary** — good items force a choice this stage taught (role letter, **-l** / **-m**, **`orodo` last**, omit recoverable **`jal`**, …).
 7. **Single sentences** — leave multi-turn scenes to [`examples/`](../examples/).
 8. **People are names** — default people use the [house cast](grammar-docs.md#house-cast) (`zazawan`, `zululon`, `zuhubun`) or a name already on the page, not **`ugobo`** / **`edone`**. English items use those names (*Azawan walks*). Speaker/listener specials only when the item is teaching those roots, or when the point is the discourse role (name unavailable, address set, clusivity). Inclusive *we* stays **`aha`**. Do not introduce foreign `PoS<…>n` names in early checkpoints.
@@ -57,7 +57,7 @@ Use a stable heading and anchor at the **end** of the stage (before the next `##
 
 Short drills for Beginner. Try each item before opening **Show answer**. …
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
 
 | English | Agalan |
 |---------|--------|
@@ -82,7 +82,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. …
 
 Omit recoverable **`jal`** unless the drill is teaching speech act. Match role letters and sense endings to the grammar page ([core.md](../grammar/core.md#role-letters), [reference suffix](../grammar/reference-suffix.md)). English items that need a person use house names (*Azawan walks*), not *I* / *you*.
 
-**Vocab table:** every checkpoint uses the same two columns, **English** then **Agalan**, even when the bank is short. One sense per row (split house names `azawan` / `ululon` / `uhubun`). English is the learner gloss for this drill (*dog*, *happy*, *grace*) — not an ending tag (`(**-m**)`). House people may still note the nativized name (`*grace* (name **Azawan**)`). **Agalan** is a [citation](../grammar/reference-suffix.md#citation-forms) in backticks (`odogol`, `uzumum`, `azawan`) — ending already on, not a bare stem (`odogo`). Closed specials use their default ending (`ugobon`, not `ugobo`). Do not pack several pairs into one row. Inner **`x`** pieces and other table exceptions: [citation in tables](grammar-docs.md#citation-in-tables) (prefer the whole inflected word in the bank when the drill builds a compound).
+**Vocab table:** every checkpoint uses **English** then **Agalan** (plus **Same root as** / **Cue** when a row needs them), even when the bank is short. One sense per row (split house names `azawan` / `ululon` / `uhubun`). English is the learner gloss for this drill (*dog*, *happy*, *grace*, *see*) — not an ending tag (`(**-m**)`). House people may still note the nativized name (`*grace* (name **Azawan**)`). **Agalan** is a [citation](../grammar/reference-suffix.md#citation-forms) in backticks by default (`odogol`, `uzumum`, `azawan`) — ending already on, not a bare stem (`odogo`). Use the **in-clause** spelling when that English only matches with a role letter (`vejel` *see*, with **Same root as** `` `ejel` *eye* ``). Closed specials use their default ending (`ugobon`, not `ugobo`). Do not pack several pairs into one row, and do not add a second production row for the citation kind unless a drill asks for it. Inner **`x`** pieces and other table exceptions: [citation in tables](grammar-docs.md#citation-in-tables) (prefer the whole inflected word in the bank when the drill builds a compound).
 
 ## Related meta
 

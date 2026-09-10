@@ -10,7 +10,7 @@ Related meta:
 |------|------|
 | [learning-levels.md](learning-levels.md) | **Beginner** / **Intermediate** / **Advanced** stage rubric and [cross-doc path](learning-levels.md#cross-doc-path) (for `docs/grammar/` only) |
 | [glosses.md](glosses.md) | Morph glosses and free English ([example blocks](glosses.md#example-block); [house-name glosses](glosses.md#house-cast)) |
-| [translation-exercises.md](translation-exercises.md) | Eng ↔ Agalan checkpoints (placement, principles including house-cast people, spoiler shape; vocab **Agalan** = citation) |
+| [translation-exercises.md](translation-exercises.md) | Eng ↔ Agalan checkpoints (placement, principles including house-cast people, spoiler shape; vocab **Agalan** = citation or the inflected form the row teaches) |
 | [drill-generation.md](drill-generation.md) | Path allowlist and execute procedure (one file per agent) |
 | [language-name.md](language-name.md) | English name **Agalan** = glasses root **`agala`** + **-n** (editors only — not linked from grammar) |
 | [unassigned-reserved.md](unassigned-reserved.md) | Unused-slot / unassigned-form inventory (editors only — not linked from grammar) |
@@ -256,7 +256,7 @@ Learner tables use these headers (omit a column when every cell would be empty o
 | **Agalan** | yes | The spelling (word, letter, or pattern). A **content word** is a [citation](#citation-in-tables) or the inflected form the row teaches — not a bare stem. |
 | **Use** | yes | What the form **does** in the clause (subject, command, continue). Not a pun. |
 | **English** | yes | English the learner may **say or produce** (sense or free English). Not a pun, and not an ending tag (`(**-m**)`). |
-| **Same root as** | no | The everyday kind of that root as a [citation](../grammar/reference-suffix.md) (**-l**): `` `urugul` *brick* ``. Use when **English** is a published metaphor or a closed overlay of a content root, so the picture in **Cue** is licensed. Omit the column when every row is a letter, vowel-series, punctuation, or other non-lexicon cue. Empty cells are fine in a mixed drill bank. |
+| **Same root as** | no | The everyday kind of that root as a [citation](../grammar/reference-suffix.md) (**-l**): `` `urugul` *brick* ``. Use when **English** is not the citation kind: a published metaphor, a closed overlay, or a [role-marked use](#citation-in-tables) of the same root (`` `ejel` *eye* `` beside `vejel` *see*). That licenses the picture in **Cue**. Omit the column when every row is a letter, vowel-series, punctuation, or other non-lexicon cue. Empty cells are fine in a mixed drill bank. |
 | **Cue** | no | Recall only: **why** the token maps. Cover this column: the rest must still be the language. ([rubric](#cue-rubric)) |
 
 **Use** and **Cue** must not be the same string. If they would be (`add` / *add*), unpack **Use** (*hold / inventory*) and keep the slogan in **Cue**.
@@ -290,7 +290,7 @@ Letter / series: `{letter} ≈ {sound or series slogan} ({why that maps})`. `**d
 | Letter / series | Pun on the spelling (`**d** ≈ done to`, **`a`** *add*) plus why it maps | **Cue** only. Never **Use** or **English**. Linker is **`≈`** (“sounds like”), never `=` or `→`. |
 | Scene | Published emoji + literal that licenses **-m**, then why that scene evokes the sense | **English** = metaphorical sense (*happy*, *because*). **Same root as** = citation **-l** of that picture (`uzumul` *smile*). **Cue** = `emoji: why` (or `emoji *literal*: why` if the table has no **Same root as** column) |
 
-A lexicon path is a real **-l** / **-m** choice; the *literal* English is still not what drills ask for. Write `*happy*` in **English** (no `(**-m**)` tag — the citation ending already marks metaphor), `` `uzumul` *smile* `` in **Same root as**, and `😊: the face of *happy*` (or `from *smile*: the face of *happy*` when the table has no **Same root as** column) in **Cue** — never `smile → *happy*` as the only English.
+A lexicon path is a real **-l** / **-m** choice; the *literal* English is still not what drills ask for. Write `*happy*` in **English** (no `(**-m**)` tag — the citation ending already marks metaphor), `` `uzumul` *smile* `` in **Same root as**, and `😊: the face of *happy*` (or `from *smile*: the face of *happy*` when the table has no **Same root as** column) in **Cue** — never `smile → *happy*` as the only English. The same **Same root as** / **Cue** split applies when **English** is a role-marked use of the literal (`*see*` / `vejel` / `` `ejel` *eye* `` / `👁️: seeing is what an eye does`).
 
 Inline after the rule sentence: `(cue: …)`. Worked examples stay Agalan / morph / quoted free English ([example block](glosses.md#example-block)) — no cue line. Translation-practice answers are Agalan or loose English only; the root bank may add **Same root as** and **Cue** beside **English · Agalan**.
 
@@ -460,19 +460,19 @@ Short Eng ↔ Agalan checkpoints: end of a page stage only — [translation-exer
 - Contrast and decision tables beat encyclopedia dumps in Beginner. A decision table is **this** form’s own readings (endings, vowel series), not a list of other pages.
 - Beginner may show a **partial** table (only letters / jobs taught so far). Completing the table is Intermediate, or a recap at the **end** of Beginner after those jobs have examples — not a dump at the top.
 - Full inventories belong in Intermediate / Advanced, or after the teach block.
-- Prefer columns **Agalan · Use · English · Same root as · Cue** for **this** form ([cues](#cues-columns)). Drop **Same root as** when no row is a lexicon metaphor / overlay. Add **Example** or a Morph column when endings are the point. **Not this** / related-subsystem **Agalan · Use**: [Compare with](#compare-with).
+- Prefer columns **Agalan · Use · English · Same root as · Cue** for **this** form ([cues](#cues-columns)). Drop **Same root as** when no row needs an everyday citation (no metaphor, overlay, or role-marked use). Add **Example** or a Morph column when endings are the point. **Not this** / related-subsystem **Agalan · Use**: [Compare with](#compare-with).
 - A grammar-table **Gloss** column is short free English unless the row teaches morphology ([glosses.md](glosses.md)).
 - Content-word cells: [citation (ending already on)](#citation-in-tables).
 
 ### Citation in tables
 <a id="citation-in-tables"></a>
 
-Learner tables under `docs/grammar/` almost never publish a **bare stem** (`odogo`, `uzumu`, `azawa`, `odoho`). A content-word **Agalan** cell is a spelling the learner could write **as a word**: [citation](../grammar/reference-suffix.md#citation-forms) (prefix-less root + ending) or the **inflected** form the row is teaching (role letter already on). **English** is the sense only — do not tag `(**-m**)` or `(**-l**)` there; the Agalan ending already carries that. **Same root as** stays the everyday **-l** citation of the picture (`urugul` *brick`), not a stem. Checkpoint banks apply the same rule ([translation-exercises.md](translation-exercises.md#template)).
+Learner tables under `docs/grammar/` almost never publish a **bare stem** (`odogo`, `uzumu`, `azawa`, `odoho`). A content-word **Agalan** cell is a spelling the learner could write **as a word**: [citation](../grammar/reference-suffix.md#citation-forms) (prefix-less root + ending) or the **inflected** form the row is teaching (role letter already on). **English** is the sense only — do not tag `(**-m**)` or `(**-l**)` there; the Agalan ending already carries that. **Same root as** stays the everyday **-l** citation of the picture (`urugul` *brick*; `ejel` *eye* when **Agalan** is `vejel`), not a stem. Checkpoint banks apply the same rule ([translation-exercises.md](translation-exercises.md#template)).
 
 | Publish | Example |
 |---------|---------|
 | Citation of this row’s sense | `odogol` *dog*; `uzumum` *happy*; `azawan` *Azawan*; `ezazal` *therefore* |
-| Inflected form the row teaches | `hodohom`, `howoram`, `xezazal`, `zaxuvugul` |
+| Inflected form the row teaches | `hodohom`, `howoram`, `xezazal`, `zaxuvugul`; drill-bank `vejel` *see* |
 | Special with its default ending | citation `ugobon` / `edonen` / `ahan` / `enenun`; in-clause `zugobon` when the slot is the point |
 
 Do **not** call `odogo` a citation. Overlay / need / linker / mood inventories use the citation or the floating `/h/` (or `/x/`) word, not the stem (`alodol` or `halodol`, not `alodo`; `odohol` or `hodohom`, not `odoho`). Combinability (`xa` / `xe`, hold endings) belongs in a **pattern** column (`…xal`) or in extra inflected rows, not by stripping the ending.

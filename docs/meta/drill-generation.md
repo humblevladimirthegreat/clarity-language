@@ -87,7 +87,7 @@ Anchors:
 | Intermediate | `<a id="translation-practice-intermediate"></a>` |
 | Advanced | `<a id="translation-practice-advanced"></a>` |
 
-Follow the [template](translation-exercises.md#template). Lead: *Short drills for Beginner/Intermediate/Advanced. Try each item before opening **Show answer**.* Put **Roots used here** once as the English / Agalan table (shared bank subset + this stage’s extra roots). Learner **Agalan** cells are [citations](translation-exercises.md#template) (`odogol`, not the bank stem `odogo`).
+Follow the [template](translation-exercises.md#template). Lead: *Short drills for Beginner/Intermediate/Advanced. Try each item before opening **Show answer**.* Put **Roots used here** once as the English / Agalan table (shared bank subset + this stage’s extra roots), using that template’s caption (**Cue** is optional memory helper). Learner **Agalan** cells are [citations](translation-exercises.md#template) by default (`odogol`, not the bank stem `odogo`), or the inflected form the row teaches (`vejel` *see*).
 
 | Band kind | Items per direction |
 |-----------|---------------------|
@@ -164,7 +164,7 @@ Do **not** skip productive syntax pages (core, coordination, questions, values, 
 
 Default people: [house cast](grammar-docs.md#house-cast) — `zazawan` / `zululon` / `zuhubun` (`azawa` / `ululo` / `uhubu` + **-n**). Morph: `z-Azawan` / `z-Ululon` / `z-Uhubun`.
 
-Reuse this bank unless this stage already taught a different published root. Do not mine the lexicon for variety. Tokens here are **stems for matching** (path allowlist / leak checks). The learner-facing **Roots used here** table uses [citations](grammar-docs.md#citation-in-tables), not these stems as Agalan cells. Do not copy `(**-m**)` from this **Sense** column into learner **English**.
+Reuse this bank unless this stage already taught a different published root. Do not mine the lexicon for variety. Tokens here are **stems for matching** (path allowlist / leak checks). The learner-facing **Roots used here** table uses [citations or the inflected form the row teaches](grammar-docs.md#citation-in-tables), not these stems as Agalan cells. Do not copy `(**-m**)` from this **Sense** column into learner **English**. When drill English is *see*, the Agalan cell is `vejel` and **Same root as** is `` `ejel` *eye* ``.
 
 | Root | Sense in drills |
 |------|-----------------|
@@ -184,7 +184,7 @@ Reuse this bank unless this stage already taught a different published root. Do 
 | `ezehe` | *tell* |
 | `uwuru` | *write* |
 | `uzunu` | *sing* |
-| `eje` | *see* |
+| `eje` | *see* (`vejel`; citation *eye*) |
 | `aju` | *sit* |
 | `adaza` | *haste* |
 | `adoro` | *next clause* |

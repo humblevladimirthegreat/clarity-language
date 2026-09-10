@@ -60,13 +60,13 @@ Inventory tables on grammar pages use these kinds of cell:
 
 | Column | What it is |
 |--------|------------|
-| **Agalan** | The word or letter you write. |
+| **Agalan** | The word or letter you write (a citation, or the in-clause spelling when a role letter is part of that English). |
 | **Use** | What that form **does** (subject, question, *because* as a clause glue). This is the rule. |
 | **English** | What you would **say**: the sense to produce or understand. |
-| **Same root as** | The everyday kind of that same root, written as a citation (**-l**): `urugul` *brick* when the row’s English is *because*. Not every table has this column. |
+| **Same root as** | The everyday kind of that same root, written as a citation (**-l**): `urugul` *brick* when the row’s English is *because*; `ejel` *eye* when the row’s English is *see* as `vejel`. Not every table has this column. |
 | **Cue** | A hook that helps you **remember** the letter, vowel, or picture that maps to that row. |
 
-**Cue** is optional but helps with learning. `≈` in a cue means “sounds like.” When **Same root as** is there, **Cue** does not repeat the everyday English; it only says why that picture maps. 
+**Cue** is an optional memory helper. `≈` in a cue means “sounds like.” When **Same root as** is there, **Cue** does not repeat the everyday English; it only says why that picture maps. 
 
 Continue with [phonology.md](phonology.md#beginner) for letters and word edges, then [reference-suffix.md](reference-suffix.md#beginner) for citation endings, then [core.md](core.md#beginner) for clause shape.
 
