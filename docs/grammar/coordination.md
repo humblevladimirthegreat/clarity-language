@@ -4,6 +4,8 @@ When English would pack several things that play the same role into one slot (*a
 
 Sometimes you only care that the items belong together, with no ranking among them (*and*, *or*, *not*). Call that a **set**. Sometimes you care which item comes first (*X first*, *A before B*). Call that a **rank**.
 
+The join’s vowel is the [vowel series](vowel-series.md) you just mapped: the first letter matches the items’ role; the vowel keeps hold, pick one, instruct, or reverse.
+
 ## Beginner
 <a id="beginner"></a>
 

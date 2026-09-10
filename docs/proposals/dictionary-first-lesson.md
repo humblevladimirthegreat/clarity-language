@@ -67,7 +67,7 @@ Optional: show the lexicon row for `odogo` / `uzumu` / `azawa` so learners see *
 
 **Phonology Beginner first or together.** Suggested order after introduction: **phonology Beginner** → **dictionary cites** (this lesson) → rest of **core** (role letters, SOV, force). Same sitting is fine: a short sound table, then cites you can pronounce. Do not park phonology Beginner after the first clause; saying `odogol` is part of the dictionary beat.
 
-Phonology Intermediate stays later (word anatomy with prefixes). [vowel-series.md](../grammar/vowel-series.md) still waits until speech act (`jal` / `jol` / `jel` / `jul`) exists — that is a **vowel series**, not the IPA table.
+Phonology Intermediate stays later (word anatomy with prefixes). [vowel-series.md](../grammar/vowel-series.md) waits until speech act (`jal` / `jol` / `jel` / `jul`) exists, then sits immediately before joins — that is a **vowel series**, not the IPA table.
 
 **Prefer for the cite beat:** first Beginner subsection of [core.md](../grammar/core.md) (before role-letter table), **or** a very short page **immediately after** phonology Beginner (or interleaved with it) and **immediately before** the rest of core, then merge into core when the beat is stable.
 

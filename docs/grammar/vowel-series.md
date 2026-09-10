@@ -1,14 +1,14 @@
 # Vowel series (`a` / `o` / `e` / `u`)
 <a id="vowel-series"></a>
 
-Reuse four vowel meanings when a small closed set of words shares a first letter and differs only in the next vowel. The first letter says which set you are in. This page maps those vowels on speech-act words you already know.
+Some small families of words share a first letter and differ only in the next vowel. That vowel keeps the same four jobs wherever that happens. The first letter only names the family.
 
 ## Beginner
 <a id="beginner"></a>
 
-A **vowel series** is that reuse: the same four vowels carry the same four meanings whenever a prefix (the first letter) starts a small closed set. You already do this on the [speech act](core.md#speech-act-beginner): **`jal`** is a statement, **`jol`** is a question, **`jel`** is a command, **`jul`** is a prohibition.
+You already chose statement versus question versus command by changing one vowel on the [speech-act](core.md#speech-act-beginner) word. Hide the **`j`**: the leftover vowels still mean hold the claim, pick from a menu, instruct, or take the action back. That is not a one-off. Whenever a first letter starts a four-word family, keep those four vowel jobs.
 
-Once you know those four vowels, a later closed set is easier because **`a`** / **`o`** / **`e`** / **`u`** keep the same meanings. (cue: **a** ≈ add, **o** ≈ one, **e** ≈ order, **u** ≈ undo)
+The next page is the first large family that uses this map.
 
 > `jal zazawan godogol.`
 >
@@ -28,13 +28,19 @@ Once you know those four vowels, a later closed set is easier because **`a`** / 
 >
 > "Walk!"
 
+> `jul vurunul.`
+>
+> j-prohibition | v-run
+>
+> "Don't run!"
+
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`a`** | hold / inventory | *statement* (**`jal`**) | **a** ≈ add (hold the claim) |
-| **`o`** | pick one / menu | *question* (**`jol`**) | **o** ≈ one (pick from a menu) |
-| **`e`** | instruction | *command* (**`jel`**) | **e** ≈ order (do this) |
-| **`u`** | reverse | *prohibition* (**`jul`**) | **u** ≈ undo (take the action back) |
+| **`a`** | hold the claim | *statement* (**`jal`**) | **a** ≈ add |
+| **`o`** | pick from a menu | *question* (**`jol`**) | **o** ≈ one |
+| **`e`** | instruct | *command* (**`jel`**) | **e** ≈ order |
+| **`u`** | take the action back | *prohibition* (**`jul`**) | **u** ≈ undo |
 
 ## See also
 
-- Speech act: [core.md](core.md#speech-act-beginner)
+- [Speech act](core.md#speech-act-beginner)
