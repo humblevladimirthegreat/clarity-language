@@ -3,6 +3,7 @@ review TTS
 Consider reserving two syllable words for special
 limit deployments to tagged releases
 rename viewpoint laterals
+consider removing emojis from docs (but keep in lexicon)
 
 ## Evidentiality / tense
 

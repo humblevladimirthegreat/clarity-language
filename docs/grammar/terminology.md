@@ -208,7 +208,7 @@ Condition vs outcome as NPs vs full sentences after **`adoro`**. **Clause pole**
 
 Who counts as *we* / *you* when names are unavailable.
 
-[Pronouns](pronouns.md#clusivity)
+[Plurality](plurality.md#clusivity)
 
 ### Collective
 
@@ -620,7 +620,7 @@ Typed cite / aside / mention / opaque fences; spoken opening word.
 
 ### Special pronoun
 
-**`ugobo` / `edone` / `aha` / `enenu` / `adoro`**.
+**`ugobo` / `edone` / `aha` / `enenu`**.
 
 [Pronouns](pronouns.md#special-pronouns)
 

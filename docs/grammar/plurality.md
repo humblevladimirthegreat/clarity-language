@@ -51,8 +51,9 @@ A first mention of a **kind as a group in this situation** uses **-lx** (literal
 
 ### Person-role **-x**
 <a id="person-role-x"></a>
+<a id="clusivity"></a>
 
-English *we* and *you all* do not say whether the listener is in the speaker’s group. On the speaker and listener roots, **-x** still adds associates, but the reading follows the conversation role: speaker plus that person’s people, or everyone you are talking to. The **address set** is everyone you are talking to right now (all current addressees, no speaker). Inclusive *you and I* stays **`aha`**, with no **-x**.
+English *we* and *you* do not say whether the listener is in the group. That split is **clusivity**. On the speaker and listener roots, **-x** still adds associates, but the reading follows the conversation role: speaker plus that person’s people, or everyone you are talking to. The **address set** is everyone you are talking to right now (all current addressees, no speaker). Inclusive *you and I* stays **`aha`** ([special pronouns](pronouns.md#special-pronouns)), with no **-x**.
 
 > `zedonenx vawalal.`
 >
@@ -472,5 +473,5 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 ## See also
 
-- Resume and **`aha`** / address set: [pronouns.md](pronouns.md)
+- Inclusive *we* **`aha`**: [pronouns.md](pronouns.md#special-pronouns)
 - Endings before **-x**: [reference-suffix.md](reference-suffix.md)

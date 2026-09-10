@@ -220,7 +220,7 @@ When you mean *it has to be X* (the sole pick), close an exclusive join: **`…o
 ### Clause poles
 <a id="clause-poles"></a>
 
-When the condition or outcome is a **full sentence**, hang that sentence after **`adoro`**. Write the pole (`hadorom` / `hezazem` / `hurugum`), then **`badorol`**, then the dependent sentence. **`adoro`** ([special pronoun](pronouns.md#special-pronouns)) sits last in the main sentence; the next sentence is the content that word stands for. Give the dependent its own act word only if the speech act differs. See [dependent clauses](core.md#dependent-clauses).
+When the condition or outcome is a **full sentence**, hang that sentence after **`adoro`**. Write the pole (`hadorom` / `hezazem` / `hurugum`), then **`badorol`**, then the dependent sentence. **`adoro`** ([dependent clauses](core.md#dependent-clauses)) sits last in the main sentence; the next sentence is the content that word stands for. Give the dependent its own act word only if the speech act differs. See [dependent clauses](core.md#dependent-clauses).
 
 ```
 main sentence …  hadorom / hezazem / hurugum  badorol   [dependent sentence]

@@ -417,7 +417,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 ## See also
 
-- [pronouns.md](pronouns.md): resume **-r**; special **`ugobo`** / **`edone`** / **`aha`** / **`enenu`** / **`adoro`**
+- [pronouns.md](pronouns.md): resume **-r**; special **`ugobo`** / **`edone`** / **`aha`** / **`enenu`**
 - [plurality.md](plurality.md): **-x** after the ending
 - [core.md](core.md): role letters; adding a first letter to a citation
 - [spans.md](spans.md#loans): mention / opaque when the **form** or a foreign acronym is the point

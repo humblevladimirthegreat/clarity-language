@@ -800,7 +800,7 @@ These limits apply to every join.
 
 **Compare with:** prefix-less **`al`** / **`am`** / … are [revisers](revisers.md). Under `/h/` `/w/`, the unit is a [restrictor](restrictors.md), not sibling *and*.
 
-*Because* / *if* use `/h/` plus `/b/` [**`adoro`**](pronouns.md#special-pronouns). Floating `/h/` inside a noun, adjective, or `/b/` join does not end the list. Verb-chain `/h/` scope: [VP and clause forms](#vp-clause-forms). Each clause-level item is a full clause body.
+*Because* / *if* use `/h/` plus `/b/` [**`adoro`**](core.md#dependent-clauses). Floating `/h/` inside a noun, adjective, or `/b/` join does not end the list. Verb-chain `/h/` scope: [VP and clause forms](#vp-clause-forms). Each clause-level item is a full clause body.
 
 
 ### Translation practice

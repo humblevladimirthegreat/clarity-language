@@ -227,7 +227,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 ### Occasions vs a dependent *when*
 
-English *when* / *if* can name a **following sentence** (*if Azawan walks*). Write that as an adverb plus extra noun: `/h/` plus `/b/` [**`adoro`**](pronouns.md#special-pronouns) ([dependent clauses](core.md#dependent-clauses)). The main sentence stops after **`adoro`**; the next sentence is the content. Restrictors still list **phrase** times or cases immediately before the restrictor. Use a restrictor when the occasions are words in the adverb slot; use **`adoro`** when the occasion is another full clause.
+English *when* / *if* can name a **following sentence** (*if Azawan walks*). Write that as an adverb plus extra noun: `/h/` plus `/b/` [**`adoro`**](core.md#dependent-clauses). The main sentence stops after **`adoro`**; the next sentence is the content. Restrictors still list **phrase** times or cases immediately before the restrictor. Use a restrictor when the occasions are words in the adverb slot; use **`adoro`** when the occasion is another full clause.
 
 > `zuhubun vuzunul hadorom zazawan vawalal badorol.`
 >

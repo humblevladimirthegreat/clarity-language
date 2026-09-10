@@ -19,18 +19,26 @@ After you have already named a person or thing, the next sentence can point back
 >
 > "Azawan walks. He sits." (resume from the name’s root prefix)
 
-When that short stem would match the **wrong** recent word, use a **full-root resume**: the **entire root** + **-r**.
+**Compare with:** English often uses *the* for a kind already in the talk (*A dog walks. **The** dog sits.*). Agalan uses **-r** for that job, not a separate article.
 
-> `zodogol vawalal. zabogol gelem. zodogor vajul.`
+> `zodogol vawalal. zodor vajul.`
 >
-> z-dog | v-walk | z-book | g-size | z-←dog | v-sit
+> z-dog | v-walk | z-←dog | v-sit
 >
-> "A dog walks. A book is big. The dog sits."
+> "A dog walks. The dog sits."
+
+When that short stem would match the **wrong** recent word, use a **full-root resume**: the **entire root** + **-r**. Short **`ele`** matches both *sleep* (`elebe`) and *big* (`ele`). After both have been used, short `veler` would pick the more recent *big*; full `veleber` picks *sleep*.
+
+> `zululon velebel. zabogol gelem. zazawan veleber.`
+>
+> z-Ululon | v-sleep | z-book | g-size | z-Azawan | v-←sleep
+>
+> "Ululon sleeps. A book is big. Azawan does so."
 
 ### Special pronouns
 <a id="special-pronouns"></a>
 
-Most of the time you name people with a proper name (`zazawan`, `zululon`) and resume with **-r**. A few closed roots instead name **roles in this conversation**: who is speaking, who is being spoken to, you-and-I together, a nonspecific *someone*, or a slot that stands for the next sentence. They take the usual role letter for the slot they fill in the clause (subject, object, and so on). Person roles default to **-n**.
+Most of the time you name people with a proper name (`zazawan`, `zululon`) and resume with **-r**. A few closed roots instead name **roles in this conversation**: who is speaking, who is being spoken to, you-and-I together, or a nonspecific *someone*. They take the usual role letter for the slot they fill in the clause (subject, object, and so on). Person roles default to **-n**.
 
 When a proper name is available, prefer that name (and its **-r** resume), including for talking about yourself: [proper name](reference-suffix.md#proper-name--n).
 
@@ -72,28 +80,14 @@ English *we* can mean “you and I” or “I and my people, not you.” Inclusi
 >
 > "Someone sleeps."
 
-When a sentence needs a whole following sentence as its object (English *that Ululon left*), **`adoro`** is the placeholder in the first sentence for that following material ([dependent clauses](core.md#dependent-clauses)). Put **`adoro` last** in its host slot; the dependent sentence follows with no extra host words in between. Default ending is **-l**. (cue: 🚪 *doorway*: the next sentence walks through)
-
-> `zugobon dazawan vezehel dadorol zululon vebarul.`
->
-> z-speaker | d-Azawan | v-tell | d-next-clause | z-Ululon | v-depart
->
-> "I told Azawan that Ululon left."
-
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`ugobon`** | speaker in this conversation (`zugobon` in subject slot) | *I* | `ugobol` *microphone* | 🎤: the live voice of the person talking |
 | **`edonen`** | listener in this conversation (`zedonen` / `dedonen` in clause) | *you* | `edonel` *headphones* | 🎧: the one receiving the sound |
 | **`ahan`** | speaker and addressees together (`zahan` in subject slot) | *we* (you and I) | `ahal` *handshake* | 🤝: sharing the floor together |
 | **`enenun`** | nonspecific individual (`zenenun` in subject slot) | *someone* | `enenul` *neutral* | 😐: not a particular person |
-| **`adorol`** | placeholder for the following sentence (`dadorol` / `badorol` in clause) | *that* (next clause) | `adorol` *door* | 🚪: the next sentence walks through |
 
-### Clusivity
-<a id="clusivity"></a>
-
-English *we* and *you* do not say whether the listener is in the group. That split is **clusivity**. Inclusive *you and I* on this page is already **`aha`**.
-
-**For *I and my people* / *you all* / *Azawan and associates*, use:** associative **-x** on [plurality](plurality.md#person-role-x) (same path slot). Do not guess those readings from English *we* or from **`aha`**.
+**Compare with:** *I and my people* / *you all* / *Azawan and associates* use **-x** ([clusivity](plurality.md#clusivity)). Inclusive *you and I* on this page is **`aha`**.
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -107,21 +101,17 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 | *Azawan* | `azawan` | | |
 | *Ululon* | `ululon` | | |
 | *dog* | `odogol` | | |
-| *dragon* | `adaral` | | |
 | *book* | `abogol` | | |
 | *walk* | `awalal` | | |
 | *sit* | `vajul` | `ajul` *chair* | 🪑: taking a seat |
 | *sleep* | `elebel` | | |
 | *run* | `urunul` | | |
 | *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
-| *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
-| *depart* | `ebarul` | | |
 | *big* | `elem` | `elel` *elephant* | 🐘: the huge animal |
 | *speaker* | `ugobon` | `ugobol` *microphone* | 🎤: the live voice of the person talking |
 | *listener* | `edonen` | `edonel` *headphones* | 🎧: the one receiving the sound |
 | *interlocutors* | `ahan` | `ahal` *handshake* | 🤝: sharing the floor together |
 | *someone* | `enenun` | `enenul` *neutral* | 😐: not a particular person |
-| *next clause* | `adorol` | `adorol` *door* | 🚪: the next sentence walks through |
 
 #### English → Agalan
 
@@ -131,46 +121,46 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zazawan vawalal. zazar vajul.`
 :::
 
-**2.** *A dog walks. A book is big. The dog sits.*
+**2.** *A dog walks. The dog sits.*
 
 ::: details Show answer
-`zodogol vawalal. zabogol gelem. zodogor vajul.`
+`zodogol vawalal. zodor vajul.`
 :::
 
-**3.** *I walk.*
+**3.** *Ululon sleeps. A book is big. Azawan does so.*
+
+::: details Show answer
+`zululon velebel. zabogol gelem. zazawan veleber.`
+:::
+
+**4.** *I walk.*
 
 ::: details Show answer
 `zugobon vawalal.`
 :::
 
-**4.** *We (you and I) walk.*
+**5.** *We (you and I) walk.*
 
 ::: details Show answer
 `zahan vawalal.`
 :::
 
-**5.** *You walk.*
+**6.** *You walk.*
 
 ::: details Show answer
 `zedonen vawalal.`
 :::
 
-**6.** *Azawan sees me.*
+**7.** *Azawan sees me.*
 
 ::: details Show answer
 `zazawan dugobon vejel.`
 :::
 
-**7.** *Someone sleeps.*
+**8.** *Someone sleeps.*
 
 ::: details Show answer
 `zenenun velebel.`
-:::
-
-**8.** *I told Azawan that Ululon left.*
-
-::: details Show answer
-`zugobon dazawan vezehel dadorol zululon vebarul.`
 :::
 
 #### Agalan → English
@@ -181,40 +171,40 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Ululon walks. He sits.*
 :::
 
-**2.** `zodogol velebel. zadaral gelem. zadar vawalal.`
+**2.** `zodogol vawalal. zodor vajul.`
 
 ::: details Show answer
-*A dog sleeps. A dragon is big. The dragon walks.*
+*A dog walks. The dog sits.*
 :::
 
-**3.** `zazawan dedonen vejel.`
+**3.** `zululon velebel. zabogol gelem. zazawan veleber.`
+
+::: details Show answer
+*Ululon sleeps. A book is big. Azawan does so.*
+:::
+
+**4.** `zazawan dedonen vejel.`
 
 ::: details Show answer
 *Azawan sees you.*
 :::
 
-**4.** `zahan velebel.`
+**5.** `zahan velebel.`
 
 ::: details Show answer
 *We (you and I) sleep.*
 :::
 
-**5.** `zedonen vurunul.`
+**6.** `zedonen vurunul.`
 
 ::: details Show answer
 *You run.*
 :::
 
-**6.** `zenenun vawalal.`
+**7.** `zenenun vawalal.`
 
 ::: details Show answer
 *Someone walks.*
-:::
-
-**7.** `zazawan dululon vezehel dadorol zodogol vurunul.`
-
-::: details Show answer
-*Azawan tells Ululon that the dog runs.*
 :::
 
 **8.** `jol zugobon vajul.`
@@ -576,5 +566,4 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 :::
 
 ## See also
-- [plurality.md](plurality.md): **-x**; address set vs associative
-- [core.md](core.md#dependent-clauses): **`adoro`** placement
+- [plurality.md](plurality.md#clusivity): **-x**; address set vs associative
