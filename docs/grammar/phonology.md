@@ -98,38 +98,48 @@ Spoken `g+3` is `grarel` (`g` + `ra` + digit `re` + `-l`). Inside a content root
 <a id="letter-names"></a>
 <a id="letter-names-and-digits"></a>
 
-When you **spell a word aloud** or **name a letter**, use Agalan letter names, not English ones. Hold a vowel as its name. Give each consonant one CV syllable. Recite in [Beginner table](#beginner) order, and pause between names so two names do not glue into one syllable.
+When you **spell a word aloud** or **name a letter**, say the Agalan name, not the English one. A vowel’s name is that vowel. Pause between names so two names do not run into one syllable.
 
-`e`, `u`, `o`, `a`, `be`, `me`, `we`, `vu`, `da`, `nu`, `ze`, `lo`, `ro`, `ga`, `hu`, `ja`, `xe`
+| Agalan | Name | Cue |
+|--------|------|-----|
+| `e` | `e` | *bet* |
+| `u` | `u` | *but* |
+| `o` | `o` | *boat* (no glide) |
+| `a` | `a` | *father* |
+| `b` | `be` | *beg* |
+| `m` | `me` | *met* |
+| `w` | `we` | *wet* |
+| `v` | `vu` | *fun* |
+| `d` | `da` | *Dada* |
+| `n` | `nu` | *nut* |
+| `z` | `ze` | *zen* |
+| `l` | `lo` | *low* |
+| `r` | `ro` | *row* |
+| `g` | `ga` | *gaga* |
+| `h` | `hu` | *hut* |
+| `j` | `ja` | *yacht* |
+| `x` | `xe` | *shed* |
 
 ```
 `agada` → `a` `ga` `a` `da` `a`
 ```
 
-[Digit syllables](numbers.md#digits) keep mixed vowels so counts stay distinct. A letter that shares a starting consonant with a digit takes the **series opposite** vowel: `a`↔`u`, `o`↔`e`.
-
-| Agalan | Digit syllable | Use | Cue |
-|--------|----------------|-----|-----|
-| `w` | `wo` (1) | name `we` | `o` ↔ `e` |
-| `d` | `du` (2) | name `da` | `u` ↔ `a` |
-| `r` | `re` (3) | name `ro` | `e` ↔ `o` |
-| `m` | `mo` (4) | name `me` | `o` ↔ `e` |
-| `v` | `va` (5) | name `vu` | `a` ↔ `u` |
-| `g` | `gu` (6) | name `ga` | `u` ↔ `a` |
-| `l` | `le` (7) | name `lo` | `e` ↔ `o` |
-| `h` | `ha` (8) | name `hu` | `a` ↔ `u` |
-| `n` | `na` (9) | name `nu` | `a` ↔ `u` |
-| `z` | `zo` (0) | name `ze` | `o` ↔ `e` |
-
-Three letters are not digits. Their names follow the English letter-name, mapped onto Agalan vowels:
-
-| Agalan | Use | Cue |
-|--------|-----|-----|
-| `b` | name `be` | ≈ English *bee* |
-| `j` | name `ja` | ≈ English *jay*, vowel `a` |
-| `x` | name `xe` | ≈ English *eks* |
-
 In a clause, package the glyph as a [mention](spans.md) (`d{z}`: interior spoken `ze`).
+
+Ten letters also begin a [digit syllable](numbers.md#digits). The letter name uses the **opposite** vowel (`a`↔`u`, `o`↔`e`), so naming the letter is not the same as counting.
+
+| Agalan | Digit syllable | Name | Cue |
+|--------|----------------|------|-----|
+| `w` | `wo` (1) | `we` | `o` ↔ `e` |
+| `d` | `du` (2) | `da` | `u` ↔ `a` |
+| `r` | `re` (3) | `ro` | `e` ↔ `o` |
+| `m` | `mo` (4) | `me` | `o` ↔ `e` |
+| `v` | `va` (5) | `vu` | `a` ↔ `u` |
+| `g` | `gu` (6) | `ga` | `u` ↔ `a` |
+| `l` | `le` (7) | `lo` | `e` ↔ `o` |
+| `h` | `ha` (8) | `hu` | `a` ↔ `u` |
+| `n` | `na` (9) | `nu` | `a` ↔ `u` |
+| `z` | `zo` (0) | `ze` | `o` ↔ `e` |
 
 ## Advanced
 <a id="advanced"></a>

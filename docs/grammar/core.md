@@ -396,6 +396,8 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 ## Intermediate
 <a id="intermediate"></a>
 
+Intermediate sections assume you have read all of the beginner sections.
+
 ### Speech act: firm and soft
 <a id="speech-act"></a>
 
