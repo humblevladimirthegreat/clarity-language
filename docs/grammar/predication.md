@@ -9,13 +9,15 @@ English *is* does two jobs that look alike. You can say someone **is a kind or r
 ### Property (*is ADJ*)
 <a id="classification-property"></a>
 
-When you say someone *is* a quality (*Azawan is challenging*), that quality is an **adjective**. Write it with `/ɡ/` and put it right after the name. You do not add a separate *is* verb; the name plus the `/ɡ/` word already make the sentence. The `/ɡ/` word is the piece English would put after *is*.
+You already write a property on `/ɡ/` after the noun (*a blue dog*). When you say someone *is* that quality (*Azawan is challenging*), you use the same pair with no verb. You do not add a separate *is*; the name plus the `/ɡ/` word already make the sentence. The `/ɡ/` word is the piece English would put after *is*.
 
 > `zazawan gomonam.`
 >
 > z-Azawan | g-challenging
 >
 > "Azawan is challenging."
+
+The same string is also the noun plus its adjective: `zazawan gomonam` is both the full sentence *Azawan is challenging* and the phrase *challenging Azawan*.
 
 A titled nationality or tradition uses **-n** on the adjective ([reference suffix](reference-suffix.md)):
 

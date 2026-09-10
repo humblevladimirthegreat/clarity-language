@@ -42,34 +42,24 @@ The usual order is **Subject – Direct Object – Verb**. Because the first let
 ### Adjectives (`/ɡ/`)
 <a id="adjectives-ɡ"></a>
 
-When you name a **property or kind** (*blue*, *a dog*), put that word in `/ɡ/` (an **adjective**). It follows the word it describes.
+When you name a **property** (*blue*), put that word in `/ɡ/` (an **adjective**). It follows the word it describes.
 
-English *is* in *A dog is blue* is already in that pair: you do not write a separate “to be” verb.
-
-> `zodogol gelulul.`
+> `zodogol gelulul vawalal.`
 >
-> z-dog | g-blue
+> z-dog | g-blue | v-walk
 >
-> "A dog is blue."
-
-> `zazawan godogol.`
->
-> z-Azawan | g-dog
->
-> "Azawan is a dog."
-
-The same string is also the noun plus its adjective: `zodogol gelulul` is both the full sentence *A dog is blue* and the phrase *a blue dog*.
+> "A blue dog walks."
 
 ### Extra detail on an adjective (`/w/`)
 <a id="adjective-detail-w"></a>
 
 After an adjective, you can add how intense it is or in what manner. That extra detail uses `/w/` immediately after the `/ɡ/` word.
 
-> `zodogol gelulul welem.`
+> `zodogol gelulul welem vawalal.`
 >
-> z-dog | g-blue | w-size
+> z-dog | g-blue | w-size | v-walk
 >
-> "A dog is very blue."
+> "A very blue dog walks."
 
 ### Adverbs (`/h/`)
 <a id="adverbs-h"></a>
@@ -153,11 +143,11 @@ The dependent may open with its own `/j/` words, or keep the main sentence’s s
 
 *Because* / *if* and similar use `/h/` + `/b/` **`adoro`**. Keep that pair together, **last in the main sentence** (**`adoro`** last). The metaphorical ending on the `/h/` word is always **-m**.
 
-> `zazawan guzumum hurugum badorol zululon vawalal.`
+> `zazawan vuzunul hurugum badorol zululon vawalal.`
 >
-> z-Azawan | g-happy | h-because | b-next-clause | z-Ululon | v-walk
+> z-Azawan | v-sing | h-because | b-next-clause | z-Ululon | v-walk
 >
-> "Azawan is happy because Ululon walks."
+> "Azawan sings because Ululon walks."
 
 **-m** here is the same choice as *grace* from *swan*. **Same root as** is that root as an everyday kind (citation **-l**). **Cue** only says why the picture maps to the English column.
 
@@ -204,7 +194,7 @@ Role letters on this page:
 | `/d/` | direct object (who is acted on) | **d** ≈ done to (sound of *acted on*) |
 | `/b/` | extra noun after a relation word | **b** ≈ bolted on (the extra piece) |
 | `/v/` | verb (the action) | **v** as in English *verb* |
-| `/ɡ/` | adjective (property or kind) | **ɡ** ≈ grade (a rating of the noun) |
+| `/ɡ/` | adjective (a property of the noun) | **ɡ** ≈ grade (a rating of the noun) |
 | `/w/` | extra detail on the previous adjective | **w** ≈ with (stuck to that adjective) |
 | `/h/` | adverb (how / when / where) | **h** starts *how* / *when* / *where* |
 | `/x/` | continue (keep the same setting) | **x** ≈ e**x**tend (same talk, not a new act) |
@@ -253,10 +243,10 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 `zodogol vawalal.`
 :::
 
-**2.** *A dog is blue.*
+**2.** *A blue dog walks.*
 
 ::: details Show answer
-`zodogol gelulul.`
+`zodogol gelulul vawalal.`
 :::
 
 **3.** *Azawan walks.*
@@ -271,16 +261,16 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 `zodogol dagadal vejel.`
 :::
 
-**5.** *Ululon is happy.*
+**5.** *Happy Ululon walks.*
 
 ::: details Show answer
-`zululon guzumum.`
+`zululon guzumum vawalal.`
 :::
 
-**6.** *A dog is very blue.*
+**6.** *A very blue dog walks.*
 
 ::: details Show answer
-`zodogol gelulul welem.`
+`zodogol gelulul welem vawalal.`
 :::
 
 **7.** *Walk!*
@@ -295,10 +285,10 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 `jul vurunul.`
 :::
 
-**9.** *Is Ululon a cat?*
+**9.** *Does Ululon walk?*
 
 ::: details Show answer
-`jol zululon gagadal.`
+`jol zululon vawalal.`
 :::
 
 **10.** *Azawan tells Ululon that the dog runs.*
@@ -307,10 +297,10 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 `zazawan dululon vezehel dadorol zodogol vurunul.`
 :::
 
-**11.** *Azawan is happy because Ululon walks.*
+**11.** *Azawan sings because Ululon walks.*
 
 ::: details Show answer
-`zazawan guzumum hurugum badorol zululon vawalal.`
+`zazawan vuzunul hurugum badorol zululon vawalal.`
 :::
 
 **12.** *A dog walks. Therefore a cat runs.*
@@ -321,16 +311,16 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 #### Agalan → English
 
-**1.** `zazawan gagadal.`
+**1.** `zazawan gelulul vawalal.`
 
 ::: details Show answer
-*Azawan is a cat.*
+*Blue Azawan walks.*
 :::
 
-**2.** `zagadal garedel.`
+**2.** `zagadal garedel vurunul.`
 
 ::: details Show answer
-*A cat is red.*
+*A red cat runs.*
 :::
 
 **3.** `zululon vurunul.`
@@ -339,10 +329,10 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 *Ululon runs.*
 :::
 
-**4.** `zodogol gelem.`
+**4.** `zodogol gelem vawalal.`
 
 ::: details Show answer
-*A dog is big.*
+*A big dog walks.*
 :::
 
 **5.** `zazawan vajul.`
@@ -357,10 +347,10 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 *Sing!*
 :::
 
-**7.** `jol zululon guzumum.`
+**7.** `jol zululon velebel.`
 
 ::: details Show answer
-*Is Ululon happy?*
+*Does Ululon sleep?*
 :::
 
 **8.** `zodogol velebel hogorem bohohul.`
@@ -369,10 +359,10 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 *A dog sleeps inside a house.*
 :::
 
-**9.** `zohohul gelulul.`
+**9.** `zodogol gelulul velebel.`
 
 ::: details Show answer
-*A house is blue.* / *a blue house*
+*A blue dog sleeps.*
 :::
 
 **10.** `zazawan dululon vezehel dadorol zuhubun velebel.`
