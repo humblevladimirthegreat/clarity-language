@@ -274,7 +274,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 15 | `plan-decision.md` | Intermediate | **exists** | **DECISION** **`egege`** changeability; evidentiality stacked on **PREDICT**; PLAN + DECISION stack | Recycle Beginner PLAN / PREDICT. Stack evidentiality on PREDICT only as this stage shows. Join-act **`von`** only if already taught in this stage |
 | 15 | `plan-decision.md` | Advanced | — | no Advanced stage | |
 | 15 | `special-vocabulary.md` | Intermediate | **exists** | Emotion compose (ACT + LOCUS + a value); numbered alternatives `uzebu`/`agego`/`olala` + `g#N` | Overlay *inventory* is not a drill. **Needs** values Beginner (recycle). Not universality (Advanced) |
-| 15 | `special-vocabulary.md` | Advanced | **exists** | Universality (`ewono` / `abulu` / …) as taught in this stage | 4–6 items |
+| 15 | `special-vocabulary.md` | Advanced | **exists** | Universality (`arogu` / `abulu` / …) as taught in this stage | 4–6 items |
 | 16 | `numeric-derivation.md` | Advanced | **exists** | `ROOT x NUM` as the stage teaches (essence / `+N` / `#N` / quasi / …) — only assigned readings | **Optional track.** No unassigned cells from [unassigned-reserved.md](unassigned-reserved.md). 4–6 items |
 
 ## Leak index

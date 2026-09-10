@@ -10,6 +10,11 @@ import { dirname, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { lintAgalanMarkdown } from "../src/lint/agalan-docs.js";
+import {
+  parseOverlayCsv,
+  parsePublishedCsv,
+  validateOverlayPublishedHosts,
+} from "../src/lexicon-search.js";
 import { loadDefaultTables } from "../src/parse/index.js";
 import { lineNumberAt } from "../src/retie/tokens.js";
 
@@ -55,7 +60,26 @@ Checks backticked and fenced Agalan words under docs/grammar/.`);
   return out;
 }
 
+function lintOverlayHosts(): number {
+  const published = parsePublishedCsv(
+    readFileSync(join(rootDir, "data", "lexicon-published.csv"), "utf8"),
+  );
+  const overlays = parseOverlayCsv(
+    readFileSync(join(rootDir, "data", "lexicon-overlays.csv"), "utf8"),
+  );
+  const errors = validateOverlayPublishedHosts(overlays, published);
+  if (errors.length === 0) {
+    return 0;
+  }
+  console.error(`lexicon-overlays.csv: ${errors.length} hosted overlay(s) without a published root`);
+  for (const err of errors) {
+    console.error(`  row ${err.row ?? "?"} ${err.senseForm}: ${err.reason}`);
+  }
+  return errors.length;
+}
+
 function main(): void {
+  const hostIssues = lintOverlayHosts();
   const files = resolveTargets(process.argv.slice(2));
   const tables = loadDefaultTables();
   let count = 0;
@@ -77,8 +101,11 @@ function main(): void {
 
   if (count > 0) {
     console.error(`\n${count} Agalan word issue(s) in docs/grammar/.`);
+  }
+  if (hostIssues + count > 0) {
     process.exit(1);
   }
+  console.log("OK: overlay hosts match the published lexicon.");
   console.log("OK: Agalan words in docs/grammar/ parse as legal and match the lexicon.");
 }
 

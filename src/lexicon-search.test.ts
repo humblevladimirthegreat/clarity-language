@@ -13,6 +13,7 @@ import {
   searchLexicon,
   splitPosPrefixedQuery,
   tokenizeLiteral,
+  validateOverlayPublishedHosts,
 } from "./lexicon-search.js";
 
 const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -49,6 +50,29 @@ describe("overlay csv", () => {
     const witnessed = overlays.find((row) => /witnessed evidential/i.test(row.definition) && row.pos === "h");
     assert.ok(witnessed);
     assert.ok(witnessed.mnemonic.length > 0);
+  });
+
+  it("requires a published host for every hosted overlay", () => {
+    const published = parsePublishedCsv(readFileSync(publishedPath, "utf8"));
+    const overlays = parseOverlayCsv(readFileSync(overlayPath, "utf8"));
+    const errors = validateOverlayPublishedHosts(overlays, published);
+    assert.equal(errors.length, 0, errors.map((e) => e.reason).join("; "));
+  });
+
+  it("flags an overlay emoji with no published row", () => {
+    const errors = validateOverlayPublishedHosts(
+      [
+        {
+          senseForm: "ewonol",
+          pos: "h",
+          emoji: "⛅",
+          definition: "universality COMMON",
+          mnemonic: "",
+        },
+      ],
+      [],
+    );
+    assert.ok(errors.some((e) => /no published lexicon row/.test(e.reason)));
   });
 });
 

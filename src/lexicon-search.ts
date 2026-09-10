@@ -137,6 +137,110 @@ export function parsePublishedCsv(text: string): PublishedRow[] {
   }));
 }
 
+/** Join-act / join-relation sense-forms are vowel-series, not hosted on a published root. */
+export const JOIN_SENSE_FORMS = new Set([
+  "an",
+  "on",
+  "aon",
+  "un",
+  "uan",
+  "uon",
+  "en",
+  "aen",
+  "oen",
+  "uen",
+]);
+
+export type OverlayHostError = {
+  row?: number;
+  senseForm: string;
+  pos: string;
+  emoji: string;
+  reason: string;
+};
+
+/**
+ * Hosted overlays must spell a published root (same emoji; sense_form starts with
+ * that root). Join-series rows are exempt.
+ */
+export function validateOverlayPublishedHosts(
+  overlays: OverlayRow[],
+  published: PublishedRow[],
+): OverlayHostError[] {
+  const byEmoji = new Map<string, PublishedRow>();
+  for (const row of published) {
+    const emoji = row.emoji.trim();
+    if (emoji && !byEmoji.has(emoji)) {
+      byEmoji.set(emoji, row);
+    }
+  }
+
+  const errors: OverlayHostError[] = [];
+  const seen = new Set<string>();
+
+  for (let index = 0; index < overlays.length; index++) {
+    const overlay = overlays[index]!;
+    if (JOIN_SENSE_FORMS.has(overlay.senseForm)) {
+      continue;
+    }
+
+    const rowNum = index + 2;
+    const key = `${overlay.senseForm}\0${overlay.emoji}`;
+    if (seen.has(key)) {
+      continue;
+    }
+    seen.add(key);
+
+    const emoji = overlay.emoji.trim();
+    if (!emoji) {
+      errors.push({
+        row: rowNum,
+        senseForm: overlay.senseForm,
+        pos: overlay.pos,
+        emoji,
+        reason: `hosted overlay ${overlay.senseForm} has no emoji and no published host`,
+      });
+      continue;
+    }
+
+    const host = byEmoji.get(emoji);
+    if (!host) {
+      errors.push({
+        row: rowNum,
+        senseForm: overlay.senseForm,
+        pos: overlay.pos,
+        emoji,
+        reason: `overlay ${overlay.senseForm} (${emoji}) has no published lexicon row for that emoji`,
+      });
+      continue;
+    }
+
+    const root = host.clarity.trim();
+    if (!root) {
+      errors.push({
+        row: rowNum,
+        senseForm: overlay.senseForm,
+        pos: overlay.pos,
+        emoji,
+        reason: `published host for ${emoji} has an empty root`,
+      });
+      continue;
+    }
+
+    if (!overlay.senseForm.startsWith(root)) {
+      errors.push({
+        row: rowNum,
+        senseForm: overlay.senseForm,
+        pos: overlay.pos,
+        emoji,
+        reason: `overlay ${overlay.senseForm} does not start with published root ${root} (${emoji} ${host.literal})`,
+      });
+    }
+  }
+
+  return errors;
+}
+
 export function parseOverlayCsv(text: string): OverlayRow[] {
   const { headers, rows } = parseCsv(text);
   if (headers.join(",") !== OVERLAY_HEADERS.join(",")) {

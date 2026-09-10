@@ -248,7 +248,7 @@ strict: *Finally: goal #3. We (A and B and C) — pleasure met, medium activatio
 
 loose: *Finally, a third goal: we're actually enjoying this.*
 
-**C:** `hewonol hanunul zenenun vawalal zul.`
+**C:** `harogul hanunul zenenun vawalal zul.`
 
 gloss: `h-COMMON` · `h-rain` · `z-someone` · `v-walking` · `z-not`
 
