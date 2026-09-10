@@ -87,7 +87,7 @@ Anchors:
 | Intermediate | `<a id="translation-practice-intermediate"></a>` |
 | Advanced | `<a id="translation-practice-advanced"></a>` |
 
-Follow the [template](translation-exercises.md#template). Lead: *Short drills for Beginner/Intermediate/Advanced. Try each item before opening **Show answer**.* Put **Roots used here** once as the English / Agalan table (shared bank subset + this stage’s extra roots).
+Follow the [template](translation-exercises.md#template). Lead: *Short drills for Beginner/Intermediate/Advanced. Try each item before opening **Show answer**.* Put **Roots used here** once as the English / Agalan table (shared bank subset + this stage’s extra roots). Learner **Agalan** cells are [citations](translation-exercises.md#template) (`odogol`, not the bank stem `odogo`).
 
 | Band kind | Items per direction |
 |-----------|---------------------|
@@ -164,7 +164,7 @@ Do **not** skip productive syntax pages (core, coordination, questions, values, 
 
 Default people: [house cast](grammar-docs.md#house-cast) — `zazawan` / `zululon` / `zuhubun` (`azawa` / `ululo` / `uhubu` + **-n**). Morph: `z-Azawan` / `z-Ululon` / `z-Uhubun`.
 
-Reuse this bank unless this stage already taught a different published root. Do not mine the lexicon for variety.
+Reuse this bank unless this stage already taught a different published root. Do not mine the lexicon for variety. Tokens here are **stems for matching** (path allowlist / leak checks). The learner-facing **Roots used here** table uses [citations](grammar-docs.md#citation-in-tables), not these stems as Agalan cells. Do not copy `(**-m**)` from this **Sense** column into learner **English**.
 
 | Root | Sense in drills |
 |------|-----------------|

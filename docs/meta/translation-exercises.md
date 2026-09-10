@@ -82,7 +82,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. …
 
 Omit recoverable **`jal`** unless the drill is teaching speech act. Match role letters and sense endings to the grammar page ([core.md](../grammar/core.md#role-letters), [reference suffix](../grammar/reference-suffix.md)). English items that need a person use house names (*Azawan walks*), not *I* / *you*.
 
-**Vocab table:** every checkpoint uses the same two columns, **English** then **Agalan**, even when the bank is short. One root per row (split house names `azawa` / `ululo` / `uhubu`). English is the learner gloss for this drill (*dog*, *happy*); keep **-m**, name, and metaphor notes in that cell (`*size* / *big* (**-m**)`, `*grace* (name **Azawan**)`). Agalan is citation form in backticks (`odogo`, `uzumu`). Do not pack several pairs into one row.
+**Vocab table:** every checkpoint uses the same two columns, **English** then **Agalan**, even when the bank is short. One sense per row (split house names `azawan` / `ululon` / `uhubun`). English is the learner gloss for this drill (*dog*, *happy*, *grace*) — not an ending tag (`(**-m**)`). House people may still note the nativized name (`*grace* (name **Azawan**)`). **Agalan** is a [citation](../grammar/reference-suffix.md#citation-forms) in backticks (`odogol`, `uzumum`, `azawan`) — ending already on, not a bare stem (`odogo`). Closed specials use their default ending (`ugobon`, not `ugobo`). Do not pack several pairs into one row. Inner **`x`** pieces and other table exceptions: [citation in tables](grammar-docs.md#citation-in-tables) (prefer the whole inflected word in the bank when the drill builds a compound).
 
 ## Related meta
 

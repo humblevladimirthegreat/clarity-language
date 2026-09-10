@@ -10,7 +10,7 @@ Related meta:
 |------|------|
 | [learning-levels.md](learning-levels.md) | **Beginner** / **Intermediate** / **Advanced** stage rubric and [cross-doc path](learning-levels.md#cross-doc-path) (for `docs/grammar/` only) |
 | [glosses.md](glosses.md) | Morph glosses and free English ([example blocks](glosses.md#example-block); [house-name glosses](glosses.md#house-cast)) |
-| [translation-exercises.md](translation-exercises.md) | Eng ↔ Agalan checkpoints (placement, principles including house-cast people, spoiler shape) |
+| [translation-exercises.md](translation-exercises.md) | Eng ↔ Agalan checkpoints (placement, principles including house-cast people, spoiler shape; vocab **Agalan** = citation) |
 | [drill-generation.md](drill-generation.md) | Path allowlist and execute procedure (one file per agent) |
 | [language-name.md](language-name.md) | English name **Agalan** = glasses root **`agala`** + **-n** (editors only — not linked from grammar) |
 | [unassigned-reserved.md](unassigned-reserved.md) | Unused-slot / unassigned-form inventory (editors only — not linked from grammar) |
@@ -31,7 +31,7 @@ On this page:
 | Page architecture | [Page skeleton](#page-skeleton), [Beginner](#beginner-stage-shape), [later stages](#later-stage-shape) |
 | Memory aids | [Cues](#cues-columns), [when to state a scene cue](#when-to-state-a-scene-cue) |
 | Voice | [Explain before you slogan](#explain-before-you-slogan), [plain language](#plain-language-no-assumed-linguistics) |
-| Examples / tables | [House cast](#house-cast), [Tables](#tables) |
+| Examples / tables | [House cast](#house-cast), [Tables](#tables) ([citation in tables](#citation-in-tables)) |
 | Scope | [Cross-links](#cross-links-and-scope), [what belongs where](#what-belongs-where) |
 | Ship check | [Stage checklist](#stage-checklist) |
 | File format | [Markdown hygiene](#markdown-hygiene) (including [HTML comments](#html-comments)) |
@@ -253,9 +253,9 @@ Learner tables use these headers (omit a column when every cell would be empty o
 
 | Column | Binding? | Content |
 |--------|----------|---------|
-| **Agalan** | yes | The spelling (word, letter, or pattern). |
+| **Agalan** | yes | The spelling (word, letter, or pattern). A **content word** is a [citation](#citation-in-tables) or the inflected form the row teaches — not a bare stem. |
 | **Use** | yes | What the form **does** in the clause (subject, command, continue). Not a pun. |
-| **English** | yes | English the learner may **say or produce** (sense or free English). Not a pun. |
+| **English** | yes | English the learner may **say or produce** (sense or free English). Not a pun, and not an ending tag (`(**-m**)`). |
 | **Same root as** | no | The everyday kind of that root as a [citation](../grammar/reference-suffix.md) (**-l**): `` `urugul` *brick* ``. Use when **English** is a published metaphor or a closed overlay of a content root, so the picture in **Cue** is licensed. Omit the column when every row is a letter, vowel-series, punctuation, or other non-lexicon cue. Empty cells are fine in a mixed drill bank. |
 | **Cue** | no | Recall only: **why** the token maps. Cover this column: the rest must still be the language. ([rubric](#cue-rubric)) |
 
@@ -290,7 +290,7 @@ Letter / series: `{letter} ≈ {sound or series slogan} ({why that maps})`. `**d
 | Letter / series | Pun on the spelling (`**d** ≈ done to`, **`a`** *add*) plus why it maps | **Cue** only. Never **Use** or **English**. Linker is **`≈`** (“sounds like”), never `=` or `→`. |
 | Scene | Published emoji + literal that licenses **-m**, then why that scene evokes the sense | **English** = metaphorical sense (*happy*, *because*). **Same root as** = citation **-l** of that picture (`uzumul` *smile*). **Cue** = `emoji: why` (or `emoji *literal*: why` if the table has no **Same root as** column) |
 
-A lexicon path is a real **-l** / **-m** choice; the *literal* English is still not what drills ask for. Write `*happy* (**-m**)` in **English**, `` `uzumul` *smile* `` in **Same root as**, and `😊: the face of *happy*` (or `from *smile*: the face of *happy*` when the table has no **Same root as** column) in **Cue** — never `smile → *happy*` as the only English.
+A lexicon path is a real **-l** / **-m** choice; the *literal* English is still not what drills ask for. Write `*happy*` in **English** (no `(**-m**)` tag — the citation ending already marks metaphor), `` `uzumul` *smile* `` in **Same root as**, and `😊: the face of *happy*` (or `from *smile*: the face of *happy*` when the table has no **Same root as** column) in **Cue** — never `smile → *happy*` as the only English.
 
 Inline after the rule sentence: `(cue: …)`. Worked examples stay Agalan / morph / quoted free English ([example block](glosses.md#example-block)) — no cue line. Translation-practice answers are Agalan or loose English only; the root bank may add **Same root as** and **Cue** beside **English · Agalan**.
 
@@ -462,6 +462,34 @@ Short Eng ↔ Agalan checkpoints: end of a page stage only — [translation-exer
 - Full inventories belong in Intermediate / Advanced, or after the teach block.
 - Prefer columns **Agalan · Use · English · Same root as · Cue** for **this** form ([cues](#cues-columns)). Drop **Same root as** when no row is a lexicon metaphor / overlay. Add **Example** or a Morph column when endings are the point. **Not this** / related-subsystem **Agalan · Use**: [Compare with](#compare-with).
 - A grammar-table **Gloss** column is short free English unless the row teaches morphology ([glosses.md](glosses.md)).
+- Content-word cells: [citation (ending already on)](#citation-in-tables).
+
+### Citation in tables
+<a id="citation-in-tables"></a>
+
+Learner tables under `docs/grammar/` almost never publish a **bare stem** (`odogo`, `uzumu`, `azawa`, `odoho`). A content-word **Agalan** cell is a spelling the learner could write **as a word**: [citation](../grammar/reference-suffix.md#citation-forms) (prefix-less root + ending) or the **inflected** form the row is teaching (role letter already on). **English** is the sense only — do not tag `(**-m**)` or `(**-l**)` there; the Agalan ending already carries that. **Same root as** stays the everyday **-l** citation of the picture (`urugul` *brick`), not a stem. Checkpoint banks apply the same rule ([translation-exercises.md](translation-exercises.md#template)).
+
+| Publish | Example |
+|---------|---------|
+| Citation of this row’s sense | `odogol` *dog*; `uzumum` *happy*; `azawan` *Azawan*; `ezazal` *therefore* |
+| Inflected form the row teaches | `hodohom`, `howoram`, `xezazal`, `zaxuvugul` |
+| Special with its default ending | citation `ugobon` / `edonen` / `ahan` / `enenun`; in-clause `zugobon` when the slot is the point |
+
+Do **not** call `odogo` a citation. Overlay / need / linker / mood inventories use the citation or the floating `/h/` (or `/x/`) word, not the stem (`alodol` or `halodol`, not `alodo`; `odohol` or `hodohom`, not `odoho`). Combinability (`xa` / `xe`, hold endings) belongs in a **pattern** column (`…xal`) or in extra inflected rows, not by stripping the ending.
+
+**Exceptions** (a stem or non-word is the right **Agalan** cell):
+
+| Exception | Why | Example |
+|-----------|-----|---------|
+| Not a content root | Letters, IPA, role letters, vowel-series cells, ending / stance slots, number formulas, shape templates | `/z/`; **`a`**; **`xa`**; `…xal`; `g+e`; `ROOTx+1`; “full root **`x`** full root” |
+| Inner piece of an **`x`** word | That piece has **no ending of its own**; a citation there invites a stranded inner suffix | Bank `uvugu` only if the cell is the event after **`ax`**; prefer the whole word `zaxuvugul` |
+| Naming the constant while endings are the lesson | Prose may say “the same root `azawa`”; the **table** still lists citations | `azawal` / `azawam` / `azawan` in the ending table |
+| Editor matching keys | Lexicon CSVs, this page’s house-cast **Root** column, [drill-generation](drill-generation.md#root-bank) token lists — not learner grammar tables | `data/lexicon-published.csv` stems |
+| Language-name composition | Showing **`agala`** + proper **-n** once, not as a vocab row | [introduction.md](../grammar/introduction.md) name gloss |
+
+Resume teaching may talk about a “root prefix” in running prose; the Agalan column is still `zazar` / `zodogor`, not `azawa` / `odogo`.
+
+**Test:** hide **Use** / **English**. Is the leftover a legal standalone Agalan word (or a letter / pattern / inner-`x` piece on the exception list)? If it is a published content sense with no ending, add the ending.
 
 ## Cross-links and scope
 <a id="cross-links-and-scope"></a>

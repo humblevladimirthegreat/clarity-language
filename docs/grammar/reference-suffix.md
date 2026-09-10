@@ -48,8 +48,6 @@ The last letters you just used, on the same root `azawa`:
 | `azawam` | first mention, published metaphor | *grace* | **m** ≈ metaphor |
 | `azawan` | this person or place as a name | *Azawan* | **n** ≈ name |
 
-Pointing back with **-r** is [pronouns](pronouns.md).
-
 ### Writing
 <a id="citation-forms"></a>
 <a id="prefix-less-citation"></a>
@@ -65,14 +63,14 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *swan* | `azawa` | | |
-| *grace* (**-m**) | `azawa` | `azawal` *swan* | 🦢: the glide of *grace* |
-| *grace* (as a name) | `azawa` | | |
-| *courage* (as a name) | `ululo` | | |
-| *beauty* (as a name) | `uhubu` | | |
-| *cat* | `agada` | | |
-| *blue* | `elulu` | | |
-| *happy* (**-m**) | `uzumu` | `uzumul` *smile* | 😊: the face of *happy* |
+| *swan* | `azawal` | | |
+| *grace* | `azawam` | `azawal` *swan* | 🦢: the glide of *grace* |
+| *grace* (as a name) | `azawan` | | |
+| *courage* (as a name) | `ululon` | | |
+| *beauty* (as a name) | `uhubun` | | |
+| *cat* | `agadal` | | |
+| *blue* | `elulul` | | |
+| *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
 
 #### English → Agalan
 
@@ -278,20 +276,20 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *beauty* (name **Uhubun**) | `uhubu` | | |
-| *book* (name **Abogon**) | `abogo` | | |
-| *blue* | `elulu` | | |
-| *walk* | `awala` | | |
-| *run* | `urunu` | | |
-| *sing* | `uzunu` | | |
-| *see* | `eje` | `ejel` *eye* | 👁️: the sense you see with |
-| *write* | `uwuru` | |
-| *haste* | `adaza` | |
-| (name **Odunaxalanen**) | `oduna`×`alane` | |
-| (label **Sushi-Coffee**) | `uzuzu`×`ogove` | |
-| (title **Book-Courage**) | `abogo`×`ululo` | |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *book* (name **Abogon**) | `abogon` | | |
+| *blue* | `elulul` | | |
+| *walk* | `awalal` | | |
+| *run* | `urunul` | | |
+| *sing* | `uzunul` | | |
+| *see* | `ejel` | | 👁️ *eye*: the sense you see with |
+| *write* | `uwurul` | |
+| *haste* | `adazal` | |
+| (name **Odunaxalanen**) | `zodunaxalanen` | |
+| (label **Sushi-Coffee**) | `zuzuzuxogoven` | |
+| (title **Book-Courage**) | `zabogoxululon` | |
 
 #### English → Agalan
 

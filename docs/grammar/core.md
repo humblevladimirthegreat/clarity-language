@@ -237,7 +237,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *tell* | `ezehe` | | |
 | *write* | `uwuru` | | |
 | *sing* | `uzunu` | | |
-| *see* | `eje` | `ejel` *eye* | 👁️: the sense you see with |
+| *see* (**-m**) | `eje` | `ejel` *eye* | 👁️: the sense you see with |
 | *sit* | `aju` | | |
 | *haste* (**-m**) | `adaza` | `adazal` *dash* | 💨: a burst of speed |
 | *quietude* (**-m**) | `owo` | `owol` *owl* | 🦉: the quiet bird |
