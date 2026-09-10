@@ -193,21 +193,8 @@ A word that glues two sentences (*therefore*, *however*, …) is an `/x/` **link
 
 **Compare with:** `/j/` starts a **new** speech move (a new statement, question, or command). `/x/` keeps the move you already started.
 
-### Writing
-<a id="orthography"></a>
-<a id="writing-words"></a>
-<a id="part-of-speech-prefixes"></a>
-
-<a id="capitalization"></a>
-
-Agalan writing is **unicase**: use **lowercase** for every native letter. Capital letters appear only inside quoted foreign spelling that keeps another writing system’s casing.
-
-In a sentence the shape is **role letter + root + ending** (`zodogol`). Outside a sentence, omit the role letter: that is a [citation](reference-suffix.md#citation-forms).
-
-<a id="citation-forms"></a>
-<a id="prefix-less-citation"></a>
-
-`odogol` · `uzumum` · `azawan` · `ululon`
+### Role letters
+<a id="role-letters"></a>
 
 Role letters on this page:
 

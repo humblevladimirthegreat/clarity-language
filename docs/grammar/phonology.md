@@ -161,7 +161,7 @@ A line that piles closed vowels, clusters, and mid-word stops is harder to susta
 ## See also
 
 - Citation (root + ending, no sentence): [reference-suffix.md](reference-suffix.md)
-- Role letters / writing in a clause: [core.md](core.md#orthography)
+- Role letters in a clause: [core.md](core.md#role-letters)
 - Numbers (PoS+`r` exception and [digit syllables](numbers.md#digits)): [numbers.md](numbers.md)
 - Mention spans (letter as form in a clause): [spans.md](spans.md)
 - Mid-word **`x`**: [x-compounds.md](x-compounds.md)

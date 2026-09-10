@@ -314,7 +314,7 @@ On a non-initial conjunct under a [clause `/x/` fence](coordination.md#clause-le
 >
 > "Azawan: additionally, Ululon walks." (vocative, then discourse reviser)
 
-**Related form:** packaging a list uses prefixed [joins](coordination.md#join-series-ending-shared) (`zal` / `zam` / `val` …). Longer prefix-less **root + ending** outside a sentence (`odogol`) is [citation](core.md#citation-forms).
+**Related form:** packaging a list uses prefixed [joins](coordination.md#join-series-ending-shared) (`zal` / `zam` / `val` …). Longer prefix-less **root + ending** outside a sentence (`odogol`) is [citation](reference-suffix.md#citation-forms).
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -471,4 +471,4 @@ Inside a [measure range](numbers-applied.md#ranges), prefix-less **`ul`** on the
 ## See also
 
 - List joins (*and* / *or*): [coordination.md](coordination.md)
-- Prefix-less citation: [core.md § Outside a sentence](core.md#citation-forms)
+- Prefix-less citation: [reference-suffix.md](reference-suffix.md#citation-forms)

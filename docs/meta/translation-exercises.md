@@ -80,7 +80,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. …
 :::
 ```
 
-Omit recoverable **`jal`** unless the drill is teaching speech act. Match orthography and sense endings to the grammar page ([core.md § Orthography](../grammar/core.md#orthography)). English items that need a person use house names (*Azawan walks*), not *I* / *you*.
+Omit recoverable **`jal`** unless the drill is teaching speech act. Match role letters and sense endings to the grammar page ([core.md](../grammar/core.md#role-letters), [reference suffix](../grammar/reference-suffix.md)). English items that need a person use house names (*Azawan walks*), not *I* / *you*.
 
 **Vocab table:** every checkpoint uses the same two columns, **English** then **Agalan**, even when the bank is short. One root per row (split house names `azawa` / `ululo` / `uhubu`). English is the learner gloss for this drill (*dog*, *happy*); keep **-m**, name, and metaphor notes in that cell (`*size* / *big* (**-m**)`, `*grace* (name **Azawan**)`). Agalan is citation form in backticks (`odogo`, `uzumu`). Do not pack several pairs into one row.
 

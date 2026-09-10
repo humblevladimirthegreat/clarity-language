@@ -83,7 +83,7 @@ With **`@`** / **-n**, mention is *the title X* / *the proverb X* as a **named u
 >
 > "Azawan saw sushi." (opaque surface)
 
-Keep the source’s **casing** inside `<>` when that writing system uses case (`d<NaCl>`, `d<iPhone>`): [capitalization](core.md#capitalization).
+Keep the source’s **casing** inside `<>` when that writing system uses case (`d<NaCl>`, `d<iPhone>`). Native Agalan letters stay [lowercase](phonology.md#beginner).
 
 A **compact foreign content word** takes an ending after `>`: `d<sushi>l`, `z<Sam>n`. Same casing rule inside. That is one ordinary word whose root is foreign, not a span.
 
@@ -91,7 +91,7 @@ A **compact foreign content word** takes an ending after `>`: `d<sushi>l`, `z<Sa
 
 When a published Agalan root already matches, write the ordinary word (`dagadal`, not a fence).
 
-Outside a clause, a name or word uses prefix-less **root + ending**: [citation forms](core.md#citation-forms) (`<Sam>n`). A span still takes a role letter, because it fills a sentence slot.
+Outside a clause, a name or word uses prefix-less **root + ending**: [citation forms](reference-suffix.md#citation-forms) (`<Sam>n`). A span still takes a role letter, because it fills a sentence slot.
 
 ### Asides (`h(…)`)
 <a id="asides"></a>
@@ -743,4 +743,4 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 - Identity vs parenthetical comment: [predication.md](predication.md#identity)
 - Phrasal proper names: [reference-suffix.md](reference-suffix.md#phrasal-proper-names)
 - Native office handles: [reference-suffix.md](reference-suffix.md#named-handles)
-- Prefix-less citation outside a clause: [core.md § Outside a sentence](core.md#citation-forms)
+- Prefix-less citation outside a clause: [reference-suffix.md](reference-suffix.md#citation-forms)

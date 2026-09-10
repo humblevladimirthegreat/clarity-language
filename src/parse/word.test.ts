@@ -35,7 +35,7 @@ describe("parseWord — content / gl- / citation", () => {
     assert.deepEqual(word.family, { kind: "content", roots: ["elulu"] });
   });
 
-  it("parses prefix-less citation uzumum (core.md citation-forms)", () => {
+  it("parses prefix-less citation uzumum (reference-suffix.md citation-forms)", () => {
     const word = parseOk("uzumum");
     assert.equal(word.pos, undefined);
     assert.equal(word.ending, "m");

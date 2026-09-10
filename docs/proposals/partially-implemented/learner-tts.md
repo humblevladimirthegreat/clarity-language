@@ -260,5 +260,5 @@ Expect the WASM voice pack to dwarf the TS glue; keep it out of the critical ren
 | Writing vs speech (spans) | [spans.md](../../grammar/spans.md#writing-vs-speech) |
 | Number shorthand vs speech | [numbers.md](../../grammar/numbers.md#writing-preferred-shorthand) |
 | Periods / force prosody | [core.md](../../grammar/core.md#orthography-and-prosody-periods) |
-| Orthography | [core.md](../../grammar/core.md#orthography) |
+| Orthography | [phonology.md](../../grammar/phonology.md#beginner), [core.md](../../grammar/core.md#role-letters) |
 | Inverse (phoneme ASR) | `learner-stt.md` |

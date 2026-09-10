@@ -1,7 +1,7 @@
 # Proposal: dictionary words as an early lesson
 
 **Status:** PROPOSED  
-**Related:** cite-then-sentence pedagogy (open core with word anatomy, then add role letters); [phonology.md Beginner](../grammar/phonology.md#beginner) (letters / sound) **before or with** this lesson; [core.md § citation](../grammar/core.md#citation-forms); [reference-suffix.md](../grammar/reference-suffix.md); [lexicon.md](../grammar/lexicon.md); [glosses.md](../meta/glosses.md) (literal / metaphorical / proper as separate senses)  
+**Related:** cite-then-sentence pedagogy (open core with word anatomy, then add role letters); [phonology.md Beginner](../grammar/phonology.md#beginner) (letters / sound) **before or with** this lesson; [reference-suffix.md](../grammar/reference-suffix.md#citation-forms); [lexicon.md](../grammar/lexicon.md); [glosses.md](../meta/glosses.md) (literal / metaphorical / proper as separate senses)  
 **Design authority:** unchanged. This proposal is **pedagogy and path order** only. Endings, citation, and the lexicon stay as the grammar and CSVs already specify.
 
 ## Motivation

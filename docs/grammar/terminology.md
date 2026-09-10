@@ -584,7 +584,7 @@ Prefix-less *including / rather / instead / except* (in-clause vs discourse by p
 
 Word-initial job letter.
 
-[Core](core.md#part-of-speech-prefixes)
+[Core](core.md#role-letters)
 
 ### Scope island
 
