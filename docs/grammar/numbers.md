@@ -89,7 +89,7 @@ The word ends with exact **-l**, spoken as its own last syllable. Build the spok
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Count with `g+N`, rank with `g#N`, and use digitless **`g+`** with **-x** on the noun for *more than one*.
 
-**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
+**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -100,7 +100,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 | *dog* | `odogol` | | |
 | *book* | `abogol` | | |
 | *house* | `ohohul` | | |
-| *see* | `ejel` | `ejel` *eye* | 👁️: the sense you see with |
+| *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
 | *write* | `uwurul` | |
 
 #### English → Agalan
@@ -711,7 +711,7 @@ In a sentence, the PoS attaches to that single number word (see [Parts of speech
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Prefer shorthand (`g~+3`, `g#-2`, `h_15,30`). Sample PoS, endings, digitless number as verb / adverb / interjection / discourse, and **one** time reading — not the whole inventory.
 
-**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
+**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -724,7 +724,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 | *blue* | `elulul` | | |
 | *walk* | `awalal` | | |
 | *sleep* | `elebel` | | |
-| *see* | `ejel` | `ejel` *eye* | 👁️: the sense you see with |
+| *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
 
 #### English → Agalan
 
@@ -1132,7 +1132,7 @@ Ordinary spelling carries no stress mark ([phonology](phonology.md#phonotactics)
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. Digitless exponents, hyperbole, and zero×exp as in the teach tables — shorthand (`g+e`, `g+1e`, `x#e`).
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
 
 | English | Agalan | Cue |
 |---------|--------|-----|

@@ -112,7 +112,7 @@ English sometimes puts two nouns in one slot (*a dog and a cat*) and sometimes o
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. The point is **`x`** assembly vs two words vs a lexical compound.
 
-**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
+**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|

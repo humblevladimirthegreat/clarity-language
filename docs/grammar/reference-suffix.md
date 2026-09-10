@@ -59,7 +59,7 @@ A citation is **lowercase** root + ending (`azawal`, `azawam`, `azawan`). Englis
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Choose **-l** (new literal), **-m** (new metaphor), or **-n** (named). Every answer is a citation (no first-letter job mark). For a name, the English prompt is the **sense** (*grace*), not the nativized spelling (*Azawan*).
 
-**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
+**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -272,7 +272,7 @@ Beginner used **-l** / **-m** / **-n** as reference on citations. On [number wor
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. The point is **-n** as a title on any role letter, one **`x`-compound** name, or an office **handle**.
 
-**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
+**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -284,7 +284,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 | *walk* | `awalal` | | |
 | *run* | `urunul` | | |
 | *sing* | `uzunul` | | |
-| *see* | `ejel` | | 👁️ *eye*: the sense you see with |
+| *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
 | *write* | `uwurul` | |
 | *haste* | `adazal` | |
 | (name **Odunaxalanen**) | `zodunaxalanen` | |

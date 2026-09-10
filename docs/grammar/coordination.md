@@ -210,7 +210,7 @@ Two or more items still take the same vowel and ending as the lists above. The t
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. The join sits **after** the items; pick the vowel (set vs rank, including **`u`**) and the ending (**-l** / **-m** / **-r**), including single-item and standalone starter forms.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
 
 | English | Agalan | Cue |
 |---------|--------|-----|
@@ -594,7 +594,7 @@ An adverb `/h/` before the verb-phrase stretch, or in SHARED after the join, cov
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Sample the decisions this band adds: invert **`ua`**, universals vs *everything but*, SHARED after the join, islands, nesting, and clause **`xan`**.
 
-**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
+**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -610,7 +610,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 | *onion* | `onunol` | | |
 | *cucumber* | `ugumel` | | |
 | *apple* | `abelel` | | |
-| *see* | `ejel` | | 👁️: the sense you see with |
+| *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
 | *walk* | `awalal` | |
 | *run* | `urunul` | |
 | *sleep* | `elebel` | |
@@ -808,7 +808,7 @@ These limits apply to every join.
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. Phrase **-n** is a **named list** (clause **sequence** is Intermediate); one item also tests a rare-arity contrast (**`zor`** vs **`zer`**, **`zur`**, or standalone **`zan`**).
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
 
 | English | Agalan | Cue |
 |---------|--------|-----|

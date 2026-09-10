@@ -102,7 +102,7 @@ Attach **-x** only **after** the [reference suffix](reference-suffix.md), never 
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
+**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -116,7 +116,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 | *sit* | `ajul` | |
 | *run* | `urunul` | |
 | *sleep* | `elebel` | |
-| *see* | `ejel` | |
+| *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
 | inclusive *we* | `ahan` | 🤝 *handshake*: sharing the floor together |
 | speaker | `ugobon` | 🎤 *microphone*: the live voice of the person talking |
 | listener | `edonen` | 🎧 *headphones*: the one receiving the sound |
@@ -351,7 +351,7 @@ Beginner already used **-x** on nouns and person-role specials. The rest of the 
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
+**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|

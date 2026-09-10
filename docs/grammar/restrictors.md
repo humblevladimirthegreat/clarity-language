@@ -105,7 +105,7 @@ Open **-m** leaves other occasions possible: *when raining, among other times*, 
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Restrictors mark **when the claim counts**. Bare **`hal`** / **`hual`** are *never* / *always*; with a listed occasion they are *only when…* / *always except when…*.
 
-**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
+**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -306,7 +306,7 @@ Statement readings below. Asking *when*: [questions.md](questions.md#when).
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Use exclusive / inclusive / *not when* / ranked occasions / unspecified-member with listed occasions. Next-clause *when* / *if* stays `/h/` plus `/b/` **`adoro`**.
 
-**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
+**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|

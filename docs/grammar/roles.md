@@ -93,7 +93,7 @@ To say someone **is a kind** (*Azawan is a fighter*), put the same role stem on 
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
+**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -106,7 +106,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 | *run* | `urunul` | | |
 | *sleep* | `elebel` | | |
 | *sing* | `uzunul` | | |
-| *see* | `ejel` | | 👁️: the sense you see with |
+| *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
 | *write* | `uwurul` | | |
 | *sit* | `ajul` | | |
 | *fight* | `uvugul` | | |
@@ -336,7 +336,7 @@ Direction words take the same four [reference endings](reference-suffix.md) as o
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
+**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|

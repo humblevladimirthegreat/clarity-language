@@ -100,7 +100,7 @@ English *we* and *you* do not say whether the listener is in the group. That spl
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
+**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -113,7 +113,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 | *sit* | `ajul` | | |
 | *sleep* | `elebel` | | |
 | *run* | `urunul` | | |
-| *see* | `ejel` | | |
+| *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
 | *tell* | `ezehel` | | |
 | *depart* | `ebarul` | | |
 | *big* | `elem` | `elel` *elephant* | 🐘: the huge animal |
@@ -292,7 +292,7 @@ When you address several people at once, English *you* does not say how many. Th
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
+**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -303,7 +303,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 | *run* | `urunul` | | |
 | *sleep* | `elebel` | | |
 | *sit* | `ajul` | | |
-| *see* | `ejel` | | |
+| *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
 | *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
 | *haste* | `adazal` | `adazal` *dash* | 💨: a burst of speed |
 | *interlocutors* | `ahan` | `ahal` *handshake* | 🤝: sharing the floor together |
@@ -496,7 +496,7 @@ Intermediate already recast one referent into a new slot. Each table is an **ant
 
 Short drills on this Advanced band. Try each item before opening **Show answer**.
 
-**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
+**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|

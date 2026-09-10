@@ -274,7 +274,7 @@ Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`zahaxre
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. `ROOT x NUM` names a **kind property** (essence, grain, quasi, part-count, order-kind, catalog code, total-null): spelled CV plus the **host** ending.
 
-**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
+**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -290,7 +290,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 | *specimen* | `edudul` | `edudul` *petri-dish* | 🧫: a sample under study |
 | *fear* | `eveval` | | |
 | *score* | `odobol` | `odobol` *trophy* | 🏆: the counted tally |
-| *see* | `ejel` | `ejel` *eye* | 👁️: the sense you see with |
+| *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
 | *write* | `uwurul` | |
 
 #### English → Agalan

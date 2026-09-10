@@ -85,7 +85,7 @@ Emotion compose already used **`hogegal`** (HIGH arousal) next to **`zogegal`** 
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Compose emotion (one value + ACT + LOCUS), or number alternative candidates (`g#N`).
 
-**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
+**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -233,7 +233,7 @@ The default *always* is *usually* (exceptions expected), not *must happen that w
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. Pair a domain fence (`hual` / `zual` / `zuam`) with a universality mood.
 
-**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
+**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -254,7 +254,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 | *sing* | `uzunul` | | |
 | *sleep* | `elebel` | | |
 | *sit* | `ajul` | | |
-| *see* | `ejel` | `ejel` *eye* | 👁️: the sense you see with |
+| *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
 | *run* | `urunul` | | |
 | evidential *pattern* | `abawam` | | |
 
