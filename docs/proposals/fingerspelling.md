@@ -46,18 +46,18 @@ Spoken names stay as in phonology. Plural **-x** uses the **x** hold (`xe`).
 | **u** | *u* | STS **U** | |
 | **o** | *o* | STS **O** | |
 | **a** | *a* | STS **A** | |
-| **h** | *hu* | STS **H** | |
-| **w** | *we* | STS **W** | |
-| **g** | *ga* | STS **G** | ASL false friend risk (see below) |
-| **d** | *da* | STS **D** | |
-| **j** | *ja* | STS **J** | **Hold** (flat hand); not ASL pinky-trace |
 | **b** | *be* | STS **B** | |
-| **z** | *ze* | **Chinese Z** | Index + little finger extended, tips to the side, back of hand to viewer; other fingers bent. **Not** STS rounded-middle-finger **Z**, **not** ASL zigzag |
 | **m** | *me* | STS **M** | |
-| **n** | *nu* | STS **N** | |
+| **w** | *we* | STS **W** | |
 | **v** | *vu* | STS **V** | |
+| **d** | *da* | STS **D** | |
+| **n** | *nu* | STS **N** | |
+| **z** | *ze* | **Chinese Z** | Index + little finger extended, tips to the side, back of hand to viewer; other fingers bent. **Not** STS rounded-middle-finger **Z**, **not** ASL zigzag |
 | **l** | *lo* | STS **L** | |
 | **r** | *ro* | STS **R** | |
+| **g** | *ga* | STS **G** | ASL false friend risk (see below) |
+| **h** | *hu* | STS **H** | |
+| **j** | *ja* | STS **J** | **Hold** (flat hand); not ASL pinky-trace |
 | **x** | *xe* | STS **X** | Hold; check vs Chinese **Z** (open question). Plural **-x** is this same sign after the ending. |
 
 **Dropped STS letters:** **c f i k p q s t y å ä ö**. Dropping **y / å / ä / ö** also drops the STS letters that use **path movement**.
