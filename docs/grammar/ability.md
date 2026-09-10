@@ -188,7 +188,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 ### Ability fallback (`egera`)
 <a id="ability-fallback"></a>
 
-Sometimes English *can* / *can’t* is not about one named activity or property: a multi-root activity, a floating *can’t*, or a tag over the whole clause. Then there is no host root to insert **`x`** into. Spell that capacity with the closed root **`egera`** (**ABIL**): after **`egera`**, write the same **`x`**, stance vowel, and ending as on a host. Put the word on `/h/` for the clause, or on `/w/` for the adjective just before it. You can then tag *can* / *can’t* without naming the activity in that word. Prefer a host whenever one activity root fits.
+Sometimes English *can* / *can’t* is not about one named activity or property: a multi-root activity, a floating *can’t*, or a tag over the whole clause. Then there is no host root to insert **`x`** into. Spell that capacity with the closed root **`egera`** (**ABIL**): after **`egera`**, write the same **`x`**, stance vowel, and ending as on a host. Put the word on `/h/` for the clause, or on `/w/` for the adjective just before it. You can then tag *can* / *can’t* without naming the activity in that word. Prefer a host whenever one activity root fits. (cue: 🥣 *cereal*: a bowl that holds what you can do)
 
 > `zazawan hegeraxel.`
 >
@@ -201,8 +201,6 @@ Sometimes English *can* / *can’t* is not about one named activity or property:
 > z-Ululon | g-big | w-ABIL-unable-temporary
 >
 > "Ululon is big: can’t right now." (capability on that property).
-
-(cue: 🥣 *cereal*: a bowl that holds what you can do)
 
 Beginner already used the stance vowels on a host. On **`egera`** they are the same map. Bare **`egera`** (no **`x`**) names ability as a topic only (ordinary [reference-suffix](reference-suffix.md)). On **`egera` + stance**, **-m** is capacity as a metaphor; **-l** is a literal bowl / cereal frame.
 

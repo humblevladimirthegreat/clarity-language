@@ -29,7 +29,7 @@ On this page:
 | Current language / leftover | [Present the current language only](#present-the-current-language-only), [no process leftover](#no-process-or-corrective-leftover) |
 | Mix-ups and negatives | [Which tool, not which owner](#which-tool-not-which-owner) |
 | Page architecture | [Page skeleton](#page-skeleton), [Beginner](#beginner-stage-shape), [later stages](#later-stage-shape) |
-| Memory aids | [Cues](#cues-columns) |
+| Memory aids | [Cues](#cues-columns), [when to state a scene cue](#when-to-state-a-scene-cue) |
 | Voice | [Explain before you slogan](#explain-before-you-slogan), [plain language](#plain-language-no-assumed-linguistics) |
 | Examples / tables | [House cast](#house-cast), [Tables](#tables) |
 | Scope | [Cross-links](#cross-links-and-scope), [what belongs where](#what-belongs-where) |
@@ -292,6 +292,23 @@ Letter / series: `{letter} ≈ {sound or series slogan} ({why that maps})`. `**d
 A lexicon path is a real **-l** / **-m** choice; the *literal* English is still not what drills ask for. Write `*happy* (**-m**)` in **English** and `from *smile*: the face of *happy*` in **Cue** — never `smile → *happy*` as the only English.
 
 Inline after the rule sentence: `(cue: …)`. Worked examples stay Agalan / morph / quoted free English ([example block](glosses.md#example-block)) — no cue line. Translation-practice answers are Agalan or loose English only; the root bank may add **Cue** beside **English · Agalan**.
+
+### When to state a scene cue
+<a id="when-to-state-a-scene-cue"></a>
+
+A **scene** cue (`emoji *literal*: why`) is for remembering a published picture. State it only when that picture is doing **grammar** work, not when the page is merely using a dictionary metaphor.
+
+**State it** on a **closed overlay**: a fixed special reading under one part of speech (COMMENT, SAME, CAUSE, ABIL, plan / DECISION, evidentials, NOTIONAL, emotion ACT / LOCUS, clause-pole **`adoro`**, special pronouns, universality moods, and the same class). The learner needs the scene to remember why *this* published root hosts that job. Put `(cue: …)` on the **rule sentence** (job, shape, consequence first), or in the inventory **Cue** column. One line that the same spelling is still ordinary content under other letters is fine.
+
+**Do not state it** when the example is ordinary **lexicon metaphor** (content **-m**): `hogorem` *inside*, `welem` *size* / *very*, `hadazam` *hastily*. Do **not** add a following sentence of the form “**`ogore`** here is the published metaphor *inclusion* / *inside*. (cue: ⭕ *hollow circle*: …).” The morph gloss and quoted English already give the sense. **-m** as a system is taught on [reference-suffix.md](../grammar/reference-suffix.md#metaphor-m); that page (and drill **Cue** cells) may show `from *swan*: the glide of *grace*` because the lesson *is* the metaphor ending.
+
+| Do | Don’t |
+|----|--------|
+| Overlay lead: **`odoho`** as COMMENT, then `(cue: 💭 *thought*: a balloon over the scene)` | After `hogorem bohohul`, a sentence that names the lexicon row and restates the hollow-circle cue |
+| Overlay table **Cue** for SAME, ABIL, CAUSE, … | A post-example etymology footnote on ordinary *-inside* / *haste* / *size* |
+| Cue last on the **rule**, before the first example | Cue as the paragraph *after* the worked examples |
+
+Letter / series / ending cues (`**a** ≈ add`, **m** ≈ metaphor) are the other kind; they follow [two kinds of cue](#cue-rubric) and are not this overlay-vs-lexicon split.
 
 Do not invent a second cue system beside metaphor, vowels, and endings when those already explain the form. **Do not use the cue as the definition:** teach **Use** and the Agalan shape first ([explain before you slogan](#explain-before-you-slogan)).
 

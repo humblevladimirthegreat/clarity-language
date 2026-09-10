@@ -69,7 +69,7 @@ After an adjective, you can add how intense it is or in what manner. That extra 
 >
 > z-dog | g-blue | w-size
 >
-> "A dog is very blue." / "a very blue dog"
+> "A dog is very blue."
 
 ### Adverbs (`/h/`)
 <a id="adverbs-h"></a>
@@ -98,8 +98,6 @@ Some adjectives and adverbs name a **relation** that needs another person or thi
 > z-dog | v-sleep | h-inclusion | b-house
 >
 > "A dog sleeps inside a house."
-
-**`ogore`** here is the published metaphor *inclusion* / *inside*. (cue: ⭕ *hollow circle*: being inside the boundary)
 
 ### Turn (`/j/`): start a new speech move
 <a id="turn-j"></a>
@@ -133,8 +131,6 @@ When the setting is not that default statement, write a `/j/` act word immediate
 | **jol** | question: yes/no and “fill in the blank” ask | **j** ≈ jump, **o** ≈ option (pick from a menu) |
 | **jel** | command / instruction | **j** ≈ jump, **e** ≈ order (do this) |
 | **jul** | prohibition: *don’t…* | **j** ≈ jump, **u** ≈ undo (take the action back) |
-
-**`jael`** (*yes* / *true*) and **`juel`** (*no* / *false*) sit at the start of the turn, or stand alone. Two vowel letters are two beats: **`jael`** = *ja'el*. When a clause follows *yes*, prefer **`jael …`** over **`jael jal …`**. A *…, yes?* tag is a **second turn** after a period: `zodogol vawalal. jael.`
 
 ### Dependent clauses
 <a id="dependent-clauses"></a>
