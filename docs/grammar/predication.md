@@ -1,7 +1,7 @@
 # Predication (classification and identity)
 <a id="predication"></a>
 
-English *is* does two jobs that look alike. You can say someone **is a kind or role** (*Azawan is a dog*): they belong in that category. You can also say two names pick out **the same one** (*Clark is Superman*): one person under two labels, not a category. Agalan uses a different word pattern for each.
+English *is* does two jobs that look alike. You can say someone **is a kind or role** (*Azawan is a dog*): they belong in that category. You can also say two names pick out **the same one** (*Ululon is Azawan*): one person under two labels, not a category. Agalan uses a different word pattern for each.
 
 ## Beginner
 <a id="beginner"></a>
@@ -17,6 +17,16 @@ When you say someone *is* a quality (*Azawan is challenging*), that quality is a
 >
 > "Azawan is challenging."
 
+A titled nationality or tradition uses **-n** on the adjective ([reference suffix](reference-suffix.md)):
+
+> `zazawan gajanan.`
+>
+> z-Azawan | g-Japanese
+>
+> "Azawan is Japanese."
+
+That **-n** names the people as a titled category. The published metaphor on the same root is ordinary *japanese* (`gajanam`).
+
 ### Kind / role
 <a id="classification"></a>
 
@@ -30,29 +40,27 @@ This use is **classification**. Same `/ɡ/` place as a quality; the kind word is
 >
 > "Azawan is a dog."
 
-A titled name of that kind uses **-n** on the adjective ([reference suffix](reference-suffix.md)): `zazawan godogon` *Azawan is Dog*.
-
 **Compare with:** *A dog walks* uses a noun plus a verb (`zodogol vawalal`). When the subject **is** that kind, keep the kind on `/ɡ/`.
 
 ### Identity (**SAME**)
 <a id="identity"></a>
 <a id="same"></a>
 
-When two names pick out **the same person or thing** (*Clark is Superman*), you are not putting Clark in a kind. You are saying the two labels match: they are one individual.
+When two names pick out **the same person or thing** (*Ululon is Azawan*), you are not putting Ululon in a kind. You are saying the two labels match: they are one individual.
 
 Write a special adjective `gonunul` after the first name, then an extra noun (`/b/`) for the other label. Keep `gonunul` and that `/b/` word **next to each other**. That pair is **identity**. The adjective’s English name is **`SAME`**; its root is **`onunu`**. (cue: 🪙 *coin*: two faces, one substance)
 
-> `z<Clark>n gonunul b<Superman>n.`
+> `zululon gonunul bazawan.`
 >
-> z-Clark | g-SAME | b-Superman
+> z-Ululon | g-SAME | b-Azawan
 >
-> "Clark is Superman."
+> "Ululon is (the same person as) Azawan."
 
 > `zodogol gonunul bazawan.`
 >
 > z-dog | g-SAME | b-Azawan
 >
-> "The dog is Azawan."
+> "A dog is (named) Azawan."
 
 **Compare with:** *Azawan is a dog* uses [kind / role](#classification) (`godogol`). Use **`SAME`** when two labels name one person.
 
@@ -70,12 +78,10 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 | *Uhubun* | `uhubun` | | |
 | *dog* | `odogol` | | |
 | *cat* | `agadal` | | |
-| *book* | `abogol` | | |
+| *Japanese* (titled) | `ajanan` | `ajanal` *Japan* | 🇯🇵: the named people |
 | *blue* | `elulul` | | |
 | *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
 | *challenging* | `omonam` | `omonol` *mountain* | ⛰️: hard to climb |
-| *walk* | `awalal` | | |
-| *sleep* | `elebel` | | |
 | **SAME** | `onunul` | `onunul` *coin* | 🪙: two faces, one substance |
 
 #### English → Agalan
@@ -98,31 +104,25 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zululon gagadal.`
 :::
 
-**4.** *A dog walks.*
+**4.** *Azawan is Japanese.*
 
 ::: details Show answer
-`zodogol vawalal.`
+`zazawan gajanan.`
 :::
 
-**5.** *Azawan is Dog.*
+**5.** *Ululon is Azawan.*
 
 ::: details Show answer
-`zazawan godogon.`
+`zululon gonunul bazawan.`
 :::
 
-**6.** *Clark is Superman.*
-
-::: details Show answer
-`z<Clark>n gonunul b<Superman>n.`
-:::
-
-**7.** *Uhubun is happy.*
+**6.** *Uhubun is happy.*
 
 ::: details Show answer
 `zuhubun guzumum.`
 :::
 
-**8.** *The cat is blue.*
+**7.** *The cat is blue.*
 
 ::: details Show answer
 `zagadal gelulul.`
@@ -142,37 +142,31 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Ululon is a dog.*
 :::
 
-**3.** `zodogol velebel.`
+**3.** `zazawan gajanan.`
 
 ::: details Show answer
-*A dog sleeps.*
+*Azawan is Japanese.*
 :::
 
-**4.** `zazawan godogon.`
+**4.** `zululon gonunul bazawan.`
 
 ::: details Show answer
-*Azawan is Dog.*
+*Ululon is Azawan.*
 :::
 
-**5.** `z<Clark>n gonunul b<Superman>n.`
+**5.** `zazawan gonunul bululon.`
 
 ::: details Show answer
-*Clark is Superman.*
+*Azawan is Ululon.*
 :::
 
-**6.** `z<Superman>n gonunul b<Clark>n.`
-
-::: details Show answer
-*Superman is Clark.*
-:::
-
-**7.** `zodogol gomonam.`
+**6.** `zodogol gomonam.`
 
 ::: details Show answer
 *The dog is challenging.*
 :::
 
-**8.** `zuhubun gagadal.`
+**7.** `zuhubun gagadal.`
 
 ::: details Show answer
 *Uhubun is a cat.*
@@ -214,11 +208,11 @@ Beginner already used closed **`gonunul`** (*is the same as*). The other endings
 
 | Agalan | English |
 |---------|---------|
-| `z<Clark>n gonunul b<Superman>n` | *Clark is (the same as) Superman* |
-| `z<Clark>n gonunum b<Superman>n` | *Clark is basically Superman* |
-| `z<Clark>n gonunul b<Superman>n gul` | *Clark is not (identical to) Superman* |
-| `z<Clark>n heraram gonunul b<Superman>n` | *Clark is allegedly Superman* |
-| `zeberel gonunul b<Superman>n` | inside a noun phrase: *the person who is Superman* |
+| `zululon gonunul bazawan` | *Ululon is (the same as) Azawan* |
+| `zululon gonunum bazawan` | *Ululon is basically Azawan* |
+| `zululon gonunul bazawan gul` | *Ululon is not (identical to) Azawan* |
+| `zululon heraram gonunul bazawan` | *Ululon is allegedly Azawan* |
+| `zeberel gonunul bazawan` | inside a noun phrase: *the person who is Azawan* |
 
 **Compare with:** ordinary *coin* is `zonunul` (or a *token*-like adjective). Identity is **`gonunu…`** plus a following `/b/` label, kept next to each other.
 
@@ -244,28 +238,28 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 #### English → Agalan
 
-**1.** *Clark is Superman.*
+**1.** *Ululon is Azawan.*
 
 ::: details Show answer
-`z<Clark>n gonunul b<Superman>n.`
+`zululon gonunul bazawan.`
 :::
 
-**2.** *Clark is basically Superman.*
+**2.** *Ululon is basically Azawan.*
 
 ::: details Show answer
-`z<Clark>n gonunum b<Superman>n.`
+`zululon gonunum bazawan.`
 :::
 
-**3.** *Clark is Superman (titled identity).*
+**3.** *Ululon is Azawan (titled identity).*
 
 ::: details Show answer
-`z<Clark>n gonunun b<Superman>n.`
+`zululon gonunun bazawan.`
 :::
 
-**4.** *The person who is Superman walks.*
+**4.** *The person who is Azawan walks.*
 
 ::: details Show answer
-`zeberel gonunul b<Superman>n vawalal.`
+`zeberel gonunul bazawan vawalal.`
 :::
 
 **5.** *The dog is Azawan.*
@@ -280,30 +274,30 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zazawan godogol gul.`
 :::
 
-**7.** *Clark is the same (as already ascribed) as Superman.*
+**7.** *Ululon is the same (as already ascribed) as Azawan.*
 
 ::: details Show answer
-`z<Clark>n gonunur b<Superman>n.`
+`zululon gonunur bazawan.`
 :::
 
 #### Agalan → English
 
-**1.** `z<Clark>n gonunum b<Superman>n.`
+**1.** `zululon gonunum bazawan.`
 
 ::: details Show answer
-*Clark is basically Superman.*
+*Ululon is basically Azawan.*
 :::
 
-**2.** `z<Clark>n gonunul b<Superman>n.`
+**2.** `zululon gonunul bazawan.`
 
 ::: details Show answer
-*Clark is Superman.*
+*Ululon is Azawan.*
 :::
 
-**3.** `zeberel gonunul b<Superman>n velebel.`
+**3.** `zeberel gonunul bazawan velebel.`
 
 ::: details Show answer
-*The person who is Superman sleeps.*
+*The person who is Azawan sleeps.*
 :::
 
 **4.** `zodogol gonunul bazawan.`
@@ -312,10 +306,10 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *The dog is Azawan.*
 :::
 
-**5.** `z<Clark>n gonunun b<Superman>n.`
+**5.** `zululon gonunun bazawan.`
 
 ::: details Show answer
-*Clark is Superman (titled identity).*
+*Ululon is Azawan (titled identity).*
 :::
 
 **6.** `zululon godogol gul.`
@@ -324,10 +318,10 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Ululon is not a dog.*
 :::
 
-**7.** `z<Clark>n gonunur b<Superman>n.`
+**7.** `zululon gonunur bazawan.`
 
 ::: details Show answer
-*Clark is the same (as already ascribed) as Superman.*
+*Ululon is the same (as already ascribed) as Azawan.*
 :::
 
 ## See also

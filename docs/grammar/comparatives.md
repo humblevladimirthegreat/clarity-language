@@ -532,5 +532,5 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 ## See also
 
 - Fence shape, single-item / standalone, SHARED scale / continuum: [coordination.md](coordination.md)
-- Kind and identity (*is a dog*, *is Superman*): [predication.md](predication.md)
+- Kind and identity (*is a dog*, *is Azawan*): [predication.md](predication.md)
 - Measure NPs: [numbers-applied.md](numbers-applied.md#measure-phrases)
