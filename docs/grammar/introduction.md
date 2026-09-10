@@ -47,7 +47,7 @@ Role letters, closed endings, and spelling that tracks sound mean a program can 
 ## How to learn from these docs
 <a id="how-to-learn"></a>
 
-Grammar pages use **Beginner** / **Intermediate** / **Advanced** sections so you can finish all Beginner material across this folder before Intermediate, then Advanced. Not every page has every difficulty section, so skip that page if it doesn't have the difficulty you are currently on.
+Grammar pages use **Beginner** / **Intermediate** / **Advanced** sections. **Finish all Beginner material across all pages before Intermediate, then Advanced.** Not every page has every difficulty section, so skip that page if it doesn't have the difficulty you are currently on.
 
 Follow the **Suggested reading order** in the site sidebar. Read each page’s Beginner section in that order, then go back to the beginning and read every pages' Intermediate, then same for Advanced.
 

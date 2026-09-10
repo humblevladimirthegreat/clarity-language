@@ -12,7 +12,7 @@ Write native Agalan in **lowercase**. Two vowel letters in a row are two syllabl
 
 ### Vowels
 
-Agalan has four vowel letters. Hold each one as its own beat.
+Agalan has four vowel letters. Unlike in English where the pronounced sound depends on the surrounding letters, the Agalan vowels are always pronounced the same.
 
 | Agalan | IPA | Cue |
 |--------|-----|-----|
@@ -47,7 +47,9 @@ A voiceless stop cuts the air. You may still use the unvoiced sound as style; vo
 | `j` | /j/ <IpaPlay file="Palatal_approximant.ogg" label="j" /> | *yes* (Germanic *j* as in *ja*) | |
 | `x` | /ʒ/ <IpaPlay file="Voiced_palato-alveolar_sibilant.ogg" label="x" /> | *vision* (the *si*) | /ʃ/ <IpaPlay file="Voiceless_palato-alveolar_sibilant.ogg" label="unvoiced x" />, *shy* |
 
-NOTE: `j` is the start of *yes*, not English *jump*. `x` is the *si* in *vision*, not English *box*.
+::: tip Remember
+`j` and `x` have sounds different than English. The rest are fairly standard. 
+:::
 
 Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) by [Peter Isotalo](https://commons.wikimedia.org/wiki/User:Peter_Isotalo), except /ɹ/ by [Erutuon](https://commons.wikimedia.org/wiki/File:Alveolar_approximant.ogg).
 
@@ -59,6 +61,10 @@ A content word ends with a last consonant `-l` / `-m` / `-n`, or `-r`. That last
 
 ## Intermediate
 <a id="intermediate"></a>
+
+::: tip Reminder:
+Intermediate sections assume you have read the beginner sections of every page.
+:::
 
 ### Phonotactics (word shape)
 <a id="phonotactics"></a>

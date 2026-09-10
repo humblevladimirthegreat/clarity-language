@@ -175,6 +175,10 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 ## Intermediate
 <a id="intermediate"></a>
 
+::: tip Reminder:
+Intermediate sections assume you have read the beginner sections of every page.
+:::
+
 ### Proper name (`-n`)
 <a id="proper-name--n"></a>
 
