@@ -80,9 +80,9 @@ English *we* and *you all* do not say whether the listener is in the speaker’s
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`ugobo…x`** (`zugobonx`, …) | speaker plus that person’s people (listener not assumed) | *I and my people* (not you) | **-x** ≈ set around the speaker, not the handshake *we* |
-| **`edone…x`** (`zedonenx`, …) | all current addressees | *you all* | **-x** ≈ set of everyone receiving this talk |
-| **`aha`** (`zahan`, …) | already the interlocutor set (no **-x**) | *we* (you and I) | 🤝 *handshake*: sharing the floor together |
+| **`zugobonx`** | speaker plus that person’s people (listener not assumed) | *I and my people* (not you) | **-x** ≈ set around the speaker, not the handshake *we* |
+| **`zedonenx`** | all current addressees | *you all* | **-x** ≈ set of everyone receiving this talk |
+| **`zahan`** | already the interlocutor set (no **-x**) | *we* (you and I) | 🤝 *handshake*: sharing the floor together |
 | name / content **-r**…**-x** | that person plus associates | *X and associates* | same **-x** as on a noun |
 
 **Compare with:** inclusive *we* uses **`aha`** (`zahan`), not **`ugobo…x`**.
@@ -106,20 +106,20 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *cat* | `agada` | | |
-| *dog* | `odogo` | | |
-| *happy* (**-m**) | `uzumu` | `uzumul` *smile* | 😊: the face of *happy* |
-| *big* (**-m**) | `ele` | `elel` *elephant* | 🐘: the huge animal |
-| *walk* | `awala` | |
-| *sit* | `aju` | |
-| *run* | `urunu` | |
-| *sleep* | `elebe` | |
-| *see* | `eje` | |
-| inclusive *we* | `aha` | 🤝 *handshake*: sharing the floor together |
-| speaker | `ugobo` | 🎤 *microphone*: the live voice of the person talking |
-| listener | `edone` | 🎧 *headphones*: the one receiving the sound |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *cat* | `agadal` | | |
+| *dog* | `odogol` | | |
+| *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
+| *big* | `elem` | `elel` *elephant* | 🐘: the huge animal |
+| *walk* | `awalal` | |
+| *sit* | `ajul` | |
+| *run* | `urunul` | |
+| *sleep* | `elebel` | |
+| *see* | `ejel` | |
+| inclusive *we* | `ahan` | 🤝 *handshake*: sharing the floor together |
+| speaker | `ugobon` | 🎤 *microphone*: the live voice of the person talking |
+| listener | `edonen` | 🎧 *headphones*: the one receiving the sound |
 
 #### English → Agalan
 
@@ -355,20 +355,20 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *file-box* | `ulebo` | | |
-| *toolbox* | `olozo` | | |
-| *heaviness* (**-m**) | `araga` | `aragal` *rock* | 🪨: hard to lift |
-| *teamwork* | `ahada` | | |
-| *vastness* (**-m**) | `umu` | `umul` *milky way* | 🌌: how huge the sky looks |
-| *cat* | `agada` | |
-| *sing* | `uzunu` | |
-| *walk* | `awala` | |
-| *run* | `urunu` | |
-| inclusive *we* | `aha` | 🤝 *handshake*: sharing the floor together |
-| speaker | `ugobo` | 🎤 *microphone*: the live voice of the person talking |
-| listener | `edone` | 🎧 *headphones*: the one receiving the sound |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *file-box* | `ulebol` | | |
+| *toolbox* | `olozol` | | |
+| *heaviness* | `aragam` | `aragal` *rock* | 🪨: hard to lift |
+| *teamwork* | `ahadam` | | |
+| *vastness* | `umum` | `umul` *milky way* | 🌌: how huge the sky looks |
+| *cat* | `agadal` | |
+| *sing* | `uzunul` | |
+| *walk* | `awalal` | |
+| *run* | `urunul` | |
+| inclusive *we* | `ahan` | 🤝 *handshake*: sharing the floor together |
+| speaker | `ugobon` | 🎤 *microphone*: the live voice of the person talking |
+| listener | `edonen` | 🎧 *headphones*: the one receiving the sound |
 
 #### English → Agalan
 

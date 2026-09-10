@@ -70,17 +70,17 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *beauty* (name **Uhubun**) | `uhubu` | | |
-| *dog* | `odogo` | | |
-| *sing* | `uzunu` | | |
-| *walk* | `awala` | | |
-| *run* | `urunu` | | |
-| *write* | `uwuru` | | |
-| *see* | `eje` | `ejel` *eye* | 👁️: the sense you see with |
-| *sleep* | `elebe` | | |
-| *sit* | `aju` | | |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *dog* | `odogol` | | |
+| *sing* | `uzunul` | | |
+| *walk* | `awalal` | | |
+| *run* | `urunul` | | |
+| *write* | `uwurul` | | |
+| *see* | `ejel` | | 👁️: the sense you see with |
+| *sleep* | `elebel` | | |
+| *sit* | `ajul` | | |
 
 #### English → Agalan
 
@@ -229,12 +229,12 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *beauty* (name **Uhubun**) | `uhubu` | | |
-| *size* / *big* (**-m**) | `ele` | `elel` *elephant* | 🐘: the huge animal |
-| *sing* | `uzunu` | | |
-| *capacity* (**ABIL**) | `egera` | `egeral` *cereal* | 🥣: a bowl of what you can do |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *size* / *big* | `elem` | `elel` *elephant* | 🐘: the huge animal |
+| *sing* | `uzunul` | | |
+| *capacity* (**ABIL**) | `egeral` | `egeral` *cereal* | 🥣: a bowl of what you can do |
 
 #### English → Agalan
 

@@ -21,12 +21,12 @@ Affect is **water**. **ACT** is tide dynamics (how much / how fast). **LOCUS** i
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`ogega`** | HIGH arousal | *flood / surge* | `ogegal` *ocean-wave* | 🌊: water in surge |
-| **`ejelo`** | MED arousal | *flow / drift* | `ejelol` *jellyfish* | 🪼: drifts with the current |
-| **`ozowo`** | LOW arousal | *stillness / slack* | `ozowol` *snow* | 🌨️: the landscape goes quiet |
-| **`abobo`** | INTERNAL locus | *held inside* | `abobol` *baby-bottle* | 🍼: liquid stays in the vessel |
-| **`oruru`** | EXTERNAL locus | *directed at other people* | `orurul` *pour* | 🫗: liquid goes onto someone else |
-| **`anede`** | CIRCUM locus | *on the situation* (shared / ambient field) | `anedel` *candle* | 🕯️: light fills the room |
+| **`hogegal`** | HIGH arousal | *flood / surge* | `ogegal` *ocean-wave* | 🌊: water in surge |
+| **`hejelol`** | MED arousal | *flow / drift* | `ejelol` *jellyfish* | 🪼: drifts with the current |
+| **`hozowol`** | LOW arousal | *stillness / slack* | `ozowol` *snow* | 🌨️: the landscape goes quiet |
+| **`habobol`** | INTERNAL locus | *held inside* | `abobol` *baby-bottle* | 🍼: liquid stays in the vessel |
+| **`horurul`** | EXTERNAL locus | *directed at other people* | `orurul` *pour* | 🫗: liquid goes onto someone else |
+| **`hanedel`** | CIRCUM locus | *on the situation* (shared / ambient field) | `anedel` *candle* | 🕯️: light fills the room |
 
 Under `/z/` or `/v/` the same spelling is the ordinary noun or verb (`zogegal` *an ocean wave*; `vorurul` *to pour*). The compose reading is the floating `/h/` (or `/w/`) mood.
 
@@ -34,9 +34,9 @@ Under `/z/` or `/v/` the same spelling is the ordinary noun or verb (`zogegal` *
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`ogega`** + **`oruru`** | HIGH × EXTERNAL | *poured / surged onto them* | `ogegal` *ocean-wave* · `orurul` *pour* | 🌊 onto 🫗: flood directed at them |
-| **`ejelo`** + **`oruru`** | MED × EXTERNAL | *flowing toward them* | `ejelol` *jellyfish* · `orurul` *pour* | 🪼 toward 🫗: drift aimed at them |
-| **`ozowo`** + **`oruru`** | LOW × EXTERNAL | *pooling at them* | `ozowol` *snow* · `orurul` *pour* | 🌨️ at 🫗: slack water settled at their locus |
+| **`hogegal`** + **`horurul`** | HIGH × EXTERNAL | *poured / surged onto them* | `ogegal` *ocean-wave* · `orurul` *pour* | 🌊 onto 🫗: flood directed at them |
+| **`hejelol`** + **`horurul`** | MED × EXTERNAL | *flowing toward them* | `ejelol` *jellyfish* · `orurul` *pour* | 🪼 toward 🫗: drift aimed at them |
+| **`hozowol`** + **`horurul`** | LOW × EXTERNAL | *pooling at them* | `ozowol` *snow* · `orurul` *pour* | 🌨️ at 🫗: slack water settled at their locus |
 
 | Agalan | English |
 |---------|---------|
@@ -63,9 +63,9 @@ When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*)
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`uzebu`** | numbered-alternative problem | *problem* (something to fit / solve) | `uzebul` *puzzle-piece* | 🧩: pieces must fit |
-| **`agego`** | numbered-alternative solution | *solution* (what unlocks it) | `agegol` *key* | 🔑: opens what was locked |
-| **`olala`** | numbered-alternative goal | *goal* (net you aim at) | `olalal` *goal* | 🥅: the net you shoot for |
+| **`uzebul`** | numbered-alternative problem | *problem* (something to fit / solve) | `uzebul` *puzzle-piece* | 🧩: pieces must fit |
+| **`agegol`** | numbered-alternative solution | *solution* (what unlocks it) | `agegol` *key* | 🔑: opens what was locked |
+| **`olalal`** | numbered-alternative goal | *goal* (net you aim at) | `olalal` *goal* | 🥅: the net you shoot for |
 | free **`g#N`** | rank in **this** numbered-alternative series | *candidate N* | | `#` = ordinal place |
 | soft **`g~#N`** | tentative ranking | *maybe candidate N* | | **-m** leaves the order open |
 
@@ -89,24 +89,24 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *beauty* (name **Uhubun**) | `uhubu` | | |
-| *competence* | `olozo` | | |
-| *relatedness* | `onogo` | | |
-| *dialogue* / *tell* | `ezehe` | | |
-| *division* | `ezawa` | | |
-| *draft* | `ebegu` | | |
-| *memo* | `ememo` | | |
-| *flood / surge* (HIGH) | `ogega` | `ogegal` *ocean-wave* | 🌊: water in surge |
-| *flow / drift* (MED) | `ejelo` | `ejelol` *jellyfish* | 🪼: drifts with the current |
-| *stillness / slack* (LOW) | `ozowo` | `ozowol` *snow* | 🌨️: the landscape goes quiet |
-| *held inside* (INTERNAL) | `abobo` | `abobol` *baby-bottle* | 🍼: liquid stays in the vessel |
-| *directed at others* (EXTERNAL) | `oruru` | `orurul` *pour* | 🫗: liquid goes onto someone else |
-| *on the situation* (CIRCUM) | `anede` | `anedel` *candle* | 🕯️: light fills the room |
-| *problem* | `uzebu` | `uzebul` *puzzle-piece* | 🧩: pieces must fit |
-| *solution* | `agego` | `agegol` *key* | 🔑: opens what was locked |
-| *goal* | `olala` | `olalal` *goal* | 🥅: the net you shoot for |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *competence* | `olozol` | | |
+| *relatedness* | `onogol` | | |
+| *dialogue* / *tell* | `ezehel` | | |
+| *division* | `ezawal` | | |
+| *draft* | `ebegul` | | |
+| *memo* | `ememol` | | |
+| *flood / surge* (HIGH) | `hogegal` | `ogegal` *ocean-wave* | 🌊: water in surge |
+| *flow / drift* (MED) | `hejelol` | `ejelol` *jellyfish* | 🪼: drifts with the current |
+| *stillness / slack* (LOW) | `hozowol` | `ozowol` *snow* | 🌨️: the landscape goes quiet |
+| *held inside* (INTERNAL) | `habobol` | `abobol` *baby-bottle* | 🍼: liquid stays in the vessel |
+| *directed at others* (EXTERNAL) | `horurul` | `orurul` *pour* | 🫗: liquid goes onto someone else |
+| *on the situation* (CIRCUM) | `hanedel` | `anedel` *candle* | 🕯️: light fills the room |
+| *problem* | `uzebul` | `uzebul` *puzzle-piece* | 🧩: pieces must fit |
+| *solution* | `agegol` | `agegol` *key* | 🔑: opens what was locked |
+| *goal* | `olalal` | `olalal` *goal* | 🥅: the net you shoot for |
 
 #### English → Agalan
 
@@ -209,11 +209,11 @@ The default *always* is *usually* (exceptions expected), not *must happen that w
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`arogu`** | COMMON (default climate) | *usually* (exceptions expected) | `arogul` *partly-cloudy* | ⛅: usual sky still allows a shower |
-| **`abulu`** | UNCOUNTERED (search) | *as far as checked* (no counterexample comes to mind) | `abulul` *pill* | 💊: you take it to treat an ailment; the search found none |
-| **`araza`** | FORMAL | *by definition* / math / proof | `arazal` *star* | ⭐: a charted constellation does not wander |
-| **`abele`** | NATURAL | *by natural necessity* (unsupported objects fall) | `abelel` *apple* | 🍎: it falls because the world works that way |
-| **`ebebe`** | RULE | *under a named frame* (`hebebel begezel`) | `ebebel` *pepper* | 🌶️: heat that applies in that dish |
+| **`harogul`** | COMMON (default climate) | *usually* (exceptions expected) | `arogul` *partly-cloudy* | ⛅: usual sky still allows a shower |
+| **`habulul`** | UNCOUNTERED (search) | *as far as checked* (no counterexample comes to mind) | `abulul` *pill* | 💊: you take it to treat an ailment; the search found none |
+| **`harazal`** | FORMAL | *by definition* / math / proof | `arazal` *star* | ⭐: a charted constellation does not wander |
+| **`habelel`** | NATURAL | *by natural necessity* (unsupported objects fall) | `abelel` *apple* | 🍎: it falls because the world works that way |
+| **`hebebel`** | RULE | *under a named frame* (`hebebel begezel`) | `ebebel` *pepper* | 🌶️: heat that applies in that dish |
 
 **Compare with:** *who / when* uses [universal fences](coordination.md#universals-domains-generics) (`zual` / `hual` / `zuam`) and [restrictors](restrictors.md) (`hual`). Soft **-m** on the fence (`zuam` / `huam`) is open inventory.
 
@@ -237,26 +237,26 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *beauty* (name **Uhubun**) | `uhubu` | | |
-| *usually* (COMMON) | `arogu` | `arogul` *partly-cloudy* | ⛅: usual sky still allows a shower |
-| *as far as checked* (UNCOUNTERED) | `abulu` | `abulul` *pill* | 💊: you take it to treat an ailment; the search found none |
-| *by definition* (FORMAL) | `araza` | `arazal` *star* | ⭐: a charted constellation does not wander |
-| *by natural necessity* (NATURAL) | `abele` | `abelel` *apple* | 🍎: it falls because the world works that way |
-| *under a named frame* (RULE) | `ebebe` | `ebebel` *pepper* | 🌶️: heat that applies in that dish |
-| *pawn* | `egeza` | | |
-| *square* | `agure` | | |
-| *cat* | `agada` | | |
-| *dog* | `odogo` | | |
-| *book* | `abogo` | | |
-| *walk* | `awala` | | |
-| *sing* | `uzunu` | | |
-| *sleep* | `elebe` | | |
-| *sit* | `aju` | | |
-| *see* | `eje` | `ejel` *eye* | 👁️: the sense you see with |
-| *run* | `urunu` | | |
-| evidential *pattern* | `abawa` | | |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *usually* (COMMON) | `harogul` | `arogul` *partly-cloudy* | ⛅: usual sky still allows a shower |
+| *as far as checked* (UNCOUNTERED) | `habulul` | `abulul` *pill* | 💊: you take it to treat an ailment; the search found none |
+| *by definition* (FORMAL) | `harazal` | `arazal` *star* | ⭐: a charted constellation does not wander |
+| *by natural necessity* (NATURAL) | `habelel` | `abelel` *apple* | 🍎: it falls because the world works that way |
+| *under a named frame* (RULE) | `hebebel` | `ebebel` *pepper* | 🌶️: heat that applies in that dish |
+| *pawn* | `egezal` | | |
+| *square* | `agurel` | | |
+| *cat* | `agadal` | | |
+| *dog* | `odogol` | | |
+| *book* | `abogol` | | |
+| *walk* | `awalal` | | |
+| *sing* | `uzunul` | | |
+| *sleep* | `elebel` | | |
+| *sit* | `ajul` | | |
+| *see* | `ejel` | `ejel` *eye* | 👁️: the sense you see with |
+| *run* | `urunul` | | |
+| evidential *pattern* | `abawam` | | |
 
 #### English → Agalan
 

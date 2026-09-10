@@ -64,18 +64,18 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 | English | Agalan | Cue |
 |---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *effort* | `ezewe` | |
-| *cloud* | `uludu` | |
-| *snow* | `ozowo` | |
-| *dog* | `odogo` | |
-| *cat* | `agada` | |
-| *book* | `abogo` | |
-| *house* | `ohohu` | |
-| *walk* | `awala` | |
-| *sing* | `uzunu` | |
+| *grace* (name **Azawan**) | `azawan` | |
+| *courage* (name **Ululon**) | `ululon` | |
+| *beauty* (name **Uhubun**) | `uhubun` | |
+| *effort* | `ezewem` | |
+| *cloud* | `uludul` | |
+| *snow* | `ozowol` | |
+| *dog* | `odogol` | |
+| *cat* | `agadal` | |
+| *book* | `abogol` | |
+| *house* | `ohohul` | |
+| *walk* | `awalal` | |
+| *sing* | `uzunul` | |
 
 #### English → Agalan
 
@@ -302,22 +302,22 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *beauty* (name **Uhubun**) | `uhubu` | | |
-| *dog* | `odogo` | | |
-| *effort* | `ezewe` | | |
-| *rain* | `anunu` | | |
-| *cloud* | `uludu` | | |
-| *book* | `abogo` | | |
-| *competence* | `olozo` | | |
-| *walk* | `awala` | | |
-| *sing* | `uzunu` | | |
-| *sleep* | `elebe` | | |
-| *next clause* / *if* (**-m** on `/h/`) | `adoro` | `adorol` *door* | 🚪: walk through only if it opens |
-| *iff* (**-m**) | `ezaze` | `ezazel` *east-west* | ↔️: each side only with the other |
-| *because* (**-m**) | `urugu` | `urugul` *brick* | 🧱: the cause is what the result sits on |
-| *CAUSE* (**-m**) | `egega` | `egegal` *gear* | ⚙️: how the mechanism engages |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *dog* | `odogol` | | |
+| *effort* | `ezewem` | | |
+| *rain* | `anunul` | | |
+| *cloud* | `uludul` | | |
+| *book* | `abogol` | | |
+| *competence* | `olozom` | `olozol` *toolbox* | 🧰: the kit that gets things working |
+| *walk* | `awalal` | | |
+| *sing* | `uzunul` | | |
+| *sleep* | `elebel` | | |
+| *next clause* / *if* | `hadorom` | `adorol` *door* | 🚪: walk through only if it opens |
+| *iff* | `hezazem` | `ezazel` *east-west* | ↔️: each side only with the other |
+| *because* | `hurugum` | `urugul` *brick* | 🧱: the cause is what the result sits on |
+| *CAUSE* | `hegegam` | `egegal` *gear* | ⚙️: how the mechanism engages |
 
 #### English → Agalan
 
@@ -517,16 +517,16 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *rain* | `anunu` | | |
-| *cloud* | `uludu` | | |
-| *walk* | `awala` | | |
-| *sleep* | `elebe` | | |
-| *next clause* / *if* (**-m** on `/h/`) | `adoro` | `adorol` *door* | 🚪: walk through only if it opens |
-| *iff* (**-m**) | `ezaze` | `ezazel` *east-west* | ↔️: each side only with the other |
-| *because* (**-m**) | `urugu` | `urugul` *brick* | 🧱: the cause is what the result sits on |
-| *commentary* (**`hodohom`**) | `odoho` | | |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *rain* | `anunul` | | |
+| *cloud* | `uludul` | | |
+| *walk* | `awalal` | | |
+| *sleep* | `elebel` | | |
+| *next clause* / *if* | `hadorom` | `adorol` *door* | 🚪: walk through only if it opens |
+| *iff* | `hezazem` | `ezazel` *east-west* | ↔️: each side only with the other |
+| *because* | `hurugum` | `urugul` *brick* | 🧱: the cause is what the result sits on |
+| *commentary* | `hodohom` | `odohol` *thought* | 💭: a balloon over the scene |
 
 #### English → Agalan
 

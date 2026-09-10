@@ -111,18 +111,18 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *beauty* (name **Uhubun**) | `uhubu` | | |
-| *dog* | `odogo` | | |
-| *cat* | `agada` | | |
-| *tea* | `adeda` | | |
-| *coffee* | `ogove` | | |
-| *team* | `ahada` | | |
-| *happy* (**-m**) | `uzumu` | `uzumul` *smile* | 😊: the face of *happy* |
-| *big* (**-m**) | `ele` | `elel` *elephant* | 🐘: the huge animal |
-| *walk* | `awala` | | |
-| *sleep* | `elebe` | | |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *dog* | `odogol` | | |
+| *cat* | `agadal` | | |
+| *tea* | `adedal` | | |
+| *coffee* | `ogoven` | | |
+| *team* | `ahadal` | | |
+| *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
+| *big* | `elem` | `elel` *elephant* | 🐘: the huge animal |
+| *walk* | `awalal` | | |
+| *sleep* | `elebel` | | |
 
 #### English → Agalan
 
@@ -325,19 +325,19 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *beauty* (name **Uhubun**) | `uhubu` | | |
-| *dog* | `odogo` | | |
-| *cat* | `agada` | | |
-| *tea* | `adeda` | | |
-| *coffee* | `ogove` | | |
-| *team* | `ahada` | | |
-| *happy* (**-m**) | `uzumu` | `uzumul` *smile* | 😊: the face of *happy* |
-| *calm* (**-m**) | `erelu` | `erelul` *relief* | 😌: the ease after tension |
-| *walk* | `awala` | | |
-| *run* | `urunu` | | |
-| *therefore* | `ezaza` | `ezazal` *east* | ➡️: the sun’s path, so the talk moves on |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *dog* | `odogol` | | |
+| *cat* | `agadal` | | |
+| *tea* | `adedal` | | |
+| *coffee* | `ogoven` | | |
+| *team* | `ahadal` | | |
+| *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
+| *calm* | `erelum` | `erelul` *relief* | 😌: the ease after tension |
+| *walk* | `awalal` | | |
+| *run* | `urunul` | | |
+| *therefore* | `ezazal` | `ezazal` *east* | ➡️: the sun’s path, so the talk moves on |
 
 #### English → Agalan
 

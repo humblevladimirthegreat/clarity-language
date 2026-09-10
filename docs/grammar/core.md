@@ -219,31 +219,31 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *beauty* (name **Uhubun**) | `uhubu` | | |
-| *dog* | `odogo` | | |
-| *cat* | `agada` | | |
-| *book* | `abogo` | | |
-| *house* | `ohohu` | | |
-| *inside* / *inclusion* (**-m** on `/h/`) | `ogore` | `ogorel` *hollow circle* | ⭕: being inside the boundary |
-| *blue* | `elulu` | | |
-| *red* | `arede` | | |
-| *big* (**-m**) | `ele` | `elel` *elephant* | 🐘: the huge animal |
-| *happy* (**-m**) | `uzumu` | `uzumul` *smile* | 😊: the face of *happy* |
-| *walk* | `awala` | | |
-| *run* | `urunu` | | |
-| *sleep* | `elebe` | | |
-| *tell* | `ezehe` | | |
-| *write* | `uwuru` | | |
-| *sing* | `uzunu` | | |
-| *see* (**-m**) | `eje` | `ejel` *eye* | 👁️: the sense you see with |
-| *sit* | `aju` | | |
-| *haste* (**-m**) | `adaza` | `adazal` *dash* | 💨: a burst of speed |
-| *quietude* (**-m**) | `owo` | `owol` *owl* | 🦉: the quiet bird |
-| *next clause* | `adoro` | `adorol` *door* | 🚪: the next sentence walks through |
-| *because* (**-m** on `/h/`) | `urugu` | `urugul` *brick* | 🧱: the cause is what the result sits on |
-| *therefore* | `ezaza` | `ezazal` *east* | ➡️: the sun’s path, so the talk moves on |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *dog* | `odogol` | | |
+| *cat* | `agadal` | | |
+| *book* | `abogol` | | |
+| *house* | `ohohul` | | |
+| *inside* / *inclusion* | `hogorem` | `ogorel` *hollow circle* | ⭕: being inside the boundary |
+| *blue* | `elulul` | | |
+| *red* | `garedel` | | |
+| *big* | `elem` | `elel` *elephant* | 🐘: the huge animal |
+| *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
+| *walk* | `awalal` | | |
+| *run* | `urunul` | | |
+| *sleep* | `elebel` | | |
+| *tell* | `ezehel` | | |
+| *write* | `uwurul` | | |
+| *sing* | `uzunul` | | |
+| *see* | `ejel` | | 👁️: the sense you see with |
+| *sit* | `ajul` | | |
+| *haste* | `adazal` | `adazal` *dash* | 💨: a burst of speed |
+| *quietude* | `owom` | `owol` *owl* | 🦉: the quiet bird |
+| *next clause* | `adorol` | `adorol` *door* | 🚪: the next sentence walks through |
+| *because* | `hurugum` | `urugul` *brick* | 🧱: the cause is what the result sits on |
+| *therefore* | `ezazal` | `ezazal` *east* | ➡️: the sun’s path, so the talk moves on |
 
 #### English → Agalan
 
@@ -490,11 +490,11 @@ These words glue one finished sentence to the next (one-way; default ending **-l
 
 | English | Agalan | Same root as | Cue | Example |
 |---------|--------|--------------|-----|---------|
-| *therefore* | **`ezaza`** | `ezazal` *east* | ➡️: the sun’s path, so the talk moves on | `xezazal` |
-| *however* | **`ezeba`** | `ezebal` *zebra* | 🦓: two stripes, still one animal | `xezebal` |
-| *meanwhile* | **`anelo`** | `anelol` *mantel-clock* | 🕰️: time passing beside the last claim | `xanelol` |
-| *next* | **`uvumu`** | `uvumul` *film* | 🎞️: the following frame | `xuvumul` |
-| *but* | **`onugo`** | `onugol` *construction* | 🚧: the expected path is blocked | `xonugol` |
+| *therefore* | **`xezazal`** | `ezazal` *east* | ➡️: the sun’s path, so the talk moves on | `xezazal` |
+| *however* | **`xezebal`** | `ezebal` *zebra* | 🦓: two stripes, still one animal | `xezebal` |
+| *meanwhile* | **`xanelol`** | `anelol` *mantel-clock* | 🕰️: time passing beside the last claim | `xanelol` |
+| *next* | **`xuvumul`** | `uvumul` *film* | 🎞️: the following frame | `xuvumul` |
+| *but* | **`xonugol`** | `onugol` *construction* | 🚧: the expected path is blocked | `xonugol` |
 
 *therefore* moves forward from the prior claim; *however* marks contrast; *meanwhile* is concurrent passage; *next* is the next frame; *but* blocks the expected continuation (harder push-back than *however*). Those same roots keep their ordinary content readings under other role letters.
 
@@ -525,27 +525,27 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *beauty* (name **Uhubun**) | `uhubu` | | |
-| *dog* | `odogo` | | |
-| *cat* | `agada` | | |
-| *blue* | `elulu` | | |
-| *red* | `arede` | | |
-| *happy* (**-m**) | `uzumu` | `uzumul` *smile* | 😊: the face of *happy* |
-| *walk* | `awala` | | |
-| *run* | `urunu` | | |
-| *sleep* | `elebe` | | |
-| *see* | `eje` | `ejel` *eye* | 👁️: the sense you see with |
-| *sing* | `uzunu` | | |
-| *sit* | `aju` | | |
-| *volume* (**-m**) | `egelo` | `egelol` *speaker-low* | 🔈: how loud |
-| *topic* | `oza` | `ozal` *hash* | #️⃣: a heading mark |
-| *therefore* | `ezaza` | `ezazal` *east* | ➡️: the sun’s path, so the talk moves on |
-| *however* / *although* | `ezeba` | `ezebal` *zebra* | 🦓: two stripes, still one animal |
-| *meanwhile* | `anelo` | `anelol` *mantel-clock* | 🕰️: time passing beside the last claim |
-| *next clause* | `adoro` | `adorol` *door* | 🚪: the next sentence walks through |
-| *because* (**-m** on `/h/`) | `urugu` | `urugul` *brick* | 🧱: the cause is what the result sits on |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *dog* | `odogol` | | |
+| *cat* | `agadal` | | |
+| *blue* | `elulul` | | |
+| *red* | `garedel` | | |
+| *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
+| *walk* | `awalal` | | |
+| *run* | `urunul` | | |
+| *sleep* | `elebel` | | |
+| *see* | `ejel` | | 👁️: the sense you see with |
+| *sing* | `uzunul` | | |
+| *sit* | `ajul` | | |
+| *volume* | `egelom` | `egelol` *speaker-low* | 🔈: how loud |
+| *topic* | `ozal` | `ozal` *hash* | #️⃣: a heading mark |
+| *therefore* | `ezazal` | `ezazal` *east* | ➡️: the sun’s path, so the talk moves on |
+| *however* / *although* | `ezebal` | `ezebal` *zebra* | 🦓: two stripes, still one animal |
+| *meanwhile* | `anelol` | `anelol` *mantel-clock* | 🕰️: time passing beside the last claim |
+| *next clause* | `adorol` | `adorol` *door* | 🚪: the next sentence walks through |
+| *because* | `hurugum` | `urugul` *brick* | 🧱: the cause is what the result sits on |
 
 #### English → Agalan
 

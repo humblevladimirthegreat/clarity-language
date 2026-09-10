@@ -29,12 +29,12 @@ Six published roots cover the needs you can name. Pick one row; under `/h/` as a
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`alodo`** | names the autonomy need | *autonomy* (choice, agency, self-direction) | `alodol` *ballot-box* | 🗳️: voting is choosing for yourself |
-| **`olozo`** | names the competence need | *competence* (efficacy, skill, getting things to work) | `olozol` *toolbox* | 🧰: the kit that gets things working |
-| **`onogo`** | names the relatedness need | *relatedness* (connection, belonging, care) | `onogol` *knot* | 🪢: ties people together |
-| **`awero`** | names the pleasure need | *pleasure* (enjoyment, comfort, aesthetic payoff) | `awerol` *strawberry* | 🍓: sweetness you enjoy |
-| **`uhuhe`** | names the survival need | *survival* (safety, health, material sufficiency) | `uhuhel` *shield* | 🛡️: what keeps you safe |
-| **`ege`** | names a need without picking among the five | *unspecified need* | `egel` *egg* | 🥚: not yet a specific kind |
+| **`halodol`** | names the autonomy need | *autonomy* (choice, agency, self-direction) | `alodol` *ballot-box* | 🗳️: voting is choosing for yourself |
+| **`holozol`** | names the competence need | *competence* (efficacy, skill, getting things to work) | `olozol` *toolbox* | 🧰: the kit that gets things working |
+| **`honogol`** | names the relatedness need | *relatedness* (connection, belonging, care) | `onogol` *knot* | 🪢: ties people together |
+| **`hawerol`** | names the pleasure need | *pleasure* (enjoyment, comfort, aesthetic payoff) | `awerol` *strawberry* | 🍓: sweetness you enjoy |
+| **`huhuhel`** | names the survival need | *survival* (safety, health, material sufficiency) | `uhuhel` *shield* | 🛡️: what keeps you safe |
+| **`hegel`** | names a need without picking among the five | *unspecified need* | `egel` *egg* | 🥚: not yet a specific kind |
 
 > `hegel.`
 >
@@ -153,23 +153,23 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *beauty* (name **Uhubun**) | `uhubu` | | |
-| *dog* | `odogo` | | |
-| *book* | `abogo` | | |
-| *house* | `ohohu` | | |
-| *walk* | `awala` | | |
-| *tell* | `ezehe` | | |
-| *sing* | `uzunu` | | |
-| *gift* | `awara` | | |
-| *gathering* | `azege` | | |
-| *autonomy* | `alodo` | `alodol` *ballot-box* | 🗳️: voting is choosing for yourself |
-| *competence* | `olozo` | `olozol` *toolbox* | 🧰: the kit that gets things working |
-| *relatedness* | `onogo` | `onogol` *knot* | 🪢: ties people together |
-| *pleasure* | `awero` | `awerol` *strawberry* | 🍓: sweetness you enjoy |
-| *survival* | `uhuhe` | `uhuhel` *shield* | 🛡️: what keeps you safe |
-| *unspecified need* | `ege` | `egel` *egg* | 🥚: not yet a specific kind |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *dog* | `odogol` | | |
+| *book* | `abogol` | | |
+| *house* | `ohohul` | | |
+| *walk* | `awalal` | | |
+| *tell* | `ezehel` | | |
+| *sing* | `uzunul` | | |
+| *gift* | `awaral` | | |
+| *gathering* | `azegel` | | |
+| *autonomy* | `alodol` | `alodol` *ballot-box* | 🗳️: voting is choosing for yourself |
+| *competence* | `olozol` | `olozol` *toolbox* | 🧰: the kit that gets things working |
+| *relatedness* | `onogol` | `onogol` *knot* | 🪢: ties people together |
+| *pleasure* | `awerol` | `awerol` *strawberry* | 🍓: sweetness you enjoy |
+| *survival* | `uhuhel` | `uhuhel` *shield* | 🛡️: what keeps you safe |
+| *unspecified need* | `egel` | `egel` *egg* | 🥚: not yet a specific kind |
 
 #### English → Agalan
 
@@ -337,25 +337,25 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *beauty* (name **Uhubun**) | `uhubu` | | |
-| *book* | `abogo` | | |
-| *house* | `ohohu` | | |
-| *walk* | `awala` | | |
-| *tell* | `ezehe` | | |
-| *sing* | `uzunu` | | |
-| *write* | `uwuru` | | |
-| *sit* | `aju` | | |
-| *gift* | `awara` | | |
-| *gathering* | `azege` | | |
-| *autonomy* | `alodo` | `alodol` *ballot-box* | 🗳️: voting is choosing for yourself |
-| *competence* | `olozo` | `olozol` *toolbox* | 🧰: the kit that gets things working |
-| *relatedness* | `onogo` | `onogol` *knot* | 🪢: ties people together |
-| *pleasure* | `awero` | `awerol` *strawberry* | 🍓: sweetness you enjoy |
-| *survival* | `uhuhe` | `uhuhel` *shield* | 🛡️: what keeps you safe |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *book* | `abogol` | | |
+| *house* | `ohohul` | | |
+| *walk* | `awalal` | | |
+| *tell* | `ezehel` | | |
+| *sing* | `uzunul` | | |
+| *write* | `uwurul` | | |
+| *sit* | `ajul` | | |
+| *gift* | `awaral` | | |
+| *gathering* | `azegel` | | |
+| *autonomy* | `alodol` | `alodol` *ballot-box* | 🗳️: voting is choosing for yourself |
+| *competence* | `olozol` | `olozol` *toolbox* | 🧰: the kit that gets things working |
+| *relatedness* | `onogol` | `onogol` *knot* | 🪢: ties people together |
+| *pleasure* | `awerol` | `awerol` *strawberry* | 🍓: sweetness you enjoy |
+| *survival* | `uhuhel` | `uhuhel` *shield* | 🛡️: what keeps you safe |
 | *always* | `hual` | | |
-| *dog* | `odogo` | | |
+| *dog* | `odogol` | | |
 
 #### English → Agalan
 

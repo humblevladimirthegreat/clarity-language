@@ -98,13 +98,13 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *beauty* (name **Uhubun**) | `uhubu` | | |
-| *challenging* | `omona` | `omonol` *mountain* | ⛰️: hard to climb |
-| *bright* | `udubu` | | |
-| *size* / *big* | `ele` | `elel` *elephant* | 🐘: the huge animal |
-| *happy* (**-m**) | `uzumu` | `uzumul` *smile* | 😊: the face of *happy* |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *challenging* | `omonam` | `omonol` *mountain* | ⛰️: hard to climb |
+| *bright* | `udubul` | | |
+| *size* / *big* | `elem` | `elel` *elephant* | 🐘: the huge animal |
+| *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
 
 #### English → Agalan
 
@@ -283,13 +283,13 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *beauty* (name **Uhubun**) | `uhubu` | | |
-| *challenging* | `omona` | `omonol` *mountain* | ⛰️: hard to climb |
-| *size* / *big* | `ele` | `elel` *elephant* | 🐘: the huge animal |
-| *measurement* | `urule` | `urulel` *ruler* | 📏: a measured length |
-| *happy* (**-m**) | `uzumu` | `uzumul` *smile* | 😊: the face of *happy* |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *challenging* | `omonam` | `omonol` *mountain* | ⛰️: hard to climb |
+| *size* / *big* | `elem` | `elel` *elephant* | 🐘: the huge animal |
+| *measurement* | `urulel` | `urulel` *ruler* | 📏: a measured length |
+| *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
 
 #### English → Agalan
 
@@ -445,18 +445,18 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *sing* | `uzunu` | | |
-| *happy* (**-m**) | `uzumu` | `uzumul` *smile* | 😊: the face of *happy* |
-| *challenging* | `omona` | `omonol` *mountain* | ⛰️: hard to climb |
-| *clarity* | `agala` | | |
-| *draft* | `ebegu` | | |
-| *balance* | `oju` | `ojul` *yin-yang* | ☯️: opposing halves |
-| *routine* (**-m**) | `ahama` | `ahamal` *hamster* | 🐹: on a wheel of *routine* |
-| *speaker* | `ugobo` | | 🎤: a live voice |
-| *community* | `ulude` | `uludel` *silhouettes* | 👥: people together |
-| *expertise* | `alaba` | `alabal` *lab-coat* | 🥼: specialized work |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *sing* | `uzunul` | | |
+| *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
+| *challenging* | `omonam` | `omonol` *mountain* | ⛰️: hard to climb |
+| *clarity* | `agalam` | | |
+| *draft* | `ebegul` | | |
+| *balance* | `ojum` | `ojul` *yin-yang* | ☯️: opposing halves |
+| *routine* | `ahamam` | `ahamal` *hamster* | 🐹: on a wheel of *routine* |
+| *speaker* | `ugobon` | | 🎤: a live voice |
+| *community* | `uludem` | `uludel` *silhouettes* | 👥: people together |
+| *expertise* | `alabam` | `alabal` *lab-coat* | 🥼: specialized work |
 | *everyone* | `ua` | | |
 
 #### English → Agalan

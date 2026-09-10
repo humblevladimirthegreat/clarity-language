@@ -81,23 +81,23 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *beauty* (name **Uhubun**) | `uhubu` | | |
-| *apple* | `abele` | | |
-| *tea* | `adeda` | | |
-| *dessert* | `ubage` | | |
-| *lie* | `ulule` | | |
-| *peanut* | `abanu` | | |
-| *coffee* | `ogove` | | |
-| *bug* | `abugu` | | |
-| *workaround* | `ewene` | `ewenel` *wrench* | |
-| *birthday-cake* | `urage` | | |
-| *water* | `unude` | | |
-| *team* | `ahada` | | |
-| *walk* | `awala` | | |
-| *problem* | `uzebu` | `uzebul` *puzzle-piece* | 🧩: pieces must fit |
-| *meat* | `emema` | | |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *apple* | `abelel` | | |
+| *tea* | `adedal` | | |
+| *dessert* | `ubagel` | | |
+| *lie* | `ululel` | | |
+| *peanut* | `abanul` | | |
+| *coffee* | `ogovem` | | |
+| *bug* | `abugul` | | |
+| *workaround* | `ewenel` | `ewenel` *wrench* | |
+| *birthday-cake* | `uragel` | | |
+| *water* | `unudel` | | |
+| *team* | `ahadal` | | |
+| *walk* | `awalal` | | |
+| *problem* | `uzebul` | `uzebul` *puzzle-piece* | 🧩: pieces must fit |
+| *meat* | `ememal` | | |
 
 #### English → Agalan
 

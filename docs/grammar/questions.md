@@ -128,17 +128,17 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *beauty* (name **Uhubun**) | `uhubu` | | |
-| *dog* | `odogo` | | |
-| *cat* | `agada` | | |
-| *walk* | `awala` | | |
-| *sleep* | `elebe` | | |
-| *sing* | `uzunu` | | |
-| *see* | `eje` | `ejel` *eye* | 👁️: the sense you see with |
-| *write* | `uwuru` | |
-| *run* | `urunu` | |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *dog* | `odogol` | | |
+| *cat* | `agadal` | | |
+| *walk* | `awalal` | | |
+| *sleep* | `elebel` | | |
+| *sing* | `uzunul` | | |
+| *see* | `ejel` | | 👁️: the sense you see with |
+| *write* | `uwurul` | |
+| *run* | `urunul` | |
 
 #### English → Agalan
 
@@ -354,13 +354,13 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 | English | Agalan | Cue |
 |---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *dog* | `odogo` | |
-| *walk* | `awala` | |
-| *run* | `urunu` | |
-| *sleep* | `elebe` | |
+| *grace* (name **Azawan**) | `azawan` | |
+| *courage* (name **Ululon**) | `ululon` | |
+| *beauty* (name **Uhubun**) | `uhubun` | |
+| *dog* | `odogol` | |
+| *walk* | `awalal` | |
+| *run* | `urunul` | |
+| *sleep* | `elebel` | |
 
 #### English → Agalan
 
@@ -563,11 +563,11 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 | English | Agalan | Cue |
 |---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *walk* | `awala` | |
-| *run* | `urunu` | |
+| *grace* (name **Azawan**) | `azawan` | |
+| *courage* (name **Ululon**) | `ululon` | |
+| *beauty* (name **Uhubun**) | `uhubun` | |
+| *walk* | `awalal` | |
+| *run* | `urunul` | |
 
 #### English → Agalan
 

@@ -82,11 +82,11 @@ When a sentence needs a whole following sentence as its object (English *that Ul
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`ugobo`** (`zugobon`, default **-n**) | speaker in this conversation | *I* | `ugobol` *microphone* | 🎤: the live voice of the person talking |
-| **`edone`** (`dedonen` / `zedonen`, default **-n**) | listener in this conversation | *you* | `edonel` *headphones* | 🎧: the one receiving the sound |
-| **`aha`** (`zahan`, default **-n**) | speaker and addressees together | *we* (you and I) | `ahal` *handshake* | 🤝: sharing the floor together |
-| **`enenu`** (`zenenun`, default **-n**) | nonspecific individual | *someone* | `enenul` *neutral* | 😐: not a particular person |
-| **`adoro`** (`dadorol` / `badorol`, default **-l**) | placeholder for the following sentence | *that* (next clause) | `adorol` *door* | 🚪: the next sentence walks through |
+| **`ugobon`** | speaker in this conversation (`zugobon` in subject slot) | *I* | `ugobol` *microphone* | 🎤: the live voice of the person talking |
+| **`edonen`** | listener in this conversation (`zedonen` / `dedonen` in clause) | *you* | `edonel` *headphones* | 🎧: the one receiving the sound |
+| **`ahan`** | speaker and addressees together (`zahan` in subject slot) | *we* (you and I) | `ahal` *handshake* | 🤝: sharing the floor together |
+| **`enenun`** | nonspecific individual (`zenenun` in subject slot) | *someone* | `enenul` *neutral* | 😐: not a particular person |
+| **`adorol`** | placeholder for the following sentence (`dadorol` / `badorol` in clause) | *that* (next clause) | `adorol` *door* | 🚪: the next sentence walks through |
 
 ### Clusivity
 <a id="clusivity"></a>
@@ -104,24 +104,24 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *dog* | `odogo` | | |
-| *dragon* | `adara` | | |
-| *book* | `abogo` | | |
-| *walk* | `awala` | | |
-| *sit* | `aju` | | |
-| *sleep* | `elebe` | | |
-| *run* | `urunu` | | |
-| *see* | `eje` | | |
-| *tell* | `ezehe` | | |
-| *depart* | `ebaru` | | |
-| *big* (**-m**) | `ele` | `elel` *elephant* | 🐘: the huge animal |
-| *speaker* | `ugobo` | `ugobol` *microphone* | 🎤: the live voice of the person talking |
-| *listener* | `edone` | `edonel` *headphones* | 🎧: the one receiving the sound |
-| *interlocutors* | `aha` | `ahal` *handshake* | 🤝: sharing the floor together |
-| *someone* | `enenu` | `enenul` *neutral* | 😐: not a particular person |
-| *next clause* | `adoro` | `adorol` *door* | 🚪: the next sentence walks through |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *dog* | `odogol` | | |
+| *dragon* | `adaral` | | |
+| *book* | `abogol` | | |
+| *walk* | `awalal` | | |
+| *sit* | `ajul` | | |
+| *sleep* | `elebel` | | |
+| *run* | `urunul` | | |
+| *see* | `ejel` | | |
+| *tell* | `ezehel` | | |
+| *depart* | `ebarul` | | |
+| *big* | `elem` | `elel` *elephant* | 🐘: the huge animal |
+| *speaker* | `ugobon` | `ugobol` *microphone* | 🎤: the live voice of the person talking |
+| *listener* | `edonen` | `edonel` *headphones* | 🎧: the one receiving the sound |
+| *interlocutors* | `ahan` | `ahal` *handshake* | 🤝: sharing the floor together |
+| *someone* | `enenun` | `enenul` *neutral* | 😐: not a particular person |
+| *next clause* | `adorol` | `adorol` *door* | 🚪: the next sentence walks through |
 
 #### English → Agalan
 
@@ -296,19 +296,19 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *beauty* (name **Uhubun**) | `uhubu` | | |
-| *walk* | `awala` | | |
-| *run* | `urunu` | | |
-| *sleep* | `elebe` | | |
-| *sit* | `aju` | | |
-| *see* | `eje` | | |
-| *happy* (**-m**) | `uzumu` | `uzumul` *smile* | 😊: the face of *happy* |
-| *haste* (**-m**) | `adaza` | `adazal` *dash* | 💨: a burst of speed |
-| *interlocutors* | `aha` | `ahal` *handshake* | 🤝: sharing the floor together |
-| *speaker* | `ugobo` | `ugobol` *microphone* | 🎤: the live voice of the person talking |
-| *listener* | `edone` | `edonel` *headphones* | 🎧: the one receiving the sound |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *walk* | `awalal` | | |
+| *run* | `urunul` | | |
+| *sleep* | `elebel` | | |
+| *sit* | `ajul` | | |
+| *see* | `ejel` | | |
+| *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
+| *haste* | `adazal` | `adazal` *dash* | 💨: a burst of speed |
+| *interlocutors* | `ahan` | `ahal` *handshake* | 🤝: sharing the floor together |
+| *speaker* | `ugobon` | `ugobol` *microphone* | 🎤: the live voice of the person talking |
+| *listener* | `edonen` | `edonel` *headphones* | 🎧: the one receiving the sound |
 
 #### English → Agalan
 
@@ -500,16 +500,16 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *dog* | `odogo` | | |
-| *walk* | `awala` | | |
-| *run* | `urunu` | | |
-| *sit* | `aju` | | |
-| *sleep* | `elebe` | | |
-| *big* (**-m**) | `ele` | `elel` *elephant* | 🐘: the huge animal |
-| *happy* (**-m**) | `uzumu` | `uzumul` *smile* | 😊: the face of *happy* |
-| *haste* (**-m**) | `adaza` | `adazal` *dash* | 💨: a burst of speed |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *dog* | `odogol` | | |
+| *walk* | `awalal` | | |
+| *run* | `urunul` | | |
+| *sit* | `ajul` | | |
+| *sleep* | `elebel` | | |
+| *big* | `elem` | `elel` *elephant* | 🐘: the huge animal |
+| *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
+| *haste* | `adazal` | `adazal` *dash* | 💨: a burst of speed |
 
 #### English → Agalan
 

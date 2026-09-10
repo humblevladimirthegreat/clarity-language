@@ -214,19 +214,19 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 | English | Agalan | Cue |
 |---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *dog* | `odogo` | |
-| *cat* | `agada` | |
-| *tea* | `adeda` | |
-| *coffee* | `ogove` | |
-| *water* | `unude` | |
-| *challenging* | `omona` | |
-| *person* | `ebere` | |
-| *walk* | `awala` | |
-| *run* | `urunu` | |
-| *sleep* | `elebe` | |
+| *grace* (name **Azawan**) | `azawan` | |
+| *courage* (name **Ululon**) | `ululon` | |
+| *beauty* (name **Uhubun**) | `uhubun` | |
+| *dog* | `odogol` | |
+| *cat* | `agadal` | |
+| *tea* | `adedal` | |
+| *coffee* | `ogovel` | |
+| *water* | `unudel` | |
+| *challenging* | `omonam` | |
+| *person* | `eberel` | |
+| *walk* | `awalal` | |
+| *run* | `urunul` | |
+| *sleep* | `elebel` | |
 
 #### English → Agalan
 
@@ -598,22 +598,22 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *beauty* (name **Uhubun**) | `uhubu` | | |
-| *dog* | `odogo` | | |
-| *cat* | `agada` | | |
-| *tea* | `adeda` | | |
-| *coffee* | `ogove` | | |
-| *water* | `unude` | | |
-| *challenging* | `omona` | | |
-| *onion* | `onuno` | | |
-| *cucumber* | `ugume` | | |
-| *apple* | `abele` | | |
-| *see* | `eje` | `ejel` *eye* | 👁️: the sense you see with |
-| *walk* | `awala` | |
-| *run* | `urunu` | |
-| *sleep* | `elebe` | |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *dog* | `odogol` | | |
+| *cat* | `agadal` | | |
+| *tea* | `adedal` | | |
+| *coffee* | `ogovel` | | |
+| *water* | `unudel` | | |
+| *challenging* | `omonam` | | |
+| *onion* | `onunol` | | |
+| *cucumber* | `ugumel` | | |
+| *apple* | `abelel` | | |
+| *see* | `ejel` | | 👁️: the sense you see with |
+| *walk* | `awalal` | |
+| *run* | `urunul` | |
+| *sleep* | `elebel` | |
 
 #### English → Agalan
 
@@ -812,12 +812,12 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 | English | Agalan | Cue |
 |---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *tea* | `adeda` | |
-| *coffee* | `ogove` | |
-| *water* | `unude` | |
-| *person* | `ebere` | |
+| *grace* (name **Azawan**) | `azawan` | |
+| *courage* (name **Ululon**) | `ululon` | |
+| *tea* | `adedal` | |
+| *coffee* | `ogovel` | |
+| *water* | `unudel` | |
+| *person* | `eberel` | |
 
 #### English → Agalan
 

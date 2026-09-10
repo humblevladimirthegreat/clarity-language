@@ -65,17 +65,17 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *beauty* (name **Uhubun**) | `uhubu` | | |
-| **PLAN** | `owora` | `oworal` *world-map* | 🗺️: a map charts a course you mean to take |
-| **PREDICT** | `elezo` | `elezol` *telescope* | 🔭: looks ahead at a distance |
-| *walk* | `awala` | | |
-| *write* | `uwuru` | | |
-| *sing* | `uzunu` | | |
-| *run* | `urunu` | | |
-| *sleep* | `elebe` | | |
-| *rain* | `anunu` | | |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *beauty* (name **Uhubun**) | `uhubun` | | |
+| **PLAN** | `howoram` | `oworal` *world-map* | 🗺️: a map charts a course you mean to take |
+| **PREDICT** | `helezom` | `elezol` *telescope* | 🔭: looks ahead at a distance |
+| *walk* | `awalal` | | |
+| *write* | `uwurul` | | |
+| *sing* | `uzunul` | | |
+| *run* | `urunul` | | |
+| *sleep* | `elebel` | | |
+| *rain* | `anunul` | | |
 
 #### English → Agalan
 
@@ -213,18 +213,18 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *beauty* (name **Uhubun**) | `uhubu` | | |
-| **PLAN** | `owora` | `oworal` *world-map* | 🗺️: a map charts a course you mean to take |
-| **PREDICT** | `elezo` | `elezol` *telescope* | 🔭: looks ahead at a distance |
-| **DECISION** | `egege` | `egegel` *check* | ✅: a checkmark confirms a pick |
-| *walk* | `awala` | | |
-| *write* | `uwuru` | | |
-| *sing* | `uzunu` | | |
-| *sleep* | `elebe` | | |
-| *rain* | `anunu` | | |
-| (*pattern*, evidential) | `abawa` | `abawal` *paw-prints* | 🐾: a trail of what usually happens |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *beauty* (name **Uhubun**) | `uhubun` | | |
+| **PLAN** | `howoram` | `oworal` *world-map* | 🗺️: a map charts a course you mean to take |
+| **PREDICT** | `helezom` | `elezol` *telescope* | 🔭: looks ahead at a distance |
+| **DECISION** | `hegegem` | `egegel` *check* | ✅: a checkmark confirms a pick |
+| *walk* | `awalal` | | |
+| *write* | `uwurul` | | |
+| *sing* | `uzunul` | | |
+| *sleep* | `elebel` | | |
+| *rain* | `anunul` | | |
+| (*pattern*, evidential) | `abawam` | `abawal` *paw-prints* | 🐾: a trail of what usually happens |
 
 #### English → Agalan
 

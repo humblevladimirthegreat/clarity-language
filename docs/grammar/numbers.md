@@ -93,15 +93,15 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *beauty* (name **Uhubun**) | `uhubu` | | |
-| *cat* | `agada` | | |
-| *dog* | `odogo` | | |
-| *book* | `abogo` | | |
-| *house* | `ohohu` | | |
-| *see* | `eje` | `ejel` *eye* | 👁️: the sense you see with |
-| *write* | `uwuru` | |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *cat* | `agadal` | | |
+| *dog* | `odogol` | | |
+| *book* | `abogol` | | |
+| *house* | `ohohul` | | |
+| *see* | `ejel` | `ejel` *eye* | 👁️: the sense you see with |
+| *write* | `uwurul` | |
 
 #### English → Agalan
 
@@ -715,16 +715,16 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *beauty* (name **Uhubun**) | `uhubu` | | |
-| *cat* | `agada` | | |
-| *book* | `abogo` | | |
-| *house* | `ohohu` | | |
-| *blue* | `elulu` | | |
-| *walk* | `awala` | | |
-| *sleep* | `elebe` | | |
-| *see* | `eje` | `ejel` *eye* | 👁️: the sense you see with |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *cat* | `agadal` | | |
+| *book* | `abogol` | | |
+| *house* | `ohohul` | | |
+| *blue* | `elulul` | | |
+| *walk* | `awalal` | | |
+| *sleep* | `elebel` | | |
+| *see* | `ejel` | `ejel` *eye* | 👁️: the sense you see with |
 
 #### English → Agalan
 
@@ -1136,13 +1136,13 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 | English | Agalan | Cue |
 |---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *cat* | `agada` | |
-| *book* | `abogo` | |
-| *walk* | `awala` | |
-| *sing* | `uzunu` | |
+| *grace* (name **Azawan**) | `azawan` | |
+| *courage* (name **Ululon**) | `ululon` | |
+| *beauty* (name **Uhubun**) | `uhubun` | |
+| *cat* | `agadal` | |
+| *book* | `abogol` | |
+| *walk* | `awalal` | |
+| *sing* | `uzunul` | |
 
 #### English → Agalan
 

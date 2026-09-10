@@ -65,18 +65,18 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *beauty* (name **Uhubun**) | `uhubu` | | |
-| *dog* | `odogo` | | |
-| *cat* | `agada` | | |
-| *book* | `abogo` | | |
-| *blue* | `elulu` | | |
-| *happy* (**-m**) | `uzumu` | `uzumul` *smile* | 😊: the face of *happy* |
-| *challenging* (**-m**) | `omona` | `omonal` *mountain* | ⛰️: hard to climb |
-| *walk* | `awala` | | |
-| *sleep* | `elebe` | | |
-| **SAME** | `onunu` | `onunul` *coin* | 🪙: two faces, one substance |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *dog* | `odogol` | | |
+| *cat* | `agadal` | | |
+| *book* | `abogol` | | |
+| *blue* | `elulul` | | |
+| *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
+| *challenging* | `omonam` | `omonol` *mountain* | ⛰️: hard to climb |
+| *walk* | `awalal` | | |
+| *sleep* | `elebel` | | |
+| **SAME** | `onunul` | `onunul` *coin* | 🪙: two faces, one substance |
 
 #### English → Agalan
 
@@ -231,16 +231,16 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *beauty* (name **Uhubun**) | `uhubu` | | |
-| *dog* | `odogo` | | |
-| *cat* | `agada` | | |
-| **SAME** | `onunu` | `onunul` *coin* | 🪙: two faces, one substance |
-| **TOLD** | `erara` | `eraral` *ear* | |
-| (band: *the person who…*) | `ebere` | | |
-| *walk* | `awala` | | |
-| *sleep* | `elebe` | | |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *dog* | `odogol` | | |
+| *cat* | `agadal` | | |
+| **SAME** | `onunul` | `onunul` *coin* | 🪙: two faces, one substance |
+| **TOLD** | `heraram` | `eraral` *ear* | |
+| (band: *the person who…*) | `eberel` | | |
+| *walk* | `awalal` | | |
+| *sleep* | `elebel` | | |
 
 #### English → Agalan
 

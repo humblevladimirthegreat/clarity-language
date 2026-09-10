@@ -109,18 +109,18 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *beauty* (name **Uhubun**) | `uhubu` | | |
-| *walk* | `awala` | | |
-| *run* | `urunu` | | |
-| *sing* | `uzunu` | | |
-| *sleep* | `elebe` | | |
-| *happy* (**-m**) | `uzumu` | `uzumul` *smile* | 😊: the face of *happy* |
-| *rain* | `anunu` | | |
-| *night* | `unugu` | | |
-| *haste* (**-m**) | `adaza` | `adazal` *dash* | 💨: a burst of speed |
-| *quietude* (**-m**) | `owo` | `owol` *owl* | 🦉: the quiet bird |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *walk* | `awalal` | | |
+| *run* | `urunul` | | |
+| *sing* | `uzunul` | | |
+| *sleep* | `elebel` | | |
+| *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
+| *rain* | `anunul` | | |
+| *night* | `unugul` | | |
+| *haste* | `adazam` | `adazal` *dash* | 💨: a burst of speed |
+| *quietude* | `owolom` | `owol` *owl* | 🦉: the quiet bird |
 
 #### English → Agalan
 
@@ -310,23 +310,23 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *beauty* (name **Uhubun**) | `uhubu` | | |
-| *walk* | `awala` | | |
-| *run* | `urunu` | | |
-| *sing* | `uzunu` | | |
-| *sleep* | `elebe` | | |
-| *write* | `uwuru` | | |
-| *rain* | `anunu` | | |
-| *snow* | `ozowo` | | |
-| *night* | `unugu` | | |
-| *home* (**-m**) | `ohohu` | `ohohul` *house* | 🏠: where you live |
-| *emergency* (**-m**) | `amubu` | `amubul` *ambulance* | 🚑: urgent help |
-| *convenience* (**-m**) | `ozore` | `ozorel` *convenience-store* | 🏪: ready to hand |
-| *repair* | `ereba` | | |
-| *workaround* (**-m**) | `ewene` | `ewenel` *wrench* | 🔧: a tool that still works |
-| *next clause* | `adoro` | `adorol` *door* | 🚪: the next sentence walks through |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *walk* | `awalal` | | |
+| *run* | `urunul` | | |
+| *sing* | `uzunul` | | |
+| *sleep* | `elebel` | | |
+| *write* | `uwurul` | | |
+| *rain* | `anunul` | | |
+| *snow* | `ozowol` | | |
+| *night* | `unugul` | | |
+| *home* | `ohohum` | `ohohul` *house* | 🏠: where you live |
+| *emergency* | `amubum` | `amubul` *ambulance* | 🚑: urgent help |
+| *convenience* | `ozorem` | `ozorel` *convenience-store* | 🏪: ready to hand |
+| *repair* | `erebal` | | |
+| *workaround* | `ewenem` | `ewenel` *wrench* | 🔧: a tool that still works |
+| *next clause* | `adorol` | `adorol` *door* | 🚪: the next sentence walks through |
 
 #### English → Agalan
 

@@ -147,20 +147,20 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *beauty* (name **Uhubun**) | `uhubu` | | |
-| *tell* | `ezehe` | | |
-| *write* | `uwuru` | | |
-| *sing* | `uzunu` | | |
-| *see* | `eje` | `ejel` *eye* | 👁️: the sense you see with |
-| *walk* | `awala` | | |
-| *sleep* | `elebe` | | |
-| *happy* (**-m**) | `uzumu` | `uzumul` *smile* | 😊: the face of *happy* |
-| *dog* | `odogo` | | |
-| *cat* | `agada` | | |
-| *book* | `abogo` | | |
-| *blue* | `elulu` | | |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *tell* | `ezehel` | | |
+| *write* | `uwurul` | | |
+| *sing* | `uzunul` | | |
+| *see* | `ejel` | `ejel` *eye* | 👁️: the sense you see with |
+| *walk* | `awalal` | | |
+| *sleep* | `elebel` | | |
+| *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
+| *dog* | `odogol` | | |
+| *cat* | `agadal` | | |
+| *book* | `abogol` | | |
+| *blue* | `elulul` | | |
 
 #### English → Agalan
 
@@ -440,18 +440,18 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *beauty* (name **Uhubun**) | `uhubu` | | |
-| *tell* | `ezehe` | | |
-| *see* | `eje` | `ejel` *eye* | 👁️: the sense you see with |
-| *run* | `urunu` | | |
-| *red* | `arede` | | |
-| *dog* | `odogo` | | |
-| *cat* | `agada` | | |
-| *book* (name **Abogon**) | `abogo` | | |
-| *blue* | `elulu` | | |
-| *happy* (**-m**) | `uzumu` | `uzumul` *smile* | 😊: the face of *happy* |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *tell* | `ezehel` | | |
+| *see* | `ejel` | `ejel` *eye* | 👁️: the sense you see with |
+| *run* | `urunul` | | |
+| *red* | `aredel` | | |
+| *dog* | `odogol` | | |
+| *cat* | `agadal` | | |
+| *book* (name **Abogon**) | `abogon` | | |
+| *blue* | `elulul` | | |
+| *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
 
 #### English → Agalan
 
@@ -673,11 +673,11 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *beauty* (name **Uhubun**) | `uhubu` | | |
-| *tell* | `ezehe` | | |
-| *happy* (**-m**) | `uzumu` | `uzumul` *smile* | 😊: the face of *happy* |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *tell* | `ezehel` | | |
+| *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
 
 #### English → Agalan
 

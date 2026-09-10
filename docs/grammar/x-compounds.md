@@ -116,20 +116,20 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *love* | `olove` | | |
-| *crush* | `aga` | | |
-| *sushi* | `uzuzu` | | |
-| *coffee* | `ogove` | | |
-| *tea* | `adeda` | | |
-| *house* | `ohohu` | | |
-| *bed* | `abede` | | |
-| *person* | `ebere` | | |
-| *bond* | `onogo` | `onogol` *knot* | 🪢: two ends held together |
-| *dog* | `odogo` | | |
-| *cat* | `agada` | | |
-| *sunflower* (lexical compound) | `unowe` | | |
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
+| *love* | `olovel` | | |
+| *crush* | `agal` | | |
+| *sushi* | `uzuzul` | | |
+| *coffee* | `ogovel` | | |
+| *tea* | `adedal` | | |
+| *house* | `ohohul` | | |
+| *bed* | `abedel` | | |
+| *person* | `eberel` | | |
+| *bond* | `onogol` | `onogol` *knot* | 🪢: two ends held together |
+| *dog* | `odogol` | | |
+| *cat* | `agadal` | | |
+| *sunflower* (lexical compound) | `unowel` | | |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
 
 #### English → Agalan
 
@@ -193,9 +193,9 @@ The join letter records how the **left** root entered the closed kind (usually *
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| `ohohulabede` | house **-l** bed | bedroom | |
-| `eberelonogo` | person **-l** bond | friend | |
-| `abogolahala` | book **-l** school | textbook | |
+| `zohohulabedel` | house **-l** bed | bedroom | |
+| `zeberelonogol` | person **-l** bond | friend | |
+| `zabogolahalal` | book **-l** school | textbook | |
 
 **Compare with:** still assembling a kind-then-field label uses productive **`x`** (`golovexagal`, shop mashups, multipart names). Lexical closure is for kinds hearers treat as one entry, like English *bedroom*.
 

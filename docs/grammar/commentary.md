@@ -63,16 +63,16 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *beauty* (name **Uhubun**) | `uhubu` | | |
-| *dog* | `odogo` | | |
-| *walk* | `awala` | | |
-| *sleep* | `elebe` | | |
-| *sing* | `uzunu` | | |
-| *run* | `urunu` | | |
-| *see* | `eje` | `ejel` *eye* | 👁️: the sense you see with |
-| *commentary* | `odoho` | `odohol` *thought* | 💭: a balloon over the scene |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *dog* | `odogol` | | |
+| *walk* | `awalal` | | |
+| *sleep* | `elebel` | | |
+| *sing* | `uzunul` | | |
+| *run* | `urunul` | | |
+| *see* | `ejel` | | 👁️: the sense you see with |
+| *commentary* | `hodohom` | `odohol` *thought* | 💭: a balloon over the scene |
 
 #### English → Agalan
 
@@ -291,25 +291,25 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *beauty* (name **Uhubun**) | `uhubu` | | |
-| *dog* | `odogo` | | |
-| *walk* | `awala` | | |
-| *sleep* | `elebe` | | |
-| *sing* | `uzunu` | | |
-| *run* | `urunu` | | |
-| *write* | `uwuru` | | |
-| *commentary* | `odoho` | `odohol` *thought* | 💭: a balloon over the scene |
-| *live* / *from the scene* | `adeze` | `adezel` *attest* | 👁️‍🗨️: seeing-and-saying while it is in view |
-| *from memory* (past observation) | `uvuvu` | `uvuvul` *fishing* | 🎣: you pull something back |
-| *on record* | `erego` | `eregol` *record* | ⏺️: playback of what was saved |
-| *from the pattern* | `abawa` | `abawal` *paw-prints* | 🐾: cases left behind |
-| *inferred* | `uneve` | `unevel` *investigate* | 🕵️: you work the clues |
-| *so they say* | `erara` | `eraral` *ear* | 👂: you heard it told |
-| *felt* | `ehere` | `eherel` *heart* | ❤️: knowing in the body |
-| *per the tale* | `orolo` | `orolol` *scroll* | 📜: a story you tell |
-| *as if* (**NOTIONAL**) | `adade` | `adadel` *theater* | 🎭: a stage mask |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *dog* | `odogol` | | |
+| *walk* | `awalal` | | |
+| *sleep* | `elebel` | | |
+| *sing* | `uzunul` | | |
+| *run* | `urunul` | | |
+| *write* | `uwurul` | | |
+| *commentary* | `hodohom` | `odohol` *thought* | 💭: a balloon over the scene |
+| *live* / *from the scene* | `hadezem` | `adezel` *attest* | 👁️‍🗨️: seeing-and-saying while it is in view |
+| *from memory* (past observation) | `huvuvum` | `uvuvul` *fishing* | 🎣: you pull something back |
+| *on record* | `heregom` | `eregol` *record* | ⏺️: playback of what was saved |
+| *from the pattern* | `habawam` | `abawal` *paw-prints* | 🐾: cases left behind |
+| *inferred* | `hunevem` | `unevel` *investigate* | 🕵️: you work the clues |
+| *so they say* | `heraram` | `eraral` *ear* | 👂: you heard it told |
+| *felt* | `heherem` | `eherel` *heart* | ❤️: knowing in the body |
+| *per the tale* | `horolom` | `orolol` *scroll* | 📜: a story you tell |
+| *as if* (**NOTIONAL**) | `hadadem` | `adadel` *theater* | 🎭: a stage mask |
 
 #### English → Agalan
 

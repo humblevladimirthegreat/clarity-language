@@ -278,20 +278,20 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *beauty* (name **Uhubun**) | `uhubu` | | |
-| *love* | `olove` | | |
-| *friend* | `eberelonogo` | | 🪢 on *person*: a bond that holds |
-| *commitment* | `abene` | `abenel` *pen* | 🖊️: ink stays on the page |
-| *dialogue* | `ezehe` | `ezehel` *speech* | 💬: talk between people |
-| *adventure* | `omo` | `omol` *mountain-biking* | 🚵: a ride off the usual path |
-| *draft* | `ebegu` | `ebegul` *pencil* | ✏️: marks you can still erase |
-| *specimen* | `edudu` | `edudul` *petri-dish* | 🧫: a sample under study |
-| *fear* | `eveva` | | |
-| *score* | `odobo` | `odobol` *trophy* | 🏆: the counted tally |
-| *see* | `eje` | `ejel` *eye* | 👁️: the sense you see with |
-| *write* | `uwuru` | |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *love* | `olovel` | | |
+| *friend* | `eberelonogol` | | 🪢 on *person*: a bond that holds |
+| *commitment* | `abenel` | `abenel` *pen* | 🖊️: ink stays on the page |
+| *dialogue* | `ezehel` | `ezehel` *speech* | 💬: talk between people |
+| *adventure* | `omol` | `omol` *mountain-biking* | 🚵: a ride off the usual path |
+| *draft* | `ebegul` | `ebegul` *pencil* | ✏️: marks you can still erase |
+| *specimen* | `edudul` | `edudul` *petri-dish* | 🧫: a sample under study |
+| *fear* | `eveval` | | |
+| *score* | `odobol` | `odobol` *trophy* | 🏆: the counted tally |
+| *see* | `ejel` | `ejel` *eye* | 👁️: the sense you see with |
+| *write* | `uwurul` | |
 
 #### English → Agalan
 

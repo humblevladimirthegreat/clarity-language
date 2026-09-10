@@ -78,16 +78,16 @@ Everyday units (bare measure is the default):
 
 | SI / everyday unit | Agalan | Bare measure | Same root as | Cue |
 |--------------------|--------|--------------|--------------|-----|
-| meter | `urule` | `burulel` | `urulel` *ruler* | 📏: tracks exact length |
-| gram | `araga` | `baragal` | `aragal` *rock* | 🪨: hard to lift |
-| second | `anelo` | `banelol` | `anelol` *mantel-clock* | 🕰️: marks hours going by |
-| liter | `ozobo` | `bozobol` | `ozobol` *spoon* | 🥄: measures a portion |
-| ampere | `ejelo` | `bejelol` | `ejelol` *jellyfish* | 🪼: drift with the current |
-| kelvin | `ebebe` | `bebebel` | `ebebel` *pepper* | 🌶️: brings heat |
-| mole | `emema` | `bememal` | `ememal` *meat* | 🍖: the meat of the matter |
-| candela | `anede` | `banedel` | `anedel` *candle* | 🕯️: light fills the room |
-| hour / civil duration | `ume` | `bumel` | | 🕐: a clock face marks the hour |
-| heat grade (not kelvin) | `edehe` | `gedehel` | `edehel` *thermometer* | 🌡️: reads how hot or cold |
+| meter | `urulel` | `burulel` | `urulel` *ruler* | 📏: tracks exact length |
+| gram | `aragal` | `baragal` | `aragal` *rock* | 🪨: hard to lift |
+| second | `anelol` | `banelol` | `anelol` *mantel-clock* | 🕰️: marks hours going by |
+| liter | `ozobol` | `bozobol` | `ozobol` *spoon* | 🥄: measures a portion |
+| ampere | `ejelol` | `bejelol` | `ejelol` *jellyfish* | 🪼: drift with the current |
+| kelvin | `ebebel` | `bebebel` | `ebebel` *pepper* | 🌶️: brings heat |
+| mole | `ememal` | `bememal` | `ememal` *meat* | 🍖: the meat of the matter |
+| candela | `anedel` | `banedel` | `anedel` *candle* | 🕯️: light fills the room |
+| hour / civil duration | `umel` | `bumel` | | 🕐: a clock face marks the hour |
+| heat grade (not kelvin) | `edehel` | `gedehel` | `edehel` *thermometer* | 🌡️: reads how hot or cold |
 
 `bumel g+3` ≈ *three hours*.
 

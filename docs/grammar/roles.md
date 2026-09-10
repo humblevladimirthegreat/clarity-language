@@ -97,20 +97,20 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *beauty* (name **Uhubun**) | `uhubu` | | |
-| *cat* | `agada` | | |
-| *happy* (**-m**) | `uzumu` | `uzumul` *smile* | 😊: the face of *happy* |
-| *walk* | `awala` | | |
-| *run* | `urunu` | | |
-| *sleep* | `elebe` | | |
-| *sing* | `uzunu` | | |
-| *see* | `eje` | `ejel` *eye* | 👁️: the sense you see with |
-| *write* | `uwuru` | | |
-| *sit* | `aju` | | |
-| *fight* | `uvugu` | | |
-| *bond* | `onogo` | `onogol` *knot* | 🪢: ties people together |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *cat* | `agadal` | | |
+| *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
+| *walk* | `awalal` | | |
+| *run* | `urunul` | | |
+| *sleep* | `elebel` | | |
+| *sing* | `uzunul` | | |
+| *see* | `ejel` | | 👁️: the sense you see with |
+| *write* | `uwurul` | | |
+| *sit* | `ajul` | | |
+| *fight* | `uvugul` | | |
+| *bond* | `onogol` | `onogol` *knot* | 🪢: ties people together |
 
 #### English → Agalan
 
@@ -260,14 +260,14 @@ The examples above already used *west* / body *left*. The rest of the rose is th
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`onoho`** | compass heading, or ahead on a face | *north* / *ahead* | ⬆️ *up-arrow*: map north, or ahead if facing is north |
-| **`ohuhu`** | compass heading, or back on a face | *south* / *back* | ⬇️ *down-arrow*: map south, or back if facing is north |
-| **`ezaza`** | compass heading, or right on a face | *east* / *right* | ➡️ *right-arrow*: the sun’s path east, or right of facing |
-| **`eweze`** | compass heading, or left on a face | *west* / *left* | ⬅️ *left-arrow*: opposite east, or left of facing |
-| **`onore`** | compass heading, or forward-right on a face | *northeast* / *forward-right* | ↗️ *northeast-arrow*: between north and east |
-| **`onohe`** | compass heading, or forward-left on a face | *northwest* / *forward-left* | ↖️ *northwest-arrow*: between north and west |
-| **`ozozu`** | compass heading, or back-right on a face | *southeast* / *back-right* | ↘️ *southeast-arrow*: between south and east |
-| **`ozohe`** | compass heading, or back-left on a face | *southwest* / *back-left* | ↙️ *southwest-arrow*: between south and west |
+| **`onohol`** | compass heading, or ahead on a face | *north* / *ahead* | ⬆️ *up-arrow*: map north, or ahead if facing is north |
+| **`ohuhul`** | compass heading, or back on a face | *south* / *back* | ⬇️ *down-arrow*: map south, or back if facing is north |
+| **`ezazal`** | compass heading, or right on a face | *east* / *right* | ➡️ *right-arrow*: the sun’s path east, or right of facing |
+| **`ewezel`** | compass heading, or left on a face | *west* / *left* | ⬅️ *left-arrow*: opposite east, or left of facing |
+| **`onorel`** | compass heading, or forward-right on a face | *northeast* / *forward-right* | ↗️ *northeast-arrow*: between north and east |
+| **`onohel`** | compass heading, or forward-left on a face | *northwest* / *forward-left* | ↖️ *northwest-arrow*: between north and west |
+| **`ozozul`** | compass heading, or back-right on a face | *southeast* / *back-right* | ↘️ *southeast-arrow*: between south and east |
+| **`ozohel`** | compass heading, or back-left on a face | *southwest* / *back-left* | ↙️ *southwest-arrow*: between south and west |
 
 Indoor headings may follow a local map (building north). Prefer a name or listener frame when you mean someone’s body rose (`…xazawan`, `…xedonen`).
 
@@ -289,9 +289,9 @@ English *up* / *down* here follows the pull of gravity, not a face. Write **`uba
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`uba`** | skyward, shared gravity frame | *up* / *rise* | `ubal` *up* | ⏫: away from the pull |
-| **`odowo`** | toward the pull, shared gravity frame | *down* / *fall* | `odowol` *down* | ⏬: toward the pull |
-| **`evere`** | the vertical axis | *up–down axis* | | ↕️: the axis only |
+| **`ubal`** | skyward, shared gravity frame | *up* / *rise* | `ubal` *up* | ⏫: away from the pull |
+| **`odowol`** | toward the pull, shared gravity frame | *down* / *fall* | `odowol` *down* | ⏬: toward the pull |
+| **`everel`** | the vertical axis | *up–down axis* | | ↕️: the axis only |
 
 ### Viewpoint vs landmark
 
@@ -340,21 +340,21 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawa` | | |
-| *courage* (name **Ululon**) | `ululo` | | |
-| *beauty* (name **Uhubun**) | `uhubu` | | |
-| *house* | `ohohu` | | |
-| *cat* | `agada` | | |
-| *dog* | `odogo` | | |
-| *book* | `abogo` | | |
-| *walk* | `awala` | | |
-| *west* / body *left* | `eweze` | | ⬅️: opposite east, or left of facing |
-| *east* / body *right* | `ezaza` | | ➡️: the sun’s path east, or right of facing |
-| *northwest* / *forward-left* | `onohe` | | ↖️: between north and west |
-| *up* (gravity) | `uba` | `ubal` *up* | ⏫: away from the pull |
-| *tree* | `ere` | | |
-| *listener* | `edone` | | |
-| *speaker* | `ugobo` | | |
+| *grace* (name **Azawan**) | `azawan` | | |
+| *courage* (name **Ululon**) | `ululon` | | |
+| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *house* | `ohohul` | | |
+| *cat* | `agadal` | | |
+| *dog* | `odogol` | | |
+| *book* | `abogol` | | |
+| *walk* | `awalal` | | |
+| *west* / body *left* | `ewezel` | | ⬅️: opposite east, or left of facing |
+| *east* / body *right* | `ezazal` | | ➡️: the sun’s path east, or right of facing |
+| *northwest* / *forward-left* | `onohel` | | ↖️: between north and west |
+| *up* (gravity) | `ubal` | `ubal` *up* | ⏫: away from the pull |
+| *tree* | `erel` | | |
+| *listener* | `edonen` | | |
+| *speaker* | `ugobon` | | |
 
 #### English → Agalan
 
@@ -471,10 +471,10 @@ When *east* / *west* / *southwest* name a move in the talk, not a map point, wri
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| **`ezaza`** (bare) | talk moves on | *progress*; discourse **`xezazal`** *therefore* |
-| **`eweze`** (bare) | talk comes back | *return* |
-| **`ozohe`** (bare) | talk pulls back | *retreat* |
-| **`ogomo`** | heading in general | *compass* / *direction* |
+| **`ezazal`** (bare) | talk moves on | *progress*; discourse **`xezazal`** *therefore* |
+| **`ewezel`** (bare) | talk comes back | *return* |
+| **`ozohel`** (bare) | talk pulls back | *retreat* |
+| **`ogomol`** | heading in general | *compass* / *direction* |
 
 **For *therefore*, use:** the [linker](core.md#sentence-linkers) **`xezazal`**. Body *left* / *right* still needs **`DIR x ANCHOR`**.
 
