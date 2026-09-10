@@ -100,12 +100,12 @@ English *we* and *you* do not say whether the listener is in the group. That spl
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
+**Roots used here** (Same root as is not the word you produce):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawan` | | |
-| *courage* (name **Ululon**) | `ululon` | | |
+| *Azawan* | `azawan` | | |
+| *Ululon* | `ululon` | | |
 | *dog* | `odogol` | | |
 | *dragon* | `adaral` | | |
 | *book* | `abogol` | | |
@@ -292,13 +292,13 @@ When you address several people at once, English *you* does not say how many. Th
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
+**Roots used here** (Same root as is not the word you produce):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawan` | | |
-| *courage* (name **Ululon**) | `ululon` | | |
-| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *Azawan* | `azawan` | | |
+| *Ululon* | `ululon` | | |
+| *Uhubun* | `uhubun` | | |
 | *walk* | `awalal` | | |
 | *run* | `urunul` | | |
 | *sleep* | `elebel` | | |
@@ -496,12 +496,12 @@ Intermediate already recast one referent into a new slot. Each table is an **ant
 
 Short drills on this Advanced band. Try each item before opening **Show answer**.
 
-**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
+**Roots used here** (Same root as is not the word you produce):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawan` | | |
-| *courage* (name **Ululon**) | `ululon` | | |
+| *Azawan* | `azawan` | | |
+| *Ululon* | `ululon` | | |
 | *dog* | `odogol` | | |
 | *walk* | `awalal` | | |
 | *run* | `urunul` | | |

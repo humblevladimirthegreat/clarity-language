@@ -61,13 +61,13 @@ To say **what will happen** in the world (rain, a result), not what someone mean
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Pick **PLAN** (`owora` + map-resolution ending) or **PREDICT** (`elezo`). English *will* is not one Agalan form.
 
-**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
+**Roots used here** (Same root as is not the word you produce):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawan` | | |
-| *courage* (name **Ululon**) | `ululon` | | |
-| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *Azawan* | `azawan` | | |
+| *Ululon* | `ululon` | | |
+| *Uhubun* | `uhubun` | | |
 | **PLAN** | `howoram` | `oworal` *world-map* | 🗺️: a map charts a course you mean to take |
 | **PREDICT** | `helezom` | `elezol` *telescope* | 🔭: looks ahead at a distance |
 | *walk* | `awalal` | | |
@@ -209,13 +209,13 @@ When you mark **how** you forecast (a usual pattern, an inference, and so on), k
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Pick **DECISION** (`egege` + changeability), stack evidentiality on **PREDICT**, or stack **PLAN** with **DECISION**.
 
-**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
+**Roots used here** (Same root as is not the word you produce):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawan` | | |
-| *courage* (name **Ululon**) | `ululon` | | |
-| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *Azawan* | `azawan` | | |
+| *Ululon* | `ululon` | | |
+| *Uhubun* | `uhubun` | | |
 | **PLAN** | `howoram` | `oworal` *world-map* | 🗺️: a map charts a course you mean to take |
 | **PREDICT** | `helezom` | `elezol` *telescope* | 🔭: looks ahead at a distance |
 | **DECISION** | `hegegem` | `egegel` *check* | ✅: a checkmark confirms a pick |

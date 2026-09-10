@@ -272,14 +272,14 @@ Beginner used **-l** / **-m** / **-n** as reference on citations. On [number wor
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. The point is **-n** as a title on any role letter, one **`x`-compound** name, or an office **handle**.
 
-**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
+**Roots used here** (Same root as is not the word you produce):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawan` | | |
-| *courage* (name **Ululon**) | `ululon` | | |
-| *beauty* (name **Uhubun**) | `uhubun` | | |
-| *book* (name **Abogon**) | `abogon` | | |
+| *Azawan* | `azawan` | | |
+| *Ululon* | `ululon` | | |
+| *Uhubun* | `uhubun` | | |
+| *Abogon* | `abogon` | | |
 | *blue* | `elulul` | | |
 | *walk* | `awalal` | | |
 | *run* | `urunul` | | |
@@ -287,9 +287,9 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 | *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
 | *write* | `uwurul` | | |
 | *haste* | `hadazam` | `adazal` *dash* | 💨: a burst of speed |
-| (name **Odunaxalanen**) | `zodunaxalanen` | |
-| (label **Sushi-Coffee**) | `zuzuzuxogoven` | |
-| (title **Book-Courage**) | `zabogoxululon` | |
+| *Odunaxalanen* | `zodunaxalanen` | |
+| *Sushi-Coffee* | `zuzuzuxogoven` | |
+| *Book-Courage* | `zabogoxululon` | |
 
 #### English → Agalan
 

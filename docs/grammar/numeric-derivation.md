@@ -274,13 +274,13 @@ Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`zahaxre
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. `ROOT x NUM` names a **kind property** (essence, grain, quasi, part-count, order-kind, catalog code, total-null): spelled CV plus the **host** ending.
 
-**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
+**Roots used here** (Same root as is not the word you produce):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawan` | | |
-| *courage* (name **Ululon**) | `ululon` | | |
-| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *Azawan* | `azawan` | | |
+| *Ululon* | `ululon` | | |
+| *Uhubun* | `uhubun` | | |
 | *love* | `olovel` | | |
 | *friend* | `eberelonogol` | | 🪢 on *person*: a bond that holds |
 | *commitment* | `abenel` | `abenel` *pen* | 🖊️: ink stays on the page |

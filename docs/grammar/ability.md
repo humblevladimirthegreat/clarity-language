@@ -66,13 +66,13 @@ English *can't* does not say whether the inability is for this moment, still cha
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Tag **can** / **can’t** on an activity or property host; one item is a plain event with no can / can’t tag.
 
-**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
+**Roots used here** (Same root as is not the word you produce):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawan` | | |
-| *courage* (name **Ululon**) | `ululon` | | |
-| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *Azawan* | `azawan` | | |
+| *Ululon* | `ululon` | | |
+| *Uhubun* | `uhubun` | | |
 | *dog* | `odogol` | | |
 | *sing* | `uzunul` | | |
 | *walk* | `awalal` | | |
@@ -225,13 +225,13 @@ Ordinary `zegeral` still means *cereal* / *a capacity* (content word, no stance)
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Prefer a host when one activity root fits; use **`egera`** when there is no single host.
 
-**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
+**Roots used here** (Same root as is not the word you produce):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawan` | | |
-| *courage* (name **Ululon**) | `ululon` | | |
-| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *Azawan* | `azawan` | | |
+| *Ululon* | `ululon` | | |
+| *Uhubun* | `uhubun` | | |
 | *size* / *big* | `elem` | `elel` *elephant* | 🐘: the huge animal |
 | *sing* | `uzunul` | | |
 | *capacity* (**ABIL**) | `egeral` | `egeral` *cereal* | 🥣: a bowl of what you can do |

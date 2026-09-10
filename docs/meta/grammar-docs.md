@@ -430,7 +430,7 @@ Section ids: [one current heading, one current id](#one-current-heading).
 ### House people
 <a id="house-cast"></a>
 
-When an example needs a **person**, use these nativized names (published root + **-n**). Free English keeps *Azawan*, not *Grace* / *I* / *you*. Do not cast abstract roots as participants (`jal zazawan godogol`, not “grace is more challenging than courage”). Keep abstract roots for the form being taught.
+When an example needs a **person**, use these nativized names (published root + **-n**). Free English keeps *Azawan*, not *Grace* / *I* / *you*. Checkpoint **English** cells match that name (`*Azawan*`), not `*grace* (name **Azawan**)`. Sense-led *grace* (as a name) is only for [reference-suffix.md](../grammar/reference-suffix.md) Beginner citation drills. Do not cast abstract roots as participants (`jal zazawan godogol`, not “grace is more challenging than courage”). Keep abstract roots for the form being taught.
 
 | Agalan | English | Root |
 |--------|---------|------|

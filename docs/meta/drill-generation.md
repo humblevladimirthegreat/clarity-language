@@ -87,7 +87,7 @@ Anchors:
 | Intermediate | `<a id="translation-practice-intermediate"></a>` |
 | Advanced | `<a id="translation-practice-advanced"></a>` |
 
-Follow the [template](translation-exercises.md#template). Lead: *Short drills for Beginner/Intermediate/Advanced. Try each item before opening **Show answer**.* Put **Roots used here** once as the English / Agalan table (shared bank subset + this stage’s extra roots), using that template’s caption (**Cue** is optional memory helper). Learner **Agalan** cells are [citations](translation-exercises.md#template) by default (`odogol`, not the bank stem `odogo`), or the inflected form the row teaches (`vejel` *see*).
+Follow the [template](translation-exercises.md#template). Lead: *Short drills for Beginner/Intermediate/Advanced. Try each item before opening **Show answer**.* Put **Roots used here** once as the English / Agalan table (shared bank subset + this stage’s extra roots), using that template’s caption (later banks do not repeat the How-to-learn column legend; **Same root as** warning only when that column is present). Learner **Agalan** cells are [citations](translation-exercises.md#template) by default (`odogol`, not the bank stem `odogo`), or the inflected form the row teaches (`vejel` *see*). House-person **English** is *Azawan* / *Ululon* / *Uhubun*, not `*grace* (name **Azawan**)`.
 
 | Band kind | Items per direction |
 |-----------|---------------------|

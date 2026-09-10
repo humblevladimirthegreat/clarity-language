@@ -143,13 +143,13 @@ If the interior is Agalan words, those inner words still start with **their** ro
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Prefer a one-token cite, mention, or opaque blob; nativize when the surface wording is not the point. House names for people unless the item is a loan name.
 
-**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
+**Roots used here** (Same root as is not the word you produce):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawan` | | |
-| *courage* (name **Ululon**) | `ululon` | | |
-| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *Azawan* | `azawan` | | |
+| *Ululon* | `ululon` | | |
+| *Uhubun* | `uhubun` | | |
 | *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
 | *write* | `uwurul` | | |
 | *sing* | `uzunul` | | |
@@ -436,20 +436,20 @@ Sometimes *maybe* or a join should apply only to a multi-word chunk, not the who
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Test spoken opens (TYPE / EDGE / ending), an explicit **`xuxul`** close, nesting, or a **`^ … ^`** island: not only Beginner brackets.
 
-**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
+**Roots used here** (Same root as is not the word you produce):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawan` | | |
-| *courage* (name **Ululon**) | `ululon` | | |
-| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *Azawan* | `azawan` | | |
+| *Ululon* | `ululon` | | |
+| *Uhubun* | `uhubun` | | |
 | *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
 | *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
 | *run* | `urunul` | | |
 | *red* | `aredel` | | |
 | *dog* | `odogol` | | |
 | *cat* | `agadal` | | |
-| *book* (name **Abogon**) | `abogon` | | |
+| *Abogon* | `abogon` | | |
 | *blue* | `elulul` | | |
 | *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
 
@@ -669,13 +669,13 @@ duxal code > 1 xuxul
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. Test how the span **closes** (complete / editorial / close-all), or literal fence material as **opaque** content.
 
-**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
+**Roots used here** (Same root as is not the word you produce):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawan` | | |
-| *courage* (name **Ululon**) | `ululon` | | |
-| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *Azawan* | `azawan` | | |
+| *Ululon* | `ululon` | | |
+| *Uhubun* | `uhubun` | | |
 | *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
 | *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
 

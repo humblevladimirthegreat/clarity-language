@@ -94,13 +94,13 @@ When English would say *as challenging as*, you are not picking a winner. You ar
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Rank fence plus shared scale `/ɡ/` is the comparison; single-item `zel` is the superlative; `zael` / `zaem` are equative.
 
-**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
+**Roots used here** (Same root as is not the word you produce):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawan` | | |
-| *courage* (name **Ululon**) | `ululon` | | |
-| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *Azawan* | `azawan` | | |
+| *Ululon* | `ululon` | | |
+| *Uhubun* | `uhubun` | | |
 | *challenging* | `omonam` | `omonol` *mountain* | ⛰️: hard to climb |
 | *bright* | `udubul` | | |
 | *size* / *big* | `elem` | `elel` *elephant* | 🐘: the huge animal |
@@ -279,13 +279,13 @@ English *two meters more challenging* still ranks two people on one quality, and
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Test arity (`oe` / `ue` / standalone / `zer`), distributive **`a`**, and counted measure gaps versus vague `/w/`.
 
-**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
+**Roots used here** (Same root as is not the word you produce):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawan` | | |
-| *courage* (name **Ululon**) | `ululon` | | |
-| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *Azawan* | `azawan` | | |
+| *Ululon* | `ululon` | | |
+| *Uhubun* | `uhubun` | | |
 | *challenging* | `omonam` | `omonol` *mountain* | ⛰️: hard to climb |
 | *size* / *big* | `elem` | `elel` *elephant* | 🐘: the huge animal |
 | *measurement* | `urulel` | `urulel` *ruler* | 📏: a measured length |
@@ -441,12 +441,12 @@ Single-item `zazawan zuel gomonam` is *the least challenging* in the group in pl
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. Put the standard in the *than*-conjunct; **`zugobon`** is performance, **`zugoboxrawon`** is Mine.
 
-**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
+**Roots used here** (Same root as is not the word you produce):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawan` | | |
-| *courage* (name **Ululon**) | `ululon` | | |
+| *Azawan* | `azawan` | | |
+| *Ululon* | `ululon` | | |
 | *sing* | `uzunul` | | |
 | *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
 | *challenging* | `omonam` | `omonol` *mountain* | ⛰️: hard to climb |

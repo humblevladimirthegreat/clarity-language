@@ -112,7 +112,7 @@ English sometimes puts two nouns in one slot (*a dog and a cat*) and sometimes o
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. The point is **`x`** assembly vs two words vs a lexical compound.
 
-**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
+**Roots used here** (Same root as is not the word you produce):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -128,8 +128,8 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 | *dog* | `odogol` | | |
 | *cat* | `agadal` | | |
 | *sunflower* (lexical compound) | `unowel` | | |
-| *grace* (name **Azawan**) | `azawan` | | |
-| *courage* (name **Ululon**) | `ululon` | | |
+| *Azawan* | `azawan` | | |
+| *Ululon* | `ululon` | | |
 
 #### English → Agalan
 

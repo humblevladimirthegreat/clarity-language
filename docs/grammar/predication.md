@@ -61,13 +61,13 @@ Write a special adjective `gonunul` after the first name, then an extra noun (`/
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Property and kind sit on `/ɡ/`; identity uses **`gonunul`** plus `/b/`.
 
-**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
+**Roots used here** (Same root as is not the word you produce):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawan` | | |
-| *courage* (name **Ululon**) | `ululon` | | |
-| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *Azawan* | `azawan` | | |
+| *Ululon* | `ululon` | | |
+| *Uhubun* | `uhubun` | | |
 | *dog* | `odogol` | | |
 | *cat* | `agadal` | | |
 | *book* | `abogol` | | |
@@ -227,13 +227,13 @@ Beginner already used closed **`gonunul`** (*is the same as*). The other endings
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Classification packaging and **SAME** endings (**-l** / **-m** / **-n** / **-r**) are the point.
 
-**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
+**Roots used here** (Same root as is not the word you produce):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawan` | | |
-| *courage* (name **Ululon**) | `ululon` | | |
-| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *Azawan* | `azawan` | | |
+| *Ululon* | `ululon` | | |
+| *Uhubun* | `uhubun` | | |
 | *dog* | `odogol` | | |
 | *cat* | `agadal` | | |
 | **SAME** | `onunul` | `onunul` *coin* | 🪙: two faces, one substance |

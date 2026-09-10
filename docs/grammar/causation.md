@@ -60,13 +60,13 @@ Closed **`…aol`** (*X is enough*) is the stronger twin: this route alone is en
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Everyday *would work* is open sufficient **`…aom`** (outcome as host). Closed **`…aol`** is the stronger “this settles it” twin.
 
-**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
+**Roots used here:**
 
 | English | Agalan | Cue |
 |---------|--------|-----|
-| *grace* (name **Azawan**) | `azawan` | |
-| *courage* (name **Ululon**) | `ululon` | |
-| *beauty* (name **Uhubun**) | `uhubun` | |
+| *Azawan* | `azawan` | |
+| *Ululon* | `ululon` | |
+| *Uhubun* | `uhubun` | |
 | *effort* | `ezewem` | |
 | *cloud* | `uludul` | |
 | *snow* | `ozowol` | |
@@ -298,13 +298,13 @@ English *should* on a causal claim is often a wish or ought, not a formal or nat
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Mark **necessary** with exclusion / **`hal`**, unique path with **`gon` / `hon` / `…ol`**, clause poles with **`hadorom` / `hezazem` / `hurugum`**, and **CAUSE** with **`hegegam`**. An ought sits on values **`xo`**.
 
-**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
+**Roots used here** (Same root as is not the word you produce):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawan` | | |
-| *courage* (name **Ululon**) | `ululon` | | |
-| *beauty* (name **Uhubun**) | `uhubun` | | |
+| *Azawan* | `azawan` | | |
+| *Ululon* | `ululon` | | |
+| *Uhubun* | `uhubun` | | |
 | *dog* | `odogol` | | |
 | *effort* | `ezewem` | | |
 | *rain* | `anunul` | | |
@@ -513,12 +513,12 @@ Time and discourse dependents use the same **`adoro`** hang as *if* / *because*.
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. **`hurugum`** asserts the dependent as a fact the main sentence rests on; **`hadorom`** does not; speaker-grounds stay **`hodohom`**. Habit uses **`hual`**.
 
-**Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
+**Roots used here** (Same root as is not the word you produce):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *grace* (name **Azawan**) | `azawan` | | |
-| *courage* (name **Ululon**) | `ululon` | | |
+| *Azawan* | `azawan` | | |
+| *Ululon* | `ululon` | | |
 | *rain* | `anunul` | | |
 | *cloud* | `uludul` | | |
 | *walk* | `awalal` | | |
