@@ -1,6 +1,6 @@
 # Plurality
 
-English *they* and *the Smiths* often mean a named person plus people around them, not a counted list. Agalan marks that **associative group** with optional **-x** after the [reference suffix](reference-suffix.md) (the last letter that says how the root enters the talk: **-l**, **-m**, **-n**, or **-r**). You still name one **anchor**; **-x** adds the associates the situation supplies, so you do not have to list every member.
+English *they* and *the Smiths* often mean a named person plus people around them, not a counted list. Agalan marks that **associative group** with optional **-x** after the [reference suffix](reference-suffix.md).
 
 ## Beginner
 <a id="beginner"></a>
@@ -42,12 +42,12 @@ A first mention of a **kind as a group in this situation** uses **-lx** (literal
 
 **Compare with:** English *cats* can mean a kind in general. **-lx** is a **set in this situation**.
 
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| **-lx** | indefinite associative group, literal | *some cats* (a set in this situation) | **-l** exact + **-x** ≈ set with the named kind |
-| **-mx** | indefinite associative group, metaphorical | same grouping on a **-m** root | **-m** metaphorical + **-x** ≈ set |
-| **-nx** | named / titled group | *Team Alpha*; *Azawan and associates* as a title | **-n** proper + **-x** ≈ set |
-| **-rx** | resume prior referent and associates, or a prior group | *they* (that one and associates) | **-r** ≈ resume + **-x** ≈ set |
+| Agalan | Use | English |
+|--------|-----|---------|
+| **-lx** | indefinite associative group, literal | *some cats* (a set in this situation) |
+| **-mx** | indefinite associative group, metaphorical | same grouping on a **-m** root |
+| **-nx** | named / titled group | *Team Alpha*; *Azawan and associates* as a title |
+| **-rx** | resume prior referent and associates, or a prior group | *they* (that one and associates) |
 
 ### Person-role **-x**
 <a id="person-role-x"></a>
@@ -79,24 +79,36 @@ English *we* and *you* do not say whether the listener is in the group. That spl
 >
 > "We (you and I) walk."
 
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| **`zugobonx`** | speaker plus that person’s people (listener not assumed) | *I and my people* (not you) | **-x** ≈ set around the speaker, not the handshake *we* |
-| **`zedonenx`** | all current addressees | *you all* | **-x** ≈ set of everyone receiving this talk |
-| **`zahan`** | already the interlocutor set (no **-x**) | *we* (you and I) | 🤝 *handshake*: sharing the floor together |
-| name / content **-r**…**-x** | that person plus associates | *X and associates* | same **-x** as on a noun |
+The same roots take the role letter of the slot they fill. As a direct object they are **`dugobonx`**, **`dedonenx`**, **`dahan`**:
+
+> `zazawan dugobonx vejel.`
+>
+> z-Azawan | d-speaker-x | v-see
+>
+> "Azawan sees speaker and associates (not you)."
+
+> `zazawan dedonenx vejel.`
+>
+> z-Azawan | d-listener-x | v-see
+>
+> "Azawan sees you all (the addressees)."
+
+> `zazawan dahan vejel.`
+>
+> z-Azawan | d-interlocutors | v-see
+>
+> "Azawan sees us (you and I)."
+
+| Agalan | Use | English |
+|--------|-----|---------|
+| **`ugobonx`** | speaker plus that person’s people (listener not assumed); `zugobonx` as subject, `dugobonx` as object | *I and my people* (not you) |
+| **`edonenx`** | all current addressees; `zedonenx` as subject, `dedonenx` as object | *you all* |
+| **`ahan`** | already the interlocutor set (no **-x**); `zahan` as subject, `dahan` as object | *we* (you and I) |
+| name / content **-r**…**-x** | that person plus associates | *X and associates* |
 
 **Compare with:** inclusive *we* uses **`aha`** (`zahan`), not **`ugobo…x`**.
 
 **Not the same job as:** *you and yours* uses a **name**…**-x** (`zululonx`). **`edone…x`** is the [address set](#person-role-x) only.
-
-### Writing
-
-Attach **-x** only **after** the [reference suffix](reference-suffix.md), never before it or in place of it. The allowed word endings are therefore **-lx**, **-mx**, **-nx**, and **-rx** ([phonology.md](phonology.md#phonotactics)).
-
-```
-[role letter] + root + ending + (optional -x)
-```
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -172,6 +184,18 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zazawan dodogolx vejel.`
 :::
 
+**9.** *Azawan sees you all (the addressees).*
+
+::: details Show answer
+`zazawan dedonenx vejel.`
+:::
+
+**10.** *Azawan sees us (you and I).*
+
+::: details Show answer
+`zazawan dahan vejel.`
+:::
+
 #### Agalan → English
 
 **1.** `zazawanx vawalal.`
@@ -220,6 +244,18 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 ::: details Show answer
 *Are Ululon and associates happy?*
+:::
+
+**9.** `zazawan dugobonx vejel.`
+
+::: details Show answer
+*Azawan sees speaker and associates (not you).*
+:::
+
+**10.** `zazawan dahan vejel.`
+
+::: details Show answer
+*Azawan sees us (you and I).*
 :::
 
 ## Intermediate
