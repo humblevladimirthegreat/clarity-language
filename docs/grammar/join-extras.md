@@ -77,27 +77,27 @@ For several members or an empty domain, put a [phrase join](coordination.md) **i
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Name a **join-act** (`van` / `von` / …) when someone *does* the move to an object; name a **join-relation** (`gan` / `han` / … plus one `/b/`) when a host is framed *including* / *without* / *prioritizing* something.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *apple* | `abele` | |
-| *tea* | `adeda` | |
-| *dessert* | `ubage` | |
-| *lie* | `ulule` | |
-| *peanut* | `abanu` | |
-| *coffee* | `ogove` | |
-| *bug* | `abugu` | |
-| *workaround* | `ewene` | |
-| *birthday-cake* | `urage` | |
-| *water* | `unude` | |
-| *team* | `ahada` | |
-| *walk* | `awala` | |
-| *problem* | `uzebu` | 🧩 *puzzle-piece*: pieces must fit |
-| *meat* | `emema` | |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *beauty* (name **Uhubun**) | `uhubu` | | |
+| *apple* | `abele` | | |
+| *tea* | `adeda` | | |
+| *dessert* | `ubage` | | |
+| *lie* | `ulule` | | |
+| *peanut* | `abanu` | | |
+| *coffee* | `ogove` | | |
+| *bug* | `abugu` | | |
+| *workaround* | `ewene` | `ewenel` *wrench* | |
+| *birthday-cake* | `urage` | | |
+| *water* | `unude` | | |
+| *team* | `ahada` | | |
+| *walk* | `awala` | | |
+| *problem* | `uzebu` | `uzebul` *puzzle-piece* | 🧩: pieces must fit |
+| *meat* | `emema` | | |
 
 #### English → Agalan
 

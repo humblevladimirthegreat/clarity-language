@@ -143,24 +143,24 @@ If the interior is Agalan words, those inner words still start with **their** ro
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Prefer a one-token cite, mention, or opaque blob; nativize when the surface wording is not the point. House names for people unless the item is a loan name.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *tell* | `ezehe` | |
-| *write* | `uwuru` | |
-| *sing* | `uzunu` | |
-| *see* | `eje` | from *perception*: the sense you see with |
-| *walk* | `awala` | |
-| *sleep* | `elebe` | |
-| *happy* (**-m**) | `uzumu` | from *smile*: the face of *happy* |
-| *dog* | `odogo` | |
-| *cat* | `agada` | |
-| *book* | `abogo` | |
-| *blue* | `elulu` | |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *beauty* (name **Uhubun**) | `uhubu` | | |
+| *tell* | `ezehe` | | |
+| *write* | `uwuru` | | |
+| *sing* | `uzunu` | | |
+| *see* | `eje` | `ejel` *eye* | 👁️: the sense you see with |
+| *walk* | `awala` | | |
+| *sleep* | `elebe` | | |
+| *happy* (**-m**) | `uzumu` | `uzumul` *smile* | 😊: the face of *happy* |
+| *dog* | `odogo` | | |
+| *cat* | `agada` | | |
+| *book* | `abogo` | | |
+| *blue* | `elulu` | | |
 
 #### English → Agalan
 
@@ -436,22 +436,22 @@ Sometimes *maybe* or a join should apply only to a multi-word chunk, not the who
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Test spoken opens (TYPE / EDGE / ending), an explicit **`xuxul`** close, nesting, or a **`^ … ^`** island: not only Beginner brackets.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *tell* | `ezehe` | |
-| *see* | `eje` | from *perception*: the sense you see with |
-| *run* | `urunu` | |
-| *red* | `arede` | |
-| *dog* | `odogo` | |
-| *cat* | `agada` | |
-| *book* (name **Abogon**) | `abogo` | |
-| *blue* | `elulu` | |
-| *happy* (**-m**) | `uzumu` | from *smile*: the face of *happy* |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *beauty* (name **Uhubun**) | `uhubu` | | |
+| *tell* | `ezehe` | | |
+| *see* | `eje` | `ejel` *eye* | 👁️: the sense you see with |
+| *run* | `urunu` | | |
+| *red* | `arede` | | |
+| *dog* | `odogo` | | |
+| *cat* | `agada` | | |
+| *book* (name **Abogon**) | `abogo` | | |
+| *blue* | `elulu` | | |
+| *happy* (**-m**) | `uzumu` | `uzumul` *smile* | 😊: the face of *happy* |
 
 #### English → Agalan
 
@@ -669,15 +669,15 @@ duxal code > 1 xuxul
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. Test how the span **closes** (complete / editorial / close-all), or literal fence material as **opaque** content.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *tell* | `ezehe` | |
-| *happy* (**-m**) | `uzumu` | from *smile*: the face of *happy* |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *beauty* (name **Uhubun**) | `uhubu` | | |
+| *tell* | `ezehe` | | |
+| *happy* (**-m**) | `uzumu` | `uzumul` *smile* | 😊: the face of *happy* |
 
 #### English → Agalan
 

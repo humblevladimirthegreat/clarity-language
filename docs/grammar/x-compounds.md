@@ -112,24 +112,24 @@ English sometimes puts two nouns in one slot (*a dog and a cat*) and sometimes o
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. The point is **`x`** assembly vs two words vs a lexical compound.
 
-**Roots used here** (**English** is what you produce; **Cue** is optional memory, not the answer):
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *love* | `olove` | |
-| *crush* | `aga` | |
-| *sushi* | `uzuzu` | |
-| *coffee* | `ogove` | |
-| *tea* | `adeda` | |
-| *house* | `ohohu` | |
-| *bed* | `abede` | |
-| *person* | `ebere` | |
-| *bond* | `onogo` | 🪢 *knot*: two ends held together |
-| *dog* | `odogo` | |
-| *cat* | `agada` | |
-| *sunflower* (lexical compound) | `unowe` | |
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *love* | `olove` | | |
+| *crush* | `aga` | | |
+| *sushi* | `uzuzu` | | |
+| *coffee* | `ogove` | | |
+| *tea* | `adeda` | | |
+| *house* | `ohohu` | | |
+| *bed* | `abede` | | |
+| *person* | `ebere` | | |
+| *bond* | `onogo` | `onogol` *knot* | 🪢: two ends held together |
+| *dog* | `odogo` | | |
+| *cat* | `agada` | | |
+| *sunflower* (lexical compound) | `unowe` | | |
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
 
 #### English → Agalan
 

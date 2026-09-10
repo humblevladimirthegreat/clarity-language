@@ -61,18 +61,18 @@ A citation is **lowercase** root + ending (`azawal`, `azawam`, `azawan`). Englis
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Choose **-l** (new literal), **-m** (new metaphor), or **-n** (named). Every answer is a citation (no first-letter job mark). For a name, the English prompt is the **sense** (*grace*), not the nativized spelling (*Azawan*).
 
-**Roots used here** (**English** is what you produce; **Cue** is optional memory, not the answer):
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *swan* | `azawa` | |
-| *grace* (**-m**) | `azawa` | from *swan*: the glide of *grace* |
-| *grace* (as a name) | `azawa` | |
-| *courage* (as a name) | `ululo` | |
-| *beauty* (as a name) | `uhubu` | |
-| *cat* | `agada` | |
-| *blue* | `elulu` | |
-| *happy* (**-m**) | `uzumu` | from *smile*: the face of *happy* |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *swan* | `azawa` | | |
+| *grace* (**-m**) | `azawa` | `azawal` *swan* | 🦢: the glide of *grace* |
+| *grace* (as a name) | `azawa` | | |
+| *courage* (as a name) | `ululo` | | |
+| *beauty* (as a name) | `uhubu` | | |
+| *cat* | `agada` | | |
+| *blue* | `elulu` | | |
+| *happy* (**-m**) | `uzumu` | `uzumul` *smile* | 😊: the face of *happy* |
 
 #### English → Agalan
 
@@ -274,19 +274,19 @@ Beginner used **-l** / **-m** / **-n** as reference on citations. On [number wor
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. The point is **-n** as a title on any role letter, one **`x`-compound** name, or an office **handle**.
 
-**Roots used here** (**English** is what you produce; **Cue** is optional memory, not the answer):
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *book* (name **Abogon**) | `abogo` | |
-| *blue* | `elulu` | |
-| *walk* | `awala` | |
-| *run* | `urunu` | |
-| *sing* | `uzunu` | |
-| *see* | `eje` | from *perception*: the sense you see with |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *beauty* (name **Uhubun**) | `uhubu` | | |
+| *book* (name **Abogon**) | `abogo` | | |
+| *blue* | `elulu` | | |
+| *walk* | `awala` | | |
+| *run* | `urunu` | | |
+| *sing* | `uzunu` | | |
+| *see* | `eje` | `ejel` *eye* | 👁️: the sense you see with |
 | *write* | `uwuru` | |
 | *haste* | `adaza` | |
 | (name **Odunaxalanen**) | `oduna`×`alane` | |

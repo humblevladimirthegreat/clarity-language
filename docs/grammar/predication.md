@@ -61,22 +61,22 @@ Write a special adjective `gonunul` after the first name, then an extra noun (`/
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Property and kind sit on `/ɡ/`; identity uses **`gonunul`** plus `/b/`.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *dog* | `odogo` | |
-| *cat* | `agada` | |
-| *book* | `abogo` | |
-| *blue* | `elulu` | |
-| *happy* (**-m**) | `uzumu` | from *smile*: the face of *happy* |
-| *challenging* (**-m**) | `omona` | from *mountain*: hard to climb |
-| *walk* | `awala` | |
-| *sleep* | `elebe` | |
-| **SAME** | `onunu` | 🪙 *coin*: two faces, one substance |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *beauty* (name **Uhubun**) | `uhubu` | | |
+| *dog* | `odogo` | | |
+| *cat* | `agada` | | |
+| *book* | `abogo` | | |
+| *blue* | `elulu` | | |
+| *happy* (**-m**) | `uzumu` | `uzumul` *smile* | 😊: the face of *happy* |
+| *challenging* (**-m**) | `omona` | `omonal` *mountain* | ⛰️: hard to climb |
+| *walk* | `awala` | | |
+| *sleep* | `elebe` | | |
+| **SAME** | `onunu` | `onunul` *coin* | 🪙: two faces, one substance |
 
 #### English → Agalan
 
@@ -227,20 +227,20 @@ Beginner already used closed **`gonunul`** (*is the same as*). The other endings
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Classification packaging and **SAME** endings (**-l** / **-m** / **-n** / **-r**) are the point.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *dog* | `odogo` | |
-| *cat* | `agada` | |
-| **SAME** | `onunu` | 🪙 *coin*: two faces, one substance |
-| **TOLD** | `erara` | |
-| (band: *the person who…*) | `ebere` | |
-| *walk* | `awala` | |
-| *sleep* | `elebe` | |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *beauty* (name **Uhubun**) | `uhubu` | | |
+| *dog* | `odogo` | | |
+| *cat* | `agada` | | |
+| **SAME** | `onunu` | `onunul` *coin* | 🪙: two faces, one substance |
+| **TOLD** | `erara` | `eraral` *ear* | |
+| (band: *the person who…*) | `ebere` | | |
+| *walk* | `awala` | | |
+| *sleep* | `elebe` | | |
 
 #### English → Agalan
 

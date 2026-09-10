@@ -19,24 +19,24 @@ When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgme
 
 Affect is **water**. **ACT** is tide dynamics (how much / how fast). **LOCUS** is vessel, transfer, or ambient field (where the water sits).
 
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| **`ogega`** | HIGH arousal | *flood / surge* | 🌊 *ocean-wave*: water in surge |
-| **`ejelo`** | MED arousal | *flow / drift* | 🪼 *jellyfish*: drifts with the current |
-| **`ozowo`** | LOW arousal | *stillness / slack* | 🌨️ *snow*: the landscape goes quiet |
-| **`abobo`** | INTERNAL locus | *held inside* | 🍼 *baby-bottle*: liquid stays in the vessel |
-| **`oruru`** | EXTERNAL locus | *directed at other people* | 🫗 *pour*: liquid goes onto someone else |
-| **`anede`** | CIRCUM locus | *on the situation* (shared / ambient field) | 🕯️ *candle*: light fills the room |
+| Agalan | Use | English | Same root as | Cue |
+|--------|-----|---------|--------------|-----|
+| **`ogega`** | HIGH arousal | *flood / surge* | `ogegal` *ocean-wave* | 🌊: water in surge |
+| **`ejelo`** | MED arousal | *flow / drift* | `ejelol` *jellyfish* | 🪼: drifts with the current |
+| **`ozowo`** | LOW arousal | *stillness / slack* | `ozowol` *snow* | 🌨️: the landscape goes quiet |
+| **`abobo`** | INTERNAL locus | *held inside* | `abobol` *baby-bottle* | 🍼: liquid stays in the vessel |
+| **`oruru`** | EXTERNAL locus | *directed at other people* | `orurul` *pour* | 🫗: liquid goes onto someone else |
+| **`anede`** | CIRCUM locus | *on the situation* (shared / ambient field) | `anedel` *candle* | 🕯️: light fills the room |
 
 Under `/z/` or `/v/` the same spelling is the ordinary noun or verb (`zogegal` *an ocean wave*; `vorurul` *to pour*). The compose reading is the floating `/h/` (or `/w/`) mood.
 
 **EXTERNAL** is one root (`oruru`). Scale the transfer with ACT. INTERNAL and CIRCUM combine the same way; CIRCUM is a shared field.
 
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| **`ogega`** + **`oruru`** | HIGH × EXTERNAL | *poured / surged onto them* | 🌊 *ocean-wave* onto 🫗 *pour*: flood directed at them |
-| **`ejelo`** + **`oruru`** | MED × EXTERNAL | *flowing toward them* | 🪼 *jellyfish* toward 🫗 *pour*: drift aimed at them |
-| **`ozowo`** + **`oruru`** | LOW × EXTERNAL | *pooling at them* | 🌨️ *snow* at 🫗 *pour*: slack water settled at their locus |
+| Agalan | Use | English | Same root as | Cue |
+|--------|-----|---------|--------------|-----|
+| **`ogega`** + **`oruru`** | HIGH × EXTERNAL | *poured / surged onto them* | `ogegal` *ocean-wave* · `orurul` *pour* | 🌊 onto 🫗: flood directed at them |
+| **`ejelo`** + **`oruru`** | MED × EXTERNAL | *flowing toward them* | `ejelol` *jellyfish* · `orurul` *pour* | 🪼 toward 🫗: drift aimed at them |
+| **`ozowo`** + **`oruru`** | LOW × EXTERNAL | *pooling at them* | `ozowol` *snow* · `orurul` *pour* | 🌨️ at 🫗: slack water settled at their locus |
 
 | Agalan | English |
 |---------|---------|
@@ -61,13 +61,13 @@ When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*)
 >
 > "Azawan names solution 2."
 
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| **`uzebu`** | numbered-alternative problem | *problem* (something to fit / solve) | 🧩 *puzzle-piece*: pieces must fit |
-| **`agego`** | numbered-alternative solution | *solution* (what unlocks it) | 🔑 *key*: opens what was locked |
-| **`olala`** | numbered-alternative goal | *goal* (net you aim at) | 🥅 *goal*: the net you shoot for |
-| free **`g#N`** | rank in **this** numbered-alternative series | *candidate N* | `#` = ordinal place |
-| soft **`g~#N`** | tentative ranking | *maybe candidate N* | **-m** leaves the order open |
+| Agalan | Use | English | Same root as | Cue |
+|--------|-----|---------|--------------|-----|
+| **`uzebu`** | numbered-alternative problem | *problem* (something to fit / solve) | `uzebul` *puzzle-piece* | 🧩: pieces must fit |
+| **`agego`** | numbered-alternative solution | *solution* (what unlocks it) | `agegol` *key* | 🔑: opens what was locked |
+| **`olala`** | numbered-alternative goal | *goal* (net you aim at) | `olalal` *goal* | 🥅: the net you shoot for |
+| free **`g#N`** | rank in **this** numbered-alternative series | *candidate N* | | `#` = ordinal place |
+| soft **`g~#N`** | tentative ranking | *maybe candidate N* | | **-m** leaves the order open |
 
 **Recipe:** `zuzebul g#1` / `zagegol g#2` / `zolalal g#1`
 
@@ -85,28 +85,28 @@ Emotion compose already used **`hogegal`** (HIGH arousal) next to **`zogegal`** 
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Compose emotion (one value + ACT + LOCUS), or number alternative candidates (`g#N`).
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *competence* | `olozo` | |
-| *relatedness* | `onogo` | |
-| *dialogue* / *tell* | `ezehe` | |
-| *division* | `ezawa` | |
-| *draft* | `ebegu` | |
-| *memo* | `ememo` | |
-| *flood / surge* (HIGH) | `ogega` | 🌊 *ocean-wave*: water in surge |
-| *flow / drift* (MED) | `ejelo` | 🪼 *jellyfish*: drifts with the current |
-| *stillness / slack* (LOW) | `ozowo` | 🌨️ *snow*: the landscape goes quiet |
-| *held inside* (INTERNAL) | `abobo` | 🍼 *baby-bottle*: liquid stays in the vessel |
-| *directed at others* (EXTERNAL) | `oruru` | 🫗 *pour*: liquid goes onto someone else |
-| *on the situation* (CIRCUM) | `anede` | 🕯️ *candle*: light fills the room |
-| *problem* | `uzebu` | 🧩 *puzzle-piece*: pieces must fit |
-| *solution* | `agego` | 🔑 *key*: opens what was locked |
-| *goal* | `olala` | 🥅 *goal*: the net you shoot for |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *beauty* (name **Uhubun**) | `uhubu` | | |
+| *competence* | `olozo` | | |
+| *relatedness* | `onogo` | | |
+| *dialogue* / *tell* | `ezehe` | | |
+| *division* | `ezawa` | | |
+| *draft* | `ebegu` | | |
+| *memo* | `ememo` | | |
+| *flood / surge* (HIGH) | `ogega` | `ogegal` *ocean-wave* | 🌊: water in surge |
+| *flow / drift* (MED) | `ejelo` | `ejelol` *jellyfish* | 🪼: drifts with the current |
+| *stillness / slack* (LOW) | `ozowo` | `ozowol` *snow* | 🌨️: the landscape goes quiet |
+| *held inside* (INTERNAL) | `abobo` | `abobol` *baby-bottle* | 🍼: liquid stays in the vessel |
+| *directed at others* (EXTERNAL) | `oruru` | `orurul` *pour* | 🫗: liquid goes onto someone else |
+| *on the situation* (CIRCUM) | `anede` | `anedel` *candle* | 🕯️: light fills the room |
+| *problem* | `uzebu` | `uzebul` *puzzle-piece* | 🧩: pieces must fit |
+| *solution* | `agego` | `agegol` *key* | 🔑: opens what was locked |
+| *goal* | `olala` | `olalal` *goal* | 🥅: the net you shoot for |
 
 #### English → Agalan
 
@@ -207,13 +207,13 @@ English *always* / *every* / *never* / *everyone* smuggle **how exceptionless** 
 
 The default *always* is *usually* (exceptions expected), not *must happen that way*, and not an ought. (cue: usual weather, not a law of nature.) Prefer floating `/h/`. Use **COMMON** (`hewonol`) unless another row is the exceptionlessness you mean. **RULE** is complex `/h/` + `/b/` when you name the frame.
 
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| **`ewono`** | COMMON (default climate) | *usually* (exceptions expected) | ⛅ *weather*: usual sky still allows a shower |
-| **`abulu`** | UNCOUNTERED (search) | *as far as checked* (no counterexample comes to mind) | 💊 *pill*: you take it to treat an ailment; the search found none |
-| **`araza`** | FORMAL | *by definition* / math / proof | ⭐ *star*: a charted constellation does not wander |
-| **`abele`** | NATURAL | *by natural necessity* (unsupported objects fall) | 🍎 *apple*: it falls because the world works that way |
-| **`ebebe`** | RULE | *under a named frame* (`hebebel begezel`) | 🌶️ *pepper*: heat that applies in that dish |
+| Agalan | Use | English | Same root as | Cue |
+|--------|-----|---------|--------------|-----|
+| **`ewono`** | COMMON (default climate) | *usually* (exceptions expected) | | ⛅: usual sky still allows a shower |
+| **`abulu`** | UNCOUNTERED (search) | *as far as checked* (no counterexample comes to mind) | `abulul` *pill* | 💊: you take it to treat an ailment; the search found none |
+| **`araza`** | FORMAL | *by definition* / math / proof | `arazal` *star* | ⭐: a charted constellation does not wander |
+| **`abele`** | NATURAL | *by natural necessity* (unsupported objects fall) | `abelel` *apple* | 🍎: it falls because the world works that way |
+| **`ebebe`** | RULE | *under a named frame* (`hebebel begezel`) | `ebebel` *pepper* | 🌶️: heat that applies in that dish |
 
 **Compare with:** *who / when* uses [universal fences](coordination.md#universals-domains-generics) (`zual` / `hual` / `zuam`) and [restrictors](restrictors.md) (`hual`). Soft **-m** on the fence (`zuam` / `huam`) is open inventory.
 
@@ -233,30 +233,30 @@ The default *always* is *usually* (exceptions expected), not *must happen that w
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. Pair a domain fence (`hual` / `zual` / `zuam`) with a universality mood.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *usually* (COMMON) | `ewono` | ⛅ *weather*: usual sky still allows a shower |
-| *as far as checked* (UNCOUNTERED) | `abulu` | 💊 *pill*: you take it to treat an ailment; the search found none |
-| *by definition* (FORMAL) | `araza` | ⭐ *star*: a charted constellation does not wander |
-| *by natural necessity* (NATURAL) | `abele` | 🍎 *apple*: it falls because the world works that way |
-| *under a named frame* (RULE) | `ebebe` | 🌶️ *pepper*: heat that applies in that dish |
-| *pawn* | `egeza` | |
-| *square* | `agure` | |
-| *cat* | `agada` | |
-| *dog* | `odogo` | |
-| *book* | `abogo` | |
-| *walk* | `awala` | |
-| *sing* | `uzunu` | |
-| *sleep* | `elebe` | |
-| *sit* | `aju` | |
-| *see* | `eje` | from *perception*: the sense you see with |
-| *run* | `urunu` | |
-| evidential *pattern* | `abawa` | |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *beauty* (name **Uhubun**) | `uhubu` | | |
+| *usually* (COMMON) | `ewono` | | ⛅: usual sky still allows a shower |
+| *as far as checked* (UNCOUNTERED) | `abulu` | `abulul` *pill* | 💊: you take it to treat an ailment; the search found none |
+| *by definition* (FORMAL) | `araza` | `arazal` *star* | ⭐: a charted constellation does not wander |
+| *by natural necessity* (NATURAL) | `abele` | `abelel` *apple* | 🍎: it falls because the world works that way |
+| *under a named frame* (RULE) | `ebebe` | `ebebel` *pepper* | 🌶️: heat that applies in that dish |
+| *pawn* | `egeza` | | |
+| *square* | `agure` | | |
+| *cat* | `agada` | | |
+| *dog* | `odogo` | | |
+| *book* | `abogo` | | |
+| *walk* | `awala` | | |
+| *sing* | `uzunu` | | |
+| *sleep* | `elebe` | | |
+| *sit* | `aju` | | |
+| *see* | `eje` | `ejel` *eye* | 👁️: the sense you see with |
+| *run* | `urunu` | | |
+| evidential *pattern* | `abawa` | | |
 
 #### English → Agalan
 

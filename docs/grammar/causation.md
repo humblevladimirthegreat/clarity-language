@@ -238,11 +238,11 @@ main sentence …  hadorom / hezazem / hurugum  badorol   [dependent sentence]
 
 Beginner already pointed at *if* / *because* as dependents. Pick the `/h/` root by the English job. Clause poles take **-m** (published metaphorical sense): **`hadorom`** / **`hezazem`** / **`hurugum`**. Ordinary content on the same roots still uses ordinary endings (`zadorol` *a door*; `zezazel` *reciprocity*; `zurugul` *a brick*).
 
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| **`hadorom badorol`** (**`adoro`**) | one-way condition (open sufficient; dependent not asserted) | *if* | 🚪 *doorway*: walk through only if it opens |
-| **`hezazem badorol`** (**`ezaze`**) | both-ways (sufficient **and** necessary) | *if and only if* | ↔️ *left-right*: each side only with the other |
-| **`hurugum badorol`** (**`urugu`**) | asserted explanation | *because* | 🧱 *brick*: the cause is what the result sits on |
+| Agalan | Use | English | Same root as | Cue |
+|--------|-----|---------|--------------|-----|
+| **`hadorom badorol`** (**`adoro`**) | one-way condition (open sufficient; dependent not asserted) | *if* | `adorol` *door* | 🚪: walk through only if it opens |
+| **`hezazem badorol`** (**`ezaze`**) | both-ways (sufficient **and** necessary) | *if and only if* | `ezazel` *east-west* | ↔️: each side only with the other |
+| **`hurugum badorol`** (**`urugu`**) | asserted explanation | *because* | `urugul` *brick* | 🧱: the cause is what the result sits on |
 
 > `zazawan vawalal hurugum badorol zululon velebel.`
 >
@@ -298,26 +298,26 @@ English *should* on a causal claim is often a wish or ought, not a formal or nat
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Mark **necessary** with exclusion / **`hal`**, unique path with **`gon` / `hon` / `…ol`**, clause poles with **`hadorom` / `hezazem` / `hurugum`**, and **CAUSE** with **`hegegam`**. An ought sits on values **`xo`**.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *dog* | `odogo` | |
-| *effort* | `ezewe` | |
-| *rain* | `anunu` | |
-| *cloud* | `uludu` | |
-| *book* | `abogo` | |
-| *competence* | `olozo` | |
-| *walk* | `awala` | |
-| *sing* | `uzunu` | |
-| *sleep* | `elebe` | |
-| *next clause* / *if* (**-m** on `/h/`) | `adoro` | 🚪 *doorway*: walk through only if it opens |
-| *iff* (**-m**) | `ezaze` | ↔️ *left-right*: each side only with the other |
-| *because* (**-m**) | `urugu` | 🧱 *brick*: the cause is what the result sits on |
-| *CAUSE* (**-m**) | `egega` | ⚙️ *gear*: how the mechanism engages |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *beauty* (name **Uhubun**) | `uhubu` | | |
+| *dog* | `odogo` | | |
+| *effort* | `ezewe` | | |
+| *rain* | `anunu` | | |
+| *cloud* | `uludu` | | |
+| *book* | `abogo` | | |
+| *competence* | `olozo` | | |
+| *walk* | `awala` | | |
+| *sing* | `uzunu` | | |
+| *sleep* | `elebe` | | |
+| *next clause* / *if* (**-m** on `/h/`) | `adoro` | `adorol` *door* | 🚪: walk through only if it opens |
+| *iff* (**-m**) | `ezaze` | `ezazel` *east-west* | ↔️: each side only with the other |
+| *because* (**-m**) | `urugu` | `urugul` *brick* | 🧱: the cause is what the result sits on |
+| *CAUSE* (**-m**) | `egega` | `egegal` *gear* | ⚙️: how the mechanism engages |
 
 #### English → Agalan
 
@@ -463,11 +463,11 @@ English *because* and *if* can hide whether you **assert the dependent as a worl
 >
 > "Azawan walks if it rains." Rain is not asserted; the main sentence is under that opportunity.
 
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| **`hadorom`** | dependent not asserted; main claimed under it | *if* | 🚪 *doorway*: walk through only if it opens |
-| **`hezazem`** | both sides stand or fall together | *if and only if* | ↔️ *left-right*: each side only with the other |
-| **`hurugum`** | dependent asserted as the reason | *because* | 🧱 *brick*: the cause is what the result sits on |
+| Agalan | Use | English | Same root as | Cue |
+|--------|-----|---------|--------------|-----|
+| **`hadorom`** | dependent not asserted; main claimed under it | *if* | `adorol` *door* | 🚪: walk through only if it opens |
+| **`hezazem`** | both sides stand or fall together | *if and only if* | `ezazel` *east-west* | ↔️: each side only with the other |
+| **`hurugum`** | dependent asserted as the reason | *because* | `urugul` *brick* | 🧱: the cause is what the result sits on |
 
 #### Epistemic *because* (no twin root)
 <a id="epistemic-because"></a>
@@ -513,20 +513,20 @@ Time and discourse dependents use the same **`adoro`** hang as *if* / *because*.
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. **`hurugum`** asserts the dependent as a fact the main sentence rests on; **`hadorom`** does not; speaker-grounds stay **`hodohom`**. Habit uses **`hual`**.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *rain* | `anunu` | |
-| *cloud* | `uludu` | |
-| *walk* | `awala` | |
-| *sleep* | `elebe` | |
-| *next clause* / *if* (**-m** on `/h/`) | `adoro` | 🚪 *doorway*: walk through only if it opens |
-| *iff* (**-m**) | `ezaze` | ↔️ *left-right*: each side only with the other |
-| *because* (**-m**) | `urugu` | 🧱 *brick*: the cause is what the result sits on |
-| *commentary* (**`hodohom`**) | `odoho` | |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *rain* | `anunu` | | |
+| *cloud* | `uludu` | | |
+| *walk* | `awala` | | |
+| *sleep* | `elebe` | | |
+| *next clause* / *if* (**-m** on `/h/`) | `adoro` | `adorol` *door* | 🚪: walk through only if it opens |
+| *iff* (**-m**) | `ezaze` | `ezazel` *east-west* | ↔️: each side only with the other |
+| *because* (**-m**) | `urugu` | `urugul` *brick* | 🧱: the cause is what the result sits on |
+| *commentary* (**`hodohom`**) | `odoho` | | |
 
 #### English → Agalan
 

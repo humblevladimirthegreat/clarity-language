@@ -105,22 +105,22 @@ Open **-m** leaves other occasions possible: *when raining, among other times*, 
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Restrictors mark **when the claim counts**. Bare **`hal`** / **`hual`** are *never* / *always*; with a listed occasion they are *only when…* / *always except when…*.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *walk* | `awala` | |
-| *run* | `urunu` | |
-| *sing* | `uzunu` | |
-| *sleep* | `elebe` | |
-| *happy* (**-m**) | `uzumu` | from *smile*: the face of *happy* |
-| *rain* | `anunu` | |
-| *night* | `unugu` | |
-| *haste* (**-m**) | `adaza` | from *dash*: a burst of speed |
-| *quietude* (**-m**) | `owo` | from *owl*: the quiet bird |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *beauty* (name **Uhubun**) | `uhubu` | | |
+| *walk* | `awala` | | |
+| *run* | `urunu` | | |
+| *sing* | `uzunu` | | |
+| *sleep* | `elebe` | | |
+| *happy* (**-m**) | `uzumu` | `uzumul` *smile* | 😊: the face of *happy* |
+| *rain* | `anunu` | | |
+| *night* | `unugu` | | |
+| *haste* (**-m**) | `adaza` | `adazal` *dash* | 💨: a burst of speed |
+| *quietude* (**-m**) | `owo` | `owol` *owl* | 🦉: the quiet bird |
 
 #### English → Agalan
 
@@ -306,27 +306,27 @@ Statement readings below. Asking *when*: [questions.md](questions.md#when).
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Use exclusive / inclusive / *not when* / ranked occasions / unspecified-member with listed occasions. Next-clause *when* / *if* stays `/h/` plus `/b/` **`adoro`**.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *walk* | `awala` | |
-| *run* | `urunu` | |
-| *sing* | `uzunu` | |
-| *sleep* | `elebe` | |
-| *write* | `uwuru` | |
-| *rain* | `anunu` | |
-| *snow* | `ozowo` | |
-| *night* | `unugu` | |
-| *home* (**-m**) | `ohohu` | from *house*: where you live |
-| *emergency* (**-m**) | `amubu` | from *ambulance*: urgent help |
-| *convenience* (**-m**) | `ozore` | from *convenience-store*: ready to hand |
-| *repair* | `ereba` | |
-| *workaround* (**-m**) | `ewene` | from *wrench*: a tool that still works |
-| *next clause* | `adoro` | 🚪 *doorway*: the next sentence walks through |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *beauty* (name **Uhubun**) | `uhubu` | | |
+| *walk* | `awala` | | |
+| *run* | `urunu` | | |
+| *sing* | `uzunu` | | |
+| *sleep* | `elebe` | | |
+| *write* | `uwuru` | | |
+| *rain* | `anunu` | | |
+| *snow* | `ozowo` | | |
+| *night* | `unugu` | | |
+| *home* (**-m**) | `ohohu` | `ohohul` *house* | 🏠: where you live |
+| *emergency* (**-m**) | `amubu` | `amubul` *ambulance* | 🚑: urgent help |
+| *convenience* (**-m**) | `ozore` | `ozorel` *convenience-store* | 🏪: ready to hand |
+| *repair* | `ereba` | | |
+| *workaround* (**-m**) | `ewene` | `ewenel` *wrench* | 🔧: a tool that still works |
+| *next clause* | `adoro` | `adorol` *door* | 🚪: the next sentence walks through |
 
 #### English → Agalan
 

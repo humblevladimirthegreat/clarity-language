@@ -76,18 +76,18 @@ Same endings and fuzzy **-m** habits as other number words on the amount (`g~+2`
 
 Everyday units (bare measure is the default):
 
-| SI / everyday unit | Agalan | Bare measure | Cue |
-|--------------------|--------|--------------|-----|
-| meter | `urule` | `burulel` | 📏 *measurement*: a ruler tracks exact length |
-| gram | `araga` | `baragal` | 🪨 *heaviness*: rock is hard to lift |
-| second | `anelo` | `banelol` | 🕰️ *passage*: a mantel clock marks hours going by |
-| liter | `ozobo` | `bozobol` | 🥄 *portion*: a spoon measures a portion |
-| ampere | `ejelo` | `bejelol` | 🪼 *flow*: jellyfish drift with the current |
-| kelvin | `ebebe` | `bebebel` | 🌶️ *heat*: hot pepper brings heat |
-| mole | `emema` | `bememal` | 🍖 *substance*: the meat of the matter |
-| candela | `anede` | `banedel` | 🕯️ *awash*: candle light fills the room |
-| hour / civil duration | `ume` | `bumel` | 🕐 *time*: a clock face marks the hour |
-| heat grade (not kelvin) | `edehe` | `gedehel` | 🌡️ *temperature*: a thermometer reads how hot or cold |
+| SI / everyday unit | Agalan | Bare measure | Same root as | Cue |
+|--------------------|--------|--------------|--------------|-----|
+| meter | `urule` | `burulel` | `urulel` *ruler* | 📏: tracks exact length |
+| gram | `araga` | `baragal` | `aragal` *rock* | 🪨: hard to lift |
+| second | `anelo` | `banelol` | `anelol` *mantel-clock* | 🕰️: marks hours going by |
+| liter | `ozobo` | `bozobol` | `ozobol` *spoon* | 🥄: measures a portion |
+| ampere | `ejelo` | `bejelol` | `ejelol` *jellyfish* | 🪼: drift with the current |
+| kelvin | `ebebe` | `bebebel` | `ebebel` *pepper* | 🌶️: brings heat |
+| mole | `emema` | `bememal` | `ememal` *meat* | 🍖: the meat of the matter |
+| candela | `anede` | `banedel` | `anedel` *candle* | 🕯️: light fills the room |
+| hour / civil duration | `ume` | `bumel` | | 🕐: a clock face marks the hour |
+| heat grade (not kelvin) | `edehe` | `gedehel` | `edehel` *thermometer* | 🌡️: reads how hot or cold |
 
 `bumel g+3` ≈ *three hours*.
 

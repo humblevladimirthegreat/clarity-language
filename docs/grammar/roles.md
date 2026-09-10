@@ -93,24 +93,24 @@ To say someone **is a kind** (*Azawan is a fighter*), put the same role stem on 
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *cat* | `agada` | |
-| *happy* (**-m**) | `uzumu` | from *smile*: the face of *happy* |
-| *walk* | `awala` | |
-| *run* | `urunu` | |
-| *sleep* | `elebe` | |
-| *sing* | `uzunu` | |
-| *see* | `eje` | from *perception*: the sense you see with |
-| *write* | `uwuru` | |
-| *sit* | `aju` | |
-| *fight* | `uvugu` | |
-| *bond* | `onogo` | 🪢 *knot*: ties people together |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *beauty* (name **Uhubun**) | `uhubu` | | |
+| *cat* | `agada` | | |
+| *happy* (**-m**) | `uzumu` | `uzumul` *smile* | 😊: the face of *happy* |
+| *walk* | `awala` | | |
+| *run* | `urunu` | | |
+| *sleep* | `elebe` | | |
+| *sing* | `uzunu` | | |
+| *see* | `eje` | `ejel` *eye* | 👁️: the sense you see with |
+| *write* | `uwuru` | | |
+| *sit* | `aju` | | |
+| *fight* | `uvugu` | | |
+| *bond* | `onogo` | `onogol` *knot* | 🪢: ties people together |
 
 #### English → Agalan
 
@@ -287,11 +287,11 @@ English *up* / *down* here follows the pull of gravity, not a face. Write **`uba
 >
 > "Up!"
 
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| **`uba`** | skyward, shared gravity frame | *up* / *rise* | ⏫ *double-up*: away from the pull |
-| **`odowo`** | toward the pull, shared gravity frame | *down* / *fall* | ⏬ *double-down*: toward the pull |
-| **`evere`** | the vertical axis | *up–down axis* | ↕️ *up-down*: the axis only |
+| Agalan | Use | English | Same root as | Cue |
+|--------|-----|---------|--------------|-----|
+| **`uba`** | skyward, shared gravity frame | *up* / *rise* | `ubal` *up* | ⏫: away from the pull |
+| **`odowo`** | toward the pull, shared gravity frame | *down* / *fall* | `odowol` *down* | ⏬: toward the pull |
+| **`evere`** | the vertical axis | *up–down axis* | | ↕️: the axis only |
 
 ### Viewpoint vs landmark
 
@@ -336,25 +336,25 @@ Direction words take the same four [reference endings](reference-suffix.md) as o
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *house* | `ohohu` | |
-| *cat* | `agada` | |
-| *dog* | `odogo` | |
-| *book* | `abogo` | |
-| *walk* | `awala` | |
-| *west* / body *left* | `eweze` | ⬅️ *left-arrow*: opposite east, or left of facing |
-| *east* / body *right* | `ezaza` | ➡️ *right-arrow*: the sun’s path east, or right of facing |
-| *northwest* / *forward-left* | `onohe` | ↖️ *northwest-arrow*: between north and west |
-| *up* (gravity) | `uba` | ⏫ *double-up*: away from the pull |
-| *tree* | `ere` | |
-| *listener* | `edone` | |
-| *speaker* | `ugobo` | |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *beauty* (name **Uhubun**) | `uhubu` | | |
+| *house* | `ohohu` | | |
+| *cat* | `agada` | | |
+| *dog* | `odogo` | | |
+| *book* | `abogo` | | |
+| *walk* | `awala` | | |
+| *west* / body *left* | `eweze` | | ⬅️: opposite east, or left of facing |
+| *east* / body *right* | `ezaza` | | ➡️: the sun’s path east, or right of facing |
+| *northwest* / *forward-left* | `onohe` | | ↖️: between north and west |
+| *up* (gravity) | `uba` | `ubal` *up* | ⏫: away from the pull |
+| *tree* | `ere` | | |
+| *listener* | `edone` | | |
+| *speaker* | `ugobo` | | |
 
 #### English → Agalan
 

@@ -124,19 +124,19 @@ A *…, yes?* confirm tag is its own next turn: finish the statement with a peri
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *dog* | `odogo` | |
-| *cat* | `agada` | |
-| *walk* | `awala` | |
-| *sleep* | `elebe` | |
-| *sing* | `uzunu` | |
-| *see* | `eje` | from *perception*: the sense you see with |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *beauty* (name **Uhubun**) | `uhubu` | | |
+| *dog* | `odogo` | | |
+| *cat* | `agada` | | |
+| *walk* | `awala` | | |
+| *sleep* | `elebe` | | |
+| *sing* | `uzunu` | | |
+| *see* | `eje` | `ejel` *eye* | 👁️: the sense you see with |
 | *write* | `uwuru` | |
 | *run* | `urunu` | |
 

@@ -89,18 +89,18 @@ The word ends with exact **-l**, spoken as its own last syllable. Build the spok
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Count with `g+N`, rank with `g#N`, and use digitless **`g+`** with **-x** on the noun for *more than one*.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *cat* | `agada` | |
-| *dog* | `odogo` | |
-| *book* | `abogo` | |
-| *house* | `ohohu` | |
-| *see* | `eje` | from *perception*: the sense you see with |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *beauty* (name **Uhubun**) | `uhubu` | | |
+| *cat* | `agada` | | |
+| *dog* | `odogo` | | |
+| *book* | `abogo` | | |
+| *house* | `ohohu` | | |
+| *see* | `eje` | `ejel` *eye* | 👁️: the sense you see with |
 | *write* | `uwuru` | |
 
 #### English → Agalan
@@ -711,20 +711,20 @@ In a sentence, the PoS attaches to that single number word (see [Parts of speech
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Prefer shorthand (`g~+3`, `g#-2`, `h_15,30`). Sample PoS, endings, digitless number as verb / adverb / interjection / discourse, and **one** time reading — not the whole inventory.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *cat* | `agada` | |
-| *book* | `abogo` | |
-| *house* | `ohohu` | |
-| *blue* | `elulu` | |
-| *walk* | `awala` | |
-| *sleep* | `elebe` | |
-| *see* | `eje` | from *perception*: the sense you see with |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *beauty* (name **Uhubun**) | `uhubu` | | |
+| *cat* | `agada` | | |
+| *book* | `abogo` | | |
+| *house* | `ohohu` | | |
+| *blue* | `elulu` | | |
+| *walk* | `awala` | | |
+| *sleep* | `elebe` | | |
+| *see* | `eje` | `ejel` *eye* | 👁️: the sense you see with |
 
 #### English → Agalan
 

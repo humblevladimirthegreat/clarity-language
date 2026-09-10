@@ -107,22 +107,22 @@ Sometimes the thing you want to tweak is not a phrase inside this sentence, but 
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *dog* | `odogo` | |
-| *cat* | `agada` | |
-| *tea* | `adeda` | |
-| *coffee* | `ogove` | |
-| *team* | `ahada` | |
-| *happy* (**-m**) | `uzumu` | from *smile*: the face of *happy* |
-| *big* (**-m**) | `ele` | from *elephant*: the huge animal |
-| *walk* | `awala` | |
-| *sleep* | `elebe` | |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *beauty* (name **Uhubun**) | `uhubu` | | |
+| *dog* | `odogo` | | |
+| *cat* | `agada` | | |
+| *tea* | `adeda` | | |
+| *coffee* | `ogove` | | |
+| *team* | `ahada` | | |
+| *happy* (**-m**) | `uzumu` | `uzumul` *smile* | 😊: the face of *happy* |
+| *big* (**-m**) | `ele` | `elel` *elephant* | 🐘: the huge animal |
+| *walk* | `awala` | | |
+| *sleep* | `elebe` | | |
 
 #### English → Agalan
 
@@ -321,23 +321,23 @@ On a non-initial conjunct under a [clause `/x/` fence](coordination.md#clause-le
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *dog* | `odogo` | |
-| *cat* | `agada` | |
-| *tea* | `adeda` | |
-| *coffee* | `ogove` | |
-| *team* | `ahada` | |
-| *happy* (**-m**) | `uzumu` | from *smile*: the face of *happy* |
-| *calm* (**-m**) | `erelu` | from *relief*: the ease after tension |
-| *walk* | `awala` | |
-| *run* | `urunu` | |
-| *therefore* | `ezaza` | ➡️ *east*: the sun’s path, so the talk moves on |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *beauty* (name **Uhubun**) | `uhubu` | | |
+| *dog* | `odogo` | | |
+| *cat* | `agada` | | |
+| *tea* | `adeda` | | |
+| *coffee* | `ogove` | | |
+| *team* | `ahada` | | |
+| *happy* (**-m**) | `uzumu` | `uzumul` *smile* | 😊: the face of *happy* |
+| *calm* (**-m**) | `erelu` | `erelul` *relief* | 😌: the ease after tension |
+| *walk* | `awala` | | |
+| *run* | `urunu` | | |
+| *therefore* | `ezaza` | `ezazal` *east* | ➡️: the sun’s path, so the talk moves on |
 
 #### English → Agalan
 

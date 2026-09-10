@@ -80,13 +80,13 @@ When a sentence needs a whole following sentence as its object (English *that Ul
 >
 > "I told Azawan that Ululon left."
 
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| **`ugobo`** (`zugobon`, default **-n**) | speaker in this conversation | *I* | 🎤 *microphone*: the live voice of the person talking |
-| **`edone`** (`dedonen` / `zedonen`, default **-n**) | listener in this conversation | *you* | 🎧 *headphones*: the one receiving the sound |
-| **`aha`** (`zahan`, default **-n**) | speaker and addressees together | *we* (you and I) | 🤝 *handshake*: sharing the floor together |
-| **`enenu`** (`zenenun`, default **-n**) | nonspecific individual | *someone* | 😐 *neutral*: not a particular person |
-| **`adoro`** (`dadorol` / `badorol`, default **-l**) | placeholder for the following sentence | *that* (next clause) | 🚪 *doorway*: the next sentence walks through |
+| Agalan | Use | English | Same root as | Cue |
+|--------|-----|---------|--------------|-----|
+| **`ugobo`** (`zugobon`, default **-n**) | speaker in this conversation | *I* | `ugobol` *microphone* | 🎤: the live voice of the person talking |
+| **`edone`** (`dedonen` / `zedonen`, default **-n**) | listener in this conversation | *you* | `edonel` *headphones* | 🎧: the one receiving the sound |
+| **`aha`** (`zahan`, default **-n**) | speaker and addressees together | *we* (you and I) | `ahal` *handshake* | 🤝: sharing the floor together |
+| **`enenu`** (`zenenun`, default **-n**) | nonspecific individual | *someone* | `enenul` *neutral* | 😐: not a particular person |
+| **`adoro`** (`dadorol` / `badorol`, default **-l**) | placeholder for the following sentence | *that* (next clause) | `adorol` *door* | 🚪: the next sentence walks through |
 
 ### Clusivity
 <a id="clusivity"></a>
@@ -100,28 +100,28 @@ English *we* and *you* do not say whether the listener is in the group. That spl
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *dog* | `odogo` | |
-| *dragon* | `adara` | |
-| *book* | `abogo` | |
-| *walk* | `awala` | |
-| *sit* | `aju` | |
-| *sleep* | `elebe` | |
-| *run* | `urunu` | |
-| *see* | `eje` | |
-| *tell* | `ezehe` | |
-| *depart* | `ebaru` | |
-| *big* (**-m**) | `ele` | from *elephant*: the huge animal |
-| *speaker* | `ugobo` | 🎤 *microphone*: the live voice of the person talking |
-| *listener* | `edone` | 🎧 *headphones*: the one receiving the sound |
-| *interlocutors* | `aha` | 🤝 *handshake*: sharing the floor together |
-| *someone* | `enenu` | 😐 *neutral*: not a particular person |
-| *next clause* | `adoro` | 🚪 *doorway*: the next sentence walks through |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *dog* | `odogo` | | |
+| *dragon* | `adara` | | |
+| *book* | `abogo` | | |
+| *walk* | `awala` | | |
+| *sit* | `aju` | | |
+| *sleep* | `elebe` | | |
+| *run* | `urunu` | | |
+| *see* | `eje` | | |
+| *tell* | `ezehe` | | |
+| *depart* | `ebaru` | | |
+| *big* (**-m**) | `ele` | `elel` *elephant* | 🐘: the huge animal |
+| *speaker* | `ugobo` | `ugobol` *microphone* | 🎤: the live voice of the person talking |
+| *listener* | `edone` | `edonel` *headphones* | 🎧: the one receiving the sound |
+| *interlocutors* | `aha` | `ahal` *handshake* | 🤝: sharing the floor together |
+| *someone* | `enenu` | `enenul` *neutral* | 😐: not a particular person |
+| *next clause* | `adoro` | `adorol` *door* | 🚪: the next sentence walks through |
 
 #### English → Agalan
 
@@ -292,23 +292,23 @@ When you address several people at once, English *you* does not say how many. Th
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *walk* | `awala` | |
-| *run* | `urunu` | |
-| *sleep* | `elebe` | |
-| *sit* | `aju` | |
-| *see* | `eje` | |
-| *happy* (**-m**) | `uzumu` | from *smile*: the face of *happy* |
-| *haste* (**-m**) | `adaza` | from *dash*: a burst of speed |
-| *interlocutors* | `aha` | 🤝 *handshake*: sharing the floor together |
-| *speaker* | `ugobo` | 🎤 *microphone*: the live voice of the person talking |
-| *listener* | `edone` | 🎧 *headphones*: the one receiving the sound |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *beauty* (name **Uhubun**) | `uhubu` | | |
+| *walk* | `awala` | | |
+| *run* | `urunu` | | |
+| *sleep* | `elebe` | | |
+| *sit* | `aju` | | |
+| *see* | `eje` | | |
+| *happy* (**-m**) | `uzumu` | `uzumul` *smile* | 😊: the face of *happy* |
+| *haste* (**-m**) | `adaza` | `adazal` *dash* | 💨: a burst of speed |
+| *interlocutors* | `aha` | `ahal` *handshake* | 🤝: sharing the floor together |
+| *speaker* | `ugobo` | `ugobol` *microphone* | 🎤: the live voice of the person talking |
+| *listener* | `edone` | `edonel` *headphones* | 🎧: the one receiving the sound |
 
 #### English → Agalan
 
@@ -496,20 +496,20 @@ Intermediate already recast one referent into a new slot. Each table is an **ant
 
 Short drills on this Advanced band. Try each item before opening **Show answer**.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *dog* | `odogo` | |
-| *walk* | `awala` | |
-| *run* | `urunu` | |
-| *sit* | `aju` | |
-| *sleep* | `elebe` | |
-| *big* (**-m**) | `ele` | from *elephant*: the huge animal |
-| *happy* (**-m**) | `uzumu` | from *smile*: the face of *happy* |
-| *haste* (**-m**) | `adaza` | from *dash*: a burst of speed |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *dog* | `odogo` | | |
+| *walk* | `awala` | | |
+| *run* | `urunu` | | |
+| *sit* | `aju` | | |
+| *sleep* | `elebe` | | |
+| *big* (**-m**) | `ele` | `elel` *elephant* | 🐘: the huge animal |
+| *happy* (**-m**) | `uzumu` | `uzumul` *smile* | 😊: the face of *happy* |
+| *haste* (**-m**) | `adaza` | `adazal` *dash* | 💨: a burst of speed |
 
 #### English → Agalan
 

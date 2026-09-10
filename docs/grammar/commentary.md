@@ -34,11 +34,11 @@ The same `/h/` word can sit on a yes/no ask:
 
 On **`odoho`**, **-l / -m / -r** say how committed you are to that *I think*. **-m** is the default: you notice the take and hold it lightly. **-l** treats the take as what the scene is (*it is so because I think*). **-r** names the same take and steps you back toward reporting without commentary. **-n** is ordinary [proper](reference-suffix.md#proper-name--n).
 
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| **`hodohom`** | comments on the clause, held lightly (default) | *I think* (soft) | 💭 *thought*: balloon loosely in hand |
-| **`hodohol`** | treats the take as what the scene is | *it is so because I think* | 💭 *thought*: balloon fills the sky |
-| **`hodohor`** | names the same take and steps back toward reporting | *I think — and step back* | 💭 *thought*: let the balloon go |
+| Agalan | Use | English | Same root as | Cue |
+|--------|-----|---------|--------------|-----|
+| **`hodohom`** | comments on the clause, held lightly (default) | *I think* (soft) | `odohol` *thought* | 💭: balloon loosely in hand |
+| **`hodohol`** | treats the take as what the scene is | *it is so because I think* | `odohol` *thought* | 💭: balloon fills the sky |
+| **`hodohor`** | names the same take and steps back toward reporting | *I think — and step back* | `odohol` *thought* | 💭: let the balloon go |
 
 When unsure, prefer **`hodohom`**.
 
@@ -59,20 +59,20 @@ When unsure, prefer **`hodohom`**.
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *dog* | `odogo` | |
-| *walk* | `awala` | |
-| *sleep* | `elebe` | |
-| *sing* | `uzunu` | |
-| *run* | `urunu` | |
-| *see* | `eje` | from *perception*: the sense you see with |
-| *commentary* | `odoho` | 💭 *thought*: a balloon over the scene |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *beauty* (name **Uhubun**) | `uhubu` | | |
+| *dog* | `odogo` | | |
+| *walk* | `awala` | | |
+| *sleep* | `elebe` | | |
+| *sing* | `uzunu` | | |
+| *run* | `urunu` | | |
+| *see* | `eje` | `ejel` *eye* | 👁️: the sense you see with |
+| *commentary* | `odoho` | `odohol` *thought* | 💭: a balloon over the scene |
 
 #### English → Agalan
 
@@ -199,16 +199,16 @@ There is **no past / future letter** on the verb. Some channels already locate t
 
 **For *I think*, use:** [COMMENT](#comment) (`odoho`). This inventory is *how you know a world-claim*.
 
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| **`hadezem`** | firsthand / concurrent channel | *live* / *from the scene* | 👁️‍🗨️ *attest*: seeing-and-saying while it is in view |
-| **`huvuvum`** | firsthand / reconstructive channel | *from memory* (past observation) | 🎣 *fishing*: you pull something back |
-| **`heregom`** | documented / captured channel | *on record* / *playback* | ⏺️ *record*: what was saved plays back |
-| **`habawam`** | regularity / similar cases | *from the pattern* | 🐾 *paw-prints*: cases left behind |
-| **`hunevem`** | reasoned from clues | *inferred* | 🕵️ *investigate*: you work the clues |
-| **`heraram`** | someone said so | *so they say* / hearsay | 👂 *ear*: you heard it told |
-| **`heherem`** | gut / body knowing | *felt* | ❤️ *heart*: knowing in the body |
-| **`horolom`** | narrative / lore / anecdotal framing | *per the tale* | 📜 *scroll*: a story you tell |
+| Agalan | Use | English | Same root as | Cue |
+|--------|-----|---------|--------------|-----|
+| **`hadezem`** | firsthand / concurrent channel | *live* / *from the scene* | `adezel` *attest* | 👁️‍🗨️: seeing-and-saying while it is in view |
+| **`huvuvum`** | firsthand / reconstructive channel | *from memory* (past observation) | `uvuvul` *fishing* | 🎣: you pull something back |
+| **`heregom`** | documented / captured channel | *on record* / *playback* | `eregol` *record* | ⏺️: what was saved plays back |
+| **`habawam`** | regularity / similar cases | *from the pattern* | `abawal` *paw-prints* | 🐾: cases left behind |
+| **`hunevem`** | reasoned from clues | *inferred* | `unevel` *investigate* | 🕵️: you work the clues |
+| **`heraram`** | someone said so | *so they say* / hearsay | `eraral` *ear* | 👂: you heard it told |
+| **`heherem`** | gut / body knowing | *felt* | `eherel` *heart* | ❤️: knowing in the body |
+| **`horolom`** | narrative / lore / anecdotal framing | *per the tale* | `orolol` *scroll* | 📜: a story you tell |
 
 Pick one evidential **root** for how you know.
 
@@ -235,11 +235,11 @@ Pick one evidential **root** for how you know.
 
 **`hadezem`** is **present observation**: you still have access to the scene. **`huvuvum`** is **past memory of observation**: you pull the episode back, and it may not be what you hoped. Do not stack the two. English *I witnessed* for a remembered event is **`huvuvum`**, not **LIVE**.
 
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| **`hadezem`** | concurrent / in-view observation | *live* / *from the scene* | 👁️‍🗨️ *attest*: seeing-and-saying while it is in view |
-| **`huvuvum`** | reconstructive / recalled observation | *I remember* / *from memory* | 🎣 *fishing*: retrieval from the water |
-| **`heregom`** | documented / captured past | *on record* / *according to…* | ⏺️ *record*: playback archive |
+| Agalan | Use | English | Same root as | Cue |
+|--------|-----|---------|--------------|-----|
+| **`hadezem`** | concurrent / in-view observation | *live* / *from the scene* | `adezel` *attest* | 👁️‍🗨️: seeing-and-saying while it is in view |
+| **`huvuvum`** | reconstructive / recalled observation | *I remember* / *from memory* | `uvuvul` *fishing* | 🎣: retrieval from the water |
+| **`heregom`** | documented / captured past | *on record* / *according to…* | `eregol` *record* | ⏺️: playback archive |
 
 ### Notional (as-if framing)
 <a id="notional"></a>
@@ -262,11 +262,11 @@ English sometimes frames the whole clause as play: *as if*, *for the sake of arg
 
 Beginner already used **-l / -m / -r** hold on **`odoho`**. The same map sits on **`adade`**. **-n** is ordinary [proper](reference-suffix.md#proper-name--n).
 
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| **`hadadem`** | as-if noticed, held lightly (default) | *as if* (soft) | 🎭 *theater*: mask at arm’s length |
-| **`hadadel`** | immersed in the imagined scene | *as if* (fused) | 🎭 *theater*: mask on |
-| **`hadader`** | same as-if and a step back toward bare contact | *as if — and step back* | 🎭 *theater*: mask off |
+| Agalan | Use | English | Same root as | Cue |
+|--------|-----|---------|--------------|-----|
+| **`hadadem`** | as-if noticed, held lightly (default) | *as if* (soft) | `adadel` *theater* | 🎭: mask at arm’s length |
+| **`hadadel`** | immersed in the imagined scene | *as if* (fused) | `adadel` *theater* | 🎭: mask on |
+| **`hadader`** | same as-if and a step back toward bare contact | *as if — and step back* | `adadel` *theater* | 🎭: mask off |
 
 When unsure, prefer **`hadadem`**.
 
@@ -287,29 +287,29 @@ When unsure, prefer **`hadadem`**.
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *dog* | `odogo` | |
-| *walk* | `awala` | |
-| *sleep* | `elebe` | |
-| *sing* | `uzunu` | |
-| *run* | `urunu` | |
-| *write* | `uwuru` | |
-| *commentary* | `odoho` | 💭 *thought*: a balloon over the scene |
-| *live* / *from the scene* | `adeze` | 👁️‍🗨️ *attest*: seeing-and-saying while it is in view |
-| *from memory* (past observation) | `uvuvu` | 🎣 *fishing*: you pull something back |
-| *on record* | `erego` | ⏺️ *record*: playback of what was saved |
-| *from the pattern* | `abawa` | 🐾 *paw-prints*: cases left behind |
-| *inferred* | `uneve` | 🕵️ *investigate*: you work the clues |
-| *so they say* | `erara` | 👂 *ear*: you heard it told |
-| *felt* | `ehere` | ❤️ *heart*: knowing in the body |
-| *per the tale* | `orolo` | 📜 *scroll*: a story you tell |
-| *as if* (**NOTIONAL**) | `adade` | 🎭 *theater*: a stage mask |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *beauty* (name **Uhubun**) | `uhubu` | | |
+| *dog* | `odogo` | | |
+| *walk* | `awala` | | |
+| *sleep* | `elebe` | | |
+| *sing* | `uzunu` | | |
+| *run* | `urunu` | | |
+| *write* | `uwuru` | | |
+| *commentary* | `odoho` | `odohol` *thought* | 💭: a balloon over the scene |
+| *live* / *from the scene* | `adeze` | `adezel` *attest* | 👁️‍🗨️: seeing-and-saying while it is in view |
+| *from memory* (past observation) | `uvuvu` | `uvuvul` *fishing* | 🎣: you pull something back |
+| *on record* | `erego` | `eregol` *record* | ⏺️: playback of what was saved |
+| *from the pattern* | `abawa` | `abawal` *paw-prints* | 🐾: cases left behind |
+| *inferred* | `uneve` | `unevel` *investigate* | 🕵️: you work the clues |
+| *so they say* | `erara` | `eraral` *ear* | 👂: you heard it told |
+| *felt* | `ehere` | `eherel` *heart* | ❤️: knowing in the body |
+| *per the tale* | `orolo` | `orolol` *scroll* | 📜: a story you tell |
+| *as if* (**NOTIONAL**) | `adade` | `adadel` *theater* | 🎭: a stage mask |
 
 #### English → Agalan
 

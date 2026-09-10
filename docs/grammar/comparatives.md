@@ -94,17 +94,17 @@ When English would say *as challenging as*, you are not picking a winner. You ar
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Rank fence plus shared scale `/ɡ/` is the comparison; single-item `zel` is the superlative; `zael` / `zaem` are equative.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *challenging* | `omona` | from *mountain*: hard to climb |
-| *bright* | `udubu` | |
-| *size* / *big* | `ele` | from *elephant*: the huge animal |
-| *happy* (**-m**) | `uzumu` | from *smile*: the face of *happy* |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *beauty* (name **Uhubun**) | `uhubu` | | |
+| *challenging* | `omona` | `omonol` *mountain* | ⛰️: hard to climb |
+| *bright* | `udubu` | | |
+| *size* / *big* | `ele` | `elel` *elephant* | 🐘: the huge animal |
+| *happy* (**-m**) | `uzumu` | `uzumul` *smile* | 😊: the face of *happy* |
 
 #### English → Agalan
 
@@ -279,17 +279,17 @@ English *two meters more challenging* still ranks two people on one quality, and
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Test arity (`oe` / `ue` / standalone / `zer`), distributive **`a`**, and counted measure gaps versus vague `/w/`.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *challenging* | `omona` | from *mountain*: hard to climb |
-| *size* / *big* | `ele` | from *elephant*: the huge animal |
-| *measurement* | `urule` | from *ruler*: a measured length |
-| *happy* (**-m**) | `uzumu` | from *smile*: the face of *happy* |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *beauty* (name **Uhubun**) | `uhubu` | | |
+| *challenging* | `omona` | `omonol` *mountain* | ⛰️: hard to climb |
+| *size* / *big* | `ele` | `elel` *elephant* | 🐘: the huge animal |
+| *measurement* | `urule` | `urulel` *ruler* | 📏: a measured length |
+| *happy* (**-m**) | `uzumu` | `uzumul` *smile* | 😊: the face of *happy* |
 
 #### English → Agalan
 
@@ -441,23 +441,23 @@ Single-item `zazawan zuel gomonam` is *the least challenging* in the group in pl
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. Put the standard in the *than*-conjunct; **`zugobon`** is performance, **`zugoboxrawon`** is Mine.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *sing* | `uzunu` | |
-| *happy* (**-m**) | `uzumu` | from *smile*: the face of *happy* |
-| *challenging* | `omona` | from *mountain*: hard to climb |
-| *clarity* | `agala` | |
-| *draft* | `ebegu` | |
-| *balance* | `oju` | ☯️ *yin-yang*: opposing halves |
-| *routine* (**-m**) | `ahama` | 🐹 *hamster*: on a wheel of *routine* |
-| *speaker* | `ugobo` | 🎤 *microphone*: a live voice |
-| *community* | `ulude` | 👥 *silhouettes*: people together |
-| *expertise* | `alaba` | 🥼 *lab-coat*: specialized work |
-| *everyone* | `ua` | |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *sing* | `uzunu` | | |
+| *happy* (**-m**) | `uzumu` | `uzumul` *smile* | 😊: the face of *happy* |
+| *challenging* | `omona` | `omonol` *mountain* | ⛰️: hard to climb |
+| *clarity* | `agala` | | |
+| *draft* | `ebegu` | | |
+| *balance* | `oju` | `ojul` *yin-yang* | ☯️: opposing halves |
+| *routine* (**-m**) | `ahama` | `ahamal` *hamster* | 🐹: on a wheel of *routine* |
+| *speaker* | `ugobo` | | 🎤: a live voice |
+| *community* | `ulude` | `uludel` *silhouettes* | 👥: people together |
+| *expertise* | `alaba` | `alabal` *lab-coat* | 🥼: specialized work |
+| *everyone* | `ua` | | |
 
 #### English → Agalan
 

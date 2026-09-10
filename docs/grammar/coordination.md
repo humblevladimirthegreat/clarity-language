@@ -594,23 +594,23 @@ An adverb `/h/` before the verb-phrase stretch, or in SHARED after the join, cov
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Sample the decisions this band adds: invert **`ua`**, universals vs *everything but*, SHARED after the join, islands, nesting, and clause **`xan`**.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *dog* | `odogo` | |
-| *cat* | `agada` | |
-| *tea* | `adeda` | |
-| *coffee* | `ogove` | |
-| *water* | `unude` | |
-| *challenging* | `omona` | |
-| *onion* | `onuno` | |
-| *cucumber* | `ugume` | |
-| *apple* | `abele` | |
-| *see* | `eje` | from *perception*: the sense you see with |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *beauty* (name **Uhubun**) | `uhubu` | | |
+| *dog* | `odogo` | | |
+| *cat* | `agada` | | |
+| *tea* | `adeda` | | |
+| *coffee* | `ogove` | | |
+| *water* | `unude` | | |
+| *challenging* | `omona` | | |
+| *onion* | `onuno` | | |
+| *cucumber* | `ugume` | | |
+| *apple* | `abele` | | |
+| *see* | `eje` | `ejel` *eye* | 👁️: the sense you see with |
 | *walk* | `awala` | |
 | *run* | `urunu` | |
 | *sleep* | `elebe` | |

@@ -274,23 +274,23 @@ Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`zahaxre
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. `ROOT x NUM` names a **kind property** (essence, grain, quasi, part-count, order-kind, catalog code, total-null): spelled CV plus the **host** ending.
 
-**Roots used here** (**English** is what you produce; **Cue** is optional memory, not the answer):
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *love* | `olove` | |
-| *friend* | `eberelonogo` | 🪢 *knot* on *person*: a bond that holds |
-| *commitment* | `abene` | 🖊️ *pen*: ink stays on the page |
-| *dialogue* | `ezehe` | 💬 *speech*: talk between people |
-| *adventure* | `omo` | 🚵 *mountain-biking*: a ride off the usual path |
-| *draft* | `ebegu` | ✏️ *pencil*: marks you can still erase |
-| *specimen* | `edudu` | 🧫 *petri-dish*: a sample under study |
-| *fear* | `eveva` | |
-| *score* | `odobo` | 🏆 *trophy*: the counted tally |
-| *see* | `eje` | from *perception*: the sense you see with |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *beauty* (name **Uhubun**) | `uhubu` | | |
+| *love* | `olove` | | |
+| *friend* | `eberelonogo` | | 🪢 on *person*: a bond that holds |
+| *commitment* | `abene` | `abenel` *pen* | 🖊️: ink stays on the page |
+| *dialogue* | `ezehe` | `ezehel` *speech* | 💬: talk between people |
+| *adventure* | `omo` | `omol` *mountain-biking* | 🚵: a ride off the usual path |
+| *draft* | `ebegu` | `ebegul` *pencil* | ✏️: marks you can still erase |
+| *specimen* | `edudu` | `edudul` *petri-dish* | 🧫: a sample under study |
+| *fear* | `eveva` | | |
+| *score* | `odobo` | `odobol` *trophy* | 🏆: the counted tally |
+| *see* | `eje` | `ejel` *eye* | 👁️: the sense you see with |
 | *write* | `uwuru` | |
 
 #### English → Agalan

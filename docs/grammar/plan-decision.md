@@ -25,11 +25,11 @@ Ordinary content stays available (`zoworal` *a map*; `voworal` *to plan*). Leave
 
 On **`owora`**, **-l / -m / -r** say **how fully drawn** the intention is: direction only, steps filled in, or a backup path if the first course fails. **-n** is ordinary [proper](reference-suffix.md#proper-name--n). When you are unsure how detailed the course is, prefer **`howoram`**.
 
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| **`howoram`** | **sketch** (soft default) | direction only: *means to …* without steps | 🗺️ open sketch: the route is drawn, not the stops |
-| **`howoral`** | **itinerary** | steps filled in: *how* is on the map | 🗺️ locked itinerary: every stop is on the map |
-| **`howorar`** | **fork** | backup path: *if not A, then B* | 🗺️ fork: another path if the first fails |
+| Agalan | Use | English | Same root as | Cue |
+|--------|-----|---------|--------------|-----|
+| **`howoram`** | **sketch** (soft default) | direction only: *means to …* without steps | `oworal` *world-map* | 🗺️: the route is drawn, not the stops |
+| **`howoral`** | **itinerary** | steps filled in: *how* is on the map | `oworal` *world-map* | 🗺️: every stop is on the map |
+| **`howorar`** | **fork** | backup path: *if not A, then B* | `oworal` *world-map* | 🗺️: another path if the first fails |
 
 > `zululon howoral vawalal.`
 >
@@ -61,21 +61,21 @@ To say **what will happen** in the world (rain, a result), not what someone mean
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Pick **PLAN** (`owora` + map-resolution ending) or **PREDICT** (`elezo`). English *will* is not one Agalan form.
 
-**Roots used here** (**English** is what you produce; **Cue** is optional memory, not the answer):
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| **PLAN** | `owora` | 🗺️ *world-map*: a map charts a course you mean to take |
-| **PREDICT** | `elezo` | 🔭 *telescope*: looks ahead at a distance |
-| *walk* | `awala` | |
-| *write* | `uwuru` | |
-| *sing* | `uzunu` | |
-| *run* | `urunu` | |
-| *sleep* | `elebe` | |
-| *rain* | `anunu` | |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *beauty* (name **Uhubun**) | `uhubu` | | |
+| **PLAN** | `owora` | `oworal` *world-map* | 🗺️: a map charts a course you mean to take |
+| **PREDICT** | `elezo` | `elezol` *telescope* | 🔭: looks ahead at a distance |
+| *walk* | `awala` | | |
+| *write* | `uwuru` | | |
+| *sing* | `uzunu` | | |
+| *run* | `urunu` | | |
+| *sleep* | `elebe` | | |
+| *rain* | `anunu` | | |
 
 #### English → Agalan
 
@@ -209,22 +209,22 @@ When you mark **how** you forecast (a usual pattern, an inference, and so on), k
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Pick **DECISION** (`egege` + changeability), stack evidentiality on **PREDICT**, or stack **PLAN** with **DECISION**.
 
-**Roots used here** (**English** is what you produce; **Cue** is optional memory, not the answer):
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| **PLAN** | `owora` | 🗺️ *world-map*: a map charts a course you mean to take |
-| **PREDICT** | `elezo` | 🔭 *telescope*: looks ahead at a distance |
-| **DECISION** | `egege` | ✅ *check*: a checkmark confirms a pick |
-| *walk* | `awala` | |
-| *write* | `uwuru` | |
-| *sing* | `uzunu` | |
-| *sleep* | `elebe` | |
-| *rain* | `anunu` | |
-| (*pattern*, evidential) | `abawa` | 🐾 *paw-prints*: a trail of what usually happens |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *beauty* (name **Uhubun**) | `uhubu` | | |
+| **PLAN** | `owora` | `oworal` *world-map* | 🗺️: a map charts a course you mean to take |
+| **PREDICT** | `elezo` | `elezol` *telescope* | 🔭: looks ahead at a distance |
+| **DECISION** | `egege` | `egegel` *check* | ✅: a checkmark confirms a pick |
+| *walk* | `awala` | | |
+| *write* | `uwuru` | | |
+| *sing* | `uzunu` | | |
+| *sleep* | `elebe` | | |
+| *rain* | `anunu` | | |
+| (*pattern*, evidential) | `abawa` | `abawal` *paw-prints* | 🐾: a trail of what usually happens |
 
 #### English → Agalan
 

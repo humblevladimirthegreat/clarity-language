@@ -66,21 +66,21 @@ English *can't* does not say whether the inability is for this moment, still cha
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Tag **can** / **can’t** on an activity or property host; one item is a plain event with no can / can’t tag.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *dog* | `odogo` | |
-| *sing* | `uzunu` | |
-| *walk* | `awala` | |
-| *run* | `urunu` | |
-| *write* | `uwuru` | |
-| *see* | `eje` | from *perception*: the sense you see with |
-| *sleep* | `elebe` | |
-| *sit* | `aju` | |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *beauty* (name **Uhubun**) | `uhubu` | | |
+| *dog* | `odogo` | | |
+| *sing* | `uzunu` | | |
+| *walk* | `awala` | | |
+| *run* | `urunu` | | |
+| *write* | `uwuru` | | |
+| *see* | `eje` | `ejel` *eye* | 👁️: the sense you see with |
+| *sleep* | `elebe` | | |
+| *sit* | `aju` | | |
 
 #### English → Agalan
 
@@ -204,15 +204,15 @@ Sometimes English *can* / *can’t* is not about one named activity or property:
 
 Beginner already used the stance vowels on a host. On **`egera`** they are the same map. Bare **`egera`** (no **`x`**) names ability as a topic only (ordinary [reference-suffix](reference-suffix.md)). On **`egera` + stance**, **-m** is capacity as a metaphor; **-l** is a literal bowl / cereal frame.
 
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| **`hegera` + stance** | *can* / *can’t* over the clause | clause-wide / hostless | 🥣 *cereal*: bowl for the clause |
-| **`wegera` + stance** | *can* / *can’t* on the preceding `/ɡ/` | that property | 🥣 *cereal*: bowl for that property |
-| bare **`hegeral`** / **`wegeral`** (no `x`) | names ability only | *ability* (topic) | no stance vowel |
-| **`xa`** | tags capable | *can* | **a** ≈ add |
-| **`xe`** | tags can’t for this moment | *can’t right now* | **e** ≈ order |
-| **`xo`** | tags can’t that may change (or unknown grain) | *can’t (yet / open)* | **o** ≈ one (one open *can’t*) |
-| **`xu`** | tags can’t as fixed as you can tell | *can’t (fixed)* | **u** ≈ undo |
+| Agalan | Use | English | Same root as | Cue |
+|--------|-----|---------|--------------|-----|
+| **`hegera` + stance** | *can* / *can’t* over the clause | clause-wide / hostless | `egeral` *cereal* | 🥣: bowl for the clause |
+| **`wegera` + stance** | *can* / *can’t* on the preceding `/ɡ/` | that property | `egeral` *cereal* | 🥣: bowl for that property |
+| bare **`hegeral`** / **`wegeral`** (no `x`) | names ability only | *ability* (topic) | | no stance vowel |
+| **`xa`** | tags capable | *can* | | **a** ≈ add |
+| **`xe`** | tags can’t for this moment | *can’t right now* | | **e** ≈ order |
+| **`xo`** | tags can’t that may change (or unknown grain) | *can’t (yet / open)* | | **o** ≈ one (one open *can’t*) |
+| **`xu`** | tags can’t as fixed as you can tell | *can’t (fixed)* | | **u** ≈ undo |
 
 Ordinary `zegeral` still means *cereal* / *a capacity* (content word, no stance).
 
@@ -225,16 +225,16 @@ Ordinary `zegeral` still means *cereal* / *a capacity* (content word, no stance)
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Prefer a host when one activity root fits; use **`egera`** when there is no single host.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *size* / *big* (**-m**) | `ele` | from *elephant*: the huge animal |
-| *sing* | `uzunu` | |
-| *capacity* (**ABIL**) | `egera` | 🥣 *cereal*: a bowl of what you can do |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *beauty* (name **Uhubun**) | `uhubu` | | |
+| *size* / *big* (**-m**) | `ele` | `elel` *elephant* | 🐘: the huge animal |
+| *sing* | `uzunu` | | |
+| *capacity* (**ABIL**) | `egera` | `egeral` *cereal* | 🥣: a bowl of what you can do |
 
 #### English → Agalan
 

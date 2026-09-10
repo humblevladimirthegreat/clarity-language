@@ -102,16 +102,16 @@ Attach **-x** only **after** the [reference suffix](reference-suffix.md), never 
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *cat* | `agada` | |
-| *dog* | `odogo` | |
-| *happy* (**-m**) | `uzumu` | from *smile*: the face of *happy* |
-| *big* (**-m**) | `ele` | from *elephant*: the huge animal |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *cat* | `agada` | | |
+| *dog* | `odogo` | | |
+| *happy* (**-m**) | `uzumu` | `uzumul` *smile* | 😊: the face of *happy* |
+| *big* (**-m**) | `ele` | `elel` *elephant* | 🐘: the huge animal |
 | *walk* | `awala` | |
 | *sit* | `aju` | |
 | *run* | `urunu` | |
@@ -351,17 +351,17 @@ Beginner already used **-x** on nouns and person-role specials. The rest of the 
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here:**
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *file-box* | `ulebo` | |
-| *toolbox* | `olozo` | |
-| *heaviness* (**-m**) | `araga` | from *rock*: hard to lift |
-| *teamwork* | `ahada` | |
-| *vastness* (**-m**) | `umu` | from *milky way*: how huge the sky looks |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *file-box* | `ulebo` | | |
+| *toolbox* | `olozo` | | |
+| *heaviness* (**-m**) | `araga` | `aragal` *rock* | 🪨: hard to lift |
+| *teamwork* | `ahada` | | |
+| *vastness* (**-m**) | `umu` | `umul` *milky way* | 🌌: how huge the sky looks |
 | *cat* | `agada` | |
 | *sing* | `uzunu` | |
 | *walk* | `awala` | |
