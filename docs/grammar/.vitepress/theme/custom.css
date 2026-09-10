@@ -45,3 +45,38 @@
   font-weight: 500;
   text-decoration: none;
 }
+
+.vp-doc table.roots-used-table th[aria-sort] {
+  white-space: nowrap;
+}
+
+.vp-doc table.roots-used-table .roots-sort-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  font-weight: inherit;
+  cursor: pointer;
+}
+
+.vp-doc table.roots-used-table .roots-sort-btn::after {
+  content: '↕';
+  font-size: 0.75em;
+  opacity: 0.45;
+  font-weight: 400;
+}
+
+.vp-doc table.roots-used-table th[aria-sort='ascending'] .roots-sort-btn::after {
+  content: '↑';
+  opacity: 1;
+}
+
+.vp-doc table.roots-used-table th[aria-sort='descending'] .roots-sort-btn::after {
+  content: '↓';
+  opacity: 1;
+}
