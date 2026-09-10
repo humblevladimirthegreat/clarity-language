@@ -63,7 +63,7 @@ Inventory tables on grammar pages use these kinds of cell:
 | **Agalan** | The word or letter you write (a citation, or the in-clause spelling when a role letter is part of that English). |
 | **Use** | What that form **does** (subject, question, *because* as a clause glue). This is the rule. |
 | **English** | What you would **say**: the sense to produce or understand. |
-| **Same root as** | The everyday kind of that same root, written as a citation (**-l**): `urugul` *brick* when the row’s English is *because*; `ejel` *eye* when the row’s English is *see* as `vejel`. Not every table has this column. |
+| **Same root as** | The everyday kind of that same root, written as a citation (**-l**): `urugul` *brick* when the row’s English is *because*; `ejel` *eye* when the row’s English is *see* as `vejel`; same idea for *sit* / *tell* / *write*, and for linkers and adverbs (*therefore* as `xezazal` from *east*, *haste* as `hadazam` from *dash*). Not every table has this column. |
 | **Cue** | A hook that helps you **remember** the letter, vowel, or picture that maps to that row. |
 
 **Cue** is an optional memory helper. `≈` in a cue means “sounds like.” When **Same root as** is there, **Cue** does not repeat the everyday English; it only says why that picture maps. 

@@ -150,8 +150,8 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 | *grace* (name **Azawan**) | `azawan` | | |
 | *courage* (name **Ululon**) | `ululon` | | |
 | *beauty* (name **Uhubun**) | `uhubun` | | |
-| *tell* | `ezehel` | | |
-| *write* | `uwurul` | | |
+| *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
+| *write* | `vuwurul` | `uwurul` *writing-hand* | ✍️: making the words |
 | *sing* | `uzunul` | | |
 | *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
 | *walk* | `awalal` | | |
@@ -443,7 +443,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 | *grace* (name **Azawan**) | `azawan` | | |
 | *courage* (name **Ululon**) | `ululon` | | |
 | *beauty* (name **Uhubun**) | `uhubun` | | |
-| *tell* | `ezehel` | | |
+| *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
 | *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
 | *run* | `urunul` | | |
 | *red* | `aredel` | | |
@@ -676,7 +676,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 | *grace* (name **Azawan**) | `azawan` | | |
 | *courage* (name **Ululon**) | `ululon` | | |
 | *beauty* (name **Uhubun**) | `uhubun` | | |
-| *tell* | `ezehel` | | |
+| *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
 | *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
 
 #### English → Agalan

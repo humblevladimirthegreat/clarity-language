@@ -94,7 +94,8 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 | *beauty* (name **Uhubun**) | `uhubun` | | |
 | *competence* | `olozol` | | |
 | *relatedness* | `onogol` | | |
-| *dialogue* / *tell* | `ezehel` | | |
+| *dialogue* | `ezehel` | `ezehel` *speech* | 💬: talk between people |
+| *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
 | *division* | `ezawal` | | |
 | *draft* | `ebegul` | | |
 | *memo* | `ememol` | | |
@@ -253,7 +254,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 | *walk* | `awalal` | | |
 | *sing* | `uzunul` | | |
 | *sleep* | `elebel` | | |
-| *sit* | `ajul` | | |
+| *sit* | `vajul` | `ajul` *chair* | 🪑: taking a seat |
 | *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
 | *run* | `urunul` | | |
 | evidential *pattern* | `abawam` | | |

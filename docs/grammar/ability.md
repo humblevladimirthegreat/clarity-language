@@ -77,10 +77,10 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 | *sing* | `uzunul` | | |
 | *walk* | `awalal` | | |
 | *run* | `urunul` | | |
-| *write* | `uwurul` | | |
+| *write* | `vuwurul` | `uwurul` *writing-hand* | ✍️: making the words |
 | *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
 | *sleep* | `elebel` | | |
-| *sit* | `ajul` | | |
+| *sit* | `vajul` | `ajul` *chair* | 🪑: taking a seat |
 
 #### English → Agalan
 

@@ -164,7 +164,7 @@ Do **not** skip productive syntax pages (core, coordination, questions, values, 
 
 Default people: [house cast](grammar-docs.md#house-cast) — `zazawan` / `zululon` / `zuhubun` (`azawa` / `ululo` / `uhubu` + **-n**). Morph: `z-Azawan` / `z-Ululon` / `z-Uhubun`.
 
-Reuse this bank unless this stage already taught a different published root. Do not mine the lexicon for variety. Tokens here are **stems for matching** (path allowlist / leak checks). The learner-facing **Roots used here** table uses [citations or the inflected form the row teaches](grammar-docs.md#citation-in-tables), not these stems as Agalan cells. Do not copy `(**-m**)` from this **Sense** column into learner **English**. When drill English is *see*, the Agalan cell is `vejel` and **Same root as** is `` `ejel` *eye* ``.
+Reuse this bank unless this stage already taught a different published root. Do not mine the lexicon for variety. Tokens here are **stems for matching** (path allowlist / leak checks). The learner-facing **Roots used here** table uses [citations or the inflected form the row teaches](grammar-docs.md#citation-in-tables), not these stems as Agalan cells. Do not copy `(**-m**)` from this **Sense** column into learner **English**. When drill English is not the citation kind, the Agalan cell is the in-clause word: *see* → `vejel` / `` `ejel` *eye* ``; *sit* → `vajul` / `` `ajul` *chair* ``; *tell* → `vezehel` / `` `ezehel` *speech* ``; *write* → `vuwurul` / `` `uwurul` *writing-hand* ``; *therefore* → `xezazal` / `` `ezazal` *east* ``; *however* → `xezebal`; *although* → `hezebam`; *meanwhile* → `xanelol`; *haste* → `hadazam` / `` `adazal` *dash* ``; *quietude* → `howom`; *volume* → `wegelom`; *topic* → `hozal`. *because* / *inside* already list the `/h/` word (`hurugum`, `hogorem`). Do not inflect a row whose English is still the citation kind (`*dog*` stays `odogol`; *next clause* stays `adorol`).
 
 | Root | Sense in drills |
 |------|-----------------|
@@ -181,12 +181,12 @@ Reuse this bank unless this stage already taught a different published root. Do 
 | `awala` | *walk* |
 | `urunu` | *run* |
 | `elebe` | *sleep* |
-| `ezehe` | *tell* |
-| `uwuru` | *write* |
+| `ezehe` | *tell* (`vezehel`; citation *speech*) |
+| `uwuru` | *write* (`vuwurul`; citation *writing-hand*) |
 | `uzunu` | *sing* |
 | `eje` | *see* (`vejel`; citation *eye*) |
-| `aju` | *sit* |
-| `adaza` | *haste* |
+| `aju` | *sit* (`vajul`; citation *chair*) |
+| `adaza` | *haste* (`hadazam`; citation *dash*) |
 | `adoro` | *next clause* |
 | `urugu` | *because* (**-m** on `/h/`) |
 

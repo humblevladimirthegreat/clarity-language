@@ -119,8 +119,8 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 | *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
 | *rain* | `anunul` | | |
 | *night* | `unugul` | | |
-| *haste* | `adazam` | `adazal` *dash* | 💨: a burst of speed |
-| *quietude* | `owolom` | `owol` *owl* | 🦉: the quiet bird |
+| *haste* | `hadazam` | `adazal` *dash* | 💨: a burst of speed |
+| *quietude* | `howom` | `owol` *owl* | 🦉: the quiet bird |
 
 #### English → Agalan
 
@@ -317,7 +317,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 | *run* | `urunul` | | |
 | *sing* | `uzunul` | | |
 | *sleep* | `elebel` | | |
-| *write* | `uwurul` | | |
+| *write* | `vuwurul` | `uwurul` *writing-hand* | ✍️: making the words |
 | *rain* | `anunul` | | |
 | *snow* | `ozowol` | | |
 | *night* | `unugul` | | |

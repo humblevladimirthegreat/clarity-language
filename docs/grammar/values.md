@@ -160,7 +160,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 | *book* | `abogol` | | |
 | *house* | `ohohul` | | |
 | *walk* | `awalal` | | |
-| *tell* | `ezehel` | | |
+| *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
 | *sing* | `uzunul` | | |
 | *gift* | `awaral` | | |
 | *gathering* | `azegel` | | |
@@ -343,10 +343,10 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 | *book* | `abogol` | | |
 | *house* | `ohohul` | | |
 | *walk* | `awalal` | | |
-| *tell* | `ezehel` | | |
+| *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
 | *sing* | `uzunul` | | |
-| *write* | `uwurul` | | |
-| *sit* | `ajul` | | |
+| *write* | `vuwurul` | `uwurul` *writing-hand* | ✍️: making the words |
+| *sit* | `vajul` | `ajul` *chair* | 🪑: taking a seat |
 | *gift* | `awaral` | | |
 | *gathering* | `azegel` | | |
 | *autonomy* | `alodol` | `alodol` *ballot-box* | 🗳️: voting is choosing for yourself |

@@ -285,13 +285,14 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 | *friend* | `eberelonogol` | | 🪢 on *person*: a bond that holds |
 | *commitment* | `abenel` | `abenel` *pen* | 🖊️: ink stays on the page |
 | *dialogue* | `ezehel` | `ezehel` *speech* | 💬: talk between people |
+| *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
 | *adventure* | `omol` | `omol` *mountain-biking* | 🚵: a ride off the usual path |
 | *draft* | `ebegul` | `ebegul` *pencil* | ✏️: marks you can still erase |
 | *specimen* | `edudul` | `edudul` *petri-dish* | 🧫: a sample under study |
 | *fear* | `eveval` | | |
 | *score* | `odobol` | `odobol` *trophy* | 🏆: the counted tally |
 | *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
-| *write* | `uwurul` | |
+| *write* | `vuwurul` | `uwurul` *writing-hand* | ✍️: making the words |
 
 #### English → Agalan
 

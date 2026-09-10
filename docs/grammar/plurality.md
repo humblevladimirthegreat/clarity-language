@@ -113,7 +113,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 | *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
 | *big* | `elem` | `elel` *elephant* | 🐘: the huge animal |
 | *walk* | `awalal` | |
-| *sit* | `ajul` | |
+| *sit* | `vajul` | `ajul` *chair* | 🪑: taking a seat |
 | *run* | `urunul` | |
 | *sleep* | `elebel` | |
 | *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |

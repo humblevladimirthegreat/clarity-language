@@ -299,7 +299,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 | *sleep* | `elebel` | | |
 | *sing* | `uzunul` | | |
 | *run* | `urunul` | | |
-| *write* | `uwurul` | | |
+| *write* | `vuwurul` | `uwurul` *writing-hand* | ✍️: making the words |
 | *commentary* | `hodohom` | `odohol` *thought* | 💭: a balloon over the scene |
 | *live* / *from the scene* | `hadezem` | `adezel` *attest* | 👁️‍🗨️: seeing-and-saying while it is in view |
 | *from memory* (past observation) | `huvuvum` | `uvuvul` *fishing* | 🎣: you pull something back |

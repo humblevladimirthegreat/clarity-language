@@ -110,11 +110,11 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 | *dragon* | `adaral` | | |
 | *book* | `abogol` | | |
 | *walk* | `awalal` | | |
-| *sit* | `ajul` | | |
+| *sit* | `vajul` | `ajul` *chair* | 🪑: taking a seat |
 | *sleep* | `elebel` | | |
 | *run* | `urunul` | | |
 | *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
-| *tell* | `ezehel` | | |
+| *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
 | *depart* | `ebarul` | | |
 | *big* | `elem` | `elel` *elephant* | 🐘: the huge animal |
 | *speaker* | `ugobon` | `ugobol` *microphone* | 🎤: the live voice of the person talking |
@@ -302,10 +302,10 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 | *walk* | `awalal` | | |
 | *run* | `urunul` | | |
 | *sleep* | `elebel` | | |
-| *sit* | `ajul` | | |
+| *sit* | `vajul` | `ajul` *chair* | 🪑: taking a seat |
 | *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
 | *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
-| *haste* | `adazal` | `adazal` *dash* | 💨: a burst of speed |
+| *haste* | `hadazam` | `adazal` *dash* | 💨: a burst of speed |
 | *interlocutors* | `ahan` | `ahal` *handshake* | 🤝: sharing the floor together |
 | *speaker* | `ugobon` | `ugobol` *microphone* | 🎤: the live voice of the person talking |
 | *listener* | `edonen` | `edonel` *headphones* | 🎧: the one receiving the sound |
@@ -505,11 +505,11 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 | *dog* | `odogol` | | |
 | *walk* | `awalal` | | |
 | *run* | `urunul` | | |
-| *sit* | `ajul` | | |
+| *sit* | `vajul` | `ajul` *chair* | 🪑: taking a seat |
 | *sleep* | `elebel` | | |
 | *big* | `elem` | `elel` *elephant* | 🐘: the huge animal |
 | *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
-| *haste* | `adazal` | `adazal` *dash* | 💨: a burst of speed |
+| *haste* | `hadazam` | `adazal` *dash* | 💨: a burst of speed |
 
 #### English → Agalan
 

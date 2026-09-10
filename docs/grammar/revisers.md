@@ -337,7 +337,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 | *calm* | `erelum` | `erelul` *relief* | 😌: the ease after tension |
 | *walk* | `awalal` | | |
 | *run* | `urunul` | | |
-| *therefore* | `ezazal` | `ezazal` *east* | ➡️: the sun’s path, so the talk moves on |
+| *therefore* | `xezazal` | `ezazal` *east* | ➡️: the sun’s path, so the talk moves on |
 
 #### English → Agalan
 

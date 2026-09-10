@@ -234,16 +234,16 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *walk* | `awalal` | | |
 | *run* | `urunul` | | |
 | *sleep* | `elebel` | | |
-| *tell* | `ezehel` | | |
-| *write* | `uwurul` | | |
+| *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
+| *write* | `vuwurul` | `uwurul` *writing-hand* | ✍️: making the words |
 | *sing* | `uzunul` | | |
 | *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
-| *sit* | `ajul` | | |
-| *haste* | `adazal` | `adazal` *dash* | 💨: a burst of speed |
-| *quietude* | `owom` | `owol` *owl* | 🦉: the quiet bird |
+| *sit* | `vajul` | `ajul` *chair* | 🪑: taking a seat |
+| *haste* | `hadazam` | `adazal` *dash* | 💨: a burst of speed |
+| *quietude* | `howom` | `owol` *owl* | 🦉: the quiet bird |
 | *next clause* | `adorol` | `adorol` *door* | 🚪: the next sentence walks through |
 | *because* | `hurugum` | `urugul` *brick* | 🧱: the cause is what the result sits on |
-| *therefore* | `ezazal` | `ezazal` *east* | ➡️: the sun’s path, so the talk moves on |
+| *therefore* | `xezazal` | `ezazal` *east* | ➡️: the sun’s path, so the talk moves on |
 
 #### English → Agalan
 
@@ -538,12 +538,13 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *sleep* | `elebel` | | |
 | *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
 | *sing* | `uzunul` | | |
-| *sit* | `ajul` | | |
-| *volume* | `egelom` | `egelol` *speaker-low* | 🔈: how loud |
-| *topic* | `ozal` | `ozal` *hash* | #️⃣: a heading mark |
-| *therefore* | `ezazal` | `ezazal` *east* | ➡️: the sun’s path, so the talk moves on |
-| *however* / *although* | `ezebal` | `ezebal` *zebra* | 🦓: two stripes, still one animal |
-| *meanwhile* | `anelol` | `anelol` *mantel-clock* | 🕰️: time passing beside the last claim |
+| *sit* | `vajul` | `ajul` *chair* | 🪑: taking a seat |
+| *volume* | `wegelom` | `egelol` *speaker-low* | 🔈: how loud |
+| *topic* | `hozal` | `ozal` *hash* | #️⃣: a heading mark |
+| *therefore* | `xezazal` | `ezazal` *east* | ➡️: the sun’s path, so the talk moves on |
+| *however* | `xezebal` | `ezebal` *zebra* | 🦓: two stripes, still one animal |
+| *although* | `hezebam` | `ezebal` *zebra* | 🦓: two stripes, still one animal |
+| *meanwhile* | `xanelol` | `anelol` *mantel-clock* | 🕰️: time passing beside the last claim |
 | *next clause* | `adorol` | `adorol` *door* | 🚪: the next sentence walks through |
 | *because* | `hurugum` | `urugul` *brick* | 🧱: the cause is what the result sits on |
 
