@@ -235,7 +235,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *run* | `urunul` | | |
 | *sleep* | `elebel` | | |
 | *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
-| *write* | `vuwurul` | `uwurul` *writing-hand* | ✍️: making the words |
+| *write* | `uwurul` | | |
 | *sing* | `uzunul` | | |
 | *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
 | *sit* | `vajul` | `ajul` *chair* | 🪑: taking a seat |

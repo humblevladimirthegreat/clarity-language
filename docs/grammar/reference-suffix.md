@@ -285,7 +285,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 | *run* | `urunul` | | |
 | *sing* | `uzunul` | | |
 | *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
-| *write* | `vuwurul` | `uwurul` *writing-hand* | ✍️: making the words |
+| *write* | `uwurul` | | |
 | *haste* | `hadazam` | `adazal` *dash* | 💨: a burst of speed |
 | (name **Odunaxalanen**) | `zodunaxalanen` | |
 | (label **Sushi-Coffee**) | `zuzuzuxogoven` | |

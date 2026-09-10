@@ -345,7 +345,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 | *walk* | `awalal` | | |
 | *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
 | *sing* | `uzunul` | | |
-| *write* | `vuwurul` | `uwurul` *writing-hand* | ✍️: making the words |
+| *write* | `uwurul` | | |
 | *sit* | `vajul` | `ajul` *chair* | 🪑: taking a seat |
 | *gift* | `awaral` | | |
 | *gathering* | `azegel` | | |

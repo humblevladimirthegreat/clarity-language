@@ -101,7 +101,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 | *book* | `abogol` | | |
 | *house* | `ohohul` | | |
 | *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
-| *write* | `vuwurul` | `uwurul` *writing-hand* | ✍️: making the words |
+| *write* | `uwurul` | | |
 
 #### English → Agalan
 

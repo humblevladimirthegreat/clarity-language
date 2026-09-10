@@ -292,7 +292,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 | *fear* | `eveval` | | |
 | *score* | `odobol` | `odobol` *trophy* | 🏆: the counted tally |
 | *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
-| *write* | `vuwurul` | `uwurul` *writing-hand* | ✍️: making the words |
+| *write* | `uwurul` | | |
 
 #### English → Agalan
 

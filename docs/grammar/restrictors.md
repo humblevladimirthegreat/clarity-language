@@ -317,7 +317,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 | *run* | `urunul` | | |
 | *sing* | `uzunul` | | |
 | *sleep* | `elebel` | | |
-| *write* | `vuwurul` | `uwurul` *writing-hand* | ✍️: making the words |
+| *write* | `uwurul` | | |
 | *rain* | `anunul` | | |
 | *snow* | `ozowol` | | |
 | *night* | `unugul` | | |

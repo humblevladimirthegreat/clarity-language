@@ -151,7 +151,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 | *courage* (name **Ululon**) | `ululon` | | |
 | *beauty* (name **Uhubun**) | `uhubun` | | |
 | *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
-| *write* | `vuwurul` | `uwurul` *writing-hand* | ✍️: making the words |
+| *write* | `uwurul` | | |
 | *sing* | `uzunul` | | |
 | *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
 | *walk* | `awalal` | | |

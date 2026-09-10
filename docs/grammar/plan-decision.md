@@ -71,7 +71,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 | **PLAN** | `howoram` | `oworal` *world-map* | 🗺️: a map charts a course you mean to take |
 | **PREDICT** | `helezom` | `elezol` *telescope* | 🔭: looks ahead at a distance |
 | *walk* | `awalal` | | |
-| *write* | `vuwurul` | `uwurul` *writing-hand* | ✍️: making the words |
+| *write* | `uwurul` | | |
 | *sing* | `uzunul` | | |
 | *run* | `urunul` | | |
 | *sleep* | `elebel` | | |
@@ -220,7 +220,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 | **PREDICT** | `helezom` | `elezol` *telescope* | 🔭: looks ahead at a distance |
 | **DECISION** | `hegegem` | `egegel` *check* | ✅: a checkmark confirms a pick |
 | *walk* | `awalal` | | |
-| *write* | `vuwurul` | `uwurul` *writing-hand* | ✍️: making the words |
+| *write* | `uwurul` | | |
 | *sing* | `uzunul` | | |
 | *sleep* | `elebel` | | |
 | *rain* | `anunul` | | |
