@@ -256,6 +256,7 @@ Learner tables use these headers (omit a column when every cell would be empty o
 | **Agalan** | yes | The spelling (word, letter, or pattern). |
 | **Use** | yes | What the form **does** in the clause (subject, command, continue). Not a pun. |
 | **English** | yes | English the learner may **say or produce** (sense or free English). Not a pun. |
+| **Same root as** | no | The everyday kind of that root as a [citation](../grammar/reference-suffix.md) (**-l**): `` `urugul` *brick* ``. Use when **English** is a published metaphor or a closed overlay of a content root, so the picture in **Cue** is licensed. Omit the column when every row is a letter, vowel-series, punctuation, or other non-lexicon cue. Empty cells are fine in a mixed drill bank. |
 | **Cue** | no | Recall only: **why** the token maps. Cover this column: the rest must still be the language. ([rubric](#cue-rubric)) |
 
 **Use** and **Cue** must not be the same string. If they would be (`add` / *add*), unpack **Use** (*hold / inventory*) and keep the slogan in **Cue**.
@@ -269,14 +270,14 @@ A cue is a **bridge**: one reason the visible token (letter, vowel, emoji) maps 
 
 | Test | Pass | Fail |
 |------|------|------|
-| **Cover** | Hide **Cue**. **Agalan** + **Use** / **English** still teach the language. | The pun is the only definition |
+| **Cover** | Hide **Cue**. **Agalan** + **Use** / **English** (and **Same root as**, when present) still teach the language. | The pun is the only definition |
 | **Bridge** | Hide the emoji, the *literal*, and the letter being punned. What remains still says *why* the token maps to this row. | 🧱 *brick* — leftover is the picture’s name |
 | **Not a caption** | Cue ≠ Unicode/CLDR name, ≠ **Agalan** spelled in English, ≠ `from *smile*` with no why | *doorway*, *zebra*, *timer* alone |
 | **Not the answer** | Cue is not a synonym of **English** / **Use** | *because* restated as *cause* / *foundation* as a second gloss cell |
 | **One hop** | Token → **one** reason → the row | `brick → foundation → because` as three English labels |
 | **Short** | One clause after the token | A second slogan system |
 
-Scene shape: `{emoji} *{literal}*: {why that evokes this row}`. The *literal* is the lexicon **from**; the clause after the colon is the cue proper.
+Scene shape: `{emoji} *{literal}*: {why that evokes this row}` when there is no **Same root as** column. The *literal* is the lexicon **from**; the clause after the colon is the cue proper. When **Same root as** already names the citation and the *literal*, **Cue** is `{emoji}: {why}` — do not repeat *brick* in **Cue**.
 
 Letter / series: `{letter} ≈ {sound or series slogan} ({why that maps})`. `**d** ≈ done to` passes because *done to* is a **sound** bridge to *acted on*, not a caption of `d`. `**v** ≈ verb` fails unless the leftover explains the coincidence (*the English word for the job*).
 
@@ -287,18 +288,18 @@ Letter / series: `{letter} ≈ {sound or series slogan} ({why that maps})`. `**d
 | Kind | What it is | Where it goes |
 |------|-----------|----------------|
 | Letter / series | Pun on the spelling (`**d** ≈ done to`, **`a`** *add*) plus why it maps | **Cue** only. Never **Use** or **English**. Linker is **`≈`** (“sounds like”), never `=` or `→`. |
-| Scene | Published emoji + literal that licenses **-m**, then why that scene evokes the sense | **English** = metaphorical sense (*happy*, *because*). **Cue** = `emoji *literal*: why` |
+| Scene | Published emoji + literal that licenses **-m**, then why that scene evokes the sense | **English** = metaphorical sense (*happy*, *because*). **Same root as** = citation **-l** of that picture (`uzumul` *smile*). **Cue** = `emoji: why` (or `emoji *literal*: why` if the table has no **Same root as** column) |
 
-A lexicon path is a real **-l** / **-m** choice; the *literal* English is still not what drills ask for. Write `*happy* (**-m**)` in **English** and `from *smile*: the face of *happy*` in **Cue** — never `smile → *happy*` as the only English.
+A lexicon path is a real **-l** / **-m** choice; the *literal* English is still not what drills ask for. Write `*happy* (**-m**)` in **English**, `` `uzumul` *smile* `` in **Same root as**, and `😊: the face of *happy*` (or `from *smile*: the face of *happy*` when the table has no **Same root as** column) in **Cue** — never `smile → *happy*` as the only English.
 
-Inline after the rule sentence: `(cue: …)`. Worked examples stay Agalan / morph / quoted free English ([example block](glosses.md#example-block)) — no cue line. Translation-practice answers are Agalan or loose English only; the root bank may add **Cue** beside **English · Agalan**.
+Inline after the rule sentence: `(cue: …)`. Worked examples stay Agalan / morph / quoted free English ([example block](glosses.md#example-block)) — no cue line. Translation-practice answers are Agalan or loose English only; the root bank may add **Same root as** and **Cue** beside **English · Agalan**.
 
 ### When to state a scene cue
 <a id="when-to-state-a-scene-cue"></a>
 
 A **scene** cue (`emoji *literal*: why`) is for remembering a published picture. State it only when that picture is doing **grammar** work, not when the page is merely using a dictionary metaphor.
 
-**State it** on a **closed overlay**: a fixed special reading under one part of speech (COMMENT, SAME, CAUSE, ABIL, plan / DECISION, evidentials, NOTIONAL, emotion ACT / LOCUS, clause-pole **`adoro`**, special pronouns, universality moods, and the same class). The learner needs the scene to remember why *this* published root hosts that job. Put `(cue: …)` on the **rule sentence** (job, shape, consequence first), or in the inventory **Cue** column. One line that the same spelling is still ordinary content under other letters is fine.
+**State it** on a **closed overlay**: a fixed special reading under one part of speech (COMMENT, SAME, CAUSE, ABIL, plan / DECISION, evidentials, NOTIONAL, emotion ACT / LOCUS, clause-pole **`adoro`**, special pronouns, universality moods, and the same class). The learner needs the scene to remember why *this* published root hosts that job. Put `(cue: …)` on the **rule sentence** (job, shape, consequence first), or in the inventory **Cue** column with **Same root as** naming the **-l** citation. One line that the same spelling is still ordinary content under other letters is fine.
 
 **Do not state it** when the example is ordinary **lexicon metaphor** (content **-m**): `hogorem` *inside*, `welem` *size* / *very*, `hadazam` *hastily*. Do **not** add a following sentence of the form “**`ogore`** here is the published metaphor *inclusion* / *inside*. (cue: ⭕ *hollow circle*: …).” The morph gloss and quoted English already give the sense. **-m** as a system is taught on [reference-suffix.md](../grammar/reference-suffix.md#metaphor-m); that page (and drill **Cue** cells) may show `from *swan*: the glide of *grace*` because the lesson *is* the metaphor ending.
 
@@ -359,7 +360,7 @@ Do not merge (1)–(3) into a copula slogan (*X is Y*) or a packed imperative (*
 
 Do **not** pad with throat-clearing (“In this section we will…”, “It is important to note…”). Extra sentences must add **mechanism or consequence**, not warmth.
 
-Tables may stay telegraphic (**Agalan · Use · English · Cue**). Running prose may not.
+Tables may stay telegraphic (**Agalan · Use · English · Same root as · Cue**). Running prose may not.
 
 ### Unpack English pictures
 <a id="unpack-english-pictures"></a>
@@ -387,6 +388,7 @@ Allowed: published-root scenes in **Cue**; [conceptual metaphors](../grammar/why
 |------------|------------------------|
 | **job** | role in the clause (subject, verb, …). Table header **Use** is the same idea; do not re-gloss the column name on every page ([How to learn](../grammar/introduction.md#cues)) |
 | **Cue** | memory aid; defined once in How to learn — not unpacked in each table |
+| **Same root as** | everyday kind of that root (citation **-l**); defined once in How to learn — not a second **English** column |
 | **point** / **prominence** | what comes first for emphasis (what the sentence is “about,” or the new information) |
 | **setting** | statement vs question vs command |
 | **body** | the clause after any opening `/j/` words |
@@ -458,7 +460,7 @@ Short Eng ↔ Agalan checkpoints: end of a page stage only — [translation-exer
 - Contrast and decision tables beat encyclopedia dumps in Beginner. A decision table is **this** form’s own readings (endings, vowel series), not a list of other pages.
 - Beginner may show a **partial** table (only letters / jobs taught so far). Completing the table is Intermediate, or a recap at the **end** of Beginner after those jobs have examples — not a dump at the top.
 - Full inventories belong in Intermediate / Advanced, or after the teach block.
-- Prefer columns **Agalan · Use · English · Cue** for **this** form ([cues](#cues-columns)). Add **Example** or a Morph column when endings are the point. **Not this** / related-subsystem **Agalan · Use**: [Compare with](#compare-with).
+- Prefer columns **Agalan · Use · English · Same root as · Cue** for **this** form ([cues](#cues-columns)). Drop **Same root as** when no row is a lexicon metaphor / overlay. Add **Example** or a Morph column when endings are the point. **Not this** / related-subsystem **Agalan · Use**: [Compare with](#compare-with).
 - A grammar-table **Gloss** column is short free English unless the row teaches morphology ([glosses.md](glosses.md)).
 
 ## Cross-links and scope

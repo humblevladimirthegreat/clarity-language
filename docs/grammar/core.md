@@ -159,18 +159,20 @@ The dependent may open with its own `/j/` words, or keep the main sentence’s s
 >
 > "Azawan is happy because Ululon walks."
 
+**-m** here is the same choice as *grace* from *swan*. **Same root as** is that root as an everyday kind (citation **-l**). **Cue** only says why the picture maps to the English column.
+
 You can also say:
 
-| Agalan | English | Cue |
-|--------|---------|-----|
-| **`hurugum badorol`** | *because* | 🧱 *brick*: the cause is what the result sits on |
-| **`hadorom badorol`** | *if* | 🚪 *doorway*: walk through only if it opens |
-| **`hezazem badorol`** | *if and only if* | ↔️ *left-right*: each side only with the other |
-| **`hezebam badorol`** | *although* / *even though* | 🦓 *zebra*: two stripes, still one animal |
-| **`hegemum badorol`** | *while* (at the same time) | ♊ *gemini*: two things at once |
-| **`hudumem badorol`** | *until* | ⏲️ *timer*: stop when it rings |
-| **`hababam badorol`** | *before* | 🎒 *backpack*: packed first |
-| **`horanem badorol`** | *after* | ⌛ *hourglass*: sand already through |
+| Agalan | English | Same root as | Cue |
+|--------|---------|--------------|-----|
+| **`hurugum badorol`** | *because* | `urugul` *brick* | 🧱: the cause is what the result sits on |
+| **`hadorom badorol`** | *if* | `adorol` *door* | 🚪: walk through only if it opens |
+| **`hezazem badorol`** | *if and only if* | `ezazel` *east-west* | ↔️: each side only with the other |
+| **`hezebam badorol`** | *although* / *even though* | `ezebal` *zebra* | 🦓: two stripes, still one animal |
+| **`hegemum badorol`** | *while* (at the same time) | `egemul` *gemini* | ♊: two things at once |
+| **`hudumem badorol`** | *until* | `udumel` *timer* | ⏲️: stop when it rings |
+| **`hababam badorol`** | *before* | `ababal` *backpack* | 🎒: packed first |
+| **`horanem badorol`** | *after* | `oranel` *hourglass* | ⌛: sand already through |
 
 The verb has no past or future letter. *Before* / *after* / *while* / *until* place this event relative to the next sentence.
 
@@ -226,35 +228,35 @@ Role letters on this page:
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
-**Roots used here** (**English** is what you produce; **Cue** is optional memory, not the answer):
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *dog* | `odogo` | |
-| *cat* | `agada` | |
-| *book* | `abogo` | |
-| *house* | `ohohu` | |
-| *inside* / *inclusion* (**-m** on `/h/`) | `ogore` | from *hollow circle*: being inside the boundary |
-| *blue* | `elulu` | |
-| *red* | `arede` | |
-| *big* (**-m**) | `ele` | from *elephant*: the huge animal |
-| *happy* (**-m**) | `uzumu` | from *smile*: the face of *happy* |
-| *walk* | `awala` | |
-| *run* | `urunu` | |
-| *sleep* | `elebe` | |
-| *tell* | `ezehe` | |
-| *write* | `uwuru` | |
-| *sing* | `uzunu` | |
-| *see* | `eje` | from *perception*: the sense you see with |
-| *sit* | `aju` | |
-| *haste* (**-m**) | `adaza` | from *dash*: a burst of speed |
-| *quietude* (**-m**) | `owo` | from *owl*: the quiet bird |
-| *next clause* | `adoro` | 🚪 *doorway*: the next sentence walks through |
-| *because* (**-m** on `/h/`) | `urugu` | 🧱 *brick*: the cause is what the result sits on |
-| *therefore* | `ezaza` | from *east*: the sun’s path, so the talk moves on |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *beauty* (name **Uhubun**) | `uhubu` | | |
+| *dog* | `odogo` | | |
+| *cat* | `agada` | | |
+| *book* | `abogo` | | |
+| *house* | `ohohu` | | |
+| *inside* / *inclusion* (**-m** on `/h/`) | `ogore` | `ogorel` *hollow circle* | ⭕: being inside the boundary |
+| *blue* | `elulu` | | |
+| *red* | `arede` | | |
+| *big* (**-m**) | `ele` | `elel` *elephant* | 🐘: the huge animal |
+| *happy* (**-m**) | `uzumu` | `uzumul` *smile* | 😊: the face of *happy* |
+| *walk* | `awala` | | |
+| *run* | `urunu` | | |
+| *sleep* | `elebe` | | |
+| *tell* | `ezehe` | | |
+| *write* | `uwuru` | | |
+| *sing* | `uzunu` | | |
+| *see* | `eje` | `ejel` *eye* | 👁️: the sense you see with |
+| *sit* | `aju` | | |
+| *haste* (**-m**) | `adaza` | `adazal` *dash* | 💨: a burst of speed |
+| *quietude* (**-m**) | `owo` | `owol` *owl* | 🦉: the quiet bird |
+| *next clause* | `adoro` | `adorol` *door* | 🚪: the next sentence walks through |
+| *because* (**-m** on `/h/`) | `urugu` | `urugul` *brick* | 🧱: the cause is what the result sits on |
+| *therefore* | `ezaza` | `ezazal` *east* | ➡️: the sun’s path, so the talk moves on |
 
 #### English → Agalan
 
@@ -499,13 +501,13 @@ A **period** (and matching **`?`** / **`!`**) closes the sentence body in writin
 
 These words glue one finished sentence to the next (one-way; default ending **-l** is closed). Beginner already used *therefore*.
 
-| English | Agalan | Cue | Example |
-|---------|--------|-----|---------|
-| *therefore* | **`ezaza`** | ➡️ *east*: the sun’s path, so the talk moves on | `xezazal` |
-| *however* | **`ezeba`** | 🦓 *zebra*: two stripes, still one animal | `xezebal` |
-| *meanwhile* | **`anelo`** | 🕰️ *mantel-clock*: time passing beside the last claim | `xanelol` |
-| *next* | **`uvumu`** | 🎞️ *film*: the following frame | `xuvumul` |
-| *but* | **`onugo`** | 🚧 *construction*: the expected path is blocked | `xonugol` |
+| English | Agalan | Same root as | Cue | Example |
+|---------|--------|--------------|-----|---------|
+| *therefore* | **`ezaza`** | `ezazal` *east* | ➡️: the sun’s path, so the talk moves on | `xezazal` |
+| *however* | **`ezeba`** | `ezebal` *zebra* | 🦓: two stripes, still one animal | `xezebal` |
+| *meanwhile* | **`anelo`** | `anelol` *mantel-clock* | 🕰️: time passing beside the last claim | `xanelol` |
+| *next* | **`uvumu`** | `uvumul` *film* | 🎞️: the following frame | `xuvumul` |
+| *but* | **`onugo`** | `onugol` *construction* | 🚧: the expected path is blocked | `xonugol` |
 
 *therefore* moves forward from the prior claim; *however* marks contrast; *meanwhile* is concurrent passage; *next* is the next frame; *but* blocks the expected continuation (harder push-back than *however*). Those same roots keep their ordinary content readings under other role letters.
 
@@ -532,31 +534,31 @@ A number word in `/j/` is a call-out (*Three more!*, a score). It can sit with t
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
-**Roots used here** (**English** is what you produce; **Cue** is optional memory, not the answer):
+**Roots used here** (**English** is what you produce; **Same root as** is the everyday kind of that root when the row is a metaphor; **Cue** is optional memory, not the answer):
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *grace* (name **Azawan**) | `azawa` | |
-| *courage* (name **Ululon**) | `ululo` | |
-| *beauty* (name **Uhubun**) | `uhubu` | |
-| *dog* | `odogo` | |
-| *cat* | `agada` | |
-| *blue* | `elulu` | |
-| *red* | `arede` | |
-| *happy* (**-m**) | `uzumu` | from *smile*: the face of *happy* |
-| *walk* | `awala` | |
-| *run* | `urunu` | |
-| *sleep* | `elebe` | |
-| *see* | `eje` | from *perception*: the sense you see with |
-| *sing* | `uzunu` | |
-| *sit* | `aju` | |
-| *volume* (**-m**) | `egelo` | from *speaker-low*: how loud |
-| *topic* | `oza` | from *hash*: a heading mark |
-| *therefore* | `ezaza` | from *east*: the sun’s path, so the talk moves on |
-| *however* / *although* | `ezeba` | 🦓 *zebra*: two stripes, still one animal |
-| *meanwhile* | `anelo` | from *mantel-clock*: time passing beside the last claim |
-| *next clause* | `adoro` | 🚪 *doorway*: the next sentence walks through |
-| *because* (**-m** on `/h/`) | `urugu` | 🧱 *brick*: the cause is what the result sits on |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *grace* (name **Azawan**) | `azawa` | | |
+| *courage* (name **Ululon**) | `ululo` | | |
+| *beauty* (name **Uhubun**) | `uhubu` | | |
+| *dog* | `odogo` | | |
+| *cat* | `agada` | | |
+| *blue* | `elulu` | | |
+| *red* | `arede` | | |
+| *happy* (**-m**) | `uzumu` | `uzumul` *smile* | 😊: the face of *happy* |
+| *walk* | `awala` | | |
+| *run* | `urunu` | | |
+| *sleep* | `elebe` | | |
+| *see* | `eje` | `ejel` *eye* | 👁️: the sense you see with |
+| *sing* | `uzunu` | | |
+| *sit* | `aju` | | |
+| *volume* (**-m**) | `egelo` | `egelol` *speaker-low* | 🔈: how loud |
+| *topic* | `oza` | `ozal` *hash* | #️⃣: a heading mark |
+| *therefore* | `ezaza` | `ezazal` *east* | ➡️: the sun’s path, so the talk moves on |
+| *however* / *although* | `ezeba` | `ezebal` *zebra* | 🦓: two stripes, still one animal |
+| *meanwhile* | `anelo` | `anelol` *mantel-clock* | 🕰️: time passing beside the last claim |
+| *next clause* | `adoro` | `adorol` *door* | 🚪: the next sentence walks through |
+| *because* (**-m** on `/h/`) | `urugu` | `urugul` *brick* | 🧱: the cause is what the result sits on |
 
 #### English → Agalan
 

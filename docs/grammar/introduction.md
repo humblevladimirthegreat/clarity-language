@@ -53,19 +53,20 @@ Follow the **Suggested reading order** in the site sidebar. Read each page’s B
 
 The sidebar **Tools** list includes [Terminology](terminology.md) for the English names these pages use for grammar (with a short gloss and a link to the teaching section), plus Lexicon and [Inspect](inspect.md) for roots and interlinear.
 
-### Tables: Use, English, and Cue
+### Tables: Use, English, Same root as, and Cue
 <a id="cues"></a>
 
-Inventory tables on grammar pages use four kinds of cell:
+Inventory tables on grammar pages use these kinds of cell:
 
 | Column | What it is |
 |--------|------------|
 | **Agalan** | The word or letter you write. |
 | **Use** | What that form **does** (subject, question, *because* as a clause glue). This is the rule. |
 | **English** | What you would **say**: the sense to produce or understand. |
+| **Same root as** | The everyday kind of that same root, written as a citation (**-l**): `urugul` *brick* when the row’s English is *because*. Not every table has this column. |
 | **Cue** | A hook that helps you **remember** the letter, vowel, or picture that maps to that row. |
 
-**Cue** is optional but helps with learning. `≈` in a cue means “sounds like.” 
+**Cue** is optional but helps with learning. `≈` in a cue means “sounds like.” When **Same root as** is there, **Cue** does not repeat the everyday English; it only says why that picture maps. 
 
 Continue with [phonology.md](phonology.md#beginner) for letters and word edges, then [reference-suffix.md](reference-suffix.md#beginner) for citation endings, then [core.md](core.md#beginner) for clause shape.
 
