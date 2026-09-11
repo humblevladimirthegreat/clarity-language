@@ -15,7 +15,7 @@ When English would say *and*, write every item, then the join. Use vowel **a** o
 
 The join’s first letter matches the items: `zam` after two `z-` nouns, `vam` after two `v-` verbs.
 
-Ending **-l** is ordinary English with no extra words: these are the only items. Ending **-m** means other members may exist: add *(and possibly others)*. When unsure, prefer **-m**.
+Ending **-l** is ordinary English with no extra words: these are the only items. Ending **-m** means other members may exist: add *(and possibly more)*. When unsure, prefer **-m**.
 
 > `zodogol zagadal zal.`
 >
@@ -27,19 +27,19 @@ Ending **-l** is ordinary English with no extra words: these are the only items.
 >
 > z-dog | z-cat | z-and.open
 >
-> "a dog and a cat (and possibly others)."
+> "a dog and a cat (and possibly more)."
 
 > `zazawan zululon zam.`
 >
 > z-Azawan | z-Ululon | z-and.open
 >
-> "Azawan and Ululon (and possibly others)."
+> "Azawan and Ululon (and possibly more)."
 
 > `vawalal vurunul vam.`
 >
 > v-walk | v-run | v-and.open
 >
-> "walks and runs (and possibly others)."
+> "walks and runs (and possibly more)."
 
 ### Right-close fence
 <a id="right-close"></a>
@@ -54,7 +54,7 @@ Two full clauses use the same order: first clause’s words, second clause’s w
 >
 > z-Azawan | v-walk | z-Ululon | v-run | x-and.open
 >
-> "Azawan walks and Ululon runs (and possibly others)."
+> "Azawan walks and Ululon runs (and possibly more)."
 
 ### Choice (`o`)
 <a id="empty-allowed-om"></a>
@@ -165,7 +165,7 @@ You can name a list without saying which member you mean (*someone* / *something
 >
 > z-tea | z-coffee | z-something
 >
-> "some one among tea and coffee."
+> "something among tea and coffee."
 
 Write A and B, then `zar`: the join still ends both items, and **-r** means some member of that pair (you are not saying which).
 
@@ -185,7 +185,7 @@ Write A and B, then `zar`: the join still ends both items, and **-r** means some
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **-l** | the listed items are the only ones in play | (no extra words) | **l** ≈ locked list |
-| **-m** | other items may exist | *(and possibly others)*; empty: *as far as I know* | **m** ≈ maybe more |
+| **-m** | other items may exist | *(and possibly more)*; empty: *as far as I know* | **m** ≈ maybe more |
 | **-r** | unspecified member of the join | *someone* / *something* in the list | **r** ≈ member you have not named |
 
 The same vowels and endings work under `/d/` `/b/` (`dal`, `dam`, …), `/v/` (`val`, `vam`, …), `/ɡ/` (`gal`, `gul`, …), and `/x/` (`xal`, `xam`, …). Match the join’s first letter to the items.
@@ -201,10 +201,10 @@ Two or more items still take the same vowel and ending as the lists above. The t
 | `zul` / `zum` | standalone | *no* · *no, as far as I know* |
 | `zual` / `zuam` | standalone | *everything* / *everyone* · *everything, as far as I know* |
 | `zal` + NP | single-item | *just X* / *only X* |
-| `zam` + NP | single-item | *X, for one* / *X (and possibly others)* |
+| `zam` + NP | single-item | *X, for one* / *X (and possibly more)* |
 | `zol` + NP | single-item | *the only option is X* |
 | `zom` + NP | single-item | *X (optional)* |
-| `zul` / `zum` + NP | single-item | *not X* · *not X (and possibly others)* |
+| `zul` / `zum` + NP | single-item | *not X* · *not X (and possibly more)* |
 | `zual` + NP | single-item | *everything but X* |
 | `zel` / `zem` | standalone | *no favorite* · *no favorite, as far as I know* |
 | `zel` / `zem` + NP | single-item | *only X matters* / *X first* |
@@ -276,7 +276,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zar.`
 :::
 
-**8.** *Azawan walks and Ululon runs (and possibly others).*
+**8.** *Azawan walks and Ululon runs (and possibly more).*
 
 ::: details Show answer
 `zazawan vawalal zululon vurunul xam.`
@@ -287,7 +287,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **1.** `zodogol zagadal zam.`
 
 ::: details Show answer
-*a dog and a cat (and possibly others)*
+*a dog and a cat (and possibly more)*
 :::
 
 **2.** `zadedal zogovel zol.`
@@ -317,7 +317,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **6.** `zadedal zogovel zar.`
 
 ::: details Show answer
-*some one among tea and coffee*
+*something among tea and coffee*
 :::
 
 **7.** `zazawan zel.`
@@ -329,7 +329,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **8.** `vawalal vurunul vam.`
 
 ::: details Show answer
-*walks and runs (and possibly others)*
+*walks and runs (and possibly more)*
 :::
 
 ## Intermediate
@@ -379,19 +379,19 @@ Standalone **e** answers *who first* with no ranking (no favorite). Standalone *
 | Agalan | Use | English |
 |--------|-----|---------|
 | **…al** (`zal` / …) | closed add of one | *just X* / *only X* |
-| **…am** (`zam` / …) | open add of one | *X, for one* / *X (and possibly others)* |
+| **…am** (`zam` / …) | open add of one | *X, for one* / *X (and possibly more)* |
 | **…ol** (`zol` / …) | closed menu of one | *the only option is X* |
 | **…om** (`zom` / …) | open menu of one | *X (optional)* |
 | **…ual** (`zual` / …) | closed invert-add of one | *everything but X* |
-| **…uam** (`zuam` / …) | open invert-add of one | *everything but X (and possibly others)* |
+| **…uam** (`zuam` / …) | open invert-add of one | *everything but X (and possibly more)* |
 | **…uol** (`zuol` / …) | closed invert-menu of one | *anything but X* |
-| **…uom** (`zuom` / …) | open invert-menu of one | *anything but X (and possibly others)* |
+| **…uom** (`zuom` / …) | open invert-menu of one | *anything but X (and possibly more)* |
 | **…aol** (`zaol` / …) | closed inclusive of one | *X is enough* / *X'll do* |
 | **…aom** (`zaom` / …) | open inclusive of one | *at least X* / *X would work* |
 | **…ar** (`zar` / …) | unspecified add | *some (unknown) X* |
 | **…or** (`zor` / …) | unspecified menu | *any X* |
 | **…ul** (`zul` / …) | closed deny of one | *not X* |
-| **…um** (`zum` / …) | open deny of one | *not X (and possibly others)* |
+| **…um** (`zum` / …) | open deny of one | *not X (and possibly more)* |
 | **…un** (`zun` / …) | stock denial of one | *not X* (stock / conventional) |
 | **…ur** (`zur` / …) | unspecified leftover | *something other than X* |
 
@@ -515,7 +515,7 @@ When an adjective or extra noun is meant for the **whole list** (*both challengi
 >
 > z-dog | z-cat | z-and.open | g-ownership | b-Azawan
 >
-> "Azawan's dog and cat (and possibly others)."
+> "Azawan's dog and cat (and possibly more)."
 
 | Join family | Use of SHARED `/ɡ/` |
 |-------------|----------------------|
