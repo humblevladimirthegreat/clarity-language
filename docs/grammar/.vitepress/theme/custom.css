@@ -1,3 +1,7 @@
+.NotFound .quote {
+  max-width: 28rem;
+}
+
 /* In-article TOC: visible where the right-rail outline is hidden (< 1280px). */
 @media (min-width: 1280px) {
   .vp-doc .in-article-toc {
