@@ -285,10 +285,10 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 `jul vurunul.`
 :::
 
-**9.** *Does Ululon walk?*
+**9.** *Uhubun sings.*
 
 ::: details Show answer
-`jol zululon vawalal.`
+`zuhubun vuzunul.`
 :::
 
 **10.** *Azawan tells Ululon that the dog runs.*
@@ -347,10 +347,10 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 *Sing!*
 :::
 
-**7.** `jol zululon velebel.`
+**7.** `zuhubun vuzunul.`
 
 ::: details Show answer
-*Does Ululon sleep?*
+*Uhubun sings.*
 :::
 
 **8.** `zodogol velebel hogorem bohohul.`
