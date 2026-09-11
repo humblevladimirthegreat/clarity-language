@@ -2,7 +2,7 @@
 
 When English would pack several things that play the same role into one slot (*a dog and a cat*, *walks and runs*), Agalan writes those items in a row and then one join word after them. That last word is how you know the list has ended. We call that pattern a **right-close fence**: items, then the join. The join starts with the same role letter as the items (`z` for people and things, `v` for verbs, `x` for whole clauses).
 
-Sometimes you only care that the items belong together, with no ranking among them (*and*, *or*, *not*). Call that a **set**. Sometimes you care which item comes first (*X first*, *A before B*). We call that a **rank**.
+Sometimes you only care that the items belong together, with no ranking among them (*and*, *or*, *not*). We call that a **set**. Sometimes you care which item comes first (*X first*, *A before B*). We call that a **rank**.
 
 The join’s vowel is the [vowel series](vowel-series.md) you just mapped: the first letter matches the items’ role; the vowel keeps hold, pick one, instruct, or reverse.
 
@@ -15,25 +15,31 @@ When English would say *and*, write every item, then the join. Use vowel **a** o
 
 The join’s first letter matches the items: `zam` after two `z-` nouns, `vam` after two `v-` verbs.
 
-Ending **-m** means other members may exist that you did not name (*among others*). Ending **-l** means these are the only items in play. When unsure, prefer **-m**.
+Ending **-l** is ordinary English with no extra words: these are the only items. Ending **-m** means other members may exist: add *(and possibly others)*. When unsure, prefer **-m**.
+
+> `zodogol zagadal zal.`
+>
+> z-dog | z-cat | z-and
+>
+> "a dog and a cat."
 
 > `zodogol zagadal zam.`
 >
 > z-dog | z-cat | z-and.open
 >
-> "a dog and a cat."
+> "a dog and a cat (and possibly others)."
 
 > `zazawan zululon zam.`
 >
 > z-Azawan | z-Ululon | z-and.open
 >
-> "Azawan and Ululon."
+> "Azawan and Ululon (and possibly others)."
 
 > `vawalal vurunul vam.`
 >
 > v-walk | v-run | v-and.open
 >
-> "walks and runs."
+> "walks and runs (and possibly others)."
 
 ### Right-close fence
 <a id="right-close"></a>
@@ -48,24 +54,24 @@ Two full clauses use the same order: first clause’s words, second clause’s w
 >
 > z-Azawan | v-walk | z-Ululon | v-run | x-and.open
 >
-> "Azawan walks and Ululon runs."
+> "Azawan walks and Ululon runs (and possibly others)."
 
 ### Choice (`o`)
 <a id="empty-allowed-om"></a>
 
-When English would offer a menu and ask for *exactly one*, or allow *or skip*, use vowel **o**. Closed **-l** (`zol`) means pick exactly one of the listed items. Open **-m** (`zom`) means pick one, or skip. (cue: **o** ≈ one.)
+When English would offer a menu and ask to *pick one*, or leave the pick *(optional)*, use vowel **o**. Closed **-l** (`zol`) means pick one of the listed items. Open **-m** (`zom`) means the pick is optional. (cue: **o** ≈ one.)
 
 > `zadedal zogovel zol.`
 >
-> z-tea | z-coffee | z-or-exactly-one
+> z-tea | z-coffee | z-or
 >
-> "tea or coffee (pick exactly one)."
+> "tea or coffee (pick one)."
 
 > `zogovel zom.`
 >
 > z-coffee | z-or.open
 >
-> "coffee, or skip."
+> "coffee (optional)."
 
 ### How many items
 <a id="single-item-phrase"></a>
@@ -77,18 +83,18 @@ The join still comes last when there is only one item, or none. How many items s
 |-------|--------|-----|---------|
 | **List** (2+) | `A B zam` | close a multi-item set | ordinary *and* / *or* |
 | **Single-item** (1) | `A zal` | that one item is the whole story | *just X* |
-| **Standalone** (0) | `zam` | the join alone | *nothing comes to mind* |
+| **Standalone** (0) | `zam` | the join alone | *nothing, as far as I know* |
 
 > `zazawan zal.`
 >
-> z-Azawan | z-and-exactly
+> z-Azawan | z-and
 >
 > "just Azawan."
 
 ### Negation (`u`)
 <a id="negation-u"></a>
 
-When English would deny the listed items, use vowel **u**. One item before `zul` is *not X*. Several items before `zul` is *none of these*. The join alone (`zul` / `zum`) is *no*. (cue: **u** ≈ undo.)
+When English would deny the listed items, use vowel **u**. One item before `zul` is *not X*. Two items before `zul` is *neither A nor B*; more items is *none of these*. The join alone (`zul` / `zum`) is *no*. (cue: **u** ≈ undo.)
 
 > `gomonam gul.`
 >
@@ -106,7 +112,7 @@ When English would deny the listed items, use vowel **u**. One item before `zul`
 >
 > z-tea | z-coffee | z-not
 >
-> "none of tea or coffee."
+> "neither tea nor coffee."
 
 ### Everything (`ua`)
 
@@ -172,41 +178,41 @@ Write A and B, then `zar`: the join still ends both items, and **-r** means some
 |--------|-----|---------|-----|
 | **a** | inventory join | *and* | **a** ≈ add |
 | **o** | exclusive choice | exclusive *or* | **o** ≈ one |
-| **u** | deny the listed | *not* / *none of* / standalone *no* | **u** ≈ undo |
+| **u** | deny the listed | *not* / *neither* / *none of* / standalone *no* | **u** ≈ undo |
 | **ua** | universal; one listed item is the leftover | standalone *everything*; one item *everything but* | **u** ≈ undo, then **a** ≈ add |
 | **e** | rank among items | *A before B*; one item *only X matters* | **e** ≈ order |
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **-l** | the listed items are the only ones in play | closed | **l** ≈ locked list |
-| **-m** | other items may exist | *among others* | **m** ≈ maybe more |
+| **-l** | the listed items are the only ones in play | (no extra words) | **l** ≈ locked list |
+| **-m** | other items may exist | *(and possibly others)*; empty: *as far as I know* | **m** ≈ maybe more |
 | **-r** | unspecified member of the join | *someone* / *something* in the list | **r** ≈ member you have not named |
 
 The same vowels and endings work under `/d/` `/b/` (`dal`, `dam`, …), `/v/` (`val`, `vam`, …), `/ɡ/` (`gal`, `gul`, …), and `/x/` (`xal`, `xam`, …). Match the join’s first letter to the items.
 
-### Starter forms
+### Beginner forms
 
 Two or more items still take the same vowel and ending as the lists above. The table below is the readings when the join stands alone, or when only one item sits before it.
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| `zal` / `zam` | standalone | *nothing* / *nobody* · *nothing comes to mind* |
-| `zol` / `zom` | standalone | *no options* · *no pick* / *skipping is fine* |
-| `zul` / `zum` | standalone | *no* |
-| `zual` / `zuam` | standalone | *everything* / *everyone* · soft universal |
+| `zal` / `zam` | standalone | *nothing* / *nobody* · *nothing, as far as I know* |
+| `zol` / `zom` | standalone | *no options* · *no pick, as far as I know* |
+| `zul` / `zum` | standalone | *no* · *no, as far as I know* |
+| `zual` / `zuam` | standalone | *everything* / *everyone* · *everything, as far as I know* |
 | `zal` + NP | single-item | *just X* / *only X* |
-| `zam` + NP | single-item | *X, for one* / *X, say* |
-| `zol` + NP | single-item | *has to be X* |
-| `zom` + NP | single-item | *say, X* / *X, or skip* |
-| `zul` / `zum` + NP | single-item | *not X* |
+| `zam` + NP | single-item | *X, for one* / *X (and possibly others)* |
+| `zol` + NP | single-item | *the only option is X* |
+| `zom` + NP | single-item | *X (optional)* |
+| `zul` / `zum` + NP | single-item | *not X* · *not X (and possibly others)* |
 | `zual` + NP | single-item | *everything but X* |
-| `zel` / `zem` | standalone | *no favorite* · *whichever* |
+| `zel` / `zem` | standalone | *no favorite* · *no favorite, as far as I know* |
 | `zel` / `zem` + NP | single-item | *only X matters* / *X first* |
 
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills on this Beginner band. Try each item before opening **Show answer**. The join sits **after** the items; pick the vowel (set vs rank, including **`u`**) and the ending (**-l** / **-m** / **-r**), including single-item and standalone starter forms.
+Short drills on this Beginner band. Try each item before opening **Show answer**. The join sits **after** the items; pick the vowel (set vs rank, including **`u`**) and the ending (**-l** / **-m** / **-r**), including single-item and standalone Beginner forms.
 
 **Roots used here:**
 
@@ -231,16 +237,16 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **1.** *a dog and a cat*
 
 ::: details Show answer
-`zodogol zagadal zam.`
+`zodogol zagadal zal.`
 :::
 
-**2.** *tea or coffee — pick exactly one*
+**2.** *tea or coffee (pick one)*
 
 ::: details Show answer
 `zadedal zogovel zol.`
 :::
 
-**3.** *coffee, or skip*
+**3.** *coffee (optional)*
 
 ::: details Show answer
 `zogovel zom.`
@@ -258,7 +264,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `gomonam gul.`
 :::
 
-**6.** *none of tea or coffee*
+**6.** *neither tea nor coffee*
 
 ::: details Show answer
 `zadedal zogovel zul.`
@@ -270,7 +276,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zar.`
 :::
 
-**8.** *Azawan walks and Ululon runs.*
+**8.** *Azawan walks and Ululon runs (and possibly others).*
 
 ::: details Show answer
 `zazawan vawalal zululon vurunul xam.`
@@ -281,13 +287,13 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **1.** `zodogol zagadal zam.`
 
 ::: details Show answer
-*a dog and a cat*
+*a dog and a cat (and possibly others)*
 :::
 
 **2.** `zadedal zogovel zol.`
 
 ::: details Show answer
-*tea or coffee — pick exactly one*
+*tea or coffee (pick one)*
 :::
 
 **3.** `zazawan zul.`
@@ -323,7 +329,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **8.** `vawalal vurunul vam.`
 
 ::: details Show answer
-*walks and runs*
+*walks and runs (and possibly others)*
 :::
 
 ## Intermediate
@@ -356,7 +362,7 @@ Standalone **e** answers *who first* with no ranking (no favorite). Standalone *
 | Agalan | Use | English |
 |--------|-----|---------|
 | **…el** (`zel` / …) | closed empty rank | *no favorite* / *nobody's first*; + SHARED scale → unspecified who's top |
-| **…em** (`zem` / …) | open empty rank | *whichever* (not picking who goes first) |
+| **…em** (`zem` / …) | open empty rank | *no favorite, as far as I know* |
 | **…ael** (`zael` / …) | closed empty tie | *it's a draw* / *tie* |
 | **…aem** (`zaem` / …) | open empty tie | *probably a tie* / *looks even* |
 | **…aen** (`zaen` / …) | stock empty tie | *it's a draw* (stock) |
@@ -373,19 +379,19 @@ Standalone **e** answers *who first* with no ranking (no favorite). Standalone *
 | Agalan | Use | English |
 |--------|-----|---------|
 | **…al** (`zal` / …) | closed add of one | *just X* / *only X* |
-| **…am** (`zam` / …) | open add of one | *X, for one* / *X, say* |
-| **…ol** (`zol` / …) | closed menu of one | *has to be X* |
-| **…om** (`zom` / …) | open menu of one | *say, X* / *X, or skip* |
+| **…am** (`zam` / …) | open add of one | *X, for one* / *X (and possibly others)* |
+| **…ol** (`zol` / …) | closed menu of one | *the only option is X* |
+| **…om** (`zom` / …) | open menu of one | *X (optional)* |
 | **…ual** (`zual` / …) | closed invert-add of one | *everything but X* |
-| **…uam** (`zuam` / …) | open invert-add of one | *everything but X (among exclusions)* |
+| **…uam** (`zuam` / …) | open invert-add of one | *everything but X (and possibly others)* |
 | **…uol** (`zuol` / …) | closed invert-menu of one | *anything but X* |
-| **…uom** (`zuom` / …) | open invert-menu of one | *anything but X (open)* |
+| **…uom** (`zuom` / …) | open invert-menu of one | *anything but X (and possibly others)* |
 | **…aol** (`zaol` / …) | closed inclusive of one | *X is enough* / *X'll do* |
 | **…aom** (`zaom` / …) | open inclusive of one | *at least X* / *X would work* |
 | **…ar** (`zar` / …) | unspecified add | *some (unknown) X* |
 | **…or** (`zor` / …) | unspecified menu | *any X* |
 | **…ul** (`zul` / …) | closed deny of one | *not X* |
-| **…um** (`zum` / …) | open deny of one | *not X (among other denials)* |
+| **…um** (`zum` / …) | open deny of one | *not X (and possibly others)* |
 | **…un** (`zun` / …) | stock denial of one | *not X* (stock / conventional) |
 | **…ur** (`zur` / …) | unspecified leftover | *something other than X* |
 
@@ -396,19 +402,19 @@ Standalone **e** answers *who first* with no ranking (no favorite). Standalone *
 | Agalan | Use | English |
 |--------|-----|---------|
 | **…al** (`zal` / …) | closed empty add | *nothing* / *nobody* |
-| **…am** (`zam` / …) | open empty add | *nothing comes to mind* |
+| **…am** (`zam` / …) | open empty add | *nothing, as far as I know* |
 | **…an** (`zan` / …) | named empty add | *null* / *void* (standalone-only under `/z/` `/d/` `/b/` `/w/`) |
 | **…ol** (`zol` / …) | closed empty menu | *no options* / *we're stuck* |
-| **…om** (`zom` / …) | open empty menu | *no pick* / *skipping is fine* |
+| **…om** (`zom` / …) | open empty menu | *no pick, as far as I know* |
 | **…ual** (`zual` / …) | closed empty invert-add | *everything* / *everyone* |
-| **…uam** (`zuam` / …) | open empty invert-add | *everything that comes to mind* |
+| **…uam** (`zuam` / …) | open empty invert-add | *everything, as far as I know* |
 | **…uan** (`zuan` / …) | stock empty invert-add | *everyone* / *everything* (stock) |
 | **…uol** (`zuol` / …) | closed empty invert-menu | *anything (goes)* |
 | **…uom** (`zuom` / …) | open empty invert-menu | *anything offered* |
 | **…aol** (`zaol` / …) | closed empty inclusive | *all set* / *nothing more needed* |
-| **…aom** (`zaom` / …) | open empty inclusive | *nothing needed that comes to mind* |
+| **…aom** (`zaom` / …) | open empty inclusive | *nothing needed, as far as I know* |
 | **…ul** (`zul` / …) | closed empty deny | *no* |
-| **…um** (`zum` / …) | open empty deny | *a no from this speaker* |
+| **…um** (`zum` / …) | open empty deny | *no, as far as I know* |
 | **…un** (`zun` / …) | stock empty deny | *No* (stock) |
 | **…ar** (`zar` / …) | unspecified empty add | *something* / *someone* |
 | **…or** (`zor` / …) | unspecified empty menu | *anything* / *anyone* |
@@ -443,7 +449,7 @@ Beginner already used *everything but* (**`ua`**). Leading **u** on **o** and **
 | **uo** | invert menu | *anything but* the listed (free choice outside) | **u** ≈ undo + **o** ≈ one |
 | **ue** | invert rank | *A after B after C* (last first) | **u** ≈ undo + **e** ≈ order |
 
-Kind / domain for **ua** / **uo** is context or SHARED `/ɡ/` — [universals, domains, and generics](#universals-domains-generics). Skip is only **`…om`**. **-r** still attaches only to single-vowel **a** / **o** / **e** / **u**.
+Kind / domain for **ua** / **uo** is context or SHARED `/ɡ/` — [universals, domains, and generics](#universals-domains-generics). Optional is only **`…om`**. **-r** still attaches only to single-vowel **a** / **o** / **e** / **u**.
 
 > `zadedal zogovel zual.`
 >
@@ -455,7 +461,7 @@ Kind / domain for **ua** / **uo** is context or SHARED `/ɡ/` — [universals, d
 
 ### Exclusivity, negation, and distribution
 
-When English would allow several listed items at once (*and/or*), stack **a** then **o** (**`ao`**). **`o`** alone is still at most one: closed **-l** is exactly one; open **-m** allows skip. On **`ao`**, even **-m** still needs at least one of the listed items.
+When English would allow several listed items at once (*and/or*), stack **a** then **o** (**`ao`**). **`o`** alone is still at most one: closed **-l** is pick one; open **-m** is *(optional)*. On **`ao`**, even **-m** still needs at least one of the listed items.
 
 When English would deny a whole join, *not* applies to **each** item and the join vowel **stays the same**. *Not (walk and run)* is still an *and* of two denials; *not (walk or run)* is still an *or* of two denials.
 
@@ -478,7 +484,7 @@ When English would say *every cat* rather than *everything but the cat*, write *
 |--------|-------|---------|
 | standalone `zual` | empty invert-add | *everything* / *everyone* |
 | `zual` + SHARED `/ɡ/` | closed every-kind | *every K* (`zual gagadal` = *every cat*) |
-| `zuam` + SHARED `/ɡ/` | open every-kind | soft universal of K |
+| `zuam` + SHARED `/ɡ/` | open every-kind | *every K, as far as I know* |
 | `zual` + SHARED `/ɡ/` + items | every-kind minus leftovers | *every K but* exclusions |
 | single-item `zual X` (no SHARED) | leftover only | *everything but X* |
 
@@ -509,7 +515,7 @@ When an adjective or extra noun is meant for the **whole list** (*both challengi
 >
 > z-dog | z-cat | z-and.open | g-ownership | b-Azawan
 >
-> "Azawan's (dog and cat)."
+> "Azawan's dog and cat (and possibly others)."
 
 | Join family | Use of SHARED `/ɡ/` |
 |-------------|----------------------|
@@ -758,7 +764,7 @@ Most other phrase joins need two or more items. These edge readings keep a defin
 >
 > "any of tea, coffee, or water is fine (no order)."
 
-**For *except*, use:** reviser **`ul`** / **`um`** — [revisers](revisers.md). Prefixed **`zur`** is unspecified *something else*. Nest when you need a rare mix (closed list but skip OK: `zadedal zogovel zol zal`). Sufficient *at least* **`…aom`**: [causation](causation.md#sufficient).
+**For *except*, use:** reviser **`ul`** / **`um`** — [revisers](revisers.md). Prefixed **`zur`** is unspecified *something else*. Nest when you need a rare mix (closed list but optional: `zadedal zogovel zol zal`). Sufficient *at least* **`…aom`**: [causation](causation.md#sufficient).
 
 
 ### Allowed joins by PoS
