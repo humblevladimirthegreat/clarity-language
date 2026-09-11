@@ -10,6 +10,7 @@ export default defineComponent({
     let observer: MutationObserver | undefined
 
     function attach() {
+      if (typeof document === 'undefined') return
       teardown?.()
       teardown = enhanceRootsTables(document)
     }
@@ -19,6 +20,7 @@ export default defineComponent({
     }
 
     function sync() {
+      if (typeof document === 'undefined') return
       observer?.disconnect()
       observer = undefined
       teardown?.()

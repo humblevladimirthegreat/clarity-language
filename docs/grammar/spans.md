@@ -77,21 +77,21 @@ With **`@`** / **-n**, mention is *the title X* / *the proverb X* as a **named u
 
 **Opaque** holds a foreign, code, or raw surface that is not ordinary Agalan words. Write the role letter, then angle brackets around that blob. Write no ending after `>`:
 
-> `zazawan d<sushi> vejel.`
+> <code>zazawan d&lt;sushi&gt; vejel.</code>
 >
-> z-Azawan | d-<sushi> | v-see
+> z-Azawan | <code>d-&lt;sushi&gt;</code> | v-see
 >
 > "Azawan saw sushi." (opaque surface)
 
-Keep the source’s **casing** inside `<>` when that writing system uses case (`d<NaCl>`, `d<iPhone>`). Native Agalan letters stay [lowercase](phonology.md#beginner).
+Keep the source’s **casing** inside `<>` when that writing system uses case (<code>d&lt;NaCl&gt;</code>, <code>d&lt;iPhone&gt;</code>). Native Agalan letters stay [lowercase](phonology.md#beginner).
 
-A **compact foreign content word** takes an ending after `>`: `d<sushi>l`, `z<Sam>n`. Same casing rule inside. That is one ordinary word whose root is foreign, not a span.
+A **compact foreign content word** takes an ending after `>`: <code>d&lt;sushi&gt;l</code>, <code>z&lt;Sam&gt;n</code>. Same casing rule inside. That is one ordinary word whose root is foreign, not a span.
 
-**Compare with:** use opaque `d<sushi>` when the foreign **surface** is the point. Use `d<sushi>l` when sushi is an ordinary object in the sentence.
+**Compare with:** use opaque <code>d&lt;sushi&gt;</code> when the foreign **surface** is the point. Use <code>d&lt;sushi&gt;l</code> when sushi is an ordinary object in the sentence.
 
 When a published Agalan root already matches, write the ordinary word (`dagadal`, not a fence).
 
-Outside a clause, a name or word uses prefix-less **root + ending**: [citation forms](reference-suffix.md#citation-forms) (`<Sam>n`). A span still takes a role letter, because it fills a sentence slot.
+Outside a clause, a name or word uses prefix-less **root + ending**: [citation forms](reference-suffix.md#citation-forms) (<code>&lt;Sam&gt;n</code>). A span still takes a role letter, because it fills a sentence slot.
 
 ### Asides (`h(…)`)
 <a id="asides"></a>
@@ -131,7 +131,7 @@ The letter on the open is the role of the **entire span** in the outer sentence.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| `/d/` | object | *said / wrote / saw “…”* (`d[hi]`, `d[=]`, `d<sushi>`) | **d** ≈ done to |
+| `/d/` | object | *said / wrote / saw “…”* (`d[hi]`, `d[=]`, <code>d&lt;sushi&gt;</code>) | **d** ≈ done to |
 | `/z/` | subject | the wording or form **is** the subject (`z{odogo}`) | **z** ≈ star (who it is about) |
 | `/v/` | verb | echo the act as wording (`v[oops]`) | **v** as in English *verb* |
 | `/h/` | adverb | asides (`h(…)`) | **h** starts *how* / *when* / *where* |
@@ -191,7 +191,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **5.** *Azawan saw sushi.* (ordinary loan, not an opaque blob)
 
 ::: details Show answer
-`zazawan d<sushi>l vejel.`
+<code>zazawan d&lt;sushi&gt;l vejel.</code>
 :::
 
 **6.** *The word “dog” is blue.* (the form itself is the subject)
@@ -226,7 +226,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Ululon said that.*
 :::
 
-**2.** `zazawan d<sushi> vejel.`
+**2.** <code>zazawan d&lt;sushi&gt; vejel.</code>
 
 ::: details Show answer
 *Azawan saw sushi.* (opaque surface: not ordinary Agalan words, and not a loan word)
@@ -256,13 +256,13 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *The word “cat” is a dog.*
 :::
 
-**7.** `z<Sam>n d[hi] vezehel.`
+**7.** <code>z&lt;Sam&gt;n d[hi] vezehel.</code>
 
 ::: details Show answer
 *Sam said “hi.”*
 :::
 
-**8.** `<Sam>n`
+**8.** <code>&lt;Sam&gt;n</code>
 
 ::: details Show answer
 *Sam* (name citation outside a clause)
@@ -315,7 +315,7 @@ Beginner already used square, round, curly, and angle brackets for cite, aside, 
 | **o** | **mention** (`{` … `}`); with **-n**, named unit | the word or form itself | **o** ≈ one (the form as one object) |
 | **u** | **opaque** (`<` … `>`); interior is not native Agalan | foreign / code / raw blob | **u** ≈ undo (not native Agalan) |
 
-**Compare with:** a native office name uses ordinary **-n** (`zabogon`) — [named handles](reference-suffix.md#named-handles). Mention `{abogo}` is that **form**; opaque / loan is a **foreign** acronym’s surface (`z<FBI>n`).
+**Compare with:** a native office name uses ordinary **-n** (`zabogon`) — [named handles](reference-suffix.md#named-handles). Mention `{abogo}` is that **form**; opaque / loan is a **foreign** acronym’s surface (<code>z&lt;FBI&gt;n</code>).
 
 ### EDGE (extent)
 <a id="edge"></a>
@@ -332,7 +332,7 @@ A pair of brackets can wrap one token or many, run to the end of the clause, or 
 |--------|-----|---------|-----|
 | **a** | **multi-token open** — stays open until an explicit close (default) | `d[…]` … `]` (needs close) | **a** ≈ add (push more tokens) |
 | **e** | **clause-scoped** — ends before the next speech-act `/j/` or clause-level `/x/` join | `d[…` run to clause end (no close) | **e** ≈ order (this clause only) |
-| **o** | **atomic** — exactly **one** following token | `d[uzunu]`, `d<sushi>` | **o** ≈ one |
+| **o** | **atomic** — exactly **one** following token | `d[uzunu]`, <code>d&lt;sushi&gt;</code> | **o** ≈ one |
 | **u** | **empty / redacted** — no interior; also **resume** **-r** | `d[]`, `d[=]` | **u** ≈ undo (nothing inside) |
 
 Resume **-r** always uses EDGE **`u`** (`daxur`).
@@ -395,7 +395,7 @@ The same nest works as `d[ z{…} ]` or `d~[ d<…> ]`.
 
 Sometimes *maybe* or a join should apply only to a multi-word chunk, not the whole clause. Writing marks that chunk with **`^ … ^`**. Speech has no open or close word for those edges: you hear a pause and one tight phrase. The binder **inside** does the work.
 
-> `zazawan ^ h<maybe>l zodogol garedel ^ vejel.`
+> <code>zazawan ^ h&lt;maybe&gt;l zodogol garedel ^ vejel.</code>
 >
 > z-Azawan | ^ | h-maybe | z-dog | g-red | ^ | v-see
 >
@@ -407,14 +407,14 @@ Sometimes *maybe* or a join should apply only to a multi-word chunk, not the who
 - **One island per clause.** Islands do not nest.
 - Empty `^^` has no reading.
 - **Binder required:** at least one scope-taking `/h/` and/or a [join](joins.md#scope-islands-join) particle **inside**.
-- Prefer spaces inside: `^ h<maybe>l zodogol garedel ^`.
+- Prefer spaces inside: <code>^ h&lt;maybe&gt;l zodogol garedel ^</code>.
 
 | Binder | Use inside the island |
 |--------|------------------------|
 | Scope-taking **`/h/`** | frames that **chunk** (prefer first in the island) |
 | Prefixed **join** | joins **only** matching-role material **inside** — [scope islands](joins.md#scope-islands-join) |
 
-`/h/` and a join may share one island (`^ h<maybe>l zazawan zululon zam ^`).
+`/h/` and a join may share one island (<code>^ h&lt;maybe&gt;l zazawan zululon zam ^</code>).
 
 | Placement | Reading |
 |-----------|---------|
@@ -500,7 +500,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **8.** *Azawan saw maybe the red dog.* (*maybe* targets that chunk)
 
 ::: details Show answer
-`zazawan ^ h<maybe>l zodogol garedel ^ vejel.`
+<code>zazawan ^ h&lt;maybe&gt;l zodogol garedel ^ vejel.</code>
 :::
 
 **9.** *Uhubun and (just a cat) ran.*
@@ -553,7 +553,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Azawan said the word “book” (cite wrapping a mention).*
 :::
 
-**7.** `zululon ^ h<maybe>l zagadal garedel ^ vejel.`
+**7.** <code>zululon ^ h&lt;maybe&gt;l zagadal garedel ^ vejel.</code>
 
 ::: details Show answer
 *Ululon saw maybe the red cat.*

@@ -251,7 +251,7 @@ A long official title (bureau, act, titled group) may have a **handle**: one pub
 
 Resume the handle like any name. If a short letter-pronoun (through the 2nd vowel) would pick the wrong earlier word, use the **full root** + **-r** (`zabogor`).
 
-**Compare with:** a [mention](spans.md#loans) packages the **form** (`z{abogo}` = *the word Abogon*). A foreign letter-name is a loan or opaque span (`z<FBI>n`).
+**Compare with:** a [mention](spans.md#loans) packages the **form** (`z{abogo}` = *the word Abogon*). A foreign letter-name is a loan or opaque span (<code>z&lt;FBI&gt;n</code>).
 
 ### Continue (`/x/`): overview
 <a id="continue-x"></a>

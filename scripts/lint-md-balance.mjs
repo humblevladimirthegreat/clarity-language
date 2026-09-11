@@ -16,6 +16,13 @@
  * `.md` targets (explicit `<a id>` or GFM heading slugs). Skips http(s),
  * mailto, and tel.
  *
+ * Quaternary (VitePress pages only, `docs/grammar/*.md` excluding
+ * `.vitepress/`): raw HTML-like `<tag>` that Vue will compile. Inline
+ * backticks do **not** reliably protect this, and `<code v-pre>` still has
+ * to be well-formed HTML. Allow listed HTML / Vue components; skip fenced
+ * code (markdown-it HTML-escapes those). Write loan fences as
+ * `<code>d&lt;sushi&gt;l</code>`.
+ *
  * Note: TipTap's default schema also rejects bold+code (`**`foo`**`). Cursor
  * accepts that pattern (other docs render fine), so we do NOT treat bold+code
  * as a failure — only duplicate same-type marks.
@@ -42,6 +49,78 @@ const INLINE_LINK_RE = /(!?)\[([^\]]*)\]\(([^)]+)\)/g;
 
 /** Skip external URL schemes. */
 const EXTERNAL_SCHEME_RE = /^(?:https?:|mailto:|tel:)/i;
+
+/** Vue/HTML start-or-end tag. Name must start with a letter (not `<>`, `<#>`). */
+const HTMLISH_TAG_RE = /<\/?([A-Za-z][A-Za-z0-9:-]*)\b[^>]*>?/g;
+
+const HTML_COMMENT_RE = /<!--[\s\S]*?-->/g;
+
+/** Tags VitePress / these grammar pages actually emit. Case-sensitive. */
+const ALLOWED_HTML_TAGS = new Set([
+  "a",
+  "abbr",
+  "article",
+  "aside",
+  "audio",
+  "blockquote",
+  "br",
+  "button",
+  "cite",
+  "code",
+  "details",
+  "div",
+  "em",
+  "figcaption",
+  "figure",
+  "footer",
+  "h1",
+  "h2",
+  "h3",
+  "h4",
+  "h5",
+  "h6",
+  "header",
+  "hr",
+  "iframe",
+  "img",
+  "input",
+  "kbd",
+  "label",
+  "li",
+  "main",
+  "mark",
+  "nav",
+  "ol",
+  "p",
+  "pre",
+  "q",
+  "samp",
+  "section",
+  "small",
+  "source",
+  "span",
+  "strong",
+  "sub",
+  "summary",
+  "sup",
+  "table",
+  "tbody",
+  "td",
+  "th",
+  "thead",
+  "time",
+  "tr",
+  "track",
+  "ul",
+  "video",
+  "AgelanInspect",
+  "GlossOverlay",
+  "GlossViewer",
+  "InspectCard",
+  "IpaPlay",
+  "LexiconSearch",
+  "SpeakButton",
+]);
 
 function installDom() {
   const window = new Window({ url: "https://example.local/" });
@@ -192,6 +271,55 @@ function collectAnchors(text) {
     ids.add(n === 1 ? base : `${base}-${n - 1}`);
   }
   return ids;
+}
+
+function isVitepressGrammarMd(file) {
+  const rel = relative(ROOT, file).replaceAll("\\", "/");
+  return (
+    rel.startsWith("docs/grammar/") &&
+    !rel.includes("/.vitepress/") &&
+    rel.endsWith(".md")
+  );
+}
+
+/** Replace spans with spaces so later column numbers stay aligned. */
+function blankOut(text, re) {
+  return text.replace(re, (m) => m.replace(/[^\n]/g, " "));
+}
+
+/**
+ * Vue treats leftover `<Name>` as a component. `<code v-pre>d<sushi>l</code>`
+ * still fails HTML parse (the tokenizer sees `<sushi>` before v-pre applies).
+ * Fenced blocks are safe because markdown-it emits `&lt;`.
+ */
+function findVueHtmlTags(text) {
+  /** @type {{ line: number, col: number, match: string, tag: string }[]} */
+  const hits = [];
+  const lines = text.split(/\r?\n/);
+  let inFence = false;
+  for (let i = 0; i < lines.length; i++) {
+    const raw = lines[i];
+    if (raw.trim().startsWith("```")) {
+      inFence = !inFence;
+      continue;
+    }
+    if (inFence) continue;
+
+    const s = blankOut(raw, HTML_COMMENT_RE);
+
+    HTMLISH_TAG_RE.lastIndex = 0;
+    for (const m of s.matchAll(HTMLISH_TAG_RE)) {
+      const tag = m[1];
+      if (ALLOWED_HTML_TAGS.has(tag)) continue;
+      hits.push({
+        line: i + 1,
+        col: (m.index ?? 0) + 1,
+        match: m[0],
+        tag,
+      });
+    }
+  }
+  return hits;
 }
 
 /** Parse `[…](url)` target; returns null when unparseable. */
@@ -371,6 +499,15 @@ async function main() {
         console.error(
           `${rel}:${hit.line}:${hit.col}: broken link ${JSON.stringify(hit.url)} — ${hit.reason}`,
         );
+      }
+
+      if (isVitepressGrammarMd(file)) {
+        for (const hit of findVueHtmlTags(text)) {
+          failed += 1;
+          console.error(
+            `${rel}:${hit.line}:${hit.col}: Vue/HTML tag ${JSON.stringify(hit.match)} — VitePress compiles Markdown as a Vue template; write the example as <code>d&lt;sushi&gt;l</code> (raw <${hit.tag}> and <code v-pre> with a real <${hit.tag}> both fail to parse)`,
+          );
+        }
       }
     }
   } finally {
