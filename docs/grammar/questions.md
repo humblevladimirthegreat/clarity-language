@@ -41,7 +41,7 @@ If the subject is *nobody* (`zal`) or the clause is *nothing happened* (`xal`), 
 
 Sometimes you do not want *yes* or *no*. You want the other person to **name** someone or something: *who?*, *what?*, *do what?*, *what happened?* That kind of question is a **fill-ask**.
 
-Keep **`jol`** or **`jom`** at the start. In the slot you want filled, use a join word that ends in **-r** (`zar`, `var`, `xar`, …). That **-r** is the blank ([unspecified-member **-r**](coordination.md#unspecified-member-r-phrase)). (cue: **-r** names this member; **a** ≈ add for *who/what*, **u** ≈ undo for *who/what else*.)
+Keep **`jol`** or **`jom`** at the start. In the slot you want filled, use a join word that ends in **-r** (`zar`, `var`, `xar`, …). That **-r** is the blank ([unspecified-member **-r**](joins.md#unspecified-member-r-phrase)). (cue: **-r** names this member; **a** ≈ add for *who/what*, **u** ≈ undo for *who/what else*.)
 
 > `jol zar vawalal.`
 >
@@ -285,7 +285,7 @@ When the question already contains *not* (*Didn’t Azawan run?*), *yes* and *no
 ### Fill-ask arity
 <a id="fill-ask-arity"></a>
 
-Beginner already used *who/what* (**…ar**) and *what else* (**…ur**). Length of the join (nothing listed, one named item, or a list) plus **…or** / **…er** finish the same map as [single-item / standalone](coordination.md#single-item-phrase).
+Beginner already used *who/what* (**…ar**) and *what else* (**…ur**). Length of the join (nothing listed, one named item, or a list) plus **…or** / **…er** finish the same map as [single-item / standalone](joins.md#single-item-phrase).
 
 | Length | **…ar** | **…or** | **…er** | **…ur** |
 |--------|---------|---------|---------|---------|
@@ -636,5 +636,5 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 ## See also
 
 - [core.md](core.md#turn-j): turn vs continue; speech act
-- [coordination.md](coordination.md): join fences; statement readings of **-r** / single-item / standalone
+- [joins.md](joins.md): join fences; statement readings of **-r** / single-item / standalone
 - [pronouns.md](pronouns.md): content resume **-r** (fill-ask is join **-r**)

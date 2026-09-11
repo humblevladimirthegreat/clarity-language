@@ -49,7 +49,7 @@ Closed psychological `/h/` (not ordinary [adverb](#adverb) `/h/`).
 
 ### Join-vowel names
 
-English names for set / rank join vowels ([coordination](coordination.md)):
+English names for set / rank join vowels ([joins](joins.md)):
 
 | Name | Vowel | Gloss |
 |------|-------|--------|
@@ -126,7 +126,7 @@ The word a **-r** form points back to.
 
 How many items sit before a join: **list** (2+), **single-item** (1), **standalone** (0).
 
-[Coordination](coordination.md#single-item-phrase)
+[Joins](joins.md#single-item-phrase)
 
 ### As-for
 
@@ -298,7 +298,7 @@ Set **`a`** + singular SHARED = *both/each are ADJ*.
 
 SHARED kind plus invert / standalone joins.
 
-[Coordination](coordination.md#universals-domains-generics)
+[Joins](joins.md#universals-domains-generics)
 
 **Compare with:** [universality](#universality) is the exceptionlessness mood.
 
@@ -306,7 +306,7 @@ SHARED kind plus invert / standalone joins.
 
 Plain **o** + **-m**: *or none*.
 
-[Coordination](coordination.md#empty-allowed-om)
+[Joins](joins.md#empty-allowed-om)
 
 ### Ending / reference suffix
 
@@ -392,13 +392,13 @@ Closed **SAME** + `/b/`.
 
 Join stacks **`ua` / `uo` / `ue`**.
 
-[Coordination](coordination.md#invert-u-stacks)
+[Joins](joins.md#invert-u-stacks)
 
 ### Join / conjunct
 
 Right-close list closer; **conjunct** = listed item.
 
-[Coordination](coordination.md)
+[Joins](joins.md)
 
 ### Join-act verb / join-relation
 
@@ -466,7 +466,7 @@ Short **-n** label for a long title.
 
 Phrase join **-n**.
 
-[Coordination](coordination.md#named-list)
+[Joins](joins.md#named-list)
 
 ### Need inventory
 
@@ -552,7 +552,7 @@ Numeric from–to; clock/date from–to.
 
 Material after the join closer; **SHARED scale** vs **SHARED continuum**.
 
-[Coordination](coordination.md), [comparatives](comparatives.md)
+[Joins](joins.md), [comparatives](comparatives.md)
 
 ### Restrictor
 
@@ -590,7 +590,7 @@ Word-initial job letter.
 
 `^ … ^` with binder inside.
 
-[Spans](spans.md#scope-islands), [coordination](coordination.md#scope-islands-join)
+[Spans](spans.md#scope-islands), [joins](joins.md#scope-islands-join)
 
 ### Sentence linker
 
@@ -602,7 +602,7 @@ Word-initial job letter.
 
 Clause join **-n** (`xan` *and then*).
 
-[Coordination](coordination.md#sequence)
+[Joins](joins.md#sequence)
 
 ### SHARED scale / SHARED continuum
 
@@ -660,7 +660,7 @@ Join readings when the speech act is question.
 
 Join / restrictor **-r** (*something* / *sometime*); fill-ask under question.
 
-[Coordination](coordination.md#unspecified-member-r-phrase)
+[Joins](joins.md#unspecified-member-r-phrase)
 
 ### Universality
 

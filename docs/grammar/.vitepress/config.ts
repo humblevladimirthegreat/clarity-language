@@ -17,7 +17,7 @@ const readingOrder = [
   { text: 'Plurality', link: '/plurality' },
   { text: 'Predication', link: '/predication' },
   { text: 'Vowel series', link: '/vowel-series' },
-  { text: 'Coordination', link: '/coordination' },
+  { text: 'Joins', link: '/joins' },
   { text: 'Questions', link: '/questions' },
   { text: 'Revisers', link: '/revisers' },
   { text: 'Restrictors', link: '/restrictors' },

@@ -130,7 +130,7 @@ SHARED scale under bare/focus **`i`**-series stays **non-equative** (equative ne
 
 **SHARED under `ae`:** like **`a`** — distributive / bundle description; **never** scale-as-equative (that’s **`i`**).
 
-## Summary of changes to [coordination.md](../../grammar/coordination.md)
+## Summary of changes to [joins.md](../../grammar/joins.md)
 
 - Add equality family **`i` / `ai` / `oi` / `ui`**; move **`ae`** out of rank/equality into its **own sequence family** (not set).
 - Series table: *corank* → drop; add *equal* / *coequal* / *choicequal* / *counterequal* / *sequence*.
@@ -151,4 +151,4 @@ SHARED scale under bare/focus **`i`**-series stays **non-equative** (equative ne
 
 ## Acceptance
 
-Adopt by folding this into [coordination.md](../../grammar/coordination.md) (and downstream pages), choosing phonology, then removing the TODO line for “another vowel for equality.”
+Adopt by folding this into [joins.md](../../grammar/joins.md) (and downstream pages), choosing phonology, then removing the TODO line for “another vowel for equality.”

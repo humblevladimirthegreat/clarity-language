@@ -135,7 +135,7 @@ Splitting plan, prediction, and decision firmness helps you avoid treating a wis
 
 It is easy to present two options as if they were the only ones possible.
 
-[Joins](coordination.md) mark what kind of list you are building (inventory, exclusive choice, inclusive *and/or*, rank, …) and whether the listed items are the **only** ones in play (**closed**) or still **open**. Soft or open forms leave room for unlisted alternatives.
+[Joins](joins.md) mark what kind of list you are building (inventory, exclusive choice, inclusive *and/or*, rank, …) and whether the listed items are the **only** ones in play (**closed**) or still **open**. Soft or open forms leave room for unlisted alternatives.
 
 Saying whether a list is open or closed helps you notice false dichotomies, and leaves room for options you have not named yet.
 

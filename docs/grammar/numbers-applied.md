@@ -116,7 +116,7 @@ Vague degree uses `/w/` on the scale (`zel wogegal gomonam …`) with no unit. D
 <a id="from-to"></a>
 <a id="shared-continuum"></a>
 
-English *from 3 to 5* / *between 3 and 5* names a **band on a line**. Write two number endpoints inside a [phrase fence](coordination.md), then a **SHARED continuum** `/ɡ/` that names the line (time, price, measure, …). That `/ɡ/` is the same SHARED slot [comparatives](comparatives.md) use; here it names a **dimension / quantity continuum**, not a ranking of people. The continuum is what makes the fence a range.
+English *from 3 to 5* / *between 3 and 5* names a **band on a line**. Write two number endpoints inside a [phrase fence](joins.md), then a **SHARED continuum** `/ɡ/` that names the line (time, price, measure, …). That `/ɡ/` is the same SHARED slot [comparatives](comparatives.md) use; here it names a **dimension / quantity continuum**, not a ranking of people. The continuum is what makes the fence a range.
 
 > `z+3 z+5 zel gumel.`
 >
@@ -143,7 +143,7 @@ Join vowels (Beginner already used ranked **`e`** for people):
 
 **Compare with:** `zazawan zululon zel gomonam` (*Azawan is more challenging than Ululon*) ranks **people** on a scale. `z+3 z+5 zel gumel` is a **band** on a continuum.
 
-**Not the same job as:** bare **`z+3 z+5 zel`** (*prefer 3 over 5*). Without the SHARED continuum, two number conjuncts are ordinary coordination.
+**Not the same job as:** bare **`z+3 z+5 zel`** (*prefer 3 over 5*). Without the SHARED continuum, two number conjuncts are an ordinary join.
 
 Menu **`o`** / **`ao`** lists discrete values (*3 or 5* / *3 and/or 5*). Equative **`ae`** with numbers is *equal* / *approximately equal* (`z+5 z+5 zael` / `z+3 z+5 zaem`). Exclusive ranked **`oe`** is superlative / empty-superlative with a scale. Three or more number conjuncts under **`a`** are an ordinary list (`zal z+1 z+3 z+7` = *1, 3, and 7*), even with SHARED. Single-item **`zal z+3`** is *just 3*, not a ray.
 
@@ -212,7 +212,7 @@ Titled twins of the stock units: `burulexrawon`, `baragaxrawon`, `baneloxrawon`,
 <a id="numeric-thresholds"></a>
 <a id="greater-less-than"></a>
 
-English *less than 5* / *greater than 5* is a **bound**, not a two-endpoint band. When the **only** member of a [rank join](coordination.md#ranked-conjunction-e) fence (**`e`** / **`ue`**, and their open / named twins) is a compatible number word, that number is an extremum on the line. SHARED continuum is optional: absent = implicit numeric line; present = that named line (`z+5 zel gumel` = *time \< 5*). Special values such as +∞ use [digitless exponents](numbers.md#digitless-exponents) inside the number word (`g+e`).
+English *less than 5* / *greater than 5* is a **bound**, not a two-endpoint band. When the **only** member of a [rank join](joins.md#rank-joins) fence (**`e`** / **`ue`**, and their open / named twins) is a compatible number word, that number is an extremum on the line. SHARED continuum is optional: absent = implicit numeric line; present = that named line (`z+5 zel gumel` = *time \< 5*). Special values such as +∞ use [digitless exponents](numbers.md#digitless-exponents) inside the number word (`g+e`).
 
 > `z+5 zel.`
 >
@@ -234,7 +234,7 @@ Same under `/d/` `/b/` `/ɡ/` (`gel g+5` = modifier *\<5*; `duel d+10` = object 
 
 Default bounds are **strict** (`<` / `>`). For **≤ 5** / **≥ 5**, use a two-endpoint [range](#ranges) with the bound included.
 
-Standalone **`e`** + **-r** = unspecified member of the *\< X* ray (`zer z+5` → *some/whatever value \< 5*; under question → *which value \< 5?*). **`ue`** takes no **-r** (stacked forms never do: [coordination](coordination.md#unspecified-member-r-phrase)).
+Standalone **`e`** + **-r** = unspecified member of the *\< X* ray (`zer z+5` → *some/whatever value \< 5*; under question → *which value \< 5?*). **`ue`** takes no **-r** (stacked forms never do: [joins](joins.md#unspecified-member-r-phrase)).
 
 **Compare with:** `z+3 z+5 zel gumel` (*from 3 to 5 on time*) is a two-endpoint range; `z+3 z+5 zel` is preference; `zazawan zel` (a person) is *only Azawan matters* / [superlative-with-scale](comparatives.md). A **single-item number conjunct** triggers the threshold reading when the number is a bound (typically digitful).
 
@@ -286,5 +286,5 @@ A bare `/z/` (or other freestanding) **`…jo`** percent with no named whole is 
 ## See also
 
 - Number-word anatomy (markers, endings, exponents): [numbers.md](numbers.md)
-- Phrase fences behind ranges: [coordination.md](coordination.md)
+- Phrase fences behind ranges: [joins.md](joins.md)
 - Measured differentials on comparative scales: [comparatives.md](comparatives.md)

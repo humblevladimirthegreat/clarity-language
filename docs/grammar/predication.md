@@ -195,7 +195,7 @@ You already put a kind on `/ɡ/` after the name (*Azawan is a dog*). The extra c
 
 **Related form:** *the dog type* / habitual class uses [**hual**](restrictors.md).
 
-**Related form:** *not a dog* uses [negation **u**](coordination.md#negation-u) (`gul`).
+**Related form:** *not a dog* uses [negation **u**](joins.md#negation-u) (`gul`).
 
 ### **SAME** endings
 
@@ -330,4 +330,4 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 - Scalar *as ADJ as* / comparative property clauses: [comparatives.md](comparatives.md)
 - Complex `/ɡ/`+`/b/`: [core.md](core.md)
-- Negation / single-item packaging on properties: [coordination.md](coordination.md#negation-u)
+- Negation / single-item packaging on properties: [joins.md](joins.md#negation-u)

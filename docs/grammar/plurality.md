@@ -264,7 +264,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 ### Associate-set resolution
 <a id="associate-resolution"></a>
 
-English *Azawan and them* does not say who belongs. After an associative noun, membership is **open** unless you mark it. Write an explicit [join](coordination.md) (or *except*) when the list matters; otherwise the listener uses the recently named cohort, then the scene’s institution (this meeting, this household). That lets you leave the set vague when it does not matter, and pin it when it does.
+English *Azawan and them* does not say who belongs. After an associative noun, membership is **open** unless you mark it. Write an explicit [join](joins.md) (or *except*) when the list matters; otherwise the listener uses the recently named cohort, then the scene’s institution (this meeting, this household). That lets you leave the set vague when it does not matter, and pin it when it does.
 
 > `zazawanx vawalal.`
 >
@@ -329,7 +329,7 @@ English *the boxes are heavy* can mean each box or the pile. Put **-x** on the *
 | host set + singular `/ɡ/` | each member, or don’t care | *the boxes are heavy* |
 | host set + `/ɡ/`…**-x** | collective: the set as one pile | *heavy as a pile*; *vast as a team* |
 
-With a [phrase join](coordination.md), SHARED singular scale under **`a`** is already **each member**; SHARED `/ɡ/`…**-x** is **collective**.
+With a [phrase join](joins.md), SHARED singular scale under **`a`** is already **each member**; SHARED `/ɡ/`…**-x** is **collective**.
 
 | Agalan | English |
 |--------|---------|
@@ -364,7 +364,7 @@ To call a group at the start of a turn, put **-x** on the vocative (`/j/`) after
 | **-rx** | prior addressee and associates | *hey, you (that one) and associates* |
 | **`jedonenx`** | current addressees, no name | *hey, you all* |
 
-**For *everyone*, use:** [universals](coordination.md#universals-domains-generics) (`…ual`).
+**For *everyone*, use:** [universals](joins.md#universals-domains-generics) (`…ual`).
 
 ### Where **-x** sits
 
@@ -381,7 +381,7 @@ Beginner already used **-x** on nouns and person-role specials. The rest of the 
 
 **Related form:** quantity `>1` is digitless **`g+`** (`zagadalx g+3` may use both).
 
-**For *every K*, use:** [universals](coordination.md#universals-domains-generics) (`zual gagadal`; habitual **`hual`**).
+**For *every K*, use:** [universals](joins.md#universals-domains-generics) (`zual gagadal`; habitual **`hual`**).
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>

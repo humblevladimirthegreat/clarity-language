@@ -1,8 +1,8 @@
 # Joins
 
-When English would pack several things that play the same role into one slot (*a dog and a cat*, *walks and runs*), Agalan writes those items in a row and then one join word after them. That last word is how you know the list has ended. Call that pattern a **right-close fence**: items, then the join. The join starts with the same role letter as the items (`z` for people and things, `v` for verbs, `x` for whole clauses).
+When English would pack several things that play the same role into one slot (*a dog and a cat*, *walks and runs*), Agalan writes those items in a row and then one join word after them. That last word is how you know the list has ended. We call that pattern a **right-close fence**: items, then the join. The join starts with the same role letter as the items (`z` for people and things, `v` for verbs, `x` for whole clauses).
 
-Sometimes you only care that the items belong together, with no ranking among them (*and*, *or*, *not*). Call that a **set**. Sometimes you care which item comes first (*X first*, *A before B*). Call that a **rank**.
+Sometimes you only care that the items belong together, with no ranking among them (*and*, *or*, *not*). Call that a **set**. Sometimes you care which item comes first (*X first*, *A before B*). We call that a **rank**.
 
 The join’s vowel is the [vowel series](vowel-series.md) you just mapped: the first letter matches the items’ role; the vowel keeps hold, pick one, instruct, or reverse.
 
@@ -37,8 +37,6 @@ Ending **-m** means other members may exist that you did not name (*among others
 
 ### Right-close fence
 <a id="right-close"></a>
-<a id="vp-level-coordination"></a>
-<a id="clause-level-coordination"></a>
 <a id="join-series-ending-shared"></a>
 
 Write the items first, then the join. Readers treat everything up to that join as one role in the clause, filled by several members. One join finishes the row.
@@ -419,7 +417,6 @@ Standalone **e** answers *who first* with no ranking (no favorite). Standalone *
 **Related form:** lone **`vun`** is a [join-act verb](join-extras.md#join-act-verbs). Yes/no, offer, emptiness, and fill-ask on a lone join: [questions](questions.md#yes-no-single-item-standalone).
 
 ### Rank joins
-<a id="ranked-conjunction-e"></a>
 <a id="rank-joins"></a>
 <a id="priority-ranking-e"></a>
 
@@ -498,7 +495,6 @@ Strict / definitional generics use closed `zual` plus kind (and [FORMAL](special
 **Not the same job as:** plural **-x** ([plurality](plurality.md)) names an anchor and associates, not *every K*.
 
 ### SHARED after the join
-<a id="scope-fence-p-coord"></a>
 <a id="scope-fence-p-join"></a>
 
 When an adjective or extra noun is meant for the **whole list** (*both challenging*, *Azawan's dog and cat*), write it **immediately after** the join. That material describes every member together. A modifier that belongs to one item only stays on that item (after its head, or `gl-` before it).

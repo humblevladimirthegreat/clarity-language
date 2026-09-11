@@ -4,7 +4,7 @@
 
 *Would work* names a **route** toward an **outcome**: effort toward getting the job done, clouds toward rain. Other routes may still exist.
 
-**Needs:** [Joins](coordination.md) and [dependent clauses](core.md#dependent-clauses) (**`adoro`**).
+**Needs:** [Joins](joins.md) and [dependent clauses](core.md#dependent-clauses) (**`adoro`**).
 
 ## Beginner
 <a id="beginner"></a>
@@ -258,7 +258,7 @@ Beginner already pointed at *if* / *because* as dependents. Pick the `/h/` root 
 | Clause–clause explanation | **`hurugum badorol`** |
 | Mixed NP + clause | **`adoro`** under a relation, or a span / noun-form of the clause in `/b/` / `/d/` |
 
-**Related form:** packaging two full sentences as *and also* uses a clause [join](coordination.md) (`xaom` / `xaol`), not a pole root.
+**Related form:** packaging two full sentences as *and also* uses a clause [join](joins.md) (`xaom` / `xaol`), not a pole root.
 
 ### CAUSE
 <a id="cause"></a>
@@ -594,7 +594,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 ## See also
 
-- Inclusive single-item **`…aom` / `…aol`**: [coordination.md](coordination.md#single-item-phrase)
+- Inclusive single-item **`…aom` / `…aol`**: [joins.md](joins.md#single-item-phrase)
 - Join-relations **`haon` / `huan` / `hon`**: [join-extras.md](join-extras.md#join-relations)
 - Restrictors **`hal` / `hual`**: [restrictors.md](restrictors.md)
 - Dependent clauses / **`adoro`**: [core.md](core.md#dependent-clauses)

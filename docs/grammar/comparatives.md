@@ -3,7 +3,7 @@
 
 English splits three nearby jobs on a quality like *challenging*. *More … than* and *the most* put people in **order** on that quality. *As … as* says they sit at the **same height**. *Both are challenging* only says **each has** the quality; it does not say who ranks higher or whether they match.
 
-**Needs:** rank and equality joins from [coordination](coordination.md).
+**Needs:** rank and equality joins from [joins](joins.md).
 
 ## Beginner
 <a id="beginner"></a>
@@ -408,7 +408,7 @@ English *worse than Average* (or *Typical*, *Professional*, *my bar*) ranks some
 
 Closed **-l** stands behind the ranking. Open **-m** (`zuem`) is soft *somewhat worse than…*. Exclusive **`oe`** is pick-one triage on the ladder. Prefer **`ue`** plus a positive scale for English-style *worse than*; forward **`e`** fits when the scale is already cost- or harm-oriented. The same fence works under `/d/` or `/b/` when the ranked group fills that slot.
 
-A personal bar on a named person uses [numeric derivation](numeric-derivation.md#numeric-derivation) (digit morph **`+1`**). **`zuan`** names the class *Everyone* ([coordination](coordination.md#standalone-phrase)).
+A personal bar on a named person uses [numeric derivation](numeric-derivation.md#numeric-derivation) (digit morph **`+1`**). **`zuan`** names the class *Everyone* ([joins](joins.md#standalone-phrase)).
 
 | Agalan | Use | English |
 |---------|-----|---------|
@@ -531,6 +531,6 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 ## See also
 
-- Fence shape, single-item / standalone, SHARED scale / continuum: [coordination.md](coordination.md)
+- Fence shape, single-item / standalone, SHARED scale / continuum: [joins.md](joins.md)
 - Kind and identity (*is a dog*, *is Azawan*): [predication.md](predication.md)
 - Measure NPs: [numbers-applied.md](numbers-applied.md#measure-phrases)

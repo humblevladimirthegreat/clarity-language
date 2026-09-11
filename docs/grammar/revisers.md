@@ -24,7 +24,7 @@ A REV B
 >
 > "Dogs, including a cat among others."
 
-**Compare with:** packaging two members as a list uses a [join](coordination.md) (`zodogol zagadal zam` *a dog and a cat*). A reviser **repairs** A; it does not name a pair.
+**Compare with:** packaging two members as a list uses a [join](joins.md) (`zodogol zagadal zam` *a dog and a cat*). A reviser **repairs** A; it does not name a pair.
 
 ### Rather, instead, except
 
@@ -255,7 +255,7 @@ Beginner already used closed **-l** and open **-m** for how complete B is, or ho
 >
 > "The team except Azawan."
 
-**Compare with:** *no dog* / *not X* uses a prefixed [join](coordination.md#join-series-ending-shared) (`zodogol zul`). Prefix-less **`ul`** excepts a right-hand side in the same slot.
+**Compare with:** *no dog* / *not X* uses a prefixed [join](joins.md#join-series-ending-shared) (`zodogol zul`). Prefix-less **`ul`** excepts a right-hand side in the same slot.
 
 > `zodogol zul.`
 >
@@ -290,7 +290,7 @@ Same-role includes the **verb phrase**:
 >
 > "Ran, with walk as a replacement."
 
-**Compare with:** packaging *(dog instead of cat) and bird* uses a [list join](coordination.md) after the revision chain (`zodogol ol zagadal zubudul zam`). The chain is tighter than the join: it eats following same-role sides paired by **REV**.
+**Compare with:** packaging *(dog instead of cat) and bird* uses a [list join](joins.md) after the revision chain (`zodogol ol zagadal zubudul zam`). The chain is tighter than the join: it eats following same-role sides paired by **REV**.
 
 ### Discourse placements
 <a id="discourse-on-x-continue"></a>
@@ -306,7 +306,7 @@ Beginner already used a reviser at the front of a default statement. Same spelli
 
 One discourse reviser per opener (no parallel discourse chains on one turn marker). In-clause chains stay inside the body. After an explicit turn marker, the same spellings in the body are in-clause revisers.
 
-On a non-initial conjunct under a [clause `/x/` fence](coordination.md#clause-level-coordination), the reviser sits immediately before that conjunct’s body: `A al B xam` → *A and additionally B*. Before an **`/x/`** linker (*therefore*, *however*, …), it scopes the linker+body stretch: `al xezazal …` → *Additionally, therefore …*. Prefer plain `al …` or plain `xezazal …` when one cue is enough.
+On a non-initial conjunct under a [clause `/x/` fence](joins.md#right-close), the reviser sits immediately before that conjunct’s body: `A al B xam` → *A and additionally B*. Before an **`/x/`** linker (*therefore*, *however*, …), it scopes the linker+body stretch: `al xezazal …` → *Additionally, therefore …*. Prefer plain `al …` or plain `xezazal …` when one cue is enough.
 
 > `jazawan al zululon vawalal.`
 >
@@ -314,7 +314,7 @@ On a non-initial conjunct under a [clause `/x/` fence](coordination.md#clause-le
 >
 > "Azawan: additionally, Ululon walks." (vocative, then discourse reviser)
 
-**Related form:** packaging a list uses prefixed [joins](coordination.md#join-series-ending-shared) (`zal` / `zam` / `val` …). Longer prefix-less **root + ending** outside a sentence (`odogol`) is [citation](reference-suffix.md#citation-forms).
+**Related form:** packaging a list uses prefixed [joins](joins.md#join-series-ending-shared) (`zal` / `zam` / `val` …). Longer prefix-less **root + ending** outside a sentence (`odogol`) is [citation](reference-suffix.md#citation-forms).
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -470,5 +470,5 @@ Inside a [measure range](numbers-applied.md#ranges), prefix-less **`ul`** on the
 
 ## See also
 
-- List joins (*and* / *or*): [coordination.md](coordination.md)
+- List joins (*and* / *or*): [joins.md](joins.md)
 - Prefix-less citation: [reference-suffix.md](reference-suffix.md#citation-forms)

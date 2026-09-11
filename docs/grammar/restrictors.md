@@ -1,7 +1,7 @@
 # Restrictors (`/h/` / `/w/`)
 <a id="restrictors"></a>
 
-Use these words when you want to say **when** a claim counts: *only when raining*, *never*, *always*. They take the adverb letter **`h`** plus the same vowels and endings you already use on [joins](coordination.md) (`hal`, `hual`, `ham`, …). Time or case words sit **before** the restrictor; together they limit the verb claim instead of adding another manner.
+Use these words when you want to say **when** a claim counts: *only when raining*, *never*, *always*. They take the adverb letter **`h`** plus the same vowels and endings you already use on [joins](joins.md) (`hal`, `hual`, `ham`, …). Time or case words sit **before** the restrictor; together they limit the verb claim instead of adding another manner.
 
 ## Beginner
 <a id="beginner"></a>
@@ -24,7 +24,7 @@ With **no** occasion listed, the inventory is empty, so the claim never counts: 
 >
 > "Ululon never walks."
 
-**Compare with:** two manner adverbs in a row with no restrictor still both apply (*quickly and quietly*). English *and* there just stacks descriptions on the same walk; it does not pick *when* the walk counts. A restrictor answers **when the verb claim counts**. Packaging members as one list still uses a [join](coordination.md).
+**Compare with:** two manner adverbs in a row with no restrictor still both apply (*quickly and quietly*). English *and* there just stacks descriptions on the same walk; it does not pick *when* the walk counts. A restrictor answers **when the verb claim counts**. Packaging members as one list still uses a [join](joins.md).
 
 > `zazawan vawalal hadazam howom.`
 >
@@ -430,5 +430,5 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 ## See also
 
-- Phrase lists (right-close fence): [coordination.md](coordination.md)
+- Phrase lists (right-close fence): [joins.md](joins.md)
 - *When?* under question: [questions.md](questions.md#when)

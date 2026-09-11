@@ -60,7 +60,7 @@ When you rename a section, **change the heading and the id to the current name**
 | Do | Don’t |
 |----|--------|
 | `### Right-close fence` plus `#right-close` (or the heading’s current slug) | Extra `<a id="left-fence">` under that heading |
-| Fix `coordination.md#left-fence` (and editor notes) to the live id | Stack retired slugs “in case something still points here” |
+| Fix `joins.md#left-fence` (and editor notes) to the live id | Stack retired slugs “in case something still points here” |
 
 **Test:** an unused `<a id="…">` whose name is a former heading is leftover. Delete it. One canonical id per concept, matching the **current** ordinary name (`speech-act`).
 
@@ -130,7 +130,7 @@ Mark the one mix-up so it is easy to scan. Use **one** of these four starters (b
 |--------|--------|
 | **Compare with:** *if* / *because* use the joins and clause poles above. | Sufficient / necessary / *if* / *because* **stay on** the joins. Exceptionlessness **stays on** universality. |
 | **For *I think*, use:** [COMMENT](../grammar/commentary.md#comment) (`odoho`). This inventory is *how you know a world-claim*. | First-person *I think* **stays** COMMENT. |
-| **Related form:** packaging a list uses [joins](../grammar/coordination.md) (`zal` / `val` / `xal`, …). | Phrase, VP, and clause **joins stay on** coordination.md. |
+| **Related form:** packaging a list uses [joins](../grammar/joins.md) (`zal` / `val` / `xal`, …). | Phrase, VP, and clause **joins stay on** joins.md. |
 | **Not the same job as:** [PLAN](../grammar/plan-decision.md#plan-predict) (map grain). This mood marks **pick firmness**. | Intention map grain **stays PLAN**. |
 
 Place the labeled beat **after** the worked example for this form, not in the page lead. The lead says what **this** form does. **At most two** labeled beats per teach block. A third sibling is not a table — omit it; the learner can open that page.

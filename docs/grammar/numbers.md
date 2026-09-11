@@ -248,7 +248,7 @@ Bare clock uses `/h/` + **`ro`**; bare date uses `/h/` + **`roe`** (written `h_#
 ### Marker vowel (referential identity)
 <a id="marker-vowel-referential-identity"></a>
 
-Beginner already used **`+`** (*how many*) and **`#`** (*which place from the start*). The marker vowel **V** is the rest of that map: count versus rank versus digit-string, and (on counts) the sign of the whole word. Forward ordinal **`e`** matches [rank join **e**](coordination.md#ranked-conjunction-e). Count-from-the-end uses a **separate** marker **`eu`**.
+Beginner already used **`+`** (*how many*) and **`#`** (*which place from the start*). The marker vowel **V** is the rest of that map: count versus rank versus digit-string, and (on counts) the sign of the whole word. Forward ordinal **`e`** matches [rank join **e**](joins.md#rank-joins). Count-from-the-end uses a **separate** marker **`eu`**.
 
 | Agalan | Use | English | Cue |
 |---|---------|---------|-----|
@@ -1223,7 +1223,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 ## See also
 
 - Applied uses (labels, time, measure, ranges, percent): [numbers-applied.md](numbers-applied.md)
-- Phrase fences for ranges: [coordination.md](coordination.md)
+- Phrase fences for ranges: [joins.md](joins.md)
 - Scalar comparison / measured differentials: [comparatives.md](comparatives.md)
 - Number-word phonotactics: [phonology.md](phonology.md)
 - Kind morphs (`ROOTxNUM`): [numeric-derivation.md](numeric-derivation.md)

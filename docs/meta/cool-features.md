@@ -52,7 +52,7 @@ You can combine the u with the others to invert the set:
 
 *   `zuol` — *anything*
 
-Full Docs and real examples: [https://main.d2xds94zsgwptg.amplifyapp.com/grammar/coordination.html\#arity-list-single-item-and-standalone](https://main.d2xds94zsgwptg.amplifyapp.com/grammar/coordination.html#arity-list-single-item-and-standalone)
+Full Docs and real examples: [https://main.d2xds94zsgwptg.amplifyapp.com/grammar/joins.html\#single-item-phrase](https://main.d2xds94zsgwptg.amplifyapp.com/grammar/joins.html#single-item-phrase)
 
 ### Egocentric Directions Require Viewpoint
 

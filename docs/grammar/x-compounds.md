@@ -103,7 +103,7 @@ English sometimes puts two nouns in one slot (*a dog and a cat*) and sometimes o
 
 `zazawan zululon` is two people; `zazawaxululon` is one person. A frequent shop mashup is still productive **`x`**; a fossil kind is one lexicon stem (hear one entry, not a dropped **`x`**).
 
-**Compare with:** a property on a host uses `/ɡ/` (or `/w/`); a list uses a [join](coordination.md).
+**Compare with:** a property on a host uses `/ɡ/` (or `/w/`); a list uses a [join](joins.md).
 
 **Related form:** who does / undergoes / relates uses a [role compound](roles.md#role-compounds).
 

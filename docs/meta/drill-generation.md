@@ -4,7 +4,7 @@ Executable editor policy: add end-of-stage Eng ↔ Agalan checkpoints to learner
 
 **How to invoke.** Point here and name a grammar file (or one stage). No extra prompt is required:
 
-- *Execute [drill-generation.md](drill-generation.md) to generate the drills for `coordination.md`.*
+- *Execute [drill-generation.md](drill-generation.md) to generate the drills for `joins.md`.*
 - *… for `docs/grammar/questions.md` Intermediate.*
 - *… for core Beginner* (already exists — skip unless asked to replace).
 
@@ -17,7 +17,7 @@ Run these steps in order. Stop if a step says stop.
 
 ### 1. Resolve the target
 
-Parse the user’s file/stage from their message. Accept `coordination`, `coordination.md`, `docs/grammar/coordination.md`. Optional stage word: **Beginner** / **Intermediate** / **Advanced**.
+Parse the user’s file/stage from their message. Accept `joins`, `joins.md`, `docs/grammar/joins.md`. Optional stage word: **Beginner** / **Intermediate** / **Advanced**.
 
 | Target | Action |
 |--------|--------|
@@ -114,7 +114,7 @@ Drills depend on **what has been taught**, not on other files’ drill text. Par
 | **Intermediate** at path *N* | All **Beginner** Introduces on the beginner path (productive pages), **plus** **Intermediate** Introduces with a **smaller** path number, except siblings and [optional tracks](#optional) |
 | **Advanced** at path *N* | That Intermediate recycle, **plus** this file’s Intermediate Introduces, **plus** Advanced Introduces with a **smaller** path number, except siblings and optional tracks |
 
-**Needs:** lines on the grammar page always add those forms to Recycle (comparatives Beginner → coordination Beginner rank joins; causation Beginner → coordination Beginner + core **`adoro`**).
+**Needs:** lines on the grammar page always add those forms to Recycle (comparatives Beginner → joins Beginner rank joins; causation Beginner → joins Beginner + core **`adoro`**).
 
 Honor [teach now; don’t preview later](grammar-docs.md#teach-now-dont-preview-later) inside Beginner: a Beginner checkpoint must not use that file’s Intermediate / Advanced, or a later peer’s Beginner.
 
@@ -130,7 +130,7 @@ Path items joined with `·` are **co-located**, not ordered. Do **not** recycle 
 | 13 | `numbers.md` · `comparatives.md` · `causation.md` |
 | 14 | `values.md` · `ability.md` · `commentary.md` · `roles.md` · `x-compounds.md` · `plan-decision.md` |
 
-Later path numbers **may** recycle both siblings (e.g. coordination Beginner may use pronouns **and** plurality Beginner).
+Later path numbers **may** recycle both siblings (e.g. joins Beginner may use pronouns **and** plurality Beginner).
 
 ### Optional tracks
 <a id="optional"></a>
@@ -157,7 +157,7 @@ No translation checkpoint (recognition, orientation, or no new productive stack)
 | `x-compounds.md` | Parser map of families taught on other pages |
 | Advanced stages whose only H3s are **Design notes**, **Constraints**, **Out of scope**, **Boundaries**, or pointer inventories | Nothing to produce; see allowlist **skip** |
 
-Do **not** skip productive syntax pages (core, coordination, questions, values, …). Thin **Advanced** on an otherwise productive page is skip; that page’s Beginner / Intermediate still generate.
+Do **not** skip productive syntax pages (core, joins, questions, values, …). Thin **Advanced** on an otherwise productive page is skip; that page’s Beginner / Intermediate still generate.
 
 ## Shared root bank
 <a id="root-bank"></a>
@@ -213,14 +213,14 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 6 | `plurality.md` | **exists** | Associative **-x** (`-lx` / `-nx` / `-rx`); not agreement; person-role **-x** (address set vs name…**-x**) | **`aha`** as the *not this* for inclusive *we*. **`ugobo`/`edone`** only on person-role items |
 | 7 | `predication.md` | **exists** | Classification `z… g…` vs kind *noun* `zodogol`; identity **`gonunul` + `/b/`** | No general *to-be* `/v/`. Prefer house names + **SAME**; page-example roots (`odava` / `uzuba`) OK if already taught in this stage |
 | 8 | `vowel-series.md` | skip | — | mnemonic only |
-| 9 | `coordination.md` | **exists** | Right-close fence; set vs rank vowels; **-l** vs **-m**; list / single-item / standalone starter forms; negation **`u`**; unspecified **-r** as *something* (not fill-ask) | No revisers, no restrictor `/h/` join readings, no comparatives SHARED scale as the point (that is comparatives) |
+| 9 | `joins.md` | **exists** | Right-close fence; set vs rank vowels; **-l** vs **-m**; list / single-item / standalone starter forms; negation **`u`**; unspecified **-r** as *something* (not fill-ask) | No revisers, no restrictor `/h/` join readings, no comparatives SHARED scale as the point (that is comparatives) |
 | 10 | `questions.md` | **exists** | **`jol`/`jom`** yes/no vs fill-ask (join **-r**); fill-all; polar **`jael` / `juel` / `jaol`** vs **`jul`** vs join **`zul`** | **`jom`** is taught here as soft *ask* — allowed on this page even though full speech-act twins are core Intermediate. Circumstance *when?* **`har`** is Intermediate on this page — do not use |
 | 11 | `revisers.md` | **exists** | Prefix-less **`al`/`am`/`ol`/`ul`** (and **e** / **n** as taught in this stage); in-clause `A REV B`; discourse **`al`** *additionally* before a body | Not a join (`zam` vs `am`). Not **`x#e-` / `x#e`** (numbers discourse) |
-| 11 | `restrictors.md` | **exists** | **`hal`/`ham`/`hual`/`huam`/`har`/`hor`/`hur`** (and `/w/` twins); *only when* vs co-manner *and*; bare *never* / *always* | Not sibling revisers. Not coordination **`zam`** as a restrictor |
+| 11 | `restrictors.md` | **exists** | **`hal`/`ham`/`hual`/`huam`/`har`/`hor`/`hur`** (and `/w/` twins); *only when* vs co-manner *and*; bare *never* / *always* | Not sibling revisers. Not join **`zam`** as a restrictor |
 | 12 | `spans.md` | **exists** | Writing fences `[ ]` `{ }` `( )` `< >`; **`~`/`@`**; resume `d[=]`; PoS = outer slot; **aside** = `h(…)`; interior fragment or same-speech-act clause; when a span is required vs nativized word | `<>` loans **allowed** (this stage teaches them). Prefer atomic one-token cites |
 | 13 | `numbers.md` | **exists** | `g+N` count; `g#N` ordinal; digitless **`g+`** (*more than one*) with **-x** on the noun | No `/v/` `/h/` `/j/` `/x/` number uses, exponents, ranges, percent, measures (later). **-x** from plurality is recycle |
-| 13 | `comparatives.md` | **exists** | Rank fence **`e`/`oe`/`ue`** + SHARED scale `/ɡ/`; single-item superlative; equative **`ae`** | **Needs:** coordination Beginner rank joins. No measure phrases (Intermediate). No numbers Intermediate |
-| 13 | `causation.md` | **exists** | Sufficient = open sufficient (`…aom` / default pole habit); no cause-arrow word; outcome as host | **Needs:** coordination Beginner inclusive/exclusion + core **`adoro`**. Necessary / **`IF` vs `IFF`** are Intermediate — do not use |
+| 13 | `comparatives.md` | **exists** | Rank fence **`e`/`oe`/`ue`** + SHARED scale `/ɡ/`; single-item superlative; equative **`ae`** | **Needs:** joins Beginner rank joins. No measure phrases (Intermediate). No numbers Intermediate |
+| 13 | `causation.md` | **exists** | Sufficient = open sufficient (`…aom` / default pole habit); no cause-arrow word; outcome as host | **Needs:** joins Beginner inclusive/exclusion + core **`adoro`**. Necessary / **`IF` vs `IFF`** are Intermediate — do not use |
 | 14 | `values.md` | **exists** | Six needs; `/h/` vs `/w/`; topic (bare); **`xa`** met + contact **-l / -m / -r**; **`xo`** prescription force; **`xu`** unmet changeability | **Not** motive **`xe`** (Intermediate). Not ability (non-need + `x` vowel). Not COMMENT |
 | 14 | `ability.md` | **exists** | Host (non-need) + **`xa`/`xe`/`xo`/`xu`**; *can’t* grains vs *won’t* | Not values (need roots). Not role compounds (vowel *left* of `x`) |
 | 14 | `commentary.md` | **exists** | **COMMENT** **`odoho`** + hold endings (**`hodohom`** default); not a world claim | Not evidentiality / NOTIONAL (Intermediate). Not **`jom`** (core Intermediate) unless you only recycle **`jol`** from core/questions Beginner |
@@ -245,8 +245,8 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 7 | `plurality.md` | Advanced | — | no Advanced stage | |
 | 8 | `predication.md` | Intermediate | **exists** | Classification packaging; **SAME** endings / open **-m** | |
 | 8 | `predication.md` | Advanced | skip | boundaries | |
-| 9 | `coordination.md` | Intermediate | **exists** | Full single-item/standalone; rank joins as *the* stack if not already fluent; invert **`ua`/`uo`/`ue`**; universals/domains; SHARED after join; `^` islands; fence nesting; clause **sequence** (`xan`); VP/clause forms | Sample **decisions**, not every H3. 6–8 items |
-| 9 | `coordination.md` | Advanced | **exists** | Named phrase **-n**; one rare-arity or reserved contrast from this stage | 4–6 items |
+| 9 | `joins.md` | Intermediate | **exists** | Full single-item/standalone; rank joins as *the* stack if not already fluent; invert **`ua`/`uo`/`ue`**; universals/domains; SHARED after join; `^` islands; fence nesting; clause **sequence** (`xan`); VP/clause forms | Sample **decisions**, not every H3. 6–8 items |
+| 9 | `joins.md` | Advanced | **exists** | Named phrase **-n**; one rare-arity or reserved contrast from this stage | 4–6 items |
 | 10 | `questions.md` | Intermediate | **exists** | Fuller polar inventory; confirming a negative; fill-ask arity; occasion **`har`**; yes/no with single-item/standalone; fill-ask answers | |
 | 10 | `questions.md` | Advanced | **exists** | Polar contrasts; single-item/standalone inventory under question | 4–6 items |
 | 11 | `revisers.md` | Intermediate | **exists** | Ending grids; parallel chains; discourse placements (before the act word, `/x/` continue/linker) | |
@@ -290,7 +290,7 @@ First-taught checkpoint for forms agents leak most often. If this checkpoint’s
 | Letter/full-root **-r** algorithm; **`ugobo`/`edone`/`aha`/`enenu`** | `pronouns.md` Beginner |
 | Associative **-x** | `plurality.md` Beginner |
 | **SAME** `gonunul` | `predication.md` Beginner |
-| Phrase/VP/clause joins, **`zal`/`zam`/`zel`**, negation **`u`** | `coordination.md` Beginner |
+| Phrase/VP/clause joins, **`zal`/`zam`/`zel`**, negation **`u`** | `joins.md` Beginner |
 | Fill-ask join **-r** (`zar` / `var` / `xar`); polar **`juel`/`jaol`** as the *system* | `questions.md` Beginner |
 | Revisers **`al`/`ol`/`ul`** | `revisers.md` Beginner |
 | **`hal`/`hual`/`har`** | `restrictors.md` Beginner |
@@ -315,7 +315,7 @@ First-taught checkpoint for forms agents leak most often. If this checkpoint’s
 | `ROOT x NUM` derivation | `numeric-derivation.md` Advanced |
 | Universality overlays | `special-vocabulary.md` Advanced |
 
-**`jol`** yes/no with a house-name subject is core Beginner. **`jol zar …`** fill-ask is questions Beginner (needs coordination unspecified **-r**).
+**`jol`** yes/no with a house-name subject is core Beginner. **`jol zar …`** fill-ask is questions Beginner (needs joins unspecified **-r**).
 
 ## Review
 <a id="review"></a>

@@ -204,7 +204,7 @@ The rest of the role map (same **-n**):
 
 An extra **`l`** after `/ɡ/` (`gl-`) is the before-the-noun spelling ([left-bound adjectives](core.md#left-bound-adjectives)), not a fifth reference suffix. Closed speech-act words (`jal` / `jol` / …) use their [act endings](core.md#speech-act). Manner and ordinary degree use **-l** / **-m** unless the manner or grade is itself a proper name.
 
-**Compare with:** [join words](coordination.md) use **-n** as join packaging or join content (fence joins, clause **sequence**, [join-act](join-extras.md#join-act-verbs) / [join-relation](join-extras.md#join-relations) stems). That is the one place **-n** is not a name.
+**Compare with:** [join words](joins.md) use **-n** as join packaging or join content (fence joins, clause **sequence**, [join-act](join-extras.md#join-act-verbs) / [join-relation](join-extras.md#join-relations) stems). That is the one place **-n** is not a name.
 
 ### Phrasal proper names (mid-word `x`)
 <a id="phrasal-proper-names"></a>
@@ -225,7 +225,7 @@ English often writes a given name plus family as two words. In Agalan a short mu
 
 A nativized loan (adapted Agalan root + ordinary ending) uses the same four last letters as any content word. A **lexical compound** is also one slot-filler: one stem, not mid-word **`x`** (`zohohulabedel` *bedroom*).
 
-**Compare with:** adjacent bare same-role words (`zodunan zalanen`) are two people in a [join](coordination.md).
+**Compare with:** adjacent bare same-role words (`zodunan zalanen`) are two people in a [join](joins.md).
 
 ### Named handles
 <a id="named-handles"></a>
@@ -262,7 +262,7 @@ Beginner used **-n** as a name on cited roots and on content words. On `/x/`, th
 |--------|-----|---------|
 | linker + **-l** / **-m** | glue one finished sentence to the next | *but*, *therefore*, … |
 | other `/x/` root + **-n** | titled agenda / section label | thread shift (*let’s now talk about X*) |
-| clause join + **-n** | **sequence** | *and then* **`xan`**, … ([coordination](coordination.md)) |
+| clause join + **-n** | **sequence** | *and then* **`xan`**, … ([joins](joins.md)) |
 
 Prefix-less [discourse revisers](revisers.md#discourse-revisers) use reviser endings, including named **-n**.
 

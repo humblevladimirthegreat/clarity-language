@@ -46,7 +46,7 @@ Read **`docs/grammar/`** only, in stage order. [why-agelan.md](../grammar/why-ag
 6. [pronouns.md](../grammar/pronouns.md#beginner) · [plurality.md](../grammar/plurality.md#beginner)
 7. [predication.md](../grammar/predication.md#beginner)
 8. [vowel-series.md](../grammar/vowel-series.md#beginner) (one-screen map; not a new morph)
-9. [coordination.md](../grammar/coordination.md#beginner)
+9. [joins.md](../grammar/joins.md#beginner)
 10. [questions.md](../grammar/questions.md#beginner)
 11. [revisers.md](../grammar/revisers.md#beginner) · [restrictors.md](../grammar/restrictors.md#beginner)
 12. [spans.md](../grammar/spans.md#beginner)

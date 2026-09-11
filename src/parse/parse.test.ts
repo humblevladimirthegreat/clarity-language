@@ -81,7 +81,7 @@ describe("parse — core.md beginner", () => {
   });
 });
 
-describe("parse — coordination.md", () => {
+describe("parse — joins.md", () => {
   it("parses zadagal zagadal zam.", () => {
     const result = parseText("zadagal zagadal zam.");
     const unit = result.utterances[0]!.bodies[0]!.clause.units[0]!;

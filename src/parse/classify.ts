@@ -122,7 +122,7 @@ function isRestrictor(word: MorphWord): boolean {
   return RESTRICTOR_CORE.has(family.series + ending);
 }
 
-/** Join series English jobs — [coordination.md](docs/grammar/coordination.md) beginner set/rank tables. */
+/** Join series English jobs — [joins.md](docs/grammar/joins.md) beginner set/rank tables. */
 const JOIN_SERIES_GLOSS: Record<string, string> = {
   a: "and",
   o: "exclusive or",

@@ -406,13 +406,13 @@ Sometimes *maybe* or a join should apply only to a multi-word chunk, not the who
 - No role letter on the edges.
 - **One island per clause.** Islands do not nest.
 - Empty `^^` has no reading.
-- **Binder required:** at least one scope-taking `/h/` and/or a [join](coordination.md#scope-islands-join) particle **inside**.
+- **Binder required:** at least one scope-taking `/h/` and/or a [join](joins.md#scope-islands-join) particle **inside**.
 - Prefer spaces inside: `^ h<maybe>l zodogol garedel ^`.
 
 | Binder | Use inside the island |
 |--------|------------------------|
 | Scope-taking **`/h/`** | frames that **chunk** (prefer first in the island) |
-| Prefixed **join** | joins **only** matching-role material **inside** — [scope islands](coordination.md#scope-islands-join) |
+| Prefixed **join** | joins **only** matching-role material **inside** — [scope islands](joins.md#scope-islands-join) |
 
 `/h/` and a join may share one island (`^ h<maybe>l zazawan zululon zam ^`).
 
@@ -739,7 +739,7 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 ## See also
 
-- Scope islands: [coordination.md](coordination.md#scope-islands-join)
+- Scope islands: [joins.md](joins.md#scope-islands-join)
 - Identity vs parenthetical comment: [predication.md](predication.md#identity)
 - Phrasal proper names: [reference-suffix.md](reference-suffix.md#phrasal-proper-names)
 - Native office handles: [reference-suffix.md](reference-suffix.md#named-handles)

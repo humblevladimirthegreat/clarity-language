@@ -301,7 +301,7 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
     if (sharedRole === "continuum") {
       return { line: `continuum join ${family.series}`, href: "numbers.html#ranges" };
     }
-    return { line: `join ${family.series}`, href: "coordination.html" };
+    return { line: `join ${family.series}`, href: "joins.html" };
   }
   if (family.kind === "reviser") {
     return { line: "reviser", href: "revisers.html" };

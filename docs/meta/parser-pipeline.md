@@ -9,7 +9,7 @@ Library-first multi-stage parser for CLI checks, fixtures that lock the grammar 
 
 1. **Library-owned string and clause structure** — morphology, numbers, writing atoms, joins, spans, utterance framing.
 2. **Thin custom layer** — lexicon/overlay classification, token adapters, AST assembly, orchestration, resolve.
-3. **Doc sync** — mid-word **`x`** rule order mirrors [x-compounds.md](../grammar/x-compounds.md); number stems mirror [numbers.md](../grammar/numbers.md); sentence fences mirror [coordination.md](../grammar/coordination.md) / [spans.md](../grammar/spans.md) / [core.md](../grammar/core.md).
+3. **Doc sync** — mid-word **`x`** rule order mirrors [x-compounds.md](../grammar/x-compounds.md); number stems mirror [numbers.md](../grammar/numbers.md); sentence fences mirror [joins.md](../grammar/joins.md) / [spans.md](../grammar/spans.md) / [core.md](../grammar/core.md).
 4. **Testable stages** — morph fixtures, classify fixtures, sentence fixtures, and resolve fixtures fail independently.
 5. **No design authority creep** — if a parse fork is not in the docs, fix the docs or reject the input; do not paper over with backtracking across stages.
 
@@ -223,7 +223,7 @@ A production **parse** bundle is **not wired yet** (`build:lexicon-web` only bun
 | Core sentence grammar / orthography / framing | [core.md](../grammar/core.md) |
 | Mid-word **`x`** families | [x-compounds.md](../grammar/x-compounds.md) |
 | Numbers | [numbers.md](../grammar/numbers.md) |
-| Joins | [coordination.md](../grammar/coordination.md) |
+| Joins | [joins.md](../grammar/joins.md) |
 | Spans | [spans.md](../grammar/spans.md) |
 | Pronouns / **-r** | [pronouns.md](../grammar/pronouns.md) |
 | Questions / fill-ask | [questions.md](../grammar/questions.md) |

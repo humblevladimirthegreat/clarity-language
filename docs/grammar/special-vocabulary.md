@@ -198,7 +198,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 <a id="universality"></a>
 <a id="universality-mood"></a>
 
-English *always* / *every* / *never* / *everyone* smuggle **how exceptionless** the claim is. Keep *who / when* on the [universal fences](coordination.md#universals-domains-generics) (`zual` / `hual` / …). Write exceptionlessness as a closed `/h/` mood root (optional `/w/` on a preceding `/ɡ/`). You can then pair *always* with *usually*, *by definition*, and the rest without changing the domain fence.
+English *always* / *every* / *never* / *everyone* smuggle **how exceptionless** the claim is. Keep *who / when* on the [universal fences](joins.md#universals-domains-generics) (`zual` / `hual` / …). Write exceptionlessness as a closed `/h/` mood root (optional `/w/` on a preceding `/ɡ/`). You can then pair *always* with *usually*, *by definition*, and the rest without changing the domain fence.
 
 > `zazawan hual vawalal harogul.`
 >
@@ -216,7 +216,7 @@ The default *always* is *usually* (exceptions expected), not *must happen that w
 | **`habelel`** | NATURAL | *by natural necessity* (unsupported objects fall) | `abelel` *apple* | 🍎: it falls because the world works that way |
 | **`hebebel`** | RULE | *under a named frame* (`hebebel begezel`) | `ebebel` *pepper* | 🌶️: heat that applies in that dish |
 
-**Compare with:** *who / when* uses [universal fences](coordination.md#universals-domains-generics) (`zual` / `hual` / `zuam`) and [restrictors](restrictors.md) (`hual`). Soft **-m** on the fence (`zuam` / `huam`) is open inventory.
+**Compare with:** *who / when* uses [universal fences](joins.md#universals-domains-generics) (`zual` / `hual` / `zuam`) and [restrictors](restrictors.md) (`hual`). Soft **-m** on the fence (`zuam` / `huam`) is open inventory.
 
 **For *I saw a pattern*, use:** [evidential](commentary.md#evidentiality) **`abawa`**. **`arogu`** is usual-weather universality; NATURAL **`abele`** stacks a separate evidential `/h/` for how you know.
 
@@ -340,5 +340,5 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 
 - Values on the judged host: [values.md](values.md)
 - COMMENT / evidential stack: [commentary.md](commentary.md)
-- Domain / habitual fences: [coordination.md](coordination.md#universals-domains-generics)
+- Domain / habitual fences: [joins.md](joins.md#universals-domains-generics)
 - Preference vs law / CAUSE: [causation.md](causation.md)

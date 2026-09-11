@@ -17,9 +17,9 @@ When someone *does* a list move to a thing (*includes*, *chooses*, *leaves out*)
 >
 > "Azawan includes/adds an apple."
 
-**Related form:** packaging a list uses [joins](coordination.md) (`zal` / `val` / `xal`, …).
+**Related form:** packaging a list uses [joins](joins.md) (`zal` / `val` / `xal`, …).
 
-**Compare with:** *and then* between sentences uses clause [sequence](coordination.md#sequence) (`xan`, …), not `van`.
+**Compare with:** *and then* between sentences uses clause [sequence](joins.md#sequence) (`xan`, …), not `van`.
 
 These are ordinary content verbs. Point back at a join-act you already used with a short resume or a full paraphrase. Stacked vowels combine the same four moves (**a** / **o** / **e** / **u**):
 
@@ -51,11 +51,11 @@ When a noun or event is *framed* toward something (*cake with peanuts*, *walk wi
 
 Content *including* needs that `/b/` (`gan b…`). A stock label uses a [mention](spans.md) span.
 
-**Not the same job as:** adjective [joins](coordination.md) (`gal` / `gam` / `gar`). Join-relations take **-n** toward one `/b/`.
+**Not the same job as:** adjective [joins](joins.md) (`gal` / `gam` / `gar`). Join-relations take **-n** toward one `/b/`.
 
 **For *including* as an afterthought, use:** a [reviser](revisers.md) (`al`, …). `zahadam gan bazawan` is *a team including Azawan*; `zahadam al zazawan` is *the team, including Azawan*.
 
-For several members or an empty domain, put a [phrase join](coordination.md) **inside** the `/b/` phrase (`gan babanul bubagem bal`), or use a [standalone](coordination.md#standalone-phrase) `/b/` join as the only argument (`gan bar` = *including something*; `guan bal` = *excluding nothing* / stripped frame).
+For several members or an empty domain, put a [phrase join](joins.md) **inside** the `/b/` phrase (`gan babanul bubagem bal`), or use a [standalone](joins.md#standalone-phrase) `/b/` join as the only argument (`gan bar` = *including something*; `guan bal` = *excluding nothing* / stripped frame).
 
 | Agalan | Use | English | Cue | Example |
 |--------|-----|---------|-----|---------|
@@ -189,6 +189,6 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 ## See also
 
-- List joins (right-close fence): [coordination.md](coordination.md)
+- List joins (right-close fence): [joins.md](joins.md)
 - Causal readings of open / without: [causation.md](causation.md)
 - Prefix-less *including* / *instead*: [revisers.md](revisers.md)

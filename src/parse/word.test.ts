@@ -259,7 +259,7 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     });
   });
 
-  it("parses zal as a join marker, not content (coordination.md)", () => {
+  it("parses zal as a join marker, not content (joins.md)", () => {
     const word = parseOk("zal");
     assert.equal(word.pos, "z");
     assert.equal(word.ending, "l");
