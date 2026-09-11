@@ -112,7 +112,7 @@ English sometimes puts two nouns in one slot (*a dog and a cat*) and sometimes o
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. The point is **`x`** assembly vs two words vs a lexical compound.
 
-**Roots used here** (Same root as is not the word you produce):
+**Roots used here**:
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|

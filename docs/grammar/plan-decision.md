@@ -61,7 +61,7 @@ To say **what will happen** in the world (rain, a result), not what someone mean
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Pick **PLAN** (`owora` + map-resolution ending) or **PREDICT** (`elezo`). English *will* is not one Agalan form.
 
-**Roots used here** (Same root as is not the word you produce):
+**Roots used here**:
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -209,7 +209,7 @@ When you mark **how** you forecast (a usual pattern, an inference, and so on), k
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Pick **DECISION** (`egege` + changeability), stack evidentiality on **PREDICT**, or stack **PLAN** with **DECISION**.
 
-**Roots used here** (Same root as is not the word you produce):
+**Roots used here**:
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|

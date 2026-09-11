@@ -515,7 +515,7 @@ A number word in `/j/` is a call-out (*Three more!*, a score). It can sit with t
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
-**Roots used here** (Same root as is not the word you produce):
+**Roots used here**:
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|

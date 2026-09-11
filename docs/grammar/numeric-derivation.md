@@ -274,7 +274,7 @@ Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`zahaxre
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. `ROOT x NUM` names a **kind property** (essence, grain, quasi, part-count, order-kind, catalog code, total-null): spelled CV plus the **host** ending.
 
-**Roots used here** (Same root as is not the word you produce):
+**Roots used here**:
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|

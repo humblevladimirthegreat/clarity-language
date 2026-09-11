@@ -115,7 +115,7 @@ The same roots take the role letter of the slot they fill. As a direct object th
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here** (Same root as is not the word you produce):
+**Roots used here**:
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -388,7 +388,7 @@ Beginner already used **-x** on nouns and person-role specials. The rest of the 
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here** (Same root as is not the word you produce):
+**Roots used here**:
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|

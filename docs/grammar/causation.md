@@ -298,7 +298,7 @@ English *should* on a causal claim is often a wish or ought, not a formal or nat
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Mark **necessary** with exclusion / **`hal`**, unique path with **`gon` / `hon` / `…ol`**, clause poles with **`hadorom` / `hezazem` / `hurugum`**, and **CAUSE** with **`hegegam`**. An ought sits on values **`xo`**.
 
-**Roots used here** (Same root as is not the word you produce):
+**Roots used here**:
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -513,7 +513,7 @@ Time and discourse dependents use the same **`adoro`** hang as *if* / *because*.
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. **`hurugum`** asserts the dependent as a fact the main sentence rests on; **`hadorom`** does not; speaker-grounds stay **`hodohom`**. Habit uses **`hual`**.
 
-**Roots used here** (Same root as is not the word you produce):
+**Roots used here**:
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|

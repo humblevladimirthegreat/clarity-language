@@ -162,7 +162,7 @@ A *…, yes?* confirm tag is its own next turn: finish the statement with a peri
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here** (Same root as is not the word you produce):
+**Roots used here**:
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|

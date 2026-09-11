@@ -7,10 +7,17 @@
   flex-direction: column;
 }
 
+/* Keep the title curtain’s height so its negative margin does not pull
+   `.nav` up under the site title (flex items shrink by default). */
+.VPSidebar > .curtain {
+  flex-shrink: 0;
+}
+
 .VPSidebar .nav {
   display: flex;
   flex-direction: column;
-  flex: 1 0 auto;
+  flex: 1 1 auto;
+  min-height: 0;
 }
 
 .site-build-stamp-wrap {

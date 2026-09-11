@@ -85,7 +85,7 @@ Emotion compose already used **`hogegal`** (HIGH arousal) next to **`zogegal`** 
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Compose emotion (one value + ACT + LOCUS), or number alternative candidates (`g#N`).
 
-**Roots used here** (Same root as is not the word you produce):
+**Roots used here**:
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -234,7 +234,7 @@ The default *always* is *usually* (exceptions expected), not *must happen that w
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. Pair a domain fence (`hual` / `zual` / `zuam`) with a universality mood.
 
-**Roots used here** (Same root as is not the word you produce):
+**Roots used here**:
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|

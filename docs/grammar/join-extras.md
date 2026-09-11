@@ -77,7 +77,7 @@ For several members or an empty domain, put a [phrase join](joins.md) **inside**
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Name a **join-act** (`van` / `von` / …) when someone *does* the move to an object; name a **join-relation** (`gan` / `han` / … plus one `/b/`) when a host is framed *including* / *without* / *prioritizing* something.
 
-**Roots used here** (Same root as is not the word you produce):
+**Roots used here**:
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|

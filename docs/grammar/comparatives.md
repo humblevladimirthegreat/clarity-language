@@ -94,7 +94,7 @@ When English would say *as challenging as*, you are not picking a winner. You ar
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Rank fence plus shared scale `/ɡ/` is the comparison; single-item `zel` is the superlative; `zael` / `zaem` are equative.
 
-**Roots used here** (Same root as is not the word you produce):
+**Roots used here**:
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -279,7 +279,7 @@ English *two meters more challenging* still ranks two people on one quality, and
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Test arity (`oe` / `ue` / standalone / `zer`), distributive **`a`**, and counted measure gaps versus vague `/w/`.
 
-**Roots used here** (Same root as is not the word you produce):
+**Roots used here**:
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -441,7 +441,7 @@ Single-item `zazawan zuel gomonam` is *the least challenging* in the group in pl
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. Put the standard in the *than*-conjunct; **`zugobon`** is performance, **`zugoboxrawon`** is Mine.
 
-**Roots used here** (Same root as is not the word you produce):
+**Roots used here**:
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|

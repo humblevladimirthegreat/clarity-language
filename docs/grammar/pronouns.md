@@ -94,7 +94,7 @@ English *we* can mean “you and I” or “I and my people, not you.” Inclusi
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here** (Same root as is not the word you produce):
+**Roots used here**:
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -282,7 +282,7 @@ When you address several people at once, English *you* does not say how many. Th
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here** (Same root as is not the word you produce):
+**Roots used here**:
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -486,7 +486,7 @@ Intermediate already recast one referent into a new slot. Each table is an **ant
 
 Short drills on this Advanced band. Try each item before opening **Show answer**.
 
-**Roots used here** (Same root as is not the word you produce):
+**Roots used here**:
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|

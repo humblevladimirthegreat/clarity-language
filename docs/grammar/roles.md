@@ -93,7 +93,7 @@ To say someone **is a kind** (*Azawan is a fighter*), put the same role stem on 
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here** (Same root as is not the word you produce):
+**Roots used here**:
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -336,7 +336,7 @@ Direction words take the same four [reference endings](reference-suffix.md) as o
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here** (Same root as is not the word you produce):
+**Roots used here**:
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|

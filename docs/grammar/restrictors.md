@@ -105,7 +105,7 @@ Open **-m** leaves other occasions possible: *when raining, among other times*, 
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Restrictors mark **when the claim counts**. Bare **`hal`** / **`hual`** are *never* / *always*; with a listed occasion they are *only when…* / *always except when…*.
 
-**Roots used here** (Same root as is not the word you produce):
+**Roots used here**:
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -306,7 +306,7 @@ Statement readings below. Asking *when*: [questions.md](questions.md#when).
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Use exclusive / inclusive / *not when* / ranked occasions / unspecified-member with listed occasions. Next-clause *when* / *if* stays `/h/` plus `/b/` **`adoro`**.
 
-**Roots used here** (Same root as is not the word you produce):
+**Roots used here**:
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|

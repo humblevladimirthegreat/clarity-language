@@ -596,7 +596,7 @@ An adverb `/h/` before the verb-phrase stretch, or in SHARED after the join, cov
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Sample the decisions this band adds: invert **`ua`**, universals vs *everything but*, SHARED after the join, islands, nesting, and clause **`xan`**.
 
-**Roots used here** (Same root as is not the word you produce):
+**Roots used here**:
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|

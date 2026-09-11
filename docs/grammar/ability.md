@@ -66,7 +66,7 @@ English *can't* does not say whether the inability is for this moment, still cha
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Tag **can** / **can’t** on an activity or property host; one item is a plain event with no can / can’t tag.
 
-**Roots used here** (Same root as is not the word you produce):
+**Roots used here**:
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -225,7 +225,7 @@ Ordinary `zegeral` still means *cereal* / *a capacity* (content word, no stance)
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Prefer a host when one activity root fits; use **`egera`** when there is no single host.
 
-**Roots used here** (Same root as is not the word you produce):
+**Roots used here**:
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|

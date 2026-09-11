@@ -89,7 +89,7 @@ The word ends with exact **-l**, spoken as its own last syllable. Build the spok
 
 Short drills on this Beginner band. Try each item before opening **Show answer**. Count with `g+N`, rank with `g#N`, and use digitless **`g+`** with **-x** on the noun for *more than one*.
 
-**Roots used here** (Same root as is not the word you produce):
+**Roots used here**:
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -711,7 +711,7 @@ In a sentence, the PoS attaches to that single number word (see [Parts of speech
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Prefer shorthand (`g~+3`, `g#-2`, `h_15,30`). Sample PoS, endings, digitless number as verb / adverb / interjection / discourse, and **one** time reading — not the whole inventory.
 
-**Roots used here** (Same root as is not the word you produce):
+**Roots used here**:
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
