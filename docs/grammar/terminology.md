@@ -658,7 +658,7 @@ Join readings when the speech act is question.
 
 ### Unspecified member
 
-Join / restrictor **-r** (*something* / *sometime*); fill-ask under question.
+Join / restrictor **-r** (*something* / *sometimes*); fill-ask under question.
 
 [Joins](joins.md#unspecified-member-r-phrase)
 

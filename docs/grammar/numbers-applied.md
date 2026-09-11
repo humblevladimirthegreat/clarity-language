@@ -45,7 +45,7 @@ Clock and date together:
 
 Endings: **-l** exact; **-m** fuzzy (*around 15:30*); **-n** conventional schedule or date name; **-r** resume a prior clock or date (digitless `h=_` = *that time/date again*). Timezone, era, and calendar system are ordinary lexicon `/h/` beside the number word.
 
-**Compare with:** a phone or room **code** uses the same `_` marker under `/d/` `/b/` `/ɡ/`, not bare `/h/`. Restrictor **`har`** is *sometime*; digitless `h_` is *some clock or date*.
+**Compare with:** a phone or room **code** uses the same `_` marker under `/d/` `/b/` `/ɡ/`, not bare `/h/`. Restrictor **`har`** is *sometimes*; digitless `h_` is *some clock or date*.
 
 **Not the same job as:** `h+3` (*three times*) and `h#3` (*for the third time*). Face time `h_15,30` is still a digit-string.
 

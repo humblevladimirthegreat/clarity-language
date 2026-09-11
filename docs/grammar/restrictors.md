@@ -1,7 +1,7 @@
 # Restrictors (`/h/` / `/w/`)
 <a id="restrictors"></a>
 
-Use these words when you want to say **when** a claim counts: *only when raining*, *never*, *always*. They take the adverb letter **`h`** plus the same vowels and endings you already use on [joins](joins.md) (`hal`, `hual`, `ham`, …). Time or case words sit **before** the restrictor; together they limit the verb claim instead of adding another manner.
+Use these words when you want to say **when** a claim counts: *only when raining*, *never*, *always*. They take the adverb letter **`h`** (or **`w`** on the previous adjective) plus the same vowels and endings you already use on [joins](joins.md) (`hal`, `hual`, `ham`, …). Time or case words sit **before** the restrictor; together they limit the verb claim (or that adjective) instead of adding another manner.
 
 ## Beginner
 <a id="beginner"></a>
@@ -48,21 +48,23 @@ To say the verb claim counts at every time, or at every time except some listed 
 >
 > "Azawan always walks except when raining."
 
-### Sometime / anytime / sometime else
+### Sometimes / anytime / some other time
 
-You can name *sometime*, *anytime*, or *sometime else* without listing a content word such as *rain*. Use ending **-r** on the restrictor (`har` / `hor` / `hur`): **-r** names some member of the time inventory without spelling that member. Nothing is required before it.
+You can name *sometimes*, *anytime*, or *some other time* without listing a content word such as *rain*. Use ending **-r** on the restrictor (`har` / `hor` / `hur`): **-r** names some member of the time inventory without spelling that member. Nothing is required before it.
+
+English *sometimes* is the usual match next to *never* / *always*. It still only says there is **some** unspecified occasion — the same job *something* has on a [join](joins.md) — not a separate “many times” count.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`har`** | unspecified member of the time inventory | *sometime* | **-r** names a member |
+| **`har`** | unspecified member of the time inventory | *sometimes* / *at some time* | **-r** names a member |
 | **`hor`** | unspecified member of a one-choice time menu | *anytime* | **o** ≈ one |
-| **`hur`** | unspecified leftover time | *sometime else* | **u** ≈ undo |
+| **`hur`** | unspecified leftover occasion | *some other time* | **u** ≈ undo |
 
 > `zululon vurunul har.`
 >
-> z-Ululon | v-run | h-sometime
+> z-Ululon | v-run | h-sometimes
 >
-> "Ululon runs sometime."
+> "Ululon runs sometimes."
 
 > `zuhubun vawalal hor.`
 >
@@ -70,9 +72,23 @@ You can name *sometime*, *anytime*, or *sometime else* without listing a content
 >
 > "Uhubun walks anytime."
 
+**`hur`** names an occasion **outside** the times already in play: leftover, not the listed ones, and with nothing listed, leftover of the times already under discussion. Bare **`hur`** only says some leftover occasion exists (*at some other time*). It does not say the claim holds at leftover times in general.
+
+> `jol zuhubun vawalal hanunul?`
+>
+> j-question | z-Uhubun | v-walk | h-rain
+>
+> "Does Uhubun walk when raining?"
+
+> `juel. zuhubun vawalal hur.`
+>
+> j-no | z-Uhubun | v-walk | h-some-other-time
+>
+> "No. Uhubun walks at some other time."
+
 ### On the previous adjective (`/w/`)
 
-Sometimes you want to limit the **adjective you just wrote** (*never happy*), not the whole verb claim. Use the same vowels with letter **`w`** (`wal`). `/h/` still limits the clause; `/w/` only looks back at that adjective.
+The same restrictor vowels and endings can limit **only the adjective you just wrote**, not the whole verb claim. Spell them with letter **`w`** instead of **`h`**. Occasion words that belong to that adjective sit immediately before the restrictor and also take **`w`**. `/h/` still limits the clause.
 
 > `zazawan guzumum wal.`
 >
@@ -80,10 +96,42 @@ Sometimes you want to limit the **adjective you just wrote** (*never happy*), no
 >
 > "Azawan is never happy."
 
+> `zululon guzumum wual.`
+>
+> z-Ululon | g-happy | w-always
+>
+> "Ululon is always happy."
+
+> `zuhubun guzumum war.`
+>
+> z-Uhubun | g-happy | w-sometimes
+>
+> "Uhubun is sometimes happy."
+
+> `zazawan guzumum wanunul wal.`
+>
+> z-Azawan | g-happy | w-rain | w-only-when
+>
+> "Azawan is happy only when raining."
+
+> `zululon guzumum wor.`
+>
+> z-Ululon | g-happy | w-anytime
+>
+> "Ululon is happy anytime."
+
+> `zuhubun guzumum wur.`
+>
+> z-Uhubun | g-happy | w-some-other-time
+>
+> "Uhubun is happy at some other time."
+
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `/h/` | limits the clause | *when the verb claim counts* | **h** starts *how* / *when* / *where* |
-| `/w/` | limits the previous adjective | *never happy* (on that adjective) | **w** ≈ with (stuck to that adjective) |
+| `/w/` | same map on the previous adjective | *never happy* / *always happy* / *sometimes happy* | **w** ≈ with (stuck to that adjective) |
+
+**Compare with:** extra detail on an adjective is still ordinary `/w/` from [core](core.md#adjective-detail-w). A restrictor on `/w/` answers **when that adjective counts**.
 
 ### Listed occasions (open)
 
@@ -103,7 +151,7 @@ Open **-m** leaves other occasions possible: *when raining, among other times*, 
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills on this Beginner band. Try each item before opening **Show answer**. Restrictors mark **when the claim counts**. Bare **`hal`** / **`hual`** are *never* / *always*; with a listed occasion they are *only when…* / *always except when…*.
+Short drills on this Beginner band. Try each item before opening **Show answer**. Restrictors mark **when the claim counts** (`/h/`) or **when the previous adjective counts** (`/w/`). Bare **`hal`** / **`hual`** are *never* / *always*; with a listed occasion they are *only when…* / *always except when…*. **`har`** / **`hur`** are *sometimes* / *some other time*.
 
 **Roots used here**:
 
@@ -148,7 +196,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zazawan guzumum wal.`
 :::
 
-**5.** *Ululon runs sometime.*
+**5.** *Ululon runs sometimes.*
 
 ::: details Show answer
 `zululon vurunul har.`
@@ -170,6 +218,12 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 ::: details Show answer
 `zazawan vawalal hanunul hual.`
+:::
+
+**9.** *Uhubun is sometimes happy.*
+
+::: details Show answer
+`zuhubun guzumum war.`
 :::
 
 #### Agalan → English
@@ -207,7 +261,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **6.** `zuhubun vawalal hur.`
 
 ::: details Show answer
-*Uhubun walks sometime else.*
+*Uhubun walks at some other time.*
 :::
 
 **7.** `zazawan vawalal hadazam howom.`
@@ -220,6 +274,12 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 ::: details Show answer
 *Azawan sleeps when raining and at night, among other times.*
+:::
+
+**9.** `zuhubun guzumum war.`
+
+::: details Show answer
+*Uhubun is sometimes happy.*
 :::
 
 ## Intermediate
@@ -243,7 +303,7 @@ Each listed restrictor occasion is a simple `/h/` or `/w/` content word, or a co
 <a id="more-occasions"></a>
 <a id="defined-core-full"></a>
 
-Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *sometime* / *anytime* / *sometime else* (`har` / `hor` / `hur`). The rest of the same vowel map names exclusive, inclusive, *not when*, ranked, and leftover readings. `/w/` uses the same vowels on the previous adjective (`wal` / `wam` / `wual` / `wuam` / `war` / `wor` / `wur`, and the rows below). One restrictor chain is one `/h/` unit (or one `/w/` stack on its host).
+Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *sometimes* / *anytime* / *some other time* (`har` / `hor` / `hur`). The rest of the same vowel map names exclusive, inclusive, *not when*, ranked, and leftover readings. `/w/` uses that **same** map on the previous adjective (`wal` / `wam` / `wual` / `wuam` / `war` / `wor` / `wur`, and the rows below). One restrictor chain is one `/h/` unit (or one `/w/` stack on its host).
 
 > `zazawan vawalal hanunul hunugul hol.`
 >
@@ -268,6 +328,8 @@ Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *som
 | **`hual` / `huam`** | every time minus listed exceptions | *always except when…* | ***always*** / *always, as far as you can tell* | **u** ≈ undo then **a** ≈ add |
 | **`huol` / `huom`** | any leftover time minus listed exceptions | *anytime except when…* | | **u** ≈ undo + **o** ≈ one |
 
+**Compare with:** **`hur`** is some leftover occasion (*some other time*). **`huol`** is leftover times in general (*anytime except when…*).
+
 #### Ranked (with listed occasions)
 
 Closed **`hel`** ranks **when** it matters. **`hal`** still means *only when* these times, with no priority among them.
@@ -290,16 +352,16 @@ Statement readings below. Asking *when*: [questions.md](questions.md#when).
 
 | Agalan | Use | English (with occasions) | English (bare) | Cue |
 |--------|-----|--------------------------|----------------|-----|
-| **`har`** | unspecified member of the listed times | *sometime among these* | *sometime* | **-r** some member |
+| **`har`** | unspecified member of the listed times | *sometimes among these* | *sometimes* | **-r** some member |
 | **`hor`** | unspecified member of a one-choice time menu | *anytime among these* | *anytime* | **o** ≈ one + **-r** |
-| **`hur`** | unspecified leftover time | *sometime other than these* | *sometime else* | **u** ≈ undo + **-r** |
+| **`hur`** | unspecified leftover occasion | *some time other than these* | *some other time* | **u** ≈ undo + **-r** |
 | **`hael`** | equal frequency frame | *as often as among these* / *equally when these* | *equally often* / *tied frequency frame* | **a** ≈ add + **e** ≈ order |
 
-> `zazawan guzumum wanunul wal.`
+> `zazawan guzumum wanunul wunugul wol.`
 >
-> z-Azawan | g-happy | w-rain | w-only-when
+> z-Azawan | g-happy | w-rain | w-night | w-either-when
 >
-> "Azawan is happy only when raining."
+> "Azawan is happy either when raining or at night (not both)."
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -413,7 +475,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 **6.** `zululon vawalal hanunul hozowol har.`
 
 ::: details Show answer
-*Ululon walks sometime among rain or snow.*
+*Ululon walks sometimes among rain or snow.*
 :::
 
 **7.** `zazawan vawalal hael.`

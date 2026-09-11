@@ -370,9 +370,9 @@ To ask *when?* / *in what case?*, put an occasion word under `/h/` (or `/w/`) in
 
 | Agalan | English (statement, bare) | English (under question, bare) |
 |--------|---------------------------|--------------------------------|
-| **`har`** / **`war`** | *sometime* | *When?* / *In what case?* |
+| **`har`** / **`war`** | *sometimes* | *When?* / *In what case?* |
 | **`hor`** / **`wor`** | *anytime* | *Anytime?* |
-| **`hur`** / **`wur`** | *sometime else* | *When else?* |
+| **`hur`** / **`wur`** | *some other time* | *When else?* |
 
 **Related form:** statement occasion readings live with [restrictors](restrictors.md#more-occasions).
 

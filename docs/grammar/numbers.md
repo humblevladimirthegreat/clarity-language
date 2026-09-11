@@ -305,7 +305,7 @@ Beginner already used **`g+`** for *more than one*. Any marker may drop every di
 
 Phrase **`zar`** / **`zor`** / … pick an unspecified **member of an inventory**. Digitless number **-r** repeats a **prior numeric value**. Digitless number **-l** (and **-m** / **-n**) introduces an unspecified amount of that marker.
 
-Other prefixes use the same empty payload (the marker’s identity, no named N). Time `h_` is an unspecified clock or date under bare `hro`. A date with fields uses **`roe`** / `h_#…` ([Time](numbers-applied.md#time)). Restrictor **`har`** (*sometime*) is the [restrictor](restrictors.md).
+Other prefixes use the same empty payload (the marker’s identity, no named N). Time `h_` is an unspecified clock or date under bare `hro`. A date with fields uses **`roe`** / `h_#…` ([Time](numbers-applied.md#time)). Restrictor **`har`** (*sometimes*) is the [restrictor](restrictors.md).
 
 ### Exponents
 
