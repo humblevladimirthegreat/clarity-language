@@ -1,7 +1,10 @@
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vitepress'
+import { buildStampIso, formatBuildStampEt } from './lib/build-stamp'
 import { injectInArticleToc } from './lib/inject-in-article-toc'
 import { ortWasmPlugin } from './lib/ort-wasm-plugin'
+
+const buildAt = new Date()
 
 const repoRoot = fileURLToPath(new URL('../../..', import.meta.url))
 const dataDir = fileURLToPath(new URL('../../../data', import.meta.url))
@@ -47,6 +50,10 @@ export default defineConfig({
   cleanUrls: false,
   ignoreDeadLinks: false,
   vite: {
+    define: {
+      __SITE_BUILD_ISO__: JSON.stringify(buildStampIso(buildAt)),
+      __SITE_BUILD_ET__: JSON.stringify(formatBuildStampEt(buildAt)),
+    },
     plugins: [ortWasmPlugin(repoRoot, '/grammar/')],
     resolve: {
       alias: {

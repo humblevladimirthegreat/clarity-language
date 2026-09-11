@@ -2,6 +2,25 @@
   max-width: 28rem;
 }
 
+.VPSidebar .nav {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.site-build-stamp-wrap {
+  margin: 0;
+  margin-top: auto;
+  padding-top: 1.25rem;
+}
+
+.site-build-stamp {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--vp-c-text-3);
+  line-height: 1.4;
+}
+
 /* In-article TOC: visible where the right-rail outline is hidden (< 1280px). */
 @media (min-width: 1280px) {
   .vp-doc .in-article-toc {

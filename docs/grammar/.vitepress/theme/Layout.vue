@@ -19,6 +19,13 @@ watch(
 
 <template>
   <DefaultTheme.Layout>
+    <template #sidebar-nav-after>
+      <p class="site-build-stamp-wrap">
+        <time class="site-build-stamp" :datetime="__SITE_BUILD_ISO__">
+          {{ __SITE_BUILD_ET__ }}
+        </time>
+      </p>
+    </template>
     <template #layout-bottom>
       <RootsTableSort />
     </template>
