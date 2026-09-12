@@ -4,6 +4,34 @@ This document contains a record of features that have been posted to the r/conla
 
 Use this document for styling examples when producing more posts, and seeing what has already been posted. New posts should be added at the top under this section.
 
+### Pronouns Copy the Start of the Noun
+
+English pronouns are often ambiguous as to what the antecedent is, especially *it*. Agalan pronouns are built from an abbreviation of the antecedent, so the form itself tells you who or what you mean. There is no gender for pronouns, and not even animacy.
+
+The first letter is the part of speech in this sentence (`z-` subject, `d-` object, …). After that you copy the antecedent through its second vowel and then end it with -r.
+
+> `zazawan dululon vumudul. zulur dazar vubunul.`
+
+> z-Azawan | d-Ululon | v-middle-finger | z←Ululon | d←Azawan | v-punch
+
+> "Azawan flips off Ululon. He (Ululon) punches him (Azawan)."
+
+The pronoun `dazar` was derived from the first three letters of `azawan`, and the pronoun `zulur` was derived from the first three letters of `ululon`.
+
+If two recent words would share the same short start, you copy the whole earlier word into the pronoun instead. There are over 200 possible three-letter combinations so this doesn't happen often. 
+
+If there are two of the same word, you use an adjective to differentiate them:
+
+> `zodogol gelulul vawalal. zodogol garedel vurunul. zodor gelulul vajul.`
+
+> z-dog | g-blue | v-walk | z-dog | g-red | v-run | z←dog | g-blue | v-sit
+
+> "A blue dog walks. A red dog runs. The blue one sits."
+
+A pronoun from dog would pick the red dog (the most recent match) so we clarify by adding the blue modifier. Also note that I translated with the definite *the*. Pronouns are the only way to declare definiteness - nouns are indefinite by default.
+
+Full docs: https://main.d2xds94zsgwptg.amplifyapp.com/grammar/pronouns.html#resume-r
+
 ### Single-Item and Standalone Conjunctions
 
 I've defined sensible meanings for conjunctions when used on lists with only one or even zero items.
