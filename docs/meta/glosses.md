@@ -118,7 +118,7 @@ Do not use `/` (already means PoS in the docs, and reads as *or*), hyphen (alrea
 
 > `jol dubur dadedal dogovel dol von.`
 >
-> j-question | d-←Ubunexunowen | d-tea | d-coffee | d-or-exactly-one | v-choose
+> j-question | d-←Ubune-x-Unowen | d-tea | d-coffee | d-or-exactly-one | v-choose
 >
 > "Do you want tea or coffee?" ← loose (default)
 >
@@ -157,7 +157,7 @@ Same English label for `zugobom` and `zugobon` is fine: both are the *speaker* s
 - **english** — short English label for the **active** sense (hyphens OK inside a label: `next-clause`, `or-exactly-one`). **No** Agalan root letters. **No** writing glyphs **`@`** / **`~`** (those mark **-n** / **-m** in Agalan spelling only: numbers, span fences).
 - **`-x-`** — mid-word compound / stance / role / span hinge; each piece is English (or a stable TAG).
 - **-l / -m / -n** — **omit**. They only choose which English sense-root is in play. Do not re-spell them as `-l` / `-m` / `-n` or as `@` / `~`.
-- **Names** — the english slot is the **English name** (`z-Azawan`, `z-Hamlet`, `z-Abogon`, `z-Sushi-Coffee`), not the virtue or kind that formed the stem, and not `z-grace@`.
+- **Names** — the english slot is the **English name** (`z-Azawan`, `z-Hamlet`, `z-Abogon`, `z-Uzuzu-x-Ogove`), not the virtue or kind that formed the stem, and not `z-grace@`.
 - **-x** — append `-x` when the written word has associative / address-set / collective **-x** (`z-Azawan-x`, `z-speaker-x`, `z-listener-x`).
 - **Prefix-less** revisers: English only — `instead`, `rather`, `additionally` (no fake PoS).
 - **Specials / overlays / joins** — still the overlay or join job (`z-speaker`, `v-and`), never `@` because the word happens to end in **-n**.
@@ -189,7 +189,7 @@ The binder **is** the gloss root. No trailing `-r` (resume is already marked by 
 
 | Case | Morph gloss |
 |------|-------------|
-| Letter / full-root resume with known name | `z-←Ubunexunowen` |
+| Letter / full-root resume with known name | `z-←Ubune-x-Unowen` |
 | House-cast name (`zazawan`, …) | `z-←Azawan` / `z-←Ululon` / `z-←Uhubun` |
 | Resume of a prior content word | `z-←someone` / `d-←tea` |
 | Fill-ask / unspecified member | `z-who` / `z-something` (as the docs require for that form) |
@@ -213,15 +213,15 @@ Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) —
 
 | Family | Example Agalan | Morph gloss |
 |--------|-----------------|-------------|
-| Ordinary / name compound | `jubunexunowen` | `j-Ubunexunowen` |
-| Ordinary (three roots) | `zuzuzuxogovexadedan` | `z-Sushi-Coffee-Tea` |
+| Ordinary / name compound | `jubunexunowen` | `j-Ubune-x-Unowen` |
+| Ordinary (three roots) | `zuzuzuxogovexadedan` | `z-Uzuzu-x-Ogove-x-Adedan` |
 | Ability / values stance | `vawalaxel` | `v-walking-unable-temporary` |
 | Values stance on need | `holozoxem` | `h-competence-x-motive` |
 | Role compound | `zaxezeher` | `z-agent-x-dialogue` |
 | Span open / close | `hexal` … `xuxul` | `h-aside-x-multi` · … · `x-span-close` |
 | Number / enumeration | `x#e-` | `x-starting-with` |
 
-For **phrasal proper names**, gloss the English name (`j-Ubunexunowen`, `z-Sushi-Coffee`). Segment mid-word **`x`** only when the page is teaching the compound pieces, and still omit `@`. Do not put Agalan letters in the english slot.
+For **phrasal proper names**, gloss each piece (`j-Ubune-x-Unowen`, `z-Uzuzu-x-Ogove-x-Adedan`). Mid-word **`x`** stays visible as `-x-`. Do not put Agalan letters in the english slot.
 
 ### Underspecification and joins
 
@@ -293,7 +293,7 @@ Bake join / reviser **job** into the English label (including open vs closed whe
 
 > `xezebal zubur huvuvum zanunul.`
 >
-> x-however | z-←Ubunexunowen | h-WITNESSED | z-rain
+> x-however | z-←Ubune-x-Unowen | h-WITNESSED | z-rain
 >
 > "Still — it's raining, as I remember."
 
@@ -319,7 +319,7 @@ Bake join / reviser **job** into the English label (including open vs closed whe
 
 > `jael xezazal zahan howoram vawalal vul.`
 >
-> j-yes | x-therefore | z-interlocutors | h-plan | v-walking | v-not
+> j-yes | x-therefore | z-interlocutors | h-plan-sketch | v-walking | v-not
 >
 > "Yes — so we're planning not to walk."
 
@@ -360,7 +360,7 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 1. English senses only — no Agalan root spellings.
 2. No `→` etymology chains.
 3. No **-l** / **-m** / **-n**, and no **`@`** / **`~`**, when they only selected the sense-root. Named **-n** is the English name (`z-Azawan`), not `-n`, `@`, or `-proper`.
-4. Compounds / stance / role / span `x` pieces are segmented in English when teaching the hinge; a used **name** may be one English label.
+4. Compounds / stance / role / span `x` pieces are always hyphenated segments (`j-Ubune-x-Unowen`). Do not fuse a name into one unsegmented English label.
 5. **-r** uses `←…` (no trailing `-r`); **-x** stays as `-x`. Resume of a house name is `z-←Azawan`, not `z-r` or `z-←Azawan`. Fill-ask is `z-who`, not `z-ar`.
 6. Free English is on its own **quoted** line (or grammar-table Gloss column) — **loose** by default; **strict** only when teaching packaging. Example blocks follow [example block layout](#example-block) (blockquote; skip a morph line that would copy the quote).
 

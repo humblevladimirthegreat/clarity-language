@@ -1,11 +1,12 @@
 import type { IToken } from "chevrotain";
 
+import { collectAmbiguity } from "./ambiguity.js";
 import type { ClassifyTables } from "./classify.js";
 import { resolve } from "./resolve.js";
 import { parseSentenceTokens } from "./sentence-parser.js";
 import { tokenizeUtterance } from "./tokenize.js";
 import { Bang, Force, Period, Polar, QMark, Reviser, Vocative } from "./tokens.js";
-import type { ParseResult } from "./types.js";
+import type { ParseOptions, ParseResult } from "./types.js";
 
 function isLeftEdgeStart(token: IToken): boolean {
   return (
@@ -42,7 +43,11 @@ function splitUtteranceGroups(tokens: IToken[]): IToken[][] {
 }
 
 /** End-to-end parse with caller-supplied lexicon tables (browser-safe). */
-export function parseWithTables(text: string, tables: ClassifyTables): ParseResult {
+export function parseWithTables(
+  text: string,
+  tables: ClassifyTables,
+  options: ParseOptions = {},
+): ParseResult {
   const tokens = tokenizeUtterance(text, tables);
   const groups = splitUtteranceGroups(tokens);
 
@@ -51,5 +56,7 @@ export function parseWithTables(text: string, tables: ClassifyTables): ParseResu
     return parseSentenceTokens(group).utterances;
   });
 
-  return resolve({ utterances });
+  const result = resolve({ utterances });
+  if (!options.checkAmbiguity) return result;
+  return { ...result, ambiguity: collectAmbiguity(text, tables) };
 }

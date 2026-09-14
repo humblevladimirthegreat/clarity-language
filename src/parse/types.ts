@@ -245,10 +245,25 @@ export type Utterance = {
   bodies: BodyClause[];
 };
 
+/** Competing readings with no grammar rule that picks one (anaphors excluded). */
+export type AmbiguityConflict = {
+  surface: string;
+  stage: "morph" | "classify";
+  sources: string[];
+  detail: string;
+};
+
+export type ParseOptions = {
+  /** When set, collect first-match collisions that the grammar does not resolve. */
+  checkAmbiguity?: boolean;
+};
+
 export type ParseResult = {
   utterances: Utterance[];
   /** Stage 4 discourse annotations. Present after `parse()` / `resolve()`. */
   resolve?: ResolveInfo;
+  /** Present only when `checkAmbiguity` is on. */
+  ambiguity?: AmbiguityConflict[];
 };
 
 // ── Stage 4 resolve ─────────────────────────────────────────────────────────

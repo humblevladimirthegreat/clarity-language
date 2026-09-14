@@ -43,7 +43,7 @@ describe("inspectText", () => {
     assert.equal(token?.kind, "word");
     if (token?.kind !== "word") return;
     assert.equal(token.word.reading, "mood");
-    assert.match(token.gloss, /witnessed/i);
+    assert.equal(token.gloss, "WITNESSED");
   });
 
   it("marks unknown foreign payloads", () => {
@@ -79,7 +79,7 @@ describe("inspectText", () => {
     const zam = result.tokens.find((token) => token.kind === "word" && token.raw === "zam");
     assert.equal(zam?.kind, "word");
     if (zam?.kind !== "word") return;
-    assert.equal(zam.gloss, "and (open)");
+    assert.equal(zam.gloss, "and.open");
     const join = result.constructions.find((group) => group.kind === "join");
     assert.ok(join);
     const raws = join!.tokenIndices.map((i) => result.tokens[i]!.raw);

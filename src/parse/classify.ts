@@ -393,3 +393,79 @@ export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
 export function classifyAll(words: MorphWord[], tables: ClassifyTables): LexWord[] {
   return words.map((word) => classify(word, tables));
 }
+
+/** Independent classify sources that apply (ignores first-match short-circuit). */
+export type ClassifyHit = {
+  source:
+    | "overlay"
+    | "number"
+    | "valueAbility"
+    | "restrictor"
+    | "join"
+    | "bareNeed"
+    | "compoundLemma"
+    | "published"
+    | "foreign";
+  reading: LexReading;
+};
+
+export function classifyHits(word: MorphWord, tables: ClassifyTables): ClassifyHit[] {
+  const hits: ClassifyHit[] = [];
+  const senseForm = overlaySenseForm(word);
+  const pos = word.pos;
+
+  if (senseForm && pos) {
+    const overlayRow = tables.overlays.get(overlayKey(pos, senseForm));
+    if (overlayRow) {
+      hits.push({ source: "overlay", reading: overlayReading(word, overlayRow, tables) });
+    }
+  }
+
+  const family = word.family;
+
+  if (family.kind === "number" || (family.kind === "x" && family.xFamily === "numeric")) {
+    hits.push({ source: "number", reading: "number" });
+  }
+
+  if (family.kind === "x" && family.xFamily === "valueAbility") {
+    if (word.ending === "n" && (!word.pos || word.pos === "j")) {
+      hits.push({ source: "valueAbility", reading: "greeting" });
+    } else {
+      const host = family.leftRoots[0];
+      hits.push({
+        source: "valueAbility",
+        reading: host && tables.needRoots.has(host) ? "value" : "ability",
+      });
+    }
+  }
+
+  if (isRestrictor(word)) {
+    hits.push({ source: "restrictor", reading: "restrictor" });
+  }
+
+  if (isFenceJoin(word) && word.family.kind === "joinMarker") {
+    hits.push({ source: "join", reading: "join" });
+  }
+
+  if (bareNeedTopic(word, tables)) {
+    hits.push({ source: "bareNeed", reading: "value" });
+  }
+
+  if (family.kind === "content" && family.roots.length === 1) {
+    if (tables.compounds.get(family.roots[0]!)) {
+      hits.push({ source: "compoundLemma", reading: "ordinary" });
+    }
+  }
+
+  const roots = lexiconContentRoots(word);
+  const published = publishedGlossForRoots(tables, roots);
+  if (published) {
+    hits.push({ source: "published", reading: published.allFound ? "ordinary" : "unknown" });
+  }
+
+  if (family.kind === "foreign" || family.kind === "writingSpan") {
+    hits.push({ source: "foreign", reading: "unknown" });
+  }
+
+  return hits;
+}

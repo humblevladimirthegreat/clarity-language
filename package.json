@@ -12,7 +12,7 @@
     }
   },
   "scripts": {
-    "generate:word": "peggy --format es --dts --allowed-start-rules start,words -o src/generated/word-parser.js grammar/word.peggy",
+    "generate:word": "peggy --format es --dts --allowed-start-rules start,words,probe_spanClose,probe_writingSpan,probe_freeNumber,probe_reviser,probe_prefixedWord,probe_citation,probe_prefixedX,probe_prefixedPlain,probe_prefixedJoin -o src/generated/word-parser.js grammar/word.peggy",
     "build": "npm run generate:word && tsc && mkdir -p dist/generated && cp src/generated/word-parser.js src/generated/word-parser.d.ts dist/generated/",
     "dev": "node scripts/fetch-kitten-tts.mjs && vitepress dev docs/grammar",
     "typecheck": "tsc --noEmit",

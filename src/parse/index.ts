@@ -4,11 +4,12 @@ import { fileURLToPath } from "node:url";
 
 import { createClassifyTables, type ClassifyTables } from "./classify.js";
 import { parseWithTables } from "./parse-core.js";
-import type { ParseResult } from "./types.js";
+import type { ParseOptions, ParseResult } from "./types.js";
 
 export {
   classify,
   classifyAll,
+  classifyHits,
   createClassifyTables,
   joinFenceGloss,
   knownLexiconRoots,
@@ -20,9 +21,24 @@ export { parseSentenceTokens, SentenceParseError } from "./sentence-parser.js";
 export { letterPrefix, numberMarkerIdentity, resolve } from "./resolve.js";
 export { classifyToTokenType } from "./tokens.js";
 export { segmentUtterance, tokenizeUtterance } from "./tokenize.js";
-export { parseWord, parseWords, WordParseError } from "./word.js";
+export { parseWord, parseWords, probeMorphWord, WordParseError } from "./word.js";
+export { collectAmbiguity } from "./ambiguity.js";
 export { parseWithTables } from "./parse-core.js";
 export { inspectText, glossFor, chipsFor, morphDetails, endingSense } from "./inspect.js";
+export {
+  compareMorphGloss,
+  extractExampleBlocks,
+  morphGlossFor,
+  morphGlossLine,
+  normalizeAgalan,
+  normalizeMorphLine,
+  senseLabel,
+} from "./morph-gloss.js";
+export type {
+  CompareMorphGlossResult,
+  ExampleBlockPair,
+  MorphGlossContext,
+} from "./morph-gloss.js";
 export type {
   InspectConstruction,
   InspectError,
@@ -47,6 +63,6 @@ export function loadDefaultTables(): ClassifyTables {
 }
 
 /** End-to-end parse: surface text → sentence AST. */
-export function parse(text: string, tables?: ClassifyTables): ParseResult {
-  return parseWithTables(text, tables ?? loadDefaultTables());
+export function parse(text: string, tables?: ClassifyTables, options?: ParseOptions): ParseResult {
+  return parseWithTables(text, tables ?? loadDefaultTables(), options);
 }

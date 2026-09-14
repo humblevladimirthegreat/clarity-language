@@ -1,4 +1,5 @@
 import { classify, type ClassifyTables } from "./classify.js";
+import { senseLabel } from "./morph-gloss.js";
 import { parseWithTables } from "./parse-core.js";
 import { SentenceParseError } from "./sentence-parser.js";
 import type {
@@ -150,10 +151,22 @@ export function inspectErrorFrom(error: unknown): InspectError {
   return { message: String(error) };
 }
 
-export function glossFor(word: LexWord): string {
-  if (word.overlay?.definition) return word.overlay.definition;
+export function glossFor(word: LexWord, tables?: ClassifyTables): string {
+  if (word.reading === "unknown" && !word.overlay) return "unknown root";
+  if (!tables) {
+    return senseLabelFallback(word);
+  }
+  return senseLabel(word, tables);
+}
 
-  if (word.reading === "unknown") return "unknown root";
+function senseLabelFallback(word: LexWord): string {
+  if (word.overlay) {
+    const tagged = word.overlay.definition.match(/\b(WITNESSED|LIVE|SAME|COMMENT|DECISION|ABIL)\b/);
+    if (tagged) return tagged[1]!;
+    if (/witnessed evidential/i.test(word.overlay.definition)) return "WITNESSED";
+    if (/live evidential/i.test(word.overlay.definition)) return "LIVE";
+    if (/^SAME /i.test(word.overlay.definition)) return "SAME";
+  }
   if (word.reading === "greeting") {
     const family = word.family;
     if (family.kind === "x" && family.stanceVowel) {
@@ -162,10 +175,7 @@ export function glossFor(word: LexWord): string {
     return "greeting";
   }
   if (word.reading === "number") return "number";
-  if (word.reading === "join") {
-    return word.rootGloss?.literal ?? "join";
-  }
-
+  if (word.reading === "join") return word.rootGloss?.literal ?? "join";
   if (word.ending === "m") {
     return word.rootGloss?.metaphorical ?? word.rootGloss?.literal ?? word.reading;
   }
@@ -175,7 +185,6 @@ export function glossFor(word: LexWord): string {
     return word.rootGloss?.literal ?? "proper";
   }
   if (word.ending === "r") return "anaphor";
-
   return word.rootGloss?.literal ?? word.rootGloss?.metaphorical ?? word.reading;
 }
 
@@ -749,7 +758,7 @@ export function inspectText(text: string, tables: ClassifyTables): InspectResult
           start,
           end,
           word,
-          gloss: glossFor(word),
+          gloss: glossFor(word, tables),
           chips: chipsFor(word),
         });
       } catch (error) {

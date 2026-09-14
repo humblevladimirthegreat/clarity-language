@@ -113,6 +113,71 @@ Word
   / prefixedWord
   / citation
 
+// Independent probes for the ambiguity checker (not used by ordinary parse).
+probe_spanClose = word:spanClose EOF { return word; }
+probe_writingSpan = word:writingSpan EOF { return word; }
+probe_freeNumber = word:freeNumber EOF { return word; }
+probe_reviser = word:reviser EOF { return word; }
+probe_prefixedWord = word:prefixedWord EOF { return word; }
+probe_citation = word:citation EOF { return word; }
+
+probe_prefixedX
+  = "g" "l" body:xWord EOF {
+      return makeWord(text(), {
+        pos: "g",
+        gl: true,
+        ending: body.ending,
+        plural: body.plural,
+        family: body.family,
+      });
+    }
+  / pos:Pos body:xWord EOF {
+      return makeWord(text(), {
+        pos,
+        ending: body.ending,
+        plural: body.plural,
+        family: body.family,
+      });
+    }
+
+probe_prefixedPlain
+  = "g" "l" body:plainContent EOF {
+      return makeWord(text(), {
+        pos: "g",
+        gl: true,
+        ending: body.ending,
+        plural: body.plural,
+        family: body.family,
+      });
+    }
+  / pos:Pos body:plainContent EOF {
+      return makeWord(text(), {
+        pos,
+        ending: body.ending,
+        plural: body.plural,
+        family: body.family,
+      });
+    }
+
+probe_prefixedJoin
+  = "g" "l" body:joinMarker EOF {
+      return makeWord(text(), {
+        pos: "g",
+        gl: true,
+        ending: body.ending,
+        plural: body.plural,
+        family: body.family,
+      });
+    }
+  / pos:Pos body:joinMarker EOF {
+      return makeWord(text(), {
+        pos,
+        ending: body.ending,
+        plural: body.plural,
+        family: body.family,
+      });
+    }
+
 // ── Span closes (decision order step 1) ─────────────────────────────────────
 
 spanClose
