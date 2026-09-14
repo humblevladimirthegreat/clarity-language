@@ -183,7 +183,7 @@ export type HUnit = {
   bound?: LexWord;
 };
 
-export type CoordShared = GPackage | LexWord;
+export type CoordShared = GPackage | HUnit | LexWord;
 
 export type NpItem =
   | { kind: "package"; package: NpPackage }
@@ -291,7 +291,7 @@ export type SharedRole =
 export type SharedRecord = {
   join: LexWord;
   role: SharedRole;
-  shared: GPackage;
+  shared: GPackage | HUnit;
 };
 
 export type ResolveInfo = {

@@ -159,6 +159,24 @@ describe("parse — orodo dependents", () => {
   });
 });
 
+describe("parse — comparatives manner scale", () => {
+  it("attaches /h/ immediately after zel as SHARED, then the verb", () => {
+    const result = parseText("zululon zazawan zel hohogem vawalal.");
+    const units = result.utterances[0]!.bodies[0]!.clause.units;
+    assert.equal(units.length, 2);
+    assert.equal(units[0]!.kind, "np");
+    assert.equal(units[1]!.kind, "vp");
+    if (units[0]!.kind !== "np") return;
+    const part = units[0]!.coord.parts[0]!;
+    assert.equal(part.join?.raw, "zel");
+    assert.equal(part.shared.length, 1);
+    const shared = part.shared[0]!;
+    assert.equal("modifiers" in shared, false);
+    assert.ok("word" in shared);
+    assert.equal(shared.word.raw, "hohogem");
+  });
+});
+
 describe("parse — spans", () => {
   it("parses daxal … xuxul span", () => {
     const result = parseText("daxal zadagal xuxul vawalal.");

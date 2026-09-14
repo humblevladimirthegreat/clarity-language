@@ -64,7 +64,7 @@ Agalan text
 ┌──────────────────────────────────────┐
 │  resolve() — discourse sidecar       │
 │  -r anaphors, fill-ask vs yes/no     │
-│  SHARED /ɡ/ scale vs continuum vs …  │
+│  SHARED /ɡ/ or /h/ scale vs continuum  │
 └──────────────────────────────────────┘
     │
     ▼
@@ -131,7 +131,7 @@ Recovery is off. Illegal left fences, infix joins, and binderless islands throw 
 | Number **-r** / `g=+` | Most recent number with the same marker identity ([numbers.md](../grammar/numbers.md#number-endings)) |
 | Role **-r** | Most recent verb / event noun / relation / role compound with that ROOT ([roles.md](../grammar/roles.md)) |
 | Join **-r** under `jol` / `jom` | Fill-ask gaps in spoken order; none → yes/no ([questions.md](../grammar/questions.md)) |
-| SHARED `/ɡ/` after a join | `scale` / `equative` / `distribute` / `collective` / `continuum` / `kind` / `ordinary` from join series + conjunct kinds |
+| SHARED `/ɡ/` or `/h/` after a join | `scale` / `equative` / `distribute` / `collective` / `continuum` / `kind` / `ordinary` from join series + conjunct kinds (`/h/` is manner scale under rank / `ae`) |
 
 Skipped as anaphors: join **-r** (ask / unspecified-member), restrictors, values / ability ending channels. Dangling resumes are recorded with no `antecedent` — they do not fail the parse.
 

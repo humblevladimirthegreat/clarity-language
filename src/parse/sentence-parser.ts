@@ -507,7 +507,10 @@ class AgelanSentenceParser extends CstParser {
   });
 
   public sharedAfterJoin = this.RULE("sharedAfterJoin", () => {
-    this.SUBRULE(this.gPackage);
+    this.OR([
+      { GATE: () => this.LA(1).tokenType === G, ALT: () => this.SUBRULE(this.gPackage) },
+      { GATE: () => this.LA(1).tokenType === H, ALT: () => this.SUBRULE(this.hUnitRule) },
+    ]);
   });
 }
 
@@ -700,6 +703,8 @@ function buildShared(cst: CstNode | undefined): CoordShared[] {
   if (!cst) return [];
   const g = childNodes(cst, "gPackage")[0];
   if (g) return [buildGPackage(g)];
+  const h = childNodes(cst, "hUnitRule")[0];
+  if (h) return [buildHUnit(h)];
   return [];
 }
 

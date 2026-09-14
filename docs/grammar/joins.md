@@ -524,8 +524,8 @@ When an adjective or extra noun is meant for the **whole list** (*both challengi
 |-------------|----------------------|
 | **a** | distributive property (*both ADJ*) or bundle description |
 | **a** + `/ɡ/`…**-x** | [collective](plurality.md#adjectives-g) (*ADJ together*) |
-| **ae** + gradable `/ɡ/` | [equative](comparatives.md#equatives) scale |
-| **e** / **oe** / **ue** on NP | [comparison scale](comparatives.md) |
+| **ae** + SHARED scale | [equative](comparatives.md#equatives) (`/ɡ/` or `/h/`) |
+| **e** / **oe** / **ue** on NP | [comparison scale](comparatives.md) (`/ɡ/` or `/h/`) |
 | **ua** / **uo** | kind / domain for universals |
 | **a** / **e** / **ue** / **ua** + two number endpoints | [range](numbers-applied.md#ranges) with continuum `/ɡ/` |
 

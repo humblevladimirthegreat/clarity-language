@@ -224,7 +224,7 @@ Speech act **`jel` / `jem` / `jul` / `jum`**.
 
 ### Comparative / superlative / equative
 
-Rank join + SHARED **scale**; single-item = superlative; **`ae`** = equative.
+Rank join + SHARED **scale** (`/ɡ/` quality or `/h/` manner); single-item = superlative; **`ae`** = equative.
 
 [Comparatives](comparatives.md)
 
@@ -612,7 +612,7 @@ Clause join **-n** (`xan` *and then*).
 
 ### SHARED scale / SHARED continuum
 
-After-join `/ɡ/`: comparatives vs ranges.
+After-join `/ɡ/` (quality / continuum) or manner `/h/`: comparatives vs ranges.
 
 [Comparatives](comparatives.md), [numbers applied](numbers-applied.md#ranges)
 

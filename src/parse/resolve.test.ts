@@ -152,13 +152,27 @@ describe("resolve — yes/no vs fill-ask (questions.md)", () => {
   });
 });
 
-describe("resolve — SHARED /ɡ/ (comparatives.md / numbers.md)", () => {
+describe("resolve — SHARED (comparatives.md / numbers.md)", () => {
   it("reads rank + SHARED scale as scale", () => {
     const { shared } = resolveOf("zazawan zululon zel gomonum.");
     assert.equal(shared.length, 1);
     assert.equal(shared[0]!.role, "scale");
     assert.equal(shared[0]!.join.raw, "zel");
     assert.equal(shared[0]!.shared.word.raw, "gomonum");
+  });
+
+  it("reads rank + SHARED manner /h/ as scale", () => {
+    const { shared } = resolveOf("zululon zazawan zel hohogem vawalal.");
+    assert.equal(shared.length, 1);
+    assert.equal(shared[0]!.role, "scale");
+    assert.equal(shared[0]!.join.raw, "zel");
+    assert.equal(shared[0]!.shared.word.raw, "hohogem");
+  });
+
+  it("reads ae + SHARED manner /h/ as equative", () => {
+    const { shared } = resolveOf("zululon zazawan zael hohogem vawalal.");
+    assert.equal(shared[0]!.role, "equative");
+    assert.equal(shared[0]!.shared.word.raw, "hohogem");
   });
 
   it("reads set a + SHARED as distribute", () => {

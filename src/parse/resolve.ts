@@ -128,6 +128,20 @@ function isGPackage(shared: CoordShared): shared is GPackage {
   return typeof shared === "object" && "modifiers" in shared && "word" in shared;
 }
 
+function isHUnit(shared: CoordShared): shared is HUnit {
+  return typeof shared === "object" && "word" in shared && !("modifiers" in shared);
+}
+
+function classifySharedRole(join: LexWord, numberCount: number, shared: GPackage | HUnit): SharedRole {
+  const series = join.family.kind === "joinMarker" ? join.family.series : "";
+  if (isGPackage(shared) && numberCount >= 2 && CONTINUUM_SERIES.has(series)) return "continuum";
+  if (SCALE_SERIES.has(series)) return "scale";
+  if (series === "ae") return "equative";
+  if (KIND_SERIES.has(series)) return "kind";
+  if (series === "a") return isGPackage(shared) && shared.word.plural ? "collective" : "distribute";
+  return "ordinary";
+}
+
 function isNumberHead(word: LexWord): boolean {
   return word.family.kind === "number" || word.reading === "number";
 }
@@ -138,16 +152,6 @@ function numberConjunctCount(coord: NpCoord, partIndex: number): number {
   return part.items.filter(
     (item) => item.kind === "package" && isNumberHead(item.package.head),
   ).length;
-}
-
-function classifySharedRole(join: LexWord, numberCount: number, shared: GPackage): SharedRole {
-  const series = join.family.kind === "joinMarker" ? join.family.series : "";
-  if (numberCount >= 2 && CONTINUUM_SERIES.has(series)) return "continuum";
-  if (SCALE_SERIES.has(series)) return "scale";
-  if (series === "ae") return "equative";
-  if (KIND_SERIES.has(series)) return "kind";
-  if (series === "a") return shared.word.plural ? "collective" : "distribute";
-  return "ordinary";
 }
 
 function isSpanAnaphor(word: LexWord): boolean {
@@ -283,13 +287,23 @@ function considerJoin(
 ): void {
   if (ctx.question && isJoinGap(join)) ctx.gaps.push(join);
   for (const item of shared) {
-    if (!isGPackage(item)) continue;
-    considerGPackage(ctx, item);
-    ctx.shared.push({
-      join,
-      role: classifySharedRole(join, numberCount, item),
-      shared: item,
-    });
+    if (isGPackage(item)) {
+      considerGPackage(ctx, item);
+      ctx.shared.push({
+        join,
+        role: classifySharedRole(join, numberCount, item),
+        shared: item,
+      });
+      continue;
+    }
+    if (isHUnit(item)) {
+      considerHUnit(ctx, item);
+      ctx.shared.push({
+        join,
+        role: classifySharedRole(join, numberCount, item),
+        shared: item,
+      });
+    }
   }
 }
 
@@ -325,6 +339,7 @@ function considerNpCoord(ctx: Ctx, coord: NpCoord): void {
     } else {
       for (const shared of part.shared) {
         if (isGPackage(shared)) considerGPackage(ctx, shared);
+        else if (isHUnit(shared)) considerHUnit(ctx, shared);
       }
     }
   });
@@ -337,6 +352,7 @@ function considerVpCoord(ctx: Ctx, coord: VpCoord): void {
     else {
       for (const shared of part.shared) {
         if (isGPackage(shared)) considerGPackage(ctx, shared);
+        else if (isHUnit(shared)) considerHUnit(ctx, shared);
       }
     }
   }

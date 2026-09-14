@@ -3,8 +3,6 @@
 
 English splits three nearby jobs on a quality like *challenging*. *More … than* and *the most* put people in **order** on that quality. *As … as* says they sit at the **same height**. *Both are challenging* only says **each has** the quality; it does not say who ranks higher or whether they match.
 
-**Needs:** rank and equality joins from [joins](joins.md).
-
 ## Beginner
 <a id="beginner"></a>
 <a id="overview"></a>
@@ -227,7 +225,32 @@ Beginner already used two names plus **`zel`** (*more … than*) and one name (*
 
 **Compare with:** ranking names with no shared adjective is ordinary preference (who comes first as an alternative). Add the shared `/ɡ/` when you mean *more ADJ than*.
 
-Shared `/w/` on a ranked adjective list is shared *degree* over those properties. For *more ADJ than* on people or things, the rank fence sits on `/z/` `/d/` `/b/` and the scale sits on shared `/ɡ/`. When a later verb needs one comparee as its subject, that subject is ordinary; the comparative claim sits in another slot or sentence.
+Shared `/w/` on a ranked adjective list is shared *degree* over those properties. For *more ADJ than* on people or things, the rank fence sits on `/z/` `/d/` `/b/` and the scale sits on shared `/ɡ/`.
+
+### Manner scale (`/h/`)
+<a id="manner-scale"></a>
+
+When English would say *Ululon walks more intensely than Azawan*, the ladder is **how** they walk, not a quality of the people. Keep the same rank join. Write a manner adverb (`/h/`) **immediately after** it, then the verb. The first name sits higher on that manner.
+
+> `zululon zazawan zel hohogem vawalal.`
+>
+> z-Ululon | z-Azawan | z-rank/more | h-intense | v-walk
+>
+> "Ululon walks more intensely than Azawan."
+
+> `zululon zel hohogem vawalal.`
+>
+> z-Ululon | z-rank/more | h-intense | v-walk
+>
+> "Ululon walks the most intensely."
+
+> `zululon zazawan zael hohogem vawalal.`
+>
+> z-Ululon | z-Azawan | z-as…as | h-intense | v-walk
+>
+> "Ululon walks as intensely as Azawan."
+
+**Compare with:** `gohogem` after `zel` (no verb) is *more intense* as a quality of the people. **`hohogem` after the verb** is ordinary *how* they walk, not the ladder.
 
 ### Distributive *both are ADJ*
 <a id="distributive-both"></a>
@@ -268,7 +291,7 @@ English *two meters more challenging* still ranks two people on one quality, and
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills for Intermediate. Try each item before opening **Show answer**. Full arity (**`oe`** / **`ue`** / standalone / **`zer`**), distributive **`zal`**, and a counted measure gap vs vague **`wogegal`**.
+Short drills for Intermediate. Try each item before opening **Show answer**. Full arity (**`oe`** / **`ue`** / standalone / **`zer`**), distributive **`zal`**, a counted measure gap vs vague **`wogegal`**, and manner **`/h/`** right after the join.
 
 **Setting:** a weighing room
 
@@ -284,6 +307,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 | *big* | `elem` | `elel` *elephant* |
 | *gram* | `baragal` | `aragal` *rock* |
 | *much* | `wogegal` | `ogegal` *flood* |
+| *intense* | `ohogem` | `ohogel` *hockey* |
+| *lift* | `vewewul` | `ewewul` *weightlifting* |
 
 #### English → Agalan
 
@@ -335,6 +360,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 `zazawan zululon zer garagam.`
 :::
 
+**9.** *Ululon lifts more intensely than Azawan.*
+
+::: details Show answer
+`zululon zazawan zel hohogem vewewul.`
+:::
+
 #### Agalan → English
 
 **1.** `zazawan zululon zuhubun zem garagam.`
@@ -383,6 +414,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 
 ::: details Show answer
 *Uhubun is the smallest.*
+:::
+
+**9.** `zululon zel hohogem vewewul.`
+
+::: details Show answer
+*Ululon lifts the most intensely.*
 :::
 
 ## Advanced
@@ -534,5 +571,6 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 ## See also
 
 - Fence shape, single-item / standalone, SHARED scale / continuum: [joins.md](joins.md)
+- Manner adverbs: [core.md](core.md#adverbs-h)
 - Kind and identity (*is a dog*, *is Azawan*): [predication.md](predication.md)
 - Measure NPs: [numbers-applied.md](numbers-applied.md#measure-phrases)
