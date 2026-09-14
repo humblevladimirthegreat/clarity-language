@@ -62,7 +62,7 @@ English *sometimes* is the usual match next to *never* / *always*. It still only
 
 > `zululon vurunul har.`
 >
-> z-Ululon | v-run | h-never
+> z-Ululon | v-run | h-sometimes
 >
 > "Ululon runs sometimes."
 

@@ -13,6 +13,7 @@
  * | `al` left-edge | `additionally` | isolated word too |
  * | `al` in-clause | `including` | |
  * | `hal` listed / bare | `h-only-when` / `h-never` | listed = preceding `/h/`/`/w/` |
+ * | `har` statement / fill-ask | `h-sometimes` / `h-when` | `-r` is unspecified occasion, not `hal` |
  * | `hual` bare | `h-always` | |
  * | `howoram` | `h-plan-sketch` | overlay grain `-m` |
  * | mid-word `x` | always `-x-` segments | never a fused English name |
@@ -576,7 +577,7 @@ function joinMarkerLabel(word: LexWord, ctx: MorphGlossContext): string {
   }
 
   if (word.reading === "restrictor") {
-    return restrictorLabel(series, ending, ctx.restrictorListed);
+    return restrictorLabel(series, ending, ctx.restrictorListed, ctx.fillAsk);
   }
 
   return fenceJoinLabel(series, ending, word.pos, ctx);
@@ -613,7 +614,15 @@ function restrictorLabel(
   series: string,
   ending: Ending | undefined,
   listed: boolean | undefined,
+  fillAsk: boolean | undefined,
 ): string {
+  if (ending === "r") {
+    if (series === "a") return fillAsk ? "when" : "sometimes";
+    if (series === "o") return "anytime";
+    if (series === "u") return "some-other-time";
+    if (series === "ae") return "equally-often";
+    return `${series}-r`;
+  }
   const open = ending === "m" ? ".open" : "";
   if (series === "a") return `${listed ? "only-when" : "never"}${open}`;
   if (series === "ua") return `${listed ? "always-except" : "always"}${open}`;

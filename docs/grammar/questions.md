@@ -344,7 +344,7 @@ To ask *when?* / *in what case?*, put an occasion word under `/h/` (or `/w/`) in
 
 > `jol zuhubun vawalal har?`
 >
-> j-question | z-Uhubun | v-walk | h-never
+> j-question | z-Uhubun | v-walk | h-when
 >
 > "When does Uhubun walk?"
 

@@ -76,6 +76,8 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("el", "rather");
     expectLine("ul", "except");
     expectLine("hal", "h-never");
+    expectLine("har", "h-sometimes");
+    expectLine("jol zuhubun vawalal har?", "j-question | z-Uhubun | v-walk | h-when");
     expectLine("zazawan vawalal hanunul hal", "z-Azawan | v-walking | h-rain | h-only-when");
     expectLine("hual", "h-always");
     expectLine("von", "v-choose");
@@ -149,6 +151,16 @@ describe("morphGlossLine — glosses.md dialogue turns", () => {
       "jubunexunowen. xezebal zubur huvuvum zanunul.",
       "j-Ubune-x-Unowen | x-however | z-←Ubune-x-Unowen | h-WITNESSED | z-rain",
     );
+  });
+});
+
+describe("morphGlossLine — restrictor -r vs -l", () => {
+  it("har is sometimes / when, not never", () => {
+    expectLine("hal", "h-never");
+    expectLine("zululon vawalal hal.", "z-Ululon | v-walk | h-never");
+    expectLine("har", "h-sometimes");
+    expectLine("zululon vurunul har.", "z-Ululon | v-run | h-sometimes");
+    expectLine("jol zuhubun vawalal har?", "j-question | z-Uhubun | v-walk | h-when");
   });
 });
 
