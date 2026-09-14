@@ -417,15 +417,20 @@ RoleCompound
     }
 
 ValueAbilityCompound
-  = host:ContentRoot "x" stanceV:[aeou] ending:Ending plural:PluralSuffix? WordEnd {
+  = host:ValueAbilityHost "x" stanceV:[aeou] ending:Ending plural:PluralSuffix? WordEnd {
       return {
         ending,
         plural: !!plural,
         family: xFamily("valueAbility", {
-          leftRoots: [host],
+          leftRoots: host,
           stanceVowel: stanceV,
         }),
       };
+    }
+
+ValueAbilityHost
+  = first:ContentRoot rest:("x" r:ContentRoot { return r; })* {
+      return [first].concat(rest);
     }
 
 NumericDerivation

@@ -60,11 +60,10 @@ function rebuildX(
       return `${prefix}${family.roleVowel}x${host}${tail}`;
     }
     case "valueAbility": {
-      const host = left[0] ?? "";
-      if (!host || !family.stanceVowel) {
+      if (!family.stanceVowel || left.length === 0) {
         return null;
       }
-      return `${prefix}${host}x${family.stanceVowel}${tail}`;
+      return `${prefix}${left.join("x")}x${family.stanceVowel}${tail}`;
     }
     case "numeric": {
       const oldHost = family.leftRoots[0] ?? "";

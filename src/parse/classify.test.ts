@@ -94,6 +94,12 @@ describe("classify", () => {
     expectReading("vuzunexel", "ability");
   });
 
+  it("greeting bid on /j/ named vocative, not ability", () => {
+    expectReading("jazawaxan", "greeting");
+    expectReading("jululoxen", "greeting");
+    expectReading("juhubuxun", "greeting");
+  });
+
   it("value on need host compounds and bare need topic", () => {
     expectReading("halodoxal", "value");
     expectReading("hawerol", "value");

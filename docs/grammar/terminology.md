@@ -368,6 +368,12 @@ Whole root + **-r** vs prefix through the second vowel.
 
 [Pronouns](pronouns.md)
 
+### Greeting / greeting bid
+
+`/j/` plus a name calls that person into the turn (your name or theirs). Mid-word **`x`** plus **`a`** / **`o`** / **`e`** / **`u`** on that vocative marks presence, one ask, *one moment please*, or passing.
+
+[Core](core.md#greeting) · [X-compounds](x-compounds.md#greeting-bid)
+
 ### Hold
 
 **COMMENT** / **NOTIONAL** tightness endings.

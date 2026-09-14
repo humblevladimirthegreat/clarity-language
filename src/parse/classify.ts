@@ -332,6 +332,9 @@ export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
   }
 
   if (family.kind === "x" && family.xFamily === "valueAbility") {
+    if (word.pos === "j" && word.ending === "n") {
+      return { ...word, reading: "greeting" };
+    }
     const host = family.leftRoots[0];
     const reading: LexReading =
       host && tables.needRoots.has(host) ? "value" : "ability";

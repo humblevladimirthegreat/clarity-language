@@ -107,6 +107,7 @@ export type LexReading =
   | "ordinary"
   | "value"
   | "ability"
+  | "greeting"
   | "restrictor"
   | "mood"
   | "join"

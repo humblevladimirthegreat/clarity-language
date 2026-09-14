@@ -45,6 +45,7 @@ Beginner already used ordinary compounds, role compounds, and values / ability o
 |--------|-----|---------|-----|
 | one vowel **`x`** one vowel, then a span ending | [span fence](spans.md) open or close | `daxal` … `xuxul` | vowel **x** vowel |
 | **`a`** / **`u`** / **`o`** **`x`** a longer root | [role compound](roles.md#role-compounds) | `zaxuvugul` *a fighter* | **a** agent / **u** patient / **o** relatum |
+| `/j/` + name **`x`** **`a`** / **`o`** / **`e`** / **`u`** + **-n** | [greeting bid](#greeting-bid) | `jazawaxan` | vowel on the named vocative |
 | longer root **`x`** stance vowel **`a`** / **`e`** / **`o`** / **`u`** | [values](values.md) (need host) or [ability](ability.md#ability) (other host) | `vuzunuxel` | stance vowel on the host |
 | longer root **`x`** a [number](numbers.md) stem (no ending of its own) | [numeric derivation](numeric-derivation.md#numeric-derivation) | `…x+1…` / speech `…xraba…` | number stem on the right |
 | full roots on **both** sides, optional further **`x`** + root | ordinary compound | `zuzuzuxogoven`; `gewezexazawan` *Azawan’s left* ([viewpoint laterals](roles.md#viewpoint-laterals)); `zodunaxalanen` ([phrasal proper names](reference-suffix.md#phrasal-proper-names)) | **x** ≈ plus |
@@ -84,6 +85,7 @@ The table above is the full map. Read both sides of the first **`x`** in this or
 - The whole word is **`xuxul`** / **`xuxur`** / **`xuxum`** → a **span** is closing.
 - After the role letter: one vowel, **`x`**, one vowel, then a span ending → a **span** is opening (atomic / resume / empty — [spans](spans.md)).
 - After the role letter: one vowel **`a`** / **`u`** / **`o`**, **`x`**, then a longer root → a **role compound** (who does / undergoes / relates).
+- **`/j/`**, a name (one root or a [phrasal proper](reference-suffix.md#phrasal-proper-names)), **`x`**, a single vowel **`a`** / **`o`** / **`e`** / **`u`**, named **-n** → a [greeting bid](#greeting-bid).
 - A longer root, then **`x`**, then a single stance vowel **`a`** / **`e`** / **`o`** / **`u`** → **values** (on a need) or **ability** (on another host).
 - A longer root, then **`x`**, then a **number** stem (writing **`+`** / **`-`** / **`#`** / **`_`**; speech starts with **`r`**) → [numeric derivation](numeric-derivation.md#numeric-derivation).
 - Full roots on **both** sides of the first **`x`** (and maybe more **`x`** + root) → an ordinary compound (sense or name).
@@ -107,10 +109,44 @@ English sometimes puts two nouns in one slot (*a dog and a cat*) and sometimes o
 
 **Related form:** who does / undergoes / relates uses a [role compound](roles.md#role-compounds).
 
+### Greeting bid (`/j/` + name **`x`** vowel)
+<a id="greeting-bid"></a>
+
+Beginner [greeting](core.md#greeting) is `/j/` plus a name (`jazawan`, `jululon`). To say **what kind of opening** this turn is, keep that vocative and insert mid-word **`x`** plus one vowel before **-n**. The vowel frames the **encounter**, not the person’s worth. The name is whoever you call in: your name, or someone you already know.
+
+> `jazawaxan.`
+>
+> j-Azawan-presence
+>
+> "Azawan — I’m here / we can stay."
+
+<AgelanInspect text="jazawaxan." />
+
+> `jululoxen.`
+>
+> j-Ululon-queue
+>
+> "Ululon — one moment please."
+
+<AgelanInspect text="jululoxen." />
+
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **`…xan`** | presence | *I’m here / we can stay* | **a** ≈ add (time is in) |
+| **`…xon`** | one slot | *one ask* | **o** ≈ one |
+| **`…xen`** | queue | *one moment please* | **e** ≈ order (wait in line) |
+| **`…xun`** | pass | *just passing* (acknowledge; don’t open talk) | **u** ≈ undo (lift the talk) |
+
+One overlay per vocative word. Two vocatives may each carry a bid (`jazawaxan jululoxon`). **-n** is still the [named](reference-suffix.md#named-n-beginner) ending.
+
+**Compare with:** the same **`x`** + vowel on a verb or adjective is [ability](ability.md#ability) (`vuzunuxel` *can’t sing right now*). On a [need](values.md) it is a value stance. Greeting bids are only **`/j/`** + a name + **-n**.
+
+**Not the same job as:** **`jawavel`** (the *greeting* / wave root as an interjection). The bid sits on the **person** you call.
+
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills on this Intermediate band. Try each item before opening **Show answer**. The point is **`x`** assembly vs two words vs a lexical compound.
+Short drills on this Intermediate band. Try each item before opening **Show answer**. The point is **`x`** assembly vs two words vs a lexical compound, or a [greeting bid](#greeting-bid) on a vocative.
 
 **Roots used here**:
 
@@ -130,6 +166,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 | *sunflower* (lexical compound) | `unowel` | | |
 | *Azawan* | `azawan` | | |
 | *Ululon* | `ululon` | | |
+| *Uhubun* | `uhubun` | | |
 
 #### English → Agalan
 
@@ -157,18 +194,42 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zohohulabedel.`
 :::
 
+**5.** *Ululon — one moment please.*
+
+::: details Show answer
+`jululoxen.`
+:::
+
+**6.** *Azawan — one ask.*
+
+::: details Show answer
+`jazawaxon.`
+:::
+
 #### Agalan → English
 
-**5.** `zeberelonogol.`
+**7.** `zeberelonogol.`
 
 ::: details Show answer
 *a friend* (lexical compound)
 :::
 
-**6.** `zunowel.`
+**8.** `zunowel.`
 
 ::: details Show answer
 *a sunflower* (lexical compound)
+:::
+
+**9.** `juhubuxan.`
+
+::: details Show answer
+*Uhubun — I’m here / we can stay.*
+:::
+
+**10.** `jululoxun.`
+
+::: details Show answer
+*Ululon — just passing.*
 :::
 
 ## Advanced
@@ -233,4 +294,5 @@ Try each item before opening **Show answer**. Recognize a lexical compound vs pr
 - Word-initial **`x`** continue: [core.md](core.md#continue-x)
 - Phonotactics of mid-word **`x`**: [phonology.md](phonology.md#phonotactics)
 - [ability.md](ability.md) / [values.md](values.md) / [roles.md](roles.md) / [numeric-derivation.md](numeric-derivation.md)
+- Greeting bid on a vocative: [greeting bid](#greeting-bid); bare name: [core.md](core.md#greeting)
 - Named handles vs long titles: [reference-suffix.md](reference-suffix.md#named-handles)

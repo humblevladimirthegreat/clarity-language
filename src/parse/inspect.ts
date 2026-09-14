@@ -113,6 +113,13 @@ const JOIN_ENDING_SENSE: Record<Ending, string> = {
   r: "unspecified member",
 };
 
+const GREETING_BID_GLOSS: Record<"a" | "e" | "o" | "u", string> = {
+  a: "presence",
+  o: "one ask",
+  e: "one moment please",
+  u: "passing",
+};
+
 export function endingSense(ending: Ending | undefined, word?: LexWord): string | undefined {
   if (!ending) return undefined;
   if (word?.reading === "join") return JOIN_ENDING_SENSE[ending];
@@ -147,6 +154,13 @@ export function glossFor(word: LexWord): string {
   if (word.overlay?.definition) return word.overlay.definition;
 
   if (word.reading === "unknown") return "unknown root";
+  if (word.reading === "greeting") {
+    const family = word.family;
+    if (family.kind === "x" && family.stanceVowel) {
+      return GREETING_BID_GLOSS[family.stanceVowel];
+    }
+    return "greeting";
+  }
   if (word.reading === "number") return "number";
   if (word.reading === "join") {
     return word.rootGloss?.literal ?? "join";
@@ -271,6 +285,9 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
   const family = word.family;
 
   if (family.kind === "x" && family.xFamily === "valueAbility") {
+    if (word.reading === "greeting") {
+      return { line: "greeting bid, not ability", href: "x-compounds.html#greeting-bid" };
+    }
     if (word.reading === "value") {
       return { line: "values, not role", href: "values.html" };
     }
@@ -315,7 +332,7 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
   if (word.reading === "joinAct" || word.reading === "joinRelation") {
     return { line: "join extra", href: "join-extras.html" };
   }
-  if (word.ending === "r" && word.reading !== "value" && word.reading !== "ability") {
+  if (word.ending === "r" && word.reading !== "value" && word.reading !== "ability" && word.reading !== "greeting") {
     return { line: "anaphor", href: "pronouns.html" };
   }
   if (word.plural) {

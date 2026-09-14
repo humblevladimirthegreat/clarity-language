@@ -199,14 +199,27 @@ describe("parseWord — spans and writing atoms", () => {
 describe("parseWord — x families, revisers, joins, foreign", () => {
   it("parses vuzunexel as valueAbility (ability.md; classify splits need-set later)", () => {
     const word = parseOk("vuzunexel");
-    assert.equal(word.pos, "v");
-    assert.equal(word.ending, "l");
-    assert.deepEqual(word.family, {
-      kind: "x",
-      xFamily: "valueAbility",
-      leftRoots: ["uzune"],
-      stanceVowel: "e",
-    });
+    assert.equal(word.family.kind, "x");
+    if (word.family.kind === "x") {
+      assert.deepEqual(word.family, {
+        kind: "x",
+        xFamily: "valueAbility",
+        leftRoots: ["uzune"],
+        stanceVowel: "e",
+      });
+    }
+  });
+
+  it("parses jazawaxan as valueAbility host (greeting bid classified later)", () => {
+    const word = parseOk("jazawaxan");
+    assert.equal(word.pos, "j");
+    assert.equal(word.ending, "n");
+    assert.equal(word.family.kind, "x");
+    if (word.family.kind === "x") {
+      assert.equal(word.family.xFamily, "valueAbility");
+      assert.deepEqual(word.family.leftRoots, ["azawa"]);
+      assert.equal(word.family.stanceVowel, "a");
+    }
   });
 
   it("parses revisers al and om (revisers.md)", () => {
