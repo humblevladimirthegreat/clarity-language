@@ -15,7 +15,7 @@ When English would say *Azawan is more challenging than Ululon*, you put two peo
 
 > `zazawan zululon zel gomonam.`
 >
-> z-Azawan | z-Ululon | z-rank/more | g-challenging
+> z-Azawan | z-Ululon | z-rank/more | g-challenge
 >
 > "Azawan is more challenging than Ululon."
 
@@ -32,7 +32,7 @@ When English would say *the most challenging*, you are still ranking, but you na
 
 > `zazawan zel gomonam.`
 >
-> z-Azawan | z-rank/more | g-challenging
+> z-Azawan | z-rank/more | g-challenge
 >
 > "Azawan is the most challenging (of all)."
 
@@ -49,7 +49,7 @@ English *much more* / *slightly more* adds **how large the gap is**, without giv
 
 > `zazawan zululon zel gomonam wogegal.`
 >
-> z-Azawan | z-Ululon | z-rank/more | g-challenging | w-flood
+> z-Azawan | z-Ululon | z-rank/more | g-challenge | w-flood
 >
 > "Azawan is much more challenging than Ululon."
 
@@ -62,7 +62,7 @@ When English would say *as challenging as*, you are not picking a winner. You ar
 
 > `zazawan zululon zael gomonam.`
 >
-> z-Azawan | z-Ululon | z-as…as | g-challenging
+> z-Azawan | z-Ululon | z-as…as | g-challenge
 >
 > "Azawan is as challenging as Ululon."
 
@@ -234,19 +234,19 @@ When English would say *Ululon walks more intensely than Azawan*, the ladder is 
 
 > `zululon zazawan zel hohogem vawalal.`
 >
-> z-Ululon | z-Azawan | z-rank/more | h-intense | v-walk
+> z-Ululon | z-Azawan | z-rank/more | h-intensity | v-walk
 >
 > "Ululon walks more intensely than Azawan."
 
 > `zululon zel hohogem vawalal.`
 >
-> z-Ululon | z-rank/more | h-intense | v-walk
+> z-Ululon | z-rank/more | h-intensity | v-walk
 >
 > "Ululon walks the most intensely."
 
 > `zululon zazawan zael hohogem vawalal.`
 >
-> z-Ululon | z-Azawan | z-as…as | h-intense | v-walk
+> z-Ululon | z-Azawan | z-as…as | h-intensity | v-walk
 >
 > "Ululon walks as intensely as Azawan."
 
@@ -259,7 +259,7 @@ English *both are challenging* (or *Azawan and Ululon are challenging*) says **e
 
 > `zazawan zululon zal gomonam.`
 >
-> z-Azawan | z-Ululon | z-and | g-challenging
+> z-Azawan | z-Ululon | z-and | g-challenge
 >
 > "Azawan and Ululon are challenging."
 
@@ -282,7 +282,7 @@ English *two meters more challenging* still ranks two people on one quality, and
 
 > `zazawan zululon zel gomonam burulel g+2.`
 >
-> z-Azawan | z-Ululon | z-rank/more | g-challenging | b-measurement | g-+2
+> z-Azawan | z-Ululon | z-rank/more | g-challenge | b-ruler | g-two
 >
 > "Azawan is two meters more challenging than Ululon."
 

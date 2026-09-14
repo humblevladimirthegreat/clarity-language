@@ -13,7 +13,7 @@ To say what someone **means to do**, use the closed mood root **`owora`**. Spell
 
 > `zazawan howoram vawalal.`
 >
-> z-Azawan | h-PLAN-sketch | v-walk
+> z-Azawan | h-plan-sketch | v-walk
 >
 > "Azawan means to walk." (direction only; default)
 
@@ -33,13 +33,13 @@ On **`owora`**, **-l / -m / -r** say **how fully drawn** the intention is: direc
 
 > `zululon howoral vawalal.`
 >
-> z-Ululon | h-PLAN-itinerary | v-walk
+> z-Ululon | h-plan-itinerary | v-walk
 >
 > "Ululon’s itinerary is to walk." (steps on the map)
 
 > `zuhubun howorar vawalal.`
 >
-> z-Uhubun | h-PLAN-fork | v-walk
+> z-Uhubun | h-plan-fork | v-walk
 >
 > "If that path fails, Uhubun will walk." (backup course)
 
@@ -50,7 +50,7 @@ To say **what will happen** in the world (rain, a result), not what someone mean
 
 > `helezom vanunul.`
 >
-> h-PREDICT | v-rain
+> h-predict | v-rain
 >
 > "Forecast: it rains."
 
@@ -214,7 +214,7 @@ You can stack this mood after [PLAN](#plan-predict) when the clause needs both m
 
 > `zazawan howoral hegegel vawalal.`
 >
-> z-Azawan | h-PLAN-itinerary | h-DECISION-irreversible | v-walk
+> z-Azawan | h-plan-itinerary | h-DECISION-irreversible | v-walk
 >
 > "Azawan’s itinerary is to walk, and the pick is settled."
 
@@ -225,7 +225,7 @@ When you mark **how** you forecast (a usual pattern, an inference, and so on), k
 
 > `helezom habawam vanunul.`
 >
-> h-PREDICT | h-PATTERN | v-rain
+> h-predict | h-PATTERN | v-rain
 >
 > "Forecast from pattern: it rains."
 

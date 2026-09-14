@@ -50,7 +50,7 @@ When you want to say that a named thing **serves** this need (pays it off), writ
 
 > `zawaral wonogoxal.`
 >
-> z-gift | w-relatedness-met-physical
+> z-wrapped-gift | w-relatedness-met-physical
 >
 > "The gift serves relatedness (physical contact)."
 
@@ -94,7 +94,7 @@ That ending is **prescription force**: how strongly you claim the ought. If you 
 
 > `zazawan vezehel honogoxom.`
 >
-> z-Azawan | v-tell | h-relatedness-ought-endorse
+> z-Azawan | v-speech | h-relatedness-ought-endorse
 >
 > "Azawan tells: relatedness ought to be served (endorse)."
 
@@ -284,7 +284,7 @@ English *have to* / *need to* / *doing this for…* often names a **motive**: wh
 
 > `zazawan vezehel honogoxem.`
 >
-> z-Azawan | v-tell | h-relatedness-motive-internal
+> z-Azawan | v-speech | h-relatedness-motive-internal
 >
 > "Azawan tells for relatedness (internal reason)."
 
@@ -326,7 +326,7 @@ Prefer **-m** on **`xu` / `xe` / `xo`** when that table’s dimension is unclear
 
 > `zazawan vezehel holozoxal honogoxem.`
 >
-> z-Azawan | v-tell | h-competence-met-physical | h-relatedness-motive-internal
+> z-Azawan | v-speech | h-competence-met-physical | h-relatedness-motive-internal
 >
 > "Azawan tells: competence is met (physical) and relatedness is the internal motive."
 

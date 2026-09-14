@@ -35,7 +35,7 @@ The usual order is **Subject – Direct Object – Verb**. Because the first let
 
 > `zodogol dagadal vejel.`
 >
-> z-dog | d-cat | v-see
+> z-dog | d-cat | v-eye
 >
 > "A dog sees a cat."
 
@@ -150,7 +150,7 @@ The dependent may open with its own `/j/` words, or keep the main sentence’s s
 
 > `zazawan dululon vezehel dadorol zodogol vurunul.`
 >
-> z-Azawan | d-Ululon | v-tell | d-next-clause | z-dog | v-run
+> z-Azawan | d-Ululon | v-speech | d-next-clause | z-dog | v-run
 >
 > "Azawan tells Ululon that the dog runs."
 
@@ -419,7 +419,7 @@ A complex adjective is `/ɡ/` plus `/b/` (*same as Azawan*). A further plain adj
 
 > `zodogol gonunul bazawan gelulul.`
 >
-> z-dog | g-same | b-Azawan | g-blue
+> z-dog | g-SAME | b-Azawan | g-blue
 >
 > "a dog the same as blue Azawan"
 

@@ -490,7 +490,7 @@ You can use a number as the **action** (*add three*), as **how often** (*three t
 
 > `zululon vawalal h+3.`
 >
-> z-Ululon | v-walk | h-three-times
+> z-Ululon | v-walk | h-three
 >
 > "Ululon walks three times."
 
@@ -606,7 +606,7 @@ To count **from the last place** (*penultimate*, *starting with the last one*), 
 
 > `zabogol g#-2.`
 >
-> z-book | g-2nd-from-end
+> z-book | g-second-from-end
 >
 > "The penultimate book."
 

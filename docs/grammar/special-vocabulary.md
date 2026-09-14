@@ -13,7 +13,7 @@ When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgme
 
 > `zezehel wolozoxur hogegal hanedel.`
 >
-> z-dialogue | w-competence-unmet-temporary | h-HIGH | h-CIRCUM
+> z-speech | w-competence-unmet-temporary | h-HIGH | h-CIRCUM
 >
 > "Anxious about the dialogue:" competence at stake for now; flood; room awash.
 
@@ -57,7 +57,7 @@ When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*)
 
 > `zazawan zagegol g#2 vezehel.`
 >
-> z-Azawan | z-solution | g-second | v-tell
+> z-Azawan | z-solution | g-second | v-speech
 >
 > "Azawan names solution 2."
 

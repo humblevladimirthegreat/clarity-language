@@ -41,7 +41,7 @@ English *the one seen* or *the one fought* names the person the event happens to
 > `zazawan dagadal vejel.`
 > `zuxejer vurunul.`
 >
-> z-Azawan | d-cat | v-see
+> z-Azawan | d-cat | v-eye
 > z-←patient-x-see | v-run
 >
 > "Azawan sees a cat. The one seen runs."
@@ -72,7 +72,7 @@ If you put the event stem on a thing letter with no role vowel (`duvugul`), you 
 
 > `zazawan duvugul vejel.`
 >
-> z-Azawan | d-fight | v-see
+> z-Azawan | d-fight | v-eye
 >
 > "Azawan sees a fight."
 

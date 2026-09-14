@@ -460,7 +460,7 @@ English often uses *because* for **speaker grounds** (*I think P because Q*) wit
 
 > `zazawan hodohom vawalal.`
 >
-> z-Azawan | h-comment | v-walk
+> z-Azawan | h-COMMENT | v-walk
 >
 > "Azawan walks (that’s a take)."
 
@@ -475,7 +475,7 @@ A one-off episode and a standing pattern use the same sufficient / necessary sha
 
 > `zuludul zaom hual.`
 >
-> z-cloud | z-and/or.open | h-habitual
+> z-cloud | z-and/or.open | h-always
 >
 > "Clouds would work, as a standing pattern."
 

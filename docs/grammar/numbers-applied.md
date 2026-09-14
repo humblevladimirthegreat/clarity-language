@@ -59,7 +59,7 @@ English names **how much of a unit** (*two meters*, *three hours*). The unit is 
 
 > `zazawan burulel g+2 vawalal.`
 >
-> z-Azawan | b-measurement | g-+2 | v-walk
+> z-Azawan | b-ruler | g-two | v-walk
 >
 > "Azawan walks two meters."
 
@@ -103,7 +103,7 @@ Keep the **base** unit. Put the power of ten on the **amount** (`e3` / `e-3` / a
 
 > `zazawan zululon zel gomonam burulel g+2.`
 >
-> z-Azawan | z-Ululon | z-rank | g-challenging | b-measurement | g-+2
+> z-Azawan | z-Ululon | z-rank/more | g-challenge | b-ruler | g-two
 >
 > "Azawan is two meters more challenging than Ululon."
 
@@ -120,7 +120,7 @@ English *from 3 to 5* / *between 3 and 5* names a **band on a line**. Write two 
 
 > `z+3 z+5 zel gumel.`
 >
-> z-+3 | z-+5 | z-rank | g-time
+> z-three | z-five | z-rank/more | g-time
 >
 > "from 3 to 5 on time."
 
@@ -156,7 +156,7 @@ English *25% of the cats* names a **portion of a whole**. Close a **count** (`ra
 
 > `zagadalx g+25%.`
 >
-> z-cat-assoc | g-+25jo
+> z-cat-x | g-25
 >
 > "25% of the cats."
 
@@ -339,7 +339,7 @@ English *less than 5* / *greater than 5* is a **bound**, not a two-endpoint band
 
 > `z+5 zel.`
 >
-> z-+5 | z-rank
+> z-five | z-rank/more
 >
 > "less than 5."
 

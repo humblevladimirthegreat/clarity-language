@@ -15,7 +15,7 @@ The walking or sleeping is still the event. Without the `/h/` word you are just 
 
 > `zazawan hodohom vawalal.`
 >
-> z-Azawan | h-COMMENT-soft | v-walk
+> z-Azawan | h-COMMENT | v-walk
 >
 > "I think Azawan walks." — commentary held lightly (default)
 
@@ -25,7 +25,7 @@ The same `/h/` word can sit on a yes/no ask:
 
 > `jol zuhubun hodohom velebel.`
 >
-> j-yes | z-Uhubun | h-COMMENT-soft | v-sleep
+> j-question | z-Uhubun | h-COMMENT | v-sleep
 >
 > "Does Uhubun sleep?" — asked with light commentary
 
@@ -255,7 +255,7 @@ English sometimes frames the whole clause as play: *as if*, *for the sake of arg
 
 > `zazawan hadadem vawalal.`
 >
-> z-Azawan | h-NOTIONAL-soft | v-walk
+> z-Azawan | h-NOTIONAL | v-walk
 >
 > "As if Azawan walks." — notional framing held lightly (default)
 
@@ -460,7 +460,7 @@ The same published roots keep ordinary content under other role letters. The clo
 
 > `zazawan zadadel vejel.`
 >
-> z-Azawan | z-theater | v-see
+> z-Azawan | z-theater | v-eye
 >
 > "Azawan sees a theater."
 
@@ -471,7 +471,7 @@ The same published roots keep ordinary content under other role letters. The clo
 
 > `zazawan huvuvum dabodol vejel.`
 >
-> z-Azawan | h-WITNESSED | d-boot | v-see
+> z-Azawan | h-WITNESSED | d-boot | v-eye
 >
 > "Azawan sees a boot — from memory."
 

@@ -17,7 +17,7 @@ Start with one quoted token as the object of *said*. A [greeting](reference-suff
 
 > `zazawan d[azawan] vezehel.`
 >
-> z-Azawan | d-Azawan | v-tell
+> z-Azawan | d-Azawan | v-speech
 >
 > "Azawan said “Azawan.”" (hello)
 
@@ -54,7 +54,7 @@ To point back at a prior span without repeating its interior, put **`=`** inside
 
 > `jol zululon d[=] vezehel.`
 >
-> j-question | z-Ululon | d-←cite | v-tell
+> j-question | z-Ululon | d-←cite | v-speech
 >
 > "Ululon said that?!"
 
@@ -270,7 +270,7 @@ Beginner writing already packages a quote, mention, aside, or blob in brackets. 
 
 > `zazawan daxol azawan vezehel.`
 >
-> z-Azawan | d-cite.atomic | Azawan | v-tell
+> z-Azawan | d-cite-x-atomic | Azawan | v-speech
 >
 > "Azawan said “Azawan.”" (hello)
 
@@ -310,7 +310,7 @@ A pair of brackets can wrap one token or many, run to the end of the clause, or 
 
 > `zululon daxal zazawan vuzunul xuxul vezehel.`
 >
-> z-Ululon | d-cite.multi | z-Azawan | v-sing | x-close | v-tell
+> z-Ululon | d-cite-x-multi | z-Azawan | v-sing | x-span-close | v-speech
 >
 > "Ululon said “Azawan sings.”"
 
@@ -370,7 +370,7 @@ When one packaged chunk sits inside another (a quote that contains a parenthetic
 
 > `zazawan d[ h(huzumum) azawan ] vezehel.`
 >
-> z-Azawan | d-cite | h-aside | h-happy | Azawan | v-tell
+> z-Azawan | d-cite | h-aside | h-happy | Azawan | v-speech
 >
 > "Azawan said “Azawan” (happily)." (hello)
 
@@ -554,7 +554,7 @@ You already close a multi-token span with **`xuxul`**, the spoken match for `]` 
 
 > `zazawan daxal azawan xuxur vezehel.`
 >
-> z-Azawan | d-cite.multi | Azawan | x-close.editorial | v-tell
+> z-Azawan | d-cite-x-multi | Azawan | x-span-close-editorial | v-speech
 >
 > "Azawan said “Azawan…”" (hello, trailing off)
 

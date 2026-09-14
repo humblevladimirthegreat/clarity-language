@@ -15,7 +15,7 @@ After you have already named a person or thing, the next sentence can point back
 
 > `zazawan vawalal. zazar vajul.`
 >
-> z-Azawan | v-walk | z-←Azawan | v-sit
+> z-Azawan | v-walk | z-←Azawan | v-chair
 >
 > "Azawan walks. He sits." (resume from the name’s root prefix)
 
@@ -23,7 +23,7 @@ After you have already named a person or thing, the next sentence can point back
 
 > `zodogol vawalal. zodor vajul.`
 >
-> z-dog | v-walk | z-←dog | v-sit
+> z-dog | v-walk | z-←dog | v-chair
 >
 > "A dog walks. The dog sits."
 
@@ -256,7 +256,7 @@ Sometimes you still mean that person or thing, but you need a **different** slot
 
 > `zazawan vajul. zululon vazar.`
 >
-> z-Azawan | v-sit | z-Ululon | v-←Azawan
+> z-Azawan | v-chair | z-Ululon | v-←Azawan
 >
 > "Azawan sits. Ululon does that with him."
 
@@ -274,7 +274,7 @@ When you address several people at once, English *you* does not say how many. Th
 
 > `zedonenx vajul.`
 >
-> z-listener | v-sit
+> z-listener | v-chair
 >
 > "You all sit."
 

@@ -13,7 +13,7 @@ You already write a property on `/ɡ/` after the noun (*a blue dog*). When you s
 
 > `zazawan gomonam.`
 >
-> z-Azawan | g-challenging
+> z-Azawan | g-challenge
 >
 > "Azawan is challenging."
 

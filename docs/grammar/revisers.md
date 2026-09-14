@@ -468,7 +468,7 @@ Inside a [measure range](numbers-applied.md#ranges), prefix-less **`ul`** on the
 
 > `z+3 ul z+5 zal gurulel.`
 >
-> z-three | except | z-five | z-and | g-measurement
+> z-three | except | z-five | z-and | g-ruler
 >
 > "[3, 5) on the length continuum."
 

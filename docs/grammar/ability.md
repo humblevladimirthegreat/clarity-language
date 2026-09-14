@@ -23,7 +23,7 @@ The ending is still the **host** sense (**-l** literal, **-m** metaphorical, **-
 
 > `zululon vuwuruxam.`
 >
-> z-Ululon | v-write-able-metaphor
+> z-Ululon | v-authorship-able
 >
 > "Ululon can write." (metaphorical host sense).
 

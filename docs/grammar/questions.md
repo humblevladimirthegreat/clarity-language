@@ -79,7 +79,7 @@ If more than one slot has join **-r** in the same question, each of those **-r**
 
 > `jol zar vejel dar?`
 >
-> j-question | z-who | v-see | d-what
+> j-question | z-who | v-eye | d-what
 >
 > "Who sees what?"
 
@@ -91,7 +91,7 @@ If only one slot is unknown, put join **-r** only there. Write the known thing a
 
 > `jol zar vejel dodogol?`
 >
-> j-question | z-who | v-see | d-dog
+> j-question | z-who | v-eye | d-dog
 >
 > "Who sees a dog?"
 
@@ -509,7 +509,7 @@ Under question, the rest of the single-item and standalone join map is confirm /
 
 > `jol zazawan zel?`
 >
-> j-question | z-Azawan | z-rank
+> j-question | z-Azawan | z-rank/more
 >
 > "Is Azawan the only priority?"
 

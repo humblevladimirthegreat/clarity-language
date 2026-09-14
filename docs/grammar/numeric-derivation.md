@@ -13,7 +13,7 @@ English often names a *kind of thing* with a number idea baked in (*essence of l
 
 > `zolovexrabal.`
 >
-> z-love-x-+e
+> z-love-x-infinity
 >
 > "essence of love"
 

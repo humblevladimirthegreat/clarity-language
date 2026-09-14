@@ -22,7 +22,7 @@ To point back to that group (or to a prior person **and** their associates), add
 
 > `zazawarx vajul.`
 >
-> z-←Azawan-x | v-sit
+> z-←Azawan-x | v-chair
 >
 > "They (that one and associates) sit."
 
@@ -30,7 +30,7 @@ A first mention of a **kind as a group in this situation** uses **-lx** (literal
 
 > `zagadalx vajul.`
 >
-> z-cat-x | v-sit
+> z-cat-x | v-chair
 >
 > "Some cats sit."
 
@@ -63,13 +63,13 @@ English *we* and *you* do not say whether the listener is in the group. That spl
 
 > `zugobonx vajul.`
 >
-> z-speaker-x | v-sit
+> z-speaker-x | v-chair
 >
 > "Speaker and associates (not you) sit."
 
 > `zululonx vajul.`
 >
-> z-Ululon-x | v-sit
+> z-Ululon-x | v-chair
 >
 > "You (Ululon) and your associates sit."
 
@@ -83,7 +83,7 @@ The same roots take the role letter of the slot they fill. As a direct object th
 
 > `zazawan dugobonx vejel.`
 >
-> z-Azawan | d-speaker-x | v-see
+> z-Azawan | d-speaker-x | v-eye
 >
 > "Azawan sees speaker and associates (not you)."
 

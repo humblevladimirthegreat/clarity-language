@@ -98,7 +98,7 @@ When English would deny the listed items, use vowel **u**. One item before `zul`
 
 > `gomonam gul.`
 >
-> g-challenging | g-not
+> g-challenge | g-not
 >
 > "not challenging."
 
@@ -133,7 +133,7 @@ Write the items in that order, then a join with vowel **e**. The earlier item ou
 
 > `zazawan zel.`
 >
-> z-Azawan | z-rank
+> z-Azawan | z-rank/more
 >
 > "only Azawan matters" / "Azawan first."
 
@@ -435,7 +435,7 @@ When English would say two people are *as ADJ as* each other, or that nobody is 
 
 > `zazawan zululon zael gomonam.`
 >
-> z-Azawan | z-Ululon | z-as…as | g-challenging
+> z-Azawan | z-Ululon | z-as…as | g-challenge
 >
 > "Azawan is as challenging as Ululon."
 
@@ -510,7 +510,7 @@ When an adjective or extra noun is meant for the **whole list** (*both challengi
 
 > `zodogol zagadal zal gomonam.`
 >
-> z-dog | z-cat | z-and | g-challenging
+> z-dog | z-cat | z-and | g-challenge
 >
 > "(challenging dog) and (challenging cat)."
 
