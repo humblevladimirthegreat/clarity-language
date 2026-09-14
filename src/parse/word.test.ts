@@ -210,9 +210,9 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     }
   });
 
-  it("parses jazawaxan as valueAbility host (greeting bid classified later)", () => {
-    const word = parseOk("jazawaxan");
-    assert.equal(word.pos, "j");
+  it("parses azawaxan as valueAbility host (greeting bid classified later)", () => {
+    const word = parseOk("azawaxan");
+    assert.equal(word.pos, undefined);
     assert.equal(word.ending, "n");
     assert.equal(word.family.kind, "x");
     if (word.family.kind === "x") {

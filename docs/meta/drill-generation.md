@@ -207,8 +207,8 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | — | `why-agelan.md` | skip | — | orientation |
 | — | `introduction.md` | skip | — | orientation |
 | 3 | `phonology.md` | skip | — | not translation |
-| 4 | `reference-suffix.md` | **exists** | Choose **-l** vs **-m** vs **-n** on a **citation** (prefix-less); named person vs kind vs metaphor | No sentences. No **-r**. Pointers to **-x** / **`gl-`**: do **not** make those the item |
-| 5 | `core.md` | **exists** | PoS letters; SVO; `/ɡ/` after noun; `/w/`; `/h/`; complex `/ɡ|h/`+`/b/`; omit **`jal`**; **`jol` / `jel` / `jul`**; `/x/` continue vs `/j/` turn; **greeting** `/j/` + house name (`jazawan` / `jululon`); **`adoro` last**; adverbial subordinators (`hurugum` / `hodom` / `hezazem` / `hezebam` / `hegemum` / `humerem` / `hagagam` / `horanem` **`badorol`**); house names; **-l** / **-m** / **-n** as used in examples; `/x/` linker may start the next written sentence after `.` | Do not use **`gl-`**, **`jam`/`jom`/`jem`/`jum`**, nested **`adoro`**, letter **-r** mechanism, **-x**, joins. Polar **`jael` / `juel`** is questions, not this stage. No greeting-bid **`x`** vowel on the vocative |
+| 4 | `reference-suffix.md` | **exists** | Choose **-l** vs **-m** vs **-n** on a **citation** (prefix-less); named person vs kind vs metaphor; **greeting** named citation with period (`azawan.`) | No sentences with role letters. No **-r**. Pointers to **-x** / **`gl-`**: do **not** make those the item. No vocative `/j/` |
+| 5 | `core.md` | **exists** | PoS letters; SVO; `/ɡ/` after noun; `/w/`; `/h/`; complex `/ɡ|h/`+`/b/`; omit **`jal`**; **`jol` / `jel` / `jul`**; `/x/` continue vs `/j/` turn; **vocative** `/j/` + house name (`jululon`); **`adoro` last**; adverbial subordinators (`hurugum` / `hodom` / `hezazem` / `hezebam` / `hegemum` / `humerem` / `hagagam` / `horanem` **`badorol`**); house names; **-l** / **-m** / **-n** as used in examples; `/x/` linker may start the next written sentence after `.` | Do not use **`gl-`**, **`jam`/`jom`/`jem`/`jum`**, nested **`adoro`**, letter **-r** mechanism, **-x**, joins. Polar **`jael` / `juel`** is questions, not this stage. Greeting citations are reference-suffix, not this stage. No greeting-bid **`x`** vowel |
 | 6 | `pronouns.md` | **exists** | Letter vs full-root **-r**; specials **`ugobo` / `edone` / `aha` / `enenu`** (when the *role* is the point); inclusive *we* **`aha`** | Do **not** test associative **-x** here (plurality Beginner). Default people still house names; specials only when testing specials |
 | 6 | `plurality.md` | **exists** | Associative **-x** (`-lx` / `-nx` / `-rx`); not agreement; person-role **-x** (address set vs name…**-x**) | **`aha`** as the *not this* for inclusive *we*. **`ugobo`/`edone`** only on person-role items |
 | 7 | `predication.md` | **exists** | Classification `z… g…` vs kind *noun* `zodogol`; identity **`gonunul` + `/b/`** | No general *to-be* `/v/`. Prefer house names + **SAME**; page-example roots (`odava` / `uzuba`) OK if already taught in this stage |
@@ -222,7 +222,7 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 13 | `comparatives.md` | **exists** | Rank fence **`e`/`oe`/`ue`** + SHARED scale `/ɡ/`; single-item superlative; equative **`ae`** | **Needs:** joins Beginner rank joins. No measure phrases (Intermediate). No numbers Intermediate |
 | 13 | `causation.md` | **exists** | Sufficient = open sufficient (`…aom` / default pole habit); no cause-arrow word; outcome as host | **Needs:** joins Beginner inclusive/exclusion + core **`adoro`**. Necessary / **`IF` vs `IFF`** are Intermediate — do not use |
 | 14 | `values.md` | **exists** | Six needs; `/h/` vs `/w/`; topic (bare); **`xa`** met + contact **-l / -m / -r**; **`xo`** prescription force; **`xu`** unmet changeability | **Not** motive **`xe`** (Intermediate). Not ability (non-need + `x` vowel). Not COMMENT |
-| 14 | `ability.md` | **exists** | Host (non-need) + **`xa`/`xe`/`xo`/`xu`**; *can’t* grains vs *won’t* | Not values (need roots). Not role compounds (vowel *left* of `x`). Not greeting bid (`/j/` + name) |
+| 14 | `ability.md` | **exists** | Host (non-need) + **`xa`/`xe`/`xo`/`xu`**; *can’t* grains vs *won’t* | Not values (need roots). Not role compounds (vowel *left* of `x`). Not greeting bid (named citation or `/j/`) |
 | 14 | `commentary.md` | **exists** | **COMMENT** **`odoho`** + hold endings (**`hodohom`** default); not a world claim | Not evidentiality / NOTIONAL (Intermediate). Not **`jom`** (core Intermediate) unless you only recycle **`jol`** from core/questions Beginner |
 | 14 | `roles.md` | **exists** | Role compounds **`a`/`u`/`o` x ROOT`** (agent / patient / reltum); endings on the role word | Not viewpoint laterals (Intermediate). Not values/ability (vowel *right* of `x`). Not join-relations |
 | 14 | `x-compounds.md` | **exists** | Productive **`x`** vs two words vs lexical compound; recognize `ohohulabede` / `eberelonogo` lemmas | Not parser-family inventory as drills; not coining new lexical compounds. Greeting bid is Intermediate |
@@ -269,7 +269,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 14 | `commentary.md` | Intermediate | **exists** | Evidentiality channels; **NOTIONAL** **`adade`** + hold map; COMMENT vs nearby jobs | |
 | 14 | `commentary.md` | Advanced | — | no Advanced stage | |
 | 14 | `roles.md` | Intermediate | **exists** | Viewpoint laterals **`DIR x ANCHOR`**; bare arrow roots = compass; gravity **`uba`/`odowo`**; name/listener anchor | Prefer `…xazawan` over silent speaker default. **`edone`/`ugobo`** only when testing role-anchor. Include at least one bare cardinal and one gravity item |
-| 14 | `x-compounds.md` | Intermediate | **exists** | Greeting bid `/j/` + name **`x`** **`a`/`o`/`e`/`u`** + **-n** (presence / one ask / *one moment please* / passing); speaker or addressee | Recycle [core](../grammar/core.md#greeting) bare vocative. Not ability (`vuzunuxel`). Not values |
+| 14 | `x-compounds.md` | Intermediate | **exists** | Greeting bid name **`x`** **`a`/`o`/`e`/`u`** + **-n** on a citation or vocative (presence / one ask / *one moment please* / passing) | Recycle [greeting](../grammar/reference-suffix.md#greeting) and [vocative](../grammar/core.md#vocative). Not ability (`vuzunuxel`). Not values |
 | 14 | `roles.md` | Advanced | — | no Advanced stage | |
 | 15 | `join-extras.md` | Intermediate | **exists** | Join-act verbs `van` / `von` / …; join-relations `gan` / `han` / … (unary `/b/`) | No Beginner slot. Recycle = all Beginner + earlier Intermediate (path before 15), except optional numbers unless needed |
 | 15 | `plan-decision.md` | Intermediate | **exists** | **DECISION** **`egege`** changeability; evidentiality stacked on **PREDICT**; PLAN + DECISION stack | Recycle Beginner PLAN / PREDICT. Stack evidentiality on PREDICT only as this stage shows. Join-act **`von`** only if already taught in this stage |
@@ -285,8 +285,9 @@ First-taught checkpoint for forms agents leak most often. If this checkpoint’s
 
 | Form | First taught |
 |------|----------------|
-| House names, SVO, omit **`jal`**, **`jol`/`jel`/`jul`**, `/j/` greeting (`jazawan`), **`adoro`**, *because* **`hurugum badorol`**, `/x/` linker after `.` | `core.md` Beginner |
-| Greeting bid **`…xan` / `…xon` / `…xen` / `…xun`** on a vocative | `x-compounds.md` Intermediate |
+| House names, SVO, omit **`jal`**, **`jol`/`jel`/`jul`**, vocative (`jululon`), **`adoro`**, *because* **`hurugum badorol`**, `/x/` linker after `.` | `core.md` Beginner |
+| Named citation greeting (`azawan.`) | `reference-suffix.md` Beginner |
+| Greeting bid **`…xan` / `…xon` / `…xen` / `…xun`** on a citation or vocative | `x-compounds.md` Intermediate |
 | **`gl-`**, **`jam`/`jom`/`jem`/`jum`** as a *speech-act* system, remaining `/x/` linkers, nested **`adoro`** | `core.md` Intermediate |
 | **-l** / **-m** / **-n** as a *choice* on a citation | `reference-suffix.md` Beginner |
 | Letter/full-root **-r** algorithm; **`ugobo`/`edone`/`aha`/`enenu`** | `pronouns.md` Beginner |

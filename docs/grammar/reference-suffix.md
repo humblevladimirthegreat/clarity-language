@@ -38,6 +38,19 @@ When the word is a **name** (this person or this place, not a kind of thing), en
 
 **Compare with:** the same root as a kind is `azawal` *swan*; as the published metaphor, `azawam` *grace*. **-n** names the person.
 
+### Greeting
+<a id="greeting"></a>
+
+You can **say** a named citation as a hello: offer your own name, with a period. That is how you walk in. The spelling is the same name you just wrote (`azawan`); there is no extra first letter.
+
+> `azawan.`
+>
+> Azawan
+>
+> "Azawan." (hello — the speaker is Azawan)
+
+**Compare with:** the same citation in a list or heading has no period and is not a greeting.
+
 ### The three endings
 
 The last letters you just used, on the same root `azawa`:
@@ -52,12 +65,12 @@ The last letters you just used, on the same root `azawa`:
 <a id="citation-forms"></a>
 <a id="prefix-less-citation"></a>
 
-A citation is **lowercase** root + ending (`azawal`, `azawam`, `azawan`). English for a citation is the bare sense (*swan*, *grace*, *Azawan*), with no article. In a sentence you will add a first letter for the word’s job; that is [core](core.md#beginner).
+A citation is **lowercase** root + ending (`azawal`, `azawam`, `azawan`). English for a citation is the bare sense (*swan*, *grace*, *Azawan*), with no article. In a sentence you will add a first letter for the word’s job; that is [core](core.md#beginner). A [greeting](#greeting) is the named citation as a whole opening (`azawan.`).
 
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills on this Beginner band. Try each item before opening **Show answer**. Choose **-l** (new literal), **-m** (new metaphor), or **-n** (named). Every answer is a citation (no first-letter job mark). For a name, the English prompt is the **sense** (*grace*), not the nativized spelling (*Azawan*).
+Short drills on this Beginner band. Try each item before opening **Show answer**. Choose **-l** (new literal), **-m** (new metaphor), or **-n** (named). Every answer is a citation (no first-letter job mark). For a name, the English prompt is the **sense** (*grace*), not the nativized spelling (*Azawan*), except the greeting items.
 
 **Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
 
@@ -122,6 +135,12 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `uhubun`
 :::
 
+**9.** *Hello — the speaker is Azawan.*
+
+::: details Show answer
+`azawan.`
+:::
+
 #### Agalan → English
 
 **1.** `azawal`
@@ -172,6 +191,12 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *beauty* (as a name)
 :::
 
+**9.** `ululon.`
+
+::: details Show answer
+*Ululon.* (hello — the speaker is Ululon)
+:::
+
 ## Intermediate
 <a id="intermediate"></a>
 
@@ -199,7 +224,7 @@ The rest of the role map (same **-n**):
 | `/ɡ/` + **-n** | this named style, tradition, brand, or category | **[Art Deco]** furniture, **[Buddhist]** monastery, **[iOS]** app (*a buddhist text* is still **-l**) |
 | `/w/` + **-n** | named scale, grade, or criterion on the preceding adjective | *spicy* **[Scoville]**, *large* **[King-size]**; ranked *worse than…* comparees: [comparatives](comparatives.md#judgment-benchmarks) |
 | `/h/` + **-n** | named standard, channel, or official frame | *according to* **[GAAP]**, *in* **[Q3]** as the named quarter ([number **-n**](numbers.md#number-endings) on number words) |
-| `/j/` vocative + **-n** | address this named person, place, or title; [greeting](core.md#greeting) is `/j/` plus that name | `jazawan`; titled group (*Team Alpha*); kind-based *everyone* uses **-l** |
+| `/j/` vocative + **-n** | address this named person, place, or title | `jululon`; titled group (*Team Alpha*); kind-based *everyone* uses **-l** |
 | `/j/` interjection + **-n** | named formula or conventional call | **[Amen]**, branded catchphrases; polar *yes* / *no* uses **-l** / **-m** ([polar stance](questions.md#polar-stance)) |
 
 An extra **`l`** after `/ɡ/` (`gl-`) is the before-the-noun spelling ([left-bound adjectives](core.md#left-bound-adjectives)), not a fifth reference suffix. Closed speech-act words (`jal` / `jol` / …) use their [act endings](core.md#speech-act). Manner and ordinary degree use **-l** / **-m** unless the manner or grade is itself a proper name.

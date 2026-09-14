@@ -4,6 +4,39 @@ This document contains a record of features that have been posted to the r/conla
 
 Use this document for styling examples when producing more posts, and seeing what has already been posted. New posts should be added at the top under this section.
 
+### Greetings Say What Kind of Talk This Is
+
+English *hi* is a blank check. It does not say whether you can stay, whether this is one question, whether the other person should wait, or whether you are only passing. People guess, over-commit, or get trapped in a doorway conversation they never agreed to.
+
+In Agalan the basic greeting is **your name as a citation** — no extra first letter. Calling someone you know is a separate vocative with `/j/`.
+
+> `azawan.`
+>
+> Azawan
+>
+> "Azawan." (hello — I’m Azawan)
+
+> `jululon.`
+>
+> j-Ululon
+>
+> "Ululon!" (hey, Ululon)
+
+The extra move is a closed vowel on that same name (`x` plus **a** / **o** / **e** / **u**). It frames **this encounter**, not the person’s worth:
+
+| Form | Vowel job | What they can assume |
+|------|-----------|----------------------|
+| `azawaxan` | **a** add | I’m here / we can stay |
+| `jululoxon` | **o** one | one ask (then we’re done) |
+| `jululoxen` | **e** order | *one moment please* (wait in line) |
+| `azawaxun` | **u** undo | I’m just passing; not opening talk |
+
+So `jululoxon` is *Ululon — got a sec?*, and `jululoxen` is *Ululon — one moment please*, instead of a *hi* that might mean either. A citation bid is how you show up; a vocative bid is how you call them (`azawaxan jululoxon` — I’m staying; Ululon, one ask).
+
+The same `x` + vowel on a verb is *can* / *can’t*, so this reading is only on a **named citation or vocative**. Bare `azawan.` stays the default hello with no extra claim.
+
+Full docs: https://main.d2xds94zsgwptg.amplifyapp.com/grammar/reference-suffix.html#greeting and https://main.d2xds94zsgwptg.amplifyapp.com/grammar/x-compounds.html#greeting-bid
+
 ### Pronouns Copy the Start of the Noun
 
 English pronouns are often ambiguous as to what the antecedent is, especially *it*. Agalan pronouns are built from an abbreviation of the antecedent, so the form itself tells you who or what you mean. There is no gender for pronouns, and not even animacy.

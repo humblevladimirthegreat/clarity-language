@@ -261,7 +261,7 @@ Bake join / reviser **job** into the English label (including open vs closed whe
 | Agalan | Morph gloss | Free English (separate) |
 |---------|-------------|-------------------------|
 | `jawavel` | `j-greeting` | *Hello.* |
-| `jazawan` | `j-Azawan` | *Azawan.* (hello / calling Azawan) |
+| `azawan.` | `Azawan` | *Azawan.* (hello) |
 | `jululoxen` | `j-Ululon-queue` | *Ululon — one moment please.* |
 | `jael` | `j-yes` | *Yes.* |
 | `jol` | `j-question` | *(yes/no or fill-ask)* |

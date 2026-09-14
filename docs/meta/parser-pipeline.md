@@ -82,7 +82,7 @@ Owns every **string-shaped** subsystem:
 - PoS prefix, left-bound **`gl-`**, reference ending, optional **-x**
 - Foreign `PoS<…>ENDING` / opaque `PoS<…>` (no phonology inside `<>`)
 - Free number words and writing shorthand ([numbers.md](../grammar/numbers.md))
-- Mid-word **`x`** families: rule alternation order = doc decision order (closes → span open → role → greeting bid `/j/`+name+vowel+**-n` → value/ability → numeric → ordinary compound)
+- Mid-word **`x`** families: rule alternation order = doc decision order (closes → span open → role → greeting bid name+vowel+**-n` (citation or `/j/`) → value/ability → numeric → ordinary compound)
 - Span open/close **word shapes**; writing bracket atoms (`d@[…]`, …)
 - Prefix-less [revisers](../grammar/revisers.md)
 
@@ -94,7 +94,7 @@ Semantic actions build a discriminated `MorphWord` only. **No lexicon calls insi
 
 1. Overlay hit on `(sense_form, pos)` → closed special vocabulary reading
 2. Else already-classified number stem → stay number
-3. Else value/ability vs [greeting bid](../grammar/x-compounds.md#greeting-bid) (`/j/` + name + **-n**) vs published root
+3. Else value/ability vs [greeting bid](../grammar/x-compounds.md#greeting-bid) (named citation or `/j/` + **-n**) vs published root
 4. Else unknown / foreign payload
 
 This is where join-act vs soft clause **-n**, mood vs manner, value vs ability, etc. become **readings** without re-parsing spelling.

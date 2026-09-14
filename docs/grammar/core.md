@@ -96,20 +96,14 @@ When you start a new speech move (a statement, a question, a command, including 
 
 <a id="left-edge-order-and-sentence-boundaries"></a>
 
-At the **start** of a new turn, write the **act word** (the word that says statement, question, or command) when you write it, immediately before the body (subject, object, verb, and so on). A [greeting](#greeting) can be the whole turn, or sit before that act word. Other `/j/` words that can sit there are taught with questions.
+At the **start** of a new turn, write the **act word** (the word that says statement, question, or command) when you write it, immediately before the body (subject, object, verb, and so on). A [vocative](#vocative) can be the whole turn, or sit before that act word. Other `/j/` words that can sit there are taught with questions.
 
 A `/j/` after a finished body starts the **next** turn.
 
-### Greeting
-<a id="greeting"></a>
+### Vocative
+<a id="vocative"></a>
 
-To greet, or to call someone into the turn, write `/j/` plus that person’s **name** plus **-n**. The name is whoever you are bringing in: **your** name if you are walking in, **theirs** if you already know who you are talking to. That word can be the whole turn.
-
-> `jazawan.`
->
-> j-Azawan
->
-> "Azawan." (hello — the speaker is Azawan)
+To **call** someone into the turn, write `/j/` plus that person’s name plus **-n**. That word can be the whole turn, or sit before a clause.
 
 > `jululon.`
 >
@@ -117,7 +111,7 @@ To greet, or to call someone into the turn, write `/j/` plus that person’s **n
 >
 > "Ululon!" (calling Ululon)
 
-**Compare with:** the same name under `/z/` is a subject in a clause (`zazawan vawalal` *Azawan walks*). `/j/` calls the person into the talk.
+**Compare with:** a [greeting](reference-suffix.md#greeting) is the speaker’s name as a citation (`azawan.`), with no `/j/`. `/j/` addresses someone. The same name under `/z/` is a subject (`zazawan vawalal` *Azawan walks*).
 
 ### Speech act: statement, question, command
 <a id="speech-act-beginner"></a>
@@ -256,85 +250,79 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 #### English → Agalan
 
-**1.** *Hello — the speaker is Azawan.*
-
-::: details Show answer
-`jazawan.`
-:::
-
-**2.** *Ululon!* (calling Ululon)
+**1.** *Ululon!* (calling Ululon)
 
 ::: details Show answer
 `jululon.`
 :::
 
-**3.** *A dog walks.*
+**2.** *A dog walks.*
 
 ::: details Show answer
 `zodogol vawalal.`
 :::
 
-**4.** *A blue dog walks.*
+**3.** *A blue dog walks.*
 
 ::: details Show answer
 `zodogol gelulul vawalal.`
 :::
 
-**5.** *Azawan walks.*
+**4.** *Azawan walks.*
 
 ::: details Show answer
 `zazawan vawalal.`
 :::
 
-**6.** *A dog sees a cat.*
+**5.** *A dog sees a cat.*
 
 ::: details Show answer
 `zodogol dagadal vejel.`
 :::
 
-**7.** *Happy Ululon walks.*
+**6.** *Happy Ululon walks.*
 
 ::: details Show answer
 `zululon guzumum vawalal.`
 :::
 
-**8.** *A very blue dog walks.*
+**7.** *A very blue dog walks.*
 
 ::: details Show answer
 `zodogol gelulul welem vawalal.`
 :::
 
-**9.** *Walk!*
+**8.** *Walk!*
 
 ::: details Show answer
 `jel vawalal.`
 :::
 
-**10.** *Don’t run.*
+**9.** *Don’t run.*
 
 ::: details Show answer
 `jul vurunul.`
 :::
 
-**11.** *Uhubun sings.*
+**10.** *Uhubun sings.*
 
 ::: details Show answer
 `zuhubun vuzunul.`
 :::
 
-**12.** *Azawan tells Ululon that the dog runs.*
+**11.** *Azawan tells Ululon that the dog runs.*
 
 ::: details Show answer
 `zazawan dululon vezehel dadorol zodogol vurunul.`
 :::
 
-**13.** *Azawan sings because Ululon walks.*
+**12.** *Azawan sings because Ululon walks.*
 
 ::: details Show answer
 `zazawan vuzunul hurugum badorol zululon vawalal.`
 :::
 
-**14.** *A dog walks. Therefore a cat runs.*
+**13.** *A dog walks. Therefore a cat runs.*
 
 ::: details Show answer
 `zodogol vawalal. xezazal zagadal vurunul.`
@@ -342,85 +330,79 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 #### Agalan → English
 
-**1.** `jazawan.`
-
-::: details Show answer
-*Azawan.* (hello — the speaker is Azawan)
-:::
-
-**2.** `juhubun.`
+**1.** `juhubun.`
 
 ::: details Show answer
 *Uhubun!* (calling Uhubun)
 :::
 
-**3.** `zazawan gelulul vawalal.`
+**2.** `zazawan gelulul vawalal.`
 
 ::: details Show answer
 *Blue Azawan walks.*
 :::
 
-**4.** `zagadal garedel vurunul.`
+**3.** `zagadal garedel vurunul.`
 
 ::: details Show answer
 *A red cat runs.*
 :::
 
-**5.** `zululon vurunul.`
+**4.** `zululon vurunul.`
 
 ::: details Show answer
 *Ululon runs.*
 :::
 
-**6.** `zodogol gelem vawalal.`
+**5.** `zodogol gelem vawalal.`
 
 ::: details Show answer
 *A big dog walks.*
 :::
 
-**7.** `zazawan vajul.`
+**6.** `zazawan vajul.`
 
 ::: details Show answer
 *Azawan sits.*
 :::
 
-**8.** `jel vuzunul.`
+**7.** `jel vuzunul.`
 
 ::: details Show answer
 *Sing!*
 :::
 
-**9.** `zuhubun vuzunul.`
+**8.** `zuhubun vuzunul.`
 
 ::: details Show answer
 *Uhubun sings.*
 :::
 
-**10.** `zodogol velebel hogorem bohohul.`
+**9.** `zodogol velebel hogorem bohohul.`
 
 ::: details Show answer
 *A dog sleeps inside a house.*
 :::
 
-**11.** `zodogol gelulul velebel.`
+**10.** `zodogol gelulul velebel.`
 
 ::: details Show answer
 *A blue dog sleeps.*
 :::
 
-**12.** `zazawan dululon vezehel dadorol zuhubun velebel.`
+**11.** `zazawan dululon vezehel dadorol zuhubun velebel.`
 
 ::: details Show answer
 *Azawan tells Ululon that Uhubun sleeps.*
 :::
 
-**13.** `zazawan vawalal hurugum badorol zululon velebel.`
+**12.** `zazawan vawalal hurugum badorol zululon velebel.`
 
 ::: details Show answer
 *Azawan walks because Ululon sleeps.*
 :::
 
-**14.** `zodogol vawalal. xezazal zagadal vurunul.`
+**13.** `zodogol vawalal. xezazal zagadal vurunul.`
 
 ::: details Show answer
 *A dog walks. Therefore a cat runs.*

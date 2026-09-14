@@ -138,6 +138,8 @@ export function classifyToTokenType(word: LexWord): AgelanTokenType {
     if (pos === "h") return H;
   }
 
+  if (reading === "greeting") return Vocative;
+
   if (pos === "j") {
     if (isPolarWord(word)) return Polar;
     if (isForceWord(word)) return Force;

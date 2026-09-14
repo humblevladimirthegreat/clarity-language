@@ -148,6 +148,15 @@ Everyday English *because* / *leads to* / *have to* blur sufficient vs necessary
 
 Keeping those forks apart helps you stop treating wishes and habits as if the world must obey them.
 
+### Openings and how long the talk is
+<a id="openings"></a>
+
+English *hi* hides whether you can stay, whether this is one ask, whether the other person should wait, or whether you are only passing.
+
+A [greeting](reference-suffix.md#greeting) is your name as a citation (`azawan.`). Calling someone is a [vocative](core.md#vocative). A [greeting bid](x-compounds.md#greeting-bid) adds one vowel: presence, one slot, *one moment please*, or passing. The overlay names the **encounter**.
+
+Marking the opening that way helps you consent to the talk without treating a wave as a blank check on time.
+
 ### Alternatives, reframes, and judgment bars
 <a id="alternatives-reframes-and-bars"></a>
 

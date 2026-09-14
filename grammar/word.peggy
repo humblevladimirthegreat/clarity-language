@@ -508,7 +508,15 @@ plainContent
 // ── Citation (prefix-less root + ending) ────────────────────────────────────
 
 citation
-  = root:ContentRoot ending:Ending plural:PluralSuffix? {
+  = body:(ValueAbilityCompound / NumericDerivation / OrdinaryCompound)
+    {
+      return makeWord(text(), {
+        ending: body.ending,
+        plural: body.plural,
+        family: body.family,
+      });
+    }
+  / root:ContentRoot ending:Ending plural:PluralSuffix? {
       return makeWord(text(), {
         ending,
         plural: !!plural,

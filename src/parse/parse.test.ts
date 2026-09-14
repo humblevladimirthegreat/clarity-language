@@ -45,6 +45,23 @@ describe("parse — core.md beginner", () => {
     assert.equal(units[1]!.kind, "predicate");
   });
 
+  it("parses citation greeting azawan.", () => {
+    const result = parseText("azawan.");
+    assert.equal(result.utterances.length, 1);
+    assert.equal(result.utterances[0]!.bodies[0]!.clause.units[0]!.kind, "np");
+  });
+
+  it("parses greeting bid azawaxan. as vocative-shaped left edge", () => {
+    const result = parseText("azawaxan.");
+    assert.equal(result.utterances[0]!.left.vocatives[0]?.raw, "azawaxan");
+    assert.equal(result.utterances[0]!.bodies.length, 0);
+  });
+
+  it("parses vocative jululon.", () => {
+    const result = parseText("jululon.");
+    assert.equal(result.utterances[0]!.left.vocatives[0]?.raw, "jululon");
+  });
+
   it("omits jal when recoverable", () => {
     const result = parseText("zazawan vawalal.");
     assert.equal(result.utterances[0]!.left.force, undefined);

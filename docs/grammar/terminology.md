@@ -370,9 +370,9 @@ Whole root + **-r** vs prefix through the second vowel.
 
 ### Greeting / greeting bid
 
-`/j/` plus a name calls that person into the turn (your name or theirs). Mid-word **`x`** plus **`a`** / **`o`** / **`e`** / **`u`** on that vocative marks presence, one ask, *one moment please*, or passing.
+A named citation as a hello (`azawan.`). Mid-word **`x`** plus **`a`** / **`o`** / **`e`** / **`u`** on that citation or on a vocative marks presence, one ask, *one moment please*, or passing.
 
-[Core](core.md#greeting) · [X-compounds](x-compounds.md#greeting-bid)
+[Reference suffix](reference-suffix.md#greeting) · [X-compounds](x-compounds.md#greeting-bid)
 
 ### Hold
 
