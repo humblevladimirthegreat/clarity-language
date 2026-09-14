@@ -60,119 +60,125 @@ Closed **`…aol`** (*X is enough*) is the stronger twin: this route alone is en
 
 Short drills for Beginner. Try each item before opening **Show answer**. Everyday *would work* is open sufficient **`…aom`** (outcome as host). Closed **`…aol`** is the stronger “this settles it” twin.
 
+**Setting:** a greenhouse
+
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *Azawan* | `azawan` |
-| *Ululon* | `ululon` |
-| *Uhubun* | `uhubun` |
-| *effort* | `ezewel` |
-| *cloud* | `uludul` |
-| *snow* | `ozowol` |
-| *dog* | `odogol` |
-| *book* | `abogol` |
-| *walk* | `vawalal` |
-| *sing* | `vuzunul` |
+| English | Agalan | Same root as |
+|---------|--------|--------------|
+| *Azawan* | `azawan` | |
+| *Ululon* | `ululon` | |
+| *Uhubun* | `uhubun` | |
+| *seedling* | `ezedel` | |
+| *potted plant* | `obodel` | |
+| *tomato* | `odomal` | |
+| *flower* | `ovowel` | |
+| *window* | `uwunol` | |
+| *sun* | `unul` | |
+| *thermometer* | `edehel` | |
+| *fire* | `urel` | |
+| *pour* | `vorurul` | `orurul` *pour* |
+| *see* | `vejel` | `ejel` *eye* |
+| *tell* | `vezehel` | `ezehel` *speech* |
 
 #### English → Agalan
 
-**1.** *Effort would work (among other routes).*
+**1.** *A seedling would work (among other routes).*
 
 ::: details Show answer
-`zezewel zaom.`
+`zezedel zaom.`
 :::
 
-**2.** *Clouds or snow would work.*
+**2.** *Azawan’s pouring would work.*
 
 ::: details Show answer
-`zuludul zozowol zaom.`
+`zazawan vorurul vaom.`
 :::
 
-**3.** *A book is enough.*
+**3.** *A window would work.*
 
 ::: details Show answer
-`zabogol zaol.`
+`zuwunol zaom.`
 :::
 
-**4.** *Uhubun’s singing would work.*
+**4.** *A tomato is enough.*
 
 ::: details Show answer
-`zuhubun vuzunul vaom.`
+`zodomal zaol.`
 :::
 
-**5.** *Azawan’s walking would work.*
+**5.** *Uhubun’s seeing would work.*
 
 ::: details Show answer
-`zazawan vawalal vaom.`
+`zuhubun vejel vaom.`
 :::
 
-**6.** *A dog would work.*
+**6.** *A potted plant or a window would work.*
 
 ::: details Show answer
-`zodogol zaom.`
+`zobodel zuwunol zaom.`
 :::
 
-**7.** *A dog or a book would work.*
+**7.** *Ululon’s telling would work.*
 
 ::: details Show answer
-`zodogol zabogol zaom.`
+`zululon vezehel vaom.`
 :::
 
-**8.** *Snow is enough.*
+**8.** *Fire is enough.*
 
 ::: details Show answer
-`zozowol zaol.`
+`zurel zaol.`
 :::
 
 #### Agalan → English
 
-**1.** `zululon vuzunul vaom.`
+**1.** `zovowel zaom.`
 
 ::: details Show answer
-*Ululon’s singing would work.*
+*A flower would work.*
 :::
 
-**2.** `zuludul zaom.`
+**2.** `zuhubun vorurul vaom.`
 
 ::: details Show answer
-*Clouds would work.*
+*Uhubun’s pouring would work.*
 :::
 
-**3.** `zezewel zaol.`
+**3.** `zedehel zaol.`
 
 ::: details Show answer
-*Effort is enough.*
+*A thermometer is enough.*
 :::
 
-**4.** `zuhubun vawalal vaom.`
+**4.** `zazawan vejel vaom.`
 
 ::: details Show answer
-*Uhubun’s walking would work.*
+*Azawan’s seeing would work.*
 :::
 
-**5.** `zodogol zaol.`
+**5.** `zunul zaom.`
 
 ::: details Show answer
-*A dog is enough.*
+*The sun would work.*
 :::
 
-**6.** `zozowol zaom.`
+**6.** `zululon vorurul vaom.`
 
 ::: details Show answer
-*Snow would work.*
+*Ululon’s pouring would work.*
 :::
 
-**7.** `zululon vawalal vaom.`
+**7.** `zurel zaom.`
 
 ::: details Show answer
-*Ululon’s walking would work.*
+*Fire would work.*
 :::
 
-**8.** `zabogol zaom.`
+**8.** `zobodel zurel zaom.`
 
 ::: details Show answer
-*A book would work.*
+*A potted plant or fire would work.*
 :::
 
 ## Intermediate
@@ -296,6 +302,8 @@ English *should* on a causal claim is often a wish or ought, not a formal or nat
 
 Short drills for Intermediate. Try each item before opening **Show answer**. Mark **necessary** with exclusion / **`hal`**, unique path with **`gon` / `…ol`**, clause poles with **`hadorom` / `hezazem` / `hurugum`**, and **CAUSE** with **`hegegam`**. An ought sits on values **`xo`**.
 
+**Setting:** a dam control room
+
 **Roots used here:**
 
 | English | Agalan | Same root as |
@@ -303,15 +311,17 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Mar
 | *Azawan* | `azawan` | |
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
-| *dog* | `odogol` | |
-| *effort* | `ezewel` | |
-| *rain* | `anunul` | |
-| *cloud* | `uludul` | |
-| *competence* | `olozom` | `olozol` *toolbox* |
-| *walk* | `vawalal` | |
-| *sing* | `vuzunul` | |
-| *sleep* | `velebel` | |
-| *run* | `vurunul` | |
+| *knob* | `ogozol` | |
+| *flood* | `ogegal` | |
+| *key* | `agegol` | |
+| *bell* | `obelel` | |
+| *pressure* | `abamal` | |
+| *sit* | `vajul` | `ajul` *chair* |
+| *pour* | `vorurul` | `orurul` *pour* |
+| *see* | `vejel` | `ejel` *eye* |
+| *tell* | `vezehel` | `ezehel` *speech* |
+| *run* | `vurunul` | `urunul` *running* |
+| *competence (ought, invite)* | `holozoxor` | `olozol` *toolbox* |
 | *if* | `hadorom` | `adorol` *door* |
 | *iff* | `hezazem` | `ezazel` *east-west* |
 | *because* | `hurugum` | `urugul` *brick* |
@@ -319,16 +329,16 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Mar
 
 #### English → Agalan
 
-**1.** *Azawan never walks.*
+**1.** *Azawan never sits.*
 
 ::: details Show answer
-`zazawan vawalal hal.`
+`zazawan vajul hal.`
 :::
 
-**2.** *Raining without clouds.*
+**2.** *Flooding without a knob.*
 
 ::: details Show answer
-`zanunul huan buludul.`
+`zogegal huan bogozol.`
 :::
 
 **3.** *It has to be Ululon.*
@@ -337,84 +347,84 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Mar
 `zululon gon.`
 :::
 
-**4.** *Azawan walks if Uhubun sings.*
+**4.** *Azawan sits if Uhubun sees.*
 
 ::: details Show answer
-`zazawan vawalal hadorom badorol zuhubun vuzunul.`
+`zazawan vajul hadorom badorol zuhubun vejel.`
 :::
 
-**5.** *Ululon runs if and only if Azawan sleeps.*
+**5.** *Ululon pours if and only if Azawan sits.*
 
 ::: details Show answer
-`zululon vurunul hezazem badorol zazawan velebel.`
+`zululon vorurul hezazem badorol zazawan vajul.`
 :::
 
-**6.** *Uhubun sings because Ululon runs.*
+**6.** *Uhubun tells because Ululon pours.*
 
 ::: details Show answer
-`zuhubun vuzunul hurugum badorol zululon vurunul.`
+`zuhubun vezehel hurugum badorol zululon vorurul.`
 :::
 
-**7.** *Effort would work (as an ought, not the sole law).*
+**7.** *A knob would work (as an ought, not the sole law).*
 
 ::: details Show answer
-`zezewel zaom holozoxor.`
+`zogozol zaom holozoxor.`
 :::
 
-**8.** *Effort would work (as mechanism).*
+**8.** *Flooding would work (as mechanism).*
 
 ::: details Show answer
-`zezewel zaom hegegam.`
+`zogegal zaom hegegam.`
 :::
 
 #### Agalan → English
 
-**1.** `zazawan guan bodogol.`
+**1.** `zazawan guan bagegol.`
 
 ::: details Show answer
-*Azawan without a dog.*
+*Azawan without a key.*
 :::
 
-**2.** `zodogol hon.`
+**2.** `zobelel hon.`
 
 ::: details Show answer
-*It has to be the dog.*
+*It has to be the bell.*
 :::
 
-**3.** `zuhubun vawalal hadorom badorol zululon velebel.`
+**3.** `zuhubun vajul hadorom badorol zululon vejel.`
 
 ::: details Show answer
-*Uhubun walks if Ululon sleeps.*
+*Uhubun sits if Ululon sees.*
 :::
 
-**4.** `zazawan vuzunul hezazem badorol zuhubun vawalal.`
+**4.** `zazawan vorurul hezazem badorol zuhubun vezehel.`
 
 ::: details Show answer
-*Azawan sings if and only if Uhubun walks.*
+*Azawan pours if and only if Uhubun tells.*
 :::
 
-**5.** `zululon vurugul.`
+**5.** `zululon vurunul hurugum badorol zogegal.`
 
 ::: details Show answer
-*Ululon bricks. / Ululon lays a brick.*
+*Ululon runs because of flooding.*
 :::
 
-**6.** `zuhubun vuzunul hal.`
+**6.** `zuhubun vezehel hal.`
 
 ::: details Show answer
-*Uhubun never sings.*
+*Uhubun never tells.*
 :::
 
-**7.** `zululon vawalal hegegam.`
+**7.** `zululon vorurul hegegam.`
 
 ::: details Show answer
-*Ululon walks (as mechanism).*
+*Ululon pours (as mechanism).*
 :::
 
-**8.** `zanunul huan bezewel.`
+**8.** `zogegal huan babamal.`
 
 ::: details Show answer
-*Raining without / excluding effort.*
+*Flooding without / excluding pressure.*
 :::
 
 ## Advanced
@@ -487,6 +497,8 @@ Time and discourse dependents use the same **`adoro`** hang as *if* / *because*.
 
 Short drills for Advanced. Try each item before opening **Show answer**. **`hurugum`** asserts the dependent as a fact the main sentence rests on; **`hadorom`** does not; speaker-grounds stay **`hodohom`**. Habit uses **`hual`**; mechanism uses **`hegegam`**.
 
+**Setting:** a chemistry lab
+
 **Roots used here:**
 
 | English | Agalan | Same root as |
@@ -494,14 +506,13 @@ Short drills for Advanced. Try each item before opening **Show answer**. **`huru
 | *Azawan* | `azawan` | |
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
-| *rain* | `anunul` | |
-| *cloud* | `uludul` | |
-| *snow* | `ozowol` | |
-| *effort* | `ezewel` | |
-| *walk* | `vawalal` | |
-| *sing* | `vuzunul` | |
-| *sleep* | `velebel` | |
-| *run* | `vurunul` | |
+| *test-tube* | `ezubel` | |
+| *lab coat* | `alabal` | |
+| *fire* | `urel` | |
+| *sit* | `vajul` | `ajul` *chair* |
+| *pour* | `vorurul` | `orurul` *pour* |
+| *see* | `vejel` | `ejel` *eye* |
+| *tell* | `vezehel` | `ezehel` *speech* |
 | *if* | `hadorom` | `adorol` *door* |
 | *iff* | `hezazem` | `ezazel` *east-west* |
 | *because* | `hurugum` | `urugul` *brick* |
@@ -510,78 +521,78 @@ Short drills for Advanced. Try each item before opening **Show answer**. **`huru
 
 #### English → Agalan
 
-**1.** *Ululon runs because Uhubun sings.* (the singing is asserted)
+**1.** *Ululon pours because Uhubun sees.* (the seeing is asserted)
 
 ::: details Show answer
-`zululon vurunul hurugum badorol zuhubun vuzunul.`
+`zululon vorurul hurugum badorol zuhubun vejel.`
 :::
 
-**2.** *Uhubun sleeps if it rains.* (rain is not asserted)
+**2.** *Azawan sits if there is fire.* (fire is not asserted)
 
 ::: details Show answer
-`zuhubun velebel hadorom badorol zanunul.`
+`zazawan vajul hadorom badorol zurel.`
 :::
 
-**3.** *Azawan walks if and only if it rains.*
+**3.** *Azawan pours if and only if Uhubun tells.*
 
 ::: details Show answer
-`zazawan vawalal hezazem badorol zanunul.`
+`zazawan vorurul hezazem badorol zuhubun vezehel.`
 :::
 
-**4.** *Azawan walks (that’s a take).* (speaker-grounds, not a world-reason)
+**4.** *Azawan sits (that’s a take).* (speaker-grounds, not a world-reason)
 
 ::: details Show answer
-`zazawan hodohom vawalal.`
+`zazawan hodohom vajul.`
 :::
 
-**5.** *Snow would work, as a standing pattern.*
+**5.** *A test-tube would work, as a standing pattern.*
 
 ::: details Show answer
-`zozowol zaom hual.`
+`zezubel zaom hual.`
 :::
 
-**6.** *Clouds would work (as mechanism), as a standing pattern.*
+**6.** *Fire would work (as mechanism), as a standing pattern.*
 
 ::: details Show answer
-`zuludul zaom hegegam hual.`
+`zurel zaom hegegam hual.`
 :::
 
 #### Agalan → English
 
-**1.** `zazawan vawalal hurugum badorol zanunul.`
+**1.** `zazawan vajul hurugum badorol zurel.`
 
 ::: details Show answer
-*Azawan walks because it rains.*
+*Azawan sits because there is fire.*
 :::
 
-**2.** `zululon vurunul hadorom badorol zozowol.`
+**2.** `zululon vorurul hadorom badorol zezubel.`
 
 ::: details Show answer
-*Ululon runs if there is snow.*
+*Ululon pours if there is a test-tube.*
 :::
 
-**3.** `zuhubun hodohom vuzunul.`
+**3.** `zuhubun hodohom vejel.`
 
 ::: details Show answer
-*Uhubun sings (that’s a take).*
+*Uhubun sees (that’s a take).*
 :::
 
-**4.** `zazawan hodohom vawalal hurugum badorol zululon velebel.`
+**4.** `zazawan hodohom vajul hurugum badorol zululon vorurul.`
 
 ::: details Show answer
-*Azawan walks, I’d note, because Ululon sleeps.*
+*Azawan sits, I’d note, because Ululon pours.*
 :::
 
-**5.** `zezewel zaom hual.`
+**5.** `zalabal zaom hual.`
 
 ::: details Show answer
-*Effort would work, as a standing pattern.*
+*A lab coat would work, as a standing pattern.*
 :::
 
-**6.** `zuhubun vawalal hurugum hegegam badorol zanunul.`
+**6.** `zuhubun vorurul hurugum hegegam badorol zurel.`
 
 ::: details Show answer
-*Uhubun walks because it rains (as mechanism).*
+*Uhubun pours because there is fire (as mechanism).*
 :::
 
 ## See also

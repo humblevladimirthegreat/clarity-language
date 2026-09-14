@@ -72,109 +72,128 @@ A citation is **lowercase** root + ending (`azawal`, `azawam`, `azawan`). Englis
 
 Short drills for Beginner. Try each item before opening **Show answer**. Choose **-l** (new literal), **-m** (new metaphor), or **-n** (named). Every answer is a citation (no first-letter job mark). For a name, the English prompt is the **sense** (*grace*), not the nativized spelling (*Azawan*), except the greeting items.
 
+**Setting:** a classroom
+
 **Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
-| *swan* | `azawal` | | |
+| *school* | `ahalal` | | |
+| *chair* | `ajul` | | |
+| *pencil* | `ebegul` | | |
+| *draft* | `ebegum` | `ebegul` *pencil* | ✏️: marks you can still erase |
+| *book* | `abogol` | | |
+| *knowledge* | `abogom` | `abogol` *book* | 📖: what a book holds |
+| *magnify* | `aguvol` | | |
+| *scrutiny* | `aguvom` | `aguvol` *magnify* | 🔍: close examination |
+| *bell* | `obelel` | | |
+| *alert* | `obelem` | `obelel` *bell* | 🔔: warning attention |
+| *projector* | `ojegol` | | |
+| *bar-chart* | `araral` | | |
+| *analysis* | `araram` | `araral` *bar-chart* | 📊: examining the quantities |
 | *grace* | `azawam` | `azawal` *swan* | 🦢: the glide of *grace* |
 | *grace* (as a name) | `azawan` | | |
 | *courage* (as a name) | `ululon` | | |
 | *beauty* (as a name) | `uhubun` | | |
-| *dog* | `odogol` | | |
-| *cat* | `agadal` | | |
-| *house* | `ohohul` | | |
-| *blue* | `elulul` | | |
-| *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
-| *smile* | `uzumul` | | |
-| *book* | `abogol` | | |
 
 #### English → Agalan
 
-**1.** *swan* (citation)
+**1.** *school* (citation)
 
 ::: details Show answer
-`azawal`
+`ahalal`
 :::
 
-**2.** *grace* (citation)
+**2.** *chair* (citation)
 
 ::: details Show answer
-`azawam`
+`ajul`
 :::
 
-**3.** *grace*, as a name (citation)
+**3.** *pencil* (citation)
 
 ::: details Show answer
-`azawan`
+`ebegul`
 :::
 
-**4.** *dog* (citation)
+**4.** *draft* (citation)
 
 ::: details Show answer
-`odogol`
+`ebegum`
 :::
 
-**5.** *cat* (citation)
+**5.** *knowledge* (citation)
 
 ::: details Show answer
-`agadal`
+`abogom`
 :::
 
-**6.** *blue* (citation)
+**6.** *scrutiny* (citation)
 
 ::: details Show answer
-`elulul`
+`aguvom`
 :::
 
-**7.** *Hello — the speaker is Azawan.*
+**7.** *beauty*, as a name (citation)
 
 ::: details Show answer
-`azawan.`
+`uhubun`
+:::
+
+**8.** *Hello — the speaker is Ululon.*
+
+::: details Show answer
+`ululon.`
 :::
 
 #### Agalan → English
 
-**1.** `ohohul`
+**1.** `abogol`
 
 ::: details Show answer
-*house*
+*book*
 :::
 
-**2.** `uzumum`
+**2.** `obelel`
 
 ::: details Show answer
-*happy*
+*bell*
 :::
 
-**3.** `ululon`
+**3.** `ojegol`
+
+::: details Show answer
+*projector*
+:::
+
+**4.** `obelem`
+
+::: details Show answer
+*alert*
+:::
+
+**5.** `araram`
+
+::: details Show answer
+*analysis*
+:::
+
+**6.** `azawam`
+
+::: details Show answer
+*grace*
+:::
+
+**7.** `ululon`
 
 ::: details Show answer
 *courage* (as a name)
 :::
 
-**4.** `uhubun`
+**8.** `azawan.`
 
 ::: details Show answer
-*beauty* (as a name)
-:::
-
-**5.** `ululon.`
-
-::: details Show answer
-*Ululon.* (hello — the speaker is Ululon)
-:::
-
-**6.** `uzumul`
-
-::: details Show answer
-*smile*
-:::
-
-**7.** `abogol`
-
-::: details Show answer
-*book*
+*Azawan.* (hello — the speaker is Azawan)
 :::
 
 ## Intermediate
@@ -281,6 +300,8 @@ Beginner used **-l** / **-m** / **-n** as reference on citations. On [number wor
 
 Short drills for Intermediate. Try each item before opening **Show answer**. The point is **-n** as a title on any role letter, one **`x`-compound** name, or an office **handle**.
 
+**Setting:** a hospital ward
+
 **Roots used here:**
 
 | English | Agalan | Same root as |
@@ -288,105 +309,109 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 | *Azawan* | `azawan` | |
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
-| *Abogon* | `abogon` | |
-| *Odunaxalanen* | `odunaxalanen` | |
-| *Sushi-Coffee* | `zuzuzuxogoven` | |
-| *Book-Courage* | `abogoxululon` | |
-| *book* | `abogol` | |
-| *Blue* (named style) | `gelulun` | `elulul` *blue* |
-| *walk* | `vawalal` | `awalal` *walk* |
-| *run* | `vurunul` | `urunul` *run* |
-| *sing* | `vuzunul` | `uzunul` *sing* |
+| *Edozen* | `edozen` | |
+| *Hospital-Bed* | `ohozoxabeden` | |
+| *Diagnosis-Hospital* | `edozexohozon` | |
+| *bed* | `abedel` | |
+| *sit* | `vajul` | `ajul` *chair* |
 | *see* | `vejel` | `ejel` *eye* |
 | *write* | `vuwurul` | `uwurul` *write* |
-| *Haste* (named standard) | `hadazan` | `adazal` *dash* |
+| *run* | `vurunul` | `urunul` *run* |
+| *Hospital* (named frame) | `hohozon` | `ohozol` *hospital* |
+| *Diagnosis* (named style) | `gedozen` | `edozel` *stethoscope* |
+| *X-ray* (named style) | `gararon` | `ararol` *x-ray* |
+| *Temperature* (named standard) | `hedehen` | `edehel` *thermometer* |
+| *Sleep* (titled rest) | `veleben` | `elebel` *sleep* |
+| *Injection* (titled action) | `vozorun` | `ozorul` *syringe* |
+| *Emergency* (titled event) | `vamubun` | `amubul` *ambulance* |
+| *Emergency* (named frame) | `hamubun` | `amubul` *ambulance* |
 
 #### English → Agalan
 
-**1.** *Uhubun sings the Sing* (that titled performance).
+**1.** *Azawan sits according to Hospital* (the named frame).
 
 ::: details Show answer
-`zuhubun vuzunun.`
+`zazawan vajul hohozon.`
 :::
 
-**2.** *Ululon runs the Run* (that titled race).
+**2.** *The bed is Diagnosis* (the named style).
 
 ::: details Show answer
-`zululon vurunun.`
+`zabedel gedozen.`
 :::
 
-**3.** *Odunaxalanen walks.*
+**3.** *Uhubun sleeps the Sleep* (that titled rest).
 
 ::: details Show answer
-`zodunaxalanen vawalal.`
+`zuhubun veleben.`
 :::
 
-**4.** *Abogon walks.* (office handle, first mention)
+**4.** *Azawan sees Hospital-Bed.* (the ward’s phrasal name)
 
 ::: details Show answer
-`zabogon vawalal.`
+`zazawan vejel dohozoxabeden.`
 :::
 
-**5.** *Azawan walks in Haste* (the named standard).
+**5.** *Edozen sees Uhubun.* (office handle, first mention)
 
 ::: details Show answer
-`zazawan vawalal hadazan.`
+`zedozen vejel duhubun.`
 :::
 
-**6.** *The book is Blue* (the named style).
+**6.** *Ululon injects the Injection* (that titled action).
 
 ::: details Show answer
-`zabogol gelulun.`
+`zululon vozorun.`
 :::
 
-**7.** *Azawan sees Book-Courage.* (that office’s full title)
+**7.** *Ululon runs the Emergency* (that titled event).
 
 ::: details Show answer
-`zazawan vejel dabogoxululon.`
+`zululon vamubun.`
 :::
 
 #### Agalan → English
 
-**1.** `zodunaxalanen vurunul.`
+**1.** `zuhubun vajul hohozon.`
 
 ::: details Show answer
-*Odunaxalanen runs.*
+*Uhubun sits according to Hospital* (the named frame).
 :::
 
-**2.** `zabogoxululon vawalal.`
+**2.** `zazawan vuwurul hedehen.`
 
 ::: details Show answer
-*Book-Courage walks.*
+*Azawan writes on Temperature* (the named standard).
 :::
 
-**3.** `zuhubun vurunun.`
+**3.** `zabedel gararon.`
 
 ::: details Show answer
-*Uhubun runs the Run* (that titled race).
+*The bed is X-ray* (the named style).
 :::
 
-**4.** `zululon vuzunun.`
+**4.** `zohozoxabeden vuwurul.`
 
 ::: details Show answer
-*Ululon sings the Sing* (that titled performance).
+*Hospital-Bed writes.*
 :::
 
-**5.** `zuzuzuxogoven vuwurul.`
+**5.** `zuhubun vozorun.`
 
 ::: details Show answer
-*Sushi-Coffee writes.*
+*Uhubun injects the Injection* (that titled action).
 :::
 
-**6.** `zululon vawalal hadazan.`
+**6.** `zedozexohozon vejel dazawan.`
 
 ::: details Show answer
-*Ululon walks in Haste* (the named standard).
+*Diagnosis-Hospital sees Azawan.* (that office’s full title)
 :::
 
-**7.** `zazawan vejel dodunaxalanen.`
+**7.** `zululon vurunul hamubun.`
 
 ::: details Show answer
-*Azawan sees Odunaxalanen* (the place).
+*Ululon runs in Emergency* (the named frame).
 :::
 
 

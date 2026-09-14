@@ -185,6 +185,129 @@ The noun names the reference class; **`jo`** grades how much of that class. Same
 
 **Related form:** `25%` (`…jo`) and `0.25` (plain scalar) name the same magnitude; **`jo`** chooses the percent-scale reading. **`ju`** likewise names a ÷100 magnitude, framed as **points**.
 
+### Translation practice
+<a id="translation-practice-intermediate"></a>
+
+Short drills for Intermediate. Try each item before opening **Show answer**. One topic per item: labels, clock or date, percent, measures, or ranges.
+
+**Setting:** a pharmacy
+
+**Roots used here:**
+
+| English | Agalan | Same root as |
+|---------|--------|--------------|
+| *Azawan* | `azawan` | |
+| *Ululon* | `ululon` | |
+| *Uhubun* | `uhubun` | |
+| *pill* | `abulul` | |
+| *bottle* | `abobol` | |
+| *gram* | `aragal` | |
+| *liter* | `ozobol` | |
+| *measurement* | `urulel` | |
+| *time* | `umel` | |
+| *see* | `vejel` | `ejel` *eye* |
+| *punch* | `vubunul` | `ubunul` *punch* |
+| *scream* | `vazagal` | `azagal` *scream* |
+
+#### English → Agalan
+
+**1.** *Azawan sees 555-123-4567.*
+
+::: details Show answer
+`zazawan d_555,123,4567 vejel.`
+:::
+
+**2.** *At 15:30 Azawan sees Uhubun.*
+
+::: details Show answer
+`h_15,30 zazawan duhubun vejel.`
+:::
+
+**3.** *25% of the pills.*
+
+::: details Show answer
+`zabululx g+25%.`
+:::
+
+**4.** *Azawan sees two grams.*
+
+::: details Show answer
+`zazawan daragal g+2 vejel.`
+:::
+
+**5.** *From 3 to 5 on time.*
+
+::: details Show answer
+`z+3 z+5 zel gumel.`
+:::
+
+**6.** *Ululon sees 911.*
+
+::: details Show answer
+`zululon d_911 vejel.`
+:::
+
+**7.** *Ululon punches five grams.*
+
+::: details Show answer
+`zululon daragal g+5 vubunul.`
+:::
+
+**8.** *From 15 to 16 on time.*
+
+::: details Show answer
+`z+15 z+16 zel gumel.`
+:::
+
+#### Agalan → English
+
+**1.** `zabobol g_7.`
+
+::: details Show answer
+*Bottle 7.*
+:::
+
+**2.** `h_09,00 zuhubun vejel.`
+
+::: details Show answer
+*At 09:00 Uhubun sees.*
+:::
+
+**3.** `zabobolx g+50%.`
+
+::: details Show answer
+*50% of the bottles.*
+:::
+
+**4.** `zazawan dozobol g+1 vejel.`
+
+::: details Show answer
+*Azawan sees one liter.*
+:::
+
+**5.** `z+1 z+3 zal gumel.`
+
+::: details Show answer
+*Between 1 and 3 on time.*
+:::
+
+**6.** `zululon d_000 vejel.`
+
+::: details Show answer
+*Ululon sees 000.*
+:::
+
+**7.** `h~_23,59 zululon vazagal.`
+
+::: details Show answer
+*Around 23:59 Ululon screams.*
+:::
+
+**8.** `z+10 z+20 zual gurulel.`
+
+::: details Show answer
+*Outside 10–20 on measurement.*
+:::
 
 ## Advanced
 <a id="advanced"></a>

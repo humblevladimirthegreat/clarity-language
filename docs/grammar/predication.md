@@ -71,34 +71,41 @@ Write a special adjective `gonunul` after the first name, then an extra noun (`/
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
+**Setting:** a passport office
+
 **Roots used here:**
 
-| English | Agalan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *Uhubun* | `uhubun` | | |
-| *dog* | `odogol` | | |
-| *cat* | `agadal` | | |
-| *book* | `abogol` | | |
-| *blue* | `elulul` | | |
-| *Japanese* | `ajanan` | `ajanal` *Japan* | 🇯🇵: the named people |
-| *challenging* | `omonam` | `omonol` *mountain* | ⛰️: hard to climb |
-| **SAME** | `onunul` | `onunul` *coin* | 🪙: two faces, one substance |
-| *walk* | `awalal` | | |
+| English | Agalan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Ululon* | `ululon` |
+| *Uhubun* | `uhubun` |
+| *guard* | `ugugal` |
+| *police* | `obolul` |
+| *person* | `eberel` |
+| *page* | `ajel` |
+| *fingerprint* | `uvunul` |
+| *camera* | `ameral` |
+| *blue* | `elulul` |
+| *red* | `aredel` |
+| *Japanese* | `ajanan` |
+| *challenging* | `omonam` |
+| **SAME** | `onunul` |
+| *walk* | `vawalal` |
+| *run* | `vurunul` |
 
 #### English → Agalan
 
-**1.** *Azawan is a dog.*
+**1.** *Azawan is a guard.*
 
 ::: details Show answer
-`zazawan godogol.`
+`zazawan gugugal.`
 :::
 
-**2.** *Ululon is challenging.*
+**2.** *The page is blue.*
 
 ::: details Show answer
-`zululon gomonam.`
+`zajel gelulul.`
 :::
 
 **3.** *Uhubun is Japanese.*
@@ -107,69 +114,81 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 `zuhubun gajanan.`
 :::
 
-**4.** *The dog is Azawan.*
+**4.** *Ululon is challenging.*
 
 ::: details Show answer
-`zodogol gonunul bazawan.`
+`zululon gomonam.`
 :::
 
-**5.** *The book is blue.*
+**5.** *Ululon is a police officer.*
 
 ::: details Show answer
-`zabogol gelulul.`
+`zululon gobolul.`
 :::
 
-**6.** *Ululon is Uhubun.*
+**6.** *The fingerprint is Azawan.*
 
 ::: details Show answer
-`zululon gonunul buhubun.`
+`zuvunul gonunul bazawan.`
 :::
 
-**7.** *Azawan is a cat.*
+**7.** *The camera is Uhubun.*
 
 ::: details Show answer
-`zazawan gagadal.`
+`zameral gonunul buhubun.`
+:::
+
+**8.** *Ululon is Azawan.*
+
+::: details Show answer
+`zululon gonunul bazawan.`
 :::
 
 #### Agalan → English
 
-**1.** `zodogol vawalal.`
+**1.** `zobolul vawalal.`
 
 ::: details Show answer
-*A dog walks.*
+*A police officer walks.*
 :::
 
-**2.** `zazawan gonunul bodogol.`
+**2.** `zazawan gobolul.`
 
 ::: details Show answer
-*Azawan is (the same as) a dog.*
+*Azawan is a police officer.*
 :::
 
-**3.** `zululon gajanan.`
+**3.** `zajel garedel.`
 
 ::: details Show answer
-*Ululon is Japanese.*
+*The page is red.*
 :::
 
-**4.** `zabogol gomonam.`
+**4.** `zuvunul gonunul bululon.`
 
 ::: details Show answer
-*The book is challenging.*
+*The fingerprint is Ululon.*
 :::
 
-**5.** `zazawan gonunul buhubun.`
+**5.** `zazawan gonunul bobolul.`
 
 ::: details Show answer
-*Azawan is Uhubun.*
+*Azawan is (the same as) a police officer.*
 :::
 
-**6.** `zagadal godogol.`
+**6.** `zugugal vurunul.`
 
 ::: details Show answer
-*The cat is a dog.*
+*A guard runs.*
 :::
 
-**7.** `zuhubun gonunul bazawan.`
+**7.** `jol zululon gonunul buhubun.`
+
+::: details Show answer
+*Is Ululon Uhubun?*
+:::
+
+**8.** `zuhubun gonunul bazawan.`
 
 ::: details Show answer
 *Uhubun is Azawan.*
@@ -224,107 +243,122 @@ Beginner already used closed **`gonunul`** (*is the same as*). The other endings
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
+**Setting:** a museum gallery
+
 **Roots used here:**
 
-| English | Agalan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *Uhubun* | `uhubun` | | |
-| *dog* | `odogol` | | |
-| *book* | `abogol` | | |
-| *red* | `aredel` | | |
-| *person* | `eberel` | | |
-| **SAME** | `onunul` | `onunul` *coin* | 🪙: two faces, one substance |
-| *walk* | `awalal` | | |
-| *write* | `vuwurul` | | |
+| English | Agalan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Ululon* | `ululon` |
+| *Uhubun* | `uhubun` |
+| *guard* | `ugugal` |
+| *craft* | `agaral` |
+| *person* | `eberel` |
+| *framed-picture* | `amerel` |
+| *palette* | `aledel` |
+| *red* | `aredel` |
+| **SAME** | `onunul` |
+| *see* | `vejel` |
 
 #### English → Agalan
 
-**1.** *Ululon is basically Azawan.*
+**1.** *Azawan is not a guard.*
+
+::: details Show answer
+`zazawan gugugal gul.`
+:::
+
+**2.** *Ululon is the craft type.*
+
+::: details Show answer
+`zululon gagaral hual.`
+:::
+
+**3.** *The framed-picture is Azawan.*
+
+::: details Show answer
+`zamerel gonunul bazawan.`
+:::
+
+**4.** *Ululon is basically Azawan.*
 
 ::: details Show answer
 `zululon gonunum bazawan.`
 :::
 
-**2.** *The person who is Azawan walks.*
+**5.** *The person who is Uhubun sees a palette.*
 
 ::: details Show answer
-`zeberel gonunul bazawan vawalal.`
+`zeberel gonunul buhubun daledel vejel.`
 :::
 
-**3.** *Azawan is Ululon (titled identity).*
+**6.** *Azawan is Ululon (titled identity).*
 
 ::: details Show answer
 `zazawan gonunun bululon.`
 :::
 
-**4.** *The book is Azawan.*
-
-::: details Show answer
-`zabogol gonunul bazawan.`
-:::
-
-**5.** *The person who is Uhubun writes.*
-
-::: details Show answer
-`zeberel gonunul buhubun vuwurul.`
-:::
-
-**6.** *Ululon is the same (as already ascribed) as Azawan.*
+**7.** *Ululon is the same (as already ascribed) as Azawan.*
 
 ::: details Show answer
 `zululon gonunur bazawan.`
 :::
 
-**7.** *Azawan is basically Uhubun.*
+**8.** *The framed-picture is not (identical to) Uhubun.*
 
 ::: details Show answer
-`zazawan gonunum buhubun.`
+`zamerel gonunul buhubun gul.`
 :::
 
 #### Agalan → English
 
-**1.** `zululon gonunum buhubun.`
+**1.** `zuhubun gugugal gul.`
 
 ::: details Show answer
-*Ululon is basically Uhubun.*
+*Uhubun is not a guard.*
 :::
 
-**2.** `zeberel gonunul bazawan vuwurul.`
+**2.** `zazawan gagaral hual.`
 
 ::: details Show answer
-*The person who is Azawan writes.*
+*Azawan is the craft type.*
 :::
 
-**3.** `zululon gonunun buhubun.`
+**3.** `zamerel gonunum bazawan.`
+
+::: details Show answer
+*The framed-picture is basically Azawan.*
+:::
+
+**4.** `zeberel gonunul bazawan daledel vejel.`
+
+::: details Show answer
+*The person who is Azawan sees a palette.*
+:::
+
+**5.** `zululon gonunun buhubun.`
 
 ::: details Show answer
 *Ululon is Uhubun (titled identity).*
 :::
 
-**4.** `zabogol garedel gonunul bazawan.`
+**6.** `zazawan gonunur buhubun.`
 
 ::: details Show answer
-*The red book is Azawan.*
+*Azawan is the same (as already ascribed) as Uhubun.*
 :::
 
-**5.** `zazawan gonunur bululon.`
+**7.** `zamerel garedel gonunul bululon gul.`
 
 ::: details Show answer
-*Azawan is the same (as already ascribed) as Ululon.*
+*The red framed-picture is not (identical to) Ululon.*
 :::
 
-**6.** `zodogol gonunum bazawan.`
+**8.** `zululon gagaral gul.`
 
 ::: details Show answer
-*The dog is basically Azawan.*
-:::
-
-**7.** `zazawan godogol.`
-
-::: details Show answer
-*Azawan is a dog.*
+*Ululon is not a craftsperson.*
 :::
 
 ## See also

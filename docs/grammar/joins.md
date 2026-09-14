@@ -212,7 +212,9 @@ Two or more items still take the same vowel and ending as the lists above. The t
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills for Beginner. Try each item before opening **Show answer**. The join sits **after** the items; pick the vowel (set vs rank, including **`u`**) and the ending (**-l** / **-m** / **-r**), including single-item and standalone forms.
+Short drills for Beginner. Try each item before opening **Show answer**.
+
+**Setting:** a market stall
 
 **Roots used here:**
 
@@ -221,26 +223,30 @@ Short drills for Beginner. Try each item before opening **Show answer**. The joi
 | *Azawan* | `azawan` | |
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
-| *dog* | `odogol` | |
-| *cat* | `agadal` | |
-| *tea* | `adedal` | |
-| *coffee* | `ogovel` | |
-| *person* | `eberel` | |
-| *walk* | `vawalal` | `awalal` *walk* |
-| *run* | `vurunul` | `urunul` *run* |
+| *bread* | `ereral` | |
+| *tomato* | `odomal` | |
+| *mango* | `amanol` | |
+| *melon* | `emelol` | |
+| *grape* | `agabel` | |
+| *basket* | `azegel` | |
+| *cart* | `anahol` | |
+| *see* | `vejel` | `ejel` *eye* |
+| *punch* | `vubunul` | `ubunul` *punch* |
+| *scream* | `vazagal` | `azagal` *scream* |
+| *lie* | `vululel` | `ululel` *lie* |
 
 #### English → Agalan
 
-**1.** *Ululon and Azawan (and possibly more)*
+**1.** *bread and a tomato (and possibly more)*
 
 ::: details Show answer
-`zululon zazawan zam.`
+`zereral zodomal zam.`
 :::
 
-**2.** *tea or coffee (pick one)*
+**2.** *a mango or a melon (pick one)*
 
 ::: details Show answer
-`zadedal zogovel zol.`
+`zamanol zemelol zol.`
 :::
 
 **3.** *just Uhubun*
@@ -249,42 +255,42 @@ Short drills for Beginner. Try each item before opening **Show answer**. The joi
 `zuhubun zal.`
 :::
 
-**4.** *not Ululon*
+**4.** *a grape (optional)*
 
 ::: details Show answer
-`zululon zul.`
+`zagabel zom.`
 :::
 
-**5.** *coffee (optional)*
+**5.** *not the cart*
 
 ::: details Show answer
-`zogovel zom.`
+`zanahol zul.`
 :::
 
-**6.** *only Ululon matters* / *Ululon first*
+**6.** *something among bread and a tomato*
 
 ::: details Show answer
-`zululon zel.`
+`zereral zodomal zar.`
 :::
 
-**7.** *something* / *someone*
+**7.** *only Azawan matters* / *Azawan first*
 
 ::: details Show answer
-`zar.`
+`zazawan zel.`
 :::
 
-**8.** *Ululon runs and Azawan walks (and possibly more).*
+**8.** *Ululon punches and Azawan sees Uhubun (and possibly more).*
 
 ::: details Show answer
-`zululon vurunul zazawan vawalal xam.`
+`zululon vubunul zazawan duhubun vejel xam.`
 :::
 
 #### Agalan → English
 
-**1.** `zodogol zagadal zal.`
+**1.** `zanahol zam.`
 
 ::: details Show answer
-*a dog and a cat*
+*a cart, for one* / *a cart (and possibly more)*
 :::
 
 **2.** `zual.`
@@ -293,40 +299,40 @@ Short drills for Beginner. Try each item before opening **Show answer**. The joi
 *everything* / *everyone*
 :::
 
-**3.** `zeberel zar.`
+**3.** `zazegel zar.`
 
 ::: details Show answer
-*some (unknown) person*
+*some (unknown) basket*
 :::
 
-**4.** `vawalal vurunul vam.`
+**4.** `zamanol zemelol zul.`
 
 ::: details Show answer
-*walks and runs (and possibly more)*
+*neither a mango nor a melon*
 :::
 
-**5.** `zadedal zogovel zul.`
-
-::: details Show answer
-*neither tea nor coffee*
-:::
-
-**6.** `zuhubun zam.`
+**5.** `zuhubun zam.`
 
 ::: details Show answer
 *Uhubun, for one* / *Uhubun (and possibly more)*
 :::
 
-**7.** `zululon zuhubun zar.`
+**6.** `zuhubun zel.`
 
 ::: details Show answer
-*something among Ululon and Uhubun*
+*only Uhubun matters* / *Uhubun first*
 :::
 
-**8.** `zel.`
+**7.** `zululon dazegel vubunul zazawan vazagal xam.`
 
 ::: details Show answer
-*no favorite* / *nobody's first*
+*Ululon punches a basket and Azawan screams (and possibly more).*
+:::
+
+**8.** `zululon vazagal zazawan vululel xam.`
+
+::: details Show answer
+*Ululon screams and Azawan lies (and possibly more).*
 :::
 
 ## Intermediate
@@ -591,7 +597,9 @@ An adverb `/h/` before the verb-phrase stretch, or in SHARED after the join, cov
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills for Intermediate. Try each item before opening **Show answer**. Sample invert **`ua`** / **`uo`** / **`ue`**, universals vs leftover, SHARED after the join, nesting, inclusive **`zaom`**, and clause **`xan`**.
+Short drills for Intermediate. Try each item before opening **Show answer**.
+
+**Setting:** a wedding
 
 **Roots used here:**
 
@@ -600,51 +608,48 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Sam
 | *Azawan* | `azawan` | |
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
-| *dog* | `odogol` | |
-| *cat* | `agadal` | |
-| *tea* | `adedal` | |
-| *coffee* | `ogovel` | |
-| *water* | `unudel` | |
-| *challenging* | `omonam` | |
-| *onion* | `onunol` | |
-| *cucumber* | `ugumel` | |
-| *apple* | `abelel` | |
+| *wine* | `uwunel` | |
+| *flower* | `ovowel` | |
+| *ring* | `unurul` | |
+| *veil* | `evevul` | |
+| *tuxedo* | `uduzel` | |
+| *happy* | `uzumum` | `uzumul` *smile* |
 | *see* | `vejel` | `ejel` *eye* |
-| *tempt* | `vabelel` | `abelel` *apple* |
-| *walk* | `vawalal` | `awalal` *walk* |
-| *run* | `vurunul` | `urunul` *run* |
-| *sleep* | `velebel` | `elebel` *sleep* |
+| *kiss* | `vuguzul` | `uguzul` *kiss* |
+| *tell* | `vezehel` | `ezehel` *speech* |
+| *sit* | `vajul` | `ajul` *chair* |
+| *punch* | `vubunul` | `ubunul` *punch* |
 
 #### English → Agalan
 
-**1.** *everything but tea and coffee*
+**1.** *everything but wine and a flower*
 
 ::: details Show answer
-`zadedal zogovel zual.`
+`zuwunel zovowel zual.`
 :::
 
-**2.** *every cat*
+**2.** *every ring*
 
 ::: details Show answer
-`zual gagadal.`
+`zual gunurul.`
 :::
 
-**3.** *(challenging dog) and (challenging cat)*
+**3.** *(happy Azawan) and (happy Ululon)*
 
 ::: details Show answer
-`zodogol zagadal zal gomonam.`
+`zazawan zululon zal guzumum.`
 :::
 
-**4.** *(tea or coffee) and water*
+**4.** *(wine or a flower) and a ring*
 
 ::: details Show answer
-`zadedal zogovel zol zunudel zal.`
+`zuwunel zovowel zol zunurul zal.`
 :::
 
-**5.** *Azawan walks and then Ululon runs.*
+**5.** *Azawan sees Uhubun and then Ululon kisses Uhubun.*
 
 ::: details Show answer
-`zazawan vawalal zululon vurunul xan.`
+`zazawan duhubun vejel zululon duhubun vuguzul xan.`
 :::
 
 **6.** *at least Uhubun*
@@ -653,10 +658,10 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Sam
 `zuhubun zaom.`
 :::
 
-**7.** *anything but coffee*
+**7.** *anything but the wine*
 
 ::: details Show answer
-`zogovel zuol.`
+`zuwunel zuol.`
 :::
 
 **8.** *Ululon last, period*
@@ -667,52 +672,52 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Sam
 
 #### Agalan → English
 
-**1.** `zagadal zual.`
+**1.** `zovowel zual.`
 
 ::: details Show answer
-*everything but the cat*
+*everything but the flower*
 :::
 
-**2.** `zuam gagadal.`
+**2.** `zuam gunurul.`
 
 ::: details Show answer
-*every cat, as far as I know*
+*every ring, as far as I know*
 :::
 
-**3.** `zonunol zugumel zual.`
+**3.** `zevevul zual.`
 
 ::: details Show answer
-*everything but onion and cucumber*
+*everything but the veil*
 :::
 
-**4.** `vejel vabelel vam dabelel.`
+**4.** `vuguzul vezehel vam duhubun.`
 
 ::: details Show answer
-*sees and tempts an apple*
+*kisses and tells Uhubun*
 :::
 
-**5.** `vawalal vurunul val vul.`
+**5.** `vuguzul vubunul val vul.`
 
 ::: details Show answer
-*not walk, and not run*
+*not kiss, and not punch*
 :::
 
-**6.** `zazawan vawalal zululon vurunul xol zuhubun velebel xal.`
+**6.** `zazawan duhubun vejel zululon duhubun vuguzul xol zuhubun vajul xal.`
 
 ::: details Show answer
-*(Azawan walks or Ululon runs) and Uhubun sleeps.*
+*(Azawan sees Uhubun or Ululon kisses Uhubun) and Uhubun sits.*
 :::
 
-**7.** `zadedal zogovel zunudel zel.`
+**7.** `zuwunel zovowel zunurul zel.`
 
 ::: details Show answer
-*tea ≻ coffee ≻ water*
+*wine ≻ flower ≻ ring*
 :::
 
-**8.** `zunudel zuom.`
+**8.** `zuduzel zuom.`
 
 ::: details Show answer
-*anything but water (and possibly more)*
+*anything but the tuxedo (and possibly more)*
 :::
 
 ## Advanced
@@ -812,7 +817,9 @@ These limits apply to every join.
 ### Translation practice
 <a id="translation-practice-advanced"></a>
 
-Short drills for Advanced. Try each item before opening **Show answer**. Phrase **-n** names a package, not a person; one item also tests a rare-arity contrast (**`zor`** vs **`zer`**, **`zur`**, **`zan`**, or a **`^`** island).
+Short drills for Advanced. Try each item before opening **Show answer**.
+
+**Setting:** a treaty table
 
 **Roots used here:**
 
@@ -821,17 +828,17 @@ Short drills for Advanced. Try each item before opening **Show answer**. Phrase 
 | *Azawan* | `azawan` | |
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
-| *book* | `abogol` | |
-| *house* | `ohohul` | |
-| *chair* | `ajul` | |
-| *song* | `uzunul` | |
+| *page* | `ajel` | |
+| *pen* | `abenel` | |
+| *dove* | `odovel` | |
+| *seal* | `ezezam` | `ezezal` *seal* |
 
 #### English → Agalan
 
-**1.** *a song or a book (the usual named menu)*
+**1.** *a page or a pen (the usual named menu)*
 
 ::: details Show answer
-`zuzunul zabogol zon.`
+`zajel zabenel zon.`
 :::
 
 **2.** *null* / *void*
@@ -840,10 +847,10 @@ Short drills for Advanced. Try each item before opening **Show answer**. Phrase 
 `zan.`
 :::
 
-**3.** *any of a chair, a house, or a book is fine (no order)*
+**3.** *any of a dove, a page, or a pen is fine (no order)*
 
 ::: details Show answer
-`zajul zohohul zabogol zor.`
+`zodovel zajel zabenel zor.`
 :::
 
 **4.** *Azawan and (just Uhubun)*
@@ -866,10 +873,10 @@ Short drills for Advanced. Try each item before opening **Show answer**. Phrase 
 *it's a draw* (stock)
 :::
 
-**2.** `zajul zohohul zabogol zer.`
+**2.** `zodovel zajel zabenel zer.`
 
 ::: details Show answer
-*pick a chair, a house, or a book by ranking*
+*pick a dove, a page, or a pen by ranking*
 :::
 
 **3.** `zazawan ^ zal ^ zam.`
@@ -884,10 +891,10 @@ Short drills for Advanced. Try each item before opening **Show answer**. Phrase 
 *anything (goes)*
 :::
 
-**5.** `zuzunul zabogol zur.`
+**5.** `zezezam zajel zur.`
 
 ::: details Show answer
-*someone other than the song and the book* / *something other than a song and a book*
+*something other than the seal and the page*
 :::
 
 ## See also

@@ -94,6 +94,8 @@ When English would say *as challenging as*, you are not picking a winner. You ar
 
 Short drills for Beginner. Try each item before opening **Show answer**. Rank **`zel`** plus shared `/ɡ/` is *more … than*; one name before **`zel`** is the superlative; **`zael`** / **`zaem`** are *as … as* / *about as … as*.
 
+**Setting:** a racetrack
+
 **Roots used here:**
 
 | English | Agalan | Same root as |
@@ -101,98 +103,98 @@ Short drills for Beginner. Try each item before opening **Show answer**. Rank **
 | *Azawan* | `azawan` | |
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
-| *challenging* | `omonam` | `omonol` *mountain* |
-| *bright* | `udubul` | |
-| *big* | `elem` | `elel` *elephant* |
-| *happy* | `uzumum` | `uzumul` *smile* |
+| *slow* | `analam` | `analal` *snail* |
+| *hasty* | `adazam` | `adazal` *dash* |
+| *agile* | `uvuvem` | `uvuvel` *field hockey* |
+| *intense* | `ohogem` | `ohogel` *hockey* |
 | *much* | `wogegal` | `ogegal` *flood* |
 
 #### English → Agalan
 
-**1.** *Uhubun is more challenging than Azawan.*
+**1.** *Azawan is more agile than Ululon.*
 
 ::: details Show answer
-`zuhubun zazawan zel gomonam.`
+`zazawan zululon zel guvuvem.`
 :::
 
-**2.** *Ululon is the biggest.*
+**2.** *Uhubun is as slow as Azawan.*
 
 ::: details Show answer
-`zululon zel gelem.`
+`zuhubun zazawan zael ganalam.`
 :::
 
-**3.** *Azawan is as happy as Uhubun.*
+**3.** *Ululon is the hastiest.*
 
 ::: details Show answer
-`zazawan zuhubun zael guzumum.`
+`zululon zel gadazam.`
 :::
 
-**4.** *Ululon is about as bright as Azawan.*
+**4.** *Azawan is about as agile as Uhubun.*
 
 ::: details Show answer
-`zululon zazawan zaem gudubul.`
+`zazawan zuhubun zaem guvuvem.`
 :::
 
-**5.** *Ululon is much bigger than Azawan.*
+**5.** *Ululon is much more intense than Azawan.*
 
 ::: details Show answer
-`zululon zazawan zel gelem wogegal.`
+`zululon zazawan zel gohogem wogegal.`
 :::
 
-**6.** *Azawan is the happiest.*
+**6.** *Uhubun is more hasty than Ululon.*
 
 ::: details Show answer
-`zazawan zel guzumum.`
+`zuhubun zululon zel gadazam.`
 :::
 
-**7.** *Uhubun is brighter than Ululon.*
+**7.** *Ululon is the most intense.*
 
 ::: details Show answer
-`zuhubun zululon zel gudubul.`
+`zululon zel gohogem.`
 :::
 
 #### Agalan → English
 
-**1.** `zululon zuhubun zel gomonam.`
+**1.** `zululon zuhubun zel guvuvem.`
 
 ::: details Show answer
-*Ululon is more challenging than Uhubun.*
+*Ululon is more agile than Uhubun.*
 :::
 
-**2.** `zazawan zel gudubul.`
+**2.** `zuhubun zel guvuvem.`
 
 ::: details Show answer
-*Azawan is the brightest.*
+*Uhubun is the most agile.*
 :::
 
-**3.** `zuhubun zazawan zael gelem.`
+**3.** `zululon zuhubun zael gadazam.`
 
 ::: details Show answer
-*Uhubun is as big as Azawan.*
+*Ululon is as hasty as Uhubun.*
 :::
 
-**4.** `zululon zuhubun zaem guzumum.`
+**4.** `zuhubun zazawan zaem gohogem.`
 
 ::: details Show answer
-*Ululon is about as happy as Uhubun.*
+*Uhubun is about as intense as Azawan.*
 :::
 
-**5.** `zuhubun zululon zel gudubul wogegal.`
+**5.** `zuhubun zululon zel guvuvem wogegal.`
 
 ::: details Show answer
-*Uhubun is much brighter than Ululon.*
+*Uhubun is much more agile than Ululon.*
 :::
 
-**6.** `zazawan zululon zel gelem.`
+**6.** `zazawan zululon zel gadazam.`
 
 ::: details Show answer
-*Azawan is bigger than Ululon.*
+*Azawan is hastier than Ululon.*
 :::
 
-**7.** `zululon zel gomonam.`
+**7.** `zazawan zel ganalam.`
 
 ::: details Show answer
-*Ululon is the most challenging.*
+*Azawan is the slowest.*
 :::
 
 ## Intermediate
@@ -268,6 +270,8 @@ English *two meters more challenging* still ranks two people on one quality, and
 
 Short drills for Intermediate. Try each item before opening **Show answer**. Full arity (**`oe`** / **`ue`** / standalone / **`zer`**), distributive **`zal`**, and a counted measure gap vs vague **`wogegal`**.
 
+**Setting:** a weighing room
+
 **Roots used here:**
 
 | English | Agalan | Same root as |
@@ -275,70 +279,68 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 | *Azawan* | `azawan` | |
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
-| *challenging* | `omonam` | `omonol` *mountain* |
+| *heavy* | `aragam` | `aragal` *rock* |
+| *exerted* | `ewewum` | `ewewul` *weightlifting* |
 | *big* | `elem` | `elel` *elephant* |
-| *happy* | `uzumum` | `uzumul` *smile* |
-| *dog* | `odogol` | |
-| *cat* | `agadal` | |
-| *measurement* | `urulel` | |
+| *gram* | `baragal` | `aragal` *rock* |
 | *much* | `wogegal` | `ogegal` *flood* |
 
 #### English → Agalan
 
-**1.** *Azawan is less big than Ululon.*
+**1.** *Azawan is less heavy than Ululon.*
 
 ::: details Show answer
-`zazawan zululon zuel gelem.`
+`zazawan zululon zuel garagam.`
 :::
 
-**2.** *Ululon is the least happy.*
+**2.** *Ululon is the least exerted.*
 
 ::: details Show answer
-`zululon zuel guzumum.`
+`zululon zuel gewewum.`
 :::
 
-**3.** *There is no most challenging.*
+**3.** *There is no heaviest.*
 
 ::: details Show answer
-`zoel gomonam.`
+`zoel garagam.`
 :::
 
-**4.** *Azawan and Uhubun are happy.*
+**4.** *Azawan and Uhubun are heavy.*
 
 ::: details Show answer
-`zazawan zuhubun zal guzumum.`
+`zazawan zuhubun zal garagam.`
 :::
 
-**5.** *Ululon is two meters bigger than Azawan.*
+**5.** *Ululon is two grams heavier than Azawan.*
 
 ::: details Show answer
-`zululon zazawan zel gelem burulel g+2.`
+`zululon zazawan zel garagam baragal g+2.`
 :::
 
-**6.** *Azawan is more challenging than Ululon* (exclusive ladder).
+**6.** *Azawan is heavier than Ululon* (exclusive ladder).
 
 ::: details Show answer
-`zazawan zululon zoel gomonam.`
+`zazawan zululon zoel garagam.`
 :::
 
-**7.** *Unspecified who's biggest.*
+**7.** *Unspecified who is biggest.*
 
 ::: details Show answer
 `zel gelem.`
 :::
 
-**8.** *The dog is as challenging as the cat.*
+**8.** *Whichever of Azawan or Ululon ranks heavier.*
 
 ::: details Show answer
-`zodogol zagadal zael gomonam.`
+`zazawan zululon zer garagam.`
 :::
 
 #### Agalan → English
 
-**1.** `zazawan zululon zuhubun zem gomonam.`
+**1.** `zazawan zululon zuhubun zem garagam.`
 
 ::: details Show answer
-*Azawan is more challenging than Ululon, who is more challenging than Uhubun.*
+*Azawan is heavier than Ululon, who is heavier than Uhubun.*
 :::
 
 **2.** `zoem gelem.`
@@ -347,40 +349,40 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 *No biggest comes to mind.*
 :::
 
-**3.** `zazawan zululon zer guzumum.`
+**3.** `zazawan zululon zer gewewum.`
 
 ::: details Show answer
-*Whichever of Azawan or Ululon ranks happier.*
+*Whichever of Azawan or Ululon ranks more exerted.*
 :::
 
-**4.** `zululon zuhubun zal gomonam.`
+**4.** `zululon zuhubun zal gewewum.`
 
 ::: details Show answer
-*Ululon and Uhubun are challenging.*
+*Ululon and Uhubun are exerted.*
 :::
 
-**5.** `zazawan zululon zel gomonam burulel g+2.`
+**5.** `zazawan zululon zel garagam baragal g+5.`
 
 ::: details Show answer
-*Azawan is two meters more challenging than Ululon.*
+*Azawan is five grams heavier than Ululon.*
 :::
 
-**6.** `zuhubun zazawan zel gelem wogegal.`
+**6.** `zuhubun zazawan zel gewewum wogegal.`
 
 ::: details Show answer
-*Uhubun is much bigger than Azawan.*
+*Uhubun is much more exerted than Azawan.*
 :::
 
-**7.** `zer gomonam.`
+**7.** `zer garagam.`
 
 ::: details Show answer
-*Whatever ranks highest on challenging.*
+*Whatever ranks heaviest.*
 :::
 
-**8.** `zuhubun zuel gomonam.`
+**8.** `zuhubun zuel gelem.`
 
 ::: details Show answer
-*Uhubun is the least challenging.*
+*Uhubun is the smallest.*
 :::
 
 ## Advanced
@@ -433,17 +435,18 @@ Single-item `zazawan zuel gomonam` is *the least challenging* in the group in pl
 
 Short drills for Advanced. Try each item before opening **Show answer**. The *than*-conjunct is the named bar; **`zugobon`** is performance, **`zugoboxrawon`** is Mine.
 
+**Setting:** a talent contest
+
 **Roots used here:**
 
 | English | Agalan | Same root as |
 |---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Ululon* | `ululon` | |
+| *Uhubun* | `uhubun` | |
 | *sing* | `uzunul` | |
-| *happy* | `uzumum` | `uzumul` *smile* |
-| *challenging* | `omonam` | `omonol` *mountain* |
-| *clear* | `agalam` | |
-| *draft* | `ebegul` | |
+| *artistic* | `abadum` | `abadul` *paintbrush* |
+| *showy* | `ohohom` | `ohohol` *hot dog* |
 | *Average* | `ojun` | `ojul` *yin-yang* |
 | *Typical* | `ahaman` | `ahamal` *hamster* |
 | *Professional* | `alaban` | `alabal` *lab coat* |
@@ -466,60 +469,66 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 `zazawan zugobon zuel guzunul.`
 :::
 
-**3.** *I am less happy than Mine.*
+**3.** *Ululon is less artistic than Typical.*
 
 ::: details Show answer
-`zugobon zugoboxrawon zuel guzumum.`
+`zululon zahaman zuel gabadum.`
 :::
 
-**4.** *The draft is somewhat less clear than Average.*
+**4.** *I am less showy than Mine.*
 
 ::: details Show answer
-`zebegum zojun zuem gagalam.`
+`zugobon zugoboxrawon zuel gohohom.`
 :::
 
-**5.** *Ululon is less challenging than Typical.*
+**5.** *Ululon is somewhat worse at singing than Average.*
 
 ::: details Show answer
-`zululon zahaman zuel gomonam.`
+`zululon zojun zuem guzunul.`
 :::
 
-**6.** *I am less challenging than Everyone.*
+**6.** *I am less artistic than Everyone.*
 
 ::: details Show answer
-`zugobon zuan zuel gomonam.`
+`zugobon zuan zuel gabadum.`
 :::
 
 #### Agalan → English
 
-**1.** `zugobon zuluden zuel gomonam.`
+**1.** `zugobon zuluden zuel guzunul.`
 
 ::: details Show answer
-*I am less challenging than Social.*
+*I am worse at singing than Social.*
 :::
 
-**2.** `zugobon zululon zuel guzunul.`
+**2.** `zugobon zululon zuel gohohom.`
 
 ::: details Show answer
-*I am worse at singing than Ululon.*
+*I am less showy than Ululon.*
 :::
 
-**3.** `zazawan zugoboxrawom zuel guzumum.`
+**3.** `zazawan zugoboxrawom zuel gabadum.`
 
 ::: details Show answer
-*Azawan is somewhat less happy than Mine.*
+*Azawan is somewhat less artistic than Mine.*
 :::
 
-**4.** `zazawan zalaban zuel gomonam.`
+**4.** `zuhubun zalaban zuel guzunul.`
 
 ::: details Show answer
-*Azawan is less challenging than Professional.*
+*Uhubun is worse at singing than Professional.*
 :::
 
-**5.** `zazawan zojun zuem guzunul.`
+**5.** `zazawan zojun zuem gohohom.`
 
 ::: details Show answer
-*Azawan is somewhat worse at singing than Average.*
+*Azawan is somewhat less showy than Average.*
+:::
+
+**6.** `zululon zahaman zuel gohohom.`
+
+::: details Show answer
+*Ululon is less showy than Typical.*
 :::
 
 ## See also

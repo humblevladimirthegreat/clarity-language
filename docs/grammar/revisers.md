@@ -113,123 +113,128 @@ Sometimes the thing you want to tweak is not a phrase inside this sentence, but 
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills on this Beginner band. Try each item before opening **Show answer**.
+Short drills for Beginner. Try each item before opening **Show answer**.
+
+**Setting:** a restaurant pass
 
 **Roots used here:**
 
-| English | Agalan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *Uhubun* | `uhubun` | | |
-| *dog* | `odogol` | | |
-| *cat* | `agadal` | | |
-| *tea* | `adedal` | | |
-| *coffee* | `ogovel` | | |
-| *team* | `ahadal` | | |
-| *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
-| *calm* | `erelum` | `erelul` *relief* | 😌: the ease after tension |
-| *walk* | `awalal` | | |
-| *sleep* | `elebel` | | |
+| English | Agalan | Same root as |
+|---------|--------|--------------|
+| *Azawan* | `azawan` | |
+| *Ululon* | `ululon` | |
+| *Uhubun* | `uhubun` | |
+| *plate* | `aladel` | |
+| *salad* | `aladal` | |
+| *wine* | `uwunel` | |
+| *beer* | `aberel` | |
+| *red* | `aredel` | |
+| *blue* | `elulul` | |
+| *cook* | `vogogol` | |
+| *pour* | `vorurul` | |
+| *see* | `vejel` | `ejel` *eye* |
+| *sit* | `vajul` | `ajul` *chair* |
+| *punch* | `vubunul` | |
+| *fight* | `vuvugul` | |
 
 #### English → Agalan
 
-**1.** *Dogs, including a cat.*
+**1.** *The plates, including a salad.*
 
 ::: details Show answer
-`zodogolx al zagadal.`
+`zaladelx al zaladal.`
 :::
 
-**2.** *Coffee instead of tea.*
+**2.** *Wine instead of beer.*
 
 ::: details Show answer
-`dadedal ol dogovel.`
+`daberel ol duwunel.`
 :::
 
-**3.** *The team except Ululon.*
+**3.** *The plates except Ululon.*
 
 ::: details Show answer
-`zahadal ul zululon.`
+`zaladelx ul zululon.`
 :::
 
-**4.** *Additionally, Azawan walks.*
+**4.** *Additionally, Azawan cooks.*
 
 ::: details Show answer
-`al zazawan vawalal.`
+`al zazawan vogogol.`
 :::
 
-**5.** *A dog and a cat.*
+**5.** *A plate and a salad.*
 
 ::: details Show answer
-`zodogol zagadal zam.`
+`zaladel zaladal zam.`
 :::
 
-**6.** *Azawan is happy, or rather, calm.*
+**6.** *The wine is red, or rather, blue.*
 
 ::: details Show answer
-`zazawan guzumum el gerelum.`
+`zuwunel garedel el gelulul.`
 :::
 
-**7.** *Instead, Ululon sleeps.*
+**7.** *Instead, Ululon pours wine.*
 
 ::: details Show answer
-`ol zululon velebel.`
+`ol zululon vorurul duwunel.`
 :::
 
-**8.** *In other words, Uhubun is a dog.*
+**8.** *Except, Ululon punches Azawan.*
 
 ::: details Show answer
-`el zuhubun godogol.`
+`ul zululon vubunul dazawan.`
 :::
 
 #### Agalan → English
 
-**1.** `zodogolx am zagadal.`
+**1.** `zaladelx am zaladal.`
 
 ::: details Show answer
-*Dogs, including a cat and maybe more.*
+*The plates, including a salad and maybe more.*
 :::
 
-**2.** `dogovel ol dadedal.`
+**2.** `duwunel ol daberel.`
 
 ::: details Show answer
-*Tea instead of coffee.*
+*Beer instead of wine.*
 :::
 
-**3.** `zahadal ul zuhubun.`
+**3.** `zaladelx ul zuhubun.`
 
 ::: details Show answer
-*The team except Uhubun.*
+*The plates except Uhubun.*
 :::
 
-**4.** `al zululon vawalal.`
+**4.** `al zululon vogogol.`
 
 ::: details Show answer
-*Additionally, Ululon walks.*
+*Additionally, Ululon cooks.*
 :::
 
-**5.** `el zululon guzumum.`
+**5.** `el zululon vorurul duwunel.`
 
 ::: details Show answer
-*In other words, Ululon is happy.*
+*In other words, Ululon pours wine.*
 :::
 
-**6.** `ul zazawan velebel.`
+**6.** `ul zazawan vajul.`
 
 ::: details Show answer
-*Except, Azawan sleeps.*
+*Except, Azawan sits.*
 :::
 
-**7.** `ol zuhubun vawalal.`
+**7.** `ol zuhubun vejel daladel.`
 
 ::: details Show answer
-*Instead, Uhubun walks.*
+*Instead, Uhubun sees the plate.*
 :::
 
-**8.** `zahadal al zazawan.`
+**8.** `ol zululon vuvugul dazawan.`
 
 ::: details Show answer
-*The team, including Azawan.*
+*Instead, Ululon fights Azawan.*
 :::
 
 ## Intermediate
@@ -333,123 +338,125 @@ On a non-initial conjunct under a [clause `/x/` fence](joins.md#right-close), th
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills on this Intermediate band. Try each item before opening **Show answer**.
+Short drills for Intermediate. Try each item before opening **Show answer**.
+
+**Setting:** a newsroom
 
 **Roots used here:**
 
-| English | Agalan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *Uhubun* | `uhubun` | | |
-| *dog* | `odogol` | | |
-| *cat* | `agadal` | | |
-| *team* | `ahadal` | | |
-| *tea* | `adedal` | | |
-| *coffee* | `ogovel` | | |
-| *bird* | `ubudul` | | |
-| *walk* | `awalal` | | |
-| *run* | `urunul` | | |
-| *therefore* | `xezazal` | `ezazal` *east* | ➡️: the sun’s path, so the talk moves on |
+| English | Agalan | Same root as |
+|---------|--------|--------------|
+| *Azawan* | `azawan` | |
+| *Ululon* | `ululon` | |
+| *Uhubun* | `uhubun` | |
+| *newspaper* | `enewel` | |
+| *page* | `ajel` | |
+| *camera* | `ameral` | |
+| *radio* | `aradul` | |
+| *write* | `vuwurul` | |
+| *tell* | `vezehel` | `ezehel` *speech* |
+| *lie* | `vululel` | |
+| *punch* | `vubunul` | |
+| *therefore* | `xezazal` | `ezazal` *east* |
 
 #### English → Agalan
 
-**1.** *The team, including Azawan and maybe more, except Ululon.*
+**1.** *The newspaper, including Azawan and maybe more, except Ululon.*
 
 ::: details Show answer
-`zahadal am zazawan ul zululon.`
+`zenewel am zazawan ul zululon.`
 :::
 
-**2.** *The team as a titled set, including Azawan.*
+**2.** *The newspaper as a titled set, including Azawan.*
 
 ::: details Show answer
-`zahadal an zazawan.`
+`zenewel an zazawan.`
 :::
 
-**3.** *Azawan: additionally, Ululon walks.*
+**3.** *The page, with a newspaper as a replacement, and maybe more.*
 
 ::: details Show answer
-`jazawan al zululon vawalal.`
+`dajel om denewel.`
 :::
 
-**4.** *Additionally, therefore Uhubun walks.*
+**4.** *A camera instead of a radio, and a page.*
 
 ::: details Show answer
-`al xezazal zuhubun vawalal.`
+`zameral ol zaradul zajel zam.`
 :::
 
-**5.** *Additionally, does Ululon run?*
+**5.** *Azawan: additionally, Ululon writes.*
 
 ::: details Show answer
-`al jol zululon vurunul?`
+`jazawan al zululon vuwurul.`
 :::
 
-**6.** *Azawan walks and additionally Ululon runs.*
+**6.** *Azawan writes and additionally Ululon tells.*
 
 ::: details Show answer
-`zazawan vawalal al zululon vurunul xam.`
+`zazawan vuwurul al zululon vezehel xam.`
 :::
 
-**7.** *Tea, with coffee as a replacement, and maybe more.*
+**7.** *Additionally, therefore Uhubun writes.*
 
 ::: details Show answer
-`dadedal om dogovel.`
+`al xezazal zuhubun vuwurul.`
 :::
 
-**8.** *A dog instead of a cat, and a bird.*
+**8.** *Additionally, does Ululon lie?*
 
 ::: details Show answer
-`zodogol ol zagadal zubudul zam.`
+`al jol zululon vululel?`
 :::
 
 #### Agalan → English
 
-**1.** `zahadal am zuhubun ul zazawan.`
+**1.** `zenewel am zuhubun ul zazawan.`
 
 ::: details Show answer
-*The team, including Uhubun and maybe more, except Azawan.*
+*The newspaper, including Uhubun and maybe more, except Azawan.*
 :::
 
-**2.** `dadedal on dogovel.`
+**2.** `dajel on denewel.`
 
 ::: details Show answer
-*The stock tea-to-coffee swap.*
+*The stock page-to-newspaper swap.*
 :::
 
-**3.** `juhubun ol zululon vawalal.`
+**3.** `juhubun ol zululon vuwurul.`
 
 ::: details Show answer
-*Uhubun: instead, Ululon walks.*
+*Uhubun: instead, Ululon writes.*
 :::
 
-**4.** `al xezazal zululon vurunul.`
+**4.** `zenewel am zazawan am zululon.`
 
 ::: details Show answer
-*Additionally, therefore Ululon runs.*
+*The newspaper, including Azawan and including Ululon, and maybe more.*
 :::
 
-**5.** `ol jol zazawan vawalal?`
+**5.** `vuwurul om vezehel.`
 
 ::: details Show answer
-*Instead, does Azawan walk?*
+*Wrote, with tell as a replacement.*
 :::
 
-**6.** `zahadal am zazawan am zululon.`
+**6.** `zenewel an zuhubun un zululon.`
 
 ::: details Show answer
-*The team, including Azawan and including Ululon, and maybe more.*
+*The named newspaper, including Uhubun, and except Ululon from that named frame.*
 :::
 
-**7.** `vurunul om vawalal.`
+**7.** `al xezazal zululon vezehel.`
 
 ::: details Show answer
-*Ran, with walk as a replacement.*
+*Additionally, therefore Ululon tells.*
 :::
 
-**8.** `zahadal an zuhubun un zululon.`
+**8.** `ol jol zululon vubunul dazawan?`
 
 ::: details Show answer
-*The named team, including Uhubun, and except Ululon from that named frame.*
+*Instead, does Ululon punch Azawan?*
 :::
 
 ## Advanced

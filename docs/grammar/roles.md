@@ -93,124 +93,128 @@ To say someone **is a kind** (*Azawan is a fighter*), put the same role stem on 
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
+**Setting:** a construction site
+
 **Roots used here:**
 
-| English | Agalan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *Uhubun* | `uhubun` | | |
-| *cat* | `agadal` | | |
-| *red* | `aredel` | | |
-| *size* / *big* | `elem` | `elel` *elephant* | 🐘: the huge animal |
-| *walk* | `awalal` | | |
-| *run* | `urunul` | | |
-| *sleep* | `elebel` | | |
-| *sing* | `uzunul` | | |
-| *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
-| *sit* | `vajul` | `ajul` *chair* | 🪑: taking a seat |
-| *fight* | `uvugul` | | |
-| *fighter* | `zaxuvugul` | | |
-| *bond* | `onogol` | `onogol` *knot* | 🪢: ties people together |
+| English | Agalan | Same root as |
+|---------|--------|--------------|
+| *Azawan* | `azawan` | |
+| *Ululon* | `ululon` | |
+| *Uhubun* | `uhubun` | |
+| *construction-site* | `ononul` | |
+| *construct* | `vogunul` | `ogonul` *construct* |
+| *builder* | `zaxogonul` | `ogonul` *construct* |
+| *hammer* | `ahamel` | |
+| *hammerer* | `zaxahamel` | `ahamel` *hammer* |
+| *helmet* | `ehemel` | |
+| *brick* | `urugul` | |
+| *see* | `vejel` | `ejel` *eye* |
+| *sit* | `vajul` | `ajul` *chair* |
+| *punch* | `ubunul` | |
+| *puncher* | `zaxubunul` | `ubunul` *punch* |
+| *scream* | `azagal` | |
+| *fight* | `uvugul` | |
+| *bond* | `onogol` | `onogol` *knot* |
 
 #### English → Agalan
 
-**1.** *A fighter runs.*
+**1.** *A builder sits.*
 
 ::: details Show answer
-`zaxuvugul vurunul.`
+`zaxogonul vajul.`
 :::
 
-**2.** *Azawan walks. The walker sleeps.*
+**2.** *Azawan constructs. The builder sees a helmet.*
 
 ::: details Show answer
-`zazawan vawalal. zaxawalar velebel.`
+`zazawan vogunul. zaxogonur dehemel vejel.`
 :::
 
-**3.** *Ululon sings. The singer sits.*
+**3.** *Ululon hammers a brick. The hammerer sits.*
 
 ::: details Show answer
-`zululon vuzunul. zaxuzunur vajul.`
+`zululon durugul vahamel. zaxahamer vajul.`
 :::
 
-**4.** *Azawan sees a cat. The one seen runs.*
+**4.** *Azawan sees Uhubun. The one seen sits.*
 
 ::: details Show answer
-`zazawan dagadal vejel. zuxejer vurunul.`
+`zazawan zuhubun vejel. zuxejer vajul.`
 :::
 
-**5.** *A fighter is red.*
+**5.** *Azawan is a builder, in a manner of speaking.*
 
 ::: details Show answer
-`zaxuvugul garedel.`
+`zazawan gaxogonum.`
 :::
 
-**6.** *Azawan is a fighter, in a manner of speaking.*
+**6.** *Azawan sees a construction-site.*
 
 ::: details Show answer
-`zazawan gaxuvugum.`
+`zazawan dononul vejel.`
 :::
 
-**7.** *Azawan sees a fight.*
+**7.** *Ululon punches Azawan. The one punched screams.*
 
 ::: details Show answer
-`zazawan duvugul vejel.`
+`zululon zazawan vubunul. zuxubunur vazagal.`
 :::
 
-**8.** *Azawan is bound to Ululon. That other party of the bond runs.*
+**8.** *Azawan is bound to Ululon. That other party of the bond fights.*
 
 ::: details Show answer
-`zazawan gonogol bululon. zoxonogor vurunul.`
+`zazawan gonogol bululon. zoxonogor vuvugul.`
 :::
 
 #### Agalan → English
 
-**1.** `zaxurunul vawalal.`
+**1.** `zaxahamel vogonul.`
 
 ::: details Show answer
-*A runner walks.*
+*A hammerer constructs.*
 :::
 
-**2.** `zululon vuzunul. zaxuzunur velebel.`
+**2.** `zuhubun zazawan vejel. zuxejer vajul.`
 
 ::: details Show answer
-*Ululon sings. The singer sleeps.*
+*Uhubun sees Azawan. The one seen sits.*
 :::
 
-**3.** `zazawan dagadal vejel. zuxejer vajul.`
+**3.** `zululon vogonul. zaxogonur dehemel vejel.`
 
 ::: details Show answer
-*Azawan sees a cat. The one seen sits.*
+*Ululon constructs. The builder sees a helmet.*
 :::
 
-**4.** `zaxawalal gelem.`
+**4.** `zaxogonul vubunul.`
 
 ::: details Show answer
-*A walker is big.*
+*A builder punches.*
 :::
 
-**5.** `zazawan vuvugul. zaxuvugur vurunul.`
+**5.** `zululon dononul vejel.`
 
 ::: details Show answer
-*Azawan fights. The fighter runs.*
+*Ululon sees a construction-site.*
 :::
 
-**6.** `zuhubun dululon vuvugul. duxuvugur vawalal.`
+**6.** `zazawan zululon vuvugul. duxuvugur vazagal.`
 
 ::: details Show answer
-*Uhubun fought Ululon. The one fought walks.*
+*Azawan fought Ululon. The one fought screams.*
 :::
 
-**7.** `zululon duvugul vejel.`
+**7.** `zululon zazawan vubunul. zaxubunur vuvugul.`
 
 ::: details Show answer
-*Ululon sees a fight.*
+*Ululon punches Azawan. The puncher fights.*
 :::
 
-**8.** `zululon gaxuvugum.`
+**8.** `zuhubun gonogol bululon. zoxonogor vubunul.`
 
 ::: details Show answer
-*Ululon is a fighter, in a manner of speaking.*
+*Uhubun is bound to Ululon. That other party of the bond punches.*
 :::
 
 ## Intermediate
@@ -337,47 +341,47 @@ Direction words take the same four [reference endings](reference-suffix.md) as o
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
+**Setting:** a harbor
+
 **Roots used here:**
 
-| English | Agalan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *Uhubun* | `uhubun` | | |
-| *house* | `ohohul` | | |
-| *cat* | `agadal` | | |
-| *dog* | `odogol` | | |
-| *book* | `abogol` | | |
-| *walk* | `awalal` | | |
-| *north* / body *ahead* | `onohol` | | ⬆️: map north, or ahead if facing is north |
-| *south* / body *back* | `ohuhul` | | ⬇️: map south, or back if facing is north |
-| *west* / body *left* | `ewezel` | | ⬅️: opposite east, or left of facing |
-| *east* / body *right* | `ezazal` | | ➡️: the sun’s path east, or right of facing |
-| *northwest* / *forward-left* | `onohel` | | ↖️: between north and west |
-| *up* (gravity) | `ubal` | `ubal` *up* | ⏫: away from the pull |
-| *down* (gravity) | `odowol` | `odowol` *down* | ⏬: toward the pull |
-| *tree* | `erel` | | |
-| *listener* | `edonen` | | |
-| *speaker* | `ugobon` | | |
+| English | Agalan | Same root as |
+|---------|--------|--------------|
+| *Azawan* | `azawan` | |
+| *Ululon* | `ululon` | |
+| *Uhubun* | `uhubun` | |
+| *boat* | `odadal` | |
+| *ship* | `ahabal` | |
+| *life-ring* | `uluvel` | |
+| *walk* | `awalal` | |
+| *north* / body *ahead* | `onohol` | |
+| *south* / body *back* | `ohuhul` | |
+| *west* / body *left* | `ewezel` | |
+| *east* / body *right* | `ezazal` | |
+| *northwest* / *forward-left* | `onohel` | |
+| *up* (gravity) | `ubal` | |
+| *down* (gravity) | `odowol` | |
+| *listener* | `edonen` | `edonel` *headphones* |
+| *speaker* | `ugobon` | `ugobol` *microphone* |
 
 #### English → Agalan
 
-**1.** *The house on Azawan’s left.*
+**1.** *The boat on Azawan’s left.*
 
 ::: details Show answer
-`zohohul gewezexazawan.`
+`zodadal gewezexazawan.`
 :::
 
-**2.** *The cat on Ululon’s right.*
-
-::: details Show answer
-`zagadal gezazaxululon.`
-:::
-
-**3.** *Walk north.*
+**2.** *Walk north.*
 
 ::: details Show answer
 `jel vawalal honohol.`
+:::
+
+**3.** *The ship on Ululon’s right.*
+
+::: details Show answer
+`zahabal gezazaxululon.`
 :::
 
 **4.** *Walk down.*
@@ -386,48 +390,48 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 `jel vawalal hodowol.`
 :::
 
-**5.** *The dog on Uhubun’s forward-left.*
+**5.** *The life-ring is on Azawan’s left of the boat.*
 
 ::: details Show answer
-`zodogol gonohexuhubun.`
+`zuluvel gewezexazawan bodadal.`
 :::
 
-**6.** *The book is on Azawan’s left of the tree.*
-
-::: details Show answer
-`zabogol gewezexazawan berel.`
-:::
-
-**7.** *You, walk left (your left).*
+**6.** *You, walk left (your left).*
 
 ::: details Show answer
 `jel zedonen vawalal hewezexedonen.`
 :::
 
-**8.** *The house on my left.*
+**7.** *The boat on my left.*
 
 ::: details Show answer
-`zohohul gewezexugobon.`
+`zodadal gewezexugobon.`
+:::
+
+**8.** *Ululon, walk west.*
+
+::: details Show answer
+`jel zululon vawalal hewezel.`
 :::
 
 #### Agalan → English
 
-**1.** `zohohul gezazaxazawan.`
+**1.** `zodadal gezazaxazawan.`
 
 ::: details Show answer
-*The house on Azawan’s right.*
+*The boat on Azawan’s right.*
 :::
 
-**2.** `zagadal gewezexululon.`
-
-::: details Show answer
-*The cat on Ululon’s left.*
-:::
-
-**3.** `jel vawalal hewezel.`
+**2.** `jel vawalal hewezel.`
 
 ::: details Show answer
 *Walk west.*
+:::
+
+**3.** `zahabal gohuhul.`
+
+::: details Show answer
+*The ship on the south.*
 :::
 
 **4.** `jel vawalal habal.`
@@ -436,28 +440,28 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *Walk up.*
 :::
 
-**5.** `zohohul gohuhul.`
+**5.** `zuluvel gewezexululon bodadal.`
 
 ::: details Show answer
-*The house on the south.*
+*The life-ring is on Ululon’s left of the boat.*
 :::
 
-**6.** `zabogol gewezexululon berel.`
-
-::: details Show answer
-*The book is on Ululon’s left of the tree.*
-:::
-
-**7.** `jel zedonen vawalal hezazaxedonen.`
+**6.** `jel zedonen vawalal hezazaxedonen.`
 
 ::: details Show answer
 *You, walk right (your right).*
 :::
 
-**8.** `zohohul gohuhuxazawan.`
+**7.** `zahabal gonohexuhubun.`
 
 ::: details Show answer
-*The house on Azawan’s back.*
+*The ship on Uhubun’s forward-left.*
+:::
+
+**8.** `jel zululon vawalal hodowol.`
+
+::: details Show answer
+*Ululon, walk down.*
 :::
 
 ## Advanced

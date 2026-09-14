@@ -38,67 +38,73 @@ That shape is an **ordinary compound**: a full root, **`x`**, another full root.
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
+**Setting:** a hardware store
+
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *Azawan* | `azawan` |
-| *Ululon* | `ululon` |
-| *Uhubun* | `uhubun` |
-| *Sushi-Coffee* | `zuzuzuxogoven` |
-| *dog* | `odogol` |
-| *cat* | `agadal` |
-| *bedroom* | `zohohulabedel` |
-| *friend* | `zeberelonogol` |
-| *sunflower* | `unowel` |
-| *see* | `vejel` |
-| *sit* | `vajul` |
-| *walk* | `awalal` |
-| *run* | `urunul` |
-| *sleep* | `elebel` |
+| English | Agalan | Same root as |
+|---------|--------|--------------|
+| *Azawan* | `azawan` | |
+| *Ululon* | `ululon` | |
+| *Uhubun* | `uhubun` | |
+| *Hammer-Wrench* | `zahamexewenen` | |
+| *hammer* | `ahamel` | |
+| *wrench* | `ewenel` | |
+| *axe* | `azel` | |
+| *doorbell* | `zobeleladorol` | |
+| *bedroom* | `zohohulabedel` | |
+| *friend* | `zeberelonogol` | |
+| *see* | `vejel` | `ejel` *eye* |
+| *punch* | `ubunul` | |
 
 #### English → Agalan
 
-**1.** *Sushi-Coffee* (one shop label)
+**1.** *Hammer-Wrench* (one shop label)
 
 ::: details Show answer
-`zuzuzuxogoven.`
+`zahamexewenen.`
 :::
 
-**2.** *a dog and a cat*
+**2.** *a hammer and a wrench*
 
 ::: details Show answer
-`zodogol zagadal zam.`
+`zahamel zewenel zam.`
 :::
 
-**3.** *a bedroom* (lexical kind)
+**3.** *a doorbell* (lexical kind)
 
 ::: details Show answer
-`zohohulabedel.`
+`zobeleladorol.`
 :::
 
-**4.** *Azawan and Ululon* (two people)
+**4.** *a friend* (lexical kind)
+
+::: details Show answer
+`zeberelonogol.`
+:::
+
+**5.** *Azawan and Ululon* (two people)
 
 ::: details Show answer
 `zazawan zululon.`
 :::
 
-**5.** *a sunflower* (lexical kind)
+**6.** *Ululon sees Hammer-Wrench.*
 
 ::: details Show answer
-`zunowel.`
+`zululon dahamexewenen vejel.`
 :::
 
-**6.** *Ululon sees Sushi-Coffee.*
+**7.** *Azawan sees a bedroom.*
 
 ::: details Show answer
-`zululon duzuzuxogoven vejel.`
+`zazawan dohohulabedel vejel.`
 :::
 
-**7.** *Azawan sits in a bedroom.*
+**8.** *Ululon punches a friend.*
 
 ::: details Show answer
-`zazawan zohohulabedel vajul.`
+`zululon zeberelonogol vubunul.`
 :::
 
 #### Agalan → English
@@ -109,16 +115,16 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 *a friend* (lexical kind)
 :::
 
-**2.** `zululon dunowel vejel.`
+**2.** `zuhubun dobeleladorol vejel.`
 
 ::: details Show answer
-*Ululon sees a sunflower.*
+*Uhubun sees a doorbell.*
 :::
 
-**3.** `zagadal zodogol zam.`
+**3.** `zahamel zazel zam.`
 
 ::: details Show answer
-*a cat and a dog*
+*a hammer and an axe*
 :::
 
 **4.** `zazawaxululon.`
@@ -127,22 +133,28 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 *Azawan-Ululon* (one person)
 :::
 
-**5.** `zuhubun zohohulabedel velebel.`
+**5.** `zuhubun dohohulabedel vejel.`
 
 ::: details Show answer
-*Uhubun sleeps in a bedroom.*
+*Uhubun sees a bedroom.*
 :::
 
-**6.** `zazawan duzuzuxogoven vawalal.`
+**6.** `zeberelonogol dahamel vejel.`
 
 ::: details Show answer
-*Azawan walks to Sushi-Coffee.*
+*A friend sees a hammer.*
 :::
 
-**7.** `zeberelonogol vurunul.`
+**7.** `zululon dazel vejel.`
 
 ::: details Show answer
-*A friend runs.*
+*Ululon sees an axe.*
+:::
+
+**8.** `zazawan zahamexewenen vubunul.`
+
+::: details Show answer
+*Azawan punches Hammer-Wrench.*
 :::
 
 ## Intermediate
@@ -262,18 +274,20 @@ One overlay per word. A citation bid and a vocative bid may sit together (`azawa
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
+**Setting:** a front porch
+
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *Azawan* | `azawan` |
-| *Ululon* | `ululon` |
-| *Uhubun* | `uhubun` |
-| *sing* | `uzunul` |
-| *sleep* | `elebel` |
-| *see* | `vejel` |
-| *run* | `urunul` |
-| *wave* | `jawavel` |
+| English | Agalan | Same root as |
+|---------|--------|--------------|
+| *Azawan* | `azawan` | |
+| *Ululon* | `ululon` | |
+| *Uhubun* | `uhubun` | |
+| *doorbell* | `zobeleladorol` | |
+| *see* | `vejel` | `ejel` *eye* |
+| *scream* | `azagal` | |
+| *punch* | `ubunul` | |
+| *wave* | `jawavel` | `awavel` *wave* |
 
 #### English → Agalan
 
@@ -283,7 +297,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 `azawaxan.`
 :::
 
-**2.** *Ululon — one moment please.*
+**2.** *Ululon — one moment please.* (calling)
 
 ::: details Show answer
 `jululoxen.`
@@ -313,10 +327,16 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 `uhubuxon.`
 :::
 
-**7.** *Azawan — one moment please.* (calling); *Ululon sings.*
+**7.** *Azawan — one moment please.* (calling); *Ululon screams.*
 
 ::: details Show answer
-`jazawaxen zululon vuzunul.`
+`jazawaxen zululon vazagal.`
+:::
+
+**8.** *Ululon — just passing.* (calling); *Ululon punches Azawan.*
+
+::: details Show answer
+`jululoxun zululon zazawan vubunul.`
 :::
 
 #### Agalan → English
@@ -363,6 +383,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *Wave!* (not a greeting bid on a name)
 :::
 
+**8.** `jazawaxen zuhubun dobeleladorol vejel.`
+
+::: details Show answer
+*Azawan — one moment please.* (calling); *Uhubun sees a doorbell.*
+:::
+
 ## Advanced
 <a id="advanced"></a>
 
@@ -396,45 +422,62 @@ The join letter records how the **left** root entered the closed kind (usually *
 
 Short drills for Advanced. Try each item before opening **Show answer**.
 
+**Setting:** a firehouse
+
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *Azawan* | `azawan` |
-| *Ululon* | `ululon` |
-| *Uhubun* | `uhubun` |
-| *friend* | `zeberelonogol` |
-| *textbook* | `zabogolahalal` |
-| *firehouse* | `zohohulurel` |
-| *bedroom* | `zohohulabedel` |
-| *see* | `vejel` |
-| *sit* | `vajul` |
-| *walk* | `awalal` |
+| English | Agalan | Same root as |
+|---------|--------|--------------|
+| *Azawan* | `azawan` | |
+| *Ululon* | `ululon` | |
+| *Uhubun* | `uhubun` | |
+| *firehouse* | `zohohulurel` | |
+| *friend* | `zeberelonogol` | |
+| *raincoat* | `zojalanunul` | |
+| *notebook* | `zabogoluwurul` | |
+| *doorbell* | `zobeleladorol` | |
+| *fire* | `urel` | |
+| *see* | `vejel` | `ejel` *eye* |
+| *sit* | `vajul` | `ajul` *chair* |
+| *scream* | `azagal` | |
+| *punch* | `ubunul` | |
 
 #### English → Agalan
 
-**1.** *a friend* (lexical kind)
+**1.** *a firehouse* (lexical kind)
+
+::: details Show answer
+`zohohulurel.`
+:::
+
+**2.** *a friend* (lexical kind)
 
 ::: details Show answer
 `zeberelonogol.`
 :::
 
-**2.** *a textbook* (lexical kind)
-
-::: details Show answer
-`zabogolahalal.`
-:::
-
-**3.** *Ululon sits in a firehouse.* (lexical kind)
+**3.** *Ululon sits in a firehouse.*
 
 ::: details Show answer
 `zululon zohohulurel vajul.`
 :::
 
-**4.** *Azawan and Ululon* (two people, not one stem)
+**4.** *Azawan sees a raincoat.*
+
+::: details Show answer
+`zazawan dojalanunul vejel.`
+:::
+
+**5.** *Azawan and Ululon* (two people, not one stem)
 
 ::: details Show answer
 `zazawan zululon.`
+:::
+
+**6.** *Ululon punches a friend.*
+
+::: details Show answer
+`zululon zeberelonogol vubunul.`
 :::
 
 #### Agalan → English
@@ -445,22 +488,34 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 *a firehouse* (lexical kind)
 :::
 
-**2.** `zuhubun zabogolahalal vejel.`
+**2.** `zuhubun zabogoluwurul vejel.`
 
 ::: details Show answer
-*Uhubun sees a textbook.*
+*Uhubun sees a notebook.*
 :::
 
-**3.** `zazawan zohohulabedel vawalal.`
+**3.** `zazawan zobeleladorol vejel.`
 
 ::: details Show answer
-*Azawan walks in a bedroom.*
+*Azawan sees a doorbell.*
 :::
 
-**4.** `zohohulabedel.`
+**4.** `zeberelonogol zohohulurel vajul.`
 
 ::: details Show answer
-*a bedroom* (lexical kind)
+*A friend sits in a firehouse.*
+:::
+
+**5.** `zululon durel vejel.`
+
+::: details Show answer
+*Ululon sees a fire.*
+:::
+
+**6.** `zuhubun vazagal. zeberelonogol vubunul.`
+
+::: details Show answer
+*Uhubun screams. A friend punches.*
 :::
 
 

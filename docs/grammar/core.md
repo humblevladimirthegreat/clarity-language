@@ -218,6 +218,8 @@ Role letters on this page:
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
+**Setting:** a bank
+
 **Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
 
 | English | Agalan | Same root as | Cue |
@@ -225,21 +227,24 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` | | |
 | *Ululon* | `ululon` | | |
 | *Uhubun* | `uhubun` | | |
-| *dog* | `odogol` | | |
-| *cat* | `agadal` | | |
-| *house* | `ohohul` | | |
-| *inside* / *inclusion* | `hogorem` | `ogorel` *hollow circle* | ⭕: being inside the boundary |
-| *blue* | `elulul` | | |
-| *big* | `elem` | `elel` *elephant* | 🐘: the huge animal |
+| *bank* | `anabal` | | |
+| *money-bag* | `onebal` | | |
+| *guard* | `ugugal` | | |
+| *angry* | `anagal` | | |
 | *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
-| *walk* | `awalal` | | |
-| *run* | `urunul` | | |
-| *sleep* | `elebel` | | |
-| *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
-| *sing* | `uzunul` | | |
-| *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
 | *sit* | `vajul` | `ajul` *chair* | 🪑: taking a seat |
+| *stand* | `vazanul` | `azanul` *standing* | 🧍: staying in place |
+| *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
+| *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
+| *write* | `vuwurul` | `uwurul` *write* | ✍️: putting words on the page |
+| *sneak* | `vazanal` | | |
+| *scream* | `vazagal` | | |
+| *punch* | `vubunul` | | |
+| *fight* | `vuvugul` | | |
+| *run* | `vurunul` | `urunul` *running* | 🏃: leaving at speed |
 | *haste* | `hadazam` | `adazal` *dash* | 💨: a burst of speed |
+| *big* | `elem` | `elel` *elephant* | 🐘: the huge animal |
+| *inside* | `hogorem` | `ogorel` *hollow circle* | ⭕: being inside the boundary |
 | *next clause* | `adorol` | `adorol` *door* | 🚪: the next sentence walks through |
 | *because* | `hurugum` | `urugul` *brick* | 🧱: the cause is what the result sits on |
 | *therefore* | `xezazal` | `ezazal` *east* | ➡️: the sun’s path, so the talk moves on |
@@ -252,40 +257,46 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 `juhubun.`
 :::
 
-**2.** *Ululon sees Uhubun.*
+**2.** *Azawan sits.*
 
 ::: details Show answer
-`zululon duhubun vejel.`
+`zazawan vajul.`
 :::
 
-**3.** *Happy Uhubun sits.*
+**3.** *Uhubun sees Azawan.*
 
 ::: details Show answer
-`zuhubun guzumum vajul.`
+`zuhubun dazawan vejel.`
 :::
 
-**4.** *A very blue dog walks.*
+**4.** *A very angry Ululon stands.*
 
 ::: details Show answer
-`zodogol gelulul welem vawalal.`
+`zululon ganagal welem vazanul.`
 :::
 
-**5.** *Run!*
+**5.** *Azawan writes hastily.*
 
 ::: details Show answer
-`jel vurunul.`
+`zazawan vuwurul hadazam.`
 :::
 
-**6.** *Azawan tells Ululon that Uhubun sings.*
+**6.** *Don’t sneak.*
 
 ::: details Show answer
-`zazawan dululon vezehel dadorol zuhubun vuzunul.`
+`jul vazanal.`
 :::
 
-**7.** *Azawan walks because Ululon runs.*
+**7.** *Azawan tells Ululon that Uhubun sits.*
 
 ::: details Show answer
-`zazawan vawalal hurugum badorol zululon vurunul.`
+`zazawan dululon vezehel dadorol zuhubun vajul.`
+:::
+
+**8.** *Azawan runs because Ululon punches a guard.*
+
+::: details Show answer
+`zazawan vurunul hurugum badorol zululon dugugal vubunul.`
 :::
 
 #### Agalan → English
@@ -296,46 +307,46 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 *Azawan!* (calling Azawan)
 :::
 
-**2.** `zazawan duhubun vejel.`
+**2.** `zuhubun vazanul.`
+
+::: details Show answer
+*Uhubun stands.*
+:::
+
+**3.** `zazawan duhubun vejel.`
 
 ::: details Show answer
 *Azawan sees Uhubun.*
 :::
 
-**3.** `zazawan vawalal hadazam.`
+**4.** `zuhubun guzumum donebal vejel.`
 
 ::: details Show answer
-*Azawan walks hastily.*
+*Happy Uhubun sees a money-bag.*
 :::
 
-**4.** `zuhubun velebel hogorem bohohul.`
+**5.** `jol zazawan vajul?`
 
 ::: details Show answer
-*Uhubun sleeps inside a house.*
+*Does Azawan sit?*
 :::
 
-**5.** `jul vurunul.`
+**6.** `jel vurunul.`
 
 ::: details Show answer
-*Don’t run.*
+*Run!*
 :::
 
-**6.** `zululon vurunul. xezazal zazawan vuzunul.`
+**7.** `zululon vazanal hogorem banabal.`
 
 ::: details Show answer
-*Ululon runs. Therefore Azawan sings.*
+*Ululon sneaks inside a bank.*
 :::
 
-**7.** `zodogol dagadal vejel.`
+**8.** `zuhubun vazagal. xezazal zululon vuvugul.`
 
 ::: details Show answer
-*A dog sees a cat.*
-:::
-
-**8.** `zodogol gelulul vawalal.`
-
-::: details Show answer
-*A blue dog walks.*
+*Uhubun screams. Therefore Ululon fights.*
 :::
 
 ## Intermediate
@@ -470,6 +481,8 @@ A number word in `/j/` is a call-out (*Three more!*, a score). It can sit with t
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
+**Setting:** a train platform
+
 **Roots used here:**
 
 | English | Agalan |
@@ -477,88 +490,93 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` |
 | *Ululon* | `ululon` |
 | *Uhubun* | `uhubun` |
-| *dog* | `odogol` |
+| *train* | `udunul` |
+| *station* | `azadol` |
+| *ticket* | `ugedel` |
+| *luggage* | `ulugal` |
+| *depart* | `vebarul` |
 | *blue* | `elulul` |
 | *red* | `aredel` |
-| *happy* | `uzumum` |
 | *same* | `gonunul` |
-| *walk* | `awalal` |
-| *run* | `urunul` |
-| *sleep* | `elebel` |
-| *tell* | `vezehel` |
-| *sing* | `uzunul` |
-| *see* | `vejel` |
 | *sit* | `vajul` |
+| *stand* | `vazanul` |
+| *see* | `vejel` |
+| *tell* | `vezehel` |
+| *run* | `vurunul` |
+| *sneak* | `vazanal` |
+| *scream* | `vazagal` |
+| *punch* | `vubunul` |
+| *fight* | `vuvugul` |
 | *volume* | `wegelom` |
 | *topic* | `hozal` |
 | *next clause* | `adorol` |
 | *because* | `hurugum` |
 | *next* | `xuvumul` |
 | *however* | `xezebal` |
-| *but* | `xonugol` |
+| *meanwhile* | `xanelol` |
 
 #### English → Agalan
 
-**1.** *Maybe Ululon sees Uhubun.*
+**1.** *Maybe Azawan sits.*
 
 ::: details Show answer
-`jam zululon duhubun vejel.`
+`jam zazawan vajul.`
 :::
 
-**2.** *Does Uhubun sit, perhaps?*
+**2.** *Does Uhubun see a ticket, perhaps?*
 
 ::: details Show answer
-`jom zuhubun vajul?`
+`jom zuhubun dugedel vejel?`
 :::
 
-**3.** *Please sing.*
+**3.** *Please stand.*
 
 ::: details Show answer
-`jem vuzunul!`
+`jem vazanul!`
 :::
 
-**4.** *Please don’t run.*
+**4.** *Please don’t sneak.*
 
 ::: details Show answer
-`jum vurunul!`
+`jum vazanal!`
 :::
 
-**5.** *A loud-volume blue dog sits.* (adjective before the noun)
+**5.** *A loud-volume red train stands.* (adjective before the noun)
 
 ::: details Show answer
-`glelulul wegelom zodogol vajul.`
+`glaredel wegelom zudunul vazanul.`
 :::
 
-**6.** *As for Uhubun, Ululon runs.*
+**6.** *Azawan the same as blue Uhubun stands.*
 
 ::: details Show answer
-`hozal buhubun zululon vurunul.`
+`zazawan gonunul buhubun gelulul vazanul.`
 :::
 
-**7.** *Ululon runs. Next Azawan walks.*
+**7.** *Azawan sits. Next Ululon runs.*
 
 ::: details Show answer
-`zululon vurunul. xuvumul zazawan vawalal.`
+`zazawan vajul. xuvumul zululon vurunul.`
 :::
 
-**8.** *Azawan sits because Ululon runs because Uhubun sleeps.*
+**8.** *Azawan runs because Ululon punches Azawan because Uhubun screams.*
 
 ::: details Show answer
-`zazawan vajul hurugum badorol zululon vurunul hurugum badorol zuhubun velebel.`
+`zazawan vurunul hurugum badorol zululon dazawan vubunul hurugum badorol zuhubun vazagal.`
 :::
 
 #### Agalan → English
 
-**1.** `jam hozal bazawan zululon vuzunul.`
+**1.** `jam hozal bazawan zululon dugedel vejel.`
 
 ::: details Show answer
-*As for Azawan, maybe Ululon sings.*
+*As for Azawan, maybe Ululon sees a ticket.*
 :::
 
-**2.** `jom glaredel zodogol vawalal?`
+**2.** `jom gleelulul zudunul vazanul?`
 
 ::: details Show answer
-*Does a red dog walk, perhaps?*
+*Does a blue train stand, perhaps?*
 :::
 
 **3.** `jem duhubun vezehel!`
@@ -567,34 +585,34 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *Please tell Uhubun.*
 :::
 
-**4.** `jum duhubun vejel!`
+**4.** `jum vubunul!`
 
 ::: details Show answer
-*Please don’t look at Uhubun.*
+*Please don’t punch.*
 :::
 
-**5.** `zodogol gonunul buhubun gelulul vawalal.`
+**5.** `zuhubun gonunul bululon garedel vazanul.`
 
 ::: details Show answer
-*A dog the same as blue Uhubun walks.*
+*Uhubun the same as red Ululon stands.*
 :::
 
-**6.** `zazawan vajul. xonugol zululon vurunul.`
+**6.** `zuhubun vajul. xanelol zululon dulugal vejel.`
 
 ::: details Show answer
-*Azawan sits. But Ululon runs.*
+*Uhubun sits. Meanwhile Ululon sees luggage.*
 :::
 
-**7.** `zululon vuzunul. xezebal zazawan velebel.`
+**7.** `zululon vazanal. xezebal zazawan vurunul.`
 
 ::: details Show answer
-*Ululon sings. However Azawan sleeps.*
+*Ululon sneaks. However Azawan runs.*
 :::
 
-**8.** `zuhubun guzumum hurugum badorol zazawan vajul hurugum badorol zululon vurunul.`
+**8.** `zuhubun vazagal hurugum badorol zazawan vebarul hurugum badorol zululon dazawan vubunul.`
 
 ::: details Show answer
-*Uhubun is happy because Azawan sits because Ululon runs.*
+*Uhubun screams because Azawan departs because Ululon punches Azawan.*
 :::
 
 ## Advanced

@@ -115,6 +115,8 @@ The same roots take the role letter of the slot they fill. As a direct object th
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
+**Setting:** a picnic
+
 **Roots used here:**
 
 | English | Agalan |
@@ -122,118 +124,119 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` |
 | *Ululon* | `ululon` |
 | *Uhubun* | `uhubun` |
-| *cat* | `agadal` |
-| *dog* | `odogol` |
-| *house* | `ohohul` |
-| *blue* | `elulul` |
-| *walk* | `awalal` |
+| *ant* | `anadal` |
+| *basket* | `azegel` |
+| *sandwich* | `azadul` |
+| *wine* | `uwunel` |
+| *knife* | `uguvel` |
 | *sit* | `vajul` |
-| *run* | `urunul` |
 | *see* | `vejel` |
+| *pour* | `vorurul` |
+| *sneak* | `vazanal` |
+| *punch* | `vubunul` |
+| *scream* | `vazagal` |
+| *run* | `vurunul` |
 | *tell* | `vezehel` |
-| *sing* | `uzunul` |
 | *interlocutors* | `ahan` |
-| *speaker* | `ugobon` |
-| *listener* | `edonen` |
 
 #### English → Agalan
 
-**1.** *Azawan and associates walk.*
+**1.** *Azawan and associates sit.*
 
 ::: details Show answer
-`zazawanx vawalal.`
+`zazawanx vajul.`
 :::
 
-**2.** *Some cats sit.*
+**2.** *Some ants sit.*
 
 ::: details Show answer
-`zagadalx vajul.`
+`zanadalx vajul.`
 :::
 
-**3.** *They (Azawan and associates) sing. (when Azawan was mentioned earlier in the conversation)*
+**3.** *Azawan and associates see a basket.*
 
 ::: details Show answer
-`zazarx vuzunul.`
+`zazawanx dazegel vejel.`
 :::
 
-**4.** *We (you and I) sit.*
+**4.** *You (Ululon) and your associates see Uhubun.*
 
 ::: details Show answer
-`zahan vajul.`
+`zululonx duhubun vejel.`
 :::
 
-**5.** *Speaker and associates (not you) walk.*
+**5.** *They (Azawan and associates) pour wine.* (Azawan already mentioned)
 
 ::: details Show answer
-`zugobonx vawalal.`
+`zazawarx duwunel vorurul.`
 :::
 
-**6.** *You (Ululon) and your associates run.*
+**6.** *Ululon and associates sneak.*
 
 ::: details Show answer
-`zululonx vurunul.`
+`zululonx vazanal.`
 :::
 
-**7.** *You all (the addressees) sit.*
+**7.** *Ululon and associates punch Azawan.*
 
 ::: details Show answer
-`zedonenx vajul.`
+`zululonx dazawan vubunul.`
 :::
 
-**8.** *Azawan and associates see a house.*
+**8.** *Do Azawan and associates scream?*
 
 ::: details Show answer
-`zazawanx dohohul vejel.`
+`jol zazawanx vazagal.`
 :::
 
 #### Agalan → English
 
-**1.** `zuhubunx vawalal.`
+**1.** `zuhubunx vajul.`
 
 ::: details Show answer
-*Uhubun and associates walk.*
+*Uhubun and associates sit.*
 :::
 
-**2.** `zagadalx gelulul vajul.`
+**2.** `zazawanx dazadul vejel.`
 
 ::: details Show answer
-*Some blue cats sit.*
+*Azawan and associates see a sandwich.*
 :::
 
-**3.** `zodogolx vurunul.`
+**3.** `zanadalx vurunul.`
 
 ::: details Show answer
-*Some dogs run.*
+*Some ants run.*
 :::
 
-**4.** `zahan dohohul vejel.`
+**4.** `zahan dazegel vejel.`
 
 ::: details Show answer
-*We (you and I) see a house.*
+*We (you and I) see a basket.*
 :::
 
-**5.** `zazawan dugobonx vejel.`
+**5.** `zululonx dazawan vezehel.`
 
 ::: details Show answer
-*Azawan sees speaker and associates (not you).*
+*Ululon tells Azawan and associates.*
 :::
 
-**6.** `zedonenx vuzunul.`
+**6.** `zazawarx duguvel vejel.`
 
 ::: details Show answer
-*You all (the addressees) sing.*
+*They (Azawan and associates) see a knife.*
 :::
 
-**7.** `zuhubun dazawanx vezehel.`
+**7.** `zululonx duhubun vubunul.`
 
 ::: details Show answer
-*Uhubun tells Azawan and associates.*
+*Ululon and associates punch Uhubun.*
 :::
 
-**8.** `jol zululonx vajul.`
+**8.** `jol zuhubunx vazagal.`
 
 ::: details Show answer
-*Do Ululon and associates sit?*
+*Do Uhubun and associates scream?*
 :::
 
 ## Intermediate
@@ -366,6 +369,8 @@ Beginner already used **-x** on nouns and person-role specials. The rest of the 
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
+**Setting:** a choir loft
+
 **Roots used here:**
 
 | English | Agalan |
@@ -373,105 +378,103 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` |
 | *Ululon* | `ululon` |
 | *Uhubun* | `uhubun` |
-| *file-box* | `ulebol` |
-| *toolbox* | `olozol` |
+| *singer* | `uzunul` |
+| *sheet-music* | `eduzul` |
+| *bell* | `obelel` |
 | *heaviness* | `aragam` |
-| *teamwork* | `ahadam` |
-| *vastness* | `umum` |
-| *cat* | `agadal` |
 | *blue* | `elulul` |
-| *sing* | `uzunul` |
-| *walk* | `awalal` |
-| *run* | `urunul` |
-| *interlocutors* | `ahan` |
-| *listener* | `edonen` |
+| *sing* | `vuzunul` |
+| *sneak* | `vazanal` |
+| *punch* | `vubunul` |
+| *fight* | `vuvugul` |
+| *see* | `vejel` |
 
 #### English → Agalan
 
-**1.** *The file-boxes are heavy.* (members, or don’t care)
+**1.** *Hey, singers!*
 
 ::: details Show answer
-`zulebolx garagam.`
+`juzunulx.`
 :::
 
-**2.** *The file-boxes are heavy as a pile.*
+**2.** *The sheet-musics are blue.* (members, or don’t care)
 
 ::: details Show answer
-`zulebolx garagamx.`
+`zeduzulx gelulul.`
 :::
 
-**3.** *Azawan sings jointly (not a solo).*
+**3.** *Azawan and associates sing.* (together or each, or don’t care)
+
+::: details Show answer
+`zazawanx vuzunul.`
+:::
+
+**4.** *Azawan sings jointly (not a solo).*
 
 ::: details Show answer
 `zazawan vuzunulx.`
 :::
 
-**4.** *Azawan and associates sing as one outing.*
+**5.** *Azawan and Ululon sing as one outing.* (listed members)
 
 ::: details Show answer
-`zazawanx vuzunulx.`
+`zazawan zululon zal vuzunulx.`
 :::
 
-**5.** *The team walks as one unit.*
+**6.** *The bells are heavy as a pile.*
 
 ::: details Show answer
-`zahadal vawalalx.`
+`zobelelx garagamx.`
 :::
 
-**6.** *We (you and I) walk as one outing.*
+**7.** *Ululon and associates sneak as one outing.*
 
 ::: details Show answer
-`zahan vawalalx.`
+`zululonx vazanalx.`
 :::
 
-**7.** *Hey, cats!*
+**8.** *Ululon and associates punch Azawan as one shared act.*
 
 ::: details Show answer
-`jagadalx.`
-:::
-
-**8.** *Hey, you all (the addressees)!*
-
-::: details Show answer
-`jedonenx.`
+`zululonx dazawan vubunulx.`
 :::
 
 #### Agalan → English
 
-**1.** `zolozolx garagam.`
+**1.** `juhubunx.`
 
 ::: details Show answer
-*The toolboxes are heavy.* (members / plain)
+*Hey, Uhubun and associates!*
 :::
 
-**2.** `zolozolx garagamx.`
+**2.** `zeduzulx garagam.`
 
 ::: details Show answer
-*The toolboxes are heavy as a pile.*
+*The sheet-musics are heavy.* (members / plain)
 :::
 
-**3.** `zululon vurunulx.`
+**3.** `zuhubunx vuzunul.`
 
 ::: details Show answer
-*Ululon runs jointly.* / *Ululon runs (not a solo).*
+*Uhubun and associates sing.* (together or each, or don’t care)
 :::
 
-**4.** `zululonx vurunulx.`
+**4.** `zululon vuzunulx.`
 
 ::: details Show answer
-*Ululon and associates run as one outing.*
+*Ululon sings jointly (not a solo).*
 :::
 
-**5.** `zahadal gumum.`
+**5.** `zazawanx vuzunulx.`
 
 ::: details Show answer
-*The team is vast.*
+*Azawan and associates sing as one outing.*
 :::
 
-**6.** `zulebolx gelulul.`
+**6.** `zobelelx gelulul.`
 
 ::: details Show answer
-*The file-boxes are blue.*
+*The bells are blue.*
 :::
 
 **7.** `jazawanx.`
@@ -480,10 +483,10 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *Hey, Azawan and associates!*
 :::
 
-**8.** `juhubunx.`
+**8.** `zululonx vuvugulx.`
 
 ::: details Show answer
-*Hey, Uhubun and associates!*
+*Ululon and associates fight as one outing.*
 :::
 
 ## See also

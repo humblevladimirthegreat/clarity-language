@@ -59,92 +59,95 @@ When unsure, prefer **`hodohom`**.
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
+**Setting:** a café patio
+
 **Roots used here:**
 
-| English | Agalan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *Uhubun* | `uhubun` | | |
-| *cat* | `agadal` | | |
-| *book* | `abogol` | | |
-| *house* | `ohohul` | | |
-| *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
-| *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it out loud |
-| *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
-| *sing* | `uzunul` | | |
-| *walk* | `awalal` | | |
-| *run* | `urunul` | | |
-| *commentary* | `hodohom` | `odohol` *thought* | 💭: a balloon over the scene |
+| English | Agalan | Same root as |
+|---------|--------|--------------|
+| *Azawan* | `azawan` | |
+| *Ululon* | `ululon` | |
+| *Uhubun* | `uhubun` | |
+| *sit* | `vajul` | `ajul` *chair* |
+| *pour* | `vorurul` | |
+| *coffee* | `ogovel` | |
+| *tea* | `adedal` | |
+| *see* | `vejel` | `ejel` *eye* |
+| *tell* | `vezehel` | `ezehel` *speech* |
+| *think* (event) | `vodohol` | `odohol` *thought* |
+| *I think* (soft COMMENT) | `hodohom` | `odohol` *thought* |
+| *punch* | `vubunul` | |
+| *scream* | `vazagal` | |
+| *fight* | `vuvugul` | |
 
 #### English → Agalan
 
-**1.** *I think Azawan sees Uhubun.* (light commentary)
+**1.** *I think Azawan sits.* (light commentary)
 
 ::: details Show answer
-`zazawan hodohom vejel duhubun.`
+`zazawan hodohom vajul.`
 :::
 
-**2.** *Ululon sings — and that take is the scene.* (fused hold)
+**2.** *I think Ululon pours coffee.*
 
 ::: details Show answer
-`zululon hodohol vuzunul.`
+`zululon hodohom vorurul dogovel.`
 :::
 
-**3.** *I think Ululon tells Uhubun — and step back from that take.*
+**3.** *I think Uhubun sees Azawan.*
 
 ::: details Show answer
-`zululon hodohor vezehel duhubun.`
+`zuhubun hodohom vejel dazawan.`
 :::
 
-**4.** *Azawan thinks.* (deliberate event, not a commentary frame)
+**4.** *Azawan tells Uhubun — and that take is the scene.* (fused hold)
+
+::: details Show answer
+`zazawan hodohol vezehel duhubun.`
+:::
+
+**5.** *I think Ululon pours tea — and step back from that take.*
+
+::: details Show answer
+`zululon hodohor vorurul dadedal.`
+:::
+
+**6.** *Azawan thinks.* (deliberate event, not a commentary frame)
 
 ::: details Show answer
 `zazawan vodohol.`
 :::
 
-**5.** *Does Uhubun run?* (yes/no; light commentary over the ask)
+**7.** *I think Ululon punches Azawan.*
 
 ::: details Show answer
-`jol zuhubun hodohom vurunul.`
+`zululon hodohom vubunul dazawan.`
 :::
 
-**6.** *I think Azawan is happy.* (light commentary)
+**8.** *Does Uhubun scream?* (yes/no; light commentary over the ask)
 
 ::: details Show answer
-`zazawan hodohom guzumum.`
-:::
-
-**7.** *I think Ululon sees a cat.*
-
-::: details Show answer
-`zululon hodohom vejel dagadal.`
-:::
-
-**8.** *I think Azawan sees a house.*
-
-::: details Show answer
-`zazawan hodohom vejel dohohul.`
+`jol zuhubun hodohom vazagal.`
 :::
 
 #### Agalan → English
 
-**1.** `zululon hodohom vejel duhubun.`
+**1.** `zululon hodohom vajul.`
 
 ::: details Show answer
-*I think Ululon sees Uhubun.*
+*I think Ululon sits.*
 :::
 
-**2.** `zuhubun hodohol vawalal.`
+**2.** `zazawan hodohom vorurul dadedal.`
 
 ::: details Show answer
-*Uhubun walks — and that take is the scene.*
+*I think Azawan pours tea.*
 :::
 
-**3.** `zazawan hodohor vezehel dululon.`
+**3.** `zuhubun hodohol vejel dululon.`
 
 ::: details Show answer
-*I think Azawan tells Ululon — and step back from that take.*
+*Uhubun sees Ululon — and that take is the scene.*
 :::
 
 **4.** `zululon vodohol.`
@@ -153,28 +156,28 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 *Ululon thinks.* (an event of thinking, not COMMENT)
 :::
 
-**5.** `jol zazawan hodohom vuzunul.`
+**5.** `zazawan hodohor vorurul dogovel.`
 
 ::: details Show answer
-*Does Azawan sing?* (asked with light commentary)
+*I think Azawan pours coffee — and step back from that take.*
 :::
 
-**6.** `zuhubun hodohom guzumum.`
+**6.** `jol zazawan hodohom vejel duhubun.`
 
 ::: details Show answer
-*I think Uhubun is happy.*
+*Does Azawan see Uhubun?* (asked with light commentary)
 :::
 
-**7.** `zazawan hodohom vejel dagadal.`
+**7.** `zululon hodohol vuvugul.`
 
 ::: details Show answer
-*I think Azawan sees a cat.*
+*Ululon fights — and that take is the scene.*
 :::
 
-**8.** `zululon hodohom vejel dabogol.`
+**8.** `zululon hodohom vazagal.`
 
 ::: details Show answer
-*I think Ululon sees a book.*
+*I think Ululon screams.*
 :::
 
 ## Intermediate
@@ -290,99 +293,103 @@ When unsure, prefer **`hadadem`**.
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
+**Setting:** a press conference
+
 **Roots used here:**
 
-| English | Agalan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *Uhubun* | `uhubun` | | |
-| *dog* | `odogol` | | |
-| *walk* | `awalal` | | |
-| *sleep* | `elebel` | | |
-| *sing* | `uzunul` | | |
-| *run* | `urunul` | | |
-| *write* | `uwurul` | | |
-| *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
-| *commentary* | `hodohom` | `odohol` *thought* | 💭: a balloon over the scene |
-| *live* / *from the scene* | `hadezem` | `adezel` *attest* | 👁️‍🗨️: seeing-and-saying while it is in view |
-| *from memory* (past observation) | `huvuvum` | `uvuvul` *fishing* | 🎣: you pull something back |
-| *on record* | `heregom` | `eregol` *record* | ⏺️: playback of what was saved |
-| *from the pattern* | `habawam` | `abawal` *paw-prints* | 🐾: cases left behind |
-| *inferred* | `hunevem` | `unevel` *investigate* | 🕵️: you work the clues |
-| *so they say* | `heraram` | `eraral` *ear* | 👂: you heard it told |
-| *felt* | `heherem` | `eherel` *heart* | ❤️: knowing in the body |
-| *per the tale* | `horolom` | `orolol` *scroll* | 📜: a story you tell |
-| *as if* (**NOTIONAL**) | `hadadem` | `adadel` *theater* | 🎭: a stage mask |
+| English | Agalan | Same root as |
+|---------|--------|--------------|
+| *Azawan* | `azawan` | |
+| *Ululon* | `ululon` | |
+| *Uhubun* | `uhubun` | |
+| *tell* | `vezehel` | `ezehel` *speech* |
+| *see* | `vejel` | `ejel` *eye* |
+| *write* | `vuwurul` | |
+| *camera* | `ameral` | |
+| *newspaper* | `enewel` | |
+| *radio* | `aradul` | |
+| *mute* | `vumudel` | |
+| *punch* | `vubunul` | |
+| *scream* | `vazagal` | |
+| *I think* (soft COMMENT) | `hodohom` | `odohol` *thought* |
+| *live* / *from the scene* | `hadezem` | `adezel` *attest* |
+| *from memory* (past observation) | `huvuvum` | `uvuvul` *fishing* |
+| *on record* | `heregom` | `eregol` *record* |
+| *from the pattern* | `habawam` | `abawal` *paw-prints* |
+| *inferred* | `hunevem` | `unevel` *investigate* |
+| *so they say* | `heraram` | `eraral` *ear* |
+| *felt* | `heherem` | `eherel` *heart* |
+| *per the tale* | `horolom` | `orolol` *scroll* |
+| *as if* (soft NOTIONAL) | `hadadem` | `adadel` *theater* |
 
 #### English → Agalan
 
-**1.** *I think Uhubun sleeps.* (attitude — not how you know a world-claim)
+**1.** *Azawan tells Uhubun — live / from the scene.* (present observation)
 
 ::: details Show answer
-`zuhubun hodohom velebel.`
+`zazawan hadezem vezehel duhubun.`
 :::
 
-**2.** *Azawan walks — live / from the scene.* (present observation)
+**2.** *Ululon sees a camera — from memory* (past observation).
 
 ::: details Show answer
-`zazawan hadezem vawalal.`
+`zululon huvuvum vejel dameral.`
 :::
 
-**3.** *Ululon runs — from memory* (past observation).
+**3.** *Uhubun tells Azawan — on record.*
 
 ::: details Show answer
-`zululon huvuvum vurunul.`
+`zuhubun heregom vezehel dazawan.`
 :::
 
-**4.** *Uhubun sings — on record.*
+**4.** *Azawan sees a newspaper — from the pattern of cases.*
 
 ::: details Show answer
-`zuhubun heregom vuzunul.`
+`zazawan habawam vejel denewel.`
 :::
 
-**5.** *Azawan writes — from the pattern of cases.*
+**5.** *Ululon mutes — so they say.* (hearsay)
 
 ::: details Show answer
-`zazawan habawam vuwurul.`
+`zululon heraram vumudel.`
 :::
 
-**6.** *Ululon sees a dog — so they say.* (hearsay)
+**6.** *Ululon punches Azawan — inferred from clues.*
 
 ::: details Show answer
-`zululon heraram vejel dodogol.`
+`zululon hunevem vubunul dazawan.`
 :::
 
-**7.** *As if Azawan walks.* (soft pretensive frame)
+**7.** *As if Azawan tells Uhubun.* (soft pretensive frame)
 
 ::: details Show answer
-`zazawan hadadem vawalal.`
+`zazawan hadadem vezehel duhubun.`
 :::
 
-**8.** *As if Uhubun sings.* (immersed in the imagined scene)
+**8.** *As if Ululon screams.* (immersed in the imagined scene)
 
 ::: details Show answer
-`zuhubun hadadel vuzunul.`
+`zululon hadadel vazagal.`
 :::
 
 #### Agalan → English
 
-**1.** `zazawan heherem vawalal.`
+**1.** `zazawan heherem vezehel duhubun.`
 
 ::: details Show answer
-*Azawan walks — felt / gut-known.*
+*Azawan tells Uhubun — felt / gut-known.*
 :::
 
-**2.** `zululon horolom velebel.`
+**2.** `zululon horolom vejel daradul.`
 
 ::: details Show answer
-*Ululon sleeps — per the tale.*
+*Ululon sees a radio — per the tale.*
 :::
 
-**3.** `zuhubun hunevem vurunul.`
+**3.** `zuhubun hunevem vumudel.`
 
 ::: details Show answer
-*Uhubun runs — inferred from clues.*
+*Uhubun mutes — inferred from clues.*
 :::
 
 **4.** `zazawan hadader vuwurul.`
@@ -391,28 +398,28 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *As if Azawan writes — and step back toward contact.*
 :::
 
-**5.** `zululon heregom vejel dodogol.`
+**5.** `zululon heregom vejel dameral.`
 
 ::: details Show answer
-*Ululon sees a dog — on record.*
+*Ululon sees a camera — on record.*
 :::
 
-**6.** `zuhubun huvuvum vuzunul.`
+**6.** `zuhubun huvuvum vezehel.`
 
 ::: details Show answer
-*Uhubun sings — from memory (a past observation).*
+*Uhubun tells — from memory (a past observation).*
 :::
 
-**7.** `zululon hadezem vawalal.`
+**7.** `zululon hadezem vubunul dazawan.`
 
 ::: details Show answer
-*Ululon walks — live / from the scene.*
+*Ululon punches Azawan — live / from the scene.*
 :::
 
-**8.** `zazawan hodohom vurunul.`
+**8.** `zazawan hodohom vezehel.`
 
 ::: details Show answer
-*I think Azawan runs.*
+*I think Azawan tells.* (attitude — not how you know a world-claim)
 :::
 
 ## Advanced

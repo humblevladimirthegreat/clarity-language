@@ -164,58 +164,59 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `index.md` | — | — |
 | `lexicon.md` | — | — |
 | `phonology.md` | — | — |
-| `reference-suffix.md` | Beginner | unset |
-| `reference-suffix.md` | Intermediate | unset |
-| `core.md` | Beginner | unset |
-| `core.md` | Intermediate | unset |
-| `pronouns.md` | Beginner | unset |
-| `pronouns.md` | Intermediate | unset |
-| `pronouns.md` | Advanced | unset |
-| `plurality.md` | Beginner | unset |
-| `plurality.md` | Intermediate | unset |
-| `predication.md` | Beginner | unset |
-| `predication.md` | Intermediate | unset |
+| `reference-suffix.md` | Beginner | a classroom |
+| `reference-suffix.md` | Intermediate | a hospital ward |
+| `core.md` | Beginner | a bank |
+| `core.md` | Intermediate | a train platform |
+| `pronouns.md` | Beginner | a kitchen |
+| `pronouns.md` | Intermediate | a rooftop garden |
+| `pronouns.md` | Advanced | a radio booth |
+| `plurality.md` | Beginner | a picnic |
+| `plurality.md` | Intermediate | a choir loft |
+| `predication.md` | Beginner | a passport office |
+| `predication.md` | Intermediate | a museum gallery |
 | `vowel-series.md` | — | — |
-| `joins.md` | Beginner | unset |
-| `joins.md` | Intermediate | unset |
-| `joins.md` | Advanced | unset |
-| `questions.md` | Beginner | unset |
-| `questions.md` | Intermediate | unset |
-| `questions.md` | Advanced | unset |
-| `revisers.md` | Beginner | unset |
-| `revisers.md` | Intermediate | unset |
-| `restrictors.md` | Beginner | unset |
-| `restrictors.md` | Intermediate | unset |
+| `joins.md` | Beginner | a market stall |
+| `joins.md` | Intermediate | a wedding |
+| `joins.md` | Advanced | a treaty table |
+| `questions.md` | Beginner | a lost-and-found |
+| `questions.md` | Intermediate | a detective interview |
+| `questions.md` | Advanced | a quiz show |
+| `revisers.md` | Beginner | a restaurant pass |
+| `revisers.md` | Intermediate | a newsroom |
+| `restrictors.md` | Beginner | a swimming pool |
+| `restrictors.md` | Intermediate | a mountain trail |
 | `spans.md` | Beginner | a rehearsal |
 | `spans.md` | Intermediate | a courtroom |
 | `spans.md` | Advanced | a code review |
-| `numbers.md` | Beginner | unset |
-| `numbers.md` | Intermediate | unset |
-| `numbers.md` | Advanced | unset |
-| `numbers-applied.md` | Intermediate | unset |
-| `comparatives.md` | Beginner | unset |
-| `comparatives.md` | Intermediate | unset |
-| `comparatives.md` | Advanced | unset |
-| `causation.md` | Beginner | unset |
-| `causation.md` | Intermediate | unset |
-| `causation.md` | Advanced | unset |
-| `values.md` | Beginner | unset |
-| `values.md` | Intermediate | unset |
+| `numbers.md` | Beginner | a bakery |
+| `numbers.md` | Intermediate | a sports stadium |
+| `numbers.md` | Advanced | an observatory |
+| `numbers-applied.md` | Intermediate | a pharmacy |
+| `comparatives.md` | Beginner | a racetrack |
+| `comparatives.md` | Intermediate | a weighing room |
+| `comparatives.md` | Advanced | a talent contest |
+| `causation.md` | Beginner | a greenhouse |
+| `causation.md` | Intermediate | a dam control room |
+| `causation.md` | Advanced | a chemistry lab |
+| `values.md` | Beginner | a shelter tent |
+| `values.md` | Intermediate | a monastery |
 | `values.md` | Advanced | unset |
-| `ability.md` | Beginner | unset |
-| `ability.md` | Intermediate | unset |
-| `commentary.md` | Beginner | unset |
-| `commentary.md` | Intermediate | unset |
-| `roles.md` | Beginner | unset |
-| `roles.md` | Intermediate | unset |
-| `x-compounds.md` | Beginner | unset |
-| `x-compounds.md` | Intermediate | unset |
-| `plan-decision.md` | Beginner | unset |
-| `plan-decision.md` | Intermediate | unset |
-| `join-extras.md` | Intermediate | unset |
-| `special-vocabulary.md` | Intermediate | unset |
-| `special-vocabulary.md` | Advanced | unset |
-| `numeric-derivation.md` | Advanced | unset |
+| `ability.md` | Beginner | a climbing wall |
+| `ability.md` | Intermediate | a locked vault |
+| `commentary.md` | Beginner | a café patio |
+| `commentary.md` | Intermediate | a press conference |
+| `roles.md` | Beginner | a construction site |
+| `roles.md` | Intermediate | a harbor |
+| `x-compounds.md` | Beginner | a hardware store |
+| `x-compounds.md` | Intermediate | a front porch |
+| `x-compounds.md` | Advanced | a firehouse |
+| `plan-decision.md` | Beginner | a chess club |
+| `plan-decision.md` | Intermediate | a board meeting |
+| `join-extras.md` | Intermediate | a relay race |
+| `special-vocabulary.md` | Intermediate | a festival |
+| `special-vocabulary.md` | Advanced | a philosophy seminar |
+| `numeric-derivation.md` | Advanced | a foundry |
 
 ## Example root bank
 <a id="root-bank"></a>

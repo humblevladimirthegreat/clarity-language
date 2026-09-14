@@ -151,43 +151,44 @@ Open **-m** leaves other occasions possible: *when raining, among other times*, 
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills on this Beginner band. Try each item before opening **Show answer**.
+Short drills for Beginner. Try each item before opening **Show answer**.
+
+**Setting:** a swimming pool
 
 **Roots used here:**
 
-| English | Agalan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *Uhubun* | `uhubun` | | |
-| *walk* | `awalal` | | |
-| *run* | `urunul` | | |
-| *sing* | `uzunul` | | |
-| *sleep* | `elebel` | | |
-| *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
-| *rain* | `anunul` | | |
-| *night* | `unugul` | | |
-| *haste* | `hadazam` | `adazal` *dash* | 💨: a burst of speed |
-| *quietude* | `howom` | `owol` *owl* | 🦉: the quiet bird |
+| English | Agalan | Same root as |
+|---------|--------|--------------|
+| *Azawan* | `azawan` | |
+| *Ululon* | `ululon` | |
+| *Uhubun* | `uhubun` | |
+| *swim* | `vuzuwul` | |
+| *happy* | `uzumum` | `uzumul` *smile* |
+| *rain* | `anunul` | |
+| *night* | `unugul` | |
+| *fire* | `urel` | |
+| *haste* | `hadazam` | `adazal` *dash* |
+| *quietude* | `howom` | `owol` *owl* |
+| *punch* | `vubunul` | |
 
 #### English → Agalan
 
-**1.** *Azawan walks only when raining.*
+**1.** *Azawan swims only at night.*
 
 ::: details Show answer
-`zazawan vawalal hanunul hal.`
+`zazawan vuzuwul hunugul hal.`
 :::
 
-**2.** *Ululon never runs.*
+**2.** *Ululon never swims.*
 
 ::: details Show answer
-`zululon vurunul hal.`
+`zululon vuzuwul hal.`
 :::
 
-**3.** *Uhubun always sings.*
+**3.** *Uhubun always swims.*
 
 ::: details Show answer
-`zuhubun vuzunul hual.`
+`zuhubun vuzuwul hual.`
 :::
 
 **4.** *Azawan is never happy.*
@@ -196,42 +197,42 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zazawan guzumum wal.`
 :::
 
-**5.** *Ululon runs sometimes.*
+**5.** *Ululon swims sometimes.*
 
 ::: details Show answer
-`zululon vurunul har.`
+`zululon vuzuwul har.`
 :::
 
-**6.** *Azawan walks quickly and quietly.*
+**6.** *Azawan swims quickly and quietly.*
 
 ::: details Show answer
-`zazawan vawalal hadazam howom.`
+`zazawan vuzuwul hadazam howom.`
 :::
 
-**7.** *Uhubun walks anytime.*
+**7.** *Uhubun swims anytime.*
 
 ::: details Show answer
-`zuhubun vawalal hor.`
+`zuhubun vuzuwul hor.`
 :::
 
-**8.** *Azawan always sleeps except when raining.*
+**8.** *Ululon always punches Azawan.*
 
 ::: details Show answer
-`zazawan velebel hanunul hual.`
+`zululon vubunul dazawan hual.`
 :::
 
 #### Agalan → English
 
-**1.** `zululon vawalal hanunul hal.`
+**1.** `zululon vuzuwul hunugul hal.`
 
 ::: details Show answer
-*Ululon walks only when raining.*
+*Ululon swims only at night.*
 :::
 
-**2.** `zazawan vuzunul hal.`
+**2.** `zazawan vuzuwul hal.`
 
 ::: details Show answer
-*Azawan never sings.*
+*Azawan never swims.*
 :::
 
 **3.** `zululon guzumum wual.`
@@ -240,16 +241,16 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Ululon is always happy.*
 :::
 
-**4.** `zuhubun vawalal hur.`
+**4.** `zuhubun vuzuwul hur.`
 
 ::: details Show answer
-*Uhubun walks at some other time.*
+*Uhubun swims at some other time.*
 :::
 
-**5.** `zazawan velebel hanunul hunugul ham.`
+**5.** `zazawan vuzuwul hanunul hunugul ham.`
 
 ::: details Show answer
-*Azawan sleeps when raining and at night, among other times.*
+*Azawan swims when raining and at night, among other times.*
 :::
 
 **6.** `zuhubun guzumum war.`
@@ -258,16 +259,16 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Uhubun is sometimes happy.*
 :::
 
-**7.** `zazawan vawalal hanunul hual.`
+**7.** `zazawan vuzuwul hurel hual.`
 
 ::: details Show answer
-*Azawan always walks except when raining.*
+*Azawan always swims except when there is fire.*
 :::
 
-**8.** `zululon guzumum wor.`
+**8.** `zululon vuzuwul hurel hual.`
 
 ::: details Show answer
-*Ululon is happy anytime.*
+*Ululon always swims except when there is fire.*
 :::
 
 ## Intermediate
@@ -354,123 +355,122 @@ Statement readings below. Asking *when*: [questions.md](questions.md#when).
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills on this Intermediate band. Try each item before opening **Show answer**.
+Short drills for Intermediate. Try each item before opening **Show answer**.
+
+**Setting:** a mountain trail
 
 **Roots used here:**
 
-| English | Agalan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *Uhubun* | `uhubun` | | |
-| *walk* | `awalal` | | |
-| *run* | `urunul` | | |
-| *sing* | `uzunul` | | |
-| *sleep* | `elebel` | | |
-| *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
-| *write* | `uwurul` | | |
-| *rain* | `anunul` | | |
-| *snow* | `ozowol` | | |
-| *night* | `unugul` | | |
-| *home* | `ohohum` | `ohohul` *house* | 🏠: where you live |
-| *emergency* | `amubum` | `amubul` *ambulance* | 🚑: urgent help |
-| *convenience* | `ozorem` | `ozorel` *convenience-store* | 🏪: ready to hand |
-| *repair* | `erebal` | | |
-| *workaround* | `ewenem` | `ewenel` *wrench* | 🔧: a tool that still works |
-| *next clause* | `adorol` | | |
+| English | Agalan | Same root as |
+|---------|--------|--------------|
+| *Azawan* | `azawan` | |
+| *Ululon* | `ululon` | |
+| *Uhubun* | `uhubun` | |
+| *climb* | `vugumul` | |
+| *run* | `vurunul` | |
+| *happy* | `uzumum` | `uzumul` *smile* |
+| *rain* | `anunul` | |
+| *snow* | `ozowol` | |
+| *night* | `unugul` | |
+| *fog* | `avogol` | |
+| *ice* | `ujel` | |
+| *tent* | `edenel` | |
+| *scream* | `vazagal` | |
+| *fall* | `vodowol` | `odowol` *down* |
+| *next clause* | `adorol` | |
 
 #### English → Agalan
 
-**1.** *Azawan walks either when raining or at night, not both.*
+**1.** *Azawan climbs either when raining or at night, not both.*
 
 ::: details Show answer
-`zazawan vawalal hanunul hunugul hol.`
+`zazawan vugumul hanunul hunugul hol.`
 :::
 
-**2.** *Ululon sleeps when raining and/or when snowing.*
+**2.** *Ululon runs when raining and/or when snowing.*
 
 ::: details Show answer
-`zululon velebel hanunul hozowol haol.`
+`zululon vurunul hanunul hozowol haol.`
 :::
 
-**3.** *Uhubun does not walk when raining.*
+**3.** *Uhubun does not climb when there is fog.*
 
 ::: details Show answer
-`zuhubun vawalal hanunul hul.`
+`zuhubun vugumul havogol hul.`
 :::
 
-**4.** *Azawan walks anytime except when raining.*
+**4.** *Azawan climbs anytime except when snowing.*
 
 ::: details Show answer
-`zazawan vawalal hanunul huol.`
+`zazawan vugumul hozowol huol.`
 :::
 
-**5.** *Azawan walks preferably in an emergency rather than for convenience.*
+**5.** *Azawan climbs preferably when raining rather than when snowing.*
 
 ::: details Show answer
-`zazawan vawalal hamubum hozorem hel.`
+`zazawan vugumul hanunul hozowol hel.`
 :::
 
-**6.** *Azawan writes if a fix, else if a workaround.*
+**6.** *Azawan climbs if ice, else if fog.*
 
 ::: details Show answer
-`zazawan vuwurul herebal hewenem hoel.`
+`zazawan vugumul hujel havogol hoel.`
 :::
 
-**7.** *Uhubun sings if Azawan walks.*
-
-::: details Show answer
-`zuhubun vuzunul hadorom zazawan vawalal badorol.`
-:::
-
-**8.** *Azawan is happy either when raining or at night, not both.*
+**7.** *Azawan is happy either when raining or at night, not both.*
 
 ::: details Show answer
 `zazawan guzumum wanunul wunugul wol.`
 :::
 
+**8.** *Uhubun screams if Ululon falls.*
+
+::: details Show answer
+`zuhubun vazagal hadorom zululon vodowol badorol.`
+:::
+
 #### Agalan → English
 
-**1.** `zululon velebel hanunul hunugul hom.`
+**1.** `zululon vugumul hanunul hunugul hom.`
 
 ::: details Show answer
-*Ululon sleeps either when raining or at night, or never.*
+*Ululon climbs either when raining or at night, or never.*
 :::
 
-**2.** `zululon vurunul hanunul hozowol hael.`
+**2.** `zululon vugumul hanunul hozowol hael.`
 
 ::: details Show answer
-*Ululon runs as often when raining as when snowing.*
+*Ululon climbs as often when raining as when snowing.*
 :::
 
-**3.** `zazawan velebel hohohum hal.`
+**3.** `zazawan vugumul hedenel hal.`
 
 ::: details Show answer
-*Azawan sleeps only at home.*
+*Azawan climbs only at the tent.*
 :::
 
-**4.** `zululon vawalal hanunul hozowol har.`
+**4.** `zululon vurunul hanunul hozowol har.`
 
 ::: details Show answer
-*Ululon walks sometimes among rain or snow.*
+*Ululon runs sometimes among rain or snow.*
 :::
 
-**5.** `zazawan vawalal hael.`
+**5.** `zazawan vugumul hael.`
 
 ::: details Show answer
-*Azawan walks equally often.*
+*Azawan climbs equally often.*
 :::
 
-**6.** `zuhubun vurunul hanunul hul.`
+**6.** `zuhubun vugumul havogol hul.`
 
 ::: details Show answer
-*Uhubun does not run when raining.*
+*Uhubun does not climb when there is fog.*
 :::
 
-**7.** `zazawan vuzunul hadorom zululon vawalal badorol.`
+**7.** `zazawan vazagal hadorom zululon vodowol badorol.`
 
 ::: details Show answer
-*Azawan sings if Ululon walks.*
+*Azawan screams if Ululon falls.*
 :::
 
 **8.** `zululon guzumum wanunul wunugul wol.`

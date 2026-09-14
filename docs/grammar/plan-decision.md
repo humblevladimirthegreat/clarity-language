@@ -61,6 +61,8 @@ To say **what will happen** in the world (rain, a result), not what someone mean
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
+**Setting:** a chess club
+
 **Roots used here:**
 
 | English | Agalan | Same root as |
@@ -68,81 +70,90 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` | |
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
-| **PLAN** | `howoram` | `oworal` *world-map* |
+| **PLAN** (sketch) | `howoram` | `oworal` *world-map* |
 | **PREDICT** | `helezom` | `elezol` *telescope* |
-| *write* | `uwurul` | |
-| *sing* | `uzunul` | |
+| *sit* | `vajul` | `ajul` *chair* |
+| *pawn* | `egezal` | |
+| *see* | `vejel` | `ejel` *eye* |
 | *tell* | `vezehel` | `ezehel` *speech* |
-| *rain* | `anunul` | |
+| *punch* | `vubunul` | |
+| *scream* | `vazagal` | |
+| *fight* | `vuvugul` | |
 
 #### English → Agalan
 
-**1.** *Azawan means to write.* (direction only)
+**1.** *Azawan means to sit.* (direction only)
 
 ::: details Show answer
-`zazawan howoram vuwurul.`
+`zazawan howoram vajul.`
 :::
 
-**2.** *Ululon’s itinerary is to sing.*
+**2.** *Ululon means to see a pawn.*
 
 ::: details Show answer
-`zululon howoral vuzunul.`
+`zululon howoram degezal vejel.`
 :::
 
-**3.** *If that path fails, Uhubun will tell Azawan.* (backup course)
-
-::: details Show answer
-`zuhubun howorar dazawan vezehel.`
-:::
-
-**4.** *Forecast: it rains.*
-
-::: details Show answer
-`helezom vanunul.`
-:::
-
-**5.** *Uhubun means to sing.* (direction only)
-
-::: details Show answer
-`zuhubun howoram vuzunul.`
-:::
-
-**6.** *Azawan’s itinerary is to tell Uhubun.*
+**3.** *Azawan’s itinerary is to tell Uhubun.*
 
 ::: details Show answer
 `zazawan howoral duhubun vezehel.`
 :::
 
-**7.** *Ululon means to write.* (direction only)
+**4.** *Forecast: Azawan sits.*
 
 ::: details Show answer
-`zululon howoram vuwurul.`
+`zazawan helezom vajul.`
+:::
+
+**5.** *Uhubun’s itinerary is to see Azawan.*
+
+::: details Show answer
+`zuhubun howoral dazawan vejel.`
+:::
+
+**6.** *If that path fails, Ululon will punch Azawan.* (backup course)
+
+::: details Show answer
+`zululon howorar dazawan vubunul.`
+:::
+
+**7.** *Forecast: Ululon screams.*
+
+::: details Show answer
+`zululon helezom vazagal.`
+:::
+
+**8.** *If that path fails, Ululon will fight.*
+
+::: details Show answer
+`zululon howorar vuvugul.`
 :::
 
 #### Agalan → English
 
-**1.** `zululon howoram vuzunul.`
+**1.** `zululon howoram vajul.`
 
 ::: details Show answer
-*Ululon means to sing.*
+*Ululon means to sit.*
 :::
 
-**2.** `zazawan howoral vuwurul.`
+**2.** `zazawan howoram degezal vejel.`
 
 ::: details Show answer
-*Azawan’s itinerary is to write.*
+*Azawan means to see a pawn.*
 :::
 
-**3.** `zuhubun howorar vuzunul.`
+**3.** `zuhubun howoral dazawan vezehel.`
 
 ::: details Show answer
-*If that path fails, Uhubun will sing.*
+*Uhubun’s itinerary is to tell Azawan.*
 :::
 
-**4.** `helezom vuwurul.`
+**4.** `helezom vajul.`
 
 ::: details Show answer
-*Forecast: someone writes.*
+*Forecast: someone sits.*
 :::
 
 **5.** `zazawan howoram duhubun vezehel.`
@@ -151,16 +162,22 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 *Azawan means to tell Uhubun.*
 :::
 
-**6.** `zululon howoral dazawan vezehel.`
+**6.** `zululon howoral degezal vejel.`
 
 ::: details Show answer
-*Ululon’s itinerary is to tell Azawan.*
+*Ululon’s itinerary is to see a pawn.*
 :::
 
-**7.** `zuhubun howoram vuwurul.`
+**7.** `zuhubun howorar vazagal.`
 
 ::: details Show answer
-*Uhubun means to write.*
+*If that path fails, Uhubun will scream.*
+:::
+
+**8.** `helezom vuvugul.`
+
+::: details Show answer
+*Forecast: someone fights.*
 :::
 
 ## Intermediate
@@ -219,6 +236,8 @@ When you mark **how** you forecast (a usual pattern, an inference, and so on), k
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
+**Setting:** a board meeting
+
 **Roots used here:**
 
 | English | Agalan | Same root as |
@@ -226,101 +245,118 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` | |
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
-| **PLAN** | `howoram` | `oworal` *world-map* |
+| **PLAN** (itinerary) | `howoral` | `oworal` *world-map* |
 | **PREDICT** | `helezom` | `elezol` *telescope* |
-| **DECISION** | `hegegem` | `egegel` *check* |
-| *walk* | `awalal` | |
-| *write* | `uwurul` | |
-| *rain* | `anunul` | |
-| *pattern* | `habawam` | `abawal` *paw-prints* |
-| *book* | `abogol` | |
+| **DECISION** (modifiable) | `hegegem` | `egegel` *check* |
+| *sit* | `vajul` | `ajul` *chair* |
+| *tell* | `vezehel` | `ezehel` *speech* |
+| *write* | `vuwurul` | |
+| *see* | `vejel` | `ejel` *eye* |
+| *clipboard* | `ugubol` | |
+| *pen* | `abenel` | |
+| *from the pattern* | `habawam` | `abawal` *paw-prints* |
+| *punch* | `vubunul` | |
+| *scream* | `vazagal` | |
+| *fight* | `vuvugul` | |
 
 #### English → Agalan
 
-**1.** *Ululon has decided to walk, and can still change that.*
+**1.** *Ululon has decided to sit, still open to revision.*
 
 ::: details Show answer
-`zululon hegegem vawalal.`
+`zululon hegegem vajul.`
 :::
 
-**2.** *Uhubun has decided for good to write.*
+**2.** *Azawan has decided to tell Uhubun, still open to revision.*
 
 ::: details Show answer
-`zuhubun hegegel vuwurul.`
+`zazawan hegegem duhubun vezehel.`
 :::
 
-**3.** *From the usual pattern, it will rain.*
+**3.** *Uhubun has decided for now to write.*
 
 ::: details Show answer
-`helezom habawam vanunul.`
+`zuhubun hegeger vuwurul.`
 :::
 
-**4.** *Azawan’s itinerary is to walk, and the pick is settled.*
+**4.** *From the usual pattern, Ululon sits.*
 
 ::: details Show answer
-`zazawan howoral hegegel vawalal.`
+`zululon helezom habawam vajul.`
 :::
 
-**5.** *Azawan has decided for now to write.*
+**5.** *Azawan’s itinerary is to sit, and the pick is settled.*
 
 ::: details Show answer
-`zazawan hegeger vuwurul.`
+`zazawan howoral hegegel vajul.`
 :::
 
-**6.** *Ululon has decided to write a book, still open to revision.*
+**6.** *Ululon has decided for now to see a clipboard.*
 
 ::: details Show answer
-`zululon hegegem dabogol vuwurul.`
+`zululon hegeger dugubol vejel.`
 :::
 
-**7.** *Uhubun has decided for good to walk.*
+**7.** *Ululon has decided for good to punch Azawan.*
 
 ::: details Show answer
-`zuhubun hegegel vawalal.`
+`zululon hegegel dazawan vubunul.`
+:::
+
+**8.** *Ululon has decided for good to fight.*
+
+::: details Show answer
+`zululon hegegel vuvugul.`
 :::
 
 #### Agalan → English
 
-**1.** `zazawan hegegem vuwurul.`
+**1.** `zazawan hegegem vajul.`
 
 ::: details Show answer
-*Azawan has decided to write, still open to revision.*
+*Azawan has decided to sit, still open to revision.*
 :::
 
-**2.** `zululon hegegel vawalal.`
+**2.** `zululon hegegel vuwurul.`
 
 ::: details Show answer
-*Ululon has decided for good to walk.*
+*Ululon has decided for good to write.*
 :::
 
-**3.** `helezom habawam vawalal.`
+**3.** `helezom habawam vezehel.`
 
 ::: details Show answer
-*Forecast from pattern: someone walks.*
+*Forecast from pattern: someone tells.*
 :::
 
-**4.** `zuhubun hegeger vuwurul.`
+**4.** `zuhubun hegeger vajul.`
 
 ::: details Show answer
-*Uhubun has decided for now to write.*
+*Uhubun has decided for now to sit.*
 :::
 
-**5.** `zululon hegeger vawalal.`
+**5.** `zazawan hegeger dabenel vejel.`
 
 ::: details Show answer
-*Ululon has decided for now to walk.*
+*Azawan has decided for now to see a pen.*
 :::
 
-**6.** `zazawan howoral hegegel vuwurul.`
+**6.** `zululon howoral hegegel duhubun vezehel.`
 
 ::: details Show answer
-*Azawan’s itinerary is to write, and the pick is settled.*
+*Ululon’s itinerary is to tell Uhubun, and the pick is settled.*
 :::
 
-**7.** `zuhubun hegegem dabogol vuwurul.`
+**7.** `zululon hegeger dazawan vubunul.`
 
 ::: details Show answer
-*Uhubun has decided to write a book, still open to revision.*
+*Ululon has decided for now to punch Azawan.*
+:::
+
+**8.** `zuhubun hegegel vazagal.`
+
+::: details Show answer
+*Uhubun has decided for good to scream.*
 :::
 
 ## See also

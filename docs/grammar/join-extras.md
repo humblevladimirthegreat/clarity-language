@@ -75,53 +75,58 @@ For several members or an empty domain, put a [phrase join](joins.md) **inside**
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills on this Intermediate band. Try each item before opening **Show answer**. Name a **join-act** (`van` / `von` / …) when someone *does* the move to an object; name a **join-relation** (`gan` / `han` / … plus one `/b/`) when a host is framed *including* / *without* / *prioritizing* something.
+Short drills for Intermediate. Try each item before opening **Show answer**.
+
+**Setting:** a relay race
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *Azawan* | `azawan` |
-| *Ululon* | `ululon` |
-| *Uhubun* | `uhubun` |
-| *walk* | `awalal` |
-| *sing* | `uzunul` |
-| *apple* | `abelel` |
-| *tea* | `adedal` |
-| *peanut* | `abanul` |
-| *birthday-cake* | `uragel` |
-| *team* | `ahadal` |
+| English | Agalan | Same root as |
+|---------|--------|--------------|
+| *Azawan* | `azawan` | |
+| *Ululon* | `ululon` | |
+| *Uhubun* | `uhubun` | |
+| *start* | `alalom` | `alalol` *play* |
+| *finish* | `egedam` | `egedal` *checkered-flag* |
+| *hand* | `ahanal` | |
+| *team* | `ahadam` | `ahadal` *handball* |
+| *trophy* | `odobol` | |
+| *medal* | `emedal` | |
+| *run* | `vurunul` | |
+| *punch* | `vubunul` | |
+| *scream* | `vazagal` | |
+| *lie* | `ululel` | |
 
 #### English → Agalan
 
-**1.** *Ululon includes tea.*
+**1.** *Azawan includes the start.*
 
 ::: details Show answer
-`zululon dadedal van.`
+`zazawan dalalom van.`
 :::
 
-**2.** *Cake including peanuts.*
+**2.** *Finish including Uhubun.*
 
 ::: details Show answer
-`zuragel gan babanul.`
+`zegedam gan buhubun.`
 :::
 
-**3.** *Azawan chooses an apple (as the one choice).*
+**3.** *Azawan chooses the hand (as the one choice).*
 
 ::: details Show answer
-`zazawan dabelel von.`
+`zazawan dahanal von.`
 :::
 
-**4.** *Ululon walks with Uhubun.*
+**4.** *Ululon runs with Uhubun.*
 
 ::: details Show answer
-`zululon han buhubun vawalal.`
+`zululon han buhubun vurunul.`
 :::
 
-**5.** *Azawan excludes peanuts.*
+**5.** *Azawan excludes the medal.*
 
 ::: details Show answer
-`zazawan dabanul vuan.`
+`zazawan demedal vuan.`
 :::
 
 **6.** *A team exclusive for Uhubun.*
@@ -130,36 +135,42 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zahadam gon buhubun.`
 :::
 
-**7.** *Azawan bars the apple (anything else is fine).*
+**7.** *Ululon bars the finish (anything else is fine).*
 
 ::: details Show answer
-`zazawan dabelel vuon.`
+`zululon degedam vuon.`
+:::
+
+**8.** *Ululon punches, refusing the hand.*
+
+::: details Show answer
+`zululon hun bahanal vubunul.`
 :::
 
 #### Agalan → English
 
-**1.** `zuhubun dabelel van.`
+**1.** `zuhubun dalalom van.`
 
 ::: details Show answer
-*Uhubun includes an apple.*
+*Uhubun includes the start.*
 :::
 
-**2.** `zuragel guan babanul.`
+**2.** `zegedam guan bemedal.`
 
 ::: details Show answer
-*Cake without peanuts.*
+*Finish without the medal.*
 :::
 
-**3.** `zululon dadedal von.`
+**3.** `zululon dodobol von.`
 
 ::: details Show answer
-*Ululon chooses tea (as the one choice).*
+*Ululon chooses the trophy (as the one choice).*
 :::
 
-**4.** `zazawan han bululon vawalal.`
+**4.** `zazawan han bululon vurunul.`
 
 ::: details Show answer
-*Azawan walks with Ululon.*
+*Azawan runs with Ululon.*
 :::
 
 **5.** `zahadam gan bazawan.`
@@ -168,16 +179,22 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *A team including Azawan.*
 :::
 
-**6.** `zazawan hun babanul vuzunul.`
+**6.** `zazawan hun bululel vurunul.`
 
 ::: details Show answer
-*Azawan sings, refusing peanuts.*
+*Azawan runs, refusing a lie.*
 :::
 
 **7.** `zahadam gaon bazawan.`
 
 ::: details Show answer
 *A team open to Azawan (more members may follow).*
+:::
+
+**8.** `zululon huon buhubun vazagal.`
+
+::: details Show answer
+*Ululon screams, barring Uhubun.*
 :::
 
 ## See also

@@ -162,41 +162,44 @@ A *…, yes?* confirm tag is its own next turn: finish the statement with a peri
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
+**Setting:** a lost-and-found
+
 **Roots used here:**
 
-| English | Agalan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *Uhubun* | `uhubun` | | |
-| *dog* | `odogol` | | |
-| *walk* | `vawalal` | | |
-| *sleep* | `velebel` | | |
-| *sing* | `vuzunul` | | |
-| *write* | `vuwurul` | | |
-| *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
-| *sit* | `vajul` | `ajul` *chair* | sitting is what a chair is for |
-| *tell* | `vezehel` | `ezehel` *speech* | telling is what speech does |
-| *happy* | `uzumum` | | |
+| English | Agalan | Same root as |
+|---------|--------|--------------|
+| *Azawan* | `azawan` | |
+| *Ululon* | `ululon` | |
+| *Uhubun* | `uhubun` | |
+| *umbrella* | `umubul` | |
+| *coat* | `ojal` | |
+| *key* | `agegol` | |
+| *purse* | `uburel` | |
+| *write* | `vuwurul` | |
+| *see* | `vejel` | `ejel` *eye* |
+| *sit* | `vajul` | `ajul` *chair* |
+| *tell* | `vezehel` | `ezehel` *speech* |
+| *punch* | `vubunul` | |
+| *lie* | `vululel` | |
 
 #### English → Agalan
 
-**1.** *Does Azawan walk?*
+**1.** *Does Azawan sit?*
 
 ::: details Show answer
-`jol zazawan vawalal?`
+`jol zazawan vajul?`
 :::
 
-**2.** *Who sees Uhubun?*
+**2.** *Who sees the umbrella?*
 
 ::: details Show answer
-`jol zar vejel duhubun?`
+`jol zar vejel dumubul?`
 :::
 
-**3.** *Is Ululon sleeping, I wonder?*
+**3.** *Is Ululon writing, I wonder?*
 
 ::: details Show answer
-`jom zululon velebel?`
+`jom zululon vuwurul?`
 :::
 
 **4.** *Who sees what?*
@@ -205,22 +208,22 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 `jol zar vejel dar?`
 :::
 
-**5.** *Azawan walks. Yes.* (confirm as a second turn)
+**5.** *Who else sees the coat?*
 
 ::: details Show answer
-`zazawan vawalal. jael.`
+`jol zur vejel dojal?`
 :::
 
-**6.** *No.* / *False.* (polar, not “don’t”)
+**6.** *Azawan tells Uhubun. Yes.* (confirm as a second turn)
+
+::: details Show answer
+`zazawan vezehel duhubun. jael.`
+:::
+
+**7.** *No.* / *False.* (polar, not “don’t”)
 
 ::: details Show answer
 `juel.`
-:::
-
-**7.** *Who else sings?*
-
-::: details Show answer
-`jol zur vuzunul?`
 :::
 
 **8.** *Sure.* / *I’ll take that.*
@@ -231,10 +234,10 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 #### Agalan → English
 
-**1.** `jom zuhubun vajul?`
+**1.** `jom zuhubun vejel dagegol?`
 
 ::: details Show answer
-*Is Uhubun sitting, I wonder?*
+*Is Uhubun seeing the key, I wonder?*
 :::
 
 **2.** `jol zar vuwurul?`
@@ -243,16 +246,16 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 *Who writes?*
 :::
 
-**3.** `jol zal vawalal?`
+**3.** `jol zal vajul?`
 
 ::: details Show answer
-*Does nobody walk?*
+*Does nobody sit?*
 :::
 
-**4.** `jul vurunul.`
+**4.** `jol zar vezehel dar?`
 
 ::: details Show answer
-*Don’t run.*
+*Who tells what?*
 :::
 
 **5.** `jaem.`
@@ -261,22 +264,22 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 *I think so.* / *Yeah.*
 :::
 
-**6.** `jol zar vezehel dar?`
-
-::: details Show answer
-*Who tells what?*
-:::
-
-**7.** `zululon.`
+**6.** `ululon.`
 
 ::: details Show answer
 *Ululon.* (just the fill)
 :::
 
-**8.** `zuhubun guzumum. jael.`
+**7.** `jul vubunul.`
 
 ::: details Show answer
-*Uhubun is happy. Yes.*
+*Don’t punch.*
+:::
+
+**8.** `zululon vululel. jael.`
+
+::: details Show answer
+*Ululon lies. Yes.*
 :::
 
 ## Intermediate
@@ -378,27 +381,29 @@ A *yes/no* question can put a join ending on a **named** item instead of a fill-
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
+**Setting:** a detective interview
+
 **Roots used here:**
 
-| English | Agalan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *Uhubun* | `uhubun` | | |
-| *book* | `abogol` | | |
-| *house* | `ohohul` | | |
-| *happy* | `uzumum` | | |
-| *sit* | `vajul` | `ajul` *chair* | sitting is what a chair is for |
-| *tell* | `vezehel` | `ezehel` *speech* | telling is what speech does |
-| *run* | `vurunul` | | |
-| *sleep* | `velebel` | | |
+| English | Agalan | Same root as |
+|---------|--------|--------------|
+| *Azawan* | `azawan` | |
+| *Ululon* | `ululon` | |
+| *Uhubun* | `uhubun` | |
+| *key* | `agegol` | |
+| *phone* | `onel` | |
+| *sit* | `vajul` | `ajul` *chair* |
+| *tell* | `vezehel` | `ezehel` *speech* |
+| *attest* | `vadezel` | |
+| *lie* | `vululel` | |
+| *punch* | `vubunul` | |
 
 #### English → Agalan
 
-**1.** *Didn’t Azawan run?* Then confirm: *true, Azawan didn’t.*
+**1.** *Didn’t Azawan tell?* Then confirm: *true, Azawan didn’t.*
 
 ::: details Show answer
-`jol zazawan vul vurunul?`
+`jol zazawan vul vezehel?`
 `jael.`
 :::
 
@@ -408,10 +413,10 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 `jol zuhubun vajul har?`
 :::
 
-**3.** *Which book?* (one unknown)
+**3.** *Which key?* (one unknown)
 
 ::: details Show answer
-`jol zabogol zar?`
+`jol zagegol zar?`
 :::
 
 **4.** *Just Ululon?* (confirm the singleton)
@@ -446,10 +451,10 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### Agalan → English
 
-**1.** `jael vul velebel.`
+**1.** `jael vul vadezel.`
 
 ::: details Show answer
-*True: (they) didn’t sleep.*
+*True: didn’t attest.*
 :::
 
 **2.** `jol hur?`
@@ -464,10 +469,10 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *What did they do?*
 :::
 
-**4.** `jol dohohul zor?`
+**4.** `jol donel zor?`
 
 ::: details Show answer
-*Any house?*
+*Any phone?*
 :::
 
 **5.** `jol zazawan zul?`
@@ -482,16 +487,16 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *Not that.* (soft reject of this option)
 :::
 
-**7.** `juel vurunul.`
+**7.** `juel vululel.`
 
 ::: details Show answer
-*False: (they) did run.*
+*False: did lie.*
 :::
 
-**8.** `jol zar vezehel zuhubun?`
+**8.** `jol zar vezehel zuhubun har?`
 
 ::: details Show answer
-*Who tells Uhubun?*
+*Who tells Uhubun when?*
 :::
 
 ## Advanced
@@ -589,17 +594,18 @@ Under question, the rest of the single-item and standalone join map is confirm /
 
 Short drills for Advanced. Try each item before opening **Show answer**.
 
+**Setting:** a quiz show
+
 **Roots used here:**
 
-| English | Agalan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *Uhubun* | `uhubun` | | |
-| *book* | `abogol` | | |
-| *house* | `ohohul` | | |
-| *blue* | `elulul` | | |
-| *red* | `aredel` | | |
+| English | Agalan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Ululon* | `ululon` |
+| *Uhubun* | `uhubun` |
+| *trophy* | `odobol` |
+| *bell* | `obelel` |
+| *clap* | `agabal` |
 
 #### English → Agalan
 
@@ -627,10 +633,10 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 `jol zael?`
 :::
 
-**5.** *Is the book enough?*
+**5.** *Is the trophy enough?*
 
 ::: details Show answer
-`jol zabogol zaol?`
+`jol zodobol zaol?`
 :::
 
 #### Agalan → English
@@ -647,10 +653,10 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 *no / false* (truth flip). *not that* (reject this option).
 :::
 
-**3.** `jol zohohul zual?`
+**3.** `jol zobelel zual?`
 
 ::: details Show answer
-*Everything but the house?*
+*Everything but the bell?*
 :::
 
 **4.** `jol zoel?`
@@ -659,10 +665,10 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 *Do nothing?* / *Skip it?*
 :::
 
-**5.** `jol zelulul zaredel zel?`
+**5.** `jol zagabal zodobol zel?`
 
 ::: details Show answer
-*Blue before red?* (closed rank of those two)
+*Clap before trophy?* (closed rank of those two)
 :::
 
 ## See also

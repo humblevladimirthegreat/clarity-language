@@ -272,85 +272,87 @@ Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`zahaxre
 ### Translation practice
 <a id="translation-practice-advanced"></a>
 
-Short drills on this Advanced band. Try each item before opening **Show answer**. `ROOT x NUM` names a **kind property** (essence, grain, quasi, part-count, order-kind, catalog code): spelled CV plus the **host** ending.
+Short drills for Advanced. Try each item before opening **Show answer**.
+
+**Setting:** a foundry
 
 **Roots used here:**
 
-| English | Agalan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *Uhubun* | `uhubun` | | |
-| *love* | `olovel` | | |
-| *friend* | `eberelonogol` | | 🪢 on *person*: a bond that holds |
-| *commitment* | `abenel` | `abenel` *pen* | 🖊️: ink stays on the page |
-| *draft* | `ebegul` | `ebegul` *pencil* | ✏️: marks you can still erase |
-| *specimen* | `edudul` | `edudul` *petri-dish* | 🧫: a sample under study |
-| *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
-| *write* | `uwurul` | | |
+| English | Agalan | Same root as |
+|---------|--------|--------------|
+| *Azawan* | `azawan` | |
+| *Ululon* | `ululon` | |
+| *Uhubun* | `uhubun` | |
+| *gold* | `ologol` | |
+| *fire* | `urel` | |
+| *factory* | `avagal` | |
+| *hammer* | `vahamel` | `ahamel` *hammer* |
+| *pour* | `vorurul` | `orurul` *pour* |
+| *see* | `vejel` | `ejel` *eye* |
+| *melt* | `vemelel` | `emelel` *melt* |
 
 #### English → Agalan
 
-**1.** *Ululon sees a grain of love.*
+**1.** *Azawan hammers a grain of gold.*
 
 ::: details Show answer
-`zululon dolovexrabul vejel.`
+`zazawan dologoxrabul vahamel.`
 :::
 
-**2.** *Azawan is a quasi-friend.*
+**2.** *Uhubun sees a primary factory.*
 
 ::: details Show answer
-`zazawan geberelonogoxrubul.`
+`zuhubun davagaxrawol vejel.`
 :::
 
-**3.** *Uhubun sees mutual commitment.*
+**3.** *Azawan pours a quasi-gold.*
 
 ::: details Show answer
-`zuhubun dabenexradul vejel.`
+`zazawan dologoxrubul vorurul.`
 :::
 
-**4.** *Azawan writes a first-draft.*
+**4.** *Ululon hammers a first-order fire.*
 
 ::: details Show answer
-`zazawan debeguxrewol vuwurul.`
+`zululon durexrewol vahamel.`
 :::
 
-**5.** *Ululon sees specimen #1.*
+**5.** *Ululon annihilates the gold-kind.*
 
 ::: details Show answer
-`zululon deduduxrowol vejel.`
+`zululon vologoxrazobal.`
 :::
 
 #### Agalan → English
 
-**1.** `zuhubun dolovexrabal vejel.`
+**1.** `zuhubun dologoxrabal vejel.`
 
 ::: details Show answer
-*Uhubun sees the essence of love.*
+*Uhubun sees the essence of gold.*
 :::
 
-**2.** `zuhubun veberelonogoxrubul.`
+**2.** `zazawan durexrebul vejel.`
 
 ::: details Show answer
-*Uhubun quasi-befriends / treats as friend-shaped.*
+*Azawan sees fire in its beginning form.*
 :::
 
-**3.** `zazawan dabenexrudul vejel.`
+**3.** `zululon dahamexrudul vejel.`
 
 ::: details Show answer
-*Azawan sees one-sided commitment.*
+*Ululon sees a one-sided hammer.*
 :::
 
-**4.** `zululon debeguxredum vuwurul.`
+**4.** `zululon vemelexruzol.`
 
 ::: details Show answer
-*Ululon writes a second-draft.*
+*Ululon refuses to zero the melt.*
 :::
 
-**5.** `zuhubun deduduxrol vejel.`
+**5.** `zululon vurexrezobal.`
 
 ::: details Show answer
-*Uhubun sees a coded specimen.*
+*Ululon disqualifies the fire-kind.*
 :::
 
 ## See also

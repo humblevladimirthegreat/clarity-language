@@ -159,11 +159,14 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *halt* | `vozodol` |
 | *Uzugon* | `uzugon` |
 | *melody* | `uzugol` |
-| *book* | `abogol` |
 | *blue* | `elulul` |
 | *happy* | `huzumum` |
 | *sushi* | <code>d&lt;sushi&gt;l</code> |
 | *Sam* | <code>&lt;Sam&gt;n</code> |
+
+#### English → Agalan
+
+**1.** *Azawan said “Azawan.”* (hello)
 
 ::: details Show answer
 `zazawan d[azawan] vezehel.`
@@ -175,10 +178,10 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 `zululon d~[zazawan vuzunul] vuwurul.`
 :::
 
-**3.** *The word “book” is blue.*
+**3.** *The word “melody” is blue.*
 
 ::: details Show answer
-`z{abogo} gelulul.`
+`z{uzugo} gelulul.`
 :::
 
 **4.** *Azawan saw sushi.* (ordinary loan object)
@@ -219,10 +222,10 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 *Ululon saw sushi.* (opaque surface)
 :::
 
-**2.** `zazawan d{abogo} vezehel.`
+**2.** `zazawan d{uzugo} vezehel.`
 
 ::: details Show answer
-*Azawan said the word “book.”*
+*Azawan said the word “melody.”*
 :::
 
 **3.** `zuhubun d@{uzugo} vuwurul.`
@@ -433,27 +436,31 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Ululon* | `ululon` |
 | *Uhubun* | `uhubun` |
 | *tell* | `vezehel` |
-| *sing* | `uzunul` |
 | *see* | `vejel` |
-| *run* | `vurunul` |
-| *dog* | `odogol` |
-| *red* | `aredel` |
-| *book* | `abogol` |
-| *Abogon* | `abogon` |
+| *attest* | `vadezel` |
+| *lie* | `vululel` |
+| *the lie* | `ululel` |
+| *scream* | `vazagal` |
+| *punch* | `vubunul` |
+| *judge* | `ujudul` |
+| *the Judge* | `ujudun` |
 | *blue* | `elulul` |
 | *happy* | `huzumum` |
 | *possibility* | `huzurem` |
-| *Uzugon* | `uzugon` |
-| *sushi* | <code>d&lt;sushi&gt;</code> |
+| *FBI* | <code>duxol FBI</code> |
+
+#### English → Agalan
+
+**1.** *Azawan said “Azawan.”* (spoken atomic cite)
 
 ::: details Show answer
 `zazawan daxol azawan vezehel.`
 :::
 
-**2.** *Ululon said “Azawan sings.”* (spoken multi-token cite)
+**2.** *Ululon said “Azawan attests.”* (spoken multi-token cite)
 
 ::: details Show answer
-`zululon daxal zazawan vuzunul xuxul vezehel.`
+`zululon daxal zazawan vadezel xuxul vezehel.`
 :::
 
 **3.** *Uhubun said that.* (spoken cite resume)
@@ -468,10 +475,10 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 `zazawan daxul vezehel.`
 :::
 
-**5.** *Ululon saw sushi.* (spoken atomic opaque)
+**5.** *Ululon saw FBI.* (spoken atomic opaque)
 
 ::: details Show answer
-`zululon duxol sushi vejel.`
+`zululon duxol FBI vejel.`
 :::
 
 **6.** *Azawan said “Azawan” (happily).* (cite nesting an aside)
@@ -480,16 +487,16 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 `zazawan d[ h(huzumum) azawan ] vezehel.`
 :::
 
-**7.** *Azawan saw, as a possibility, the red dog.* (*possibility* targets that chunk)
+**7.** *Azawan saw, as a possibility, the lie.* (*possibility* targets that chunk)
 
 ::: details Show answer
-`zazawan ^ huzurem zodogol garedel ^ vejel.`
+`zazawan ^ huzurem dululel ^ vejel.`
 :::
 
-**8.** *Uhubun and (just a dog) ran.*
+**8.** *Ululon and (just Azawan) punched.*
 
 ::: details Show answer
-`zuhubun ^ zodogol zal ^ zam vurunul.`
+`zululon ^ zazawan zal ^ zam vubunul.`
 :::
 
 #### Agalan → English
@@ -500,10 +507,10 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *Ululon said “Azawan.”* (hello)
 :::
 
-**2.** `zazawan daxam zazawan vuzunul xuxul vezehel.`
+**2.** `zazawan daxam zazawan vadezel xuxul vezehel.`
 
 ::: details Show answer
-*Azawan said something like “Azawan sings.”*
+*Azawan said something like “Azawan attests.”*
 :::
 
 **3.** `zaxur gelulul.`
@@ -512,10 +519,10 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *That (cite) is blue.*
 :::
 
-**4.** `zuhubun daxon uzugon vuzunul.`
+**4.** `zuhubun daxon ujudu vezehel.`
 
 ::: details Show answer
-*Uhubun sang “Uzugon.”*
+*Uhubun said “Ujudu.”*
 :::
 
 **5.** `zazawan vezehel hexol huzumum.`
@@ -524,22 +531,22 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *Azawan tells (happily).*
 :::
 
-**6.** `zululon d[ z{abogo} ] vezehel.`
+**6.** `zululon d[ z{ujudu} ] vezehel.`
 
 ::: details Show answer
-*Ululon said the word “book.”*
+*Ululon said the word “judge.”*
 :::
 
-**7.** `zululon ^ huzurem zodogol garedel ^ vejel.`
+**7.** `zululon ^ huzurem dululel ^ vejel.`
 
 ::: details Show answer
-*Ululon saw, as a possibility, the red dog.*
+*Ululon saw, as a possibility, the lie.*
 :::
 
-**8.** `zabogon gelulul.`
+**8.** `zujudun vazagal.`
 
 ::: details Show answer
-*Abogon is blue.*
+*The Judge screamed.*
 :::
 
 ## Advanced
@@ -645,26 +652,27 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *Uhubun* | `uhubun` |
 | *tell* | `vezehel` |
 | *write* | `vuwurul` |
+| *bug* | `abugum` |
 | *happy* | `huzumum` |
 
 #### English → Agalan
 
-**1.** *Ululon said “Azawan…”* (the cite trails off)
+**1.** *Uhubun said “bug.”* (complete close of one span)
 
 ::: details Show answer
-`zululon daxal azawan xuxur vezehel.`
+`zuhubun daxal abugum xuxul vezehel.`
 :::
 
-**2.** *Uhubun said “Azawan.”* (complete close of one span)
+**2.** *Ululon said “bug…”* (the cite trails off)
 
 ::: details Show answer
-`zuhubun daxal azawan xuxul vezehel.`
+`zululon daxal abugum xuxur vezehel.`
 :::
 
-**3.** *Azawan said “Azawan” (happily), then close every open span at once.*
+**3.** *Azawan said “bug” (happily), then close every open span at once.*
 
 ::: details Show answer
-`zazawan daxal hexol huzumum azawan xuxum vezehel.`
+`zazawan daxal hexol huzumum abugum xuxum vezehel.`
 :::
 
 **4.** *Azawan said “write ]”.*
@@ -681,16 +689,16 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 #### Agalan → English
 
-**1.** `zazawan d[azawan#] vezehel.`
+**1.** `zazawan d[abugum#] vezehel.`
 
 ::: details Show answer
-*Azawan said “Azawan…”*
+*Azawan said “bug…”*
 :::
 
-**2.** `zululon daxal azawan xuxur xuxum vezehel.`
+**2.** `zululon daxal abugum xuxur xuxum vezehel.`
 
 ::: details Show answer
-*Ululon said “Azawan…”*
+*Ululon said “bug…”*
 :::
 
 **3.** `zazawan daxal duxol xuxul xuxul vezehel.`
@@ -699,16 +707,16 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 *Azawan said the word “xuxul.”*
 :::
 
-**4.** <code>zululon d[ vezehel d&lt;#&gt; ] vezehel.</code>
+**4.** <code>zululon d[ vuwurul d&lt;#&gt; ] vezehel.</code>
 
 ::: details Show answer
-*Ululon said “tell #.”*
+*Ululon said “write #.”*
 :::
 
-**5.** `zuhubun d[azawan#|] vezehel.`
+**5.** `zuhubun d[abugum#|] vezehel.`
 
 ::: details Show answer
-*Uhubun said “Azawan…”*
+*Uhubun said “bug…”*
 :::
 
 ## See also
