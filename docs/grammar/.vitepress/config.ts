@@ -107,7 +107,7 @@ export default defineConfig({
     notFound: {
       title: 'PAGE NOT FOUND',
       quote:
-        'This page is not in the grammar. Check the sidebar for the reading order and tools, or use the search bar in the header.',
+        'This page is not in the grammar. The link may be outdated or mistyped. Check the sidebar for the reading order and tools, or use the search bar in the header.',
       linkText: 'Take me home',
       linkLabel: 'go to home',
     },

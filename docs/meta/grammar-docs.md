@@ -15,6 +15,7 @@ Related meta:
 | [language-name.md](language-name.md) | English name **Agalan** = glasses root **`agala`** + **-n** (editors only — not linked from grammar) |
 | [unassigned-reserved.md](unassigned-reserved.md) | Unused-slot / unassigned-form inventory (editors only — not linked from grammar) |
 | [proposals.md](proposals.md) | `docs/proposals/` layout; **do not link to** proposal pages (editors only — not linked from grammar) |
+| [site-redirects.md](site-redirects.md) | Public URL remaps (`coordination.html` → `joins.html`) and Amplify 404 (editors only — not linked from grammar) |
 
 Learner English names for constructions live on [terminology.md](../grammar/terminology.md) (Tools). Teaching pages use those names in place; they do **not** link to terminology entries (How to learn may point at the page).
 

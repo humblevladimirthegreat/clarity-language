@@ -27,7 +27,7 @@ Or open the repo in a [Dev Container](.devcontainer/devcontainer.json) (Node 22 
 | `npm run lexicon-search` | Lexicon search CLI |
 | `npm run web` | Serve the standalone lexicon page (`web/`; also on the docs site at `/grammar/lexicon`) |
 
-Design authority is **`docs/grammar/why-agelan.md`** (psychological purpose / limits / feature criteria), **`docs/grammar/introduction.md`** (grammar design), **`docs/grammar/core.md`**, and the other pages under **`docs/grammar/`** — not obsolete parsers. Learner banding and reading order live in `docs/meta/` (editors only). The public grammar site is VitePress (`docs/grammar/.vitepress/`); Amplify uses [`amplify.yml`](amplify.yml) with site root **`/grammar/`**.
+Design authority is **`docs/grammar/why-agelan.md`** (psychological purpose / limits / feature criteria), **`docs/grammar/introduction.md`** (grammar design), **`docs/grammar/core.md`**, and the other pages under **`docs/grammar/`** — not obsolete parsers. Learner banding and reading order live in `docs/meta/` (editors only). The public grammar site is VitePress (`docs/grammar/.vitepress/`); Amplify uses [`amplify.yml`](amplify.yml) with site root **`/grammar/`**. Old public paths (`coordination.html` → `joins.html`) and the hosted 404 live in [`scripts/site-redirects.json`](scripts/site-redirects.json); paste `dist/amplify-redirects.json` into Amplify **Rewrites and redirects** ([site-redirects.md](docs/meta/site-redirects.md)).
 
 ## License
 

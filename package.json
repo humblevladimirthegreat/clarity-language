@@ -20,7 +20,7 @@
     "lint:a11y": "eslint docs/grammar/.vitepress/components",
     "lint:md": "node scripts/lint-md-balance.mjs && tsx scripts/lint-agalan-docs.ts",
     "lint:agalan": "tsx scripts/lint-agalan-docs.ts",
-    "docs:build": "node scripts/fetch-kitten-tts.mjs && vitepress build docs/grammar && mkdir -p dist && cp scripts/docs-root-redirect.html dist/index.html",
+    "docs:build": "node scripts/fetch-kitten-tts.mjs && vitepress build docs/grammar && tsx scripts/publish-docs-extras.mjs",
     "docs:preview": "vitepress preview docs/grammar",
     "fetch:tts": "node scripts/fetch-kitten-tts.mjs",
     "convert-word": "tsx scripts/convert-word.ts",
@@ -31,7 +31,7 @@
     "check-compounds": "tsx scripts/check-compound-uniqueness.ts",
     "unused-roots": "tsx scripts/unused-roots.ts",
     "build:lexicon-web": "esbuild src/lexicon-search.ts --bundle --format=esm --outfile=web/lib/lexicon-search.js --platform=browser",
-    "test": "tsx --test src/*.test.ts src/**/*.test.ts docs/grammar/.vitepress/components/*.test.ts docs/grammar/.vitepress/lib/*.test.ts",
+    "test": "tsx --test src/*.test.ts src/**/*.test.ts docs/grammar/.vitepress/components/*.test.ts docs/grammar/.vitepress/lib/*.test.ts scripts/lib/*.test.ts",
     "parse": "tsx src/parse/cli.ts",
     "speak": "tsx src/tts/cli.ts",
     "web": "npm run build:lexicon-web && npx --yes serve . -p 4173 -o /web/"
