@@ -84,6 +84,12 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("g+", "g-more-than-one");
   });
 
+  it("scientific and percent number writing", () => {
+    expectLine("g+27e12", "g-27e12");
+    expectLine("g+25%", "g-25jo");
+    expectLine("g+3", "g-three");
+  });
+
   it("worked single-words table", () => {
     expectLine("jawavel", "j-greeting");
     expectLine("azawan.", "Azawan");

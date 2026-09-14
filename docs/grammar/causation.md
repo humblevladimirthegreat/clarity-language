@@ -215,7 +215,7 @@ When you mean *it has to be X* (the sole pick), close an exclusive join: **`…o
 
 > `zazawan gon.`
 >
-> z-Azawan | g-has-to-be
+> z-Azawan | g-exclusive-for
 >
 > "It has to be Azawan."
 

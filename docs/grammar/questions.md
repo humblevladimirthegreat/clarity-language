@@ -32,7 +32,7 @@ If the subject is *nobody* (`zal`) or the clause is *nothing happened* (`xal`), 
 
 > `jol zal vawalal?`
 >
-> j-question | z-none | v-walk
+> j-question | z-and | v-walk
 >
 > "Does nobody walk?"
 
@@ -344,7 +344,7 @@ To ask *when?* / *in what case?*, put an occasion word under `/h/` (or `/w/`) in
 
 > `jol zuhubun vawalal har?`
 >
-> j-question | z-Uhubun | v-walk | h-when
+> j-question | z-Uhubun | v-walk | h-never
 >
 > "When does Uhubun walk?"
 
@@ -364,7 +364,7 @@ A *yes/no* question can put a join ending on a **named** item instead of a fill-
 
 > `jol zazawan zal?`
 >
-> j-question | z-Azawan | z-just
+> j-question | z-Azawan | z-and
 >
 > "Just Azawan?"
 

@@ -156,7 +156,7 @@ English *25% of the cats* names a **portion of a whole**. Close a **count** (`ra
 
 > `zagadalx g+25%.`
 >
-> z-cat-x | g-25
+> z-cat-x | g-25jo
 >
 > "25% of the cats."
 

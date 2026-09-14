@@ -63,7 +63,7 @@ When English would offer a menu and ask to *pick one*, or leave the pick *(optio
 
 > `zadedal zogovel zol.`
 >
-> z-tea | z-coffee | z-or
+> z-tea | z-coffee | z-or-exactly-one
 >
 > "tea or coffee (pick one)."
 
@@ -120,7 +120,7 @@ When English would say *everything* / *everyone*, stack **u** then **a** on a st
 
 > `zual.`
 >
-> z-everything
+> z-everything-but
 >
 > "everything" / "everyone."
 
@@ -493,7 +493,7 @@ When English would say *every cat* rather than *everything but the cat*, write *
 
 > `zual gagadal.`
 >
-> z-everything | g-cat
+> z-everything-but | g-cat
 >
 > "every cat."
 

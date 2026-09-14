@@ -28,6 +28,7 @@ import type {
   Ending,
   LexOverlay,
   LexWord,
+  NumberGroup,
   NumberStem,
   ParseResult,
   Pos,
@@ -643,7 +644,14 @@ function numberLabel(stem: NumberStem, pos: Pos | undefined): string {
   }
 
   const first = stem.groups[0];
-  if (first?.mantissa !== undefined && stem.groups.length === 1 && !first.exponentDigits && !exp) {
+  const simpleMantissa =
+    first?.mantissa !== undefined &&
+    stem.groups.length === 1 &&
+    !first.exponentDigits &&
+    !first.percent &&
+    !first.decimal &&
+    !exp;
+  if (simpleMantissa) {
     const value = Number(first.mantissa);
     if (stem.marker === "#-") return `${ordinalEnglish(value)}-from-end`;
     if (stem.marker === "#") return ordinalEnglish(value);
@@ -651,8 +659,24 @@ function numberLabel(stem: NumberStem, pos: Pos | undefined): string {
     if (stem.marker === "-") return `minus-${cardinalEnglish(value)}`;
   }
 
-  const bits = stem.groups.map((g) => g.mantissa ?? "").filter(Boolean);
-  return [String(stem.marker), exp, bits.join("-")].filter(Boolean).join("-");
+  const body = stem.groups.map(formatNumberGroup).filter(Boolean).join(",");
+  if ((stem.marker === "+" || stem.marker === "ra") && !exp) return body;
+  if ((stem.marker === "-" || stem.marker === "ru") && !exp) {
+    return body ? `minus-${body}` : "minus";
+  }
+  return [String(stem.marker), exp, body].filter(Boolean).join("-");
+}
+
+function formatNumberGroup(g: NumberGroup): string {
+  let s = g.mantissa ?? "";
+  if (g.exponentDigits) {
+    s += `${g.exponentSign === "bu" ? "e-" : "e"}${g.exponentDigits}`;
+  } else if (!g.mantissa && g.exponentSign) {
+    s += g.exponentSign === "bu" ? "e-" : "e";
+  }
+  if (g.percent === "jo") s += "jo";
+  if (g.percent === "ju") s += "ju";
+  return s;
 }
 
 function cardinalEnglish(n: number): string {
