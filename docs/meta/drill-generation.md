@@ -76,7 +76,6 @@ If you cannot certify a token, drop the item. Do not guess from English. Do not 
 
 - Any **morph** whose [first-taught](#leak-index) checkpoint is **later** than this one
 - Same-slot **sibling** Introduces ([slots](#slots))
-- Optional-track forms (numbers Intermediate / Advanced, numeric-derivation) unless this row is on that track or lists them
 - Dummy *I* / *you* (`zugobon` / `zedonen`) unless this page is teaching those specials
 - Foreign `PoS<…>ENDING` unless this stage is teaching loans / spans
 - Intermediate / Advanced speech-act twins (`jam` / `jom` / `jem` / `jum`), **`gl-`**, sentence linkers, nested **`adoro`**, unless recycle includes **core Intermediate**
@@ -117,8 +116,8 @@ Drills depend on **what has been taught**, not on other files’ drill text. Par
 | This checkpoint | Recycle |
 |-----------------|--------|
 | **Beginner** at path *N* | All **Introduces** from **Beginner** rows with a **smaller** path number — except [same-slot siblings](#slots) |
-| **Intermediate** at path *N* | All **Beginner** Introduces on the beginner path (productive pages), **plus** **Intermediate** Introduces with a **smaller** path number, except siblings and [optional tracks](#optional) |
-| **Advanced** at path *N* | That Intermediate recycle, **plus** this file’s Intermediate Introduces, **plus** Advanced Introduces with a **smaller** path number, except siblings and optional tracks |
+| **Intermediate** at path *N* | All **Beginner** Introduces on the beginner path (productive pages), **plus** **Intermediate** Introduces with a **smaller** path number, except [same-slot siblings](#slots) |
+| **Advanced** at path *N* | That Intermediate recycle, **plus** this file’s Intermediate Introduces, **plus** Advanced Introduces with a **smaller** path number, except siblings |
 
 **Needs:** lines on the grammar page always add those forms to Recycle (comparatives Beginner → joins Beginner rank joins; causation Beginner → joins Beginner + core **`adoro`**).
 
@@ -133,19 +132,10 @@ Path items joined with `·` are **co-located**, not ordered. Do **not** recycle 
 |------|--------|
 | 7 | `pronouns.md` · `plurality.md` |
 | 11 | `revisers.md` · `restrictors.md` |
-| 13 | `numbers.md` · `comparatives.md` · `causation.md` |
+| 13 | `numbers.md` · `numbers-applied.md` · `comparatives.md` · `causation.md` |
 | 14 | `values.md` · `ability.md` · `commentary.md` · `roles.md` · `x-compounds.md` · `plan-decision.md` |
 
 Later path numbers **may** recycle both siblings (e.g. joins Beginner may use pronouns **and** plurality Beginner).
-
-### Optional tracks
-<a id="optional"></a>
-
-Not required for a first dialogue corpus. Recycle them only on that track, or when **Needs:** / **Sibling OK** says so.
-
-- `numbers.md` Intermediate / Advanced
-- `numbers-applied.md` (Intermediate; depends on `numbers.md`)
-- `numeric-derivation.md` (Advanced only)
 
 ## Settings
 <a id="settings"></a>
@@ -316,9 +306,9 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 11 | `restrictors.md` | Advanced | — | no Advanced stage | |
 | 12 | `spans.md` | Intermediate | **exists** | Spoken open shape; TYPE; EDGE; endings; nesting; **`^ … ^`** scope islands; mention of a handle **form** vs office **-n** | |
 | 12 | `spans.md` | Advanced | **exists** | Close forms (`xuxul` / editorial / close-all) | 4–6 items |
-| 13 | `numbers.md` | Intermediate | **exists** | PoS on numbers; markers; endings; digitless; number as verb / adverb / interjection / discourse as taught in this stage; **one of** measure / range / percent / time if you can keep the item to that decision (those topics live in **`numbers-applied.md`**) | **Optional track.** Do not dump the whole Intermediate. 6–8 items |
-| 13 | `numbers-applied.md` | Intermediate | **exists** | Digit-string labels; clock / calendar time; percent vs points; measure phrases; ranges — as taught in this stage | Optional track. One topic per item. 4–8 items |
-| 13 | `numbers.md` | Advanced | **exists** | Digitless exponents / hyperbole / zero×exp **as used in the stage’s teach examples** — not unassigned cells | Optional track. 4–6 items |
+| 13 | `numbers.md` | Intermediate | **exists** | PoS on numbers; markers; endings; digitless; number as verb / adverb / interjection / discourse as taught in this stage; **one of** measure / range / percent / time if you can keep the item to that decision (those topics live in **`numbers-applied.md`**) | Do not dump the whole Intermediate. 6–8 items |
+| 13 | `numbers-applied.md` | Intermediate | **exists** | Digit-string labels; clock / calendar time; percent vs points; measure phrases; ranges — as taught in this stage | One topic per item. 4–8 items |
+| 13 | `numbers.md` | Advanced | **exists** | Digitless exponents / hyperbole / zero×exp **as used in the stage’s teach examples** — not unassigned cells | 4–6 items |
 | 13 | `comparatives.md` | Intermediate | **exists** | Full comparative arity; distributive **`a`** + SHARED `/ɡ/`; measured differentials | Measured items **Sibling OK:** numbers Intermediate **measure phrases** only |
 | 13 | `comparatives.md` | Advanced | **exists** | Judgment benchmarks (`zojun`, `zahazen`, **`zugoboxrawon`** Mine vs performance **`zugobon`**, …) | **`ugobo`** allowed on Mine/performance items |
 | 13 | `causation.md` | Intermediate | **exists** | Necessary (marked); unique path; clause poles **`adoro` / `ezaze` / `urugu`**; **CAUSE** **`egega`** **-m**; preference vs law (values stack if values Beginner is recycle — it is) | |
@@ -332,12 +322,12 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 14 | `roles.md` | Intermediate | **exists** | Viewpoint laterals **`DIR x ANCHOR`**; bare arrow roots = compass; gravity **`uba`/`odowo`**; name/listener anchor | Prefer `…xazawan` over silent speaker default. **`edone`/`ugobo`** only when testing role-anchor. Include at least one bare cardinal and one gravity item |
 | 14 | `x-compounds.md` | Intermediate | **exists** | Greeting bid name **`x`** **`a`/`o`/`e`/`u`** + **-n** on a citation or vocative (presence / one ask / *one moment please* / passing) | Recycle [greeting](../grammar/reference-suffix.md#greeting) and [vocative](../grammar/core.md#vocative). Not ability (`vuzunuxel`). Not values |
 | 14 | `roles.md` | Advanced | — | no Advanced stage | |
-| 15 | `join-extras.md` | Intermediate | **exists** | Join-act verbs `van` / `von` / …; join-relations `gan` / `han` / … (unary `/b/`) | No Beginner slot. Recycle = all Beginner + earlier Intermediate (path before 15), except optional numbers unless needed |
+| 15 | `join-extras.md` | Intermediate | **exists** | Join-act verbs `van` / `von` / …; join-relations `gan` / `han` / … (unary `/b/`) | No Beginner slot. Recycle = all Beginner + earlier Intermediate (path before 15) |
 | 15 | `plan-decision.md` | Intermediate | **exists** | **DECISION** **`egege`** changeability; evidentiality stacked on **PREDICT**; PLAN + DECISION stack | Recycle Beginner PLAN / PREDICT. Stack evidentiality on PREDICT only as this stage shows. Join-act **`von`** only if already taught in this stage |
 | 15 | `plan-decision.md` | Advanced | — | no Advanced stage | |
 | 15 | `special-vocabulary.md` | Intermediate | **exists** | Emotion compose (ACT + LOCUS + a value); numbered alternatives `uzebu`/`agego`/`olala` + `g#N` | Overlay *inventory* is not a drill. **Needs** values Beginner (recycle). Not universality (Advanced) |
 | 15 | `special-vocabulary.md` | Advanced | **exists** | Universality (`arogu` / `abulu` / …) as taught in this stage | 4–6 items |
-| 16 | `numeric-derivation.md` | Advanced | **exists** | `ROOT x NUM` as the stage teaches (essence / `+N` / `#N` / quasi / …) — only assigned readings | **Optional track.** No unassigned cells from [unassigned-reserved.md](unassigned-reserved.md). 4–6 items |
+| 16 | `numeric-derivation.md` | Advanced | **exists** | `ROOT x NUM` as the stage teaches (essence / `+N` / `#N` / quasi / …) — only assigned readings | No unassigned cells from [unassigned-reserved.md](unassigned-reserved.md). 4–6 items |
 
 ## Leak index
 <a id="leak-index"></a>

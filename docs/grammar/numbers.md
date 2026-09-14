@@ -3,15 +3,12 @@
 
 Use a number word when English would say **how many** of something (*three cats*) or **which place** something has in a series (*the second book*). Write that whole count or rank as **one word**.
 
-After the first letter (the role), a **marker** tells count versus rank. Digits and an ending come next. On the page you often write a short mark (`+` for how many, `#` for which place); when you speak, you still say one full word of syllables.
-
-
 ## Beginner
 <a id="beginner"></a>
 
 ### Counts (`g+N`)
 
-To say **how many** of a thing there are, put a number word after the noun, in the same place as other adjectives (`/ɡ/`). The word starts with **`g`**, then the count marker (written **`+`**), then the digit: **`g+3`** is *three*. (cue: **`+`** / **`a`** ≈ add — how many)
+To say **how many** of a thing there are, put a number word after the noun, in the same place as other adjectives (`/ɡ/`). The word starts with **`g`**, then the count marker (written **`+`**), then the digit: **`g+3`** is *three*.
 
 > `zagadalx g+3.`
 >
@@ -27,7 +24,7 @@ To say **how many** of a thing there are, put a number word after the noun, in t
 
 ### Ordinals (`g#N`)
 
-To say **which place** a thing has in a series (*the first*, *the second*, …), put a rank number after the noun, in the same adjective place. **`g#2`** is *the second*. Written **`#`** is the rank marker; the digit follows. (cue: **`#`** / **`e`** ≈ order — which place, from the start)
+To say **which place** a thing has in a series (*the first*, *the second*, …), put a rank number after the noun, in the same adjective place. **`g#2`** is *the second*. Written **`#`** is the rank marker; the digit follows.
 
 > `zabogol g#2.`
 >
@@ -43,7 +40,7 @@ To say **which place** a thing has in a series (*the first*, *the second*, …),
 
 ### More than one (`g+`)
 
-You can say the count is **more than one** without naming how many. Keep the count marker and leave the digits off: **`g+`**. (cue: **`a`** ≈ add — a plural amount, then stop)
+You can say the count is **more than one** without naming how many. Keep the count marker and leave the digits off: **`g+`**.
 
 Naming the group (*cats* as a set) uses [**-x**](plurality.md) on the noun. Saying the amount is a different tool. Both may sit on the same noun (`zagadalx g+`).
 
@@ -87,7 +84,7 @@ The word ends with exact **-l**, spoken as its own last syllable. Build the spok
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills for Beginner. Try each item before opening **Show answer**. Count with `g+N`, rank with `g#N`, and use digitless **`g+`** with **-x** on the noun for *more than one*.
+Short drills for Beginner. Try each item before opening **Show answer**. Count with `g+N`, rank with `g#N`, and use digitless **`g+`** with **-x** on the noun for *more than one*. After the sentence drills, convert shorthand to speech and speech to shorthand.
 
 **Setting:** a bakery
 
@@ -210,6 +207,82 @@ Short drills for Beginner. Try each item before opening **Show answer**. Count w
 
 ::: details Show answer
 *Ululon punches the first fire.*
+:::
+
+#### Written → spoken
+
+**1.** `g+4`
+
+::: details Show answer
+*gramol*
+:::
+
+**2.** `g#1`
+
+::: details Show answer
+*grewol*
+:::
+
+**3.** `g+`
+
+::: details Show answer
+*gral*
+:::
+
+**4.** `g+21`
+
+::: details Show answer
+*graduwol*
+:::
+
+**5.** `g#8`
+
+::: details Show answer
+*grehal*
+:::
+
+**6.** `g+7`
+
+::: details Show answer
+*gralel*
+:::
+
+#### Spoken → written
+
+**1.** *gradul*
+
+::: details Show answer
+`g+2`
+:::
+
+**2.** *grerel*
+
+::: details Show answer
+`g#3`
+:::
+
+**3.** *grawozol*
+
+::: details Show answer
+`g+10`
+:::
+
+**4.** *grenal*
+
+::: details Show answer
+`g#9`
+:::
+
+**5.** *gravol*
+
+::: details Show answer
+`g+5`
+:::
+
+**6.** *grazol*
+
+::: details Show answer
+`g+0`
 :::
 
 ## Intermediate
