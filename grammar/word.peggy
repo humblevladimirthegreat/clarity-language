@@ -125,14 +125,14 @@ spanClose
 // ── Writing bracket atoms (`[]` `{}` `()`; `<>` is foreign / opaque) ────────
 
 writingSpan
-  = pos:Pos marks:WritingMarks? anaphor:AnaphorBracket {
+  = pos:Pos marks:WritingMarks? anaphor:AnaphorBracket WordEnd {
       return makeWord(text(), {
         pos,
         ending: "r",
         family: writingSpanFamily(anaphor.bracket, "=", marks, true),
       });
     }
-  / pos:Pos marks:WritingMarks? bracketed:BracketedPayload {
+  / pos:Pos marks:WritingMarks? bracketed:BracketedPayload WordEnd {
       const ending = marks && marks.includes("@") ? "n" : marks && marks.includes("~") ? "m" : "l";
       return makeWord(text(), {
         pos,
@@ -148,11 +148,13 @@ AnaphorBracket
   = "[" "=" "]" { return { bracket: "[" }; }
   / "\u007b" "=" "\u007d" { return { bracket: "\u007b" }; }
   / "(" "=" ")" { return { bracket: "(" }; }
+  / "<" "=" ">" { return { bracket: "<" }; }
 
 BracketedPayload
   = "[" payload:$((!"]" .)*) "]" { return { bracket: "[", payload }; }
   / "\u007b" payload:$((!"\u007d" .)*) "\u007d" { return { bracket: "\u007b", payload }; }
   / "(" payload:$((!")" .)*) ")" { return { bracket: "(", payload }; }
+  / "<" payload:$((!">" .)*) ">" { return { bracket: "<", payload }; }
 
 // ── Free number words (writing + speech) ────────────────────────────────────
 
@@ -516,6 +518,19 @@ citation
         family: body.family,
       });
     }
+  / marks:WritingMarks? anaphor:AngleAnaphor WordEnd {
+      return makeWord(text(), {
+        ending: "r",
+        family: writingSpanFamily("<", "=", marks, true),
+      });
+    }
+  / marks:WritingMarks? "<" payload:ForeignPayload ">" WordEnd {
+      const ending = marks && marks.includes("@") ? "n" : marks && marks.includes("~") ? "m" : "l";
+      return makeWord(text(), {
+        ending,
+        family: writingSpanFamily("<", payload, marks, false),
+      });
+    }
   / root:ContentRoot ending:Ending plural:PluralSuffix? {
       return makeWord(text(), {
         ending,
@@ -523,6 +538,9 @@ citation
         family: contentFamily([root]),
       });
     }
+
+AngleAnaphor
+  = "<" "=" ">" { return true; }
 
 // ── Lexical primitives ──────────────────────────────────────────────────────
 

@@ -248,16 +248,28 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     });
   });
 
-  it("parses z<Sam>n compact foreign and d<sushi> opaque (core.md / spans.md)", () => {
-    const named = parseOk("z<Sam>n");
+  it("parses z@<Sam> and d<kimchi> as writing opaque spans (spans.md)", () => {
+    const named = parseOk("z@<Sam>");
     assert.equal(named.pos, "z");
     assert.equal(named.ending, "n");
-    assert.deepEqual(named.family, { kind: "foreign", payload: "Sam", opaque: false });
+    assert.deepEqual(named.family, {
+      kind: "writingSpan",
+      bracket: "<",
+      payload: "Sam",
+      marks: ["@"],
+      anaphor: false,
+    });
 
-    const opaque = parseOk("d<sushi>");
+    const opaque = parseOk("d<kimchi>");
     assert.equal(opaque.pos, "d");
-    assert.equal(opaque.ending, undefined);
-    assert.deepEqual(opaque.family, { kind: "foreign", payload: "sushi", opaque: true });
+    assert.equal(opaque.ending, "l");
+    assert.deepEqual(opaque.family, {
+      kind: "writingSpan",
+      bracket: "<",
+      payload: "kimchi",
+      marks: [],
+      anaphor: false,
+    });
   });
 
   it("parses zolovexrabal as numeric derivation +e (numeric-derivation.md)", () => {

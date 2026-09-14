@@ -438,7 +438,7 @@ Content endings **-l / -m / -n / -r**.
 
 ### Loan / opaque span
 
-`PoS<…>ENDING` vs opaque fence with no ending after `>`.
+`PoS` + **`~`** / **`@`** / **`=`** on `<…>` (no letter after `>`).
 
 [Spans](spans.md#loans)
 

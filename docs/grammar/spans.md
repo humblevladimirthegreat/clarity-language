@@ -28,13 +28,13 @@ The whole `d[azawan]` is the direct object (who or what is acted on). If the int
 
 You can mark how faithful the quote is. Put the mark **after** the role letter, before the opening bracket.
 
-Verbatim wording is **exact**: no extra mark (`d[azawan]`). That is the same as ending **-l**, omitted in writing. When you mean the gist, not the exact words, write **`~`** (`d~[zazawan vuzunul]`), the same as **-m**. When the chunk is a titled designation of that wording, write **`@`** (`d@[uzugon]`), the same as **-n**.
+Verbatim wording is **exact**: no extra mark (`d[azawan]`). When you mean the gist, not the exact words, write **`~`** (`d~[zazawan vuzunul]`). When the chunk is a titled designation of that wording, write **`@`** (`d@[uzugon]`).
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| *(none)* | exact (**-l**) | verbatim wording | **-l** stand behind the words |
-| **`~`** | paraphrase (**-m**) | the gist, not the exact words | **~** / **-m** leaves the hold open |
-| **`@`** | proper (**-n**) | titled designation of that wording | **@** / **-n** names the chunk |
+| *(none)* | exact | verbatim wording | bare brackets already quote; extra ink would hedge |
+| **`~`** | paraphrase | the gist, not the exact words | **~** looks like “about / approximately” |
+| **`@`** | proper | titled designation of that wording | **@** like a social media handle |
 
 > `zululon d~[zazawan vuzunul] vuwurul.`
 >
@@ -50,7 +50,7 @@ Verbatim wording is **exact**: no extra mark (`d[azawan]`). That is the same as 
 
 ### Resume (`[=]`)
 
-To point back at a prior span without repeating its interior, put **`=`** inside the same brackets: `d[=]`. That form uses resume **-r**. The letter on the resume is the role this pointer plays in *this* sentence (here still the object of *said*).
+To point back at a prior span without repeating its interior, put **`=`** inside the same brackets: `d[=]`. The letter on the resume is the role this pointer plays in *this* sentence (here still the object of *said*).
 
 > `jol zululon d[=] vezehel.`
 >
@@ -62,36 +62,32 @@ To point back at a prior span without repeating its interior, put **`=`** inside
 
 A **mention** holds the **word or form itself** (*the word “dog”*), not a quote of speech. Write the role letter, then curly braces around that form.
 
-> `z{odogo} gelulul.`
+> `z{odogo} gumuzem.`
 >
-> z-{dog} | g-blue
+> z-{dog} | g-small
 >
-> "The word “dog” is blue."
+> "The word “dog” is small."
 
-With **`@`** / **-n**, mention is *the title X* / *the proverb X* as a **named unit**: `d@{uzugo}`.
+With **`@`**, mention is *the title X* / *the proverb X* as a **named unit**: `d@{uzugo}`.
 
 **Compare with:** quoting the title as wording uses cite (`d@[uzugon]` *sang “Uzugon”*). Mention `d@{uzugo}` is the titled unit, not the sung wording.
 
 ### Opaque and loan words
 <a id="loans"></a>
 
-**Opaque** holds a foreign, code, or raw surface that is not ordinary Agalan words. Write the role letter, then angle brackets around that blob. Write no ending after `>`:
+**Opaque** holds a foreign, code, or raw surface that is not ordinary Agalan words. Write the role letter, then angle brackets around that blob. Do not put an extra letter after `>`. Faithfulness uses the same marks as cite: none / **`~`** / **`@`**, and resume uses **`=`** inside (`d<=>`).
 
-> <code>zazawan d&lt;sushi&gt; vejel.</code>
+> <code>zazawan d&lt;kimchi&gt; vejel.</code>
 >
-> z-Azawan | <code>d-&lt;sushi&gt;</code> | v-see
+> z-Azawan | <code>d-&lt;kimchi&gt;</code> | v-see
 >
-> "Azawan saw sushi." (opaque surface)
+> "Azawan saw kimchi." (opaque surface)
 
-Keep the source’s **casing** inside `<>` when that writing system uses case (<code>d&lt;NaCl&gt;</code>, <code>d&lt;iPhone&gt;</code>). Native Agalan letters stay [lowercase](phonology.md#beginner).
-
-A **compact foreign content word** takes an ending after `>`: <code>d&lt;sushi&gt;l</code>, <code>z&lt;Sam&gt;n</code>. Same casing rule inside. That is one ordinary word whose root is foreign, not a span.
-
-**Compare with:** use opaque <code>d&lt;sushi&gt;</code> when the foreign **surface** is the point. Use <code>d&lt;sushi&gt;l</code> when sushi is an ordinary object in the sentence.
+Keep the source’s **casing** inside `<>` when that writing system uses case (<code>d&lt;NaCl&gt;</code>, <code>d@&lt;iPhone&gt;</code>). Native Agalan letters stay [lowercase](phonology.md#beginner). **`@`** is the proper mark when that blob is a titled name.
 
 When a published Agalan root already matches, write the ordinary word (`dagadal`, not a fence).
 
-Outside a clause, a name or word uses prefix-less **root + ending**: [citation forms](reference-suffix.md#citation-forms) (<code>&lt;Sam&gt;n</code>). A span still takes a role letter, because it fills a sentence slot.
+Outside a clause, a foreign name or word is a prefix-less fence with the same marks: [citation forms](reference-suffix.md#citation-forms) (<code>@&lt;Sam&gt;</code>). A span in a sentence still takes a role letter, because it fills a sentence slot (<code>z@&lt;Sam&gt;</code>).
 
 ### Asides (`h(…)`)
 <a id="asides"></a>
@@ -121,7 +117,7 @@ A one-word manner with nothing to package is a plain adverb: `zazawan vawalal hu
 ### Outer slot
 <a id="pos"></a>
 
-The letter on the open is the role of the **entire span** in the outer sentence. Ask what that chunk is doing out there: object of *said*, subject of *is blue*, and so on. A cite can be the **verb** when you echo the act as wording:
+The letter on the open is the role of the **entire span** in the outer sentence. Ask what that chunk is doing out there: object of *said*, subject of *is small*, and so on. A cite can be the **verb** when you echo the act as wording:
 
 > `jul zululon v[vozodol].`
 >
@@ -131,7 +127,7 @@ The letter on the open is the role of the **entire span** in the outer sentence.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| `/d/` | object | *said / wrote / saw “…”* (`d[azawan]`, `d[=]`, <code>d&lt;sushi&gt;</code>) | **d** ≈ done to |
+| `/d/` | object | *said / wrote / saw “…”* (`d[azawan]`, `d[=]`, <code>d&lt;kimchi&gt;</code>) | **d** ≈ done to |
 | `/z/` | subject | the wording or form **is** the subject (`z{odogo}`) | **z** ≈ star (who it is about) |
 | `/v/` | verb | echo the act as wording (`v[vozodol]`) | **v** as in English *verb* |
 | `/h/` | adverb | asides (`h(…)`) | **h** starts *how* / *when* / *where* |
@@ -147,22 +143,22 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan |
-|---------|--------|
-| *Azawan* | `azawan` |
-| *Ululon* | `ululon` |
-| *Uhubun* | `uhubun` |
-| *tell* | `vezehel` |
-| *write* | `vuwurul` |
-| *see* | `vejel` |
-| *sing* | `uzunul` |
-| *halt* | `vozodol` |
-| *Uzugon* | `uzugon` |
-| *melody* | `uzugol` |
-| *blue* | `elulul` |
-| *happy* | `huzumum` |
-| *sushi* | <code>d&lt;sushi&gt;l</code> |
-| *Sam* | <code>&lt;Sam&gt;n</code> |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *Azawan* | `azawan` | | |
+| *Ululon* | `ululon` | | |
+| *Uhubun* | `uhubun` | | |
+| *tell* | `vezehel` | | |
+| *write* | `vuwurul` | | |
+| *see* | `vejel` | | |
+| *sing* | `uzunul` | | |
+| *halt* | `vozodol` | | |
+| *Uzugon* | `uzugon` | | |
+| *melody* | `uzugol` | | |
+| *small* | `gumuzem` | `umuzel` *mouse* | 🐁: a mouse is little |
+| *happy* | `huzumum` | | |
+| *kimchi* | <code>d&lt;kimchi&gt;</code> | | |
+| *Sam* | <code>@&lt;Sam&gt;</code> | | |
 
 #### English → Agalan
 
@@ -178,16 +174,16 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 `zululon d~[zazawan vuzunul] vuwurul.`
 :::
 
-**3.** *The word “melody” is blue.*
+**3.** *The word “melody” is small.*
 
 ::: details Show answer
-`z{uzugo} gelulul.`
+`z{uzugo} gumuzem.`
 :::
 
-**4.** *Azawan saw sushi.* (ordinary loan object)
+**4.** *Azawan saw kimchi.* (foreign surface)
 
 ::: details Show answer
-<code>zazawan d&lt;sushi&gt;l vejel.</code>
+<code>zazawan d&lt;kimchi&gt; vejel.</code>
 :::
 
 **5.** *Uhubun sang “Uzugon.”* (title as wording)
@@ -216,10 +212,10 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 #### Agalan → English
 
-**1.** <code>zululon d&lt;sushi&gt; vejel.</code>
+**1.** <code>zululon d&lt;kimchi&gt; vejel.</code>
 
 ::: details Show answer
-*Ululon saw sushi.* (opaque surface)
+*Ululon saw kimchi.* (opaque surface)
 :::
 
 **2.** `zazawan d{uzugo} vezehel.`
@@ -234,19 +230,19 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 *Uhubun wrote the title Uzugon.*
 :::
 
-**4.** `z{uzugo} gelulul.`
+**4.** `z{uzugo} gumuzem.`
 
 ::: details Show answer
-*The word “melody” is blue.*
+*The word “melody” is small.*
 :::
 
-**5.** <code>z&lt;Sam&gt;n d[azawan] vezehel.</code>
+**5.** <code>z@&lt;Sam&gt; d[azawan] vezehel.</code>
 
 ::: details Show answer
 *Sam said “Azawan.”* (hello)
 :::
 
-**6.** <code>&lt;Sam&gt;n</code>
+**6.** <code>@&lt;Sam&gt;</code>
 
 ::: details Show answer
 *Sam*
@@ -305,7 +301,7 @@ Beginner already used square, round, curly, and angle brackets for cite, aside, 
 | **o** | **mention** (`{` … `}`); with **-n**, named unit | the word or form itself | **o** ≈ one (the form as one object) |
 | **u** | **opaque** (`<` … `>`); interior is not native Agalan | foreign / code / raw blob | **u** ≈ undo (not native Agalan) |
 
-**Compare with:** a native office name uses ordinary **-n** (`zabogon`) — [named handles](reference-suffix.md#named-handles). Mention `{abogo}` is that **form**; opaque / loan is a **foreign** acronym’s surface (<code>z&lt;FBI&gt;n</code>).
+**Compare with:** a native office name uses ordinary **-n** (`zabogon`) — [named handles](reference-suffix.md#named-handles). Mention `{abogo}` is that **form**; opaque / loan is a **foreign** acronym’s surface (<code>z@&lt;FBI&gt;</code>).
 
 ### EDGE (extent)
 <a id="edge"></a>
@@ -322,7 +318,7 @@ A pair of brackets can wrap one token or many, run to the end of the clause, or 
 |--------|-----|---------|-----|
 | **a** | **multi-token open** — stays open until an explicit close (default) | `d[…]` … `]` (needs close) | **a** ≈ add (push more tokens) |
 | **e** | **clause-scoped** — ends before the next speech-act `/j/` or clause-level `/x/` join | `d[…` run to clause end (no close) | **e** ≈ order (this clause only) |
-| **o** | **atomic** — exactly **one** following token | `d[azawan]`, <code>d&lt;sushi&gt;</code> | **o** ≈ one |
+| **o** | **atomic** — exactly **one** following token | `d[azawan]`, <code>d&lt;kimchi&gt;</code> | **o** ≈ one |
 | **u** | **empty / redacted** — no interior; also **resume** **-r** | `d[]`, `d[=]` | **u** ≈ undo (nothing inside) |
 
 Resume **-r** always uses EDGE **`u`** (`daxur`).
@@ -444,7 +440,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *punch* | `vubunul` |
 | *judge* | `ujudul` |
 | *the Judge* | `ujudun` |
-| *blue* | `elulul` |
+| *small* | `gumuzem` |
 | *happy* | `huzumum` |
 | *possibility* | `huzurem` |
 | *FBI* | <code>duxol FBI</code> |
@@ -513,10 +509,10 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *Azawan said something like “Azawan attests.”*
 :::
 
-**3.** `zaxur gelulul.`
+**3.** `zaxur gumuzem.`
 
 ::: details Show answer
-*That (cite) is blue.*
+*That (cite) is small.*
 :::
 
 **4.** `zuhubun daxon ujudu vezehel.`

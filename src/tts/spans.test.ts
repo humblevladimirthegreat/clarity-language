@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
 import { parseWord } from "../parse/word.js";
-import { expandOpaqueSpan, expandWritingSpan } from "./spans.js";
+import { expandWritingSpan } from "./spans.js";
 import { expandWordToTokens } from "./plan.js";
 
 describe("expandWritingSpan", () => {
@@ -41,11 +41,9 @@ describe("expandWritingSpan", () => {
       ["daxal", "zadagal", "zagadal", "xuxul"],
     );
   });
-});
 
-describe("expandOpaqueSpan", () => {
   it("maps d<sushi> to duxol with foreign skip", () => {
-    const tokens = expandOpaqueSpan(parseWord("d<sushi>"));
+    const tokens = expandWritingSpan(parseWord("d<sushi>"), expandWordToTokens);
     assert.deepEqual(
       tokens.filter((t) => t.kind === "word").map((t) => (t.kind === "word" ? t.raw : "")),
       ["duxol"],
