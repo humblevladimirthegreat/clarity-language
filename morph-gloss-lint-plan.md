@@ -35,7 +35,7 @@ Words joined with spaced `|`. Prefix-less revisers: English only (no fake PoS). 
 | Overlay / special | Overlay or closed label (`h-WITNESSED`, `z-speaker`, `g-SAME`) |
 | Associative **-x** | Keep trailing `-x` |
 | Resume **-r** | Binder is the gloss root: `z-←Azawan`; no trailing `-r`. Antecedent is **the most recent match** (already defined); not an ambiguity. |
-| Mid-word **`x`** | **Always segmented and hyphenated** (`v-walking-unable-temporary`, `wish-x-guidance`, `z-Sushi-x-Coffee`). Never collapse a compound to one unsegmented English name for lint. |
+| Mid-word **`x`** | **Always segmented and hyphenated** (`v-walk-unable-temporary`, `wish-x-guidance`, `z-Sushi-x-Coffee`). Never collapse a compound to one unsegmented English name for lint. Verb english slots use the uninflected lemma ([glosses.md](docs/meta/glosses.md#english-lemma)). |
 | Joins / revisers | Job in the English (`z-and.open`, `instead`, `h-only-when`) |
 | Numbers | Digitless / ordinal labels as in the worked table (`g-three`, `g-second`, `x-starting-with`) |
 | Left-bound `/ɡ/` | `gl-…` |

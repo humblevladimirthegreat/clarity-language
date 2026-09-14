@@ -105,7 +105,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Count w
 | *fire* | `urel` | |
 | *see* | `vejel` | `ejel` *eye* |
 | *tell* | `vezehel` | `ezehel` *speech* |
-| *run* | `vurunul` | `urunul` *running* |
+| *run* | `vurunul` | `urunul` *run* |
 | *punch* | `vubunul` | `ubunul` *punch* |
 | *scream* | `vazagal` | `azagal` *scream* |
 
@@ -806,7 +806,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Pre
 | *trophy* | `odobol` | |
 | *see* | `vejel` | `ejel` *eye* |
 | *sit* | `vajul` | `ajul` *chair* |
-| *run* | `vurunul` | `urunul` *running* |
+| *run* | `vurunul` | `urunul` *run* |
 | *punch* | `vubunul` | `ubunul` *punch* |
 | *big* | `elel` | |
 

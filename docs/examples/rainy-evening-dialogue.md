@@ -74,7 +74,7 @@ loose: *Still — it's raining, as I remember.*
 
 **B:** `jael xezazal zahan howoram vawalal vul.`
 
-gloss: `j-yes` · `x-therefore` · `z-interlocutors` · `h-plan` · `v-walking` · `v-not`
+gloss: `j-yes` · `x-therefore` · `z-interlocutors` · `h-plan` · `v-walk` · `v-not`
 
 strict: *Yes — therefore we (A and B and C as interlocutors) plan not to walk.*
 
@@ -82,7 +82,7 @@ loose: *Yes — so we're planning not to walk.*
 
 **C:** `jom hodohom zar vawalal.`
 
-gloss: `j-question` · `h-COMMENT-soft` · `z-who` · `v-walking`
+gloss: `j-question` · `h-COMMENT-soft` · `z-who` · `v-walk`
 
 strict: *I wonder — who walks?*
 
@@ -90,7 +90,7 @@ loose: *I wonder — who walks?*
 
 **A:** `juel zuzur vawalaxel holozoxem.`
 
-gloss: `j-no` · `z-←Uzuzuxogoven` · `v-walking-unable-temporary` · `h-competence-x-motive`
+gloss: `j-no` · `z-←Uzuzuxogoven` · `v-walk-unable-temporary` · `h-competence-x-motive`
 
 strict: *No — I (A) can't walk right now — for competence (motive, soft standing).*
 
@@ -98,7 +98,7 @@ loose: *No — I can't walk right now.*
 
 **B:** `el zuzur hegeraxel vawalal.`
 
-gloss: `in-other-words` · `z-←Uzuzuxogoven` · `h-ABIL-unable-temporary` · `v-walking`
+gloss: `in-other-words` · `z-←Uzuzuxogoven` · `h-ABIL-unable-temporary` · `v-walk`
 
 strict: *In other words, that one (A) lacks the capacity to walk.*
 
@@ -226,7 +226,7 @@ loose: *You two — pick something playful!*
 
 **C:** `jum vawalal holozoxom.`
 
-gloss: `j-prohibition` · `v-walking` · `h-competence-x-ought`
+gloss: `j-prohibition` · `v-walk` · `h-competence-x-ought`
 
 strict: *Don’t walk — ought: competence (endorse).*
 
@@ -250,7 +250,7 @@ loose: *Finally, a third goal: we're actually enjoying this.*
 
 **C:** `harogul hanunul zenenun vawalal zul.`
 
-gloss: `h-COMMON` · `h-rain` · `z-someone` · `v-walking` · `z-not`
+gloss: `h-COMMON` · `h-rain` · `z-someone` · `v-walk` · `z-not`
 
 strict: *Usually, when it rains, a person does not walk.*
 

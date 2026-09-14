@@ -62,7 +62,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 ☹️,frown,ovoro,sadness,frown shows sadness
 😮,surprise,uruze,amazement,surprise shows amazement
 😳,blush,ubulu,embarrassment,blush shows embarrassment
-🥺,pleading,ebele,appeal,pleading eyes appeal
+🥺,plead,ebele,appeal,pleading eyes appeal
 🥹,touched,ododu,,
 😨,fear,eveva,dread,fear means dread
 😰,anxious,anuzu,anxiety,anxious means anxiety
@@ -76,7 +76,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 😤,huff,uhuvu,,
 😡,rage,arage,fury,rage means fury
 😠,angry,anaga,anger,angry means anger
-🤬,cursing,ugu,profanity,cursing shows profanity
+🤬,curse,ugu,profanity,cursing shows profanity
 😈,devil,edevu,mischief,devil shows mischief
 💀,skull,uzulu,death,skull means death
 ☠️,skull-crossbones,ulone,danger,skull warns danger
@@ -195,7 +195,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🤵,tuxedo,uduze,formality,tuxedo signals formality
 👰,veil,evevu,matrimony,veil marks matrimony
 🫄,pregnant,ebega,expectancy,pregnant shows expectancy
-🤱,breastfeeding,ezedu,,
+🤱,breastfeed,ezedu,,
 🧑‍🍼,feeding-baby,evedu,nurturing,feeding baby is nurturing
 👼,angel,anele,,
 🎅,santa-claus,anagu,,
@@ -216,33 +216,33 @@ emoji,literal,clarity,metaphorical,mnemonic
 🫈,bigfoot,ubugu,elusiveness,bigfoot stays elusive
 💆,massage,azage,relief,massage brings relief
 💇,haircut,ahahu,grooming,haircut is grooming
-🚶,walking,awala,,
-🧍,standing,azanu,presence,stand shows presence
-🧎,kneeling,egene,submission,kneel shows submission
+🚶,walk,awala,,
+🧍,stand,azanu,presence,stand shows presence
+🧎,kneel,egene,submission,kneel shows submission
 🧑‍🦼,motorized-wheelchair,omodo,,
 🧑‍🦽,propel,obobe,independence,self-propelling a chair shows independence
-🏃,running,urunu,,
+🏃,run,urunu,,
 🧑‍🩰,ballet,abale,,
-🕺,dancing,adana,,
+🕺,dance,adana,,
 🕴️,levitate,elevu,elevation,levitate means elevation
 👯,partying,abaro,revelry,partying dancers show revelry
 🧖,sauna,azazu,relaxation,sauna brings relaxation
-🧗,climbing,ugumu,failure,a climb that doesn't top out is still climbing; failure is an attempt that didn't stick yet
-🤺,fencing,evene,rivalry,fencing is rivalry
-🏇,horse-racing,ohoro,pursuit,horse race is pursuit
-⛷️,skiing,ugunu,,
-🏂,snowboarding,ozono,,
-🏄,surfing,uzuvu,,
-🚣,rowing,orowu,,
-🏊,swimming,uzuwu,,
-🏋️,weightlifting,ewewu,exertion,weightlift demands exertion
-🚴,biking,ubu,,
-🚵,mountain-biking,omo,adventure,mountain bike is adventure
+🧗,climb,ugumu,failure,a climb that doesn't top out is still climbing; failure is an attempt that didn't stick yet
+🤺,fence,evene,rivalry,fencing is rivalry
+🏇,horse-race,ohoro,pursuit,horse race is pursuit
+⛷️,ski,ugunu,,
+🏂,snowboard,ozono,,
+🏄,surf,uzuvu,,
+🚣,row,orowu,,
+🏊,swim,uzuwu,,
+🏋️,weightlift,ewewu,exertion,weightlift demands exertion
+🚴,bike,ubu,,
+🚵,mountain-bike,omo,adventure,mountain bike is adventure
 🤸,cartwheel,agade,exuberance,cartwheel shows exuberance
-🤼‍♂️,wrestling,ewere,,
+🤼‍♂️,wrestle,ewere,,
 🤽,water-polo,awade,competition,water polo is competition
 🤾,handball,ahada,teamwork,handball needs teamwork
-🤹,juggling,ujugu,multitasking,juggle is multitasking
+🤹,juggle,ujugu,multitasking,juggle is multitasking
 🧘,meditation,emedu,mindfulness,meditate builds mindfulness
 🛀,bath,abada,cleansing,bath brings cleansing
 🛌,in-bed,unebe,,
@@ -518,7 +518,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 ⛰️,mountain,omona,challenge,mountains are hard to climb; a challenge is hard to face
 🛘,landslide,alana,collapse,landslide is sudden collapse
 🌋,volcano,olano,eruption,a volcano bursts outward; eruption is bursting emotion
-🏕️,camping,agama,,
+🏕️,camp,agama,,
 🏖️,beach,abaha,weekend,beach marks the off-work stretch; weekend is the leisure days
 🏜️,desert,ezere,barren,a desert has little life; barren is empty of results
 🏝️,island,uzala,isolation,an island stands apart; isolation is standing apart
@@ -684,7 +684,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 🥋,martial-arts,arula,discipline,martial arts train controlled skill; discipline is controlled practice
 🥅,goal,olala,objective,goal net is what you aim for; objective is the target aim
 ⛳,golf,ogovo,,
-⛸️,skating,agadu,,
+⛸️,skate,agadu,,
 🎣,fishing,uvuvu,memory,fishing pulls something up from opaque water; memory retrieves from the past (may be a boot)
 🤿,diving-mask,uduvu,,
 🎽,running-shirt,ununu,,
@@ -1049,7 +1049,7 @@ emoji,literal,clarity,metaphorical,mnemonic
 〰️,dash-wavy,azavo,hesitation,wavy dash trails off uncertainly; hesitation is holding back action
 💱,currency-exchange,uhane,exchange,currency arrows swap one for another; exchange is swapping between sides
 ⚕️,medical,eduga,,
-♻️,recycling,egogu,reuse,recycle arrows loop material back; reuse is using again
+♻️,recycle,egogu,reuse,recycle arrows loop material back; reuse is using again
 ⚜️,fleur-de-lis,evele,,
 🔱,trident,urude,,
 📛,name-tag,aname,identification,name badge shows who you are; identification is naming who someone is

@@ -36,24 +36,6 @@ docs/grammar/causation.md:216  morph gloss mismatch
   parser:     z-Azawan | g-exclusive-for
 ```
 
-### docs/grammar/causation.md:233
-
-```
-docs/grammar/causation.md:233  morph gloss mismatch
-  agalan: `zazawan vawalal hadorom badorol zululon velebel.`
-  documented: z-Azawan | v-walk | h-if | b-next-clause | z-Ululon | v-sleep
-  parser:     z-Azawan | v-walking | h-if | b-next-clause | z-Ululon | v-sleep
-```
-
-### docs/grammar/causation.md:251
-
-```
-docs/grammar/causation.md:251  morph gloss mismatch
-  agalan: `zazawan vawalal hurugum badorol zululon velebel.`
-  documented: z-Azawan | v-walk | h-because | b-next-clause | z-Ululon | v-sleep
-  parser:     z-Azawan | v-walking | h-because | b-next-clause | z-Ululon | v-sleep
-```
-
 ### docs/grammar/causation.md:273
 
 ```
@@ -72,22 +54,13 @@ docs/grammar/causation.md:288  morph gloss mismatch
   parser:     h-open-to | b-sweat | h-competence-x-prescription
 ```
 
-### docs/grammar/causation.md:438
-
-```
-docs/grammar/causation.md:438  morph gloss mismatch
-  agalan: `zazawan vawalal hurugum badorol zanunul.`
-  documented: z-Azawan | v-walk | h-because | b-next-clause | z-rain
-  parser:     z-Azawan | v-walking | h-because | b-next-clause | z-rain
-```
-
 ### docs/grammar/causation.md:461
 
 ```
 docs/grammar/causation.md:461  morph gloss mismatch
   agalan: `zazawan hodohom vawalal.`
   documented: z-Azawan | h-comment | v-walk
-  parser:     z-Azawan | h-COMMENT | v-walking
+  parser:     z-Azawan | h-COMMENT | v-walk
 ```
 
 ### docs/grammar/causation.md:476
@@ -105,7 +78,7 @@ docs/grammar/causation.md:476  morph gloss mismatch
 docs/grammar/commentary.md:16  morph gloss mismatch
   agalan: `zazawan hodohom vawalal.`
   documented: z-Azawan | h-COMMENT-soft | v-walk
-  parser:     z-Azawan | h-COMMENT | v-walking
+  parser:     z-Azawan | h-COMMENT | v-walk
 ```
 
 ### docs/grammar/commentary.md:26
@@ -117,31 +90,13 @@ docs/grammar/commentary.md:26  morph gloss mismatch
   parser:     j-question | z-Uhubun | h-COMMENT | v-sleep
 ```
 
-### docs/grammar/commentary.md:194
-
-```
-docs/grammar/commentary.md:194  morph gloss mismatch
-  agalan: `zazawan hadezem vawalal.`
-  documented: z-Azawan | h-LIVE | v-walk
-  parser:     z-Azawan | h-LIVE | v-walking
-```
-
 ### docs/grammar/commentary.md:256
 
 ```
 docs/grammar/commentary.md:256  morph gloss mismatch
   agalan: `zazawan hadadem vawalal.`
   documented: z-Azawan | h-NOTIONAL-soft | v-walk
-  parser:     z-Azawan | h-NOTIONAL | v-walking
-```
-
-### docs/grammar/commentary.md:433
-
-```
-docs/grammar/commentary.md:433  morph gloss mismatch
-  agalan: `zazawan gelulul wuvuvum vawalal.`
-  documented: z-Azawan | g-blue | w-WITNESSED | v-walk
-  parser:     z-Azawan | g-blue | w-WITNESSED | v-walking
+  parser:     z-Azawan | h-NOTIONAL | v-walk
 ```
 
 ### docs/grammar/commentary.md:461
@@ -204,7 +159,7 @@ docs/grammar/comparatives.md:63  morph gloss mismatch
 docs/grammar/comparatives.md:235  morph gloss mismatch
   agalan: `zululon zazawan zel hohogem vawalal.`
   documented: z-Ululon | z-Azawan | z-rank/more | h-intense | v-walk
-  parser:     z-Ululon | z-Azawan | z-rank/more | h-intensity | v-walking
+  parser:     z-Ululon | z-Azawan | z-rank/more | h-intensity | v-walk
 ```
 
 ### docs/grammar/comparatives.md:260
@@ -225,24 +180,6 @@ docs/grammar/comparatives.md:283  morph gloss mismatch
   parser:     z-Azawan | z-Ululon | z-rank/more | g-challenge | b-ruler | g-two
 ```
 
-### docs/grammar/core.md:16
-
-```
-docs/grammar/core.md:16  morph gloss mismatch
-  agalan: `zodogol vawalal.`
-  documented: z-dog | v-walk
-  parser:     z-dog | v-walking
-```
-
-### docs/grammar/core.md:24
-
-```
-docs/grammar/core.md:24  morph gloss mismatch
-  agalan: `zazawan vawalal.`
-  documented: z-Azawan | v-walk
-  parser:     z-Azawan | v-walking
-```
-
 ### docs/grammar/core.md:36
 
 ```
@@ -252,76 +189,13 @@ docs/grammar/core.md:36  morph gloss mismatch
   parser:     z-dog | d-cat | v-eye
 ```
 
-### docs/grammar/core.md:47
-
-```
-docs/grammar/core.md:47  morph gloss mismatch
-  agalan: `zodogol gelulul vawalal.`
-  documented: z-dog | g-blue | v-walk
-  parser:     z-dog | g-blue | v-walking
-```
-
-### docs/grammar/core.md:58
-
-```
-docs/grammar/core.md:58  morph gloss mismatch
-  agalan: `zodogol gelulul welem vawalal.`
-  documented: z-dog | g-blue | w-size | v-walk
-  parser:     z-dog | g-blue | w-size | v-walking
-```
-
-### docs/grammar/core.md:69
-
-```
-docs/grammar/core.md:69  morph gloss mismatch
-  agalan: `zodogol hadazam vawalal.`
-  documented: z-dog | h-haste | v-walk
-  parser:     z-dog | h-haste | v-walking
-```
-
-### docs/grammar/core.md:125
-
-```
-docs/grammar/core.md:125  morph gloss mismatch
-  agalan: `jel vawalal.`
-  documented: j-command | v-walk
-  parser:     j-command | v-walking
-```
-
 ### docs/grammar/core.md:151
 
 ```
 docs/grammar/core.md:151  morph gloss mismatch
   agalan: `zazawan dululon vezehel dadorol zodogol vurunul.`
   documented: z-Azawan | d-Ululon | v-tell | d-next-clause | z-dog | v-run
-  parser:     z-Azawan | d-Ululon | v-speech | d-next-clause | z-dog | v-running
-```
-
-### docs/grammar/core.md:159
-
-```
-docs/grammar/core.md:159  morph gloss mismatch
-  agalan: `zazawan vuzunul hurugum badorol zululon vawalal.`
-  documented: z-Azawan | v-sing | h-because | b-next-clause | z-Ululon | v-walk
-  parser:     z-Azawan | v-sing | h-because | b-next-clause | z-Ululon | v-walking
-```
-
-### docs/grammar/core.md:191
-
-```
-docs/grammar/core.md:191  morph gloss mismatch
-  agalan: `zodogol vawalal. xezazal zagadal vurunul.`
-  documented: z-dog | v-walk | x-therefore | z-cat | v-run
-  parser:     z-dog | v-walking | x-therefore | z-cat | v-running
-```
-
-### docs/grammar/core.md:366
-
-```
-docs/grammar/core.md:366  morph gloss mismatch
-  agalan: `jam zazawan vawalal.`
-  documented: j-statement | z-Azawan | v-walk
-  parser:     j-statement | z-Azawan | v-walking
+  parser:     z-Azawan | d-Ululon | v-speech | d-next-clause | z-dog | v-run
 ```
 
 ### docs/grammar/core.md:405
@@ -330,7 +204,7 @@ docs/grammar/core.md:366  morph gloss mismatch
 docs/grammar/core.md:405  morph gloss mismatch
   agalan: `hozal bazawan zululon vawalal.`
   documented: h-topic | b-Azawan | z-Ululon | v-walk
-  parser:     h-hash | b-Azawan | z-Ululon | v-walking
+  parser:     h-hash | b-Azawan | z-Ululon | v-walk
 ```
 
 ### docs/grammar/core.md:420
@@ -340,24 +214,6 @@ docs/grammar/core.md:420  morph gloss mismatch
   agalan: `zodogol gonunul bazawan gelulul.`
   documented: z-dog | g-same | b-Azawan | g-blue
   parser:     z-dog | g-SAME | b-Azawan | g-blue
-```
-
-### docs/grammar/core.md:468
-
-```
-docs/grammar/core.md:468  morph gloss mismatch
-  agalan: `zazawan guzumum hurugum badorol zululon vawalal hurugum badorol zuhubun velebel.`
-  documented: z-Azawan | g-happy | h-because | b-next-clause | z-Ululon | v-walk | h-because | b-next-clause | z-Uhubun | v-sleep
-  parser:     z-Azawan | g-happy | h-because | b-next-clause | z-Ululon | v-walking | h-because | b-next-clause | z-Uhubun | v-sleep
-```
-
-### docs/grammar/joins.md:53
-
-```
-docs/grammar/joins.md:53  morph gloss mismatch
-  agalan: `zazawan vawalal zululon vurunul xam.`
-  documented: z-Azawan | v-walk | z-Ululon | v-run | x-and.open
-  parser:     z-Azawan | v-walking | z-Ululon | v-running | x-and.open
 ```
 
 ### docs/grammar/joins.md:64
@@ -429,7 +285,7 @@ docs/grammar/joins.md:511  morph gloss mismatch
 docs/grammar/numbers-applied.md:60  morph gloss mismatch
   agalan: `zazawan burulel g+2 vawalal.`
   documented: z-Azawan | b-measurement | g-+2 | v-walk
-  parser:     z-Azawan | b-ruler | g-two | v-walking
+  parser:     z-Azawan | b-ruler | g-two | v-walk
 ```
 
 ### docs/grammar/numbers-applied.md:104
@@ -492,7 +348,7 @@ docs/grammar/numbers.md:398  morph gloss mismatch
 docs/grammar/numbers.md:491  morph gloss mismatch
   agalan: `zululon vawalal h+3.`
   documented: z-Ululon | v-walk | h-three-times
-  parser:     z-Ululon | v-walking | h-three
+  parser:     z-Ululon | v-walk | h-three
 ```
 
 ### docs/grammar/numbers.md:607
@@ -537,7 +393,7 @@ docs/grammar/numeric-derivation.md:100  morph gloss mismatch
 docs/grammar/plan-decision.md:14  morph gloss mismatch
   agalan: `zazawan howoram vawalal.`
   documented: z-Azawan | h-PLAN-sketch | v-walk
-  parser:     z-Azawan | h-plan-sketch | v-walking
+  parser:     z-Azawan | h-plan-sketch | v-walk
 ```
 
 ### docs/grammar/plan-decision.md:34
@@ -546,7 +402,7 @@ docs/grammar/plan-decision.md:14  morph gloss mismatch
 docs/grammar/plan-decision.md:34  morph gloss mismatch
   agalan: `zululon howoral vawalal.`
   documented: z-Ululon | h-PLAN-itinerary | v-walk
-  parser:     z-Ululon | h-plan-itinerary | v-walking
+  parser:     z-Ululon | h-plan-itinerary | v-walk
 ```
 
 ### docs/grammar/plan-decision.md:51
@@ -564,7 +420,7 @@ docs/grammar/plan-decision.md:51  morph gloss mismatch
 docs/grammar/plan-decision.md:215  morph gloss mismatch
   agalan: `zazawan howoral hegegel vawalal.`
   documented: z-Azawan | h-PLAN-itinerary | h-DECISION-irreversible | v-walk
-  parser:     z-Azawan | h-plan-itinerary | h-DECISION-irreversible | v-walking
+  parser:     z-Azawan | h-plan-itinerary | h-DECISION-irreversible | v-walk
 ```
 
 ### docs/grammar/plan-decision.md:226
@@ -574,15 +430,6 @@ docs/grammar/plan-decision.md:226  morph gloss mismatch
   agalan: `helezom habawam vanunul.`
   documented: h-PREDICT | h-PATTERN | v-rain
   parser:     h-predict | h-PATTERN | v-rain
-```
-
-### docs/grammar/plurality.md:13
-
-```
-docs/grammar/plurality.md:13  morph gloss mismatch
-  agalan: `zazawanx vawalal.`
-  documented: z-Azawan-x | v-walk
-  parser:     z-Azawan-x | v-walking
 ```
 
 ### docs/grammar/plurality.md:23
@@ -603,15 +450,6 @@ docs/grammar/plurality.md:31  morph gloss mismatch
   parser:     z-cat-x | v-chair
 ```
 
-### docs/grammar/plurality.md:58
-
-```
-docs/grammar/plurality.md:58  morph gloss mismatch
-  agalan: `zedonenx vawalal.`
-  documented: z-listener-x | v-walk
-  parser:     z-listener-x | v-walking
-```
-
 ### docs/grammar/plurality.md:84
 
 ```
@@ -619,15 +457,6 @@ docs/grammar/plurality.md:84  morph gloss mismatch
   agalan: `zazawan dugobonx vejel.`
   documented: z-Azawan | d-speaker-x | v-see
   parser:     z-Azawan | d-speaker-x | v-eye
-```
-
-### docs/grammar/plurality.md:250
-
-```
-docs/grammar/plurality.md:250  morph gloss mismatch
-  agalan: `zazawanx vawalal.`
-  documented: z-Azawan-x | v-walk
-  parser:     z-Azawan-x | v-walking
 ```
 
 ### docs/grammar/predication.md:14
@@ -654,7 +483,7 @@ docs/grammar/predication.md:24  morph gloss mismatch
 docs/grammar/pronouns.md:16  morph gloss mismatch
   agalan: `zazawan vawalal. zazar vajul.`
   documented: z-Azawan | v-walk | z-←Azawan | v-sit
-  parser:     z-Azawan | v-walking | z-←Azawan | v-chair
+  parser:     z-Azawan | v-walk | z-←Azawan | v-chair
 ```
 
 ### docs/grammar/pronouns.md:24
@@ -663,34 +492,7 @@ docs/grammar/pronouns.md:16  morph gloss mismatch
 docs/grammar/pronouns.md:24  morph gloss mismatch
   agalan: `zodogol vawalal. zodor vajul.`
   documented: z-dog | v-walk | z-←dog | v-sit
-  parser:     z-dog | v-walking | z-←dog | v-chair
-```
-
-### docs/grammar/pronouns.md:47
-
-```
-docs/grammar/pronouns.md:47  morph gloss mismatch
-  agalan: `zululon vawalal.`
-  documented: z-Ululon | v-walk
-  parser:     z-Ululon | v-walking
-```
-
-### docs/grammar/pronouns.md:69
-
-```
-docs/grammar/pronouns.md:69  morph gloss mismatch
-  agalan: `zahan vawalal.`
-  documented: z-interlocutors | v-walk
-  parser:     z-interlocutors | v-walking
-```
-
-### docs/grammar/pronouns.md:245
-
-```
-docs/grammar/pronouns.md:245  morph gloss mismatch
-  agalan: `zazawan vawalal. zululon vurunul. xazawar velebel.`
-  documented: z-Azawan | v-walk | z-Ululon | v-run | x-←Azawan | v-sleep
-  parser:     z-Azawan | v-walking | z-Ululon | v-running | x-←Azawan | v-sleep
+  parser:     z-dog | v-walk | z-←dog | v-chair
 ```
 
 ### docs/grammar/pronouns.md:257
@@ -711,40 +513,13 @@ docs/grammar/pronouns.md:275  morph gloss mismatch
   parser:     z-listener-x | v-chair
 ```
 
-### docs/grammar/pronouns.md:421
-
-```
-docs/grammar/pronouns.md:421  morph gloss mismatch
-  agalan: `zodogol vawalal. zawalar gelem.`
-  documented: z-dog | v-walk | z-←walk | g-size
-  parser:     z-dog | v-walking | z-←walking | g-size
-```
-
-### docs/grammar/questions.md:19
-
-```
-docs/grammar/questions.md:19  morph gloss mismatch
-  agalan: `jol zazawan vawalal?`
-  documented: j-question | z-Azawan | v-walk
-  parser:     j-question | z-Azawan | v-walking
-```
-
 ### docs/grammar/questions.md:33
 
 ```
 docs/grammar/questions.md:33  morph gloss mismatch
   agalan: `jol zal vawalal?`
   documented: j-question | z-none | v-walk
-  parser:     j-question | z-and | v-walking
-```
-
-### docs/grammar/questions.md:46
-
-```
-docs/grammar/questions.md:46  morph gloss mismatch
-  agalan: `jol zar vawalal?`
-  documented: j-question | z-who | v-walk
-  parser:     j-question | z-who | v-walking
+  parser:     j-question | z-and | v-walk
 ```
 
 ### docs/grammar/questions.md:80
@@ -765,22 +540,13 @@ docs/grammar/questions.md:92  morph gloss mismatch
   parser:     j-question | z-who | v-eye | d-dog
 ```
 
-### docs/grammar/questions.md:150
-
-```
-docs/grammar/questions.md:150  morph gloss mismatch
-  agalan: `zazawan vawalal. jael.`
-  documented: z-Azawan | v-walk | j-yes
-  parser:     z-Azawan | v-walking | j-yes
-```
-
 ### docs/grammar/questions.md:345
 
 ```
 docs/grammar/questions.md:345  morph gloss mismatch
   agalan: `jol zuhubun vawalal har?`
   documented: j-question | z-Uhubun | v-walk | h-when
-  parser:     j-question | z-Uhubun | v-walking | h-never
+  parser:     j-question | z-Uhubun | v-walk | h-never
 ```
 
 ### docs/grammar/questions.md:365
@@ -816,16 +582,7 @@ docs/grammar/reference-suffix.md:211  morph gloss mismatch
 docs/grammar/reference-suffix.md:238  morph gloss mismatch
   agalan: `zodunaxalanen vawalal.`
   documented: z-Odunaxalanen | v-walk
-  parser:     z-Oduna-x-Alanen | v-walking
-```
-
-### docs/grammar/reference-suffix.md:259
-
-```
-docs/grammar/reference-suffix.md:259  morph gloss mismatch
-  agalan: `zabogon vawalal.`
-  documented: z-Abogon | v-walk
-  parser:     z-Abogon | v-walking
+  parser:     z-Oduna-x-Alanen | v-walk
 ```
 
 ### docs/grammar/reference-suffix.md:270
@@ -837,49 +594,13 @@ docs/grammar/reference-suffix.md:270  morph gloss mismatch
   parser:     z-Abogo-x-Ululon
 ```
 
-### docs/grammar/restrictors.md:13
-
-```
-docs/grammar/restrictors.md:13  morph gloss mismatch
-  agalan: `zazawan vawalal hanunul hal.`
-  documented: z-Azawan | v-walk | h-rain | h-only-when
-  parser:     z-Azawan | v-walking | h-rain | h-only-when
-```
-
-### docs/grammar/restrictors.md:21
-
-```
-docs/grammar/restrictors.md:21  morph gloss mismatch
-  agalan: `zululon vawalal hal.`
-  documented: z-Ululon | v-walk | h-never
-  parser:     z-Ululon | v-walking | h-never
-```
-
-### docs/grammar/restrictors.md:29
-
-```
-docs/grammar/restrictors.md:29  morph gloss mismatch
-  agalan: `zazawan vawalal hadazam howom.`
-  documented: z-Azawan | v-walk | h-haste | h-quietude
-  parser:     z-Azawan | v-walking | h-haste | h-quietude
-```
-
 ### docs/grammar/restrictors.md:63
 
 ```
 docs/grammar/restrictors.md:63  morph gloss mismatch
   agalan: `zululon vurunul har.`
   documented: z-Ululon | v-run | h-sometimes
-  parser:     z-Ululon | v-running | h-never
-```
-
-### docs/grammar/restrictors.md:77
-
-```
-docs/grammar/restrictors.md:77  morph gloss mismatch
-  agalan: `jol zuhubun vawalal hanunul?`
-  documented: j-question | z-Uhubun | v-walk | h-rain
-  parser:     j-question | z-Uhubun | v-walking | h-rain
+  parser:     z-Ululon | v-run | h-never
 ```
 
 ### docs/grammar/restrictors.md:145
@@ -897,7 +618,7 @@ docs/grammar/restrictors.md:145  morph gloss mismatch
 docs/grammar/restrictors.md:281  morph gloss mismatch
   agalan: `zuhubun vuzunul hadorom zazawan vawalal badorol.`
   documented: z-Uhubun | v-sing | h-next-clause | z-Azawan | v-walk | b-next-clause
-  parser:     z-Uhubun | v-sing | h-if | z-Azawan | v-walking | b-next-clause
+  parser:     z-Uhubun | v-sing | h-if | z-Azawan | v-walk | b-next-clause
 ```
 
 ### docs/grammar/restrictors.md:297
@@ -906,7 +627,7 @@ docs/grammar/restrictors.md:281  morph gloss mismatch
 docs/grammar/restrictors.md:297  morph gloss mismatch
   agalan: `zazawan vawalal hanunul hunugul hol.`
   documented: z-Azawan | v-walk | h-rain | h-night | h-either-when
-  parser:     z-Azawan | v-walking | h-rain | h-night | h-when-one
+  parser:     z-Azawan | v-walk | h-rain | h-night | h-when-one
 ```
 
 ### docs/grammar/restrictors.md:332
@@ -915,7 +636,7 @@ docs/grammar/restrictors.md:297  morph gloss mismatch
 docs/grammar/restrictors.md:332  morph gloss mismatch
   agalan: `zazawan vawalal hamubum hozorem hel.`
   documented: z-Azawan | v-walk | h-emergency | h-convenience | h-preferably-when
-  parser:     z-Azawan | v-walking | h-emergency | h-convenience | h-when-ranked
+  parser:     z-Azawan | v-walk | h-emergency | h-convenience | h-when-ranked
 ```
 
 ### docs/grammar/restrictors.md:349
@@ -936,15 +657,6 @@ docs/grammar/revisers.md:53  morph gloss mismatch
   parser:     z-handball | except | z-Azawan
 ```
 
-### docs/grammar/revisers.md:93
-
-```
-docs/grammar/revisers.md:93  morph gloss mismatch
-  agalan: `al zazawan vawalal.`
-  documented: additionally | z-Azawan | v-walk
-  parser:     additionally | z-Azawan | v-walking
-```
-
 ### docs/grammar/revisers.md:265
 
 ```
@@ -963,24 +675,6 @@ docs/grammar/revisers.md:290  morph gloss mismatch
   parser:     z-handball | including.open | z-Azawan | except | z-Ululon
 ```
 
-### docs/grammar/revisers.md:306
-
-```
-docs/grammar/revisers.md:306  morph gloss mismatch
-  agalan: `vurunul om vawalal.`
-  documented: v-run | instead.open | v-walk
-  parser:     v-running | instead.open | v-walking
-```
-
-### docs/grammar/revisers.md:330
-
-```
-docs/grammar/revisers.md:330  morph gloss mismatch
-  agalan: `jazawan al zululon vawalal.`
-  documented: j-Azawan | additionally | z-Ululon | v-walk
-  parser:     j-Azawan | additionally | z-Ululon | v-walking
-```
-
 ### docs/grammar/revisers.md:469
 
 ```
@@ -996,7 +690,7 @@ docs/grammar/revisers.md:469  morph gloss mismatch
 docs/grammar/roles.md:15  morph gloss mismatch
   agalan: `zaxuvugul vurunul.`
   documented: z-←agent-x-fight | v-run
-  parser:     z-agent-x-fight | v-running
+  parser:     z-agent-x-fight | v-run
 ```
 
 ### docs/grammar/roles.md:73
@@ -1023,16 +717,7 @@ docs/grammar/roles.md:85  morph gloss mismatch
 docs/grammar/roles.md:230  morph gloss mismatch
   agalan: `jel vawalal hewezexazawan.`
   documented: j-command | v-walk | h-west-x-Azawan
-  parser:     j-command | v-walking | h-Eweze-x-Azawan
-```
-
-### docs/grammar/roles.md:238
-
-```
-docs/grammar/roles.md:238  morph gloss mismatch
-  agalan: `jel vawalal hewezel.`
-  documented: j-command | v-walk | h-west
-  parser:     j-command | v-walking | h-west
+  parser:     j-command | v-walk | h-Eweze-x-Azawan
 ```
 
 ### docs/grammar/roles.md:246
@@ -1041,7 +726,7 @@ docs/grammar/roles.md:238  morph gloss mismatch
 docs/grammar/roles.md:246  morph gloss mismatch
   agalan: `jel zedonen vawalal hewezexedonen.`
   documented: j-command | z-listener | v-walk | h-west-x-listener
-  parser:     j-command | z-listener | v-walking | h-Eweze-x-listener
+  parser:     j-command | z-listener | v-walk | h-Eweze-x-listener
 ```
 
 ### docs/grammar/roles.md:283
@@ -1050,7 +735,7 @@ docs/grammar/roles.md:246  morph gloss mismatch
 docs/grammar/roles.md:283  morph gloss mismatch
   agalan: `jel vawalal habal.`
   documented: j-command | v-walk | h-up
-  parser:     j-command | v-walking | h-pray
+  parser:     j-command | v-walk | h-pray
 ```
 
 ### docs/grammar/roles.md:305
@@ -1068,7 +753,7 @@ docs/grammar/roles.md:305  morph gloss mismatch
 docs/grammar/roles.md:474  morph gloss mismatch
   agalan: `zazawan vawalal. xezazal zululon vurunul.`
   documented: z-Azawan | v-walk | x-east | z-Ululon | v-run
-  parser:     z-Azawan | v-walking | x-therefore | z-Ululon | v-running
+  parser:     z-Azawan | v-walk | x-therefore | z-Ululon | v-run
 ```
 
 ### docs/grammar/spans.md:18
@@ -1095,7 +780,7 @@ docs/grammar/spans.md:55  morph gloss mismatch
 docs/grammar/spans.md:99  morph gloss mismatch
   agalan: `zazawan vawalal h(huzumum).`
   documented: z-Azawan | v-walk | h-happy
-  parser:     z-Azawan | v-walking | h-huzumum
+  parser:     z-Azawan | v-walk | h-huzumum
 ```
 
 ### docs/grammar/spans.md:122
@@ -1150,15 +835,6 @@ docs/grammar/special-vocabulary.md:58  morph gloss mismatch
   agalan: `zazawan zagegol g#2 vezehel.`
   documented: z-Azawan | z-solution | g-second | v-tell
   parser:     z-Azawan | z-solution | g-second | v-speech
-```
-
-### docs/grammar/special-vocabulary.md:211
-
-```
-docs/grammar/special-vocabulary.md:211  morph gloss mismatch
-  agalan: `zazawan hual vawalal harogul.`
-  documented: z-Azawan | h-always | v-walk | h-COMMON
-  parser:     z-Azawan | h-always | v-walking | h-COMMON
 ```
 
 ### docs/grammar/values.md:51

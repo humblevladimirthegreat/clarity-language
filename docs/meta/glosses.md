@@ -26,7 +26,7 @@ A gloss should answer: *what is each Agalan piece doing in the clause — in Eng
 | **Free English (loose)** | Same places, under the morph gloss — **default** when only one free line | Natural paraphrase in `"double quotes"`; drop Agalan packaging English doesn’t mark |
 | **Free English (strict)** | Optional second quoted line (or alone when teaching packaging) | Keeps join packaging, value endings, evidential tags, cast letters, …; teaching dialogues may show **both** labeled `strict:` / `loose:` |
 | **Grammar-table gloss** | Inventory / contrast tables in grammar docs | Short free English in **English** (often *italic* in table cells); optional parenthetical notes — loose unless the row teaches packaging. **Cue** is not a gloss ([cues](grammar-docs.md#cues-columns)). |
-| **Lexicon fields** | `lexicon-published.csv` / overlays | Literal / metaphorical / mnemonic / definition — **inputs** to morph glosses, not utterance glosses. Literal English in a **Cue** cell is still not the morph gloss. |
+| **Lexicon fields** | `lexicon-published.csv` / overlays | Literal / metaphorical / mnemonic / definition — **inputs** to morph glosses, not utterance glosses. Verb senses use the [uninflected lemma](#english-lemma). Literal English in a **Cue** cell is still not the morph gloss. |
 
 Grammar tables may keep a column named **Gloss** for free English. When a table needs morphology, use a **Morph** column or a separate morph line in the same format as dialogues.
 
@@ -154,7 +154,7 @@ Same English label for `zugobom` and `zugobon` is fine: both are the *speaker* s
 ```
 
 - **PoS** — single letter matching the written prefix (`j` `z` `d` `b` `v` `g` `w` `h` `x`). Left-bound adjectives: `gl-…`.
-- **english** — short English label for the **active** sense (hyphens OK inside a label: `next-clause`, `or-exactly-one`). **No** Agalan root letters. **No** writing glyphs **`@`** / **`~`** (those mark **-n** / **-m** in Agalan spelling only: numbers, span fences).
+- **english** — short English label for the **active** sense (hyphens OK inside a label: `next-clause`, `or-exactly-one`). **Uninflected lemma** for verb senses ([english lemma](#english-lemma)). **No** Agalan root letters. **No** writing glyphs **`@`** / **`~`** (those mark **-n** / **-m** in Agalan spelling only: numbers, span fences).
 - **`-x-`** — mid-word compound / stance / role / span hinge; each piece is English (or a stable TAG).
 - **-l / -m / -n** — **omit**. They only choose which English sense-root is in play. Do not re-spell them as `-l` / `-m` / `-n` or as `@` / `~`.
 - **Names** — the english slot is the **English name** (`z-Azawan`, `z-Hamlet`, `z-Abogon`, `z-Uzuzu-x-Ogove`), not the virtue or kind that formed the stem, and not `z-grace@`.
@@ -180,8 +180,25 @@ Do **not** write `-l` / `-m` / `-n`, **`@`**, or **`~`** after a sense. Named **
 
 - Prefer lexicon / overlay wording when short (`tea`, `speaker`, `witnessed`).
 - Prefer **stable tags** for closed inventory (uppercase OK when the docs already use them): `COMMENT`, `DECISION`, `SAME`, `WITNESSED`, `LIVE`, `ABIL`.
+- Verb senses: [uninflected lemma](#english-lemma) (`walk`, not `walking`).
 - Do **not** use arrows (`→`) or etymology chains.
 - Do **not** put PoS names in the label (`noun`, `proper`). Named reference is the English name, not the word *proper*.
+
+### English lemma (no *-ing* / *-s* / *-ed*)
+<a id="english-lemma"></a>
+
+The lexicon **literal** and **metaphorical** fields, overlay **definition** labels used as senses, and the morph **english** slot all use the same **citation lemma**: the form you would look up in an English dictionary, not a conjugated or gerund form.
+
+| Sense is a verb (or a verb used as any PoS) | Write | Not |
+|---------------------------------------------|-------|-----|
+| dance, run, walk, climb, swim | `dance`, `run`, `walk`, … | `dancing`, `running`, `walking`, … |
+| choose, think, sing | `choose`, `think`, `sing` | `choosing`, `thinks`, `sang` |
+
+Agalan does not mark English tense or progressive aspect on the root. Conjugation belongs only in **free English** (`"Azawan walks."`, `"they are dancing."`). Morph stays `v-walk` / `v-dance` even when the quote uses *walks* / *dancing*.
+
+**Keep *-ing*** only when that string is not a verb lemma — a kind English names that way (`hearing-aid`, `lightning`, `wedding`), a closed tag the grammar already froze, or when stripping it would collide with another published literal (`fishing` vs `fish`, `cooking` vs `cook`, `partying` vs `party`). Do not append *-ing* to mark “this row is used as `/v/`.”
+
+When you retie a published literal (`dancing` → `dance`), morph lines that copied the old string follow (`v-walking` → `v-walk`, `v-walking-unable-temporary` → `v-walk-unable-temporary`).
 
 ### Anaphors (`-r`)
 
@@ -215,7 +232,7 @@ Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) —
 |--------|-----------------|-------------|
 | Ordinary / name compound | `jubunexunowen` | `j-Ubune-x-Unowen` |
 | Ordinary (three roots) | `zuzuzuxogovexadedan` | `z-Uzuzu-x-Ogove-x-Adedan` |
-| Ability / values stance | `vawalaxel` | `v-walking-unable-temporary` |
+| Ability / values stance | `vawalaxel` | `v-walk-unable-temporary` |
 | Values stance on need | `holozoxem` | `h-competence-x-motive` |
 | Role compound | `zaxezeher` | `z-agent-x-dialogue` |
 | Span open / close | `hexal` … `xuxul` | `h-aside-x-multi` · … · `x-span-close` |
@@ -303,7 +320,7 @@ Bake join / reviser **job** into the English label (including open vs closed whe
 
 > `juel zugobon vawalaxel holozoxem.`
 >
-> j-no | z-speaker | v-walking-unable-temporary | h-competence-x-motive
+> j-no | z-speaker | v-walk-unable-temporary | h-competence-x-motive
 >
 > "No — I can't walk right now."
 
@@ -319,7 +336,7 @@ Bake join / reviser **job** into the English label (including open vs closed whe
 
 > `jael xezazal zahan howoram vawalal vul.`
 >
-> j-yes | x-therefore | z-interlocutors | h-plan-sketch | v-walking | v-not
+> j-yes | x-therefore | z-interlocutors | h-plan-sketch | v-walk | v-not
 >
 > "Yes — so we're planning not to walk."
 
@@ -348,6 +365,7 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 | `zam` / `hal` / `am` as the whole morph | Agalan letters where the job belongs | `z-and.open` / `h-only-when` / `including.open` |
 | `z-microphone-l` | Ending already chose the literal root | `z-microphone` |
 | `z-microphone→speaker` | Etymology chain | `z-speaker` |
+| `v-dancing` / `v-walking` for a verb root | English progressive / gerund is not the lemma | `v-dance` / `v-walk` ([english lemma](#english-lemma)) |
 | Morph line that is only idiomatic English | Confuses layers | Morph + separate quoted free line |
 | Morph gloss that matches the quoted English | Redundant; the quote already is the sense | Omit that line ([example block](#example-block)). Keep it when it unpacks **`x`**, PoS, several words, … |
 | `gloss:` + per-token backticks inside a code fence | Markdown renders raw; Agalan and gloss look the same | Blockquote; backticks on Agalan only |
@@ -357,7 +375,7 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 
 ## Checklist
 
-1. English senses only — no Agalan root spellings.
+1. English senses only — no Agalan root spellings. Verb senses are the uninflected lemma (`dance`, not `dancing`).
 2. No `→` etymology chains.
 3. No **-l** / **-m** / **-n**, and no **`@`** / **`~`**, when they only selected the sense-root. Named **-n** is the English name (`z-Azawan`), not `-n`, `@`, or `-proper`.
 4. Compounds / stance / role / span `x` pieces are always hyphenated segments (`j-Ubune-x-Unowen`). Do not fuse a name into one unsegmented English label.
