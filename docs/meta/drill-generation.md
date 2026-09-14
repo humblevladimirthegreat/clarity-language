@@ -1,6 +1,6 @@
 # Generate translation drills
 
-Executable editor policy: add end-of-stage Eng ↔ Agalan checkpoints to learner grammar pages without using forms the learner has not been taught.
+Executable editor policy: add end-of-stage Eng ↔ Agalan checkpoints to learner grammar pages without using **morphology** the learner has not been taught. Checkpoint **content** roots follow the [setting](translation-exercises.md#checkpoint-setting).
 
 **How to invoke.** Point here and name a grammar file (or one stage). No extra prompt is required:
 
@@ -8,7 +8,7 @@ Executable editor policy: add end-of-stage Eng ↔ Agalan checkpoints to learner
 - *… for `docs/grammar/questions.md` Intermediate.*
 - *… for core Beginner* (already exists — skip unless asked to replace).
 
-This page owns **path allowlist**, **root bank**, and **generation procedure**. Drill *shape* (spoiler template, house names, item counts) stays in [translation-exercises.md](translation-exercises.md). Stages: [learning-levels.md](learning-levels.md#cross-doc-path). Example prose: [grammar-docs.md](grammar-docs.md). Grammar pages must **not** link here.
+This page owns **path allowlist**, **example root bank**, and **generation procedure**. Drill *shape* (spoiler template, house names, [checkpoint setting](translation-exercises.md#checkpoint-setting), item counts) stays in [translation-exercises.md](translation-exercises.md). Stages: [learning-levels.md](learning-levels.md#cross-doc-path). Example prose: [grammar-docs.md](grammar-docs.md). Grammar pages must **not** link here.
 
 ## Execute
 <a id="execute"></a>
@@ -44,31 +44,37 @@ Find the row(s) in the [allowlist](#allowlist).
 
 **Allowed**
 
-- This file (procedure, allowlist row, root bank, leak index)
-- [translation-exercises.md](translation-exercises.md) (principles + template)
+- This file (procedure, allowlist row, example root bank, leak index)
+- [translation-exercises.md](translation-exercises.md) (principles, [checkpoint setting](translation-exercises.md#checkpoint-setting), template)
 - [grammar-docs.md](grammar-docs.md#house-cast) (house people)
 - [glosses.md](glosses.md#house-cast) (name glosses — not needed inside spoilers)
 - **This stage only** of the target file (`## Beginner` *or* `## Intermediate` *or* `## Advanced`) plus the page title / **Needs:** line
-- Worked examples **inside that stage** (they are the gold corpus)
+- Worked examples **inside that stage** (gold corpus for **morph** packaging, not for checkpoint verbs)
+- `data/lexicon-published.csv` (and overlays / compounds CSVs) **only** to certify a setting English gloss has a published stem
 
-**Do not open** later path files, later stages of this file, `data/lexicon-published.csv` for tourism, or `docs/examples/` for item ideas.
+**Do not open** later path files, later stages of this file, or `docs/examples/` for item ideas. Do not browse the lexicon for roots the items will not use.
 
 If this stage’s own examples leak a later form (e.g. COMMENT + **`jom`** before core Intermediate), **do not copy the leak**. Use a legal recycle form instead.
 
 ### 4. Recycle vs introduce
 
-Every word in every spoiler must be one of:
+Every **morph** (role letter, ending, closed special, join vowel, speech act, …) in every spoiler must be one of:
 
 1. This row’s **Introduces** (most items must *test* these)
 2. This row’s **Recycle** set ([how recycle is computed](#recycle))
-3. A root from the [shared bank](#root-bank) **or** a root that already appears in this stage’s worked examples
-4. Closed punctuation / speech act already in recycle (`jol`, omitted **`jal`**, `.`)
+3. A closed punctuation / speech act already in recycle (`jol`, omitted **`jal`**, `.`)
 
-If you cannot certify a token, drop the item. Do not guess from English.
+Every **content** root must be:
+
+1. A house-cast name, **or**
+2. A published stem (lexicon / overlay / compound lemma) whose English in the item matches that row, listed in **Roots used here**, **or**
+3. A root that already appears in this stage’s worked examples (optional; do not prefer example-bank *walk* / *sleep* as the checkpoint action)
+
+If you cannot certify a token, drop the item. Do not guess from English. Do not invent stems.
 
 **Must not use** (unless the row lists it under Introduces or Sibling OK):
 
-- Any form whose [first-taught](#leak-index) checkpoint is **later** than this one
+- Any **morph** whose [first-taught](#leak-index) checkpoint is **later** than this one
 - Same-slot **sibling** Introduces ([slots](#slots))
 - Optional-track forms (numbers Intermediate / Advanced, numeric-derivation) unless this row is on that track or lists them
 - Dummy *I* / *you* (`zugobon` / `zedonen`) unless this page is teaching those specials
@@ -87,7 +93,7 @@ Anchors:
 | Intermediate | `<a id="translation-practice-intermediate"></a>` |
 | Advanced | `<a id="translation-practice-advanced"></a>` |
 
-Follow the [template](translation-exercises.md#template). Lead: *Short drills for Beginner/Intermediate/Advanced. Try each item before opening **Show answer**.* Put **Roots used here** once as the English / Agalan table (shared bank subset + this stage’s extra roots), using that template’s caption (later banks do not repeat the How-to-learn column legend; **Same root as** warning only when that column is present). Learner **Agalan** cells are [citations](translation-exercises.md#template) by default (`odogol`, not the bank stem `odogo`), or the inflected form the row teaches (`vejel` *see*). House-person **English** is *Azawan* / *Ululon* / *Uhubun*, not `*grace* (name **Azawan**)`. About **five** table content roots must be new vs the previous sidebar file’s drill table ([principles](translation-exercises.md#principles)); teaching examples stay unchanged.
+Follow the [template](translation-exercises.md#template). Lead: *Short drills for Beginner/Intermediate/Advanced. Try each item before opening **Show answer**.* Next line: **Setting:** one place or occasion. Put **Roots used here** once as the English / Agalan table for **this setting** (house names + setting content), using that template’s caption (later banks do not repeat the How-to-learn column legend; **Same root as** warning only when that column is present). Learner **Agalan** cells are [citations](translation-exercises.md#template) by default (`odogol`, not a bank stem `odogo`), or the inflected form the row teaches (`vejel` *see*). House-person **English** is *Azawan* / *Ululon* / *Uhubun*, not `*grace* (name **Azawan**)`. The setting must not repeat the previous sidebar file’s checkpoint setting ([checkpoint setting](translation-exercises.md#checkpoint-setting)). Teaching examples stay on the [example root bank](#root-bank); do not rewrite them to match the drill. Numbered items in each direction **climb in tension**.
 
 | Band kind | Items per direction |
 |-----------|---------------------|
@@ -95,7 +101,7 @@ Follow the [template](translation-exercises.md#template). Lead: *Short drills fo
 | Intermediate, productive | **6–8** |
 | Advanced, or a thin generate row | **4–6** |
 
-Both directions. Spoilers = Agalan sentence or **loose** free English only — no morph-gloss lecture. Omit recoverable **`jal`**. House names in English prompts (*Azawan walks*). Close variants of **this stage’s worked examples**; test the decision this stage taught ([principles](translation-exercises.md#principles)).
+Both directions. Spoilers = Agalan sentence or **loose** free English only — no morph-gloss lecture. Omit recoverable **`jal`**. House names in English prompts (*Azawan waits*). Test the decision this stage taught; package it in the setting, not as a clone of the walk/sleep teach line ([principles](translation-exercises.md#principles)).
 
 ### 6. Self-check, then lint
 
@@ -159,15 +165,17 @@ No translation checkpoint (recognition, orientation, or no new productive stack)
 
 Do **not** skip productive syntax pages (core, joins, questions, values, …). Thin **Advanced** on an otherwise productive page is skip; that page’s Beginner / Intermediate still generate.
 
-## Shared root bank
+## Example root bank
 <a id="root-bank"></a>
 
 Default people: [house cast](grammar-docs.md#house-cast) — `zazawan` / `zululon` / `zuhubun` (`azawa` / `ululo` / `uhubu` + **-n**). Morph: `z-Azawan` / `z-Ululon` / `z-Uhubun`.
 
-Reuse this bank unless this stage already taught a different published root. Do not mine the lexicon for variety. Tokens here are **stems for matching** (path allowlist / leak checks). The learner-facing **Roots used here** table uses [citations or the inflected form the row teaches](grammar-docs.md#citation-in-tables), not these stems as Agalan cells. Do not copy `(**-m**)` from this **Sense** column into learner **English**. When drill English is not the citation kind, the Agalan cell is the in-clause word: *see* → `vejel` / `` `ejel` *eye* ``; *sit* → `vajul` / `` `ajul` *chair* ``; *tell* → `vezehel` / `` `ezehel` *speech* ``; *therefore* → `xezazal` / `` `ezazal` *east* ``; *however* → `xezebal`; *although* → `hezebam`; *meanwhile* → `xanelol`; *haste* → `hadazam` / `` `adazal` *dash* ``; *quietude* → `howom`; *volume* → `wegelom`; *topic* → `hozal`. *because* / *inside* already list the `/h/` word (`hurugum`, `hogorem`). Do not inflect a row whose English is still the citation kind (`*dog*` stays `odogol`; *next clause* stays `adorol`).
+**This table is for worked examples** on grammar pages (and for morph leak checks when a teach line uses these stems). **Checkpoints do not default to it.** Checkpoint content comes from the [setting](translation-exercises.md#checkpoint-setting) plus house names.
 
-| Root | Sense in drills |
-|------|-----------------|
+Tokens here are **stems for matching** (path allowlist / leak checks). Learner **Roots used here** cells on a checkpoint use [citations or the inflected form the row teaches](grammar-docs.md#citation-in-tables). Do not copy `(**-m**)` from this **Sense** column into learner **English**. When English is not the citation kind, the Agalan cell is the in-clause word: *see* → `vejel` / `` `ejel` *eye* ``; *sit* → `vajul` / `` `ajul` *chair* ``; *tell* → `vezehel` / `` `ezehel` *speech* ``; *therefore* → `xezazal` / `` `ezazal` *east* ``; *however* → `xezebal`; *although* → `hezebam`; *meanwhile* → `xanelol`; *haste* → `hadazam` / `` `adazal` *dash* ``; *quietude* → `howom`; *volume* → `wegelom`; *topic* → `hozal`. *because* / *inside* already list the `/h/` word (`hurugum`, `hogorem`). Do not inflect a row whose English is still the citation kind (`*dog*` stays `odogol`; *next clause* stays `adorol`).
+
+| Root | Sense in examples |
+|------|-------------------|
 | `azawa` / `ululo` / `uhubu` | names **Azawan** / **Ululon** / **Uhubun** |
 | `odogo` | *dog* |
 | `agada` | *cat* |
@@ -190,7 +198,7 @@ Reuse this bank unless this stage already taught a different published root. Do 
 | `adoro` | *next clause* |
 | `urugu` | *because* (**-m** on `/h/`) |
 
-A page may add roots that **already appear in that stage’s worked examples** (e.g. `abele` *apple*, `adeda` *tea*, `ogove` *coffee*, `omonu` *challenging*, `onunu` **SAME**). Put them in the **Roots used here** table.
+A teach line may add roots that already appear in that stage’s worked examples (e.g. `abele` *apple*, `adeda` *tea*, `ogove` *coffee`, `omonu` *challenging*, `onunu` **SAME**). Checkpoint tables list **setting** roots instead, even when a teach line used *walk*.
 
 ## Allowlist
 <a id="allowlist"></a>
@@ -281,7 +289,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 ## Leak index
 <a id="leak-index"></a>
 
-First-taught checkpoint for forms agents leak most often. If this checkpoint’s path/stage is **earlier**, the form is illegal.
+First-taught checkpoint for **morphology** agents leak most often. If this checkpoint’s path/stage is **earlier**, the form is illegal. Content roots for a [setting](translation-exercises.md#checkpoint-setting) are not in this table.
 
 | Form | First taught |
 |------|----------------|
@@ -327,19 +335,20 @@ Use this after generating, or when asked only to review a file’s drills.
 
 For each spoiler token family:
 
-1. Find it in **Introduces**, **Recycle**, [root bank](#root-bank), or this stage’s examples. Else **fail**.
-2. Check [leak index](#leak-index): first-taught later than this checkpoint → **fail**.
+1. **Morph** tokens: **Introduces**, **Recycle**, or this stage’s examples. Content tokens: house names, published setting roots in **Roots used here**, or this stage’s examples. Else **fail**. Missing from the [example root bank](#root-bank) is **not** a fail for checkpoint content.
+2. Check [leak index](#leak-index) for **morphology**: first-taught later than this checkpoint → **fail**. Content roots are not leak-indexed.
 3. Same-slot sibling novelty not in **Sibling OK** → **fail**.
 4. English *I* / *you* as dummy people → **fail** (unless this stage teaches **`ugobo`/`edone`**).
 5. Most items test **this** stage’s decision, not a prior quiz → else rewrite.
 6. Morph-gloss wall inside the spoiler → **fail**.
 7. Unassigned cells from [unassigned-reserved.md](unassigned-reserved.md) → **fail**.
+8. No **Setting** line, setting matches the previous sidebar checkpoint, or the numbered list does not climb in tension → **fail** (when replacing or generating; do not fail a pre-policy checkpoint until replace).
 
 ## Related meta
 
 | Page | Owns |
 |------|------|
-| [translation-exercises.md](translation-exercises.md) | Placement, principles, spoiler template |
+| [translation-exercises.md](translation-exercises.md) | Placement, principles, [checkpoint setting](translation-exercises.md#checkpoint-setting), spoiler template |
 | [learning-levels.md](learning-levels.md) | Bands and cross-doc path |
 | [grammar-docs.md](grammar-docs.md) | Learner prose, house cast |
 | [glosses.md](glosses.md) | Morph / free English (teaching lines, not spoilers) |

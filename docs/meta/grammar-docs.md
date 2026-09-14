@@ -421,6 +421,7 @@ Section ids: [one current heading, one current id](#one-current-heading).
 | Do | Don’t |
 |----|--------|
 | Minimal clause that shows *only* the new point | Kitchen-sink showcases in Beginner |
+| Everyday [example root bank](drill-generation.md#root-bank) verbs (*walk*, *sleep*, *see*) in **teach** lines | Using that same walk/sleep palette as the default **checkpoint** plot ([checkpoint setting](translation-exercises.md#checkpoint-setting) owns drills) |
 | Published roots when the gloss matches; `PoS<…>ENDING` for donor spelling | Invented “lexicon-shaped” stems, a closed overlay with its own frozen spelling, or split/hyphenated PoS tokens in learner text |
 | Named [house people](#house-cast) when the clause needs a person | Default *I* / *you* (`zugobon` / `zedonen`) as dummy subjects |
 | Omit default **`jal`** when the page is not teaching the speech act | Leading every example with **`jal`** by habit |
@@ -485,7 +486,7 @@ Do **not** call `odogo` a citation. Overlay / need / linker / mood inventories u
 | Not a content root | Letters, IPA, role letters, vowel-series cells, ending / stance slots, number formulas, shape templates | `/z/`; **`a`**; **`xa`**; `…xal`; `g+e`; `ROOTx+1`; “full root **`x`** full root” |
 | Inner piece of an **`x`** word | That piece has **no ending of its own**; a citation there invites a stranded inner suffix | Bank `uvugu` only if the cell is the event after **`ax`**; prefer the whole word `zaxuvugul` |
 | Naming the constant while endings are the lesson | Prose may say “the same root `azawa`”; the **table** still lists citations | `azawal` / `azawam` / `azawan` in the ending table |
-| Editor matching keys | Lexicon CSVs, this page’s house-cast **Root** column, [drill-generation](drill-generation.md#root-bank) token lists — not learner grammar tables | `data/lexicon-published.csv` stems |
+| Editor matching keys | Lexicon CSVs, this page’s house-cast **Root** column, [example root bank](drill-generation.md#root-bank) token lists — not learner grammar tables | `data/lexicon-published.csv` stems |
 | Language-name composition | Showing **`agala`** + proper **-n** once, not as a vocab row | [introduction.md](../grammar/introduction.md) name gloss |
 
 Resume teaching may talk about a “root prefix” in running prose; the Agalan column is still `zazar` / `zodogor`, not `azawa` / `odogo`.
