@@ -77,34 +77,27 @@ For several members or an empty domain, put a [phrase join](joins.md) **inside**
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Name a **join-act** (`van` / `von` / …) when someone *does* the move to an object; name a **join-relation** (`gan` / `han` / … plus one `/b/`) when a host is framed *including* / *without* / *prioritizing* something.
 
-**Roots used here**:
+**Roots used here:**
 
-| English | Agalan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *Uhubun* | `uhubun` | | |
-| *apple* | `abelel` | | |
-| *tea* | `adedal` | | |
-| *dessert* | `ubagel` | | |
-| *lie* | `ululel` | | |
-| *peanut* | `abanul` | | |
-| *coffee* | `ogovem` | | |
-| *bug* | `abugul` | | |
-| *workaround* | `ewenel` | `ewenel` *wrench* | |
-| *birthday-cake* | `uragel` | | |
-| *water* | `unudel` | | |
-| *team* | `ahadal` | | |
-| *walk* | `awalal` | | |
-| *problem* | `uzebul` | `uzebul` *puzzle-piece* | 🧩: pieces must fit |
-| *meat* | `ememal` | | |
+| English | Agalan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Ululon* | `ululon` |
+| *Uhubun* | `uhubun` |
+| *walk* | `awalal` |
+| *sing* | `uzunul` |
+| *apple* | `abelel` |
+| *tea* | `adedal` |
+| *peanut* | `abanul` |
+| *birthday-cake* | `uragel` |
+| *team* | `ahadal` |
 
 #### English → Agalan
 
-**1.** *Azawan includes an apple.*
+**1.** *Ululon includes tea.*
 
 ::: details Show answer
-`zazawan dabelel van.`
+`zululon dadedal van.`
 :::
 
 **2.** *Cake including peanuts.*
@@ -113,16 +106,16 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zuragel gan babanul.`
 :::
 
-**3.** *Ululon chooses tea (as the one choice).*
+**3.** *Azawan chooses an apple (as the one choice).*
 
 ::: details Show answer
-`zululon dadedal von.`
+`zazawan dabelel von.`
 :::
 
-**4.** *Azawan walks with Ululon.*
+**4.** *Ululon walks with Uhubun.*
 
 ::: details Show answer
-`zazawan han bululon vawalal.`
+`zululon han buhubun vawalal.`
 :::
 
 **5.** *Azawan excludes peanuts.*
@@ -131,42 +124,42 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zazawan dabanul vuan.`
 :::
 
-**6.** *Cake without peanuts.*
+**6.** *A team exclusive for Uhubun.*
 
 ::: details Show answer
-`zuragel guan babanul.`
+`zahadam gon buhubun.`
 :::
 
-**7.** *Azawan picks dessert (more picks may follow).*
+**7.** *Azawan bars the apple (anything else is fine).*
 
 ::: details Show answer
-`zazawan dubagem vaon.`
+`zazawan dabelel vuon.`
 :::
 
 #### Agalan → English
 
-**1.** `zululon dululel vun.`
+**1.** `zuhubun dabelel van.`
 
 ::: details Show answer
-*Ululon refuses / denies the lie.*
+*Uhubun includes an apple.*
 :::
 
-**2.** `zazawan dogovel vuon.`
+**2.** `zuragel guan babanul.`
 
 ::: details Show answer
-*Azawan bars coffee (anything else is fine).*
+*Cake without peanuts.*
 :::
 
-**3.** `zahadam gon bazawan.`
+**3.** `zululon dadedal von.`
 
 ::: details Show answer
-*A team exclusive for Azawan (Azawan is the sole pick).*
+*Ululon chooses tea (as the one choice).*
 :::
 
-**4.** `zazawan dewenem voen.`
+**4.** `zazawan han bululon vawalal.`
 
 ::: details Show answer
-*Azawan tries the workaround.*
+*Azawan walks with Ululon.*
 :::
 
 **5.** `zahadam gan bazawan.`
@@ -175,16 +168,16 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *A team including Azawan.*
 :::
 
-**6.** `zazawan hen babugul vewenem.`
+**6.** `zazawan hun babanul vuzunul.`
 
 ::: details Show answer
-*Azawan works the workaround, prioritizing the bug.*
+*Azawan sings, refusing peanuts.*
 :::
 
-**7.** `zazawan dululon duhubun dal vaen.`
+**7.** `zahadam gaon bazawan.`
 
 ::: details Show answer
-*Azawan equates Ululon and Uhubun.*
+*A team open to Azawan (more members may follow).*
 :::
 
 ## See also

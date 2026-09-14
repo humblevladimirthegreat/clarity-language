@@ -113,26 +113,28 @@ The same roots take the role letter of the slot they fill. As a direct object th
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills on this Beginner band. Try each item before opening **Show answer**.
+Short drills for Beginner. Try each item before opening **Show answer**.
 
-**Roots used here**:
+**Roots used here:**
 
-| English | Agalan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *cat* | `agadal` | | |
-| *dog* | `odogol` | | |
-| *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
-| *big* | `elem` | `elel` *elephant* | 🐘: the huge animal |
-| *walk* | `awalal` | |
-| *sit* | `vajul` | `ajul` *chair* | 🪑: taking a seat |
-| *run* | `urunul` | |
-| *sleep* | `elebel` | |
-| *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
-| inclusive *we* | `ahan` | 🤝 *handshake*: sharing the floor together |
-| speaker | `ugobon` | 🎤 *microphone*: the live voice of the person talking |
-| listener | `edonen` | 🎧 *headphones*: the one receiving the sound |
+| English | Agalan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Ululon* | `ululon` |
+| *Uhubun* | `uhubun` |
+| *cat* | `agadal` |
+| *dog* | `odogol` |
+| *house* | `ohohul` |
+| *blue* | `elulul` |
+| *walk* | `awalal` |
+| *sit* | `vajul` |
+| *run* | `urunul` |
+| *see* | `vejel` |
+| *tell* | `vezehel` |
+| *sing* | `uzunul` |
+| *interlocutors* | `ahan` |
+| *speaker* | `ugobon` |
+| *listener* | `edonen` |
 
 #### English → Agalan
 
@@ -148,114 +150,90 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zagadalx vajul.`
 :::
 
-**3.** *They (that one and associates) run.*
+**3.** *They (Azawan and associates) sing. (when Azawan was mentioned earlier in the conversation)*
 
 ::: details Show answer
-`zazawarx vurunul.`
+`zazarx vuzunul.`
 :::
 
-**4.** *We (you and I) walk.*
+**4.** *We (you and I) sit.*
 
 ::: details Show answer
-`zahan vawalal.`
+`zahan vajul.`
 :::
 
-**5.** *Speaker and associates (not you) sit.*
+**5.** *Speaker and associates (not you) walk.*
 
 ::: details Show answer
-`zugobonx vajul.`
+`zugobonx vawalal.`
 :::
 
-**6.** *You all (the addressees) walk.*
+**6.** *You (Ululon) and your associates run.*
 
 ::: details Show answer
-`zedonenx vawalal.`
+`zululonx vurunul.`
 :::
 
-**7.** *You (Ululon) and your associates sit.*
+**7.** *You all (the addressees) sit.*
 
 ::: details Show answer
-`zululonx vajul.`
+`zedonenx vajul.`
 :::
 
-**8.** *Azawan sees some dogs.*
+**8.** *Azawan and associates see a house.*
 
 ::: details Show answer
-`zazawan dodogolx vejel.`
-:::
-
-**9.** *Azawan sees you all (the addressees).*
-
-::: details Show answer
-`zazawan dedonenx vejel.`
-:::
-
-**10.** *Azawan sees us (you and I).*
-
-::: details Show answer
-`zazawan dahan vejel.`
+`zazawanx dohohul vejel.`
 :::
 
 #### Agalan → English
 
-**1.** `zazawanx vawalal.`
+**1.** `zuhubunx vawalal.`
 
 ::: details Show answer
-*Azawan and associates walk.*
+*Uhubun and associates walk.*
 :::
 
-**2.** `zagadalx vajul.`
+**2.** `zagadalx gelulul vajul.`
 
 ::: details Show answer
-*Some cats sit.* / *A group of cats sit.*
+*Some blue cats sit.*
 :::
 
-**3.** `zazawarx vajul.`
+**3.** `zodogolx vurunul.`
 
 ::: details Show answer
-*They (that one and associates) sit.*
+*Some dogs run.*
 :::
 
-**4.** `zahan velebel.`
+**4.** `zahan dohohul vejel.`
 
 ::: details Show answer
-*We (including you) sleep.*
+*We (you and I) see a house.*
 :::
 
-**5.** `zedonenx vajul.`
-
-::: details Show answer
-*You all (the addressees) sit.*
-:::
-
-**6.** `zugobonx vawalal.`
-
-::: details Show answer
-*Speaker and associates (not you) walk.*
-:::
-
-**7.** `zodogolx gelem.`
-
-::: details Show answer
-*Some dogs are big.*
-:::
-
-**8.** `jol zululonx guzumum.`
-
-::: details Show answer
-*Are Ululon and associates happy?*
-:::
-
-**9.** `zazawan dugobonx vejel.`
+**5.** `zazawan dugobonx vejel.`
 
 ::: details Show answer
 *Azawan sees speaker and associates (not you).*
 :::
 
-**10.** `zazawan dahan vejel.`
+**6.** `zedonenx vuzunul.`
 
 ::: details Show answer
-*Azawan sees us (you and I).*
+*You all (the addressees) sing.*
+:::
+
+**7.** `zuhubun dazawanx vezehel.`
+
+::: details Show answer
+*Uhubun tells Azawan and associates.*
+:::
+
+**8.** `jol zululonx vajul.`
+
+::: details Show answer
+*Do Ululon and associates sit?*
 :::
 
 ## Intermediate
@@ -386,26 +364,27 @@ Beginner already used **-x** on nouns and person-role specials. The rest of the 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills on this Intermediate band. Try each item before opening **Show answer**.
+Short drills for Intermediate. Try each item before opening **Show answer**.
 
-**Roots used here**:
+**Roots used here:**
 
-| English | Agalan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *file-box* | `ulebol` | | |
-| *toolbox* | `olozol` | | |
-| *heaviness* | `aragam` | `aragal` *rock* | 🪨: hard to lift |
-| *teamwork* | `ahadam` | | |
-| *vastness* | `umum` | `umul` *milky way* | 🌌: how huge the sky looks |
-| *cat* | `agadal` | |
-| *sing* | `uzunul` | |
-| *walk* | `awalal` | |
-| *run* | `urunul` | |
-| inclusive *we* | `ahan` | 🤝 *handshake*: sharing the floor together |
-| speaker | `ugobon` | 🎤 *microphone*: the live voice of the person talking |
-| listener | `edonen` | 🎧 *headphones*: the one receiving the sound |
+| English | Agalan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Ululon* | `ululon` |
+| *Uhubun* | `uhubun` |
+| *file-box* | `ulebol` |
+| *toolbox* | `olozol` |
+| *heaviness* | `aragam` |
+| *teamwork* | `ahadam` |
+| *vastness* | `umum` |
+| *cat* | `agadal` |
+| *blue* | `elulul` |
+| *sing* | `uzunul` |
+| *walk* | `awalal` |
+| *run* | `urunul` |
+| *interlocutors* | `ahan` |
+| *listener* | `edonen` |
 
 #### English → Agalan
 
@@ -421,28 +400,28 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zulebolx garagamx.`
 :::
 
-**3.** *We (including you) run.*
-
-::: details Show answer
-`zahan vurunul.`
-:::
-
-**4.** *Speaker and associates run (listener not assumed).*
-
-::: details Show answer
-`zugobonx vurunul.`
-:::
-
-**5.** *Azawan sings jointly (not a solo).*
+**3.** *Azawan sings jointly (not a solo).*
 
 ::: details Show answer
 `zazawan vuzunulx.`
 :::
 
-**6.** *Azawan and associates sing as one outing.*
+**4.** *Azawan and associates sing as one outing.*
 
 ::: details Show answer
 `zazawanx vuzunulx.`
+:::
+
+**5.** *The team walks as one unit.*
+
+::: details Show answer
+`zahadal vawalalx.`
+:::
+
+**6.** *We (you and I) walk as one outing.*
+
+::: details Show answer
+`zahan vawalalx.`
 :::
 
 **7.** *Hey, cats!*
@@ -459,52 +438,52 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 #### Agalan → English
 
-**1.** `zulebolx garagamx.`
+**1.** `zolozolx garagam.`
 
 ::: details Show answer
-*The file-boxes are heavy collectively.* / *heavy as a pile*
+*The toolboxes are heavy.* (members / plain)
 :::
 
-**2.** `zulebolx garagam.`
+**2.** `zolozolx garagamx.`
 
 ::: details Show answer
-*The file-boxes are heavy.* (members / plain)
+*The toolboxes are heavy as a pile.*
 :::
 
-**3.** `zahadal gumum.`
+**3.** `zululon vurunulx.`
+
+::: details Show answer
+*Ululon runs jointly.* / *Ululon runs (not a solo).*
+:::
+
+**4.** `zululonx vurunulx.`
+
+::: details Show answer
+*Ululon and associates run as one outing.*
+:::
+
+**5.** `zahadal gumum.`
 
 ::: details Show answer
 *The team is vast.*
 :::
 
-**4.** `zazawan vuzunulx.`
+**6.** `zulebolx gelulul.`
 
 ::: details Show answer
-*Azawan sings jointly.* / *Azawan sings (not a solo).*
+*The file-boxes are blue.*
 :::
 
-**5.** `zazawanx vuzunulx.`
-
-::: details Show answer
-*Azawan and associates sing as one outing.*
-:::
-
-**6.** `jagadalx.`
-
-::: details Show answer
-*Hey, cats!*
-:::
-
-**7.** `jedonenx.`
-
-::: details Show answer
-*Hey, you all (the addressees)!*
-:::
-
-**8.** `jazawanx.`
+**7.** `jazawanx.`
 
 ::: details Show answer
 *Hey, Azawan and associates!*
+:::
+
+**8.** `juhubunx.`
+
+::: details Show answer
+*Hey, Uhubun and associates!*
 :::
 
 ## See also

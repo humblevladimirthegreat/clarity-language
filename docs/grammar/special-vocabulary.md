@@ -85,7 +85,7 @@ Emotion compose already used **`hogegal`** (HIGH arousal) next to **`zogegal`** 
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**. Compose emotion (one value + ACT + LOCUS), or number alternative candidates (`g#N`).
 
-**Roots used here**:
+**Roots used here:**
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -96,9 +96,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 | *relatedness* | `onogol` | | |
 | *dialogue* | `ezehel` | `ezehel` *speech* | 💬: talk between people |
 | *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
-| *division* | `ezawal` | | |
 | *draft* | `ebegul` | | |
-| *memo* | `ememol` | | |
 | *flood / surge* (HIGH) | `hogegal` | `ogegal` *ocean-wave* | 🌊: water in surge |
 | *flow / drift* (MED) | `hejelol` | `ejelol` *jellyfish* | 🪼: drifts with the current |
 | *stillness / slack* (LOW) | `hozowol` | `ozowol` *snow* | 🌨️: the landscape goes quiet |
@@ -111,84 +109,90 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 #### English → Agalan
 
-**1.** *Anxious about the dialogue* (competence at stake, temporary; flood; room awash)
+**1.** *Proud of the dialogue* (met competence, mental channel; flood bottled)
 
 ::: details Show answer
-`zezehel wolozoxur hogegal hanedel.`
+`zezehel wolozoxam hogegal habobol.`
 :::
 
-**2.** *Resentful about the division* (unmet relatedness; flood poured onto them)
+**2.** *Anxious about the draft* (competence at stake, temporary; flood; room awash)
 
 ::: details Show answer
-`zezawam wonogoxum hogegal horurul.`
+`zebegum wolozoxur hogegal hanedel.`
 :::
 
-**3.** *Proud of the draft* (met competence, mental channel; flood bottled)
+**3.** *Resentful about the dialogue* (unmet relatedness; flood poured onto them)
 
 ::: details Show answer
-`zebegum wolozoxam hogegal habobol.`
+`zezehel wonogoxum hogegal horurul.`
 :::
 
-**4.** *Resentful about the memo* (unmet relatedness; stillness pooling at them)
+**4.** *Problem 2.*
 
 ::: details Show answer
-`zememol wonogoxum hozowol horurul.`
+`zuzebul g#2.`
 :::
 
-**5.** *Resentful about the division* (unmet relatedness; mid arousal flowing toward them)
+**5.** *Azawan names goal 1.*
 
 ::: details Show answer
-`zezawam wonogoxum hejelol horurul.`
+`zazawan zolalal g#1 vezehel.`
 :::
 
-**6.** *Problem 1.*
+**6.** *Solution 1.*
 
 ::: details Show answer
-`zuzebul g#1.`
+`zagegol g#1.`
 :::
 
-**7.** *Azawan names solution 2.*
+**7.** *Proud of the draft* (met competence; mid arousal held inside)
 
 ::: details Show answer
-`zazawan zagegol g#2 vezehel.`
+`zebegum wolozoxam hejelol habobol.`
 :::
 
 #### Agalan → English
 
-**1.** `zebegum wolozoxam hejelol habobol.`
+**1.** `zezehel wolozoxur hogegal hanedel.`
 
 ::: details Show answer
-*Proud of the draft* (met competence; mid arousal held inside).
+*Anxious about the dialogue* (competence at stake, temporary; flood; room awash).
 :::
 
-**2.** `zezehel wolozoxur hozowol hanedel.`
+**2.** `zebegum wonogoxum hogegal horurul.`
 
 ::: details Show answer
-*Anxious about the dialogue* (competence at stake, temporary; stillness; slack shared water).
+*Resentful about the draft* (unmet relatedness; flood poured onto them).
 :::
 
-**3.** `zememol wonogoxum hogegal horurul.`
+**3.** `zezehel wolozoxam hozowol habobol.`
 
 ::: details Show answer
-*Resentful about the memo* (unmet relatedness; flood poured onto them).
+*Proud of the dialogue* (met competence; stillness held inside).
 :::
 
-**4.** `zolalal g#1.`
+**4.** `zagegol g#2.`
 
 ::: details Show answer
-*Goal 1.*
+*Solution 2.*
 :::
 
-**5.** `zagegol g~#2.`
+**5.** `zolalal g~#1.`
 
 ::: details Show answer
-*Solution 2* (tentative rank).
+*Goal 1* (tentative rank).
 :::
 
-**6.** `zuhubun zuzebul g#1 vezehel.`
+**6.** `zululon zagegol g#1 vezehel.`
 
 ::: details Show answer
-*Uhubun names problem 1.*
+*Ululon names solution 1.*
+:::
+
+**7.** `zuzebul g#1.`
+
+::: details Show answer
+*Problem 1.*
 :::
 
 ## Advanced
@@ -234,7 +238,7 @@ The default *always* is *usually* (exceptions expected), not *must happen that w
 
 Short drills on this Advanced band. Try each item before opening **Show answer**. Pair a domain fence (`hual` / `zual` / `zuam`) with a universality mood.
 
-**Roots used here**:
+**Roots used here:**
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -247,68 +251,65 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 | *by natural necessity* (NATURAL) | `habelel` | `abelel` *apple* | 🍎: it falls because the world works that way |
 | *under a named frame* (RULE) | `hebebel` | `ebebel` *pepper* | 🌶️: heat that applies in that dish |
 | *pawn* | `egezal` | | |
-| *square* | `agurel` | | |
 | *cat* | `agadal` | | |
 | *dog* | `odogol` | | |
-| *book* | `abogol` | | |
 | *walk* | `awalal` | | |
 | *sing* | `uzunul` | | |
 | *sleep* | `elebel` | | |
-| *sit* | `vajul` | `ajul` *chair* | 🪑: taking a seat |
-| *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
+| *write* | `uwurul` | | |
 | *run* | `urunul` | | |
-| evidential *pattern* | `abawam` | | |
+| evidential *pattern* | `abawam` | `abawal` *paw-prints* | 🐾: a trail of what usually happens |
 
 #### English → Agalan
 
-**1.** *Azawan always walks, usually.*
+**1.** *Ululon always sings, usually.*
 
 ::: details Show answer
-`zazawan hual vawalal harogul.`
+`zululon hual vuzunul harogul.`
 :::
 
-**2.** *Ululon always sleeps, as far as checked.*
+**2.** *Azawan always writes, as far as checked.*
 
 ::: details Show answer
-`zululon hual velebel habulul.`
+`zazawan hual vuwurul habulul.`
 :::
 
-**3.** *Every square, by definition.*
+**3.** *Every cat, by definition.*
 
 ::: details Show answer
-`zual gagurel harazal.`
+`zual gagadal harazal.`
 :::
 
-**4.** *Uhubun always sits, by natural necessity* (plus a trail of cases).
+**4.** *Uhubun always sleeps, by natural necessity* (plus a trail of cases).
 
 ::: details Show answer
-`zuhubun hual vajul habelel habawam.`
+`zuhubun hual velebel habelel habawam.`
 :::
 
-**5.** *Azawan always sings, under chess.*
+**5.** *Ululon always runs, under chess.*
 
 ::: details Show answer
-`zazawan hual vuzunul hebebel begezel.`
+`zululon hual vurunul hebebel begezel.`
 :::
 
-**6.** *Every cat that comes to mind, usually.*
+**6.** *Every dog that comes to mind, usually.*
 
 ::: details Show answer
-`zuam gagadal harogul.`
+`zuam godogol harogul.`
 :::
 
 #### Agalan → English
 
-**1.** `zululon hual vurunul harogul.`
+**1.** `zazawan hual vawalal harogul.`
 
 ::: details Show answer
-*Ululon always runs, usually.*
+*Azawan always walks, usually.*
 :::
 
-**2.** `zazawan hual vejel habulul.`
+**2.** `zululon hual velebel habulul.`
 
 ::: details Show answer
-*Azawan always sees, as far as checked.*
+*Ululon always sleeps, as far as checked.*
 :::
 
 **3.** `zual godogol harazal.`
@@ -317,22 +318,22 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 *Every dog, by definition.*
 :::
 
-**4.** `zodogol hual velebel habelel habawam.`
+**4.** `zodogol hual vurunul habelel habawam.`
 
 ::: details Show answer
-*The dog always sleeps, by natural necessity* (plus a trail of cases).
+*The dog always runs, by natural necessity* (plus a trail of cases).
 :::
 
-**5.** `zuhubun hual vawalal hebebel begezel.`
+**5.** `zuhubun hual vuzunul hebebel begezel.`
 
 ::: details Show answer
-*Uhubun always walks, under chess.*
+*Uhubun always sings, under chess.*
 :::
 
-**6.** `zuam gabogol harogul.`
+**6.** `zuam gagadal harogul.`
 
 ::: details Show answer
-*Every book that comes to mind, usually.*
+*Every cat that comes to mind, usually.*
 :::
 
 ## See also

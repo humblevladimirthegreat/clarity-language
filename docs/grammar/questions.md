@@ -160,9 +160,9 @@ A *…, yes?* confirm tag is its own next turn: finish the statement with a peri
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills on this Beginner band. Try each item before opening **Show answer**.
+Short drills for Beginner. Try each item before opening **Show answer**.
 
-**Roots used here**:
+**Roots used here:**
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -170,13 +170,14 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 | *Ululon* | `ululon` | | |
 | *Uhubun* | `uhubun` | | |
 | *dog* | `odogol` | | |
-| *cat* | `agadal` | | |
-| *walk* | `awalal` | | |
-| *sleep* | `elebel` | | |
-| *sing* | `uzunul` | | |
+| *walk* | `vawalal` | | |
+| *sleep* | `velebel` | | |
+| *sing* | `vuzunul` | | |
+| *write* | `vuwurul` | | |
 | *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
-| *write* | `uwurul` | | |
-| *run* | `urunul` | |
+| *sit* | `vajul` | `ajul` *chair* | sitting is what a chair is for |
+| *tell* | `vezehel` | `ezehel` *speech* | telling is what speech does |
+| *happy* | `uzumum` | | |
 
 #### English → Agalan
 
@@ -186,10 +187,10 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `jol zazawan vawalal?`
 :::
 
-**2.** *Who walks?*
+**2.** *Who sees Uhubun?*
 
 ::: details Show answer
-`jol zar vawalal?`
+`jol zar vejel duhubun?`
 :::
 
 **3.** *Is Ululon sleeping, I wonder?*
@@ -201,105 +202,81 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 **4.** *Who sees what?*
 
 ::: details Show answer
-`jol zar dar vejel?`
+`jol zar vejel dar?`
 :::
 
-**5.** *Who sees a dog?*
-
-::: details Show answer
-`jol zar dodogol vejel?`
-:::
-
-**6.** *Azawan walks. Yes.* (confirm as a second turn)
+**5.** *Azawan walks. Yes.* (confirm as a second turn)
 
 ::: details Show answer
 `zazawan vawalal. jael.`
 :::
 
-**7.** *No.* / *False.* (polar, not “don’t”)
+**6.** *No.* / *False.* (polar, not “don’t”)
 
 ::: details Show answer
 `juel.`
 :::
 
-**8.** *Don’t walk.*
+**7.** *Who else sings?*
 
 ::: details Show answer
-`jul vawalal.`
+`jol zur vuzunul?`
 :::
 
-**9.** *Azawan.* (just the fill, not a sentence)
+**8.** *Sure.* / *I’ll take that.*
 
 ::: details Show answer
-`azawan.`
-:::
-
-**10.** *Azawan, a dog.* (fills *who* then *what*)
-
-::: details Show answer
-`azawan odogol.`
+`jaol.`
 :::
 
 #### Agalan → English
 
-**1.** `jol zuhubun vuzunul?`
+**1.** `jom zuhubun vajul?`
 
 ::: details Show answer
-*Does Uhubun sing?*
+*Is Uhubun sitting, I wonder?*
 :::
 
-**2.** `jom zar vuwurul?`
+**2.** `jol zar vuwurul?`
 
 ::: details Show answer
-*Who writes, I wonder?*
+*Who writes?*
 :::
 
-**3.** `jol zululon godogol?`
+**3.** `jol zal vawalal?`
 
 ::: details Show answer
-*Is Ululon a dog?*
+*Does nobody walk?*
 :::
 
-**4.** `jaol.`
-
-::: details Show answer
-*Sure.* / *I’ll take that.*
-:::
-
-**5.** `jol zal vawalal?`
-
-::: details Show answer
-*Does nobody walk?* / *Nothing walks?*
-:::
-
-**6.** `jul vurunul.`
+**4.** `jul vurunul.`
 
 ::: details Show answer
 *Don’t run.*
 :::
 
-**7.** `jol zur velebel?`
-
-::: details Show answer
-*Who else sleeps?*
-:::
-
-**8.** `zuhubun vawalal. jael.`
-
-::: details Show answer
-*Uhubun walks. Yes.*
-:::
-
-**9.** `azawan.`
-
-::: details Show answer
-*Azawan.*
-:::
-
-**10.** `jaem.`
+**5.** `jaem.`
 
 ::: details Show answer
 *I think so.* / *Yeah.*
+:::
+
+**6.** `jol zar vezehel dar?`
+
+::: details Show answer
+*Who tells what?*
+:::
+
+**7.** `zululon.`
+
+::: details Show answer
+*Ululon.* (just the fill)
+:::
+
+**8.** `zuhubun guzumum. jael.`
+
+::: details Show answer
+*Uhubun is happy. Yes.*
 :::
 
 ## Intermediate
@@ -399,19 +376,22 @@ A *yes/no* question can put a join ending on a **named** item instead of a fill-
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills on this Intermediate band. Try each item before opening **Show answer**.
+Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *Azawan* | `azawan` | |
-| *Ululon* | `ululon` | |
-| *Uhubun* | `uhubun` | |
-| *dog* | `odogol` | |
-| *walk* | `awalal` | |
-| *run* | `urunul` | |
-| *sleep* | `elebel` | |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *Azawan* | `azawan` | | |
+| *Ululon* | `ululon` | | |
+| *Uhubun* | `uhubun` | | |
+| *book* | `abogol` | | |
+| *house* | `ohohul` | | |
+| *happy* | `uzumum` | | |
+| *sit* | `vajul` | `ajul` *chair* | sitting is what a chair is for |
+| *tell* | `vezehel` | `ezehel` *speech* | telling is what speech does |
+| *run* | `vurunul` | | |
+| *sleep* | `velebel` | | |
 
 #### English → Agalan
 
@@ -422,97 +402,96 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `jael.`
 :::
 
-**2.** *Didn’t Ululon sleep?* Then reject that: *false: Ululon did sleep.*
+**2.** *When does Uhubun sit?*
 
 ::: details Show answer
-`jol zululon vul velebel?`
-`juel.`
+`jol zuhubun vajul har?`
 :::
 
-**3.** *When does Uhubun walk?*
+**3.** *Which book?* (one unknown)
 
 ::: details Show answer
-`jol zuhubun vawalal har?`
+`jol zabogol zar?`
 :::
 
-**4.** *Which dog?* (one unknown)
+**4.** *Just Ululon?* (confirm the singleton)
 
 ::: details Show answer
-`jol dodogol zar?`
+`jol zululon zal?`
 :::
 
-**5.** *Which of Azawan and Ululon?*
-
-::: details Show answer
-`jol zazawan zululon zar?`
-:::
-
-**6.** *Just Azawan?* (confirm the singleton)
-
-::: details Show answer
-`jol zazawan zal?`
-:::
-
-**7.** *How about Uhubun?* (offer)
+**5.** *How about Uhubun?* (offer)
 
 ::: details Show answer
 `jol zuhubun zam?`
 :::
 
-**8.** *Not that.* (reject this option, not a truth-flip)
+**6.** *Not that.* (reject this option, not a truth-flip)
 
 ::: details Show answer
 `juol.`
 :::
 
+**7.** *Anytime?*
+
+::: details Show answer
+`jol hor?`
+:::
+
+**8.** *Hell no!* (refuse the whole frame)
+
+::: details Show answer
+`jual.`
+:::
+
 #### Agalan → English
 
-**1.** `jol hor?`
+**1.** `jael vul velebel.`
 
 ::: details Show answer
-*Anytime?*
+*True: (they) didn’t sleep.*
 :::
 
-**2.** `jael vul vurunul.`
-
-::: details Show answer
-*True: (they) didn’t run.*
-:::
-
-**3.** `juel vurunul.`
-
-::: details Show answer
-*False: (they) did run.*
-:::
-
-**4.** `jol var?`
-
-::: details Show answer
-*What did they do?*
-:::
-
-**5.** `jol hur?`
+**2.** `jol hur?`
 
 ::: details Show answer
 *When else?*
 :::
 
-**6.** `jual.`
+**3.** `jol var?`
 
 ::: details Show answer
-*No.* (hard refuse of the whole frame)
+*What did they do?*
 :::
 
-**7.** `jol zazawan zul?`
+**4.** `jol dohohul zor?`
+
+::: details Show answer
+*Any house?*
+:::
+
+**5.** `jol zazawan zul?`
 
 ::: details Show answer
 *Not Azawan?*
 :::
 
-**8.** `juom.`
+**6.** `juom.`
 
 ::: details Show answer
 *Not that.* (soft reject of this option)
+:::
+
+**7.** `juel vurunul.`
+
+::: details Show answer
+*False: (they) did run.*
+:::
+
+**8.** `jol zar vezehel zuhubun?`
+
+::: details Show answer
+*Who tells Uhubun?*
 :::
 
 ## Advanced
@@ -608,17 +587,19 @@ Under question, the rest of the single-item and standalone join map is confirm /
 ### Translation practice
 <a id="translation-practice-advanced"></a>
 
-Short drills on this Advanced band. Try each item before opening **Show answer**.
+Short drills for Advanced. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agalan | Cue |
-|---------|--------|-----|
-| *Azawan* | `azawan` | |
-| *Ululon* | `ululon` | |
-| *Uhubun* | `uhubun` | |
-| *walk* | `awalal` | |
-| *run* | `urunul` | |
+| English | Agalan | Same root as | Cue |
+|---------|--------|--------------|-----|
+| *Azawan* | `azawan` | | |
+| *Ululon* | `ululon` | | |
+| *Uhubun* | `uhubun` | | |
+| *book* | `abogol` | | |
+| *house* | `ohohul` | | |
+| *blue* | `elulul` | | |
+| *red* | `aredel` | | |
 
 #### English → Agalan
 
@@ -634,10 +615,10 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 `jol zululon zem?`
 :::
 
-**3.** *Has to be Ululon?*
+**3.** *Has to be Uhubun?*
 
 ::: details Show answer
-`jol zululon zol?`
+`jol zuhubun zol?`
 :::
 
 **4.** *Tie?* (standalone rank)
@@ -646,10 +627,10 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 `jol zael?`
 :::
 
-**5.** *Don’t run.* (prohibition, not polar *no*)
+**5.** *Is the book enough?*
 
 ::: details Show answer
-`jul vurunul.`
+`jol zabogol zaol?`
 :::
 
 #### Agalan → English
@@ -666,10 +647,10 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 *no / false* (truth flip). *not that* (reject this option).
 :::
 
-**3.** `jol zazawan zululon zual?`
+**3.** `jol zohohul zual?`
 
 ::: details Show answer
-*Everything but Azawan and Ululon?*
+*Everything but the house?*
 :::
 
 **4.** `jol zoel?`
@@ -678,10 +659,10 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 *Do nothing?* / *Skip it?*
 :::
 
-**5.** `jum vawalal.`
+**5.** `jol zelulul zaredel zel?`
 
 ::: details Show answer
-*Don’t walk.* (soft prohibition)
+*Blue before red?* (closed rank of those two)
 :::
 
 ## See also

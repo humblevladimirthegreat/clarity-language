@@ -87,21 +87,24 @@ The word ends with exact **-l**, spoken as its own last syllable. Build the spok
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills on this Beginner band. Try each item before opening **Show answer**. Count with `g+N`, rank with `g#N`, and use digitless **`g+`** with **-x** on the noun for *more than one*.
+Short drills for Beginner. Try each item before opening **Show answer**. Count with `g+N`, rank with `g#N`, and use digitless **`g+`** with **-x** on the noun for *more than one*.
 
-**Roots used here**:
+**Roots used here:**
 
-| English | Agalan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *Uhubun* | `uhubun` | | |
-| *cat* | `agadal` | | |
-| *dog* | `odogol` | | |
-| *book* | `abogol` | | |
-| *house* | `ohohul` | | |
-| *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
-| *write* | `uwurul` | | |
+| English | Agalan | Same root as |
+|---------|--------|--------------|
+| *Azawan* | `azawan` | |
+| *Ululon* | `ululon` | |
+| *Uhubun* | `uhubun` | |
+| *cat* | `agadal` | |
+| *dog* | `odogol` | |
+| *book* | `abogol` | |
+| *house* | `ohohul` | |
+| *chair* | `ajul` | |
+| *sit* | `vajul` | `ajul` *chair* |
+| *big* | `elel` | |
+| *haste* | `hadazam` | `adazal` *dash* |
+| *see* | `vejel` | `ejel` *eye* |
 
 #### English → Agalan
 
@@ -123,84 +126,84 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zagadalx g+.`
 :::
 
-**4.** *Two dogs.*
+**4.** *Two houses.*
 
 ::: details Show answer
-`zodogolx g+2.`
+`zohohulx g+2.`
 :::
 
-**5.** *The first house.*
+**5.** *The first chair.*
 
 ::: details Show answer
-`zohohul g#1.`
+`zajul g#1.`
 :::
 
-**6.** *Azawan sees three books.*
+**6.** *Azawan sees three big dogs.*
 
 ::: details Show answer
-`zazawan dabogolx g+3 vejel.`
+`zazawan dodogolx gelelel g+3 vejel.`
 :::
 
-**7.** *More than one cat.*
+**7.** *Ululon sits the second chair.*
 
 ::: details Show answer
-`zagadalx g+.`
+`zululon dajul g#2 vajul.`
 :::
 
-**8.** *Ululon writes the third book.*
+**8.** *More than one book.*
 
 ::: details Show answer
-`zululon dabogol g#3 vuwurul.`
+`zabogolx g+.`
 :::
 
 #### Agalan → English
 
-**1.** `zagadalx g+3.`
+**1.** `zodogolx g+2.`
 
 ::: details Show answer
-*Three cats.*
+*Two dogs.*
 :::
 
-**2.** `zabogol g#2.`
+**2.** `zohohul g#3.`
 
 ::: details Show answer
-*The second book.*
+*The third house.*
 :::
 
-**3.** `zagadalx g+.`
+**3.** `zajulx g+.`
 
 ::: details Show answer
-*Cats — more than one.*
+*Chairs — more than one.*
 :::
 
-**4.** `zohohulx g+2.`
+**4.** `zuhubun dajul g#1 vejel.`
 
 ::: details Show answer
-*Two houses.*
+*Uhubun sees the first chair.*
 :::
 
-**5.** `zagadal g#1.`
+**5.** `zagadalx gelelel g+.`
 
 ::: details Show answer
-*The first cat.*
+*Big cats — more than one.*
 :::
 
-**6.** `zuhubun dagadalx g+ vejel.`
+**6.** `zululon hadazam dagadalx g+3 vejel.`
 
 ::: details Show answer
-*Uhubun sees more than one cat.*
+*Ululon hastily sees three cats.*
 :::
 
-**7.** `zazawan dodogolx g+3 vejel.`
+**7.** `zazawan dabogolx g+2 vejel.`
 
 ::: details Show answer
-*Azawan sees three dogs.*
+*Azawan sees two books.*
 :::
 
-**8.** `zululon dabogol g#1 vuwurul.`
+**8.** `zohohul gelelel g#2.`
 
 ::: details Show answer
-*Ululon writes the first book.*
+*The second big house.*
 :::
 
 ## Intermediate
@@ -709,22 +712,24 @@ In a sentence, the PoS attaches to that single number word (see [Parts of speech
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills on this Intermediate band. Try each item before opening **Show answer**. Prefer shorthand (`g~+3`, `g#-2`, `h_15,30`). Sample PoS, endings, digitless number as verb / adverb / interjection / discourse, and **one** time reading — not the whole inventory.
+Short drills for Intermediate. Try each item before opening **Show answer**. Prefer shorthand (`g~+3`, `g#-2`, `h_15,30`). Sample PoS, endings, digitless, number as verb / adverb / interjection / discourse, and **one** clock reading — not the whole inventory.
 
-**Roots used here**:
+**Roots used here:**
 
-| English | Agalan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *Uhubun* | `uhubun` | | |
-| *cat* | `agadal` | | |
-| *book* | `abogol` | | |
-| *house* | `ohohul` | | |
-| *blue* | `elulul` | | |
-| *walk* | `awalal` | | |
-| *sleep* | `elebel` | | |
-| *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
+| English | Agalan | Same root as |
+|---------|--------|--------------|
+| *Azawan* | `azawan` | |
+| *Ululon* | `ululon` | |
+| *Uhubun* | `uhubun` | |
+| *cat* | `agadal` | |
+| *house* | `ohohul` | |
+| *chair* | `ajul` | |
+| *sit* | `vajul` | `ajul` *chair* |
+| *big* | `elel` | |
+| *blue* | `elulul` | |
+| *walk* | `awalal` | |
+| *haste* | `hadazam` | `adazal` *dash* |
+| *see* | `vejel` | `ejel` *eye* |
 
 #### English → Agalan
 
@@ -734,60 +739,60 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `z+3 gelulun.`
 :::
 
-**2.** *About three cats.*
+**2.** *About three chairs.*
 
 ::: details Show answer
-`zagadalx g~+3.`
+`zajulx g~+3.`
 :::
 
-**3.** *Azawan sees −3.*
+**3.** *Ululon hastily walks three times.*
 
 ::: details Show answer
-`zazawan d-3 vejel.`
+`zululon hadazam vawalal h+3.`
 :::
 
-**4.** *Ululon walks three times.*
-
-::: details Show answer
-`zululon vawalal h+3.`
-:::
-
-**5.** *Three more!*
+**4.** *Three more!*
 
 ::: details Show answer
 `j+3.`
 :::
 
-**6.** *Three!* (score / label reading)
+**5.** *The penultimate house.*
 
 ::: details Show answer
-`j_3.`
+`zohohul g#-2.`
 :::
 
-**7.** *The penultimate book.*
+**6.** *Point 2: Azawan sits.*
 
 ::: details Show answer
-`zabogol g#-2.`
+`x#2 zazawan vajul.`
 :::
 
-**8.** *Uhubun sleeps at 15:30.*
+**7.** *Azawan sees −3.*
 
 ::: details Show answer
-`zuhubun velebel h_15,30.`
+`zazawan d-3 vejel.`
+:::
+
+**8.** *Uhubun sits at 15:30.*
+
+::: details Show answer
+`zuhubun vajul h_15,30.`
 :::
 
 #### Agalan → English
 
-**1.** `zagadalx g~+3.`
+**1.** `zagadalx g~+2.`
 
 ::: details Show answer
-*About three cats.*
+*About two cats.*
 :::
 
-**2.** `z+3 gelulun.`
+**2.** `z-3 gelulun.`
 
 ::: details Show answer
-*Three is blue.*
+*−3 is blue.*
 :::
 
 **3.** `zululon vawalal h+.`
@@ -796,34 +801,34 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Ululon walks multiple times.*
 :::
 
-**4.** `j#1.`
+**4.** `j_3.`
 
 ::: details Show answer
-*First!*
+*Three!* (score / label)
 :::
 
-**5.** `x#2 zululon vawalal.`
+**5.** `x#-2 zululon vawalal.`
 
 ::: details Show answer
-*Point 2: Ululon walks.*
+*Penultimate item: Ululon walks.*
 :::
 
-**6.** `zabogol g#-2.`
+**6.** `zohohul gelelel g#-1.`
 
 ::: details Show answer
-*The penultimate book.*
+*The last big house, counting from the end.*
 :::
 
-**7.** `zuhubun velebel h_15,30.`
-
-::: details Show answer
-*Uhubun sleeps at 15:30.*
-:::
-
-**8.** `zazawan d=_ vejel.`
+**7.** `zazawan d=_ vejel.`
 
 ::: details Show answer
 *Azawan sees that code again.*
+:::
+
+**8.** `zuhubun vajul h#3.`
+
+::: details Show answer
+*Uhubun sits for the third time.*
 :::
 
 ## Advanced
@@ -1130,19 +1135,23 @@ Ordinary spelling carries no stress mark ([phonology](phonology.md#phonotactics)
 ### Translation practice
 <a id="translation-practice-advanced"></a>
 
-Short drills on this Advanced band. Try each item before opening **Show answer**. Digitless exponents, hyperbole, and zero×exp as in the teach tables — shorthand (`g+e`, `g+1e`, `x#e`).
+Short drills for Advanced. Try each item before opening **Show answer**. Digitless exponents, hyperbole, and zero×exp as in the teach tables — shorthand (`g+e`, `g+1e`, `x#e`).
 
 **Roots used here:**
 
-| English | Agalan | Cue |
-|---------|--------|-----|
+| English | Agalan | Same root as |
+|---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
 | *cat* | `agadal` | |
-| *book* | `abogol` | |
+| *dog* | `odogol` | |
+| *house* | `ohohul` | |
+| *chair* | `ajul` | |
+| *sit* | `vajul` | `ajul` *chair* |
+| *big* | `elel` | |
 | *walk* | `awalal` | |
-| *sing* | `uzunul` | |
+| *haste* | `hadazam` | `adazal` *dash* |
 
 #### English → Agalan
 
@@ -1152,16 +1161,16 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 `zagadalx g+e.`
 :::
 
-**2.** *One gazillion books.*
+**2.** *One gazillion chairs.*
 
 ::: details Show answer
-`zabogolx g+1e.`
+`zajulx g+1e.`
 :::
 
-**3.** *Finally: Azawan walks.*
+**3.** *Finally: Azawan sits.*
 
 ::: details Show answer
-`x#e zazawan vawalal.`
+`x#e zazawan vajul.`
 :::
 
 **4.** *To infinity!*
@@ -1170,24 +1179,24 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 `j+e.`
 :::
 
-**5.** *Starting with: Uhubun sings.*
-
-::: details Show answer
-`x#e- zuhubun vuzunul.`
-:::
-
-**6.** *Annihilate!*
+**5.** *Annihilate!*
 
 ::: details Show answer
 `j+0e.`
 :::
 
-#### Agalan → English
-
-**1.** `zagadalx g+e.`
+**6.** *Starting with: Uhubun sits.*
 
 ::: details Show answer
-*Cats — infinitely many.* / *+∞ cats.*
+`x#e- zuhubun vajul.`
+:::
+
+#### Agalan → English
+
+**1.** `zodogolx g+e.`
+
+::: details Show answer
+*Dogs — infinitely many.*
 :::
 
 **2.** `j#e.`
@@ -1202,23 +1211,24 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 *Starting with: Ululon walks.*
 :::
 
-**4.** `zabogol g#1e.`
+**4.** `zohohul gelelel g#1e.`
 
 ::: details Show answer
-*The gazillionth / umpteenth book.*
+*The gazillionth / umpteenth big house.*
 :::
 
-**5.** `zazawan vawalal h#1e.`
+**5.** `zazawan hadazam vajul h#1e.`
 
 ::: details Show answer
-*Azawan walks for the gazillionth time.*
+*Azawan hastily sits for the gazillionth time.*
 :::
 
-**6.** `j+0e.`
+**6.** `j-e-.`
 
 ::: details Show answer
-*Annihilate!* / *Wipe it!*
+*As if!*
 :::
+
 
 ## See also
 

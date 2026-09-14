@@ -87,7 +87,7 @@ Anchors:
 | Intermediate | `<a id="translation-practice-intermediate"></a>` |
 | Advanced | `<a id="translation-practice-advanced"></a>` |
 
-Follow the [template](translation-exercises.md#template). Lead: *Short drills for Beginner/Intermediate/Advanced. Try each item before opening **Show answer**.* Put **Roots used here** once as the English / Agalan table (shared bank subset + this stage’s extra roots), using that template’s caption (later banks do not repeat the How-to-learn column legend; **Same root as** warning only when that column is present). Learner **Agalan** cells are [citations](translation-exercises.md#template) by default (`odogol`, not the bank stem `odogo`), or the inflected form the row teaches (`vejel` *see*). House-person **English** is *Azawan* / *Ululon* / *Uhubun*, not `*grace* (name **Azawan**)`.
+Follow the [template](translation-exercises.md#template). Lead: *Short drills for Beginner/Intermediate/Advanced. Try each item before opening **Show answer**.* Put **Roots used here** once as the English / Agalan table (shared bank subset + this stage’s extra roots), using that template’s caption (later banks do not repeat the How-to-learn column legend; **Same root as** warning only when that column is present). Learner **Agalan** cells are [citations](translation-exercises.md#template) by default (`odogol`, not the bank stem `odogo`), or the inflected form the row teaches (`vejel` *see*). House-person **English** is *Azawan* / *Ululon* / *Uhubun*, not `*grace* (name **Azawan**)`. About **five** table content roots must be new vs the previous sidebar file’s drill table ([principles](translation-exercises.md#principles)); teaching examples stay unchanged.
 
 | Band kind | Items per direction |
 |-----------|---------------------|
@@ -99,7 +99,7 @@ Both directions. Spoilers = Agalan sentence or **loose** free English only — n
 
 ### 6. Self-check, then lint
 
-Run the [review checklist](#review) on your own spoilers. Then `npm run lint:md`. If lint fails, fix it in the same file (usually slash-joined emphasis: write `*a* / *b*`, not `*a*/*b*`).
+Run the [review checklist](#review) on your own spoilers. Then `npm run lint:md` **only when this invocation is a parent editor finishing a batch** — file-scoped rewrite agents **do not** run the linter. If lint fails, fix it in the same file (usually slash-joined emphasis: write `*a* / *b*`, not `*a*/*b*`).
 
 Reply with: which checkpoints you added or skipped, and any item you dropped because a form was not in recycle.
 

@@ -64,23 +64,25 @@ English *can't* does not say whether the inability is for this moment, still cha
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills on this Beginner band. Try each item before opening **Show answer**. Tag **can** / **can’t** on an activity or property host; one item is a plain event with no can / can’t tag.
+Short drills for Beginner. Try each item before opening **Show answer**. Tag **can** / **can’t** on an activity or property host; one item is a plain event with no can / can’t tag.
 
-**Roots used here**:
+**Roots used here:**
 
-| English | Agalan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *Uhubun* | `uhubun` | | |
-| *dog* | `odogol` | | |
-| *sing* | `uzunul` | | |
-| *walk* | `awalal` | | |
-| *run* | `urunul` | | |
-| *write* | `uwurul` | | |
-| *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
-| *sleep* | `elebel` | | |
-| *sit* | `vajul` | `ajul` *chair* | 🪑: taking a seat |
+| English | Agalan | Same root as |
+|---------|--------|--------------|
+| *Azawan* | `azawan` | |
+| *Ululon* | `ululon` | |
+| *Uhubun* | `uhubun` | |
+| *dog* | `odogol` | |
+| *cat* | `agadal` | |
+| *sing* | `uzunul` | |
+| *walk* | `awalal` | |
+| *run* | `urunul` | |
+| *write* | `uwurul` | |
+| *see* | `vejel` | `ejel` *eye* |
+| *sleep* | `elebel` | |
+| *sit* | `vajul` | `ajul` *chair* |
+| *happy* | `uzumum` | `uzumul` *smile* |
 
 #### English → Agalan
 
@@ -108,10 +110,10 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zazawan vurunuxul.`
 :::
 
-**5.** *Ululon can write.*
+**5.** *The dog can see.*
 
 ::: details Show answer
-`zululon vuwuruxal.`
+`zodogol vejexal.`
 :::
 
 **6.** *Azawan sings.* (ordinary event, no can / can’t tag)
@@ -126,42 +128,42 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zuhubun velebexel.`
 :::
 
-**8.** *The dog can see.*
+**8.** *Azawan can be happy.*
 
 ::: details Show answer
-`zodogol vejexal.`
+`zazawan guzumuxam.`
 :::
 
 #### Agalan → English
 
-**1.** `zazawan vuzunuxal.`
+**1.** `zuhubun vuzunuxal.`
 
 ::: details Show answer
-*Azawan can sing.*
+*Uhubun can sing.*
 :::
 
-**2.** `zululon vuzunuxel.`
+**2.** `zazawan vawalaxel.`
 
 ::: details Show answer
-*Ululon can’t sing right now.*
+*Azawan can’t walk right now.*
 :::
 
-**3.** `zuhubun vawalaxol.`
+**3.** `zululon vurunuxol.`
 
 ::: details Show answer
-*Uhubun can’t walk (may become able, or the grain is unspecified).*
+*Ululon can’t run yet (that may change).*
 :::
 
-**4.** `zazawan vurunuxul.`
+**4.** `zuhubun vajuxol.`
 
 ::: details Show answer
-*Azawan can’t run (fixed / impossible as far as you can tell).*
+*Uhubun can’t sit yet (that may change).*
 :::
 
-**5.** `zazawan vuzunul.`
+**5.** `zagadal vejexal.`
 
 ::: details Show answer
-*Azawan sings.* (no can / can’t tag)
+*The cat can see.*
 :::
 
 **6.** `zululon vuwuruxam.`
@@ -170,16 +172,16 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Ululon can write (metaphorical host sense).*
 :::
 
-**7.** `zuhubun vajuxol.`
-
-::: details Show answer
-*Uhubun can’t sit yet (may become able, or the grain is unspecified).*
-:::
-
-**8.** `guzunuxal.`
+**7.** `guzunuxal.`
 
 ::: details Show answer
 *Can sing (as a property).*
+:::
+
+**8.** `zodogol velebexel.`
+
+::: details Show answer
+*The dog can’t sleep right now.*
 :::
 
 ## Intermediate
@@ -223,18 +225,20 @@ Ordinary `zegeral` still means *cereal* / *a capacity* (content word, no stance)
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills on this Intermediate band. Try each item before opening **Show answer**. Prefer a host when one activity root fits; use **`egera`** when there is no single host.
+Short drills for Intermediate. Try each item before opening **Show answer**. Prefer a host when one activity root fits; use **`egera`** when there is no single host.
 
-**Roots used here**:
+**Roots used here:**
 
-| English | Agalan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *Uhubun* | `uhubun` | | |
-| *size* / *big* | `elem` | `elel` *elephant* | 🐘: the huge animal |
-| *sing* | `uzunul` | | |
-| *capacity* (**ABIL**) | `egeral` | `egeral` *cereal* | 🥣: a bowl of what you can do |
+| English | Agalan | Same root as |
+|---------|--------|--------------|
+| *Azawan* | `azawan` | |
+| *Ululon* | `ululon` | |
+| *Uhubun* | `uhubun` | |
+| *cat* | `agadal` | |
+| *tell* | `vezehel` | `ezehel` *speech* |
+| *sing* | `uzunul` | |
+| *big* | `elem` | `elel` *elephant* |
+| *ability* / *cereal* | `egeral` | `egeral` *cereal* |
 
 #### English → Agalan
 
@@ -244,84 +248,96 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `hegeraxel.`
 :::
 
-**2.** *Azawan can’t sing right now.*
-
-::: details Show answer
-`zazawan vuzunuxel.`
-:::
-
-**3.** *Azawan can’t right now* (clause-wide; no single activity root).
+**2.** *Azawan can’t right now* (clause-wide; no single activity root).
 
 ::: details Show answer
 `zazawan hegeraxel.`
 :::
 
-**4.** *Can’t (that may change)* (clause-wide; grain unspecified).
+**3.** *Can’t yet* (clause-wide; that may change).
 
 ::: details Show answer
 `hegeraxol.`
 :::
 
-**5.** *Can’t (fixed)* (clause-wide).
+**4.** *Can’t (fixed)* (clause-wide).
 
 ::: details Show answer
 `hegeraxul.`
 :::
 
-**6.** *Ability* (topic only: no can / can’t stance).
+**5.** *Ability* (topic only: no can / can’t stance).
 
 ::: details Show answer
 `hegeral.`
 :::
 
-**7.** *Azawan can* (clause-wide).
+**6.** *Azawan can* (clause-wide).
 
 ::: details Show answer
 `zazawan hegeraxal.`
 :::
 
+**7.** *Ululon is big: can’t right now.*
+
+::: details Show answer
+`zululon gelem wegeraxel.`
+:::
+
+**8.** *Azawan can’t sing right now.* (named activity: keep the host)
+
+::: details Show answer
+`zazawan vuzunuxel.`
+:::
+
 #### Agalan → English
 
-**1.** `hegeraxel.`
+**1.** `zululon hegeraxol.`
 
 ::: details Show answer
-*Can’t right now (no single host / clause-wide).*
+*Ululon can’t yet (that may change; no single host).*
 :::
 
-**2.** `zazawan vuzunuxel.`
+**2.** `zuhubun hegeraxul.`
 
 ::: details Show answer
-*Azawan can’t sing right now.*
+*Uhubun can’t (fixed; no single host).*
 :::
 
-**3.** `hegeral.`
-
-::: details Show answer
-*Ability (topic only).*
-:::
-
-**4.** `hegeraxul.`
-
-::: details Show answer
-*Can’t (fixed; clause-wide / no single host).*
-:::
-
-**5.** `zululon hegeraxol.`
-
-::: details Show answer
-*Ululon can’t (may change, or the grain is unspecified; no single host).*
-:::
-
-**6.** `zegeral.`
+**3.** `zegeral.`
 
 ::: details Show answer
 *Cereal / a capacity* (ordinary word: no ability stance).
 :::
 
-**7.** `gelem wegeraxel.`
+**4.** `gelem wegeraxal.`
 
 ::: details Show answer
-*Big: can’t right now* (capability framed on that property).
+*Big: can* (capability framed on that property).
+:::
+
+**5.** `zazawan hegeraxam.`
+
+::: details Show answer
+*Azawan can* (clause-wide; metaphorical capacity).
+:::
+
+**6.** `zuhubun hegeraxal.`
+
+::: details Show answer
+*Uhubun can* (clause-wide; no single host).
+:::
+
+**7.** `zululon vezehexal.`
+
+::: details Show answer
+*Ululon can tell.*
+:::
+
+**8.** `zagadal hegeraxel.`
+
+::: details Show answer
+*The cat can’t right now* (no single host).
 :::
 
 ## See also

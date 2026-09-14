@@ -272,9 +272,9 @@ Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`zahaxre
 ### Translation practice
 <a id="translation-practice-advanced"></a>
 
-Short drills on this Advanced band. Try each item before opening **Show answer**. `ROOT x NUM` names a **kind property** (essence, grain, quasi, part-count, order-kind, catalog code, total-null): spelled CV plus the **host** ending.
+Short drills on this Advanced band. Try each item before opening **Show answer**. `ROOT x NUM` names a **kind property** (essence, grain, quasi, part-count, order-kind, catalog code): spelled CV plus the **host** ending.
 
-**Roots used here**:
+**Roots used here:**
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -284,78 +284,73 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 | *love* | `olovel` | | |
 | *friend* | `eberelonogol` | | 🪢 on *person*: a bond that holds |
 | *commitment* | `abenel` | `abenel` *pen* | 🖊️: ink stays on the page |
-| *dialogue* | `ezehel` | `ezehel` *speech* | 💬: talk between people |
-| *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
-| *adventure* | `omol` | `omol` *mountain-biking* | 🚵: a ride off the usual path |
 | *draft* | `ebegul` | `ebegul` *pencil* | ✏️: marks you can still erase |
 | *specimen* | `edudul` | `edudul` *petri-dish* | 🧫: a sample under study |
-| *fear* | `eveval` | | |
-| *score* | `odobol` | `odobol` *trophy* | 🏆: the counted tally |
 | *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
 | *write* | `uwurul` | | |
 
 #### English → Agalan
 
-**1.** *Azawan sees the essence of love.*
+**1.** *Ululon sees a grain of love.*
 
 ::: details Show answer
-`zazawan dolovexrabal vejel.`
+`zululon dolovexrabul vejel.`
 :::
 
-**2.** *Ululon tells a grain of love.*
+**2.** *Azawan is a quasi-friend.*
 
 ::: details Show answer
-`zululon dolovexrabul vezehel.`
+`zazawan geberelonogoxrubul.`
 :::
 
-**3.** *Uhubun is a quasi-friend.*
+**3.** *Uhubun sees mutual commitment.*
 
 ::: details Show answer
-`zuhubun geberelonogoxrubul.`
+`zuhubun dabenexradul vejel.`
 :::
 
-**4.** *Azawan sees mutual commitment.*
+**4.** *Azawan writes a first-draft.*
 
 ::: details Show answer
-`zazawan dabenexradul vejel.`
+`zazawan debeguxrewol vuwurul.`
 :::
 
-**5.** *Ululon writes a first-draft.*
+**5.** *Ululon sees specimen #1.*
 
 ::: details Show answer
-`zululon debeguxrewol vuwurul.`
+`zululon deduduxrowol vejel.`
 :::
 
 #### Agalan → English
 
-**1.** `zazawan devevaxrubal vejel.`
+**1.** `zuhubun dolovexrabal vejel.`
 
 ::: details Show answer
-*Azawan sees a void of fear.*
+*Uhubun sees the essence of love.*
 :::
 
-**2.** `zululon dezehexrarel vezehel.`
+**2.** `zuhubun veberelonogoxrubul.`
 
 ::: details Show answer
-*Ululon tells a three-part dialogue.*
+*Uhubun quasi-befriends / treats as friend-shaped.*
 :::
 
-**3.** `zuhubun domoxredul vejel.`
+**3.** `zazawan dabenexrudul vejel.`
 
 ::: details Show answer
-*Uhubun sees a secondary adventure.*
+*Azawan sees one-sided commitment.*
 :::
 
-**4.** `zazawan deduduxrowol vejel.`
+**4.** `zululon debeguxredum vuwurul.`
 
 ::: details Show answer
-*Azawan sees specimen #1.*
+*Ululon writes a second-draft.*
 :::
 
-**5.** `zululon vodoboxrazobal.`
+**5.** `zuhubun deduduxrol vejel.`
 
 ::: details Show answer
-*Ululon annihilates the score.*
+*Uhubun sees a coded specimen.*
 :::
 
 ## See also

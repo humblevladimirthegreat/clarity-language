@@ -59,68 +59,72 @@ To say **what will happen** in the world (rain, a result), not what someone mean
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills on this Beginner band. Try each item before opening **Show answer**. Pick **PLAN** (`owora` + map-resolution ending) or **PREDICT** (`elezo`). English *will* is not one Agalan form.
+Short drills for Beginner. Try each item before opening **Show answer**.
 
-**Roots used here**:
+**Roots used here:**
 
-| English | Agalan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *Uhubun* | `uhubun` | | |
-| **PLAN** | `howoram` | `oworal` *world-map* | 🗺️: a map charts a course you mean to take |
-| **PREDICT** | `helezom` | `elezol` *telescope* | 🔭: looks ahead at a distance |
-| *walk* | `awalal` | | |
-| *write* | `uwurul` | | |
-| *sing* | `uzunul` | | |
-| *run* | `urunul` | | |
-| *sleep* | `elebel` | | |
-| *rain* | `anunul` | | |
+| English | Agalan | Same root as |
+|---------|--------|--------------|
+| *Azawan* | `azawan` | |
+| *Ululon* | `ululon` | |
+| *Uhubun* | `uhubun` | |
+| **PLAN** | `howoram` | `oworal` *world-map* |
+| **PREDICT** | `helezom` | `elezol` *telescope* |
+| *write* | `uwurul` | |
+| *sing* | `uzunul` | |
+| *tell* | `vezehel` | `ezehel` *speech* |
+| *rain* | `anunul` | |
 
 #### English → Agalan
 
-**1.** *Azawan means to walk.* (direction only)
-
-::: details Show answer
-`zazawan howoram vawalal.`
-:::
-
-**2.** *Ululon has the steps on the map: walk.*
-
-::: details Show answer
-`zululon howoral vawalal.`
-:::
-
-**3.** *If that path fails, Uhubun will walk.* (backup course)
-
-::: details Show answer
-`zuhubun howorar vawalal.`
-:::
-
-**4.** *Azawan means to write.* (direction only)
+**1.** *Azawan means to write.* (direction only)
 
 ::: details Show answer
 `zazawan howoram vuwurul.`
 :::
 
-**5.** *Forecast: it rains.*
+**2.** *Ululon’s itinerary is to sing.*
+
+::: details Show answer
+`zululon howoral vuzunul.`
+:::
+
+**3.** *If that path fails, Uhubun will tell Azawan.* (backup course)
+
+::: details Show answer
+`zuhubun howorar dazawan vezehel.`
+:::
+
+**4.** *Forecast: it rains.*
 
 ::: details Show answer
 `helezom vanunul.`
 :::
 
-**6.** *Uhubun means to sing.* (direction only)
+**5.** *Uhubun means to sing.* (direction only)
 
 ::: details Show answer
 `zuhubun howoram vuzunul.`
 :::
 
-#### Agalan → English
-
-**1.** `zululon howoram vawalal.`
+**6.** *Azawan’s itinerary is to tell Uhubun.*
 
 ::: details Show answer
-*Ululon means to walk.* (sketch plan)
+`zazawan howoral duhubun vezehel.`
+:::
+
+**7.** *Ululon means to write.* (direction only)
+
+::: details Show answer
+`zululon howoram vuwurul.`
+:::
+
+#### Agalan → English
+
+**1.** `zululon howoram vuzunul.`
+
+::: details Show answer
+*Ululon means to sing.*
 :::
 
 **2.** `zazawan howoral vuwurul.`
@@ -129,28 +133,34 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Azawan’s itinerary is to write.*
 :::
 
-**3.** `zuhubun howorar vurunul.`
+**3.** `zuhubun howorar vuzunul.`
 
 ::: details Show answer
-*If that path fails, Uhubun will run.* (fork plan)
+*If that path fails, Uhubun will sing.*
 :::
 
-**4.** `helezom vanunul.`
+**4.** `helezom vuwurul.`
 
 ::: details Show answer
-*Forecast: it rains.*
+*Forecast: someone writes.*
 :::
 
-**5.** `zazawan howoram vuzunul.`
+**5.** `zazawan howoram duhubun vezehel.`
 
 ::: details Show answer
-*Azawan means to sing.* (sketch plan)
+*Azawan means to tell Uhubun.*
 :::
 
-**6.** `zululon howoram velebel.`
+**6.** `zululon howoral dazawan vezehel.`
 
 ::: details Show answer
-*Ululon means to sleep.* (sketch plan)
+*Ululon’s itinerary is to tell Azawan.*
+:::
+
+**7.** `zuhubun howoram vuwurul.`
+
+::: details Show answer
+*Uhubun means to write.*
 :::
 
 ## Intermediate
@@ -207,37 +217,36 @@ When you mark **how** you forecast (a usual pattern, an inference, and so on), k
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills on this Intermediate band. Try each item before opening **Show answer**. Pick **DECISION** (`egege` + changeability), stack evidentiality on **PREDICT**, or stack **PLAN** with **DECISION**.
+Short drills for Intermediate. Try each item before opening **Show answer**.
 
-**Roots used here**:
+**Roots used here:**
 
-| English | Agalan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *Uhubun* | `uhubun` | | |
-| **PLAN** | `howoram` | `oworal` *world-map* | 🗺️: a map charts a course you mean to take |
-| **PREDICT** | `helezom` | `elezol` *telescope* | 🔭: looks ahead at a distance |
-| **DECISION** | `hegegem` | `egegel` *check* | ✅: a checkmark confirms a pick |
-| *walk* | `awalal` | | |
-| *write* | `uwurul` | | |
-| *sing* | `uzunul` | | |
-| *sleep* | `elebel` | | |
-| *rain* | `anunul` | | |
-| (*pattern*, evidential) | `abawam` | `abawal` *paw-prints* | 🐾: a trail of what usually happens |
+| English | Agalan | Same root as |
+|---------|--------|--------------|
+| *Azawan* | `azawan` | |
+| *Ululon* | `ululon` | |
+| *Uhubun* | `uhubun` | |
+| **PLAN** | `howoram` | `oworal` *world-map* |
+| **PREDICT** | `helezom` | `elezol` *telescope* |
+| **DECISION** | `hegegem` | `egegel` *check* |
+| *walk* | `awalal` | |
+| *write* | `uwurul` | |
+| *rain* | `anunul` | |
+| *pattern* | `habawam` | `abawal` *paw-prints* |
+| *book* | `abogol` | |
 
 #### English → Agalan
 
-**1.** *Ululon has decided to sing, and can still change that.*
+**1.** *Ululon has decided to walk, and can still change that.*
 
 ::: details Show answer
-`zululon hegegem vuzunul.`
+`zululon hegegem vawalal.`
 :::
 
-**2.** *Uhubun has decided for good to sleep.*
+**2.** *Uhubun has decided for good to write.*
 
 ::: details Show answer
-`zuhubun hegegel velebel.`
+`zuhubun hegegel vuwurul.`
 :::
 
 **3.** *From the usual pattern, it will rain.*
@@ -246,7 +255,7 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `helezom habawam vanunul.`
 :::
 
-**4.** *Azawan has the itinerary, and the pick is settled: walk.*
+**4.** *Azawan’s itinerary is to walk, and the pick is settled.*
 
 ::: details Show answer
 `zazawan howoral hegegel vawalal.`
@@ -258,48 +267,60 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zazawan hegeger vuwurul.`
 :::
 
-**6.** *Ululon has decided to walk, and can still change that.*
+**6.** *Ululon has decided to write a book, still open to revision.*
 
 ::: details Show answer
-`zululon hegegem vawalal.`
+`zululon hegegem dabogol vuwurul.`
+:::
+
+**7.** *Uhubun has decided for good to walk.*
+
+::: details Show answer
+`zuhubun hegegel vawalal.`
 :::
 
 #### Agalan → English
 
-**1.** `zazawan hegegem vuzunul.`
+**1.** `zazawan hegegem vuwurul.`
 
 ::: details Show answer
-*Azawan has decided to sing, still open to revision.*
+*Azawan has decided to write, still open to revision.*
 :::
 
-**2.** `zululon hegegel velebel.`
+**2.** `zululon hegegel vawalal.`
 
 ::: details Show answer
-*Ululon has decided for good to sleep.*
+*Ululon has decided for good to walk.*
 :::
 
-**3.** `helezom habawam vanunul.`
+**3.** `helezom habawam vawalal.`
 
 ::: details Show answer
-*Forecast from pattern: it rains.*
+*Forecast from pattern: someone walks.*
 :::
 
-**4.** `zuhubun hegeger vawalal.`
+**4.** `zuhubun hegeger vuwurul.`
 
 ::: details Show answer
-*Uhubun has decided for now to walk.* (temporary pick)
+*Uhubun has decided for now to write.*
 :::
 
-**5.** `zululon hegegem vuwurul.`
+**5.** `zululon hegeger vawalal.`
 
 ::: details Show answer
-*Ululon has decided to write, still open to revision.*
+*Ululon has decided for now to walk.*
 :::
 
-**6.** `zazawan howoral hegegel vawalal.`
+**6.** `zazawan howoral hegegel vuwurul.`
 
 ::: details Show answer
-*Azawan’s itinerary is to walk, and the pick is settled.*
+*Azawan’s itinerary is to write, and the pick is settled.*
+:::
+
+**7.** `zuhubun hegegem dabogol vuwurul.`
+
+::: details Show answer
+*Uhubun has decided to write a book, still open to revision.*
 :::
 
 ## See also

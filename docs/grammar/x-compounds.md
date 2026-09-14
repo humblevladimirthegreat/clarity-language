@@ -33,6 +33,118 @@ That shape is an **ordinary compound**: a full root, **`x`**, another full root.
 
 **Not the same job as:** a word that **starts** with **`x`** is [continue](core.md#continue-x), not this seam.
 
+### Translation practice
+<a id="translation-practice"></a>
+
+Short drills for Beginner. Try each item before opening **Show answer**.
+
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Ululon* | `ululon` |
+| *Uhubun* | `uhubun` |
+| *Sushi-Coffee* | `zuzuzuxogoven` |
+| *dog* | `odogol` |
+| *cat* | `agadal` |
+| *bedroom* | `zohohulabedel` |
+| *friend* | `zeberelonogol` |
+| *sunflower* | `unowel` |
+| *see* | `vejel` |
+| *sit* | `vajul` |
+| *walk* | `awalal` |
+| *run* | `urunul` |
+| *sleep* | `elebel` |
+
+#### English → Agalan
+
+**1.** *Sushi-Coffee* (one shop label)
+
+::: details Show answer
+`zuzuzuxogoven.`
+:::
+
+**2.** *a dog and a cat*
+
+::: details Show answer
+`zodogol zagadal zam.`
+:::
+
+**3.** *a bedroom* (lexical kind)
+
+::: details Show answer
+`zohohulabedel.`
+:::
+
+**4.** *Azawan and Ululon* (two people)
+
+::: details Show answer
+`zazawan zululon.`
+:::
+
+**5.** *a sunflower* (lexical kind)
+
+::: details Show answer
+`zunowel.`
+:::
+
+**6.** *Ululon sees Sushi-Coffee.*
+
+::: details Show answer
+`zululon duzuzuxogoven vejel.`
+:::
+
+**7.** *Azawan sits in a bedroom.*
+
+::: details Show answer
+`zazawan zohohulabedel vajul.`
+:::
+
+#### Agalan → English
+
+**1.** `zeberelonogol.`
+
+::: details Show answer
+*a friend* (lexical kind)
+:::
+
+**2.** `zululon dunowel vejel.`
+
+::: details Show answer
+*Ululon sees a sunflower.*
+:::
+
+**3.** `zagadal zodogol zam.`
+
+::: details Show answer
+*a cat and a dog*
+:::
+
+**4.** `zazawaxululon.`
+
+::: details Show answer
+*Azawan-Ululon* (one person)
+:::
+
+**5.** `zuhubun zohohulabedel velebel.`
+
+::: details Show answer
+*Uhubun sleeps in a bedroom.*
+:::
+
+**6.** `zazawan duzuzuxogoven vawalal.`
+
+::: details Show answer
+*Azawan walks to Sushi-Coffee.*
+:::
+
+**7.** `zeberelonogol vurunul.`
+
+::: details Show answer
+*A friend runs.*
+:::
+
 ## Intermediate
 <a id="intermediate"></a>
 
@@ -146,92 +258,109 @@ One overlay per word. A citation bid and a vocative bid may sit together (`azawa
 **Not the same job as:** **`jawavel`** (the *greeting* / wave root as an interjection). The bid sits on the **person** named.
 
 ### Translation practice
-<a id="translation-practice"></a>
+<a id="translation-practice-intermediate"></a>
 
-Short drills on this Intermediate band. Try each item before opening **Show answer**. The point is **`x`** assembly vs two words vs a lexical compound, or a [greeting bid](#greeting-bid).
+Short drills for Intermediate. Try each item before opening **Show answer**.
 
-**Roots used here**:
+**Roots used here:**
 
-| English | Agalan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *love* | `olovel` | | |
-| *crush* | `agal` | | |
-| *sushi* | `uzuzul` | | |
-| *coffee* | `ogovel` | | |
-| *tea* | `adedal` | | |
-| *house* | `ohohul` | | |
-| *bed* | `abedel` | | |
-| *person* | `eberel` | | |
-| *bond* | `onogol` | `onogol` *knot* | 🪢: two ends held together |
-| *dog* | `odogol` | | |
-| *cat* | `agadal` | | |
-| *sunflower* (lexical compound) | `unowel` | | |
-| *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *Uhubun* | `uhubun` | | |
+| English | Agalan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Ululon* | `ululon` |
+| *Uhubun* | `uhubun` |
+| *sing* | `uzunul` |
+| *sleep* | `elebel` |
+| *see* | `vejel` |
+| *run* | `urunul` |
+| *wave* | `jawavel` |
 
 #### English → Agalan
 
-**1.** *love in the crush sense* (one word, still hear the field)
+**1.** *Azawan — I’m here / we can stay.*
 
 ::: details Show answer
-`golovexagal.`
+`azawaxan.`
 :::
 
-**2.** *a dog and a cat*
-
-::: details Show answer
-`zodogol zagadal zam.`
-:::
-
-**3.** *Sushi-Coffee* (one shop label)
-
-::: details Show answer
-`zuzuzuxogoven.`
-:::
-
-**4.** *a bedroom* (lexical compound)
-
-::: details Show answer
-`zohohulabedel.`
-:::
-
-**5.** *Ululon — one moment please.*
+**2.** *Ululon — one moment please.*
 
 ::: details Show answer
 `jululoxen.`
 :::
 
-**6.** *Azawan — one ask.* (greeting bid)
+**3.** *Azawan — one ask.*
 
 ::: details Show answer
 `azawaxon.`
 :::
 
+**4.** *Azawan — I’m here. Ululon — one ask.*
+
+::: details Show answer
+`azawaxan jululoxon.`
+:::
+
+**5.** *Uhubun — just passing.* (calling)
+
+::: details Show answer
+`juhubuxun.`
+:::
+
+**6.** *Uhubun — one ask.* (citation)
+
+::: details Show answer
+`uhubuxon.`
+:::
+
+**7.** *Azawan — one moment please.* (calling); *Ululon sings.*
+
+::: details Show answer
+`jazawaxen zululon vuzunul.`
+:::
+
 #### Agalan → English
 
-**7.** `zeberelonogol.`
-
-::: details Show answer
-*a friend* (lexical compound)
-:::
-
-**8.** `zunowel.`
-
-::: details Show answer
-*a sunflower* (lexical compound)
-:::
-
-**9.** `uhubuxan.`
+**1.** `uhubuxan.`
 
 ::: details Show answer
 *Uhubun — I’m here / we can stay.*
 :::
 
-**10.** `jululoxun.`
+**2.** `jululoxun.`
 
 ::: details Show answer
-*Ululon — just passing.*
+*Ululon — just passing.* (calling)
+:::
+
+**3.** `azawaxun.`
+
+::: details Show answer
+*Azawan — just passing.*
+:::
+
+**4.** `juhubuxen.`
+
+::: details Show answer
+*Uhubun — one moment please.* (calling)
+:::
+
+**5.** `jululoxon.`
+
+::: details Show answer
+*Ululon — one ask.* (calling)
+:::
+
+**6.** `azawaxan juhubuxon.`
+
+::: details Show answer
+*Azawan — I’m here. Uhubun — one ask.* (calling)
+:::
+
+**7.** `jawavel.`
+
+::: details Show answer
+*Wave!* (not a greeting bid on a name)
 :::
 
 ## Advanced
@@ -265,31 +394,75 @@ The join letter records how the **left** root entered the closed kind (usually *
 ### Translation practice
 <a id="translation-practice-advanced"></a>
 
-Try each item before opening **Show answer**. Recognize a lexical compound vs productive **`x`**.
+Short drills for Advanced. Try each item before opening **Show answer**.
 
-**1.** *a friend* (lexical compound)
+**Roots used here:**
+
+| English | Agalan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Ululon* | `ululon` |
+| *Uhubun* | `uhubun` |
+| *friend* | `zeberelonogol` |
+| *textbook* | `zabogolahalal` |
+| *firehouse* | `zohohulurel` |
+| *bedroom* | `zohohulabedel` |
+| *see* | `vejel` |
+| *sit* | `vajul` |
+| *walk* | `awalal` |
+
+#### English → Agalan
+
+**1.** *a friend* (lexical kind)
 
 ::: details Show answer
 `zeberelonogol.`
 :::
 
-**2.** *a textbook* (lexical compound)
+**2.** *a textbook* (lexical kind)
 
 ::: details Show answer
 `zabogolahalal.`
 :::
 
-**3.** *Azawan and Ululon as two people*
+**3.** *Ululon sits in a firehouse.* (lexical kind)
+
+::: details Show answer
+`zululon zohohulurel vajul.`
+:::
+
+**4.** *Azawan and Ululon* (two people, not one stem)
 
 ::: details Show answer
 `zazawan zululon.`
 :::
 
-**4.** *a firehouse* (lexical compound)
+#### Agalan → English
+
+**1.** `zohohulurel.`
 
 ::: details Show answer
-`zohohulurel.`
+*a firehouse* (lexical kind)
 :::
+
+**2.** `zuhubun zabogolahalal vejel.`
+
+::: details Show answer
+*Uhubun sees a textbook.*
+:::
+
+**3.** `zazawan zohohulabedel vawalal.`
+
+::: details Show answer
+*Azawan walks in a bedroom.*
+:::
+
+**4.** `zohohulabedel.`
+
+::: details Show answer
+*a bedroom* (lexical kind)
+:::
+
 
 ## See also
 

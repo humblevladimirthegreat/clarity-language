@@ -212,12 +212,12 @@ Two or more items still take the same vowel and ending as the lists above. The t
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills on this Beginner band. Try each item before opening **Show answer**. The join sits **after** the items; pick the vowel (set vs rank, including **`u`**) and the ending (**-l** / **-m** / **-r**), including single-item and standalone Beginner forms.
+Short drills for Beginner. Try each item before opening **Show answer**. The join sits **after** the items; pick the vowel (set vs rank, including **`u`**) and the ending (**-l** / **-m** / **-r**), including single-item and standalone forms.
 
 **Roots used here:**
 
-| English | Agalan | Cue |
-|---------|--------|-----|
+| English | Agalan | Same root as |
+|---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
@@ -225,19 +225,16 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 | *cat* | `agadal` | |
 | *tea* | `adedal` | |
 | *coffee* | `ogovel` | |
-| *water* | `unudel` | |
-| *challenging* | `omonam` | |
 | *person* | `eberel` | |
-| *walk* | `awalal` | |
-| *run* | `urunul` | |
-| *sleep* | `elebel` | |
+| *walk* | `vawalal` | `awalal` *walk* |
+| *run* | `vurunul` | `urunul` *run* |
 
 #### English → Agalan
 
-**1.** *a dog and a cat*
+**1.** *Ululon and Azawan (and possibly more)*
 
 ::: details Show answer
-`zodogol zagadal zal.`
+`zululon zazawan zam.`
 :::
 
 **2.** *tea or coffee (pick one)*
@@ -246,28 +243,28 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zadedal zogovel zol.`
 :::
 
-**3.** *coffee (optional)*
+**3.** *just Uhubun*
+
+::: details Show answer
+`zuhubun zal.`
+:::
+
+**4.** *not Ululon*
+
+::: details Show answer
+`zululon zul.`
+:::
+
+**5.** *coffee (optional)*
 
 ::: details Show answer
 `zogovel zom.`
 :::
 
-**4.** *just Azawan*
+**6.** *only Ululon matters* / *Ululon first*
 
 ::: details Show answer
-`zazawan zal.`
-:::
-
-**5.** *not challenging*
-
-::: details Show answer
-`gomonam gul.`
-:::
-
-**6.** *neither tea nor coffee*
-
-::: details Show answer
-`zadedal zogovel zul.`
+`zululon zel.`
 :::
 
 **7.** *something* / *someone*
@@ -276,60 +273,60 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zar.`
 :::
 
-**8.** *Azawan walks and Ululon runs (and possibly more).*
+**8.** *Ululon runs and Azawan walks (and possibly more).*
 
 ::: details Show answer
-`zazawan vawalal zululon vurunul xam.`
+`zululon vurunul zazawan vawalal xam.`
 :::
 
 #### Agalan → English
 
-**1.** `zodogol zagadal zam.`
+**1.** `zodogol zagadal zal.`
 
 ::: details Show answer
-*a dog and a cat (and possibly more)*
+*a dog and a cat*
 :::
 
-**2.** `zadedal zogovel zol.`
-
-::: details Show answer
-*tea or coffee (pick one)*
-:::
-
-**3.** `zazawan zul.`
-
-::: details Show answer
-*not Azawan*
-:::
-
-**4.** `zual.`
+**2.** `zual.`
 
 ::: details Show answer
 *everything* / *everyone*
 :::
 
-**5.** `zeberel zar.`
+**3.** `zeberel zar.`
 
 ::: details Show answer
 *some (unknown) person*
 :::
 
-**6.** `zadedal zogovel zar.`
-
-::: details Show answer
-*something among tea and coffee*
-:::
-
-**7.** `zazawan zel.`
-
-::: details Show answer
-*only Azawan matters* / *Azawan first*
-:::
-
-**8.** `vawalal vurunul vam.`
+**4.** `vawalal vurunul vam.`
 
 ::: details Show answer
 *walks and runs (and possibly more)*
+:::
+
+**5.** `zadedal zogovel zul.`
+
+::: details Show answer
+*neither tea nor coffee*
+:::
+
+**6.** `zuhubun zam.`
+
+::: details Show answer
+*Uhubun, for one* / *Uhubun (and possibly more)*
+:::
+
+**7.** `zululon zuhubun zar.`
+
+::: details Show answer
+*something among Ululon and Uhubun*
+:::
+
+**8.** `zel.`
+
+::: details Show answer
+*no favorite* / *nobody's first*
 :::
 
 ## Intermediate
@@ -594,121 +591,128 @@ An adverb `/h/` before the verb-phrase stretch, or in SHARED after the join, cov
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills on this Intermediate band. Try each item before opening **Show answer**. Sample the decisions this band adds: invert **`ua`**, universals vs *everything but*, SHARED after the join, islands, nesting, and clause **`xan`**.
+Short drills for Intermediate. Try each item before opening **Show answer**. Sample invert **`ua`** / **`uo`** / **`ue`**, universals vs leftover, SHARED after the join, nesting, inclusive **`zaom`**, and clause **`xan`**.
 
-**Roots used here**:
+**Roots used here:**
 
-| English | Agalan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *Uhubun* | `uhubun` | | |
-| *dog* | `odogol` | | |
-| *cat* | `agadal` | | |
-| *tea* | `adedal` | | |
-| *coffee* | `ogovel` | | |
-| *water* | `unudel` | | |
-| *challenging* | `omonam` | | |
-| *onion* | `onunol` | | |
-| *cucumber* | `ugumel` | | |
-| *apple* | `abelel` | | |
-| *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
-| *walk* | `awalal` | |
-| *run* | `urunul` | |
-| *sleep* | `elebel` | |
+| English | Agalan | Same root as |
+|---------|--------|--------------|
+| *Azawan* | `azawan` | |
+| *Ululon* | `ululon` | |
+| *Uhubun* | `uhubun` | |
+| *dog* | `odogol` | |
+| *cat* | `agadal` | |
+| *tea* | `adedal` | |
+| *coffee* | `ogovel` | |
+| *water* | `unudel` | |
+| *challenging* | `omonam` | |
+| *onion* | `onunol` | |
+| *cucumber* | `ugumel` | |
+| *apple* | `abelel` | |
+| *see* | `vejel` | `ejel` *eye* |
+| *tempt* | `vabelel` | `abelel` *apple* |
+| *walk* | `vawalal` | `awalal` *walk* |
+| *run* | `vurunul` | `urunul` *run* |
+| *sleep* | `velebel` | `elebel` *sleep* |
 
 #### English → Agalan
 
-**1.** *tea ≻ coffee ≻ water*
-
-::: details Show answer
-`zadedal zogovel zunudel zel.`
-:::
-
-**2.** *everything but tea and coffee*
+**1.** *everything but tea and coffee*
 
 ::: details Show answer
 `zadedal zogovel zual.`
 :::
 
-**3.** *every cat*
+**2.** *every cat*
 
 ::: details Show answer
 `zual gagadal.`
 :::
 
-**4.** *(challenging dog) and (challenging cat)*
+**3.** *(challenging dog) and (challenging cat)*
 
 ::: details Show answer
 `zodogol zagadal zal gomonam.`
 :::
 
-**5.** *Azawan and (just water)*
-
-::: details Show answer
-`zazawan ^ zunudel zal ^ zam.`
-:::
-
-**6.** *Azawan walks and then Ululon runs.*
-
-::: details Show answer
-`zazawan vawalal zululon vurunul xan.`
-:::
-
-**7.** *at least Azawan*
-
-::: details Show answer
-`zazawan zaom.`
-:::
-
-**8.** *(tea or coffee) and water*
+**4.** *(tea or coffee) and water*
 
 ::: details Show answer
 `zadedal zogovel zol zunudel zal.`
 :::
 
-#### Agalan → English
-
-**1.** `zual gagadal.`
+**5.** *Azawan walks and then Ululon runs.*
 
 ::: details Show answer
-*every cat*
+`zazawan vawalal zululon vurunul xan.`
 :::
 
-**2.** `zagadal zual.`
+**6.** *at least Uhubun*
+
+::: details Show answer
+`zuhubun zaom.`
+:::
+
+**7.** *anything but coffee*
+
+::: details Show answer
+`zogovel zuol.`
+:::
+
+**8.** *Ululon last, period*
+
+::: details Show answer
+`zululon zuel.`
+:::
+
+#### Agalan → English
+
+**1.** `zagadal zual.`
 
 ::: details Show answer
 *everything but the cat*
 :::
 
-**3.** `zadedal zogovel zunudel zel.`
+**2.** `zuam gagadal.`
 
 ::: details Show answer
-*tea ≻ coffee ≻ water*
+*every cat, as far as I know*
 :::
 
-**4.** `zazawan ^ zal ^ zam.`
-
-::: details Show answer
-*Azawan and nothing*
-:::
-
-**5.** `zonunol zugumel zual.`
+**3.** `zonunol zugumel zual.`
 
 ::: details Show answer
 *everything but onion and cucumber*
 :::
 
-**6.** `vejel vabelel vam dabelel.`
+**4.** `vejel vabelel vam dabelel.`
 
 ::: details Show answer
 *sees and tempts an apple*
 :::
 
-**7.** `zazawan vawalal zululon vurunul xol zuhubun velebel xal.`
+**5.** `vawalal vurunul val vul.`
+
+::: details Show answer
+*not walk, and not run*
+:::
+
+**6.** `zazawan vawalal zululon vurunul xol zuhubun velebel xal.`
 
 ::: details Show answer
 *(Azawan walks or Ululon runs) and Uhubun sleeps.*
+:::
+
+**7.** `zadedal zogovel zunudel zel.`
+
+::: details Show answer
+*tea ≻ coffee ≻ water*
+:::
+
+**8.** `zunudel zuom.`
+
+::: details Show answer
+*anything but water (and possibly more)*
 :::
 
 ## Advanced
@@ -808,25 +812,26 @@ These limits apply to every join.
 ### Translation practice
 <a id="translation-practice-advanced"></a>
 
-Short drills on this Advanced band. Try each item before opening **Show answer**. Phrase **-n** is a **named list** (clause **sequence** is Intermediate); one item also tests a rare-arity contrast (**`zor`** vs **`zer`**, **`zur`**, or standalone **`zan`**).
+Short drills for Advanced. Try each item before opening **Show answer**. Phrase **-n** names a package, not a person; one item also tests a rare-arity contrast (**`zor`** vs **`zer`**, **`zur`**, **`zan`**, or a **`^`** island).
 
 **Roots used here:**
 
-| English | Agalan | Cue |
-|---------|--------|-----|
+| English | Agalan | Same root as |
+|---------|--------|--------------|
 | *Azawan* | `azawan` | |
 | *Ululon* | `ululon` | |
-| *tea* | `adedal` | |
-| *coffee* | `ogovel` | |
-| *water* | `unudel` | |
-| *person* | `eberel` | |
+| *Uhubun* | `uhubun` | |
+| *book* | `abogol` | |
+| *house* | `ohohul` | |
+| *chair* | `ajul` | |
+| *song* | `uzunul` | |
 
 #### English → Agalan
 
-**1.** *tea or coffee (the usual named menu)*
+**1.** *a song or a book (the usual named menu)*
 
 ::: details Show answer
-`zadedal zogovel zon.`
+`zuzunul zabogol zon.`
 :::
 
 **2.** *null* / *void*
@@ -835,54 +840,54 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 `zan.`
 :::
 
-**3.** *any of tea, coffee, or water is fine (no order)*
+**3.** *any of a chair, a house, or a book is fine (no order)*
 
 ::: details Show answer
-`zadedal zogovel zunudel zor.`
+`zajul zohohul zabogol zor.`
 :::
 
-**4.** *pick tea, coffee, or water by ranking*
+**4.** *Azawan and (just Uhubun)*
 
 ::: details Show answer
-`zadedal zogovel zunudel zer.`
+`zazawan ^ zuhubun zal ^ zam.`
 :::
 
-**5.** *someone other than Azawan and Ululon*
+**5.** *someone other than Ululon*
 
 ::: details Show answer
-`zazawan zululon zur.`
+`zululon zur.`
 :::
 
 #### Agalan → English
 
-**1.** `zan.`
-
-::: details Show answer
-*null* / *void*
-:::
-
-**2.** `zadedal zogovel zon.`
-
-::: details Show answer
-*tea or coffee (the usual named menu)*
-:::
-
-**3.** `zaen.`
+**1.** `zaen.`
 
 ::: details Show answer
 *it's a draw* (stock)
 :::
 
-**4.** `zadedal zogovel zunudel zer.`
+**2.** `zajul zohohul zabogol zer.`
 
 ::: details Show answer
-*pick tea, coffee, or water by ranking*
+*pick a chair, a house, or a book by ranking*
 :::
 
-**5.** `zazawan zululon zur.`
+**3.** `zazawan ^ zal ^ zam.`
 
 ::: details Show answer
-*someone other than Azawan and Ululon*
+*Azawan and nothing*
+:::
+
+**4.** `zuol.`
+
+::: details Show answer
+*anything (goes)*
+:::
+
+**5.** `zuzunul zabogol zur.`
+
+::: details Show answer
+*someone other than the song and the book* / *something other than a song and a book*
 :::
 
 ## See also

@@ -69,9 +69,9 @@ Write a special adjective `gonunul` after the first name, then an extra noun (`/
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills on this Beginner band. Try each item before opening **Show answer**. Property and kind sit on `/ɡ/`; identity uses **`gonunul`** plus `/b/`.
+Short drills for Beginner. Try each item before opening **Show answer**.
 
-**Roots used here**:
+**Roots used here:**
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -80,98 +80,99 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 | *Uhubun* | `uhubun` | | |
 | *dog* | `odogol` | | |
 | *cat* | `agadal` | | |
-| *Japanese* (titled) | `ajanan` | `ajanal` *Japan* | 🇯🇵: the named people |
+| *book* | `abogol` | | |
 | *blue* | `elulul` | | |
-| *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
+| *Japanese* | `ajanan` | `ajanal` *Japan* | 🇯🇵: the named people |
 | *challenging* | `omonam` | `omonol` *mountain* | ⛰️: hard to climb |
 | **SAME** | `onunul` | `onunul` *coin* | 🪙: two faces, one substance |
+| *walk* | `awalal` | | |
 
 #### English → Agalan
 
-**1.** *Azawan is challenging.*
-
-::: details Show answer
-`zazawan gomonam.`
-:::
-
-**2.** *Azawan is a dog.*
+**1.** *Azawan is a dog.*
 
 ::: details Show answer
 `zazawan godogol.`
 :::
 
-**3.** *Ululon is a cat.*
+**2.** *Ululon is challenging.*
 
 ::: details Show answer
-`zululon gagadal.`
+`zululon gomonam.`
 :::
 
-**4.** *Azawan is Japanese.*
+**3.** *Uhubun is Japanese.*
 
 ::: details Show answer
-`zazawan gajanan.`
+`zuhubun gajanan.`
 :::
 
-**5.** *Ululon is Azawan.*
+**4.** *The dog is Azawan.*
 
 ::: details Show answer
-`zululon gonunul bazawan.`
+`zodogol gonunul bazawan.`
 :::
 
-**6.** *Uhubun is happy.*
+**5.** *The book is blue.*
 
 ::: details Show answer
-`zuhubun guzumum.`
+`zabogol gelulul.`
 :::
 
-**7.** *The cat is blue.*
+**6.** *Ululon is Uhubun.*
 
 ::: details Show answer
-`zagadal gelulul.`
+`zululon gonunul buhubun.`
+:::
+
+**7.** *Azawan is a cat.*
+
+::: details Show answer
+`zazawan gagadal.`
 :::
 
 #### Agalan → English
 
-**1.** `zazawan gomonam.`
+**1.** `zodogol vawalal.`
 
 ::: details Show answer
-*Azawan is challenging.*
+*A dog walks.*
 :::
 
-**2.** `zululon godogol.`
+**2.** `zazawan gonunul bodogol.`
 
 ::: details Show answer
-*Ululon is a dog.*
+*Azawan is (the same as) a dog.*
 :::
 
-**3.** `zazawan gajanan.`
+**3.** `zululon gajanan.`
 
 ::: details Show answer
-*Azawan is Japanese.*
+*Ululon is Japanese.*
 :::
 
-**4.** `zululon gonunul bazawan.`
+**4.** `zabogol gomonam.`
 
 ::: details Show answer
-*Ululon is Azawan.*
+*The book is challenging.*
 :::
 
-**5.** `zazawan gonunul bululon.`
+**5.** `zazawan gonunul buhubun.`
 
 ::: details Show answer
-*Azawan is Ululon.*
+*Azawan is Uhubun.*
 :::
 
-**6.** `zodogol gomonam.`
+**6.** `zagadal godogol.`
 
 ::: details Show answer
-*The dog is challenging.*
+*The cat is a dog.*
 :::
 
-**7.** `zuhubun gagadal.`
+**7.** `zuhubun gonunul bazawan.`
 
 ::: details Show answer
-*Uhubun is a cat.*
+*Uhubun is Azawan.*
 :::
 
 ## Intermediate
@@ -221,9 +222,9 @@ Beginner already used closed **`gonunul`** (*is the same as*). The other endings
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills on this Intermediate band. Try each item before opening **Show answer**. Classification packaging and **SAME** endings (**-l** / **-m** / **-n** / **-r**) are the point.
+Short drills for Intermediate. Try each item before opening **Show answer**.
 
-**Roots used here**:
+**Roots used here:**
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -231,99 +232,99 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 | *Ululon* | `ululon` | | |
 | *Uhubun* | `uhubun` | | |
 | *dog* | `odogol` | | |
-| *cat* | `agadal` | | |
+| *book* | `abogol` | | |
+| *red* | `aredel` | | |
+| *person* | `eberel` | | |
 | **SAME** | `onunul` | `onunul` *coin* | 🪙: two faces, one substance |
-| **TOLD** | `heraram` | `eraral` *ear* | |
-| (band: *the person who…*) | `eberel` | | |
 | *walk* | `awalal` | | |
-| *sleep* | `elebel` | | |
+| *write* | `vuwurul` | | |
 
 #### English → Agalan
 
-**1.** *Ululon is Azawan.*
-
-::: details Show answer
-`zululon gonunul bazawan.`
-:::
-
-**2.** *Ululon is basically Azawan.*
+**1.** *Ululon is basically Azawan.*
 
 ::: details Show answer
 `zululon gonunum bazawan.`
 :::
 
-**3.** *Ululon is Azawan (titled identity).*
-
-::: details Show answer
-`zululon gonunun bazawan.`
-:::
-
-**4.** *The person who is Azawan walks.*
+**2.** *The person who is Azawan walks.*
 
 ::: details Show answer
 `zeberel gonunul bazawan vawalal.`
 :::
 
-**5.** *The dog is Azawan.*
+**3.** *Azawan is Ululon (titled identity).*
 
 ::: details Show answer
-`zodogol gonunul bazawan.`
+`zazawan gonunun bululon.`
 :::
 
-**6.** *Azawan is not a dog.*
+**4.** *The book is Azawan.*
 
 ::: details Show answer
-`zazawan godogol gul.`
+`zabogol gonunul bazawan.`
 :::
 
-**7.** *Ululon is the same (as already ascribed) as Azawan.*
+**5.** *The person who is Uhubun writes.*
+
+::: details Show answer
+`zeberel gonunul buhubun vuwurul.`
+:::
+
+**6.** *Ululon is the same (as already ascribed) as Azawan.*
 
 ::: details Show answer
 `zululon gonunur bazawan.`
 :::
 
+**7.** *Azawan is basically Uhubun.*
+
+::: details Show answer
+`zazawan gonunum buhubun.`
+:::
+
 #### Agalan → English
 
-**1.** `zululon gonunum bazawan.`
+**1.** `zululon gonunum buhubun.`
 
 ::: details Show answer
-*Ululon is basically Azawan.*
+*Ululon is basically Uhubun.*
 :::
 
-**2.** `zululon gonunul bazawan.`
+**2.** `zeberel gonunul bazawan vuwurul.`
 
 ::: details Show answer
-*Ululon is Azawan.*
+*The person who is Azawan writes.*
 :::
 
-**3.** `zeberel gonunul bazawan velebel.`
+**3.** `zululon gonunun buhubun.`
 
 ::: details Show answer
-*The person who is Azawan sleeps.*
+*Ululon is Uhubun (titled identity).*
 :::
 
-**4.** `zodogol gonunul bazawan.`
+**4.** `zabogol garedel gonunul bazawan.`
 
 ::: details Show answer
-*The dog is Azawan.*
+*The red book is Azawan.*
 :::
 
-**5.** `zululon gonunun bazawan.`
+**5.** `zazawan gonunur bululon.`
 
 ::: details Show answer
-*Ululon is Azawan (titled identity).*
+*Azawan is the same (as already ascribed) as Ululon.*
 :::
 
-**6.** `zululon godogol gul.`
+**6.** `zodogol gonunum bazawan.`
 
 ::: details Show answer
-*Ululon is not a dog.*
+*The dog is basically Azawan.*
 :::
 
-**7.** `zululon gonunur bazawan.`
+**7.** `zazawan godogol.`
 
 ::: details Show answer
-*Ululon is the same (as already ascribed) as Azawan.*
+*Azawan is a dog.*
 :::
 
 ## See also

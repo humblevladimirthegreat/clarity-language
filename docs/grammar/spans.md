@@ -141,137 +141,124 @@ If the interior is Agalan words, those inner words still start with **their** ro
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills on this Beginner band. Try each item before opening **Show answer**. Prefer a one-token cite, mention, or opaque blob; nativize when the surface wording is not the point. House names for people unless the item is a loan name.
+Short drills for Beginner. Try each item before opening **Show answer**.
 
-**Roots used here**:
+**Roots used here:**
 
-| English | Agalan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *Uhubun* | `uhubun` | | |
-| *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
-| *write* | `uwurul` | | |
-| *sing* | `uzunul` | | |
-| *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
-| *walk* | `awalal` | | |
-| *sleep* | `elebel` | | |
-| *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
-| *dog* | `odogol` | | |
-| *cat* | `agadal` | | |
-| *book* | `abogol` | | |
-| *blue* | `elulul` | | |
+| English | Agalan | Same root as |
+|---------|--------|--------------|
+| *Azawan* | `azawan` | |
+| *Ululon* | `ululon` | |
+| *Uhubun* | `uhubun` | |
+| *tell* | `vezehel` | `ezehel` *speech* |
+| *write* | `uwurul` | |
+| *see* | `vejel` | `ejel` *eye* |
+| *sing* | `uzunul` | |
+| *walk* | `awalal` | |
+| *sleep* | `elebel` | |
+| *happy* | `huzumum` | `uzumul` *smile* |
+| *dog* | `odogol` | |
+| *book* | `abogol` | |
+| *blue* | `elulul` | |
 
 #### English → Agalan
 
-**1.** *Azawan said “hi.”*
+**1.** *Ululon said “hi.”*
 
 ::: details Show answer
-`zazawan d[hi] vezehel.`
+`zululon d[hi] vezehel.`
 :::
 
-**2.** *Azawan said that.* (resume the prior cite)
+**2.** *Azawan wrote something like “hi.”*
 
 ::: details Show answer
-`zazawan d[=] vezehel.`
+`zazawan d~[hi] vuwurul.`
 :::
 
-**3.** *Ululon wrote something like “hi.”*
-
-::: details Show answer
-`zululon d~[hi] vuwurul.`
-:::
-
-**4.** *Uhubun sang “Hamlet.”* (title as wording)
+**3.** *Uhubun sang “Hamlet.”* (title as wording)
 
 ::: details Show answer
 `zuhubun d@[Hamlet] vuzunul.`
 :::
 
-**5.** *Azawan saw sushi.* (ordinary loan, not an opaque blob)
+**4.** *Azawan saw sushi.* (ordinary loan object)
 
 ::: details Show answer
 <code>zazawan d&lt;sushi&gt;l vejel.</code>
 :::
 
-**6.** *The word “dog” is blue.* (the form itself is the subject)
+**5.** *The word “dog” is blue.*
 
 ::: details Show answer
 `z{odogo} gelulul.`
 :::
 
-**7.** *Don’t “oops,” Ululon.*
+**6.** *Don’t “oops,” Ululon.*
 
 ::: details Show answer
 `jul zululon v[oops].`
 :::
 
-**8.** *Azawan walks (happily).* (parenthetical aside)
+**7.** *Uhubun said that.* (resume the prior cite)
+
+::: details Show answer
+`zuhubun d[=] vezehel.`
+:::
+
+**8.** *Azawan walks (happily).*
 
 ::: details Show answer
 `zazawan vawalal h(huzumum).`
 :::
 
-**9.** *Azawan walks (Ululon sleeps).* (clause-body aside)
-
-::: details Show answer
-`zazawan vawalal h(zululon velebel).`
-:::
-
 #### Agalan → English
 
-**1.** `zululon d[=] vezehel.`
+**1.** <code>zululon d&lt;sushi&gt; vejel.</code>
 
 ::: details Show answer
-*Ululon said that.*
+*Ululon saw sushi.* (opaque surface)
 :::
 
-**2.** <code>zazawan d&lt;sushi&gt; vejel.</code>
+**2.** `zazawan d{abogo} vezehel.`
 
 ::: details Show answer
-*Azawan saw sushi.* (opaque surface: not ordinary Agalan words, and not a loan word)
+*Azawan said the word “book.”*
 :::
 
-**3.** `zuhubun d{abogo} vezehel.`
+**3.** `zuhubun d@{Hamlet} vuwurul.`
 
 ::: details Show answer
-*Uhubun said the word “book.”*
+*Uhubun wrote the title Hamlet.*
 :::
 
-**4.** `zululon d@{Hamlet} vuwurul.`
+**4.** `jol zululon d[=] vezehel.`
 
 ::: details Show answer
-*Ululon wrote the title Hamlet (as a named unit).*
+*Ululon said that?!*
 :::
 
-**5.** `jol zazawan d[=] vezehel.`
+**5.** `z{abogo} gelulul.`
 
 ::: details Show answer
-*Azawan said that?!*
+*The word “book” is blue.*
 :::
 
-**6.** `z{agada} godogol.`
-
-::: details Show answer
-*The word “cat” is a dog.*
-:::
-
-**7.** <code>z&lt;Sam&gt;n d[hi] vezehel.</code>
+**6.** <code>z&lt;Sam&gt;n d[hi] vezehel.</code>
 
 ::: details Show answer
 *Sam said “hi.”*
 :::
 
-**8.** <code>&lt;Sam&gt;n</code>
+**7.** <code>&lt;Sam&gt;n</code>
 
 ::: details Show answer
-*Sam* (name citation outside a clause)
+*Sam*
 :::
 
-**9.** `zazawan vawalal h(zululon velebel).`
+**8.** `zululon velebel h(zazawan vawalal).`
 
 ::: details Show answer
-*Azawan walks (Ululon sleeps).*
+*Ululon sleeps (Azawan walks).*
 :::
 
 ## Intermediate
@@ -434,24 +421,26 @@ Sometimes *maybe* or a join should apply only to a multi-word chunk, not the who
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills on this Intermediate band. Try each item before opening **Show answer**. Test spoken opens (TYPE / EDGE / ending), an explicit **`xuxul`** close, nesting, or a **`^ … ^`** island: not only Beginner brackets.
+Short drills for Intermediate. Try each item before opening **Show answer**.
 
-**Roots used here**:
+**Roots used here:**
 
-| English | Agalan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *Uhubun* | `uhubun` | | |
-| *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
-| *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
-| *run* | `urunul` | | |
-| *red* | `aredel` | | |
-| *dog* | `odogol` | | |
-| *cat* | `agadal` | | |
-| *Abogon* | `abogon` | | |
-| *blue* | `elulul` | | |
-| *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
+| English | Agalan | Same root as |
+|---------|--------|--------------|
+| *Azawan* | `azawan` | |
+| *Ululon* | `ululon` | |
+| *Uhubun* | `uhubun` | |
+| *tell* | `vezehel` | `ezehel` *speech* |
+| *sing* | `uzunul` | |
+| *see* | `vejel` | `ejel` *eye* |
+| *run* | `urunul` | |
+| *walk* | `awalal` | |
+| *dog* | `odogol` | |
+| *red* | `aredel` | |
+| *book* | `abogol` | |
+| *Abogon* | `abogon` | |
+| *blue* | `elulul` | |
+| *happy* | `huzumum` | `uzumul` *smile* |
 
 #### English → Agalan
 
@@ -479,10 +468,10 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zazawan daxul vezehel.`
 :::
 
-**5.** *Azawan saw sushi.* (spoken atomic opaque)
+**5.** *Ululon saw sushi.* (spoken atomic opaque)
 
 ::: details Show answer
-`zazawan duxol sushi vejel.`
+`zululon duxol sushi vejel.`
 :::
 
 **6.** *Azawan said “hi” (happily).* (cite nesting an aside)
@@ -491,90 +480,66 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zazawan d[ h(huzumum) hi ] vezehel.`
 :::
 
-**7.** *Azawan walks (happily).* (spoken atomic aside)
-
-::: details Show answer
-`zazawan vawalal hexol huzumum.`
-:::
-
-**8.** *Azawan saw maybe the red dog.* (*maybe* targets that chunk)
+**7.** *Azawan saw maybe the red dog.* (*maybe* targets that chunk)
 
 ::: details Show answer
 <code>zazawan ^ h&lt;maybe&gt;l zodogol garedel ^ vejel.</code>
 :::
 
-**9.** *Uhubun and (just a cat) ran.*
+**8.** *Uhubun and (just a dog) ran.*
 
 ::: details Show answer
-`zuhubun ^ zagadal zal ^ zam vurunul.`
-:::
-
-**10.** *Azawan said the word “Abogon.”*
-
-::: details Show answer
-`zazawan d{abogo} vezehel.`
+`zuhubun ^ zodogol zal ^ zam vurunul.`
 :::
 
 #### Agalan → English
 
-**1.** `zazawan daxel hi.`
+**1.** `zululon daxel hi.`
 
 ::: details Show answer
-*Azawan said “hi.”* (clause-scoped cite: no explicit close)
+*Ululon said “hi.”*
 :::
 
-**2.** `zululon daxam hi zazawan xuxul vezehel.`
+**2.** `zazawan daxam hi zululon xuxul vezehel.`
 
 ::: details Show answer
-*Ululon said something like “hi Azawan.”*
+*Azawan said something like “hi Ululon.”*
 :::
 
 **3.** `zaxur gelulul.`
 
 ::: details Show answer
-*That (cite) is blue.* (resume as subject)
+*That (cite) is blue.*
 :::
 
 **4.** `zuhubun daxon Hamlet vuzunul.`
 
 ::: details Show answer
-*Uhubun sang “Hamlet.”* (spoken atomic proper cite)
+*Uhubun sang “Hamlet.”*
 :::
 
-**5.** `zululon doxom abogo vezehel.`
-
-::: details Show answer
-*Ululon said the word “book” (as a gist / paraphrase).*
-:::
-
-**6.** `zazawan d[ z{abogo} ] vezehel.`
-
-::: details Show answer
-*Azawan said the word “book” (cite wrapping a mention).*
-:::
-
-**7.** <code>zululon ^ h&lt;maybe&gt;l zagadal garedel ^ vejel.</code>
-
-::: details Show answer
-*Ululon saw maybe the red cat.*
-:::
-
-**8.** `zazawan ^ zodogol zal ^ zam vejel.`
-
-::: details Show answer
-*Azawan and (just a dog) saw (it).*
-:::
-
-**9.** `zazawan vawalal hexol huzumum.`
+**5.** `zazawan vawalal hexol huzumum.`
 
 ::: details Show answer
 *Azawan walks (happily).*
 :::
 
-**10.** `zazawan d{abogo} vezehel.`
+**6.** `zazawan d[ z{abogo} ] vezehel.`
 
 ::: details Show answer
-*Azawan said the word “Abogon.”*
+*Azawan said the word “book.”*
+:::
+
+**7.** <code>zululon ^ h&lt;maybe&gt;l zodogol garedel ^ vejel.</code>
+
+::: details Show answer
+*Ululon saw maybe the red dog.*
+:::
+
+**8.** `zabogon gelulul.`
+
+::: details Show answer
+*Abogon is blue.*
 :::
 
 ## Advanced
@@ -667,42 +632,48 @@ duxal code > 1 xuxul
 ### Translation practice
 <a id="translation-practice-advanced"></a>
 
-Short drills on this Advanced band. Try each item before opening **Show answer**. Test how the span **closes** (complete / editorial / close-all), or literal fence material as **opaque** content.
+Short drills for Advanced. Try each item before opening **Show answer**.
 
-**Roots used here**:
+**Roots used here:**
 
-| English | Agalan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *Uhubun* | `uhubun` | | |
-| *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
-| *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
+| English | Agalan | Same root as |
+|---------|--------|--------------|
+| *Azawan* | `azawan` | |
+| *Ululon* | `ululon` | |
+| *Uhubun* | `uhubun` | |
+| *tell* | `vezehel` | `ezehel` *speech* |
+| *happy* | `huzumum` | `uzumul` *smile* |
 
 #### English → Agalan
 
-**1.** *Azawan said “hi…”* (the cite trails off)
-
-::: details Show answer
-`zazawan daxal hi xuxur vezehel.`
-:::
-
-**2.** *Ululon said “hi”* (keep the wording as written, defects and all — editorial close)
+**1.** *Ululon said “hi…”* (the cite trails off)
 
 ::: details Show answer
 `zululon daxal hi xuxur vezehel.`
 :::
 
-**3.** *Uhubun said “hi” (happily)*, then pop every open span at once.
+**2.** *Uhubun said “hi.”* (complete close of one span)
 
 ::: details Show answer
-`zuhubun daxal hi hexol huzumum xuxum vezehel.`
+`zuhubun daxal hi xuxul vezehel.`
+:::
+
+**3.** *Azawan said “hi” (happily), then close every open span at once.*
+
+::: details Show answer
+`zazawan daxal hexol huzumum hi xuxum vezehel.`
 :::
 
 **4.** *Azawan said “he typed ] then left.”*
 
 ::: details Show answer
-`zazawan d[ he typed d<]> then left ] vezehel.`
+<code>zazawan d[ he typed d&lt;]&gt; then left ] vezehel.</code>
+:::
+
+**5.** *Uhubun said “code > 1.”* (spoken opaque, because a writing `<>` would close on the first `>`)
+
+::: details Show answer
+`zuhubun duxal code > 1 xuxul vezehel.`
 :::
 
 #### Agalan → English
@@ -710,31 +681,31 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 **1.** `zazawan d[hi#] vezehel.`
 
 ::: details Show answer
-*Azawan said “hi…”* (editorial cite — wording trails off)
+*Azawan said “hi…”*
 :::
 
-**2.** `zuhubun daxal hi xuxul vezehel.`
+**2.** `zululon daxal hi xuxur xuxum vezehel.`
 
 ::: details Show answer
-*Uhubun said “hi.”* (complete close of one span)
+*Ululon said “hi…”*
 :::
 
-**3.** `zazawan daxal hi xuxur xuxum vezehel.`
+**3.** `zazawan daxal duxol xuxul xuxul vezehel.`
 
 ::: details Show answer
-*Azawan said “hi…”* (editorial innermost, then pop all)
+*Azawan said the word “xuxul.”*
 :::
 
-**4.** `zululon daxal duxol xuxul xuxul vezehel.`
+**4.** <code>zululon d[ item d&lt;#&gt; ] vezehel.</code>
 
 ::: details Show answer
-*Ululon said the word “xuxul” (as opaque content inside a cite).*
+*Ululon said “item #.”*
 :::
 
-**5.** `zululon duxal code > 1 xuxul vezehel.`
+**5.** `zuhubun d[hi#|] vezehel.`
 
 ::: details Show answer
-*Ululon said “code > 1.”* (opaque blob; spoken close, because writing `<>` would take the first `>` as closer)
+*Uhubun said “hi…”*
 :::
 
 ## See also

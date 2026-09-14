@@ -147,29 +147,27 @@ Topic (no **`x`**) keeps ordinary [reference-suffix](reference-suffix.md) ending
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills on this Beginner band. Try each item before opening **Show answer**.
+Short drills for Beginner. Try each item before opening **Show answer**.
 
-**Roots used here**:
+**Roots used here:**
 
-| English | Agalan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *Uhubun* | `uhubun` | | |
-| *dog* | `odogol` | | |
-| *book* | `abogol` | | |
-| *house* | `ohohul` | | |
-| *walk* | `awalal` | | |
-| *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
-| *sing* | `uzunul` | | |
-| *gift* | `awaral` | | |
-| *gathering* | `azegel` | | |
-| *autonomy* | `alodol` | `alodol` *ballot-box* | 🗳️: voting is choosing for yourself |
-| *competence* | `olozol` | `olozol` *toolbox* | 🧰: the kit that gets things working |
-| *relatedness* | `onogol` | `onogol` *knot* | 🪢: ties people together |
-| *pleasure* | `awerol` | `awerol` *strawberry* | 🍓: sweetness you enjoy |
-| *survival* | `uhuhel` | `uhuhel` *shield* | 🛡️: what keeps you safe |
-| *unspecified need* | `egel` | `egel` *egg* | 🥚: not yet a specific kind |
+| English | Agalan | Same root as |
+|---------|--------|--------------|
+| *Azawan* | `azawan` | |
+| *Ululon* | `ululon` | |
+| *Uhubun* | `uhubun` | |
+| *book* | `abogol` | |
+| *house* | `ohohul` | |
+| *tell* | `vezehel` | `ezehel` *speech* |
+| *sing* | `uzunul` | |
+| *gift* | `awaral` | |
+| *gathering* | `azegel` | |
+| *autonomy* | `alodol` | `alodol` *ballot-box* |
+| *competence* | `olozol` | `olozol` *toolbox* |
+| *relatedness* | `onogol` | `onogol` *knot* |
+| *pleasure* | `awerol` | `awerol` *strawberry* |
+| *survival* | `uhuhel` | `uhuhel` *shield* |
+| *unspecified need* | `egel` | `egel` *egg* |
 
 #### English → Agalan
 
@@ -179,16 +177,16 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `hawerol.`
 :::
 
-**2.** *The gift serves relatedness (physical channel).*
+**2.** *The gift serves relatedness (physical contact).*
 
 ::: details Show answer
 `zawaral wonogoxal.`
 :::
 
-**3.** *The house serves competence (physical channel).*
+**3.** *The book serves competence (mental contact).*
 
 ::: details Show answer
-`zohohul wolozoxal.`
+`zabogol wolozoxam.`
 :::
 
 **4.** *The gathering costs autonomy right now (temporary).*
@@ -203,72 +201,72 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zazawan vezehel honogoxom.`
 :::
 
-**6.** *Unspecified need (as a topic).*
-
-::: details Show answer
-`hegel.`
-:::
-
-**7.** *The book serves competence (mental channel).*
-
-::: details Show answer
-`zabogol wolozoxam.`
-:::
-
-**8.** *Uhubun sings: survival ought to be protected (bound).*
+**6.** *Uhubun sings: survival ought to be protected (bound).*
 
 ::: details Show answer
 `zuhubun vuzunul huhuhexol.`
 :::
 
+**7.** *The book costs competence (modifiable).*
+
+::: details Show answer
+`zabogol wolozoxum.`
+:::
+
+**8.** *The house serves survival (physical contact).*
+
+::: details Show answer
+`zohohul wuhuhexal.`
+:::
+
 #### Agalan → English
 
-**1.** `hawerol.`
-
-::: details Show answer
-*Pleasure (as a topic).*
-:::
-
-**2.** `zawaral wonogoxal.`
-
-::: details Show answer
-*The gift serves relatedness (physical channel).*
-:::
-
-**3.** `zazegel walodoxur.`
-
-::: details Show answer
-*The gathering costs autonomy right now (temporary).*
-:::
-
-**4.** `zabogol wolozoxam.`
-
-::: details Show answer
-*The book serves competence (mental channel).*
-:::
-
-**5.** `hegel.`
+**1.** `hegel.`
 
 ::: details Show answer
 *Unspecified need (as a topic).*
 :::
 
-**6.** `zululon vezehel honogoxor.`
+**2.** `zohohul wolozoxal.`
+
+::: details Show answer
+*The house serves competence (physical contact).*
+:::
+
+**3.** `zawaral wonogoxam.`
+
+::: details Show answer
+*The gift serves relatedness (mental contact).*
+:::
+
+**4.** `zululon vezehel honogoxor.`
 
 ::: details Show answer
 *Ululon tells: relatedness ought to be served (invite).*
 :::
 
-**7.** `zohohul wuhuhexal.`
+**5.** `zabogol wolozoxar.`
 
 ::: details Show answer
-*The house serves survival (physical channel).*
+*The book serves competence (spiritual contact).*
 :::
 
-**8.** `zabogol wolozoxum.`
+**6.** `zazegel walodoxul.`
 
 ::: details Show answer
-*The book costs competence (modifiable).*
+*The gathering costs autonomy (irreversible).*
+:::
+
+**7.** `zuhubun vuzunul haweroxom.`
+
+::: details Show answer
+*Uhubun sings: pleasure ought to be served (endorse).*
+:::
+
+**8.** `zawaral wuhuhexum.`
+
+::: details Show answer
+*The gift costs survival (modifiable).*
 :::
 
 ## Intermediate
@@ -331,31 +329,29 @@ Prefer **-m** on **`xu` / `xe` / `xo`** when that table’s dimension is unclear
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills on this Intermediate band. Try each item before opening **Show answer**.
+Short drills for Intermediate. Try each item before opening **Show answer**.
 
-**Roots used here**:
+**Roots used here:**
 
-| English | Agalan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *Uhubun* | `uhubun` | | |
-| *book* | `abogol` | | |
-| *house* | `ohohul` | | |
-| *walk* | `awalal` | | |
-| *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
-| *sing* | `uzunul` | | |
-| *write* | `uwurul` | | |
-| *sit* | `vajul` | `ajul` *chair* | 🪑: taking a seat |
-| *gift* | `awaral` | | |
-| *gathering* | `azegel` | | |
-| *autonomy* | `alodol` | `alodol` *ballot-box* | 🗳️: voting is choosing for yourself |
-| *competence* | `olozol` | `olozol` *toolbox* | 🧰: the kit that gets things working |
-| *relatedness* | `onogol` | `onogol` *knot* | 🪢: ties people together |
-| *pleasure* | `awerol` | `awerol` *strawberry* | 🍓: sweetness you enjoy |
-| *survival* | `uhuhel` | `uhuhel` *shield* | 🛡️: what keeps you safe |
-| *always* | `hual` | | |
-| *dog* | `odogol` | | |
+| English | Agalan | Same root as |
+|---------|--------|--------------|
+| *Azawan* | `azawan` | |
+| *Ululon* | `ululon` | |
+| *Uhubun* | `uhubun` | |
+| *dog* | `odogol` | |
+| *house* | `ohohul` | |
+| *walk* | `awalal` | |
+| *tell* | `vezehel` | `ezehel` *speech* |
+| *sing* | `uzunul` | |
+| *write* | `uwurul` | |
+| *sit* | `vajul` | `ajul` *chair* |
+| *gift* | `awaral` | |
+| *gathering* | `azegel` | |
+| *autonomy* | `alodol` | `alodol` *ballot-box* |
+| *competence* | `olozol` | `olozol` *toolbox* |
+| *relatedness* | `onogol` | `onogol` *knot* |
+| *pleasure* | `awerol` | `awerol` *strawberry* |
+| *always* | `hual` | |
 
 #### English → Agalan
 
@@ -389,31 +385,19 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zululon vuwurul holozoxem.`
 :::
 
-**6.** *Azawan’s house serves competence (physical channel).*
+**6.** *Azawan’s house serves competence (physical contact).*
 
 ::: details Show answer
 `zohohul gohohum bazawan wolozoxal.`
 :::
 
-**7.** *The gift serves relatedness (physical).*
-
-::: details Show answer
-`zawaral wonogoxal.`
-:::
-
-**8.** *Uhubun tells: relatedness ought to be served (endorse).*
-
-::: details Show answer
-`zuhubun vezehel honogoxom.`
-:::
-
-**9.** *Azawan tells: competence met (physical) and relatedness as internal motive.*
+**7.** *Azawan tells: competence is met (physical) and relatedness is the internal motive.*
 
 ::: details Show answer
 `zazawan vezehel holozoxal honogoxem.`
 :::
 
-**10.** *Ululon tells: relatedness ought (bound) and relatedness as circumstantial motive.*
+**8.** *Ululon tells: relatedness ought (bound) and relatedness as circumstantial motive.*
 
 ::: details Show answer
 `zululon vezehel honogoxol honogoxel.`
@@ -421,64 +405,52 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 
 #### Agalan → English
 
-**1.** `zazawan vezehel honogoxem.`
+**1.** `zululon vuwurul holozoxel.`
 
 ::: details Show answer
-*Azawan tells for relatedness (internal reason).*
+*Ululon writes for competence (circumstantial motive).*
 :::
 
-**2.** `zululon vawalal honogoxel.`
+**2.** `zuhubun vajul honogoxem.`
 
 ::: details Show answer
-*Ululon walks for relatedness (circumstantial motive).*
+*Uhubun sits for relatedness (internal reason).*
 :::
 
-**3.** `zuhubun vuzunul honogoxem hual.`
+**3.** `zazawan vawalal honogoxer.`
 
 ::: details Show answer
-*Uhubun sings for relatedness (internal motive, as usual).*
+*Azawan walks for relatedness (protective motive).*
 :::
 
-**4.** `zazawan vajul honogoxer.`
+**4.** `zawaral waweroxar.`
 
 ::: details Show answer
-*Azawan sits for relatedness (protective motive).*
+*The gift serves pleasure (spiritual contact).*
 :::
 
-**5.** `zululon vuwurul holozoxem.`
-
-::: details Show answer
-*Ululon writes for competence (internal reason).*
-:::
-
-**6.** `zohohul gohohum bazawan wolozoxal.`
-
-::: details Show answer
-*Azawan’s house serves competence (physical channel).*
-:::
-
-**7.** `zawaral waweroxar.`
-
-::: details Show answer
-*The gift serves pleasure (spiritual channel).*
-:::
-
-**8.** `zazegel walodoxum.`
+**5.** `zazegel walodoxum.`
 
 ::: details Show answer
 *The gathering costs autonomy (modifiable).*
 :::
 
-**9.** `zazawan godogol honogoxum.`
+**6.** `zazawan godogol honogoxum.`
 
 ::: details Show answer
-*Azawan is a dog; relatedness unmet (modifiable).*
+*Azawan is a dog; relatedness is unmet (modifiable).*
 :::
 
-**10.** `wonogoxal.` `honogoxem.` `honogoxom.` `honogoxum.`
+**7.** `zuhubun vezehel honogoxom.`
 
 ::: details Show answer
-*Relatedness served (physical contact). For relatedness (internal motive). Relatedness ought (endorse). Relatedness unmet (modifiable).*
+*Uhubun tells: relatedness ought to be served (endorse).*
+:::
+
+**8.** `zululon vuzunul honogoxem hual.`
+
+::: details Show answer
+*Ululon sings for relatedness (internal motive, as usual).*
 :::
 
 ## See also

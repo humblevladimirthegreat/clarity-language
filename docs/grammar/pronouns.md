@@ -92,21 +92,24 @@ English *we* can mean “you and I” or “I and my people, not you.” Inclusi
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills on this Beginner band. Try each item before opening **Show answer**.
+Short drills for Beginner. Try each item before opening **Show answer**.
 
-**Roots used here**:
+**Roots used here:**
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
 | *Azawan* | `azawan` | | |
 | *Ululon* | `ululon` | | |
+| *Uhubun* | `uhubun` | | |
 | *dog* | `odogol` | | |
 | *book* | `abogol` | | |
+| *red* | `aredel` | | |
 | *walk* | `awalal` | | |
 | *sit* | `vajul` | `ajul` *chair* | 🪑: taking a seat |
 | *sleep* | `elebel` | | |
 | *run* | `urunul` | | |
 | *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
+| *write* | `uwurul` | | |
 | *big* | `elem` | `elel` *elephant* | 🐘: the huge animal |
 | *speaker* | `ugobon` | `ugobol` *microphone* | 🎤: the live voice of the person talking |
 | *listener* | `edonen` | `edonel` *headphones* | 🎧: the one receiving the sound |
@@ -115,7 +118,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 #### English → Agalan
 
-**1.** *Azawan walks. He sits.*
+**1.** *Azawan walks. They sit.*
 
 ::: details Show answer
 `zazawan vawalal. zazar vajul.`
@@ -127,28 +130,28 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zodogol vawalal. zodor vajul.`
 :::
 
-**3.** *Ululon sleeps. A book is big. Azawan does so.*
+**3.** *Ululon sleeps. A red book is big. Azawan also sleeps.*
 
 ::: details Show answer
-`zululon velebel. zabogol gelem. zazawan veleber.`
+`zululon velebel. zabogol garedel gelem. zazawan veleber.`
 :::
 
-**4.** *I walk.*
+**4.** *I write you.*
 
 ::: details Show answer
-`zugobon vawalal.`
+`zugobon dedonen vuwurul.`
 :::
 
-**5.** *We (you and I) walk.*
+**5.** *We (you and I) sit.*
 
 ::: details Show answer
-`zahan vawalal.`
+`zahan vajul.`
 :::
 
-**6.** *You walk.*
+**6.** *You run.*
 
 ::: details Show answer
-`zedonen vawalal.`
+`zedonen vurunul.`
 :::
 
 **7.** *Azawan sees me.*
@@ -171,46 +174,46 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Ululon walks. He sits.*
 :::
 
-**2.** `zodogol vawalal. zodor vajul.`
+**2.** `zuhubun velebel. zuhur vajul.`
 
 ::: details Show answer
-*A dog walks. The dog sits.*
+*Uhubun sleeps. She sits.*
 :::
 
-**3.** `zululon velebel. zabogol gelem. zazawan veleber.`
+**3.** `zodogol velebel. zodor vawalal.`
 
 ::: details Show answer
-*Ululon sleeps. A book is big. Azawan does so.*
+*A dog sleeps. The dog walks.*
 :::
 
-**4.** `zazawan dedonen vejel.`
+**4.** `zuhubun velebel. zabogol gelem. zululon veleber.`
+
+::: details Show answer
+*Uhubun sleeps. A book is big. Ululon also sleeps.*
+:::
+
+**5.** `zazawan dedonen vejel.`
 
 ::: details Show answer
 *Azawan sees you.*
 :::
 
-**5.** `zahan velebel.`
+**6.** `zahan vuwurul.`
 
 ::: details Show answer
-*We (you and I) sleep.*
+*We (you and I) write.*
 :::
 
-**6.** `zedonen vurunul.`
+**7.** `zenenun vurunul.`
 
 ::: details Show answer
-*You run.*
+*Someone runs.*
 :::
 
-**7.** `zenenun vawalal.`
+**8.** `jol zugobon vawalal.`
 
 ::: details Show answer
-*Someone walks.*
-:::
-
-**8.** `jol zugobon vajul.`
-
-::: details Show answer
-*Do I sit?*
+*Do I walk?*
 :::
 
 ## Intermediate
@@ -280,124 +283,117 @@ When you address several people at once, English *you* does not say how many. Th
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills on this Intermediate band. Try each item before opening **Show answer**.
+Short drills for Intermediate. Try each item before opening **Show answer**.
 
-**Roots used here**:
+**Roots used here:**
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
 | *Azawan* | `azawan` | | |
 | *Ululon* | `ululon` | | |
 | *Uhubun* | `uhubun` | | |
+| *book* | `abogol` | | |
+| *red* | `aredel` | | |
 | *walk* | `awalal` | | |
 | *run* | `urunul` | | |
 | *sleep* | `elebel` | | |
 | *sit* | `vajul` | `ajul` *chair* | 🪑: taking a seat |
 | *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
+| *write* | `uwurul` | | |
+| *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
 | *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
 | *haste* | `hadazam` | `adazal` *dash* | 💨: a burst of speed |
+| *topic* | `hozal` | `ozal` *hash* | #️⃣: a heading mark |
 | *interlocutors* | `ahan` | `ahal` *handshake* | 🤝: sharing the floor together |
 | *speaker* | `ugobon` | `ugobol` *microphone* | 🎤: the live voice of the person talking |
 | *listener* | `edonen` | `edonel` *headphones* | 🎧: the one receiving the sound |
 
 #### English → Agalan
 
-**1.** *Azawan walks. Ululon does so.*
+**1.** *Ululon runs. Azawan does so.*
 
 ::: details Show answer
-`zazawan vawalal. zululon vawalar.`
+`zululon vurunul. zazawan vurunur.`
 :::
 
-**2.** *Azawan is happy. Ululon is such.*
+**2.** *Uhubun is happy. Azawan is such.*
 
 ::: details Show answer
-`zazawan guzumum. zululon guzumur.`
+`zuhubun guzumum. zazawan guzumur.`
 :::
 
-**3.** *Azawan sees Ululon. Uhubun sees him.*
+**3.** *Ululon sees Azawan. Uhubun sees them.*
 
 ::: details Show answer
-`zazawan dululon vejel. zuhubun dulur vejel.`
+`zululon dazawan vejel. zuhubun dazar vejel.`
 :::
 
-**4.** *Azawan walks. Ululon runs. Going back to Azawan, he sleeps.*
+**4.** *Azawan walks. Ululon runs. Going back to Azawan, they sleep.*
 
 ::: details Show answer
 `zazawan vawalal. zululon vurunul. xazawar velebel.`
 :::
 
-**5.** *Azawan walks in haste. Ululon runs that way.*
+**5.** *Ululon writes in haste. Azawan walks that way.*
 
 ::: details Show answer
-`zazawan hadazam vawalal. zululon hadar vurunul.`
+`zululon hadazam vuwurul. zazawan hadar vawalal.`
 :::
 
-**6.** *We (you and I) sit.*
+**6.** *As for Uhubun, Ululon runs.*
 
 ::: details Show answer
-`zahan vajul.`
+`hozal buhubun zululon vurunul.`
 :::
 
-**7.** *Azawan and Ululon walk.* (exact two people)
+**7.** *We (you and I) write.*
 
 ::: details Show answer
-`zazawan zululon zal vawalal.`
-:::
-
-**8.** *Azawan and associates walk.*
-
-::: details Show answer
-`zazawanx vawalal.`
+`zahan vuwurul.`
 :::
 
 #### Agalan → English
 
-**1.** `zululon vurunul. zazawan vurunur.`
+**1.** `zazawan vawalal. zululon vawalar.`
 
 ::: details Show answer
-*Ululon runs. Azawan does so.*
+*Azawan walks. Ululon does so.*
 :::
 
-**2.** `zazawan dululon vejel. zuhubun dulur vejel.`
+**2.** `zabogol garedel. zuhubun gareder.`
+
+::: details Show answer
+*A book is red. Uhubun is such.*
+:::
+
+**3.** `zazawan dululon vejel. zuhubun dulur vejel.`
 
 ::: details Show answer
 *Azawan sees Ululon. Uhubun sees him.*
 :::
 
-**3.** `xulur vajul.`
+**4.** `zululon vurunul. zazawan velebel. xulur vajul.`
 
 ::: details Show answer
-*Going back to Ululon, he sits.*
+*Ululon runs. Azawan sleeps. Going back to Ululon, he sits.*
 :::
 
-**4.** `zazawan hadazam vawalal. zululon hadar vurunul.`
+**5.** `hozal bazawan zuhubun vajul.`
 
 ::: details Show answer
-*Azawan walks in haste. Ululon runs that way.*
+*As for Azawan, Uhubun sits.*
 :::
 
-**5.** `zahan vawalal.`
+**6.** `zahan vajul.`
 
 ::: details Show answer
-*We (you and I) walk.*
+*We (you and I) sit.*
 :::
 
-**6.** `zazawan zuhubun zal velebel.`
+**7.** `zedonen dugobon vezehel.`
 
 ::: details Show answer
-*Azawan and Uhubun sleep.*
-:::
-
-**7.** `zululonx vawalal.`
-
-::: details Show answer
-*Ululon and associates walk.*
-:::
-
-**8.** `zedonenx vajul.`
-
-::: details Show answer
-*You all sit.*
+*You tell me.*
 :::
 
 ## Advanced
@@ -484,26 +480,29 @@ Intermediate already recast one referent into a new slot. Each table is an **ant
 ### Translation practice
 <a id="translation-practice-advanced"></a>
 
-Short drills on this Advanced band. Try each item before opening **Show answer**.
+Short drills for Advanced. Try each item before opening **Show answer**.
 
-**Roots used here**:
+**Roots used here:**
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
 | *Azawan* | `azawan` | | |
 | *Ululon* | `ululon` | | |
+| *Uhubun* | `uhubun` | | |
 | *dog* | `odogol` | | |
+| *book* | `abogol` | | |
+| *red* | `aredel` | | |
 | *walk* | `awalal` | | |
 | *run* | `urunul` | | |
 | *sit* | `vajul` | `ajul` *chair* | 🪑: taking a seat |
-| *sleep* | `elebel` | | |
+| *write* | `uwurul` | | |
 | *big* | `elem` | `elel` *elephant* | 🐘: the huge animal |
 | *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
 | *haste* | `hadazam` | `adazal` *dash* | 💨: a burst of speed |
 
 #### English → Agalan
 
-**1.** *Azawan sits. Ululon does that with him.*
+**1.** *Azawan sits. Ululon does that with them.*
 
 ::: details Show answer
 `zazawan vajul. zululon vazar.`
@@ -515,22 +514,22 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 `zodogol vawalal. zawalar gelem.`
 :::
 
-**3.** *Azawan walks. By doing so, Ululon sits.*
+**3.** *Azawan writes. By doing so, Ululon sits.*
 
 ::: details Show answer
-`zazawan vawalal. zululon hawalar vajul.`
+`zazawan vuwurul. zululon huwur vajul.`
 :::
 
-**4.** *Azawan is happy. The happy one runs.*
+**4.** *Uhubun is happy. The happy one runs.*
 
 ::: details Show answer
-`zazawan guzumum. zuzumur vurunul.`
+`zuhubun guzumum. zuzumur vurunul.`
 :::
 
-**5.** *Azawan is happy. Ululon does that.*
+**5.** *A red book is big. The big one sits.*
 
 ::: details Show answer
-`zazawan guzumum. zululon vuzumur.`
+`zabogol garedel gelem. zeler vajul.`
 :::
 
 #### Agalan → English
@@ -541,28 +540,28 @@ Short drills on this Advanced band. Try each item before opening **Show answer**
 *Azawan walks. That one's kind is big.*
 :::
 
-**2.** `zululon vawalal. zazawan hawalar vajul.`
+**2.** `zululon vurunul. zazawan hurur vajul.`
 
 ::: details Show answer
-*Ululon walks. By doing so, Azawan sits.*
+*Ululon runs. By doing so, Azawan sits.*
 :::
 
-**3.** `zazawan guzumum. zululon vuzumur.`
-
-::: details Show answer
-*Azawan is happy. Ululon does that.*
-:::
-
-**4.** `zazawan hadazam vawalal. zadazar gelem.`
-
-::: details Show answer
-*Azawan walks in haste. That haste is big.*
-:::
-
-**5.** `zodogol vajul. zazawan vodor.`
+**3.** `zodogol vajul. zazawan vodor.`
 
 ::: details Show answer
 *A dog sits. Azawan does that with it.*
+:::
+
+**4.** `zululon hadazam vuwurul. zadazar gelem.`
+
+::: details Show answer
+*Ululon writes in haste. That haste is big.*
+:::
+
+**5.** `zuhubun guzumum. zazawan vuzumur.`
+
+::: details Show answer
+*Uhubun is happy. Azawan does that.*
 :::
 
 ## See also

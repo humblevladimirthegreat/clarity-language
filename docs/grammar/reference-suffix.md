@@ -70,7 +70,7 @@ A citation is **lowercase** root + ending (`azawal`, `azawam`, `azawan`). Englis
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills on this Beginner band. Try each item before opening **Show answer**. Choose **-l** (new literal), **-m** (new metaphor), or **-n** (named). Every answer is a citation (no first-letter job mark). For a name, the English prompt is the **sense** (*grace*), not the nativized spelling (*Azawan*), except the greeting items.
+Short drills for Beginner. Try each item before opening **Show answer**. Choose **-l** (new literal), **-m** (new metaphor), or **-n** (named). Every answer is a citation (no first-letter job mark). For a name, the English prompt is the **sense** (*grace*), not the nativized spelling (*Azawan*), except the greeting items.
 
 **Roots used here** (**English** is what you produce; **Agalan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is optional memory helper):
 
@@ -81,9 +81,13 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 | *grace* (as a name) | `azawan` | | |
 | *courage* (as a name) | `ululon` | | |
 | *beauty* (as a name) | `uhubun` | | |
+| *dog* | `odogol` | | |
 | *cat* | `agadal` | | |
+| *house* | `ohohul` | | |
 | *blue* | `elulul` | | |
 | *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
+| *smile* | `uzumul` | | |
+| *book* | `abogol` | | |
 
 #### English → Agalan
 
@@ -93,49 +97,37 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `azawal`
 :::
 
-**2.** *grace*, as a name (citation)
-
-::: details Show answer
-`azawan`
-:::
-
-**3.** *grace* (citation)
+**2.** *grace* (citation)
 
 ::: details Show answer
 `azawam`
 :::
 
-**4.** *courage*, as a name (citation)
+**3.** *grace*, as a name (citation)
 
 ::: details Show answer
-`ululon`
+`azawan`
 :::
 
-**5.** *blue* (citation)
+**4.** *dog* (citation)
 
 ::: details Show answer
-`elulul`
+`odogol`
 :::
 
-**6.** *cat* (citation)
+**5.** *cat* (citation)
 
 ::: details Show answer
 `agadal`
 :::
 
-**7.** *happy* (citation)
+**6.** *blue* (citation)
 
 ::: details Show answer
-`uzumum`
+`elulul`
 :::
 
-**8.** *beauty*, as a name (citation)
-
-::: details Show answer
-`uhubun`
-:::
-
-**9.** *Hello — the speaker is Azawan.*
+**7.** *Hello — the speaker is Azawan.*
 
 ::: details Show answer
 `azawan.`
@@ -143,58 +135,46 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 #### Agalan → English
 
-**1.** `azawal`
+**1.** `ohohul`
 
 ::: details Show answer
-*swan*
+*house*
 :::
 
-**2.** `azawan`
-
-::: details Show answer
-*grace* (as a name)
-:::
-
-**3.** `azawam`
-
-::: details Show answer
-*grace*
-:::
-
-**4.** `ululon`
-
-::: details Show answer
-*courage* (as a name)
-:::
-
-**5.** `elulul`
-
-::: details Show answer
-*blue*
-:::
-
-**6.** `agadal`
-
-::: details Show answer
-*cat*
-:::
-
-**7.** `uzumum`
+**2.** `uzumum`
 
 ::: details Show answer
 *happy*
 :::
 
-**8.** `uhubun`
+**3.** `ululon`
+
+::: details Show answer
+*courage* (as a name)
+:::
+
+**4.** `uhubun`
 
 ::: details Show answer
 *beauty* (as a name)
 :::
 
-**9.** `ululon.`
+**5.** `ululon.`
 
 ::: details Show answer
 *Ululon.* (hello — the speaker is Ululon)
+:::
+
+**6.** `uzumul`
+
+::: details Show answer
+*smile*
+:::
+
+**7.** `abogol`
+
+::: details Show answer
+*book*
 :::
 
 ## Intermediate
@@ -299,57 +279,58 @@ Beginner used **-l** / **-m** / **-n** as reference on citations. On [number wor
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills on this Intermediate band. Try each item before opening **Show answer**. The point is **-n** as a title on any role letter, one **`x`-compound** name, or an office **handle**.
+Short drills for Intermediate. Try each item before opening **Show answer**. The point is **-n** as a title on any role letter, one **`x`-compound** name, or an office **handle**.
 
-**Roots used here**:
+**Roots used here:**
 
-| English | Agalan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Ululon* | `ululon` | | |
-| *Uhubun* | `uhubun` | | |
-| *Abogon* | `abogon` | | |
-| *blue* | `elulul` | | |
-| *walk* | `awalal` | | |
-| *run* | `urunul` | | |
-| *sing* | `uzunul` | | |
-| *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
-| *write* | `uwurul` | | |
-| *haste* | `hadazam` | `adazal` *dash* | 💨: a burst of speed |
-| *Odunaxalanen* | `zodunaxalanen` | |
+| English | Agalan | Same root as |
+|---------|--------|--------------|
+| *Azawan* | `azawan` | |
+| *Ululon* | `ululon` | |
+| *Uhubun* | `uhubun` | |
+| *Abogon* | `abogon` | |
+| *Odunaxalanen* | `odunaxalanen` | |
 | *Sushi-Coffee* | `zuzuzuxogoven` | |
-| *Book-Courage* | `zabogoxululon` | |
+| *Book-Courage* | `abogoxululon` | |
+| *book* | `abogol` | |
+| *Blue* (named style) | `gelulun` | `elulul` *blue* |
+| *walk* | `vawalal` | `awalal` *walk* |
+| *run* | `vurunul` | `urunul` *run* |
+| *sing* | `vuzunul` | `uzunul` *sing* |
+| *see* | `vejel` | `ejel` *eye* |
+| *write* | `vuwurul` | `uwurul` *write* |
+| *Haste* (named standard) | `hadazan` | `adazal` *dash* |
 
 #### English → Agalan
 
-**1.** *Odunaxalanen walks.*
-
-::: details Show answer
-`zodunaxalanen vawalal.`
-:::
-
-**2.** *Azawan sees Odunaxalanen* (the place).
-
-::: details Show answer
-`zazawan dodunaxalanen vejel.`
-:::
-
-**3.** *Sushi-Coffee writes.*
-
-::: details Show answer
-`zuzuzuxogoven vuwurul.`
-:::
-
-**4.** *Uhubun sings the Sing* (that titled performance).
+**1.** *Uhubun sings the Sing* (that titled performance).
 
 ::: details Show answer
 `zuhubun vuzunun.`
 :::
 
-**5.** *Azawan runs the Run* (that titled race).
+**2.** *Ululon runs the Run* (that titled race).
 
 ::: details Show answer
-`zazawan vurunun.`
+`zululon vurunun.`
+:::
+
+**3.** *Odunaxalanen walks.*
+
+::: details Show answer
+`zodunaxalanen vawalal.`
+:::
+
+**4.** *Abogon walks.* (office handle, first mention)
+
+::: details Show answer
+`zabogon vawalal.`
+:::
+
+**5.** *Azawan walks in Haste* (the named standard).
+
+::: details Show answer
+`zazawan vawalal hadazan.`
 :::
 
 **6.** *The book is Blue* (the named style).
@@ -358,91 +339,56 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zabogol gelulun.`
 :::
 
-**7.** *Azawan walks in Haste* (the named standard).
+**7.** *Azawan sees Book-Courage.* (that office’s full title)
 
 ::: details Show answer
-`zazawan hadazan vawalal.`
-:::
-
-**8.** *Azawan sees the Blue book* (named style, adjective before the noun).
-
-::: details Show answer
-`zazawan glelulun dabogol vejel.`
-:::
-
-**9.** *Abogon walks.* (office handle, first mention)
-
-::: details Show answer
-`zabogon vawalal.`
-:::
-
-**10.** *Azawan sees Book-Courage.* (that office’s full title)
-
-::: details Show answer
-`zazawan dabogoxululon vejel.`
+`zazawan vejel dabogoxululon.`
 :::
 
 #### Agalan → English
 
-**1.** `zodunaxalanen vawalal.`
+**1.** `zodunaxalanen vurunul.`
 
 ::: details Show answer
-*Odunaxalanen walks.*
+*Odunaxalanen runs.*
 :::
 
-**2.** `zazawan dodunaxalanen vejel.`
+**2.** `zabogoxululon vawalal.`
 
 ::: details Show answer
-*Azawan sees Odunaxalanen* (the place).
+*Book-Courage walks.*
 :::
 
-**3.** `zuzuzuxogoven vuwurul.`
+**3.** `zuhubun vurunun.`
+
+::: details Show answer
+*Uhubun runs the Run* (that titled race).
+:::
+
+**4.** `zululon vuzunun.`
+
+::: details Show answer
+*Ululon sings the Sing* (that titled performance).
+:::
+
+**5.** `zuzuzuxogoven vuwurul.`
 
 ::: details Show answer
 *Sushi-Coffee writes.*
 :::
 
-**4.** `zuhubun vuzunun.`
+**6.** `zululon vawalal hadazan.`
 
 ::: details Show answer
-*Uhubun sings the Sing* (that titled performance).
+*Ululon walks in Haste* (the named standard).
 :::
 
-**5.** `zazawan vurunun.`
+**7.** `zazawan vejel dodunaxalanen.`
 
 ::: details Show answer
-*Azawan runs the Run* (that titled race).
+*Azawan sees Odunaxalanen* (the place).
 :::
 
-**6.** `zabogol gelulun.`
-
-::: details Show answer
-*The book is Blue* (the named style).
-:::
-
-**7.** `zazawan hadazan vawalal.`
-
-::: details Show answer
-*Azawan walks in Haste* (the named standard).
-:::
-
-**8.** `zazawan glelulun dabogol vejel.`
-
-::: details Show answer
-*Azawan sees the Blue book* (named style, adjective before the noun).
-:::
-
-**9.** `zabogon vawalal.`
-
-::: details Show answer
-*Abogon walks.* (office handle)
-:::
-
-**10.** `zazawan dabogoxululon vejel.`
-
-::: details Show answer
-*Azawan sees Book-Courage.* (full title)
-:::
 
 ## See also
 

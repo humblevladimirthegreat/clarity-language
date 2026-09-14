@@ -91,9 +91,9 @@ To say someone **is a kind** (*Azawan is a fighter*), put the same role stem on 
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills on this Beginner band. Try each item before opening **Show answer**.
+Short drills for Beginner. Try each item before opening **Show answer**.
 
-**Roots used here**:
+**Roots used here:**
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -101,15 +101,16 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 | *Ululon* | `ululon` | | |
 | *Uhubun* | `uhubun` | | |
 | *cat* | `agadal` | | |
-| *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
+| *red* | `aredel` | | |
+| *size* / *big* | `elem` | `elel` *elephant* | 🐘: the huge animal |
 | *walk* | `awalal` | | |
 | *run* | `urunul` | | |
 | *sleep* | `elebel` | | |
 | *sing* | `uzunul` | | |
 | *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
-| *write* | `uwurul` | | |
 | *sit* | `vajul` | `ajul` *chair* | 🪑: taking a seat |
 | *fight* | `uvugul` | | |
+| *fighter* | `zaxuvugul` | | |
 | *bond* | `onogol` | `onogol` *knot* | 🪢: ties people together |
 
 #### English → Agalan
@@ -138,10 +139,10 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zazawan dagadal vejel. zuxejer vurunul.`
 :::
 
-**5.** *A writer is happy.*
+**5.** *A fighter is red.*
 
 ::: details Show answer
-`zaxuwurul guzumum.`
+`zaxuvugul garedel.`
 :::
 
 **6.** *Azawan is a fighter, in a manner of speaking.*
@@ -156,7 +157,7 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `zazawan duvugul vejel.`
 :::
 
-**8.** *Azawan is bound to Ululon. That bond-argument runs.*
+**8.** *Azawan is bound to Ululon. That other party of the bond runs.*
 
 ::: details Show answer
 `zazawan gonogol bululon. zoxonogor vurunul.`
@@ -182,16 +183,16 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Azawan sees a cat. The one seen sits.*
 :::
 
-**4.** `zaxawalal guzumum.`
+**4.** `zaxawalal gelem.`
 
 ::: details Show answer
-*A walker is happy.*
+*A walker is big.*
 :::
 
 **5.** `zazawan vuvugul. zaxuvugur vurunul.`
 
 ::: details Show answer
-*Azawan fought. The fighter ran.*
+*Azawan fights. The fighter runs.*
 :::
 
 **6.** `zuhubun dululon vuvugul. duxuvugur vawalal.`
@@ -200,16 +201,16 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Uhubun fought Ululon. The one fought walks.*
 :::
 
-**7.** `zazawan duvugul vejel.`
+**7.** `zululon duvugul vejel.`
 
 ::: details Show answer
-*Azawan sees a fight.*
+*Ululon sees a fight.*
 :::
 
-**8.** `zazawan gaxuvugum.`
+**8.** `zululon gaxuvugum.`
 
 ::: details Show answer
-*Azawan is a fighter, in a manner of speaking.*
+*Ululon is a fighter, in a manner of speaking.*
 :::
 
 ## Intermediate
@@ -334,9 +335,9 @@ Direction words take the same four [reference endings](reference-suffix.md) as o
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills on this Intermediate band. Try each item before opening **Show answer**.
+Short drills for Intermediate. Try each item before opening **Show answer**.
 
-**Roots used here**:
+**Roots used here:**
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -348,10 +349,13 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 | *dog* | `odogol` | | |
 | *book* | `abogol` | | |
 | *walk* | `awalal` | | |
+| *north* / body *ahead* | `onohol` | | ⬆️: map north, or ahead if facing is north |
+| *south* / body *back* | `ohuhul` | | ⬇️: map south, or back if facing is north |
 | *west* / body *left* | `ewezel` | | ⬅️: opposite east, or left of facing |
 | *east* / body *right* | `ezazal` | | ➡️: the sun’s path east, or right of facing |
 | *northwest* / *forward-left* | `onohel` | | ↖️: between north and west |
 | *up* (gravity) | `ubal` | `ubal` *up* | ⏫: away from the pull |
+| *down* (gravity) | `odowol` | `odowol` *down* | ⏬: toward the pull |
 | *tree* | `erel` | | |
 | *listener* | `edonen` | | |
 | *speaker* | `ugobon` | | |
@@ -370,16 +374,16 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zagadal gezazaxululon.`
 :::
 
-**3.** *Walk west.*
+**3.** *Walk north.*
 
 ::: details Show answer
-`jel vawalal hewezel.`
+`jel vawalal honohol.`
 :::
 
-**4.** *Walk up.*
+**4.** *Walk down.*
 
 ::: details Show answer
-`jel vawalal habal.`
+`jel vawalal hodowol.`
 :::
 
 **5.** *The dog on Uhubun’s forward-left.*
@@ -432,10 +436,10 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Walk up.*
 :::
 
-**5.** `zohohul gewezel.`
+**5.** `zohohul gohuhul.`
 
 ::: details Show answer
-*The house on the west.*
+*The house on the south.*
 :::
 
 **6.** `zabogol gewezexululon berel.`
@@ -450,10 +454,10 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *You, walk right (your right).*
 :::
 
-**8.** `zohohul gewezexugobon.`
+**8.** `zohohul gohuhuxazawan.`
 
 ::: details Show answer
-*The house on my left.*
+*The house on Azawan’s back.*
 :::
 
 ## Advanced

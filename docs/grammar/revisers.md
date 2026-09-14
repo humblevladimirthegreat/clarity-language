@@ -115,7 +115,7 @@ Sometimes the thing you want to tweak is not a phrase inside this sentence, but 
 
 Short drills on this Beginner band. Try each item before opening **Show answer**.
 
-**Roots used here**:
+**Roots used here:**
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -134,10 +134,10 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 
 #### English → Agalan
 
-**1.** *Dogs, including a cat and maybe more.*
+**1.** *Dogs, including a cat.*
 
 ::: details Show answer
-`zodogolx am zagadal.`
+`zodogolx al zagadal.`
 :::
 
 **2.** *Coffee instead of tea.*
@@ -146,10 +146,10 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 `dadedal ol dogovel.`
 :::
 
-**3.** *The team except Azawan.*
+**3.** *The team except Ululon.*
 
 ::: details Show answer
-`zahadal ul zazawan.`
+`zahadal ul zululon.`
 :::
 
 **4.** *Additionally, Azawan walks.*
@@ -190,22 +190,22 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *Dogs, including a cat and maybe more.*
 :::
 
-**2.** `dadedal ol dogovel.`
+**2.** `dogovel ol dadedal.`
 
 ::: details Show answer
-*Coffee instead of tea.*
+*Tea instead of coffee.*
 :::
 
-**3.** `zahadal ul zazawan.`
+**3.** `zahadal ul zuhubun.`
 
 ::: details Show answer
-*The team except Azawan.*
+*The team except Uhubun.*
 :::
 
-**4.** `al zuhubun vawalal.`
+**4.** `al zululon vawalal.`
 
 ::: details Show answer
-*Additionally, Uhubun walks.*
+*Additionally, Ululon walks.*
 :::
 
 **5.** `el zululon guzumum.`
@@ -214,22 +214,22 @@ Short drills on this Beginner band. Try each item before opening **Show answer**
 *In other words, Ululon is happy.*
 :::
 
-**6.** `zodogolx al zagadal.`
-
-::: details Show answer
-*Dogs, including a cat.*
-:::
-
-**7.** `zodogol zagadal zam.`
-
-::: details Show answer
-*A dog and a cat.*
-:::
-
-**8.** `ul zazawan velebel.`
+**6.** `ul zazawan velebel.`
 
 ::: details Show answer
 *Except, Azawan sleeps.*
+:::
+
+**7.** `ol zuhubun vawalal.`
+
+::: details Show answer
+*Instead, Uhubun walks.*
+:::
+
+**8.** `zahadal al zazawan.`
+
+::: details Show answer
+*The team, including Azawan.*
 :::
 
 ## Intermediate
@@ -335,7 +335,7 @@ On a non-initial conjunct under a [clause `/x/` fence](joins.md#right-close), th
 
 Short drills on this Intermediate band. Try each item before opening **Show answer**.
 
-**Roots used here**:
+**Roots used here:**
 
 | English | Agalan | Same root as | Cue |
 |---------|--------|--------------|-----|
@@ -344,11 +344,10 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 | *Uhubun* | `uhubun` | | |
 | *dog* | `odogol` | | |
 | *cat* | `agadal` | | |
+| *team* | `ahadal` | | |
 | *tea* | `adedal` | | |
 | *coffee* | `ogovel` | | |
-| *team* | `ahadal` | | |
-| *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
-| *calm* | `erelum` | `erelul` *relief* | 😌: the ease after tension |
+| *bird* | `ubudul` | | |
 | *walk* | `awalal` | | |
 | *run* | `urunul` | | |
 | *therefore* | `xezazal` | `ezazal` *east* | ➡️: the sun’s path, so the talk moves on |
@@ -361,10 +360,10 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `zahadal am zazawan ul zululon.`
 :::
 
-**2.** *Azawan is happy, or rather, calm.*
+**2.** *The team as a titled set, including Azawan.*
 
 ::: details Show answer
-`zazawan guzumum el gerelum.`
+`zahadal an zazawan.`
 :::
 
 **3.** *Azawan: additionally, Ululon walks.*
@@ -373,54 +372,54 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 `jazawan al zululon vawalal.`
 :::
 
-**4.** *Additionally, therefore Azawan walks.*
+**4.** *Additionally, therefore Uhubun walks.*
 
 ::: details Show answer
-`al xezazal zazawan vawalal.`
+`al xezazal zuhubun vawalal.`
 :::
 
-**5.** *Additionally, does Azawan walk?*
+**5.** *Additionally, does Ululon run?*
 
 ::: details Show answer
-`al jol zazawan vawalal.`
+`al jol zululon vurunul?`
 :::
 
-**6.** *The team, including Azawan and including Uhubun (both open).*
-
-::: details Show answer
-`zahadal am zazawan am zuhubun.`
-:::
-
-**7.** *Azawan walks and additionally Ululon runs.*
+**6.** *Azawan walks and additionally Ululon runs.*
 
 ::: details Show answer
 `zazawan vawalal al zululon vurunul xam.`
 :::
 
-**8.** *Tea, with coffee as a replacement, and maybe more.*
+**7.** *Tea, with coffee as a replacement, and maybe more.*
 
 ::: details Show answer
 `dadedal om dogovel.`
 :::
 
+**8.** *A dog instead of a cat, and a bird.*
+
+::: details Show answer
+`zodogol ol zagadal zubudul zam.`
+:::
+
 #### Agalan → English
 
-**1.** `zahadal am zazawan ul zululon.`
+**1.** `zahadal am zuhubun ul zazawan.`
 
 ::: details Show answer
-*The team, including Azawan and maybe more, except Ululon.*
+*The team, including Uhubun and maybe more, except Azawan.*
 :::
 
-**2.** `zazawan guzumum el gerelum.`
+**2.** `dadedal on dogovel.`
 
 ::: details Show answer
-*Azawan is happy, or rather, calm.*
+*The stock tea-to-coffee swap.*
 :::
 
-**3.** `jazawan al zululon vawalal.`
+**3.** `juhubun ol zululon vawalal.`
 
 ::: details Show answer
-*Azawan: additionally, Ululon walks.*
+*Uhubun: instead, Ululon walks.*
 :::
 
 **4.** `al xezazal zululon vurunul.`
@@ -429,28 +428,28 @@ Short drills on this Intermediate band. Try each item before opening **Show answ
 *Additionally, therefore Ululon runs.*
 :::
 
-**5.** `al jol zazawan vawalal.`
+**5.** `ol jol zazawan vawalal?`
 
 ::: details Show answer
-*Additionally, does Azawan walk?*
+*Instead, does Azawan walk?*
 :::
 
-**6.** `zahadal am zazawan am zuhubun.`
+**6.** `zahadal am zazawan am zululon.`
 
 ::: details Show answer
-*The team, including Azawan and including Uhubun.*
+*The team, including Azawan and including Ululon, and maybe more.*
 :::
 
-**7.** `zazawan vawalal al zululon vurunul xam.`
+**7.** `vurunul om vawalal.`
 
 ::: details Show answer
-*Azawan walks and additionally Ululon runs.*
+*Ran, with walk as a replacement.*
 :::
 
-**8.** `zahadal an zazawan un zululon.`
+**8.** `zahadal an zuhubun un zululon.`
 
 ::: details Show answer
-*The named team, including Azawan, and except Ululon from that named frame.*
+*The named team, including Uhubun, and except Ululon from that named frame.*
 :::
 
 ## Advanced
