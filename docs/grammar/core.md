@@ -227,185 +227,121 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Uhubun* | `uhubun` | | |
 | *dog* | `odogol` | | |
 | *cat* | `agadal` | | |
-| *book* | `abogol` | | |
 | *house* | `ohohul` | | |
 | *inside* / *inclusion* | `hogorem` | `ogorel` *hollow circle* | ⭕: being inside the boundary |
 | *blue* | `elulul` | | |
-| *red* | `garedel` | | |
 | *big* | `elem` | `elel` *elephant* | 🐘: the huge animal |
 | *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
 | *walk* | `awalal` | | |
 | *run* | `urunul` | | |
 | *sleep* | `elebel` | | |
 | *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
-| *write* | `uwurul` | | |
 | *sing* | `uzunul` | | |
 | *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
 | *sit* | `vajul` | `ajul` *chair* | 🪑: taking a seat |
 | *haste* | `hadazam` | `adazal` *dash* | 💨: a burst of speed |
-| *quietude* | `howom` | `owol` *owl* | 🦉: the quiet bird |
 | *next clause* | `adorol` | `adorol` *door* | 🚪: the next sentence walks through |
 | *because* | `hurugum` | `urugul` *brick* | 🧱: the cause is what the result sits on |
 | *therefore* | `xezazal` | `ezazal` *east* | ➡️: the sun’s path, so the talk moves on |
 
 #### English → Agalan
 
-**1.** *Ululon!* (calling Ululon)
+**1.** *Uhubun!* (calling Uhubun)
 
 ::: details Show answer
-`jululon.`
+`juhubun.`
 :::
 
-**2.** *A dog walks.*
+**2.** *Ululon sees Uhubun.*
 
 ::: details Show answer
-`zodogol vawalal.`
+`zululon duhubun vejel.`
 :::
 
-**3.** *A blue dog walks.*
+**3.** *Happy Uhubun sits.*
 
 ::: details Show answer
-`zodogol gelulul vawalal.`
+`zuhubun guzumum vajul.`
 :::
 
-**4.** *Azawan walks.*
-
-::: details Show answer
-`zazawan vawalal.`
-:::
-
-**5.** *A dog sees a cat.*
-
-::: details Show answer
-`zodogol dagadal vejel.`
-:::
-
-**6.** *Happy Ululon walks.*
-
-::: details Show answer
-`zululon guzumum vawalal.`
-:::
-
-**7.** *A very blue dog walks.*
+**4.** *A very blue dog walks.*
 
 ::: details Show answer
 `zodogol gelulul welem vawalal.`
 :::
 
-**8.** *Walk!*
+**5.** *Run!*
 
 ::: details Show answer
-`jel vawalal.`
+`jel vurunul.`
 :::
 
-**9.** *Don’t run.*
+**6.** *Azawan tells Ululon that Uhubun sings.*
 
 ::: details Show answer
-`jul vurunul.`
+`zazawan dululon vezehel dadorol zuhubun vuzunul.`
 :::
 
-**10.** *Uhubun sings.*
+**7.** *Azawan walks because Ululon runs.*
 
 ::: details Show answer
-`zuhubun vuzunul.`
+`zazawan vawalal hurugum badorol zululon vurunul.`
 :::
 
-**11.** *Azawan tells Ululon that the dog runs.*
+**8.** *Does Uhubun walk?*
 
 ::: details Show answer
-`zazawan dululon vezehel dadorol zodogol vurunul.`
-:::
-
-**12.** *Azawan sings because Ululon walks.*
-
-::: details Show answer
-`zazawan vuzunul hurugum badorol zululon vawalal.`
-:::
-
-**13.** *A dog walks. Therefore a cat runs.*
-
-::: details Show answer
-`zodogol vawalal. xezazal zagadal vurunul.`
+`jol zuhubun vawalal.`
 :::
 
 #### Agalan → English
 
-**1.** `juhubun.`
+**1.** `jazawan.`
 
 ::: details Show answer
-*Uhubun!* (calling Uhubun)
+*Azawan!* (calling Azawan)
 :::
 
-**2.** `zazawan gelulul vawalal.`
+**2.** `zazawan duhubun vejel.`
 
 ::: details Show answer
-*Blue Azawan walks.*
+*Azawan sees Uhubun.*
 :::
 
-**3.** `zagadal garedel vurunul.`
+**3.** `zazawan vawalal hadazam.`
 
 ::: details Show answer
-*A red cat runs.*
+*Azawan walks hastily.*
 :::
 
-**4.** `zululon vurunul.`
+**4.** `zuhubun velebel hogorem bohohul.`
 
 ::: details Show answer
-*Ululon runs.*
+*Uhubun sleeps inside a house.*
 :::
 
-**5.** `zodogol gelem vawalal.`
+**5.** `jul vurunul.`
 
 ::: details Show answer
-*A big dog walks.*
+*Don’t run.*
 :::
 
-**6.** `zazawan vajul.`
+**6.** `zululon vurunul. xezazal zazawan vuzunul.`
 
 ::: details Show answer
-*Azawan sits.*
+*Ululon runs. Therefore Azawan sings.*
 :::
 
-**7.** `jel vuzunul.`
+**7.** `zodogol dagadal vejel.`
 
 ::: details Show answer
-*Sing!*
+*A dog sees a cat.*
 :::
 
-**8.** `zuhubun vuzunul.`
+**8.** `zodogol gelulul vawalal.`
 
 ::: details Show answer
-*Uhubun sings.*
-:::
-
-**9.** `zodogol velebel hogorem bohohul.`
-
-::: details Show answer
-*A dog sleeps inside a house.*
-:::
-
-**10.** `zodogol gelulul velebel.`
-
-::: details Show answer
-*A blue dog sleeps.*
-:::
-
-**11.** `zazawan dululon vezehel dadorol zuhubun velebel.`
-
-::: details Show answer
-*Azawan tells Ululon that Uhubun sleeps.*
-:::
-
-**12.** `zazawan vawalal hurugum badorol zululon velebel.`
-
-::: details Show answer
-*Azawan walks because Ululon sleeps.*
-:::
-
-**13.** `zodogol vawalal. xezazal zagadal vurunul.`
-
-::: details Show answer
-*A dog walks. Therefore a cat runs.*
+*A blue dog walks.*
 :::
 
 ## Intermediate
