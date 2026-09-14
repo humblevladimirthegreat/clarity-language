@@ -286,5 +286,6 @@ A bare `/z/` (or other freestanding) **`…jo`** percent with no named whole is 
 ## See also
 
 - Number-word anatomy (markers, endings, exponents): [numbers.md](numbers.md)
+- Kind morphs (`ROOTxNUM`): [numeric-derivation.md](numeric-derivation.md)
 - Phrase fences behind ranges: [joins.md](joins.md)
 - Measured differentials on comparative scales: [comparatives.md](comparatives.md)

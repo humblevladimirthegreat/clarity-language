@@ -36,6 +36,7 @@ const readingOrder = [
   { text: 'Plan / decision', link: '/plan-decision' },
   { text: 'Join extras', link: '/join-extras' },
   { text: 'Special vocabulary', link: '/special-vocabulary' },
+  { text: 'Numbers in use', link: '/numbers-applied' },
   { text: 'Numeric derivation', link: '/numeric-derivation' },
 ]
 

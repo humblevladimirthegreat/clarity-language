@@ -22,7 +22,7 @@ Per-feature teaching already has its practice: rule → cue → 1–3 worked exa
 
 **When to add a stage checkpoint:** if the learner can misuse the form in the *next* section’s examples, put drills at the **end of this stage**. If the form is mostly recognition (a small closed table), the worked example is enough.
 
-**Covuzo:** every **productive** page stage gets a checkpoint. Orientation, phonology charts, and parser maps do not — skip list and path allowlist: [drill-generation.md](drill-generation.md#skip). Do **not** add a spoiler block after every H3.
+**Covuzo:** every **productive** page stage gets a checkpoint. Orientation, phonology charts, and parser maps do not — [allowlist](drill-generation.md#allowlist) **skip**. Do **not** add a spoiler block after every H3. Named settings in use: [settings](drill-generation.md#settings).
 
 **Status:** all **generate** checkpoints **exist** (see [allowlist](drill-generation.md#allowlist)). Invoke [drill-generation.md](drill-generation.md#execute) **one grammar file per agent** only to **replace** a checkpoint.
 
@@ -62,7 +62,7 @@ One **setting** per `### Translation practice` block (each stage checkpoint is i
 | **Scope** | All items in **both** directions take place in that setting (same place, institution, or occasion). Parsing is not a different world; it is a different packaging / who-does-what in the **same** setting. |
 | **Arc** | Item **1** is ordinary activity in that place. Later items raise tension. The last items are the peak (threat, betrayal, disaster, robbery, confession — still a single legal sentence). Example: bank → count cash / wait in line → an alarm / a lie → a robbery. |
 | **Independent climbs** | English → Agalan and Agalan → English each climb on their own. They must not be the same propositions ([principle 3](#principles)), so they must not be the same heist beat-for-beat. |
-| **New setting vs previous checkpoint** | Do not reuse the previous [sidebar](../grammar/.vitepress/config.ts) file’s checkpoint setting. House names do not count as a setting. Skip pages with no checkpoint when comparing. |
+| **Unique setting** | Each checkpoint’s **Setting** line must be a place or occasion **not used on any other checkpoint**. Check the inventory in [settings](drill-generation.md#settings) before picking; write the chosen phrase into that table when you replace. Same occasion under a different article or synonym counts as reuse (*a bank* / *the bank* / *a teller line*). House names are not a setting. Allowlist **skip** rows and **unset** cells do not occupy a name. |
 | **Vocab** | The **Roots used here** table is this setting’s lexicon (names + content used in the items). Closed morphs (`adoro`, **`jal`**, join vowels, …) appear in spoilers when taught; they need a table row only when the drill English is that word. |
 | **Morph vs content** | Untaught **syntax** is still illegal. Untaught **content** roots are legal if published and in the table. Prefer a published **literal** that matches the English; **-m** only when the drill English is the metaphorical sense. |
 | **Peak without gore** | Violence and crime are allowed as **acts people do** (punch, fight, rob, scream). Do not make death, torture, or sexual content the joke. Animals stay agents only when a real animal could do that act. |
@@ -135,4 +135,4 @@ Omit recoverable **`jal`** unless the drill is teaching speech act. Match role l
 | [grammar-docs.md](grammar-docs.md) | Learner prose, teach order, worked examples, [house cast](grammar-docs.md#house-cast) |
 | [learning-levels.md](learning-levels.md) | Beginner / Intermediate / Advanced stages and cross-doc path |
 | [glosses.md](glosses.md) | Morph gloss and free English (for teaching lines, not required in spoilers); [house-name glosses](glosses.md#house-cast) |
-| [drill-generation.md](drill-generation.md) | Path allowlist, [example root bank](drill-generation.md#root-bank), and **execute** procedure (one file per agent) — follow [principles](#principles), [checkpoint setting](#checkpoint-setting), and [house scene](#house-scene) when replacing a checkpoint |
+| [drill-generation.md](drill-generation.md) | Path allowlist, [settings](drill-generation.md#settings) inventory, [example root bank](drill-generation.md#root-bank), and **execute** procedure (one file per agent) — follow [principles](#principles), [checkpoint setting](#checkpoint-setting), and [house scene](#house-scene) when replacing a checkpoint |

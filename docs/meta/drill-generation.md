@@ -8,7 +8,7 @@ Executable editor policy: add end-of-stage Eng ↔ Agalan checkpoints to learner
 - *… for `docs/grammar/questions.md` Intermediate.*
 - *… for core Beginner* (already exists — skip unless asked to replace).
 
-This page owns **path allowlist**, **example root bank**, and **generation procedure**. Drill *shape* (spoiler template, house names, [checkpoint setting](translation-exercises.md#checkpoint-setting), item counts) stays in [translation-exercises.md](translation-exercises.md). Stages: [learning-levels.md](learning-levels.md#cross-doc-path). Example prose: [grammar-docs.md](grammar-docs.md). Grammar pages must **not** link here.
+This page owns **path allowlist**, **[settings](#settings) inventory**, **example root bank**, and **generation procedure**. Drill *shape* (spoiler template, house names, [checkpoint setting](translation-exercises.md#checkpoint-setting), item counts) stays in [translation-exercises.md](translation-exercises.md). Stages: [learning-levels.md](learning-levels.md#cross-doc-path). Example prose: [grammar-docs.md](grammar-docs.md). Grammar pages must **not** link here.
 
 ## Execute
 <a id="execute"></a>
@@ -24,9 +24,9 @@ Parse the user’s file/stage from their message. Accept `joins`, `joins.md`, `d
 | One grammar file, no stage | Generate **every missing** checkpoint for that file (table below), **Beginner then Intermediate then Advanced** |
 | One file + one stage | Generate **only** that stage’s checkpoint |
 | Several files, “all pages”, or no file | **Do not start.** Reply with: process **one file per invocation**; list remaining [generate](#allowlist) files that still lack a checkpoint. Stop |
-| A [skip](#skip) file | Say it is skipped and why. Stop |
+| A file whose [allowlist](#allowlist) rows are all **skip** | Say it is skipped and why. Stop |
 
-Edit **only** `docs/grammar/<file>.md`. Do not edit this policy, other grammar pages, `AGENTS.md`, or other meta unless the user asked to change the policy.
+Edit **only** `docs/grammar/<file>.md` **and** that file’s **Setting** cell(s) in [settings](#settings). Do not edit other policy, other grammar pages, `AGENTS.md`, or other meta unless the user asked to change the policy.
 
 If two agents might share a file: **one file → one agent**. Do not start a second job on a file that already has a drill job in flight.
 
@@ -44,7 +44,7 @@ Find the row(s) in the [allowlist](#allowlist).
 
 **Allowed**
 
-- This file (procedure, allowlist row, example root bank, leak index)
+- This file (procedure, allowlist row, [settings](#settings) inventory, example root bank, leak index)
 - [translation-exercises.md](translation-exercises.md) (principles, [checkpoint setting](translation-exercises.md#checkpoint-setting), template)
 - [grammar-docs.md](grammar-docs.md#house-cast) (house people)
 - [glosses.md](glosses.md#house-cast) (name glosses — not needed inside spoilers)
@@ -93,7 +93,7 @@ Anchors:
 | Intermediate | `<a id="translation-practice-intermediate"></a>` |
 | Advanced | `<a id="translation-practice-advanced"></a>` |
 
-Follow the [template](translation-exercises.md#template). Lead: *Short drills for Beginner/Intermediate/Advanced. Try each item before opening **Show answer**.* Next line: **Setting:** one place or occasion. Put **Roots used here** once as the English / Agalan table for **this setting** (house names + setting content), using that template’s caption (later banks do not repeat the How-to-learn column legend; **Same root as** warning only when that column is present). Learner **Agalan** cells are [citations](translation-exercises.md#template) by default (`odogol`, not a bank stem `odogo`), or the inflected form the row teaches (`vejel` *see*). House-person **English** is *Azawan* / *Ululon* / *Uhubun*, not `*grace* (name **Azawan**)`. The setting must not repeat the previous sidebar file’s checkpoint setting ([checkpoint setting](translation-exercises.md#checkpoint-setting)). Teaching examples stay on the [example root bank](#root-bank); do not rewrite them to match the drill. Numbered items in each direction **climb in tension**.
+Follow the [template](translation-exercises.md#template). Lead: *Short drills for Beginner/Intermediate/Advanced. Try each item before opening **Show answer**.* Next line: **Setting:** one place or occasion. Put **Roots used here** once as the English / Agalan table for **this setting** (house names + setting content), using that template’s caption (later banks do not repeat the How-to-learn column legend; **Same root as** warning only when that column is present). Learner **Agalan** cells are [citations](translation-exercises.md#template) by default (`odogol`, not a bank stem `odogo`), or the inflected form the row teaches (`vejel` *see*). House-person **English** is *Azawan* / *Ululon* / *Uhubun*, not `*grace* (name **Azawan**)`. Pick a setting **not already named** in [settings](#settings) ([unique globally](translation-exercises.md#checkpoint-setting)); write the same phrase into this file’s cell when you replace. Teaching examples stay on the [example root bank](#root-bank); do not rewrite them to match the drill. Numbered items in each direction **climb in tension**.
 
 | Band kind | Items per direction |
 |-----------|---------------------|
@@ -147,23 +147,75 @@ Not required for a first dialogue corpus. Recycle them only on that track, or wh
 - `numbers-applied.md` (Intermediate; depends on `numbers.md`)
 - `numeric-derivation.md` (Advanced only)
 
-## Skip
+## Settings
+<a id="settings"></a>
 <a id="skip"></a>
 
-No translation checkpoint (recognition, orientation, or no new productive stack):
+Inventory of **Setting:** phrases. Uniqueness is **global**: no two checkpoint rows may share a named setting (same occasion under a different article or synonym counts). **unset** = checkpoint exists, not yet replaced onto the setting policy. **—** = allowlist **skip** (no checkpoint; does not occupy a name).
 
-| File | Why |
-|------|-----|
-| `why-agelan.md` | Orientation, not a learning stage |
-| `introduction.md` | Orientation |
-| `index.md` | Site include of why-agelan |
-| `lexicon.md` | Search UI, not syntax |
-| `vowel-series.md` | Mnemonic map, not a new morph |
-| `phonology.md` | Letter charts / singability — not Eng ↔ Agalan |
-| `x-compounds.md` | Parser map of families taught on other pages |
-| Advanced stages whose only H3s are **Design notes**, **Constraints**, **Out of scope**, **Boundaries**, or pointer inventories | Nothing to produce; see allowlist **skip** |
+When you **replace** a checkpoint, pick a phrase unused in the **Setting** column, put it on the grammar page, and update that cell here. House names are not a setting.
 
-Do **not** skip productive syntax pages (core, joins, questions, values, …). Thin **Advanced** on an otherwise productive page is skip; that page’s Beginner / Intermediate still generate.
+Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / **exists** / **generate**), not this table. Thin **Advanced** that is only Design notes / Constraints / Out of scope / Boundaries stays **skip** on the allowlist.
+
+| File | Band | Setting |
+|------|------|---------|
+| `why-agelan.md` | — | — |
+| `introduction.md` | — | — |
+| `index.md` | — | — |
+| `lexicon.md` | — | — |
+| `phonology.md` | — | — |
+| `reference-suffix.md` | Beginner | unset |
+| `reference-suffix.md` | Intermediate | unset |
+| `core.md` | Beginner | unset |
+| `core.md` | Intermediate | unset |
+| `pronouns.md` | Beginner | unset |
+| `pronouns.md` | Intermediate | unset |
+| `pronouns.md` | Advanced | unset |
+| `plurality.md` | Beginner | unset |
+| `plurality.md` | Intermediate | unset |
+| `predication.md` | Beginner | unset |
+| `predication.md` | Intermediate | unset |
+| `vowel-series.md` | — | — |
+| `joins.md` | Beginner | unset |
+| `joins.md` | Intermediate | unset |
+| `joins.md` | Advanced | unset |
+| `questions.md` | Beginner | unset |
+| `questions.md` | Intermediate | unset |
+| `questions.md` | Advanced | unset |
+| `revisers.md` | Beginner | unset |
+| `revisers.md` | Intermediate | unset |
+| `restrictors.md` | Beginner | unset |
+| `restrictors.md` | Intermediate | unset |
+| `spans.md` | Beginner | a rehearsal |
+| `spans.md` | Intermediate | a courtroom |
+| `spans.md` | Advanced | a code review |
+| `numbers.md` | Beginner | unset |
+| `numbers.md` | Intermediate | unset |
+| `numbers.md` | Advanced | unset |
+| `numbers-applied.md` | Intermediate | unset |
+| `comparatives.md` | Beginner | unset |
+| `comparatives.md` | Intermediate | unset |
+| `comparatives.md` | Advanced | unset |
+| `causation.md` | Beginner | unset |
+| `causation.md` | Intermediate | unset |
+| `causation.md` | Advanced | unset |
+| `values.md` | Beginner | unset |
+| `values.md` | Intermediate | unset |
+| `values.md` | Advanced | unset |
+| `ability.md` | Beginner | unset |
+| `ability.md` | Intermediate | unset |
+| `commentary.md` | Beginner | unset |
+| `commentary.md` | Intermediate | unset |
+| `roles.md` | Beginner | unset |
+| `roles.md` | Intermediate | unset |
+| `x-compounds.md` | Beginner | unset |
+| `x-compounds.md` | Intermediate | unset |
+| `plan-decision.md` | Beginner | unset |
+| `plan-decision.md` | Intermediate | unset |
+| `join-extras.md` | Intermediate | unset |
+| `special-vocabulary.md` | Intermediate | unset |
+| `special-vocabulary.md` | Advanced | unset |
+| `numeric-derivation.md` | Advanced | unset |
 
 ## Example root bank
 <a id="root-bank"></a>
@@ -342,13 +394,13 @@ For each spoiler token family:
 5. Most items test **this** stage’s decision, not a prior quiz → else rewrite.
 6. Morph-gloss wall inside the spoiler → **fail**.
 7. Unassigned cells from [unassigned-reserved.md](unassigned-reserved.md) → **fail**.
-8. No **Setting** line, setting matches the previous sidebar checkpoint, or the numbered list does not climb in tension → **fail** (when replacing or generating; do not fail a pre-policy checkpoint until replace).
+8. No **Setting** line, the phrase matches any **other** named cell in [settings](#settings) (including synonym / article variants), the inventory cell was not updated, or the numbered list does not climb in tension → **fail** (when replacing or generating; do not fail a pre-policy checkpoint until replace).
 
 ## Related meta
 
 | Page | Owns |
 |------|------|
-| [translation-exercises.md](translation-exercises.md) | Placement, principles, [checkpoint setting](translation-exercises.md#checkpoint-setting), spoiler template |
+| [translation-exercises.md](translation-exercises.md) | Placement, principles, [checkpoint setting](translation-exercises.md#checkpoint-setting) (global unique setting), spoiler template |
 | [learning-levels.md](learning-levels.md) | Bands and cross-doc path |
 | [grammar-docs.md](grammar-docs.md) | Learner prose, house cast |
 | [glosses.md](glosses.md) | Morph / free English (teaching lines, not spoilers) |
