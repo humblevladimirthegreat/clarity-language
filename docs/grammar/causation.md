@@ -1,64 +1,66 @@
 # Causation
 <a id="causation"></a>
-<a id="necessary-sufficient"></a>
 
-*Would work* names a **route** toward an **outcome**: effort toward getting the job done, clouds toward rain. Other routes may still exist.
-
-TODO: reword above more naturally
+Name whether one thing is **enough** for an outcome, whether the outcome **needs** it, and whether that condition is a **fact**.
 
 ## Beginner
 <a id="beginner"></a>
 
-### Sufficient (*would work*)
-<a id="sufficient"></a>
-<a id="np-poles"></a>
+### If
+<a id="if"></a>
 
-When you mean *this would work*, write the outcome first (what you are trying to get). After it, write the route (what would get you there), then an open *and/or* join **`…aom`**. The join’s role letter matches the route (`zaom` after a noun, `vaom` after a verb). Open **-m** means this is at least one route; other routes may still work. (cue: **`a`** ≈ add — you add a route, and the outcome can follow)
+When you mean *this would get you that* (*if* there are clouds, rain; Azawan walks *if* it rains), write the **outcome** as the host, then **`adoro`** on `/h/` or `/ɡ/`, then the condition in `/b/`. Other routes may still work. You are not claiming the condition as a fact. (cue: 🚪 *door*: walk through only if it opens)
 
-> `zezewem zaom.`
+Use `/h/` when the outcome is an **event** (the verb). Use `/ɡ/` when the outcome is a **noun** (a kind, a generic law). Keep the pole and `/b/` together.
+
+> `zazawan vawalal hadorom banunul.`
 >
-> z-effort | z-and/or.open
+> z-Azawan | v-walk | h-if | b-rain
 >
-> "Effort would work (among other routes)."
+> "Azawan walks if there is rain."
 
-Two or more routes before **`…aom`** are listed together: any of them would work.
-
-> `zuludul zozowol zaom.`
+> `zanunul gadorom buludul.`
 >
-> z-cloud | z-snow | z-and/or.open
+> z-rain | g-if | b-cloud
 >
-> "Clouds or snow would work (for that outcome)."
+> "Rain if there are clouds."
 
-The same join sits on a verb when the route is an action:
+Ordinary content on the same root is still available (`zadorol` *a door*).
 
-> `zuhubun vuzunul vaom.`
+**For *X is enough* as a list (*a book will do*), use:** an inclusive [join](joins.md#single-item-phrase) (`zaol` / `zaom`).
+
+### Only if
+<a id="only-if"></a>
+
+When the outcome cannot happen without this (*only if* / *needs*), write the same two-place shape with **`ebero`**. Other things may still be required. You are not claiming the condition as a fact. (cue: 🧻 *paper-roll*: without it the situation does not run)
+
+> `zazawan vawalal heberom banunul.`
 >
-> z-Uhubun | v-sing | v-and/or.open
+> z-Azawan | v-walk | h-only-if | b-rain
 >
-> "Uhubun’s singing would work."
+> "Azawan walks only if there is rain."
 
-Closed **`…aol`** (*X is enough*) is the stronger twin: this route alone is enough; you are not leaving room for other routes. Everyday *would work* uses **`…aom`**.
-
-> `zabogol zaol.`
+> `zanunul geberom buludul.`
 >
-> z-book | z-and/or
+> z-rain | g-only-if | b-cloud
 >
-> "A book is enough."
+> "Rain only if there are clouds."
 
-**For *if* / *because*, use:** a [dependent clause](core.md#dependent-clauses) with **`hadorom` / `hurugum`** + **`badorol`**. The condition or reason is a full sentence, not a noun or verb before **`…aom`**.
+Ordinary content on the same root is still available (`zeberol` *a paper-roll*).
 
-**Compare with:** *needs* / *without* (*the outcome cannot do without this*) is not **`…aom`**. Use an exclusion join or a *never* restrictor.
+**Compare with:** *if* (`hadorom` / `gadorom`) leaves other routes possible. *Only if* says the outcome needs this.
 
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| **`…aom`** (`zaom` / `vaom` / …) | open sufficient | *at least X* / *X would work* | **`a`** ≈ add (a route) |
-| **`…ao…`** (two or more items) | several routes | any would work | **`a`** ≈ add (several routes) |
-| **`…aol`** | closed sufficient | *X is enough* (this route alone) | **`a`** ≈ add + **-l** stand behind |
+| Agalan | Use | English | Same root as | Cue |
+|--------|-----|---------|--------------|-----|
+| **`hadorom` / `gadorom`** | enough for the outcome; condition not asserted | *if* | `adorol` *door* | 🚪: walk through only if it opens |
+| **`heberom` / `geberom`** | the outcome needs this; condition not asserted | *only if* / *needs* | `eberol` *paper-roll* | 🧻: without it the situation does not run |
+
+`/h/` attaches to the event. `/ɡ/` attaches to the noun.
 
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills for Beginner. Try each item before opening **Show answer**. Everyday *would work* is open sufficient **`…aom`** (outcome as host). Closed **`…aol`** is the stronger “this settles it” twin.
+Short drills for Beginner. Try each item before opening **Show answer**. The outcome is the host (`/h/` on an event, `/ɡ/` on a noun). *If* is **`adoro`**. *Only if* is **`ebero`**. The condition sits in `/b/`.
 
 **Setting:** a greenhouse
 
@@ -80,194 +82,159 @@ Short drills for Beginner. Try each item before opening **Show answer**. Everyda
 | *pour* | `vorurul` | `orurul` *pour* |
 | *see* | `vejel` | `ejel` *eye* |
 | *tell* | `vezehel` | `ezehel` *speech* |
+| *if* | `hadorom` | `adorol` *door* |
+| *only-if* | `heberom` | `eberol` *paper-roll* |
 
 #### English → Agalan
 
-**1.** *A seedling would work (among other routes).*
+**1.** *A seedling if there is sun.*
 
 ::: details Show answer
-`zezedel zaom.`
+`zezedel gadorom bunul.`
 
-z-seedling | z-and/or.open
+z-seedling | g-if | b-sun
 :::
 
-**2.** *Azawan’s pouring would work.*
+**2.** *Azawan pours if there is a window.*
 
 ::: details Show answer
-`zazawan vorurul vaom.`
+`zazawan vorurul hadorom buwunol.`
 
-z-Azawan | v-pour | v-and/or.open
+z-Azawan | v-pour | h-if | b-window
 :::
 
-**3.** *A window would work.*
+**3.** *A potted plant only if there is a window.*
 
 ::: details Show answer
-`zuwunol zaom.`
+`zobodel geberom buwunol.`
 
-z-window | z-and/or.open
+z-potted-plant | g-only-if | b-window
 :::
 
-**4.** *A tomato is enough.*
+**4.** *Ululon sees if there is a tomato.*
 
 ::: details Show answer
-`zodomal zaol.`
+`zululon vejel hadorom bodomal.`
 
-z-tomato | z-and/or
+z-Ululon | v-see | h-if | b-tomato
 :::
 
-**5.** *Uhubun’s seeing would work.*
+**5.** *A flower only if there is sun.*
 
 ::: details Show answer
-`zuhubun vejel vaom.`
+`zovowel geberom bunul.`
 
-z-Uhubun | v-see | v-and/or.open
+z-flower | g-only-if | b-sun
 :::
 
-**6.** *A potted plant or a window would work.*
+**6.** *Uhubun tells if there is a thermometer.*
 
 ::: details Show answer
-`zobodel zuwunol zaom.`
+`zuhubun vezehel hadorom bedehel.`
 
-z-potted-plant | z-window | z-and/or.open
+z-Uhubun | v-tell | h-if | b-thermometer
 :::
 
-**7.** *Ululon’s telling would work.*
+**7.** *Azawan pours only if there is a window.*
 
 ::: details Show answer
-`zululon vezehel vaom.`
+`zazawan vorurul heberom buwunol.`
 
-z-Ululon | v-tell | v-and/or.open
+z-Azawan | v-pour | h-only-if | b-window
 :::
 
-**8.** *Fire is enough.*
+**8.** *Ululon pours only if there is fire.*
 
 ::: details Show answer
-`zurel zaol.`
+`zululon vorurul heberom burel.`
 
-z-fire | z-and/or
+z-Ululon | v-pour | h-only-if | b-fire
 :::
 
 #### Agalan → English
 
-**1.** `zovowel zaom.`
+**1.** `zovowel gadorom bunul.`
 
 ::: details Show answer
 
-z-flower | z-and/or.open
+z-flower | g-if | b-sun
 
-*A flower would work.*
+*A flower if there is sun.*
 :::
 
-**2.** `zuhubun vorurul vaom.`
+**2.** `zuhubun vejel hadorom buwunol.`
 
 ::: details Show answer
 
-z-Uhubun | v-pour | v-and/or.open
+z-Uhubun | v-see | h-if | b-window
 
-*Uhubun’s pouring would work.*
+*Uhubun sees if there is a window.*
 :::
 
-**3.** `zedehel zaol.`
+**3.** `zezedel geberom buwunol.`
 
 ::: details Show answer
 
-z-thermometer | z-and/or
+z-seedling | g-only-if | b-window
 
-*A thermometer is enough.*
+*A seedling only if there is a window.*
 :::
 
-**4.** `zazawan vejel vaom.`
+**4.** `zazawan vezehel hadorom bedehel.`
 
 ::: details Show answer
 
-z-Azawan | v-see | v-and/or.open
+z-Azawan | v-tell | h-if | b-thermometer
 
-*Azawan’s seeing would work.*
+*Azawan tells if there is a thermometer.*
 :::
 
-**5.** `zunul zaom.`
+**5.** `zobodel gadorom bodomal.`
 
 ::: details Show answer
 
-z-sun | z-and/or.open
+z-potted-plant | g-if | b-tomato
 
-*The sun would work.*
+*A potted plant if there is a tomato.*
 :::
 
-**6.** `zululon vorurul vaom.`
+**6.** `zululon vorurul hadorom bodomal.`
 
 ::: details Show answer
 
-z-Ululon | v-pour | v-and/or.open
+z-Ululon | v-pour | h-if | b-tomato
 
-*Ululon’s pouring would work.*
+*Ululon pours if there is a tomato.*
 :::
 
-**7.** `zurel zaom.`
+**7.** `zodomal geberom burel.`
 
 ::: details Show answer
 
-z-fire | z-and/or.open
+z-tomato | g-only-if | b-fire
 
-*Fire would work.*
+*A tomato only if there is fire.*
 :::
 
-**8.** `zobodel zurel zaom.`
+**8.** `zuhubun vejel heberom burel.`
 
 ::: details Show answer
 
-z-potted-plant | z-fire | z-and/or.open
+z-Uhubun | v-see | h-only-if | b-fire
 
-*A potted plant or fire would work.*
+*Uhubun sees only if there is fire.*
 :::
 
 ## Intermediate
 <a id="intermediate"></a>
 
-### Necessary (marked)
-<a id="necessary"></a>
+### A following sentence
+<a id="dependent"></a>
 
-When the outcome cannot do without something (*needs* / *without*), mark that condition as taken away or as never happening. Put exclusion on the effect (`guan` / `huan`), or a never restrictor (`hal`) on the verb. Take the condition away, and the outcome fails.
-
-> `zanunul huan buludul.`
->
-> z-rain | h-without | b-cloud
->
-> "Raining without / excluding clouds."
-
-> `zazawan vawalal hal.`
->
-> z-Azawan | v-walk | h-never
->
-> "Azawan never walks."
-
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| **`guan` / `huan`** | exclusion on the effect | *without / excluding* | **`u`** ≈ undo (take it away and the effect fails) |
-| **`hal`** (restrictor) | never, when the condition is absent | *never* | **-l** exact: that occasion is closed off |
-
-**Compare with:** *would work* / among routes uses open sufficient (`…aom`).
-
-### Marked unique path
-<a id="unique-path"></a>
-
-When you mean *it has to be X* (the sole pick), close an exclusive join: **`…ol`**, **`gon`**, or **`hon`**. That names one path and no other, not merely a route that would work.
-
-> `zazawan gon.`
->
-> z-Azawan | g-exclusive-for
->
-> "It has to be Azawan."
-
-**Compare with:** *would work* uses open sufficient (`…aom`). **`…al` / `…el`** (*only X* / *only X matters*) mark inventory or priority on a list; they do not say the outcome needs that item.
-
-### Clause poles
-<a id="clause-poles"></a>
-
-When the condition or outcome is a **full sentence**, hang that sentence after **`adoro`**. Write the pole (`hadorom` / `hezazem` / `hurugum`), then **`badorol`**, then the dependent sentence. **`adoro`** ([dependent clauses](core.md#dependent-clauses)) sits last in the main sentence; the next sentence is the content that word stands for. Give the dependent its own act word only if the speech act differs. See [dependent clauses](core.md#dependent-clauses).
+When the condition is a **full sentence**, keep the same pole and hang that sentence after **`adoro`**. Write the pole, then **`badorol`**, then the dependent. Keep that pair together, last in the main sentence (**`adoro`** last). Give the dependent its own act word only if the speech act differs. See [dependent clauses](core.md#dependent-clauses).
 
 ```
-main sentence …  hadorom / hezazem / hurugum  badorol   [dependent sentence]
+main sentence …  hadorom / heberom / …  badorol   [dependent sentence]
 ```
 
 > `zazawan vawalal hadorom badorol zululon velebel.`
@@ -276,17 +243,31 @@ main sentence …  hadorom / hezazem / hurugum  badorol   [dependent sentence]
 >
 > "Azawan walks if Ululon sleeps."
 
-### `IF` vs `IFF` vs `BECAUSE`
-<a id="if-vs-iff"></a>
-<a id="if-vs-because"></a>
+> `zazawan vawalal heberom badorol zululon velebel.`
+>
+> z-Azawan | v-walk | h-only-if | b-next-clause | z-Ululon | v-sleep
+>
+> "Azawan walks only if Ululon sleeps."
 
-Beginner already pointed at *if* / *because* as dependents. Pick the `/h/` root by the English job. Clause poles take **-m** (published metaphorical sense): **`hadorom`** / **`hezazem`** / **`hurugum`**. Ordinary content on the same roots still uses ordinary endings (`zadorol` *a door*; `zezazel` *reciprocity*; `zurugul` *a brick*).
+Several conditions can sit inside `/b/` as a [join](joins.md) (`hadorom buludul bozowol baom` *if clouds and/or snow*).
+
+**Related form:** packaging two full sentences as *and also* uses a clause [join](joins.md) (`xam`), not a pole root.
+
+### Because, iff, and only because
+<a id="because"></a>
+<a id="iff"></a>
+<a id="only-because"></a>
+<a id="poles"></a>
+
+Beginner used *if* and *only if* without asserting the condition. Pick the pole by **direction** and by whether you **assert** the condition as a world-fact. Clause poles take **-m**. The same roots on `/ɡ/` attach to a noun. Ordinary content still uses ordinary endings (`zurugul` *a brick*; `zezazel` *reciprocity*).
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`hadorom badorol`** (**`adoro`**) | one-way condition (open sufficient; dependent not asserted) | *if* | `adorol` *door* | 🚪: walk through only if it opens |
-| **`hezazem badorol`** (**`ezaze`**) | both-ways (sufficient **and** necessary) | *if and only if* | `ezazel` *east-west* | ↔️: each side only with the other |
-| **`hurugum badorol`** (**`urugu`**) | asserted explanation | *because* | `urugul` *brick* | 🧱: the cause is what the result sits on |
+| **`hadorom` / `gadorom`** | enough; condition not asserted | *if* | `adorol` *door* | 🚪: walk through only if it opens |
+| **`hurugum` / `gurugum`** | enough; condition asserted as the reason | *because* | `urugul` *brick* | 🧱: the cause is what the result sits on |
+| **`heberom` / `geberom`** | needed; condition not asserted | *only if* / *needs* | `eberol` *paper-roll* | 🧻: without it the situation does not run |
+| **`heberom hurugum` / `geberom gurugum`** | needed; condition asserted | *only because* / *depends on* | | 🧻 then 🧱: needed, and named as a fact |
+| **`hezazem` / `gezazem`** | both ways; condition not asserted | *if and only if* | `ezazel` *east-west* | ↔️: each side only with the other |
 
 > `zazawan vawalal hurugum badorol zululon velebel.`
 >
@@ -294,53 +275,66 @@ Beginner already pointed at *if* / *because* as dependents. Pick the `/h/` root 
 >
 > "Azawan walks because Ululon sleeps."
 
-| Poles | Prefer |
-|-------|--------|
-| NP–NP | phrase `…aom` / `haon` / `huan` ([Beginner](#np-poles)) |
-| Clause–clause conditional (one-way) | **`hadorom badorol`** |
-| Clause–clause both-ways | **`hezazem badorol`** |
-| Clause–clause explanation | **`hurugum badorol`** |
-| Mixed NP + clause | **`adoro`** under a relation, or a span / noun-form of the clause in `/b/` / `/d/` |
+> `zanunul gurugum buludul.`
+>
+> z-rain | g-because | b-cloud
+>
+> "Rain because of clouds."
 
-**Related form:** packaging two full sentences as *and also* uses a clause [join](joins.md) (`xaom` / `xaol`), not a pole root.
+> `zazawan vawalal hezazem badorol zululon velebel.`
+>
+> z-Azawan | v-walk | h-iff | b-next-clause | z-Ululon | v-sleep
+>
+> "Azawan walks if and only if Ululon sleeps."
+
+> `zazawan vawalal heberom hurugum banunul.`
+>
+> z-Azawan | v-walk | h-only-if | h-because | b-rain
+>
+> "Azawan walks only because there is rain."
 
 ### CAUSE
 <a id="cause"></a>
 <a id="cause-mood"></a>
 
-To highlight **how** a result comes about (the mechanism, not only that a route would work), add the closed mood **`egega`** as an `/h/` word. The ending is **-m**: **`hegegam`**. You can put that mood next to a join or a clause pole when both jobs apply. Ordinary content on the same root is still available (`zegegal` *a gear*; `vegegal` *to mesh / engage*). Optional `/w/` when the mood grades only a preceding adjective. (cue: ⚙️ *gear*: how the mechanism engages)
+To highlight **how** a result comes about (the mechanism, not only that a condition holds), add the closed mood **`egega`** as an `/h/` word. The ending is **-m**: **`hegegam`**. You can put that mood next to a pole when both jobs apply. Ordinary content on the same root is still available (`zegegal` *a gear*; `vegegal` *to mesh / engage*). Optional `/w/` when the mood grades only a preceding adjective. (cue: ⚙️ *gear*: how the mechanism engages)
 
-> `haon bezewem hegegam.`
+> `zazawan vawalal hegegam hadorom banunul.`
 >
-> h-open-to | b-effort | h-CAUSE
+> z-Azawan | v-walk | h-CAUSE | h-if | b-rain
 >
-> "Open to effort (CAUSE)." (how the payoff gears turn)
+> "Azawan walks if there is rain (as mechanism)."
 
-**Compare with:** *would work* / among routes uses open sufficient (`…aom` / `haon`).
+> `zululon vorurul hegegam.`
+>
+> z-Ululon | v-pour | h-CAUSE
+>
+> "Ululon pours (as mechanism)."
 
-**For *because / if*, use:** [clause poles](#if-vs-iff) (`hurugum` / `hadorom`).
+**Compare with:** *because* / *if* name the condition (`hurugum` / `hadorom`). **CAUSE** names how the link meshes.
 
 ### Preference vs law
 <a id="preference-vs-law"></a>
 
-English *should* on a causal claim is often a wish or ought, not a formal or natural law. Keep the route as open sufficient (`haon` / `…aom`) and put the ought on [values](values.md): **`xo`** (prescription) or **`xe`** (motive). Feeling-strength lives on the values ending, not on exclusive **`gon`**.
+English *should* on a causal claim is often a wish or ought, not a formal or natural law. Keep the condition as *if* (`hadorom` / `gadorom`) and put the ought on [values](values.md): **`xo`** (prescription). Feeling-strength lives on the values ending.
 
-> `haon bezewem holozoxor.`
+> `zogozol gadorom bezewem holozoxor.`
 >
-> h-open-to | b-effort | h-competence-ought-invite
+> z-knob | g-if | b-effort | h-competence-ought-invite
 >
-> "Effort would count (as an ought)."
+> "A knob if there is effort (as an ought)."
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| `haon` / `…aom` | route still among others | *would count toward…* |
-| **`xo`** / **`xe`** | prescription / motive | *should* / *so that* |
-| **`ol` / `gon`** | sole path | *has to be* (even if you feel strongly) |
+| `hadorom` / `gadorom` | still one route among others | *if* / *would get you…* |
+| **`xo`** | prescription | *should* |
+
+**For *it has to be Azawan* (the sole pick), use:** an exclusive [join](joins.md#choice) (`zol`).
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills for Intermediate. Try each item before opening **Show answer**. Mark **necessary** with exclusion / **`hal`**, unique path with **`gon` / `…ol`**, clause poles with **`hadorom` / `hezazem` / `hurugum`**, and **CAUSE** with **`hegegam`**. An ought sits on values **`xo`**.
+Short drills for Intermediate. Try each item before opening **Show answer**. A following sentence hangs after **`badorol`**. *Because* asserts the condition. *Iff* is both ways. *Only because* stacks **`heberom hurugum`**. **CAUSE** is **`hegegam`**. An ought sits on values **`xo`**.
 
 **Setting:** a dam control room
 
@@ -363,37 +357,15 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Mar
 | *run* | `vurunul` | `urunul` *run* |
 | *competence-ought-invite* | `holozoxor` | `olozol` *toolbox* |
 | *if* | `hadorom` | `adorol` *door* |
+| *only-if* | `heberom` | `eberol` *paper-roll* |
 | *iff* | `hezazem` | `ezazel` *east-west* |
 | *because* | `hurugum` | `urugul` *brick* |
 | *CAUSE* | `hegegam` | `egegal` *gear* |
+| *next clause* | `adorol` | |
 
 #### English → Agalan
 
-**1.** *Azawan never sits.*
-
-::: details Show answer
-`zazawan vajul hal.`
-
-z-Azawan | v-sit | h-never
-:::
-
-**2.** *Flooding without a knob.*
-
-::: details Show answer
-`zogegam huan bogozol.`
-
-z-flood | h-without | b-knob
-:::
-
-**3.** *It has to be Ululon.*
-
-::: details Show answer
-`zululon gon.`
-
-z-Ululon | g-exclusive-for
-:::
-
-**4.** *Azawan sits if Uhubun sees.*
+**1.** *Azawan sits if Uhubun sees.*
 
 ::: details Show answer
 `zazawan vajul hadorom badorol zuhubun vejel.`
@@ -401,7 +373,15 @@ z-Ululon | g-exclusive-for
 z-Azawan | v-sit | h-if | b-next-clause | z-Uhubun | v-see
 :::
 
-**5.** *Ululon pours if and only if Azawan sits.*
+**2.** *Flooding only if there is a knob.*
+
+::: details Show answer
+`zogegam geberom bogozol.`
+
+z-flood | g-only-if | b-knob
+:::
+
+**3.** *Ululon pours if and only if Azawan sits.*
 
 ::: details Show answer
 `zululon vorurul hezazem badorol zazawan vajul.`
@@ -409,7 +389,7 @@ z-Azawan | v-sit | h-if | b-next-clause | z-Uhubun | v-see
 z-Ululon | v-pour | h-iff | b-next-clause | z-Azawan | v-sit
 :::
 
-**6.** *Uhubun tells because Ululon pours.*
+**4.** *Uhubun tells because Ululon pours.*
 
 ::: details Show answer
 `zuhubun vezehel hurugum badorol zululon vorurul.`
@@ -417,43 +397,41 @@ z-Ululon | v-pour | h-iff | b-next-clause | z-Azawan | v-sit
 z-Uhubun | v-tell | h-because | b-next-clause | z-Ululon | v-pour
 :::
 
-**7.** *A knob would work (as an ought, not the sole law).*
+**5.** *A key because of pressure.*
 
 ::: details Show answer
-`zogozol zaom holozoxor.`
+`zagegol gurugum babamam.`
 
-z-knob | z-and/or.open | h-competence-ought-invite
+z-solution | g-because | b-pressure
 :::
 
-**8.** *Flooding would work (as mechanism).*
+**6.** *Azawan sits only because Uhubun sees.*
 
 ::: details Show answer
-`zogegam zaom hegegam.`
+`zazawan vajul heberom hurugum badorol zuhubun vejel.`
 
-z-flood | z-and/or.open | h-CAUSE
+z-Azawan | v-sit | h-only-if | h-because | b-next-clause | z-Uhubun | v-see
+:::
+
+**7.** *A knob if there is a bell (as an ought, not a law).*
+
+::: details Show answer
+`zogozol gadorom bobelel holozoxor.`
+
+z-knob | g-if | b-bell | h-competence-ought-invite
+:::
+
+**8.** *Ululon runs if there is flooding (as mechanism).*
+
+::: details Show answer
+`zululon vurunul hegegam hadorom bogegam.`
+
+z-Ululon | v-run | h-CAUSE | h-if | b-flood
 :::
 
 #### Agalan → English
 
-**1.** `zazawan guan bagegol.`
-
-::: details Show answer
-
-z-Azawan | g-without | b-solution
-
-*Azawan without a key.*
-:::
-
-**2.** `zobelel hon.`
-
-::: details Show answer
-
-z-bell | h-exclusive-for
-
-*It has to be the bell.*
-:::
-
-**3.** `zuhubun vajul hadorom badorol zululon vejel.`
+**1.** `zuhubun vajul hadorom badorol zululon vejel.`
 
 ::: details Show answer
 
@@ -462,7 +440,16 @@ z-Uhubun | v-sit | h-if | b-next-clause | z-Ululon | v-see
 *Uhubun sits if Ululon sees.*
 :::
 
-**4.** `zazawan vorurul hezazem badorol zuhubun vezehel.`
+**2.** `zobelel geberom bagegol.`
+
+::: details Show answer
+
+z-bell | g-only-if | b-solution
+
+*A bell only if there is a key.*
+:::
+
+**3.** `zazawan vorurul hezazem badorol zuhubun vezehel.`
 
 ::: details Show answer
 
@@ -471,7 +458,7 @@ z-Azawan | v-pour | h-iff | b-next-clause | z-Uhubun | v-tell
 *Azawan pours if and only if Uhubun tells.*
 :::
 
-**5.** `zululon vurunul hurugum badorol zogegam.`
+**4.** `zululon vurunul hurugum badorol zogegam.`
 
 ::: details Show answer
 
@@ -480,13 +467,22 @@ z-Ululon | v-run | h-because | b-next-clause | z-flood
 *Ululon runs because of flooding.*
 :::
 
-**6.** `zuhubun vezehel hal.`
+**5.** `zogegam gurugum babamam.`
 
 ::: details Show answer
 
-z-Uhubun | v-tell | h-never
+z-flood | g-because | b-pressure
 
-*Uhubun never tells.*
+*Flooding because of pressure.*
+:::
+
+**6.** `zuhubun vezehel heberom hurugum badorol zululon vorurul.`
+
+::: details Show answer
+
+z-Uhubun | v-tell | h-only-if | h-because | b-next-clause | z-Ululon | v-pour
+
+*Uhubun tells only because Ululon pours.*
 :::
 
 **7.** `zululon vorurul hegegam.`
@@ -498,22 +494,22 @@ z-Ululon | v-pour | h-CAUSE
 *Ululon pours (as mechanism).*
 :::
 
-**8.** `zogegam huan babamam.`
+**8.** `zazawan vajul heberom badorol zogegam.`
 
 ::: details Show answer
 
-z-flood | h-without | b-pressure
+z-Azawan | v-sit | h-only-if | b-next-clause | z-flood
 
-*Flooding without / excluding pressure.*
+*Azawan sits only if there is flooding.*
 :::
 
 ## Advanced
 <a id="advanced"></a>
 
-### Factivity (`IF` vs `BECAUSE`)
+### Factivity (`if` vs `because`)
 <a id="factivity"></a>
 
-English *because* and *if* can hide whether you **assert the dependent as a world fact**. Agalan puts that choice on the `/h/` root: **`hurugum`** asserts the dependent as the reason the main sentence rests on; **`hadorom`** does not assert it (the main sentence is under that opportunity). You can now say whether rain is a fact the walk rests on, or only a condition.
+English *because* and *if* can hide whether you **assert the dependent as a world fact**. Agalan puts that choice on the pole: **`hurugum`** asserts the condition as the reason the outcome rests on; **`hadorom`** does not (the outcome is under that opportunity). *Only if* vs *only because* is the same factivity split on the necessary pole.
 
 > `zazawan vawalal hurugum badorol zanunul.`
 >
@@ -526,12 +522,6 @@ English *because* and *if* can hide whether you **assert the dependent as a worl
 > z-Azawan | v-walk | h-if | b-next-clause | z-rain
 >
 > "Azawan walks if it rains." Rain is not asserted; the main sentence is under that opportunity.
-
-| Agalan | Use | English | Same root as | Cue |
-|--------|-----|---------|--------------|-----|
-| **`hadorom`** | dependent not asserted; main claimed under it | *if* | `adorol` *door* | 🚪: walk through only if it opens |
-| **`hezazem`** | both sides stand or fall together | *if and only if* | `ezazel` *east-west* | ↔️: each side only with the other |
-| **`hurugum`** | dependent asserted as the reason | *because* | `urugul` *brick* | 🧱: the cause is what the result sits on |
 
 #### Epistemic *because* (no twin root)
 <a id="epistemic-because"></a>
@@ -551,13 +541,13 @@ English often uses *because* for **speaker grounds** (*I think P because Q*) wit
 ### Stacks (evidentiality, CAUSE, habit)
 <a id="stacks"></a>
 
-A one-off episode and a standing pattern use the same sufficient / necessary shapes. Add extra `/h/` words for the extra jobs: evidential `/h/` for *how you know* ([evidentiality](commentary.md#evidentiality)), **`hual` / `huam`** for habit ([restrictors](restrictors.md)), **`hegegam`** for mechanism ([CAUSE](#cause)).
+A one-off episode and a standing pattern use the same poles. Add extra `/h/` words for the extra jobs: evidential `/h/` for *how you know* ([evidentiality](commentary.md#evidentiality)), **`hual` / `huam`** for habit ([restrictors](restrictors.md)), **`hegegam`** for mechanism ([CAUSE](#cause)).
 
-> `zuludul zaom hual.`
+> `zanunul gadorom buludul hual.`
 >
-> z-cloud | z-and/or.open | h-always
+> z-rain | g-if | b-cloud | h-always
 >
-> "Clouds would work, as a standing pattern."
+> "Rain if there are clouds, as a standing pattern."
 
 **Compare with:** *always* / *every* / *never* as exceptionlessness uses [universality](special-vocabulary.md#universality) (NATURAL **`habelel`**). **CAUSE** is **`hegegam`**.
 
@@ -575,7 +565,7 @@ Time and discourse dependents use the same **`adoro`** hang as *if* / *because*.
 ### Translation practice
 <a id="translation-practice-advanced"></a>
 
-Short drills for Advanced. Try each item before opening **Show answer**. **`hurugum`** asserts the dependent as a fact the main sentence rests on; **`hadorom`** does not; speaker-grounds stay **`hodohom`**. Habit uses **`hual`**; mechanism uses **`hegegam`**.
+Short drills for Advanced. Try each item before opening **Show answer**. **`hurugum`** asserts the condition as a fact the outcome rests on; **`hadorom`** does not; speaker-grounds stay **`hodohom`**. Habit uses **`hual`**; mechanism uses **`hegegam`**.
 
 **Setting:** a chemistry lab
 
@@ -594,6 +584,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. **`huru
 | *see* | `vejel` | `ejel` *eye* |
 | *tell* | `vezehel` | `ezehel` *speech* |
 | *if* | `hadorom` | `adorol` *door* |
+| *only-if* | `heberom` | `eberol` *paper-roll* |
 | *iff* | `hezazem` | `ezazel` *east-west* |
 | *because* | `hurugum` | `urugul` *brick* |
 | *commentary* | `hodohom` | `odohol` *thought* |
@@ -633,20 +624,20 @@ z-Azawan | v-pour | h-iff | b-next-clause | z-Uhubun | v-tell
 z-Azawan | h-COMMENT | v-sit
 :::
 
-**5.** *A test-tube would work, as a standing pattern.*
+**5.** *A test-tube if there is fire, as a standing pattern.*
 
 ::: details Show answer
-`zezubel zaom hual.`
+`zezubel gadorom burel hual.`
 
-z-test-tube | z-and/or.open | h-always
+z-test-tube | g-if | b-fire | h-always
 :::
 
-**6.** *Fire would work (as mechanism), as a standing pattern.*
+**6.** *Fire only if there is a lab coat (as mechanism), as a standing pattern.*
 
 ::: details Show answer
-`zurel zaom hegegam hual.`
+`zurel geberom balabal hegegam hual.`
 
-z-fire | z-and/or.open | h-CAUSE | h-always-except
+z-fire | g-only-if | b-lab-coat | h-CAUSE | h-always-except
 :::
 
 #### Agalan → English
@@ -687,28 +678,28 @@ z-Azawan | h-COMMENT | v-sit | h-because | b-next-clause | z-Ululon | v-pour
 *Azawan sits, I’d note, because Ululon pours.*
 :::
 
-**5.** `zalabal zaom hual.`
+**5.** `zalabal gadorom burel hual.`
 
 ::: details Show answer
 
-z-lab-coat | z-and/or.open | h-always
+z-lab-coat | g-if | b-fire | h-always
 
-*A lab coat would work, as a standing pattern.*
+*A lab coat if there is fire, as a standing pattern.*
 :::
 
-**6.** `zuhubun vorurul hurugum hegegam badorol zurel.`
+**6.** `zuhubun vorurul hegegam hurugum badorol zurel.`
 
 ::: details Show answer
 
-z-Uhubun | v-pour | h-because | h-CAUSE | b-next-clause | z-fire
+z-Uhubun | v-pour | h-CAUSE | h-because | b-next-clause | z-fire
 
 *Uhubun pours because there is fire (as mechanism).*
 :::
 
 ## See also
 
-- Inclusive single-item **`…aom` / `…aol`**: [joins.md](joins.md#single-item-phrase)
-- Join-relations **`haon` / `huan` / `hon`**: [join-extras.md](join-extras.md#join-relations)
+- Inclusive single-item **`…aom` / `…aol`** (*at least X* / *X is enough*): [joins.md](joins.md#single-item-phrase)
+- Join-relations **`han` / `huan` / `hon`**: [join-extras.md](join-extras.md#join-relations)
 - Restrictors **`hal` / `hual`**: [restrictors.md](restrictors.md)
 - Dependent clauses / **`adoro`**: [core.md](core.md#dependent-clauses)
 - Preference as law (values on the condition): [values.md](values.md)

@@ -2,7 +2,7 @@
 <a id="values"></a>
 <a id="value-ascription"></a>
 
-A **need** is a psychological payoff you can name (autonomy, competence, relatedness, pleasure, survival, or an unspecified need). A **stance** is how you stand toward that need: name it as a topic, say a thing serves it, say it ought to be served or protected, or say a thing costs it.
+A **need** is a psychological payoff you can name (autonomy, competence, relatedness, pleasure, survival, or an unspecified need). A **stance** is how you stand toward that need: name it as a topic, say a thing serves it, say it ought to be served or protected, or say a thing detracts from it.
 
 Write the need under `/h/` when you talk about the clause, or under `/w/` when you talk about the thing you just named.
 

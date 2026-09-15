@@ -124,7 +124,7 @@ Hosted overlays (needs, evidentials, COMMENT, NOTIONAL, plan / DECISION, emotion
 | `predict` | `mood` | **`elezo`** |
 | `decision` | `mood` | DECISION changeability |
 | `cause` | `mood` | CAUSE **`egega`** |
-| `clause_pole` | `mood` | *if* / *iff* / *because* / … |
+| `clause_pole` | `mood` | *if* / *only-if* / *iff* / *because* / … |
 | `universality` | `mood` | COMMON / FORMAL / … |
 | `emotion_act` | `mood` | HIGH / MED / LOW |
 | `emotion_locus` | `mood` | INTERNAL / EXTERNAL / CIRCUM |

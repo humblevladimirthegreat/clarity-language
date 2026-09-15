@@ -144,7 +144,7 @@ Saying whether a list is open or closed helps you notice false dichotomies, and 
 
 Everyday English *because* / *leads to* / *have to* blur sufficient vs necessary, world-reason vs speaker-grounds, and wish vs natural law.
 
-[Causation](causation.md) keeps those forks on existing joins and the *if* / *iff* / *because* clause poles. When the “rule” is really an ought (*hard work should earn promotion*), you stack [values](values.md) prescription or motive on the condition shape ([preference vs law](causation.md#preference-vs-law)).
+[Causation](causation.md) keeps those forks on two-place poles: *if* / *only if* / *because* / *iff*, on `/h/` for an event and `/ɡ/` for a noun. When the “rule” is really an ought (*hard work should earn promotion*), you stack [values](values.md) prescription on the condition shape ([preference vs law](causation.md#preference-vs-law)).
 
 Keeping those forks apart helps you stop treating wishes and habits as if the world must obey them.
 

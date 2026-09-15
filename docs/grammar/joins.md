@@ -865,7 +865,7 @@ Most other phrase joins need two or more items. These edge readings keep a defin
 >
 > "any of tea, coffee, or water is fine (no order)."
 
-**For *except*, use:** reviser **`ul`** / **`um`** — [revisers](revisers.md). Prefixed **`zur`** is unspecified *something else*. Nest when you need a rare mix (closed list but optional: `zadedal zogovel zol zal`). Sufficient *at least* **`…aom`**: [causation](causation.md#sufficient).
+**For *except*, use:** reviser **`ul`** / **`um`** — [revisers](revisers.md). Prefixed **`zur`** is unspecified *something else*. Nest when you need a rare mix (closed list but optional: `zadedal zogovel zol zal`).
 
 
 ### Allowed joins by PoS

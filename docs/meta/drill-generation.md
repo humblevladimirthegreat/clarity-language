@@ -119,7 +119,7 @@ Drills depend on **what has been taught**, not on other files’ drill text. Par
 | **Intermediate** at path *N* | All **Beginner** Introduces on the beginner path (productive pages), **plus** **Intermediate** Introduces with a **smaller** path number, except [same-slot siblings](#slots) |
 | **Advanced** at path *N* | That Intermediate recycle, **plus** this file’s Intermediate Introduces, **plus** Advanced Introduces with a **smaller** path number, except siblings |
 
-**Needs:** lines on the grammar page always add those forms to Recycle (comparatives Beginner → joins Beginner rank joins; causation Beginner → joins Beginner + core **`adoro`**).
+**Needs:** lines on the grammar page always add those forms to Recycle (comparatives Beginner → joins Beginner rank joins; causation Beginner → core extra nouns + **`adoro`**).
 
 Honor [teach now; don’t preview later](grammar-docs.md#teach-now-dont-preview-later) inside Beginner: a Beginner checkpoint must not use that file’s Intermediate / Advanced, or a later peer’s Beginner.
 
@@ -240,7 +240,8 @@ Tokens here are **stems for matching** (path allowlist / leak checks). Learner *
 | `aju` | *sit* (`vajul`; citation *chair*) |
 | `adaza` | *haste* (`hadazam`; citation *dash*) |
 | `adoro` | *next clause* |
-| `urugu` | *because* (**-m** on `/h/`) |
+| `urugu` | *because* (**-m** on `/h/` `/ɡ/`) |
+| `ebero` | *only if* (**-m** on `/h/` `/ɡ/`) |
 
 A teach line may add roots that already appear in that stage’s worked examples (e.g. `abele` *apple*, `adeda` *tea*, `ogove` *coffee`, `omonu` *challenging*, `onunu` **SAME**). Checkpoint tables list **setting** roots instead, even when a teach line used *walk*.
 
@@ -272,7 +273,7 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 12 | `spans.md` | **exists** | Writing fences `[ ]` `{ }` `( )` `< >`; **`~`/`@`**; resume `d[=]`; PoS = outer slot; **aside** = `h(…)`; interior fragment or same-speech-act clause; when a span is required vs nativized word | `<>` loans **allowed** (this stage teaches them). Prefer atomic one-token cites |
 | 13 | `numbers.md` | **exists** | `g+N` count; `g#N` ordinal; digitless **`g+`** (*more than one*) with **-x** on the noun | No `/v/` `/h/` `/j/` `/x/` number uses, exponents, ranges, percent, measures (later). **-x** from plurality is recycle |
 | 13 | `comparatives.md` | **exists** | Rank fence **`e`/`oe`/`ue`** + SHARED scale `/ɡ/`; single-item superlative; equative **`ae`** | **Needs:** joins Beginner rank joins. No measure phrases (Intermediate). No numbers Intermediate |
-| 13 | `causation.md` | **exists** | Sufficient = open sufficient (`…aom` / default pole habit); no cause-arrow word; outcome as host | **Needs:** joins Beginner inclusive/exclusion + core **`adoro`**. Necessary / **`IF` vs `IFF`** are Intermediate — do not use |
+| 13 | `causation.md` | **exists** | Two-place poles: outcome host + `/b/` condition; `/h/` event vs `/ɡ/` noun; *if* **`adoro`** vs *only if* **`ebero`**; no cause-arrow word | **Needs:** core extra nouns + **`adoro`**. *Because* / **`IFF`** / **CAUSE** are Intermediate — do not use |
 | 14 | `values.md` | **exists** | Six needs; `/h/` vs `/w/`; topic (bare); **`xa`** met + contact **-l / -m / -r**; **`xo`** prescription force; **`xu`** unmet changeability | **Not** motive **`xe`** (Intermediate). Not ability (non-need + `x` vowel). Not COMMENT |
 | 14 | `ability.md` | **exists** | Host (non-need) + **`xa`/`xe`/`xo`/`xu`**; *can’t* grains vs *won’t* | Not values (need roots). Not role compounds (vowel *left* of `x`). Not greeting bid (named citation or `/j/`) |
 | 14 | `commentary.md` | **exists** | **COMMENT** **`odoho`** + hold endings (**`hodohom`** default); not a world claim | Not evidentiality / NOTIONAL (Intermediate). Not **`jom`** (core Intermediate) unless you only recycle **`jol`** from core/questions Beginner |
@@ -312,7 +313,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 13 | `numbers.md` | Advanced | **exists** | Digitless exponents / hyperbole / zero×exp **as used in the stage’s teach examples** — not unassigned cells | 4–6 items |
 | 13 | `comparatives.md` | Intermediate | **exists** | Full comparative arity; manner `/h/` immediately after the join; distributive **`a`** + SHARED `/ɡ/`; measured differentials | Measured items **Sibling OK:** numbers Intermediate **measure phrases** only |
 | 13 | `comparatives.md` | Advanced | **exists** | Judgment benchmarks (`zojun`, `zahaman`, **`zuroron`** Mine vs performance **`zugobon`**, **`zoloben`** Everyone, …) | **`ugobo`** allowed on performance items |
-| 13 | `causation.md` | Intermediate | **exists** | Necessary (marked); unique path; clause poles **`adoro` / `ezaze` / `urugu`**; **CAUSE** **`egega`** **-m**; preference vs law (values stack if values Beginner is recycle — it is) | |
+| 13 | `causation.md` | Intermediate | **exists** | Following-sentence **`badorol`**; **`urugu`** *because* / **`ezaze`** *iff*; asserted necessary **`heberom hurugum`**; **CAUSE** **`egega`** **-m**; preference vs law (values **`xo`**) | Recycle Beginner *if* / *only if* and `/h/` vs `/ɡ/` |
 | 13 | `causation.md` | Advanced | **exists** | Factivity; evidential / CAUSE / habit stacks as taught in this stage | COMMENT/evidentiality are Beginner/Intermediate recycle by the time Advanced is read |
 | 14 | `values.md` | Intermediate | **exists** | Motive **`xe`** + preference standing; which ending table; attachment sites | |
 | 14 | `values.md` | Advanced | **exists** | Combined matrices; one boundary trap | 4–6 items |
@@ -352,7 +353,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | Span brackets / `<>` | `spans.md` Beginner |
 | `g+N` / `g#N` / `g+` | `numbers.md` Beginner |
 | SHARED scale comparatives | `comparatives.md` Beginner |
-| Sufficient open-sufficient causation | `causation.md` Beginner |
+| Causal poles *if* / *only if* (`hadorom` / `heberom`) | `causation.md` Beginner |
 | **CAUSE** **`egega`** / **`hegegam`** | `causation.md` Intermediate |
 | Value **`xa`/`xo`/`xu`** on **need** roots | `values.md` Beginner |
 | Ability **`xa`/`xe`/`xo`/`xu`** on **non-need** hosts | `ability.md` Beginner |

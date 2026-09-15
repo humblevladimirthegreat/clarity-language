@@ -10,13 +10,13 @@ SMALLCAPS tags and series names as the lessons print them.
 
 ### Mood tags
 
-Closed psychological `/h/` (not ordinary [adverb](#adverb) `/h/`).
+Closed psychological `/h/` (and `/ɡ/` on causal poles; not ordinary [adverb](#adverb) `/h/`).
 
 | Label | Gloss | Teach |
 |-------|-------|--------|
 | **ABIL** | Hostless *can* / *can’t* fallback **`egera`** | [Ability](ability.md#ability-fallback) |
 | **ACT** | Emotion-compose arousal (HIGH / MED / LOW) | [Special vocabulary](special-vocabulary.md#emotion-compose) |
-| **BECAUSE** | Clause-pole **`urugu`** (*because*) | [Causation](causation.md#if-vs-iff) |
+| **BECAUSE** | Clause-pole **`urugu`** (*because*) | [Causation](causation.md#because) |
 | **CAUSE** | Mechanism-framing mood **`egega`** | [Causation](causation.md#cause) |
 | **CIRCUM** | Emotion locus: charge on the situation | [Special vocabulary](special-vocabulary.md#emotion-compose) |
 | **COMMENT** | First-person commentary mood **`odoho`** | [Commentary](commentary.md#comment) |
@@ -26,14 +26,15 @@ Closed psychological `/h/` (not ordinary [adverb](#adverb) `/h/`).
 | **FELT** | Evidential: gut / body knowing | [Commentary](commentary.md#evidentiality) |
 | **FORMAL** | Universality: definition / math / proof | [Special vocabulary](special-vocabulary.md#universality) |
 | **HIGH** / **MED** / **LOW** | Emotion ACT roots | [Special vocabulary](special-vocabulary.md#emotion-compose) |
-| **IF** | Clause-pole **`adoro`** (one-way *if*) | [Causation](causation.md#if-vs-iff) |
-| **IFF** | Clause-pole **`ezaze`** | [Causation](causation.md#if-vs-iff) |
+| **IF** | Clause-pole **`adoro`** (one-way *if*) | [Causation](causation.md#if) |
+| **IFF** | Clause-pole **`ezaze`** | [Causation](causation.md#iff) |
 | **INFERRED** | Evidential: reasoned from clues | [Commentary](commentary.md#evidentiality) |
 | **INTERNAL** | Emotion locus: charge held inside | [Special vocabulary](special-vocabulary.md#emotion-compose) |
 | **LIVE** | Evidential: concurrent / in-view observation | [Commentary](commentary.md#live-vs-memory) |
 | **LOCUS** | Emotion-compose where the charge sits | [Special vocabulary](special-vocabulary.md#emotion-compose) |
 | **NATURAL** | Universality: natural necessity | [Special vocabulary](special-vocabulary.md#universality) |
 | **NOTIONAL** | As-if / pretense mood **`adade`** | [Commentary](commentary.md#notional) |
+| **ONLY-IF** | Clause-pole **`ebero`** (*only if* / *needs*) | [Causation](causation.md#only-if) |
 | **PATTERN** | Evidential: from regularity | [Commentary](commentary.md#evidentiality) |
 | **PLAN** | Intention-framing mood **`owora`** | [Plan / decision](plan-decision.md#plan-predict) |
 | **PREDICT** | Forecast-framing mood **`elezo`** | [Plan / decision](plan-decision.md#plan-predict) |
@@ -638,9 +639,9 @@ Utterance setting: statement / question / command / prohibition.
 
 **Compare with:** values **prescription force** is [bound / endorse / invite](#bound-endorse-invite), not speech act. Polar [stance](#polar-stance) is a left-edge particle.
 
-### Sufficient / necessary / unique path
+### Sufficient / necessary
 
-Necessary, sufficient, and unique-path readings.
+*If* (enough) vs *only if* (needed) vs *because* / *iff*.
 
 [Causation](causation.md)
 

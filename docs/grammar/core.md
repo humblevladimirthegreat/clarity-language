@@ -170,6 +170,7 @@ You can also say:
 |--------|---------|--------------|-----|
 | **`hurugum badorol`** | *because* | `urugul` *brick* | 🧱: the cause is what the result sits on |
 | **`hadorom badorol`** | *if* | `adorol` *door* | 🚪: walk through only if it opens |
+| **`heberom badorol`** | *only if* | `eberol` *paper-roll* | 🧻: without it the situation does not run |
 | **`hezazem badorol`** | *if and only if* | `ezazel` *east-west* | ↔️: each side only with the other |
 | **`hezebam badorol`** | *although* / *even though* | `ezebal` *zebra* | 🦓: two stripes, still one animal |
 | **`hegemum badorol`** | *while* (at the same time) | `egemul` *gemini* | ♊: two things at once |
