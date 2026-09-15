@@ -24,7 +24,7 @@ function addInflectionalForms(piece: string, into: Set<string>): void {
   }
 }
 
-/** Citation lemmas plus inflectional alternates on the full string and each hyphen segment. */
+/** Citation lemma plus inflectional alternates on the full hyphenated string (not per-segment). */
 export function englishCitationForms(lemma: string): Set<string> {
   const normalized = normalizeEnglish(lemma);
   const forms = new Set<string>();
@@ -32,11 +32,6 @@ export function englishCitationForms(lemma: string): Set<string> {
     return forms;
   }
   addInflectionalForms(normalized, forms);
-  for (const segment of normalized.split("-")) {
-    if (segment) {
-      addInflectionalForms(segment, forms);
-    }
-  }
   return forms;
 }
 
@@ -81,7 +76,7 @@ export function validatePublishedSenseSeparation(rows: PublishedRow[]): Publishe
     const reason =
       hit.kind === "exact"
         ? "metaphorical matches literal (same citation lemma)"
-        : "metaphorical shares a citation form with literal (inflection or hyphen segment)";
+        : "metaphorical shares a citation form with literal (inflectional alternate)";
 
     errors.push({
       row: index + 2,

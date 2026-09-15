@@ -225,6 +225,8 @@ Agalan does not mark English tense or progressive aspect on the root. Conjugatio
 
 When you retie a published literal (`dancing` → `dance`), morph lines that copied the old string follow (`v-walking` → `v-walk`, `v-walking-unable-temporary` → `v-walk-unable-temporary`).
 
+**Lexicon CSV:** On each published row, **literal** and **metaphorical** must not share a citation form on the **whole** hyphenated lemma (exact match or inflectional alternate such as `stressed` / `stress`). Reusing a **hyphen segment** alone (e.g. `credit-card` / `credit`, flag place name / demonym) is allowed. Checked by `npm run lint:lexicon`.
+
 ### Anaphors (`-r`)
 
 The binder **is** the gloss root. No trailing `-r` (resume is already marked by `←`).

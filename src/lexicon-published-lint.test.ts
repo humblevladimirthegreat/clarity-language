@@ -21,10 +21,11 @@ describe("englishCitationForms", () => {
     assert.ok(forms.has("stress"));
   });
 
-  it("includes hyphen segments", () => {
+  it("does not expand hyphen segments into separate citation forms", () => {
     const forms = englishCitationForms("credit-card");
-    assert.ok(forms.has("credit"));
-    assert.ok(forms.has("card"));
+    assert.ok(forms.has("credit-card"));
+    assert.equal(forms.has("credit"), false);
+    assert.equal(forms.has("card"), false);
   });
 });
 
@@ -38,7 +39,8 @@ describe("literalMetaphorCollide", () => {
   it("flags exact and related collisions", () => {
     assert.deepEqual(literalMetaphorCollide("passion", "passion"), { kind: "exact" });
     assert.deepEqual(literalMetaphorCollide("stressed", "stress"), { kind: "related" });
-    assert.deepEqual(literalMetaphorCollide("credit-card", "credit"), { kind: "related" });
+    assert.equal(literalMetaphorCollide("credit-card", "credit"), null);
+    assert.equal(literalMetaphorCollide("south-africa", "south-african"), null);
   });
 
   it("ignores empty metaphorical", () => {

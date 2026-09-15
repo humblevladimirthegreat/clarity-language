@@ -3,6 +3,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { parseCsv } from "../../src/csv.js";
+import { literalMetaphorCollide } from "../../src/lexicon-published-lint.js";
 
 const rootDir = join(dirname(fileURLToPath(import.meta.url)), "../..");
 
@@ -341,6 +342,12 @@ export function validateApply(
 
   if (target.metaphorical) {
     errors.push(`Target row already has metaphorical="${target.metaphorical}"`);
+  }
+
+  if (literalMetaphorCollide(target.literal, lemma)) {
+    errors.push(
+      `Lemma "${lemma}" collides with literal "${target.literal}" (same or inflectionally related citation form)`,
+    );
   }
 
   if (target.subgroup === "country-flag" && !lemma.endsWith("an") && !lemma.endsWith("ish")) {

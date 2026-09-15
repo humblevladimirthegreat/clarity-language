@@ -42,7 +42,7 @@ function sharedCitationForms(literal: string, metaphorical: string): string[] {
   return [...lf].filter((f) => mf.has(f)).sort();
 }
 
-/** Metaphor equals a hyphen segment of literal (or inflection thereof). */
+/** @deprecated grouping only — linter no longer flags hyphen-segment overlap */
 function metaphorMatchesLiteralSegment(literal: string, metaphorical: string): boolean {
   const metNorm = normalizeEnglish(metaphorical);
   for (const segment of normalizeEnglish(literal).split("-")) {
