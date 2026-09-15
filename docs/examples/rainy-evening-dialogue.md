@@ -228,7 +228,7 @@ loose: *You two — pick something playful!*
 
 gloss: `j-prohibition` · `v-walk` · `h-competence-ought-endorse`
 
-strict: *Don’t walk — ought: competence (endorse).*
+strict: *Please don't walk — you should protect competence.*
 
 loose: *Please don’t walk — stay able.*
 

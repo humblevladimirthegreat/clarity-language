@@ -84,7 +84,7 @@ Agalan’s [values](values.md) name a closed inventory of **needs** (autonomy, c
 |--------|-----|
 | Met | This serves the need, including how you contact the payoff (gratitude / savoring) — an adjective on the noun, or `/h/` on the event |
 | Motive | Acting *for* this need, including where the reason stands |
-| Prescription | *Ought* to serve or protect this need, including force (bound … invite) |
+| Prescription | Deontic on the host act for this need — *must* / *should* / *could* by force (bound / endorse / invite) |
 | Unmet | Costs the need, including how changeable that is |
 
 Naming the need and your stance toward it helps you notice gratitude, motive, and oughts instead of conflating them into vague *want* / *should* / *good*.
@@ -138,12 +138,12 @@ It is easy to present two options as if they were the only ones possible.
 
 Saying whether a list is open or closed helps you notice false dichotomies, and leaves room for options you have not named yet.
 
-### Causes, *if*, and preference-as-law
+### Causes and *if*
 <a id="causes-if-and-preference"></a>
 
 Everyday English *because* / *leads to* / *have to* blur sufficient vs necessary, world-reason vs speaker-grounds, and wish vs natural law.
 
-[Causation](causation.md) keeps those forks on two-place poles: *if* / *only if* / *because* / *iff*, on `/h/` for an event and `/ɡ/` for a noun. When the “rule” is really an ought (*hard work should earn promotion*), you stack [values](values.md) prescription on the condition shape ([preference vs law](causation.md#preference-vs-law)).
+[Causation](causation.md) keeps those forks on two-place poles: *if* / *only if* / *because* / *iff*, on `/h/` for an event and `/ɡ/` for a noun. When the “rule” is really an ought (*hard work should earn promotion*), use [values](values.md) [prescription](values.md#value-force) (**`xe`**) on the act — not a causation pole.
 
 Keeping those forks apart helps you stop treating wishes and habits as if the world must obey them.
 

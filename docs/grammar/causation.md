@@ -314,28 +314,10 @@ To highlight **how** a result comes about (the mechanism, not only that a condit
 
 **Compare with:** *because* / *if* name the condition (`hurugum` / `hadorom`). **CAUSE** names how the link meshes.
 
-### Preference vs law
-<a id="preference-vs-law"></a>
-
-English *should* on a causal claim is often a wish or ought, not a formal or natural law. Keep the condition as *if* (`hadorom` / `gadorom`) and put the ought on [values](values.md): **`xe`** (prescription). Feeling-strength lives on the values ending.
-
-> `zogozol gadorom bezewem holozoxer.`
->
-> z-knob | g-if | b-effort | h-competence-ought-invite
->
-> "A knob if there is effort (as an ought)."
-
-| Agalan | Use | English |
-|--------|-----|---------|
-| `hadorom` / `gadorom` | still one route among others | *if* / *would get you…* |
-| **`xe`** | prescription | *should* |
-
-**For *it has to be Azawan* (the sole pick), use:** an exclusive [join](joins.md#choice) (`zol`).
-
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills for Intermediate. Try each item before opening **Show answer**. A following sentence hangs after **`badorol`**. *Because* asserts the condition. *Iff* is both ways. *Only because* stacks **`heberom hurugum`**. **CAUSE** is **`hegegam`**. An ought sits on values **`xe`**.
+Short drills for Intermediate. Try each item before opening **Show answer**. A following sentence hangs after **`badorol`**. *Because* asserts the condition. *Iff* is both ways. *Only because* stacks **`heberom hurugum`**. **CAUSE** is **`hegegam`**.
 
 **Setting:** a dam control room
 
@@ -355,7 +337,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**. A f
 | *see* | `vejel` | `ejel` *eye* |
 | *tell* | `vezehel` | `ezehel` *speech* |
 | *run* | `vurunul` | |
-| *competence-ought-invite* | `holozoxer` | `olozol` *toolbox* |
 | *if* | `hadorom` | `adorol` *door* |
 | *only-if* | `heberom` | `eberol` *paper-roll* |
 | *iff* | `hezazem` | `ezazel` *east-west* |
@@ -413,15 +394,7 @@ z-bell | g-because | b-pressure
 z-Azawan | v-sit | h-only-if | h-because | b-next-clause | z-Uhubun | v-see
 :::
 
-**7.** *A bell if there is flooding (as an ought, not a law).*
-
-::: details Show answer
-`zobelel gadorom bogegam holozoxer.`
-
-z-bell | g-if | b-flood | h-competence-ought-invite
-:::
-
-**8.** *Ululon runs if there is flooding (as mechanism).*
+**7.** *Ululon runs if there is flooding (as mechanism).*
 
 ::: details Show answer
 `zululon vurunul hegegam hadorom bogegam.`
@@ -485,16 +458,7 @@ z-Uhubun | v-tell | h-only-if | h-because | b-next-clause | z-Ululon | v-pour
 *Uhubun tells only because Ululon pours.*
 :::
 
-**7.** `zogozol gadorom babamam holozoxer.`
-
-::: details Show answer
-
-z-knob | g-if | b-pressure | h-competence-ought-invite
-
-*A knob if there is pressure (as an ought, not a law).*
-:::
-
-**8.** `zululon vorurul hegegam hadorom bogegam.`
+**7.** `zululon vorurul hegegam hadorom bogegam.`
 
 ::: details Show answer
 
@@ -701,4 +665,3 @@ z-Uhubun | v-pour | h-CAUSE | h-because | b-next-clause | z-fire
 - Join-relations **`han` / `huan` / `hon`**: [join-extras.md](join-extras.md#join-relations)
 - Restrictors **`hal` / `hual`**: [restrictors.md](restrictors.md)
 - Dependent clauses / **`adoro`**: [core.md](core.md#dependent-clauses)
-- Preference as law (values on the condition): [values.md](values.md)

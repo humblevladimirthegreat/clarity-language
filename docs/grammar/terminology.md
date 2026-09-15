@@ -175,7 +175,7 @@ Clause content after the left-edge `/j/` cluster.
 
 ### Bound / endorse / invite
 
-Prescription-force endings on value **`xe`**.
+Prescription-force endings on value **`xe`**: **-l** bound (*must* / *has to*), **-m** endorse (*should*), **-r** invite (*could* / *might*).
 
 [Values](values.md#value-force)
 
@@ -457,7 +457,7 @@ Amount + lexicon unit noun (published metaphor = unit name).
 
 ### Met / unmet / motive / prescription (values)
 
-Value stances **`xa` / `xu`** (Beginner); **`xe`** / **`xo`** (Intermediate prescription / motive).
+Value stances **`xa` / `xu`** (Beginner); **`xe`** / **`xo`** (Intermediate prescription / motive). Prescription **`xe`** on the clause is deontic on the host act (*ought to … for this need*), not a performance report with a separate norm tag.
 
 [Values](values.md)
 

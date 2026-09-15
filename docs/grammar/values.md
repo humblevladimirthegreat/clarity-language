@@ -2,7 +2,7 @@
 <a id="values"></a>
 <a id="value-ascription"></a>
 
-A **need** is a psychological payoff you can name (autonomy, competence, relatedness, pleasure, survival, or an unspecified need). At **Beginner**, a **stance** is how you stand toward that need on a **noun**: it **serves** the need or **detracts from** it. **Intermediate** adds **ought** on the clause (this act **should** advance the need) and **motive** (*doing for* the need).
+A **need** is a psychological payoff you can name (autonomy, competence, relatedness, pleasure, survival, or an unspecified need). At **Beginner**, a **stance** is how you stand toward that need on a **noun**: it **serves** the need or **detracts from** it. **Intermediate** adds **prescription** on the clause (deontic: the agent **ought to** do this act for this need) and **motive** (*doing for* the need).
 
 Write the need under `/ɡ/` when you talk about a **noun** (how you feel about that thing). Write it under `/h/` when you talk about the **clause**. `/w/` is extra detail on a value adjective you just wrote, not a second way to mark the noun.
 
@@ -235,29 +235,33 @@ z-fire | g-autonomy-unmet-irreversible
 ### Prescription (`xe`): ought this act for this need
 <a id="value-force"></a>
 
-When you want to say the **act in this clause** ought to serve or protect this need (English *should* on the doing, not a poster about the need), put `/h/` on the clause: need root, mid-word **`x`**, **`e`**, then an ending. The **host verb** is what ought to count toward the need.
+When English puts *should* / *ought to* on the **doing** for a named need (*Uhubun ought to sing to protect survival*), put `/h/` on the clause: need root, mid-word **`x`**, **`e`**, then an ending. The **host verb** names the act that ought to count toward the need. Prescription **`xe`** gives the clause **deontic** force: you are stating obligation, not reporting that the act is already happening.
 
-That ending is **prescription force**: how strongly you stake that ought. If you do not know the force, use **-m**. Bound **-l** means the ought is non-negotiable in this conversation or rule-set.
+That ending is **prescription force**: how strongly you stake that ought. If you do not know the force, use **-m**. Bound **-l** means the ought is non-negotiable in this conversation or rule-set. In loose English, **-l** / **-m** / **-r** usually read as *must* / *has to*, *should*, and *could* / *might* (terminology: [bound / endorse / invite](terminology.md#bound-endorse-invite)).
 
-**Compare with:** [command](core.md#speech-act-beginner) **`jel`** instructs an act outright. Prescription **`xe`** is deontic and need-linked: *this doing ought to advance this need*, with force on the ending.
+**Unlike** [COMMENT](commentary.md#comment) (`hodohom`): the host verb stays ordinary content there and the event is still asserted. With **`xe`**, the same host verb is the **ought-to** act, not a simultaneous performance claim.
+
+**Compare with:** [command](core.md#speech-act-beginner) **`jel`** instructs an act outright without naming the need or prescription force. **`xe`** is need-linked deontic: *ought to advance this need*, with force on the ending.
+
+**Compare with:** [predict](plan-decision.md#predict) (`helezo` …) when English *should* is really a **forecast** about what will pay off the need, or when you want both *is doing* and a norm on that doing — not prescription deontic. For a plain performance report, drop **`xe`** and assert the verb alone.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| `…xel` | the ought is non-negotiable in this conversation or rule-set | *bound* | **-l** ≈ locked |
-| `…xem` | you stand behind this should (soft default if unknown) | *endorse* | **-m** ≈ open backing |
-| `…xer` | worth considering here | *invite* | **-r** ≈ light resume (held out) |
+| `…xel` | the ought is non-negotiable in this conversation or rule-set | *must* / *has to* (bound) | **-l** ≈ locked |
+| `…xem` | you stand behind this should (soft default if unknown) | *should* (endorse) | **-m** ≈ open backing |
+| `…xer` | worth considering here | *could* / *might* (invite) | **-r** ≈ light resume (held out) |
 
 > `zazawan vezehel honogoxem.`
 >
 > z-Azawan | v-tell | h-relatedness-ought-endorse
 >
-> "Azawan tells: telling ought to serve relatedness (endorse)."
+> "Azawan should tell to serve relatedness."
 
 > `zuhubun vuzunul huhuhexel.`
 >
 > z-Uhubun | v-sing | h-survival-ought-bound
 >
-> "Uhubun sings: singing ought to protect survival (bound)."
+> "Uhubun must sing to protect survival."
 
 ### Motive (`xo`): preference standing
 <a id="value-preference"></a>
@@ -302,7 +306,7 @@ Beginner already attached `/ɡ/` after a noun and `/h/` on the clause for met an
 | `g…xo…` after a noun | the noun’s purpose is this need | *gift for relatedness* (`gonogoxo…`) |
 | `gl-` + value | the same adjective before the noun | `glonogoxal zawaral` |
 | `h…xa…` on the clause | the event serves the need | *tells: competence is met* (`holozoxa…`) |
-| `h…xe…` on the clause | prescription | *this act ought (for relatedness)* (`honogoxe…`) |
+| `h…xe…` on the clause | deontic prescription | *must* / *should* / *could* … for this need (`honogoxe…`) |
 | `h…xo…` on the clause | motive | *Azawan … (for relatedness)* (`honogoxo…`) |
 | `/w/` after a value `/ɡ/` | extra detail on that adjective | *very relatedness-serving* |
 
@@ -348,7 +352,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### English → Agalan
 
-**1.** *Azawan tells: telling ought to serve relatedness (endorse).*
+**1.** *Azawan should tell to serve relatedness.*
 
 ::: details Show answer
 `zazawan vezehel honogoxem.`
@@ -356,7 +360,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 z-Azawan | v-tell | h-relatedness-ought-endorse
 :::
 
-**2.** *Uhubun sleeps: sleeping ought to serve pleasure (endorse).*
+**2.** *Uhubun should sleep to serve pleasure.*
 
 ::: details Show answer
 `zuhubun velebel haweroxem.`
@@ -364,7 +368,7 @@ z-Azawan | v-tell | h-relatedness-ought-endorse
 z-Uhubun | v-sleep | h-pleasure-ought-endorse
 :::
 
-**3.** *Ululon screams: screaming ought to protect survival (bound).*
+**3.** *Ululon must scream to protect survival.*
 
 ::: details Show answer
 `zululon vazagal huhuhexel.`
@@ -372,7 +376,7 @@ z-Uhubun | v-sleep | h-pleasure-ought-endorse
 z-Ululon | v-scream | h-survival-ought-bound
 :::
 
-**4.** *Uhubun bows: bowing ought to serve relatedness (endorse).*
+**4.** *Uhubun should bow to serve relatedness.*
 
 ::: details Show answer
 `zuhubun vobowol honogoxem.`
@@ -436,7 +440,7 @@ z-church | g-relatedness-met-physical | g-faith | b-Azawan
 z-Azawan | v-pray | h-competence-met-physical | h-relatedness-motive-internal
 :::
 
-**12.** *Ululon screams: screaming ought to protect survival (bound) and survival as circumstantial motive.*
+**12.** *Ululon must scream to protect survival; survival is the circumstantial motive.*
 
 ::: details Show answer
 `zululon vazagal huhuhexel huhuhexol.`
@@ -452,7 +456,7 @@ z-Ululon | v-scream | h-survival-ought-bound | h-survival-motive-circumstantial
 
 z-Ululon | v-tell | h-relatedness-ought-invite
 
-*Ululon tells: telling ought to serve relatedness (invite).*
+*Ululon could tell to serve relatedness.*
 :::
 
 **2.** `zuhubun vazagal huhuhexer.`
@@ -461,7 +465,7 @@ z-Ululon | v-tell | h-relatedness-ought-invite
 
 z-Uhubun | v-scream | h-survival-ought-invite
 
-*Uhubun screams: screaming ought to protect survival (invite).*
+*Uhubun could scream to protect survival.*
 :::
 
 **3.** `zululon vabal holozoxol.`

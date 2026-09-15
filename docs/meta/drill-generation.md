@@ -313,7 +313,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 13 | `numbers.md` | Advanced | **exists** | Digitless exponents / hyperbole / zero×exp **as used in the stage’s teach examples** — not unassigned cells | 4–6 items |
 | 13 | `comparatives.md` | Intermediate | **exists** | Full comparative arity; manner `/h/` immediately after the join; distributive **`a`** + SHARED `/ɡ/`; measured differentials | Measured items **Sibling OK:** numbers Intermediate **measure phrases** only |
 | 13 | `comparatives.md` | Advanced | **exists** | Judgment benchmarks (`zojun`, `zahaman`, **`zuroron`** Mine vs performance **`zugobon`**, **`zoloben`** Everyone, …) | **`ugobo`** allowed on performance items |
-| 13 | `causation.md` | Intermediate | **exists** | Following-sentence **`badorol`**; **`urugu`** *because* / **`ezaze`** *iff*; asserted necessary **`heberom hurugum`**; **CAUSE** **`egega`** **-m**; preference vs law (values **`xe`**) | Recycle Beginner *if* / *only if* and `/h/` vs `/ɡ/` |
+| 13 | `causation.md` | Intermediate | **exists** | Following-sentence **`badorol`**; **`urugu`** *because* / **`ezaze`** *iff*; asserted necessary **`heberom hurugum`**; **CAUSE** **`egega`** **-m** | Recycle Beginner *if* / *only if* and `/h/` vs `/ɡ/` |
 | 13 | `causation.md` | Advanced | **exists** | Factivity; evidential / CAUSE / habit stacks as taught in this stage | COMMENT/evidentiality are Beginner/Intermediate recycle by the time Advanced is read |
 | 14 | `values.md` | Intermediate | **exists** | Prescription **`xe`** + force; motive **`xo`** + preference standing; which ending table; attachment sites | |
 | 14 | `values.md` | Advanced | **exists** | Combined matrices; one boundary trap | 4–6 items |

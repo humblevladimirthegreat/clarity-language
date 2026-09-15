@@ -99,7 +99,7 @@ Do not use `/` (already means PoS in the docs, and reads as *or*), hyphen (alrea
 | Role metalanguage (`speaker`, `listener`, `interlocutors`) | *I / you / we* |
 | Join packaging (open `zam` vs closed `zal`, exclusive `dol`, fence shape) | Plain *and / or*; no “exactly one”, no open-list footnotes |
 | Sense-picking **-l / -m / -n** | Never (already omitted from morph when they only pick sense) |
-| Values **channel / standing / force / changeability** | Keep only what changes English (*can't* vs *shouldn't* vs unmet need as content); drop “(motive, soft standing)”, “commit force”, … |
+| Values **channel / standing / force / changeability** | Keep only what changes English (*can't* vs *shouldn't* vs unmet need as content); drop “(motive, soft standing)”, … Prescription **`xe`**: loose free uses *must* / *should* / *could* (or *has to* / *might*) for bound / endorse / invite — not parenthetical labels |
 | Emotion compose ACT / LOCUS / activation | Ordinary emotion English (*we're glad*), not “pleasure met · internal” |
 | Evidential / universality **tags** | Fold in only if English wants it (*I hear…*, *usually*); else omit |
 | Span fence labels | Quotes / parentheses; no “Cite:” / “aside:” |
