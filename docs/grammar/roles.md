@@ -123,113 +123,121 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zaxogonul vajul.`
-<!-- gloss: z-agent-x-building | v-sit -->
+z-agent-x-building | v-sit
 :::
 
 **2.** *Azawan constructs. The builder sees a helmet.*
 
 ::: details Show answer
 `zazawan vogonul. zaxogonur dehemel vejel.`
-<!-- gloss: z-Azawan | v-construct | z-←construct | d-helmet | v-see -->
+z-Azawan | v-construct | z-←construct | d-helmet | v-see
 :::
 
 **3.** *Ululon hammers a brick. The hammerer sits.*
 
 ::: details Show answer
 `zululon durugul vahamel. zaxahamer vajul.`
-<!-- gloss: z-Ululon | d-brick | v-hammer | z-←hammer | v-sit -->
+z-Ululon | d-brick | v-hammer | z-←hammer | v-sit
 :::
 
 **4.** *Azawan sees Uhubun. The one seen sits.*
 
 ::: details Show answer
 `zazawan zuhubun vejel. zuxejer vajul.`
-<!-- gloss: z-Azawan | z-Uhubun | v-see | z-←see | v-sit -->
+z-Azawan | z-Uhubun | v-see | z-←see | v-sit
 :::
 
 **5.** *Azawan is a builder, in a manner of speaking.*
 
 ::: details Show answer
 `zazawan gaxogonum.`
-<!-- gloss: z-Azawan | g-agent-x-building -->
+z-Azawan | g-agent-x-building
 :::
 
 **6.** *Azawan sees a construction-site.*
 
 ::: details Show answer
 `zazawan dononul vejel.`
-<!-- gloss: z-Azawan | d-construction-site | v-see -->
+z-Azawan | d-construction-site | v-see
 :::
 
 **7.** *Ululon punches Azawan. The one punched screams.*
 
 ::: details Show answer
 `zululon zazawan vubunul. zuxubunur vazagal.`
-<!-- gloss: z-Ululon | z-Azawan | v-punch | z-←punch | v-scream -->
+z-Ululon | z-Azawan | v-punch | z-←punch | v-scream
 :::
 
 **8.** *Azawan is bound to Ululon. That other party of the bond fights.*
 
 ::: details Show answer
 `zazawan gonogol bululon. zoxonogor vuvugul.`
-<!-- gloss: z-Azawan | g-relatedness | b-Ululon | z-←relatedness | v-fight -->
+z-Azawan | g-relatedness | b-Ululon | z-←relatedness | v-fight
 :::
 
 #### Agalan → English
 
 **1.** `zaxahamel vogonul.`
-<!-- gloss: z-agent-x-hammer | v-construct -->
 
 ::: details Show answer
+
+z-agent-x-hammer | v-construct
 *A hammerer constructs.*
 :::
 
 **2.** `zuhubun zazawan vejel. zuxejer vajul.`
-<!-- gloss: z-Uhubun | z-Azawan | v-see | z-←see | v-sit -->
 
 ::: details Show answer
+
+z-Uhubun | z-Azawan | v-see | z-←see | v-sit
 *Uhubun sees Azawan. The one seen sits.*
 :::
 
 **3.** `zululon vogonul. zaxogonur dehemel vejel.`
-<!-- gloss: z-Ululon | v-construct | z-←construct | d-helmet | v-see -->
 
 ::: details Show answer
+
+z-Ululon | v-construct | z-←construct | d-helmet | v-see
 *Ululon constructs. The builder sees a helmet.*
 :::
 
 **4.** `zaxogonul vubunul.`
-<!-- gloss: z-agent-x-building | v-punch -->
 
 ::: details Show answer
+
+z-agent-x-building | v-punch
 *A builder punches.*
 :::
 
 **5.** `zululon dononul vejel.`
-<!-- gloss: z-Ululon | d-construction-site | v-see -->
 
 ::: details Show answer
+
+z-Ululon | d-construction-site | v-see
 *Ululon sees a construction-site.*
 :::
 
 **6.** `zazawan zululon vuvugul. duxuvugur vazagal.`
-<!-- gloss: z-Azawan | z-Ululon | v-fight | d-←fight | v-scream -->
 
 ::: details Show answer
+
+z-Azawan | z-Ululon | v-fight | d-←fight | v-scream
 *Azawan fought Ululon. The one fought screams.*
 :::
 
 **7.** `zululon zazawan vubunul. zaxubunur vuvugul.`
-<!-- gloss: z-Ululon | z-Azawan | v-punch | z-←punch | v-fight -->
 
 ::: details Show answer
+
+z-Ululon | z-Azawan | v-punch | z-←punch | v-fight
 *Ululon punches Azawan. The puncher fights.*
 :::
 
 **8.** `zuhubun gonogol bululon. zoxonogor vubunul.`
-<!-- gloss: z-Uhubun | g-relatedness | b-Ululon | z-←relatedness | v-punch -->
 
 ::: details Show answer
+
+z-Uhubun | g-relatedness | b-Ululon | z-←relatedness | v-punch
 *Uhubun is bound to Ululon. That other party of the bond punches.*
 :::
 
@@ -386,113 +394,121 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zodadal gewezexazawan.`
-<!-- gloss: z-boat | g-west-x-Azawan -->
+z-boat | g-west-x-Azawan
 :::
 
 **2.** *Walk north.*
 
 ::: details Show answer
 `jel vawalal honohol.`
-<!-- gloss: j-command | v-walk | h-north -->
+j-command | v-walk | h-north
 :::
 
 **3.** *The ship on Ululon’s right.*
 
 ::: details Show answer
 `zahabal gezazaxululon.`
-<!-- gloss: z-ship | g-east-x-Ululon -->
+z-ship | g-east-x-Ululon
 :::
 
 **4.** *Walk down.*
 
 ::: details Show answer
 `jel vawalal hodowol.`
-<!-- gloss: j-command | v-walk | h-down -->
+j-command | v-walk | h-down
 :::
 
 **5.** *The life-ring is on Azawan’s left of the boat.*
 
 ::: details Show answer
 `zuluvel gewezexazawan bodadal.`
-<!-- gloss: z-life-ring | g-west-x-Azawan | b-boat -->
+z-life-ring | g-west-x-Azawan | b-boat
 :::
 
 **6.** *You, walk left (your left).*
 
 ::: details Show answer
 `jel zedonen vawalal hewezexedonen.`
-<!-- gloss: j-command | z-listener | v-walk | h-west-x-listener -->
+j-command | z-listener | v-walk | h-west-x-listener
 :::
 
 **7.** *The boat on my left.*
 
 ::: details Show answer
 `zodadal gewezexugobon.`
-<!-- gloss: z-boat | g-west-x-speaker -->
+z-boat | g-west-x-speaker
 :::
 
 **8.** *Ululon, walk west.*
 
 ::: details Show answer
 `jel zululon vawalal hewezel.`
-<!-- gloss: j-command | z-Ululon | v-walk | h-west -->
+j-command | z-Ululon | v-walk | h-west
 :::
 
 #### Agalan → English
 
 **1.** `zodadal gezazaxazawan.`
-<!-- gloss: z-boat | g-east-x-Azawan -->
 
 ::: details Show answer
+
+z-boat | g-east-x-Azawan
 *The boat on Azawan’s right.*
 :::
 
 **2.** `jel vawalal hewezel.`
-<!-- gloss: j-command | v-walk | h-west -->
 
 ::: details Show answer
+
+j-command | v-walk | h-west
 *Walk west.*
 :::
 
 **3.** `zahabal gohuhul.`
-<!-- gloss: z-ship | g-south -->
 
 ::: details Show answer
+
+z-ship | g-south
 *The ship on the south.*
 :::
 
 **4.** `jel vawalal hubal.`
-<!-- gloss: j-command | v-walk | h-up -->
 
 ::: details Show answer
+
+j-command | v-walk | h-up
 *Walk up.*
 :::
 
 **5.** `zuluvel gewezexululon bodadal.`
-<!-- gloss: z-life-ring | g-west-x-Ululon | b-boat -->
 
 ::: details Show answer
+
+z-life-ring | g-west-x-Ululon | b-boat
 *The life-ring is on Ululon’s left of the boat.*
 :::
 
 **6.** `jel zedonen vawalal hezazaxedonen.`
-<!-- gloss: j-command | z-listener | v-walk | h-east-x-listener -->
 
 ::: details Show answer
+
+j-command | z-listener | v-walk | h-east-x-listener
 *You, walk right (your right).*
 :::
 
 **7.** `zahabal gonohexuhubun.`
-<!-- gloss: z-ship | g-northwest-x-Uhubun -->
 
 ::: details Show answer
+
+z-ship | g-northwest-x-Uhubun
 *The ship on Uhubun’s forward-left.*
 :::
 
 **8.** `jel zululon vawalal hodowol.`
-<!-- gloss: j-command | z-Ululon | v-walk | h-down -->
 
 ::: details Show answer
+
+j-command | z-Ululon | v-walk | h-down
 *Ululon, walk down.*
 :::
 

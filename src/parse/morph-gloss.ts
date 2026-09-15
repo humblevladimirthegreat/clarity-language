@@ -367,7 +367,7 @@ export function compareMorphGloss(
 }
 
 const MORPH_TOKEN_RE =
-  /^(?:[zdbvgwhxj]l?-)?(?:←)?[A-Za-z0-9…/'’._#+-]*(?:-x-[A-Za-z0-9…/'’._#+-]+)*(?:-x)?$/;
+  /^(?:[zdbvgwhxj]l?-)?(?:←)?[A-Za-z0-9…/'’._#+>,-]*(?:-x-[A-Za-z0-9…/'’._#+>,-]+)*(?:-x)?$|^[<>]$/;
 
 export function looksLikeMorphLine(line: string): boolean {
   const trimmed = line.trim();

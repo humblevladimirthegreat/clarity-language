@@ -166,113 +166,114 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan d[azawan] vezehel.`
-<!-- gloss: z-Azawan | d-Azawan | v-tell -->
+z-Azawan | d-Azawan | v-tell
 :::
 
 **2.** *Ululon wrote something like “Azawan sings.”*
 
 ::: details Show answer
 `zululon d~[zazawan vuzunul] vuwurul.`
-<!-- gloss: z-Ululon | d-cite | z-Azawan | v-sing | v-write -->
+z-Ululon | d-cite | z-Azawan | v-sing | v-write
 :::
 
 **3.** *The word “melody” is small.*
 
 ::: details Show answer
 `z{uzugo} gumuzem.`
-<!-- gloss: z-uzugo | g-small -->
+z-uzugo | g-small
 :::
 
 **4.** *Azawan saw kimchi.* (foreign surface)
 
 ::: details Show answer
 <code>zazawan d&lt;kimchi&gt; vejel.</code>
-<!-- gloss: z-Azawan | d-kimchi | v-see -->
 :::
 
 **5.** *Uhubun sang “Uzugon.”* (title as wording)
 
 ::: details Show answer
 `zuhubun d@[uzugon] vuzunul.`
-<!-- gloss: z-Uhubun | d-Uzugon | v-sing -->
+z-Uhubun | d-Uzugon | v-sing
 :::
 
 **6.** *Azawan tells (happily).*
 
 ::: details Show answer
 `zazawan vezehel h(huzumum).`
-<!-- gloss: z-Azawan | v-tell | h-happy -->
+z-Azawan | v-tell | h-happy
 :::
 
 **7.** *Don’t “halt,” Ululon.*
 
 ::: details Show answer
 `jul zululon v[vozodol].`
-<!-- gloss: j-prohibition | z-Ululon | v-stop -->
+j-prohibition | z-Ululon | v-stop
 :::
 
 **8.** *Ululon said that?!*
 
 ::: details Show answer
 `jol zululon d[=] vezehel.`
-<!-- gloss: j-question | z-Ululon | d-←cite | v-tell -->
+j-question | z-Ululon | d-←cite | v-tell
 :::
 
 #### Agalan → English
 
 **1.** <code>zululon d&lt;kimchi&gt; vejel.</code>
-<!-- gloss: z-Ululon | d-kimchi | v-see -->
 
 ::: details Show answer
 *Ululon saw kimchi.* (opaque surface)
 :::
 
 **2.** `zazawan d{uzugo} vezehel.`
-<!-- gloss: z-Azawan | d-uzugo | v-tell -->
 
 ::: details Show answer
+
+z-Azawan | d-uzugo | v-tell
 *Azawan said the word “melody.”*
 :::
 
 **3.** `zuhubun d@{uzugo} vuwurul.`
-<!-- gloss: z-Uhubun | d-uzugo | v-write -->
 
 ::: details Show answer
+
+z-Uhubun | d-uzugo | v-write
 *Uhubun wrote the title Uzugon.*
 :::
 
 **4.** `z{uzugo} gumuzem.`
-<!-- gloss: z-uzugo | g-small -->
 
 ::: details Show answer
+
+z-uzugo | g-small
 *The word “melody” is small.*
 :::
 
 **5.** <code>z@&lt;Sam&gt; d[azawan] vezehel.</code>
-<!-- gloss: z-Sam | d-Azawan | v-tell -->
 
 ::: details Show answer
 *Sam said “Azawan.”* (hello)
 :::
 
 **6.** <code>@&lt;Sam&gt;</code>
-<!-- gloss: Sam -->
 
 ::: details Show answer
 *Sam*
 :::
 
 **7.** `zululon vezehel h(zazawan vuzunul).`
-<!-- gloss: z-Ululon | v-tell | h- | z-Azawan | v-sing -->
 
 ::: details Show answer
+
+z-Ululon | v-tell | h- | z-Azawan | v-sing
 *Ululon tells (Azawan sings).*
 :::
 
 **8.** `jol zuhubun d[=] vezehel.`
-<!-- gloss: j-question | z-Uhubun | d-←cite | v-tell -->
 
 ::: details Show answer
+
+j-question | z-Uhubun | d-←cite | v-tell
 *Uhubun said that?!*
 :::
 
@@ -467,113 +468,121 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan daxol azawan vezehel.`
-<!-- gloss: z-Azawan | d-cite-x-atomic | Azawan | v-tell -->
+z-Azawan | d-cite-x-atomic | Azawan | v-tell
 :::
 
 **2.** *Ululon said “Azawan attests.”* (spoken multi-token cite)
 
 ::: details Show answer
 `zululon daxal zazawan vadezel xuxul vezehel.`
-<!-- gloss: z-Ululon | d-cite-x-multi | z-Azawan | v-attest | x-span-close | v-tell -->
+z-Ululon | d-cite-x-multi | z-Azawan | v-attest | x-span-close | v-tell
 :::
 
 **3.** *Uhubun said that.* (spoken cite resume)
 
 ::: details Show answer
 `zuhubun daxur vezehel.`
-<!-- gloss: z-Uhubun | d-cite-x-empty | v-tell -->
+z-Uhubun | d-cite-x-empty | v-tell
 :::
 
 **4.** *Azawan said \[redacted\].*
 
 ::: details Show answer
 `zazawan daxul vezehel.`
-<!-- gloss: z-Azawan | d-cite-x-empty | v-tell -->
+z-Azawan | d-cite-x-empty | v-tell
 :::
 
 **5.** *Ululon saw FBI.* (spoken atomic opaque)
 
 ::: details Show answer
 `zululon duxol FBI vejel.`
-<!-- gloss: z-Ululon | d-opaque-x-atomic | FBI | v-see -->
+z-Ululon | d-opaque-x-atomic | FBI | v-see
 :::
 
 **6.** *Azawan said “Azawan” (happily).* (cite nesting an aside)
 
 ::: details Show answer
 `zazawan d[ h(huzumum) azawan ] vezehel.`
-<!-- gloss: z-Azawan | d-cite | h-aside | h-happy | Azawan | v-tell -->
+z-Azawan | d-cite | h-aside | h-happy | Azawan | v-tell
 :::
 
 **7.** *Azawan saw, as a possibility, the lie.* (*possibility* targets that chunk)
 
 ::: details Show answer
 `zazawan ^ huzurem dululel ^ vejel.`
-<!-- gloss: z-Azawan | h-possibility | d-lie | v-see -->
+z-Azawan | h-possibility | d-lie | v-see
 :::
 
 **8.** *Ululon and (just Azawan) punched.*
 
 ::: details Show answer
 `zululon ^ zazawan zal ^ zam vubunul.`
-<!-- gloss: z-Ululon | z-Azawan | z-and | z-and.open | v-punch -->
+z-Ululon | z-Azawan | z-and | z-and.open | v-punch
 :::
 
 #### Agalan → English
 
 **1.** `zululon daxel azawan.`
-<!-- gloss: z-Ululon | d-cite-x-clause | Azawan -->
 
 ::: details Show answer
+
+z-Ululon | d-cite-x-clause | Azawan
 *Ululon said “Azawan.”* (hello)
 :::
 
 **2.** `zazawan daxam zazawan vadezel xuxul vezehel.`
-<!-- gloss: z-Azawan | d-cite-x-multi | z-Azawan | v-attest | x-span-close | v-tell -->
 
 ::: details Show answer
+
+z-Azawan | d-cite-x-multi | z-Azawan | v-attest | x-span-close | v-tell
 *Azawan said something like “Azawan attests.”*
 :::
 
 **3.** `zaxur gumuzem.`
-<!-- gloss: z-cite-x-empty | g-small -->
 
 ::: details Show answer
+
+z-cite-x-empty | g-small
 *That (cite) is small.*
 :::
 
 **4.** `zuhubun daxon ujudun vezehel.`
-<!-- gloss: z-Uhubun | d-cite-x-atomic | Ujudun | v-tell -->
 
 ::: details Show answer
+
+z-Uhubun | d-cite-x-atomic | Ujudun | v-tell
 *Uhubun said “Ujudu.”*
 :::
 
 **5.** `zazawan vezehel hexol huzumum.`
-<!-- gloss: z-Azawan | v-tell | h-aside-x-atomic | h-happy -->
 
 ::: details Show answer
+
+z-Azawan | v-tell | h-aside-x-atomic | h-happy
 *Azawan tells (happily).*
 :::
 
 **6.** `zululon d[ z{ujudu} ] vezehel.`
-<!-- gloss: z-Ululon | d-cite | z-mention | z-ujudu | v-tell -->
 
 ::: details Show answer
+
+z-Ululon | d-cite | z-mention | z-ujudu | v-tell
 *Ululon said the word “judge.”*
 :::
 
 **7.** `zululon ^ huzurem dululel ^ vejel.`
-<!-- gloss: z-Ululon | h-possibility | d-lie | v-see -->
 
 ::: details Show answer
+
+z-Ululon | h-possibility | d-lie | v-see
 *Ululon saw, as a possibility, the lie.*
 :::
 
 **8.** `zujudun vazagal.`
-<!-- gloss: z-Ujudun | v-scream -->
 
 ::: details Show answer
+
+z-Ujudun | v-scream
 *The Judge screamed.*
 :::
 
@@ -689,71 +698,73 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zuhubun daxal abugum xuxul vezehel.`
-<!-- gloss: z-Uhubun | d-cite-x-multi | flaw | x-span-close | v-tell -->
+z-Uhubun | d-cite-x-multi | flaw | x-span-close | v-tell
 :::
 
 **2.** *Ululon said “bug…”* (the cite trails off)
 
 ::: details Show answer
 `zululon daxal abugum xuxur vezehel.`
-<!-- gloss: z-Ululon | d-cite-x-multi | flaw | x-span-close-editorial | v-tell -->
+z-Ululon | d-cite-x-multi | flaw | x-span-close-editorial | v-tell
 :::
 
 **3.** *Azawan said “bug” (happily), then close every open span at once.*
 
 ::: details Show answer
 `zazawan daxal hexol huzumum abugum xuxum vezehel.`
-<!-- gloss: z-Azawan | d-cite-x-multi | h-aside-x-atomic | h-happy | flaw | x-span-close-all | v-tell -->
+z-Azawan | d-cite-x-multi | h-aside-x-atomic | h-happy | flaw | x-span-close-all | v-tell
 :::
 
 **4.** *Azawan said “write ]”.*
 
 ::: details Show answer
 <code>zazawan d[ vuwurul d&lt;]&gt; ] vezehel.</code>
-<!-- gloss: z-Azawan | d-cite | v-write | d-] | v-tell -->
 :::
 
 **5.** *Uhubun said “code > 1.”* (spoken opaque, because a writing angle-bracket fence would close on the first greater-than)
 
 ::: details Show answer
 `zuhubun duxal code > 1 xuxul vezehel.`
-<!-- gloss: z-Uhubun | d-opaque-x-multi | code | > | 1 | x-span-close | v-tell -->
+z-Uhubun | d-opaque-x-multi | code | > | 1 | x-span-close | v-tell
 :::
 
 #### Agalan → English
 
 **1.** `zazawan d[abugum#] vezehel.`
-<!-- gloss: z-Azawan | d-abugum# | v-tell -->
 
 ::: details Show answer
+
+z-Azawan | d-abugum# | v-tell
 *Azawan said “bug…”*
 :::
 
 **2.** `zululon daxal abugum xuxur xuxum vezehel.`
-<!-- gloss: z-Ululon | d-cite-x-multi | flaw | x-span-close-editorial | x-span-close-all | v-tell -->
 
 ::: details Show answer
+
+z-Ululon | d-cite-x-multi | flaw | x-span-close-editorial | x-span-close-all | v-tell
 *Ululon said “bug…”*
 :::
 
 **3.** `zazawan daxal duxol xuxul xuxul vezehel.`
-<!-- gloss: z-Azawan | d-cite-x-multi | d-opaque-x-atomic | xuxul | x-span-close | v-tell -->
 
 ::: details Show answer
+
+z-Azawan | d-cite-x-multi | d-opaque-x-atomic | xuxul | x-span-close | v-tell
 *Azawan said the word “xuxul.”*
 :::
 
 **4.** <code>zululon d[ vuwurul d&lt;#&gt; ] vezehel.</code>
-<!-- gloss: z-Ululon | d-cite | v-write | d-# | v-tell -->
 
 ::: details Show answer
 *Ululon said “write #.”*
 :::
 
 **5.** `zuhubun d[abugum#|] vezehel.`
-<!-- gloss: z-Uhubun | d-abugum#| | v-tell -->
 
 ::: details Show answer
+
+z-Uhubun | d-abugum#| | v-tell
 *Uhubun said “bug…”*
 :::
 

@@ -40,7 +40,6 @@ export type MorphGlossFinding = MorphMismatch | MorphAmbiguity | MorphMissingGlo
 
 const SKIP_CELL = /(?:^|[^\w])(?:…|\.\.\.)(?:[^\w]|$)/;
 const GLOSS_COMMENT_RE = /<!--\s*gloss:\s*([\s\S]*?)-->/i;
-const HAS_GLOSS_COMMENT_RE = /<!--\s*gloss:/i;
 const ITEM_START_RE = /^\*\*(\d+)\.\*\*(.*)$/;
 const PRACTICE_H3_RE = /^### Translation practice\b/;
 
@@ -79,7 +78,7 @@ export function lintMorphGlossMarkdown(
   tables: ClassifyTables,
 ): MorphGlossLintResult {
   const findings: MorphGlossFinding[] = [];
-  const requireExerciseGloss = HAS_GLOSS_COMMENT_RE.test(text);
+  const requireExerciseGloss = translationPracticeRanges(text.split(/\r?\n/)).length > 0;
   const pairs = extractMorphPairs(text);
 
   for (const item of extractTranslationExercises(text)) {
@@ -185,13 +184,11 @@ function isPracticeBoundary(line: string): boolean {
 function parseExerciseItem(
   itemLines: string[],
 ): { agalan: string; morph: string | null; agalanLineOffset: number } | null {
-  const body = itemLines.join("\n");
-  const glossMatch = GLOSS_COMMENT_RE.exec(body);
-  const morph = glossMatch ? normalizeExerciseMorph(glossMatch[1] ?? "") : null;
-
   const prompt = ITEM_START_RE.exec(itemLines[0] ?? "");
   const promptRest = prompt?.[2] ?? "";
   const promptCodes = codeSpans(promptRest);
+  const morph = extractExerciseMorph(itemLines, promptCodes.length > 0);
+
   if (promptCodes.length > 0) {
     return {
       agalan: promptCodes.join(" "),
@@ -207,6 +204,43 @@ function parseExerciseItem(
     morph,
     agalanLineOffset: fromDetails.lineOffset,
   };
+}
+
+function extractExerciseMorph(itemLines: string[], agalanOnPrompt: boolean): string | null {
+  const body = itemLines.join("\n");
+  const glossMatch = GLOSS_COMMENT_RE.exec(body);
+  if (glossMatch) {
+    return normalizeExerciseMorph(glossMatch[1] ?? "");
+  }
+
+  let inDetails = false;
+  let agalanLineInDetails = -1;
+  for (let i = 0; i < itemLines.length; i++) {
+    const trimmed = itemLines[i]!.trim();
+    if (!inDetails) {
+      if (/^::: details\b/.test(trimmed)) inDetails = true;
+      continue;
+    }
+    if (/^:::$/.test(trimmed)) break;
+    if (unwrapCode(trimmed) && agalanLineInDetails < 0) agalanLineInDetails = i;
+    const visibleMorph = visibleExerciseMorphLine(trimmed);
+    if (!visibleMorph) continue;
+    if (agalanOnPrompt) return visibleMorph;
+    if (agalanLineInDetails >= 0 && i > agalanLineInDetails) {
+      return visibleMorph;
+    }
+  }
+  return null;
+}
+
+function visibleExerciseMorphLine(trimmed: string): string | null {
+  if (!trimmed || unwrapCode(trimmed)) return null;
+  if (/^\*[^*].*\*$/.test(trimmed)) return null;
+  const normalized = normalizeExerciseMorph(trimmed);
+  if (!normalized) return null;
+  if (looksLikeMorphLine(trimmed) || /\s\|\s/.test(trimmed)) return normalized;
+  if (/^[A-Za-z][A-Za-z0-9-]*$/.test(trimmed)) return normalized;
+  return null;
 }
 
 function detailsAgalan(itemLines: string[]): { agalan: string; lineOffset: number } | null {

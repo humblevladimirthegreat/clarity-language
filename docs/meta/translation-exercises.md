@@ -4,7 +4,7 @@ How to place and write **short translation drills** in learner grammar pages und
 
 Worked **examples** use the everyday [example root bank](drill-generation.md#root-bank). **Checkpoints** use a [setting](#checkpoint-setting) that climbs in tension; they do not recycle walk/sleep as the default plot.
 
-Grammar pages must **not** link here or mention `meta/` — editors follow this privately. Prose / example style: [grammar-docs.md](grammar-docs.md). Learning stages: [learning-levels.md](learning-levels.md). Visible morph glosses in worked examples: [glosses.md](glosses.md). Hidden `<!-- gloss: -->` on checkpoint Agalan: below. Generating missing checkpoints: [drill-generation.md](drill-generation.md).
+Grammar pages must **not** link here or mention `meta/` — editors follow this privately. Prose / example style: [grammar-docs.md](grammar-docs.md). Learning stages: [learning-levels.md](learning-levels.md). Visible morph glosses in worked examples and checkpoint spoilers: [glosses.md](glosses.md). Generating missing checkpoints: [drill-generation.md](drill-generation.md).
 
 ## Default placement
 <a id="placement"></a>
@@ -43,7 +43,7 @@ Per-feature teaching already has its practice: rule → cue → 1–3 worked exa
 2. **Both directions** — English → Agalan (production) and Agalan → English (parsing). Production is harder; keep those items shorter / fewer if the set grows.
 3. **Directions are not mirrors** — no Agalan → English item may be the same proposition as any English → Agalan item on that checkpoint (same participants + same verb + same extra morph). Production tests this stage’s new morph in a short sentence. Parsing uses a **different packaging** of the same morph (legal order scramble, omitted recoverable **`jal`**, a denser nest, resume **-r**, an English false friend) or an **offset scene** (same setting, different who-does-what). Recognition-only traps (*because* as a verb, classification vs identity) belong in Agalan → English, not as production clones. Parsing may be one clause or one extra `/ɡ/` longer than production; do not invert the production list.
 4. **Pure Agalan in early checkpoints** — published roots and closed specials only; `PoS<…>ENDING` / opaque spans only when the page is teaching loans or spans.
-5. **Spoiler answers** — VitePress `::: details Show answer` (or a clear custom label). The answer is the Agalan sentence or **loose** free English — not a second grammar lecture. No visible morph-gloss wall inside the spoiler unless the drill is explicitly about packaging. Every item needs a hidden morph line `<!-- gloss: z-Azawan | v-sit -->` immediately after the Agalan (spoiler for English → Agalan; prompt line for Agalan → English). That line is the [parser morph](glosses.md#role-english) (`v-see` when packed, else the sense-root); `lint:agalan` compares it to the parser.
+5. **Spoiler answers** — VitePress `::: details Show answer` (or a clear custom label). The answer is the Agalan sentence or **loose** free English, plus a visible **morph gloss** line in the spoiler ([glosses.md](glosses.md#example-block) format — roman `z-Azawan | v-sit`, not `gloss:`). **English → Agalan:** Agalan line, blank line, morph. **Agalan → English:** morph, blank line, loose English (Agalan stays on the prompt). Omit the morph when it would only repeat the loose English ([when to skip](glosses.md#example-block)). Every item still needs a morph the [parser](glosses.md#role-english) accepts (`v-see` when packed); `lint:agalan` compares it.
 6. **Small sets** — about **6–12 items per direction** max per stage checkpoint. Put this checkpoint’s setting vocab in an **English · Agalan** table once above the drills (add **Same root as** for the everyday **-l** citation when **English** is not the citation kind: metaphor, overlay, or a role-marked use of the same root; **Cue** is optional memory helper — never the English to produce; never a mid-dot prose list). Do not repeat the How-to-learn column legend on later banks. Do not default that table to *walk* / *sleep* / *dog*.
 7. **Setting vocab, not example glue** — the [example root bank](drill-generation.md#root-bank) is for **worked examples** on grammar pages (*walk*, *sleep*, *dog*, *house*, …). Each **checkpoint** names one [setting](#checkpoint-setting) and uses **setting** content roots (plus house names). Those roots need not match the example bank. Certify each new content root in [lexicon-published.csv](../../data/lexicon-published.csv) (or overlays / compounds when that English is a hosted overlay or lemma). Do **not** edit teaching examples just to seed drills. Do **not** invent stems.
 8. **Test the decision, not the dictionary** — good items force a choice this stage taught (role letter, **-l** / **-m**, **`orodo` last**, omit recoverable **`jal`**, …). The setting is packaging; the morph is the test.
@@ -111,15 +111,18 @@ Short drills for Beginner. Try each item before opening **Show answer**. …
 
 ::: details Show answer
 `…`
-<!-- gloss: … -->
+
+z-… | v-…
+
 :::
 
 #### Agalan → English
 
 **1.** `…`
-<!-- gloss: … -->
 
 ::: details Show answer
+z-… | v-…
+
 *…*
 :::
 ```
@@ -136,5 +139,5 @@ Omit recoverable **`jal`** unless the drill is teaching speech act. Match role l
 |------|------|
 | [grammar-docs.md](grammar-docs.md) | Learner prose, teach order, worked examples, [house cast](grammar-docs.md#house-cast) |
 | [learning-levels.md](learning-levels.md) | Beginner / Intermediate / Advanced stages and cross-doc path |
-| [glosses.md](glosses.md) | Morph gloss and free English (for teaching lines); checkpoint morph is a hidden `<!-- gloss: -->` comment; [house-name glosses](glosses.md#house-cast) |
+| [glosses.md](glosses.md) | Morph gloss and free English (for teaching lines and checkpoint spoilers); [house-name glosses](glosses.md#house-cast) |
 | [drill-generation.md](drill-generation.md) | Path allowlist, [settings](drill-generation.md#settings) inventory, [example root bank](drill-generation.md#root-bank), and **execute** procedure (one file per agent) — follow [principles](#principles), [checkpoint setting](#checkpoint-setting), and [house scene](#house-scene) when replacing a checkpoint |

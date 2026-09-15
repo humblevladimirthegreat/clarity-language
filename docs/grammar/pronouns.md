@@ -122,113 +122,121 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan vorurul. zazar vogogol.`
-<!-- gloss: z-Azawan | v-pour | z-←Azawan | v-cook -->
+z-Azawan | v-pour | z-←Azawan | v-cook
 :::
 
 **2.** *A cook pours. The cook cooks.*
 
 ::: details Show answer
 `zogogol vorurul. zogor vogogol.`
-<!-- gloss: z-cook | v-pour | z-←cook | v-cook -->
+z-cook | v-pour | z-←cook | v-cook
 :::
 
 **3.** *Ululon cooks. A cookie is red. Azawan does so.*
 
 ::: details Show answer
 `zululon vogogol. zogogel garedel. zazawan vogogor.`
-<!-- gloss: z-Ululon | v-cook | z-cookie | g-red | z-Azawan | v-←cook -->
+z-Ululon | v-cook | z-cookie | g-red | z-Azawan | v-←cook
 :::
 
 **4.** *I pour you.*
 
 ::: details Show answer
 `zugobon dedonen vorurul.`
-<!-- gloss: z-speaker | d-listener | v-pour -->
+z-speaker | d-listener | v-pour
 :::
 
 **5.** *We (you and I) cook.*
 
 ::: details Show answer
 `zahan vogogol.`
-<!-- gloss: z-interlocutors | v-cook -->
+z-interlocutors | v-cook
 :::
 
 **6.** *You scream.*
 
 ::: details Show answer
 `zedonen vazagal.`
-<!-- gloss: z-listener | v-scream -->
+z-listener | v-scream
 :::
 
 **7.** *Azawan punches me.*
 
 ::: details Show answer
 `zazawan dugobon vubunul.`
-<!-- gloss: z-Azawan | d-speaker | v-punch -->
+z-Azawan | d-speaker | v-punch
 :::
 
 **8.** *Someone punches Uhubun.*
 
 ::: details Show answer
 `zenenun duhubun vubunul.`
-<!-- gloss: z-someone | d-Uhubun | v-punch -->
+z-someone | d-Uhubun | v-punch
 :::
 
 #### Agalan → English
 
 **1.** `zululon vogogol. zulur vorurul.`
-<!-- gloss: z-Ululon | v-cook | z-←Ululon | v-pour -->
 
 ::: details Show answer
+
+z-Ululon | v-cook | z-←Ululon | v-pour
 *Ululon cooks. He pours.*
 :::
 
 **2.** `zuhubun vorurul. zuhur vogogol.`
-<!-- gloss: z-Uhubun | v-pour | z-←Uhubun | v-cook -->
 
 ::: details Show answer
+
+z-Uhubun | v-pour | z-←Uhubun | v-cook
 *Uhubun pours. She cooks.*
 :::
 
 **3.** `zululon duguvel vejel. zulur dugur vejel.`
-<!-- gloss: z-Ululon | d-knife | v-see | z-←Ululon | d-←knife | v-see -->
 
 ::: details Show answer
+
+z-Ululon | d-knife | v-see | z-←Ululon | d-←knife | v-see
 *Ululon sees a knife. He sees the knife.*
 :::
 
 **4.** `zuhubun vogogol. zogogel garedel. zululon vogogor.`
-<!-- gloss: z-Uhubun | v-cook | z-cookie | g-red | z-Ululon | v-←cook -->
 
 ::: details Show answer
+
+z-Uhubun | v-cook | z-cookie | g-red | z-Ululon | v-←cook
 *Uhubun cooks. A cookie is red. Ululon does so.*
 :::
 
 **5.** `zazawan dedonen vejel.`
-<!-- gloss: z-Azawan | d-listener | v-see -->
 
 ::: details Show answer
+
+z-Azawan | d-listener | v-see
 *Azawan sees you.*
 :::
 
 **6.** `zahan vorurul.`
-<!-- gloss: z-interlocutors | v-pour -->
 
 ::: details Show answer
+
+z-interlocutors | v-pour
 *We (you and I) pour.*
 :::
 
 **7.** `zenenun vazagal.`
-<!-- gloss: z-someone | v-scream -->
 
 ::: details Show answer
+
+z-someone | v-scream
 *Someone screams.*
 :::
 
 **8.** `jol zugobon vogogol.`
-<!-- gloss: j-question | z-speaker | v-cook -->
 
 ::: details Show answer
+
+j-question | z-speaker | v-cook
 *Do I cook?*
 :::
 
@@ -332,113 +340,121 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zululon vorurul. zazawan vorurur.`
-<!-- gloss: z-Ululon | v-pour | z-Azawan | v-←pour -->
+z-Ululon | v-pour | z-Azawan | v-←pour
 :::
 
 **2.** *A flower is red. A tomato is such.*
 
 ::: details Show answer
 `zovowel garedel. zodomal gareder.`
-<!-- gloss: z-flower | g-red | z-tomato | g-←red -->
+z-flower | g-red | z-tomato | g-←red
 :::
 
 **3.** *Ululon sees Azawan. Uhubun sees them.*
 
 ::: details Show answer
 `zululon dazawan vejel. zuhubun dazar vejel.`
-<!-- gloss: z-Ululon | d-Azawan | v-see | z-Uhubun | d-←Azawan | v-see -->
+z-Ululon | d-Azawan | v-see | z-Uhubun | d-←Azawan | v-see
 :::
 
 **4.** *Azawan pours. Ululon harvests. Going back to Azawan, they see a seedling.*
 
 ::: details Show answer
 `zazawan vorurul. zululon vurum. xazawar dezedel vejel.`
-<!-- gloss: z-Azawan | v-pour | z-Ululon | v-harvest | x-←Azawan | d-seedling | v-see -->
+z-Azawan | v-pour | z-Ululon | v-harvest | x-←Azawan | d-seedling | v-see
 :::
 
 **5.** *Ululon pours inside a potted plant. Azawan harvests that way.*
 
 ::: details Show answer
 `zululon hogorem bobodel vorurul. zazawan hogor vurum.`
-<!-- gloss: z-Ululon | h-inside | b-potted-plant | v-pour | z-Azawan | h-←inside | v-harvest -->
+z-Ululon | h-inside | b-potted-plant | v-pour | z-Azawan | h-←inside | v-harvest
 :::
 
 **6.** *As for Uhubun, Ululon punches.*
 
 ::: details Show answer
 `hozal buhubun zululon vubunul.`
-<!-- gloss: h-hash | b-Uhubun | z-Ululon | v-punch -->
+h-hash | b-Uhubun | z-Ululon | v-punch
 :::
 
 **7.** *We (you and I) harvest.*
 
 ::: details Show answer
 `zahan vurum.`
-<!-- gloss: z-interlocutors | v-harvest -->
+z-interlocutors | v-harvest
 :::
 
 **8.** *Azawan and associates punch.*
 
 ::: details Show answer
 `zazawanx vubunul.`
-<!-- gloss: z-Azawan-x | v-punch -->
+z-Azawan-x | v-punch
 :::
 
 #### Agalan → English
 
 **1.** `zazawan vorurul. zululon vorurur.`
-<!-- gloss: z-Azawan | v-pour | z-Ululon | v-←pour -->
 
 ::: details Show answer
+
+z-Azawan | v-pour | z-Ululon | v-←pour
 *Azawan pours. Ululon does so.*
 :::
 
 **2.** `zodomal garedel. zovowel gareder.`
-<!-- gloss: z-tomato | g-red | z-flower | g-←red -->
 
 ::: details Show answer
+
+z-tomato | g-red | z-flower | g-←red
 *A tomato is red. A flower is such.*
 :::
 
 **3.** `zazawan dululon vejel. zuhubun dulur vejel.`
-<!-- gloss: z-Azawan | d-Ululon | v-see | z-Uhubun | d-←Ululon | v-see -->
 
 ::: details Show answer
+
+z-Azawan | d-Ululon | v-see | z-Uhubun | d-←Ululon | v-see
 *Azawan sees Ululon. Uhubun sees him.*
 :::
 
 **4.** `zululon vurum. zazawan vorurul. xulur vubunul.`
-<!-- gloss: z-Ululon | v-harvest | z-Azawan | v-pour | x-←Ululon | v-punch -->
 
 ::: details Show answer
+
+z-Ululon | v-harvest | z-Azawan | v-pour | x-←Ululon | v-punch
 *Ululon harvests. Azawan pours. Going back to Ululon, he punches.*
 :::
 
 **5.** `hozal bazawan zuhubun vurum.`
-<!-- gloss: h-hash | b-Azawan | z-Uhubun | v-harvest -->
 
 ::: details Show answer
+
+h-hash | b-Azawan | z-Uhubun | v-harvest
 *As for Azawan, Uhubun harvests.*
 :::
 
 **6.** `zahan vazagal.`
-<!-- gloss: z-interlocutors | v-scream -->
 
 ::: details Show answer
+
+z-interlocutors | v-scream
 *We (you and I) scream.*
 :::
 
 **7.** `zedonenx vazagal.`
-<!-- gloss: z-listener-x | v-scream -->
 
 ::: details Show answer
+
+z-listener-x | v-scream
 *You all scream.*
 :::
 
 **8.** `zululonx vuvugul.`
-<!-- gloss: z-Ululon-x | v-fight -->
 
 ::: details Show answer
+
+z-Ululon-x | v-fight
 *Ululon and associates fight.*
 :::
 
@@ -552,71 +568,76 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan vumudel. zululon vazar.`
-<!-- gloss: z-Azawan | v-mute | z-Ululon | v-←Azawan -->
+z-Azawan | v-mute | z-Ululon | v-←Azawan
 :::
 
 **2.** *Ululon broadcasts. That action is big.*
 
 ::: details Show answer
 `zululon varadum. zaradur gelem.`
-<!-- gloss: z-Ululon | v-broadcast | z-←broadcast | g-big -->
+z-Ululon | v-broadcast | z-←broadcast | g-big
 :::
 
 **3.** *Azawan broadcasts. By doing so, Ululon mutes.*
 
 ::: details Show answer
 `zazawan varadum. zululon harar vumudel.`
-<!-- gloss: z-Azawan | v-broadcast | z-Ululon | h-←broadcast | v-mute -->
+z-Azawan | v-broadcast | z-Ululon | h-←broadcast | v-mute
 :::
 
 **4.** *A radio is red. The red one screams.*
 
 ::: details Show answer
 `zaradul garedel. zareder vazagal.`
-<!-- gloss: z-radio | g-red | z-←red | v-scream -->
+z-radio | g-red | z-←red | v-scream
 :::
 
 **5.** *Ululon punches. That action is big.*
 
 ::: details Show answer
 `zululon vubunul. zubunur gelem.`
-<!-- gloss: z-Ululon | v-punch | z-←punch | g-big -->
+z-Ululon | v-punch | z-←punch | g-big
 :::
 
 #### Agalan → English
 
 **1.** `zazawan varadum. gazar gelem.`
-<!-- gloss: z-Azawan | v-broadcast | g-←Azawan | g-big -->
 
 ::: details Show answer
+
+z-Azawan | v-broadcast | g-←Azawan | g-big
 *Azawan broadcasts. That one's kind is big.*
 :::
 
 **2.** `zululon vubunul. zazawan hubur vumudel.`
-<!-- gloss: z-Ululon | v-punch | z-Azawan | h-←punch | v-mute -->
 
 ::: details Show answer
+
+z-Ululon | v-punch | z-Azawan | h-←punch | v-mute
 *Ululon punches. By doing so, Azawan mutes.*
 :::
 
 **3.** `zudomul vumudel. zazawan vodor.`
-<!-- gloss: z-studio-mic | v-mute | z-Azawan | v-tongue -->
 
 ::: details Show answer
+
+z-studio-mic | v-mute | z-Azawan | v-tongue
 *A studio mic mutes. Azawan does that with it.*
 :::
 
 **4.** `zaradul gelem. zeler vazagal.`
-<!-- gloss: z-radio | g-big | z-←big | v-scream -->
 
 ::: details Show answer
+
+z-radio | g-big | z-←big | v-scream
 *A radio is big. The big one screams.*
 :::
 
 **5.** `zuhubun garedel. zazawan vareder.`
-<!-- gloss: z-Uhubun | g-red | z-Azawan | v-←red -->
 
 ::: details Show answer
+
+z-Uhubun | g-red | z-Azawan | v-←red
 *Uhubun is red. Azawan does that.*
 :::
 

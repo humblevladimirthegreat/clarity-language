@@ -218,113 +218,121 @@ Short drills for Intermediate. Try each item before opening **Show answer**. One
 
 ::: details Show answer
 `zazawan d_555,123,4567 vejel.`
-<!-- gloss: z-Azawan | d-_555,123,4567 | v-see -->
+z-Azawan | d-_555,123,4567 | v-see
 :::
 
 **2.** *At 15:30 Azawan sees Uhubun.*
 
 ::: details Show answer
 `h_15,30 zazawan duhubun vejel.`
-<!-- gloss: h-_15,30 | z-Azawan | d-Uhubun | v-see -->
+h-_15,30 | z-Azawan | d-Uhubun | v-see
 :::
 
 **3.** *25% of the pills.*
 
 ::: details Show answer
 `zabululx g+25%.`
-<!-- gloss: z-pill-x | g-25jo -->
+z-pill-x | g-25jo
 :::
 
 **4.** *Azawan sees two rocks.*
 
 ::: details Show answer
 `zazawan daragal g+2 vejel.`
-<!-- gloss: z-Azawan | d-rock | g-two | v-see -->
+z-Azawan | d-rock | g-two | v-see
 :::
 
 **5.** *From 3 to 5 on time.*
 
 ::: details Show answer
 `z+3 z+5 zel gumel.`
-<!-- gloss: z-three | z-five | z-rank/more | g-time -->
+z-three | z-five | z-rank/more | g-time
 :::
 
 **6.** *Ululon sees 911.*
 
 ::: details Show answer
 `zululon d_911 vejel.`
-<!-- gloss: z-Ululon | d-_911 | v-see -->
+z-Ululon | d-_911 | v-see
 :::
 
 **7.** *Ululon punches five rocks.*
 
 ::: details Show answer
 `zululon daragal g+5 vubunul.`
-<!-- gloss: z-Ululon | d-rock | g-five | v-punch -->
+z-Ululon | d-rock | g-five | v-punch
 :::
 
 **8.** *From 15 to 16 on time.*
 
 ::: details Show answer
 `z+15 z+16 zel gumel.`
-<!-- gloss: z-15 | z-16 | z-rank/more | g-time -->
+z-15 | z-16 | z-rank/more | g-time
 :::
 
 #### Agalan → English
 
 **1.** `zabobol g_7.`
-<!-- gloss: z-baby-bottle | g-_7 -->
 
 ::: details Show answer
+
+z-baby-bottle | g-_7
 *Bottle 7.*
 :::
 
 **2.** `h_09,00 zuhubun vejel.`
-<!-- gloss: h-_09,00 | z-Uhubun | v-see -->
 
 ::: details Show answer
+
+h-_09,00 | z-Uhubun | v-see
 *At 09:00 Uhubun sees.*
 :::
 
 **3.** `zabobolx g+50%.`
-<!-- gloss: z-baby-bottle-x | g-50jo -->
 
 ::: details Show answer
+
+z-baby-bottle-x | g-50jo
 *50% of the bottles.*
 :::
 
 **4.** `zazawan dozobol g+1 vejel.`
-<!-- gloss: z-Azawan | d-spoon | g-one | v-see -->
 
 ::: details Show answer
+
+z-Azawan | d-spoon | g-one | v-see
 *Azawan sees one spoon.*
 :::
 
 **5.** `z+1 z+3 zal gumel.`
-<!-- gloss: z-one | z-three | z-and | g-time -->
 
 ::: details Show answer
+
+z-one | z-three | z-and | g-time
 *Between 1 and 3 on time.*
 :::
 
 **6.** `zululon d_000 vejel.`
-<!-- gloss: z-Ululon | d-_000 | v-see -->
 
 ::: details Show answer
+
+z-Ululon | d-_000 | v-see
 *Ululon sees 000.*
 :::
 
 **7.** `h~_23,59 zululon vazagal.`
-<!-- gloss: h-_23,59 | z-Ululon | v-scream -->
 
 ::: details Show answer
+
+h-_23,59 | z-Ululon | v-scream
 *Around 23:59 Ululon screams.*
 :::
 
 **8.** `z+10 z+20 zual gurulel.`
-<!-- gloss: z-ten | z-20 | z-everything-but | g-ruler -->
 
 ::: details Show answer
+
+z-ten | z-20 | z-everything-but | g-ruler
 *Outside 10–20 on measurement.*
 :::
 

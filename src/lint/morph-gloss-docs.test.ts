@@ -28,21 +28,24 @@ const PRACTICE = `### Translation practice
 
 ::: details Show answer
 \`zazawan vajul.\`
-<!-- gloss: z-Azawan | v-sit -->
+
+z-Azawan | v-sit
+
 :::
 
 #### Agalan → English
 
 **1.** \`zazawan vajul.\`
-<!-- gloss: z-Azawan | v-sit -->
 
 ::: details Show answer
+z-Azawan | v-sit
+
 *Azawan sits.*
 :::
 `;
 
 describe("extractTranslationExercises", () => {
-  it("pairs spoiler and prompt Agalan with gloss comments", () => {
+  it("pairs spoiler and prompt Agalan with visible morph glosses", () => {
     const items = extractTranslationExercises(PRACTICE);
     assert.equal(items.length, 2);
     assert.equal(items[0]!.agalan, "zazawan vajul.");
@@ -50,7 +53,7 @@ describe("extractTranslationExercises", () => {
     assert.equal(items[1]!.agalan, "zazawan vajul.");
   });
 
-  it("records missing morph when a numbered item has no gloss comment", () => {
+  it("records missing morph when a numbered item has no morph gloss", () => {
     const md = `### Translation practice
 
 **1.** *Azawan sits.*
@@ -68,14 +71,16 @@ describe("extractTranslationExercises", () => {
 describe("lintMorphGlossMarkdown", () => {
   const tables = tablesOf();
 
-  it("requires a gloss on every exercise once the file uses gloss comments", () => {
+  it("requires a morph gloss on every exercise in translation practice", () => {
     const md = `### Translation practice
 
 **1.** *Azawan sits.*
 
 ::: details Show answer
 \`zazawan vajul.\`
-<!-- gloss: z-Azawan | v-sit -->
+
+z-Azawan | v-sit
+
 :::
 
 **2.** *Azawan sits.*
@@ -88,14 +93,10 @@ describe("lintMorphGlossMarkdown", () => {
     assert.equal(findings.some((f) => f.kind === "missing-gloss"), true);
   });
 
-  it("does not require exercise glosses when the file has none", () => {
-    const md = `### Translation practice
-
-**1.** *Azawan sits.*
-
-::: details Show answer
-\`zazawan vajul.\`
-:::
+  it("does not require exercise glosses outside translation practice", () => {
+    const md = `> \`zazawan vajul.\`
+>
+> z-Azawan | v-sit
 `;
     const { findings } = lintMorphGlossMarkdown(md, tables);
     assert.equal(findings.some((f) => f.kind === "missing-gloss"), false);

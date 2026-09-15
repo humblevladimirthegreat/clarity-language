@@ -63,113 +63,121 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zahamexewenen.`
-<!-- gloss: z-Ahame-x-Ewenen -->
+z-Ahame-x-Ewenen
 :::
 
 **2.** *a hammer and a wrench*
 
 ::: details Show answer
 `zahamel zewenel zam.`
-<!-- gloss: z-hammer | z-wrench | z-and.open -->
+z-hammer | z-wrench | z-and.open
 :::
 
 **3.** *a doorbell* (lexical kind)
 
 ::: details Show answer
 `zobeleladorol.`
-<!-- gloss: z-doorbell -->
+z-doorbell
 :::
 
 **4.** *a friend* (lexical kind)
 
 ::: details Show answer
 `zeberelonogol.`
-<!-- gloss: z-friend -->
+z-friend
 :::
 
 **5.** *Azawan and Ululon* (two people)
 
 ::: details Show answer
 `zazawan zululon.`
-<!-- gloss: z-Azawan | z-Ululon -->
+z-Azawan | z-Ululon
 :::
 
 **6.** *Ululon sees Hammer-Wrench.*
 
 ::: details Show answer
 `zululon dahamexewenen vejel.`
-<!-- gloss: z-Ululon | d-Ahame-x-Ewenen | v-see -->
+z-Ululon | d-Ahame-x-Ewenen | v-see
 :::
 
 **7.** *Azawan sees a bedroom.*
 
 ::: details Show answer
 `zazawan dohohulabedel vejel.`
-<!-- gloss: z-Azawan | d-bedroom | v-see -->
+z-Azawan | d-bedroom | v-see
 :::
 
 **8.** *Ululon punches a friend.*
 
 ::: details Show answer
 `zululon zeberelonogol vubunul.`
-<!-- gloss: z-Ululon | z-friend | v-punch -->
+z-Ululon | z-friend | v-punch
 :::
 
 #### Agalan → English
 
 **1.** `zeberelonogol.`
-<!-- gloss: z-friend -->
 
 ::: details Show answer
+
+z-friend
 *a friend* (lexical kind)
 :::
 
 **2.** `zuhubun dobeleladorol vejel.`
-<!-- gloss: z-Uhubun | d-doorbell | v-see -->
 
 ::: details Show answer
+
+z-Uhubun | d-doorbell | v-see
 *Uhubun sees a doorbell.*
 :::
 
 **3.** `zahamel zazel zam.`
-<!-- gloss: z-hammer | z-axe | z-and.open -->
 
 ::: details Show answer
+
+z-hammer | z-axe | z-and.open
 *a hammer and an axe*
 :::
 
 **4.** `zazawaxululon.`
-<!-- gloss: z-Azawan-x-Ululon -->
 
 ::: details Show answer
+
+z-Azawan-x-Ululon
 *Azawan-Ululon* (one person)
 :::
 
 **5.** `zuhubun dohohulabedel vejel.`
-<!-- gloss: z-Uhubun | d-bedroom | v-see -->
 
 ::: details Show answer
+
+z-Uhubun | d-bedroom | v-see
 *Uhubun sees a bedroom.*
 :::
 
 **6.** `zeberelonogol dahamel vejel.`
-<!-- gloss: z-friend | d-hammer | v-see -->
 
 ::: details Show answer
+
+z-friend | d-hammer | v-see
 *A friend sees a hammer.*
 :::
 
 **7.** `zululon dazel vejel.`
-<!-- gloss: z-Ululon | d-axe | v-see -->
 
 ::: details Show answer
+
+z-Ululon | d-axe | v-see
 *Ululon sees an axe.*
 :::
 
 **8.** `zazawan zahamexewenen vubunul.`
-<!-- gloss: z-Azawan | z-Ahame-x-Ewenen | v-punch -->
 
 ::: details Show answer
+
+z-Azawan | z-Ahame-x-Ewenen | v-punch
 *Azawan punches Hammer-Wrench.*
 :::
 
@@ -311,113 +319,121 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `azawaxan.`
-<!-- gloss: Azawan-presence -->
+Azawan-presence
 :::
 
 **2.** *Ululon — one moment please.* (calling)
 
 ::: details Show answer
 `jululoxen.`
-<!-- gloss: j-Ululon-queue -->
+j-Ululon-queue
 :::
 
 **3.** *Azawan — one ask.*
 
 ::: details Show answer
 `azawaxon.`
-<!-- gloss: Azawan-ask -->
+Azawan-ask
 :::
 
 **4.** *Azawan — I’m here. Ululon — one ask.*
 
 ::: details Show answer
 `azawaxan jululoxon.`
-<!-- gloss: Azawan-presence | j-Ululon-ask -->
+Azawan-presence | j-Ululon-ask
 :::
 
 **5.** *Uhubun — just passing.* (calling)
 
 ::: details Show answer
 `juhubuxun.`
-<!-- gloss: j-Uhubun-passing -->
+j-Uhubun-passing
 :::
 
 **6.** *Uhubun — one ask.* (citation)
 
 ::: details Show answer
 `uhubuxon.`
-<!-- gloss: Uhubun-ask -->
+Uhubun-ask
 :::
 
 **7.** *Azawan — one moment please.* (calling); *Ululon screams.*
 
 ::: details Show answer
 `jazawaxen zululon vazagal.`
-<!-- gloss: j-Azawan-queue | z-Ululon | v-scream -->
+j-Azawan-queue | z-Ululon | v-scream
 :::
 
 **8.** *Ululon — just passing.* (calling); *Ululon punches Azawan.*
 
 ::: details Show answer
 `jululoxun zululon zazawan vubunul.`
-<!-- gloss: j-Ululon-passing | z-Ululon | z-Azawan | v-punch -->
+j-Ululon-passing | z-Ululon | z-Azawan | v-punch
 :::
 
 #### Agalan → English
 
 **1.** `uhubuxan.`
-<!-- gloss: Uhubun-presence -->
 
 ::: details Show answer
+
+Uhubun-presence
 *Uhubun — I’m here / we can stay.*
 :::
 
 **2.** `jululoxun.`
-<!-- gloss: j-Ululon-passing -->
 
 ::: details Show answer
+
+j-Ululon-passing
 *Ululon — just passing.* (calling)
 :::
 
 **3.** `azawaxun.`
-<!-- gloss: Azawan-passing -->
 
 ::: details Show answer
+
+Azawan-passing
 *Azawan — just passing.*
 :::
 
 **4.** `juhubuxen.`
-<!-- gloss: j-Uhubun-queue -->
 
 ::: details Show answer
+
+j-Uhubun-queue
 *Uhubun — one moment please.* (calling)
 :::
 
 **5.** `jululoxon.`
-<!-- gloss: j-Ululon-ask -->
 
 ::: details Show answer
+
+j-Ululon-ask
 *Ululon — one ask.* (calling)
 :::
 
 **6.** `azawaxan juhubuxon.`
-<!-- gloss: Azawan-presence | j-Uhubun-ask -->
 
 ::: details Show answer
+
+Azawan-presence | j-Uhubun-ask
 *Azawan — I’m here. Uhubun — one ask.* (calling)
 :::
 
 **7.** `jawavel.`
-<!-- gloss: j-greeting -->
 
 ::: details Show answer
+
+j-greeting
 *Wave!* (not a greeting bid on a name)
 :::
 
 **8.** `jazawaxen zuhubun dobeleladorol vejel.`
-<!-- gloss: j-Azawan-queue | z-Uhubun | d-doorbell | v-see -->
 
 ::: details Show answer
+
+j-Azawan-queue | z-Uhubun | d-doorbell | v-see
 *Azawan — one moment please.* (calling); *Uhubun sees a doorbell.*
 :::
 
@@ -480,85 +496,91 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zohohulurel.`
-<!-- gloss: z-firehouse -->
+z-firehouse
 :::
 
 **2.** *a friend* (lexical kind)
 
 ::: details Show answer
 `zeberelonogol.`
-<!-- gloss: z-friend -->
+z-friend
 :::
 
 **3.** *Ululon sits in a firehouse.*
 
 ::: details Show answer
 `zululon zohohulurel vajul.`
-<!-- gloss: z-Ululon | z-firehouse | v-sit -->
+z-Ululon | z-firehouse | v-sit
 :::
 
 **4.** *Azawan sees a raincoat.*
 
 ::: details Show answer
 `zazawan dojalanunul vejel.`
-<!-- gloss: z-Azawan | d-raincoat | v-see -->
+z-Azawan | d-raincoat | v-see
 :::
 
 **5.** *Azawan and Ululon* (two people, not one stem)
 
 ::: details Show answer
 `zazawan zululon.`
-<!-- gloss: z-Azawan | z-Ululon -->
+z-Azawan | z-Ululon
 :::
 
 **6.** *Ululon punches a friend.*
 
 ::: details Show answer
 `zululon zeberelonogol vubunul.`
-<!-- gloss: z-Ululon | z-friend | v-punch -->
+z-Ululon | z-friend | v-punch
 :::
 
 #### Agalan → English
 
 **1.** `zohohulurel.`
-<!-- gloss: z-firehouse -->
 
 ::: details Show answer
+
+z-firehouse
 *a firehouse* (lexical kind)
 :::
 
 **2.** `zuhubun zabogoluwurul vejel.`
-<!-- gloss: z-Uhubun | z-notebook | v-see -->
 
 ::: details Show answer
+
+z-Uhubun | z-notebook | v-see
 *Uhubun sees a notebook.*
 :::
 
 **3.** `zazawan zobeleladorol vejel.`
-<!-- gloss: z-Azawan | z-doorbell | v-see -->
 
 ::: details Show answer
+
+z-Azawan | z-doorbell | v-see
 *Azawan sees a doorbell.*
 :::
 
 **4.** `zeberelonogol zohohulurel vajul.`
-<!-- gloss: z-friend | z-firehouse | v-sit -->
 
 ::: details Show answer
+
+z-friend | z-firehouse | v-sit
 *A friend sits in a firehouse.*
 :::
 
 **5.** `zululon durel vejel.`
-<!-- gloss: z-Ululon | d-fire | v-see -->
 
 ::: details Show answer
+
+z-Ululon | d-fire | v-see
 *Ululon sees a fire.*
 :::
 
 **6.** `zuhubun vazagal. zeberelonogol vubunul.`
-<!-- gloss: z-Uhubun | v-scream | z-friend | v-punch -->
 
 ::: details Show answer
+
+z-Uhubun | v-scream | z-friend | v-punch
 *Uhubun screams. A friend punches.*
 :::
 

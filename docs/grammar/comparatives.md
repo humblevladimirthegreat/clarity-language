@@ -113,99 +113,107 @@ Short drills for Beginner. Try each item before opening **Show answer**. Rank **
 
 ::: details Show answer
 `zazawan zululon zel guvuvem.`
-<!-- gloss: z-Azawan | z-Ululon | z-rank/more | g-agility -->
+
+z-Azawan | z-Ululon | z-rank/more | g-agility
 :::
 
 **2.** *Uhubun is as slow as Azawan.*
 
 ::: details Show answer
 `zuhubun zazawan zael ganalam.`
-<!-- gloss: z-Uhubun | z-Azawan | z-as…as | g-slow -->
+z-Uhubun | z-Azawan | z-as…as | g-slow
 :::
 
 **3.** *Ululon is the hastiest.*
 
 ::: details Show answer
 `zululon zel gadazam.`
-<!-- gloss: z-Ululon | z-rank/more | g-haste -->
+z-Ululon | z-rank/more | g-haste
 :::
 
 **4.** *Azawan is about as agile as Uhubun.*
 
 ::: details Show answer
 `zazawan zuhubun zaem guvuvem.`
-<!-- gloss: z-Azawan | z-Uhubun | z-as…as.open | g-agility -->
+z-Azawan | z-Uhubun | z-as…as.open | g-agility
 :::
 
 **5.** *Ululon is much more intense than Azawan.*
 
 ::: details Show answer
 `zululon zazawan zel gohogem wogegal.`
-<!-- gloss: z-Ululon | z-Azawan | z-rank/more | g-intensity | w-ocean-wave -->
+z-Ululon | z-Azawan | z-rank/more | g-intensity | w-ocean-wave
 :::
 
 **6.** *Uhubun is more hasty than Ululon.*
 
 ::: details Show answer
 `zuhubun zululon zel gadazam.`
-<!-- gloss: z-Uhubun | z-Ululon | z-rank/more | g-haste -->
+z-Uhubun | z-Ululon | z-rank/more | g-haste
 :::
 
 **7.** *Ululon is the most intense.*
 
 ::: details Show answer
 `zululon zel gohogem.`
-<!-- gloss: z-Ululon | z-rank/more | g-intensity -->
+z-Ululon | z-rank/more | g-intensity
 :::
 
 #### Agalan → English
 
 **1.** `zululon zuhubun zel guvuvem.`
-<!-- gloss: z-Ululon | z-Uhubun | z-rank/more | g-agility -->
 
 ::: details Show answer
+
+z-Ululon | z-Uhubun | z-rank/more | g-agility
 *Ululon is more agile than Uhubun.*
 :::
 
 **2.** `zuhubun zel guvuvem.`
-<!-- gloss: z-Uhubun | z-rank/more | g-agility -->
 
 ::: details Show answer
+
+z-Uhubun | z-rank/more | g-agility
 *Uhubun is the most agile.*
 :::
 
 **3.** `zululon zuhubun zael gadazam.`
-<!-- gloss: z-Ululon | z-Uhubun | z-as…as | g-haste -->
 
 ::: details Show answer
+
+z-Ululon | z-Uhubun | z-as…as | g-haste
 *Ululon is as hasty as Uhubun.*
 :::
 
 **4.** `zuhubun zazawan zaem gohogem.`
-<!-- gloss: z-Uhubun | z-Azawan | z-as…as.open | g-intensity -->
 
 ::: details Show answer
+
+z-Uhubun | z-Azawan | z-as…as.open | g-intensity
 *Uhubun is about as intense as Azawan.*
 :::
 
 **5.** `zuhubun zululon zel guvuvem wogegal.`
-<!-- gloss: z-Uhubun | z-Ululon | z-rank/more | g-agility | w-ocean-wave -->
 
 ::: details Show answer
+
+z-Uhubun | z-Ululon | z-rank/more | g-agility | w-ocean-wave
 *Uhubun is much more agile than Ululon.*
 :::
 
 **6.** `zazawan zululon zel gadazam.`
-<!-- gloss: z-Azawan | z-Ululon | z-rank/more | g-haste -->
 
 ::: details Show answer
+
+z-Azawan | z-Ululon | z-rank/more | g-haste
 *Azawan is hastier than Ululon.*
 :::
 
 **7.** `zazawan zel ganalam.`
-<!-- gloss: z-Azawan | z-rank/more | g-slow -->
 
 ::: details Show answer
+
+z-Azawan | z-rank/more | g-slow
 *Azawan is the slowest.*
 :::
 
@@ -330,127 +338,136 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 
 ::: details Show answer
 `zazawan zululon zuel garagam.`
-<!-- gloss: z-Azawan | z-Ululon | z-rank/less | g-heavy -->
+z-Azawan | z-Ululon | z-rank/less | g-heavy
 :::
 
 **2.** *Ululon is the least exerted.*
 
 ::: details Show answer
 `zululon zuel gewewum.`
-<!-- gloss: z-Ululon | z-rank/less | g-exertion -->
+z-Ululon | z-rank/less | g-exertion
 :::
 
 **3.** *There is no heaviest.*
 
 ::: details Show answer
 `zoel garagam.`
-<!-- gloss: z-ranked-or | g-heavy -->
+z-ranked-or | g-heavy
 :::
 
 **4.** *Azawan and Uhubun are heavy.*
 
 ::: details Show answer
 `zazawan zuhubun zal garagam.`
-<!-- gloss: z-Azawan | z-Uhubun | z-and | g-heavy -->
+z-Azawan | z-Uhubun | z-and | g-heavy
 :::
 
 **5.** *Ululon is two grams heavier than Azawan.*
 
 ::: details Show answer
 `zululon zazawan zel garagam bobonom g+2.`
-<!-- gloss: z-Ululon | z-Azawan | z-rank/more | g-heavy | b-gram | g-two -->
+z-Ululon | z-Azawan | z-rank/more | g-heavy | b-gram | g-two
 :::
 
 **6.** *Azawan is heavier than Ululon* (exclusive ladder).
 
 ::: details Show answer
 `zazawan zululon zoel garagam.`
-<!-- gloss: z-Azawan | z-Ululon | z-ranked-or | g-heavy -->
+z-Azawan | z-Ululon | z-ranked-or | g-heavy
 :::
 
 **7.** *Unspecified who is biggest.*
 
 ::: details Show answer
 `zel gelem.`
-<!-- gloss: z-rank/more | g-big -->
+z-rank/more | g-big
 :::
 
 **8.** *Whichever of Azawan or Ululon ranks heavier.*
 
 ::: details Show answer
 `zazawan zululon zer garagam.`
-<!-- gloss: z-Azawan | z-Ululon | z-whatever-ranks | g-heavy -->
+z-Azawan | z-Ululon | z-whatever-ranks | g-heavy
 :::
 
 **9.** *Ululon lifts more intensely than Azawan.*
 
 ::: details Show answer
 `zululon zazawan zel hohogem vewewul.`
-<!-- gloss: z-Ululon | z-Azawan | z-rank/more | h-intensity | v-lift -->
+z-Ululon | z-Azawan | z-rank/more | h-intensity | v-lift
 :::
 
 #### Agalan → English
 
 **1.** `zazawan zululon zuhubun zem garagam.`
-<!-- gloss: z-Azawan | z-Ululon | z-Uhubun | z-rank/more.open | g-heavy -->
 
 ::: details Show answer
+
+z-Azawan | z-Ululon | z-Uhubun | z-rank/more.open | g-heavy
 *Azawan is heavier than Ululon, who is heavier than Uhubun.*
 :::
 
 **2.** `zoem gelem.`
-<!-- gloss: z-ranked-or.open | g-big -->
 
 ::: details Show answer
+
+z-ranked-or.open | g-big
 *No biggest comes to mind.*
 :::
 
 **3.** `zazawan zululon zer gewewum.`
-<!-- gloss: z-Azawan | z-Ululon | z-whatever-ranks | g-exertion -->
 
 ::: details Show answer
+
+z-Azawan | z-Ululon | z-whatever-ranks | g-exertion
 *Whichever of Azawan or Ululon ranks more exerted.*
 :::
 
 **4.** `zululon zuhubun zal gewewum.`
-<!-- gloss: z-Ululon | z-Uhubun | z-and | g-exertion -->
 
 ::: details Show answer
+
+z-Ululon | z-Uhubun | z-and | g-exertion
 *Ululon and Uhubun are exerted.*
 :::
 
 **5.** `zazawan zululon zel garagam bobonom g+5.`
-<!-- gloss: z-Azawan | z-Ululon | z-rank/more | g-heavy | b-gram | g-five -->
 
 ::: details Show answer
+
+z-Azawan | z-Ululon | z-rank/more | g-heavy | b-gram | g-five
 *Azawan is five grams heavier than Ululon.*
 :::
 
 **6.** `zuhubun zazawan zel gewewum wogegal.`
-<!-- gloss: z-Uhubun | z-Azawan | z-rank/more | g-exertion | w-ocean-wave -->
 
 ::: details Show answer
+
+z-Uhubun | z-Azawan | z-rank/more | g-exertion | w-ocean-wave
 *Uhubun is much more exerted than Azawan.*
 :::
 
 **7.** `zer garagam.`
-<!-- gloss: z-whatever-ranks | g-heavy -->
 
 ::: details Show answer
+
+z-whatever-ranks | g-heavy
 *Whatever ranks heaviest.*
 :::
 
 **8.** `zuhubun zuel gelem.`
-<!-- gloss: z-Uhubun | z-rank/less | g-big -->
 
 ::: details Show answer
+
+z-Uhubun | z-rank/less | g-big
 *Uhubun is the smallest.*
 :::
 
 **9.** `zululon zel hohogem vewewul.`
-<!-- gloss: z-Ululon | z-rank/more | h-intensity | v-lift -->
 
 ::: details Show answer
+
+z-Ululon | z-rank/more | h-intensity | v-lift
 *Ululon lifts the most intensely.*
 :::
 
@@ -530,85 +547,91 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 
 ::: details Show answer
 `zazawan zalaban zuel guzunul.`
-<!-- gloss: z-Azawan | z-Professional | z-rank/less | g-sing -->
+z-Azawan | z-Professional | z-rank/less | g-sing
 :::
 
 **2.** *Azawan is less skilled at singing than I am.*
 
 ::: details Show answer
 `zazawan zugobon zuel guzunul.`
-<!-- gloss: z-Azawan | z-speaker | z-rank/less | g-sing -->
+z-Azawan | z-speaker | z-rank/less | g-sing
 :::
 
 **3.** *Ululon is less artistic than Typical.*
 
 ::: details Show answer
 `zululon zahaman zuel gabadum.`
-<!-- gloss: z-Ululon | z-Typical | z-rank/less | g-artistry -->
+z-Ululon | z-Typical | z-rank/less | g-artistry
 :::
 
 **4.** *I am less showy than Mine.*
 
 ::: details Show answer
 `zugobon zuroron zuel gohohom.`
-<!-- gloss: z-speaker | z-Mine | z-rank/less | g-showmanship -->
+z-speaker | z-Mine | z-rank/less | g-showmanship
 :::
 
 **5.** *Ululon is somewhat worse at singing than Average.*
 
 ::: details Show answer
 `zululon zojun zuem guzunul.`
-<!-- gloss: z-Ululon | z-Average | z-rank/less.open | g-sing -->
+z-Ululon | z-Average | z-rank/less.open | g-sing
 :::
 
 **6.** *I am less artistic than Everyone.*
 
 ::: details Show answer
 `zugobon zoloben zuel gabadum.`
-<!-- gloss: z-speaker | z-Everyone | z-rank/less | g-artistry -->
+z-speaker | z-Everyone | z-rank/less | g-artistry
 :::
 
 #### Agalan → English
 
 **1.** `zugobon zuluden zuel guzunul.`
-<!-- gloss: z-speaker | z-Social | z-rank/less | g-sing -->
 
 ::: details Show answer
+
+z-speaker | z-Social | z-rank/less | g-sing
 *I am worse at singing than Social.*
 :::
 
 **2.** `zugobon zululon zuel gohohom.`
-<!-- gloss: z-speaker | z-Ululon | z-rank/less | g-showmanship -->
 
 ::: details Show answer
+
+z-speaker | z-Ululon | z-rank/less | g-showmanship
 *I am less showy than Ululon.*
 :::
 
 **3.** `zazawan zuroron zuem gabadum.`
-<!-- gloss: z-Azawan | z-Mine | z-rank/less.open | g-artistry -->
 
 ::: details Show answer
+
+z-Azawan | z-Mine | z-rank/less.open | g-artistry
 *Azawan is somewhat less artistic than Mine.*
 :::
 
 **4.** `zuhubun zalaban zuel guzunul.`
-<!-- gloss: z-Uhubun | z-Professional | z-rank/less | g-sing -->
 
 ::: details Show answer
+
+z-Uhubun | z-Professional | z-rank/less | g-sing
 *Uhubun is worse at singing than Professional.*
 :::
 
 **5.** `zazawan zojun zuem gohohom.`
-<!-- gloss: z-Azawan | z-Average | z-rank/less.open | g-showmanship -->
 
 ::: details Show answer
+
+z-Azawan | z-Average | z-rank/less.open | g-showmanship
 *Azawan is somewhat less showy than Average.*
 :::
 
 **6.** `zululon zahaman zuel gohohom.`
-<!-- gloss: z-Ululon | z-Typical | z-rank/less | g-showmanship -->
 
 ::: details Show answer
+
+z-Ululon | z-Typical | z-rank/less | g-showmanship
 *Ululon is less showy than Typical.*
 :::
 

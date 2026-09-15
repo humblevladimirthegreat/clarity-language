@@ -145,113 +145,121 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawanx vajul.`
-<!-- gloss: z-Azawan-x | v-sit -->
+z-Azawan-x | v-sit
 :::
 
 **2.** *Some ants sit.*
 
 ::: details Show answer
 `zanadalx vajul.`
-<!-- gloss: z-ant-x | v-sit -->
+z-ant-x | v-sit
 :::
 
 **3.** *Azawan and associates see a basket.*
 
 ::: details Show answer
 `zazawanx dazegel vejel.`
-<!-- gloss: z-Azawan-x | d-basket | v-see -->
+z-Azawan-x | d-basket | v-see
 :::
 
 **4.** *You (Ululon) and your associates see Uhubun.*
 
 ::: details Show answer
 `zululonx duhubun vejel.`
-<!-- gloss: z-Ululon-x | d-Uhubun | v-see -->
+z-Ululon-x | d-Uhubun | v-see
 :::
 
 **5.** *They (Azawan and associates) pour wine.* (Azawan already mentioned)
 
 ::: details Show answer
 `zazawarx duwunel vorurul.`
-<!-- gloss: z-←Azawan-x | d-wine | v-pour -->
+z-←Azawan-x | d-wine | v-pour
 :::
 
 **6.** *Ululon and associates sneak.*
 
 ::: details Show answer
 `zululonx vazanal.`
-<!-- gloss: z-Ululon-x | v-sneak -->
+z-Ululon-x | v-sneak
 :::
 
 **7.** *Ululon and associates punch Azawan.*
 
 ::: details Show answer
 `zululonx dazawan vubunul.`
-<!-- gloss: z-Ululon-x | d-Azawan | v-punch -->
+z-Ululon-x | d-Azawan | v-punch
 :::
 
 **8.** *Do Azawan and associates scream?*
 
 ::: details Show answer
 `jol zazawanx vazagal.`
-<!-- gloss: j-question | z-Azawan-x | v-scream -->
+j-question | z-Azawan-x | v-scream
 :::
 
 #### Agalan → English
 
 **1.** `zuhubunx vajul.`
-<!-- gloss: z-Uhubun-x | v-sit -->
 
 ::: details Show answer
+
+z-Uhubun-x | v-sit
 *Uhubun and associates sit.*
 :::
 
 **2.** `zazawanx dazadul vejel.`
-<!-- gloss: z-Azawan-x | d-sandwich | v-see -->
 
 ::: details Show answer
+
+z-Azawan-x | d-sandwich | v-see
 *Azawan and associates see a sandwich.*
 :::
 
 **3.** `zanadalx vurunul.`
-<!-- gloss: z-ant-x | v-run -->
 
 ::: details Show answer
+
+z-ant-x | v-run
 *Some ants run.*
 :::
 
 **4.** `zahan dazegel vejel.`
-<!-- gloss: z-interlocutors | d-basket | v-see -->
 
 ::: details Show answer
+
+z-interlocutors | d-basket | v-see
 *We (you and I) see a basket.*
 :::
 
 **5.** `zululonx dazawan vezehel.`
-<!-- gloss: z-Ululon-x | d-Azawan | v-tell -->
 
 ::: details Show answer
+
+z-Ululon-x | d-Azawan | v-tell
 *Ululon tells Azawan and associates.*
 :::
 
 **6.** `zazawarx duguvel vejel.`
-<!-- gloss: z-←Azawan-x | d-knife | v-see -->
 
 ::: details Show answer
+
+z-←Azawan-x | d-knife | v-see
 *They (Azawan and associates) see a knife.*
 :::
 
 **7.** `zululonx duhubun vubunul.`
-<!-- gloss: z-Ululon-x | d-Uhubun | v-punch -->
 
 ::: details Show answer
+
+z-Ululon-x | d-Uhubun | v-punch
 *Ululon and associates punch Uhubun.*
 :::
 
 **8.** `jol zuhubunx vazagal.`
-<!-- gloss: j-question | z-Uhubun-x | v-scream -->
 
 ::: details Show answer
+
+j-question | z-Uhubun-x | v-scream
 *Do Uhubun and associates scream?*
 :::
 
@@ -411,113 +419,121 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `juzunulx.`
-<!-- gloss: j-sing-x -->
+j-sing-x
 :::
 
 **2.** *The sheet-musics are blue.* (members, or don’t care)
 
 ::: details Show answer
 `zeduzulx gelulul.`
-<!-- gloss: z-sheet-music-x | g-blue -->
+z-sheet-music-x | g-blue
 :::
 
 **3.** *Azawan and associates sing.* (together or each, or don’t care)
 
 ::: details Show answer
 `zazawanx vuzunul.`
-<!-- gloss: z-Azawan-x | v-sing -->
+z-Azawan-x | v-sing
 :::
 
 **4.** *Azawan sings jointly (not a solo).*
 
 ::: details Show answer
 `zazawan vuzunulx.`
-<!-- gloss: z-Azawan | v-sing-x -->
+z-Azawan | v-sing-x
 :::
 
 **5.** *Azawan and Ululon sing as one outing.* (listed members)
 
 ::: details Show answer
 `zazawan zululon zal vuzunulx.`
-<!-- gloss: z-Azawan | z-Ululon | z-and | v-sing-x -->
+z-Azawan | z-Ululon | z-and | v-sing-x
 :::
 
 **6.** *The bells are heavy as a pile.*
 
 ::: details Show answer
 `zobelelx garagamx.`
-<!-- gloss: z-bell-x | g-heavy-x -->
+z-bell-x | g-heavy-x
 :::
 
 **7.** *Ululon and associates sneak as one outing.*
 
 ::: details Show answer
 `zululonx vazanalx.`
-<!-- gloss: z-Ululon-x | v-sneak-x -->
+z-Ululon-x | v-sneak-x
 :::
 
 **8.** *Ululon and associates punch Azawan as one shared act.*
 
 ::: details Show answer
 `zululonx dazawan vubunulx.`
-<!-- gloss: z-Ululon-x | d-Azawan | v-punch-x -->
+z-Ululon-x | d-Azawan | v-punch-x
 :::
 
 #### Agalan → English
 
 **1.** `juhubunx.`
-<!-- gloss: j-Uhubun-x -->
 
 ::: details Show answer
+
+j-Uhubun-x
 *Hey, Uhubun and associates!*
 :::
 
 **2.** `zeduzulx garagam.`
-<!-- gloss: z-sheet-music-x | g-heavy -->
 
 ::: details Show answer
+
+z-sheet-music-x | g-heavy
 *The sheet-musics are heavy.* (members / plain)
 :::
 
 **3.** `zuhubunx vuzunul.`
-<!-- gloss: z-Uhubun-x | v-sing -->
 
 ::: details Show answer
+
+z-Uhubun-x | v-sing
 *Uhubun and associates sing.* (together or each, or don’t care)
 :::
 
 **4.** `zululon vuzunulx.`
-<!-- gloss: z-Ululon | v-sing-x -->
 
 ::: details Show answer
+
+z-Ululon | v-sing-x
 *Ululon sings jointly (not a solo).*
 :::
 
 **5.** `zazawanx vuzunulx.`
-<!-- gloss: z-Azawan-x | v-sing-x -->
 
 ::: details Show answer
+
+z-Azawan-x | v-sing-x
 *Azawan and associates sing as one outing.*
 :::
 
 **6.** `zobelelx gelulul.`
-<!-- gloss: z-bell-x | g-blue -->
 
 ::: details Show answer
+
+z-bell-x | g-blue
 *The bells are blue.*
 :::
 
 **7.** `jazawanx.`
-<!-- gloss: j-Azawan-x -->
 
 ::: details Show answer
+
+j-Azawan-x
 *Hey, Azawan and associates!*
 :::
 
 **8.** `zululonx vuvugulx.`
-<!-- gloss: z-Ululon-x | v-fight-x -->
 
 ::: details Show answer
+
+z-Ululon-x | v-fight-x
 *Ululon and associates fight as one outing.*
 :::
 

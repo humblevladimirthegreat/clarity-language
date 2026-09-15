@@ -102,113 +102,121 @@ Short drills for Beginner. Try each item before opening **Show answer**. Choose 
 
 ::: details Show answer
 `ahalal`
-<!-- gloss: school -->
+school
 :::
 
 **2.** *chair* (citation)
 
 ::: details Show answer
 `ajul`
-<!-- gloss: chair -->
+chair
 :::
 
 **3.** *pencil* (citation)
 
 ::: details Show answer
 `ebegul`
-<!-- gloss: pencil -->
+pencil
 :::
 
 **4.** *draft* (citation)
 
 ::: details Show answer
 `ebegum`
-<!-- gloss: draft -->
+draft
 :::
 
 **5.** *knowledge* (citation)
 
 ::: details Show answer
 `abogom`
-<!-- gloss: knowledge -->
+knowledge
 :::
 
 **6.** *scrutiny* (citation)
 
 ::: details Show answer
 `aguvom`
-<!-- gloss: scrutiny -->
+scrutiny
 :::
 
 **7.** *beauty*, as a name (citation)
 
 ::: details Show answer
 `uhubun`
-<!-- gloss: Uhubun -->
+Uhubun
 :::
 
 **8.** *Hello — the speaker is Ululon.*
 
 ::: details Show answer
 `ululon.`
-<!-- gloss: Ululon -->
+Ululon
 :::
 
 #### Agalan → English
 
 **1.** `abogol`
-<!-- gloss: book -->
 
 ::: details Show answer
+
+book
 *book*
 :::
 
 **2.** `obelel`
-<!-- gloss: bell -->
 
 ::: details Show answer
+
+bell
 *bell*
 :::
 
 **3.** `ojegol`
-<!-- gloss: projector -->
 
 ::: details Show answer
+
+projector
 *projector*
 :::
 
 **4.** `obelem`
-<!-- gloss: alert -->
 
 ::: details Show answer
+
+alert
 *alert*
 :::
 
 **5.** `araram`
-<!-- gloss: analysis -->
 
 ::: details Show answer
+
+analysis
 *analysis*
 :::
 
 **6.** `azawam`
-<!-- gloss: grace -->
 
 ::: details Show answer
+
+grace
 *grace*
 :::
 
 **7.** `ululon`
-<!-- gloss: Ululon -->
 
 ::: details Show answer
+
+Ululon
 *courage* (as a name)
 :::
 
 **8.** `azawan.`
-<!-- gloss: Azawan -->
 
 ::: details Show answer
+
+Azawan
 *Azawan.* (hello — the speaker is Azawan)
 :::
 
@@ -348,99 +356,106 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 
 ::: details Show answer
 `zazawan vajul hohozon.`
-<!-- gloss: z-Azawan | v-sit | h-Ohozon -->
+z-Azawan | v-sit | h-Ohozon
 :::
 
 **2.** *The bed is Diagnosis* (the named style).
 
 ::: details Show answer
 `zabedel gedozen.`
-<!-- gloss: z-bed | g-Edozen -->
+z-bed | g-Edozen
 :::
 
 **3.** *Uhubun sleeps the Sleep* (that titled rest).
 
 ::: details Show answer
 `zuhubun veleben.`
-<!-- gloss: z-Uhubun | v-Eleben -->
+z-Uhubun | v-Eleben
 :::
 
 **4.** *Azawan sees Hospital-Bed.* (the ward’s phrasal name)
 
 ::: details Show answer
 `zazawan vejel dohozoxabeden.`
-<!-- gloss: z-Azawan | v-see | d-Ohozo-x-Abeden -->
+z-Azawan | v-see | d-Ohozo-x-Abeden
 :::
 
 **5.** *Edozen sees Uhubun.* (office handle, first mention)
 
 ::: details Show answer
 `zedozen vejel duhubun.`
-<!-- gloss: z-Edozen | v-see | d-Uhubun -->
+z-Edozen | v-see | d-Uhubun
 :::
 
 **6.** *Ululon injects the Injection* (that titled action).
 
 ::: details Show answer
 `zululon vozorun.`
-<!-- gloss: z-Ululon | v-Ozorun -->
+z-Ululon | v-Ozorun
 :::
 
 **7.** *Ululon runs the Emergency* (that titled event).
 
 ::: details Show answer
 `zululon vamubun.`
-<!-- gloss: z-Ululon | v-Amubun -->
+z-Ululon | v-Amubun
 :::
 
 #### Agalan → English
 
 **1.** `zuhubun vajul hohozon.`
-<!-- gloss: z-Uhubun | v-sit | h-Ohozon -->
 
 ::: details Show answer
+
+z-Uhubun | v-sit | h-Ohozon
 *Uhubun sits according to Hospital* (the named frame).
 :::
 
 **2.** `zazawan vuwurul hedehen.`
-<!-- gloss: z-Azawan | v-write | h-Edehen -->
 
 ::: details Show answer
+
+z-Azawan | v-write | h-Edehen
 *Azawan writes on Temperature* (the named standard).
 :::
 
 **3.** `zabedel gararon.`
-<!-- gloss: z-bed | g-Araron -->
 
 ::: details Show answer
+
+z-bed | g-Araron
 *The bed is X-ray* (the named style).
 :::
 
 **4.** `zohozoxabeden vuwurul.`
-<!-- gloss: z-Ohozo-x-Abeden | v-write -->
 
 ::: details Show answer
+
+z-Ohozo-x-Abeden | v-write
 *Hospital-Bed writes.*
 :::
 
 **5.** `zuhubun vozorun.`
-<!-- gloss: z-Uhubun | v-Ozorun -->
 
 ::: details Show answer
+
+z-Uhubun | v-Ozorun
 *Uhubun injects the Injection* (that titled action).
 :::
 
 **6.** `zedozexohozon vejel dazawan.`
-<!-- gloss: z-Edoze-x-Ohozon | v-see | d-Azawan -->
 
 ::: details Show answer
+
+z-Edoze-x-Ohozon | v-see | d-Azawan
 *Diagnosis-Hospital sees Azawan.* (that office’s full title)
 :::
 
 **7.** `zululon vurunul hamubun.`
-<!-- gloss: z-Ululon | v-run | h-Amubun -->
 
 ::: details Show answer
+
+z-Ululon | v-run | h-Amubun
 *Ululon runs in Emergency* (the named frame).
 :::
 

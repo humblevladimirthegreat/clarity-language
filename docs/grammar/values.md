@@ -180,113 +180,121 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `huhuhel.`
-<!-- gloss: h-survival -->
+h-survival
 :::
 
 **2.** *The tent serves survival (physical contact).*
 
 ::: details Show answer
 `zedenel wuhuhexal.`
-<!-- gloss: z-tent | w-survival-met-physical -->
+z-tent | w-survival-met-physical
 :::
 
 **3.** *The backpack serves competence (mental contact).*
 
 ::: details Show answer
 `zababal wolozoxam.`
-<!-- gloss: z-backpack | w-competence-met-mental -->
+z-backpack | w-competence-met-mental
 :::
 
 **4.** *The wind costs relatedness right now (temporary).*
 
 ::: details Show answer
 `zuwudul wonogoxur.`
-<!-- gloss: z-wind | w-relatedness-unmet-temporary -->
+z-wind | w-relatedness-unmet-temporary
 :::
 
 **5.** *Azawan tells: relatedness ought to be served (endorse).*
 
 ::: details Show answer
 `zazawan vezehel honogoxom.`
-<!-- gloss: z-Azawan | v-tell | h-relatedness-ought-endorse -->
+z-Azawan | v-tell | h-relatedness-ought-endorse
 :::
 
 **6.** *Uhubun sleeps: pleasure ought to be served (endorse).*
 
 ::: details Show answer
 `zuhubun velebel haweroxom.`
-<!-- gloss: z-Uhubun | v-sleep | h-pleasure-ought-endorse -->
+z-Uhubun | v-sleep | h-pleasure-ought-endorse
 :::
 
 **7.** *Ululon screams: survival ought to be protected (bound).*
 
 ::: details Show answer
 `zululon vazagal huhuhexol.`
-<!-- gloss: z-Ululon | v-scream | h-survival-ought-bound -->
+z-Ululon | v-scream | h-survival-ought-bound
 :::
 
 **8.** *The fire costs survival (irreversible).*
 
 ::: details Show answer
 `zurel wuhuhexul.`
-<!-- gloss: z-fire | w-survival-unmet-irreversible -->
+z-fire | w-survival-unmet-irreversible
 :::
 
 #### Agalan → English
 
 **1.** `hegel.`
-<!-- gloss: h-need -->
 
 ::: details Show answer
+
+h-need
 *Unspecified need (as a topic).*
 :::
 
 **2.** `zavazul wolozoxal.`
-<!-- gloss: z-flashlight | w-competence-met-physical -->
 
 ::: details Show answer
+
+z-flashlight | w-competence-met-physical
 *The flashlight serves competence (physical contact).*
 :::
 
 **3.** `zanunul walodoxum.`
-<!-- gloss: z-rain | w-autonomy-unmet-modifiable -->
 
 ::: details Show answer
+
+z-rain | w-autonomy-unmet-modifiable
 *The rain costs autonomy (modifiable).*
 :::
 
 **4.** `zedenel wuhuhexar.`
-<!-- gloss: z-tent | w-survival-met-spiritual -->
 
 ::: details Show answer
+
+z-tent | w-survival-met-spiritual
 *The tent serves survival (spiritual contact).*
 :::
 
 **5.** `zululon vezehel honogoxor.`
-<!-- gloss: z-Ululon | v-tell | h-relatedness-ought-invite -->
 
 ::: details Show answer
+
+z-Ululon | v-tell | h-relatedness-ought-invite
 *Ululon tells: relatedness ought to be served (invite).*
 :::
 
 **6.** `zababal wolozoxul.`
-<!-- gloss: z-backpack | w-competence-unmet-irreversible -->
 
 ::: details Show answer
+
+z-backpack | w-competence-unmet-irreversible
 *The backpack costs competence (irreversible).*
 :::
 
 **7.** `zuhubun vazagal huhuhexor.`
-<!-- gloss: z-Uhubun | v-scream | h-survival-ought-invite -->
 
 ::: details Show answer
+
+z-Uhubun | v-scream | h-survival-ought-invite
 *Uhubun screams: survival ought to be protected (invite).*
 :::
 
 **8.** `zurel walodoxul.`
-<!-- gloss: z-fire | w-autonomy-unmet-irreversible -->
 
 ::: details Show answer
+
+z-fire | w-autonomy-unmet-irreversible
 *The fire costs autonomy (irreversible).*
 :::
 
@@ -383,113 +391,121 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan vabal honogoxem.`
-<!-- gloss: z-Azawan | v-pray | h-relatedness-motive-internal -->
+z-Azawan | v-pray | h-relatedness-motive-internal
 :::
 
 **2.** *Ululon kneels for relatedness (the situation pulls it).*
 
 ::: details Show answer
 `zululon vegenel honogoxel.`
-<!-- gloss: z-Ululon | v-kneel | h-relatedness-motive-circumstantial -->
+z-Ululon | v-kneel | h-relatedness-motive-circumstantial
 :::
 
 **3.** *Uhubun whispers for relatedness (internal motive, as usual).*
 
 ::: details Show answer
 `zuhubun vuzuhul honogoxem hual.`
-<!-- gloss: z-Uhubun | v-shush | h-relatedness-motive-internal | h-always-except -->
+z-Uhubun | v-shush | h-relatedness-motive-internal | h-always-except
 :::
 
 **4.** *Azawan bows for relatedness (protective motive).*
 
 ::: details Show answer
 `zazawan vobowol honogoxer.`
-<!-- gloss: z-Azawan | v-bow | h-relatedness-motive-protective -->
+z-Azawan | v-bow | h-relatedness-motive-protective
 :::
 
 **5.** *Ululon prays for competence (internal reason).*
 
 ::: details Show answer
 `zululon vabal holozoxem.`
-<!-- gloss: z-Ululon | v-pray | h-competence-motive-internal -->
+z-Ululon | v-pray | h-competence-motive-internal
 :::
 
 **6.** *Azawan’s church serves relatedness (physical contact).*
 
 ::: details Show answer
 `zuhurul guhurum bazawan wonogoxal.`
-<!-- gloss: z-church | g-faith | b-Azawan | w-relatedness-met-physical -->
+z-church | g-faith | b-Azawan | w-relatedness-met-physical
 :::
 
 **7.** *Azawan prays: competence is met (physical) and relatedness is the internal motive.*
 
 ::: details Show answer
 `zazawan vabal holozoxal honogoxem.`
-<!-- gloss: z-Azawan | v-pray | h-competence-met-physical | h-relatedness-motive-internal -->
+z-Azawan | v-pray | h-competence-met-physical | h-relatedness-motive-internal
 :::
 
 **8.** *Ululon screams: survival ought (bound) and survival as circumstantial motive.*
 
 ::: details Show answer
 `zululon vazagal huhuhexol huhuhexel.`
-<!-- gloss: z-Ululon | v-scream | h-survival-ought-bound | h-survival-motive-circumstantial -->
+z-Ululon | v-scream | h-survival-ought-bound | h-survival-motive-circumstantial
 :::
 
 #### Agalan → English
 
 **1.** `zululon vabal holozoxel.`
-<!-- gloss: z-Ululon | v-pray | h-competence-motive-circumstantial -->
 
 ::: details Show answer
+
+z-Ululon | v-pray | h-competence-motive-circumstantial
 *Ululon prays for competence (circumstantial motive).*
 :::
 
 **2.** `zuhubun vegenel honogoxem.`
-<!-- gloss: z-Uhubun | v-kneel | h-relatedness-motive-internal -->
 
 ::: details Show answer
+
+z-Uhubun | v-kneel | h-relatedness-motive-internal
 *Uhubun kneels for relatedness (internal reason).*
 :::
 
 **3.** `zazawan vuzuhul honogoxer.`
-<!-- gloss: z-Azawan | v-shush | h-relatedness-motive-protective -->
 
 ::: details Show answer
+
+z-Azawan | v-shush | h-relatedness-motive-protective
 *Azawan whispers for relatedness (protective motive).*
 :::
 
 **4.** `zabarel waweroxar.`
-<!-- gloss: z-prayer-bead | w-pleasure-met-spiritual -->
 
 ::: details Show answer
+
+z-prayer-bead | w-pleasure-met-spiritual
 *The prayer bead serves pleasure (spiritual contact).*
 :::
 
 **5.** `zanedel walodoxum.`
-<!-- gloss: z-candle | w-autonomy-unmet-modifiable -->
 
 ::: details Show answer
+
+z-candle | w-autonomy-unmet-modifiable
 *The candle costs autonomy (modifiable).*
 :::
 
 **6.** `zobelel wonogoxum.`
-<!-- gloss: z-bell | w-relatedness-unmet-modifiable -->
 
 ::: details Show answer
+
+z-bell | w-relatedness-unmet-modifiable
 *The bell costs relatedness (modifiable).*
 :::
 
 **7.** `zuhubun vobowol honogoxom.`
-<!-- gloss: z-Uhubun | v-bow | h-relatedness-ought-endorse -->
 
 ::: details Show answer
+
+z-Uhubun | v-bow | h-relatedness-ought-endorse
 *Uhubun bows: relatedness ought to be served (endorse).*
 :::
 
 **8.** `zululon vazagal huhuhexem hual.`
-<!-- gloss: z-Ululon | v-scream | h-survival-motive-internal | h-always-except -->
 
 ::: details Show answer
+
+z-Ululon | v-scream | h-survival-motive-internal | h-always-except
 *Ululon screams for survival (internal motive, as usual).*
 :::
 

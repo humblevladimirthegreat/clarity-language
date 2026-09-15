@@ -100,7 +100,7 @@ Follow the [template](translation-exercises.md#template). Lead: *Short drills fo
 | Intermediate, productive | **6–8** |
 | Advanced, or a thin generate row | **4–6** |
 
-Both directions. Spoilers = Agalan sentence or **loose** free English only — no visible morph-gloss lecture. Put `<!-- gloss: … -->` after each item’s Agalan. Omit recoverable **`jal`**. House names in English prompts (*Azawan waits*). Test the decision this stage taught; package it in the setting, not as a clone of the walk/sleep teach line ([principles](translation-exercises.md#principles)).
+Both directions. Spoilers = Agalan or **loose** free English plus a visible morph line in the spoiler ([translation-exercises.md](translation-exercises.md#template)). Omit recoverable **`jal`**. House names in English prompts (*Azawan waits*). Test the decision this stage taught; package it in the setting, not as a clone of the walk/sleep teach line ([principles](translation-exercises.md#principles)).
 
 ### 6. Self-check, then lint
 
@@ -383,7 +383,7 @@ For each spoiler token family:
 3. Same-slot sibling novelty not in **Sibling OK** → **fail**.
 4. English *I* / *you* as dummy people → **fail** (unless this stage teaches **`ugobo`/`edone`**).
 5. Most items test **this** stage’s decision, not a prior quiz → else rewrite.
-6. Morph-gloss wall inside the spoiler → **fail**.
+6. Missing morph in a translation item, or morph that only repeats loose English when it should have been omitted → **fail**.
 7. Unassigned cells from [unassigned-reserved.md](unassigned-reserved.md) → **fail**.
 8. No **Setting** line, the phrase matches any **other** named cell in [settings](#settings) (including synonym / article variants), the inventory cell was not updated, or the numbered list does not climb in tension → **fail** (when replacing or generating; do not fail a pre-policy checkpoint until replace).
 

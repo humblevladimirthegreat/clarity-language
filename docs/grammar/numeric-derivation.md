@@ -297,71 +297,76 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan dologoxrabul vahamel.`
-<!-- gloss: z-Azawan | d-gold-x-grain | v-hammer -->
+z-Azawan | d-gold-x-grain | v-hammer
 :::
 
 **2.** *Uhubun sees a primary factory.*
 
 ::: details Show answer
 `zuhubun davagaxrawol vejel.`
-<!-- gloss: z-Uhubun | d-factory-x-one | v-see -->
+z-Uhubun | d-factory-x-one | v-see
 :::
 
 **3.** *Azawan pours a quasi-gold.*
 
 ::: details Show answer
 `zazawan dologoxrubul vorurul.`
-<!-- gloss: z-Azawan | d-gold-x-quasi | v-pour -->
+z-Azawan | d-gold-x-quasi | v-pour
 :::
 
 **4.** *Ululon hammers a first-order fire.*
 
 ::: details Show answer
 `zululon durexrewol vahamel.`
-<!-- gloss: z-Ululon | d-fire-x-first | v-hammer -->
+z-Ululon | d-fire-x-first | v-hammer
 :::
 
 **5.** *Ululon annihilates the gold-kind.*
 
 ::: details Show answer
 `zululon vologoxrazobal.`
-<!-- gloss: z-Ululon | v-gold-x-infinity -->
+z-Ululon | v-gold-x-infinity
 :::
 
 #### Agalan → English
 
 **1.** `zuhubun dologoxrabal vejel.`
-<!-- gloss: z-Uhubun | d-gold-x-infinity | v-see -->
 
 ::: details Show answer
+
+z-Uhubun | d-gold-x-infinity | v-see
 *Uhubun sees the essence of gold.*
 :::
 
 **2.** `zazawan durexrebul vejel.`
-<!-- gloss: z-Azawan | d-fire-x-origin | v-see -->
 
 ::: details Show answer
+
+z-Azawan | d-fire-x-origin | v-see
 *Azawan sees fire in its beginning form.*
 :::
 
 **3.** `zululon dahamexrudul vejel.`
-<!-- gloss: z-Ululon | d-hammer-x-minus-two | v-see -->
 
 ::: details Show answer
+
+z-Ululon | d-hammer-x-minus-two | v-see
 *Ululon sees a one-sided hammer.*
 :::
 
 **4.** `zululon vemelexruzol.`
-<!-- gloss: z-Ululon | v-melt-x-minus-zero -->
 
 ::: details Show answer
+
+z-Ululon | v-melt-x-minus-zero
 *Ululon refuses to zero the melt.*
 :::
 
 **5.** `zululon vurexrezobal.`
-<!-- gloss: z-Ululon | v-fire-x-last-place -->
 
 ::: details Show answer
+
+z-Ululon | v-fire-x-last-place
 *Ululon disqualifies the fire-kind.*
 :::
 

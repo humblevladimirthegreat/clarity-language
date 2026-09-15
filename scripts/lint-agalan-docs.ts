@@ -2,11 +2,11 @@
  * Check Agalan words in docs/grammar/ code spans: they must parse, and
  * content / x-family host roots must be in the lexicon.
  *
- * Morph-gloss pairs (example blockquotes, Morph-column tables, and
- * `<!-- gloss: … -->` on translation exercises) are compared to the parser.
+ * Morph-gloss pairs (example blockquotes, Morph-column tables, and visible
+ * morph lines in translation-exercise spoilers) are compared to the parser.
  * Translation **Roots used here** English is checked against the lexicon.
- * Mismatches, leftover ambiguity, and missing exercise glosses (once a file
- * uses `<!-- gloss:`) fail the run. Findings print to stdout. Each file logs
+ * Mismatches, leftover ambiguity, and missing exercise glosses in translation
+ * practice fail the run. Findings print to stdout. Each file logs
  * how many morph-gloss pairs were checked.
  *
  * Run: npm run lint:agalan

@@ -100,113 +100,121 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan gugugal.`
-<!-- gloss: z-Azawan | g-guard -->
+z-Azawan | g-guard
 :::
 
 **2.** *The page is blue.*
 
 ::: details Show answer
 `zajel gelulul.`
-<!-- gloss: z-page | g-blue -->
+z-page | g-blue
 :::
 
 **3.** *Uhubun is Japanese.*
 
 ::: details Show answer
 `zuhubun gajanam.`
-<!-- gloss: z-Uhubun | g-japanese -->
+z-Uhubun | g-japanese
 :::
 
 **4.** *Ululon is challenging.*
 
 ::: details Show answer
 `zululon gomonam.`
-<!-- gloss: z-Ululon | g-challenge -->
+z-Ululon | g-challenge
 :::
 
 **5.** *Ululon is a police officer.*
 
 ::: details Show answer
 `zululon gobolul.`
-<!-- gloss: z-Ululon | g-police -->
+z-Ululon | g-police
 :::
 
 **6.** *The fingerprint is Azawan.*
 
 ::: details Show answer
 `zuvunul gonunul bazawan.`
-<!-- gloss: z-fingerprint | g-SAME | b-Azawan -->
+z-fingerprint | g-SAME | b-Azawan
 :::
 
 **7.** *The camera is Uhubun.*
 
 ::: details Show answer
 `zameral gonunul buhubun.`
-<!-- gloss: z-camera | g-SAME | b-Uhubun -->
+z-camera | g-SAME | b-Uhubun
 :::
 
 **8.** *Ululon is Azawan.*
 
 ::: details Show answer
 `zululon gonunul bazawan.`
-<!-- gloss: z-Ululon | g-SAME | b-Azawan -->
+z-Ululon | g-SAME | b-Azawan
 :::
 
 #### Agalan → English
 
 **1.** `zobolul vawalal.`
-<!-- gloss: z-police | v-walk -->
 
 ::: details Show answer
+
+z-police | v-walk
 *A police officer walks.*
 :::
 
 **2.** `zazawan gobolul.`
-<!-- gloss: z-Azawan | g-police -->
 
 ::: details Show answer
+
+z-Azawan | g-police
 *Azawan is a police officer.*
 :::
 
 **3.** `zajel garedel.`
-<!-- gloss: z-page | g-red -->
 
 ::: details Show answer
+
+z-page | g-red
 *The page is red.*
 :::
 
 **4.** `zuvunul gonunul bululon.`
-<!-- gloss: z-fingerprint | g-SAME | b-Ululon -->
 
 ::: details Show answer
+
+z-fingerprint | g-SAME | b-Ululon
 *The fingerprint is Ululon.*
 :::
 
 **5.** `zazawan gonunul bobolul.`
-<!-- gloss: z-Azawan | g-SAME | b-police -->
 
 ::: details Show answer
+
+z-Azawan | g-SAME | b-police
 *Azawan is (the same as) a police officer.*
 :::
 
 **6.** `zugugal vurunul.`
-<!-- gloss: z-guard | v-run -->
 
 ::: details Show answer
+
+z-guard | v-run
 *A guard runs.*
 :::
 
 **7.** `jol zululon gonunul buhubun.`
-<!-- gloss: j-question | z-Ululon | g-SAME | b-Uhubun -->
 
 ::: details Show answer
+
+j-question | z-Ululon | g-SAME | b-Uhubun
 *Is Ululon Uhubun?*
 :::
 
 **8.** `zuhubun gonunul bazawan.`
-<!-- gloss: z-Uhubun | g-SAME | b-Azawan -->
 
 ::: details Show answer
+
+z-Uhubun | g-SAME | b-Azawan
 *Uhubun is Azawan.*
 :::
 
@@ -283,113 +291,121 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan gugugal gul.`
-<!-- gloss: z-Azawan | g-guard | g-not -->
+z-Azawan | g-guard | g-not
 :::
 
 **2.** *Ululon is the craft type.*
 
 ::: details Show answer
 `zululon gagaral hual.`
-<!-- gloss: z-Ululon | g-craft | h-always -->
+z-Ululon | g-craft | h-always
 :::
 
 **3.** *The framed-picture is Azawan.*
 
 ::: details Show answer
 `zamerel gonunul bazawan.`
-<!-- gloss: z-framed-picture | g-SAME | b-Azawan -->
+z-framed-picture | g-SAME | b-Azawan
 :::
 
 **4.** *Ululon is basically Azawan.*
 
 ::: details Show answer
 `zululon gonunum bazawan.`
-<!-- gloss: z-Ululon | g-same | b-Azawan -->
+z-Ululon | g-same | b-Azawan
 :::
 
 **5.** *The person who is Uhubun sees a palette.*
 
 ::: details Show answer
 `zeberel gonunul buhubun daledel vejel.`
-<!-- gloss: z-person | g-SAME | b-Uhubun | d-palette | v-see -->
+z-person | g-SAME | b-Uhubun | d-palette | v-see
 :::
 
 **6.** *Azawan is Ululon (titled identity).*
 
 ::: details Show answer
 `zazawan gonunun bululon.`
-<!-- gloss: z-Azawan | g-Onunun | b-Ululon -->
+z-Azawan | g-Onunun | b-Ululon
 :::
 
 **7.** *Ululon is the same (as already ascribed) as Azawan.*
 
 ::: details Show answer
 `zululon gonunur bazawan.`
-<!-- gloss: z-Ululon | g-coin | b-Azawan -->
+z-Ululon | g-coin | b-Azawan
 :::
 
 **8.** *The framed-picture is not (identical to) Uhubun.*
 
 ::: details Show answer
 `zamerel gonunul buhubun gul.`
-<!-- gloss: z-framed-picture | g-SAME | b-Uhubun | g-not -->
+z-framed-picture | g-SAME | b-Uhubun | g-not
 :::
 
 #### Agalan → English
 
 **1.** `zuhubun gugugal gul.`
-<!-- gloss: z-Uhubun | g-guard | g-not -->
 
 ::: details Show answer
+
+z-Uhubun | g-guard | g-not
 *Uhubun is not a guard.*
 :::
 
 **2.** `zazawan gagaral hual.`
-<!-- gloss: z-Azawan | g-craft | h-always -->
 
 ::: details Show answer
+
+z-Azawan | g-craft | h-always
 *Azawan is the craft type.*
 :::
 
 **3.** `zamerel gonunum bazawan.`
-<!-- gloss: z-framed-picture | g-same | b-Azawan -->
 
 ::: details Show answer
+
+z-framed-picture | g-same | b-Azawan
 *The framed-picture is basically Azawan.*
 :::
 
 **4.** `zeberel gonunul bazawan daledel vejel.`
-<!-- gloss: z-person | g-SAME | b-Azawan | d-palette | v-see -->
 
 ::: details Show answer
+
+z-person | g-SAME | b-Azawan | d-palette | v-see
 *The person who is Azawan sees a palette.*
 :::
 
 **5.** `zululon gonunun buhubun.`
-<!-- gloss: z-Ululon | g-Onunun | b-Uhubun -->
 
 ::: details Show answer
+
+z-Ululon | g-Onunun | b-Uhubun
 *Ululon is Uhubun (titled identity).*
 :::
 
 **6.** `zazawan gonunur buhubun.`
-<!-- gloss: z-Azawan | g-coin | b-Uhubun -->
 
 ::: details Show answer
+
+z-Azawan | g-coin | b-Uhubun
 *Azawan is the same (as already ascribed) as Uhubun.*
 :::
 
 **7.** `zamerel garedel gonunul bululon gul.`
-<!-- gloss: z-framed-picture | g-red | g-SAME | b-Ululon | g-not -->
 
 ::: details Show answer
+
+z-framed-picture | g-red | g-SAME | b-Ululon | g-not
 *The red framed-picture is not (identical to) Ululon.*
 :::
 
 **8.** `zululon gagaral gul.`
-<!-- gloss: z-Ululon | g-craft | g-not -->
 
 ::: details Show answer
+
+z-Ululon | g-craft | g-not
 *Ululon is not a craftsperson.*
 :::
 

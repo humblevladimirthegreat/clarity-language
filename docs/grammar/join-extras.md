@@ -103,113 +103,121 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan dalalom van.`
-<!-- gloss: z-Azawan | d-start | v-includes -->
+z-Azawan | d-start | v-includes
 :::
 
 **2.** *Finish including Uhubun.*
 
 ::: details Show answer
 `zegedam gan buhubun.`
-<!-- gloss: z-finish | g-including | b-Uhubun -->
+z-finish | g-including | b-Uhubun
 :::
 
 **3.** *Azawan chooses the hand (as the one choice).*
 
 ::: details Show answer
 `zazawan dahanal von.`
-<!-- gloss: z-Azawan | d-hand | v-choose -->
+z-Azawan | d-hand | v-choose
 :::
 
 **4.** *Ululon runs with Uhubun.*
 
 ::: details Show answer
 `zululon han buhubun vurunul.`
-<!-- gloss: z-Ululon | h-including | b-Uhubun | v-run -->
+z-Ululon | h-including | b-Uhubun | v-run
 :::
 
 **5.** *Azawan excludes the medal.*
 
 ::: details Show answer
 `zazawan demedal vuan.`
-<!-- gloss: z-Azawan | d-medal | v-excludes -->
+z-Azawan | d-medal | v-excludes
 :::
 
 **6.** *A team exclusive for Uhubun.*
 
 ::: details Show answer
 `zahadam gon buhubun.`
-<!-- gloss: z-teamwork | g-exclusive-for | b-Uhubun -->
+z-teamwork | g-exclusive-for | b-Uhubun
 :::
 
 **7.** *Ululon bars the finish (anything else is fine).*
 
 ::: details Show answer
 `zululon degedam vuon.`
-<!-- gloss: z-Ululon | d-finish | v-bars -->
+z-Ululon | d-finish | v-bars
 :::
 
 **8.** *Ululon punches, refusing the hand.*
 
 ::: details Show answer
 `zululon hun bahanal vubunul.`
-<!-- gloss: z-Ululon | h-against | b-hand | v-punch -->
+z-Ululon | h-against | b-hand | v-punch
 :::
 
 #### Agalan → English
 
 **1.** `zuhubun dalalom van.`
-<!-- gloss: z-Uhubun | d-start | v-includes -->
 
 ::: details Show answer
+
+z-Uhubun | d-start | v-includes
 *Uhubun includes the start.*
 :::
 
 **2.** `zegedam guan bemedal.`
-<!-- gloss: z-finish | g-without | b-medal -->
 
 ::: details Show answer
+
+z-finish | g-without | b-medal
 *Finish without the medal.*
 :::
 
 **3.** `zululon dodobol von.`
-<!-- gloss: z-Ululon | d-trophy | v-choose -->
 
 ::: details Show answer
+
+z-Ululon | d-trophy | v-choose
 *Ululon chooses the trophy (as the one choice).*
 :::
 
 **4.** `zazawan han bululon vurunul.`
-<!-- gloss: z-Azawan | h-including | b-Ululon | v-run -->
 
 ::: details Show answer
+
+z-Azawan | h-including | b-Ululon | v-run
 *Azawan runs with Ululon.*
 :::
 
 **5.** `zahadam gan bazawan.`
-<!-- gloss: z-teamwork | g-including | b-Azawan -->
 
 ::: details Show answer
+
+z-teamwork | g-including | b-Azawan
 *A team including Azawan.*
 :::
 
 **6.** `zazawan hun bululel vurunul.`
-<!-- gloss: z-Azawan | h-against | b-lie | v-run -->
 
 ::: details Show answer
+
+z-Azawan | h-against | b-lie | v-run
 *Azawan runs, refusing a lie.*
 :::
 
 **7.** `zahadam gaon bazawan.`
-<!-- gloss: z-teamwork | g-open-to | b-Azawan -->
 
 ::: details Show answer
+
+z-teamwork | g-open-to | b-Azawan
 *A team open to Azawan (more members may follow).*
 :::
 
 **8.** `zululon huon buhubun vazagal.`
-<!-- gloss: z-Ululon | h-anything-but | b-Uhubun | v-scream -->
 
 ::: details Show answer
+
+z-Ululon | h-anything-but | b-Uhubun | v-scream
 *Ululon screams, barring Uhubun.*
 :::
 

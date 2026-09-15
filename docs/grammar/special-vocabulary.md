@@ -117,99 +117,106 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zuzebul g#2.`
-<!-- gloss: z-problem | g-second -->
+z-problem | g-second
 :::
 
 **2.** *Azawan names goal 1.*
 
 ::: details Show answer
 `zazawan zolalal g#1 vezehel.`
-<!-- gloss: z-Azawan | z-goal | g-first | v-tell -->
+z-Azawan | z-goal | g-first | v-tell
 :::
 
 **3.** *Proud of the lantern* (met competence, mental channel; flood bottled)
 
 ::: details Show answer
 `zalanel wolozoxam hogegam habobom.`
-<!-- gloss: z-lantern | w-competence-met-mental | h-HIGH | h-INTERNAL -->
+z-lantern | w-competence-met-mental | h-HIGH | h-INTERNAL
 :::
 
 **4.** *Solution 1.*
 
 ::: details Show answer
 `zagegol g#1.`
-<!-- gloss: z-solution | g-first -->
+z-solution | g-first
 :::
 
 **5.** *Anxious about the tent* (competence at stake, temporary; flood; room awash)
 
 ::: details Show answer
 `zedenel wolozoxur hogegam hanedem.`
-<!-- gloss: z-tent | w-competence-unmet-temporary | h-HIGH | h-CIRCUM -->
+z-tent | w-competence-unmet-temporary | h-HIGH | h-CIRCUM
 :::
 
 **6.** *Resentful about the party* (unmet relatedness; flood poured onto them)
 
 ::: details Show answer
 `zabaral wonogoxum hogegam horurum.`
-<!-- gloss: z-party | w-relatedness-unmet-modifiable | h-HIGH | h-EXTERNAL -->
+z-party | w-relatedness-unmet-modifiable | h-HIGH | h-EXTERNAL
 :::
 
 **7.** *Resentful about the hug* (unmet relatedness; stillness pooling at them)
 
 ::: details Show answer
 `zuhugul wonogoxum hozowom horurum.`
-<!-- gloss: z-hug | w-relatedness-unmet-modifiable | h-LOW | h-EXTERNAL -->
+z-hug | w-relatedness-unmet-modifiable | h-LOW | h-EXTERNAL
 :::
 
 #### Agalan → English
 
 **1.** `zagegol g#2.`
-<!-- gloss: z-solution | g-second -->
 
 ::: details Show answer
+
+z-solution | g-second
 *Solution 2.*
 :::
 
 **2.** `zuhubun zolalal g#1 vezehel.`
-<!-- gloss: z-Uhubun | z-goal | g-first | v-tell -->
 
 ::: details Show answer
+
+z-Uhubun | z-goal | g-first | v-tell
 *Uhubun names goal 1.*
 :::
 
 **3.** `zedenel wolozoxam hozowom habobom.`
-<!-- gloss: z-tent | w-competence-met-mental | h-LOW | h-INTERNAL -->
 
 ::: details Show answer
+
+z-tent | w-competence-met-mental | h-LOW | h-INTERNAL
 *Proud of the tent* (met competence; stillness held inside).
 :::
 
 **4.** `zalanel wolozoxur hogegam hanedem.`
-<!-- gloss: z-lantern | w-competence-unmet-temporary | h-HIGH | h-CIRCUM -->
 
 ::: details Show answer
+
+z-lantern | w-competence-unmet-temporary | h-HIGH | h-CIRCUM
 *Anxious about the lantern* (competence at stake, temporary; flood; room awash).
 :::
 
 **5.** `zolalal g~#1.`
-<!-- gloss: z-goal | g-first -->
 
 ::: details Show answer
+
+z-goal | g-first
 *Goal 1* (tentative rank).
 :::
 
 **6.** `zululon zagegol g#1 vezehel.`
-<!-- gloss: z-Ululon | z-solution | g-first | v-tell -->
 
 ::: details Show answer
+
+z-Ululon | z-solution | g-first | v-tell
 *Ululon names solution 1.*
 :::
 
 **7.** `zurewol wonogoxum hogegam horurum.`
-<!-- gloss: z-fireworks | w-relatedness-unmet-modifiable | h-HIGH | h-EXTERNAL -->
 
 ::: details Show answer
+
+z-fireworks | w-relatedness-unmet-modifiable | h-HIGH | h-EXTERNAL
 *Resentful about the fireworks* (unmet relatedness; flood poured onto them).
 :::
 
@@ -288,85 +295,91 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zululon hual vuwurul harogul.`
-<!-- gloss: z-Ululon | h-always | v-write | h-COMMON -->
+z-Ululon | h-always | v-write | h-COMMON
 :::
 
 **2.** *Azawan always sits, as far as checked.*
 
 ::: details Show answer
 `zazawan hual vajul habulul.`
-<!-- gloss: z-Azawan | h-always | v-sit | h-UNCOUNTERED -->
+z-Azawan | h-always | v-sit | h-UNCOUNTERED
 :::
 
 **3.** *Every book, by definition.*
 
 ::: details Show answer
 `zual gabogol harazal.`
-<!-- gloss: z-everything-but | g-book | h-FORMAL -->
+z-everything-but | g-book | h-FORMAL
 :::
 
 **4.** *Uhubun always thinks, by natural necessity* (plus a trail of cases).
 
 ::: details Show answer
 `zuhubun hual vuduhul habelel habawam.`
-<!-- gloss: z-Uhubun | h-always | v-think | h-NATURAL | h-PATTERN -->
+z-Uhubun | h-always | v-think | h-NATURAL | h-PATTERN
 :::
 
 **5.** *Ululon always punches, under school.*
 
 ::: details Show answer
 `zululon hual vubunul hebebel bahalan.`
-<!-- gloss: z-Ululon | h-always | v-punch | h-RULE | b-Ahalan -->
+z-Ululon | h-always | v-punch | h-RULE | b-Ahalan
 :::
 
 **6.** *Every claim that comes to mind, usually.*
 
 ::: details Show answer
 `zuam gedemam harogul.`
-<!-- gloss: z-everything-but.open | g-claim | h-COMMON -->
+z-everything-but.open | g-claim | h-COMMON
 :::
 
 #### Agalan → English
 
 **1.** `zazawan hual vajul harogul.`
-<!-- gloss: z-Azawan | h-always | v-sit | h-COMMON -->
 
 ::: details Show answer
+
+z-Azawan | h-always | v-sit | h-COMMON
 *Azawan always sits, usually.*
 :::
 
 **2.** `zululon hual vuwurul habulul.`
-<!-- gloss: z-Ululon | h-always | v-write | h-UNCOUNTERED -->
 
 ::: details Show answer
+
+z-Ululon | h-always | v-write | h-UNCOUNTERED
 *Ululon always writes, as far as checked.*
 :::
 
 **3.** `zual guburum harazal.`
-<!-- gloss: z-everything-but | g-intellect | h-FORMAL -->
 
 ::: details Show answer
+
+z-everything-but | g-intellect | h-FORMAL
 *Every intellect, by definition.*
 :::
 
 **4.** `zuhubun hual vuwurul habelel habawam.`
-<!-- gloss: z-Uhubun | h-always | v-write | h-NATURAL | h-PATTERN -->
 
 ::: details Show answer
+
+z-Uhubun | h-always | v-write | h-NATURAL | h-PATTERN
 *Uhubun always writes, by natural necessity* (plus a trail of cases).
 :::
 
 **5.** `zululon hual vazagal hebebel bahalan.`
-<!-- gloss: z-Ululon | h-always | v-scream | h-RULE | b-Ahalan -->
 
 ::: details Show answer
+
+z-Ululon | h-always | v-scream | h-RULE | b-Ahalan
 *Ululon always screams, under school.*
 :::
 
 **6.** `zuam geregem harogul.`
-<!-- gloss: z-everything-but.open | g-proof | h-COMMON -->
 
 ::: details Show answer
+
+z-everything-but.open | g-proof | h-COMMON
 *Every proof that comes to mind, usually.*
 :::
 
