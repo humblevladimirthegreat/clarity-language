@@ -89,7 +89,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *start* | `alalom` | `alalol` *play* |
 | *finish* | `egedam` | `egedal` *checkered-flag* |
 | *hand* | `ahanal` | |
-| *team* | `ahadam` | `ahadal` *handball* |
+| *teamwork* | `ahadam` | `ahadal` *handball* |
 | *trophy* | `odobol` | |
 | *medal* | `emedal` | |
 | *run* | `vurunul` | |

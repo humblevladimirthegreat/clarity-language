@@ -74,7 +74,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *tea* | `adedal` | |
 | *see* | `vejel` | `ejel` *eye* |
 | *tell* | `vezehel` | `ezehel` *speech* |
-| *think* (event) | `vodohol` | `odohol` *thought* |
+| *thought* (event) | `vodohol` | `odohol` *thought* |
 | *I think* (soft COMMENT) | `hodohom` | `odohol` *thought* |
 | *punch* | `vubunul` | |
 | *scream* | `vazagal` | |

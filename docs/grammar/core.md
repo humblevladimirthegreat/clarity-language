@@ -233,7 +233,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *angry* | `anagal` | | |
 | *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
 | *sit* | `vajul` | `ajul` *chair* | 🪑: taking a seat |
-| *stand* | `vazanul` | `azanul` *standing* | 🧍: staying in place |
+| *stand* | `vazanul` | `azanul` *stand* | 🧍: staying in place |
 | *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
 | *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
 | *write* | `vuwurul` | `uwurul` *write* | ✍️: putting words on the page |
@@ -241,10 +241,10 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *scream* | `vazagal` | | |
 | *punch* | `vubunul` | | |
 | *fight* | `vuvugul` | | |
-| *run* | `vurunul` | `urunul` *running* | 🏃: leaving at speed |
+| *run* | `vurunul` | `urunul` *run* | 🏃: leaving at speed |
 | *haste* | `hadazam` | `adazal` *dash* | 💨: a burst of speed |
 | *big* | `elem` | `elel` *elephant* | 🐘: the huge animal |
-| *inside* | `hogorem` | `ogorel` *hollow circle* | ⭕: being inside the boundary |
+| *inside* | `hogorem` | `ogorel` *correct* | ⭕: being inside the boundary |
 | *next clause* | `adorol` | `adorol` *door* | 🚪: the next sentence walks through |
 | *because* | `hurugum` | `urugul` *brick* | 🧱: the cause is what the result sits on |
 | *therefore* | `xezazal` | `ezazal` *east* | ➡️: the sun’s path, so the talk moves on |
@@ -510,7 +510,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *station* | `azadol` |
 | *ticket* | `ugedel` |
 | *luggage* | `ulugal` |
-| *depart* | `vebarul` |
+| *departure* | `vebarul` |
 | *blue* | `elulul` |
 | *red* | `aredel` |
 | *same* | `gonunul` |

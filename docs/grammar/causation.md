@@ -336,7 +336,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Mar
 | *pour* | `vorurul` | `orurul` *pour* |
 | *see* | `vejel` | `ejel` *eye* |
 | *tell* | `vezehel` | `ezehel` *speech* |
-| *run* | `vurunul` | `urunul` *running* |
+| *run* | `vurunul` | `urunul` *run* |
 | *competence (ought, invite)* | `holozoxor` | `olozol` *toolbox* |
 | *if* | `hadorom` | `adorol` *door* |
 | *iff* | `hezazem` | `ezazel` *east-west* |
@@ -356,7 +356,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Mar
 
 ::: details Show answer
 `zogegam huan bogozol.`
-<!-- gloss: z-flood | h-without | b-knobs -->
+<!-- gloss: z-flood | h-without | b-knob -->
 :::
 
 **3.** *It has to be Ululon.*
@@ -391,7 +391,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Mar
 
 ::: details Show answer
 `zogozol zaom holozoxor.`
-<!-- gloss: z-knobs | z-and/or.open | h-competence-ought-invite -->
+<!-- gloss: z-knob | z-and/or.open | h-competence-ought-invite -->
 :::
 
 **8.** *Flooding would work (as mechanism).*

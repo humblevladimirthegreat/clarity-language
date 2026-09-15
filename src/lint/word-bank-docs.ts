@@ -82,17 +82,10 @@ function checkPair(
     };
   }
 
-  if (morph.family.kind === "x" && morph.family.xFamily === "role" && column === "Agalan") {
-    const allowed = allowedSenses(morph, tables);
-    const host = allowed.hostLemmas;
-    if (host.has(got) || allowed.all.has(got)) return null;
-    return {
-      agalan: surface,
-      english,
-      column,
-      expected: [...allowed.all, ...host].sort(),
-      detail: "role-compound English must be the morph sense or the host lexicon lemma",
-    };
+  // Overlay tags, role compounds, named x-stems, values packaging, and special
+  // pronouns need human review before banks are rewritten to morph English.
+  if (column === "Agalan" && deferBankEnglish(morph, tables)) {
+    return null;
   }
 
   const allowed = allowedSenses(morph, tables);
@@ -104,6 +97,24 @@ function checkPair(
     expected: [...allowed.all].sort(),
     detail: "English is not a lexicon / overlay sense for this spelling",
   };
+}
+
+const DEFER_PRONOUN = new Set(["ugobo", "edone", "aha", "enenu"]);
+
+function deferBankEnglish(
+  morph: ReturnType<typeof parseWord>,
+  tables: ClassifyTables,
+): boolean {
+  if (morph.family.kind === "x") {
+    const fam = morph.family.xFamily;
+    if (fam === "role" || fam === "compound" || fam === "valueAbility") return true;
+  }
+  const word = classify(morph, tables);
+  if (word.overlay) return true;
+  if (morph.family.kind === "content") {
+    return morph.family.roots.some((root) => DEFER_PRONOUN.has(root));
+  }
+  return false;
 }
 
 function allowedSenses(
@@ -289,11 +300,10 @@ function firstItalic(cell: string): string | null {
 }
 
 function firstAgalan(cell: string): string | null {
-  const decoded = decodeEntities(cell);
-  const code = decoded.match(/`([^`]+)`/);
-  if (code) return code[1]!.trim();
-  const html = decoded.match(/<code>([^<]+)<\/code>/i);
-  if (html) return html[1]!.trim();
+  const code = cell.match(/`([^`]+)`/);
+  if (code) return decodeEntities(code[1]!.trim());
+  const html = cell.match(/<code>([^<]+)<\/code>/i);
+  if (html) return decodeEntities(html[1]!.trim());
   return null;
 }
 

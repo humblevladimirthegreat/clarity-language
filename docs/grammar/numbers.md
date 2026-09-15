@@ -836,7 +836,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Pre
 | *sit* | `vajul` | `ajul` *chair* |
 | *run* | `vurunul` | `urunul` *run* |
 | *punch* | `vubunul` | `ubunul` *punch* |
-| *big* | `elel` | |
+| *elephant* | `elel` | |
 
 #### English → Agalan
 

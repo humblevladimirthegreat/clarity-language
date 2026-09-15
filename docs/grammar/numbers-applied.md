@@ -201,8 +201,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**. One
 | *Uhubun* | `uhubun` | |
 | *pill* | `abulul` | |
 | *bottle* | `abobol` | |
-| *gram* | `aragal` | |
-| *liter* | `ozobol` | |
+| *rock* | `aragal` | |
+| *spoon* | `ozobol` | |
 | *measurement* | `urulel` | |
 | *time* | `umel` | |
 | *see* | `vejel` | `ejel` *eye* |
@@ -232,7 +232,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. One
 <!-- gloss: z-pill-x | g-25jo -->
 :::
 
-**4.** *Azawan sees two grams.*
+**4.** *Azawan sees two rocks.*
 
 ::: details Show answer
 `zazawan daragal g+2 vejel.`
@@ -253,7 +253,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. One
 <!-- gloss: z-Ululon | d-_911 | v-see -->
 :::
 
-**7.** *Ululon punches five grams.*
+**7.** *Ululon punches five rocks.*
 
 ::: details Show answer
 `zululon daragal g+5 vubunul.`
@@ -294,7 +294,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. One
 <!-- gloss: z-Azawan | d-spoon | g-one | v-see -->
 
 ::: details Show answer
-*Azawan sees one liter.*
+*Azawan sees one spoon.*
 :::
 
 **5.** `z+1 z+3 zal gumel.`

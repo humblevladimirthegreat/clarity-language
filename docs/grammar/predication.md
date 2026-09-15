@@ -89,7 +89,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *blue* | `elulul` |
 | *red* | `aredel` |
 | *Japanese* | `ajanam` |
-| *challenging* | `omonam` |
+| *challenge* | `omonam` |
 | **SAME** | `onunul` |
 | *walk* | `vawalal` |
 | *run* | `vurunul` |

@@ -21,7 +21,7 @@ When English would say *Azawan is more challenging than Ululon*, you put two peo
 
 > `zuhubun zazawan zel gelem.`
 >
-> z-Uhubun | z-Azawan | z-rank/more | g-size
+> z-Uhubun | z-Azawan | z-rank/more | g-big
 >
 > "Uhubun is bigger than Azawan."
 
@@ -102,10 +102,10 @@ Short drills for Beginner. Try each item before opening **Show answer**. Rank **
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
 | *slow* | `analam` | `analal` *snail* |
-| *hasty* | `adazam` | `adazal` *dash* |
-| *agile* | `uvuvem` | `uvuvel` *field hockey* |
-| *intense* | `ohogem` | `ohogel` *hockey* |
-| *much* | `wogegal` | `ogegal` *flood* |
+| *haste* | `adazam` | `adazal` *dash* |
+| *agility* | `uvuvem` | `uvuvel` *field hockey* |
+| *intensity* | `ohogem` | `ohogel` *hockey* |
+| *ocean-wave* | `wogegal` | `ogegal` *ocean-wave* |
 
 #### English → Agalan
 
@@ -120,7 +120,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Rank **
 
 ::: details Show answer
 `zuhubun zazawan zael ganalam.`
-<!-- gloss: z-Uhubun | z-Azawan | z-as…as | g-slowness -->
+<!-- gloss: z-Uhubun | z-Azawan | z-as…as | g-slow -->
 :::
 
 **3.** *Ululon is the hastiest.*
@@ -203,7 +203,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Rank **
 :::
 
 **7.** `zazawan zel ganalam.`
-<!-- gloss: z-Azawan | z-rank/more | g-slowness -->
+<!-- gloss: z-Azawan | z-rank/more | g-slow -->
 
 ::: details Show answer
 *Azawan is the slowest.*
@@ -317,12 +317,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
 | *heavy* | `aragam` | `aragal` *rock* |
-| *exerted* | `ewewum` | `ewewul` *weightlifting* |
+| *exertion* | `ewewum` | `ewewul` *lift* |
 | *big* | `elem` | `elel` *elephant* |
-| *gram* | `baragal` | `aragal` *rock* |
-| *much* | `wogegal` | `ogegal` *flood* |
-| *intense* | `ohogem` | `ohogel` *hockey* |
-| *lift* | `vewewul` | `ewewul` *weightlifting* |
+| *rock* | `baragal` | `aragal` *rock* |
+| *ocean-wave* | `wogegal` | `ogegal` *ocean-wave* |
+| *intensity* | `ohogem` | `ohogel` *hockey* |
+| *lift* | `vewewul` | `ewewul` *lift* |
 
 #### English → Agalan
 
@@ -330,7 +330,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 
 ::: details Show answer
 `zazawan zululon zuel garagam.`
-<!-- gloss: z-Azawan | z-Ululon | z-rank/less | g-heaviness -->
+<!-- gloss: z-Azawan | z-Ululon | z-rank/less | g-heavy -->
 :::
 
 **2.** *Ululon is the least exerted.*
@@ -344,62 +344,62 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 
 ::: details Show answer
 `zoel garagam.`
-<!-- gloss: z-ranked-or | g-heaviness -->
+<!-- gloss: z-ranked-or | g-heavy -->
 :::
 
 **4.** *Azawan and Uhubun are heavy.*
 
 ::: details Show answer
 `zazawan zuhubun zal garagam.`
-<!-- gloss: z-Azawan | z-Uhubun | z-and | g-heaviness -->
+<!-- gloss: z-Azawan | z-Uhubun | z-and | g-heavy -->
 :::
 
 **5.** *Ululon is two grams heavier than Azawan.*
 
 ::: details Show answer
 `zululon zazawan zel garagam baragal g+2.`
-<!-- gloss: z-Ululon | z-Azawan | z-rank/more | g-heaviness | b-rock | g-two -->
+<!-- gloss: z-Ululon | z-Azawan | z-rank/more | g-heavy | b-rock | g-two -->
 :::
 
 **6.** *Azawan is heavier than Ululon* (exclusive ladder).
 
 ::: details Show answer
 `zazawan zululon zoel garagam.`
-<!-- gloss: z-Azawan | z-Ululon | z-ranked-or | g-heaviness -->
+<!-- gloss: z-Azawan | z-Ululon | z-ranked-or | g-heavy -->
 :::
 
 **7.** *Unspecified who is biggest.*
 
 ::: details Show answer
 `zel gelem.`
-<!-- gloss: z-rank/more | g-size -->
+<!-- gloss: z-rank/more | g-big -->
 :::
 
 **8.** *Whichever of Azawan or Ululon ranks heavier.*
 
 ::: details Show answer
 `zazawan zululon zer garagam.`
-<!-- gloss: z-Azawan | z-Ululon | z-whatever-ranks | g-heaviness -->
+<!-- gloss: z-Azawan | z-Ululon | z-whatever-ranks | g-heavy -->
 :::
 
 **9.** *Ululon lifts more intensely than Azawan.*
 
 ::: details Show answer
 `zululon zazawan zel hohogem vewewul.`
-<!-- gloss: z-Ululon | z-Azawan | z-rank/more | h-intensity | v-weightlift -->
+<!-- gloss: z-Ululon | z-Azawan | z-rank/more | h-intensity | v-lift -->
 :::
 
 #### Agalan → English
 
 **1.** `zazawan zululon zuhubun zem garagam.`
-<!-- gloss: z-Azawan | z-Ululon | z-Uhubun | z-rank/more.open | g-heaviness -->
+<!-- gloss: z-Azawan | z-Ululon | z-Uhubun | z-rank/more.open | g-heavy -->
 
 ::: details Show answer
 *Azawan is heavier than Ululon, who is heavier than Uhubun.*
 :::
 
 **2.** `zoem gelem.`
-<!-- gloss: z-ranked-or.open | g-size -->
+<!-- gloss: z-ranked-or.open | g-big -->
 
 ::: details Show answer
 *No biggest comes to mind.*
@@ -420,7 +420,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 :::
 
 **5.** `zazawan zululon zel garagam baragal g+5.`
-<!-- gloss: z-Azawan | z-Ululon | z-rank/more | g-heaviness | b-rock | g-five -->
+<!-- gloss: z-Azawan | z-Ululon | z-rank/more | g-heavy | b-rock | g-five -->
 
 ::: details Show answer
 *Azawan is five grams heavier than Ululon.*
@@ -434,21 +434,21 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 :::
 
 **7.** `zer garagam.`
-<!-- gloss: z-whatever-ranks | g-heaviness -->
+<!-- gloss: z-whatever-ranks | g-heavy -->
 
 ::: details Show answer
 *Whatever ranks heaviest.*
 :::
 
 **8.** `zuhubun zuel gelem.`
-<!-- gloss: z-Uhubun | z-rank/less | g-size -->
+<!-- gloss: z-Uhubun | z-rank/less | g-big -->
 
 ::: details Show answer
 *Uhubun is the smallest.*
 :::
 
 **9.** `zululon zel hohogem vewewul.`
-<!-- gloss: z-Ululon | z-rank/more | h-intensity | v-weightlift -->
+<!-- gloss: z-Ululon | z-rank/more | h-intensity | v-lift -->
 
 ::: details Show answer
 *Ululon lifts the most intensely.*
@@ -514,8 +514,8 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
 | *sing* | `uzunul` | |
-| *artistic* | `abadum` | `abadul` *paintbrush* |
-| *showy* | `ohohom` | `ohohol` *hot dog* |
+| *artistry* | `abadum` | `abadul` *paintbrush* |
+| *showmanship* | `ohohom` | `ohohol` *hot dog* |
 | *Average* | `ojun` | `ojul` *yin-yang* |
 | *Typical* | `ahaman` | `ahamal` *hamster* |
 | *Professional* | `alaban` | `alabal` *lab coat* |

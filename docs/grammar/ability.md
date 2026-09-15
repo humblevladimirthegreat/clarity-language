@@ -76,13 +76,13 @@ Short drills for Beginner. Try each item before opening **Show answer**. Tag **c
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
 | *rock* | `aragal` | |
-| *climb* | `vugumul` | `ugumul` *climbing* |
-| *stand* | `vazanul` | `azanul` *standing* |
-| *run* | `vurunul` | `urunul` *running* |
+| *climb* | `vugumul` | `ugumul` *climb* |
+| *stand* | `vazanul` | `azanul` *stand* |
+| *run* | `vurunul` | `urunul` *run* |
 | *see* | `vejel` | `ejel` *eye* |
 | *scream* | `vazagal` | `azagal` *scream* |
 | *punch* | `vubunul` | `ubunul` *punch* |
-| *lift* | `vewewul` | `ewewul` *weightlifting* |
+| *lift* | `vewewul` | `ewewul` *lift* |
 
 #### English → Agalan
 
@@ -173,7 +173,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Tag **c
 :::
 
 **5.** `zululon vewewuxal.`
-<!-- gloss: z-Ululon | v-weightlift-able -->
+<!-- gloss: z-Ululon | v-lift-able -->
 
 ::: details Show answer
 *Ululon can lift.*
@@ -216,7 +216,7 @@ Sometimes English *can* / *can’t* is not about one named activity or property:
 
 > `zululon gelem wegeraxel.`
 >
-> z-Ululon | g-size | w-ABIL-unable-temporary
+> z-Ululon | g-big | w-ABIL-unable-temporary
 >
 > "Ululon is big: can’t right now." (capability on that property).
 
@@ -258,7 +258,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Pre
 | *punch* | `vubunul` | `ubunul` *punch* |
 | *guard* | `vugugal` | `ugugal` *guard* |
 | *scream* | `vazagal` | `azagal` *scream* |
-| *ability* / *cereal* | `egeral` | `egeral` *cereal* |
+| *cereal* | `egeral` |
 
 #### English → Agalan
 

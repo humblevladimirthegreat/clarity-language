@@ -31,7 +31,7 @@ When that short stem would match the **wrong** recent word, use a **full-root re
 
 > `zululon velebel. zabogol gelem. zazawan veleber.`
 >
-> z-Ululon | v-sleep | z-book | g-size | z-Azawan | v-←sleep
+> z-Ululon | v-sleep | z-book | g-big | z-Azawan | v-←sleep
 >
 > "Ululon sleeps. A book is big. Azawan does so."
 
@@ -452,7 +452,7 @@ Intermediate already recast one referent into a new slot. Each table is an **ant
 
 > `zodogol vawalal. zawalar gelem.`
 >
-> z-dog | v-walk | z-←walk | g-size
+> z-dog | v-walk | z-←walk | g-big
 >
 > "A dog walks. That action is big."
 
@@ -559,7 +559,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zululon varadum. zaradur gelem.`
-<!-- gloss: z-Ululon | v-broadcast | z-←broadcast | g-size -->
+<!-- gloss: z-Ululon | v-broadcast | z-←broadcast | g-big -->
 :::
 
 **3.** *Azawan broadcasts. By doing so, Ululon mutes.*
@@ -580,13 +580,13 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zululon vubunul. zubunur gelem.`
-<!-- gloss: z-Ululon | v-punch | z-←punch | g-size -->
+<!-- gloss: z-Ululon | v-punch | z-←punch | g-big -->
 :::
 
 #### Agalan → English
 
 **1.** `zazawan varadum. gazar gelem.`
-<!-- gloss: z-Azawan | v-broadcast | g-←Azawan | g-size -->
+<!-- gloss: z-Azawan | v-broadcast | g-←Azawan | g-big -->
 
 ::: details Show answer
 *Azawan broadcasts. That one's kind is big.*
@@ -607,7 +607,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 :::
 
 **4.** `zaradul gelem. zeler vazagal.`
-<!-- gloss: z-radio | g-size | z-←size | v-scream -->
+<!-- gloss: z-radio | g-big | z-←big | v-scream -->
 
 ::: details Show answer
 *A radio is big. The big one screams.*

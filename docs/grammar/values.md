@@ -172,7 +172,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *relatedness* | `onogol` | `onogol` *knot* |
 | *pleasure* | `awerol` | `awerol` *strawberry* |
 | *survival* | `uhuhel` | `uhuhel` *shield* |
-| *unspecified need* | `egel` | `egel` *egg* |
+| *need* | `egel` | `egel` *egg* |
 
 #### English → Agalan
 
@@ -366,7 +366,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *candle* | `anedel` | |
 | *bell* | `obelel` | |
 | *pray* | `vabal` | `abal` *pray* |
-| *kneel* | `vegenel` | `egenel` *kneeling* |
+| *kneel* | `vegenel` | `egenel` *kneel* |
 | *whisper* | `vuzuhul` | `uzuhul` *whisper* |
 | *bow* | `vobowol` | `obowol` *bow* |
 | *scream* | `vazagal` | `azagal` *scream* |

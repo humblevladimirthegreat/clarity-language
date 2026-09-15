@@ -451,15 +451,15 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *see* | `vejel` |
 | *attest* | `vadezel` |
 | *lie* | `vululel` |
-| *the lie* | `ululel` |
+| *lie* | `ululel` |
 | *scream* | `vazagal` |
 | *punch* | `vubunul` |
 | *judge* | `ujudul` |
-| *the Judge* | `ujudun` |
+| *Judge* | `ujudun` |
 | *small* | `gumuzem` |
 | *happy* | `huzumum` |
 | *possibility* | `huzurem` |
-| *FBI* | <code>duxol FBI</code> |
+| *FBI* | <code>d&lt;FBI&gt;</code> |
 
 #### English → Agalan
 

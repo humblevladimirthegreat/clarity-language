@@ -317,7 +317,7 @@ English *the boxes are heavy* can mean each box or the pile. Put **-x** on the *
 
 > `zulebolx garagamx.`
 >
-> z-file-box-x | g-heaviness-x
+> z-file-box-x | g-heavy-x
 >
 > "The file-boxes are heavy as a pile."
 
@@ -394,10 +394,10 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` |
 | *Ululon* | `ululon` |
 | *Uhubun* | `uhubun` |
-| *singer* | `uzunul` |
+| *expression* | `uzunul` |
 | *sheet-music* | `eduzul` |
 | *bell* | `obelel` |
-| *heaviness* | `aragam` |
+| *heavy* | `aragam` |
 | *blue* | `elulul` |
 | *sing* | `vuzunul` |
 | *sneak* | `vazanal` |
@@ -446,7 +446,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zobelelx garagamx.`
-<!-- gloss: z-bell-x | g-heaviness-x -->
+<!-- gloss: z-bell-x | g-heavy-x -->
 :::
 
 **7.** *Ululon and associates sneak as one outing.*
@@ -473,7 +473,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 :::
 
 **2.** `zeduzulx garagam.`
-<!-- gloss: z-sheet-music-x | g-heaviness -->
+<!-- gloss: z-sheet-music-x | g-heavy -->
 
 ::: details Show answer
 *The sheet-musics are heavy.* (members / plain)

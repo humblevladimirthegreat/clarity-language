@@ -93,7 +93,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zululon howoram degezal vejel.`
-<!-- gloss: z-Ululon | h-plan-sketch | d-chess-pawn | v-see -->
+<!-- gloss: z-Ululon | h-plan-sketch | d-pawn | v-see -->
 :::
 
 **3.** *Azawan’s itinerary is to tell Uhubun.*
@@ -148,7 +148,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 :::
 
 **2.** `zazawan howoram degezal vejel.`
-<!-- gloss: z-Azawan | h-plan-sketch | d-chess-pawn | v-see -->
+<!-- gloss: z-Azawan | h-plan-sketch | d-pawn | v-see -->
 
 ::: details Show answer
 *Azawan means to see a pawn.*
@@ -176,7 +176,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 :::
 
 **6.** `zululon howoral degezal vejel.`
-<!-- gloss: z-Ululon | h-plan-itinerary | d-chess-pawn | v-see -->
+<!-- gloss: z-Ululon | h-plan-itinerary | d-pawn | v-see -->
 
 ::: details Show answer
 *Ululon’s itinerary is to see a pawn.*

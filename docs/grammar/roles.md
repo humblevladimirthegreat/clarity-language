@@ -103,7 +103,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
 | *construction-site* | `ononul` | |
-| *construct* | `vogunul` | `ogonul` *construct* |
+| *construct* | `vogonul` | `ogonul` *construct* |
 | *builder* | `zaxogonul` | `ogonul` *construct* |
 | *hammer* | `ahamel` | |
 | *hammerer* | `zaxahamel` | `ahamel` *hammer* |
@@ -129,8 +129,8 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **2.** *Azawan constructs. The builder sees a helmet.*
 
 ::: details Show answer
-`zazawan vogunul. zaxogonur dehemel vejel.`
-<!-- gloss: z-Azawan | v-coconut | z-agent-x-building | d-helmet | v-see -->
+`zazawan vogonul. zaxogonur dehemel vejel.`
+<!-- gloss: z-Azawan | v-construct | z-←construct | d-helmet | v-see -->
 :::
 
 **3.** *Ululon hammers a brick. The hammerer sits.*
