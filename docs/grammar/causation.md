@@ -77,9 +77,10 @@ Short drills for Beginner. Try each item before opening **Show answer**. The out
 | *flower* | `ovowel` | |
 | *window* | `uwunol` | |
 | *sun* | `unul` | |
-| *thermometer* | `edehel` | |
+| *bucket* | `udedel` | |
+| *heat* | `ebebem` | `ebebel` *pepper* |
 | *fire* | `urel` | |
-| *pour* | `vorurul` | `orurul` *pour* |
+| *pour* | `vorurul` | |
 | *see* | `vejel` | `ejel` *eye* |
 | *tell* | `vezehel` | `ezehel` *speech* |
 | *if* | `hadorom` | `adorol` *door* |
@@ -95,12 +96,12 @@ Short drills for Beginner. Try each item before opening **Show answer**. The out
 z-seedling | g-if | b-sun
 :::
 
-**2.** *Azawan pours if there is a window.*
+**2.** *Azawan pours if there is a bucket.*
 
 ::: details Show answer
-`zazawan vorurul hadorom buwunol.`
+`zazawan vorurul hadorom budedel.`
 
-z-Azawan | v-pour | h-if | b-window
+z-Azawan | v-pour | h-if | b-bucket
 :::
 
 **3.** *A potted plant only if there is a window.*
@@ -111,12 +112,12 @@ z-Azawan | v-pour | h-if | b-window
 z-potted-plant | g-only-if | b-window
 :::
 
-**4.** *Ululon sees if there is a tomato.*
+**4.** *Uhubun sees Azawan if there is a window.*
 
 ::: details Show answer
-`zululon vejel hadorom bodomal.`
+`zuhubun dazawan vejel hadorom buwunol.`
 
-z-Ululon | v-see | h-if | b-tomato
+z-Uhubun | d-Azawan | v-see | h-if | b-window
 :::
 
 **5.** *A flower only if there is sun.*
@@ -127,20 +128,20 @@ z-Ululon | v-see | h-if | b-tomato
 z-flower | g-only-if | b-sun
 :::
 
-**6.** *Uhubun tells if there is a thermometer.*
+**6.** *Azawan pours only if there is heat.*
 
 ::: details Show answer
-`zuhubun vezehel hadorom bedehel.`
+`zazawan vorurul heberom bebebem.`
 
-z-Uhubun | v-tell | h-if | b-thermometer
+z-Azawan | v-pour | h-only-if | b-heat
 :::
 
-**7.** *Azawan pours only if there is a window.*
+**7.** *Ululon tells if there is fire.*
 
 ::: details Show answer
-`zazawan vorurul heberom buwunol.`
+`zululon vezehel hadorom burel.`
 
-z-Azawan | v-pour | h-only-if | b-window
+z-Ululon | v-tell | h-if | b-fire
 :::
 
 **8.** *Ululon pours only if there is fire.*
@@ -162,13 +163,13 @@ z-flower | g-if | b-sun
 *A flower if there is sun.*
 :::
 
-**2.** `zuhubun vejel hadorom buwunol.`
+**2.** `zuhubun vorurul hadorom bezedel.`
 
 ::: details Show answer
 
-z-Uhubun | v-see | h-if | b-window
+z-Uhubun | v-pour | h-if | b-seedling
 
-*Uhubun sees if there is a window.*
+*Uhubun pours if there is a seedling.*
 :::
 
 **3.** `zezedel geberom buwunol.`
@@ -180,49 +181,49 @@ z-seedling | g-only-if | b-window
 *A seedling only if there is a window.*
 :::
 
-**4.** `zazawan vezehel hadorom bedehel.`
+**4.** `zazawan duhubun vejel hadorom buwunol.`
 
 ::: details Show answer
 
-z-Azawan | v-tell | h-if | b-thermometer
+z-Azawan | d-Uhubun | v-see | h-if | b-window
 
-*Azawan tells if there is a thermometer.*
+*Azawan sees Uhubun if there is a window.*
 :::
 
-**5.** `zobodel gadorom bodomal.`
+**5.** `zodomal gadorom bunul.`
 
 ::: details Show answer
 
-z-potted-plant | g-if | b-tomato
+z-tomato | g-if | b-sun
 
-*A potted plant if there is a tomato.*
+*A tomato if there is sun.*
 :::
 
-**6.** `zululon vorurul hadorom bodomal.`
+**6.** `zazawan vezehel hadorom bebebem.`
 
 ::: details Show answer
 
-z-Ululon | v-pour | h-if | b-tomato
+z-Azawan | v-tell | h-if | b-heat
 
-*Ululon pours if there is a tomato.*
+*Azawan tells if there is heat.*
 :::
 
-**7.** `zodomal geberom burel.`
+**7.** `zululon vorurul hadorom burel.`
 
 ::: details Show answer
 
-z-tomato | g-only-if | b-fire
+z-Ululon | v-pour | h-if | b-fire
 
-*A tomato only if there is fire.*
+*Ululon pours if there is fire.*
 :::
 
-**8.** `zuhubun vejel heberom burel.`
+**8.** `zuhubun vezehel heberom burel.`
 
 ::: details Show answer
 
-z-Uhubun | v-see | h-only-if | b-fire
+z-Uhubun | v-tell | h-only-if | b-fire
 
-*Uhubun sees only if there is fire.*
+*Uhubun tells only if there is fire.*
 :::
 
 ## Intermediate
@@ -347,21 +348,20 @@ Short drills for Intermediate. Try each item before opening **Show answer**. A f
 | *Uhubun* | `uhubun` | |
 | *knob* | `ogozol` | |
 | *flood* | `ogegam` | `ogegal` *ocean-wave* |
-| *key* | `agegol` | |
 | *bell* | `obelel` | |
 | *pressure* | `abamam` | `abamal` *clamp* |
 | *sit* | `vajul` | `ajul` *chair* |
-| *pour* | `vorurul` | `orurul` *pour* |
+| *pour* | `vorurul` | |
 | *see* | `vejel` | `ejel` *eye* |
 | *tell* | `vezehel` | `ezehel` *speech* |
-| *run* | `vurunul` | `urunul` *run* |
+| *run* | `vurunul` | |
 | *competence-ought-invite* | `holozoxor` | `olozol` *toolbox* |
 | *if* | `hadorom` | `adorol` *door* |
 | *only-if* | `heberom` | `eberol` *paper-roll* |
 | *iff* | `hezazem` | `ezazel` *east-west* |
 | *because* | `hurugum` | `urugul` *brick* |
 | *CAUSE* | `hegegam` | `egegal` *gear* |
-| *next clause* | `adorol` | |
+| *next clause* | `adorol` | `adorol` *door* |
 
 #### English → Agalan
 
@@ -373,12 +373,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**. A f
 z-Azawan | v-sit | h-if | b-next-clause | z-Uhubun | v-see
 :::
 
-**2.** *Flooding only if there is a knob.*
+**2.** *Uhubun tells only if Azawan sits.*
 
 ::: details Show answer
-`zogegam geberom bogozol.`
+`zuhubun vezehel heberom badorol zazawan vajul.`
 
-z-flood | g-only-if | b-knob
+z-Uhubun | v-tell | h-only-if | b-next-clause | z-Azawan | v-sit
 :::
 
 **3.** *Ululon pours if and only if Azawan sits.*
@@ -397,12 +397,12 @@ z-Ululon | v-pour | h-iff | b-next-clause | z-Azawan | v-sit
 z-Uhubun | v-tell | h-because | b-next-clause | z-Ululon | v-pour
 :::
 
-**5.** *A key because of pressure.*
+**5.** *A bell because of pressure.*
 
 ::: details Show answer
-`zagegol gurugum babamam.`
+`zobelel gurugum babamam.`
 
-z-solution | g-because | b-pressure
+z-bell | g-because | b-pressure
 :::
 
 **6.** *Azawan sits only because Uhubun sees.*
@@ -413,12 +413,12 @@ z-solution | g-because | b-pressure
 z-Azawan | v-sit | h-only-if | h-because | b-next-clause | z-Uhubun | v-see
 :::
 
-**7.** *A knob if there is a bell (as an ought, not a law).*
+**7.** *A bell if there is flooding (as an ought, not a law).*
 
 ::: details Show answer
-`zogozol gadorom bobelel holozoxor.`
+`zobelel gadorom bogegam holozoxor.`
 
-z-knob | g-if | b-bell | h-competence-ought-invite
+z-bell | g-if | b-flood | h-competence-ought-invite
 :::
 
 **8.** *Ululon runs if there is flooding (as mechanism).*
@@ -440,22 +440,22 @@ z-Uhubun | v-sit | h-if | b-next-clause | z-Ululon | v-see
 *Uhubun sits if Ululon sees.*
 :::
 
-**2.** `zobelel geberom bagegol.`
+**2.** `zazawan vorurul heberom badorol zuhubun vezehel.`
 
 ::: details Show answer
 
-z-bell | g-only-if | b-solution
+z-Azawan | v-pour | h-only-if | b-next-clause | z-Uhubun | v-tell
 
-*A bell only if there is a key.*
+*Azawan pours only if Uhubun tells.*
 :::
 
-**3.** `zazawan vorurul hezazem badorol zuhubun vezehel.`
+**3.** `zazawan vezehel hezazem badorol zuhubun vejel.`
 
 ::: details Show answer
 
-z-Azawan | v-pour | h-iff | b-next-clause | z-Uhubun | v-tell
+z-Azawan | v-tell | h-iff | b-next-clause | z-Uhubun | v-see
 
-*Azawan pours if and only if Uhubun tells.*
+*Azawan tells if and only if Uhubun sees.*
 :::
 
 **4.** `zululon vurunul hurugum badorol zogegam.`
@@ -485,22 +485,22 @@ z-Uhubun | v-tell | h-only-if | h-because | b-next-clause | z-Ululon | v-pour
 *Uhubun tells only because Ululon pours.*
 :::
 
-**7.** `zululon vorurul hegegam.`
+**7.** `zogozol gadorom babamam holozoxor.`
 
 ::: details Show answer
 
-z-Ululon | v-pour | h-CAUSE
+z-knob | g-if | b-pressure | h-competence-ought-invite
 
-*Ululon pours (as mechanism).*
+*A knob if there is pressure (as an ought, not a law).*
 :::
 
-**8.** `zazawan vajul heberom badorol zogegam.`
+**8.** `zululon vorurul hegegam hadorom bogegam.`
 
 ::: details Show answer
 
-z-Azawan | v-sit | h-only-if | b-next-clause | z-flood
+z-Ululon | v-pour | h-CAUSE | h-if | b-flood
 
-*Azawan sits only if there is flooding.*
+*Ululon pours if there is flooding (as mechanism).*
 :::
 
 ## Advanced
@@ -578,16 +578,15 @@ Short drills for Advanced. Try each item before opening **Show answer**. **`huru
 | *Uhubun* | `uhubun` | |
 | *test-tube* | `ezubel` | |
 | *lab coat* | `alabal` | |
+| *melt* | `emelel` | |
 | *fire* | `urel` | |
 | *sit* | `vajul` | `ajul` *chair* |
-| *pour* | `vorurul` | `orurul` *pour* |
+| *pour* | `vorurul` | |
 | *see* | `vejel` | `ejel` *eye* |
-| *tell* | `vezehel` | `ezehel` *speech* |
 | *if* | `hadorom` | `adorol` *door* |
 | *only-if* | `heberom` | `eberol` *paper-roll* |
-| *iff* | `hezazem` | `ezazel` *east-west* |
 | *because* | `hurugum` | `urugul` *brick* |
-| *commentary* | `hodohom` | `odohol` *thought* |
+| *COMMENT* | `hodohom` | `odohol` *thought* |
 | *CAUSE* | `hegegam` | `egegal` *gear* |
 
 #### English → Agalan
@@ -600,55 +599,55 @@ Short drills for Advanced. Try each item before opening **Show answer**. **`huru
 z-Ululon | v-pour | h-because | b-next-clause | z-Uhubun | v-see
 :::
 
-**2.** *Azawan sits if there is fire.* (fire is not asserted)
+**2.** *Azawan pours if there is a test-tube.* (the test-tube is not asserted)
 
 ::: details Show answer
-`zazawan vajul hadorom badorol zurel.`
+`zazawan vorurul hadorom badorol zezubel.`
 
-z-Azawan | v-sit | h-if | b-next-clause | z-fire
+z-Azawan | v-pour | h-if | b-next-clause | z-test-tube
 :::
 
-**3.** *Azawan pours if and only if Uhubun tells.*
+**3.** *Azawan pours (that’s a take).* (speaker-grounds, not a world-reason)
 
 ::: details Show answer
-`zazawan vorurul hezazem badorol zuhubun vezehel.`
+`zazawan hodohom vorurul.`
 
-z-Azawan | v-pour | h-iff | b-next-clause | z-Uhubun | v-tell
+z-Azawan | h-COMMENT | v-pour
 :::
 
-**4.** *Azawan sits (that’s a take).* (speaker-grounds, not a world-reason)
+**4.** *Azawan sits, I’d note, because Ululon pours.*
 
 ::: details Show answer
-`zazawan hodohom vajul.`
+`zazawan hodohom vajul hurugum badorol zululon vorurul.`
 
-z-Azawan | h-COMMENT | v-sit
+z-Azawan | h-COMMENT | v-sit | h-because | b-next-clause | z-Ululon | v-pour
 :::
 
-**5.** *A test-tube if there is fire, as a standing pattern.*
+**5.** *Melt if there is fire, as a standing pattern.*
 
 ::: details Show answer
-`zezubel gadorom burel hual.`
+`zemelel gadorom burel hual.`
 
-z-test-tube | g-if | b-fire | h-always
+z-melt | g-if | b-fire | h-always
 :::
 
-**6.** *Fire only if there is a lab coat (as mechanism), as a standing pattern.*
+**6.** *Fire only if there is a lab coat (as mechanism).*
 
 ::: details Show answer
-`zurel geberom balabal hegegam hual.`
+`zurel geberom balabal hegegam.`
 
-z-fire | g-only-if | b-lab-coat | h-CAUSE | h-always-except
+z-fire | g-only-if | b-lab-coat | h-CAUSE
 :::
 
 #### Agalan → English
 
-**1.** `zazawan vajul hurugum badorol zurel.`
+**1.** `zazawan vorurul hurugum badorol zurel.`
 
 ::: details Show answer
 
-z-Azawan | v-sit | h-because | b-next-clause | z-fire
+z-Azawan | v-pour | h-because | b-next-clause | z-fire
 
-*Azawan sits because there is fire.*
+*Azawan pours because there is fire.*
 :::
 
 **2.** `zululon vorurul hadorom badorol zezubel.`
@@ -669,13 +668,13 @@ z-Uhubun | h-COMMENT | v-see
 *Uhubun sees (that’s a take).*
 :::
 
-**4.** `zazawan hodohom vajul hurugum badorol zululon vorurul.`
+**4.** `zululon hodohom vorurul hurugum badorol zuhubun vejel.`
 
 ::: details Show answer
 
-z-Azawan | h-COMMENT | v-sit | h-because | b-next-clause | z-Ululon | v-pour
+z-Ululon | h-COMMENT | v-pour | h-because | b-next-clause | z-Uhubun | v-see
 
-*Azawan sits, I’d note, because Ululon pours.*
+*Ululon pours, I’d note, because Uhubun sees.*
 :::
 
 **5.** `zalabal gadorom burel hual.`
