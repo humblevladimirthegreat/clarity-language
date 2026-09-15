@@ -1057,7 +1057,7 @@ A digit group may use **`ba`** or **`bu`** with **no** exponent digits. That emp
 
 > `zagadalx g+e.`
 >
-> z-cat-x | g-+∞
+> z-cat-x | g-infinity
 >
 > "Cats — infinitely many."
 

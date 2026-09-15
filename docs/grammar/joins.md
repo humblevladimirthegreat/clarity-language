@@ -510,9 +510,13 @@ When English would deny a whole join, *not* applies to **each** item and the joi
 
 > `vawalal vurunul val vul.`
 >
+> v-walk | v-run | v-and | v-not
+>
 > "not (walk and run): not walk, and not run."
 
 > `vawalal vurunul vol vul.`
+>
+> v-walk | v-run | v-or-exactly-one | v-not
 >
 > "not (walk or run): not walk, or not run."
 
@@ -627,6 +631,8 @@ An adverb `/h/` before the verb-phrase stretch, or in SHARED after the join, cov
 `/x/` keeps the **same speech act**. Later clauses inherit the opener and omit `/j/` (including recoverable **`jal`**).
 
 > `zazawan vawalal zululon vurunul xan.`
+>
+> z-Azawan | v-walk | z-Ululon | v-run | x-and-then
 >
 > "Azawan walks and then Ululon runs."
 
@@ -816,6 +822,8 @@ When same-role words sit next to a smaller list, wrap that stretch and its join 
 
 > `zazawan ^ zunudel zal ^ zam.`
 >
+> z-Azawan | ^ | z-drinking-water | z-and | ^ | z-and.open
+>
 > "Azawan and (just water)."
 
 
@@ -826,6 +834,8 @@ When same-role words sit next to a smaller list, wrap that stretch and its join 
 When a phrase list is an established bundle (*the usual menu*, *stop–drop–roll*), end the join with **-n** under `/z/` `/d/` `/b/` `/w/`. That **-n** names the package, not a person.
 
 > `zadedal zogovel zon.`
+>
+> z-tea | z-coffee | z-or-exactly-one.named
 >
 > "tea or coffee (the usual named menu)"
 
@@ -850,6 +860,8 @@ Most other phrase joins need two or more items. These edge readings keep a defin
 | **`oe`** | exclusive step on a ladder | preference vs contingency from context |
 
 > `zadedal zogovel zunudel zor.`
+>
+> z-tea | z-coffee | z-drinking-water | z-anything
 >
 > "any of tea, coffee, or water is fine (no order)."
 
@@ -943,7 +955,7 @@ z-dove | z-page | z-pen | z-anything
 ::: details Show answer
 `zazawan ^ zuhubun zal ^ zam.`
 
-z-Azawan | z-Uhubun | z-and | z-and.open
+z-Azawan | ^ | z-Uhubun | z-and | ^ | z-and.open
 :::
 
 **5.** *someone other than Ululon*
@@ -977,7 +989,7 @@ z-dove | z-page | z-pen | z-whatever-ranks
 
 ::: details Show answer
 
-z-Azawan | z-and | z-and.open
+z-Azawan | ^ | z-and | ^ | z-and.open
 
 *Azawan and nothing*
 :::

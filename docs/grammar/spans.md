@@ -64,7 +64,7 @@ A **mention** holds the **word or form itself** (*the word “dog”*), not a qu
 
 > `z{odogo} gumuzem.`
 >
-> z-{dog} | g-small
+> z-dog | g-small
 >
 > "The word “dog” is small."
 
@@ -183,7 +183,7 @@ z-Ululon | d-cite | z-Azawan | v-sing | v-write
 ::: details Show answer
 `z{uzugo} gumuzem.`
 
-z-uzugo | g-small
+z-note | g-small
 :::
 
 **4.** *Azawan saw kimchi.* (foreign surface)
@@ -236,7 +236,7 @@ j-question | z-Ululon | d-←cite | v-tell
 
 ::: details Show answer
 
-z-Azawan | d-uzugo | v-tell
+z-Azawan | d-note | v-tell
 
 *Azawan said the word “melody.”*
 :::
@@ -245,7 +245,7 @@ z-Azawan | d-uzugo | v-tell
 
 ::: details Show answer
 
-z-Uhubun | d-uzugo | v-write
+z-Uhubun | d-note | v-write
 
 *Uhubun wrote the title Uzugon.*
 :::
@@ -254,7 +254,7 @@ z-Uhubun | d-uzugo | v-write
 
 ::: details Show answer
 
-z-uzugo | g-small
+z-note | g-small
 
 *The word “melody” is small.*
 :::
@@ -529,7 +529,7 @@ z-Azawan | d-cite | h-aside | h-happy | Azawan | v-tell
 ::: details Show answer
 `zazawan ^ huzurem dululel ^ vejel.`
 
-z-Azawan | h-possibility | d-lie | v-see
+z-Azawan | ^ | h-possibility | d-lie | ^ | v-see
 :::
 
 **8.** *Ululon and (just Azawan) punched.*
@@ -537,7 +537,7 @@ z-Azawan | h-possibility | d-lie | v-see
 ::: details Show answer
 `zululon ^ zazawan zal ^ zam vubunul.`
 
-z-Ululon | z-Azawan | z-and | z-and.open | v-punch
+z-Ululon | ^ | z-Azawan | z-and | ^ | z-and.open | v-punch
 :::
 
 #### Agalan → English
@@ -590,7 +590,7 @@ z-Azawan | v-tell | h-aside-x-atomic | h-happy
 
 ::: details Show answer
 
-z-Ululon | d-cite | z-mention | z-ujudu | v-tell
+z-Ululon | d-cite | z-mention | z-judge | v-tell
 
 *Ululon said the word “judge.”*
 :::
@@ -599,7 +599,7 @@ z-Ululon | d-cite | z-mention | z-ujudu | v-tell
 
 ::: details Show answer
 
-z-Ululon | h-possibility | d-lie | v-see
+z-Ululon | ^ | h-possibility | d-lie | ^ | v-see
 
 *Ululon saw, as a possibility, the lie.*
 :::

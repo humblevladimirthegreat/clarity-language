@@ -350,8 +350,7 @@ A stance word can stand alone (`jael.`), sit before a body (`jael zazawan vawala
 
 When the question already contains *not* (*Didn’t Azawan run?*), *yes* and *no* still say whether **that claim** matches. **`jael`** confirms the denial (*true: they didn’t*). **`juel`** says the denial is false (*they did*). Restate the body after the stance word when you want the polarity said twice. Offer words (**`jaol`** / **`juol`**) still answer *take this?*, not true/false.
 
-> `jol zazawan vul vurunul?`
-> `jael.`
+> `jol zazawan vul vurunul? jael.`
 >
 > j-question | z-Azawan | v-not | v-run | j-yes
 >

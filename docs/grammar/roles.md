@@ -50,11 +50,11 @@ English *the one seen* or *the one fought* names the person the event happens to
 
 Some stems name a **relation** (who is bound to whom), not an action. The extra person of that relation sits in `/b/`. To name that person from the relation stem (*the other party of the bond*), write **`o`** in the vowel slot. That named party is the **reltum**. (cue: **o** ≈ one (that other pole))
 
-> `zazawan gonogol bululon.`
+> `zazawan gonogom bululon.`
 > `zoxonogor vurunul.`
 >
 > z-Azawan | g-bond | b-Ululon
-> z-←reltum-x-bond | v-run
+> z-←bond | v-run
 >
 > "Azawan is bound to Ululon. That other party of the bond runs."
 
@@ -178,9 +178,9 @@ z-Ululon | z-Azawan | v-punch | z-←punch | v-scream
 **8.** *Azawan is bound to Ululon. That other party of the bond fights.*
 
 ::: details Show answer
-`zazawan gonogol bululon. zoxonogor vuvugul.`
+`zazawan gonogom bululon. zoxonogor vuvugul.`
 
-z-Azawan | g-relatedness | b-Ululon | z-←relatedness | v-fight
+z-Azawan | g-bond | b-Ululon | z-←bond | v-fight
 :::
 
 #### Agalan → English
@@ -248,11 +248,11 @@ z-Ululon | z-Azawan | v-punch | z-←punch | v-fight
 *Ululon punches Azawan. The puncher fights.*
 :::
 
-**8.** `zuhubun gonogol bululon. zoxonogor vubunul.`
+**8.** `zuhubun gonogom bululon. zoxonogor vubunul.`
 
 ::: details Show answer
 
-z-Uhubun | g-relatedness | b-Ululon | z-←relatedness | v-punch
+z-Uhubun | g-bond | b-Ululon | z-←bond | v-punch
 
 *Uhubun is bound to Ululon. That other party of the bond punches.*
 :::
