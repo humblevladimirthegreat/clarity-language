@@ -72,16 +72,4 @@ describe("lintWordBankMarkdown", () => {
     assert.equal(findings[0]!.agalan, "vajul");
     assert.equal(findings[0]!.english, "see");
   });
-
-  it("defers overlay-tag and special-pronoun banks", () => {
-    const md = `### Translation practice
-
-**Roots used here:**
-
-| English | Agalan |
-|---------|--------|
-| *I* | \`ugobon\` |
-`;
-    assert.deepEqual(lintWordBankMarkdown(md, tables), []);
-  });
 });

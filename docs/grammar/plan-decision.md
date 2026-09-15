@@ -270,7 +270,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *see* | `vejel` | `ejel` *eye* |
 | *clipboard* | `ugubol` | |
 | *pen* | `abenel` | |
-| *from the pattern* | `habawam` | `abawal` *paw-prints* |
+| *PATTERN* | `habawam` | `abawal` *paw-prints* |
 | *punch* | `vubunul` | |
 | *scream* | `vazagal` | |
 | *fight* | `vuvugul` | |

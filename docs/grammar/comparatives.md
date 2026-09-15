@@ -521,7 +521,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 | *Professional* | `alaban` | `alabal` *lab coat* |
 | *Social* | `uluden` | `uludel` *silhouettes* |
 | *Mine* | `uroron` | `urorol` *mirror* |
-| *I* | `ugobon` | |
+| *speaker* | `ugobon` | |
 | *Everyone* | `oloben` | `olobel` *globe* |
 
 #### English → Agalan

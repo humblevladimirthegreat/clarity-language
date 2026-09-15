@@ -104,15 +104,15 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Uhubun* | `uhubun` | |
 | *construction-site* | `ononul` | |
 | *construct* | `vogonul` | `ogonul` *construct* |
-| *builder* | `zaxogonul` | `ogonul` *construct* |
+| *agent-x-building* | `zaxogonul` | `ogonul` *construct* |
 | *hammer* | `ahamel` | |
-| *hammerer* | `zaxahamel` | `ahamel` *hammer* |
+| *agent-x-hammer* | `zaxahamel` | `ahamel` *hammer* |
 | *helmet* | `ehemel` | |
 | *brick* | `urugul` | |
 | *see* | `vejel` | `ejel` *eye* |
 | *sit* | `vajul` | `ajul` *chair* |
 | *punch* | `ubunul` | |
-| *puncher* | `zaxubunul` | `ubunul` *punch* |
+| *agent-x-force* | `zaxubunul` | `ubunul` *punch* |
 | *scream* | `azagal` | |
 | *fight* | `uvugul` | |
 | *bond* | `onogol` | `onogol` *knot* |

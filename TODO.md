@@ -3,12 +3,13 @@ https://main.d2xds94zsgwptg.amplifyapp.com
 # TODO
 review TTS
 consider removing emojis from docs (but keep in lexicon)
-confirm logic for detecting glosses
+confirm logic for detecting glosses, should do a count
 consider visible gloss for exercises
 advanced section somewhere on how order affects focus
 fix measure units so they are own sense rather than overlay
--ban lexicon where the literal is essentially the same as metaphorical
--local llm systematically review entire lexicon
+reconsider gloss for overlays
+local llm systematically review entire lexicon
+
 ## Evidentiality / tense
 
 - Dedicated observation vs imagination **tense** (stacks with evidentiality channels; does not replace them). Live vs memory observation is **LIVE** (`adeze`) vs **WITNESSED** (`uvuvu`) — not a past/future slot.

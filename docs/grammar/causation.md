@@ -337,7 +337,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Mar
 | *see* | `vejel` | `ejel` *eye* |
 | *tell* | `vezehel` | `ezehel` *speech* |
 | *run* | `vurunul` | `urunul` *run* |
-| *competence (ought, invite)* | `holozoxor` | `olozol` *toolbox* |
+| *competence-ought-invite* | `holozoxor` | `olozol` *toolbox* |
 | *if* | `hadorom` | `adorol` *door* |
 | *iff* | `hezazem` | `ezazel` *east-west* |
 | *because* | `hurugum` | `urugul` *brick* |

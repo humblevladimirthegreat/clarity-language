@@ -326,8 +326,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
 | *Edozen* | `edozen` | |
-| *Hospital-Bed* | `ohozoxabeden` | |
-| *Diagnosis-Hospital* | `edozexohozon` | |
+| *hospital-x-bed* | `ohozoxabeden` | |
+| *diagnosis-x-hospital* | `edozexohozon` | |
 | *bed* | `abedel` | |
 | *sit* | `vajul` | `ajul` *chair* |
 | *see* | `vejel` | `ejel` *eye* |

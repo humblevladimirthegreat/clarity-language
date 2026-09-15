@@ -47,7 +47,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` | |
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
-| *Hammer-Wrench* | `zahamexewenen` | |
+| *Ahame-x-Ewenen* | `zahamexewenen` | |
 | *hammer* | `ahamel` | |
 | *wrench* | `ewenel` | |
 | *axe* | `azel` | |

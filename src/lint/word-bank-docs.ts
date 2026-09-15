@@ -82,14 +82,8 @@ function checkPair(
     };
   }
 
-  // Overlay tags, role compounds, named x-stems, values packaging, and special
-  // pronouns need human review before banks are rewritten to morph English.
-  if (column === "Agalan" && deferBankEnglish(morph, tables)) {
-    return null;
-  }
-
   const allowed = allowedSenses(morph, tables);
-  if (allowed.all.has(got)) return null;
+  if (allowed.all.has(got) || allowed.hostLemmas.has(got)) return null;
   return {
     agalan: surface,
     english,
@@ -97,24 +91,6 @@ function checkPair(
     expected: [...allowed.all].sort(),
     detail: "English is not a lexicon / overlay sense for this spelling",
   };
-}
-
-const DEFER_PRONOUN = new Set(["ugobo", "edone", "aha", "enenu"]);
-
-function deferBankEnglish(
-  morph: ReturnType<typeof parseWord>,
-  tables: ClassifyTables,
-): boolean {
-  if (morph.family.kind === "x") {
-    const fam = morph.family.xFamily;
-    if (fam === "role" || fam === "compound" || fam === "valueAbility") return true;
-  }
-  const word = classify(morph, tables);
-  if (word.overlay) return true;
-  if (morph.family.kind === "content") {
-    return morph.family.roots.some((root) => DEFER_PRONOUN.has(root));
-  }
-  return false;
 }
 
 function allowedSenses(

@@ -102,11 +102,11 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *fireworks* | `urewol` | | |
 | *hug* | `uhugul` | | |
 | *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
-| *flood / surge* (HIGH) | `hogegam` | `ogegal` *ocean-wave* | 🌊: water in surge |
-| *stillness / slack* (LOW) | `hozowom` | `ozowol` *snow* | 🌨️: the landscape goes quiet |
-| *held inside* (INTERNAL) | `habobom` | `abobol` *baby-bottle* | 🍼: liquid stays in the vessel |
-| *directed at others* (EXTERNAL) | `horurum` | `orurul` *pour* | 🫗: liquid goes onto someone else |
-| *on the situation* (CIRCUM) | `hanedem` | `anedel` *candle* | 🕯️: light fills the room |
+| *HIGH* | `hogegam` | `ogegal` *ocean-wave* | 🌊: water in surge |
+| *LOW* | `hozowom` | `ozowol` *snow* | 🌨️: the landscape goes quiet |
+| *INTERNAL* | `habobom` | `abobol` *baby-bottle* | 🍼: liquid stays in the vessel |
+| *EXTERNAL* | `horurum` | `orurul` *pour* | 🫗: liquid goes onto someone else |
+| *CIRCUM* | `hanedem` | `anedel` *candle* | 🕯️: light fills the room |
 | *problem* | `uzebul` | `uzebul` *puzzle-piece* | 🧩: pieces must fit |
 | *solution* | `agegol` | `agegol` *key* | 🔑: opens what was locked |
 | *goal* | `olalal` | `olalal` *goal* | 🥅: the net you shoot for |
@@ -265,11 +265,11 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` | | |
 | *Ululon* | `ululon` | | |
 | *Uhubun* | `uhubun` | | |
-| *usually* (COMMON) | `harogul` | `arogul` *partly-cloudy* | ⛅: usual sky still allows a shower |
-| *as far as checked* (UNCOUNTERED) | `habulul` | `abulul` *pill* | 💊: you take it to treat an ailment; the search found none |
-| *by definition* (FORMAL) | `harazal` | `arazal` *star* | ⭐: a charted constellation does not wander |
-| *by natural necessity* (NATURAL) | `habelel` | `abelel` *apple* | 🍎: it falls because the world works that way |
-| *under a named frame* (RULE) | `hebebel` | `ebebel` *pepper* | 🌶️: heat that applies in that dish |
+| *COMMON* | `harogul` | `arogul` *partly-cloudy* | ⛅: usual sky still allows a shower |
+| *UNCOUNTERED* | `habulul` | `abulul` *pill* | 💊: you take it to treat an ailment; the search found none |
+| *FORMAL* | `harazal` | `arazal` *star* | ⭐: a charted constellation does not wander |
+| *NATURAL* | `habelel` | `abelel` *apple* | 🍎: it falls because the world works that way |
+| *RULE* | `hebebel` | `ebebel` *pepper* | 🌶️: heat that applies in that dish |
 | *write* | `vuwurul` | | |
 | *sit* | `vajul` | `ajul` *chair* | |
 | *think* | `vuduhul` | | |

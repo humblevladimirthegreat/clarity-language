@@ -75,7 +75,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *see* | `vejel` | `ejel` *eye* |
 | *tell* | `vezehel` | `ezehel` *speech* |
 | *thought* (event) | `vodohol` | `odohol` *thought* |
-| *I think* (soft COMMENT) | `hodohom` | `odohol` *thought* |
+| *COMMENT* | `hodohom` | `odohol` *thought* |
 | *punch* | `vubunul` | |
 | *scream* | `vazagal` | |
 | *fight* | `vuvugul` | |
@@ -327,16 +327,16 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *mute* | `vumudel` | |
 | *punch* | `vubunul` | |
 | *scream* | `vazagal` | |
-| *I think* (soft COMMENT) | `hodohom` | `odohol` *thought* |
+| *COMMENT* | `hodohom` | `odohol` *thought* |
 | *live* / *from the scene* | `hadezem` | `adezel` *attest* |
-| *from memory* (past observation) | `huvuvum` | `uvuvul` *fishing* |
-| *on record* | `heregom` | `eregol` *record* |
-| *from the pattern* | `habawam` | `abawal` *paw-prints* |
+| *WITNESSED* | `huvuvum` | `uvuvul` *fishing* |
+| *RECORDED* | `heregom` | `eregol` *record* |
+| *PATTERN* | `habawam` | `abawal` *paw-prints* |
 | *inferred* | `hunevem` | `unevel` *investigate* |
-| *so they say* | `heraram` | `eraral` *ear* |
+| *TOLD* | `heraram` | `eraral` *ear* |
 | *felt* | `heherem` | `eherel` *heart* |
-| *per the tale* | `horolom` | `orolol` *scroll* |
-| *as if* (soft NOTIONAL) | `hadadem` | `adadel` *theater* |
+| *STORY* | `horolom` | `orolol` *scroll* |
+| *NOTIONAL* | `hadadem` | `adadel` *theater* |
 
 #### English → Agalan
 
