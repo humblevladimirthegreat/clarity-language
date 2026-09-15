@@ -65,8 +65,8 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("dol", "d-or-exactly-one");
     expectLine("zol", "z-or-exactly-one");
     expectLine("zel", "z-rank/more");
-    expectLine("zael", "z-as…as");
-    expectLine("zaem", "z-as…as.open");
+    expectLine("zael", "z-equal-rank");
+    expectLine("zaem", "z-equal-rank.open");
     expectLine("zar", "z-something");
     expectLine("zul", "z-not");
     expectLine("gul", "g-not");

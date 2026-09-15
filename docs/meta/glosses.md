@@ -303,8 +303,8 @@ Bake join / reviser **job** into the English label (including open vs closed whe
 | `dol` | `d-or-exactly-one` |
 | `zol` | `z-or-exactly-one` |
 | `zel` | `z-rank/more` |
-| `zael` | `z-as…as` |
-| `zaem` | `z-as…as.open` |
+| `zael` | `z-equal-rank` |
+| `zaem` | `z-equal-rank.open` |
 | `zar` | `z-who` / `z-something` |
 | `zul` / `gul` | `z-not` / `g-not` |
 | `zual` | `z-everything-but` |

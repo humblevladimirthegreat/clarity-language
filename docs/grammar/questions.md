@@ -715,7 +715,7 @@ j-question | z-Uhubun | z-or-exactly-one
 ::: details Show answer
 `jol zael?`
 
-j-question | z-as…as
+j-question | z-equal-rank
 :::
 
 **5.** *Is the trophy enough?*

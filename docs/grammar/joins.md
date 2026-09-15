@@ -475,7 +475,7 @@ When English would say two people are *as ADJ as* each other, or that nobody is 
 
 > `zazawan zululon zael gomonam.`
 >
-> z-Azawan | z-Ululon | z-as…as | g-challenge
+> z-Azawan | z-Ululon | z-equal-rank | g-challenge
 >
 > "Azawan is as challenging as Ululon."
 
@@ -972,7 +972,7 @@ z-Ululon | z-something-else
 
 ::: details Show answer
 
-z-as…as.named
+z-equal-rank.named
 *it's a draw* (stock)
 :::
 

@@ -154,7 +154,7 @@ loose: *I'm happier than you.*
 
 **C:** `juol zamar zubur zael guzumum.`
 
-gloss: `j-not-that` · `z-←Amadexonogon` · `z-←Ubunexunowen` · `z-as…as` · `g-happy`
+gloss: `j-not-that` · `z-←Amadexonogon` · `z-←Ubunexunowen` · `z-equal-rank` · `g-happy`
 
 strict: *Not that — I (C) and you (B) are as happy (as each other).*
 

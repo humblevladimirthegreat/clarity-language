@@ -4,7 +4,7 @@
 
 *Would work* names a **route** toward an **outcome**: effort toward getting the job done, clouds toward rain. Other routes may still exist.
 
-**Needs:** [Joins](joins.md) and [dependent clauses](core.md#dependent-clauses) (**`adoro`**).
+TODO: reword above more naturally
 
 ## Beginner
 <a id="beginner"></a>

@@ -78,7 +78,7 @@ const JOIN_JOB: Record<string, string> = {
   ua: "everything-but",
   uo: "anything-but",
   e: "rank/more",
-  ae: "as…as",
+  ae: "equal-rank",
   oe: "ranked-or",
   ue: "rank/less",
 };

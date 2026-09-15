@@ -62,13 +62,13 @@ When English would say *as challenging as*, you are not picking a winner. You ar
 
 > `zazawan zululon zael gomonam.`
 >
-> z-Azawan | z-Ululon | z-as…as | g-challenge
+> z-Azawan | z-Ululon | z-equal-rank | g-challenge
 >
 > "Azawan is as challenging as Ululon."
 
 > `zululon zuhubun zael guzumum.`
 >
-> z-Ululon | z-Uhubun | z-as…as | g-happy
+> z-Ululon | z-Uhubun | z-equal-rank | g-happy
 >
 > "Ululon is as happy as Uhubun."
 
@@ -78,7 +78,7 @@ When English would say *as challenging as*, you are not picking a winner. You ar
 
 > `zazawan zululon zaem gudubul.`
 >
-> z-Azawan | z-Ululon | z-as…as.open | g-bright
+> z-Azawan | z-Ululon | z-equal-rank.open | g-bright
 >
 > "Azawan is about as bright as Ululon."
 
@@ -122,7 +122,7 @@ z-Azawan | z-Ululon | z-rank/more | g-agility
 ::: details Show answer
 `zuhubun zazawan zael ganalam.`
 
-z-Uhubun | z-Azawan | z-as…as | g-slow
+z-Uhubun | z-Azawan | z-equal-rank | g-slow
 :::
 
 **3.** *Ululon is the hastiest.*
@@ -138,7 +138,7 @@ z-Ululon | z-rank/more | g-haste
 ::: details Show answer
 `zazawan zuhubun zaem guvuvem.`
 
-z-Azawan | z-Uhubun | z-as…as.open | g-agility
+z-Azawan | z-Uhubun | z-equal-rank.open | g-agility
 :::
 
 **5.** *Ululon is much more intense than Azawan.*
@@ -189,7 +189,7 @@ z-Uhubun | z-rank/more | g-agility
 
 ::: details Show answer
 
-z-Ululon | z-Uhubun | z-as…as | g-haste
+z-Ululon | z-Uhubun | z-equal-rank | g-haste
 
 *Ululon is as hasty as Uhubun.*
 :::
@@ -198,7 +198,7 @@ z-Ululon | z-Uhubun | z-as…as | g-haste
 
 ::: details Show answer
 
-z-Uhubun | z-Azawan | z-as…as.open | g-intensity
+z-Uhubun | z-Azawan | z-equal-rank.open | g-intensity
 
 *Uhubun is about as intense as Azawan.*
 :::
@@ -281,7 +281,7 @@ When English would say *Ululon walks more intensely than Azawan*, the ladder is 
 
 > `zululon zazawan zael hohogem vawalal.`
 >
-> z-Ululon | z-Azawan | z-as…as | h-intensity | v-walk
+> z-Ululon | z-Azawan | z-equal-rank | h-intensity | v-walk
 >
 > "Ululon walks as intensely as Azawan."
 
