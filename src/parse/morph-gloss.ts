@@ -20,6 +20,7 @@
  * | `howoram` | `h-plan-sketch` | overlay grain `-m` |
  * | mid-word `x` | always `-x-` segments | never a fused English name |
  * | house-cast `-n` | `Azawan` / `Ululon` / `Uhubun` | |
+ * | mention `{…}` / spoken TYPE **o** interior | pass through the surface (`z-odogo`, `odogol`) | not the English lemma |
  * | `zugobon` / `zedonen` / `zahan` / `zenenun` | `speaker` / `listener` / `interlocutors` / `someone` | |
  * | ordinary lexicon (`vejel`, `vajul`, …) | packed `english_by_pos` when present for this role + sense, else literal / metaphor | [glosses.md](../../docs/meta/glosses.md#role-english) |
  */
@@ -238,6 +239,8 @@ export type MorphGlossContext = {
   fillAsk?: boolean;
   discourseReviser?: boolean;
   restrictorListed?: boolean;
+  /** Spoken mention interior (TYPE **o**): gloss the surface, not the lemma. */
+  passThrough?: boolean;
 };
 
 export type CompareMorphGlossResult = {
@@ -277,6 +280,7 @@ export function morphGlossFor(
   tables: ClassifyTables,
   ctx: MorphGlossContext = {},
 ): string {
+  if (ctx.passThrough) return word.raw;
   const body = senseLabel(word, tables, ctx);
   if (word.family.kind === "reviser") return body;
   const prefix =
@@ -319,6 +323,15 @@ function morphGlossTokens(
   const family = word.family;
   if (family.kind === "writingSpan" && !family.anaphor) {
     const payload = family.payload.trim();
+    if (payload && family.bracket === "{") {
+      const prefix = word.gl ? "gl" : word.pos ? word.pos : "";
+      const chunks = payload.match(/\S+/g) ?? [payload];
+      if (chunks.length === 1 && prefix) {
+        if (nested) return [`${prefix}-mention`, chunks[0]!];
+        return [`${prefix}-${chunks[0]!}`];
+      }
+      return prefix ? [`${prefix}-mention`, ...chunks] : chunks;
+    }
     if (payload && family.bracket !== "<") {
       const inner: string[] = [];
       try {
@@ -327,7 +340,7 @@ function morphGlossTokens(
         }
       } catch {
         for (const chunk of payload.match(/\S+/g) ?? []) {
-          inner.push(mentionPayloadEnglish(chunk, tables));
+          inner.push(chunk);
         }
       }
       const prefix =
@@ -559,10 +572,44 @@ function analyzeLine(
     parsed = undefined;
   }
 
+  const passThrough = mentionPassThroughFlags(words);
   const ctxByIndex = words.map((word, index) =>
-    contextFor(word, index, words, parsed?.resolve, parsed),
+    contextFor(word, index, words, parsed?.resolve, parsed, passThrough[index]),
   );
   return { words, ctxByIndex };
+}
+
+/** Spoken TYPE **o** interiors (atomic next token, or until the matching close). */
+function mentionPassThroughFlags(words: LexWord[]): boolean[] {
+  const flags = words.map(() => false);
+  const stack: string[] = [];
+  let atomicMentionNext = false;
+  for (let i = 0; i < words.length; i++) {
+    if (atomicMentionNext) {
+      flags[i] = true;
+      atomicMentionNext = false;
+      continue;
+    }
+    const family = words[i]!.family;
+    if (family.kind === "spanClose") {
+      stack.pop();
+      continue;
+    }
+    if (family.kind === "x" && family.xFamily === "span") {
+      const type = family.typeVowel ?? "";
+      const edge = family.edgeVowel ?? "";
+      if (stack.includes("o")) flags[i] = true;
+      if (edge === "u") continue;
+      if (edge === "o") {
+        if (type === "o") atomicMentionNext = true;
+        continue;
+      }
+      stack.push(type);
+      continue;
+    }
+    if (stack.includes("o")) flags[i] = true;
+  }
+  return flags;
 }
 
 function contextFor(
@@ -571,8 +618,10 @@ function contextFor(
   words: LexWord[],
   resolve: ResolveInfo | undefined,
   parsed: ParseResult | undefined,
+  passThrough?: boolean,
 ): MorphGlossContext {
   const ctx: MorphGlossContext = {};
+  if (passThrough) ctx.passThrough = true;
   if (resolve) {
     const bind = bindFor(word, index, words, resolve.anaphors);
     if (bind?.antecedent) ctx.antecedent = bind.antecedent;
@@ -930,6 +979,7 @@ function writingSpanLabel(
     return "←opaque";
   }
   const payload = family.payload;
+  if (family.bracket === "{") return payload;
   const stem = payload.endsWith("n") ? payload.slice(0, -1) : payload;
   if (HOUSE_CAST[stem] && payload.endsWith("n")) return HOUSE_CAST[stem]!;
   if (HOUSE_CAST[payload]) return HOUSE_CAST[payload]!;
@@ -1030,13 +1080,6 @@ function rootSense(
   if (row?.literal) return hyphenEnglish(row.literal);
   if (row?.metaphorical) return hyphenEnglish(row.metaphorical);
   return root;
-}
-
-function mentionPayloadEnglish(chunk: string, tables: ClassifyTables): string {
-  const row = tables.published.get(chunk);
-  if (row?.literal) return hyphenEnglish(row.literal);
-  if (row?.metaphorical) return hyphenEnglish(row.metaphorical);
-  return chunk;
 }
 
 function titleAgalanName(root: string, withN: boolean): string {

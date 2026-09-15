@@ -212,8 +212,21 @@ describe("compareMorphGloss", () => {
     );
   });
 
-  it("mentions use English for unparsed citation stems inside braces", () => {
-    expectLine("z{odogo} gumuzem", "z-dog | g-small");
+  it("mentions pass through the form, not the English lemma", () => {
+    expectLine("z{odogo} gumuzem", "z-odogo | g-small");
+    expectLine("zoxol odogol gumuzem", "z-mention-x-atomic | odogol | g-small");
+    expectLine(
+      "z{zazawan vuzunul} gumuzem",
+      "z-mention | zazawan | vuzunul | g-small",
+    );
+    expectLine(
+      "zazawan d@[uzugon ululon] vawem",
+      "z-Azawan | d-cite | Uzugon | Ululon | v-rejection",
+    );
+    expectLine(
+      "zazawan d@{uzugon} vawem",
+      "z-Azawan | d-uzugon | v-rejection",
+    );
   });
 
   it("ordinary -l on a need host root uses literal sense, not need overlay", () => {
@@ -270,13 +283,14 @@ describe("compareMorphGloss", () => {
     expectLine("hogegam hanedem", "h-HIGH | h-CIRCUM");
   });
 
-  it("span interiors gloss as English", () => {
+  it("span interiors: cite and aside gloss English; mention passes through", () => {
     expectLine("zazawan vawalal h(huzumum)", "z-Azawan | v-walk | h-happy");
     expectLine("jul zululon v[vozodol]", "j-prohibition | z-Ululon | v-stop");
     expectLine(
       "zazawan vawalal h(zululon velebel)",
       "z-Azawan | v-walk | h- | z-Ululon | v-sleep",
     );
+    expectLine("zululon daxol ujudul vezehel", "z-Ululon | d-cite-x-atomic | judge | v-tell");
   });
 
   it("viewpoint laterals keep compass on DIR", () => {

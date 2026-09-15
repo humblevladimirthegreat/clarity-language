@@ -28,13 +28,13 @@ The whole `d[azawan]` is the direct object (who or what is acted on). If the int
 
 You can mark how faithful the quote is. Put the mark **after** the role letter, before the opening bracket.
 
-Verbatim wording is **exact**: no extra mark (`d[azawan]`). When you mean the gist, not the exact words, write **`~`** (`d~[zazawan vuzunul]`). When the chunk is a titled designation of that wording, write **`@`** (`d@[uzugon]`).
+Verbatim wording is **exact**: no extra mark (`d[azawan]`). When you mean the gist, not the exact words, write **`~`** (`d~[zazawan vuzunul]`). When the chunk is the **work** that bears a **multi-word** title (the song, proverb, book — not the name-string), write **`@`** (`d@[uzugon ululon]`). A one-word work or person is ordinary **-n** (`duzugon`), not `d@[uzugon]`, unless the role letter or the ending is **part of the title** you are packaging.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | *(none)* | exact | verbatim wording | bare brackets already quote; extra ink would hedge |
 | **`~`** | paraphrase | the gist, not the exact words | **~** looks like “about / approximately” |
-| **`@`** | proper | titled designation of that wording | **@** like a social media handle |
+| **`@`** | proper | the work known by that title | **@** like a social media handle |
 
 > `zululon d~[zazawan vuzunul] vuwurul.`
 >
@@ -42,11 +42,11 @@ Verbatim wording is **exact**: no extra mark (`d[azawan]`). When you mean the gi
 >
 > "Ululon wrote something like “Azawan sings.”"
 
-> `zuhubun d@[uzugon] vuzunul.`
+> `zuhubun d@[uzugon ululon] vuzunul.`
 >
-> z-Uhubun | d-Uzugon | v-sing
+> z-Uhubun | d-cite | Uzugon | Ululon | v-sing
 >
-> "Uhubun sang “Uzugon.”"
+> "Uhubun sang Uzugon Ululon."
 
 ### Resume (`[=]`)
 
@@ -60,17 +60,35 @@ To point back at a prior span without repeating its interior, put **`=`** inside
 
 ### Mention (`{…}`)
 
-A **mention** holds the **word or form itself** (*the word “dog”*), not a quote of speech. Write the role letter, then curly braces around that form.
+A **mention** holds a **word or phrase** as that spelling, not a quote of speech. Write the role letter, then curly braces around it. English says *the word …* or *the phrase …* and keeps the Agalan interior (`odogo`, not *dog*). To quote what someone said, use [cite](#writing).
 
 > `z{odogo} gumuzem.`
 >
-> z-dog | g-small
+> z-odogo | g-small
 >
-> "The word “dog” is small."
+> "The word “odogo” is small."
 
-With **`@`**, mention is *the title X* / *the proverb X* as a **named unit**: `d@{uzugo}`.
+> `z{zazawan vuzunul} gumuzem.`
+>
+> z-mention | zazawan | vuzunul | g-small
+>
+> "The phrase “zazawan vuzunul” is small."
 
-**Compare with:** quoting the title as wording uses cite (`d@[uzugon]` *sang “Uzugon”*). Mention `d@{uzugo}` is the titled unit, not the sung wording.
+With **`@`**, mention is the **name** (the title-string you could rename), even as **one word**: `d@{uzugon}` is not `duzugon`. Cite with **`@`** is the **work**; that span is for a **multi-word** title (`d@[uzugon ululon]`). One-word *Uzugon* as the work is ordinary **-n** (`duzugon`).
+
+> `zazawan d@[uzugon ululon] vawem.`
+>
+> z-Azawan | d-cite | Uzugon | Ululon | v-rejection
+>
+> "Azawan dislikes Uzugon Ululon." (the work)
+
+> `zazawan d@{uzugon} vawem.`
+>
+> z-Azawan | d-uzugon | v-rejection
+>
+> "Azawan dislikes the name “uzugon.”" (might still like the work)
+
+**Compare with:** `duzugon` is *Uzugon* (the work or person). `d@{uzugon}` is only the **name**.
 
 ### Opaque and loan words
 <a id="loans"></a>
@@ -128,7 +146,7 @@ The letter on the open is the role of the **entire span** in the outer sentence.
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `/d/` | object | *said / wrote / saw “…”* (`d[azawan]`, `d[=]`, <code>d&lt;kimchi&gt;</code>) | **d** ≈ done to |
-| `/z/` | subject | the wording or form **is** the subject (`z{odogo}`) | **z** ≈ star (who it is about) |
+| `/z/` | subject | the word or phrase **is** the subject (`z{odogo}`) | **z** ≈ star (who it is about) |
 | `/v/` | verb | echo the act as wording (`v[vozodol]`) | **v** as in English *verb* |
 | `/h/` | adverb | asides (`h(…)`) | **h** starts *how* / *when* / *where* |
 
@@ -178,12 +196,12 @@ z-Azawan | d-Azawan | v-tell
 z-Ululon | d-cite | z-Azawan | v-sing | v-write
 :::
 
-**3.** *The word “melody” is small.*
+**3.** *The word “uzugo” is small.*
 
 ::: details Show answer
 `z{uzugo} gumuzem.`
 
-z-note | g-small
+z-uzugo | g-small
 :::
 
 **4.** *Azawan saw kimchi.* (foreign surface)
@@ -192,10 +210,10 @@ z-note | g-small
 <code>zazawan d&lt;kimchi&gt; vejel.</code>
 :::
 
-**5.** *Uhubun sang “Uzugon.”* (title as wording)
+**5.** *Uhubun sang Uzugon.* (one-word work: ordinary **-n**)
 
 ::: details Show answer
-`zuhubun d@[uzugon] vuzunul.`
+`zuhubun duzugon vuzunul.`
 
 z-Uhubun | d-Uzugon | v-sing
 :::
@@ -224,6 +242,14 @@ j-prohibition | z-Ululon | v-stop
 j-question | z-Ululon | d-←cite | v-tell
 :::
 
+**9.** *The phrase “zazawan vuzunul” is small.*
+
+::: details Show answer
+`z{zazawan vuzunul} gumuzem.`
+
+z-mention | zazawan | vuzunul | g-small
+:::
+
 #### Agalan → English
 
 **1.** <code>zululon d&lt;kimchi&gt; vejel.</code>
@@ -232,31 +258,31 @@ j-question | z-Ululon | d-←cite | v-tell
 *Ululon saw kimchi.* (opaque surface)
 :::
 
-**2.** `zazawan d{uzugo} vezehel.`
+**2.** `zazawan d{uzugo} vejel.`
 
 ::: details Show answer
 
-z-Azawan | d-note | v-tell
+z-Azawan | d-uzugo | v-see
 
-*Azawan said the word “melody.”*
+*Azawan saw the word “uzugo.”*
 :::
 
-**3.** `zuhubun d@{uzugo} vuwurul.`
+**3.** `zuhubun d@{uzugon} vuwurul.`
 
 ::: details Show answer
 
-z-Uhubun | d-note | v-write
+z-Uhubun | d-uzugon | v-write
 
-*Uhubun wrote the title Uzugon.*
+*Uhubun wrote the name “uzugon.”*
 :::
 
 **4.** `z{uzugo} gumuzem.`
 
 ::: details Show answer
 
-z-note | g-small
+z-uzugo | g-small
 
-*The word “melody” is small.*
+*The word “uzugo” is small.*
 :::
 
 **5.** <code>z@&lt;Sam&gt; d[azawan] vezehel.</code>
@@ -289,6 +315,15 @@ j-question | z-Uhubun | d-←cite | v-tell
 *Uhubun said that?!*
 :::
 
+**9.** `z{zululon vezehel} gumuzem.`
+
+::: details Show answer
+
+z-mention | zululon | vezehel | g-small
+
+*The phrase “zululon vezehel” is small.*
+:::
+
 ## Intermediate
 <a id="intermediate"></a>
 
@@ -313,7 +348,7 @@ Beginner writing already packages a quote, mention, aside, or blob in brackets. 
 | **TYPE** | **a** cite · **e** aside · **o** mention · **u** opaque | span kind |
 | **`x`** | mid-word joiner | marks a span-fence form |
 | **EDGE** | **a** · **e** · **o** · **u** | how far an open runs |
-| **ENDING** | **-l** exact · **-m** paraphrase · **-n** proper · **-r** resume | fidelity, titled designation, or span resume |
+| **ENDING** | **-l** exact · **-m** paraphrase · **-n** proper · **-r** resume | fidelity, work vs name, or span resume |
 
 **`daxal`** is `d` + `a` + `x` + `a` + `l`: open an exact multi-token cite as direct object (needs close).
 
@@ -327,10 +362,10 @@ Beginner already used square, round, curly, and angle brackets for cite, aside, 
 |--------|------|---------|-----|
 | **a** | **cite** (`[` … `]`); clausal interiors: outer speaker does **not** assert | quoted wording | **a** ≈ add (hold cited words) |
 | **e** | **aside** (`h(` … `)`); `/h/` digression; outer speaker **does** assert; interior may be a fragment or a same-speech-act clause body | parenthetical | **e** ≈ order (a side instruction) |
-| **o** | **mention** (`{` … `}`); with **-n**, named unit | the word or form itself | **o** ≈ one (the form as one object) |
+| **o** | **mention** (`{` … `}`); with **`@`** / **-n**, the **name** | the word or phrase; proper = the name-string | **o** ≈ one (one word or phrase as the object) |
 | **u** | **opaque** (`<` … `>`); interior is not native Agalan | foreign / code / raw blob | **u** ≈ undo (not native Agalan) |
 
-**Compare with:** a native office name uses ordinary **-n** (`zabogon`) — [named handles](reference-suffix.md#named-handles). Mention `{abogo}` is that **form**; opaque / loan is a **foreign** acronym’s surface (<code>z@&lt;FBI&gt;</code>).
+**Compare with:** a native office name uses ordinary **-n** (`zabogon`) — [named handles](reference-suffix.md#named-handles). Mention `{abogo}` is that **word**; opaque / loan is a **foreign** acronym’s surface (<code>z@&lt;FBI&gt;</code>).
 
 ### EDGE (extent)
 <a id="edge"></a>
@@ -363,7 +398,7 @@ Beginner already used a bare open, **`~`**, **`@`**, and **`[=]`**. Speech puts 
 |--------|---------|---------|-----|
 | **-l** | **exact** — verbatim / precise surface | bare open (no `@` / `~`) | **-l** stand behind the wording |
 | **-m** | **paraphrase** — gist / non-verbatim rendering | **`~`** after the role letter (`d~[…]`) | **-m** leaves the hold open |
-| **-n** | **proper** — titled / conventional designation of the **whole span** | **`@`** after the role letter (`d@[…]`) | **-n** names the chunk |
+| **-n** | **proper** — cite: the **work**; mention: the **name** | **`@`** after the role letter (`d@[…]`, `d@{…}`) | **-n** names the chunk |
 | **-r** | **resume** — the **most recent span of this TYPE**; PoS = role **now** | `d[=]`, `h(=)`, `z{=}`, … | **-r** points back |
 
 Hedged proper (`@~`) is written **`d@[…]`** only (spoken as the **proper** open with uncertain tone). **`@`** / **`~`** do not combine with resume **-r**.
@@ -385,7 +420,7 @@ Beginner brackets map to these spoken opens and closes.
 | `h(=)` | `hexur` | aside resume |
 | `d<…>` / `d~<…>` / `d@<…>` | `duxal` / `duxam` / `duxan` … `xuxul` | opaque |
 | `d[azawan]` | `daxol azawan` | atomic (EDGE **o**) |
-| `d@[uzugon]` | `daxon uzugon` | atomic proper cite |
+| `d@[uzugon ululon]` | `daxan uzugon ululon xuxul` | proper multi-token cite (the work) |
 | `d[…` … (to clause end) | `daxel` … | clause-scoped (EDGE **e**) |
 | `d[]` | `daxul` | empty / redacted (EDGE **u**) |
 | `d[=]` | `daxur` | resume (EDGE **u**) |
@@ -540,6 +575,14 @@ z-Azawan | ^-start | h-possibility | d-lie | ^-end | v-see
 z-Ululon | ^-start | z-Azawan | z-and | ^-end | z-and.open | v-punch
 :::
 
+**9.** *The phrase “ululon vadezel” is small.* (spoken multi-token mention)
+
+::: details Show answer
+`zoxal ululon vadezel xuxul gumuzem.`
+
+z-mention-x-multi | ululon | vadezel | x-span-close | g-small
+:::
+
 #### Agalan → English
 
 **1.** `zululon daxel azawan.`
@@ -586,13 +629,13 @@ z-Azawan | v-tell | h-aside-x-atomic | h-happy
 *Azawan tells (happily).*
 :::
 
-**6.** `zululon d[ z{ujudu} ] vezehel.`
+**6.** `zoxol ujudu gumuzem.`
 
 ::: details Show answer
 
-z-Ululon | d-cite | z-mention | z-judge | v-tell
+z-mention-x-atomic | ujudu | g-small
 
-*Ululon said the word “judge.”*
+*The word “ujudu” is small.*
 :::
 
 **7.** `zululon ^ huzurem dululel ^ vejel.`
@@ -611,6 +654,15 @@ z-Ululon | ^-start | h-possibility | d-lie | ^-end | v-see
 z-Ujudun | v-scream
 
 *The Judge screamed.*
+:::
+
+**9.** `zoxal uhubun vazagal xuxul gumuzem.`
+
+::: details Show answer
+
+z-mention-x-multi | uhubun | vazagal | x-span-close | g-small
+
+*The phrase “uhubun vazagal” is small.*
 :::
 
 ## Advanced
@@ -785,7 +837,7 @@ z-Ululon | d-cite-x-multi | flaw | x-span-close-editorial | x-span-close-all | v
 
 z-Azawan | d-cite-x-multi | d-opaque-x-atomic | xuxul | x-span-close | v-tell
 
-*Azawan said the word “xuxul.”*
+*Azawan said “xuxul.”*
 :::
 
 **4.** <code>zululon d[ vuwurul d&lt;#&gt; ] vezehel.</code>

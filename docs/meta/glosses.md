@@ -8,7 +8,7 @@ A gloss should answer: *what is each Agalan piece doing in the clause — in Eng
 
 | Goal | Gloss does | Gloss does not |
 |------|------------|----------------|
-| Slot + sense | Show PoS letter and the **active English sense** | Quote Agalan phonology (`ugobo`, `uzumu`, …) |
+| Slot + sense | Show PoS letter and the **active English sense** | Quote Agalan phonology (`ugobo`, `uzumu`, …), except [mention / opaque interiors](#span-interiors) |
 | Separate senses | Treat literal / metaphorical / proper / overlay as **different English roots** | Chain etymology (`microphone→speaker`) |
 | Endings | Drop **-l** / **-m** / **-n** when they only pick which sense-root applies | Repeat those endings after a sense that already encodes them |
 | Structure | Keep mid-word `x` pieces, **-x**, and binding visible | Invent full English syntax for Agalan structure; copy writing glyphs (`@` / `~`) into the gloss |
@@ -113,6 +113,8 @@ Do not use `/` (already means PoS in the docs, and reads as *or*), hyphen (alrea
 - Force English can say (*please*, *don’t*, *I wonder*)
 - Stance that changes the verb (*can't* vs *ought not* vs unmet need as content)
 - Comparatives / equatives / causation / plan when they are the point of the turn
+- Mention interiors as *the word “odogo”* / *the phrase “…”* (Agalan spelling, not the English lemma) — [span interiors](#span-interiors)
+- Opaque interiors as the same blob (`kimchi`, `FBI`)
 
 ### Example (same Agalan, three readings)
 
@@ -265,7 +267,29 @@ Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) —
 | Span open / close | `hexal` … `xuxul` | `h-aside-x-multi` · … · `x-span-close` |
 | Number / enumeration | `x#e-` | `x-starting-with` |
 
-For **phrasal proper names**, gloss each piece (`j-Ubune-x-Unowen`, `z-Uzuzu-x-Ogove-x-Adedan`). Mid-word **`x`** stays visible as `-x-`. Do not put Agalan letters in the english slot.
+For **phrasal proper names**, gloss each piece (`j-Ubune-x-Unowen`, `z-Uzuzu-x-Ogove-x-Adedan`). Mid-word **`x`** stays visible as `-x-`. Do not put Agalan letters in the english slot, except [mention interiors](#span-interiors).
+
+### Mention and opaque interiors
+<a id="span-interiors"></a>
+
+**Mention** (`{…}` / spoken TYPE **o**) is a **word or phrase** as that spelling, not a quoted utterance and not the English lemma. Morph **pass through** the interior. Free English says *the word …* or *the phrase …* and keeps that spelling.
+
+| Kind | Morph | Free English |
+|------|--------|----------------|
+| Mention (one word) | Payload as written (`z{odogo}` → `z-odogo`; spoken `zoxol odogol` → `z-mention-x-atomic \| odogol`) | *The word “odogo” is small.* |
+| Mention (phrase) | Open + each interior token (`z{zazawan vuzunul}` → `z-mention \| zazawan \| vuzunul`) | *The phrase “zazawan vuzunul” is small.* |
+| Mention **`@`** | Pass-through (`d@{uzugon}` → `d-uzugon`) | *the name “uzugon”* (the title-string, not the work; still a mention when the name is one word) |
+| Opaque | Payload as written (`kimchi`, `FBI`) | The same blob |
+| Cite | Inner **Agalan words** glossed as usual (`d[azawan]` → `d-Azawan`; `daxol ujudul` → `d-cite-x-atomic \| judge`) | Translation of the **utterance** (*said “judge.”*) |
+| Cite **`@`** | Inner words as usual (`d@[uzugon ululon]` → `d-cite \| Uzugon \| Ululon`) | The **work** (*dislikes Uzugon Ululon*, *sang Uzugon Ululon*) |
+
+Speech/writing reports (*said “X,”* *sang “X,”* *don’t “halt”*) are **cite**, even when English says *the word X*. Do not wrap that object in `{…}`. Sense-talk about a lexeme (*is a noun*, *is archaic*) is still mention; there is no extra “translate the lemma” rule — keep *the word/phrase “…”*.
+
+> `z{odogo} gumuzem.`
+>
+> z-odogo | g-small
+>
+> "The word “odogo” is small."
 
 ### Underspecification and joins
 
@@ -402,7 +426,7 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 
 ## Checklist
 
-1. English senses only — no Agalan root spellings. Verb senses are the uninflected lemma (`dance`, not `dancing`).
+1. English senses only — no Agalan root spellings, except [mention / opaque interiors](#span-interiors). Verb senses are the uninflected lemma (`dance`, not `dancing`).
 2. No `→` etymology chains.
 3. No **-l** / **-m** / **-n**, and no **`@`** / **`~`**, when they only selected the sense-root. Named **-n** is the English name (`z-Azawan`), not `-n`, `@`, or `-proper`.
 4. Compounds / stance / role / span `x` pieces are always hyphenated segments (`j-Ubune-x-Unowen`). Do not fuse a name into one unsegmented English label.
@@ -411,6 +435,7 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 
 ## See also
 
+- [spans.md](../grammar/spans.md) — mention / cite / opaque; interiors [above](#span-interiors)
 - [reference-suffix.md](../grammar/reference-suffix.md) — **-l** / **-m** / **-n** / **-r**
 - [special-vocabulary.md](../grammar/special-vocabulary.md#sense-form) — overlays and closed labels
 - [pronouns.md](../grammar/pronouns.md) — **-r** and special pronouns
