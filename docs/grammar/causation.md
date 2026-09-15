@@ -328,10 +328,10 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Mar
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
 | *knob* | `ogozol` | |
-| *flood* | `ogegal` | |
+| *flood* | `ogegam` | `ogegal` *ocean-wave* |
 | *key* | `agegol` | |
 | *bell* | `obelel` | |
-| *pressure* | `abamal` | |
+| *pressure* | `abamam` | `abamal` *clamp* |
 | *sit* | `vajul` | `ajul` *chair* |
 | *pour* | `vorurul` | `orurul` *pour* |
 | *see* | `vejel` | `ejel` *eye* |
@@ -355,8 +355,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Mar
 **2.** *Flooding without a knob.*
 
 ::: details Show answer
-`zogegal huan bogozol.`
-<!-- gloss: z-ocean-wave | h-without | b-knobs -->
+`zogegam huan bogozol.`
+<!-- gloss: z-flood | h-without | b-knobs -->
 :::
 
 **3.** *It has to be Ululon.*
@@ -397,8 +397,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Mar
 **8.** *Flooding would work (as mechanism).*
 
 ::: details Show answer
-`zogegal zaom hegegam.`
-<!-- gloss: z-ocean-wave | z-and/or.open | h-CAUSE -->
+`zogegam zaom hegegam.`
+<!-- gloss: z-flood | z-and/or.open | h-CAUSE -->
 :::
 
 #### Agalan → English
@@ -431,8 +431,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Mar
 *Azawan pours if and only if Uhubun tells.*
 :::
 
-**5.** `zululon vurunul hurugum badorol zogegal.`
-<!-- gloss: z-Ululon | v-run | h-because | b-next-clause | z-ocean-wave -->
+**5.** `zululon vurunul hurugum badorol zogegam.`
+<!-- gloss: z-Ululon | v-run | h-because | b-next-clause | z-flood -->
 
 ::: details Show answer
 *Ululon runs because of flooding.*
@@ -452,8 +452,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Mar
 *Ululon pours (as mechanism).*
 :::
 
-**8.** `zogegal huan babamal.`
-<!-- gloss: z-ocean-wave | h-without | b-clamp -->
+**8.** `zogegam huan babamam.`
+<!-- gloss: z-flood | h-without | b-pressure -->
 
 ::: details Show answer
 *Flooding without / excluding pressure.*

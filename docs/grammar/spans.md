@@ -495,6 +495,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zululon duxol FBI vejel.`
+<!-- gloss: z-Ululon | d-opaque-x-atomic | FBI | v-eye -->
 :::
 
 **6.** *Azawan said “Azawan” (happily).* (cite nesting an aside)
@@ -541,7 +542,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *That (cite) is small.*
 :::
 
-**4.** `zuhubun daxon ujudu vezehel.`
+**4.** `zuhubun daxon ujudun vezehel.`
+<!-- gloss: z-Uhubun | d-cite-x-atomic | Ujudun | v-speech -->
 
 ::: details Show answer
 *Uhubun said “Ujudu.”*
@@ -708,12 +710,14 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 ::: details Show answer
 <code>zazawan d[ vuwurul d&lt;]&gt; ] vezehel.</code>
+<!-- gloss: z-Azawan | d-cite | v-write | d-] | v-speech -->
 :::
 
-**5.** *Uhubun said “code > 1.”* (spoken opaque, because a writing `<>` would close on the first `>`)
+**5.** *Uhubun said “code > 1.”* (spoken opaque, because a writing angle-bracket fence would close on the first greater-than)
 
 ::: details Show answer
 `zuhubun duxal code > 1 xuxul vezehel.`
+<!-- gloss: z-Uhubun | d-opaque-x-multi | code | > | 1 | x-span-close | v-speech -->
 :::
 
 #### Agalan → English
@@ -733,7 +737,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 :::
 
 **3.** `zazawan daxal duxol xuxul xuxul vezehel.`
-<!-- gloss: z-Azawan | d-cite-x-multi | d-opaque-x-atomic | x-span-close | x-span-close | v-speech -->
+<!-- gloss: z-Azawan | d-cite-x-multi | d-opaque-x-atomic | xuxul | x-span-close | v-speech -->
 
 ::: details Show answer
 *Azawan said the word “xuxul.”*

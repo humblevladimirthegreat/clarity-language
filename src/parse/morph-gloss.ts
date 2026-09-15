@@ -25,24 +25,20 @@
  */
 
 import { classify, type ClassifyTables } from "./classify.js";
-import { parse as peggyParse, SyntaxError as PeggySyntaxError } from "../generated/word-parser.js";
 import { parseWithTables } from "./parse-core.js";
+import { parseWords, WordParseError } from "./word.js";
 import type {
   AnaphorBind,
   AskRecord,
   Ending,
   LexOverlay,
   LexWord,
-  MorphWord,
   NumberGroup,
   NumberStem,
   ParseResult,
   Pos,
   ResolveInfo,
 } from "./types.js";
-import { parseWord, WordParseError } from "./word.js";
-
-const PUNCT = new Set([".", "?", "!"]);
 
 const HOUSE_CAST: Record<string, string> = {
   azawa: "Azawan",
@@ -368,15 +364,13 @@ function morphGlossTokens(
     const payload = family.payload.trim();
     if (payload && family.bracket !== "<") {
       const inner: string[] = [];
-      for (const chunk of payload.match(/\S+/g) ?? []) {
-        const core = peelWord(chunk);
-        if (!core) continue;
-        try {
-          inner.push(
-            ...morphGlossTokens(classify(parseWord(core), tables), tables, {}, true),
-          );
-        } catch {
-          inner.push(core);
+      try {
+        for (const innerWord of parseWords(payload)) {
+          inner.push(...morphGlossTokens(classify(innerWord, tables), tables, {}, true));
+        }
+      } catch {
+        for (const chunk of payload.match(/\S+/g) ?? []) {
+          inner.push(chunk);
         }
       }
       const prefix =
@@ -510,30 +504,11 @@ function unwrapCode(text: string): string | null {
   return m ? m[1]! : null;
 }
 
-function peelWord(chunk: string): string {
-  if (chunk.length > 1 && PUNCT.has(chunk.at(-1)!)) return chunk.slice(0, -1);
-  return chunk;
-}
-
 function analyzeLine(
   text: string,
   tables: ClassifyTables,
 ): { words: LexWord[]; ctxByIndex: MorphGlossContext[] } {
-  const cores: string[] = [];
-  for (const chunk of text.match(/\S+/g) ?? []) {
-    if (chunk === "^") continue;
-    const core = peelWord(chunk);
-    if (core) cores.push(core);
-  }
-  let morphWords: MorphWord[] = [];
-  if (cores.length) {
-    try {
-      morphWords = peggyParse(cores.join(" "), { startRule: "words" }) as MorphWord[];
-    } catch (error) {
-      if (error instanceof PeggySyntaxError) throw new WordParseError(error);
-      throw error;
-    }
-  }
+  const morphWords = parseWords(text);
   const words = morphWords.map((word) => classify(word, tables));
 
   let parsed: ParseResult | undefined;

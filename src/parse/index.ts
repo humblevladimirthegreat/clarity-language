@@ -21,7 +21,7 @@ export { parseSentenceTokens, SentenceParseError } from "./sentence-parser.js";
 export { letterPrefix, numberMarkerIdentity, resolve } from "./resolve.js";
 export { classifyToTokenType } from "./tokens.js";
 export { segmentUtterance, tokenizeUtterance } from "./tokenize.js";
-export { parseWord, parseWords, probeMorphWord, WordParseError } from "./word.js";
+export { parseWord, parseWords, parseWordStream, probeMorphWord, WordParseError } from "./word.js";
 export { collectAmbiguity } from "./ambiguity.js";
 export { parseWithTables } from "./parse-core.js";
 export { inspectText, glossFor, chipsFor, morphDetails, endingSense } from "./inspect.js";

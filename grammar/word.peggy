@@ -216,10 +216,38 @@ AnaphorBracket
   / "<" "=" ">" { return { bracket: "<" }; }
 
 BracketedPayload
-  = "[" payload:$((!"]" .)*) "]" { return { bracket: "[", payload }; }
-  / "\u007b" payload:$((!"\u007d" .)*) "\u007d" { return { bracket: "\u007b", payload }; }
-  / "(" payload:$((!")" .)*) ")" { return { bracket: "(", payload }; }
+  = "[" payload:SquareInner "]" { return { bracket: "[", payload }; }
+  / "\u007b" payload:CurlyInner "\u007d" { return { bracket: "\u007b", payload }; }
+  / "(" payload:RoundInner ")" { return { bracket: "(", payload }; }
   / "<" payload:$((!">" .)*) ">" { return { bracket: "<", payload }; }
+
+// Native interiors may nest; skip opaque `<>` so `d<]>` does not close `[…]`.
+SquareInner
+  = chars:SquareChar* { return chars.join(""); }
+
+SquareChar
+  = OpaqueIsland
+  / "[" inner:SquareInner "]" { return "[" + inner + "]"; }
+  / !"]" c:. { return c; }
+
+CurlyInner
+  = chars:CurlyChar* { return chars.join(""); }
+
+CurlyChar
+  = OpaqueIsland
+  / "\u007b" inner:CurlyInner "\u007d" { return "\u007b" + inner + "\u007d"; }
+  / !"\u007d" c:. { return c; }
+
+RoundInner
+  = chars:RoundChar* { return chars.join(""); }
+
+RoundChar
+  = OpaqueIsland
+  / "(" inner:RoundInner ")" { return "(" + inner + ")"; }
+  / !")" c:. { return c; }
+
+OpaqueIsland
+  = "<" p:$((!">" .)*) ">" { return "<" + p + ">"; }
 
 // ── Free number words (writing + speech) ────────────────────────────────────
 

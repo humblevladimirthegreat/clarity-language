@@ -1,5 +1,6 @@
 import { parse as peggyParse, SyntaxError as PeggySyntaxError } from "../generated/word-parser.js";
 
+import { scanWordTokens } from "./span-scan.js";
 import type { MorphWord } from "./types.js";
 
 export class WordParseError extends Error {
@@ -24,11 +25,57 @@ export function parseWord(input: string): MorphWord {
   }
 }
 
-/** Parse whitespace-separated words. */
+function opaqueBlob(raw: string): MorphWord {
+  return { raw, family: { kind: "foreign", payload: raw, opaque: true } };
+}
+
+function isOpaqueSpanOpen(word: MorphWord): word is MorphWord & {
+  family: Extract<MorphWord["family"], { kind: "x" }>;
+} {
+  return word.family.kind === "x" && word.family.xFamily === "span" && word.family.typeVowel === "u";
+}
+
+function isSpanCloseToken(text: string): boolean {
+  try {
+    return parseWord(text).family.kind === "spanClose";
+  } catch {
+    return false;
+  }
+}
+
+/** Parse a pre-segmented word list (writing spans already one token). */
+export function parseWordStream(tokens: string[]): MorphWord[] {
+  const out: MorphWord[] = [];
+  for (let i = 0; i < tokens.length; i++) {
+    const token = tokens[i]!;
+    const word = parseWord(token);
+    out.push(word);
+    if (!isOpaqueSpanOpen(word)) continue;
+    const edge = word.family.edgeVowel;
+    if (edge === "o") {
+      i += 1;
+      const blob = tokens[i];
+      if (blob === undefined) {
+        throw new Error(`Opaque atomic span \`${token}\` needs an interior token`);
+      }
+      out.push(opaqueBlob(blob));
+      continue;
+    }
+    if (edge === "a") {
+      i += 1;
+      while (i < tokens.length && !isSpanCloseToken(tokens[i]!)) {
+        out.push(opaqueBlob(tokens[i]!));
+        i += 1;
+      }
+      if (i < tokens.length) out.push(parseWord(tokens[i]!));
+    }
+  }
+  return out;
+}
+
+/** Parse words in an utterance (writing spans may contain spaces). */
 export function parseWords(input: string): MorphWord[] {
-  const trimmed = input.trim();
-  if (!trimmed) return [];
-  return trimmed.split(/\s+/).map((token) => parseWord(token));
+  return parseWordStream(scanWordTokens(input));
 }
 
 const TOP_PROBES = [

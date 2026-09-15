@@ -110,8 +110,8 @@ Short drills for Beginner. Try each item before opening **Show answer**. Tag **c
 **4.** *Azawan can see the rock.*
 
 ::: details Show answer
-`zazawan zaragal vejexal.`
-<!-- gloss: z-Azawan | z-rock | v-eye-able -->
+`zazawan daragal vejexal.`
+<!-- gloss: z-Azawan | d-rock | v-eye-able -->
 :::
 
 **5.** *Azawan climbs.* (ordinary event, no can / can’t tag)
@@ -283,7 +283,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Pre
 <!-- gloss: h-ABIL-unable-modifiable -->
 :::
 
-**4.** *Ability* (topic only: no can / can’t stance).
+**4.** *Cereal* (ability as a topic only: no can / can’t stance).
 
 ::: details Show answer
 `hegeral.`
@@ -355,8 +355,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Pre
 *The key: can’t right now* (capability on that property).
 :::
 
-**6.** `zuhubun vuguguxel.`
-<!-- gloss: z-Uhubun | v-skunk-unable-temporary -->
+**6.** `zuhubun vugugaxel.`
+<!-- gloss: z-Uhubun | v-guard-unable-temporary -->
 
 ::: details Show answer
 *Uhubun can’t guard right now.*

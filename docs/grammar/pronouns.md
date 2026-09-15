@@ -359,8 +359,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **5.** *Ululon pours inside a potted plant. Azawan harvests that way.*
 
 ::: details Show answer
-`zululon hogorem bodedel vorurul. zazawan hogor vurum.`
-<!-- gloss: z-Ululon | h-inclusion | b-cote-d-ivoire | v-pour | z-Azawan | h-←inclusion | v-harvest -->
+`zululon hogorem bobodel vorurul. zazawan hogor vurum.`
+<!-- gloss: z-Ululon | h-inclusion | b-potted-plant | v-pour | z-Azawan | h-←inclusion | v-harvest -->
 :::
 
 **6.** *As for Uhubun, Ululon punches.*

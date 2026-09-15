@@ -188,6 +188,38 @@ describe("parseWord — spans and writing atoms", () => {
     });
   });
 
+  it("parses nested opaque ] inside a cite (spans.md literal-content)", () => {
+    const word = parseOk("d[ vuwurul d<]> ]");
+    assert.equal(word.pos, "d");
+    assert.equal(word.family.kind, "writingSpan");
+    if (word.family.kind === "writingSpan") {
+      assert.equal(word.family.payload, " vuwurul d<]> ");
+    }
+  });
+
+  it("parses spoken opaque interiors as foreign blobs", () => {
+    const atomic = parseWords("zululon duxol FBI vejel");
+    assert.equal(atomic[2]?.family.kind, "foreign");
+    if (atomic[2]?.family.kind === "foreign") {
+      assert.equal(atomic[2].family.payload, "FBI");
+      assert.equal(atomic[2].family.opaque, true);
+    }
+
+    const multi = parseWords("zuhubun duxal code > 1 xuxul vezehel");
+    const payloads = multi
+      .filter((w) => w.family.kind === "foreign")
+      .map((w) => (w.family.kind === "foreign" ? w.family.payload : ""));
+    assert.deepEqual(payloads, ["code", ">", "1"]);
+    assert.equal(multi.at(-2)?.family.kind, "spanClose");
+  });
+
+  it("treats xuxul after atomic opaque as the blob, not a close", () => {
+    const words = parseWords("daxal duxol xuxul xuxul");
+    assert.equal(words[2]?.family.kind, "foreign");
+    if (words[2]?.family.kind === "foreign") assert.equal(words[2].family.payload, "xuxul");
+    assert.equal(words[3]?.family.kind, "spanClose");
+  });
+
   it("parses daxal xuxul as two tokens", () => {
     const words = parseWords("daxal xuxul");
     assert.equal(words.length, 2);

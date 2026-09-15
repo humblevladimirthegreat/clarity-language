@@ -1,6 +1,6 @@
-import { parse as peggyParse } from "../generated/word-parser.js";
 import type { MorphWord } from "./types.js";
 import { classifyAll, type ClassifyTables } from "./classify.js";
+import { writingSpanEnd } from "./span-scan.js";
 import {
   lexWordToToken,
   surfaceAtomToToken,
@@ -9,6 +9,7 @@ import {
 } from "./tokens.js";
 import type { IToken } from "chevrotain";
 import type { LexWord, PunctKind } from "./types.js";
+import { parseWordStream } from "./word.js";
 
 export type TokenizeSegment =
   | { kind: "word"; text: string }
@@ -39,33 +40,42 @@ export function segmentUtterance(text: string): TokenizeSegment[] {
   if (!trimmed) return [];
 
   const segments: TokenizeSegment[] = [];
-  const chunks = trimmed.split(/\s+/);
+  let i = 0;
+  while (i < trimmed.length) {
+    while (i < trimmed.length && /\s/.test(trimmed[i]!)) i += 1;
+    if (i >= trimmed.length) break;
 
-  for (const chunk of chunks) {
-    if (chunk === "^") {
+    if (trimmed[i] === "^") {
       segments.push({ kind: "islandEdge" });
+      i += 1;
       continue;
     }
 
-    const { word, punct } = peelTrailingPunct(chunk);
+    const spanEnd = writingSpanEnd(trimmed, i);
+    if (spanEnd !== undefined) {
+      segments.push({ kind: "word", text: trimmed.slice(i, spanEnd) });
+      i = spanEnd;
+      continue;
+    }
+
+    let j = i;
+    while (j < trimmed.length && !/\s/.test(trimmed[j]!) && trimmed[j] !== "^") {
+      j += 1;
+    }
+    const { word, punct } = peelTrailingPunct(trimmed.slice(i, j));
     if (word) segments.push({ kind: "word", text: word });
     if (punct) segments.push({ kind: "punct", punct });
+    i = j;
   }
 
   return segments;
 }
 
 function parseMorphWords(segments: TokenizeSegment[]): MorphWord[] {
-  const words: MorphWord[] = [];
   const wordTexts = segments
     .filter((s): s is { kind: "word"; text: string } => s.kind === "word")
     .map((s) => s.text);
-
-  if (wordTexts.length === 0) return words;
-
-  const joined = wordTexts.join(" ");
-  const parsed = peggyParse(joined, { startRule: "words" }) as MorphWord[];
-  return parsed;
+  return parseWordStream(wordTexts);
 }
 
 export function tokenizeUtterance(text: string, tables: ClassifyTables): IToken[] {
