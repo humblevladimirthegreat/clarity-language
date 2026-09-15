@@ -84,7 +84,7 @@ describe("lintMorphGlossMarkdown", () => {
 \`zazawan vajul.\`
 :::
 `;
-    const findings = lintMorphGlossMarkdown(md, tables);
+    const { findings } = lintMorphGlossMarkdown(md, tables);
     assert.equal(findings.some((f) => f.kind === "missing-gloss"), true);
   });
 
@@ -97,7 +97,7 @@ describe("lintMorphGlossMarkdown", () => {
 \`zazawan vajul.\`
 :::
 `;
-    const findings = lintMorphGlossMarkdown(md, tables);
+    const { findings } = lintMorphGlossMarkdown(md, tables);
     assert.equal(findings.some((f) => f.kind === "missing-gloss"), false);
   });
 
@@ -106,10 +106,19 @@ describe("lintMorphGlossMarkdown", () => {
 >
 > z-Azawan | v-walk
 `;
-    const findings = lintMorphGlossMarkdown(md, tables);
+    const { findings } = lintMorphGlossMarkdown(md, tables);
     const mismatch = findings.find((f) => f.kind === "mismatch");
     assert.ok(mismatch && mismatch.kind === "mismatch");
     assert.match(mismatch.parser, /v-sit|v-chair/);
+  });
+
+  it("reports checked pair count", () => {
+    const md = `> \`zazawan vajul.\`
+>
+> z-Azawan | v-sit
+`;
+    const { checked } = lintMorphGlossMarkdown(md, tables);
+    assert.equal(checked, 1);
   });
 
   it("formats findings as a stdout block", () => {

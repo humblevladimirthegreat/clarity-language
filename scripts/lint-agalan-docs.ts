@@ -6,7 +6,8 @@
  * `<!-- gloss: … -->` on translation exercises) are compared to the parser.
  * Translation **Roots used here** English is checked against the lexicon.
  * Mismatches, leftover ambiguity, and missing exercise glosses (once a file
- * uses `<!-- gloss:`) fail the run. Findings print to stdout.
+ * uses `<!-- gloss:`) fail the run. Findings print to stdout. Each file logs
+ * how many morph-gloss pairs were checked.
  *
  * Run: npm run lint:agalan
  *      npm run lint:agalan -- [paths...] [--check-ambiguity]
@@ -117,6 +118,7 @@ function main(): void {
   const tables = loadDefaultTables();
   let count = 0;
   let morphCount = 0;
+  let morphChecked = 0;
   let bankCount = 0;
 
   for (const file of files) {
@@ -130,8 +132,10 @@ function main(): void {
       console.error(`${rel}:${line}  \`${issue.token}\`  ${label}  (${issue.detail})`);
     }
 
-    const morphFindings = lintMorphGlossMarkdown(original, tables);
-    for (const finding of morphFindings) {
+    const morphResult = lintMorphGlossMarkdown(original, tables);
+    morphChecked += morphResult.checked;
+    console.log(`${rel}: ${morphResult.checked} morph gloss(es) checked`);
+    for (const finding of morphResult.findings) {
       morphCount += 1;
       console.log(formatMorphGlossFinding(rel, finding));
     }
@@ -159,7 +163,9 @@ function main(): void {
   }
   console.log("OK: overlay hosts match the published lexicon.");
   console.log("OK: Agalan words in docs/grammar/ parse as legal and match the lexicon.");
-  console.log("OK: morph glosses match the parser; translation exercises have gloss comments.");
+  console.log(
+    `OK: ${morphChecked} morph gloss(es) checked; glosses match the parser; translation exercises have gloss comments.`,
+  );
   console.log("OK: translation word-bank English matches the lexicon.");
 }
 

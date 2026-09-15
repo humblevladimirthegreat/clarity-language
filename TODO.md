@@ -3,8 +3,6 @@ https://main.d2xds94zsgwptg.amplifyapp.com
 # TODO
 review TTS
 consider removing emojis from docs (but keep in lexicon)
-confirm logic for detecting glosses, should do a count
-consider visible gloss for exercises
 advanced section somewhere on how order affects emphasis
 local llm systematically review entire lexicon
 

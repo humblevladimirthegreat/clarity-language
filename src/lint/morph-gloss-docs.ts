@@ -68,12 +68,19 @@ export function extractMorphPairs(markdown: string): MorphPair[] {
   return pairs;
 }
 
+export type MorphGlossLintResult = {
+  findings: MorphGlossFinding[];
+  /** Morph-gloss pairs compared to the parser (teach blocks, tables, exercises). */
+  checked: number;
+};
+
 export function lintMorphGlossMarkdown(
   text: string,
   tables: ClassifyTables,
-): MorphGlossFinding[] {
+): MorphGlossLintResult {
   const findings: MorphGlossFinding[] = [];
   const requireExerciseGloss = HAS_GLOSS_COMMENT_RE.test(text);
+  const pairs = extractMorphPairs(text);
 
   for (const item of extractTranslationExercises(text)) {
     if (item.morph == null) {
@@ -88,7 +95,7 @@ export function lintMorphGlossMarkdown(
     }
   }
 
-  for (const pair of extractMorphPairs(text)) {
+  for (const pair of pairs) {
     const line = lineNumberAt(text, pair.index);
     const compare = compareMorphGloss(pair.agalan, pair.morph, tables);
     if (!compare.parseError && !compare.ok) {
@@ -109,7 +116,7 @@ export function lintMorphGlossMarkdown(
       });
     }
   }
-  return findings;
+  return { findings, checked: pairs.length };
 }
 
 export type TranslationExercise = {
