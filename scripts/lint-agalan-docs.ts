@@ -4,6 +4,7 @@
  *
  * Morph-gloss pairs (example blockquotes, Morph-column tables, and
  * `<!-- gloss: … -->` on translation exercises) are compared to the parser.
+ * Translation **Roots used here** English is checked against the lexicon.
  * Mismatches, leftover ambiguity, and missing exercise glosses (once a file
  * uses `<!-- gloss:`) fail the run. Findings print to stdout.
  *
@@ -19,6 +20,10 @@ import {
   formatMorphGlossFinding,
   lintMorphGlossMarkdown,
 } from "../src/lint/morph-gloss-docs.js";
+import {
+  formatWordBankFinding,
+  lintWordBankMarkdown,
+} from "../src/lint/word-bank-docs.js";
 import {
   parseOverlayCsv,
   parsePublishedCsv,
@@ -53,7 +58,8 @@ function parseCli(argv: string[]): { paths: string[] } {
       console.error(`Usage: npm run lint:agalan -- [paths...] [--check-ambiguity]
 
 Checks backticked and fenced Agalan words under docs/grammar/.
-Morph-gloss mismatches, leftover ambiguity, and missing exercise glosses fail.
+Morph-gloss mismatches, leftover ambiguity, missing exercise glosses, and
+translation word-bank English/lexicon mismatches fail.
 --check-ambiguity is always on for the corpus (flag kept for callers).`);
       process.exit(0);
     }
@@ -111,6 +117,7 @@ function main(): void {
   const tables = loadDefaultTables();
   let count = 0;
   let morphCount = 0;
+  let bankCount = 0;
 
   for (const file of files) {
     const original = readFileSync(file, "utf8");
@@ -128,6 +135,12 @@ function main(): void {
       morphCount += 1;
       console.log(formatMorphGlossFinding(rel, finding));
     }
+
+    const bankFindings = lintWordBankMarkdown(original, tables);
+    for (const finding of bankFindings) {
+      bankCount += 1;
+      console.log(formatWordBankFinding(rel, finding));
+    }
   }
 
   if (count > 0) {
@@ -136,14 +149,18 @@ function main(): void {
   if (morphCount > 0) {
     console.log(`\n${morphCount} morph-gloss issue(s).`);
   }
+  if (bankCount > 0) {
+    console.log(`\n${bankCount} translation word-bank issue(s).`);
+  }
 
-  const fail = hostIssues + count + morphCount;
+  const fail = hostIssues + count + morphCount + bankCount;
   if (fail > 0) {
     process.exit(1);
   }
   console.log("OK: overlay hosts match the published lexicon.");
   console.log("OK: Agalan words in docs/grammar/ parse as legal and match the lexicon.");
   console.log("OK: morph glosses match the parser; translation exercises have gloss comments.");
+  console.log("OK: translation word-bank English matches the lexicon.");
 }
 
 try {
