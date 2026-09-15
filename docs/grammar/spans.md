@@ -79,7 +79,7 @@ With **`@`**, mention is *the title X* / *the proverb X* as a **named unit**: `d
 
 > <code>zazawan d&lt;kimchi&gt; vejel.</code>
 >
-> z-Azawan | <code>d-&lt;kimchi&gt;</code> | v-see
+> z-Azawan | <code>d-&lt;kimchi&gt;</code> | v-eye
 >
 > "Azawan saw kimchi." (opaque surface)
 
@@ -383,7 +383,7 @@ Sometimes *possibility* or a join should apply only to a multi-word chunk, not t
 
 > `zazawan ^ huzurem zodogol garedel ^ vejel.`
 >
-> z-Azawan | ^ | h-possibility | z-dog | g-red | ^ | v-see
+> z-Azawan | ^ | h-possibility | z-dog | g-red | ^ | v-eye
 >
 > "Azawan saw, as a possibility, the red dog." (*possibility* targets that chunk).
 
@@ -411,7 +411,7 @@ Sometimes *possibility* or a join should apply only to a multi-word chunk, not t
 
 > `zazawan ^ zululon zal ^ zam vejel.`
 >
-> z-Azawan | ^ | z-Ululon | z-and | ^ | z-and.open | v-see
+> z-Azawan | ^ | z-Ululon | z-and | ^ | z-and.open | v-eye
 >
 > "Azawan and (just Ululon) saw …."
 

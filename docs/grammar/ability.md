@@ -200,7 +200,7 @@ Sometimes English *can* / *can’t* is not about one named activity or property:
 
 > `zululon gelem wegeraxel.`
 >
-> z-Ululon | g-big | w-ABIL-unable-temporary
+> z-Ululon | g-size | w-ABIL-unable-temporary
 >
 > "Ululon is big: can’t right now." (capability on that property).
 

@@ -14,7 +14,7 @@ English needs a **code**: a phone, room, channel, or serial, not a counted amoun
 
 > `zazawan d_555,123,4567 vejel.`
 >
-> z-Azawan | d-_555,123,4567 | v-see
+> z-Azawan | d-_555,123,4567 | v-eye
 >
 > "Azawan sees 555-123-4567."
 

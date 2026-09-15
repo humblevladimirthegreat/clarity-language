@@ -145,6 +145,21 @@ Same English label for `zugobom` and `zugobon` is fine: both are the *speaker* s
 
 **Special pronouns** ([pronouns.md](../grammar/pronouns.md)): `zugobon` / `zedonen` / `zahan` / `zenenun` / `…orodo…` → `z-speaker` / `z-listener` / `z-interlocutors` / `z-someone` / `…-next-clause` — never emoji etymology.
 
+### Ordinary lexicon is not special-cased by role
+<a id="no-lexicon-pos-specials"></a>
+
+Morph uses the published **literal** or **metaphor** for that ending. It does **not** invent a new English root because the word is under `/v/` (or another role). Closed [special-vocabulary](../grammar/special-vocabulary.md#sense-form) overlays, joins, revisers, speech-act vowels, and house names stay specials; ordinary picture roots do not.
+
+| Agalan | Morph | Free English (not the morph) |
+|--------|--------|------------------------------|
+| `vejel` | `v-eye` | *sees* |
+| `vajul` | `v-chair` | *sits* |
+| `vezehel` | `v-speech` | *tells* |
+| `hogorem` | `h-inclusion` | *inside* |
+| `welem` | `w-size` | *very* |
+
+The checkpoint **English** column and the quoted line may say *see* / *sit* / *tell*. Keep that in free English. Do not write `v-see` to match the translation, and do not add a serializer exception for that root.
+
 ## Morph gloss format
 
 ### Word shape
@@ -178,7 +193,7 @@ Do **not** write `-l` / `-m` / `-n`, **`@`**, or **`~`** after a sense. Named **
 
 ### Sense labels
 
-- Prefer lexicon / overlay wording when short (`tea`, `speaker`, `witnessed`).
+- Prefer lexicon / overlay wording when short (`tea`, `speaker`, `witnessed`). Ordinary roots stay that wording under every role letter ([no lexicon PoS specials](#no-lexicon-pos-specials)).
 - Prefer **stable tags** for closed inventory (uppercase OK when the docs already use them): `COMMENT`, `DECISION`, `SAME`, `WITNESSED`, `LIVE`, `ABIL`.
 - Verb senses: [uninflected lemma](#english-lemma) (`walk`, not `walking`).
 - Do **not** use arrows (`→`) or etymology chains.
@@ -365,7 +380,7 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 | `zam` / `hal` / `am` as the whole morph | Agalan letters where the job belongs | `z-and.open` / `h-only-when` / `including.open` |
 | `z-microphone-l` | Ending already chose the literal root | `z-microphone` |
 | `z-microphone→speaker` | Etymology chain | `z-speaker` |
-| `v-dancing` / `v-walking` for a verb root | English progressive / gerund is not the lemma | `v-dance` / `v-walk` ([english lemma](#english-lemma)) |
+| `v-see` / `v-sit` for `vejel` / `vajul` | Ordinary lexicon is not special-cased by `/v/` | `v-eye` / `v-chair`; *see* / *sit* stay in free English ([no lexicon PoS specials](#no-lexicon-pos-specials)) |
 | Morph line that is only idiomatic English | Confuses layers | Morph + separate quoted free line |
 | Morph gloss that matches the quoted English | Redundant; the quote already is the sense | Omit that line ([example block](#example-block)). Keep it when it unpacks **`x`**, PoS, several words, … |
 | `gloss:` + per-token backticks inside a code fence | Markdown renders raw; Agalan and gloss look the same | Blockquote; backticks on Agalan only |

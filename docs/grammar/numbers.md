@@ -18,7 +18,7 @@ To say **how many** of a thing there are, put a number word after the noun, in t
 
 > `zazawan dabogolx g+3 vejel.`
 >
-> z-Azawan | d-book-x | g-three | v-see
+> z-Azawan | d-book-x | g-three | v-eye
 >
 > "Azawan sees three books."
 

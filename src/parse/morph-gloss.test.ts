@@ -115,6 +115,22 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("dadorol", "d-next-clause");
     expectLine("hegeraxel", "h-ABIL-unable-temporary");
   });
+
+  it("lexicon senses stay picture English; soft act words are specials", () => {
+    expectLine("vajul", "v-chair");
+    expectLine("vejel", "v-eye");
+    expectLine("vezehel", "v-speech");
+    expectLine("vebarul", "v-departure");
+    expectLine("welem", "w-size");
+    expectLine("gelem", "g-size");
+    expectLine("hogorem", "h-inclusion");
+    expectLine("hozal", "h-hash");
+    expectLine("jam", "j-soft-statement");
+    expectLine("jem", "j-request");
+    expectLine("jum", "j-soft-prohibition");
+    expectLine("jal", "j-statement");
+    expectLine("jel", "j-command");
+  });
 });
 
 describe("morphGlossLine — glosses.md dialogue turns", () => {

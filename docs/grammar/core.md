@@ -381,7 +381,7 @@ The act word is **`j` + vowel + ending**. The vowel is the family you know (**a*
 
 > `jam zazawan vawalal.`
 >
-> j-statement | z-Azawan | v-walk
+> j-soft-statement | z-Azawan | v-walk
 >
 > "Maybe Azawan walks."
 
@@ -537,7 +537,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `jam zazawan vajul.`
-<!-- gloss: j-statement | z-Azawan | v-chair -->
+<!-- gloss: j-soft-statement | z-Azawan | v-chair -->
 :::
 
 **2.** *Does Uhubun see a ticket, perhaps?*
@@ -551,14 +551,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `jem vazanul!`
-<!-- gloss: j-command | v-stand -->
+<!-- gloss: j-request | v-stand -->
 :::
 
 **4.** *Please don’t sneak.*
 
 ::: details Show answer
 `jum vazanal!`
-<!-- gloss: j-prohibition | v-sneak -->
+<!-- gloss: j-soft-prohibition | v-sneak -->
 :::
 
 **5.** *A loud-volume red train stands.* (adjective before the noun)
@@ -592,7 +592,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 #### Agalan → English
 
 **1.** `jam hozal bazawan zululon dugedel vejel.`
-<!-- gloss: j-statement | h-hash | b-Azawan | z-Ululon | d-ticket | v-eye -->
+<!-- gloss: j-soft-statement | h-hash | b-Azawan | z-Ululon | d-ticket | v-eye -->
 
 ::: details Show answer
 *As for Azawan, maybe Ululon sees a ticket.*
@@ -606,14 +606,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 :::
 
 **3.** `jem duhubun vezehel!`
-<!-- gloss: j-command | d-Uhubun | v-speech -->
+<!-- gloss: j-request | d-Uhubun | v-speech -->
 
 ::: details Show answer
 *Please tell Uhubun.*
 :::
 
 **4.** `jum vubunul!`
-<!-- gloss: j-prohibition | v-punch -->
+<!-- gloss: j-soft-prohibition | v-punch -->
 
 ::: details Show answer
 *Please don’t punch.*

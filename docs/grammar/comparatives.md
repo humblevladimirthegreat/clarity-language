@@ -21,7 +21,7 @@ When English would say *Azawan is more challenging than Ululon*, you put two peo
 
 > `zuhubun zazawan zel gelem.`
 >
-> z-Uhubun | z-Azawan | z-rank/more | g-big
+> z-Uhubun | z-Azawan | z-rank/more | g-size
 >
 > "Uhubun is bigger than Azawan."
 

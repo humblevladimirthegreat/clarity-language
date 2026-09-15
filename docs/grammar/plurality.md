@@ -36,7 +36,7 @@ A first mention of a **kind as a group in this situation** uses **-lx** (literal
 
 > `zazawan dodogolx vejel.`
 >
-> z-Azawan | d-dog-x | v-see
+> z-Azawan | d-dog-x | v-eye
 >
 > "Azawan sees some dogs."
 
@@ -89,13 +89,13 @@ The same roots take the role letter of the slot they fill. As a direct object th
 
 > `zazawan dedonenx vejel.`
 >
-> z-Azawan | d-listener-x | v-see
+> z-Azawan | d-listener-x | v-eye
 >
 > "Azawan sees you all (the addressees)."
 
 > `zazawan dahan vejel.`
 >
-> z-Azawan | d-interlocutors | v-see
+> z-Azawan | d-interlocutors | v-eye
 >
 > "Azawan sees us (you and I)."
 

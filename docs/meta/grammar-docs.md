@@ -425,7 +425,7 @@ Section ids: [one current heading, one current id](#one-current-heading).
 | Published roots when the gloss matches; `PoS` + **`~`/`@`** + `<…>` for donor spelling | Invented “lexicon-shaped” stems, a closed overlay with its own frozen spelling, or split/hyphenated PoS tokens in learner text |
 | Named [house people](#house-cast) when the clause needs a person | Default *I* / *you* (`zugobon` / `zedonen`) as dummy subjects |
 | Omit default **`jal`** when the page is not teaching the speech act | Leading every example with **`jal`** by habit |
-| Morph gloss + **loose** free English by default ([glosses.md](glosses.md)) | Merging free English into the morph gloss |
+| Morph gloss + **loose** free English by default ([glosses.md](glosses.md)); ordinary roots keep the lexicon label (`v-eye`, not `v-see`) | Merging free English into the morph gloss, or a per-root `/v/` exception |
 | Strict free English only when teaching packaging | Strict-only Beginner pages |
 | A negative only when the mix-up is expected ([Compare with](#compare-with)) | Listing “no X” or a **Not this** column by habit |
 

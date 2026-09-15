@@ -8,7 +8,7 @@
  * | `zar` fill-ask | `z-who` | `resolve.asks` fill-ask |
  * | `zar` join `-r` | `z-something` | unspecified member |
  * | `zur` fill-ask | `z-who-else` | |
- * | `jol` / `jom` | `j-question` / `j-soft-question` | |
+ * | `jol` / `jom` / `jam` / `jem` / `jum` | `j-question` / `j-soft-question` / `j-soft-statement` / `j-request` / `j-soft-prohibition` | `-m` act words |
  * | `zam` / `zal` | `z-and.open` / `z-and` | open vs closed |
  * | `al` left-edge | `additionally` | isolated word too |
  * | `al` in-clause | `including` | |
@@ -21,6 +21,7 @@
  * | mid-word `x` | always `-x-` segments | never a fused English name |
  * | house-cast `-n` | `Azawan` / `Ululon` / `Uhubun` | |
  * | `zugobon` / `zedonen` / `zahan` / `zenenun` | `speaker` / `listener` / `interlocutors` / `someone` | |
+ * | ordinary lexicon (`vejel`, `vajul`, …) | published literal / metaphor only | **no** per-root `/v/` → *see* / *sit* exceptions; [glosses.md](../../docs/meta/glosses.md#no-lexicon-pos-specials) |
  */
 
 import { classify, type ClassifyTables } from "./classify.js";
@@ -136,6 +137,13 @@ const FORCE_JOB: Record<string, string> = {
   o: "question",
   e: "command",
   u: "prohibition",
+};
+
+const FORCE_JOB_SOFT: Record<string, string> = {
+  a: "soft-statement",
+  o: "soft-question",
+  e: "request",
+  u: "soft-prohibition",
 };
 
 const POLAR_JOB: Record<string, string> = {
@@ -653,7 +661,7 @@ function joinMarkerLabel(word: LexWord, ctx: MorphGlossContext): string {
 
   if (word.pos === "j") {
     if (series.length === 1) {
-      if (ending === "m" && series === "o") return "soft-question";
+      if (ending === "m") return FORCE_JOB_SOFT[series] ?? FORCE_JOB[series] ?? series;
       return FORCE_JOB[series] ?? series;
     }
     const polar = POLAR_JOB[series];
