@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
 import { createClassifyTablesFromRows, type ClassifyTables } from "../parse/classify.js";
+import { emptyPosEnglish } from "../lexicon-search.js";
 import { forEachMarkdownCodeToken } from "../retie/tokens.js";
 
 import {
@@ -21,6 +22,8 @@ function tablesOf(opts?: {
       metaphorical: "",
       clarity: row.clarity,
       mnemonic: "",
+      englishByPos: "",
+      posEnglish: emptyPosEnglish(),
     })),
     [],
   );

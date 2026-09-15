@@ -86,7 +86,7 @@ onUnmounted(() => {
       <input
         id="lexicon-filter"
         type="search"
-        placeholder="Search literal, metaphor, clarity, mnemonic…"
+        placeholder="Search literal, metaphor, role English, clarity, mnemonic…"
         autocomplete="off"
         aria-label="Search lexicon"
         :disabled="status !== 'ready'"
@@ -108,6 +108,7 @@ onUnmounted(() => {
             <th scope="col">Literal</th>
             <th scope="col">Agalan</th>
             <th scope="col">Metaphorical</th>
+            <th scope="col">Role English</th>
             <th scope="col">Overlays</th>
             <th scope="col">Mnemonic</th>
           </tr>
@@ -124,6 +125,10 @@ onUnmounted(() => {
             <td class="clarity">{{ row.clarity }}</td>
             <td>
               <span v-if="row.metaphorical">{{ row.metaphorical }}</span>
+              <span v-else class="empty">—</span>
+            </td>
+            <td>
+              <span v-if="row.englishByPos">{{ row.englishByPos }}</span>
               <span v-else class="empty">—</span>
             </td>
             <td>

@@ -83,12 +83,13 @@ function formatOverlayList(result: LexiconSearchResult): string {
 }
 
 function formatTable(results: LexiconSearchResult[]): void {
-  const headers = ["emoji", "literal", "clarity", "metaphorical", "overlays", "score"];
+  const headers = ["emoji", "literal", "clarity", "metaphorical", "role English", "overlays", "score"];
   const rows = results.map((r) => [
     r.emoji || "—",
     r.literal || (r.overlayOnly ? "(overlay)" : r.compoundOnly ? "(compound)" : "—"),
     r.clarity,
     r.metaphorical || "—",
+    r.englishByPos || "—",
     formatOverlayList(r),
     r.score.toFixed(2),
   ]);

@@ -26,7 +26,7 @@ A gloss should answer: *what is each Agalan piece doing in the clause — in Eng
 | **Free English (loose)** | Same places, under the morph gloss — **default** when only one free line | Natural paraphrase in `"double quotes"`; drop Agalan packaging English doesn’t mark |
 | **Free English (strict)** | Optional second quoted line (or alone when teaching packaging) | Keeps join packaging, value endings, evidential tags, cast letters, …; teaching dialogues may show **both** labeled `strict:` / `loose:` |
 | **Grammar-table gloss** | Inventory / contrast tables in grammar docs | Short free English in **English** (often *italic* in table cells); optional parenthetical notes — loose unless the row teaches packaging. **Cue** is not a gloss ([cues](grammar-docs.md#cues-columns)). |
-| **Lexicon fields** | `lexicon-published.csv` / overlays | Literal / metaphorical / mnemonic / definition — **inputs** to morph glosses, not utterance glosses. Verb senses use the [uninflected lemma](#english-lemma). Literal English in a **Cue** cell is still not the morph gloss. |
+| **Lexicon fields** | `lexicon-published.csv` / overlays | Literal / metaphorical / mnemonic / [role English](#role-english) / definition — **inputs** to morph glosses and lookup, not utterance glosses. Verb senses use the [uninflected lemma](#english-lemma). Literal English in a **Cue** cell is still not the morph gloss. Morph does **not** take its english slot from role English. |
 
 Grammar tables may keep a column named **Gloss** for free English. When a table needs morphology, use a **Morph** column or a separate morph line in the same format as dialogues.
 
@@ -159,6 +159,15 @@ Morph uses the published **literal** or **metaphor** for that ending. It does **
 | `welem` | `w-size` | *very* |
 
 The checkpoint **English** column and the quoted line may say *see* / *sit* / *tell*. Keep that in free English. Do not write `v-see` to match the translation, and do not add a serializer exception for that root.
+
+### Role English (lookup only)
+<a id="role-english"></a>
+
+Published rows may pack **role English** in `english_by_pos` when the usual English lemma for a role is not a transparent conversion of the **active** sense-root. This is not an overlay and not a second Agalan meaning.
+
+Packed form: `v:see; m.v:intuit; m.h:inside`. Bare keys (`v:see`) are **literal** mismatches only. `m.` keys are **metaphor** mismatches only. Neither copies onto the other sense. Omit a piece when English already converts the sense lemma (`perception` as `/v/` → *perceive*).
+
+Lexicon search indexes those lemmas so *see* finds 👁️. Morph stays `v-eye`.
 
 ## Morph gloss format
 

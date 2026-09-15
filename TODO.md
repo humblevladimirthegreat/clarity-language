@@ -2,7 +2,8 @@
 review TTS
 consider removing emojis from docs (but keep in lexicon)
 confirm logic for detecting glosses
-glossed exercises for all files
+consider visible gloss for exercises
+advanced section somewhere on how order affects focus
 
 ## Evidentiality / tense
 

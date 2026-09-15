@@ -1855,28 +1855,134 @@ function parseCsvLine(line) {
   return fields;
 }
 
+// src/word-converter.ts
+var CLARITY_VOWELS = ["a", "e", "o", "u"];
+var VOWEL_SET = new Set(CLARITY_VOWELS);
+
+// src/lexicon-compounds.ts
+var COMPOUND_HEADERS = [
+  "emoji",
+  "stem",
+  "left",
+  "join",
+  "right",
+  "literal",
+  "metaphorical",
+  "mnemonic"
+];
+function parseCompoundCsv(text) {
+  const { headers, rows } = parseCsv(text);
+  if (headers.join(",") !== COMPOUND_HEADERS.join(",")) {
+    throw new Error(`Unexpected compound CSV header: ${headers.join(",")}`);
+  }
+  return rows.map((row) => ({
+    emoji: row.emoji ?? "",
+    stem: row.stem ?? "",
+    left: row.left ?? "",
+    join: row.join ?? "",
+    right: row.right ?? "",
+    literal: row.literal ?? "",
+    metaphorical: row.metaphorical ?? "",
+    mnemonic: row.mnemonic ?? ""
+  }));
+}
+
 // src/lexicon-search.ts
-var PUBLISHED_HEADERS = ["emoji", "literal", "clarity", "metaphorical", "mnemonic"];
-var OVERLAY_HEADERS = ["sense_form", "pos", "emoji", "definition", "mnemonic"];
+var ROLE_LETTERS = ["z", "d", "b", "v", "g", "w", "h", "j", "x"];
+var ROLE_LETTER_SET = new Set(ROLE_LETTERS);
+var POS_ENGLISH_LEMMA_RE = /^[a-z]+(?:-[a-z]+)*$/;
+var POS_ENGLISH_PIECE_RE = /^(m\.)?([zdbvgwhjx]):([a-z]+(?:-[a-z]+)*)$/;
+var OVERLAY_KINDS = [
+  "need",
+  "ability",
+  "join_act",
+  "join_relation",
+  "evidential",
+  "comment",
+  "notional",
+  "plan",
+  "predict",
+  "decision",
+  "cause",
+  "clause_pole",
+  "universality",
+  "emotion_act",
+  "emotion_locus",
+  "identity",
+  "benchmark",
+  "numbered_alternative"
+];
+var OVERLAY_KIND_SET = new Set(OVERLAY_KINDS);
+function isJoinOverlayKind(kind) {
+  return kind === "join_act" || kind === "join_relation";
+}
+var PUBLISHED_HEADERS = [
+  "emoji",
+  "literal",
+  "clarity",
+  "metaphorical",
+  "mnemonic",
+  "english_by_pos"
+];
+var OVERLAY_HEADERS = [
+  "sense_form",
+  "pos",
+  "emoji",
+  "kind",
+  "gloss",
+  "definition",
+  "mnemonic"
+];
 var POS_PREFIXES = /* @__PURE__ */ new Set(["z", "d", "b", "g", "v", "w", "h", "j", "x"]);
-var SEARCH_FIELDS = ["literal", "literalTokens", "clarity", "metaphorical", "mnemonic"];
-var OVERLAY_SEARCH_FIELDS = ["senseForm", "root", "pos", "definition", "mnemonic"];
+var SEARCH_FIELDS = [
+  "literal",
+  "literalTokens",
+  "clarity",
+  "metaphorical",
+  "mnemonic",
+  "posEnglishLemmas"
+];
+var COMPOUND_SEARCH_FIELDS = ["literal", "literalTokens", "stem", "metaphorical", "mnemonic"];
+var OVERLAY_SEARCH_FIELDS = [
+  "senseForm",
+  "root",
+  "pos",
+  "kind",
+  "gloss",
+  "definition",
+  "mnemonic"
+];
 var FIELD_BOOSTS = {
   literal: 2,
   metaphorical: 2,
   clarity: 1.5,
+  literalTokens: 1.5,
+  posEnglishLemmas: 1.8,
+  mnemonic: 1
+};
+var COMPOUND_FIELD_BOOSTS = {
+  literal: 2,
+  metaphorical: 2,
+  stem: 1.5,
   literalTokens: 1.5,
   mnemonic: 1
 };
 var OVERLAY_FIELD_BOOSTS = {
   senseForm: 2,
   root: 1.5,
+  gloss: 2,
   definition: 2,
+  kind: 1.5,
   mnemonic: 1,
   pos: 1
 };
 var SEARCH_OPTIONS = {
   boost: FIELD_BOOSTS,
+  fuzzy: 0.2,
+  prefix: true
+};
+var COMPOUND_SEARCH_OPTIONS = {
+  boost: COMPOUND_FIELD_BOOSTS,
   fuzzy: 0.2,
   prefix: true
 };
@@ -1892,24 +1998,195 @@ var MATCH_FIELD_LABELS = {
   clarity: "clarity",
   metaphorical: "metaphorical",
   mnemonic: "mnemonic",
+  posEnglishLemmas: "english_by_pos",
+  englishByPos: "english_by_pos",
   emoji: "emoji",
   senseForm: "sense_form",
   root: "sense_form",
   pos: "pos",
+  kind: "kind",
+  gloss: "gloss",
+  stem: "stem",
   definition: "definition"
 };
+function emptyPosEnglish() {
+  return { literal: {}, metaphorical: {} };
+}
+function posEnglishLemmaList(map) {
+  const lemmas = [];
+  for (const letter of ROLE_LETTERS) {
+    const lit = map.literal[letter];
+    if (lit) lemmas.push(lit);
+    const met = map.metaphorical[letter];
+    if (met) lemmas.push(met);
+  }
+  return lemmas;
+}
+function formatEnglishByPos(map) {
+  const pieces = [];
+  for (const letter of ROLE_LETTERS) {
+    const lit = map.literal[letter];
+    if (lit) pieces.push(`${letter}:${lit}`);
+  }
+  for (const letter of ROLE_LETTERS) {
+    const met = map.metaphorical[letter];
+    if (met) pieces.push(`m.${letter}:${met}`);
+  }
+  return pieces.join("; ");
+}
+function parseEnglishByPos(raw, opts) {
+  const packed = raw.trim();
+  const map = emptyPosEnglish();
+  if (!packed) return map;
+  const label = opts?.label ? `${opts.label}: ` : "";
+  const literalSense = (opts?.literal ?? "").trim().toLowerCase();
+  const metaphoricalSense = (opts?.metaphorical ?? "").trim().toLowerCase();
+  const seenLit = /* @__PURE__ */ new Set();
+  const seenMet = /* @__PURE__ */ new Set();
+  for (const chunk of packed.split(";")) {
+    const piece = chunk.trim();
+    if (!piece) {
+      throw new Error(`${label}empty piece in english_by_pos`);
+    }
+    const match = piece.match(POS_ENGLISH_PIECE_RE);
+    if (!match) {
+      throw new Error(
+        `${label}bad english_by_pos piece "${piece}" (want v:see or m.v:intuit)`
+      );
+    }
+    const metaphor = Boolean(match[1]);
+    const pos = match[2];
+    const lemma = match[3];
+    if (!ROLE_LETTER_SET.has(pos) || !POS_ENGLISH_LEMMA_RE.test(lemma)) {
+      throw new Error(`${label}bad english_by_pos piece "${piece}"`);
+    }
+    if (metaphor) {
+      if (!metaphoricalSense) {
+        throw new Error(`${label}m.${pos} packing needs a metaphorical sense`);
+      }
+      if (lemma === metaphoricalSense) {
+        throw new Error(
+          `${label}m.${pos}:${lemma} matches the metaphorical field; omit transparent conversions`
+        );
+      }
+      if (seenMet.has(pos)) {
+        throw new Error(`${label}duplicate m.${pos} in english_by_pos`);
+      }
+      seenMet.add(pos);
+      map.metaphorical[pos] = lemma;
+    } else {
+      if (literalSense && lemma === literalSense) {
+        throw new Error(
+          `${label}${pos}:${lemma} matches the literal field; omit transparent conversions`
+        );
+      }
+      if (seenLit.has(pos)) {
+        throw new Error(`${label}duplicate ${pos} in english_by_pos`);
+      }
+      seenLit.add(pos);
+      map.literal[pos] = lemma;
+    }
+  }
+  return map;
+}
 function parsePublishedCsv(text) {
   const { headers, rows } = parseCsv(text);
   if (headers.join(",") !== PUBLISHED_HEADERS.join(",")) {
     throw new Error(`Unexpected CSV header: ${headers.join(",")}`);
   }
-  return rows.map((row) => ({
-    emoji: row.emoji ?? "",
-    literal: row.literal ?? "",
-    clarity: row.clarity ?? "",
-    metaphorical: row.metaphorical ?? "",
-    mnemonic: row.mnemonic ?? ""
-  }));
+  return rows.map((row, index) => {
+    const literal = row.literal ?? "";
+    const metaphorical = row.metaphorical ?? "";
+    const englishByPos = (row.english_by_pos ?? "").trim();
+    const label = `lexicon-published.csv row ${index + 2}`;
+    return {
+      emoji: row.emoji ?? "",
+      literal,
+      clarity: row.clarity ?? "",
+      metaphorical,
+      mnemonic: row.mnemonic ?? "",
+      englishByPos,
+      posEnglish: parseEnglishByPos(englishByPos, { literal, metaphorical, label })
+    };
+  });
+}
+var JOIN_SENSE_FORMS = /* @__PURE__ */ new Set([
+  "an",
+  "on",
+  "aon",
+  "un",
+  "uan",
+  "uon",
+  "en",
+  "aen",
+  "oen",
+  "uen"
+]);
+function validateOverlayPublishedHosts(overlays, published) {
+  const byEmoji = /* @__PURE__ */ new Map();
+  for (const row of published) {
+    const emoji = row.emoji.trim();
+    if (emoji && !byEmoji.has(emoji)) {
+      byEmoji.set(emoji, row);
+    }
+  }
+  const errors = [];
+  const seen = /* @__PURE__ */ new Set();
+  for (let index = 0; index < overlays.length; index++) {
+    const overlay = overlays[index];
+    if (isJoinOverlayKind(overlay.kind)) {
+      continue;
+    }
+    const rowNum = index + 2;
+    const key = `${overlay.senseForm}\0${overlay.emoji}`;
+    if (seen.has(key)) {
+      continue;
+    }
+    seen.add(key);
+    const emoji = overlay.emoji.trim();
+    if (!emoji) {
+      errors.push({
+        row: rowNum,
+        senseForm: overlay.senseForm,
+        pos: overlay.pos,
+        emoji,
+        reason: `hosted overlay ${overlay.senseForm} has no emoji and no published host`
+      });
+      continue;
+    }
+    const host = byEmoji.get(emoji);
+    if (!host) {
+      errors.push({
+        row: rowNum,
+        senseForm: overlay.senseForm,
+        pos: overlay.pos,
+        emoji,
+        reason: `overlay ${overlay.senseForm} (${emoji}) has no published lexicon row for that emoji`
+      });
+      continue;
+    }
+    const root = host.clarity.trim();
+    if (!root) {
+      errors.push({
+        row: rowNum,
+        senseForm: overlay.senseForm,
+        pos: overlay.pos,
+        emoji,
+        reason: `published host for ${emoji} has an empty root`
+      });
+      continue;
+    }
+    if (!overlay.senseForm.startsWith(root)) {
+      errors.push({
+        row: rowNum,
+        senseForm: overlay.senseForm,
+        pos: overlay.pos,
+        emoji,
+        reason: `overlay ${overlay.senseForm} does not start with published root ${root} (${emoji} ${host.literal})`
+      });
+    }
+  }
+  return errors;
 }
 function parseOverlayCsv(text) {
   const { headers, rows } = parseCsv(text);
@@ -1927,10 +2204,21 @@ function parseOverlayCsv(text) {
       throw new Error(`Duplicate overlay key: ${senseForm} + ${pos}`);
     }
     seen.add(key);
+    const kindRaw = (row.kind ?? "").trim();
+    if (!OVERLAY_KIND_SET.has(kindRaw)) {
+      throw new Error(`Unknown overlay kind for ${senseForm} + ${pos}: ${kindRaw || "(empty)"}`);
+    }
+    const kind = kindRaw;
+    const gloss = (row.gloss ?? "").trim();
+    if (!gloss) {
+      throw new Error(`Overlay ${senseForm} + ${pos} is missing gloss`);
+    }
     overlays.push({
       senseForm,
       pos,
       emoji: (row.emoji ?? "").trim(),
+      kind,
+      gloss,
       definition: (row.definition ?? "").trim(),
       mnemonic: (row.mnemonic ?? "").trim()
     });
@@ -2006,6 +2294,24 @@ function attachOverlays(rows, overlays) {
   });
   return attached;
 }
+function createCompoundIndex(rows) {
+  const docs = rows.map((row, id) => ({
+    id,
+    emoji: row.emoji,
+    stem: row.stem.toLowerCase(),
+    literal: row.literal.toLowerCase(),
+    literalTokens: tokenizeLiteral(row.literal),
+    metaphorical: row.metaphorical.toLowerCase(),
+    mnemonic: row.mnemonic.toLowerCase()
+  }));
+  const index = new MiniSearch({
+    fields: [...COMPOUND_SEARCH_FIELDS],
+    storeFields: ["emoji", "stem", "literal", "metaphorical", "mnemonic"],
+    searchOptions: COMPOUND_SEARCH_OPTIONS
+  });
+  index.addAll(docs);
+  return index;
+}
 function createLexiconIndex(rows) {
   const docs = rows.map((row, id) => ({
     id,
@@ -2014,11 +2320,14 @@ function createLexiconIndex(rows) {
     literalTokens: tokenizeLiteral(row.literal),
     clarity: row.clarity.toLowerCase(),
     metaphorical: row.metaphorical.toLowerCase(),
-    mnemonic: row.mnemonic.toLowerCase()
+    mnemonic: row.mnemonic.toLowerCase(),
+    englishByPos: row.englishByPos,
+    posEnglish: row.posEnglish,
+    posEnglishLemmas: posEnglishLemmaList(row.posEnglish).join(" ")
   }));
   const index = new MiniSearch({
     fields: [...SEARCH_FIELDS],
-    storeFields: ["emoji", "literal", "clarity", "metaphorical", "mnemonic"],
+    storeFields: ["emoji", "literal", "clarity", "metaphorical", "mnemonic", "englishByPos"],
     searchOptions: SEARCH_OPTIONS
   });
   index.addAll(docs);
@@ -2031,12 +2340,14 @@ function createOverlayIndex(overlays) {
     pos: overlay.pos.toLowerCase(),
     emoji: overlay.emoji,
     root: senseFormRoot(overlay.senseForm).toLowerCase(),
+    kind: overlay.kind,
+    gloss: overlay.gloss.toLowerCase(),
     definition: overlay.definition.toLowerCase(),
     mnemonic: overlay.mnemonic.toLowerCase()
   }));
   const index = new MiniSearch({
     fields: [...OVERLAY_SEARCH_FIELDS],
-    storeFields: ["senseForm", "pos", "emoji", "root", "definition", "mnemonic"],
+    storeFields: ["senseForm", "pos", "emoji", "root", "kind", "gloss", "definition", "mnemonic"],
     searchOptions: OVERLAY_SEARCH_OPTIONS
   });
   index.addAll(docs);
@@ -2083,6 +2394,10 @@ function exactMatchBoost(row, query) {
     boost += 50;
     fields.push("mnemonic");
   }
+  if (posEnglishLemmaList(row.posEnglish).some((lemma) => lemma === q)) {
+    boost += 90;
+    fields.push("english_by_pos");
+  }
   return { boost, fields };
 }
 function exactOverlayBoost(overlay, query, split) {
@@ -2097,6 +2412,14 @@ function exactOverlayBoost(overlay, query, split) {
   } else if (sense === q || sense === split.stem) {
     boost += 120;
     fields.push("sense_form");
+  }
+  if (overlay.gloss.toLowerCase() === q) {
+    boost += 90;
+    fields.push("gloss");
+  }
+  if (overlay.kind === q) {
+    boost += 70;
+    fields.push("kind");
   }
   if (overlay.definition.toLowerCase() === q) {
     boost += 80;
@@ -2127,10 +2450,49 @@ function overlayOnlyResult(overlay, score, matchFields) {
     clarity: overlay.senseForm,
     metaphorical: "",
     mnemonic: overlay.mnemonic,
+    englishByPos: "",
+    posEnglish: emptyPosEnglish(),
     score,
     matchFields,
     overlays: [overlay],
     overlayOnly: true
+  };
+}
+function exactCompoundBoost(row, query) {
+  const q = query.toLowerCase();
+  let boost = 0;
+  const fields = [];
+  if (row.literal.toLowerCase() === q) {
+    boost += 100;
+    fields.push("literal");
+  }
+  if (row.stem.toLowerCase() === q) {
+    boost += 100;
+    fields.push("stem");
+  }
+  if (row.metaphorical.toLowerCase() === q) {
+    boost += 100;
+    fields.push("metaphorical");
+  }
+  if (row.mnemonic.toLowerCase() === q) {
+    boost += 50;
+    fields.push("mnemonic");
+  }
+  return { boost, fields };
+}
+function compoundResultFromRow(row, score, matchFields) {
+  return {
+    emoji: row.emoji,
+    literal: row.literal,
+    clarity: row.stem,
+    metaphorical: row.metaphorical,
+    mnemonic: row.mnemonic,
+    englishByPos: "",
+    posEnglish: emptyPosEnglish(),
+    score,
+    matchFields,
+    overlays: [],
+    compoundOnly: true
   };
 }
 function searchLexicon(index, rows, query, opts) {
@@ -2138,6 +2500,8 @@ function searchLexicon(index, rows, query, opts) {
   const limit = opts?.limit;
   const overlays = opts?.overlays ?? [];
   const overlayIndex = opts?.overlayIndex;
+  const compoundRows = opts?.compoundRows ?? [];
+  const compoundIndex = opts?.compoundIndex;
   const attached = attachOverlays(rows, overlays);
   if (!trimmed) {
     const all = rows.map((row, id) => ({
@@ -2152,6 +2516,7 @@ function searchLexicon(index, rows, query, opts) {
   const merged = /* @__PURE__ */ new Map();
   const publishedKey = (id) => `p:${id}`;
   const overlayKey = (senseForm, pos) => `o:${senseForm}:${pos}`;
+  const compoundKey = (stem) => `c:${stem}`;
   for (const hit of index.search(trimmed, SEARCH_OPTIONS)) {
     const id = hit.id;
     const row = rows[id];
@@ -2194,6 +2559,36 @@ function searchLexicon(index, rows, query, opts) {
       }
     });
   }
+  if (compoundIndex && compoundRows.length > 0) {
+    for (const hit of compoundIndex.search(trimmed, COMPOUND_SEARCH_OPTIONS)) {
+      const row = compoundRows[hit.id];
+      const exact = exactCompoundBoost(row, trimmed);
+      const key = compoundKey(row.stem);
+      merged.set(
+        key,
+        compoundResultFromRow(
+          row,
+          hit.score + exact.boost,
+          [.../* @__PURE__ */ new Set([...normalizeMatchFields(hit.match), ...exact.fields])].sort()
+        )
+      );
+    }
+    for (const row of compoundRows) {
+      const exact = exactCompoundBoost(row, trimmed);
+      if (exact.boost > 0) {
+        const key = compoundKey(row.stem);
+        const existing = merged.get(key);
+        merged.set(
+          key,
+          compoundResultFromRow(
+            row,
+            Math.max(existing?.score ?? 0, exact.boost),
+            [.../* @__PURE__ */ new Set([...existing?.matchFields ?? [], ...exact.fields])].sort()
+          )
+        );
+      }
+    }
+  }
   if (overlayIndex) {
     const split = splitPosPrefixedQuery(trimmed);
     const overlayQueries = /* @__PURE__ */ new Set([trimmed.toLowerCase()]);
@@ -2235,14 +2630,25 @@ function searchLexicon(index, rows, query, opts) {
   return sorted.slice(0, effectiveLimit);
 }
 export {
+  JOIN_SENSE_FORMS,
+  OVERLAY_KINDS,
+  ROLE_LETTERS,
   attachOverlays,
+  createCompoundIndex,
   createLexiconIndex,
   createOverlayIndex,
+  emptyPosEnglish,
+  formatEnglishByPos,
+  isJoinOverlayKind,
+  parseCompoundCsv,
+  parseEnglishByPos,
   parseOverlayCsv,
   parsePublishedCsv,
+  posEnglishLemmaList,
   searchLexicon,
   senseFormEnding,
   senseFormRoot,
   splitPosPrefixedQuery,
-  tokenizeLiteral
+  tokenizeLiteral,
+  validateOverlayPublishedHosts
 };

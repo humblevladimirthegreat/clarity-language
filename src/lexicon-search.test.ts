@@ -8,6 +8,7 @@ import {
   attachOverlays,
   createLexiconIndex,
   createOverlayIndex,
+  parseEnglishByPos,
   parseOverlayCsv,
   parsePublishedCsv,
   searchLexicon,
@@ -40,6 +41,29 @@ describe("splitPosPrefixedQuery", () => {
     assert.deepEqual(splitPosPrefixedQuery("hearsay"), { pos: null, stem: "hearsay" });
     assert.deepEqual(splitPosPrefixedQuery("an"), { pos: null, stem: "an" });
     assert.deepEqual(splitPosPrefixedQuery("uze"), { pos: null, stem: "uze" });
+  });
+});
+
+describe("parseEnglishByPos", () => {
+  it("treats bare keys as literal and m. as metaphor-only", () => {
+    const map = parseEnglishByPos("v:smell; m.v:intuit", {
+      literal: "nose",
+      metaphorical: "intuition",
+    });
+    assert.equal(map.literal.v, "smell");
+    assert.equal(map.metaphorical.v, "intuit");
+    assert.equal(map.literal.h, undefined);
+  });
+
+  it("rejects packing that copies the sense lemma", () => {
+    assert.throws(() => parseEnglishByPos("v:eye", { literal: "eye", metaphorical: "perception" }));
+    assert.throws(() =>
+      parseEnglishByPos("m.v:perception", { literal: "eye", metaphorical: "perception" }),
+    );
+  });
+
+  it("rejects m. when there is no metaphorical sense", () => {
+    assert.throws(() => parseEnglishByPos("m.v:intuit", { literal: "hand" }));
   });
 });
 
@@ -181,5 +205,21 @@ describe("searchLexicon", () => {
   it("finds overlay rows by definition text", () => {
     const results = searchLexicon(index, rows, "hearsay", { limit: 10, overlays, overlayIndex });
     assert.ok(results.some((r) => r.overlays.some((o) => /hearsay/i.test(o.definition))));
+  });
+
+  it("finds eye via packed verb English see", () => {
+    const results = searchLexicon(index, rows, "see", { limit: 20, overlays, overlayIndex });
+    const hit = results.find((r) => r.literal === "eye");
+    assert.ok(hit, "expected eye among see results");
+    assert.ok(hit.matchFields.includes("english_by_pos"));
+    assert.equal(hit.posEnglish.literal.v, "see");
+  });
+
+  it("finds nose metaphor packing intuit without treating it as literal see", () => {
+    const results = searchLexicon(index, rows, "intuit", { limit: 20, overlays, overlayIndex });
+    const hit = results.find((r) => r.literal === "nose");
+    assert.ok(hit, "expected nose among intuit results");
+    assert.equal(hit.posEnglish.metaphorical.v, "intuit");
+    assert.equal(hit.posEnglish.literal.v, "smell");
   });
 });
