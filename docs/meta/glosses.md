@@ -255,14 +255,14 @@ Grammar examples use three single-root names ([grammar-docs.md](grammar-docs.md#
 
 ### Mid-word `x` families
 
-Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) — English only. Drop sense-picking **-l / -m / -n**. On [values](../grammar/values.md), keep the stance **and** the ending table (contact / motive standing / prescription force / changeability): `holozoxem` → `h-competence-motive-internal`, not `h-competence-x-motive`.
+Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) — English only. Drop sense-picking **-l / -m / -n**. On [values](../grammar/values.md), keep the stance **and** the ending table (contact / prescription force / preference standing / changeability): `holozoxom` → `h-competence-motive-internal`, not `h-competence-x-motive`.
 
 | Family | Example Agalan | Morph gloss |
 |--------|-----------------|-------------|
 | Ordinary / name compound | `jubunexunowen` | `j-Ubune-x-Unowen` |
 | Ordinary (three roots) | `zuzuzuxogovexadedan` | `z-Uzuzu-x-Ogove-x-Adedan` |
 | Ability / values stance | `vawalaxel` | `v-walk-unable-temporary` |
-| Values stance on need | `holozoxem` | `h-competence-motive-internal` |
+| Values stance on need | `holozoxom` | `h-competence-motive-internal` |
 | Role compound | `zaxezeher` | `z-agent-x-dialogue` |
 | Span open / close | `hexal` … `xuxul` | `h-aside-x-multi` · … · `x-span-close` |
 | Number / enumeration | `x#e-` | `x-starting-with` |
@@ -369,7 +369,7 @@ Bake join / reviser **job** into the English label (including open vs closed whe
 
 ### Ability + value motive
 
-> `juel zugobon vawalaxel holozoxem.`
+> `juel zugobon vawalaxel holozoxom.`
 >
 > j-no | z-speaker | v-walk-unable-temporary | h-competence-motive-internal
 >

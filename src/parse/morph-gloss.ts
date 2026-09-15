@@ -145,16 +145,16 @@ const ABILITY_STANCE: Record<string, string> = {
 
 const VALUE_STANCE: Record<string, string> = {
   a: "met",
-  e: "motive",
-  o: "ought",
+  e: "ought",
+  o: "motive",
   u: "unmet",
 };
 
-/** Ending grain on values (contact / preference / force / changeability). */
+/** Ending grain on values (contact / prescription force / preference / changeability). */
 const VALUE_GRAIN: Record<string, Partial<Record<Ending, string>>> = {
   a: { l: "physical", m: "mental", r: "spiritual" },
-  e: { l: "circumstantial", m: "internal", r: "protective" },
-  o: { l: "bound", m: "endorse", r: "invite" },
+  e: { l: "bound", m: "endorse", r: "invite" },
+  o: { l: "circumstantial", m: "internal", r: "protective" },
   u: { l: "irreversible", m: "modifiable", r: "temporary" },
 };
 

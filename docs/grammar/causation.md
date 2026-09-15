@@ -317,9 +317,9 @@ To highlight **how** a result comes about (the mechanism, not only that a condit
 ### Preference vs law
 <a id="preference-vs-law"></a>
 
-English *should* on a causal claim is often a wish or ought, not a formal or natural law. Keep the condition as *if* (`hadorom` / `gadorom`) and put the ought on [values](values.md): **`xo`** (prescription). Feeling-strength lives on the values ending.
+English *should* on a causal claim is often a wish or ought, not a formal or natural law. Keep the condition as *if* (`hadorom` / `gadorom`) and put the ought on [values](values.md): **`xe`** (prescription). Feeling-strength lives on the values ending.
 
-> `zogozol gadorom bezewem holozoxor.`
+> `zogozol gadorom bezewem holozoxer.`
 >
 > z-knob | g-if | b-effort | h-competence-ought-invite
 >
@@ -328,14 +328,14 @@ English *should* on a causal claim is often a wish or ought, not a formal or nat
 | Agalan | Use | English |
 |--------|-----|---------|
 | `hadorom` / `gadorom` | still one route among others | *if* / *would get you…* |
-| **`xo`** | prescription | *should* |
+| **`xe`** | prescription | *should* |
 
 **For *it has to be Azawan* (the sole pick), use:** an exclusive [join](joins.md#choice) (`zol`).
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills for Intermediate. Try each item before opening **Show answer**. A following sentence hangs after **`badorol`**. *Because* asserts the condition. *Iff* is both ways. *Only because* stacks **`heberom hurugum`**. **CAUSE** is **`hegegam`**. An ought sits on values **`xo`**.
+Short drills for Intermediate. Try each item before opening **Show answer**. A following sentence hangs after **`badorol`**. *Because* asserts the condition. *Iff* is both ways. *Only because* stacks **`heberom hurugum`**. **CAUSE** is **`hegegam`**. An ought sits on values **`xe`**.
 
 **Setting:** a dam control room
 
@@ -355,7 +355,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. A f
 | *see* | `vejel` | `ejel` *eye* |
 | *tell* | `vezehel` | `ezehel` *speech* |
 | *run* | `vurunul` | |
-| *competence-ought-invite* | `holozoxor` | `olozol` *toolbox* |
+| *competence-ought-invite* | `holozoxer` | `olozol` *toolbox* |
 | *if* | `hadorom` | `adorol` *door* |
 | *only-if* | `heberom` | `eberol` *paper-roll* |
 | *iff* | `hezazem` | `ezazel` *east-west* |
@@ -416,7 +416,7 @@ z-Azawan | v-sit | h-only-if | h-because | b-next-clause | z-Uhubun | v-see
 **7.** *A bell if there is flooding (as an ought, not a law).*
 
 ::: details Show answer
-`zobelel gadorom bogegam holozoxor.`
+`zobelel gadorom bogegam holozoxer.`
 
 z-bell | g-if | b-flood | h-competence-ought-invite
 :::
@@ -485,7 +485,7 @@ z-Uhubun | v-tell | h-only-if | h-because | b-next-clause | z-Ululon | v-pour
 *Uhubun tells only because Ululon pours.*
 :::
 
-**7.** `zogozol gadorom babamam holozoxor.`
+**7.** `zogozol gadorom babamam holozoxer.`
 
 ::: details Show answer
 

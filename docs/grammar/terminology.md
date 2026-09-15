@@ -175,7 +175,7 @@ Clause content after the left-edge `/j/` cluster.
 
 ### Bound / endorse / invite
 
-Prescription-force endings on value **`xo`**.
+Prescription-force endings on value **`xe`**.
 
 [Values](values.md#value-force)
 
@@ -457,7 +457,7 @@ Amount + lexicon unit noun (published metaphor = unit name).
 
 ### Met / unmet / motive / prescription (values)
 
-Value stances **`xa` / `xu` / `xe` / `xo`**.
+Value stances **`xa` / `xu`** (Beginner); **`xe`** / **`xo`** (Intermediate prescription / motive).
 
 [Values](values.md)
 
@@ -533,7 +533,7 @@ Closed `/j/` particles **`jael` / `juel` / …**.
 
 ### Preference standing
 
-Motive **`xe`** endings.
+Motive **`xo`** endings.
 
 [Values](values.md#value-preference)
 

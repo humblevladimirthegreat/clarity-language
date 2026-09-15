@@ -51,7 +51,7 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("jubunexunowen", "j-Ubune-x-Unowen");
     expectLine("zuzuzuxogovexadedan", "z-Uzuzu-x-Ogove-x-Adedan");
     expectLine("vawalaxel", "v-walk-unable-temporary");
-    expectLine("holozoxem", "h-competence-motive-internal");
+    expectLine("holozoxem", "h-competence-ought-endorse");
     expectLine("zaxezeher", "z-agent-x-dialogue");
     expectLine("hexal", "h-aside-x-multi");
     expectLine("xuxul", "x-span-close");
@@ -146,7 +146,7 @@ describe("morphGlossLine — glosses.md dialogue turns", () => {
 
   it("ability + value motive", () => {
     expectLine(
-      "juel zugobon vawalaxel holozoxem.",
+      "juel zugobon vawalaxel holozoxom.",
       "j-no | z-speaker | v-walk-unable-temporary | h-competence-motive-internal",
     );
   });

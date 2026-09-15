@@ -88,9 +88,9 @@ strict: *I wonder — who walks?*
 
 loose: *I wonder — who walks?*
 
-**A:** `juel zuzur vawalaxel holozoxem.`
+**A:** `juel zuzur vawalaxel holozoxom.`
 
-gloss: `j-no` · `z-←Uzuzuxogoven` · `v-walk-unable-temporary` · `h-competence-x-motive`
+gloss: `j-no` · `z-←Uzuzuxogoven` · `v-walk-unable-temporary` · `h-competence-motive-internal`
 
 strict: *No — I (A) can't walk right now — for competence (motive, soft standing).*
 
@@ -224,9 +224,9 @@ strict: *(You A and you C,) choose play!*
 
 loose: *You two — pick something playful!*
 
-**C:** `jum vawalal holozoxom.`
+**C:** `jum vawalal holozoxem.`
 
-gloss: `j-prohibition` · `v-walk` · `h-competence-x-ought`
+gloss: `j-prohibition` · `v-walk` · `h-competence-ought-endorse`
 
 strict: *Don’t walk — ought: competence (endorse).*
 

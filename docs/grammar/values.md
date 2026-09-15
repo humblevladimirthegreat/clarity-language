@@ -2,7 +2,7 @@
 <a id="values"></a>
 <a id="value-ascription"></a>
 
-A **need** is a psychological payoff you can name (autonomy, competence, relatedness, pleasure, survival, or an unspecified need). A **stance** is how you stand toward that need: say a noun serves it, say it ought to be served or protected, or say a noun detracts from it.
+A **need** is a psychological payoff you can name (autonomy, competence, relatedness, pleasure, survival, or an unspecified need). At **Beginner**, a **stance** is how you stand toward that need on a **noun**: it **serves** the need or **detracts from** it. **Intermediate** adds **ought** on the clause (this act **should** advance the need) and **motive** (*doing for* the need).
 
 Write the need under `/ɡ/` when you talk about a **noun** (how you feel about that thing). Write it under `/h/` when you talk about the **clause**. `/w/` is extra detail on a value adjective you just wrote, not a second way to mark the noun.
 
@@ -62,31 +62,6 @@ On a *serves* word, **-l / -m / -r** say **how the payoff is appreciated**: thro
 >
 > "The book serves competence (appreciated mentally)."
 
-### Prescription (`xo`): ought
-<a id="value-force"></a>
-
-When you want to say a need **ought** to be served or protected (English *should*), put `/h/` on the clause and write the need with mid-word **`x`**, then **`o`**, then an ending.
-
-That ending is **prescription force**: how strongly you claim the ought. If you do not know the force, use **-m**. Bound **-l** means the ought is non-negotiable in this conversation or rule-set.
-
-| Agalan | Use | English | Cue |
-|--------|-----|---------|-----|
-| `…xol` | the ought is non-negotiable in this conversation or rule-set | *bound* | **-l** ≈ locked |
-| `…xom` | you stand behind this should (soft default if unknown) | *endorse* | **-m** ≈ open backing |
-| `…xor` | worth considering here | *invite* | **-r** ≈ light resume (held out) |
-
-> `zazawan vezehel honogoxom.`
->
-> z-Azawan | v-tell | h-relatedness-ought-endorse
->
-> "Azawan tells: relatedness ought to be served (endorse)."
-
-> `zuhubun vuzunul huhuhexol.`
->
-> z-Uhubun | v-sing | h-survival-ought-bound
->
-> "Uhubun sings: survival ought to be protected (bound)."
-
 ### Unmet (`xu`): detracts from the need
 <a id="value-changeability"></a>
 
@@ -123,8 +98,9 @@ A values word is a need root with mid-word **`x`**, a stance vowel, and an endin
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`xa`** | the named noun pays off this need | *serves* / *met* | **a** ≈ add (the payoff is in) |
-| **`xo`** | ought to act so this need is served or protected | *should* | **o** ≈ one (one ought) |
 | **`xu`** | the named noun subtracts from this need | *detracts from* / *unmet* | **u** ≈ undo (the need is taken down) |
+
+**Intermediate** adds **`xe`** (*ought this act for this need*) and **`xo`** (*doing for this need*). See [prescription](#value-force) and [motive](#value-preference).
 
 A values word with no **`x`** is not a need: `galodol` is still ballot-box-like; `hawerol` is still strawberry as an adverb.
 
@@ -148,9 +124,6 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *rain* | `anunul` | |
 | *wind* | `uwudul` | |
 | *fire* | `urel` | |
-| *tell* | `vezehel` | `ezehel` *speech* |
-| *sleep* | `velebel` | `elebel` *sleep* |
-| *scream* | `vazagal` | `azagal` *scream* |
 | *autonomy* | `alodol` | `alodol` *ballot-box* |
 | *competence* | `olozol` | `olozol` *toolbox* |
 | *relatedness* | `onogol` | `onogol` *knot* |
@@ -184,31 +157,7 @@ z-backpack | g-competence-met-mental
 z-wind | g-relatedness-unmet-temporary
 :::
 
-**4.** *Azawan tells: relatedness ought to be served (endorse).*
-
-::: details Show answer
-`zazawan vezehel honogoxom.`
-
-z-Azawan | v-tell | h-relatedness-ought-endorse
-:::
-
-**5.** *Uhubun sleeps: pleasure ought to be served (endorse).*
-
-::: details Show answer
-`zuhubun velebel haweroxom.`
-
-z-Uhubun | v-sleep | h-pleasure-ought-endorse
-:::
-
-**6.** *Ululon screams: survival ought to be protected (bound).*
-
-::: details Show answer
-`zululon vazagal huhuhexol.`
-
-z-Ululon | v-scream | h-survival-ought-bound
-:::
-
-**7.** *The fire detracts from survival (irreversible).*
+**4.** *The fire detracts from survival (irreversible).*
 
 ::: details Show answer
 `zurel guhuhexul.`
@@ -216,7 +165,7 @@ z-Ululon | v-scream | h-survival-ought-bound
 z-fire | g-survival-unmet-irreversible
 :::
 
-**8.** *The flashlight serves an unspecified need (appreciated physically).*
+**5.** *The flashlight serves an unspecified need (appreciated physically).*
 
 ::: details Show answer
 `zavazul gegexal.`
@@ -262,16 +211,7 @@ z-tent | g-survival-met-spiritual
 *The tent serves survival (appreciated spiritually).*
 :::
 
-**5.** `zululon vezehel honogoxor.`
-
-::: details Show answer
-
-z-Ululon | v-tell | h-relatedness-ought-invite
-
-*Ululon tells: relatedness ought to be served (invite).*
-:::
-
-**6.** `zababal golozoxul.`
+**5.** `zababal golozoxul.`
 
 ::: details Show answer
 
@@ -280,16 +220,7 @@ z-backpack | g-competence-unmet-irreversible
 *The backpack detracts from competence (irreversible).*
 :::
 
-**7.** `zuhubun vazagal huhuhexor.`
-
-::: details Show answer
-
-z-Uhubun | v-scream | h-survival-ought-invite
-
-*Uhubun screams: survival ought to be protected (invite).*
-:::
-
-**8.** `zurel galodoxul.`
+**6.** `zurel galodoxul.`
 
 ::: details Show answer
 
@@ -301,56 +232,83 @@ z-fire | g-autonomy-unmet-irreversible
 ## Intermediate
 <a id="intermediate"></a>
 
-### Motive (`xe`): preference standing
-<a id="value-preference"></a>
+### Prescription (`xe`): ought this act for this need
+<a id="value-force"></a>
 
-English *have to* / *need to* / *doing this for…* often names a **motive**: why the action is happening, as a description, not a *should*. Write `/h/` on the clause with the need root, mid-word **`x`**, **`e`**, then an ending. That ending is **preference standing**: whether the reason comes from the situation, from the agent, or from protecting against something that detracts from the need. If you do not know the standing, use **-m**. **-n** is ordinary [proper](reference-suffix.md#proper-name--n). Habit of the reason uses **`hual`** (*usually my reason* is **`…xem`** plus **`hual`**).
+When you want to say the **act in this clause** ought to serve or protect this need (English *should* on the doing, not a poster about the need), put `/h/` on the clause: need root, mid-word **`x`**, **`e`**, then an ending. The **host verb** is what ought to count toward the need.
+
+That ending is **prescription force**: how strongly you stake that ought. If you do not know the force, use **-m**. Bound **-l** means the ought is non-negotiable in this conversation or rule-set.
+
+**Compare with:** [command](core.md#speech-act-beginner) **`jel`** instructs an act outright. Prescription **`xe`** is deontic and need-linked: *this doing ought to advance this need*, with force on the ending.
+
+| Agalan | Use | English | Cue |
+|--------|-----|---------|-----|
+| `…xel` | the ought is non-negotiable in this conversation or rule-set | *bound* | **-l** ≈ locked |
+| `…xem` | you stand behind this should (soft default if unknown) | *endorse* | **-m** ≈ open backing |
+| `…xer` | worth considering here | *invite* | **-r** ≈ light resume (held out) |
 
 > `zazawan vezehel honogoxem.`
+>
+> z-Azawan | v-tell | h-relatedness-ought-endorse
+>
+> "Azawan tells: telling ought to serve relatedness (endorse)."
+
+> `zuhubun vuzunul huhuhexel.`
+>
+> z-Uhubun | v-sing | h-survival-ought-bound
+>
+> "Uhubun sings: singing ought to protect survival (bound)."
+
+### Motive (`xo`): preference standing
+<a id="value-preference"></a>
+
+English *have to* / *need to* / *doing this for…* often names a **motive**: why the action is happening, as a description, not a *should*. Write `/h/` on the clause with the need root, mid-word **`x`**, **`o`**, then an ending. That ending is **preference standing**: whether the reason comes from the situation, from the agent, or from protecting against something that detracts from the need. If you do not know the standing, use **-m**. **-n** is ordinary [proper](reference-suffix.md#proper-name--n). Habit of the reason uses **`hual`** (*usually my reason* is **`…xom`** plus **`hual`**).
+
+> `zazawan vezehel honogoxom.`
 >
 > z-Azawan | v-tell | h-relatedness-motive-internal
 >
 > "Azawan tells for relatedness (internal reason)."
 
-**Not the same job as:** prescription **`xo`** (*should* serve or protect this need). **`xe`** describes *doing for this need*. On `/ɡ/`, the same stance is the noun’s purpose (*a gift for relatedness*).
+**Not the same job as:** prescription **`xe`** (*this act ought* to serve or protect this need). **`xo`** describes *doing for this need*. On `/ɡ/`, the same stance is the noun’s purpose (*a gift for relatedness*).
 
 **-l** and **-m** are approach-framed; **-r** is guard-framed.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| `…xel` | the situation pulls this motive | *circumstantial* | **-l** ≈ locked to the scene; **e** ≈ order (this ranking of reasons) |
-| `…xem` | the agent’s own reason (soft default if unknown) | *internal* | **-m** ≈ open / from inside |
-| `…xer` | motive as protecting against unmet (away-from) | *protective* | **-r** ≈ resume away from detriment |
+| `…xol` | the situation pulls this motive | *circumstantial* | **-l** ≈ locked to the scene |
+| `…xom` | the agent’s own reason (soft default if unknown) | *internal* | **-m** ≈ open / from inside |
+| `…xor` | motive as protecting against unmet (away-from) | *protective* | **-r** ≈ resume away from detriment |
 
 ### Which ending table?
 
-Beginner already used *serves* / *should* / *detracts from*. Motive uses the same **`x` + vowel** slot; pick the ending table that matches that vowel.
+Beginner already used *serves* and *detracts from*. Intermediate adds *ought this act for* and *doing for*. Pick the ending table that matches the stance vowel.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`xa`** | [how it is appreciated](#value-contact) endings | *serves* / *met* | **a** ≈ add |
-| **`xe`** | [preference standing](#value-preference) endings | *doing for this need* | **e** ≈ order |
-| **`xo`** | [prescription force](#value-force) endings | *should* | **o** ≈ one |
+| **`xe`** | [prescription force](#value-force) endings | *ought this act for this need* | **e** ≈ order (instruct / ought) |
+| **`xo`** | [preference standing](#value-preference) endings | *doing for this need* | **o** ≈ one (one need as the reason) |
 | **`xu`** | [changeability](#value-changeability) endings | *detracts from* / *unmet* | **u** ≈ undo |
 
 ### Attachment sites
 
-Beginner already attached `/ɡ/` after a noun and `/h/` on the clause. The rest of the map:
+Beginner already attached `/ɡ/` after a noun and `/h/` on the clause for met and unmet. The rest of the map:
 
 | Agalan | Use | English |
 |--------|-----|---------|
 | `g…xa…` after a noun | praise: the noun serves the need | *gift (serves relatedness)* (`gonogoxa…`) |
 | `g…xu…` after a noun | criticism: the noun detracts from the need | *gathering (detracts from autonomy)* (`galodoxu…`) |
-| `g…xe…` after a noun | the noun’s purpose is this need | *gift for relatedness* (`gonogoxe…`) |
+| `g…xo…` after a noun | the noun’s purpose is this need | *gift for relatedness* (`gonogoxo…`) |
 | `gl-` + value | the same adjective before the noun | `glonogoxal zawaral` |
 | `h…xa…` on the clause | the event serves the need | *tells: competence is met* (`holozoxa…`) |
-| `h…xo…` on the clause | prescription | *should (for relatedness)* (`honogoxo…`) |
-| `h…xe…` on the clause | motive | *Azawan … (for relatedness)* (`honogoxe…`) |
+| `h…xe…` on the clause | prescription | *this act ought (for relatedness)* (`honogoxe…`) |
+| `h…xo…` on the clause | motive | *Azawan … (for relatedness)* (`honogoxo…`) |
 | `/w/` after a value `/ɡ/` | extra detail on that adjective | *very relatedness-serving* |
 
 Prefer **-m** on **`xu` / `xe` / `xo`** when that table’s dimension is unclear. Several values are several `/ɡ/` or `/h/` words (`golozoxal gonogoxal`), not stacked `x`-additions on one need. The **host** noun or verb carries literal vs metaphorical sense. `/w/` after another adjective grades **that** adjective; it does not mark the noun.
 
-> `zazawan vezehel holozoxal honogoxem.`
+> `zazawan vezehel holozoxal honogoxom.`
 >
 > z-Azawan | v-tell | h-competence-met-physical | h-relatedness-motive-internal
 >
@@ -379,6 +337,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *whisper* | `vuzuhul` | `uzuhul` *whisper* |
 | *bow* | `vobowol` | `obowol` *bow* |
 | *scream* | `vazagal` | `azagal` *scream* |
+| *tell* | `vezehel` | `ezehel` *speech* |
+| *sleep* | `velebel` | `elebel` *sleep* |
 | *autonomy* | `alodol` | `alodol` *ballot-box* |
 | *competence* | `olozol` | `olozol` *toolbox* |
 | *relatedness* | `onogol` | `onogol` *knot* |
@@ -388,47 +348,79 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### English → Agalan
 
-**1.** *Azawan prays for relatedness (internal reason).*
+**1.** *Azawan tells: telling ought to serve relatedness (endorse).*
 
 ::: details Show answer
-`zazawan vabal honogoxem.`
+`zazawan vezehel honogoxem.`
+
+z-Azawan | v-tell | h-relatedness-ought-endorse
+:::
+
+**2.** *Uhubun sleeps: sleeping ought to serve pleasure (endorse).*
+
+::: details Show answer
+`zuhubun velebel haweroxem.`
+
+z-Uhubun | v-sleep | h-pleasure-ought-endorse
+:::
+
+**3.** *Ululon screams: screaming ought to protect survival (bound).*
+
+::: details Show answer
+`zululon vazagal huhuhexel.`
+
+z-Ululon | v-scream | h-survival-ought-bound
+:::
+
+**4.** *Uhubun bows: bowing ought to serve relatedness (endorse).*
+
+::: details Show answer
+`zuhubun vobowol honogoxem.`
+
+z-Uhubun | v-bow | h-relatedness-ought-endorse
+:::
+
+**5.** *Azawan prays for relatedness (internal reason).*
+
+::: details Show answer
+`zazawan vabal honogoxom.`
 
 z-Azawan | v-pray | h-relatedness-motive-internal
 :::
 
-**2.** *Ululon kneels for relatedness (the situation pulls it).*
+**6.** *Ululon kneels for relatedness (the situation pulls it).*
 
 ::: details Show answer
-`zululon vegenel honogoxel.`
+`zululon vegenel honogoxol.`
 
 z-Ululon | v-kneel | h-relatedness-motive-circumstantial
 :::
 
-**3.** *Uhubun whispers for relatedness (internal motive, as usual).*
+**7.** *Uhubun whispers for relatedness (internal motive, as usual).*
 
 ::: details Show answer
-`zuhubun vuzuhul honogoxem hual.`
+`zuhubun vuzuhul honogoxom hual.`
 
 z-Uhubun | v-shush | h-relatedness-motive-internal | h-always-except
 :::
 
-**4.** *Azawan bows for relatedness (protective motive).*
+**8.** *Azawan bows for relatedness (protective motive).*
 
 ::: details Show answer
-`zazawan vobowol honogoxer.`
+`zazawan vobowol honogoxor.`
 
 z-Azawan | v-bow | h-relatedness-motive-protective
 :::
 
-**5.** *Ululon prays for competence (internal reason).*
+**9.** *Ululon prays for competence (internal reason).*
 
 ::: details Show answer
-`zululon vabal holozoxem.`
+`zululon vabal holozoxom.`
 
 z-Ululon | v-pray | h-competence-motive-internal
 :::
 
-**6.** *Azawan’s church serves relatedness (appreciated physically).*
+**10.** *Azawan’s church serves relatedness (appreciated physically).*
 
 ::: details Show answer
 `zuhurul gonogoxal guhurum bazawan.`
@@ -436,25 +428,43 @@ z-Ululon | v-pray | h-competence-motive-internal
 z-church | g-relatedness-met-physical | g-faith | b-Azawan
 :::
 
-**7.** *Azawan prays: competence is met (physical) and relatedness is the internal motive.*
+**11.** *Azawan prays: competence is met (physical) and relatedness is the internal motive.*
 
 ::: details Show answer
-`zazawan vabal holozoxal honogoxem.`
+`zazawan vabal holozoxal honogoxom.`
 
 z-Azawan | v-pray | h-competence-met-physical | h-relatedness-motive-internal
 :::
 
-**8.** *Ululon screams: survival ought (bound) and survival as circumstantial motive.*
+**12.** *Ululon screams: screaming ought to protect survival (bound) and survival as circumstantial motive.*
 
 ::: details Show answer
-`zululon vazagal huhuhexol huhuhexel.`
+`zululon vazagal huhuhexel huhuhexol.`
 
 z-Ululon | v-scream | h-survival-ought-bound | h-survival-motive-circumstantial
 :::
 
 #### Agalan → English
 
-**1.** `zululon vabal holozoxel.`
+**1.** `zululon vezehel honogoxer.`
+
+::: details Show answer
+
+z-Ululon | v-tell | h-relatedness-ought-invite
+
+*Ululon tells: telling ought to serve relatedness (invite).*
+:::
+
+**2.** `zuhubun vazagal huhuhexer.`
+
+::: details Show answer
+
+z-Uhubun | v-scream | h-survival-ought-invite
+
+*Uhubun screams: screaming ought to protect survival (invite).*
+:::
+
+**3.** `zululon vabal holozoxol.`
 
 ::: details Show answer
 
@@ -463,7 +473,7 @@ z-Ululon | v-pray | h-competence-motive-circumstantial
 *Ululon prays for competence (circumstantial motive).*
 :::
 
-**2.** `zuhubun vegenel honogoxem.`
+**4.** `zuhubun vegenel honogoxom.`
 
 ::: details Show answer
 
@@ -472,7 +482,7 @@ z-Uhubun | v-kneel | h-relatedness-motive-internal
 *Uhubun kneels for relatedness (internal reason).*
 :::
 
-**3.** `zazawan vuzuhul honogoxer.`
+**5.** `zazawan vuzuhul honogoxor.`
 
 ::: details Show answer
 
@@ -481,7 +491,7 @@ z-Azawan | v-shush | h-relatedness-motive-protective
 *Azawan whispers for relatedness (protective motive).*
 :::
 
-**4.** `zabarel gaweroxar.`
+**6.** `zabarel gaweroxar.`
 
 ::: details Show answer
 
@@ -490,7 +500,7 @@ z-prayer-bead | g-pleasure-met-spiritual
 *The prayer bead serves pleasure (appreciated spiritually).*
 :::
 
-**5.** `zanedel galodoxum.`
+**7.** `zanedel galodoxum.`
 
 ::: details Show answer
 
@@ -499,7 +509,7 @@ z-candle | g-autonomy-unmet-modifiable
 *The candle detracts from autonomy (modifiable).*
 :::
 
-**6.** `zobelel gonogoxum.`
+**8.** `zobelel gonogoxum.`
 
 ::: details Show answer
 
@@ -508,16 +518,7 @@ z-bell | g-relatedness-unmet-modifiable
 *The bell detracts from relatedness (modifiable).*
 :::
 
-**7.** `zuhubun vobowol honogoxom.`
-
-::: details Show answer
-
-z-Uhubun | v-bow | h-relatedness-ought-endorse
-
-*Uhubun bows: relatedness ought to be served (endorse).*
-:::
-
-**8.** `zululon vazagal huhuhexem hual.`
+**9.** `zululon vazagal huhuhexom hual.`
 
 ::: details Show answer
 
