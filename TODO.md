@@ -5,9 +5,7 @@ review TTS
 consider removing emojis from docs (but keep in lexicon)
 confirm logic for detecting glosses, should do a count
 consider visible gloss for exercises
-advanced section somewhere on how order affects focus
-fix measure units so they are own sense rather than overlay
-reconsider gloss for overlays
+advanced section somewhere on how order affects emphasis
 local llm systematically review entire lexicon
 
 ## Evidentiality / tense

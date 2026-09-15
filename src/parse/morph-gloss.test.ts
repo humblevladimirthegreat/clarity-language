@@ -122,7 +122,7 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("vezehel", "v-tell");
     expectLine("vebarul", "v-departure");
     expectLine("welem", "w-very");
-    expectLine("gelem", "g-size");
+    expectLine("gelem", "g-big");
     expectLine("hogorem", "h-inside");
     expectLine("zejel", "z-eye");
     expectLine("hozal", "h-hash");

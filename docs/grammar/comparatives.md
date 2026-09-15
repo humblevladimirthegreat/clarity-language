@@ -292,11 +292,11 @@ Equality **`ae`** with a shared scale needs **two or more** names. **`ae`** with
 <a id="measured-differentials"></a>
 <a id="measure-gap"></a>
 
-English *two meters more challenging* still ranks two people on one quality, and it also names **how large the gap is**. Keep the rank join and the shared scale adjective. After that adjective, write a **measure noun** (`/b/`): that noun is the **unit**, and `/ɡ/` on the unit is the **amount**. Bare unit `urule` *measurement* is the short meter; titled `burulexrawon` is the full word ([measure phrases](numbers-applied.md#measure-phrases)).
+English *two meters more challenging* still ranks two people on one quality, and it also names **how large the gap is**. Keep the rank join and the shared scale adjective. After that adjective, write a **measure noun** (`/b/`): that noun is the **unit** (published metaphor = SI name), and `/ɡ/` on the unit is the **amount** ([measure phrases](numbers-applied.md#measure-phrases)).
 
-> `zazawan zululon zel gomonam burulel g+2.`
+> `zazawan zululon zel gomonam bedurem g+2.`
 >
-> z-Azawan | z-Ululon | z-rank/more | g-challenge | b-ruler | g-two
+> z-Azawan | z-Ululon | z-rank/more | g-challenge | b-meter | g-two
 >
 > "Azawan is two meters more challenging than Ululon."
 
@@ -319,7 +319,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 | *heavy* | `aragam` | `aragal` *rock* |
 | *exertion* | `ewewum` | `ewewul` *lift* |
 | *big* | `elem` | `elel` *elephant* |
-| *rock* | `baragal` | `aragal` *rock* |
+| *gram* | `obonom` | `obonol` *pound* |
 | *ocean-wave* | `wogegal` | `ogegal` *ocean-wave* |
 | *intensity* | `ohogem` | `ohogel` *hockey* |
 | *lift* | `vewewul` | `ewewul` *lift* |
@@ -357,8 +357,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 **5.** *Ululon is two grams heavier than Azawan.*
 
 ::: details Show answer
-`zululon zazawan zel garagam baragal g+2.`
-<!-- gloss: z-Ululon | z-Azawan | z-rank/more | g-heavy | b-rock | g-two -->
+`zululon zazawan zel garagam bobonom g+2.`
+<!-- gloss: z-Ululon | z-Azawan | z-rank/more | g-heavy | b-gram | g-two -->
 :::
 
 **6.** *Azawan is heavier than Ululon* (exclusive ladder).
@@ -419,8 +419,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 *Ululon and Uhubun are exerted.*
 :::
 
-**5.** `zazawan zululon zel garagam baragal g+5.`
-<!-- gloss: z-Azawan | z-Ululon | z-rank/more | g-heavy | b-rock | g-five -->
+**5.** `zazawan zululon zel garagam bobonom g+5.`
+<!-- gloss: z-Azawan | z-Ululon | z-rank/more | g-heavy | b-gram | g-five -->
 
 ::: details Show answer
 *Azawan is five grams heavier than Ululon.*

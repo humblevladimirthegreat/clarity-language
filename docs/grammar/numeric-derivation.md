@@ -105,7 +105,7 @@ English *a pair of…*, *three-part…*, *primary…* can name **how many parts 
 
 | Agalan | Use | English | `-N` | Privative English |
 |--------|-----|---------|------|-------------------|
-| **`ROOTx+1`** | unit / primary / singleton | `zegeruxrawol`: *a single / primary voice*; titled SI units on dimension roots (`burulexrawon` *meter*: [measure phrases](numbers-applied.md#unit-short-form); bare unit is the short form) | `zegeruxruwol` | *an indistinct / non-singular voice* |
+| **`ROOTx+1`** | unit / primary / singleton | `zegeruxrawol`: *a single / primary voice*; SI measure nouns use published unit metaphors instead ([measure phrases](numbers-applied.md#measure-phrases)) | `zegeruxruwol` | *an indistinct / non-singular voice* |
 | **`ROOTx+2`** | dual / mutual / reciprocal / pair | `gabenexradul`: *mutual commitment* | `gabenexrudul` | *one-sided commitment* |
 | **`ROOTx+3`** | triad / triplet / 3-part / ternary | `zezehexrarel`: *a three-part dialogue* | `zazuduxrurel` | *non-tripartite institution* |
 | **`ROOTx+4`** | quad / 4-part / square / frame | `zujuduxramol`: *a four-part / framed judgment* | `zemamuxrumol` | *an unframed message* |

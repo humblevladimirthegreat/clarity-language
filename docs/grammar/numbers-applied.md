@@ -55,18 +55,18 @@ Endings: **-l** exact; **-m** fuzzy (*around 15:30*); **-n** conventional schedu
 <a id="unit-amount"></a>
 <a id="si-units"></a>
 
-English names **how much of a unit** (*two meters*, *three hours*). The unit is a lexicon noun in the slot you need; the amount is an ordinary `/ɡ/` scalar on that unit. Speech uses published dimension / quantity roots, not Latin abbreviations (`m`, `kg`, `s`).
+English names **how much of a unit** (*two meters*, *three hours*). The unit is a lexicon noun whose **published metaphor** is that SI or everyday unit name; the amount is an ordinary `/ɡ/` scalar on that unit. Use those unit lemmas in speech, not Latin abbreviations (`m`, `kg`, `s`). Introduce the unit sense with **-m** ([metaphor](reference-suffix.md#metaphor-m)); resume with **-r** when the unit phrase is already on the table.
 
-> `zazawan burulel g+2 vawalal.`
+> `zazawan bedurem g+2 vawalal.`
 >
-> z-Azawan | b-ruler | g-two | v-walk
+> z-Azawan | b-meter | g-two | v-walk
 >
 > "Azawan walks two meters."
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| `burulel g+2` | extra noun (`/b/`) | *two meters* |
-| `zanelol g+3`, `daragal g+5` | subject / object / … | *three seconds*, *five grams* |
+| `bedurem g+2` | extra noun (`/b/`) | *two meters* |
+| `zozobam g+3`, `dobonom g+5` | subject / object / … | *three seconds*, *five grams* |
 | `gurulel g+2` on a host | modifier on a noun | rare; prefer unit as `/b/` or a freestanding noun phrase |
 
 Same endings and fuzzy **-m** habits as other number words on the amount (`g~+2` ≈ *about two*). The **unit** takes ordinary reference suffixes.
@@ -74,36 +74,38 @@ Same endings and fuzzy **-m** habits as other number words on the amount (`g~+2`
 #### Stock units
 <a id="stock-units"></a>
 
-Everyday units (bare measure is the default):
+Base and everyday units (each row is a **unit metaphor**; the literal picture stays on the same published root unless noted):
 
-| SI / everyday unit | Agalan | Bare measure | Same root as | Cue |
-|--------------------|--------|--------------|--------------|-----|
-| meter | `urulel` | `burulel` | `urulel` *ruler* | 📏: tracks exact length |
-| gram | `aragal` | `baragal` | `aragal` *rock* | 🪨: hard to lift |
-| second | `anelol` | `banelol` | `anelol` *mantel-clock* | 🕰️: marks hours going by |
-| liter | `ozobol` | `bozobol` | `ozobol` *spoon* | 🥄: measures a portion |
-| ampere | `ejelol` | `bejelol` | `ejelol` *jellyfish* | 🪼: drift with the current |
-| kelvin | `ebebel` | `bebebel` | `ebebel` *pepper* | 🌶️: brings heat |
-| mole | `ememal` | `bememal` | `ememal` *meat* | 🍖: the meat of the matter |
-| candela | `anedel` | `banedel` | `anedel` *candle* | 🕯️: light fills the room |
-| hour / civil duration | `umel` | `bumel` | | 🕐: a clock face marks the hour |
-| heat grade (not kelvin) | `edehel` | `gedehel` | `edehel` *thermometer* | 🌡️: reads how hot or cold |
+| SI / everyday unit | Unit root (metaphor) | Example | Literal on same root | Cue |
+|--------------------|----------------------|---------|----------------------|-----|
+| meter | `edure` *meter* | `bedurem g+2` | `edurel` *set-square* | 📐: exact length |
+| gram | `obono` *gram* | `bobonom g+5` | `obonol` *pound* (banknote) | 💷: standard mass |
+| second | `ozoba` *second* | `bozobam g+3` | `ozobal` *stopwatch* | ⏱️: short tick |
+| liter | `abolo` *liter* | `babolom g+1` | `abolol` *pool* | 🎱: liquid volume |
+| ampere | `abega` *ampere* | `babegam g+2` | `abegal` *cable-car* | 🚠: current along a line |
+| kelvin | `uje` *kelvin* | `bujem g+300` | `ujel` *ice* | 🧊: thermodynamic temperature |
+| mole | `ugozo` *mole* | `bugozom g+1` | `ugozol` *microscope* | 🔬: amount of substance |
+| candela | `uluhu` *candela* | `buluhum g+100` | `uluhul` *lightbulb* | 💡: luminous intensity |
+| hour (civil duration) | `ohora` *hour* | `bohoram g+3` | `ohoral` *hourglass* | ⏳: civil hour block |
+| heat grade (not kelvin) | `edehe` *temperature* | `gedehel g+37` | `edehel` *thermometer* | 🌡️: how hot or cold |
 
-`bumel g+3` ≈ *three hours*.
+Related **quantity** words (*heavy*, *flow*, *time* as continuum, …) stay on their own roots (`aragam` *heavy*, `gumel` *time*, …); they are not SI measure nouns.
+
+`bohoram g+3` ≈ *three hours*.
 
 #### Scale the amount
 <a id="no-metric-prefixes"></a>
 <a id="metric-prefixes"></a>
 
-Keep the **base** unit. Put the power of ten on the **amount** (`e3` / `e-3` / an exact count): `burulel g+5400` or `burulel g+5.4e3`; `baragal g+70e3`.
+Keep the **base** unit. Put the power of ten on the **amount** (`e3` / `e-3` / an exact count): `bedurem g+5400` or `bedurem g+5.4e3`; `bobonom g+70e3`.
 
 **For *kilometers* / *milligrams*, use:** that scaled amount on the base unit. There is no *kilo-* / *milli-* / *mega-* stem.
 
 **Measured differentials** (*two meters taller*) put that measure noun phrase as the **single `/b/`** on the SHARED scale adjective of a [comparative](comparatives.md#measured-differentials):
 
-> `zazawan zululon zel gomonam burulel g+2.`
+> `zazawan zululon zel gomonam bedurem g+2.`
 >
-> z-Azawan | z-Ululon | z-rank/more | g-challenge | b-ruler | g-two
+> z-Azawan | z-Ululon | z-rank/more | g-challenge | b-meter | g-two
 >
 > "Azawan is two meters more challenging than Ululon."
 
@@ -203,7 +205,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**. One
 | *bottle* | `abobol` | |
 | *rock* | `aragal` | |
 | *spoon* | `ozobol` | |
-| *measurement* | `urulel` | |
+| *meter* | `edurem` | `edurel` *set-square* |
+| *gram* | `obonom` | `obonol` *pound* |
 | *time* | `umel` | |
 | *see* | `vejel` | `ejel` *eye* |
 | *punch* | `vubunul` | `ubunul` *punch* |
@@ -328,24 +331,25 @@ Short drills for Intermediate. Try each item before opening **Show answer**. One
 ## Advanced
 <a id="advanced"></a>
 
-### Bare unit vs titled unit (`x+1`)
+### Named standards and derived units
 <a id="unit-short-form"></a>
 
-When the same root is also a quality or continuum (*how heavy*, *passage of time*, *heat*), titled **`ROOTx+1`** keeps the **named unit** distinct from the metaphor. Bare measure is enough when the unit reading is already clear (`baragal g+70` ≈ *70 grams*).
+Everyday measure uses the **unit metaphor** on the stock roots above (`bedurem g+2`). When you cite the **conventional SI name** as a titled standard (*the meter*, *the pascal*), use **-n** on that unit root ([named handles](reference-suffix.md#named-n-beginner)). Resume a prior unit phrase with **-r** on the same root (`bedurer g+2` after `bedurem g+2` is on the table).
 
-| Agalan | Use | English |
-|--------|-----|---------|
-| `burulel g+2` | short / default: the scalar licenses the unit reading | ordinary measure |
-| `burulexrawon g+2` | titled **`+1`**: the named unit of that dimension | *the meter* (not just *measurement*) |
-| `bur` / `burulexrawor` | resume after the unit noun phrase is on the table | that unit again |
+**Common derived (optional)** — unit metaphor on a dedicated root; related **quantity** stays on the original row:
 
-Spelled **`…xrawol`** / **`…xrawon`**: [numeric derivation](numeric-derivation.md#numeric-derivation) (**`ROOTx+1`**). Prefer **-n** on the titled form when the unit is a conventional SI name; **-l** when naming a unit-instance without that title force. Soft **-m** hedges amount or unit, not a short name.
+| Unit | Unit root (metaphor) | Example | Quantity (unchanged) |
+|------|----------------------|---------|----------------------|
+| newton | `urenu` *newton* | `burenum g+10` | `ubunu` *force* |
+| pascal | `aleme` *pascal* | `balemem g+101325` | `abama` *pressure* |
+| joule | `unu` *joule* | `bunum g+500` | `adero` *energy* |
+| watt | `odore` *watt* | `bodorem g+60` | `obodu` *power* |
+| hertz | `azale` *hertz* | `bazalem g+50` | `urumu` *rhythm* |
+| ohm | `unudu` *ohm* | `bunudum g+100` | `onugo` *blockage* |
+| coulomb | `azare` *coulomb* | `bazarem g+2` | `uruhu` *charge* |
+| radian | `ubane` *radian* | `bubanem g+1` | `erelo` *cycle* |
 
-**Related form:** normative Mine **`zuroron`** vs performance **`zugobon`** ([comparatives](comparatives.md#judgment-benchmarks)). Titled **`+1`** is the unit name, not that bar.
-
-Titled twins of the stock units: `burulexrawon`, `baragaxrawon`, `baneloxrawon`, `bozoboxrawon`, `bejeloxrawon`, `bebeboxrawon`, `bememaxrawon`, `banedexrawon`.
-
-**Common derived (optional):** newton `ubunu` *force*; pascal `abama` *pressure*; joule `adero` *energy*; watt `obodu` *power*; hertz `urumu` *rhythm*; ohm `onugo` *blockage*; coulomb `uruhu` *charge*; radian `erelo` *cycle*. Same bare / `…x+1` habit.
+**Related form:** normative Mine **`zuroron`** vs performance **`zugobon`** ([comparatives](comparatives.md#judgment-benchmarks)) is a judgment bar, not a unit. General **`ROOTx+1`** (*primary / singleton of a kind*) is [numeric derivation](numeric-derivation.md#scalar-digit-morphs), not an SI alias.
 
 ### Thresholds (single-item ranked)
 <a id="numeric-thresholds"></a>

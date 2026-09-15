@@ -450,7 +450,7 @@ Content endings **-l / -m / -n / -r**.
 
 ### Measure phrase / unit
 
-Amount + lexicon unit noun; titled **`ROOTx+1`**.
+Amount + lexicon unit noun (published metaphor = unit name).
 
 [Numbers applied](numbers-applied.md#measure-phrases)
 
