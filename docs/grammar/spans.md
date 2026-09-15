@@ -121,7 +121,7 @@ The letter on the open is the role of the **entire span** in the outer sentence.
 
 > `jul zululon v[vozodol].`
 >
-> j-prohibition | z-Ululon | v-halt
+> j-prohibition | z-Ululon | v-stop
 >
 > "Don’t “halt,” Ululon."
 

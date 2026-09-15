@@ -59,7 +59,7 @@ English *quasi-* says something has the **shape or role** of a kind without coun
 
 > `zuhubun geberelonogoxrubul.`
 >
-> z-Uhubun | g-friend-x--e-
+> z-Uhubun | g-friend-x-quasi
 >
 > "Uhubun is a quasi-friend."
 
@@ -185,7 +185,7 @@ English *first-draft*, *secondary adventure*, *third-order problem* can name **w
 
 > `zululon debeguxrewol vuwurul.`
 >
-> z-Ululon | d-draft-x-#1 | v-write
+> z-Ululon | d-pencil-x-first | v-write
 >
 > "Ululon writes a first-draft."
 
@@ -219,7 +219,7 @@ English *specimen #1*, *room-12 as a coded kind* treats digits as a **catalog ID
 
 > `zazawan deduduxrowol vejel.`
 >
-> z-Azawan | d-specimen-x-_1 | v-see
+> z-Azawan | d-petri-dish-x-_1 | v-eye
 >
 > "Azawan sees specimen #1."
 

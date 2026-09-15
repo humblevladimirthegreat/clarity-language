@@ -48,8 +48,8 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("odunaxalanen", "wish-x-guidance");
     expectLine("jubunexunowen", "j-Ubune-x-Unowen");
     expectLine("zuzuzuxogovexadedan", "z-Uzuzu-x-Ogove-x-Adedan");
-    expectLine("vawalaxel", "v-walking-unable-temporary");
-    expectLine("holozoxem", "h-competence-x-motive");
+    expectLine("vawalaxel", "v-walk-unable-temporary");
+    expectLine("holozoxem", "h-competence-motive-internal");
     expectLine("zaxezeher", "z-agent-x-dialogue");
     expectLine("hexal", "h-aside-x-multi");
     expectLine("xuxul", "x-span-close");
@@ -78,7 +78,7 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("hal", "h-never");
     expectLine("har", "h-sometimes");
     expectLine("jol zuhubun vawalal har?", "j-question | z-Uhubun | v-walk | h-when");
-    expectLine("zazawan vawalal hanunul hal", "z-Azawan | v-walking | h-rain | h-only-when");
+    expectLine("zazawan vawalal hanunul hal", "z-Azawan | v-walk | h-rain | h-only-when");
     expectLine("hual", "h-always");
     expectLine("von", "v-choose");
     expectLine("g+3", "g-three");
@@ -108,7 +108,7 @@ describe("morphGlossLine — glosses.md single words", () => {
   });
 
   it("fill-ask zar is z-who", () => {
-    expectLine("jol zar vawalal", "j-question | z-who | v-walking");
+    expectLine("jol zar vawalal", "j-question | z-who | v-walk");
   });
 
   it("next-clause adoro and hostless ABIL", () => {
@@ -128,21 +128,21 @@ describe("morphGlossLine — glosses.md dialogue turns", () => {
   it("ability + value motive", () => {
     expectLine(
       "juel zugobon vawalaxel holozoxem.",
-      "j-no | z-speaker | v-walking-unable-temporary | h-competence-x-motive",
+      "j-no | z-speaker | v-walk-unable-temporary | h-competence-motive-internal",
     );
   });
 
   it("numbered alternative + unmet pleasure", () => {
     expectLine(
       "x#e- zuzebul g#1 zugobonx haweroxur.",
-      "x-starting-with | z-problem | g-first | z-speaker-x | h-pleasure-x-unmet",
+      "x-starting-with | z-problem | g-first | z-speaker-x | h-pleasure-unmet-temporary",
     );
   });
 
   it("inclusive we", () => {
     expectLine(
       "jael xezazal zahan howoram vawalal vul.",
-      "j-yes | x-therefore | z-interlocutors | h-plan-sketch | v-walking | v-not",
+      "j-yes | x-therefore | z-interlocutors | h-plan-sketch | v-walk | v-not",
     );
   });
 
@@ -199,6 +199,34 @@ describe("compareMorphGloss", () => {
     assert.equal(result.ok, true, `${result.expected} vs ${result.actual}`);
   });
 
+  it("values bake stance and ending grain", () => {
+    expectLine("zawaral wonogoxal", "z-wrapped-gift | w-relatedness-met-physical");
+    expectLine("hogegam hanedem", "h-HIGH | h-CIRCUM");
+  });
+
+  it("span interiors gloss as English", () => {
+    expectLine("zazawan vawalal h(huzumum)", "z-Azawan | v-walk | h-happy");
+    expectLine("jul zululon v[vozodol]", "j-prohibition | z-Ululon | v-stop");
+    expectLine(
+      "zazawan vawalal h(zululon velebel)",
+      "z-Azawan | v-walk | h- | z-Ululon | v-sleep",
+    );
+  });
+
+  it("viewpoint laterals keep compass on DIR", () => {
+    expectLine("jel vawalal hewezexazawan", "j-command | v-walk | h-west-x-Azawan");
+  });
+
+  it("house-cast resume without a same-line antecedent", () => {
+    expectLine("zazawarx vajul", "z-←Azawan-x | v-chair");
+  });
+
+  it("quasi numeric derivation is English", () => {
+    expectLine("zuhubun geberelonogoxrubul", "z-Uhubun | g-friend-x-quasi");
+  });
+});
+
+describe("morphGlossLine — extra fixtures", () => {
   it("round-trips glosses.md example blocks that include their antecedents", () => {
     const glosses = readFileSync(join(rootDir, "docs", "meta", "glosses.md"), "utf8");
     const pairs = extractExampleBlocks(glosses);

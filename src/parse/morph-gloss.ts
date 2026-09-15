@@ -24,6 +24,7 @@
  */
 
 import { classify, type ClassifyTables } from "./classify.js";
+import { parse as peggyParse, SyntaxError as PeggySyntaxError } from "../generated/word-parser.js";
 import { parseWithTables } from "./parse-core.js";
 import type {
   AnaphorBind,
@@ -31,6 +32,7 @@ import type {
   Ending,
   LexOverlay,
   LexWord,
+  MorphWord,
   NumberGroup,
   NumberStem,
   ParseResult,
@@ -153,9 +155,28 @@ const ABILITY_STANCE: Record<string, string> = {
 const VALUE_STANCE: Record<string, string> = {
   a: "met",
   e: "motive",
-  o: "prescription",
+  o: "ought",
   u: "unmet",
 };
+
+/** Ending grain on values (contact / preference / force / changeability). */
+const VALUE_GRAIN: Record<string, Partial<Record<Ending, string>>> = {
+  a: { l: "physical", m: "mental", r: "spiritual" },
+  e: { l: "circumstantial", m: "internal", r: "protective" },
+  o: { l: "bound", m: "endorse", r: "invite" },
+  u: { l: "irreversible", m: "modifiable", r: "temporary" },
+};
+
+const COMPASS_ROOTS = new Set([
+  "onoho",
+  "ohuhu",
+  "ezaza",
+  "eweze",
+  "onore",
+  "onohe",
+  "ozozu",
+  "ozohe",
+]);
 
 const GREETING_STANCE: Record<string, string> = {
   a: "presence",
@@ -324,8 +345,57 @@ export function morphGlossFor(
 export function morphGlossLine(text: string, tables: ClassifyTables): string {
   const { words, ctxByIndex } = analyzeLine(text, tables);
   return words
-    .map((word, index) => morphGlossFor(word, tables, ctxByIndex[index] ?? {}))
+    .flatMap((word, index) => morphGlossTokens(word, tables, ctxByIndex[index] ?? {}))
     .join(" | ");
+}
+
+function morphGlossTokens(
+  word: LexWord,
+  tables: ClassifyTables,
+  ctx: MorphGlossContext,
+  nested = false,
+): string[] {
+  const family = word.family;
+  if (family.kind === "writingSpan" && !family.anaphor) {
+    const payload = family.payload.trim();
+    if (payload && family.bracket !== "<") {
+      const inner: string[] = [];
+      for (const chunk of payload.match(/\S+/g) ?? []) {
+        const core = peelWord(chunk);
+        if (!core) continue;
+        try {
+          inner.push(
+            ...morphGlossTokens(classify(parseWord(core), tables), tables, {}, true),
+          );
+        } catch {
+          inner.push(core);
+        }
+      }
+      const prefix =
+        word.gl ? "gl" : word.pos ? word.pos : "";
+      const fence =
+        family.bracket === "["
+          ? "cite"
+          : family.bracket === "{"
+            ? "mention"
+            : family.bracket === "("
+              ? "aside"
+              : "opaque";
+      if (inner.length === 1 && prefix) {
+        const token = inner[0]!;
+        const body = token.includes("-") ? token.slice(token.indexOf("-") + 1) : token;
+        const collapsed = [`${prefix}-${body}`];
+        if (nested) return [`${prefix}-${fence}`, ...collapsed];
+        return collapsed;
+      }
+      if (prefix) {
+        const open = family.bracket === "(" ? `${prefix}-` : `${prefix}-${fence}`;
+        return [open, ...inner];
+      }
+      return inner;
+    }
+  }
+  return [morphGlossFor(word, tables, ctx)];
 }
 
 export function normalizeMorphLine(line: string): string {
@@ -362,7 +432,7 @@ export function compareMorphGloss(
 }
 
 const MORPH_TOKEN_RE =
-  /^(?:[zdbvgwhxj]l?-)?(?:←)?[A-Za-z0-9…/'’.+-]+(?:-x-[A-Za-z0-9…/'’.+-]+)*(?:-x)?$/;
+  /^(?:[zdbvgwhxj]l?-)?(?:←)?[A-Za-z0-9…/'’._#+-]*(?:-x-[A-Za-z0-9…/'’._#+-]+)*(?:-x)?$/;
 
 export function looksLikeMorphLine(line: string): boolean {
   const trimmed = line.trim();
@@ -441,14 +511,22 @@ function analyzeLine(
   text: string,
   tables: ClassifyTables,
 ): { words: LexWord[]; ctxByIndex: MorphGlossContext[] } {
-  const words: LexWord[] = [];
-  const chunks = text.match(/\S+/g) ?? [];
-  for (const chunk of chunks) {
+  const cores: string[] = [];
+  for (const chunk of text.match(/\S+/g) ?? []) {
     if (chunk === "^") continue;
     const core = peelWord(chunk);
-    if (!core) continue;
-    words.push(classify(parseWord(core), tables));
+    if (core) cores.push(core);
   }
+  let morphWords: MorphWord[] = [];
+  if (cores.length) {
+    try {
+      morphWords = peggyParse(cores.join(" "), { startRule: "words" }) as MorphWord[];
+    } catch (error) {
+      if (error instanceof PeggySyntaxError) throw new WordParseError(error);
+      throw error;
+    }
+  }
+  const words = morphWords.map((word) => classify(word, tables));
 
   let parsed: ParseResult | undefined;
   try {
@@ -517,17 +595,21 @@ function sensePieces(
   tables: ClassifyTables,
   ctx: MorphGlossContext,
 ): string[] {
+  const family = word.family;
   const resume =
-    ctx.antecedent &&
     word.ending === "r" &&
     word.reading !== "value" &&
     word.reading !== "ability" &&
-    word.family.kind !== "joinMarker";
-  if (resume && ctx.antecedent) {
-    return [`←${senseLabel(ctx.antecedent, tables, {})}`];
+    family.kind !== "joinMarker";
+  if (resume) {
+    if (ctx.antecedent) {
+      return [`←${senseLabel(ctx.antecedent, tables, {})}`];
+    }
+    if (family.kind === "content") {
+      const house = family.roots.map((root) => HOUSE_CAST[root]).find(Boolean);
+      if (house) return [`←${house}`];
+    }
   }
-
-  const family = word.family;
   switch (family.kind) {
     case "reviser":
       return [reviserLabel(family.form, ctx)];
@@ -639,6 +721,22 @@ function restrictorLabel(
   return `${series}${open}`;
 }
 
+function numericKindLabel(stem: NumberStem, pos: Pos | undefined): string {
+  const exp = stem.digitlessExp;
+  const noMantissa = stem.groups.every((g) => !g.mantissa && !g.exponentDigits);
+  if (noMantissa) {
+    if (stem.marker === "+" && exp === "e") return "infinity";
+    if (stem.marker === "+" && (exp === "e-" || exp === "-")) return "grain";
+    if (stem.marker === "-" && exp === "e") return "void";
+    if (stem.marker === "-" && (exp === "e-" || exp === "-e-" || exp === "-")) return "quasi";
+    if (stem.marker === "#" && (exp === "e-" || exp === "-")) return "origin";
+    if (stem.marker === "#" && exp === "e") return "telos";
+    if ((stem.marker === "+" || stem.marker === "ra") && !exp) return "poly";
+    if ((stem.marker === "-" || stem.marker === "ru") && !exp) return "de";
+  }
+  return numberLabel(stem, pos);
+}
+
 function numberLabel(stem: NumberStem, pos: Pos | undefined): string {
   const exp = stem.digitlessExp;
   if (exp) {
@@ -675,6 +773,9 @@ function numberLabel(stem: NumberStem, pos: Pos | undefined): string {
   }
 
   const body = stem.groups.map(formatNumberGroup).filter(Boolean).join(",");
+  if (stem.marker === "_" || stem.marker === "ro") {
+    return body ? `_${body}` : "_";
+  }
   if ((stem.marker === "+" || stem.marker === "ra") && !exp) return body;
   if ((stem.marker === "-" || stem.marker === "ru") && !exp) {
     return body ? `minus-${body}` : "minus";
@@ -738,7 +839,12 @@ function xPieces(word: LexWord, tables: ClassifyTables): string[] {
       return [`${host}-${stance}`];
     }
     if (word.reading === "value") {
-      return [host, VALUE_STANCE[family.stanceVowel ?? ""] ?? family.stanceVowel ?? "stance"];
+      const stance = VALUE_STANCE[family.stanceVowel ?? ""] ?? family.stanceVowel ?? "stance";
+      const grain =
+        family.stanceVowel && word.ending
+          ? VALUE_GRAIN[family.stanceVowel]?.[word.ending]
+          : undefined;
+      return grain ? [`${host}-${stance}-${grain}`] : [host, stance];
     }
     const stance = ABILITY_STANCE[family.stanceVowel ?? ""] ?? family.stanceVowel ?? "ability";
     return [`${host}-${stance}`];
@@ -748,8 +854,23 @@ function xPieces(word: LexWord, tables: ClassifyTables): string[] {
     const host = family.leftRoots.map((root) =>
       rootSense(root, word.ending, tables, { named: word.ending === "n" }),
     );
-    const num = family.numberStem ? numberLabel(family.numberStem, word.pos) : "num";
+    const num = family.numberStem ? numericKindLabel(family.numberStem, word.pos) : "num";
     return [...host, num];
+  }
+
+  if (
+    family.leftRoots.length === 1 &&
+    COMPASS_ROOTS.has(family.leftRoots[0]!) &&
+    (family.rightRoots?.length ?? 0) > 0
+  ) {
+    const dir = rootSense(family.leftRoots[0]!, "l", tables, { named: false });
+    const anchors = (family.rightRoots ?? []).map((root, i, all) =>
+      rootSense(root, word.ending, tables, {
+        named: word.ending === "n",
+        nameLast: word.ending === "n" && i === all.length - 1,
+      }),
+    );
+    return [dir, ...anchors];
   }
 
   const named = word.ending === "n";
@@ -847,6 +968,15 @@ function rootSense(
   }
 
   if (opts.need && NEED_ENGLISH[root]) return NEED_ENGLISH[root]!;
+
+  const compound = tables.compounds.get(root);
+  if (compound) {
+    const lemma =
+      ending === "m"
+        ? compound.metaphorical || compound.literal
+        : compound.literal || compound.metaphorical;
+    if (lemma) return hyphenEnglish(lemma);
+  }
 
   if (root === "ugobo") {
     return ending === "l" ? "microphone" : "speaker";

@@ -287,7 +287,7 @@ English *should* on a causal claim is often a wish or ought, not a formal or nat
 
 > `haon bezewem holozoxor.`
 >
-> h-open-to | b-effort | h-competence-x-prescription
+> h-open-to | b-effort | h-competence-ought-invite
 >
 > "Effort would count (as an ought)."
 

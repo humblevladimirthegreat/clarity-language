@@ -19,15 +19,15 @@ You already write a property on `/ɡ/` after the noun (*a blue dog*). When you s
 
 The same string is also the noun plus its adjective: `zazawan gomonam` is both the full sentence *Azawan is challenging* and the phrase *challenging Azawan*.
 
-A titled nationality or tradition uses **-n** on the adjective ([reference suffix](reference-suffix.md)):
+A nationality or tradition uses the published metaphor on `/ɡ/` (**-m**), not a proper **-n**:
 
-> `zazawan gajanan.`
+> `zazawan gajanam.`
 >
-> z-Azawan | g-Japanese
+> z-Azawan | g-japanese
 >
 > "Azawan is Japanese."
 
-That **-n** names the people as a titled category. The published metaphor on the same root is ordinary *japanese* (`gajanam`).
+Demonyms stay on **-m** (`gajanam`). **-n** is a name, not “the Japanese people as a titled category.”
 
 ### Kind / role
 <a id="classification"></a>
@@ -88,7 +88,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *camera* | `ameral` |
 | *blue* | `elulul` |
 | *red* | `aredel` |
-| *Japanese* | `ajanan` |
+| *Japanese* | `ajanam` |
 | *challenging* | `omonam` |
 | **SAME** | `onunul` |
 | *walk* | `vawalal` |
@@ -111,7 +111,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **3.** *Uhubun is Japanese.*
 
 ::: details Show answer
-`zuhubun gajanan.`
+`zuhubun gajanam.`
 :::
 
 **4.** *Ululon is challenging.*

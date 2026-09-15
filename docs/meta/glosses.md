@@ -226,14 +226,14 @@ Grammar examples use three single-root names ([grammar-docs.md](grammar-docs.md#
 
 ### Mid-word `x` families
 
-Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) — English only; drop sense-picking endings:
+Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) — English only. Drop sense-picking **-l / -m / -n**. On [values](../grammar/values.md), keep the stance **and** the ending table (contact / motive standing / prescription force / changeability): `holozoxem` → `h-competence-motive-internal`, not `h-competence-x-motive`.
 
 | Family | Example Agalan | Morph gloss |
 |--------|-----------------|-------------|
 | Ordinary / name compound | `jubunexunowen` | `j-Ubune-x-Unowen` |
 | Ordinary (three roots) | `zuzuzuxogovexadedan` | `z-Uzuzu-x-Ogove-x-Adedan` |
 | Ability / values stance | `vawalaxel` | `v-walk-unable-temporary` |
-| Values stance on need | `holozoxem` | `h-competence-x-motive` |
+| Values stance on need | `holozoxem` | `h-competence-motive-internal` |
 | Role compound | `zaxezeher` | `z-agent-x-dialogue` |
 | Span open / close | `hexal` … `xuxul` | `h-aside-x-multi` · … · `x-span-close` |
 | Number / enumeration | `x#e-` | `x-starting-with` |
@@ -320,7 +320,7 @@ Bake join / reviser **job** into the English label (including open vs closed whe
 
 > `juel zugobon vawalaxel holozoxem.`
 >
-> j-no | z-speaker | v-walk-unable-temporary | h-competence-x-motive
+> j-no | z-speaker | v-walk-unable-temporary | h-competence-motive-internal
 >
 > "No — I can't walk right now."
 
@@ -328,7 +328,7 @@ Bake join / reviser **job** into the English label (including open vs closed whe
 
 > `x#e- zuzebul g#1 zugobonx haweroxur.`
 >
-> x-starting-with | z-problem | g-first | z-speaker-x | h-pleasure-x-unmet
+> x-starting-with | z-problem | g-first | z-speaker-x | h-pleasure-unmet-temporary
 >
 > "First problem: we're not enjoying this."
 

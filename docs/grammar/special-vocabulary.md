@@ -11,7 +11,7 @@ Compose opaque emotion labels from value plus arousal plus locus, number brainst
 
 When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgment or explanation** work, name three pieces instead of one opaque label: a [value](values.md) on the situation, how activated the charge is, and where you put it. Stack those as free `/h/` units (optional `/w/` on a preceding `/ɡ/`): situation + **one value** + **one ACT** + **one LOCUS**. You can then say the take without smuggling a single emotion word.
 
-> `zezehel wolozoxur hogegal hanedel.`
+> `zezehel wolozoxur hogegam hanedem.`
 >
 > z-speech | w-competence-unmet-temporary | h-HIGH | h-CIRCUM
 >
@@ -21,29 +21,29 @@ Affect is **water**. **ACT** is tide dynamics (how much / how fast). **LOCUS** i
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`hogegal`** | HIGH arousal | *flood / surge* | `ogegal` *ocean-wave* | 🌊: water in surge |
-| **`hejelol`** | MED arousal | *flow / drift* | `ejelol` *jellyfish* | 🪼: drifts with the current |
-| **`hozowol`** | LOW arousal | *stillness / slack* | `ozowol` *snow* | 🌨️: the landscape goes quiet |
-| **`habobol`** | INTERNAL locus | *held inside* | `abobol` *baby-bottle* | 🍼: liquid stays in the vessel |
-| **`horurul`** | EXTERNAL locus | *directed at other people* | `orurul` *pour* | 🫗: liquid goes onto someone else |
-| **`hanedel`** | CIRCUM locus | *on the situation* (shared / ambient field) | `anedel` *candle* | 🕯️: light fills the room |
+| **`hogegam`** | HIGH arousal | *flood / surge* | `ogegal` *ocean-wave* | 🌊: water in surge |
+| **`hejelom`** | MED arousal | *flow / drift* | `ejelol` *jellyfish* | 🪼: drifts with the current |
+| **`hozowom`** | LOW arousal | *stillness / slack* | `ozowol` *snow* | 🌨️: the landscape goes quiet |
+| **`habobom`** | INTERNAL locus | *held inside* | `abobol` *baby-bottle* | 🍼: liquid stays in the vessel |
+| **`horurum`** | EXTERNAL locus | *directed at other people* | `orurul` *pour* | 🫗: liquid goes onto someone else |
+| **`hanedem`** | CIRCUM locus | *on the situation* (shared / ambient field) | `anedel` *candle* | 🕯️: light fills the room |
 
-Under `/z/` or `/v/` the same spelling is the ordinary noun or verb (`zogegal` *an ocean wave*; `vorurul` *to pour*). The compose reading is the floating `/h/` (or `/w/`) mood.
+Under `/z/` or `/v/` the ordinary noun or verb uses the published literal ending (`zogegal` *an ocean wave*; `vorurul` *to pour*). The compose reading is the floating `/h/` (or `/w/`) **overlay** on **-m**.
 
 **EXTERNAL** is one root (`oruru`). Scale the transfer with ACT. INTERNAL and CIRCUM combine the same way; CIRCUM is a shared field.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`hogegal`** + **`horurul`** | HIGH × EXTERNAL | *poured / surged onto them* | `ogegal` *ocean-wave* · `orurul` *pour* | 🌊 onto 🫗: flood directed at them |
-| **`hejelol`** + **`horurul`** | MED × EXTERNAL | *flowing toward them* | `ejelol` *jellyfish* · `orurul` *pour* | 🪼 toward 🫗: drift aimed at them |
-| **`hozowol`** + **`horurul`** | LOW × EXTERNAL | *pooling at them* | `ozowol` *snow* · `orurul` *pour* | 🌨️ at 🫗: slack water settled at their locus |
+| **`hogegam`** + **`horurum`** | HIGH × EXTERNAL | *poured / surged onto them* | `ogegal` *ocean-wave* · `orurul` *pour* | 🌊 onto 🫗: flood directed at them |
+| **`hejelom`** + **`horurum`** | MED × EXTERNAL | *flowing toward them* | `ejelol` *jellyfish* · `orurul` *pour* | 🪼 toward 🫗: drift aimed at them |
+| **`hozowom`** + **`horurum`** | LOW × EXTERNAL | *pooling at them* | `ozowol` *snow* · `orurul` *pour* | 🌨️ at 🫗: slack water settled at their locus |
 
 | Agalan | English |
 |---------|---------|
-| `zezehel wolozoxur hogegal hanedel` | *anxious about the dialogue* (competence at stake, temporary; flood; room awash) |
-| `zezawam wonogoxum hogegal horurul` | *resentful about the division* (unmet relatedness; flood poured onto them) |
-| `zebegum wolozoxam hogegal habobol` | *proud of the draft* (met competence, mental channel; flood bottled) |
-| `zememol wonogoxum hozowol horurul` | *resentful about the memo* (unmet relatedness; stillness pooling at them) |
+| `zezehel wolozoxur hogegam hanedem` | *anxious about the dialogue* (competence at stake, temporary; flood; room awash) |
+| `zezawam wonogoxum hogegam horurum` | *resentful about the division* (unmet relatedness; flood poured onto them) |
+| `zebegum wolozoxam hogegam habobom` | *proud of the draft* (met competence, mental channel; flood bottled) |
+| `zememol wonogoxum hozowom horurum` | *resentful about the memo* (unmet relatedness; stillness pooling at them) |
 
 Raw feeling (contacting a sensation without judgment) may go unlabeled. Full compose is for when an emotion word would have done evaluative work.
 
@@ -78,7 +78,7 @@ Under other role letters the same spelling is ordinary content (`zuzebul` *a puz
 ### Sense-form overlays
 <a id="sense-form"></a>
 
-Emotion compose already used **`hogegal`** (HIGH arousal) next to **`zogegal`** (*an ocean wave*). Some published roots keep a **fixed special reading** under one part of speech: spell that published root plus [reference ending](reference-suffix.md); the PoS chooses the overlay. Emotion ACT / LOCUS in the examples above take **-l**.
+Emotion compose already used **`hogegam`** (HIGH arousal) next to **`zogegal`** (*an ocean wave*). Some published roots keep a **fixed special reading** under one part of speech: spell that published root plus [reference ending](reference-suffix.md); the PoS chooses the overlay. Emotion ACT / LOCUS in the examples above take overlay **-m**.
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -102,11 +102,11 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *fireworks* | `urewol` | | |
 | *hug* | `uhugul` | | |
 | *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
-| *flood / surge* (HIGH) | `hogegal` | `ogegal` *ocean-wave* | 🌊: water in surge |
-| *stillness / slack* (LOW) | `hozowol` | `ozowol` *snow* | 🌨️: the landscape goes quiet |
-| *held inside* (INTERNAL) | `habobol` | `abobol` *baby-bottle* | 🍼: liquid stays in the vessel |
-| *directed at others* (EXTERNAL) | `horurul` | `orurul` *pour* | 🫗: liquid goes onto someone else |
-| *on the situation* (CIRCUM) | `hanedel` | `anedel` *candle* | 🕯️: light fills the room |
+| *flood / surge* (HIGH) | `hogegam` | `ogegal` *ocean-wave* | 🌊: water in surge |
+| *stillness / slack* (LOW) | `hozowom` | `ozowol` *snow* | 🌨️: the landscape goes quiet |
+| *held inside* (INTERNAL) | `habobom` | `abobol` *baby-bottle* | 🍼: liquid stays in the vessel |
+| *directed at others* (EXTERNAL) | `horurum` | `orurul` *pour* | 🫗: liquid goes onto someone else |
+| *on the situation* (CIRCUM) | `hanedem` | `anedel` *candle* | 🕯️: light fills the room |
 | *problem* | `uzebul` | `uzebul` *puzzle-piece* | 🧩: pieces must fit |
 | *solution* | `agegol` | `agegol` *key* | 🔑: opens what was locked |
 | *goal* | `olalal` | `olalal` *goal* | 🥅: the net you shoot for |
@@ -128,7 +128,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **3.** *Proud of the lantern* (met competence, mental channel; flood bottled)
 
 ::: details Show answer
-`zalanel wolozoxam hogegal habobol.`
+`zalanel wolozoxam hogegam habobom.`
 :::
 
 **4.** *Solution 1.*
@@ -140,19 +140,19 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **5.** *Anxious about the tent* (competence at stake, temporary; flood; room awash)
 
 ::: details Show answer
-`zedenel wolozoxur hogegal hanedel.`
+`zedenel wolozoxur hogegam hanedem.`
 :::
 
 **6.** *Resentful about the party* (unmet relatedness; flood poured onto them)
 
 ::: details Show answer
-`zabaral wonogoxum hogegal horurul.`
+`zabaral wonogoxum hogegam horurum.`
 :::
 
 **7.** *Resentful about the hug* (unmet relatedness; stillness pooling at them)
 
 ::: details Show answer
-`zuhugul wonogoxum hozowol horurul.`
+`zuhugul wonogoxum hozowom horurum.`
 :::
 
 #### Agalan → English
@@ -169,13 +169,13 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *Uhubun names goal 1.*
 :::
 
-**3.** `zedenel wolozoxam hozowol habobol.`
+**3.** `zedenel wolozoxam hozowom habobom.`
 
 ::: details Show answer
 *Proud of the tent* (met competence; stillness held inside).
 :::
 
-**4.** `zalanel wolozoxur hogegal hanedel.`
+**4.** `zalanel wolozoxur hogegam hanedem.`
 
 ::: details Show answer
 *Anxious about the lantern* (competence at stake, temporary; flood; room awash).
@@ -193,7 +193,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *Ululon names solution 1.*
 :::
 
-**7.** `zurewol wonogoxum hogegal horurul.`
+**7.** `zurewol wonogoxum hogegam horurum.`
 
 ::: details Show answer
 *Resentful about the fireworks* (unmet relatedness; flood poured onto them).

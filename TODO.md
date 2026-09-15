@@ -1,10 +1,8 @@
 # TODO
 review TTS
-Consider reserving two syllable words for special
-limit deployments to tagged releases
-rename viewpoint laterals
 consider removing emojis from docs (but keep in lexicon)
-change agalan->English exercises so they aren't exact mirrors of english->agalan, also they should introduce new vocabulary every page. also use funnier examples
+apply hidden gloss to all translation exercises so we can ensure it matches parser
+confirm logic for detecting glosses
 
 ## Evidentiality / tense
 
