@@ -177,6 +177,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan vuzuwul hunugul hal.`
+
 z-Azawan | v-swim | h-night | h-only-when
 :::
 
@@ -184,6 +185,7 @@ z-Azawan | v-swim | h-night | h-only-when
 
 ::: details Show answer
 `zululon vuzuwul hal.`
+
 z-Ululon | v-swim | h-never
 :::
 
@@ -191,6 +193,7 @@ z-Ululon | v-swim | h-never
 
 ::: details Show answer
 `zuhubun vuzuwul hual.`
+
 z-Uhubun | v-swim | h-always
 :::
 
@@ -198,6 +201,7 @@ z-Uhubun | v-swim | h-always
 
 ::: details Show answer
 `zazawan guzumum wal.`
+
 z-Azawan | g-happy | w-never
 :::
 
@@ -205,6 +209,7 @@ z-Azawan | g-happy | w-never
 
 ::: details Show answer
 `zululon vuzuwul har.`
+
 z-Ululon | v-swim | h-sometimes
 :::
 
@@ -212,6 +217,7 @@ z-Ululon | v-swim | h-sometimes
 
 ::: details Show answer
 `zazawan vuzuwul hadazam howom.`
+
 z-Azawan | v-swim | h-haste | h-quietude
 :::
 
@@ -219,6 +225,7 @@ z-Azawan | v-swim | h-haste | h-quietude
 
 ::: details Show answer
 `zuhubun vuzuwul hor.`
+
 z-Uhubun | v-swim | h-anytime
 :::
 
@@ -226,6 +233,7 @@ z-Uhubun | v-swim | h-anytime
 
 ::: details Show answer
 `zululon vubunul dazawan hual.`
+
 z-Ululon | v-punch | d-Azawan | h-always
 :::
 
@@ -236,6 +244,7 @@ z-Ululon | v-punch | d-Azawan | h-always
 ::: details Show answer
 
 z-Ululon | v-swim | h-night | h-only-when
+
 *Ululon swims only at night.*
 :::
 
@@ -244,6 +253,7 @@ z-Ululon | v-swim | h-night | h-only-when
 ::: details Show answer
 
 z-Azawan | v-swim | h-never
+
 *Azawan never swims.*
 :::
 
@@ -252,6 +262,7 @@ z-Azawan | v-swim | h-never
 ::: details Show answer
 
 z-Ululon | g-happy | w-always
+
 *Ululon is always happy.*
 :::
 
@@ -260,6 +271,7 @@ z-Ululon | g-happy | w-always
 ::: details Show answer
 
 z-Uhubun | v-swim | h-some-other-time
+
 *Uhubun swims at some other time.*
 :::
 
@@ -268,6 +280,7 @@ z-Uhubun | v-swim | h-some-other-time
 ::: details Show answer
 
 z-Azawan | v-swim | h-rain | h-night | h-when.open
+
 *Azawan swims when raining and at night, among other times.*
 :::
 
@@ -276,6 +289,7 @@ z-Azawan | v-swim | h-rain | h-night | h-when.open
 ::: details Show answer
 
 z-Uhubun | g-happy | w-sometimes
+
 *Uhubun is sometimes happy.*
 :::
 
@@ -284,6 +298,7 @@ z-Uhubun | g-happy | w-sometimes
 ::: details Show answer
 
 z-Azawan | v-swim | h-fire | h-always-except
+
 *Azawan always swims except when there is fire.*
 :::
 
@@ -292,6 +307,7 @@ z-Azawan | v-swim | h-fire | h-always-except
 ::: details Show answer
 
 z-Ululon | v-swim | h-fire | h-always-except
+
 *Ululon always swims except when there is fire.*
 :::
 
@@ -409,6 +425,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan vugumul hanunul hunugul hol.`
+
 z-Azawan | v-climb | h-rain | h-night | h-when-one
 :::
 
@@ -416,6 +433,7 @@ z-Azawan | v-climb | h-rain | h-night | h-when-one
 
 ::: details Show answer
 `zululon vurunul hanunul hozowol haol.`
+
 z-Ululon | v-run | h-rain | h-snow | h-ao
 :::
 
@@ -423,6 +441,7 @@ z-Ululon | v-run | h-rain | h-snow | h-ao
 
 ::: details Show answer
 `zuhubun vugumul havogol hul.`
+
 z-Uhubun | v-climb | h-fog | h-not-when
 :::
 
@@ -430,6 +449,7 @@ z-Uhubun | v-climb | h-fog | h-not-when
 
 ::: details Show answer
 `zazawan vugumul hozowol huol.`
+
 z-Azawan | v-climb | h-snow | h-uo
 :::
 
@@ -437,6 +457,7 @@ z-Azawan | v-climb | h-snow | h-uo
 
 ::: details Show answer
 `zazawan vugumul hanunul hozowol hel.`
+
 z-Azawan | v-climb | h-rain | h-snow | h-when-ranked
 :::
 
@@ -444,6 +465,7 @@ z-Azawan | v-climb | h-rain | h-snow | h-when-ranked
 
 ::: details Show answer
 `zazawan vugumul hujel havogol hoel.`
+
 z-Azawan | v-climb | h-ice | h-fog | h-oe
 :::
 
@@ -451,6 +473,7 @@ z-Azawan | v-climb | h-ice | h-fog | h-oe
 
 ::: details Show answer
 `zazawan guzumum wanunul wunugul wol.`
+
 z-Azawan | g-happy | w-rain | w-night | w-when-one
 :::
 
@@ -458,6 +481,7 @@ z-Azawan | g-happy | w-rain | w-night | w-when-one
 
 ::: details Show answer
 `zuhubun vazagal hadorom zululon vodowol badorol.`
+
 z-Uhubun | v-scream | h-if | z-Ululon | v-down | b-next-clause
 :::
 
@@ -468,6 +492,7 @@ z-Uhubun | v-scream | h-if | z-Ululon | v-down | b-next-clause
 ::: details Show answer
 
 z-Ululon | v-climb | h-rain | h-night | h-when-one.open
+
 *Ululon climbs either when raining or at night, or never.*
 :::
 
@@ -476,6 +501,7 @@ z-Ululon | v-climb | h-rain | h-night | h-when-one.open
 ::: details Show answer
 
 z-Ululon | v-climb | h-rain | h-snow | h-whenever
+
 *Ululon climbs as often when raining as when snowing.*
 :::
 
@@ -484,6 +510,7 @@ z-Ululon | v-climb | h-rain | h-snow | h-whenever
 ::: details Show answer
 
 z-Azawan | v-climb | h-tent | h-only-when
+
 *Azawan climbs only at the tent.*
 :::
 
@@ -492,6 +519,7 @@ z-Azawan | v-climb | h-tent | h-only-when
 ::: details Show answer
 
 z-Ululon | v-run | h-rain | h-snow | h-sometimes
+
 *Ululon runs sometimes among rain or snow.*
 :::
 
@@ -500,6 +528,7 @@ z-Ululon | v-run | h-rain | h-snow | h-sometimes
 ::: details Show answer
 
 z-Azawan | v-climb | h-whenever
+
 *Azawan climbs equally often.*
 :::
 
@@ -508,6 +537,7 @@ z-Azawan | v-climb | h-whenever
 ::: details Show answer
 
 z-Uhubun | v-climb | h-fog | h-not-when
+
 *Uhubun does not climb when there is fog.*
 :::
 
@@ -516,6 +546,7 @@ z-Uhubun | v-climb | h-fog | h-not-when
 ::: details Show answer
 
 z-Azawan | v-scream | h-if | z-Ululon | v-down | b-next-clause
+
 *Azawan screams if Ululon falls.*
 :::
 
@@ -524,6 +555,7 @@ z-Azawan | v-scream | h-if | z-Ululon | v-down | b-next-clause
 ::: details Show answer
 
 z-Ululon | g-happy | w-rain | w-night | w-when-one
+
 *Ululon is happy either when raining or at night, not both.*
 :::
 

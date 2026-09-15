@@ -218,6 +218,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. One
 
 ::: details Show answer
 `zazawan d_555,123,4567 vejel.`
+
 z-Azawan | d-_555,123,4567 | v-see
 :::
 
@@ -225,6 +226,7 @@ z-Azawan | d-_555,123,4567 | v-see
 
 ::: details Show answer
 `h_15,30 zazawan duhubun vejel.`
+
 h-_15,30 | z-Azawan | d-Uhubun | v-see
 :::
 
@@ -232,6 +234,7 @@ h-_15,30 | z-Azawan | d-Uhubun | v-see
 
 ::: details Show answer
 `zabululx g+25%.`
+
 z-pill-x | g-25jo
 :::
 
@@ -239,6 +242,7 @@ z-pill-x | g-25jo
 
 ::: details Show answer
 `zazawan daragal g+2 vejel.`
+
 z-Azawan | d-rock | g-two | v-see
 :::
 
@@ -246,6 +250,7 @@ z-Azawan | d-rock | g-two | v-see
 
 ::: details Show answer
 `z+3 z+5 zel gumel.`
+
 z-three | z-five | z-rank/more | g-time
 :::
 
@@ -253,6 +258,7 @@ z-three | z-five | z-rank/more | g-time
 
 ::: details Show answer
 `zululon d_911 vejel.`
+
 z-Ululon | d-_911 | v-see
 :::
 
@@ -260,6 +266,7 @@ z-Ululon | d-_911 | v-see
 
 ::: details Show answer
 `zululon daragal g+5 vubunul.`
+
 z-Ululon | d-rock | g-five | v-punch
 :::
 
@@ -267,6 +274,7 @@ z-Ululon | d-rock | g-five | v-punch
 
 ::: details Show answer
 `z+15 z+16 zel gumel.`
+
 z-15 | z-16 | z-rank/more | g-time
 :::
 
@@ -277,6 +285,7 @@ z-15 | z-16 | z-rank/more | g-time
 ::: details Show answer
 
 z-baby-bottle | g-_7
+
 *Bottle 7.*
 :::
 
@@ -285,6 +294,7 @@ z-baby-bottle | g-_7
 ::: details Show answer
 
 h-_09,00 | z-Uhubun | v-see
+
 *At 09:00 Uhubun sees.*
 :::
 
@@ -293,6 +303,7 @@ h-_09,00 | z-Uhubun | v-see
 ::: details Show answer
 
 z-baby-bottle-x | g-50jo
+
 *50% of the bottles.*
 :::
 
@@ -301,6 +312,7 @@ z-baby-bottle-x | g-50jo
 ::: details Show answer
 
 z-Azawan | d-spoon | g-one | v-see
+
 *Azawan sees one spoon.*
 :::
 
@@ -309,6 +321,7 @@ z-Azawan | d-spoon | g-one | v-see
 ::: details Show answer
 
 z-one | z-three | z-and | g-time
+
 *Between 1 and 3 on time.*
 :::
 
@@ -317,6 +330,7 @@ z-one | z-three | z-and | g-time
 ::: details Show answer
 
 z-Ululon | d-_000 | v-see
+
 *Ululon sees 000.*
 :::
 
@@ -325,6 +339,7 @@ z-Ululon | d-_000 | v-see
 ::: details Show answer
 
 h-_23,59 | z-Ululon | v-scream
+
 *Around 23:59 Ululon screams.*
 :::
 
@@ -333,6 +348,7 @@ h-_23,59 | z-Ululon | v-scream
 ::: details Show answer
 
 z-ten | z-20 | z-everything-but | g-ruler
+
 *Outside 10–20 on measurement.*
 :::
 

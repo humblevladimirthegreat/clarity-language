@@ -87,6 +87,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Everyda
 
 ::: details Show answer
 `zezedel zaom.`
+
 z-seedling | z-and/or.open
 :::
 
@@ -94,6 +95,7 @@ z-seedling | z-and/or.open
 
 ::: details Show answer
 `zazawan vorurul vaom.`
+
 z-Azawan | v-pour | v-and/or.open
 :::
 
@@ -101,6 +103,7 @@ z-Azawan | v-pour | v-and/or.open
 
 ::: details Show answer
 `zuwunol zaom.`
+
 z-window | z-and/or.open
 :::
 
@@ -108,6 +111,7 @@ z-window | z-and/or.open
 
 ::: details Show answer
 `zodomal zaol.`
+
 z-tomato | z-and/or
 :::
 
@@ -115,6 +119,7 @@ z-tomato | z-and/or
 
 ::: details Show answer
 `zuhubun vejel vaom.`
+
 z-Uhubun | v-see | v-and/or.open
 :::
 
@@ -122,6 +127,7 @@ z-Uhubun | v-see | v-and/or.open
 
 ::: details Show answer
 `zobodel zuwunol zaom.`
+
 z-potted-plant | z-window | z-and/or.open
 :::
 
@@ -129,6 +135,7 @@ z-potted-plant | z-window | z-and/or.open
 
 ::: details Show answer
 `zululon vezehel vaom.`
+
 z-Ululon | v-tell | v-and/or.open
 :::
 
@@ -136,6 +143,7 @@ z-Ululon | v-tell | v-and/or.open
 
 ::: details Show answer
 `zurel zaol.`
+
 z-fire | z-and/or
 :::
 
@@ -146,6 +154,7 @@ z-fire | z-and/or
 ::: details Show answer
 
 z-flower | z-and/or.open
+
 *A flower would work.*
 :::
 
@@ -154,6 +163,7 @@ z-flower | z-and/or.open
 ::: details Show answer
 
 z-Uhubun | v-pour | v-and/or.open
+
 *Uhubun’s pouring would work.*
 :::
 
@@ -162,6 +172,7 @@ z-Uhubun | v-pour | v-and/or.open
 ::: details Show answer
 
 z-thermometer | z-and/or
+
 *A thermometer is enough.*
 :::
 
@@ -170,6 +181,7 @@ z-thermometer | z-and/or
 ::: details Show answer
 
 z-Azawan | v-see | v-and/or.open
+
 *Azawan’s seeing would work.*
 :::
 
@@ -178,6 +190,7 @@ z-Azawan | v-see | v-and/or.open
 ::: details Show answer
 
 z-sun | z-and/or.open
+
 *The sun would work.*
 :::
 
@@ -186,6 +199,7 @@ z-sun | z-and/or.open
 ::: details Show answer
 
 z-Ululon | v-pour | v-and/or.open
+
 *Ululon’s pouring would work.*
 :::
 
@@ -194,6 +208,7 @@ z-Ululon | v-pour | v-and/or.open
 ::: details Show answer
 
 z-fire | z-and/or.open
+
 *Fire would work.*
 :::
 
@@ -202,6 +217,7 @@ z-fire | z-and/or.open
 ::: details Show answer
 
 z-potted-plant | z-fire | z-and/or.open
+
 *A potted plant or fire would work.*
 :::
 
@@ -357,6 +373,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Mar
 
 ::: details Show answer
 `zazawan vajul hal.`
+
 z-Azawan | v-sit | h-never
 :::
 
@@ -364,6 +381,7 @@ z-Azawan | v-sit | h-never
 
 ::: details Show answer
 `zogegam huan bogozol.`
+
 z-flood | h-without | b-knob
 :::
 
@@ -371,6 +389,7 @@ z-flood | h-without | b-knob
 
 ::: details Show answer
 `zululon gon.`
+
 z-Ululon | g-exclusive-for
 :::
 
@@ -378,6 +397,7 @@ z-Ululon | g-exclusive-for
 
 ::: details Show answer
 `zazawan vajul hadorom badorol zuhubun vejel.`
+
 z-Azawan | v-sit | h-if | b-next-clause | z-Uhubun | v-see
 :::
 
@@ -385,6 +405,7 @@ z-Azawan | v-sit | h-if | b-next-clause | z-Uhubun | v-see
 
 ::: details Show answer
 `zululon vorurul hezazem badorol zazawan vajul.`
+
 z-Ululon | v-pour | h-iff | b-next-clause | z-Azawan | v-sit
 :::
 
@@ -392,6 +413,7 @@ z-Ululon | v-pour | h-iff | b-next-clause | z-Azawan | v-sit
 
 ::: details Show answer
 `zuhubun vezehel hurugum badorol zululon vorurul.`
+
 z-Uhubun | v-tell | h-because | b-next-clause | z-Ululon | v-pour
 :::
 
@@ -399,6 +421,7 @@ z-Uhubun | v-tell | h-because | b-next-clause | z-Ululon | v-pour
 
 ::: details Show answer
 `zogozol zaom holozoxor.`
+
 z-knob | z-and/or.open | h-competence-ought-invite
 :::
 
@@ -406,6 +429,7 @@ z-knob | z-and/or.open | h-competence-ought-invite
 
 ::: details Show answer
 `zogegam zaom hegegam.`
+
 z-flood | z-and/or.open | h-CAUSE
 :::
 
@@ -416,6 +440,7 @@ z-flood | z-and/or.open | h-CAUSE
 ::: details Show answer
 
 z-Azawan | g-without | b-solution
+
 *Azawan without a key.*
 :::
 
@@ -424,6 +449,7 @@ z-Azawan | g-without | b-solution
 ::: details Show answer
 
 z-bell | h-exclusive-for
+
 *It has to be the bell.*
 :::
 
@@ -432,6 +458,7 @@ z-bell | h-exclusive-for
 ::: details Show answer
 
 z-Uhubun | v-sit | h-if | b-next-clause | z-Ululon | v-see
+
 *Uhubun sits if Ululon sees.*
 :::
 
@@ -440,6 +467,7 @@ z-Uhubun | v-sit | h-if | b-next-clause | z-Ululon | v-see
 ::: details Show answer
 
 z-Azawan | v-pour | h-iff | b-next-clause | z-Uhubun | v-tell
+
 *Azawan pours if and only if Uhubun tells.*
 :::
 
@@ -448,6 +476,7 @@ z-Azawan | v-pour | h-iff | b-next-clause | z-Uhubun | v-tell
 ::: details Show answer
 
 z-Ululon | v-run | h-because | b-next-clause | z-flood
+
 *Ululon runs because of flooding.*
 :::
 
@@ -456,6 +485,7 @@ z-Ululon | v-run | h-because | b-next-clause | z-flood
 ::: details Show answer
 
 z-Uhubun | v-tell | h-never
+
 *Uhubun never tells.*
 :::
 
@@ -464,6 +494,7 @@ z-Uhubun | v-tell | h-never
 ::: details Show answer
 
 z-Ululon | v-pour | h-CAUSE
+
 *Ululon pours (as mechanism).*
 :::
 
@@ -472,6 +503,7 @@ z-Ululon | v-pour | h-CAUSE
 ::: details Show answer
 
 z-flood | h-without | b-pressure
+
 *Flooding without / excluding pressure.*
 :::
 
@@ -573,6 +605,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. **`huru
 
 ::: details Show answer
 `zululon vorurul hurugum badorol zuhubun vejel.`
+
 z-Ululon | v-pour | h-because | b-next-clause | z-Uhubun | v-see
 :::
 
@@ -580,6 +613,7 @@ z-Ululon | v-pour | h-because | b-next-clause | z-Uhubun | v-see
 
 ::: details Show answer
 `zazawan vajul hadorom badorol zurel.`
+
 z-Azawan | v-sit | h-if | b-next-clause | z-fire
 :::
 
@@ -587,6 +621,7 @@ z-Azawan | v-sit | h-if | b-next-clause | z-fire
 
 ::: details Show answer
 `zazawan vorurul hezazem badorol zuhubun vezehel.`
+
 z-Azawan | v-pour | h-iff | b-next-clause | z-Uhubun | v-tell
 :::
 
@@ -594,6 +629,7 @@ z-Azawan | v-pour | h-iff | b-next-clause | z-Uhubun | v-tell
 
 ::: details Show answer
 `zazawan hodohom vajul.`
+
 z-Azawan | h-COMMENT | v-sit
 :::
 
@@ -601,6 +637,7 @@ z-Azawan | h-COMMENT | v-sit
 
 ::: details Show answer
 `zezubel zaom hual.`
+
 z-test-tube | z-and/or.open | h-always
 :::
 
@@ -608,6 +645,7 @@ z-test-tube | z-and/or.open | h-always
 
 ::: details Show answer
 `zurel zaom hegegam hual.`
+
 z-fire | z-and/or.open | h-CAUSE | h-always-except
 :::
 
@@ -618,6 +656,7 @@ z-fire | z-and/or.open | h-CAUSE | h-always-except
 ::: details Show answer
 
 z-Azawan | v-sit | h-because | b-next-clause | z-fire
+
 *Azawan sits because there is fire.*
 :::
 
@@ -626,6 +665,7 @@ z-Azawan | v-sit | h-because | b-next-clause | z-fire
 ::: details Show answer
 
 z-Ululon | v-pour | h-if | b-next-clause | z-test-tube
+
 *Ululon pours if there is a test-tube.*
 :::
 
@@ -634,6 +674,7 @@ z-Ululon | v-pour | h-if | b-next-clause | z-test-tube
 ::: details Show answer
 
 z-Uhubun | h-COMMENT | v-see
+
 *Uhubun sees (that’s a take).*
 :::
 
@@ -642,6 +683,7 @@ z-Uhubun | h-COMMENT | v-see
 ::: details Show answer
 
 z-Azawan | h-COMMENT | v-sit | h-because | b-next-clause | z-Ululon | v-pour
+
 *Azawan sits, I’d note, because Ululon pours.*
 :::
 
@@ -650,6 +692,7 @@ z-Azawan | h-COMMENT | v-sit | h-because | b-next-clause | z-Ululon | v-pour
 ::: details Show answer
 
 z-lab-coat | z-and/or.open | h-always
+
 *A lab coat would work, as a standing pattern.*
 :::
 
@@ -658,6 +701,7 @@ z-lab-coat | z-and/or.open | h-always
 ::: details Show answer
 
 z-Uhubun | v-pour | h-because | h-CAUSE | b-next-clause | z-fire
+
 *Uhubun pours because there is fire (as mechanism).*
 :::
 

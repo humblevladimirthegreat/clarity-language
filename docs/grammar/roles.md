@@ -123,6 +123,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zaxogonul vajul.`
+
 z-agent-x-building | v-sit
 :::
 
@@ -130,6 +131,7 @@ z-agent-x-building | v-sit
 
 ::: details Show answer
 `zazawan vogonul. zaxogonur dehemel vejel.`
+
 z-Azawan | v-construct | z-←construct | d-helmet | v-see
 :::
 
@@ -137,6 +139,7 @@ z-Azawan | v-construct | z-←construct | d-helmet | v-see
 
 ::: details Show answer
 `zululon durugul vahamel. zaxahamer vajul.`
+
 z-Ululon | d-brick | v-hammer | z-←hammer | v-sit
 :::
 
@@ -144,6 +147,7 @@ z-Ululon | d-brick | v-hammer | z-←hammer | v-sit
 
 ::: details Show answer
 `zazawan zuhubun vejel. zuxejer vajul.`
+
 z-Azawan | z-Uhubun | v-see | z-←see | v-sit
 :::
 
@@ -151,6 +155,7 @@ z-Azawan | z-Uhubun | v-see | z-←see | v-sit
 
 ::: details Show answer
 `zazawan gaxogonum.`
+
 z-Azawan | g-agent-x-building
 :::
 
@@ -158,6 +163,7 @@ z-Azawan | g-agent-x-building
 
 ::: details Show answer
 `zazawan dononul vejel.`
+
 z-Azawan | d-construction-site | v-see
 :::
 
@@ -165,6 +171,7 @@ z-Azawan | d-construction-site | v-see
 
 ::: details Show answer
 `zululon zazawan vubunul. zuxubunur vazagal.`
+
 z-Ululon | z-Azawan | v-punch | z-←punch | v-scream
 :::
 
@@ -172,6 +179,7 @@ z-Ululon | z-Azawan | v-punch | z-←punch | v-scream
 
 ::: details Show answer
 `zazawan gonogol bululon. zoxonogor vuvugul.`
+
 z-Azawan | g-relatedness | b-Ululon | z-←relatedness | v-fight
 :::
 
@@ -182,6 +190,7 @@ z-Azawan | g-relatedness | b-Ululon | z-←relatedness | v-fight
 ::: details Show answer
 
 z-agent-x-hammer | v-construct
+
 *A hammerer constructs.*
 :::
 
@@ -190,6 +199,7 @@ z-agent-x-hammer | v-construct
 ::: details Show answer
 
 z-Uhubun | z-Azawan | v-see | z-←see | v-sit
+
 *Uhubun sees Azawan. The one seen sits.*
 :::
 
@@ -198,6 +208,7 @@ z-Uhubun | z-Azawan | v-see | z-←see | v-sit
 ::: details Show answer
 
 z-Ululon | v-construct | z-←construct | d-helmet | v-see
+
 *Ululon constructs. The builder sees a helmet.*
 :::
 
@@ -206,6 +217,7 @@ z-Ululon | v-construct | z-←construct | d-helmet | v-see
 ::: details Show answer
 
 z-agent-x-building | v-punch
+
 *A builder punches.*
 :::
 
@@ -214,6 +226,7 @@ z-agent-x-building | v-punch
 ::: details Show answer
 
 z-Ululon | d-construction-site | v-see
+
 *Ululon sees a construction-site.*
 :::
 
@@ -222,6 +235,7 @@ z-Ululon | d-construction-site | v-see
 ::: details Show answer
 
 z-Azawan | z-Ululon | v-fight | d-←fight | v-scream
+
 *Azawan fought Ululon. The one fought screams.*
 :::
 
@@ -230,6 +244,7 @@ z-Azawan | z-Ululon | v-fight | d-←fight | v-scream
 ::: details Show answer
 
 z-Ululon | z-Azawan | v-punch | z-←punch | v-fight
+
 *Ululon punches Azawan. The puncher fights.*
 :::
 
@@ -238,6 +253,7 @@ z-Ululon | z-Azawan | v-punch | z-←punch | v-fight
 ::: details Show answer
 
 z-Uhubun | g-relatedness | b-Ululon | z-←relatedness | v-punch
+
 *Uhubun is bound to Ululon. That other party of the bond punches.*
 :::
 
@@ -394,6 +410,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zodadal gewezexazawan.`
+
 z-boat | g-west-x-Azawan
 :::
 
@@ -401,6 +418,7 @@ z-boat | g-west-x-Azawan
 
 ::: details Show answer
 `jel vawalal honohol.`
+
 j-command | v-walk | h-north
 :::
 
@@ -408,6 +426,7 @@ j-command | v-walk | h-north
 
 ::: details Show answer
 `zahabal gezazaxululon.`
+
 z-ship | g-east-x-Ululon
 :::
 
@@ -415,6 +434,7 @@ z-ship | g-east-x-Ululon
 
 ::: details Show answer
 `jel vawalal hodowol.`
+
 j-command | v-walk | h-down
 :::
 
@@ -422,6 +442,7 @@ j-command | v-walk | h-down
 
 ::: details Show answer
 `zuluvel gewezexazawan bodadal.`
+
 z-life-ring | g-west-x-Azawan | b-boat
 :::
 
@@ -429,6 +450,7 @@ z-life-ring | g-west-x-Azawan | b-boat
 
 ::: details Show answer
 `jel zedonen vawalal hewezexedonen.`
+
 j-command | z-listener | v-walk | h-west-x-listener
 :::
 
@@ -436,6 +458,7 @@ j-command | z-listener | v-walk | h-west-x-listener
 
 ::: details Show answer
 `zodadal gewezexugobon.`
+
 z-boat | g-west-x-speaker
 :::
 
@@ -443,6 +466,7 @@ z-boat | g-west-x-speaker
 
 ::: details Show answer
 `jel zululon vawalal hewezel.`
+
 j-command | z-Ululon | v-walk | h-west
 :::
 
@@ -453,6 +477,7 @@ j-command | z-Ululon | v-walk | h-west
 ::: details Show answer
 
 z-boat | g-east-x-Azawan
+
 *The boat on Azawan’s right.*
 :::
 
@@ -461,6 +486,7 @@ z-boat | g-east-x-Azawan
 ::: details Show answer
 
 j-command | v-walk | h-west
+
 *Walk west.*
 :::
 
@@ -469,6 +495,7 @@ j-command | v-walk | h-west
 ::: details Show answer
 
 z-ship | g-south
+
 *The ship on the south.*
 :::
 
@@ -477,6 +504,7 @@ z-ship | g-south
 ::: details Show answer
 
 j-command | v-walk | h-up
+
 *Walk up.*
 :::
 
@@ -485,6 +513,7 @@ j-command | v-walk | h-up
 ::: details Show answer
 
 z-life-ring | g-west-x-Ululon | b-boat
+
 *The life-ring is on Ululon’s left of the boat.*
 :::
 
@@ -493,6 +522,7 @@ z-life-ring | g-west-x-Ululon | b-boat
 ::: details Show answer
 
 j-command | z-listener | v-walk | h-east-x-listener
+
 *You, walk right (your right).*
 :::
 
@@ -501,6 +531,7 @@ j-command | z-listener | v-walk | h-east-x-listener
 ::: details Show answer
 
 z-ship | g-northwest-x-Uhubun
+
 *The ship on Uhubun’s forward-left.*
 :::
 
@@ -509,6 +540,7 @@ z-ship | g-northwest-x-Uhubun
 ::: details Show answer
 
 j-command | z-Ululon | v-walk | h-down
+
 *Ululon, walk down.*
 :::
 

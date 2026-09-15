@@ -102,6 +102,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Choose 
 
 ::: details Show answer
 `ahalal`
+
 school
 :::
 
@@ -109,6 +110,7 @@ school
 
 ::: details Show answer
 `ajul`
+
 chair
 :::
 
@@ -116,6 +118,7 @@ chair
 
 ::: details Show answer
 `ebegul`
+
 pencil
 :::
 
@@ -123,6 +126,7 @@ pencil
 
 ::: details Show answer
 `ebegum`
+
 draft
 :::
 
@@ -130,6 +134,7 @@ draft
 
 ::: details Show answer
 `abogom`
+
 knowledge
 :::
 
@@ -137,6 +142,7 @@ knowledge
 
 ::: details Show answer
 `aguvom`
+
 scrutiny
 :::
 
@@ -144,6 +150,7 @@ scrutiny
 
 ::: details Show answer
 `uhubun`
+
 Uhubun
 :::
 
@@ -151,6 +158,7 @@ Uhubun
 
 ::: details Show answer
 `ululon.`
+
 Ululon
 :::
 
@@ -161,6 +169,7 @@ Ululon
 ::: details Show answer
 
 book
+
 *book*
 :::
 
@@ -169,6 +178,7 @@ book
 ::: details Show answer
 
 bell
+
 *bell*
 :::
 
@@ -177,6 +187,7 @@ bell
 ::: details Show answer
 
 projector
+
 *projector*
 :::
 
@@ -185,6 +196,7 @@ projector
 ::: details Show answer
 
 alert
+
 *alert*
 :::
 
@@ -193,6 +205,7 @@ alert
 ::: details Show answer
 
 analysis
+
 *analysis*
 :::
 
@@ -201,6 +214,7 @@ analysis
 ::: details Show answer
 
 grace
+
 *grace*
 :::
 
@@ -356,6 +370,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 
 ::: details Show answer
 `zazawan vajul hohozon.`
+
 z-Azawan | v-sit | h-Ohozon
 :::
 
@@ -363,6 +378,7 @@ z-Azawan | v-sit | h-Ohozon
 
 ::: details Show answer
 `zabedel gedozen.`
+
 z-bed | g-Edozen
 :::
 
@@ -370,6 +386,7 @@ z-bed | g-Edozen
 
 ::: details Show answer
 `zuhubun veleben.`
+
 z-Uhubun | v-Eleben
 :::
 
@@ -377,6 +394,7 @@ z-Uhubun | v-Eleben
 
 ::: details Show answer
 `zazawan vejel dohozoxabeden.`
+
 z-Azawan | v-see | d-Ohozo-x-Abeden
 :::
 
@@ -384,6 +402,7 @@ z-Azawan | v-see | d-Ohozo-x-Abeden
 
 ::: details Show answer
 `zedozen vejel duhubun.`
+
 z-Edozen | v-see | d-Uhubun
 :::
 
@@ -391,6 +410,7 @@ z-Edozen | v-see | d-Uhubun
 
 ::: details Show answer
 `zululon vozorun.`
+
 z-Ululon | v-Ozorun
 :::
 
@@ -398,6 +418,7 @@ z-Ululon | v-Ozorun
 
 ::: details Show answer
 `zululon vamubun.`
+
 z-Ululon | v-Amubun
 :::
 
@@ -432,6 +453,7 @@ z-bed | g-Araron
 ::: details Show answer
 
 z-Ohozo-x-Abeden | v-write
+
 *Hospital-Bed writes.*
 :::
 

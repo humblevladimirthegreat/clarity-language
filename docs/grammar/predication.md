@@ -100,6 +100,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan gugugal.`
+
 z-Azawan | g-guard
 :::
 
@@ -107,6 +108,7 @@ z-Azawan | g-guard
 
 ::: details Show answer
 `zajel gelulul.`
+
 z-page | g-blue
 :::
 
@@ -114,6 +116,7 @@ z-page | g-blue
 
 ::: details Show answer
 `zuhubun gajanam.`
+
 z-Uhubun | g-japanese
 :::
 
@@ -121,6 +124,7 @@ z-Uhubun | g-japanese
 
 ::: details Show answer
 `zululon gomonam.`
+
 z-Ululon | g-challenge
 :::
 
@@ -128,6 +132,7 @@ z-Ululon | g-challenge
 
 ::: details Show answer
 `zululon gobolul.`
+
 z-Ululon | g-police
 :::
 
@@ -135,6 +140,7 @@ z-Ululon | g-police
 
 ::: details Show answer
 `zuvunul gonunul bazawan.`
+
 z-fingerprint | g-SAME | b-Azawan
 :::
 
@@ -142,6 +148,7 @@ z-fingerprint | g-SAME | b-Azawan
 
 ::: details Show answer
 `zameral gonunul buhubun.`
+
 z-camera | g-SAME | b-Uhubun
 :::
 
@@ -149,6 +156,7 @@ z-camera | g-SAME | b-Uhubun
 
 ::: details Show answer
 `zululon gonunul bazawan.`
+
 z-Ululon | g-SAME | b-Azawan
 :::
 
@@ -159,6 +167,7 @@ z-Ululon | g-SAME | b-Azawan
 ::: details Show answer
 
 z-police | v-walk
+
 *A police officer walks.*
 :::
 
@@ -167,6 +176,7 @@ z-police | v-walk
 ::: details Show answer
 
 z-Azawan | g-police
+
 *Azawan is a police officer.*
 :::
 
@@ -175,6 +185,7 @@ z-Azawan | g-police
 ::: details Show answer
 
 z-page | g-red
+
 *The page is red.*
 :::
 
@@ -183,6 +194,7 @@ z-page | g-red
 ::: details Show answer
 
 z-fingerprint | g-SAME | b-Ululon
+
 *The fingerprint is Ululon.*
 :::
 
@@ -191,6 +203,7 @@ z-fingerprint | g-SAME | b-Ululon
 ::: details Show answer
 
 z-Azawan | g-SAME | b-police
+
 *Azawan is (the same as) a police officer.*
 :::
 
@@ -199,6 +212,7 @@ z-Azawan | g-SAME | b-police
 ::: details Show answer
 
 z-guard | v-run
+
 *A guard runs.*
 :::
 
@@ -207,6 +221,7 @@ z-guard | v-run
 ::: details Show answer
 
 j-question | z-Ululon | g-SAME | b-Uhubun
+
 *Is Ululon Uhubun?*
 :::
 
@@ -215,6 +230,7 @@ j-question | z-Ululon | g-SAME | b-Uhubun
 ::: details Show answer
 
 z-Uhubun | g-SAME | b-Azawan
+
 *Uhubun is Azawan.*
 :::
 
@@ -291,6 +307,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan gugugal gul.`
+
 z-Azawan | g-guard | g-not
 :::
 
@@ -298,6 +315,7 @@ z-Azawan | g-guard | g-not
 
 ::: details Show answer
 `zululon gagaral hual.`
+
 z-Ululon | g-craft | h-always
 :::
 
@@ -305,6 +323,7 @@ z-Ululon | g-craft | h-always
 
 ::: details Show answer
 `zamerel gonunul bazawan.`
+
 z-framed-picture | g-SAME | b-Azawan
 :::
 
@@ -312,6 +331,7 @@ z-framed-picture | g-SAME | b-Azawan
 
 ::: details Show answer
 `zululon gonunum bazawan.`
+
 z-Ululon | g-same | b-Azawan
 :::
 
@@ -319,6 +339,7 @@ z-Ululon | g-same | b-Azawan
 
 ::: details Show answer
 `zeberel gonunul buhubun daledel vejel.`
+
 z-person | g-SAME | b-Uhubun | d-palette | v-see
 :::
 
@@ -326,6 +347,7 @@ z-person | g-SAME | b-Uhubun | d-palette | v-see
 
 ::: details Show answer
 `zazawan gonunun bululon.`
+
 z-Azawan | g-Onunun | b-Ululon
 :::
 
@@ -333,6 +355,7 @@ z-Azawan | g-Onunun | b-Ululon
 
 ::: details Show answer
 `zululon gonunur bazawan.`
+
 z-Ululon | g-coin | b-Azawan
 :::
 
@@ -340,6 +363,7 @@ z-Ululon | g-coin | b-Azawan
 
 ::: details Show answer
 `zamerel gonunul buhubun gul.`
+
 z-framed-picture | g-SAME | b-Uhubun | g-not
 :::
 
@@ -350,6 +374,7 @@ z-framed-picture | g-SAME | b-Uhubun | g-not
 ::: details Show answer
 
 z-Uhubun | g-guard | g-not
+
 *Uhubun is not a guard.*
 :::
 
@@ -358,6 +383,7 @@ z-Uhubun | g-guard | g-not
 ::: details Show answer
 
 z-Azawan | g-craft | h-always
+
 *Azawan is the craft type.*
 :::
 
@@ -366,6 +392,7 @@ z-Azawan | g-craft | h-always
 ::: details Show answer
 
 z-framed-picture | g-same | b-Azawan
+
 *The framed-picture is basically Azawan.*
 :::
 
@@ -374,6 +401,7 @@ z-framed-picture | g-same | b-Azawan
 ::: details Show answer
 
 z-person | g-SAME | b-Azawan | d-palette | v-see
+
 *The person who is Azawan sees a palette.*
 :::
 
@@ -382,6 +410,7 @@ z-person | g-SAME | b-Azawan | d-palette | v-see
 ::: details Show answer
 
 z-Ululon | g-Onunun | b-Uhubun
+
 *Ululon is Uhubun (titled identity).*
 :::
 
@@ -390,6 +419,7 @@ z-Ululon | g-Onunun | b-Uhubun
 ::: details Show answer
 
 z-Azawan | g-coin | b-Uhubun
+
 *Azawan is the same (as already ascribed) as Uhubun.*
 :::
 
@@ -398,6 +428,7 @@ z-Azawan | g-coin | b-Uhubun
 ::: details Show answer
 
 z-framed-picture | g-red | g-SAME | b-Ululon | g-not
+
 *The red framed-picture is not (identical to) Ululon.*
 :::
 
@@ -406,6 +437,7 @@ z-framed-picture | g-red | g-SAME | b-Ululon | g-not
 ::: details Show answer
 
 z-Ululon | g-craft | g-not
+
 *Ululon is not a craftsperson.*
 :::
 

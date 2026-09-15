@@ -115,6 +115,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Count w
 
 ::: details Show answer
 `zabagulx g+2.`
+
 z-baguette-x | g-two
 :::
 
@@ -122,6 +123,7 @@ z-baguette-x | g-two
 
 ::: details Show answer
 `zogozal g#3.`
+
 z-croissant | g-third
 :::
 
@@ -129,6 +131,7 @@ z-croissant | g-third
 
 ::: details Show answer
 `zogogelx g+.`
+
 z-cookie-x | g-more-than-one
 :::
 
@@ -136,6 +139,7 @@ z-cookie-x | g-more-than-one
 
 ::: details Show answer
 `zazawan dereralx g+3 vejel.`
+
 z-Azawan | d-bread-x | g-three | v-see
 :::
 
@@ -143,6 +147,7 @@ z-Azawan | d-bread-x | g-three | v-see
 
 ::: details Show answer
 `zululon dububel g#2 vezehel.`
+
 z-Ululon | d-pie | g-second | v-tell
 :::
 
@@ -150,6 +155,7 @@ z-Ululon | d-pie | g-second | v-tell
 
 ::: details Show answer
 `zuhubun dodogulx g+ vejel.`
+
 z-Uhubun | d-doughnut-x | g-more-than-one | v-see
 :::
 
@@ -157,6 +163,7 @@ z-Uhubun | d-doughnut-x | g-more-than-one | v-see
 
 ::: details Show answer
 `zululon dabagulx g+3 vubunul.`
+
 z-Ululon | d-baguette-x | g-three | v-punch
 :::
 
@@ -164,6 +171,7 @@ z-Ululon | d-baguette-x | g-three | v-punch
 
 ::: details Show answer
 `zululon durel g#1 vazagal.`
+
 z-Ululon | d-fire | g-first | v-scream
 :::
 
@@ -174,6 +182,7 @@ z-Ululon | d-fire | g-first | v-scream
 ::: details Show answer
 
 z-croissant-x | g-two
+
 *Two croissants.*
 :::
 
@@ -182,6 +191,7 @@ z-croissant-x | g-two
 ::: details Show answer
 
 z-bread | g-second
+
 *The second bread.*
 :::
 
@@ -190,6 +200,7 @@ z-bread | g-second
 ::: details Show answer
 
 z-baguette-x | g-more-than-one
+
 *Baguettes — more than one.*
 :::
 
@@ -198,6 +209,7 @@ z-baguette-x | g-more-than-one
 ::: details Show answer
 
 z-Uhubun | d-cookie-x | g-three | v-see
+
 *Uhubun sees three cookies.*
 :::
 
@@ -206,6 +218,7 @@ z-Uhubun | d-cookie-x | g-three | v-see
 ::: details Show answer
 
 z-Azawan | d-pie-x | g-more-than-one | v-see
+
 *Azawan sees more than one pie.*
 :::
 
@@ -214,6 +227,7 @@ z-Azawan | d-pie-x | g-more-than-one | v-see
 ::: details Show answer
 
 z-Ululon | d-bagel-x | g-two | v-run
+
 *Ululon runs two bagels.*
 :::
 
@@ -222,6 +236,7 @@ z-Ululon | d-bagel-x | g-two | v-run
 ::: details Show answer
 
 z-Ululon | d-bagel-x | g-more-than-one | v-punch
+
 *Ululon punches bagels — more than one.*
 :::
 
@@ -230,6 +245,7 @@ z-Ululon | d-bagel-x | g-more-than-one | v-punch
 ::: details Show answer
 
 z-Ululon | d-fire | g-first | v-punch
+
 *Ululon punches the first fire.*
 :::
 
@@ -240,6 +256,7 @@ z-Ululon | d-fire | g-first | v-punch
 ::: details Show answer
 
 g-four
+
 *gramol*
 :::
 
@@ -248,6 +265,7 @@ g-four
 ::: details Show answer
 
 g-first
+
 *grewol*
 :::
 
@@ -256,6 +274,7 @@ g-first
 ::: details Show answer
 
 g-more-than-one
+
 *gral*
 :::
 
@@ -264,6 +283,7 @@ g-more-than-one
 ::: details Show answer
 
 g-21
+
 *graduwol*
 :::
 
@@ -272,6 +292,7 @@ g-21
 ::: details Show answer
 
 g-eighth
+
 *grehal*
 :::
 
@@ -280,6 +301,7 @@ g-eighth
 ::: details Show answer
 
 g-seven
+
 *gralel*
 :::
 
@@ -289,6 +311,7 @@ g-seven
 
 ::: details Show answer
 `g+2`
+
 g-two
 :::
 
@@ -296,6 +319,7 @@ g-two
 
 ::: details Show answer
 `g#3`
+
 g-third
 :::
 
@@ -303,6 +327,7 @@ g-third
 
 ::: details Show answer
 `g+10`
+
 g-ten
 :::
 
@@ -310,6 +335,7 @@ g-ten
 
 ::: details Show answer
 `g#9`
+
 g-ninth
 :::
 
@@ -317,6 +343,7 @@ g-ninth
 
 ::: details Show answer
 `g+5`
+
 g-five
 :::
 
@@ -324,6 +351,7 @@ g-five
 
 ::: details Show answer
 `g+0`
+
 g-zero
 :::
 
@@ -858,6 +886,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Pre
 
 ::: details Show answer
 `zedadalx g~+3.`
+
 z-seat-x | g-three
 :::
 
@@ -865,6 +894,7 @@ z-seat-x | g-three
 
 ::: details Show answer
 `z+3 godobol.`
+
 z-three | g-trophy
 :::
 
@@ -872,6 +902,7 @@ z-three | g-trophy
 
 ::: details Show answer
 `zululon vurunul h+3.`
+
 z-Ululon | v-run | h-three
 :::
 
@@ -879,6 +910,7 @@ z-Ululon | v-run | h-three
 
 ::: details Show answer
 `zedadal g#-2.`
+
 z-seat | g-second-from-end
 :::
 
@@ -886,6 +918,7 @@ z-seat | g-second-from-end
 
 ::: details Show answer
 `x#2 zazawan vajul.`
+
 x-second | z-Azawan | v-sit
 :::
 
@@ -893,6 +926,7 @@ x-second | z-Azawan | v-sit
 
 ::: details Show answer
 `j+3.`
+
 j-three
 :::
 
@@ -900,6 +934,7 @@ j-three
 
 ::: details Show answer
 `zululon dodobol v+3.`
+
 z-Ululon | d-trophy | v-three
 :::
 
@@ -907,6 +942,7 @@ z-Ululon | d-trophy | v-three
 
 ::: details Show answer
 `zululon vubunul h+3.`
+
 z-Ululon | v-punch | h-three
 :::
 
@@ -917,6 +953,7 @@ z-Ululon | v-punch | h-three
 ::: details Show answer
 
 z-seat-x | g-two
+
 *About two seats.*
 :::
 
@@ -925,6 +962,7 @@ z-seat-x | g-two
 ::: details Show answer
 
 z-second | g-trophy
+
 *Second is a trophy.*
 :::
 
@@ -933,6 +971,7 @@ z-second | g-trophy
 ::: details Show answer
 
 z-Ululon | v-run | h-more-than-one
+
 *Ululon runs multiple times.*
 :::
 
@@ -949,6 +988,7 @@ j-_3
 ::: details Show answer
 
 x-second-from-end | z-Ululon | v-run
+
 *Penultimate item: Ululon runs.*
 :::
 
@@ -957,6 +997,7 @@ x-second-from-end | z-Ululon | v-run
 ::: details Show answer
 
 z-seat | g-bell-pepper | g-first-from-end
+
 *The last big seat, counting from the end.*
 :::
 
@@ -965,6 +1006,7 @@ z-seat | g-bell-pepper | g-first-from-end
 ::: details Show answer
 
 z-Azawan | d-more-than-one | v-see
+
 *Azawan sees that amount again.*
 :::
 
@@ -973,6 +1015,7 @@ z-Azawan | d-more-than-one | v-see
 ::: details Show answer
 
 z-Uhubun | v-sit | h-third
+
 *Uhubun sits for the third time.*
 :::
 
@@ -1302,6 +1345,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. Digitle
 
 ::: details Show answer
 `zarazalx g+e.`
+
 z-star-x | g-infinity
 :::
 
@@ -1309,6 +1353,7 @@ z-star-x | g-infinity
 
 ::: details Show answer
 `zelezolx g+1e.`
+
 z-telescope-x | g-+-1e
 :::
 
@@ -1316,6 +1361,7 @@ z-telescope-x | g-+-1e
 
 ::: details Show answer
 `x#e zazawan vejel.`
+
 x-finally | z-Azawan | v-see
 :::
 
@@ -1323,6 +1369,7 @@ x-finally | z-Azawan | v-see
 
 ::: details Show answer
 `j+e.`
+
 j-infinity
 :::
 
@@ -1337,6 +1384,7 @@ j-+-0e
 
 ::: details Show answer
 `x#e- zuhubun vejel.`
+
 x-starting-with | z-Uhubun | v-see
 :::
 
@@ -1347,6 +1395,7 @@ x-starting-with | z-Uhubun | v-see
 ::: details Show answer
 
 z-sun-x | g-infinity
+
 *Suns — infinitely many.*
 :::
 
@@ -1355,6 +1404,7 @@ z-sun-x | g-infinity
 ::: details Show answer
 
 j-last-place
+
 *Finally!*
 :::
 
@@ -1363,6 +1413,7 @@ j-last-place
 ::: details Show answer
 
 x-starting-with | z-Ululon | v-see
+
 *Starting with: Ululon sees.*
 :::
 
@@ -1371,6 +1422,7 @@ x-starting-with | z-Ululon | v-see
 ::: details Show answer
 
 z-star | g-#-1e
+
 *The gazillionth / umpteenth star.*
 :::
 
@@ -1379,6 +1431,7 @@ z-star | g-#-1e
 ::: details Show answer
 
 z-Azawan | v-see | h-#-1e
+
 *Azawan sees for the gazillionth time.*
 :::
 
@@ -1387,6 +1440,7 @@ z-Azawan | v-see | h-#-1e
 ::: details Show answer
 
 j---e-
+
 *As if!*
 :::
 

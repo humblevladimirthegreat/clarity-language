@@ -63,6 +63,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zahamexewenen.`
+
 z-Ahame-x-Ewenen
 :::
 
@@ -70,6 +71,7 @@ z-Ahame-x-Ewenen
 
 ::: details Show answer
 `zahamel zewenel zam.`
+
 z-hammer | z-wrench | z-and.open
 :::
 
@@ -77,6 +79,7 @@ z-hammer | z-wrench | z-and.open
 
 ::: details Show answer
 `zobeleladorol.`
+
 z-doorbell
 :::
 
@@ -84,6 +87,7 @@ z-doorbell
 
 ::: details Show answer
 `zeberelonogol.`
+
 z-friend
 :::
 
@@ -91,6 +95,7 @@ z-friend
 
 ::: details Show answer
 `zazawan zululon.`
+
 z-Azawan | z-Ululon
 :::
 
@@ -98,6 +103,7 @@ z-Azawan | z-Ululon
 
 ::: details Show answer
 `zululon dahamexewenen vejel.`
+
 z-Ululon | d-Ahame-x-Ewenen | v-see
 :::
 
@@ -105,6 +111,7 @@ z-Ululon | d-Ahame-x-Ewenen | v-see
 
 ::: details Show answer
 `zazawan dohohulabedel vejel.`
+
 z-Azawan | d-bedroom | v-see
 :::
 
@@ -112,6 +119,7 @@ z-Azawan | d-bedroom | v-see
 
 ::: details Show answer
 `zululon zeberelonogol vubunul.`
+
 z-Ululon | z-friend | v-punch
 :::
 
@@ -130,6 +138,7 @@ z-friend
 ::: details Show answer
 
 z-Uhubun | d-doorbell | v-see
+
 *Uhubun sees a doorbell.*
 :::
 
@@ -138,6 +147,7 @@ z-Uhubun | d-doorbell | v-see
 ::: details Show answer
 
 z-hammer | z-axe | z-and.open
+
 *a hammer and an axe*
 :::
 
@@ -154,6 +164,7 @@ z-Azawan-x-Ululon
 ::: details Show answer
 
 z-Uhubun | d-bedroom | v-see
+
 *Uhubun sees a bedroom.*
 :::
 
@@ -162,6 +173,7 @@ z-Uhubun | d-bedroom | v-see
 ::: details Show answer
 
 z-friend | d-hammer | v-see
+
 *A friend sees a hammer.*
 :::
 
@@ -170,6 +182,7 @@ z-friend | d-hammer | v-see
 ::: details Show answer
 
 z-Ululon | d-axe | v-see
+
 *Ululon sees an axe.*
 :::
 
@@ -178,6 +191,7 @@ z-Ululon | d-axe | v-see
 ::: details Show answer
 
 z-Azawan | z-Ahame-x-Ewenen | v-punch
+
 *Azawan punches Hammer-Wrench.*
 :::
 
@@ -319,6 +333,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `azawaxan.`
+
 Azawan-presence
 :::
 
@@ -326,6 +341,7 @@ Azawan-presence
 
 ::: details Show answer
 `jululoxen.`
+
 j-Ululon-queue
 :::
 
@@ -333,6 +349,7 @@ j-Ululon-queue
 
 ::: details Show answer
 `azawaxon.`
+
 Azawan-ask
 :::
 
@@ -340,6 +357,7 @@ Azawan-ask
 
 ::: details Show answer
 `azawaxan jululoxon.`
+
 Azawan-presence | j-Ululon-ask
 :::
 
@@ -347,6 +365,7 @@ Azawan-presence | j-Ululon-ask
 
 ::: details Show answer
 `juhubuxun.`
+
 j-Uhubun-passing
 :::
 
@@ -354,6 +373,7 @@ j-Uhubun-passing
 
 ::: details Show answer
 `uhubuxon.`
+
 Uhubun-ask
 :::
 
@@ -361,6 +381,7 @@ Uhubun-ask
 
 ::: details Show answer
 `jazawaxen zululon vazagal.`
+
 j-Azawan-queue | z-Ululon | v-scream
 :::
 
@@ -368,6 +389,7 @@ j-Azawan-queue | z-Ululon | v-scream
 
 ::: details Show answer
 `jululoxun zululon zazawan vubunul.`
+
 j-Ululon-passing | z-Ululon | z-Azawan | v-punch
 :::
 
@@ -378,6 +400,7 @@ j-Ululon-passing | z-Ululon | z-Azawan | v-punch
 ::: details Show answer
 
 Uhubun-presence
+
 *Uhubun — I’m here / we can stay.*
 :::
 
@@ -394,6 +417,7 @@ j-Ululon-passing
 ::: details Show answer
 
 Azawan-passing
+
 *Azawan — just passing.*
 :::
 
@@ -434,6 +458,7 @@ j-greeting
 ::: details Show answer
 
 j-Azawan-queue | z-Uhubun | d-doorbell | v-see
+
 *Azawan — one moment please.* (calling); *Uhubun sees a doorbell.*
 :::
 
@@ -496,6 +521,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zohohulurel.`
+
 z-firehouse
 :::
 
@@ -503,6 +529,7 @@ z-firehouse
 
 ::: details Show answer
 `zeberelonogol.`
+
 z-friend
 :::
 
@@ -510,6 +537,7 @@ z-friend
 
 ::: details Show answer
 `zululon zohohulurel vajul.`
+
 z-Ululon | z-firehouse | v-sit
 :::
 
@@ -517,6 +545,7 @@ z-Ululon | z-firehouse | v-sit
 
 ::: details Show answer
 `zazawan dojalanunul vejel.`
+
 z-Azawan | d-raincoat | v-see
 :::
 
@@ -524,6 +553,7 @@ z-Azawan | d-raincoat | v-see
 
 ::: details Show answer
 `zazawan zululon.`
+
 z-Azawan | z-Ululon
 :::
 
@@ -531,6 +561,7 @@ z-Azawan | z-Ululon
 
 ::: details Show answer
 `zululon zeberelonogol vubunul.`
+
 z-Ululon | z-friend | v-punch
 :::
 
@@ -549,6 +580,7 @@ z-firehouse
 ::: details Show answer
 
 z-Uhubun | z-notebook | v-see
+
 *Uhubun sees a notebook.*
 :::
 
@@ -557,6 +589,7 @@ z-Uhubun | z-notebook | v-see
 ::: details Show answer
 
 z-Azawan | z-doorbell | v-see
+
 *Azawan sees a doorbell.*
 :::
 
@@ -565,6 +598,7 @@ z-Azawan | z-doorbell | v-see
 ::: details Show answer
 
 z-friend | z-firehouse | v-sit
+
 *A friend sits in a firehouse.*
 :::
 
@@ -573,6 +607,7 @@ z-friend | z-firehouse | v-sit
 ::: details Show answer
 
 z-Ululon | d-fire | v-see
+
 *Ululon sees a fire.*
 :::
 
@@ -581,6 +616,7 @@ z-Ululon | d-fire | v-see
 ::: details Show answer
 
 z-Uhubun | v-scream | z-friend | v-punch
+
 *Uhubun screams. A friend punches.*
 :::
 

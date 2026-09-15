@@ -188,6 +188,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `jol zazawan vajul?`
+
 j-question | z-Azawan | v-sit
 :::
 
@@ -195,6 +196,7 @@ j-question | z-Azawan | v-sit
 
 ::: details Show answer
 `jol zar vejel dumubul?`
+
 j-question | z-who | v-see | d-umbrella
 :::
 
@@ -202,6 +204,7 @@ j-question | z-who | v-see | d-umbrella
 
 ::: details Show answer
 `jom zululon vuwurul?`
+
 j-soft-question | z-Ululon | v-write
 :::
 
@@ -209,6 +212,7 @@ j-soft-question | z-Ululon | v-write
 
 ::: details Show answer
 `jol zar vejel dar?`
+
 j-question | z-who | v-see | d-who
 :::
 
@@ -216,6 +220,7 @@ j-question | z-who | v-see | d-who
 
 ::: details Show answer
 `jol zur vejel dojal?`
+
 j-question | z-who-else | v-see | d-coat
 :::
 
@@ -223,6 +228,7 @@ j-question | z-who-else | v-see | d-coat
 
 ::: details Show answer
 `zazawan vezehel duhubun. jael.`
+
 z-Azawan | v-tell | d-Uhubun | j-yes
 :::
 
@@ -230,6 +236,7 @@ z-Azawan | v-tell | d-Uhubun | j-yes
 
 ::: details Show answer
 `juel.`
+
 j-no
 :::
 
@@ -237,6 +244,7 @@ j-no
 
 ::: details Show answer
 `jaol.`
+
 j-sure
 :::
 
@@ -247,6 +255,7 @@ j-sure
 ::: details Show answer
 
 j-soft-question | z-Uhubun | v-see | d-solution
+
 *Is Uhubun seeing the key, I wonder?*
 :::
 
@@ -255,6 +264,7 @@ j-soft-question | z-Uhubun | v-see | d-solution
 ::: details Show answer
 
 j-question | z-who | v-write
+
 *Who writes?*
 :::
 
@@ -263,6 +273,7 @@ j-question | z-who | v-write
 ::: details Show answer
 
 j-question | z-and | v-sit
+
 *Does nobody sit?*
 :::
 
@@ -271,6 +282,7 @@ j-question | z-and | v-sit
 ::: details Show answer
 
 j-question | z-who | v-tell | d-who
+
 *Who tells what?*
 :::
 
@@ -279,6 +291,7 @@ j-question | z-who | v-tell | d-who
 ::: details Show answer
 
 j-yes-soft
+
 *I think so.* / *Yeah.*
 :::
 
@@ -295,6 +308,7 @@ Ululon
 ::: details Show answer
 
 j-prohibition | v-punch
+
 *Don’t punch.*
 :::
 
@@ -303,6 +317,7 @@ j-prohibition | v-punch
 ::: details Show answer
 
 z-Ululon | v-lie | j-yes
+
 *Ululon lies. Yes.*
 :::
 
@@ -428,6 +443,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `jol zazawan vul vezehel?`
+
 j-question | z-Azawan | v-not | v-tell
 `jael.`
 :::
@@ -436,6 +452,7 @@ j-question | z-Azawan | v-not | v-tell
 
 ::: details Show answer
 `jol zuhubun vajul har?`
+
 j-question | z-Uhubun | v-sit | h-when
 :::
 
@@ -443,6 +460,7 @@ j-question | z-Uhubun | v-sit | h-when
 
 ::: details Show answer
 `jol zagegol zar?`
+
 j-question | z-solution | z-who
 :::
 
@@ -450,6 +468,7 @@ j-question | z-solution | z-who
 
 ::: details Show answer
 `jol zululon zal?`
+
 j-question | z-Ululon | z-and
 :::
 
@@ -457,6 +476,7 @@ j-question | z-Ululon | z-and
 
 ::: details Show answer
 `jol zuhubun zam?`
+
 j-question | z-Uhubun | z-and.open
 :::
 
@@ -464,6 +484,7 @@ j-question | z-Uhubun | z-and.open
 
 ::: details Show answer
 `juol.`
+
 j-refuse-option
 :::
 
@@ -471,6 +492,7 @@ j-refuse-option
 
 ::: details Show answer
 `jol hor?`
+
 j-question | h-anytime
 :::
 
@@ -478,6 +500,7 @@ j-question | h-anytime
 
 ::: details Show answer
 `jual.`
+
 j-everything-but
 :::
 
@@ -488,6 +511,7 @@ j-everything-but
 ::: details Show answer
 
 j-yes | v-not | v-attest
+
 *True: didn’t attest.*
 :::
 
@@ -496,6 +520,7 @@ j-yes | v-not | v-attest
 ::: details Show answer
 
 j-question | h-some-other-time
+
 *When else?*
 :::
 
@@ -504,6 +529,7 @@ j-question | h-some-other-time
 ::: details Show answer
 
 j-question | v-who
+
 *What did they do?*
 :::
 
@@ -512,6 +538,7 @@ j-question | v-who
 ::: details Show answer
 
 j-question | d-phone | z-which
+
 *Any phone?*
 :::
 
@@ -520,6 +547,7 @@ j-question | d-phone | z-which
 ::: details Show answer
 
 j-question | z-Azawan | z-not
+
 *Not Azawan?*
 :::
 
@@ -536,6 +564,7 @@ j-refuse-option-soft
 ::: details Show answer
 
 j-no | v-lie
+
 *False: did lie.*
 :::
 
@@ -544,6 +573,7 @@ j-no | v-lie
 ::: details Show answer
 
 j-question | z-who | v-tell | z-Uhubun | h-when
+
 *Who tells Uhubun when?*
 :::
 
@@ -661,6 +691,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `jol zazawan zel?`
+
 j-question | z-Azawan | z-rank/more
 :::
 
@@ -668,6 +699,7 @@ j-question | z-Azawan | z-rank/more
 
 ::: details Show answer
 `jol zululon zem?`
+
 j-question | z-Ululon | z-rank/more.open
 :::
 
@@ -675,6 +707,7 @@ j-question | z-Ululon | z-rank/more.open
 
 ::: details Show answer
 `jol zuhubun zol?`
+
 j-question | z-Uhubun | z-or-exactly-one
 :::
 
@@ -682,6 +715,7 @@ j-question | z-Uhubun | z-or-exactly-one
 
 ::: details Show answer
 `jol zael?`
+
 j-question | z-as…as
 :::
 
@@ -689,6 +723,7 @@ j-question | z-as…as
 
 ::: details Show answer
 `jol zodobol zaol?`
+
 j-question | z-trophy | z-and/or
 :::
 
@@ -715,6 +750,7 @@ j-no | j-refuse-option
 ::: details Show answer
 
 j-question | z-bell | z-everything-but
+
 *Everything but the bell?*
 :::
 
@@ -723,6 +759,7 @@ j-question | z-bell | z-everything-but
 ::: details Show answer
 
 j-question | z-ranked-or
+
 *Do nothing?* / *Skip it?*
 :::
 

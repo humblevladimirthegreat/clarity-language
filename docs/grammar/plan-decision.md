@@ -86,6 +86,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan howoram vajul.`
+
 z-Azawan | h-plan-sketch | v-sit
 :::
 
@@ -93,6 +94,7 @@ z-Azawan | h-plan-sketch | v-sit
 
 ::: details Show answer
 `zululon howoram degezal vejel.`
+
 z-Ululon | h-plan-sketch | d-pawn | v-see
 :::
 
@@ -100,6 +102,7 @@ z-Ululon | h-plan-sketch | d-pawn | v-see
 
 ::: details Show answer
 `zazawan howoral duhubun vezehel.`
+
 z-Azawan | h-plan-itinerary | d-Uhubun | v-tell
 :::
 
@@ -107,6 +110,7 @@ z-Azawan | h-plan-itinerary | d-Uhubun | v-tell
 
 ::: details Show answer
 `zazawan helezom vajul.`
+
 z-Azawan | h-predict | v-sit
 :::
 
@@ -114,6 +118,7 @@ z-Azawan | h-predict | v-sit
 
 ::: details Show answer
 `zuhubun howoral dazawan vejel.`
+
 z-Uhubun | h-plan-itinerary | d-Azawan | v-see
 :::
 
@@ -121,6 +126,7 @@ z-Uhubun | h-plan-itinerary | d-Azawan | v-see
 
 ::: details Show answer
 `zululon howorar dazawan vubunul.`
+
 z-Ululon | h-plan-fork | d-Azawan | v-punch
 :::
 
@@ -128,6 +134,7 @@ z-Ululon | h-plan-fork | d-Azawan | v-punch
 
 ::: details Show answer
 `zululon helezom vazagal.`
+
 z-Ululon | h-predict | v-scream
 :::
 
@@ -135,6 +142,7 @@ z-Ululon | h-predict | v-scream
 
 ::: details Show answer
 `zululon howorar vuvugul.`
+
 z-Ululon | h-plan-fork | v-fight
 :::
 
@@ -145,6 +153,7 @@ z-Ululon | h-plan-fork | v-fight
 ::: details Show answer
 
 z-Ululon | h-plan-sketch | v-sit
+
 *Ululon means to sit.*
 :::
 
@@ -153,6 +162,7 @@ z-Ululon | h-plan-sketch | v-sit
 ::: details Show answer
 
 z-Azawan | h-plan-sketch | d-pawn | v-see
+
 *Azawan means to see a pawn.*
 :::
 
@@ -161,6 +171,7 @@ z-Azawan | h-plan-sketch | d-pawn | v-see
 ::: details Show answer
 
 z-Uhubun | h-plan-itinerary | d-Azawan | v-tell
+
 *Uhubun’s itinerary is to tell Azawan.*
 :::
 
@@ -169,6 +180,7 @@ z-Uhubun | h-plan-itinerary | d-Azawan | v-tell
 ::: details Show answer
 
 h-predict | v-sit
+
 *Forecast: someone sits.*
 :::
 
@@ -177,6 +189,7 @@ h-predict | v-sit
 ::: details Show answer
 
 z-Azawan | h-plan-sketch | d-Uhubun | v-tell
+
 *Azawan means to tell Uhubun.*
 :::
 
@@ -185,6 +198,7 @@ z-Azawan | h-plan-sketch | d-Uhubun | v-tell
 ::: details Show answer
 
 z-Ululon | h-plan-itinerary | d-pawn | v-see
+
 *Ululon’s itinerary is to see a pawn.*
 :::
 
@@ -193,6 +207,7 @@ z-Ululon | h-plan-itinerary | d-pawn | v-see
 ::: details Show answer
 
 z-Uhubun | h-plan-fork | v-scream
+
 *If that path fails, Uhubun will scream.*
 :::
 
@@ -201,6 +216,7 @@ z-Uhubun | h-plan-fork | v-scream
 ::: details Show answer
 
 h-predict | v-fight
+
 *Forecast: someone fights.*
 :::
 
@@ -289,6 +305,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zululon hegegem vajul.`
+
 z-Ululon | h-DECISION-modifiable | v-sit
 :::
 
@@ -296,6 +313,7 @@ z-Ululon | h-DECISION-modifiable | v-sit
 
 ::: details Show answer
 `zazawan hegegem duhubun vezehel.`
+
 z-Azawan | h-DECISION-modifiable | d-Uhubun | v-tell
 :::
 
@@ -303,6 +321,7 @@ z-Azawan | h-DECISION-modifiable | d-Uhubun | v-tell
 
 ::: details Show answer
 `zuhubun hegeger vuwurul.`
+
 z-Uhubun | h-DECISION-temporary | v-write
 :::
 
@@ -310,6 +329,7 @@ z-Uhubun | h-DECISION-temporary | v-write
 
 ::: details Show answer
 `zululon helezom habawam vajul.`
+
 z-Ululon | h-predict | h-PATTERN | v-sit
 :::
 
@@ -317,6 +337,7 @@ z-Ululon | h-predict | h-PATTERN | v-sit
 
 ::: details Show answer
 `zazawan howoral hegegel vajul.`
+
 z-Azawan | h-plan-itinerary | h-DECISION-irreversible | v-sit
 :::
 
@@ -324,6 +345,7 @@ z-Azawan | h-plan-itinerary | h-DECISION-irreversible | v-sit
 
 ::: details Show answer
 `zululon hegeger dugubol vejel.`
+
 z-Ululon | h-DECISION-temporary | d-clipboard | v-see
 :::
 
@@ -331,6 +353,7 @@ z-Ululon | h-DECISION-temporary | d-clipboard | v-see
 
 ::: details Show answer
 `zululon hegegel dazawan vubunul.`
+
 z-Ululon | h-DECISION-irreversible | d-Azawan | v-punch
 :::
 
@@ -338,6 +361,7 @@ z-Ululon | h-DECISION-irreversible | d-Azawan | v-punch
 
 ::: details Show answer
 `zululon hegegel vuvugul.`
+
 z-Ululon | h-DECISION-irreversible | v-fight
 :::
 
@@ -348,6 +372,7 @@ z-Ululon | h-DECISION-irreversible | v-fight
 ::: details Show answer
 
 z-Azawan | h-DECISION-modifiable | v-sit
+
 *Azawan has decided to sit, still open to revision.*
 :::
 
@@ -356,6 +381,7 @@ z-Azawan | h-DECISION-modifiable | v-sit
 ::: details Show answer
 
 z-Ululon | h-DECISION-irreversible | v-write
+
 *Ululon has decided for good to write.*
 :::
 
@@ -364,6 +390,7 @@ z-Ululon | h-DECISION-irreversible | v-write
 ::: details Show answer
 
 h-predict | h-PATTERN | v-tell
+
 *Forecast from pattern: someone tells.*
 :::
 
@@ -372,6 +399,7 @@ h-predict | h-PATTERN | v-tell
 ::: details Show answer
 
 z-Uhubun | h-DECISION-temporary | v-sit
+
 *Uhubun has decided for now to sit.*
 :::
 
@@ -380,6 +408,7 @@ z-Uhubun | h-DECISION-temporary | v-sit
 ::: details Show answer
 
 z-Azawan | h-DECISION-temporary | d-pen | v-see
+
 *Azawan has decided for now to see a pen.*
 :::
 
@@ -388,6 +417,7 @@ z-Azawan | h-DECISION-temporary | d-pen | v-see
 ::: details Show answer
 
 z-Ululon | h-plan-itinerary | h-DECISION-irreversible | d-Uhubun | v-tell
+
 *Ululon’s itinerary is to tell Uhubun, and the pick is settled.*
 :::
 
@@ -396,6 +426,7 @@ z-Ululon | h-plan-itinerary | h-DECISION-irreversible | d-Uhubun | v-tell
 ::: details Show answer
 
 z-Ululon | h-DECISION-temporary | d-Azawan | v-punch
+
 *Ululon has decided for now to punch Azawan.*
 :::
 
@@ -404,6 +435,7 @@ z-Ululon | h-DECISION-temporary | d-Azawan | v-punch
 ::: details Show answer
 
 z-Uhubun | h-DECISION-irreversible | v-scream
+
 *Uhubun has decided for good to scream.*
 :::
 

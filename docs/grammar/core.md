@@ -255,6 +255,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `juhubun.`
+
 j-Uhubun
 :::
 
@@ -262,6 +263,7 @@ j-Uhubun
 
 ::: details Show answer
 `zazawan vajul.`
+
 z-Azawan | v-sit
 :::
 
@@ -269,6 +271,7 @@ z-Azawan | v-sit
 
 ::: details Show answer
 `zuhubun dazawan vejel.`
+
 z-Uhubun | d-Azawan | v-see
 :::
 
@@ -276,6 +279,7 @@ z-Uhubun | d-Azawan | v-see
 
 ::: details Show answer
 `zululon ganagal welem vazanul.`
+
 z-Ululon | g-angry | w-very | v-stand
 :::
 
@@ -283,6 +287,7 @@ z-Ululon | g-angry | w-very | v-stand
 
 ::: details Show answer
 `zazawan vuwurul hadazam.`
+
 z-Azawan | v-write | h-haste
 :::
 
@@ -290,6 +295,7 @@ z-Azawan | v-write | h-haste
 
 ::: details Show answer
 `jul vazanal.`
+
 j-prohibition | v-sneak
 :::
 
@@ -297,6 +303,7 @@ j-prohibition | v-sneak
 
 ::: details Show answer
 `zazawan dululon vezehel dadorol zuhubun vajul.`
+
 z-Azawan | d-Ululon | v-tell | d-next-clause | z-Uhubun | v-sit
 :::
 
@@ -304,6 +311,7 @@ z-Azawan | d-Ululon | v-tell | d-next-clause | z-Uhubun | v-sit
 
 ::: details Show answer
 `zazawan vurunul hurugum badorol zululon dugugal vubunul.`
+
 z-Azawan | v-run | h-because | b-next-clause | z-Ululon | d-guard | v-punch
 :::
 
@@ -322,6 +330,7 @@ j-Azawan
 ::: details Show answer
 
 z-Uhubun | v-stand
+
 *Uhubun stands.*
 :::
 
@@ -330,6 +339,7 @@ z-Uhubun | v-stand
 ::: details Show answer
 
 z-Azawan | d-Uhubun | v-see
+
 *Azawan sees Uhubun.*
 :::
 
@@ -338,6 +348,7 @@ z-Azawan | d-Uhubun | v-see
 ::: details Show answer
 
 z-Uhubun | g-happy | d-money-bag | v-see
+
 *Happy Uhubun sees a money-bag.*
 :::
 
@@ -346,6 +357,7 @@ z-Uhubun | g-happy | d-money-bag | v-see
 ::: details Show answer
 
 j-question | z-Azawan | v-sit
+
 *Does Azawan sit?*
 :::
 
@@ -354,6 +366,7 @@ j-question | z-Azawan | v-sit
 ::: details Show answer
 
 j-command | v-run
+
 *Run!*
 :::
 
@@ -362,6 +375,7 @@ j-command | v-run
 ::: details Show answer
 
 z-Ululon | v-sneak | h-inside | b-bank
+
 *Ululon sneaks inside a bank.*
 :::
 
@@ -370,6 +384,7 @@ z-Ululon | v-sneak | h-inside | b-bank
 ::: details Show answer
 
 z-Uhubun | v-scream | x-therefore | z-Ululon | v-fight
+
 *Uhubun screams. Therefore Ululon fights.*
 :::
 
@@ -545,6 +560,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `jam zazawan vajul.`
+
 j-soft-statement | z-Azawan | v-sit
 :::
 
@@ -552,6 +568,7 @@ j-soft-statement | z-Azawan | v-sit
 
 ::: details Show answer
 `jom zuhubun dugedel vejel?`
+
 j-soft-question | z-Uhubun | d-ticket | v-see
 :::
 
@@ -559,6 +576,7 @@ j-soft-question | z-Uhubun | d-ticket | v-see
 
 ::: details Show answer
 `jem vazanul!`
+
 j-request | v-stand
 :::
 
@@ -566,6 +584,7 @@ j-request | v-stand
 
 ::: details Show answer
 `jum vazanal!`
+
 j-soft-prohibition | v-sneak
 :::
 
@@ -573,6 +592,7 @@ j-soft-prohibition | v-sneak
 
 ::: details Show answer
 `glaredel wegelom zudunul vazanul.`
+
 gl-red | w-volume | z-train | v-stand
 :::
 
@@ -580,6 +600,7 @@ gl-red | w-volume | z-train | v-stand
 
 ::: details Show answer
 `zazawan gonunul buhubun gelulul vazanul.`
+
 z-Azawan | g-SAME | b-Uhubun | g-blue | v-stand
 :::
 
@@ -587,6 +608,7 @@ z-Azawan | g-SAME | b-Uhubun | g-blue | v-stand
 
 ::: details Show answer
 `zazawan vajul. xuvumul zululon vurunul.`
+
 z-Azawan | v-sit | x-next | z-Ululon | v-run
 :::
 
@@ -594,6 +616,7 @@ z-Azawan | v-sit | x-next | z-Ululon | v-run
 
 ::: details Show answer
 `zazawan vurunul hurugum badorol zululon dazawan vubunul hurugum badorol zuhubun vazagal.`
+
 z-Azawan | v-run | h-because | b-next-clause | z-Ululon | d-Azawan | v-punch | h-because | b-next-clause | z-Uhubun | v-scream
 :::
 
@@ -604,6 +627,7 @@ z-Azawan | v-run | h-because | b-next-clause | z-Ululon | d-Azawan | v-punch | h
 ::: details Show answer
 
 j-soft-statement | h-hash | b-Azawan | z-Ululon | d-ticket | v-see
+
 *As for Azawan, maybe Ululon sees a ticket.*
 :::
 
@@ -612,6 +636,7 @@ j-soft-statement | h-hash | b-Azawan | z-Ululon | d-ticket | v-see
 ::: details Show answer
 
 j-soft-question | gl-blue | z-train | v-stand
+
 *Does a blue train stand, perhaps?*
 :::
 
@@ -620,6 +645,7 @@ j-soft-question | gl-blue | z-train | v-stand
 ::: details Show answer
 
 j-request | d-Uhubun | v-tell
+
 *Please tell Uhubun.*
 :::
 
@@ -628,6 +654,7 @@ j-request | d-Uhubun | v-tell
 ::: details Show answer
 
 j-soft-prohibition | v-punch
+
 *Please don’t punch.*
 :::
 
@@ -636,6 +663,7 @@ j-soft-prohibition | v-punch
 ::: details Show answer
 
 z-Uhubun | g-SAME | b-Ululon | g-red | v-stand
+
 *Uhubun the same as red Ululon stands.*
 :::
 
@@ -644,6 +672,7 @@ z-Uhubun | g-SAME | b-Ululon | g-red | v-stand
 ::: details Show answer
 
 z-Uhubun | v-sit | x-meanwhile | z-Ululon | d-luggage | v-see
+
 *Uhubun sits. Meanwhile Ululon sees luggage.*
 :::
 
@@ -652,6 +681,7 @@ z-Uhubun | v-sit | x-meanwhile | z-Ululon | d-luggage | v-see
 ::: details Show answer
 
 z-Ululon | v-sneak | x-however | z-Azawan | v-run
+
 *Ululon sneaks. However Azawan runs.*
 :::
 
@@ -660,6 +690,7 @@ z-Ululon | v-sneak | x-however | z-Azawan | v-run
 ::: details Show answer
 
 z-Uhubun | v-scream | h-because | b-next-clause | z-Azawan | v-departure | h-because | b-next-clause | z-Ululon | d-Azawan | v-punch
+
 *Uhubun screams because Azawan departs because Ululon punches Azawan.*
 :::
 

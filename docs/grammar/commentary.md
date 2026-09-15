@@ -86,6 +86,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan hodohom vajul.`
+
 z-Azawan | h-COMMENT | v-sit
 :::
 
@@ -93,6 +94,7 @@ z-Azawan | h-COMMENT | v-sit
 
 ::: details Show answer
 `zululon hodohom vorurul dogovel.`
+
 z-Ululon | h-COMMENT | v-pour | d-coffee
 :::
 
@@ -100,6 +102,7 @@ z-Ululon | h-COMMENT | v-pour | d-coffee
 
 ::: details Show answer
 `zuhubun hodohom vejel dazawan.`
+
 z-Uhubun | h-COMMENT | v-see | d-Azawan
 :::
 
@@ -107,6 +110,7 @@ z-Uhubun | h-COMMENT | v-see | d-Azawan
 
 ::: details Show answer
 `zazawan hodohol vezehel duhubun.`
+
 z-Azawan | h-COMMENT-fused | v-tell | d-Uhubun
 :::
 
@@ -114,6 +118,7 @@ z-Azawan | h-COMMENT-fused | v-tell | d-Uhubun
 
 ::: details Show answer
 `zululon hodohor vorurul dadedal.`
+
 z-Ululon | h-COMMENT-return | v-pour | d-tea
 :::
 
@@ -121,6 +126,7 @@ z-Ululon | h-COMMENT-return | v-pour | d-tea
 
 ::: details Show answer
 `zazawan vodohol.`
+
 z-Azawan | v-thought
 :::
 
@@ -128,6 +134,7 @@ z-Azawan | v-thought
 
 ::: details Show answer
 `zululon hodohom vubunul dazawan.`
+
 z-Ululon | h-COMMENT | v-punch | d-Azawan
 :::
 
@@ -135,6 +142,7 @@ z-Ululon | h-COMMENT | v-punch | d-Azawan
 
 ::: details Show answer
 `jol zuhubun hodohom vazagal.`
+
 j-question | z-Uhubun | h-COMMENT | v-scream
 :::
 
@@ -145,6 +153,7 @@ j-question | z-Uhubun | h-COMMENT | v-scream
 ::: details Show answer
 
 z-Ululon | h-COMMENT | v-sit
+
 *I think Ululon sits.*
 :::
 
@@ -153,6 +162,7 @@ z-Ululon | h-COMMENT | v-sit
 ::: details Show answer
 
 z-Azawan | h-COMMENT | v-pour | d-tea
+
 *I think Azawan pours tea.*
 :::
 
@@ -161,6 +171,7 @@ z-Azawan | h-COMMENT | v-pour | d-tea
 ::: details Show answer
 
 z-Uhubun | h-COMMENT-fused | v-see | d-Ululon
+
 *Uhubun sees Ululon — and that take is the scene.*
 :::
 
@@ -177,6 +188,7 @@ z-Ululon | v-thought
 ::: details Show answer
 
 z-Azawan | h-COMMENT-return | v-pour | d-coffee
+
 *I think Azawan pours coffee — and step back from that take.*
 :::
 
@@ -193,6 +205,7 @@ j-question | z-Azawan | h-COMMENT | v-see | d-Uhubun
 ::: details Show answer
 
 z-Ululon | h-COMMENT-fused | v-fight
+
 *Ululon fights — and that take is the scene.*
 :::
 
@@ -201,6 +214,7 @@ z-Ululon | h-COMMENT-fused | v-fight
 ::: details Show answer
 
 z-Ululon | h-COMMENT | v-scream
+
 *I think Ululon screams.*
 :::
 
@@ -352,6 +366,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan hadezem vezehel duhubun.`
+
 z-Azawan | h-LIVE | v-tell | d-Uhubun
 :::
 
@@ -359,6 +374,7 @@ z-Azawan | h-LIVE | v-tell | d-Uhubun
 
 ::: details Show answer
 `zululon huvuvum vejel dameral.`
+
 z-Ululon | h-WITNESSED | v-see | d-camera
 :::
 
@@ -366,6 +382,7 @@ z-Ululon | h-WITNESSED | v-see | d-camera
 
 ::: details Show answer
 `zuhubun heregom vezehel dazawan.`
+
 z-Uhubun | h-RECORDED | v-tell | d-Azawan
 :::
 
@@ -373,6 +390,7 @@ z-Uhubun | h-RECORDED | v-tell | d-Azawan
 
 ::: details Show answer
 `zazawan habawam vejel denewel.`
+
 z-Azawan | h-PATTERN | v-see | d-newspaper
 :::
 
@@ -380,6 +398,7 @@ z-Azawan | h-PATTERN | v-see | d-newspaper
 
 ::: details Show answer
 `zululon heraram vumudel.`
+
 z-Ululon | h-TOLD | v-mute
 :::
 
@@ -387,6 +406,7 @@ z-Ululon | h-TOLD | v-mute
 
 ::: details Show answer
 `zululon hunevem vubunul dazawan.`
+
 z-Ululon | h-INFERRED | v-punch | d-Azawan
 :::
 
@@ -394,6 +414,7 @@ z-Ululon | h-INFERRED | v-punch | d-Azawan
 
 ::: details Show answer
 `zazawan hadadem vezehel duhubun.`
+
 z-Azawan | h-NOTIONAL | v-tell | d-Uhubun
 :::
 
@@ -401,6 +422,7 @@ z-Azawan | h-NOTIONAL | v-tell | d-Uhubun
 
 ::: details Show answer
 `zululon hadadel vazagal.`
+
 z-Ululon | h-NOTIONAL-fused | v-scream
 :::
 
@@ -411,6 +433,7 @@ z-Ululon | h-NOTIONAL-fused | v-scream
 ::: details Show answer
 
 z-Azawan | h-FELT | v-tell | d-Uhubun
+
 *Azawan tells Uhubun — felt / gut-known.*
 :::
 
@@ -419,6 +442,7 @@ z-Azawan | h-FELT | v-tell | d-Uhubun
 ::: details Show answer
 
 z-Ululon | h-STORY | v-see | d-radio
+
 *Ululon sees a radio — per the tale.*
 :::
 
@@ -427,6 +451,7 @@ z-Ululon | h-STORY | v-see | d-radio
 ::: details Show answer
 
 z-Uhubun | h-INFERRED | v-mute
+
 *Uhubun mutes — inferred from clues.*
 :::
 
@@ -435,6 +460,7 @@ z-Uhubun | h-INFERRED | v-mute
 ::: details Show answer
 
 z-Azawan | h-NOTIONAL-return | v-write
+
 *As if Azawan writes — and step back toward contact.*
 :::
 
@@ -443,6 +469,7 @@ z-Azawan | h-NOTIONAL-return | v-write
 ::: details Show answer
 
 z-Ululon | h-RECORDED | v-see | d-camera
+
 *Ululon sees a camera — on record.*
 :::
 
@@ -451,6 +478,7 @@ z-Ululon | h-RECORDED | v-see | d-camera
 ::: details Show answer
 
 z-Uhubun | h-WITNESSED | v-tell
+
 *Uhubun tells — from memory (a past observation).*
 :::
 
@@ -459,6 +487,7 @@ z-Uhubun | h-WITNESSED | v-tell
 ::: details Show answer
 
 z-Ululon | h-LIVE | v-punch | d-Azawan
+
 *Ululon punches Azawan — live / from the scene.*
 :::
 

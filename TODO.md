@@ -4,7 +4,7 @@ https://main.d2xds94zsgwptg.amplifyapp.com
 review TTS
 consider removing emojis from docs (but keep in lexicon)
 advanced section somewhere on how order affects emphasis
-require glosses everywhere, including trivial
+we currently allow skipping glosses in grammar files if the translation is trivial. We should require glosses everywhere, including trivial, so we can have stricter gloss count checking
 local llm systematically review entire lexicon
 
 ## Evidentiality / tense

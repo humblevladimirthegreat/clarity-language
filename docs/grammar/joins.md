@@ -241,6 +241,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zereral zodomal zam.`
+
 z-bread | z-tomato | z-and.open
 :::
 
@@ -248,6 +249,7 @@ z-bread | z-tomato | z-and.open
 
 ::: details Show answer
 `zamanol zemelol zol.`
+
 z-mango | z-melon | z-or-exactly-one
 :::
 
@@ -255,6 +257,7 @@ z-mango | z-melon | z-or-exactly-one
 
 ::: details Show answer
 `zuhubun zal.`
+
 z-Uhubun | z-and
 :::
 
@@ -262,6 +265,7 @@ z-Uhubun | z-and
 
 ::: details Show answer
 `zagabel zom.`
+
 z-grape | z-or-exactly-one.open
 :::
 
@@ -269,6 +273,7 @@ z-grape | z-or-exactly-one.open
 
 ::: details Show answer
 `zanahol zul.`
+
 z-cart | z-not
 :::
 
@@ -276,6 +281,7 @@ z-cart | z-not
 
 ::: details Show answer
 `zereral zodomal zar.`
+
 z-bread | z-tomato | z-something
 :::
 
@@ -283,6 +289,7 @@ z-bread | z-tomato | z-something
 
 ::: details Show answer
 `zazawan zel.`
+
 z-Azawan | z-rank/more
 :::
 
@@ -290,6 +297,7 @@ z-Azawan | z-rank/more
 
 ::: details Show answer
 `zululon vubunul zazawan duhubun vejel xam.`
+
 z-Ululon | v-punch | z-Azawan | d-Uhubun | v-see | x-and.open
 :::
 
@@ -300,6 +308,7 @@ z-Ululon | v-punch | z-Azawan | d-Uhubun | v-see | x-and.open
 ::: details Show answer
 
 z-cart | z-and.open
+
 *a cart, for one* / *a cart (and possibly more)*
 :::
 
@@ -308,6 +317,7 @@ z-cart | z-and.open
 ::: details Show answer
 
 z-everything-but
+
 *everything* / *everyone*
 :::
 
@@ -316,6 +326,7 @@ z-everything-but
 ::: details Show answer
 
 z-basket | z-something
+
 *some (unknown) basket*
 :::
 
@@ -324,6 +335,7 @@ z-basket | z-something
 ::: details Show answer
 
 z-mango | z-melon | z-not
+
 *neither a mango nor a melon*
 :::
 
@@ -332,6 +344,7 @@ z-mango | z-melon | z-not
 ::: details Show answer
 
 z-Uhubun | z-and.open
+
 *Uhubun, for one* / *Uhubun (and possibly more)*
 :::
 
@@ -340,6 +353,7 @@ z-Uhubun | z-and.open
 ::: details Show answer
 
 z-Uhubun | z-rank/more
+
 *only Uhubun matters* / *Uhubun first*
 :::
 
@@ -348,6 +362,7 @@ z-Uhubun | z-rank/more
 ::: details Show answer
 
 z-Ululon | d-basket | v-punch | z-Azawan | v-scream | x-and.open
+
 *Ululon punches a basket and Azawan screams (and possibly more).*
 :::
 
@@ -356,6 +371,7 @@ z-Ululon | d-basket | v-punch | z-Azawan | v-scream | x-and.open
 ::: details Show answer
 
 z-Ululon | v-scream | z-Azawan | v-lie | x-and.open
+
 *Ululon screams and Azawan lies (and possibly more).*
 :::
 
@@ -650,6 +666,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zuwunel zovowel zual.`
+
 z-wine | z-flower | z-everything-but
 :::
 
@@ -657,6 +674,7 @@ z-wine | z-flower | z-everything-but
 
 ::: details Show answer
 `zual gunurul.`
+
 z-everything-but | g-ring
 :::
 
@@ -664,6 +682,7 @@ z-everything-but | g-ring
 
 ::: details Show answer
 `zazawan zululon zal guzumum.`
+
 z-Azawan | z-Ululon | z-and | g-happy
 :::
 
@@ -671,6 +690,7 @@ z-Azawan | z-Ululon | z-and | g-happy
 
 ::: details Show answer
 `zuwunel zovowel zol zunurul zal.`
+
 z-wine | z-flower | z-or-exactly-one | z-ring | z-and
 :::
 
@@ -678,6 +698,7 @@ z-wine | z-flower | z-or-exactly-one | z-ring | z-and
 
 ::: details Show answer
 `zazawan duhubun vejel zululon duhubun vuguzul xan.`
+
 z-Azawan | d-Uhubun | v-see | z-Ululon | d-Uhubun | v-kiss | x-and-then
 :::
 
@@ -685,6 +706,7 @@ z-Azawan | d-Uhubun | v-see | z-Ululon | d-Uhubun | v-kiss | x-and-then
 
 ::: details Show answer
 `zuhubun zaom.`
+
 z-Uhubun | z-and/or.open
 :::
 
@@ -692,6 +714,7 @@ z-Uhubun | z-and/or.open
 
 ::: details Show answer
 `zuwunel zuol.`
+
 z-wine | z-anything-but
 :::
 
@@ -699,6 +722,7 @@ z-wine | z-anything-but
 
 ::: details Show answer
 `zululon zuel.`
+
 z-Ululon | z-rank/less
 :::
 
@@ -709,6 +733,7 @@ z-Ululon | z-rank/less
 ::: details Show answer
 
 z-flower | z-everything-but
+
 *everything but the flower*
 :::
 
@@ -717,6 +742,7 @@ z-flower | z-everything-but
 ::: details Show answer
 
 z-everything-but.open | g-ring
+
 *every ring, as far as I know*
 :::
 
@@ -725,6 +751,7 @@ z-everything-but.open | g-ring
 ::: details Show answer
 
 z-veil | z-everything-but
+
 *everything but the veil*
 :::
 
@@ -733,6 +760,7 @@ z-veil | z-everything-but
 ::: details Show answer
 
 v-kiss | v-tell | v-and.open | d-Uhubun
+
 *kisses and tells Uhubun*
 :::
 
@@ -741,6 +769,7 @@ v-kiss | v-tell | v-and.open | d-Uhubun
 ::: details Show answer
 
 v-kiss | v-punch | v-and | v-not
+
 *not kiss, and not punch*
 :::
 
@@ -749,6 +778,7 @@ v-kiss | v-punch | v-and | v-not
 ::: details Show answer
 
 z-Azawan | d-Uhubun | v-see | z-Ululon | d-Uhubun | v-kiss | x-or-exactly-one | z-Uhubun | v-sit | x-and
+
 *(Azawan sees Uhubun or Ululon kisses Uhubun) and Uhubun sits.*
 :::
 
@@ -757,6 +787,7 @@ z-Azawan | d-Uhubun | v-see | z-Ululon | d-Uhubun | v-kiss | x-or-exactly-one | 
 ::: details Show answer
 
 z-wine | z-flower | z-ring | z-rank/more
+
 *wine ≻ flower ≻ ring*
 :::
 
@@ -765,6 +796,7 @@ z-wine | z-flower | z-ring | z-rank/more
 ::: details Show answer
 
 z-tuxedo | z-anything-but.open
+
 *anything but the tuxedo (and possibly more)*
 :::
 
@@ -887,6 +919,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zajel zabenel zon.`
+
 z-page | z-pen | z-or-exactly-one.named
 :::
 
@@ -901,6 +934,7 @@ z-and.named
 
 ::: details Show answer
 `zodovel zajel zabenel zor.`
+
 z-dove | z-page | z-pen | z-anything
 :::
 
@@ -908,6 +942,7 @@ z-dove | z-page | z-pen | z-anything
 
 ::: details Show answer
 `zazawan ^ zuhubun zal ^ zam.`
+
 z-Azawan | z-Uhubun | z-and | z-and.open
 :::
 
@@ -915,6 +950,7 @@ z-Azawan | z-Uhubun | z-and | z-and.open
 
 ::: details Show answer
 `zululon zur.`
+
 z-Ululon | z-something-else
 :::
 
@@ -933,6 +969,7 @@ z-as…as.named
 ::: details Show answer
 
 z-dove | z-page | z-pen | z-whatever-ranks
+
 *pick a dove, a page, or a pen by ranking*
 :::
 
@@ -941,6 +978,7 @@ z-dove | z-page | z-pen | z-whatever-ranks
 ::: details Show answer
 
 z-Azawan | z-and | z-and.open
+
 *Azawan and nothing*
 :::
 
@@ -949,6 +987,7 @@ z-Azawan | z-and | z-and.open
 ::: details Show answer
 
 z-anything-but
+
 *anything (goes)*
 :::
 
@@ -957,6 +996,7 @@ z-anything-but
 ::: details Show answer
 
 z-imprimatur | z-page | z-something-else
+
 *something other than the seal and the page*
 :::
 

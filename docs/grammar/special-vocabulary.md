@@ -117,6 +117,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zuzebul g#2.`
+
 z-problem | g-second
 :::
 
@@ -124,6 +125,7 @@ z-problem | g-second
 
 ::: details Show answer
 `zazawan zolalal g#1 vezehel.`
+
 z-Azawan | z-goal | g-first | v-tell
 :::
 
@@ -131,6 +133,7 @@ z-Azawan | z-goal | g-first | v-tell
 
 ::: details Show answer
 `zalanel wolozoxam hogegam habobom.`
+
 z-lantern | w-competence-met-mental | h-HIGH | h-INTERNAL
 :::
 
@@ -138,6 +141,7 @@ z-lantern | w-competence-met-mental | h-HIGH | h-INTERNAL
 
 ::: details Show answer
 `zagegol g#1.`
+
 z-solution | g-first
 :::
 
@@ -145,6 +149,7 @@ z-solution | g-first
 
 ::: details Show answer
 `zedenel wolozoxur hogegam hanedem.`
+
 z-tent | w-competence-unmet-temporary | h-HIGH | h-CIRCUM
 :::
 
@@ -152,6 +157,7 @@ z-tent | w-competence-unmet-temporary | h-HIGH | h-CIRCUM
 
 ::: details Show answer
 `zabaral wonogoxum hogegam horurum.`
+
 z-party | w-relatedness-unmet-modifiable | h-HIGH | h-EXTERNAL
 :::
 
@@ -159,6 +165,7 @@ z-party | w-relatedness-unmet-modifiable | h-HIGH | h-EXTERNAL
 
 ::: details Show answer
 `zuhugul wonogoxum hozowom horurum.`
+
 z-hug | w-relatedness-unmet-modifiable | h-LOW | h-EXTERNAL
 :::
 
@@ -169,6 +176,7 @@ z-hug | w-relatedness-unmet-modifiable | h-LOW | h-EXTERNAL
 ::: details Show answer
 
 z-solution | g-second
+
 *Solution 2.*
 :::
 
@@ -177,6 +185,7 @@ z-solution | g-second
 ::: details Show answer
 
 z-Uhubun | z-goal | g-first | v-tell
+
 *Uhubun names goal 1.*
 :::
 
@@ -209,6 +218,7 @@ z-goal | g-first
 ::: details Show answer
 
 z-Ululon | z-solution | g-first | v-tell
+
 *Ululon names solution 1.*
 :::
 
@@ -295,6 +305,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zululon hual vuwurul harogul.`
+
 z-Ululon | h-always | v-write | h-COMMON
 :::
 
@@ -302,6 +313,7 @@ z-Ululon | h-always | v-write | h-COMMON
 
 ::: details Show answer
 `zazawan hual vajul habulul.`
+
 z-Azawan | h-always | v-sit | h-UNCOUNTERED
 :::
 
@@ -309,6 +321,7 @@ z-Azawan | h-always | v-sit | h-UNCOUNTERED
 
 ::: details Show answer
 `zual gabogol harazal.`
+
 z-everything-but | g-book | h-FORMAL
 :::
 
@@ -316,6 +329,7 @@ z-everything-but | g-book | h-FORMAL
 
 ::: details Show answer
 `zuhubun hual vuduhul habelel habawam.`
+
 z-Uhubun | h-always | v-think | h-NATURAL | h-PATTERN
 :::
 
@@ -323,6 +337,7 @@ z-Uhubun | h-always | v-think | h-NATURAL | h-PATTERN
 
 ::: details Show answer
 `zululon hual vubunul hebebel bahalan.`
+
 z-Ululon | h-always | v-punch | h-RULE | b-Ahalan
 :::
 
@@ -330,6 +345,7 @@ z-Ululon | h-always | v-punch | h-RULE | b-Ahalan
 
 ::: details Show answer
 `zuam gedemam harogul.`
+
 z-everything-but.open | g-claim | h-COMMON
 :::
 
@@ -340,6 +356,7 @@ z-everything-but.open | g-claim | h-COMMON
 ::: details Show answer
 
 z-Azawan | h-always | v-sit | h-COMMON
+
 *Azawan always sits, usually.*
 :::
 
@@ -348,6 +365,7 @@ z-Azawan | h-always | v-sit | h-COMMON
 ::: details Show answer
 
 z-Ululon | h-always | v-write | h-UNCOUNTERED
+
 *Ululon always writes, as far as checked.*
 :::
 
@@ -356,6 +374,7 @@ z-Ululon | h-always | v-write | h-UNCOUNTERED
 ::: details Show answer
 
 z-everything-but | g-intellect | h-FORMAL
+
 *Every intellect, by definition.*
 :::
 
@@ -372,6 +391,7 @@ z-Uhubun | h-always | v-write | h-NATURAL | h-PATTERN
 ::: details Show answer
 
 z-Ululon | h-always | v-scream | h-RULE | b-Ahalan
+
 *Ululon always screams, under school.*
 :::
 
@@ -380,6 +400,7 @@ z-Ululon | h-always | v-scream | h-RULE | b-Ahalan
 ::: details Show answer
 
 z-everything-but.open | g-proof | h-COMMON
+
 *Every proof that comes to mind, usually.*
 :::
 

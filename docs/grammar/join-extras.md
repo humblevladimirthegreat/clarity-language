@@ -103,6 +103,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan dalalom van.`
+
 z-Azawan | d-start | v-includes
 :::
 
@@ -110,6 +111,7 @@ z-Azawan | d-start | v-includes
 
 ::: details Show answer
 `zegedam gan buhubun.`
+
 z-finish | g-including | b-Uhubun
 :::
 
@@ -117,6 +119,7 @@ z-finish | g-including | b-Uhubun
 
 ::: details Show answer
 `zazawan dahanal von.`
+
 z-Azawan | d-hand | v-choose
 :::
 
@@ -124,6 +127,7 @@ z-Azawan | d-hand | v-choose
 
 ::: details Show answer
 `zululon han buhubun vurunul.`
+
 z-Ululon | h-including | b-Uhubun | v-run
 :::
 
@@ -131,6 +135,7 @@ z-Ululon | h-including | b-Uhubun | v-run
 
 ::: details Show answer
 `zazawan demedal vuan.`
+
 z-Azawan | d-medal | v-excludes
 :::
 
@@ -138,6 +143,7 @@ z-Azawan | d-medal | v-excludes
 
 ::: details Show answer
 `zahadam gon buhubun.`
+
 z-teamwork | g-exclusive-for | b-Uhubun
 :::
 
@@ -145,6 +151,7 @@ z-teamwork | g-exclusive-for | b-Uhubun
 
 ::: details Show answer
 `zululon degedam vuon.`
+
 z-Ululon | d-finish | v-bars
 :::
 
@@ -152,6 +159,7 @@ z-Ululon | d-finish | v-bars
 
 ::: details Show answer
 `zululon hun bahanal vubunul.`
+
 z-Ululon | h-against | b-hand | v-punch
 :::
 
@@ -162,6 +170,7 @@ z-Ululon | h-against | b-hand | v-punch
 ::: details Show answer
 
 z-Uhubun | d-start | v-includes
+
 *Uhubun includes the start.*
 :::
 
@@ -170,6 +179,7 @@ z-Uhubun | d-start | v-includes
 ::: details Show answer
 
 z-finish | g-without | b-medal
+
 *Finish without the medal.*
 :::
 
@@ -178,6 +188,7 @@ z-finish | g-without | b-medal
 ::: details Show answer
 
 z-Ululon | d-trophy | v-choose
+
 *Ululon chooses the trophy (as the one choice).*
 :::
 
@@ -186,6 +197,7 @@ z-Ululon | d-trophy | v-choose
 ::: details Show answer
 
 z-Azawan | h-including | b-Ululon | v-run
+
 *Azawan runs with Ululon.*
 :::
 
@@ -194,6 +206,7 @@ z-Azawan | h-including | b-Ululon | v-run
 ::: details Show answer
 
 z-teamwork | g-including | b-Azawan
+
 *A team including Azawan.*
 :::
 
@@ -202,6 +215,7 @@ z-teamwork | g-including | b-Azawan
 ::: details Show answer
 
 z-Azawan | h-against | b-lie | v-run
+
 *Azawan runs, refusing a lie.*
 :::
 
@@ -210,6 +224,7 @@ z-Azawan | h-against | b-lie | v-run
 ::: details Show answer
 
 z-teamwork | g-open-to | b-Azawan
+
 *A team open to Azawan (more members may follow).*
 :::
 
@@ -218,6 +233,7 @@ z-teamwork | g-open-to | b-Azawan
 ::: details Show answer
 
 z-Ululon | h-anything-but | b-Uhubun | v-scream
+
 *Ululon screams, barring Uhubun.*
 :::
 

@@ -180,6 +180,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `huhuhel.`
+
 h-survival
 :::
 
@@ -187,6 +188,7 @@ h-survival
 
 ::: details Show answer
 `zedenel wuhuhexal.`
+
 z-tent | w-survival-met-physical
 :::
 
@@ -194,6 +196,7 @@ z-tent | w-survival-met-physical
 
 ::: details Show answer
 `zababal wolozoxam.`
+
 z-backpack | w-competence-met-mental
 :::
 
@@ -201,6 +204,7 @@ z-backpack | w-competence-met-mental
 
 ::: details Show answer
 `zuwudul wonogoxur.`
+
 z-wind | w-relatedness-unmet-temporary
 :::
 
@@ -208,6 +212,7 @@ z-wind | w-relatedness-unmet-temporary
 
 ::: details Show answer
 `zazawan vezehel honogoxom.`
+
 z-Azawan | v-tell | h-relatedness-ought-endorse
 :::
 
@@ -215,6 +220,7 @@ z-Azawan | v-tell | h-relatedness-ought-endorse
 
 ::: details Show answer
 `zuhubun velebel haweroxom.`
+
 z-Uhubun | v-sleep | h-pleasure-ought-endorse
 :::
 
@@ -222,6 +228,7 @@ z-Uhubun | v-sleep | h-pleasure-ought-endorse
 
 ::: details Show answer
 `zululon vazagal huhuhexol.`
+
 z-Ululon | v-scream | h-survival-ought-bound
 :::
 
@@ -229,6 +236,7 @@ z-Ululon | v-scream | h-survival-ought-bound
 
 ::: details Show answer
 `zurel wuhuhexul.`
+
 z-fire | w-survival-unmet-irreversible
 :::
 
@@ -239,6 +247,7 @@ z-fire | w-survival-unmet-irreversible
 ::: details Show answer
 
 h-need
+
 *Unspecified need (as a topic).*
 :::
 
@@ -247,6 +256,7 @@ h-need
 ::: details Show answer
 
 z-flashlight | w-competence-met-physical
+
 *The flashlight serves competence (physical contact).*
 :::
 
@@ -255,6 +265,7 @@ z-flashlight | w-competence-met-physical
 ::: details Show answer
 
 z-rain | w-autonomy-unmet-modifiable
+
 *The rain costs autonomy (modifiable).*
 :::
 
@@ -263,6 +274,7 @@ z-rain | w-autonomy-unmet-modifiable
 ::: details Show answer
 
 z-tent | w-survival-met-spiritual
+
 *The tent serves survival (spiritual contact).*
 :::
 
@@ -271,6 +283,7 @@ z-tent | w-survival-met-spiritual
 ::: details Show answer
 
 z-Ululon | v-tell | h-relatedness-ought-invite
+
 *Ululon tells: relatedness ought to be served (invite).*
 :::
 
@@ -279,6 +292,7 @@ z-Ululon | v-tell | h-relatedness-ought-invite
 ::: details Show answer
 
 z-backpack | w-competence-unmet-irreversible
+
 *The backpack costs competence (irreversible).*
 :::
 
@@ -287,6 +301,7 @@ z-backpack | w-competence-unmet-irreversible
 ::: details Show answer
 
 z-Uhubun | v-scream | h-survival-ought-invite
+
 *Uhubun screams: survival ought to be protected (invite).*
 :::
 
@@ -295,6 +310,7 @@ z-Uhubun | v-scream | h-survival-ought-invite
 ::: details Show answer
 
 z-fire | w-autonomy-unmet-irreversible
+
 *The fire costs autonomy (irreversible).*
 :::
 
@@ -391,6 +407,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan vabal honogoxem.`
+
 z-Azawan | v-pray | h-relatedness-motive-internal
 :::
 
@@ -398,6 +415,7 @@ z-Azawan | v-pray | h-relatedness-motive-internal
 
 ::: details Show answer
 `zululon vegenel honogoxel.`
+
 z-Ululon | v-kneel | h-relatedness-motive-circumstantial
 :::
 
@@ -405,6 +423,7 @@ z-Ululon | v-kneel | h-relatedness-motive-circumstantial
 
 ::: details Show answer
 `zuhubun vuzuhul honogoxem hual.`
+
 z-Uhubun | v-shush | h-relatedness-motive-internal | h-always-except
 :::
 
@@ -412,6 +431,7 @@ z-Uhubun | v-shush | h-relatedness-motive-internal | h-always-except
 
 ::: details Show answer
 `zazawan vobowol honogoxer.`
+
 z-Azawan | v-bow | h-relatedness-motive-protective
 :::
 
@@ -419,6 +439,7 @@ z-Azawan | v-bow | h-relatedness-motive-protective
 
 ::: details Show answer
 `zululon vabal holozoxem.`
+
 z-Ululon | v-pray | h-competence-motive-internal
 :::
 
@@ -426,6 +447,7 @@ z-Ululon | v-pray | h-competence-motive-internal
 
 ::: details Show answer
 `zuhurul guhurum bazawan wonogoxal.`
+
 z-church | g-faith | b-Azawan | w-relatedness-met-physical
 :::
 
@@ -433,6 +455,7 @@ z-church | g-faith | b-Azawan | w-relatedness-met-physical
 
 ::: details Show answer
 `zazawan vabal holozoxal honogoxem.`
+
 z-Azawan | v-pray | h-competence-met-physical | h-relatedness-motive-internal
 :::
 
@@ -440,6 +463,7 @@ z-Azawan | v-pray | h-competence-met-physical | h-relatedness-motive-internal
 
 ::: details Show answer
 `zululon vazagal huhuhexol huhuhexel.`
+
 z-Ululon | v-scream | h-survival-ought-bound | h-survival-motive-circumstantial
 :::
 
@@ -450,6 +474,7 @@ z-Ululon | v-scream | h-survival-ought-bound | h-survival-motive-circumstantial
 ::: details Show answer
 
 z-Ululon | v-pray | h-competence-motive-circumstantial
+
 *Ululon prays for competence (circumstantial motive).*
 :::
 
@@ -458,6 +483,7 @@ z-Ululon | v-pray | h-competence-motive-circumstantial
 ::: details Show answer
 
 z-Uhubun | v-kneel | h-relatedness-motive-internal
+
 *Uhubun kneels for relatedness (internal reason).*
 :::
 
@@ -466,6 +492,7 @@ z-Uhubun | v-kneel | h-relatedness-motive-internal
 ::: details Show answer
 
 z-Azawan | v-shush | h-relatedness-motive-protective
+
 *Azawan whispers for relatedness (protective motive).*
 :::
 
@@ -474,6 +501,7 @@ z-Azawan | v-shush | h-relatedness-motive-protective
 ::: details Show answer
 
 z-prayer-bead | w-pleasure-met-spiritual
+
 *The prayer bead serves pleasure (spiritual contact).*
 :::
 
@@ -482,6 +510,7 @@ z-prayer-bead | w-pleasure-met-spiritual
 ::: details Show answer
 
 z-candle | w-autonomy-unmet-modifiable
+
 *The candle costs autonomy (modifiable).*
 :::
 
@@ -490,6 +519,7 @@ z-candle | w-autonomy-unmet-modifiable
 ::: details Show answer
 
 z-bell | w-relatedness-unmet-modifiable
+
 *The bell costs relatedness (modifiable).*
 :::
 
@@ -498,6 +528,7 @@ z-bell | w-relatedness-unmet-modifiable
 ::: details Show answer
 
 z-Uhubun | v-bow | h-relatedness-ought-endorse
+
 *Uhubun bows: relatedness ought to be served (endorse).*
 :::
 
@@ -506,6 +537,7 @@ z-Uhubun | v-bow | h-relatedness-ought-endorse
 ::: details Show answer
 
 z-Ululon | v-scream | h-survival-motive-internal | h-always-except
+
 *Ululon screams for survival (internal motive, as usual).*
 :::
 

@@ -17,7 +17,7 @@
     "dev": "node scripts/fetch-kitten-tts.mjs && vitepress dev docs/grammar",
     "typecheck": "tsc --noEmit",
     "lint:agalan": "tsx scripts/lint-agalan-docs.ts",
-    "docs:build": "node scripts/lint-md-balance.mjs && tsx scripts/lint-agalan-docs.ts && eslint docs/grammar/.vitepress/components && npm run docs:publish",
+    "docs:build": "node scripts/lint-md-balance.mjs && tsx scripts/pad-exercise-spoiler-blanks.ts && tsx scripts/lint-agalan-docs.ts && eslint docs/grammar/.vitepress/components && npm run docs:publish",
     "docs:publish": "node scripts/fetch-kitten-tts.mjs && vitepress build docs/grammar && tsx scripts/publish-docs-extras.mjs",
     "docs:preview": "vitepress preview docs/grammar",
     "fetch:tts": "node scripts/fetch-kitten-tts.mjs",

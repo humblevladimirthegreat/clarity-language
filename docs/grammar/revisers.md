@@ -143,6 +143,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zaladelx al zaladal.`
+
 z-plate-x | including | z-salad
 :::
 
@@ -150,6 +151,7 @@ z-plate-x | including | z-salad
 
 ::: details Show answer
 `daberel ol duwunel.`
+
 d-beer | instead | d-wine
 :::
 
@@ -157,6 +159,7 @@ d-beer | instead | d-wine
 
 ::: details Show answer
 `zaladelx ul zululon.`
+
 z-plate-x | except | z-Ululon
 :::
 
@@ -164,6 +167,7 @@ z-plate-x | except | z-Ululon
 
 ::: details Show answer
 `al zazawan vogogol.`
+
 additionally | z-Azawan | v-cook
 :::
 
@@ -171,6 +175,7 @@ additionally | z-Azawan | v-cook
 
 ::: details Show answer
 `zaladel zaladal zam.`
+
 z-plate | z-salad | z-and.open
 :::
 
@@ -178,6 +183,7 @@ z-plate | z-salad | z-and.open
 
 ::: details Show answer
 `zuwunel garedel el gelulul.`
+
 z-wine | g-red | rather | g-blue
 :::
 
@@ -185,6 +191,7 @@ z-wine | g-red | rather | g-blue
 
 ::: details Show answer
 `ol zululon vorurul duwunel.`
+
 instead | z-Ululon | v-pour | d-wine
 :::
 
@@ -192,6 +199,7 @@ instead | z-Ululon | v-pour | d-wine
 
 ::: details Show answer
 `ul zululon vubunul dazawan.`
+
 except | z-Ululon | v-punch | d-Azawan
 :::
 
@@ -202,6 +210,7 @@ except | z-Ululon | v-punch | d-Azawan
 ::: details Show answer
 
 z-plate-x | including.open | z-salad
+
 *The plates, including a salad and maybe more.*
 :::
 
@@ -210,6 +219,7 @@ z-plate-x | including.open | z-salad
 ::: details Show answer
 
 d-wine | instead | d-beer
+
 *Beer instead of wine.*
 :::
 
@@ -218,6 +228,7 @@ d-wine | instead | d-beer
 ::: details Show answer
 
 z-plate-x | except | z-Uhubun
+
 *The plates except Uhubun.*
 :::
 
@@ -226,6 +237,7 @@ z-plate-x | except | z-Uhubun
 ::: details Show answer
 
 additionally | z-Ululon | v-cook
+
 *Additionally, Ululon cooks.*
 :::
 
@@ -234,6 +246,7 @@ additionally | z-Ululon | v-cook
 ::: details Show answer
 
 rather | z-Ululon | v-pour | d-wine
+
 *In other words, Ululon pours wine.*
 :::
 
@@ -242,6 +255,7 @@ rather | z-Ululon | v-pour | d-wine
 ::: details Show answer
 
 except | z-Azawan | v-sit
+
 *Except, Azawan sits.*
 :::
 
@@ -250,6 +264,7 @@ except | z-Azawan | v-sit
 ::: details Show answer
 
 instead | z-Uhubun | v-see | d-plate
+
 *Instead, Uhubun sees the plate.*
 :::
 
@@ -258,6 +273,7 @@ instead | z-Uhubun | v-see | d-plate
 ::: details Show answer
 
 instead | z-Ululon | v-fight | d-Azawan
+
 *Instead, Ululon fights Azawan.*
 :::
 
@@ -389,6 +405,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zenewel am zazawan ul zululon.`
+
 z-newspaper | including.open | z-Azawan | except | z-Ululon
 :::
 
@@ -396,6 +413,7 @@ z-newspaper | including.open | z-Azawan | except | z-Ululon
 
 ::: details Show answer
 `zenewel an zazawan.`
+
 z-newspaper | including.named | z-Azawan
 :::
 
@@ -403,6 +421,7 @@ z-newspaper | including.named | z-Azawan
 
 ::: details Show answer
 `dajel om denewel.`
+
 d-page | instead.open | d-newspaper
 :::
 
@@ -410,6 +429,7 @@ d-page | instead.open | d-newspaper
 
 ::: details Show answer
 `zameral ol zaradul zajel zam.`
+
 z-camera | instead | z-radio | z-page | z-and.open
 :::
 
@@ -417,6 +437,7 @@ z-camera | instead | z-radio | z-page | z-and.open
 
 ::: details Show answer
 `jazawan al zululon vuwurul.`
+
 j-Azawan | additionally | z-Ululon | v-write
 :::
 
@@ -424,6 +445,7 @@ j-Azawan | additionally | z-Ululon | v-write
 
 ::: details Show answer
 `zazawan vuwurul al zululon vezehel xam.`
+
 z-Azawan | v-write | including | z-Ululon | v-tell | x-and.open
 :::
 
@@ -431,6 +453,7 @@ z-Azawan | v-write | including | z-Ululon | v-tell | x-and.open
 
 ::: details Show answer
 `al xezazal zuhubun vuwurul.`
+
 additionally | x-therefore | z-Uhubun | v-write
 :::
 
@@ -438,6 +461,7 @@ additionally | x-therefore | z-Uhubun | v-write
 
 ::: details Show answer
 `al jol zululon vululel?`
+
 additionally | j-question | z-Ululon | v-lie
 :::
 
@@ -448,6 +472,7 @@ additionally | j-question | z-Ululon | v-lie
 ::: details Show answer
 
 z-newspaper | including.open | z-Uhubun | except | z-Azawan
+
 *The newspaper, including Uhubun and maybe more, except Azawan.*
 :::
 
@@ -456,6 +481,7 @@ z-newspaper | including.open | z-Uhubun | except | z-Azawan
 ::: details Show answer
 
 d-page | on | d-newspaper
+
 *The stock page-to-newspaper swap.*
 :::
 
@@ -464,6 +490,7 @@ d-page | on | d-newspaper
 ::: details Show answer
 
 j-Uhubun | instead | z-Ululon | v-write
+
 *Uhubun: instead, Ululon writes.*
 :::
 
@@ -472,6 +499,7 @@ j-Uhubun | instead | z-Ululon | v-write
 ::: details Show answer
 
 z-newspaper | including.open | z-Azawan | including.open | z-Ululon
+
 *The newspaper, including Azawan and including Ululon, and maybe more.*
 :::
 
@@ -480,6 +508,7 @@ z-newspaper | including.open | z-Azawan | including.open | z-Ululon
 ::: details Show answer
 
 v-write | instead.open | v-tell
+
 *Wrote, with tell as a replacement.*
 :::
 
@@ -488,6 +517,7 @@ v-write | instead.open | v-tell
 ::: details Show answer
 
 z-newspaper | including.named | z-Uhubun | un | z-Ululon
+
 *The named newspaper, including Uhubun, and except Ululon from that named frame.*
 :::
 
@@ -496,6 +526,7 @@ z-newspaper | including.named | z-Uhubun | un | z-Ululon
 ::: details Show answer
 
 additionally | x-therefore | z-Ululon | v-tell
+
 *Additionally, therefore Ululon tells.*
 :::
 
@@ -504,6 +535,7 @@ additionally | x-therefore | z-Ululon | v-tell
 ::: details Show answer
 
 instead | j-question | z-Ululon | v-punch | d-Azawan
+
 *Instead, does Ululon punch Azawan?*
 :::
 

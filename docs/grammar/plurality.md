@@ -145,6 +145,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawanx vajul.`
+
 z-Azawan-x | v-sit
 :::
 
@@ -152,6 +153,7 @@ z-Azawan-x | v-sit
 
 ::: details Show answer
 `zanadalx vajul.`
+
 z-ant-x | v-sit
 :::
 
@@ -159,6 +161,7 @@ z-ant-x | v-sit
 
 ::: details Show answer
 `zazawanx dazegel vejel.`
+
 z-Azawan-x | d-basket | v-see
 :::
 
@@ -166,6 +169,7 @@ z-Azawan-x | d-basket | v-see
 
 ::: details Show answer
 `zululonx duhubun vejel.`
+
 z-Ululon-x | d-Uhubun | v-see
 :::
 
@@ -173,6 +177,7 @@ z-Ululon-x | d-Uhubun | v-see
 
 ::: details Show answer
 `zazawarx duwunel vorurul.`
+
 z-←Azawan-x | d-wine | v-pour
 :::
 
@@ -180,6 +185,7 @@ z-←Azawan-x | d-wine | v-pour
 
 ::: details Show answer
 `zululonx vazanal.`
+
 z-Ululon-x | v-sneak
 :::
 
@@ -187,6 +193,7 @@ z-Ululon-x | v-sneak
 
 ::: details Show answer
 `zululonx dazawan vubunul.`
+
 z-Ululon-x | d-Azawan | v-punch
 :::
 
@@ -194,6 +201,7 @@ z-Ululon-x | d-Azawan | v-punch
 
 ::: details Show answer
 `jol zazawanx vazagal.`
+
 j-question | z-Azawan-x | v-scream
 :::
 
@@ -204,6 +212,7 @@ j-question | z-Azawan-x | v-scream
 ::: details Show answer
 
 z-Uhubun-x | v-sit
+
 *Uhubun and associates sit.*
 :::
 
@@ -212,6 +221,7 @@ z-Uhubun-x | v-sit
 ::: details Show answer
 
 z-Azawan-x | d-sandwich | v-see
+
 *Azawan and associates see a sandwich.*
 :::
 
@@ -220,6 +230,7 @@ z-Azawan-x | d-sandwich | v-see
 ::: details Show answer
 
 z-ant-x | v-run
+
 *Some ants run.*
 :::
 
@@ -228,6 +239,7 @@ z-ant-x | v-run
 ::: details Show answer
 
 z-interlocutors | d-basket | v-see
+
 *We (you and I) see a basket.*
 :::
 
@@ -236,6 +248,7 @@ z-interlocutors | d-basket | v-see
 ::: details Show answer
 
 z-Ululon-x | d-Azawan | v-tell
+
 *Ululon tells Azawan and associates.*
 :::
 
@@ -244,6 +257,7 @@ z-Ululon-x | d-Azawan | v-tell
 ::: details Show answer
 
 z-←Azawan-x | d-knife | v-see
+
 *They (Azawan and associates) see a knife.*
 :::
 
@@ -252,6 +266,7 @@ z-←Azawan-x | d-knife | v-see
 ::: details Show answer
 
 z-Ululon-x | d-Uhubun | v-punch
+
 *Ululon and associates punch Uhubun.*
 :::
 
@@ -260,6 +275,7 @@ z-Ululon-x | d-Uhubun | v-punch
 ::: details Show answer
 
 j-question | z-Uhubun-x | v-scream
+
 *Do Uhubun and associates scream?*
 :::
 
@@ -419,6 +435,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `juzunulx.`
+
 j-sing-x
 :::
 
@@ -426,6 +443,7 @@ j-sing-x
 
 ::: details Show answer
 `zeduzulx gelulul.`
+
 z-sheet-music-x | g-blue
 :::
 
@@ -433,6 +451,7 @@ z-sheet-music-x | g-blue
 
 ::: details Show answer
 `zazawanx vuzunul.`
+
 z-Azawan-x | v-sing
 :::
 
@@ -440,6 +459,7 @@ z-Azawan-x | v-sing
 
 ::: details Show answer
 `zazawan vuzunulx.`
+
 z-Azawan | v-sing-x
 :::
 
@@ -447,6 +467,7 @@ z-Azawan | v-sing-x
 
 ::: details Show answer
 `zazawan zululon zal vuzunulx.`
+
 z-Azawan | z-Ululon | z-and | v-sing-x
 :::
 
@@ -454,6 +475,7 @@ z-Azawan | z-Ululon | z-and | v-sing-x
 
 ::: details Show answer
 `zobelelx garagamx.`
+
 z-bell-x | g-heavy-x
 :::
 
@@ -461,6 +483,7 @@ z-bell-x | g-heavy-x
 
 ::: details Show answer
 `zululonx vazanalx.`
+
 z-Ululon-x | v-sneak-x
 :::
 
@@ -468,6 +491,7 @@ z-Ululon-x | v-sneak-x
 
 ::: details Show answer
 `zululonx dazawan vubunulx.`
+
 z-Ululon-x | d-Azawan | v-punch-x
 :::
 
@@ -478,6 +502,7 @@ z-Ululon-x | d-Azawan | v-punch-x
 ::: details Show answer
 
 j-Uhubun-x
+
 *Hey, Uhubun and associates!*
 :::
 
@@ -502,6 +527,7 @@ z-Uhubun-x | v-sing
 ::: details Show answer
 
 z-Ululon | v-sing-x
+
 *Ululon sings jointly (not a solo).*
 :::
 
@@ -510,6 +536,7 @@ z-Ululon | v-sing-x
 ::: details Show answer
 
 z-Azawan-x | v-sing-x
+
 *Azawan and associates sing as one outing.*
 :::
 
@@ -518,6 +545,7 @@ z-Azawan-x | v-sing-x
 ::: details Show answer
 
 z-bell-x | g-blue
+
 *The bells are blue.*
 :::
 
@@ -526,6 +554,7 @@ z-bell-x | g-blue
 ::: details Show answer
 
 j-Azawan-x
+
 *Hey, Azawan and associates!*
 :::
 
@@ -534,6 +563,7 @@ j-Azawan-x
 ::: details Show answer
 
 z-Ululon-x | v-fight-x
+
 *Ululon and associates fight as one outing.*
 :::
 

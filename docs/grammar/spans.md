@@ -166,6 +166,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan d[azawan] vezehel.`
+
 z-Azawan | d-Azawan | v-tell
 :::
 
@@ -173,6 +174,7 @@ z-Azawan | d-Azawan | v-tell
 
 ::: details Show answer
 `zululon d~[zazawan vuzunul] vuwurul.`
+
 z-Ululon | d-cite | z-Azawan | v-sing | v-write
 :::
 
@@ -180,6 +182,7 @@ z-Ululon | d-cite | z-Azawan | v-sing | v-write
 
 ::: details Show answer
 `z{uzugo} gumuzem.`
+
 z-uzugo | g-small
 :::
 
@@ -193,6 +196,7 @@ z-uzugo | g-small
 
 ::: details Show answer
 `zuhubun d@[uzugon] vuzunul.`
+
 z-Uhubun | d-Uzugon | v-sing
 :::
 
@@ -200,6 +204,7 @@ z-Uhubun | d-Uzugon | v-sing
 
 ::: details Show answer
 `zazawan vezehel h(huzumum).`
+
 z-Azawan | v-tell | h-happy
 :::
 
@@ -207,6 +212,7 @@ z-Azawan | v-tell | h-happy
 
 ::: details Show answer
 `jul zululon v[vozodol].`
+
 j-prohibition | z-Ululon | v-stop
 :::
 
@@ -214,6 +220,7 @@ j-prohibition | z-Ululon | v-stop
 
 ::: details Show answer
 `jol zululon d[=] vezehel.`
+
 j-question | z-Ululon | d-←cite | v-tell
 :::
 
@@ -230,6 +237,7 @@ j-question | z-Ululon | d-←cite | v-tell
 ::: details Show answer
 
 z-Azawan | d-uzugo | v-tell
+
 *Azawan said the word “melody.”*
 :::
 
@@ -238,6 +246,7 @@ z-Azawan | d-uzugo | v-tell
 ::: details Show answer
 
 z-Uhubun | d-uzugo | v-write
+
 *Uhubun wrote the title Uzugon.*
 :::
 
@@ -246,6 +255,7 @@ z-Uhubun | d-uzugo | v-write
 ::: details Show answer
 
 z-uzugo | g-small
+
 *The word “melody” is small.*
 :::
 
@@ -266,6 +276,7 @@ z-uzugo | g-small
 ::: details Show answer
 
 z-Ululon | v-tell | h- | z-Azawan | v-sing
+
 *Ululon tells (Azawan sings).*
 :::
 
@@ -274,6 +285,7 @@ z-Ululon | v-tell | h- | z-Azawan | v-sing
 ::: details Show answer
 
 j-question | z-Uhubun | d-←cite | v-tell
+
 *Uhubun said that?!*
 :::
 
@@ -468,6 +480,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan daxol azawan vezehel.`
+
 z-Azawan | d-cite-x-atomic | Azawan | v-tell
 :::
 
@@ -475,6 +488,7 @@ z-Azawan | d-cite-x-atomic | Azawan | v-tell
 
 ::: details Show answer
 `zululon daxal zazawan vadezel xuxul vezehel.`
+
 z-Ululon | d-cite-x-multi | z-Azawan | v-attest | x-span-close | v-tell
 :::
 
@@ -482,6 +496,7 @@ z-Ululon | d-cite-x-multi | z-Azawan | v-attest | x-span-close | v-tell
 
 ::: details Show answer
 `zuhubun daxur vezehel.`
+
 z-Uhubun | d-cite-x-empty | v-tell
 :::
 
@@ -489,6 +504,7 @@ z-Uhubun | d-cite-x-empty | v-tell
 
 ::: details Show answer
 `zazawan daxul vezehel.`
+
 z-Azawan | d-cite-x-empty | v-tell
 :::
 
@@ -496,6 +512,7 @@ z-Azawan | d-cite-x-empty | v-tell
 
 ::: details Show answer
 `zululon duxol FBI vejel.`
+
 z-Ululon | d-opaque-x-atomic | FBI | v-see
 :::
 
@@ -503,6 +520,7 @@ z-Ululon | d-opaque-x-atomic | FBI | v-see
 
 ::: details Show answer
 `zazawan d[ h(huzumum) azawan ] vezehel.`
+
 z-Azawan | d-cite | h-aside | h-happy | Azawan | v-tell
 :::
 
@@ -510,6 +528,7 @@ z-Azawan | d-cite | h-aside | h-happy | Azawan | v-tell
 
 ::: details Show answer
 `zazawan ^ huzurem dululel ^ vejel.`
+
 z-Azawan | h-possibility | d-lie | v-see
 :::
 
@@ -517,6 +536,7 @@ z-Azawan | h-possibility | d-lie | v-see
 
 ::: details Show answer
 `zululon ^ zazawan zal ^ zam vubunul.`
+
 z-Ululon | z-Azawan | z-and | z-and.open | v-punch
 :::
 
@@ -535,6 +555,7 @@ z-Ululon | d-cite-x-clause | Azawan
 ::: details Show answer
 
 z-Azawan | d-cite-x-multi | z-Azawan | v-attest | x-span-close | v-tell
+
 *Azawan said something like “Azawan attests.”*
 :::
 
@@ -543,6 +564,7 @@ z-Azawan | d-cite-x-multi | z-Azawan | v-attest | x-span-close | v-tell
 ::: details Show answer
 
 z-cite-x-empty | g-small
+
 *That (cite) is small.*
 :::
 
@@ -551,6 +573,7 @@ z-cite-x-empty | g-small
 ::: details Show answer
 
 z-Uhubun | d-cite-x-atomic | Ujudun | v-tell
+
 *Uhubun said “Ujudu.”*
 :::
 
@@ -559,6 +582,7 @@ z-Uhubun | d-cite-x-atomic | Ujudun | v-tell
 ::: details Show answer
 
 z-Azawan | v-tell | h-aside-x-atomic | h-happy
+
 *Azawan tells (happily).*
 :::
 
@@ -567,6 +591,7 @@ z-Azawan | v-tell | h-aside-x-atomic | h-happy
 ::: details Show answer
 
 z-Ululon | d-cite | z-mention | z-ujudu | v-tell
+
 *Ululon said the word “judge.”*
 :::
 
@@ -575,6 +600,7 @@ z-Ululon | d-cite | z-mention | z-ujudu | v-tell
 ::: details Show answer
 
 z-Ululon | h-possibility | d-lie | v-see
+
 *Ululon saw, as a possibility, the lie.*
 :::
 
@@ -583,6 +609,7 @@ z-Ululon | h-possibility | d-lie | v-see
 ::: details Show answer
 
 z-Ujudun | v-scream
+
 *The Judge screamed.*
 :::
 
@@ -698,6 +725,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zuhubun daxal abugum xuxul vezehel.`
+
 z-Uhubun | d-cite-x-multi | flaw | x-span-close | v-tell
 :::
 
@@ -705,6 +733,7 @@ z-Uhubun | d-cite-x-multi | flaw | x-span-close | v-tell
 
 ::: details Show answer
 `zululon daxal abugum xuxur vezehel.`
+
 z-Ululon | d-cite-x-multi | flaw | x-span-close-editorial | v-tell
 :::
 
@@ -712,6 +741,7 @@ z-Ululon | d-cite-x-multi | flaw | x-span-close-editorial | v-tell
 
 ::: details Show answer
 `zazawan daxal hexol huzumum abugum xuxum vezehel.`
+
 z-Azawan | d-cite-x-multi | h-aside-x-atomic | h-happy | flaw | x-span-close-all | v-tell
 :::
 
@@ -725,6 +755,7 @@ z-Azawan | d-cite-x-multi | h-aside-x-atomic | h-happy | flaw | x-span-close-all
 
 ::: details Show answer
 `zuhubun duxal code > 1 xuxul vezehel.`
+
 z-Uhubun | d-opaque-x-multi | code | > | 1 | x-span-close | v-tell
 :::
 
@@ -735,6 +766,7 @@ z-Uhubun | d-opaque-x-multi | code | > | 1 | x-span-close | v-tell
 ::: details Show answer
 
 z-Azawan | d-abugum# | v-tell
+
 *Azawan said “bug…”*
 :::
 
@@ -743,6 +775,7 @@ z-Azawan | d-abugum# | v-tell
 ::: details Show answer
 
 z-Ululon | d-cite-x-multi | flaw | x-span-close-editorial | x-span-close-all | v-tell
+
 *Ululon said “bug…”*
 :::
 
@@ -751,6 +784,7 @@ z-Ululon | d-cite-x-multi | flaw | x-span-close-editorial | x-span-close-all | v
 ::: details Show answer
 
 z-Azawan | d-cite-x-multi | d-opaque-x-atomic | xuxul | x-span-close | v-tell
+
 *Azawan said the word “xuxul.”*
 :::
 
@@ -765,6 +799,7 @@ z-Azawan | d-cite-x-multi | d-opaque-x-atomic | xuxul | x-span-close | v-tell
 ::: details Show answer
 
 z-Uhubun | d-abugum#| | v-tell
+
 *Uhubun said “bug…”*
 :::
 

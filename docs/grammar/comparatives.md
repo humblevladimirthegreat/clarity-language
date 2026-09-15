@@ -121,6 +121,7 @@ z-Azawan | z-Ululon | z-rank/more | g-agility
 
 ::: details Show answer
 `zuhubun zazawan zael ganalam.`
+
 z-Uhubun | z-Azawan | z-as…as | g-slow
 :::
 
@@ -128,6 +129,7 @@ z-Uhubun | z-Azawan | z-as…as | g-slow
 
 ::: details Show answer
 `zululon zel gadazam.`
+
 z-Ululon | z-rank/more | g-haste
 :::
 
@@ -135,6 +137,7 @@ z-Ululon | z-rank/more | g-haste
 
 ::: details Show answer
 `zazawan zuhubun zaem guvuvem.`
+
 z-Azawan | z-Uhubun | z-as…as.open | g-agility
 :::
 
@@ -142,6 +145,7 @@ z-Azawan | z-Uhubun | z-as…as.open | g-agility
 
 ::: details Show answer
 `zululon zazawan zel gohogem wogegal.`
+
 z-Ululon | z-Azawan | z-rank/more | g-intensity | w-ocean-wave
 :::
 
@@ -149,6 +153,7 @@ z-Ululon | z-Azawan | z-rank/more | g-intensity | w-ocean-wave
 
 ::: details Show answer
 `zuhubun zululon zel gadazam.`
+
 z-Uhubun | z-Ululon | z-rank/more | g-haste
 :::
 
@@ -156,6 +161,7 @@ z-Uhubun | z-Ululon | z-rank/more | g-haste
 
 ::: details Show answer
 `zululon zel gohogem.`
+
 z-Ululon | z-rank/more | g-intensity
 :::
 
@@ -166,6 +172,7 @@ z-Ululon | z-rank/more | g-intensity
 ::: details Show answer
 
 z-Ululon | z-Uhubun | z-rank/more | g-agility
+
 *Ululon is more agile than Uhubun.*
 :::
 
@@ -174,6 +181,7 @@ z-Ululon | z-Uhubun | z-rank/more | g-agility
 ::: details Show answer
 
 z-Uhubun | z-rank/more | g-agility
+
 *Uhubun is the most agile.*
 :::
 
@@ -182,6 +190,7 @@ z-Uhubun | z-rank/more | g-agility
 ::: details Show answer
 
 z-Ululon | z-Uhubun | z-as…as | g-haste
+
 *Ululon is as hasty as Uhubun.*
 :::
 
@@ -190,6 +199,7 @@ z-Ululon | z-Uhubun | z-as…as | g-haste
 ::: details Show answer
 
 z-Uhubun | z-Azawan | z-as…as.open | g-intensity
+
 *Uhubun is about as intense as Azawan.*
 :::
 
@@ -198,6 +208,7 @@ z-Uhubun | z-Azawan | z-as…as.open | g-intensity
 ::: details Show answer
 
 z-Uhubun | z-Ululon | z-rank/more | g-agility | w-ocean-wave
+
 *Uhubun is much more agile than Ululon.*
 :::
 
@@ -206,6 +217,7 @@ z-Uhubun | z-Ululon | z-rank/more | g-agility | w-ocean-wave
 ::: details Show answer
 
 z-Azawan | z-Ululon | z-rank/more | g-haste
+
 *Azawan is hastier than Ululon.*
 :::
 
@@ -214,6 +226,7 @@ z-Azawan | z-Ululon | z-rank/more | g-haste
 ::: details Show answer
 
 z-Azawan | z-rank/more | g-slow
+
 *Azawan is the slowest.*
 :::
 
@@ -338,6 +351,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 
 ::: details Show answer
 `zazawan zululon zuel garagam.`
+
 z-Azawan | z-Ululon | z-rank/less | g-heavy
 :::
 
@@ -345,6 +359,7 @@ z-Azawan | z-Ululon | z-rank/less | g-heavy
 
 ::: details Show answer
 `zululon zuel gewewum.`
+
 z-Ululon | z-rank/less | g-exertion
 :::
 
@@ -352,6 +367,7 @@ z-Ululon | z-rank/less | g-exertion
 
 ::: details Show answer
 `zoel garagam.`
+
 z-ranked-or | g-heavy
 :::
 
@@ -359,6 +375,7 @@ z-ranked-or | g-heavy
 
 ::: details Show answer
 `zazawan zuhubun zal garagam.`
+
 z-Azawan | z-Uhubun | z-and | g-heavy
 :::
 
@@ -366,6 +383,7 @@ z-Azawan | z-Uhubun | z-and | g-heavy
 
 ::: details Show answer
 `zululon zazawan zel garagam bobonom g+2.`
+
 z-Ululon | z-Azawan | z-rank/more | g-heavy | b-gram | g-two
 :::
 
@@ -373,6 +391,7 @@ z-Ululon | z-Azawan | z-rank/more | g-heavy | b-gram | g-two
 
 ::: details Show answer
 `zazawan zululon zoel garagam.`
+
 z-Azawan | z-Ululon | z-ranked-or | g-heavy
 :::
 
@@ -380,6 +399,7 @@ z-Azawan | z-Ululon | z-ranked-or | g-heavy
 
 ::: details Show answer
 `zel gelem.`
+
 z-rank/more | g-big
 :::
 
@@ -387,6 +407,7 @@ z-rank/more | g-big
 
 ::: details Show answer
 `zazawan zululon zer garagam.`
+
 z-Azawan | z-Ululon | z-whatever-ranks | g-heavy
 :::
 
@@ -394,6 +415,7 @@ z-Azawan | z-Ululon | z-whatever-ranks | g-heavy
 
 ::: details Show answer
 `zululon zazawan zel hohogem vewewul.`
+
 z-Ululon | z-Azawan | z-rank/more | h-intensity | v-lift
 :::
 
@@ -404,6 +426,7 @@ z-Ululon | z-Azawan | z-rank/more | h-intensity | v-lift
 ::: details Show answer
 
 z-Azawan | z-Ululon | z-Uhubun | z-rank/more.open | g-heavy
+
 *Azawan is heavier than Ululon, who is heavier than Uhubun.*
 :::
 
@@ -412,6 +435,7 @@ z-Azawan | z-Ululon | z-Uhubun | z-rank/more.open | g-heavy
 ::: details Show answer
 
 z-ranked-or.open | g-big
+
 *No biggest comes to mind.*
 :::
 
@@ -420,6 +444,7 @@ z-ranked-or.open | g-big
 ::: details Show answer
 
 z-Azawan | z-Ululon | z-whatever-ranks | g-exertion
+
 *Whichever of Azawan or Ululon ranks more exerted.*
 :::
 
@@ -428,6 +453,7 @@ z-Azawan | z-Ululon | z-whatever-ranks | g-exertion
 ::: details Show answer
 
 z-Ululon | z-Uhubun | z-and | g-exertion
+
 *Ululon and Uhubun are exerted.*
 :::
 
@@ -436,6 +462,7 @@ z-Ululon | z-Uhubun | z-and | g-exertion
 ::: details Show answer
 
 z-Azawan | z-Ululon | z-rank/more | g-heavy | b-gram | g-five
+
 *Azawan is five grams heavier than Ululon.*
 :::
 
@@ -444,6 +471,7 @@ z-Azawan | z-Ululon | z-rank/more | g-heavy | b-gram | g-five
 ::: details Show answer
 
 z-Uhubun | z-Azawan | z-rank/more | g-exertion | w-ocean-wave
+
 *Uhubun is much more exerted than Azawan.*
 :::
 
@@ -452,6 +480,7 @@ z-Uhubun | z-Azawan | z-rank/more | g-exertion | w-ocean-wave
 ::: details Show answer
 
 z-whatever-ranks | g-heavy
+
 *Whatever ranks heaviest.*
 :::
 
@@ -460,6 +489,7 @@ z-whatever-ranks | g-heavy
 ::: details Show answer
 
 z-Uhubun | z-rank/less | g-big
+
 *Uhubun is the smallest.*
 :::
 
@@ -468,6 +498,7 @@ z-Uhubun | z-rank/less | g-big
 ::: details Show answer
 
 z-Ululon | z-rank/more | h-intensity | v-lift
+
 *Ululon lifts the most intensely.*
 :::
 
@@ -547,6 +578,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 
 ::: details Show answer
 `zazawan zalaban zuel guzunul.`
+
 z-Azawan | z-Professional | z-rank/less | g-sing
 :::
 
@@ -554,6 +586,7 @@ z-Azawan | z-Professional | z-rank/less | g-sing
 
 ::: details Show answer
 `zazawan zugobon zuel guzunul.`
+
 z-Azawan | z-speaker | z-rank/less | g-sing
 :::
 
@@ -561,6 +594,7 @@ z-Azawan | z-speaker | z-rank/less | g-sing
 
 ::: details Show answer
 `zululon zahaman zuel gabadum.`
+
 z-Ululon | z-Typical | z-rank/less | g-artistry
 :::
 
@@ -568,6 +602,7 @@ z-Ululon | z-Typical | z-rank/less | g-artistry
 
 ::: details Show answer
 `zugobon zuroron zuel gohohom.`
+
 z-speaker | z-Mine | z-rank/less | g-showmanship
 :::
 
@@ -575,6 +610,7 @@ z-speaker | z-Mine | z-rank/less | g-showmanship
 
 ::: details Show answer
 `zululon zojun zuem guzunul.`
+
 z-Ululon | z-Average | z-rank/less.open | g-sing
 :::
 
@@ -582,6 +618,7 @@ z-Ululon | z-Average | z-rank/less.open | g-sing
 
 ::: details Show answer
 `zugobon zoloben zuel gabadum.`
+
 z-speaker | z-Everyone | z-rank/less | g-artistry
 :::
 
@@ -592,6 +629,7 @@ z-speaker | z-Everyone | z-rank/less | g-artistry
 ::: details Show answer
 
 z-speaker | z-Social | z-rank/less | g-sing
+
 *I am worse at singing than Social.*
 :::
 
@@ -600,6 +638,7 @@ z-speaker | z-Social | z-rank/less | g-sing
 ::: details Show answer
 
 z-speaker | z-Ululon | z-rank/less | g-showmanship
+
 *I am less showy than Ululon.*
 :::
 
@@ -608,6 +647,7 @@ z-speaker | z-Ululon | z-rank/less | g-showmanship
 ::: details Show answer
 
 z-Azawan | z-Mine | z-rank/less.open | g-artistry
+
 *Azawan is somewhat less artistic than Mine.*
 :::
 
@@ -616,6 +656,7 @@ z-Azawan | z-Mine | z-rank/less.open | g-artistry
 ::: details Show answer
 
 z-Uhubun | z-Professional | z-rank/less | g-sing
+
 *Uhubun is worse at singing than Professional.*
 :::
 
@@ -624,6 +665,7 @@ z-Uhubun | z-Professional | z-rank/less | g-sing
 ::: details Show answer
 
 z-Azawan | z-Average | z-rank/less.open | g-showmanship
+
 *Azawan is somewhat less showy than Average.*
 :::
 
@@ -632,6 +674,7 @@ z-Azawan | z-Average | z-rank/less.open | g-showmanship
 ::: details Show answer
 
 z-Ululon | z-Typical | z-rank/less | g-showmanship
+
 *Ululon is less showy than Typical.*
 :::
 

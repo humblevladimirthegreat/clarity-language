@@ -90,6 +90,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Tag **c
 
 ::: details Show answer
 `zazawan vugumuxal.`
+
 z-Azawan | v-climb-able
 :::
 
@@ -97,6 +98,7 @@ z-Azawan | v-climb-able
 
 ::: details Show answer
 `zululon vugumuxel.`
+
 z-Ululon | v-climb-unable-temporary
 :::
 
@@ -104,6 +106,7 @@ z-Ululon | v-climb-unable-temporary
 
 ::: details Show answer
 `zuhubun vazanuxol.`
+
 z-Uhubun | v-stand-unable-modifiable
 :::
 
@@ -111,6 +114,7 @@ z-Uhubun | v-stand-unable-modifiable
 
 ::: details Show answer
 `zazawan daragal vejexal.`
+
 z-Azawan | d-rock | v-see-able
 :::
 
@@ -118,6 +122,7 @@ z-Azawan | d-rock | v-see-able
 
 ::: details Show answer
 `zazawan vugumul.`
+
 z-Azawan | v-climb
 :::
 
@@ -125,6 +130,7 @@ z-Azawan | v-climb
 
 ::: details Show answer
 `zuhubun vazagaxel.`
+
 z-Uhubun | v-scream-unable-temporary
 :::
 
@@ -132,6 +138,7 @@ z-Uhubun | v-scream-unable-temporary
 
 ::: details Show answer
 `zululon vubunuxal.`
+
 z-Ululon | v-punch-able
 :::
 
@@ -139,6 +146,7 @@ z-Ululon | v-punch-able
 
 ::: details Show answer
 `zazawan vugumuxul.`
+
 z-Azawan | v-climb-unable-irreversible
 :::
 
@@ -149,6 +157,7 @@ z-Azawan | v-climb-unable-irreversible
 ::: details Show answer
 
 z-Uhubun | v-climb-able
+
 *Uhubun can climb.*
 :::
 
@@ -157,6 +166,7 @@ z-Uhubun | v-climb-able
 ::: details Show answer
 
 z-Azawan | v-stand-unable-temporary
+
 *Azawan can’t stand right now.*
 :::
 
@@ -165,6 +175,7 @@ z-Azawan | v-stand-unable-temporary
 ::: details Show answer
 
 z-Ululon | v-climb-unable-modifiable
+
 *Ululon can’t climb yet (that may change).*
 :::
 
@@ -173,6 +184,7 @@ z-Ululon | v-climb-unable-modifiable
 ::: details Show answer
 
 z-Uhubun | v-run-unable-irreversible
+
 *Uhubun can’t run (it’s fixed).*
 :::
 
@@ -181,6 +193,7 @@ z-Uhubun | v-run-unable-irreversible
 ::: details Show answer
 
 z-Ululon | v-lift-able
+
 *Ululon can lift.*
 :::
 
@@ -189,6 +202,7 @@ z-Ululon | v-lift-able
 ::: details Show answer
 
 z-Azawan | g-climb-able
+
 *Azawan can climb (as a property).*
 :::
 
@@ -197,6 +211,7 @@ z-Azawan | g-climb-able
 ::: details Show answer
 
 z-Ululon | v-force-able
+
 *Ululon can punch (metaphorical host sense).*
 :::
 
@@ -205,6 +220,7 @@ z-Ululon | v-force-able
 ::: details Show answer
 
 z-Uhubun | v-scream-unable-modifiable
+
 *Uhubun can’t scream yet (that may change).*
 :::
 
@@ -274,6 +290,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Pre
 
 ::: details Show answer
 `hegeraxel.`
+
 h-ABIL-unable-temporary
 :::
 
@@ -281,6 +298,7 @@ h-ABIL-unable-temporary
 
 ::: details Show answer
 `zazawan hegeraxel.`
+
 z-Azawan | h-ABIL-unable-temporary
 :::
 
@@ -288,6 +306,7 @@ z-Azawan | h-ABIL-unable-temporary
 
 ::: details Show answer
 `hegeraxol.`
+
 h-ABIL-unable-modifiable
 :::
 
@@ -295,6 +314,7 @@ h-ABIL-unable-modifiable
 
 ::: details Show answer
 `hegeral.`
+
 h-cereal
 :::
 
@@ -302,6 +322,7 @@ h-cereal
 
 ::: details Show answer
 `zazawan hegeraxal.`
+
 z-Azawan | h-ABIL-able
 :::
 
@@ -309,6 +330,7 @@ z-Azawan | h-ABIL-able
 
 ::: details Show answer
 `zululon gologel wegeraxel.`
+
 z-Ululon | g-locked | w-ABIL-unable-temporary
 :::
 
@@ -316,6 +338,7 @@ z-Ululon | g-locked | w-ABIL-unable-temporary
 
 ::: details Show answer
 `zuhubun hegeraxul.`
+
 z-Uhubun | h-ABIL-unable-irreversible
 :::
 
@@ -323,6 +346,7 @@ z-Uhubun | h-ABIL-unable-irreversible
 
 ::: details Show answer
 `zululon vubunuxal.`
+
 z-Ululon | v-punch-able
 :::
 
@@ -333,6 +357,7 @@ z-Ululon | v-punch-able
 ::: details Show answer
 
 z-Ululon | h-ABIL-unable-modifiable
+
 *Ululon can’t yet (that may change; no single host).*
 :::
 
@@ -373,6 +398,7 @@ z-solution | w-ABIL-unable-temporary
 ::: details Show answer
 
 z-Uhubun | v-guard-unable-temporary
+
 *Uhubun can’t guard right now.*
 :::
 
@@ -381,6 +407,7 @@ z-Uhubun | v-guard-unable-temporary
 ::: details Show answer
 
 z-Ululon | v-scream-unable-irreversible
+
 *Ululon can’t scream (it’s fixed).*
 :::
 
@@ -389,6 +416,7 @@ z-Ululon | v-scream-unable-irreversible
 ::: details Show answer
 
 z-castle | h-ABIL-unable-irreversible
+
 *The fortress can’t (fixed; no single host).*
 :::
 

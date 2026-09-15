@@ -122,6 +122,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan vorurul. zazar vogogol.`
+
 z-Azawan | v-pour | z-←Azawan | v-cook
 :::
 
@@ -129,6 +130,7 @@ z-Azawan | v-pour | z-←Azawan | v-cook
 
 ::: details Show answer
 `zogogol vorurul. zogor vogogol.`
+
 z-cook | v-pour | z-←cook | v-cook
 :::
 
@@ -136,6 +138,7 @@ z-cook | v-pour | z-←cook | v-cook
 
 ::: details Show answer
 `zululon vogogol. zogogel garedel. zazawan vogogor.`
+
 z-Ululon | v-cook | z-cookie | g-red | z-Azawan | v-←cook
 :::
 
@@ -143,6 +146,7 @@ z-Ululon | v-cook | z-cookie | g-red | z-Azawan | v-←cook
 
 ::: details Show answer
 `zugobon dedonen vorurul.`
+
 z-speaker | d-listener | v-pour
 :::
 
@@ -150,6 +154,7 @@ z-speaker | d-listener | v-pour
 
 ::: details Show answer
 `zahan vogogol.`
+
 z-interlocutors | v-cook
 :::
 
@@ -157,6 +162,7 @@ z-interlocutors | v-cook
 
 ::: details Show answer
 `zedonen vazagal.`
+
 z-listener | v-scream
 :::
 
@@ -164,6 +170,7 @@ z-listener | v-scream
 
 ::: details Show answer
 `zazawan dugobon vubunul.`
+
 z-Azawan | d-speaker | v-punch
 :::
 
@@ -171,6 +178,7 @@ z-Azawan | d-speaker | v-punch
 
 ::: details Show answer
 `zenenun duhubun vubunul.`
+
 z-someone | d-Uhubun | v-punch
 :::
 
@@ -181,6 +189,7 @@ z-someone | d-Uhubun | v-punch
 ::: details Show answer
 
 z-Ululon | v-cook | z-←Ululon | v-pour
+
 *Ululon cooks. He pours.*
 :::
 
@@ -189,6 +198,7 @@ z-Ululon | v-cook | z-←Ululon | v-pour
 ::: details Show answer
 
 z-Uhubun | v-pour | z-←Uhubun | v-cook
+
 *Uhubun pours. She cooks.*
 :::
 
@@ -197,6 +207,7 @@ z-Uhubun | v-pour | z-←Uhubun | v-cook
 ::: details Show answer
 
 z-Ululon | d-knife | v-see | z-←Ululon | d-←knife | v-see
+
 *Ululon sees a knife. He sees the knife.*
 :::
 
@@ -205,6 +216,7 @@ z-Ululon | d-knife | v-see | z-←Ululon | d-←knife | v-see
 ::: details Show answer
 
 z-Uhubun | v-cook | z-cookie | g-red | z-Ululon | v-←cook
+
 *Uhubun cooks. A cookie is red. Ululon does so.*
 :::
 
@@ -213,6 +225,7 @@ z-Uhubun | v-cook | z-cookie | g-red | z-Ululon | v-←cook
 ::: details Show answer
 
 z-Azawan | d-listener | v-see
+
 *Azawan sees you.*
 :::
 
@@ -221,6 +234,7 @@ z-Azawan | d-listener | v-see
 ::: details Show answer
 
 z-interlocutors | v-pour
+
 *We (you and I) pour.*
 :::
 
@@ -229,6 +243,7 @@ z-interlocutors | v-pour
 ::: details Show answer
 
 z-someone | v-scream
+
 *Someone screams.*
 :::
 
@@ -237,6 +252,7 @@ z-someone | v-scream
 ::: details Show answer
 
 j-question | z-speaker | v-cook
+
 *Do I cook?*
 :::
 
@@ -340,6 +356,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zululon vorurul. zazawan vorurur.`
+
 z-Ululon | v-pour | z-Azawan | v-←pour
 :::
 
@@ -347,6 +364,7 @@ z-Ululon | v-pour | z-Azawan | v-←pour
 
 ::: details Show answer
 `zovowel garedel. zodomal gareder.`
+
 z-flower | g-red | z-tomato | g-←red
 :::
 
@@ -354,6 +372,7 @@ z-flower | g-red | z-tomato | g-←red
 
 ::: details Show answer
 `zululon dazawan vejel. zuhubun dazar vejel.`
+
 z-Ululon | d-Azawan | v-see | z-Uhubun | d-←Azawan | v-see
 :::
 
@@ -361,6 +380,7 @@ z-Ululon | d-Azawan | v-see | z-Uhubun | d-←Azawan | v-see
 
 ::: details Show answer
 `zazawan vorurul. zululon vurum. xazawar dezedel vejel.`
+
 z-Azawan | v-pour | z-Ululon | v-harvest | x-←Azawan | d-seedling | v-see
 :::
 
@@ -368,6 +388,7 @@ z-Azawan | v-pour | z-Ululon | v-harvest | x-←Azawan | d-seedling | v-see
 
 ::: details Show answer
 `zululon hogorem bobodel vorurul. zazawan hogor vurum.`
+
 z-Ululon | h-inside | b-potted-plant | v-pour | z-Azawan | h-←inside | v-harvest
 :::
 
@@ -375,6 +396,7 @@ z-Ululon | h-inside | b-potted-plant | v-pour | z-Azawan | h-←inside | v-harve
 
 ::: details Show answer
 `hozal buhubun zululon vubunul.`
+
 h-hash | b-Uhubun | z-Ululon | v-punch
 :::
 
@@ -382,6 +404,7 @@ h-hash | b-Uhubun | z-Ululon | v-punch
 
 ::: details Show answer
 `zahan vurum.`
+
 z-interlocutors | v-harvest
 :::
 
@@ -389,6 +412,7 @@ z-interlocutors | v-harvest
 
 ::: details Show answer
 `zazawanx vubunul.`
+
 z-Azawan-x | v-punch
 :::
 
@@ -399,6 +423,7 @@ z-Azawan-x | v-punch
 ::: details Show answer
 
 z-Azawan | v-pour | z-Ululon | v-←pour
+
 *Azawan pours. Ululon does so.*
 :::
 
@@ -407,6 +432,7 @@ z-Azawan | v-pour | z-Ululon | v-←pour
 ::: details Show answer
 
 z-tomato | g-red | z-flower | g-←red
+
 *A tomato is red. A flower is such.*
 :::
 
@@ -415,6 +441,7 @@ z-tomato | g-red | z-flower | g-←red
 ::: details Show answer
 
 z-Azawan | d-Ululon | v-see | z-Uhubun | d-←Ululon | v-see
+
 *Azawan sees Ululon. Uhubun sees him.*
 :::
 
@@ -423,6 +450,7 @@ z-Azawan | d-Ululon | v-see | z-Uhubun | d-←Ululon | v-see
 ::: details Show answer
 
 z-Ululon | v-harvest | z-Azawan | v-pour | x-←Ululon | v-punch
+
 *Ululon harvests. Azawan pours. Going back to Ululon, he punches.*
 :::
 
@@ -431,6 +459,7 @@ z-Ululon | v-harvest | z-Azawan | v-pour | x-←Ululon | v-punch
 ::: details Show answer
 
 h-hash | b-Azawan | z-Uhubun | v-harvest
+
 *As for Azawan, Uhubun harvests.*
 :::
 
@@ -439,6 +468,7 @@ h-hash | b-Azawan | z-Uhubun | v-harvest
 ::: details Show answer
 
 z-interlocutors | v-scream
+
 *We (you and I) scream.*
 :::
 
@@ -447,6 +477,7 @@ z-interlocutors | v-scream
 ::: details Show answer
 
 z-listener-x | v-scream
+
 *You all scream.*
 :::
 
@@ -455,6 +486,7 @@ z-listener-x | v-scream
 ::: details Show answer
 
 z-Ululon-x | v-fight
+
 *Ululon and associates fight.*
 :::
 
@@ -568,6 +600,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan vumudel. zululon vazar.`
+
 z-Azawan | v-mute | z-Ululon | v-←Azawan
 :::
 
@@ -575,6 +608,7 @@ z-Azawan | v-mute | z-Ululon | v-←Azawan
 
 ::: details Show answer
 `zululon varadum. zaradur gelem.`
+
 z-Ululon | v-broadcast | z-←broadcast | g-big
 :::
 
@@ -582,6 +616,7 @@ z-Ululon | v-broadcast | z-←broadcast | g-big
 
 ::: details Show answer
 `zazawan varadum. zululon harar vumudel.`
+
 z-Azawan | v-broadcast | z-Ululon | h-←broadcast | v-mute
 :::
 
@@ -589,6 +624,7 @@ z-Azawan | v-broadcast | z-Ululon | h-←broadcast | v-mute
 
 ::: details Show answer
 `zaradul garedel. zareder vazagal.`
+
 z-radio | g-red | z-←red | v-scream
 :::
 
@@ -596,6 +632,7 @@ z-radio | g-red | z-←red | v-scream
 
 ::: details Show answer
 `zululon vubunul. zubunur gelem.`
+
 z-Ululon | v-punch | z-←punch | g-big
 :::
 
@@ -606,6 +643,7 @@ z-Ululon | v-punch | z-←punch | g-big
 ::: details Show answer
 
 z-Azawan | v-broadcast | g-←Azawan | g-big
+
 *Azawan broadcasts. That one's kind is big.*
 :::
 
@@ -614,6 +652,7 @@ z-Azawan | v-broadcast | g-←Azawan | g-big
 ::: details Show answer
 
 z-Ululon | v-punch | z-Azawan | h-←punch | v-mute
+
 *Ululon punches. By doing so, Azawan mutes.*
 :::
 
@@ -622,6 +661,7 @@ z-Ululon | v-punch | z-Azawan | h-←punch | v-mute
 ::: details Show answer
 
 z-studio-mic | v-mute | z-Azawan | v-tongue
+
 *A studio mic mutes. Azawan does that with it.*
 :::
 
@@ -630,6 +670,7 @@ z-studio-mic | v-mute | z-Azawan | v-tongue
 ::: details Show answer
 
 z-radio | g-big | z-←big | v-scream
+
 *A radio is big. The big one screams.*
 :::
 
@@ -638,6 +679,7 @@ z-radio | g-big | z-←big | v-scream
 ::: details Show answer
 
 z-Uhubun | g-red | z-Azawan | v-←red
+
 *Uhubun is red. Azawan does that.*
 :::
 
