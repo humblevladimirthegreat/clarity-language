@@ -255,95 +255,111 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `juhubun.`
+<!-- gloss: j-Uhubun -->
 :::
 
 **2.** *Azawan sits.*
 
 ::: details Show answer
 `zazawan vajul.`
+<!-- gloss: z-Azawan | v-chair -->
 :::
 
 **3.** *Uhubun sees Azawan.*
 
 ::: details Show answer
 `zuhubun dazawan vejel.`
+<!-- gloss: z-Uhubun | d-Azawan | v-eye -->
 :::
 
 **4.** *A very angry Ululon stands.*
 
 ::: details Show answer
 `zululon ganagal welem vazanul.`
+<!-- gloss: z-Ululon | g-angry | w-size | v-stand -->
 :::
 
 **5.** *Azawan writes hastily.*
 
 ::: details Show answer
 `zazawan vuwurul hadazam.`
+<!-- gloss: z-Azawan | v-write | h-haste -->
 :::
 
 **6.** *Don’t sneak.*
 
 ::: details Show answer
 `jul vazanal.`
+<!-- gloss: j-prohibition | v-sneak -->
 :::
 
 **7.** *Azawan tells Ululon that Uhubun sits.*
 
 ::: details Show answer
 `zazawan dululon vezehel dadorol zuhubun vajul.`
+<!-- gloss: z-Azawan | d-Ululon | v-speech | d-next-clause | z-Uhubun | v-chair -->
 :::
 
 **8.** *Azawan runs because Ululon punches a guard.*
 
 ::: details Show answer
 `zazawan vurunul hurugum badorol zululon dugugal vubunul.`
+<!-- gloss: z-Azawan | v-run | h-because | b-next-clause | z-Ululon | d-guard | v-punch -->
 :::
 
 #### Agalan → English
 
 **1.** `jazawan.`
+<!-- gloss: j-Azawan -->
 
 ::: details Show answer
 *Azawan!* (calling Azawan)
 :::
 
 **2.** `zuhubun vazanul.`
+<!-- gloss: z-Uhubun | v-stand -->
 
 ::: details Show answer
 *Uhubun stands.*
 :::
 
 **3.** `zazawan duhubun vejel.`
+<!-- gloss: z-Azawan | d-Uhubun | v-eye -->
 
 ::: details Show answer
 *Azawan sees Uhubun.*
 :::
 
 **4.** `zuhubun guzumum donebal vejel.`
+<!-- gloss: z-Uhubun | g-happy | d-money-bag | v-eye -->
 
 ::: details Show answer
 *Happy Uhubun sees a money-bag.*
 :::
 
 **5.** `jol zazawan vajul?`
+<!-- gloss: j-question | z-Azawan | v-chair -->
 
 ::: details Show answer
 *Does Azawan sit?*
 :::
 
 **6.** `jel vurunul.`
+<!-- gloss: j-command | v-run -->
 
 ::: details Show answer
 *Run!*
 :::
 
 **7.** `zululon vazanal hogorem banabal.`
+<!-- gloss: z-Ululon | v-sneak | h-inclusion | b-bank -->
 
 ::: details Show answer
 *Ululon sneaks inside a bank.*
 :::
 
 **8.** `zuhubun vazagal. xezazal zululon vuvugul.`
+<!-- gloss: z-Uhubun | v-scream | x-therefore | z-Ululon | v-fight -->
 
 ::: details Show answer
 *Uhubun screams. Therefore Ululon fights.*
@@ -521,95 +537,111 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `jam zazawan vajul.`
+<!-- gloss: j-statement | z-Azawan | v-chair -->
 :::
 
 **2.** *Does Uhubun see a ticket, perhaps?*
 
 ::: details Show answer
 `jom zuhubun dugedel vejel?`
+<!-- gloss: j-soft-question | z-Uhubun | d-ticket | v-eye -->
 :::
 
 **3.** *Please stand.*
 
 ::: details Show answer
 `jem vazanul!`
+<!-- gloss: j-command | v-stand -->
 :::
 
 **4.** *Please don’t sneak.*
 
 ::: details Show answer
 `jum vazanal!`
+<!-- gloss: j-prohibition | v-sneak -->
 :::
 
 **5.** *A loud-volume red train stands.* (adjective before the noun)
 
 ::: details Show answer
 `glaredel wegelom zudunul vazanul.`
+<!-- gloss: gl-red | w-volume | z-train | v-stand -->
 :::
 
 **6.** *Azawan the same as blue Uhubun stands.*
 
 ::: details Show answer
 `zazawan gonunul buhubun gelulul vazanul.`
+<!-- gloss: z-Azawan | g-SAME | b-Uhubun | g-blue | v-stand -->
 :::
 
 **7.** *Azawan sits. Next Ululon runs.*
 
 ::: details Show answer
 `zazawan vajul. xuvumul zululon vurunul.`
+<!-- gloss: z-Azawan | v-chair | x-next | z-Ululon | v-run -->
 :::
 
 **8.** *Azawan runs because Ululon punches Azawan because Uhubun screams.*
 
 ::: details Show answer
 `zazawan vurunul hurugum badorol zululon dazawan vubunul hurugum badorol zuhubun vazagal.`
+<!-- gloss: z-Azawan | v-run | h-because | b-next-clause | z-Ululon | d-Azawan | v-punch | h-because | b-next-clause | z-Uhubun | v-scream -->
 :::
 
 #### Agalan → English
 
 **1.** `jam hozal bazawan zululon dugedel vejel.`
+<!-- gloss: j-statement | h-hash | b-Azawan | z-Ululon | d-ticket | v-eye -->
 
 ::: details Show answer
 *As for Azawan, maybe Ululon sees a ticket.*
 :::
 
-**2.** `jom gleelulul zudunul vazanul?`
+**2.** `jom glelulul zudunul vazanul?`
+<!-- gloss: j-soft-question | gl-blue | z-train | v-stand -->
 
 ::: details Show answer
 *Does a blue train stand, perhaps?*
 :::
 
 **3.** `jem duhubun vezehel!`
+<!-- gloss: j-command | d-Uhubun | v-speech -->
 
 ::: details Show answer
 *Please tell Uhubun.*
 :::
 
 **4.** `jum vubunul!`
+<!-- gloss: j-prohibition | v-punch -->
 
 ::: details Show answer
 *Please don’t punch.*
 :::
 
 **5.** `zuhubun gonunul bululon garedel vazanul.`
+<!-- gloss: z-Uhubun | g-SAME | b-Ululon | g-red | v-stand -->
 
 ::: details Show answer
 *Uhubun the same as red Ululon stands.*
 :::
 
 **6.** `zuhubun vajul. xanelol zululon dulugal vejel.`
+<!-- gloss: z-Uhubun | v-chair | x-meanwhile | z-Ululon | d-luggage | v-eye -->
 
 ::: details Show answer
 *Uhubun sits. Meanwhile Ululon sees luggage.*
 :::
 
 **7.** `zululon vazanal. xezebal zazawan vurunul.`
+<!-- gloss: z-Ululon | v-sneak | x-however | z-Azawan | v-run -->
 
 ::: details Show answer
 *Ululon sneaks. However Azawan runs.*
 :::
 
 **8.** `zuhubun vazagal hurugum badorol zazawan vebarul hurugum badorol zululon dazawan vubunul.`
+<!-- gloss: z-Uhubun | v-scream | h-because | b-next-clause | z-Azawan | v-departure | h-because | b-next-clause | z-Ululon | d-Azawan | v-punch -->
 
 ::: details Show answer
 *Uhubun screams because Azawan departs because Ululon punches Azawan.*

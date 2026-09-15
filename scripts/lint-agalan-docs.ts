@@ -2,22 +2,22 @@
  * Check Agalan words in docs/grammar/ code spans: they must parse, and
  * content / x-family host roots must be in the lexicon.
  *
- * Morph-gloss pairs (example blockquotes / Morph-column tables) are compared
- * with `--check-ambiguity` always on for the corpus. Mismatches go to
- * morph-gloss-ambiguity-report.md and do not fail CI; leftover ambiguity[] does.
+ * Morph-gloss pairs (example blockquotes, Morph-column tables, and
+ * `<!-- gloss: … -->` on translation exercises) are compared to the parser.
+ * Mismatches, leftover ambiguity, and missing exercise glosses (once a file
+ * uses `<!-- gloss:`) fail the run. Findings print to stdout.
  *
  * Run: npm run lint:agalan
- *      npm run lint:agalan -- [paths...] [--check-ambiguity] [--write-report]
+ *      npm run lint:agalan -- [paths...] [--check-ambiguity]
  */
-import { readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
+import { readdirSync, readFileSync, statSync } from "node:fs";
 import { dirname, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { lintAgalanMarkdown } from "../src/lint/agalan-docs.js";
 import {
-  formatMorphGlossReport,
+  formatMorphGlossFinding,
   lintMorphGlossMarkdown,
-  type MorphGlossReportFile,
 } from "../src/lint/morph-gloss-docs.js";
 import {
   parseOverlayCsv,
@@ -29,7 +29,6 @@ import { lineNumberAt } from "../src/retie/tokens.js";
 
 const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..");
 const grammarDir = join(rootDir, "docs", "grammar");
-const reportPath = join(rootDir, "morph-gloss-ambiguity-report.md");
 
 function listGrammarMarkdown(dir: string): string[] {
   const out: string[] = [];
@@ -47,29 +46,18 @@ function listGrammarMarkdown(dir: string): string[] {
   return out.sort();
 }
 
-function parseCli(argv: string[]): { paths: string[]; writeReport: boolean; verbose: boolean } {
+function parseCli(argv: string[]): { paths: string[] } {
   const paths: string[] = [];
-  let writeReport = false;
-  let verbose = false;
   for (const arg of argv) {
     if (arg === "--help" || arg === "-h") {
-      console.error(`Usage: npm run lint:agalan -- [paths...] [--check-ambiguity] [--write-report] [--verbose]
+      console.error(`Usage: npm run lint:agalan -- [paths...] [--check-ambiguity]
 
 Checks backticked and fenced Agalan words under docs/grammar/.
-Corpus morph-gloss compare always uses --check-ambiguity.
---write-report regenerates morph-gloss-ambiguity-report.md.
---verbose prints every morph-gloss mismatch (default: count only; details live in the report).`);
+Morph-gloss mismatches, leftover ambiguity, and missing exercise glosses fail.
+--check-ambiguity is always on for the corpus (flag kept for callers).`);
       process.exit(0);
     }
-    if (arg === "--write-report") {
-      writeReport = true;
-      continue;
-    }
     if (arg === "--check-ambiguity") {
-      continue;
-    }
-    if (arg === "--verbose") {
-      verbose = true;
       continue;
     }
     if (arg.startsWith("-")) {
@@ -78,7 +66,7 @@ Corpus morph-gloss compare always uses --check-ambiguity.
     }
     paths.push(arg);
   }
-  return { paths, writeReport, verbose };
+  return { paths };
 }
 
 function resolveTargets(paths: string[]): string[] {
@@ -117,14 +105,12 @@ function lintOverlayHosts(): number {
 }
 
 function main(): void {
-  const { paths, writeReport, verbose } = parseCli(process.argv.slice(2));
+  const { paths } = parseCli(process.argv.slice(2));
   const hostIssues = lintOverlayHosts();
   const files = resolveTargets(paths);
   const tables = loadDefaultTables();
   let count = 0;
-  let ambiguityCount = 0;
-  let mismatchCount = 0;
-  const reportFiles: MorphGlossReportFile[] = [];
+  let morphCount = 0;
 
   for (const file of files) {
     const original = readFileSync(file, "utf8");
@@ -138,66 +124,26 @@ function main(): void {
     }
 
     const morphFindings = lintMorphGlossMarkdown(original, tables);
-    if (morphFindings.length > 0) {
-      reportFiles.push({ relpath: rel, findings: morphFindings });
-    }
     for (const finding of morphFindings) {
-      if (finding.kind === "ambiguity") {
-        ambiguityCount += 1;
-        console.error(
-          `${rel}:${finding.line}  --check-ambiguity  \`${finding.conflict.surface}\`  (${finding.conflict.detail})`,
-        );
-      } else {
-        mismatchCount += 1;
-        if (verbose) {
-          console.error(`${rel}:${finding.line}  morph gloss mismatch`);
-          console.error(`  agalan: \`${finding.agalan}\``);
-          console.error(`  documented: ${finding.documented}`);
-          console.error(`  parser:     ${finding.parser}`);
-        }
-      }
-    }
-  }
-
-  const report = formatMorphGlossReport(reportFiles);
-  let reportStale = false;
-  if (writeReport) {
-    writeFileSync(reportPath, report);
-    console.log(`Wrote ${relative(rootDir, reportPath)}`);
-  } else {
-    let committed = "";
-    try {
-      committed = readFileSync(reportPath, "utf8");
-    } catch {
-      committed = "";
-    }
-    if (committed !== report) {
-      reportStale = true;
-      console.error(
-        `${relative(rootDir, reportPath)} is stale. Run: npm run lint:agalan -- --write-report`,
-      );
+      morphCount += 1;
+      console.log(formatMorphGlossFinding(rel, finding));
     }
   }
 
   if (count > 0) {
     console.error(`\n${count} Agalan word issue(s) in docs/grammar/.`);
   }
-  if (mismatchCount > 0) {
-    console.error(
-      `${mismatchCount} morph gloss mismatch(es) recorded in morph-gloss-ambiguity-report.md (not a CI failure).`,
-    );
-  }
-  if (ambiguityCount > 0) {
-    console.error(`${ambiguityCount} leftover --check-ambiguity hit(s).`);
+  if (morphCount > 0) {
+    console.log(`\n${morphCount} morph-gloss issue(s).`);
   }
 
-  const fail = hostIssues + count + ambiguityCount + (reportStale ? 1 : 0);
+  const fail = hostIssues + count + morphCount;
   if (fail > 0) {
     process.exit(1);
   }
   console.log("OK: overlay hosts match the published lexicon.");
   console.log("OK: Agalan words in docs/grammar/ parse as legal and match the lexicon.");
-  console.log("OK: morph-gloss report is current; no leftover --check-ambiguity hits.");
+  console.log("OK: morph glosses match the parser; translation exercises have gloss comments.");
 }
 
 try {

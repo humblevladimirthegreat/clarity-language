@@ -1,7 +1,6 @@
 # TODO
 review TTS
 consider removing emojis from docs (but keep in lexicon)
-apply hidden gloss to all translation exercises so we can ensure it matches parser
 confirm logic for detecting glosses
 
 ## Evidentiality / tense

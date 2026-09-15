@@ -100,7 +100,7 @@ Follow the [template](translation-exercises.md#template). Lead: *Short drills fo
 | Intermediate, productive | **6–8** |
 | Advanced, or a thin generate row | **4–6** |
 
-Both directions. Spoilers = Agalan sentence or **loose** free English only — no morph-gloss lecture. Omit recoverable **`jal`**. House names in English prompts (*Azawan waits*). Test the decision this stage taught; package it in the setting, not as a clone of the walk/sleep teach line ([principles](translation-exercises.md#principles)).
+Both directions. Spoilers = Agalan sentence or **loose** free English only — no visible morph-gloss lecture. Put `<!-- gloss: … -->` after each item’s Agalan. Omit recoverable **`jal`**. House names in English prompts (*Azawan waits*). Test the decision this stage taught; package it in the setting, not as a clone of the walk/sleep teach line ([principles](translation-exercises.md#principles)).
 
 ### 6. Self-check, then lint
 

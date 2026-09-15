@@ -12,7 +12,7 @@ export type MorphPair = {
   agalan: string;
   morph: string;
   index: number;
-  source: "blockquote" | "table";
+  source: "blockquote" | "table" | "exercise";
 };
 
 export type MorphMismatch = {
@@ -30,9 +30,19 @@ export type MorphAmbiguity = {
   conflict: AmbiguityConflict;
 };
 
-export type MorphGlossFinding = MorphMismatch | MorphAmbiguity;
+export type MorphMissingGloss = {
+  kind: "missing-gloss";
+  line: number;
+  agalan: string;
+};
+
+export type MorphGlossFinding = MorphMismatch | MorphAmbiguity | MorphMissingGloss;
 
 const SKIP_CELL = /(?:^|[^\w])(?:…|\.\.\.)(?:[^\w]|$)/;
+const GLOSS_COMMENT_RE = /<!--\s*gloss:\s*([\s\S]*?)-->/i;
+const HAS_GLOSS_COMMENT_RE = /<!--\s*gloss:/i;
+const ITEM_START_RE = /^\*\*(\d+)\.\*\*(.*)$/;
+const PRACTICE_H3_RE = /^### Translation practice\b/;
 
 export function extractMorphPairs(markdown: string): MorphPair[] {
   const pairs: MorphPair[] = [];
@@ -45,6 +55,16 @@ export function extractMorphPairs(markdown: string): MorphPair[] {
     });
   }
   pairs.push(...extractMorphTables(markdown));
+  for (const item of extractTranslationExercises(markdown)) {
+    if (item.morph != null) {
+      pairs.push({
+        agalan: item.agalan,
+        morph: item.morph,
+        index: item.index,
+        source: "exercise",
+      });
+    }
+  }
   return pairs;
 }
 
@@ -53,6 +73,21 @@ export function lintMorphGlossMarkdown(
   tables: ClassifyTables,
 ): MorphGlossFinding[] {
   const findings: MorphGlossFinding[] = [];
+  const requireExerciseGloss = HAS_GLOSS_COMMENT_RE.test(text);
+
+  for (const item of extractTranslationExercises(text)) {
+    if (item.morph == null) {
+      if (requireExerciseGloss) {
+        findings.push({
+          kind: "missing-gloss",
+          line: lineNumberAt(text, item.index),
+          agalan: item.agalan,
+        });
+      }
+      continue;
+    }
+  }
+
   for (const pair of extractMorphPairs(text)) {
     const line = lineNumberAt(text, pair.index);
     const compare = compareMorphGloss(pair.agalan, pair.morph, tables);
@@ -77,75 +112,124 @@ export function lintMorphGlossMarkdown(
   return findings;
 }
 
-export type MorphGlossReportFile = {
-  relpath: string;
-  findings: MorphGlossFinding[];
+export type TranslationExercise = {
+  agalan: string;
+  morph: string | null;
+  index: number;
 };
 
-export function formatMorphGlossReport(files: MorphGlossReportFile[]): string {
-  const ambiguities: string[] = [];
-  const mismatches: string[] = [];
-
-  for (const file of files) {
-    for (const finding of file.findings) {
-      const loc = `${file.relpath}:${finding.line}`;
-      if (finding.kind === "ambiguity") {
-        const c = finding.conflict;
-        ambiguities.push(
-          [
-            `### \`${c.surface}\` — ${loc}`,
-            "",
-            `- agalan: \`${finding.agalan}\``,
-            `- stage: ${c.stage}`,
-            `- sources: ${c.sources.join(", ")}`,
-            `- detail: ${c.detail}`,
-            "- why no winner: leftover `--check-ambiguity` hit; grammar does not name a unique reading.",
-            "",
-          ].join("\n"),
-        );
-      } else {
-        mismatches.push(
-          [
-            `### ${loc}`,
-            "",
-            "```",
-            `${loc}  morph gloss mismatch`,
-            `  agalan: \`${finding.agalan}\``,
-            `  documented: ${finding.documented}`,
-            `  parser:     ${finding.parser}`,
-            "```",
-            "",
-          ].join("\n"),
-        );
+export function extractTranslationExercises(markdown: string): TranslationExercise[] {
+  const items: TranslationExercise[] = [];
+  const lines = markdown.split(/\r?\n/);
+  for (const range of translationPracticeRanges(lines)) {
+    let i = range.start + 1;
+    while (i < range.end) {
+      const match = ITEM_START_RE.exec(lines[i]!);
+      if (!match) {
+        i += 1;
+        continue;
       }
+      const itemStart = i;
+      i += 1;
+      while (i < range.end && !ITEM_START_RE.test(lines[i]!) && !isPracticeBoundary(lines[i]!)) {
+        i += 1;
+      }
+      const itemLines = lines.slice(itemStart, i);
+      const parsed = parseExerciseItem(itemLines);
+      if (!parsed) continue;
+      items.push({
+        agalan: parsed.agalan,
+        morph: parsed.morph,
+        index: lineIndexToCharIndex(markdown, itemStart + parsed.agalanLineOffset),
+      });
     }
   }
+  return items;
+}
 
-  const lines = [
-    "# Morph-gloss report",
-    "",
-    "Editor inventory from `npm run lint:agalan`. Grammar morph lines are **not** auto-retied.",
-    "Leftover `--check-ambiguity` hits fail CI. Suspected wrong grammar morph lines are listed here only.",
-    "Hard serializer / binder cases (not mismatches): [morph-gloss-hard.md](morph-gloss-hard.md).",
-    "",
-    "## Leftover `--check-ambiguity`",
-    "",
-  ];
+function translationPracticeRanges(lines: string[]): { start: number; end: number }[] {
+  const ranges: { start: number; end: number }[] = [];
+  for (let i = 0; i < lines.length; i++) {
+    if (!PRACTICE_H3_RE.test(lines[i]!)) continue;
+    let end = lines.length;
+    for (let j = i + 1; j < lines.length; j++) {
+      if (isPracticeBoundary(lines[j]!)) {
+        end = j;
+        break;
+      }
+    }
+    ranges.push({ start: i, end });
+  }
+  return ranges;
+}
 
-  if (ambiguities.length === 0) {
-    lines.push("_None._", "");
-  } else {
-    lines.push(...ambiguities);
+function isH2(line: string): boolean {
+  return /^## /.test(line) && !/^### /.test(line);
+}
+
+function isH3(line: string): boolean {
+  return /^### /.test(line) && !/^#### /.test(line);
+}
+
+function isPracticeBoundary(line: string): boolean {
+  return isH2(line) || isH3(line);
+}
+
+function parseExerciseItem(
+  itemLines: string[],
+): { agalan: string; morph: string | null; agalanLineOffset: number } | null {
+  const body = itemLines.join("\n");
+  const glossMatch = GLOSS_COMMENT_RE.exec(body);
+  const morph = glossMatch ? normalizeExerciseMorph(glossMatch[1] ?? "") : null;
+
+  const prompt = ITEM_START_RE.exec(itemLines[0] ?? "");
+  const promptRest = prompt?.[2] ?? "";
+  const promptCodes = codeSpans(promptRest);
+  if (promptCodes.length > 0) {
+    return {
+      agalan: promptCodes.join(" "),
+      morph,
+      agalanLineOffset: 0,
+    };
   }
 
-  lines.push("## Suspected wrong grammar morph lines", "");
-  if (mismatches.length === 0) {
-    lines.push("_None._", "");
-  } else {
-    lines.push(...mismatches);
-  }
+  const fromDetails = detailsAgalan(itemLines);
+  if (!fromDetails) return null;
+  return {
+    agalan: fromDetails.agalan,
+    morph,
+    agalanLineOffset: fromDetails.lineOffset,
+  };
+}
 
-  return lines.join("\n").trimEnd() + "\n";
+function detailsAgalan(itemLines: string[]): { agalan: string; lineOffset: number } | null {
+  let inDetails = false;
+  for (let i = 0; i < itemLines.length; i++) {
+    const trimmed = itemLines[i]!.trim();
+    if (!inDetails) {
+      if (/^::: details\b/.test(trimmed)) inDetails = true;
+      continue;
+    }
+    if (/^:::/.test(trimmed)) break;
+    const unwrapped = unwrapCode(trimmed);
+    if (unwrapped) return { agalan: unwrapped, lineOffset: i };
+  }
+  return null;
+}
+
+function codeSpans(text: string): string[] {
+  return [...text.matchAll(/`([^`]+)`/g)].map((m) => m[1]!);
+}
+
+function unwrapCode(text: string): string | null {
+  const m = text.match(/^`([^`]+)`$/);
+  return m ? m[1]! : null;
+}
+
+function normalizeExerciseMorph(raw: string): string | null {
+  const morph = raw.trim().replace(/\s+·\s+/g, " | ").replace(/\s+;\s+/g, " | ");
+  if (!morph || !looksLikeMorphLine(morph)) return morph || null;
+  return morph;
 }
 
 function lineIndexToCharIndex(text: string, lineIndex: number): number {
@@ -166,9 +250,7 @@ function extractMorphTables(markdown: string): MorphPair[] {
       i += 1;
       continue;
     }
-    const headerLine = lines[i]!;
-    const headerAbs = i;
-    const header = splitRow(headerLine);
+    const header = splitRow(lines[i]!);
     i += 1;
     if (i < lines.length && isDividerRow(lines[i]!)) i += 1;
 
@@ -196,7 +278,6 @@ function extractMorphTables(markdown: string): MorphPair[] {
       }
       i += 1;
     }
-    void headerAbs;
   }
   return pairs;
 }
@@ -226,4 +307,24 @@ function unwrapCellMorph(cell: string): string | null {
   const codes = [...cell.matchAll(/`([^`]+)`/g)].map((m) => m[1]!);
   const raw = codes.length > 0 ? codes.join(" | ") : cell;
   return raw.replace(/\s+·\s+/g, " | ").replace(/\s+;\s+/g, " | ").trim() || null;
+}
+
+export function formatMorphGlossFinding(
+  relpath: string,
+  finding: MorphGlossFinding,
+): string {
+  const loc = `${relpath}:${finding.line}`;
+  if (finding.kind === "ambiguity") {
+    const c = finding.conflict;
+    return `${loc}  leftover ambiguity  \`${c.surface}\`  (${c.detail})`;
+  }
+  if (finding.kind === "missing-gloss") {
+    return `${loc}  missing exercise gloss  \`${finding.agalan}\``;
+  }
+  return [
+    `${loc}  morph gloss mismatch`,
+    `  agalan: \`${finding.agalan}\``,
+    `  documented: ${finding.documented}`,
+    `  parser:     ${finding.parser}`,
+  ].join("\n");
 }

@@ -293,7 +293,7 @@ Letter / series: `{letter} ≈ {sound or series slogan} ({why that maps})`. `**d
 
 A lexicon path is a real **-l** / **-m** choice; the *literal* English is still not what drills ask for. Write `*happy*` in **English** (no `(**-m**)` tag — the citation ending already marks metaphor), `` `uzumul` *smile* `` in **Same root as**, and `😊: the face of *happy*` (or `from *smile*: the face of *happy*` when the table has no **Same root as** column) in **Cue** — never `smile → *happy*` as the only English. The same **Same root as** / **Cue** split applies when **English** is a role-marked use of the literal (`*see*` / `vejel` / `` `ejel` *eye* `` / `👁️: seeing is what an eye does`).
 
-Inline after the rule sentence: `(cue: …)`. Worked examples stay Agalan / morph / quoted free English ([example block](glosses.md#example-block)) — no cue line. Translation-practice answers are Agalan or loose English only; the root bank may add **Same root as** and **Cue** beside **English · Agalan**.
+Inline after the rule sentence: `(cue: …)`. Worked examples stay Agalan / morph / quoted free English ([example block](glosses.md#example-block)) — no cue line. Translation-practice **visible** answers are Agalan or loose English only; hide the morph line as `<!-- gloss: … -->`. The root bank may add **Same root as** and **Cue** beside **English · Agalan**.
 
 ### When to state a scene cue
 <a id="when-to-state-a-scene-cue"></a>
@@ -554,7 +554,7 @@ After editing Markdown under `docs/` (or `AGENTS.md` / `TODO.md`), run **`npm ru
 ### HTML comments
 <a id="html-comments"></a>
 
-VitePress does not render HTML comments. Use them for **editor-only** notes that must sit next to the grammar text — typically **why this spot is an exception** to a rule on this page (house cast, omit-`jal`, Compare-with quota, and so on). The learner never sees them; `lint:md` and `retie-docs` skip comment bodies.
+VitePress does not render HTML comments. Use them for **editor-only** notes that must sit next to the grammar text — typically **why this spot is an exception** to a rule on this page (house cast, omit-`jal`, Compare-with quota, and so on), and for hidden exercise morph lines (`<!-- gloss: … -->` — [translation-exercises.md](translation-exercises.md#principles)). The learner never sees them; `lint:md` and `retie-docs` skip comment bodies except that `lint:agalan` reads tagged `gloss:` comments.
 
 ```markdown
 <!-- Exception to house-cast: this block teaches speaker/listener specials, so `zugobon` is the point. -->
