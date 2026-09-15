@@ -311,7 +311,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zeberel gonunul buhubun daledel vejel.`
-<!-- gloss: z-person | g-SAME | b-Uhubun | d-palette | v-eye -->
+<!-- gloss: z-person | g-SAME | b-Uhubun | d-palette | v-see -->
 :::
 
 **6.** *Azawan is Ululon (titled identity).*
@@ -359,7 +359,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 :::
 
 **4.** `zeberel gonunul bazawan daledel vejel.`
-<!-- gloss: z-person | g-SAME | b-Azawan | d-palette | v-eye -->
+<!-- gloss: z-person | g-SAME | b-Azawan | d-palette | v-see -->
 
 ::: details Show answer
 *The person who is Azawan sees a palette.*

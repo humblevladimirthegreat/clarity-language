@@ -22,7 +22,7 @@ To point back to that group (or to a prior person **and** their associates), add
 
 > `zazawarx vajul.`
 >
-> z-←Azawan-x | v-chair
+> z-←Azawan-x | v-sit
 >
 > "They (that one and associates) sit."
 
@@ -30,13 +30,13 @@ A first mention of a **kind as a group in this situation** uses **-lx** (literal
 
 > `zagadalx vajul.`
 >
-> z-cat-x | v-chair
+> z-cat-x | v-sit
 >
 > "Some cats sit."
 
 > `zazawan dodogolx vejel.`
 >
-> z-Azawan | d-dog-x | v-eye
+> z-Azawan | d-dog-x | v-see
 >
 > "Azawan sees some dogs."
 
@@ -63,13 +63,13 @@ English *we* and *you* do not say whether the listener is in the group. That spl
 
 > `zugobonx vajul.`
 >
-> z-speaker-x | v-chair
+> z-speaker-x | v-sit
 >
 > "Speaker and associates (not you) sit."
 
 > `zululonx vajul.`
 >
-> z-Ululon-x | v-chair
+> z-Ululon-x | v-sit
 >
 > "You (Ululon) and your associates sit."
 
@@ -83,19 +83,19 @@ The same roots take the role letter of the slot they fill. As a direct object th
 
 > `zazawan dugobonx vejel.`
 >
-> z-Azawan | d-speaker-x | v-eye
+> z-Azawan | d-speaker-x | v-see
 >
 > "Azawan sees speaker and associates (not you)."
 
 > `zazawan dedonenx vejel.`
 >
-> z-Azawan | d-listener-x | v-eye
+> z-Azawan | d-listener-x | v-see
 >
 > "Azawan sees you all (the addressees)."
 
 > `zazawan dahan vejel.`
 >
-> z-Azawan | d-interlocutors | v-eye
+> z-Azawan | d-interlocutors | v-see
 >
 > "Azawan sees us (you and I)."
 
@@ -145,28 +145,28 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawanx vajul.`
-<!-- gloss: z-Azawan-x | v-chair -->
+<!-- gloss: z-Azawan-x | v-sit -->
 :::
 
 **2.** *Some ants sit.*
 
 ::: details Show answer
 `zanadalx vajul.`
-<!-- gloss: z-ant-x | v-chair -->
+<!-- gloss: z-ant-x | v-sit -->
 :::
 
 **3.** *Azawan and associates see a basket.*
 
 ::: details Show answer
 `zazawanx dazegel vejel.`
-<!-- gloss: z-Azawan-x | d-basket | v-eye -->
+<!-- gloss: z-Azawan-x | d-basket | v-see -->
 :::
 
 **4.** *You (Ululon) and your associates see Uhubun.*
 
 ::: details Show answer
 `zululonx duhubun vejel.`
-<!-- gloss: z-Ululon-x | d-Uhubun | v-eye -->
+<!-- gloss: z-Ululon-x | d-Uhubun | v-see -->
 :::
 
 **5.** *They (Azawan and associates) pour wine.* (Azawan already mentioned)
@@ -200,14 +200,14 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 #### Agalan → English
 
 **1.** `zuhubunx vajul.`
-<!-- gloss: z-Uhubun-x | v-chair -->
+<!-- gloss: z-Uhubun-x | v-sit -->
 
 ::: details Show answer
 *Uhubun and associates sit.*
 :::
 
 **2.** `zazawanx dazadul vejel.`
-<!-- gloss: z-Azawan-x | d-sandwich | v-eye -->
+<!-- gloss: z-Azawan-x | d-sandwich | v-see -->
 
 ::: details Show answer
 *Azawan and associates see a sandwich.*
@@ -221,21 +221,21 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 :::
 
 **4.** `zahan dazegel vejel.`
-<!-- gloss: z-interlocutors | d-basket | v-eye -->
+<!-- gloss: z-interlocutors | d-basket | v-see -->
 
 ::: details Show answer
 *We (you and I) see a basket.*
 :::
 
 **5.** `zululonx dazawan vezehel.`
-<!-- gloss: z-Ululon-x | d-Azawan | v-speech -->
+<!-- gloss: z-Ululon-x | d-Azawan | v-tell -->
 
 ::: details Show answer
 *Ululon tells Azawan and associates.*
 :::
 
 **6.** `zazawarx duguvel vejel.`
-<!-- gloss: z-←Azawan-x | d-knife | v-eye -->
+<!-- gloss: z-←Azawan-x | d-knife | v-see -->
 
 ::: details Show answer
 *They (Azawan and associates) see a knife.*

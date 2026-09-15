@@ -99,7 +99,7 @@ English *a pair of…*, *three-part…*, *primary…* can name **how many parts 
 
 > `zazawan dabenexradum vejel.`
 >
-> z-Azawan | d-commitment-x-two | v-eye
+> z-Azawan | d-commitment-x-two | v-see
 >
 > "Azawan sees mutual commitment."
 
@@ -219,7 +219,7 @@ English *specimen #1*, *room-12 as a coded kind* treats digits as a **catalog ID
 
 > `zazawan deduduxrowol vejel.`
 >
-> z-Azawan | d-petri-dish-x-_1 | v-eye
+> z-Azawan | d-petri-dish-x-_1 | v-see
 >
 > "Azawan sees specimen #1."
 
@@ -304,7 +304,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zuhubun davagaxrawol vejel.`
-<!-- gloss: z-Uhubun | d-factory-x-one | v-eye -->
+<!-- gloss: z-Uhubun | d-factory-x-one | v-see -->
 :::
 
 **3.** *Azawan pours a quasi-gold.*
@@ -331,21 +331,21 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 #### Agalan → English
 
 **1.** `zuhubun dologoxrabal vejel.`
-<!-- gloss: z-Uhubun | d-gold-x-infinity | v-eye -->
+<!-- gloss: z-Uhubun | d-gold-x-infinity | v-see -->
 
 ::: details Show answer
 *Uhubun sees the essence of gold.*
 :::
 
 **2.** `zazawan durexrebul vejel.`
-<!-- gloss: z-Azawan | d-fire-x-origin | v-eye -->
+<!-- gloss: z-Azawan | d-fire-x-origin | v-see -->
 
 ::: details Show answer
 *Azawan sees fire in its beginning form.*
 :::
 
 **3.** `zululon dahamexrudul vejel.`
-<!-- gloss: z-Ululon | d-hammer-x-minus-two | v-eye -->
+<!-- gloss: z-Ululon | d-hammer-x-minus-two | v-see -->
 
 ::: details Show answer
 *Ululon sees a one-sided hammer.*

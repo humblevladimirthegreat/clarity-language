@@ -41,7 +41,7 @@ English *the one seen* or *the one fought* names the person the event happens to
 > `zazawan dagadal vejel.`
 > `zuxejer vurunul.`
 >
-> z-Azawan | d-cat | v-eye
+> z-Azawan | d-cat | v-see
 > z-←patient-x-see | v-run
 >
 > "Azawan sees a cat. The one seen runs."
@@ -72,7 +72,7 @@ If you put the event stem on a thing letter with no role vowel (`duvugul`), you 
 
 > `zazawan duvugul vejel.`
 >
-> z-Azawan | d-fight | v-eye
+> z-Azawan | d-fight | v-see
 >
 > "Azawan sees a fight."
 
@@ -123,28 +123,28 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zaxogonul vajul.`
-<!-- gloss: z-agent-x-building | v-chair -->
+<!-- gloss: z-agent-x-building | v-sit -->
 :::
 
 **2.** *Azawan constructs. The builder sees a helmet.*
 
 ::: details Show answer
 `zazawan vogunul. zaxogonur dehemel vejel.`
-<!-- gloss: z-Azawan | v-coconut | z-agent-x-building | d-helmet | v-eye -->
+<!-- gloss: z-Azawan | v-coconut | z-agent-x-building | d-helmet | v-see -->
 :::
 
 **3.** *Ululon hammers a brick. The hammerer sits.*
 
 ::: details Show answer
 `zululon durugul vahamel. zaxahamer vajul.`
-<!-- gloss: z-Ululon | d-brick | v-hammer | z-←hammer | v-chair -->
+<!-- gloss: z-Ululon | d-brick | v-hammer | z-←hammer | v-sit -->
 :::
 
 **4.** *Azawan sees Uhubun. The one seen sits.*
 
 ::: details Show answer
 `zazawan zuhubun vejel. zuxejer vajul.`
-<!-- gloss: z-Azawan | z-Uhubun | v-eye | z-←eye | v-chair -->
+<!-- gloss: z-Azawan | z-Uhubun | v-see | z-←see | v-sit -->
 :::
 
 **5.** *Azawan is a builder, in a manner of speaking.*
@@ -158,7 +158,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan dononul vejel.`
-<!-- gloss: z-Azawan | d-construction-site | v-eye -->
+<!-- gloss: z-Azawan | d-construction-site | v-see -->
 :::
 
 **7.** *Ululon punches Azawan. The one punched screams.*
@@ -185,14 +185,14 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 :::
 
 **2.** `zuhubun zazawan vejel. zuxejer vajul.`
-<!-- gloss: z-Uhubun | z-Azawan | v-eye | z-←eye | v-chair -->
+<!-- gloss: z-Uhubun | z-Azawan | v-see | z-←see | v-sit -->
 
 ::: details Show answer
 *Uhubun sees Azawan. The one seen sits.*
 :::
 
 **3.** `zululon vogonul. zaxogonur dehemel vejel.`
-<!-- gloss: z-Ululon | v-construct | z-←construct | d-helmet | v-eye -->
+<!-- gloss: z-Ululon | v-construct | z-←construct | d-helmet | v-see -->
 
 ::: details Show answer
 *Ululon constructs. The builder sees a helmet.*
@@ -206,7 +206,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 :::
 
 **5.** `zululon dononul vejel.`
-<!-- gloss: z-Ululon | d-construction-site | v-eye -->
+<!-- gloss: z-Ululon | d-construction-site | v-see -->
 
 ::: details Show answer
 *Ululon sees a construction-site.*

@@ -15,7 +15,7 @@ After you have already named a person or thing, the next sentence can point back
 
 > `zazawan vawalal. zazar vajul.`
 >
-> z-Azawan | v-walk | z-←Azawan | v-chair
+> z-Azawan | v-walk | z-←Azawan | v-sit
 >
 > "Azawan walks. He sits." (resume from the name’s root prefix)
 
@@ -23,7 +23,7 @@ After you have already named a person or thing, the next sentence can point back
 
 > `zodogol vawalal. zodor vajul.`
 >
-> z-dog | v-walk | z-←dog | v-chair
+> z-dog | v-walk | z-←dog | v-sit
 >
 > "A dog walks. The dog sits."
 
@@ -191,7 +191,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 :::
 
 **3.** `zululon duguvel vejel. zulur dugur vejel.`
-<!-- gloss: z-Ululon | d-knife | v-eye | z-←Ululon | d-←knife | v-eye -->
+<!-- gloss: z-Ululon | d-knife | v-see | z-←Ululon | d-←knife | v-see -->
 
 ::: details Show answer
 *Ululon sees a knife. He sees the knife.*
@@ -205,7 +205,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 :::
 
 **5.** `zazawan dedonen vejel.`
-<!-- gloss: z-Azawan | d-listener | v-eye -->
+<!-- gloss: z-Azawan | d-listener | v-see -->
 
 ::: details Show answer
 *Azawan sees you.*
@@ -272,7 +272,7 @@ Sometimes you still mean that person or thing, but you need a **different** slot
 
 > `zazawan vajul. zululon vazar.`
 >
-> z-Azawan | v-chair | z-Ululon | v-←Azawan
+> z-Azawan | v-sit | z-Ululon | v-←Azawan
 >
 > "Azawan sits. Ululon does that with him."
 
@@ -290,7 +290,7 @@ When you address several people at once, English *you* does not say how many. Th
 
 > `zedonenx vajul.`
 >
-> z-listener-x | v-chair
+> z-listener-x | v-sit
 >
 > "You all sit."
 
@@ -346,21 +346,21 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zululon dazawan vejel. zuhubun dazar vejel.`
-<!-- gloss: z-Ululon | d-Azawan | v-eye | z-Uhubun | d-←Azawan | v-eye -->
+<!-- gloss: z-Ululon | d-Azawan | v-see | z-Uhubun | d-←Azawan | v-see -->
 :::
 
 **4.** *Azawan pours. Ululon harvests. Going back to Azawan, they see a seedling.*
 
 ::: details Show answer
 `zazawan vorurul. zululon vurum. xazawar dezedel vejel.`
-<!-- gloss: z-Azawan | v-pour | z-Ululon | v-harvest | x-←Azawan | d-seedling | v-eye -->
+<!-- gloss: z-Azawan | v-pour | z-Ululon | v-harvest | x-←Azawan | d-seedling | v-see -->
 :::
 
 **5.** *Ululon pours inside a potted plant. Azawan harvests that way.*
 
 ::: details Show answer
 `zululon hogorem bobodel vorurul. zazawan hogor vurum.`
-<!-- gloss: z-Ululon | h-inclusion | b-potted-plant | v-pour | z-Azawan | h-←inclusion | v-harvest -->
+<!-- gloss: z-Ululon | h-inside | b-potted-plant | v-pour | z-Azawan | h-←inside | v-harvest -->
 :::
 
 **6.** *As for Uhubun, Ululon punches.*
@@ -401,7 +401,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 :::
 
 **3.** `zazawan dululon vejel. zuhubun dulur vejel.`
-<!-- gloss: z-Azawan | d-Ululon | v-eye | z-Uhubun | d-←Ululon | v-eye -->
+<!-- gloss: z-Azawan | d-Ululon | v-see | z-Uhubun | d-←Ululon | v-see -->
 
 ::: details Show answer
 *Azawan sees Ululon. Uhubun sees him.*

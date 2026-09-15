@@ -86,7 +86,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan hodohom vajul.`
-<!-- gloss: z-Azawan | h-COMMENT | v-chair -->
+<!-- gloss: z-Azawan | h-COMMENT | v-sit -->
 :::
 
 **2.** *I think Ululon pours coffee.*
@@ -100,14 +100,14 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zuhubun hodohom vejel dazawan.`
-<!-- gloss: z-Uhubun | h-COMMENT | v-eye | d-Azawan -->
+<!-- gloss: z-Uhubun | h-COMMENT | v-see | d-Azawan -->
 :::
 
 **4.** *Azawan tells Uhubun — and that take is the scene.* (fused hold)
 
 ::: details Show answer
 `zazawan hodohol vezehel duhubun.`
-<!-- gloss: z-Azawan | h-COMMENT-fused | v-speech | d-Uhubun -->
+<!-- gloss: z-Azawan | h-COMMENT-fused | v-tell | d-Uhubun -->
 :::
 
 **5.** *I think Ululon pours tea — and step back from that take.*
@@ -141,7 +141,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 #### Agalan → English
 
 **1.** `zululon hodohom vajul.`
-<!-- gloss: z-Ululon | h-COMMENT | v-chair -->
+<!-- gloss: z-Ululon | h-COMMENT | v-sit -->
 
 ::: details Show answer
 *I think Ululon sits.*
@@ -155,7 +155,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 :::
 
 **3.** `zuhubun hodohol vejel dululon.`
-<!-- gloss: z-Uhubun | h-COMMENT-fused | v-eye | d-Ululon -->
+<!-- gloss: z-Uhubun | h-COMMENT-fused | v-see | d-Ululon -->
 
 ::: details Show answer
 *Uhubun sees Ululon — and that take is the scene.*
@@ -176,7 +176,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 :::
 
 **6.** `jol zazawan hodohom vejel duhubun.`
-<!-- gloss: j-question | z-Azawan | h-COMMENT | v-eye | d-Uhubun -->
+<!-- gloss: j-question | z-Azawan | h-COMMENT | v-see | d-Uhubun -->
 
 ::: details Show answer
 *Does Azawan see Uhubun?* (asked with light commentary)
@@ -344,28 +344,28 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan hadezem vezehel duhubun.`
-<!-- gloss: z-Azawan | h-LIVE | v-speech | d-Uhubun -->
+<!-- gloss: z-Azawan | h-LIVE | v-tell | d-Uhubun -->
 :::
 
 **2.** *Ululon sees a camera — from memory* (past observation).
 
 ::: details Show answer
 `zululon huvuvum vejel dameral.`
-<!-- gloss: z-Ululon | h-WITNESSED | v-eye | d-camera -->
+<!-- gloss: z-Ululon | h-WITNESSED | v-see | d-camera -->
 :::
 
 **3.** *Uhubun tells Azawan — on record.*
 
 ::: details Show answer
 `zuhubun heregom vezehel dazawan.`
-<!-- gloss: z-Uhubun | h-RECORDED | v-speech | d-Azawan -->
+<!-- gloss: z-Uhubun | h-RECORDED | v-tell | d-Azawan -->
 :::
 
 **4.** *Azawan sees a newspaper — from the pattern of cases.*
 
 ::: details Show answer
 `zazawan habawam vejel denewel.`
-<!-- gloss: z-Azawan | h-PATTERN | v-eye | d-newspaper -->
+<!-- gloss: z-Azawan | h-PATTERN | v-see | d-newspaper -->
 :::
 
 **5.** *Ululon mutes — so they say.* (hearsay)
@@ -386,7 +386,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan hadadem vezehel duhubun.`
-<!-- gloss: z-Azawan | h-NOTIONAL | v-speech | d-Uhubun -->
+<!-- gloss: z-Azawan | h-NOTIONAL | v-tell | d-Uhubun -->
 :::
 
 **8.** *As if Ululon screams.* (immersed in the imagined scene)
@@ -399,14 +399,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 #### Agalan → English
 
 **1.** `zazawan heherem vezehel duhubun.`
-<!-- gloss: z-Azawan | h-FELT | v-speech | d-Uhubun -->
+<!-- gloss: z-Azawan | h-FELT | v-tell | d-Uhubun -->
 
 ::: details Show answer
 *Azawan tells Uhubun — felt / gut-known.*
 :::
 
 **2.** `zululon horolom vejel daradul.`
-<!-- gloss: z-Ululon | h-STORY | v-eye | d-radio -->
+<!-- gloss: z-Ululon | h-STORY | v-see | d-radio -->
 
 ::: details Show answer
 *Ululon sees a radio — per the tale.*
@@ -427,14 +427,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 :::
 
 **5.** `zululon heregom vejel dameral.`
-<!-- gloss: z-Ululon | h-RECORDED | v-eye | d-camera -->
+<!-- gloss: z-Ululon | h-RECORDED | v-see | d-camera -->
 
 ::: details Show answer
 *Ululon sees a camera — on record.*
 :::
 
 **6.** `zuhubun huvuvum vezehel.`
-<!-- gloss: z-Uhubun | h-WITNESSED | v-speech -->
+<!-- gloss: z-Uhubun | h-WITNESSED | v-tell -->
 
 ::: details Show answer
 *Uhubun tells — from memory (a past observation).*
@@ -448,7 +448,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 :::
 
 **8.** `zazawan hodohom vezehel.`
-<!-- gloss: z-Azawan | h-COMMENT | v-speech -->
+<!-- gloss: z-Azawan | h-COMMENT | v-tell -->
 
 ::: details Show answer
 *I think Azawan tells.* (attitude — not how you know a world-claim)
@@ -492,7 +492,7 @@ The same published roots keep ordinary content under other role letters. The clo
 
 > `zazawan zadadel vejel.`
 >
-> z-Azawan | z-theater | v-eye
+> z-Azawan | z-theater | v-see
 >
 > "Azawan sees a theater."
 
@@ -503,7 +503,7 @@ The same published roots keep ordinary content under other role letters. The clo
 
 > `zazawan huvuvum dabodol vejel.`
 >
-> z-Azawan | h-WITNESSED | d-boot | v-eye
+> z-Azawan | h-WITNESSED | d-boot | v-see
 >
 > "Azawan sees a boot — from memory."
 

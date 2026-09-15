@@ -18,7 +18,7 @@ To say **how many** of a thing there are, put a number word after the noun, in t
 
 > `zazawan dabogolx g+3 vejel.`
 >
-> z-Azawan | d-book-x | g-three | v-eye
+> z-Azawan | d-book-x | g-three | v-see
 >
 > "Azawan sees three books."
 
@@ -136,21 +136,21 @@ Short drills for Beginner. Try each item before opening **Show answer**. Count w
 
 ::: details Show answer
 `zazawan dereralx g+3 vejel.`
-<!-- gloss: z-Azawan | d-bread-x | g-three | v-eye -->
+<!-- gloss: z-Azawan | d-bread-x | g-three | v-see -->
 :::
 
 **5.** *Ululon tells the second pie.*
 
 ::: details Show answer
 `zululon dububel g#2 vezehel.`
-<!-- gloss: z-Ululon | d-pie | g-second | v-speech -->
+<!-- gloss: z-Ululon | d-pie | g-second | v-tell -->
 :::
 
 **6.** *Uhubun sees more than one doughnut.*
 
 ::: details Show answer
 `zuhubun dodogulx g+ vejel.`
-<!-- gloss: z-Uhubun | d-doughnut-x | g-more-than-one | v-eye -->
+<!-- gloss: z-Uhubun | d-doughnut-x | g-more-than-one | v-see -->
 :::
 
 **7.** *Ululon punches three baguettes.*
@@ -191,14 +191,14 @@ Short drills for Beginner. Try each item before opening **Show answer**. Count w
 :::
 
 **4.** `zuhubun dogogelx g+3 vejel.`
-<!-- gloss: z-Uhubun | d-cookie-x | g-three | v-eye -->
+<!-- gloss: z-Uhubun | d-cookie-x | g-three | v-see -->
 
 ::: details Show answer
 *Uhubun sees three cookies.*
 :::
 
 **5.** `zazawan dububelx g+ vejel.`
-<!-- gloss: z-Azawan | d-pie-x | g-more-than-one | v-eye -->
+<!-- gloss: z-Azawan | d-pie-x | g-more-than-one | v-see -->
 
 ::: details Show answer
 *Azawan sees more than one pie.*
@@ -872,7 +872,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Pre
 
 ::: details Show answer
 `x#2 zazawan vajul.`
-<!-- gloss: x-second | z-Azawan | v-chair -->
+<!-- gloss: x-second | z-Azawan | v-sit -->
 :::
 
 **6.** *Three more!*
@@ -941,14 +941,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Pre
 :::
 
 **7.** `zazawan d=+ vejel.`
-<!-- gloss: z-Azawan | d-more-than-one | v-eye -->
+<!-- gloss: z-Azawan | d-more-than-one | v-see -->
 
 ::: details Show answer
 *Azawan sees that amount again.*
 :::
 
 **8.** `zuhubun vajul h#3.`
-<!-- gloss: z-Uhubun | v-chair | h-third -->
+<!-- gloss: z-Uhubun | v-sit | h-third -->
 
 ::: details Show answer
 *Uhubun sits for the third time.*
@@ -1294,7 +1294,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. Digitle
 
 ::: details Show answer
 `x#e zazawan vejel.`
-<!-- gloss: x-finally | z-Azawan | v-eye -->
+<!-- gloss: x-finally | z-Azawan | v-see -->
 :::
 
 **4.** *To infinity!*
@@ -1315,7 +1315,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. Digitle
 
 ::: details Show answer
 `x#e- zuhubun vejel.`
-<!-- gloss: x-starting-with | z-Uhubun | v-eye -->
+<!-- gloss: x-starting-with | z-Uhubun | v-see -->
 :::
 
 #### Agalan → English
@@ -1335,7 +1335,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. Digitle
 :::
 
 **3.** `x#e- zululon vejel.`
-<!-- gloss: x-starting-with | z-Ululon | v-eye -->
+<!-- gloss: x-starting-with | z-Ululon | v-see -->
 
 ::: details Show answer
 *Starting with: Ululon sees.*
@@ -1349,7 +1349,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. Digitle
 :::
 
 **5.** `zazawan vejel h#1e.`
-<!-- gloss: z-Azawan | v-eye | h-#-1e -->
+<!-- gloss: z-Azawan | v-see | h-#-1e -->
 
 ::: details Show answer
 *Azawan sees for the gazillionth time.*

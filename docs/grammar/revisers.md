@@ -233,14 +233,14 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 :::
 
 **6.** `ul zazawan vajul.`
-<!-- gloss: except | z-Azawan | v-chair -->
+<!-- gloss: except | z-Azawan | v-sit -->
 
 ::: details Show answer
 *Except, Azawan sits.*
 :::
 
 **7.** `ol zuhubun vejel daladel.`
-<!-- gloss: instead | z-Uhubun | v-eye | d-plate -->
+<!-- gloss: instead | z-Uhubun | v-see | d-plate -->
 
 ::: details Show answer
 *Instead, Uhubun sees the plate.*
@@ -416,7 +416,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan vuwurul al zululon vezehel xam.`
-<!-- gloss: z-Azawan | v-write | including | z-Ululon | v-speech | x-and.open -->
+<!-- gloss: z-Azawan | v-write | including | z-Ululon | v-tell | x-and.open -->
 :::
 
 **7.** *Additionally, therefore Uhubun writes.*
@@ -464,7 +464,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 :::
 
 **5.** `vuwurul om vezehel.`
-<!-- gloss: v-write | instead.open | v-speech -->
+<!-- gloss: v-write | instead.open | v-tell -->
 
 ::: details Show answer
 *Wrote, with tell as a replacement.*
@@ -478,7 +478,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 :::
 
 **7.** `al xezazal zululon vezehel.`
-<!-- gloss: additionally | x-therefore | z-Ululon | v-speech -->
+<!-- gloss: additionally | x-therefore | z-Ululon | v-tell -->
 
 ::: details Show answer
 *Additionally, therefore Ululon tells.*

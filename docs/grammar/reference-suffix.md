@@ -348,7 +348,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 
 ::: details Show answer
 `zazawan vajul hohozon.`
-<!-- gloss: z-Azawan | v-chair | h-Ohozon -->
+<!-- gloss: z-Azawan | v-sit | h-Ohozon -->
 :::
 
 **2.** *The bed is Diagnosis* (the named style).
@@ -369,14 +369,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 
 ::: details Show answer
 `zazawan vejel dohozoxabeden.`
-<!-- gloss: z-Azawan | v-eye | d-Ohozo-x-Abeden -->
+<!-- gloss: z-Azawan | v-see | d-Ohozo-x-Abeden -->
 :::
 
 **5.** *Edozen sees Uhubun.* (office handle, first mention)
 
 ::: details Show answer
 `zedozen vejel duhubun.`
-<!-- gloss: z-Edozen | v-eye | d-Uhubun -->
+<!-- gloss: z-Edozen | v-see | d-Uhubun -->
 :::
 
 **6.** *Ululon injects the Injection* (that titled action).
@@ -396,7 +396,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 #### Agalan → English
 
 **1.** `zuhubun vajul hohozon.`
-<!-- gloss: z-Uhubun | v-chair | h-Ohozon -->
+<!-- gloss: z-Uhubun | v-sit | h-Ohozon -->
 
 ::: details Show answer
 *Uhubun sits according to Hospital* (the named frame).
@@ -431,7 +431,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 :::
 
 **6.** `zedozexohozon vejel dazawan.`
-<!-- gloss: z-Edoze-x-Ohozon | v-eye | d-Azawan -->
+<!-- gloss: z-Edoze-x-Ohozon | v-see | d-Azawan -->
 
 ::: details Show answer
 *Diagnosis-Hospital sees Azawan.* (that office’s full title)

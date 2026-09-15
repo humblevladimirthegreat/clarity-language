@@ -111,7 +111,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Tag **c
 
 ::: details Show answer
 `zazawan daragal vejexal.`
-<!-- gloss: z-Azawan | d-rock | v-eye-able -->
+<!-- gloss: z-Azawan | d-rock | v-see-able -->
 :::
 
 **5.** *Azawan climbs.* (ordinary event, no can / can’t tag)

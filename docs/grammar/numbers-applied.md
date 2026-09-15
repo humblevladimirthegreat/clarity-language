@@ -14,7 +14,7 @@ English needs a **code**: a phone, room, channel, or serial, not a counted amoun
 
 > `zazawan d_555,123,4567 vejel.`
 >
-> z-Azawan | d-_555,123,4567 | v-eye
+> z-Azawan | d-_555,123,4567 | v-see
 >
 > "Azawan sees 555-123-4567."
 
@@ -215,14 +215,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**. One
 
 ::: details Show answer
 `zazawan d_555,123,4567 vejel.`
-<!-- gloss: z-Azawan | d-_555,123,4567 | v-eye -->
+<!-- gloss: z-Azawan | d-_555,123,4567 | v-see -->
 :::
 
 **2.** *At 15:30 Azawan sees Uhubun.*
 
 ::: details Show answer
 `h_15,30 zazawan duhubun vejel.`
-<!-- gloss: h-_15,30 | z-Azawan | d-Uhubun | v-eye -->
+<!-- gloss: h-_15,30 | z-Azawan | d-Uhubun | v-see -->
 :::
 
 **3.** *25% of the pills.*
@@ -236,7 +236,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. One
 
 ::: details Show answer
 `zazawan daragal g+2 vejel.`
-<!-- gloss: z-Azawan | d-rock | g-two | v-eye -->
+<!-- gloss: z-Azawan | d-rock | g-two | v-see -->
 :::
 
 **5.** *From 3 to 5 on time.*
@@ -250,7 +250,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. One
 
 ::: details Show answer
 `zululon d_911 vejel.`
-<!-- gloss: z-Ululon | d-_911 | v-eye -->
+<!-- gloss: z-Ululon | d-_911 | v-see -->
 :::
 
 **7.** *Ululon punches five grams.*
@@ -277,7 +277,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. One
 :::
 
 **2.** `h_09,00 zuhubun vejel.`
-<!-- gloss: h-_09,00 | z-Uhubun | v-eye -->
+<!-- gloss: h-_09,00 | z-Uhubun | v-see -->
 
 ::: details Show answer
 *At 09:00 Uhubun sees.*
@@ -291,7 +291,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. One
 :::
 
 **4.** `zazawan dozobol g+1 vejel.`
-<!-- gloss: z-Azawan | d-spoon | g-one | v-eye -->
+<!-- gloss: z-Azawan | d-spoon | g-one | v-see -->
 
 ::: details Show answer
 *Azawan sees one liter.*
@@ -305,7 +305,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. One
 :::
 
 **6.** `zululon d_000 vejel.`
-<!-- gloss: z-Ululon | d-_000 | v-eye -->
+<!-- gloss: z-Ululon | d-_000 | v-see -->
 
 ::: details Show answer
 *Ululon sees 000.*

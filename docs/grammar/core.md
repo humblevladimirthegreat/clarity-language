@@ -35,7 +35,7 @@ The usual order is **Subject – Direct Object – Verb**. Because the first let
 
 > `zodogol dagadal vejel.`
 >
-> z-dog | d-cat | v-eye
+> z-dog | d-cat | v-see
 >
 > "A dog sees a cat."
 
@@ -57,7 +57,7 @@ After an adjective, you can add how intense it is or in what manner. That extra 
 
 > `zodogol gelulul welem vawalal.`
 >
-> z-dog | g-blue | w-size | v-walk
+> z-dog | g-blue | w-very | v-walk
 >
 > "A very blue dog walks."
 
@@ -79,13 +79,13 @@ Some adjectives and adverbs name a **relation** that needs another person or thi
 
 > `hogorem bohohul`
 >
-> h-inclusion | b-house
+> h-inside | b-house
 >
 > "inside a house"
 
 > `zodogol velebel hogorem bohohul.`
 >
-> z-dog | v-sleep | h-inclusion | b-house
+> z-dog | v-sleep | h-inside | b-house
 >
 > "A dog sleeps inside a house."
 
@@ -150,7 +150,7 @@ The dependent may open with its own `/j/` words, or keep the main sentence’s s
 
 > `zazawan dululon vezehel dadorol zodogol vurunul.`
 >
-> z-Azawan | d-Ululon | v-speech | d-next-clause | z-dog | v-run
+> z-Azawan | d-Ululon | v-tell | d-next-clause | z-dog | v-run
 >
 > "Azawan tells Ululon that the dog runs."
 
@@ -262,21 +262,21 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan vajul.`
-<!-- gloss: z-Azawan | v-chair -->
+<!-- gloss: z-Azawan | v-sit -->
 :::
 
 **3.** *Uhubun sees Azawan.*
 
 ::: details Show answer
 `zuhubun dazawan vejel.`
-<!-- gloss: z-Uhubun | d-Azawan | v-eye -->
+<!-- gloss: z-Uhubun | d-Azawan | v-see -->
 :::
 
 **4.** *A very angry Ululon stands.*
 
 ::: details Show answer
 `zululon ganagal welem vazanul.`
-<!-- gloss: z-Ululon | g-angry | w-size | v-stand -->
+<!-- gloss: z-Ululon | g-angry | w-very | v-stand -->
 :::
 
 **5.** *Azawan writes hastily.*
@@ -297,7 +297,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan dululon vezehel dadorol zuhubun vajul.`
-<!-- gloss: z-Azawan | d-Ululon | v-speech | d-next-clause | z-Uhubun | v-chair -->
+<!-- gloss: z-Azawan | d-Ululon | v-tell | d-next-clause | z-Uhubun | v-sit -->
 :::
 
 **8.** *Azawan runs because Ululon punches a guard.*
@@ -324,21 +324,21 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 :::
 
 **3.** `zazawan duhubun vejel.`
-<!-- gloss: z-Azawan | d-Uhubun | v-eye -->
+<!-- gloss: z-Azawan | d-Uhubun | v-see -->
 
 ::: details Show answer
 *Azawan sees Uhubun.*
 :::
 
 **4.** `zuhubun guzumum donebal vejel.`
-<!-- gloss: z-Uhubun | g-happy | d-money-bag | v-eye -->
+<!-- gloss: z-Uhubun | g-happy | d-money-bag | v-see -->
 
 ::: details Show answer
 *Happy Uhubun sees a money-bag.*
 :::
 
 **5.** `jol zazawan vajul?`
-<!-- gloss: j-question | z-Azawan | v-chair -->
+<!-- gloss: j-question | z-Azawan | v-sit -->
 
 ::: details Show answer
 *Does Azawan sit?*
@@ -352,7 +352,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 :::
 
 **7.** `zululon vazanal hogorem banabal.`
-<!-- gloss: z-Ululon | v-sneak | h-inclusion | b-bank -->
+<!-- gloss: z-Ululon | v-sneak | h-inside | b-bank -->
 
 ::: details Show answer
 *Ululon sneaks inside a bank.*
@@ -537,14 +537,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `jam zazawan vajul.`
-<!-- gloss: j-soft-statement | z-Azawan | v-chair -->
+<!-- gloss: j-soft-statement | z-Azawan | v-sit -->
 :::
 
 **2.** *Does Uhubun see a ticket, perhaps?*
 
 ::: details Show answer
 `jom zuhubun dugedel vejel?`
-<!-- gloss: j-soft-question | z-Uhubun | d-ticket | v-eye -->
+<!-- gloss: j-soft-question | z-Uhubun | d-ticket | v-see -->
 :::
 
 **3.** *Please stand.*
@@ -579,7 +579,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan vajul. xuvumul zululon vurunul.`
-<!-- gloss: z-Azawan | v-chair | x-next | z-Ululon | v-run -->
+<!-- gloss: z-Azawan | v-sit | x-next | z-Ululon | v-run -->
 :::
 
 **8.** *Azawan runs because Ululon punches Azawan because Uhubun screams.*
@@ -592,7 +592,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 #### Agalan → English
 
 **1.** `jam hozal bazawan zululon dugedel vejel.`
-<!-- gloss: j-soft-statement | h-hash | b-Azawan | z-Ululon | d-ticket | v-eye -->
+<!-- gloss: j-soft-statement | h-hash | b-Azawan | z-Ululon | d-ticket | v-see -->
 
 ::: details Show answer
 *As for Azawan, maybe Ululon sees a ticket.*
@@ -606,7 +606,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 :::
 
 **3.** `jem duhubun vezehel!`
-<!-- gloss: j-request | d-Uhubun | v-speech -->
+<!-- gloss: j-request | d-Uhubun | v-tell -->
 
 ::: details Show answer
 *Please tell Uhubun.*
@@ -627,7 +627,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 :::
 
 **6.** `zuhubun vajul. xanelol zululon dulugal vejel.`
-<!-- gloss: z-Uhubun | v-chair | x-meanwhile | z-Ululon | d-luggage | v-eye -->
+<!-- gloss: z-Uhubun | v-sit | x-meanwhile | z-Ululon | d-luggage | v-see -->
 
 ::: details Show answer
 *Uhubun sits. Meanwhile Ululon sees luggage.*

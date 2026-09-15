@@ -4,6 +4,7 @@ consider removing emojis from docs (but keep in lexicon)
 confirm logic for detecting glosses
 consider visible gloss for exercises
 advanced section somewhere on how order affects focus
+consider checking exercise word banks
 
 ## Evidentiality / tense
 

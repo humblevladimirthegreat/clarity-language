@@ -79,7 +79,7 @@ If more than one slot has join **-r** in the same question, each of those **-r**
 
 > `jol zar vejel dar?`
 >
-> j-question | z-who | v-eye | d-who
+> j-question | z-who | v-see | d-who
 >
 > "Who sees what?"
 
@@ -91,7 +91,7 @@ If only one slot is unknown, put join **-r** only there. Write the known thing a
 
 > `jol zar vejel dodogol?`
 >
-> j-question | z-who | v-eye | d-dog
+> j-question | z-who | v-see | d-dog
 >
 > "Who sees a dog?"
 
@@ -188,14 +188,14 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `jol zazawan vajul?`
-<!-- gloss: j-question | z-Azawan | v-chair -->
+<!-- gloss: j-question | z-Azawan | v-sit -->
 :::
 
 **2.** *Who sees the umbrella?*
 
 ::: details Show answer
 `jol zar vejel dumubul?`
-<!-- gloss: j-question | z-who | v-eye | d-umbrella -->
+<!-- gloss: j-question | z-who | v-see | d-umbrella -->
 :::
 
 **3.** *Is Ululon writing, I wonder?*
@@ -209,21 +209,21 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `jol zar vejel dar?`
-<!-- gloss: j-question | z-who | v-eye | d-who -->
+<!-- gloss: j-question | z-who | v-see | d-who -->
 :::
 
 **5.** *Who else sees the coat?*
 
 ::: details Show answer
 `jol zur vejel dojal?`
-<!-- gloss: j-question | z-who-else | v-eye | d-coat -->
+<!-- gloss: j-question | z-who-else | v-see | d-coat -->
 :::
 
 **6.** *Azawan tells Uhubun. Yes.* (confirm as a second turn)
 
 ::: details Show answer
 `zazawan vezehel duhubun. jael.`
-<!-- gloss: z-Azawan | v-speech | d-Uhubun | j-yes -->
+<!-- gloss: z-Azawan | v-tell | d-Uhubun | j-yes -->
 :::
 
 **7.** *No.* / *False.* (polar, not “don’t”)
@@ -243,7 +243,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 #### Agalan → English
 
 **1.** `jom zuhubun vejel dagegol?`
-<!-- gloss: j-soft-question | z-Uhubun | v-eye | d-solution -->
+<!-- gloss: j-soft-question | z-Uhubun | v-see | d-solution -->
 
 ::: details Show answer
 *Is Uhubun seeing the key, I wonder?*
@@ -257,14 +257,14 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 :::
 
 **3.** `jol zal vajul?`
-<!-- gloss: j-question | z-and | v-chair -->
+<!-- gloss: j-question | z-and | v-sit -->
 
 ::: details Show answer
 *Does nobody sit?*
 :::
 
 **4.** `jol zar vezehel dar?`
-<!-- gloss: j-question | z-who | v-speech | d-who -->
+<!-- gloss: j-question | z-who | v-tell | d-who -->
 
 ::: details Show answer
 *Who tells what?*
@@ -420,7 +420,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `jol zazawan vul vezehel?`
-<!-- gloss: j-question | z-Azawan | v-not | v-speech -->
+<!-- gloss: j-question | z-Azawan | v-not | v-tell -->
 `jael.`
 :::
 
@@ -428,7 +428,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `jol zuhubun vajul har?`
-<!-- gloss: j-question | z-Uhubun | v-chair | h-when -->
+<!-- gloss: j-question | z-Uhubun | v-sit | h-when -->
 :::
 
 **3.** *Which key?* (one unknown)
@@ -525,7 +525,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 :::
 
 **8.** `jol zar vezehel zuhubun har?`
-<!-- gloss: j-question | z-who | v-speech | z-Uhubun | h-when -->
+<!-- gloss: j-question | z-who | v-tell | z-Uhubun | h-when -->
 
 ::: details Show answer
 *Who tells Uhubun when?*

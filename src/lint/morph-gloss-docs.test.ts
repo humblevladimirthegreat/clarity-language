@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
 import { createClassifyTablesFromRows, type ClassifyTables } from "../parse/classify.js";
-import { emptyPosEnglish } from "../lexicon-search.js";
+import { emptyPosEnglish, parseEnglishByPos } from "../lexicon-search.js";
 
 import {
   extractTranslationExercises,
@@ -14,7 +14,7 @@ function tablesOf(): ClassifyTables {
   return createClassifyTablesFromRows(
     [
       { emoji: "", literal: "swan", metaphorical: "grace", clarity: "azawa", mnemonic: "", englishByPos: "", posEnglish: emptyPosEnglish() },
-      { emoji: "", literal: "chair", metaphorical: "", clarity: "aju", mnemonic: "", englishByPos: "", posEnglish: emptyPosEnglish() },
+      { emoji: "", literal: "chair", metaphorical: "", clarity: "aju", mnemonic: "", englishByPos: "v:sit", posEnglish: parseEnglishByPos("v:sit", { literal: "chair" }) },
     ],
     [],
   );

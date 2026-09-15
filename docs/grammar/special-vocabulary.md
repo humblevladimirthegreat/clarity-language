@@ -57,7 +57,7 @@ When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*)
 
 > `zazawan zagegol g#2 vezehel.`
 >
-> z-Azawan | z-solution | g-second | v-speech
+> z-Azawan | z-solution | g-second | v-tell
 >
 > "Azawan names solution 2."
 
@@ -124,7 +124,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan zolalal g#1 vezehel.`
-<!-- gloss: z-Azawan | z-goal | g-first | v-speech -->
+<!-- gloss: z-Azawan | z-goal | g-first | v-tell -->
 :::
 
 **3.** *Proud of the lantern* (met competence, mental channel; flood bottled)
@@ -172,7 +172,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 :::
 
 **2.** `zuhubun zolalal g#1 vezehel.`
-<!-- gloss: z-Uhubun | z-goal | g-first | v-speech -->
+<!-- gloss: z-Uhubun | z-goal | g-first | v-tell -->
 
 ::: details Show answer
 *Uhubun names goal 1.*
@@ -200,7 +200,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 :::
 
 **6.** `zululon zagegol g#1 vezehel.`
-<!-- gloss: z-Ululon | z-solution | g-first | v-speech -->
+<!-- gloss: z-Ululon | z-solution | g-first | v-tell -->
 
 ::: details Show answer
 *Ululon names solution 1.*
@@ -295,7 +295,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan hual vajul habulul.`
-<!-- gloss: z-Azawan | h-always | v-chair | h-UNCOUNTERED -->
+<!-- gloss: z-Azawan | h-always | v-sit | h-UNCOUNTERED -->
 :::
 
 **3.** *Every book, by definition.*
@@ -329,7 +329,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 #### Agalan → English
 
 **1.** `zazawan hual vajul harogul.`
-<!-- gloss: z-Azawan | h-always | v-chair | h-COMMON -->
+<!-- gloss: z-Azawan | h-always | v-sit | h-COMMON -->
 
 ::: details Show answer
 *Azawan always sits, usually.*

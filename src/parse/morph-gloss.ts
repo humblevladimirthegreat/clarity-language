@@ -21,10 +21,11 @@
  * | mid-word `x` | always `-x-` segments | never a fused English name |
  * | house-cast `-n` | `Azawan` / `Ululon` / `Uhubun` | |
  * | `zugobon` / `zedonen` / `zahan` / `zenenun` | `speaker` / `listener` / `interlocutors` / `someone` | |
- * | ordinary lexicon (`vejel`, `vajul`, …) | published literal / metaphor only | **no** per-root `/v/` → *see* / *sit* exceptions; [glosses.md](../../docs/meta/glosses.md#no-lexicon-pos-specials) |
+ * | ordinary lexicon (`vejel`, `vajul`, …) | packed `english_by_pos` when present for this role + sense, else literal / metaphor | [glosses.md](../../docs/meta/glosses.md#role-english) |
  */
 
 import { classify, type ClassifyTables } from "./classify.js";
+import type { PublishedRow } from "../lexicon-search.js";
 import { parseWithTables } from "./parse-core.js";
 import { parseWords, WordParseError } from "./word.js";
 import type {
@@ -733,7 +734,10 @@ function xPieces(word: LexWord, tables: ClassifyTables): string[] {
   if (family.xFamily === "role") {
     const role = ROLE_VOWEL[family.roleVowel ?? ""] ?? "role";
     const host = (family.rightRoots ?? []).map((root) =>
-      rootSense(root, word.ending === "n" ? "n" : "m", tables, { named: word.ending === "n" }),
+      rootSense(root, word.ending === "n" ? "n" : "m", tables, {
+        named: word.ending === "n",
+        pos: word.pos,
+      }),
     );
     return [role, ...host];
   }
@@ -746,6 +750,7 @@ function xPieces(word: LexWord, tables: ClassifyTables): string[] {
         : rootSense(hostRoot, word.ending, tables, {
             named: word.reading === "greeting" || word.ending === "n",
             need: word.reading === "value",
+            pos: word.pos,
           });
     // Ability / greeting bids: one hyphenated english slot (`walking-unable-temporary`,
     // `Ululon-queue`). Values keep a visible `-x-` hinge (`competence-x-motive`).
@@ -767,7 +772,7 @@ function xPieces(word: LexWord, tables: ClassifyTables): string[] {
 
   if (family.xFamily === "numeric") {
     const host = family.leftRoots.map((root) =>
-      rootSense(root, word.ending, tables, { named: word.ending === "n" }),
+      rootSense(root, word.ending, tables, { named: word.ending === "n", pos: word.pos }),
     );
     const num = family.numberStem ? numericKindLabel(family.numberStem, word.pos) : "num";
     return [...host, num];
@@ -778,11 +783,12 @@ function xPieces(word: LexWord, tables: ClassifyTables): string[] {
     COMPASS_ROOTS.has(family.leftRoots[0]!) &&
     (family.rightRoots?.length ?? 0) > 0
   ) {
-    const dir = rootSense(family.leftRoots[0]!, "l", tables, { named: false });
+    const dir = rootSense(family.leftRoots[0]!, "l", tables, { named: false, pos: word.pos });
     const anchors = (family.rightRoots ?? []).map((root, i, all) =>
       rootSense(root, word.ending, tables, {
         named: word.ending === "n",
         nameLast: word.ending === "n" && i === all.length - 1,
+        pos: word.pos,
       }),
     );
     return [dir, ...anchors];
@@ -796,6 +802,7 @@ function xPieces(word: LexWord, tables: ClassifyTables): string[] {
       named: named && !unpackCitation,
       nameLast: named && !unpackCitation && i === all.length - 1,
       citationEtymology: unpackCitation,
+      pos: word.pos,
     }),
   );
 }
@@ -836,6 +843,7 @@ function contentBody(word: LexWord, roots: string[], tables: ClassifyTables): st
     return rootSense(roots[0]!, word.ending, tables, {
       named: word.ending === "n",
       need: word.reading === "value",
+      pos: word.pos,
     });
   }
   return roots
@@ -843,6 +851,7 @@ function contentBody(word: LexWord, roots: string[], tables: ClassifyTables): st
       rootSense(root, word.ending, tables, {
         named: word.ending === "n",
         need: word.reading === "value",
+        pos: word.pos,
       }),
     )
     .join("-x-");
@@ -850,6 +859,16 @@ function contentBody(word: LexWord, roots: string[], tables: ClassifyTables): st
 
 function overlayLabel(overlay: LexOverlay): string {
   return overlay.gloss;
+}
+
+function packedRoleLemma(
+  row: PublishedRow,
+  ending: Ending | undefined,
+  pos: Pos | undefined,
+): string | undefined {
+  if (!pos) return undefined;
+  const bank = ending === "m" ? row.posEnglish.metaphorical : row.posEnglish.literal;
+  return bank[pos];
 }
 
 function rootSense(
@@ -861,6 +880,7 @@ function rootSense(
     nameLast?: boolean;
     need?: boolean;
     citationEtymology?: boolean;
+    pos?: Pos;
   } = {},
 ): string {
   if (opts.citationEtymology) {
@@ -896,6 +916,8 @@ function rootSense(
   }
 
   const row = tables.published.get(root);
+  const packed = row ? packedRoleLemma(row, ending, opts.pos) : undefined;
+  if (packed) return hyphenEnglish(packed);
   if (ending === "m") return hyphenEnglish(row?.metaphorical || row?.literal || root);
   if (row?.literal) return hyphenEnglish(row.literal);
   if (row?.metaphorical) return hyphenEnglish(row.metaphorical);

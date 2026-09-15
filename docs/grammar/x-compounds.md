@@ -98,14 +98,14 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zululon dahamexewenen vejel.`
-<!-- gloss: z-Ululon | d-Ahame-x-Ewenen | v-eye -->
+<!-- gloss: z-Ululon | d-Ahame-x-Ewenen | v-see -->
 :::
 
 **7.** *Azawan sees a bedroom.*
 
 ::: details Show answer
 `zazawan dohohulabedel vejel.`
-<!-- gloss: z-Azawan | d-bedroom | v-eye -->
+<!-- gloss: z-Azawan | d-bedroom | v-see -->
 :::
 
 **8.** *Ululon punches a friend.*
@@ -125,7 +125,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 :::
 
 **2.** `zuhubun dobeleladorol vejel.`
-<!-- gloss: z-Uhubun | d-doorbell | v-eye -->
+<!-- gloss: z-Uhubun | d-doorbell | v-see -->
 
 ::: details Show answer
 *Uhubun sees a doorbell.*
@@ -146,21 +146,21 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 :::
 
 **5.** `zuhubun dohohulabedel vejel.`
-<!-- gloss: z-Uhubun | d-bedroom | v-eye -->
+<!-- gloss: z-Uhubun | d-bedroom | v-see -->
 
 ::: details Show answer
 *Uhubun sees a bedroom.*
 :::
 
 **6.** `zeberelonogol dahamel vejel.`
-<!-- gloss: z-friend | d-hammer | v-eye -->
+<!-- gloss: z-friend | d-hammer | v-see -->
 
 ::: details Show answer
 *A friend sees a hammer.*
 :::
 
 **7.** `zululon dazel vejel.`
-<!-- gloss: z-Ululon | d-axe | v-eye -->
+<!-- gloss: z-Ululon | d-axe | v-see -->
 
 ::: details Show answer
 *Ululon sees an axe.*
@@ -415,7 +415,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 :::
 
 **8.** `jazawaxen zuhubun dobeleladorol vejel.`
-<!-- gloss: j-Azawan-queue | z-Uhubun | d-doorbell | v-eye -->
+<!-- gloss: j-Azawan-queue | z-Uhubun | d-doorbell | v-see -->
 
 ::: details Show answer
 *Azawan — one moment please.* (calling); *Uhubun sees a doorbell.*
@@ -494,14 +494,14 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zululon zohohulurel vajul.`
-<!-- gloss: z-Ululon | z-firehouse | v-chair -->
+<!-- gloss: z-Ululon | z-firehouse | v-sit -->
 :::
 
 **4.** *Azawan sees a raincoat.*
 
 ::: details Show answer
 `zazawan dojalanunul vejel.`
-<!-- gloss: z-Azawan | d-raincoat | v-eye -->
+<!-- gloss: z-Azawan | d-raincoat | v-see -->
 :::
 
 **5.** *Azawan and Ululon* (two people, not one stem)
@@ -528,28 +528,28 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 :::
 
 **2.** `zuhubun zabogoluwurul vejel.`
-<!-- gloss: z-Uhubun | z-notebook | v-eye -->
+<!-- gloss: z-Uhubun | z-notebook | v-see -->
 
 ::: details Show answer
 *Uhubun sees a notebook.*
 :::
 
 **3.** `zazawan zobeleladorol vejel.`
-<!-- gloss: z-Azawan | z-doorbell | v-eye -->
+<!-- gloss: z-Azawan | z-doorbell | v-see -->
 
 ::: details Show answer
 *Azawan sees a doorbell.*
 :::
 
 **4.** `zeberelonogol zohohulurel vajul.`
-<!-- gloss: z-friend | z-firehouse | v-chair -->
+<!-- gloss: z-friend | z-firehouse | v-sit -->
 
 ::: details Show answer
 *A friend sits in a firehouse.*
 :::
 
 **5.** `zululon durel vejel.`
-<!-- gloss: z-Ululon | d-fire | v-eye -->
+<!-- gloss: z-Ululon | d-fire | v-see -->
 
 ::: details Show answer
 *Ululon sees a fire.*

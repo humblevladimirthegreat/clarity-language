@@ -290,7 +290,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zululon vubunul zazawan duhubun vejel xam.`
-<!-- gloss: z-Ululon | v-punch | z-Azawan | d-Uhubun | v-eye | x-and.open -->
+<!-- gloss: z-Ululon | v-punch | z-Azawan | d-Uhubun | v-see | x-and.open -->
 :::
 
 #### Agalan → English
@@ -670,7 +670,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan duhubun vejel zululon duhubun vuguzul xan.`
-<!-- gloss: z-Azawan | d-Uhubun | v-eye | z-Ululon | d-Uhubun | v-kiss | x-and-then -->
+<!-- gloss: z-Azawan | d-Uhubun | v-see | z-Ululon | d-Uhubun | v-kiss | x-and-then -->
 :::
 
 **6.** *at least Uhubun*
@@ -718,7 +718,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 :::
 
 **4.** `vuguzul vezehel vam duhubun.`
-<!-- gloss: v-kiss | v-speech | v-and.open | d-Uhubun -->
+<!-- gloss: v-kiss | v-tell | v-and.open | d-Uhubun -->
 
 ::: details Show answer
 *kisses and tells Uhubun*
@@ -732,7 +732,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 :::
 
 **6.** `zazawan duhubun vejel zululon duhubun vuguzul xol zuhubun vajul xal.`
-<!-- gloss: z-Azawan | d-Uhubun | v-eye | z-Ululon | d-Uhubun | v-kiss | x-or-exactly-one | z-Uhubun | v-chair | x-and -->
+<!-- gloss: z-Azawan | d-Uhubun | v-see | z-Ululon | d-Uhubun | v-kiss | x-or-exactly-one | z-Uhubun | v-sit | x-and -->
 
 ::: details Show answer
 *(Azawan sees Uhubun or Ululon kisses Uhubun) and Uhubun sits.*

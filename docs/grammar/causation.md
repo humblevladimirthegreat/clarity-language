@@ -115,7 +115,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Everyda
 
 ::: details Show answer
 `zuhubun vejel vaom.`
-<!-- gloss: z-Uhubun | v-eye | v-and/or.open -->
+<!-- gloss: z-Uhubun | v-see | v-and/or.open -->
 :::
 
 **6.** *A potted plant or a window would work.*
@@ -129,7 +129,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Everyda
 
 ::: details Show answer
 `zululon vezehel vaom.`
-<!-- gloss: z-Ululon | v-speech | v-and/or.open -->
+<!-- gloss: z-Ululon | v-tell | v-and/or.open -->
 :::
 
 **8.** *Fire is enough.*
@@ -163,7 +163,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Everyda
 :::
 
 **4.** `zazawan vejel vaom.`
-<!-- gloss: z-Azawan | v-eye | v-and/or.open -->
+<!-- gloss: z-Azawan | v-see | v-and/or.open -->
 
 ::: details Show answer
 *Azawan’s seeing would work.*
@@ -349,7 +349,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Mar
 
 ::: details Show answer
 `zazawan vajul hal.`
-<!-- gloss: z-Azawan | v-chair | h-never -->
+<!-- gloss: z-Azawan | v-sit | h-never -->
 :::
 
 **2.** *Flooding without a knob.*
@@ -370,21 +370,21 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Mar
 
 ::: details Show answer
 `zazawan vajul hadorom badorol zuhubun vejel.`
-<!-- gloss: z-Azawan | v-chair | h-if | b-next-clause | z-Uhubun | v-eye -->
+<!-- gloss: z-Azawan | v-sit | h-if | b-next-clause | z-Uhubun | v-see -->
 :::
 
 **5.** *Ululon pours if and only if Azawan sits.*
 
 ::: details Show answer
 `zululon vorurul hezazem badorol zazawan vajul.`
-<!-- gloss: z-Ululon | v-pour | h-iff | b-next-clause | z-Azawan | v-chair -->
+<!-- gloss: z-Ululon | v-pour | h-iff | b-next-clause | z-Azawan | v-sit -->
 :::
 
 **6.** *Uhubun tells because Ululon pours.*
 
 ::: details Show answer
 `zuhubun vezehel hurugum badorol zululon vorurul.`
-<!-- gloss: z-Uhubun | v-speech | h-because | b-next-clause | z-Ululon | v-pour -->
+<!-- gloss: z-Uhubun | v-tell | h-because | b-next-clause | z-Ululon | v-pour -->
 :::
 
 **7.** *A knob would work (as an ought, not the sole law).*
@@ -418,14 +418,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Mar
 :::
 
 **3.** `zuhubun vajul hadorom badorol zululon vejel.`
-<!-- gloss: z-Uhubun | v-chair | h-if | b-next-clause | z-Ululon | v-eye -->
+<!-- gloss: z-Uhubun | v-sit | h-if | b-next-clause | z-Ululon | v-see -->
 
 ::: details Show answer
 *Uhubun sits if Ululon sees.*
 :::
 
 **4.** `zazawan vorurul hezazem badorol zuhubun vezehel.`
-<!-- gloss: z-Azawan | v-pour | h-iff | b-next-clause | z-Uhubun | v-speech -->
+<!-- gloss: z-Azawan | v-pour | h-iff | b-next-clause | z-Uhubun | v-tell -->
 
 ::: details Show answer
 *Azawan pours if and only if Uhubun tells.*
@@ -439,7 +439,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Mar
 :::
 
 **6.** `zuhubun vezehel hal.`
-<!-- gloss: z-Uhubun | v-speech | h-never -->
+<!-- gloss: z-Uhubun | v-tell | h-never -->
 
 ::: details Show answer
 *Uhubun never tells.*
@@ -557,28 +557,28 @@ Short drills for Advanced. Try each item before opening **Show answer**. **`huru
 
 ::: details Show answer
 `zululon vorurul hurugum badorol zuhubun vejel.`
-<!-- gloss: z-Ululon | v-pour | h-because | b-next-clause | z-Uhubun | v-eye -->
+<!-- gloss: z-Ululon | v-pour | h-because | b-next-clause | z-Uhubun | v-see -->
 :::
 
 **2.** *Azawan sits if there is fire.* (fire is not asserted)
 
 ::: details Show answer
 `zazawan vajul hadorom badorol zurel.`
-<!-- gloss: z-Azawan | v-chair | h-if | b-next-clause | z-fire -->
+<!-- gloss: z-Azawan | v-sit | h-if | b-next-clause | z-fire -->
 :::
 
 **3.** *Azawan pours if and only if Uhubun tells.*
 
 ::: details Show answer
 `zazawan vorurul hezazem badorol zuhubun vezehel.`
-<!-- gloss: z-Azawan | v-pour | h-iff | b-next-clause | z-Uhubun | v-speech -->
+<!-- gloss: z-Azawan | v-pour | h-iff | b-next-clause | z-Uhubun | v-tell -->
 :::
 
 **4.** *Azawan sits (that’s a take).* (speaker-grounds, not a world-reason)
 
 ::: details Show answer
 `zazawan hodohom vajul.`
-<!-- gloss: z-Azawan | h-COMMENT | v-chair -->
+<!-- gloss: z-Azawan | h-COMMENT | v-sit -->
 :::
 
 **5.** *A test-tube would work, as a standing pattern.*
@@ -598,7 +598,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. **`huru
 #### Agalan → English
 
 **1.** `zazawan vajul hurugum badorol zurel.`
-<!-- gloss: z-Azawan | v-chair | h-because | b-next-clause | z-fire -->
+<!-- gloss: z-Azawan | v-sit | h-because | b-next-clause | z-fire -->
 
 ::: details Show answer
 *Azawan sits because there is fire.*
@@ -612,14 +612,14 @@ Short drills for Advanced. Try each item before opening **Show answer**. **`huru
 :::
 
 **3.** `zuhubun hodohom vejel.`
-<!-- gloss: z-Uhubun | h-COMMENT | v-eye -->
+<!-- gloss: z-Uhubun | h-COMMENT | v-see -->
 
 ::: details Show answer
 *Uhubun sees (that’s a take).*
 :::
 
 **4.** `zazawan hodohom vajul hurugum badorol zululon vorurul.`
-<!-- gloss: z-Azawan | h-COMMENT | v-chair | h-because | b-next-clause | z-Ululon | v-pour -->
+<!-- gloss: z-Azawan | h-COMMENT | v-sit | h-because | b-next-clause | z-Ululon | v-pour -->
 
 ::: details Show answer
 *Azawan sits, I’d note, because Ululon pours.*

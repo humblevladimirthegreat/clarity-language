@@ -94,7 +94,7 @@ That ending is **prescription force**: how strongly you claim the ought. If you 
 
 > `zazawan vezehel honogoxom.`
 >
-> z-Azawan | v-speech | h-relatedness-ought-endorse
+> z-Azawan | v-tell | h-relatedness-ought-endorse
 >
 > "Azawan tells: relatedness ought to be served (endorse)."
 
@@ -208,7 +208,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan vezehel honogoxom.`
-<!-- gloss: z-Azawan | v-speech | h-relatedness-ought-endorse -->
+<!-- gloss: z-Azawan | v-tell | h-relatedness-ought-endorse -->
 :::
 
 **6.** *Uhubun sleeps: pleasure ought to be served (endorse).*
@@ -263,7 +263,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 :::
 
 **5.** `zululon vezehel honogoxor.`
-<!-- gloss: z-Ululon | v-speech | h-relatedness-ought-invite -->
+<!-- gloss: z-Ululon | v-tell | h-relatedness-ought-invite -->
 
 ::: details Show answer
 *Ululon tells: relatedness ought to be served (invite).*
@@ -300,7 +300,7 @@ English *have to* / *need to* / *doing this for…* often names a **motive**: wh
 
 > `zazawan vezehel honogoxem.`
 >
-> z-Azawan | v-speech | h-relatedness-motive-internal
+> z-Azawan | v-tell | h-relatedness-motive-internal
 >
 > "Azawan tells for relatedness (internal reason)."
 
@@ -342,7 +342,7 @@ Prefer **-m** on **`xu` / `xe` / `xo`** when that table’s dimension is unclear
 
 > `zazawan vezehel holozoxal honogoxem.`
 >
-> z-Azawan | v-speech | h-competence-met-physical | h-relatedness-motive-internal
+> z-Azawan | v-tell | h-competence-met-physical | h-relatedness-motive-internal
 >
 > "Azawan tells: competence is met (physical) and relatedness is the internal motive."
 

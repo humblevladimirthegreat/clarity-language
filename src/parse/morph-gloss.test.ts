@@ -116,14 +116,15 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("hegeraxel", "h-ABIL-unable-temporary");
   });
 
-  it("lexicon senses stay picture English; soft act words are specials", () => {
-    expectLine("vajul", "v-chair");
-    expectLine("vejel", "v-eye");
-    expectLine("vezehel", "v-speech");
+  it("lexicon senses use packed role English when present", () => {
+    expectLine("vajul", "v-sit");
+    expectLine("vejel", "v-see");
+    expectLine("vezehel", "v-tell");
     expectLine("vebarul", "v-departure");
-    expectLine("welem", "w-size");
+    expectLine("welem", "w-very");
     expectLine("gelem", "g-size");
-    expectLine("hogorem", "h-inclusion");
+    expectLine("hogorem", "h-inside");
+    expectLine("zejel", "z-eye");
     expectLine("hozal", "h-hash");
     expectLine("jam", "j-soft-statement");
     expectLine("jem", "j-request");
@@ -234,7 +235,7 @@ describe("compareMorphGloss", () => {
   });
 
   it("house-cast resume without a same-line antecedent", () => {
-    expectLine("zazawarx vajul", "z-←Azawan-x | v-chair");
+    expectLine("zazawarx vajul", "z-←Azawan-x | v-sit");
   });
 
   it("quasi numeric derivation is English", () => {

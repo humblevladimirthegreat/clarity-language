@@ -145,29 +145,30 @@ Same English label for `zugobom` and `zugobon` is fine: both are the *speaker* s
 
 **Special pronouns** ([pronouns.md](../grammar/pronouns.md)): `zugobon` / `zedonen` / `zahan` / `zenenun` / `…orodo…` → `z-speaker` / `z-listener` / `z-interlocutors` / `z-someone` / `…-next-clause` — never emoji etymology.
 
-### Ordinary lexicon is not special-cased by role
+### Ordinary lexicon plus packed role English
 <a id="no-lexicon-pos-specials"></a>
 
-Morph uses the published **literal** or **metaphor** for that ending. It does **not** invent a new English root because the word is under `/v/` (or another role). Closed [special-vocabulary](../grammar/special-vocabulary.md#sense-form) overlays, joins, revisers, speech-act vowels, and house names stay specials; ordinary picture roots do not.
+Morph uses the published **literal** or **metaphor** for that ending, unless `english_by_pos` lists a lemma for this role letter and sense ([role English](#role-english)). Do **not** invent a new English root just because the word is under `/v/`. Closed overlays, joins, revisers, speech-act vowels, and house names stay specials.
 
-| Agalan | Morph | Free English (not the morph) |
+| Agalan | Morph | Free English |
 |--------|--------|------------------------------|
-| `vejel` | `v-eye` | *sees* |
-| `vajul` | `v-chair` | *sits* |
-| `vezehel` | `v-speech` | *tells* |
-| `hogorem` | `h-inclusion` | *inside* |
-| `welem` | `w-size` | *very* |
+| `vejel` | `v-see` | *sees* |
+| `vajul` | `v-sit` | *sits* |
+| `vezehel` | `v-tell` | *tells* |
+| `hogorem` | `h-inside` | *inside* |
+| `welem` | `w-very` | *very* |
+| `zejel` | `z-eye` | *the eye* (no packing on `/z/`) |
 
-The checkpoint **English** column and the quoted line may say *see* / *sit* / *tell*. Keep that in free English. Do not write `v-see` to match the translation, and do not add a serializer exception for that root.
+The checkpoint **English** column and the quoted line may say *see* / *sit* / *tell*. Packed **role English** makes the morph line match that lemma when `english_by_pos` lists it for this role and sense (`vejel` → `v-see`). Do not invent a lemma that is not in that cell.
 
-### Role English (lookup only)
+### Role English (lookup and morph)
 <a id="role-english"></a>
 
 Published rows may pack **role English** in `english_by_pos` when the usual English lemma for a role is not a transparent conversion of the **active** sense-root. This is not an overlay and not a second Agalan meaning.
 
 Packed form: `v:see; m.v:intuit; m.h:inside`. Bare keys (`v:see`) are **literal** mismatches only. `m.` keys are **metaphor** mismatches only. Neither copies onto the other sense. Omit a piece when English already converts the sense lemma (`perception` as `/v/` → *perceive*).
 
-Lexicon search indexes those lemmas so *see* finds 👁️. Morph stays `v-eye`.
+Lexicon search indexes those lemmas. Morph uses the packed lemma for that role letter and ending (`v-see`, `w-very`); other roles still use the sense-root (`z-eye`).
 
 ## Morph gloss format
 
@@ -202,7 +203,7 @@ Do **not** write `-l` / `-m` / `-n`, **`@`**, or **`~`** after a sense. Named **
 
 ### Sense labels
 
-- Prefer lexicon / overlay wording when short (`tea`, `speaker`, `witnessed`). Ordinary roots stay that wording under every role letter ([no lexicon PoS specials](#no-lexicon-pos-specials)).
+- Prefer lexicon / overlay wording when short (`tea`, `speaker`, `witnessed`). Packed role English overrides that wording for the listed role only (`v-see` vs `z-eye`).
 - Prefer **stable tags** for closed inventory (uppercase OK when the docs already use them): `COMMENT`, `DECISION`, `SAME`, `WITNESSED`, `LIVE`, `ABIL`.
 - Verb senses: [uninflected lemma](#english-lemma) (`walk`, not `walking`).
 - Do **not** use arrows (`→`) or etymology chains.
@@ -389,7 +390,7 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 | `zam` / `hal` / `am` as the whole morph | Agalan letters where the job belongs | `z-and.open` / `h-only-when` / `including.open` |
 | `z-microphone-l` | Ending already chose the literal root | `z-microphone` |
 | `z-microphone→speaker` | Etymology chain | `z-speaker` |
-| `v-see` / `v-sit` for `vejel` / `vajul` | Ordinary lexicon is not special-cased by `/v/` | `v-eye` / `v-chair`; *see* / *sit* stay in free English ([no lexicon PoS specials](#no-lexicon-pos-specials)) |
+| `v-see` for `vejel` with no `v:see` cell | Invented PoS lemma | Fill `english_by_pos` first, then morph follows |
 | Morph line that is only idiomatic English | Confuses layers | Morph + separate quoted free line |
 | Morph gloss that matches the quoted English | Redundant; the quote already is the sense | Omit that line ([example block](#example-block)). Keep it when it unpacks **`x`**, PoS, several words, … |
 | `gloss:` + per-token backticks inside a code fence | Markdown renders raw; Agalan and gloss look the same | Blockquote; backticks on Agalan only |
