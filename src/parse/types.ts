@@ -1,3 +1,5 @@
+import type { OverlayKind } from "../lexicon-search.js";
+
 /** Part-of-speech prefix letters (role stamps). */
 export type Pos = "z" | "d" | "b" | "v" | "g" | "w" | "h" | "x" | "j";
 
@@ -119,6 +121,8 @@ export type LexReading =
 export type LexOverlay = {
   senseForm: string;
   pos: string;
+  kind: OverlayKind;
+  gloss: string;
   definition: string;
   mnemonic: string;
 };

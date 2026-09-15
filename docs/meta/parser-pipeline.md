@@ -106,14 +106,12 @@ Hosted overlays (needs, evidentials, COMMENT, NOTIONAL, plan / DECISION, emotion
 
 **Exception:** join-act / join-relation sense-forms (`an` / `on` / `aon` / …) and other **vowel-series** morphology (join fences, restrictor cores) are keyed by **`a` / `o` / `e` / `u`**, not by a lexicon row — those spellings stay. Do **not** add a hosted overlay whose `sense_form` is a join stem (`uan`, `an`, …) unless it is this vowel-series family.
 
-### Overlay kinds (planned column)
+### Overlay kinds
 <a id="overlay-kinds"></a>
 
-**Where:** a `kind` column on [`lexicon-overlays.csv`](../../data/lexicon-overlays.csv) only. Not on `lexicon-published.csv` (open picture roots) and not on `lexicon-compounds.csv` (lexical kinds, not closed readings). Classify and gloss should key off `kind`, not English `definition` substrings. An optional `gloss` column (stable tags: `WITNESSED`, `Mine`, `COMMENT`) can replace the frozen map in [`src/parse/morph-gloss.ts`](../../src/parse/morph-gloss.ts).
+[`lexicon-overlays.csv`](../../data/lexicon-overlays.csv) has **`kind`** (taxonomy) and **`gloss`** (stable English tag). Not on published or compounds CSVs. `classify` maps `kind` → `LexReading`; morph gloss uses `gloss`. Host validation skips `join_act` / `join_relation`.
 
-Join-act / join-relation rows stay in the **same** overlays CSV (they already do); `kind` marks them so host-validation can keep skipping vowel-series forms.
-
-| `kind` | `LexReading` today | Inventory |
+| `kind` | `LexReading` | Inventory |
 |--------|--------------------|-----------|
 | `need` | `value` | six needs + unspecified |
 | `ability` | `ability` | hostless **`egera`** |
@@ -222,7 +220,7 @@ A production **parse** bundle is **not wired yet** (`build:lexicon-web` only bun
 **Shipped**
 
 - Peggy word grammar covers orthography, numbers (writing + speech), and [x-compounds](../grammar/x-compounds.md) decision order.
-- `classify` is table-driven from the two lexicon CSVs (plus the need-set for values). Overlay **kind** is [planned](#overlay-kinds) as a column on overlays only.
+- `classify` is table-driven from the lexicon CSVs. Overlay **`kind`** / **`gloss`** live on overlays only ([kinds](#overlay-kinds)).
 - Chevrotain sentence grammar covers framing, right-close joins, spans, islands, and **`orodo`** dependents.
 - Public `parse(text)` returns a typed AST plus `resolve`; fixture tests drawn from `docs/grammar/`.
 - Peggy parser is pre-generated; `peggy` is a devDependency.
@@ -234,7 +232,6 @@ A production **parse** bundle is **not wired yet** (`build:lexicon-web` only bun
 - Lexicon column for gradable / continuum adjectives (SHARED `scale` vs ordinary `/ɡ/` is join-driven for now).
 - Speech span anaphors (`daxur`) as NP-slot tokens — Chevrotain still treats all spoken span opens as fence openers; writing `d[=]` resolves.
 - Join-arity inventory checks beyond fence shape.
-- Overlay `kind` column (classify still scrapes `definition` for needs / hostless ability; gloss tags live in `morph-gloss.ts`).
 - Multi-turn discourse outside one `parse(text)` call.
 
 ## Risks

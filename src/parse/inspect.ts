@@ -160,13 +160,7 @@ export function glossFor(word: LexWord, tables?: ClassifyTables): string {
 }
 
 function senseLabelFallback(word: LexWord): string {
-  if (word.overlay) {
-    const tagged = word.overlay.definition.match(/\b(WITNESSED|LIVE|SAME|COMMENT|DECISION|ABIL)\b/);
-    if (tagged) return tagged[1]!;
-    if (/witnessed evidential/i.test(word.overlay.definition)) return "WITNESSED";
-    if (/live evidential/i.test(word.overlay.definition)) return "LIVE";
-    if (/^SAME /i.test(word.overlay.definition)) return "SAME";
-  }
+  if (word.overlay) return word.overlay.gloss;
   if (word.reading === "greeting") {
     const family = word.family;
     if (family.kind === "x" && family.stanceVowel) {
@@ -280,6 +274,8 @@ export function morphDetails(word: LexWord): { label: string; value: string }[] 
 
   if (word.overlay) {
     rows.push({ label: "overlay", value: `${word.overlay.senseForm} + ${word.overlay.pos}` });
+    rows.push({ label: "kind", value: word.overlay.kind });
+    rows.push({ label: "gloss", value: word.overlay.gloss });
     rows.push({ label: "definition", value: word.overlay.definition });
   }
   if (word.rootGloss?.literal) rows.push({ label: "literal", value: word.rootGloss.literal });

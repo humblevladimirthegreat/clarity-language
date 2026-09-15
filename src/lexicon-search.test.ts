@@ -66,6 +66,8 @@ describe("overlay csv", () => {
           senseForm: "ewonol",
           pos: "h",
           emoji: "⛅",
+          kind: "universality",
+          gloss: "COMMON",
           definition: "universality COMMON",
           mnemonic: "",
         },

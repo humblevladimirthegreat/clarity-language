@@ -9,25 +9,12 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { escapeCsvField, parseCsv } from "../src/csv.js";
-import { parseOverlayCsv, senseFormRoot } from "../src/lexicon-search.js";
+import { isJoinOverlayKind, parseOverlayCsv, senseFormRoot } from "../src/lexicon-search.js";
 import { toUniqueClarityWord } from "../src/word-converter.js";
 
 const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..");
 const publishedPath = join(rootDir, "data", "lexicon-published.csv");
 const overlayPath = join(rootDir, "data", "lexicon-overlays.csv");
-
-const JOIN_SENSE_FORMS = new Set([
-  "an",
-  "on",
-  "aon",
-  "un",
-  "uan",
-  "uon",
-  "en",
-  "aen",
-  "oen",
-  "uen",
-]);
 
 const PRONOUN_ROOTS = new Set(["umogo", "ehado", "ana", "enu", "odo"]);
 
@@ -52,7 +39,7 @@ function main(): void {
 
   const hostRows = new Map<string, Record<string, string>>();
   for (const overlay of overlays) {
-    if (JOIN_SENSE_FORMS.has(overlay.senseForm)) {
+    if (isJoinOverlayKind(overlay.kind)) {
       continue;
     }
     if (!overlay.emoji) {
@@ -88,7 +75,7 @@ function main(): void {
   }
 
   for (const overlay of overlays) {
-    if (JOIN_SENSE_FORMS.has(overlay.senseForm)) {
+    if (isJoinOverlayKind(overlay.kind)) {
       continue;
     }
     if (!overlay.emoji) {
@@ -115,7 +102,7 @@ function main(): void {
     }
   }
 
-  const overlayHeaders = ["sense_form", "pos", "emoji", "definition", "mnemonic"];
+  const overlayHeaders = ["sense_form", "pos", "emoji", "kind", "gloss", "definition", "mnemonic"];
   writeFileSync(publishedPath, serializeCsv(headers, rows));
   writeFileSync(
     overlayPath,
@@ -125,6 +112,8 @@ function main(): void {
         sense_form: o.senseForm,
         pos: o.pos,
         emoji: o.emoji,
+        kind: o.kind,
+        gloss: o.gloss,
         definition: o.definition,
         mnemonic: o.mnemonic,
       })),

@@ -60,15 +60,6 @@ const IDEATION: Record<string, string> = {
   olala: "goal",
 };
 
-const NEED_ENGLISH: Record<string, string> = {
-  alodo: "autonomy",
-  olozo: "competence",
-  onogo: "relatedness",
-  awero: "pleasure",
-  uhuhe: "survival",
-  ege: "need",
-};
-
 const LINKER_ENGLISH: Record<string, string> = {
   ezaza: "therefore",
   ezeba: "however",
@@ -207,65 +198,6 @@ const SPAN_EDGE: Record<string, string> = {
   e: "clause",
   o: "atomic",
   u: "empty",
-};
-
-const OVERLAY_TAG: Record<string, string> = {
-  uvuvum: "WITNESSED",
-  adezem: "LIVE",
-  eregom: "RECORDED",
-  abawam: "PATTERN",
-  unevem: "INFERRED",
-  eraram: "TOLD",
-  eherem: "FELT",
-  orolom: "STORY",
-  oworam: "plan-sketch",
-  oworal: "plan-itinerary",
-  oworan: "plan",
-  oworar: "plan-fork",
-  elezom: "predict",
-  egegel: "DECISION-irreversible",
-  egegem: "DECISION-modifiable",
-  egegen: "DECISION",
-  egeger: "DECISION-temporary",
-  odohom: "COMMENT",
-  odohol: "COMMENT-fused",
-  odohon: "COMMENT",
-  odohor: "COMMENT-return",
-  adadem: "NOTIONAL",
-  adadel: "NOTIONAL-fused",
-  adaden: "NOTIONAL",
-  adader: "NOTIONAL-return",
-  ogegam: "HIGH",
-  ejelom: "MED",
-  ozowom: "LOW",
-  abobom: "INTERNAL",
-  orurum: "EXTERNAL",
-  anedem: "CIRCUM",
-  egeram: "ABIL",
-  arogul: "COMMON",
-  abulul: "UNCOUNTERED",
-  arazal: "FORMAL",
-  abelel: "NATURAL",
-  ebebel: "RULE",
-  onunul: "SAME",
-  adorom: "if",
-  ezazem: "iff",
-  urugum: "because",
-  ezebam: "although",
-  egemum: "while",
-  udumem: "until",
-  ababam: "before",
-  oranem: "after",
-  egegam: "CAUSE",
-  uzebum: "problem",
-  agegom: "solution",
-  olalam: "goal",
-  ojun: "Average",
-  ahaman: "Typical",
-  uroron: "Mine",
-  uluden: "Social",
-  alaban: "Professional",
-  oloben: "Everyone",
 };
 
 const CARDINALS = [
@@ -890,7 +822,7 @@ function writingSpanLabel(
 }
 
 function contentBody(word: LexWord, roots: string[], tables: ClassifyTables): string {
-  if (word.overlay) return overlayLabel(word.overlay, word);
+  if (word.overlay) return overlayLabel(word.overlay);
   if (word.lexicalCompound) {
     return hyphenEnglish(
       word.rootGloss?.literal || word.rootGloss?.metaphorical || roots[0] || "compound",
@@ -916,22 +848,8 @@ function contentBody(word: LexWord, roots: string[], tables: ClassifyTables): st
     .join("-x-");
 }
 
-function overlayLabel(overlay: LexOverlay, word: LexWord): string {
-  const tagged = OVERLAY_TAG[overlay.senseForm];
-  if (tagged) return tagged;
-  if (word.reading === "joinAct" && word.family.kind === "joinMarker") {
-    return JOIN_ACT[word.family.series] ?? overlay.senseForm;
-  }
-  if (word.reading === "joinRelation" && word.family.kind === "joinMarker") {
-    return JOIN_RELATION[word.family.series] ?? overlay.senseForm;
-  }
-  if (word.reading === "value") {
-    const root = overlay.senseForm.replace(/[lmnr]$/, "");
-    return NEED_ENGLISH[root] ?? hyphenEnglish(overlay.definition.split(/[,(]/)[0] ?? overlay.senseForm);
-  }
-  const caps = overlay.definition.match(/\b([A-Z]{2,})\b/);
-  if (caps) return caps[1]!;
-  return hyphenEnglish(overlay.definition.split(/[,(]/)[0] ?? overlay.senseForm);
+function overlayLabel(overlay: LexOverlay): string {
+  return overlay.gloss;
 }
 
 function rootSense(
@@ -950,7 +868,7 @@ function rootSense(
     return hyphenEnglish(row?.metaphorical || row?.literal || root);
   }
 
-  if (opts.need && NEED_ENGLISH[root]) return NEED_ENGLISH[root]!;
+  if (opts.need && tables.needGloss.has(root)) return tables.needGloss.get(root)!;
 
   const compound = tables.compounds.get(root);
   if (compound) {
@@ -973,7 +891,9 @@ function rootSense(
 
   if (root === "adoro") return SPECIAL_PRONOUN[root]!;
   if (IDEATION[root]) return IDEATION[root]!;
-  if (NEED_ENGLISH[root] && (wordIsNeedTopic(ending) || opts.need)) return NEED_ENGLISH[root]!;
+  if (tables.needGloss.has(root) && (wordIsNeedTopic(ending) || opts.need)) {
+    return tables.needGloss.get(root)!;
+  }
 
   const row = tables.published.get(root);
   if (ending === "m") return hyphenEnglish(row?.metaphorical || row?.literal || root);

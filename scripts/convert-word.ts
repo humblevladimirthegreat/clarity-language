@@ -13,7 +13,7 @@ import { fileURLToPath } from "node:url";
 
 import { escapeCsvField, parseCsv } from "../src/csv.js";
 import { parseCompoundCsv } from "../src/lexicon-compounds.js";
-import { parseOverlayCsv } from "../src/lexicon-search.js";
+import { isJoinOverlayKind, parseOverlayCsv } from "../src/lexicon-search.js";
 import { RETIE_MAP_RELATIVE_PATH, serializeRetieMap, type RetiePair } from "../src/retie/map.js";
 import {
   CLARITY_CONSONANTS,
@@ -28,21 +28,7 @@ const publishedPath = join(rootDir, "data", "lexicon-published.csv");
 const overlayPath = join(rootDir, "data", "lexicon-overlays.csv");
 const compoundsPath = join(rootDir, "data", "lexicon-compounds.csv");
 
-/** Join-series overlays stay vowel-series; they are not hosted on a published root. */
-const JOIN_SENSE_FORMS = new Set([
-  "an",
-  "on",
-  "aon",
-  "un",
-  "uan",
-  "uon",
-  "en",
-  "aen",
-  "oen",
-  "uen",
-]);
-
-const OVERLAY_HEADERS = ["sense_form", "pos", "emoji", "definition", "mnemonic"];
+const OVERLAY_HEADERS = ["sense_form", "pos", "emoji", "kind", "gloss", "definition", "mnemonic"];
 
 type CliOptions = {
   lexicon: boolean;
@@ -176,7 +162,7 @@ function convertLexicon(): void {
   }
 
   for (const overlay of overlays) {
-    if (JOIN_SENSE_FORMS.has(overlay.senseForm)) {
+    if (isJoinOverlayKind(overlay.kind)) {
       continue;
     }
     if (!overlay.emoji) {
@@ -198,6 +184,8 @@ function convertLexicon(): void {
         sense_form: overlay.senseForm,
         pos: overlay.pos,
         emoji: overlay.emoji,
+        kind: overlay.kind,
+        gloss: overlay.gloss,
         definition: overlay.definition,
         mnemonic: overlay.mnemonic,
       })),

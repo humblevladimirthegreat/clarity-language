@@ -115,7 +115,8 @@ describe("classify", () => {
   it("hosted judgment bars Mine and Everyone", () => {
     const mine = expectReading("zuroron", "mood");
     assert.ok(mine.overlay);
-    assert.equal(mine.overlay!.senseForm, "uroron");
+    assert.equal(mine.overlay!.kind, "benchmark");
+    assert.equal(mine.overlay!.gloss, "Mine");
     const everyone = expectReading("zoloben", "mood");
     assert.ok(everyone.overlay);
     assert.equal(everyone.overlay!.senseForm, "oloben");

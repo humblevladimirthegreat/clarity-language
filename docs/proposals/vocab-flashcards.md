@@ -60,7 +60,7 @@ Fields drawn from CSV (and tags derived at export time):
 | `literal` | published | English literal sense |
 | `metaphorical` | published (may be empty) | Separate sense when present |
 | `mnemonic` | published | Optional reveal / soft hint |
-| overlay: `sense_form`, `pos`, `definition`, `mnemonic` | overlays CSV | Closed special-vocabulary drills |
+| overlay: `sense_form`, `pos`, `kind`, `gloss`, `definition`, `mnemonic` | overlays CSV | Closed special-vocabulary drills |
 | `tags` | derived | `literal` / `metaphor` / `overlay` / theme / band |
 
 **Citation vs sentence use:** cards study **roots** (and overlay forms) as in the lexicon. PoS letter and reference ending are **not** baked into the root side of v1 cards; learners add them when writing sentences ([role letters](../grammar/core.md#role-letters)). A later note type may prompt “noun exact …” → `z…l` once a tiny inflection helper exists.

@@ -78,7 +78,7 @@ Under other role letters the same spelling is ordinary content (`zuzebul` *a puz
 ### Sense-form overlays
 <a id="sense-form"></a>
 
-Emotion compose already used **`hogegam`** (HIGH arousal) next to **`zogegal`** (*an ocean wave*). Some published roots keep a **fixed special reading** under one part of speech: spell that published root plus [reference ending](reference-suffix.md); the PoS chooses the overlay. Emotion ACT / LOCUS in the examples above take overlay **-m**. Overlay `sense_form` is **root + ending** (or a vowel-series join stem), not a productive mid-word **`x`** word.
+Emotion compose already used **`hogegam`** (HIGH arousal) next to **`zogegal`** (*an ocean wave*). Some published roots keep a **fixed special reading** under one part of speech: spell that published root plus [reference ending](reference-suffix.md); the PoS chooses the overlay. Emotion ACT / LOCUS in the examples above take overlay **-m**. Overlay `sense_form` is **root + ending** (or a vowel-series join stem), not a productive mid-word **`x`** word. Each overlay row has **`kind`** and **`gloss`** ([overlay kinds](../meta/parser-pipeline.md#overlay-kinds)).
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>

@@ -11,10 +11,41 @@ export type PublishedRow = {
   mnemonic: string;
 };
 
+export const OVERLAY_KINDS = [
+  "need",
+  "ability",
+  "join_act",
+  "join_relation",
+  "evidential",
+  "comment",
+  "notional",
+  "plan",
+  "predict",
+  "decision",
+  "cause",
+  "clause_pole",
+  "universality",
+  "emotion_act",
+  "emotion_locus",
+  "identity",
+  "benchmark",
+  "numbered_alternative",
+] as const;
+
+export type OverlayKind = (typeof OVERLAY_KINDS)[number];
+
+const OVERLAY_KIND_SET = new Set<string>(OVERLAY_KINDS);
+
+export function isJoinOverlayKind(kind: OverlayKind): boolean {
+  return kind === "join_act" || kind === "join_relation";
+}
+
 export type OverlayRow = {
   senseForm: string;
   pos: string;
   emoji: string;
+  kind: OverlayKind;
+  gloss: string;
   definition: string;
   mnemonic: string;
 };
@@ -48,6 +79,8 @@ type OverlayIndexedDoc = {
   pos: string;
   emoji: string;
   root: string;
+  kind: string;
+  gloss: string;
   definition: string;
   mnemonic: string;
 };
@@ -55,14 +88,30 @@ type OverlayIndexedDoc = {
 export { parseCompoundCsv, type CompoundRow } from "./lexicon-compounds.js";
 
 const PUBLISHED_HEADERS = ["emoji", "literal", "clarity", "metaphorical", "mnemonic"] as const;
-const OVERLAY_HEADERS = ["sense_form", "pos", "emoji", "definition", "mnemonic"] as const;
+const OVERLAY_HEADERS = [
+  "sense_form",
+  "pos",
+  "emoji",
+  "kind",
+  "gloss",
+  "definition",
+  "mnemonic",
+] as const;
 
 /** Single-letter PoS prefixes used when a query is a full spelled word. */
 const POS_PREFIXES = new Set(["z", "d", "b", "g", "v", "w", "h", "j", "x"]);
 
 const SEARCH_FIELDS = ["literal", "literalTokens", "clarity", "metaphorical", "mnemonic"] as const;
 const COMPOUND_SEARCH_FIELDS = ["literal", "literalTokens", "stem", "metaphorical", "mnemonic"] as const;
-const OVERLAY_SEARCH_FIELDS = ["senseForm", "root", "pos", "definition", "mnemonic"] as const;
+const OVERLAY_SEARCH_FIELDS = [
+  "senseForm",
+  "root",
+  "pos",
+  "kind",
+  "gloss",
+  "definition",
+  "mnemonic",
+] as const;
 
 const FIELD_BOOSTS: Record<(typeof SEARCH_FIELDS)[number], number> = {
   literal: 2,
@@ -83,7 +132,9 @@ const COMPOUND_FIELD_BOOSTS: Record<(typeof COMPOUND_SEARCH_FIELDS)[number], num
 const OVERLAY_FIELD_BOOSTS: Record<(typeof OVERLAY_SEARCH_FIELDS)[number], number> = {
   senseForm: 2,
   root: 1.5,
+  gloss: 2,
   definition: 2,
+  kind: 1.5,
   mnemonic: 1,
   pos: 1,
 };
@@ -118,6 +169,8 @@ const MATCH_FIELD_LABELS: Record<string, string> = {
   senseForm: "sense_form",
   root: "sense_form",
   pos: "pos",
+  kind: "kind",
+  gloss: "gloss",
   stem: "stem",
   definition: "definition",
 };
@@ -180,7 +233,7 @@ export function validateOverlayPublishedHosts(
 
   for (let index = 0; index < overlays.length; index++) {
     const overlay = overlays[index]!;
-    if (JOIN_SENSE_FORMS.has(overlay.senseForm)) {
+    if (isJoinOverlayKind(overlay.kind)) {
       continue;
     }
 
@@ -261,10 +314,22 @@ export function parseOverlayCsv(text: string): OverlayRow[] {
     }
     seen.add(key);
 
+    const kindRaw = (row.kind ?? "").trim();
+    if (!OVERLAY_KIND_SET.has(kindRaw)) {
+      throw new Error(`Unknown overlay kind for ${senseForm} + ${pos}: ${kindRaw || "(empty)"}`);
+    }
+    const kind = kindRaw as OverlayKind;
+    const gloss = (row.gloss ?? "").trim();
+    if (!gloss) {
+      throw new Error(`Overlay ${senseForm} + ${pos} is missing gloss`);
+    }
+
     overlays.push({
       senseForm,
       pos,
       emoji: (row.emoji ?? "").trim(),
+      kind,
+      gloss,
       definition: (row.definition ?? "").trim(),
       mnemonic: (row.mnemonic ?? "").trim(),
     });
@@ -411,13 +476,15 @@ export function createOverlayIndex(overlays: OverlayRow[]): MiniSearch<OverlayIn
     pos: overlay.pos.toLowerCase(),
     emoji: overlay.emoji,
     root: senseFormRoot(overlay.senseForm).toLowerCase(),
+    kind: overlay.kind,
+    gloss: overlay.gloss.toLowerCase(),
     definition: overlay.definition.toLowerCase(),
     mnemonic: overlay.mnemonic.toLowerCase(),
   }));
 
   const index = new MiniSearch<OverlayIndexedDoc>({
     fields: [...OVERLAY_SEARCH_FIELDS],
-    storeFields: ["senseForm", "pos", "emoji", "root", "definition", "mnemonic"],
+    storeFields: ["senseForm", "pos", "emoji", "root", "kind", "gloss", "definition", "mnemonic"],
     searchOptions: OVERLAY_SEARCH_OPTIONS,
   });
 
@@ -495,6 +562,14 @@ function exactOverlayBoost(
   } else if (sense === q || sense === split.stem) {
     boost += 120;
     fields.push("sense_form");
+  }
+  if (overlay.gloss.toLowerCase() === q) {
+    boost += 90;
+    fields.push("gloss");
+  }
+  if (overlay.kind === q) {
+    boost += 70;
+    fields.push("kind");
   }
   if (overlay.definition.toLowerCase() === q) {
     boost += 80;
