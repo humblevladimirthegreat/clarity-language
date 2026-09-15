@@ -452,7 +452,7 @@ Default example block ([layout](glosses.md#example-block)):
 > "Azawan is a dog."
 ```
 
-Omit the morph line when it would copy the quoted English (`azawal` / `"swan"`). Keep it when it shows structure the quote does not (role letters, several words, an `x`-compound citation, …).
+Omit the morph line when `lint:agalan` treats parser output as redundant with the in-block quoted loose English (`azawal` / `"swan"`). Keep it when it shows structure the quote does not (role letters, several words, an `x`-compound citation, …).
 
 Short Eng ↔ Agalan checkpoints: end of a page stage only — [translation-exercises.md](translation-exercises.md). Multi-turn practice belongs under [examples/](../examples/), not inside every grammar section.
 

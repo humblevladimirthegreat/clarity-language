@@ -51,6 +51,8 @@ describe("extractTranslationExercises", () => {
     assert.equal(items[0]!.agalan, "zazawan vajul.");
     assert.equal(items[0]!.morph, "z-Azawan | v-sit");
     assert.equal(items[1]!.agalan, "zazawan vajul.");
+    assert.equal(items[0]!.loose, "Azawan sits.");
+    assert.equal(items[1]!.loose, "Azawan sits.");
   });
 
   it("records missing morph when a numbered item has no morph gloss", () => {
@@ -100,6 +102,30 @@ z-Azawan | v-sit
 `;
     const { findings } = lintMorphGlossMarkdown(md, tables);
     assert.equal(findings.some((f) => f.kind === "missing-gloss"), false);
+  });
+
+  it("allows omitted teach morph when parser output matches loose English", () => {
+    const md = `> \`azawal\`
+>
+> "swan"
+`;
+    const result = lintMorphGlossMarkdown(md, tables);
+    assert.equal(result.withLooseEnglish, 1);
+    assert.equal(result.redundantOmitted, 1);
+    assert.equal(result.comparedWithLoose, 0);
+    assert.equal(result.findings.some((f) => f.kind === "missing-gloss"), false);
+  });
+
+  it("requires teach morph when loose English is a full sentence", () => {
+    const md = `> \`zazawan vajul.\`
+>
+> "Azawan sits."
+`;
+    const { findings } = lintMorphGlossMarkdown(md, tables);
+    assert.equal(
+      findings.some((f) => f.kind === "missing-gloss" && f.scope === "teach"),
+      true,
+    );
   });
 
   it("fails teach-block mismatches", () => {

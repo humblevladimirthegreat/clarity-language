@@ -28,9 +28,12 @@ export { inspectText, glossFor, chipsFor, morphDetails, endingSense } from "./in
 export {
   compareMorphGloss,
   extractExampleBlocks,
+  extractTeachBlocks,
   morphGlossFor,
   morphGlossLine,
+  morphRedundantWithLoose,
   normalizeAgalan,
+  normalizeLooseEnglish,
   normalizeMorphLine,
   senseLabel,
 } from "./morph-gloss.js";
@@ -38,6 +41,7 @@ export type {
   CompareMorphGlossResult,
   ExampleBlockPair,
   MorphGlossContext,
+  TeachBlock,
 } from "./morph-gloss.js";
 export type {
   InspectConstruction,

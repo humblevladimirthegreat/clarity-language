@@ -22,7 +22,7 @@ A gloss should answer: *what is each Agalan piece doing in the clause — in Eng
 
 | Layer | Where | Form |
 |-------|--------|------|
-| **Morph gloss** | Dialogue turns, clause / phrase examples, teaching lines | Word-aligned pieces joined with spaced ` | `; one roman line (below). **Omit** when that line would match the quoted English ([when to skip](#example-block)). |
+| **Morph gloss** | Dialogue turns, clause / phrase examples, teaching lines | Word-aligned pieces joined with spaced ` | `; one roman line (below). **Omit** when parser output is trivially redundant with in-block loose English ([when to skip](#example-block); `lint:agalan` enforces). |
 | **Free English (loose)** | Same places, under the morph gloss — **default** when only one free line | Natural paraphrase in `"double quotes"`; drop Agalan packaging English doesn’t mark |
 | **Free English (strict)** | Optional second quoted line (or alone when teaching packaging) | Keeps join packaging, value endings, evidential tags, cast letters, …; teaching dialogues may show **both** labeled `strict:` / `loose:` |
 | **Grammar-table gloss** | Inventory / contrast tables in grammar docs | Short free English in **English** (often *italic* in table cells); optional parenthetical notes — loose unless the row teaches packaging. **Cue** is not a gloss ([cues](grammar-docs.md#cues-columns)). |
@@ -71,7 +71,7 @@ A **complex citation** still gets a gloss if the morph unpacks structure the quo
 
 Do **not** prefix the gloss with `gloss:`.
 
-**Skip the morph line** when it would be the same as the quoted English (same readable words, ignoring quotes). That is a redundancy test, not “citation vs sentence.” Simple `azawal` / `"swan"` omits; `zazawan vawalal.` keeps `z-Azawan | v-walk` because that is not `"Azawan walks."`. Keep the line whenever it shows something the quote hides: role letters, several words, mid-word **`x`** pieces, binding, join jobs.
+**Skip the morph line** when **`lint:agalan`** would treat it as redundant: single-segment parser morph whose English body matches the in-block loose line (same readable words, ignoring quotes and trailing `.?!`). That is a redundancy test, not “citation vs sentence.” Simple `azawal` / `"swan"` omits; `zazawan vawalal.` keeps `z-Azawan | v-walk` because that is not `"Azawan walks."`. Keep the line whenever it shows something the quote hides: role letters, several words, mid-word **`x`** pieces, binding, join jobs. No in-block loose line → omitting morph stays allowed.
 
 ### Word separator
 <a id="gloss-separator"></a>
@@ -394,7 +394,7 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 | `z-microphone→speaker` | Etymology chain | `z-speaker` |
 | `v-see` for `vejel` with no `v:see` cell | Invented PoS lemma | Fill `english_by_pos` first, then morph follows |
 | Morph line that is only idiomatic English | Confuses layers | Morph + separate quoted free line |
-| Morph gloss that matches the quoted English | Redundant; the quote already is the sense | Omit that line ([example block](#example-block)). Keep it when it unpacks **`x`**, PoS, several words, … |
+| Morph gloss that matches the quoted English | Redundant; the quote already is the sense | Omit that line when `lint:agalan` agrees ([example block](#example-block)). Keep it when it unpacks **`x`**, PoS, several words, … |
 | `gloss:` + per-token backticks inside a code fence | Markdown renders raw; Agalan and gloss look the same | Blockquote; backticks on Agalan only |
 | Loose free packed with cast letters / join footnotes / value endings | Duplicates morph; not “what you’d say” | Idiomatic claim; use **strict** free only for teaching |
 | English *he* / *she* inside morph for **-r** | Hides Agalan binding | `z-←Antecedent` |
@@ -407,7 +407,7 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 3. No **-l** / **-m** / **-n**, and no **`@`** / **`~`**, when they only selected the sense-root. Named **-n** is the English name (`z-Azawan`), not `-n`, `@`, or `-proper`.
 4. Compounds / stance / role / span `x` pieces are always hyphenated segments (`j-Ubune-x-Unowen`). Do not fuse a name into one unsegmented English label.
 5. **-r** uses `←…` (no trailing `-r`); **-x** stays as `-x`. Resume of a house name is `z-←Azawan`, not `z-r` or `z-←Azawan`. Fill-ask is `z-who`, not `z-ar`.
-6. Free English is on its own **quoted** line (or grammar-table Gloss column) — **loose** by default; **strict** only when teaching packaging. Example blocks follow [example block layout](#example-block) (blockquote; skip a morph line that would copy the quote).
+6. Free English is on its own **quoted** line (or grammar-table Gloss column) — **loose** by default; **strict** only when teaching packaging. Example blocks follow [example block layout](#example-block) (blockquote; skip a morph line only when `lint:agalan` treats parser output as redundant with that loose line).
 
 ## See also
 

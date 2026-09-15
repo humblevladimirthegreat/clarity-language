@@ -3,7 +3,9 @@ import type { ClassifyTables } from "../parse/classify.js";
 import {
   compareMorphGloss,
   extractExampleBlocks,
+  extractTeachBlocks,
   looksLikeMorphLine,
+  morphRedundantWithLoose,
 } from "../parse/morph-gloss.js";
 import { lineNumberAt } from "../retie/tokens.js";
 import type { AmbiguityConflict } from "../parse/types.js";
@@ -34,9 +36,16 @@ export type MorphMissingGloss = {
   kind: "missing-gloss";
   line: number;
   agalan: string;
+  scope: "teach" | "exercise";
 };
 
-export type MorphGlossFinding = MorphMismatch | MorphAmbiguity | MorphMissingGloss;
+export type MorphCoverageGap = {
+  kind: "coverage-gap";
+  line: number;
+  message: string;
+};
+
+export type MorphGlossFinding = MorphMismatch | MorphAmbiguity | MorphMissingGloss | MorphCoverageGap;
 
 const SKIP_CELL = /(?:^|[^\w])(?:…|\.\.\.)(?:[^\w]|$)/;
 const GLOSS_COMMENT_RE = /<!--\s*gloss:\s*([\s\S]*?)-->/i;
@@ -71,27 +80,78 @@ export type MorphGlossLintResult = {
   findings: MorphGlossFinding[];
   /** Morph-gloss pairs compared to the parser (teach blocks, tables, exercises). */
   checked: number;
+  /** Teach blocks and exercises that have in-block loose English. */
+  withLooseEnglish: number;
+  /** Those items with an explicit morph compared to the parser. */
+  comparedWithLoose: number;
+  /** Those items with no morph where parser output matches loose English. */
+  redundantOmitted: number;
 };
+
+function requireMorphForLoose(
+  agalan: string,
+  morph: string | null,
+  loose: string | null,
+  tables: ClassifyTables,
+): boolean {
+  if (loose == null) return false;
+  if (morph != null) return false;
+  return !morphRedundantWithLoose(agalan, loose, tables);
+}
 
 export function lintMorphGlossMarkdown(
   text: string,
   tables: ClassifyTables,
 ): MorphGlossLintResult {
   const findings: MorphGlossFinding[] = [];
-  const requireExerciseGloss = translationPracticeRanges(text.split(/\r?\n/)).length > 0;
   const pairs = extractMorphPairs(text);
 
-  for (const item of extractTranslationExercises(text)) {
-    if (item.morph == null) {
-      if (requireExerciseGloss) {
-        findings.push({
-          kind: "missing-gloss",
-          line: lineNumberAt(text, item.index),
-          agalan: item.agalan,
-        });
-      }
-      continue;
+  let withLooseEnglish = 0;
+  let comparedWithLoose = 0;
+  let redundantOmitted = 0;
+
+  for (const block of extractTeachBlocks(text)) {
+    if (block.loose == null) continue;
+    withLooseEnglish += 1;
+    const line = lineNumberAt(text, lineIndexToCharIndex(text, block.agalanIndex));
+    if (block.morph != null) {
+      comparedWithLoose += 1;
+    } else if (morphRedundantWithLoose(block.agalan, block.loose, tables)) {
+      redundantOmitted += 1;
+    } else if (requireMorphForLoose(block.agalan, block.morph, block.loose, tables)) {
+      findings.push({
+        kind: "missing-gloss",
+        line,
+        agalan: block.agalan,
+        scope: "teach",
+      });
     }
+  }
+
+  for (const item of extractTranslationExercises(text)) {
+    if (item.loose == null) continue;
+    withLooseEnglish += 1;
+    const line = lineNumberAt(text, item.index);
+    if (item.morph != null) {
+      comparedWithLoose += 1;
+    } else if (morphRedundantWithLoose(item.agalan, item.loose, tables)) {
+      redundantOmitted += 1;
+    } else if (requireMorphForLoose(item.agalan, item.morph, item.loose, tables)) {
+      findings.push({
+        kind: "missing-gloss",
+        line,
+        agalan: item.agalan,
+        scope: "exercise",
+      });
+    }
+  }
+
+  if (comparedWithLoose + redundantOmitted !== withLooseEnglish) {
+    findings.push({
+      kind: "coverage-gap",
+      line: 1,
+      message: `morph coverage invariant failed: ${comparedWithLoose} compared + ${redundantOmitted} redundant != ${withLooseEnglish} with loose English`,
+    });
   }
 
   for (const pair of pairs) {
@@ -115,12 +175,19 @@ export function lintMorphGlossMarkdown(
       });
     }
   }
-  return { findings, checked: pairs.length };
+  return {
+    findings,
+    checked: pairs.length,
+    withLooseEnglish,
+    comparedWithLoose,
+    redundantOmitted,
+  };
 }
 
 export type TranslationExercise = {
   agalan: string;
   morph: string | null;
+  loose: string | null;
   index: number;
 };
 
@@ -146,6 +213,7 @@ export function extractTranslationExercises(markdown: string): TranslationExerci
       items.push({
         agalan: parsed.agalan,
         morph: parsed.morph,
+        loose: parsed.loose,
         index: lineIndexToCharIndex(markdown, itemStart + parsed.agalanLineOffset),
       });
     }
@@ -183,16 +251,18 @@ function isPracticeBoundary(line: string): boolean {
 
 function parseExerciseItem(
   itemLines: string[],
-): { agalan: string; morph: string | null; agalanLineOffset: number } | null {
+): { agalan: string; morph: string | null; loose: string | null; agalanLineOffset: number } | null {
   const prompt = ITEM_START_RE.exec(itemLines[0] ?? "");
   const promptRest = prompt?.[2] ?? "";
   const promptCodes = codeSpans(promptRest);
   const morph = extractExerciseMorph(itemLines, promptCodes.length > 0);
+  const loose = looseFromItalic(promptRest) ?? extractExerciseLooseInDetails(itemLines);
 
   if (promptCodes.length > 0) {
     return {
       agalan: promptCodes.join(" "),
       morph,
+      loose,
       agalanLineOffset: 0,
     };
   }
@@ -202,8 +272,29 @@ function parseExerciseItem(
   return {
     agalan: fromDetails.agalan,
     morph,
+    loose,
     agalanLineOffset: fromDetails.lineOffset,
   };
+}
+
+function looseFromItalic(text: string): string | null {
+  const m = text.match(/\*([^*]+)\*/);
+  return m ? m[1]!.trim() : null;
+}
+
+function extractExerciseLooseInDetails(itemLines: string[]): string | null {
+  let inDetails = false;
+  for (const line of itemLines) {
+    const trimmed = line.trim();
+    if (!inDetails) {
+      if (/^::: details\b/.test(trimmed)) inDetails = true;
+      continue;
+    }
+    if (/^:::$/.test(trimmed)) break;
+    const fromItalic = looseFromItalic(trimmed);
+    if (fromItalic) return fromItalic;
+  }
+  return null;
 }
 
 function extractExerciseMorph(itemLines: string[], agalanOnPrompt: boolean): string | null {
@@ -360,7 +451,11 @@ export function formatMorphGlossFinding(
     return `${loc}  leftover ambiguity  \`${c.surface}\`  (${c.detail})`;
   }
   if (finding.kind === "missing-gloss") {
-    return `${loc}  missing exercise gloss  \`${finding.agalan}\``;
+    const label = finding.scope === "teach" ? "missing teach morph gloss" : "missing exercise morph gloss";
+    return `${loc}  ${label}  \`${finding.agalan}\``;
+  }
+  if (finding.kind === "coverage-gap") {
+    return `${loc}  ${finding.message}`;
   }
   return [
     `${loc}  morph gloss mismatch`,

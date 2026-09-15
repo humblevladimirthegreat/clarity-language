@@ -4,10 +4,11 @@
  *
  * Morph-gloss pairs (example blockquotes, Morph-column tables, and visible
  * morph lines in translation-exercise spoilers) are compared to the parser.
+ * Teach blocks and exercises with loose English must include a morph unless
+ * parser output is trivially redundant with that loose line.
  * Translation **Roots used here** English is checked against the lexicon.
- * Mismatches, leftover ambiguity, and missing exercise glosses in translation
- * practice fail the run. Findings print to stdout. Each file logs
- * how many morph-gloss pairs were checked.
+ * Mismatches, leftover ambiguity, and missing morph glosses fail the run.
+ * Findings print to stdout. Each file logs morph coverage counts.
  *
  * Run: npm run lint:agalan
  *      npm run lint:agalan -- [paths...] [--check-ambiguity]
@@ -59,8 +60,8 @@ function parseCli(argv: string[]): { paths: string[] } {
       console.error(`Usage: npm run lint:agalan -- [paths...] [--check-ambiguity]
 
 Checks backticked and fenced Agalan words under docs/grammar/.
-Morph-gloss mismatches, leftover ambiguity, missing exercise glosses, and
-translation word-bank English/lexicon mismatches fail.
+Morph-gloss mismatches, leftover ambiguity, missing morph glosses, coverage
+gaps, and translation word-bank English/lexicon mismatches fail.
 --check-ambiguity is always on for the corpus (flag kept for callers).`);
       process.exit(0);
     }
@@ -119,6 +120,8 @@ function main(): void {
   let count = 0;
   let morphCount = 0;
   let morphChecked = 0;
+  let morphWithLoose = 0;
+  let morphRedundantOmitted = 0;
   let bankCount = 0;
 
   for (const file of files) {
@@ -134,7 +137,12 @@ function main(): void {
 
     const morphResult = lintMorphGlossMarkdown(original, tables);
     morphChecked += morphResult.checked;
-    console.log(`${rel}: ${morphResult.checked} morph gloss(es) checked`);
+    morphWithLoose += morphResult.withLooseEnglish;
+    morphRedundantOmitted += morphResult.redundantOmitted;
+    const cov = morphResult.withLooseEnglish
+      ? `${morphResult.comparedWithLoose} checked, ${morphResult.redundantOmitted} redundant-omitted / ${morphResult.withLooseEnglish} with loose English; `
+      : "";
+    console.log(`${rel}: ${cov}${morphResult.checked} morph gloss(es) compared to parser`);
     for (const finding of morphResult.findings) {
       morphCount += 1;
       console.log(formatMorphGlossFinding(rel, finding));
@@ -164,7 +172,7 @@ function main(): void {
   console.log("OK: overlay hosts match the published lexicon.");
   console.log("OK: Agalan words in docs/grammar/ parse as legal and match the lexicon.");
   console.log(
-    `OK: ${morphChecked} morph gloss(es) checked; glosses match the parser; translation exercises have gloss comments.`,
+    `OK: ${morphChecked} morph gloss(es) compared; ${morphRedundantOmitted} redundant-omitted / ${morphWithLoose} with loose English; glosses match the parser.`,
   );
   console.log("OK: translation word-bank English matches the lexicon.");
 }

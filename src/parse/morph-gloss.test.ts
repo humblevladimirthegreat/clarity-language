@@ -8,7 +8,9 @@ import { createClassifyTables } from "./classify.js";
 import {
   compareMorphGloss,
   extractExampleBlocks,
+  extractTeachBlocks,
   morphGlossLine,
+  morphRedundantWithLoose,
   normalizeMorphLine,
 } from "./morph-gloss.js";
 
@@ -201,6 +203,38 @@ describe("compareMorphGloss", () => {
     const result = compareMorphGloss("z!!!", "z-nope", tables);
     assert.equal(result.ok, false);
     assert.ok(result.parseError);
+  });
+
+  it("morphRedundantWithLoose allows single-word citation skips", () => {
+    assert.equal(morphRedundantWithLoose("azawal", "swan", tables), true);
+    assert.equal(morphRedundantWithLoose("azawan.", '"Azawan."', tables), true);
+    assert.equal(morphRedundantWithLoose("zazawan vajul.", "Azawan sits.", tables), false);
+    assert.equal(morphRedundantWithLoose("z!!!", "nope", tables), false);
+  });
+
+  it("extractTeachBlocks finds morph after a name line and loose quotes", () => {
+    const md = `> \`azawan.\`
+>
+> Azawan
+>
+> "Azawan." (hello — the speaker is Azawan)
+`;
+    const [block] = extractTeachBlocks(md);
+    assert.ok(block);
+    assert.equal(block!.agalan, "azawan.");
+    assert.equal(block!.morph, "Azawan");
+    assert.equal(block!.loose, "Azawan.");
+  });
+
+  it("extractTeachBlocks allows omitted morph when only loose follows", () => {
+    const md = `> \`azawal\`
+>
+> "swan"
+`;
+    const [block] = extractTeachBlocks(md);
+    assert.ok(block);
+    assert.equal(block!.morph, null);
+    assert.equal(block!.loose, "swan");
   });
 
   it("round-trips the jael census example block", () => {
