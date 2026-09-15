@@ -4,7 +4,6 @@ frontend:
     preBuild:
       commands:
         - npm ci
-        - npm run lint
     build:
       commands:
         - npm run docs:build

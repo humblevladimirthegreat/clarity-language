@@ -549,12 +549,12 @@ Before shipping **Intermediate** or **Advanced**, check [later-stage shape](#lat
 ## Markdown hygiene
 <a id="markdown-hygiene"></a>
 
-After editing Markdown under `docs/` (or `AGENTS.md` / `TODO.md`), run **`npm run lint:md`**. It checks emphasis balance, slash-joined emphasis, internal links / anchors, Vue-illegal `<tag>` on grammar pages (write loan fences as `<code>d&lt;kimchi&gt;</code>` — inline backticks and `<code v-pre>` with a real `<` still fail Vue’s HTML parse), and that Agalan words in `docs/grammar/` parse and use lexicon roots. Prefer spaces in slash-joined emphasis (`*a* / *b*`) over `*a*/*b*`. In bold headings or bullets, put forms in backticks only (`**Ranked (`e` / `ae`)**`), not nested bold inside bold.
+After editing Markdown under `docs/` (or `AGENTS.md` / `TODO.md`), run **`npm run docs:build`**. It checks emphasis balance, slash-joined emphasis, Vue-illegal `<tag>` on grammar pages (write loan fences as `<code>d&lt;kimchi&gt;</code>` — inline backticks and `<code v-pre>` with a real `<` still fail Vue’s HTML parse), that Agalan words in `docs/grammar/` parse and use lexicon roots, Vue a11y on site components, and published VitePress URLs. Prefer spaces in slash-joined emphasis (`*a* / *b*`) over `*a*/*b*`. In bold headings or bullets, put forms in backticks only (`**Ranked (`e` / `ae`)**`), not nested bold inside bold.
 
 ### HTML comments
 <a id="html-comments"></a>
 
-VitePress does not render HTML comments. Use them for **editor-only** notes that must sit next to the grammar text — typically **why this spot is an exception** to a rule on this page (house cast, omit-`jal`, Compare-with quota, and so on), and for hidden exercise morph lines (`<!-- gloss: … -->` — [translation-exercises.md](translation-exercises.md#principles)). The learner never sees them; `lint:md` and `retie-docs` skip comment bodies except that `lint:agalan` reads tagged `gloss:` comments.
+VitePress does not render HTML comments. Use them for **editor-only** notes that must sit next to the grammar text — typically **why this spot is an exception** to a rule on this page (house cast, omit-`jal`, Compare-with quota, and so on), and for hidden exercise morph lines (`<!-- gloss: … -->` — [translation-exercises.md](translation-exercises.md#principles)). The learner never sees them; `docs:build` markdown checks and `retie-docs` skip comment bodies except that tagged `gloss:` comments are still read.
 
 ```markdown
 <!-- Exception to house-cast: this block teaches speaker/listener specials, so `zugobon` is the point. -->

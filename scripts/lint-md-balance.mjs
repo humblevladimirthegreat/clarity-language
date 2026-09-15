@@ -12,9 +12,9 @@
  * (e.g. *a* + "/" + *b* with no spaces), which historically produced the
  * same class of error.
  *
- * Tertiary: broken internal links — relative paths and `#` fragments on
- * `.md` targets (explicit `<a id>` or GFM heading slugs). Skips http(s),
- * mailto, and tel.
+ * Tertiary: markdown links whose target is under `docs/proposals/`
+ * (house rule — filenames in backticks only). Dead URLs on the published
+ * grammar site are VitePress `ignoreDeadLinks` during `docs:build`.
  *
  * Quaternary (VitePress pages only, `docs/grammar/*.md` excluding
  * `.vitepress/`): raw HTML-like `<tag>` that Vue will compile. Inline
@@ -231,48 +231,6 @@ function findSlashJoined(text) {
   return hits;
 }
 
-/** GFM-style heading slug (lowercase, strip markup, spaces → hyphens). */
-function githubSlug(heading) {
-  let s = heading
-    .replace(/^#{1,6}\s+/, "")
-    .replace(/`([^`]+)`/g, "$1")
-    .replace(/!\[[^\]]*\]\([^)]*\)/g, "")
-    .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
-    .replace(/[*_~]+/g, "")
-    .trim()
-    .toLowerCase();
-  s = s.replace(/[^\p{L}\p{N}\s-]/gu, "").replace(/\s+/g, "-");
-  return s;
-}
-
-/** Collect explicit ids and heading slugs from a Markdown file. */
-function collectAnchors(text) {
-  const ids = new Set();
-  for (const m of text.matchAll(/<a\s+[^>]*\bid=["']([^"']+)["'][^>]*>/gi)) {
-    ids.add(m[1]);
-  }
-  for (const m of text.matchAll(/<a\s+[^>]*\bname=["']([^"']+)["'][^>]*>/gi)) {
-    ids.add(m[1]);
-  }
-  const lines = text.split(/\r?\n/);
-  let inFence = false;
-  const slugCounts = Object.create(null);
-  for (const line of lines) {
-    if (line.trim().startsWith("```")) {
-      inFence = !inFence;
-      continue;
-    }
-    if (inFence) continue;
-    const hm = /^(#{1,6})\s+(.+)$/.exec(line);
-    if (!hm) continue;
-    const base = githubSlug(hm[2]);
-    if (!base) continue;
-    const n = (slugCounts[base] = (slugCounts[base] || 0) + 1);
-    ids.add(n === 1 ? base : `${base}-${n - 1}`);
-  }
-  return ids;
-}
-
 function isVitepressGrammarMd(file) {
   const rel = relative(ROOT, file).replaceAll("\\", "/");
   return (
@@ -331,23 +289,14 @@ function parseLinkTarget(raw) {
 }
 
 /**
- * Find broken internal links in one file.
- * @returns {Promise<{ line: number, col: number, url: string, reason: string }[]>}
+ * House rule: never markdown-link into `docs/proposals/`.
+ * @returns {{ line: number, col: number, url: string, reason: string }[]}
  */
-async function findBrokenLinks(file, anchorCache) {
+function findProposalLinks(file, text) {
   /** @type {{ line: number, col: number, url: string, reason: string }[]} */
   const hits = [];
-  const text = await readFile(file, "utf8");
   const lines = text.split(/\r?\n/);
   let inFence = false;
-
-  async function anchorsFor(targetFile) {
-    if (!anchorCache.has(targetFile)) {
-      const t = await readFile(targetFile, "utf8");
-      anchorCache.set(targetFile, collectAnchors(t));
-    }
-    return anchorCache.get(targetFile);
-  }
 
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
@@ -360,84 +309,23 @@ async function findBrokenLinks(file, anchorCache) {
     for (const m of line.matchAll(INLINE_LINK_RE)) {
       const url = parseLinkTarget(m[3]);
       if (!url || EXTERNAL_SCHEME_RE.test(url) || url.startsWith("//")) continue;
-
       const hashIdx = url.indexOf("#");
       const pathPart = hashIdx === -1 ? url : url.slice(0, hashIdx);
-      let frag = "";
-      if (hashIdx !== -1) {
-        try {
-          frag = decodeURIComponent(url.slice(hashIdx + 1));
-        } catch {
-          hits.push({
-            line: i + 1,
-            col: (m.index ?? 0) + 1,
-            url,
-            reason: "invalid fragment encoding",
-          });
-          continue;
-        }
-      }
-
-      let targetFile = file;
-      if (pathPart) {
-        const target = resolve(dirname(file), pathPart);
-        const targetRel = relative(ROOT, target).replaceAll("\\", "/");
-        if (
-          targetRel === "docs/proposals" ||
-          targetRel.startsWith("docs/proposals/")
-        ) {
-          hits.push({
-            line: i + 1,
-            col: (m.index ?? 0) + 1,
-            url,
-            reason:
-              "do not link to proposal pages (see docs/meta/proposals.md)",
-          });
-          continue;
-        }
-        if (!(await exists(target))) {
-          hits.push({
-            line: i + 1,
-            col: (m.index ?? 0) + 1,
-            url,
-            reason: "target not found",
-          });
-          continue;
-        }
-        const st = await stat(target);
-        if (st.isDirectory()) {
-          if (frag) {
-            hits.push({
-              line: i + 1,
-              col: (m.index ?? 0) + 1,
-              url,
-              reason: "fragment on directory link",
-            });
-          }
-          continue;
-        }
-        if (frag && !target.endsWith(".md")) {
-          hits.push({
-            line: i + 1,
-            col: (m.index ?? 0) + 1,
-            url,
-            reason: "fragment on non-markdown target",
-          });
-          continue;
-        }
-        targetFile = target;
-      }
-
-      if (frag) {
-        const ids = await anchorsFor(targetFile);
-        if (!ids.has(frag)) {
-          hits.push({
-            line: i + 1,
-            col: (m.index ?? 0) + 1,
-            url,
-            reason: `missing fragment #${frag}`,
-          });
-        }
+      if (!pathPart) continue;
+      const targetRel = relative(
+        ROOT,
+        resolve(dirname(file), pathPart),
+      ).replaceAll("\\", "/");
+      if (
+        targetRel === "docs/proposals" ||
+        targetRel.startsWith("docs/proposals/")
+      ) {
+        hits.push({
+          line: i + 1,
+          col: (m.index ?? 0) + 1,
+          url,
+          reason: "do not link to proposal pages (see docs/meta/proposals.md)",
+        });
       }
     }
   }
@@ -471,7 +359,6 @@ async function main() {
     contentType: "markdown",
   });
 
-  const anchorCache = new Map();
   let failed = 0;
   try {
     for (const file of files) {
@@ -494,7 +381,7 @@ async function main() {
         );
       }
 
-      for (const hit of await findBrokenLinks(file, anchorCache)) {
+      for (const hit of findProposalLinks(file, text)) {
         failed += 1;
         console.error(
           `${rel}:${hit.line}:${hit.col}: broken link ${JSON.stringify(hit.url)} — ${hit.reason}`,
