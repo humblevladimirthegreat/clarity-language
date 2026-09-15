@@ -153,9 +153,13 @@ describe("morphGlossLine — glosses.md dialogue turns", () => {
 
   it("numbered alternative + unmet pleasure", () => {
     expectLine(
-      "x#e- zuzebul g#1 zugobonx haweroxur.",
+      "x#e- zuzebum g#1 zugobonx haweroxur.",
       "x-starting-with | z-problem | g-first | z-speaker-x | h-pleasure-unmet-temporary",
     );
+  });
+
+  it("literal key is not ideation solution", () => {
+    expectLine("zagegol wegeraxel.", "z-key | w-ABIL-unable-temporary");
   });
 
   it("inclusive we", () => {

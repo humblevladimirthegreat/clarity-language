@@ -104,7 +104,7 @@ strict: *In other words, that one (A) lacks the capacity to walk.*
 
 loose: *In other words, they can't manage walking.*
 
-**C:** `x#e- zuzebul g#1. zahan haweroxur.`
+**C:** `x#e- zuzebum g#1. zahan haweroxur.`
 
 gloss: `x-starting-with` · `z-problem` · `g-first` · `z-interlocutors` · `h-pleasure-x-unmet`
 
@@ -112,7 +112,7 @@ strict: *Starting with: problem #1. We (interlocutors) — pleasure unmet (tempo
 
 loose: *First problem: we're not enjoying this.*
 
-**A:** `x#2 zagegol g#2. jem jubur dereral dam dadedal vogogol.`
+**A:** `x#2 zagegom g#2. jem jubur dereral dam dadedal vogogol.`
 
 gloss: `x-point-2` · `z-solution` · `g-second` · `j-request` · `j-←Ubunexunowen` · `d-bread` · `d-and.open` · `d-tea` · `v-cook`
 

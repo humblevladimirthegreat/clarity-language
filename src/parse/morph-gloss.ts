@@ -56,12 +56,6 @@ const SPECIAL_PRONOUN: Record<string, string> = {
   adoro: "next-clause",
 };
 
-const IDEATION: Record<string, string> = {
-  uzebu: "problem",
-  agego: "solution",
-  olala: "goal",
-};
-
 const LINKER_ENGLISH: Record<string, string> = {
   ezaza: "therefore",
   ezeba: "however",
@@ -1068,7 +1062,6 @@ function rootSense(
   }
 
   if (root === "adoro") return SPECIAL_PRONOUN[root]!;
-  if (IDEATION[root]) return IDEATION[root]!;
   if (tables.needGloss.has(root) && opts.need) {
     return tables.needGloss.get(root)!;
   }

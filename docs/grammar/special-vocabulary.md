@@ -53,9 +53,9 @@ Raw feeling (contacting a sensation without judgment) may go unlabeled. Full com
 <a id="numbered-alternatives"></a>
 <a id="ideation"></a>
 
-When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*) so the first frame does not look unique. Use ordinary lexicon nouns plus a free [ordinal](numbers.md) (`g#N`). Prefer at least **`g#1`**, and often name a second candidate, so ranking itself marks that more than one frame is in play.
+When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*) so the first frame does not look unique. Use ordinary lexicon nouns plus a free [ordinal](numbers.md) (`g#N`) — not a closed overlay. *Problem* and *solution* take the published **-m** senses; *goal* is already the **-l** literal. Prefer at least **`g#1`**, and often name a second candidate, so ranking itself marks that more than one frame is in play.
 
-> `zazawan zagegol g#2 vezehel.`
+> `zazawan zagegom g#2 vezehel.`
 >
 > z-Azawan | z-solution | g-second | v-tell
 >
@@ -63,15 +63,15 @@ When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*)
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`uzebul`** | numbered-alternative problem | *problem* (something to fit / solve) | `uzebul` *puzzle-piece* | 🧩: pieces must fit |
-| **`agegol`** | numbered-alternative solution | *solution* (what unlocks it) | `agegol` *key* | 🔑: opens what was locked |
-| **`olalal`** | numbered-alternative goal | *goal* (net you aim at) | `olalal` *goal* | 🥅: the net you shoot for |
+| **`uzebum`** | numbered-alternative problem | *problem* (something to fit / solve) | `uzebul` *puzzle-piece* | 🧩: pieces must fit |
+| **`agegom`** | numbered-alternative solution | *solution* (what unlocks it) | `agegol` *key* | 🔑: opens what was locked |
+| **`olalal`** | numbered-alternative goal | *goal* (net you aim at) | | 🥅: the net you shoot for |
 | free **`g#N`** | rank in **this** numbered-alternative series | *candidate N* | | `#` = ordinal place |
 | soft **`g~#N`** | tentative ranking | *maybe candidate N* | | **-m** leaves the order open |
 
-**Recipe:** `zuzebul g#1` / `zagegol g#2` / `zolalal g#1`
+**Recipe:** `zuzebum g#1` / `zagegom g#2` / `zolalal g#1`
 
-Under other role letters the same spelling is ordinary content (`zuzebul` *a puzzle piece*; `vagegol` *to unlock`). Digits are optional when these roots name a topic outside numbered alternatives (*the problem of free will*). Reframing the **same** situation is different wording of one frame, not a second digit.
+Unnumbered `zuzebum` is just *a problem*, not a candidate in a set — write **`g#N`** when brainstorming. `-l` on the first two roots is still the picture (`zuzebul` *a puzzle piece*; `zagegol` *a key*; `vagegol` *to unlock`). Reframing the **same** situation is different wording of one frame, not a second digit.
 
 **Compare with:** discourse *point N:* uses free **`x#N`** ([number as discourse](numbers.md#number-as-discourse-marker-by-marker)), a continue. Numbered alternatives are problem / solution / goal nouns plus **`g#N`**.
 
@@ -107,16 +107,16 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *INTERNAL* | `habobom` | `abobol` *baby-bottle* | 🍼: liquid stays in the vessel |
 | *EXTERNAL* | `horurum` | `orurul` *pour* | 🫗: liquid goes onto someone else |
 | *CIRCUM* | `hanedem` | `anedel` *candle* | 🕯️: light fills the room |
-| *problem* | `uzebul` | `uzebul` *puzzle-piece* | 🧩: pieces must fit |
-| *solution* | `agegol` | `agegol` *key* | 🔑: opens what was locked |
-| *goal* | `olalal` | `olalal` *goal* | 🥅: the net you shoot for |
+| *problem* | `uzebum` | `uzebul` *puzzle-piece* | 🧩: pieces must fit |
+| *solution* | `agegom` | `agegol` *key* | 🔑: opens what was locked |
+| *goal* | `olalal` | | 🥅: the net you shoot for |
 
 #### English → Agalan
 
 **1.** *Problem 2.*
 
 ::: details Show answer
-`zuzebul g#2.`
+`zuzebum g#2.`
 
 z-problem | g-second
 :::
@@ -140,7 +140,7 @@ z-lantern | g-competence-met-mental | h-HIGH | h-INTERNAL
 **4.** *Solution 1.*
 
 ::: details Show answer
-`zagegol g#1.`
+`zagegom g#1.`
 
 z-solution | g-first
 :::
@@ -171,7 +171,7 @@ z-hug | g-relatedness-unmet-modifiable | h-LOW | h-EXTERNAL
 
 #### Agalan → English
 
-**1.** `zagegol g#2.`
+**1.** `zagegom g#2.`
 
 ::: details Show answer
 
@@ -213,7 +213,7 @@ z-goal | g-first
 *Goal 1* (tentative rank).
 :::
 
-**6.** `zululon zagegol g#1 vezehel.`
+**6.** `zululon zagegom g#1 vezehel.`
 
 ::: details Show answer
 

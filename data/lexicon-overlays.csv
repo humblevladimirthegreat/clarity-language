@@ -119,9 +119,6 @@ ababam,h,🎒,clause_pole,before,BEFORE clause pole (ahead-of),backpack holds wh
 oranem,h,⌛,clause_pole,after,AFTER clause pole (just-after),hourglass just emptied; recency is after the prior edge
 egegam,h,⚙️,cause,CAUSE,CAUSE mood (mechanism framing),gear drives mechanism; mechanism frames how the link works
 egegam,w,⚙️,cause,CAUSE,CAUSE mood (mechanism framing),gear drives mechanism; mechanism frames how the link works
-uzebum,z,🧩,numbered_alternative,problem,numbered-alternative problem slot (ideation),puzzle piece must fit; problem is something to solve in a set
-agegom,z,🔑,numbered_alternative,solution,numbered-alternative solution slot (ideation),key opens what was locked; solution unlocks the problem
-olalam,z,🥅,numbered_alternative,goal,numbered-alternative goal slot (ideation),goal net is what you aim for; objective is the target aim
 an,v,,join_act,includes,join-act includes or adds object,set join a+n as verb; includes adds this object to the set
 an,g,,join_relation,including,join-relation including (adjective + argument),set join a+n on /g/; including frames host with argument
 an,h,,join_relation,including,join-relation with or including (adverb + argument),set join a+n on /h/; with frames event alongside argument

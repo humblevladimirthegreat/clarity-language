@@ -45,7 +45,6 @@ export const OVERLAY_KINDS = [
   "emotion_locus",
   "identity",
   "benchmark",
-  "numbered_alternative",
 ] as const;
 
 export type OverlayKind = (typeof OVERLAY_KINDS)[number];

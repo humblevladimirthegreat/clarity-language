@@ -389,7 +389,7 @@ z-Azawan | h-ABIL-able
 
 ::: details Show answer
 
-z-solution | w-ABIL-unable-temporary
+z-key | w-ABIL-unable-temporary
 *The key: can’t right now* (capability on that property).
 :::
 

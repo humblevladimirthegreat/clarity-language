@@ -254,7 +254,7 @@ j-sure
 
 ::: details Show answer
 
-j-soft-question | z-Uhubun | v-see | d-solution
+j-soft-question | z-Uhubun | v-see | d-key
 
 *Is Uhubun seeing the key, I wonder?*
 :::
@@ -460,7 +460,7 @@ j-question | z-Uhubun | v-sit | h-when
 ::: details Show answer
 `jol zagegol zar?`
 
-j-question | z-solution | z-who
+j-question | z-key | z-who
 :::
 
 **4.** *Just Ululon?* (confirm the singleton)

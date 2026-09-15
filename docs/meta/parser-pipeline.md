@@ -130,7 +130,6 @@ Hosted overlays (needs, evidentials, COMMENT, NOTIONAL, plan / DECISION, emotion
 | `emotion_locus` | `mood` | INTERNAL / EXTERNAL / CIRCUM |
 | `identity` | `mood` | SAME **`onunu`** |
 | `benchmark` | `mood` | Average / Typical / Mine / Social / Professional / Everyone |
-| `numbered_alternative` | `mood` | problem / solution / goal slots |
 
 Later splits of `mood` (token class, gloss tag) can follow this column without new English regexes. Special pronouns stay published + gloss, not this table, until they need a parse fork.
 

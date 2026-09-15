@@ -377,7 +377,7 @@ Bake join / reviser **job** into the English label (including open vs closed whe
 
 ### Numbered alternative + unmet pleasure
 
-> `x#e- zuzebul g#1 zugobonx haweroxur.`
+> `x#e- zuzebum g#1 zugobonx haweroxur.`
 >
 > x-starting-with | z-problem | g-first | z-speaker-x | h-pleasure-unmet-temporary
 >
