@@ -112,6 +112,21 @@ describe("classify", () => {
     assert.equal(word.overlay!.senseForm, "egeram");
   });
 
+  it("hosted judgment bars Mine and Everyone", () => {
+    const mine = expectReading("zuroron", "mood");
+    assert.ok(mine.overlay);
+    assert.equal(mine.overlay!.senseForm, "uroron");
+    const everyone = expectReading("zoloben", "mood");
+    assert.ok(everyone.overlay);
+    assert.equal(everyone.overlay!.senseForm, "oloben");
+  });
+
+  it("stock join zuan is a join, not Everyone", () => {
+    const word = expectReading("zuan", "join");
+    assert.equal(word.family.kind, "joinMarker");
+    assert.equal(word.overlay, undefined);
+  });
+
   it("unknown on foreign payload", () => {
     expectReading("d<english>l", "unknown");
   });

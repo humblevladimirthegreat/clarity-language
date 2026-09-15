@@ -262,10 +262,10 @@ const OVERLAY_TAG: Record<string, string> = {
   olalam: "goal",
   ojun: "Average",
   ahaman: "Typical",
-  ugoboxrawon: "Mine",
+  uroron: "Mine",
   uluden: "Social",
   alaban: "Professional",
-  uan: "Everyone",
+  oloben: "Everyone",
 };
 
 const CARDINALS = [

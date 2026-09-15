@@ -471,38 +471,38 @@ English *worse than Average* (or *Typical*, *Professional*, *my bar*) ranks some
 
 Closed **-l** stands behind the ranking. Open **-m** (`zuem`) is soft *somewhat worse than…*. Exclusive **`oe`** is pick-one triage on the ladder. Prefer **`ue`** plus a positive scale for English-style *worse than*; forward **`e`** fits when the scale is already cost- or harm-oriented. The same fence works under `/d/` or `/b/` when the ranked group fills that slot.
 
-A personal bar on a named person uses [numeric derivation](numeric-derivation.md#numeric-derivation) (digit morph **`+1`**). **`zuan`** names the class *Everyone* ([joins](joins.md#standalone-phrase)).
+Each bar is a hosted overlay: published root plus **-n** under `/z/` `/d/` `/b/`. Soft *somewhat worse than…* stays on the rank join (**`zuem`**), not on a second ending of the bar.
 
-| Agalan | Use | English |
-|---------|-----|---------|
-| **`zojun`** | named Average bar | *Average* (mean of the relevant population) |
-| **`zahaman`** | named Typical bar | *Typical* (usual / modal case) |
-| **`zugoboxrawon`** | speaker’s **normative** bar | *Mine* |
-| **`zuluden`** | named peer bar | *Social* (in-group) |
-| **`zalaban`** | named expert bar | *Professional* (role standard) |
-| **`zuan`** | named universal class | *Everyone* |
+| Agalan | Use | English | Same root as |
+|---------|-----|---------|----------------|
+| **`zojun`** | named Average bar | *Average* (mean of the relevant population) | `ojul` *yin-yang* |
+| **`zahaman`** | named Typical bar | *Typical* (usual / modal case) | `ahamal` *hamster* |
+| **`zuroron`** | speaker’s **normative** bar | *Mine* | `urorol` *mirror* |
+| **`zuluden`** | named peer bar | *Social* (in-group) | `uludel` *silhouettes* |
+| **`zalaban`** | named expert bar | *Professional* (role standard) | `alabal` *lab coat* |
+| **`zoloben`** | named universal class | *Everyone* | `olobel` *globe* |
 
 <a id="mine-vs-speaker"></a>
 
-**`zugobon`** is where the speaker sits on the scale (current skill). **`zugoboxrawon`** is the bar the speaker applies. Soft personal standard: **`zugoboxrawom`**. Ordinary people as bars are ordinary **-n** names (`zululon`).
+**`zugobon`** is where the speaker sits on the scale (current skill). **`zuroron`** is the bar the speaker applies. Ordinary people as bars are ordinary **-n** names (`zululon`).
 
-Single-item `zazawan zuel gomonam` is *the least challenging* in the group in play. **`zuan`** as the second name **names** the universal class as the bar. Standalone closed **`zual`** is ordinary *everything / everyone* in other slots.
+Single-item `zazawan zuel gomonam` is *the least challenging* in the group in play. **`zoloben`** as the second name **names** the universal class as the bar. Standalone closed **`zual`** / stock **`zuan`** stay [join](joins.md#standalone-phrase) *everything / everyone* in other slots — not this overlay.
 
 | Agalan | Reading |
 |---------|---------|
 | `zugobon zalaban zuel guzunul` | *worse than Professional* at singing |
 | `zebegum zojun zuem gagalam` | soft: the draft is somewhat less clear than Average |
-| `zazawan zugoboxrawon zuel guzumum` | Azawan is less happy than **my personal standard** |
+| `zazawan zuroron zuel guzumum` | Azawan is less happy than **my personal standard** |
 | `zazawan zugobon zuel guzunul` | Azawan is less skilled at singing than **I am** (performance) |
 | `zugobon zuluden zuel gomonam` | less challenging than Social |
 | `zugobon zahaman zuel gomonam` | less challenging than Typical |
-| `zugobon zuan zuel gomonam` | less challenging than Everyone |
+| `zugobon zoloben zuel gomonam` | less challenging than Everyone |
 | `zugobon zululon zuel guzunul` | less skilled at singing than **Ululon** (ordinary person comparee) |
 
 ### Translation practice
 <a id="translation-practice-advanced"></a>
 
-Short drills for Advanced. Try each item before opening **Show answer**. The *than*-conjunct is the named bar; **`zugobon`** is performance, **`zugoboxrawon`** is Mine.
+Short drills for Advanced. Try each item before opening **Show answer**. The *than*-conjunct is the named bar; **`zugobon`** is performance, **`zuroron`** is Mine.
 
 **Setting:** a talent contest
 
@@ -520,9 +520,9 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 | *Typical* | `ahaman` | `ahamal` *hamster* |
 | *Professional* | `alaban` | `alabal` *lab coat* |
 | *Social* | `uluden` | `uludel` *silhouettes* |
-| *Mine* | `ugoboxrawon` | |
+| *Mine* | `uroron` | `urorol` *mirror* |
 | *I* | `ugobon` | |
-| *Everyone* | `uan` | |
+| *Everyone* | `oloben` | `olobel` *globe* |
 
 #### English → Agalan
 
@@ -550,8 +550,8 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 **4.** *I am less showy than Mine.*
 
 ::: details Show answer
-`zugobon zugoboxrawon zuel gohohom.`
-<!-- gloss: z-speaker | z-speaker-x-one | z-rank/less | g-showmanship -->
+`zugobon zuroron zuel gohohom.`
+<!-- gloss: z-speaker | z-Mine | z-rank/less | g-showmanship -->
 :::
 
 **5.** *Ululon is somewhat worse at singing than Average.*
@@ -564,8 +564,8 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 **6.** *I am less artistic than Everyone.*
 
 ::: details Show answer
-`zugobon zuan zuel gabadum.`
-<!-- gloss: z-speaker | z-everything-but.named | z-rank/less | g-artistry -->
+`zugobon zoloben zuel gabadum.`
+<!-- gloss: z-speaker | z-Everyone | z-rank/less | g-artistry -->
 :::
 
 #### Agalan → English
@@ -584,8 +584,8 @@ Short drills for Advanced. Try each item before opening **Show answer**. The *th
 *I am less showy than Ululon.*
 :::
 
-**3.** `zazawan zugoboxrawom zuel gabadum.`
-<!-- gloss: z-Azawan | z-speaker-x-one | z-rank/less | g-artistry -->
+**3.** `zazawan zuroron zuem gabadum.`
+<!-- gloss: z-Azawan | z-Mine | z-rank/less.open | g-artistry -->
 
 ::: details Show answer
 *Azawan is somewhat less artistic than Mine.*

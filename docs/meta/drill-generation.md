@@ -310,7 +310,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 13 | `numbers-applied.md` | Intermediate | **exists** | Digit-string labels; clock / calendar time; percent vs points; measure phrases; ranges — as taught in this stage | One topic per item. 4–8 items |
 | 13 | `numbers.md` | Advanced | **exists** | Digitless exponents / hyperbole / zero×exp **as used in the stage’s teach examples** — not unassigned cells | 4–6 items |
 | 13 | `comparatives.md` | Intermediate | **exists** | Full comparative arity; manner `/h/` immediately after the join; distributive **`a`** + SHARED `/ɡ/`; measured differentials | Measured items **Sibling OK:** numbers Intermediate **measure phrases** only |
-| 13 | `comparatives.md` | Advanced | **exists** | Judgment benchmarks (`zojun`, `zahazen`, **`zugoboxrawon`** Mine vs performance **`zugobon`**, …) | **`ugobo`** allowed on Mine/performance items |
+| 13 | `comparatives.md` | Advanced | **exists** | Judgment benchmarks (`zojun`, `zahaman`, **`zuroron`** Mine vs performance **`zugobon`**, **`zoloben`** Everyone, …) | **`ugobo`** allowed on performance items |
 | 13 | `causation.md` | Intermediate | **exists** | Necessary (marked); unique path; clause poles **`adoro` / `ezaze` / `urugu`**; **CAUSE** **`egega`** **-m**; preference vs law (values stack if values Beginner is recycle — it is) | |
 | 13 | `causation.md` | Advanced | **exists** | Factivity; evidential / CAUSE / habit stacks as taught in this stage | COMMENT/evidentiality are Beginner/Intermediate recycle by the time Advanced is read |
 | 14 | `values.md` | Intermediate | **exists** | Motive **`xe`** + preference standing; which ending table; attachment sites | |
@@ -365,7 +365,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | **PLAN** / **PREDICT** | `plan-decision.md` Beginner |
 | **DECISION** | `plan-decision.md` Intermediate |
 | Emotion compose; numbered alternatives | `special-vocabulary.md` Intermediate |
-| Judgment **Mine** **`zugoboxrawon`** | `comparatives.md` Advanced |
+| Judgment **Mine** **`zuroron`** | `comparatives.md` Advanced |
 | `ROOT x NUM` derivation | `numeric-derivation.md` Advanced |
 | Universality overlays | `special-vocabulary.md` Advanced |
 

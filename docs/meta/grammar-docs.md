@@ -440,7 +440,7 @@ When an example needs a **person**, use these nativized names (published root + 
 | `zululon` | *Ululon* | `ululo` *courage* |
 | `zuhubun` | *Uhubun* | `uhubu` *beauty* |
 
-**`ugobo` / `edone`** only when that page is teaching those specials, the point is the **discourse role** (name unavailable, address set, clusivity), or a closed construction is keyed to speaker/listener (*Mine* **`zugoboxrawon`**, viewpoint *my left* when the anchor is the role). Inclusive *we* stays **`aha`**; nonspecific *someone* stays **`enenu`**. Foreign `PoS<…>n` names only when teaching loans or spans. Checkpoints: [translation-exercises.md](translation-exercises.md#principles). Morph / resume: [glosses.md](glosses.md#house-cast).
+**`ugobo` / `edone`** only when that page is teaching those specials, the point is the **discourse role** (name unavailable, address set, clusivity), or a closed construction is keyed to speaker/listener (performance **`zugobon`**, viewpoint *my left* when the anchor is the role). Inclusive *we* stays **`aha`**; nonspecific *someone* stays **`enenu`**. Named Mine is overlay **`zuroron`**, not the speaker pronoun. Foreign `PoS<…>n` names only when teaching loans or spans. Checkpoints: [translation-exercises.md](translation-exercises.md#principles). Morph / resume: [glosses.md](glosses.md#house-cast).
 
 Default example block ([layout](glosses.md#example-block)):
 

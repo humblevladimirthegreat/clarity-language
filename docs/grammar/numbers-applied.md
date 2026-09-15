@@ -341,7 +341,7 @@ When the same root is also a quality or continuum (*how heavy*, *passage of time
 
 Spelled **`…xrawol`** / **`…xrawon`**: [numeric derivation](numeric-derivation.md#numeric-derivation) (**`ROOTx+1`**). Prefer **-n** on the titled form when the unit is a conventional SI name; **-l** when naming a unit-instance without that title force. Soft **-m** hedges amount or unit, not a short name.
 
-**Related form:** normative Mine **`zugoboxrawon`** vs performance **`zugobon`** ([comparatives](comparatives.md#judgment-benchmarks)).
+**Related form:** normative Mine **`zuroron`** vs performance **`zugobon`** ([comparatives](comparatives.md#judgment-benchmarks)). Titled **`+1`** is the unit name, not that bar.
 
 Titled twins of the stock units: `burulexrawon`, `baragaxrawon`, `baneloxrawon`, `bozoboxrawon`, `bejeloxrawon`, `bebeboxrawon`, `bememaxrawon`, `banedexrawon`.
 
