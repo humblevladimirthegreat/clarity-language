@@ -19,7 +19,8 @@ Or open the repo in a [Dev Container](.devcontainer/devcontainer.json) (Node 22 
 | `npm run typecheck` | Typecheck without emit |
 | `npm run lint:agalan` | Check Agalan words in `docs/grammar/` code spans and morph-gloss pairs (also run by `docs:build`) |
 | `npm run dev` | VitePress local preview of grammar docs (served under `/grammar/`) |
-| `npm run docs:build` | Lint Markdown / Agalan / Vue a11y, then build the static grammar site to `dist/grammar/` (Amplify publishes `dist/`) |
+| `npm run docs:build` | Lint Markdown / Agalan / Vue a11y, then the same publish steps as `docs:publish` |
+| `npm run docs:publish` | Fetch TTS if missing, VitePress build, Amplify extras (`dist/`) — what Amplify runs |
 | `npm run docs:preview` | Preview the production docs build |
 | `npm run convert-word` | Convert English to an Agalan root; `--lexicon` rewrites the CSVs and dumps `tmp/lexicon-retie-map.json` |
 | `npm run retie-docs` | Dry-run retie of Agalan tokens in `docs/grammar/` from that map (`--write` to apply) |
