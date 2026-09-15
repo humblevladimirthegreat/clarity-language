@@ -158,6 +158,7 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `reference-suffix.md` | Intermediate | a hospital ward |
 | `core.md` | Beginner | a bank |
 | `core.md` | Intermediate | a train platform |
+| `core.md` | Advanced | a circus |
 | `pronouns.md` | Beginner | a kitchen |
 | `pronouns.md` | Intermediate | a rooftop garden |
 | `pronouns.md` | Advanced | a radio booth |
@@ -287,7 +288,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | Path | File | Band | Status | Introduces (test these) | Notes |
 |------|------|------|--------|-------------------------|-------|
 | 5 | `core.md` | Intermediate | **exists** | **`jam`/`jom`/`jem`/`jum`**; **`gl-`**; adverb topic `/h/`+`/b/`; complex chaining; `/x/` linkers (`xezazal`, `xezebal`, …); nested **`adoro`**; number-as-interjection pointer only if the stage’s examples already show it | Do not require numbers Intermediate readings |
-| 5 | `core.md` | Advanced | skip | weak-pause cues | recognition |
+| 5 | `core.md` | Advanced | **exists** | Leftmost content-word prominence; English cleft / *what*-cleft / fronted adverb | 4–6 items. Weak-pause cues are recognition, not the drill |
 | 4 | `reference-suffix.md` | Intermediate | **exists** | **-n** on any PoS (titled verb/adjective/adverb); phrasal proper names `ROOTxROOT`+**-n**; office **handles** as first-mention **-n** | Not value/ability/plan ending tables |
 | 4 | `reference-suffix.md` | Advanced | skip | — | no Advanced stage |
 | 7 | `pronouns.md` | Intermediate | **exists** | English approximations of **-r**; `/x/`…`-r` thread resume vs `/h/` aboutness; **`aha`** vs name join vs name…**-x** | |

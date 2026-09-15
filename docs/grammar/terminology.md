@@ -540,7 +540,7 @@ Motive **`xe`** endings.
 
 Word-order highlighting (not join arity).
 
-[Core](core.md#as-for)
+[Core](core.md#word-order-emphasis), [as-for](core.md#as-for)
 
 ### Quasi
 

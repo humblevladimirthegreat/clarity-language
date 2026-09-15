@@ -1,9 +1,10 @@
 https://main.d2xds94zsgwptg.amplifyapp.com
 
+redirects settings: https://us-east-2.console.aws.amazon.com/amplify/apps/d2xds94zsgwptg/redirects
+
 # TODO
 review TTS
 consider removing emojis from docs (but keep in lexicon)
-advanced section somewhere on how order affects emphasis
 local llm systematically review entire lexicon
 
 ## Evidentiality / tense

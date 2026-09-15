@@ -697,7 +697,171 @@ z-Uhubun | v-scream | h-because | b-next-clause | z-Azawan | v-departure | h-bec
 ## Advanced
 <a id="advanced"></a>
 
+### Word order and English emphasis
+<a id="word-order-emphasis"></a>
+
+The first letter already says who acts, who is acted on, and what the action is. Moving those words does not change who did what. The **leftmost content word** of the clause body is what you highlight: what the sentence is “about,” or the new information.
+
+English usually keeps subject–verb–object and uses extra wording, a different voice, or spoken stress for that job. When you translate, keep the same highlight in English. Copy Agalan order into English only when that English is also a natural way to put that piece first (*Hastily, Azawan walks*). Opening `/j/` words sit before the body and are not this highlight. Keep **`adoro`** last in its slot; move the other words around it.
+
+> `zazawan dagadal vejel.`
+>
+> z-Azawan | d-cat | v-see
+>
+> "Azawan sees a cat."
+
+Same roles, object first:
+
+> `dagadal zazawan vejel.`
+>
+> d-cat | z-Azawan | v-see
+>
+> "It's a cat that Azawan sees."
+
+| Agalan | Use | English |
+|--------|-----|---------|
+| `zazawan dagadal vejel.` | subject first | *Azawan sees a cat.* |
+| `dagadal zazawan vejel.` | object first | *It's a cat that Azawan sees.* |
+| `vejel zazawan dagadal.` | verb first | *What Azawan does is see a cat.* |
+| `hadazam zazawan vawalal.` | adverb first | *Hastily, Azawan walks.* |
+
+Object-first English *It's a cat that Azawan sees* (or *A cat is what Azawan sees*) still names Azawan as the one who sees. *A cat is seen* hides who sees unless you add *by Azawan*. Use the longer English when you only want to highlight the object.
+
+*As for X* names a topic even when that person is not first: [as-for](#as-for).
+
 ### Weak-pause left cues
 <a id="weak-pause-left-cues"></a>
 
 When you cannot hear a clear pause (singing, fast free order), prefer something audible at the start after silence: *yes* / *no*, a name you address, or a written act word. A bare body that only implies **`jal`** is easy to miss. Writing still uses `.` to mark body edges.
+
+### Translation practice
+<a id="translation-practice-advanced"></a>
+
+Short drills for Advanced. Try each item before opening **Show answer**.
+
+**Setting:** a circus
+
+**Roots used here:**
+
+| English | Agalan | Same root as |
+|---------|--------|--------------|
+| *Azawan* | `azawan` | |
+| *Ululon* | `ululon` | |
+| *Uhubun* | `uhubun` | |
+| *balloon* | `abalol` | |
+| *trumpet* | `udubel` | |
+| *drum* | `urumul` | |
+| *mask* | `amazal` | |
+| *package* | `agegel` | |
+| *see* | `vejel` | `ejel` *eye* |
+| *tell* | `vezehel` | `ezehel` *speech* |
+| *sit* | `vajul` | `ajul` *chair* |
+| *sneak* | `vazanal` | `azanal` *sneak* |
+| *punch* | `vubunul` | `ubunul` *punch* |
+| *haste* | `hadazam` | `adazal` *dash* |
+
+#### English → Agalan
+
+**1.** *Hastily, Azawan sees a balloon.*
+
+::: details Show answer
+`hadazam zazawan dabalol vejel.`
+
+h-haste | z-Azawan | d-balloon | v-see
+:::
+
+**2.** *It's a balloon that Uhubun sees.*
+
+::: details Show answer
+`dabalol zuhubun vejel.`
+
+d-balloon | z-Uhubun | v-see
+:::
+
+**3.** *What Azawan does is tell Ululon.*
+
+::: details Show answer
+`vezehel zazawan dululon.`
+
+v-tell | z-Azawan | d-Ululon
+:::
+
+**4.** *Hastily, Ululon sneaks.*
+
+::: details Show answer
+`hadazam zululon vazanal.`
+
+h-haste | z-Ululon | v-sneak
+:::
+
+**5.** *It's a drum that Ululon punches.*
+
+::: details Show answer
+`durumul zululon vubunul.`
+
+d-drum | z-Ululon | v-punch
+:::
+
+**6.** *What Ululon does is punch Uhubun.*
+
+::: details Show answer
+`vubunul zululon duhubun.`
+
+v-punch | z-Ululon | d-Uhubun
+:::
+
+#### Agalan → English
+
+**1.** `jazawan dudubel zuhubun vejel.`
+
+::: details Show answer
+
+j-Azawan | d-trumpet | z-Uhubun | v-see
+
+*Azawan! It's a trumpet that Uhubun sees.*
+:::
+
+**2.** `hadazam zuhubun vajul.`
+
+::: details Show answer
+
+h-haste | z-Uhubun | v-sit
+
+*Hastily, Uhubun sits.*
+:::
+
+**3.** `vezehel zululon duhubun.`
+
+::: details Show answer
+
+v-tell | z-Ululon | d-Uhubun
+
+*What Ululon does is tell Uhubun.*
+:::
+
+**4.** `dagegel zululon vejel.`
+
+::: details Show answer
+
+d-package | z-Ululon | v-see
+
+*It's a package that Ululon sees.*
+:::
+
+**5.** `damazal zululon vubunul.`
+
+::: details Show answer
+
+d-mask | z-Ululon | v-punch
+
+*It's a mask that Ululon punches.*
+:::
+
+**6.** `duhubun zululon hadazam vubunul.`
+
+::: details Show answer
+
+d-Uhubun | z-Ululon | h-haste | v-punch
+
+*It's Uhubun that Ululon punches hastily.*
+:::
