@@ -16,12 +16,12 @@ Six published roots are the needs you can name. Pick one row. With mid-word **`x
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`alodol`** | autonomy need | *autonomy* (choice, agency, self-direction) | `alodol` *ballot-box* | 🗳️: voting is choosing for yourself |
-| **`olozol`** | competence need | *competence* (efficacy, skill, getting things to work) | `olozol` *toolbox* | 🧰: the kit that gets things working |
-| **`onogol`** | relatedness need | *relatedness* (connection, belonging, care) | `onogol` *knot* | 🪢: ties people together |
-| **`awerol`** | pleasure need | *pleasure* (enjoyment, comfort, aesthetic payoff) | `awerol` *strawberry* | 🍓: sweetness you enjoy |
-| **`uhuhel`** | survival need | *survival* (safety, health, material sufficiency) | `uhuhel` *shield* | 🛡️: what keeps you safe |
-| **`egel`** | a need without picking among the five | *unspecified need* | `egel` *egg* | 🥚: not yet a specific kind |
+| **`alodo`** | autonomy need | *autonomy* (choice, agency, self-direction) | `alodol` *ballot-box* | 🗳️: voting is choosing for yourself |
+| **`olozo`** | competence need | *competence* (efficacy, skill, getting things to work) | `olozol` *toolbox* | 🧰: the kit that gets things working |
+| **`onogo`** | relatedness need | *relatedness* (connection, belonging, care) | `onogol` *knot* | 🪢: ties people together |
+| **`awero`** | pleasure need | *pleasure* (enjoyment, comfort, aesthetic payoff) | `awerol` *strawberry* | 🍓: sweetness you enjoy |
+| **`uhuhe`** | survival need | *survival* (safety, health, material sufficiency) | `uhuhel` *shield* | 🛡️: what keeps you safe |
+| **`ege`** | a need without picking among the five | *unspecified need* | `egel` *egg* | 🥚: not yet a specific kind |
 
 **Compare with:** `zalodol` is a *ballot box*. `galodol` is ballot-box-like. Under `/ɡ/` with **`xa`** / **`xu`**, **`alodo`** is the *autonomy* need.
 
@@ -29,38 +29,38 @@ Six published roots are the needs you can name. Pick one row. With mid-word **`x
 
 ### Met (`xa`): serves the need
 
-When you want to say that a named thing **serves** this need (pays it off), write that thing as a noun, then a `/ɡ/` word: need root, mid-word **`x`**, **`a`**, then an ending. That adjective is about the noun. The ending says how you contact the payoff.
+When you want to say that a named thing **serves** this need (pays it off), write that thing as a noun, then a `/ɡ/` word: need root, mid-word **`x`**, **`a`**, then an ending. That adjective is about the noun. The ending says how that payoff is **appreciated**.
 
 > `zawaral gonogoxal.`
 >
 > z-wrapped-gift | g-relatedness-met-physical
 >
-> "The gift serves relatedness (physical contact)."
+> "The gift serves relatedness (appreciated physically)."
 
 **Not the same job as:** [ability](ability.md) (`vuzunuxal` *can sing*; `guzunuxal` *able to sing* as a property). There the left of **`x`** is an activity. Here it is a **need**, and **`xa`** means *serves this need*.
 
-### Contact channel (endings on met)
+### How it is appreciated (endings on met)
 <a id="value-contact"></a>
 
-On a *serves* word, **-l / -m / -r** are the **contact channel**: body and the scene you can sense, thinking or memory, or a big-picture step-back. Those are kinds of contact, not a ranking. Relatedness *between people* is still the need **`onogo`**.
+On a *serves* word, **-l / -m / -r** say **how the payoff is appreciated**: through body and the scene you can sense, through thinking or memory, or through a big-picture step-back. Those are ways of appreciating the meet, not a ranking. Relatedness *between people* is still the need **`onogo`**.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| `…xal` | contact via body and the scene you can sense | *physical* | **-l** ≈ locked (on the scene you can touch) |
-| `…xam` | contact via thinking, memory, gratitude you take in | *mental* | **-m** ≈ open (in the head) |
-| `…xar` | contact via a big-picture step-back | *spiritual* | **-r** ≈ resume (to a larger frame) |
+| `…xal` | appreciated through body and the scene you can sense | *physical* | **-l** ≈ locked (on the scene you can touch) |
+| `…xam` | appreciated through thinking, memory, gratitude you take in | *mental* | **-m** ≈ open (in the head) |
+| `…xar` | appreciated through a big-picture step-back | *spiritual* | **-r** ≈ resume (to a larger frame) |
 
 > `zohohul golozoxal.`
 >
 > z-house | g-competence-met-physical
 >
-> "The house serves competence (physical contact)."
+> "The house serves competence (appreciated physically)."
 
 > `zabogol golozoxam.`
 >
 > z-book | g-competence-met-mental
 >
-> "The book serves competence (mental contact)."
+> "The book serves competence (appreciated mentally)."
 
 ### Prescription (`xo`): ought
 <a id="value-force"></a>
@@ -87,30 +87,30 @@ That ending is **prescription force**: how strongly you claim the ought. If you 
 >
 > "Uhubun sings: survival ought to be protected (bound)."
 
-### Unmet (`xu`): costs
+### Unmet (`xu`): detracts from the need
 <a id="value-changeability"></a>
 
-When you want to say a named thing **costs** this need (subtracts from it), write that thing as a noun, then a `/ɡ/` word: need root, mid-word **`x`**, **`u`**, then an ending.
+When you want to say a named thing **detracts from** this need, write that thing as a noun, then a `/ɡ/` word: need root, mid-word **`x`**, **`u`**, then an ending.
 
-That ending is **changeability**: how lasting the cost is. If you do not know, use **-m**.
+That ending is **changeability**: how lasting that detriment is. If you do not know, use **-m**.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| `…xul` | the cost is fixed as far as you can tell | *irreversible* | **-l** ≈ locked |
-| `…xum` | effort or circumstance may change the cost (soft default if unknown) | *modifiable* | **-m** ≈ open to change |
-| `…xur` | usually met; not this moment | *temporary* | **-r** ≈ light (this moment only) |
+| `…xul` | the detriment is fixed as far as you can tell | *irreversible* | **-l** ≈ locked |
+| `…xum` | effort or circumstance may soften the detriment (soft default if unknown) | *modifiable* | **-m** ≈ open to change |
+| `…xur` | the detriment has no lasting impact | *temporary* | **-r** ≈ light (this moment only) |
 
 > `zazegem galodoxur.`
 >
 > z-gathering | g-autonomy-unmet-temporary
 >
-> "The gathering costs autonomy right now (temporary)."
+> "The gathering detracts from autonomy right now (temporary)."
 
 > `zabogol golozoxum.`
 >
 > z-book | g-competence-unmet-modifiable
 >
-> "The book costs competence (modifiable)."
+> "The book detracts from competence (modifiable)."
 
 ### Word shape
 <a id="word-shape"></a>
@@ -124,7 +124,7 @@ A values word is a need root with mid-word **`x`**, a stance vowel, and an endin
 |--------|-----|---------|-----|
 | **`xa`** | the named noun pays off this need | *serves* / *met* | **a** ≈ add (the payoff is in) |
 | **`xo`** | ought to act so this need is served or protected | *should* | **o** ≈ one (one ought) |
-| **`xu`** | the named noun subtracts from this need | *costs* / *unmet* | **u** ≈ undo (the need is taken down) |
+| **`xu`** | the named noun subtracts from this need | *detracts from* / *unmet* | **u** ≈ undo (the need is taken down) |
 
 A values word with no **`x`** is not a need: `galodol` is still ballot-box-like; `hawerol` is still strawberry as an adverb.
 
@@ -160,7 +160,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 #### English → Agalan
 
-**1.** *The tent serves survival (physical contact).*
+**1.** *The tent serves survival (appreciated physically).*
 
 ::: details Show answer
 `zedenel guhuhexal.`
@@ -168,7 +168,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 z-tent | g-survival-met-physical
 :::
 
-**2.** *The backpack serves competence (mental contact).*
+**2.** *The backpack serves competence (appreciated mentally).*
 
 ::: details Show answer
 `zababal golozoxam.`
@@ -176,7 +176,7 @@ z-tent | g-survival-met-physical
 z-backpack | g-competence-met-mental
 :::
 
-**3.** *The wind costs relatedness right now (temporary).*
+**3.** *The wind detracts from relatedness right now (temporary).*
 
 ::: details Show answer
 `zuwudul gonogoxur.`
@@ -208,7 +208,7 @@ z-Uhubun | v-sleep | h-pleasure-ought-endorse
 z-Ululon | v-scream | h-survival-ought-bound
 :::
 
-**7.** *The fire costs survival (irreversible).*
+**7.** *The fire detracts from survival (irreversible).*
 
 ::: details Show answer
 `zurel guhuhexul.`
@@ -216,7 +216,7 @@ z-Ululon | v-scream | h-survival-ought-bound
 z-fire | g-survival-unmet-irreversible
 :::
 
-**8.** *The flashlight serves an unspecified need (physical contact).*
+**8.** *The flashlight serves an unspecified need (appreciated physically).*
 
 ::: details Show answer
 `zavazul gegexal.`
@@ -232,7 +232,7 @@ z-flashlight | g-need-met-physical
 
 z-tent | g-need-met-physical
 
-*The tent serves an unspecified need (physical contact).*
+*The tent serves an unspecified need (appreciated physically).*
 :::
 
 **2.** `zavazul golozoxal.`
@@ -241,7 +241,7 @@ z-tent | g-need-met-physical
 
 z-flashlight | g-competence-met-physical
 
-*The flashlight serves competence (physical contact).*
+*The flashlight serves competence (appreciated physically).*
 :::
 
 **3.** `zanunul galodoxum.`
@@ -250,7 +250,7 @@ z-flashlight | g-competence-met-physical
 
 z-rain | g-autonomy-unmet-modifiable
 
-*The rain costs autonomy (modifiable).*
+*The rain detracts from autonomy (modifiable).*
 :::
 
 **4.** `zedenel guhuhexar.`
@@ -259,7 +259,7 @@ z-rain | g-autonomy-unmet-modifiable
 
 z-tent | g-survival-met-spiritual
 
-*The tent serves survival (spiritual contact).*
+*The tent serves survival (appreciated spiritually).*
 :::
 
 **5.** `zululon vezehel honogoxor.`
@@ -277,7 +277,7 @@ z-Ululon | v-tell | h-relatedness-ought-invite
 
 z-backpack | g-competence-unmet-irreversible
 
-*The backpack costs competence (irreversible).*
+*The backpack detracts from competence (irreversible).*
 :::
 
 **7.** `zuhubun vazagal huhuhexor.`
@@ -295,7 +295,7 @@ z-Uhubun | v-scream | h-survival-ought-invite
 
 z-fire | g-autonomy-unmet-irreversible
 
-*The fire costs autonomy (irreversible).*
+*The fire detracts from autonomy (irreversible).*
 :::
 
 ## Intermediate
@@ -304,7 +304,7 @@ z-fire | g-autonomy-unmet-irreversible
 ### Motive (`xe`): preference standing
 <a id="value-preference"></a>
 
-English *have to* / *need to* / *doing this for…* often names a **motive**: why the action is happening, as a description, not a *should*. Write `/h/` on the clause with the need root, mid-word **`x`**, **`e`**, then an ending. That ending is **preference standing**: whether the reason comes from the situation, from the agent, or from protecting against a cost. If you do not know the standing, use **-m**. **-n** is ordinary [proper](reference-suffix.md#proper-name--n). Habit of the reason uses **`hual`** (*usually my reason* is **`…xem`** plus **`hual`**).
+English *have to* / *need to* / *doing this for…* often names a **motive**: why the action is happening, as a description, not a *should*. Write `/h/` on the clause with the need root, mid-word **`x`**, **`e`**, then an ending. That ending is **preference standing**: whether the reason comes from the situation, from the agent, or from protecting against something that detracts from the need. If you do not know the standing, use **-m**. **-n** is ordinary [proper](reference-suffix.md#proper-name--n). Habit of the reason uses **`hual`** (*usually my reason* is **`…xem`** plus **`hual`**).
 
 > `zazawan vezehel honogoxem.`
 >
@@ -320,18 +320,18 @@ English *have to* / *need to* / *doing this for…* often names a **motive**: wh
 |--------|-----|---------|-----|
 | `…xel` | the situation pulls this motive | *circumstantial* | **-l** ≈ locked to the scene; **e** ≈ order (this ranking of reasons) |
 | `…xem` | the agent’s own reason (soft default if unknown) | *internal* | **-m** ≈ open / from inside |
-| `…xer` | motive as protecting against unmet (away-from) | *protective* | **-r** ≈ resume away from a cost |
+| `…xer` | motive as protecting against unmet (away-from) | *protective* | **-r** ≈ resume away from detriment |
 
 ### Which ending table?
 
-Beginner already used *serves* / *should* / *costs*. Motive uses the same **`x` + vowel** slot; pick the ending table that matches that vowel.
+Beginner already used *serves* / *should* / *detracts from*. Motive uses the same **`x` + vowel** slot; pick the ending table that matches that vowel.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`xa`** | [contact channel](#value-contact) endings | *serves* / *met* | **a** ≈ add |
+| **`xa`** | [how it is appreciated](#value-contact) endings | *serves* / *met* | **a** ≈ add |
 | **`xe`** | [preference standing](#value-preference) endings | *doing for this need* | **e** ≈ order |
 | **`xo`** | [prescription force](#value-force) endings | *should* | **o** ≈ one |
-| **`xu`** | [changeability](#value-changeability) endings | *costs* / *unmet* | **u** ≈ undo |
+| **`xu`** | [changeability](#value-changeability) endings | *detracts from* / *unmet* | **u** ≈ undo |
 
 ### Attachment sites
 
@@ -340,7 +340,7 @@ Beginner already attached `/ɡ/` after a noun and `/h/` on the clause. The rest 
 | Agalan | Use | English |
 |--------|-----|---------|
 | `g…xa…` after a noun | praise: the noun serves the need | *gift (serves relatedness)* (`gonogoxa…`) |
-| `g…xu…` after a noun | criticism: the noun costs the need | *gathering (costs autonomy)* (`galodoxu…`) |
+| `g…xu…` after a noun | criticism: the noun detracts from the need | *gathering (detracts from autonomy)* (`galodoxu…`) |
 | `g…xe…` after a noun | the noun’s purpose is this need | *gift for relatedness* (`gonogoxe…`) |
 | `gl-` + value | the same adjective before the noun | `glonogoxal zawaral` |
 | `h…xa…` on the clause | the event serves the need | *tells: competence is met* (`holozoxa…`) |
@@ -428,7 +428,7 @@ z-Azawan | v-bow | h-relatedness-motive-protective
 z-Ululon | v-pray | h-competence-motive-internal
 :::
 
-**6.** *Azawan’s church serves relatedness (physical contact).*
+**6.** *Azawan’s church serves relatedness (appreciated physically).*
 
 ::: details Show answer
 `zuhurul gonogoxal guhurum bazawan.`
@@ -487,7 +487,7 @@ z-Azawan | v-shush | h-relatedness-motive-protective
 
 z-prayer-bead | g-pleasure-met-spiritual
 
-*The prayer bead serves pleasure (spiritual contact).*
+*The prayer bead serves pleasure (appreciated spiritually).*
 :::
 
 **5.** `zanedel galodoxum.`
@@ -496,7 +496,7 @@ z-prayer-bead | g-pleasure-met-spiritual
 
 z-candle | g-autonomy-unmet-modifiable
 
-*The candle costs autonomy (modifiable).*
+*The candle detracts from autonomy (modifiable).*
 :::
 
 **6.** `zobelel gonogoxum.`
@@ -505,7 +505,7 @@ z-candle | g-autonomy-unmet-modifiable
 
 z-bell | g-relatedness-unmet-modifiable
 
-*The bell costs relatedness (modifiable).*
+*The bell detracts from relatedness (modifiable).*
 :::
 
 **7.** `zuhubun vobowol honogoxom.`
