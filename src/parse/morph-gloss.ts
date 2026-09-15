@@ -291,12 +291,14 @@ export function morphGlossLine(text: string, tables: ClassifyTables): string {
   const { words, ctxByIndex } = analyzeLine(normalized, tables);
   const pieces: string[] = [];
   let wordIdx = 0;
+  let islandOpen = true;
   const re = /\S+/g;
   let match: RegExpExecArray | null;
   while ((match = re.exec(normalized)) !== null) {
     const chunk = match[0]!;
     if (chunk === "^") {
-      pieces.push("^");
+      pieces.push(islandOpen ? "^-start" : "^-end");
+      islandOpen = !islandOpen;
       continue;
     }
     const peeled = /[.?!]$/.test(chunk) ? chunk.slice(0, -1) : chunk;
@@ -430,7 +432,7 @@ export function morphRedundantWithLoose(
 }
 
 const MORPH_TOKEN_RE =
-  /^(?:[zdbvgwhxj]l?-)?(?:←)?[A-Za-z0-9…/'’._#+∞≤≥≠@{}^|,-]*(?:-x-[A-Za-z0-9…/'’._#+∞≤≥≠@{}^|,-]+)*(?:-x)?$|^[<>^]$/;
+  /^(?:[zdbvgwhxj]l?-)?(?:←)?[A-Za-z0-9…/'’._#+∞≤≥≠@{}^|,-]*(?:-x-[A-Za-z0-9…/'’._#+∞≤≥≠@{}^|,-]+)*(?:-x)?$|^[<>^]$|^\^-start$|^\^-end$/;
 
 export function looksLikeMorphLine(line: string): boolean {
   const trimmed = line.trim();

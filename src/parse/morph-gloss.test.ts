@@ -208,7 +208,7 @@ describe("compareMorphGloss", () => {
   it("emits scope island edges in morph gloss", () => {
     expectLine(
       "zazawan ^ huzurem zodogol garedel ^ vejel",
-      "z-Azawan | ^ | h-possibility | z-dog | g-red | ^ | v-see",
+      "z-Azawan | ^-start | h-possibility | z-dog | g-red | ^-end | v-see",
     );
   });
 

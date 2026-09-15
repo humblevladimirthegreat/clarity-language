@@ -822,7 +822,7 @@ When same-role words sit next to a smaller list, wrap that stretch and its join 
 
 > `zazawan ^ zunudel zal ^ zam.`
 >
-> z-Azawan | ^ | z-drinking-water | z-and | ^ | z-and.open
+> z-Azawan | ^-start | z-drinking-water | z-and | ^-end | z-and.open
 >
 > "Azawan and (just water)."
 
@@ -955,7 +955,7 @@ z-dove | z-page | z-pen | z-anything
 ::: details Show answer
 `zazawan ^ zuhubun zal ^ zam.`
 
-z-Azawan | ^ | z-Uhubun | z-and | ^ | z-and.open
+z-Azawan | ^-start | z-Uhubun | z-and | ^-end | z-and.open
 :::
 
 **5.** *someone other than Ululon*
@@ -989,7 +989,7 @@ z-dove | z-page | z-pen | z-whatever-ranks
 
 ::: details Show answer
 
-z-Azawan | ^ | z-and | ^ | z-and.open
+z-Azawan | ^-start | z-and | ^-end | z-and.open
 
 *Azawan and nothing*
 :::

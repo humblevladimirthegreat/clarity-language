@@ -5,7 +5,6 @@ review TTS
 consider removing emojis from docs (but keep in lexicon)
 advanced section somewhere on how order affects emphasis
 local llm systematically review entire lexicon
-island spans ^ should gloss as ^-start and ^-end respectively
 
 ## Evidentiality / tense
 

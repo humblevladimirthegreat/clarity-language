@@ -412,7 +412,7 @@ Sometimes *possibility* or a join should apply only to a multi-word chunk, not t
 
 > `zazawan ^ huzurem zodogol garedel ^ vejel.`
 >
-> z-Azawan | ^ | h-possibility | z-dog | g-red | ^ | v-see
+> z-Azawan | ^-start | h-possibility | z-dog | g-red | ^-end | v-see
 >
 > "Azawan saw, as a possibility, the red dog." (*possibility* targets that chunk).
 
@@ -440,7 +440,7 @@ Sometimes *possibility* or a join should apply only to a multi-word chunk, not t
 
 > `zazawan ^ zululon zal ^ zam vejel.`
 >
-> z-Azawan | ^ | z-Ululon | z-and | ^ | z-and.open | v-see
+> z-Azawan | ^-start | z-Ululon | z-and | ^-end | z-and.open | v-see
 >
 > "Azawan and (just Ululon) saw …."
 
@@ -529,7 +529,7 @@ z-Azawan | d-cite | h-aside | h-happy | Azawan | v-tell
 ::: details Show answer
 `zazawan ^ huzurem dululel ^ vejel.`
 
-z-Azawan | ^ | h-possibility | d-lie | ^ | v-see
+z-Azawan | ^-start | h-possibility | d-lie | ^-end | v-see
 :::
 
 **8.** *Ululon and (just Azawan) punched.*
@@ -537,7 +537,7 @@ z-Azawan | ^ | h-possibility | d-lie | ^ | v-see
 ::: details Show answer
 `zululon ^ zazawan zal ^ zam vubunul.`
 
-z-Ululon | ^ | z-Azawan | z-and | ^ | z-and.open | v-punch
+z-Ululon | ^-start | z-Azawan | z-and | ^-end | z-and.open | v-punch
 :::
 
 #### Agalan → English
@@ -599,7 +599,7 @@ z-Ululon | d-cite | z-mention | z-judge | v-tell
 
 ::: details Show answer
 
-z-Ululon | ^ | h-possibility | d-lie | ^ | v-see
+z-Ululon | ^-start | h-possibility | d-lie | ^-end | v-see
 
 *Ululon saw, as a possibility, the lie.*
 :::
