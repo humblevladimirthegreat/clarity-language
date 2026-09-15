@@ -101,9 +101,10 @@ describe("classify", () => {
     expectReading("uhubuxun", "greeting");
   });
 
-  it("value on need host compounds and bare need topic", () => {
+  it("value on need host compounds; bare need root is ordinary", () => {
     expectReading("halodoxal", "value");
-    expectReading("hawerol", "value");
+    expectReading("gonogoxal", "value");
+    expectReading("hawerol", "ordinary");
   });
 
   it("hostless ability overlay", () => {

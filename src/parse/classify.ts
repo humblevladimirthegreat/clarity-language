@@ -162,13 +162,6 @@ function isFenceJoin(word: MorphWord): boolean {
   return !isRestrictor(word);
 }
 
-function bareNeedTopic(word: MorphWord, tables: ClassifyTables): boolean {
-  const { family, pos } = word;
-  if (family.kind !== "content" || family.roots.length !== 1) return false;
-  if (pos !== "h" && pos !== "w") return false;
-  return tables.needRoots.has(family.roots[0]!);
-}
-
 /**
  * Open roots that belong in the published / compound / overlay inventories.
  * Closed families (joins, spans, numbers, foreign payloads) contribute none.
@@ -323,7 +316,8 @@ export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
 
   if (senseForm && pos) {
     const overlayRow = tables.overlays.get(overlayKey(pos, senseForm));
-    if (overlayRow) {
+    // Need overlays register hosts for `x`+vowel values; the bare spelling is ordinary.
+    if (overlayRow && overlayRow.kind !== "need") {
       return {
         ...word,
         overlay: overlayFromRow(overlayRow),
@@ -358,10 +352,6 @@ export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
       reading: "join",
       rootGloss: { literal: joinFenceGloss(word.family.series, word.ending) },
     };
-  }
-
-  if (bareNeedTopic(word, tables)) {
-    return { ...word, reading: "value" };
   }
 
   if (family.kind === "content" && family.roots.length === 1) {
@@ -409,7 +399,6 @@ export type ClassifyHit = {
     | "valueAbility"
     | "restrictor"
     | "join"
-    | "bareNeed"
     | "compoundLemma"
     | "published"
     | "foreign";
@@ -423,7 +412,7 @@ export function classifyHits(word: MorphWord, tables: ClassifyTables): ClassifyH
 
   if (senseForm && pos) {
     const overlayRow = tables.overlays.get(overlayKey(pos, senseForm));
-    if (overlayRow) {
+    if (overlayRow && overlayRow.kind !== "need") {
       hits.push({ source: "overlay", reading: overlayReading(overlayRow) });
     }
   }
@@ -452,10 +441,6 @@ export function classifyHits(word: MorphWord, tables: ClassifyTables): ClassifyH
 
   if (isFenceJoin(word) && word.family.kind === "joinMarker") {
     hits.push({ source: "join", reading: "join" });
-  }
-
-  if (bareNeedTopic(word, tables)) {
-    hits.push({ source: "bareNeed", reading: "value" });
   }
 
   if (family.kind === "content" && family.roots.length === 1) {

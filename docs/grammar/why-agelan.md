@@ -82,8 +82,7 @@ Agalan’s [values](values.md) name a closed inventory of **needs** (autonomy, c
 
 | Stance | Job |
 |--------|-----|
-| Topic (bare need) | Name the payoff without claiming met/unmet |
-| Met | This serves the need, including how you contact the payoff (gratitude / savoring) |
+| Met | This serves the need, including how you contact the payoff (gratitude / savoring) — an adjective on the noun, or `/h/` on the event |
 | Motive | Acting *for* this need, including where the reason stands |
 | Prescription | *Ought* to serve or protect this need, including force (bound … invite) |
 | Unmet | Costs the need, including how changeable that is |

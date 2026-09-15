@@ -113,7 +113,7 @@ Hosted overlays (needs, evidentials, COMMENT, NOTIONAL, plan / DECISION, emotion
 
 | `kind` | `LexReading` | Inventory |
 |--------|--------------------|-----------|
-| `need` | `value` | six needs + unspecified |
+| `need` | `value` (on `x`+vowel hosts only) | six needs + unspecified; bare spelling is ordinary content |
 | `ability` | `ability` | hostless **`egera`** |
 | `join_act` | `joinAct` | vowel-series `/v/` **`an`** / **`on`** / … |
 | `join_relation` | `joinRelation` | same stems on `/g/` `/h/` |

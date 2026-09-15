@@ -135,7 +135,7 @@ Complex `/h/` + `/b/` (**`ahaza`**) *as for X*.
 
 [Core](core.md#as-for)
 
-**Compare with:** values [topic](#met-unmet-motive-prescription-topic-values) is a need with no `x`.
+**Compare with:** values [met](#met-unmet-motive-prescription-values) / unmet on `/ɡ/` is how a need stands toward a noun, not *as for*.
 
 ### Aside
 
@@ -455,9 +455,9 @@ Amount + lexicon unit noun (published metaphor = unit name).
 
 [Numbers applied](numbers-applied.md#measure-phrases)
 
-### Met / unmet / motive / prescription / topic (values)
+### Met / unmet / motive / prescription (values)
 
-Value stances **`xa` / `xu` / `xe` / `xo`** / topic (no `x`).
+Value stances **`xa` / `xu` / `xe` / `xo`**.
 
 [Values](values.md)
 
@@ -477,7 +477,7 @@ Phrase join **-n**.
 
 ### Need inventory
 
-Six closed psychological needs under `/h/` `/w/`.
+Six closed psychological needs under `/ɡ/` `/h/` `/w/`.
 
 [Values](values.md#need-inventory)
 

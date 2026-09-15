@@ -279,7 +279,7 @@ describe("compareMorphGloss", () => {
   });
 
   it("values bake stance and ending grain", () => {
-    expectLine("zawaral wonogoxal", "z-wrapped-gift | w-relatedness-met-physical");
+    expectLine("zawaral gonogoxal", "z-wrapped-gift | g-relatedness-met-physical");
     expectLine("hogegam hanedem", "h-HIGH | h-CIRCUM");
   });
 
