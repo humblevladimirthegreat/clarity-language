@@ -205,6 +205,21 @@ describe("compareMorphGloss", () => {
     assert.ok(result.parseError);
   });
 
+  it("emits scope island edges in morph gloss", () => {
+    expectLine(
+      "zazawan ^ huzurem zodogol garedel ^ vejel",
+      "z-Azawan | ^ | h-possibility | z-dog | g-red | ^ | v-see",
+    );
+  });
+
+  it("mentions use English for unparsed citation stems inside braces", () => {
+    expectLine("z{odogo} gumuzem", "z-dog | g-small");
+  });
+
+  it("ordinary -l on a need host root uses literal sense, not need overlay", () => {
+    expectLine("zazawan gonogol bululon", "z-Azawan | g-knot | b-Ululon");
+  });
+
   it("morphRedundantWithLoose allows single-word citation skips", () => {
     assert.equal(morphRedundantWithLoose("azawal", "swan", tables), true);
     assert.equal(morphRedundantWithLoose("azawan.", '"Azawan."', tables), true);

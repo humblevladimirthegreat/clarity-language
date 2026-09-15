@@ -287,10 +287,25 @@ export function morphGlossFor(
 
 /** Spaced ` | ` morph line for an Agalan string. */
 export function morphGlossLine(text: string, tables: ClassifyTables): string {
-  const { words, ctxByIndex } = analyzeLine(text, tables);
-  return words
-    .flatMap((word, index) => morphGlossTokens(word, tables, ctxByIndex[index] ?? {}))
-    .join(" | ");
+  const normalized = normalizeAgalan(text);
+  const { words, ctxByIndex } = analyzeLine(normalized, tables);
+  const pieces: string[] = [];
+  let wordIdx = 0;
+  const re = /\S+/g;
+  let match: RegExpExecArray | null;
+  while ((match = re.exec(normalized)) !== null) {
+    const chunk = match[0]!;
+    if (chunk === "^") {
+      pieces.push("^");
+      continue;
+    }
+    const peeled = /[.?!]$/.test(chunk) ? chunk.slice(0, -1) : chunk;
+    if (!peeled) continue;
+    if (wordIdx >= words.length) break;
+    pieces.push(...morphGlossTokens(words[wordIdx]!, tables, ctxByIndex[wordIdx] ?? {}));
+    wordIdx += 1;
+  }
+  return pieces.join(" | ");
 }
 
 function morphGlossTokens(
@@ -310,7 +325,7 @@ function morphGlossTokens(
         }
       } catch {
         for (const chunk of payload.match(/\S+/g) ?? []) {
-          inner.push(chunk);
+          inner.push(mentionPayloadEnglish(chunk, tables));
         }
       }
       const prefix =
@@ -415,7 +430,7 @@ export function morphRedundantWithLoose(
 }
 
 const MORPH_TOKEN_RE =
-  /^(?:[zdbvgwhxj]l?-)?(?:←)?[A-Za-z0-9…/'’._#+>,-]*(?:-x-[A-Za-z0-9…/'’._#+>,-]+)*(?:-x)?$|^[<>]$/;
+  /^(?:[zdbvgwhxj]l?-)?(?:←)?[A-Za-z0-9…/'’._#+∞≤≥≠@{}^|,-]*(?:-x-[A-Za-z0-9…/'’._#+∞≤≥≠@{}^|,-]+)*(?:-x)?$|^[<>^]$/;
 
 export function looksLikeMorphLine(line: string): boolean {
   const trimmed = line.trim();
@@ -1002,7 +1017,7 @@ function rootSense(
 
   if (root === "adoro") return SPECIAL_PRONOUN[root]!;
   if (IDEATION[root]) return IDEATION[root]!;
-  if (tables.needGloss.has(root) && (wordIsNeedTopic(ending) || opts.need)) {
+  if (tables.needGloss.has(root) && opts.need) {
     return tables.needGloss.get(root)!;
   }
 
@@ -1015,8 +1030,11 @@ function rootSense(
   return root;
 }
 
-function wordIsNeedTopic(ending: Ending | undefined): boolean {
-  return ending === "l" || ending === "r" || ending === undefined;
+function mentionPayloadEnglish(chunk: string, tables: ClassifyTables): string {
+  const row = tables.published.get(chunk);
+  if (row?.literal) return hyphenEnglish(row.literal);
+  if (row?.metaphorical) return hyphenEnglish(row.metaphorical);
+  return chunk;
 }
 
 function titleAgalanName(root: string, withN: boolean): string {
