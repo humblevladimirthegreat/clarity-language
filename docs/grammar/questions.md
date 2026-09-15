@@ -188,95 +188,111 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `jol zazawan vajul?`
+<!-- gloss: j-question | z-Azawan | v-chair -->
 :::
 
 **2.** *Who sees the umbrella?*
 
 ::: details Show answer
 `jol zar vejel dumubul?`
+<!-- gloss: j-question | z-who | v-eye | d-umbrella -->
 :::
 
 **3.** *Is Ululon writing, I wonder?*
 
 ::: details Show answer
 `jom zululon vuwurul?`
+<!-- gloss: j-soft-question | z-Ululon | v-write -->
 :::
 
 **4.** *Who sees what?*
 
 ::: details Show answer
 `jol zar vejel dar?`
+<!-- gloss: j-question | z-who | v-eye | d-who -->
 :::
 
 **5.** *Who else sees the coat?*
 
 ::: details Show answer
 `jol zur vejel dojal?`
+<!-- gloss: j-question | z-who-else | v-eye | d-coat -->
 :::
 
 **6.** *Azawan tells Uhubun. Yes.* (confirm as a second turn)
 
 ::: details Show answer
 `zazawan vezehel duhubun. jael.`
+<!-- gloss: z-Azawan | v-speech | d-Uhubun | j-yes -->
 :::
 
 **7.** *No.* / *False.* (polar, not “don’t”)
 
 ::: details Show answer
 `juel.`
+<!-- gloss: j-no -->
 :::
 
 **8.** *Sure.* / *I’ll take that.*
 
 ::: details Show answer
 `jaol.`
+<!-- gloss: j-sure -->
 :::
 
 #### Agalan → English
 
 **1.** `jom zuhubun vejel dagegol?`
+<!-- gloss: j-soft-question | z-Uhubun | v-eye | d-solution -->
 
 ::: details Show answer
 *Is Uhubun seeing the key, I wonder?*
 :::
 
 **2.** `jol zar vuwurul?`
+<!-- gloss: j-question | z-who | v-write -->
 
 ::: details Show answer
 *Who writes?*
 :::
 
 **3.** `jol zal vajul?`
+<!-- gloss: j-question | z-and | v-chair -->
 
 ::: details Show answer
 *Does nobody sit?*
 :::
 
 **4.** `jol zar vezehel dar?`
+<!-- gloss: j-question | z-who | v-speech | d-who -->
 
 ::: details Show answer
 *Who tells what?*
 :::
 
 **5.** `jaem.`
+<!-- gloss: j-yes-soft -->
 
 ::: details Show answer
 *I think so.* / *Yeah.*
 :::
 
 **6.** `ululon.`
+<!-- gloss: Ululon -->
 
 ::: details Show answer
 *Ululon.* (just the fill)
 :::
 
 **7.** `jul vubunul.`
+<!-- gloss: j-prohibition | v-punch -->
 
 ::: details Show answer
 *Don’t punch.*
 :::
 
 **8.** `zululon vululel. jael.`
+<!-- gloss: z-Ululon | v-lie | j-yes -->
 
 ::: details Show answer
 *Ululon lies. Yes.*
@@ -404,6 +420,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `jol zazawan vul vezehel?`
+<!-- gloss: j-question | z-Azawan | v-not | v-speech -->
 `jael.`
 :::
 
@@ -411,89 +428,104 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `jol zuhubun vajul har?`
+<!-- gloss: j-question | z-Uhubun | v-chair | h-when -->
 :::
 
 **3.** *Which key?* (one unknown)
 
 ::: details Show answer
 `jol zagegol zar?`
+<!-- gloss: j-question | z-solution | z-who -->
 :::
 
 **4.** *Just Ululon?* (confirm the singleton)
 
 ::: details Show answer
 `jol zululon zal?`
+<!-- gloss: j-question | z-Ululon | z-and -->
 :::
 
 **5.** *How about Uhubun?* (offer)
 
 ::: details Show answer
 `jol zuhubun zam?`
+<!-- gloss: j-question | z-Uhubun | z-and.open -->
 :::
 
 **6.** *Not that.* (reject this option, not a truth-flip)
 
 ::: details Show answer
 `juol.`
+<!-- gloss: j-refuse-option -->
 :::
 
 **7.** *Anytime?*
 
 ::: details Show answer
 `jol hor?`
+<!-- gloss: j-question | h-anytime -->
 :::
 
 **8.** *Hell no!* (refuse the whole frame)
 
 ::: details Show answer
 `jual.`
+<!-- gloss: j-everything-but -->
 :::
 
 #### Agalan → English
 
 **1.** `jael vul vadezel.`
+<!-- gloss: j-yes | v-not | v-attest -->
 
 ::: details Show answer
 *True: didn’t attest.*
 :::
 
 **2.** `jol hur?`
+<!-- gloss: j-question | h-some-other-time -->
 
 ::: details Show answer
 *When else?*
 :::
 
 **3.** `jol var?`
+<!-- gloss: j-question | v-who -->
 
 ::: details Show answer
 *What did they do?*
 :::
 
 **4.** `jol donel zor?`
+<!-- gloss: j-question | d-phone | z-which -->
 
 ::: details Show answer
 *Any phone?*
 :::
 
 **5.** `jol zazawan zul?`
+<!-- gloss: j-question | z-Azawan | z-not -->
 
 ::: details Show answer
 *Not Azawan?*
 :::
 
 **6.** `juom.`
+<!-- gloss: j-refuse-option-soft -->
 
 ::: details Show answer
 *Not that.* (soft reject of this option)
 :::
 
 **7.** `juel vululel.`
+<!-- gloss: j-no | v-lie -->
 
 ::: details Show answer
 *False: did lie.*
 :::
 
 **8.** `jol zar vezehel zuhubun har?`
+<!-- gloss: j-question | z-who | v-speech | z-Uhubun | h-when -->
 
 ::: details Show answer
 *Who tells Uhubun when?*
@@ -613,59 +645,69 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `jol zazawan zel?`
+<!-- gloss: j-question | z-Azawan | z-rank/more -->
 :::
 
 **2.** *Prefer Ululon?* / *Ululon first?* (rank offer)
 
 ::: details Show answer
 `jol zululon zem?`
+<!-- gloss: j-question | z-Ululon | z-rank/more.open -->
 :::
 
 **3.** *Has to be Uhubun?*
 
 ::: details Show answer
 `jol zuhubun zol?`
+<!-- gloss: j-question | z-Uhubun | z-or-exactly-one -->
 :::
 
 **4.** *Tie?* (standalone rank)
 
 ::: details Show answer
 `jol zael?`
+<!-- gloss: j-question | z-as…as -->
 :::
 
 **5.** *Is the trophy enough?*
 
 ::: details Show answer
 `jol zodobol zaol?`
+<!-- gloss: j-question | z-trophy | z-and/or -->
 :::
 
 #### Agalan → English
 
 **1.** `jael.` vs `jaol.`
+<!-- gloss: j-yes | j-sure -->
 
 ::: details Show answer
 *yes / true* (match). *sure / I’ll take that* (uptake).
 :::
 
 **2.** `juel.` vs `juol.`
+<!-- gloss: j-no | j-refuse-option -->
 
 ::: details Show answer
 *no / false* (truth flip). *not that* (reject this option).
 :::
 
 **3.** `jol zobelel zual?`
+<!-- gloss: j-question | z-bell | z-everything-but -->
 
 ::: details Show answer
 *Everything but the bell?*
 :::
 
 **4.** `jol zoel?`
+<!-- gloss: j-question | z-ranked-or -->
 
 ::: details Show answer
 *Do nothing?* / *Skip it?*
 :::
 
 **5.** `jol zagabal zodobol zel?`
+<!-- gloss: j-question | z-clap | z-trophy | z-rank/more -->
 
 ::: details Show answer
 *Clap before trophy?* (closed rank of those two)

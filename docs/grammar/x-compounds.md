@@ -63,95 +63,111 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zahamexewenen.`
+<!-- gloss: z-Ahame-x-Ewenen -->
 :::
 
 **2.** *a hammer and a wrench*
 
 ::: details Show answer
 `zahamel zewenel zam.`
+<!-- gloss: z-hammer | z-wrench | z-and.open -->
 :::
 
 **3.** *a doorbell* (lexical kind)
 
 ::: details Show answer
 `zobeleladorol.`
+<!-- gloss: z-doorbell -->
 :::
 
 **4.** *a friend* (lexical kind)
 
 ::: details Show answer
 `zeberelonogol.`
+<!-- gloss: z-friend -->
 :::
 
 **5.** *Azawan and Ululon* (two people)
 
 ::: details Show answer
 `zazawan zululon.`
+<!-- gloss: z-Azawan | z-Ululon -->
 :::
 
 **6.** *Ululon sees Hammer-Wrench.*
 
 ::: details Show answer
 `zululon dahamexewenen vejel.`
+<!-- gloss: z-Ululon | d-Ahame-x-Ewenen | v-eye -->
 :::
 
 **7.** *Azawan sees a bedroom.*
 
 ::: details Show answer
 `zazawan dohohulabedel vejel.`
+<!-- gloss: z-Azawan | d-bedroom | v-eye -->
 :::
 
 **8.** *Ululon punches a friend.*
 
 ::: details Show answer
 `zululon zeberelonogol vubunul.`
+<!-- gloss: z-Ululon | z-friend | v-punch -->
 :::
 
 #### Agalan → English
 
 **1.** `zeberelonogol.`
+<!-- gloss: z-friend -->
 
 ::: details Show answer
 *a friend* (lexical kind)
 :::
 
 **2.** `zuhubun dobeleladorol vejel.`
+<!-- gloss: z-Uhubun | d-doorbell | v-eye -->
 
 ::: details Show answer
 *Uhubun sees a doorbell.*
 :::
 
 **3.** `zahamel zazel zam.`
+<!-- gloss: z-hammer | z-axe | z-and.open -->
 
 ::: details Show answer
 *a hammer and an axe*
 :::
 
 **4.** `zazawaxululon.`
+<!-- gloss: z-Azawan-x-Ululon -->
 
 ::: details Show answer
 *Azawan-Ululon* (one person)
 :::
 
 **5.** `zuhubun dohohulabedel vejel.`
+<!-- gloss: z-Uhubun | d-bedroom | v-eye -->
 
 ::: details Show answer
 *Uhubun sees a bedroom.*
 :::
 
 **6.** `zeberelonogol dahamel vejel.`
+<!-- gloss: z-friend | d-hammer | v-eye -->
 
 ::: details Show answer
 *A friend sees a hammer.*
 :::
 
 **7.** `zululon dazel vejel.`
+<!-- gloss: z-Ululon | d-axe | v-eye -->
 
 ::: details Show answer
 *Ululon sees an axe.*
 :::
 
 **8.** `zazawan zahamexewenen vubunul.`
+<!-- gloss: z-Azawan | z-Ahame-x-Ewenen | v-punch -->
 
 ::: details Show answer
 *Azawan punches Hammer-Wrench.*
@@ -295,95 +311,111 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `azawaxan.`
+<!-- gloss: Azawan-presence -->
 :::
 
 **2.** *Ululon — one moment please.* (calling)
 
 ::: details Show answer
 `jululoxen.`
+<!-- gloss: j-Ululon-queue -->
 :::
 
 **3.** *Azawan — one ask.*
 
 ::: details Show answer
 `azawaxon.`
+<!-- gloss: Azawan-ask -->
 :::
 
 **4.** *Azawan — I’m here. Ululon — one ask.*
 
 ::: details Show answer
 `azawaxan jululoxon.`
+<!-- gloss: Azawan-presence | j-Ululon-ask -->
 :::
 
 **5.** *Uhubun — just passing.* (calling)
 
 ::: details Show answer
 `juhubuxun.`
+<!-- gloss: j-Uhubun-passing -->
 :::
 
 **6.** *Uhubun — one ask.* (citation)
 
 ::: details Show answer
 `uhubuxon.`
+<!-- gloss: Uhubun-ask -->
 :::
 
 **7.** *Azawan — one moment please.* (calling); *Ululon screams.*
 
 ::: details Show answer
 `jazawaxen zululon vazagal.`
+<!-- gloss: j-Azawan-queue | z-Ululon | v-scream -->
 :::
 
 **8.** *Ululon — just passing.* (calling); *Ululon punches Azawan.*
 
 ::: details Show answer
 `jululoxun zululon zazawan vubunul.`
+<!-- gloss: j-Ululon-passing | z-Ululon | z-Azawan | v-punch -->
 :::
 
 #### Agalan → English
 
 **1.** `uhubuxan.`
+<!-- gloss: Uhubun-presence -->
 
 ::: details Show answer
 *Uhubun — I’m here / we can stay.*
 :::
 
 **2.** `jululoxun.`
+<!-- gloss: j-Ululon-passing -->
 
 ::: details Show answer
 *Ululon — just passing.* (calling)
 :::
 
 **3.** `azawaxun.`
+<!-- gloss: Azawan-passing -->
 
 ::: details Show answer
 *Azawan — just passing.*
 :::
 
 **4.** `juhubuxen.`
+<!-- gloss: j-Uhubun-queue -->
 
 ::: details Show answer
 *Uhubun — one moment please.* (calling)
 :::
 
 **5.** `jululoxon.`
+<!-- gloss: j-Ululon-ask -->
 
 ::: details Show answer
 *Ululon — one ask.* (calling)
 :::
 
 **6.** `azawaxan juhubuxon.`
+<!-- gloss: Azawan-presence | j-Uhubun-ask -->
 
 ::: details Show answer
 *Azawan — I’m here. Uhubun — one ask.* (calling)
 :::
 
 **7.** `jawavel.`
+<!-- gloss: j-greeting -->
 
 ::: details Show answer
 *Wave!* (not a greeting bid on a name)
 :::
 
 **8.** `jazawaxen zuhubun dobeleladorol vejel.`
+<!-- gloss: j-Azawan-queue | z-Uhubun | d-doorbell | v-eye -->
 
 ::: details Show answer
 *Azawan — one moment please.* (calling); *Uhubun sees a doorbell.*
@@ -448,71 +480,83 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zohohulurel.`
+<!-- gloss: z-firehouse -->
 :::
 
 **2.** *a friend* (lexical kind)
 
 ::: details Show answer
 `zeberelonogol.`
+<!-- gloss: z-friend -->
 :::
 
 **3.** *Ululon sits in a firehouse.*
 
 ::: details Show answer
 `zululon zohohulurel vajul.`
+<!-- gloss: z-Ululon | z-firehouse | v-chair -->
 :::
 
 **4.** *Azawan sees a raincoat.*
 
 ::: details Show answer
 `zazawan dojalanunul vejel.`
+<!-- gloss: z-Azawan | d-raincoat | v-eye -->
 :::
 
 **5.** *Azawan and Ululon* (two people, not one stem)
 
 ::: details Show answer
 `zazawan zululon.`
+<!-- gloss: z-Azawan | z-Ululon -->
 :::
 
 **6.** *Ululon punches a friend.*
 
 ::: details Show answer
 `zululon zeberelonogol vubunul.`
+<!-- gloss: z-Ululon | z-friend | v-punch -->
 :::
 
 #### Agalan → English
 
 **1.** `zohohulurel.`
+<!-- gloss: z-firehouse -->
 
 ::: details Show answer
 *a firehouse* (lexical kind)
 :::
 
 **2.** `zuhubun zabogoluwurul vejel.`
+<!-- gloss: z-Uhubun | z-notebook | v-eye -->
 
 ::: details Show answer
 *Uhubun sees a notebook.*
 :::
 
 **3.** `zazawan zobeleladorol vejel.`
+<!-- gloss: z-Azawan | z-doorbell | v-eye -->
 
 ::: details Show answer
 *Azawan sees a doorbell.*
 :::
 
 **4.** `zeberelonogol zohohulurel vajul.`
+<!-- gloss: z-friend | z-firehouse | v-chair -->
 
 ::: details Show answer
 *A friend sits in a firehouse.*
 :::
 
 **5.** `zululon durel vejel.`
+<!-- gloss: z-Ululon | d-fire | v-eye -->
 
 ::: details Show answer
 *Ululon sees a fire.*
 :::
 
 **6.** `zuhubun vazagal. zeberelonogol vubunul.`
+<!-- gloss: z-Uhubun | v-scream | z-friend | v-punch -->
 
 ::: details Show answer
 *Uhubun screams. A friend punches.*

@@ -241,95 +241,111 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zereral zodomal zam.`
+<!-- gloss: z-bread | z-tomato | z-and.open -->
 :::
 
 **2.** *a mango or a melon (pick one)*
 
 ::: details Show answer
 `zamanol zemelol zol.`
+<!-- gloss: z-mango | z-melon | z-or-exactly-one -->
 :::
 
 **3.** *just Uhubun*
 
 ::: details Show answer
 `zuhubun zal.`
+<!-- gloss: z-Uhubun | z-and -->
 :::
 
 **4.** *a grape (optional)*
 
 ::: details Show answer
 `zagabel zom.`
+<!-- gloss: z-grape | z-or-exactly-one.open -->
 :::
 
 **5.** *not the cart*
 
 ::: details Show answer
 `zanahol zul.`
+<!-- gloss: z-cart | z-not -->
 :::
 
 **6.** *something among bread and a tomato*
 
 ::: details Show answer
 `zereral zodomal zar.`
+<!-- gloss: z-bread | z-tomato | z-something -->
 :::
 
 **7.** *only Azawan matters* / *Azawan first*
 
 ::: details Show answer
 `zazawan zel.`
+<!-- gloss: z-Azawan | z-rank/more -->
 :::
 
 **8.** *Ululon punches and Azawan sees Uhubun (and possibly more).*
 
 ::: details Show answer
 `zululon vubunul zazawan duhubun vejel xam.`
+<!-- gloss: z-Ululon | v-punch | z-Azawan | d-Uhubun | v-eye | x-and.open -->
 :::
 
 #### Agalan → English
 
 **1.** `zanahol zam.`
+<!-- gloss: z-cart | z-and.open -->
 
 ::: details Show answer
 *a cart, for one* / *a cart (and possibly more)*
 :::
 
 **2.** `zual.`
+<!-- gloss: z-everything-but -->
 
 ::: details Show answer
 *everything* / *everyone*
 :::
 
 **3.** `zazegel zar.`
+<!-- gloss: z-basket | z-something -->
 
 ::: details Show answer
 *some (unknown) basket*
 :::
 
 **4.** `zamanol zemelol zul.`
+<!-- gloss: z-mango | z-melon | z-not -->
 
 ::: details Show answer
 *neither a mango nor a melon*
 :::
 
 **5.** `zuhubun zam.`
+<!-- gloss: z-Uhubun | z-and.open -->
 
 ::: details Show answer
 *Uhubun, for one* / *Uhubun (and possibly more)*
 :::
 
 **6.** `zuhubun zel.`
+<!-- gloss: z-Uhubun | z-rank/more -->
 
 ::: details Show answer
 *only Uhubun matters* / *Uhubun first*
 :::
 
 **7.** `zululon dazegel vubunul zazawan vazagal xam.`
+<!-- gloss: z-Ululon | d-basket | v-punch | z-Azawan | v-scream | x-and.open -->
 
 ::: details Show answer
 *Ululon punches a basket and Azawan screams (and possibly more).*
 :::
 
 **8.** `zululon vazagal zazawan vululel xam.`
+<!-- gloss: z-Ululon | v-scream | z-Azawan | v-lie | x-and.open -->
 
 ::: details Show answer
 *Ululon screams and Azawan lies (and possibly more).*
@@ -626,95 +642,111 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zuwunel zovowel zual.`
+<!-- gloss: z-wine | z-flower | z-everything-but -->
 :::
 
 **2.** *every ring*
 
 ::: details Show answer
 `zual gunurul.`
+<!-- gloss: z-everything-but | g-ring -->
 :::
 
 **3.** *(happy Azawan) and (happy Ululon)*
 
 ::: details Show answer
 `zazawan zululon zal guzumum.`
+<!-- gloss: z-Azawan | z-Ululon | z-and | g-happy -->
 :::
 
 **4.** *(wine or a flower) and a ring*
 
 ::: details Show answer
 `zuwunel zovowel zol zunurul zal.`
+<!-- gloss: z-wine | z-flower | z-or-exactly-one | z-ring | z-and -->
 :::
 
 **5.** *Azawan sees Uhubun and then Ululon kisses Uhubun.*
 
 ::: details Show answer
 `zazawan duhubun vejel zululon duhubun vuguzul xan.`
+<!-- gloss: z-Azawan | d-Uhubun | v-eye | z-Ululon | d-Uhubun | v-kiss | x-and-then -->
 :::
 
 **6.** *at least Uhubun*
 
 ::: details Show answer
 `zuhubun zaom.`
+<!-- gloss: z-Uhubun | z-and/or.open -->
 :::
 
 **7.** *anything but the wine*
 
 ::: details Show answer
 `zuwunel zuol.`
+<!-- gloss: z-wine | z-anything-but -->
 :::
 
 **8.** *Ululon last, period*
 
 ::: details Show answer
 `zululon zuel.`
+<!-- gloss: z-Ululon | z-rank/less -->
 :::
 
 #### Agalan → English
 
 **1.** `zovowel zual.`
+<!-- gloss: z-flower | z-everything-but -->
 
 ::: details Show answer
 *everything but the flower*
 :::
 
 **2.** `zuam gunurul.`
+<!-- gloss: z-everything-but.open | g-ring -->
 
 ::: details Show answer
 *every ring, as far as I know*
 :::
 
 **3.** `zevevul zual.`
+<!-- gloss: z-veil | z-everything-but -->
 
 ::: details Show answer
 *everything but the veil*
 :::
 
 **4.** `vuguzul vezehel vam duhubun.`
+<!-- gloss: v-kiss | v-speech | v-and.open | d-Uhubun -->
 
 ::: details Show answer
 *kisses and tells Uhubun*
 :::
 
 **5.** `vuguzul vubunul val vul.`
+<!-- gloss: v-kiss | v-punch | v-and | v-not -->
 
 ::: details Show answer
 *not kiss, and not punch*
 :::
 
 **6.** `zazawan duhubun vejel zululon duhubun vuguzul xol zuhubun vajul xal.`
+<!-- gloss: z-Azawan | d-Uhubun | v-eye | z-Ululon | d-Uhubun | v-kiss | x-or-exactly-one | z-Uhubun | v-chair | x-and -->
 
 ::: details Show answer
 *(Azawan sees Uhubun or Ululon kisses Uhubun) and Uhubun sits.*
 :::
 
 **7.** `zuwunel zovowel zunurul zel.`
+<!-- gloss: z-wine | z-flower | z-ring | z-rank/more -->
 
 ::: details Show answer
 *wine ≻ flower ≻ ring*
 :::
 
 **8.** `zuduzel zuom.`
+<!-- gloss: z-tuxedo | z-anything-but.open -->
 
 ::: details Show answer
 *anything but the tuxedo (and possibly more)*
@@ -839,59 +871,69 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zajel zabenel zon.`
+<!-- gloss: z-page | z-pen | z-or-exactly-one.named -->
 :::
 
 **2.** *null* / *void*
 
 ::: details Show answer
 `zan.`
+<!-- gloss: z-and.named -->
 :::
 
 **3.** *any of a dove, a page, or a pen is fine (no order)*
 
 ::: details Show answer
 `zodovel zajel zabenel zor.`
+<!-- gloss: z-dove | z-page | z-pen | z-anything -->
 :::
 
 **4.** *Azawan and (just Uhubun)*
 
 ::: details Show answer
 `zazawan ^ zuhubun zal ^ zam.`
+<!-- gloss: z-Azawan | z-Uhubun | z-and | z-and.open -->
 :::
 
 **5.** *someone other than Ululon*
 
 ::: details Show answer
 `zululon zur.`
+<!-- gloss: z-Ululon | z-something-else -->
 :::
 
 #### Agalan → English
 
 **1.** `zaen.`
+<!-- gloss: z-as…as.named -->
 
 ::: details Show answer
 *it's a draw* (stock)
 :::
 
 **2.** `zodovel zajel zabenel zer.`
+<!-- gloss: z-dove | z-page | z-pen | z-whatever-ranks -->
 
 ::: details Show answer
 *pick a dove, a page, or a pen by ranking*
 :::
 
 **3.** `zazawan ^ zal ^ zam.`
+<!-- gloss: z-Azawan | z-and | z-and.open -->
 
 ::: details Show answer
 *Azawan and nothing*
 :::
 
 **4.** `zuol.`
+<!-- gloss: z-anything-but -->
 
 ::: details Show answer
 *anything (goes)*
 :::
 
 **5.** `zezezam zajel zur.`
+<!-- gloss: z-imprimatur | z-page | z-something-else -->
 
 ::: details Show answer
 *something other than the seal and the page*

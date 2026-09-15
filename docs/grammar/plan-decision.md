@@ -86,95 +86,111 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan howoram vajul.`
+<!-- gloss: z-Azawan | h-plan-sketch | v-chair -->
 :::
 
 **2.** *Ululon means to see a pawn.*
 
 ::: details Show answer
 `zululon howoram degezal vejel.`
+<!-- gloss: z-Ululon | h-plan-sketch | d-chess-pawn | v-eye -->
 :::
 
 **3.** *Azawan’s itinerary is to tell Uhubun.*
 
 ::: details Show answer
 `zazawan howoral duhubun vezehel.`
+<!-- gloss: z-Azawan | h-plan-itinerary | d-Uhubun | v-speech -->
 :::
 
 **4.** *Forecast: Azawan sits.*
 
 ::: details Show answer
 `zazawan helezom vajul.`
+<!-- gloss: z-Azawan | h-predict | v-chair -->
 :::
 
 **5.** *Uhubun’s itinerary is to see Azawan.*
 
 ::: details Show answer
 `zuhubun howoral dazawan vejel.`
+<!-- gloss: z-Uhubun | h-plan-itinerary | d-Azawan | v-eye -->
 :::
 
 **6.** *If that path fails, Ululon will punch Azawan.* (backup course)
 
 ::: details Show answer
 `zululon howorar dazawan vubunul.`
+<!-- gloss: z-Ululon | h-plan-fork | d-Azawan | v-punch -->
 :::
 
 **7.** *Forecast: Ululon screams.*
 
 ::: details Show answer
 `zululon helezom vazagal.`
+<!-- gloss: z-Ululon | h-predict | v-scream -->
 :::
 
 **8.** *If that path fails, Ululon will fight.*
 
 ::: details Show answer
 `zululon howorar vuvugul.`
+<!-- gloss: z-Ululon | h-plan-fork | v-fight -->
 :::
 
 #### Agalan → English
 
 **1.** `zululon howoram vajul.`
+<!-- gloss: z-Ululon | h-plan-sketch | v-chair -->
 
 ::: details Show answer
 *Ululon means to sit.*
 :::
 
 **2.** `zazawan howoram degezal vejel.`
+<!-- gloss: z-Azawan | h-plan-sketch | d-chess-pawn | v-eye -->
 
 ::: details Show answer
 *Azawan means to see a pawn.*
 :::
 
 **3.** `zuhubun howoral dazawan vezehel.`
+<!-- gloss: z-Uhubun | h-plan-itinerary | d-Azawan | v-speech -->
 
 ::: details Show answer
 *Uhubun’s itinerary is to tell Azawan.*
 :::
 
 **4.** `helezom vajul.`
+<!-- gloss: h-predict | v-chair -->
 
 ::: details Show answer
 *Forecast: someone sits.*
 :::
 
 **5.** `zazawan howoram duhubun vezehel.`
+<!-- gloss: z-Azawan | h-plan-sketch | d-Uhubun | v-speech -->
 
 ::: details Show answer
 *Azawan means to tell Uhubun.*
 :::
 
 **6.** `zululon howoral degezal vejel.`
+<!-- gloss: z-Ululon | h-plan-itinerary | d-chess-pawn | v-eye -->
 
 ::: details Show answer
 *Ululon’s itinerary is to see a pawn.*
 :::
 
 **7.** `zuhubun howorar vazagal.`
+<!-- gloss: z-Uhubun | h-plan-fork | v-scream -->
 
 ::: details Show answer
 *If that path fails, Uhubun will scream.*
 :::
 
 **8.** `helezom vuvugul.`
+<!-- gloss: h-predict | v-fight -->
 
 ::: details Show answer
 *Forecast: someone fights.*
@@ -265,95 +281,111 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zululon hegegem vajul.`
+<!-- gloss: z-Ululon | h-DECISION-modifiable | v-chair -->
 :::
 
 **2.** *Azawan has decided to tell Uhubun, still open to revision.*
 
 ::: details Show answer
 `zazawan hegegem duhubun vezehel.`
+<!-- gloss: z-Azawan | h-DECISION-modifiable | d-Uhubun | v-speech -->
 :::
 
 **3.** *Uhubun has decided for now to write.*
 
 ::: details Show answer
 `zuhubun hegeger vuwurul.`
+<!-- gloss: z-Uhubun | h-DECISION-temporary | v-write -->
 :::
 
 **4.** *From the usual pattern, Ululon sits.*
 
 ::: details Show answer
 `zululon helezom habawam vajul.`
+<!-- gloss: z-Ululon | h-predict | h-PATTERN | v-chair -->
 :::
 
 **5.** *Azawan’s itinerary is to sit, and the pick is settled.*
 
 ::: details Show answer
 `zazawan howoral hegegel vajul.`
+<!-- gloss: z-Azawan | h-plan-itinerary | h-DECISION-irreversible | v-chair -->
 :::
 
 **6.** *Ululon has decided for now to see a clipboard.*
 
 ::: details Show answer
 `zululon hegeger dugubol vejel.`
+<!-- gloss: z-Ululon | h-DECISION-temporary | d-clipboard | v-eye -->
 :::
 
 **7.** *Ululon has decided for good to punch Azawan.*
 
 ::: details Show answer
 `zululon hegegel dazawan vubunul.`
+<!-- gloss: z-Ululon | h-DECISION-irreversible | d-Azawan | v-punch -->
 :::
 
 **8.** *Ululon has decided for good to fight.*
 
 ::: details Show answer
 `zululon hegegel vuvugul.`
+<!-- gloss: z-Ululon | h-DECISION-irreversible | v-fight -->
 :::
 
 #### Agalan → English
 
 **1.** `zazawan hegegem vajul.`
+<!-- gloss: z-Azawan | h-DECISION-modifiable | v-chair -->
 
 ::: details Show answer
 *Azawan has decided to sit, still open to revision.*
 :::
 
 **2.** `zululon hegegel vuwurul.`
+<!-- gloss: z-Ululon | h-DECISION-irreversible | v-write -->
 
 ::: details Show answer
 *Ululon has decided for good to write.*
 :::
 
 **3.** `helezom habawam vezehel.`
+<!-- gloss: h-predict | h-PATTERN | v-speech -->
 
 ::: details Show answer
 *Forecast from pattern: someone tells.*
 :::
 
 **4.** `zuhubun hegeger vajul.`
+<!-- gloss: z-Uhubun | h-DECISION-temporary | v-chair -->
 
 ::: details Show answer
 *Uhubun has decided for now to sit.*
 :::
 
 **5.** `zazawan hegeger dabenel vejel.`
+<!-- gloss: z-Azawan | h-DECISION-temporary | d-pen | v-eye -->
 
 ::: details Show answer
 *Azawan has decided for now to see a pen.*
 :::
 
 **6.** `zululon howoral hegegel duhubun vezehel.`
+<!-- gloss: z-Ululon | h-plan-itinerary | h-DECISION-irreversible | d-Uhubun | v-speech -->
 
 ::: details Show answer
 *Ululon’s itinerary is to tell Uhubun, and the pick is settled.*
 :::
 
 **7.** `zululon hegeger dazawan vubunul.`
+<!-- gloss: z-Ululon | h-DECISION-temporary | d-Azawan | v-punch -->
 
 ::: details Show answer
 *Ululon has decided for now to punch Azawan.*
 :::
 
 **8.** `zuhubun hegegel vazagal.`
+<!-- gloss: z-Uhubun | h-DECISION-irreversible | v-scream -->
 
 ::: details Show answer
 *Uhubun has decided for good to scream.*

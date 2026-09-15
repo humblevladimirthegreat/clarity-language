@@ -115,95 +115,111 @@ Short drills for Beginner. Try each item before opening **Show answer**. Count w
 
 ::: details Show answer
 `zabagulx g+2.`
+<!-- gloss: z-baguette-x | g-two -->
 :::
 
 **2.** *The third croissant.*
 
 ::: details Show answer
 `zogozal g#3.`
+<!-- gloss: z-croissant | g-third -->
 :::
 
 **3.** *Cookies — more than one.*
 
 ::: details Show answer
 `zogogelx g+.`
+<!-- gloss: z-cookie-x | g-more-than-one -->
 :::
 
 **4.** *Azawan sees three breads.*
 
 ::: details Show answer
 `zazawan dereralx g+3 vejel.`
+<!-- gloss: z-Azawan | d-bread-x | g-three | v-eye -->
 :::
 
 **5.** *Ululon tells the second pie.*
 
 ::: details Show answer
 `zululon dububel g#2 vezehel.`
+<!-- gloss: z-Ululon | d-pie | g-second | v-speech -->
 :::
 
 **6.** *Uhubun sees more than one doughnut.*
 
 ::: details Show answer
 `zuhubun dodogulx g+ vejel.`
+<!-- gloss: z-Uhubun | d-doughnut-x | g-more-than-one | v-eye -->
 :::
 
 **7.** *Ululon punches three baguettes.*
 
 ::: details Show answer
 `zululon dabagulx g+3 vubunul.`
+<!-- gloss: z-Ululon | d-baguette-x | g-three | v-punch -->
 :::
 
 **8.** *Ululon screams the first fire.*
 
 ::: details Show answer
 `zululon durel g#1 vazagal.`
+<!-- gloss: z-Ululon | d-fire | g-first | v-scream -->
 :::
 
 #### Agalan → English
 
 **1.** `zogozalx g+2.`
+<!-- gloss: z-croissant-x | g-two -->
 
 ::: details Show answer
 *Two croissants.*
 :::
 
 **2.** `zereral g#2.`
+<!-- gloss: z-bread | g-second -->
 
 ::: details Show answer
 *The second bread.*
 :::
 
 **3.** `zabagulx g+.`
+<!-- gloss: z-baguette-x | g-more-than-one -->
 
 ::: details Show answer
 *Baguettes — more than one.*
 :::
 
 **4.** `zuhubun dogogelx g+3 vejel.`
+<!-- gloss: z-Uhubun | d-cookie-x | g-three | v-eye -->
 
 ::: details Show answer
 *Uhubun sees three cookies.*
 :::
 
 **5.** `zazawan dububelx g+ vejel.`
+<!-- gloss: z-Azawan | d-pie-x | g-more-than-one | v-eye -->
 
 ::: details Show answer
 *Azawan sees more than one pie.*
 :::
 
 **6.** `zululon dabagelx g+2 vurunul.`
+<!-- gloss: z-Ululon | d-bagel-x | g-two | v-run -->
 
 ::: details Show answer
 *Ululon runs two bagels.*
 :::
 
 **7.** `zululon dabagelx g+ vubunul.`
+<!-- gloss: z-Ululon | d-bagel-x | g-more-than-one | v-punch -->
 
 ::: details Show answer
 *Ululon punches bagels — more than one.*
 :::
 
 **8.** `zululon durel g#1 vubunul.`
+<!-- gloss: z-Ululon | d-fire | g-first | v-punch -->
 
 ::: details Show answer
 *Ululon punches the first fire.*
@@ -212,36 +228,42 @@ Short drills for Beginner. Try each item before opening **Show answer**. Count w
 #### Written → spoken
 
 **1.** `g+4`
+<!-- gloss: g-four -->
 
 ::: details Show answer
 *gramol*
 :::
 
 **2.** `g#1`
+<!-- gloss: g-first -->
 
 ::: details Show answer
 *grewol*
 :::
 
 **3.** `g+`
+<!-- gloss: g-more-than-one -->
 
 ::: details Show answer
 *gral*
 :::
 
 **4.** `g+21`
+<!-- gloss: g-21 -->
 
 ::: details Show answer
 *graduwol*
 :::
 
 **5.** `g#8`
+<!-- gloss: g-eighth -->
 
 ::: details Show answer
 *grehal*
 :::
 
 **6.** `g+7`
+<!-- gloss: g-seven -->
 
 ::: details Show answer
 *gralel*
@@ -253,36 +275,42 @@ Short drills for Beginner. Try each item before opening **Show answer**. Count w
 
 ::: details Show answer
 `g+2`
+<!-- gloss: g-two -->
 :::
 
 **2.** *grerel*
 
 ::: details Show answer
 `g#3`
+<!-- gloss: g-third -->
 :::
 
 **3.** *grawozol*
 
 ::: details Show answer
 `g+10`
+<!-- gloss: g-ten -->
 :::
 
 **4.** *grenal*
 
 ::: details Show answer
 `g#9`
+<!-- gloss: g-ninth -->
 :::
 
 **5.** *gravol*
 
 ::: details Show answer
 `g+5`
+<!-- gloss: g-five -->
 :::
 
 **6.** *grazol*
 
 ::: details Show answer
 `g+0`
+<!-- gloss: g-zero -->
 :::
 
 ## Intermediate
@@ -816,95 +844,111 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Pre
 
 ::: details Show answer
 `zedadalx g~+3.`
+<!-- gloss: z-seat-x | g-three -->
 :::
 
 **2.** *Three (as the subject) is a trophy.*
 
 ::: details Show answer
 `z+3 godobol.`
+<!-- gloss: z-three | g-trophy -->
 :::
 
 **3.** *Ululon runs three times.*
 
 ::: details Show answer
 `zululon vurunul h+3.`
+<!-- gloss: z-Ululon | v-run | h-three -->
 :::
 
 **4.** *The penultimate seat.*
 
 ::: details Show answer
 `zedadal g#-2.`
+<!-- gloss: z-seat | g-second-from-end -->
 :::
 
 **5.** *Point 2: Azawan sits.*
 
 ::: details Show answer
 `x#2 zazawan vajul.`
+<!-- gloss: x-second | z-Azawan | v-chair -->
 :::
 
 **6.** *Three more!*
 
 ::: details Show answer
 `j+3.`
+<!-- gloss: j-three -->
 :::
 
 **7.** *Ululon adds three to the trophy.*
 
 ::: details Show answer
 `zululon dodobol v+3.`
+<!-- gloss: z-Ululon | d-trophy | v-three -->
 :::
 
 **8.** *Ululon punches three times.*
 
 ::: details Show answer
 `zululon vubunul h+3.`
+<!-- gloss: z-Ululon | v-punch | h-three -->
 :::
 
 #### Agalan → English
 
 **1.** `zedadalx g~+2.`
+<!-- gloss: z-seat-x | g-two -->
 
 ::: details Show answer
 *About two seats.*
 :::
 
 **2.** `z#2 godobol.`
+<!-- gloss: z-second | g-trophy -->
 
 ::: details Show answer
 *Second is a trophy.*
 :::
 
 **3.** `zululon vurunul h+.`
+<!-- gloss: z-Ululon | v-run | h-more-than-one -->
 
 ::: details Show answer
 *Ululon runs multiple times.*
 :::
 
 **4.** `j_3.`
+<!-- gloss: j-_3 -->
 
 ::: details Show answer
 *Three!* (score / label)
 :::
 
 **5.** `x#-2 zululon vurunul.`
+<!-- gloss: x-second-from-end | z-Ululon | v-run -->
 
 ::: details Show answer
 *Penultimate item: Ululon runs.*
 :::
 
 **6.** `zedadal gelelel g#-1.`
+<!-- gloss: z-seat | g-bell-pepper | g-first-from-end -->
 
 ::: details Show answer
 *The last big seat, counting from the end.*
 :::
 
 **7.** `zazawan d=+ vejel.`
+<!-- gloss: z-Azawan | d-more-than-one | v-eye -->
 
 ::: details Show answer
 *Azawan sees that amount again.*
 :::
 
 **8.** `zuhubun vajul h#3.`
+<!-- gloss: z-Uhubun | v-chair | h-third -->
 
 ::: details Show answer
 *Uhubun sits for the third time.*
@@ -1236,71 +1280,83 @@ Short drills for Advanced. Try each item before opening **Show answer**. Digitle
 
 ::: details Show answer
 `zarazalx g+e.`
+<!-- gloss: z-star-x | g-infinity -->
 :::
 
 **2.** *One gazillion telescopes.*
 
 ::: details Show answer
 `zelezolx g+1e.`
+<!-- gloss: z-telescope-x | g-+-1e -->
 :::
 
 **3.** *Finally: Azawan sees.*
 
 ::: details Show answer
 `x#e zazawan vejel.`
+<!-- gloss: x-finally | z-Azawan | v-eye -->
 :::
 
 **4.** *To infinity!*
 
 ::: details Show answer
 `j+e.`
+<!-- gloss: j-infinity -->
 :::
 
 **5.** *Annihilate!*
 
 ::: details Show answer
 `j+0e.`
+<!-- gloss: j-+-0e -->
 :::
 
 **6.** *Starting with: Uhubun sees.*
 
 ::: details Show answer
 `x#e- zuhubun vejel.`
+<!-- gloss: x-starting-with | z-Uhubun | v-eye -->
 :::
 
 #### Agalan → English
 
 **1.** `zunulx g+e.`
+<!-- gloss: z-sun-x | g-infinity -->
 
 ::: details Show answer
 *Suns — infinitely many.*
 :::
 
 **2.** `j#e.`
+<!-- gloss: j-last-place -->
 
 ::: details Show answer
 *Finally!*
 :::
 
 **3.** `x#e- zululon vejel.`
+<!-- gloss: x-starting-with | z-Ululon | v-eye -->
 
 ::: details Show answer
 *Starting with: Ululon sees.*
 :::
 
 **4.** `zarazal g#1e.`
+<!-- gloss: z-star | g-#-1e -->
 
 ::: details Show answer
 *The gazillionth / umpteenth star.*
 :::
 
 **5.** `zazawan vejel h#1e.`
+<!-- gloss: z-Azawan | v-eye | h-#-1e -->
 
 ::: details Show answer
 *Azawan sees for the gazillionth time.*
 :::
 
 **6.** `j-e-.`
+<!-- gloss: j---e- -->
 
 ::: details Show answer
 *As if!*

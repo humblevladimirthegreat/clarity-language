@@ -90,95 +90,111 @@ Short drills for Beginner. Try each item before opening **Show answer**. Tag **c
 
 ::: details Show answer
 `zazawan vugumuxal.`
+<!-- gloss: z-Azawan | v-climb-able -->
 :::
 
 **2.** *Ululon can’t climb right now.*
 
 ::: details Show answer
 `zululon vugumuxel.`
+<!-- gloss: z-Ululon | v-climb-unable-temporary -->
 :::
 
 **3.** *Uhubun can’t stand yet (that may change).*
 
 ::: details Show answer
 `zuhubun vazanuxol.`
+<!-- gloss: z-Uhubun | v-stand-unable-modifiable -->
 :::
 
 **4.** *Azawan can see the rock.*
 
 ::: details Show answer
 `zazawan zaragal vejexal.`
+<!-- gloss: z-Azawan | z-rock | v-eye-able -->
 :::
 
 **5.** *Azawan climbs.* (ordinary event, no can / can’t tag)
 
 ::: details Show answer
 `zazawan vugumul.`
+<!-- gloss: z-Azawan | v-climb -->
 :::
 
 **6.** *Uhubun can’t scream right now.*
 
 ::: details Show answer
 `zuhubun vazagaxel.`
+<!-- gloss: z-Uhubun | v-scream-unable-temporary -->
 :::
 
 **7.** *Ululon can punch.*
 
 ::: details Show answer
 `zululon vubunuxal.`
+<!-- gloss: z-Ululon | v-punch-able -->
 :::
 
 **8.** *Azawan can’t climb (it’s fixed).*
 
 ::: details Show answer
 `zazawan vugumuxul.`
+<!-- gloss: z-Azawan | v-climb-unable-irreversible -->
 :::
 
 #### Agalan → English
 
 **1.** `zuhubun vugumuxal.`
+<!-- gloss: z-Uhubun | v-climb-able -->
 
 ::: details Show answer
 *Uhubun can climb.*
 :::
 
 **2.** `zazawan vazanuxel.`
+<!-- gloss: z-Azawan | v-stand-unable-temporary -->
 
 ::: details Show answer
 *Azawan can’t stand right now.*
 :::
 
 **3.** `zululon vugumuxol.`
+<!-- gloss: z-Ululon | v-climb-unable-modifiable -->
 
 ::: details Show answer
 *Ululon can’t climb yet (that may change).*
 :::
 
 **4.** `zuhubun vurunuxul.`
+<!-- gloss: z-Uhubun | v-run-unable-irreversible -->
 
 ::: details Show answer
 *Uhubun can’t run (it’s fixed).*
 :::
 
 **5.** `zululon vewewuxal.`
+<!-- gloss: z-Ululon | v-weightlift-able -->
 
 ::: details Show answer
 *Ululon can lift.*
 :::
 
 **6.** `zazawan gugumuxal.`
+<!-- gloss: z-Azawan | g-climb-able -->
 
 ::: details Show answer
 *Azawan can climb (as a property).*
 :::
 
 **7.** `zululon vubunuxam.`
+<!-- gloss: z-Ululon | v-force-able -->
 
 ::: details Show answer
 *Ululon can punch (metaphorical host sense).*
 :::
 
 **8.** `zuhubun vazagaxol.`
+<!-- gloss: z-Uhubun | v-scream-unable-modifiable -->
 
 ::: details Show answer
 *Uhubun can’t scream yet (that may change).*
@@ -250,95 +266,111 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Pre
 
 ::: details Show answer
 `hegeraxel.`
+<!-- gloss: h-ABIL-unable-temporary -->
 :::
 
 **2.** *Azawan can’t right now* (clause-wide; no single activity root).
 
 ::: details Show answer
 `zazawan hegeraxel.`
+<!-- gloss: z-Azawan | h-ABIL-unable-temporary -->
 :::
 
 **3.** *Can’t yet* (clause-wide; that may change).
 
 ::: details Show answer
 `hegeraxol.`
+<!-- gloss: h-ABIL-unable-modifiable -->
 :::
 
 **4.** *Ability* (topic only: no can / can’t stance).
 
 ::: details Show answer
 `hegeral.`
+<!-- gloss: h-cereal -->
 :::
 
 **5.** *Azawan can* (clause-wide).
 
 ::: details Show answer
 `zazawan hegeraxal.`
+<!-- gloss: z-Azawan | h-ABIL-able -->
 :::
 
 **6.** *Ululon is locked: can’t right now.*
 
 ::: details Show answer
 `zululon gologel wegeraxel.`
+<!-- gloss: z-Ululon | g-locked | w-ABIL-unable-temporary -->
 :::
 
 **7.** *Uhubun can’t* (fixed; no single host).
 
 ::: details Show answer
 `zuhubun hegeraxul.`
+<!-- gloss: z-Uhubun | h-ABIL-unable-irreversible -->
 :::
 
 **8.** *Ululon can punch.* (named activity: keep the host)
 
 ::: details Show answer
 `zululon vubunuxal.`
+<!-- gloss: z-Ululon | v-punch-able -->
 :::
 
 #### Agalan → English
 
 **1.** `zululon hegeraxol.`
+<!-- gloss: z-Ululon | h-ABIL-unable-modifiable -->
 
 ::: details Show answer
 *Ululon can’t yet (that may change; no single host).*
 :::
 
 **2.** `zegeral.`
+<!-- gloss: z-cereal -->
 
 ::: details Show answer
 *Cereal / a capacity* (ordinary word: no ability stance).
 :::
 
 **3.** `gologel wegeraxal.`
+<!-- gloss: g-locked | w-ABIL-able -->
 
 ::: details Show answer
 *Locked: can* (capability framed on that property).
 :::
 
 **4.** `zazawan hegeraxam.`
+<!-- gloss: z-Azawan | h-ABIL-able -->
 
 ::: details Show answer
 *Azawan can* (clause-wide; metaphorical capacity).
 :::
 
 **5.** `zagegol wegeraxel.`
+<!-- gloss: z-solution | w-ABIL-unable-temporary -->
 
 ::: details Show answer
 *The key: can’t right now* (capability on that property).
 :::
 
 **6.** `zuhubun vuguguxel.`
+<!-- gloss: z-Uhubun | v-skunk-unable-temporary -->
 
 ::: details Show answer
 *Uhubun can’t guard right now.*
 :::
 
 **7.** `zululon vazagaxul.`
+<!-- gloss: z-Ululon | v-scream-unable-irreversible -->
 
 ::: details Show answer
 *Ululon can’t scream (it’s fixed).*
 :::
 
 **8.** `zagazel hegeraxul.`
+<!-- gloss: z-castle | h-ABIL-unable-irreversible -->
 
 ::: details Show answer
 *The fortress can’t (fixed; no single host).*

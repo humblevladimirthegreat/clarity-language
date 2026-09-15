@@ -177,95 +177,111 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan vuzuwul hunugul hal.`
+<!-- gloss: z-Azawan | v-swim | h-night | h-only-when -->
 :::
 
 **2.** *Ululon never swims.*
 
 ::: details Show answer
 `zululon vuzuwul hal.`
+<!-- gloss: z-Ululon | v-swim | h-never -->
 :::
 
 **3.** *Uhubun always swims.*
 
 ::: details Show answer
 `zuhubun vuzuwul hual.`
+<!-- gloss: z-Uhubun | v-swim | h-always -->
 :::
 
 **4.** *Azawan is never happy.*
 
 ::: details Show answer
 `zazawan guzumum wal.`
+<!-- gloss: z-Azawan | g-happy | w-never -->
 :::
 
 **5.** *Ululon swims sometimes.*
 
 ::: details Show answer
 `zululon vuzuwul har.`
+<!-- gloss: z-Ululon | v-swim | h-sometimes -->
 :::
 
 **6.** *Azawan swims quickly and quietly.*
 
 ::: details Show answer
 `zazawan vuzuwul hadazam howom.`
+<!-- gloss: z-Azawan | v-swim | h-haste | h-quietude -->
 :::
 
 **7.** *Uhubun swims anytime.*
 
 ::: details Show answer
 `zuhubun vuzuwul hor.`
+<!-- gloss: z-Uhubun | v-swim | h-anytime -->
 :::
 
 **8.** *Ululon always punches Azawan.*
 
 ::: details Show answer
 `zululon vubunul dazawan hual.`
+<!-- gloss: z-Ululon | v-punch | d-Azawan | h-always -->
 :::
 
 #### Agalan → English
 
 **1.** `zululon vuzuwul hunugul hal.`
+<!-- gloss: z-Ululon | v-swim | h-night | h-only-when -->
 
 ::: details Show answer
 *Ululon swims only at night.*
 :::
 
 **2.** `zazawan vuzuwul hal.`
+<!-- gloss: z-Azawan | v-swim | h-never -->
 
 ::: details Show answer
 *Azawan never swims.*
 :::
 
 **3.** `zululon guzumum wual.`
+<!-- gloss: z-Ululon | g-happy | w-always -->
 
 ::: details Show answer
 *Ululon is always happy.*
 :::
 
 **4.** `zuhubun vuzuwul hur.`
+<!-- gloss: z-Uhubun | v-swim | h-some-other-time -->
 
 ::: details Show answer
 *Uhubun swims at some other time.*
 :::
 
 **5.** `zazawan vuzuwul hanunul hunugul ham.`
+<!-- gloss: z-Azawan | v-swim | h-rain | h-night | h-when.open -->
 
 ::: details Show answer
 *Azawan swims when raining and at night, among other times.*
 :::
 
 **6.** `zuhubun guzumum war.`
+<!-- gloss: z-Uhubun | g-happy | w-sometimes -->
 
 ::: details Show answer
 *Uhubun is sometimes happy.*
 :::
 
 **7.** `zazawan vuzuwul hurel hual.`
+<!-- gloss: z-Azawan | v-swim | h-fire | h-always-except -->
 
 ::: details Show answer
 *Azawan always swims except when there is fire.*
 :::
 
 **8.** `zululon vuzuwul hurel hual.`
+<!-- gloss: z-Ululon | v-swim | h-fire | h-always-except -->
 
 ::: details Show answer
 *Ululon always swims except when there is fire.*
@@ -385,95 +401,111 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zazawan vugumul hanunul hunugul hol.`
+<!-- gloss: z-Azawan | v-climb | h-rain | h-night | h-when-one -->
 :::
 
 **2.** *Ululon runs when raining and/or when snowing.*
 
 ::: details Show answer
 `zululon vurunul hanunul hozowol haol.`
+<!-- gloss: z-Ululon | v-run | h-rain | h-snow | h-ao -->
 :::
 
 **3.** *Uhubun does not climb when there is fog.*
 
 ::: details Show answer
 `zuhubun vugumul havogol hul.`
+<!-- gloss: z-Uhubun | v-climb | h-fog | h-not-when -->
 :::
 
 **4.** *Azawan climbs anytime except when snowing.*
 
 ::: details Show answer
 `zazawan vugumul hozowol huol.`
+<!-- gloss: z-Azawan | v-climb | h-snow | h-uo -->
 :::
 
 **5.** *Azawan climbs preferably when raining rather than when snowing.*
 
 ::: details Show answer
 `zazawan vugumul hanunul hozowol hel.`
+<!-- gloss: z-Azawan | v-climb | h-rain | h-snow | h-when-ranked -->
 :::
 
 **6.** *Azawan climbs if ice, else if fog.*
 
 ::: details Show answer
 `zazawan vugumul hujel havogol hoel.`
+<!-- gloss: z-Azawan | v-climb | h-ice | h-fog | h-oe -->
 :::
 
 **7.** *Azawan is happy either when raining or at night, not both.*
 
 ::: details Show answer
 `zazawan guzumum wanunul wunugul wol.`
+<!-- gloss: z-Azawan | g-happy | w-rain | w-night | w-when-one -->
 :::
 
 **8.** *Uhubun screams if Ululon falls.*
 
 ::: details Show answer
 `zuhubun vazagal hadorom zululon vodowol badorol.`
+<!-- gloss: z-Uhubun | v-scream | h-if | z-Ululon | v-down | b-next-clause -->
 :::
 
 #### Agalan → English
 
 **1.** `zululon vugumul hanunul hunugul hom.`
+<!-- gloss: z-Ululon | v-climb | h-rain | h-night | h-when-one.open -->
 
 ::: details Show answer
 *Ululon climbs either when raining or at night, or never.*
 :::
 
 **2.** `zululon vugumul hanunul hozowol hael.`
+<!-- gloss: z-Ululon | v-climb | h-rain | h-snow | h-whenever -->
 
 ::: details Show answer
 *Ululon climbs as often when raining as when snowing.*
 :::
 
 **3.** `zazawan vugumul hedenel hal.`
+<!-- gloss: z-Azawan | v-climb | h-tent | h-only-when -->
 
 ::: details Show answer
 *Azawan climbs only at the tent.*
 :::
 
 **4.** `zululon vurunul hanunul hozowol har.`
+<!-- gloss: z-Ululon | v-run | h-rain | h-snow | h-sometimes -->
 
 ::: details Show answer
 *Ululon runs sometimes among rain or snow.*
 :::
 
 **5.** `zazawan vugumul hael.`
+<!-- gloss: z-Azawan | v-climb | h-whenever -->
 
 ::: details Show answer
 *Azawan climbs equally often.*
 :::
 
 **6.** `zuhubun vugumul havogol hul.`
+<!-- gloss: z-Uhubun | v-climb | h-fog | h-not-when -->
 
 ::: details Show answer
 *Uhubun does not climb when there is fog.*
 :::
 
 **7.** `zazawan vazagal hadorom zululon vodowol badorol.`
+<!-- gloss: z-Azawan | v-scream | h-if | z-Ululon | v-down | b-next-clause -->
 
 ::: details Show answer
 *Azawan screams if Ululon falls.*
 :::
 
 **8.** `zululon guzumum wanunul wunugul wol.`
+<!-- gloss: z-Ululon | g-happy | w-rain | w-night | w-when-one -->
 
 ::: details Show answer
 *Ululon is happy either when raining or at night, not both.*

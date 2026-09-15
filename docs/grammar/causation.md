@@ -87,95 +87,111 @@ Short drills for Beginner. Try each item before opening **Show answer**. Everyda
 
 ::: details Show answer
 `zezedel zaom.`
+<!-- gloss: z-seedling | z-and/or.open -->
 :::
 
 **2.** *Azawan’s pouring would work.*
 
 ::: details Show answer
 `zazawan vorurul vaom.`
+<!-- gloss: z-Azawan | v-pour | v-and/or.open -->
 :::
 
 **3.** *A window would work.*
 
 ::: details Show answer
 `zuwunol zaom.`
+<!-- gloss: z-window | z-and/or.open -->
 :::
 
 **4.** *A tomato is enough.*
 
 ::: details Show answer
 `zodomal zaol.`
+<!-- gloss: z-tomato | z-and/or -->
 :::
 
 **5.** *Uhubun’s seeing would work.*
 
 ::: details Show answer
 `zuhubun vejel vaom.`
+<!-- gloss: z-Uhubun | v-eye | v-and/or.open -->
 :::
 
 **6.** *A potted plant or a window would work.*
 
 ::: details Show answer
 `zobodel zuwunol zaom.`
+<!-- gloss: z-potted-plant | z-window | z-and/or.open -->
 :::
 
 **7.** *Ululon’s telling would work.*
 
 ::: details Show answer
 `zululon vezehel vaom.`
+<!-- gloss: z-Ululon | v-speech | v-and/or.open -->
 :::
 
 **8.** *Fire is enough.*
 
 ::: details Show answer
 `zurel zaol.`
+<!-- gloss: z-fire | z-and/or -->
 :::
 
 #### Agalan → English
 
 **1.** `zovowel zaom.`
+<!-- gloss: z-flower | z-and/or.open -->
 
 ::: details Show answer
 *A flower would work.*
 :::
 
 **2.** `zuhubun vorurul vaom.`
+<!-- gloss: z-Uhubun | v-pour | v-and/or.open -->
 
 ::: details Show answer
 *Uhubun’s pouring would work.*
 :::
 
 **3.** `zedehel zaol.`
+<!-- gloss: z-thermometer | z-and/or -->
 
 ::: details Show answer
 *A thermometer is enough.*
 :::
 
 **4.** `zazawan vejel vaom.`
+<!-- gloss: z-Azawan | v-eye | v-and/or.open -->
 
 ::: details Show answer
 *Azawan’s seeing would work.*
 :::
 
 **5.** `zunul zaom.`
+<!-- gloss: z-sun | z-and/or.open -->
 
 ::: details Show answer
 *The sun would work.*
 :::
 
 **6.** `zululon vorurul vaom.`
+<!-- gloss: z-Ululon | v-pour | v-and/or.open -->
 
 ::: details Show answer
 *Ululon’s pouring would work.*
 :::
 
 **7.** `zurel zaom.`
+<!-- gloss: z-fire | z-and/or.open -->
 
 ::: details Show answer
 *Fire would work.*
 :::
 
 **8.** `zobodel zurel zaom.`
+<!-- gloss: z-potted-plant | z-fire | z-and/or.open -->
 
 ::: details Show answer
 *A potted plant or fire would work.*
@@ -333,95 +349,111 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Mar
 
 ::: details Show answer
 `zazawan vajul hal.`
+<!-- gloss: z-Azawan | v-chair | h-never -->
 :::
 
 **2.** *Flooding without a knob.*
 
 ::: details Show answer
 `zogegal huan bogozol.`
+<!-- gloss: z-ocean-wave | h-without | b-knobs -->
 :::
 
 **3.** *It has to be Ululon.*
 
 ::: details Show answer
 `zululon gon.`
+<!-- gloss: z-Ululon | g-exclusive-for -->
 :::
 
 **4.** *Azawan sits if Uhubun sees.*
 
 ::: details Show answer
 `zazawan vajul hadorom badorol zuhubun vejel.`
+<!-- gloss: z-Azawan | v-chair | h-if | b-next-clause | z-Uhubun | v-eye -->
 :::
 
 **5.** *Ululon pours if and only if Azawan sits.*
 
 ::: details Show answer
 `zululon vorurul hezazem badorol zazawan vajul.`
+<!-- gloss: z-Ululon | v-pour | h-iff | b-next-clause | z-Azawan | v-chair -->
 :::
 
 **6.** *Uhubun tells because Ululon pours.*
 
 ::: details Show answer
 `zuhubun vezehel hurugum badorol zululon vorurul.`
+<!-- gloss: z-Uhubun | v-speech | h-because | b-next-clause | z-Ululon | v-pour -->
 :::
 
 **7.** *A knob would work (as an ought, not the sole law).*
 
 ::: details Show answer
 `zogozol zaom holozoxor.`
+<!-- gloss: z-knobs | z-and/or.open | h-competence-ought-invite -->
 :::
 
 **8.** *Flooding would work (as mechanism).*
 
 ::: details Show answer
 `zogegal zaom hegegam.`
+<!-- gloss: z-ocean-wave | z-and/or.open | h-CAUSE -->
 :::
 
 #### Agalan → English
 
 **1.** `zazawan guan bagegol.`
+<!-- gloss: z-Azawan | g-without | b-solution -->
 
 ::: details Show answer
 *Azawan without a key.*
 :::
 
 **2.** `zobelel hon.`
+<!-- gloss: z-bell | h-exclusive-for -->
 
 ::: details Show answer
 *It has to be the bell.*
 :::
 
 **3.** `zuhubun vajul hadorom badorol zululon vejel.`
+<!-- gloss: z-Uhubun | v-chair | h-if | b-next-clause | z-Ululon | v-eye -->
 
 ::: details Show answer
 *Uhubun sits if Ululon sees.*
 :::
 
 **4.** `zazawan vorurul hezazem badorol zuhubun vezehel.`
+<!-- gloss: z-Azawan | v-pour | h-iff | b-next-clause | z-Uhubun | v-speech -->
 
 ::: details Show answer
 *Azawan pours if and only if Uhubun tells.*
 :::
 
 **5.** `zululon vurunul hurugum badorol zogegal.`
+<!-- gloss: z-Ululon | v-run | h-because | b-next-clause | z-ocean-wave -->
 
 ::: details Show answer
 *Ululon runs because of flooding.*
 :::
 
 **6.** `zuhubun vezehel hal.`
+<!-- gloss: z-Uhubun | v-speech | h-never -->
 
 ::: details Show answer
 *Uhubun never tells.*
 :::
 
 **7.** `zululon vorurul hegegam.`
+<!-- gloss: z-Ululon | v-pour | h-CAUSE -->
 
 ::: details Show answer
 *Ululon pours (as mechanism).*
 :::
 
 **8.** `zogegal huan babamal.`
+<!-- gloss: z-ocean-wave | h-without | b-clamp -->
 
 ::: details Show answer
 *Flooding without / excluding pressure.*
@@ -525,71 +557,83 @@ Short drills for Advanced. Try each item before opening **Show answer**. **`huru
 
 ::: details Show answer
 `zululon vorurul hurugum badorol zuhubun vejel.`
+<!-- gloss: z-Ululon | v-pour | h-because | b-next-clause | z-Uhubun | v-eye -->
 :::
 
 **2.** *Azawan sits if there is fire.* (fire is not asserted)
 
 ::: details Show answer
 `zazawan vajul hadorom badorol zurel.`
+<!-- gloss: z-Azawan | v-chair | h-if | b-next-clause | z-fire -->
 :::
 
 **3.** *Azawan pours if and only if Uhubun tells.*
 
 ::: details Show answer
 `zazawan vorurul hezazem badorol zuhubun vezehel.`
+<!-- gloss: z-Azawan | v-pour | h-iff | b-next-clause | z-Uhubun | v-speech -->
 :::
 
 **4.** *Azawan sits (that’s a take).* (speaker-grounds, not a world-reason)
 
 ::: details Show answer
 `zazawan hodohom vajul.`
+<!-- gloss: z-Azawan | h-COMMENT | v-chair -->
 :::
 
 **5.** *A test-tube would work, as a standing pattern.*
 
 ::: details Show answer
 `zezubel zaom hual.`
+<!-- gloss: z-test-tube | z-and/or.open | h-always -->
 :::
 
 **6.** *Fire would work (as mechanism), as a standing pattern.*
 
 ::: details Show answer
 `zurel zaom hegegam hual.`
+<!-- gloss: z-fire | z-and/or.open | h-CAUSE | h-always-except -->
 :::
 
 #### Agalan → English
 
 **1.** `zazawan vajul hurugum badorol zurel.`
+<!-- gloss: z-Azawan | v-chair | h-because | b-next-clause | z-fire -->
 
 ::: details Show answer
 *Azawan sits because there is fire.*
 :::
 
 **2.** `zululon vorurul hadorom badorol zezubel.`
+<!-- gloss: z-Ululon | v-pour | h-if | b-next-clause | z-test-tube -->
 
 ::: details Show answer
 *Ululon pours if there is a test-tube.*
 :::
 
 **3.** `zuhubun hodohom vejel.`
+<!-- gloss: z-Uhubun | h-COMMENT | v-eye -->
 
 ::: details Show answer
 *Uhubun sees (that’s a take).*
 :::
 
 **4.** `zazawan hodohom vajul hurugum badorol zululon vorurul.`
+<!-- gloss: z-Azawan | h-COMMENT | v-chair | h-because | b-next-clause | z-Ululon | v-pour -->
 
 ::: details Show answer
 *Azawan sits, I’d note, because Ululon pours.*
 :::
 
 **5.** `zalabal zaom hual.`
+<!-- gloss: z-lab-coat | z-and/or.open | h-always -->
 
 ::: details Show answer
 *A lab coat would work, as a standing pattern.*
 :::
 
 **6.** `zuhubun vorurul hurugum hegegam badorol zurel.`
+<!-- gloss: z-Uhubun | v-pour | h-because | h-CAUSE | b-next-clause | z-fire -->
 
 ::: details Show answer
 *Uhubun pours because there is fire (as mechanism).*

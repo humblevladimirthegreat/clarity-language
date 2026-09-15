@@ -143,95 +143,111 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zaladelx al zaladal.`
+<!-- gloss: z-plate-x | including | z-salad -->
 :::
 
 **2.** *Wine instead of beer.*
 
 ::: details Show answer
 `daberel ol duwunel.`
+<!-- gloss: d-beer | instead | d-wine -->
 :::
 
 **3.** *The plates except Ululon.*
 
 ::: details Show answer
 `zaladelx ul zululon.`
+<!-- gloss: z-plate-x | except | z-Ululon -->
 :::
 
 **4.** *Additionally, Azawan cooks.*
 
 ::: details Show answer
 `al zazawan vogogol.`
+<!-- gloss: additionally | z-Azawan | v-cook -->
 :::
 
 **5.** *A plate and a salad.*
 
 ::: details Show answer
 `zaladel zaladal zam.`
+<!-- gloss: z-plate | z-salad | z-and.open -->
 :::
 
 **6.** *The wine is red, or rather, blue.*
 
 ::: details Show answer
 `zuwunel garedel el gelulul.`
+<!-- gloss: z-wine | g-red | rather | g-blue -->
 :::
 
 **7.** *Instead, Ululon pours wine.*
 
 ::: details Show answer
 `ol zululon vorurul duwunel.`
+<!-- gloss: instead | z-Ululon | v-pour | d-wine -->
 :::
 
 **8.** *Except, Ululon punches Azawan.*
 
 ::: details Show answer
 `ul zululon vubunul dazawan.`
+<!-- gloss: except | z-Ululon | v-punch | d-Azawan -->
 :::
 
 #### Agalan → English
 
 **1.** `zaladelx am zaladal.`
+<!-- gloss: z-plate-x | including.open | z-salad -->
 
 ::: details Show answer
 *The plates, including a salad and maybe more.*
 :::
 
 **2.** `duwunel ol daberel.`
+<!-- gloss: d-wine | instead | d-beer -->
 
 ::: details Show answer
 *Beer instead of wine.*
 :::
 
 **3.** `zaladelx ul zuhubun.`
+<!-- gloss: z-plate-x | except | z-Uhubun -->
 
 ::: details Show answer
 *The plates except Uhubun.*
 :::
 
 **4.** `al zululon vogogol.`
+<!-- gloss: additionally | z-Ululon | v-cook -->
 
 ::: details Show answer
 *Additionally, Ululon cooks.*
 :::
 
 **5.** `el zululon vorurul duwunel.`
+<!-- gloss: rather | z-Ululon | v-pour | d-wine -->
 
 ::: details Show answer
 *In other words, Ululon pours wine.*
 :::
 
 **6.** `ul zazawan vajul.`
+<!-- gloss: except | z-Azawan | v-chair -->
 
 ::: details Show answer
 *Except, Azawan sits.*
 :::
 
 **7.** `ol zuhubun vejel daladel.`
+<!-- gloss: instead | z-Uhubun | v-eye | d-plate -->
 
 ::: details Show answer
 *Instead, Uhubun sees the plate.*
 :::
 
 **8.** `ol zululon vuvugul dazawan.`
+<!-- gloss: instead | z-Ululon | v-fight | d-Azawan -->
 
 ::: details Show answer
 *Instead, Ululon fights Azawan.*
@@ -365,95 +381,111 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 ::: details Show answer
 `zenewel am zazawan ul zululon.`
+<!-- gloss: z-newspaper | including.open | z-Azawan | except | z-Ululon -->
 :::
 
 **2.** *The newspaper as a titled set, including Azawan.*
 
 ::: details Show answer
 `zenewel an zazawan.`
+<!-- gloss: z-newspaper | including.named | z-Azawan -->
 :::
 
 **3.** *The page, with a newspaper as a replacement, and maybe more.*
 
 ::: details Show answer
 `dajel om denewel.`
+<!-- gloss: d-page | instead.open | d-newspaper -->
 :::
 
 **4.** *A camera instead of a radio, and a page.*
 
 ::: details Show answer
 `zameral ol zaradul zajel zam.`
+<!-- gloss: z-camera | instead | z-radio | z-page | z-and.open -->
 :::
 
 **5.** *Azawan: additionally, Ululon writes.*
 
 ::: details Show answer
 `jazawan al zululon vuwurul.`
+<!-- gloss: j-Azawan | additionally | z-Ululon | v-write -->
 :::
 
 **6.** *Azawan writes and additionally Ululon tells.*
 
 ::: details Show answer
 `zazawan vuwurul al zululon vezehel xam.`
+<!-- gloss: z-Azawan | v-write | including | z-Ululon | v-speech | x-and.open -->
 :::
 
 **7.** *Additionally, therefore Uhubun writes.*
 
 ::: details Show answer
 `al xezazal zuhubun vuwurul.`
+<!-- gloss: additionally | x-therefore | z-Uhubun | v-write -->
 :::
 
 **8.** *Additionally, does Ululon lie?*
 
 ::: details Show answer
 `al jol zululon vululel?`
+<!-- gloss: additionally | j-question | z-Ululon | v-lie -->
 :::
 
 #### Agalan → English
 
 **1.** `zenewel am zuhubun ul zazawan.`
+<!-- gloss: z-newspaper | including.open | z-Uhubun | except | z-Azawan -->
 
 ::: details Show answer
 *The newspaper, including Uhubun and maybe more, except Azawan.*
 :::
 
 **2.** `dajel on denewel.`
+<!-- gloss: d-page | on | d-newspaper -->
 
 ::: details Show answer
 *The stock page-to-newspaper swap.*
 :::
 
 **3.** `juhubun ol zululon vuwurul.`
+<!-- gloss: j-Uhubun | instead | z-Ululon | v-write -->
 
 ::: details Show answer
 *Uhubun: instead, Ululon writes.*
 :::
 
 **4.** `zenewel am zazawan am zululon.`
+<!-- gloss: z-newspaper | including.open | z-Azawan | including.open | z-Ululon -->
 
 ::: details Show answer
 *The newspaper, including Azawan and including Ululon, and maybe more.*
 :::
 
 **5.** `vuwurul om vezehel.`
+<!-- gloss: v-write | instead.open | v-speech -->
 
 ::: details Show answer
 *Wrote, with tell as a replacement.*
 :::
 
 **6.** `zenewel an zuhubun un zululon.`
+<!-- gloss: z-newspaper | including.named | z-Uhubun | un | z-Ululon -->
 
 ::: details Show answer
 *The named newspaper, including Uhubun, and except Ululon from that named frame.*
 :::
 
 **7.** `al xezazal zululon vezehel.`
+<!-- gloss: additionally | x-therefore | z-Ululon | v-speech -->
 
 ::: details Show answer
 *Additionally, therefore Ululon tells.*
 :::
 
 **8.** `ol jol zululon vubunul dazawan?`
+<!-- gloss: instead | j-question | z-Ululon | v-punch | d-Azawan -->
 
 ::: details Show answer
 *Instead, does Ululon punch Azawan?*
