@@ -280,7 +280,7 @@ English *when* / *if* can name a **following sentence** (*if Azawan walks*). Wri
 
 > `zuhubun vuzunul hadorom zazawan vawalal badorol.`
 >
-> z-Uhubun | v-sing | h-next-clause | z-Azawan | v-walk | b-next-clause
+> z-Uhubun | v-sing | h-if | z-Azawan | v-walk | b-next-clause
 >
 > "Uhubun sings if Azawan walks."
 
@@ -296,7 +296,7 @@ Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *som
 
 > `zazawan vawalal hanunul hunugul hol.`
 >
-> z-Azawan | v-walk | h-rain | h-night | h-either-when
+> z-Azawan | v-walk | h-rain | h-night | h-when-one
 >
 > "Azawan walks either when raining or at night (not both)."
 
@@ -331,7 +331,7 @@ Closed **`hel`** ranks **when** it matters. **`hal`** still means *only when* th
 
 > `zazawan vawalal hamubum hozorem hel.`
 >
-> z-Azawan | v-walk | h-emergency | h-convenience | h-preferably-when
+> z-Azawan | v-walk | h-emergency | h-convenience | h-when-ranked
 >
 > "Azawan walks preferably in an emergency rather than for convenience."
 
@@ -348,7 +348,7 @@ Statement readings below. Asking *when*: [questions.md](questions.md#when).
 
 > `zazawan guzumum wanunul wunugul wol.`
 >
-> z-Azawan | g-happy | w-rain | w-night | w-either-when
+> z-Azawan | g-happy | w-rain | w-night | w-when-one
 >
 > "Azawan is happy either when raining or at night (not both)."
 

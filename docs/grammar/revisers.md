@@ -50,9 +50,9 @@ You want English *instead*: B takes A's slot. Same `A REV B` shape; vowel **o**.
 
 You want English *except*: keep A and subtract B from that same slot. Same `A REV B` shape; vowel **u**. (cue: **u** ≈ undo.)
 
-> `zahadal ul zazawan.`
+> `zahadam ul zazawan.`
 >
-> z-team | except | z-Azawan
+> z-teamwork | except | z-Azawan
 >
 > "The team except Azawan."
 
@@ -262,9 +262,9 @@ Beginner already used closed **-l** and open **-m** for how complete B is, or ho
 | **o** (*instead*) | `ol`: *Instead, …* | `om`: *Instead, …* and maybe more | `on`: stock *Instead,* |
 | **u** (*except*) | `ul`: *Except, …* | `um`: *Except, …* and maybe more | `un`: named / conventional exception frame |
 
-> `zahadal an zazawan.`
+> `zahadam an zazawan.`
 >
-> z-team | including.named | z-Azawan
+> z-teamwork | including.named | z-Azawan
 >
 > "The team as a titled set, including Azawan."
 
@@ -287,9 +287,9 @@ Beginner already used closed **-l** and open **-m** for how complete B is, or ho
 
 You already revise one named A with a single `A REV B`. To stack several revisions on that **same** A (including B and except C, or two includings), add more revisers after the first right-hand side: `A REV₁ B REV₂ C`. Each reviser still applies to A in parallel, with its own side; vowels and endings may mix. English *including (B except C)* would nest C under B instead.
 
-> `zahadal am zazawan ul zululon.`
+> `zahadam am zazawan ul zululon.`
 >
-> z-team | including.open | z-Azawan | except | z-Ululon
+> z-teamwork | including.open | z-Azawan | except | z-Ululon
 >
 > "The team, including Azawan and maybe more, except Ululon."
 

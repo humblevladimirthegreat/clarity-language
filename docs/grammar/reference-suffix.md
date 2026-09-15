@@ -210,7 +210,7 @@ Beginner used **-n** for a person’s or place’s name. You can also mark a **t
 
 > `zuhubun vuzunun.`
 >
-> z-Uhubun | v-Sing
+> z-Uhubun | v-Uzunun
 >
 > "Uhubun sings the Sing" (that titled performance).
 
@@ -237,7 +237,7 @@ English often writes a given name plus family as two words. In Agalan a short mu
 
 > `zodunaxalanen vawalal.`
 >
-> z-Odunaxalanen | v-walk
+> z-Oduna-x-Alanen | v-walk
 >
 > "Odunaxalanen walks."
 
@@ -269,7 +269,7 @@ A long official title (bureau, act, titled group) may have a **handle**: one pub
 
 > `zabogoxululon.`
 >
-> z-Book-Courage
+> z-Abogo-x-Ululon
 >
 > "Book-Courage" (full title of that office)
 

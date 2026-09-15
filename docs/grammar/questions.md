@@ -79,7 +79,7 @@ If more than one slot has join **-r** in the same question, each of those **-r**
 
 > `jol zar vejel dar?`
 >
-> j-question | z-who | v-eye | d-what
+> j-question | z-who | v-eye | d-who
 >
 > "Who sees what?"
 

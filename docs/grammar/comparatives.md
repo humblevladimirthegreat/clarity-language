@@ -49,7 +49,7 @@ English *much more* / *slightly more* adds **how large the gap is**, without giv
 
 > `zazawan zululon zel gomonam wogegal.`
 >
-> z-Azawan | z-Ululon | z-rank/more | g-challenge | w-flood
+> z-Azawan | z-Ululon | z-rank/more | g-challenge | w-ocean-wave
 >
 > "Azawan is much more challenging than Ululon."
 

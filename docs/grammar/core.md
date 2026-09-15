@@ -404,7 +404,7 @@ English often puts the adjective before the noun (*a blue dog*). Agalan can too:
 
 > `hozal bazawan zululon vawalal.`
 >
-> h-topic | b-Azawan | z-Ululon | v-walk
+> h-hash | b-Azawan | z-Ululon | v-walk
 >
 > "As for Azawan, Ululon walks."
 

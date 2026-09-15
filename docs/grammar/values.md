@@ -117,7 +117,7 @@ That ending is **changeability**: how lasting the cost is. If you do not know, u
 | `…xum` | effort or circumstance may change the cost (soft default if unknown) | *modifiable* | **-m** ≈ open to change |
 | `…xur` | usually met; not this moment | *temporary* | **-r** ≈ light (this moment only) |
 
-> `zazegel walodoxur.`
+> `zazegem walodoxur.`
 >
 > z-gathering | w-autonomy-unmet-temporary
 >

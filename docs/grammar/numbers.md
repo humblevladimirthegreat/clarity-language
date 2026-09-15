@@ -312,7 +312,7 @@ Beginner put the number after a noun (*three cats*). You can also put the **numb
 
 Change only the first letter. The marker and digits stay the same; referential prefixes (`/ɡ/`, `/z/`, `/d/`, `/b/`) keep the marker’s identity.
 
-> `z+3 gelulun.`
+> `z+3 gelulul.`
 >
 > z-three | g-blue
 >

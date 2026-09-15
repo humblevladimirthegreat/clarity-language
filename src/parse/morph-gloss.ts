@@ -13,6 +13,8 @@
  * | `al` left-edge | `additionally` | isolated word too |
  * | `al` in-clause | `including` | |
  * | `hal` listed / bare | `h-only-when` / `h-never` | listed = preceding `/h/`/`/w/` |
+ * | `ham` listed | `h-when.open` | open listed; not exclusive |
+ * | `an` in-clause | `including.named` | titled / stock including |
  * | `har` statement / fill-ask | `h-sometimes` / `h-when` | `-r` is unspecified occasion, not `hal` |
  * | `hual` bare | `h-always` | |
  * | `howoram` | `h-plan-sketch` | overlay grain `-m` |
@@ -118,7 +120,7 @@ const JOIN_RELATION: Record<string, string> = {
 const REVISER_JOB: Record<string, string> = {
   al: "additionally",
   am: "including.open",
-  an: "including.unspecified",
+  an: "including.named",
   el: "rather",
   em: "rather.open",
   ol: "instead",
@@ -624,7 +626,11 @@ function restrictorLabel(
     return `${series}-r`;
   }
   const open = ending === "m" ? ".open" : "";
-  if (series === "a") return `${listed ? "only-when" : "never"}${open}`;
+  if (series === "a") {
+    if (!listed) return `never${open}`;
+    if (ending === "m") return "when.open";
+    return "only-when";
+  }
   if (series === "ua") return `${listed ? "always-except" : "always"}${open}`;
   if (series === "u") return `not-when${open}`;
   if (series === "o") return `when-one${open}`;

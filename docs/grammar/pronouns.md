@@ -274,7 +274,7 @@ When you address several people at once, English *you* does not say how many. Th
 
 > `zedonenx vajul.`
 >
-> z-listener | v-chair
+> z-listener-x | v-chair
 >
 > "You all sit."
 

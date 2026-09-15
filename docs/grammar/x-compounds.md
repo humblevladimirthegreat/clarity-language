@@ -15,7 +15,7 @@ After the [role letter](core.md#beginner) (the first letter of the word: subject
 
 > `zuzuzuxogoven.`
 >
-> z-Sushi-Coffee
+> z-Uzuzu-x-Ogoven
 >
 > "Sushi-Coffee" (one named label)
 
@@ -191,7 +191,7 @@ When one label still shows a kind and then a field (or a further title), English
 
 > `zuzuzuxogovexadedan.`
 >
-> z-Sushi-Coffee-Tea
+> z-Uzuzu-x-Ogove-x-Adedan
 >
 > "Sushi-Coffee-Tea" (one named label)
 

@@ -15,7 +15,7 @@
 
 When you mean *this would work*, write the outcome first (what you are trying to get). After it, write the route (what would get you there), then an open *and/or* join **`…aom`**. The join’s role letter matches the route (`zaom` after a noun, `vaom` after a verb). Open **-m** means this is at least one route; other routes may still work. (cue: **`a`** ≈ add — you add a route, and the outcome can follow)
 
-> `zezewel zaom.`
+> `zezewem zaom.`
 >
 > z-effort | z-and/or.open
 >
@@ -270,9 +270,9 @@ Beginner already pointed at *if* / *because* as dependents. Pick the `/h/` root 
 
 To highlight **how** a result comes about (the mechanism, not only that a route would work), add the closed mood **`egega`** as an `/h/` word. The ending is **-m**: **`hegegam`**. You can put that mood next to a join or a clause pole when both jobs apply. Ordinary content on the same root is still available (`zegegal` *a gear*; `vegegal` *to mesh / engage*). Optional `/w/` when the mood grades only a preceding adjective. (cue: ⚙️ *gear*: how the mechanism engages)
 
-> `haon bezewel hegegam.`
+> `haon bezewem hegegam.`
 >
-> h-and/or | b-effort | h-CAUSE
+> h-open-to | b-effort | h-CAUSE
 >
 > "Open to effort (CAUSE)." (how the payoff gears turn)
 
@@ -285,9 +285,9 @@ To highlight **how** a result comes about (the mechanism, not only that a route 
 
 English *should* on a causal claim is often a wish or ought, not a formal or natural law. Keep the route as open sufficient (`haon` / `…aom`) and put the ought on [values](values.md): **`xo`** (prescription) or **`xe`** (motive). Feeling-strength lives on the values ending, not on exclusive **`gon`**.
 
-> `haon bezewel holozoxor.`
+> `haon bezewem holozoxor.`
 >
-> h-and/or | b-effort | h-competence.prescription
+> h-open-to | b-effort | h-competence-x-prescription
 >
 > "Effort would count (as an ought)."
 

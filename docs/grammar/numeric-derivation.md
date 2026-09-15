@@ -97,9 +97,9 @@ For a zero-shaped quasi, use **`ROOTx-0`** (anti-null) or **`ROOTx-0e-`** (micro
 
 English *a pair of…*, *three-part…*, *primary…* can name **how many parts the kind has**, not how many tokens sit in the clause. Attach a single-digit plus stem after **`x`**. Tables use marker shorthand (**`+N`** / **`-N`**). Speech is marker + digit (`ra`+`wo` for `+1`, `ru`+`wo` for `-1`, …), so the marker vowel is part of the stem. Running-text examples prefer spelled CV (`…xrawol`). Writing **`+0`…`+9`** uses the strong readings below; **`-N`** (including **`-0`**) is the **privative** of that reading (lacks / undoes / inverse of the `+N` structure).
 
-> `zazawan dabenexradul vejel.`
+> `zazawan dabenexradum vejel.`
 >
-> z-Azawan | d-commitment-x-+2 | v-see
+> z-Azawan | d-commitment-x-two | v-eye
 >
 > "Azawan sees mutual commitment."
 

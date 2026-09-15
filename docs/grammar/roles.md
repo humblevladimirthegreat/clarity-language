@@ -14,7 +14,7 @@ English *a fighter* names who does the fighting, from the same idea as *fight*. 
 
 > `zaxuvugul vurunul.`
 >
-> z-←agent-x-fight | v-run
+> z-agent-x-fight | v-run
 >
 > "A fighter runs."
 
@@ -84,7 +84,7 @@ To say someone **is a kind** (*Azawan is a fighter*), put the same role stem on 
 
 > `zazawan gaxuvugum.`
 >
-> z-Azawan | g-←agent-x-fight
+> z-Azawan | g-agent-x-fight
 >
 > "Azawan is a fighter, in a manner of speaking."
 
@@ -280,13 +280,13 @@ Indoor headings may follow a local map (building north). Prefer a name or listen
 
 English *up* / *down* here follows the pull of gravity, not a face. Write **`uba`** (skyward) or **`odowo`** (toward the pull) as ordinary content words, with no **`x`** + facing person. Everyone shares that frame.
 
-> `jel vawalal habal.`
+> `jel vawalal hubal.`
 >
 > j-command | v-walk | h-up
 >
 > "Walk up."
 
-> `jabal.`
+> `jubal.`
 >
 > j-up
 >
@@ -312,7 +312,7 @@ Bare compass + `/b/` is a region on that heading of the landmark (`gewezel berel
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| Bare DIR | compass / gravity | `gewezel` *west*; `gabal` *up* |
+| Bare DIR | compass / gravity | `gewezel` *west*; `gubal` *up* |
 | **`DIR x ANCHOR`** | that point on **ANCHOR’s** facing rose | `gewezexedonen` *listener-left* |
 | **complex `/ɡ/` + `/b/`** | region on a side **of a landmark** | `gewezexazawan berel` *on Azawan’s-left of the tree* |
 
@@ -334,7 +334,7 @@ Direction words take the same four [reference endings](reference-suffix.md) as o
 | `gewezexedonen` | *your left* (listener facing) |
 | `gewezexugobon` | *my left* (speaker facing) |
 | `gewezexahan` | *our left* (shared facing) |
-| `gabal` / `habal` | gravity *up* |
+| `gubal` / `hubal` | gravity *up* |
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -434,7 +434,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *The ship on the south.*
 :::
 
-**4.** `jel vawalal habal.`
+**4.** `jel vawalal hubal.`
 
 ::: details Show answer
 *Walk up.*
@@ -473,7 +473,7 @@ When *east* / *west* / *southwest* name a move in the talk, not a map point, wri
 
 > `zazawan vawalal. xezazal zululon vurunul.`
 >
-> z-Azawan | v-walk | x-east | z-Ululon | v-run
+> z-Azawan | v-walk | x-therefore | z-Ululon | v-run
 >
 > "Azawan walks. Therefore Ululon runs."
 
