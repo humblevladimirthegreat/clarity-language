@@ -72,7 +72,7 @@ When English would say *as challenging as*, you are not picking a winner. You ar
 >
 > "Ululon is as happy as Uhubun."
 
-**Compare with:** English *is ADJ* with no *as … as* is [classification](predication.md#classification): `zazawan gomonam` *Azawan is challenging*. Use **`ae`** when two people share a height on the quality.
+**Compare with:** English *is ADJ* with no *as … as* is [classification](predication.md#classification): `zazawan gomonam` *Azawan is challenging*. Use **`ae`** when two people share a height on the quality. *Walks like a duck* is resemblance ([simile](core.md#similative) `hurorom`), not a shared score on a named scale.
 
 **Compare with:** English *both are challenging* is an *and*-list plus a shared adjective (`zazawan zululon zal gomonam`): each has the quality. That is not a ranking and not a matching height. Use **`ae`** only for *as … as*.
 
@@ -532,7 +532,7 @@ Each bar is a hosted overlay: published root plus **-n** under `/z/` `/d/` `/b/`
 
 <a id="mine-vs-speaker"></a>
 
-**`zugobon`** is where the speaker sits on the scale (current skill). **`zuroron`** is the bar the speaker applies. Ordinary people as bars are ordinary **-n** names (`zululon`).
+**`zugobon`** is where the speaker sits on the scale (current skill). **`zuroron`** is the bar the speaker applies. Ordinary people as bars are ordinary **-n** names (`zululon`). *Walks like a duck* is [simile](core.md#similative) (`hurorom`), not this Mine bar.
 
 Single-item `zazawan zuel gomonam` is *the least challenging* in the group in play. **`zoloben`** as the second name **names** the universal class as the bar. Standalone closed **`zual`** / stock **`zuan`** stay [join](joins.md#standalone-phrase) *everything / everyone* in other slots — not this overlay.
 

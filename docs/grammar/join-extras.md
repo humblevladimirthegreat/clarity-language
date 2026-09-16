@@ -74,6 +74,8 @@ For several members or an empty domain, put a [phrase join](joins.md) **inside**
 
 *Anti-* vs *without*: `gun bememal` vs `guan bememal`. *Without X* vs *anything but X*: `guan babanul` vs `guon babanul`. Sole pick vs among options: `gon bazawan` vs `gaon bazawan`. Workaround-first vs try-the-workaround: `gen bewenem` vs `goen bewenem`.
 
+**Compare with:** *a house like Azawan’s* / *walks like a duck* is resemblance ([simile](core.md#similative) `gurorom` / `hurorom`), not **`gaen` / `haen`** *on a par with* / *equating*.
+
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 

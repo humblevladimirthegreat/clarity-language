@@ -301,14 +301,14 @@ Inline after the rule sentence: `(cue: …)`. Worked examples stay Agalan / morp
 
 A **scene** cue (`emoji *literal*: why`) is for remembering a published picture. State it only when that picture is doing **grammar** work, not when the page is merely using a dictionary metaphor.
 
-**State it** on a **closed overlay**: a fixed special reading under one part of speech (MAY, SAME, CAUSE, ABIL, plan / DECISION, evidentials, NOTIONAL, emotion ACT / LOCUS, clause-pole **`adoro`**, locatives, means, of-relations, special pronouns, universality moods, and the same class). The learner needs the scene to remember why *this* published root hosts that job. Put `(cue: …)` on the **rule sentence** (job, shape, consequence first), or in the inventory **Cue** column with **Same root as** naming the **-l** citation. One line that the same spelling is still ordinary content under other letters is fine.
+**State it** on a **closed overlay**: a fixed special reading under one part of speech (MAY, SAME, CAUSE, ABIL, plan / DECISION, evidentials, NOTIONAL, emotion ACT / LOCUS, clause-pole **`adoro`**, locatives, means, simile *like*, of-relations, special pronouns, universality moods, and the same class). The learner needs the scene to remember why *this* published root hosts that job. Put `(cue: …)` on the **rule sentence** (job, shape, consequence first), or in the inventory **Cue** column with **Same root as** naming the **-l** citation. One line that the same spelling is still ordinary content under other letters is fine.
 
 **Do not state it** when the example is ordinary **lexicon metaphor** (content **-m**): `welem` *size* / *very*, `hadazam` *hastily*. Do **not** add a following sentence of the form “**`adaza`** here is the published metaphor *haste*. (cue: 💨 *dash*: …).” The morph gloss and quoted English already give the sense. **-m** as a system is taught on [reference-suffix.md](../grammar/reference-suffix.md#metaphor-m); that page (and drill **Cue** cells) may show `from *swan*: the glide of *grace*` because the lesson *is* the metaphor ending.
 
 | Do | Don’t |
 |----|--------|
 | Overlay lead: **`odoho`** as MAY, then `(cue: 💭 *thought*: a balloon over the scene)` | After `hadazam vawalal`, a sentence that names the lexicon row and restates the dash cue |
-| Overlay table **Cue** for SAME, ABIL, CAUSE, locatives, means, of-relations, … | A post-example etymology footnote on ordinary *haste* / *size* |
+| Overlay table **Cue** for SAME, ABIL, CAUSE, locatives, means, simile *like*, of-relations, … | A post-example etymology footnote on ordinary *haste* / *size* |
 | Cue last on the **rule**, before the first example | Cue as the paragraph *after* the worked examples |
 
 Letter / series / ending cues (`**a** ≈ add`, **m** ≈ metaphor) are the other kind; they follow [two kinds of cue](#cue-rubric) and are not this overlay-vs-lexicon split.

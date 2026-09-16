@@ -130,6 +130,8 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("gelem", "g-big");
     expectLine("hogorem", "h-inside");
     expectLine("hahanam", "h-using");
+    expectLine("hurorom", "h-like");
+    expectLine("gurorom", "g-like");
     expectLine("gobonem", "g-part-of");
     expectLine("gajaram", "g-contents");
     expectLine("gowodom", "g-material");

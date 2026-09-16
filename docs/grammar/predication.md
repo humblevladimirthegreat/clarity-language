@@ -64,7 +64,7 @@ Write a special adjective `gonunul` after the first name, then an extra noun (`/
 >
 > "A dog is (named) Azawan."
 
-**Compare with:** *Azawan is a dog* uses [kind / role](#classification) (`godogol`). Use **`SAME`** when two labels name one person.
+**Compare with:** *Azawan is a dog* uses [kind / role](#classification) (`godogol`). Use **`SAME`** when two labels name one person. *A house like Azawan’s* is resemblance ([simile](core.md#similative) `gurorom`), not one house under two names.
 
 ### Translation practice
 <a id="translation-practice"></a>

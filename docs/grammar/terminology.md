@@ -351,6 +351,12 @@ Hosted `/h/` or `/ɡ/` **`ahanam`** plus implement `/b/` (*using / with* a tool)
 
 [Core](core.md#means)
 
+### Simile (*like*)
+
+Hosted `/h/` or `/ɡ/` **`urorom`** plus model `/b/` (*like* a duck / *like* Azawan’s). Not **`SAME`**, not equative *as … as*, not NOTIONAL *as if*, not join-relation *on a par with*.
+
+[Core](core.md#similative)
+
 ### Of relation
 
 Hosted `/h/` or `/ɡ/` plus `/b/` for English *of* that is not ownership or a place: *part of*, *contents of*, *made of*, origin *from*.

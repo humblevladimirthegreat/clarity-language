@@ -29,7 +29,7 @@ No new clause types. Unblocks locative talk and later relatives / paths.
 
 - [x] **4. Other English *of* (thin).** Hosted `/h/` or `/ɡ/` + `/b/`. Inventory on [core of relations](../grammar/core.md#of-relations) (`obone` *part of*, `ajara` *contents*, `owodo` *material*, `ajaba` *origin*). Ownership stays `oboru`; portion stays [percent](../grammar/numbers-applied.md#percent-denominators).
 
-- [ ] **5. Simile *like* (thin).** Equative *as Adj as* ([comparatives.md](../grammar/comparatives.md#equatives)), identity **`SAME`** ([predication.md](../grammar/predication.md#identity)), join *on a par with*, and NOTIONAL *as if* ([commentary.md](../grammar/commentary.md#notional)) exist. Everyday *walks like a duck* / *a house like Azawan’s* needs a similative `/h/` or `/ɡ/` + `/b/` (or a taught reuse of **`ae`** / **`SAME`**).
+- [x] **5. Simile *like* (thin).** Hosted `/h/` or `/ɡ/` **`urorom`** + model `/b/`. Taught in [core simile](../grammar/core.md#similative). Not **`SAME`**, not **`ae`**, not NOTIONAL, not **`gaen`**.
 
 - [ ] **6. NP *despite* (thin).** Clause *although* is **`hezebam badorol`** ([core.md](../grammar/core.md#dependent-clauses)). *Despite the rain* should reuse that pole + `/b/` **noun** (same shape as *if rain*). Teach one NP example; do not invent a second concession morph.
 

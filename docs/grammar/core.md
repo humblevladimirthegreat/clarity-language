@@ -115,11 +115,39 @@ When English says the action **uses a tool** (*writes with a hammer*), keep the 
 
 On a noun, the same root is **`gahanam`** (`dabogol gahanam bahamel` *a book written with a hammer*). Ordinary `zahanal` is still *a hand*.
 
-**Compare with:** *hastily* is ordinary manner `/h/` with no `/b/`. Unhosted `/b/` is still the recipient. *Inside* (`hogorem`) is a place, not a tool.
+**Compare with:** *hastily* is ordinary manner `/h/` with no `/b/`. Unhosted `/b/` is still the recipient. *Inside* (`hogorem`) is a place, not a tool. *Like a duck* is [simile](#similative) (`hurorom`), not a tool.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`hahanam` / `gahanam`** | implement the event (or noun) uses | *using / with* (a tool) | `ahanal` *hand* | ✋: you act through the hand |
+
+### Simile (*like*)
+<a id="similative"></a>
+<a id="like"></a>
+
+When English says something **resembles** a model (*walks like a duck*, *a house like Azawan’s*), keep the same hosted pair as *inside*. The relation word is **`hurorom`**. Put the model in `/b/` right after it. The event or thing stays real; only the match is to that model. (cue: 🪞 *mirror*: you see a reflection, not the same object twice)
+
+> `zazawan hurorom budugul vawalal.`
+>
+> z-Azawan | h-like | b-duck | v-walk
+>
+> "Azawan walks like a duck."
+
+On a noun, the same root is **`gurorom`**:
+
+> `zohohul gurorom bazawan.`
+>
+> z-house | g-like | b-Azawan
+>
+> "A house like Azawan’s."
+
+Ordinary `zurorol` is still *a mirror*.
+
+**Compare with:** unhosted `/b/` is still the recipient. *Inside* is a place. *Using* a tool is [means](#means). Two labels for **one** person is not this pair. *As happy as* names a shared height, not resemblance. *As if they walk* takes the walk off the real tally; here the walk stays real.
+
+| Agalan | Use | English | Same root as | Cue |
+|--------|-----|---------|--------------|-----|
+| **`hurorom` / `gurorom`** | resemblance to a model | *like* | `urorol` *mirror* | 🪞: the image is of the model |
 
 ### Turn (`/j/`): start a new speech move
 <a id="turn-j"></a>
@@ -527,7 +555,7 @@ The same roots stay ordinary pictures under other letters (`zubuhul` *a pushpin*
 | **`hejegem` / `gejegem`** | interior to exterior | *out of* | `ejegel` *eject* | ⏏️: pushed out of the enclosure |
 | **`hazadum` / `gazadum`** | figure in the layer of two landmarks | *between* | `azadul` *sandwich* | 🥪: the filling sits between two sides |
 
-**Compare with:** unhosted `/b/` is still the recipient ([extra nouns](#extra-nouns)), not a place. *Toward* is heading, not completed *into* (*inside*). Ordinary `vebarul` is *to depart*; `hebarum` is the source relation. *Between* is one relation plus a `/b/` [join](joins.md) of two landmarks, not two relation words. *Using* a tool is [means](#means) (`hahanam`), not a place. English *of* that is not a place is [of relations](#of-relations).
+**Compare with:** unhosted `/b/` is still the recipient ([extra nouns](#extra-nouns)), not a place. *Toward* is heading, not completed *into* (*inside*). Ordinary `vebarul` is *to depart*; `hebarum` is the source relation. *Between* is one relation plus a `/b/` [join](joins.md) of two landmarks, not two relation words. *Using* a tool is [means](#means) (`hahanam`), not a place. *Like* is [simile](#similative) (`hurorom`), not a place. English *of* that is not a place is [of relations](#of-relations).
 
 ### Of relations (*part of*, *cup of*, *made of*, *from*)
 <a id="of-relations"></a>
@@ -570,7 +598,7 @@ Do not flip the pair: *tea of the teapot* (tea that sits in that pot) is locativ
 | **`howodom` / `gowodom`** | constitution | *made of* | `owodol` *wood* | 🪵: the stuff the thing is made of |
 | **`hajabam` / `gajabam`** | identity source / provenance | *from* (origin) | `ajabal` *japan-map* | 🗾: one land’s map as where it comes from |
 
-**Compare with:** ownership is `goborul` + `/b/` ([joins](joins.md#scope-fence-p-join)). Place *inside* is `ogore`; path *from* is `ebaru` ([locative relations](#locative-relations)). Portion *of* a class is [percent](numbers-applied.md#percent-denominators). Associates are plural **-x**, not meronymy. Kind *origin* (`ROOTx#e-`) is [numeric derivation](numeric-derivation.md), not this token *from*.
+**Compare with:** ownership is `goborul` + `/b/` ([joins](joins.md#scope-fence-p-join)). Place *inside* is `ogore`; path *from* is `ebaru` ([locative relations](#locative-relations)). *A house like Azawan’s* is [simile](#similative) (`gurorom`), not *made of*. Portion *of* a class is [percent](numbers-applied.md#percent-denominators). Associates are plural **-x**, not meronymy. Kind *origin* (`ROOTx#e-`) is [numeric derivation](numeric-derivation.md), not this token *from*.
 
 ### Writing and speech rhythm (periods)
 <a id="orthography-and-prosody-periods"></a>

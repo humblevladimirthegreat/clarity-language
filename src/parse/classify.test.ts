@@ -143,6 +143,19 @@ describe("classify", () => {
     assert.equal(bone.overlay, undefined);
   });
 
+  it("similative overlay on /h/ /ɡ/ and ordinary mirror on other letters", () => {
+    const like = expectReading("hurorom", "similative");
+    assert.ok(like.overlay);
+    assert.equal(like.overlay!.kind, "similative");
+    assert.equal(like.overlay!.gloss, "like");
+    const adj = expectReading("gurorom", "similative");
+    assert.equal(adj.overlay!.gloss, "like");
+    const mirror = expectReading("zurorol", "ordinary");
+    assert.equal(mirror.overlay, undefined);
+    const mine = expectReading("zuroron", "mood");
+    assert.equal(mine.overlay!.kind, "benchmark");
+  });
+
   it("means overlay on /h/ /ɡ/ and ordinary hand on other letters", () => {
     const using = expectReading("hahanam", "means");
     assert.ok(using.overlay);
