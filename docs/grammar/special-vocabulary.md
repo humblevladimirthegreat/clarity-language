@@ -21,7 +21,7 @@ Affect is **water**. **ACT** is tide dynamics (how much / how fast). **LOCUS** i
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`hogegam`** | HIGH arousal | *flood / surge* | `ogegal` *ocean-wave* | 🌊: water in surge |
+| **`hogegam`** | HIGH arousal | *flood / surge* | `ogegal` *breaker* | 🌊: water in surge |
 | **`hejelom`** | MED arousal | *flow / drift* | `ejelol` *jellyfish* | 🪼: drifts with the current |
 | **`hozowom`** | LOW arousal | *stillness / slack* | `ozowol` *snow* | 🌨️: the landscape goes quiet |
 | **`habobom`** | INTERNAL locus | *held inside* | `abobol` *baby-bottle* | 🍼: liquid stays in the vessel |
@@ -34,7 +34,7 @@ Under `/z/` or `/v/` the ordinary noun or verb uses the published literal ending
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`hogegam`** + **`horurum`** | HIGH × EXTERNAL | *poured / surged onto them* | `ogegal` *ocean-wave* · `orurul` *pour* | 🌊 onto 🫗: flood directed at them |
+| **`hogegam`** + **`horurum`** | HIGH × EXTERNAL | *poured / surged onto them* | `ogegal` *breaker* · `orurul` *pour* | 🌊 onto 🫗: flood directed at them |
 | **`hejelom`** + **`horurum`** | MED × EXTERNAL | *flowing toward them* | `ejelol` *jellyfish* · `orurul` *pour* | 🪼 toward 🫗: drift aimed at them |
 | **`hozowom`** + **`horurum`** | LOW × EXTERNAL | *pooling at them* | `ozowol` *snow* · `orurul` *pour* | 🌨️ at 🫗: slack water settled at their locus |
 
@@ -102,7 +102,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *fireworks* | `urewol` | | |
 | *hug* | `uhugul` | | |
 | *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
-| *HIGH* | `hogegam` | `ogegal` *ocean-wave* | 🌊: water in surge |
+| *HIGH* | `hogegam` | `ogegal` *breaker* | 🌊: water in surge |
 | *LOW* | `hozowom` | `ozowol` *snow* | 🌨️: the landscape goes quiet |
 | *INTERNAL* | `habobom` | `abobol` *baby-bottle* | 🍼: liquid stays in the vessel |
 | *EXTERNAL* | `horurum` | `orurul` *pour* | 🫗: liquid goes onto someone else |
@@ -249,7 +249,7 @@ The default *always* is *usually* (exceptions expected), not *must happen that w
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`harogul`** | COMMON (default climate) | *usually* (exceptions expected) | `arogul` *partly-cloudy* | ⛅: usual sky still allows a shower |
+| **`harogul`** | COMMON (default climate) | *usually* (exceptions expected) | `arogul` *cloudy* | ⛅: usual sky still allows a shower |
 | **`habulul`** | UNCOUNTERED (search) | *as far as checked* (no counterexample comes to mind) | `abulul` *pill* | 💊: you take it to treat an ailment; the search found none |
 | **`harazal`** | FORMAL | *by definition* / math / proof | `arazal` *star* | ⭐: a charted constellation does not wander |
 | **`habelel`** | NATURAL | *by natural necessity* (unsupported objects fall) | `abelel` *apple* | 🍎: it falls because the world works that way |
@@ -282,7 +282,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` | | |
 | *Ululon* | `ululon` | | |
 | *Uhubun* | `uhubun` | | |
-| *COMMON* | `harogul` | `arogul` *partly-cloudy* | ⛅: usual sky still allows a shower |
+| *COMMON* | `harogul` | `arogul` *cloudy* | ⛅: usual sky still allows a shower |
 | *UNCOUNTERED* | `habulul` | `abulul` *pill* | 💊: you take it to treat an ailment; the search found none |
 | *FORMAL* | `harazal` | `arazal` *star* | ⭐: a charted constellation does not wander |
 | *NATURAL* | `habelel` | `abelel` *apple* | 🍎: it falls because the world works that way |

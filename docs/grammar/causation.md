@@ -329,7 +329,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. A f
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
 | *knob* | `ogozol` | |
-| *flood* | `ogegam` | `ogegal` *ocean-wave* |
+| *flood* | `ogegam` | `ogegal` *breaker* |
 | *bell* | `obelel` | |
 | *pressure* | `abamam` | `abamal` *clamp* |
 | *sit* | `vajul` | `ajul` *chair* |

@@ -49,7 +49,7 @@ English *much more* / *slightly more* adds **how large the gap is**, without giv
 
 > `zazawan zululon zel gomonam wogegal.`
 >
-> z-Azawan | z-Ululon | z-rank/more | g-challenge | w-ocean-wave
+> z-Azawan | z-Ululon | z-rank/more | g-challenge | w-breaker
 >
 > "Azawan is much more challenging than Ululon."
 
@@ -105,7 +105,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Rank **
 | *haste* | `adazam` | `adazal` *dash* |
 | *agility* | `uvuvem` | `uvuvel` *field hockey* |
 | *intensity* | `ohogem` | `ohogel` *hockey* |
-| *ocean-wave* | `wogegal` | `ogegal` *ocean-wave* |
+| *breaker* | `wogegal` | `ogegal` *breaker* |
 
 #### English → Agalan
 
@@ -146,7 +146,7 @@ z-Azawan | z-Uhubun | z-equal-rank.open | g-agility
 ::: details Show answer
 `zululon zazawan zel gohogem wogegal.`
 
-z-Ululon | z-Azawan | z-rank/more | g-intensity | w-ocean-wave
+z-Ululon | z-Azawan | z-rank/more | g-intensity | w-breaker
 :::
 
 **6.** *Uhubun is more hasty than Ululon.*
@@ -207,7 +207,7 @@ z-Uhubun | z-Azawan | z-equal-rank.open | g-intensity
 
 ::: details Show answer
 
-z-Uhubun | z-Ululon | z-rank/more | g-agility | w-ocean-wave
+z-Uhubun | z-Ululon | z-rank/more | g-agility | w-breaker
 
 *Uhubun is much more agile than Ululon.*
 :::
@@ -341,7 +341,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 | *exertion* | `ewewum` | `ewewul` *lift* |
 | *big* | `elem` | `elel` *elephant* |
 | *gram* | `obonom` | `obonol` *pound* |
-| *ocean-wave* | `wogegal` | `ogegal` *ocean-wave* |
+| *breaker* | `wogegal` | `ogegal` *breaker* |
 | *intensity* | `ohogem` | `ohogel` *hockey* |
 | *lift* | `vewewul` | `ewewul` *lift* |
 
@@ -470,7 +470,7 @@ z-Azawan | z-Ululon | z-rank/more | g-heavy | b-gram | g-five
 
 ::: details Show answer
 
-z-Uhubun | z-Azawan | z-rank/more | g-exertion | w-ocean-wave
+z-Uhubun | z-Azawan | z-rank/more | g-exertion | w-breaker
 
 *Uhubun is much more exerted than Azawan.*
 :::

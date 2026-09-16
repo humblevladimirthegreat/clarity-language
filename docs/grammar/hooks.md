@@ -418,9 +418,9 @@ Beginner already used simplex extra-noun hooks (*in* / *at* / *from* / *for*). S
 
 > `zazawan vuwurul em bonebal.`
 >
-> z-Azawan | v-write | with-in-mind | b-money-bag
+> z-Azawan | v-write | with-in-mind | b-money
 >
-> "Azawan writes with a money-bag in mind."
+> "Azawan writes with money in mind."
 
 > `zazawan vezehel aem bameral.`
 >

@@ -93,7 +93,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *book* | `abogol` | | |
 | *hammer* | `ahamel` | | |
 | *duck* | `udugul` | | |
-| *money-bag* | `onebal` | | |
+| *money* | `onebal` | | |
 | *write* | `vuwurul` | `uwurul` *write* | ✍️: putting words on the page |
 | *walk* | `vawalal` | | |
 | *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
@@ -111,12 +111,12 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 z-Azawan | h-like | b-duck | v-walk
 :::
 
-**2.** *Azawan writes in exchange for a money-bag.*
+**2.** *Azawan writes in exchange for money.*
 
 ::: details Show answer
 `zazawan vuwurul huhanem bonebal.`
 
-z-Azawan | v-write | h-in-exchange-for | b-money-bag
+z-Azawan | v-write | h-in-exchange-for | b-money
 :::
 
 **3.** *Azawan tells on behalf of Ululon.*
@@ -151,9 +151,9 @@ z-Azawan | h-like | b-duck | v-walk
 
 ::: details Show answer
 
-z-Ululon | v-write | h-in-exchange-for | b-money-bag
+z-Ululon | v-write | h-in-exchange-for | b-money
 
-*Ululon writes in exchange for a money-bag.*
+*Ululon writes in exchange for money.*
 :::
 
 **4.** `zazawan hudagam bululon vezehel.`

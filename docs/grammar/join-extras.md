@@ -91,7 +91,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
 | *start* | `alalom` | `alalol` *play* |
-| *finish* | `egedam` | `egedal` *checkered-flag* |
+| *finish* | `egedam` | `egedal` *finish-line* |
 | *hand* | `ahanal` | |
 | *teamwork* | `ahadam` | `ahadal` *handball* |
 | *trophy* | `odobol` | |

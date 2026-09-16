@@ -138,7 +138,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` | |
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
-| *construction-site* | `ononul` | |
+| *construction* | `onugol` | |
 | *construct* | `ogonul` | |
 | *building* | `ogonum` | `ogonul` *construct* |
 | *hammer* | `ahamel` | |
@@ -193,12 +193,12 @@ z-Azawan | z-Uhubun | v-see | z-←see | v-sit
 z-Azawan | g-agent-x-building
 :::
 
-**6.** *Azawan sees a construction-site.*
+**6.** *Azawan sees a construction site.*
 
 ::: details Show answer
-`zazawan dononul vejel.`
+`zazawan donugol vejel.`
 
-z-Azawan | d-construction-site | v-see
+z-Azawan | d-construction | v-see
 :::
 
 **7.** *Ululon punches Azawan. The one punched screams.*
@@ -255,13 +255,13 @@ z-agent-x-construct | v-punch
 *A constructor punches.*
 :::
 
-**5.** `zululon dononul vejel.`
+**5.** `zululon donugol vejel.`
 
 ::: details Show answer
 
-z-Ululon | d-construction-site | v-see
+z-Ululon | d-construction | v-see
 
-*Ululon sees a construction-site.*
+*Ululon sees a construction site.*
 :::
 
 **6.** `zazawan zululon vuvugul. duxuvugur vazagal.`

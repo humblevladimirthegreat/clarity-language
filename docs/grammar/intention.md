@@ -9,7 +9,7 @@ English *will* and *going to* can mean **intention** (the course someone means t
 ### Plan
 <a id="plan-predict"></a>
 
-To say what someone **means to do**, use the closed mood root **`owora`**. Spell it as floating `/h/`: **`howora`** plus an ending, then the ordinary content verb (*walk*, *write*). That lets you mark intention without borrowing English *will*, which can also be a forecast. Prefer floating `/h/`; use `/w/` only when the mood frames a preceding `/ɡ/` adjective. (cue: 🗺️ *world-map*: a map charts a course you mean to take)
+To say what someone **means to do**, use the closed mood root **`owora`**. Spell it as floating `/h/`: **`howora`** plus an ending, then the ordinary content verb (*walk*, *write*). That lets you mark intention without borrowing English *will*, which can also be a forecast. Prefer floating `/h/`; use `/w/` only when the mood frames a preceding `/ɡ/` adjective. (cue: 🗺️ *map*: a map charts a course you mean to take)
 
 > `zazawan howoram vawalal.`
 >
@@ -27,9 +27,9 @@ On **`owora`**, **-l / -m / -r** say **how fully drawn** the intention is: a hea
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`howoram`** | **sketch** (soft default) | *intends to …* — heading only, steps not filled in | `oworal` *world-map* | **-m** ≈ map (outline only) |
-| **`howoral`** | **itinerary** | *plans to …* — step-by-step plan | `oworal` *world-map* | **-l** ≈ list (every stop in a line) |
-| **`howorar`** | **atlas** | *is fully prepared to …* — hurdles are anticipated and prepared for | `oworal` *world-map* | **-r** ≈ routes (detours already drawn) |
+| **`howoram`** | **sketch** (soft default) | *intends to …* — heading only, steps not filled in | `oworam` *plan-sketch* | **-m** ≈ map (outline only) |
+| **`howoral`** | **itinerary** | *plans to …* — step-by-step plan | `oworal` *plan-itinerary* | **-l** ≈ list (every stop in a line) |
+| **`howorar`** | **atlas** | *is fully prepared to …* — hurdles are anticipated and prepared for | `oworar` *plan-atlas* | **-r** ≈ routes (detours already drawn) |
 
 > `zululon howoral vawalal.`
 >
@@ -285,7 +285,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` | |
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
-| **PLAN** (itinerary) | `howoral` | `oworal` *world-map* |
+| **PLAN** (itinerary) | `howoral` | `oworal` *plan-itinerary* |
 | **PREDICT** | `helezom` | `elezol` *telescope* |
 | **DECISION** (modifiable) | `hegegem` | `egegel` *check* |
 | *sit* | `vajul` | `ajul` *chair* |

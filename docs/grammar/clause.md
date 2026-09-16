@@ -183,7 +183,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Ululon* | `ululon` | | |
 | *Uhubun* | `uhubun` | | |
 | *bank* | `anabal` | | |
-| *money-bag* | `onebal` | | |
+| *money* | `onebal` | | |
 | *angry* | `anagal` | | |
 | *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
 | *sit* | `vajul` | `ajul` *chair* | 🪑: taking a seat |
@@ -288,9 +288,9 @@ z-Azawan | d-Uhubun | v-see
 
 ::: details Show answer
 
-z-Uhubun | g-happy | d-money-bag | v-see
+z-Uhubun | g-happy | d-money | v-see
 
-*Happy Uhubun sees a money-bag.*
+*Happy Uhubun sees money.*
 :::
 
 **5.** `jol zazawan vajul?`
