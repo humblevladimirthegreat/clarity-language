@@ -108,6 +108,8 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("zugobonx", "z-speaker-x");
     expectLine("zedonenx", "z-listener-x");
     expectLine("hadezem", "h-LIVE");
+    expectLine("honebam", "h-RESIDUE");
+    expectLine("hemebem", "h-FORMER");
     expectLine("howoram", "h-plan-sketch");
     expectLine("gonunul", "g-SAME");
   });

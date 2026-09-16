@@ -67,6 +67,15 @@ describe("classify", () => {
     assert.equal(word.overlay, undefined);
   });
 
+  it("overlay mood on residue and former-climate", () => {
+    const residue = expectReading("honebam", "mood");
+    assert.equal(residue.overlay?.kind, "residue");
+    assert.equal(residue.overlay?.gloss, "RESIDUE");
+    const former = expectReading("hemebem", "mood");
+    assert.equal(former.overlay?.kind, "former_climate");
+    assert.equal(former.overlay?.gloss, "FORMER");
+  });
+
   it("join-act and join-relation overlays", () => {
     expectReading("van", "joinAct");
     expectReading("gan", "joinRelation");

@@ -115,7 +115,7 @@ Ordinary `zolalal` is still *a goal* (the net).
 
 **Compare with:** *although Ululon walks* is **`hezebam barl`** plus the next sentence. Discourse *however* is **`xezebal`** ([continue](#continue-x)). Discourse *therefore* is **`xezazal`**, a linker after a finished claim, not *so that*. *Whether Ululon walks* is **`dorl`**, not **`hadorom`** (*if* is a condition, not polar ignorance). *The dog that runs* (which dog) is [two sentences](#which-noun), not **`darl`** on the noun. *Toward* a place is [locative](relations.md#locative-relations) **`hobowam`**, not this pole. Acting *for relatedness* is [values](values.md) **`xo`**, a need-motive, not an event outcome. *A book for a hammer* as a swap is [exchange](relations.md#exchange) (`huhanem`). *Want to walk* still takes a full **`darl`** sentence (repeat the inner `/z/`).
 
-The verb has no past or future letter. *Before* / *after* / *while* / *until* place this event relative to the next sentence.
+The verb has no past or future letter. *Before* / *after* / *while* / *until* place this event relative to the next sentence. Leftover **result** and **former climate** are standing moods, not time ([RESIDUE](commentary.md#residue) / [FORMER](commentary.md#former-climate)).
 
 
 

@@ -8,6 +8,7 @@ consider removing emojis from docs (but keep in lexicon)
 local llm systematically review entire lexicon
 finish English cheat sheets, add Agalan cheat sheet
 consider making negatives clearer with stacked u
+double check we have covered tenses adequately
 
 ## Evidentiality / tense
 

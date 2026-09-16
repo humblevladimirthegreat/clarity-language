@@ -33,6 +33,8 @@ export const OVERLAY_KINDS = [
   "join_act",
   "join_relation",
   "evidential",
+  "residue",
+  "former_climate",
   "may",
   "notional",
   "plan",

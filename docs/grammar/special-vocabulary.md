@@ -255,7 +255,7 @@ The default *always* is *usually* (exceptions expected), not *must happen that w
 | **`habelel`** | NATURAL | *by natural necessity* (unsupported objects fall) | `abelel` *apple* | 🍎: it falls because the world works that way |
 | **`hebebel`** | RULE | *under a named frame* (`hebebel begezel`) | `ebebel` *pepper* | 🌶️: heat that applies in that dish |
 
-**Compare with:** *who / when* uses [universal fences](joins.md#universals-domains-generics) (`zual` / `hual` / `zuam`) and [restrictors](restrictors.md) (`hual`). Soft **-m** on the fence (`zuam` / `huam`) is open inventory.
+**Compare with:** *who / when* uses [universal fences](joins.md#universals-domains-generics) (`zual` / `hual` / `zuam`) and [restrictors](restrictors.md) (`hual`). Soft **-m** on the fence (`zuam` / `huam`) is open inventory. Usual weather you are **not** claiming now is [FORMER](commentary.md#former-climate) (`hemebem`), not COMMON.
 
 **For *I saw a pattern*, use:** [evidential](commentary.md#evidentiality) **`abawa`**. **`arogu`** is usual-weather universality; NATURAL **`abele`** stacks a separate evidential `/h/` for how you know.
 

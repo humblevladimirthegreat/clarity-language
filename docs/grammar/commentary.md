@@ -285,6 +285,64 @@ Pick one evidential **root** for how you know.
 | **`huvuvum`** | reconstructive / recalled observation | *I remember* / *from memory* | `uvuvul` *fishing* | 🎣: retrieval from the water |
 | **`heregom`** | documented / captured past | *on record* / *according to…* | `eregol` *record* | ⏺️: playback archive |
 
+### Residue and former climate
+<a id="residue"></a>
+<a id="former-climate"></a>
+<a id="episode-standing"></a>
+
+English *has walked* and *used to walk* often smuggle **when** the event sits. Agalan already places events with [*before* / *after* / *while*](dependents.md#dependent-clauses), a clock or date, [LIVE](#live-vs-memory) / [WITNESSED](#live-vs-memory), or [PREDICT](plan-decision.md#predict). These two `/h/` moods do **not** locate time. They say how the episode **stands**: whether an outcome **still counts on the current tally**, or whether a usual pattern is **not the climate you are claiming now**. Stack them with a channel or a when-frame; do not use them as a past or present letter.
+
+**RESIDUE** (`oneba`) marks leftover balance: the result is still on the books (an unpaid tab, a door that is still shut). Skipping it means you are not claiming current residue (archived, or a fresh event with nothing left to count). Ordinary `zonebam` is still *debt*.
+
+> `zululon honebam vebarum.`
+>
+> z-Ululon | h-RESIDUE | v-leave
+>
+> "Ululon’s leaving still counts." — the outcome remains on the tally
+
+> `zululon huvuvum honebam vebarum.`
+>
+> z-Ululon | h-WITNESSED | h-RESIDUE | v-leave
+>
+> "Ululon’s leaving still counts — from memory."
+
+> `zululon hadezem honebam vebarum.`
+>
+> z-Ululon | h-LIVE | h-RESIDUE | v-leave
+>
+> "Ululon’s leaving still counts — live / from the scene." (the leftover is in view)
+
+**Compare with:** [*after*](dependents.md#dependent-clauses) (`horanem badorol`) orders two events. **`honebam`** does not say the leaving was earlier; it says the **outcome still counts**. [LIVE](#live-vs-memory) is how you know, not leftover balance. A result as a property can stay ordinary `/ɡ/` (*the door is shut*) with no residue word.
+
+**FORMER** (`emebe`) marks **former climate**: this verb-claim is usual weather that you are **not** giving as today’s report. [Always](restrictors.md) **`hual`** is still the current climate (exceptions listed). [COMMON](special-vocabulary.md#universality) **`harogul`** is how exceptionless that current weather is. Ordinary `zemebem` is still *emptiness*.
+
+> `zazawan hual vezehel hemebem.`
+>
+> z-Azawan | h-always | v-tell | h-FORMER
+>
+> "Azawan always telling is not the current climate."
+
+> `zazawan hual vezehel hemebem hadezem.`
+>
+> z-Azawan | h-always | v-tell | h-FORMER | h-LIVE
+>
+> "Azawan always telling is not the current climate — live / from the scene." (the nest in view is empty)
+
+> `zazawan hual vezehel hemebem helezom.`
+>
+> z-Azawan | h-always | v-tell | h-FORMER | h-predict
+>
+> "Azawan always telling will not be the current climate — forecast."
+
+**Compare with:** **`hual`** without **`hemebem`** is *always* as the weather you stand behind now. PATTERN **`habawam`** is *how you know* (a trail of cases), not “this used to be my weather.” Do not write **`hemebem`** immediately before **`hual`**: that slot is the restrictor’s occasion list (*always except when…*). Keep **`hual`** first (bare *always*), then **FORMER** after the verb, the way [COMMON](special-vocabulary.md#universality) sits after **`hual`**. **`hemebem`** is not a past tense: it is legal under LIVE and PREDICT.
+
+| Agalan | Use | English | Same root as | Cue |
+|--------|-----|---------|--------------|-----|
+| **`honebam`** | outcome still on the current tally | *still counts* / residue | `onebam` *debt* | 💰: unpaid balance still on the books |
+| **`hemebem`** | not the climate claimed now | *former climate* | `emebem` *emptiness* | 🪹: the nesting season is over |
+
+Prefer floating `/h/`. Use `/w/` only when the standing grades a preceding `/ɡ/` adjective. The overlay ending stays **-m**.
+
 ### Notional (as-if framing)
 <a id="notional"></a>
 <a id="notional-mood"></a>
@@ -329,7 +387,7 @@ When you are not sure, use **`hadadem`**.
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills for Intermediate. Try each item before opening **Show answer**.
+Short drills for Intermediate. Try each item before opening **Show answer**. Write a **channel** or **NOTIONAL**, and when the prompt asks, **RESIDUE** or **FORMER**.
 
 **Setting:** a press conference
 
@@ -359,6 +417,9 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *felt* | `heherem` | `eherel` *heart* |
 | *STORY* | `horolom` | `orolol` *scroll* |
 | *NOTIONAL* | `hadadem` | `adadel` *theater* |
+| *RESIDUE* | `honebam` | `onebam` *debt* |
+| *FORMER* | `hemebem` | `emebem` *emptiness* |
+| *always* | `hual` | |
 
 #### English → Agalan
 
@@ -424,6 +485,22 @@ z-Azawan | h-NOTIONAL | v-tell | b-Uhubun
 `zululon hadadel vazagal.`
 
 z-Ululon | h-NOTIONAL-fused | v-scream
+:::
+
+**9.** *Azawan tells Uhubun — live; the telling still counts.*
+
+::: details Show answer
+`zazawan hadezem honebam vezehel buhubun.`
+
+z-Azawan | h-LIVE | h-RESIDUE | v-tell | b-Uhubun
+:::
+
+**10.** *Ululon always tells — live; that is not the current climate.*
+
+::: details Show answer
+`zululon hual vezehel hemebem hadezem.`
+
+z-Ululon | h-always | v-tell | h-FORMER | h-LIVE
 :::
 
 #### Agalan → English
@@ -499,13 +576,31 @@ z-Uhubun | h-MAY | v-scream
 *Uhubun may be screaming.* (*could be* — not how you know a world-claim)
 :::
 
+**9.** `zuhubun huvuvum honebam vezehel bazawan.`
+
+::: details Show answer
+
+z-Uhubun | h-WITNESSED | h-RESIDUE | v-tell | b-Azawan
+
+*Uhubun tells Azawan — from memory; the telling still counts.*
+:::
+
+**10.** `zazawan hual vezehel hemebem.`
+
+::: details Show answer
+
+z-Azawan | h-always | v-tell | h-FORMER
+
+*Azawan always telling is not the current climate.*
+:::
+
 ## Advanced
 <a id="advanced"></a>
 
 ### Mood on one adjective
 <a id="mood-on-adjective"></a>
 
-These `/h/` moods usually sit over the whole clause. When the *could be*, channel, or as-if frame applies only to a preceding adjective (`/ɡ/`), write the same mood under `/w/` instead.
+These `/h/` moods usually sit over the whole clause. When the *could be*, channel, residue / former climate, or as-if frame applies only to a preceding adjective (`/ɡ/`), write the same mood under `/w/` instead.
 
 > `zazawan gelulul wuvuvum vawalal.`
 >
@@ -534,6 +629,8 @@ The same published roots stay ordinary content under other role letters. The clo
 | `zorolol` | noun | *a scroll* |
 | `zadadel` | noun | *a theater* |
 | `vadadem` | verb | *to pretend* |
+| `zonebam` | noun | *debt* |
+| `zemebem` | noun | *emptiness* |
 
 > `zazawan zadadel vejel.`
 >
@@ -558,3 +655,5 @@ The same published roots stay ordinary content under other role letters. The clo
 - Emotion compose: [special-vocabulary.md](special-vocabulary.md#emotion-compose)
 - Forecast stacked with a channel: [plan-decision.md](plan-decision.md#plan-predict)
 - Clock / date / when-frames: [numbers-applied.md](numbers-applied.md#time)
+- Habitual *always*: [restrictors.md](restrictors.md)
+- Usual-climate universality: [special-vocabulary.md](special-vocabulary.md#universality)

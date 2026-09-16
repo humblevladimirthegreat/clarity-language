@@ -57,7 +57,7 @@ Decide **whether** to add. English helpers; not required by the `/b/` model. Lat
 
 - [ ] **13. Passive / *by*-agent (large, optional).** [Free order](../grammar/core.md) highlights the object; that is **not** *a cat is seen by Azawan*. No agent demotion, no *by*-phrase, no *get*-passive. **Needs:** item 1 if the demoted agent is a recipient. Item 11 is refused (two sentences, not an in-NP clause). If skipped, keep the core “use the longer English” line as the whole story.
 
-- [ ] **14. Progressive / perfect / *used to* (large, optional).** No tense/aspect letter. Time is *before / after / while*, clock/date, evidential LIVE vs WITNESSED ([commentary.md](../grammar/commentary.md#evidentiality)), PREDICT, habitual **`hual`**. Observation tense is still only in [TODO.md](../../TODO.md). **Needs:** do not collapse into evidentiality. If added, stack with LIVE / WITNESSED; do not replace them.
+- [x] **14. Progressive / perfect / *used to* (large, optional).** No tense letter. **RESIDUE** **`honebam`** / **FORMER** **`hemebem`** — [commentary episode standing](../grammar/commentary.md#residue). Progressive stays paraphrase ([*while*](../grammar/dependents.md#dependent-clauses) / LIVE). Observation vs imagination tense stays [TODO.md](../../TODO.md).
 
 ## Not gaps
 
@@ -88,7 +88,7 @@ Decide **whether** to add. English helpers; not required by the `/b/` model. Lat
                     12 infinitive / control
                           │
                     13 passive? (after 11)
-                    14 aspect? (after evidentiality as taught)
+                    14 RESIDUE / FORMER (progressive = paraphrase)
 ```
 
 ## Related meta

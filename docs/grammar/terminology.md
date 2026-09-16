@@ -26,6 +26,7 @@ Closed psychological `/h/` (and `/ɡ/` on causal poles; not ordinary [adverb](#a
 | **EXTERNAL** | Emotion locus: charge at other people | [Special vocabulary](special-vocabulary.md#emotion-compose) |
 | **FELT** | Evidential: gut / body knowing | [Commentary](commentary.md#evidentiality) |
 | **FORMAL** | Universality: definition / math / proof | [Special vocabulary](special-vocabulary.md#universality) |
+| **FORMER** | Episode standing: not the climate claimed now **`emebe`** | [Commentary](commentary.md#former-climate) |
 | **HIGH** / **MED** / **LOW** | Emotion ACT roots | [Special vocabulary](special-vocabulary.md#emotion-compose) |
 | **IF** | Clause-pole **`adoro`** (one-way *if*) | [Causation](causation.md#if) |
 | **IFF** | Clause-pole **`ezaze`** | [Causation](causation.md#iff) |
@@ -40,6 +41,7 @@ Closed psychological `/h/` (and `/ɡ/` on causal poles; not ordinary [adverb](#a
 | **PLAN** | Intention-framing mood **`owora`** | [Plan / decision](plan-decision.md#plan-predict) |
 | **PREDICT** | Later-event forecast mood **`elezo`** | [Plan / decision](plan-decision.md#predict) |
 | **RECORDED** | Evidential: documented / playback | [Commentary](commentary.md#evidentiality) |
+| **RESIDUE** | Episode standing: outcome still on the current tally **`oneba`** | [Commentary](commentary.md#residue) |
 | **RULE** | Universality: holds inside a named frame | [Special vocabulary](special-vocabulary.md#universality) |
 | **SAME** | Identity copula **`onunu`** | [Predication](predication.md#identity) |
 | **SO-THAT** | Clause-pole **`olala`** (*so that* / NP intended *for*) | [Dependents](dependents.md#so-that) |
@@ -336,6 +338,12 @@ Reason for the *could be* (**MAY**), not world **BECAUSE**.
 Closed `/h/` how-you-know roots.
 
 [Commentary](commentary.md#evidentiality)
+
+### Residue / former climate
+
+Closed `/h/` episode standing: leftover on the tally, or usual weather you are not claiming now. Not past tense.
+
+[Commentary](commentary.md#residue)
 
 ### Extra noun (`/b/`)
 

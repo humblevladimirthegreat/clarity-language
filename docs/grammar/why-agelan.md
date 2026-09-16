@@ -118,6 +118,17 @@ Marking the channel helps you catch overconfidence and hearsay before you treat 
 
 **For *could be*, use:** [MAY](commentary.md#may) (`odoho`). That marks potential, and whether this sentence finds out, stays at *may*, or leaves it at *who knows*. Evidentiality is how you know a world-claim. Ability *can* is not MAY.
 
+### What still counts, and whose weather
+<a id="residue-and-former-climate"></a>
+
+English *has…* and *used to* mix **when** something happened with whether it **still matters**, or whether a pattern is **still the climate you claim**.
+
+[RESIDUE](commentary.md#residue) marks leftover balance: the outcome is still on the books. [FORMER](commentary.md#former-climate) marks usual weather you are **not** reporting as current. Neither word is a past tense; they stack with a live look, memory, or a forecast.
+
+Marking residue vs an archived episode helps rumination stay optional. Marking former climate helps “I always was this way” stay a weather report you can stop giving.
+
+**Compare with:** [LIVE](commentary.md#live-vs-memory) / [WITNESSED](commentary.md#live-vs-memory) for how you know; [always](restrictors.md) **`hual`** for current climate; [*after*](dependents.md#dependent-clauses) for event order.
+
 ### Intention, forecast, and firmness
 <a id="intention-forecast-and-firmness"></a>
 
@@ -174,6 +185,8 @@ Published roots keep a **metaphorical** sense beside the literal one, so the abs
 
 * [Memory as fishing](commentary.md#evidentiality): cast into opaque water; you may pull a fish or a **boot** (the memory can be wrong).
 * [Live look as attesting](commentary.md#live-vs-memory): eye-in-speech while the scene is still in view.
+* [Residue as unpaid debt](commentary.md#residue): leftover balance still on the books; not a past tense.
+* [Former climate as an empty nest](commentary.md#former-climate): the nesting season is over; not *used to* as past.
 * [Usual as weather](special-vocabulary.md#universality): a habitual *always* is a climate report; [uncountered](special-vocabulary.md#universality) is clear sky (*no counterexample comes to mind*), a search, not a proof.
 * [*As if* as theater](commentary.md#notional): a stage mask frames play; the real tally stays **offstage**.
 * [Mechanism as gears](causation.md#cause): naming the gear train marks *how it meshes*.

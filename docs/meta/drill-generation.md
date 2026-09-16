@@ -327,7 +327,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 16 | `values.md` | Advanced | **exists** | Combined matrices; one boundary trap | 4–6 items |
 | 16 | `ability.md` | Intermediate | **exists** | Hostless fallback **`egera`** (**ABIL**) | |
 | 16 | `ability.md` | Advanced | — | no Advanced stage | |
-| 16 | `commentary.md` | Intermediate | **exists** | Evidentiality channels; **NOTIONAL** **`adade`** + play holds; MAY vs nearby jobs | |
+| 16 | `commentary.md` | Intermediate | **exists** | Evidentiality channels; **NOTIONAL** **`adade`** + play holds; **RESIDUE** / **FORMER**; MAY vs nearby jobs | |
 | 16 | `commentary.md` | Advanced | — | no Advanced stage | |
 | 16 | `roles.md` | Intermediate | **exists** | Viewpoint laterals **`DIR x ANCHOR`**; bare arrow roots = compass; gravity **`uba`/`odowo`**; name/listener anchor | Prefer `…xazawan` over silent speaker default. **`edone`/`ugobo`** only when testing role-anchor. Include at least one bare cardinal and one gravity item |
 | 16 | `x-compounds.md` | Intermediate | **exists** | Greeting bid name **`x`** **`a`/`o`/`e`/`u`** + **-n** on a citation or vocative (presence / one ask / *one moment please* / passing) | Recycle [greeting](../grammar/reference-suffix.md#greeting) and [vocative](../grammar/core.md#vocative). Not ability (`vuzunuxel`). Not values |
@@ -372,7 +372,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | **MAY** **`hodohom`** | `commentary.md` Beginner |
 | Role **`ax`/`ux`/`ox` ROOT** | `roles.md` Beginner |
 | Prescription **`xe`** / motive **`xo`** (values) | `values.md` Intermediate |
-| Evidentiality / NOTIONAL | `commentary.md` Intermediate |
+| Evidentiality / NOTIONAL / RESIDUE / FORMER | `commentary.md` Intermediate |
 | Viewpoint laterals | `roles.md` Intermediate |
 | Measure phrases / ranges / percent | `numbers-applied.md` Intermediate |
 | Join-act **`van`** / join-relation **`gan`** | `join-extras.md` Intermediate |

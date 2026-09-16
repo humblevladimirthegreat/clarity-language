@@ -127,6 +127,7 @@ Source: [values.md](../grammar/values.md)
 | Emotion compose | [special-vocabulary.md § Emotion compose](../grammar/special-vocabulary.md#emotion-compose) |
 | MAY | [commentary.md § MAY](../grammar/commentary.md#may) — **`odoho`** + find out / default / who knows |
 | NOTIONAL | [commentary.md § Notional](../grammar/commentary.md#notional) — **`adade`** |
+| RESIDUE / FORMER | [commentary.md § Residue](../grammar/commentary.md#residue) — **`oneba`** / **`emebe`** |
 | DECISION | [plan-decision.md § Decision](../grammar/plan-decision.md#decision) — **`egege`** |
 | PLAN | [plan-decision.md § Plan](../grammar/plan-decision.md#plan-predict) — **`owora`** |
 
