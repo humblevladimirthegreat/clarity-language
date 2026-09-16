@@ -340,6 +340,18 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
   if (word.reading === "ofRelation") {
     return { line: "of relation", href: "core.html#of-relations" };
   }
+  if (word.reading === "means") {
+    return { line: "means", href: "core.html#means" };
+  }
+  if (word.reading === "similative") {
+    return { line: "simile", href: "core.html#similative" };
+  }
+  if (word.reading === "exchange") {
+    return { line: "exchange", href: "core.html#exchange" };
+  }
+  if (word.reading === "proxy") {
+    return { line: "proxy", href: "core.html#proxy" };
+  }
   if (word.reading === "joinAct" || word.reading === "joinRelation") {
     return { line: "join extra", href: "join-extras.html" };
   }

@@ -51,7 +51,7 @@ When a noun or event is *framed* toward something (*cake with peanuts*, *walk wi
 
 Content *including* needs that `/b/` (`gan b…`). A stock label uses a [mention](spans.md) span.
 
-**Compare with:** *writes with a hammer* is [means](core.md#means) (`hahanam` + `/b/`), not **`han`**. **`han`** is company / including, not the tool.
+**Compare with:** *writes with a hammer* is [means](core.md#means) (`hahanam` + `/b/`), not **`han`**. **`han`** is company / including, not the tool. *Tells on behalf of Ululon* is [proxy](core.md#proxy) (`hudagam`), not **`hon`** *exclusively for*.
 
 **Not the same job as:** adjective [joins](joins.md) (`gal` / `gam` / `gar`). Join-relations take **-n** toward one `/b/`.
 

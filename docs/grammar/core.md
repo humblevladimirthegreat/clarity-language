@@ -115,7 +115,7 @@ When English says the action **uses a tool** (*writes with a hammer*), keep the 
 
 On a noun, the same root is **`gahanam`** (`dabogol gahanam bahamel` *a book written with a hammer*). Ordinary `zahanal` is still *a hand*.
 
-**Compare with:** *hastily* is ordinary manner `/h/` with no `/b/`. Unhosted `/b/` is still the recipient. *Inside* (`hogorem`) is a place, not a tool. *Like a duck* is [simile](#similative) (`hurorom`), not a tool.
+**Compare with:** *hastily* is ordinary manner `/h/` with no `/b/`. Unhosted `/b/` is still the recipient. *Inside* (`hogorem`) is a place, not a tool. *Like a duck* is [simile](#similative) (`hurorom`), not a tool. *A book for a hammer* as a swap is [exchange](#exchange) (`huhanem`), not a tool.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
@@ -148,6 +148,46 @@ Ordinary `zurorol` is still *a mirror*.
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`hurorom` / `gurorom`** | resemblance to a model | *like* | `urorol` *mirror* | 🪞: the image is of the model |
+
+### Exchange (*for*)
+<a id="exchange"></a>
+<a id="in-exchange-for"></a>
+
+When English names the **other side of a swap** (*a book for a hammer*), keep the same hosted pair as *inside*. The relation word is **`huhanem`**. Put what is swapped against the theme in `/b/` right after it. That extra noun is the consideration, not who receives the theme. (cue: 💱 *currency-exchange*: the arrows swap one thing for another; `/b/` is the other side)
+
+> `zazawan dabogol huhanem bahamel vuhanem.`
+>
+> z-Azawan | d-book | h-in-exchange-for | b-hammer | v-exchange
+>
+> "Azawan exchanges a book for a hammer."
+
+On a noun, the same root is **`guhanem`** (`dabogol guhanem bahamel` *a book for a hammer*). Ordinary `zuhanel` is still *a currency exchange*. Ordinary `vuhanem` is still *to exchange*.
+
+**Compare with:** unhosted `/b/` is still the recipient (*a book for Ululon* as who gets it). *Using* a tool is [means](#means). *Like a duck* is [simile](#similative). *Inside* is a place.
+
+| Agalan | Use | English | Same root as | Cue |
+|--------|-----|---------|--------------|-----|
+| **`huhanem` / `guhanem`** | consideration / countervalue | *in exchange for* | `uhanel` *currency-exchange* | 💱: the arrows swap one side for the other |
+
+### Proxy (*on behalf of*)
+<a id="proxy"></a>
+<a id="on-behalf-of"></a>
+
+When English says someone **acts as another person’s agent** (*tells on behalf of Ululon*), keep the same hosted pair as *inside*. The relation word is **`hudagam`**. Put that person in `/b/` right after it. The subject still does the act; `/b/` is whose agency they use, not who hears the telling. (cue: 🪪 *id-card*: the card stands as an authorized face; `/b/` is that person)
+
+> `zazawan hudagam bululon vezehel.`
+>
+> z-Azawan | h-on-behalf-of | b-Ululon | v-tell
+>
+> "Azawan tells on behalf of Ululon."
+
+A recipient may follow a finished pair: `zazawan hudagam bululon buhubun vezehel` (*tells Uhubun on behalf of Ululon*). On a noun, the same root is **`gudagam`** (`dabogol gudagam bululon` *a book on behalf of Ululon*). Ordinary `zudagal` is still *an id-card*.
+
+**Compare with:** unhosted `/b/` is still who hears the telling. *Using* a tool is [means](#means). *A book for a hammer* as a swap is [exchange](#exchange). *Inside* is a place.
+
+| Agalan | Use | English | Same root as | Cue |
+|--------|-----|---------|--------------|-----|
+| **`hudagam` / `gudagam`** | authorized agency | *on behalf of* | `udagal` *id-card* | 🪪: the card stands as their face |
 
 ### Turn (`/j/`): start a new speech move
 <a id="turn-j"></a>
@@ -322,6 +362,8 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *because* | `hurugum` | `urugul` *brick* | 🧱: the cause is what the result sits on |
 | *although* | `hezebam` | `ezebal` *zebra* | 🦓: two stripes, still one animal |
 | *therefore* | `xezazal` | `ezazal` *east* | ➡️: the sun’s path, so the talk moves on |
+| *in-exchange-for* | `huhanem` | `uhanel` *currency-exchange* | 💱: the arrows swap one side for the other |
+| *on-behalf-of* | `hudagam` | `udagal` *id-card* | 🪪: the card stands as their face |
 
 #### English → Agalan
 
@@ -395,6 +437,22 @@ z-Azawan | v-run | h-because | b-next-clause | z-Ululon | d-guard | v-punch
 `zazawan vuwurul hezebam bugugal.`
 
 z-Azawan | v-write | h-although | b-guard
+:::
+
+**10.** *Azawan writes in exchange for a money-bag.*
+
+::: details Show answer
+`zazawan vuwurul huhanem bonebal.`
+
+z-Azawan | v-write | h-in-exchange-for | b-money-bag
+:::
+
+**11.** *Azawan tells on behalf of Ululon.*
+
+::: details Show answer
+`zazawan hudagam bululon vezehel.`
+
+z-Azawan | h-on-behalf-of | b-Ululon | v-tell
 :::
 
 #### Agalan → English
@@ -477,6 +535,24 @@ z-Uhubun | v-scream | x-therefore | z-Ululon | v-fight
 z-Ululon | v-fight | h-although | b-guard
 
 *Ululon fights despite a guard.*
+:::
+
+**10.** `zazawan vuwurul huhanem bonebal.`
+
+::: details Show answer
+
+z-Azawan | v-write | h-in-exchange-for | b-money-bag
+
+*Azawan writes in exchange for a money-bag.*
+:::
+
+**11.** `zazawan hudagam bululon vezehel.`
+
+::: details Show answer
+
+z-Azawan | h-on-behalf-of | b-Ululon | v-tell
+
+*Azawan tells on behalf of Ululon.*
 :::
 
 ## Intermediate
@@ -585,7 +661,7 @@ The same roots stay ordinary pictures under other letters (`zubuhul` *a pushpin*
 | **`hejegem` / `gejegem`** | interior to exterior | *out of* | `ejegel` *eject* | ⏏️: pushed out of the enclosure |
 | **`hazadum` / `gazadum`** | figure in the layer of two landmarks | *between* | `azadul` *sandwich* | 🥪: the filling sits between two sides |
 
-**Compare with:** unhosted `/b/` is still the recipient ([extra nouns](#extra-nouns)), not a place. *Toward* is heading, not completed *into* (*inside*). Ordinary `vebarul` is *to depart*; `hebarum` is the source relation. *Between* is one relation plus a `/b/` [join](joins.md) of two landmarks, not two relation words. *Using* a tool is [means](#means) (`hahanam`), not a place. *Like* is [simile](#similative) (`hurorom`), not a place. English *of* that is not a place is [of relations](#of-relations).
+**Compare with:** unhosted `/b/` is still the recipient ([extra nouns](#extra-nouns)), not a place. *Toward* is heading, not completed *into* (*inside*). Ordinary `vebarul` is *to depart*; `hebarum` is the source relation. *Between* is one relation plus a `/b/` [join](joins.md) of two landmarks, not two relation words. *Using* a tool is [means](#means) (`hahanam`), not a place. *Like* is [simile](#similative) (`hurorom`), not a place. *For a hammer* as a swap is [exchange](#exchange) (`huhanem`). *On behalf of Ululon* is [proxy](#proxy) (`hudagam`). English *of* that is not a place is [of relations](#of-relations).
 
 ### Of relations (*part of*, *cup of*, *made of*, *from*)
 <a id="of-relations"></a>
@@ -628,7 +704,7 @@ Do not flip the pair: *tea of the teapot* (tea that sits in that pot) is locativ
 | **`howodom` / `gowodom`** | constitution | *made of* | `owodol` *wood* | 🪵: the stuff the thing is made of |
 | **`hajabam` / `gajabam`** | identity source / provenance | *from* (origin) | `ajabal` *japan-map* | 🗾: one land’s map as where it comes from |
 
-**Compare with:** ownership is `goborul` + `/b/` ([joins](joins.md#scope-fence-p-join)). Place *inside* is `ogore`; path *from* is `ebaru` ([locative relations](#locative-relations)). *A house like Azawan’s* is [simile](#similative) (`gurorom`), not *made of*. Portion *of* a class is [percent](numbers-applied.md#percent-denominators). Associates are plural **-x**, not meronymy. Kind *origin* (`ROOTx#e-`) is [numeric derivation](numeric-derivation.md), not this token *from*.
+**Compare with:** ownership is `goborul` + `/b/` ([joins](joins.md#scope-fence-p-join)). Place *inside* is `ogore`; path *from* is `ebaru` ([locative relations](#locative-relations)). *A house like Azawan’s* is [simile](#similative) (`gurorom`), not *made of*. *A book for a hammer* as a swap is [exchange](#exchange) (`guhanem`). Portion *of* a class is [percent](numbers-applied.md#percent-denominators). Associates are plural **-x**, not meronymy. Kind *origin* (`ROOTx#e-`) is [numeric derivation](numeric-derivation.md), not this token *from*.
 
 ### Writing and speech rhythm (periods)
 <a id="orthography-and-prosody-periods"></a>

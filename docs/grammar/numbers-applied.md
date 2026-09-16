@@ -63,6 +63,8 @@ English names **how much of a unit** (*two meters*, *three hours*). The unit is 
 >
 > "Azawan walks two meters."
 
+Price *for five grams* keeps this same measure NP in `/b/` after [exchange](core.md#exchange) **`huhanem`**.
+
 | Agalan | Use | English |
 |--------|-----|---------|
 | `bedurem g+2` | extra noun (`/b/`) | *two meters* |

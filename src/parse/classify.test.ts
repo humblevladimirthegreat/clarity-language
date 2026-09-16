@@ -167,6 +167,30 @@ describe("classify", () => {
     assert.equal(hand.overlay, undefined);
   });
 
+  it("exchange overlay on /h/ /ɡ/ and ordinary booth on other letters", () => {
+    const forPrice = expectReading("huhanem", "exchange");
+    assert.ok(forPrice.overlay);
+    assert.equal(forPrice.overlay!.kind, "exchange");
+    assert.equal(forPrice.overlay!.gloss, "in-exchange-for");
+    const adj = expectReading("guhanem", "exchange");
+    assert.equal(adj.overlay!.gloss, "in-exchange-for");
+    const booth = expectReading("zuhanel", "ordinary");
+    assert.equal(booth.overlay, undefined);
+    const verb = expectReading("vuhanem", "ordinary");
+    assert.equal(verb.overlay, undefined);
+  });
+
+  it("proxy overlay on /h/ /ɡ/ and ordinary id-card on other letters", () => {
+    const behalf = expectReading("hudagam", "proxy");
+    assert.ok(behalf.overlay);
+    assert.equal(behalf.overlay!.kind, "proxy");
+    assert.equal(behalf.overlay!.gloss, "on-behalf-of");
+    const adj = expectReading("gudagam", "proxy");
+    assert.equal(adj.overlay!.gloss, "on-behalf-of");
+    const card = expectReading("zudagal", "ordinary");
+    assert.equal(card.overlay, undefined);
+  });
+
   it("hosted judgment bars Mine and Everyone", () => {
     const mine = expectReading("zuroron", "mood");
     assert.ok(mine.overlay);

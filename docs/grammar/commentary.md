@@ -297,7 +297,7 @@ English sometimes frames the whole clause as play: *as if*, *for the sake of arg
 >
 > "As if Azawan walks." — notional framing held lightly (default)
 
-**For *could be*, use:** [MAY](#may). *As if* play is this section; imagining an amount is the related form below. *Walks like a duck* keeps the walk on the real tally ([simile](core.md#similative) `hurorom`); only the manner matches the model.
+**For *could be*, use:** [MAY](#may). *As if* play is this section; imagining an amount is the related form below. *Walks like a duck* keeps the walk on the real tally ([simile](core.md#similative) `hurorom`); only the manner matches the model. *Tells on behalf of Ululon* stays on the real tally ([proxy](core.md#proxy) `hudagam`); Azawan is still the teller.
 
 **Related form:** imaginary *amount* uses free number as verb / adverb / interjection / discourse in [numbers.md](numbers.md#imaginary).
 

@@ -33,9 +33,9 @@ No new clause types. Unblocks locative talk and later relatives / paths.
 
 - [x] **6. NP *despite* (thin).** Same **`ezeba`** pole as *although*: **`hezebam` / `gezebam`** + `/b/` noun ([core dependent clauses](../grammar/core.md#dependent-clauses)). Overlay gloss stays *although*.
 
-- [ ] **7. English *by / for / about / as* cheat-sheet (thin).** Pedagogy only: one short table on [core.md](../grammar/core.md) or [terminology.md](../grammar/terminology.md) mapping each English word to the **live** Agalan jobs (agent stays `/z/`; means = item 3; deadline = time `/h/`; locative = item 2; recipient = item 1; duration = [measure](../grammar/numbers-applied.md#measure-phrases); need-purpose = [values `xo`](../grammar/values.md); topic = `hozal`; approximation = number **-m**; classification vs *while* vs *because*). No new morph.
+- [x] **7. English *by / for / about / as* cheat-sheet (thin).** Pedagogy only: one short table on [core.md](../grammar/core.md) or [terminology.md](../grammar/terminology.md) mapping each English word to the **live** Agalan jobs (agent stays `/z/`; means = item 3; deadline = time `/h/`; locative = item 2; recipient = item 1; duration = [measure](../grammar/numbers-applied.md#measure-phrases); need-purpose = [values `xo`](../grammar/values.md); topic = `hozal`; approximation = number **-m**; classification vs *while* vs *because*). No new morph.
 
-- [ ] **8. Exchange *for* and proxy *on behalf of* (thin).** *Bought for five grams* is not values `xo` and not a recipient. *On behalf of* is not reviser *instead* ([revisers.md](../grammar/revisers.md#instead)). Add relation roots + `/b/`, or defer with a one-line editor note here if the language will always paraphrase.
+- [x] **8. Exchange *for* and proxy *on behalf of* (thin).** Hosted `/h/` or `/ɡ/` + `/b/`: **`huhanem`** *in exchange for* / **`hudagam`** *on behalf of* ([core exchange](../grammar/core.md#exchange), [core proxy](../grammar/core.md#proxy)).
 
 ## Wave 2 — small constructions on Wave 1
 

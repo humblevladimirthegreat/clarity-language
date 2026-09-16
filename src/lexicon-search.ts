@@ -49,6 +49,8 @@ export const OVERLAY_KINDS = [
   "means",
   "similative",
   "of_relation",
+  "exchange",
+  "proxy",
 ] as const;
 
 export type OverlayKind = (typeof OVERLAY_KINDS)[number];

@@ -116,6 +116,8 @@ export type LexReading =
   | "means"
   | "similative"
   | "ofRelation"
+  | "exchange"
+  | "proxy"
   | "join"
   | "joinAct"
   | "joinRelation"

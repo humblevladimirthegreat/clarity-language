@@ -274,7 +274,7 @@ English *have to* / *need to* / *doing this for…* often names a **motive**: wh
 >
 > "Azawan tells for relatedness (internal reason)."
 
-**Not the same job as:** prescription **`xe`** (*this act ought* to serve or protect this need). **`xo`** describes *doing for this need*. On `/ɡ/`, the same stance is the noun’s purpose (*a gift for relatedness*).
+**Not the same job as:** prescription **`xe`** (*this act ought* to serve or protect this need). **`xo`** describes *doing for this need*. On `/ɡ/`, the same stance is the noun’s purpose (*a gift for relatedness*). *A book for a hammer* as a swap is [exchange](core.md#exchange) (`huhanem`). *Tells on behalf of Ululon* is [proxy](core.md#proxy) (`hudagam`).
 
 **-l** and **-m** are approach-framed; **-r** is guard-framed.
 

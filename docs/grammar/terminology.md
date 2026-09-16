@@ -358,6 +358,18 @@ Hosted `/h/` or `/ɡ/` **`urorom`** plus model `/b/` (*like* a duck / *like* Aza
 
 [Core](core.md#similative)
 
+### Exchange (*for*)
+
+Hosted `/h/` or `/ɡ/` **`uhanem`** plus consideration `/b/` (*in exchange for* a hammer). Not recipient `/b/`, not values motive **`xo`**.
+
+[Core](core.md#exchange)
+
+### Proxy (*on behalf of*)
+
+Hosted `/h/` or `/ɡ/` **`udagam`** plus principal `/b/` (*on behalf of* Ululon). Not reviser *instead*, not recipient `/b/`.
+
+[Core](core.md#proxy)
+
 ### Of relation
 
 Hosted `/h/` or `/ɡ/` plus `/b/` for English *of* that is not ownership or a place: *part of*, *contents of*, *made of*, origin *from*.

@@ -45,6 +45,8 @@ You want English *instead*: B takes A's slot. Same `A REV B` shape; vowel **o**.
 >
 > "Coffee instead of tea."
 
+**Compare with:** *Azawan tells on behalf of Ululon* keeps Azawan as the teller ([proxy](core.md#proxy) `hudagam`); **`ol`** puts someone else in that slot.
+
 ### Except (`ul`)
 <a id="except"></a>
 
