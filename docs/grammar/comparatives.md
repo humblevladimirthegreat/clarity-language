@@ -47,7 +47,7 @@ When English would say *the most challenging*, you are still ranking, but you na
 
 English *much more* / *slightly more* adds **how large the gap is**, without giving a number. Write that extra detail as `/w/` after the same shared adjective.
 
-> `zazawan zululon zel gomonam wogegal.`
+> `zazawan zululon zel gomonam wararel.`
 >
 > z-Azawan | z-Ululon | z-rank/more | g-challenge | w-breaker
 >
@@ -105,7 +105,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Rank **
 | *haste* | `adazam` | `adazal` *dash* |
 | *agility* | `uvuvem` | `uvuvel` *field hockey* |
 | *intensity* | `ohogem` | `ohogel` *hockey* |
-| *breaker* | `wogegal` | `ogegal` *breaker* |
+| *breaker* | `wararel` | `ararel` *breaker* |
 
 #### English → Agalan
 
@@ -144,7 +144,7 @@ z-Azawan | z-Uhubun | z-equal-rank.open | g-agility
 **5.** *Ululon is much more intense than Azawan.*
 
 ::: details Show answer
-`zululon zazawan zel gohogem wogegal.`
+`zululon zazawan zel gohogem wararel.`
 
 z-Ululon | z-Azawan | z-rank/more | g-intensity | w-breaker
 :::
@@ -203,7 +203,7 @@ z-Uhubun | z-Azawan | z-equal-rank.open | g-intensity
 *Uhubun is about as intense as Azawan.*
 :::
 
-**5.** `zuhubun zululon zel guvuvem wogegal.`
+**5.** `zuhubun zululon zel guvuvem wararel.`
 
 ::: details Show answer
 
@@ -321,12 +321,12 @@ English *two meters more challenging* still ranks two people on one quality, and
 >
 > "Azawan is two meters more challenging than Ululon."
 
-**Related form:** vague *much* / *slightly* is shared `/w/` after the scale adjective (`wogegal`), not a counted `/b/`.
+**Related form:** vague *much* / *slightly* is shared `/w/` after the scale adjective (`wararel`), not a counted `/b/`.
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
 
-Short drills for Intermediate. Try each item before opening **Show answer**. Full arity (**`oe`** / **`ue`** / standalone / **`zer`**), distributive **`zal`**, a counted measure gap vs vague **`wogegal`**, and manner **`/h/`** right after the join.
+Short drills for Intermediate. Try each item before opening **Show answer**. Full arity (**`oe`** / **`ue`** / standalone / **`zer`**), distributive **`zal`**, a counted measure gap vs vague **`wararel`**, and manner **`/h/`** right after the join.
 
 **Setting:** a weighing room
 
@@ -341,7 +341,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 | *exertion* | `ewewum` | `ewewul` *lift* |
 | *big* | `elem` | `elel` *elephant* |
 | *gram* | `obonom` | `obonol` *pound* |
-| *breaker* | `wogegal` | `ogegal` *breaker* |
+| *breaker* | `wararel` | `ararel` *breaker* |
 | *intensity* | `ohogem` | `ohogel` *hockey* |
 | *lift* | `vewewul` | `ewewul` *lift* |
 
@@ -466,7 +466,7 @@ z-Azawan | z-Ululon | z-rank/more | g-heavy | b-gram | g-five
 *Azawan is five grams heavier than Ululon.*
 :::
 
-**6.** `zuhubun zazawan zel gewewum wogegal.`
+**6.** `zuhubun zazawan zel gewewum wararel.`
 
 ::: details Show answer
 

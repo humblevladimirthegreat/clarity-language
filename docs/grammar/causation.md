@@ -329,7 +329,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. A f
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
 | *knob* | `ogozol` | |
-| *flood* | `ogegam` | `ogegal` *breaker* |
+| *flood* | `ararem` | `ararel` *breaker* |
 | *bell* | `obelel` | |
 | *pressure* | `abamam` | `abamal` *clamp* |
 | *sit* | `vajul` | `ajul` *chair* |
@@ -397,7 +397,7 @@ z-Azawan | v-sit | h-only-if | h-because | b-that-clause | z-Uhubun | v-see
 **7.** *Ululon runs if there is flooding (as mechanism).*
 
 ::: details Show answer
-`zululon vurunul hegegam hadorom bogegam.`
+`zululon vurunul hegegam hadorom bararem.`
 
 z-Ululon | v-run | h-CAUSE | h-if | b-flood
 :::
@@ -431,7 +431,7 @@ z-Azawan | v-tell | h-iff | b-that-clause | z-Uhubun | v-see
 *Azawan tells if and only if Uhubun sees.*
 :::
 
-**4.** `zululon vurunul hurugum barl zogegam.`
+**4.** `zululon vurunul hurugum barl zararem.`
 
 ::: details Show answer
 
@@ -440,7 +440,7 @@ z-Ululon | v-run | h-because | b-that-clause | z-flood
 *Ululon runs because of flooding.*
 :::
 
-**5.** `zogegam gurugum babamam.`
+**5.** `zararem gurugum babamam.`
 
 ::: details Show answer
 
@@ -458,7 +458,7 @@ z-Uhubun | v-tell | h-only-if | h-because | b-that-clause | z-Ululon | v-pour
 *Uhubun tells only because Ululon pours.*
 :::
 
-**7.** `zululon vorurul hegegam hadorom bogegam.`
+**7.** `zululon vorurul hegegam hadorom bararem.`
 
 ::: details Show answer
 

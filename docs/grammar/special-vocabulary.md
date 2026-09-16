@@ -11,7 +11,7 @@ Compose opaque emotion labels from value plus arousal plus locus, number brainst
 
 When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgment or explanation** work, name three pieces instead of one opaque label: a [value](values.md) on the situation, how activated the charge is, and where you put it. Put the value on `/ɡ/` after the situation noun, then **one ACT** and **one LOCUS** as `/h/` (or `/w/` on that adjective). You can then say the take without smuggling a single emotion word.
 
-> `zezehel golozoxur hogegam hanedem.`
+> `zezehel golozoxur hararem hanedem.`
 >
 > z-speech | g-competence-unmet-temporary | h-HIGH | h-CIRCUM
 >
@@ -21,28 +21,28 @@ Affect is **water**. **ACT** is tide dynamics (how much / how fast). **LOCUS** i
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`hogegam`** | HIGH arousal | *flood / surge* | `ogegal` *breaker* | 🌊: water in surge |
+| **`hararem`** | HIGH arousal | *flood / surge* | `ararel` *breaker* | 🌊: water in surge |
 | **`hejelom`** | MED arousal | *flow / drift* | `ejelol` *jellyfish* | 🪼: drifts with the current |
 | **`hozowom`** | LOW arousal | *stillness / slack* | `ozowol` *snow* | 🌨️: the landscape goes quiet |
 | **`habobom`** | INTERNAL locus | *held inside* | `abobol` *baby-bottle* | 🍼: liquid stays in the vessel |
 | **`horurum`** | EXTERNAL locus | *directed at other people* | `orurul` *pour* | 🫗: liquid goes onto someone else |
 | **`hanedem`** | CIRCUM locus | *on the situation* (shared / ambient field) | `anedel` *candle* | 🕯️: light fills the room |
 
-Under `/z/` or `/v/` the ordinary noun or verb uses the published literal ending (`zogegal` *an ocean wave*; `vorurul` *to pour*). The compose reading is the floating `/h/` (or `/w/`) **overlay** on **-m**.
+Under `/z/` or `/v/` the ordinary noun or verb uses the published literal ending (`zararel` *an ocean wave*; `vorurul` *to pour*). The compose reading is the floating `/h/` (or `/w/`) **overlay** on **-m**.
 
 **EXTERNAL** is one root (`oruru`). Scale the transfer with ACT. INTERNAL and CIRCUM combine the same way; CIRCUM is a shared field.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`hogegam`** + **`horurum`** | HIGH × EXTERNAL | *poured / surged onto them* | `ogegal` *breaker* · `orurul` *pour* | 🌊 onto 🫗: flood directed at them |
+| **`hararem`** + **`horurum`** | HIGH × EXTERNAL | *poured / surged onto them* | `ararel` *breaker* · `orurul` *pour* | 🌊 onto 🫗: flood directed at them |
 | **`hejelom`** + **`horurum`** | MED × EXTERNAL | *flowing toward them* | `ejelol` *jellyfish* · `orurul` *pour* | 🪼 toward 🫗: drift aimed at them |
 | **`hozowom`** + **`horurum`** | LOW × EXTERNAL | *pooling at them* | `ozowol` *snow* · `orurul` *pour* | 🌨️ at 🫗: slack water settled at their locus |
 
 | Agalan | English |
 |---------|---------|
-| `zezehel golozoxur hogegam hanedem` | *anxious about the dialogue* (competence at stake, temporary; flood; room awash) |
-| `zezawam gonogoxum hogegam horurum` | *resentful about the division* (unmet relatedness; flood poured onto them) |
-| `zebegum golozoxam hogegam habobom` | *proud of the draft* (met competence, mental channel; flood bottled) |
+| `zezehel golozoxur hararem hanedem` | *anxious about the dialogue* (competence at stake, temporary; flood; room awash) |
+| `zezawam gonogoxum hararem horurum` | *resentful about the division* (unmet relatedness; flood poured onto them) |
+| `zebegum golozoxam hararem habobom` | *proud of the draft* (met competence, mental channel; flood bottled) |
 | `zememol gonogoxum hozowom horurum` | *resentful about the memo* (unmet relatedness; stillness pooling at them) |
 
 Raw feeling (contacting a sensation without judgment) may go unlabeled. Full compose is for when an emotion word would have done evaluative work.
@@ -78,7 +78,7 @@ Unnumbered `zuzebum` is just *a problem*, not a candidate in a set — write **`
 ### Sense-form overlays
 <a id="sense-form"></a>
 
-Emotion compose already used **`hogegam`** (HIGH arousal) next to **`zogegal`** (*an ocean wave*). Some published roots keep a **fixed special reading** under one part of speech: spell that published root plus [reference ending](reference-suffix.md); the PoS chooses the overlay. Emotion ACT / LOCUS in the examples above take overlay **-m**. Overlay `sense_form` is **root + ending** (or a vowel-series join stem), not a productive mid-word **`x`** word. Each overlay row has **`kind`** and **`gloss`**. Place *between* is the leftover locative overlay on `/h/` and `/ɡ/` ([locative relations](relations.md#locative-relations)). Everyday *in* / *at* / *on* are extra-noun [hooks](hooks.md#extra-noun). Noun *of* relations (*part of*, *contents*, *made of*, origin *from*) are the same class ([of relations](relations.md#of-relations)). Simile *like* is the same class ([simile](relations.md#similative)). Exchange *in exchange for* is the same class ([exchange](relations.md#exchange)). Proxy *on behalf of* is the same class ([proxy](relations.md#proxy)). Event purpose *so that* is the same hosted pair ([so that](dependents.md#so-that) **`holalam`**).
+Emotion compose already used **`hararem`** (HIGH arousal) next to **`zararel`** (*an ocean wave*). Some published roots keep a **fixed special reading** under one part of speech: spell that published root plus [reference ending](reference-suffix.md); the PoS chooses the overlay. Emotion ACT / LOCUS in the examples above take overlay **-m**. Overlay `sense_form` is **root + ending** (or a vowel-series join stem), not a productive mid-word **`x`** word. Each overlay row has **`kind`** and **`gloss`**. Place *between* is the leftover locative overlay on `/h/` and `/ɡ/` ([locative relations](relations.md#locative-relations)). Everyday *in* / *at* / *on* are extra-noun [hooks](hooks.md#extra-noun). Noun *of* relations (*part of*, *contents*, *made of*, origin *from*) are the same class ([of relations](relations.md#of-relations)). Simile *like* is the same class ([simile](relations.md#similative)). Exchange *in exchange for* is the same class ([exchange](relations.md#exchange)). Proxy *on behalf of* is the same class ([proxy](relations.md#proxy)). Event purpose *so that* is the same hosted pair ([so that](dependents.md#so-that) **`holalam`**).
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -102,7 +102,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *fireworks* | `urewol` | | |
 | *hug* | `uhugul` | | |
 | *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
-| *HIGH* | `hogegam` | `ogegal` *breaker* | 🌊: water in surge |
+| *HIGH* | `hararem` | `ararel` *breaker* | 🌊: water in surge |
 | *LOW* | `hozowom` | `ozowol` *snow* | 🌨️: the landscape goes quiet |
 | *INTERNAL* | `habobom` | `abobol` *baby-bottle* | 🍼: liquid stays in the vessel |
 | *EXTERNAL* | `horurum` | `orurul` *pour* | 🫗: liquid goes onto someone else |
@@ -132,7 +132,7 @@ z-Azawan | z-goal | g-first | v-tell
 **3.** *Proud of the lantern* (met competence, mental channel; flood bottled)
 
 ::: details Show answer
-`zalanel golozoxam hogegam habobom.`
+`zalanel golozoxam hararem habobom.`
 
 z-lantern | g-competence-met-mental | h-HIGH | h-INTERNAL
 :::
@@ -148,7 +148,7 @@ z-solution | g-first
 **5.** *Anxious about the tent* (competence at stake, temporary; flood; room awash)
 
 ::: details Show answer
-`zedenel golozoxur hogegam hanedem.`
+`zedenel golozoxur hararem hanedem.`
 
 z-tent | g-competence-unmet-temporary | h-HIGH | h-CIRCUM
 :::
@@ -156,7 +156,7 @@ z-tent | g-competence-unmet-temporary | h-HIGH | h-CIRCUM
 **6.** *Resentful about the party* (unmet relatedness; flood poured onto them)
 
 ::: details Show answer
-`zabaral gonogoxum hogegam horurum.`
+`zabaral gonogoxum hararem horurum.`
 
 z-party | g-relatedness-unmet-modifiable | h-HIGH | h-EXTERNAL
 :::
@@ -197,7 +197,7 @@ z-tent | g-competence-met-mental | h-LOW | h-INTERNAL
 *Proud of the tent* (met competence; stillness held inside).
 :::
 
-**4.** `zalanel golozoxur hogegam hanedem.`
+**4.** `zalanel golozoxur hararem hanedem.`
 
 ::: details Show answer
 
@@ -222,7 +222,7 @@ z-Ululon | z-solution | g-first | v-tell
 *Ululon names solution 1.*
 :::
 
-**7.** `zurewol gonogoxum hogegam horurum.`
+**7.** `zurewol gonogoxum hararem horurum.`
 
 ::: details Show answer
 
