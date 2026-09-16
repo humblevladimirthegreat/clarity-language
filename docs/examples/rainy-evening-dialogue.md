@@ -12,7 +12,7 @@ Each turn has: **Agalan** · **gloss** (PoS + English sense; see **[glosses.md](
 | B | **Ubunexunowen** | `ubune`×`unowe` (*hospitality*×*optimism*) | `zubur` / `dubur` / `jubur` … |
 | C | **Amadexonogon** | `amade`×`onogo` (*fellowship*×*bond*) | `zamar` / `damar` / `jamar` … |
 
-**Features touched:** vocatives; polar stance; `jol` / `jom` / `jel` / `jem` / `jum`; omissible `jal`; name **-r** (self / addressee / third); special **`aha`** (inclusive *we*); generic **`enenu`** / next-clause **`orodo`**; phrase joins + revisers; restrictors; values; evidentiality; COMMENT; plan/predict; causation; comparatives/equatives; numbered alternatives; ability; role compound; SAME; plurality **-x**; clause `xan`; linkers; `x#e-` / `x#e`; classification; emotion compose; universality; aside span; join-act verbs.
+**Features touched:** vocatives; polar stance; `jol` / `jom` / `jel` / `jem` / `jum`; omissible `jal`; name **-r** (self / addressee / third); special **`aha`** (inclusive *we*); generic **`enenu`** / next-clause **`orodo`**; phrase joins + revisers; restrictors; values; evidentiality; MAY; plan/predict; causation; comparatives/equatives; numbered alternatives; ability; role compound; SAME; plurality **-x**; clause `xan`; linkers; `x#e-` / `x#e`; classification; emotion compose; universality; aside span; join-act verbs.
 
 ---
 
@@ -82,7 +82,7 @@ loose: *Yes — so we're planning not to walk.*
 
 **C:** `jom hodohom zar vawalal.`
 
-gloss: `j-question` · `h-COMMENT-soft` · `z-who` · `v-walk`
+gloss: `j-question` · `h-MAY` · `z-who` · `v-walk`
 
 strict: *I wonder — who walks?*
 
@@ -304,7 +304,7 @@ loose: *Ha — we're home.*
 | `aha` | interlocutors (inclusive *we*) |
 | `orodo` | next-clause |
 | `alalu` | laugh; *amusement* (metaphorical) |
-| `uvuvu` / `erara` / `odoho` | fishing / ear / thought; *witnessed* / *told* / *COMMENT* (overlays) |
+| `uvuvu` / `erara` / `odoho` | fishing / ear / thought; *witnessed* / *told* / *MAY* (overlays) |
 | `olozo` | toolbox; *competence* (values) |
 | `onugo` | construction; *blockage* / discourse *but* |
 | `ezaza` | east; *progress* / discourse *therefore* |

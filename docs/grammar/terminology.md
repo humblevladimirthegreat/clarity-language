@@ -19,7 +19,7 @@ Closed psychological `/h/` (and `/ɡ/` on causal poles; not ordinary [adverb](#a
 | **BECAUSE** | Clause-pole **`urugu`** (*because*) | [Causation](causation.md#because) |
 | **CAUSE** | Mechanism-framing mood **`egega`** | [Causation](causation.md#cause) |
 | **CIRCUM** | Emotion locus: charge on the situation | [Special vocabulary](special-vocabulary.md#emotion-compose) |
-| **COMMENT** | First-person commentary mood **`odoho`** | [Commentary](commentary.md#comment) |
+| **MAY** | Potential mood **`odoho`** (*could be*; check / no hunt / close) | [Commentary](commentary.md#may) |
 | **COMMON** | Universality: usual, exceptions expected | [Special vocabulary](special-vocabulary.md#universality) |
 | **DECISION** | Pick-firmness mood **`egege`** | [Plan / decision](plan-decision.md#decision) |
 | **EXTERNAL** | Emotion locus: charge at other people | [Special vocabulary](special-vocabulary.md#emotion-compose) |
@@ -317,7 +317,7 @@ Final **-l / -m / -n / -r** (plus optional **-x**). **Reference suffix** names t
 
 ### Epistemic *because*
 
-Reason for the take (**COMMENT**), not world **BECAUSE**.
+Reason for the *could be* (**MAY**), not world **BECAUSE**.
 
 [Causation](causation.md#epistemic-because)
 
@@ -377,9 +377,9 @@ A named citation as a hello (`azawan.`). Mid-word **`x`** plus **`a`** / **`o`**
 
 ### Hold
 
-**COMMENT** / **NOTIONAL** tightness endings.
+**MAY** inquiry endings / **NOTIONAL** play endings.
 
-[Commentary](commentary.md#comment)
+[Commentary](commentary.md#may-hold)
 
 ### Host
 

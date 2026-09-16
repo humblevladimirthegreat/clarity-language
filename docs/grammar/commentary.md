@@ -1,63 +1,63 @@
 # Commentary and evidentiality
 <a id="commentary"></a>
 
-To say *I think*, you add your take on what is happening (not a report that someone is thinking). This page also covers *how you know* a claim, and *as if* the scene is play. This first stage is *I think*.
+English *I think* often smuggles a **guess** (*I think Ululon is leaving Uhubun* = maybe that is so) without saying whether you are checking. **MAY** marks the clause as **potential**: it *could be* so. Keep the ordinary verb and add a small `/h/` word.
 
 ## Beginner
 <a id="beginner"></a>
 
-### COMMENT
-<a id="comment"></a>
+### MAY
+<a id="may"></a>
 
-When English would use *I think* over the whole sentence, Agalan keeps the ordinary content verb (*walks*, *sleeps*) and adds a framing `/h/` word. That word is **`odoho`**. Put it in the clause as **floating `/h/`**: it comments on the whole clause, not on a need. Start with **`hodohom`**: you notice the take and hold it lightly.
+When the scene **could be** so (rejection, a blow, a loss — not a warrant), keep the content verb (*leaves*, *punches*, *cries*) and add **`odoho`** as `/h/`. Start with **`hodohom`**: could be, and this sentence is **not** a hunt. (cue: 💭 *thought*: a balloon over the scene)
 
-The walking or sleeping is still the event. Without the `/h/` word you are just reporting the scene. The same root can still be ordinary content (`zodohol` *a thought*; `vodohol` *to think* as a deliberate event). (cue: 💭 *thought*: a balloon over the scene)
+The leaving or the blow is still the event named in the *could be*. Without the `/h/` word you are reporting what happens. The same root can still be ordinary content (`zodohol` *a thought*; `vodohol` *to think* as a deliberate action).
 
-> `zazawan hodohom vawalal.`
+> `zululon hodohom vebarum duhubun.`
 >
-> z-Azawan | h-COMMENT | v-walk
+> z-Ululon | h-MAY | v-leave | d-Uhubun
 >
-> "I think Azawan walks." — commentary held lightly (default)
+> "Ululon may be leaving Uhubun." — could be; no hunt (default)
 
-**Not the same job as:** `vodohol` *to think* as a deliberate event (`zazawan vodohol.` *Azawan thinks.*).
+**Compare with:** `zazawan vodohol.` is *Azawan thinks* (an action of thinking). **`hodohom`** is *the scene may be so*. A bare `zululon vebarum duhubun.` reports the leaving.
 
-The same `/h/` word can sit on a yes/no ask:
+The same `/h/` word can sit on a yes/no ask. Use **-l** when the ask *is* the hunt:
 
-> `jol zuhubun hodohom velebel.`
+> `jol zazawan hodohol vubunul dululon.`
 >
-> j-question | z-Uhubun | h-COMMENT | v-sleep
+> j-question | z-Azawan | h-MAY-check | v-punch | d-Ululon
 >
-> "Does Uhubun sleep?" — asked with light commentary
+> "Might Azawan be punching Ululon?" — could be, and I'm finding out
 
-### Hold endings (COMMENT)
-<a id="comment-hold"></a>
+### Hold endings (MAY)
+<a id="may-hold"></a>
 
-On **`odoho`**, **-l / -m / -r** say how committed you are to that *I think*. **-m** is the default: you notice the take and hold it lightly. **-l** treats the take as what the scene is (*it is so because I think*). **-r** names the same take and steps you back toward reporting without commentary. **-n** is ordinary [proper](reference-suffix.md#proper-name--n).
+On **`odoho`**, **-l / -m / -r** say what you are doing with that *could be* **this sentence**. None of them is the “correct” person: hunting, not hunting yet, and closing the hunt are all lawful. **-n** is ordinary [proper](reference-suffix.md#proper-name--n).
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`hodohom`** | comments on the clause, held lightly (default) | *I think* (soft) | `odohol` *thought* | 💭: balloon loosely in hand |
-| **`hodohol`** | treats the take as what the scene is | *it is so because I think* | `odohol` *thought* | 💭: balloon fills the sky |
-| **`hodohor`** | names the same take and steps back toward reporting | *I think — and step back* | `odohol` *thought* | 💭: let the balloon go |
+| **`hodohom`** | could be; **no hunt** this sentence (default) | *may* / *could be* | `odohol` *thought* | 💭: balloon; you are not looking yet |
+| **`hodohol`** | could be, and you are **finding out** | *may — and I'm finding out* | `odohol` *thought* | 💭: balloon plus looking |
+| **`hodohor`** | could be; **inquiry closed** this round | *may — this hunt is over* | `odohol` *thought* | 💭: balloon set down |
 
-When unsure, prefer **`hodohom`**.
+When you are not sure, use **`hodohom`**. That is not wiser than looking (**-l**) or ending the hunt (**-r**); it is the grammar of *could be* with no check in this clause.
 
-> `zuhubun hodohol vuzunul.`
+> `zululon hodohol vubunul dazawan.`
 >
-> z-Uhubun | h-COMMENT-fused | v-sing
+> z-Ululon | h-MAY-check | v-punch | d-Azawan
 >
-> "Uhubun sings — and that take is the scene."
+> "Ululon may be punching Azawan — and I'm finding out."
 
-> `zululon hodohor vawalal.`
+> `zuhubun hodohor vogorol.`
 >
-> z-Ululon | h-COMMENT-return | v-walk
+> z-Uhubun | h-MAY-close | v-cry
 >
-> "I think Ululon walks — and step back from that take."
+> "Uhubun may be crying — this hunt is over."
 
 ### Translation practice
 <a id="translation-practice"></a>
 
-Short drills for Beginner. Try each item before opening **Show answer**.
+Short drills for Beginner. Try each item before opening **Show answer**. Write **MAY** for *could be*; pick **-m** (no hunt), **-l** (finding out), or **-r** (hunt over). One item is thinking as an action, not MAY.
 
 **Setting:** a café patio
 
@@ -68,61 +68,61 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` | |
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
-| *sit* | `vajul` | `ajul` *chair* |
-| *pour* | `vorurul` | |
-| *coffee* | `ogovel` | |
-| *tea* | `adedal` | |
 | *see* | `vejel` | `ejel` *eye* |
 | *tell* | `vezehel` | `ezehel` *speech* |
+| *leave* | `vebarum` | `ebarul` *departure* |
+| *cry* | `vogorol` | |
 | *thought* (event) | `vodohol` | `odohol` *thought* |
-| *COMMENT* | `hodohom` | `odohol` *thought* |
+| *MAY* | `hodohom` | `odohol` *thought* |
+| *MAY-check* | `hodohol` | `odohol` *thought* |
+| *MAY-close* | `hodohor` | `odohol` *thought* |
 | *punch* | `vubunul` | |
 | *scream* | `vazagal` | |
 | *fight* | `vuvugul` | |
 
 #### English → Agalan
 
-**1.** *I think Azawan sits.* (light commentary)
+**1.** *Ululon may be seeing Uhubun.* (could be; no hunt)
 
 ::: details Show answer
-`zazawan hodohom vajul.`
+`zululon hodohom vejel duhubun.`
 
-z-Azawan | h-COMMENT | v-sit
+z-Ululon | h-MAY | v-see | d-Uhubun
 :::
 
-**2.** *I think Ululon pours coffee.*
+**2.** *Azawan may be telling Ululon.*
 
 ::: details Show answer
-`zululon hodohom vorurul dogovel.`
+`zazawan hodohom vezehel dululon.`
 
-z-Ululon | h-COMMENT | v-pour | d-coffee
+z-Azawan | h-MAY | v-tell | d-Ululon
 :::
 
-**3.** *I think Uhubun sees Azawan.*
+**3.** *Uhubun may be leaving Azawan.*
 
 ::: details Show answer
-`zuhubun hodohom vejel dazawan.`
+`zuhubun hodohom vebarum dazawan.`
 
-z-Uhubun | h-COMMENT | v-see | d-Azawan
+z-Uhubun | h-MAY | v-leave | d-Azawan
 :::
 
-**4.** *Azawan tells Uhubun — and that take is the scene.* (fused hold)
+**4.** *Ululon may be punching Azawan — and I'm finding out.*
 
 ::: details Show answer
-`zazawan hodohol vezehel duhubun.`
+`zululon hodohol vubunul dazawan.`
 
-z-Azawan | h-COMMENT-fused | v-tell | d-Uhubun
+z-Ululon | h-MAY-check | v-punch | d-Azawan
 :::
 
-**5.** *I think Ululon pours tea — and step back from that take.*
+**5.** *Azawan may be crying — this hunt is over.*
 
 ::: details Show answer
-`zululon hodohor vorurul dadedal.`
+`zazawan hodohor vogorol.`
 
-z-Ululon | h-COMMENT-return | v-pour | d-tea
+z-Azawan | h-MAY-close | v-cry
 :::
 
-**6.** *Azawan thinks.* (deliberate event, not a commentary frame)
+**6.** *Azawan thinks.* (deliberate event, not MAY)
 
 ::: details Show answer
 `zazawan vodohol.`
@@ -130,49 +130,49 @@ z-Ululon | h-COMMENT-return | v-pour | d-tea
 z-Azawan | v-thought
 :::
 
-**7.** *I think Ululon punches Azawan.*
+**7.** *Ululon may be fighting.*
 
 ::: details Show answer
-`zululon hodohom vubunul dazawan.`
+`zululon hodohom vuvugul.`
 
-z-Ululon | h-COMMENT | v-punch | d-Azawan
+z-Ululon | h-MAY | v-fight
 :::
 
-**8.** *Does Uhubun scream?* (yes/no; light commentary over the ask)
+**8.** *Could Uhubun be screaming?* (yes/no; could be, no hunt)
 
 ::: details Show answer
 `jol zuhubun hodohom vazagal.`
 
-j-question | z-Uhubun | h-COMMENT | v-scream
+j-question | z-Uhubun | h-MAY | v-scream
 :::
 
 #### Agalan → English
 
-**1.** `zululon hodohom vajul.`
+**1.** `zululon hodohom vezehel duhubun.`
 
 ::: details Show answer
 
-z-Ululon | h-COMMENT | v-sit
+z-Ululon | h-MAY | v-tell | d-Uhubun
 
-*I think Ululon sits.*
+*Ululon may be telling Uhubun.*
 :::
 
-**2.** `zazawan hodohom vorurul dadedal.`
+**2.** `zazawan hodohom vejel dululon.`
 
 ::: details Show answer
 
-z-Azawan | h-COMMENT | v-pour | d-tea
+z-Azawan | h-MAY | v-see | d-Ululon
 
-*I think Azawan pours tea.*
+*Azawan may be seeing Ululon.*
 :::
 
-**3.** `zuhubun hodohol vejel dululon.`
+**3.** `zuhubun hodohol vebarum dazawan.`
 
 ::: details Show answer
 
-z-Uhubun | h-COMMENT-fused | v-see | d-Ululon
+z-Uhubun | h-MAY-check | v-leave | d-Azawan
 
-*Uhubun sees Ululon — and that take is the scene.*
+*Uhubun may be leaving Azawan — and I'm finding out.*
 :::
 
 **4.** `zululon vodohol.`
@@ -180,42 +180,42 @@ z-Uhubun | h-COMMENT-fused | v-see | d-Ululon
 ::: details Show answer
 
 z-Ululon | v-thought
-*Ululon thinks.* (an event of thinking, not COMMENT)
+*Ululon thinks.* (an event of thinking, not MAY)
 :::
 
-**5.** `zazawan hodohor vorurul dogovel.`
+**5.** `zazawan hodohor vazagal.`
 
 ::: details Show answer
 
-z-Azawan | h-COMMENT-return | v-pour | d-coffee
+z-Azawan | h-MAY-close | v-scream
 
-*I think Azawan pours coffee — and step back from that take.*
+*Azawan may be screaming — this hunt is over.*
 :::
 
-**6.** `jol zazawan hodohom vejel duhubun.`
+**6.** `jol zululon hodohom vubunul dazawan.`
 
 ::: details Show answer
 
-j-question | z-Azawan | h-COMMENT | v-see | d-Uhubun
-*Does Azawan see Uhubun?* (asked with light commentary)
+j-question | z-Ululon | h-MAY | v-punch | d-Azawan
+*May Ululon be punching Azawan?* (could be; no hunt)
 :::
 
 **7.** `zululon hodohol vuvugul.`
 
 ::: details Show answer
 
-z-Ululon | h-COMMENT-fused | v-fight
+z-Ululon | h-MAY-check | v-fight
 
-*Ululon fights — and that take is the scene.*
+*Ululon may be fighting — and I'm finding out.*
 :::
 
-**8.** `zululon hodohom vazagal.`
+**8.** `zuhubun hodohom vogorol.`
 
 ::: details Show answer
 
-z-Ululon | h-COMMENT | v-scream
+z-Uhubun | h-MAY | v-cry
 
-*I think Ululon screams.*
+*Uhubun may be crying.*
 :::
 
 ## Intermediate
@@ -225,9 +225,9 @@ z-Ululon | h-COMMENT | v-scream
 <a id="evidentiality"></a>
 <a id="evidential"></a>
 
-English often names *how you know* a claim about the world (what happened, what caused what, what someone else thinks, what will happen). Agalan keeps the ordinary content verb and adds a closed `/h/` mood word. That word is the **channel** the claim came through, so the same walk or sleep can sit under a live look, memory, a recording, a pattern of cases, clues, hearsay, a gut sense, or a tale.
+English often says *how you know* a claim (*I saw it*, *I heard*, *I figured*). Agalan keeps the ordinary content verb and adds a closed `/h/` mood word. That word is the **channel** the claim came through, so the same walk or sleep can sit under a live look, memory, a recording, a pattern of cases, clues, hearsay, a gut sense, or a tale.
 
-There is **no past / future letter** on the verb. Some channels already locate the event because of how you know: **LIVE** is observation while the scene is still in view; **WITNESSED** is memory of an observation (retrieval); **RECORDED** is playback of a capture. [PREDICT](plan-decision.md#predict) / [PLAN](plan-decision.md#plan-predict) look ahead. Other evidentials do not move the event; add a when-frame ([*before* / *after* / *while*](core.md#dependent-clauses), a clock or date, recency) when inference or hearsay needs a different time than this stretch.
+Verbs have **no past or future letter**. Some channels already locate the event because of how you know: **LIVE** is watching while the scene is still in view; **WITNESSED** is memory of watching; **RECORDED** is playback of a capture. [PREDICT](plan-decision.md#predict) / [PLAN](plan-decision.md#plan-predict) look ahead. Other evidentials do not move the event; add a when-frame ([*before* / *after* / *while*](core.md#dependent-clauses), a clock or date, recency) when inference or hearsay needs a different time than this stretch.
 
 > `zazawan hadezem vawalal.`
 >
@@ -241,7 +241,7 @@ There is **no past / future letter** on the verb. Some channels already locate t
 >
 > "Azawan walks — from memory (a past observation)."
 
-**For *I think*, use:** [COMMENT](#comment) (`odoho`). This inventory is *how you know a world-claim*.
+**For *could be* (no channel), use:** [MAY](#may) (`odoho`). English *I think* as a **guess with a warrant** belongs in this inventory, or as a bare report. This inventory is *how you know a world-claim*.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
@@ -268,7 +268,7 @@ Pick one evidential **root** for how you know.
 >
 > "Ululon writes — so they say."
 
-**Not the same job as:** seeing as an event uses ordinary **`vejel`**. **`hadezem`** is the *how you know* channel (the walk is in view now), not the verb *see*. A feeling like fear or hope uses [emotion compose](special-vocabulary.md#emotion-compose) (value + ACT + LOCUS). **`heherem`** is a channel of *knowing*, not that stack. **`heraram`** is someone said so about the claim; hearing a door as an event is ordinary `/v/`.
+**Compare with:** seeing as an action uses ordinary **`vejel`**. **`hadezem`** is *how you know* (the walk is in view now), not the verb *see*. Fear or hope uses [emotion compose](special-vocabulary.md#emotion-compose). **`heherem`** is a way of *knowing*, not that stack. **`heraram`** is someone said so about the claim; hearing a door as an action is ordinary `/v/`.
 
 ### Live vs memory
 <a id="live-vs-memory"></a>
@@ -277,7 +277,7 @@ Pick one evidential **root** for how you know.
 <a id="record-past"></a>
 <a id="live"></a>
 
-**`hadezem`** is **present observation**: you still have access to the scene. **`huvuvum`** is **past memory of observation**: you pull the episode back, and it may not be what you hoped. Do not stack the two. English *I witnessed* for a remembered event is **`huvuvum`**, not **LIVE**.
+**`hadezem`** is **watching now**: you still have access to the scene. **`huvuvum`** is **remembered watching**: you pull the episode back, and it may not be what you hoped. Do not stack the two. English *I witnessed* for a remembered event is **`huvuvum`**, not **LIVE**.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
@@ -289,7 +289,7 @@ Pick one evidential **root** for how you know.
 <a id="notional"></a>
 <a id="notional-mood"></a>
 
-English sometimes frames the whole clause as play: *as if*, *for the sake of argument*, *this is only in the mind*. Agalan keeps the ordinary verb and adds the closed `/h/` word **`adade`**. That word takes the scene off the real ledger, so you can tell a pretensive walk without turning *walk* into a special pretend-verb. (cue: 🎭 *theater*: a stage mask; the real tally stays offstage)
+English sometimes frames the whole clause as play: *as if*, *for the sake of argument*, *this is only in the mind*. Agalan keeps the ordinary verb and adds the closed `/h/` word **`adade`**. That word takes the scene off the real tally, so you can tell a pretend walk without turning *walk* into a special pretend-verb. (cue: 🎭 *theater*: a stage mask; the real tally stays offstage)
 
 > `zazawan hadadem vawalal.`
 >
@@ -297,14 +297,14 @@ English sometimes frames the whole clause as play: *as if*, *for the sake of arg
 >
 > "As if Azawan walks." — notional framing held lightly (default)
 
-**For *I think / I imagine*, use:** [COMMENT](#comment).
+**For *could be*, use:** [MAY](#may). *As if* play is this section; imagining an amount is the related form below.
 
 **Related form:** imaginary *amount* uses free number as verb / adverb / interjection / discourse in [numbers.md](numbers.md#imaginary).
 
 ### Hold endings (NOTIONAL)
 <a id="notional-hold"></a>
 
-Beginner already used **-l / -m / -r** hold on **`odoho`**. The same map sits on **`adade`**. **-n** is ordinary [proper](reference-suffix.md#proper-name--n).
+Beginner already used **-l / -m / -r** on **MAY** for *finding out* / *no hunt* / *hunt over*. **NOTIONAL** reuses those letters for **play**, not for inquiry: light / immersed / mask off. **-n** is ordinary [proper](reference-suffix.md#proper-name--n).
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
@@ -312,7 +312,7 @@ Beginner already used **-l / -m / -r** hold on **`odoho`**. The same map sits on
 | **`hadadel`** | immersed in the imagined scene | *as if* (fused) | `adadel` *theater* | 🎭: mask on |
 | **`hadader`** | same as-if and a step back toward bare contact | *as if — and step back* | `adadel` *theater* | 🎭: mask off |
 
-When unsure, prefer **`hadadem`**.
+When you are not sure, use **`hadadem`**.
 
 > `zuhubun hadadel vuzunul.`
 >
@@ -349,7 +349,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *mute* | `vumudel` | |
 | *punch* | `vubunul` | |
 | *scream* | `vazagal` | |
-| *COMMENT* | `hodohom` | `odohol` *thought* |
+| *MAY* | `hodohom` | `odohol` *thought* |
 | *live* / *from the scene* | `hadezem` | `adezel` *attest* |
 | *WITNESSED* | `huvuvum` | `uvuvul` *fishing* |
 | *RECORDED* | `heregom` | `eregol` *record* |
@@ -491,12 +491,12 @@ z-Ululon | h-LIVE | v-punch | d-Azawan
 *Ululon punches Azawan — live / from the scene.*
 :::
 
-**8.** `zazawan hodohom vezehel.`
+**8.** `zuhubun hodohom vazagal.`
 
 ::: details Show answer
 
-z-Azawan | h-COMMENT | v-tell
-*I think Azawan tells.* (attitude — not how you know a world-claim)
+z-Uhubun | h-MAY | v-scream
+*Uhubun may be screaming.* (*could be* — not how you know a world-claim)
 :::
 
 ## Advanced
@@ -505,7 +505,7 @@ z-Azawan | h-COMMENT | v-tell
 ### Mood on one adjective
 <a id="mood-on-adjective"></a>
 
-These `/h/` moods usually float over the whole clause. When the take, channel, or as-if frame applies only to a preceding adjective (`/ɡ/`), write the same mood under `/w/` instead.
+These `/h/` moods usually sit over the whole clause. When the *could be*, channel, or as-if frame applies only to a preceding adjective (`/ɡ/`), write the same mood under `/w/` instead.
 
 > `zazawan gelulul wuvuvum vawalal.`
 >
@@ -522,7 +522,7 @@ These `/h/` moods usually float over the whole clause. When the take, channel, o
 ### Ordinary content readings
 <a id="content-readings"></a>
 
-The same published roots keep ordinary content under other role letters. The closed mood is the `/h/` (or `/w/`) frame, not a ban on the stem.
+The same published roots stay ordinary content under other role letters. The closed mood is the `/h/` (or `/w/`) frame, not a ban on the stem.
 
 | Agalan | Use | English |
 |--------|-----|---------|

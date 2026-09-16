@@ -239,7 +239,7 @@ When English puts *should* / *ought to* on the **doing** for a named need (*Uhub
 
 That ending is **prescription force**: how strongly you stake that ought. If you do not know the force, use **-m**. Bound **-l** means the ought is non-negotiable in this conversation or rule-set. In loose English, **-l** / **-m** / **-r** usually read as *must* / *has to*, *should*, and *could* / *might* (terminology: [bound / endorse / invite](terminology.md#bound-endorse-invite)).
 
-**Unlike** [COMMENT](commentary.md#comment) (`hodohom`): the host verb stays ordinary content there and the event is still asserted. With **`xe`**, the same host verb is the **ought-to** act, not a simultaneous performance claim.
+**Unlike** [MAY](commentary.md#may) (`hodohom`): the host verb stays ordinary content there and the event is still *could be*. With **`xe`**, the same host verb is the **ought-to** act, not a simultaneous performance claim.
 
 **Compare with:** [command](core.md#speech-act-beginner) **`jel`** instructs an act outright without naming the need or prescription force. **`xe`** is need-linked deontic: *ought to advance this need*, with force on the ending.
 

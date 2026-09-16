@@ -54,7 +54,7 @@ Find the row(s) in the [allowlist](#allowlist).
 
 **Do not open** later path files, later stages of this file, or `docs/examples/` for item ideas. Do not browse the lexicon for roots the items will not use.
 
-If this stage’s own examples leak a later form (e.g. COMMENT + **`jom`** before core Intermediate), **do not copy the leak**. Use a legal recycle form instead.
+If this stage’s own examples leak a later form (e.g. MAY + **`jom`** before core Intermediate), **do not copy the leak**. Use a legal recycle form instead.
 
 ### 4. Recycle vs introduce
 
@@ -274,12 +274,12 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 13 | `numbers.md` | **exists** | `g+N` count; `g#N` ordinal; digitless **`g+`** (*more than one*) with **-x** on the noun | No `/v/` `/h/` `/j/` `/x/` number uses, exponents, ranges, percent, measures (later). **-x** from plurality is recycle |
 | 13 | `comparatives.md` | **exists** | Rank fence **`e`/`oe`/`ue`** + SHARED scale `/ɡ/`; single-item superlative; equative **`ae`** | **Needs:** joins Beginner rank joins. No measure phrases (Intermediate). No numbers Intermediate |
 | 13 | `causation.md` | **exists** | Two-place poles: outcome host + `/b/` condition; `/h/` event vs `/ɡ/` noun; *if* **`adoro`** vs *only if* **`ebero`**; no cause-arrow word | **Needs:** core extra nouns + **`adoro`**. *Because* / **`IFF`** / **CAUSE** are Intermediate — do not use |
-| 14 | `values.md` | **exists** | Six needs; `/ɡ/` on the noun vs `/h/` on the clause; **`xa`** met + contact **-l / -m / -r**; **`xu`** unmet changeability | **Not** prescription **`xe`** or motive **`xo`** (Intermediate). Not ability (non-need + `x` vowel). Not COMMENT. Not bare need-as-topic |
+| 14 | `values.md` | **exists** | Six needs; `/ɡ/` on the noun vs `/h/` on the clause; **`xa`** met + contact **-l / -m / -r**; **`xu`** unmet changeability | **Not** prescription **`xe`** or motive **`xo`** (Intermediate). Not ability (non-need + `x` vowel). Not MAY. Not bare need-as-topic |
 | 14 | `ability.md` | **exists** | Host (non-need) + **`xa`/`xe`/`xo`/`xu`**; *can’t* grains vs *won’t* | Not values (need roots). Not role compounds (vowel *left* of `x`). Not greeting bid (named citation or `/j/`) |
-| 14 | `commentary.md` | **exists** | **COMMENT** **`odoho`** + hold endings (**`hodohom`** default); not a world claim | Not evidentiality / NOTIONAL (Intermediate). Not **`jom`** (core Intermediate) unless you only recycle **`jol`** from core/questions Beginner |
+| 14 | `commentary.md` | **exists** | **MAY** **`odoho`** + 2a holds (**`hodohom`** default no hunt; **-l** check; **-r** close) | Not evidentiality / NOTIONAL (Intermediate). Not **`jom`** (core Intermediate) unless you only recycle **`jol`** from core/questions Beginner |
 | 14 | `roles.md` | **exists** | Role compounds **`a`/`u`/`o` x ROOT`** (agent / patient / reltum); endings on the role word | Not viewpoint laterals (Intermediate). Not values/ability (vowel *right* of `x`). Not join-relations |
 | 14 | `x-compounds.md` | **exists** | Productive **`x`** vs two words vs lexical compound; recognize `ohohulabede` / `eberelonogo` lemmas | Not parser-family inventory as drills; not coining new lexical compounds. Greeting bid is Intermediate |
-| 14 | `plan-decision.md` | **exists** | **PLAN** **`owora`** map-resolution endings vs **PREDICT** **`elezo`** (bare) | Not **DECISION** (Intermediate). Not evidentiality stacked on PREDICT (Intermediate). Sibling COMMENT / values / ability unused unless the page contrast needs them |
+| 14 | `plan-decision.md` | **exists** | **PLAN** **`owora`** map-resolution endings vs **PREDICT** **`elezo`** (bare) | Not **DECISION** (Intermediate). Not evidentiality stacked on PREDICT (Intermediate). Sibling MAY / values / ability unused unless the page contrast needs them |
 
 ### Intermediate then Advanced
 <a id="allowlist-later"></a>
@@ -314,12 +314,12 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 13 | `comparatives.md` | Intermediate | **exists** | Full comparative arity; manner `/h/` immediately after the join; distributive **`a`** + SHARED `/ɡ/`; measured differentials | Measured items **Sibling OK:** numbers Intermediate **measure phrases** only |
 | 13 | `comparatives.md` | Advanced | **exists** | Judgment benchmarks (`zojun`, `zahaman`, **`zuroron`** Mine vs performance **`zugobon`**, **`zoloben`** Everyone, …) | **`ugobo`** allowed on performance items |
 | 13 | `causation.md` | Intermediate | **exists** | Following-sentence **`badorol`**; **`urugu`** *because* / **`ezaze`** *iff*; asserted necessary **`heberom hurugum`**; **CAUSE** **`egega`** **-m** | Recycle Beginner *if* / *only if* and `/h/` vs `/ɡ/` |
-| 13 | `causation.md` | Advanced | **exists** | Factivity; evidential / CAUSE / habit stacks as taught in this stage | COMMENT/evidentiality are Beginner/Intermediate recycle by the time Advanced is read |
+| 13 | `causation.md` | Advanced | **exists** | Factivity; evidential / CAUSE / habit stacks as taught in this stage | MAY/evidentiality are Beginner/Intermediate recycle by the time Advanced is read |
 | 14 | `values.md` | Intermediate | **exists** | Prescription **`xe`** + force; motive **`xo`** + preference standing; which ending table; attachment sites | |
 | 14 | `values.md` | Advanced | **exists** | Combined matrices; one boundary trap | 4–6 items |
 | 14 | `ability.md` | Intermediate | **exists** | Hostless fallback **`egera`** (**ABIL**) | |
 | 14 | `ability.md` | Advanced | — | no Advanced stage | |
-| 14 | `commentary.md` | Intermediate | **exists** | Evidentiality channels; **NOTIONAL** **`adade`** + hold map; COMMENT vs nearby jobs | |
+| 14 | `commentary.md` | Intermediate | **exists** | Evidentiality channels; **NOTIONAL** **`adade`** + play holds; MAY vs nearby jobs | |
 | 14 | `commentary.md` | Advanced | — | no Advanced stage | |
 | 14 | `roles.md` | Intermediate | **exists** | Viewpoint laterals **`DIR x ANCHOR`**; bare arrow roots = compass; gravity **`uba`/`odowo`**; name/listener anchor | Prefer `…xazawan` over silent speaker default. **`edone`/`ugobo`** only when testing role-anchor. Include at least one bare cardinal and one gravity item |
 | 14 | `x-compounds.md` | Intermediate | **exists** | Greeting bid name **`x`** **`a`/`o`/`e`/`u`** + **-n** on a citation or vocative (presence / one ask / *one moment please* / passing) | Recycle [greeting](../grammar/reference-suffix.md#greeting) and [vocative](../grammar/core.md#vocative). Not ability (`vuzunuxel`). Not values |
@@ -357,7 +357,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | **CAUSE** **`egega`** / **`hegegam`** | `causation.md` Intermediate |
 | Value **`xa`/`xu`** on **need** roots | `values.md` Beginner |
 | Ability **`xa`/`xe`/`xo`/`xu`** on **non-need** hosts | `ability.md` Beginner |
-| **COMMENT** **`hodohom`** | `commentary.md` Beginner |
+| **MAY** **`hodohom`** | `commentary.md` Beginner |
 | Role **`ax`/`ux`/`ox` ROOT** | `roles.md` Beginner |
 | Prescription **`xe`** / motive **`xo`** (values) | `values.md` Intermediate |
 | Evidentiality / NOTIONAL | `commentary.md` Intermediate |

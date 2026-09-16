@@ -47,7 +47,7 @@ Under `/z/` or `/v/` the ordinary noun or verb uses the published literal ending
 
 Raw feeling (contacting a sensation without judgment) may go unlabeled. Full compose is for when an emotion word would have done evaluative work.
 
-**Compare with:** a thought-take uses [COMMENT](commentary.md#comment) (`odoho`). This stack is value + activation + locus.
+**Compare with:** *could be* uses [MAY](commentary.md#may) (`odoho`). This stack is value + activation + locus.
 
 ### Numbered alternatives (problem / solution / goal)
 <a id="numbered-alternatives"></a>
@@ -408,6 +408,6 @@ z-everything-but.open | g-proof | h-COMMON
 <a id="see-also"></a>
 
 - Values on the judged host: [values.md](values.md)
-- COMMENT / evidential stack: [commentary.md](commentary.md)
+- MAY / evidential stack: [commentary.md](commentary.md)
 - Domain / habitual fences: [joins.md](joins.md#universals-domains-generics)
 - Preference vs law / CAUSE: [causation.md](causation.md)

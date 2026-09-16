@@ -107,16 +107,16 @@ Composing emotion from need + activation + locus helps you ask for what would ac
 
 Tagging *can’t right now* vs *may yet* vs *impossible* helps you stop treating a temporary block as a fixed incapability.
 
-### How you know, and *I think*
+### How you know, and *could be*
 <a id="how-you-know"></a>
 
-It is easy to treat a take as settled fact: mixing memory, hearsay, gut feel, and *I think* into one warrant.
+It is easy to treat a looping *could be* as settled fact: mixing memory, hearsay, gut feel, and *maybe they left* into one warrant.
 
 [Evidentiality](commentary.md#evidentiality) lets a claim about the world name **how you know**: live look, memory, record, pattern, inference, hearsay, gut-felt, or story. Memory (**WITNESSED**) is pulling a scene back from earlier (you may mis-reel it). A live look (**LIVE**) is seeing it while it is still in view.
 
 Marking the channel helps you catch overconfidence and hearsay before you treat a take as settled fact.
 
-**For *I think*, use:** [COMMENT](commentary.md#comment) (`odoho`). That notes your own rumination. Evidentiality is how you know a world-claim.
+**For *could be*, use:** [MAY](commentary.md#may) (`odoho`). That marks potential, and whether this sentence hunts, sits, or closes the hunt. Evidentiality is how you know a world-claim. Ability *can* is not MAY.
 
 ### Intention, forecast, and firmness
 <a id="intention-forecast-and-firmness"></a>

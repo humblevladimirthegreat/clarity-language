@@ -490,15 +490,15 @@ English *because* and *if* can hide whether you **assert the dependent as a worl
 #### Epistemic *because* (no twin root)
 <a id="epistemic-because"></a>
 
-English often uses *because* for **speaker grounds** (*I think P because Q*) without treating Q as a world-fact that grounds P. Put [COMMENT](commentary.md#comment) (`hodohom`, …) on the main sentence for the take. Add **`hurugum badorol`** only when Q is also asserted as a world-foundation.
+English often uses *because* for **speaker grounds** (*they may be leaving because Q*) without treating Q as a world-fact that grounds P. Put [MAY](commentary.md#may) (`hodohom`, …) on the main sentence for the *could be*. Add **`hurugum badorol`** only when Q is also asserted as a world-foundation.
 
-> `zazawan hodohom vawalal.`
+> `zululon hodohom vebarum duhubun.`
 >
-> z-Azawan | h-COMMENT | v-walk
+> z-Ululon | h-MAY | v-leave | d-Uhubun
 >
-> "Azawan walks (that’s a take)."
+> "Ululon may be leaving Uhubun."
 
-**For *I think*, use:** [COMMENT](commentary.md#comment) (`odoho`). **`hurugum`** is world-reason under the claim.
+**For *could be*, use:** [MAY](commentary.md#may) (`odoho`). **`hurugum`** is world-reason under the claim.
 
 **Related form:** *P, since / given that Q* (Q already shared) still uses **`hurugum badorol`**; soften with evidential `/h/` if the warrant is tentative.
 
@@ -529,7 +529,7 @@ Time and discourse dependents use the same **`adoro`** hang as *if* / *because*.
 ### Translation practice
 <a id="translation-practice-advanced"></a>
 
-Short drills for Advanced. Try each item before opening **Show answer**. **`hurugum`** asserts the condition as a fact the outcome rests on; **`hadorom`** does not; speaker-grounds stay **`hodohom`**. Habit uses **`hual`**; mechanism uses **`hegegam`**.
+Short drills for Advanced. Try each item before opening **Show answer**. **`hurugum`** asserts the condition as a fact the outcome rests on; **`hadorom`** does not; speaker-grounds stay **`hodohom`** (**MAY**). Habit uses **`hual`**; mechanism uses **`hegegam`**.
 
 **Setting:** a chemistry lab
 
@@ -550,7 +550,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. **`huru
 | *if* | `hadorom` | `adorol` *door* |
 | *only-if* | `heberom` | `eberol` *paper-roll* |
 | *because* | `hurugum` | `urugul` *brick* |
-| *COMMENT* | `hodohom` | `odohol` *thought* |
+| *MAY* | `hodohom` | `odohol` *thought* |
 | *CAUSE* | `hegegam` | `egegal` *gear* |
 
 #### English → Agalan
@@ -571,20 +571,20 @@ z-Ululon | v-pour | h-because | b-next-clause | z-Uhubun | v-see
 z-Azawan | v-pour | h-if | b-next-clause | z-test-tube
 :::
 
-**3.** *Azawan pours (that’s a take).* (speaker-grounds, not a world-reason)
+**3.** *Azawan may be pouring.* (*could be*, not a world-reason)
 
 ::: details Show answer
 `zazawan hodohom vorurul.`
 
-z-Azawan | h-COMMENT | v-pour
+z-Azawan | h-MAY | v-pour
 :::
 
-**4.** *Azawan sits, I’d note, because Ululon pours.*
+**4.** *Azawan may be sitting, because Ululon pours.*
 
 ::: details Show answer
 `zazawan hodohom vajul hurugum badorol zululon vorurul.`
 
-z-Azawan | h-COMMENT | v-sit | h-because | b-next-clause | z-Ululon | v-pour
+z-Azawan | h-MAY | v-sit | h-because | b-next-clause | z-Ululon | v-pour
 :::
 
 **5.** *Melt if there is fire, as a standing pattern.*
@@ -627,18 +627,18 @@ z-Ululon | v-pour | h-if | b-next-clause | z-test-tube
 
 ::: details Show answer
 
-z-Uhubun | h-COMMENT | v-see
+z-Uhubun | h-MAY | v-see
 
-*Uhubun sees (that’s a take).*
+*Uhubun may be seeing.*
 :::
 
 **4.** `zululon hodohom vorurul hurugum badorol zuhubun vejel.`
 
 ::: details Show answer
 
-z-Ululon | h-COMMENT | v-pour | h-because | b-next-clause | z-Uhubun | v-see
+z-Ululon | h-MAY | v-pour | h-because | b-next-clause | z-Uhubun | v-see
 
-*Ululon pours, I’d note, because Uhubun sees.*
+*Ululon may be pouring, because Uhubun sees.*
 :::
 
 **5.** `zalabal gadorom burel hual.`

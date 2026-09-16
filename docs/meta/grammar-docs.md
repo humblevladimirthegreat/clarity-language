@@ -130,7 +130,7 @@ Mark the one mix-up so it is easy to scan. Use **one** of these four starters (b
 | Prefer | Avoid |
 |--------|--------|
 | **Compare with:** *if* / *because* use the poles above. | Sufficient / necessary / *if* / *because* **stay on** the joins. Exceptionlessness **stays on** universality. |
-| **For *I think*, use:** [COMMENT](../grammar/commentary.md#comment) (`odoho`). This inventory is *how you know a world-claim*. | First-person *I think* **stays** COMMENT. |
+| **For *could be*, use:** [MAY](../grammar/commentary.md#may) (`odoho`). This inventory is *how you know a world-claim*. | First-person *could be* **stays** MAY. |
 | **Related form:** packaging a list uses [joins](../grammar/joins.md) (`zal` / `val` / `xal`, …). | Phrase, VP, and clause **joins stay on** joins.md. |
 | **Not the same job as:** [PLAN](../grammar/plan-decision.md#plan-predict) (map grain). This mood marks **pick firmness**. | Intention map grain **stays PLAN**. |
 
@@ -300,13 +300,13 @@ Inline after the rule sentence: `(cue: …)`. Worked examples stay Agalan / morp
 
 A **scene** cue (`emoji *literal*: why`) is for remembering a published picture. State it only when that picture is doing **grammar** work, not when the page is merely using a dictionary metaphor.
 
-**State it** on a **closed overlay**: a fixed special reading under one part of speech (COMMENT, SAME, CAUSE, ABIL, plan / DECISION, evidentials, NOTIONAL, emotion ACT / LOCUS, clause-pole **`adoro`**, special pronouns, universality moods, and the same class). The learner needs the scene to remember why *this* published root hosts that job. Put `(cue: …)` on the **rule sentence** (job, shape, consequence first), or in the inventory **Cue** column with **Same root as** naming the **-l** citation. One line that the same spelling is still ordinary content under other letters is fine.
+**State it** on a **closed overlay**: a fixed special reading under one part of speech (MAY, SAME, CAUSE, ABIL, plan / DECISION, evidentials, NOTIONAL, emotion ACT / LOCUS, clause-pole **`adoro`**, special pronouns, universality moods, and the same class). The learner needs the scene to remember why *this* published root hosts that job. Put `(cue: …)` on the **rule sentence** (job, shape, consequence first), or in the inventory **Cue** column with **Same root as** naming the **-l** citation. One line that the same spelling is still ordinary content under other letters is fine.
 
 **Do not state it** when the example is ordinary **lexicon metaphor** (content **-m**): `hogorem` *inside*, `welem` *size* / *very*, `hadazam` *hastily*. Do **not** add a following sentence of the form “**`ogore`** here is the published metaphor *inclusion* / *inside*. (cue: ⭕ *hollow circle*: …).” The morph gloss and quoted English already give the sense. **-m** as a system is taught on [reference-suffix.md](../grammar/reference-suffix.md#metaphor-m); that page (and drill **Cue** cells) may show `from *swan*: the glide of *grace*` because the lesson *is* the metaphor ending.
 
 | Do | Don’t |
 |----|--------|
-| Overlay lead: **`odoho`** as COMMENT, then `(cue: 💭 *thought*: a balloon over the scene)` | After `hogorem bohohul`, a sentence that names the lexicon row and restates the hollow-circle cue |
+| Overlay lead: **`odoho`** as MAY, then `(cue: 💭 *thought*: a balloon over the scene)` | After `hogorem bohohul`, a sentence that names the lexicon row and restates the hollow-circle cue |
 | Overlay table **Cue** for SAME, ABIL, CAUSE, … | A post-example etymology footnote on ordinary *-inside* / *haste* / *size* |
 | Cue last on the **rule**, before the first example | Cue as the paragraph *after* the worked examples |
 
@@ -320,7 +320,7 @@ Usual sources (prefer one; reuse the language’s own systems):
 
 | Source | When |
 |--------|------|
-| **Metaphorical / lexicon sense** | Closed roots and overlays (**`SAME`**, **`COMMENT`**, ➡️ *east*: the sun’s path, so the talk moves on) |
+| **Metaphorical / lexicon sense** | Closed roots and overlays (**`SAME`**, **`MAY`**, ➡️ *east*: the sun’s path, so the talk moves on) |
 | **Vowel series** | Join / speech act / polar stacks that share letter jobs |
 | **Ending letters** | **-l** / **-m** / **-n** / **-r** (and stance endings) when the ending *is* the lesson |
 
