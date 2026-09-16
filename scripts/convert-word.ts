@@ -222,6 +222,7 @@ function convertLexicon(only: string[]): void {
     }
   }
 
+  const overlaySenseBefore = overlays.map((overlay) => overlay.senseForm);
   for (const overlay of overlays) {
     if (isJoinOverlayKind(overlay.kind)) {
       continue;
@@ -235,6 +236,7 @@ function convertLexicon(only: string[]): void {
     }
     overlay.senseForm = retieSenseForm(overlay.senseForm, mapped.oldRoot, mapped.newRoot);
   }
+  const overlaysChanged = overlays.some((overlay, index) => overlay.senseForm !== overlaySenseBefore[index]);
 
   const rootMap = new Map(retiePairs.map((pair) => [pair.oldRoot, pair.newRoot]));
   const retiedCompounds = retieCompoundRows(compoundRows, rootMap);
@@ -247,22 +249,26 @@ function convertLexicon(only: string[]): void {
     throw new Error(`Invalid lexicon-compounds.csv after retie:\n${detail}`);
   }
 
-  writeFileSync(publishedPath, serializeCsv(headers, rows));
-  writeFileSync(
-    overlayPath,
-    serializeCsv(
-      OVERLAY_HEADERS,
-      overlays.map((overlay) => ({
-        sense_form: overlay.senseForm,
-        pos: overlay.pos,
-        emoji: overlay.emoji,
-        kind: overlay.kind,
-        gloss: overlay.gloss,
-        definition: overlay.definition,
-        mnemonic: overlay.mnemonic,
-      })),
-    ),
-  );
+  if (changed > 0) {
+    writeFileSync(publishedPath, serializeCsv(headers, rows));
+  }
+  if (overlaysChanged) {
+    writeFileSync(
+      overlayPath,
+      serializeCsv(
+        OVERLAY_HEADERS,
+        overlays.map((overlay) => ({
+          sense_form: overlay.senseForm,
+          pos: overlay.pos,
+          emoji: overlay.emoji,
+          kind: overlay.kind,
+          gloss: overlay.gloss,
+          definition: overlay.definition,
+          mnemonic: overlay.mnemonic,
+        })),
+      ),
+    );
+  }
   if (retiedCompounds.changes.length > 0) {
     writeFileSync(compoundsPath, serializeCompoundCsv(retiedCompounds.rows));
   }
