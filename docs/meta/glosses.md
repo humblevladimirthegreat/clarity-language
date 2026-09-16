@@ -263,7 +263,7 @@ Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) —
 | Ordinary (three roots) | `zuzuzuxogovexadedan` | `z-Uzuzu-x-Ogove-x-Adedan` |
 | Ability / values stance | `vawalaxel` | `v-walk-unable-temporary` |
 | Values stance on need | `holozoxom` | `h-competence-motive-internal` |
-| Role compound | `zaxezeher` | `z-agent-x-dialogue` |
+| Role compound | `zaxuvugul` | `z-agent-x-fight` |
 | Span open / close | `hexal` … `xuxul` | `h-aside-x-multi` · … · `x-span-close` |
 | Number / enumeration | `x#e-` | `x-starting-with` |
 

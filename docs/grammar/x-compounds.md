@@ -26,7 +26,7 @@ That shape is an **ordinary compound**: a full root, **`x`**, another full root.
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | full root **`x`** full root | ordinary compound: one label, kind then field | `zuzuzuxogoven` | **x** ≈ plus |
-| **`a`** / **`u`** / **`o`** **`x`** root | [role compound](roles.md#role-compounds) | `zaxuvugul` *a fighter* | **a** agent / **u** patient / **o** relatum |
+| **`a`** / **`e`** / **`u`** / **`o`** **`x`** root | [role compound](roles.md#role-compounds) | `zaxuvugul` *a fighter* | **a** agent / **e** instrument / **u** patient / **o** reltum |
 | root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | [values](values.md) or [ability](ability.md#ability) | `vuzunuxel` | stance vowel on the host |
 
 **Compare with:** two people in one slot are two words (`zazawan zululon`), not one seam.
@@ -206,7 +206,7 @@ Beginner already used ordinary compounds, role compounds, and values / ability o
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | one vowel **`x`** one vowel, then a span ending | [span fence](spans.md) open or close | `daxal` … `xuxul` | vowel **x** vowel |
-| **`a`** / **`u`** / **`o`** **`x`** a longer root | [role compound](roles.md#role-compounds) | `zaxuvugul` *a fighter* | **a** agent / **u** patient / **o** relatum |
+| **`a`** / **`e`** / **`u`** / **`o`** **`x`** a longer root | [role compound](roles.md#role-compounds) | `zaxuvugul` *a fighter* | **a** agent / **e** instrument / **u** patient / **o** reltum |
 | name **`x`** **`a`** / **`o`** / **`e`** / **`u`** + **-n** (citation or `/j/`) | [greeting bid](#greeting-bid) | `azawaxan`; `jululoxen` | vowel on the named greeting or vocative |
 | longer root **`x`** stance vowel **`a`** / **`e`** / **`o`** / **`u`** | [values](values.md) (need host) or [ability](ability.md#ability) (other host) | `vuzunuxel` | stance vowel on the host |
 | longer root **`x`** a [number](numbers.md) stem (no ending of its own) | [numeric derivation](numeric-derivation.md#numeric-derivation) | `…x+1…` / speech `…xraba…` | number stem on the right |
@@ -246,13 +246,13 @@ The table above is the full map. Read both sides of the first **`x`** in this or
 
 - The whole word is **`xuxul`** / **`xuxur`** / **`xuxum`** → a **span** is closing.
 - After the role letter: one vowel, **`x`**, one vowel, then a span ending → a **span** is opening (atomic / resume / empty — [spans](spans.md)).
-- After the role letter: one vowel **`a`** / **`u`** / **`o`**, **`x`**, then a longer root → a **role compound** (who does / undergoes / relates).
+- After the role letter: one vowel **`a`** / **`e`** / **`u`** / **`o`**, **`x`**, then a longer root → a **role compound** (who does / what is used / who undergoes / who relates).
 - A name (one root or a [phrasal proper](reference-suffix.md#phrasal-proper-names)), **`x`**, a single vowel **`a`** / **`o`** / **`e`** / **`u`**, named **-n**, as a citation or under **`/j/`** → a [greeting bid](#greeting-bid).
 - A longer root, then **`x`**, then a single stance vowel **`a`** / **`e`** / **`o`** / **`u`** → **values** (on a need) or **ability** (on another host).
 - A longer root, then **`x`**, then a **number** stem (writing **`+`** / **`-`** / **`#`** / **`_`**; speech starts with **`r`**) → [numeric derivation](numeric-derivation.md#numeric-derivation).
 - Full roots on **both** sides of the first **`x`** (and maybe more **`x`** + root) → an ordinary compound (sense or name).
 
-Role vowels are only **`a`** / **`u`** / **`o`**. Span type and edge letters stay single vowels.
+Role vowels are **`a`** / **`e`** / **`u`** / **`o`**. Span type and edge letters stay single vowels.
 
 ### One slot, one package
 <a id="compound-vs-separate"></a>
@@ -269,7 +269,7 @@ English sometimes puts two nouns in one slot (*a dog and a cat*) and sometimes o
 
 **Compare with:** a property on a host uses `/ɡ/` (or `/w/`); a list uses a [join](joins.md).
 
-**Related form:** who does / undergoes / relates uses a [role compound](roles.md#role-compounds).
+**Related form:** who does / what is used / who undergoes / who relates uses a [role compound](roles.md#role-compounds).
 
 ### Greeting bid (name **`x`** vowel)
 <a id="greeting-bid"></a>

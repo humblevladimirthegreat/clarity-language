@@ -342,6 +342,18 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
       rightRoots: ["ogove", "adeda"],
     });
   });
+
+  it("parses e x ROOT as instrument role (roles.md)", () => {
+    const word = parseOk("zexahamel");
+    assert.equal(word.pos, "z");
+    assert.equal(word.ending, "l");
+    assert.equal(word.family.kind, "x");
+    if (word.family.kind === "x") {
+      assert.equal(word.family.xFamily, "role");
+      assert.equal(word.family.roleVowel, "e");
+      assert.deepEqual(word.family.rightRoots, ["ahame"]);
+    }
+  });
 });
 
 describe("parseWord — illegal shapes", () => {
@@ -351,9 +363,5 @@ describe("parseWord — illegal shapes", () => {
 
   it("rejects ROOTx1 with no number marker (numeric-derivation.md)", () => {
     assert.throws(() => parseWord("zolovex1l"), WordParseError);
-  });
-
-  it("rejects reserved e x ROOT role (x-compounds.md / roles.md)", () => {
-    assert.throws(() => parseWord("zexadagal"), WordParseError);
   });
 });

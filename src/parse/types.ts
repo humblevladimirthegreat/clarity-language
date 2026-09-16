@@ -72,7 +72,7 @@ export type MorphWordFamily =
       /** Span EDGE vowel (span open). */
       edgeVowel?: "a" | "e" | "o" | "u";
       /** Role vowel (role compound). */
-      roleVowel?: "a" | "u" | "o";
+      roleVowel?: "a" | "e" | "u" | "o";
       /** Values / ability stance vowel. */
       stanceVowel?: "a" | "e" | "o" | "u";
       /** Nested number stem (numeric derivation). */
@@ -283,8 +283,8 @@ export type AnaphorBind = {
   match?: ContentMatch;
   /** Span TYPE vowel (cite / aside / mention / opaque). */
   typeVowel?: "a" | "e" | "o" | "u";
-  /** Role compound vowel (agent / patient / reltum). */
-  roleVowel?: "a" | "u" | "o";
+  /** Role compound vowel (agent / patient / instrument / reltum). */
+  roleVowel?: "a" | "e" | "u" | "o";
   /** Absent when no prior match. */
   antecedent?: LexWord;
 };

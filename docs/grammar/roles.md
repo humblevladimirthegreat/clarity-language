@@ -1,7 +1,7 @@
 # Role compounds
 <a id="roles"></a>
 
-When English would name a person from an event (*a fighter* from *fight*, *the one fought*), Agalan builds that name from the event’s stem. Write a person or thing letter, then **`a`**, **`u`**, or **`o`**, then mid-word **`x`**, then the stem, then an ordinary [reference ending](reference-suffix.md). **`a`** is the doer, **`u`** is the one the event happens to, and **`o`** is the other party of a relation.
+When English would name a person from an event (*a fighter* from *fight*, *the one fought*), Agalan builds that name from the event’s stem. Write a person or thing letter, then **`a`**, **`e`**, **`u`**, or **`o`**, then mid-word **`x`**, then the stem, then an ordinary [reference ending](reference-suffix.md). **`a`** is the doer, **`e`** is what the doer uses, **`u`** is the one the event happens to, and **`o`** is the other party of a relation.
 
 ## Beginner
 <a id="beginner"></a>
@@ -9,6 +9,7 @@ When English would name a person from an event (*a fighter* from *fight*, *the o
 ### Role compounds: the doer (`a`)
 <a id="role-compounds"></a>
 <a id="agent-patient-reltum"></a>
+<a id="agent-instrument-patient-reltum"></a>
 
 English *a fighter* names who does the fighting, from the same idea as *fight*. Write a person or thing letter (`/z/` `/d/` `/b/`), then **`a`**, then mid-word **`x`**, then the event root, then an ordinary [reference ending](reference-suffix.md). The result is one content word (a **role compound**) that you can use as a participant. (cue: **a** ≈ add (add a doer))
 
@@ -18,7 +19,7 @@ English *a fighter* names who does the fighting, from the same idea as *fight*. 
 >
 > "A fighter runs."
 
-With **-l**, `zaxuvugul` is *a fighter* as a kind of person. You do not need a prior fight in the talk.
+The last letter is the ordinary [reference ending](reference-suffix.md): **-l** takes the stem’s everyday sense, **-m** the published metaphor. `zaxuvugul` is *a fighter*; `zaxuvugum` is *a struggler*. You do not need a prior fight in the talk.
 
 **Compare with:** *can fight* puts the stance vowel **right** of **`x`** ([ability](ability.md): `vuvuguxal`). A fighter puts the role vowel **left** of **`x`**.
 
@@ -46,6 +47,22 @@ English *the one seen* or *the one fought* names the person the event happens to
 >
 > "Azawan sees a cat. The one seen runs."
 
+### The implement (`e`)
+
+English *the hammer used* names what the doer uses so the event can go through. Use the same compound shape, but write **`e`** in the vowel slot. That named thing is the **instrument**: equipment in this event, not the doer and not what is hammered. (cue: **e** ≈ order (the means you order the event through))
+
+> `zazawan dabogol vuwurul.`
+> `zexuwurur vajul.`
+>
+> z-Azawan | d-book | v-write
+> z-←instrument-x-write | v-sit
+>
+> "Azawan writes a book. The implement sits."
+
+`zexuwurul` is a writing-implement (the **-l** sense of *write*). A book as a mere object, with no event, stays `dabogol`.
+
+**Compare with:** `zaxuwurul` is who writes; `zuxuwurul` is what is written. *Walks hastily* is ordinary [manner](core.md#adverbs-h) (`/h/`), not this vowel.
+
 ### The other party (`o`)
 
 Some stems name a **relation** (who is bound to whom), not an action. The extra person of that relation sits in `/b/`. To name that person from the relation stem (*the other party of the bond*), write **`o`** in the vowel slot. That named party is the **reltum**. (cue: **o** ≈ one (that other pole))
@@ -61,14 +78,15 @@ Some stems name a **relation** (who is bound to whom), not an action. The extra 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `…axROOT…` | names the doer of an event | *a fighter* / *the walker* | **a** ≈ add (add a doer) |
+| `…exROOT…` | names what the doer uses | *the hammer used* / *a fighting-implement* | **e** ≈ order (the means you order the event through) |
 | `…uxROOT…` | names the undergoer of an event | *the one seen* / *the one fought* | **u** ≈ undo (the one it happens to) |
 | `…oxROOT…` | names the extra `/b/` party of a relation | *the other party of the bond* | **o** ≈ one (that other pole) |
 
-**-r** looks back to the latest verb, event noun, or relation with that stem (including a stem already inside a role compound). The vowel still picks which part you mean: doer, undergoer, or other party.
+**-r** looks back to the latest verb, event noun, or relation with that stem (including a stem already inside a role compound). The vowel still picks which part you mean: doer, implement, undergoer, or other party.
 
 ### The event itself
 
-If you put the event stem on a thing letter with no role vowel (`duvugul`), you name the fight itself. Use **`ax`** or **`ux`** when you mean a person who fights or is fought.
+If you put the event stem on a thing letter with no role vowel (`duvugul`), you name the fight itself. Use **`ax`**, **`ex`**, or **`ux`** when you mean who fights, what they fight with, or who is fought.
 
 > `zazawan duvugul vejel.`
 >
@@ -80,13 +98,19 @@ If you put the event stem on a thing letter with no role vowel (`duvugul`), you 
 
 ### Saying someone is a fighter
 
-To say someone **is a kind** (*Azawan is a fighter*), put the same role stem on `/ɡ/`, as in [classification](predication.md#classification). **-m** hedges the role.
+To say someone **is a fighter**, put the same role stem on `/ɡ/`, as in [classification](predication.md#classification). The ending still picks the stem’s lexicon: **-l** *fighter*, **-m** *struggler*.
 
-> `zazawan gaxuvugum.`
+> `zazawan gaxuvugul.`
 >
 > z-Azawan | g-agent-x-fight
 >
-> "Azawan is a fighter, in a manner of speaking."
+> "Azawan is a fighter."
+
+> `zazawan gaxuvugum.`
+>
+> z-Azawan | g-agent-x-struggle
+>
+> "Azawan is a struggler."
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -103,31 +127,29 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
 | *construction-site* | `ononul` | |
-| *construct* | `vogonul` | `ogonul` *construct* |
-| *agent-x-building* | `zaxogonul` | `ogonul` *construct* |
+| *construct* | `ogonul` | |
+| *building* | `ogonum` | `ogonul` *construct* |
 | *hammer* | `ahamel` | |
-| *agent-x-hammer* | `zaxahamel` | `ahamel` *hammer* |
 | *helmet* | `ehemel` | |
 | *brick* | `urugul` | |
 | *see* | `vejel` | `ejel` *eye* |
 | *sit* | `vajul` | `ajul` *chair* |
 | *punch* | `ubunul` | |
-| *agent-x-force* | `zaxubunul` | `ubunul` *punch* |
 | *scream* | `azagal` | |
 | *fight* | `uvugul` | |
-| *bond* | `onogol` | `onogol` *knot* |
+| *bond* | `onogom` | `onogol` *knot* |
 
 #### English → Agalan
 
-**1.** *A builder sits.*
+**1.** *A constructor sits.*
 
 ::: details Show answer
 `zaxogonul vajul.`
 
-z-agent-x-building | v-sit
+z-agent-x-construct | v-sit
 :::
 
-**2.** *Azawan constructs. The builder sees a helmet.*
+**2.** *Azawan constructs. The constructor sees a helmet.*
 
 ::: details Show answer
 `zazawan vogonul. zaxogonur dehemel vejel.`
@@ -135,10 +157,10 @@ z-agent-x-building | v-sit
 z-Azawan | v-construct | z-←construct | d-helmet | v-see
 :::
 
-**3.** *Ululon hammers a brick. The hammerer sits.*
+**3.** *Ululon hammers a brick. The implement sits.*
 
 ::: details Show answer
-`zululon durugul vahamel. zaxahamer vajul.`
+`zululon durugul vahamel. zexahamer vajul.`
 
 z-Ululon | d-brick | v-hammer | z-←hammer | v-sit
 :::
@@ -151,7 +173,7 @@ z-Ululon | d-brick | v-hammer | z-←hammer | v-sit
 z-Azawan | z-Uhubun | v-see | z-←see | v-sit
 :::
 
-**5.** *Azawan is a builder, in a manner of speaking.*
+**5.** *Azawan is a builder.*
 
 ::: details Show answer
 `zazawan gaxogonum.`
@@ -185,13 +207,13 @@ z-Azawan | g-bond | b-Ululon | z-←bond | v-fight
 
 #### Agalan → English
 
-**1.** `zaxahamel vogonul.`
+**1.** `zululon durugul vahamel. zazawan dexahamer vejel.`
 
 ::: details Show answer
 
-z-agent-x-hammer | v-construct
+z-Ululon | d-brick | v-hammer | z-Azawan | d-←hammer | v-see
 
-*A hammerer constructs.*
+*Ululon hammers a brick. Azawan sees the implement.*
 :::
 
 **2.** `zuhubun zazawan vejel. zuxejer vajul.`
@@ -209,16 +231,16 @@ z-Uhubun | z-Azawan | v-see | z-←see | v-sit
 
 z-Ululon | v-construct | z-←construct | d-helmet | v-see
 
-*Ululon constructs. The builder sees a helmet.*
+*Ululon constructs. The constructor sees a helmet.*
 :::
 
 **4.** `zaxogonul vubunul.`
 
 ::: details Show answer
 
-z-agent-x-building | v-punch
+z-agent-x-construct | v-punch
 
-*A builder punches.*
+*A constructor punches.*
 :::
 
 **5.** `zululon dononul vejel.`

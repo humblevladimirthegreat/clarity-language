@@ -104,7 +104,6 @@ Source: [roles.md](../grammar/roles.md), [x-compounds.md](../grammar/x-compounds
 
 | Slot | Status |
 |------|--------|
-| ROLE vowel **`e`** | Reserved — ROLE is **`a` / `u` / `o`** only |
 | PoS `/v/` / `/h/` / `/w/` on role compounds | Undefined — prefer `/z/` `/d/` `/b/`; `/ɡ/` optional |
 
 ## Spans

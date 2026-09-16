@@ -100,8 +100,6 @@ describe("lintAgalanToken", () => {
     assert.equal(lintAgalanToken("when", tables), null);
     const illegal = lintAgalanToken("zolovex1l", tables);
     assert.equal(illegal?.kind, "parse");
-    const reserved = lintAgalanToken("zexadagal", tables);
-    assert.equal(reserved?.kind, "parse");
   });
 
   it("flags unknown content roots and unknown bare roots", () => {

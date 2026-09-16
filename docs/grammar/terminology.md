@@ -581,9 +581,9 @@ Prefix-less *including / rather / instead / except* (in-clause vs discourse by p
 
 [Revisers](revisers.md)
 
-### Role compound / agent / patient / reltum
+### Role compound / agent / instrument / patient / reltum
 
-`a/u/o x ROOT`.
+`a/e/u/o x ROOT`.
 
 [Roles](roles.md#role-compounds)
 

@@ -194,7 +194,7 @@ loose: *Who?*
 
 **B:** `zenenur. el zaxezeher.`
 
-gloss: `z-←someone` · `rather` · `z-agent-x-dialogue`
+gloss: `z-←someone` · `rather` · `z-agent-x-speech`
 
 strict: *That person. Rather: that speaker (agent of speech).*
 
@@ -266,7 +266,7 @@ loose: *So I'm saying you're happy.*
 
 **B:** `jaol zaxezeher gonunul bubur.`
 
-gloss: `j-uptake` · `z-agent-x-dialogue` · `g-SAME` · `b-←Ubunexunowen`
+gloss: `j-uptake` · `z-agent-x-speech` · `g-SAME` · `b-←Ubunexunowen`
 
 strict: *Sure — that speaker (agent of speech) is the same as me (B).*
 

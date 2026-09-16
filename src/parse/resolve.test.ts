@@ -121,6 +121,15 @@ describe("resolve — role anaphors (roles.md)", () => {
     assert.equal(role!.roleVowel, "a");
     assert.equal(role!.antecedent?.raw, "vozowol");
   });
+
+  it("binds zexahamer as instrument of the prior hammer verb", () => {
+    const { anaphors } = resolveOf("zazawan durugul vahamel. zexahamer vajul.");
+    const role = anaphors.find((a) => a.kind === "role");
+    assert.ok(role);
+    assert.equal(role!.pronoun.raw, "zexahamer");
+    assert.equal(role!.roleVowel, "e");
+    assert.equal(role!.antecedent?.raw, "vahamel");
+  });
 });
 
 describe("resolve — yes/no vs fill-ask (questions.md)", () => {

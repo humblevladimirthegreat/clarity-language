@@ -52,7 +52,10 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("zuzuzuxogovexadedan", "z-Uzuzu-x-Ogove-x-Adedan");
     expectLine("vawalaxel", "v-walk-unable-temporary");
     expectLine("holozoxem", "h-competence-ought-endorse");
-    expectLine("zaxezeher", "z-agent-x-dialogue");
+    expectLine("zaxezeher", "z-agent-x-speech");
+    expectLine("zaxuvugul", "z-agent-x-fight");
+    expectLine("zaxuvugum", "z-agent-x-struggle");
+    expectLine("zexahamel", "z-instrument-x-hammer");
     expectLine("hexal", "h-aside-x-multi");
     expectLine("xuxul", "x-span-close");
     expectLine("x#e-", "x-starting-with");

@@ -178,6 +178,7 @@ const GREETING_STANCE: Record<string, string> = {
 
 const ROLE_VOWEL: Record<string, string> = {
   a: "agent",
+  e: "instrument",
   u: "patient",
   o: "reltum",
 };
@@ -885,7 +886,7 @@ function xPieces(word: LexWord, tables: ClassifyTables): string[] {
   if (family.xFamily === "role") {
     const role = ROLE_VOWEL[family.roleVowel ?? ""] ?? "role";
     const host = (family.rightRoots ?? []).map((root) =>
-      rootSense(root, word.ending === "n" ? "n" : "m", tables, {
+      rootSense(root, word.ending, tables, {
         named: word.ending === "n",
         pos: word.pos,
       }),

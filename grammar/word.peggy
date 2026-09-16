@@ -499,7 +499,7 @@ SpanOpen
     }
 
 RoleCompound
-  = roleV:("a" / "u" / "o") "x" root:ContentRoot ending:Ending plural:PluralSuffix? WordEnd {
+  = roleV:("a" / "e" / "u" / "o") "x" root:ContentRoot ending:Ending plural:PluralSuffix? WordEnd {
       return {
         ending,
         plural: !!plural,
