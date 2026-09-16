@@ -37,7 +37,7 @@ Closed psychological `/h/` (and `/ɡ/` on causal poles; not ordinary [adverb](#a
 | **ONLY-IF** | Clause-pole **`ebero`** (*only if* / *needs*) | [Causation](causation.md#only-if) |
 | **PATTERN** | Evidential: from regularity | [Commentary](commentary.md#evidentiality) |
 | **PLAN** | Intention-framing mood **`owora`** | [Plan / decision](plan-decision.md#plan-predict) |
-| **PREDICT** | Forecast-framing mood **`elezo`** | [Plan / decision](plan-decision.md#plan-predict) |
+| **PREDICT** | Later-event forecast mood **`elezo`** | [Plan / decision](plan-decision.md#predict) |
 | **RECORDED** | Evidential: documented / playback | [Commentary](commentary.md#evidentiality) |
 | **RULE** | Universality: holds inside a named frame | [Special vocabulary](special-vocabulary.md#universality) |
 | **SAME** | Identity copula **`onunu`** | [Predication](predication.md#identity) |

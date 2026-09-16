@@ -227,7 +227,7 @@ z-Uhubun | h-MAY | v-cry
 
 English often says *how you know* a claim (*I saw it*, *I heard*, *I figured*). Agalan keeps the ordinary content verb and adds a closed `/h/` mood word. That word is the **channel** the claim came through, so the same walk or sleep can sit under a live look, memory, a recording, a pattern of cases, clues, hearsay, a gut sense, or a tale.
 
-Verbs have **no past or future letter**. Some channels already locate the event because of how you know: **LIVE** is watching while the scene is still in view; **WITNESSED** is memory of watching; **RECORDED** is playback of a capture. [PREDICT](plan-decision.md#predict) / [PLAN](plan-decision.md#plan-predict) look ahead. Other evidentials do not move the event; add a when-frame ([*before* / *after* / *while*](core.md#dependent-clauses), a clock or date, recency) when inference or hearsay needs a different time than this stretch.
+Verbs have **no past or future letter**. Some channels already locate the event because of how you know: **LIVE** is watching while the scene is still in view; **WITNESSED** is memory of watching; **RECORDED** is playback of a capture. [PREDICT](plan-decision.md#predict) / [PLAN](plan-decision.md#plan-predict) look ahead (the event is later). Other evidentials do not move the event; add a when-frame ([*before* / *after* / *while*](core.md#dependent-clauses), a clock or date, recency) when inference or hearsay needs a different time than this stretch.
 
 > `zazawan hadezem vawalal.`
 >

@@ -1,7 +1,7 @@
 # Plan, predict, and decision
 <a id="plan-decision"></a>
 
-English *will* and *going to* can mean **intention** (the course someone means to take) or a **forecast** (what you think will happen in the world). Agalan splits those into two closed mood words: special `/h/` words that frame the whole clause rather than naming a need. Put the mood word first (floating `/h/`), then write an ordinary content verb.
+English *will* and *going to* can mean **intention** (the course someone means to take) or a **forecast** (what you think will happen later in the world). Agalan splits those into two closed mood words: special `/h/` words that frame the whole clause rather than naming a need. Put the mood word first (floating `/h/`), then write an ordinary content verb. You can't actually know the future, so this distinction helps you be more rational about claiming what is going to happen.
 
 ## Beginner
 <a id="beginner"></a>
@@ -48,15 +48,15 @@ Saying *I will* in English can hide whether you only intend a heading, you have 
 ### Predict
 <a id="predict"></a>
 
-To say **what will happen** in the world (rain, a result), not what someone means to do, use the closed mood root **`elezo`**. Spell it as floating `/h/`: **`helezo`** plus an ending, then an ordinary content verb. Prefer **`helezom`** when you are not adding more. (cue: 🔭 *telescope*: looks ahead at a distance)
+To say **what will happen later** in the world (rain, a result), not what someone means to do, use the closed mood root **`elezo`**. Spell it as floating `/h/`: **`helezo`** plus an ending, then an ordinary content verb. Prefer **`helezom`** when you are not adding more. The event is always **after now**. A guess about something already true that you cannot see (where someone is, which card) is not this mood. (cue: 🔭 *telescope*: looks ahead at a distance)
 
 > `helezom vanunul.`
 >
 > h-predict | v-rain
 >
-> "I predict rain."
+> "I predict it will rain."
 
-**Compare with:** English *will* as *intends to …* / *plans to …* uses [PLAN](#plan-predict) (`howoram` / `howoral` / `howorar`). PREDICT is the world forecast, not someone’s course.
+**Compare with:** English *will* as *intends to …* / *plans to …* uses [PLAN](#plan-predict) (`howoram` / `howoral` / `howorar`). PREDICT is a later world forecast, not someone’s course.
 
 ### Translation practice
 <a id="translation-practice"></a>
@@ -106,7 +106,7 @@ z-Ululon | h-plan-sketch | d-pawn | v-see
 z-Azawan | h-plan-itinerary | d-Uhubun | v-tell
 :::
 
-**4.** *I predict Azawan sits.*
+**4.** *I predict Azawan will sit.*
 
 ::: details Show answer
 `zazawan helezom vajul.`
@@ -130,7 +130,7 @@ z-Uhubun | h-plan-itinerary | d-Azawan | v-see
 z-Ululon | h-plan-atlas | d-Azawan | v-punch
 :::
 
-**7.** *I predict Ululon screams.*
+**7.** *I predict Ululon will scream.*
 
 ::: details Show answer
 `zululon helezom vazagal.`
@@ -181,7 +181,7 @@ z-Uhubun | h-plan-itinerary | d-Azawan | v-tell
 
 h-predict | v-sit
 
-*I predict someone sits.*
+*I predict someone will sit.*
 :::
 
 **5.** `zazawan howoram duhubun vezehel.`
@@ -217,7 +217,7 @@ z-Uhubun | h-plan-atlas | v-scream
 
 h-predict | v-fight
 
-*I predict someone fights.*
+*I predict someone will fight.*
 :::
 
 ## Intermediate
@@ -261,15 +261,15 @@ You can stack this mood after [PLAN](#plan-predict) when the clause needs both m
 ### Forecast source
 <a id="predict-evidentiality"></a>
 
-When you mark **how** you forecast (a usual pattern, an inference, and so on), keep [PREDICT](#predict) and add an ordinary [evidentiality](commentary.md#evidentiality) `/h/` after it. The forecast mood still says what will happen in the world; the evidential says how you know.
+When you mark **how** you forecast (a usual pattern, an inference, and so on), keep [PREDICT](#predict) and add an ordinary [evidentiality](commentary.md#evidentiality) `/h/` after it. The forecast mood still says what **will** happen later; the evidential says how you know.
 
 > `helezom habawam vanunul.`
 >
 > h-predict | h-PATTERN | v-rain
 >
-> "From the usual pattern, I predict rain."
+> "From the usual pattern, I predict it will rain."
 
-**Compare with:** a pattern or [LIVE](commentary.md#live-vs-memory) claim about *this stretch* uses [evidentiality](commentary.md#evidentiality) on the content verb alone (**`hadezem`** if you are observing it now; **`huvuvum`** if you remember observing it). Add **PREDICT** when the claim is a world forecast.
+**Compare with:** a pattern or [LIVE](commentary.md#live-vs-memory) claim about *this stretch* uses [evidentiality](commentary.md#evidentiality) on the content verb alone (**`hadezem`** if you are observing it now; **`huvuvum`** if you remember observing it). Add **PREDICT** when the claim is a **later** world forecast, not a guess about what is already so.
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -325,7 +325,7 @@ z-Azawan | h-DECISION-modifiable | d-Uhubun | v-tell
 z-Uhubun | h-DECISION-temporary | v-write
 :::
 
-**4.** *From the usual pattern, I predict Ululon sits.*
+**4.** *From the usual pattern, I predict Ululon will sit.*
 
 ::: details Show answer
 `zululon helezom habawam vajul.`
@@ -391,7 +391,7 @@ z-Ululon | h-DECISION-irreversible | v-write
 
 h-predict | h-PATTERN | v-tell
 
-*From the usual pattern, I predict someone tells.*
+*From the usual pattern, I predict someone will tell.*
 :::
 
 **4.** `zuhubun hegeger vajul.`
