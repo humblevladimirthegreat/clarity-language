@@ -107,7 +107,7 @@ English *a pair of…*, *three-part…*, *primary…* can name **how many parts 
 |--------|-----|---------|------|-------------------|
 | **`ROOTx+1`** | unit / primary / singleton | `zegeruxrawol`: *a single / primary voice*; SI measure nouns use published unit metaphors instead ([measure phrases](numbers-applied.md#measure-phrases)) | `zegeruxruwol` | *an indistinct / non-singular voice* |
 | **`ROOTx+2`** | dual / mutual / reciprocal / pair | `gabenexradul`: *mutual commitment* | `gabenexrudul` | *one-sided commitment* |
-| **`ROOTx+3`** | triad / triplet / 3-part / ternary | `zezehexrarel`: *a three-part dialogue* | `zazuduxrurel` | *non-tripartite institution* |
+| **`ROOTx+3`** | triad / triplet / 3-part / ternary | `zezehexrarel`: *a three-part dialogue* | `zolonaxrurel` | *non-tripartite institution* |
 | **`ROOTx+4`** | quad / 4-part / square / frame | `zujuduxramol`: *a four-part / framed judgment* | `zemamuxrumol` | *an unframed message* |
 | **`ROOTx+5`** | hand / pentad / agency-set | `zolozoxraval`: *a handy / five-fold toolkit* | `zemabaxruval` | *a plan without practical grasp* |
 | **`ROOTx+6`** | hex / 6-part / honeycomb / pack | `zavagaxragul`: *a hexagonal / six-pack product* | `zahadaxrugul` | *an unpacked team* |
@@ -125,11 +125,11 @@ English *a pair of…*, *three-part…*, *primary…* can name **how many parts 
 
 | PoS | `…x+0` | `…x-0` | Examples |
 |-----|--------|--------|----------|
-| **`/z/` `/d/` `/b/`** (noun) | emptied / wiped instance | entity that won’t zero / stubborn residue | `zomomexrazol`: *a wiped debt*; `zomomexruzol`: *a debt that won’t zero*; `duvuvuxruzol`: *that memory that won’t blank*; `bodoboxruzol`: non-null residue as argument |
+| **`/z/` `/d/` `/b/`** (noun) | emptied / wiped instance | entity that won’t zero / stubborn residue | `zonenoxrazol`: *a wiped debt*; `zonenoxruzol`: *a debt that won’t zero*; `duvuvuxruzol`: *that memory that won’t blank*; `bodoboxruzol`: non-null residue as argument |
 | **`/v/`** (verb) | act of nulling / resetting | act that refuses null / keeps residual | `vodoboxrazol`: *to null the score*; `vodoboxruzol`: *to anti-null / refuse to zero the score*; `vezewexrazol`: *to zero effort*; `vezewexruzol`: *to leave effort unzeroable* |
 | **`/ɡ/`** (adjective) | null / reset (ascribed) | non-emptyable / residual (ascribed) | `godoboxrazol`: *null / reset*; `godoboxruzol`: *won’t-null / residual*; `gozedexruzom`: *hope that won’t go to zero* (vs `gozedexrubam` *void of hope*) |
 | **`/h/`** (adverb) | clause framed as reset / zeroed | clause framed as irreducible residue | `hezewexrazom`: *with effort zeroed*; `hezewexruzom`: *with irreducible effort* / *despite any zeroing* |
-| **`/w/`** (adjunct) | host `/ɡ/` graded toward null | host `/ɡ/` graded toward anti-null | `gomomel womomexrazol`: *debt (ascribed) zeroed*; `gomomel womomexruzol`: *debt whose balance is anti-null* |
+| **`/w/`** (adjunct) | host `/ɡ/` graded toward null | host `/ɡ/` graded toward anti-null | `gonenol wonenoxrazol`: *debt (ascribed) zeroed*; `gonenol wonenoxruzol`: *debt whose balance is anti-null* |
 | **`/j/`** (interjection) | discourse *Zero it!* / *Null!* | discourse *Won’t zero!* / *Residue stands!* | `jodoboxrazol`; `jodoboxruzol` |
 
 **Related form:** a stronger wipe of the kind is [total null](#zero-exponent-derivation) **`ROOTx+0e`**. Hostless *annihilate* is free **`v+0el`**.
@@ -143,12 +143,12 @@ The same zero×exponent stems as free [zero × exponent](numbers.md#zero-exponen
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| **`ROOTx+0e`** | total null / absolute wipe of the kind | `vodoboxrazobal`: *annihilate the score* (kind); `zomomexrazobal`: *a totally wiped debt-kind* |
-| **`ROOTx+0e-`** | sterile / null grain of ROOT | `zozedexrazobum`: *sterile hope*; `zereguxrazobul`: *registration with no seed* |
+| **`ROOTx+0e`** | total null / absolute wipe of the kind | `vodoboxrazobal`: *annihilate the score* (kind); `zonenoxrazobal`: *a totally wiped debt-kind* |
+| **`ROOTx+0e-`** | sterile / null grain of ROOT | `zozedexrazobum`: *sterile hope*; `zeguzexrazobul`: *registration with no seed* |
 | **`ROOTx+0e-1`** | engineering null at order of magnitude −1 of ROOT: kind wiped at scale 10⁻¹ | `zuzebuxrabuwojazol`: *deci-null problem*; `vodoboxrabuwojazol`: *null the score at deci scale* |
-| **`ROOTx-0e`** | absolute residue of ROOT | `zomomexruzobal`: *debt as absolute residue*; `vezewexruzobal`: *leave effort as absolute residue* |
+| **`ROOTx-0e`** | absolute residue of ROOT | `zonenoxruzobal`: *debt as absolute residue*; `vezewexruzobal`: *leave effort as absolute residue* |
 | **`ROOTx-0e-`** | micro-residue of ROOT | `zuvuvuxruzobul`: *memory as micro-residue* |
-| **`ROOTx-0e-1`** | engineering residue at order of magnitude −1 of ROOT | `zomomexrubuwojazol`: *debt as deci-scale residue* |
+| **`ROOTx-0e-1`** | engineering residue at order of magnitude −1 of ROOT | `zonenoxrubuwojazol`: *debt as deci-scale residue* |
 
 The **host ending** marks soft / named / resume.
 
@@ -160,11 +160,11 @@ On free numbers, **`±0e-1`** is scalar anatomy; on ROOT the same stems are kind
 
 | PoS | `…x+0e` | Examples |
 |-----|---------|----------|
-| **`/z/` `/d/` `/b/`** | totally wiped / annihilated kind | `zomomexrazobal` |
+| **`/z/` `/d/` `/b/`** | totally wiped / annihilated kind | `zonenoxrazobal` |
 | **`/v/`** | annihilate that kind | `vodoboxrazobal` |
 | **`/ɡ/`** | ascribed total-null | `gozedexrazobam` |
 | **`/h/`** | clause framed as total wipe | `hezewexrazobam` |
-| **`/w/`** | host graded toward total null | `gomomel womomexrazobal` |
+| **`/w/`** | host graded toward total null | `gonenol wonenoxrazobal` |
 | **`/j/`** | *Annihilate that kind!* | `jodoboxrazobal` |
 
 **`-0e` / `-0e-` / `±0e-1`** inherit the same role-letter framing (absolute residue / micro-residue / engineering null·residue at order of magnitude −1). Free twins: **`v+0el`** *annihilate*; **`g+0e`** absolute-zero amount; **`g+0e-1`** / **`g-0e-1`** engineering null / residue: [numbers.md § Zero × exponent](numbers.md#zero-exponent).
@@ -242,7 +242,7 @@ Digitless **`_`** is **catalog topology**, not magnitude. Label ∞ means *the n
 | **`ROOTx_e`** | open / unbounded catalog: ∞-tagged, open ID space, any code in an unbounded ledger | `zugedexrobal`: *open-ended ticket ID* / *∞-catalogued ticket* |
 | **`ROOTx_e-`** | proto-label / unassigned slot: pre-code, atomic empty tag | `zugedexrobul`: *unassigned ticket slot* |
 | **`ROOTx_1e`** | comic gazillion-coded / umpteen-SKU | `zavagaxrowobal`: *a gazillion-SKU product* |
-| **`ROOTx_1e-`** | comic gazillionth-of-a-code / vanishing ID | `zereguxrowobul`: *a vanishingly coded registration* |
+| **`ROOTx_1e-`** | comic gazillionth-of-a-code / vanishing ID | `zeguzexrowobul`: *a vanishingly coded registration* |
 
 ###### Infinite label by PoS
 
@@ -265,7 +265,7 @@ Mantissa (the digit before the unbounded exponent) plus digitless exp is **comic
 | **`ROOTx+1e-`** | *gazillionth-ROOT* (comic tiny) | `zameduxrawobum`: *a gazillionth-of-a-chance* |
 | **`ROOTx#1e`** | *umpteenth-ROOT* (comic late rank) | `zugumuxrewobal`: *an umpteenth attempt* (as a kind) |
 | **`ROOTx_1e`** | *gazillion-coded ROOT* (comic SKU sprawl) | `zavagaxrowobal`: *a gazillion-SKU product* |
-| **`ROOTx_1e-`** | *gazillionth-of-a-code ROOT* (vanishing ID) | `zereguxrowobul`: *a vanishingly coded registration* |
+| **`ROOTx_1e-`** | *gazillionth-of-a-code ROOT* (vanishing ID) | `zeguzexrowobul`: *a vanishingly coded registration* |
 
 Free **`h#1e`** = *for the gazillionth time* (clause adverb). Derived **`zahaxrewobal`** = *an umpteenth co-participation* (noun kind).
 

@@ -21,13 +21,13 @@ The same string is also the noun plus its adjective: `zazawan gomonam` is both t
 
 A nationality or tradition uses the published metaphor on `/ɡ/` (**-m**), not a proper **-n**:
 
-> `zazawan gajanam.`
+> `zazawan gajabam.`
 >
 > z-Azawan | g-japanese
 >
 > "Azawan is Japanese."
 
-Demonyms stay on **-m** (`gajanam`). **-n** is a name, not “the Japanese people as a titled category.”
+Demonyms stay on **-m** (`gajabam`). **-n** is a name, not “the Japanese people as a titled category.”
 
 ### Kind / role
 <a id="classification"></a>
@@ -83,12 +83,12 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *guard* | `ugugal` |
 | *police* | `obolul` |
 | *person* | `eberel` |
-| *page* | `ajel` |
+| *page* | `ababel` |
 | *fingerprint* | `uvunul` |
 | *camera* | `ameral` |
 | *blue* | `elulul` |
 | *red* | `aredel` |
-| *Japanese* | `ajanam` |
+| *Japanese* | `ajabam` |
 | *challenge* | `omonam` |
 | **SAME** | `onunul` |
 | *walk* | `vawalal` |
@@ -107,7 +107,7 @@ z-Azawan | g-guard
 **2.** *The page is blue.*
 
 ::: details Show answer
-`zajel gelulul.`
+`zababel gelulul.`
 
 z-page | g-blue
 :::
@@ -115,7 +115,7 @@ z-page | g-blue
 **3.** *Uhubun is Japanese.*
 
 ::: details Show answer
-`zuhubun gajanam.`
+`zuhubun gajabam.`
 
 z-Uhubun | g-japanese
 :::
@@ -180,7 +180,7 @@ z-Azawan | g-police
 *Azawan is a police officer.*
 :::
 
-**3.** `zajel garedel.`
+**3.** `zababel garedel.`
 
 ::: details Show answer
 

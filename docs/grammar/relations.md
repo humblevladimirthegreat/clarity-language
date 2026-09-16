@@ -93,7 +93,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *book* | `abogol` | | |
 | *hammer* | `ahamel` | | |
 | *duck* | `udugul` | | |
-| *money* | `omomel` | | |
+| *money* | `onenol` | | |
 | *write* | `vuwurul` | `uwurul` *write* | ✍️: putting words on the page |
 | *walk* | `vawalal` | | |
 | *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
@@ -114,7 +114,7 @@ z-Azawan | h-like | b-duck | v-walk
 **2.** *Azawan writes in exchange for money.*
 
 ::: details Show answer
-`zazawan vuwurul huhanem bomomel.`
+`zazawan vuwurul huhanem bonenol.`
 
 z-Azawan | v-write | h-in-exchange-for | b-money
 :::
@@ -147,7 +147,7 @@ z-Azawan | h-like | b-duck | v-walk
 *Azawan walks like a duck.*
 :::
 
-**3.** `zululon vuwurul huhanem bomomel.`
+**3.** `zululon vuwurul huhanem bonenol.`
 
 ::: details Show answer
 
@@ -178,7 +178,7 @@ Intermediate sections assume you have read the beginner sections of every page.
 
 Everyday *in* / *on* / *at* / *from* / *toward* / *through* / *out of* are [extra-noun hooks](hooks.md#extra-noun-intermediate). Several hooks on one clause are several extras (*from* one landmark *toward* another). Write the **source** first, then the **goal**.
 
-> `zazawan ul bazadol vawalal oel budunul.`
+> `zazawan ul bazadol vawalal oel badadul.`
 >
 > z-Azawan | from | b-station | v-walk | toward | b-train
 >
@@ -190,7 +190,7 @@ Everyday *in* / *on* / *at* / *from* / *toward* / *through* / *out of* are [extr
 >
 > "Azawan walks from a house to a station."
 
-> `zululon ual bohohul vurunul al budunul.`
+> `zululon ual bohohul vurunul al badadul.`
 >
 > z-Ululon | out-of | b-house | v-run | in | b-train
 >
@@ -206,19 +206,19 @@ Everyday *in* / *on* / *at* / *from* / *toward* / *through* / *out of* are [extr
 
 <a id="spatial-path"></a>
 
-*Between* still needs a **root**: the figure sits in the layer of **two** landmarks. Keep hosted **`hazadum`** (or **`gazadum`** on a noun) and put both landmarks as a [join](joins.md) in `/b/`. (cue: 🥪 *sandwich*: the filling sits between two sides)
+*Between* still needs a **root**: the figure sits in the layer of **two** landmarks. Keep hosted **`hazanum`** (or **`gazanum`** on a noun) and put both landmarks as a [join](joins.md) in `/b/`. (cue: 🥪 *sandwich*: the filling sits between two sides)
 
-> `zululon vajul hazadum budunul bazadol bal.`
+> `zululon vajul hazanum badadul bazadol bal.`
 >
 > z-Ululon | v-sit | h-between | b-train | b-station | b-and
 >
 > "Ululon sits between a train and a station."
 
-Ordinary `zazadul` is still *a sandwich*. Ordinary `vebarul` is still *to depart*.
+Ordinary `zazanul` is still *a sandwich*. Ordinary `vebarul` is still *to depart*.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`hazadum` / `gazadum`** | figure in the layer of two landmarks | *between* | `azadul` *sandwich* | 🥪: the filling sits between two sides |
+| **`hazanum` / `gazanum`** | figure in the layer of two landmarks | *between* | `azanul` *sandwich* | 🥪: the filling sits between two sides |
 
 **Compare with:** unhosted `/b/` is still the recipient. Numeric *from 3 to 5* is a [range](numbers-applied.md#ranges). *Like* is [simile](#similative). *For a hammer* as a swap is [exchange](#exchange). *On behalf of Ululon* is [proxy](#proxy). *So that Ululon sits* is [so that](dependents.md#so-that) (`holalam`). English *of* that is not a place is [of relations](#of-relations).
 
@@ -246,13 +246,13 @@ English *of* also names how one noun sits toward another (*a hand of Ululon*, *a
 >
 > "Azawan sees a house of wood."
 
-> `zululon gajabam bugudol vawalal.`
+> `zululon gugunom bolunel vawalal.`
 >
-> z-Ululon | g-origin | b-cityscape | v-walk
+> z-Ululon | g-origin | b-skyline | v-walk
 >
 > "Ululon of the city walks."
 
-On an event, the same roots are `/h/` (`zazawan vagara howodom bowodol` *Azawan crafts of wood*; `zululon vawalal hajabam bugudol` *Ululon walks, originating from the city*). The same roots stay ordinary pictures under other letters (`zobonel` *a bone*; `zajaral` *a jar*; `zowodol` *wood*; `zajabal` *a japan-map*).
+On an event, the same roots are `/h/` (`zazawan vagara howodom bowodol` *Azawan crafts of wood*; `zululon vawalal hugunom bolunel` *Ululon walks, originating from the city*). The same roots stay ordinary pictures under other letters (`zobonel` *a bone*; `zajaral` *a jar*; `zowodol` *wood*; `zugunol` *a country*).
 
 Do not flip the pair: *tea of the teapot* (tea that sits in that pot) is locative *inside*, not `gajaram`.
 
@@ -261,7 +261,7 @@ Do not flip the pair: *tea of the teapot* (tea that sits in that pot) is locativ
 | **`hobonem` / `gobonem`** | constitutive piece | *part of* | `obonel` *bone* | 🦴: the piece that holds the body’s shape |
 | **`hajaram` / `gajaram`** | filling of a vessel | *contents of* | `ajaral` *jar* | 🫙: the vessel named by what it stores |
 | **`howodom` / `gowodom`** | constitution | *made of* | `owodol` *wood* | 🪵: the stuff the thing is made of |
-| **`hajabam` / `gajabam`** | identity source / provenance | *from* (origin) | `ajabal` *japan-map* | 🗾: one land’s map as where it comes from |
+| **`hugunom` / `gugunom`** | identity source / provenance | *from* (origin) | `ugunol` *country* | 🗾: a map of one country as where it comes from |
 
 **Compare with:** ownership is `goborul` + `/b/` ([joins](joins.md#scope-fence-p-join)). Place *inside* is `ogore`; path *from* is `ebaru` ([locative relations](#locative-relations)). *A house like Azawan’s* is [simile](#similative) (`gurorom`), not *made of*. *A book for a hammer* as a swap is [exchange](#exchange) (`guhanem`). Portion *of* a class is [percent](numbers-applied.md#percent-denominators). Associates are plural **-x**, not meronymy. Kind *origin* (`ROOTx#e-`) is [numeric derivation](numeric-derivation.md), not this token *from*.
 
@@ -281,15 +281,15 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` |
 | *Ululon* | `ululon` |
 | *Uhubun* | `uhubun` |
-| *train* | `udunul` |
+| *train* | `adadul` |
 | *station* | `azadol` |
 | *chair* | `ajul` |
 | *house* | `ohohul` |
 | *sit* | `vajul` |
-| *stand* | `vazanul` |
+| *stand* | `vadanal` |
 | *walk* | `vawalal` |
 | *run* | `vurunul` |
-| *between* | `hazadum` |
+| *between* | `hazanum` |
 
 #### English → Agalan
 
@@ -304,7 +304,7 @@ z-Azawan | v-sit | on | b-chair
 **2.** *Ululon walks from a station toward a train.*
 
 ::: details Show answer
-`zululon ul bazadol vawalal oel budunul.`
+`zululon ul bazadol vawalal oel badadul.`
 
 z-Ululon | from | b-station | v-walk | toward | b-train
 :::
@@ -312,7 +312,7 @@ z-Ululon | from | b-station | v-walk | toward | b-train
 **3.** *Uhubun sits between a train and a station.*
 
 ::: details Show answer
-`zuhubun vajul hazadum budunul bazadol bal.`
+`zuhubun vajul hazanum badadul bazadol bal.`
 
 z-Uhubun | v-sit | h-between | b-train | b-station | b-and
 :::
@@ -320,14 +320,14 @@ z-Uhubun | v-sit | h-between | b-train | b-station | b-and
 **4.** *Azawan runs out of a house into a train.*
 
 ::: details Show answer
-`zazawan ual bohohul vurunul al budunul.`
+`zazawan ual bohohul vurunul al badadul.`
 
 z-Azawan | out-of | b-house | v-run | in | b-train
 :::
 
 #### Agalan → English
 
-**1.** `zuhubun vazanul ol bazadol.`
+**1.** `zuhubun vadanal ol bazadol.`
 
 ::: details Show answer
 
@@ -336,7 +336,7 @@ z-Uhubun | v-stand | at | b-station
 *Uhubun stands at a station.*
 :::
 
-**2.** `zazawan vurunul ual budunul.`
+**2.** `zazawan vurunul ual badadul.`
 
 ::: details Show answer
 
@@ -354,7 +354,7 @@ z-Ululon | v-walk | through | b-station
 *Ululon walks through a station.*
 :::
 
-**4.** `zululon ul bazadol vawalal ol budunul.`
+**4.** `zululon ul bazadol vawalal ol badadul.`
 
 ::: details Show answer
 

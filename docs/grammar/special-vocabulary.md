@@ -11,7 +11,7 @@ Compose opaque emotion labels from value plus arousal plus locus, number brainst
 
 When an English emotion word (*anxious*, *resentful*, *proud*) is doing **judgment or explanation** work, name three pieces instead of one opaque label: a [value](values.md) on the situation, how activated the charge is, and where you put it. Put the value on `/ɡ/` after the situation noun, then **one ACT** and **one LOCUS** as `/h/` (or `/w/` on that adjective). You can then say the take without smuggling a single emotion word.
 
-> `zezehel golozoxur hararem hanedem.`
+> `zezehel golozoxur heregem hanedem.`
 >
 > z-speech | g-competence-unmet-temporary | h-HIGH | h-CIRCUM
 >
@@ -21,28 +21,28 @@ Affect is **water**. **ACT** is tide dynamics (how much / how fast). **LOCUS** i
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`hararem`** | HIGH arousal | *flood / surge* | `ararel` *breaker* | 🌊: water in surge |
+| **`heregem`** | HIGH arousal | *flood / surge* | `eregel` *breaker* | 🌊: water in surge |
 | **`hejelom`** | MED arousal | *flow / drift* | `ejelol` *jellyfish* | 🪼: drifts with the current |
 | **`hozowom`** | LOW arousal | *stillness / slack* | `ozowol` *snow* | 🌨️: the landscape goes quiet |
 | **`habobom`** | INTERNAL locus | *held inside* | `abobol` *baby-bottle* | 🍼: liquid stays in the vessel |
 | **`horurum`** | EXTERNAL locus | *directed at other people* | `orurul` *pour* | 🫗: liquid goes onto someone else |
 | **`hanedem`** | CIRCUM locus | *on the situation* (shared / ambient field) | `anedel` *candle* | 🕯️: light fills the room |
 
-Under `/z/` or `/v/` the ordinary noun or verb uses the published literal ending (`zararel` *an ocean wave*; `vorurul` *to pour*). The compose reading is the floating `/h/` (or `/w/`) **overlay** on **-m**.
+Under `/z/` or `/v/` the ordinary noun or verb uses the published literal ending (`zeregel` *a breaker*; `vorurul` *to pour*). The compose reading is the floating `/h/` (or `/w/`) **overlay** on **-m**.
 
 **EXTERNAL** is one root (`oruru`). Scale the transfer with ACT. INTERNAL and CIRCUM combine the same way; CIRCUM is a shared field.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`hararem`** + **`horurum`** | HIGH × EXTERNAL | *poured / surged onto them* | `ararel` *breaker* · `orurul` *pour* | 🌊 onto 🫗: flood directed at them |
+| **`heregem`** + **`horurum`** | HIGH × EXTERNAL | *poured / surged onto them* | `eregel` *breaker* · `orurul` *pour* | 🌊 onto 🫗: flood directed at them |
 | **`hejelom`** + **`horurum`** | MED × EXTERNAL | *flowing toward them* | `ejelol` *jellyfish* · `orurul` *pour* | 🪼 toward 🫗: drift aimed at them |
 | **`hozowom`** + **`horurum`** | LOW × EXTERNAL | *pooling at them* | `ozowol` *snow* · `orurul` *pour* | 🌨️ at 🫗: slack water settled at their locus |
 
 | Agalan | English |
 |---------|---------|
-| `zezehel golozoxur hararem hanedem` | *anxious about the dialogue* (competence at stake, temporary; flood; room awash) |
-| `zezawam gonogoxum hararem horurum` | *resentful about the division* (unmet relatedness; flood poured onto them) |
-| `zebegum golozoxam hararem habobom` | *proud of the draft* (met competence, mental channel; flood bottled) |
+| `zezehel golozoxur heregem hanedem` | *anxious about the dialogue* (competence at stake, temporary; flood; room awash) |
+| `zezawam gonogoxum heregem horurum` | *resentful about the division* (unmet relatedness; flood poured onto them) |
+| `zebegum golozoxam heregem habobom` | *proud of the draft* (met competence, mental channel; flood bottled) |
 | `zememol gonogoxum hozowom horurum` | *resentful about the memo* (unmet relatedness; stillness pooling at them) |
 
 Raw feeling (contacting a sensation without judgment) may go unlabeled. Full compose is for when an emotion word would have done evaluative work.
@@ -78,7 +78,7 @@ Unnumbered `zuzebum` is just *a problem*, not a candidate in a set — write **`
 ### Sense-form overlays
 <a id="sense-form"></a>
 
-Emotion compose already used **`hararem`** (HIGH arousal) next to **`zararel`** (*an ocean wave*). Some published roots keep a **fixed special reading** under one part of speech: spell that published root plus [reference ending](reference-suffix.md); the PoS chooses the overlay. Emotion ACT / LOCUS in the examples above take overlay **-m**. Overlay `sense_form` is **root + ending** (or a vowel-series join stem), not a productive mid-word **`x`** word. Each overlay row has **`kind`** and **`gloss`**. Place *between* is the leftover locative overlay on `/h/` and `/ɡ/` ([locative relations](relations.md#locative-relations)). Everyday *in* / *at* / *on* are extra-noun [hooks](hooks.md#extra-noun). Noun *of* relations (*part of*, *contents*, *made of*, origin *from*) are the same class ([of relations](relations.md#of-relations)). Simile *like* is the same class ([simile](relations.md#similative)). Exchange *in exchange for* is the same class ([exchange](relations.md#exchange)). Proxy *on behalf of* is the same class ([proxy](relations.md#proxy)). Event purpose *so that* is the same hosted pair ([so that](dependents.md#so-that) **`holalam`**).
+Emotion compose already used **`heregem`** (HIGH arousal) next to **`zeregel`** (*a breaker*). Some published roots keep a **fixed special reading** under one part of speech: spell that published root plus [reference ending](reference-suffix.md); the PoS chooses the overlay. Emotion ACT / LOCUS in the examples above take overlay **-m**. Overlay `sense_form` is **root + ending** (or a vowel-series join stem), not a productive mid-word **`x`** word. Each overlay row has **`kind`** and **`gloss`**. Place *between* is the leftover locative overlay on `/h/` and `/ɡ/` ([locative relations](relations.md#locative-relations)). Everyday *in* / *at* / *on* are extra-noun [hooks](hooks.md#extra-noun). Noun *of* relations (*part of*, *contents*, *made of*, origin *from*) are the same class ([of relations](relations.md#of-relations)). Simile *like* is the same class ([simile](relations.md#similative)). Exchange *in exchange for* is the same class ([exchange](relations.md#exchange)). Proxy *on behalf of* is the same class ([proxy](relations.md#proxy)). Event purpose *so that* is the same hosted pair ([so that](dependents.md#so-that) **`holalam`**).
 
 ### Translation practice
 <a id="translation-practice-intermediate"></a>
@@ -102,7 +102,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *fireworks* | `urewol` | | |
 | *hug* | `uhugul` | | |
 | *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
-| *HIGH* | `hararem` | `ararel` *breaker* | 🌊: water in surge |
+| *HIGH* | `heregem` | `eregel` *breaker* | 🌊: water in surge |
 | *LOW* | `hozowom` | `ozowol` *snow* | 🌨️: the landscape goes quiet |
 | *INTERNAL* | `habobom` | `abobol` *baby-bottle* | 🍼: liquid stays in the vessel |
 | *EXTERNAL* | `horurum` | `orurul` *pour* | 🫗: liquid goes onto someone else |
@@ -132,7 +132,7 @@ z-Azawan | z-goal | g-first | v-tell
 **3.** *Proud of the lantern* (met competence, mental channel; flood bottled)
 
 ::: details Show answer
-`zalanel golozoxam hararem habobom.`
+`zalanel golozoxam heregem habobom.`
 
 z-lantern | g-competence-met-mental | h-HIGH | h-INTERNAL
 :::
@@ -148,7 +148,7 @@ z-solution | g-first
 **5.** *Anxious about the tent* (competence at stake, temporary; flood; room awash)
 
 ::: details Show answer
-`zedenel golozoxur hararem hanedem.`
+`zedenel golozoxur heregem hanedem.`
 
 z-tent | g-competence-unmet-temporary | h-HIGH | h-CIRCUM
 :::
@@ -156,7 +156,7 @@ z-tent | g-competence-unmet-temporary | h-HIGH | h-CIRCUM
 **6.** *Resentful about the party* (unmet relatedness; flood poured onto them)
 
 ::: details Show answer
-`zabaral gonogoxum hararem horurum.`
+`zabaral gonogoxum heregem horurum.`
 
 z-party | g-relatedness-unmet-modifiable | h-HIGH | h-EXTERNAL
 :::
@@ -197,7 +197,7 @@ z-tent | g-competence-met-mental | h-LOW | h-INTERNAL
 *Proud of the tent* (met competence; stillness held inside).
 :::
 
-**4.** `zalanel golozoxur hararem hanedem.`
+**4.** `zalanel golozoxur heregem hanedem.`
 
 ::: details Show answer
 
@@ -222,7 +222,7 @@ z-Ululon | z-solution | g-first | v-tell
 *Ululon names solution 1.*
 :::
 
-**7.** `zurewol gonogoxum hararem horurum.`
+**7.** `zurewol gonogoxum heregem horurum.`
 
 ::: details Show answer
 
@@ -239,17 +239,17 @@ z-fireworks | g-relatedness-unmet-modifiable | h-HIGH | h-EXTERNAL
 
 English *always* / *every* / *never* / *everyone* smuggle **how exceptionless** the claim is. Keep *who / when* on the [universal fences](joins.md#universals-domains-generics) (`zual` / `hual` / …). Write exceptionlessness as a closed `/h/` mood root (optional `/w/` on a preceding `/ɡ/`). You can then pair *always* with *usually*, *by definition*, and the rest without changing the domain fence.
 
-> `zazawan hual vawalal huludol.`
+> `zazawan hual vawalal hugudol.`
 >
 > z-Azawan | h-always | v-walk | h-COMMON
 >
 > "Azawan always walks, usually."
 
-The default *always* is *usually* (exceptions expected), not *must happen that way*, and not an ought. (cue: usual weather, not a law of nature.) Prefer floating `/h/`. Use **COMMON** (`huludol`) unless another row is the exceptionlessness you mean. **RULE** is complex `/h/` + `/b/` when you name the frame.
+The default *always* is *usually* (exceptions expected), not *must happen that way*, and not an ought. (cue: usual weather, not a law of nature.) Prefer floating `/h/`. Use **COMMON** (`hugudol`) unless another row is the exceptionlessness you mean. **RULE** is complex `/h/` + `/b/` when you name the frame.
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`huludol`** | COMMON (default climate) | *usually* (exceptions expected) | `uludol` *cloudy* | ⛅: usual sky still allows a shower |
+| **`hugudol`** | COMMON (default climate) | *usually* (exceptions expected) | `ugudol` *cloudy* | ⛅: usual sky still allows a shower |
 | **`habulul`** | UNCOUNTERED (search) | *as far as checked* (no counterexample comes to mind) | `abulul` *pill* | 💊: you take it to treat an ailment; the search found none |
 | **`harazal`** | FORMAL | *by definition* / math / proof | `arazal` *star* | ⭐: a charted constellation does not wander |
 | **`habelel`** | NATURAL | *by natural necessity* (unsupported objects fall) | `abelel` *apple* | 🍎: it falls because the world works that way |
@@ -257,16 +257,16 @@ The default *always* is *usually* (exceptions expected), not *must happen that w
 
 **Compare with:** *who / when* uses [universal fences](joins.md#universals-domains-generics) (`zual` / `hual` / `zuam`) and [restrictors](restrictors.md) (`hual`). Soft **-m** on the fence (`zuam` / `huam`) is open inventory. Usual weather you are **not** claiming now is [FORMER](knowing.md#former-climate) (`hemebem`), not COMMON.
 
-**For *I saw a pattern*, use:** [evidential](knowing.md#evidentiality) **`abawa`**. **`uludo`** is usual-weather universality; NATURAL **`abele`** stacks a separate evidential `/h/` for how you know.
+**For *I saw a pattern*, use:** [evidential](knowing.md#evidentiality) **`abawa`**. **`ugudo`** is usual-weather universality; NATURAL **`abele`** stacks a separate evidential `/h/` for how you know.
 
 | Agalan | Use | English |
 |--------|-----|---------|
-| `… hual … huludol` | default universality | *always, usually* |
+| `… hual … hugudol` | default universality | *always, usually* |
 | `… hual … habulul` | search found no counterexample | *always, as far as checked* |
 | `zual gagurel … harazal` | definition / proof | *every square, by definition* |
 | `… hual … habelel` + evidential `/h/` | nature plus how you know | *always, by natural necessity* (e.g. `habawam`) |
 | `… hual … hebebel begezel` | named frame | *always, under chess* |
-| `zuam gagadal … huludol` | open domain + usual universality | *every cat that comes to mind, usually* |
+| `zuam gagadal … hugudol` | open domain + usual universality | *every cat that comes to mind, usually* |
 
 ### Translation practice
 <a id="translation-practice-advanced"></a>
@@ -282,7 +282,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` | | |
 | *Ululon* | `ululon` | | |
 | *Uhubun* | `uhubun` | | |
-| *COMMON* | `huludol` | `uludol` *cloudy* | ⛅: usual sky still allows a shower |
+| *COMMON* | `hugudol` | `ugudol` *cloudy* | ⛅: usual sky still allows a shower |
 | *UNCOUNTERED* | `habulul` | `abulul` *pill* | 💊: you take it to treat an ailment; the search found none |
 | *FORMAL* | `harazal` | `arazal` *star* | ⭐: a charted constellation does not wander |
 | *NATURAL* | `habelel` | `abelel` *apple* | 🍎: it falls because the world works that way |
@@ -293,8 +293,8 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *punch* | `vubunul` | | |
 | *scream* | `vazagal` | | |
 | *book* | `abogol` | | |
-| *claim* | `edemam` | `edemal` *trademark* | |
-| *proof* | `eregem` | `eregel` *receipt* | |
+| *claim* | `adadam` | `adadal` *trademark* | |
+| *proof* | `eregum` | `eregul` *receipt* | |
 | *intellect* | `uburum` | `uburul` *brain* | |
 | *school* | `ahalal` | | |
 | evidential *pattern* | `abawam` | `abawal` *paw-prints* | 🐾: a trail of what usually happens |
@@ -304,7 +304,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 **1.** *Ululon always writes, usually.*
 
 ::: details Show answer
-`zululon hual vuwurul huludol.`
+`zululon hual vuwurul hugudol.`
 
 z-Ululon | h-always | v-write | h-COMMON
 :::
@@ -344,14 +344,14 @@ z-Ululon | h-always | v-punch | h-RULE | b-Ahalan
 **6.** *Every claim that comes to mind, usually.*
 
 ::: details Show answer
-`zuam gedemam huludol.`
+`zuam gadadam hugudol.`
 
 z-everything-but.open | g-claim | h-COMMON
 :::
 
 #### Agalan → English
 
-**1.** `zazawan hual vajul huludol.`
+**1.** `zazawan hual vajul hugudol.`
 
 ::: details Show answer
 
@@ -395,7 +395,7 @@ z-Ululon | h-always | v-scream | h-RULE | b-Ahalan
 *Ululon always screams, under school.*
 :::
 
-**6.** `zuam geregem huludol.`
+**6.** `zuam geregum hugudol.`
 
 ::: details Show answer
 

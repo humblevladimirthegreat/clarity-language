@@ -22,7 +22,7 @@ Closed psychological `/h/` (and `/ɡ/` on causal poles; not ordinary [adverb](#a
 | **CIRCUM** | Emotion locus: charge on the situation | [Special vocabulary](special-vocabulary.md#emotion-compose) |
 | **MAY** | Potential mood **`odoho`** (*could be*; I'll find out / default / who knows) | [Knowing](knowing.md#may) |
 | **COMMON** | Universality: usual, exceptions expected | [Special vocabulary](special-vocabulary.md#universality) |
-| **DECISION** | Pick-firmness mood **`egege`** | [Intention](intention.md#decision) |
+| **DECISION** | Pick-firmness mood **`ehege`** | [Intention](intention.md#decision) |
 | **EXTERNAL** | Emotion locus: charge at other people | [Special vocabulary](special-vocabulary.md#emotion-compose) |
 | **FELT** | Evidential: gut / body knowing | [Knowing](knowing.md#evidentiality) |
 | **FORMAL** | Universality: definition / math / proof | [Special vocabulary](special-vocabulary.md#universality) |
@@ -41,7 +41,7 @@ Closed psychological `/h/` (and `/ɡ/` on causal poles; not ordinary [adverb](#a
 | **PLAN** | Intention-framing mood **`emaba`** | [Intention](intention.md#plan-predict) |
 | **PREDICT** | Later-event forecast mood **`elezo`** | [Intention](intention.md#predict) |
 | **RECORDED** | Evidential: documented / playback | [Knowing](knowing.md#evidentiality) |
-| **RESIDUE** | Episode standing: outcome still on the current tally **`omome`** | [Knowing](knowing.md#residue) |
+| **RESIDUE** | Episode standing: outcome still on the current tally **`oneno`** | [Knowing](knowing.md#residue) |
 | **RULE** | Universality: holds inside a named frame | [Special vocabulary](special-vocabulary.md#universality) |
 | **SAME** | Identity copula **`onunu`** | [Predication](predication.md#identity) |
 | **SO-THAT** | Clause-pole **`olala`** (*so that* / NP intended *for*) | [Dependents](dependents.md#so-that) |

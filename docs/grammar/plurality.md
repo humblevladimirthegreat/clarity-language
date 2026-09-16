@@ -126,7 +126,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Uhubun* | `uhubun` |
 | *ant* | `anadal` |
 | *basket* | `azegel` |
-| *sandwich* | `azadul` |
+| *sandwich* | `azanul` |
 | *wine* | `uwunel` |
 | *knife* | `uguvel` |
 | *sit* | `vajul` |
@@ -216,7 +216,7 @@ z-Uhubun-x | v-sit
 *Uhubun and associates sit.*
 :::
 
-**2.** `zazawanx dazadul vejel.`
+**2.** `zazawanx dazanul vejel.`
 
 ::: details Show answer
 
@@ -339,7 +339,7 @@ English *they walk* does not say whether it was one shared outing. Put **-x** on
 
 English *the boxes are heavy* can mean each box or the pile. Put **-x** on the **adjective** (after its ending) when the property holds of the **host set as one unit**. A set host with a singular adjective leaves each-member vs one-pile open. That is not “more red.”
 
-> `zulebolx garagamx.`
+> `zulebolx garogomx.`
 >
 > z-file-box-x | g-heavy-x
 >
@@ -354,11 +354,11 @@ With a [phrase join](joins.md), SHARED singular scale under **`a`** is already *
 
 | Agalan | English |
 |--------|---------|
-| `zulebol zolozol zal garagam` | *the file-box and the toolbox are (each) heavy* |
-| `zulebol zolozol zal garagamx` | *heavy together* (collective SHARED) |
+| `zulebol zolozol zal garogom` | *the file-box and the toolbox are (each) heavy* |
+| `zulebol zolozol zal garogomx` | *heavy together* (collective SHARED) |
 | `zahadal gumum` | *the team is vast* (group-level size) |
-| `zulebolx garagam` | *the file-boxes are heavy* (members / plain) |
-| `zulebolx garagamx` | *the file-boxes are heavy collectively* |
+| `zulebolx garogom` | *the file-boxes are heavy* (members / plain) |
+| `zulebolx garogomx` | *the file-boxes are heavy collectively* |
 
 **-rx** on `/ɡ/` resumes a prior **collective** adjective (*still collectively so*).
 
@@ -421,7 +421,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *expression* | `uzunul` |
 | *sheet-music* | `eduzul` |
 | *bell* | `obelel` |
-| *heavy* | `aragam` |
+| *heavy* | `arogom` |
 | *blue* | `elulul` |
 | *sing* | `vuzunul` |
 | *sneak* | `vazanal` |
@@ -474,7 +474,7 @@ z-Azawan | z-Ululon | z-and | v-sing-x
 **6.** *The bells are heavy as a pile.*
 
 ::: details Show answer
-`zobelelx garagamx.`
+`zobelelx garogomx.`
 
 z-bell-x | g-heavy-x
 :::
@@ -506,7 +506,7 @@ j-Uhubun-x
 *Hey, Uhubun and associates!*
 :::
 
-**2.** `zeduzulx garagam.`
+**2.** `zeduzulx garogom.`
 
 ::: details Show answer
 

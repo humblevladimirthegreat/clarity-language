@@ -75,15 +75,15 @@ Short drills for Beginner. Try each item before opening **Show answer**. Write *
 | *Azawan* | `azawan` | |
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
-| *rock* | `aragal` | |
+| *rock* | `arogol` | |
 | *climb* | `ugumul` | |
-| *stand* | `azanul` | |
+| *stand* | `adanal` | |
 | *run* | `urunul` | |
 | *see* | `vejel` | `ejel` *eye* |
 | *scream* | `azagal` | |
 | *punch* | `ubunul` | |
 | *force* | `ubunum` | `ubunul` *punch* |
-| *lift* | `ewewul` | |
+| *lift* | `uluvul` | |
 
 #### English → Agalan
 
@@ -106,7 +106,7 @@ z-Ululon | v-climb-unable-temporary
 **3.** *Uhubun can’t stand yet.*
 
 ::: details Show answer
-`zuhubun vazanuxol.`
+`zuhubun vadanaxol.`
 
 z-Uhubun | v-stand-unable-modifiable
 :::
@@ -114,7 +114,7 @@ z-Uhubun | v-stand-unable-modifiable
 **4.** *Azawan can see the rock.*
 
 ::: details Show answer
-`zazawan daragal vejexal.`
+`zazawan darogol vejexal.`
 
 z-Azawan | d-rock | v-see-able
 :::
@@ -162,7 +162,7 @@ z-Uhubun | v-climb-able
 *Uhubun can climb.*
 :::
 
-**2.** `zazawan vazanuxel.`
+**2.** `zazawan vadanaxel.`
 
 ::: details Show answer
 
@@ -189,7 +189,7 @@ z-Uhubun | v-run-unable-irreversible
 *Uhubun can never run.*
 :::
 
-**5.** `zululon vewewuxal.`
+**5.** `zululon vuluvuxal.`
 
 ::: details Show answer
 
@@ -207,7 +207,7 @@ z-Uhubun | g-eye-able
 *Uhubun can see.*
 :::
 
-**7.** `zululon daragal vubunuxam.`
+**7.** `zululon darogol vubunuxam.`
 
 ::: details Show answer
 

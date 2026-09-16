@@ -97,7 +97,7 @@ When English says *how many* or *which place*, Agalan writes a [number word](num
 >
 > "Three cats."
 
-Spoken `g+3` is `grarel` (`g` + `ra` + digit `re` + `-l`). Inside a content root, `r` still appears only after a vowel (`uru`).
+Spoken `g+3` is `grarel` (`g` + `ra` + digit `re` + `-l`). Inside a content root, `r` still appears only after a vowel (`uruge`).
 
 **Compare with:** ordinary endings on content words use [reference suffix](reference-suffix.md) senses. Number words reuse those same four letters with [number-specific endings](reference-suffix.md#number-word-exception).
 

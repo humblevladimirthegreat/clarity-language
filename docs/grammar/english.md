@@ -11,7 +11,7 @@ English *by*, *for*, *about*, and *as* each cover several jobs. Pick the Agalan 
 | place (*by the station*) | locative **`hubuhum`** (*at*) + `/b/` (or *inside* / *on*) | [Locative relations](relations.md#locative-relations) |
 | deadline (*by 15:30*) | clock `/h/`, or *until* **`hudumem barl`** | [Time](numbers-applied.md#time), [dependent clauses](dependents.md#dependent-clauses) |
 | manner (*by walking hastily*) | ordinary adverb `/h/`, no `/b/` | [Adverbs](clause.md#adverbs-h) |
-| origin (*Ululon from the city*) | **`hajabam` / `gajabam`** + `/b/` | [Of relations](relations.md#of-relations) |
+| origin (*Ululon from the city*) | **`hugunom` / `gugunom`** + `/b/` | [Of relations](relations.md#of-relations) |
 
 ## *for*
 

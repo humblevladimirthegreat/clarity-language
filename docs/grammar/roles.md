@@ -339,8 +339,8 @@ The examples above already used *west* / body *left*. The rest of the rose is th
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`onohol`** | compass heading, or ahead on a face | *north* / *ahead* | ⬆️ *up-arrow*: map north, or ahead if facing is north |
-| **`ohuhul`** | compass heading, or back on a face | *south* / *back* | ⬇️ *down-arrow*: map south, or back if facing is north |
+| **`orohol`** | compass heading, or ahead on a face | *north* / *ahead* | ⬆️ *up-arrow*: map north, or ahead if facing is north |
+| **`ojul`** | compass heading, or back on a face | *south* / *back* | ⬇️ *down-arrow*: map south, or back if facing is north |
 | **`ezazal`** | compass heading, or right on a face | *east* / *right* | ➡️ *right-arrow*: the sun’s path east, or right of facing |
 | **`ewezel`** | compass heading, or left on a face | *west* / *left* | ⬅️ *left-arrow*: opposite east, or left of facing |
 | **`onorel`** | compass heading, or forward-right on a face | *northeast* / *forward-right* | ↗️ *northeast-arrow*: between north and east |
@@ -427,11 +427,11 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
 | *boat* | `odadal` | |
-| *ship* | `ahabal` | |
+| *ship* | `uhul` | |
 | *life-ring* | `uluvel` | |
 | *walk* | `awalal` | |
-| *north* / body *ahead* | `onohol` | |
-| *south* / body *back* | `ohuhul` | |
+| *north* / body *ahead* | `orohol` | |
+| *south* / body *back* | `ojul` | |
 | *west* / body *left* | `ewezel` | |
 | *east* / body *right* | `ezazal` | |
 | *northwest* / *forward-left* | `onohel` | |
@@ -453,7 +453,7 @@ z-boat | g-west-x-Azawan
 **2.** *Walk north.*
 
 ::: details Show answer
-`jel vawalal honohol.`
+`jel vawalal horohol.`
 
 j-command | v-walk | h-north
 :::
@@ -461,7 +461,7 @@ j-command | v-walk | h-north
 **3.** *The ship on Ululon’s right.*
 
 ::: details Show answer
-`zahabal gezazaxululon.`
+`zuhul gezazaxululon.`
 
 z-ship | g-east-x-Ululon
 :::
@@ -526,7 +526,7 @@ j-command | v-walk | h-west
 *Walk west.*
 :::
 
-**3.** `zahabal gohuhul.`
+**3.** `zuhul gojul.`
 
 ::: details Show answer
 
@@ -562,7 +562,7 @@ j-command | z-listener | v-walk | h-east-x-listener
 *You, walk right (your right).*
 :::
 
-**7.** `zahabal gonohexuhubun.`
+**7.** `zuhul gonohexuhubun.`
 
 ::: details Show answer
 
@@ -585,7 +585,7 @@ j-command | z-Ululon | v-walk | h-down
 
 ### Arrow roots as talk-moves
 
-When *east* / *west* / *southwest* name a move in the talk, not a map point, write the published root **bare** (no **`x`** + facing person). Generic heading is **`ogomo`** (*direction*). Facing-relative ahead / back still uses **`onoho` / `ohuhu` × ANCHOR**.
+When *east* / *west* / *southwest* name a move in the talk, not a map point, write the published root **bare** (no **`x`** + facing person). Generic heading is **`ogomo`** (*direction*). Facing-relative ahead / back still uses **`oroho` / `oju` × ANCHOR**.
 
 > `zazawan vawalal. xezazal zululon vurunul.`
 >

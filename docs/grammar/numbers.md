@@ -1240,7 +1240,7 @@ Soft **-m** hedges (*near-disqualified*, …). Free twin of derivation **`ROOTx#
 | **`g+0e`** | **`zedudaxrazobal`** | absolute-zero amount vs total-null credit-kind |
 | **`g+0e-1`** | **`zedudaxrabuwojazol`** | deci-null amount vs kind nullified at OoM −1 |
 | **`g-0e-1`** | **`zedudaxrubuwojazol`** | deci-residue amount vs kind residue at OoM −1 |
-| **`g#0e`** | **`zazuduxrezobal`** | disqualified place vs disqualified-*kind* |
+| **`g#0e`** | **`zolonaxrezobal`** | disqualified place vs disqualified-*kind* |
 | **`v+0l`** | **`vodoboxrazol`** | ordinary zeroing / null-reset — weaker than **`…+0e`** |
 
 Free **`g+e0`** / **`g+Ne0`** are bare OoM / OoM assert on free numbers, not kind derivation morphs. Engineering OoM-null is **`±0e-1`**.

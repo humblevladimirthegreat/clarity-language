@@ -68,7 +68,7 @@ describe("classify", () => {
   });
 
   it("overlay mood on residue and former-climate", () => {
-    const residue = expectReading("homomem", "mood");
+    const residue = expectReading("honenom", "mood");
     assert.equal(residue.overlay?.kind, "residue");
     assert.equal(residue.overlay?.gloss, "RESIDUE");
     const former = expectReading("hemebem", "mood");
@@ -129,7 +129,7 @@ describe("classify", () => {
   });
 
   it("between locative overlay remains; other place talk is ordinary on those roots", () => {
-    const between = expectReading("gazadum", "locative");
+    const between = expectReading("gazanum", "locative");
     assert.equal(between.overlay!.gloss, "between");
     const pin = expectReading("zubuhul", "ordinary");
     assert.equal(pin.overlay, undefined);
@@ -145,7 +145,7 @@ describe("classify", () => {
     assert.equal(contents.overlay!.gloss, "contents");
     const material = expectReading("gowodom", "ofRelation");
     assert.equal(material.overlay!.gloss, "material");
-    const origin = expectReading("gajabam", "ofRelation");
+    const origin = expectReading("gugunom", "ofRelation");
     assert.equal(origin.overlay!.gloss, "origin");
     const bone = expectReading("zobonel", "ordinary");
     assert.equal(bone.overlay, undefined);

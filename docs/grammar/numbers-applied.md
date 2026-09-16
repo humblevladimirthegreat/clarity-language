@@ -91,7 +91,7 @@ Base and everyday units (each row is a **unit metaphor**; the literal picture st
 | hour (civil duration) | `ohora` *hour* | `bohoram g+3` | `ohoral` *hourglass* | ⏳: civil hour block |
 | heat grade (not kelvin) | `edehe` *temperature* | `gedehel g+37` | `edehel` *thermometer* | 🌡️: how hot or cold |
 
-Related **quantity** words (*heavy*, *flow*, *time* as continuum, …) stay on their own roots (`aragam` *heavy*, `gumel` *time*, …); they are not SI measure nouns.
+Related **quantity** words (*heavy*, *flow*, *time* as continuum, …) stay on their own roots (`arogom` *heavy*, `gumel` *time*, …); they are not SI measure nouns.
 
 `bohoram g+3` ≈ *three hours*.
 
@@ -111,7 +111,7 @@ Keep the **base** unit. Put the power of ten on the **amount** (`e3` / `e-3` / a
 >
 > "Azawan is two meters more challenging than Ululon."
 
-Vague degree uses `/w/` on the scale (`zel wararel gomonam …`) with no unit. Duration and other clause measures use the same unit+amount habit in whatever slot the relation needs.
+Vague degree uses `/w/` on the scale (`zel weregel gomonam …`) with no unit. Duration and other clause measures use the same unit+amount habit in whatever slot the relation needs.
 
 ### Ranges
 <a id="ranges"></a>
@@ -205,7 +205,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. One
 | *Uhubun* | `uhubun` | |
 | *pill* | `abulul` | |
 | *bottle* | `abobol` | |
-| *rock* | `aragal` | |
+| *rock* | `arogol` | |
 | *spoon* | `ozobol` | |
 | *meter* | `edurem` | `edurel` *set-square* |
 | *gram* | `obonom` | `obonol` *pound* |
@@ -243,7 +243,7 @@ z-pill-x | g-25jo
 **4.** *Azawan sees two rocks.*
 
 ::: details Show answer
-`zazawan daragal g+2 vejel.`
+`zazawan darogol g+2 vejel.`
 
 z-Azawan | d-rock | g-two | v-see
 :::
@@ -267,7 +267,7 @@ z-Ululon | d-_911 | v-see
 **7.** *Ululon punches five rocks.*
 
 ::: details Show answer
-`zululon daragal g+5 vubunul.`
+`zululon darogol g+5 vubunul.`
 
 z-Ululon | d-rock | g-five | v-punch
 :::

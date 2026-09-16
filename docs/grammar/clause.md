@@ -183,11 +183,11 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Ululon* | `ululon` | | |
 | *Uhubun* | `uhubun` | | |
 | *bank* | `anabal` | | |
-| *money* | `omomel` | | |
+| *money* | `onenol` | | |
 | *angry* | `anagal` | | |
 | *happy* | `uzumum` | `uzumul` *smile* | 😊: the face of *happy* |
 | *sit* | `vajul` | `ajul` *chair* | 🪑: taking a seat |
-| *stand* | `vazanul` | `azanul` *stand* | 🧍: staying in place |
+| *stand* | `vadanal` | `adanal` *stand* | 🧍: staying in place |
 | *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
 | *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
 | *write* | `vuwurul` | `uwurul` *write* | ✍️: putting words on the page |
@@ -227,7 +227,7 @@ z-Uhubun | d-Azawan | v-see
 **4.** *A very angry Ululon stands.*
 
 ::: details Show answer
-`zululon ganagal welem vazanul.`
+`zululon ganagal welem vadanal.`
 
 z-Ululon | g-angry | w-very | v-stand
 :::
@@ -266,7 +266,7 @@ j-Azawan
 *Azawan!* (calling Azawan)
 :::
 
-**2.** `zuhubun vazanul.`
+**2.** `zuhubun vadanal.`
 
 ::: details Show answer
 
@@ -284,7 +284,7 @@ z-Azawan | d-Uhubun | v-see
 *Azawan sees Uhubun.*
 :::
 
-**4.** `zuhubun guzumum domomel vejel.`
+**4.** `zuhubun guzumum donenol vejel.`
 
 ::: details Show answer
 
@@ -427,14 +427,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *red* | `aredel` |
 | *same* | `gonunul` |
 | *sit* | `vajul` |
-| *stand* | `vazanul` |
+| *stand* | `vadanal` |
 | *see* | `vejel` |
 | *tell* | `vezehel` |
 | *sneak* | `vazanal` |
 | *punch* | `vubunul` |
 | *volume* | `wegelom` |
 | *topic* | `hozal` |
-| *train* | `udunul` |
+| *train* | `adadul` |
 
 #### English → Agalan
 
@@ -457,7 +457,7 @@ j-soft-question | z-Uhubun | d-ticket | v-see
 **3.** *Please stand.*
 
 ::: details Show answer
-`jem vazanul!`
+`jem vadanal!`
 
 j-request | v-stand
 :::
@@ -473,7 +473,7 @@ j-soft-prohibition | v-sneak
 **5.** *A loud-volume red train stands.* (adjective before the noun)
 
 ::: details Show answer
-`glaredel wegelom zudunul vazanul.`
+`glaredel wegelom zadadul vadanal.`
 
 gl-red | w-volume | z-train | v-stand
 :::
@@ -481,7 +481,7 @@ gl-red | w-volume | z-train | v-stand
 **6.** *Azawan the same as blue Uhubun stands.*
 
 ::: details Show answer
-`zazawan gonunul buhubun gelulul vazanul.`
+`zazawan gonunul buhubun gelulul vadanal.`
 
 z-Azawan | g-SAME | b-Uhubun | g-blue | v-stand
 :::
@@ -497,7 +497,7 @@ j-soft-statement | h-hash | b-Azawan | z-Ululon | d-ticket | v-see
 *As for Azawan, maybe Ululon sees a ticket.*
 :::
 
-**2.** `jom glelulul zudunul vazanul?`
+**2.** `jom glelulul zadadul vadanal?`
 
 ::: details Show answer
 
@@ -524,7 +524,7 @@ j-soft-prohibition | v-punch
 *Please don’t punch.*
 :::
 
-**5.** `zuhubun gonunul bululon garedel vazanul.`
+**5.** `zuhubun gonunul bululon garedel vadanal.`
 
 ::: details Show answer
 

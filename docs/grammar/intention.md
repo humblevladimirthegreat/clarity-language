@@ -73,7 +73,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
 | *sit* | `vajul` | `ajul` *chair* |
-| *pawn* | `egezal` | |
+| *pawn* | `awanal` | |
 | *see* | `vejel` | `ejel` *eye* |
 | *tell* | `vezehel` | `ezehel` *speech* |
 | *punch* | `vubunul` | |
@@ -93,7 +93,7 @@ z-Azawan | h-plan-sketch | v-sit
 **2.** *Ululon intends to see a pawn.*
 
 ::: details Show answer
-`zululon hemabam degezal vejel.`
+`zululon hemabam dawanal vejel.`
 
 z-Ululon | h-plan-sketch | d-pawn | v-see
 :::
@@ -157,7 +157,7 @@ z-Ululon | h-plan-sketch | v-sit
 *Ululon intends to sit.*
 :::
 
-**2.** `zazawan hemabam degezal vejel.`
+**2.** `zazawan hemabam dawanal vejel.`
 
 ::: details Show answer
 
@@ -193,7 +193,7 @@ z-Azawan | h-plan-sketch | b-Uhubun | v-tell
 *Azawan intends to tell Uhubun.*
 :::
 
-**6.** `zululon hemabal degezal vejel.`
+**6.** `zululon hemabal dawanal vejel.`
 
 ::: details Show answer
 
@@ -227,11 +227,11 @@ h-predict | v-fight
 <a id="decision"></a>
 <a id="decision-mood"></a>
 
-English *decide* / *I've decided* / *final decision* folds **how locked the pick is** into the verb. Agalan uses one closed mood root instead: spell **`egege`** as floating `/h/` (**`hegege`** plus an ending), then an ordinary content verb. The ending is how revisable the pick is (still open, settled, or only for now), so you can keep the same content verb and change only that ending. Prefer floating `/h/`; use `/w/` only when the mood frames a preceding `/ɡ/` adjective. (cue: ✅ *check*: a checkmark confirms a pick)
+English *decide* / *I've decided* / *final decision* folds **how locked the pick is** into the verb. Agalan uses one closed mood root instead: spell **`ehege`** as floating `/h/` (**`hehege`** plus an ending), then an ordinary content verb. The ending is how revisable the pick is (still open, settled, or only for now), so you can keep the same content verb and change only that ending. Prefer floating `/h/`; use `/w/` only when the mood frames a preceding `/ɡ/` adjective. (cue: ✅ *check*: a checkmark confirms a pick)
 
-Ordinary content is still available (`zegegel` *a checkmark*; `vegegel` *to check / tick*).
+Ordinary content is still available (`zehegel` *a checkmark*; `vehegel` *to check / tick*).
 
-> `zululon hegegem vuzunul.`
+> `zululon hehegem vuzunul.`
 >
 > z-Ululon | h-DECISION-modifiable | v-sing
 >
@@ -242,17 +242,17 @@ Ordinary content is still available (`zegegel` *a checkmark*; `vegegel` *to chec
 #### Endings — changeability
 <a id="decision-changeability"></a>
 
-On **`egege`**, **-l / -m / -r** match unmet [changeability](values.md#value-changeability): irreversible / modifiable / temporary. **-n** is ordinary [proper](reference-suffix.md#proper-name--n). If you do not know how locked the pick is, use **-m**.
+On **`ehege`**, **-l / -m / -r** match unmet [changeability](values.md#value-changeability): irreversible / modifiable / temporary. **-n** is ordinary [proper](reference-suffix.md#proper-name--n). If you do not know how locked the pick is, use **-m**.
 
 | Agalan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`hegegel`** | **irreversible** | *has decided for good to …* | **-l** hard / locked |
-| **`hegegem`** | **modifiable** (soft default if unknown) | *has decided to …, and can still change that* | **-m** open to change |
-| **`hegeger`** | **temporary** | *has decided for now to …* | **-r** light / this-moment only |
+| **`hehegel`** | **irreversible** | *has decided for good to …* | **-l** hard / locked |
+| **`hehegem`** | **modifiable** (soft default if unknown) | *has decided to …, and can still change that* | **-m** open to change |
+| **`heheger`** | **temporary** | *has decided for now to …* | **-r** light / this-moment only |
 
 You can stack this mood after [PLAN](#plan-predict) when the clause needs both map grain and pick firmness:
 
-> `zazawan hemabal hegegel vawalal.`
+> `zazawan hemabal hehegel vawalal.`
 >
 > z-Azawan | h-plan-itinerary | h-DECISION-irreversible | v-walk
 >
@@ -287,7 +287,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Uhubun* | `uhubun` | |
 | **PLAN** (itinerary) | `hemabal` | `emabal` *plan-itinerary* |
 | **PREDICT** | `helezom` | `elezol` *telescope* |
-| **DECISION** (modifiable) | `hegegem` | `egegel` *check* |
+| **DECISION** (modifiable) | `hehegem` | `ehegel` *check* |
 | *sit* | `vajul` | `ajul` *chair* |
 | *tell* | `vezehel` | `ezehel` *speech* |
 | *write* | `vuwurul` | |
@@ -304,7 +304,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *Ululon has decided to sit, and can still change that.*
 
 ::: details Show answer
-`zululon hegegem vajul.`
+`zululon hehegem vajul.`
 
 z-Ululon | h-DECISION-modifiable | v-sit
 :::
@@ -312,7 +312,7 @@ z-Ululon | h-DECISION-modifiable | v-sit
 **2.** *Azawan has decided to tell Uhubun, and can still change that.*
 
 ::: details Show answer
-`zazawan hegegem buhubun vezehel.`
+`zazawan hehegem buhubun vezehel.`
 
 z-Azawan | h-DECISION-modifiable | b-Uhubun | v-tell
 :::
@@ -320,7 +320,7 @@ z-Azawan | h-DECISION-modifiable | b-Uhubun | v-tell
 **3.** *Uhubun has decided for now to write.*
 
 ::: details Show answer
-`zuhubun hegeger vuwurul.`
+`zuhubun heheger vuwurul.`
 
 z-Uhubun | h-DECISION-temporary | v-write
 :::
@@ -336,7 +336,7 @@ z-Ululon | h-predict | h-PATTERN | v-sit
 **5.** *Azawan plans to sit, and that choice is final.*
 
 ::: details Show answer
-`zazawan hemabal hegegel vajul.`
+`zazawan hemabal hehegel vajul.`
 
 z-Azawan | h-plan-itinerary | h-DECISION-irreversible | v-sit
 :::
@@ -344,7 +344,7 @@ z-Azawan | h-plan-itinerary | h-DECISION-irreversible | v-sit
 **6.** *Ululon has decided for now to see a clipboard.*
 
 ::: details Show answer
-`zululon hegeger dugubol vejel.`
+`zululon heheger dugubol vejel.`
 
 z-Ululon | h-DECISION-temporary | d-clipboard | v-see
 :::
@@ -352,7 +352,7 @@ z-Ululon | h-DECISION-temporary | d-clipboard | v-see
 **7.** *Ululon has decided for good to punch Azawan.*
 
 ::: details Show answer
-`zululon hegegel dazawan vubunul.`
+`zululon hehegel dazawan vubunul.`
 
 z-Ululon | h-DECISION-irreversible | d-Azawan | v-punch
 :::
@@ -360,14 +360,14 @@ z-Ululon | h-DECISION-irreversible | d-Azawan | v-punch
 **8.** *Ululon has decided for good to fight.*
 
 ::: details Show answer
-`zululon hegegel vuvugul.`
+`zululon hehegel vuvugul.`
 
 z-Ululon | h-DECISION-irreversible | v-fight
 :::
 
 #### Agalan → English
 
-**1.** `zazawan hegegem vajul.`
+**1.** `zazawan hehegem vajul.`
 
 ::: details Show answer
 
@@ -376,7 +376,7 @@ z-Azawan | h-DECISION-modifiable | v-sit
 *Azawan has decided to sit, and can still change that.*
 :::
 
-**2.** `zululon hegegel vuwurul.`
+**2.** `zululon hehegel vuwurul.`
 
 ::: details Show answer
 
@@ -394,7 +394,7 @@ h-predict | h-PATTERN | v-tell
 *From the usual pattern, I predict someone will tell.*
 :::
 
-**4.** `zuhubun hegeger vajul.`
+**4.** `zuhubun heheger vajul.`
 
 ::: details Show answer
 
@@ -403,7 +403,7 @@ z-Uhubun | h-DECISION-temporary | v-sit
 *Uhubun has decided for now to sit.*
 :::
 
-**5.** `zazawan hegeger dabenel vejel.`
+**5.** `zazawan heheger dabenel vejel.`
 
 ::: details Show answer
 
@@ -412,7 +412,7 @@ z-Azawan | h-DECISION-temporary | d-pen | v-see
 *Azawan has decided for now to see a pen.*
 :::
 
-**6.** `zululon hemabal hegegel buhubun vezehel.`
+**6.** `zululon hemabal hehegel buhubun vezehel.`
 
 ::: details Show answer
 
@@ -421,7 +421,7 @@ z-Ululon | h-plan-itinerary | h-DECISION-irreversible | b-Uhubun | v-tell
 *Ululon plans to tell Uhubun, and that choice is final.*
 :::
 
-**7.** `zululon hegeger dazawan vubunul.`
+**7.** `zululon heheger dazawan vubunul.`
 
 ::: details Show answer
 
@@ -430,7 +430,7 @@ z-Ululon | h-DECISION-temporary | d-Azawan | v-punch
 *Ululon has decided for now to punch Azawan.*
 :::
 
-**8.** `zuhubun hegegel vazagal.`
+**8.** `zuhubun hehegel vazagal.`
 
 ::: details Show answer
 

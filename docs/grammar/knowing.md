@@ -292,29 +292,29 @@ Pick one evidential **root** for how you know.
 
 English *has walked* and *used to walk* often smuggle **when** the event sits. Agalan already places events with [*before* / *after* / *while*](dependents.md#dependent-clauses), a clock or date, [LIVE](#live-vs-memory) / [WITNESSED](#live-vs-memory), or [PREDICT](intention.md#predict). These two `/h/` moods do **not** locate time. They say how the episode **stands**: whether an outcome **still counts on the current tally**, or whether a usual pattern is **not the climate you are claiming now**. Stack them with a channel or a when-frame; do not use them as a past or present letter.
 
-**RESIDUE** (`omome`) marks leftover balance: the result is still on the books (an unpaid tab, a door that is still shut). Skipping it means you are not claiming current residue (archived, or a fresh event with nothing left to count). Ordinary `zomomem` is still *debt*.
+**RESIDUE** (`oneno`) marks leftover balance: the result is still on the books (an unpaid tab, a door that is still shut). Skipping it means you are not claiming current residue (archived, or a fresh event with nothing left to count). Ordinary `zonenom` is still *debt*.
 
-> `zululon homomem vebarum.`
+> `zululon honenom vebarum.`
 >
 > z-Ululon | h-RESIDUE | v-leave
 >
 > "Ululon’s leaving still counts." — the outcome remains on the tally
 
-> `zululon huvuvum homomem vebarum.`
+> `zululon huvuvum honenom vebarum.`
 >
 > z-Ululon | h-WITNESSED | h-RESIDUE | v-leave
 >
 > "Ululon’s leaving still counts — from memory."
 
-> `zululon hadezem homomem vebarum.`
+> `zululon hadezem honenom vebarum.`
 >
 > z-Ululon | h-LIVE | h-RESIDUE | v-leave
 >
 > "Ululon’s leaving still counts — live / from the scene." (the leftover is in view)
 
-**Compare with:** [*after*](dependents.md#dependent-clauses) (`horanem badorol`) orders two events. **`homomem`** does not say the leaving was earlier; it says the **outcome still counts**. [LIVE](#live-vs-memory) is how you know, not leftover balance. A result as a property can stay ordinary `/ɡ/` (*the door is shut*) with no residue word.
+**Compare with:** [*after*](dependents.md#dependent-clauses) (`helabam badorol`) orders two events. **`honenom`** does not say the leaving was earlier; it says the **outcome still counts**. [LIVE](#live-vs-memory) is how you know, not leftover balance. A result as a property can stay ordinary `/ɡ/` (*the door is shut*) with no residue word.
 
-**FORMER** (`emebe`) marks **former climate**: this verb-claim is usual weather that you are **not** giving as today’s report. [Always](restrictors.md) **`hual`** is still the current climate (exceptions listed). [COMMON](special-vocabulary.md#universality) **`huludol`** is how exceptionless that current weather is. Ordinary `zemebem` is still *emptiness*.
+**FORMER** (`emebe`) marks **former climate**: this verb-claim is usual weather that you are **not** giving as today’s report. [Always](restrictors.md) **`hual`** is still the current climate (exceptions listed). [COMMON](special-vocabulary.md#universality) **`hugudol`** is how exceptionless that current weather is. Ordinary `zemebem` is still *emptiness*.
 
 > `zazawan hual vezehel hemebem.`
 >
@@ -338,7 +338,7 @@ English *has walked* and *used to walk* often smuggle **when** the event sits. A
 
 | Agalan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`homomem`** | outcome still on the current tally | *still counts* / residue | `omomem` *debt* | 💰: unpaid balance still on the books |
+| **`honenom`** | outcome still on the current tally | *still counts* / residue | `onenom` *debt* | 💰: unpaid balance still on the books |
 | **`hemebem`** | not the climate claimed now | *former climate* | `emebem` *emptiness* | 🪹: the nesting season is over |
 
 Prefer floating `/h/`. Use `/w/` only when the standing grades a preceding `/ɡ/` adjective. The overlay ending stays **-m**.
@@ -417,7 +417,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Wri
 | *felt* | `heherem` | `eherel` *heart* |
 | *STORY* | `horolom` | `orolol` *scroll* |
 | *NOTIONAL* | `hadadem` | `adadel` *theater* |
-| *RESIDUE* | `homomem` | `omomem` *debt* |
+| *RESIDUE* | `honenom` | `onenom` *debt* |
 | *FORMER* | `hemebem` | `emebem` *emptiness* |
 | *always* | `hual` | |
 
@@ -490,7 +490,7 @@ z-Ululon | h-NOTIONAL-fused | v-scream
 **9.** *Azawan tells Uhubun — live; the telling still counts.*
 
 ::: details Show answer
-`zazawan hadezem homomem vezehel buhubun.`
+`zazawan hadezem honenom vezehel buhubun.`
 
 z-Azawan | h-LIVE | h-RESIDUE | v-tell | b-Uhubun
 :::
@@ -576,7 +576,7 @@ z-Uhubun | h-MAY | v-scream
 *Uhubun may be screaming.* (*could be* — not how you know a world-claim)
 :::
 
-**9.** `zuhubun huvuvum homomem vezehel bazawan.`
+**9.** `zuhubun huvuvum honenom vezehel bazawan.`
 
 ::: details Show answer
 
@@ -629,7 +629,7 @@ The same published roots stay ordinary content under other role letters. The clo
 | `zorolol` | noun | *a scroll* |
 | `zadadel` | noun | *a theater* |
 | `vadadem` | verb | *to pretend* |
-| `zomomem` | noun | *debt* |
+| `zonenom` | noun | *debt* |
 | `zemebem` | noun | *emptiness* |
 
 > `zazawan zadadel vejel.`

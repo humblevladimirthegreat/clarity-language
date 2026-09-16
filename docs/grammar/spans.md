@@ -76,13 +76,13 @@ A **mention** holds a **word or phrase** as that spelling, not a quote of speech
 
 With **`@`**, mention is the **name** (the title-string you could rename), even as **one word**: `d@{uzugon}` is not `duzugon`. Cite with **`@`** is the **work**; that span is for a **multi-word** title (`d@[uzugon ululon]`). One-word *Uzugon* as the work is ordinary **-n** (`duzugon`).
 
-> `zazawan d@[uzugon ululon] vawem.`
+> `zazawan d@[uzugon ululon] vogozom.`
 >
 > z-Azawan | d-cite | Uzugon | Ululon | v-rejection
 >
 > "Azawan dislikes Uzugon Ululon." (the work)
 
-> `zazawan d@{uzugon} vawem.`
+> `zazawan d@{uzugon} vogozom.`
 >
 > z-Azawan | d-uzugon | v-rejection
 >

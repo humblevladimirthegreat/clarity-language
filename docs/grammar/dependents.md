@@ -73,7 +73,7 @@ You can also say:
 | **`hegemum barl`** | *while* (at the same time) | `egemul` *gemini* | ♊: two things at once |
 | **`hudumem barl`** | *until* | `udumel` *timer* | ⏲️: stop when it rings |
 | **`hababam barl`** | *before* | `ababal` *backpack* | 🎒: packed first |
-| **`horanem barl`** | *after* | `oranel` *hourglass* | ⌛: sand already through |
+| **`helabam barl`** | *after* | `elabal` *hourglass* | ⌛: sand already through |
 | **`holalam barl`** | *so that* / *in order to* | `olalal` *goal* | 🥅: you act so the shot counts |
 
 When English puts a **noun** after *despite* (*despite Ululon*), keep the same **`hezebam`** pole and put that noun in `/b/` instead of **`barl`**. The obstacle is given, as with *although*. Do not write a second concession word. On a noun host the same pole is **`gezebam`**. (cue: 🦓 *zebra*: two stripes, still one animal)
@@ -146,9 +146,9 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Ululon* | `ululon` | | |
 | *Uhubun* | `uhubun` | | |
 | *guard* | `ugugal` | | |
-| *money* | `omomel` | | |
+| *money* | `onenol` | | |
 | *sit* | `vajul` | `ajul` *chair* | 🪑: taking a seat |
-| *stand* | `vazanul` | `azanul` *stand* | 🧍: staying in place |
+| *stand* | `vadanal` | `adanal` *stand* | 🧍: staying in place |
 | *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
 | *tell* | `vezehel` | `ezehel` *speech* | 💬: saying it to someone |
 | *write* | `vuwurul` | `uwurul` *write* | ✍️: putting words on the page |
@@ -232,7 +232,7 @@ z-Ululon | v-fight | h-although | b-guard
 *Ululon fights despite a guard.*
 :::
 
-**3.** `zuhubun vejel dorl zazawan vazanul.`
+**3.** `zuhubun vejel dorl zazawan vadanal.`
 
 ::: details Show answer
 

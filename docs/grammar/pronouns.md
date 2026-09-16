@@ -337,7 +337,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Ululon* | `ululon` | | |
 | *Uhubun* | `uhubun` | | |
 | *pour* | `vorurul` | `orurul` *pour* | 🫗: water onto soil |
-| *harvest* | `vurum` | `urul` *rice plant* | 🌾: bringing the crop in |
+| *harvest* | `vurugem` | `urugel` *rice plant* | 🌾: bringing the crop in |
 | *flower* | `ovowel` | | |
 | *tomato* | `odomal` | | |
 | *seedling* | `ezedel` | | |
@@ -381,7 +381,7 @@ z-Ululon | d-Azawan | v-see | z-Uhubun | d-←Azawan | v-see
 **4.** *Azawan pours. Ululon harvests. Going back to Azawan, they see a seedling.*
 
 ::: details Show answer
-`zazawan vorurul. zululon vurum. xazawar dezedel vejel.`
+`zazawan vorurul. zululon vurugem. xazawar dezedel vejel.`
 
 z-Azawan | v-pour | z-Ululon | v-harvest | x-←Azawan | d-seedling | v-see
 :::
@@ -389,7 +389,7 @@ z-Azawan | v-pour | z-Ululon | v-harvest | x-←Azawan | d-seedling | v-see
 **5.** *Ululon pours like a potted plant. Azawan harvests that way.*
 
 ::: details Show answer
-`zululon hurorom bobodel vorurul. zazawan huroror vurum.`
+`zululon hurorom bobodel vorurul. zazawan huroror vurugem.`
 
 z-Ululon | h-like | b-potted-plant | v-pour | z-Azawan | h-←like | v-harvest
 :::
@@ -405,7 +405,7 @@ h-hash | b-Uhubun | z-Ululon | v-punch
 **7.** *We (you and I) harvest.*
 
 ::: details Show answer
-`zahan vurum.`
+`zahan vurugem.`
 
 z-interlocutors | v-harvest
 :::
@@ -447,7 +447,7 @@ z-Azawan | d-Ululon | v-see | z-Uhubun | d-←Ululon | v-see
 *Azawan sees Ululon. Uhubun sees him.*
 :::
 
-**4.** `zululon vurum. zazawan vorurul. xulur vubunul.`
+**4.** `zululon vurugem. zazawan vorurul. xulur vubunul.`
 
 ::: details Show answer
 
@@ -456,7 +456,7 @@ z-Ululon | v-harvest | z-Azawan | v-pour | x-←Ululon | v-punch
 *Ululon harvests. Azawan pours. Going back to Ululon, he punches.*
 :::
 
-**5.** `hozal bazawan zuhubun vurum.`
+**5.** `hozal bazawan zuhubun vurugem.`
 
 ::: details Show answer
 

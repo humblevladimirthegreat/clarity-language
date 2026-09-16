@@ -368,7 +368,7 @@ Hook **-n** is only when the hook is **inside a proper-name phrase** ([**-n**](r
 ### Extra noun: stacked vowels and loose **-m**
 <a id="extra-noun-intermediate"></a>
 
-Beginner already used simplex extra-noun hooks (*in* / *at* / *from* / *for*). Stacked vowels name the rest of the everyday extras. Same trigger: `/b/` immediately on the right, and the word immediately to the left is **not** `/b/` (so `bazawan al bululon` stays *including*). Two extras need a non-`/b/` word between the first landmark and the next hook — the verb can sit there (`ul bazadol vawalal oel budunul`).
+Beginner already used simplex extra-noun hooks (*in* / *at* / *from* / *for*). Stacked vowels name the rest of the everyday extras. Same trigger: `/b/` immediately on the right, and the word immediately to the left is **not** `/b/` (so `bazawan al bululon` stays *including*). Two extras need a non-`/b/` word between the first landmark and the next hook — the verb can sit there (`ul bazadol vawalal oel badadul`).
 
 | Agalan | Vowels | Name (**-l**) |
 |--------|--------|----------------|
@@ -416,7 +416,7 @@ Beginner already used simplex extra-noun hooks (*in* / *at* / *from* / *for*). S
 | **using** | **by** (`aem`) |
 | **against** | **contrary to** (`uem`) |
 
-> `zazawan vuwurul em bomomel.`
+> `zazawan vuwurul em bonenol.`
 >
 > z-Azawan | v-write | with-in-mind | b-money
 >
@@ -505,7 +505,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
 | *newspaper* | `enewel` | |
-| *page* | `ajel` | |
+| *page* | `ababel` | |
 | *camera* | `ameral` | |
 | *radio* | `aradul` | |
 | *write* | `vuwurul` | |
@@ -527,7 +527,7 @@ z-newspaper | including.open | z-Azawan | except | z-Ululon
 **2.** *Azawan writes around a page.*
 
 ::: details Show answer
-`zazawan vuwurul aom bajel.`
+`zazawan vuwurul aom bababel.`
 
 z-Azawan | v-write | on.around | b-page
 :::
@@ -535,7 +535,7 @@ z-Azawan | v-write | on.around | b-page
 **3.** *The page, with a newspaper as a replacement, and maybe more.*
 
 ::: details Show answer
-`dajel om denewel.`
+`dababel om denewel.`
 
 d-page | instead.open | d-newspaper
 :::
@@ -543,7 +543,7 @@ d-page | instead.open | d-newspaper
 **4.** *A camera instead of a radio, and a page.*
 
 ::: details Show answer
-`zameral ol zaradul zajel zam.`
+`zameral ol zaradul zababel zam.`
 
 z-camera | instead | z-radio | z-page | z-and.open
 :::
@@ -575,7 +575,7 @@ z-Azawan | using | b-camera | v-write
 **8.** *Azawan writes on a page.*
 
 ::: details Show answer
-`zazawan vuwurul aol bajel.`
+`zazawan vuwurul aol bababel.`
 
 z-Azawan | v-write | on | b-page
 :::
@@ -645,7 +645,7 @@ z-Azawan | using | b-camera | v-write
 *Azawan writes with a camera.*
 :::
 
-**8.** `zazawan vuwurul aol bajel.`
+**8.** `zazawan vuwurul aol bababel.`
 
 ::: details Show answer
 

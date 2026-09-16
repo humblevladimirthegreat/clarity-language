@@ -922,7 +922,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` | |
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
-| *page* | `ajel` | |
+| *page* | `ababel` | |
 | *pen* | `abenel` | |
 | *dove* | `odovel` | |
 | *seal* | `ezezam` | `ezezal` *seal* |
@@ -932,7 +932,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 **1.** *a page or a pen (the usual named menu)*
 
 ::: details Show answer
-`zajel zabenel zon.`
+`zababel zabenel zon.`
 
 z-page | z-pen | z-or-exactly-one.named
 :::
@@ -947,7 +947,7 @@ z-and.named
 **3.** *any of a dove, a page, or a pen is fine (no order)*
 
 ::: details Show answer
-`zodovel zajel zabenel zor.`
+`zodovel zababel zabenel zor.`
 
 z-dove | z-page | z-pen | z-anything
 :::
@@ -978,7 +978,7 @@ z-equal-rank.named
 *it's a draw* (stock)
 :::
 
-**2.** `zodovel zajel zabenel zer.`
+**2.** `zodovel zababel zabenel zer.`
 
 ::: details Show answer
 
@@ -1005,7 +1005,7 @@ z-anything-but
 *anything (goes)*
 :::
 
-**5.** `zezezam zajel zur.`
+**5.** `zezezam zababel zur.`
 
 ::: details Show answer
 

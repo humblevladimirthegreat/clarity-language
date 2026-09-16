@@ -158,10 +158,10 @@ describe("searchLexicon", () => {
   });
 
   it("attaches benchmark overlays to published roots", () => {
-    const ojuIndex = rows.findIndex((r) => r.clarity === "oju");
-    assert.ok(ojuIndex >= 0);
-    const rowOverlays = attached.get(ojuIndex) ?? [];
-    assert.ok(rowOverlays.some((o) => o.senseForm === "ojun" && o.pos === "z"));
+    const yin = rows.findIndex((r) => r.literal === "yin-yang");
+    assert.ok(yin >= 0);
+    const rowOverlays = attached.get(yin) ?? [];
+    assert.ok(rowOverlays.some((o) => o.kind === "benchmark" && o.pos === "z"));
   });
 
   it("finds join-act overlay van without a published row", () => {

@@ -232,7 +232,7 @@ strict: *Please don't walk — you should protect competence.*
 
 loose: *Please don’t walk — stay able.*
 
-**A:** `jem zuzur zubur zamar zal dohohum vazanul hadorom barl zanunul.`
+**A:** `jem zuzur zubur zamar zal dohohum vadanal hadorom barl zanunul.`
 
 gloss: `j-request` · `z-←Uzuzuxogoven` · `z-←Ubunexunowen` · `z-←Amadexonogon` · `z-and` · `d-home` · `v-standing` · `h-if` · `b-that-clause` · `z-rain`
 
@@ -248,7 +248,7 @@ strict: *Finally: goal #3. We (A and B and C) — pleasure met, medium activatio
 
 loose: *Finally, a third goal: we're actually enjoying this.*
 
-**C:** `huludol hanunul zenenun vawalal zul.`
+**C:** `hugudol hanunul zenenun vawalal zul.`
 
 gloss: `h-COMMON` · `h-rain` · `z-someone` · `v-walk` · `z-not`
 
@@ -298,7 +298,7 @@ loose: *Ha — we're home.*
 | `uzumu` | smile; *happy* (metaphorical) |
 | `abogo` | book |
 | `abaru` | playground; *play* |
-| `azanu` | standing / presence |
+| `adana` | standing / presence |
 | `ezehe` | speech; *dialogue* (metaphorical) |
 | `enenu` | someone (generic person) |
 | `aha` | interlocutors (inclusive *we*) |

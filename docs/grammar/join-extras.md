@@ -91,7 +91,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Ululon* | `ululon` | |
 | *Uhubun* | `uhubun` | |
 | *start* | `alalom` | `alalol` *play* |
-| *finish* | `egedam` | `egedal` *finish-line* |
+| *finish* | `unuhum` | `unuhul` *finish-line* |
 | *hand* | `ahanal` | |
 | *teamwork* | `ahadam` | `ahadal` *handball* |
 | *trophy* | `odobol` | |
@@ -114,7 +114,7 @@ z-Azawan | d-start | v-includes
 **2.** *Finish including Uhubun.*
 
 ::: details Show answer
-`zegedam gan buhubun.`
+`zunuhum gan buhubun.`
 
 z-finish | g-including | b-Uhubun
 :::
@@ -154,7 +154,7 @@ z-teamwork | g-exclusive-for | b-Uhubun
 **7.** *Ululon bars the finish (anything else is fine).*
 
 ::: details Show answer
-`zululon degedam vuon.`
+`zululon dunuhum vuon.`
 
 z-Ululon | d-finish | v-bars
 :::
@@ -178,7 +178,7 @@ z-Uhubun | d-start | v-includes
 *Uhubun includes the start.*
 :::
 
-**2.** `zegedam guan bemedal.`
+**2.** `zunuhum guan bemedal.`
 
 ::: details Show answer
 

@@ -82,10 +82,10 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("ul", "except");
     expectLine("zazawan velebel al bohohul.", "z-Azawan | v-sleep | in | b-house");
     expectLine("zodogolx al zagadal.", "z-dog-x | including | z-cat");
-    expectLine("zazawan ul bazadol vawalal oel budunul.", "z-Azawan | from | b-station | v-walk | toward | b-train");
+    expectLine("zazawan ul bazadol vawalal oel badadul.", "z-Azawan | from | b-station | v-walk | toward | b-train");
     expectLine("zazawan velebel al bohohul.", "z-Azawan | v-sleep | in | b-house");
     expectLine("zodogolx al zagadal.", "z-dog-x | including | z-cat");
-    expectLine("zazawan ul bazadol vawalal oel budunul.", "z-Azawan | from | b-station | v-walk | toward | b-train");
+    expectLine("zazawan ul bazadol vawalal oel badadul.", "z-Azawan | from | b-station | v-walk | toward | b-train");
     expectLine("hal", "h-never");
     expectLine("har", "h-sometimes");
     expectLine("jol zuhubun vawalal har?", "j-question | z-Uhubun | v-walk | h-when");
@@ -114,7 +114,7 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("zugobonx", "z-speaker-x");
     expectLine("zedonenx", "z-listener-x");
     expectLine("hadezem", "h-LIVE");
-    expectLine("homomem", "h-RESIDUE");
+    expectLine("honenom", "h-RESIDUE");
     expectLine("hemebem", "h-FORMER");
     expectLine("hemabam", "h-plan-sketch");
     expectLine("gonunul", "g-SAME");
@@ -147,8 +147,8 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("gobonem", "g-part-of");
     expectLine("gajaram", "g-contents");
     expectLine("gowodom", "g-material");
-    expectLine("gajabam", "g-origin");
-    expectLine("hazadum", "h-between");
+    expectLine("gugunom", "g-origin");
+    expectLine("hazanum", "h-between");
     expectLine("zejel", "z-eye");
     expectLine("hozal", "h-hash");
     expectLine("jam", "j-soft-statement");
@@ -247,11 +247,11 @@ describe("compareMorphGloss", () => {
       "z-mention | zazawan | vuzunul | g-small",
     );
     expectLine(
-      "zazawan d@[uzugon ululon] vawem",
+      "zazawan d@[uzugon ululon] vogozom",
       "z-Azawan | d-cite | Uzugon | Ululon | v-rejection",
     );
     expectLine(
-      "zazawan d@{uzugon} vawem",
+      "zazawan d@{uzugon} vogozom",
       "z-Azawan | d-uzugon | v-rejection",
     );
   });
@@ -307,7 +307,7 @@ describe("compareMorphGloss", () => {
 
   it("values bake stance and ending grain", () => {
     expectLine("zawaral gonogoxal", "z-wrapped-gift | g-relatedness-met-physical");
-    expectLine("hararem hanedem", "h-HIGH | h-CIRCUM");
+    expectLine("heregem hanedem", "h-HIGH | h-CIRCUM");
   });
 
   it("span interiors: cite and aside gloss English; mention passes through", () => {
