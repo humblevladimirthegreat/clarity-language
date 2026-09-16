@@ -42,7 +42,7 @@ export const Force = wordToken("Force");
 export const Polar = wordToken("Polar");
 export const Vocative = wordToken("Vocative");
 export const Linker = wordToken("Linker");
-export const Reviser = wordToken("Reviser");
+export const Hook = wordToken("Hook");
 export const SpanOpen = wordToken("SpanOpen");
 export const SpanClose = wordToken("SpanClose");
 export const WritingSpan = wordToken("WritingSpan");
@@ -72,7 +72,7 @@ export const allTokens = [
   Polar,
   Vocative,
   Linker,
-  Reviser,
+  Hook,
   SpanOpen,
   SpanClose,
   WritingSpan,
@@ -116,7 +116,7 @@ function isLinkerWord(word: LexWord): boolean {
 export function classifyToTokenType(word: LexWord): AgelanTokenType {
   const { family, pos, reading } = word;
 
-  if (family.kind === "reviser") return Reviser;
+  if (family.kind === "hook") return Hook;
   if (family.kind === "spanClose") return SpanClose;
   if (family.kind === "writingSpan") return WritingSpan;
   if (family.kind === "x" && family.xFamily === "span") return SpanOpen;

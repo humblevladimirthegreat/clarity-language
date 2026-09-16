@@ -150,14 +150,14 @@ Same English label for `zugobom` and `zugobon` is fine: both are the *speaker* s
 ### Ordinary lexicon plus packed role English
 <a id="no-lexicon-pos-specials"></a>
 
-Morph uses the published **literal** or **metaphor** for that ending, unless `english_by_pos` lists a lemma for this role letter and sense ([role English](#role-english)). Do **not** invent a new English root just because the word is under `/v/`. Closed overlays, joins, revisers, speech-act vowels, and house names stay specials.
+Morph uses the published **literal** or **metaphor** for that ending, unless `english_by_pos` lists a lemma for this role letter and sense ([role English](#role-english)). Do **not** invent a new English root just because the word is under `/v/`. Closed overlays, joins, hooks, speech-act vowels, and house names stay specials.
 
 | Agalan | Morph | Free English |
 |--------|--------|------------------------------|
 | `vejel` | `v-see` | *sees* |
 | `vajul` | `v-sit` | *sits* |
 | `vezehel` | `v-tell` | *tells* |
-| `hogorem` | `h-inside` | *inside* |
+| `al bohohul` | `in | b-house` | *in a house* |
 | `welem` | `w-very` | *very* |
 | `zejel` | `z-eye` | *the eye* (no packing on `/z/`) |
 
@@ -186,7 +186,7 @@ Lexicon search indexes those lemmas. Morph uses the packed lemma for that role l
 - **-l / -m / -n** — **omit**. They only choose which English sense-root is in play. Do not re-spell them as `-l` / `-m` / `-n` or as `@` / `~`.
 - **Names** — the english slot is the **English name** (`z-Azawan`, `z-Hamlet`, `z-Abogon`, `z-Uzuzu-x-Ogove`), not the virtue or kind that formed the stem, and not `z-grace@`.
 - **-x** — append `-x` when the written word has associative / address-set / collective **-x** (`z-Azawan-x`, `z-speaker-x`, `z-listener-x`).
-- **Prefix-less** revisers: English only — `instead`, `rather`, `additionally` (no fake PoS).
+- **Prefix-less** hooks: English only — `instead`, `rather`, `additionally`, `in`, `using` (no fake PoS).
 - **Specials / overlays / joins** — still the overlay or join job (`z-speaker`, `v-and`), never `@` because the word happens to end in **-n**.
 
 Separate **words** with spaced `|` (`z-dog | v-walk`). One morph gloss line per Agalan line (or per turn). In an [example block](#example-block), leave that line **roman** (no italics, no backticks on pieces; tables may still put a morph cell in backticks). Mid-word **`x`** stays inside one piece (`wish-x-guidance`). See [word separator](#gloss-separator).
@@ -293,7 +293,7 @@ Speech/writing reports (*said “X,”* *sang “X,”* *don’t “halt”*) ar
 
 ### Underspecification and joins
 
-Bake join / reviser **job** into the English label (including open vs closed when it matters). Do not re-attach sense-picking endings:
+Bake join / hook **job** into the English label (including open vs closed when it matters). Do not re-attach sense-picking endings:
 
 | Agalan | Morph gloss |
 |---------|-------------|

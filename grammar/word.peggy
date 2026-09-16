@@ -109,7 +109,7 @@ Word
   = spanClose
   / writingSpan
   / freeNumber
-  / reviser
+  / hook
   / prefixedWord
   / citation
 
@@ -117,7 +117,7 @@ Word
 probe_spanClose = word:spanClose EOF { return word; }
 probe_writingSpan = word:writingSpan EOF { return word; }
 probe_freeNumber = word:freeNumber EOF { return word; }
-probe_reviser = word:reviser EOF { return word; }
+probe_hook = word:hook EOF { return word; }
 probe_prefixedWord = word:prefixedWord EOF { return word; }
 probe_citation = word:citation EOF { return word; }
 
@@ -434,18 +434,18 @@ PoslessNumberStem
       return stem;
     }
 
-// ── Revisers (prefix-less; ending required; no -r / -x) ─────────────────────
+// ── Hooks (prefix-less; ending required; no -r / -x) ────────────────────────
 
-reviser
-  = form:ReviserForm WordEnd {
+hook
+  = form:HookForm WordEnd {
       return makeWord(form, {
-        ending: form.charAt(1),
-        family: { kind: "reviser", form },
+        ending: form.charAt(form.length - 1),
+        family: { kind: "hook", form },
       });
     }
 
-ReviserForm
-  = [aeou] [lmn] { return text(); }
+HookForm
+  = ("ao" / "ae" / "oe" / "ua" / "uo" / "ue" / [aeou]) [lmn] { return text(); }
 
 // ── Prefixed words (PoS + body) ─────────────────────────────────────────────
 

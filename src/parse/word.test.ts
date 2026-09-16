@@ -254,11 +254,13 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     }
   });
 
-  it("parses revisers al and om (revisers.md)", () => {
-    assert.deepEqual(parseOk("al").family, { kind: "reviser", form: "al" });
+  it("parses hooks al, om, and ael (hooks.md)", () => {
+    assert.deepEqual(parseOk("al").family, { kind: "hook", form: "al" });
     assert.equal(parseOk("al").ending, "l");
-    assert.deepEqual(parseOk("om").family, { kind: "reviser", form: "om" });
+    assert.deepEqual(parseOk("om").family, { kind: "hook", form: "om" });
     assert.equal(parseOk("om").ending, "m");
+    assert.deepEqual(parseOk("ael").family, { kind: "hook", form: "ael" });
+    assert.equal(parseOk("ael").ending, "l");
   });
 
   it("parses citation ululon (reviser prefix is not a word by itself)", () => {

@@ -353,13 +353,13 @@ Hosted: noun bolted onto a complex `/ɡ/` or `/h/`. Unhosted: recipient or addre
 
 ### Locative relation
 
-Place how (*inside*, *at*, *on*, *from*, *toward*, *through*, *out of*, *between*) as hosted `/h/` or `/ɡ/` plus landmark `/b/`. A *from A to B* path is two of those units (source, then goal).
+Place how (*in*, *at*, *on*, *from*, *toward*, *through*, *out of*) as extra-noun [hooks](hooks.md#extra-noun) plus landmark `/b/`. *Between* is hosted `/h/` or `/ɡ/` plus a `/b/` join. A *from A to B* path is two hook extras (source, then goal).
 
 [Relations](relations.md#locative-relations)
 
 ### Means
 
-Hosted `/h/` or `/ɡ/` **`ahanam`** plus implement `/b/` (*using / with* a tool). Not join-relation *with*, not role **`exROOT`**.
+Extra-noun [hook](hooks.md#extra-noun) **`ael`** plus implement `/b/` (*using / with* a tool). Not join-relation *with*, not role **`exROOT`**.
 
 [Relations](relations.md#means)
 
@@ -377,7 +377,7 @@ Hosted `/h/` or `/ɡ/` **`uhanem`** plus consideration `/b/` (*in exchange for* 
 
 ### Proxy (*on behalf of*)
 
-Hosted `/h/` or `/ɡ/` **`udagam`** plus principal `/b/` (*on behalf of* Ululon). Not reviser *instead*, not recipient `/b/`.
+Hosted `/h/` or `/ɡ/` **`udagam`** plus principal `/b/` (*on behalf of* Ululon). Not hook *instead*, not recipient `/b/`.
 
 [Relations](relations.md#proxy)
 
@@ -633,11 +633,11 @@ Content / span / number **-r** pointing back.
 
 **Compare with:** join / restrictor **-r** is an [unspecified member](#unspecified-member). English *the dog that…* is two sentences, then this resume ([which person or thing](dependents.md#which-noun)).
 
-### Reviser
+### Hook
 
-Prefix-less *including / rather / instead / except* (in-clause vs discourse by placement).
+Prefix-less *including / rather / instead / except*, discourse glue, and extra-noun **in** / **on** / **at** / **toward** / **from** / **out of** / **through** / **for** / **using** / **against** (placement decides the job).
 
-[Revisers](revisers.md)
+[Hooks](hooks.md)
 
 ### Role compound / agent / instrument / patient / reltum
 

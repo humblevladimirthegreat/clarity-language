@@ -130,8 +130,8 @@ Path items joined with `·` are **co-located**, not ordered. Do **not** recycle 
 
 | Slot | Files |
 |------|--------|
-| 9 | `pronouns.md` · `plurality.md` |
-| 13 | `revisers.md` · `restrictors.md` |
+| 7 | `pronouns.md` · `plurality.md` |
+| 12 | `hooks.md` · `restrictors.md` |
 | 15 | `numbers.md` · `numbers-applied.md` · `comparatives.md` · `causation.md` |
 | 16 | `values.md` · `ability.md` · `knowing.md` · `roles.md` · `x-compounds.md` · `intention.md` |
 
@@ -177,8 +177,8 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `questions.md` | Beginner | a lost-and-found |
 | `questions.md` | Intermediate | a detective interview |
 | `questions.md` | Advanced | a quiz show |
-| `revisers.md` | Beginner | a restaurant pass |
-| `revisers.md` | Intermediate | a newsroom |
+| `hooks.md` | Beginner | a restaurant pass |
+| `hooks.md` | Intermediate | a newsroom |
 | `restrictors.md` | Beginner | a swimming pool |
 | `restrictors.md` | Intermediate | a mountain trail |
 | `spans.md` | Beginner | a rehearsal |
@@ -265,17 +265,17 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | — | `introduction.md` | skip | — | orientation |
 | 3 | `phonology.md` | skip | — | not translation |
 | 4 | `reference-suffix.md` | **exists** | Choose **-l** vs **-m** vs **-n** on a **citation** (prefix-less); named person vs kind vs metaphor; **greeting** named citation with period (`azawan.`) | No sentences with role letters. No **-r**. Pointers to **-x** / **`gl-`**: do **not** make those the item. No vocative `/j/` |
-| 5 | `clause.md` | **exists** | PoS letters; SVO; `/ɡ/` after noun; `/w/`; `/h/`; hosted `/ɡ|h/`+`/b/` (*inside*); unhosted `/b/` recipient/addressee; omit **`jal`**; **`jol` / `jel` / `jul`**; **vocative** `/j/` + house name (`jululon`); house names; **-l** / **-m** / **-n** as used in examples | Do not use **`gl-`**, **`jam`/`jom`/`jem`/`jum`**, **`darl`**, `/x/`, nested **`barl`**, letter **-r** mechanism, **-x**, joins. Polar **`jael` / `juel`** is questions, not this stage. Greeting citations are reference-suffix, not this stage. No greeting-bid **`x`** vowel |
-| 6 | `dependents.md` | **exists** | Two-sentence *who / that / which*; **`darl` last**; adverbial subordinators (`hurugum` / `hadorom` / `hezazem` / `hezebam` / `hegemum` / `hudumem` / `hababam` / `horanem` / `holalam` **`barl`**; *despite* = **`hezebam`** + `/b/` noun; intended *for* = **`holalam`** + `/b/` noun); `/x/` continue vs `/j/` turn; `/x/` linker may start the next written sentence after `.` | Do not use nested **`barl`**, letter **-r** mechanism. Recycle clause speech-act **`jol`/`jel`/`jul`** |
-| 7 | `relations.md` | **exists** | Hosted pair for means **`hahanam`**, simile **`hurorom`**, exchange **`huhanem`**, proxy **`hudagam`** | Recycle clause hosted `/b/`. No locatives inventory, no of-relations, no **`barl`** |
-| 8 | `pronouns.md` | **exists** | Letter vs full-root **-r**; specials **`ugobo` / `edone` / `aha` / `enenu`** (when the *role* is the point); inclusive *we* **`aha`** | Do **not** test associative **-x** here (plurality Beginner). Default people still house names; specials only when testing specials |
-| 8 | `plurality.md` | **exists** | Associative **-x** (`-lx` / `-nx` / `-rx`); not agreement; person-role **-x** (address set vs name…**-x**) | **`aha`** as the *not this* for inclusive *we*. **`ugobo`/`edone`** only on person-role items |
-| 9 | `predication.md` | **exists** | Classification `z… g…` vs kind *noun* `zodogol`; identity **`gonunul` + `/b/`** | No general *to-be* `/v/`. Prefer house names + **SAME**; page-example roots (`odava` / `uzuba`) OK if already taught in this stage |
-| 10 | `vowel-series.md` | skip | — | mnemonic only |
-| 11 | `joins.md` | **exists** | Right-close fence; set vs rank vowels; **-l** vs **-m**; list / single-item / standalone starter forms; negation **`u`**; unspecified **-r** as *something* (not fill-ask) | No revisers, no restrictor `/h/` join readings, no comparatives SHARED scale as the point (that is comparatives) |
-| 12 | `questions.md` | **exists** | **`jol`/`jom`** yes/no vs fill-ask (join **-r**); fill-all; polar **`jael` / `juel` / `jaol`** vs **`jul`** vs join **`zul`** | **`jom`** is taught here as soft *ask* — allowed on this page even though full speech-act twins are core Intermediate. Circumstance *when?* **`har`** is Intermediate on this page — do not use |
-| 13 | `revisers.md` | **exists** | Prefix-less **`al`/`am`/`ol`/`ul`** (and **e** / **n** as taught in this stage); in-clause `A REV B`; discourse **`al`** *additionally* before a body | Not a join (`zam` vs `am`). Not **`x#e-` / `x#e`** (numbers discourse) |
-| 13 | `restrictors.md` | **exists** | **`hal`/`ham`/`hual`/`huam`/`har`/`hor`/`hur`** (and `/w/` twins); *only when* vs co-manner *and*; bare *never* / *always* | Not sibling revisers. Not join **`zam`** as a restrictor |
+| 5 | `clause.md` | **exists** | PoS letters; SVO; `/ɡ/` after noun; `/w/`; `/h/`; hosted `/ɡ|h/`+`/b/` (*like*); unhosted `/b/` recipient/addressee; omit **`jal`**; **`jol` / `jel` / `jul`**; **vocative** `/j/` + house name (`jululon`); house names; **-l** / **-m** / **-n** as used in examples | Do not use **`gl-`**, **`jam`/`jom`/`jem`/`jum`**, **`darl`**, `/x/`, nested **`barl`**, letter **-r** mechanism, **-x**, joins. Polar **`jael` / `juel`** is questions, not this stage. Greeting citations are reference-suffix, not this stage. No greeting-bid **`x`** vowel |
+| 6 | `dependents.md` | **exists** | Two-sentence *who / that / which*; **`darl` last**; adverbial subordinators (`hurugum` / `hadorom` / `hezazem` / `hezebam` / `hegemum` / `hudumem` / `hababam` / `horanem` / `holalam` **`barl`**; *despite* = **`hezebam`** + `/b/` noun); `/x/` continue vs `/j/` turn; `/x/` linker may start the next written sentence after `.` | Do not use nested **`barl`**, letter **-r** mechanism. Recycle clause speech-act **`jol`/`jel`/`jul`** |
+| 13 | `relations.md` | **exists** | Hosted pair for simile **`hurorom`**, exchange **`huhanem`**, proxy **`hudagam`** | Recycle clause hosted `/b/` and hooks extra-noun. No *between*, no of-relations, no **`barl`**. Not **`hahanam`** |
+| 7 | `pronouns.md` | **exists** | Letter vs full-root **-r**; specials **`ugobo` / `edone` / `aha` / `enenu`** (when the *role* is the point); inclusive *we* **`aha`** | Do **not** test associative **-x** here (plurality Beginner). Default people still house names; specials only when testing specials |
+| 7 | `plurality.md` | **exists** | Associative **-x** (`-lx` / `-nx` / `-rx`); not agreement; person-role **-x** (address set vs name…**-x**) | **`aha`** as the *not this* for inclusive *we*. **`ugobo`/`edone`** only on person-role items |
+| 8 | `predication.md` | **exists** | Classification `z… g…` vs kind *noun* `zodogol`; identity **`gonunul` + `/b/`** | No general *to-be* `/v/`. Prefer house names + **SAME**; page-example roots (`odava` / `uzuba`) OK if already taught in this stage |
+| 9 | `vowel-series.md` | skip | — | mnemonic only |
+| 10 | `joins.md` | **exists** | Right-close fence; set vs rank vowels; **-l** vs **-m**; list / single-item / standalone starter forms; negation **`u`**; unspecified **-r** as *something* (not fill-ask) | No hooks, no restrictor `/h/` join readings, no comparatives SHARED scale as the point (that is comparatives) |
+| 11 | `questions.md` | **exists** | **`jol`/`jom`** yes/no vs fill-ask (join **-r**); fill-all; polar **`jael` / `juel` / `jaol`** vs **`jul`** vs join **`zul`** | **`jom`** is taught here as soft *ask* — allowed on this page even though full speech-act twins are core Intermediate. Circumstance *when?* **`har`** is Intermediate on this page — do not use |
+| 12 | `hooks.md` | **exists** | Prefix-less **hooks** (**`al`/`am`/`ol`/`ul`/`el`**); in-clause `A HOOK B`; discourse **`al`** *additionally*; extra-noun **`al`/`ol`/`ul`/`el`** + `/b/` (**in** / **at** / **from** / **for**) | Not a join (`zam` vs `am`). Not stacked extra-noun (`aol` / `ael`). Not **`x#e-` / `x#e`**
+| 12 | `restrictors.md` | **exists** | **`hal`/`ham`/`hual`/`huam`/`har`/`hor`/`hur`** (and `/w/` twins); *only when* vs co-manner *and*; bare *never* / *always* | Not sibling hooks. Not join **`zam`** as a restrictor |
 | 14 | `spans.md` | **exists** | Writing fences `[ ]` `{ }` `( )` `< >`; **`~`/`@`**; resume `d[=]`; PoS = outer slot; **aside** = `h(…)`; interior fragment or same-speech-act clause; when a span is required vs nativized word | `<>` loans **allowed** (this stage teaches them). Prefer atomic one-token cites |
 | 15 | `numbers.md` | **exists** | `g+N` count; `g#N` ordinal; digitless **`g+`** (*more than one*) with **-x** on the noun | No `/v/` `/h/` `/j/` `/x/` number uses, exponents, ranges, percent, measures (later). **-x** from plurality is recycle |
 | 15 | `comparatives.md` | **exists** | Rank fence **`e`/`oe`/`ue`** + SHARED scale `/ɡ/`; single-item superlative; equative **`ae`** | **Needs:** joins Beginner rank joins. No measure phrases (Intermediate). No numbers Intermediate |
@@ -297,7 +297,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 5 | `clause.md` | Intermediate | **exists** | **`jam`/`jom`/`jem`/`jum`**; **`gl-`**; adverb topic `/h/`+`/b/`; complex chaining; number-as-interjection pointer only if the stage’s examples already show it | Do not require numbers Intermediate readings |
 | 5 | `clause.md` | Advanced | **exists** | Leftmost content-word prominence; English cleft / *what*-cleft / fronted adverb | 4–6 items. Weak-pause cues are recognition, not the drill |
 | 6 | `dependents.md` | Intermediate | **exists** | `/x/` linkers (`xezazal`, `xezebal`, …); nested **`barl`**; stand-in vowels; which-noun with resume | Recycle Beginner **`darl`/`barl`** |
-| 7 | `relations.md` | Intermediate | **exists** | locative relations (`hogorem`, `hubuhum`, `haladem`, `hebarum`, `hobowam`, `hezewum`, `hejegem`, `hazadum`); of-relations (`gobonem`, `gajaram`, `gowodom`, `gajabam`) | *Between* recycles joins Beginner `/b/` join. Of-relation drills wait for **replace** |
+| 13 | `relations.md` | Intermediate | **exists** | *between* **`hazadum`**; of-relations (`gobonem`, `gajaram`, `gowodom`, `gajabam`); recycle extra-noun hooks for other place talk | *Between* recycles joins Beginner `/b/` join |
 | 4 | `reference-suffix.md` | Intermediate | **exists** | **-n** on any PoS (titled verb/adjective/adverb); phrasal proper names `ROOTxROOT`+**-n**; office **handles** as first-mention **-n** | Not value/ability/plan ending tables |
 | 4 | `reference-suffix.md` | Advanced | skip | — | no Advanced stage |
 | 9 | `pronouns.md` | Intermediate | **exists** | English approximations of **-r**; `/x/`…`-r` thread resume vs `/h/` aboutness; **`aha`** vs name join vs name…**-x** | |
@@ -310,8 +310,8 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 11 | `joins.md` | Advanced | **exists** | Named phrase **-n**; one rare-arity or reserved contrast from this stage | 4–6 items |
 | 12 | `questions.md` | Intermediate | **exists** | Fuller polar inventory; confirming a negative; fill-ask arity; occasion **`har`**; yes/no with single-item/standalone; fill-ask answers | |
 | 12 | `questions.md` | Advanced | **exists** | Polar contrasts; single-item/standalone inventory under question | 4–6 items |
-| 13 | `revisers.md` | Intermediate | **exists** | Ending grids; parallel chains; discourse placements (before the act word, `/x/` continue/linker) | |
-| 13 | `revisers.md` | Advanced | skip | more examples / reserved | |
+| 12 | `hooks.md` | Intermediate | **exists** | Ending grids; parallel chains; discourse placements; extra-noun stacks (`aol` / `oel` / `ual` / `uol` / `ael` / `uel`) and extra-noun **-m** | |
+| 12 | `hooks.md` | Advanced | skip | more examples / reserved | |
 | 13 | `restrictors.md` | Intermediate | **exists** | Defined core (full); conjuncts; dependent *when* | |
 | 13 | `restrictors.md` | Advanced | — | no Advanced stage | |
 | 14 | `spans.md` | Intermediate | **exists** | Spoken open shape; TYPE; EDGE; endings; nesting; **`^ … ^`** scope islands; mention of a handle **form** vs office **-n** | |
@@ -360,7 +360,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | **SAME** `gonunul` | `predication.md` Beginner |
 | Phrase/VP/clause joins, **`zal`/`zam`/`zel`**, negation **`u`** | `joins.md` Beginner |
 | Fill-ask join **-r** (`zar` / `var` / `xar`); polar **`juel`/`jaol`** as the *system* | `questions.md` Beginner |
-| Revisers **`al`/`ol`/`ul`** | `revisers.md` Beginner |
+| Hooks **`al`/`ol`/`ul`** | `hooks.md` Beginner |
 | **`hal`/`hual`/`har`** | `restrictors.md` Beginner |
 | Span brackets / `<>` | `spans.md` Beginner |
 | `g+N` / `g#N` / `g+` | `numbers.md` Beginner |

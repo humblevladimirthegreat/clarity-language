@@ -9,7 +9,8 @@ local llm systematically review entire lexicon
 finish English cheat sheets, including tense
 add Agalan cheat sheet
 consider making negatives clearer with stacked u
-double check we have covered tenses adequately
+revamp tense/setting system based on as-of
+final exam
 
 ## Evidentiality / tense
 

@@ -19,6 +19,11 @@
       "from": "/grammar/plan-decision.html",
       "to": "/grammar/intention.html",
       "note": "Public URL after renaming plan-decision.md to intention.md."
+    },
+    {
+      "from": "/grammar/revisers.html",
+      "to": "/grammar/hooks.html",
+      "note": "Public URL after renaming revisers.md to hooks.md."
     }
   ]
 }

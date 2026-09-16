@@ -867,7 +867,7 @@ Most other phrase joins need two or more items. These edge readings keep a defin
 >
 > "any of tea, coffee, or water is fine (no order)."
 
-**For *except*, use:** reviser **`ul`** / **`um`** — [revisers](revisers.md). Prefixed **`zur`** is unspecified *something else*. Nest when you need a rare mix (closed list but optional: `zadedal zogovel zol zal`).
+**For *except*, use:** hook **`ul`** / **`um`** — [hooks](hooks.md). Prefixed **`zur`** is unspecified *something else*. Nest when you need a rare mix (closed list but optional: `zadedal zogovel zol zal`).
 
 
 ### Allowed joins by PoS
@@ -897,13 +897,13 @@ These limits apply to every join.
 | Shared modifiers | only immediately after each join |
 | Phrase **-r** | only **…ar** / **…or** / **…er** / **…ur** |
 | Verb+object packages | verb-phrase `/v/`; full sentences use `/x/` |
-| Same role letter on every item | in-clause *including* / *rather* / *instead* / *except* are [revisers](revisers.md) |
+| Same role letter on every item | in-clause *including* / *rather* / *instead* / *except* are [hooks](hooks.md) |
 | Cite / mention / aside | [span fences](spans.md) |
 | Numbered *first / second* in talk | [numbers](numbers.md#number-as-discourse-marker-by-marker) |
 | Every join | role letter plus an ending |
 | Several manners on `/h/` `/w/` | juxtaposition (`hadazal howol`) |
 
-**Compare with:** prefix-less **`al`** / **`am`** / … are [revisers](revisers.md). Under `/h/` `/w/`, the unit is a [restrictor](restrictors.md), not sibling *and*.
+**Compare with:** prefix-less **`al`** / **`am`** / … are [hooks](hooks.md). Under `/h/` `/w/`, the unit is a [restrictor](restrictors.md), not sibling *and*.
 
 *Because* / *if* use `/h/` plus `/b/` [**`barl`**](dependents.md#dependent-clauses). Floating `/h/` inside a noun, adjective, or `/b/` join does not end the list. Verb-chain `/h/` scope: [VP and clause forms](#vp-clause-forms). Each clause-level item is a full clause body.
 
@@ -1016,7 +1016,7 @@ z-imprimatur | z-page | z-something-else
 
 ## See also
 
-- Prefix-less revision (*including* / *rather*): [revisers.md](revisers.md)
+- Prefix-less revision (*including* / *rather*): [hooks.md](hooks.md)
 - Applicability *when* under `/h/` `/w/`: [restrictors.md](restrictors.md)
 - Fill-ask and yes/no on single-item/standalone joins: [questions.md](questions.md)
 - Join-act verbs / join-relations: [join-extras.md](join-extras.md)

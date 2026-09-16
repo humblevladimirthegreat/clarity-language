@@ -22,7 +22,7 @@ import {
   Period,
   Polar,
   QMark,
-  Reviser,
+  Hook,
   SpanClose,
   SpanOpen,
   V,
@@ -106,7 +106,7 @@ class AgelanSentenceParser extends CstParser {
   public utterance = this.RULE("utterance", () => {
     this.OR([
       {
-        GATE: () => tokenIs(this.LA(1), Polar, Vocative, Force, Reviser),
+        GATE: () => tokenIs(this.LA(1), Polar, Vocative, Force, Hook),
         ALT: () => {
           this.SUBRULE(this.leftEdge);
           this.OPTION(() => {
@@ -142,7 +142,7 @@ class AgelanSentenceParser extends CstParser {
             this.OR2([
               { ALT: () => this.CONSUME(Vocative) },
               { ALT: () => this.CONSUME(Polar) },
-              { ALT: () => this.CONSUME(Reviser) },
+              { ALT: () => this.CONSUME(Hook) },
             ]);
           });
           this.OPTION(() => {
@@ -223,7 +223,7 @@ class AgelanSentenceParser extends CstParser {
         GATE: () => tokenIs(this.LA(1), H, JoinH),
         ALT: () => this.SUBRULE(this.hCoord),
       },
-      { ALT: () => this.CONSUME(Reviser) },
+      { ALT: () => this.CONSUME(Hook) },
     ]);
   });
 
@@ -827,8 +827,8 @@ function buildUnit(cst: CstNode): Unit {
     const hs = flattenHUnits(h);
     return hs[0] ?? { kind: "h", unit: { word: lexWordFromToken(childToken(h, "H")!), } };
   }
-  const reviser = childToken(cst, "Reviser");
-  if (reviser) return { kind: "reviser", word: lexWordFromToken(reviser) };
+  const hook = childToken(cst, "Hook");
+  if (hook) return { kind: "hook", word: lexWordFromToken(hook) };
   throw new SentenceParseError(`Unhandled unit: ${Object.keys(cst.children).join(",")}`);
 }
 
@@ -845,8 +845,8 @@ function expandUnits(cst: CstNode): Unit[] {
   if (g) return flattenGCoord(g);
   const h = childNodes(cst, "hCoord")[0];
   if (h) return flattenHUnits(h);
-  const reviser = childToken(cst, "Reviser");
-  if (reviser) return [{ kind: "reviser", word: lexWordFromToken(reviser) }];
+  const hook = childToken(cst, "Hook");
+  if (hook) return [{ kind: "hook", word: lexWordFromToken(hook) }];
   return [buildUnit(cst)];
 }
 
@@ -890,7 +890,7 @@ function buildLeftEdge(cst: CstNode | undefined): LeftEdge {
 
   const vocatives = childTokens(cst, "Vocative").map(lexWordFromToken);
   const polars = childTokens(cst, "Polar").map(lexWordFromToken);
-  const reviserTok = childToken(cst, "Reviser");
+  const hookTok = childToken(cst, "Hook");
   const forceTok = childToken(cst, "Force");
   const force = forceTok ? lexWordFromToken(forceTok) : undefined;
   const impliedForce = force ? undefined : impliedForceFromPolars(polars) ?? "jal";
@@ -898,7 +898,7 @@ function buildLeftEdge(cst: CstNode | undefined): LeftEdge {
   return {
     vocatives,
     polars,
-    reviser: reviserTok ? lexWordFromToken(reviserTok) : undefined,
+    hook: hookTok ? lexWordFromToken(hookTok) : undefined,
     force,
     impliedForce,
   };
@@ -1033,7 +1033,7 @@ function validateResult(result: ParseResult): void {
       utterance.left.vocatives.length === 0 &&
       utterance.left.polars.length === 0 &&
       !utterance.left.force &&
-      !utterance.left.reviser &&
+      !utterance.left.hook &&
       utterance.bodies.length === 0
     ) {
       throw new SentenceParseError("Empty utterance");

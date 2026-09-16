@@ -410,7 +410,7 @@ Standalone **`e`** + **-r** = unspecified member of the *\< X* ray (`zer z+5` â†
 ### Half-open (exclude the high end only)
 <a id="half-open-exclude-the-high-end-only"></a>
 
-A [reviser](revisers.md) **inside the range** marks an exclusive **upper** bound. Replace the second (high) conjunct with prefix-less **`ul`** + that number. SHARED continuum is required. The low endpoint stays inclusive.
+A [hook](hooks.md) **inside the range** marks an exclusive **upper** bound. Replace the second (high) conjunct with prefix-less **`ul`** + that number. SHARED continuum is required. The low endpoint stays inclusive.
 
 | Agalan | Use | English |
 |--------|-----|---------|
@@ -418,7 +418,7 @@ A [reviser](revisers.md) **inside the range** marks an exclusive **upper** bound
 | `z+3 ul z+5 zal gurulel` | exclusive high | *[3, 5)*: *3 up to but not including 5* |
 | `z+3 ul z+5 zel gurulel` | directed exclusive high | *from 3 up to but not including 5* |
 
-Open **`um`** on the high end = soft / non-exhaustive exclusion of that bound. Other revision vowels (**`al`** / **`el`** / **`ol`**) are ordinary revisers, not range-bound markers.
+Open **`um`** on the high end = soft / non-exhaustive exclusion of that bound. Other revision vowels (**`al`** / **`el`** / **`ol`**) are ordinary hooks, not range-bound markers.
 
 Fence **-l** / **-m** / **-n** keep ordinary closed / open / named senses on the range (*exactly this band* / *around this band* / *the teens*-style label). Endpoint [number endings](numbers.md#number-endings) still apply (**-m** â‰ˆ fuzzy that bound).
 

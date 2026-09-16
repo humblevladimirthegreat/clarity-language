@@ -173,7 +173,7 @@ function isContentAnaphor(word: LexWord): boolean {
   if (word.reading === "value" || word.reading === "ability") return false;
   if (word.reading === "restrictor" || word.reading === "mood") return false;
   if (word.family.kind === "joinMarker") return false;
-  if (word.family.kind === "reviser" || word.family.kind === "spanClose") return false;
+  if (word.family.kind === "hook" || word.family.kind === "spanClose") return false;
   if (isSpanAnaphor(word) || isNumberAnaphor(word) || isRoleAnaphor(word)) return false;
   return contentRoots(word).length > 0;
 }
@@ -381,7 +381,7 @@ function considerUnit(ctx: Ctx, unit: Unit): void {
       considerHUnit(ctx, unit.unit);
       return;
     case "linker":
-    case "reviser":
+    case "hook":
     case "writingSpan":
       considerWord(ctx, unit.word);
       return;
@@ -416,7 +416,7 @@ function considerUtterance(ctx: Ctx, utterance: Utterance, utteranceIndex: numbe
 
   for (const vocative of utterance.left.vocatives) considerWord(ctx, vocative);
   for (const polar of utterance.left.polars) considerWord(ctx, polar);
-  if (utterance.left.reviser) considerWord(ctx, utterance.left.reviser);
+  if (utterance.left.hook) considerWord(ctx, utterance.left.hook);
   if (utterance.left.force) considerWord(ctx, utterance.left.force);
 
   for (const body of utterance.bodies) considerBody(ctx, body);

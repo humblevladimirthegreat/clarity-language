@@ -82,7 +82,7 @@ const TOP_PROBES = [
   "probe_spanClose",
   "probe_writingSpan",
   "probe_freeNumber",
-  "probe_reviser",
+  "probe_hook",
   "probe_prefixedWord",
   "probe_citation",
 ] as const;

@@ -51,11 +51,11 @@ When a noun or event is *framed* toward something (*cake with peanuts*, *walk wi
 
 Content *including* needs that `/b/` (`gan b…`). A stock label uses a [mention](spans.md) span.
 
-**Compare with:** *writes with a hammer* is [means](relations.md#means) (`hahanam` + `/b/`), not **`han`**. **`han`** is company / including, not the tool. *Tells on behalf of Ululon* is [proxy](relations.md#proxy) (`hudagam`), not **`hon`** *exclusively for*.
+**Compare with:** *writes with a hammer* is an extra-noun [hook](hooks.md#extra-noun) (`ael` + `/b/`), not **`han`**. **`han`** is company / including, not the tool. *Tells on behalf of Ululon* is [proxy](relations.md#proxy) (`hudagam`), not **`hon`** *exclusively for*. **`uel`** is *against* that party, not **`hun`** *refusing*.
 
 **Not the same job as:** adjective [joins](joins.md) (`gal` / `gam` / `gar`). Join-relations take **-n** toward one `/b/`.
 
-**For *including* as an afterthought, use:** a [reviser](revisers.md) (`al`, …). `zahadam gan bazawan` is *a team including Azawan*; `zahadam al zazawan` is *the team, including Azawan*.
+**For *including* as an afterthought, use:** a [hook](hooks.md) (`al`, …). `zahadam gan bazawan` is *a team including Azawan*; `zahadam al zazawan` is *the team, including Azawan*.
 
 For several members or an empty domain, put a [phrase join](joins.md) **inside** the `/b/` phrase (`gan babanul bubagem bal`), or use a [standalone](joins.md#standalone-phrase) `/b/` join as the only argument (`gan bar` = *including something*; `guan bal` = *excluding nothing* / stripped frame).
 
@@ -245,5 +245,5 @@ z-Ululon | h-anything-but | b-Uhubun | v-scream
 
 - List joins (right-close fence): [joins.md](joins.md)
 - Causal readings of open / without: [causation.md](causation.md)
-- Prefix-less *including* / *instead*: [revisers.md](revisers.md)
+- Prefix-less *including* / *instead*: [hooks.md](hooks.md)
 - Clause *with* a tool: [clause.md](relations.md#means)

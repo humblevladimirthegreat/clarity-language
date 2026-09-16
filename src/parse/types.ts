@@ -79,7 +79,7 @@ export type MorphWordFamily =
       numberStem?: NumberStem;
     }
   | { kind: "spanClose"; flavor: SpanCloseFlavor }
-  | { kind: "reviser"; form: string }
+  | { kind: "hook"; form: string }
   | { kind: "joinMarker"; series: string }
   | {
       kind: "writingSpan";
@@ -170,7 +170,7 @@ export type PunctKind = "period" | "qmark" | "bang";
 export type LeftEdge = {
   vocatives: LexWord[];
   polars: LexWord[];
-  reviser?: LexWord;
+  hook?: LexWord;
   force?: LexWord;
   impliedForce?: ImpliedForce;
 };
@@ -234,7 +234,7 @@ export type Unit =
   | { kind: "predicate"; adj: GPackage }
   | { kind: "h"; unit: HUnit }
   | { kind: "linker"; word: LexWord }
-  | { kind: "reviser"; word: LexWord }
+  | { kind: "hook"; word: LexWord }
   | { kind: "span"; span: SpanUnit }
   | { kind: "writingSpan"; word: LexWord }
   | { kind: "island"; island: IslandUnit }

@@ -78,19 +78,19 @@ When you say **how, when, or where** an action happens, use `/h/` (an **adverb**
 
 `/b/` names an extra person or thing. It has two jobs, and you can tell them apart from the word **immediately before** `/b/`. `/w/` never hosts `/b/` (it only grades the previous `/ɡ/` or `/h/`).
 
-**Hosted.** Some adjectives and adverbs name a **relation** that needs another person or thing (*inside …*). Put that extra noun in `/b/` **right after** the `/ɡ/` or `/h/` word. The root on the `/ɡ/` or `/h/` word names the relation; `/b/` marks the noun that completes it. Keep that pair together.
+**Hosted.** Some adjectives and adverbs name a **relation** that needs another person or thing (*like …*). Put that extra noun in `/b/` **right after** the `/ɡ/` or `/h/` word. The root on the `/ɡ/` or `/h/` word names the relation; `/b/` marks the noun that completes it. Keep that pair together.
 
-> `hogorem bohohul`
+> `hurorom bazawan`
 >
-> h-inside | b-house
+> h-like | b-Azawan
 >
-> "inside a house"
+> "like Azawan"
 
-> `zodogol velebel hogorem bohohul.`
+> `zodogol velebel hurorom bazawan.`
 >
-> z-dog | v-sleep | h-inside | b-house
+> z-dog | v-sleep | h-like | b-Azawan
 >
-> "A dog sleeps inside a house."
+> "A dog sleeps like Azawan."
 
 **Unhosted.** If `/b/` does **not** follow `/ɡ/` or `/h/`, it is the **recipient** or **addressee** of the verb: the person who gets the theme or hears the telling. The theme (what is given or said) stays `/d/`. At most one unhosted `/b/` per clause. This job is a person, not a place.
 
@@ -100,7 +100,7 @@ When you say **how, when, or where** an action happens, use `/h/` (an **adverb**
 >
 > "Azawan tells Ululon."
 
-Do not park that recipient immediately after a relation `/h/` or `/ɡ/`: `hogorem bululon` is *inside Ululon*, not *to Ululon*. Put the pair first, then the recipient (`hogorem bohohul bululon`).
+Do not park that recipient immediately after a relation `/h/` or `/ɡ/`: `hurorom bululon` is *like Ululon*, not *to Ululon*. Put the pair first, then the recipient (`hurorom bazawan bululon`).
 
 ### Turn (`/j/`): start a new speech move
 <a id="turn-j"></a>
@@ -195,7 +195,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *run* | `vurunul` | `urunul` *run* | 🏃: leaving at speed |
 | *haste* | `hadazam` | `adazal` *dash* | 💨: a burst of speed |
 | *big* | `elem` | `elel` *elephant* | 🐘: the huge animal |
-| *inside* | `hogorem` | `ogorel` *correct* | ⭕: being inside the boundary |
+| *like* | `hurorom` | `urorol` *mirror* | 🪞: the image is of the model |
 | *question* | `jol` | | |
 
 #### English → Agalan
@@ -311,13 +311,13 @@ j-command | v-run
 *Run!*
 :::
 
-**7.** `zululon vazanal hogorem banabal.`
+**7.** `zululon vazanal hurorom bazawan.`
 
 ::: details Show answer
 
-z-Ululon | v-sneak | h-inside | b-bank
+z-Ululon | v-sneak | h-like | b-Azawan
 
-*Ululon sneaks inside a bank.*
+*Ululon sneaks like Azawan.*
 :::
 
 
@@ -354,7 +354,7 @@ The vowels match the [vowel-series](vowel-series.md) map: **a** add / hold, **o*
 | **jul** | **prohibition**: *don’t…* (firm) | **u** undo + **-l**: take the action back |
 | **jum** | **soft prohibition**: *please don’t…* / *I’d rather you not…* | **u** undo + **-m**: prefer they don’t |
 
-A [reviser](revisers.md) (**`al`** / **`am`** / …) may sit among the opening `/j/` words, immediately before the act word, or before a body that defaults to a statement.
+A [hook](hooks.md) (**`al`** / **`am`** / …) may sit among the opening `/j/` words, immediately before the act word, or before a body that defaults to a statement.
 
 ### Adjectives before the noun (`gl-`)
 <a id="left-bound-adjectives"></a>
@@ -395,7 +395,9 @@ A complex adjective is `/ɡ/` plus `/b/` (*same as Azawan*). A further plain adj
 >
 > "a dog the same as blue Azawan"
 
-You can chain more complex units onto those extra nouns. Two complex adjectives on the same first noun need [another sentence](dependents.md#which-noun). Several `/h/` units on one verb are fine (each plain `/h/`, or `/h/`+`/b/` together, counts as one). An unhosted recipient `/b/` may follow a finished pair (`hogorem bohohul bululon`); it still must not sit immediately after the relation word.
+You can chain more complex units onto those extra nouns. Two complex adjectives on the same first noun need [another sentence](dependents.md#which-noun). Several `/h/` units on one verb are fine (each plain `/h/`, or `/h/`+`/b/` together, counts as one). An unhosted recipient `/b/` may follow a finished pair (`hurorom bazawan bululon`); it still must not sit immediately after the relation word.
+
+**Compare with:** a [hook](hooks.md#extra-noun) immediately before `/b/` with no `/b/` to the left is *in* / *at* / *for*, not the recipient.
 
 
 

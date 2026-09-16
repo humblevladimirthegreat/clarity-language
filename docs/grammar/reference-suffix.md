@@ -326,7 +326,7 @@ Beginner used **-n** as a name on cited roots and on content words. On `/x/`, th
 | other `/x/` root + **-n** | titled agenda / section label | thread shift (*let’s now talk about X*) |
 | clause join + **-n** | **sequence** | *and then* **`xan`**, … ([joins](joins.md)) |
 
-Prefix-less [discourse revisers](revisers.md#discourse-revisers) use reviser endings, including named **-n**.
+Prefix-less [discourse hooks](hooks.md#discourse-hooks) use hook endings. Hook **-n** only sits inside a proper-name phrase ([hooks](hooks.md#intermediate)).
 
 ### Number-word exception
 <a id="number-word-exception"></a>

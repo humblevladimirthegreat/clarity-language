@@ -5,7 +5,7 @@ import type { ClassifyTables } from "./classify.js";
 import { resolve } from "./resolve.js";
 import { parseSentenceTokens } from "./sentence-parser.js";
 import { tokenizeUtterance } from "./tokenize.js";
-import { Bang, Force, Period, Polar, QMark, Reviser, Vocative } from "./tokens.js";
+import { Bang, Force, Period, Polar, QMark, Hook, Vocative } from "./tokens.js";
 import type { ParseOptions, ParseResult } from "./types.js";
 
 function isLeftEdgeStart(token: IToken): boolean {
@@ -13,7 +13,7 @@ function isLeftEdgeStart(token: IToken): boolean {
     token.tokenType === Polar ||
     token.tokenType === Force ||
     token.tokenType === Vocative ||
-    token.tokenType === Reviser
+    token.tokenType === Hook
   );
 }
 

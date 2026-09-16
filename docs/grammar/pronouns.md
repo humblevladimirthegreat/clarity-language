@@ -344,7 +344,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *potted plant* | `obodel` | | |
 | *red* | `aredel` | | |
 | *see* | `vejel` | `ejel` *eye* | 👁️: seeing is what an eye does |
-| *inside* | `hogorem` | `ogorel` *inclusion* | 🏠: framed as contained |
+| *like* | `hurorom` | `urorol` *mirror* | 🪞: the image is of the model |
 | *topic* | `hozal` | `ozal` *hash* | #️⃣: a heading mark |
 | *scream* | `vazagal` | | |
 | *punch* | `vubunul` | | |
@@ -386,12 +386,12 @@ z-Ululon | d-Azawan | v-see | z-Uhubun | d-←Azawan | v-see
 z-Azawan | v-pour | z-Ululon | v-harvest | x-←Azawan | d-seedling | v-see
 :::
 
-**5.** *Ululon pours inside a potted plant. Azawan harvests that way.*
+**5.** *Ululon pours like a potted plant. Azawan harvests that way.*
 
 ::: details Show answer
-`zululon hogorem bobodel vorurul. zazawan hogor vurum.`
+`zululon hurorom bobodel vorurul. zazawan huroror vurum.`
 
-z-Ululon | h-inside | b-potted-plant | v-pour | z-Azawan | h-←inside | v-harvest
+z-Ululon | h-like | b-potted-plant | v-pour | z-Azawan | h-←like | v-harvest
 :::
 
 **6.** *As for Uhubun, Ululon punches.*

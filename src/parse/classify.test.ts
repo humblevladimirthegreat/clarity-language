@@ -128,19 +128,12 @@ describe("classify", () => {
     assert.equal(word.overlay!.senseForm, "egeram");
   });
 
-  it("locative overlays on /h/ and ordinary picture on other letters", () => {
-    const inside = expectReading("hogorem", "locative");
-    assert.ok(inside.overlay);
-    assert.equal(inside.overlay!.kind, "locative");
-    assert.equal(inside.overlay!.gloss, "inside");
-    const at = expectReading("hubuhum", "locative");
-    assert.equal(at.overlay!.gloss, "at");
-    const toward = expectReading("hobowam", "locative");
-    assert.equal(toward.overlay!.gloss, "toward");
+  it("between locative overlay remains; other place talk is ordinary on those roots", () => {
     const between = expectReading("gazadum", "locative");
     assert.equal(between.overlay!.gloss, "between");
     const pin = expectReading("zubuhul", "ordinary");
     assert.equal(pin.overlay, undefined);
+    expectReading("hogorem", "ordinary");
   });
 
   it("of-relation overlays on /h/ /ɡ/ and ordinary pictures on other letters", () => {
@@ -171,15 +164,10 @@ describe("classify", () => {
     assert.equal(mine.overlay!.kind, "benchmark");
   });
 
-  it("means overlay on /h/ /ɡ/ and ordinary hand on other letters", () => {
-    const using = expectReading("hahanam", "means");
-    assert.ok(using.overlay);
-    assert.equal(using.overlay!.kind, "means");
-    assert.equal(using.overlay!.gloss, "using");
-    const adj = expectReading("gahanam", "means");
-    assert.equal(adj.overlay!.gloss, "using");
+  it("hand root is ordinary without a means overlay", () => {
     const hand = expectReading("zahanal", "ordinary");
     assert.equal(hand.overlay, undefined);
+    expectReading("hahanam", "ordinary");
   });
 
   it("exchange overlay on /h/ /ɡ/ and ordinary booth on other letters", () => {
@@ -260,9 +248,9 @@ describe("classify", () => {
     assert.equal(word.rootGloss?.literal, "sushi · coffee");
   });
 
-  it("ordinary reviser without overlay", () => {
+  it("ordinary hook without overlay", () => {
     const word = expectReading("al", "ordinary");
-    assert.equal(word.family.kind, "reviser");
+    assert.equal(word.family.kind, "hook");
     assert.equal(word.overlay, undefined);
   });
 });

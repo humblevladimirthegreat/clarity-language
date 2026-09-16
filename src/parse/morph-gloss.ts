@@ -14,7 +14,7 @@
  * | `al` in-clause | `including` | |
  * | `hal` listed / bare | `h-only-when` / `h-never` | listed = preceding `/h/`/`/w/` |
  * | `ham` listed | `h-when.open` | open listed; not exclusive |
- * | `an` in-clause | `including.named` | titled / stock including |
+ * | `an` in-clause | `including.named` | proper-name phrase |
  * | `har` statement / fill-ask | `h-sometimes` / `h-when` | `-r` is unspecified occasion, not `hal` |
  * | `hual` bare | `h-always` | |
  * | `howoram` | `h-plan-sketch` | overlay grain `-m` |
@@ -102,7 +102,7 @@ const JOIN_RELATION: Record<string, string> = {
   ue: "deprioritizing",
 };
 
-const REVISER_JOB: Record<string, string> = {
+const HOOK_JOB: Record<string, string> = {
   al: "additionally",
   am: "including.open",
   an: "including.named",
@@ -112,6 +112,54 @@ const REVISER_JOB: Record<string, string> = {
   om: "instead.open",
   ul: "except",
   um: "except.open",
+};
+
+const HOOK_IN_CLAUSE: Record<string, string> = {
+  al: "including",
+  am: "including.open",
+  an: "including.named",
+  el: "rather",
+  em: "rather.open",
+  ol: "instead",
+  om: "instead.open",
+  ul: "except",
+  um: "except.open",
+  en: "rather.named",
+  on: "instead.named",
+  un: "except.named",
+};
+
+const HOOK_EXTRA_NOUN: Record<string, string> = {
+  al: "in",
+  am: "in.around",
+  an: "in.named",
+  ol: "at",
+  om: "at.around",
+  on: "at.named",
+  ul: "from",
+  um: "from.around",
+  un: "from.named",
+  el: "for",
+  em: "with-in-mind",
+  en: "for.named",
+  aol: "on",
+  aom: "on.around",
+  aon: "on.named",
+  oel: "toward",
+  oem: "toward.around",
+  oen: "toward.named",
+  ual: "out-of",
+  uam: "out-of.around",
+  uan: "out-of.named",
+  uol: "through",
+  uom: "through.around",
+  uon: "through.named",
+  ael: "using",
+  aem: "by",
+  aen: "using.named",
+  uel: "against",
+  uem: "contrary-to",
+  uen: "against.named",
 };
 
 const FORCE_JOB: Record<string, string> = {
@@ -231,7 +279,8 @@ const ORDINALS = [
 export type MorphGlossContext = {
   antecedent?: LexWord;
   fillAsk?: boolean;
-  discourseReviser?: boolean;
+  discourseHook?: boolean;
+  extraNounHook?: boolean;
   restrictorListed?: boolean;
   /** Spoken mention interior (TYPE **o**): gloss the surface, not the lemma. */
   passThrough?: boolean;
@@ -276,7 +325,7 @@ export function morphGlossFor(
 ): string {
   if (ctx.passThrough) return word.raw;
   const body = senseLabel(word, tables, ctx);
-  if (word.family.kind === "reviser") return body;
+  if (word.family.kind === "hook") return body;
   const prefix =
     word.gl ? "gl" : word.pos ? word.pos : word.family.kind === "spanClose" ? "x" : "";
   if (!prefix) return body;
@@ -621,7 +670,12 @@ function contextFor(
     if (bind?.antecedent) ctx.antecedent = bind.antecedent;
     ctx.fillAsk = isFillAsk(word, resolve.asks);
   }
-  if (parsed) ctx.discourseReviser = isLeftEdgeReviser(word, parsed);
+  if (parsed) ctx.discourseHook = isLeftEdgeHook(word, parsed);
+  if (word.family.kind === "hook") {
+    const next = words[index + 1];
+    const prev = words[index - 1];
+    ctx.extraNounHook = next?.pos === "b" && prev?.pos !== "b";
+  }
   if (word.reading === "restrictor") {
     const prev = words[index - 1];
     ctx.restrictorListed = Boolean(prev && (prev.pos === "h" || prev.pos === "w"));
@@ -652,9 +706,9 @@ function isFillAsk(word: LexWord, asks: AskRecord[]): boolean {
   );
 }
 
-function isLeftEdgeReviser(word: LexWord, parsed: ParseResult): boolean {
-  if (word.family.kind !== "reviser") return false;
-  return parsed.utterances.some((utt) => utt.left.reviser?.raw === word.raw);
+function isLeftEdgeHook(word: LexWord, parsed: ParseResult): boolean {
+  if (word.family.kind !== "hook") return false;
+  return parsed.utterances.some((utt) => utt.left.hook?.raw === word.raw);
 }
 
 function sensePieces(
@@ -678,8 +732,8 @@ function sensePieces(
     }
   }
   switch (family.kind) {
-    case "reviser":
-      return [reviserLabel(family.form, ctx)];
+    case "hook":
+      return [hookLabel(family.form, ctx)];
     case "spanClose":
       if (family.flavor === "editorial") return ["span-close-editorial"];
       if (family.flavor === "closeAll") return ["span-close-all"];
@@ -701,12 +755,10 @@ function sensePieces(
   }
 }
 
-function reviserLabel(form: string, ctx: MorphGlossContext): string {
-  if (form === "al") {
-    if (ctx.discourseReviser === false) return "including";
-    return "additionally";
-  }
-  return REVISER_JOB[form] ?? form;
+function hookLabel(form: string, ctx: MorphGlossContext): string {
+  if (ctx.extraNounHook) return HOOK_EXTRA_NOUN[form] ?? form;
+  if (ctx.discourseHook) return HOOK_JOB[form] ?? form;
+  return HOOK_IN_CLAUSE[form] ?? HOOK_JOB[form] ?? form;
 }
 
 function joinMarkerLabel(word: LexWord, ctx: MorphGlossContext): string {

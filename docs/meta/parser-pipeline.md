@@ -84,7 +84,7 @@ Owns every **string-shaped** subsystem:
 - Free number words and writing shorthand ([numbers.md](../grammar/numbers.md))
 - Mid-word **`x`** families: rule alternation order = doc decision order (closes → span open → role → greeting bid name+vowel+**-n` (citation or `/j/`) → value/ability → numeric → ordinary compound)
 - Span open/close **word shapes**; writing bracket atoms (`d@[…]`, …)
-- Prefix-less [revisers](../grammar/revisers.md)
+- Prefix-less [hooks](../grammar/hooks.md)
 
 Semantic actions build a discriminated `MorphWord` only. **No lexicon calls inside Peggy.**
 
@@ -132,7 +132,7 @@ Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, emotion ACT
 | `emotion_locus` | `mood` | INTERNAL / EXTERNAL / CIRCUM |
 | `identity` | `mood` | SAME **`onunu`** |
 | `benchmark` | `mood` | Average / Typical / Mine / Social / Professional / Everyone |
-| `locative` | `locative` | *inside* / *at* / *on* / *from* / *toward* / *through* / *out of* / *between* |
+| `locative` | `locative` | *between* |
 | `means` | `means` | *using* **`ahana`** |
 | `similative` | `similative` | *like* **`uroro`** |
 | `of_relation` | `ofRelation` | *part of* / *contents* / *material* / *origin* |
@@ -266,4 +266,4 @@ A production **parse** bundle is **not wired yet** (`build:lexicon-web` only bun
 | Questions / fill-ask | [questions.md](../grammar/questions.md) |
 | Comparatives / SHARED scale | [comparatives.md](../grammar/comparatives.md) |
 | Overlays / special vocabulary | [special-vocabulary.md](../grammar/special-vocabulary.md) |
-| Revisers | [revisers.md](../grammar/revisers.md) |
+| Hooks | [hooks.md](../grammar/hooks.md) |

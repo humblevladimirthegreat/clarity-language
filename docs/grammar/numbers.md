@@ -634,7 +634,7 @@ Endings still apply (**-m** fuzzy *about three more!*, **-n** conventional call 
 | **`ru`** | `x-N` | **Independent item N** — a new line of support or consideration (*independent N:*, *distinct N:*). Would still matter if other listed items were gone. |
 | **`ro`** | `x_…` | **Cite a discourse label** — agenda item, section code, slide, ticket id (digits as label, not independence framing) (*regarding item 12; under 3.2*). |
 
-**Last point / *Finally*:** **`x#e`** = *Finally:* / *last point:* (committed coda item). Soft **`x~#e`** = near-final; named **`x@#e`** = ritual / titled *Finally*; **`x=#e`** resumes that last-point marker. End-framed twin: **`x#-1`**. Extra items use discourse reviser **`al`** (*additionally*: [revisers.md](revisers.md#discourse-revisers)).
+**Last point / *Finally*:** **`x#e`** = *Finally:* / *last point:* (committed coda item). Soft **`x~#e`** = near-final; named **`x@#e`** = ritual / titled *Finally*; **`x=#e`** resumes that last-point marker. End-framed twin: **`x#-1`**. Extra items use discourse hook **`al`** (*additionally*: [hooks.md](hooks.md#discourse-hooks)).
 
 **Starting point / *Starting with*:** **`x#e-`** = *Starting with:* / *to begin:* (committed opening item). Soft **`x~#e-`** = near-start; named **`x@#e-`** = ritual / titled *Starting with*; **`x=#e-`** resumes that start-point marker. Numbered *firstly* is **`x#1`**.
 

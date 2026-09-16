@@ -214,8 +214,8 @@ function familyChips(family: MorphWordFamily): string[] {
     }
     case "spanClose":
       return [`span close ${family.flavor}`];
-    case "reviser":
-      return [`reviser ${family.form}`];
+    case "hook":
+      return [`hook ${family.form}`];
     case "joinMarker":
       return [`join ${family.series}`];
     case "writingSpan": {
@@ -273,7 +273,7 @@ export function morphDetails(word: LexWord): { label: string; value: string }[] 
   } else if (family.kind === "number") {
     rows.push({ label: "marker", value: String(family.stem.marker) });
     if (family.stem.digitlessExp) rows.push({ label: "exponent", value: family.stem.digitlessExp });
-  } else if (family.kind === "reviser") {
+  } else if (family.kind === "hook") {
     rows.push({ label: "form", value: family.form });
   } else if (family.kind === "joinMarker") {
     rows.push({
@@ -341,8 +341,8 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
     }
     return { line: `join ${family.series}`, href: "joins.html" };
   }
-  if (family.kind === "reviser") {
-    return { line: "reviser", href: "revisers.html" };
+  if (family.kind === "hook") {
+    return { line: "hook", href: "hooks.html" };
   }
   if (family.kind === "number" || word.reading === "number") {
     return { line: "number stem", href: "numbers.html" };
@@ -361,7 +361,7 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
     return { line: "of relation", href: "relations.html#of-relations" };
   }
   if (word.reading === "means") {
-    return { line: "means", href: "relations.html#means" };
+    return { line: "hook extra-noun", href: "hooks.html#extra-noun" };
   }
   if (word.reading === "similative") {
     return { line: "simile", href: "relations.html#similative" };
@@ -584,7 +584,7 @@ function walkUnit(
       if (unit.unit.bound) pushIndex(into, takeRaw(cursor, unit.unit.bound.raw));
       break;
     case "linker":
-    case "reviser":
+    case "hook":
     case "writingSpan":
       pushIndex(into, takeRaw(cursor, unit.word.raw));
       break;
@@ -646,7 +646,7 @@ function walkUtterance(
   const left = utterance.left;
   for (const voc of left.vocatives) takeRaw(cursor, voc.raw);
   for (const polar of left.polars) takeRaw(cursor, polar.raw);
-  if (left.reviser) takeRaw(cursor, left.reviser.raw);
+  if (left.hook) takeRaw(cursor, left.hook.raw);
   if (left.force) takeRaw(cursor, left.force.raw);
   const sink: number[] = [];
   for (const body of utterance.bodies) {

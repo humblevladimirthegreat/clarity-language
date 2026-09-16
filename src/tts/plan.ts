@@ -46,7 +46,7 @@ export type PhonemePlan = {
   inputIdChunks: number[][];
 };
 
-type FramingRole = "force" | "polar" | "vocative" | "linker" | "clauseJoin" | "reviser" | "ordinary";
+type FramingRole = "force" | "polar" | "vocative" | "linker" | "clauseJoin" | "hook" | "ordinary";
 
 type SpeechSegment =
   | { kind: "word"; word: MorphWord }
@@ -62,7 +62,7 @@ function isNumberWord(word: MorphWord): boolean {
 function classifyFramingRole(word: MorphWord): FramingRole {
   const { family, pos } = word;
 
-  if (family.kind === "reviser") return "reviser";
+  if (family.kind === "hook") return "hook";
 
   if (pos === "j") {
     if (family.kind === "joinMarker") {

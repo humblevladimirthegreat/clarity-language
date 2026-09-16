@@ -20,7 +20,7 @@ When English hangs *who* / *that* / *which* plus a clause on a noun (*the guard 
 
 That pair is English *Azawan tells the guard who sits.* Repeat the full word when you need the same person again in the next sentence.
 
-**Compare with:** *a blue dog* is still one [adjective](clause.md#adjectives-ɡ) (`gelulul`). *A dog inside a house* is still the extra-noun pair on the verb ([extra nouns](clause.md#extra-nouns): `hogorem bohohul`). *Azawan tells Ululon **that** a dog runs* is a [dependent clause](#dependent-clauses) (**`darl`**): *that* packages the next sentence as content, not as a tag on *dog*.
+**Compare with:** *a blue dog* is still one [adjective](clause.md#adjectives-ɡ) (`gelulul`). *Azawan tells Ululon **that** a dog runs* is a [dependent clause](#dependent-clauses) (**`darl`**): *that* packages the next sentence as content, not as a tag on *dog*.
 
 
 
@@ -89,19 +89,13 @@ Ordinary `zezebal` is still *a zebra*.
 <a id="so-that"></a>
 <a id="event-purpose"></a>
 
-When English names the **intended outcome** of this event (*walks so that Ululon sits*, *writes for a money-bag*), keep the same hosted pair as *because*. The pole is **`holalam`**. Put the outcome in `/b/`: a following sentence after **`barl`**, or a noun. The inner event is **not** asserted as a fact (unlike *because*). On a noun host the same pole is **`golalam`**. (cue: 🥅 *goal*: you act so the shot counts)
+When English names the **intended outcome** of this event (*walks so that Ululon sits*), keep the same hosted pair as *because*. The pole is **`holalam`**. Put the outcome in `/b/` as a following sentence after **`barl`**. The inner event is **not** asserted as a fact (unlike *because*). On a noun host the same pole is **`golalam`**. (cue: 🥅 *goal*: you act so the shot counts)
 
 > `zazawan vawalal holalam barl zululon vajul.`
 >
 > z-Azawan | v-walk | h-so-that | b-that-clause | z-Ululon | v-sit
 >
 > "Azawan walks so that Ululon sits."
-
-> `zazawan vuwurul holalam bonebal.`
->
-> z-Azawan | v-write | h-so-that | b-money-bag
->
-> "Azawan writes for a money-bag."
 
 When English *to* drops the sitter, keep inner `/z/`:
 
@@ -113,7 +107,7 @@ When English *to* drops the sitter, keep inner `/z/`:
 
 Ordinary `zolalal` is still *a goal* (the net).
 
-**Compare with:** *although Ululon walks* is **`hezebam barl`** plus the next sentence. Discourse *however* is **`xezebal`** ([continue](#continue-x)). Discourse *therefore* is **`xezazal`**, a linker after a finished claim, not *so that*. *Whether Ululon walks* is **`dorl`**, not **`hadorom`** (*if* is a condition, not polar ignorance). *The dog that runs* (which dog) is [two sentences](#which-noun), not **`darl`** on the noun. *Toward* a place is [locative](relations.md#locative-relations) **`hobowam`**, not this pole. Acting *for relatedness* is [values](values.md) **`xo`**, a need-motive, not an event outcome. *A book for a hammer* as a swap is [exchange](relations.md#exchange) (`huhanem`). *Want to walk* still takes a full **`darl`** sentence (repeat the inner `/z/`).
+**Compare with:** *although Ululon walks* is **`hezebam barl`** plus the next sentence. Discourse *however* is **`xezebal`** ([continue](#continue-x)). Discourse *therefore* is **`xezazal`**, a linker after a finished claim, not *so that*. *Whether Ululon walks* is **`dorl`**, not **`hadorom`** (*if* is a condition, not polar ignorance). *The dog that runs* (which dog) is [two sentences](#which-noun), not **`darl`** on the noun. Acting *for relatedness* is [values](values.md) **`xo`**, a need-motive, not an event outcome. *A book for a hammer* as a swap is [exchange](relations.md#exchange) (`huhanem`). *Want to walk* still takes a full **`darl`** sentence (repeat the inner `/z/`).
 
 The verb has no past or future letter. *Before* / *after* / *while* / *until* place this event relative to the next sentence. Leftover **result** and **former climate** are standing moods, not time ([RESIDUE](knowing.md#residue) / [FORMER](knowing.md#former-climate)).
 
@@ -210,12 +204,12 @@ z-Azawan | v-see | d-whether-clause | z-Ululon | v-sit
 z-Azawan | v-run | h-so-that | b-that-clause | z-Ululon | v-sit
 :::
 
-**6.** *Azawan writes for a money-bag.* (intended outcome, not a swap)
+**6.** *Azawan writes so that Ululon sits.*
 
 ::: details Show answer
-`zazawan vuwurul holalam bonebal.`
+`zazawan vuwurul holalam barl zululon vajul.`
 
-z-Azawan | v-write | h-so-that | b-money-bag
+z-Azawan | v-write | h-so-that | b-that-clause | z-Ululon | v-sit
 :::
 
 #### Agalan → English
@@ -256,13 +250,13 @@ z-Ululon | v-run | h-so-that | b-that-clause | z-Azawan | v-sit
 *Ululon runs so that Azawan sits.*
 :::
 
-**5.** `zululon vuwurul holalam bonebal.`
+**5.** `zululon vuwurul holalam barl zazawan vajul.`
 
 ::: details Show answer
 
-z-Ululon | v-write | h-so-that | b-money-bag
+z-Ululon | v-write | h-so-that | b-that-clause | z-Azawan | v-sit
 
-*Ululon writes for a money-bag.*
+*Ululon writes so that Azawan sits.*
 :::
 
 
@@ -284,13 +278,13 @@ Beginner already used two sentences for English *who / that / which*. Prefer [re
 >
 > "A guard sits. Azawan tells that guard."
 
-> `zazawan dodogol vejel hogorem banabal. zodor vurunul.`
+> `zazawan dodogol vejel al banabal. zodor vurunul.`
 >
-> z-Azawan | d-dog | v-see | h-inside | b-bank | z-←dog | v-run
+> z-Azawan | d-dog | v-see | in | b-bank | z-←dog | v-run
 >
-> "Azawan sees a dog inside a bank. The dog runs."
+> "Azawan sees a dog in a bank. The dog runs."
 
-A place, tool, or *of*-relation on the noun is still hosted `/ɡ/` + `/b/` (*the guard [inside](relations.md#locative-relations) a bank*, *a book written [with a hammer](relations.md#means)*). A one-place role as a kind (*sitting guard*, *the one seen*) is a [role compound](roles.md#role-compounds) on `/ɡ/`, the same pattern as *is a fighter*:
+A place, tool, or *of*-relation on the noun is still an extra-noun [hook](hooks.md#extra-noun) or hosted `/ɡ/` + `/b/` (*the guard [in](hooks.md#extra-noun) a bank*, *a book written [with a hammer](hooks.md#extra-noun)*). A one-place role as a kind (*sitting guard*, *the one seen*) is a [role compound](roles.md#role-compounds) on `/ɡ/`, the same pattern as *is a fighter*:
 
 > `zazawan dugugal gaxajul vejel.`
 >
@@ -310,7 +304,7 @@ A **period** (and matching **`?`** / **`!`**) closes the sentence body in writin
 |---------|--------|-----|-----|
 | `.` | Fall on last stress + short pause | Closes the prior **body**. Next stretch still defaults to **`jal`** unless a new `/j/` turn, a written act word, or *yes* / *no* particle sets otherwise | Fall = the claim is done |
 | Next `/j/` turn (*yes* / *no*, vocative, written act word) | Pitch **reset** into the turn | New turn; firm **-l** / soft **-m** imply **`jal`** / **`jam`** | Reset = jump to a new act |
-| Bare body or reviser + body after `.` | No full reset required | Implied **`jal`** (or **`jam`** only if a soft particle / written **`jam`** said so) | No jump, so same statement |
+| Bare body or hook + body after `.` | No full reset required | Implied **`jal`** (or **`jam`** only if a soft particle / written **`jam`** said so) | No jump, so same statement |
 | `?` | Rise or high level on last stress | Question (**`jol`** / **`jom`**); act word usually written | Rise = still waiting for an answer |
 | `!` | Sharp or clipped fall | Command / prohibition; act word usually written | Sharp fall = do this / don’t |
 | Soft statement / soft *yes* / *no* **-m** | Lighter fall; boundary still clear | **`jam`** (implied or written) | **-m** leaves the hold open |
@@ -335,7 +329,7 @@ These words glue one finished sentence to the next (one-way; default ending **-l
 
 *therefore* moves forward from the prior claim; *however* marks contrast; *meanwhile* is concurrent passage; *next* is the next frame; *but* blocks the expected continuation (harder push-back than *however*). Those same roots keep their ordinary content readings under other role letters.
 
-**Compare with:** *although* / *while* attach a dependent after **`barl`** (`hezebam barl`, `hegemum barl` — [dependent clauses](#dependent-clauses)). *Despite Ululon* is the same pole with a noun in `/b/` (`hezebam bululon`). *So that Ululon sits* is **`holalam barl`**; *writes for a money-bag* as the intended get is **`holalam bonebal`**. Discourse **`xezebal`** / **`xanelol`** / **`xezazal`** glue a finished sentence to the next one.
+**Compare with:** *although* / *while* attach a dependent after **`barl`** (`hezebam barl`, `hegemum barl` — [dependent clauses](#dependent-clauses)). *Despite Ululon* is the same pole with a noun in `/b/` (`hezebam bululon`). *So that Ululon sits* is **`holalam barl`**. Discourse **`xezebal`** / **`xanelol`** / **`xezazal`** glue a finished sentence to the next one.
 
 ### Stand-in vowels (`-rl` / `-rm`)
 <a id="clause-member"></a>
